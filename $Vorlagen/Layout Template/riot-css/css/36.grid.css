@@ -1,0 +1,24 @@
+#container {
+	width: 700px;
+	margin: 0 auto
+}
+
+#content {
+	float: right;
+	width: 500px
+}
+
+#navigation {
+	float: left;
+	width: 200px
+}
+
+#extra {
+	float: right;
+	width: 500px
+}
+
+#footer {
+	clear: both;
+	width: 100%
+}

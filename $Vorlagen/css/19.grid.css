@@ -1,0 +1,25 @@
+#wrapper {
+	float: left;
+	width: 100%
+}
+
+#content {
+	margin: 0 33% 0 200px
+}
+
+#navigation {
+	float: left;
+	width: 200px;
+	margin-left: -100%
+}
+
+#extra {
+	float: left;
+	width: 33%;
+	margin-left: -33%
+}
+
+#footer {
+	clear: left;
+	width: 100%
+}

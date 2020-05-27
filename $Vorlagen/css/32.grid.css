@@ -1,0 +1,19 @@
+#wrapper {
+	float: left;
+	width: 100%
+}
+
+#content {
+	margin-right: 200px
+}
+
+#navigation {
+	float: left;
+	width: 200px;
+	margin-left: -200px
+}
+
+#extra {
+	clear: left;
+	width: 100%
+}

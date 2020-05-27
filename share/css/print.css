@@ -1,0 +1,38 @@
+/**
+* print.css This file will ommit all parts of the page except the content itself.
+*
+* For production use we would usually display something like a logo.
+*/
+
+html, body {
+	background: #FFFFFF;
+}
+
+/* == Container == */
+.container {
+  height: 100%;
+}
+
+.header,
+.navigation,
+.extra,
+.footer {
+	display: none;
+}
+
+/* == Content == */
+	.content {
+		background: #FFFFFF;
+
+    height: 100%;
+    overflow: visible;
+	}
+
+.main-shadow-0-5-30 {
+  -webkit-box-shadow: none;  /* #: Safari */
+  -moz-box-shadow: none;  /* #: Mozilla */
+  -o-box-shadow: none;  /* #: Opera */
+  -ms-box-shadow: none;  /* #: Internet Explorer */
+  box-shadow: none;  /* #: Standard */
+}
+

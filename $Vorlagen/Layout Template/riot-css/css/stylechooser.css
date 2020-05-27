@@ -1,0 +1,70 @@
+ul.stylechooser {
+	width:100%;
+	height:140px;
+	overflow: scroll;
+	list-style-type: none;
+}
+ul.stylechooser li {
+	float: left;
+}
+ul.stylechooser li a {
+	border:1px solid #666;
+	padding: 5px 5px 15px 5px;
+	margin:5px;
+	background-color: #B9CAFF;	
+}
+ul.stylechooser li a:hover {
+	background-color: #007BC4;
+}
+
+/* Install Button */
+.download-button,
+p.download-button {
+	width: 230px;
+	margin: 0 0 10px 0;
+	line-height: normal;
+	display: block;
+}
+
+span.download-button-text {
+    padding-right: 30px;
+}
+
+.download-button a:link span.download-green-button,
+.download-button a:visited span.download-green-button,
+.download-button a:hover span.download-green-button,
+.download-button a:active span.download-green-button {
+	background: url(../images/download-button.png) no-repeat bottom left;
+	display: block;
+	min-height: 20px;
+	padding: 10px;
+} 
+* html .download-button a:link span.download-green-button,
+* html .download-button a:visited span.download-green-button,
+* html .download-button a:hover span.download-green-button,
+* html .download-button a:active span.download-green-button { 
+	height: 20px; 
+}
+
+.download-button a:link,
+.download-button a:visited,
+.download-button a:hover,
+.download-button a:active {
+	background: #a8ed2d url(../images/download-button.png) no-repeat top left;
+	display: block;
+	color: #005825;
+	text-decoration: none;
+	padding: 0;
+}
+
+.download-button a:hover span.download-green-button,
+.download-button a:active span.download-green-button {
+	background: url(../images/download-button.png) no-repeat bottom right;
+}
+
+.download-button a:hover,
+.download-button a:active {
+	background: #89dc29 url(../images/download-button.png) no-repeat top right;
+	color: #000;
+	cursor: hand;
+}

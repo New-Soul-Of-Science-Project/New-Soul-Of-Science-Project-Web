@@ -1,0 +1,4 @@
+RedirectPermanent /index.html /de/New-Soul-Of-Science-Project/index.php
+RedirectPermanent /de/index.html /de/New-Soul-Of-Science-Project/index.php
+RedirectPermanent /de/Fraktale-Quanten-Fluss-Theorie-Deutsch.html /de/Quanten-Fluss-Theorie_de.php
+RedirectPermanent /de/Fraktale-Quanten-Fluss-Theorie_Elektroschwache-Wechselwirkung-Teilchenumwandlungen-Innerer-Spin-Schwacher-Isospin_de.html /de/Fraktale-Quanten-Fluss-Theorie_Elektroschwache-Wechselwirkung-Teilchenumwandlungen-Innerer-Spin-Schwacher-Isospin_de.php

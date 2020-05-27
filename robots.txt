@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /share/bibtex/
+Disallow: /share/php/
+Disallow: /de/Naturphilosophie-Yoga/XXX_Notizen.php
+Disallow: /de/Naturphilosophie-Yoga/XXX.php
+Disallow: /de/New-Soul-Of-Science-Project/XXX.php
+Disallow: /de/Quanten-Fluss-Theorie/XXX_Notizen.php
+Disallow: /de/Quanten-Fluss-Theorie/XXX.php
+Disallow: /de/Spannungsspiel-des-Lebens/XXX.php
+Disallow: /de/Vereinheitlichte-Relativitaetstheorie/XXX.php
+

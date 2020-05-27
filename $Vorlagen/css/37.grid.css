@@ -1,0 +1,19 @@
+#container {
+	width: 700px;
+	margin: 0 auto
+}
+
+#content {
+	float: left;
+	width: 500px
+}
+
+#navigation {
+	float: right;
+	width: 200px
+}
+
+#extra {
+	clear: both;
+	width: 100%
+}

@@ -1,0 +1,424 @@
+/* 2018.04.27: +: XXX */
+
+/**
+ * Project Styles
+ */
+/* Base Styles */
+
+html, body {
+	margin: 0;
+  padding: 0;
+	background: #A0A0A0;
+}
+body, div, h1, h2, h3, h4, p, table, td, tr, ul {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* #: Allgemeiner Abstand nach rechts und links. */
+h1, h2, h3, h4, p, table, td, tr, ul {
+	margin: 0 10px 10px;
+}
+
+/* #: SchriftstŠrke der †berschriften und starker Schrift. */
+h1, h2, h3, h4 {
+  /*font-weight: bold;*/
+  font-weight: 600;
+}
+strong {
+  font-style: inherit;
+  /*font-weight: bold;*/
+  font-weight: 600;
+}
+
+/* #: Allgemeine Schriftgrš§e. */
+body, div, p, table, td, tr, ul {
+	font-size: 13px;
+}
+
+h1 {
+	font-size: 24px;
+  /*text-shadow: 2px 2px 4px #C0C0C0;*/
+}
+h2 {
+	font-size: 18px;
+  /*text-shadow: 2px 2px 4px #D0D0D0;*/
+}
+h3 {
+	font-size: 15px;
+}
+h4 {
+	font-size: 13px;
+}
+img {
+	border-style: solid;
+}
+ul {
+	list-style: disc;
+	list-style-position: inside;
+}
+
+/* Pseudo Classes */
+a {
+	text-decoration: none;
+}
+a:link {
+  /*color: #000000;*/
+  color: inherit;
+}
+a:visited {
+  /*color: #800080;*/
+  /*color: #600060;*/
+  color: #500000;
+}
+a:active {
+	/*color: #DA470C;*/
+}
+a:hover {
+	/*color: #EEC402; text-decoration: underline;*/
+  /*color: #000000;*/
+  color: #C00000;
+}
+	.content a:link {
+		/*color: #000000;*/
+    /*font-weight: bold;*/
+    font-weight: 600;
+	}
+	.content a:active {
+    /*color: #000000;*/
+    /*color: #000000;*/
+	}
+	.content a:visited {
+		/*color: #800080;*/
+	}
+	.content a:hover {
+		/*color: #EEC402; text-decoration: underline;*/
+		/*color: #EEC402; font-weight: bold;*/
+		/*color: #000000; font-weight: bold;*/
+	}
+	.header a:link {
+		/*color: #000000;*/
+	}
+	.header a:active {
+		/*color: #000000;*/
+	}
+	.header a:visited {
+		/*color: #000000;*/
+		color: inherit;
+	}
+.header a:hover {
+  /*color: #EEC402; text-decoration: underline;*/
+  /*color: #000000; text-decoration: underline;*/
+  color: #C00000;
+}
+.navigation a:visited {
+  /*color: #EEC402; text-decoration: underline;*/
+  /*color: #000000; text-decoration: underline;*/
+  color: inherit;
+}
+.navigation a:hover {
+  /*color: #EEC402; text-decoration: underline;*/
+  /*color: #000000; text-decoration: underline;*/
+  color: #C00000;
+}
+
+/* == Container == */
+.container {
+  /*background:url(../images/bg-navigation.gif) top right repeat-y;*/
+	/*background: #EEEEEE;*/
+}
+
+/* == Header == */
+.header {
+  background: #EEEEEE;
+}
+.header table,
+.header p {
+  margin: 0;
+}
+
+/* == Navigation == */
+	.navigation {
+		background: #EEEEEE;
+	}
+	/*
+	.navigation h1,
+	.navigation h2,
+	.navigation h3,
+	.navigation h4 {
+		margin: 0;
+		padding-left: 0px;
+	}
+	*/
+
+/* == Content == */
+	.content {
+	  /*background:url(../images/Punkte_dunkler_vblauheller.jpg) top left repeat;*/
+		background: #FFFFFF;
+
+    /*height: 100%; / #: Richtet die Website-Größe nach dem Inhalt. */
+		/* @note scrollbars for content-area */
+    /*height: 933px;*/
+    /*height: auto; / #: Richtet die Website-Größe nach dem Inhalt. */
+    height: 933px;
+    overflow: auto;
+	}
+	.content h1,
+	.content h2,
+	.content h3,
+	.content h4,
+	.content p,
+	.content table,
+	.content td,
+	.content tr,
+	.content ul {
+    margin-left: 30px; margin-right: 40px;
+    /*line-height: 1.4em;*/
+    line-height: 1.3em;
+	}
+	.content div,
+	.content p,
+	.content table,
+	.content td,
+	.content ul {
+		/*font-size: 14px;*/
+		font-size: 16px;
+    /*line-height: 1.4em;*/
+    line-height: 1.6em;
+	}
+	.content h1 {
+    /*font-size: 32px;*/
+    font-size: 36px;
+	}
+	.content h2 {
+    /*font-size: 24px;*/
+    font-size: 26px;
+	}
+	.content h3 {
+    /*font-size: 18px;*/
+    font-size: 22px;
+	}
+	.content h4 {
+    /*font-size: 16px;*/
+    font-size: 18px;
+	}
+
+  /* #: Indifferent line height: Nothing helped! */
+	/*.content sub, sup {     / #: Info source: "http://webdesignandsuch.com/how-to-fix-sup-sub-line-height-problem-with-css/"
+    font-size: 75%;
+    line-height: 0; 
+    position: relative; 
+    vertical-align: baseline; 
+  }
+  .content sup {     / #: Info source: "http://webdesignandsuch.com/how-to-fix-sup-sub-line-height-problem-with-css/"
+    top: -0.5em; 
+  }
+  .content sub {     / #: Info source: "http://webdesignandsuch.com/how-to-fix-sup-sub-line-height-problem-with-css/"
+    bottom: -0.25em; 
+  }*/
+  /*.content sup, sub {     / #: Info source: "http://webdesignandsuch.com/how-to-fix-sup-sub-line-height-problem-with-css/"
+    height: 0;
+    line-height: 1;
+    vertical-align: baseline;
+    _vertical-align: bottom;
+    position: relative;
+  }
+  .content sup {     / #: Info source: "http://webdesignandsuch.com/how-to-fix-sup-sub-line-height-problem-with-css/"
+    bottom: 1ex;
+  }
+  .content sub {     / #: Info source: "http://webdesignandsuch.com/how-to-fix-sup-sub-line-height-problem-with-css/"
+    top: .5ex;
+  }*/
+  /*.content sub { vertical-align: text-bottom; font-size:75%; }*/     /* #: Info source: "http://bytes.com/topic/html-css/answers/809852-adjusting-position-sup-sub-text"*/
+  /*.content sup { vertical-align: text-top; font-size:75%; }*/     /* #: Info source: "http://bytes.com/topic/html-css/answers/809852-adjusting-position-sup-sub-text"*/
+  /*.content sub { line-height: 0; }*/     /* #: Info source: "http://sbpoley.home.xs4all.nl/webmatters/superscripts.html"*/
+  /*.content sup { line-height: 0; }*/     /* #: Info source: "http://sbpoley.home.xs4all.nl/webmatters/superscripts.html"*/
+
+/* SEE - script.css */
+.buy a {
+	display:block;
+	text-indent:-9999em;
+	background:url(../images/Kaufen_Logo.gif) top left no-repeat;
+	width:85px;
+	height:43px;
+}
+.buy-small a {
+	display:block;
+	text-indent:-9999em;
+	background:url(../images/Kaufen_Logo_klein.gif) top left no-repeat;
+	width:70px;
+	height:16px;
+}
+/* SEE - script.css */
+.test a {
+	display:block;
+	text-indent:-9999em;
+	background:url(../images/Testen_Logo.gif) top left no-repeat;
+	width:85px;
+	height:43px;
+}
+.test-small a {
+	display:block;
+	text-indent:-9999em;
+	background:url(../images/Testen_Logo_klein.gif) top left no-repeat;
+	width:70px;
+	height:16px;
+}
+
+/* == Footer == */
+.footer p {
+	margin:0;
+	padding:5px 10px;
+}
+
+
+/* == Extra == */
+/* At the moment extra "div" is not used, because of the shadow. */
+.extra {
+		background:#EEEEEE;
+	}
+
+/* == Footer == */
+.footer {
+	background: #333;
+	color: #FFF;
+}
+	.footer a,
+	.footer a:link {
+		color:#BBB;
+		padding:0;
+	}
+
+
+/* main Classes */
+
+.main-google-translate {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  max-width: 100px !important;
+}
+
+.main-archive-today a:link {
+  /*color: green;*/
+  /*font-weight: bold;*/
+  font-weight: normal;
+}
+
+
+/* Shadows */
+.main-shadow-5-5-20/*, .tools-class-fig*/ {
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);  /* #: Safari */
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);  /* #: Mozilla */
+  -o-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);  /* #: Opera */
+  -ms-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);  /* #: Internet Explorer */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);  /* #: Standard */
+}
+.main-shadow-0-5-30 {
+  -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);  /* #: Safari */
+  -moz-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);  /* #: Mozilla */
+  -o-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);  /* #: Opera */
+  -ms-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);  /* #: Internet Explorer */
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);  /* #: Standard */
+}
+
+/* Layers */
+.main-layer-1 {
+  position: relative;
+  z-index: 1;
+}
+.main-layer-2 {
+  position: relative;
+  z-index: 2;
+}
+.main-layer-3 {
+  position: relative;
+  z-index: 3;
+}
+
+
+/* Tools Classes */
+
+.tools-class-fig, .tools-class-vid {
+  /* shadow */
+  -webkit-box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 0.5);  /* #: Safari */
+  -moz-box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 0.5);  /* #: Mozilla */
+  -o-box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 0.5);  /* #: Opera */
+  -ms-box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 0.5);  /* #: Internet Explorer */
+  box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 0.5);  /* #: Standard */
+}
+.tools-class-text {
+  /* #!: Works only with "<html lang="de">" in header! */
+  
+  /* hyphenation: See https://wiki.selfhtml.org/wiki/CSS/Eigenschaften/Textausrichtung/hyphens and https://css-tricks.com/almanac/properties/h/hyphenate/ */
+  
+  /* -ms-word-break: break-all; */
+  /* word-break: break-all; */
+  
+  /* Non standard for webkit */
+  /* word-break: break-word; */
+  
+  overflow-wrap: break-all;
+  
+  -webkit-hyphens: auto;  /* #: Safari */
+  -moz-hyphens: auto;  /* #: Mozilla */
+  -o-hyphens: auto;  /* #: Opera */
+  -ms-hyphens: auto;  /* #: Internet Explorer */
+  hyphens: auto;  /* #: Standard */
+}
+.tools-class-url {
+  /* #!: Works only with "<html lang="de">" in header! */
+  
+  /* hyphenation: See https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */
+  
+  -ms-word-break: break-all;  /* #: Internet Explorer */  /* #: This breaks URLs without "-". */
+  word-break: break-all;  /* #: Standard */  /* #: This breaks URLs without "-". */
+  
+  -webkit-hyphens: none;  /* #: Safari */
+  -moz-hyphens: none;  /* #: Mozilla */
+  -o-hyphens: none;  /* #: Opera */
+  -ms-hyphens: none;  /* #: Internet Explorer */
+  hyphens: none;  /* #: Standard */
+}
+
+.tools-class-text-color-FigDescr {
+  color: #707070;
+}
+
+.tools-class-text-color-CloserDesc {
+  color: #000AC4;
+}
+
+.tools-class-link-hover-red a:hover {
+  color: #C00000;
+}
+
+
+.tools-class-text-condensed {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.tools-class-text-condensed-bold {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+}
+
+p.tools-class-text-conclusion, p.tools-class-text-italic, p.tools-class-text-quote {
+  /* #!: hyphens is set by 'tools-class-text'! */
+  margin-left: 50px;
+  margin-right: 60px;
+}
+td.tools-class-text-figure {
+  /* #!: hyphens is set by 'tools-class-text'! */
+  line-height: 1.4em;
+}
+
+.tools-class-fade-in-area-div-vis {
+  margin-top: 20px;
+  color: #000AC4;
+  /*background-color: #F9F9F9;*/
+  /*background-color: #F0F0F0;*/
+  background-color: #F4F4F4;
+}
+.tools-class-fade-in-area-div-invis {
+  margin-top: 20px;
+  color: #000AC4;
+}

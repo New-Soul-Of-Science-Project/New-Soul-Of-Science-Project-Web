@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		6A03133616BE8BEE007C298D /* Fraktale-Quanten-Fluss-Theorie_Welleneigenschaften-der-Elementarteilchen-Interferenz_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; path = "Fraktale-Quanten-Fluss-Theorie_Welleneigenschaften-der-Elementarteilchen-Interferenz_de.php"; sourceTree = "<group>"; };
+		6A07D3761F066F6100B88A8F /* Achtsamkeitsprozess-Definition-des-Lebens.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Achtsamkeitsprozess-Definition-des-Lebens.php"; sourceTree = "<group>"; };
+		6A0DAAA5171FCF0900F966FB /* Quanten-Fluss-Theorie_Quantengravitation-der-Elementarteilchen_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; path = "Quanten-Fluss-Theorie_Quantengravitation-der-Elementarteilchen_de.php"; sourceTree = "<group>"; };
+		6A10AFAD241EBBE800E6F07B /* Information-und-Kommunikation-Rueckkopplung-Regelprozesse.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Information-und-Kommunikation-Rueckkopplung-Regelprozesse.php"; sourceTree = "<group>"; };
+		6A10AFAE24240D0E00E6F07B /* Achtsamkeitsprozess_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = Achtsamkeitsprozess_de.php; sourceTree = "<group>"; };
+		6A10AFAF2426640C00E6F07B /* Spiritualitaet-und-Psychologie.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Spiritualitaet-und-Psychologie.php"; sourceTree = "<group>"; };
+		6A10C89B17F4ABF00003B272 /* Raum-Zeit-Alterung-Frequenz-Energie-Problem-der-Zeit-Pound-Rebka-Snider-Experiment_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = "Raum-Zeit-Alterung-Frequenz-Energie-Problem-der-Zeit-Pound-Rebka-Snider-Experiment_de.php"; sourceTree = "<group>"; };
+		6A11B4B5166D2DEA005EDAF1 /* Fraktale-Quanten-Fluss-Theorie_Literatur_de.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Fraktale-Quanten-Fluss-Theorie_Literatur_de.html"; sourceTree = "<group>"; };
+		6A1230F717119B5E00FD17A7 /* analyticstracking.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; name = analyticstracking.php; path = php/analyticstracking.php; sourceTree = "<group>"; };
+		6A1230F81711BFFD00FD17A7 /* FrQFT.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; name = FrQFT.php; path = php/FrQFT.php; sourceTree = "<group>"; };
+		6A1230F91711C1BF00FD17A7 /* Tools_v01_005.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; name = Tools_v01_005.php; path = php/Tools_v01_005.php; sourceTree = "<group>"; };
+		6A1230FA1712F98100FD17A7 /* Fraktale-Quanten-Fluss-Theorie_Literatur_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; path = "Fraktale-Quanten-Fluss-Theorie_Literatur_de.php"; sourceTree = "<group>"; };
+		6A12D35C17D3555300DD39DE /* Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = "Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.php"; sourceTree = "<group>"; };
+		6A137501171FD3C000CB8651 /* Quanten-Fluss-Theorie_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = "Quanten-Fluss-Theorie_de.php"; sourceTree = "<group>"; };
+		6A1375021721E0E300CB8651 /* Quanten-Fluss-Theorie_Gravitation-Wirkungsquanten-Dichte_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; path = "Quanten-Fluss-Theorie_Gravitation-Wirkungsquanten-Dichte_de.php"; sourceTree = "<group>"; };
+		6A16D736247E4C5500A1891C /* favicon */ = {isa = PBXFileReference; lastKnownFileType = text; name = favicon; path = "de/Naturphilosophie-Yoga/favicon"; sourceTree = SOURCE_ROOT; };
+		6A17D46323F87B8800973645 /* Psychosomatik.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Psychosomatik.php; sourceTree = "<group>"; };
+		6A187A451E450500006C2EBB /* Universum-Schwarze-Loecher-Kosmos-Urknall_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Universum-Schwarze-Loecher-Kosmos-Urknall_de.php"; sourceTree = "<group>"; };
+		6A195A7F1827FD8F0080A16B /* XXX.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = XXX.php; sourceTree = "<group>"; };
+		6A1DDCD3186DAA0C00C7BE5D /* Einleitung_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = Einleitung_de.php; sourceTree = "<group>"; };
+		6A22D4011879FEDA0029B041 /* Fazit_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = Fazit_de.php; sourceTree = "<group>"; };
+		6A25346F1A2F7AB400A9E56F /* Zeit-Alterung-Frequenz_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Zeit-Alterung-Frequenz_de.php"; sourceTree = "<group>"; };
+		6A2E0EC41753DE520014AA6E /* Quanten-Fluss-Theorie_Dunkle-Materie_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; path = "Quanten-Fluss-Theorie_Dunkle-Materie_de.php"; sourceTree = "<group>"; };
+		6A2E4473188BF294004CA047 /* XXX_Notizen.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = XXX_Notizen.php; sourceTree = "<group>"; };
+		6A2E4474188C19F1004CA047 /* Ausblick_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = Ausblick_de.php; sourceTree = "<group>"; };
+		6A314BCC23DCCA7B007CE667 /* First-Prinziples-Neue-Physik.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "First-Prinziples-Neue-Physik.php"; sourceTree = "<group>"; };
+		6A314BCD23DCDA17007CE667 /* Meetup-LGBT-Spiritual-Hamburg.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Meetup-LGBT-Spiritual-Hamburg.php"; sourceTree = "<group>"; };
+		6A31B30E1DD21A860066304C /* htaccess.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; name = htaccess.txt; path = "NSOSP Web/htaccess.txt"; sourceTree = "<group>"; };
+		6A361B121ECB6F1800B12141 /* Dunkle-Energie_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Dunkle-Energie_de.php"; sourceTree = "<group>"; };
+		6A36333B1D982E6300268C00 /* Atmung-Bauch-Zwerchfell-Koerperstabilitaet-Bewegungsstabilitaet_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; path = "Atmung-Bauch-Zwerchfell-Koerperstabilitaet-Bewegungsstabilitaet_de.php"; sourceTree = "<group>"; };
+		6A37D27515DE7F6200AA974B /* Fraktale-Quanten-Fluss-Theorie-Deutsch.html */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.html; path = "Fraktale-Quanten-Fluss-Theorie-Deutsch.html"; sourceTree = "<group>"; };
+		6A37D27615DE7FAF00AA974B /* Fractal-Quantum-Flow-Theory_Manuscript_en.html */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.html; path = "Fractal-Quantum-Flow-Theory_Manuscript_en.html"; sourceTree = "<group>"; };
+		6A3D67F616C4F01D004BB110 /* Fractal-Quantum-Flow-Theory-English.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Fractal-Quantum-Flow-Theory-English.html"; sourceTree = "<group>"; };
+		6A3E3D722295CC1F00108AD1 /* Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php"; sourceTree = "<group>"; };
+		6A3F3450167A65C200A5D9DF /* Fraktale-Quanten-Fluss-Theorie_Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; path = "Fraktale-Quanten-Fluss-Theorie_Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.php"; sourceTree = "<group>"; };
+		6A3FBD7B17A2D71D002A2E71 /* Gravitation-Higgs-Feld-Dichte_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = "Gravitation-Higgs-Feld-Dichte_de.php"; sourceTree = "<group>"; };
+		6A45B78A1A979FE400120C1B /* Einleitung_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Einleitung_de.php; sourceTree = "<group>"; };
+		6A45B78B1A9F4F1F00120C1B /* Literatur_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Literatur_de.php; sourceTree = "<group>"; };
+		6A45B78C1A9F576400120C1B /* Literatur_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Literatur_de.php; sourceTree = "<group>"; };
+		6A4936701A9704EB009EDC76 /* index.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = index.php; sourceTree = "<group>"; };
+		6A49701317B7D02F00A60211 /* Neue-Physik-Problem-der-Zeit_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Neue-Physik-Problem-der-Zeit_de.php"; sourceTree = "<group>"; };
+		6A4980441918A82400DD9801 /* Quantenchromodynamik-Hadronen-Quarks-Gluonen_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = "Quantenchromodynamik-Hadronen-Quarks-Gluonen_de.php"; sourceTree = "<group>"; };
+		6A4AA76617D62CF00000A2D3 /* index.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = index.php; sourceTree = "<group>"; };
+		6A4F4CB7175B19AB000D57C1 /* Quanten-Fluss-Theorie_Gravitation-Higgs-Feld-Dichte_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = "Quanten-Fluss-Theorie_Gravitation-Higgs-Feld-Dichte_de.php"; sourceTree = "<group>"; };
+		6A4FD4C6224508B300CFEEB7 /* Vorwort.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = Vorwort.php; sourceTree = "<group>"; };
+		6A4FD4C922450CB500CFEEB7 /* Einleitung_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = Einleitung_de.php; sourceTree = "<group>"; };
+		6A5055D61D8EC69D00CC68C0 /* Rueckenschmerzen-Bandscheibenvorfall-Atmung-Zwerchfell_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Rueckenschmerzen-Bandscheibenvorfall-Atmung-Zwerchfell_de.php"; sourceTree = "<group>"; };
+		6A50CD811AADA34200CB2325 /* Neue-Physik-selbstorganisierte-Theory-of-Everything-TOE_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Neue-Physik-selbstorganisierte-Theory-of-Everything-TOE_de.php"; sourceTree = "<group>"; };
+		6A5602041A8791B1006DBD87 /* Psyche-und-Stimmung_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Psyche-und-Stimmung_de.php"; sourceTree = "<group>"; };
+		6A594BD5165E8B8E00A65594 /* Fraktale-Quanten-Fluss-Theorie_Manuskript_de.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Fraktale-Quanten-Fluss-Theorie_Manuskript_de.html"; sourceTree = "<group>"; };
+		6A594BD6165E9CE000A65594 /* Fraktale-Quanten-Fluss-Theorie_Leptonen-Elektron-Positron-Myon-Tauon-Neutrino_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; path = "Fraktale-Quanten-Fluss-Theorie_Leptonen-Elektron-Positron-Myon-Tauon-Neutrino_de.php"; sourceTree = "<group>"; };
+		6A5EF84D20B162AA00A1D8B5 /* Einleitung_und_Hypothesen_zur_Quantengravitation_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = Einleitung_und_Hypothesen_zur_Quantengravitation_de.php; sourceTree = "<group>"; };
+		6A5EF85420B5ACBA00A1D8B5 /* index.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = index.php; sourceTree = "<group>"; };
+		6A61A7E9209F0816005AEAEB /* Vereinheitlichung-Relativitaetstheorie-Lorentzsche-Aethertheorie_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Vereinheitlichung-Relativitaetstheorie-Lorentzsche-Aethertheorie_de.php"; sourceTree = "<group>"; };
+		6A65AEE52205F0D0008D3820 /* minireset.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = minireset.css; sourceTree = "<group>"; };
+		6A65D2051793BCEC00603C6E /* Quantengravitation-der-Elementarteilchen_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Quantengravitation-der-Elementarteilchen_de.php"; sourceTree = "<group>"; usesTabs = 0; };
+		6A66AF501CB10B9B00817D24 /* index.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = index.php; sourceTree = "<group>"; };
+		6A681A2A2174E05100A5DE12 /* Gesichtshaelften-Gesichtsausdruck-Gesichtsspiegelung_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Gesichtshaelften-Gesichtsausdruck-Gesichtsspiegelung_de.php"; sourceTree = "<group>"; };
+		6A684BE823BFD3A700767835 /* Meetup-Physik-Neu-Sehen-Ergruenden.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Meetup-Physik-Neu-Sehen-Ergruenden.php"; sourceTree = "<group>"; };
+		6A6D1B71200CE85B00E93883 /* Vortrag-Physik-Achtsamkeit-und-Yoga_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Vortrag-Physik-Achtsamkeit-und-Yoga_de.php"; sourceTree = "<group>"; };
+		6A6FF1921B0A3A6A009E19E6 /* Literatur_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Literatur_de.php; sourceTree = "<group>"; };
+		6A70A7121FF102F300282E05 /* Workshop-Achtsamkeitsprozess-Wo-Physik-auf-Yoga-trifft_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Workshop-Achtsamkeitsprozess-Wo-Physik-auf-Yoga-trifft_de.php"; sourceTree = "<group>"; };
+		6A7248F020ECCB66003B1C72 /* Vortrag-Perspektivwechsel-Ambiguitaetstoleranz-Entscheidungen-Demokratie_de.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; lineEnding = 0; path = "Vortrag-Perspektivwechsel-Ambiguitaetstoleranz-Entscheidungen-Demokratie_de.php"; sourceTree = "<group>"; };
+		6A7383EE1B9D79BE00651118 /* Naturphilosophie-Yoga_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Naturphilosophie-Yoga_de.php"; sourceTree = "<group>"; };
+		6A7383EF1BAB417E00651118 /* Ernaehrung-innere-Spannung-und-Gewicht_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Ernaehrung-innere-Spannung-und-Gewicht_de.php"; sourceTree = "<group>"; };
+		6A7390781F812FFA001C9594 /* index.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = index.php; sourceTree = "<group>"; };
+		6A73BBE81CAE443000F559FC /* index.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = index.php; sourceTree = "<group>"; };
+		6A73BBEA1CAE449400F559FC /* index.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = index.php; sourceTree = "<group>"; };
+		6A75462717C1430A0003A48A /* Basisteilchenmodell-im-Vergleich_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = "Basisteilchenmodell-im-Vergleich_de.php"; sourceTree = "<group>"; };
+		6A75462817C4F6220003A48A /* Notwendige-Vereinheitlichung-Physik-Dilemma_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = "Notwendige-Vereinheitlichung-Physik-Dilemma_de.php"; sourceTree = "<group>"; };
+		6A76A29E20C41E5300F4FC32 /* gtag.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; name = gtag.php; path = php/gtag.php; sourceTree = "<group>"; };
+		6A7A061A216524320015C6EC /* Literatur.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Literatur.php; sourceTree = "<group>"; };
+		6A7A8B23135EBC87002A28E8 /* Aufgaben - NSOSP Web.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "Aufgaben - NSOSP Web.txt"; sourceTree = "<group>"; };
+		6A7C1BB5170C67630009B46D /* Fraktale-Quanten-Fluss-Theorie_Notwendige-Vereinheitlichung-neue-Physik-Paradigmenwechsel-Dilemma_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; path = "Fraktale-Quanten-Fluss-Theorie_Notwendige-Vereinheitlichung-neue-Physik-Paradigmenwechsel-Dilemma_de.php"; sourceTree = "<group>"; };
+		6A8079C523B3E87E00417B56 /* Psychosomatische-Pole-Gradienten-im-Koerper.php */ = {isa = PBXFileReference; explicitFileType = text.script.php; fileEncoding = 4; lineEnding = 0; path = "Psychosomatische-Pole-Gradienten-im-Koerper.php"; sourceTree = "<group>"; };
+		6A810B3D1F544D7900B0AFE5 /* htaccess.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = htaccess.txt; sourceTree = "<group>"; };
+		6A810B3F1F54511200B0AFE5 /* htaccess.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = htaccess.txt; sourceTree = "<group>"; };
+		6A831C161B2EFE2500812C7A /* XXX.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = XXX.php; sourceTree = "<group>"; };
+		6A831C171B2EFE8D00812C7A /* Demenz-Konzentrationsstoerungen-Alzheimer-Parkinson_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Demenz-Konzentrationsstoerungen-Alzheimer-Parkinson_de.php"; sourceTree = "<group>"; };
+		6A831C181B3171CB00812C7A /* Koerperliche-seelische-Existenz_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Koerperliche-seelische-Existenz_de.php"; sourceTree = "<group>"; };
+		6A86F260232D93F500B14D04 /* Wie-messen-wir-in-der-Physik.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Wie-messen-wir-in-der-Physik.php"; sourceTree = "<group>"; };
+		6A8B768B231983AF00A57B2B /* Was-ist-Leben.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Was-ist-Leben.php"; sourceTree = "<group>"; };
+		6A8BDE2522AD6436006EF11F /* Glueckliches-und-angenehmes-Leben_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Glueckliches-und-angenehmes-Leben_de.php"; sourceTree = "<group>"; };
+		6A8CF762225C742B00F39D4F /* Psychosomatik-unser-kluger-Umgang-mit-Entscheidungen.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Psychosomatik-unser-kluger-Umgang-mit-Entscheidungen.php"; sourceTree = "<group>"; };
+		6A90EAA8228B2FC5003C1F9E /* XXX.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = XXX.php; sourceTree = "<group>"; };
+		6A90EAA9228B3402003C1F9E /* Literatur_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Literatur_de.php; sourceTree = "<group>"; };
+		6A90EAAB228B3600003C1F9E /* Projekt.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; path = Projekt.php; sourceTree = "<group>"; };
+		6A912F12170B4DC100C69FBC /* Fraktale-Quanten-Fluss-Theorie_Neue-Physik-Selbstorganisation-Higgs-Feld-Fraktale-Struktur-Zeit-Ebenen_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; path = "Fraktale-Quanten-Fluss-Theorie_Neue-Physik-Selbstorganisation-Higgs-Feld-Fraktale-Struktur-Zeit-Ebenen_de.php"; sourceTree = "<group>"; };
+		6A9B8D741D112C7000C9A201 /* Gesangstechnik_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Gesangstechnik_de.php; sourceTree = "<group>"; };
+		6A9E6449193B02B20031B17D /* Impressum_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = Impressum_de.php; sourceTree = "<group>"; };
+		6A9FD20020768B23001A6CCB /* Bewusstsein-Physik-Leben-Regelprozesse_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Bewusstsein-Physik-Leben-Regelprozesse_de.php"; sourceTree = "<group>"; };
+		6A9FF27D17C7DADF00EC1362 /* Elektroschwache-Wechselwirkung-Teilchenumwandlungen-schwacher-Isospin_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = "Elektroschwache-Wechselwirkung-Teilchenumwandlungen-schwacher-Isospin_de.php"; sourceTree = "<group>"; };
+		6AB0E30B21A6DB7200A5EA5C /* Meetup-Yoga-Alternativmedizin-meets-Wissenschaft-Medizin-Physik.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Meetup-Yoga-Alternativmedizin-meets-Wissenschaft-Medizin-Physik.php"; sourceTree = "<group>"; };
+		6AB78B6C1A83EBD00092BA17 /* index.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = index.php; sourceTree = "<group>"; };
+		6AB78B6D1A83F8AE0092BA17 /* Einleitung_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Einleitung_de.php; sourceTree = "<group>"; };
+		6AB862111F32203000EFAD97 /* Was-ist-Physik_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Was-ist-Physik_de.php"; sourceTree = "<group>"; };
+		6AB916741C293A5E00C0464A /* Atommodell_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Atommodell_de.php; sourceTree = "<group>"; };
+		6ABA75571BDE09BE00C3E359 /* Vorwort_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Vorwort_de.php; sourceTree = "<group>"; };
+		6ABA75591BDF504B00C3E359 /* Einleitung_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Einleitung_de.php; sourceTree = "<group>"; };
+		6ABA755A1BDF59F700C3E359 /* index.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = index.php; sourceTree = "<group>"; };
+		6ABA755B1BDF59F700C3E359 /* Literatur_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Literatur_de.php; sourceTree = "<group>"; };
+		6ABB41D521E8A011000A18A3 /* Was-ist-Yoga_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Was-ist-Yoga_de.php"; sourceTree = "<group>"; };
+		6ABDFCD91E2C08700080AA99 /* Philosophie-Yoga_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Philosophie-Yoga_de.php"; sourceTree = "<group>"; };
+		6ABDFCDB1E2CC0320080AA99 /* Psychosomatische-Verspannungen-durch-Stress_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Psychosomatische-Verspannungen-durch-Stress_de.php"; sourceTree = "<group>"; };
+		6ABE7F8A177D229600019FEB /* Vakuum-Higgs-Mechanismus-und-Gravitation_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = "Vakuum-Higgs-Mechanismus-und-Gravitation_de.php"; sourceTree = "<group>"; };
+		6ABF3C181DFBFE0600D0954F /* Meditation-Selbstakupressur_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; path = "Meditation-Selbstakupressur_de.php"; sourceTree = "<group>"; };
+		6AC208631F5D93E7009C9B14 /* htaccess.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = htaccess.txt; sourceTree = "<group>"; };
+		6AC270A117D4F7E0006F0233 /* Elementarteilchenmodell-mit-Wirkungsquanten-Strings_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = "Elementarteilchenmodell-mit-Wirkungsquanten-Strings_de.php"; sourceTree = "<group>"; };
+		6AC39D6813057515001CC42A /* Gravitonen-Fluss-Theorie-Deutsch.html */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.html; path = "Gravitonen-Fluss-Theorie-Deutsch.html"; sourceTree = "<group>"; };
+		6AC39D6913057515001CC42A /* Impressum-Deutschland.html */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.html; path = "Impressum-Deutschland.html"; sourceTree = "<group>"; };
+		6AC39D6A13057515001CC42A /* index.html */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = index.html; sourceTree = "<group>"; };
+		6AC39D6B13057515001CC42A /* Spezielle_Medium-Relativitaetstheorie_Deutsch.html */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = "Spezielle_Medium-Relativitaetstheorie_Deutsch.html"; sourceTree = "<group>"; };
+		6AC39D6D13057515001CC42A /* Graviton-Flow-Theory-English.html */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.html; path = "Graviton-Flow-Theory-English.html"; sourceTree = "<group>"; };
+		6AC39D6E13057515001CC42A /* Imprint-English.html */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.html; path = "Imprint-English.html"; sourceTree = "<group>"; };
+		6AC39D6F13057515001CC42A /* index.html */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		6AC39D7013057515001CC42A /* Special_Medium_Relativity_Theory_English.html */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; path = Special_Medium_Relativity_Theory_English.html; sourceTree = "<group>"; };
+		6AC39D7213057515001CC42A /* index.html */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		6AC39D7413057515001CC42A /* robots.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; name = robots.txt; path = "NSOSP Web/robots.txt"; sourceTree = "<group>"; };
+		6AC39D9F13057515001CC42A /* font.yui.css */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text; path = font.yui.css; sourceTree = "<group>"; };
+		6AC39DA013057515001CC42A /* grid.af-23.css */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text; path = "grid.af-23.css"; sourceTree = "<group>"; };
+		6AC39DA113057515001CC42A /* grid.af-33.css */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text; path = "grid.af-33.css"; sourceTree = "<group>"; };
+		6AC39DA213057515001CC42A /* main.css */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text; path = main.css; sourceTree = "<group>"; };
+		6AC39DA313057515001CC42A /* print.css */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text; path = print.css; sourceTree = "<group>"; };
+		6AC39DA413057515001CC42A /* reset.yui.css */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text; path = reset.yui.css; sourceTree = "<group>"; };
+		6AC39DA513057515001CC42A /* script.css */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text; path = script.css; sourceTree = "<group>"; };
+		6AC39DAE13057515001CC42A /* nospam.js */ = {isa = PBXFileReference; explicitFileType = sourcecode.javascript; fileEncoding = 12; path = nospam.js; sourceTree = "<group>"; };
+		6AC39DAF13057515001CC42A /* sitemap.xml */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.xml; name = sitemap.xml; path = "NSOSP Web/sitemap.xml"; sourceTree = "<group>"; };
+		6AC53CA31B26BD70000C72B4 /* Koerperspannung_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Koerperspannung_de.php; sourceTree = "<group>"; };
+		6AC53CA51B2C6C6E000C72B4 /* XXX.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = XXX.php; sourceTree = "<group>"; };
+		6AC53CA61B2C6D71000C72B4 /* Laengenkontraktion-Materie-Bewegung_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Laengenkontraktion-Materie-Bewegung_de.php"; sourceTree = "<group>"; };
+		6AC6D18A1F8639AD0005D0C5 /* index.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = index.php; sourceTree = "<group>"; };
+		6AC7C3C7187F1632006C7CC2 /* Zusammenfassung_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = Zusammenfassung_de.php; sourceTree = "<group>"; };
+		6AC7C3C8187F1DC3006C7CC2 /* Diskussion_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = Diskussion_de.php; sourceTree = "<group>"; };
+		6AC7C3C9187F26FC006C7CC2 /* Vergleich-mit-anderen-Theorien_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = "Vergleich-mit-anderen-Theorien_de.php"; sourceTree = "<group>"; };
+		6AC9DED42343D59A0051F708 /* Quantenmechanik-De-Broglie-Bohm-Theorie-Pilotwellentheorie-Bohmsche-Mechanik_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Quantenmechanik-De-Broglie-Bohm-Theorie-Pilotwellentheorie-Bohmsche-Mechanik_de.php"; sourceTree = "<group>"; };
+		6ACA3842246DE694007047A3 /* Stein-der-Weisen-(Lapis-Philosophorum)-Heiliger-Gral-Phoenix.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Stein-der-Weisen-(Lapis-Philosophorum)-Heiliger-Gral-Phoenix.php"; sourceTree = "<group>"; };
+		6AD2EC8A1BC39D77004ABE3B /* Einleitung_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Einleitung_de.php; sourceTree = "<group>"; };
+		6AD2EC8B1BC39D77004ABE3B /* index.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = index.php; sourceTree = "<group>"; };
+		6AD2EC8C1BC3DB7B004ABE3B /* Literatur_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Literatur_de.php; sourceTree = "<group>"; };
+		6AD8259716FA3B4100C3CBFA /* Tools_v01_001.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Tools_v01_001.js; sourceTree = "<group>"; };
+		6AD8259816FA49A000C3CBFA /* Science_v01_005.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; name = Science_v01_005.php; path = php/Science_v01_005.php; sourceTree = "<group>"; };
+		6AD8DDE42104B8E4006DFE27 /* Kuenstliche-Inteligenz-Robotik_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; path = "Kuenstliche-Inteligenz-Robotik_de.php"; sourceTree = "<group>"; };
+		6AD8DDE52110BE9D006DFE27 /* Was-unterscheidet-Yoga-von-Sport-Persoenlichkeitsentwicklung-oder-Leistung_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Was-unterscheidet-Yoga-von-Sport-Persoenlichkeitsentwicklung-oder-Leistung_de.php"; sourceTree = "<group>"; };
+		6AD9B83F22D10D1F00B3E0E6 /* XXX.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; name = XXX.php; path = "../New-Soul-Of-Science-Project/XXX.php"; sourceTree = "<group>"; };
+		6AD9B84022D10E0F00B3E0E6 /* Philosophie.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = Philosophie.php; sourceTree = "<group>"; };
+		6AE259841EA493A900E205C9 /* Diskussion_de.php */ = {isa = PBXFileReference; explicitFileType = text.script.php; fileEncoding = 4; lineEnding = 0; path = Diskussion_de.php; sourceTree = "<group>"; };
+		6AE9E9EE1F3775820027C8E5 /* index.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = index.php; sourceTree = "<group>"; };
+		6AE9E9EF1F3776640027C8E5 /* Literatur_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Literatur_de.php; sourceTree = "<group>"; };
+		6AE9E9F01F387B020027C8E5 /* Einleitung.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Einleitung.php; sourceTree = "<group>"; };
+		6AE9E9F11F3CA1770027C8E5 /* Angebote-Veranstaltungen_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Angebote-Veranstaltungen_de.php"; sourceTree = "<group>"; };
+		6AEBBF6F1E5ACF8A00859404 /* Glueck-Sinn-Spannend-Leben.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Glueck-Sinn-Spannend-Leben.php"; sourceTree = "<group>"; };
+		6AEC10311690C59900D7E2A5 /* Fraktale-Quanten-Fluss-Theorie_Elektroschwache-Wechselwirkung-Teilchenumwandlungen-Innerer-Spin-Schwacher-Isospin_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; path = "Fraktale-Quanten-Fluss-Theorie_Elektroschwache-Wechselwirkung-Teilchenumwandlungen-Innerer-Spin-Schwacher-Isospin_de.php"; sourceTree = "<group>"; };
+		6AEC8AEB17806CE10075075A /* Vorwort_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = Vorwort_de.php; sourceTree = "<group>"; };
+		6AED092F1FAE161900B1681E /* XXX_Notizen.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = XXX_Notizen.php; sourceTree = "<group>"; };
+		6AED694D1D3529C900C7CD2B /* Gesichtsausdruck-Gesichtsspiegelung_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Gesichtsausdruck-Gesichtsspiegelung_de.php"; sourceTree = "<group>"; };
+		6AF05DE92283246E00EF65FC /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		6AF05DEA2283248C00EF65FC /* favicon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = favicon; sourceTree = "<group>"; };
+		6AF05DEB2283248C00EF65FC /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		6AF05DEC228324B000EF65FC /* favicon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = favicon; sourceTree = "<group>"; };
+		6AF05DED228324B000EF65FC /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		6AF05DEE228324CE00EF65FC /* favicon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = favicon; sourceTree = "<group>"; };
+		6AF05DEF228324CE00EF65FC /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		6AF05DF0228324E300EF65FC /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		6AF05DF1228324E300EF65FC /* favicon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = favicon; sourceTree = "<group>"; };
+		6AF05DF2228324F100EF65FC /* favicon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = favicon; sourceTree = "<group>"; };
+		6AF05DF3228324F100EF65FC /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		6AF28B3917A512DC00DE96B6 /* Dunkle-Materie-modifizierte-newtonsche-Dynamik-MOND_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = "Dunkle-Materie-modifizierte-newtonsche-Dynamik-MOND_de.php"; sourceTree = "<group>"; };
+		6AF28B3A17A51CE700DE96B6 /* Leptonen-Modell-Elektron-Positron-Myon-Tauon-Neutrino_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = "Leptonen-Modell-Elektron-Positron-Myon-Tauon-Neutrino_de.php"; sourceTree = "<group>"; };
+		6AF3BB5B1331160100A01A03 /* Michelson-Morley-Experiment_nicht-klassisch.html */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.html; path = "Michelson-Morley-Experiment_nicht-klassisch.html"; sourceTree = "<group>"; };
+		6AF4DC3716CEDAD800C24E34 /* Fraktale-Quanten-Fluss-Theorie_Gravitation-der-Elementarteilchen_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; path = "Fraktale-Quanten-Fluss-Theorie_Gravitation-der-Elementarteilchen_de.php"; sourceTree = "<group>"; };
+		6AFC539E16C4E9BC00BDE221 /* Fraktale-Quanten-Fluss-Theorie_Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Fraktale-Quanten-Fluss-Theorie_Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.html"; sourceTree = "<group>"; };
+		6AFC539F16C4EB6C00BDE221 /* Fraktale-Quanten-Fluss-Theorie_Leptonen-Elektron-Positron-Myon-Tauon-Neutrino_de.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Fraktale-Quanten-Fluss-Theorie_Leptonen-Elektron-Positron-Myon-Tauon-Neutrino_de.html"; sourceTree = "<group>"; };
+		6AFC53A016C4ED5F00BDE221 /* Fraktale-Quanten-Fluss-Theorie_Elektroschwache-Wechselwirkung-Teilchenumwandlungen-Innerer-Spin-Schwacher-Isospin_de.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Fraktale-Quanten-Fluss-Theorie_Elektroschwache-Wechselwirkung-Teilchenumwandlungen-Innerer-Spin-Schwacher-Isospin_de.html"; sourceTree = "<group>"; };
+		6AFC53A116C4EE6F00BDE221 /* Fraktale-Quanten-Fluss-Theorie_Manuskript-Deutsch.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Fraktale-Quanten-Fluss-Theorie_Manuskript-Deutsch.html"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		6A0465A716E0B8ED00B7FECC /* php */ = {
+			isa = PBXGroup;
+			children = (
+				6A1230F717119B5E00FD17A7 /* analyticstracking.php */,
+				6A1230F81711BFFD00FD17A7 /* FrQFT.php */,
+				6A76A29E20C41E5300F4FC32 /* gtag.php */,
+				6AD8259816FA49A000C3CBFA /* Science_v01_005.php */,
+				6A1230F91711C1BF00FD17A7 /* Tools_v01_005.php */,
+			);
+			name = php;
+			sourceTree = "<group>";
+		};
+		6A45B78D1AA0BFB000120C1B /* *Umleitungen */ = {
+			isa = PBXGroup;
+			children = (
+				6A50CD811AADA34200CB2325 /* Neue-Physik-selbstorganisierte-Theory-of-Everything-TOE_de.php */,
+				6A25346F1A2F7AB400A9E56F /* Zeit-Alterung-Frequenz_de.php */,
+			);
+			name = "*Umleitungen";
+			sourceTree = "<group>";
+		};
+		6A49366F1A9704EB009EDC76 /* Vereinheitlichte-Relativitaetstheorie */ = {
+			isa = PBXGroup;
+			children = (
+				6A5EF84D20B162AA00A1D8B5 /* Einleitung_und_Hypothesen_zur_Quantengravitation_de.php */,
+				6AF05DF2228324F100EF65FC /* favicon */,
+				6AF05DF3228324F100EF65FC /* favicon.ico */,
+				6A4936701A9704EB009EDC76 /* index.php */,
+				6AC53CA61B2C6D71000C72B4 /* Laengenkontraktion-Materie-Bewegung_de.php */,
+				6A45B78C1A9F576400120C1B /* Literatur_de.php */,
+				6A61A7E9209F0816005AEAEB /* Vereinheitlichung-Relativitaetstheorie-Lorentzsche-Aethertheorie_de.php */,
+				6AC53CA51B2C6C6E000C72B4 /* XXX.php */,
+				6A5EF85020B1649600A1D8B5 /* *Umleitungen */,
+			);
+			path = "Vereinheitlichte-Relativitaetstheorie";
+			sourceTree = "<group>";
+		};
+		6A4936711A970B44009EDC76 /* *Umleitungen */ = {
+			isa = PBXGroup;
+			children = (
+				6AC39D6A13057515001CC42A /* index.html */,
+				6A137501171FD3C000CB8651 /* Quanten-Fluss-Theorie_de.php */,
+				6AFC53A016C4ED5F00BDE221 /* Fraktale-Quanten-Fluss-Theorie_Elektroschwache-Wechselwirkung-Teilchenumwandlungen-Innerer-Spin-Schwacher-Isospin_de.html */,
+				6AEC10311690C59900D7E2A5 /* Fraktale-Quanten-Fluss-Theorie_Elektroschwache-Wechselwirkung-Teilchenumwandlungen-Innerer-Spin-Schwacher-Isospin_de.php */,
+				6AF4DC3716CEDAD800C24E34 /* Fraktale-Quanten-Fluss-Theorie_Gravitation-der-Elementarteilchen_de.php */,
+				6AFC539E16C4E9BC00BDE221 /* Fraktale-Quanten-Fluss-Theorie_Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.html */,
+				6A3F3450167A65C200A5D9DF /* Fraktale-Quanten-Fluss-Theorie_Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.php */,
+				6AFC539F16C4EB6C00BDE221 /* Fraktale-Quanten-Fluss-Theorie_Leptonen-Elektron-Positron-Myon-Tauon-Neutrino_de.html */,
+				6A594BD6165E9CE000A65594 /* Fraktale-Quanten-Fluss-Theorie_Leptonen-Elektron-Positron-Myon-Tauon-Neutrino_de.php */,
+				6A11B4B5166D2DEA005EDAF1 /* Fraktale-Quanten-Fluss-Theorie_Literatur_de.html */,
+				6A1230FA1712F98100FD17A7 /* Fraktale-Quanten-Fluss-Theorie_Literatur_de.php */,
+				6AFC53A116C4EE6F00BDE221 /* Fraktale-Quanten-Fluss-Theorie_Manuskript-Deutsch.html */,
+				6A912F12170B4DC100C69FBC /* Fraktale-Quanten-Fluss-Theorie_Neue-Physik-Selbstorganisation-Higgs-Feld-Fraktale-Struktur-Zeit-Ebenen_de.php */,
+				6A7C1BB5170C67630009B46D /* Fraktale-Quanten-Fluss-Theorie_Notwendige-Vereinheitlichung-neue-Physik-Paradigmenwechsel-Dilemma_de.php */,
+				6A03133616BE8BEE007C298D /* Fraktale-Quanten-Fluss-Theorie_Welleneigenschaften-der-Elementarteilchen-Interferenz_de.php */,
+				6A37D27515DE7F6200AA974B /* Fraktale-Quanten-Fluss-Theorie-Deutsch.html */,
+				6AC39D6813057515001CC42A /* Gravitonen-Fluss-Theorie-Deutsch.html */,
+				6A2E0EC41753DE520014AA6E /* Quanten-Fluss-Theorie_Dunkle-Materie_de.php */,
+				6A4F4CB7175B19AB000D57C1 /* Quanten-Fluss-Theorie_Gravitation-Higgs-Feld-Dichte_de.php */,
+				6A1375021721E0E300CB8651 /* Quanten-Fluss-Theorie_Gravitation-Wirkungsquanten-Dichte_de.php */,
+				6A0DAAA5171FCF0900F966FB /* Quanten-Fluss-Theorie_Quantengravitation-der-Elementarteilchen_de.php */,
+				6A5EF84E20B163B900A1D8B5 /* Vereinheitlichte-Relativitaetstheorie */,
+			);
+			name = "*Umleitungen";
+			sourceTree = "<group>";
+		};
+		6A4FD4C822450C8800CFEEB7 /* *Umleitungen */ = {
+			isa = PBXGroup;
+			children = (
+				6A4FD4C922450CB500CFEEB7 /* Einleitung_de.php */,
+			);
+			name = "*Umleitungen";
+			sourceTree = "<group>";
+		};
+		6A5EF84E20B163B900A1D8B5 /* Vereinheitlichte-Relativitaetstheorie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Vereinheitlichte-Relativitaetstheorie";
+			sourceTree = "<group>";
+		};
+		6A5EF85020B1649600A1D8B5 /* *Umleitungen */ = {
+			isa = PBXGroup;
+			children = (
+				6A45B78A1A979FE400120C1B /* Einleitung_de.php */,
+			);
+			name = "*Umleitungen";
+			sourceTree = "<group>";
+		};
+		6A5EF85320B5ACBA00A1D8B5 /* VRT */ = {
+			isa = PBXGroup;
+			children = (
+				6A5EF85420B5ACBA00A1D8B5 /* index.php */,
+			);
+			path = VRT;
+			sourceTree = "<group>";
+		};
+		6A66AF511CB118BD00817D24 /* *Umleitungen */ = {
+			isa = PBXGroup;
+			children = (
+				6AC39D7213057515001CC42A /* index.html */,
+			);
+			name = "*Umleitungen";
+			sourceTree = "<group>";
+		};
+		6A7390771F812FFA001C9594 /* spannung */ = {
+			isa = PBXGroup;
+			children = (
+				6A7390781F812FFA001C9594 /* index.php */,
+			);
+			path = spannung;
+			sourceTree = "<group>";
+		};
+		6A73BBE91CAE449400F559FC /* New-Soul-Of-Science-Project */ = {
+			isa = PBXGroup;
+			children = (
+				6AF05DEA2283248C00EF65FC /* favicon */,
+				6AF05DEB2283248C00EF65FC /* favicon.ico */,
+				6A73BBEA1CAE449400F559FC /* index.php */,
+				6A90EAAB228B3600003C1F9E /* Projekt.php */,
+				6A7A061A216524320015C6EC /* Literatur.php */,
+				6A90EAA8228B2FC5003C1F9E /* XXX.php */,
+				6A90EAAA228B3463003C1F9E /* *Umleitungen */,
+			);
+			path = "New-Soul-Of-Science-Project";
+			sourceTree = "<group>";
+		};
+		6A810B3C1F544D3000B0AFE5 /* Organical-Matters Web */ = {
+			isa = PBXGroup;
+			children = (
+				6A810B3D1F544D7900B0AFE5 /* htaccess.txt */,
+			);
+			name = "Organical-Matters Web";
+			path = "../../Organical-Matters Web";
+			sourceTree = "<group>";
+		};
+		6A810B3E1F54511200B0AFE5 /* NaPhil-Yoga Web */ = {
+			isa = PBXGroup;
+			children = (
+				6A810B3F1F54511200B0AFE5 /* htaccess.txt */,
+			);
+			name = "NaPhil-Yoga Web";
+			path = "../../NaPhil-Yoga Web";
+			sourceTree = "<group>";
+		};
+		6A84F42B1303130400DFD21A = {
+			isa = PBXGroup;
+			children = (
+				6AC39CFC13057514001CC42A /* NSOSP Web */,
+				6A810B3E1F54511200B0AFE5 /* NaPhil-Yoga Web */,
+				6A810B3C1F544D3000B0AFE5 /* Organical-Matters Web */,
+				6AC208621F5D93C9009C9B14 /* Quantum-Flow-Theory Web */,
+			);
+			sourceTree = "<group>";
+		};
+		6A90EAAA228B3463003C1F9E /* *Umleitungen */ = {
+			isa = PBXGroup;
+			children = (
+				6A90EAA9228B3402003C1F9E /* Literatur_de.php */,
+			);
+			name = "*Umleitungen";
+			sourceTree = "<group>";
+		};
+		6AB78B6B1A83EBD00092BA17 /* Spannungsspiel-des-Lebens */ = {
+			isa = PBXGroup;
+			children = (
+				6A07D3761F066F6100B88A8F /* Achtsamkeitsprozess-Definition-des-Lebens.php */,
+				6A36333B1D982E6300268C00 /* Atmung-Bauch-Zwerchfell-Koerperstabilitaet-Bewegungsstabilitaet_de.php */,
+				6A9FD20020768B23001A6CCB /* Bewusstsein-Physik-Leben-Regelprozesse_de.php */,
+				6A831C171B2EFE8D00812C7A /* Demenz-Konzentrationsstoerungen-Alzheimer-Parkinson_de.php */,
+				6AE259841EA493A900E205C9 /* Diskussion_de.php */,
+				6AB78B6D1A83F8AE0092BA17 /* Einleitung_de.php */,
+				6A7383EF1BAB417E00651118 /* Ernaehrung-innere-Spannung-und-Gewicht_de.php */,
+				6AF05DEE228324CE00EF65FC /* favicon */,
+				6AF05DEF228324CE00EF65FC /* favicon.ico */,
+				6A9B8D741D112C7000C9A201 /* Gesangstechnik_de.php */,
+				6A681A2A2174E05100A5DE12 /* Gesichtshaelften-Gesichtsausdruck-Gesichtsspiegelung_de.php */,
+				6AEBBF6F1E5ACF8A00859404 /* Glueck-Sinn-Spannend-Leben.php */,
+				6AB78B6C1A83EBD00092BA17 /* index.php */,
+				6A10AFAD241EBBE800E6F07B /* Information-und-Kommunikation-Rueckkopplung-Regelprozesse.php */,
+				6A831C181B3171CB00812C7A /* Koerperliche-seelische-Existenz_de.php */,
+				6AC53CA31B26BD70000C72B4 /* Koerperspannung_de.php */,
+				6AD8DDE42104B8E4006DFE27 /* Kuenstliche-Inteligenz-Robotik_de.php */,
+				6A6FF1921B0A3A6A009E19E6 /* Literatur_de.php */,
+				6ABF3C181DFBFE0600D0954F /* Meditation-Selbstakupressur_de.php */,
+				6AB0E30B21A6DB7200A5EA5C /* Meetup-Yoga-Alternativmedizin-meets-Wissenschaft-Medizin-Physik.php */,
+				6AD9B84022D10E0F00B3E0E6 /* Philosophie.php */,
+				6A5602041A8791B1006DBD87 /* Psyche-und-Stimmung_de.php */,
+				6A17D46323F87B8800973645 /* Psychosomatik.php */,
+				6ABDFCDB1E2CC0320080AA99 /* Psychosomatische-Verspannungen-durch-Stress_de.php */,
+				6A8CF762225C742B00F39D4F /* Psychosomatik-unser-kluger-Umgang-mit-Entscheidungen.php */,
+				6A5055D61D8EC69D00CC68C0 /* Rueckenschmerzen-Bandscheibenvorfall-Atmung-Zwerchfell_de.php */,
+				6A7248F020ECCB66003B1C72 /* Vortrag-Perspektivwechsel-Ambiguitaetstoleranz-Entscheidungen-Demokratie_de.php */,
+				6A6D1B71200CE85B00E93883 /* Vortrag-Physik-Achtsamkeit-und-Yoga_de.php */,
+				6ABA75571BDE09BE00C3E359 /* Vorwort_de.php */,
+				6A8B768B231983AF00A57B2B /* Was-ist-Leben.php */,
+				6A831C161B2EFE2500812C7A /* XXX.php */,
+				6ABDFCDA1E2C08910080AA99 /* *Umleitungen */,
+			);
+			path = "Spannungsspiel-des-Lebens";
+			sourceTree = "<group>";
+		};
+		6ABA75581BDF504B00C3E359 /* Naturphilosophie-der-Zeit */ = {
+			isa = PBXGroup;
+			children = (
+				6ABA75591BDF504B00C3E359 /* Einleitung_de.php */,
+				6ABA755A1BDF59F700C3E359 /* index.php */,
+				6ABA755B1BDF59F700C3E359 /* Literatur_de.php */,
+			);
+			path = "Naturphilosophie-der-Zeit";
+			sourceTree = "<group>";
+		};
+		6ABDFCDA1E2C08910080AA99 /* *Umleitungen */ = {
+			isa = PBXGroup;
+			children = (
+				6A10AFAE24240D0E00E6F07B /* Achtsamkeitsprozess_de.php */,
+				6AED694D1D3529C900C7CD2B /* Gesichtsausdruck-Gesichtsspiegelung_de.php */,
+				6A8BDE2522AD6436006EF11F /* Glueckliches-und-angenehmes-Leben_de.php */,
+				6A7383EE1B9D79BE00651118 /* Naturphilosophie-Yoga_de.php */,
+				6ABDFCD91E2C08700080AA99 /* Philosophie-Yoga_de.php */,
+				6A8079C523B3E87E00417B56 /* Psychosomatische-Pole-Gradienten-im-Koerper.php */,
+			);
+			name = "*Umleitungen";
+			sourceTree = "<group>";
+		};
+		6ABE7F89177D229600019FEB /* Quanten-Fluss-Theorie */ = {
+			isa = PBXGroup;
+			children = (
+				6AB916741C293A5E00C0464A /* Atommodell_de.php */,
+				6A2E4474188C19F1004CA047 /* Ausblick_de.php */,
+				6A75462717C1430A0003A48A /* Basisteilchenmodell-im-Vergleich_de.php */,
+				6AC7C3C8187F1DC3006C7CC2 /* Diskussion_de.php */,
+				6A361B121ECB6F1800B12141 /* Dunkle-Energie_de.php */,
+				6AF28B3917A512DC00DE96B6 /* Dunkle-Materie-modifizierte-newtonsche-Dynamik-MOND_de.php */,
+				6A1DDCD3186DAA0C00C7BE5D /* Einleitung_de.php */,
+				6A9FF27D17C7DADF00EC1362 /* Elektroschwache-Wechselwirkung-Teilchenumwandlungen-schwacher-Isospin_de.php */,
+				6AC270A117D4F7E0006F0233 /* Elementarteilchenmodell-mit-Wirkungsquanten-Strings_de.php */,
+				6AF05DEC228324B000EF65FC /* favicon */,
+				6AF05DED228324B000EF65FC /* favicon.ico */,
+				6A22D4011879FEDA0029B041 /* Fazit_de.php */,
+				6A314BCC23DCCA7B007CE667 /* First-Prinziples-Neue-Physik.php */,
+				6A3FBD7B17A2D71D002A2E71 /* Gravitation-Higgs-Feld-Dichte_de.php */,
+				6A12D35C17D3555300DD39DE /* Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.php */,
+				6A4AA76617D62CF00000A2D3 /* index.php */,
+				6A9E6449193B02B20031B17D /* Impressum_de.php */,
+				6AF28B3A17A51CE700DE96B6 /* Leptonen-Modell-Elektron-Positron-Myon-Tauon-Neutrino_de.php */,
+				6A45B78B1A9F4F1F00120C1B /* Literatur_de.php */,
+				6A684BE823BFD3A700767835 /* Meetup-Physik-Neu-Sehen-Ergruenden.php */,
+				6A49701317B7D02F00A60211 /* Neue-Physik-Problem-der-Zeit_de.php */,
+				6A75462817C4F6220003A48A /* Notwendige-Vereinheitlichung-Physik-Dilemma_de.php */,
+				6A4980441918A82400DD9801 /* Quantenchromodynamik-Hadronen-Quarks-Gluonen_de.php */,
+				6A65D2051793BCEC00603C6E /* Quantengravitation-der-Elementarteilchen_de.php */,
+				6AC9DED42343D59A0051F708 /* Quantenmechanik-De-Broglie-Bohm-Theorie-Pilotwellentheorie-Bohmsche-Mechanik_de.php */,
+				6A10C89B17F4ABF00003B272 /* Raum-Zeit-Alterung-Frequenz-Energie-Problem-der-Zeit-Pound-Rebka-Snider-Experiment_de.php */,
+				6A187A451E450500006C2EBB /* Universum-Schwarze-Loecher-Kosmos-Urknall_de.php */,
+				6ABE7F8A177D229600019FEB /* Vakuum-Higgs-Mechanismus-und-Gravitation_de.php */,
+				6AC7C3C9187F26FC006C7CC2 /* Vergleich-mit-anderen-Theorien_de.php */,
+				6AEC8AEB17806CE10075075A /* Vorwort_de.php */,
+				6AB862111F32203000EFAD97 /* Was-ist-Physik_de.php */,
+				6A86F260232D93F500B14D04 /* Wie-messen-wir-in-der-Physik.php */,
+				6AC7C3C7187F1632006C7CC2 /* Zusammenfassung_de.php */,
+				6A2E4473188BF294004CA047 /* XXX_Notizen.php */,
+				6A195A7F1827FD8F0080A16B /* XXX.php */,
+				6A45B78D1AA0BFB000120C1B /* *Umleitungen */,
+			);
+			path = "Quanten-Fluss-Theorie";
+			sourceTree = "<group>";
+		};
+		6AC208621F5D93C9009C9B14 /* Quantum-Flow-Theory Web */ = {
+			isa = PBXGroup;
+			children = (
+				6AC208631F5D93E7009C9B14 /* htaccess.txt */,
+			);
+			name = "Quantum-Flow-Theory Web";
+			path = "../../Quantum-Flow-Theory Web";
+			sourceTree = "<group>";
+		};
+		6AC39CFC13057514001CC42A /* NSOSP Web */ = {
+			isa = PBXGroup;
+			children = (
+				6A7A8B23135EBC87002A28E8 /* Aufgaben - NSOSP Web.txt */,
+				6A66AF501CB10B9B00817D24 /* index.php */,
+				6AC39D6713057515001CC42A /* de */,
+				6AC39D6C13057515001CC42A /* eng */,
+				6AC6D1891F8639AD0005D0C5 /* FrQFT */,
+				6A66AF511CB118BD00817D24 /* *Umleitungen */,
+				6AC39D7413057515001CC42A /* robots.txt */,
+				6AC39D7513057515001CC42A /* share */,
+				6A31B30E1DD21A860066304C /* htaccess.txt */,
+				6AC39DAF13057515001CC42A /* sitemap.xml */,
+				6A7390771F812FFA001C9594 /* spannung */,
+				6A5EF85320B5ACBA00A1D8B5 /* VRT */,
+			);
+			name = "NSOSP Web";
+			sourceTree = SOURCE_ROOT;
+		};
+		6AC39D6713057515001CC42A /* de */ = {
+			isa = PBXGroup;
+			children = (
+				6A594BD5165E8B8E00A65594 /* Fraktale-Quanten-Fluss-Theorie_Manuskript_de.html */,
+				6AC39D6913057515001CC42A /* Impressum-Deutschland.html */,
+				6A73BBE81CAE443000F559FC /* index.php */,
+				6AC39D6B13057515001CC42A /* Spezielle_Medium-Relativitaetstheorie_Deutsch.html */,
+				6AF3BB5B1331160100A01A03 /* Michelson-Morley-Experiment_nicht-klassisch.html */,
+				6ABA75581BDF504B00C3E359 /* Naturphilosophie-der-Zeit */,
+				6AE9E9ED1F3775820027C8E5 /* Naturphilosophie-Yoga */,
+				6A73BBE91CAE449400F559FC /* New-Soul-Of-Science-Project */,
+				6ABE7F89177D229600019FEB /* Quanten-Fluss-Theorie */,
+				6AB78B6B1A83EBD00092BA17 /* Spannungsspiel-des-Lebens */,
+				6AD2EC891BC39D77004ABE3B /* Superial-Zahlen */,
+				6A49366F1A9704EB009EDC76 /* Vereinheitlichte-Relativitaetstheorie */,
+				6A4936711A970B44009EDC76 /* *Umleitungen */,
+			);
+			path = de;
+			sourceTree = "<group>";
+		};
+		6AC39D6C13057515001CC42A /* eng */ = {
+			isa = PBXGroup;
+			children = (
+				6AC39D6E13057515001CC42A /* Imprint-English.html */,
+				6AC39D6F13057515001CC42A /* index.html */,
+				6AC39D7013057515001CC42A /* Special_Medium_Relativity_Theory_English.html */,
+				6A37D27615DE7FAF00AA974B /* Fractal-Quantum-Flow-Theory_Manuscript_en.html */,
+				6AC53CA41B28955E000C72B4 /* *Umleitungen */,
+			);
+			path = eng;
+			sourceTree = "<group>";
+		};
+		6AC39D7513057515001CC42A /* share */ = {
+			isa = PBXGroup;
+			children = (
+				6AC39D7613057515001CC42A /* css */,
+				6AC39DAD13057515001CC42A /* js */,
+				6A0465A716E0B8ED00B7FECC /* php */,
+			);
+			path = share;
+			sourceTree = "<group>";
+		};
+		6AC39D7613057515001CC42A /* css */ = {
+			isa = PBXGroup;
+			children = (
+				6AC39D9F13057515001CC42A /* font.yui.css */,
+				6AC39DA013057515001CC42A /* grid.af-23.css */,
+				6AC39DA113057515001CC42A /* grid.af-33.css */,
+				6AC39DA213057515001CC42A /* main.css */,
+				6A65AEE52205F0D0008D3820 /* minireset.css */,
+				6AC39DA313057515001CC42A /* print.css */,
+				6AC39DA413057515001CC42A /* reset.yui.css */,
+				6AC39DA513057515001CC42A /* script.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		6AC39DAD13057515001CC42A /* js */ = {
+			isa = PBXGroup;
+			children = (
+				6AC39DAE13057515001CC42A /* nospam.js */,
+				6AD8259716FA3B4100C3CBFA /* Tools_v01_001.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		6AC53CA41B28955E000C72B4 /* *Umleitungen */ = {
+			isa = PBXGroup;
+			children = (
+				6A3D67F616C4F01D004BB110 /* Fractal-Quantum-Flow-Theory-English.html */,
+				6AC39D6D13057515001CC42A /* Graviton-Flow-Theory-English.html */,
+			);
+			name = "*Umleitungen";
+			sourceTree = "<group>";
+		};
+		6AC6D1891F8639AD0005D0C5 /* FrQFT */ = {
+			isa = PBXGroup;
+			children = (
+				6AC6D18A1F8639AD0005D0C5 /* index.php */,
+			);
+			path = FrQFT;
+			sourceTree = "<group>";
+		};
+		6AD2EC891BC39D77004ABE3B /* Superial-Zahlen */ = {
+			isa = PBXGroup;
+			children = (
+				6AD2EC8A1BC39D77004ABE3B /* Einleitung_de.php */,
+				6AF05DF1228324E300EF65FC /* favicon */,
+				6AF05DF0228324E300EF65FC /* favicon.ico */,
+				6AD2EC8B1BC39D77004ABE3B /* index.php */,
+				6AD2EC8C1BC3DB7B004ABE3B /* Literatur_de.php */,
+			);
+			path = "Superial-Zahlen";
+			sourceTree = "<group>";
+		};
+		6AE9E9ED1F3775820027C8E5 /* Naturphilosophie-Yoga */ = {
+			isa = PBXGroup;
+			children = (
+				6AE9E9F11F3CA1770027C8E5 /* Angebote-Veranstaltungen_de.php */,
+				6AE9E9F01F387B020027C8E5 /* Einleitung.php */,
+				6A16D736247E4C5500A1891C /* favicon */,
+				6AF05DE92283246E00EF65FC /* favicon.ico */,
+				6A3E3D722295CC1F00108AD1 /* Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php */,
+				6AE9E9EE1F3775820027C8E5 /* index.php */,
+				6AE9E9EF1F3776640027C8E5 /* Literatur_de.php */,
+				6A314BCD23DCDA17007CE667 /* Meetup-LGBT-Spiritual-Hamburg.php */,
+				6A10AFAF2426640C00E6F07B /* Spiritualitaet-und-Psychologie.php */,
+				6ACA3842246DE694007047A3 /* Stein-der-Weisen-(Lapis-Philosophorum)-Heiliger-Gral-Phoenix.php */,
+				6A4FD4C6224508B300CFEEB7 /* Vorwort.php */,
+				6ABB41D521E8A011000A18A3 /* Was-ist-Yoga_de.php */,
+				6AD8DDE52110BE9D006DFE27 /* Was-unterscheidet-Yoga-von-Sport-Persoenlichkeitsentwicklung-oder-Leistung_de.php */,
+				6A70A7121FF102F300282E05 /* Workshop-Achtsamkeitsprozess-Wo-Physik-auf-Yoga-trifft_de.php */,
+				6AED092F1FAE161900B1681E /* XXX_Notizen.php */,
+				6AD9B83F22D10D1F00B3E0E6 /* XXX.php */,
+				6A4FD4C822450C8800CFEEB7 /* *Umleitungen */,
+			);
+			path = "Naturphilosophie-Yoga";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		6A84F42D1303130400DFD21A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 6A84F42E1303130400DFD21A /* Build configuration list for PBXProject "_NSOSP Web" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 6A84F42B1303130400DFD21A;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		6A84F42F1303130500DFD21A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		6A84F4301303130500DFD21A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A84F42E1303130400DFD21A /* Build configuration list for PBXProject "_NSOSP Web" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A84F42F1303130500DFD21A /* Debug */,
+				6A84F4301303130500DFD21A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A84F42D1303130400DFD21A /* Project object */;
+}

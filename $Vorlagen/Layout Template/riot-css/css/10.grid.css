@@ -1,0 +1,30 @@
+#container {
+	width: 700px;
+	margin: 0 auto
+}
+
+#wrapper {
+	float: left;
+	width: 100%
+}
+
+#content {
+	margin-right: 300px
+}
+
+#navigation {
+	float: left;
+	width: 150px;
+	margin-left: -150px
+}
+
+#extra {
+	float: left;
+	width: 150px;
+	margin-left: -300px
+}
+
+#footer {
+	clear: left;
+	width: 100%
+}

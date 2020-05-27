@@ -1,0 +1,25 @@
+#wrapper {
+	float: right;
+	width: 100%;
+	margin-left: -200px
+}
+
+#content {
+	margin-left: 200px
+}
+
+#navigation {
+	float: left;
+	width: 200px
+}
+
+#extra {
+	float: left;
+	clear: left;
+	width: 200px
+}
+
+#footer {
+	clear: both;
+	width: 100%
+}

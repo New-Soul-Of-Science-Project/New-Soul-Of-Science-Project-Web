@@ -1,0 +1,26 @@
+RewriteEngine On
+
+# Redirects all "nsosp.org" to "www.nsosp.org"
+RewriteCond %{HTTP_HOST} !^www\.nsosp\.org$ [NC]
+RewriteRule ^(.*)$ http://www.nsosp.org/$1 [L,R=301]
+
+# Redirects all "www.nsosp.org" to "nsosp.org"
+#RewriteCond %{HTTP_HOST} ^www\.nsosp\.org$ [NC]
+#RewriteRule ^(.*)$ http://nsosp.org/$1 [L,R=301]
+
+RedirectPermanent /index.html /de/New-Soul-Of-Science-Project/index.php
+
+# !!! Not working with "(http://)www.nsosp.org/de/index.html", but with "(http://)nsosp.org/de/index.html"! Don't know why!
+RedirectPermanent /de/index.html /de/New-Soul-Of-Science-Project/index.php
+
+RedirectPermanent /de/Fraktale-Quanten-Fluss-Theorie_Manuskript-Deutsch.html /de/Fraktale-Quanten-Fluss-Theorie_Manuskript_de.html
+
+RedirectPermanent /de/Fraktale-Quanten-Fluss-Theorie-Deutsch.html /de/Quanten-Fluss-Theorie/index.php
+RedirectPermanent /de/Fraktale-Quanten-Fluss-Theorie_Elektroschwache-Wechselwirkung-Teilchenumwandlungen-Innerer-Spin-Schwacher-Isospin_de.html /de/Quanten-Fluss-Theorie/Elektroschwache-Wechselwirkung-Teilchenumwandlungen-schwacher-Isospin_de.php
+RedirectPermanent /de/Fraktale-Quanten-Fluss-Theorie_Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.html /de/Quanten-Fluss-Theorie/Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.php
+RedirectPermanent /de/Fraktale-Quanten-Fluss-Theorie_Leptonen-Elektron-Positron-Myon-Tauon-Neutrino_de.html /de/Quanten-Fluss-Theorie/Leptonen-Modell-Elektron-Positron-Myon-Tauon-Neutrino_de.php
+RedirectPermanent /de/Fraktale-Quanten-Fluss-Theorie_Literatur_de.html /de/Quanten-Fluss-Theorie/Literatur_de.php
+RedirectPermanent /de/Gravitonen-Fluss-Theorie-Deutsch.html /de/Quanten-Fluss-Theorie/index.php
+RedirectPermanent /de/Impressum-Deutschland.html /de/Quanten-Fluss-Theorie/Impressum_de.php
+
+RedirectPermanent /eng/Graviton-Flow-Theory-English.html /de/Quanten-Fluss-Theorie/index.php

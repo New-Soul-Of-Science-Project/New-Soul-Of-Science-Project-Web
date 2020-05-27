@@ -1,0 +1,17 @@
+/*.buy a {*/
+.buy {
+	text-indent:-9999em;
+	/*background:url(../images/Kaufen_Logo.gif) center left no-repeat;*/
+	width:85px;
+	height:43px;
+}
+.test {
+	text-indent:-9999em;
+	/*background:url(../images/Testen_Logo.gif) center left no-repeat;*/
+	width:85px;
+	height:43px;
+}
+.buy *,
+.test * {
+	display:none;
+}

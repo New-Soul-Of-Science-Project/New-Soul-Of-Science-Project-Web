@@ -1,0 +1,14 @@
+#wrapper {
+	float: right;
+	width: 70%
+}
+
+#navigation {
+	float: left;
+	width: 29.9%
+}
+
+#extra {
+	clear: both;
+	width: 100%
+}
