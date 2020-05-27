@@ -510,7 +510,7 @@
                   array( 'text', array( text => array(
                   '\\condb{Grundsätzliche Erneuerung und Auferstehung} \\\\'."\n".
                     'Dieser Lernprozess und diese Persönlichkeitsentwicklung machen eine Erneuerung und deren Auferstehung erst möglich.'."\n".
-                    'XXX'."\n".
+                    'XXXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
