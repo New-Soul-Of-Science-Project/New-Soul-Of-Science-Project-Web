@@ -224,7 +224,7 @@
                     'Ist sicherlich nicht rein zufällig in unseren Sprachgebrauch gelangt.'."\n",
                       'Ich vermute, dass auch gerade dieses Heilen und Weise-Werden als sich transformieren durch lernen, dadurch, dass wir uns fortentwickeln,'."\n".
                     'mit dem ›Stein der Weisen‹ der Alchemie des Gottes Hermes Trismegistos\\footnote{\\const{NPYo_g_footnote_text_HermesTrismegistos}} (Thot-Hermes) gemeint ist.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:KundaliniProzess', text =>
                       
                 'Der Kundalini-Prozess', subline =>
                   '')),

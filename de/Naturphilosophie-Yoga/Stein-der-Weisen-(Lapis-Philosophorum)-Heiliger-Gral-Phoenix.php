@@ -20,13 +20,14 @@
                       
                   array( 'text', array( text => array(
                     'Die drei Mythen und Sagen um den Stein der Weisen, den Heiligen Gral und den Phönix aus der Asche beinhalten wunderbare Weisheiten, Sehnsüchte und Motive,'."\n".
-                    'die sie alle miteinander verbinden.'."\n".
+                    'die alle drei miteinander verbinden.'."\n".
                     'Auch sind alle drei mit unserer Geschichte, der Menschheitsgeschichte, über die Philosophien und Religionen der Welt verknüpft.'."\n",
                       'Hinter ihnen, hinter den Geweben unserer Geschichte, verbergen sich tiefgründige (natur-)philosophische Einsichten und Kritiken, denen Naturprinzipien'."\n".
                     'zugrunde liegen, mit denen ich mich intensiv beschäftige.'."\n",
                       'Ich reklamiere nicht der Experte für die historisch-geschichtlichen Details dieser Mythologien zu sein, soweit diese überhaupt bekannt sind.'."\n".
-                    'Vielmehr versuche ich mich in die naturphilosophischen Hintergründe ihrer Zusammenhänge, Verbundenheit und Weisheiten hineinzufinden.'."\n".
-                    'Diese zeigen in meinen Augen ein tiefes intuitives und analytisches Verständnis der Natur unseres Lebens und unserer Welt sowie'."\n".
+                    'Vielmehr versuche ich mich in die naturphilosophischen Hintergründe ihrer Zusammenhänge, Verbundenheit und Weisheiten hineinzufinden und'."\n".
+                    'interpretiere in diesem Sinne den gesamthistorischen Verlauf, wie er sich mir derzeit darstellt.'."\n".
+                    'Diese Zusammenhänge zeigen in meinen Augen ein tiefes intuitives und analytisches Verständnis unserer Vorfahren von der Natur unseres Lebens und unserer Welt sowie'."\n".
                     'der menschlichen Sehnsucht der Erfüllung eines glücklichen, sinnvollen und gesunden Lebens.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Vortext:XXX', text =>
                                            
@@ -57,15 +58,15 @@
                   '\\condb{Glück, Heilung und ewiges Leben als Ziel der Transmutation} \\\\'."\n".
                     'So macht auch das Wort \\italic{entwickeln} die Klugheit unserer Vorfahren und Ahnen deutlich,'."\n".
                     'denn das Leben soll uns dadurch leichter fallen, uns von Hindernissen und Fesseln befreien, neue Möglichkeiten erschaffen.'."\n",
-                      'Auf welche Art und Weise dies geschehen soll, konnte hingegen strittig sein, wie ich nachfolgend erkläre.'."\n"))),
+                      'Auf welche Art und Weise dies geschehen soll, konnte hingegen schon damals strittig sein, wie ich nachfolgend erkläre.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Wie innen, so außen} \\\\'."\n".
                     'Bei der Alchemie handelt es sich vom Ansatz her folglich um eine Philosophie, die den Zusammenhängen unseres Lebens, unserer Natur und unserer Welt'."\n".
                     'tiefer auf den Grund geht.'."\n".
-                    'So liegt diesem Prinzip dann auch die Einsicht ›wie innen, so außen‹ zugrunde.'."\n",
-                      'Grundkonzepte der Psychologie und Persönlichkeitsentwicklung gleichen denen der modernen Chemie.'."\n".
-                    'Wie weit dies trägt oder auch nicht, ist sicherlich in vielen Misserfolgen der äußeren Alchemie, beim Versucht der chemischen Herstellung des Steins der Weisen und'."\n".
-                    'seiner Verwendung zur Umwandlung von Materialien in Gold zu erkennen.'."\n".
+                    'So liegt diesem Prinzip dann auch die Einsicht ›wie innen, so außen‹ zugrunde.\\color{*Bearb}{(Verweis)}'."\n",
+                      'In der Alchemie allgemein ähneln Grundkonzepte der inneren Alchemie – Grundkonzepte der Psychologie und Persönlichkeitsentwicklung unseres Lebens – denen der äußeren Alchemie, also denen der Chemie.'."\n".
+                    'Wie weit diese Grundkonzepte in Bezug auf die Chemie tragen oder auch nicht, ist sicherlich in vielen Misserfolgen der äußeren Alchemie, beim Versucht der chemischen Herstellung des Steins der Weisen und'."\n".
+                    'seiner Verwendung zur Umwandlung von Materialien in Gold, zu erkennen.'."\n".
                     'Ihr war kein Erfolg vergönnt.'."\n",
                       'Auf der anderen Seite ist den Alchemisten auch vieles Erstaunliche im Laufe der Zeit gelungen und endete schließlich nicht nur in der modernen Chemie,'."\n".
                     'sondern auch in der modernen Physik und hat in nicht zu unterschätzender Weise ebenso die Entwicklung der modernen Mathematik gefördert.'."\n"))),
@@ -78,14 +79,20 @@
                       'Hier stellt sich für mich die Frage, ob die Stufen unedler Mensch, unedles Metall, und schließlich edler Mensch, edel, wie Silber und Gold, ursprünglich als reine Gleichnisse, als Allegorien, gemeint waren.'."\n".
                     'Für mich ist es gut vorstellbar, dass die Allegorien erst später wörtlich genommen wurden und sich daraus die äußere Alchemie, die Chemie, entwickelt hat.'."\n".
                     'Dies wird sich vielleicht nie wirklich abschließend klären lassen.'."\n".
-                    'Ich sehe aber plausible Hinweise darauf.'."\n"))),
+                    'Ich sehe aber plausible Hinweise darauf.'."\n",
+                      'Demnach wären Menschen, die mehr Wert auf und Hoffnung in das materielle legten, vermutlich aufgrund ihres chemischen Vorwissens, nachträglich zu der Überzeugung gekommen,'."\n".
+                    'dass die rätselhaften Beschreibungen der Alchemie eigentlich einen materiellen Schatz, in Form eines Geheimnisses um materielle chemische Prozesse, in sich tragen.'."\n".
+                    'Wie wir heute wissen sind es aber nukleare Prozesse, die chemische Elemente ineinander umwandeln, die vornehmlich in Sonnen und deren Explosionen ablaufen, den Supernovae\\color{*Bearb}{(Verweis)}.\\color{*Bearb}{(Verweis)}'."\n".
+                    'Dies war diesen unseren Vorfahren offenbar nicht bekannt und so war ihr Tun und Streben von vornherein zum Scheitern verurteilt.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Konflikt zwischen innerer und äußerer Alchemie – zwischen Spiritualität und Materialismus} \\\\'."\n".
-                    'Der sich in unserer Geschichte teilweise entwickelnde Konflikt zwischen innerer und äußerer Alchemie findet sich interessanter Weise in hohem Grad in unserer heutigen Gesellschaft wieder:'."\n"))),
+                    'Der in unserer historischen Geschichte schon lange vorhandene, sich entwickelnde Konflikt zwischen innerer und äußerer Alchemie'."\n".
+                    'findet sich interessanter Weise, und vermutlich in hohem Grad zugespitzt, in unserer heutigen Gesellschaft wieder:'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Suchen wir unser Heil und unsere Glückseligkeit vornehmlich in unserer Persönlichkeitsentwicklung,'."\n".
-                        'unserer inneren Seelen- und Körperpflege, als auch im offenen Kontakt mit anderen Menschen oder vornehmlich im Konsum und Materialismus?'."\n"))),
+                        'unserer inneren Seelen- und Körperpflege, als auch im offenen Kontakt mit anderen Menschen?'."\n",
+                          'Oder suchen wir danach vornehmlich im Konsum und Materialismus?'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Dies ist in meinen Augen eine der zentralsten Fragen unserer Zeit, die sich jeder stellen sollte.'."\n",
@@ -125,7 +132,8 @@
                   array( 'text', array( text => array(
                     'Dies ist eine rätselhafte Umschreibung des, in meinen Augen inneren, Steins der Weisen.'."\n".
                     'Jedenfalls passt sie für mich nicht auf einen materiellen Gegenstand.'."\n",
-                      'Des Rätsels Lösung ist der Achtsamkeitsprozess oder Kundalini-Prozess, wie am Hermesstab\\footnote{\\const{NPYo_g_footnote_text_Hermesstab}} und'."\n".
+                      'Des Rätsels Lösung ist der \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess} oder \\jump{OM:SpaLeb:Psychosomatik:Vortext:KundaliniProzess}{Kundalini-Prozess},'."\n".
+                    'wie am Hermesstab\\footnote{\\const{NPYo_g_footnote_text_Hermesstab}} und'."\n".
                     'seinen Kundalini-Schlangen zu erkennen (siehe \\jumpname{OM:NPYo:Stein-der-Weisen:Vortext:Fig-Hermesstab}).'."\n".
                     'Die Darstellung dieses Entwicklungsprozesses durch aufsteigende Schlangen gab es entsprechend auch im alten Ägypten.'."\n".
                     'Ich würde die vier Zeilen demnach so deuten:'."\n"))),
@@ -176,8 +184,8 @@
                         'steigert die Weisheit des Nutzers um das Hundertfache',
                     ))),
                   array( 'text', array( text => array(
-                    'Diese Eigenschaften interpretiere ich in Bezug auf die Annahme, dass es sich beim Stein der Weisen vordergründig um'."\n".
-                    'Persönlichkeitsentwicklung, den Achtsamkeitsprozess beziehungsweise den Kundalini-Prozess handelt so:'."\n"))),
+                    'Diese Eigenschaften interpretiere ich, in Bezug auf meine Annahme, dass es sich beim Stein der Weisen vordergründig um'."\n".
+                    'Persönlichkeitsentwicklung, den Achtsamkeitsprozess beziehungsweise den Kundalini-Prozess handelt, so:'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         '\\bold{erschaffen durch alchemische Transmutation} \\\\'."\n".
@@ -240,8 +248,8 @@
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Ich bin davon überzeugt, dass der äußere Stein der Weisen, das Materielle, nicht ohne den inneren Stein der Weisen,'."\n".
                         'das Spirituelle, von uns als das gesehen und erkannt werden kann, was er ist.'."\n",
-                          'Wir überschätzen dann unseren materiellen Besitz gegenüber unserem spirituellen, unserer gut entwickelten Persönlichkeit,'."\n".
-                        'was unser Glück, unsere Heilung und unser ewiges Leben betrifft.'."\n"))),
+                          'Gehen wir nicht durch eine intensive Persönlichkeitsentwicklung, dann überschätzen wir unseren materiellen Besitz gegenüber unserem spirituellen,'."\n".
+                        'unserer gut entwickelten Persönlichkeit, was unser Glück, unsere Heilung und unser ewiges Leben betrifft.'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Dies ist das eigentliche Geheimnis des Steins der Weisen, warum er auch in Rätselform be- und umschrieben wird.'."\n".
@@ -319,8 +327,8 @@
                       'Meine These ist also:'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                        'Die Weiblichkeit ist das Verlorene. \\\\'."\n".
-                        'Dieser Verlust steht für eine gesellschaftlich-religiöse Imbalance der Pole des Weiblichen und des Männlichen.'."\n"))),
+                        'Die Weiblichkeit ist das Verlorene.'."\n",
+                          'Dieser Verlust steht für eine gesellschaftlich-religiöse Imbalance der Pole des Weiblichen und des Männlichen.'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Es ist allerdings nicht einfach ein Verlust, sondern in weiten Teilen eine Negierung des Weiblichen und ihre Verbannung.'."\n".
@@ -338,8 +346,13 @@
                     'Es ist in der Hölle anzutreffen.'."\n".
                     'Wahlweise als Teufel, Dämon oder feuerspeiender Drache.'."\n",
                       'Die Schlangen, oder eine der Schlangen, wurden in unserer Historie immer wieder auch als Feuerdrachen identifiziert und symbolisiert.'."\n".
-                    'Es gab die Naturbeobachtung, dass Drachen oder Feuerdrachen gerne in den tiefen von Bergen und Erdspalten wohnen, in Vulkanen, in ihren Drachenhorten.'."\n",
-                      'Auf diese Weise ergibt sich also für den Fall der verschwundenen Schlange ein einigermaßen plausibles Bild.'."\n"))),
+                    'Es gab die Naturbeobachtung, dass Drachen oder Feuerdrachen gerne in den tiefen von Bergen und Erdspalten wohnen, in Vulkanen, in ihren Drachenhorten.'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        'Das Weibliche, Schwache wurde allzuoft mit dem Bösen, Sündigen identifiziert und ist demnach in der Hölle anzutreffen.'."\n"))),
+                      
+                  array( 'text', array( text => array(
+                    'Auf diese Weise ergibt sich also für den Fall der verschwundenen Schlange ein einigermaßen plausibles Bild.'."\n"))),
                       
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
                     array_merge( $NPYo_g_figure_ary_Hexagramm, array( name => 'OM:NPYo:Stein-der-Weisen:Vortext:Fig-Hexagramm',
@@ -353,9 +366,9 @@
                       'Die beiden Dreiecke stehen hier für das Männliche (Spitze aufwärts, Phallus) und das Weibliche (Spitze abwärts, Kelch oder Vagina).'."\n".
                     'Die Veränderung dieses göttlichen Zeichens hat im Christentum ebenfalls das weibliche Element verloren.'."\n".
                     '(Von der Bedeutung dieses Symbols für das Judentum, für das es heute als Davidstern steht, möchte ich hier absehen, weil diese Zuordnung weltgeschichtlich jüngeren Datums zu sein scheint, wohl um das Jahr 1490.\\color{*Bearb}{(Verweis)})'."\n",
-                      'Nur das männliche Dreieck mit der Spitze nach oben, das für die göttliche Trinität steht und auch das ›Auge der Vorsehung‹\\color{*Bearb}{(Verweis)}) umgibt, blieb übrig.'."\n".
+                      'Nur das männliche Dreieck mit der Spitze nach oben, das für die göttliche Trinität steht und auch das ›Auge der Vorsehung‹\\color{*Bearb}{(Verweis)} umgibt, blieb übrig.'."\n".
                     'Der weibliche Kelch verschwand.'."\n".
-                    'Seine Spitze zeigte nach unten und dahin ging er dann scheinbar auch, während der aufgerichtete Phallus sich erhöhte.'."\n",
+                    'Seine Spitze zeigte nach unten und dahin ging der Kelch oder das Gefäß dann scheinbar auch, in die Erde, in die Hölle, während der aufgerichtete Phallus sich in den Himmel erhöhte.'."\n",
                       'Dies mag alles reiner Zufall sein, jedoch erscheint auch dieses Bild in sich plausibel.'."\n",
                       'Sehr spekulativ sind meine Gedanken dazu, was es mit der blutenden Lanze aus der Sage vom Heiligen Gral auf sich haben könnte, wenn die vorstehenden spekulativen Eindrücke'."\n".
                     'Wahrheitsgehalt haben sollten:'."\n".
@@ -370,11 +383,11 @@
                   array( 'text', array( text => array(
                   '\\condb{Zukunftsperspektive — Perspektivwechsel} \\\\'."\n".
                     'Wir werden aus meiner Perspektive nur persönliche und gesellschaftliche Gesundheit und nur Glück erlangen, wenn wir diese Pole würdigen und sie in einen'."\n".
-                    'ausgleichenden Dialog bringen, der all ihre Bedürfnisse und Sorgen berücksichtigt und würdigt und ihnen durch Raum für Gefühle und Handlung Luft geben und Entwicklungen ermöglichen.'."\n",
+                    'ausgleichenden Dialog bringen, der all ihre Bedürfnisse und Sorgen berücksichtigt und würdigt; ihnen durch Raum für Gefühle und Handlung Luft gibt und Entwicklungen ermöglicht.'."\n",
                       'Genau an dieser Stelle setzen Machtstrukturen seit Jahrhunderten und Jahrtausenden an:'."\n",
                       'Und dafür sind die Pole Männlich und Weiblich ein sehr wesentliches, aber nur eines der Beispiele.'."\n".
                     'Mächtige Spieler spalten uns Menschen innerlich und verleiten uns dazu, Pole in uns selber, wie das Weibliche oder das Schwache, abzulehnen und zu unterdrücken.'."\n".
-                    'Dadurch verwickeln wir uns in einen endlosen Zirkel innerer Konflikte mit dem Ergebnis der chronische Selbstbeschäftigung.'."\n",
+                    'Dadurch verwickeln wir uns in einen endlosen Zirkel innerer Konflikte mit dem Ergebnis der chronischen Selbstbeschäftigung.'."\n",
                       'Dies lenkt unseren Fokus weg von den Mächtigen.'."\n".
                     'Und es gibt ihnen mannigfaltige Möglichkeiten an die Hand, über Institutionen und Medien in das für uns in diesem Zustand schwer zu verstehende und sinnvoll zu lenkende Gewirr über diese Pole einzugreifen.'."\n",
                       'Sehr ähnliches geschieht in und mit unserer Gesellschaft.'."\n".
@@ -399,7 +412,7 @@
                         'Religionen im Konflikt mit anderen Religionen',
                         'Wissenschaft im Konflikt mit Religionen',
                         'Wissenschaft im Konflikt mit anderer Wissenschaft',
-                        'gut im Konflikt mit böse (variable definierbar und der Klassiker)',
+                        'gut im Konflikt mit böse (variabel definierbar und der Klassiker)',
                     ))),
                   array( 'text', array( text => array(
                     'Und so weiter, to be continued …'."\n",
@@ -428,13 +441,40 @@
                         addtext => '~Marie von Ebner-Eschenbach\\color{*Bearb}{(Verweis)}')),
                       
                   array( 'text', array( text => array(
-                    'Dieses scheinbare Paradox lässt sich mit dem Ausgangspunkt in uns selber lösen.'."\n",
-                      'Dieses Prinzip ist in meinen Augen missverstanden, wenn wir glauben, Konflikte sollten nie im anständigen Rahmen ausgetragen werden.'."\n".
-                    'Nur auf diese Weise können wir manchmal zum Verständnis der Situation des anderen Menschen und damit zur Ausgleichsmöglichkeit und -bereitschaft kommen.'."\n",
-                      'Für die Nachhaltigkeit ist es entscheidend, uns klug und gütig mit den Ursachen des Anstiftens von Konflikten zu beschäftigen, mit den Menschen, die hinter Anstiftungen stecken.'."\n".
-                    'Auch die Anstifter sind eben Menschen und haben menschliche Schicksale, was nicht bedeutet, ihr verhalten zu tollerieren und sie gewähren zu lassen.'."\n"))),
+                    'Dieses scheinbare Paradox lässt sich mit dem Ausgangspunkt in uns selber lösen:'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        'Nur wer in sich selber Frieden findet, \\\\'."\n".
+                        'kann Frieden auch anderen Menschen geben.'."\n"))),
+                      
                   array( 'text', array( text => array(
-                  '\\condb{Brüche erzeugen Kräfte – Pole und Kräfte in der Naturphilosophie} \\\\'."\n".
+                    'Im Umkehrschluss kommt Unfrieden durch unzufriedene Menschen.'."\n".
+                    'Unzufriedenheit wiederum kann im Inneren unseres Selbst liegen, aber auch im Äußeren, zum Beispiel verursacht durch andere Menschen.'."\n".
+                    'Unzufriedenheit im Inneren unseres Selbst, kann von außen durch Traumata und ähnliches ausgelöst werden.'."\n".
+                    'So landen wir oft doch wieder im Außen und damit in der Bereitschaft zum Verständnis anderer Menschen und zum Ausgleich mit ihnen'."\n",
+                      'Damit sehen wir, dass es individuelle und gesellschaftlich eine Rückkopplung von innen und außen gibt.'."\n".
+                    'Haben wir das bei der Lösung der Friedensfrage nicht im Blick, landen wir schnell in falschen Schlüssen.'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        'Frieden beinhaltet eine Rückkopplung zwischen unserem Innen und Außen. \\\\'."\n".
+                        'Zeigen wir in Friedensfragen auf andere Menschen, zeigt deshalb unser eigener Finger immer auch auf uns selber zurück. \\\\'."\n".
+                        'Frieden kann so nur in einem dauerhaften Prozess stabilisiert werden. \\\\'."\n".
+                        'Der Mensch, auf den wir zeigen, kann ihn uns alleine, ohne unsere eigene, innere Hilfe, deshalb nicht geben.'."\n"))),
+                      
+                  array( 'text', array( text => array(
+                    'Diese Friedensprinzipien sind in meinen Augen also missverstanden, wenn wir glauben, Konflikte sollten nie im anständigen Rahmen ausgetragen werden.'."\n".
+                    'Nur auf diese Weise können wir manchmal zum Verständnis der Situation des anderen Menschen oder von uns selber und damit zur Ausgleichsmöglichkeit und -bereitschaft kommen.'."\n",
+                      'Für die Nachhaltigkeit ist es entscheidend, uns klug und gütig mit den Ursachen des Anstiftens von Konflikten zu beschäftigen, mit den Menschen, die hinter Anstiftungen stecken.'."\n".
+                    'Auch die Anstifter sind eben Menschen und haben menschliche Schicksale, was nicht bedeutet, ihr Verhalten zu tollerieren und sie gewähren zu lassen.'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Brüche erzeugen Kräfte – Pole und Kräfte in der Naturphilosophie} \\\\'."\n"))),
+                      
+                  array( 'notice', array( Display => 'vis', text => array(
+                    '• Auf das prozesshafte der Naturphilosophie und ihrer Stabilisierung der Pole eingehen.',
+                    '⋅ Ohne Pole keine Existenz und ohne Prozess keine stabilisierten Pole …',
+                    ))),
+                      
+                  array( 'text', array( text => array(
                     'In der Naturphilosophie entstehen Pole, wenn Harmonie oder Symmetrie gebrochen wird:'."\n",
                       'Dies gilt sowohl in der Psychologie oder Spiritualität wie auch in der Physik.'."\n".
                     'Das ist auch ein naturphilosophisches Prinzip, welches sowohl für unser Inneres und unser Äußeres gilt.'."\n",

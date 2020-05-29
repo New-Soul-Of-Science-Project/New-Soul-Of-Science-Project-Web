@@ -504,7 +504,7 @@
                                                                   'Je weiter die Körperspannung nach oben steigt, je intensiver wir aufgerichtet – erigiert – sind, desto höher ist unsere Handlungsintensität.');
 
   $NPYo_g_figure_ary_Hexagramm                 = array( fig_file_name => 'Spannungsspiel-des-Lebens/Hexagramm-v02', fig_alt_description => 'Das Hexagramm', width => '380px', height => '500px', name => 'set local!',
-                                                         text => 'Das Hexagramm ist ein uraltes Symbol, dass im hinduistischen Tantra dafür steht, dass Gott alles umfasst, auch das männliche und das weibliche.'."\n".
+                                                         text => 'Das Hexagramm ist ein uraltes Symbol, dass im hinduistischen Tantra dafür steht, dass Gott alles umfasst, auch das Männliche und das Weibliche.'."\n".
                                                                   'Insofern ist es ein Symbol der Balance der Pole der Welt oder des Universums.');
 
   $SpaLeb_g_figure_ary_Gefuehlsgradient        = array( fig_file_name => 'Spannungsspiel-des-Lebens/Gefuehlsgradient-v01', fig_alt_description => 'Der Gefühlsgradient', width => '380px', height => '250px', name => 'set local!',
@@ -2462,6 +2462,7 @@
                                                 'OM:SpaLeb:Psychosomatik:Vortext:AtmungEntlangAchtsamkeitsgradienten' => array( headline_text => 'Die Atmung läuft entlang des Achtsamkeitsgradienten', headline_text_short =>  'Die Atmung läuft entlang des Achtsamkeitsgradienten'),
                                                 'OM:SpaLeb:Psychosomatik:Vortext:Fig-Atmung-Atemspannung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Psychosomatik:Vortext:LoeseUndVerbinde' => array( headline_text => 'Löse und verbinde — ›solve et coagula‹', headline_text_short =>  'Löse und verbinde'),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:KundaliniProzess' => array( headline_text => 'Der Kundalini-Prozess', headline_text_short =>  'Der Kundalini-Prozess'),
                                                 'OM:SpaLeb:Psychosomatik:Vortext:Fig-Kundalini-Prozess' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Psychosomatik:Vortext:Fig-Gefuehls-Handlungspol-Waage' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Psychosomatik:Vortext:Perspektiven' => array( headline_text => 'Das kluge Spiel mit unseren Perspektiven', headline_text_short => 'Das kluge Spiel mit unseren Perspektiven'),
