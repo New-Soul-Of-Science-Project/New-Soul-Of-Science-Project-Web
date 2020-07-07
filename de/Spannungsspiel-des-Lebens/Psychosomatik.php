@@ -14,9 +14,8 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
-                    // '\\bold{XXX:}',
-                    //'• Der Achtsamkeitsprozess spiegelt sich in Polen und Verläufen – Gradienten – in unserem Körper wider, siehe Notizen \\jumpname{OM:NPYo:HaTha}.',
-                    // '• XXX',
+                    '\\bold{Persönliche Erfahrung}',
+                    '• Wenn ich beim Sex bezüglich des Sehens auf mein emotionales, linkes Auge umschalte – ich kann das bevorzugte Auge umschalten, es kann aber auch das Handlungsauge geschlossen werden –, dann werden meine Gefühle deutlich intensiver.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -73,7 +72,7 @@
                     'Nach der Verfolgung der Tempelritter\\color{*Bearb}{(Verweis)} durch die Kirche überdauerte dieses Wissen offensichtlich und tauchte teilweise bei den Freimaurern wieder auf, bei denen es, auf die Spitze getrieben, im Baphomet\\color{*Bearb}{(Verweis)} wiederzuerkennen ist.'."\n"))),
                       
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
-                    array_merge( $NPYo_g_figure_ary_Hexagramm, array( name => 'OM:SpaLeb:Psychosomatik:Vortext:Fig-Hexagramm',
+                    array_merge( $SpaLeb_g_figure_ary_Hexagramm, array( name => 'OM:SpaLeb:Psychosomatik:Vortext:Fig-Hexagramm',
                                                          /* text => '' */)),
                       )),
                       

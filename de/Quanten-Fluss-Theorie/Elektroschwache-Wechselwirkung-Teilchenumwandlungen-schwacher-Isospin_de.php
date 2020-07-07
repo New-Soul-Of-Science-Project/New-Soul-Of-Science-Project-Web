@@ -270,11 +270,11 @@
                     'in einer festen, relativen Orientierung zum normalen \\jump{OM:FrQFT:Lepton:Spins}{äußeren Spin} des Teilchens.'."\n".
                     'Beim entsprechenden \\jump{OM:FrQFT:Lepton:Antiteilchen}{Antiteilchen} ist die relative Orientierung des inneren Spins entgegengesetzt.'."\n".
                     'Ebenso trägt die \\jump{OM:FrQFT:ElektroschwacheWW:Elektromagnetische-WW}{elektrische Ladung} das umgekehrte Vorzeichen.'."\n"),
+                      
                   array( 'figure',
-                    array( fig_file_name => 'Lepton_Quark-Spins-Anti_v08', fig_alt_description => 'Leptonen und Quarks - Verhältnis von Spins und Antiteilchen', width => '700px', height => '234px', name => 'OM:FrQFT:ElektroschwacheWW:Leptonen-Quarks-Verhaeltnis-Spins-Antiteilchen',
-                           text => 'Die Darstellung zeigt die räumlichen Verhältnisse des inneren Spins in Relation zum normalen, äußeren Spin in Bezug auf Teilchen und ihre Antiteilchen.'."\n".
-                                   'Bemerkenswert ist dabei, dass alle Anti-Neutrinos den Teilchen und die Neutrinos den Antiteilchen zugeordnet sind.'."\n".
-                                   'Die Vorzeichen und Orientierungen der Spins sind Konvention.')),
+                    array_merge( $FrQFT_g_figure_ary_LeptonQuarkSpinAnti, array( name => 'OM:FrQFT:ElektroschwacheWW:Leptonen-Quarks-Verhaeltnis-Spins-Antiteilchen',
+                                                         /* text => '' */))),
+                      
                   array( 'normal',
                     'Die \\jump{OM:FrQFT:ElektroschwacheWW:Leptonen-Quarks-Verhaeltnis-Spins-Antiteilchen}{\\name{OM:FrQFT:ElektroschwacheWW:Leptonen-Quarks-Verhaeltnis-Spins-Antiteilchen}}'."\n".
                     'ordnet die Orientierungen und die Vorzeichen der Spins den Teilchen und Antiteilchen in einer Konvention zu.'."\n".

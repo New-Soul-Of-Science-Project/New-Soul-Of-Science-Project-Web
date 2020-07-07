@@ -651,7 +651,7 @@
                     'Es liegt daher nahe, dass sie durch die Wechselwirkung zu einem geschlossenen Ring zusammenhaften, der sich mit Lichtgeschwindigkeit durch den Raum schraubt,'."\n".
                     'ähnlich wie es die \\jumpname{OM:FrQFT:NeuePhysik:Fig-Elapson} darstellt.'."\n".
                     'Es handelt sich also vermutlich um viel mehr als zwei Fundamentalteilchen, die in Wechselwirkung stehen, was später durch die \\jump{OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation}{Abzählinterpretation der Heisenbergschen Unschärferelation} bestätigt wird.'."\n",
-                      'Durch den Bruch der geradlinigen Bahn der Fundamentalteilchen verteilen diese sich gleichmäßig „im Tal der Hutkrempe“ eines Sombreropotentials.'."\n".
+                      'Durch den Bruch der geradlinigen Bahn der Fundamentalteilchen verteilen diese sich gleichmäßig „im Tal der Hutkrempe“ eines Sombrero-Potentials.'."\n".
                     'Sie geraten aus der Mitte ihrer Bahn auf einen bestimmten Rotationsradius, was als eine Art von Polarisation verstanden werden kann.'."\n".
                     'In diesem Fall findet die Polarisation innerhalb des Rings einen Ausgleich, da für jedes in eine bestimmte Richtung aus der Mitte abgelenkte Fundamentalteilchen auch'."\n".
                     'ein anderes in die entgegengesetzte Richtung abgelenkt ist.'."\n".
@@ -1208,7 +1208,7 @@
                     'Das Existenzprinzips spaltet durch seine Wechselwirkung entlang der geschlossenen Ringe die ursprüngliche, konstante Djet-Bewegung in die rotierende Neheh-Bewegung und die variable Djet-Bewegung auf.'."\n".
                     'Die Symmetrie der ursprünglich geradlinigen, konstanten Djet-Bewegung wird gebrochen und in eine Helixspiralform gezwungen.'."\n".
                     'Eine Folge des Symmetriebruchs ist auch, dass sich die Ringe für eine Rotationsrichtung entscheiden müssen.'."\n".
-                    'Diesem Symmetriebruch entspringt das \\jump{OM:FrQFT:NeuePhysik:Symmetriebrechung}{Sombreropotenzial des sogenannten Higgs-Felds}.'."\n".
+                    'Diesem Symmetriebruch entspringt das \\jump{OM:FrQFT:NeuePhysik:Symmetriebrechung}{Sombrero-Potential des sogenannten Higgs-Felds}.'."\n".
                     'Er ist auch ursächlich für eine \\jump{OM:FrQFT:NeuePhysik:Symmetriebrechung}{Farbpolarisation}, die letztendlich der \\jump{OM:FrQFT:NeuePhysik:Quantenfeldtheorie:QCD}{Quantenchromodynamik der Quarks} zugrunde liegt.'."\n"))),
                       
                   array( 'jumplist', array(
@@ -1516,8 +1516,8 @@
                     array_merge( $FrQFT_g_figure_ary_Elapson, array( name => 'OM:FrQFT:NeuePhysik:Fig-Elapson-Farbpolarisation',
                                                           text => '\\const{FrQFT_g_text_SymmetrieBruchFarbpol}'))),
                   array( 'notice', array( Display => 'invis', text => array(
-                    '• Das Sombreropotenzial der Farbpolarisation einführen. Es scheint ein anderes als das des Higgs-Felds. Oder es sind dort dieses und das der schwachen WW kombiniert.',
-                    '• Das Bild vom Elapson mit Spur für Symmetriebrechung mit Sombreropotenzial korrigieren und hier einfügen.',
+                    '• Das Sombrero-Potential der Farbpolarisation einführen. Es scheint ein anderes als das des Higgs-Felds. Oder es sind dort dieses und das der schwachen WW kombiniert.',
+                    '• Das Bild vom Elapson mit Spur für Symmetriebrechung mit Sombrero-Potential korrigieren und hier einfügen.',
                     ))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Symmetriebrechung:SymBruExistPrin', text =>
                                            

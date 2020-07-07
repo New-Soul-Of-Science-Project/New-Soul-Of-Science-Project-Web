@@ -27,6 +27,7 @@
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
                   // #!: Auch auf der NaPhil-Yoga-Startseite! (OM:NPYo:Home)
                   // #!: Auch auf der NaPhil-Yoga-Einleitungsseite! (OM:NPYo:Einleitung)
+                  // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
                         'der hat die Magie, Dinge zum Schweben zu bringen.'."\n"),
@@ -129,6 +130,7 @@
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:HaTha'),
                       array( title => 'Atmung – Lösen und Verbinden, Neuordnen \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => 'Die Atmung ist die Grundlage der Persönlichkeitsentwicklung. Wir lösen mit jeder Einatmung und verbinden neu mit jeder Ausatmung. Löse und verbinde, ›Solve et Coagula‹, die Weisheit des Hermes Trismegistos (Thot-Hermes)'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:ExistenzLeichtigkeit'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Spiritualitaet-Psychologie'),
                     ))),
                     

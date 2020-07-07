@@ -3,9 +3,9 @@
   // #: Name:  "Science_v01_005.php"
   
   
-  // #: Stand: 30.04.2020, 20:00h
+  // #: Stand: 06.06.2020, 19:00h
   
-  // #: History: (!: changed, incompatible; >: developped, compatible but is a real change; +: new, compatible; *: fixed, compatible)
+  // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
   // v01.005:  20130713:  !:  "Tools_v01_004.php"  -->  "Tools_v01_005.php"
   //                      !:  "\quot"  -->  "\quote"
@@ -83,6 +83,7 @@
   //                      +:  "$$Sc_g_Text_replace_ary":  Elements '≈' as '&asymp;' is new.
   //           20200420:  >:  "$Sc_g_Text_replace_preg_ary":  Elements "term", "_", "^" changed to type "latexcommand".
   //           20200430:  >:  "Sc_f_equation_list":  New arrows at show and hide links. Removed ellipses.
+  //           20200606:  +:  "$Sc_g_equation_replace_ary":  New element "\mapsto".
   // v01.004:  20130609:  !:  Include "Tools_v01_004.php"
   //           20130628:  +:  "$Glo_PathRel_back" added;
   // v01.003:  20130522:  !:  Include "Tools_v01_002.php"  -->  "Tools_v01_003.php"
@@ -610,6 +611,7 @@
                                     array( '  \approx  ', '\;\;\;\approx\;\;\;'),
                                     array( '  \sim  ', '\;\;\;\sim\;\;\;'),
                                     array( '  \ll  ', '\;\;\;\ll\;\;\;'),
+                                    array( '  \mapsto  ', '\;\;\;\mapsto\;\;\;'),
                                     array( '  \rightarrow  ', '\;\;\;\rightarrow\;\;\;'),
                                     array( '  \not\rightarrow  ', '\;\;\;\not\rightarrow\;\;\;\;\;'),
                                     array( '\partial ', '\partial\,'),

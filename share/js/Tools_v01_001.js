@@ -4,7 +4,7 @@
 
 // #: Stand: 10.07.2018, 18:00h
 
-// #: History: (!: changed, incompatible; >: developped, compatible but is a real change; +: new, compatible; *: fixed, compatible)
+// #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
 //v01.001:  20130515:  +:  History started.
 //          20170129:  +:  "To_f_manage_site_end":  "autoResize = false" is new.

@@ -13,10 +13,12 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
-                    '\\bold{Detailiert erweiterte Sicht:}',
+                    '\\bold{Detailiert erweiterte Sicht}',
                     '• Der Achtsamkeitsprozess spiegelt sich in Polen und Verläufen – Gradienten – in unserem Körper wider, siehe Notizen \\jumpname{OM:SpaLeb:Psychosomatik}.',
                     '• Die hier dargestellte Polarisation unserer Körperhälften in Bezug auf die Frage, was unser Leben ist oder ausmacht, ist in meinen Augen nur ein Teil der Fascetten, in denen sich unser Leben in unserem Körper widerspiegelt. Im Sinne des Kundalini-Prozesses zeigt sich ein Verlauf der Persönlichkeitsentwicklung, ein Gradient. Seine Basis liegt in unserem Anus/Beckenboden, und verläuft bis in unser Drittes Auge und ins Kronen-Chakra. \\\\ Betrachten wir diesen Gradienten etwas detailierter, so setzt er sich in meinen Augen eigentlich aus zwei Gradienten zusammen, in denen sich tatsächlich die Pole unserer Körperhälften widerspiegeln: \\\\ Von unten nach oben – Beckenboden bis ins Kronen-Chakra oder sogar beginnend von den Füßen, auch in die Hände gehend – verläuft unser Handlungsgradient. Von hinten nach vorne verläuft unser emotionaler Gradient, vom Rücken bis zur Vorderseite unseres Rumpfes. Gleiches auch in den Gliedmaßen. \\\\ Demnach haben wir zwei Basen in unserem Körper, den Beckenboden und den Rücken. Beide vereinigen sich im Anus/Beckenboden. Dieser Umstand lässt sich durch folgende Bilder verdeutlichen: \\\\ Unser Handlungsgradient beginnt im Beckenboden, erweitert sich in die Füße, und richtet unseren Körper stolz auf, so das wir gut handeln können. \\\\ Unser Emotionsgradient ist unsere Basis, wenn wir auf dem Rücken liegen. Er beginnt am Rücken, erweiterter gesehen auch an den Rückseiten unserer Gliedmaßen, und steigert sich zu unserer Körpervorderseite hin. Dort sitzen all die sehr wahrnehmungssensiblen und emotionalen Bereiche unseres Körpers, wie das Gesicht, die Kehle, die Brustwarzen, der Solarplexus, der Bauch und Vagina/Penis. \\\\ Gemeinsam ergeben der Handlungs- und der Emotionsgradient den Persönlichkeitsentwicklungs-, Lern- und Wachstumsgradienten des Kundalini- oder Achtsamkeitsprozesses, der im Dritten Auge, dem dialonalen Maximum beider Gradienten, endet. Interessant dann auch ist die Frage, wo die jeweiligen Maxima der einzelnen Gradienten im Körper liegen. Ich würde mutmaßen, das Handlungsmaximum liegt in unserem Gehirn. Das Emotionsmaximum dürfte in unseren Keimdrüsen in den Genitalien liegen.',
-                    '\\bold{Weitere Mythen:}',
+                    '\\bold{Persönliche Erfahrung}',
+                    '• Wenn ich beim Sex bezüglich des Sehens auf mein emotionales, linkes Auge umschalte – ich kann das bevorzugte Auge umschalten, es kann aber auch das Handlungsauge geschlossen werden –, dann werden meine Gefühle deutlich intensiver.',
+                    '\\bold{Weitere Mythen}',
                     '• Das Hexagramm oder der Davidstern symbolisiert die Schlangen des Hermesstabs – eine Zweipoligkeit –, männlich und weiblich sowie oben und unten und so weiter.',
                     '– Das Hexagramm steht auch für die Alchemie des Hermitismus, für die Elemente.',
                     '– Ich meine im Hexagramm auch das hermitische ›solve et coagula‹ widerzuerkennen. Solve für das nach oben zeigende und coagula für das nach unten zeigende Dreieck, entsprechen der tiefen Atmung und ihrer Funktion im Kundalini-Prozess.',
@@ -138,7 +140,7 @@
                     'Beides siehe \\jumpname{OM:NPYo:HaTha:Vortext:Fig-SymbolYinYangKoerperSeeleExistenz}.'."\n"))),
                       
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
-                    array_merge( $NPYo_g_figure_ary_Hexagramm, array( name => 'OM:NPYo:HaTha:Vortext:Fig-Hexagramm',
+                    array_merge( $SpaLeb_g_figure_ary_Hexagramm, array( name => 'OM:NPYo:HaTha:Vortext:Fig-Hexagramm',
                                                          /* text => '' */)),
                       )),
                       

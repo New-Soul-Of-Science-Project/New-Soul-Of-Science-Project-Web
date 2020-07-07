@@ -65,9 +65,7 @@
                   //   array_merge( $FrQFT_g_youtube_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson'))),
                   array( 'figure',
                     array_merge( $FrQFT_g_figure_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson',
-                                                         text => 'Ein Wirkungsquanten-String eines unpolarisierten Photons.'."\n".
-                                                                 'Die Wirkungsquanten sind als rote Kugeln mit ihren abgestrahlten Impulskegeln dargestellt.'."\n".
-                                                                 'Ihre Impulskegel verbinden die Wirkungsquanten zu einem geschlossenen String.'))),
+                                                         text => '\\const{FrQFT_g_text_VakuumElapson}'))),
                   // array( 'youtube',
                   //   array_merge( $FrQFT_g_youtube_ary_Lepton, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton'))),
                   array( 'figure',
@@ -219,8 +217,8 @@
                     'Die Abnahme ihrer Impulsintensität im Raum hat bei Wirkungsquanten-Impulsen eine Besonderheit:'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                      'Eine ringförmige Ausbreitung bedeutet, eine Abnahme der Impulsintensität mit \\term{1/r}.'."\n".
-                      'Das kommt, weil die Dichte der Wechselwirkungsteilchen im Ring  mit \\term{1/r} abnimmt, denn der Umfang des Rings nimmt mit \\term{r} zu,'."\n".
+                      'Eine ringförmige Ausbreitung bedeutet, eine Abnahme der Impulsintensität zum String mit \\term{1/r}.'."\n".
+                      'Das kommt, weil die Dichte der Wechselwirkungsteilchen im Ring  mit \\term{1/r} zum String abnimmt, denn der Umfang des Rings nimmt mit \\term{r} zu,'."\n".
                       'während die Anzahl der Wechselwirkungsteilchen im Ring gleich bleibt.'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -236,8 +234,8 @@
                       'Da dies auch bedeutet, die Abstrahlung erfolgt in alle Richtungen im Raum, wird ein in der Nähe befindliches Objekt quasi zu jedem Zeitpunkt'."\n".
                     'von den Wechselwirkungsteilchen getroffen.'."\n".
                     'Alle bisher bekannten Wechselwirkungen, wie die elektromagnetische, die schwache, die starke und die Gravitation, sind von dieser Art.'."\n",
-                      'Nur die Wechselwirkung eines einzelnen Wirkungsquants ist anders:'."\n".
-                    'Bei seiner Wechselwirkung, deren Stärke mit \\term{1/r} zum Abstand \\term{r} abnimmt, werden die Wechselwirkungsteilchen zu jedem Zeitpunkt'."\n".
+                      'Die Wechselwirkung eines einzelnen Wirkungsquants ist anders:'."\n".
+                    'Bei seiner Wechselwirkung, deren Stärke mit \\term{1/r} zum Abstand \\term{r} vom String abnimmt, werden die Wechselwirkungsteilchen zu jedem Zeitpunkt'."\n".
                     'in Form von Ringen – im zeitlichen Verlauf kegelförmig – abgestrahlt.'."\n".
                     'Dies bedeutet, die Wechselwirkung wird nicht(!) in alle Richtungen abgestrahlt.'."\n".
                     'Ein in der Nähe befindliches Objekt wird nur von den Wechselwirkungsteilchen getroffen, wenn es zu einem Zeitpunkt vom Kegel gestreift wird.'."\n"))),
@@ -407,6 +405,20 @@
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  {_{r}ii}  =  \frac{ 1 }{ r }  }'),
                     ))),
+                      
+                  array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX',
+                Title => '\\small{Einheiten …}',
+                TitleVis => 'Einheiten:', ParagraphList => array(
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  {_{r}ii}  =  \frac{dE}{du}  }', label_incr => false),
+                    ))),
+                    ))),
+                      
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX', text =>
                                            
                 'Störende Wirkung der virtuellen Wirkungsquanten', subline =>
@@ -519,15 +531,15 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  m_{ele}  =  \frac{ \hbar \cdot \omega_{ele} }{ {_{\lowZero}c^{2}} }  }'),
                       array( display => 'on',  latex => '{  m_{ele}  =  \frac{ h \cdot \omega_{ele} }{ 2 \pi \cdot {_{\lowZero}c^{2}} }  }',
                                                latex_if_visible => '{  \Leftrightarrow   m_{ele}  =  \frac{ h \cdot \omega_{ele} }{ 2 \pi \cdot {_{\lowZero}c^{2}} }  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}h_{m}}  \sim  m_{ele}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}h_{m}}  =  g_{m} \cdot m_{ele}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  {h_{m}}  \sim  m_{ele}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  {h_{m}}  =  g_{m} \cdot m_{ele}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dabei steht \\term{n_{ele}} für die Anzahl der Rotationen des Elementarteilchens.'."\n",
                       'Die geforderte Proportionalität zur Intensitätsabnahme mit dem Abstand kommt nun separat hinzu:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}h_{eff}}  \sim  \frac{ {_{r}h_{m}} }{ r }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}h_{eff}}  \sim  \frac{ {h_{m}} }{ r }  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r}h_{eff}}  =  g_{r} \cdot \frac{ g_{m} \cdot m_{ele} }{ r }  }',
                                                /*%! label_name => 'OM:FrQFT:Quantengravitation:Equ-h-ele-eff', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-h-ele-eff}' */),
                     ))),
@@ -563,20 +575,24 @@
                   '… im Verhältnis zum Radius')),
                   array( 'text', array( text => array(
                     'Wie in \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn} dargestellt, entstehen die virtuellen Wirkungsquanten aus den Wirkungsquanten des Strings.'."\n".
-                    'Die abgestrahlten virtuellen Wirkungsquanten-Impulse nehmen dann genau genommen mit dem Abstand \\term{r_{s}} vom String ab, vorstehend als \\term{r} bezeichnet.'."\n".
-                    'In der weiteren Herleitung sollen ausschließlich im Verhältnis zum Radius des Elementarteilchens \\term{r_{ele}} große Abstände \\term{r_{s}} eine Rolle spielen.'."\n".
-                    'Dadurch wird der Elementarteilchen-Radius auf diese großen Distanzen irrelevant und nur der Abstand von deren Zentrum betrachtet, deshalb auch \\term{r} genannt:'."\n"))),
+                    'Die abgestrahlten virtuellen Wirkungsquanten-Impulse nehmen, wie schon gesagt, mit dem Abstand \\term{r} vom String ab.'."\n".
+                    'In der weiteren Herleitung sollen ausschließlich im Verhältnis zum Radius des Elementarteilchens \\term{r_{ele}} große Abstände \\term{r} eine Rolle spielen.'."\n".
+                    'Dadurch wird der Elementarteilchen-Radius \\term{r_{ele}} auf derartig große Distanzen irrelevant und nur der Abstand von deren Zentrum betrachtet,'."\n".
+                    'vorübergehend \\term{r_{c}} genannt; anschließend dann wieder \\term{r}, der Einfachheit halber:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{  r_{ele}  \ll  r  }'),
-                      array( display => 'off', latex => '{  r_{s}  =  r \pm r_{ele}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  r_{s}  \approx  r  }'),
+                      array( display => 'off', latex => '{  r_{c}  =   r \pm r_{ele}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  r_{c}  \approx  r  }'),
+                      array( display => 'on',  latex => '{  r_{c}  \mapsto   r  }'),
 //%!                      array( display => 'off', latex => '{  {_{x}\lambda_{wq,d}}  =  {_{0}\lambda_{wq,d}} \cdot {_{x}\alpha}  }',
 //                                               label_name => 'OM:FrQFT:Quantengravitation:Equ-DetektWellenlaengeAlt', label_text => '\\jump{OM:FrQFT:ZeitAlterungFrequenz:Equ-DetektWellenlaengeAlt}{\\name{OM:FrQFT:Quantengravitation:Equ-DetektWellenlaengeAlt}}'),
 //                      array( display => 'off', latex => '{  \Rightarrow  {_{y}\rho_{wq}}  =  \frac{ {_{x}\rho_{wq}} }{ \frac{ {_{y}\alpha} }{ {_{x}\alpha} } }  }'),
 //                      array( display => 'on',  latex => '{  {_{r}\rho_{vwq}}  =  \frac{ {_{r_{ele}}\rho_{ele,wq}} }{ \frac{ {_{r,rad}\alpha} }{ {_{r_{ele},tan}\alpha} } }  }',
 //                                               latex_if_visible => '{  \Leftrightarrow  {_{r}\rho_{vwq}}  =  \frac{ {_{r_{ele}}\rho_{ele,wq}} }{ \frac{ {_{r,rad}\alpha} }{ {_{r_{ele},tan}\alpha} } }  }'),
                     ))),
+                  array( 'text', array( text => array(
+                    'Im Folgenden wird in Aufklapptexten die Rechnung auch ohne diese Näherung, für kleine Distanzen vom Elementarteilchen, ausgeführt.'."\n"))),
 //                  array( 'text', array( text => array(
 //                    '\\color{*Bearb}{Alter Ansatz:}'."\n".
 //%!                    'Die Wirkungsquanten-Dichte \\term{_{r_{ele}}ρ_{ele,wq}} auf dem simplifizierten String errechnet sich über die Anzahl seiner Wirkungsquanten \\term{n_{wq}}'."\n".

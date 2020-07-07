@@ -574,21 +574,28 @@
                     )),
                       
                   array( 'notice', array( Display => 'vis', text => array(
-                    '\\bold{Körperliche Hineise auf den Achtsamkeitsprozess:}',
+                    '\\bold{Körperliche Hineise auf den Achtsamkeitsprozess}',
                     '• Der Achtsamkeitsprozess spiegelt sich in der Lateralisation des Gehirns, in seiner funktionalen Aufgabenteilung zwischen den Gehirnhälften, wieder. Die Gehirnhälften haben eine bevorzugte Funktion in Bezug auf die Rationalität und die Emotionalität. Diese spiegelt sich wiederum in den Körperhälften, und hier besonders im Gesicht, wieder, die weit überwiegend überkreuz von den Gehirnhälften steuert werden.',
                     '• Die hierdurch ausgeprägten Unterschiede im Aussehen der Gesichtshälften lassen sich durch \\jump{OM:SpaLeb:Gesichtsausdruck}{Gesichtsspiegelung} gut sichtbar machen.',
                     '– Dass viele Primaten keine oder nur wenig Haare im Gesichtsfeld haben bedeutet, sie zeigen Gesicht. Ein Hinweis, dass die Hypothese stimmt, dass sie und wir darauf angewiesen sind, die Mimik des anderen lesen zu können, weil sich im Gesicht unsere aktuelle Stimmung und damit unser aller Achtsamkeitsprozess widerspiegelt.',
                     '• Der Achtsamkeitsprozess drückt sich nicht nur in seinen Polen, sondern auch in seinen Gradienten im Körper aus, siehe \\jumpname{OM:SpaLeb:Psychosomatik}.',
-                    '\\bold{Psychologie, Soziologie:}',
+                    '\\bold{Psychologie, Soziologie}',
                     '• Psychologie ist individuelles Erleben und Verhalten, also Fühlen und Handeln.',
                     '– Eine Psychotherapie ist Persönlichkeitsentwicklung.',
                     '• Propaganda: Ist »… organisierte manipulative Kommunikation, um menschliches Fühlen/Denken/Handeln zu beinflussen.« (\\jump[https://www.youtube.com/watch?v=ICgr-Lg7Yvw]{}{Ansgar Schneider über "Wissenschaft und gesellschaftliche Leugnung"}. Sek. 01:59:42)',
-                    '\\bold{Evolution:}',
+                    '\\bold{Evolution}',
                     '• Siehe auch \\jumpname{OM:SpaLeb:Psychosomatik:Vortext:Achtsamkeitsgradient}.',
                     '• Unser aufrechter Gang:',
                     '– … bringt uns freier, feiner und intensiver ins Handeln.',
                     '– … bringt unsere sensible, informationsaustauschende Seite dazu, sich auf unsere Umwelt und unsere Mitmenschen zu richten.',
                     '– Vögel und Fledermäuse hat der aufrechte Gang auf andere Art und Weise besser ins Handeln gebracht, sodass sie schließlich fliegen konnten.',
+                    '• Hypothesen:',
+                    '– Das unsere Behaarung weitgehend verschwunden ist, könnte seinen Grund auch darin haben, dass unser Gefühl viel mehr Bedeutung erlangt hat, siehe auch Gesichtsbehaarung und \\jumpname{OM:SpaLeb:Psychosomatik:Vortext:Achtsamkeitsgradient}, und etwas weniger im Ungeziefer in unserem Fell, was häufig spekuliert wird.',
+                    '\\bold{Persönliche Erfahrung}',
+                    '• Wenn ich beim Sex bezüglich des Sehens auf mein emotionales, linkes Auge umschalte – ich kann das bevorzugte Auge umschalten, es kann aber auch das Handlungsauge geschlossen werden –, dann werden meine Gefühle deutlich intensiver.',
+                    '\\bold{Forschung}',
+                    '• Riechen Menschen unter ihren beiden Achseln jeweils mehr männlich oder weiblich?',
+                    '• Empfinde ich intensiver, wenn ich (mehr) mit meinem weiblichen Auge gucke, als mit meinem männlichen?',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -696,6 +703,7 @@
                       
                   array( 'notice', array( Display => 'vis', text => array(
                     '• Buchtitel ›Die Physik der Achtsamkeit‹? (Titelidee von Olli',
+                    '• Seite zu diesem Thema \\italic{\\jumpname{OM:NPYo:ExistenzLeichtigkeit}}.',
                     '• Regelprozesse:',
                     '– Jeder Regelprozess hat eine wellenartige, rotierende Dynamik. Das hat zur Konsequenz, dass er Wechselwirkungswellen seiner Spieler- und Gegenspieler-Wechselwirkungen abstrahlt. Was hat das zu bedeuten?',
                     '• Der Achtsamkeitsprozesses greift über das Gefühl den Zustand aller möglichen Regelprozesse des Körpers ab. Damit ist er als übergeordneter Regelprozess wie eine Krake mit seinen sensorischen Tentakeln überall im „Getriebe des Lebens“ involviert. Da dieses Involviert-sein selber als Regelprozess funktioniert, gibt es sicherlich auch eine Rückkopplung, über die er die Regelprozesse des Körpers beeinflussen kann.',

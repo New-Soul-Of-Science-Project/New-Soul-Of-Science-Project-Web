@@ -2,20 +2,20 @@
         include $Glo_PathRel_back.'../share/php/FrQFT.php'; ?>
 
 
-<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:FrQFT:XXX'); ?>
+<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:NPYo:XXX'); ?>
 
 
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:FrQFT:XXX'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:NPYo:XXX'); ?>
 
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'vis', text => array(
-                    '(\\bold{XXX:})',
-                    '(• XXX)',
+                    '\\bold{XXX}',
+                    '• XXX',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -29,6 +29,10 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:XXX:Vortext:XXX', text =>
+                      
+                'XXX', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
@@ -42,7 +46,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:XXX'),
+                      //array(  jump_name => 'OM:NPYo:XXX'),
                     )),
                 )
           ); ?>
@@ -53,15 +57,15 @@
 		    	<!  • XXX  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
-            'OM:FrQFT:XXX:XXX',
+            'OM:NPYo:XXX:XXX',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:XXX', type => 'back'),
+                      //array(  jump_name => 'OM:NPYo:XXX', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'vis', text => array(
-                    '(• XXX)',
+                    '• XXX',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -75,6 +79,10 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:XXX:XXX:XXX', text =>
+                      
+                'XXX', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
@@ -88,7 +96,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:XXX'),
+                      //array(  jump_name => 'OM:NPYo:XXX'),
                     )),
               )
           ); ?>

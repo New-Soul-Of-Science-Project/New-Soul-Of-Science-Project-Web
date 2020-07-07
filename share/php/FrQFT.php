@@ -5,7 +5,7 @@
   
   // #: Stand: 25.02.2019
   
-  // #: History: (!: changed, incompatible; >: developped, compatible but is a real change; +: new, compatible; *: fixed, compatible)
+  // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
   //v01.001:  20130515:  +:  History started.
   //          20130522:  +:  "$FrQFT_g_footnote_text_Kosmoi":  New.
@@ -46,11 +46,14 @@
   $FrQFT_g_text_Ereignishori                   = '\\color{*Entwick}{Es handelt sich im Fall der Quanten-Fluss-Theorie nicht wirklich um einen Eregnishorizont im Sinne der Allgemeinen Relativitätstheorie. Wie genau sich die Dinge dort Verhalten, wo sich die Elapsonen stauen, ist zu untersuchen. Klar scheint, dass in dieser Theorie von außen betrachtet kein Elementarteilchen unzerstört durch den Übergangshorizont gehen kann. Dann ist dies auch aus Sicht des Elementarteilchens nicht möglich. \\color{*Bearb}{(Literatur: Artikel GEO 10/2014, "Wie schwarz ist Schwarz?", S. 130–144.) (Thema auf die Diskussionsseite aufnehmen.)}}';
   $FrQFT_g_text_PoundRebkaSnider_Steigung      = '\\color{*Entwick}{Dies ist mit Sicherheit richtig. Ich meine ich hatte dies vor Jahren irgendwo gelesen und daher übernommen. Leider konnte ich es bisher nicht wieder finden oder ersehen, woher ich es abgeleitet hatte. Dies ist also heraus zu finden. \\color{*Bearb}{Alternativ zeigen, dass die Steigung der Formel \\term{g⋅h/c^{2}} aus dem Pound-Rebka-Snider-Experiment entsprechend passt. Beziehungsweise \\term{Δ𝝂/𝝂_{0} = – Δφ_{g}/c^{2}} , vgl. \\cite{Pound:PoundSniderExper1965}, S. B 788.}}';
   $FrQFT_g_text_SymmetrieBruchFarbpol          = 'Der kreisrunde Vakuum-Elapsonen-String ist der symmetrischste denkbare Wirkungsquanten-String.'."\n".
-                                                  'Durch den Symmetriebruch der Wechselwirkung innerhalb des Strings\\hidden{des Existenzprinzips} sind die sich eigentlich gradlinig auf bewegenden Wirkungsquanten auf den Ring abgelenkt.'."\n".
-                                                  'Sie laufen nun auf dem tiefsten Ring des Sombreropotenzials eines Felds, dass dem Higgs-Feld sehr ähnelt.'."\n".
-                                                  'Jedes Wirkungsquant erhält so eine Farbpolarisation, die von der Richtung, dem Abstand und der Rotationsorientierung seiner Ablenkung abhängt.'."\n".
-                                                  'Weil die Ablenkungen aller Wirkungsquanten des Strings sich in jeder Richtung ausgleichen, trägt der String nach außen hin die neutrale Farbladung weiß.'."\n".
-                                                  '\\const{FrQFT_g_text_WQSWQMenge}';
+                                                   'Durch einen Symmetriebruch, ausgelöst durch ihre Wechselwirkung innerhalb des Strings, sind die sich eigentlich gradlinig bewegenden Wirkungsquanten auf eine Helixspiralbahn ausgelenkt.'."\n".
+                                                   'Sie laufen nun auf dem tiefsten Ring des Sombrero-Potentials eines Felds, dass dem Higgs-Feld sehr ähnelt.'."\n".
+                                                   'Jedes Wirkungsquant erhält so einen Spin und eine Farbpolarisation, die von der Richtung und dem Abstand seiner Auslenkung abhängt.'."\n".
+                                                   'Weil die Auslenkungen aller Wirkungsquanten des Strings sich in jeder Richtung ausgleichen, trägt der String nach außen hin die neutrale Farbladung weiß.'."\n".
+                                                   '\\const{FrQFT_g_text_WQSWQMenge}';
+  $FrQFT_g_text_VakuumElapson                  = 'Ein Wirkungsquanten-String eines unpolarisierten Photons.'."\n".
+                                                   'Die Wirkungsquanten sind als rote Kugeln mit ihren abgestrahlten Impulskegeln dargestellt.'."\n".
+                                                   'Ihre Impulskegel verbinden die Wirkungsquanten zu einem geschlossenen String, der so durch einen strukturellen Regelprozess stabilisiert ist.';
   $FrQFT_g_text_WQSWQMenge                     = 'In der Realität sind extrem viele, sehr kleine Wirkungsquanten im String, die sehr nahe beieinander liegen.';
   
   $OM_g_text_MedHaftungsausschluss =
@@ -72,6 +75,11 @@
                     'Diese ist nötig für geringe Abstände von einigen Vielfachen des Elementarteilchen-Radius.'."\n".
                     'Es bleibt die Simplifizierung des Leptonen-Strings:'."\n")));
 
+  $FrQFT_g_zitat_BuckminsterFuller_StartingPoint =
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'The vector equilibrium is the zero starting point for happenings or nonhappenings: it is the empty theater and empty circus and empty Universe ready to accommodate any act and any audience.'."\n"),
+                        addtext => '~Richard Buckminster Fuller\\footnote{Buckminster Fuller, Richard, \\jump[http://www.rwgrayprojects.com/SynergeticsDictionary/SD.html]{}{SYNERGETICS} (2nd. Ed.) at Sec. 503.03; 11 Dec\'75. \\\\ Internet: \\\\ Cosmometry, Vector Equilibrium & Isotropic Vector Matrix. URL: \\jump[https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix]{}{https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix}.}'));
+  
   $NPYo_g_angebot_IchGebeDirNaPhilYoga =
                   array( 'text', array( Shape  => 'italic', text => array(
                     'Ich gebe dir \\jump{OM:NPYo:Angebote-Veranstaltungen:NaPhilYogaCoaching}{NaPhil-Yoga Coaching} \\\\'."\n".
@@ -359,6 +367,11 @@
                                                                  'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
                                                                  'Der Normradius \\term{r_{0}} ist dabei die Bezugseinheit mit \\term{r_{0} = ℏ / (m_{lep} ⋅ c_{0})}.');
   
+  $FrQFT_g_figure_ary_LeptonQuarkSpinAnti       = array( fig_file_name => 'FrQFT/Lepton-Quark-Spins-Anti-v09', fig_alt_description => 'Leptonen und Quarks - Verhältnis von Spins und Antiteilchen', width => '660px', height => '221px', name => 'set local',
+                                                         text => 'Die Darstellung zeigt die räumlichen Verhältnisse des inneren Spins in Relation zum normalen, äußeren Spin in Bezug auf Teilchen und ihre Antiteilchen.'."\n".
+                                                                 'Bemerkenswert ist dabei, dass alle Anti-Neutrinos den Teilchen und die Neutrinos den Antiteilchen zugeordnet sind.'."\n".
+                                                                 'Die Vorzeichen und Orientierungen der Spins sind Konvention.');
+  
   $FrQFT_g_figure_ary_LichtBewRaum              = array( fig_file_name => 'Gekruemmter_Licht-Bewegungsraum_v09', fig_alt_description => 'Gekrümmt erscheinender Licht-Bewegungsraum', width => '490px', height => '490px', name => 'set local!',
                                                          text => '\\color{*Bearb}{(Grafik: Schwingungslinie in Spiralbahn umbenennen? Ruhemasse?)} Die variable Geschwindigkeit der Elapsonen, zu denen auch die Photonen gehören, installiert den'."\n".
                                                                   'Licht-Bewegungsraum im Vakuum des Kosmos mit der Eigenschaft variabler Dichte und variabler Gravitationsuhr.'."\n".
@@ -384,10 +397,30 @@
                                                          text => '\\color{*Bearb}{(Grafik: Vermerken, das \\term{v_{wq}} konstant ist und der erhöhten LG entspricht! \\term{v_{wq} =} Pythagoras hinschreiben.)} Die Darstellung zeigt, unter welchen Bedingungen das Pound-Rebka-Snider-Experiment mit der Quanten-Fluss-Theorie zusammenfällt.'."\n".
                                                                   'Der Wirkungsquanten-Geschwindigkeitsvektor – am Kreismittelpunkt ansetzend – stellt die Geschwindigkeitseigenschaft der drei Lichtgeschwindigkeiten – Einsteinsche Lichtgeschwindigkeit, Rotations-Lichtgeschwindigkeit und erhöhte Lichtgeschwindigkeit – dar.');
   
+  $FrQFT_g_figure_ary_QuarkProton               = array( fig_file_name => 'FrQFT/Quark-Protron-v01', fig_alt_description => 'XXX - XXX', width => '660px', height => '221px', name => 'set local',
+                                                         text => 'XXX'."\n".
+                                                                 'XXX'."\n".
+                                                                 'XXX');
+  
   $FrQFT_g_figure_ary_RelatDichte               = array( fig_file_name => 'Elapson-Graviton-Dicht_v04', fig_alt_description => 'Relation der Wirkungsquanten-String- zur Elapsonen-bahn-Dichte', width => '700px', height => '237px', name => 'set local!',
                                                          text => '\\color{*Bearb}{(Die y-Achse entspricht dem Alterungsfaktor Alpha. Mit Gleichheitszeichen eintragen? • Ist die Bezeichnung Ereignishorizont wirklich zutreffend? Es ist nicht so einer wie in der ART. Übergangshorizont wäre vielleicht besser. (Siehe Artikel GEO 10/2014, "Wie schwarz ist Schwarz?", S. 130–144.) Die Bilddatei sollte nicht mehr den Namen Graviton tragen.)} Das Diagramm stellt auf der Horizontal-Achse den Kehrwert der relativen Wirkungsquanten-String-Dichte dar; je kleiner der Horizontal-Achswert, desto höher die Wirkungsquanten-Dichte.'."\n".
                                                                  'Die Vertikal-Achse hingegen stellt die entsprechende relative Elapsonen-Bahn-Dichte auch als Kehrwert dar, der nach Formel \\jumpname[*FigDescr]{OM:FrQFT:ZeitAlterungFrequenz:Equ-RelatEpBDicht} dem absoluten Alterungsfaktor \\term{_{x}⍺} entspricht; je kleiner der Vertikal-Achswert, desto höher die Elapsonen-Bahn-Dichte.'."\n".
                                                                  'Eine Zentrale Masse kann sich mit ihrem Mittelpunkt im Nullpunkt gedacht werden, wobei ein Schwarzes Loch am eingezeichneten Ereignishorizont seinen Schwarzschild-Radius hat.');
+  
+  $FrQFT_g_figure_ary_UnpolPhotFarb6Pol         = array( fig_file_name => 'FrQFT/Unpolarisiertes-Photon-Farbpolarisation-6polig-v01', fig_alt_description => 'Unpolarisiertes Photon, Farbpolarisation (6-polig)', width => '380px', height => '500px', name => 'set local!',
+                                                         text => 'Das Kräftegleichgewicht der einfachsten räumlichen Struktur entspricht dem Krempenring eines Sombrero-Potentials.'."\n".
+                                                                  'Der Symmetriebruch der die räumliche Struktur gebenden Auslenkung der Bewegung der Wirkungsquanten aus der Mitte auf den Ring wird hier symbolisch mit einer Farbpolarisation in der Ebene dargestellt.'."\n".
+                                                                  'Die reinste und intensivste Farbe stellt den optimalen Abstand dar, in Bezug zu seiner Rotationsfrequenz.'."\n".
+                                                                  'Zur Mitte hin werden die Farben unpolarisiert und neutral weiß.'."\n".
+                                                                  'Nach außen gehen sie ins Graue bis hin zum Schwarz.'."\n".
+                                                                  'Drei Grundfarben mit Komplementärfarben sind notwendig, dies in der Ebene zu veranschaulichen.'."\n".
+                                                                  'Diese Struktur entspricht interessanterweise genau einem der vier sechseckigen Schnitte durch einen Kuboktaeder des Vektor-Gleichgewichts.'."\n".
+                                                                  'Durch ihre Rotation wechseln die Wirkungsquanten ihre Farbpolarisation ständig.');
+  
+  $FrQFT_g_figure_ary_UnpolPhotFarb8Pol         = array( fig_file_name => 'FrQFT/Unpolarisiertes-Photon-Farbpolarisation-8polig-v01', fig_alt_description => 'Unpolarisiertes Photon, Farbpolarisation (8-polig)', width => '380px', height => '500px', name => 'set local!',
+                                                         text => 'XXX'."\n".
+                                                                  'XXX'."\n".
+                                                                  'XXX');
   
   $FrQFT_g_figure_ary_VakuumElapson             = array( fig_file_name => 'FrQFT/Vakuum-Elapson-String_v02-100fr-100ms-1280x720px', figFileType => 'gif', figPDF_is => false, figBigger_is => true, fig_alt_description => 'Vakuum-Elapson, animiert', width => '560px', height => '315px', border => '1px', name => 'set local!',
                                                          text => 'Die vereinfachende Animation zeigt, wie alle Wirkungsquanten eines Strings miteinander in Wechselwirkung stehen.'."\n".
@@ -446,6 +479,10 @@
   $NPYo_g_figure_ary_Hermesstab                  = array( fig_file_name => 'Naturphilosophie-Yoga/Hermesstab-schwarzweisseFluegel-v01', fig_alt_description => 'Hermesstab', width => '380px', height => '500px', name => 'set local!',
                                                          text => 'Der Hermesstab mit seinen Flügeln steht für Heilung, Weisheit, und wie ich vermute für Erleuchtung und die Beflügelung der Seele und des Geistes durch ein polares Yin-Yang-Prinzip. Im Hermes Trismegistos kommt durch die Verschmelzung des griechischen Gottes Hermes mit dem ägyptischen Gott Thot auch das Wissen und die Philosophie in seine Bedeutung.');
   
+  $NPYo_g_figure_ary_IGingXiantian               = array( fig_file_name => 'Naturphilosophie-Yoga/I-Ging-Xiantian-Anordnung-v01', fig_alt_description => 'Das Yin und Yang oder Taijitu', width => '380px', height => '500px', name => 'set local!',
+                                                         text => 'XXX'."\n".
+                                                                  'XXX');
+  
   $NPYo_g_figure_ary_LebenDesHorusAsklepiosstab  = array( fig_file_name => 'Naturphilosophie-Yoga/Leben-des-Horus-Asklepiosstab-v02', fig_alt_description => 'Leben des Horus mit Asklepiosstab', width => '660px', height => '600px', name => 'set local!',
                                                          text => 'Abbild des Lebens, das in vergleichbarer Form in altägyptischen Darstellungen zu finden ist. Hier in einer von mir modernisierten Variante mit Äskulap- oder Asklepiosstab, um einen Bezug zur heutigen Medizin, und auch zum Kundalini-Prozess des Tantra und Yoga, herzustellen. \\color{*Light}{\\small{Lizenz: \\jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}');
   
@@ -456,6 +493,10 @@
                                                  = array( fig_file_name => 'Naturphilosophie-Yoga/Yin_und_Yang_der_Koerper_Seele_Existenz_v03', figPDF_is => false, fig_alt_description => 'Yin und Yang der Körper-Seele-Existenz', width => '284px', height => '379px', name => 'set local!',
                                                          text => 'Das transzendente Symbol für das Naturphilosophie-Yoga: Yin und Yang der Körper-Seele-Existenz'."\n".
                                                                   'als Dualismus von Djet und Neheh.');
+  
+  $NPYo_g_figure_ary_YinYang                     = array( fig_file_name => 'Naturphilosophie-Yoga/Yin-Yang-Taijitu-v01', fig_alt_description => 'Das Yin und Yang oder Taijitu', width => '380px', height => '500px', name => 'set local!',
+                                                         text => 'Das Taijitu oder Yin-Yang-Symbol veranschaulicht, dass das Dao eine Einheit hervorbringt, die aus dynamischen Gegensätzen besteht.'."\n".
+                                                                  'Durch die dynamischen Gegensätze entsteht die Welt und ihre Natur, die uns Menschen beinhaltend.');
   
 
 
@@ -503,7 +544,7 @@
                                                                   'Als erweiterte Basis des Handlungsgradienten können die Fußsohlen gesehen werden.'."\n".
                                                                   'Je weiter die Körperspannung nach oben steigt, je intensiver wir aufgerichtet – erigiert – sind, desto höher ist unsere Handlungsintensität.');
 
-  $NPYo_g_figure_ary_Hexagramm                 = array( fig_file_name => 'Spannungsspiel-des-Lebens/Hexagramm-v02', fig_alt_description => 'Das Hexagramm', width => '380px', height => '500px', name => 'set local!',
+  $SpaLeb_g_figure_ary_Hexagramm                 = array( fig_file_name => 'Spannungsspiel-des-Lebens/Hexagramm-v02', fig_alt_description => 'Das Hexagramm', width => '380px', height => '500px', name => 'set local!',
                                                          text => 'Das Hexagramm ist ein uraltes Symbol, dass im hinduistischen Tantra dafür steht, dass Gott alles umfasst, auch das Männliche und das Weibliche.'."\n".
                                                                   'Insofern ist es ein Symbol der Balance der Pole der Welt oder des Universums.');
 
@@ -1238,12 +1279,14 @@
                                        jump_ary => array(
                                               'OM:FrQFT:Quantenchromodynamik:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
-                                                         
-                                              'OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung' => array( headline_text => 'Farbpolarisation und -ladung', headline_text_short => 'Farbpolarisation und -ladung'),
+                                              'OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung' => array( headline_text => 'Farbpolarisation und Farbladung', headline_text_short => 'Farbpolarisation und Farbladung'),
+                                                'OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung:Ani-VakuumElapson' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
                                                 'OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung:Fig-Wirkungsquant-ungebrochen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung:Fig-Elapson-Farbpolarisation' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung:Fig-UnpolPhotFarbpol6pol' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                          
                                               'OM:FrQFT:Quantenchromodynamik:Quarks' => array( headline_text => 'Quarks', headline_text_short => 'Quarks'),
+                                                'OM:FrQFT:Quantenchromodynamik:Quarks:Fig-QuarkProton' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                          
                                               'OM:FrQFT:Quantenchromodynamik:Gluonen' => array( headline_text => 'Gluonen', headline_text_short => 'Gluonen'),
                                                          
@@ -1284,12 +1327,12 @@
                                                 'OM:FrQFT:Quantengravitation:Equ-c-eff' => array( headline_text => 'QGra.LV.19'),
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:WQIUmgekehrtProport' => array( headline_text => 'Wirkungsquanten-Impulse verringern sich in ihrer Intensität mit \\term{1/r}', headline_text_short => 'Wirkungsquanten-Impulse verringern sich in ihrer Intensität mit \\term{1/r}'),
                                                 'OM:FrQFT:Quantengravitation:Equ-DetektWellenlaengeAlt' => array( headline_text => 'ZAF.RED.1'),
-                                                'OM:FrQFT:Quantengravitation:Equ-E-aus-omega' => array( headline_text => 'QGra.LV.42'),
-                                                'OM:FrQFT:Quantengravitation:Equ-h-ele-eff' => array( headline_text => 'QGra.LV.52'),
-                                                'OM:FrQFT:Quantengravitation:Equ-h-M-eff' => array( headline_text => 'QGra.LV.69'),
-                                                'OM:FrQFT:Quantengravitation:Equ-v-abl' => array( headline_text => 'QGra.LV.71'),
-                                                'OM:FrQFT:Quantengravitation:Equ-GraLGEinstein' => array( headline_text => 'QGra.LV.74'),
-                                                'OM:FrQFT:Quantengravitation:Equ-GraviKonstStruktur' => array( headline_text => 'QGra.LV.75'),
+                                                'OM:FrQFT:Quantengravitation:Equ-E-aus-omega' => array( headline_text => 'QGra.LV.43'),
+                                                'OM:FrQFT:Quantengravitation:Equ-h-ele-eff' => array( headline_text => 'QGra.LV.54'),
+                                                'OM:FrQFT:Quantengravitation:Equ-h-M-eff' => array( headline_text => 'QGra.LV.71'),
+                                                'OM:FrQFT:Quantengravitation:Equ-v-abl' => array( headline_text => 'QGra.LV.73'),
+                                                'OM:FrQFT:Quantengravitation:Equ-GraLGEinstein' => array( headline_text => 'QGra.LV.76'),
+                                                'OM:FrQFT:Quantengravitation:Equ-GraviKonstStruktur' => array( headline_text => 'QGra.LV.77'),
                                                 //%! 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:MutmassHerleitGravitationskonst' => array( headline_text =>  'Mutmaßungen zur Herleitung der Gravitationskonstanten', headline_text_short => 'Mutmaßungen zur Herleitung der Gravitationskonstanten'),
                                                          
                                               'OM:FrQFT:Quantengravitation:Lichtbeugung' => array( headline_text => 'Lichtbeugung', headline_text_short => 'Lichtbeugung'),
@@ -1500,6 +1543,11 @@
                                                   'OM:FrQFT:ZeitAlterungFrequenz:Equ-WQEnergieOrtUnabh' => array( headline_text => 'ZAF.WS.1'),
                                                   'OM:FrQFT:ZeitAlterungFrequenz:Equ-EnergieSumWQEnergie' => array( headline_text => 'ZAF.WS.3'),
                                                   'OM:FrQFT:ZeitAlterungFrequenz:Equ-WQAnzAusEnergieVerhaelt' => array( headline_text => 'ZAF.WS.5'),
+                                                         
+                                              'OM:FrQFT:ZeitAlterungFrequenz:DefinitionVonSubraeumen' => array( headline_text => 'Definition von Subräumen', headline_text_short => 'Definition von Subräumen'),
+                                                'OM:FrQFT:ZeitAlterungFrequenz:DefinitionVonSubraeumen:Fig-UnpolPhotFarbpol6pol' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                         
+                                              'OM:FrQFT:ZeitAlterungFrequenz:HolografischesPrinzip' => array( headline_text => 'Holografisches Prinzip', headline_text_short => 'Holografisches Prinzip'),
                                             ),
                                      ),
                               'OM:FrQFT:Zusammenfassung' =>
@@ -1715,6 +1763,7 @@
                                                          
                                               'OM:NPYo:Einleitung:Atmung' => array( headline_text => 'Atmung und Stimmung', headline_text_short => 'Atmung und Stimmung'),
                                               'OM:NPYo:Einleitung:Ehrgeiz' => array( headline_text => 'Leichtigkeit – Ehrgeiz herausnehmen', headline_text_short => 'Leichtigkeit – Ehrgeiz herausnehmen'),
+                                                'OM:NPYo:Einleitung:Ehrgeiz:Die-Kunst-der-Leichtigkeit' => array( headline_text => 'Die Kunst der Leichtigkeit', headline_text_short => 'Die Kunst der Leichtigkeit'),
                                               'OM:NPYo:Einleitung:Differenzierung' => array( headline_text => 'Differenzierung von Schmerz', headline_text_short => 'Differenzierung von Schmerz'),
                                               'OM:NPYo:Einleitung:Widerstand-reduzieren' => array( headline_text => 'Widerstand reduzieren', headline_text_short => 'Widerstand reduzieren'),
                                               'OM:NPYo:Einleitung:Praxis-Achtsamkeit' => array( headline_text => 'Praxis: Achtsamkeit', headline_text_short => 'Praxis: Achtsamkeit'),
@@ -1723,6 +1772,32 @@
                                               'OM:NPYo:Einleitung:Bilder' => array( headline_text => 'Wir sind was wir denken – unsere Bilder bestimmen uns', headline_text_short => 'wir sind was wir denken – unsere Bilder bestimmen uns'),
                                               'OM:NPYo:Einleitung:Bild-GebaendigtesLicht' => array( headline_text => 'Bild: Wir sind gebändigtes Licht', headline_text_short => 'Bild: Wir sind gebändigtes Licht'),
                                               'OM:NPYo:Einleitung:Veranstaltungen' => array( headline_text => 'Veranstaltungen', headline_text_short => 'Veranstaltungen'),
+                                            ),
+                                     ),
+                              'OM:NPYo:ExistenzLeichtigkeit' =>
+                                array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Existenz-Leichtigkeit-Yin-Yang-Prinzip-Tai-Chi-Djet-Neheh-Wu-Wei-Fluss-Weg-Dao-Daoismus.php',
+                                       url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Existenz-Leichtigkeit-Yin-Yang-Prinzip-Tai-Chi-Djet-Neheh-Wu-Wei-Fluss-Weg-Dao-Daoismus.php',
+                                       titel => 'Existenz und Leichtigkeit - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
+                                       description => 'XXX.',
+                                       keywords => '',
+                                       text_titel_h1 => 'Existenz und Leichtigkeit',
+                                       text_titel_short => 'Existenz und Leichtigkeit',
+                                       text_undertitel_h2 => 'Dao, Qi, Yin und Yang sowie Wu Wei',
+                                       text_titel_discr_h3 => 'Die Naturphilosophie der Physik des Achtsamkeitsprozesses findet sich in den Grundkonzepten des Daoismus',
+                                       jump_ary => array(
+                                              'OM:NPYo:ExistenzLeichtigkeit:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                                                         
+                                                'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                                                'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-YinYangTaijitu' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-SymbolYinYangKoerperSeeleExistenz' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-IGingXiantian' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-UnpolPhotFarbpol8pol' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Elapson' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:NPYo:ExistenzLeichtigkeit:Vortext:Ani-VakuumElapson' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
+                                                'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Achtsamkeitsprozess' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-UnpolPhotFarbpol6pol' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                         
+                                              'OM:NPYo:ExistenzLeichtigkeit:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
                                             ),
                                      ),
                               'OM:NPYo:HaTha' =>
@@ -1957,19 +2032,18 @@
                                               'OM:nSOSp:Home:Inspiration' => array( headline_text => 'Inspiration', headline_text_short => 'Inspiration'),
                                             ),
                                      ),
-                               'OM:nSOSp:Projekt' =>
-                                array( url_abs => 'http://www.nsosp.org/de/New-Soul-Of-Science-Project/Projekt.php',
-                                       url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/Projekt.php',
-                                       titel => 'Das Projekt - New Soul Of Science Project (NSOSP) - Deutsch',
-                                       description => 'Inhalt des New Soul Of Science Project.',
+                               'OM:nSOSp:Buchprojekt' =>
+                                array( url_abs => 'http://www.nsosp.org/de/New-Soul-Of-Science-Project/Buchprojekt.php',
+                                       url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/Buchprojekt.php',
+                                       titel => 'Buchprojekt - New Soul Of Science Project (NSOSP) - Deutsch',
+                                       description => 'Buchprojekt des New Soul Of Science Projects.',
                                        keywords => '',
-                                       text_titel_h1 => 'Das Projekt',
-                                       text_titel_short => 'Das Projekt',
+                                       text_titel_h1 => 'Buchprojekt',
+                                       text_titel_short => 'Buchprojekt',
                                        //text_undertitel_h2 => 'und Informationen',
                                        //text_titel_discr_h3 => 'Vereinheitlichte Physik auf Basis eines selbstorganisierten, fraktalen Systems von lichtähnlichen, zu Strings verbundenen Wirkungsquanten.',
                                        jump_ary => array(
-                                              'OM:nSOSp:Projekt:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
-                                              'OM:nSOSp:Projekt:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
+                                              'OM:nSOSp:Buchprojekt:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
                                             ),
                                      ),
                                'OM:nSOSp:Literatur' =>
@@ -1983,6 +2057,21 @@
                                        text_undertitel_h2 => 'und Informationen',
                                        //text_titel_discr_h3 => 'Vereinheitlichte Physik auf Basis eines selbstorganisierten, fraktalen Systems von lichtähnlichen, zu Strings verbundenen Wirkungsquanten.',
                                        jump_ary => array(
+                                            ),
+                                     ),
+                               'OM:nSOSp:Projekt' =>
+                                array( url_abs => 'http://www.nsosp.org/de/New-Soul-Of-Science-Project/Projekt.php',
+                                       url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/Projekt.php',
+                                       titel => 'Das Projekt - New Soul Of Science Project (NSOSP) - Deutsch',
+                                       description => 'Inhalt des New Soul Of Science Project.',
+                                       keywords => '',
+                                       text_titel_h1 => 'Das Projekt',
+                                       text_titel_short => 'Das Projekt',
+                                       //text_undertitel_h2 => 'und Informationen',
+                                       //text_titel_discr_h3 => 'Vereinheitlichte Physik auf Basis eines selbstorganisierten, fraktalen Systems von lichtähnlichen, zu Strings verbundenen Wirkungsquanten.',
+                                       jump_ary => array(
+                                              'OM:nSOSp:Projekt:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
+                                              'OM:nSOSp:Projekt:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
                                             ),
                                      ),
                           

@@ -965,6 +965,148 @@
                     'XXX'."\n"))),*/
                       
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:DefinitionVonSubraeumen'),
+                    )),
+              )
+          ); ?>
+          
+
+		    	<!  • Definition von Subräumen  >
+          <?php $Sc_g_equation_auto_num = 0; ?>
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:FrQFT:ZeitAlterungFrequenz:DefinitionVonSubraeumen',
+              'Farbpolarisation ist Raumrichtungspolarisation', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:FormBewegRaum', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'vis', text => array(
+                    // '• XXX',
+                    ))),
+                      
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
+                    array_merge( $FrQFT_g_figure_ary_UnpolPhotFarb6Pol, array( name => 'OM:FrQFT:ZeitAlterungFrequenz:DefinitionVonSubraeumen:Fig-UnpolPhotFarbpol6pol',
+                                                         /* text => '' */)),
+                      )),
+                      
+                  array( 'text', array( text => array(
+                    'Sollen strukturierte Dinge in einem Raum existieren, dann müssen diese vom Rest räumlich abgegrenzt sein.'."\n".
+                    'Wir kommen nicht darum herum, sie in einem Subraum zu verorten.'."\n",
+                      'Zur Definition eines \\term{n}-dimensionalen Subraums in einem \\term{n}-dimensionalen Raum werden immer mindestens \\term{n+1} Punkte benötigt:'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'In einem Punkt, also in null Dimensionen, kann genau ein Punkt definiert werden. Sein Gegenpol fällt mit diesem zusammen.',
+                        'Auf einer Gerade, in einem eindimensionalen Raum, werden mindestens zwei Punkte benötigt, um eine Linie zu definieren. Die Gegenpole der Linienendpunkte fallen genau mit dem jeweils anderen Endpunkt zusammen.',
+                        'Auf einer Fläche, in einem zweidimensionalen Raum, werden mindestens drei Punkte benötigt, um eine Teilfläche zu definieren. Die Gegenpunkte liegen jeweils zwischen den anderen beiden Punkten. Zusammen sind es sechs, die ein Hexagramm ergeben.',
+                        'In einem dreidimensionalen Raum werden mindestens vier Punkte benötigt, um einen Unterraum oder Subraum zu definieren. Die Gegenpunkte liegen immer zwischen den anderen drei Punkten. Es ergeben sich gemeinsam acht Punkte.',
+                    ))),
+                  array( 'text', array( text => array(
+                    'So erklärt sich, warum auf einem Kreis mindestens drei Farben zum Mischen nötig sind, damit sich die Mischfarben auf dem Farbkreis nicht wiederholen.'."\n".
+                    'Auf einer Farbkugel sind daher vier Farben notwendig, dies zu erreichen.'."\n",
+                      'Dies erklärt die Darstellung der \\jump{OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung}{Farbpolarisation} der \\jump{OM:FrQFT:Quantenchromodynamik}{Quantenchromodynamik} mit drei (siehe \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:DefinitionVonSubraeumen:Fig-UnpolPhotFarbpol6pol}) oder vier Grundfarben und deren Komplementärfarben.'."\n".
+                    'In der Quanten-Fluss-Theorie ist dies die \\italic{Raumrichtungspolarisation}.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:DefinitionVonSubraeumen:XXX', text =>
+                      
+                'Ein Prisma', subline =>
+                  'Wie kommt es, dass die Raumrichtungspolarisation so gut zum Farbspektrum passt?')),
+                  array( 'text', array( text => array(
+                    'Ein Hinweis auf die Antwort auf die Frage liegt in einem Prisma:'."\n",
+                    'Weißes Licht lässt sich durch ein Prisma in sein Farbspektrum zerlegen, welches nach seiner Farbe und Frequenz in unterschiedliche Raumrichtungen aufgefächert wird.'."\n".
+                    'Die Analogie ist so gesehen tatsächlich frappierend.'."\n",
+                      'Entsprechend gilt für jedes Elementarteilchen, dass es umso kleiner ist, je höher seine Frequenz.'."\n".
+                    'Auch hier hängt die Raumrichtungspolarisation von der Frequenz ab.'."\n",
+                      'Es ist also interessant, sich darum Gedanken zu machen, wie weit diese Zusammenhänge miteinander Verbunden werden können.'."\n".
+                    'Dichten von Medien könnten hier, nach meiner Intuition, eine Rolle spielen.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:DefinitionVonSubraeumen:XXX', text =>
+                      
+                'Besonderheit', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Hier drinne steckt bemerkenswerterweise das Zählen, weil Subräume einer Dimension immer mindestens einen Punkt mehr zur Definition benötigen,'."\n".
+                    'als die Dimensionszahl selber, von der sie einen Teil mit der gleichen Dimensionszahl abgrenzen.'."\n".
+                    'Im inneren, in der Abgrenzung eines Teils, steckt also auf eine gewisse Weise mehr, als der Aufwand, diesen Raum der Möglichkeiten zur Verfügung zu stellen.'."\n",
+                      'Dies hat Ähnlichkeiten mit den Bits:'."\n".
+                    'Stellen wir acht Bits zur Verfügung, die ja jeweils Null oder Eins sein können, so ergeben sich 256 Möglichkeiten, diese zu setzen, sie zu variieren.'."\n"))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:HolografischesPrinzip'),
+                    )),
+              )
+          ); ?>
+
+
+		    	<!  • Holografisches Prinzip  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:FrQFT:ZeitAlterungFrequenz:HolografischesPrinzip',
+              'Subräume, ihr Informationsgehalt und ihr Informationsaustausch', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:DefinitionVonSubraeumen', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'vis', text => array(
+                    // '• XXX',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Beim Holographischen Prinzip geht es um das Verhältnis der Informationsmenge, die durch die Kugeloberfläche eines Subraumes von innen nach außen'."\n".
+                    'fließen kann, im Verhältnis zum Informationsgehalt seines sphärischen Volumens.'."\n",
+                      'Das \\jump{OM:FrQFT:ZeitAlterungFrequenz:DefinitionVonSubraeumen}{Aufspannen eines Subraums} ist dabei durch die vorstehend beschriebene Raumrichtungspolarisation'."\n".
+                    'seiner Struktur gegeben, durch seine \\jump{OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung}{Farbpolarisation}.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:HolografischesPrinzip:XXX', text =>
+                      
+                'Verhältnis der Kombinationsmöglichkeiten des Kugelinneren zu seiner Oberfläche', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Der Informationsfluss durch die Kugeloberfläche eines Subraums kann durch hypothetische Pixel, gleich großer Teilflächen, seiner Oberfläche'."\n".
+                    'beschrieben werden.'."\n".
+                    'Jeder Pixel fungiert hierbei als Bit, das Null oder Eins sein kann.'."\n".
+                    'Die maximale Informationsmenge seiner Oberfläche ist das, was maximal in einem Moment durch sie hindurch fließen und so nach außen dringen kann.'."\n".
+                    'Sie entspricht der maximalen Kombinationsmöglichkeit seiner Oberflächen-Pixel.'."\n",
+                      'Der theoretisch maximale Informationsgehalt des Kugelvolumens entspricht den maximalen Kombinationsmöglichkeiten seiner Voxel,'."\n".
+                    'gleich großer Teilvolumen in ihm, die den Kantenlänge der Pixeln seiner Oberfläche gleichen.'."\n".
+                    'Auch hier kann nach dem Holographischen Prinzip kombinatorisch jedes Voxel wie ein Bit nur Null oder Eins sein.'."\n",
+                      'Unter freien Bedingungen ist bei Volumen, die deutlich größer als ein Voxel sind, die Kombinationsanzahl des Volumens deutlich größer,'."\n".
+                    'als die Kombinationsanzahl der Oberfläche.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:HolografischesPrinzip:XXX', text =>
+                      
+                'Voxel stehen miteinander in einem Zusammenhang', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Das Holographische Prinzip besagt nun, dass die Kombinationsmöglichkeit der Voxel in einem festen Verhältnis zu denen der Pixel steht.'."\n".
+                    'Beide sind Proportional zu einander.'."\n",
+                      'Dies lässt sich so interpretieren, dass der Informationsgehalt der Voxel nicht größer sein kann, als der Informationsgehalt, der durch die Pixel'."\n".
+                    'der sie umschließenden Kugeloberfläche nach außen transportiert werden kann.'."\n",
+                      'Mit noch anderen Worten sind die Bits der Voxel nicht frei kombinierbar, sondern nur in dem Maß, wie die Bits seiner Oberfläche multipliziert'."\n".
+                    'mit einer Konstanten.'."\n".
+                    'Die Voxel im Inneren der Kugel stehen also miteinander in einem Zusammenhang, der umso größer wird, je mehr Voxel das Volumen enthält.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:HolografischesPrinzip:XXX', text =>
+                      
+                'Der Informationsfluss zwischen zwei Subräumen bringt diese in eine Abhängigkeit', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Der Informationsfluss zwischen zwei Subräumen bringt diese in einen Zusammenhang.'."\n".
+                    'Sie können sich nicht mehr unabhängig voneinander verändern, also entwickeln, weil sie miteinander in einer Rückkopplung kommunizieren.'."\n",
+                      'Dies wird auch dadurch deutlich, dass die sie beide zusammen umgebende Kugel im Verhältnis zu ihren Voxeln viel weniger Pixel auf ihrer Oberfläche besitzt,'."\n".
+                    'als dies bei den beiden in ihr enthaltenen Subräumen der Fall war.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Elementarteilchen'),
                     )),
               )
@@ -972,10 +1114,18 @@
 
 
 		    	<!  • XXX  >
-          <?php /*To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
             'OM:FrQFT:ZeitAlterungFrequenz:XXX',
               'XXX', 'Sc_f_Paragraph',
                 array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:XXX', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'vis', text => array(
+                    // '• XXX',
+                    ))),
+                      
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
@@ -986,6 +1136,10 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:DefinitionVonSubraeumen:XXX', text =>
+                      
+                'XXX', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
@@ -996,12 +1150,12 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
-                  array( 'jumplist',
-                    array(
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:XXX'),
                     )),
               )
-          );*/ ?>
+          ); */ ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

@@ -978,13 +978,14 @@
                     'So wird er zum essenziellen Teil der Übung und wird sich nicht auflösen können.'."\n",
                       'Eine bessere Möglichkeit kann darin bestehen, den Widerstand zunächst zu spüren und ihn dann aus dem Zentrum seiner Wahrnehmung quasi in den Augenwinkel zu verschieben,'."\n".
                     'ihn nur noch am Rande, als Beiwerk, wahrzunehmen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Ehrgeiz:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Ehrgeiz:Die-Kunst-der-Leichtigkeit', text =>
                                            
                 'Die Kunst der Leichtigkeit')),
                       
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
                   // #!: Auch auf der NaPhil-Yoga-Startseite! (OM:NPYo:Home)
                   // #!: Auch auf der NaPhil-Yoga-Einleitungsseite! (OM:NPYo:Einleitung)
+                  // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
                         'der hat die Magie, Dinge zum Schweben zu bringen.'."\n"),

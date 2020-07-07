@@ -4,9 +4,9 @@
   // #: Name:  "Tools_v01_005.php"
   
   
-  // #: Stand: 10.04.2020, 18:00h
+  // #: Stand: 21.06.2020, 14:00h
   
-  // #: History: (!: changed, incompatible; >: developped, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
+  // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
   // v01.005:  20130713:  +:  "To_f_Paragraph":  Type "quote" is new.
   //           20130714:  +:  "To_f_Chapter_v1":  Is new.
@@ -153,6 +153,7 @@
   //                      +:  "$Glo_g_Color_list", "To_f_Chapter_v1", "To_f_Chapter":  '*SectionHeadlineAddon' is new.
   //                      +:  "$Glo_g_Color_list":  '*SiteUndertitleH2' is new.
   //                      >:  "To_f_Color":  Add parameter '$removeNumberSign = true'.
+  //           20200621:  +:  "To_f_Paragraph", 'headline':  'subline' supports now "To_f_Text_replace_html".
   // v01.004:  20130609:  !:  "To_f_headline_make":  Tables left margin changed to 10px.
   //                      !:  "$To_g_Text_replace_ary":  '„', '›', '‹', '»', '«' entries new.
   //           20130618:  !:  "$To_g_Text_replace_ary":  '&nbsp;', '&amp;', '&reg;', '&ldquo;' entries new.
@@ -1620,7 +1621,7 @@
         {
           case 'headline':
             if ((gettype( $text) == 'array') && array_key_exists( subline, $text) && (0 < strlen($text[subline])))
-              echo $offset.'<br><small'.(((gettype( $text) == 'array') && array_key_exists( sublineColor, $text)) ? ' style="color: #'.(To_f_Color($text[sublineColor])).';"' : '').'>'.($text[subline]).'</small>';
+              echo $offset.'<br><small'.(((gettype( $text) == 'array') && array_key_exists( sublineColor, $text)) ? ' style="color: #'.(To_f_Color($text[sublineColor])).';"' : '').'>'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text[subline])).'</small>';
             break;
         }
         break;

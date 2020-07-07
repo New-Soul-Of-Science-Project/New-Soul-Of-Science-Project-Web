@@ -59,17 +59,32 @@
 	</url>
   
 	<url>
-		<loc>http://www.nsosp.org/de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php</loc>
-		<lastmod>2020-05-19</lastmod>
-		<priority>1.0</priority>
-	</url>
-	<url>
 		<loc>http://www.nsosp.org/de/Naturphilosophie-Yoga/Angebote-Veranstaltungen_de.php</loc>
 		<lastmod>2020-05-19</lastmod>
 		<priority>1.0</priority>
 	</url>
 	<url>
 		<loc>http://www.nsosp.org/de/Naturphilosophie-Yoga/Einleitung.php</loc>
+		<lastmod>2020-05-19</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.nsosp.org/de/Naturphilosophie-Yoga/Existenz-Leichtigkeit-Yin-Yang-Prinzip-Tai-Chi-Djet-Neheh-Wu-Wei-Fluss-Weg-Dao-Daoismus.php</loc>
+		<lastmod>2020-05-19</lastmod>
+		<priority>1.0</priority>
+	</url>
+      <url>
+        <loc>http://www.nsosp.org/share/images/Naturphilosophie-Yoga/I-Ging-Xiantian-Anordnung-v01.pdf</loc>
+        <lastmod>2020-05-19</lastmod>
+        <priority>1.0</priority>
+      </url>
+      <url>
+        <loc>http://www.nsosp.org/share/images/Naturphilosophie-Yoga/Yin-Yang-Taijitu-v01.pdf</loc>
+        <lastmod>2020-05-19</lastmod>
+        <priority>1.0</priority>
+      </url>
+	<url>
+		<loc>http://www.nsosp.org/de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php</loc>
 		<lastmod>2020-05-19</lastmod>
 		<priority>1.0</priority>
 	</url>
@@ -120,6 +135,11 @@
 		<lastmod>2020-05-19</lastmod>
 		<priority>1.0</priority>
 	</url>
+  <url>
+    <loc>http://www.nsosp.org/de/New-Soul-Of-Science-Project/Buchprojekt.php</loc>
+    <lastmod>2020-05-19</lastmod>
+    <priority>1.0</priority>
+  </url>
   <url>
     <loc>http://www.nsosp.org/de/New-Soul-Of-Science-Project/Literatur.php</loc>
     <lastmod>2020-05-19</lastmod>
@@ -179,7 +199,7 @@
 		<priority>1.0</priority>
 	</url>
     <url>
-      <loc>http://www.nsosp.org/share/images/Lepton_Quark-Spins-Anti_v08.pdf</loc>
+      <loc>http://www.nsosp.org/share/images/FrQFT/Lepton-Quark-Spins-Anti-v09.pdf</loc>
       <lastmod>2020-05-19</lastmod>
       <priority>1.0</priority>
     </url>
@@ -323,6 +343,16 @@
 		<lastmod>2020-05-19</lastmod>
 		<priority>1.0</priority>
 	</url>
+      <url>
+        <loc>http://www.nsosp.org/share/images/FrQFT/Unpolarisiertes-Photon-Farbpolarisation-6polig-v01.pdf</loc>
+        <lastmod>2020-05-19</lastmod>
+        <priority>1.0</priority>
+      </url>
+      <url>
+        <loc>http://www.nsosp.org/share/images/FrQFT/Unpolarisiertes-Photon-Farbpolarisation-8polig-v01.pdf</loc>
+        <lastmod>2020-05-19</lastmod>
+        <priority>1.0</priority>
+      </url>
 	<url>
 		<loc>http://www.nsosp.org/de/Quanten-Fluss-Theorie/Quantengravitation-der-Elementarteilchen_de.php</loc>
 		<lastmod>2020-05-19</lastmod>

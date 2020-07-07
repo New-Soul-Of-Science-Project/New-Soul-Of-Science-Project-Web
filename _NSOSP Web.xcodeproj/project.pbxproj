@@ -137,6 +137,7 @@
 		6AC53CA31B26BD70000C72B4 /* Koerperspannung_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Koerperspannung_de.php; sourceTree = "<group>"; };
 		6AC53CA51B2C6C6E000C72B4 /* XXX.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = XXX.php; sourceTree = "<group>"; };
 		6AC53CA61B2C6D71000C72B4 /* Laengenkontraktion-Materie-Bewegung_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Laengenkontraktion-Materie-Bewegung_de.php"; sourceTree = "<group>"; };
+		6AC6C3B72485290A00756690 /* Existenz-Leichtigkeit-Yin-Yang-Prinzip-Tai-Chi-Djet-Neheh-Wu-Wei-Fluss-Weg-Dao-Daoismus.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Existenz-Leichtigkeit-Yin-Yang-Prinzip-Tai-Chi-Djet-Neheh-Wu-Wei-Fluss-Weg-Dao-Daoismus.php"; sourceTree = "<group>"; };
 		6AC6D18A1F8639AD0005D0C5 /* index.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = index.php; sourceTree = "<group>"; };
 		6AC7C3C7187F1632006C7CC2 /* Zusammenfassung_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = Zusammenfassung_de.php; sourceTree = "<group>"; };
 		6AC7C3C8187F1DC3006C7CC2 /* Diskussion_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = Diskussion_de.php; sourceTree = "<group>"; };
@@ -150,7 +151,7 @@
 		6AD8259816FA49A000C3CBFA /* Science_v01_005.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; name = Science_v01_005.php; path = php/Science_v01_005.php; sourceTree = "<group>"; };
 		6AD8DDE42104B8E4006DFE27 /* Kuenstliche-Inteligenz-Robotik_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; path = "Kuenstliche-Inteligenz-Robotik_de.php"; sourceTree = "<group>"; };
 		6AD8DDE52110BE9D006DFE27 /* Was-unterscheidet-Yoga-von-Sport-Persoenlichkeitsentwicklung-oder-Leistung_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Was-unterscheidet-Yoga-von-Sport-Persoenlichkeitsentwicklung-oder-Leistung_de.php"; sourceTree = "<group>"; };
-		6AD9B83F22D10D1F00B3E0E6 /* XXX.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; name = XXX.php; path = "../New-Soul-Of-Science-Project/XXX.php"; sourceTree = "<group>"; };
+		6AD9B83F22D10D1F00B3E0E6 /* XXX.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = XXX.php; sourceTree = "<group>"; };
 		6AD9B84022D10E0F00B3E0E6 /* Philosophie.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = Philosophie.php; sourceTree = "<group>"; };
 		6AE259841EA493A900E205C9 /* Diskussion_de.php */ = {isa = PBXFileReference; explicitFileType = text.script.php; fileEncoding = 4; lineEnding = 0; path = Diskussion_de.php; sourceTree = "<group>"; };
 		6AE9E9EE1F3775820027C8E5 /* index.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = index.php; sourceTree = "<group>"; };
@@ -176,6 +177,7 @@
 		6AF28B3917A512DC00DE96B6 /* Dunkle-Materie-modifizierte-newtonsche-Dynamik-MOND_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = "Dunkle-Materie-modifizierte-newtonsche-Dynamik-MOND_de.php"; sourceTree = "<group>"; };
 		6AF28B3A17A51CE700DE96B6 /* Leptonen-Modell-Elektron-Positron-Myon-Tauon-Neutrino_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; fileEncoding = 4; lineEnding = 0; path = "Leptonen-Modell-Elektron-Positron-Myon-Tauon-Neutrino_de.php"; sourceTree = "<group>"; };
 		6AF3BB5B1331160100A01A03 /* Michelson-Morley-Experiment_nicht-klassisch.html */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.html; path = "Michelson-Morley-Experiment_nicht-klassisch.html"; sourceTree = "<group>"; };
+		6AF401FD249F7A2800DBFD69 /* Buchprojekt.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = Buchprojekt.php; sourceTree = "<group>"; };
 		6AF4DC3716CEDAD800C24E34 /* Fraktale-Quanten-Fluss-Theorie_Gravitation-der-Elementarteilchen_de.php */ = {isa = PBXFileReference; explicitFileType = text.html.documentation; path = "Fraktale-Quanten-Fluss-Theorie_Gravitation-der-Elementarteilchen_de.php"; sourceTree = "<group>"; };
 		6AFC539E16C4E9BC00BDE221 /* Fraktale-Quanten-Fluss-Theorie_Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Fraktale-Quanten-Fluss-Theorie_Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.html"; sourceTree = "<group>"; };
 		6AFC539F16C4EB6C00BDE221 /* Fraktale-Quanten-Fluss-Theorie_Leptonen-Elektron-Positron-Myon-Tauon-Neutrino_de.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Fraktale-Quanten-Fluss-Theorie_Leptonen-Elektron-Positron-Myon-Tauon-Neutrino_de.html"; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 		6A73BBE91CAE449400F559FC /* New-Soul-Of-Science-Project */ = {
 			isa = PBXGroup;
 			children = (
+				6AF401FD249F7A2800DBFD69 /* Buchprojekt.php */,
 				6AF05DEA2283248C00EF65FC /* favicon */,
 				6AF05DEB2283248C00EF65FC /* favicon.ico */,
 				6A73BBEA1CAE449400F559FC /* index.php */,
@@ -580,6 +583,7 @@
 			children = (
 				6AE9E9F11F3CA1770027C8E5 /* Angebote-Veranstaltungen_de.php */,
 				6AE9E9F01F387B020027C8E5 /* Einleitung.php */,
+				6AC6C3B72485290A00756690 /* Existenz-Leichtigkeit-Yin-Yang-Prinzip-Tai-Chi-Djet-Neheh-Wu-Wei-Fluss-Weg-Dao-Daoismus.php */,
 				6A16D736247E4C5500A1891C /* favicon */,
 				6AF05DE92283246E00EF65FC /* favicon.ico */,
 				6A3E3D722295CC1F00108AD1 /* Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php */,

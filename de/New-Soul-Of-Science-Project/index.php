@@ -1031,7 +1031,10 @@
                         ''."\n"),
                         addtext => '')),
                       
-                  // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Einleitung:Ehrgeiz)
+                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
+                  // #!: Auch auf der NaPhil-Yoga-Startseite! (OM:NPYo:Home)
+                  // #!: Auch auf der NaPhil-Yoga-Einleitungsseite! (OM:NPYo:Einleitung)
+                  // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
                         'der hat die Magie, Dinge zum Schweben zu bringen.'."\n"),

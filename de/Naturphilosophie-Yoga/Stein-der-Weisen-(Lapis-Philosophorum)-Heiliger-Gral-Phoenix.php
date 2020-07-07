@@ -28,7 +28,7 @@
                     'Vielmehr versuche ich mich in die naturphilosophischen Hintergründe ihrer Zusammenhänge, Verbundenheit und Weisheiten hineinzufinden und'."\n".
                     'interpretiere in diesem Sinne den gesamthistorischen Verlauf, wie er sich mir derzeit darstellt.'."\n".
                     'Diese Zusammenhänge zeigen in meinen Augen ein tiefes intuitives und analytisches Verständnis unserer Vorfahren von der Natur unseres Lebens und unserer Welt sowie'."\n".
-                    'der menschlichen Sehnsucht der Erfüllung eines glücklichen, sinnvollen und gesunden Lebens.'."\n"))),
+                    'der menschlichen Sehnsucht der Erfüllung eines glücklichen, sinnvollen und gesunden Lebens wie auch unseres Wirkens darüberhinaus.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Vortext:XXX', text =>
                                            
                 'Stein der Weisen', subline =>
@@ -69,7 +69,7 @@
                     'seiner Verwendung zur Umwandlung von Materialien in Gold, zu erkennen.'."\n".
                     'Ihr war kein Erfolg vergönnt.'."\n",
                       'Auf der anderen Seite ist den Alchemisten auch vieles Erstaunliche im Laufe der Zeit gelungen und endete schließlich nicht nur in der modernen Chemie,'."\n".
-                    'sondern auch in der modernen Physik und hat in nicht zu unterschätzender Weise ebenso die Entwicklung der modernen Mathematik gefördert.'."\n"))),
+                    'sondern auch in der modernen Physik, die sogar im Prinzip in der Lage ist Materialien in Gold zu verwandeln, und hat in nicht zu unterschätzender Weise ebenso die Entwicklung der modernen Mathematik gefördert.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Ein Veredlungsprozess – verbindende Gleichnisse der inneren und äußeren Alchemie} \\\\'."\n".
                     'Sowohl in der inneren, wie in der äußeren Alchemie werden Verwandlungsprozesse beschrieben, deren Stufen mit unedlen Metallen oder Edelmetallen identifiziert werden.'."\n".
@@ -355,7 +355,7 @@
                     'Auf diese Weise ergibt sich also für den Fall der verschwundenen Schlange ein einigermaßen plausibles Bild.'."\n"))),
                       
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
-                    array_merge( $NPYo_g_figure_ary_Hexagramm, array( name => 'OM:NPYo:Stein-der-Weisen:Vortext:Fig-Hexagramm',
+                    array_merge( $SpaLeb_g_figure_ary_Hexagramm, array( name => 'OM:NPYo:Stein-der-Weisen:Vortext:Fig-Hexagramm',
                                                          /* text => '' */)),
                       )),
                       

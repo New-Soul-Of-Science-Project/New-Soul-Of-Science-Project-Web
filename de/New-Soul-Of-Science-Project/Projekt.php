@@ -66,13 +66,14 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Motivation \\small{– Einführung}}</h3>'."\n"),
+                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Entwicklting \\small{– Einführung}}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       // nSOSp_f_tableOfContents_elementAry( 'OM:nSOSp:Einleitung'),
                       // #: Aufklärung 2.0 — Anregung dazu: Buch ›Virus-Wahn‹ S. 10.
                       array( title => 'Aufklärung für Fortgeschrittene \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => '… durch Bewusstmachung unserer Täuschungen, die oft auch Selbsttäuschungen sind '/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:nSOSp:Buchprojekt'),
                     ))),
                       
                   array( 'normal',
