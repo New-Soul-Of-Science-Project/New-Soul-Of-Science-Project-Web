@@ -75,7 +75,7 @@
                       'Die Quanten-Fluss-Theorie entwickelt die Herleitung Gieses weiter, so dass durch den veränderten Ansatz die'."\n".
                     '\\jump{OM:FrQFT:Quantengravitation:Mechanismus-der-Gravitation}{Gravitation proportional zur Masse des Elementarteilchens} wird.'."\n".
                     'Aus Gründen, die später erklärt werden, haben nur zwei Stellen des Strings zur gleichen Zeit eine ablenkende'."\n".
-                    'Wirkung auf ein vorbei fliegendes Photon, ähnlich wie bei Giese.'."\n".
+                    'Wirkung auf ein vorbeifliegendes Photon, ähnlich wie bei Giese.'."\n".
                     'Doch aufgrund der schnelleren Abfolge der abgestrahlten, virtuellen Wirkungsquanten bei größerer Masse des Strings sind'."\n".
                     'deren Wellenflanken steiler (siehe \\jump{OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung}{Abbildung 1}, unten).'."\n",
                       'Obwohl alle virtuellen Wirkungsquanten an ihrem Ausgangspunkt – am String – die gleiche Amplitude besitzen,'."\n".

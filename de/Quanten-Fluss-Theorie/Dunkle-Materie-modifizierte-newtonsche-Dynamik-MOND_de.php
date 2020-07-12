@@ -99,7 +99,7 @@
                     'zeigt auch einen Weg zur theoretischen Erklärung dieser anormalen Gravitation auf.\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}, Kap. 7.1 The "Dark Matter" Phenomenon, S. 10-12.}'."\n".
                     'Doch leider ist die von Giese mittels einer genialen Idee hergeleitete Formel für die Lichtgeschwindigkeit im Gravitationsfeld nicht von'."\n".
                     'der Masse der Elementarteilchen, sondern ausschließlich von deren Anzahl abhängig.\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}, Kap. 6.1 The Variation of the Speed of Light, S. 8-10, hier S. 9.} \\\\'."\n".
-                    'Dies hat neben anderen kritischen Aspekten das grundsätzliche Problem\\color{*Bearb}{(Link)}, dass die Proportionalität von Energie und Masse \\term{E = m⋅c^{2}}\\color{*Bearb}{(Link)} hier nicht gelten würde.\\footnote{Vgl. \\cite{wiki:AequivalenzVonMasseUndEnergie2013}. \\\\ Vgl. \\cite{Einstein:IstDieTraegheitSeinEnergieInhalt1905}.}'."\n",
+                    'Dies hat neben anderen kritischen Aspekten das grundsätzliche Problem\\color{*Bearb}{(Link)}, dass die Proportionalität von Energie und Masse \\term{E = m⋅c^{2}}\\color{*Bearb}{(Link)} hier nicht gelten würde.\\footnote{\\const{FrQFT_g_footnote_text_AequivalMasseEnergie}}'."\n",
                       'Die \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{Modifikation von Gieses Ansatz} durch die Quanten-Fluss-Theorie'."\n".
                     'macht nun die Formel von der Masse des anziehenden Zentralkörpers abhängig und ergibt im Prinzip die Formel der Lichtgeschwindigkeit im Gravitationsfeld,'."\n".
                     'wie sie aus der Allgemeinen Relativitätstheorie bekannt ist.\\footnote{\\const{FrQFT_g_footnote_text_ARTLgFormel}} \\\\'."\n".

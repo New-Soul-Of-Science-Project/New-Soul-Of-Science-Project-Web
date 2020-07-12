@@ -72,8 +72,9 @@
   
   $FrQFT_g_text_QuantengravRechnungOhneNaeh    =
                   array( 'text', array( text => array(
-                    'Diese ist nötig für geringe Abstände von einigen Vielfachen des Elementarteilchen-Radius.'."\n".
-                    'Es bleibt die Simplifizierung des Leptonen-Strings:'."\n")));
+                    'Ohne \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung:NaeherungGrosseAbstaend}{Näherung für große Abstände},'."\n".
+                    'also bei einigen Vielfachen des Elementarteilchen-Radius, ergibt sich folgende Rechnung.'."\n".
+                    'Es bleibt die Simplifizierung des Leptonen-Strings und Vakuums:'."\n")));
 
   $FrQFT_g_zitat_BuckminsterFuller_StartingPoint =
                   array( 'text', array( Shape  => 'quote', text => array(
@@ -111,6 +112,7 @@
                         addtext => '\\footnote{\\cite{Fliessbach:ART1998}, Teil IX Dynamische Sternmodelle, Kap. 44 Isotrope zeitabhängige Metrik und Birkhoff-Theorem, Machsches Prinzip, S. 253-254, hier S. 254.}'));
   
   $FrQFT_g_footnote_text_AequivalPrinzTraeSchMasse = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, S. 2-6. \\\\ Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290, hier S. 253-260. \\\\ Vgl. \\cite{Born:RTEinsteins1969}, Kap. VII. Die allgemeine Relativitätstheorie Einsteins, S. 266-324, hier S. 269-273. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, S. 58-61. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Aequivalenzprinzip2014}.';
+  $FrQFT_g_footnote_text_AequivalMasseEnergie   = 'Vgl. \\cite{Einstein:IstDieTraegheitSeinEnergieInhalt1905}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:AequivalenzVonMasseUndEnergie2013}.';
   $FrQFT_g_footnote_text_Annihilation           = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Annihilation:2015}.';
   $FrQFT_g_footnote_text_AntimaterieProblem     = '\\color{*Bearb}{(Mehr Verweise!)} \\\\ Vgl. \\cite{Falkowski:HiggsOnTheMoon:2017}.';
   $FrQFT_g_footnote_text_ART                    = 'Vgl. \\cite{Fliessbach:ART1998}. \\\\ Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290. \\\\ Vgl. \\cite{Born:RTEinsteins1969}, Kap. VII. Die allgemeine Relativitätstheorie Einsteins, S. 266-324. \\\\ Vgl. \\cite{Einstein:GrundlagenART1916}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:ART2013}.';
@@ -303,9 +305,11 @@
   //$FrQFT_g_figure_ary_GraviLeptonLichtbahn      = array( fig_file_name => 'Gravi_Lepton-Lichtbahn_v08', fig_alt_description => 'Störung der Lichtbahn durch virtuelle Wirkungsquanten', width => '700px', height => '234px', name => 'set local',
   $FrQFT_g_figure_ary_GraviLeptonLichtbahn      = array( fig_file_name => 'FrQFT/Gravi_Lepton-Lichtbahn_v10', fig_alt_description => 'Störung der Lichtbahn durch virtuelle Wirkungsquanten', width => '660px', height => '221px', name => 'set local',
                                                          text => 'Die Darstellung zeigt, in Anlehnung an die entsprechenden Abbildungen von Giese,\\footnote{\\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, S. 19-22, hier Abbildungen C1, C2, C3, S. 20-21.}'."\n".
-                                                                 'wie Wirkungsquanten eines vorbei fliegenden Photons durch die virtuellen Wirkungsquanten'."\n".
-                                                                 'eines Elementarteilchens abgelenkt werden. Die Bewegungsbahn des Photons wird dabei in Bezug auf das'."\n".
-                                                                 'Zentrum der Gravitationsquelle in eine tangentiale und eine radiale Komponente zerlegt.'."\n".
+                                                                 'wie der Bewegungspfad eines vorbeifliegenden Photons durch die virtuellen Wirkungsquanten'."\n".
+                                                                 'eines Elementarteilchens in eine wellige Form gezwungen wird.'."\n".
+                                                                 'Dies verlangsamt die effektive Geschwindigkeit des Photons, und beugt schließlich auch seine Bahn.'."\n".
+                                                                 'In der Analyse wird die Bewegungsbahn des Photons, in Bezug auf das'."\n".
+                                                                 'Zentrum der Gravitationsquelle, in eine tangentiale und eine radiale Komponente zerlegt.'."\n".
                                                                  'Beide Komponenten erfahren eine unterschiedliche Bewegungsänderung.');
   
   $FrQFT_g_figure_ary_GraviMechanismus          = array( fig_file_name => 'Gravitation_Masse_v05', fig_alt_description => 'Gravitation zwischen Ruhemassen', width => '504px', height => '264px', name => 'set local',
@@ -1325,12 +1329,12 @@
                                                 'OM:FrQFT:Quantengravitation:Equ-c-eff-tan' => array( headline_text => 'QGra.LV.3'),
                                                 'OM:FrQFT:Quantengravitation:Equ-c-eff-rad' => array( headline_text => 'QGra.LV.18'),
                                                 'OM:FrQFT:Quantengravitation:Equ-c-eff' => array( headline_text => 'QGra.LV.19'),
-                                                //%! 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:WQIUmgekehrtProport' => array( headline_text => 'Wirkungsquanten-Impulse verringern sich in ihrer Intensität mit \\term{1/r}', headline_text_short => 'Wirkungsquanten-Impulse verringern sich in ihrer Intensität mit \\term{1/r}'),
                                                 'OM:FrQFT:Quantengravitation:Equ-h-eff' => array( headline_text => 'QGra.LV.21'),
                                                 'OM:FrQFT:Quantengravitation:Equ-DetektWellenlaengeAlt' => array( headline_text => 'ZAF.RED.1'),
                                                 'OM:FrQFT:Quantengravitation:Equ-h-eff-aus-f-ele' => array( headline_text => 'QGra.LV.31'),
                                                 'OM:FrQFT:Quantengravitation:Equ-E-aus-omega' => array( headline_text => 'QGra.LV.34'),
                                                 'OM:FrQFT:Quantengravitation:Equ-E-ele-aequi-zu-Masse' => array( headline_text => 'QGra.LV.36'),
+                                                'OM:FrQFT:Quantengravitation:Lichtverlangsamung:NaeherungGrosseAbstaend' => array( headline_text => 'Näherung bei großen Abständen', headline_text_short => 'Näherung bei großen Abständen'),
                                                 'OM:FrQFT:Quantengravitation:Equ-h-ele-eff' => array( headline_text => 'QGra.LV.50'),
                                                 'OM:FrQFT:Quantengravitation:Equ-h-M-eff' => array( headline_text => 'QGra.LV.68'),
                                                 'OM:FrQFT:Quantengravitation:Equ-v-abl' => array( headline_text => 'QGra.LV.73'),

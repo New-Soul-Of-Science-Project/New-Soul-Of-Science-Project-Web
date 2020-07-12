@@ -156,8 +156,8 @@
     //%! Test because of an error that is connected by change from 2.5 to 2.7.1:  echo '      MathJax.Hub.Config({ TeX: { extensions: ["color.js", "AMSmath.js"] }});'."\n";
     echo '      MathJax.Hub.Config({'."\n";
     //echo '        jax: ["input/TeX","output/HTML-CSS", "output/PreviewHTML"],'."\n";
-    echo '        jax: ["input/TeX","output/HTML-CSS", "output/PreviewHTML"],'."\n";
-    echo '        extensions: ["tex2jax.js"],'."\n";
+    echo '        jax: ["input/TeX", "output/HTML-CSS", "output/PreviewHTML"],'."\n";
+    echo '        extensions: ["tex2jax.js","MathZoom.js"],'."\n";
     echo '        tex2jax: {'."\n";
     echo '            inlineMath: [ ["$","$"], ["\\\\(","\\\\)"] ],'."\n";
     echo '            processEscapes: true,'."\n";
@@ -165,7 +165,15 @@
     echo '          },'."\n";
     echo '        TeX: {'."\n";
     echo '          extensions: ["color.js"]'."\n";
+    echo '        },'."\n";
+    echo '        menuSettings: {'."\n";
+    echo '          zoom: "Hover",'."\n";  // !!!: Not working on Safari, but on FireFox. May this is, because I have set it manually before in Safari and that overwrites? Test on other Macs!
+    echo '          zscale: "200%"'."\n";  // !!!: This works on Safari and FireFox.
     echo '        }'."\n";
+    //-- echo '        },'."\n";
+    //-- echo '        MathEvents: {'."\n";
+    //-- echo '          hover: 400'."\n";
+    //-- echo '        }'."\n";
     echo '      });'."\n";
     echo '    </script>'."\n";
     echo '    <script type="text/javascript"'."\n";
@@ -174,7 +182,9 @@
     //echo '      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">'."\n";
     //echo '      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">'."\n";
     // #: MathJax 2.7.1: CDN host moved from "cdn.mathjax.org" to "cdnjs.cloudflare.com". See: https://www.mathjax.org/cdn-shutting-down/
-    echo '      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">'."\n";
+    //echo '      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">'."\n";
+    echo '      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML">'."\n";
+    //-- echo '      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.8/MathJax.js?config=TeX-AMS_HTML">'."\n";  // !!!: Not working!
     echo '    </script>'."\n";
     // #!: Does not work for scaling!
     //echo '    <style>'."\n";
