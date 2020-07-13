@@ -1044,6 +1044,41 @@
                         ''."\n"),
                         addtext => '')),
                       
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        'Die Angst vor deinem Tod \\\\'."\n".
+                        'ist eigentlich die Angst vor deinem Leben. \\\\'."\n".
+                        'Die Angst vor deinem Fehler und Misserfolg \\\\'."\n".
+                        'ist die Angst vor deinem Handeln. \\\\'."\n".
+                        'Es ist die Angst vor deinen Gefühlen.'."\n",
+                          'Jedoch nur durch deine Gefühle \\\\'."\n".
+                        // 'angenehme wie unangenehme, \\\\'."\n".
+                        'kannst du lernen es dir schön zu machen. \\\\'."\n".
+                        'All diese sind dein größter Schatz; \\\\'."\n".
+                        'deine Leuchttürme und Steinhaufen \\\\'."\n".
+                        'leiten dich durch deine Abenteuer.'."\n",
+                          'Also lerne dein Handwerk des Abenteurers; \\\\'."\n".
+                        'lerne sie in Ruhe kennen und nutzen. \\\\'."\n".
+                        'Denn Leben ist niemals ohne Gefahr.'."\n"),
+                        addtext => '')),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        ''."\n"),
+                        addtext => '')),
+                      
+                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
+                  // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        'Wir leben und betreiben Persönlichkeitsentwicklung, \\\\'."\n".
+                        'damit wir unser Schicksal, unsere Traumata, \\\\'."\n".
+                        'die uns wie Mühlsteine um den Hals hängen, so klein schleifen, \\\\'."\n".
+                        'dass wir sie als Schmuck tragen können, der unser Leben ziert.'."\n"),
+                        addtext => '')),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        ''."\n"),
+                        addtext => '')),
+                      
+                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
                   // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Stein-der-Weisen)
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Nur der innere Stein der Weisen kann \\\\'."\n".
