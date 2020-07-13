@@ -164,7 +164,15 @@
     echo '            preview: ["[MathJax]"]'."\n";
     echo '          },'."\n";
     echo '        TeX: {'."\n";
-    echo '          extensions: ["color.js"]'."\n";
+    echo '          extensions: ["color.js"],'."\n";
+    echo '          Macros: {'."\n";
+    echo '            MDo: "\\\\mathrm{\\\\downarrow}",'."\n";
+    echo '            MUp: "\\\\mathrm{\\\\uparrow}",'."\n";
+    echo '            MLe: ["\\\\overset{\\\\leftarrow}{#1}", 1],'."\n";
+    echo '            MRi: ["\\\\overset{\\\\rightarrow}{#1}", 1],'."\n";
+    echo '            PdDown: "\\\\MDo{}\\\\MLe{d}^{-\\\\frac{1}{3}}",'."\n";
+    echo '            PuUp: "\\\\MUp{}\\\\MRi{u}^{+\\\\frac{2}{3}}",'."\n";
+    echo '          }'."\n";
     echo '        },'."\n";
     echo '        menuSettings: {'."\n";
     echo '          zoom: "Hover",'."\n";  // !!!: Not working on Safari, but on FireFox. May this is, because I have set it manually before in Safari and that overwrites? Test on other Macs!
