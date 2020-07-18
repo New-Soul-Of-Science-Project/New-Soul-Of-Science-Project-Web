@@ -375,7 +375,14 @@
                     'Haben die Männer, für die die Lanze als Phallus-Symbol stehen könnte, an den Frauen eine Blutsünde begangen?'."\n",
                       'Auch wenn nicht all meine Gedanken stimmen sollten oder historisch nicht belegbar sind, so passt meine Interpretation zu den Geschehnissen doch zumindestens im Prinzip.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Große Tragweite der Abwertung und Verbannung des Weiblichen und vermeindlich Schwachen} \\\\'."\n".
+                  '\\condb{Große Tragweite der Abwertung und Verbannung des Weiblichen und vermeindlich Schwachen} \\\\'."\n"))),
+                      
+                  array( 'notice', array( Display => 'vis', text => array(
+                    '• Weiblich wurde vermutlich als mit dem Schlaf verbunden assoziiert, damit ruhig zu sein.',
+                    '⋅ Ruhig sein wurde möglicherweise als sie hat die Schnauze zu halten interpretiert.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
                     'Es war und ist nicht nur eine Abwertung, Negierung und „Verbannung“ oder besser Diskriminierung von Menschen biologisch weiblichen Geschlechts.'."\n".
                     'Es war und ist eine Abwertung, Negierung und Verbannung oder Diskriminierung von allem, was als weiblich oder schwach empfunden wurde und wird.'."\n",
                       'Mit der letzten Feststellung geht es nicht „nur“ um die Wertschätzung der unterschiedlichen Geschlechter und die Augenhöhe des Dialogs zwischen den Geschlechtern.'."\n".

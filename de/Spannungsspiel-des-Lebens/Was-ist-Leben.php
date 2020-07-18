@@ -23,6 +23,7 @@
                     '(\\bold{Heutige Betrachtung des Lebens in der Biologie})',
                     '(• Regelprozesse)',
                     '(– Regelprozesse schaffen Stabilität und damit Existenz.)',
+                    '(– Regelprozesse sind synergetisch.)',
                     '(– Jedes Lebewesen hat doch nur eine Existenz, warum dann so viele Regelprozesse?)',
                     '(– Ein zentraler Regelprozess stabilisiert die Existenz eines jeden Lebewesens.)',
                     '(– Haben auch Gruppen von Lebewesen einen Regelprozess?)',
@@ -42,6 +43,10 @@
                     '(• Bei struktureller dynamischer Information spielt der Zusammenhang, das Ding ist mehr als die Summe seiner Bestandteile – die Interaktion –, eine Rolle. Und der Zusammenhang, ob etwas wirklich räumlich und zeitlich miteinander zusammenhängt, kann nur aufgrund des dynamischen Verhaltens erkannt werden.)',
                     '(• Information kann nicht unabhängig vom Sender und besonders nicht unabhängig vom Empfänger definiert werden. Mit manchen „Informationen“ können wir etwas anfangen und mit anderen nicht. Was bedeutet etwas damit anfangen können? Es kann nur bedeuten, dass es den Empfänger verändert, er die Informationen in diesem Sinne aufnehmen kann. Information, mit der wir etwas anfangen können verändert uns, selbst dann, wenn wir das nicht wollen. Information hat also etwas mit der Einwirkung zu tun. Daher ist in der \\jump{OM:FrQFT:Home}{›fraktalen Quanten-Fluss-Theorie‹} das Wirkungsquantum und seine Realisierung im Wirkungsquant die grundlegende Informationseinheit (Energieeinheit). Die grundlegenste Wirkung der Wirkungsquanten einer Struktur, wie Materie, ist dann auch die Gravitation (\\jump{OM:FrQFT:Quantengravitation}{Quantengravitation}), der sich niemand entziehen kann.)',
                     ))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                      'Leben ist eine beständige Stabilität in der Entwicklung. \\\\'."\n".
+                      'Leben ist eine beständige Entwicklung in der Stabilität.'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Die Betrachtung des Lebens in der \\jumpname{OM:SpaLeb:Einleitung} nimmt eine Perspektive ein, in der die Bedeutung unserer körperlichen und psychischen Spannungen'."\n".

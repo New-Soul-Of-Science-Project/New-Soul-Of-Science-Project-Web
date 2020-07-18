@@ -575,6 +575,7 @@
                       
                   array( 'notice', array( Display => 'vis', text => array(
                     '\\bold{Körperliche Hineise auf den Achtsamkeitsprozess}',
+                    '• Siehe \\bold{Wachen und Schlafen – Sympathikus und Parasympathikus}: \\italic{\\jumpname{OM:NPYo:HaTha}}.',
                     '• Der Achtsamkeitsprozess spiegelt sich in der Lateralisation des Gehirns, in seiner funktionalen Aufgabenteilung zwischen den Gehirnhälften, wieder. Die Gehirnhälften haben eine bevorzugte Funktion in Bezug auf die Rationalität und die Emotionalität. Diese spiegelt sich wiederum in den Körperhälften, und hier besonders im Gesicht, wieder, die weit überwiegend überkreuz von den Gehirnhälften steuert werden.',
                     '• Die hierdurch ausgeprägten Unterschiede im Aussehen der Gesichtshälften lassen sich durch \\jump{OM:SpaLeb:Gesichtsausdruck}{Gesichtsspiegelung} gut sichtbar machen.',
                     '– Dass viele Primaten keine oder nur wenig Haare im Gesichtsfeld haben bedeutet, sie zeigen Gesicht. Ein Hinweis, dass die Hypothese stimmt, dass sie und wir darauf angewiesen sind, die Mimik des anderen lesen zu können, weil sich im Gesicht unsere aktuelle Stimmung und damit unser aller Achtsamkeitsprozess widerspiegelt.',

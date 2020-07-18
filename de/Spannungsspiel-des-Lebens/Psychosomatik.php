@@ -14,6 +14,8 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
+                    '\\bold{Wachen und Schlafen – Sympathikus und Parasympathikus}',
+                    '• Siehe \\italic{\\jumpname{OM:NPYo:HaTha}}.',
                     '\\bold{Persönliche Erfahrung}',
                     '• Wenn ich beim Sex bezüglich des Sehens auf mein emotionales, linkes Auge umschalte – ich kann das bevorzugte Auge umschalten, es kann aber auch das Handlungsauge geschlossen werden –, dann werden meine Gefühle deutlich intensiver.',
                     ))),
