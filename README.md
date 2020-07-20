@@ -1,2 +1,2 @@
 # New-Soul-Of-Science-Project-Web
-A new approach to physics, nature philosophy, life, and society
+A New Approach To Physics, Nature Philosophy, Life, And Society – As Website
