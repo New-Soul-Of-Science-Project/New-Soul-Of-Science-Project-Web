@@ -681,6 +681,7 @@
                                               'OM:FrQFT:Impressum:Supporter' => array( headline_text => 'Spender und Unterstützer', headline_text_short => 'Spender und Unterstützer'),
                                               'OM:FrQFT:Impressum:Haftungshinweis' => array( headline_text => 'Haftungshinweis', headline_text_short => 'Haftungshinweis'),
                                               'OM:FrQFT:Impressum:CopyrightLizenz' => array( headline_text => 'Copyrights und Lizenzen', headline_text_short => 'Copyrights und Lizenzen'),
+                                                'OM:FrQFT:Impressum:CopyrightLizenz:Inhalt' => array( headline_text => 'Copyright des Inhalts', headline_text_short => 'Copyright des Inhalts'),
                                                 'OM:FrQFT:Impressum:CopyrightLizenz:OpenSansFont' => array( headline_text => 'Open Sans Font', headline_text_short => 'Open Sans Font'),
                                                 'OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus' => array( headline_text => 'Eye of Horus', headline_text_short => 'Eye of Horus'),
                                             ),
@@ -723,8 +724,8 @@
                                                       '© 1990–2020 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
-                                                      'Steinburger Straße 38 \\\\'."\n".
-                                                      '22527 Hamburg, Germany, EU',
+                                                      'is licensed under \\\\'."\n".
+                                                      '\\jump[http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php]{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
                                      ),
@@ -1614,8 +1615,8 @@
                                                       '© 2014–2020 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
-                                                      'Steinburger Straße 38 \\\\'."\n".
-                                                      '22527 Hamburg, Germany, EU',
+                                                      'is licensed under \\\\'."\n".
+                                                      '\\jump[http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php]{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
                                      ),
@@ -1685,8 +1686,8 @@
                                                       '© 2014–2020 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
-                                                      'Steinburger Straße 38 \\\\'."\n".
-                                                      '22527 Hamburg, Germany, EU',
+                                                      'is licensed under \\\\'."\n".
+                                                      '\\jump[http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php]{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
                                      ),
@@ -2006,8 +2007,8 @@
                                                       '© 1988–2020 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
-                                                      'Steinburger Straße 38 \\\\'."\n".
-                                                      '22527 Hamburg, Germany, EU',
+                                                      'is licensed under \\\\'."\n".
+                                                      '\\jump[http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php]{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/Literatur.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
                                      ),
@@ -2102,8 +2103,8 @@
                                                       '© 2014–2020 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
-                                                      'Steinburger Straße 38 \\\\'."\n".
-                                                      '22527 Hamburg, Germany, EU',
+                                                      'is licensed under \\\\'."\n".
+                                                      '\\jump[http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php]{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
                                      ),
@@ -2723,8 +2724,8 @@
                                                       '© \\hidden{(1988?)}1989–2020 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
-                                                      'Steinburger Straße 38 \\\\'."\n".
-                                                      '22527 Hamburg, Germany, EU',
+                                                      'is licensed under \\\\'."\n".
+                                                      '\\jump[http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php]{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
                                      ),
@@ -2796,8 +2797,8 @@
                                                       '© 1990–2020 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
-                                                      'Steinburger Straße 38 \\\\'."\n".
-                                                      '22527 Hamburg, Germany, EU',
+                                                      'is licensed under \\\\'."\n".
+                                                      '\\jump[http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php]{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Vereinheitlichte-Relativitaetstheorie/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
                                      ),
@@ -3205,7 +3206,7 @@
     echo ''."\n";
     echo '			<div id="footer" class="footer main-shadow-0-5-30 main-layer-3">'."\n";
     echo '				<p align="center">'."\n";
-    echo '					&copy; 1988&mdash;2020 by Wolfgang Hu&szlig; und Media Line Digital e.K. &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
+    echo '					<a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1988–2020 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a> &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
     echo '					<a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Kontakt</a>'."\n";
     echo '				</p>'."\n";
     echo '			</div>'."\n";

@@ -68,6 +68,7 @@
 		6A684BE823BFD3A700767835 /* Meetup-Physik-Neu-Sehen-Ergruenden.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Meetup-Physik-Neu-Sehen-Ergruenden.php"; sourceTree = "<group>"; };
 		6A6D1B71200CE85B00E93883 /* Vortrag-Physik-Achtsamkeit-und-Yoga_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Vortrag-Physik-Achtsamkeit-und-Yoga_de.php"; sourceTree = "<group>"; };
 		6A6DEB5C24C59F2C00BEAB80 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6A6DEB5D24C5A1F000BEAB80 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6A6FF1921B0A3A6A009E19E6 /* Literatur_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Literatur_de.php; sourceTree = "<group>"; };
 		6A70A7121FF102F300282E05 /* Workshop-Achtsamkeitsprozess-Wo-Physik-auf-Yoga-trifft_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Workshop-Achtsamkeitsprozess-Wo-Physik-auf-Yoga-trifft_de.php"; sourceTree = "<group>"; };
 		6A7248F020ECCB66003B1C72 /* Vortrag-Perspektivwechsel-Ambiguitaetstoleranz-Entscheidungen-Demokratie_de.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; lineEnding = 0; path = "Vortrag-Perspektivwechsel-Ambiguitaetstoleranz-Entscheidungen-Demokratie_de.php"; sourceTree = "<group>"; };
@@ -477,6 +478,7 @@
 				6AC6D1891F8639AD0005D0C5 /* FrQFT */,
 				6A66AF511CB118BD00817D24 /* *Umleitungen */,
 				6AC39D7413057515001CC42A /* robots.txt */,
+				6A6DEB5D24C5A1F000BEAB80 /* README.md */,
 				6AC39D7513057515001CC42A /* share */,
 				6A31B30E1DD21A860066304C /* htaccess.txt */,
 				6AC39DAF13057515001CC42A /* sitemap.xml */,
