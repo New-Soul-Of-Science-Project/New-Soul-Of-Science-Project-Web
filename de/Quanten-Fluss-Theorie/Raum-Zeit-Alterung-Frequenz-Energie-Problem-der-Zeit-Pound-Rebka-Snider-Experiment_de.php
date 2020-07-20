@@ -136,7 +136,7 @@
                   array( 'equations',
                     array( equ_text_std => 'ZAF.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  {^{0}_{0}c}  =  {_{\lowZero}c}  =  {c_{\lowZero}}  }',
-                                               label_name => 'OM:FrQFT:ZeitAlterungFrequenz:Equ-LGKos-2', label_text => '\\jump{OM:FrQFT:ZeitAlterungFrequenz:Equ-LGKos-1}{\\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-LGKos-2}}'),
+                                               label_name => 'OM:FrQFT:ZeitAlterungFrequenz:Equ-LGKos-2', label_text => '\\jump{OM:FrQFT:ZeitAlterungFrequenz:Equ-LGKos-1}{\\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-LGKos-2}}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'So bietet es sich an, dass beim kosmischen Beobachter die hochgestellte \\term{0} zur Vereinfachung weggelassen werden kann.'."\n".
@@ -169,16 +169,58 @@
                                            
                 'Kosmisch konstante Werte')),
                   array( 'text', array( text => array(
-                    'Es gibt auch Werte, die nicht vom beobachteten Ort abhängen.'."\n".
+                    'Es gibt auch Werte, die aus einer bestimmten Perspektive nicht vom beobachteten Ort abhängen.'."\n".
                     'Diese sind an allen Orten im Kosmos gleich, wenn sie vom selben Ort aus beobachtet werden.'."\n".
                     'Dazu gehört beispielsweise die Geschwindigkeit der \\jump{OM:FrQFT:ZeitAlterungFrequenz:Wirkungsquanten-Geschwindigkeit}{Wirkungsquanten}:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'ZAF.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  y  \neq  x  }'),
                       array( display => 'on',  latex => '{  {^{z}_{y}v_{wq}}  =  {^{z}_{x}v_{wq}}  =  {^{z}v_{wq}}  }',
-                                               label_text => '\\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-KosWQGeschw}'),
+                                               label_text => '\\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-KosWQGeschw}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'In diesem Fall kann gut der beobachtete Ort weggelassen werden, denn er spielt keine Rolle.'."\n"))),
+                    'In diesem Fall kann in Formeln der beobachtete Ort weggelassen werden, denn er spielt keine Rolle.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:XXX', text =>
+                                           
+                'Wirkungsquanten-Bewegungsraum')),
+                  array( 'text', array( text => array(
+                    'Die Perspektive, aus der heraus die Geschwindigkeit der \\jump{OM:FrQFT:ZeitAlterungFrequenz:Wirkungsquanten-Geschwindigkeit}{Wirkungsquanten} als konstant'."\n".
+                    'erscheint ist der \\italic{Wirkungsquanten-Bewegungsraum}.'."\n".
+                    'Der Raum ist aus dieser Perspektive immer euklidisch flach.'."\n",
+                      'Der Eindruck der Raumzeitkrümmung ergibt sich hier aus strukturellen und dynamischen Gründen:'."\n".
+                    'Die Dichte der Wirkungsquanten in Relation zu ihrer konstanten Bewegung variiert aus dieser Sicht genauso wie die Geschwindigkeit des Lichts oder der'."\n".
+                    'lichtähnlichen Strukturen in Relation zur konstanten Bewegung der Wirkungsquanten.'."\n",
+                      'Auch die relative Dichteveränderung von hintereinander herlaufenden lichtähnlichen Teilchen, wie polarisierte Photonen, unpolarisierte Photonen des Vakuums –'."\n".
+                    'die Vakuum-Elapsonen –, oder ähnliche Strukturen in Materie-Elementarteilchen, verhält sich wie die relative Veränderung der Lichtgeschwindigkeit.'."\n",
+                      'Aus Sicht des \\jump{OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:KosBeob}{kosmischen Beobachters} nimmt'."\n".
+                    'die konstante \\jump{OM:FrQFT:ZeitAlterungFrequenz:Wirkungsquanten-Geschwindigkeit}{Wirkungsquanten-Geschwindigkeit} einen Wert an,'."\n".
+                    'der in einem besonderen Verhältnis zur Lichtgeschwindigkeitskonstanten steht, wie wir noch sehen werden:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'ZAF.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  {^{0}v_{wq}}  =  \sqrt{ 2 } \cdot {_{\lowZero}c}  }',
+                                               label_text => '\\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwKonst-1}', label_incr => false),
+                    ))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:XXX', text =>
+                                           
+                'Licht-Bewegungsraum')),
+                  array( 'text', array( text => array(
+                    'Beim \\italic{Licht-Bewegungsraum} haben wir es mit einer Perspektive zu tun, die davon ausgeht, das aus Sicht des'."\n".
+                    '\\jump{OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:KosBeob}{kosmischen Beobachters}, am Standpunkt durchschnittlicher Energiedichte des Vakuums,'."\n".
+                    'der effektive Wert der Lichtgeschwindigkeitskonstanten \\term{_{0}c} \\\\( {_{\lowZero}c} \\\\) beträgt:'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:XXX', text =>
                                            
                 'Vorgehensweise')),

@@ -67,6 +67,7 @@
 		6A681A2A2174E05100A5DE12 /* Gesichtshaelften-Gesichtsausdruck-Gesichtsspiegelung_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = "Gesichtshaelften-Gesichtsausdruck-Gesichtsspiegelung_de.php"; sourceTree = "<group>"; };
 		6A684BE823BFD3A700767835 /* Meetup-Physik-Neu-Sehen-Ergruenden.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Meetup-Physik-Neu-Sehen-Ergruenden.php"; sourceTree = "<group>"; };
 		6A6D1B71200CE85B00E93883 /* Vortrag-Physik-Achtsamkeit-und-Yoga_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Vortrag-Physik-Achtsamkeit-und-Yoga_de.php"; sourceTree = "<group>"; };
+		6A6DEB5C24C59F2C00BEAB80 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		6A6FF1921B0A3A6A009E19E6 /* Literatur_de.php */ = {isa = PBXFileReference; explicitFileType = text.html; fileEncoding = 4; lineEnding = 0; path = Literatur_de.php; sourceTree = "<group>"; };
 		6A70A7121FF102F300282E05 /* Workshop-Achtsamkeitsprozess-Wo-Physik-auf-Yoga-trifft_de.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "Workshop-Achtsamkeitsprozess-Wo-Physik-auf-Yoga-trifft_de.php"; sourceTree = "<group>"; };
 		6A7248F020ECCB66003B1C72 /* Vortrag-Perspektivwechsel-Ambiguitaetstoleranz-Entscheidungen-Demokratie_de.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; lineEnding = 0; path = "Vortrag-Perspektivwechsel-Ambiguitaetstoleranz-Entscheidungen-Demokratie_de.php"; sourceTree = "<group>"; };
@@ -226,6 +227,7 @@
 		6A4936711A970B44009EDC76 /* *Umleitungen */ = {
 			isa = PBXGroup;
 			children = (
+				6AC39D6913057515001CC42A /* Impressum-Deutschland.html */,
 				6AC39D6A13057515001CC42A /* index.html */,
 				6A137501171FD3C000CB8651 /* Quanten-Fluss-Theorie_de.php */,
 				6AFC53A016C4ED5F00BDE221 /* Fraktale-Quanten-Fluss-Theorie_Elektroschwache-Wechselwirkung-Teilchenumwandlungen-Innerer-Spin-Schwacher-Isospin_de.html */,
@@ -467,6 +469,7 @@
 		6AC39CFC13057514001CC42A /* NSOSP Web */ = {
 			isa = PBXGroup;
 			children = (
+				6A6DEB5C24C59F2C00BEAB80 /* .gitignore */,
 				6A7A8B23135EBC87002A28E8 /* Aufgaben - NSOSP Web.txt */,
 				6A66AF501CB10B9B00817D24 /* index.php */,
 				6AC39D6713057515001CC42A /* de */,
@@ -487,7 +490,6 @@
 			isa = PBXGroup;
 			children = (
 				6A594BD5165E8B8E00A65594 /* Fraktale-Quanten-Fluss-Theorie_Manuskript_de.html */,
-				6AC39D6913057515001CC42A /* Impressum-Deutschland.html */,
 				6A73BBE81CAE443000F559FC /* index.php */,
 				6AC39D6B13057515001CC42A /* Spezielle_Medium-Relativitaetstheorie_Deutsch.html */,
 				6AF3BB5B1331160100A01A03 /* Michelson-Morley-Experiment_nicht-klassisch.html */,
