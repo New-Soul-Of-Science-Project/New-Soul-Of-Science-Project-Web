@@ -3172,11 +3172,11 @@
     //echo '					</small>'."\n";
     //echo '				</p>'."\n";
     echo '				<p align="left" style="margin-bottom: 4px;">'."\n";
-    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/Wolfgang_Huss-2016-IMG_3683-clip.jpg" width="180" height="192" border="0" alt="Wolfgang Hu&szlig; &copy;2016 by Wolfgang Hu&szlig;"> </a>'."\n";
+    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/Wolfgang_Huss-2016-IMG_3683-clip.jpg" width="180" height="192" border="0" alt="Wolfgang Huß ©2016 by Wolfgang Huß"> </a>'."\n";
     echo '        </p>'."\n";
     echo '        <p align="left" style="margin-top: 0px;">'."\n";
     echo '					<!small><span style="color: #505050;">'."\n";
-    echo '						Wolfgang Hu&szlig;'."\n";
+    echo '						Wolfgang Huß'."\n";
     echo '					</span><!/small>'."\n";
     echo '				</p>'."\n";
     echo '				<br>'."\n";

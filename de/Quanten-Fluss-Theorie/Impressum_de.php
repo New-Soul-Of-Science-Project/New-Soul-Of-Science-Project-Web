@@ -22,9 +22,9 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'text', array( text => array(
-                    '<!img src="../../share/images/Wolfgang Huss - CIMG0373 bearb.jpg" width="569" height="872" border="0" alt="Foto: Wolfgang Hu&szlig;" align="right">'."\n".
-                    '<!img src="../../share/images/Wolfgang Huss - CIMG0373 bearb.jpg" width="200" height="307" border="0" alt="Foto: Wolfgang Hu&szlig;" align="right">'."\n".
-                    '<img src="../../share/images/Wolfgang Huss-IMG_2229 beschn klein.jpg" width="238" height="307" border="0" alt="Foto: Wolfgang Hu&szlig;" align="right">'."\n".
+                    '<!img src="../../share/images/Wolfgang Huss - CIMG0373 bearb.jpg" width="569" height="872" border="0" alt="Foto: Wolfgang Huß" align="right">'."\n".
+                    '<!img src="../../share/images/Wolfgang Huss - CIMG0373 bearb.jpg" width="200" height="307" border="0" alt="Foto: Wolfgang Huß" align="right">'."\n".
+                    '<img src="../../share/images/Wolfgang Huss-IMG_2229 beschn klein.jpg" width="238" height="307" border="0" alt="Foto: Wolfgang Huß" align="right">'."\n".
                     //'Wolfgang Huß \\italic{alias} Lucius Damian \\hidden{Cosmas }Stardust \\\\'."\n".
                     'Wolfgang Huß \\\\'."\n".
                     'und Media Line Digital e.K. \\\\'."\n".
@@ -190,13 +190,13 @@
                 array(
                   array( 'text', array( text => array(
                     '&Auml;nderungen am Inhalt dieser Website oder an den darin genannten Produkten oder Preisen etc. kann'."\n".
-                    '<strong>Wolfgang Hu&szlig;</strong> jederzeit ohne vorherige Ank&uuml;ndigung vornehmen. Zur Aktualisierung des Inhalts dieser'."\n".
+                    '<strong>Wolfgang Huß</strong> jederzeit ohne vorherige Ank&uuml;ndigung vornehmen. Zur Aktualisierung des Inhalts dieser'."\n".
                     'Website besteht keine Verpflichtung.  Eine Haftung oder Garantie f&uuml;r die Aktualit&auml;t, Richtigkeit und Vollst&auml;ndigkeit'."\n".
                     'der zur Verf&uuml;gung gestellten Informationen und Daten ist ausgeschlossen. In keinem Fall wird f&uuml;r Sch&auml;den,'."\n".
                     'die sich aus der Verwendung der abgerufenen Informationen ergeben, eine Haftung &uuml;bernommen. \\\\'."\n".
                     '\\\\'."\n".
                     'F&uuml;r alle auf andere Webseiten gesetzten Links gilt: \\\\'."\n".
-                    '<strong>Wolfgang Hu&szlig;</strong> m&ouml;chte ausdr&uuml;cklich betonen, dass er keinerlei Einfluss auf die Gestaltung'."\n".
+                    '<strong>Wolfgang Huß</strong> m&ouml;chte ausdr&uuml;cklich betonen, dass er keinerlei Einfluss auf die Gestaltung'."\n".
                     'und die Inhalte der gelinkten Seiten hat. Deshalb distanziert er sich hiermit ausdr&uuml;cklich von allen Inhalten aller gelinkten'."\n".
                     'Seiten dieser gesamten Website inklusive aller Unterseiten. Diese Erkl&auml;rung gilt f&uuml;r alle auf dieser Homepage ausgebrachten'."\n".
                     'Links und f&uuml;r alle Inhalte der Seiten, zu denen Links oder Banner f&uuml;hren.<br>'."\n".
