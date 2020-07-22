@@ -200,30 +200,71 @@
                       array( display => 'on',  latex => '{  {^{0}v_{wq}}  =  \sqrt{ 2 } \cdot {_{\lowZero}c}  }',
                                                label_text => '\\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwKonst-1}', label_incr => false),
                     ))),
+                  array( 'text', array( text => array(
+                    'Eine Besonderheit des Wirkungsquanten-Bewegungsraums ist, dass die Dichte der Wirkungsquanten an einem beobachteten Ort nicht in allen Richtungen gleich ist.'."\n".
+                    'Sie kann sich am selben Ort je nach Richtung unterscheiden.'."\n".
+                    'Daraus folgt auch, dass die effektive Geschwindigkeit des Lichts nicht am selben Ort in allen Richtungen gleich groß ist, sie ist anisotrop.'."\n",
+                      'In der späteren Herleitung der \\jump{OM:FrQFT:Quantengravitation}{Quantengravitation} in der Quanten-Fluss-Theorie und ihrer'."\n".
+                    '\\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{Variabilität der Lichtgeschwindigkeit} in der Schwarzschild-Metrik\\footnote{\\const{FrQFT_g_footnote_text_SchwarzschildMetrik}}'."\n".
+                    'ergibt sich die Richtungsabhängige Veränderung der Lichtgeschwindigkeit zu:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'ZAF.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1-2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} \right)^{p}  }',
+                                               label_text => '\\jumpname{OM:FrQFT:Quantengravitation:Equ-GraLGEinstein}', label_incr => false,
+                                               footnote => '\\const{FrQFT_g_footnote_text_ARTLgFormel}'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Variable \\term{p} in der Potenz besitzt dabei im Fall tangentialer Richtung der Lichtausbreitung zur zentralen Masse den Wert \\term{p = 1/2} und im Fall radialer Richtung den Wert \\term{p = 1}.'."\n".
+                    'Hier steht \\term{r} für den Abstand zum Zentrum der Masse.'."\n".
+                    'Das vorangestellte \\term{r,p} vor der variablen Lichtgeschwindigkeit \\term{_{r,p}c_{mas}} drückt also ihren Orts- und Richtungsbezug aus.'."\n",
+                      'An Orten des kosmischen Beobachters selber stellt sich die variable Lichtgeschwindigkeit übrigens als isotrop dar.'."\n",
+                      'Beim Wirkungsquanten-Bewegungsraum haben wir es mit einer Perspektive zu tun, die davon ausgeht, dass aus Sicht des'."\n".
+                    'kosmischen Beobachters, am Standpunkt durchschnittlicher Energiedichte des Vakuums,'."\n".
+                    'der effektive Wert der Lichtgeschwindigkeit dem Wert der Lichtgeschwindigkeitskonstanten \\term{_{0}c} gleich ist:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'ZAF.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  {_{\lowZero}c}  =  {c_{\lowZero}}  }',
+                                               label_text => '\\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-LGKos-1}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Im Folgenden gehen wir zu Perspektiven über, die den Richtungsbezug der Lichtausbreitung nicht mehr haben.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:XXX', text =>
                                            
                 'Licht-Bewegungsraum')),
                   array( 'text', array( text => array(
-                    'Beim \\italic{Licht-Bewegungsraum} haben wir es mit einer Perspektive zu tun, die davon ausgeht, das aus Sicht des'."\n".
-                    '\\jump{OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:KosBeob}{kosmischen Beobachters}, am Standpunkt durchschnittlicher Energiedichte des Vakuums,'."\n".
-                    'der effektive Wert der Lichtgeschwindigkeitskonstanten \\term{_{0}c} \\\\( {_{\lowZero}c} \\\\) beträgt:'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Beim \\italic{Licht-Bewegungsraum} haben wir es mit einer Perspektive zu tun, die den Wirkungsquanten-Bewegungsraum so verändert, dass die variable Lichtgeschwindigkeit'."\n".
+                    'an einem Ort immer in allen Richtungen isotrop ist.'."\n".
+                    'Dies wird dadurch erreicht, dass der Raum so gekrümmt wird, dass dies gewährleistet ist.'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        'Da die Korrektur der Raumdehnung in Richtung einer isotropen, variablen Lichtgeschwindigkeit auf verschiedene Arten möglich ist, definiere ich hier,'."\n".
+                        'dass die Dehnung oder Stauchung des Raums in radialer Richtung zu einer Zentralmasse geschieht.'."\n".
+                        'Die Raumdehnung und die variable Lichtgeschwindigkeit in tangentialer Richtung bleibt davon unberührt.'."\n"),
+                        addtext => '')),
+                      
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Im nächsten Schritt soll noch beschreiben werden, wie der Übergang der Perspektiven zur Raumzeitkrümmung der Allgemeinen Relativitätstheorie'."\n".
+                    'vollzogen wird.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:XXX', text =>
                                            
-                'Vorgehensweise')),
+                'Raumzeitkrümmung der Allgemeinen Relativitätstheorie')),
+                  array( 'text', array( text => array(
+                    'In der bekannten Perspektive der Allgemeinen Relativitätstheorie wird nun noch eine vierte, imaginäre Raumdimension hinzugefügt in der eine Bewegung möglich ist,'."\n".
+                    'sodass die Lichtgeschwindigkeit auch effektiv immer als Konstante erscheint:'."\n",
+                      'Bewegt sich Licht effektiv langsamer als die Lichtgeschwindigkeitskonstante, dann dehnt sich der dreidimensionale Raum so, dass seine Bewegung als mit der'."\n".
+                    'Lichtgeschwindigkeitskonstanten erscheint.'."\n".
+                    'Bewegen sich materielle Punkte durch den Raum, dann wird deren fehlender Anteil an der Lichtgeschwindigkeitskonstanten in der imaginären Zeitdimension'."\n".
+                    'ergänzt.'."\n",
+                      '\\color{*Entwick}{Im Licht-Bewegungsraum, der aus dem Wirkungsquanten-Bewegungsraum entwickelt wird, sind zwischen sehr großen Massen auch variable Lichtgeschwindigkeiten'."\n".
+                    'möglich, die bis nah heran an das \\term{√2}-fache der Lichtgeschwindigkeitskonstanten reichen können.'."\n".
+                    'Mit einer geeigneten Darstellung dieses Sachverhalts in der Raumzeitkrümmung der Allgemeinen Relativitätstheorie muss ich mich noch beschäftigen.}'."\n",
+                      '\\color{*Entwick}{Diese Eigenschaft der Quanten-Fluss-Theorie und ihrer Quantengravitation, die mit ihrer variablen Vakuum-Energie um sehr große Massen herum zu tun hat,'."\n".
+                    'eröffnet eine wichtige Perspektive zur Lösung des \\jump{OM:FrQFT:Dunkle-Materie}{Phänomens der Dunklen Materie}.'."\n".
+                    'Eine Lösung der Darstellung des Licht-Bewegungsraums in der Raumzeitkrümmung der Allgemeinen Relativitätstheorie sollte die Wirkung des Phänomens der Dunklen Materie'."\n".
+                    'also sinnvoll abbilden.}'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:XXX', text =>
+                                           
+                'Weitere Vorgehensweise')),
                   array( 'text', array( text => array(
                     'Um die Formeln der folgenden Kapitel zu vereinfachen und dadurch leserlicher und verständlicher zu machen wird, wo sinnvoll, versucht, die Beobachtungen'."\n".
                     'aus Sicht des kosmischen Beobachters zu beschreiben.'."\n".

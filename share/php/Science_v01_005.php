@@ -159,13 +159,14 @@
     echo '        jax: ["input/TeX", "output/HTML-CSS", "output/PreviewHTML"],'."\n";
     echo '        extensions: ["tex2jax.js","MathZoom.js"],'."\n";
     echo '        tex2jax: {'."\n";
-    echo '            inlineMath: [ ["$","$"], ["\\\\(","\\\\)"] ],'."\n";
+    //-- echo '            inlineMath: [ ["$","$"], ["\\\\(","\\\\)"] ],'."\n";
     echo '            processEscapes: true,'."\n";
     echo '            preview: ["[MathJax]"]'."\n";
     echo '          },'."\n";
     echo '        TeX: {'."\n";
     echo '          extensions: ["color.js"],'."\n";
     echo '          Macros: {'."\n";
+    echo '            lowZero: "\\\\raise -.3ex 0",'."\n";
     echo '            MDo: "\\\\mathrm{\\\\downarrow}",'."\n";
     echo '            MUp: "\\\\mathrm{\\\\uparrow}",'."\n";
     echo '            MLe: ["\\\\overset{\\\\leftarrow}{#1}", 1],'."\n";
