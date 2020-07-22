@@ -2915,9 +2915,10 @@
                                  );
   
   $FrQFT_g_supporter_list = array(
-                                   array( vorname => 'Thomas', nachname => 'Melloh', stadt => 'Hamburg', support => 'Testleser, Korrektur, Beratung, seelische Betreuung'),
+                                   array( vorname => 'Thomas', nachname => 'Melloh', stadt => 'Hamburg', support => 'Testleser, Korrektur, Beratung, Betreuung'),
                                    array( vorname => 'Stefan', nachname => 'Petzhold', stadt => 'Hamburg', support => 'Testleser, Korrektur, Beratung'),
-                                   array( vorname => 'Raimund', nachname => 'Welsch', stadt => 'Aachen', support => 'Korrektur, Beratung, sachverständige Prüfung (Review)'),
+                                   array( vorname => 'Matthias', nachname => 'Galke', stadt => 'Hamburg', support => 'Inspiration, Beratung, Lehre'),
+                                   array( vorname => 'Raimund', nachname => 'Welsch', stadt => 'Aachen', support => 'Korrektur, Beratung, Prüfung (Review)'),
                                  );
                                  
                                  
