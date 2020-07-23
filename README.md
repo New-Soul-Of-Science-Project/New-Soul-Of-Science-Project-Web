@@ -1,5 +1,5 @@
 # The New Soul Of Science Project Website
-A New Approach To Physics, Nature Philosophy, Life, Psychosomatics, Society, And Mathematics – As Website
+**A New Approach To Physics, Nature Philosophy, Life, Psychosomatics, Society, And Mathematics – As Website**
 
 The New Soul Of Science Project Website is the most visible part of an initiative to find new foundations on several themes in science. Our goals are a new nature philosophy (philosophies) that leads to:
 
