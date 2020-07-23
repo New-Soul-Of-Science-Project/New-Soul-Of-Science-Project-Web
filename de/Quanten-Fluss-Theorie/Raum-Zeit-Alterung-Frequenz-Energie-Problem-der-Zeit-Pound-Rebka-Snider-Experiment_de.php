@@ -243,7 +243,7 @@
                         addtext => '')),
                       
                   array( 'text', array( text => array(
-                    'Im nächsten Schritt soll noch beschreiben werden, wie der Übergang der Perspektiven zur Raumzeitkrümmung der Allgemeinen Relativitätstheorie'."\n".
+                    'Im nächsten Schritt soll nun beschrieben werden, wie der Übergang der Perspektiven zur Raumzeitkrümmung der Allgemeinen Relativitätstheorie'."\n".
                     'vollzogen wird.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:XXX', text =>
                                            
@@ -251,17 +251,16 @@
                   array( 'text', array( text => array(
                     'In der bekannten Perspektive der Allgemeinen Relativitätstheorie wird nun noch eine vierte, imaginäre Raumdimension hinzugefügt in der eine Bewegung möglich ist,'."\n".
                     'sodass die Lichtgeschwindigkeit auch effektiv immer als Konstante erscheint:'."\n",
-                      'Bewegt sich Licht effektiv langsamer als die Lichtgeschwindigkeitskonstante, dann dehnt sich der dreidimensionale Raum so, dass seine Bewegung als mit der'."\n".
-                    'Lichtgeschwindigkeitskonstanten erscheint.'."\n".
-                    'Bewegen sich materielle Punkte durch den Raum, dann wird deren fehlender Anteil an der Lichtgeschwindigkeitskonstanten in der imaginären Zeitdimension'."\n".
-                    'ergänzt.'."\n",
-                      '\\color{*Entwick}{Im Licht-Bewegungsraum, der aus dem Wirkungsquanten-Bewegungsraum entwickelt wird, sind zwischen sehr großen Massen auch variable Lichtgeschwindigkeiten'."\n".
+                      'Bewegt sich Licht effektiv langsamer oder schneller als die Lichtgeschwindigkeitskonstante, dann dehnt sich der dreidimensionale Raum so, dass seine Geschwindigkeit den Wert der'."\n".
+                    'Lichtgeschwindigkeitskonstanten annimmt.'."\n".
+                    'Bewegen sich materielle Punkte durch den Raum, dann wird deren fehlender oder überschüssiger Anteil an der Lichtgeschwindigkeitskonstanten in der imaginären Zeitdimension'."\n".
+                    'so ergänzt, dass sich seine komplette Bewegungsgeschwindigkeit zur Lichtgeschwindigkeitskonstanten ergibt.'."\n",
+                      'Im Licht-Bewegungsraum, der aus dem Wirkungsquanten-Bewegungsraum entwickelt wird, sind zwischen sehr großen Massen auch variable Lichtgeschwindigkeiten'."\n".
                     'möglich, die bis nah heran an das \\term{√2}-fache der Lichtgeschwindigkeitskonstanten reichen können.'."\n".
-                    'Mit einer geeigneten Darstellung dieses Sachverhalts in der Raumzeitkrümmung der Allgemeinen Relativitätstheorie muss ich mich noch beschäftigen.}'."\n",
-                      '\\color{*Entwick}{Diese Eigenschaft der Quanten-Fluss-Theorie und ihrer Quantengravitation, die mit ihrer variablen Vakuum-Energie um sehr große Massen herum zu tun hat,'."\n".
-                    'eröffnet eine wichtige Perspektive zur Lösung des \\jump{OM:FrQFT:Dunkle-Materie}{Phänomens der Dunklen Materie}.'."\n".
-                    'Eine Lösung der Darstellung des Licht-Bewegungsraums in der Raumzeitkrümmung der Allgemeinen Relativitätstheorie sollte die Wirkung des Phänomens der Dunklen Materie'."\n".
-                    'also sinnvoll abbilden.}'."\n"))),
+                    'Diese Eigenschaft der Quanten-Fluss-Theorie und ihrer Quantengravitation, die mit ihrer variablen Vakuum-Energie um sehr große Massen herum zu tun hat,'."\n".
+                    'eröffnet eine wichtige Perspektive zur Lösung des \\jump{OM:FrQFT:Dunkle-Materie}{Phänomens der Dunklen Materie}.'."\n",
+                      'Eine Lösung der Darstellung des Licht-Bewegungsraums in der Raumzeitkrümmung der Allgemeinen Relativitätstheorie sollte demnach die Wirkung des Phänomens der Dunklen Materie'."\n".
+                    'so sinnvoll abbilden und die Allgemeinen Relativitätstheorie auf diese Weise modifizieren.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:XXX', text =>
                                            
                 'Weitere Vorgehensweise')),
