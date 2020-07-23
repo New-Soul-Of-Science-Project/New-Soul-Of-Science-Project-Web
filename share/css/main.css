@@ -163,11 +163,13 @@ a:hover {
     height: 933px;
     overflow: auto;
 	}
+  .content form,
 	.content h1,
 	.content h2,
 	.content h3,
 	.content h4,
-	.content p,
+  .content input,
+  .content p,
 	.content table,
 	.content td,
 	.content tr,
