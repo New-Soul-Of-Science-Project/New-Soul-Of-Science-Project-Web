@@ -9,13 +9,13 @@ The New Soul Of Science Project Website is the most visible part of an initiativ
     - based on a clear definition of consciousness in this setting
   - fulfils the unification of physics
     - including quantum gravity
-  - a new foundation of life
-    - fully based on regulation processes (Regelprozessen)
-    - has a top level regulation process for each individual life (mindfulness process, Achtsamkeitsprozess)
-      - clarifies the implications of psychosomatics, the inner relations between our psyche and our body
-      - allows deep insights in psychological problems 
-      - allows a new definition of our soul and therefore solves the soul-body-problem
-    - has even regulation processes to regulate societies
+- a new foundation of life
+  - fully based on regulation processes (Regelprozessen)
+  - has a top level regulation process for each individual life (mindfulness process, Achtsamkeitsprozess)
+    - clarifies the implications of psychosomatics, the inner relations between our psyche and our body
+    - allows deep insights in psychological problems 
+    - allows a new definition of our soul and therefore solves the soul-body-problem
+  - has even regulation processes to regulate societies
 - extensions of mathematics
   - defining actual endless numbers on an endless prime number product 
   - defining analysis with actual endless numbers 
