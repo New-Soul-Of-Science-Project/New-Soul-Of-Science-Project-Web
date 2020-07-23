@@ -16,10 +16,10 @@ The New Soul Of Science Project Website is the most visible part of an initiativ
       - allows deep insights in psychological problems 
       - allows a new definition of our soul and therefore solves the soul-body-problem
     - has even regulation processes to regulate societies
-  - extensions of mathematics
-    - defining actual endless numbers on an endless prime number product 
-    - defining analysis with actual endless numbers 
-    - representing negative numbers by sets 
+- extensions of mathematics
+  - defining actual endless numbers on an endless prime number product 
+  - defining analysis with actual endless numbers 
+  - representing negative numbers by sets 
   
 
 ## On The Web
