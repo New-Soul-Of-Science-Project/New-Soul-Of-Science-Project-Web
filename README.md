@@ -34,7 +34,7 @@ http://www.nsosp.org
 
 ## Fractal Quantum Flow Theory
 
-[http://www.nsosp.org/FrQFT](Fractal Quantum Flow Theory)
+[Fractal Quantum Flow Theory](http://www.nsosp.org/FrQFT)
 
 
 ## License
