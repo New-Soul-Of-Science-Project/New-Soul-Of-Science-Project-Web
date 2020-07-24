@@ -9,7 +9,7 @@ The New Soul Of Science Project Website is the most visible part of an initiativ
     - based on a clear definition of consciousness in this setting
   - fulfils the unification of physics
     - including quantum gravity
-- a new foundation of life (Tension Gam of Life, Spannungsspiel des Lebens)
+- a new foundation of life (Tension Game of Life, Spannungsspiel des Lebens)
   - fully based on regulation processes (Regelprozessen)
   - has a top level regulation process for each individual life (mindfulness process, Achtsamkeitsprozess)
     - clarifies the implications of psychosomatics, the inner relations between our psyche and our body
@@ -20,7 +20,7 @@ The New Soul Of Science Project Website is the most visible part of an initiativ
     - let us see bridges between modern medicine, modern life science, and alternative medicine and alternative life science
   - let us see even regulation processes in the interactions in societies
 - the foundation of Nature Philosophie Yoga (NaPhil-Yoga)
-  - based on the insights of the ›Tension Gam of Life‹ and the ›fractal Quantum Flow Theory‹
+  - based on the insights of the ›Tension Game of Life‹ and the ›fractal Quantum Flow Theory‹
 - extensions of mathematics (Superial Numbers, Superial-Zahlen)
   - defining actual endless numbers on an endless prime number product 
   - defining analysis with actual endless numbers 
