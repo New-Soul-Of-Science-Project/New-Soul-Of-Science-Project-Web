@@ -3,22 +3,22 @@
 
 The New Soul Of Science Project Website is the most visible part of an initiative to find new foundations on several themes in science. Our goal is a new nature philosophy (philosophies) and new views on mathematics that leads to:
 
-- a new foundation of physics [Fractal Quantum Flow Theory](#fractal-quantum-flow-theory)
-- a new foundation of life
-- the foundation of Nature Philosophie Yoga
-- extensions of mathematics (Superial Numbers, Superial-Zahlen)
+- a new foundation of physics ([Fractal Quantum Flow Theory](#fractal-quantum-flow-theory))
+- a new foundation of life ([Tension Game Of Life](#tension-game-of-life))
+- the foundation of [Nature Philosophie Yoga](#nature-philosophie-yoga-naphil-yoga)
+- extensions of mathematics ([Superial Numbers](#superial-numbers))
   
 
-## Find It On The Web
+## On The Web
 
-http://www.nsosp.org
+The New Soul Of Science Project: http://www.nsosp.org
 
 
 ## Fractal Quantum Flow Theory
 
 **(fraktale Quanten-Fluss-Theorie)**
 
-[Fractal Quantum Flow Theory](http://www.nsosp.org/FrQFT)
+On The Web: [Fractal Quantum Flow Theory](http://www.nsosp.org/FrQFT)
 
 - based on dynamic structural regulation processes (Regelprozessen) to create, stabilise, and develop all existences
 - includes a new foundation of life
@@ -31,7 +31,7 @@ http://www.nsosp.org
 
 **(Spannungsspiel des Lebens)**
 
-[Tension Game Of Life](http://www.nsosp.org/spannung)
+On The Web: [Tension Game Of Life](http://www.nsosp.org/spannung)
 
 - fully based on regulation processes (Regelprozessen)
 - has a top level regulation process for each individual life (mindfulness process, Achtsamkeitsprozess)
@@ -48,7 +48,7 @@ http://www.nsosp.org
 
 **(Naturphilosophie-Yoga)**
 
-[Nature Philosophy Yoga](http://www.NaPhil-Yoga.org)
+On The Web: [Nature Philosophy Yoga](http://www.NaPhil-Yoga.org)
 
 - based on the insights of the ›Tension Game Of Life‹ and the ›Fractal Quantum Flow Theory‹
 
@@ -57,7 +57,7 @@ http://www.nsosp.org
 
 **(Superial-Zahlen)**
 
-[Superial Numbers](http://www.nsosp.org/de/Superial-Zahlen)
+On The Web: [Superial Numbers](http://www.nsosp.org/de/Superial-Zahlen)
 
 - defining actual endless numbers on an endless prime number product 
 - defining analysis with actual endless numbers 
