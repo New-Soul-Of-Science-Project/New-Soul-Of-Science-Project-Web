@@ -1,30 +1,12 @@
 # The New Soul Of Science Project Website
 **A New Approach To Physics, Nature Philosophy, Life, Psychosomatics, Society, And Mathematics – As Website**
 
-The New Soul Of Science Project Website is the most visible part of an initiative to find new foundations on several themes in science. Our goals are a new nature philosophy (philosophies) that leads to:
+The New Soul Of Science Project Website is the most visible part of an initiative to find new foundations on several themes in science. Our goal is a new nature philosophy (philosophies) and new views on mathematics that leads to:
 
-- a new foundation of physics (fractal Quantum Flow Theory, fraktale Quanten-Fluss-Theorie)
-  - based on dynamic structural regulation processes (Regelprozessen) to create, stabilise, and develop all existences
-  - includes a new foundation of life
-    - based on a clear definition of consciousness in this setting
-  - fulfils the unification of physics
-    - including quantum gravity
-- a new foundation of life (Tension Game of Life, Spannungsspiel des Lebens)
-  - fully based on regulation processes (Regelprozessen)
-  - has a top level regulation process for each individual life (mindfulness process, Achtsamkeitsprozess)
-    - clarifies the implications of psychosomatics, the inner relations between our psyche and our body
-    - allows deep insights in psychological problems 
-    - allows a new definition of our soul and therefore solves the soul-body-problem
-  - allows new perspectives on life science
-    - let us see a deep connection between physics and life
-    - let us see bridges between modern medicine, modern life science, and alternative medicine and alternative life science
-  - let us see even regulation processes in the interactions in societies
-- the foundation of Nature Philosophie Yoga (NaPhil-Yoga)
-  - based on the insights of the ›Tension Game of Life‹ and the ›fractal Quantum Flow Theory‹
+- a new foundation of physics [Fractal Quantum Flow Theory](#frqft)
+- a new foundation of life
+- the foundation of Nature Philosophie Yoga
 - extensions of mathematics (Superial Numbers, Superial-Zahlen)
-  - defining actual endless numbers on an endless prime number product 
-  - defining analysis with actual endless numbers 
-  - representing negative numbers by sets 
   
 
 ## Find It On The Web
@@ -32,9 +14,54 @@ The New Soul Of Science Project Website is the most visible part of an initiativ
 http://www.nsosp.org
 
 
-## Fractal Quantum Flow Theory
+## Fractal Quantum Flow Theory {: #frqft }
+
+**(fraktale Quanten-Fluss-Theorie)**
 
 [Fractal Quantum Flow Theory](http://www.nsosp.org/FrQFT)
+
+- based on dynamic structural regulation processes (Regelprozessen) to create, stabilise, and develop all existences
+- includes a new foundation of life
+  - based on a clear definition of consciousness in this setting
+- fulfils the unification of physics
+  - including quantum gravity
+
+
+## Tension Game Of Life
+
+**(Spannungsspiel des Lebens)**
+
+[Tension Game Of Life](http://www.nsosp.org/spannung)
+
+- fully based on regulation processes (Regelprozessen)
+- has a top level regulation process for each individual life (mindfulness process, Achtsamkeitsprozess)
+  - clarifies the implications of psychosomatics, the inner relations between our psyche and our body
+  - allows deep insights in psychological problems 
+  - allows a new definition of our soul and therefore solves the soul-body-problem
+- allows new perspectives on life science
+  - let us see a deep connection between physics and life
+  - let us see bridges between modern medicine, modern life science, and alternative medicine and alternative life science
+- let us see even regulation processes in the interactions in societies
+
+
+## Nature Philosophy Yoga (NaPhil-Yoga)
+
+**(Naturphilosophie-Yoga)**
+
+[Nature Philosophy Yoga](http://www.NaPhil-Yoga.org)
+
+- based on the insights of the ›Tension Game Of Life‹ and the ›Fractal Quantum Flow Theory‹
+
+
+## Superial Numbers
+
+**(Superial-Zahlen)**
+
+[Superial Numbers](http://www.nsosp.org/de/Superial-Zahlen)
+
+- defining actual endless numbers on an endless prime number product 
+- defining analysis with actual endless numbers 
+- representing negative numbers by sets 
 
 
 ## License
