@@ -18,7 +18,7 @@ The New Soul Of Science Project: [http://www.nsosp.org](http://www.nsosp.org)
 
 **(fraktale Quanten-Fluss-Theorie)**
 
-On The Web: [Fractal Quantum Flow Theory](http://www.nsosp.org/FrQFT)
+On the web: [Fractal Quantum Flow Theory](http://www.nsosp.org/FrQFT)
 
 - based on dynamic structural regulation processes (Regelprozessen) to create, stabilise, and develop all existences
 - includes a new foundation of life ([Tension Game Of Life](#tension-game-of-life))
@@ -31,10 +31,10 @@ On The Web: [Fractal Quantum Flow Theory](http://www.nsosp.org/FrQFT)
 
 **(Spannungsspiel des Lebens)**
 
-On The Web: [Tension Game Of Life](http://www.nsosp.org/spannung)
+On the web: [Tension Game Of Life](http://www.nsosp.org/spannung)
 
 - fully based on regulation processes (Regelprozessen)
-- based on a definition of consciousness in this setting
+- based on a definition of consciousness in the setting of [Fractal Quantum Flow Theory](http://www.nsosp.org/FrQFT)
 - has a top level regulation process for each individual life (mindfulness process, Achtsamkeitsprozess)
   - clarifies the implications of psychosomatics, the inner relations between our psyche and our body
   - allows deep insights in psychological problems 
@@ -49,16 +49,16 @@ On The Web: [Tension Game Of Life](http://www.nsosp.org/spannung)
 
 **(Naturphilosophie-Yoga)**
 
-On The Web: [Nature Philosophy Yoga](http://www.NaPhil-Yoga.org)
+On the web: [Nature Philosophy Yoga](http://www.NaPhil-Yoga.org)
 
-- based on the insights of the ›Tension Game Of Life‹ and the ›Fractal Quantum Flow Theory‹
+- based on the insights of the [Tension Game Of Life](http://www.nsosp.org/spannung) and the [Fractal Quantum Flow Theory](http://www.nsosp.org/FrQFT)
 
 
 ## Superial Numbers
 
 **(Superial-Zahlen)**
 
-On The Web: [Superial Numbers](http://www.nsosp.org/de/Superial-Zahlen)
+On the web: [Superial Numbers](http://www.nsosp.org/de/Superial-Zahlen)
 
 - defining actual endless numbers on an endless prime number product 
 - defining analysis with actual endless numbers 
