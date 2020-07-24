@@ -27,9 +27,14 @@ The New Soul Of Science Project Website is the most visible part of an initiativ
   - representing negative numbers by sets 
   
 
-## On The Web
+## Find It On The Web
 
 http://www.nsosp.org
+
+
+## Fractal Quantum Flow Theory
+
+[http://www.nsosp.org/FrQFT](Fractal Quantum Flow Theory)
 
 
 ## License
