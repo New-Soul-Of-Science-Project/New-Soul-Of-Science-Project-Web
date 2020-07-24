@@ -5,13 +5,13 @@ The New Soul Of Science Project Website is the most visible part of an initiativ
 
 - a new foundation of physics ([Fractal Quantum Flow Theory](#fractal-quantum-flow-theory))
 - a new foundation of life ([Tension Game Of Life](#tension-game-of-life))
-- the foundation of [Nature Philosophie Yoga](#nature-philosophie-yoga-naphil-yoga)
-- extensions of mathematics ([Superial Numbers](#superial-numbers))
+- the foundation of [Nature Philosophy Yoga](#nature-philosophy-yoga-naphil-yoga)
+- actual endless extensions of mathematics ([Superial Numbers](#superial-numbers))
   
 
 ## On The Web
 
-The New Soul Of Science Project: http://www.nsosp.org
+The New Soul Of Science Project: [http://www.nsosp.org](http://www.nsosp.org)
 
 
 ## Fractal Quantum Flow Theory
@@ -21,10 +21,10 @@ The New Soul Of Science Project: http://www.nsosp.org
 On The Web: [Fractal Quantum Flow Theory](http://www.nsosp.org/FrQFT)
 
 - based on dynamic structural regulation processes (Regelprozessen) to create, stabilise, and develop all existences
-- includes a new foundation of life
-  - based on a clear definition of consciousness in this setting
+- includes a new foundation of life ([Tension Game Of Life](#tension-game-of-life))
+  - based on a definition of consciousness in this setting
 - fulfils the unification of physics
-  - including quantum gravity
+  - including [Quantum Gravity](http://www.nsosp.org/de/Quanten-Fluss-Theorie/Quantengravitation-der-Elementarteilchen_de.php)
 
 
 ## Tension Game Of Life
@@ -34,6 +34,7 @@ On The Web: [Fractal Quantum Flow Theory](http://www.nsosp.org/FrQFT)
 On The Web: [Tension Game Of Life](http://www.nsosp.org/spannung)
 
 - fully based on regulation processes (Regelprozessen)
+- based on a definition of consciousness in this setting
 - has a top level regulation process for each individual life (mindfulness process, Achtsamkeitsprozess)
   - clarifies the implications of psychosomatics, the inner relations between our psyche and our body
   - allows deep insights in psychological problems 
@@ -66,6 +67,6 @@ On The Web: [Superial Numbers](http://www.nsosp.org/de/Superial-Zahlen)
 
 ## License
 
-© Copyright 1988–2020 of the New Science Of Soul Project Website by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0 CC iconby iconnd icon
+© Copyright 1988–2020 of the [New Science Of Soul Project](http://www.nsosp.org) Website by [Wolfgang Huß und Media Line Digital e.K.](http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten) is licensed under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0) ![CC](/share/images/Copyright/cc.7a093a7d.svg) ![iconby](/share/images/Copyright/by.f6aa22c4.svg) ![iconnd](/share/images/Copyright/nd.64831b7b.svg)
 
 Unless required by applicable law or agreed to in writing, the content of this repository is published under the above license is distributed on an "AS IS" basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
