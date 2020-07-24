@@ -67,6 +67,6 @@ On the web: [Superial Numbers](http://www.nsosp.org/de/Superial-Zahlen)
 
 ## License
 
-© Copyright 1988–2020 of the [New Science Of Soul Project](http://www.nsosp.org) website by [Wolfgang Huß und Media Line Digital e.K.](http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten) is licensed under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0). <!-- ![CC](/share/images/Copyright/cc.7a093a7d.svg) ![iconby](/share/images/Copyright/by.f6aa22c4.svg) ![iconnd](/share/images/Copyright/nd.64831b7b.svg) -->
+© Copyright 1988–2020 of the [New Science Of Soul Project](http://www.nsosp.org) website by [Wolfgang Huß and Media Line Digital e.K.](http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten) is licensed under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0). <!-- ![CC](/share/images/Copyright/cc.7a093a7d.svg) ![iconby](/share/images/Copyright/by.f6aa22c4.svg) ![iconnd](/share/images/Copyright/nd.64831b7b.svg) -->
 
 Unless required by applicable law or agreed to in writing, the content of this repository is published under the above license is distributed on an "AS IS" basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
