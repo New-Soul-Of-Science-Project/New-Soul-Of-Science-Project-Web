@@ -3,7 +3,7 @@
 
 The New Soul Of Science Project Website is the most visible part of an initiative to find new foundations on several themes in science. Our goal is a new nature philosophy (philosophies) and new views on mathematics that leads to:
 
-- a new foundation of physics [Fractal Quantum Flow Theory](#frqft)
+- a new foundation of physics [Fractal Quantum Flow Theory](#fractal-quantum-flow-theory)
 - a new foundation of life
 - the foundation of Nature Philosophie Yoga
 - extensions of mathematics (Superial Numbers, Superial-Zahlen)
@@ -14,7 +14,7 @@ The New Soul Of Science Project Website is the most visible part of an initiativ
 http://www.nsosp.org
 
 
-## Fractal Quantum Flow Theory {: #frqft }
+## Fractal Quantum Flow Theory
 
 **(fraktale Quanten-Fluss-Theorie)**
 
