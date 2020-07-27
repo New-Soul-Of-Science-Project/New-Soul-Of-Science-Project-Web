@@ -1,5 +1,5 @@
 <?php   $Glo_PathRel_back = '../';
-        include $Glo_PathRel_back.'../share/php/FrQFT.php'; ?>
+        include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
 
 
 <?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:FrQFT:WasIstPhysik'); ?>
@@ -45,7 +45,7 @@
                       'Ich werde nachfolgend einige Bezüge zur Philosophie, zu den heutigen physikalischen Beobachtungen und dem Wissen der heutigen Physik sowie zur hier entwickelten neuen Physik einfließen lassen,'."\n".
                     'damit die philosophischen Überlegungen nicht im rein theoretischen Rahmen quasi in der Luft schweben.'."\n".
                     'Ich tue dies in Form von Aufklapptexten, um den Haupttext kürzer und übersichtlicher zu halten.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:Vortext:XXX', text =>
                       
                 'Hypothesen')),
                   //array( 'notice', array( Display => 'invis', text => array(
@@ -116,12 +116,12 @@
                     'Mir sind diesbezüglich viele Parallelen zwischen den Systemen der Physik und denen der Biologie aufgefallen.'."\n",
                       'Regelprozesse sind auch deshalb ein sinnvolles oder gar notwendiges Konzept, um die Bestandteile der Dinge zu organisieren, weil es sich immer um dynamische Bestandteile handeln muss, '."\n".
                     'wie wir gleich sehen werden, und weil diese Bestandteile der Dinge bei fortschreitender Zerlegung immateriell werden.\\color{*Bearb}{(Zum Immateriell-Werden: Verweis, auch auf Gaßner Gespräch)}'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:Vortext:XXX', text =>
                       
                 'Hintergründe der Hypothesen')),
                   array( 'text', array( text => array(
                     'Im Nachfolgenden möchte ich die Hintergründe der Hypothesen analysieren und dadurch etwas näher beleuchten, um diese verständlicher zu machen und ihre Konsequenzen zu verdeutlichen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:Vortext:WarumDynamStrukt', text =>
                       
                 'Warum müssen es dynamische Strukturen sein?')),
                   array( 'text', array( text => array(
@@ -154,7 +154,7 @@
                     'Wir versuchen, die größeren Zusammenhänge aus den einfacheren zu verstehen.'."\n".
                     'So wird aus etwas eher kompliziertem etwas eher komplexes\\color{*Bearb}{(Verweis)}.'."\n".
                     'Dies ist unter Umständen schwierig, kaum möglich oder gar unmöglich und man hat es mit Emergenz\\color{*Bearb}{(Verweis)} zu tun.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:Vortext:XXX', text =>
                       
                 'Warum ergeben sich konstante Geschwindigkeiten der Bestandteile der Dinge?')),
                   /*array( 'notice', array( Display => 'invis', text => array(
@@ -172,7 +172,7 @@
                     'nicht funktionieren würde, wie gerade erklärt und nachfolgend weiter verdeutlicht wird.'."\n".
                     'Damit wäre die Zuordnung der Bestandteile zu den Dingen nicht klar und der Welle-Teilchen-Dualismus käme nicht zustande.'."\n".
                     '\\hidden{Desweiteren handelt es sich offenbar bei den Teilchen dieses Zerlegungsprozesses um immer „reinere“ Wellen, die in einer Art von Medium laufen. Die Wellennatur ergibt sich eben aus der Bewegung im Djet- und Neheh-Anteil der Teilchen. Solche Wellen neigen zu konstanten Geschwindigkeiten in Bezug auf ihre Art von Medium, die von der Stärke der inneren Wechselwirkungen des Mediums bestimmt sind.}'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:Vortext:XXX', text =>
                       
                 'Die Veränderung der Strukturen der Dinge hat zwei zeitliche Aspekte')),
                   /*array( 'notice', array( Display => 'invis', text => array(
@@ -297,7 +297,7 @@
                     'Die recht freie Bewegung der zusammenhängenden Struktur der Elementarteilchen durch den Raum lässt sie als einzelne Dinge erscheinen und verleiht ihnen so ihre Teilchennatur.'."\n"))),
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:Vortext:Symmetriebrueche-Pole-und-Wechselwirkungen', text =>
                       
                 'Symmetriebrüche, Pole und Wechselwirkungen')),
                   array( 'text', array( text => array(
@@ -344,7 +344,7 @@
                     'Wenn jedes Ding aus Bestandteilen besteht, dann müssen diese Bestandteile, weil sie auch Dinge sind, wieder aus noch kleineren Bestandteilen bestehen.'."\n".
                     'Dies nenne ich das \\italic{fraktale Existenzprinzip}.'."\n".
                     'Fraktal deshalb, weil es ein hierarchisches Prinzip ist, deren Hierarchieebenen selbstähnlich sind, also immer wieder dem gleichen Prinzip gehorchen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:Vortext:XXX', text =>
                       
                 'Fraktaler Djet-Neheh-Dualismus')),
                   array( 'text', array( text => array(
@@ -367,7 +367,7 @@
                       'Auch beobachten wir, dass nur einige unserer Elementarteilchensorten sich mit konstanter Geschwindigkeit bewegen.'."\n".
                     'Wir werden die Ursache hierfür später im mehr oder weniger komplexen Aufbau der Elementarteilchensorten finden, in der Struktur ihrer Fundamentalteilchen-Strings.'."\n"))),
                     ))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:Vortext:XXX', text =>
                       
                 'Physik modellieren heißt, die Dinge nur bis zu einem gewissen Grad zu zerlegen')),
                   array( 'text', array( text => array(
@@ -414,7 +414,7 @@
                     'Überlegungen und Erkenntnisse zu vermitteln.'."\n".
                     'Dazu kommt auch, dass die Motivation, sich in diese Welt der Strukturen hineinzudenken, entscheidend von deren realen Bezügen abhängt.'."\n".
                     'Dies gilt ganz besonders, wenn sich neue Physik auftut, also die Möglichkeit, bisher unerklärte Phänomene erklärbar zu machen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:Vortext:XXX', text =>
                       
                 '\\color{*CloserDesc}{Übergang zur heute beobachteten Physik}')),
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
@@ -467,7 +467,7 @@
                     'Das \\jump{OM:FrQFT:Vakuum}{Vakuum} besteht demnach im Grunde aus einer großen Menge an einfach strukturierten, nicht elektromagnetisch polarisierten, lichtähnlichen Fundamentalteilchen-Strings.'."\n".
                     'Unter bestimmten Umständen können sich diese einfachen Fundamentalteilchen-Strings vorübergehend zu komplexeren Strukturen der bekannten Elementarteilchen zusammenfügen.'."\n".
                     'So kommt es zu den Vakuum-Fluktuationen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:Vortext:XXX', text =>
                       
                 '\\color{*CloserDesc}{Neue Physik}')),
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
@@ -498,7 +498,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),*/
-                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:Vortext:XXX', text =>
                       
                 '\\color{*CloserDesc}{Thermodynamik}')),
                   array( 'text', array( TextColor => '*CloserDesc', text => array(

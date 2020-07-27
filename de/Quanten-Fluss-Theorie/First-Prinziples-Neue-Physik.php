@@ -1,5 +1,5 @@
 <?php   $Glo_PathRel_back = '../';
-        include $Glo_PathRel_back.'../share/php/FrQFT.php'; ?>
+        include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
 
 
 <?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:FrQFT:FirstPrinziples'); ?>
@@ -84,7 +84,7 @@
                         'Welche Bestandteile zu einem Ding gehören, ob sie im Zusammenhang stehen und daher Bestandteile sind, zeigt sich immer daran, wie sie sich zueinander – in dem Ding – bewegen.',
                     ))),
                   array( 'text', array( text => array(
-                    'Das Existenzprinzip des Djet-Neheh-Dualismus bedeutet dabei im Bezug auf die Bewegung der Bestandteile:'."\n"))),
+                    'Das \\jump{OM:FrQFT:WasIstPhysik:Vortext:Djet-Neheh-Dualismus}{Existenzprinzip des Djet-Neheh-Dualismus} bedeutet dabei im Bezug auf die Bewegung der Bestandteile:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Neheh-Aspekt (Ordnung): Kreisen die Bestandteile umeinander, dann gehören sie zum selben Ding.',
                         'Djet-Aspekt (Chaos): Bewegen sie sich unabhängig voneinander, dann gehören sie nicht zum selben Ding.',
@@ -97,12 +97,13 @@
                   '')),
                   array( 'text', array( text => array(
                     'Die Dinge haben immer Eigenschaften und diese ergeben sich ausschließlich aus der dynamischen Struktur ihrer Bestandteile.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinziples:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinziples:Vortext:Dynamikprinzip', text =>
                                            
                 'Dynamikprinzip', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Physik macht nur Sinn, wenn sich die Eigenschaften der Dinge verändern können, ihre Bestandteile also in einem dynamischen Zusammenhang stehen und sich daher immer bewegen.'."\n"))),
+                    'Physik macht nur Sinn, wenn sich die Eigenschaften der Dinge verändern können, ihre Bestandteile also in einem dynamischen Zusammenhang stehen und sich'."\n".
+                    'daher \\jump{OM:FrQFT:WasIstPhysik:Vortext:WarumDynamStrukt}{immer bewegen}.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinziples:Vortext:XXX', text =>
                                            
                 'Vereinfachungsprinzip', subline =>
@@ -154,12 +155,13 @@
                     'XXX'."\n"))),
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinziples:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinziples:Vortext:Wechselwirkungsprinzip', text =>
                                            
                 'Wechselwirkungsprinzip', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Jede Wechselwirkung entsteht aus einem Symmetriebruch, der Pole erzeugt, die miteinander in Wechselwirkung stehen.'."\n"))),
+                    'Jede Wechselwirkung entsteht aus einem \\jump{OM:FrQFT:WasIstPhysik:Vortext:Symmetriebrueche-Pole-und-Wechselwirkungen}{Symmetriebruch}, der Pole erzeugt,'."\n".
+                    'die miteinander in \\jump{OM:FrQFT:WasIstPhysik:Vortext:Symmetriebrueche-Pole-und-Wechselwirkungen}{Wechselwirkung} stehen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinziples:Vortext:XXX', text =>
                                            
                 'Regelprozess-Prinzip', subline =>

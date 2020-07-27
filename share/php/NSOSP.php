@@ -34,7 +34,7 @@
   
   
   
-  include $Glo_PathRel_back.'../share/php/Science_v01_005.php';
+  include $Glo_PathRel_back.'../share/php/Science.php';
 
   $Glo_g_TextAlign = 'block';
   $Glo_g_Intent = '2em';
@@ -1008,6 +1008,8 @@
                                               'OM:FrQFT:FirstPrinziples:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
                                                 'OM:FrQFT:FirstPrinziples:Vortext:Existenzprinzip' => array( headline_text => 'Das Existenzprinzip', headline_text_short => 'Das Existenzprinzip'),
+                                                'OM:FrQFT:FirstPrinziples:Vortext:Dynamikprinzip' => array( headline_text => 'Dynamikprinzip', headline_text_short => 'Dynamikprinzip'),
+                                                'OM:FrQFT:FirstPrinziples:Vortext:Wechselwirkungsprinzip' => array( headline_text => 'Wechselwirkungsprinzip', headline_text_short => 'Wechselwirkungsprinzip'),
                                             ),
                                      ),
                               'OM:FrQFT:Gravitation' =>
@@ -1440,11 +1442,13 @@
                                               'OM:FrQFT:WasIstPhysik:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
                                                          
+                                                'OM:FrQFT:WasIstPhysik:Vortext:WarumDynamStrukt' => array( headline_text => 'Warum müssen es dynamische Strukturen sein?', headline_text_short => 'Warum müssen es dynamische Strukturen sein?'),
                                                 'OM:FrQFT:WasIstPhysik:Vortext:Bestandteile-Immer-Aehnlicher' => array( headline_text => 'Warum werden sich die Bestandteile immer ähnlicher, je weiter man die Dinge zerlegt?', headline_text_short => 'Warum werden sich die Bestandteile immer ähnlicher, je weiter man die Dinge zerlegt?'),
                                                 'OM:FrQFT:WasIstPhysik:Vortext:Fig-ExistOhneZerf' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:FrQFT:WasIstPhysik:Vortext:Fig-ExistOhneStarr' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:FrQFT:WasIstPhysik:Vortext:Fig-Elapson-Existenzprinzip' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:FrQFT:WasIstPhysik:Vortext:Djet-Neheh-Dualismus' => array( headline_text => 'Der Djet-Neheh-Dualismus und das Existenzprinzip \\\\ \\color{*TitleAdd}{– der Welle-Teilchen-Dualismus}', headline_text_short => 'Djet-Neheh-Dualismus und Existenzprinzip'),
+                                                'OM:FrQFT:WasIstPhysik:Vortext:Symmetriebrueche-Pole-und-Wechselwirkungen' => array( headline_text => 'Symmetriebrüche, Pole und Wechselwirkungen', headline_text_short => 'Symmetriebrüche, Pole und Wechselwirkungen'),
                                                 'OM:FrQFT:WasIstPhysik:Vortext:Fraktales-Existenzprinzip' => array( headline_text => 'Das Existenzprinzip ist ein fraktales Prinzip', headline_text_short => 'Fraktales Existenzprinzip'),
                                                 'OM:FrQFT:WasIstPhysik:Vortext:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
                                                 'OM:FrQFT:WasIstPhysik:Vortext:Ani-VakuumElapson' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),

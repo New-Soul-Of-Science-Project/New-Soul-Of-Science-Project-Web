@@ -1,5 +1,5 @@
 <?php   $Glo_PathRel_back = '../';
-        include $Glo_PathRel_back.'../share/php/FrQFT.php'; ?>
+        include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
 
 
 <?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:NPYo:Spiritualitaet-Psychologie'); ?>
@@ -8,7 +8,7 @@
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:NPYo:HaTha'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:NPYo:ExistenzLeichtigkeit'); ?>
 
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
@@ -17,6 +17,8 @@
                     // '(\\bold{XXX:})',
                     '• Siehe Meetup zu diesem Thema: \\italic{\\jumpname{OM:NPYo:Meetup-LGBT-Spiritual-Hamburg}}, Veranstaltung vom 09.03.2020',
                     '• Unsere Pole kommunizieren lassen bedeutet uns wieder mit uns selber verbinden, ReConnection, siehe geplante Seite. Das bedeutet auch Yoga – Joch, Zuggeschirr, conjugare, vereinigen, zusammenschließen, sich verbinden.',
+                    '– Einer dieser Pole ist unser sogenanntes Ego.',
+                    '• Spiritualität bedeutet auch, sich tiefer mit unserer Natur, mit den Grundlagen unseres Lebens und unserer Welt, zu beschäftigen, siehe \\italic{\\jumpname{OM:NPYo:ExistenzLeichtigkeit}}.',
                     ))),
                       
                   array( 'text', array( text => array(

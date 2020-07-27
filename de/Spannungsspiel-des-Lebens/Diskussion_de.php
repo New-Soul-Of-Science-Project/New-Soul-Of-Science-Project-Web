@@ -1,5 +1,5 @@
 <?php   $Glo_PathRel_back = '../';
-        include $Glo_PathRel_back.'../share/php/FrQFT.php'; ?>
+        include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
 
 
 <?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:SpaLeb:Diskussion'); ?>

@@ -1,5 +1,5 @@
 <?php   $Glo_PathRel_back = '../';
-        include $Glo_PathRel_back.'../share/php/FrQFT.php'; ?>
+        include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
 
 
 <?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:NPYo:ExistenzLeichtigkeit'); ?>
@@ -22,9 +22,9 @@
                     'Existenz und Leichtigkeit zusammen zu bringen kann auf den ersten Blick als widersinnig erscheinen.'."\n".
                     'Vielen Menschen kommt ihr Leben, ihre Existenz eher schwer oder schwierig vor.'."\n",
                       'Doch genau im Verständnis unserer Existenz liegt auch unsere Chance, uns in Richtung Leichtigkeit zu entwickeln.'."\n".
-                    'Wir können so verstehen, dass der Spruch \\quote{Go with the flow.}, also \\quote{Gehe mit dem Fluss.}, keine bedeutungslose Plattitüde sein muss,'."\n".
+                    'Wir können so verstehen, dass der Spruch \\quote{Go with the flow.}, also \\quote{Bewege dich mit dem Fluss.}, keine bedeutungslose Plattitüde sein muss,'."\n".
                     'einfach so dahin gesagt.'."\n",
-                      'Zur Plattitüde kann diese Redewendung dadurch werden, wenn sie ohne tiefere Gedanken und Einsichten so dahingesagt wird; sie oberflächlich bleibt.'."\n".
+                      'Zur Plattitüde kann diese Redewendung dadurch werden, wenn sie ohne \\jump{OM:NPYo:Spiritualitaet-Psychologie}{tiefere Gedanken und Einsichten} so dahingesagt wird; sie oberflächlich bleibt.'."\n".
                     'Wenn wir einen Mitmenschen damit quasi abwimmeln und uns nicht tiefer mit seinen Beschwerlichkeiten auseinandersetzen, deren tiefere'."\n".
                     'Zusammenhänge mit (natur-)philosophischen Prinzipien nicht ergründen und zur möglichen Lösung der Probleme heranziehen.'."\n",
                       'Die Zusammenhänge, die mir aufgefallen sind, möchte ich nun beleuchten.'."\n"))),
@@ -41,12 +41,15 @@
                   array( 'text', array( text => array(
                     'Das Yin-Yang-Symbol, das Taijitu, versinnbildlicht das naturphilosophische \\jump{XXX}{Existenzprinzip} meines \\jump{XXX}{›Spannungsspiels des Lebens‹}'."\n".
                     'und meiner neuen Physik der \\jump{XXX}{›fraktalen Quanten-Fluss-Theorie‹}.'."\n".
-                    'Das Existenzprinzip ist verbunden mit dem von mir entdeckten \\jump{XXX}{Djet-Neheh-Dualismus} und der \\jump{XXX}{Farbpolarisation} der Quantenphysik.'."\n",
+                    'Das Existenzprinzip ist verbunden mit dem von mir entdeckten \\jump{OM:FrQFT:FirstPrinziples:Vortext:Existenzprinzip}{Djet-Neheh-Dualismus}'."\n".
+                    'und der \\jump{OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung}{Farbpolarisation} der Quantenphysik.'."\n",
                       'Demnach kommt zur Existenz, was aus Bestandteilen gebildet wird, die in einem Zusammenhang stehen.'."\n".
-                    'Da die Bestandteile aus prinzipiellen Gründen am Ende im Kleinen immer in Bewegung sein müssen – sie fließen beständig –, rotieren Bestandteile, die in einem Zusammenhang stehe,'."\n".
-                    'umeinander, in einer Ordnung.'."\n".
+                    'Da die Bestandteile aus prinzipiellen Gründen am Ende im Kleinen \\jump{OM:FrQFT:FirstPrinziples:Vortext:Dynamikprinzip}{immer in Bewegung} sein '."\n".
+                    'müssen – sie fließen beständig –, rotieren Bestandteile, die in einem Zusammenhang stehe, umeinander, in einer Ordnung.'."\n".
                     'Stehen sie nicht in einem Zusammenhang, so bewegen sie sich geradlinig und damit chaotisch durcheinander.'."\n",
-                      'Der Zusammenhang entsteht durch die Polarisation der Bestandteile.'."\n",
+                      'Der Zusammenhang entsteht durch die Polarisation der Bestandteile.'."\n".
+                    'Physikalisch beruht die Polarisation auf einem sogenannten \\jump{OM:FrQFT:FirstPrinziples:Vortext:Wechselwirkungsprinzip}{Symmetriebruch},'."\n".
+                    'der \\jump{OM:FrQFT:FirstPrinziples:Vortext:Wechselwirkungsprinzip}{Kräfte} zwischen den Polen entstehen lässt.'."\n",
                       'Alles gerade beschriebene, bis auf das Chaos, ist im Yin und Yang dargestellt.'."\n".
                     'Wir erkennen eine räumliche Polarisation, symbolisiert durch schwarz und weiß oder männlich und weiblich, die sich fraktal gegenseitig enthält.'."\n".
                     'Die beiden Pole scheinen sich in einer angedeuteten Bewegung beständig im Fluss zu umkreisen, wodurch die Struktur stabilisiert ist.'."\n".
@@ -62,16 +65,12 @@
                 'Qi und Dao – der Link zur Physik', subline =>
                   'Wirkungsquanten als Energieeinheiten und das Existenzprinzip des Djet-Neheh-Dualismus als ordnendes „Gesetzt“')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'Der Djet-Neheh-Dualismus als Dao, als ordnendes „Gesetzt“ oder als Prinzip der Balance zwischen Ordnung und Chaos, zwischen Stabilität, Fortentwicklung einer Transmutation und Zerstörung.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Ich würde das Dao mit dem Djet-Neheh-Dualismus identifizieren, als das, was immer schon da war, als ordnendes „Gesetzt“'."\n".
+                    'oder als Prinzip der Balance zwischen Ordnung und Chaos, zwischen Stabilität, Fortentwicklung einer Transmutation und Zerstörung.'."\n",
+                      'Das Ur-Qi, das Yuanqi, das Eine, verwirklicht oder realisiert das Prinzip des Dao in der Welt.'."\n".
+                    'Das Qi als Energie stellt die Dynamik der Weltmatrix und das Potenzial des Zusammenhangs der Dinge zur Verfügung und bringt die immateriellen'."\n".
+                    'und dann auch die materiellen Dinge in unglaublicher Mannigfaltigkeit zur konkreten Existenz.'."\n",
+                      'All dies tut das Qi nach den Prinzipien des Dao und damit nach denen des Djet-Neheh-Dualismus.'."\n"))),
                       
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
                     array_merge( $NPYo_g_figure_ary_IGingXiantian, array( name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-IGingXiantian',
@@ -273,7 +272,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:XXX'),
+                      array(  jump_name => 'OM:NPYo:Spiritualitaet-Psychologie'),
                     )),
                 )
           ); ?>

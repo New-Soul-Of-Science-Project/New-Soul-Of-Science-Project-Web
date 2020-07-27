@@ -1,6 +1,6 @@
 <?php
   
-  // #: Name:  "Science_v01_005.php"
+  // #: Name:  "Science.php"
   
   
   // #: Stand: 06.06.2020, 19:00h
@@ -109,7 +109,7 @@
   
   
   
-  include $Glo_PathRel_back.'../share/php/Tools_v01_005.php';
+  include $Glo_PathRel_back.'../share/php/Tools.php';
 
   
 
