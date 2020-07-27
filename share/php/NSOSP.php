@@ -1,6 +1,6 @@
 <?php
   
-  // #: Name:  "FrQFT.php"
+  // #: Name:  "NSOSP.php"
   
   
   // #: Stand: 25.02.2019
