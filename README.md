@@ -12,12 +12,12 @@ The New Soul Of Science Project Website is the most visible part of an initiativ
 - actual endless extensions of mathematics ([Superial Numbers](#superial-numbers))
   
 
-## ![iconnd](/de/New-Soul-Of-Science-Project/favicon/favicon-192.png) On The Web
+## ![The New Soul Of Science Project - Favicon](/de/New-Soul-Of-Science-Project/favicon/favicon-32.png) On The Web
 
 The New Soul Of Science Project: [http://www.nsosp.org](http://www.nsosp.org)
 
 
-## Fractal Quantum Flow Theory
+## ![Fractal Quantum Flow Theory - Favicon](/de/Quanten-Fluss-Theorie/favicon/favicon-32.png) Fractal Quantum Flow Theory
 
 **(fraktale Quanten-Fluss-Theorie)**
 
