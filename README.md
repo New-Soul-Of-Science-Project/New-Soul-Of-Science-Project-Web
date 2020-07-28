@@ -12,7 +12,7 @@ The New Soul Of Science Project Website is the most visible part of an initiativ
 - actual endless extensions of mathematics ([Superial Numbers](#superial-numbers))
   
 
-## On The Web
+## ![iconnd](/share/images/Copyright/nd.64831b7b-smal-for-GitHub.png) On The Web
 
 The New Soul Of Science Project: [http://www.nsosp.org](http://www.nsosp.org)
 
