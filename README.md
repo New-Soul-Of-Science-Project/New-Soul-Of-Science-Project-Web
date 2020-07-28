@@ -1,3 +1,6 @@
+![CC](/share/images/NSOSP/NSOSP_header_v01_6_1280x640_72dpi_en-GitHub.jpg)
+
+
 # The New Soul Of Science Project Website
 **A New Approach To Physics, Nature Philosophy, Life, Psychosomatics, Society, And Mathematics – As Website**
 
