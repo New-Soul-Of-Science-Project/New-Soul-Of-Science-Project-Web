@@ -262,6 +262,7 @@
   $NPYo_g_footnote_text_Hermetik                = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Hermetik:2019}.';
   $NPYo_g_footnote_text_PhilosophieDesYoga      = 'Vgl. \\cite{Galke:PhilosophieDesYoga:2017}.';
   $NPYo_g_footnote_text_Trimurti                = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Trimurti:2016}.';
+  $NPYo_g_footnote_text_YinUndYang              = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:YinUndYang:2019}.';
   $NPYo_g_footnote_text_ZeitDjetNeheh           = '\\const{FrQFT_g_footnote_text_ZeitDjetNeheh}';
 
   

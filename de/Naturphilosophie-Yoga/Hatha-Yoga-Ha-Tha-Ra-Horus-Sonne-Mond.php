@@ -138,7 +138,7 @@
                 'Yin-Yang-Prinzip des Djet-Neheh-Dualismus', subline =>
                   'In sich verschachteltes Prinzip von männlich und weiblich')),
                   array( 'text', array( text => array(
-                    'So gesehen handelt es sich hier um ein Yin-Yang-Prinzip\\footnote{Internet: \\\\ Vgl. \\cite{wiki:YinUndYang:2019}.}.'."\n".
+                    'So gesehen handelt es sich hier um ein Yin-Yang-Prinzip\\footnote{\\const{NPYo_g_footnote_text_YinUndYang}}.'."\n".
                     'Es handelt sich um eine Balance der Fortentwicklung, also um eine Balance zwischen der Stabilität und der latenten Zerstörung der Dinge, also um ihre Transformation.'."\n",
                       'Es geht um ein Prinzip des Zusammenhangs der Bestandteile der Dinge, das die Dinge erschafft, verändert oder „vernichtet“.'."\n".
                     'So geht es um nicht weniger als das Schicksal der Dinge und der Welt.'."\n".

@@ -21,6 +21,7 @@
                                           'wiki:HermesTrismegistos:2019',
                                           'wiki:Hermetik:2019',
                                           'wiki:Holon:2015',
+                                          'wiki:IGing:2020',
                                           'wiki:LateralisationDesGehirns:2016',
                                           'wiki:Naturphilosophie:2015',
                                           'wiki:Philosophie:2015',

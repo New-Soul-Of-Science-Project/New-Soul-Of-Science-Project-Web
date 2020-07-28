@@ -39,8 +39,9 @@
                 'Yin und Yang oder Taiji (Tai Chi)', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Das Yin-Yang-Symbol, das Taijitu, versinnbildlicht das naturphilosophische \\jump{XXX}{Existenzprinzip} meines \\jump{XXX}{›Spannungsspiels des Lebens‹}'."\n".
-                    'und meiner neuen Physik der \\jump{XXX}{›fraktalen Quanten-Fluss-Theorie‹}.'."\n".
+                    'Das Yin-Yang-Symbol\\footnote{\\const{NPYo_g_footnote_text_YinUndYang}}, das Taijitu\\color{*Bearb}{(Verweis)}, versinnbildlicht das naturphilosophische'."\n".
+                    '\\jump{OM:FrQFT:FirstPrinziples:Vortext:Existenzprinzip}{Existenzprinzip} des \\jump{OM:SpaLeb:Home}{›Spannungsspiels des Lebens‹}'."\n".
+                    'und der neuen Physik der \\jump{OM:FrQFT:Home}{›fraktalen Quanten-Fluss-Theorie‹}.'."\n".
                     'Das Existenzprinzip ist verbunden mit dem von mir entdeckten \\jump{OM:FrQFT:FirstPrinziples:Vortext:Existenzprinzip}{Djet-Neheh-Dualismus}'."\n".
                     'und der \\jump{OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung}{Farbpolarisation} der Quantenphysik.'."\n",
                       'Demnach kommt zur Existenz, was aus Bestandteilen gebildet wird, die in einem Zusammenhang stehen.'."\n".
@@ -82,12 +83,14 @@
                 'Acht Trigramme des I Ging', subline =>
                   'Der erste Symmetriebruch')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'Die Geometrie der Yin- und Yang-Linien des I Ging (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-IGingXiantian}) ergibt sich aus den Elementen'."\n".
-                    'des naturphilosophischen Djet-Neheh-Symbols des Yin und Yang (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-SymbolYinYangKoerperSeeleExistenz}):'."\n",
+                    'Das I Ging\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:IGing:2020}.} ist das sehr alte, chinesische Buch der Wandlungen.'."\n".
+                    'Auf die dort beschriebenen Wandlungen und ähnliches möchte ich in diesem Moment nicht weiter eingehen.'."\n".
+                    'Vielmehr möchte ich auf eine tiefe naturphilosophische Verbindung der Geometrie des I Ging mit unserer Existenz hinweisen:'."\n",
+                      'Zunächst ist bemerkenswert, dass die Geometrie der Yin- und Yang-Linien des I Ging (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-IGingXiantian}) sich aus den Elementen'."\n".
+                    'des naturphilosophischen Djet-Neheh-Symbols des Yin und Yang (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-SymbolYinYangKoerperSeeleExistenz}) ergibt:'."\n",
                       'Die durchgezogene Yang-Linie entspricht einer der drei senkrechten, grünen Yang-Linien des naturphilosophischen Symbols.'."\n".
                     'Die gebrochene Yin-Linie entspricht dem seitlichen Blick auf den mittleren Schnitt senkrecht durch einen der Yin-Ringe, so dass nur noch der Schnitt'."\n".
-                    'des Profils der oberen und unteren Linie des Rings mit dem Loch in der Mitte zu sehen ist.'."\n".
+                    'des Profils der oberen und unteren Linie des Rings mit dem Loch in der Mitte zu sehen ist.\\footnote{Anmerkung: Das naturphilosophische Yin-Yang-Symbol stammt von mir und aus einer Zeit, wo ich das I Ging noch nicht kannte.}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
