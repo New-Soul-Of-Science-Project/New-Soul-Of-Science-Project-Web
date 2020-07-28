@@ -6,10 +6,11 @@
 
 The New Soul Of Science Project Website is the most visible part of an initiative to find new foundations on several themes in science. Our goal is a new nature philosophy (philosophies) and new views on mathematics that leads to:
 
-- a new foundation of physics ([Fractal Quantum Flow Theory](#fractal-quantum-flow-theory))
-- a new foundation of life ([Tension Game Of Life](#tension-game-of-life))
-- the foundation of [Nature Philosophy Yoga](#nature-philosophy-yoga-naphil-yoga)
-- actual endless extensions of mathematics ([Superial Numbers](#superial-numbers))
+- a new foundation of physics ([Fractal Quantum Flow Theory](#-fractal-quantum-flow-theory))
+- a new foundation of life ([Tension Game Of Life](#-tension-game-of-life))
+- the foundation of [Nature Philosophy Yoga](#-nature-philosophy-yoga-naphil-yoga)
+- actual endless extensions of mathematics ([Superial Numbers](#-superial-numbers))
+- and more …
   
 
 ## ![The New Soul Of Science Project - Favicon](/de/New-Soul-Of-Science-Project/favicon/favicon-32.png) On The Web
@@ -24,20 +25,20 @@ The New Soul Of Science Project: [http://www.nsosp.org](http://www.nsosp.org)
 On the web: [Fractal Quantum Flow Theory](http://www.nsosp.org/FrQFT)
 
 - based on dynamic structural regulation processes (Regelprozessen) to create, stabilise, and develop all existences
-- includes a new foundation of life ([Tension Game Of Life](#tension-game-of-life))
+- includes a new foundation of life ([Tension Game Of Life](#-tension-game-of-life))
   - based on a definition of consciousness in this setting
 - fulfils the unification of physics
   - including [Quantum Gravity](http://www.nsosp.org/de/Quanten-Fluss-Theorie/Quantengravitation-der-Elementarteilchen_de.php)
 
 
-## Tension Game Of Life
+## ![Tension Game Of Life - Favicon](/de/Spannungsspiel-des-Lebens/favicon/favicon-32.png) Tension Game Of Life
 
 **(Spannungsspiel des Lebens)**
 
 On the web: [Tension Game Of Life](http://www.nsosp.org/spannung)
 
 - fully based on regulation processes (Regelprozessen)
-- based on a definition of consciousness in the setting of [Fractal Quantum Flow Theory](#fractal-quantum-flow-theory)
+- based on a definition of consciousness in the setting of [Fractal Quantum Flow Theory](#-fractal-quantum-flow-theory)
 - has a top level regulation process for each individual life ([Mindfulness Process](http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Achtsamkeitsprozess-Definition-des-Lebens.php), [Achtsamkeitsprozess](http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Achtsamkeitsprozess-Definition-des-Lebens.php))
   - clarifies the implications of psychosomatics, the inner relations between our psyche and our body
   - allows deep insights in psychological problems 
@@ -48,16 +49,16 @@ On the web: [Tension Game Of Life](http://www.nsosp.org/spannung)
 - let us see even regulation processes in the interactions in societies
 
 
-## Nature Philosophy Yoga (NaPhil-Yoga)
+## ![Nature Philosophy Yoga - Favicon](/de/Naturphilosophie-Yoga/favicon/favicon-32.png) Nature Philosophy Yoga (NaPhil-Yoga)
 
 **(Naturphilosophie-Yoga)**
 
 On the web: [Nature Philosophy Yoga](http://www.NaPhil-Yoga.org)
 
-- based on the insights of the [Tension Game Of Life](#tension-game-of-life) and the [Fractal Quantum Flow Theory](#fractal-quantum-flow-theory)
+- based on the insights of the [Tension Game Of Life](#-tension-game-of-life) and the [Fractal Quantum Flow Theory](#-fractal-quantum-flow-theory)
 
 
-## Superial Numbers
+## ![Superial Numbers - Favicon](/de/Superial-Zahlen/favicon/favicon-32.png) Superial Numbers
 
 **(Superial-Zahlen)**
 
