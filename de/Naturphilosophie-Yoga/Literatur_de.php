@@ -15,6 +15,7 @@
                                           'Assmann:DieZweiGesichterDerZeit2010',
                                           'Assmann:ZeitUndGeschichteInFruehenKulturen:2006',
                                           'Galke:PhilosophieDesYoga:2017',
+                                          'wiki:AchtTrigramme:2019',
                                           'wiki:Aeskulapstab:2019',
                                           'wiki:CogitoErgoSum:2019',
                                           'wiki:Hermesstab:2019',

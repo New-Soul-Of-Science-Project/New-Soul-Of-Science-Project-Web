@@ -90,24 +90,62 @@
                     'des naturphilosophischen Djet-Neheh-Symbols des Yin und Yang (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-SymbolYinYangKoerperSeeleExistenz}) ergibt:'."\n",
                       'Die durchgezogene Yang-Linie entspricht einer der drei senkrechten, grünen Yang-Linien des naturphilosophischen Symbols.'."\n".
                     'Die gebrochene Yin-Linie entspricht dem seitlichen Blick auf den mittleren Schnitt senkrecht durch einen der Yin-Ringe, so dass nur noch der Schnitt'."\n".
-                    'des Profils der oberen und unteren Linie des Rings mit dem Loch in der Mitte zu sehen ist.\\footnote{Anmerkung: Das naturphilosophische Yin-Yang-Symbol stammt von mir und aus einer Zeit, wo ich das I Ging noch nicht kannte.}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'des Profils der oberen und unteren Linie des Rings mit dem Loch in der Mitte zu sehen ist.\\footnote{Anmerkung: Das \\jump{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-SymbolYinYangKoerperSeeleExistenz}{naturphilosophische Yin-Yang-Symbol} ist meine intuitive Kreation und stammt aus einer Zeit, wo ich das I Ging noch nicht kannte.}'."\n",
+                      'Die in der \\jump{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-IGingXiantian}{Xiantian-Anordnung} dargestellte Verteilung der acht Trigramme\\footnote{Internet: \\\\ Vgl. \\cite{wiki:AchtTrigramme:2019}, Reihenfolge.}'."\n".
+                    'ist so angeordnet, dass sich die jeweiligen Gegenpole, die jeweils inversen Trigramme, im Kreis herum punktsymmetrisch gegenüberstehen.'."\n".
+                    'Es handelt sich also um eine kreisförmige Polarisation.'."\n",
+                      'Das klassische Yin-Yang-Symbol der Polarisation in zwei entgegengesetzte Richtungen wird hier also kreisförmig auf die Fläche erweitert.'."\n".
+                    'Oder anders ausgedrückt:'."\n".
+                    'Kreist das klassische Yin-Yang-Symbol, dann überstreift es all die Polarisationsrichtungen des I Ging der Xiantian-Anordnung.'."\n".
+                    'Die Xiantian-Anordnung des I Ging ist also eine Variante des dynamisch gedachten Yin-Yang-Symbols.'."\n"))),
+                      
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
+                    array_merge( $FrQFT_g_figure_ary_UnpolPhotFarb8Pol, array( name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-UnpolPhotFarbpol8pol',
+                                                         /* text => '' */)),
+                      )),
+                      
+                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
+                      
+                'Yin und Yang mit dem I Ging vereint', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Auch mit dem Farbkreis als farbige Darstellung der Richtungspolarisation lässt sich die Xiantian-Anordnung des I Ging veranschaulichen.'."\n".
+                    'In der \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-UnpolPhotFarbpol8pol} entsprechend acht-polig dargestellt.'."\n"))),
+                      
+                  array( 'figure',
+                    array_merge( $FrQFT_g_figure_ary_Elapson, array( name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Elapson'))),
+                      
+                  array( 'fade-in-area', array( Display => 'invis',
+                    Title => 'Animiert …', TitleVis => 'Animiert:', ParagraphList => array(
+                                                                                             
+                  array( 'figure',
+                    array_merge( $FrQFT_g_figure_ary_VakuumElapson, array( name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Ani-VakuumElapson',
+                                                         text => '\\const{FrQFT_g_text_VakuumElapson}'))),
+                      
+                    ))),
+                      
+                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
+                      
+                'Yin und Yang und I Ging in den Grundlagen der Physik', subline =>
+                  'Alle Existenz beruht auf einer Balance zwischen Stabilität und Fortentwicklung')),
+                  array( 'text', array( text => array(
+                    'Berücksichtigen wir dazu das ordnende Prinzip des Djet-Neheh-Dualismus, des Dao, beziehungsweise der Trimurti Brahma, Vishnu und Shiva,'."\n".
+                    'so können wir daraus tatsächlich das Fundament der neuen Physik und seines Vakuums rekonstruieren (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Elapson}):'."\n",
+                      'Vishnu steckt als Erhalter und Stabilisator in der Kreisbewegung der dargestellten, unpolarisierten Photonen des Vakuums, der Vakuum-Elapsonen.'."\n".
+                    'Brahma und Shiva sind Bestandteil der Translation, des Vorwärtsschraubens oder Gangs, der Helixspiralbahnen.'."\n",
+                      'Die kreisförmige Verteilung der Wirkungsquanten auf dem Ring entspricht der obigen \\jump{OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung}{Farbpolarisation}'."\n".
+                    'in der Ebene des Rings.'."\n".
+                    'Physikalisch gesehen handelt es sich hier um einen Symmetriebruch, der die Polarisation und die Wechselwirkung im Ring entstehen lässt.'."\n".
+                    'Beim unpolarisierten Photon des Vakuums handelt es sich zwar um wesentlich viel mehr als acht Ecken, aber das Prinzip,'."\n".
+                    'dass sich die gegenüberliegenden Seiten der Kreisanordnung in ihrer Polarität gegenseitig ausgleichen, ist das selbe.'."\n".
+                    'Der Wirkungsquanten-String der unpolarisierten Photonen ist daher im Sinne der Farbpolarisation der \\jump{OM:FrQFT:Quantenchromodynamik}{Quantenchromodynamik}'."\n".
+                    'in allen Richtungen zu weiß neutralisiert.'."\n",
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'In den acht Trigrammen des I Ging, in der Xiantian-Anordnung (Vgl. Wikipedia, \\jump[https://de.wikipedia.org/w/index.php?title=Acht_Trigramme&oldid=191983234]{}{Acht Trigramme}, Reihenfolge.) (siehe Abbildung XXX) findet sich im Prinzip der Symmetriebruch der Wirkungsquanten wieder,'."\n".
-                    'der zum unpolarisierten Photon des Vakuums führt:'."\n",
-                      'Die Trigramme sind so im Achteck angeordnet, dass sich jeweils die Gegenpole – Yin und Yang der jeweiligen Richtung – im Kreis herum punktsymmetrisch gegenüberstehen.'."\n",
-                      'Beim unpolarisierten Photon des Vakuums handelt es sich zwar um wesentlich viel mehr als acht Ecken, aber das Prinzip,'."\n".
-                    'dass sich die gegenüberliegenden Seiten der Kreisanordnung in ihrer Polarität gegenseitig ausgleichen, ist das selbe.'."\n".
-                    'Der Wirkungsquanten-String der unpolarisierten Photonen ist daher im Sinne der Farbpolarisation der Quantenchromodynamik in allen Richtungen'."\n".
-                    'zu weiß neutralisiert.'."\n",
                       'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -133,48 +171,9 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
-                      
-                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
-                    array_merge( $FrQFT_g_figure_ary_UnpolPhotFarb8Pol, array( name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-UnpolPhotFarbpol8pol',
-                                                         /* text => '' */)),
-                      )),
-                      
-                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
-                      
-                'Yin und Yang mit dem I Ging vereint', subline =>
-                  '')),
                   array( 'text', array( text => array(
                     'In den Bestandteilen des Vakuums der fraktalen Quanten-Fluss-Theorie, den unpolarisierten Photonen beziehungsweise Vakuum-Elapsonen, finden wir'."\n".
                     'das dynamische Prinzip des Yin und Yang mit dem punktsymmetrisch polaren Prinzip des I Ging vereint.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                      
-                  array( 'figure',
-                    array_merge( $FrQFT_g_figure_ary_Elapson, array( name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Elapson'))),
-                      
-                  array( 'fade-in-area', array( Display => 'invis',
-                    Title => 'Animiert …', TitleVis => 'Animiert:', ParagraphList => array(
-                                                                                             
-                  array( 'figure',
-                    array_merge( $FrQFT_g_figure_ary_VakuumElapson, array( name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Ani-VakuumElapson',
-                                                         text => '\\const{FrQFT_g_text_VakuumElapson}'))),
-                      
-                    ))),
-                      
-                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
-                      
-                'Yin und Yang und I Ging in den Grundlagen der Physik', subline =>
-                  'Alle Existenz beruht auf einer Balance zwischen Stabilität und Fortentwicklung')),
-                  array( 'text', array( text => array(
-                    'Berücksichtigen wir dazu das ordnende Prinzip des Djet-Neheh-Dualismus, des Dao, beziehungsweise der Trimurti Brahma, Vishnu und Shiva,'."\n".
-                    'so können wir daraus tatsächlich das Fundament der neuen Physik und seines Vakuums rekonstruieren (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Elapson}).'."\n",
-                      'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
