@@ -18,6 +18,7 @@
                     '• Siehe Meetup zu diesem Thema: \\italic{\\jumpname{OM:NPYo:Meetup-LGBT-Spiritual-Hamburg}}, Veranstaltung vom 09.03.2020',
                     '• Unsere Pole kommunizieren lassen bedeutet uns wieder mit uns selber verbinden, ReConnection, siehe geplante Seite. Das bedeutet auch Yoga – Joch, Zuggeschirr, conjugare, vereinigen, zusammenschließen, sich verbinden.',
                     '– Einer dieser Pole ist unser sogenanntes Ego.',
+                    '– Auch unser \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{Schlaf} ist einer dieser Pole mit seinem Gegenpol des \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{Wachseins und Aktivseins}: Wir können erkennen, dass unser Schlaf fundamental mit unserer Existenz, mit unserem Leben, mit unserem Achtsamkeitsprozesses verknüpft ist. Unser Schlaf ist die eine Hälfte unseres Lebens unser Wachsein die andere. Heute wird der Schlaf von vielen (westlichen) Menschen als störend empfunden, als etwas, das sie von ihrem Leben abhält, und tendenziell abgelehnt. Viele Menschen empfinden ihren Schlaf als ineffektive Zeit. Dies ist nach meiner Interpretation eine vollkommene Fehleinschätzung und ein schwerwiegendes Problem.',
                     '• Spiritualität bedeutet auch, sich tiefer mit unserer Natur, mit den Grundlagen unseres Lebens und unserer Welt, zu beschäftigen, siehe \\italic{\\jumpname{OM:NPYo:ExistenzLeichtigkeit}}.',
                     ))),
                       
