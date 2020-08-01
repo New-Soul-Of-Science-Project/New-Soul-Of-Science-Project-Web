@@ -2,13 +2,13 @@
         include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
 
 
-<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:SpaLeb:XXX'); ?>
+<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:SpaLeb:Schlaf-und-Aktivsein'); ?>
 
 
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SpaLeb:XXX'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SpaLeb:Psychosomatik-Stress'); ?>
 
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
@@ -53,7 +53,7 @@
 		    	<!  • XXX  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
-            'OM:SpaLeb:XXX:XXX',
+            'OM:SpaLeb:Schlaf-und-Aktivsein:XXX',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(

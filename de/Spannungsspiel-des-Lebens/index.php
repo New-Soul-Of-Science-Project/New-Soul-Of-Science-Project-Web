@@ -167,6 +167,7 @@
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Psychosomatik-Entscheidungen'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Psychosomatik-Stress'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Schlaf-und-Aktivsein'),
                     ))),
                       
                   array( 'normal',

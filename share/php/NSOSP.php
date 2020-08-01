@@ -2638,6 +2638,20 @@
                                               'OM:SpaLeb:Rueckenschmerzen-Atmung-Zwerchfell:Bauch-Zwerchfell-SchonhaltungRueckenprobleme' => array( headline_text => 'Bauch-Zwerchfell-Schonhaltung führt zu Rückenschmerzen und Bandscheibenvorfall', headline_text_short => 'Bauch-Zwerchfell-Schonhaltung führt zu Rückenschmerzen und Bandscheibenvorfall'),
                                             ),
                                      ),
+                              'OM:SpaLeb:Schlaf-und-Aktivsein' =>
+                                array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Schlaf-und-Aktivsein.php',
+                                       url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Schlaf-und-Aktivsein.php',
+                                       titel => 'Schlaf und Aktivsein - Spannungsspiel des Lebens - Deutsch',
+                                       description => 'Unser Schlaf entspringt dem Gefühlspol unseres Achtsamkeitsprozesses, unser Aktivsein unserem Handlungspol.',
+                                       keywords => '',
+                                       text_titel_h1 => 'Schlaf und Aktivsein',
+                                       text_titel_short => 'Schlaf und Aktivsein',
+                                       text_undertitel_h2 => 'Unser Schlaf entspringt dem Gefühlspol unseres Achtsamkeitsprozesses, unser Aktivsein unserem Handlungspol',
+                                       text_titel_discr_h3 => '',
+                                       jump_ary => array(
+                                              'OM:SpaLeb:Schlaf-und-Aktivsein:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                                            ),
+                                     ),
                               'OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Vortrag-Physik-Achtsamkeit-und-Yoga_de.php',
                                        url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Vortrag-Physik-Achtsamkeit-und-Yoga_de.php',
