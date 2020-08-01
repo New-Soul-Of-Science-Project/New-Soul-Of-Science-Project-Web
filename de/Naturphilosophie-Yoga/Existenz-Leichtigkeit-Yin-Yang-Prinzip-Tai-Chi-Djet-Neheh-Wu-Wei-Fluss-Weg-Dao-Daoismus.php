@@ -139,14 +139,26 @@
                     'Beim unpolarisierten Photon des Vakuums handelt es sich zwar um wesentlich viel mehr als acht Ecken, aber das Prinzip,'."\n".
                     'dass sich die gegenüberliegenden Seiten der Kreisanordnung in ihrer Polarität gegenseitig ausgleichen, ist das selbe.'."\n".
                     'Der Wirkungsquanten-String der unpolarisierten Photonen ist daher im Sinne der Farbpolarisation der \\jump{OM:FrQFT:Quantenchromodynamik}{Quantenchromodynamik}'."\n".
-                    'in allen Richtungen zu weiß neutralisiert.'."\n",
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'in allen Richtungen zu weiß neutralisiert.'."\n"))),
+                      
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
+                    array_merge( $FrQFT_g_figure_ary_UnpolPhotFarb6Pol, array( name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-UnpolPhotFarbpol6pol',
+                                                         /* text => '' */)),
+                      )),
+                      
+                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
+                      
+                'Das Vektor-Gleichgewicht und die isotrope Vektor-Matrix', subline =>
+                  'Die Stabilität des Vakuums – Sechsecke in der Ebene, Kuboktaeder im Raum')),
+                      
+                  $FrQFT_g_zitat_BuckminsterFuller_StartingPoint,
+                      
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                      'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -182,6 +194,33 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
+                      
+                'Stabilisierende Regelprozesse', subline =>
+                  'Dynamik hält die Gegensatzpole stabil auseinander')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    'Das ist unter anderem im Taijitu, im Yin-Yang-Symbol, dargestellt.'."\n".
+                    'XXX'."\n".
+                    'Regelprozesse laufen auf einem Pfad, der die Wirkung optimiert?'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
                       
                   array( 'figure',
                     array_merge( $SpaLeb_g_figure_ary_Achtsamkeitsprozess, array( name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Achtsamkeitsprozess'))),
@@ -193,30 +232,6 @@
                   array( 'text', array( text => array(
                     'Der Achtsamkeitsprozess unseres Lebens spiegelt genau die gleiche Struktur wieder (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Achtsamkeitsprozess}).'."\n".
                     'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                      
-                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
-                    array_merge( $FrQFT_g_figure_ary_UnpolPhotFarb6Pol, array( name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-UnpolPhotFarbpol6pol',
-                                                         /* text => '' */)),
-                      )),
-                      
-                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
-                      
-                'Stabilisierende Regelprozesse', subline =>
-                  'Dynamik hält die Gegensatzpole stabil auseinander')),
-                      
-                  $FrQFT_g_zitat_BuckminsterFuller_StartingPoint,
-                      
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'Das ist unter anderem im Taijitu, im Yin-Yang-Symbol, dargestellt.'."\n".
-                    'XXX'."\n".
-                    'Regelprozesse laufen auf einem Pfad, der die Wirkung optimiert?'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".

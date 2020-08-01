@@ -1807,8 +1807,8 @@
                                                 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-UnpolPhotFarbpol8pol' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Elapson' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Ani-VakuumElapson' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
-                                                'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Achtsamkeitsprozess' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-UnpolPhotFarbpol6pol' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Achtsamkeitsprozess' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                          
                                               'OM:NPYo:ExistenzLeichtigkeit:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
                                             ),
