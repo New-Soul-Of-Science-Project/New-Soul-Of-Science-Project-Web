@@ -14,7 +14,7 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'vis', text => array(
-                    '\\bold{XXX:}',
+                    '\\bold{XXX}',
                     '• XXX',
                     ))),
                       
@@ -61,7 +61,8 @@
                     )),
                       
                   array( 'notice', array( Display => 'vis', text => array(
-                    //'• XXX',
+                    '\\bold{XXX}',
+                    '• XXX',
                     ))),
                       
                   array( 'text', array( text => array(
