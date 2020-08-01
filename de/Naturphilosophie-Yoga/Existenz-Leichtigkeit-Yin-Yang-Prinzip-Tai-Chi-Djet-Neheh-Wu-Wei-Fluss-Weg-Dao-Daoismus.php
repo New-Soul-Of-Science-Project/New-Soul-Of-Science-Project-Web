@@ -150,11 +150,21 @@
                       
                 'Das Vektor-Gleichgewicht und die isotrope Vektor-Matrix', subline =>
                   'Die Stabilität des Vakuums – Sechsecke in der Ebene, Kuboktaeder im Raum')),
+                  array( 'text', array( text => array(
+                    'Die Farbpolarisation steht dafür, dass die Kräfte in einer Struktur, die deren Ausdehnung im Raum ändern, im Gleichgewicht sind.'."\n".
+                    'In einer Ebene kann dies durch die Farben eines Farbkreises\\color{*Bearb}{(Verweis)} dargestellt werden (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-UnpolPhotFarbpol6pol}):'."\n",
+                      'Dabei sind mindestens drei Punkte notwendig, um einen Teil einer Fläche zu definieren.'."\n".
+                    'Daher kommen wir hier mit drei Grundfarben aus, denen nach dem Yin-Yang-Prinzip jeweils eine inverse Antifarbe zugeordnet ist.'."\n".
+                    'So ergibt sich letztendlich ein farbiges Sechseck\\color{*Bearb}{(Verweis)}.'."\n",
+                      'Räumlich sind es allerdings vier Farben mit jeweiligen Antifarben, also acht Farbflächen, um gleichwertiges zu erreichen, und dies formt einen Kuboktaeder\\color{*Bearb}{(Verweis)}.'."\n".
+                    'Der Kuboktaeder enthält die isotrope Vektor-Matrix\\color{*Bearb}{(Verweis)}, die das räumliche Vektor-Gleichgewicht\\color{*Bearb}{(Verweis)} darstellt.'."\n"))),
                       
                   $FrQFT_g_zitat_BuckminsterFuller_StartingPoint,
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
+                    'Das Vakuum stellt nach Richard Buckminster Fuller die stabile Bühne für alles dar, was möglich ist.'."\n".
+                    'In der neuen Physik besteht diese aus Myriaden von rotierenden, kreisförmigen, farbpolarisierten Ringen von Wirkungsquanten, die in sich das flächige Vektor-Gleichgewicht tragen'."\n".
+                    'und zusammen das räumliche Vektor-Gleichgewicht in Form der isotropen Vektor-Matrix erzeugen.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
