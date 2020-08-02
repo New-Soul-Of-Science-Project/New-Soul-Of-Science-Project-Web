@@ -139,7 +139,9 @@
                     'Beim unpolarisierten Photon des Vakuums handelt es sich zwar um wesentlich viel mehr als acht Ecken, aber das Prinzip,'."\n".
                     'dass sich die gegenüberliegenden Seiten der Kreisanordnung in ihrer Polarität gegenseitig ausgleichen, ist das selbe.'."\n".
                     'Der Wirkungsquanten-String der unpolarisierten Photonen ist daher im Sinne der Farbpolarisation der \\jump{OM:FrQFT:Quantenchromodynamik}{Quantenchromodynamik}'."\n".
-                    'in allen Richtungen zu weiß neutralisiert.'."\n"))),
+                    'in allen Richtungen zu weiß neutralisiert.'."\n",
+                      'In den Bestandteilen des Vakuums finden wir auf diese Weise'."\n".
+                    'das dynamische Prinzip des Yin und Yang mit dem punktsymmetrisch polaren Prinzip des I Ging in der Xiantian-Anordnung vereint.'."\n"))),
                       
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
                     array_merge( $FrQFT_g_figure_ary_UnpolPhotFarb6Pol, array( name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-UnpolPhotFarbpol6pol',
@@ -163,72 +165,34 @@
                       
                   array( 'text', array( text => array(
                     'Das Vakuum stellt nach Richard Buckminster Fuller die stabile Bühne für alles dar, was möglich ist.'."\n".
-                    'In der neuen Physik besteht diese aus Myriaden von rotierenden, kreisförmigen, farbpolarisierten Ringen von Wirkungsquanten, die in sich das flächige Vektor-Gleichgewicht tragen'."\n".
-                    'und zusammen das räumliche Vektor-Gleichgewicht in Form der isotropen Vektor-Matrix erzeugen.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'In der neuen Physik der Quanten-Fluss-Theorie besteht diese aus Myriaden von rotierenden, kreisförmigen, farbpolarisierten Ringen von Wirkungsquanten, die in sich das flächige Vektor-Gleichgewicht tragen'."\n".
+                    'und zusammen das räumliche Vektor-Gleichgewicht in Form der isotropen Vektor-Matrix erzeugen.'."\n",
+                      'Dadurch, dass Elementarteilchen im Grunde immer einen Spin tragen, gibt es in ihnen immer eine Hauptebene der Rotation, die der hexagonalen Farbpolarisation entspricht.'."\n"))),
+                      
+                  array( 'fade-in-area', array( Display => 'invis',
+                    Title => 'Physikalische Details …', TitleVis => 'Physikalische Details:', ParagraphList => array(
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'Interessanterweise entspricht die Xiantian-Anordnung in Bezug auf polarisierte Photonen – die bekannten Photonen, mit elektromagnetischem Feld –'."\n".
-                    'einer zirkularen Polarisation.'."\n".
-                    'Die Houtian-Anordnung entspricht hingegen einem linear polarisierten Photonen.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    'In den Bestandteilen des Vakuums der fraktalen Quanten-Fluss-Theorie, den unpolarisierten Photonen beziehungsweise Vakuum-Elapsonen, finden wir'."\n".
-                    'das dynamische Prinzip des Yin und Yang mit dem punktsymmetrisch polaren Prinzip des I Ging vereint.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Interessanterweise entspricht die Xiantian-Anordnung\\footnote{Internet: \\\\ Vgl. \\cite{wiki:AchtTrigramme:2019}, Reihenfolge.} einem zirkular polarisieren Photon – Lichtteilchen.'."\n".
+                    'Die Houtian-Anordnung\\footnote{Internet: \\\\ Vgl. \\cite{wiki:AchtTrigramme:2019}, Reihenfolge.} entspricht hingegen einem linear polarisierten Photonen.'."\n"))),
+                    ))),
+                      
                   array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
                       
                 'Stabilisierende Regelprozesse', subline =>
                   'Dynamik hält die Gegensatzpole stabil auseinander')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'Das ist unter anderem im Taijitu, im Yin-Yang-Symbol, dargestellt.'."\n".
-                    'XXX'."\n".
-                    'Regelprozesse laufen auf einem Pfad, der die Wirkung optimiert?'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Das Kräftegleichgewicht in den Bestandteilen des Vakuums, und schließlich in allen stabilen Elementarteilchen, wird durch sich selbstorganisierende,'."\n".
+                    'strukturelle Regelprozesse erzeugt, die deren innere Struktur organisieren.'."\n".
+                    'Daher nenne ich die neuen Physik auch organische Physik.'."\n",
+                      'Stabile strukturelle Regelprozesse haben die Eigenschaft, über die Wechselwirkungen von Spielern und Gegenspielern aufrechterhalten und räumlich'."\n".
+                    'in ihrer Dimension gehalten zu werden.'."\n".
+                    'Genau das, was die Farbpolarisation ausdrückt.'."\n",
+                      'Auf diese Art und Weise ist auch automatisch elementares Bewusstsein in der neuen Physik verankert.'."\n".
+                    'Denn die Wechselwirkungen der Spielern und Gegenspielern der Regelprozesse der Vakuum-Bestandteile und Elementarteilchen reichen bis in die tiefen des'."\n".
+                    'Raumes und beeinflussen dort alle anderen Regelprozesse und werden auch von diesen beeinflusst, sodass alles aufeinander reagiert und sich.'."\n".
+                    'dadurch des anderen bewusst ist.'."\n",
+                      'Genau dies ist in meinen Augen unter anderem auch im Taijitu, im Yin-Yang-Symbol, dargestellt.'."\n".
+                    'Regelprozesse lassen etwas in ihnen, eine Struktur oder einen Wert, auf einem bestimmten Pfad schwingend laufen, auf dem die Wirkung optimiert ist.'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
                       
@@ -237,21 +201,28 @@
                       
                   array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
                       
-                'Der Achtsamkeitsprozess', subline =>
+                'Unser Leben und sein Achtsamkeitsprozess', subline =>
                   'Eine Balance aus Stabilität und Fortentwicklung bestimmt unser Leben')),
                   array( 'text', array( text => array(
-                    'Der Achtsamkeitsprozess unseres Lebens spiegelt genau die gleiche Struktur wieder (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Achtsamkeitsprozess}).'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Der \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}, der zentrale Regelprozess unseres Lebens nach dem ›Spannungsspiels des Lebens‹ (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Achtsamkeitsprozess}),'."\n".
+                    'spiegelt, vereinfacht gesehen, eine sehr ähnliche Struktur wider, wie die ringförmigen Bestandteile des Vakuums, siehe oben:'."\n".
+                    'Unser Gedeihen, unsere Psyche, unser Lernen und auch unsere Persönlichkeitsentwicklung sind unter anderem Bestandteile von diesem Prozess.'."\n",
+                      'Unser Leben wird durch ihn, durch seine Regelung in einem Zirkel, auf einem bestimmten Pfad gehalten.'."\n".
+                    'Unsere Lebenssituation bestimmt darin unsere Gefühle zu ihr, die Antreibe erzeugt, die zu Handlungen führen, die wiederum unsere Lebenssituation verändern.'."\n".
+                    'Zu unserer neue Lebenssituation haben wir dann andere Gefühle, und so beginnt der Zirkel wieder von vorne.'."\n",
+                      'Der Pfad, dem wir, geleitet durch unseren Achtsamkeitsprozess, folgen, auf dem wir gehalten werden, ist der Pfad unseres Lebens.'."\n".
+                    'Der Zirkel und der Pfad ergeben zusammen eine Helixspirale, in der unser Leben, vereinfacht gesehen, abläuft.'."\n".
+                    'Der Pfad steht für unsere Entwicklung, für unser Lernen, unser Gedeihen und vieles mehr.'."\n".
+                    'Wir folgen unserem Gefühl und lernen, dies im Großen und Ganzen positiv zu beeinflussen.'."\n",
+                      'Angenehmer wird es, wenn unser Leben mehr Leichtigkeit bekommt, wir weniger Widerstand empfinden, wir eine gute Balance zwischen Stabilität und Fortentwicklung haben.'."\n".
+                    'Darum geht es im Folgenden bei Wu Wei.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
                       
                 'Wu Wei', subline =>
-                  '')),
+                  'Im Fluss sein – Gelassen sein und im rechten Moment handeln')),
+                  array( 'text', array( text => array(
+                    'Wu Wei hat etwas damit zu tun, zu lernen, nicht zu früh in Aktion zu kommen und damit unnötig viel Kraft und Energie aufzuwenden.'."\n".
+                    'Wir lernen gelassen zu bleiben; meist eine gewisse emotionale Distanz einzunehmen und doch involviert zu bleiben.'."\n"))),
                       
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
                   // #!: Auch auf der NaPhil-Yoga-Startseite! (OM:NPYo:Home)
@@ -261,6 +232,29 @@
                         'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
                         'der hat die Magie, Dinge zum Schweben zu bringen.'."\n"),
                         addtext => '')),
+                      
+                  array( 'text', array( text => array(
+                    'Dies gelingt zum Beispiel durch geduldige Beobachtung, dem Lernen die Situation einzuschätzen, unserem Gefühl und unseren Fähigkeiten zu vertrauen und dem Erkennen,'."\n".
+                    'wann es angesagt ist und sich lohnt, ins Handeln zu kommen, oder die Dinge weiter in der Schwebe zu halten, sie im Fluss zu belassen.'."\n",
+                      'Dinge in der Schwebe zu halten, bedeutet, sich nicht endgültig zu entscheiden, solange dies nicht notwendig oder wichtig erscheint.'."\n".
+                    'Es setzt voraus zu lernen, das Dinge, die als widersprüchlich erscheinen, im Sinne des In-Der-Schwebe-Haltens nicht widersprüchlich sind.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
+                      
+                'Achtsamkeit', subline =>
+                  'Wie diese Geduld aufbringen? Wie unseren Fähigkeiten vertrauen?')),
+                  array( 'text', array( text => array(
+                    'Da es eben stark darum geht, unseren eigenen Gefühlen und unseren Fähigkeiten zu vertrauen, sind wir darauf angewiesen zu lernen, unsere eigenen Gefühle wahrzunehmen'."\n".
+                    'und sie auch im Wechselspiel mit unseren Handlungen zu sehen und zu üben.'."\n".
+                    'Achtsamkeit meint genau dies.'."\n",
+                      'Um dies gut erlernen zu können, ist es sinnvoll uns die Zeit zu nehmen uns in Ruhe mit uns selber zu beschäftigen.'."\n".
+                    'Die intensive Wahrnehmung unserer Gefühle und Handlungen im Hier und Jetzt ist nur möglich, wenn wir lernen, nicht immer in unseren Sorgen unterwegs zu sein.'."\n".
+                    'Um den Fokus unserer Aufmerksamkeit zu unserer gegenwärtigen Lebenssituation zu lenken ist es wichtig, unsere Gedanken mehr zur Ruhe kommen zu lassen.'."\n",
+                      'Dazu können wir üben, den Fokus unserer Aufmerksamkeit von den Gefühlen zum Inhalt unserer Gedanken zu lösen,'."\n".
+                    'indem wir üben, unsere Kreisgedanken zu durchbrechen, also die ewige Wiederholung des gleichen Inhalts unserer Gedanken zu verlassen.'."\n".
+                    'Wir hören nicht auf zu denken, sondern lassen unsere Gedanken vorbeiziehen, ohne an ihnen hängen zu bleiben; sie kommen und gehen,'."\n".
+                    'wie Wolken, die vorüber ziehen.'."\n",
+                      'Damit bringen wir unsere Entwicklung in einen Fluss, der es uns erlaubt, unsere Erlebnisse zu verarbeiten und unsere mögliche Zukunft zu erkennen,'."\n".
+                    'ohne darin verbissen zu sein; es mehr so zu nehmen, wie es kommt, und zu handeln, wenn dies sinnvoll erscheint.'."\n"))),
                       
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
                   // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
@@ -272,10 +266,14 @@
                         addtext => '')),
                       
                   array( 'text', array( text => array(
+                    'Dies kann im Yoga oder der Meditation geübt und durch tiefe Atmung unterstützt werden.'."\n".
+                    'In jedem Fall sollte es in den Alltag eingebaut werden.'."\n".
+                    'Dann ist es sehr nachhaltig.'."\n",
+                      'Wu Wei als mit dem Fluss gehender Pfad oder Weg (Dao) auf dem die Balance zwischen Ordnung und Chaos ausgeglichen ist – zwischen Stabilität und Fortentwicklung –'."\n".
+                    'und der daher wenig Energieaufwand kostet, energetisch optimiert ist.'."\n".
+                    'Nur, wenn wir erkennen, dass es sich lohnt zusätzliche Energie aufzuwenden von diesem Pfad abzuweichen, tun wir dies.'."\n"))),
+                  /*%! array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'Wu Wei als mit dem Fluss gehender Pfad oder Weg (Dao) auf dem die Balance zwischen Ordnung und Chaos ausgeglichen ist und der daher wenig Energieaufwand kostet.'."\n".
-                    'XXX'."\n".
-                    'Nur, wenn wir erkennen, dass es sich lohnt zusätzliche Energie aufzuwenden von diesem Pfad abzuweichen, tun wir dies.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -296,7 +294,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
-                    'XXX'."\n"))),
+                    'XXX'."\n"))), */
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:Spiritualitaet-Psychologie'),
