@@ -1869,12 +1869,12 @@
                                 array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Spiritualitaet-und-Psychologie.php',
                                        url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Spiritualitaet-und-Psychologie.php',
                                        titel => 'Spiritualität und Psychologie - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
-                                       description => 'Was haben Spiritualität und Psychologie miteinander zu tun? Unser innerer Dialog, unser Selbstmitgefühl.',
+                                       description => 'Was haben Spiritualität und Psychologie miteinander zu tun? Unser innerer Dialog, unser Selbstmitgefühl, unsere Selbstheilung.',
                                        keywords => '',
                                        text_titel_h1 => 'Spiritualität und Psychologie',
                                        text_titel_short => 'Spiritualität und Psychologie',
                                        text_undertitel_h2 => 'Was haben Spiritualität und Psychologie miteinander zu tun?',
-                                       text_titel_discr_h3 => 'Unser innerer Dialog, unser Selbstmitgefühl',
+                                       text_titel_discr_h3 => 'Unser innerer Dialog, unser Selbstmitgefühl, unsere Selbstheilung',
                                        jump_ary => array(
                                               'OM:NPYo:Spiritualitaet-Psychologie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
