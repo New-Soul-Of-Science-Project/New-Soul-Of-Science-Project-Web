@@ -70,10 +70,9 @@
                     '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Superial-Zahlen <small>– Zählen und Primzahlen im Unendlichen</small>}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
-                      array( title => '\\name{OM:SupNum:Einleitung}', jumpname => 'OM:SupNum:Einleitung', startsign => '',
-                                description => 'Worum geht es?'/*$Glo_g_Site_ary['OM:FrQFT:Einleitung'][text_undertitel_h2]*/),
-                      array( title => '\\color{*ContentItemDisabled}{Formale Entwicklung (geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
-                                description => '(in Vorbereitung)'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Einleitung'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Formale-Entwicklung'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Eigenschaften'),
                       array( title => '\\color{*ContentItemDisabled}{Primzahlprodukt-Vermutung (geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => '(in Vorbereitung)'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
                     ))),

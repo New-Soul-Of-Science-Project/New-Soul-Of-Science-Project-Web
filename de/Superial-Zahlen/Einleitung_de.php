@@ -13,23 +13,23 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
-                    '(\\bold{Ist die Geometrie fraktal?} – Ist ein Punkt, eine Linie und eine Fläche fraktal?)',
-                    '(• Das Problem der Geometrie, eine Linie aus Punkten aufzubauen (Verwandt mit der Kontinuumshypothese): Die nullte, die erste und die zweite Dimension haben keine Ausdehnung, kein Volumen, – also Punkt, Linie und Fläche – und in gewisserweise existieren sie so nicht. Aber mit ihnen sollen wir die dritte Dimension aus Punkten (Ecken) und Flächen konstruieren, die dann eine Ausdehnung hat und plötzlich existiert. Das scheint komisch und merkwürdig. Siehe Nassim Haramein, Die Entschlüsselung des Universums, S. 11-14, hier S. 12-13.)',
-                    '(– Es geht einfach darum, wie man aus Punkten eine Linie exakt konstruieren kann: Handelt es sich wirklich um einen absolut unendlichkleinen Punkt, dann bekommen wir ein Problem. Es scheint mir, dass ein strukturierter Punkt, mit aktualunendlichkleiner Ausdehnung hier abhilfe schaffen kann. Ich kann nämlich in Form von aktualunendlich großen Zahlen beschreiben, wie oft ich diesen superialen Punkt aneinanderlegen muss. Dies kann ich bei absolut unendlichkleinen Punkten nicht tun.)',
-                    '(– Bietet hier die aktualunendlichkleine Hülle der superial-kleinen Zahlen um einen Punkt einen logischen Lösungsansatz für die Geometrie? Denn bei einem absolut unendlichkleinen Punkt können wir nicht sicher und exakt definieren, wie oft wir ihn aneinanderlegen müssen, um eine Gerade einer bestimmten Länge zu erzeugen. Bei einem Punkt mit superial-kleiner Hülle ist dies wohldefiniert.)',
-                    '(– Ist die Geometrie also eigentlich fraktal? Was durch die Analysis, mit ihren Ableitungen und Integralen, schließlich sichtbar wird?)',
-                    '(• Der Fields-Medalienträger 2018, Peter Scholze, bringt neue Zusammenhänge zwischen der Arithmetrik und der Geometrie ins Spiel.)',
-                    '(\\bold{Zeit in der Mathemathik})',
-                    '(• Einflechten, dass die Arithmetrik aus dem Zählen geboren wird. Dies ist eine Definition durch einen Prozess. Hierdurch kommt Zeit ins Spiel. Die Betrachtung der Primfaktorenzerlegung der natürlichen Zahlen zeigt auf, dass an diesem Prozess Regelsystemen ähnliche rhythmische Strukturen beteiligt sind.)',
-                    '(\\bold{Korrekturen})',
-                    '(• Der Text ist schwer verständlich und manchmal etwas komisch formuliert. Alles noch einmal überarbeiten !!!)',
-                    '(• Fehler: Die Formel SN.E.3 kommt später noch zwei Mal ausgeblendet vor, ist aber beide Male falsch beschriftet.)',
-                    '(• Fehler: Das Äquivalenzzeichen vor den konkreten Ableitungsbeispielen ist verkehrt, wenn die davor stehende Formel eingeblendet ist!)',
-                    '(\\bold{Forschungsideen})',
-                    '(• Das Pascal-Sierpinski-Dreieck ist eine Geomatrie, in der Primzahlen ein außergewöhnliche Rolle spielen.\\footnote{Vgl. \\cite{Plichta:GottesGeheimeFormel:1995}, S. 263ff., 271ff. 306ff.. \\\\ Internet: \\\\ Vgl. \\jump[https://de.wikipedia.org/w/index.php?title=Sierpinski-Dreieck&oldid=179105092#Zusammenhang_mit_dem_Pascalschen_Dreieck]{}{Wikipedia, Sierpinski-Dreieck, Zusammenhang mit dem Pascalschen Dreieck}.})',
+                    '\\bold{Ist die Geometrie fraktal?} – Ist ein Punkt, eine Linie und eine Fläche fraktal?',
+                    '• Das Problem der Geometrie, eine Linie aus Punkten aufzubauen (Verwandt mit der Kontinuumshypothese): Die nullte, die erste und die zweite Dimension haben keine Ausdehnung, kein Volumen, – also Punkt, Linie und Fläche – und in gewisser Weise existieren sie so nicht. Aber mit ihnen sollen wir die dritte Dimension aus Punkten (Ecken) und Flächen konstruieren, die dann eine Ausdehnung hat und plötzlich existiert. Das scheint komisch und merkwürdig. Siehe Nassim Haramein, Die Entschlüsselung des Universums, S. 11-14, hier S. 12-13.',
+                    '– Es geht einfach darum, wie man aus Punkten eine Linie exakt konstruieren kann: Handelt es sich wirklich um einen absolut unendlich kleinen Punkt, dann bekommen wir ein Problem. Es scheint mir, dass ein strukturierter Punkt, mit aktualunendlich kleiner Ausdehnung hier Abhilfe schaffen kann. Ich kann nämlich in Form von aktualunendlich großen Zahlen beschreiben, wie oft ich diesen superialen Punkt aneinander legen muss. Dies kann ich bei absolut unendlich kleinen Punkten nicht tun.',
+                    '– Bietet hier die aktualunendlich kleine Hülle der superial-kleinen Zahlen um einen Punkt einen logischen Lösungsansatz für die Geometrie? Denn bei einem absolut unendlich kleinen Punkt können wir nicht sicher und exakt definieren, wie oft wir ihn aneinander legen müssen, um eine Gerade einer bestimmten Länge zu erzeugen. Bei einem Punkt mit superial-kleiner Hülle ist dies wohldefiniert.',
+                    '– Ist die Geometrie also eigentlich fraktal? Was durch die Analysis, mit ihren Ableitungen und Integralen, schließlich sichtbar wird?',
+                    '\\bold{Aktuelle Forschung}',
+                    '• Der Fields-Medaillenträger 2018, Peter Scholze, bringt neue Zusammenhänge zwischen der Arithmetik und der Geometrie ins Spiel.',
+                    '\\bold{Zeit in der Mathematik}',
+                    '• Einflechten, dass die Arithmetik aus dem Zählen geboren wird. Dies ist eine Definition durch einen Prozess. Hierdurch kommt Zeit ins Spiel. Die Betrachtung der Primfaktorenzerlegung der natürlichen Zahlen zeigt auf, dass an diesem Prozess Regelsystemen ähnliche rhythmische Strukturen beteiligt sind.',
+                    '\\bold{Korrekturen}',
+                    '• Der Text ist schwer verständlich und manchmal etwas komisch formuliert. Alles noch einmal überarbeiten !!!',
+                    '• Fehler: Das Äquivalenzzeichen vor den konkreten Ableitungsbeispielen ist verkehrt, wenn die davor stehende Formel eingeblendet ist!',
+                    '\\bold{Forschungsideen}',
+                    '• Das Pascal-Sierpinski-Dreieck ist eine Geometrie, in der Primzahlen ein außergewöhnliche Rolle spielen.\\footnote{Vgl. \\cite{Plichta:GottesGeheimeFormel:1995}, S. 263ff., 271ff. 306ff.. \\\\ Internet: \\\\ Vgl. \\jump[https://de.wikipedia.org/w/index.php?title=Sierpinski-Dreieck&oldid=179105092#Zusammenhang_mit_dem_Pascalschen_Dreieck]{}{Wikipedia, Sierpinski-Dreieck, Zusammenhang mit dem Pascalschen Dreieck}.}',
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
                 'Motivation')),
                   array( 'text', array( text => array(
@@ -46,12 +46,12 @@
                     'Man konnte auch ins Unendliche gehen, ohne den Limes zu benutzen!'."\n".
                     'Ohne die versinkenden Summanden wirklich zu Null werden zu lassen, indem man sie als Null definiert.'."\n".
                     'Dies funktionierte, wenn man die beim Ableiten gegen Null gehenden Summanden selber als unendlich klein, aber nicht als verschwindend betrachtete.'."\n".
-                    'Ich setzte den gegen Null gehenden Summanden \\term{Δx := s^{-1}}.'."\n"))),
+                    'Ich setzte den gegen Null gehenden Summanden \\term{Δx ≔ s^{-1}}.'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.E', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0}{ \frac{ f(x + \Delta x) - f(x) }{ \Delta x } }  }'),
                       array( display => 'on', latex => '{  \Delta x  :=  s^{-1}  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  f\'(x)  =  \frac{ f(x + s^{-1}) - f(x) }{ s^{-1} }  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  f\'(x)  :=  \frac{ f(x + s^{-1}) - f(x) }{ s^{-1} }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dabei war \\term{s^{-1}} ein neues Symbol, über das ich zunächst nur annahm, dass es kleiner als jede positive Zahl war und doch größer als Null.'."\n".
@@ -63,8 +63,8 @@
                     'Die Dimension \\term{a_{0}⋅s^{0} = a_{0}} stellt dann die uns bekannten, endlichen Zahlen dar, weil \\term{s^{0} = 1} ist, wie gewohnt.'."\n",
                       'So ergibt sich als Beispiel für die Funktion \\term{f(x) = x^{2}}:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.E', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  f\'(x)  =  \frac{ f(x + s^{-1}) - f(x) }{ s^{-1} }  }'),
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      //%! array( display => 'off', latex => '{  f\'(x)  =  \frac{ f(x + s^{-1}) - f(x) }{ s^{-1} }  }'),
                       array( display => 'on', latex => '{  \Rightarrow  f\'(x)  =  \frac{ \left(x + s^{-1}\right)^{2} - x^{2} }{ s^{-1} }  }',
                                               latex_if_visible => '{  \Leftrightarrow  f\'(x)  =  \frac{ \left(x + s^{-1}\right)^{2} - x^{2} }{ s^{-1} }  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ \left(x^{2} + 2 x \cdot s^{-1} + s^{-2}\right) - x^{2} }{ s^{-1} }  }'),
@@ -75,8 +75,8 @@
                     'Wenn man also \\term{s^{-1}} zu Null setzt, dann kommt das übliche Ergebnis \\term{f\'(x) = 2x} heraus.'."\n",
                       'Für \\term{f(x) = x^{3}} ergibt sich'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.E', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  f\'(x)  =  \frac{ f(x + s^{-1}) - f(x) }{ s^{-1} }  }'),
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      //%! array( display => 'off', latex => '{  f\'(x)  =  \frac{ f(x + s^{-1}) - f(x) }{ s^{-1} }  }'),
                       array( display => 'on', latex => '{  \Rightarrow  f\'(x)  =  \frac{ \left(x + s^{-1}\right)^{3} - x^{3} }{ s^{-1} }  }',
                                               latex_if_visible => '{  \Leftrightarrow  f\'(x)  =  \frac{ \left(x + s^{-1}\right)^{3} - x^{3} }{ s^{-1} }  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ \left(x^{3} + 3 x^{2} \cdot s^{-1} + 3 x \cdot s^{-2} + s^{-3}\right) - x^{3} }{ s^{-1} }  }'),
@@ -85,7 +85,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Wenn man also \\term{s^{-1}} zu Null setzt, dann kommt das übliche Ergebnis \\term{f\'(x) = 3x^{2}} heraus.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
                 'Erste Erkenntnis')),
                   array( 'text', array( text => array(
@@ -96,7 +96,7 @@
                     'die sich in fraktaler Weise zwischen unseren endlichen Zahlen verstecken.\\footnote[*Entwick]{\\color{*Entwick}{Ich frage mich, welchen (fraktalen) Zusammenhang gibt es zwischen den ortogonalen und den \\italic{superialen Dimensionen}?}}'."\n".
                     'Auf Basis der \\italic{superialen Einheit} \\term{s} lassen sich folglich sogar unendlich große, lineare Dimensionen \\term{… + a_{3}⋅s^{3} + a_{2}⋅s^{2} + a_{1}⋅s^{1}} beschreiben.'."\n".
                     'Zwischen denen liegen dann unsere endlichen Zahlen und die superial kleinen Zahlen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Frage-und-zweite-Erkenntnis', text =>
                                            
                 'Frage und zweite Erkenntnis')),
                   array( 'text', array( text => array(
@@ -130,18 +130,21 @@
                     'muss die Primfaktorenzerlegung von \\term{s} sogar endlich beliebig oft die Primfaktorenzerlegung jeder endlichen, natürlichen Zahl enthalten.'."\n",
                       'Folgendes Primzahlprodukt sollte das kleinste Produkt aus unendlich vielen Primfaktoren sein, dass diese Bedingung erfüllt, dabei ist \\term{\M(P)} die Menge aller endlicher Primzahlen:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.E', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  s  =  \displaystyle \prod_{\forall n \in \mathbb{N}}  \left( \prod_{\forall p \in \mathbb{P}}  p \right)  }'),
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  \left( \prod_{\forall p \in \mathbb{P}}  p \right)  }',
+                                               label_name => 'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'In diesem Produkt wird erst einmal das Produkt aller endlicher Primzahlen gebildet:'."\n".
                     '\\term{2⋅3⋅5⋅7⋅11⋅13⋅…}'."\n".
                     'Anschließend wird es so oft mit sich selber mal genommen, wie groß die Anzahl der endlichen, natürlichen Zahlen ist.'."\n".
                     'Diese Anzahl wird in der Mengenlehre mit \\term{⍵} bezeichnet.'."\n".
-                    'So kann man auch schreiben:'."\n"))),
+                    'So können wir über das Symbol \\term{#} der Anzahl der Elemente einer Menge auch definieren, dass ich hier auf unendlich große, abzählbare Mengen erweitere:\\color{*Bearb}{(Verweis auf Wikipedia \\jump[https://de.wikipedia.org/w/index.php?title=Mächtigkeit_(Mathematik)&oldid=200036198]{}{Mächtigkeit (Mathematik), Mächtigkeit bei endlichen Mengen})}'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.E', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \Leftrightarrow  s  =  \displaystyle \left( \prod_{\forall p \in \mathbb{P}}  p \right)^{\omega}  }'),
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \omega   :=  \#\mathbb{N}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  s  =  \displaystyle \left( \prod_{\forall p \in \mathbb{P}}  p \right)^{\omega}  }',
+                                               label_name => 'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Über diese Definition von \\term{s} kommt man also wirklich zu einer Erweiterung der natürlichen Zahlen ins Unendliche, in der man'."\n".
@@ -164,12 +167,12 @@
                     'Dort wo die drei Punkte »…« stehen werden alle von der Größe her dazwischen liegenden rationalen Koeffizienten mitgezählt.'."\n".
                     'Die Superial-Zahlen bringen so die rationalen Zahlen mit dem Zählen von natürlichen und ganzen Zahlen in Verbindung.'."\n",
                       'Insgesamt steht so zu erwarten, dass die aus diesen Zahlen zu ziehenden Erkenntnisse weitreichend sein könnten.'."\n".
-                    'Eine wichtige Vermutungen ist die \\jump{OM:SupNum:Einleitung:Ueberrationalitaetsvermutung}{\\italic{Überrationalitätsvermutung}}, die besagt, dass die Superial-Zahlen auch mit \\italic{überrationalen Brüchen} als'."\n".
+                    'Eine wichtige Vermutungen ist die \\jump{OM:SupNum:Einleitung:Vortext:Ueberrationalitaetsvermutung}{\\italic{Überrationalitätsvermutung}}, die besagt, dass die Superial-Zahlen auch mit \\italic{überrationalen Brüchen} als'."\n".
                     'Koeffizienten funktionieren würden.'."\n".
                     'Oder noch genauer ausgedrückt stellt sich die Frage, ob es solche überrationalen Brüche wirklich gibt und welche bedeutenden Zahlenwerte sie darstellen können.'."\n".
-                    'Eine der sehr interessanten Vermutungen, die sich aus den Superial-Zahlen ergeben, ist die \\jump{OM:SupNum:Einleitung:Primzahlenprodukt-Vermutung}{\\italic{Primzahlenprodukt-Vermutung}}.'."\n".
+                    'Eine der sehr interessanten Vermutungen, die sich aus den Superial-Zahlen ergeben, ist die \\jump{OM:SupNum:Einleitung:Vortext:Primzahlenprodukt-Vermutung}{\\italic{Primzahlenprodukt-Vermutung}}.'."\n".
                     'Wäre sie richtig, würde sie wichtige Aussagen über die Verteilung der endlichen Primzahlen unter den extrem großen natürlichen Zahlen erlauben.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Ueberrationalitaetsvermutung', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Ueberrationalitaetsvermutung', text =>
                                            
                 'Überrationalitätsvermutung')),
                   /*array( 'text', array( text => array(
@@ -189,11 +192,11 @@
                     'Zu untersuchen ist zum Beispiel, ob die Werte von Wurzeln aus rationalen Zahlen durch solche überrationalen Brüche darstellbar sind.'."\n",
                       'Als Beispiel stellt sich die Frage, ist die Wurzel aus Zwei als überrationaler Bruch darstellbar:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.E', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \exists  \,\,  \sqrt{2}  \in  \mathbb{U}  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  \sqrt{2} \cdot s  \in  \mathbb{S}_{N}  }'),
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \exists  \,\,  \sqrt{2}  ?\in  \mathbb{U}  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  \sqrt{2} \cdot s  ?\in  \mathbb{S}_{N}  }'),
                     ))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Primzahlenprodukt-Vermutung', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Primzahlenprodukt-Vermutung', text =>
                                            
                 'Primzahlenprodukt-Vermutung')),
                   array( 'text', array( text => array(
@@ -201,9 +204,9 @@
                     'die Größe von \\term{⍵} hat.'."\n".
                     'Dies würde auf folgende Formeln hinauslaufen:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.E', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \displaystyle \left( \prod_{\forall p \in \mathbb{P}}  p \right)  =  \omega  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  s  =  \omega^{\omega}  }'),
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \displaystyle \left( \prod_{\forall p \in \mathbb{P}}  p \right)  ?=  \omega  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  s  ?=  \omega^{\omega}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Richtigkeit dieser Vermutung setzt eine Eigenschaft der Primzahlverteilung unter den extrem großen natürlichen Zahlen voraus, die so'."\n".
@@ -223,7 +226,7 @@
                     'Denn immer, wenn wieder eine Primzahl auftaucht, wird es „übermächtig“ groß, und die Primzahlen hören nicht auf aufzutauchen.'."\n".
                     'Die Vermutung muss also mit der Lücke zwischen allen endlichen natürlichen Zahlen \\term{\M(N)} und \\term{⍵} zu tun haben.'."\n".
                     'Wie man dies zumindestens mal eingrenzen oder abschätzen kann, zeige ich im Verlauf dieser Arbeit.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
                 'Nichtexistenz(?) des Kontinuums')),
                   array( 'text', array( text => array(
@@ -238,7 +241,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
                 'Feine Differenzierung des aktualen Unendlichen')),
                   array( 'text', array( text => array(

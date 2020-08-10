@@ -3,7 +3,7 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 06.06.2020, 19:00h
+  // #: Stand: 10.08.2020, 08:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
@@ -83,7 +83,9 @@
   //                      +:  "$$Sc_g_Text_replace_ary":  Elements '≈' as '&asymp;' is new.
   //           20200420:  >:  "$Sc_g_Text_replace_preg_ary":  Elements "term", "_", "^" changed to type "latexcommand".
   //           20200430:  >:  "Sc_f_equation_list":  New arrows at show and hide links. Removed ellipses.
-  //           20200606:  +:  "$Sc_g_equation_replace_ary":  New element "\mapsto".
+  //           20200606:  +:  "$Sc_g_equation_replace_ary":  New element '  \mapsto  '.
+  //           20200610:  +:  "$Sc_g_equation_replace_ary":  New elements '  ≔  ', '  ?=  ', '  ?\in  '.
+  //                      >:  "$Sc_g_equation_replace_ary":  Redefine element '  :=  '.
   // v01.004:  20130609:  !:  Include "Tools_v01_004.php"
   //           20130628:  +:  "$Glo_PathRel_back" added;
   // v01.003:  20130522:  !:  Include "Tools_v01_002.php"  -->  "Tools_v01_003.php"
@@ -623,13 +625,16 @@
   // #: The order of entries may be importened: As example see first ' + '-> ' \;+\; ' and than '+' -> '%2B'.
   $Sc_g_equation_replace_ary = array(
                                     // #: Arrange space around symbols and save chars.
-                                    array( '  :=  ', '\;\;\;:=\;\;\;'),
                                     array( '  =  ', '\;\;\;=\;\;\;'),
                                     array( '  <  ', '\;\;\;<\;\;\;'),
                                     array( '  \approx  ', '\;\;\;\approx\;\;\;'),
                                     array( '  \sim  ', '\;\;\;\sim\;\;\;'),
                                     array( '  \ll  ', '\;\;\;\ll\;\;\;'),
+                                    array( '  ≔  ', '\;\;\;≔\;\;\;'),
+                                    array( '  :=  ', '\;\;\;≔\;\;\;'),
+                                    array( '  ?=  ', '\;\;\;\overset{?}{=}\;\;\;'),
                                     array( '  \mapsto  ', '\;\;\;\mapsto\;\;\;'),
+                                    array( '  ?\in  ', '\;\;\;\overset{?}{\in}\;\;\;'),
                                     array( '  \rightarrow  ', '\;\;\;\rightarrow\;\;\;'),
                                     array( '  \not\rightarrow  ', '\;\;\;\not\rightarrow\;\;\;\;\;'),
                                     array( '\partial ', '\partial\,'),
