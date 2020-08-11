@@ -583,6 +583,20 @@
   $SpaLeb_g_figure_ary_TomDoppelrechtesGesicht = array( fig_file_name => 'Spannungsspiel-des-Lebens/Tom_Right_20160930_v1_1(7)', figFileType => 'jpeg', figPDF_is => false, fig_alt_description => 'Toms doppelrechtes Gesicht', width => '196px', height => '300px', border => '1px', name => 'set local!',
                                                          text => 'Toms doppelrechtes Gesicht');
 
+                                                         
+  $SupNum_g_figure_ary_sGeomKonstruktTeilung   = array( fig_file_name => 'SN/s-geom-Konstrukt-Teilung-v02', fig_alt_description => 'Rhythmische Zerlegung der Eins durch natürliche Zahlen', width => '600px', height => '290px', name => 'set local!',
+                                                         text => 'XXX'."\n".
+                                                                 'XXX'."\n".
+                                                                 'XXX'."\n".
+                                                                 'XXX');
+  
+  $SupNum_g_figure_ary_sGeomKonstruktWiederholung = array( fig_file_name => 'SN/s-geom-Konstrukt-Wiederholung-v02', fig_alt_description => 'Rhythmische Wiederholung auf Basis natürlicher Zahlen', width => '600px', height => '290px', name => 'set local!',
+                                                         text => 'XXX'."\n".
+                                                                 'XXX'."\n".
+                                                                 'XXX'."\n".
+                                                                 'XXX');
+  
+
 
   
   $Glo_g_Color_list = array_merge( array(
@@ -2788,9 +2802,13 @@
                                        text_undertitel_h2 => 'Mit den Superial-Zahlen die fraktale Struktur des Unendlichen entdecken',
                                        text_titel_discr_h3 => '',
                                        jump_ary => array(
+                                              'OM:SupNum:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                                                         
                                                 'OM:SupNum:Einleitung:Vortext:Frage-und-zweite-Erkenntnis' => array( headline_text => 'Frage und zweite Erkenntnis', headline_text_short => 'Frage und zweite Erkenntnis'),
                                                 'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N' => array( headline_text => 'SN.Ein.12', headline_text_short => 'SN.Ein.12'),
                                                 'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega' => array( headline_text => 'SN.Ein.14', headline_text_short => 'SN.Ein.14'),
+                                                'OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktWiederholung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:SupNum:Einleitung:Vortext:Ueberrationalitaetsvermutung' => array( headline_text => 'Überrationalitätsvermutung', headline_text_short => 'Überrationalitätsvermutung'),
                                                 'OM:SupNum:Einleitung:Vortext:Primzahlenprodukt-Vermutung' => array( headline_text => 'Primzahlenprodukt-Vermutung', headline_text_short => 'Primzahlenprodukt-Vermutung'),
                                             ),

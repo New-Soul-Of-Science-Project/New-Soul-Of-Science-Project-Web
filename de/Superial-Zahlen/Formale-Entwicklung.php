@@ -23,6 +23,10 @@
                     'Ich habe mich dafür entschieden dies auf eine Weise zu tun, die sicher stellt, dass möglichst große Teilmengen von ihnen als'."\n".
                     '\\jump{OM:SupNum:Formale-Entwicklung:GanzeSN}{ganze Superial-Zahlen}, als \\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSN}{natürliche Superial-Zahlen}'."\n".
                     'und als \\jump{OM:SupNum:Formale-Entwicklung:XXX}{superiale Primzahlen} definiert werden können.'."\n"))),
+                      
+                  array( 'figure',
+                    array_merge( $SupNum_g_figure_ary_sGeomKonstruktWiederholung, array( name => 'OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktWiederholung'))),
+                      
                   array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Vortext:XXX', text =>
                       
                 'Definition der superialen Einheit \\term{s}', subline =>
@@ -38,7 +42,11 @@
                                                label_text => '\\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Diese erfolgt über die superial kleine Einheit \\term{s^{-1}}.'."\n"))),
+                    'Diese zweite Möglichkeit erfolgt über die superial kleine Einheit \\term{s^{-1}}.'."\n"))),
+                      
+                  array( 'figure',
+                    array_merge( $SupNum_g_figure_ary_sGeomKonstruktTeilung, array( name => 'OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktTeilung'))),
+                      
                   array( 'text', array( text => array(
                   '\\condb{Definition von \\term{s^{-1}} über den Regen der natürlichen Zahlen} \\\\'."\n".
                     'XXX'."\n".
@@ -51,7 +59,13 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Explizite Anschauung der Prinzahlprodukts von \\term{s}} \\\\'."\n".
+                  '\\condb{Explizite Anschauung des Primzahlprodukts von \\term{s}} \\\\'."\n".
+                    'Für das Primzahlprodukt von \\term{s} ergibt sich in beiden Fällen eine mit unendlich mal unendlich vielen Primzahlen gefüllte Fläche der folgenden Art:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  s  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{1} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{2} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{3} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{\forall n \in \mathbb{N}} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots }'),
+                    ))),
+                  array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
