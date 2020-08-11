@@ -585,16 +585,14 @@
 
                                                          
   $SupNum_g_figure_ary_sGeomKonstruktTeilung   = array( fig_file_name => 'SN/s-geom-Konstrukt-Teilung-v02', fig_alt_description => 'Rhythmische Zerlegung der Eins durch natürliche Zahlen', width => '600px', height => '290px', name => 'set local!',
-                                                         text => 'XXX'."\n".
-                                                                 'XXX'."\n".
-                                                                 'XXX'."\n".
-                                                                 'XXX');
+                                                         text => 'Die Grafik zeigt, wie durch die Projektion der Begrenzungspunkte aller regelmäßigen natürlichzahligen Teilstrecken auf die Einheitsstrecke,'."\n".
+                                                                 'von der Eins an bis ins Unendliche, und durch das Interpolieren ihrer Begrenzungspunkte zu einem gleichmäßigen Rhythmus,'."\n".
+                                                                 'nach und nach als Abstand zwischen den Punkten die superiale Zahl \\term{s^{−1}} konstruiert wird.'."\n".
+                                                                 'Als Begrenzungspunktanzahl, ohne die Eins, oder als Anzahl der Teilstrecken ergibt sich die superiale Basis \\term{s}.');
   
   $SupNum_g_figure_ary_sGeomKonstruktWiederholung = array( fig_file_name => 'SN/s-geom-Konstrukt-Wiederholung-v02', fig_alt_description => 'Rhythmische Wiederholung auf Basis natürlicher Zahlen', width => '600px', height => '290px', name => 'set local!',
-                                                         text => 'XXX'."\n".
-                                                                 'XXX'."\n".
-                                                                 'XXX'."\n".
-                                                                 'XXX');
+                                                         text => 'Die Grafik zeigt, wie durch den Zusammenfall aller Rhythmen der natürlichen Zahlen,'."\n".
+                                                                 'von der Eins an bis ins Unendliche, die superiale Basis s konstruiert wird.'."\n");
   
 
 
@@ -2807,8 +2805,6 @@
                                                 'OM:SupNum:Einleitung:Vortext:Frage-und-zweite-Erkenntnis' => array( headline_text => 'Frage und zweite Erkenntnis', headline_text_short => 'Frage und zweite Erkenntnis'),
                                                 'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N' => array( headline_text => 'SN.Ein.12', headline_text_short => 'SN.Ein.12'),
                                                 'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega' => array( headline_text => 'SN.Ein.14', headline_text_short => 'SN.Ein.14'),
-                                                'OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktWiederholung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                                                'OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:SupNum:Einleitung:Vortext:Ueberrationalitaetsvermutung' => array( headline_text => 'Überrationalitätsvermutung', headline_text_short => 'Überrationalitätsvermutung'),
                                                 'OM:SupNum:Einleitung:Vortext:Primzahlenprodukt-Vermutung' => array( headline_text => 'Primzahlenprodukt-Vermutung', headline_text_short => 'Primzahlenprodukt-Vermutung'),
                                             ),
@@ -2824,6 +2820,10 @@
                                        text_undertitel_h2 => 'Definition der Superial-Zahlen und ihrer Untermengen',
                                        text_titel_discr_h3 => '',
                                        jump_ary => array(
+                                              'OM:SupNum:Formale-Entwicklung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                                                         
+                                                'OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktWiederholung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                               'OM:SupNum:Formale-Entwicklung:GanzeSN' => array( headline_text => 'Ganze Superial-Zahlen', headline_text_short => 'Ganze Superial-Zahlen'),
                                               'OM:SupNum:Formale-Entwicklung:NatuerlicheSN' => array( headline_text => 'Natürliche Superial-Zahlen', headline_text_short => 'Natürliche Superial-Zahlen'),
                                               'OM:SupNum:Formale-Entwicklung:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
