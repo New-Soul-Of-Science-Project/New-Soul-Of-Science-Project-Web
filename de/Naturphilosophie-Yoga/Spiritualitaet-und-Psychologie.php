@@ -218,7 +218,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:XXX'),
+                      array(  jump_name => 'OM:NPYo:WieVeraendereIchMeineVergangenheit'),
                     )),
                 )
           ); ?>
@@ -227,8 +227,7 @@
           
 
 		    	<!  • XXX  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
             'OM:NPYo:Spiritualitaet-Psychologie:XXX',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -267,7 +266,7 @@
                       //array(  jump_name => 'OM:FrQFT:XXX'),
                     )),
               )
-          ); ?>
+          ); */ ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

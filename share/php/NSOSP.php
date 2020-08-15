@@ -1803,7 +1803,7 @@
                                 array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Existenz-Leichtigkeit-Yin-Yang-Prinzip-Tai-Chi-Djet-Neheh-Wu-Wei-Fluss-Weg-Dao-Daoismus.php',
                                        url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Existenz-Leichtigkeit-Yin-Yang-Prinzip-Tai-Chi-Djet-Neheh-Wu-Wei-Fluss-Weg-Dao-Daoismus.php',
                                        titel => 'Existenz und Leichtigkeit - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
-                                       description => 'XXX.',
+                                       description => 'Dao, Qi, Yin und Yang sowie Wu Wei. Die Naturphilosophie der Physik des Achtsamkeitsprozesses findet sich in den Grundkonzepten des Daoismus.',
                                        keywords => '',
                                        text_titel_h1 => 'Existenz und Leichtigkeit',
                                        text_titel_short => 'Existenz und Leichtigkeit',
@@ -1892,7 +1892,7 @@
                                                          
                                                 'OM:NPYo:Spiritualitaet-Psychologie:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
                                                          
-                                              'OM:NPYo:Spiritualitaet-Psychologie:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                                              // 'OM:NPYo:Spiritualitaet-Psychologie:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
                                             ),
                                      ),
                               'OM:NPYo:Stein-der-Weisen' =>
@@ -1969,6 +1969,24 @@
                                               'OM:NPYo:WasUnterschiedYogaSport:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
                                                 'OM:NPYo:WasUnterschiedYogaSport:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                                            ),
+                                     ),
+                              'OM:NPYo:WieVeraendereIchMeineVergangenheit' =>
+                                array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Wie-veraendere-ich-meine-Vergangenheit.php',
+                                       url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Wie-veraendere-ich-meine-Vergangenheit.php',
+                                       titel => 'Wie verändere ich meine Vergangenheit - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
+                                       description => 'Unsere Vergangenheit ist für uns, was sie uns bedeutet.',
+                                       keywords => '',
+                                       text_titel_h1 => 'Wie verändere ich meine Vergangenheit',
+                                       text_titel_short => 'Wie verändere ich meine Vergangenheit',
+                                       text_undertitel_h2 => 'Unsere Vergangenheit ist für uns, was sie uns bedeutet',
+                                       text_titel_discr_h3 => '',
+                                       jump_ary => array(
+                                              'OM:NPYo:WieVeraendereIchMeineVergangenheit:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                                                         
+                                                'OM:NPYo:WieVeraendereIchMeineVergangenheit:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                                                         
+                                              // 'OM:NPYo:WieVeraendereIchMeineVergangenheit:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
                                             ),
                                      ),
                               'OM:NPYo:WS-Achtsamkeitsprozess-WoPhysikAufYogaTrifft' =>

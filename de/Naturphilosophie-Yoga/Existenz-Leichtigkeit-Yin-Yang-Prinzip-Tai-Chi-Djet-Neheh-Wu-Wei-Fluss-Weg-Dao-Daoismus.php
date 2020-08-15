@@ -220,6 +220,13 @@
                       
                 'Wu Wei', subline =>
                   'Im Fluss sein – Gelassen sein und im rechten Moment handeln')),
+                      
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '\\bold{Prioritäten und Entscheidungen}',
+                     '• Wu Wei hat etwas damit zu tun, gute Prioritäten zu setzen und gute Entscheidungen zu fällen, siehe \\italic{\\jumpname{OM:SpaLeb:Psychosomatik-Entscheidungen}}.',
+                     '⋅ Unser Leben bekommt mehr Leichtigkeit, wenn wir die Interpretation unserer Vergangenheit durch für uns leichtere Neuinterpretationen ergänzen. Wir verändern dadurch tatsächlich unsere Vergangenheit (siehe \\italic{\\jumpname{OM:NPYo:WieVeraendereIchMeineVergangenheit}}).',
+                    ))),
+                      
                   array( 'text', array( text => array(
                     'Wu Wei hat etwas damit zu tun, zu lernen, nicht zu früh in Aktion zu kommen und damit unnötig viel Kraft und Energie aufzuwenden.'."\n".
                     'Wir lernen gelassen zu bleiben; meist eine gewisse emotionale Distanz einzunehmen und doch involviert zu bleiben.'."\n"))),

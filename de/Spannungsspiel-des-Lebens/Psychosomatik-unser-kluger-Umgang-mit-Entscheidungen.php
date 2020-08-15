@@ -26,6 +26,7 @@
                     '\\bold{Nützlichkeit und Perspektivwechsel – das kluge Spiel mit Ambiguitäten, deren Tolleranz deren Auflösung durch Entscheidungen und durch Plausibilisierung:}',
                     '• Siehe auch \\italic{\\jumpname[][title]{OM:SpaLeb:Vor-PerspektivW-AmbiguitaetsT-Entscheid-Demokra}}.',
                     '– Durch Perspektivwechsel können wir die Bedeutung und Bewertung unserer Vergangenheit, Gegenwart und Zukunft verändern. Perspektivwechsel können so unsere Psychosomatik nachhaltig beeinflussen.',
+                    '• Unser Leben bekommt mehr Leichtigkeit, wenn wir die Interpretation unserer Vergangenheit durch für uns leichtere Neuinterpretationen ergänzen. Wir verändern dadurch tatsächlich unsere Vergangenheit (siehe \\italic{\\jumpname{OM:NPYo:WieVeraendereIchMeineVergangenheit}}).',
                     ))),
                       
                   array( 'text', array( text => array(
