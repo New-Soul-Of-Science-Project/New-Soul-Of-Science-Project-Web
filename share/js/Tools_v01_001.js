@@ -288,11 +288,12 @@ function To_f_manage_resize() {
     if ((content != null) && (navigation != null))
       // #?: Is "clientHeight" in all of them def?
       if (content.clientHeight && navigation.clientHeight) {
+        // var loc_content_clientHeight;
         var loc_header_clientHeight;
         var loc_extra_clientHeight;
         var loc_footer_clientHeight;
 
-        // #?: Navigation original height not def? Than save!
+        // #?: Navigation original height not def? Then save!
         if (To_g_navigationOrigHeight == null) {
           To_g_navigationOrigHeight = navigation.clientHeight;
           console.log( 'To_g_navigationOrigHeight: ' + To_g_navigationOrigHeight);
@@ -300,7 +301,7 @@ function To_f_manage_resize() {
         
         // #?: "extra" def?
         if ((extra != null) && extra.clientHeight)
-          // #?: Extra original height not def? Than save!
+          // #?: Extra original height not def? Then save!
           if (To_g_extraOrigHeight == null) {
             To_g_extraOrigHeight = extra.clientHeight;
             console.log( 'To_g_extraOrigHeight: ' + To_g_extraOrigHeight);
@@ -386,14 +387,21 @@ function To_f_manage_resize() {
             console.log( 'Resize - navigation.clientHeight: ' + navigation.clientHeight);
             
             // #: Make the content as long as navigation and extra together.
-            content.style.height = (navigation.clientHeight + loc_extra_clientHeight) + 'px';
-            console.log( 'Resize - content.clientHeight = ' + content.clientHeight);
+            //%! content.style.height = (navigation.clientHeight + loc_extra_clientHeight) + 'px';
+            //%! console.log( 'Resize - content.clientHeight = ' + content.clientHeight);
+            content.style.height = (loc_navigationHeight_new + loc_extra_clientHeight) + 'px';
+            console.log( 'Resize - content.style.height = ' + content.style.height);
           }
         }
 
         
         // #: Fit "content"
         // #?: Is the content height smaller then the of extra and navigation together?
+        /*%! if (content.clientHeight < loc_extra_clientHeight + navigation.clientHeight) {
+          // #: Make the content as long as navigation and extra together.
+          content.style.height = (navigation.clientHeight + loc_extra_clientHeight) + 'px';
+          console.log( 'content.style.height = ' + content.style.height);
+        } */
         if (content.clientHeight < loc_extra_clientHeight + navigation.clientHeight) {
           // #: Make the content as long as navigation and extra together.
           content.style.height = (navigation.clientHeight + loc_extra_clientHeight) + 'px';
