@@ -29,6 +29,8 @@
                     '\\bold{Bewusstsein, Fokus etc.:}',
                     '• Unser Unterbewusstsein, unser grundlegendes Bewusstsein, ist bei Elementarteilchen das gesamte Bewusstsein, weil sie annehmen müssen, was kommt, ohne filtern zu können, also einen Fokus zu haben.',
                     '• Lebewesen haben hingegen einen Fokus, der über Filter verfügt und damit eine weiter Bewusstseinsebene einführt. Sie kann einen Teil der Wahrnehmung ausblenden.',
+                    '\\bold{Schlaf und Aktivsein, Unterbewusstsein und Bewusstsein}',
+                    '• Siehe auch \\italic{\\jumpname{OM:SpaLeb:Schlaf-und-Aktivsein}}',
                     '\\bold{Aktuelle Diskussionen:}',
                     '• Vorstellung und Diskussion der bekanntesten Ideen vom Bewusstsein: Siehe \\cite{Blackmore:BewusstseinDasSchwierigsteProblem:2019}.',
                     '– Der Forschertyp A in der Bewusstseinsforschnung sagt, Bewusstsein hat keine eigene Funktion, die vom Leben unabhängig wäre. Daher ist Bewusstsein nicht vom Leben zu trennen. Jedes Lebewesen hat es.',
