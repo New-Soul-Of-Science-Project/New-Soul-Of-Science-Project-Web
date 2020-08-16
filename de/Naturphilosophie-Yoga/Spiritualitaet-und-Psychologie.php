@@ -250,6 +250,10 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Spiritualitaet-Psychologie:Vortext:XXX', text =>
+                      
+                'XXX', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
