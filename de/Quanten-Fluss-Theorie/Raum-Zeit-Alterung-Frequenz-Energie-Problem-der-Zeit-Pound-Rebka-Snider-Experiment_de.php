@@ -192,6 +192,11 @@
                     'lichtähnlichen Strukturen in Relation zur konstanten Bewegung der Wirkungsquanten.'."\n",
                       'Auch die relative Dichteveränderung von hintereinander herlaufenden lichtähnlichen Teilchen, wie polarisierte Photonen, unpolarisierte Photonen des Vakuums –'."\n".
                     'die Vakuum-Elapsonen –, oder ähnliche Strukturen in Materie-Elementarteilchen, verhält sich wie die relative Veränderung der Lichtgeschwindigkeit.'."\n",
+                      'Die Raumzeitkrümmung der Allgemeinen Relativitätstheorie ebenso wie ihre gravitative Zeitdilatation erscheinen im Wirkungsquanten-Bewegungsraum'."\n".
+                    'also als Veränderung der dynamischen Strukturen des Vakuums und der Elementarteilchen in Relation zu den Verhältnissen beim Beobachter.'."\n".
+                    'Eine aus Sicht eines Beobachters verändert erscheinende Lichtgeschwindigkeit ist auch im Rahmen der Allgemeinen Relativitätstheorie als'."\n".
+                    'Shapiro-Verzögerung\\footnote{\\const{FrQFT_g_footnote_text_ShapiroVersoegerung}} bekannt.'."\n".
+                    'Im Wirkungsquanten-Bewegungsraum gibt es diesbezüglich Besonderheiten, auf die wir gleich noch zu sprechen kommen.'."\n",
                       'Aus Sicht des \\jump{OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:KosBeob}{kosmischen Beobachters} nimmt'."\n".
                     'die konstante \\jump{OM:FrQFT:ZeitAlterungFrequenz:Wirkungsquanten-Geschwindigkeit}{Wirkungsquanten-Geschwindigkeit} einen Wert an,'."\n".
                     'der in einem besonderen Verhältnis zur Lichtgeschwindigkeitskonstanten steht, wie wir noch sehen werden:'."\n"))),
@@ -227,7 +232,7 @@
                                                label_text => '\\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-LGKos-1}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Im Folgenden gehen wir zu Perspektiven über, die den Richtungsbezug der Lichtausbreitung nicht mehr haben.'."\n"))),
+                    'Im Folgenden gehen wir zu Perspektiven über, die den Richtungsbezug der Lichtausbreitung nicht mehr besitzen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:XXX', text =>
                                            
                 'Licht-Bewegungsraum')),

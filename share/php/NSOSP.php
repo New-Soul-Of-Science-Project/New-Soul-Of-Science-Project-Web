@@ -208,6 +208,7 @@
   $FrQFT_g_footnote_text_RZKruem                = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:ART2013}, Grundlegende Konzepte, Raumzeitkrümmung.';
   $FrQFT_g_footnote_text_SchwLoch               = 'Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 9 Schwarze Löcher, S. 291-323. \\\\ Internet: \\\\ Vgl. \\cite{wiki:SchwarzesLoch2014}.';
   $FrQFT_g_footnote_text_SchwarzschildMetrik    = 'Vgl. \\cite{Schwarzschild:UeberDasGravitationsfeldEinesMassenpunktes:1916.2014}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Schwarzschild-Metrik:2020}.';
+  $FrQFT_g_footnote_text_ShapiroVersoegerung    = 'Vgl. \\cite{Shapiro:FourthTestOfGeneralRelativity:1964:PhysRevLett.13.789}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:ShapiroVerzoegerung:2015}.';
   $FrQFT_g_footnote_text_SMK                    = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Peebles:Zustandsbericht2001}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Kosmologie2015}, Standardmodell.';
   $FrQFT_g_footnote_text_SMT                    = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Kane:NeuePhysik2003}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Standardmodell2015}.';
   $FrQFT_g_footnote_text_SpontSymBrech          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Spillner:SymmetriebruecheInDerNatur:2008}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:SpontaneSymmetriebrechung2014}. \\\\ Vgl. \\cite{wiki:Symmetriebrechung:2015}.';
@@ -797,12 +798,13 @@
                                 array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Basisteilchenmodell-im-Vergleich_de.php',
                                        url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Basisteilchenmodell-im-Vergleich_de.php',
                                        titel => 'Basisteilchenmodell im Vergleich - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
-                                       description => 'Die Quanten-Fluss-Theorie im Vergleich mit dem Basisteilchenmodell.',
+                                       description => 'Das wunderbar einfache Basisteilchenmodell von Albrecht Giese beschriebt viele grundlegende Eigenschaften der Elementarteilchen, aber die Quanten-Fluss-Theorie dringt weiter in die Tiefe und merzt Probleme aus, welche Gieses Modell noch hat.',
                                        keywords => '',
                                        text_titel_h1 => 'Basisteilchenmodell im Vergleich',
                                        text_titel_short => 'Basisteilchenmodell im Vergleich',
-                                       text_undertitel_h2 => 'Auf der Ebene der Lichtbewegung sehr ähnlich',
-                                       text_titel_discr_h3 => 'Das Basisteilchenmodell ist wunderbar einfach und beschriebt viele grundlegende Eigenschaften der Elementarteilchen. Die Quanten-Fluss-Theorie dringt weiter in die Tiefe und merzt Probleme aus, welche das Basisteilchenmodell noch hat.',
+                                       text_undertitel_h2 => 'Auf Ebene der Lichtbewegung sind sich beide sehr ähnlich',
+                                       //%! text_titel_discr_h3 => 'Das Basisteilchenmodell ist wunderbar einfach und beschriebt viele grundlegende Eigenschaften der Elementarteilchen. Die Quanten-Fluss-Theorie dringt weiter in die Tiefe und merzt Probleme aus, welche das Basisteilchenmodell noch hat',
+                                       text_titel_discr_h3 => 'Das wunderbar einfache Basisteilchenmodell von Albrecht Giese beschriebt viele grundlegende Eigenschaften der Elementarteilchen, aber die Quanten-Fluss-Theorie dringt weiter in die Tiefe und merzt Probleme aus, welche Gieses Modell noch hat',
                                        jump_ary => array(
                                               'OM:FrQFT:Basisteilchenmodell:Gravitation' => array( headline_text => 'Gravitation', headline_text_short => 'Gravitation'),
                                               'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-Frequenz-im-Gravitationsfeld' => array( headline_text => 'Elementarteilchen-Frequenz im Gravitationsfeld', headline_text_short => 'Elementarteilchen-Frequenz im Gravitationsfeld'),

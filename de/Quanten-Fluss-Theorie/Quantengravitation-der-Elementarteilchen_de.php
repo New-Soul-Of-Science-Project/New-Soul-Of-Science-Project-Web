@@ -918,17 +918,26 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Wir bekommen auf diese Weise eine Idee der Struktur der Gravitationskonstanten, wobei die Werte von vier der fünf Konstanten noch'."\n".
+                    'Die Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-GraLGEinstein} entspricht der Shapiro-Verzögerung\\footnote{\\const{FrQFT_g_footnote_text_ShapiroVersoegerung}}'."\n".
+                    'des Lichts im Gravitationsfeld, wenn wir die Längenkontraktion der Strukturen im Gravitationsfeld berücksichtigen.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX', text =>
+                                           
+                'Die Struktur der Gravitationskonstanten', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wir bekommen auf diese Weise über die Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-GraviKonstStruktur} eine Idee der Struktur der Gravitationskonstanten, wobei die Werte von vier der fünf Konstanten noch'."\n".
                     'nicht bekannt sind.\\footnote[*Entwick]{\\color{*Entwick}{Eine genaue Herleitung der unbekannten Konstanten wird gesucht. Hinweise darauf sind erbeten.}}'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                       'Der Fortschritt im Vergleich zu Gieses Formulierung der Lichtverlangsamung besteht darin, dass sich so ein nachvollziehbarer Zusammenhang mit der Masse'."\n".
                       'des anziehenden Objekts ergibt und nicht „nur“ mit der Anzahl an Elementarteilchen in diesem Objekt.'."\n"))),
                       
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX', text =>
-                                           
-                'Die Struktur der Gravitationskonstanten', subline =>
-                  '')),
                   array( 'text', array( text => array(
                     'Der Wert der Gravitationskonstanten kann leider noch nicht hergeleitet werden, aber wir sind hiermit diesem Ziel einen Schritt näher gekommen.'."\n".
                     'Und zwar dadurch, mehr Einblick in die Strukturen zu gewinnen, die Grundlage ihrer Entstehung sind.'."\n",
@@ -988,7 +997,7 @@
                 'Berechnung der Lichtbeugung', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die sich dadurch ergebende Ablenkung des Lichts durch einen massiven Himmelskörper, wie unsere Sonne, entspricht den Beobachtungen\\footnote{Vgl. \\cite{Shapiro:FourthTestOfGeneralRelativity:1964:PhysRevLett.13.789}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:ShapiroVerzoegerung:2015}.},'."\n".
+                    'Die sich dadurch ergebende Ablenkung des Lichts durch einen massiven Himmelskörper, wie unsere Sonne, entspricht den Beobachtungen\\footnote{\\const{FrQFT_g_footnote_text_ShapiroVersoegerung}},'."\n".
                     'wie Giese in seiner Arbeit zeigt.\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}, 2 Bending of a Beam of Light Passing a Massive Object, S. 1-3, hier S. 3. Und: Appendix A, Mathematical Deduction of the Refraction Process, S. 14-17.}'."\n"))),
                       
                   array( 'jumplist', array(
