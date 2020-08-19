@@ -806,8 +806,11 @@
                                        //%! text_titel_discr_h3 => 'Das Basisteilchenmodell ist wunderbar einfach und beschriebt viele grundlegende Eigenschaften der Elementarteilchen. Die Quanten-Fluss-Theorie dringt weiter in die Tiefe und merzt Probleme aus, welche das Basisteilchenmodell noch hat',
                                        text_titel_discr_h3 => 'Das wunderbar einfache Basisteilchenmodell von Albrecht Giese beschriebt viele grundlegende Eigenschaften der Elementarteilchen, aber die Quanten-Fluss-Theorie dringt weiter in die Tiefe und merzt Probleme aus, welche Gieses Modell noch hat',
                                        jump_ary => array(
+                                              'OM:FrQFT:Basisteilchenmodell:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                                                         
                                               'OM:FrQFT:Basisteilchenmodell:Gravitation' => array( headline_text => 'Gravitation', headline_text_short => 'Gravitation'),
                                               'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-Frequenz-im-Gravitationsfeld' => array( headline_text => 'Elementarteilchen-Frequenz im Gravitationsfeld', headline_text_short => 'Elementarteilchen-Frequenz im Gravitationsfeld'),
+                                                'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-Frequenz-im-Gravitationsfeld:Equ-FrequnezGravi' => array( headline_text => 'Bas.13', headline_text_short => 'Bas.13'),
                                               'OM:FrQFT:Basisteilchenmodell:Vakuum-und-virtuelle-Teilchen' => array( headline_text => 'Vakuum und virtuelle Teilchen', headline_text_short => 'Vakuum und virtuelle Teilchen'),
                                             ),
                                      ),
@@ -869,7 +872,6 @@
                                        text_titel_discr_h3 => '',
                                        jump_ary => array(
                                               'OM:FrQFT:Dunkle-Energie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-                                                         
                                                          
                                               'OM:FrQFT:Dunkle-Energie:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
                                             ),
