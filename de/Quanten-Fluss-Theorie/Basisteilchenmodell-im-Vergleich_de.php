@@ -53,12 +53,23 @@
 		    	<!  • Gravitation  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
             'OM:FrQFT:Basisteilchenmodell:Gravitation',
-              'Jedes Elementarteilchen hat die gleiche Gravitation', 'Sc_f_Paragraph',
+              'Im Basisteilchenmodell hat jedes Elementarteilchen die gleiche Quantengravitation. Die Quanten-Fluss-Theorie beschreibt die Quantengravitation der Elementarteilchen realistisch nach deren Masse', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Basisteilchenmodell', type => 'back'),
                     )),
                                             
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{In Arbeit …}'."\n",
+                      'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n",
                       'XXX'."\n".
@@ -81,7 +92,7 @@
 		    	<!  • Elementarteilchen-Frequenz im Gravitationsfeld  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
             'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-Frequenz-im-Gravitationsfeld',
-              'Die Frequenz der Teilchen wird in der Quanten-Fluss-Theorie realistischer beschrieben', 'Sc_f_Paragraph',
+              'Die Frequenz der Elementarteilchen im Basisteilchenmodell sinkt bei steigender Gravitation, im Widerspruch zu den experimentellen Beobachtungen. Dies wird in der Quanten-Fluss-Theorie realistisch beschrieben, hier steigt deren Frequenz', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Basisteilchenmodell:Gravitation', type => 'back'),
@@ -107,7 +118,7 @@
                     'Weg \\term{_{r,p}w_{red}} mit der Geschwindigkeit \\term{_{r,p}c_{eff}}:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  _{r,p}c_{eff}  =  \frac{_{r,p}w_{red}}{t}  }'),
+                      array( display => 'on',  latex => '{  _{r,p}c_{eff}  =  \frac{ _{r,p}w_{red} }{ t }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dabei ist \\term{r} der Abstand vom Zentrum eines Zentralmasse.'."\n".
@@ -117,7 +128,7 @@
                   array( 'equations',
                     array( equ_text_std => 'Bas', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f  =  \frac{1}{t}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  _{r,p}f_{H}  =  \frac{ _{r,p}c_{eff}}{_{r,p}w_{red} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  _{r,p}f_{H}  =  \frac{ _{r,p}c_{eff} }{ _{r,p}w_{red} }  }'),
                     ))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-Frequenz-im-Gravitationsfeld:XXX', text =>
                                            
@@ -139,14 +150,14 @@
                     'wenn \\term{w_{0}} ohne Verzerrung ist:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  _{r,p}w_{red}  =  w_{\lowZero} \cdot \left( 1-\frac{g \cdot N}{c_{0}^{2} \cdot r} \right)^{p-\frac{1}{2}}  }',
-                                               footnote => 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, Speed Reduction in Detail, S. 20-22, hier Formel C.8, S. 22. Die erste Variable rechts direkt neben dem Gleichheitszeichen \\term{d_{0}} ist dort mit \\term{r} benannt. Diese Benennung ist fehlerhaft, weil es eine weitere Variable \\term{r} unter dem Bruch gibt, die von der ersten unabhängig ist. Beide müssen also unterschieden werden, weil die erste neben dem Gleichheitszeichen eine generelle geometrische Ausdehnung von Strukturen meint, während die zweite den Abstand vom Zentrum einer Zentralmasse bedeutet. Folgerichtig habe ich dann die Variable \\term{r_{red}} bei Giese in \\term{d_{red}} umbenannt, weil diese die Reduktion der Ausdehnung einer generellen Struktur meint. Die Konstante \\term{c} habe ich wegen der Eindeutigkeit in \\term{c_{0}} umbenannt.'),
+                      array( display => 'on',  latex => '{  _{r,p}w_{red}  =  w_{\lowZero} \cdot \left( 1-\frac{g \cdot N}{c_{0}^{2} \cdot r} \right)^{p - \frac{1}{2}}  }',
+                                               footnote => '\\const{FrQFT_g_footnote_text_BasisteilchenMGravityLK}'),
                     ))),
                   array( 'text', array( text => array(
                     'Diese geometrische Verzerrung der Struktur von Elementarteilchen im Gravitationsfeld ergibt sich nach Giese, weil sich mit der Veränderung'."\n".
                     'der Lichtgeschwindigkeit auch die Ausbreitungsgeschwindigkeit der Wechselwirkungsteilchen ändert, die die beiden Basisteilchen aneinander binden.'."\n".
                     'Dieser der Lorentzkontraktion äquivalente Effekt im Zusammenhang mit Bindungsfeldern ist auch als Heaviside-Ellipsoid bekannt.\\footnote{\\const{FrQFT_g_footnote_text_LorentzKontrFelder}}'."\n",
-                      'Für die Frequenz ergibt sich dann, wenn \\term{_{r}S} zur Substitution genutzt wird:'."\n"))),
+                      'Für die Frequenzen ergibt sich dann, wenn \\term{_{r}S} zur Substitution genutzt wird:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  _{r}S  =  \left( 1-\frac{g \cdot N}{c_{0}^{2} \cdot r} \right)  }'),
@@ -194,29 +205,30 @@
                       'Die de-Broglie-Frequenz \\term{_{r}f} eines Elementarteilchens in Gieses Basisteilchenmodell nimmt also bei zunehmender Gravitation ab.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-Frequenz-im-Gravitationsfeld:XXX', text =>
                                            
-                'Widerspruch zur experimentellen Beobachtung', subline =>
+                'Widerspruch des Basisteilchenmodells zur experimentellen Beobachtung', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Qualitativ kann man sagen, dass im Pound-Rebka-Snider-Experiment\\footnote[*Bearb]{\\const{FrQFT_g_footnote_text_PoundRebka}} bei Zunahme der Gravitation, im Gegensatz dazu, eine Zunahme der de-Broglie-Frequenz beobachtet wird.'."\n".
-                    'Das Basisteilchenmodell widerspricht an dieser Stelle den experimentellen Beobachtungen.'."\n"))),
+                    'Das Basisteilchenmodell widerspricht in diesem Punkt den experimentellen Beobachtungen.'."\n"))),
+                      
+                  // array( 'youtube',
+                  //   array_merge( $FrQFT_g_youtube_ary_Lepton, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton'))),
+                  array( 'figure',
+                    array_merge( $FrQFT_g_figure_ary_Lepton_highRes, array( name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-Frequenz-im-Gravitationsfeld:Ani-Lepton',
+                                                         text => 'Ein Wirkungsquanten-String eines hypothetischen, geladenen Leptons; ein Elektron oder eines seiner Verwandten.'."\n".
+                                                                 'Die Wirkungsquanten sind als rote Kugeln dargestellt.'))),
+                      
                   array( 'headline', array( jump_name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-Frequenz-im-Gravitationsfeld:XXX', text =>
                                            
                 'Kein Widerspruch in der fraktalen Quanten-Fluss-Theorie', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die Quanten-Fluss-Theorie besitzt in dieser Beziehung eine andere Feinstruktur und ist daher in der Lage den Beobachtungen zu entsprechen.'."\n",
-                      '\\color{*Bearb}{In Arbeit …}'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Die Quanten-Fluss-Theorie besitzt in dieser Beziehung eine andere Feinstruktur und ist daher, trotz der Ähnlichkeit beider Theorien,'."\n".
+                    'in der Lage, den Beobachtungen zu entsprechen.'."\n",
+                      'Dies ist möglich, weil die Elementarteilchen-Frequenz in der Quanten-Fluss-Theorie nicht der Rotation des Haupt-Spins entspricht, wie im Basisteilchenmodell,'."\n".
+                    'sondern der inneren Rotation der Wirkungsquanten \\color{*Bearb}{(Verweis auf die noch einzupflegende Herleitung der Leptonen-Struktur)}.'."\n".
+                    'In der \\jumpname{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-Frequenz-im-Gravitationsfeld:Ani-Lepton} entspricht diese Frequenz der Rotation'."\n".
+                    'der als rote Kugeln eingezeichneten Wirkungsquanten um die grüne Lichtbahn.'."\n"))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Basisteilchenmodell:Vakuum-und-virtuelle-Teilchen'),
