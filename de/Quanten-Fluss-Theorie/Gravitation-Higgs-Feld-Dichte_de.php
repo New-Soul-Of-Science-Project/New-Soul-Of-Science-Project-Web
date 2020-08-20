@@ -281,8 +281,9 @@
               'Eine Verzerrung des strukturellen Kontexts – der Elementarteilchen- und Vakuum-Geometrie – im Umfeld von großen Massen als reales Äquivalent zur Raumzeitkrümmung', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
-                    '(• Auf die Seite \\jumpname{OM:VRT:Laengenkontraktion-Bewegung} verlagern oder beziehen!)',
-                    '(• Einen Faktor für den strukturellen Kontext einführen, der richtungsabhängig ist? Die Kontraktion hängt über die Aussendung von Wechselwirkungsteilchen mit dem Verhältnis der Lichtgeschwindigkeiten in unterschiedlichen Richtungen zusammen. Siehe \\cite{Giese:RelaContra2009}, und \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Alterung}. \\\\ Genauer untersuchen, wie das Zusammen hängt. Am besten mit dem Verständnis und der Aufarbeitung von Gieses Darstellung und Berechnung beginnen.)',
+                    '• Auf die Seite \\jumpname{OM:VRT:Laengenkontraktion-Bewegung} verlagern oder beziehen!',
+                    '– Die Längenkontraktion von Elementarteilchen im Gravitationsfeld wird auch hier angesprochen oder soll dort angesprochen werden: \\italic{\\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung}} und \\italic{\\jumpname{OM:VRT:Laengenkontraktion-Bewegung}}',
+                    '• Einen Faktor für den strukturellen Kontext einführen, der richtungsabhängig ist? Die Kontraktion hängt über die Aussendung von Wechselwirkungsteilchen mit dem Verhältnis der Lichtgeschwindigkeiten in unterschiedlichen Richtungen zusammen. Siehe \\cite{Giese:RelaContra2009}, und \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Alterung}. \\\\ Genauer untersuchen, wie das Zusammen hängt. Am besten mit dem Verständnis und der Aufarbeitung von Gieses Darstellung und Berechnung beginnen.',
                     ))),
                       
                   array( 'normal',
