@@ -575,6 +575,8 @@
                       
                   array( 'notice', array( Display => 'vis', text => array(
                     '\\bold{Körperliche Hinweise auf den Achtsamkeitsprozess}',
+                    '• Die Verbindung unserer körperlichen Gefühlsseite, unseres Gefühlspols, mit unserem Unterbewussten und unserer körperlichen Handlungsseite, unseres Handlungspols, mit unserem Bewusstsein zeigt sich in Folgendem (siehe auch \\italic{\\jumpname{OM:SpaLeb:Schlaf-und-Aktivsein}}):',
+                    '– Unser Herz, dessen Schlag wir nicht bewusst steuern können, liegt auf unserer körperlichen Gefühlsseite des Unterbewussten, dafür ist auf dieser Seite unsere Lunge verkleinert. Wir können also sagen, dass unsere Atmung sowohl auf unserer unterbewussten Seite, als auch auf unserer bewussten Seite, mit dem leichten Schwerpunkt in Richtung Bewusstsein, verortet ist. So in etwa beobachten wir auch unsere Verbindung zu unserer Atmung.',
                     '• Siehe \\bold{Wachen und Schlafen – Sympathikus und Parasympathikus}: \\italic{\\jumpname{OM:NPYo:HaTha}}.',
                     '– Im Pranayama, den Atemtechniken des Yoga, kann durch links- oder rechtsbetonte Ein- und Ausatmung Sympathikus oder Parasympathikus stimuliert werden, während der Gegenpol beruhigt wird. Dies kann hin bis zum Einschlafen oder Aufwachen genutzt werden.',
                     '⋅ Sogar die Fraktalität des Achtsamkeitsprozess kann beobachtet werden: Bei der Förderung des Einschlafens durch Atmung wird die passive Gefühlsseite aktiviert und die aktive Handlungsseite deaktiviert.',
