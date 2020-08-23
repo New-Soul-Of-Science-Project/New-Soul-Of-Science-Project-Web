@@ -256,7 +256,7 @@
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
             'OM:FrQFT:Quantengravitation:Lichtverlangsamung',
-              'Aus virtuellen Wirkungsquanten bestehende Störungswellen verlangsamen das Licht', 'Sc_f_Paragraph',
+              'Aus virtuellen Wirkungsquanten bestehende Störungswellen erzeugen die Shapiro-Verzögerung des Lichts', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellGravirad', type => 'back'),
@@ -991,6 +991,10 @@
                                            
                 'Die Lichtgeschwindigkeitsänderung im Gravitationsfeld entspricht der Shapiro-Verzögerung', subline =>
                   '')),
+                  array( 'notice', array( Display => 'vis', text => array(
+                    // '\\bold{Biologischer Bezug}',
+                    '• Für die Lichtbeugung durch die Lichtverlangsamung beziehungsweise die Shapiro-Verzögerung ist nur die radiale Veränderung mit \\term{p = 1} entscheidend, weil die Beugung durch den Dichte- oder Brechungsindex-Gradienten in radialer Richtung verursacht wird.',
+                    ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
