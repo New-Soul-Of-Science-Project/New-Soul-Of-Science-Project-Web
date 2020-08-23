@@ -163,12 +163,27 @@
                     'Eine fehlende Erklärung stellt jedoch gar kein Problem dar!'."\n",
                       'Wenn wir uns damit befassen, was die akademische Wissenschaft alles gar nicht oder nicht genau erklären kann, dann ist die Liste unglaublich lang, sie erscheint schier endlos.'."\n".
                     'Auf ihr stehen viele Dinge, von denen wir fest annehmen, sie seien schon längst erklärt oder die vorgebrachten Erklärungen seien sicher.'."\n".
-                    'Auch stehen auf ihr Erklärungen, die gut oder sogar sehr gut und genau funktionieren, von denen wir aber schon längst wissen, dass sie abschließend nicht richtig sein können.'."\n",
-                      'Lassen wir uns von vermeintlichen Experten also nichts einreden.'."\n".
+                    'Auch stehen auf ihr Erklärungen, die gut oder sogar sehr gut und genau funktionieren, von denen wir aber schon längst wissen, dass sie abschließend nicht richtig sein können.'."\n"))),
+                      
+                  array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX',
+                Title => 'Liste unerklärter Beobachtungen …',
+                TitleVis => 'Liste unerklärter Beobachtungen:', ParagraphList => array(
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'XXX\\color{*Bearb}{(Verweis)}',
+                        'Mpemba-Effekt\\color{*Bearb}{(Verweis)}',
+                        'Dunkle Materie\\color{*Bearb}{(Verweis)}',
+                        'Dunkle Energie\\color{*Bearb}{(Verweis)}',
+                    ))),
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Lassen wir uns von vermeintlichen Experten also nichts einreden.'."\n".
                     'Ihr Rat kann wunderbar und äußerst Hilfreich sein.'."\n".
-                    'Entscheidend ist unser eigenes Gefühl.'."\n".
-                    'Daher ist es sehr hilfreich, wenn wir unsere Gefühle gut schulen und lernen sie auch gut und sensibel wahrzunehmen.'."\n",
-                      'Dies kann unter anderem durch die Praxis von Yoga erreicht werden.'."\n"))),
+                    'Entscheidend ist allerdings unser eigenes Gefühl und unsere eigenen Handlungen, unser Achtsamkeitsprozess.'."\n".
+                    'Denn beide sind seit Jahrmillionen darauf spezialisiert, genau diese Aufgabe zu erfüllen; und haben diese Aufgabe nachweislich auch bei'."\n".
+                    'all unseren Vorfahren erfüllt, denn sonst würden wir heute ja nicht leben. 😉'."\n",
+                      'Daher ist es sehr hilfreich, wenn wir unsere Gefühle und Handlungen gut schulen und lernen, sie auch gut und sensibel wahrzunehmen.'."\n".
+                    'Die Schulung unserer Gefühle und Handlungen können wir unter anderem durch die Praxis von Yoga erreichen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:NPYo:Spiritualitaet-Psychologie:Vortext:XXX', text =>
                       
                 'Eine gesunde Psyche ist Grundlage guter Entscheidungen', subline =>
