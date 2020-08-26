@@ -63,7 +63,7 @@
                     'Du bist herzlich eingeladen, dich an der Entwicklungen der Theorien – und eventuell auch an Projekten – zu beteiligen.'."\n".
                     'Die von dir stammenden Teile werden dann entsprechend mit Fußnoten markiert.'."\n".
                     'Bitte nehme \\jump{OM:FrQFT:Impressum:Inhaberdaten}{Kontakt} mit mir auf.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Impressum:Beteiligung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Impressum:Beteiligung:GitHub', text =>
                                            
                 'GitHub')),
                   array( 'text', array( text => array(
@@ -237,6 +237,11 @@
                     '© Copyright 1988–2020 of the \\jump[http://www.nsosp.org]{}{New Science Of Soul Project} Website by \\jump[http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten]{}{Wolfgang Huß und Media Line Digital e.K.} is licensed under \\jump[https://creativecommons.org/licenses/by-nd/4.0]{}{CC BY-ND 4.0 <img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" alt="CC icon" title="CC icon" src="'.$Glo_PathRel_back.'../share/images/Copyright/cc.7a093a7d.svg" /><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" alt="by icon" title="by icon" src="'.$Glo_PathRel_back.'../share/images/Copyright/by.f6aa22c4.svg" /><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" alt="nd icon" title="nd icon" src="'.$Glo_PathRel_back.'../share/images/Copyright/nd.64831b7b.svg" />}'."\n"))),
                   array( 'text', array( text => array(
                     'Unless required by applicable law or agreed to in writing, the content of this domain is published under the above license is distributed on an "AS IS" basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.'."\n"))),
+                  array( 'text', array( text => array(
+                    '\\bold{Quellen:}'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\\jump{OM:FrQFT:Impressum:Beteiligung:GitHub}{GitHub / New-Soul-Of-Science-Project / New-Soul-Of-Science-Project-Web}',
+                    ))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Impressum:CopyrightLizenz:OpenSansFont', text =>
                       
                 'Open Sans Font')),

@@ -691,11 +691,18 @@
                                        text_titel_discr_h3 => '',
                                        jump_ary => array(
                                               'OM:FrQFT:Impressum:Inhaberdaten' => array( headline_text => 'Inhaberdaten', headline_text_short => 'Inhaberdaten'),
+                                                         
                                               'OM:FrQFT:Impressum:Beteiligung' => array( headline_text => 'Beteiligung', headline_text_short => 'Beteiligung'),
+                                                'OM:FrQFT:Impressum:Beteiligung:GitHub' => array( headline_text => 'GitHub', headline_text_short => 'GitHub'),
+                                                         
                                               'OM:FrQFT:Impressum:Netzwerke' => array( headline_text => 'Soziale Netzwerke, Foren', headline_text_short => 'Soziale Netzwerke, Foren'),
+                                                         
                                               'OM:FrQFT:Impressum:Spenden' => array( headline_text => 'Crowdfunding Spenden', headline_text_short => 'Crowdfunding Spenden'),
+                                                         
                                               'OM:FrQFT:Impressum:Supporter' => array( headline_text => 'Spender und Unterstützer', headline_text_short => 'Spender und Unterstützer'),
+                                                         
                                               'OM:FrQFT:Impressum:Haftungshinweis' => array( headline_text => 'Haftungshinweis', headline_text_short => 'Haftungshinweis'),
+                                                         
                                               'OM:FrQFT:Impressum:CopyrightLizenz' => array( headline_text => 'Copyrights und Lizenzen', headline_text_short => 'Copyrights und Lizenzen'),
                                                 'OM:FrQFT:Impressum:CopyrightLizenz:Inhalt' => array( headline_text => 'Copyright des Inhalts', headline_text_short => 'Copyright des Inhalts'),
                                                 'OM:FrQFT:Impressum:CopyrightLizenz:OpenSansFont' => array( headline_text => 'Open Sans Font', headline_text_short => 'Open Sans Font'),
