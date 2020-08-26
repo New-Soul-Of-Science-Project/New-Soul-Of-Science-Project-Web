@@ -51,7 +51,7 @@
                       'In den letzten Jahren hab ich in manchen Meditationen, bei der Selbstmassage und Selbstakupressur, erlebt, dass mein Körper durch Zittern begann,'."\n".
                     'Verspannungen selbsttätig zu lösen.'."\n".
                     'Dies geschah, wenn ich mich in meiner inneren Perspektive, in meiner Einstellung, darauf einließ, dass mein Körper sich selber heilen kann.'."\n".
-                    'Das Zittern war teilweise so heftig und schnell als auch an verschiednen Stellen in meinem Körper gleichzeitig und in unterschiedlichen Geschwindigkeiten,'."\n".
+                    'Das Zittern war teilweise so heftig und schnell, als auch an verschiedenen Stellen in meinem Körper gleichzeitig und in unterschiedlichen Geschwindigkeiten,'."\n".
                     'dass ich daran sicher erkennen konnte, dass nicht mein Bewusstsein es selber war, dass dies inszenierte.'."\n".
                     'Bewusst hätte ich dies niemals so steuern können.'."\n".
                     'Das liegt definitiv außerhalb meiner bewussten Fähigkeiten.'."\n",
@@ -75,16 +75,32 @@
                         'Nur, wenn ich daran glaube, dass mir mein Dialog zwischen meinen inneren Polen hilft, kann er mir auch helfen.'."\n".
                         'Aber das alleine reicht nicht, denn ich bin auch darauf angewiesen dies geduldig zu erforschen und zu erlernen, um es immer besser in Gang zu setzen.'."\n",
                           'Wenn ich es dann immer intensiver und öfter erlebe, wird mein Glaube daran zu meiner Überzeugung, dass und wie genau dies funktioniert.'."\n".
-                        'So kann ich meinen Glauben zu meiner Realität werden lassen, weil er einen Realitätsbezug hatte.'."\n"))),
+                        'So kann ich meinen Glauben zu meiner Realität werden lassen, weil er einen Realitätsbezug hat.'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Genau so geht es allen Wissenschaftlern:'."\n".
                     'Sie haben eine Hypothese und glauben zunächst an diese.'."\n".
                     'Ihr Glaube daran ist der Grund, aus dem sie ihre Hypothese verfolgen und überprüfen.'."\n".
                     'Wenn ihre Hypothese einen Realitätsbezug hat, dann führt ihre Überprüfung zu ihrer Überzeugung.'."\n",
-                      'Ich verbinde mich durch Klugheit – auch durch Selbstmitgefühl –, anfänglichen Glauben, Erfahrung und schließlich Verständnis mit meiner Natur'."\n".
-                    'und durch Mitgefühl auch mit anderen Wesen und der Natur generell.'."\n",
+                      'Ich verbinde mich durch Klugheit – auch durch Selbstmitgefühl –, anfänglichen Glauben, Erfahrung und möglicherweise Verständnis mit meiner Natur'."\n".
+                    'und durch Mitgefühl auch mit anderen Menschen, anderen Wesen und mit der Natur generell.'."\n",
                       'Das ist, was ich als spirituell bezeichne.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Spiritualitaet-Psychologie:Vortext:XXX', text =>
+                      
+                'Wenn mein Bewusstsein mit meinem Unterbewusstsein in einen Dialog tritt', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Geht mein Bewusstsein mit meinem Unterbewusstsein in einen Dialog, dann kommuniziert in mir der Pol dessen, was ich schon bemerkt oder gelernt habe,'."\n".
+                    'mit meinem Pol dessen, was mir noch weitgehend unbekannt und unverstanden ist:'."\n",
+                      'Ein solcher Dialog in mir ähnelt stark einer Zwiesprache mit Gott, möglicherweise auch mit einem Gott von mehreren oder dem Universum als ganzes.'."\n".
+                    'Jenachdem woran wir glauben und wie wir die Welt, die Natur, und uns selber verstehen.'."\n".
+                    'Aus dieser Perspektiven kann ein solches inneres Zwiegespräch mit dem Unterbewussten und Unbekannten möglicherweise gar nicht'."\n".
+                    'von einem Dialog mit Gott und ähnlichem unterschieden werden.'."\n",
+                      'Dabei gibt es zwischen dem Bewussten und dem Unterbewussten keine ganz haarscharfe, klare Trennung.'."\n".
+                    'Denn etwas wahrzunehmen, es zu bemerken oder gar zu verstehen ist ja ein gradueller Prozess des Aufbauens.'."\n".
+                    'Ebenso bleiben natürlich auch am Verstandenen Dinge unklar und unverstanden.'."\n",
+                      'Dies verhält sich wie ein Baum des Bewusstseins, der zwar über der Erde wächst, aber dessen Wurzeln des Erkennens in die Erde, ins Unbekannte und Unbewusste reichen.'."\n".
+                    'Auch ziehen die Wurzeln vom Unbekannten natürlich etwas mit über die Erdoberfläche.'."\n"))),
                       
                   /* array( 'fade-in-area', array( Display => 'invis',
                     Title => 'Anmerkung …', TitleVis => 'Anmerkung:', ParagraphList => array(
@@ -170,6 +186,7 @@
                 TitleVis => 'Liste unerklärter Beobachtungen:', ParagraphList => array(
                   array( 'bulletlist', array( bullet_ary => array(
                         'XXX\\color{*Bearb}{(Verweis)}',
+                        'Das menschliche Knie\\color{*Bearb}{(Verweis)}',
                         'Mpemba-Effekt\\color{*Bearb}{(Verweis)}',
                         'Dunkle Materie\\color{*Bearb}{(Verweis)}',
                         'Dunkle Energie\\color{*Bearb}{(Verweis)}',
@@ -193,6 +210,24 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX Verweis auf \\jumpname{OM:SpaLeb:Psychosomatik-Entscheidungen}.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Spiritualitaet-Psychologie:Vortext:XXX', text =>
+                      
+                'Schulz von Thun – das innere Team', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
