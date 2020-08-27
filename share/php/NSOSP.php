@@ -748,7 +748,7 @@
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
-                                                      '\\jump[http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php]{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
+                                                      '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
                                      ),
@@ -1647,7 +1647,7 @@
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
-                                                      '\\jump[http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php]{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
+                                                      '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
                                      ),
@@ -1718,7 +1718,7 @@
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
-                                                      '\\jump[http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php]{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
+                                                      '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
                                      ),
@@ -2057,7 +2057,7 @@
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
-                                                      '\\jump[http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php]{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
+                                                      '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/Literatur.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
                                      ),
@@ -2153,7 +2153,7 @@
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
-                                                      '\\jump[http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php]{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
+                                                      '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
                                      ),
@@ -2788,7 +2788,7 @@
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
-                                                      '\\jump[http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php]{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
+                                                      '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
                                      ),
@@ -2898,7 +2898,7 @@
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
-                                                      '\\jump[http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php]{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
+                                                      '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Vereinheitlichte-Relativitaetstheorie/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
                                      ),
