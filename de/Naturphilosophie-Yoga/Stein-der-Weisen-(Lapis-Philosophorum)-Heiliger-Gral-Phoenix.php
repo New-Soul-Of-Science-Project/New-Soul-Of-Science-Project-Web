@@ -511,10 +511,16 @@
                     'In milderer Form steht er für die Verwandlung, die Transformation, aber auch für die Metamorphose.'."\n",
                       'Der Prozess des Phönix hat eine starke Verbindung zum ›löse und verbinde‹, ›solve et coagula‹, der Alchemie.'."\n".
                     'Hier ist der Entwicklungsprozess, die Verwandlung, aber nicht auf ein einziges Leben begrenzt, sondern wird auch Generationsübergreifend und gesellschaftlich betrachtet.'."\n".
-                    'XXX'."\n".
+                    'Aber natürlich können wir auch in unserem Leben wie der Phönix aus der Asche neu entstehen.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                      
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
+                    array_merge( $NPYo_g_figure_ary_LebenDesHorusHermesstab, array( name => 'OM:NPYo:Stein-der-Weisen:Vortext:Fig-LebenDesHorusHermesstab',
+                                                         text => 'Abbild des Lebens, das sehr ähnlich in altägyptischen Darstellungen zu finden ist. Es entsteht unten im Ei der Metamorphose, dem aschefarbenen Mond, und entwickelt sich über den Aufstieg der Schlangen, aus dem mütterlichen Schoß, ins Licht der Sonne, wo es verbrennt und wieder zur Asche wird.')),
+                      )),
+                      
                   array( 'text', array( text => array(
                   '\\condb{Metamorphose in der Persönlichkeitsentwicklung} \\\\'."\n".
                     'Wenn wir aus einer „Niederlage“ wieder auf(er)stehen, dann erscheinen wir wie Phönix aus der Asche.'."\n".
@@ -525,7 +531,7 @@
                   array( 'text', array( text => array(
                   '\\condb{Metamorphose zwischen Generationen} \\\\'."\n".
                     'Die me­ta­mor­phische Verwandlung vom ausgewachsenen Vogel zum Ei hat beim Phönix offensichtlicher etwas mit ›löse und verbinde‹, ›solve et coagula‹, der Alchemie zu tun.'."\n".
-                    'Die Veraschung des erwachsenen Phönix entspricht dem Vorgang der Kalzination\\color{*Bearb}{(Verweis)} der Alchemie.\\color{*Bearb}{(Verweis)}'."\n",
+                    'Die Veraschung des erwachsenen Phönix entspricht dem Vorgang der Kalzination\\color{*Bearb}{(Verweis)} der Alchemie (siehe \\jumpname{OM:NPYo:Stein-der-Weisen:Vortext:Fig-LebenDesHorusHermesstab}).\\color{*Bearb}{(Verweis)}'."\n",
                       'Hier geht es um unsere Reinigung im Sinne von Läuterung und Reinheit – reinen Herzens sein oder werden –, ähnlich, wie im Fegefeuer.'."\n".
                     'Es geht um das Mysterium der Fortpflanzung, um unser Vertrauen in dieses, um die Prüfung unseres Vertrauens, dass es weiter geht, die Saat aufgeht.'."\n".
                     'Dies ist eine Prüfung unseres Glaubens.'."\n".

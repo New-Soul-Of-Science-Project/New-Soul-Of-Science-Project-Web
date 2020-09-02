@@ -1925,6 +1925,7 @@
                                                 'OM:NPYo:Stein-der-Weisen:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
                                                 'OM:NPYo:Stein-der-Weisen:Vortext:Fig-Hermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:NPYo:Stein-der-Weisen:Vortext:Fig-Hexagramm' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:NPYo:Stein-der-Weisen:Vortext:Fig-LebenDesHorusHermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                          
                                               'OM:NPYo:Stein-der-Weisen:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
                                             ),
