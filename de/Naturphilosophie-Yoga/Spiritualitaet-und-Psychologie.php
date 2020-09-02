@@ -21,6 +21,7 @@
                     '– Auch unser \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{Schlaf} ist einer dieser Pole mit seinem Gegenpol des \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{Wachseins und Aktivseins}: Wir können erkennen, dass unser Schlaf fundamental mit unserer Existenz, mit unserem Leben, mit unserem Achtsamkeitsprozesses verknüpft ist. Unser Schlaf ist die eine Hälfte unseres Lebens unser Wachsein die andere. Heute wird der Schlaf von vielen (westlichen) Menschen als störend empfunden, als etwas, das sie von ihrem Leben abhält, und tendenziell abgelehnt. Viele Menschen empfinden ihren Schlaf als ineffektive Zeit. Dies ist nach meiner Interpretation eine vollkommene Fehleinschätzung und ein schwerwiegendes Problem.',
                     '⋅ Unser Bewusstsein scheint mir vornehmlich mit unserem Handlungspol verbunden und unser Unterbewusstsein vornehmlich mit unserem Gefühlspol (siehe \\italic{\\jumpname{OM:SpaLeb:Schlaf-und-Aktivsein}}).',
                     '• Spiritualität bedeutet auch, sich tiefer mit unserer Natur, mit den Grundlagen unseres Lebens und unserer Welt, zu beschäftigen, siehe \\italic{\\jumpname{OM:NPYo:ExistenzLeichtigkeit}}.',
+                    '• Der Dialog unserer inneren Pole: \\jump[https://www.schulz-von-thun.de/die-modelle/das-innere-team]{}{Das innere Team – Schulz von Thun}. (Stefan)',
                     ))),
                       
                   array( 'text', array( text => array(
