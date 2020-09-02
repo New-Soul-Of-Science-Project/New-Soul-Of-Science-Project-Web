@@ -30,8 +30,7 @@
                   // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
-                        'der hat die Magie, Dinge zum Schweben zu bringen.'."\n"),
-                        addtext => '')),
+                        'der hat die Magie, Dinge zum Schweben zu bringen.'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Interessanterweise entspricht diesem Bild auch jede \\jump{OM:FrQFT:Home}{physikalische Existenz} und damit auch \\jump{OM:SpaLeb:Home}{unsere Existenz}.'."\n".
