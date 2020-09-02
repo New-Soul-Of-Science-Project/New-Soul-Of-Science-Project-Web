@@ -225,6 +225,7 @@
                     '\\bold{Prioritäten und Entscheidungen}',
                      '• Wu Wei hat etwas damit zu tun, gute Prioritäten zu setzen und gute Entscheidungen zu fällen, siehe \\italic{\\jumpname{OM:SpaLeb:Psychosomatik-Entscheidungen}}.',
                      '⋅ Unser Leben bekommt mehr Leichtigkeit, wenn wir die Interpretation unserer Vergangenheit durch für uns leichtere Neuinterpretationen ergänzen. Wir verändern dadurch tatsächlich unsere Vergangenheit (siehe \\italic{\\jumpname{OM:NPYo:WieVeraendereIchMeineVergangenheit}}).',
+                     '• Wu Wei heißt: Solange warten, bis ich weiß, was ich tue. (Stefan)',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -237,8 +238,7 @@
                   // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
-                        'der hat die Magie, Dinge zum Schweben zu bringen.'."\n"),
-                        addtext => '')),
+                        'der hat die Magie, Dinge zum Schweben zu bringen.'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Dies gelingt zum Beispiel durch geduldige Beobachtung, dem Lernen die Situation einzuschätzen, unserem Gefühl und unseren Fähigkeiten zu vertrauen und dem Erkennen,'."\n".
