@@ -14,20 +14,20 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
-                    '(• Begriff verwenden(?): "doppelrechte" bzw. "doppellinke" split-half-Gesichter\\footnote[*Bearb]{Internet: \\\\ Vgl. \\cite{SpektrumAkademischerVerlag:Gesicht-Neuro:2000}.})',
-                    '(• Auch das Erkennen der Augenstellung machen wir unserem Gegenüber leicht. Vermutlich dient dies der Bildung von Vertrauen durch die Transparentmachung dessen, was in uns vor geht. Dies ist also evolutionär tief verankert, so wie mit ziemlicher Sicherheit die Sichtbarmachung unserer Gefühle durch die Spannung unserer Gesichtsfaszien und Gesichtsmuskulatur, die mit unseren psychischen Spannungen gekoppelt sind.)',
-                    '(• Ist die Stimmung Ausdruck eines guten oder schlechten Gefühls, die Resonanz mit sich selber, mit einem Gedanken und mit anderen Menschen? Bei guter Stimmung geht es nicht nur um Entspannung, sondern um Umspannung. Das ist sehr interessant in Bezug auf die Stimmungsspannung.)',
-                    '(\\bold{Literatur:})',
-                    '(• Gesichtsausdruck und seine Wahrnehmung.\\footnote[*Bearb]{Internet: \\\\ Vgl. \\cite{SpektrumAkademischerVerlag:Gesicht-Bio:1999}. \\\\ Vgl. \\cite{SpektrumAkademischerVerlag:Gesicht-Neuro:2000}.})',
-                    '(• Buch: Gesichter Fotografieren - 3. Kapitel Die unterschiedlichen Gesichtshälften. Meine Info Quelle, siehe Ort des Ordners gleichen Namens.)',
+                    '• Begriff verwenden(?): "doppelrechte" bzw. "doppellinke" split-half-Gesichter\\footnote[*Bearb]{Internet: \\\\ Vgl. \\cite{SpektrumAkademischerVerlag:Gesicht-Neuro:2000}.}',
+                    '• Auch das Erkennen der Augenstellung machen wir unserem Gegenüber leicht. Vermutlich dient dies der Bildung von Vertrauen durch die Transparentmachung dessen, was in uns vor geht. Dies ist also evolutionär tief verankert, so wie mit ziemlicher Sicherheit die Sichtbarmachung unserer Gefühle durch die Spannung unserer Gesichtsfaszien und Gesichtsmuskulatur, die mit unseren psychischen Spannungen gekoppelt sind.',
+                    '• Ist die Stimmung Ausdruck eines guten oder schlechten Gefühls, die Resonanz mit sich selber, mit einem Gedanken und mit anderen Menschen? Bei guter Stimmung geht es nicht nur um Entspannung, sondern um Umspannung. Das ist sehr interessant in Bezug auf die Stimmungsspannung.',
+                    '\\bold{Literatur}',
+                    '• Gesichtsausdruck und seine Wahrnehmung.\\footnote[*Bearb]{Internet: \\\\ Vgl. \\cite{SpektrumAkademischerVerlag:Gesicht-Bio:1999}. \\\\ Vgl. \\cite{SpektrumAkademischerVerlag:Gesicht-Neuro:2000}.}',
+                    '• Buch: Gesichter Fotografieren - 3. Kapitel Die unterschiedlichen Gesichtshälften. Meine Info Quelle, siehe Ort des Ordners gleichen Namens.',
                     ))),
                       
-                  array( 'text', array( text => array(
-                    '\\bold{Die Muskel- und Faszienspannung deines Gesichts ist diagonal mit deinen Gehirnhälften verbunden, dem rechten und linken Pol deines Gehirns, der eher fühlenden und der eher denkenden/handelnden (rationalen) Seite.}'."\n"))),
+                  /*%! array( 'text', array( text => array(
+                    '\\bold{Die Muskel- und Faszienspannung deines Gesichts ist diagonal mit deinen Gehirnhälften verbunden, dem rechten und linken Pol deines Gehirns, der eher fühlenden und der eher denkenden/handelnden (rationalen) Seite.}'."\n"))), */
             
-                  /*array( 'notice', array( Display => 'invis', text => array(
-                    '(• XXX)',
-                    ))),*/
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        'Die Muskel- und Faszienspannung deines Gesichts ist diagonal mit deinen Gehirnhälften verbunden, dem rechten und linken Pol deines Gehirns,'."\n".
+                        'der eher fühlenden und der eher denkenden/handelnden (rationalen) Seite.'."\n"))),
                       
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
@@ -117,11 +117,11 @@
                 'Welche Gesichtshälfte eher fühlend und welche eher handelnd ist, drückt sich tendenziell in Pärchen von Attributen ihres Aussehens aus')),
                   // #!: Die Liste ist auch auf der Seite der FaceYourFace App.
                   array( 'bulletlist', array( bullet_ary => array(
-                        'emotionaler – denkender, berechnender, kontrollierender',
-                        'warmherziger, gütiger – strenger',
-                        'privater – publiker, repräsentativer',
-                        //'nehmend, empfangend – gebend',
-                        //'passiver – aktiver',
+                        'emotionaler ↔︎ denkender, berechnender, kontrollierender',
+                        'warmherziger, gütiger ↔︎ strenger',
+                        'privater ↔︎ publiker, repräsentativer',
+                        //'nehmend, empfangend ↔︎ gebend',
+                        //'passiver ↔︎ aktiver',
                     ))),
                   array( 'text', array( text => array(
                     'Dies sind drei der Attribut-Pärchen, von denen das erste hier nahe liegt und das Paar privater oder publiker mir durch die Künstlerin \\jump{OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung}{Bilbo Calvez},'."\n".
@@ -134,11 +134,11 @@
                   array( 'text', array( text => array(
                     'Mehr Attribut-Pärchen, die auch interessant sind, aber nicht unbedingt so nach Gefühl und Handlung verteilt sein müssen, wie wir es oft erwarten, warum auch immer, sind:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'weicher – härter',
-                        'männlicher – weiblicher',
-                        'muskulöser – schmächtiger',
-                        'breiter – schmaler \\small{\\color{*TitleAdd}{(mit Vorsicht anzuwenden, weil auch sehr von der Bildperspektive abhängig)}}',
-                        'Ha (Sonne) – Tha (Mond) \\small{\\color{*TitleAdd}{(nach dem \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Tantra} oder \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Hatha Yoga})}}',
+                        'weicher ↔︎ härter',
+                        'männlicher ↔︎ weiblicher',
+                        'muskulöser ↔︎ schmächtiger',
+                        'breiter ↔︎ schmaler \\small{\\color{*TitleAdd}{(mit Vorsicht anzuwenden, weil auch sehr von der Bildperspektive abhängig)}}',
+                        'Ha (Sonne) ↔︎ Tha (Mond) \\small{\\color{*TitleAdd}{(nach dem \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Tantra} oder \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Hatha Yoga})}}',
                     ))),
                   array( 'text', array( text => array(
                     'Vorstehende Attribut-Pärchen kitzeln weitere Facetten unserer auf unsere Körperhälften bezogenen, polaren Persönlichkeitseigenschaften heraus.'."\n".
@@ -159,16 +159,16 @@
                   array( 'text', array( text => array(
                     'Der Zustand unseres Gefühls-Pols und unseres Denk-/Handlungs-Pols sowie deren Balance können durch folgende Attribut-Pärchen verglichen werden:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'munterer – müder',
-                        'fröhlicher – trauriger',
-                        'aktiver – letargischer',
-                        'belebter – verkümmerter',
-                        'positiver – negativer',
-                        'ausdrucksstärker – ausdrucksschwächer',  // #: aus SdW Lexikon: Gesicht
-                        'friedfertiger, sanftmütiger – aggressiver',
-                        'offenherziger – misstrauischer',
-                        'sympathischer – unsympathischer',
-                        //'XXX – XXX',
+                        'munterer ↔︎ müder',
+                        'fröhlicher ↔︎ trauriger',
+                        'aktiver ↔︎ letargischer',
+                        'belebter ↔︎ verkümmerter',
+                        'positiver ↔︎ negativer',
+                        'ausdrucksstärker ↔︎ ausdrucksschwächer',  // #: aus SdW Lexikon: Gesicht
+                        'friedfertiger, sanftmütiger ↔︎ aggressiver',
+                        'offenherziger ↔︎ misstrauischer',
+                        'sympathischer ↔︎ unsympathischer',
+                        //'XXX ↔︎ XXX',
                     ))),
                   array( 'text', array( text => array(
                     'Auch hier gilt:'."\n"))),
@@ -345,7 +345,7 @@
                     )),
                       
                   /*array( 'notice', array( Display => 'invis', text => array(
-                    '(• XXX)',
+                    '• XXX',
                     ))),*/
                       
                   array( 'text', array( text => array(
@@ -384,7 +384,7 @@
                     )),
                       
                   array( 'notice', array( Display => 'vis', text => array(
-                    '(• XXX)',
+                    '• XXX',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -416,9 +416,9 @@
                     )),
                       
                   array( 'notice', array( Display => 'vis', text => array(
-                    '(• Viele Männer haben von Natur aus einen Bart.)',
-                    '(• Warum tragen BankräuberInnen ein Tuch über die Mundpartie oder eine Maske.)',
-                    '(• Dass viele Primaten keine oder nur wenig Haare im Gesichtsfeld haben bedeutet, sie zeigen Gesicht. Ein Hinweis, dass die Hypothese stimmt, dass sie und wir darauf angewiesen sind, die Mimik des anderen lesen zu können, weil sich im Gesicht unsere aktuelle Stimmung und damit unser aller Achtsamkeitsprozess widerspiegelt.)',
+                    '• Viele Männer haben von Natur aus einen Bart.',
+                    '• Warum tragen BankräuberInnen ein Tuch über die Mundpartie oder eine Maske.',
+                    '• Dass viele Primaten keine oder nur wenig Haare im Gesichtsfeld haben bedeutet, sie zeigen Gesicht. Ein Hinweis, dass die Hypothese stimmt, dass sie und wir darauf angewiesen sind, die Mimik des anderen lesen zu können, weil sich im Gesicht unsere aktuelle Stimmung und damit unser aller Achtsamkeitsprozess widerspiegelt.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -535,7 +535,7 @@
 
                   /*array( 'text', array( text => array(
                     '\\color{*Bearb}{'."\n".
-                    '(• XXX) \\\\'."\n".
+                    '• XXX) \\\\'."\n".
                     '}'."\n"))),*/
                       
                   array( 'text', array( text => array(
@@ -581,7 +581,7 @@
                 'Kunst')),
                   array( 'text', array( text => array(
                     /*'\\color{*Bearb}{'."\n".
-                    '(• XXX) \\\\'."\n".
+                    '• XXX) \\\\'."\n".
                     '}'."\n",*/
                     'Die Künstlerin Bilbo Calvez hat sich, unter anderen, intensiv mit Gesichtsspiegelungen auseinandergesetzt und dazu verschiedene Ausstellungen gemacht'."\n".
                     'und interessante Interviews gegeben:'."\n"))),
