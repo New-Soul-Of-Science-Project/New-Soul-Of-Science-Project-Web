@@ -515,12 +515,6 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
-                      
-                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
-                    array_merge( $NPYo_g_figure_ary_LebenDesHorusHermesstab, array( name => 'OM:NPYo:Stein-der-Weisen:Vortext:Fig-LebenDesHorusHermesstab',
-                                                         text => 'Abbild des Lebens, das sehr ähnlich in altägyptischen Darstellungen zu finden ist. Es entsteht unten im Ei der Metamorphose, dem aschefarbenen Mond, und entwickelt sich über den Aufstieg der Schlangen, aus dem mütterlichen Schoß, ins Licht der Sonne, wo es verbrennt und wieder zur Asche wird.')),
-                      )),
-                      
                   array( 'text', array( text => array(
                   '\\condb{Metamorphose in der Persönlichkeitsentwicklung} \\\\'."\n".
                     'Wenn wir aus einer „Niederlage“ wieder auf(er)stehen, dann erscheinen wir wie Phönix aus der Asche.'."\n".
@@ -528,13 +522,19 @@
                       'Es gibt den ›Phönix aus der Asche‹ also auch in der Persönlichkeitsentwicklung, innerhalb eines Lebens.'."\n".
                     'Hier als me­ta­mor­phische Verwandlung vom Ei bis zum ausgewachsenen Vogel.'."\n".
                     'Also geht es um die Prüfungen, die das Leben uns stellt, und ob wir diese bestehen (überleben), bis zur Fortpflanzung.'."\n"))),
+                      
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
+                    array_merge( $NPYo_g_figure_ary_LebenDesHorusHermesstab, array( name => 'OM:NPYo:Stein-der-Weisen:Vortext:Fig-LebenDesHorusHermesstab',
+                                                         text => 'Abbild des Lebens, das sehr ähnlich in altägyptischen Darstellungen zu finden ist. Es entsteht unten im Ei der Metamorphose, dem aschefarbenen Dreiviertel-Mond, und entwickelt sich über den Aufstieg der Kundalini-Schlangen aus der Wurzel, dem mütterlichen Schoß, ins Licht der väterlichen Sonne, der Klugheit oder Weisheit, wo es verbrennt und wieder zur Asche wird. So gesehen stellt dieses Bild erstaunlich authentisch den Kreislauf des ›Phönix aus der Asche‹ dar.')),
+                      )),
+                      
                   array( 'text', array( text => array(
                   '\\condb{Metamorphose zwischen Generationen} \\\\'."\n".
                     'Die me­ta­mor­phische Verwandlung vom ausgewachsenen Vogel zum Ei hat beim Phönix offensichtlicher etwas mit ›löse und verbinde‹, ›solve et coagula‹, der Alchemie zu tun.'."\n".
                     'Die Veraschung des erwachsenen Phönix entspricht dem Vorgang der Kalzination\\color{*Bearb}{(Verweis)} der Alchemie (siehe \\jumpname{OM:NPYo:Stein-der-Weisen:Vortext:Fig-LebenDesHorusHermesstab}).\\color{*Bearb}{(Verweis)}'."\n",
                       'Hier geht es um unsere Reinigung im Sinne von Läuterung und Reinheit – reinen Herzens sein oder werden –, ähnlich, wie im Fegefeuer.'."\n".
                     'Es geht um das Mysterium der Fortpflanzung, um unser Vertrauen in dieses, um die Prüfung unseres Vertrauens, dass es weiter geht, die Saat aufgeht.'."\n".
-                    'Dies ist eine Prüfung unseres Glaubens.'."\n".
+                    'Dies ist eine \\jump{OM:NPYo:Spiritualitaet-Psychologie:Vortext:BinIchSpirituell}{Prüfung unseres Glaubens}.'."\n".
                     'Den glauben wir nicht an dieses Mysterium, dass unsere Fortpflanzung gelingt, dann sind wir schon verloren.'."\n",
                       'XXX'."\n".
                     'XXX'."\n".

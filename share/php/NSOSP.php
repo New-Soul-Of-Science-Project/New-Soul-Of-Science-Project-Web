@@ -1904,7 +1904,7 @@
                                        jump_ary => array(
                                               'OM:NPYo:Spiritualitaet-Psychologie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
-                                                'OM:NPYo:Spiritualitaet-Psychologie:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                                                'OM:NPYo:Spiritualitaet-Psychologie:Vortext:BinIchSpirituell' => array( headline_text => 'Bin ich spirituell? Glaube und vertraue ich?', headline_text_short => 'Bin ich spirituell?'),
                                                          
                                               // 'OM:NPYo:Spiritualitaet-Psychologie:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
                                             ),

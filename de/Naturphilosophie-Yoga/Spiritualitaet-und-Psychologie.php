@@ -35,9 +35,9 @@
                     'In der akademischen Wissenschaft ist es unstrittig, dass wir, zumindestens die Menschen, so etwas wie ein Unterbewusstsein besitzen.'."\n".
                     'Es ist uns also bewusst, da gibt es etwas, das uns nicht bewusst ist.'."\n".
                     'Darüber hinaus gibt es sowieso vieles in unserer Natur, unserer Welt, unserem Universum, dass wir nicht wissen, das uns demnach ebenfalls nicht bewusst ist.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Spiritualitaet-Psychologie:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Spiritualitaet-Psychologie:Vortext:BinIchSpirituell', text =>
                       
-                'Bin ich spirituell?', subline =>
+                'Bin ich spirituell? Glaube und vertraue ich?', subline =>
                   'Spiritualität – unsere Verbindung zum Unbewussten')),
                   array( 'text', array( text => array(
                     'Als auch wissenschaftlich orientierter, sozialisierter und die Wissenschaft sehr hoch schätzender Mensch, hat es mich etliche Zeit gekostet,'."\n".
