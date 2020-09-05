@@ -22,13 +22,67 @@
                     '• Buch: Gesichter Fotografieren - 3. Kapitel Die unterschiedlichen Gesichtshälften. Meine Info Quelle, siehe Ort des Ordners gleichen Namens.',
                     ))),
                       
-                  /*%! array( 'text', array( text => array(
-                    '\\bold{Die Muskel- und Faszienspannung deines Gesichts ist diagonal mit deinen Gehirnhälften verbunden, dem rechten und linken Pol deines Gehirns, der eher fühlenden und der eher denkenden/handelnden (rationalen) Seite.}'."\n"))), */
+                  array( 'text', array( text => array(
+                    'Seit ich meine App zur Gesichtsspiegelung geschrieben habe, angeregt durch ein Gesprächsinterview mit Bilbo Calves XXX, hat sich für mich nach und nach'."\n".
+                    'eine neue und spannende Welt des Verständnisses aufgetan.'."\n".
+                    'Tatsächlich habe ich erst nachdem meine FaceYourFace App fertig war ihren genauen, tiefen Zusammenhang mit dem hier beschriebenen ›Spannungsspiel des Lebens‹ erkannt.'."\n",
+                      'Denn ohne meine Entdeckung des AchtsamkeitsprozessesXXX als physikalische Grundlage des LebensXXX, die erst anschließend kam, ist es nicht so simple,'."\n".
+                    'zu verstehen, wie der Ausdruck unseres Gesichts und seiner Gesichtshälften mit unserer PsychosomatikXXX verbunden ist.'."\n".
+                    'Erst, wenn wir verstehen, worauf die Aufgabenteilung unserer Gehirnhälften beruht, auf dem Gefühlspol und dem Handlungspol unseres Achtsamkeitsprozesses,'."\n".
+                    'eröffnet sich uns ein Tor, durch das wir in unserer Erkenntnis gehen können.'."\n"))),
             
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Die Muskel- und Faszienspannung deines Gesichts ist diagonal mit deinen Gehirnhälften verbunden, dem rechten und linken Pol deines Gehirns,'."\n".
                         'der eher fühlenden und der eher denkenden/handelnden (rationalen) Seite.'."\n"))),
                       
+                  array( 'text', array( text => array(
+                    'Das Wissen um diese diagonale Verbindung zwischen Gehirn und Körper macht uns dann verständlich und plausibel, dass sich der Zustand der Pole unseres'."\n".
+                    'Achtsamkeitsprozesses in unsere Gesichtshälften überträgt.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:XXX', text =>
+                                           
+                'Psychosomatik', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'So können wir den Ausdruck unserer Gesichtshälften als Hinweis darauf verstehen, in welchem Zustand sich unser Achtsamkeitsprozess und damit'."\n".
+                    'unser allgemeines Wohlbefinden befindet.'."\n".
+                    'Gleiches gilt für unsere Körperhälften insgesamt.'."\n",
+                      'Die Pole des Achtsamkeitsprozesses stehen für unsere Psyche, unser persönliches Erleben und Verhalten.XXX'."\n".
+                    'Ihre Verknüpfung mit unserem Körper entschlüsselt einen Grundzusammenhang unserer Psychosomatik.'."\n",
+                      'Die Pole haben eine facettenreiche Bedeutung für unseren Körper und unsere Seele, die zum großen Teil schon unseren Vorfahren ganz offenbar bekannt war:'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\\condb{unser Wohlbefinden, unser Glück und Sinn:} \\italic{Führen wir ein gutes Leben?}',
+                        '\\condb{unser physische Existenz und die unserer Welt}',
+                        '\\condb{unsere Psyche, Psychosomatik und Persönlichkeitsentwicklung}',
+                        '\\condb{unsere Atmung, körperliche Übung und Heilung:} \\italic{Die Justierung und Schulung der gesunden Balancen unserer biologischen Regelmechanismen.}',
+                        '\\condb{unsere Achtsamkeit, unser Selbstmitgefühl und unsere Empathie:} \\italic{Dienst am Selbst und Dienst am Anderen.}',
+                        '\\condb{unser aufrechter Gang, die Achtsamkeitsgradienten:} \\italic{Gut ins Handeln kommen und dabei unsere sensible, gefühlvolle, wahrnehmungsorientierte Vorderseite zu unseren Mitmenschen und in unsere Umwelt richten.}',
+                        '\\condb{unser Denken, unser Verstand:} \\italic{Lernen und Philosophie}',
+                        '\\condb{unsere Entscheidungen und unser Schicksal}',
+                        '\\condb{unser Wachen als auch Schlafen:} \\italic{Sympathikus und Parasympathikus}',
+                        '\\condb{unsere Spiritualität, unser Bewusstsein und Unterbewusstsein}',
+                        '\\condb{unsere Beziehungen, unsere Sexualität und unsere Fortpflanzung}',
+                        /* 'XXX',
+                        'XXX',
+                        'XXX',
+                        'XXX',
+                        'XXX',
+                        'XXX',
+                        'XXX', */
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der Ausdruck unserer Gesichtshälften ist mit all diesen wichtigen Dingen unseres Lebens verbunden.'."\n".
+                    'Der Vergleich unseres doppelrechten und doppellinken Gesichts kann uns also gewisse Einblicke in den Zustand unseres Lebens geben,'."\n".
+                    'von denen uns manche, ohne diese Reflexionsmöglichkeit, verborgen bleiben würden.'."\n",
+                      'Es ist sicherlich kein Zufall, dass unser Gesicht ein so tiefblickender Informationsträger ist, der anderen Menschen etwas darüber'."\n".
+                    'erzählt, wie es uns geht.'."\n".
+                    'Das selbe gilt auch für unsere Körperhaltung und unsere Stimme.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
                 'Was macht die Gesichtsspiegelung sichtbar?')),
@@ -36,12 +90,14 @@
                     'Der Vergleich unserer beiden Gesichtshälften – am deutlichsten beim Vergleich unseres doppelrechten und doppellinken Gesichts (siehe \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppellinkesGesicht} und \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppelrechtesGesicht}) –'."\n".
                     'kann uns sichtbar machen, wie gut der Gefühls-Pol und der Denk-/Handlungs-Pol unseres \\jump{*SpaLeb:Achtsamkeitsprozess-Implem}{Achtsamkeitsprozesses} funktioniert.'."\n".
                     'Wir können möglicherweise erkennen, wie gut beide Pole unserer Achtsamkeit in Balance sind.'."\n"))),
+                      
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '36px',
                     array_merge( $SpaLeb_g_figure_ary_TomDoppellinkesGesicht, array( name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppellinkesGesicht',
                                                          /* text => '' */)),
                     array_merge( $SpaLeb_g_figure_ary_TomDoppelrechtesGesicht, array( name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppelrechtesGesicht',
                                                          /* text => '' */)),
                       )),
+                      
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
                 'Was genau wird durch den Vergleich der gespiegelten Gesichtshälften sichtbar?')),
