@@ -199,6 +199,13 @@
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Primzahlenprodukt-Vermutung', text =>
                                            
                 'Primzahlenprodukt-Vermutung')),
+                      
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '\\bold{Eigene Überlegungen}',
+                    '• Siehe Erklärung für Raimund: Ordner "20200904 - Wissenschaft mit Raimund - Superial-Zahlen"',
+                    '• Siehe meine Latex-Abhandlungen.',
+                    ))),
+                      
                   array( 'text', array( text => array(
                     'Meine langjährigen Spielereien haben in mir die Vermutung geweckt, dass der unendlich große Wert des Produkts aller endlichen Primzahlen ebenfalls'."\n".
                     'die Größe von \\term{⍵} hat.'."\n".
@@ -226,6 +233,15 @@
                     'Denn immer, wenn wieder eine Primzahl auftaucht, wird es „übermächtig“ groß, und die Primzahlen hören nicht auf aufzutauchen.'."\n".
                     'Die Vermutung muss also mit der Lücke zwischen allen endlichen natürlichen Zahlen \\term{\M(N)} und \\term{⍵} zu tun haben.'."\n".
                     'Wie man dies zumindestens mal eingrenzen oder abschätzen kann, zeige ich im Verlauf dieser Arbeit.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Primzahlenprodukt-Vermutung', text =>
+                                           
+                'Genauere Differenzierung der Zahlensorten, wie rationale, algebraische, irrationale, transzendente usw.')),
+                      
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '\\bold{XXX}',
+                    '• XXX',
+                    ))),
+                      
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
                 'Nichtexistenz(?) des Kontinuums')),
