@@ -2361,16 +2361,24 @@
                                                 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-Achtsamkeitsprozess' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                          
                                               'OM:SpaLeb:Gesichtsausdruck:YogaTantra' => array( headline_text => 'Hatha Yoga und Tantra', headline_text_short => 'Hatha Yoga und Tantra'),
+                                                         
                                               'OM:SpaLeb:Gesichtsausdruck:SozialeKomponente' => array( headline_text => 'Die soziale Komponente', headline_text_short => 'Die soziale Komponente'),
+                                                         
                                               'OM:SpaLeb:Gesichtsausdruck:UnbefelltesGesicht' => array( headline_text => 'Unbefelltes Gesicht?', headline_text_short => 'Unbefelltes Gesicht?'),
+                                                         
                                               'OM:SpaLeb:Gesichtsausdruck:Psyche' => array( headline_text => 'Gesichtsausdruck und Psyche', headline_text_short => 'Gesichtsausdruck und Psyche'),
+                                                         
                                               'OM:SpaLeb:Gesichtsausdruck:Muskulatur' => array( headline_text => 'Gesichtsausdruck, Stimme und Muskulatur', headline_text_short => 'Gesichtsausdruck, Stimme und Muskulatur'),
+                                                         
                                               'OM:SpaLeb:Gesichtsausdruck:AufgabenteilungGehirnhaelften' => array( headline_text => 'Aufgabenteilung der Gehirnhälften', headline_text_short => 'Aufgabenteilung der Gehirnhälften'),
+                                                         
                                               'OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung' => array( headline_text => 'Gesichtsspiegelung', headline_text_short => 'Gesichtsspiegelung'),
                                                 'OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung:Fig-TomOriginalesGesicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung:Fig-TomGespiegeltesGesicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung:Fig-TomDoppellinkesGesicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung:Fig-TomDoppelrechtesGesicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung:Kunst' => array( headline_text => 'Kunst', headline_text_short => 'Kunst'),
+                                                         
                                               'OM:SpaLeb:Gesichtsausdruck:FaceYourFaceApp' => array( headline_text => 'FaceYourFace App \\small{\\color{*TitleAdd}{(Face Your Face App)}}', headline_text_short => 'FaceYourFace App'),
                                             ),
                                      ),
