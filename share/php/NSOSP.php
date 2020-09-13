@@ -239,6 +239,18 @@
   
   $FrQFT_g_footnote_Kombi_RT                    = '\\footnote{Spezielle Relativitätstheorie: \\\\ \\const{FrQFT_g_footnote_text_SRT}}\\footnote{Allgemeine Relativitätstheorie: \\\\ \\const{FrQFT_g_footnote_text_ART}}';
 
+  $NPT_g_footnote_text_Naturphilosophie         = 'Internet: \\\\ Vgl. \\cite{wiki:Naturphilosophie:2015}. \\\\ Video: \\\\ Vgl. \\cite{Lesch:NaturphilosophieKosmosLebenUndDerSinnDerWelt:2016}.';
+
+  $NPYo_g_footnote_text_GehirnLateralisation    = '\\const{SpaLeb_g_footnote_text_GehirnLateralisation}';
+  $NPYo_g_footnote_text_HathaHaTha              = 'Vgl. \\cite{Yogawiki:Hatha:2018}.';
+  $NPYo_g_footnote_text_Hermesstab              = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Hermesstab:2019}.';
+  $NPYo_g_footnote_text_HermesTrismegistos      = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:HermesTrismegistos:2019}.';
+  $NPYo_g_footnote_text_Hermetik                = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Hermetik:2019}.';
+  $NPYo_g_footnote_text_PhilosophieDesYoga      = 'Vgl. \\cite{Galke:PhilosophieDesYoga:2017}.';
+  $NPYo_g_footnote_text_Trimurti                = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Trimurti:2016}.';
+  $NPYo_g_footnote_text_YinUndYang              = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:YinUndYang:2019}.';
+  $NPYo_g_footnote_text_ZeitDjetNeheh           = '\\const{FrQFT_g_footnote_text_ZeitDjetNeheh}';
+  
   $SpaLeb_g_footnote_text_AchtsamkeitMinfulness = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AchtsamkeitMindfulness:2017}.';
   $SpaLeb_g_footnote_text_AtemSpannungUndSex    = 'Von diesen Sexpraktiken werde ich auf Nachfrage gerne berichten.\\hidden{ Cum-Control erzeugt Atemspannung. Analorgasmen. Die Atemspannung macht einen auch enger und das Gefühl intensiver. Alle Orgasmen werden insgesamt intensiver.}';
   $SpaLeb_g_footnote_text_BauchmuskulaturRing   = 'Internet: \\\\ Vgl. \\cite{Schumann:DerGeradeBauchmuskel:2011}, Muskulus obliquus externus abdominis, Muskulus obliquus internus abdominis, Muskulus transversus abdominis.';
@@ -251,22 +263,11 @@
   $SpaLeb_g_footnote_text_GehirnLateralisation  = 'Internet: \\\\ Vgl. \\cite{wiki:LateralisationDesGehirns:2016}.';
   $SpaLeb_g_footnote_text_LeibSeeleProblem      = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Poser:DieVernuenftigGeordneteWelt:2016}, Monaden. S. 56-58. \\\\ Internet: \\\\ Vgl. \\cite{wiki:PhilosophieDesGeistes:2015}.';
   $SpaLeb_g_footnote_text_Psyche                = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Psyche:2017}.';
+  $SpaLeb_g_footnote_text_PsycheErlebUndVerhalt = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Psyche:2015}, Definition und Allgemeines.';
   $SpaLeb_g_footnote_text_Psychosomatik         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Psychosomatik:2020}.';
   $SpaLeb_g_footnote_text_Quantenbiologie       = 'Vgl. \\cite{Al-Khalili:DerQuantenbeatDesLebens:2015}. \\\\ Sekundärliteratur: \\\\ \\color{*Bearb}{(Literatur einfügen! Siehe SdW-Online 2011 und DLF XXX)} \\\\ Vgl. \\cite{Pollmann:MitAllenQuantenmitteln:2010}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Quantenbiologie:2014}.';
   $SpaLeb_g_footnote_text_RueckenBauchmuskeln   = 'Internet: \\\\ Vgl. \\cite{Schumann:DieRueckenmuskulatur:2016}.';
   $SpaLeb_g_footnote_text_Zwerchfell            = 'Internet: \\\\ Vgl. \\cite{Schumann:DasZwerchfellIstDerAtemmuskelSchlechthin:2011}.';
-
-  $NPT_g_footnote_text_Naturphilosophie         = 'Internet: \\\\ Vgl. \\cite{wiki:Naturphilosophie:2015}. \\\\ Video: \\\\ Vgl. \\cite{Lesch:NaturphilosophieKosmosLebenUndDerSinnDerWelt:2016}.';
-
-  $NPYo_g_footnote_text_GehirnLateralisation    = '\\const{SpaLeb_g_footnote_text_GehirnLateralisation}';
-  $NPYo_g_footnote_text_HathaHaTha              = 'Vgl. \\cite{Yogawiki:Hatha:2018}.';
-  $NPYo_g_footnote_text_Hermesstab              = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Hermesstab:2019}.';
-  $NPYo_g_footnote_text_HermesTrismegistos      = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:HermesTrismegistos:2019}.';
-  $NPYo_g_footnote_text_Hermetik                = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Hermetik:2019}.';
-  $NPYo_g_footnote_text_PhilosophieDesYoga      = 'Vgl. \\cite{Galke:PhilosophieDesYoga:2017}.';
-  $NPYo_g_footnote_text_Trimurti                = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Trimurti:2016}.';
-  $NPYo_g_footnote_text_YinUndYang              = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:YinUndYang:2019}.';
-  $NPYo_g_footnote_text_ZeitDjetNeheh           = '\\const{FrQFT_g_footnote_text_ZeitDjetNeheh}';
 
   
   $FrQFT_g_figure_ary_Elapson                   = array( fig_file_name => 'Elapson_v05', fig_alt_description => 'Elapson (ep)', width => '514px', height => '327px', name => 'set local!',
@@ -2351,7 +2352,7 @@
                                        //text_titel_discr_h3 => 'Die Muskel- und Faszienspannung des Gesichts und ihre Verbindung mit dem linken und rechten Pol des Gehirns – die rationale und emotionale Hälfte des Gehirns – sowie mit der Psyche und Stimme',
                                        //text_titel_discr_h3 => 'Die Differenz deiner Gesichtshälften, ein Ausdruck der Balance deines Achtsamkeitsprozesses',
                                        //text_titel_discr_h3 => 'Deine Gesichtshälften spiegeln in ihrem Ausdruck den Gefühls-Pol und den Handlungs-Pol deines Achtsamkeitsprozesses wider, die Spezialisierung deiner Gehirmhälften – die Lateralisation deines Gehirns',
-                                       text_titel_discr_h3 => 'Deine Gesichtshälften spiegeln in ihrem Ausdruck den Gefühls-Pol und den Denk-/Handlungs-Pol deines Achtsamkeitsprozesses wider, die Spezialisierung deiner Gehirnhälften – die Lateralisation deines Gehirns',
+                                       text_titel_discr_h3 => 'Deine Gesichtshälften spiegeln in ihrem Ausdruck den Gefühlspol und den Denk-/Handlungspol deines Achtsamkeitsprozesses wider, die Spezialisierung deiner Gehirnhälften – die Lateralisation deines Gehirns',
                                        jump_ary => array(
                                               'OM:SpaLeb:Gesichtsausdruck:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          

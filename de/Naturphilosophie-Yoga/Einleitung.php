@@ -655,7 +655,7 @@
                       'Sehen wir also ganzheitlicher auf Yoga und beschäftigen uns intensiver damit, warum es vielleicht uns und vielen Menschen hilft, stellen wir fest, dass es beim Yoga um einiges mehr geht,'."\n".
                     'als um das Praktizieren von Körperübungen, Atmung und Meditation – was ja für sich schon eine Menge ist.'."\n".
                     'Der im Folgenden beschriebene Achtsamkeitsprozess gründet auf der Wahrnehmung unseres eigenen Befindens, unserer Situation und unserer Gefühle dazu, und letztlich der Verbesserung unserer Gefühle durch Handlungen, also der Veränderung unserer Situation.'."\n".
-                    'Bei unserer Psyche geht es vorwiegend um die „subjektive“ oder „innere“ Erlebensseite des handelnden Menschen.\\footnote{Vgl. \\cite{wiki:Psyche:2015}, Definition und Allgemeines.}'."\n".
+                    'Bei unserer Psyche geht es vorwiegend um die „subjektive“ oder „innere“ Erlebensseite des handelnden Menschen.\\footnote{\\const{SpaLeb_g_footnote_text_PsycheErlebUndVerhalt}}'."\n".
                     'Es ist leicht erkennbar, wie nahe beides beieinander liegt.'."\n".
                     'Möchten wir mit Yoga also nachhaltig etwas für uns verändern, dann müssen wir uns demnach sehr mit uns selber auseinandersetzen, uns selber erkennen wollen und dies schließlich ein Stück weit auch können.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:ErkenneDichSelbst:XXX', text =>

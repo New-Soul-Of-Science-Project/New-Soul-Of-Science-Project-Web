@@ -56,49 +56,80 @@
                     'So können wir den Ausdruck unserer Gesichtshälften und deren Bewertung durch Vergleich als Möglichkeit verstehen, zu erkennen, in welchem Zustand unser Achtsamkeitsprozess und damit'."\n".
                     'unser allgemeines Wohlbefinden ist.'."\n".
                     'Gleiches gilt für unsere Körperhälften insgesamt.'."\n",
-                      'Die Pole des Achtsamkeitsprozesses stehen für unsere Psyche, also für unser persönliches Erleben und Verhalten.XXX'."\n".
-                    'Ihre Verknüpfung mit unserem Körper entschlüsselt einen Grundzusammenhang in der Psychosomatik.'."\n",
-                      'Die Pole haben eine facettenreiche Bedeutung für unseren Körper und unsere Seele, die zum großen Teil schon unseren Vorfahren ganz offenbar bekannt war:'."\n"))),
+                      'Die Pole des Achtsamkeitsprozesses stehen für unsere Psyche, also für unser persönliches Erleben und Verhalten.\\footnote{\\const{SpaLeb_g_footnote_text_PsycheErlebUndVerhalt}}'."\n".
+                    'Ihre Verknüpfung mit unserem Körper entschlüsselt einen Grundzusammenhang in der Psychosomatik.'."\n".
+                    'Diese Pole haben eine facettenreiche Bedeutung für unseren Körper und unsere Seele, die zum großen Teil offenbar schon unseren Vorfahren bekannt war.'."\n".
+                    'Unser Achtsamkeitsprozess und die Balance seiner Pole spiegeln sich in den folgenden Dingen wider:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        '\\condb{unser Wohlbefinden, unser Glück und die Sinnhaftigkeit unseres Lebens:} \\italic{Führen wir ein gutes Leben?}',
-                        '\\condb{unsere physische Existenz und die unserer Welt}',
-                        '\\condb{unsere Psyche, Psychosomatik und Persönlichkeitsentwicklung}',
-                        '\\condb{unsere Atmung, körperliche Übung und Heilung:} \\italic{Die Justierung und Schulung der gesunden Balancen unserer biologischen Regelmechanismen.}',
-                        '\\condb{unsere Achtsamkeit, unser Selbstmitgefühl und unsere Empathie:} \\italic{Dienst am Selbst und Dienst am Anderen.}',
-                        '\\condb{unser aufrechter Gang, die Achtsamkeitsgradienten:} \\italic{Gut ins Handeln kommen und dabei unsere empfindliche, gefühlvolle, wahrnehmungsorientierte Vorderseite zu unseren Mitmenschen und in unsere Umwelt richten.}',
-                        '\\condb{unser Denken und unser Verstand:} \\italic{Lernen und Philosophie}',
-                        '\\condb{unsere Entscheidungen und unser Schicksal}',
-                        '\\condb{unser Wachen als auch Schlafen:} \\italic{Sympathikus und Parasympathikus}',
-                        '\\condb{unsere Spiritualität, unser Bewusstsein und Unterbewusstsein}',
-                        '\\condb{unsere Beziehungen, unsere Sexualität und unsere Fortpflanzung}',
-                        /* 'XXX',
-                        'XXX',
-                        'XXX',
-                        'XXX',
-                        'XXX',
-                        'XXX',
-                        'XXX', */
+                        '\\condb{unser Wohlbefinden, unser Glück und die Sinnhaftigkeit unseres Lebens} \\\\ \\italic{Führen wir ein gutes Leben?}',
+                        '\\condb{unsere seelische und physische Existenz und die unserer Welt} \\\\ \\italic{Die Leichtigkeit des Seins – Dao, Qi, Yin und Yang, Wu Wei.}',
+                        '\\condb{unsere Psyche, Psychosomatik und Persönlichkeitsentwicklung} \\\\ \\italic{Die Verknüpfung von Seele und Körper – eine Balance aus Stabilität und Fortentwicklung.}',
+                        '\\condb{unsere Atmung, körperliche Übung und Heilung} \\\\ \\italic{Die Justierung und Schulung der gesunden Balancen unserer biologischen Regelprozesse.}',
+                        '\\condb{unsere Achtsamkeit, unser Selbstmitgefühl und unsere Empathie} \\\\ \\italic{Dienst am Selbst und Dienst am Anderen.}',
+                        '\\condb{unser aufrechter Gang, die Achtsamkeitsgradienten} \\\\ \\italic{Gut ins Handeln kommen und dabei unsere empfindliche, gefühlvolle, wahrnehmungsorientierte Vorderseite zu unseren Mitmenschen und in unsere Umwelt richten.}',
+                        '\\condb{unser Denken und unser Verstand} \\\\ \\italic{Lernen und Philosophie}',
+                        '\\condb{unsere Entscheidungen und unser Schicksal} \\\\ \\italic{Das Spiel mit Ambiguitäten und deren Auflösung.}',
+                        '\\condb{unser Wachen als auch Schlafen, unser Bewusstsein und Unterbewusstsein} \\\\ \\italic{Sympathikus und Parasympathikus}',
+                        '\\condb{unsere Spiritualität} \\\\ \\italic{Glaube und vertraue ich? Weil ich nicht alles weis und wissen kann! Der Dialog unseres Bewusstseins mit unserem Unterbewusstsein und all unserer anderen inneren Pole.}',
+                        '\\condb{unsere Beziehungen, unsere Sexualität und unsere Fortpflanzung} \\\\ \\italic{Der Zusammenhang unseres Lebens.}',
                     ))),
                   array( 'text', array( text => array(
-                    'Das Aufgeführte ist wesentlicher Bestandteil alten philosophischen und medizinischen Wissens und der Religionen der Welt, wie der Veden, des Yoga (auch Tantra),'."\n".
-                    'des Hinduismus, des Buddhismus, der altägyptischen Mythologie, des Judentums, des Christentums und des Islams, und die Liste kann noch viel länger fortgesetzt werden.'."\n".
-                    'Genauere Betrachtungen und Analysen dazu mache ich auf \\jump{OM:NPYo:Home:Inhalt}{anderen Seiten}.'."\n"))),
+                    'Das Aufgeführte ist wesentlicher Bestandteil alten philosophischen und medizinischen Wissens der Welt und unserer Religionen, wie der Veden, des Yoga (auch Tantra),'."\n".
+                    'des Hinduismus, des Buddhismus, der altägyptischen Mythologie, des Judentums, des Christentums und des Islams.'."\n".
+                    'Und die Liste kann noch weiter fortgesetzt werden.'."\n",
+                      'Diese Themen haben mich schon immer fasziniert und über viele von ihnen schreibe ich auf den Seiten zum \\jump{OM:SpaLeb:Home:Inhalt}{›Spannungsspiel des Lebens‹},'."\n".
+                    'des \\jump{OM:NPYo:Home:Inhalt}{Naturphilosophie-Yoga} und in der \\jump{OM:FrQFT:Home:Inhalt}{Quanten-Fluss-Theorie}.'."\n".
+                    'Wesentliche Teile dieses Wissens und dieser Glauben sind verbunden durch tiefe Einsichten der hier beschriebenen Naturphilosophie'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
                 'Was macht die Gesichtsspiegelung sichtbar?')),
                   array( 'text', array( text => array(
                     'Der Ausdruck unserer Gesichtshälften ist mit all diesen wichtigen Dingen unseres Lebens verbunden.'."\n".
-                    'Der Vergleich unseres doppelrechten und doppellinken Gesichts kann uns also gewisse Einblicke in den Zustand unseres Lebens geben,'."\n".
+                    'Der Vergleich unseres rechten und linken Gesichts kann uns also gewisse Einblicke in den Zustand unseres Lebens geben,'."\n".
                     'von denen uns manche, ohne diese Reflexionsmöglichkeit, verborgen bleiben würden.'."\n",
                       'Es ist sicherlich kein Zufall, dass unser Gesicht ein so tiefblickender Informationsträger ist, der anderen Menschen etwas darüber'."\n".
                     'erzählt, wie es uns geht.'."\n".
                     'Das selbe gilt auch für unsere Körperhaltung und unsere Stimme.'."\n",
                       'Der Vergleich unserer beiden Gesichtshälften – am deutlichsten beim Vergleich unseres doppelrechten und doppellinken Gesichts (siehe \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppellinkesGesicht} und \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppelrechtesGesicht}) –'."\n".
-                    'kann uns sichtbar machen, wie gut der Gefühls-Pol und der Denk-/Handlungs-Pol unseres Achtsamkeitsprozesses funktioniert.'."\n".
-                    'Wir können möglicherweise erkennen, wie gut beide Pole unserer Achtsamkeit in Balance sind.'."\n"))),
+                    'kann uns sichtbar machen, wie gut der Gefühlspol und der Denk-/Handlungspol unseres Achtsamkeitsprozesses funktioniert.'."\n".
+                    'Wir können zum Beispiel möglicherweise erkennen, wie gut beide Pole unserer Achtsamkeit in Balance sind.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
                 'Was genau wird durch den Vergleich der gespiegelten Gesichtshälften sichtbar?')),
+                  array( 'text', array( text => array(
+                    'Durch das neu gewonnene Wissen um den Zusammenhang, dass der Regelprozess unseres Lebens sich in unseren Gesichtshälften widerspiegelt,'."\n".
+                    'möchte ich diese Frage nun durch die Augen des Achtsamkeitsprozesses beantworten.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Handlung ↔︎ Gefühl \\small{\\color{*TitleAdd}{(nach dem \\jump{*SpaLeb:Achtsamkeitsprozess-Implem}{Achtsamkeitsprozess})}}',
+                        'Ha (Sonne) ↔︎ Tha (Mond) \\small{\\color{*TitleAdd}{(nach dem \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Tantra} und \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Hatha Yoga})}}',
+                        'Ra (Sonne) ↔︎ Horus (Mond) \\small{\\color{*TitleAdd}{(nach der \\jump{OM:NPYo:HaTha}{altägyptischen Mythologie})}}',
+                        'Yang (männlich) ↔︎ Yin (weiblich) \\small{\\color{*TitleAdd}{(daoistisch-tantrische, systematische Zuordnung, nicht wörtlich)}}',
+                        'linke Gehirnhälfte ↔︎ rechte Gehirnhälfte \\small{\\color{*TitleAdd}{(Lateralisation unseres Gehirns)}}',
+                        'rechte Gesichtshälfte ↔︎ linke Gesichtshälfte \\small{\\color{*TitleAdd}{(diagonale Verbindung mit dem Gehirn)}}',
+                        'rechte Körperhälfte ↔︎ linke Körperhälfte \\small{\\color{*TitleAdd}{(diagonale Verbindung mit dem Gehirn)}}',
+                        'rechter Nasenton ↔︎ linker Nasenton \\small{\\color{*TitleAdd}{(der \\jump{OM:SpaLeb:Gesangstechnik}{Stimme})}}',
+                        'Oberkörper ↔︎ Körpervorderseite \\small{\\color{*TitleAdd}{(\\jump{OM:SpaLeb:Psychosomatik}{Handlungs- und Gefühlsgradient des Körpers})}}',
+                        'Wach ↔︎ Schlaf',
+                        'Bewusstsein ↔︎ Unterbewusstsein',
+                        'Sympathikus ↔︎ Parasympathikus',
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
                   array( 'text', array( text => array(
                     'Diese Frage kann aus verschiedenen Perspektiven beantwortet werden.'."\n",
                       'Weil in meinen Augen der Achtsamkeitsprozess der zentrale Regelprozess unseres Lebens ist, halte ich die Beantwortung dieser Frage aus seiner Perspektive für am wichtigsten.'."\n"))),
@@ -188,11 +219,10 @@
                   array( 'text', array( text => array(
                     'Mehr Attribut-Pärchen, die auch interessant sind, aber nicht unbedingt so nach Gefühl und Handlung verteilt sein müssen, wie wir es oft erwarten, warum auch immer, sind:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'weicher ↔︎ härter',
                         'männlicher ↔︎ weiblicher',
+                        'weicher ↔︎ härter',
                         'muskulöser ↔︎ schmächtiger',
                         'breiter ↔︎ schmaler \\small{\\color{*TitleAdd}{(mit Vorsicht anzuwenden, weil auch sehr von der Bildperspektive abhängig)}}',
-                        'Ha (Sonne) ↔︎ Tha (Mond) \\small{\\color{*TitleAdd}{(nach dem \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Tantra} oder \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Hatha Yoga})}}',
                     ))),
                   array( 'text', array( text => array(
                     'Vorstehende Attribut-Pärchen kitzeln weitere Facetten unserer auf unsere Körperhälften bezogenen, polaren Persönlichkeitseigenschaften heraus.'."\n".
