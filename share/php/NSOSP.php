@@ -578,14 +578,14 @@
                                                                   'Die Darstellung bringt diesen Prozess mit dem Achtsamkeitsprozess in Zusammenhang, mit dem er, je nach Perspektive, identisch oder ein Teil von ihm ist.');
 
   $SpaLeb_g_figure_ary_TomOriginalGesicht      = array( fig_file_name => 'Spannungsspiel-des-Lebens/Tom_Original_20160930_v1_1(7)', figFileType => 'jpeg', figPDF_is => false, fig_alt_description => 'Toms originales Gesicht', width => '204px', height => '300px', border => '1px', name => 'set local!',
-                                                         text => 'Toms originales Gesicht');
+                                                         text => 'Toms originales Gesicht.');
   $SpaLeb_g_figure_ary_TomGespiegeltesGesicht  = array( fig_file_name => 'Spannungsspiel-des-Lebens/Tom_Mirror_20160930_v1_1(7)', figFileType => 'jpeg', figPDF_is => false, fig_alt_description => 'Toms gespiegeltes Gesicht', width => '204px', height => '300px', border => '1px', name => 'set local!',
-                                                         text => 'Toms gespiegeltes Gesicht');
+                                                         text => 'Toms gespiegeltes Gesicht.');
 
   $SpaLeb_g_figure_ary_TomDoppellinkesGesicht  = array( fig_file_name => 'Spannungsspiel-des-Lebens/Tom_Left_20160930_v1_1(7)', figFileType => 'jpeg', figPDF_is => false, fig_alt_description => 'Toms doppellinkes Gesicht', width => '196px', height => '300px', border => '1px', name => 'set local!',
-                                                         text => 'Toms doppellinkes Gesicht');
+                                                         text => 'Toms doppellinkes Gesicht.');
   $SpaLeb_g_figure_ary_TomDoppelrechtesGesicht = array( fig_file_name => 'Spannungsspiel-des-Lebens/Tom_Right_20160930_v1_1(7)', figFileType => 'jpeg', figPDF_is => false, fig_alt_description => 'Toms doppelrechtes Gesicht', width => '196px', height => '300px', border => '1px', name => 'set local!',
-                                                         text => 'Toms doppelrechtes Gesicht');
+                                                         text => 'Toms doppelrechtes Gesicht.');
 
                                                          
   $SupNum_g_figure_ary_sGeomKonstruktTeilung   = array( fig_file_name => 'SN/s-geom-Konstrukt-Teilung-v02', fig_alt_description => 'Rhythmische Zerlegung der Eins durch natürliche Zahlen', width => '600px', height => '290px', name => 'set local!',
@@ -2356,10 +2356,16 @@
                                        jump_ary => array(
                                               'OM:SpaLeb:Gesichtsausdruck:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
-                                                'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppellinkesGesicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppelrechtesGesicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppellinkesGesicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-AchtsamkeitsprozessBewWiss' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-Achtsamkeitsprozess' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-Hermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-Kundalini-Prozess' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-Gefuehls-Handlungspol-Waage' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-AugeDesRa' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-AugeDesHorus' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-LebenDesHorusHermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                          
                                               'OM:SpaLeb:Gesichtsausdruck:YogaTantra' => array( headline_text => 'Hatha Yoga und Tantra', headline_text_short => 'Hatha Yoga und Tantra'),
                                                          

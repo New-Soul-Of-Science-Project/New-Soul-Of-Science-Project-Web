@@ -26,17 +26,17 @@
                     'Seit ich meine App zur Gesichtsspiegelung geschrieben habe, angeregt durch ein \\jump{OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung:Kunst}{Gesprächsinterview von Bilbo Calves}'."\n".
                     'über ihre Ausstellung \\jump[http://www.bilbo.calvez.info/publik_privat_GB/Infos_1.html]{}{PUBLIK - PRIVAT}, hat sich für mich nach und nach eine neue und spannende Welt des Verständnisses aufgetan.'."\n".
                     'Tatsächlich habe ich erst nachdem meine \\jump{OM:SpaLeb:Gesichtsausdruck:FaceYourFaceApp}{FaceYourFace App} fertig war ihren genauen, tiefen Zusammenhang mit dem hier beschriebenen ›Spannungsspiel des Lebens‹ erkannt.'."\n"))),
-                      
+ 
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '36px',
-                    array_merge( $SpaLeb_g_figure_ary_TomDoppellinkesGesicht, array( name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppellinkesGesicht',
-                                                         /* text => '' */)),
                     array_merge( $SpaLeb_g_figure_ary_TomDoppelrechtesGesicht, array( name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppelrechtesGesicht',
-                                                         /* text => '' */)),
+                                                         text => ($SpaLeb_g_figure_ary_TomDoppelrechtesGesicht[text]).' Die Denk- und Handlungsseite.')),
+                    array_merge( $SpaLeb_g_figure_ary_TomDoppellinkesGesicht, array( name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppellinkesGesicht',
+                                                         text => ($SpaLeb_g_figure_ary_TomDoppellinkesGesicht[text]).' Die Gefühlsseite.')),
                       )),
                       
                   array( 'text', array( text => array(
                     'Denn ohne meine Entdeckung des \\jump{*SpaLeb:Achtsamkeitsprozess-Implem}{Achtsamkeitsprozesses} als \\jump{OM:SpaLeb:Was-ist-Leben}{physikalische Grundlage des Lebens},'."\n".
-                    'die erst anschließend kam, ist es nicht so simple, zu verstehen, wie der Ausdruck unseres Gesichts und seiner Gesichtshälften mit'."\n".
+                    'die erst anschließend kam, ist es nicht so einfach zu verstehen, wie der Ausdruck unseres Gesichts und seiner Gesichtshälften mit'."\n".
                     'unserer \\jump{OM:SpaLeb:Psychosomatik}{Psychosomatik} verbunden ist.'."\n".
                     'Erst, wenn wir verstehen, worauf die Aufgabenteilung unserer Gehirnhälften beruht, auf dem Gefühlspol und dem Handlungspol unseres Achtsamkeitsprozesses,'."\n".
                     'eröffnet sich uns ein Tor, durch das wir in unserer Erkenntnis gehen können.'."\n"))),
@@ -70,7 +70,7 @@
                         '\\condb{unser Denken und unser Verstand} \\\\ \\italic{Lernen und Philosophie}',
                         '\\condb{unsere Entscheidungen und unser Schicksal} \\\\ \\italic{Das Spiel mit Ambiguitäten und deren Auflösung.}',
                         '\\condb{unser Wachen als auch Schlafen, unser Bewusstsein und Unterbewusstsein} \\\\ \\italic{Sympathikus und Parasympathikus}',
-                        '\\condb{unsere Spiritualität} \\\\ \\italic{Glaube und vertraue ich? Weil ich nicht alles weis und wissen kann! Der Dialog unseres Bewusstseins mit unserem Unterbewusstsein und all unserer anderen inneren Pole.}',
+                        '\\condb{unsere Spiritualität} \\\\ \\italic{Glaube und vertraue ich? Weil ich nicht alles weiß und wissen kann! Der Dialog unseres Bewusstseins mit unserem Unterbewusstsein und all unserer anderen inneren Pole.}',
                         '\\condb{unsere Beziehungen, unsere Sexualität und unsere Fortpflanzung} \\\\ \\italic{Der Zusammenhang unseres Lebens.}',
                     ))),
                   array( 'text', array( text => array(
@@ -79,74 +79,31 @@
                     'Und die Liste kann noch weiter fortgesetzt werden.'."\n",
                       'Diese Themen haben mich schon immer fasziniert und über viele von ihnen schreibe ich auf den Seiten zum \\jump{OM:SpaLeb:Home:Inhalt}{›Spannungsspiel des Lebens‹},'."\n".
                     'des \\jump{OM:NPYo:Home:Inhalt}{Naturphilosophie-Yoga} und in der \\jump{OM:FrQFT:Home:Inhalt}{Quanten-Fluss-Theorie}.'."\n".
-                    'Wesentliche Teile dieses Wissens und dieser Glauben sind verbunden durch tiefe Einsichten der hier beschriebenen Naturphilosophie'."\n"))),
+                    'Wesentliche Teile dieses Wissens und dieser Glauben sind verbunden durch tiefe Einsichten der hier beschriebenen Naturphilosophie.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
-                'Was macht die Gesichtsspiegelung sichtbar?')),
+                'Unser Gesicht erzählt über die Balance unserer Achtsamkeit', subline =>
+                  '… wie es und geht')),
                   array( 'text', array( text => array(
-                    'Der Ausdruck unserer Gesichtshälften ist mit all diesen wichtigen Dingen unseres Lebens verbunden.'."\n".
+                    'Die Polarität des Ausdrucks unserer Gesichtshälften ist mit all diesen wichtigen Dingen unseres Lebens verbunden.'."\n".
                     'Der Vergleich unseres rechten und linken Gesichts kann uns also gewisse Einblicke in den Zustand unseres Lebens geben,'."\n".
                     'von denen uns manche, ohne diese Reflexionsmöglichkeit, verborgen bleiben würden.'."\n",
-                      'Es ist sicherlich kein Zufall, dass unser Gesicht ein so tiefblickender Informationsträger ist, der anderen Menschen etwas darüber'."\n".
-                    'erzählt, wie es uns geht.'."\n".
-                    'Das selbe gilt auch für unsere Körperhaltung und unsere Stimme.'."\n",
+                      'Es ist sicherlich kein Zufall, dass unser Gesicht ein so tiefblickender Informationsträger ist, der \\jump{OM:SpaLeb:Gesichtsausdruck:SozialeKomponente}{anderen Menschen etwas darüber'."\n".
+                    'erzählt}, wie es uns geht.'."\n".
+                    'Das selbe gilt auch für unsere \\jump{OM:SpaLeb:OM:SpaLeb:Koerperspannung}{Körperhaltung} und unsere \\jump{OM:SpaLeb:Gesangstechnik}{Stimme}.'."\n",
                       'Der Vergleich unserer beiden Gesichtshälften – am deutlichsten beim Vergleich unseres doppelrechten und doppellinken Gesichts (siehe \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppellinkesGesicht} und \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppelrechtesGesicht}) –'."\n".
                     'kann uns sichtbar machen, wie gut der Gefühlspol und der Denk-/Handlungspol unseres Achtsamkeitsprozesses funktioniert.'."\n".
-                    'Wir können zum Beispiel möglicherweise erkennen, wie gut beide Pole unserer Achtsamkeit in Balance sind.'."\n"))),
+                    'Wir könnten zum Beispiel erkennen, wie gut beide Pole unserer Achtsamkeit in Balance sind.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
-                'Was genau wird durch den Vergleich der gespiegelten Gesichtshälften sichtbar?')),
+                'Wie funktioniert der Achtsamkeitsprozess?', subline =>
+                  'Eine Schwingung zwischen Gefühl und Handlung')),
                   array( 'text', array( text => array(
-                    'Durch das neu gewonnene Wissen um den Zusammenhang, dass der Regelprozess unseres Lebens sich in unseren Gesichtshälften widerspiegelt,'."\n".
-                    'möchte ich diese Frage nun durch die Augen des Achtsamkeitsprozesses beantworten.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'bulletlist', array( bullet_ary => array(
-                        'Handlung ↔︎ Gefühl \\small{\\color{*TitleAdd}{(nach dem \\jump{*SpaLeb:Achtsamkeitsprozess-Implem}{Achtsamkeitsprozess})}}',
-                        'Ha (Sonne) ↔︎ Tha (Mond) \\small{\\color{*TitleAdd}{(nach dem \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Tantra} und \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Hatha Yoga})}}',
-                        'Ra (Sonne) ↔︎ Horus (Mond) \\small{\\color{*TitleAdd}{(nach der \\jump{OM:NPYo:HaTha}{altägyptischen Mythologie})}}',
-                        'Yang (männlich) ↔︎ Yin (weiblich) \\small{\\color{*TitleAdd}{(daoistisch-tantrische, systematische Zuordnung, nicht wörtlich)}}',
-                        'linke Gehirnhälfte ↔︎ rechte Gehirnhälfte \\small{\\color{*TitleAdd}{(Lateralisation unseres Gehirns)}}',
-                        'rechte Gesichtshälfte ↔︎ linke Gesichtshälfte \\small{\\color{*TitleAdd}{(diagonale Verbindung mit dem Gehirn)}}',
-                        'rechte Körperhälfte ↔︎ linke Körperhälfte \\small{\\color{*TitleAdd}{(diagonale Verbindung mit dem Gehirn)}}',
-                        'rechter Nasenton ↔︎ linker Nasenton \\small{\\color{*TitleAdd}{(der \\jump{OM:SpaLeb:Gesangstechnik}{Stimme})}}',
-                        'Oberkörper ↔︎ Körpervorderseite \\small{\\color{*TitleAdd}{(\\jump{OM:SpaLeb:Psychosomatik}{Handlungs- und Gefühlsgradient des Körpers})}}',
-                        'Wach ↔︎ Schlaf',
-                        'Bewusstsein ↔︎ Unterbewusstsein',
-                        'Sympathikus ↔︎ Parasympathikus',
-                    ))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    'Diese Frage kann aus verschiedenen Perspektiven beantwortet werden.'."\n",
-                      'Weil in meinen Augen der Achtsamkeitsprozess der zentrale Regelprozess unseres Lebens ist, halte ich die Beantwortung dieser Frage aus seiner Perspektive für am wichtigsten.'."\n"))),
-                      
-                  array( 'text', array( Shape  => 'italic', text => array(
-                      'Unser Achtsamkeitsprozess spiegelt sich tatsächlich in unseren Gesichtshälften wider!'."\n"))),
- 
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
-                      
-                'Was ist der Achtsamkeitsprozess und wie kommt das?')),
-                  array( 'text', array( text => array(
-                    'Der zentrale Regelprozess unseres Lebens wird vordergründig durch unser Bewusstsein gesteuert (siehe \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-AchtsamkeitsprozessBewWiss}),'."\n".
-                    'hat aber letztendlich auch viele unbewusste Komponenten im Hintergrund.'."\n".
+                    'Der zentrale Regelprozess unseres Lebens wird vordergründig durch unser \\jump{OM:NPYo:Spiritualitaet-Psychologie}{Bewusstsein} gesteuert (siehe \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-AchtsamkeitsprozessBewWiss}),'."\n".
+                    'hat aber letztendlich auch viele \\jump{OM:NPYo:Spiritualitaet-Psychologie}{unbewusste Komponenten} im Hintergrund.'."\n".
                     'Er verbindet unsere Lebenssituation mit unseren Gefühlen zu dieser.'."\n".
                     'Diese Gefühle können in Antrieben münden, die schließlich zu Handlungen führen können, zu denen auch das Denken zählt.'."\n".
-                    'Aus unseren Handlungen resultiert unsere neue Lebenssituation und der Kreislauf unseres Achtsamkeitsprozesses beginnt erneut.'."\n",
-                      'Unser Achtsamkeitsprozess regelt letztlich sogar unsere Evolution und unser Überleben.'."\n"))),
+                    'Aus unseren Handlungen resultiert unsere neue Lebenssituation und der Kreislauf unseres \\jump{*SpaLeb:Achtsamkeitsprozess-Implem}{Achtsamkeitsprozesses} beginnt erneut.'."\n"))),
                     
                   // #!: Wird leider nicht automatisch aufgeklappt, wenn ein Link zu den Abbildungen angeklickt wird !!!
                   /*array( 'fade-in-area', array( Display => 'invis',
@@ -159,21 +116,156 @@
                       
                   array( 'text', array( text => array(
                     'Unser Achtsamkeitsprozess bekommt die Form einer Helixspirale, wenn wir unser körperliches und seelisches Erblühen oder Gedeihen mit einbeziehen – unseren Lernprozess und'."\n".
-                    'unsere Persöhnlichkeitsentwicklung, unsere Reife und unsere Erfüllung (siehe \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-Achtsamkeitsprozess}).'."\n"))),
+                    'unsere Persöhnlichkeitsentwicklung, unsere Reife und unsere Erfüllung (siehe \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-Achtsamkeitsprozess}).'."\n",
+                      'Unser Achtsamkeitsprozess wird durch all unsere biologischen Regelprozesse erzeugt und kümmert sich in einer Rückkopplung mit unserer biologischen Feinstruktur darum,'."\n".
+                    'dass es all diesen Regelprozessen gut geht, sie gut und stabil ablaufen können und in ihrer uns angenehmen Spur bleiben.'."\n"))),
+                    
+                  array( 'text', array( Shape  => 'italic', text => array(
+                      'Damit spielt unser Achtsamkeitsprozess die Hauptrolle in unserem Leben und ist die Grundlage unserer Biophysik.'."\n"))),
+ 
+                  array( 'text', array( text => array(
+                    'Er regelt letztlich unser Überleben und nimmt sogar wichtigen Einfluss auf unsere \\jump{OM:SpaLeb:Achtsamkeitsprozess:AchtsamkeitsprozesGrundlLeben}{Evolution}.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
-                'Wieso spiegelt sich der zentrale Regelprozess unseres Lebens in unserem Gesicht wider?')),
+                'Die Pole unserer Achtsamkeit spiegeln sich in der Spezialisierung unserer Gehirnhälften', subline =>
+                  'Unsere Achtsamkeit in unserem Gesicht')),
                   array( 'text', array( text => array(
                     'Unsere Gehirnhälften sind jeweils auf einen wichtigen Aspekt unseres Achtsamkeitsprozesses spezialisiert,'."\n".
                     'auf unsere Gefühle sowie auf unser Denken und Handeln.'."\n".
-                    'Dies nennen wir die Lateralisation unseres Gehirns.\\color{*Bearb}{(Verweis)}'."\n"))),
+                    'Dies nennen wir die Lateralisation unseres Gehirns.\\footnote{\\const{NPYo_g_footnote_text_GehirnLateralisation}}'."\n"))),
                     
                   array( 'text', array( Shape  => 'italic', text => array(
-                      'Dass die Spezialisierung unserer Gehirnhälften mit zwei wichtigen Aspekten unseres zentralen Regelprozesses weitgehend übereinstimmt, ist sicherlich kein Zufall.'."\n"))),
+                      'Dass die Spezialisierung unserer Gehirnhälften mit zwei wichtigen Aspekten unseres zentralen Regelprozesses weitgehend übereinstimmt, ist sicherlich kein Zufall.'."\n".
+                      'Der Achtsamkeitsprozess ist real.'."\n"))),
  
                   array( 'text', array( text => array(
                     'Unser Achtsamkeitsprozess schwingt zwischen seinen beiden Polen Gefühl und Denken/Handeln hin und her.'."\n".
                     'Und dies drückt sich in der Funktion unseres Gehirns aus.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
+                      
+                'Was wissen wir über unsere Körper- und Gesichtshälften?', subline =>
+                  'Ihre Bedeutung in altem Wissen und in alten Mythologien')),
+                  array( 'text', array( text => array(
+                    'Durch das neu gewonnene Wissen, dass sich der Regelprozess unseres Lebens in unseren Gesichtshälften widerspiegelt,'."\n".
+                    'möchte ich diese Frage nun durch die Augen des Achtsamkeitsprozesses beantworten.'."\n".
+                    'Die folgende Liste ist eine feste Zuordnung unserer beiden Körper- und Gesichtshälften zu mythologischem  und biologischem Wissen:'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Ha (Sonne) ↔︎ Tha (Mond) \\small{\\color{*TitleAdd}{(nach dem \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Tantra} und \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Hatha Yoga})}}',
+                        'Ra (Sonne) ↔︎ Horus (Mond) \\small{\\color{*TitleAdd}{(nach der \\jump{OM:NPYo:HaTha}{altägyptischen Mythologie})}}',
+                        'Yang (männlich) ↔︎ Yin (weiblich) \\small{\\color{*TitleAdd}{(daoistisch-tantrische, systematische Zuordnung, nicht wörtlich)}}',
+                        'Handlung ↔︎ Gefühl \\small{\\color{*TitleAdd}{(Pole unseres \\jump{*SpaLeb:Achtsamkeitsprozess-Implem}{Achtsamkeitsprozesses})}}',
+                        'linke Gehirnhälfte ↔︎ rechte Gehirnhälfte \\small{\\color{*TitleAdd}{(Lateralisation unseres Gehirns)}}',
+                        'rechte Gesichtshälfte ↔︎ linke Gesichtshälfte \\small{\\color{*TitleAdd}{(diagonale Verbindung mit dem Gehirn)}}',
+                        'rechte Körperhälfte ↔︎ linke Körperhälfte \\small{\\color{*TitleAdd}{(diagonale Verbindung mit dem Gehirn)}}',
+                        'rechter Nasenton ↔︎ linker Nasenton \\small{\\color{*TitleAdd}{(die Zweistimmigkeit unserer \\jump{OM:SpaLeb:Gesangstechnik}{Stimme})}}',
+                        'Oberkörper ↔︎ Körpervorderseite \\small{\\color{*TitleAdd}{(der \\jump{OM:SpaLeb:Psychosomatik}{Handlungs- und Gefühlsgradient} unseres Körpers)}}',
+                        'Wachen ↔︎ Schlafen \\small{\\color{*TitleAdd}{(die \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{zwei Seiten unseres Lebens})}}',
+                        'Bewusstsein ↔︎ Unterbewusstsein \\small{\\color{*TitleAdd}{(unser \\jump{OM:NPYo:Spiritualitaet-Psychologie}{spiritueller Dialog})}}',
+                        'Sympathikus ↔︎ Parasympathikus \\small{\\color{*TitleAdd}{(unser vegetatives Nervensystem)}}',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Ohne, dass sie den Achtsamkeitsprozess als explizit biophysikalische Grundlage des Lebens kannten, war unseren Vorfahren sehr wohl die Bedeutung'."\n".
+                    'und Funktion unserer Körper- und Gesichtshälften bekannt.'."\n"))),
+                      
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
+                    array_merge( $NPYo_g_figure_ary_Hermesstab, array( name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-Hermesstab',
+                                                         /* text => '' */)),
+                      )),
+                      
+                  array( 'text', array( text => array(
+                    'Der Hermesstab\\footnote{\\const{NPYo_g_footnote_text_Hermesstab}} (siehe \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-Hermesstab})'."\n".
+                    'bringt dies in seiner alten Symbolik zum Ausdruck.'."\n".
+                    'Er steht für die Orientierung im Leben, für die Persönlichkeitsentwicklung, die Weiswerdung.'."\n",
+                      'Dies können wir erreichen, wenn wir die beiden Dualistischen Pole, aus dem Fernen Osten bekannt als \\jump{OM:NPYo:ExistenzLeichtigkeit}{Yin und Yang}\\footnote{\\const{NPYo_g_footnote_text_YinUndYang}},'."\n".
+                    'miteinander vereinigen und in eine harmonische Balance bringen.'."\n".
+                    'Das ist die Botschaft der Weisheit und der Heilung des Gottes Hermes Trismegistos an die Menschen, der \\jump{OM:NPYo:Stein-der-Weisen}{Stein der Weisen}.'."\n"))),
+                      
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
+                    array_merge( $SpaLeb_g_figure_ary_KundaliniProzess, array( name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-Kundalini-Prozess',
+                                                         /* text => '' */)),
+                      )),
+                      
+                  array( 'text', array( text => array(
+                    'Ähnliches ist schon seit Urzeiten bekannt und heute Kundalini-Prozess genannt.'."\n".
+                    'Dieser kam aus dem \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Tantra} ins \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Hatha Yoga} und steht hier für den \\quote{Ausgleich von Sonne und Mond}\\footnote{\\const{NPYo_g_footnote_text_HathaHaTha}}.'."\n",
+                      'Denn Ha heißt Sonne und Tha heißt Mond, also zusammen Hatha, und beide stehen für unsere Körperhälften.'."\n".
+                    'Ha und Tha sind im Hatha Yoga oder im Kundalini Yoga in eine innere Balance zu bringen, wenn wir ein besseres Leben leben wollen.'."\n"))),
+                      
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
+                    array_merge( $SpaLeb_g_figure_ary_GefuehlsHandlungspolWaage, array( name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-Gefuehls-Handlungspol-Waage',
+                                                         /* text => '' */)),
+                      )),
+                      
+                  array( 'text', array( text => array(
+                    'Auch die alten Ägypter hatten eine ähnliche Vorstellung vom Leben:'."\n".
+                    'In ihrem Kreislauf des Lebens spielt das Auge des Ra (auch Re genannt), also das Sonnenauge (siehe \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-AugeDesRa}),'."\n".
+                    'und das Auge des Horus, das Mondauge (siehe \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-AugeDesHorus}), eine zentrale Rolle.'."\n",
+                      'Die \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-LebenDesHorusHermesstab} zeigt dies in einer Gesamtsymbolik zum Kreislauf des Lebens.'."\n"))),
+                      
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
+                    array_merge( $NPYo_g_figure_ary_AugeDesRa, array( name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-AugeDesRa',
+                                                         /* text => '' */)),
+                    array_merge( $NPYo_g_figure_ary_AugeDesHorus, array( name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-AugeDesHorus',
+                                                         /* text => '' */)),
+                      )),
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
+                    array_merge( $NPYo_g_figure_ary_LebenDesHorusHermesstab, array( name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-LebenDesHorusHermesstab',
+                                                         text => 'XXX Abbild des Lebens, das sehr ähnlich in altägyptischen Darstellungen zu finden ist. Es entsteht unten im Ei der Metamorphose, dem aschefarbenen Dreiviertel-Mond, und entwickelt sich über den Aufstieg der Kundalini-Schlangen aus der Wurzel, dem mütterlichen Schoß, ins Licht der väterlichen Sonne, der Klugheit oder Weisheit, wo es verbrennt und wieder zur Asche wird. So gesehen stellt dieses Bild erstaunlich authentisch den Kreislauf des ›Phönix aus der Asche‹ dar.')),
+                      )),
+                      
+                  array( 'text', array( text => array(
+                    'Diese Symbolik versinnbildlicht letztendlich den Kreislauf des Lebens im Mythos des ›Phönix aus der Asche‹XXX.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
+                      
+                'Die Quintessenz des alten Wissens und der alten Mythen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Im alten Wissen und den alten Mythologien geht es immer wieder um den Ausgleich, um eine gewisse Harmonisierung, der Pole unseres Lebens.'."\n".
+                    'Die beiden wichtigsten Pole werden in unseren Körperhälften erkannt.'."\n".
+                    'Zu denen unsere Gesichtshälften gehören, die unsere Gefühlswelt, die Gefühlswelt der beiden Pole unserer Achtsamkeit, ausdrücken.'."\n"))),
+                    
+                  array( 'text', array( Shape  => 'italic', text => array(
+                      'Es gibt nur eine Sache, die darüber entscheidet, ob wir ein gutes, angenehmes Leben führen:'."\n",
+                        'Unsere Gefühle.'."\n"))),
+ 
+                  array( 'text', array( text => array(
+                    'Unsere jeweilige Gesichtshälfte verrät uns also etwas darüber, wie es dem jeweiligen Pol unserer Achtsamkeit geht.'."\n".
+                    'Ist er müde oder hellwach, fröhlich oder traurig, offenherzig oder misstrauisch und so fort?'."\n".
+                    'Und wir können noch viel mehr Attribut-Paare finden, die uns eine Einschätzung geben.'."\n",
+                      'Diese Attribute lassen sich dann wiederum dem zuordnen, für was unsere Gesichtshälften fest stehen.'."\n".
+                    'Für unsere (Denk-)Handlung und unser Gefühl.'."\n".
+                    'Für unser Wachen und Schlafen.'."\n".
+                    'Oder für unser Bewusstsein und unser Unterbewusstsein zum Beispiel.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
+                      
+                'Was genau wird durch den Vergleich der gespiegelten Gesichtshälften sichtbar?', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Diese Frage kann aus verschiedenen Perspektiven beantwortet werden.'."\n",
+                      'Weil in meinen Augen der Achtsamkeitsprozess der zentrale Regelprozess unseres Lebens ist, halte ich die Beantwortung dieser Frage aus seiner Perspektive für am wichtigsten.'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                      'Unser Achtsamkeitsprozess spiegelt sich tatsächlich in unseren Gesichtshälften wider!'."\n"))),
+                      
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
                 'Wie kommt es, dass sich in unseren Gesichtshälften die speziellen Eigenschaften unserer Gehirnhälften zeigen?')),
