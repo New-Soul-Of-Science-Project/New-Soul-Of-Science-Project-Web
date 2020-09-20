@@ -159,9 +159,9 @@
                         'rechte Körperhälfte ↔︎ linke Körperhälfte \\small{\\color{*TitleAdd}{(diagonale Verbindung mit dem Gehirn)}}',
                         'rechter Nasenton ↔︎ linker Nasenton \\small{\\color{*TitleAdd}{(die Zweistimmigkeit unserer \\jump{OM:SpaLeb:Gesangstechnik}{Stimme})}}',
                         'Oberkörper ↔︎ Körpervorderseite \\small{\\color{*TitleAdd}{(der \\jump{OM:SpaLeb:Psychosomatik}{Handlungs- und Gefühlsgradient} unseres Körpers)}}',
-                        'Wachen ↔︎ Schlafen \\small{\\color{*TitleAdd}{(die \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{zwei Seiten unseres Lebens})}}',
-                        'Bewusstsein ↔︎ Unterbewusstsein \\small{\\color{*TitleAdd}{(unser \\jump{OM:NPYo:Spiritualitaet-Psychologie}{spiritueller Dialog})}}',
-                        'Sympathikus ↔︎ Parasympathikus \\small{\\color{*TitleAdd}{(unser vegetatives Nervensystem)}}',
+                        'Wachen (Sonne) ↔︎ Schlafen (Mond) \\small{\\color{*TitleAdd}{(die \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{zwei Seiten unseres Lebens})}}',
+                        'Bewusstsein (Sonne) ↔︎ Unterbewusstsein (Mond) \\small{\\color{*TitleAdd}{(unser \\jump{OM:NPYo:Spiritualitaet-Psychologie}{spiritueller Dialog})}}',
+                        'Sympathikus (Sonne) ↔︎ Parasympathikus (Mond) \\small{\\color{*TitleAdd}{(unser vegetatives Nervensystem)}}',
                     ))),
                   array( 'text', array( text => array(
                     'Ohne, dass sie den Achtsamkeitsprozess als explizit biophysikalische Grundlage des Lebens kannten, war unseren Vorfahren sehr wohl die Bedeutung'."\n".
@@ -176,8 +176,8 @@
                     'Der Hermesstab\\footnote{\\const{NPYo_g_footnote_text_Hermesstab}} (siehe \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-Hermesstab})'."\n".
                     'bringt dies in seiner alten Symbolik zum Ausdruck.'."\n".
                     'Er steht für die Orientierung im Leben, für die Persönlichkeitsentwicklung, die Weiswerdung.'."\n",
-                      'Dies können wir erreichen, wenn wir die beiden Dualistischen Pole, aus dem Fernen Osten bekannt als \\jump{OM:NPYo:ExistenzLeichtigkeit}{Yin und Yang}\\footnote{\\const{NPYo_g_footnote_text_YinUndYang}},'."\n".
-                    'miteinander vereinigen und in eine harmonische Balance bringen.'."\n".
+                      'Dies können wir erreichen, wenn wir die beiden dualistischen Pole, aus dem Fernen Osten bekannt als \\jump{OM:NPYo:ExistenzLeichtigkeit}{Yin und Yang}\\footnote{\\const{NPYo_g_footnote_text_YinUndYang}},'."\n".
+                    'miteinander in einen Dialog und in eine harmonische Balance bringen.'."\n".
                     'Das ist die Botschaft der Weisheit und der Heilung des Gottes Hermes Trismegistos an die Menschen, der \\jump{OM:NPYo:Stein-der-Weisen}{Stein der Weisen}.'."\n"))),
                       
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
@@ -186,7 +186,7 @@
                       )),
                       
                   array( 'text', array( text => array(
-                    'Ähnliches ist schon seit Urzeiten bekannt und heute Kundalini-Prozess genannt.'."\n".
+                    'Dies ist den Menschen schon seit Urzeiten bekannt und heute Kundalini-Prozess genannt.'."\n".
                     'Dieser kam aus dem \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Tantra} ins \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Hatha Yoga} und steht hier für den \\quote{Ausgleich von Sonne und Mond}\\footnote{\\const{NPYo_g_footnote_text_HathaHaTha}}.'."\n",
                       'Denn Ha heißt Sonne und Tha heißt Mond, also zusammen Hatha, und beide stehen für unsere Körperhälften.'."\n".
                     'Ha und Tha sind im Hatha Yoga oder im Kundalini Yoga in eine innere Balance zu bringen, wenn wir ein besseres Leben leben wollen.'."\n"))),
@@ -215,13 +215,8 @@
                       
                   array( 'text', array( text => array(
                     'Diese Symbolik versinnbildlicht letztendlich den Kreislauf des Lebens im Mythos des ›Phönix aus der Asche‹XXX.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Das Leben von der Geburt aus der „Asche“ (Ei, silberne Mondsichel) über unsere Persönlichkeitsentwicklung, unserem Gedeihen, bis zur Weiswerdung (gelbe Sonne, Feuer), die uns gut in den Tod geleitet.'."\n".
+                    'Diese Entwicklung wird vom Auge des Ra (Sonne) und dem Auge des Horus (Mond) begleitet und gelenkt.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
                 'Die Quintessenz des alten Wissens und der alten Mythen', subline =>
@@ -242,45 +237,16 @@
                       'Diese Attribute lassen sich dann wiederum dem zuordnen, für was unsere Gesichtshälften fest stehen.'."\n".
                     'Für unsere (Denk-)Handlung und unser Gefühl.'."\n".
                     'Für unser Wachen und Schlafen.'."\n".
-                    'Oder für unser Bewusstsein und unser Unterbewusstsein zum Beispiel.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Oder für unser Bewusstsein und unser Unterbewusstsein zum Beispiel.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
-                'Was genau wird durch den Vergleich der gespiegelten Gesichtshälften sichtbar?', subline =>
-                  '')),
+                'Unser Gesicht hat drei Ebenen der Prägung')),
                   array( 'text', array( text => array(
-                    'Diese Frage kann aus verschiedenen Perspektiven beantwortet werden.'."\n",
-                      'Weil in meinen Augen der Achtsamkeitsprozess der zentrale Regelprozess unseres Lebens ist, halte ich die Beantwortung dieser Frage aus seiner Perspektive für am wichtigsten.'."\n"))),
-                      
-                  array( 'text', array( Shape  => 'italic', text => array(
-                      'Unser Achtsamkeitsprozess spiegelt sich tatsächlich in unseren Gesichtshälften wider!'."\n"))),
-                      
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
-                      
-                'Wie kommt es, dass sich in unseren Gesichtshälften die speziellen Eigenschaften unserer Gehirnhälften zeigen?')),
-                  array( 'text', array( text => array(
-                    'In unseren Gesichtshälften werden die speziellen Eigenschaften unserer Gehirnhälften sichtbar, weil unsere Gehirnhälften diagonal – über kreuz – unsere'."\n".
-                    'Körperhälften durch die von ihnen ausgehenden Nervenbahnen steuern, jedenfalls bis auf ganz wenige Ausnahmen.'."\n".
-                    'Und die Nervenbahnen steuern nicht nur unsere Muskulatur, den kurzfristigen Ausdruck unseres Gesichts, sondern auch die Spannung unserer Faszien,'."\n".
+                    'Unsere Nervenbahnen steuern nicht nur unsere Muskulatur, den kurzfristigen Ausdruck unseres Gesichts, sondern auch die Spannung unserer Faszien,'."\n".
                     'die den langfristigen Ausdruck unseres Gesichts prägen.'."\n",
                       'Unsere Geschichte, unsere Erfahrungen und wie wir diese verarbeitet haben, werden in unserem langfristigen Gesichtsausdruck sichtbar.'."\n".
-                    'Auf diese Bedeutung komme ich noch zurück.'."\n"))),
-            
-                  array( 'text', array( Shape  => 'italic', text => array(
-                      'Dass unser Achtsamkeitsprozess in unseren Gesichtshälften auf diese Weise sichtbar wird, ist eine ganz besondere Erkenntnis!'."\n"))),
- 
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
+                    'In der tiefsten Ebene, ganz unten drunter, ist das Wachstum unseres Gesichts.'."\n"))),
+                  /* array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
                 'Was konkret können wir beim Vergleich unserer Gesichtshälften möglicherweise erkennen?')),
                   array( 'text', array( text => array(
@@ -288,10 +254,21 @@
                     'welche mehr auf unser Denken und Handeln spezialisiert ist.'."\n".
                     'Das ist nicht bei allen Menschen gleich, obwohl die Menschheit diesbezügliche Präferenzen hat.'."\n",
                       'Häufig stimmt die Denk-/Handlungsseite unseres Gesichts oder Körpers mit unserer Händigkeit überein, was eine gewisse innere Logik aufweist.'."\n".
-                    'Aber auch hier gibt es keine ganz festen Regeln, schon auch deshalb, weil manche Linkshänder zu Rechtshändern umerzogen wurden.'."\n"))),
+                    'Aber auch hier gibt es keine ganz festen Regeln, schon auch deshalb, weil manche Linkshänder zu Rechtshändern umerzogen wurden.'."\n"))), */
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
-                'Welche Gesichtshälfte eher fühlend und welche eher handelnd ist, drückt sich tendenziell in Pärchen von Attributen ihres Aussehens aus')),
+                'Gesichtsspiegelungen')),
+                  array( 'text', array( text => array(
+                    'Wenn du magst, mach gerne mal eine Gesichtsspiegelung:'."\n".
+                    'Mit meiner \\jump{OM:SpaLeb:Gesichtsausdruck:FaceYourFaceApp}{FaceYourFace App} für Apple iOS (iPhone, iPad) oder mit einer der anderen Apps.'."\n",
+                      'Das ist eine sehr spannende Sache.'."\n".
+                    'Eine Hilfe bei deiner eigenen Analyse der Gesichtshälften und deiner eigenen Einordnung möchte ich dir im Folgenden mit an die Hand geben.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
+                      
+                'Wichtige Attribut-Pärchen unserer Gesichtshälften sind …')),
+                  array( 'text', array( text => array(
+                    'Nachfolgend drei der Attribut-Pärchen, von denen das erste hier nahe liegt und das Paar privater oder publiker mir durch die Künstlerin \\jump{OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung}{Bilbo Calvez}'."\n".
+                    'bekannt wurde.'."\n"))),
                   // #!: Die Liste ist auch auf der Seite der FaceYourFace App.
                   array( 'bulletlist', array( bullet_ary => array(
                         'emotionaler ↔︎ denkender, berechnender, kontrollierender',
@@ -301,39 +278,35 @@
                         //'passiver ↔︎ aktiver',
                     ))),
                   array( 'text', array( text => array(
-                    'Dies sind drei der Attribut-Pärchen, von denen das erste hier nahe liegt und das Paar privater oder publiker mir durch die Künstlerin \\jump{OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung}{Bilbo Calvez},'."\n".
-                    'auf deren Werk ich noch zurückkomme, bekannt geworden ist.'."\n",
-                      'Fallen euch noch andere Attribut-Pärchen auf?'."\n".
+                    'Fallen euch noch andere Attribut-Pärchen ein?'."\n".
                     'Dann \\jump{OM:FrQFT:Impressum:Inhaberdaten}{schreibt mir} gerne.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
                 'Weitere polare Persönlichkeitseigenschaften')),
                   array( 'text', array( text => array(
-                    'Mehr Attribut-Pärchen, die auch interessant sind, aber nicht unbedingt so nach Gefühl und Handlung verteilt sein müssen, wie wir es oft erwarten, warum auch immer, sind:'."\n"))),
+                    'Mehr Attribut-Pärchen, die auch interessant sind, aber nicht unbedingt so nach Gefühl und Handlung verteilt sein müssen, wie wir es oft erwarten, sind:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'männlicher ↔︎ weiblicher',
                         'weicher ↔︎ härter',
                         'muskulöser ↔︎ schmächtiger',
-                        'breiter ↔︎ schmaler \\small{\\color{*TitleAdd}{(mit Vorsicht anzuwenden, weil auch sehr von der Bildperspektive abhängig)}}',
+                        'breiter ↔︎ schmaler \\small{\\color{*TitleAdd}{(Vorsicht, stark von der Bildperspektive abhängig)}}',
                     ))),
                   array( 'text', array( text => array(
                     'Vorstehende Attribut-Pärchen kitzeln weitere Facetten unserer auf unsere Körperhälften bezogenen, polaren Persönlichkeitseigenschaften heraus.'."\n".
-                    'Diese müssen nicht übertrieben gedeutet, sondern können als interessant betrachtet werden.'."\n",
-                      'Fallen euch noch weitere Attribut-Pärchen in dieser Richtung auf?'."\n".
-                    'Dann \\jump{OM:FrQFT:Impressum:Inhaberdaten}{schickt mir} diese gerne zu.'."\n"))),
+                    'Diese müssen nicht übertrieben gedeutet, sondern können als interessant betrachtet werden.'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                       'Du wirst vielleicht Dinge entdecken, die dich überraschen, bei dir oder bei anderen.'."\n",
-                        'Nimm was du siehst erst einmal so an, wie du es siehst, ohne zu erschrecken, dich zu ärgern oder gar vorschnell zu urteilen.'."\n".
+                        'Nimm was du siehst erst einmal so an, wie du es siehst, ohne zu erschrecken, dich zu ärgern oder gar vorschnell zu werten oder zu urteilen.'."\n".
                       'Lass es auf dich wirken, dich von diesen Facetten unseres, deines Selbst faszinieren und inspirieren und gewöhne dich an sie.'."\n".
                       'Mache einfach eine achtsame Bestandsaufnahme.'."\n",
                         'Erkläre dies auch anderen, von denen du eine Gesichtsspiegelung machst.'."\n"))),
  
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
-                'Wir können möglicherweise sehen, wie gut unser Gefühls-Pol und unser Denk-/Handlungs-Pol funktionieren und wie gut ausbalanciert beide sind')),
+                'Wir können vielleicht sehen, wie gut unser Gefühlspol und unser Denk-/Handlungspol funktionieren und wie gut ausbalanciert beide sind')),
                   array( 'text', array( text => array(
-                    'Der Zustand unseres Gefühls-Pols und unseres Denk-/Handlungs-Pols sowie deren Balance können durch folgende Attribut-Pärchen verglichen werden:'."\n"))),
+                    'Der Zustand unseres Gefühlspols und unseres Denk-/Handlungspols sowie deren Balance können durch folgende Attribut-Pärchen ausgeleuchtet werden:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'munterer ↔︎ müder',
                         'fröhlicher ↔︎ trauriger',
@@ -343,6 +316,7 @@
                         'ausdrucksstärker ↔︎ ausdrucksschwächer',  // #: aus SdW Lexikon: Gesicht
                         'friedfertiger, sanftmütiger ↔︎ aggressiver',
                         'offenherziger ↔︎ misstrauischer',
+                        'entschiedener ↔︎ anpassungsfähiger',
                         'sympathischer ↔︎ unsympathischer',
                         //'XXX ↔︎ XXX',
                     ))),
@@ -356,11 +330,11 @@
  
                   array( 'text', array( text => array(
                     'Nutze diese neue Betrachtung der Facetten deines Gesichtsausdrucks, wenn du magst, um dir Intuitionen kommen zu lassen, was du vielleicht an deinem Leben'."\n".
-                    'ändern, wie du dich fortentwickeln und ein erfülltes, gedeihliches Leben führen kannst.'."\n".
+                    'ändern, wie du dich fortentwickeln und ein erfülltes, gedeihliches Leben führen willst.'."\n".
                     'Deine Fähigkeit, positive Veränderungen und Entwicklungen für dich zu bewirken, steckt von Natur aus in dir.'."\n".
                     'Auch dir einen Rat zu holen, gehört zu deinen Fähigkeiten dazu.'."\n",
                       'Dein Achtsamkeitsprozess regelt auch deine Balance zwischen deiner Stabilität und deiner Fortentwicklung.'."\n".
-                    'Denn beides ist für dein Leben, dein Wohlbefinden – deine Reife und Erfüllung – wichtig.'."\n",
+                    'Denn beides ist für dein Leben, dein Wohlbefinden, deine Reife und Erfüllung wichtig.'."\n",
                       'Dein Gefühl wird dich leiten, dein Leben zu verbessern.'."\n".
                     'Dafür ist es da.'."\n".
                     'Dein Gefühl wird es dir danken, wenn du auf es hörst und dich um dich und auch um andere kümmerst.'."\n"))),
@@ -389,8 +363,10 @@
                     'Und du, ihr bekommt so einen Querschnitt von Eindrücken des Gesichtsausdrucks deines, eures Selbst.'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                      'Und vielleicht siehst du, ihr sogar eine Entwicklung … ;-)'."\n"))),
+                      'Und vielleicht siehst du, ihr sogar eine positive Entwicklung … ;-)'."\n"))),
  
+                  array( 'text', array( text => array(
+                    'Das würde mich freuen!'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
                 'Ich habe eine App entwickelt, die mit einfachen Handgriffen die Gesichtsspiegelung ermöglicht')),
