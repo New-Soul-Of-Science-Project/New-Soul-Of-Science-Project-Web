@@ -38,6 +38,12 @@
                       
                 'Yin und Yang oder Taiji (Tai Chi)', subline =>
                   '')),
+                      
+                  array( 'notice', array( Display => 'invis', text => array(
+                    // '\\bold{XXX}',
+                    '• Das Yin und Yang Symbol kann auch als vereinfachtes Symbol – eine Projektion in 2D – der Kundalini-Schlangen des \\jump{OM:SpaLeb:Psychosomatik:Vortext:Fig-Kundalini-Prozess}{Kundalini-Prozesses} oder der des \\jump{OM:NPYo:HaTha:Vortext:Fig-Hermesstab}{Hermesstabs} gesehen werden..',
+                    ))),
+                      
                   array( 'text', array( text => array(
                     'Das Yin-Yang-Symbol\\footnote{\\const{NPYo_g_footnote_text_YinUndYang}}, das Taijitu\\color{*Bearb}{(Verweis)}, versinnbildlicht das naturphilosophische'."\n".
                     '\\jump{OM:FrQFT:FirstPrinziples:Vortext:Existenzprinzip}{Existenzprinzip} des \\jump{OM:SpaLeb:Home}{›Spannungsspiels des Lebens‹}'."\n".
