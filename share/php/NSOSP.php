@@ -829,14 +829,16 @@
                                 array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Quantenmechanik-De-Broglie-Bohm-Theorie-Pilotwellentheorie-Bohmsche-Mechanik_de.php',
                                        url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Quantenmechanik-De-Broglie-Bohm-Theorie-Pilotwellentheorie-Bohmsche-Mechanik_de.php',
                                        titel => 'Die Realisierung der De-Broglie-Bohm-Theorie (Bohmsche Mechanik, Pilotwellentheorie, Führungswellentheorie) - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
-                                       description => 'Eine äquivalente und deterministische Alternative zur Quantenmechanik.',
+                                       description => 'Der Quantenmechanik äquivalente und deterministische Alternative.',
                                        keywords => '',
                                        text_titel_h1 => 'Die Realisierung der De-Broglie-Bohm-Theorie \\\\ \\color{*TitleAdd}{\\small{(Bohmsche Mechanik, Pilotwellentheorie, Führungswellentheorie)}}',
                                        text_titel_short => 'De-Broglie-Bohm-Theorie',
-                                       text_undertitel_h2 => 'Eine äquivalente und deterministische Alternative zur Quantenmechanik',
+                                       // text_undertitel_h2 => 'Eine äquivalente und deterministische Alternative zur Quantenmechanik',
+                                       text_undertitel_h2 => 'Der Quantenmechanik äquivalente und deterministische Alternative',
                                        //text_titel_discr_h3 => 'XXX klassischer',
                                        jump_ary => array(
                                                 'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                                                         
                                               'OM:FrQFT:De-Broglie-Bohm-Theorie:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
                                             ),
                                      ),
