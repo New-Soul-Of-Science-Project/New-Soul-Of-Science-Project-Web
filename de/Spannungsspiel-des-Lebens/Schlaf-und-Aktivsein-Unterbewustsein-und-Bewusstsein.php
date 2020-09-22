@@ -32,6 +32,16 @@
                     '\\bold{Historischer Bezug}',
                     '• In dem oben geschilderten Kontext ist nun zu verstehen, warum unsere weibliche Gefühlsseite in früheren Kulturen, Religionen und Mythen mit dem Mond identifiziert wurde und unsere männliche Handlungsseite mit der Sonne. Der Schlaf hatte dort eine große und wichtige Rolle und Bedeutung.',
                     '• Die bisher zu wenig erkannten und gewürdigten Aspekte der Bedeutung unseres Schlafs können wir wahrscheinlich unter anderem in früheren Kulturen finden, denn diese Menschen hatten einen ganz anderen Blick auf ihr Leben und auf ihren Schlaf als wir.',
+                    '\\bold{Philosophie}',
+                    '• In letzter Zeit ist mir klar geworden, dass es vielmehr um das Verhältnis vom Bewussten zum Unterbewussten oder Nichtbewussten geht. Es geht darum, was wir wissen und was wir nicht wissen. Und dies ist ein dynamischer Prozess:',
+                    '– Das Einzige, was wir sicher intuitiv, und unter Annahme einer bestimmten Struktur der Realität auch logisch, wissen ist, dass wir niemals alles wissen werden.',
+                    '– Doch was wir einmal wissen werden oder niemals wissen können, das können wir nicht wissen.',
+                    '– Um dieses Spannungsfeld geht es aus meiner Sicht.',
+                    '– Das Endliche und Relative steht dann für das, was wir wissen oder vielleicht wissen können. Und das Unendliche und absolut Absolute steht für das, was wir niemals wissen werden.',
+                    '– Mit konkreten Dingen, die wir angeblich niemals wissen können, verbietet es sich daher um die Ecke zu kommen. Denn das können wir nicht wissen, dass wir genau diese Dinge niemals wissen werden.',
+                    '– Daher sind die Begriffe Unendlichkeit und Absolutheit ganz sicher in diesem Sinne fehl am Platz. In dem Moment, wo wir sie gebrauchen, sind sie schon zu konkret, um nicht strittig zu sein.',
+                    '– Daher sind sie als Platzhalter für das zu verstehen, was wir nicht wissen.',
+                    '– \\jump{OM:NPYo:Spiritualitaet-Psychologie}{Spiritualität} ist in meinen Augen dann übrigens unser Glaube an einen fruchtbaren und hilfreichen Dialog unseres Bewusstseins mit unserem Unterbewusstsein oder mit Gott oder mit dem Universum oder dem Vakuum oder wie immer wir das, was wir nicht wissen oder kennen, bezeichnen und natürlich dann auch unsere Praxis dieses Dialogs.',
                     ))),
                       
                   array( 'text', array( text => array(
