@@ -656,6 +656,52 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik:Muskuloese-Rueckseite'),
+                    )),
+              )
+          ); ?>
+
+
+		    	<! Muskulöse Rückseite >
+          <?php $Sc_g_equation_auto_num = 0; ?>
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:SpaLeb:Psychosomatik:Muskuloese-Rueckseite',
+              'Unsere Körperrückseite ist durchgängig mit starker Muskulatur besetzt, die, wenn aktiviert, für unsere Körperstabilität sorgt', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'vis', text => array(
+                    // '\\bold{XXX:}',
+                    '• Unsere muskulöse Körperrückseite ist, wenn wir in einer generalisierten Schonhaltung sind, deaktiviert und verspannt.',
+                    '• Eine generalisierte Schonhaltung können wir verlassen, wenn wir diese Muskulatur aktivieren. Dazu gehört auch die Muskulatur unseres \\jump{OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler}{inneren Marionettenspielers}, die unter anderem die Räume im Kopf öffnet.',
+                    ))),
+                      
+                   array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik-Entscheidungen'),
                     )),
               )

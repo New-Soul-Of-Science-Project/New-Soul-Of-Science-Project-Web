@@ -2632,6 +2632,8 @@
                                                 'OM:SpaLeb:Psychosomatik:Vortext:Perspektiven' => array( headline_text => 'Das kluge Spiel mit unseren Perspektiven', headline_text_short => 'Das kluge Spiel mit unseren Perspektiven'),
                                                          
                                               'OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler' => array( headline_text => 'Innerer Marionettenspieler', headline_text_short => 'Innerer Marionettenspieler'),
+                                                         
+                                              'OM:SpaLeb:Psychosomatik:Muskuloese-Rueckseite' => array( headline_text => 'Muskulöse Rückseite', headline_text_short => 'Muskulöse Rückseite'),
                                             ),
                                      ),
                               'OM:SpaLeb:Psychosomatik-Entscheidungen' =>
