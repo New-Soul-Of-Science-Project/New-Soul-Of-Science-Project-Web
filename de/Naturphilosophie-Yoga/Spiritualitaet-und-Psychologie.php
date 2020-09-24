@@ -18,7 +18,7 @@
                     '• Siehe Meetup zu diesem Thema: \\italic{\\jumpname{OM:NPYo:Meetup-LGBT-Spiritual-Hamburg}}, Veranstaltung vom 09.03.2020',
                     '• Unsere Pole kommunizieren lassen bedeutet uns wieder mit uns selber verbinden, ReConnection, siehe geplante Seite. Das bedeutet auch Yoga – Joch, Zuggeschirr, conjugare, vereinigen, zusammenschließen, sich verbinden.',
                     '– Einer dieser Pole ist unser sogenanntes Ego.',
-                    '– Auch unser \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{Schlaf} ist einer dieser Pole mit seinem Gegenpol des \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{Wachseins und Aktivseins}: Wir können erkennen, dass unser Schlaf fundamental mit unserer Existenz, mit unserem Leben, mit unserem Achtsamkeitsprozesses verknüpft ist. Unser Schlaf ist die eine Hälfte unseres Lebens unser Wachsein die andere. Heute wird der Schlaf von vielen (westlichen) Menschen als störend empfunden, als etwas, das sie von ihrem Leben abhält, und tendenziell abgelehnt. Viele Menschen empfinden ihren Schlaf als ineffektive Zeit. Dies ist nach meiner Interpretation eine vollkommene Fehleinschätzung und ein schwerwiegendes Problem.',
+                    '– Auch unser \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{Schlaf} ist einer dieser Pole mit seinem Gegenpol des \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{Wachseins und Aktivseins}: Wir können erkennen, dass unser Schlaf fundamental mit unserer Existenz, mit unserem Leben, mit unserem Achtsamkeitsprozess verknüpft ist. Unser Schlaf ist die eine Hälfte unseres Lebens unser Wachsein die andere. Heute wird der Schlaf von vielen (westlichen) Menschen als störend empfunden, als etwas, das sie von ihrem Leben abhält, und tendenziell abgelehnt. Viele Menschen empfinden ihren Schlaf als ineffektive Zeit. Dies ist nach meiner Interpretation eine vollkommene Fehleinschätzung und ein schwerwiegendes Problem.',
                     '⋅ Unser Bewusstsein scheint mir vornehmlich mit unserem Handlungspol verbunden und unser Unterbewusstsein vornehmlich mit unserem Gefühlspol (siehe \\italic{\\jumpname{OM:SpaLeb:Schlaf-und-Aktivsein}}).',
                     '• Spiritualität bedeutet auch, sich tiefer mit unserer Natur, mit den Grundlagen unseres Lebens und unserer Welt, zu beschäftigen, siehe \\italic{\\jumpname{OM:NPYo:ExistenzLeichtigkeit}}.',
                     '• Der Dialog unserer inneren Pole: \\jump[https://www.schulz-von-thun.de/die-modelle/das-innere-team]{}{Das innere Team – Schulz von Thun}. (Stefan)',
@@ -66,10 +66,10 @@
                       'Ich möchte aufgrund meiner Erfahrung darauf hinweisen, dass es nicht unser Unterbewusstsein alleine ist, was dies und vermutlich auch noch ganz anderes leisten kann.'."\n".
                     'Ich meine, es kommt auf einen guten, liebevollen und offenen Dialog zwischen unserem Bewusstsein und unserem Unterbewusstsein an.'."\n".
                     'Dabei leitet uns unser Gefühl, begleitet von unserem entsprechenden Handeln.'."\n",
-                      'Unser Bewusstsein und unser Unterbewusstsein sind zwei Pole in uns, die mit den Polen unseres \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozesses} verbunden sind,'."\n".
-                    'mit unserem \\jump{OM:SpaLeb:Psychosomatik}{Gefühlspol} – auch unserem \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{Schlaf} –'."\n".
-                    'und unserem \\jump{OM:SpaLeb:Psychosomatik}{Handlungspol} – unserer \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{Aktivität}.'."\n".
-                    'Der gute, liebevolle und offene Dialog zwischen den Polen in uns, über ihre Gefühle und Bedürfnisse, ist ein wichtiger Schlüssel für unsere Gesundheit und ein gutes Leben.'."\n".
+                      'Unser Bewusstsein und unser Unterbewusstsein sind zwei Pole in uns, die mit den Polen unseres \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozesses} verbunden sind.'."\n".
+                    'Sind wir \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{wach}, dann steht unser Bewusstsein im Vordergrund und damit unser Handeln, unser \\jump{OM:SpaLeb:Psychosomatik}{Handlungspol}.'."\n".
+                    '\\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{Schlafen} wir, dann steht unser Unterbewusstsein im Vordergrund, unser \\jump{OM:SpaLeb:Psychosomatik}{Gefühlspol}, und wir sind mehr in unseren Gefühlen unterwegs.'."\n",
+                      'Der gute, liebevolle und offene Dialog zwischen den Polen in uns, über ihre Gefühle und Bedürfnisse, ist ein wichtiger Schlüssel für unsere Gesundheit und ein gutes Leben.'."\n".
                     'Darauf komme ich noch zurück.'."\n"))),
                                        
                   array( 'text', array( Shape  => 'italic', text => array(
