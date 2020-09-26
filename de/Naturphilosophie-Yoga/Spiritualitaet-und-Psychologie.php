@@ -14,7 +14,6 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
-                    // '\\bold{XXX}',
                     '• Siehe Meetup zu diesem Thema: \\italic{\\jumpname{OM:NPYo:Meetup-LGBT-Spiritual-Hamburg}}, Veranstaltung vom 09.03.2020',
                     '• Unsere Pole kommunizieren lassen bedeutet uns wieder mit uns selber verbinden, ReConnection, siehe geplante Seite. Das bedeutet auch Yoga – Joch, Zuggeschirr, conjugare, vereinigen, zusammenschließen, sich verbinden.',
                     '– Einer dieser Pole ist unser sogenanntes Ego.',
@@ -22,6 +21,8 @@
                     '⋅ Unser Bewusstsein scheint mir vornehmlich mit unserem Handlungspol verbunden und unser Unterbewusstsein vornehmlich mit unserem Gefühlspol (siehe \\italic{\\jumpname{OM:SpaLeb:Schlaf-und-Aktivsein}}).',
                     '• Spiritualität bedeutet auch, sich tiefer mit unserer Natur, mit den Grundlagen unseres Lebens und unserer Welt, zu beschäftigen, siehe \\italic{\\jumpname{OM:NPYo:ExistenzLeichtigkeit}}.',
                     '• Der Dialog unserer inneren Pole: \\jump[https://www.schulz-von-thun.de/die-modelle/das-innere-team]{}{Das innere Team – Schulz von Thun}. (Stefan)',
+                    '\\bold{Die Welt zum Besseren Verändern}',
+                    '• Die Vereinigung der konsensualen Anarchie (no rulers or masters, keine Herrscher oder Meister) mit New Age, siehe \\jump{https://www.youtube.com/watch?v=yUGJv2BqoM4&list=UUnYAKmlbcxhpXCR5KIAyqKw&index=53}{Mark Passio - Anarchie & Okkultismus - Teil II - Religion vs Initiation}.',
                     ))),
                       
                   array( 'text', array( text => array(
