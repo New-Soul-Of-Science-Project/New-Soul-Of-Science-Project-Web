@@ -288,6 +288,7 @@
                   array( 'bulletlist', array( bullet_ary => array(
                         'männlicher ↔︎ weiblicher',
                         'weicher ↔︎ härter',
+                        'intellektueller ↔︎ intuitiver',
                         'muskulöser ↔︎ schmächtiger',
                         'breiter ↔︎ schmaler \\small{\\color{*TitleAdd}{(Vorsicht, stark von der Bildperspektive abhängig)}}',
                     ))),
