@@ -22,7 +22,7 @@
                     '• Spiritualität bedeutet auch, sich tiefer mit unserer Natur, mit den Grundlagen unseres Lebens und unserer Welt, zu beschäftigen, siehe \\italic{\\jumpname{OM:NPYo:ExistenzLeichtigkeit}}.',
                     '• Der Dialog unserer inneren Pole: \\jump[https://www.schulz-von-thun.de/die-modelle/das-innere-team]{}{Das innere Team – Schulz von Thun}. (Stefan)',
                     '\\bold{Die Welt zum Besseren Verändern}',
-                    '• Die Vereinigung der konsensualen Anarchie (no rulers or masters, keine Herrscher oder Meister) mit New Age, siehe \\jump{https://www.youtube.com/watch?v=yUGJv2BqoM4&list=UUnYAKmlbcxhpXCR5KIAyqKw&index=53}{Mark Passio - Anarchie & Okkultismus - Teil II - Religion vs Initiation}.',
+                    '• Die Vereinigung der konsensualen Anarchie (no rulers/masters and no slaves, keine Herren/Meister und keine Sklaven) mit New Age, siehe \\jump{https://www.youtube.com/watch?v=yUGJv2BqoM4&list=UUnYAKmlbcxhpXCR5KIAyqKw&index=53}{Mark Passio - Anarchie & Okkultismus - Teil II - Religion vs Initiation}.',
                     ))),
                       
                   array( 'text', array( text => array(
