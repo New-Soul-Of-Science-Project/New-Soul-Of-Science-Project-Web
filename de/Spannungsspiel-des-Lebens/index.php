@@ -155,6 +155,8 @@
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Bewusstsein'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Achtsamkeitsprozess'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Koerperliche-und-seelische-Existenz'),
+                      array( title => 'Unser Fokus \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
+                                description => 'Wohin wir fokussieren, was wir „sehen“ und uns bewusst wird, das können wir verändern'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
                     ))),
                       
                   array( 'normal',
