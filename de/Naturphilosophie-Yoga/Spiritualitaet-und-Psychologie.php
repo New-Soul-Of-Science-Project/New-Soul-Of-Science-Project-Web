@@ -192,8 +192,10 @@
                         'XXX\\color{*Bearb}{(Verweis)}',
                         'Das menschliche Knie\\color{*Bearb}{(Verweis)}',
                         'Mpemba-Effekt\\color{*Bearb}{(Verweis)}',
+                        'Warum Wolken am Himmel bleiben\\color{*Bearb}{(Verweis)}',
                         'Dunkle Materie\\color{*Bearb}{(Verweis)}',
                         'Dunkle Energie\\color{*Bearb}{(Verweis)}',
+                        'Vereinheitlichung der Physik\\color{*Bearb}{(Verweis)}',
                     ))),
                     ))),
                       
