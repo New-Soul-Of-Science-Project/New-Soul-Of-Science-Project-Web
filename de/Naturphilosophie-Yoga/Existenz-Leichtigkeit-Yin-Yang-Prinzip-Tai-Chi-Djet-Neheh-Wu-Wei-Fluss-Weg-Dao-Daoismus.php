@@ -52,7 +52,7 @@
                     'und der \\jump{OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung}{Farbpolarisation} der Quantenphysik.'."\n",
                       'Demnach kommt zur Existenz, was aus Bestandteilen gebildet wird, die in einem Zusammenhang stehen.'."\n".
                     'Da die Bestandteile aus prinzipiellen Gründen am Ende im Kleinen \\jump{OM:FrQFT:FirstPrinziples:Vortext:Dynamikprinzip}{immer in Bewegung} sein '."\n".
-                    'müssen – sie fließen beständig –, rotieren Bestandteile, die in einem Zusammenhang stehe, umeinander, in einer Ordnung.'."\n".
+                    'müssen – sie fließen beständig –, rotieren Bestandteile, die in einem Zusammenhang stehen, umeinander, in einer Ordnung.'."\n".
                     'Stehen sie nicht in einem Zusammenhang, so bewegen sie sich geradlinig und damit chaotisch durcheinander.'."\n",
                       'Der Zusammenhang entsteht durch die Polarisation der Bestandteile.'."\n".
                     'Physikalisch beruht die Polarisation auf einem sogenannten \\jump{OM:FrQFT:FirstPrinziples:Vortext:Wechselwirkungsprinzip}{Symmetriebruch},'."\n".
@@ -70,9 +70,9 @@
                   array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
                       
                 'Qi und Dao – der Link zur Physik', subline =>
-                  'Wirkungsquanten als Energieeinheiten und das Existenzprinzip des Djet-Neheh-Dualismus als ordnendes „Gesetzt“')),
+                  'Wirkungsquanten als Energieeinheiten und das Existenzprinzip des Djet-Neheh-Dualismus als ordnendes Gesetz')),
                   array( 'text', array( text => array(
-                    'Ich würde das Dao mit dem Djet-Neheh-Dualismus identifizieren, als das, was immer schon da war, als ordnendes „Gesetzt“'."\n".
+                    'Ich würde das Dao mit dem Djet-Neheh-Dualismus identifizieren, als das, was immer schon da war, als ordnendes Gesetz'."\n".
                     'oder als Prinzip der Balance zwischen Ordnung und Chaos, zwischen Stabilität, Fortentwicklung einer Transmutation und Zerstörung.'."\n",
                       'Das Ur-Qi, das Yuanqi, das Eine, verwirklicht oder realisiert das Prinzip des Dao in der Welt.'."\n".
                     'Das Qi als Energie stellt die Dynamik der Weltmatrix und das Potenzial des Zusammenhangs der Dinge zur Verfügung und bringt die immateriellen'."\n".
@@ -178,8 +178,8 @@
                   array( 'fade-in-area', array( Display => 'invis',
                     Title => 'Physikalische Details …', TitleVis => 'Physikalische Details:', ParagraphList => array(
                   array( 'text', array( text => array(
-                    'Interessanterweise entspricht die Xiantian-Anordnung\\footnote{Internet: \\\\ Vgl. \\cite{wiki:AchtTrigramme:2019}, Reihenfolge.} einem zirkular polarisieren Photon – Lichtteilchen.'."\n".
-                    'Die Houtian-Anordnung\\footnote{Internet: \\\\ Vgl. \\cite{wiki:AchtTrigramme:2019}, Reihenfolge.} entspricht hingegen einem linear polarisierten Photonen.'."\n"))),
+                    'Interessanterweise entspricht die Xiantian-Anordnung\\footnote{Internet: \\\\ Vgl. \\cite{wiki:AchtTrigramme:2019}, Reihenfolge.} einem zirkular polarisierten Photon – Lichtteilchen.'."\n".
+                    'Die Houtian-Anordnung\\footnote{Internet: \\\\ Vgl. \\cite{wiki:AchtTrigramme:2019}, Reihenfolge.} entspricht hingegen einem linear polarisierten Photon (siehe \\color{*Bearb}{Abbildungen?}).'."\n"))),
                     ))),
                       
                   array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
@@ -189,18 +189,16 @@
                   array( 'text', array( text => array(
                     'Das Kräftegleichgewicht in den Bestandteilen des Vakuums, und schließlich in allen stabilen Elementarteilchen, wird durch sich selbstorganisierende,'."\n".
                     'strukturelle Regelprozesse erzeugt, die deren innere Struktur organisieren.'."\n".
-                    'Daher nenne ich die neuen Physik auch organische Physik.'."\n",
+                    'Daher nenne ich die neue Physik auch organische Physik.'."\n",
                       'Stabile strukturelle Regelprozesse haben die Eigenschaft, über die Wechselwirkungen von Spielern und Gegenspielern aufrechterhalten und räumlich'."\n".
                     'in ihrer Dimension gehalten zu werden.'."\n".
                     'Genau das, was die Farbpolarisation ausdrückt.'."\n",
                       'Auf diese Art und Weise ist auch automatisch elementares Bewusstsein in der neuen Physik verankert.'."\n".
-                    'Denn die Wechselwirkungen der Spielern und Gegenspielern der Regelprozesse der Vakuum-Bestandteile und Elementarteilchen reichen bis in die tiefen des'."\n".
+                    'Denn die Wechselwirkungen der Spieler und Gegenspieler der Regelprozesse der Vakuum-Bestandteile und Elementarteilchen reichen bis in die tiefen des'."\n".
                     'Raumes und beeinflussen dort alle anderen Regelprozesse und werden auch von diesen beeinflusst, sodass alles aufeinander reagiert und sich.'."\n".
                     'dadurch des anderen bewusst ist.'."\n",
                       'Genau dies ist in meinen Augen unter anderem auch im Taijitu, im Yin-Yang-Symbol, dargestellt.'."\n".
-                    'Regelprozesse lassen etwas in ihnen, eine Struktur oder einen Wert, auf einem bestimmten Pfad schwingend laufen, auf dem die Wirkung optimiert ist.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Regelprozesse lassen etwas in ihnen, eine Struktur oder einen Wert, auf einem bestimmten Pfad schwingend laufen, auf dem die Wirkung optimiert ist.'."\n"))),
                       
                   array( 'figure',
                     array_merge( $SpaLeb_g_figure_ary_Achtsamkeitsprozess, array( name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Achtsamkeitsprozess'))),
@@ -210,11 +208,11 @@
                 'Unser Leben und sein Achtsamkeitsprozess', subline =>
                   'Eine Balance aus Stabilität und Fortentwicklung bestimmt unser Leben')),
                   array( 'text', array( text => array(
-                    'Der \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}, der zentrale Regelprozess unseres Lebens nach dem ›Spannungsspiels des Lebens‹ (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Achtsamkeitsprozess}),'."\n".
+                    'Der \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}, der zentrale Regelprozess unseres Lebens nach dem ›Spannungsspiel des Lebens‹ (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Achtsamkeitsprozess}),'."\n".
                     'spiegelt, vereinfacht gesehen, eine sehr ähnliche Struktur wider, wie die ringförmigen Bestandteile des Vakuums, siehe oben:'."\n".
                     'Unser Gedeihen, unsere Psyche, unser Lernen und auch unsere Persönlichkeitsentwicklung sind unter anderem Bestandteile von diesem Prozess.'."\n",
                       'Unser Leben wird durch ihn, durch seine Regelung in einem Zirkel, auf einem bestimmten Pfad gehalten.'."\n".
-                    'Unsere Lebenssituation bestimmt darin unsere Gefühle zu ihr, die Antreibe erzeugt, die zu Handlungen führen, die wiederum unsere Lebenssituation verändern.'."\n".
+                    'Unsere Lebenssituation bestimmt darin unsere Gefühle zu ihr, die Antriebe erzeugt, die zu Handlungen führen, die wiederum unsere Lebenssituation verändern.'."\n".
                     'Zu unserer neue Lebenssituation haben wir dann andere Gefühle, und so beginnt der Zirkel wieder von vorne.'."\n",
                       'Der Pfad, dem wir, geleitet durch unseren Achtsamkeitsprozess, folgen, auf dem wir gehalten werden, ist der Pfad unseres Lebens.'."\n".
                     'Der Zirkel und der Pfad ergeben zusammen eine Helixspirale, in der unser Leben, vereinfacht gesehen, abläuft.'."\n".

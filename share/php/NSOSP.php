@@ -427,9 +427,7 @@
                                                                   'Durch ihre Rotation wechseln die Wirkungsquanten ihre Farbpolarisation ständig.');
   
   $FrQFT_g_figure_ary_UnpolPhotFarb8Pol         = array( fig_file_name => 'FrQFT/Unpolarisiertes-Photon-Farbpolarisation-8polig-v01', fig_alt_description => 'Unpolarisiertes Photon, Farbpolarisation (8-polig)', width => '380px', height => '500px', name => 'set local!',
-                                                         text => 'XXX'."\n".
-                                                                  'XXX'."\n".
-                                                                  'XXX');
+                                                         text => 'Hier ist das I Ging in der Xiantian-Anordnung anstatt durch die Yin-Yang-Linien durch Farben und Antifarben des Farbkreises dargestellt');
   
   $FrQFT_g_figure_ary_VakuumElapson             = array( fig_file_name => 'FrQFT/Vakuum-Elapson-String_v02-100fr-100ms-1280x720px', figFileType => 'gif', figPDF_is => false, figBigger_is => true, fig_alt_description => 'Vakuum-Elapson, animiert', width => '560px', height => '315px', border => '1px', name => 'set local!',
                                                          text => 'Die vereinfachende Animation zeigt, wie alle Wirkungsquanten eines Strings miteinander in Wechselwirkung stehen.'."\n".
@@ -489,8 +487,9 @@
                                                          text => 'Der Hermesstab mit seinen Flügeln steht für Heilung, Weisheit, und wie ich vermute für Erleuchtung und die Beflügelung der Seele und des Geistes durch ein polares Yin-Yang-Prinzip. Im Hermes Trismegistos kommt durch die Verschmelzung des griechischen Gottes Hermes mit dem ägyptischen Gott Thot auch das Wissen und die Philosophie in seine Bedeutung.');
   
   $NPYo_g_figure_ary_IGingXiantian               = array( fig_file_name => 'Naturphilosophie-Yoga/I-Ging-Xiantian-Anordnung-v01', fig_alt_description => 'Das Yin und Yang oder Taijitu', width => '380px', height => '500px', name => 'set local!',
-                                                         text => 'XXX'."\n".
-                                                                  'XXX');
+                                                         text => 'Das I Ging in dieser Anordnung beschreibt eine Raum aufspannende Polarisation in einer Ebene.'."\n".
+                                                                  'Die sich jeweils gegenüberliegenden Gegenpole haben sich quasi im Zentrum des Rings getrennt und sich in die Entgegengesetzte Raumrichtung bewegt.'."\n".
+                                                                  'Dabei greifen sie Raum oder Fläche, wie hier dargestellt.');
   
   $NPYo_g_figure_ary_LebenDesHorusAsklepiosstab  = array( fig_file_name => 'Naturphilosophie-Yoga/Leben-des-Horus-Asklepiosstab-v02', fig_alt_description => 'Leben des Horus mit Asklepiosstab', width => '660px', height => '600px', name => 'set local!',
                                                          text => 'Abbild des Lebens, das in vergleichbarer Form in altägyptischen Darstellungen zu finden ist. Hier in einer von mir modernisierten Variante mit Äskulap- oder Asklepiosstab, um einen Bezug zur heutigen Medizin, und auch zum Kundalini-Prozess des Tantra und Yoga, herzustellen. \\color{*Light}{\\small{Lizenz: \\jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}');
@@ -505,7 +504,7 @@
   
   $NPYo_g_figure_ary_YinYang                     = array( fig_file_name => 'Naturphilosophie-Yoga/Yin-Yang-Taijitu-v01', fig_alt_description => 'Das Yin und Yang oder Taijitu', width => '380px', height => '500px', name => 'set local!',
                                                          text => 'Das Taijitu oder Yin-Yang-Symbol veranschaulicht, dass das Dao eine Einheit hervorbringt, die aus dynamischen Gegensätzen besteht.'."\n".
-                                                                  'Durch die dynamischen Gegensätze entsteht die Welt und ihre Natur, die uns Menschen beinhaltend.');
+                                                                  'Durch die dynamischen Gegensätze entsteht die Welt und ihre Natur, die uns Menschen beinhaltet.');
   
 
 
