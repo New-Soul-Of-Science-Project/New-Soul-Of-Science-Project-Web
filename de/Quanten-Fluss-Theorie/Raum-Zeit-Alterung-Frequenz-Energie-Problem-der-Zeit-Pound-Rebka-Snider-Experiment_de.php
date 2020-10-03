@@ -265,7 +265,7 @@
                     'Diese Eigenschaft der Quanten-Fluss-Theorie und ihrer Quantengravitation, die mit ihrer variablen Vakuum-Energie um sehr große Massen herum zu tun hat,'."\n".
                     'eröffnet eine wichtige Perspektive zur Lösung des \\jump{OM:FrQFT:Dunkle-Materie}{Phänomens der Dunklen Materie}.'."\n",
                       'Eine Lösung der Darstellung des Licht-Bewegungsraums in der Raumzeitkrümmung der Allgemeinen Relativitätstheorie sollte demnach die Wirkung des Phänomens der Dunklen Materie'."\n".
-                    'so sinnvoll abbilden und die Allgemeinen Relativitätstheorie auf diese Weise modifizieren.'."\n"))),
+                    'so sinnvoll abbilden und die Allgemeine Relativitätstheorie auf diese Weise modifizieren.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:XXX', text =>
                                            
                 'Weitere Vorgehensweise')),
