@@ -1957,8 +1957,8 @@
                                             ),
                                      ),
                               'OM:NPYo:WasIstYoga' =>
-                                array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Was-ist-Yoga_de',
-                                       url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Was-ist-Yoga_de',
+                                array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Was-ist-Yoga_de.php',
+                                       url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Was-ist-Yoga_de.php',
                                        titel => 'Was ist Yoga? - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
                                        description => 'Yoga ist an sich selber und an der Welt zu wachsen, Achtsamkeit und Zufriedenheit zu lernen. Körper- und Seelenpflege von innen.',
                                        keywords => '',
