@@ -21,6 +21,10 @@
                     '⋅ Unser Bewusstsein scheint mir vornehmlich mit unserem Handlungspol verbunden und unser Unterbewusstsein vornehmlich mit unserem Gefühlspol (siehe \\italic{\\jumpname{OM:SpaLeb:Schlaf-und-Aktivsein}}).',
                     '• Spiritualität bedeutet auch, sich tiefer mit unserer Natur, mit den Grundlagen unseres Lebens und unserer Welt, zu beschäftigen, siehe \\italic{\\jumpname{OM:NPYo:ExistenzLeichtigkeit}}.',
                     '• Der Dialog unserer inneren Pole: \\jump[https://www.schulz-von-thun.de/die-modelle/das-innere-team]{}{Das innere Team – Schulz von Thun}. (Stefan)',
+                    '⋅ Zu unseren inneren Polen, die im Dialog sind, gehören z.B. auch die Elemente der Tibetischen Medizin, wie Wind, Galle (Feuer) und Schleim (Erde, Wasser): \\jump[https://kenfm.de/tree-tv-klaus-herkommer/]{}{TREE.TV 10 mit Klaus Herkommer: „Buddha kocht – Heilkunst vom Dach der Welt“}.',
+                    '\\bold{Heilung}',
+                    '• »Wisst ihr nicht, dass ihr alle Götter seid?« - hermetischer Aphorismus von Hermes Trismegistos (siehe Ordner gleichen Namens)',
+                    '⋅ Es ist eine Aufforderung, dass göttliche in sich selber zu sehen, das Potenzial zur Heilung.',
                     '\\bold{Die Welt zum Besseren verändern}',
                     '• Die Vereinigung der konsensualen Anarchie (no rulers/masters and no slaves, keine Herren/Meister und keine Sklaven) mit New Age, siehe \\jump{https://www.youtube.com/watch?v=yUGJv2BqoM4&list=UUnYAKmlbcxhpXCR5KIAyqKw&index=53}{Mark Passio - Anarchie & Okkultismus - Teil II - Religion vs Initiation}.',
                     '• Die beiden spirituellen Währungen Zeit und Aufmerksamkeit (sehendes Auge), siehe \\jump{https://www.youtube.com/watch?v=OU4EXX5IUeM}{Mark Passio - Das wahre Gesetz der Anziehung - Natural Law / Naturgesetze 2/3 deutsch}.',
@@ -36,15 +40,15 @@
                       
                   array( 'text', array( text => array(
                     'In der akademischen Wissenschaft ist es unstrittig, dass wir, zumindestens die Menschen, so etwas wie ein Unterbewusstsein besitzen.'."\n".
-                    'Es ist uns also bewusst, da gibt es etwas, das uns nicht bewusst ist.'."\n".
+                    'Es ist uns also bewusst, da gibt es etwas, das uns nicht bewusst ist, das wir also nicht wissen.'."\n".
                     'Darüber hinaus gibt es sowieso vieles in unserer Natur, unserer Welt, unserem Universum, dass wir nicht wissen, das uns demnach ebenfalls nicht bewusst ist.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:NPYo:Spiritualitaet-Psychologie:Vortext:BinIchSpirituell', text =>
                       
                 'Bin ich spirituell? Glaube und vertraue ich?', subline =>
                   'Spiritualität – unsere Verbindung zum Unbewussten')),
                   array( 'text', array( text => array(
-                    'Als auch wissenschaftlich orientierter, sozialisierter und die Wissenschaft sehr hoch schätzender Mensch, hat es mich etliche Zeit gekostet,'."\n".
-                    'eine nachhaltige Idee davon zu bekommen, was Spiritualität eigentlich für mich bedeutet, was sie für uns auch im wissenschaftlichen Kontext sinn­vol­ler­wei­se bedeuten kann:'."\n"))),
+                    'Als auch stark wissenschaftlich orientierter, sozialisierter und die Wissenschaft sehr hoch schätzender Mensch, hat es mich etliche Zeit gekostet,'."\n".
+                    'eine nachhaltige Idee davon zu bekommen, was Spiritualität eigentlich für mich bedeutet; was sie für uns auch im wissenschaftlichen Kontext sinn­vol­ler­wei­se bedeuten kann:'."\n"))),
                                        
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Unser Umgang mit dem Unbewussten und unser Verstehenwollen und Reflektieren des Unbewussten als auch unseres Umgangs mit ihm, sehe ich als dafür ausschlaggebend an,'."\n".
@@ -85,10 +89,15 @@
                     'Genau so geht es allen Wissenschaftlern:'."\n".
                     'Sie haben eine Hypothese und glauben zunächst an diese.'."\n".
                     'Ihr Glaube daran ist der Grund, aus dem sie ihre Hypothese verfolgen und überprüfen.'."\n".
-                    'Wenn ihre Hypothese einen Realitätsbezug hat, dann führt ihre Überprüfung zu ihrer Überzeugung.'."\n",
-                      'Ich verbinde mich durch Klugheit – auch durch Selbstmitgefühl –, anfänglichen Glauben, Erfahrung und möglicherweise Verständnis mit meiner Natur'."\n".
-                    'und durch Mitgefühl auch mit anderen Menschen, anderen Wesen und mit der Natur generell.'."\n",
-                      'Das ist, was ich als spirituell bezeichne.'."\n"))),
+                    'Wenn ihre Hypothese einen Realitätsbezug hat, dann führt ihre Überprüfung zu ihrer Überzeugung.'."\n"))),
+                                       
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        'Ich verbinde mich Klug durch Selbstmitgefühl, anfänglichen Glauben, Erfahrung und möglicherweise Verständnis mit meiner Natur, meinem Unterbewusstsein, durch Kommunikation,'."\n".
+                        'und durch Mitgefühl auch mit anderen Menschen, anderen Wesen und mit der Natur generell.'."\n"))),
+                      
+                  array( 'text', array( text => array(
+                    'Das ist, was ich als spirituell bezeichne.'."\n".
+                    '\\jump{OM:NPYo:WasIstYoga}{Das ist Yoga.}'."\n"))),
                   array( 'headline', array( jump_name => 'OM:NPYo:Spiritualitaet-Psychologie:Vortext:XXX', text =>
                       
                 'Wenn mein Bewusstsein mit meinem Unterbewusstsein in einen Dialog tritt', subline =>
@@ -181,7 +190,8 @@
                     'Die Meinung oder Beurteilung anderer, kann nur eine beratende Rolle bei unseren Entscheidungen spielen.'."\n",
                       'Eine Erklärung dafür, warum uns etwas hilft, wird sicherlich zusätzlich hilfreich sein, wird uns weiter bringen und ist daher sehr wünschenswert.'."\n".
                     'Eine fehlende Erklärung stellt jedoch gar kein Problem dar!'."\n",
-                      'Wenn wir uns damit befassen, was die akademische Wissenschaft alles gar nicht oder nicht genau erklären kann, dann ist die Liste unglaublich lang, sie erscheint schier endlos.'."\n".
+                      'Wenn wir uns damit befassen, was die akademische Wissenschaft alles gar nicht oder nicht genau erklären kann, dann ist die Liste unglaublich lang.'."\n".
+                    'Sie erscheint schier endlos.'."\n".
                     'Auf ihr stehen viele Dinge, von denen wir fest annehmen, sie seien schon längst erklärt oder die vorgebrachten Erklärungen seien sicher.'."\n".
                     'Auch stehen auf ihr Erklärungen, die gut oder sogar sehr gut und genau funktionieren, von denen wir aber schon längst wissen, dass sie abschließend nicht richtig sein können.'."\n"))),
                       
@@ -245,6 +255,24 @@
                     'XXX'."\n"))),
                   array( 'headline', array( jump_name => 'OM:NPYo:Spiritualitaet-Psychologie:Vortext:XXX', text =>
                       
+                'Maria Sanchez XXX', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Spiritualitaet-Psychologie:Vortext:XXX', text =>
+                      
                 'XXX', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -261,6 +289,20 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                      
+                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
+                  // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Spiritualitaet-Psychologie)
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Hört auf diese Worte, ihr, die ihr die Tiefen der Natur erforschen wollt: \\\\'."\n".
+                        'Wenn ihr das, was ihr sucht, nicht in euch selbst findet, \\\\'."\n".
+                        'werdet ihr es auch nicht außerhalb finden. \\\\'."\n".
+                        'Wenn du die Wunder deines Hauses ignorierst, \\\\'."\n".
+                        'wie willst du dann andere Wunder finden? \\\\'."\n".
+                        'In dir verbirgt sich der Schatz der Schätze. \\\\'."\n".
+                        'Erkenne dich selbst, \\\\'."\n".
+                        'und du wirst das Universum und die Götter kennen.'."\n"),
+                        addtext => '\\small{\\color{*TitleAdd}{ ~Das Orakel von Delphi}}')),
+                      
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
