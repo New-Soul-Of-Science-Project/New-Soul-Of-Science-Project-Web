@@ -1143,6 +1143,23 @@
                         ''."\n"),
                         addtext => '')),
                       
+                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
+                  // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Spiritualitaet-Psychologie)
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Hört auf diese Worte, ihr, die ihr die Tiefen der Natur erforschen wollt: \\\\'."\n".
+                        'Wenn ihr das, was ihr sucht, nicht in euch selbst findet, \\\\'."\n".
+                        'werdet ihr es auch nicht außerhalb finden. \\\\'."\n".
+                        'Wenn du die Wunder deines Hauses ignorierst, \\\\'."\n".
+                        'wie willst du dann andere Wunder finden? \\\\'."\n".
+                        'In dir verbirgt sich der Schatz der Schätze. \\\\'."\n".
+                        'Erkenne dich selbst, \\\\'."\n".
+                        'und du wirst das Universum und die Götter kennen.'."\n"),
+                        addtext => '\\small{\\color{*TitleAdd}{ ~Das Orakel von Delphi}}')),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        ''."\n"),
+                        addtext => '')),
+                      
                   array( 'jumplist', array(
                       //array(  jump_name => 'OM:SupNum:Home'),
                     )),

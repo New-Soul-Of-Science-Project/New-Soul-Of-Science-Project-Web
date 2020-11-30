@@ -41,7 +41,7 @@
                       
                   array( 'notice', array( Display => 'invis', text => array(
                     // '\\bold{XXX}',
-                    '• Das Yin und Yang Symbol kann auch als vereinfachtes Symbol – eine Projektion in 2D – der Kundalini-Schlangen des \\jump{OM:SpaLeb:Psychosomatik:Vortext:Fig-Kundalini-Prozess}{Kundalini-Prozesses} oder der des \\jump{OM:NPYo:HaTha:Vortext:Fig-Hermesstab}{Hermesstabs} gesehen werden..',
+                    '• Das Yin und Yang Symbol kann auch als vereinfachtes Symbol – eine Projektion in 2D – der Kundalini-Schlangen des \\jump{OM:SpaLeb:Psychosomatik:Vortext:Fig-Kundalini-Prozess}{Kundalini-Prozesses} oder der des \\jump{OM:NPYo:HaTha:Vortext:Fig-Hermesstab}{Hermesstabs} gesehen werden.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -158,6 +158,15 @@
                       
                 'Das Vektor-Gleichgewicht und die isotrope Vektor-Matrix', subline =>
                   'Die Stabilität des Vakuums – Sechsecke in der Ebene, Kuboktaeder im Raum')),
+                      
+                  array( 'notice', array( Display => 'invis', text => array(
+                    // '\\bold{XXX}',
+                    '• Das Circumpunct-Symbol, das altägyptische Zeichen für „Sonne“ oder „Ra“ 𓇳, sehr ähnlich dem heutigem astronomischen und astrologischen Symbol der Sonne ☉, (siehe \\jump[https://de.wikipedia.org/wiki/Sonnensymbol]{}{Wikipedia: Sonnensymbol, Kreis-Symmetrie, Kreis mit einem Punkt in der Mitte}) kann mit den Wirkungsquanten-Kegeln der Quanten-Fluss-Theorie und hierin letztlich auch mit der dynamischen Geometrie der Photonen des Lichts und der dunklen Photonen des Vakuums in Verbindung gebracht werden (siehe in \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Ani-VakuumElapson} die einzelnen Hütchen und die gesamte Struktur).',
+                    '⋅ Das Zeichen symbolisiert so Existenz und (elementares) Bewusstsein; im Achtsamkeitsprozess auch höheres Bewusstsein.',
+                    '⋅ Das altägyptische Zeichen 𓇳, das zwei Kreise ineinander zeigt, könnte sogar so gedeutet werden, dass es auf die fraktale Struktur der Quanten-Fluss-Theorie hinweist.',
+                    '⋅ Auch könnten wir es als Hinweis auf die generelle Existenz durch Ausdehnung, wie nachfolgend beschrieben, verstehen, als flächige Richtungspolarisation oder Farbpolarisation.',
+                    ))),
+                      
                   array( 'text', array( text => array(
                     'Die Farbpolarisation steht dafür, dass die Kräfte in einer Struktur, die deren Ausdehnung im Raum ändern, im Gleichgewicht sind.'."\n".
                     'In einer Ebene kann dies durch die Farben eines Farbkreises\\color{*Bearb}{(Verweis)} dargestellt werden (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-UnpolPhotFarbpol6pol}):'."\n",
