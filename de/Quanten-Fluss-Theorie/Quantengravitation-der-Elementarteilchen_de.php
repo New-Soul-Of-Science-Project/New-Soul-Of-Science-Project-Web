@@ -404,7 +404,7 @@
                 'Störende Wirkung der virtuellen Wirkungsquanten', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die effektiv störende Wirkung \\term{_{r}h_{eff}} des Stroms der eintreffenden virtuellen Wirkungsquanten in'."\n".
+                    '\\color{*Bearb}{(Der effektive Störimpuls)} Die effektiv störende Wirkung \\term{_{r}p_{abl}} des Stroms der eintreffenden virtuellen Wirkungsquanten in'."\n".
                     'den \\jump{OM:FrQFT:Quantengravitation:VereinfModellGravirad:WarumImpulskegel}{Impulskegeln} hat, nach Analyse der \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung}, die nachfolgend beschriebenen Eigenschaften.'."\n".
                     'Wie wir im unteren Teil der Abbildung sehen, haben die Impulskegel eine Amplitude, die mit der Entfernung abfällt,'."\n".
                     'eine Frequenz und eine Breite:'."\n"))),
@@ -418,8 +418,8 @@
                     'Die effektiv störende Wirkung ist also dem folgenden Produkt proportional:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  {_{r}h_{eff}}  \sim  \frac{ h \cdot {T_{kegel}} \cdot f_{vwq} }{ r }  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}h_{eff}}  =  g_{h} \cdot \frac{ h \cdot {T_{kegel}} \cdot f_{vwq} }{ r }  }',
+                      array( display => 'on',  latex => '{  {_{r}p_{abl}}  \sim  \frac{ h \cdot {T_{kegel}} \cdot f_{vwq} }{ r }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ h \cdot {T_{kegel}} \cdot f_{vwq} }{ r }  }',
                                                label_name => 'OM:FrQFT:Quantengravitation:Equ-h-eff', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-h-eff}', label_incr => true),
                     ))),
                       
@@ -427,15 +427,31 @@
                 Title => '\\small{Einheiten und Werte …}',
                 TitleVis => 'Einheiten und Werte:', ParagraphList => array(
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Zur Klarheit des Vorgehens werden parallel die Einheiten und gegebenenfalls die Werte nachvollzogen:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [g_{h}]  =  1  }', label_incr => false),
-                      array( display => 'on',  latex => '{  h  =  6,6 \cdot 10^{-34} \cdot Js  }', label_incr => false),
-                      array( display => 'on',  latex => '{  [{T_{kegel}}]  =  s  }', label_incr => false),
-                      array( display => 'on',  latex => '{  [{_{r}h_{eff}}]  =  \frac{Js}{m}  }', label_incr => false),
+                      array( display => 'on',  latex => '{  h  =  6,6 \cdot 10^{-34} \cdot J \cdot s  }', label_incr => false),
+                      array( display => 'on',  latex => '{  J  =  \frac{ \mathit{kg} \cdot m^2 }{ s^2 }  }', label_incr => false),
+                      array( display => 'on',  latex => '{  [ {T_{kegel}} ]  =  s  }', label_incr => false),
+                      array( display => 'on',  latex => '{  [ {_{r}p_{abl}} ]  =  \frac{ J \cdot s }{ m }  =  \frac{ \mathit{kg} \cdot m }{ s }  }', label_incr => false),
+                      array( display => 'on',  latex => '{  \left[ \frac{ h \cdot {T_{kegel}} \cdot f_{vwq} }{ r } \right]  =  \frac{ \frac{ \mathit{kg} \cdot m^2 }{ s^2 } \cdot s \cdot s \cdot \frac{ 1 }{ s } }{ m }  =  \frac{ \mathit{kg} \cdot m }{ s }  }', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  [g_{h}]  =  1  }', label_incr => false),
+                    ))),
+                    ))),
+                      
+                  array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX',
+                Title => '\\small{\\color{*Bearb}{Einheiten und Werte (experimentell) …}}',
+                TitleVis => '\\color{*Bearb}{Einheiten und Werte (experimentell):}', ParagraphList => array(
+                  array( 'text', array( text => array(
+                    'Zur Klarheit des Vorgehens werden parallel die Einheiten und gegebenenfalls die Werte nachvollzogen:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  h  =  6,6 \cdot 10^{-34} \cdot J \cdot s  }', label_incr => false),
+                      array( display => 'on',  latex => '{  J  =  \frac{ \mathit{kg} \cdot m^2 }{ s^2 }  }', label_incr => false),
+                      array( display => 'on',  latex => '{  [ {T_{kegel}} ]  =  s  \mapsto  [ {s_{kegel}} ]  =  m  }', label_incr => false),
+                      array( display => 'on',  latex => '{  [ {_{r}p_{abl}} ]  =  \frac{ J \cdot s }{ m }  =  \frac{ \mathit{kg} \cdot m }{ s }  }', label_incr => false),
+                      array( display => 'on',  latex => '{  \left[ \frac{ h \cdot {s_{kegel}} \cdot f_{vwq} }{ r } \right]  =  \frac{ \frac{ \mathit{kg} \cdot m^2 }{ s^2 } \cdot s \cdot m \cdot \frac{ 1 }{ s } }{ m }  =  \frac{ \mathit{kg} \cdot s }{ m }  }', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  [g_{h}]  =  \frac{ m }{ s }  }', label_incr => false),
                     ))),
                     ))),
                       
@@ -505,7 +521,7 @@
                     'In die Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-h-eff} der effektiv störenden Wirkung eingesetzt erhalten wir:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}h_{eff}}  =  g_{h} \cdot \frac{ h \cdot {T_{kegel}} \cdot n_{wq} \cdot f_{ele} }{ r }  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ h \cdot {T_{kegel}} \cdot n_{wq} \cdot f_{ele} }{ r }  }',
                                                label_name => 'OM:FrQFT:Quantengravitation:Equ-h-eff-aus-f-ele', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-h-eff-aus-f-ele}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -536,14 +552,16 @@
                 Title => '\\small{Einheiten und Werte …}',
                 TitleVis => 'Einheiten und Werte:', ParagraphList => array(
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Zur Klarheit des Vorgehens werden parallel die Einheiten und gegebenenfalls die Werte nachvollzogen:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  h  =  6,6 \cdot 10^{-34} \cdot Js  }', label_incr => false),
-                      array( display => 'on',  latex => '{  [{T_{kegel}}]  =  m  }', label_incr => false),
-                      array( display => 'on',  latex => '{  [\omega_{ele}]  =  2 \pi \cdot \frac{1}{s}  }', label_incr => false),
+                      array( display => 'on',  latex => '{  h  =  6,6 \cdot 10^{-34} \cdot J \cdot s  }', label_incr => false),
+                      array( display => 'on',  latex => '{  [ \hbar ]  =  \frac{ h }{ 2 \pi }  =  1,054571 \cdot 10^{-34} \cdot J \cdot s  }', label_incr => false),
+                      array( display => 'on',  latex => '{  J  =  \frac{ \mathit{kg} \cdot m^2 }{ s^2 }  }', label_incr => false),
+                      array( display => 'on',  latex => '{  [ {T_{kegel}} ]  =  s  }', label_incr => false),
+                      array( display => 'on',  latex => '{  [ \omega_{ele} ]  =  2 \pi \cdot \frac{ 1 }{ s }  }', label_incr => false),
+                      array( display => 'on',  latex => '{  \left[ \frac{ \hbar }{ m_{ele} \cdot {_{\lowZero}c^{2}} } \right]  =  \frac{ J \cdot s }{ \mathit{kg} \cdot \frac{ m^2 }{ s^2 } }  =  \frac{ J \cdot s^3 }{ \mathit{kg} \cdot m^2 }  =  s  }', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  [g_{\omega}]  =  1  }', label_incr => false),
                     ))),
                     ))),
                       
@@ -559,9 +577,9 @@
                     'Setzen wir diese Werte nun in die Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-h-eff-aus-f-ele} der effektiv störenden Wirkung ein, ergibt sich:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}h_{eff}}  =  g_{h} \cdot \frac{ h \cdot g_{\omega} \cdot \frac{ \hbar }{ n_{wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}} } \cdot n_{wq} \cdot f_{ele} }{ r }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}h_{eff}}  =  g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} \cdot {_{\lowZero}c^{2}} } \cdot \frac{ h \cdot n_{wq} \cdot f_{ele} }{ n_{wq} \cdot r }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}h_{eff}}  =  g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} \cdot {_{\lowZero}c^{2}} } \cdot \frac{ h \cdot f_{ele} }{ r }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ h \cdot g_{\omega} \cdot \frac{ \hbar }{ n_{wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}} } \cdot n_{wq} \cdot f_{ele} }{ r }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}p_{abl}}  =  g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} \cdot {_{\lowZero}c^{2}} } \cdot \frac{ h \cdot n_{wq} \cdot f_{ele} }{ n_{wq} \cdot r }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}p_{abl}}  =  g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} \cdot {_{\lowZero}c^{2}} } \cdot \frac{ h \cdot f_{ele} }{ r }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Über \\jump{OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit}{Plancks Proportionalität von Energie und Frequenz} und Einstens Energie-Masse-Äquivalenz aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-E-ele-aequi-zu-Masse}'."\n".
@@ -572,14 +590,14 @@
                       array( display => 'on',  latex => '{  E_{ele}  =  h \cdot f_{ele}  }',
                                                /* label_name =>'', */ label_text => '\\jumpname{OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant}', label_incr => false,
                                                footnote => 'Vgl. \\cite{wiki:PlanckschesWirkungsquantum2013}, Definition.'),
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}h_{eff}}  =  g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} \cdot {_{\lowZero}c^{2}} } \cdot \frac{ m_{ele} \cdot {_{\lowZero}c^{2}} }{ r }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}h_{eff}}  =  g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot \frac{ m_{ele} }{ r }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  =  g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} \cdot {_{\lowZero}c^{2}} } \cdot \frac{ m_{ele} \cdot {_{\lowZero}c^{2}} }{ r }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}p_{abl}}  =  g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot \frac{ m_{ele} }{ r }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die effektiv störende Wirkung ist demnach proportional zur Masse des Strings und umgekehrtproportional zum Abstand zu ihm.'."\n"))),
                   /*%! array( 'equations',
                     array( equ_text_std => 'XXX.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  {_{r}h_{eff}}  \sim  \frac{ h \cdot {T_{kegel}} \cdot f_{vwq} }{ r }  }'),
+                      array( display => 'on',  latex => '{  {_{r}p_{abl}}  \sim  \frac{ h \cdot {T_{kegel}} \cdot f_{vwq} }{ r }  }'),
                       array( display => 'on',  latex => '{  h_{m}  =  h \cdot {T_{kegel}} \cdot f_{vwq}  }'),
                       array( display => 'on',  latex => '{  h_{m}  \sim  m_{ele}  }'),
                       array( display => 'on',  latex => '{  E_{ele}  =  h \cdot {_{x}f_{ele}}  }'),
@@ -641,7 +659,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n",
-                      'Die effektiv störende Wirkung \\term{_{r}h_{eff}} des Stroms der eintreffenden virtuellen Wirkungsquanten muss nach Analyse der \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung}'."\n".
+                      'Die effektiv störende Wirkung \\term{_{r}p_{abl}} des Stroms der eintreffenden virtuellen Wirkungsquanten muss nach Analyse der \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung}'."\n".
                     'mehrere Proportionalitätsanforderungen gleichzeitig erfüllen:'."\n",
                       'Die Störung der eintreffenden Impulse ist proportional zu der Wirkung \\term{h} jedes Wirkungsquants des Strings, die die Ausgangsintensität der Impulse bestimmt.'."\n".
                     'Sie ist proportional zur Frequenz ihres Eintreffens \\term{f_{vwq}}, die die Anzahl der Impulse pro Zeit und damit die Energie und Masse des Elementarteilchens widerspiegelt,'."\n".
@@ -649,11 +667,11 @@
                       'Und die Störung muss, wie \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung:WQIUmgekehrtProport}{oben <-XXX} gerade gezeigt, auch proportional zur Abnahme der Impulsintensität \\term{_{r}ii} mit dem Abstand \\term{r} vom Entstehungsort des Impulses auf dem String sein.'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  {_{r}h_{eff}}  \sim  h  }'),
-                      array( display => 'on',  latex => '{  {_{r}h_{eff}}  \sim  f_{vwq}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}h_{eff}}  \sim  \frac{ n_{vwq} }{ t }  }'),
-                      array( display => 'on',  latex => '{  {_{r}h_{eff}}  \sim  \omega_{ele}  }'),
-                      array( display => 'on',  latex => '{  {_{r}h_{eff}}  \sim  {_{r}ii}  =  \frac{ 1 }{ r }  }'),
+                      array( display => 'on',  latex => '{  {_{r}p_{abl}}  \sim  h  }'),
+                      array( display => 'on',  latex => '{  {_{r}p_{abl}}  \sim  f_{vwq}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}p_{abl}}  \sim  \frac{ n_{vwq} }{ t }  }'),
+                      array( display => 'on',  latex => '{  {_{r}p_{abl}}  \sim  \omega_{ele}  }'),
+                      array( display => 'on',  latex => '{  {_{r}p_{abl}}  \sim  {_{r}ii}  =  \frac{ 1 }{ r }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wie in \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn}, unten, dargestellt, entstehen die virtuellen Wirkungsquanten aus den Wirkungsquanten des Strings'."\n".
@@ -740,8 +758,8 @@
                       'Die geforderte Proportionalität zur Intensitätsabnahme mit dem Abstand kommt nun separat hinzu:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}h_{eff}}  \sim  \frac{ {h_{m}} }{ r }  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}h_{eff}}  =  g_{r} \cdot \frac{ g_{m} \cdot m_{ele} }{ r }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  \sim  \frac{ {h_{m}} }{ r }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  =  g_{r} \cdot \frac{ g_{m} \cdot m_{ele} }{ r }  }'),
                     ))), */
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:NaeherungGrosseAbstaend', text =>
                                            
@@ -772,7 +790,7 @@
                     'weil die virtuellen Wirkungsquanten nur genau radial, senkrecht zur Bewegungsrichtung der Wirkungsquanten auf dem String, abgestrahlt werden.'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}h_{ele,eff}}  =  2 \cdot {_{r}h_{eff}}  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{ele,abl}}  =  2 \cdot {_{r}p_{abl}}  }',
                                                label_name => 'OM:FrQFT:Quantengravitation:Equ-h-ele-eff', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-h-ele-eff}', label_incr => true),
                     ))),
                       
@@ -791,13 +809,26 @@
                 'Gravitative Wirkung eines einzelnen Elementarteilchens auf Licht', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die sich durch ein einzelnes Elementarteilchen aus der Störung ergebende Geschwindigkeit der Ablenkung \\term{_{r}v_{ele,abl}} ist dann proportional zu dieser Störung:'."\n"))),
+                    'Die sich durch ein einzelnes Elementarteilchen aus der Störung \\term{_{r}p_{ele,abl}} ergebende Geschwindigkeit der Ablenkung \\term{_{r}v_{ele,abl}} ist dann proportional zu dieser Störung und berechnet sich durch Einsetzen zu:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  {_{r}v_{ele,abl}}  \sim  {_{r}h_{ele,eff}}  }'),
-                      array( display => 'off', latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot {_{r}h_{ele,eff}}  }'),
+                      array( display => 'on',  latex => '{  {_{r}v_{ele,abl}}  \sim  {_{r}p_{ele,abl}}  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot {_{r}p_{ele,abl}}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot 2 \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot \frac{ m_{ele} }{ r }  }',
                                                latex_if_visible => '{  \Leftrightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot 2 \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot \frac{ m_{ele} }{ r }  }'),
+                    ))),
+                      
+                  array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX',
+                Title => '\\small{Einheiten und Werte …}',
+                TitleVis => 'Einheiten und Werte:', ParagraphList => array(
+                  array( 'text', array( text => array(
+                    'Zur Klarheit des Vorgehens werden parallel die Einheiten und gegebenenfalls die Werte nachvollzogen:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [ {_{r}p_{ele,abl}} ]  =  \frac{ \mathit{kg} \cdot m^2 }{ s^2 }  }', label_incr => false),
+                      array( display => 'on',  latex => '{  \\Leftrightarrow  \left[ 2 \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot \frac{ m_{ele} }{ r } \right]  =  \frac{ \mathit{kg} \cdot m^2 }{ s^2 }  }', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  [ g_{v} ]  =  \frac{ 1 }{ \mathit{kg} }  }', label_incr => false),
+                    ))),
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX',
@@ -836,7 +867,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Setzen wir hier die Gravitationskonstante so ein, wie sie sich in der nachfolgenden Herleitung für große Massen in Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-GraviKonstStruktur} zeigt, dann bekommen wir:'."\n"))),
+                    'Setzen wir hier die Gravitationskonstante so ein, wie sie sich in der nachfolgenden Herleitung für große Massen in Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-GraviKonstStruktur} zeigt, dann bekommen wir für ein einzelnes Elementarteilchen:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{r,p}c_{ele}}  =  {_{\lowZero}c} \cdot \left( 1 - 4 \cdot \frac{ G^{2} \cdot m_{ele}^{2} }{ {_{\lowZero}c^{2}} \cdot r^{2} } \right)^{p}  }'),
@@ -928,12 +959,15 @@
                 Title => '\\small{Einheiten und Werte …}',
                 TitleVis => 'Einheiten und Werte:', ParagraphList => array(
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Zur Klarheit des Vorgehens werden parallel die Einheiten und gegebenenfalls die Werte nachvollzogen:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  G  =  6,67384 \cdot 10^{-11} \cdot \frac{m^3}{kg \cdot s^2}  }', label_incr => false),
+                      array( display => 'on',  latex => '{  \left[ \hbar  =  \frac{ h }{ 2 \pi } \right]  =  1,054571 \cdot 10^{-34} \cdot J \cdot s  }', label_incr => false),
+                      array( display => 'on',  latex => '{  J  =  \frac{ \mathit{kg} \cdot m^2 }{ s^2 }  }', label_incr => false),
+                      array( display => 'on',  latex => '{  \left[ \frac{ \hbar }{ m_{wq} } \right]  =  \frac{ m^2 }{ s }  }', label_incr => false),
+                      array( display => 'on',  latex => '{  G  =  6,67384 \cdot 10^{-11} \cdot \frac{ m^3 }{ \mathit{kg} \cdot s^2 }  }', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \left[ g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \right]  =  \frac{ m^3 }{ \mathit{kg} \cdot s^2 }  }', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \left[ g_{v} \cdot g_{\omega} \cdot g_{h} \right]  =  \frac{ m }{ kg \cdot s }  }', label_incr => false),
                     ))),
                     ))),
                       
