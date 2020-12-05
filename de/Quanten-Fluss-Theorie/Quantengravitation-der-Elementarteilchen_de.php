@@ -813,9 +813,11 @@
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  {_{r}v_{ele,abl}}  \sim  {_{r}p_{ele,abl}}  }'),
-                      array( display => 'off', latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot {_{r}p_{ele,abl}}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot 2 \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot \frac{ m_{ele} }{ r }  }',
-                                               latex_if_visible => '{  \Leftrightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot 2 \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot \frac{ m_{ele} }{ r }  }'),
+                      //%! array( display => 'off', latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot {_{r}p_{ele,abl}}  }'),
+                      //%! array( display => 'on',  latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot 2 \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot \frac{ m_{ele} }{ r }  }',
+                      //%!                          latex_if_visible => '{  \Leftrightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot 2 \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot \frac{ m_{ele} }{ r }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot {_{r}p_{ele,abl}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot 2 \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot \frac{ m_{ele} }{ r }  }'),
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX',
