@@ -204,7 +204,7 @@
                                           'wiki:Relativitaetstheorie2013',
                                           'wiki:Renormierung:2018',
                                           'wiki:Rotverschiebung:2015',
-                                          'wiki:ShapiroVerzoegerung:2015',
+                                          'wiki:ShapiroVerzoegerung:2019',
                                           'wiki:Schleifenquantengravitation2013',
                                           'wiki:Schroedingergleichung:2019',
                                           'wiki:SchwacheWechselwirkung2013',

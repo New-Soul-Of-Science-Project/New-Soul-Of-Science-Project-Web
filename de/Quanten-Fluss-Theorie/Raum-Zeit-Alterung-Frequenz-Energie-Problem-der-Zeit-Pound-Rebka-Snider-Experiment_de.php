@@ -195,7 +195,7 @@
                       'Die Raumzeitkrümmung der Allgemeinen Relativitätstheorie ebenso wie ihre gravitative Zeitdilatation erscheinen im Wirkungsquanten-Bewegungsraum'."\n".
                     'also als Veränderung der dynamischen Strukturen des Vakuums und der Elementarteilchen in Relation zu den Verhältnissen beim Beobachter.'."\n".
                     'Eine aus Sicht eines Beobachters verändert erscheinende Lichtgeschwindigkeit ist auch im Rahmen der Allgemeinen Relativitätstheorie als'."\n".
-                    'Shapiro-Verzögerung\\footnote{\\const{FrQFT_g_footnote_text_ShapiroVersoegerung}} bekannt.'."\n".
+                    'Shapiro-Verzögerung\\footnote{\\const{FrQFT_g_footnote_text_ShapiroVerzoegerung}} bekannt.'."\n".
                     'Im Wirkungsquanten-Bewegungsraum gibt es diesbezüglich Besonderheiten, auf die wir gleich noch zu sprechen kommen.'."\n",
                       'Aus Sicht des \\jump{OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:KosBeob}{kosmischen Beobachters} nimmt'."\n".
                     'die konstante \\jump{OM:FrQFT:ZeitAlterungFrequenz:Wirkungsquanten-Geschwindigkeit}{Wirkungsquanten-Geschwindigkeit} einen Wert an,'."\n".

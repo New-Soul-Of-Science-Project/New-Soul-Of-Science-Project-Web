@@ -104,7 +104,7 @@
                     'Wie die Quanten-Fluss-Theorie geht das Basisteilchenmodell bei der Einwirkung von Gravitation auch von einer Verzerrung der Struktur eines Elementarteilchens aus'."\n".
                     'und nicht, wie die Allgemeine Relativitätstheorie, von einer Krümmung des Raums.'."\n",
                       'Möchten wir die Änderung der Elementarteilchen-Frequenz im Gravitationsfeld berechnen, ist sowohl die Änderung der Basisteilchen-Geschwindigkeit,'."\n".
-                    'der im Gravitationsfeld verzögerten Lichtgeschwindigkeit \\term{_{r}c_{eff}} – Shapiro-Verzögerung\\footnote{\\const{FrQFT_g_footnote_text_ShapiroVersoegerung}} –,'."\n".
+                    'der im Gravitationsfeld verzögerten Lichtgeschwindigkeit \\term{_{r}c_{eff}} – Shapiro-Verzögerung\\footnote{\\const{FrQFT_g_footnote_text_ShapiroVerzoegerung}} –,'."\n".
                     'als auch die Änderung der Geometrie, die Länge des Umfangs \\term{_{r}u_{red}} ihrer Bahn, zu berücksichtigen:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
