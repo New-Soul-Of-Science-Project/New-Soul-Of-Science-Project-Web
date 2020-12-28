@@ -36,6 +36,8 @@
                     array_merge( $FrQFT_g_figure_ary_GraviMechanismus, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Fig-Gravitation-Masse'))),
                       
                   array( 'text', array( text => array(
+                    '\\color{*Entwick}{(Hier die Erklärung in Bezug auf die \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Fig-Gravitation-Masse} einfügen, wohin die Entwicklung der Quantengravitation auf dieser Seite gehen soll!)}'."\n"))),
+                  array( 'text', array( text => array(
                     'Die Erklärung der Gravitation in Form der Quantengravitation\\footnote{\\const{FrQFT_g_footnote_text_Quantengravi}} ist eine der sehnlichsten Wünsche'."\n".
                     'der heutigen theoretischen Physik.\\color{*Bearb}{(Verweis auf Hossenfelder Blog und SdW)}'."\n".
                     'Sie steht im Zentrum der Vereinheitlichung der Physik, der Verschmelzung von Quantenphysik\\footnote{\\const{FrQFT_g_footnote_text_Quantenphysik}} (Quantenfeldtheorie\\footnote{\\const{FrQFT_g_footnote_text_QFT}}) und Allgemeiner Relativitätstheorie\\footnote{\\const{FrQFT_g_footnote_text_ART}},'."\n".
@@ -392,8 +394,8 @@
                   '')),
                   array( 'text', array( text => array(
                     'Wenn wir die Formeln \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-c-eff-tan} und \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-c-eff-rad} vergleichen, fällt uns deren Ähnlichkeit auf.'."\n".
-                    'Beide Formeln lassen sich zusammenfassen, wenn wir eine Potenz \\term{p} einführen, die für die tangentiale Komponente den Wert \\term{p = ½}'."\n".
-                    'und für die radiale den Wert \\term{p = 1} erhält:\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, S. 19-22, hier S. 22.}'."\n"))),
+                    'Beide Formeln lassen sich zusammenfassen, wenn wir eine Potenz \\term{p} einführen, die wir für die tangentiale Komponente zu \\term{p = ½}'."\n".
+                    'und für die radiale zu \\term{p = 1} setzen:\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, S. 19-22, hier S. 22.}'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{r,p}c}  =  {_{\lowZero}c} \cdot \left( 1 - \frac{ {_{r}v_{abl}^{2}} }{ {_{\lowZero}c^{2}} } \right)^{p}  }',
@@ -960,7 +962,7 @@
                     'die eine einzelne zentrale Masse beschreibt, so ergibt sich für die Gravitationskonstante \\term{G}:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1-2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} \right)^{p}  }',
+                      array( display => 'on',  latex => '{  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1 - 2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} \right)^{p}  }',
                                                label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein}', label_incr => true,
                                                footnote => '\\const{FrQFT_g_footnote_text_ARTLgFormel}'),
                       array( display => 'on',  latex => '{  \Rightarrow  G  =  g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} }  }',
@@ -994,88 +996,7 @@
                   array( 'text', array( text => array(
                     'Die Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein} entspricht der in Experimenten beobachteten'."\n".
                     'Shapiro-Verzögerung\\footnote{\\const{FrQFT_g_footnote_text_ShapiroVerzoegerung}}'."\n".
-                    'des Lichts im Gravitationsfeld, wenn wir die Längenkontraktion der Strukturen im Gravitationsfeld berücksichtigen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX', text =>
-                                           
-                'Längenkontraktion von Elementarteilchen im Gravitationsfeld der Quantengravitation', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'Die strukturelle Geometrie von Elementarteilchen verändert sich nach Giese in ihrer Ausdehnung in einem Gravitationsfeld in tangentialer und radialer Richtung zur Zentralmasse,'."\n".
-                    'wenn \\term{w_{0}} ihre Ausdehnung ohne diese Verzerrung ist.'."\n".
-                    'Adaptiert auf Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein} ergibt sich:'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  _{r,p}w_{mas}  =  w_{\lowZero} \cdot \left( 1-2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} \right)^{p - \frac{1}{2}}  }',
-                                               footnote => '\\const{FrQFT_g_footnote_text_BasisteilchenMGravityLK}'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Diese geometrische Verzerrung der Struktur von Elementarteilchen im Gravitationsfeld ergibt sich nach Giese, weil sich mit der Veränderung'."\n".
-                    'der Lichtgeschwindigkeit auch die Ausbreitungsgeschwindigkeit der Wechselwirkungsteilchen ändert, die die Wirkungsquanten im String aneinander binden.'."\n".
-                    'Dieser der Lorentzkontraktion äquivalente Effekt im Zusammenhang mit Bindungsfeldern ist auch als Heaviside-Ellipsoid bekannt.\\footnote{\\const{FrQFT_g_footnote_text_LorentzKontrFelder}}'."\n"))),
-                  array( 'text', array( text => array(
-                  '\\condb{Innere Elementarteilchen-Frequenzen gebieten die Längenkontraktion} \\\\'."\n".
-                    'Die innere Logik der Elementarteilchen-Struktur gebietet bei anisotroper Lichtgeschwindigkeit eine entsprechende anisotrope Verzerrung dieser Struktur.'."\n".
-                    'Denn die Möglichkeit der Rotation der Elementarteilchen-Struktur in jeder Raumrichtung bedingt, dass die lichtähnlichen Teilstrukturen'."\n".
-                    'des \\jump{OM:FrQFT:Elementarteilchen}{Elementarteilchen-Modells} in Bezug auf jede Rotation in jeder denkbaren Raumrichtung mit der gleichen Frequenz schwingen.'."\n",
-                      'Um zu zeigen, dass sich die anisotrope Lichtgeschwindigkeit und die anisotrope Strukturverzerrung bezüglich der Schwingungsfrequenz aufheben, möchte ich die reine Bewegung'."\n".
-                    'und deren Frequenz entlang der beiden Halbachsen des Heaviside-Ellipsoiden eines Elementarteilchens betrachten.'."\n".
-                    'Die Bewegung auf ihrem Weg \\term{_{r,p}w_{red}} mit der Geschwindigkeit \\term{_{r,p}c_{eff}}:'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  _{r,p}c_{mas}  =  \frac{ _{r,p}w_{mas} }{ t }  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Die beiden unterschiedlichen Halbachsen führen möglicherweise zu zwei Frequenzen \\term{_{r,p}f_{H}}; eine je Richtung \\term{p}.'."\n".
-                    'Für die Frequenz \\term{f} gilt in Bezug auf die Zeit \\term{t} erst einmal ganz allgemein:'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f  =  \frac{1}{t}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  _{r,p}f_{H}  =  \frac{ _{r,p}c_{mas} }{ _{r,p}w_{mas} }  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Für die Frequenzen ergibt sich dann, wenn \\term{_{r}S} zur Substitution genutzt wird:'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  _{r}S  =  \left( 1-2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} \right)  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  _{r,p}f_{H}  =  \frac{ {_{\lowZero}c} \cdot {_{r}S^{p}} }{ w_{\lowZero} \cdot {_{r}S^{p - \frac{1}{2}}} }  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  _{r,p}f_{H}  =  \frac{ {_{\lowZero}c} }{ w_{\lowZero} } \cdot {_{r}S^{p - \left( p - \frac{1}{2} \right) }}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  _{r,p}f_{H}  =  \frac{ {_{\lowZero}c} }{ w_{\lowZero} } \cdot {_{r}S^{\frac{1}{2}}}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  _{r,p}f_{H}  =  \frac{ {_{\lowZero}c} }{ w_{\lowZero} } \cdot \left( 1-2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} \right)^{\frac{1}{2}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  _{r,p}f_{H}  =  \frac{ {_{\lowZero}c} }{ w_{\lowZero} } \cdot \sqrt{ 1-2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} }  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Wie wir sehen, fällt die Richtung \\term{p} weg.'."\n".
-                    'Die beiden Effekte, die richtungsabhängige variable Lichtgeschwindigkeit und die richtungsabhängige Veränderung der Geometrie, heben sich auf,'."\n".
-                    'wie oben schon erwähnt.'."\n",
-                      'So können wir die Formel nun auf einen Umfang \\term{u_{0}} beziehen, also für eine beliebige Frequenz übernehmen und entsprechend abwandeln:'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  _{r}f  =  \frac{ {_{\lowZero}c} }{ u_{\lowZero} } \cdot \sqrt{ 1-2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} }  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Dieses Ergebnis können wir nutzen, um im Folgenden die Lichtgeschwindigkeitsänderung isotrop, also Richtungsunabhängig, zu beschreiben.'."\n",
-                      'Im Basisteilchenmodell Gieses beschreibt eine Formel dieser Art die de-Broglie-Frequenz der Elementarteilchen, was den \\jump{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-Frequenz-im-Gravitationsfeld}{experimentellen Beobachtungen widerspricht}.'."\n".
-                    'In der Quanten-Fluss-Theorie wird die de-Broglie-Frequenz der Elementarteilchen hingegen beobachtungskonform beschrieben.\\color{*Bearb}{(Link)}'."\n"))),
-                  array( 'text', array( text => array(
-                  '\\condb{Gieses Längenkontraktion im Gravitationsfeld ist korrekt} \\\\'."\n".
-                    'Die von Giese über den Heaviside-Ellipsoiden hergeleitete Längenkontraktion im Gravitationsfeld der Quantengravitation entspricht'."\n".
-                    'der inneren Logik des Elementarteilchen-Modells der Quanten-Fluss-Theorie.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX', text =>
-                                           
-                'Die Lichtgeschwindigkeitsänderung im Gravitationsfeld entspricht der Shapiro-Verzögerung', subline =>
-                  '')),
-                  array( 'notice', array( Display => 'vis', text => array(
-                    // '\\bold{Biologischer Bezug}',
-                    '• Für die Lichtbeugung durch die Lichtverlangsamung beziehungsweise die Shapiro-Verzögerung ist nur die radiale Veränderung mit \\term{p = 1} entscheidend, weil die Beugung durch den Dichte- oder Brechungsindex-Gradienten in radialer Richtung verursacht wird.',
-                    ))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'des Lichts im Gravitationsfeld.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX', text =>
                                            
                 'Die Struktur der Gravitationskonstanten', subline =>
@@ -1087,7 +1008,7 @@
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                       'Der Fortschritt im Vergleich zu Gieses Formulierung der Lichtverlangsamung besteht darin, dass sich so ein nachvollziehbarer Zusammenhang mit der Masse'."\n".
-                      'des anziehenden Objekts ergibt und nicht „nur“ mit der Anzahl an Elementarteilchen in diesem Objekt.'."\n"))),
+                      'des anziehenden Objekts ergibt und nicht „nur“ mit der Anzahl an Elementarteilchen in diesem Objekt.\\color{*Bearb}{(Verweis)}'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Der Wert der Gravitationskonstanten kann leider noch nicht hergeleitet werden, aber wir sind hiermit diesem Ziel einen Schritt näher gekommen.'."\n".
@@ -1103,14 +1024,14 @@
                     'Die Quanten-Fluss-Theorie ist in der Lage, eine wichtige Eigenschaft des Gravitationsfelds entsprechend der Allgemeinen Relativitätstheorie aus der hier'."\n".
                     'beschriebenen Struktur der Elementarteilchen und Grundformeln der Quantenphysik herzuleiten:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'conclusion', text => array(
+                  array( 'text', array( Shape  => 'italic', text => array(
                         'Mit einer Simplifizierung des Leptonen-Strings erhalten wir im Rahmen der Quanten-Fluss-Theorie die korrekte Veränderung der Lichtgeschwindigkeit'."\n".
                         'im Gravitationsfeld einer homogenen Massenkugel.'."\n".
                         'Dies kann als deutlicher Hinweis auf eine Vereinheitlichung von Quantenphysik und Allgemeiner Relativitätstheorie'."\n".
                         'gewertet werden.'."\n"))),
                       
                   array( 'text', array( text => array(
-                    'Die Beugung von Licht und die gravitative Anziehung von Elementarteilchen wird in den folgenden Abschnitten erklärt.'."\n"))),
+                    'Die Raumzeitkrümmung, die Beugung von Licht und die gravitativ anziehende Wirkung auf Elementarteilchen-Strings wird in den folgenden Abschnitten erklärt.'."\n"))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Quantengravitation:Laengenkontraktion'),
@@ -1132,6 +1053,82 @@
                     '• XXX',
                     ))), */
                       
+                  array( 'text', array( text => array(
+                    'Erst eine Längenkontraktion der angenommenen Elementarteilchen-Struktur im Gravitationsfeld macht im Hinblick'."\n".
+                    'auf ihre strukturellen Schwingungen Sinn.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX', text =>
+                                           
+                'Längenkontraktion von Elementarteilchen im Gravitationsfeld der Quantengravitation', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Die strukturelle Geometrie von Elementarteilchen verändert sich nach Giese in ihrer Ausdehnung in einem Gravitationsfeld in tangentialer und radialer Richtung zur Zentralmasse,'."\n".
+                    'wenn \\term{w_{0}} ihre Ausdehnung ohne diese Verzerrung ist.'."\n".
+                    'Adaptiert auf Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein} ergibt sich:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.LK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  _{r,p}w_{mas}  =  w_{\lowZero} \cdot \left( 1 - 2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} \right)^{p - \frac{1}{2}}  }',
+                                               footnote => '\\const{FrQFT_g_footnote_text_BasisteilchenMGravityLK}'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wobei wir, wie oben schon erläutert, für die tangentiale Komponente relativ zur Zentralmasse \\term{p = ½} und für die radiale Komponente \\term{p = 1} setzen.'."\n".
+                    'So, dass die tangentiale Komponente, wegen des Exponenten \\term{exp} mit \\term{exp = p – ½ = 0}, unverändert bliebt und nur die radiale Komponente, wegen des Exponenten \\term{exp} mit \\term{exp = p – ½ = ½}, ein Veränderung erfährt.'."\n",
+                      'Diese geometrische Verzerrung der Struktur von Elementarteilchen im Gravitationsfeld ergibt sich nach Giese, weil sich mit der Veränderung'."\n".
+                    'der Lichtgeschwindigkeit auch die Ausbreitungsgeschwindigkeit der Wechselwirkungsteilchen ändert, die die Wirkungsquanten im String aneinander binden.'."\n".
+                    'Dieser der Lorentzkontraktion äquivalente Effekt im Zusammenhang mit Bindungsfeldern ist auch als Heaviside-Ellipsoid bekannt.\\footnote{\\const{FrQFT_g_footnote_text_LorentzKontrFelder}}'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Laengenkontraktion:XXX', text =>
+                                           
+                'Elementarteilchen-Rotationsfrequenz gebietet die Längenkontraktion', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Die innere Logik der Elementarteilchen-Struktur gebietet bei anisotroper Lichtgeschwindigkeit eine entsprechende anisotrope Verzerrung seiner Struktur.'."\n".
+                    'Denn die Möglichkeit der Rotation der Elementarteilchen-Struktur – im Sinne der Lichtuhr Einstens, also des äußeren Elementarteilchen-Spins – in jeder Raumrichtung bedingt, dass die lichtähnlichen Teilstrukturen'."\n".
+                    'des \\jump{OM:FrQFT:Elementarteilchen}{Elementarteilchen-Modells} in Bezug auf jede Rotation in jeder denkbaren Raumrichtung mit der gleichen Frequenz rotieren (siehe \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton}).'."\n",
+                      'Um zu zeigen, dass sich die anisotrope Lichtgeschwindigkeit und die anisotrope Strukturverzerrung bezüglich der äußeren Rotationsfrequenz des Spins aufheben, möchte ich die reine Bewegung'."\n".
+                    'und deren Frequenz entlang der beiden Halbachsen des Heaviside-Ellipsoiden eines Elementarteilchens betrachten.'."\n".
+                    'Die Bewegung auf ihrem Weg \\term{_{r,p}w_{mas}} mit der Geschwindigkeit \\term{_{r,p}c_{mas}}:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.LK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  _{r,p}c_{mas}  =  \frac{ _{r,p}w_{mas} }{ t }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die beiden unterschiedlichen Halbachsen führen möglicherweise zu zwei Spin-Halbachs-Frequenzen \\term{_{r,p}f_{spin,H}}; eine je Richtung \\term{p}.'."\n",
+                      'Für die Frequenz \\term{f} gilt in Bezug auf die Zeit \\term{t} erst einmal ganz allgemein:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.LK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f  =  \frac{1}{t}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  _{r,p}f_{spin,H}  =  \frac{ _{r,p}c_{mas} }{ _{r,p}w_{mas} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Für die Frequenzen ergibt sich dann, wenn \\term{_{r}S} zur Substitution genutzt wird:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.LK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  _{r}S  =  \left( 1 - 2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} \right)  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  _{r,p}f_{spin,H}  =  \frac{ {_{\lowZero}c} \cdot {_{r}S^{p}} }{ w_{\lowZero} \cdot {_{r}S^{p - \frac{1}{2}}} }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  _{r,p}f_{spin,H}  =  \frac{ {_{\lowZero}c} }{ w_{\lowZero} } \cdot {_{r}S^{p - \left( p - \frac{1}{2} \right) }}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  _{r,p}f_{spin,H}  =  \frac{ {_{\lowZero}c} }{ w_{\lowZero} } \cdot {_{r}S^{\frac{1}{2}}}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  _{r,p}f_{spin,H}  =  \frac{ {_{\lowZero}c} }{ w_{\lowZero} } \cdot \left( 1 - 2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} \right)^{\frac{1}{2}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  _{r,p}f_{spin,H}  =  \frac{ {_{\lowZero}c} }{ w_{\lowZero} } \cdot \sqrt{ 1 - 2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wie wir sehen, fällt die Richtung \\term{p} weg.'."\n".
+                    'Die beiden Effekte, die richtungsabhängige variable Lichtgeschwindigkeit und die richtungsabhängige Veränderung der Geometrie, heben sich auf,'."\n".
+                    'wie oben schon vermutet.'."\n",
+                      'So können wir die Formel nun auf einen Umfang \\term{u_{0}} beziehen, also für die Spin-Frequenz übernehmen und entsprechend abwandeln:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.LK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  _{r}f_{spin}  =  \frac{ {_{\lowZero}c} }{ u_{\lowZero} } \cdot \sqrt{ 1 - 2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dieses Ergebnis können wir nutzen, um im Folgenden die Lichtgeschwindigkeitsänderung isotrop, also Richtungsunabhängig, zu beschreiben.'."\n",
+                      '\\color{*Bearb}{Im Basisteilchenmodell Gieses beschreibt eine Formel dieser Art die de-Broglie-Frequenz der Elementarteilchen, was den \\jump{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-Frequenz-im-Gravitationsfeld}{experimentellen Beobachtungen widerspricht}.'."\n".
+                    'In der Quanten-Fluss-Theorie wird die de-Broglie-Frequenz der Elementarteilchen hingegen beobachtungskonform beschrieben.\\color{*Bearb}{(Link)}}'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Laengenkontraktion:XXX', text =>
+                                           
+                'Gieses Längenkontraktion im Gravitationsfeld ist korrekt', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Die von Giese über den Heaviside-Ellipsoiden hergeleitete Längenkontraktion im Gravitationsfeld der Quantengravitation entspricht'."\n".
+                    'der inneren Logik des Elementarteilchen-Modells der Quanten-Fluss-Theorie.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Laengenkontraktion:XXX', text =>
                                            
                 'XXX', subline =>

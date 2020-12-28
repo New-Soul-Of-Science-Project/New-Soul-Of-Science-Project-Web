@@ -340,7 +340,7 @@
                     'Für die Lichtgeschwindigkeit um eine Zentralmasse herum ergibt sich genau die Formel der Schwarzschildlösung der Einsteinschen Feldgleichung:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Einl.XXX', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  {c}  =  {c_{\lowZero}} \cdot \Bigl( 1-2 \cdot \frac{G \cdot M}{{c}_{\lowZero}^{2} \cdot r} \Bigr)^{p}  }',
+                      array( display => 'on',  latex => '{  {c}  =  {c_{\lowZero}} \cdot \Bigl( 1 - 2 \cdot \frac{G \cdot M}{{c}_{\lowZero}^{2} \cdot r} \Bigr)^{p}  }',
                                                label_name => 'OM:VRT:Einleitung:Equ-GraLGEinstein', label_text => '\\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein}{\\name{OM:VRT:Einleitung:Equ-GraLGEinstein}}', label_incr => false,
                                                footnote => '\\const{FrQFT_g_footnote_text_ARTLgFormel}'),
                             ))),
@@ -381,7 +381,7 @@
                     'eine Abflachung der Felder des angezogenen Materie-Elementarteilchens in radialer Richtung auf die Distanz \\term{d} zum Heaviside-Ellipsoid zur Folge, wie Giese formuliert:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Einl.XXX', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  d  =  d_{\lowZero} \cdot \Bigl( 1-2 \cdot \frac{G \cdot M}{c_{\lowZero}^{2} \cdot r} \Bigr)^{p-\frac{1}{2}}  }',
+                      array( display => 'on',  latex => '{  d  =  d_{\lowZero} \cdot \Bigl( 1 - 2 \cdot \frac{G \cdot M}{c_{\lowZero}^{2} \cdot r} \Bigr)^{p-\frac{1}{2}}  }',
                                                label_name => 'OM:VRT:Einleitung:Equ-GraLKEinstein', label_text => '\\jump{OM:FrQFT:Gravitation:Laengenkontraktion-im-Gravitationsfeld:Equ-GraLKEinstein}{\\name{OM:VRT:Einleitung:Equ-GraLKEinstein}}', label_incr => true,
                                                footnote => 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, Speed Reduction in Detail, S. 20-22, hier Formel C.8, S. 22. Die erste Variable rechts direkt neben dem Gleichheitszeichen \\term{d_{0}} ist dort mit \\term{r} benannt. Diese Bennenung ist fehlerhaft, weil es eine weitere Variable \\term{r} unter dem Bruch gibt, die von der ersten unabhängig ist. Beide müssen also unterschieden werden, weil die erste neben dem Gleichheitszeichen eine generelle geometrische Ausdehnung von Strukturen meint, während die zweite den Abstand vom Zentrum einer Zentralmasse bedeutet. Folgerichtig habe ich dann die Variable \\term{r_{red}} bei Giese in \\term{d_{red}} umbenannt, weil diese die Reduktion der Ausdehnung einer generellen Struktur meint. Die Konstante \\term{c} habe ich wegenen der Eindeutigkeit in \\term{c_{0}} umbenannt.'),
                     ))),

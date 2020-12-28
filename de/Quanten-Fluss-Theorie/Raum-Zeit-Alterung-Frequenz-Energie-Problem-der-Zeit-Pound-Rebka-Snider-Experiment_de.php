@@ -214,7 +214,7 @@
                     'ergibt sich die Richtungsabhängige Veränderung der Lichtgeschwindigkeit zu:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'ZAF.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1-2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} \right)^{p}  }',
+                      array( display => 'on',  latex => '{  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1 - 2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} \right)^{p}  }',
                                                label_text => '\\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein}', label_incr => false,
                                                footnote => '\\const{FrQFT_g_footnote_text_ARTLgFormel}'),
                     ))),
