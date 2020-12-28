@@ -341,7 +341,7 @@
                   array( 'equations',
                     array( equ_text_std => 'Einl.XXX', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  {c}  =  {c_{\lowZero}} \cdot \Bigl( 1-2 \cdot \frac{G \cdot M}{{c}_{\lowZero}^{2} \cdot r} \Bigr)^{p}  }',
-                                               label_name => 'OM:VRT:Einleitung:Equ-GraLGEinstein', label_text => '\\jump{OM:FrQFT:Quantengravitation:Equ-GraLGEinstein}{\\name{OM:VRT:Einleitung:Equ-GraLGEinstein}}', label_incr => false,
+                                               label_name => 'OM:VRT:Einleitung:Equ-GraLGEinstein', label_text => '\\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein}{\\name{OM:VRT:Einleitung:Equ-GraLGEinstein}}', label_incr => false,
                                                footnote => '\\const{FrQFT_g_footnote_text_ARTLgFormel}'),
                             ))),
                   array( 'text', array( text => array(

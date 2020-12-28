@@ -295,7 +295,7 @@
                     'Die Geometrie der Felder ist dabei wiederum von der Geometrie der Aussendung der entsprechenden Wechselwirkungsteilchen gegeben.'."\n".
                     'Diese ist bei einem im Gravitationsfeld ruhenden Teilchen nur von der örtlichen Veränderung der Lichtgeschwindigkeit abhängig.'."\n"),
                   array( 'normal',
-                    'Die Lichtgeschwindigkeit ist nach Einsteins Formel \\jump{OM:FrQFT:Quantengravitation:Equ-GraLGEinstein}{\\name{OM:FrQFT:Quantengravitation:Equ-GraLGEinstein}}\\footnote{Bezüglich der Quanten-Fluss-Theorie stellt diese Formel eine erste Näherung dar.} in tangentialer Richtung unveränderlich.'."\n".
+                    'Die Lichtgeschwindigkeit ist nach Einsteins Formel \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein}{\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein}}\\footnote{Bezüglich der Quanten-Fluss-Theorie stellt diese Formel eine erste Näherung dar.} in tangentialer Richtung unveränderlich.'."\n".
                     'In radialer Richtung hingegen wird sie zum Mittelpunkt der Zentralmasse hin geringer.'."\n".
                     'So wird in radialer Richtung der Weg und die Dichte der Wechselwirkungsteilchen verändert.\\footnote[*Bearb]{\\color{*Bearb}{Diese Veränderung muss noch vergleichbar zu \\cite{Giese:RelaContra2009}, hergeleitet werden, weil sie bei \\cite{Giese:TheOrigOfGravity2011}, S. 22, nicht explizit erwähnt ist, oder man kann dies eventuell bei \\cite{Selleri:EinsteinLorentz1998}, finden.}}'."\n"),
                   array( 'normal',

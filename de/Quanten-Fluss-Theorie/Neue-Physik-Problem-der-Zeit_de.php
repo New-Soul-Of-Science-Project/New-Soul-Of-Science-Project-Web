@@ -1882,7 +1882,7 @@
                     'Diese Störungswellen, die als \\jump{*Wirkungsquanten-virtuelle-Einfuehr}{virtuelle Wirkungsquanten} des \\jump{OM:FrQFT:Vakuum}{Vakuums} zu verstehen sind, lenken die Strings von \\jump{OM:FrQFT:Elementarteilchen}{Elementarteilchen} in der Umgebung durch Beugung ab.'."\n".
                     'Das bedeutet effektiv eine stärkere Aufwicklung der \\jump{OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip}{Helixspiralbahn} der Wirkungsquanten der angezogenen Elementarteilchen und auch derer des Vakuums der Umgebung.'."\n".
                     'Eine statistische Auswertung der Ablenkung ermöglicht die Berechnung der ortsüblichen Lichtgeschwindigkeit im dreidimensionalen Raum.'."\n".
-                    'In erster Näherung ergibt die Berechnung genau die \\jump{OM:FrQFT:Quantengravitation:Equ-GraLGEinstein}{Formel}, welche auch die \\jump{OM:FrQFT:NeuePhysik:Relativitaet}{Allgemeine Relativitätstheorie} für die Lichtgeschwindigkeit im dreidimensionalen Raum für ein Gravitationsfeld mit einer Zentralmasse vorhersagt.'."\n"))),
+                    'In erster Näherung ergibt die Berechnung genau die \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein}{Formel}, welche auch die \\jump{OM:FrQFT:NeuePhysik:Relativitaet}{Allgemeine Relativitätstheorie} für die Lichtgeschwindigkeit im dreidimensionalen Raum für ein Gravitationsfeld mit einer Zentralmasse vorhersagt.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Quantengravitation:HM-AEP', text =>
                                            
                 'Higgs-Mechanismus und Äquivalenzprinzip')),

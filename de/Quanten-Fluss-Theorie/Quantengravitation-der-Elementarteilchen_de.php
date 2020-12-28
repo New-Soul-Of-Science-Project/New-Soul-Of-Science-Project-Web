@@ -125,7 +125,7 @@
                       'Der verwendete Ansatz zur quantitativen Beschreibung der Quantengravitation stammt aus dem Basisteilchenmodell\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}.}'."\n".
                     'von Albrecht Giese und verfeinert diesen mit Hilfe der Elementarteilchen-Struktur der Quanten-Fluss-Theorie.'."\n",
                       'Im Zentrum von Gieses Überlegung steht die Idee, dass ein Elementarteilchen, welches eine innere Struktur hat und aus rotierenden, lichtähnlichen Basisteilchen'."\n".
-                    'aufgebaut ist, \\jump{OM:FrQFT:Quantengravitation:VereinfModellGravirad}{Störungswellen} in seine Umgebung aussendet.'."\n".
+                    'aufgebaut ist, \\jump{OM:FrQFT:Quantengravitation:VereinfModellQGravitation}{Störungswellen} in seine Umgebung aussendet.'."\n".
                     'Diese Störungswellen verlängern den Bewegungspfad von Lichtteilchen – \\jump{*Photonen-Herlei}{Photonen} – oder den der lichtähnlichen Strukturen in anderen Elementarteilchen in ihrem Umfeld.'."\n".
                     'Auf diese Weise \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{verlangsamt} und \\jump{OM:FrQFT:Quantengravitation:Lichtbeugung}{beugt}'."\n".
                     'sich die Bewegung lichtähnlicher Strukturen im Raum, der eine gravitative Masse umgibt.'."\n".
@@ -136,7 +136,7 @@
                     'Durch die hier entwickelten Details werden auch Eigenschaften von Gieses Erklärungsansatz verständlich, die für mich bei ihm offen bleiben.'."\n"))),
                     
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellGravirad'),
+                      array(  jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellQGravitation'),
                     )),
                 )
           ); ?>
@@ -144,9 +144,9 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • Vereinfachtes Modell der Graviradiation  >
+          <!  • Vereinfachtes Modell der Quantengravitation  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
-            'OM:FrQFT:Quantengravitation:VereinfModellGravirad',
+            'OM:FrQFT:Quantengravitation:VereinfModellQGravitation',
               'Wirkungsquanten-Impulskegel wirken als Störungswellen', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
@@ -162,7 +162,7 @@
                       
                   array( 'text', array( text => array(
                     '\\const{FrQFT_g_text_HinwKosBeob}'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellGravirad:VereinfString', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:VereinfString', text =>
                                            
                 'Vereinfachter Wirkungsquanten-String', subline =>
                   'Ein kreisförmiger Ring aus Wirkungsquanten')),
@@ -177,7 +177,7 @@
                       'Die virtuellen Wirkungsquanten sind als Dichtewellen in den Wirkungsquanten des \\jump{*Bewegungsraum-Herlei}{Bewegungsraums} der Quanten-Fluss-Theorie zu verstehen.'."\n".
                     'Diese vermitteln die neue Wechselwirkung der \\jump{*Graviradiation-Einfuehr}{Graviradiation}, was bedeutet, dass sie die makroskopische Geschwindigkeit anderer Wirkungsquanten'."\n".
                     'in ihrem Umfeld verringern und deren Bahn ablenken, wie wir sehen werden (siehe \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn}, links).'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellGravirad:WarumImpulskegel', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:WarumImpulskegel', text =>
                                        
                 'Warum Impulskegel?', subline =>
                   '')),
@@ -209,7 +209,7 @@
                   array( 'text', array( text => array(
                     'Dementsprechend hat dann auch das von einem einzelnen Photon, einem Lichtteilchen, abgestrahlte elektromagnetische Feld im zeitlichen Verlauf die Form einer Kegeloberfläche.\\color{*Bearb}{(Verweis)}'."\n"))),
                       
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellGravirad:WQIUmgekehrtProport', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:WQIUmgekehrtProport', text =>
                                            
                 'Wirkungsquanten-Impulse verringern ihre Intensität im Raum mit \\term{1/r}', subline =>
                   '')),
@@ -228,7 +228,7 @@
                       
                   array( 'text', array( text => array(
                     'Damit verhält sich die Graviradiation anders als alle anderen Wechselwirkungen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellGravirad:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:XXX', text =>
                                            
                 'Unterschied von Wechselwirkungen mit der Intensitätsabnahme von \\term{1/r^{2}} zu \\term{1/r}', subline =>
                   '')),
@@ -259,7 +259,7 @@
               'Aus virtuellen Wirkungsquanten bestehende Störungswellen erzeugen die Shapiro-Verzögerung des Lichts', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellGravirad', type => 'back'),
+                      array(  jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellQGravitation', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'invis', text => array(
@@ -331,7 +331,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r,tan}c}  =  {_{\lowZero}c} \cdot \sqrt{ 1 - \frac{ {_{r}v_{abl}^{2}} }{ {_{\lowZero}c}^{2} } }  }',
                                                latex_if_visible => '{  \Leftrightarrow  {_{r,tan}c}  =  {_{\lowZero}c} \cdot \sqrt{ 1 - \frac{ {_{r}v_{abl}^{2}} }{ {_{\lowZero}c}^{2} } }  }',
                                                footnote => 'Vgl. '.(Sc_f_litera_cite_html( 'Giese:TheOrigOfGravity2011')).', Appendix C Variation in the Speed of Light, S. 19-22, hier Formel C.2, S. 21.',
-                                               label_name => 'OM:FrQFT:Quantengravitation:Equ-c-eff-tan', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-c-eff-tan}', label_incr => true),
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-c-eff-tan', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-c-eff-tan}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Bei einer zeitlichen Mittelung zwischen den beiden Fällen \\term{+v_{abl}} und \\term{–v_{abl}} verändert sich das Ergebnis von \\term{_{r,tan}c}'."\n".
@@ -384,20 +384,20 @@
                                                 footnote => 'Vgl. '.(Sc_f_litera_cite_html( 'Giese:TheOrigOfGravity2011')).', Appendix C Variation in the Speed of Light, S. 19-22, hier Formel C.4, S. 21.'),
                        array( display => 'on',  latex => '{  \Leftrightarrow  {_{r,rad}c}  =  {_{\lowZero}c} \cdot \left( 1 - \frac{ {_{r}v_{abl}^{2}} }{ {_{\lowZero}c^{2}} } \right)  }',
                                                 footnote => 'Vgl. '.(Sc_f_litera_cite_html( 'Giese:TheOrigOfGravity2011')).', Appendix C Variation in the Speed of Light, S. 19-22, hier Formel C.4, S. 21.',
-                                                label_name => 'OM:FrQFT:Quantengravitation:Equ-c-eff-rad', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-c-eff-rad}', label_incr => true),
+                                                label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-c-eff-rad', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-c-eff-rad}', label_incr => true),
                     ))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX', text =>
                                            
                 'Zusammenfassung der tangentialen und radialen Komponente', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Wenn wir die Formeln \\jumpname{OM:FrQFT:Quantengravitation:Equ-c-eff-tan} und \\jumpname{OM:FrQFT:Quantengravitation:Equ-c-eff-rad} vergleichen, fällt uns deren Ähnlichkeit auf.'."\n".
+                    'Wenn wir die Formeln \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-c-eff-tan} und \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-c-eff-rad} vergleichen, fällt uns deren Ähnlichkeit auf.'."\n".
                     'Beide Formeln lassen sich zusammenfassen, wenn wir eine Potenz \\term{p} einführen, die für die tangentiale Komponente den Wert \\term{p = ½}'."\n".
                     'und für die radiale den Wert \\term{p = 1} erhält:\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, S. 19-22, hier S. 22.}'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{r,p}c}  =  {_{\lowZero}c} \cdot \left( 1 - \frac{ {_{r}v_{abl}^{2}} }{ {_{\lowZero}c^{2}} } \right)^{p}  }',
-                                               label_name => 'OM:FrQFT:Quantengravitation:Equ-c-eff', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-c-eff}', label_incr => true),
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-c-eff', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-c-eff}', label_incr => true),
                     ))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX', text =>
                                            
@@ -405,12 +405,12 @@
                   '')),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{(Der effektive Störimpuls)} Die effektiv störende Wirkung \\term{_{r}p_{abl}} des Stroms der eintreffenden virtuellen Wirkungsquanten in'."\n".
-                    'den \\jump{OM:FrQFT:Quantengravitation:VereinfModellGravirad:WarumImpulskegel}{Impulskegeln} hat, nach Analyse der \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung}, die nachfolgend beschriebenen Eigenschaften.'."\n".
+                    'den \\jump{OM:FrQFT:Quantengravitation:VereinfModellQGravitation:WarumImpulskegel}{Impulskegeln} hat, nach Analyse der \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung}, die nachfolgend beschriebenen Eigenschaften.'."\n".
                     'Wie wir im unteren Teil der Abbildung sehen, haben die Impulskegel eine Amplitude, die mit der Entfernung abfällt,'."\n".
                     'eine Frequenz und eine Breite:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Die Ausgangsamplitude soll die Wirkung \\term{h} eines Wirkungsquants sein.',
-                        'Die Amplitude soll sich beim Abstand \\term{r} vom String \\jump{OM:FrQFT:Quantengravitation:VereinfModellGravirad:WQIUmgekehrtProport}{umgekehrt proportional} mit \\term{1/r} verringern. Diese \\jump{OM:FrQFT:Quantengravitation:VereinfModellGravirad}{ungewöhnliche Eigenschaft} wurde zuvor schon erklärt.',
+                        'Die Amplitude soll sich beim Abstand \\term{r} vom String \\jump{OM:FrQFT:Quantengravitation:VereinfModellQGravitation:WQIUmgekehrtProport}{umgekehrt proportional} mit \\term{1/r} verringern. Diese \\jump{OM:FrQFT:Quantengravitation:VereinfModellQGravitation}{ungewöhnliche Eigenschaft} wurde zuvor schon erklärt.',
                         'Die Detektor-Frequenz der eintreffenden virtuellen Wirkungsquanten ist offensichtlich die gleiche, wie die Detektor-Frequenz der sie aussendenden Wirkungsquanten auf dem String, also gilt: \\term{f_{vwq} = f_{wq}} .',
                         '\\color{*Bearb}{(Die Einwirkungsdauer \term{T_{kegel}} der sich drehenden Kegelwand eines Wirkungsquants.)} Der Breitenfaktor \term{T_{kegel}} der Impulse hängt davon ab, wie schnell die Impulskegel sich hin- und wegdrehen. Denn rotiert der String doppelt so schnell, dann haben die Impulskegel nur die halbe Zeit auf das vorbeifliegende Licht einzuwirken. Dafür kommen sie doppelt so häufig in der selben Zeit vorbei, was aber schon in der Detektor-Frequenz berücksichtigt ist. Die Drehung der Impulskegel entspricht ihrer Winkelgeschwindigkeit \\term{ω_{ele}}, die bei konstanter Lichtgeschwindigkeit \\term{_{0}c = ω_{ele} ⋅ r_{ele}} der Wirkungsquanten auf dem String bei geringerem Radius \\term{r_{ele}} umgekehrtproportional zunimmt.',
                     ))),
@@ -420,7 +420,7 @@
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  {_{r}p_{abl}}  \sim  \frac{ h \cdot {T_{kegel}} \cdot f_{vwq} }{ r }  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ h \cdot {T_{kegel}} \cdot f_{vwq} }{ r }  }',
-                                               label_name => 'OM:FrQFT:Quantengravitation:Equ-h-eff', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-h-eff}', label_incr => true),
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-eff', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-eff}', label_incr => true),
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX',
@@ -482,12 +482,12 @@
                       'Beide Geschwindigkeiten variieren von Ort zu Ort also mit der Verlangsamung der Ausbreitung des Lichts im Raum \\term{_{r,p}c},'."\n".
                     'die wir hier ja insgesamt berechnen wollen, mit dem Abstand \\term{r} und ihrer Bewegungsrichtung \\term{p}.'."\n",
                       'Die Variation beider Dichten mit der Ausbreitungsgeschwindigkeit ihrer (virtuellen) Wirkungsquanten entspricht der der Detektorwellenlänge \\term{_{x}λ_{wq,d}}'."\n".
-                    'von Licht bei sich ändernder Lichtgeschwindigkeit aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-DetektWellenlaengeAlt}.'."\n".
+                    'von Licht bei sich ändernder Lichtgeschwindigkeit aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-DetektWellenlaengeAlt}.'."\n".
                     'Hieraus können wir die Dichte bei einer bestimmten Ausbreitungsgeschwindigkeit ableiten:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  {_{x}\lambda_{wq,d}}  =  {_{\lowZero}\lambda_{wq,d}} \cdot {_{x}\alpha}  }',
-                                               label_name => 'OM:FrQFT:Quantengravitation:Equ-DetektWellenlaengeAlt', label_text => '\\jump{OM:FrQFT:ZeitAlterungFrequenz:Equ-DetektWellenlaengeAlt}{\\name{OM:FrQFT:Quantengravitation:Equ-DetektWellenlaengeAlt}}'),
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-DetektWellenlaengeAlt', label_text => '\\jump{OM:FrQFT:ZeitAlterungFrequenz:Equ-DetektWellenlaengeAlt}{\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-DetektWellenlaengeAlt}}'),
                       array( display => 'on',  latex => '{  {_{x}\rho_{wq}}  =  \frac{ 1 }{ {_{x}\lambda_{wq,d}} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{x}\rho_{wq}}  =  \frac{ 1 }{ {_{\lowZero}\lambda_{wq,d}} \cdot {_{x}\alpha} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{x}\rho_{wq}}  =  \frac{ {_{\lowZero}\rho_{wq}} }{ {_{x}\alpha} }  }'),
@@ -516,11 +516,11 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'In die Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-h-eff} der effektiv störenden Wirkung eingesetzt erhalten wir:'."\n"))),
+                    'In die Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-eff} der effektiv störenden Wirkung eingesetzt erhalten wir:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ h \cdot {T_{kegel}} \cdot n_{wq} \cdot f_{ele} }{ r }  }',
-                                               label_name => 'OM:FrQFT:Quantengravitation:Equ-h-eff-aus-f-ele', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-h-eff-aus-f-ele}', label_incr => true),
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-eff-aus-f-ele', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-eff-aus-f-ele}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Es ist nun wünschenswert den Breitenfaktor \term{T_{kegel}} am Ende so zu formulieren, dass die uns generell noch unbekannte Wirkungsquanten-Anzahl \\term{n_{wq}} sich weg kürzt.'."\n",
@@ -536,11 +536,11 @@
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E_{ele}  =  \hbar \cdot \omega_{ele}  }',  // #: Siehe https://www.grund-wissen.de/physik/mechanik/kinematik/kreisfoermige-bewegungen.html#equation-eqn-bahngeschwindigkeit
-                                               label_name => 'OM:FrQFT:Quantengravitation:Equ-E-aus-omega', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-E-aus-omega}', label_incr => true,
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-aus-omega', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-aus-omega}', label_incr => true,
                                                footnote => 'Vgl. \\cite{wiki:PlanckschesWirkungsquantum2013}, Definition.'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \omega_{ele}  =  \frac{ E_{ele} }{ \hbar }  }'),
                       array( display => 'on',  latex => '{  E_{ele}  =  m_{ele} \cdot {_{\lowZero}c^{2}}  }',
-                                               label_name => 'OM:FrQFT:Quantengravitation:Equ-E-ele-aequi-zu-Masse', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-E-ele-aequi-zu-Masse}', label_incr => true,
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse}', label_incr => true,
                                                footnote => '\\const{FrQFT_g_footnote_text_AequivalMasseEnergie}'),
                       array( display => 'on',  latex => '{  \Rightarrow  {T_{kegel}}  =  g_{\omega} \cdot \frac{ \hbar }{ E_{ele} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  {T_{kegel}}  =  g_{\omega} \cdot \frac{ \hbar }{ m_{ele} \cdot {_{\lowZero}c^{2}} }  }'),
@@ -572,7 +572,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  {T_{kegel}}  =  g_{\omega} \cdot \frac{ \hbar }{ n_{wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}} }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Setzen wir diese Werte nun in die Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-h-eff-aus-f-ele} der effektiv störenden Wirkung ein, ergibt sich:'."\n"))),
+                    'Setzen wir diese Werte nun in die Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-eff-aus-f-ele} der effektiv störenden Wirkung ein, ergibt sich:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ h \cdot g_{\omega} \cdot \frac{ \hbar }{ n_{wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}} } \cdot n_{wq} \cdot f_{ele} }{ r }  }'),
@@ -580,7 +580,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}p_{abl}}  =  g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} \cdot {_{\lowZero}c^{2}} } \cdot \frac{ h \cdot f_{ele} }{ r }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Über \\jump{OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit}{Plancks Proportionalität von Energie und Frequenz} und Einstens Energie-Masse-Äquivalenz aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-E-ele-aequi-zu-Masse}'."\n".
+                    'Über \\jump{OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit}{Plancks Proportionalität von Energie und Frequenz} und Einstens Energie-Masse-Äquivalenz aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse}'."\n".
                     'können wir die effektiv störende Wirkung durch die Masse \\term{m_{ele}} ausdrücken.'."\n".
                     'So formuliert benötigen wir diese im weiteren Verlauf:'."\n"))),
                   array( 'equations',
@@ -642,7 +642,7 @@
                       array( display => 'on',  latex => '{  {_{x}f_{vwq}}  =  {_{x}f_{wq}}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  {_{x}f_{vwq}}  =  \frac{ m_{ele} \cdot n_{wq} \cdot {_{\lowZero}c^{2}} }{ h }  }'),
                       array( display => 'on',  latex => '{  E_{ele}  =  \hbar \cdot \omega_{ele}  }',
-                                               label_name => 'OM:FrQFT:Quantengravitation:Equ-E-aus-omega', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-E-aus-omega}', label_incr => true,
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-aus-omega', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-aus-omega}', label_incr => true,
                                                footnote => 'Vgl. \\cite{wiki:PlanckschesWirkungsquantum2013}, Definition.'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \omega_{ele}  =  \frac{ E_{ele} }{ h }  }'),
                       array( display => 'on',  latex => '{  {T_{kegel}}  \sim  \frac{ 1 }{ \omega_{ele} }  }'),
@@ -698,12 +698,12 @@
                       'Beide Geschwindigkeiten variieren von Ort zu Ort also mit der Verlangsamung der Ausbreitung des Lichts im Raum \\term{_{r,p}c},'."\n".
                     'die wir hier ja insgesamt berechnen wollen, mit dem Abstand \\term{r} und ihrer Bewegungsrichtung \\term{p}.'."\n",
                       'Die Variation beider Dichten mit der Ausbreitungsgeschwindigkeit ihrer (virtuellen) Wirkungsquanten entspricht der der Detektorwellenlänge \\term{_{x}λ_{wq,d}}'."\n".
-                    'von Licht bei sich ändernder Lichtgeschwindigkeit aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-DetektWellenlaengeAlt}.'."\n".
+                    'von Licht bei sich ändernder Lichtgeschwindigkeit aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-DetektWellenlaengeAlt}.'."\n".
                     'Hieraus können wir die Dichte bei einer bestimmten Ausbreitungsgeschwindigkeit ableiten:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  {_{x}\lambda_{wq,d}}  =  {_{\lowZero}\lambda_{wq,d}} \cdot {_{x}\alpha}  }',
-                                               label_name => 'OM:FrQFT:Quantengravitation:Equ-DetektWellenlaengeAlt', label_text => '\\jump{OM:FrQFT:ZeitAlterungFrequenz:Equ-DetektWellenlaengeAlt}{\\name{OM:FrQFT:Quantengravitation:Equ-DetektWellenlaengeAlt}}'),
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-DetektWellenlaengeAlt', label_text => '\\jump{OM:FrQFT:ZeitAlterungFrequenz:Equ-DetektWellenlaengeAlt}{\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-DetektWellenlaengeAlt}}'),
                       array( display => 'on',  latex => '{  {_{x}\rho_{wq}}  =  \frac{ 1 }{ {_{x}\lambda_{wq,d}} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{x}\rho_{wq}}  =  \frac{ 1 }{ {_{\lowZero}\lambda_{wq,d}} \cdot {_{x}\alpha} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{x}\rho_{wq}}  =  \frac{ {_{\lowZero}\rho_{wq}} }{ {_{x}\alpha} }  }'),
@@ -744,7 +744,7 @@
                                                latex_if_visible => '{  \Leftrightarrow   m_{ele}  =  \frac{ h \cdot n_{ele} }{ {_{\lowZero}c^{2}} \cdot t }  }'),
                       array( display => 'off', latex => '{  \hbar  =  \frac{ h }{ 2 \pi }  }'),
                       array( display => 'off', latex => '{  E_{ele}  =  \hbar \cdot \omega_{ele}  }',
-                                               label_name => 'OM:FrQFT:Quantengravitation:Equ-E-aus-omega', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-E-aus-omega}', label_incr => true,
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-aus-omega', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-aus-omega}', label_incr => true,
                                                footnote => 'Vgl. \\cite{wiki:PlanckschesWirkungsquantum2013}, Definition.'),
                       array( display => 'off', latex => '{  \Leftrightarrow  m_{ele}  =  \frac{ \hbar \cdot \omega_{ele} }{ {_{\lowZero}c^{2}} }  }'),
                       array( display => 'on',  latex => '{  m_{ele}  =  \frac{ h \cdot \omega_{ele} }{ 2 \pi \cdot {_{\lowZero}c^{2}} }  }',
@@ -763,7 +763,7 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:NaeherungGrosseAbstaend', text =>
                                            
                 'Näherung bei großen Abständen', subline =>
-                  '… im Verhältnis zum Radius')),
+                  '… im Verhältnis zum Radius des gravitativ wirkenden Elementarteilchens')),
                   array( 'text', array( text => array(
                     'Wie in \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn} dargestellt, entstehen die virtuellen Wirkungsquanten aus den Wirkungsquanten des Strings.'."\n".
                     'Die abgestrahlten virtuellen Wirkungsquanten-Impulse nehmen, wie schon gesagt, mit dem Abstand \\term{r} vom String ab.'."\n".
@@ -790,7 +790,7 @@
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{ele,abl}}  =  2 \cdot {_{r}p_{abl}}  }',
-                                               label_name => 'OM:FrQFT:Quantengravitation:Equ-h-ele-eff', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-h-ele-eff}', label_incr => true),
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-ele-eff', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-ele-eff}', label_incr => true),
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX',
@@ -850,7 +850,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Diese Ablenkungsgeschwindigkeit eingesetzt in Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-c-eff} ergibt:'."\n"))),
+                    'Diese Ablenkungsgeschwindigkeit eingesetzt in Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-c-eff} ergibt:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{  \Rightarrow  {_{r,p}c_{ele}}  =  {_{\lowZero}c} \cdot \left( 1 - \frac{ \left( g_{v} \cdot 2 \cdot g_{\omega} \cdot \frac{ g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot m_{ele} }{ r } \right)^{2} }{ {_{\lowZero}c^{2}} } \right)^{p}  }'),
@@ -870,7 +870,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Setzen wir hier die Gravitationskonstante so ein, wie sie sich in der nachfolgenden Herleitung für große Massen in Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-GraviKonstStruktur} zeigt, dann bekommen wir für ein einzelnes Elementarteilchen:'."\n"))),
+                    'Setzen wir hier die Gravitationskonstante so ein, wie sie sich in der nachfolgenden Herleitung für große Massen in Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraviKonstStruktur} zeigt, dann bekommen wir für ein einzelnes Elementarteilchen:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{r,p}c_{ele}}  =  {_{\lowZero}c} \cdot \left( 1 - 4 \cdot \frac{ G^{2} \cdot m_{ele}^{2} }{ {_{\lowZero}c^{2}} \cdot r^{2} } \right)^{p}  }'),
@@ -904,12 +904,12 @@
                     'Das bedeutet, dass sich die effektive Ablenkungsgeschwindigkeit zur Quadratwurzel der Summe der einzelnen'."\n".
                     'Störungen berechnet.\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, S. 19-22, hier S. 22.}'."\n".
                     'Wir haben \\term{g_{v}} schon zuvor als Proportionalitätskonstante eingeführt.'."\n",
-                      'Zuvor führt Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-h-ele-eff} zur Definition der nicht statistischen effektiven Wirkung \\term{_{r}p_{mas,abl}} der Zentralmasse:'."\n"))),
+                      'Zuvor führt Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-ele-eff} zur Definition der nicht statistischen effektiven Wirkung \\term{_{r}p_{mas,abl}} der Zentralmasse:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  m_{ele}  \mapsto  M  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{mas,abl}}  =  2 \cdot g_{\omega} \cdot \frac{ g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot M }{ r }  }',
-                                               label_name => 'OM:FrQFT:Quantengravitation:Equ-h-M-eff', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-h-M-eff}', label_incr => true),
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-M-eff', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-M-eff}', label_incr => true),
                       // #: See https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
                       //-- array( display => 'off', latex => '\require{enclose}  {  {_{r}v_{mas,abl,\enclose{horizontalstrike}{standabw}}}  \sim  {_{r}p_{mas,abl}}  }'),
                       //-- array( display => 'off', latex => '\require{enclose}  {  \Rightarrow  {_{r}v_{mas,abl,\enclose{horizontalstrike}{standabw}}}  =  g_{v} \cdot {_{r}p_{mas,abl}}  }'),
@@ -927,7 +927,7 @@
                       array( display => 'on',  latex => '{  {_{r}v_{mas,abl}}  =  \sqrt{ g_{v} \cdot {_{r}p_{mas,abl}} }  }',
                                                latex_if_visible => '{  \Leftrightarrow  {_{r}v_{mas,abl}}  =  \sqrt{ g_{v} \cdot {_{r}p_{mas,abl}} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}v_{mas,abl}}  =  \sqrt{ g_{v} \cdot 2 \cdot g_{\omega} \cdot \frac{ g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot M }{ r } }  }',
-                                               label_name => 'OM:FrQFT:Quantengravitation:Equ-v-abl', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-v-abl}', label_incr => true),
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-v-abl', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-v-abl}', label_incr => true),
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX',
@@ -946,8 +946,8 @@
                 'Lichtgeschwindigkeitsänderung im Gravitationsfeld', subline =>
                   'Gravitation durch die Wirkung der Elementarteilchen-Strukturen einer Masse')),
                   array( 'text', array( text => array(
-                    'Wenn nun \\hidden{die Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-h-M-eff} in }die Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-v-abl} \\hidden{und dies dann }in'."\n".
-                    'die Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-c-eff} eingesetzt wird, ergibt sich:'."\n"))),
+                    'Wenn nun \\hidden{die Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-M-eff} in }die Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-v-abl} \\hidden{und dies dann }in'."\n".
+                    'die Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-c-eff} eingesetzt wird, ergibt sich:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{  \Rightarrow  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1 - \frac{ \left( \sqrt{ g_{v} \cdot 2 \cdot g_{\omega} \cdot \frac{ g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot M }{ r } } \right)^{2} }{ {_{\lowZero}c}^{2} } \right)^{p}  }'),
@@ -955,16 +955,16 @@
                                                latex_if_visible => '{  \Leftrightarrow  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1 - 2 \cdot \frac{ g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot M }{ {_{\lowZero}c}^{2} \cdot r } \right)^{p}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Vergleichen wir unser Ergebnis mit der nachfolgenden Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-GraLGEinstein} für die Änderung der Lichtgeschwindigkeit'."\n".
+                    'Vergleichen wir unser Ergebnis mit der nachfolgenden Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein} für die Änderung der Lichtgeschwindigkeit'."\n".
                     'im Gravitationsfeld der Allgemeinen Relativitätstheorie in der äußeren Lösung der Schwarzschild-Metrik\\footnote{\\const{FrQFT_g_footnote_text_SchwarzschildMetrik}},'."\n".
                     'die eine einzelne zentrale Masse beschreibt, so ergibt sich für die Gravitationskonstante \\term{G}:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1-2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} \right)^{p}  }',
-                                               label_name => 'OM:FrQFT:Quantengravitation:Equ-GraLGEinstein', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-GraLGEinstein}', label_incr => true,
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein}', label_incr => true,
                                                footnote => '\\const{FrQFT_g_footnote_text_ARTLgFormel}'),
                       array( display => 'on',  latex => '{  \Rightarrow  G  =  g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} }  }',
-                                               label_name => 'OM:FrQFT:Quantengravitation:Equ-GraviKonstStruktur', label_text => '\\name{OM:FrQFT:Quantengravitation:Equ-GraviKonstStruktur}', label_incr => true,
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraviKonstStruktur', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraviKonstStruktur}', label_incr => true,
                                                footnote => 'Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 13.1 Ansatz zur quantitativen Formulierung der Lichtgeschwindigkeit im Gravitationspotenzial, S. 141-149, hier Formel 13.17, S. 145. Dort hat die Formel noch eine leicht andere Form.'),
                     ))),
                       
@@ -992,7 +992,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Die Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-GraLGEinstein} entspricht der in Experimenten beobachteten'."\n".
+                    'Die Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein} entspricht der in Experimenten beobachteten'."\n".
                     'Shapiro-Verzögerung\\footnote{\\const{FrQFT_g_footnote_text_ShapiroVerzoegerung}}'."\n".
                     'des Lichts im Gravitationsfeld, wenn wir die Längenkontraktion der Strukturen im Gravitationsfeld berücksichtigen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX', text =>
@@ -1002,7 +1002,7 @@
                   array( 'text', array( text => array(
                     'Die strukturelle Geometrie von Elementarteilchen verändert sich nach Giese in ihrer Ausdehnung in einem Gravitationsfeld in tangentialer und radialer Richtung zur Zentralmasse,'."\n".
                     'wenn \\term{w_{0}} ihre Ausdehnung ohne diese Verzerrung ist.'."\n".
-                    'Adaptiert auf Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-GraLGEinstein} ergibt sich:'."\n"))),
+                    'Adaptiert auf Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein} ergibt sich:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  _{r,p}w_{mas}  =  w_{\lowZero} \cdot \left( 1-2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} \right)^{p - \frac{1}{2}}  }',
@@ -1081,7 +1081,7 @@
                 'Die Struktur der Gravitationskonstanten', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Über die Formel \\jumpname{OM:FrQFT:Quantengravitation:Equ-GraviKonstStruktur} bekommen wir eine Idee der Struktur der Gravitationskonstanten,'."\n".
+                    'Über die Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraviKonstStruktur} bekommen wir eine Idee der Struktur der Gravitationskonstanten,'."\n".
                     'wobei die Werte von vier der fünf Konstanten noch'."\n".
                     'nicht bekannt sind.\\footnote[*Entwick]{\\color{*Entwick}{Eine genaue Herleitung der unbekannten Konstanten wird gesucht. Hinweise darauf sind erbeten.}}'."\n"))),
                       
@@ -1113,19 +1113,64 @@
                     'Die Beugung von Licht und die gravitative Anziehung von Elementarteilchen wird in den folgenden Abschnitten erklärt.'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:FrQFT:Quantengravitation:Lichtbeugung'),
+                      array(  jump_name => 'OM:FrQFT:Quantengravitation:Laengenkontraktion'),
                     )),
               )
           ); ?>
 
 
+		    	<!  • Längenkontraktion  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:FrQFT:Quantengravitation:Laengenkontraktion',
+              'Die Shapiro-Verzögerung zusammen mit einer gravitativen Längenkontraktion erzeugt die Raumzeitkrümmung', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung', type => 'back'),
+                    )),
+                      
+                  /* array( 'notice', array( Display => 'invis', text => array(
+                    '• XXX',
+                    ))), */
+                      
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Laengenkontraktion:XXX', text =>
+                                           
+                'XXX', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Laengenkontraktion:XXX', text =>
+                                           
+                'XXX', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Quantengravitation:Lichtbeugung'),
+                    )),
+              )
+          ); ?>
+        
+          
 		    	<!  • Lichtbeugung  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
             'OM:FrQFT:Quantengravitation:Lichtbeugung',
               'Eine lokal unterschiedliche Verlangsamung des Lichts erzeugt seine Beugung', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung', type => 'back'),
+                      array(  jump_name => 'OM:FrQFT:Quantengravitation:Laengenkontraktion', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'invis', text => array(
@@ -1277,7 +1322,7 @@
                     'Bei den oben beschriebenen Berechnungen zur \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{Lichtverlangsamung},'."\n".
                     '\\jump{OM:FrQFT:Quantengravitation:Lichtbeugung}{Lichtbeugung} und zum'."\n".
                     '\\jump{OM:FrQFT:Quantengravitation:Mechanismus-der-Gravitation}{Mechanismus der Gravitation} wurden Vereinfachungen vorgenommen.'."\n".
-                    'Diese betreffen nicht nur die \\jump{OM:FrQFT:Quantengravitation:VereinfModellGravirad:VereinfString}{vereinfachte Struktur des Leptonen-Strings},'."\n".
+                    'Diese betreffen nicht nur die \\jump{OM:FrQFT:Quantengravitation:VereinfModellQGravitation:VereinfString}{vereinfachte Struktur des Leptonen-Strings},'."\n".
                     'sondern auch die Rolle des Vakuums und seiner Energiedichte in Bezug auf die Gravitation.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:PhaenoDunkMat:XXX', text =>
                                            

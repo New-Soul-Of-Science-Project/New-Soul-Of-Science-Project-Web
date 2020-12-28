@@ -45,7 +45,7 @@
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
                     '\\bold{Virtuelle Photonen}',
-                    '• Im Falle der Wirkungsquanten (Transversalwellen) sind ihre abgestrahlten virtuellen Wirkungsquanten Longitudinalwellen (siehe \\italic{\\jumpname{OM:FrQFT:Quantengravitation:VereinfModellGravirad}}, \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung}). Photonen sind ja auch Transversalwellen und, so denke ich, analog dazu sind auch ihre abgestrahlten, rein elektromagnetischen virtuellen Photonen Longitudinalwellen.',
+                    '• Im Falle der Wirkungsquanten (Transversalwellen) sind ihre abgestrahlten virtuellen Wirkungsquanten Longitudinalwellen (siehe \\italic{\\jumpname{OM:FrQFT:Quantengravitation:VereinfModellQGravitation}}, \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung}). Photonen sind ja auch Transversalwellen und, so denke ich, analog dazu sind auch ihre abgestrahlten, rein elektromagnetischen virtuellen Photonen Longitudinalwellen.',
                     '• Im Leptonen-Modell haben wir es hingegen mit einer Mischung zu tun:',
                     '⋅ In ihm (siehe \\jumpname{OM:FrQFT:ElektroschwacheWW:Vortext:Ani-Lepton}) wird deutlich, dass seine einem Photon ähnlichen Strukturen eine Mischung aus Transversal- und Longitudinalwelle sind, die dazu auch noch in ihrer Größe pulsiert. So müssen auch ihre abgestrahlten virtuellen Photonen eine Mischung aus pulsierender Transversal- und Longitudinalwelle sein.',
                     '⋅ Diese Mischung sollte etwas mit dem Weinberg-Winkel zutun haben.',

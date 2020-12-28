@@ -90,7 +90,7 @@
                         'entstehen und dieser Anhäufung proportional sind, wird verständlich, dass beide Massen einander gleich sein müssen. \\\\'."\n".
                         'Die träge Masse entsteht aus der Zeit, die benötigt wird Veränderungen der Bewegung von den bei einer Kollision „angestoßenen“ Wirkungsquanten auf'."\n".
                         'den Rest der zum Elementarteilchen gehörenden Wirkungsquanten zu übertragen.'."\n".
-                        'Die schwere Masse hingegen entsteht aus den Störungswellen – den \\jump[][0000D0]{OM:FrQFT:Quantengravitation:VereinfModellGravirad}{virtuellen Wirkungsquanten} –'."\n".
+                        'Die schwere Masse hingegen entsteht aus den Störungswellen – den \\jump[][0000D0]{OM:FrQFT:Quantengravitation:VereinfModellQGravitation}{virtuellen Wirkungsquanten} –'."\n".
                         'die jedes Wirkungsquant eines Strings und aus dessen angehäufter Umgebung in den Raum aussendet.'."\n"),
                   array( 'normal',
                     'Dieses Bild wird weiter dadurch komplettiert, dass sich im Rahmen der Quanten-Fluss-Theorie das \\jump{OM:FrQFT:Dunkle-Materie:Mechanismus-des-Phaenomens-der-Dunklen-Materie}{Phänomen der Dunklen Materie als Higgs-Mechanismus} auf großen Skalen herausstellt.'."\n"),
