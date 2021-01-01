@@ -21,11 +21,15 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
-                    '(• Die Elapsonen haben ihre WW nur innerhalb ihres Strings, denn ein WQ kann nur das oder die benachbarten WQs beeinflussen.'."\n".
+                    '\\bold{Interessante Aspekte}',
+                    '• Die Materiewelle und die Einstein-de-Broglie-Beziehungen, siehe Wikipedia \\jump[https://de.wikipedia.org/wiki/Materiewelle]{}{Materiewelle}.',
+                    '\\bold{Strukturelle Analyse}',
+                    '• Die Elapsonen haben ihre WW nur innerhalb ihres Strings, denn ein WQ kann nur das oder die benachbarten WQs beeinflussen.'."\n".
                     'Bei den Leptonen und Hadronen ist dies anders: Weil diese sich nicht mit LG bewegen kann die Farbpolarisation und die elektroschwache Polarisation'."\n".
-                    'auf alle anderen Teile des Strings wirken.)',
-                    '(• Der Leptonen-String eines geladenen Teilchens erscheint punktförmig, weil sein elektromagnetisches Feld – oder sogar genauer sein elektroschwaches Feld – so erscheint, dass seine Quelle im Schwerpunkt des Strings liegt.)',
-                    '(• Nach dem Standardmodell der Teilchenphysik soll die Geschwindigkeit von Elektronen an ihrer Oberfläche nach ihrem magnetischen Drehmoment größer als die LG sein. (Vgl. YouTube. \\jump[https://www.youtube.com/watch?v=7TUIvg-1VuE][*Bearb]{}{Lesch & Gaßner - Spins, Nichts und das Higgsfeld} oder \\jump[https://www.youtube.com/watch?v=cbjqjFoa01Q][*Bearb]{}{Stringtheorien und Schleifenquantengravitation | Harald Lesch & Josef M. Gaßner}))',
+                    'auf alle anderen Teile des Strings wirken.',
+                    '• Der Leptonen-String eines geladenen Teilchens erscheint punktförmig, weil sein elektromagnetisches Feld – oder sogar genauer sein elektroschwaches Feld – so erscheint, dass seine Quelle im Schwerpunkt des Strings liegt.',
+                    '\\bold{Scheinbare Tabubrüche und vermeintliche Widersprüche zur heutigen Physik}',
+                    '• Nach dem Standardmodell der Teilchenphysik soll die Geschwindigkeit von Elektronen an ihrer Oberfläche nach ihrem magnetischen Drehmoment größer als die LG sein. (Vgl. YouTube. \\jump[https://www.youtube.com/watch?v=7TUIvg-1VuE][*Bearb]{}{Lesch & Gaßner - Spins, Nichts und das Higgsfeld} oder \\jump[https://www.youtube.com/watch?v=cbjqjFoa01Q][*Bearb]{}{Stringtheorien und Schleifenquantengravitation | Harald Lesch & Josef M. Gaßner})',
                     ))),
                       
                   array( 'normal',
