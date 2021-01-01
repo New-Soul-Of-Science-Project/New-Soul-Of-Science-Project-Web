@@ -824,6 +824,7 @@
                                                 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:Equ-BasGraLGEinstein' => array( headline_text => 'Bas.EleGra.5', headline_text_short => 'Bas.EleGra.5'),
                                                 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:Equ-FrequnezGravi' => array( headline_text => 'Bas.EleGra.13', headline_text_short => 'Bas.EleGra.13'),
                                                 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
+                                              'OM:FrQFT:Basisteilchenmodell:Dunkle-Materie' => array( headline_text => 'Dunkle Materie', headline_text_short => 'Dunkle Materie'),
                                               'OM:FrQFT:Basisteilchenmodell:Vakuum-und-virtuelle-Teilchen' => array( headline_text => 'Vakuum und virtuelle Teilchen', headline_text_short => 'Vakuum und virtuelle Teilchen'),
                                             ),
                                      ),

@@ -12,32 +12,21 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
-                    '• Das Basisteilchenmodell leitet die Einsteinsche Lichtformel nicht ganz korrekt her.',
-                    '• Das Basisteilchenmodell sagt eine Reduktion der de-Broglie-Frequenz der Elementarteilchen bei Annäherung an eine Masse vorher. Die Beobachtung im Pound-Rebka-Snider-Experiment ist aber eine Erhöhung der de-Broglie-Frequenz!',
                     '• Was wusste ich schon bevor ich das Modell kennen gelernt habe und was nicht?',
                     '– Meine Beschreibung des Zusammenhangs zwischen Frequenz und Zeit',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Das wunderbar einfache und kluge Basisteilchenmodell von Albrecht Giese beschriebt viele grundlegende Eigenschaften der Elementarteilchen.'."\n".
-                    'Die Quanten-Fluss-Theorie dringt weiter in die Tiefe und merzt Probleme aus, welche Gieses Modell (noch) hat.'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Das wunderbar einfache und kluge Basisteilchenmodell von Albrecht Giese beschreibt viele grundlegende Eigenschaften der Elementarteilchen.'."\n",
+                      'Eine seiner genialsten Erkenntnisse ist für mich der prinzipielle Mechanismus der Entstehung der Gravitation, den ich vom Ansatz her in'."\n".
+                    'mein Modell der \\italic{\\jump{OM:FrQFT:Quantengravitation}{Quantengravitation der Elementarteilchen}} von Giese übernommen habe.'."\n",
+                      'Sein Mechanismus ergänzt sich wunderbar mit den Eigenschaften meines Ansatzes und wird dadurch so verfeinert, dass eine korrekte'."\n".
+                    'Beschreibung der Gravitation im Sinne der akademischen Physik möglich wird.'."\n".
+                    'Und es wird auch ein Ansatz zur Beschreibung des \\italic{\\jump{OM:FrQFT:Dunkle-Materie}{Phänomens der Dunklen Materie}} als Energie-Gradient des Vakuums im Gravitationsfeld'."\n".
+                    'ermöglicht, der anders ist, als Albrecht Giese es sich in seinem Basisteilchenmodell für die \\jump{OM:FrQFT:Basisteilchenmodell:Dunkle-Materie}{Dunkle Materie} ausgemalt hat.'."\n",
+                      'Das Basisteilchenmodell kann leider nicht alle Eigenschaften der Elementarteilchen im Gravitationsfeld so beschreiben, wie sie beobachtet werden.'."\n".
+                    'Die ›fraktale Quanten-Fluss-Theorie‹ dringt hier durch ihren \\jump{OM:FrQFT:WasIstPhysik:Vortext:Djet-Neheh-Dualismus}{fraktalen Djet-Neheh-Dualismus}'."\n".
+                    'und durch ihr \\jump{*Fraktales-Existenzprinzip-Herlei}{fraktales Existenzprinzip} konsequent weiter in die Tiefe vor und überwindet Probleme, welche Gieses Modell aus Sicht der Beobachtungen der akademischen Physik (noch) hat.'."\n"))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Basisteilchenmodell:Gravitation'),
@@ -57,6 +46,10 @@
                       array(  jump_name => 'OM:FrQFT:Basisteilchenmodell', type => 'back'),
                     )),
                                             
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '• Dies ist im nachfolgenden Abschnitt \\italic{\\jumpname{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld}} schon aufgegriffen.',
+                    ))),
+                      
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n",
                       'XXX'."\n".
@@ -151,7 +144,9 @@
                 'Lichtgeschwindigkeitsänderung im Gravitationsfeld', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die Lichtgeschwindigkeit \\term{c_{0}} der Basisteilchen verändert sich nach Giese in einem Gravitationsfeld wie folgt:'."\n"))),
+                    'Nach dem Basisteilchenmodell reduziert sich die Lichtgeschwindigkeit im dreidimensionalen Raum im Gravitationsfeld'."\n".
+                    'durch von den Basisteilchen ausgesandte Störungswellen'."\n".
+                    'von der Lichtgeschwindigkeitskonstanten \\term{c_{0}} auf die variable Lichtgeschwindigkeit \\term{_{r,p}c_{eff}} wie folgt:\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}.}'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas.EleGra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  _{r,p}c_{eff}  =  c_{\lowZero} \cdot \left( 1-\frac{g \cdot N}{c_{0}^{2} \cdot r} \right)^{p}  }',
@@ -159,23 +154,27 @@
                                                footnote => 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, Speed Reduction in Detail, S. 20-22, hier Formel C.7, S. 22. Die Konstante \\term{c} habe ich wegen der Eindeutigkeit in \\term{c_{0}} umbenannt.'),
                     ))),
                   array( 'text', array( text => array(
-                    'Diese aus der Allgemeinen Relativitätstheorie bekannte und als Shapiro-Verzögerung auch beobachtete Änderung der Lichtgeschwindigkeit'."\n".
-                    'im dreidimensionalen Raum, wird im Rahmen der Quanten-Fluss-Theorie nach dem prinzipiellen Ansatz von Giese sogar ganz exakt hergeleitet (siehe \\italic{\\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung}}).'."\n".
-                    'Während das Basisteilchenmodell der Shapiro-Verzögerung „nur“ strukturell sehr nahe kommt,'."\n".
-                    'wobei es nach Formel \\jumpname{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:Equ-BasGraLGEinstein} die gravitative Masse durch die Anzahl \\term{N} der Basisteilchen beziehungsweise durch die doppelte Anzahl ihrer Elementarteilchen ausdrückt.'."\n"))),
+                    'Das Basisteilchenmodell kommt der \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein}{Beschreibung der beobachteten Verzögerung} des Lichts strukturell immerhin sehr nahe,'."\n".
+                    'wobei es nach Formel \\jumpname{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:Equ-BasGraLGEinstein}'."\n".
+                    'die gravitative Masse durch die Anzahl \\term{N} der Basisteilchen beziehungsweise durch die doppelte Anzahl ihrer Elementarteilchen ausdrückt.'."\n".
+                    'Klein \\term{g} entspricht der an diesen neuen Zusammenhang angepassten Gravitationskonstante groß \\term{G}.'."\n",
+                      'Die aus der Allgemeinen Relativitätstheorie bekannte und als Shapiro-Verzögerung auch beobachtete Änderung der Lichtgeschwindigkeit'."\n".
+                    'im dreidimensionalen Raum, wird im Rahmen der Quanten-Fluss-Theorie nach dem prinzipiellen Ansatz von Giese sogar ganz exakt hergeleitet (siehe \\italic{\\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung}}).'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Für seine Idee zum prinzipiellen Ansatz der Herleitung der Lichtverlangsamung bin ich Albrecht Giese sehr dankbar!'."\n".
                         'Ich hatte schon einige Jahre darüber nachgedacht, wie diese Herleitung wohl aussehen müsste, war dabei aber nicht sehr weit gekommen.'."\n".
                         'Durch ihn vielen mir die Groschen und in Kombination mit der Struktur der Quanten-Fluss-Theorie wurde sogar eine ganz korrekte Herleitung im Sinne der akademischen Physik möglich. '."\n"))),
                       
+                  array( 'text', array( text => array(
+                    'Diese Verzögerung gilt auch für die beiden Basisteilchen von Giese, die seine Elementarteilchen bilden, was bei der folgenden Berechnung der de-Broglie-Frequenz nach Giese relevant ist.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:XXX', text =>
                                            
                 'Geometrieänderung im Gravitationsfeld', subline =>
                   '')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  /* array( 'notice', array( Display => 'invis', text => array(
                     '• Diese Herleitung findet sich nun extrem ähnlich in \\jumpname{OM:FrQFT:Quantengravitation:Laengenkontraktion}, also hier anpassen.',
-                    ))),
+                    ))), */
                   array( 'text', array( text => array(
                     'Die strukturelle Geometrie von Elementarteilchen verändert sich nach Giese in ihrer Ausdehnung in einem Gravitationsfeld in tangentialer und radialer Richtung zur Zentralmasse,'."\n".
                     'wenn \\term{w_{0}} ohne Verzerrung ist:'."\n"))),
@@ -188,7 +187,8 @@
                     'Diese geometrische Verzerrung der Struktur von Elementarteilchen im Gravitationsfeld ergibt sich nach Giese, weil sich mit der Veränderung'."\n".
                     'der Lichtgeschwindigkeit auch die Ausbreitungsgeschwindigkeit der Wechselwirkungsteilchen ändert, die die beiden Basisteilchen aneinander binden.'."\n".
                     'Dieser der Lorentzkontraktion äquivalente Effekt im Zusammenhang mit Bindungsfeldern ist auch als Heaviside-Ellipsoid bekannt.\\footnote{\\const{FrQFT_g_footnote_text_LorentzKontrFelder}}'."\n",
-                      'Für die Frequenzen ergibt sich dann, wenn \\term{_{r}S} zur Substitution genutzt wird:'."\n"))),
+                      'Für jede der beiden Hauptachsen \\term{H} des Ellipsoiden könnte sich theoretisch eine andere Frequenz ergeben, wie schon gesagt.'."\n".
+                    'Daher berechnen wir die beiden Frequenzen jeweils nach der Richtung \\term{p} wie folgt, wenn \\term{_{r}S} zur Substitution genutzt wird:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas.EleGra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  _{r}S  =  \left( 1-\frac{g \cdot N}{c_{0}^{2} \cdot r} \right)  }'),
@@ -202,18 +202,21 @@
                     'Wie wir sehen, fällt die Richtung \\term{p} weg.'."\n".
                     'Die beiden Effekte, die richtungsabhängige variable Lichtgeschwindigkeit und die richtungsabhängige Veränderung der Geometrie, heben sich auf,'."\n".
                     'wie oben schon erwähnt.'."\n",
-                      'So können wir die Formel nun doch problemlos für den Umfang und die korrekte Elementarteilchen-Frequenz übernehmen und entsprechend abwandeln:'."\n"))),
+                      'So können wir die Formel nun doch problemlos für den Umfang und Gieses de-Broglie-Frequenz übernehmen und entsprechend abwandeln:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas.EleGra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  _{r}f  =  \frac{ c_{\lowZero} }{ u_{\lowZero} } \cdot \sqrt{1-\frac{g \cdot N}{c_{0}^{2} \cdot r}}  }',
                                                label_name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:Equ-FrequnezGravi', label_text => '\\name{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:Equ-FrequnezGravi}', label_incr => true),
                     ))),
+                  array( 'text', array( text => array(
+                    'Die Berechnung dieser geometrischen Verzerrung und der Spin-Rotation, die bei Giese der de-Broglie-Frequenz entspricht, führe ich auch'."\n".
+                    'im Rahmen der Quanten-Fluss-Theorie im Abschnitt \\italic{\\jumpname{OM:FrQFT:Quantengravitation:Laengenkontraktion}} durch.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:XXX', text =>
                                            
                 'De-Broglie-Frequenz-Änderung im Gravitationsfeld', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Wie verhält sich die so definierte Frequenz nun bei steigender Gravitation?'."\n".
+                    'Wie verhält sich die so von Giese definierte de-Broglie-Frequenz nun bei steigender Gravitation?'."\n".
                     'Um dies deutlich zu machen, ergänze ich sowohl die Entfernung zur Zentralmasse als auch die Frequenz mit den Differenzen \\term{Δr} und \\term{Δ_{r}f}:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas.EleGra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -224,7 +227,7 @@
                     'Der Nenner des Bruchs, indem sich die Distanz \\term{r + Δr} befindet wird sodann ebenfalls kleiner, was den Bruch vergrößert.'."\n".
                     'Die Differenz unter der Wurzel wird nun kleiner, weil mehr von der Eins abgezogen wird.'."\n".
                     'Eine Wurzel von etwas kleinerem ist ebenfalls kleiner, was den gesamten rechten Term der Gleichung verkleinert.'."\n".
-                    'Bei festem \\term{_{r}f} muss \\term{Δ_{r}f} grob gesprochen negativ sein:'."\n"))),
+                    'Bei festem \\term{_{r}f} muss \\term{Δ_{r}f} dann negativ sein:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas.EleGra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Delta r  <  0  }'),
@@ -232,18 +235,25 @@
                     ))),
                   array( 'text', array( text => array(
                     'Die gesamte Frequenz \\term{_{r}f} in Formel \\jumpname{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:Equ-FrequnezGravi}'."\n".
-                    'wird bei zunehmender Gravitation, also bei kleiner werdendem Abstand zur Zentralmasse \\term{r}, auch immer kleiner.'."\n",
-                      'Die de-Broglie-Frequenz \\term{_{r}f} eines Elementarteilchens in Gieses Basisteilchenmodell nimmt also bei zunehmender Gravitation ab.'."\n"))),
+                    'wird bei zunehmender Gravitation, also bei kleiner werdendem Abstand zur Zentralmasse \\term{r}, auch kleiner.'."\n".
+                    'Die de-Broglie-Frequenz \\term{_{r}f} eines Elementarteilchens in Gieses Basisteilchenmodell nimmt also bei zunehmender Gravitation ab.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:XXX', text =>
                                            
                 'Widerspruch des Basisteilchenmodells zur experimentellen Beobachtung', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Qualitativ können wir sagen, dass im Pound-Rebka-Snider-Experiment\\footnote[*Bearb]{\\const{FrQFT_g_footnote_text_PoundRebka}}'."\n".
-                    'bei Zunahme der Gravitation, im Gegensatz dazu, eine Zunahme der de-Broglie-Frequenz beobachtet wird.'."\n",
-                      'Das Basisteilchenmodell widerspricht in diesem Punkt den experimentellen Beobachtungen.'."\n".
-                    'Denn nach ihm entspricht die de-Broglie-Frequenz der vorstehend berechneten Spin-Rotation \\term{_{r}f},'."\n".
-                    'die bei steigender Gravitation, wie gerade gezeigt, abnimmt und nicht wie experimentell beobachtet zunimmt.\\footnote{\\const{FrQFT_g_footnote_text_BasTModDeBroglieFreq}}'."\n"))),
+                    'bei Zunahme der Gravitation, im Gegensatz zum Basisteilchenmodell, eine Zunahme der de-Broglie-Frequenz beobachtet wird.'."\n",
+                      'Das Basisteilchenmodell widerspricht in diesem Punkt also den experimentellen Beobachtungen.'."\n"))),
+                    // 'Denn nach ihm entspricht die de-Broglie-Frequenz der vorstehend berechneten Spin-Rotation \\term{_{r}f},'."\n".
+                    // 'die bei steigender Gravitation, wie gerade gezeigt, abnimmt und nicht wie experimentell beobachtet zunimmt.\\footnote{\\const{FrQFT_g_footnote_text_BasTModDeBroglieFreq}}'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:XXX', text =>
+                                           
+                'Kein Widerspruch in der fraktalen Quanten-Fluss-Theorie', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Die Quanten-Fluss-Theorie besitzt in dieser Beziehung eine andere Feinstruktur und ist daher, trotz der Ähnlichkeit beider Theorien,'."\n".
+                    'in der Lage, den Beobachtungen zu entsprechen.'."\n"))),
                       
                   // array( 'youtube',
                   //   array_merge( $FrQFT_g_youtube_ary_Lepton, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton'))),
@@ -252,17 +262,40 @@
                                                          text => 'Ein Wirkungsquanten-String eines hypothetischen, geladenen Leptons; ein Elektron oder eines seiner Verwandten.'."\n".
                                                                  'Die Wirkungsquanten sind als rote Kugeln dargestellt.'))),
                       
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:XXX', text =>
-                                           
-                'Kein Widerspruch in der fraktalen Quanten-Fluss-Theorie', subline =>
-                  '')),
                   array( 'text', array( text => array(
-                    'Die Quanten-Fluss-Theorie besitzt in dieser Beziehung eine andere Feinstruktur und ist daher, trotz der Ähnlichkeit beider Theorien,'."\n".
-                    'in der Lage, den Beobachtungen zu entsprechen.'."\n",
-                      'Dies ist möglich, weil in der Quanten-Fluss-Theorie die de-Broglie-Frequenz der Elementarteilchen nicht der Rotation des Haupt-Spins entspricht, wie im Basisteilchenmodell,'."\n".
+                    'Dies ist möglich, weil in der Quanten-Fluss-Theorie die de-Broglie-Frequenz der Elementarteilchen nicht der Rotation des Haupt-Spins entspricht, wie im Basisteilchenmodell,'."\n".
                     'sondern der inneren Rotation der Wirkungsquanten \\color{*Bearb}{(Verweis auf die noch einzupflegende Herleitung der Leptonen-Struktur)}.'."\n".
-                    'In der \\jumpname{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:Ani-Lepton} entspricht die de-Broglie-Frequenz der Rotation'."\n".
+                    'Und die innere Rotation der Wirkungsquanten \\jump{OM:FrQFT:ZeitAlterungFrequenz:Frequenz}{erhöht ihre Frequenz bei steigender Gravitation}, wie im Pound-Rebka-Snider-Experiment beobachtet.'."\n".
+                    'In der \\jumpname{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:Ani-Lepton} sehen wir die de-Broglie-Frequenz in Form der Rotation'."\n".
                     'der rot eingezeichneten Wirkungsquanten um die grüne Lichtbahn.'."\n"))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Basisteilchenmodell:Dunkle-Materie'),
+                    )),
+              )
+          ); ?>
+
+
+		    	<!  • Dunkle Materie  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:FrQFT:Basisteilchenmodell:Dunkle-Materie',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld', type => 'back'),
+                    )),
+                      
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{In Arbeit …}'."\n",
+                      'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Basisteilchenmodell:Vakuum-und-virtuelle-Teilchen'),
@@ -277,7 +310,7 @@
               'Das Basisteilchenmodell kennt nicht das Vakuum mit virtuellen Teilchen', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld', type => 'back'),
+                      array(  jump_name => 'OM:FrQFT:Basisteilchenmodell:Dunkle-Materie', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
