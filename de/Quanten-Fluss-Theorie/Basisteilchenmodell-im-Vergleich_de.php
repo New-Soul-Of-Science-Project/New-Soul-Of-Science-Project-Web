@@ -132,12 +132,12 @@
                   array( 'text', array( text => array(
                     'Dabei ist \\term{r} der Abstand vom Zentrum einer Zentralmasse.'."\n".
                     'Die Variable \\term{p} besitzt im Fall tangentialer Bewegungsrichtung des Basisteilchens zur Zentralmasse den Wert \\term{p = ½} und im Fall radialer Richtung den Wert \\term{p = 1}.'."\n",
-                      'Die beiden unterschiedlichen Halbachsen führen zu zwei Frequenzen \\term{_{r,p}f_{H}}; eine je Richtung \\term{p}.'."\n".
+                      'Die beiden unterschiedlichen Halbachsen führen zu zwei möglichen de-Broglie-Frequenzen \\term{_{r,p}f_{spin,H}}; eine je Richtung \\term{p}.'."\n".
                     'Für die Frequenz \\term{f} gilt in Bezug auf die Zeit \\term{t} erst einmal ganz allgemein:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas.EleGra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f  =  \frac{1}{t}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  _{r,p}f_{H}  =  \frac{ _{r,p}c_{eff} }{ _{r,p}w_{red} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  _{r,p}f_{spin,H}  =  \frac{ _{r,p}c_{eff} }{ _{r,p}w_{red} }  }'),
                     ))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:XXX', text =>
                                            
@@ -192,11 +192,11 @@
                   array( 'equations',
                     array( equ_text_std => 'Bas.EleGra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  _{r}S  =  \left( 1-\frac{g \cdot N}{c_{0}^{2} \cdot r} \right)  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  _{r,p}f_{H}  =  \frac{ c_{\lowZero} \cdot {_{r}S^{p}} }{ w_{\lowZero} \cdot {_{r}S^{p - \frac{1}{2}}} }  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  _{r,p}f_{H}  =  \frac{ c_{\lowZero} }{ w_{\lowZero} } \cdot {_{r}S^{p - \left( p - \frac{1}{2} \right) }}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  _{r,p}f_{H}  =  \frac{ c_{\lowZero} }{ w_{\lowZero} } \cdot {_{r}S^{\frac{1}{2}}}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  _{r,p}f_{H}  =  \frac{ c_{\lowZero} }{ w_{\lowZero} } \cdot \left( 1-\frac{g \cdot N}{c_{0}^{2} \cdot r} \right)^{\frac{1}{2}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  _{r,p}f_{H}  =  \frac{ c_{\lowZero} }{ w_{\lowZero} } \cdot \sqrt{1-\frac{g \cdot N}{c_{0}^{2} \cdot r}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  _{r,p}f_{spin,H}  =  \frac{ c_{\lowZero} \cdot {_{r}S^{p}} }{ w_{\lowZero} \cdot {_{r}S^{p - \frac{1}{2}}} }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  _{r,p}f_{spin,H}  =  \frac{ c_{\lowZero} }{ w_{\lowZero} } \cdot {_{r}S^{p - \left( p - \frac{1}{2} \right) }}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  _{r,p}f_{spin,H}  =  \frac{ c_{\lowZero} }{ w_{\lowZero} } \cdot {_{r}S^{\frac{1}{2}}}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  _{r,p}f_{spin,H}  =  \frac{ c_{\lowZero} }{ w_{\lowZero} } \cdot \left( 1-\frac{g \cdot N}{c_{0}^{2} \cdot r} \right)^{\frac{1}{2}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  _{r,p}f_{spin,H}  =  \frac{ c_{\lowZero} }{ w_{\lowZero} } \cdot \sqrt{1-\frac{g \cdot N}{c_{0}^{2} \cdot r}}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wie wir sehen, fällt die Richtung \\term{p} weg.'."\n".

@@ -124,7 +124,7 @@
                   array( 'text', array( text => array(
                     'Die nachfolgend in erster Näherung hergeleitete ortsübliche Lichtgeschwindigkeit im dreidimensionalen Raum des äußeren Gravitationsfelds einer homogenen Massenkugel'."\n".
                     'entspricht genau der äußeren Schwarzschild-Metrik\\footnote{\\const{FrQFT_g_footnote_text_SchwarzschildMetrik}} als Lösung der Allgemeinen Relativitätstheorie.'."\n",
-                      'Der verwendete Ansatz zur quantitativen Beschreibung der Quantengravitation stammt aus dem Basisteilchenmodell\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}.}'."\n".
+                      'Der verwendete Ansatz zur quantitativen Beschreibung der Quantengravitation stammt aus dem \\jump{OM:FrQFT:Basisteilchenmodell}{Basisteilchenmodell}\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}.}'."\n".
                     'von Albrecht Giese und verfeinert diesen mit Hilfe der Elementarteilchen-Struktur der Quanten-Fluss-Theorie.'."\n",
                       'Im Zentrum von Gieses Überlegung steht die Idee, dass ein Elementarteilchen, welches eine innere Struktur hat und aus rotierenden, lichtähnlichen Basisteilchen'."\n".
                     'aufgebaut ist, \\jump{OM:FrQFT:Quantengravitation:VereinfModellQGravitation}{Störungswellen} in seine Umgebung aussendet.'."\n".
