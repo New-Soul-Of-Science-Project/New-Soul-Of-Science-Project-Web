@@ -1059,17 +1059,17 @@
                       'Die Art der Längenkontraktion im Gravitationsfeld der Quanten-Fluss-Theorie ergibt sich dazu plausibel'."\n".
                     'aus Gieses Herleitung dieser gravitativen Längenkontraktion.'."\n".
                     'Der von ihm angeführte Mechanismus ist im Grunde der gleiche, wie der der Längen- oder Lorentzkontraktion von im Raum bewegter Materie'."\n".
-                    'und entspricht so der Entstehung eines Heaviside-Ellipsoiden\\footnote{\\const{FrQFT_g_footnote_text_LorentzKontrFelder}}.\\footnote{\\const{FrQFT_g_footnote_text_BasisteilchenMGravityLKMechanis}}'."\n",
+                    'und entspricht so der Entstehung eines Heaviside-Ellipsoiden\\footnote{\\const{FrQFT_g_footnote_text_LorentzKontrFelder}}.'."\n",
                       'Demnach ist für die Entstehung eines Heaviside-Ellipsoiden die anisotrope Ausbreitung der seine Struktur bestimmenden Wechselwirkungsteilchen'."\n".
                     'ausschlaggebend.'."\n".
-                    'Genauer gesagt ist es ihre in einer Raumrichtung abweichende Geschwindigkeit im Verhältnis zu den Geschwindigkeiten der anderen beiden Raumrichtungen, relativ zum Schwerpunkt des Elementarteilchens.'."\n"))),
+                    'Genauer gesagt ist es ihre in einer Raumrichtung abweichende Geschwindigkeit im Verhältnis zu den Geschwindigkeiten der anderen beiden Raumrichtungen, relativ zum Schwerpunkt des Elementarteilchens.\\footnote{Vgl. \\cite{Giese:RelaContra2009}.}'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX', text =>
                                            
                 'Längenkontraktion von Elementarteilchen im Gravitationsfeld der Quantengravitation', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Die strukturelle Geometrie von Elementarteilchen verändert sich nach Giese in ihrer Ausdehnung in einem Gravitationsfeld in tangentialer und radialer Richtung zur Zentralmasse,'."\n".
-                    'wenn \\term{w_{0}} ihre Ausdehnung ohne diese Verzerrung ist.'."\n".
+                    'wenn \\term{w_{0}} ihre Ausdehnung ohne diese Verzerrung ist.\\footnote{\\const{FrQFT_g_footnote_text_BasisteilchenMGravityLKMechanis}}'."\n".
                     'Adaptiert auf Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein} ergibt sich:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -1078,22 +1078,22 @@
                     ))),
                   array( 'text', array( text => array(
                     'Wobei wir, wie oben schon erläutert, für die tangentiale Komponente relativ zur Zentralmasse \\term{p = ½} und für die radiale Komponente \\term{p = 1} setzen.'."\n".
-                    'So, dass die tangentiale Komponente, wegen des Exponenten \\term{exp} mit \\term{exp = p – ½ = 0}, unverändert bliebt und nur die radiale Komponente, wegen des Exponenten \\term{exp} mit \\term{exp = p – ½ = ½}, ein Veränderung erfährt.'."\n",
+                    'So, dass die tangentiale Komponente, wegen des Exponenten \\term{exp} mit \\term{exp = p – ½ = 0}, unverändert bleibt und nur die radiale Komponente, wegen des Exponenten \\term{exp} mit \\term{exp = p – ½ = ½}, eine Veränderung erfährt.'."\n",
                       'Diese geometrische Verzerrung der Struktur von Elementarteilchen im Gravitationsfeld ergibt sich nach Giese, weil sich mit der Veränderung'."\n".
                     'der Lichtgeschwindigkeit auch die Ausbreitungsgeschwindigkeit der Wechselwirkungsteilchen ändert, die die Wirkungsquanten im String aneinander binden.'."\n".
                     'Dieser der Lorentzkontraktion äquivalente Effekt im Zusammenhang mit Bindungsfeldern ist, wie schon gesagt, auch als Heaviside-Ellipsoid bekannt.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Laengenkontraktion:XXX', text =>
                                            
-                'Elementarteilchen-Rotationsfrequenz gebietet die Längenkontraktion', subline =>
+                'Elementarteilchen-Spin-Frequenz gebietet die Längenkontraktion', subline =>
                   '')),
                   array( 'notice', array( Display => 'invis', text => array(
                     '• Diese Herleitung findet sich nun extrem ähnlich in \\jumpname{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld}, also dort anpassen.',
                     ))),
                   array( 'text', array( text => array(
-                    'Die innere Logik der Elementarteilchen-Struktur gebietet bei anisotroper Lichtgeschwindigkeit eine entsprechende anisotrope Verzerrung seiner Struktur.'."\n".
-                    'Denn die Möglichkeit der Rotation der Elementarteilchen-Struktur – im Sinne der Lichtuhr Einstens, also des äußeren Elementarteilchen-Spins – in jeder Raumrichtung bedingt, dass die lichtähnlichen Teilstrukturen'."\n".
+                    'Die innere Logik der Elementarteilchen-Struktur gebietet bei anisotroper, je Richtung unterschiedlicher Lichtgeschwindigkeit eine entsprechende anisotrope Verzerrung seiner Struktur.'."\n".
+                    'Denn die Möglichkeit der Spin-Rotation der Elementarteilchen-Struktur – im Sinne der Lichtuhr Einstens, also des äußeren Haupt-Spins des Elementarteilchens – in jeder Raumrichtung bedingt, dass die lichtähnlichen Teilstrukturen'."\n".
                     'des \\jump{OM:FrQFT:Elementarteilchen}{Elementarteilchen-Modells} in Bezug auf jede Rotation in jeder denkbaren Raumrichtung mit der gleichen Frequenz rotieren (siehe \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton}).'."\n",
-                      'Um zu zeigen, dass sich die anisotrope Lichtgeschwindigkeit und die anisotrope Strukturverzerrung bezüglich der äußeren Rotationsfrequenz des Spins aufheben, möchte ich die reine Bewegung'."\n".
+                      'Um zu zeigen, dass sich die anisotrope Lichtgeschwindigkeit und die anisotrope Strukturverzerrung bezüglich der Rotationsfrequenz des Spins aufheben, möchte ich die reine Bewegung'."\n".
                     'und deren Frequenz entlang der beiden Halbachsen des Heaviside-Ellipsoiden eines Elementarteilchens betrachten.'."\n".
                     'Die Bewegung auf ihrem Weg \\term{_{r,p}w_{mas}} mit der Geschwindigkeit \\term{_{r,p}c_{mas}}:'."\n"))),
                   array( 'equations',
@@ -1109,7 +1109,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  _{r,p}f_{spin,H}  =  \frac{ _{r,p}c_{mas} }{ _{r,p}w_{mas} }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Für die Frequenzen ergibt sich dann, wenn \\term{_{r}S} zur Substitution genutzt wird:'."\n"))),
+                    'Für diese Frequenzen ergibt sich dann, wenn \\term{_{r}S} zur Substitution genutzt wird:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  _{r}S  =  \left( 1 - 2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} \right)  }'),
@@ -1128,6 +1128,20 @@
                     array( equ_text_std => 'QGra.LK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  _{r}f_{spin}  =  \frac{ {_{\lowZero}c} }{ u_{\lowZero} } \cdot \sqrt{ 1 - 2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} }  }'),
                     ))),
+                  array( 'text', array( text => array(
+                    'Die vorstehende Rechnung führe ich im Abschnitt \\italic{\\jumpname{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld}}'."\n".
+                    'auch für die etwas abweichenden Formeln des \\jump{OM:FrQFT:Basisteilchenmodell}{Basisteilchenmodells} durch.'."\n".
+                    'Da das Basisteilchenmodell, anders als die Quanten-Fluss-Theorie und die akademische Physik, nicht zwischen der Elementarteilchen-Spin-Frequenz'."\n".
+                    'und der de-Broglie-Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}} der Elementarteilchen unterscheidet, sondern sogar behauptet, beide wären das Gleiche, wird'."\n".
+                    'dort sichtbar, dass das Basisteilchenmodell die de-Broglie-Frequenz im Widerspruch zu den Beobachtungen beschreibt.'."\n",
+                      'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
                   array( 'text', array( text => array(
                     'Dieses Ergebnis können wir nutzen, um im Folgenden die Lichtgeschwindigkeitsänderung isotrop, also Richtungsunabhängig, zu beschreiben.'."\n",
                       '\\color{*Bearb}{Im Basisteilchenmodell Gieses beschreibt eine Formel dieser Art die de-Broglie-Frequenz der Elementarteilchen, was den \\jump{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld}{experimentellen Beobachtungen widerspricht}.'."\n".
