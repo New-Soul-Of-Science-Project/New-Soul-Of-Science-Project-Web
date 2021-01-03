@@ -129,18 +129,20 @@
             'OM:FrQFT:Lepton:Elektrische-Ladung',
               'Variierende Dichten der Wirkungsquanten auf dem Leptonen-String erzeugen elektrische Felder', 'Sc_f_Paragraph',
                 array(
+                      
                   /*array( 'figure',
                     array( fig_file_name => 'Lepton_geladen_v09', fig_alt_description => 'Elektrisch geladenes Lepton', width => '700px', height => '374px', name => 'OM:FrQFT:Lepton:Elektrisch-geladenes-Lepton',
                            text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n_{phase} = n_{wel} / n_{polwel} = 6/1 = 6}.'."\n".
                                    'Die Wirkungsquanten eines Wirkungsquanten-Strings mit wechselnder Wirkungsquanten-Dichte bewegen sich auf einer doppelt geschachtelten, helixförmigen'."\n".
                                    'Spiralbahn um ein gemeinsames Rotationszentrum.'."\n".
-                                   'In der gezeigten Struktur blinkt das Lepton mit der De-Broglie-Frequenz in einem Wechsel zwischen einer leicht positiven'."\n".
+                                   'In der gezeigten Struktur blinkt das Lepton mit der de-Broglie-Frequenz in einem Wechsel zwischen einer leicht positiven'."\n".
                                    'und einer stärker negativen Polarisation und damit elektrischen Ladung.'."\n".
                                    'Aus weitem Blickwinkel erscheint das Lepton im Mittel vornehmlich elektrisch negativ geladen, während von nahem die differenzierte'."\n".
                                    'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
                                    'Der Normradius \\term{r_{0}} ist dabei die Bezugseinheit mit \\term{r_{0} = ℏ / (m_{lep} ⋅ c_{0})}.')),*/
                   array( 'figure',
                     array_merge( $FrQFT_g_figure_ary_LeptonELadung, array( name => 'OM:FrQFT:Lepton:Elektrisch-geladenes-Lepton'))),
+                      
                   array( 'text', array( text => array(
                     'Die elektrische Ladung eines Leptons wird durch die unterschiedliche Dichte der Wirkungsquanten auf dem Wirkungsquanten-String und ihre'."\n".
                     'asymmetrische Verteilung und Bewegung im Raum erzeugt (siehe \\jumpname{OM:FrQFT:Lepton:Vortext:Ani-Lepton} und \\jumpname{OM:FrQFT:Lepton:Elektrisch-geladenes-Lepton}).'."\n".
@@ -445,18 +447,20 @@
             'OM:FrQFT:Lepton:Neutrinos',
               'Das neue Modell offenbart, dass sie sich von ihren Antiteilchen unterscheiden', 'Sc_f_Paragraph',
                 array(
+                      
                   /*array( 'figure',
                     array( fig_file_name => 'Lepton_neutral_v09', fig_alt_description => 'Elektrisch neutrales Lepton', width => '700px', height => '292px', name => 'OM:FrQFT:Lepton:Elektrisch-neutrales-Lepton',
                            text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n_{phase} = n_{wel} / n_{polwel} = 12/2 = 6}.'."\n".
                                    'Die Wirkungsquanten eines Wirkungsquanten-Strings mit wechselnder Wirkungsquanten-Dichte bewegen sich auf einer doppelt geschachtelten, helixförmigen'."\n".
                                    'Spiralbahn um ein gemeinsames Rotationszentrum.'."\n".
-                                   'In der gezeigten Struktur blinkt das Lepton mit der De-Broglie-Frequenz in einem Wechsel zwischen einer positiven'."\n".
+                                   'In der gezeigten Struktur blinkt das Lepton mit der de-Broglie-Frequenz in einem Wechsel zwischen einer positiven'."\n".
                                    'und einer gleich großen negativen Polarisation und ist damit ohne elektrische Ladung.'."\n".
                                    'Aus weitem Blickwinkel erscheint das Lepton im Mittel vornehmlich elektrisch neutral, während von nahem die differenzierte'."\n".
                                    'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
                                    'Der Normradius \\term{r_{0}} ist dabei die Bezugseinheit mit \\term{r_{0} = ℏ / (m_{lep} ⋅ c_{0})}.')),*/
                   array( 'figure',
                     array_merge( $FrQFT_g_figure_ary_LeptonENeutral, array( name => 'OM:FrQFT:Lepton:Elektrisch-neutrales-Lepton'))),
+                      
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{Einen Film erstellen …}'."\n"))),
                   array( 'text', array( text => array(

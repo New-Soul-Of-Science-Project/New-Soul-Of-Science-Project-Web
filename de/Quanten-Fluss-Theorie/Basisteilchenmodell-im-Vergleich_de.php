@@ -17,14 +17,35 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Das wunderbar einfache und kluge Basisteilchenmodell von Albrecht Giese beschreibt viele grundlegende Eigenschaften der Elementarteilchen.'."\n",
-                      'Eine seiner genialsten Erkenntnisse ist für mich der prinzipielle Mechanismus der Entstehung der Gravitation, den ich vom Ansatz her in'."\n".
+                    'Das wunderbar einfache und kluge Basisteilchenmodell von Albrecht Giese beschreibt viele grundlegende Eigenschaften der Elementarteilchen.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Laengenkontraktion:XXX', text =>
+                                           
+                'Mechanismus der Entstehung der Gravitation', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Eine seiner genialsten Erkenntnisse ist für mich der prinzipielle Mechanismus der Entstehung der Gravitation, den ich vom Ansatz her in'."\n".
                     'mein Modell der \\italic{\\jump{OM:FrQFT:Quantengravitation}{Quantengravitation der Elementarteilchen}} von Giese übernommen habe.'."\n",
                       'Sein Mechanismus ergänzt sich wunderbar mit den Eigenschaften meines Ansatzes und wird dadurch so verfeinert, dass eine korrekte'."\n".
                     'Beschreibung der Gravitation im Sinne der akademischen Physik möglich wird.'."\n".
                     'Und es wird auch ein Ansatz zur Beschreibung des \\italic{\\jump{OM:FrQFT:Dunkle-Materie}{Phänomens der Dunklen Materie}} als Energie-Gradient des Vakuums im Gravitationsfeld'."\n".
-                    'ermöglicht, der anders ist, als Albrecht Giese es sich in seinem Basisteilchenmodell für die \\jump{OM:FrQFT:Basisteilchenmodell:Dunkle-Materie}{Dunkle Materie} ausgemalt hat.'."\n",
-                      'Das Basisteilchenmodell kann leider nicht alle Eigenschaften der Elementarteilchen im Gravitationsfeld so beschreiben, wie sie beobachtet werden.'."\n".
+                    'ermöglicht, der anders ist, als Albrecht Giese es sich in seinem Basisteilchenmodell für die \\jump{OM:FrQFT:Basisteilchenmodell:Dunkle-Materie}{Dunkle Materie} ausgemalt hat.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Laengenkontraktion:XXX', text =>
+                                           
+                'Mechanismus der Abflachung von Elementarteilchen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Ein anderer wichtiger Mechanismus, den er im Detail erklärt und berechnet, ist die Abflachung von Elementarteilchen, wenn sich die ihre Struktur'."\n".
+                    'und Ausdehnung erhaltenden Wechselwirkungsteilchen relativ zu seinem Schwerpunkt in verschiedenen Richtung unterschiedlich schnell ausbreiten.\\footnote{Vgl. \\cite{Giese:RelaContra2009}.}'."\n",
+                      'Dieser Mechanismus ist schon länger bekannt und seine Erscheinung wird Heaviside-Ellipsoiden\\footnote{\\const{FrQFT_g_footnote_text_LorentzKontrFelder}} genannt.'."\n".
+                    'Giese erkennt genialer Weise, dass dieser Mechanismus nicht nur bei der Längenkontraktion relativistisch bewegter Körper eine Rolle spielt,'."\n".
+                    'sondern auch im Gravitationsfeld zum Tragen kommt, wenn wir die Erscheinung der Raumzeitkrümmung verstehen wollen.'."\n".
+                    'Dafür bin ich ihm ebenfalls außerordentlich dankbar, auch, wenn mir Teile davon schon bewusst beziehungsweise bekannt waren.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Laengenkontraktion:XXX', text =>
+                                           
+                'Genial!', subline =>
+                  '… in seinen Möglichkeiten dennoch begrenzt')),
+                  array( 'text', array( text => array(
+                    'Das Basisteilchenmodell kann leider nicht alle Eigenschaften der Elementarteilchen im Gravitationsfeld so beschreiben, wie sie beobachtet werden.'."\n".
                     'Die ›fraktale Quanten-Fluss-Theorie‹ dringt hier durch ihren \\jump{OM:FrQFT:WasIstPhysik:Vortext:Djet-Neheh-Dualismus}{fraktalen Djet-Neheh-Dualismus}'."\n".
                     'und durch ihr \\jump{*Fraktales-Existenzprinzip-Herlei}{fraktales Existenzprinzip} konsequent weiter in die Tiefe vor und überwindet Probleme, welche Gieses Modell aus Sicht der Beobachtungen der akademischen Physik (noch) hat.'."\n"))),
                       
@@ -98,7 +119,7 @@
                           'Allerdings beschreibt das Basisteilchenmodell dies in Abhängigkeit von der Elementarteilchen-Anzahl und nicht in Abhängigkeit von deren Masse.'."\n".
                           'Die Quanten-Fluss-Theorie gibt die Änderung der Lichtgeschwindigkeit im Gravitationsfeld im Sinne der akademischen Physik korrekt wieder.',
                         '\\condb{De-Broglie-Frequenz:}'."\n".
-                          'Die de-Broglie-Frequenz der Elementarteilchen im Basisteilchenmodell sinkt bei steigender Gravitation, im Widerspruch zu den experimentellen Beobachtungen.'."\n".
+                          'Die de-Broglie-Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}} der Elementarteilchen im Basisteilchenmodell sinkt bei steigender Gravitation, im Widerspruch zu den experimentellen Beobachtungen.'."\n".
                           'Dies wird in der Quanten-Fluss-Theorie realistisch und quantitativ korrekt beschrieben, hier steigt deren de-Broglie-Frequenz.',
                     ))),
                   array( 'text', array( text => array(

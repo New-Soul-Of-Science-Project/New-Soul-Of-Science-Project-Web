@@ -130,6 +130,7 @@
   $FrQFT_g_footnote_text_Confinement            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Ent:DerKlebstoffDerWelt:2015}, S. 60, 61. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Confinement2013}. \\\\ Vgl. \\cite{Alkofer:QuarkConfinementOnline2006}, S. 1.';
   $FrQFT_g_footnote_text_DeBroglieBohmTheorie   = '\\color{*Bearb}{(Weitere Fachliteratur einfügen!)} \\\\ Vgl. \\cite{Schaal:InwieweitIstEineRelativistischeFormulierungDerBohmschenMechanikMoeglich:2014}. \\\\ Populärwissenschaftliche Literatur: \\\\ Vgl. \\cite{Ananthaswamy:KeinAuswegAusDerUnwirklichkeit:2018}, S. 17, 19. \\\\ Internet: \\\\ Vgl. \\cite{wiki:De-Broglie-Bohm-Theorie:2018}.';
   $FrQFT_g_footnote_text_DeBroglieBohmTheorieKonsQM  = '\\color{*Bearb}{(Weitere Fachliteratur einfügen!)} \\\\ Vgl. \\cite{Schaal:InwieweitIstEineRelativistischeFormulierungDerBohmschenMechanikMoeglich:2014}, Kap. 2. Grundkonzepte der Bohmschen Mechanik, 2.1. Realitätsbezug, S. 2-5, hier S. 5. \\\\ Populärwissenschaftliche Literatur: \\\\ Vgl. \\cite{Ananthaswamy:KeinAuswegAusDerUnwirklichkeit:2018}, S. 17, 19. \\\\ Internet: \\\\ Vgl. \\cite{wiki:De-Broglie-Bohm-Theorie:2018}.';
+  $FrQFT_g_footnote_text_DeBroglieFrequenzWellen = '\\color{*Bearb}{(Weitere Fachliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Materiewelle:2020}.';
   $FrQFT_g_footnote_text_DoppelSpaltExp         = 'Vgl. \\cite{Feynman:Quantenmechanik2009}, Kap. 1 Quantenverhalten, S. 3-15. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Doppelspaltexp2013}.';
   $FrQFT_g_footnote_text_Dualismus              = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Dualismus:2015}.';
   $FrQFT_g_footnote_text_DunkleEnergie          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur \\\\ Vgl. \\cite{Frieman:DasDunkelsteGeheimnis:2016}.';
@@ -362,7 +363,7 @@
                                                          text => '\\color{*Bearb}{(Die Grafik enthält einen Rechenfehler und muss korrigiert werden! \\term{r_{gr}} muss in \\term{r_{wq}} umbenannt werden.)} Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n_{phase} = n_{wel} / n_{polwel} = 6/1 = 6}.'."\n".
                                                                  'Die Wirkungsquanten eines Wirkungsquanten-Strings mit wechselnder Wirkungsquanten-Dichte bewegen sich auf einer doppelt geschachtelten, helixförmigen'."\n".
                                                                  'Spiralbahn um ein gemeinsames Rotationszentrum.'."\n".
-                                                                 'In der gezeigten Struktur blinkt das Lepton mit der De-Broglie-Frequenz in einem Wechsel zwischen einer leicht positiven'."\n".
+                                                                 'In der gezeigten Struktur blinkt das Lepton mit der de-Broglie-Frequenz in einem Wechsel zwischen einer leicht positiven'."\n".
                                                                  'und einer stärker negativen Polarisation und damit elektrischen Ladung.'."\n".
                                                                  'Aus weitem Blickwinkel erscheint das Lepton im Mittel vornehmlich elektrisch negativ geladen, während von nahem die differenzierte'."\n".
                                                                  'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
@@ -372,7 +373,7 @@
                                                          text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n_{phase} = n_{wel} / n_{polwel} = 12/2 = 6}.'."\n".
                                                                  'Die Wirkungsquanten eines Wirkungsquanten-Strings mit wechselnder Wirkungsquanten-Dichte bewegen sich auf einer doppelt geschachtelten, helixförmigen'."\n".
                                                                  'Spiralbahn um ein gemeinsames Rotationszentrum.'."\n".
-                                                                 'In der gezeigten Struktur blinkt das Lepton mit der De-Broglie-Frequenz in einem Wechsel zwischen einer positiven'."\n".
+                                                                 'In der gezeigten Struktur blinkt das Lepton mit der de-Broglie-Frequenz in einem Wechsel zwischen einer positiven'."\n".
                                                                  'und einer gleich großen negativen Polarisation und ist damit ohne elektrische Ladung.'."\n".
                                                                  'Aus weitem Blickwinkel erscheint das Lepton im Mittel vornehmlich elektrisch neutral, während von nahem die differenzierte'."\n".
                                                                  'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
