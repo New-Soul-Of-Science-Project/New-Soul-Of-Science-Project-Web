@@ -160,7 +160,7 @@
                       array( display => 'on',  latex => '{  f  =  \frac{1}{t}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  _{r,p}f_{spin,H}  =  \frac{ _{r,p}c_{eff} }{ _{r,p}w_{red} }  }'),
                     ))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:LichtgeschwGravi', text =>
                                            
                 'Lichtgeschwindigkeitsänderung im Gravitationsfeld', subline =>
                   '')),

@@ -571,7 +571,8 @@
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  m_{ele}  =  n_{wq} \cdot m_{wq}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  {T_{kegel}}  =  g_{\omega} \cdot \frac{ \hbar }{ n_{wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  {T_{kegel}}  =  g_{\omega} \cdot \frac{ \hbar }{ n_{wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}} }  }',
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-T-kegel', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-T-kegel}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Setzen wir diese Werte nun in die Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-eff-aus-f-ele} der effektiv störenden Wirkung ein, ergibt sich:'."\n"))),
@@ -817,7 +818,8 @@
                       //%! array( display => 'off', latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot {_{r}p_{ele,abl}}  }'),
                       //%! array( display => 'on',  latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot 2 \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot \frac{ m_{ele} }{ r }  }',
                       //%!                          latex_if_visible => '{  \Leftrightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot 2 \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot \frac{ m_{ele} }{ r }  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot {_{r}p_{ele,abl}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot {_{r}p_{ele,abl}}  }',
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-v-ele-abl', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-v-ele-abl}', label_incr => true),
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot 2 \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot \frac{ m_{ele} }{ r }  }'),
                     ))),
                       
@@ -861,6 +863,22 @@
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX',
+                Title => '\\small{Analyse der Einheiten …}',
+                TitleVis => 'Analyse der Einheiten:', ParagraphList => array(
+                  array( 'text', array( text => array(
+                    'Ausdrücke in eckigen Klammern ([Term]) stehen für deren Einheiten oder geben diese explizit an ([Einheiten]).'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \hbar  =  \frac{ h }{ 2 \pi }  =  1,054571 \cdot 10^{-34} \cdot J \cdot s  }'),
+                      array( display => 'on',  latex => '{  J  =  \frac{ \mathit{kg} \cdot m^2 }{ s^2 }  }'),
+                      array( display => 'on',  latex => '{  \left[ \frac{ \hbar }{ m_{wq} } \right]  =  \frac{ m^2 }{ s }  }'),
+                      array( display => 'on',  latex => '{  \left[ g_{v} \cdot g_{\omega} \cdot g_{h} \right]  =  \frac{ 1 }{ kg }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \left[ g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \right]  =  \frac{ m^2 }{ \mathit{kg} \cdot s }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \left[ \frac{ \left( g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \right)^{2} \cdot m_{ele}^{2} }{ {_{\lowZero}c^{2}} \cdot r^{2} } \right]  =  1  }'),
+                    ))),
+                    ))),
+
+                  array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX',
                 Title => '\\small{Rechnung für Nahbereich …}',
                 TitleVis => 'Rechnung für Nahbereich:', ParagraphList => array(
                   $FrQFT_g_text_QuantengravRechnungOhneNaeh,
@@ -875,7 +893,22 @@
                     'Setzen wir hier die Gravitationskonstante so ein, wie sie sich in der nachfolgenden Herleitung für große Massen in Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraviKonstStruktur} zeigt, dann bekommen wir für ein einzelnes Elementarteilchen:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  {_{r,p}c_{ele}}  =  {_{\lowZero}c} \cdot \left( 1 - 4 \cdot \frac{ G^{2} \cdot m_{ele}^{2} }{ {_{\lowZero}c^{2}} \cdot r^{2} } \right)^{p}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  {_{r,p}c_{ele}}  =  {_{\lowZero}c} \cdot \left( 1 - 4 \cdot \frac{ g_{s}^{-2} \cdot G^{2} \cdot m_{ele}^{2} }{ {_{\lowZero}c^{2}} \cdot r^{2} } \right)^{p}  }'),
+                    ))),
+                      
+                  array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX',
+                Title => '\\small{Analyse der Einheiten …}',
+                TitleVis => 'Analyse der Einheiten:', ParagraphList => array(
+                  array( 'text', array( text => array(
+                    'Ausdrücke in eckigen Klammern ([Term]) stehen für deren Einheiten oder geben diese explizit an ([Einheiten]).'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  g_{s}  :=  1 \cdot \frac{ m }{ s }  }',
+                                               /* label_name => '', */label_text => '\\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-g-s}', label_incr => false),
+                      array( display => 'on',  latex => '{  G  =  6,67384 \cdot 10^{-11} \cdot \frac{ m^3 }{ \mathit{kg} \cdot s^2 }  }'),
+                      array( display => 'on',  latex => '{  \left[ g_{s}^{-2} \cdot G^{2} \right]  =  \frac{ m^4 }{ \mathit{kg}^2 \cdot s^2 }  }'),
+                      array( display => 'on',  latex => '{  \left[ \frac{ g_{s}^{-2} \cdot G^{2} \cdot m_{ele}^{2} }{ {_{\lowZero}c^{2}} \cdot r^{2} } \right]  =  1  }'),
+                    ))),
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX',
@@ -905,8 +938,12 @@
                     'Aus diesem Grund müssen die Regeln der Zufallsstatistik in Form der Standardabweichung\\footnote{Vgl. \\cite{wiki:Standardabweichung2013}.} Anwendung finden.'."\n".
                     'Das bedeutet, dass sich die effektive Ablenkungsgeschwindigkeit zur Quadratwurzel der Summe der einzelnen'."\n".
                     'Störungen berechnet.\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, S. 19-22, hier S. 22.}'."\n".
-                    'Wir haben \\term{g_{v}} schon zuvor als Proportionalitätskonstante eingeführt.'."\n",
-                      'Zuvor führt Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-ele-eff} zur Definition der nicht statistischen effektiven Wirkung \\term{_{r}p_{mas,abl}} der Zentralmasse:'."\n"))),
+                    'Wir haben \\term{g_{v}} oben schon als Proportionalitätskonstante eingeführt.'."\n",
+                      'Zuerst führt Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-ele-eff} zur Definition der nicht statistischen effektiven Wirkung \\term{_{r}p_{mas,abl}} der Zentralmasse.'."\n".
+                    'Bei der Berechnung der Standardabweichung bezieht sich das Ziehen der Quadratwurzel ausschließlich auf den Wert der Ablenkungsgeschwindigkeit ohne Standardabweichung und nicht auf seine Einheiten.'."\n".
+                    'Daher ist der Wert getrennt von seinen Einheiten zu berechnen.'."\n".
+                    'Diese etwas umständliche Art der Darstellung ersetze ich durch die Einführung der Konstanten \\term{g_{s}}, die ausschließlich zur Beibehaltung der ursprünglichen Einheiten genutzt wird'."\n".
+                    'und damit keinen Trick zur Verschleierung verkehrter Einheiten darstellt:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  m_{ele}  \mapsto  M  }'),
@@ -926,9 +963,12 @@
                       array( display => 'off', latex => '\require{cancel}  {  \Rightarrow  {_{r}v_{mas,abl,\cancel{standabw}}}  =  g_{v} \cdot {_{r}p_{mas,abl}}  }'),
                       array( display => 'off', latex => '\require{cancel}  {  {_{r}v_{mas,abl}}  =  \sqrt{ wert\left({_{r}v_{mas,abl,\cancel{standabw}}}\right) } \cdot \left[ \frac{ m }{ s } \right]  }',
                                                footnote => 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, S. 19-22, hier Formel C.5, S. 22.'),
-                      array( display => 'on',  latex => '{  {_{r}v_{mas,abl}}  =  \sqrt{ g_{v} \cdot {_{r}p_{mas,abl}} }  }',
-                                               latex_if_visible => '{  \Leftrightarrow  {_{r}v_{mas,abl}}  =  \sqrt{ g_{v} \cdot {_{r}p_{mas,abl}} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}v_{mas,abl}}  =  \sqrt{ g_{v} \cdot 2 \cdot g_{\omega} \cdot \frac{ g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot M }{ r } }  }',
+                      array( display => 'off', latex => '{  g_{s}  :=  1 \cdot \frac{ m }{ s }  }',
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-g-s', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-g-s}', label_incr => true),
+                      array( display => 'off', latex => '\require{cancel}  {  \Rightarrow  {_{r}v_{mas,abl}}  =  \sqrt{ g_{s} \cdot {_{r}v_{mas,abl,\cancel{standabw}}} }  }'),
+                      array( display => 'on',  latex => '{  {_{r}v_{mas,abl}}  =  \sqrt{ g_{s} \cdot g_{v} \cdot {_{r}p_{mas,abl}} }  }',
+                                               latex_if_visible => '{  \Leftrightarrow  {_{r}v_{mas,abl}}  =  \sqrt{ g_{s} \cdot g_{v} \cdot {_{r}p_{mas,abl}} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}v_{mas,abl}}  =  \sqrt{ g_{s} \cdot g_{v} \cdot 2 \cdot g_{\omega} \cdot \frac{ g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot M }{ r } }  }',
                                                label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-v-abl', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-v-abl}', label_incr => true),
                     ))),
                       
@@ -938,7 +978,8 @@
                   array( 'text', array( text => array(
                     'Ausdrücke in eckigen Klammern ([Term]) stehen für deren Einheiten oder geben diese explizit an ([Einheiten]).'."\n"))),
                   array( 'text', array( text => array(
-                    'Die Standardabweichung wird nur auf die Werte aber nicht auf die Einheiten angewendet.'."\n"))),
+                    'Die Standardabweichung, ihre Quadratwurzel, wird nur auf die Werte aber nicht auf die Einheiten angewendet.'."\n".
+                    'Um mathematisch äquivalentes in einfacher und gut lesbarer Form zu erreichen, wird hier die Konstante \\term{g_{s}} in der Berechnung der Standardabweichung eingeführt.'."\n"))),
                     ))),
                       
                   array( 'text', array( text => array(
@@ -952,9 +993,9 @@
                     'die Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-c-eff} eingesetzt wird, ergibt sich:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \Rightarrow  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1 - \frac{ \left( \sqrt{ g_{v} \cdot 2 \cdot g_{\omega} \cdot \frac{ g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot M }{ r } } \right)^{2} }{ {_{\lowZero}c}^{2} } \right)^{p}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1 - 2 \cdot \frac{ g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot M }{ {_{\lowZero}c}^{2} \cdot r } \right)^{p}  }',
-                                               latex_if_visible => '{  \Leftrightarrow  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1 - 2 \cdot \frac{ g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot M }{ {_{\lowZero}c}^{2} \cdot r } \right)^{p}  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1 - \frac{ \left( \sqrt{ g_{s} \cdot g_{v} \cdot 2 \cdot g_{\omega} \cdot \frac{ g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot M }{ r } } \right)^{2} }{ {_{\lowZero}c}^{2} } \right)^{p}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1 - 2 \cdot \frac{ g_{s} \cdot g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot M }{ {_{\lowZero}c}^{2} \cdot r } \right)^{p}  }',
+                                               latex_if_visible => '{  \Leftrightarrow  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1 - 2 \cdot \frac{ g_{s} \cdot g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot M }{ {_{\lowZero}c}^{2} \cdot r } \right)^{p}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Vergleichen wir unser Ergebnis mit der nachfolgenden Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein} für die Änderung der Lichtgeschwindigkeit'."\n".
@@ -962,10 +1003,10 @@
                     'die eine einzelne zentrale Masse beschreibt, so ergibt sich für die Gravitationskonstante \\term{G}:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1 - 2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} \right)^{p}  }',
+                      array( display => 'on',  latex => '{  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1 - 2 \cdot \frac{ G \cdot M }{ {_{\lowZero}c}^{2} \cdot r } \right)^{p}  }',
                                                label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein}', label_incr => true,
                                                footnote => '\\const{FrQFT_g_footnote_text_ARTLgFormel}'),
-                      array( display => 'on',  latex => '{  \Rightarrow  G  =  g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} }  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  G  =  g_{s} \cdot g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} }  }',
                                                label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraviKonstStruktur', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraviKonstStruktur}', label_incr => true,
                                                footnote => 'Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 13.1 Ansatz zur quantitativen Formulierung der Lichtgeschwindigkeit im Gravitationspotenzial, S. 141-149, hier Formel 13.17, S. 145. Dort hat die Formel noch eine leicht andere Form.'),
                     ))),
@@ -980,42 +1021,35 @@
                       array( display => 'on',  latex => '{  G  =  6,67384 \cdot 10^{-11} \cdot \frac{ m^3 }{ \mathit{kg} \cdot s^2 }  }', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Einheiten der Gravitationskonstante passen leider bisher nicht ganz zu denen der hier erklärten Herleitung,'."\n".
-                    'auch wenn sie schon nahe dran sind.'."\n".
-                    'Daher kann und sollte die Herleitung noch einmal darauf überprüft werden, ob die Veränderung von Wirkmechanismen mit recht freier Interpretation ihrer Einheiten dies auf einfache weise plausibel korrigieren kann.'."\n"))),
+                    'Die Einheiten der Gravitationskonstanten passen tatsächlich genau zum hergeleiteten Wert:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \hbar  =  \frac{ h }{ 2 \pi }  =  1,054571 \cdot 10^{-34} \cdot J \cdot s  }', label_incr => false),
-                      array( display => 'on',  latex => '{  J  =  \frac{ \mathit{kg} \cdot m^2 }{ s^2 }  }', label_incr => false),
-                      array( display => 'on',  latex => '{  \left[ \frac{ \hbar }{ m_{wq} } \right]  =  \frac{ m^2 }{ s }  }', label_incr => false),
-                      array( display => 'on',  latex => '{  \left[ g_{v} \cdot g_{\omega} \cdot g_{h} \right]  =  \frac{ 1 }{ kg }  }', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \left[ g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \right]  =  \frac{ m^2 }{ \mathit{kg} \cdot s }  }', label_incr => false),
+                      array( display => 'on',  latex => '{  \hbar  =  \frac{ h }{ 2 \pi }  =  1,054571 \cdot 10^{-34} \cdot J \cdot s  }'),
+                      array( display => 'on',  latex => '{  J  =  \frac{ \mathit{kg} \cdot m^2 }{ s^2 }  }'),
+                      array( display => 'on',  latex => '{  \left[ \frac{ \hbar }{ m_{wq} } \right]  =  \frac{ m^2 }{ s }  }'),
+                      array( display => 'on',  latex => '{  \left[ g_{s} \cdot g_{v} \cdot g_{\omega} \cdot g_{h} \right]  =  \frac{ m }{ kg \cdot s }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \left[ g_{s} \cdot g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \right]  =  \frac{ m^3 }{ \mathit{kg} \cdot s^2 }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \left[ \frac{ G \cdot M }{ {_{\lowZero}c}^{2} \cdot r } \right]  =  1  }'),
                     ))),
                     ))),
                       
                   array( 'text', array( text => array(
                     'Die Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein} entspricht der in Experimenten beobachteten'."\n".
-                    'Shapiro-Verzögerung\\footnote{\\const{FrQFT_g_footnote_text_ShapiroVerzoegerung}}'."\n".
-                    'des Lichts im Gravitationsfeld.'."\n"))),
+                    'Shapiro-Verzögerung\\footnote{\\const{FrQFT_g_footnote_text_ShapiroVerzoegerung}} des Lichts im Gravitationsfeld.'."\n".
+                    'Eine nähere Analyse der \\jump{OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante}{Struktur der Gravitationskonstanten} findet sich im nächsten Abschnitt.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX', text =>
                                            
-                'Die Struktur der Gravitationskonstanten', subline =>
+                'Was haben wir nun im Vergleich zu Gieses Basisteilchenmodell gewonnen?', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Über die Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraviKonstStruktur} bekommen wir eine Idee der Struktur der Gravitationskonstanten,'."\n".
-                    'wobei die Werte von vier der fünf Konstanten noch'."\n".
-                    'nicht bekannt sind.\\footnote[*Entwick]{\\color{*Entwick}{Eine genaue Herleitung der unbekannten Konstanten wird gesucht. Hinweise darauf sind erbeten.}}'."\n"))),
+                    'Es gibt einen wesentlichen Unterschied zu Gieses Basisteilchenmodell:'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                      'Der Fortschritt im Vergleich zu Gieses Formulierung der Lichtverlangsamung besteht darin, dass sich so ein nachvollziehbarer Zusammenhang mit der Masse'."\n".
-                      'des anziehenden Objekts ergibt und nicht „nur“ mit der Anzahl an Elementarteilchen in diesem Objekt.\\color{*Bearb}{(Verweis)}'."\n"))),
+                      'Der Fortschritt im \\jump{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:LichtgeschwGravi}{Vergleich zu Gieses Formulierung der Lichtverlangsamung} besteht darin, dass sich so ein nachvollziehbarer Zusammenhang mit der Masse'."\n".
+                      'des anziehenden, kugelförmigen Objekts ergibt und nicht „nur“ mit der Anzahl an Elementarteilchen in diesem Objekt.\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, Speed Reduction in Detail, S. 20-22, hier Formel C.7, S. 22. \\term{N} steht darin nicht für die Masse einer kugelförmigen Ansammlung von Elementarteilchen, sondern \\term{N} steht für die Anzahl der Basisteichen, also für die doppelte Anzahl der Elementarteilchen.}'."\n"))),
                       
                   array( 'text', array( text => array(
-                    'Der Wert der Gravitationskonstanten kann leider noch nicht hergeleitet werden, aber wir sind hiermit diesem Ziel einen Schritt näher gekommen.'."\n".
-                    'Und zwar dadurch, mehr Einblick in die Strukturen zu gewinnen, die Grundlage ihrer Entstehung sind.'."\n",
-                      'In der Allgemeinen Relativitätstheorie existiert keinerlei Ansatz zum Verständnis der Gravitationskonstanten.'."\n".
-                    'Sie wird dort schlicht als gemessener Wert eingesetzt.'."\n".
-                    'Es besteht also Hoffnung, das hohe Ziel ihrer Herleitung mit der Quanten-Fluss-Theorie in Zukunft zu erreichen.'."\n"))),
+                    'Es gibt noch mehr Unterschiede im \\jump{OM:FrQFT:Basisteilchenmodell}{Vergleich der Quanten-Fluss-Theorie mit dem Basisteilchenmodell}.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX', text =>
                                            
                 'Vereinheitlichung der Physik', subline =>
@@ -1031,22 +1065,205 @@
                         'gewertet werden.'."\n"))),
                       
                   array( 'text', array( text => array(
-                    'Die Raumzeitkrümmung, die Beugung von Licht und die gravitativ anziehende Wirkung auf Elementarteilchen-Strings wird in den folgenden Abschnitten erklärt.'."\n"))),
+                    'Der \\jump{OM:FrQFT:Quantengravitation:Laengenkontraktion}{Eindruck der Raumzeitkrümmung}, die \\jump{OM:FrQFT:Quantengravitation:Lichtbeugung}{Beugung von Licht} und'."\n".
+                    'die \\jump{OM:FrQFT:Quantengravitation:Mechanismus-der-Gravitation}{gravitativ anziehende Wirkung auf andere Elementarteilchen-Strings} wird in den folgenden Abschnitten erklärt.'."\n"))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante'),
+                    )),
+              )
+          ); ?>
+
+
+		    	<!  • Struktur der Gravitationskonstanten  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung', type => 'back'),
+                    )),
+                      
+                  /* array( 'notice', array( Display => 'invis', text => array(
+                    '• XXX',
+                    ))), */
+                      
+                  array( 'text', array( text => array(
+                    'Über die Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraviKonstStruktur} bekommen wir eine Idee der Struktur der Gravitationskonstanten,'."\n".
+                    'wobei die Werte von vier der sechs Konstanten noch'."\n".
+                    'nicht bekannt sind.\\footnote[*Entwick]{\\color{*Entwick}{Eine genaue Herleitung der unbekannten Konstanten wird gesucht. Hinweise darauf sind erbeten.}}'."\n",
+                      'Der Wert der Gravitationskonstanten kann leider noch nicht hergeleitet werden, aber wir sind hiermit diesem Ziel einen Schritt näher gekommen.'."\n".
+                    'Und zwar dadurch, mehr Einblick in die Strukturen zu gewinnen, die Grundlage ihrer Entstehung sind.'))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        'In der Allgemeinen Relativitätstheorie existiert keinerlei Ansatz zum Verständnis der Gravitationskonstanten.'."\n".
+                        'Sie wird dort, und auch in jeder anderen mir bekannten Theorie, schlicht als gemessener Wert eingesetzt.'."\n"))),
+                      
+                  array( 'text', array( text => array(
+                    'Es besteht also Hoffnung, das hohe Ziel ihrer Herleitung mit der Quanten-Fluss-Theorie in Zukunft zu erreichen.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante:XXX', text =>
+                                           
+                'Analyse der Strukturellen Abhängigkeit der Gravitationskonstanten', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.SG', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  G  =  g_{s} \cdot g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} }  }',
+                                               /* label_name => '', */label_text => '\\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraviKonstStruktur}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ h \cdot {T_{kegel}} \cdot n_{wq} \cdot f_{ele} }{ r }  }',
+                                               /* label_name => '', */label_text => '\\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-eff-aus-f-ele}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  g_{h}  =  \frac{ {_{r}p_{abl}} \cdot r }{ h \cdot {T_{kegel}} \cdot n_{wq} \cdot f_{ele} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  {T_{kegel}}  =  g_{\omega} \cdot \frac{ \hbar }{ n_{wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}} }  }',
+                                               /* label_name => '', */label_text => '\\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-T-kegel}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  g_{\omega}  =  \frac{ {T_{kegel}} \cdot n_{wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}} }{ \hbar }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  {_{r}v_{ele,abl}}  =  g_{v} \cdot {_{r}p_{ele,abl}}  }',
+                                               /* label_name => '', */label_text => '\\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-v-ele-abl}', label_incr => false),
+                      array( display => 'on',  latex => '{  {_{r}p_{ele,abl}}  =  2 \cdot {_{r}p_{abl}}  }',
+                                               /* label_name => '', */label_text => '\\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-ele-eff}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  =  g_{v} \cdot 2 \cdot {_{r}p_{abl}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  g_{v}  =  \frac{ {_{r}v_{ele,abl}} }{ 2 \cdot {_{r}p_{abl}} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  G  =  g_{s} \cdot \frac{ {_{r}v_{ele,abl}} }{ 2 \cdot {_{r}p_{abl}} } \cdot \frac{ {T_{kegel}} \cdot n_{wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}} }{ \hbar } \\\ \qquad\qquad\qquad \cdot \frac{ {_{r}p_{abl}} \cdot r }{ h \cdot {T_{kegel}} \cdot n_{wq} \cdot f_{ele} } \cdot \frac{ \hbar }{ m_{wq} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  G  =  g_{s} \cdot \frac{ {_{r}v_{ele,abl}} }{ 2 \cdot {_{r}p_{abl}} } \cdot \frac{ n_{wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}} }{ \hbar } \\\ \qquad\qquad\qquad \cdot \frac{ {_{r}p_{abl}} \cdot r }{ h \cdot n_{wq} \cdot f_{ele} } \cdot \frac{ \hbar }{ m_{wq} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  G  =  g_{s} \cdot \frac{ {_{r}v_{ele,abl}} }{ 2 } \cdot \frac{ n_{wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}} }{ \hbar } \\\ \qquad\qquad\qquad \cdot \frac{ r }{ h \cdot n_{wq} \cdot f_{ele} } \cdot \frac{ \hbar }{ m_{wq} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  G  =  g_{s} \cdot \frac{ {_{r}v_{ele,abl}} }{ 2 } \cdot n_{wq} \cdot {_{\lowZero}c^{2}} \cdot \frac{ r }{ h \cdot n_{wq} \cdot f_{ele} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  G  =  g_{s} \cdot \frac{ {_{r}v_{ele,abl}} }{ 2 } \cdot {_{\lowZero}c^{2}} \cdot \frac{ r }{ h \cdot f_{ele} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  G  =  g_{s} \cdot \frac{ {_{r}v_{ele,abl}} \cdot r }{ 2 } \cdot \frac{ {_{\lowZero}c^{2}} }{ h \cdot f_{ele} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  G  =  g_{s} \cdot \frac{ {_{r}v_{ele,abl}} \cdot r }{ 2 } \cdot \frac{ 1 }{ m_{ele} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  G  =  g_{s} \cdot \frac{ 1 }{ 2 } \cdot \frac{ {_{r}v_{ele,abl}} \cdot r }{ m_{ele} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Weil \\term{_{r}v_{ele,abl}} genau wie \\term{m_{ele}} nach den Formeln XXX und XXX jeweils proportional zur Anzahl der Wirkungsquanten im Elementarteilchen sind,'."\n".
+                    'gilt auch die Äquivalenz zur Wirkung eines einzelnen Wirkungsquants im zeitlichen Mittel:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  G  =  g_{s} \cdot \frac{ 1 }{ ? 2 } \cdot \frac{ {_{r}v_{wq,abl}} \cdot r }{ m_{wq} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX Formel 68 …'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  XXX  {_{r}v_{ele,abl}}  =  g_{v} \cdot 2 \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot \frac{ m_{ele} }{ r }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} }  =  \frac{ {_{r}v_{ele,abl}} \cdot r }{ 2 \cdot m_{ele} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  G  =  g_{s} \cdot \frac{ 1 }{ 2 } \cdot \frac{ {_{r}v_{ele,abl}} \cdot r }{ m_{ele} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  G  =  g_{s} \cdot \frac{ 1 }{ ? 2 } \cdot \frac{ {_{r}v_{wq,abl}} \cdot r }{ m_{wq} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX Formel 68 …'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  XXX  {_{r}v_{ele,abl}}  =  g_{v} \cdot 2 \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot \frac{ m_{ele} }{ r }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}v_{ele,abl}}  =  2 \cdot \frac{ G }{ g_{s} } \cdot \frac{ m_{ele} }{ r }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante:XXX', text =>
+                                           
+                'XXX', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante:XXX', text =>
+                                           
+                'XXX', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Quantengravitation:Laengenkontraktion'),
                     )),
               )
           ); ?>
-
-
+        
+          
 		    	<!  • Längenkontraktion  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
             'OM:FrQFT:Quantengravitation:Laengenkontraktion',
               'Die Shapiro-Verzögerung zusammen mit einer gravitativen Längenkontraktion erzeugt die Raumzeitkrümmung', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung', type => 'back'),
+                      array(  jump_name => 'OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante', type => 'back'),
                     )),
                       
                   /* array( 'notice', array( Display => 'invis', text => array(
@@ -1063,7 +1280,7 @@
                       'Demnach ist für die Entstehung eines Heaviside-Ellipsoiden die anisotrope Ausbreitung der seine Struktur bestimmenden Wechselwirkungsteilchen'."\n".
                     'ausschlaggebend.'."\n".
                     'Genauer gesagt ist es ihre in einer Raumrichtung abweichende Geschwindigkeit im Verhältnis zu den Geschwindigkeiten der anderen beiden Raumrichtungen, relativ zum Schwerpunkt des Elementarteilchens.\\footnote{Vgl. \\cite{Giese:RelaContra2009}.}'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Laengenkontraktion:XXX', text =>
                                            
                 'Längenkontraktion von Elementarteilchen im Gravitationsfeld der Quantengravitation', subline =>
                   '')),
