@@ -747,7 +747,7 @@
                                        header_pict_alt => 'Die Fraktale Quanten-Fluss-Theorie, Organische Physik',
                                        header_links_marginLeft => '336px',
                                        copy_right => 'Fraktale Quanten-Fluss-Theorie (FrQFT) \\\\'."\n".
-                                                      '© 1990–2020 by \\\\'."\n".
+                                                      '© 1990–2021 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
@@ -1660,7 +1660,7 @@
                                        header_pict_name => 'Organical-Matters_Logo_De.jpg',
                                        header_pict_alt => 'Organical Matters Website, Ideen neuer Wissenschaft',
                                        copy_right => 'Strukturelle Naturphilosophie der Zeit (NPT) \\\\'."\n".
-                                                      '© 2014–2020 by \\\\'."\n".
+                                                      '© 2014–2021 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
@@ -1731,7 +1731,7 @@
                                        header_pict_alt => 'Naturphilosophie-Yoga, Spannungsspiel des Lebens',
                                        header_links_marginLeft => '254px',
                                        copy_right => 'Naturphilosophie-Yoga (NaPhil-Yoga) \\\\'."\n".
-                                                      '© 2014–2020 by \\\\'."\n".
+                                                      '© 2014–2021 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
@@ -2071,7 +2071,7 @@
                                        header_pict_alt => 'The New Soul Of Science Project, Knowlege helps …',
                                        header_links_marginLeft => '384px',
                                        copy_right => 'The New Soul Of Science Project (NSOSP) \\\\'."\n".
-                                                      '© 1988–2020 by \\\\'."\n".
+                                                      '© 1988–2021 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
@@ -2167,7 +2167,7 @@
                                        header_pict_alt => 'Spannungsspiel des Lebens, Natur- und Lebensphilosophie',
                                        header_links_marginLeft => '182px',
                                        copy_right => 'Spannungsspiel des Lebens (Neue Biophysik, NB) \\\\'."\n".
-                                                      '© 2014–2020 by \\\\'."\n".
+                                                      '© 2014–2021 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
@@ -2818,7 +2818,7 @@
                                        header_pict_alt => 'Die Superial-Zahlen, mit Primzahlen ins Unendliche',
                                        header_links_marginLeft => '398px',
                                        copy_right => 'Superial-Zahlen (SN) \\\\'."\n".
-                                                      '© \\hidden{(1988?)}1989–2020 by \\\\'."\n".
+                                                      '© \\hidden{(1988?)}1989–2021 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
@@ -2928,7 +2928,7 @@
                                        header_pict_alt => 'Die Vereinheitlichte Relativitätstheorie, in der Quanten-Fluss-Theorie',
                                        header_links_marginLeft => '383px',
                                        copy_right => 'Vereinheitlichte Relativitätstheorie (VRT) \\\\'."\n".
-                                                      '© 1990–2020 by \\\\'."\n".
+                                                      '© 1990–2021 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
@@ -3211,7 +3211,7 @@
     echo '    <meta name="keywords"           content="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][keywords])).'">'."\n";
     echo '    <meta name="author"             content="Wolfgang Huss, info@nsosp.org">'."\n";
     echo '    <meta name="DC.Publisher"       content="MEDIA LINE DIGITAL e.K., info@media-line-digital.de">'."\n";
-    echo '    <meta name="DC.Date"            content="2020-10-03T20:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
+    echo '    <meta name="DC.Date"            content="2021-01-10T20:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
     echo '    <meta name="DC.Identifier"      content="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" scheme="DCTERMS.URI">'."\n";
     echo '    <meta rel="canonical"           href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" />'."\n";
     echo '    <meta name="DC.Language"        content="de">'."\n";
@@ -3341,7 +3341,7 @@
     echo ''."\n";
     echo '			<div id="footer" class="footer main-shadow-0-5-30 main-layer-3">'."\n";
     echo '				<p align="center">'."\n";
-    echo '					<a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1988–2020 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a> &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
+    echo '					<a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1988–2021 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a> &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
     echo '					<a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Kontakt</a>'."\n";
     echo '				</p>'."\n";
     echo '			</div>'."\n";
@@ -3477,7 +3477,7 @@
     echo $offset.'    <br>'."\n";
     //%!echo $offset.'    <p style="color: #505050">'."\n";
     echo $offset.'    <p>'."\n";
-    echo $offset.'      Stand 03. Oktober 2020, 20:00 CET.'."\n";
+    echo $offset.'      Stand 10. Januar 2021, 20:00 CET.'."\n";
     echo $offset.'    </p>'."\n";
     echo $offset.'    <br>'."\n";
     //%!echo $offset.'    <p style="font-size: 13px; line-height: 0.7em;">'."\n";
