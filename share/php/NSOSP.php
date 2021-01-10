@@ -1372,10 +1372,12 @@
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-eff-aus-f-ele' => array( headline_text => 'QGra.LV.37'),
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-aus-omega' => array( headline_text => 'QGra.LV.40'),
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse' => array( headline_text => 'QGra.LV.42'),
+                                                'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-m-ele-aus-n-wq-m-wq' => array( headline_text => 'QGra.LV.52'),
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-T-kegel' => array( headline_text => 'QGra.LV.53'),
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:NaeherungGrosseAbstaend' => array( headline_text => 'Näherung bei großen Abständen', headline_text_short => 'Näherung bei großen Abständen'),
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-ele-eff' => array( headline_text => 'QGra.LV.64'),
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-v-ele-abl' => array( headline_text => 'QGra.LV.67'),
+                                                'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-v-ele-abl-aus-m-ele-r' => array( headline_text => 'QGra.LV.68'),
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-M-eff' => array( headline_text => 'QGra.LV.96'),
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-g-s' => array( headline_text => 'QGra.LV.100'),
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-v-abl' => array( headline_text => 'QGra.LV.103'),
@@ -1383,6 +1385,7 @@
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraviKonstStruktur' => array( headline_text => 'QGra.LV.107'),
                                                          
                                               'OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante' => array( headline_text => 'Struktur der Gravitationskonstanten', headline_text_short => 'Struktur der Gravitationskonstanten'),
+                                                'OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante:Equ-GraviKonstAnhaeng' => array( headline_text => 'QGra.SG.2'),
                                                          
                                               'OM:FrQFT:Quantengravitation:Laengenkontraktion' => array( headline_text => 'Längenkontraktion', headline_text_short => 'Längenkontraktion'),
                                                          
