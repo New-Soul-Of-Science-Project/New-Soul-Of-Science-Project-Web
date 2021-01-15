@@ -15,7 +15,7 @@
                   array( 'notice', array( Display => 'vis', text => array(
                     '• Yoga ist Körper- und Seelenpflege von innen. Siehe Starseite.',
                     '• Yoga ist nicht wie eine Tablette, an die ich meine Heilung delegieren: Ich kann nicht einfach tun, was mein Lehrer mir sagt, und erwarten, dass mein Leben beliebig besser wird. Yoga bedeutet, mich mit mir und meinem Leben auseinanderzusetzen und etwas grundsätzliches anders zu machen. Und das ist nicht nur, dass ich die Asanas ausführe oder meditiere. Ich benutze dieses In-Mich-Hineinhorchen, um mich dadurch inspirieren zu lassen, etwas anders zu tun, und bringe mich durch Asanas dann auch in die Lage Dinge anders tun zu können.',
-                    '• Siehe \\jumpname{OM:NPYo:Spiritualitaet-Psychologie}.',
+                    '• Yoga bedeutet das Verbinden von unserem Bewusstsein und unserem Unterbewusstsein, den beiden Hälften Ha und Tha unseres Lebens. Siehe \\jumpname{OM:NPYo:Spiritualitaet-Psychologie}.',
                     ))),
                       
                   array( 'text', array( text => array(
