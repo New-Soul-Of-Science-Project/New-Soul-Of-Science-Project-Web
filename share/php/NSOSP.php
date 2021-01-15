@@ -2068,7 +2068,7 @@
                                        header_pict_width => '930px',
                                        header_pict_height => '177px',
                                        header_pict_bgcolor => '#FFFFFF',
-                                       header_pict_alt => 'The New Soul Of Science Project, Knowlege helps …',
+                                       header_pict_alt => 'The New Soul Of Science Project, Knowledge And Care Helps …',
                                        header_links_marginLeft => '384px',
                                        copy_right => 'The New Soul Of Science Project (NSOSP) \\\\'."\n".
                                                       '© 1988–2021 by \\\\'."\n".
@@ -2083,12 +2083,12 @@
                                 array( url_abs => 'http://www.nsosp.org/de/New-Soul-Of-Science-Project/index.php',
                                        url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/index.php',
                                        titel => 'New Soul Of Science Project (NSOSP) – Deutsch',
-                                       description => 'Knowlege helps … – Bewusstsein, Wissen und Können helfen gegen Hilflosigkeit in der Not, in dem sie uns Werkzeuge zur Verbesserung unserer Lebenssituation und Lebensqualität an die Hand geben.',
+                                       description => 'Knowledge And Care Helps … – Bewusstsein, Wissen, Fürsorge und Können helfen gegen Hilflosigkeit in der Not, in dem sie uns Werkzeuge zur Verbesserung unserer Lebenssituation und Lebensqualität an die Hand geben.',
                                        keywords => '',
                                        text_titel_h1 => 'New Soul Of Science Project \\color{*TitleAdd}{\\small{(NSOSP)}}',
                                        text_titel_short => 'New Soul Of Science Project',
-                                       text_undertitel_h2 => 'Knowlege helps …',
-                                       text_titel_discr_h3 => 'Bewusstsein, Wissen und Können helfen gegen Hilflosigkeit in der Not, in dem sie uns Werkzeuge zur Verbesserung unserer Lebenssituation und Lebensqualität an die Hand geben',
+                                       text_undertitel_h2 => 'Knowledge And Care Helps …',
+                                       text_titel_discr_h3 => 'Bewusstsein, Wissen, Fürsorge und Können helfen gegen Hilflosigkeit in der Not, in dem sie uns Werkzeuge zur Verbesserung unserer Lebenssituation und Lebensqualität an die Hand geben',
                                        jump_ary => array(
                                               'OM:nSOSp:Home:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          

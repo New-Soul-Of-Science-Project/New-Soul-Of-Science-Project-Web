@@ -13,6 +13,10 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '• Den Logo Untertitel ändern zu ›Knowledge and Care helps …‹ (knowledge ist auch verkehrt geschrieben).',
+                    ))),
+                      
                   array( 'text', array( text => array(
                     '›The New Soul Of Science Project‹ ist ein Projekt, in dem der Nutzen unseres Bewusstseins, Wissens – der Wissenschaft – und Könnens'."\n".
                     'für jeden einzelnen Menschen und die ganze Menschheit im Mittelpunkt steht.'."\n",
