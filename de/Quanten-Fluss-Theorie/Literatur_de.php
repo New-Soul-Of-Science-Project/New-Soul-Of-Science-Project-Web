@@ -65,6 +65,8 @@
                                           'Haenggi:AViolationOfTheUncertaintyPrincipleImpliesAViolationOfTheSecondLawOfThermodynamics:2013',
                                           'Hagner:HiggsMechanismusOnline2009',
                                           'Harrison:Kosmologie:1983',
+                                          'Heaviside:OnTheElectromagneticEffectsDueToTheMotionOfElectrificationThroughADielectric:1889.2014',
+                                          'Heaviside:OnTheElectromagneticEffectsDueToTheMotionOfElectrificationThroughADielectric:1889.2009',
                                           'Heilbron:DieQuantisierungDesAtoms2013',
                                           'Heisenberg:UeberQuantKinMech1927',
                                           'Heisenberg:UeberQuantKinMech1927Scan',
