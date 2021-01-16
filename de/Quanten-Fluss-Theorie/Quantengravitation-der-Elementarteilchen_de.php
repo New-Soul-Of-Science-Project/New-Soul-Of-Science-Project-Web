@@ -1130,11 +1130,18 @@
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante:XXX',
-                Title => '\\small{Anmerkung …}',
-                TitleVis => 'Anmerkung:', ParagraphList => array(
+                Title => '\\small{Proportionalität …}',
+                TitleVis => 'Proportionalität:', ParagraphList => array(
                   array( 'equations',
                     array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}v_{ele,abl}} \cdot r  \sim  m_{ele}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  \sim  \frac{ m_{ele} }{ r }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Bei, für gewöhnlich, konstanter Masse \\term{m_{ele}} ergibt sich die vereinfachte Proportionalität:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  m_{ele}  =  const.  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  \sim  \frac{ 1 }{ r }  }'),
                     ))),
                     ))),
                       
@@ -1155,11 +1162,11 @@
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante:XXX',
-                Title => '\\small{Anmerkung …}',
-                TitleVis => 'Anmerkung:', ParagraphList => array(
+                Title => '\\small{Proportionalität …}',
+                TitleVis => 'Proportionalität:', ParagraphList => array(
                   array( 'equations',
                     array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}v_{wq,abl}} \cdot r  \sim  m_{wq}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}v_{wq,abl}}  \sim  \frac{ 1 }{ r }  }'),
                     ))),
                     ))),
                       
@@ -1193,11 +1200,17 @@
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante:XXX',
-                Title => '\\small{Anmerkung …}',
-                TitleVis => 'Anmerkung:', ParagraphList => array(
+                Title => '\\small{Proportionalität …}',
+                TitleVis => 'Proportionalität:', ParagraphList => array(
                   array( 'equations',
                     array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}} \cdot r  \sim  h \cdot {T_{kegel}} \cdot n_{wq} \cdot f_{ele}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  \sim  \frac{ {T_{kegel}} \cdot n_{wq} \cdot f_{ele} }{ r }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Bei, für gewöhnlich, konstanter Masse \\term{m_{ele}}, und damit \\term{T_{kegel}}, \\term{n_{wq}} und \\term{f_{ele}}, ergibt sich die vereinfachte Proportionalität:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  \sim  \frac{ 1 }{ r }  }'),
                     ))),
                     ))),
                       
@@ -1212,14 +1225,21 @@
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante:XXX',
-                Title => '\\small{Anmerkung …}',
-                TitleVis => 'Anmerkung:', ParagraphList => array(
+                Title => '\\small{Konstanz …}',
+                TitleVis => 'Konstanz:', ParagraphList => array(
                   array( 'equations',
                     array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ g_{\omega} \cdot \hbar }{ m_{wq} \cdot {_{\lowZero}c^{2}} }  =  {T_{kegel}} \cdot n_{wq}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \hbar  =  \frac{ {T_{kegel}} \cdot n_{wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}} }{ g_{\omega} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \hbar  =  \frac{ {T_{kegel}} \cdot n_{wq} \cdot E_{wq} }{ g_{\omega} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \hbar  =  \frac{ {T_{kegel}} \cdot E_{ele} }{ g_{\omega} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'So wird ersichtlich, dass sich eine neue Konstante ergibt, die \\term{ħ} sowie \\term{g_{ω}} verbindet und die ich \\term{ħ_{ω}} nenne:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \hbar_{\omega}  :=  {T_{kegel}} \cdot E_{ele}  =  const.  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \hbar  =  \frac{ \hbar_{\omega} }{ g_{\omega} }  }'),
                     ))),
                     ))),
                       
@@ -1238,17 +1258,17 @@
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante:XXX',
-                Title => '\\small{Anmerkung …}',
-                TitleVis => 'Anmerkung:', ParagraphList => array(
+                Title => '\\small{Proportionalität …}',
+                TitleVis => 'Proportionalität:', ParagraphList => array(
                   array( 'equations',
                     array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  \sim  2 \cdot {_{r}p_{abl}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  \sim  {_{r}p_{abl}}  }'),
                     ))),
                     ))),
                       
                   array( 'text', array( text => array(
                     'Nach dem Einsetzen dieser drei Konstanten in Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraviKonstStruktur} kann dann tatsächlich erheblich'."\n".
-                    'gekürzt werden und es ergibt sich Formel \\jumpname{OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante:Equ-GraviKonstAnhaeng}:'."\n"))),
+                    'gekürzt werden:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{  G  =  g_{s} \cdot g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} }  }',
