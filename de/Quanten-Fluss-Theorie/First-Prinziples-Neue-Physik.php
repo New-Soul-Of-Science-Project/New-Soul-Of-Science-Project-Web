@@ -13,35 +13,11 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  /*array( 'notice', array( Display => 'vis', text => array(
-                    '\\bold{XXX}',
-                    'o Gelten die folgenden Prinzipien ohne Einschränkungen? Es scheint mir so. (Vgl. Mäder, Alexander. WISSENSCHAFTSPHILOSOPHIE. Wie universell sind Naturgesetze? SdW 2.20, S. 82-85.)',
-                    'o Strukturprinzip:',
-                    'o Die Physik ergibt sich ausschließlich aus in sich wechselwirkender dynamischer Struktur:',
-                    'o • Existenzprinzip (Djet-Neheh-Dualismus):',
-                    'o – Ein Ding ist das, was wir aufgrund der Dynamik seiner Bestandteile von anderen Dingen unterscheiden können.',
-                    'o – Welche Bestandteile zu einem Ding gehören, ob sie im Zusammenhang stehen und daher Bestandteile sind, zeigt sich immer daran, wie sie sich zueinander bewegen.',
-                    'o ⋅ Kreisen sie umeinander, dann gehören sie zum selben Ding. (Neheh)',
-                    'o ⋅ Bewegen sie sich unabhängig voneinander, dann nicht. (Djet)',
-                    'o • Eigenschaftsprinzip:',
-                    'o – Die Dinge haben immer Eigenschaften und diese ergeben sich ausschließlich aus der dynamischen Struktur ihrer Bestandteile.',
-                    'o • Dynamikprinzip:',
-                    'o – Physik macht nur Sinn, wenn sich die Eigenschaften der Dinge verändern können, ihre Bestandteile also in einem dynamischen Zusammenhang stehen und sich daher immer bewegen.',
-                    'o • Zeitprinzip:',
-                    'o – Zeit bezieht sich immer auf (die Veränderung der Strukturen und damit auf) die Veränderung der vergleichbaren Eigenschaften der Dinge.',
-                    'o • Vereinfachungsprinzip:',
-                    'o – Wenn wir die Dinge in ihre Bestandteile zerlegen, dann müssen die Bestandteile am Ende immer einfacher werden, denn sie verlieren ihren Zusammenhang.',
-                    'o ⋅ Und der Zusammenhang ihrer Bestandteile ist es, der die Dinge kompliziert oder komplex macht.',
-                    'o – Daraus resultieren dann, bei fortschreitender Zerlegung,  immer einheitlichere Bestandteile, die sich auch mit immer einheitlicherer (konstanter, endlicher) Geschwindigkeit bewegen. (Dynamikprinzip)',
-                    'o – Die Geschwindigkeit der Bestandteile ist nicht in ihrer Richtung eingeschränkt.',
-                    'o ⋅ Denn durch den Neheh-Aspekt des Existenzprinzips wird klar, die Bewegungsrichtung muss im Kreis laufen.',
-                    'o • Fraktalitätsprinzip (fraktales Existenzprinzip, fraktaler Djet-Neheh-Dualismus)',
-                    'o – Jedes Ding ist auch ein Bestandteil und jedes Bestandteil ist auch ein Ding. (Holarchie)',
-                    'o • Regelprozess-Prinzip:',
-                    'o – Die dynamischen Strukturen der Dinge werden durch selbstorganisierte Regelprozesse stabil gehalten, die mit gegeneinander spielenden Wechselwirkungen funktionieren.',
-                    'o • Wechselwirkungsprinzip:',
-                    'o – Jede Wechselwirkung entsteht aus einem Symmetriebruch, der Pole erzeugt, die miteinander in Wechselwirkung stehen.',
-                    ))),*/
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '\\bold{Postulate}',
+                    '• \\term{E = m⋅c^{2}}:',
+                    '– Die Proportionalität von Energie und Masse ist eine direkte Schlussfolgerung der FrQFT, die sich aus der Annahme (Postulat bzw. Axiom) ergibt, dass Wirkungsquanten sowohl Energieeinheiten als auch Masseneinheiten sind (absolut nur auf der untersten Strukturebene des analysierten Modells)! Dies setzt ein konstantes Verhältnis voraus, welches nach unseren Beobachtungen das Quadrat der Lichtgeschwindigkeit \\term{c^{2}} der bekannten Formel \\term{E = m⋅c^{2}} ist.(Verweis auf Wikipedia: ›Äquivalenz von Masse und Energie‹, Überblick und Beispiele, Vernichtungsstrahlung. Dies ist keine relativistisch interpretierte Beobachtung, sondern eine quantenphysikalisch interpretierte!) Siehe auch \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{Herleitung der Lichtverlangsamung} (falls dort nicht entbehrlich geworden …).',
+                    ))),
                                        
                   array( 'text', array( text => array(
                     'In der \\italic{\\jumpname{OM:FrQFT:Einleitung}} sowie auf den daran anschließenden Seiten \\italic{\\jumpname{OM:FrQFT:WasIstPhysik}} und \\italic{\\jumpname{OM:FrQFT:WieMessenWirInDerPhysik}}'."\n".
