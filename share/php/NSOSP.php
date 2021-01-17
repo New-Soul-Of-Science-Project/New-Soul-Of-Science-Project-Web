@@ -676,6 +676,10 @@
   
   
   
+  $nSOSp_g_formelName_FP_2 = 'FP.2';
+  $nSOSp_g_formelName_FP_3 = 'FP.3';
+  $nSOSp_g_formelName_Un_10 = 'Un.10';
+
   $FrQFT_g_Ani_idx = 0;
   $FrQFT_g_Fig_idx = 0;
   $FrQFT_g_Vid_idx = 0;
@@ -1047,7 +1051,9 @@
                                                 'OM:FrQFT:FirstPrinziples:Vortext:Dynamikprinzip' => array( headline_text => 'Dynamikprinzip', headline_text_short => 'Dynamikprinzip'),
                                                 'OM:FrQFT:FirstPrinziples:Vortext:Vereinfachungsprinzip' => array( headline_text => 'Vereinfachungsprinzip', headline_text_short => 'Vereinfachungsprinzip'),
                                                 'OM:FrQFT:FirstPrinziples:Vortext:Abzählprinzip' => array( headline_text => 'Abzählprinzip', headline_text_short => 'Abzählprinzip'),
-                                                'OM:FrQFT:FirstPrinziples:Vortext:Equ-E-ele-aequi-zu-Masse' => array( headline_text => 'FP.1'),
+                                                'OM:FrQFT:FirstPrinziples:Vortext:Equ-EnergieSumWQEnergie' => array( headline_text => 'FP.1'),
+                                                'OM:FrQFT:FirstPrinziples:Vortext:Equ-EMasseSumWQEnergie' => array( headline_text => $nSOSp_g_formelName_FP_2),
+                                                'OM:FrQFT:FirstPrinziples:Vortext:Equ-E-ele-aequi-zu-Masse' => array( headline_text => $nSOSp_g_formelName_FP_3),
                                                 'OM:FrQFT:FirstPrinziples:Vortext:Wechselwirkungsprinzip' => array( headline_text => 'Wechselwirkungsprinzip', headline_text_short => 'Wechselwirkungsprinzip'),
                                             ),
                                      ),
@@ -1098,11 +1104,11 @@
                                               'OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit' => array( headline_text => 'Energie und Zeit', headline_text_short => 'Energie und Zeit'),
                                                 'OM:FrQFT:HeisenbergUnschaerfe:Fig-HeisenbUnschaerf' => array( headline_text => 'Abbildung '.($FrQFT_g_Fig_idx = 1), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:FrQFT:HeisenbergUnschaerfe:Equ-FrequAnzahlProZeit' => array( headline_text => 'Un.1'),
-                                                'OM:FrQFT:HeisenbergUnschaerfe:Equ-FrequenzWQZaehlen' => array( headline_text => 'Un.3', headline_text_short => 'Un.3'),
-                                                'OM:FrQFT:HeisenbergUnschaerfe:Equ-DeltaFrequenzAusEinerProDeltaZeit' => array( headline_text => 'Un.4', headline_text_short => 'Un.4'),
-                                                'OM:FrQFT:HeisenbergUnschaerfe:Equ-EnergieHsZaehlen' => array( headline_text => 'Un.5', headline_text_short => 'Un.5'),
-                                                'OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant' => array( headline_text => 'Un.10', headline_text_short => 'Un.10'),
-                                                'OM:FrQFT:HeisenbergUnschaerfe:Equ-HeisenbUnschDeltaEnergieMalDeltaZeitGroesserUngefaehrH' => array( headline_text => 'Un.14', headline_text_short => 'Un.14'),
+                                                'OM:FrQFT:HeisenbergUnschaerfe:Equ-FrequenzWQZaehlen' => array( headline_text => 'Un.3'),
+                                                'OM:FrQFT:HeisenbergUnschaerfe:Equ-DeltaFrequenzAusEinerProDeltaZeit' => array( headline_text => 'Un.4'),
+                                                'OM:FrQFT:HeisenbergUnschaerfe:Equ-EnergieHsZaehlen' => array( headline_text => 'Un.5'),
+                                                'OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant' => array( headline_text => $nSOSp_g_formelName_Un_10),
+                                                'OM:FrQFT:HeisenbergUnschaerfe:Equ-HeisenbUnschDeltaEnergieMalDeltaZeitGroesserUngefaehrH' => array( headline_text => 'Un.14'),
                                               'OM:FrQFT:HeisenbergUnschaerfe:Impuls-und-Ort' => array( headline_text => 'Impuls und Ort', headline_text_short => 'Impuls und Ort'),
                                               'OM:FrQFT:HeisenbergUnschaerfe:Schlussfolgerung-fuer-die-Quantenmechanik' => array( headline_text => 'Schlussfolgerung für die Quantenmechanik', headline_text_short => 'Schlussfolgerung für die Quantenmechanik'),
                                             ),
@@ -1374,10 +1380,10 @@
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-eff' => array( headline_text => 'QGra.LV.21'),
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-DetektWellenlaengeAlt' => array( headline_text => 'ZAF.RED.1'),
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-eff-aus-f-ele' => array( headline_text => 'QGra.LV.37'),
-                                                'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-EinsteinEnergieLichtQuant-1' => array( headline_text => 'UN.10'),
-                                                'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-aus-omega' => array( headline_text => 'QGra.LV.40'),
-                                                'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse-1' => array( headline_text => 'FP.1'),
-                                                'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-m-ele-aus-n-wq-m-wq' => array( headline_text => 'QGra.LV.52'),
+                                                'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-EinsteinEnergieLichtQuant-1' => array( headline_text => $nSOSp_g_formelName_Un_10),
+                                                'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-aus-omega' => array( headline_text => 'QGra.LV.42'),
+                                                'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse-1' => array( headline_text => $nSOSp_g_formelName_FP_3),
+                                                'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-EMasseSumWQEnergie-1' => array( headline_text => $nSOSp_g_formelName_FP_2),
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-T-kegel' => array( headline_text => 'QGra.LV.53'),
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:NaeherungGrosseAbstaend' => array( headline_text => 'Näherung bei großen Abständen', headline_text_short => 'Näherung bei großen Abständen'),
                                                 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-ele-eff' => array( headline_text => 'QGra.LV.64'),

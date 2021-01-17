@@ -1021,7 +1021,7 @@
                                            
                 'Wirkungsquanten-Strings')),
                   array( 'text', array( text => array(
-                    'Für alle Wirkunsgquanten-Strings gilt, dass die Gesamtenergie eines Elementarteilchen-Strings \\term{E_{ele}} die Summe der Energie \\term{E_{wq}} all seiner \\term{n_{ele,wq}} Wirkungsquanten ist.'."\n".
+                    'Für alle Wirkunsgquanten-Strings gilt, dass die Gesamtenergie eines Elementarteilchen-Strings \\term{E_{ele}} die Summe der Energie \\term{E_{wq}} all seiner \\term{n_{ele,wq}} Wirkungsquanten ist (siehe Formel \\jumpname{OM:FrQFT:FirstPrinziples:Vortext:Equ-EnergieSumWQEnergie}).'."\n".
                     'Dabei ist die Energie jedes Wirkungsquants \\term{E_{wq}} für den selben Beaobachter überall gleich groß, weil es sich um \\jump{*Energieeinheiten-Masse-Impuls-Herlei}{Energieeinheiten} handelt.'."\n".
                     'Für unterschiedliche Beobachter können die Energieeinheiten allerdings unterschiedlich groß sein.'."\n".
                     'Deshlab nehmen alle Beobachter die gleiche Anzahl an Wirkungsquanten in einem Elementarteilchen wahr, dass sich am selben Ort befindet:'."\n"))),
@@ -1037,7 +1037,8 @@
                                                label_name => 'OM:FrQFT:ZeitAlterungFrequenz:Equ-WQAnzAusEnergieVerhaelt', label_text => '\\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQAnzAusEnergieVerhaelt}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Wirkungsquanten-Anzahl ergibt sich also aus dem Verhältnis seiner Energie zur Energie eines Wirkungsquants.'."\n"))),
+                    'Die Wirkungsquanten-Anzahl ergibt sich also aus dem Verhältnis seiner Energie zur Energie eines Wirkungsquants.'."\n",
+                      'Wegen der \\jump{OM:FrQFT:FirstPrinziples:Vortext:Abzählprinzip}{Einsteinschen Energie-Masse-Äquivalenz} gilt äquivalentes auch für die Masse (siehe Formel \\jumpname{OM:FrQFT:FirstPrinziples:Vortext:Equ-EMasseSumWQEnergie}).'."\n"))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{(Die Detektorwellenlängenveränderung der Elapsonen aus \\jumpname[*Bearb]{OM:FrQFT:ZeitAlterungFrequenz:Dichtestruktur:EBDicht}, ZAF.RED.1, hier entwickeln und von dort hierher verweisen.)}'."\n"))),
                   /*array( 'text', array( text => array(

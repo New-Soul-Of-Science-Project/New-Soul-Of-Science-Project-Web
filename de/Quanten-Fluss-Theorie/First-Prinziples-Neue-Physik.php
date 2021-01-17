@@ -142,7 +142,15 @@
                     'Das \\jump{OM:FrQFT:FirstPrinziples:Vortext:Eigenschaftsprinzip}{Eigenschaftsprinzip} wiederum besagt, das alle Eigenschaften der Dinge aus ihrer Struktur entstehen.'."\n",
                       'Das Abzählprinzip erkennt, das zwei wesentliche Eigenschaften der Dinge, ihre Masse und ihre Energie, einfach auf der Anzahl der einheitlichen Bestandteile beruhen,'."\n".
                     'die zu einem Ding gehören, deren Zusammenhang das Ding formen.'."\n".
-                    'Damit ist jedes im Grunde einheitliche Bestandteil, jedes Fundamentalteilchen, eines Dings eine Masseneinheit oder eine Energieeinheit.'."\n".
+                    'Damit ist jedes im Grunde einheitliche Bestandteil, jedes Fundamentalteilchen, eines Dings eine Masseneinheit oder eine Energieeinheit (differenziert in Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-EnergieSumWQEnergie} beschreiben):'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'FP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E  =  n_{wq} \cdot E_{wq}  }',
+                                               label_name => 'OM:FrQFT:FirstPrinziples:Vortext:Equ-EnergieSumWQEnergie', label_text => '\\name{OM:FrQFT:FirstPrinziples:Vortext:Equ-EnergieSumWQEnergie}', label_incr => true),
+                      array( display => 'on',  latex => '{  m  =  n_{wq} \cdot m_{wq}  }',
+                                               label_name => 'OM:FrQFT:FirstPrinziples:Vortext:Equ-EMasseSumWQEnergie', label_text => '\\name{OM:FrQFT:FirstPrinziples:Vortext:Equ-EMasseSumWQEnergie}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
                     'Dies passt auch sehr plausibel zu deren konstanten Geschwindigkeit.'."\n",
                       'Ist das Ding ein Elementarteilchen, dann äußert sich die Abzählbarkeit seiner einheitlichen Bestandteile bei der Messung seiner Energie oder seines Impulses.'."\n".
                     'In der \\jump{OM:FrQFT:HeisenbergUnschaerfe}{Abzählinterpretation der Heisenbergschen Unschärferelation} spiegelt sich die prinzipielle Unschärfe einer solchen Abzählung wider.'."\n".
@@ -164,26 +172,18 @@
                                                footnote => '\\const{FrQFT_g_footnote_text_AequivalMasseEnergie}'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Einsteins Allgemeingültigkeit der Äquivalenz von Masse und Energie gehört also zum Ausgangspunkt der fraktalen Quanten-Fluss-Theorie.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinziples:Vortext:XXX', text =>
                                            
                 'Modellprinzip', subline =>
-                  'XXX')),
+                  'Die Festlegung der tiefsten betrachteten fraktalen Ebene')),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Auf der tiefsten betrachteten fraktalen Ebene unseres sich aus der fraktalen Quanten-Fluss-Theorie ergebenden Modells gilt die Konstanz der Geschwindigkeit'."\n".
+                    'der kleinsten Wirkungsquanten als absolut.'."\n".
+                    'Ebenso dann auch die Konstanz ihrer Masse und Energie.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
