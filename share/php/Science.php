@@ -3,7 +3,7 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 10.08.2020, 08:00h
+  // #: Stand: 17.01.2021, 19:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
@@ -86,6 +86,7 @@
   //           20200606:  +:  "$Sc_g_equation_replace_ary":  New element '  \mapsto  '.
   //           20200610:  +:  "$Sc_g_equation_replace_ary":  New elements '  ≔  ', '  ?=  ', '  ?\in  '.
   //                      >:  "$Sc_g_equation_replace_ary":  Redefine element '  :=  '.
+  //           20210117:  !:  "$Sc_g_Text_replace_preg_ary", 'latexmath':  Default changed from 'Google' to 'MathJax'.
   // v01.004:  20130609:  !:  Include "Tools_v01_004.php"
   //           20130628:  +:  "$Glo_PathRel_back" added;
   // v01.003:  20130522:  !:  Include "Tools_v01_002.php"  -->  "Tools_v01_003.php"
@@ -499,7 +500,8 @@
                                                   'if ($value[0] != null)'.
                                                   '{'.
                                                   //'  print_r( $value[1][0]);'.
-                                                  '  return Sc_f_equation_latex_html( $value[0][0], ($value[1] == null) ? "" : (($value[1][0] == null) ? "" : $value[1][0]), ($value[1] == null) ? "Google" : (($value[1][1] == null) ? "Google" : $value[1][1]), "inline");'.
+                                                  //-- '  return Sc_f_equation_latex_html( $value[0][0], ($value[1] == null) ? "" : (($value[1][0] == null) ? "" : $value[1][0]), ($value[1] == null) ? "Google" : (($value[1][1] == null) ? "Google" : $value[1][1]), "inline");'.
+                                                  '  return Sc_f_equation_latex_html( $value[0][0], ($value[1] == null) ? "" : (($value[1][0] == null) ? "" : $value[1][0]), ($value[1] == null) ? "MathJax" : (($value[1][1] == null) ? "MathJax" : $value[1][1]), "inline");'.
                                                   '}'.
                                                   'else {return "Error: \\latexmath: Parameter amount is not 1 and 2 optional! $match[0]";}',
                                                 //callback_f => 'XXX_temp_internal_function_name',
@@ -797,7 +799,7 @@
           break;
           
         case 'MathJax':
-          // #: It is not neccessary to have more than one latex strings here. So lets put them together.
+          // #: It is not necessary to have more than one latex strings here. So lets put them together.
           $latex_str = '';
           
           foreach ($latex as $value)

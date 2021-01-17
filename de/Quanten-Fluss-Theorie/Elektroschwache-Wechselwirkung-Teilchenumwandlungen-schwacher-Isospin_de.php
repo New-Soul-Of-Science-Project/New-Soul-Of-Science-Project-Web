@@ -282,10 +282,10 @@
                     'ordnet die Orientierungen und die Vorzeichen der Spins den Teilchen und Antiteilchen in einer Konvention zu.'."\n".
                     'Dabei gibt es die dort dargestellten, folgenden Möglichkeiten:'."\n"),
                   array( 'normal',
-                    '\\latexmath{  \mathrm{\uparrow}\overset{\rightarrow}{x}  },'."\n".
-                    '\\latexmath{  \mathrm{\downarrow}\overset{\leftarrow}{x}  },'."\n".
-                    '\\latexmath{  \mathrm{\uparrow}\overset{\leftarrow}{\overline{x}}  } und'."\n".
-                    '\\latexmath{  \mathrm{\downarrow}\overset{\rightarrow}{\overline{x}}  }.'."\n"),
+                    '\\latexmath[][Google]{  \mathrm{\uparrow}\overset{\rightarrow}{x}  },'."\n".
+                    '\\latexmath[][Google]{  \mathrm{\downarrow}\overset{\leftarrow}{x}  },'."\n".
+                    '\\latexmath[][Google]{  \mathrm{\uparrow}\overset{\leftarrow}{\overline{x}}  } und'."\n".
+                    '\\latexmath[][Google]{  \mathrm{\downarrow}\overset{\rightarrow}{\overline{x}}  }.'."\n"),
                   array( 'normal',
                     'Die vertikalen Pfeile ↓ und ↑ stehen für den negativen (down) und positiven (up) äußeren Spin.'."\n".
                     'Die horizontalen Pfeile ← und → stehen für den negativen (backward) und positiven (forward) inneren Spin.'."\n".

@@ -57,7 +57,7 @@
                       'Ich hatte das Bild im Kopf, dass zum Beispiel das Licht quantisiert ist, es also aus Photonen, den Lichtquanten besteht, und eben keine kontinuierliche Lichtwelle ist.'."\n".
                     'Aber er quantisiert – also zerlegt – nicht die Lichtwelle in Photonen, sondern zeigt uns dort, dass jedes Photon selber in seiner Energie quantisiert erscheint, wie ich nachfolgend erläutern werde.'."\n".
                     'Die Abzählinterpretation der Heisenbergschen Unschärferelation – er nennt sie, wie viele andere auch, Unbestimmtheitsrelation – legt nahe, dass jedes Photon, und auch jedes andere Elementarteilchen,'."\n".
-                    'nur aus \\italic{ganzen} Anzahlen an \\latexmath[][MathJax]{h} bestehen kann.'."\n",
+                    'nur aus \\italic{ganzen} Anzahlen an \\latexmath{h} bestehen kann.'."\n",
                       'Nachdem ich dies eine zeitlang durchdacht und verstanden hatte, löste es bei mir einen nachhaltigen Aha-Effekt aus, denn zu dem Zeitpunkt bestanden meine Elementarteilchen'."\n".
                     'schon lange Zeit aus einheitlichen Fundamentalteilchen.'."\n".
                     'Ich konnte meine Fundamentalteilchen jetzt noch viel besser mit der Quantenphysik in Zusammenhang bringen und benannte sie schließlich auch in Wirkungsquanten um.'."\n"))),
@@ -65,9 +65,9 @@
                   array( 'text', array( Shape  => 'italic', text => array(
                       'Nach der Abzählinterpretation der Heisenbergschen Unschärferelation haben wir es in der Quantenphysik mit einer doppelten Quantisierung zu tun:'."\n",
                       'Einstein zeigte 1905 in seiner Arbeit zur Quantisierung des Lichts, dass Lichtwellen aus Lichtquanten der Energie'."\n".
-                      '\\latexmath[][MathJax]{E = f \cdot h} (siehe \\jumpname{OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant}) bestehen müssen.'."\n".
+                      '\\latexmath{E = f \cdot h} (siehe \\jumpname{OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant}) bestehen müssen.'."\n".
                       'Dies gilt schließlich für alle Elementarteilchen.'."\n",
-                        'Heisenberg zeigt uns mit seiner Unschärferelation, dass auch die Lichtquanten, und schließlich alle Elementarteilchen, aus Quanten der Wirkung \\latexmath[][MathJax]{h},'."\n".
+                        'Heisenberg zeigt uns mit seiner Unschärferelation, dass auch die Lichtquanten, und schließlich alle Elementarteilchen, aus Quanten der Wirkung \\latexmath{h},'."\n".
                       '– Wirkungsquanten, die letzendlich Energiequanten sind – bestehend gedacht werden können.'."\n".
                       'Jedenfalls, wenn wir die Perspektive der Abzählinterpretation einnehmen.'."\n"))),
                       /*'XXX'."\n".
@@ -97,7 +97,7 @@
                     'Durch den \\jump{OM:FrQFT:NeuePhysik:Loesungsansatz}{Lösungsansatz des ›Problems der Zeit‹} und das \\jump{OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:Exist}{Existenzprinzip der Elementarteilchen} wird klar, dass jedes Elementarteilchen'."\n".
                     'aus einer verbundenen Struktur besteht, aus einem System von \\jump{*FrQFT:Fundamentalteilchen-Herlei}{Fundamentalteilchen}, welches seine Feinstruktur bildet.'."\n".
                     'Die nachfolgende Entwicklung der Abzählinterpretation legt nahe, dass die Feinstruktur aus einheitlichen Fundamentalteilchen besteht, die von mir aus diesem Grund'."\n".
-                    '\\jump{*Wirkungsquanten-Herlei}{Wirkungsquanten} genannt werden, von denen jedes die Wirkung \\latexmath[][MathJax]{h} hat.'."\n".
+                    '\\jump{*Wirkungsquanten-Herlei}{Wirkungsquanten} genannt werden, von denen jedes die Wirkung \\latexmath{h} hat.'."\n".
                     'Im Verlauf der Entwicklung der \\jump{OM:FrQFT:NeuePhysik}{neuen Physik der Quanten-Fluss-Theorie} wird deutlich, dass die Elementarteilchen aus zu Fäden zusammengesetzen Wirkungsquanten bestehen.'."\n".
                     'Sie werden folglich als \\jump{*Wirkungsquanten-Strings-Herlei}{Wirkungsquanten-Strings} bezeichnet, weil sie den Strings der Stringtheorie wage ähneln'."\n".
                     '(siehe \\jumpname{OM:FrQFT:HeisenbergUnschaerfe:Fig-Elapson}, \\jumpname{OM:FrQFT:HeisenbergUnschaerfe:Fig-Photon}'."\n".

@@ -548,12 +548,16 @@
                     'Dazu schauen wir nach ihrer Beziehung zur Energie des Elementarteilchen-Strings und drücken diese schließlich durch seine Masse aus:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  E_{ele}  =  \hbar \cdot \omega_{ele}  }',  // #: Siehe https://www.grund-wissen.de/physik/mechanik/kinematik/kreisfoermige-bewegungen.html#equation-eqn-bahngeschwindigkeit
+                      array( display => 'on',  latex => '{  E_{ele}  =  h \cdot f_{ele}  }',
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-EinsteinEnergieLichtQuant-1', label_text => '\\jump{OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant}{\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-EinsteinEnergieLichtQuant-1}}', label_incr => false,
+                                               footnote => 'Vgl. \\cite{wiki:PlanckschesWirkungsquantum2013}, Definition.'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  E_{ele}  =  h \cdot \frac{ \omega_{ele} }{ 2 \pi }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  E_{ele}  =  \hbar \cdot \omega_{ele}  }',  // #: Siehe https://www.grund-wissen.de/physik/mechanik/kinematik/kreisfoermige-bewegungen.html#equation-eqn-bahngeschwindigkeit
                                                label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-aus-omega', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-aus-omega}', label_incr => true,
                                                footnote => 'Vgl. \\cite{wiki:PlanckschesWirkungsquantum2013}, Definition.'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \omega_{ele}  =  \frac{ E_{ele} }{ \hbar }  }'),
                       array( display => 'on',  latex => '{  E_{ele}  =  m_{ele} \cdot {_{\lowZero}c^{2}}  }',
-                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse}', label_incr => true,
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse-1', label_text => '\\jump{OM:FrQFT:FirstPrinziples:Vortext:Equ-E-ele-aequi-zu-Masse}{\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse-1}}', label_incr => false,
                                                footnote => '\\const{FrQFT_g_footnote_text_AequivalMasseEnergie}'),
                       array( display => 'on',  latex => '{  \Rightarrow  {T_{kegel}}  =  g_{\omega} \cdot \frac{ \hbar }{ E_{ele} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  {T_{kegel}}  =  g_{\omega} \cdot \frac{ \hbar }{ m_{ele} \cdot {_{\lowZero}c^{2}} }  }'),
@@ -591,18 +595,16 @@
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ h \cdot g_{\omega} \cdot \frac{ \hbar }{ n_{wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}} } \cdot n_{wq} \cdot f_{ele} }{ r }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}p_{abl}}  =  g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} \cdot {_{\lowZero}c^{2}} } \cdot \frac{ h \cdot n_{wq} \cdot f_{ele} }{ n_{wq} \cdot r }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  {_{r}p_{abl}}  =  g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} \cdot {_{\lowZero}c^{2}} } \cdot \frac{ h \cdot n_{wq} \cdot f_{ele} }{ n_{wq} \cdot r }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}p_{abl}}  =  g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} \cdot {_{\lowZero}c^{2}} } \cdot \frac{ h \cdot f_{ele} }{ r }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Über \\jump{OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit}{Plancks Proportionalität von Energie und Frequenz} und Einstens Energie-Masse-Äquivalenz aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse}'."\n".
+                    'Über \\jump{OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit}{Plancks Proportionalität von Energie und Frequenz} aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-EinsteinEnergieLichtQuant-1}'."\n".
+                    'und \\jump{OM:FrQFT:FirstPrinziples:Vortext:Abzählprinzip}{Einstens Energie-Masse-Äquivalenz} aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse-1}'."\n".
                     'können wir die effektiv störende Wirkung durch die Masse \\term{m_{ele}} ausdrücken.'."\n".
                     'So formuliert benötigen wir diese im weiteren Verlauf:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  E_{ele}  =  h \cdot f_{ele}  }',
-                                               /* label_name =>'', */ label_text => '\\jumpname{OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant}', label_incr => false,
-                                               footnote => 'Vgl. \\cite{wiki:PlanckschesWirkungsquantum2013}, Definition.'),
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  =  g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} \cdot {_{\lowZero}c^{2}} } \cdot \frac{ E_{ele} }{ r }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}p_{abl}}  =  g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} \cdot {_{\lowZero}c^{2}} } \cdot \frac{ m_{ele} \cdot {_{\lowZero}c^{2}} }{ r }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}p_{abl}}  =  g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} } \cdot \frac{ m_{ele} }{ r }  }'),

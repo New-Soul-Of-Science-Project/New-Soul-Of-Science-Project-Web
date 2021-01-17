@@ -11,7 +11,7 @@
       <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:FrQFT:WieMessenWirInDerPhysik'); ?>
 
 	
-          <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
+          <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
                     '\\bold{Postulate}',
@@ -34,13 +34,13 @@
                     'Findet aufgrund stark geänderter Bedingungen ein sogennanter Phasenübergang statt, dann ändern sich die emergenten Phänomene oft so grundlegend,'."\n".
                     'dass sie nicht mit den selben Formeln beschreibbar erscheinen. \\color{*Bearb}{(Vgl. Mäder, Alexander. WISSENSCHAFTSPHILOSOPHIE. Wie universell sind Naturgesetze? SdW 2.20, S. 82-85.)}'."\n",
                       'Ein Ansatz, der die Physik aus einem Naturprinzip heraus beschreibt, bietet die Möglichkeit, einen Grundrahmen der Interpretation des Geschehens zu schaffen'."\n".
-                    'und auf dessen Basis die Beobachtungen zu deuten und in ein entsprechendes Scenario einzubetten.'."\n".
-                    'Anschließend lässt sich feststellen, ob die sich aus allen Beobachtungen ergebenden Scenarien auf diese Weise logisch, plausibel ineinandergreifen.'."\n",
+                    'und auf dessen Basis die Beobachtungen zu deuten und in ein entsprechendes Szenario einzubetten.'."\n".
+                    'Anschließend lässt sich feststellen, ob die sich aus allen Beobachtungen ergebenden Szenarien auf diese Weise logisch, plausibel ineinandergreifen.'."\n",
                       'Das bedeutet, das generelle Naturprinzip und seine ergänzenden Naturprinzipien beschreiben die Natur nicht vollständig in jedem Detail.'."\n".
-                    'Mit ihrer Hilfe ist aber aufgrund der Beobachungen ein Schluss auf die unterschiedlichen Scenarien möglich.'."\n"))),
+                    'Mit ihrer Hilfe ist aber aufgrund der Beobachungen ein Schluss auf die unterschiedlichen Szenarien möglich.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinziples:Vortext:XXX', text =>
                                            
-                'Das Strukturprinzip', subline =>
+                'Strukturprinzip', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Dies ist das generelle Naturprinzip.'."\n".
@@ -51,7 +51,7 @@
                     'Dabei fällt auch eine detailierte Erklärung des Djet-Neheh-Dualismus unter den Tisch, die ich später nachhole, um es hier nicht zu verkomplizieren.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinziples:Vortext:Existenzprinzip', text =>
                                            
-                'Das Existenzprinzip', subline =>
+                'Existenzprinzip', subline =>
                   '… beruht auf dem Djet-Neheh-Dualismus')),
                   array( 'text', array( text => array(
                     'Jede Existenz beruht auf unserer Möglichkeit zur Unterscheidung von anderen Existenzen:'."\n"))),
@@ -67,7 +67,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Nur auf diese Weise können wir Existenz feststellen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinziples:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinziples:Vortext:Eigenschaftsprinzip', text =>
                                            
                 'Eigenschaftsprinzip', subline =>
                   '')),
@@ -80,7 +80,7 @@
                   array( 'text', array( text => array(
                     'Physik macht nur Sinn, wenn sich die Eigenschaften der Dinge verändern können, ihre Bestandteile also in einem dynamischen Zusammenhang stehen und sich'."\n".
                     'daher \\jump{OM:FrQFT:WasIstPhysik:Vortext:WarumDynamStrukt}{immer bewegen}.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinziples:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinziples:Vortext:Vereinfachungsprinzip', text =>
                                            
                 'Vereinfachungsprinzip', subline =>
                   '')),
@@ -117,7 +117,8 @@
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'invis', Title =>
-                '\\color{*Bearb}{Später in die Entwicklung der neuen Physik …}', TitleVis => '\\color{*Bearb}{Später in die Entwicklung der neuen Physik:}', ParagraphList => array(
+                '\\color{*Bearb}{Später in die Entwicklung der neuen Physik …}', TitleVis =>
+                '\\color{*Bearb}{Später in die Entwicklung der neuen Physik:}', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Das Fraktalitätsprinzip macht deutlich, dass es beliebig tief verschachtelte Organisationsebenen der Struktur gibt.'."\n".
                     'Das Vereinfachungsprinzip besagt, dass im sehr Kleinen Organisationsebenen existieren, in denen die Bestandteile der Dinge in der höheren, größeren'."\n".
@@ -131,6 +132,61 @@
                     'XXX'."\n"))),
                     ))),
                       
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinziples:Vortext:Abzählprinzip', text =>
+                                           
+                'Abzählprinzip', subline =>
+                  'Äquivalenz von Masse und Energie')),
+                  array( 'text', array( text => array(
+                    'Nach dem \\jump{OM:FrQFT:FirstPrinziples:Vortext:Vereinfachungsprinzip}{Vereinfachungsprinzip} haben wir es bei extremer Auflösung, in der Fraktalebene unterhalb der Photonen – der Lichtteilchen –,'."\n".
+                    'mit ziemlich einheitlichen Bestandteilen unserer Natur zu tun.'."\n".
+                    'Das \\jump{OM:FrQFT:FirstPrinziples:Vortext:Eigenschaftsprinzip}{Eigenschaftsprinzip} wiederum besagt, das alle Eigenschaften der Dinge aus ihrer Struktur entstehen.'."\n",
+                      'Das Abzählprinzip erkennt, das zwei wesentliche Eigenschaften der Dinge, ihre Masse und ihre Energie, einfach auf der Anzahl der einheitlichen Bestandteile beruhen,'."\n".
+                    'die zu einem Ding gehören, deren Zusammenhang das Ding formen.'."\n".
+                    'Damit ist jedes im Grunde einheitliche Bestandteil, jedes Fundamentalteilchen, eines Dings eine Masseneinheit oder eine Energieeinheit.'."\n".
+                    'Dies passt auch sehr plausibel zu deren konstanten Geschwindigkeit.'."\n",
+                      'Ist das Ding ein Elementarteilchen, dann äußert sich die Abzählbarkeit seiner einheitlichen Bestandteile bei der Messung seiner Energie oder seines Impulses.'."\n".
+                    'In der \\jump{OM:FrQFT:HeisenbergUnschaerfe}{Abzählinterpretation der Heisenbergschen Unschärferelation} spiegelt sich die prinzipielle Unschärfe einer solchen Abzählung wider.'."\n".
+                    'Und hieraus ergibt sich auch Plancks Proportionalität von Energie und Frequenz, die uns als ›Einsteinsche Gleichung für das Lichtquant‹\\footnote{\\const{FrQFT_g_footnote_text_EinsteinGleichLichtq}} bekannt ist:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'FP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E_{ele}  =  h \cdot f_{ele}  }',
+                                               /* label_name =>'', */ label_text => '\\jumpname{OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant}', label_incr => false,
+                                               footnote => 'Vgl. \\cite{wiki:PlanckschesWirkungsquantum2013}, Definition.'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auch ist ersichtlich, dass es sich bei der Masse und der Energie eines Dings im Grunde um das gleiche handelt, was zur Äquivalenz von Masse und Energie führt.'."\n".
+                    'Einsteins berühmte Formel ergibt sich hieraus also selbstredend, weil die Proportionalitätskonstante \\hidden{\\latexmath{ {_{\lowZero}c^{2}} }}\\term{_{0}c^{2}} ist,'."\n".
+                    'wie wir aus vielen experimentellen Beobachtungen wissen:\\footnote{Die Äquivalenz von Masse und Energie ist keine reine Erkenntnis der Relativitätstheorie und eben auch in vielen verschiedenen Experimenten aus der Quantenphysik bestätigt: \\\\ \\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AequivalenzVonMasseUndEnergie2013}.}'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'FP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E  =  m \cdot {_{\lowZero}c^{2}}  }',
+                                               label_name => 'OM:FrQFT:FirstPrinziples:Vortext:Equ-E-ele-aequi-zu-Masse', label_text => '\\name{OM:FrQFT:FirstPrinziples:Vortext:Equ-E-ele-aequi-zu-Masse}', label_incr => true,
+                                               footnote => '\\const{FrQFT_g_footnote_text_AequivalMasseEnergie}'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinziples:Vortext:XXX', text =>
+                                           
+                'Modellprinzip', subline =>
+                  'XXX')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinziples:Vortext:Wechselwirkungsprinzip', text =>
                                            
                 'Wechselwirkungsprinzip', subline =>
@@ -148,7 +204,8 @@
                     'Das bedeutet, die Regelprozesse halten diese Pole in einem dynamischen Spiel auseinander und gleichzeitig auch zusammen.'."\n"))),
                       
                   array( 'fade-in-area', array( Display => 'invis', Title =>
-                'Zusätzliche Information …', TitleVis => 'Zusätzliche Information:', ParagraphList => array(
+                'Elementares Bewusstsein …', TitleVis =>
+                'Elementares Bewusstsein:', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Über die Selbstorganisation jeder Existenz durch Regelprozesse kommt \\jump{OM:SpaLeb:Bewusstsein:Vortext:Elementarprozess}{elementares Bewusstsein}'."\n".
                     'als grundlegender Bestandteil in die neue Physik.'."\n".
@@ -162,22 +219,6 @@
                 'XXX', subline =>
                   'XXX')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinziples:Vortext:XXX', text =>
-                                           
-                'XXX', subline =>
-                  'XXX')),
-                  array( 'text', array( text => array(
-                    'Abzählprinzip?'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
