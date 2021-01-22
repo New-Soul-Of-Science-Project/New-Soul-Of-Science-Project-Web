@@ -70,12 +70,6 @@
                         'Heisenberg zeigt uns mit seiner Unschärferelation, dass auch die Lichtquanten, und schließlich alle Elementarteilchen, aus Quanten der Wirkung \\latexmath{h},'."\n".
                       '– Wirkungsquanten, die letzendlich Energiequanten sind – bestehend gedacht werden können.'."\n".
                       'Jedenfalls, wenn wir die Perspektive der Abzählinterpretation einnehmen.'."\n"))),
-                      /*'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n"))),*/
                       
                   array( 'headline', array( jump_name => 'OM:FrQFT:HeisenbergUnschaerfe:Vortext:XXX', text =>
                                            

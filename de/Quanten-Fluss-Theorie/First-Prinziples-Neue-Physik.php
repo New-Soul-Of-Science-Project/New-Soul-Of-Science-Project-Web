@@ -140,9 +140,10 @@
                     'Nach dem \\jump{OM:FrQFT:FirstPrinziples:Vortext:Vereinfachungsprinzip}{Vereinfachungsprinzip} haben wir es bei extremer Auflösung, in der Fraktalebene unterhalb der Photonen – der Lichtteilchen –,'."\n".
                     'mit ziemlich einheitlichen Bestandteilen unserer Natur zu tun.'."\n".
                     'Das \\jump{OM:FrQFT:FirstPrinziples:Vortext:Eigenschaftsprinzip}{Eigenschaftsprinzip} wiederum besagt, das alle Eigenschaften der Dinge aus ihrer Struktur entstehen.'."\n",
-                      'Das Abzählprinzip erkennt, das zwei wesentliche Eigenschaften der Dinge, ihre Masse und ihre Energie, einfach auf der Anzahl der einheitlichen Bestandteile beruhen,'."\n".
-                    'die zu einem Ding gehören, deren Zusammenhang das Ding formen.'."\n".
-                    'Damit ist jedes im Grunde einheitliche Bestandteil, jedes Fundamentalteilchen, eines Dings eine Masseneinheit oder eine Energieeinheit (differenziert in Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-EnergieSumWQEnergie} beschreiben):'."\n"))),
+                      'Das Abzählprinzip erkennt, das zwei wesentliche Eigenschaften der Dinge, ihre Masse und ihre Energie, einfach auf der Anzahl \\term{n_{wq}}'."\n".
+                    'der einheitlichen Bestandteile beruhen, die zu einem Ding gehören, deren Zusammenhang das Ding formen.'."\n".
+                    'Damit ist jedes im Grunde einheitliche Bestandteil, jedes Fundamentalteilchen, eines Dings eine konstante Masseneinheit \\term{m_{wq}}'."\n".
+                    'oder eine konstante Energieeinheit \\term{E_{wq}} (allgemeiner in Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-EnergieSumWQEnergie} beschrieben):'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'FP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E  =  n_{wq} \cdot E_{wq}  }',
@@ -151,10 +152,18 @@
                                                label_name => 'OM:FrQFT:FirstPrinziples:Vortext:Equ-EMasseSumWQEnergie', label_text => '\\name{OM:FrQFT:FirstPrinziples:Vortext:Equ-EMasseSumWQEnergie}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Dies passt auch sehr plausibel zu deren konstanten Geschwindigkeit.'."\n",
-                      'Ist das Ding ein Elementarteilchen, dann äußert sich die Abzählbarkeit seiner einheitlichen Bestandteile bei der Messung seiner Energie oder seines Impulses.'."\n".
-                    'In der \\jump{OM:FrQFT:HeisenbergUnschaerfe}{Abzählinterpretation der Heisenbergschen Unschärferelation} spiegelt sich die prinzipielle Unschärfe einer solchen Abzählung wider.'."\n".
-                    'Und hieraus ergibt sich auch Plancks Proportionalität von Energie und Frequenz, die uns als ›Einsteinsche Gleichung für das Lichtquant‹\\footnote{\\const{FrQFT_g_footnote_text_EinsteinGleichLichtq}} bekannt ist:'."\n"))),
+                    'Die Energieeinheit passt auch sehr plausibel zu deren konstanten Geschwindigkeit.'."\n",
+                      'Ist das Ding ein Elementarteilchen, dann äußert sich die Abzählbarkeit seiner einheitlichen Bestandteile bei der Messung seiner Energie \\term{E_{ele}} oder seines Impulses.'."\n".
+                    'In der \\jump{OM:FrQFT:HeisenbergUnschaerfe}{Abzählinterpretation der Heisenbergschen Unschärferelation} spiegelt sich die prinzipielle Unschärfe einer solchen Abzählung wider,'."\n".
+                    'wenn wir davon ausgehen, dass es bei der Energie um die Zählung von einheitlichen Wirkungen \\term{h} (Plancksches Wirkungsquantum) pro Zeit geht.'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                      'Die in der Abzählinterpretation der Heisenbergschen Unschärferelation gezählten diskreten Wirkungen \\term{h} entsprechen den genannten einheitlichen Fundamentalteilchen'."\n".
+                      'der Elementarteilchen, weshalb ich diese \\bold{Wirkungsquanten (wq)} nenne.'."\n"))),
+                                                      
+                  array( 'text', array( text => array(
+                    'Hieraus ergibt sich dann Plancks allgemeine Proportionalität von Energie und de-Broglie-Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}}'."\n".
+                    'der Elementarteilchen, die uns auch in Form von ›Einsteinsche Gleichung für das Lichtquant‹\\footnote{\\const{FrQFT_g_footnote_text_EinsteinGleichLichtq}} bekannt ist:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'FP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E_{ele}  =  h \cdot f_{ele}  }',
