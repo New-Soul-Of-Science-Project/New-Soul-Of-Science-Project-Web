@@ -1254,12 +1254,12 @@
                     'Aus diesem Grund nenne ich die Körner \\italic{Wirkungsquanten}.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation:EE', text =>
                                            
-                'Energie-, Impuls- und Masseeinheiten')),
+                'Energie-, Impuls- und Masseneinheiten')),
                   // #: *Energieeinheiten-Masse-Impuls-Herlei
                   // #: *Wirkungsquanten-GeschwKonst-Einfuehr
                   array( 'text', array( text => array(
                     'Die Abzählinterpretation der Heisenbergschen Unschärferelation bedeutet hiernach, dass die Wirkungsquanten \\italic{Energieeinheiten}\\hidden{Ref: *Energieeinheiten-Masse-Impuls-Herlei} sind, welche die Struktur der Elementarteilchen bilden und von einem Beobachter oder Messinstrumment nur ganz gezählt werden können.'."\n".
-                    'Wirkungsquanten sind so auch als \\italic{Impuls-}\\hidden{Ref: *Energieeinheiten-Masse-Impuls-Herlei} oder \\italic{Masseeinheiten}\\hidden{Ref: *Energieeinheiten-Masse-Impuls-Herlei} zu verstehen.'."\n".
+                    'Wirkungsquanten sind so auch als \\italic{Impuls-}\\hidden{Ref: *Energieeinheiten-Masse-Impuls-Herlei} oder \\italic{Masseneinheiten}\\hidden{Ref: *Energieeinheiten-Masse-Impuls-Herlei} zu verstehen.'."\n".
                     'Es sind also die Wirkungsquanten, die sich auf Helixspiralbahnen mit \\jump{*LG-erhoete-LoesAnsatz}{konstanter erhöhter Lichtgeschwindigkeit} bewegen, mit der neuen \\italic{konstanten Wirkungsquanten-Geschwindigkeit}\\hidden{Ref: *Wirkungsquanten-GeschwKonst-Einfuehr}.'."\n".
                     'Sie bilden durch Wechselwirkung die nachfolgend beschriebenen, rotierenden \\jump{*Wirkungsquanten-Strings-Herlei}{Ringe der Elementarteilchen}.'."\n".
                     'Die Heisenbergsche Unschärferelation ergibt sich in der Quanten-Fluss-Theorie direkt aus der Wahrnehmung der Feinstruktur der Elementarteilchen durch das Messinstrumment eines Beobachters.'."\n",
@@ -1839,7 +1839,7 @@
                     'Die Massen des Kosmos liefern in Form des Fixsternhimmels durch ihre im Mittel in alle Richtungen gleichförmige Verteilung, dem Machschen Prinzip\\footnote{\\const{FrQFT_g_footnote_text_MachPrinz}} entsprechend, ein ausgezeichnetes Bezugssystem.'."\n".
                     'Dies wird im Standardmodell der Kosmologie\\footnote{\\const{FrQFT_g_footnote_text_SMK}} auch als \\jump{OM:VRT:Vereinheitlichung-RT-LET:Kosmologisches-Prinzip-und-flacher-Kosmos}{Kosmologisches Prinzip}\\footnote{\\const{FrQFT_g_footnote_text_KosmoPrinz}} bezeichnet.'."\n".
                     'In der Quanten-Fluss-Theorie soll dieses dem ausgezeichneten Bezugssystem des Licht-Materie-Mediums gleich sein.'."\n".
-                    'Weil Wirkungsquanten Energie- und damit auch Masseeinheiten sind, entspricht die durchschnittliche isotropie ihrer Bewegung im Licht-Materie-Medium dem Fixsternhimmel.'."\n".
+                    'Weil Wirkungsquanten Energie- und damit auch Masseneinheiten sind, entspricht die durchschnittliche isotropie ihrer Bewegung im Licht-Materie-Medium dem Fixsternhimmel.'."\n".
                     'Denn auch die Wirkungsqunten sind, wie die Sterne, im Kosmos im Mittel in alle Richtungen gleichförmig bewegt und verteilt.'."\n",
                       'Unter Berücksichtigung des Bezugssystems des Licht-Materie-Mediums der Quanten-Fluss-Theorie – des Fixsternhimmels – ist die Allgemeine Relativitätstheorie in ihrem wesentlichen Kern eine Annäherung an die \\jump{OM:FrQFT:Gravitation}{Gravitation} der neuen Theorie.'."\n".
                     'Sie entspricht dem ersten Ansatz der neuen \\jump{OM:FrQFT:NeuePhysik:Quantengravitation}{Quantengravitation}.'."\n".

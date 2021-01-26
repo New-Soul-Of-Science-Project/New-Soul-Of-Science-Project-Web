@@ -489,7 +489,7 @@
                                                //callcode => '',
                                                callback_f => 'Sc_f_replace_callback__latexcommand__underscore',
                                             ),
-                                      'latexmath' =>     // #: It is not working this way, because latex includes '{' and '}' as well. A method where only searching for '\latexmath' and than looking for the Balance of an array of '[]' and '{}' would be better and can handle recursion.
+                                      'latexmath' =>     // #: It is not working this way, because latex includes '{' and '}' as well. A method where only searching for '\latexmath' and then looking for the Balance of an array of '[]' and '{}' would be better and can handle recursion.
                                         array( type => 'latexcommand',
                                                search => '\\latexmath',
                                                param_dim => 1,

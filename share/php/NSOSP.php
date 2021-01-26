@@ -1091,8 +1091,8 @@
                                        keywords => '',
                                        text_titel_h1 => 'Heisenbergsche Unschärferelation und Plancksches Wirkungsquantum',
                                        text_titel_short => 'Heisenbergsche Unschärferelation',
-                                       text_undertitel_h2 => 'Ein prinzipielles Abzählproblem als neuer Zugang zur Quantenmechanik und Quantengravitation',
-                                       //text_titel_discr_h3 => 'Fundamentale Formeln der Quantenmechanik werden als Folge eines Abzählproblems mit „Zufallskomponente“ verstanden.',
+                                       text_undertitel_h2 => 'Ein prinzipielles Abzählproblem als neuer Zugang zur Vereinheitlichung der Physik',
+                                       text_titel_discr_h3 => 'Eine neue körnige Struktur von dynamischen Energieeinheiten und Masseneinheiten ist Grundlage der Quantenmechanik und Quantengravitation',
                                        jump_ary => array(
                                               'OM:FrQFT:HeisenbergUnschaerfe:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
@@ -1224,7 +1224,7 @@
                                               'OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation' => array( headline_text => 'Heisenbergsche Unschärferelation', headline_text_short => 'Heisenbergsche Unschärferelation'),
                                                 'OM:FrQFT:NeuePhysik:Fig-HeisenbUnschaerf' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation:WQ' => array( headline_text => 'Wirkungsquanten', headline_text_short => 'Wirkungsquanten'),
-                                                'OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation:EE' => array( headline_text => 'Energie-, Impuls- und Masseeinheiten', headline_text_short => 'Energie-, Impuls- und Masseeinheiten'),
+                                                'OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation:EE' => array( headline_text => 'Energie-, Impuls- und Masseneinheiten', headline_text_short => 'Energie-, Impuls- und Masseneinheiten'),
                                                          
                                               'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten' => array( headline_text => 'Strings aus Wirkungsquanten', headline_text_short => 'Strings aus Wirkungsquanten'),
                                                 'OM:FrQFT:NeuePhysik:Fig-Wq-String-Unmoeg-Konstella' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),

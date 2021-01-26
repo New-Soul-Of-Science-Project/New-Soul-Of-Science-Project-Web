@@ -29,7 +29,8 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
-                    '• Im Kapitel \\jumpname[*Bearb]{OM:FrQFT:HeisenbergUnschaerfe:Schlussfolgerung-fuer-die-Quantenmechanik} steht: \\quote{Diese Ungenauigkeit ist der eigentliche Grund für das Auftreten statistischer Zusammenhänge in der Quantenmechanik.}\\footnote[*Bearb]{\\cite{Heisenberg:UeberQuantKinMech1927Scan}, S. 1.} Sollte dies nicht (auch) in den Vortext?',
+                    '• Im Kapitel \\jumpname[*Bearb]{OM:FrQFT:HeisenbergUnschaerfe:Schlussfolgerung-fuer-die-Quantenmechanik} steht: \\quote{Diese Ungenauigkeit ist der eigentliche Grund für das Auftreten statistischer Zusammenhänge in der Quantenmechanik.}\\footnote[*Bearb]{\\cite{Heisenberg:UeberQuantKinMech1927Scan}, S. 1.} Sollte dies nicht (auch) in den Vortext? Dieses Zitat ist wenig passend.',
+                    '– Auf Seite 2 seiner Arbeit steht, dass aufgrund der gefundenen Relation (dort angegeben) die Begriffe Ort und Geschwindigkeit zu überdenken seien. Ich denke allerdings, dass die hier aufgezeigte Abzählinterpretation es nicht notwendig macht, diese Begriffe in Bezug auf die Realität völlig neu zu überdenken. Denn es wird klar, dass „nur“ die Wahrnehmung prinzipiell unscharf ist und nicht die Realität. Allerdings hat auch die Realität in dem Sinne eine Unschärfe, als dass eine gebundene Struktur nicht wirklich einen Schwerpunkt hat, weil die Wechselwirkungen innerhalb der Struktur eine Verzögerung der Reaktionen der Bestandteile aufeinander mit sich bringen, als natürlich auch die dem zugrunde liegende räumliche Ausdehnung eine Reduktion auf einen Punkt nur bedingt zulässt.',
                     '• Ist die Argumentationsrichtung im Kapitel \\jumpname[*Bearb]{OM:FrQFT:HeisenbergUnschaerfe:Schlussfolgerung-fuer-die-Quantenmechanik} richtig, wenn ich doch aus der Heisenbergschen Unschärferelation zuvor Schlussfolgere, woraus die Feinstruktur besteht? Sollte der Inhalt nicht in den Vortext?',
                     '• Welche Rolle soll die Herleitung Heisenbergs\\footnote[*Bearb]{\\cite{Heisenberg:UeberQuantKinMech1927Scan}.} hier spielen? Noch einmal lesen und entscheiden!',
                     '\\bold{Erkenntnisse und Ideen zu dieser Herleitung}',
@@ -42,10 +43,10 @@
                       
                   // #Ref: *Heisenb-Unschaerferelat-Interpret-Herlei
                   array( 'text', array( text => array(
-                    'Die Quanten-Fluss-Theorie geht davon aus, dass die Elementarteilchen, und so auch das Vakuum, auf einer \\jump{*FrQFT:Feinstruk-Photon-Einf}{bewegten \\color{*Bearb}{(dynamischen)} Feinstruktur}'."\n".
-                    'beruhen; auf einer Art von Körnigkeit.'."\n".
+                    'Die Quanten-Fluss-Theorie geht davon aus, dass die Elementarteilchen, und so auch das Vakuum, auf einer \\jump{OM:FrQFT:FirstPrinziples:Vortext:Abzählprinzip}{dynamischen Feinstruktur}'."\n".
+                    'beruhen; auf einer aus bestimmter Perspektive konstant bewegter Körnigkeit.'."\n".
                     'Die \\italic{Abzählinterpretation der Heisenbergschen Unschärferelation}\\hidden{Ref: *Heisenb-Unschaerferelat-Interpret-Herlei} gibt eine Idee davon,'."\n".
-                    'woraus diese Struktur besteht und wie oder wodurch sie auf ihre Umgebung einwirkt.'."\n",
+                    'woraus diese Struktur besteht und wie oder wodurch sie auf ihre Umgebung wirkt.'."\n",
                       'Auf dieses prinzipielle Abzählproblem bei der Wahrnehmung von Wellen und die sich daraus ergebende Herleitung der Heisenbergschen Unschärferelation\\footnote{\\const{FrQFT_g_footnote_text_HeisenbUnschaerf}}'."\n".
                     'hat mich der Artikel \\cite[title]{Treitz:Unbestimmtheit2010} von \\cite[fullName]{Treitz:Unbestimmtheit2010} aufmerksam gemacht.\\footnote{\\const{FrQFT_g_footnote_text_HeisenbUnschaerfAbzInt}}'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:HeisenbergUnschaerfe:Vortext:XXX', text =>
@@ -55,12 +56,13 @@
                   array( 'text', array( text => array(
                     'Als ich mich intensiver mit \\cite[fullName]{Treitz:Unbestimmtheit2010} Artikel befasste, geriet ich etwas in Verwirrung:'."\n",
                       'Ich hatte das Bild im Kopf, dass zum Beispiel das Licht quantisiert ist, es also aus Photonen, den Lichtquanten besteht, und eben keine kontinuierliche Lichtwelle ist.'."\n".
-                    'Aber er quantisiert – also zerlegt – nicht die Lichtwelle in Photonen, sondern zeigt uns dort, dass jedes Photon selber in seiner Energie quantisiert erscheint, wie ich nachfolgend erläutern werde.'."\n".
+                    'Aber er quantisiert – also zerlegt – nicht die Lichtwelle in Photonen, das auch, denn er betrachtet ein einzelnes Photon,'."\n".
+                    'sondern zeigt uns, dass jedes Photon selber in seiner Energie quantisiert erscheint, wie ich nachfolgend erläutern werde.'."\n".
                     'Die Abzählinterpretation der Heisenbergschen Unschärferelation – er nennt sie, wie viele andere auch, Unbestimmtheitsrelation – legt nahe, dass jedes Photon, und auch jedes andere Elementarteilchen,'."\n".
                     'nur aus \\italic{ganzen} Anzahlen an \\latexmath{h} bestehen kann.'."\n",
                       'Nachdem ich dies eine zeitlang durchdacht und verstanden hatte, löste es bei mir einen nachhaltigen Aha-Effekt aus, denn zu dem Zeitpunkt bestanden meine Elementarteilchen'."\n".
                     'schon lange Zeit aus einheitlichen Fundamentalteilchen.'."\n".
-                    'Ich konnte meine Fundamentalteilchen jetzt noch viel besser mit der Quantenphysik in Zusammenhang bringen und benannte sie schließlich auch in Wirkungsquanten um.'."\n"))),
+                    'Ich konnte meine Fundamentalteilchen jetzt noch viel besser mit der Quantenphysik in Zusammenhang bringen und benenne diese entsprechend als Wirkungsquanten (wq).'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                       'Nach der Abzählinterpretation der Heisenbergschen Unschärferelation haben wir es in der Quantenphysik mit einer doppelten Quantisierung zu tun:'."\n",
@@ -68,17 +70,17 @@
                       '\\latexmath{E = f \cdot h} (siehe \\jumpname{OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant}) bestehen müssen.'."\n".
                       'Dies gilt schließlich für alle Elementarteilchen.'."\n",
                         'Heisenberg zeigt uns mit seiner Unschärferelation, dass auch die Lichtquanten, und schließlich alle Elementarteilchen, aus Quanten der Wirkung \\latexmath{h},'."\n".
-                      '– Wirkungsquanten, die letzendlich Energiequanten sind – bestehend gedacht werden können.'."\n".
+                      '– Wirkungsquanten, die letztendlich Energiequanten sind – bestehend gedacht werden können.'."\n".
                       'Jedenfalls, wenn wir die Perspektive der Abzählinterpretation einnehmen.'."\n"))),
                       
                   array( 'headline', array( jump_name => 'OM:FrQFT:HeisenbergUnschaerfe:Vortext:XXX', text =>
                                            
-                'Eine bisher verborgene fraktale Struktur …', subline =>
-                  '… erscheint')),
+                'Eine bisher verborgene fraktale Struktur', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                    'Aus diesem Blickwinkel erscheint offenbar schon in der akademischen Quantenphysik eine fraktale Struktur der Quantisierung.'."\n".
-                    'Der fraktale Ansatz der Quanten-Fluss-Theorie ist demnach schon in der heutigen Physik zu entdecken, wenn wir nur aus entsprechender Perspektive auf sie schauen.'."\n",
-                      'So beschäftigt sich meine \\jump{OM:FrQFT:NeuePhysik}{neue Physik} unter anderem damit, welches Grundprinzip dieser Struktur zugrunde liegt und auf welche Weise die'."\n".
+                    'Aus Perspektive dieser Interpretation offenbart sich schon in der akademischen Quantenphysik eine fraktale Struktur der Quantisierung.'."\n".
+                    'Der fraktale Ansatz der Quanten-Fluss-Theorie ist auf diese Weise schon in der heutigen Physik zu entdecken.'."\n",
+                      'So beschäftigen sich meine \\jump{OM:FrQFT:FirstPrinziples}{First-Prinziples} der \\jump{OM:FrQFT:NeuePhysik}{neue Physik} unter anderem damit, welches Grundprinzip dieser Struktur zugrunde liegt und auf welche Weise die'."\n".
                     'hier erkannten Wirkungsquanten die Elementarteilchen bilden.'."\n".
                     'In diesem Sinne möchte ich nachfolgend die Abzählinterpretation der Heisenbergschen Unschärferelation im Detail erklären.'."\n"))),
                     /*'XXX'."\n".

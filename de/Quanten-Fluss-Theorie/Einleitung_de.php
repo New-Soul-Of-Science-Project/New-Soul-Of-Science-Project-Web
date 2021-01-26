@@ -571,7 +571,7 @@
                     'Die mathematische Beschreibung dieses systematischen Fehlers führt direkt zur Heisenbergschen Unschärferelation.'."\n".
                     'Dadurch bekommt sie den realen Hintergrund der Wechselwirkung von körnigen oder diskreten Strukturen.'."\n",
                       'Die grundlegende Bedeutung der Heisenbergschen Unschärferelation und ihr mathematischer Zusammenhang machen deutlich, dass es sich bei den'."\n".
-                    'Fundamentalteilchen der Feinstruktur um reale Dinge handelt, die als Energieeinheiten und damit auch als Masseeinheiten erscheinen.'."\n"))),
+                    'Fundamentalteilchen der Feinstruktur um reale Dinge handelt, die als Energieeinheiten und damit auch als Masseneinheiten erscheinen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Folge: Formulierung der Quantengravitation')),

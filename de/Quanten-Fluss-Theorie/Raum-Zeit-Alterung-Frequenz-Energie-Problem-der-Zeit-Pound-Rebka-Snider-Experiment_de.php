@@ -82,7 +82,7 @@
                     'Dieser Bruch der Elementarteilchen-String-Anzahlerhaltung spielt allerdings nur bei der Betrachtung der \\jump{OM:FrQFT:ZeitAlterungFrequenz:Dichtestruktur}{relativen Wirkungsquanten-String-Dichte und Elapsonen-Bahn-Dichte}'."\n".
                     'in Bezug auf die Feststellung der Existenz Schwarzer Löcher eine Rolle.'."\n".
                     'Bei der Betrachtung der \\jump{OM:FrQFT:Gravitation}{Gravitation} im Kosmos findet der Bruch der Elementarteilchen-String-Anzahlerhaltung keine weitere Beachtung.'."\n",
-                      'Weil die Wirkungsquanten nicht nur \\jump{*Energieeinheiten-Masse-Impuls-Herlei}{Energieeinheiten}, sondern ebenso \\jump{*Energieeinheiten-Masse-Impuls-Herlei}{Impuls-} und \\jump{*Energieeinheiten-Masse-Impuls-Herlei}{Masseeinheiten}'."\n".
+                      'Weil die Wirkungsquanten nicht nur \\jump{*Energieeinheiten-Masse-Impuls-Herlei}{Energieeinheiten}, sondern ebenso \\jump{*Energieeinheiten-Masse-Impuls-Herlei}{Impuls-} und \\jump{*Energieeinheiten-Masse-Impuls-Herlei}{Masseneinheiten}'."\n".
                     'sind, gilt auch Impuls-, Drehimpuls- und Massenerhaltung.'."\n"))),
                       
                   array( 'figure',

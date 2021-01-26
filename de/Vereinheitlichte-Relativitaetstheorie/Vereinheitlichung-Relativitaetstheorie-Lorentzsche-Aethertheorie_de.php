@@ -666,7 +666,7 @@
                     'Auch ist es sehr gut bestätigt, dass der \\jump{OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:EuklFlachKos}{Kosmos im Mittel euklidisch flach} ist, also keine Raumzeitkrümmung\\footnote{\\const{FrQFT_g_footnote_text_RZKruem}} aufweist.\\footnote{\\const{FrQFT_g_footnote_text_KosmosEuklFlach}}'."\n"))),
                   array( 'text', array( Shape  => 'conclusion', text => array(
                         'Die Verteilung der Wirkungsquanten des Licht-Materie-Mediums im Kosmos entspricht dieser Massenverteilung, weil Wirkungsquanten die'."\n".
-                        '\\jump[][*Concl]{*Energieeinheiten-Masse-Impuls-Herlei}{Energie- und Masseeinheiten} des Vakuums und der Elementarteilchen sind.'."\n".
+                        '\\jump[][*Concl]{*Energieeinheiten-Masse-Impuls-Herlei}{Energie- und Masseneinheiten} des Vakuums und der Elementarteilchen sind.'."\n".
                         'Daher sind sie im Mittel ebenso homogen und isotrop verteilt, wie die Masse (siehe \\jumpname[*Concl]{OM:VRT:Vereinheitlichung-RT-LET:Fig-KosmosEuklid}).'."\n".
                         'Die Wirkungsquanten bewegen sich im Licht-Materie-Medium, also zur Massenverteilung, in allen Raumrichtungen mit konstanter'."\n".
                         'erhöhter Lichtgeschwindigkeit\\footnote[*Concl]{\\const{FrQFT_g_footnote_text_LGUeberLG}} auf ihren Helixspiralbahnen; also isotrop.'."\n".

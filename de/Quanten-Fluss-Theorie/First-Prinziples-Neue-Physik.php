@@ -139,6 +139,7 @@
                   array( 'text', array( text => array(
                     'Nach dem \\jump{OM:FrQFT:FirstPrinziples:Vortext:Vereinfachungsprinzip}{Vereinfachungsprinzip} haben wir es bei extremer Auflösung, in der Fraktalebene unterhalb der Photonen – der Lichtteilchen –,'."\n".
                     'mit ziemlich einheitlichen Bestandteilen unserer Natur zu tun.'."\n".
+                    'Die Einheitlichkeit der Bestandteile resultiert demnach auch in ihrer konstanten Geschwindigkeit.'."\n".
                     'Das \\jump{OM:FrQFT:FirstPrinziples:Vortext:Eigenschaftsprinzip}{Eigenschaftsprinzip} wiederum besagt, das alle Eigenschaften der Dinge aus ihrer Struktur entstehen.'."\n",
                       'Das Abzählprinzip erkennt, das zwei wesentliche Eigenschaften der Dinge, ihre Masse und ihre Energie, einfach auf der Anzahl \\term{n_{wq}}'."\n".
                     'der einheitlichen Bestandteile beruhen, die zu einem Ding gehören, deren Zusammenhang das Ding formen.'."\n".
@@ -172,8 +173,9 @@
                     ))),
                   array( 'text', array( text => array(
                     'Auch ist ersichtlich, dass es sich bei der Masse und der Energie eines Dings im Grunde um das gleiche handelt, was zur Äquivalenz von Masse und Energie führt.'."\n".
-                    'Einsteins berühmte Formel ergibt sich hieraus also selbstredend, weil die Proportionalitätskonstante \\hidden{\\latexmath{ {_{\lowZero}c^{2}} }}\\term{_{0}c^{2}} ist,'."\n".
-                    'wie wir aus vielen experimentellen Beobachtungen wissen:\\footnote{Die Äquivalenz von Masse und Energie ist keine reine Erkenntnis der Relativitätstheorie und eben auch in vielen verschiedenen Experimenten aus der Quantenphysik bestätigt: \\\\ \\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AequivalenzVonMasseUndEnergie2013}.}'."\n"))),
+                    'Einsteins berühmte Formel ergibt sich hieraus also selbstredend, weil die Proportionalitätskonstante offensichtlich \\hidden{\\latexmath{ {_{\lowZero}c^{2}} }}\\term{_{0}c^{2}} ist,'."\n".
+                    'wie wir aus vielen experimentellen Beobachtungen wissen.\\footnote{Die Äquivalenz von Masse und Energie ist keine reine Erkenntnis der Relativitätstheorie und eben auch in vielen verschiedenen Experimenten aus der Quantenphysik bestätigt: \\\\ \\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AequivalenzVonMasseUndEnergie2013}.}'."\n".
+                    'Ich sehe keinen Grund eine andere Proportionalität anzunehmen:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'FP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E  =  m \cdot {_{\lowZero}c^{2}}  }',
