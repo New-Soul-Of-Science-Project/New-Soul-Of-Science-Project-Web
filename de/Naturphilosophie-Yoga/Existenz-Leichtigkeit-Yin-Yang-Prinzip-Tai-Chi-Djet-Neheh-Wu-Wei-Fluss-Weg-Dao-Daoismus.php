@@ -46,17 +46,17 @@
                       
                   array( 'text', array( text => array(
                     'Das Yin-Yang-Symbol\\footnote{\\const{NPYo_g_footnote_text_YinUndYang}}, das Taijitu\\color{*Bearb}{(Verweis)}, versinnbildlicht das naturphilosophische'."\n".
-                    '\\jump{OM:FrQFT:FirstPrinziples:Vortext:Existenzprinzip}{Existenzprinzip} des \\jump{OM:SpaLeb:Home}{›Spannungsspiels des Lebens‹}'."\n".
+                    '\\jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{Existenzprinzip} des \\jump{OM:SpaLeb:Home}{›Spannungsspiels des Lebens‹}'."\n".
                     'und der neuen Physik der \\jump{OM:FrQFT:Home}{›fraktalen Quanten-Fluss-Theorie‹}.'."\n".
-                    'Das Existenzprinzip ist verbunden mit dem von mir entdeckten \\jump{OM:FrQFT:FirstPrinziples:Vortext:Existenzprinzip}{Djet-Neheh-Dualismus}'."\n".
+                    'Das Existenzprinzip ist verbunden mit dem von mir entdeckten \\jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{Djet-Neheh-Dualismus}'."\n".
                     'und der \\jump{OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung}{Farbpolarisation} der Quantenphysik.'."\n",
                       'Demnach kommt zur Existenz, was aus Bestandteilen gebildet wird, die in einem Zusammenhang stehen.'."\n".
-                    'Da die Bestandteile aus prinzipiellen Gründen am Ende im Kleinen \\jump{OM:FrQFT:FirstPrinziples:Vortext:Dynamikprinzip}{immer in Bewegung} sein '."\n".
+                    'Da die Bestandteile aus prinzipiellen Gründen am Ende im Kleinen \\jump{OM:FrQFT:FirstPrinciples:Vortext:Dynamikprinzip}{immer in Bewegung} sein '."\n".
                     'müssen – sie fließen beständig –, rotieren Bestandteile, die in einem Zusammenhang stehen, umeinander, in einer Ordnung.'."\n".
                     'Stehen sie nicht in einem Zusammenhang, so bewegen sie sich geradlinig und damit chaotisch durcheinander.'."\n",
                       'Der Zusammenhang entsteht durch die Polarisation der Bestandteile.'."\n".
-                    'Physikalisch beruht die Polarisation auf einem sogenannten \\jump{OM:FrQFT:FirstPrinziples:Vortext:Wechselwirkungsprinzip}{Symmetriebruch},'."\n".
-                    'der \\jump{OM:FrQFT:FirstPrinziples:Vortext:Wechselwirkungsprinzip}{Kräfte} zwischen den Polen entstehen lässt.'."\n",
+                    'Physikalisch beruht die Polarisation auf einem sogenannten \\jump{OM:FrQFT:FirstPrinciples:Vortext:Wechselwirkungsprinzip}{Symmetriebruch},'."\n".
+                    'der \\jump{OM:FrQFT:FirstPrinciples:Vortext:Wechselwirkungsprinzip}{Kräfte} zwischen den Polen entstehen lässt.'."\n",
                       'Alles gerade beschriebene, bis auf das Chaos, ist im Yin und Yang dargestellt.'."\n".
                     'Wir erkennen eine räumliche Polarisation, symbolisiert durch schwarz und weiß oder männlich und weiblich, die sich fraktal gegenseitig enthält.'."\n".
                     'Die beiden Pole scheinen sich in einer angedeuteten Bewegung beständig im Fluss zu umkreisen, wodurch die Struktur stabilisiert ist.'."\n".

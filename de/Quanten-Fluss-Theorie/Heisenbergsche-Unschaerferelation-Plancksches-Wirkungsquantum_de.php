@@ -43,7 +43,7 @@
                       
                   // #Ref: *Heisenb-Unschaerferelat-Interpret-Herlei
                   array( 'text', array( text => array(
-                    'Die Quanten-Fluss-Theorie geht davon aus, dass die Elementarteilchen, und so auch das Vakuum, auf einer \\jump{OM:FrQFT:FirstPrinziples:Vortext:Abzählprinzip}{dynamischen Feinstruktur}'."\n".
+                    'Die Quanten-Fluss-Theorie geht davon aus, dass die Elementarteilchen, und so auch das Vakuum, auf einer \\jump{OM:FrQFT:FirstPrinciples:Vortext:Abzählprinzip}{dynamischen Feinstruktur}'."\n".
                     'beruhen; auf einer aus bestimmter Perspektive konstant bewegter Körnigkeit.'."\n".
                     'Die \\italic{Abzählinterpretation der Heisenbergschen Unschärferelation}\\hidden{Ref: *Heisenb-Unschaerferelat-Interpret-Herlei} gibt eine Idee davon,'."\n".
                     'woraus diese Struktur besteht und wie oder wodurch sie auf ihre Umgebung wirkt.'."\n",
@@ -80,7 +80,7 @@
                   array( 'text', array( text => array(
                     'Aus Perspektive dieser Interpretation offenbart sich schon in der akademischen Quantenphysik eine fraktale Struktur der Quantisierung.'."\n".
                     'Der fraktale Ansatz der Quanten-Fluss-Theorie ist auf diese Weise schon in der heutigen Physik zu entdecken.'."\n",
-                      'So beschäftigen sich meine \\jump{OM:FrQFT:FirstPrinziples}{First-Prinziples} der \\jump{OM:FrQFT:NeuePhysik}{neue Physik} unter anderem damit, welches Grundprinzip dieser Struktur zugrunde liegt und auf welche Weise die'."\n".
+                      'So beschäftigen sich meine \\jump{OM:FrQFT:FirstPrinciples}{First-Principles} der \\jump{OM:FrQFT:NeuePhysik}{neue Physik} unter anderem damit, welches Grundprinzip dieser Struktur zugrunde liegt und auf welche Weise die'."\n".
                     'hier erkannten Wirkungsquanten die Elementarteilchen bilden.'."\n".
                     'In diesem Sinne möchte ich nachfolgend die Abzählinterpretation der Heisenbergschen Unschärferelation im Detail erklären.'."\n"))),
                     /*'XXX'."\n".

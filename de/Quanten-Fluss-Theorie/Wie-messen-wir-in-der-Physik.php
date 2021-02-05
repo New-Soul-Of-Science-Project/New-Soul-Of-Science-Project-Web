@@ -230,7 +230,7 @@
                     'XXX'."\n"))),*/
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:FrQFT:FirstPrinziples'),
+                      array(  jump_name => 'OM:FrQFT:FirstPrinciples'),
                     )),
                 )
           ); ?>

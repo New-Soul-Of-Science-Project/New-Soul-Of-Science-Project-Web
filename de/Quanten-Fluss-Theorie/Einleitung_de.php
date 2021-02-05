@@ -70,7 +70,7 @@
                                            
                 'Vorgehensweise')),
                   array( 'text', array( text => array(
-                    'Zur Vereinheitlichung der beiden Haupttheorien, beschäftigen wir uns mit der detailierten Beschreibung und Analyse der neuen naturphilosophischen Prinzipien der Physik – \\jump{OM:FrQFT:FirstPrinziples}{First-Principles} oder Naturprinzipien –,'."\n".
+                    'Zur Vereinheitlichung der beiden Haupttheorien, beschäftigen wir uns mit der detailierten Beschreibung und Analyse der neuen naturphilosophischen Prinzipien der Physik – \\jump{OM:FrQFT:FirstPrinciples}{First-Principles} oder Naturprinzipien –,'."\n".
                     'mit ihrer physikalischen Realisierung und deren Mechanismen.'."\n".
                     'Wir setzen unsere hierauf basierenden Einsichten und Erkenntnisse mit den Begriffen und Bildern der modernen Physik in Beziehung.'."\n",
                       'So leiten wir den neuen Formalismus her, beschäftigen uns aber natürlich auch intensiv damit, wie sich aus all dem die heute gültigen Formeln und Erklärungen ergeben.'."\n"))),

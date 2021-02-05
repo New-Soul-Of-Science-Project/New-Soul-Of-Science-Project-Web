@@ -24,7 +24,7 @@
                     '• \\jump[https://en.wikipedia.org/w/index.php?title=Integrated_information_theory&oldid=893290624]{}{Integrated Information Theory (IIT)}:',
                     '– Im Spannungsspiel und seiner FrQFT haben wir einen etwas anderen Ansatz als in der IIT.',
                     '– Die Spannungsspiel/FrQFT Axiome sind:',
-                    '⋅ Siehe \\italic{\\jumpname{OM:FrQFT:FirstPrinziples}}.',
+                    '⋅ Siehe \\italic{\\jumpname{OM:FrQFT:FirstPrinciples}}.',
                     '⋅ Alles ist dynamische Struktur. (Abgeleitet aus \\italic{\\jumpname{OM:FrQFT:WasIstPhysik}}.)',
                     '⋅ Dann ergibt sich deren Entstehung, Stabilität und Zerstörung, kombiniert zur Transformation, aus dem fraktalen Djet-Neheh-Dualismus und Existenzprinzip.',
                     '⋅ Die strukturelle Stabilität und Transformation wird zwangsläufig durch sich selber organisierende Regelprozesse hergestellt.',
@@ -93,7 +93,7 @@
                     'kann sichergestellt werden, dass Information übertragen wurde und welche Güte die Übertragung hatte.'."\n".
                     'Der Zufall in der Informationsübertragung wird auf diese Weise sicher massiv minimiert, denn es ergibt sich ein innerer Sinn.'."\n",
                       'So können Sender und Empfänger durch Rückkopplung zu einem stabilen System werden, zu einem selbstorganisierten Regelprozess, in dem Kommunikation in hoher Güte abläuft.'."\n".
-                    'Nur auf diese Art und Weise kann \\jump{OM:FrQFT:FirstPrinziples:Vortext:Existenzprinzip}{stabile Existenz} und deren \\jump{OM:SpaLeb:Bewusstsein}{Bewusstsein} entstehen.'."\n"))),
+                    'Nur auf diese Art und Weise kann \\jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{stabile Existenz} und deren \\jump{OM:SpaLeb:Bewusstsein}{Bewusstsein} entstehen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Information-Kommunikation:Vortext:XXX', text =>
                                            
                 'Wirkungsvolle Kommunikation und Resonanz', subline =>

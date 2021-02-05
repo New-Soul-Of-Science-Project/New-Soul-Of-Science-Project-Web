@@ -114,10 +114,10 @@
                 'Unsere Balance zwischen Stabilität und Fortentwicklung', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Durch die Verbindung des Funktionsprinzips des Achtsamkeitsprozesses mit dem \\jump{OM:FrQFT:FirstPrinziples:Vortext:Existenzprinzip}{Existenzprinzip} meiner neuen Physik'."\n".
+                    'Durch die Verbindung des Funktionsprinzips des Achtsamkeitsprozesses mit dem \\jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{Existenzprinzip} meiner neuen Physik'."\n".
                     'der \\jump{OM:FrQFT:Home}{›fraktalen Quanten-Fluss-Theorie‹} ergibt sich ein tieferer Einblick in die grundlegende Balance dieses Ansatzes:'."\n",
-                      'Der Zirkel in diesem Modell steht für die Stabilität, für den \\jump{OM:FrQFT:FirstPrinziples:Vortext:Existenzprinzip}{Neheh-Aspekt} des Prozesses unseres Lebens.'."\n".
-                    'Das Voranschreiten der Helixspirale, ihr Gang, steht für die Fortentwicklung des Prozesses, seinen \\jump{OM:FrQFT:FirstPrinziples:Vortext:Existenzprinzip}{Djet-Aspekt}.'."\n"))),
+                      'Der Zirkel in diesem Modell steht für die Stabilität, für den \\jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{Neheh-Aspekt} des Prozesses unseres Lebens.'."\n".
+                    'Das Voranschreiten der Helixspirale, ihr Gang, steht für die Fortentwicklung des Prozesses, seinen \\jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{Djet-Aspekt}.'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                       'Im Zentrum unseres Lebens steht die Balance zwischen Stabilität und Fortentwicklung.'."\n".

@@ -460,7 +460,7 @@
                                 description => $Glo_g_Site_ary['OM:FrQFT:Einleitung'][text_undertitel_h2]),
                       nSOSp_f_tableOfContents_elementAry( 'OM:FrQFT:WasIstPhysik'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:FrQFT:WieMessenWirInDerPhysik'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:FrQFT:FirstPrinziples'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:FrQFT:FirstPrinciples'),
                       array( title => '\\name{OM:FrQFT:NeuePhysik}', jumpname => 'OM:FrQFT:NeuePhysik', startsign => '',
                                 description => /*'das Higgs-Feld besteht aus Wirkungsquanten und hat eine fraktale Struktur aus Zeit-Ebenen'*/$Glo_g_Site_ary['OM:FrQFT:NeuePhysik'][text_undertitel_h2]),
                       // • Nachweis des Higgs-Teilchens ist ein indirekter Nachweis eines Äthers.\\footnote{Vgl. \\cite{Luest:VomHiggsZurWeltformel2013}, S. 57.}

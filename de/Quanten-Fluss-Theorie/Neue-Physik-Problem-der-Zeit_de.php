@@ -8,7 +8,7 @@
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:FrQFT:FirstPrinziples'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:FrQFT:FirstPrinciples'); ?>
 
 	
 		    	<!Ideen:>

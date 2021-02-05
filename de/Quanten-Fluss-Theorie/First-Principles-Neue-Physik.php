@@ -21,7 +21,7 @@
                                        
                   array( 'text', array( text => array(
                     'In der \\italic{\\jumpname{OM:FrQFT:Einleitung}} sowie auf den daran anschließenden Seiten \\italic{\\jumpname{OM:FrQFT:WasIstPhysik}} und \\italic{\\jumpname{OM:FrQFT:WieMessenWirInDerPhysik}}'."\n".
-                    'leite ich Grundprinzipien oder Naturprinzipien – sogenannte First-Prinziples – der Physik her.'."\n".
+                    'leite ich Grundprinzipien oder Naturprinzipien – sogenannte First-Principles – der Physik her.'."\n".
                     'Die nachfolgend aufgeführten Naturprinzipien sollen ohne Einschränkung gelten.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
                                            
