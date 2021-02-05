@@ -1019,7 +1019,7 @@
                     'die eine einzelne zentrale Masse beschreibt, so ergibt sich für die Gravitationskonstante \\term{G}:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1 - 2 \cdot \frac{ G \cdot M }{ {_{\lowZero}c}^{2} \cdot r } \right)^{p}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  {_{r,p}c_{mas}}  =  {_{\lowZero}c} \cdot \left( 1 - 2 \cdot \frac{ G \cdot M }{ {_{\lowZero}c}^{2} \cdot r } \right)^{p}  }',
                                                label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein}', label_incr => true,
                                                footnote => '\\const{FrQFT_g_footnote_text_ARTLgFormel}'),
                       array( display => 'on',  latex => '{  \Rightarrow  G  =  g_{s} \cdot g_{v} \cdot g_{\omega} \cdot g_{h} \cdot \frac{ \hbar }{ m_{wq} }  }',
