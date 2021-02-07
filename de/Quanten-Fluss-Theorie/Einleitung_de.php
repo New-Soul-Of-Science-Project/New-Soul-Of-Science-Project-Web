@@ -366,7 +366,7 @@
                     
                   array( 'text', array( Shape  => 'italic', text => array(
                       'Ich behaupte, es lässt sich eine sinnvolle und mit den heutigen Beobachtungen verträgliche Struktur der Elementarteilchen finden,'."\n".
-                      'wenn wir die hierfür wichtigen Prinzipien des grundsätzlichen Zusammenhangs in den dynamischen Strukturen der Dinge erkennen.'."\n"))),
+                      'wenn wir die hierfür wichtigen Prinzipien – \\jump{OM:FrQFT:FirstPrinciples}{First-Principles} – des grundsätzlichen Zusammenhangs in den dynamischen Strukturen der Dinge erkennen.'."\n"))),
  
                   array( 'text', array( text => array(
                     'Das hierfür entscheidende naturphilosophische Prinzip ist der von mir entdeckte und so genannte fraktale Djet-Neheh-Dualismus, aus dem sich'."\n".

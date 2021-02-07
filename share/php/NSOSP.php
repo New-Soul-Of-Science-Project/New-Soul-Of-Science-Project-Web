@@ -1358,15 +1358,15 @@
                                        // text_undertitel_h2 => 'Impulskegel ihrer Wirkungsquanten-Strings verlangsamen und beugen die Bewegung lichtähnlicher Strukturen in ihrem Umfeld',
                                        text_undertitel_h2 => 'Die Gravitation der Allgemeinen Relativitätstheorie offenbart sich als emergentes Phänomen der Beugung lichtähnlicher Strukturen in einem Modell von Elementarteilchen-Strings neuer Art',
                                        // text_titel_discr_h3 => 'Die Gravitation der Allgemeinen Relativitätstheorie ergibt sich als emergentes Phänomen der Beugung lichtähnlicher rotierender Strukturen in den gravitativ angezogenen Elementarteilchen-Strings',
-                                       text_titel_discr_h3 => 'Rotierende Impulskegel einer Feinstruktur von Wirkungsquanten eines gravitativ wirkenden Elementarteilchen-Strings verlangsamen und beugen die Bewegung lichtähnlicher Strukturen in ihrem Umfeld und führen so zur Gravitation',
+                                       text_titel_discr_h3 => 'Rotierende Impulskegel der neuen Feinstruktur der gravitativ wirkenden Elementarteilchen-Strings einer Zentralmasse verlangsamen und beugen die Bewegung lichtähnlicher Strukturen in ihrem Umfeld und führen so zur Quantengravitation',
                                        jump_ary => array(
                                               'OM:FrQFT:Quantengravitation:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
                                                 // #!: Wiederholt in "Mechanismus der Gravitation"! Dort mit fester Nummer !!!!
                                                 'OM:FrQFT:Quantengravitation:Vortext:Fig-Gravitation-Masse' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
                                                 'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
                                                 'OM:FrQFT:Quantengravitation:Vortext:Graviradiation' => array( headline_text => 'Graviradiation – eine neue Wechselwirkung', headline_text_short => 'Graviradiation'),
-                                                'OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
                                                          
                                               'OM:FrQFT:Quantengravitation:VereinfModellQGravitation' => array( headline_text => 'Vereinfachtes Modell der Quantengravitation', headline_text_short => 'Vereinfachtes Modell der Quantengravitation'),
                                                 'OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),

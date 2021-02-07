@@ -31,17 +31,84 @@
                     '• Wie können wir feststellen, ob die Gravitation quantisiert ist? Und wofür ist das wichtig? Siehe: Ein Stück Schwerkraft. In: Spektrum der Wissenschaft 08/2018. 18-22.',
                     ))),
                       
-                  // #!: Wiederholt in "Mechanismus der Gravitation"!
-                  array( 'figure',
-                    array_merge( $FrQFT_g_figure_ary_GraviMechanismus, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Fig-Gravitation-Masse'))),
-                      
-                  array( 'text', array( text => array(
-                    '\\color{*Entwick}{(Hier die Erklärung in Bezug auf die \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Fig-Gravitation-Masse} einfügen, wohin die Entwicklung der Quantengravitation auf dieser Seite gehen soll!)}'."\n"))),
                   array( 'text', array( text => array(
                     'Die Erklärung der Gravitation in Form der Quantengravitation\\footnote{\\const{FrQFT_g_footnote_text_Quantengravi}} ist eine der sehnlichsten Wünsche'."\n".
                     'der heutigen theoretischen Physik.\\color{*Bearb}{(Verweis auf Hossenfelder Blog und SdW)}'."\n".
                     'Sie steht im Zentrum der Vereinheitlichung der Physik, der Verschmelzung von Quantenphysik\\footnote{\\const{FrQFT_g_footnote_text_Quantenphysik}} (Quantenfeldtheorie\\footnote{\\const{FrQFT_g_footnote_text_QFT}}) und Allgemeiner Relativitätstheorie\\footnote{\\const{FrQFT_g_footnote_text_ART}},'."\n".
                     'von der sich vermutlich die Mehrheit der Physiker das Verständnis vieler bisher \\jump{OM:FrQFT:NotwenVereinheit}{unerklärlicher Beobachtungen und wichtiger Fragen} erhoffen.'."\n"))),
+
+                  // #!: Wiederholt in "Mechanismus der Gravitation"!
+                  array( 'figure',
+                    array_merge( $FrQFT_g_figure_ary_GraviMechanismus, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Fig-Gravitation-Masse'))),
+                      
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Vortext:XXX', text =>
+                                           
+                'Notwendige Konkretisierung der Lehrmeinung ⚠️', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Bevor ich zur Vorstellung der Mechanismen und deren Details komme, möchte ich noch einmal kurz darauf hinweisen, dass es einer Konkretisierung der Lehrmeinung bedarf,'."\n".
+                    'um sich aus heutiger akademischer Perspektive auf die anschließend beschriebene physikalische Perspektive seriös einzulassen.'."\n".
+                    'Die \\jump{OM:FrQFT:Einleitung:Fundierung}{notwendige Konkretisierung der Lehrmeinung} beschreibe ich in der \\jump{OM:FrQFT:Einleitung}{Einleitung} und lege die Annahmen,'."\n".
+                    'die meiner neuen Perspektive zugrunde liegen, auf der Seite \\jump{OM:FrQFT:FirstPrinciples}{First-Principles} dar.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Vortext:XXX', text =>
+                                           
+                'Mehrere Mechanismen führen zur Gravitation', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Eine Kette von aufeinander aufbauenden Mechanismen liefern uns das Verständnis dafür, wie die Quantengravitation zustande kommt.'."\n".
+                    'Für den Überblick der Mechanismen, die hier am Wirken sind, beginne ich die Beschreibung beim Elementarteilchen, das angezogen wird,'."\n".
+                    'und ende mit dem Ausgangspunkt, dem Ursprung, dieser Kette.'."\n",
+                      'Bei der anschließenden detaillierten Beschreibung beginne ich dann in umgekehrter Reihenfolge …'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Eine Beugung von lichtähnlichen Strukturen in Elementarteilchen beschleunigt diese – Lichtablenkung} \\\\'."\n".
+                    'Die \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Fig-Gravitation-Masse} veranschaulicht, grob vereinfacht, eine anziehende Zentralmasse \\term{m} und'."\n".
+                    'die umgebenden Verhältnisse im Vakuum des neuen Modells, auf die ich gleich noch weiter eingehe.'."\n"))),
+
+                  // array( 'youtube',
+                  //   array_merge( $FrQFT_g_youtube_ary_Lepton, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton'))),
+                  array( 'figure',
+                    array_merge( $FrQFT_g_figure_ary_Lepton_highRes, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton',
+                                                         text => 'Ein Wirkungsquanten-String eines hypothetischen, geladenen Leptons; ein Elektron oder eines seiner Verwandten.'."\n".
+                                                                 'Die Wirkungsquanten sind als rote Kugeln dargestellt, die durch ihre abgestrahlten Impulskegel miteinander Verbunden sind (nicht eingezeichnet). '."\n".
+                                                                 'Seine Ladung entsteht durch die ungleiche Dichte der Wirkungsquanten auf dem String.'))),
+                      
+                  array( 'text', array( text => array(
+                    'Oberhalb der anziehenden Zentralmasse befindet sich ein schematisches Elementarteilchen des Modells, in dem lichtähnliche Strukturen zirkulieren (detaillierter in \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton}).'."\n".
+                    'Diese lichtähnlichen Strukturen werden, wie von Lichtteilchen (Photonen) in der Allgemeinen Relativitätstheorie bekannt, zur zentralen Masse hin abgelenkt.'."\n".
+                    'Ihre Bahn ist also gebeugt.'."\n".
+                    'Die Beugung der in ihnen zirkulierenden Strukturen führt zu einer Beschleunigung des angezogenen Elementarteilchens in Richtung der Masse, die der gravitation entspricht.'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Die Beugung lichtähnlicher Strukturen kommt durch deren Verlangsamung im Gravitationsfeld zustande – Shapiro-Verzögerung} \\\\'."\n".
+                    'Die angesprochene Beugung von Licht, oder von dem Licht ähnlichen Strukturen, ergibt sich dadurch, dass deren Ausbreitungsgeschwindigkeit im dreidimensionalen Raum'."\n".
+                    'auf der der Masse zugewandten Seite langsamer ist, als auf der von ihr abgewandten Seite (siehe \\jumpname{OM:FrQFT:Quantengravitation:Lichtbeugung:Fig-GravitationPhotonBeugung}).'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Die Verlangsamung lichtähnlicher Strukturen wird durch eine Störung der Lichtbewegung verursacht – Undulation der Lichtbahn} \\\\'."\n".
+                    'Anders als in der Allgemeinen Relativitätstheorie wird die Verlangsamung des Lichts oder ähnlicher Strukturen durch eine'."\n".
+                    'wellenförmige Störung seiner Ausbreitungsbahn verursacht und nicht direkt durch die Krümmung des Raums oder der Raumzeit.'."\n",
+                    'Diese wellenförmige Störung der Lichtbahnen und vergleichbarer Bahnen lichtähnlicher Strukturen des Vakuums in der Umgebung einer Masse'."\n".
+                    'bringt allerdings unterschiedliche Energiedichten des Vakuums hervor, die als Raumzeitkrümmung erscheinen (siehe \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Fig-Gravitation-Masse},'."\n".
+                    'wellenförmige Erscheinungen im dem Vakuum eingeprägten Gravitationspotenzial; Energiedichtegradient als de-Broglie-Wellenlänge oder de-Broglie-Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}}).'."\n"))),
+                      
+                  // array( 'youtube',
+                  //   array_merge( $FrQFT_g_youtube_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson'))),
+                  array( 'figure',
+                    array_merge( $FrQFT_g_figure_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson',
+                                                         text => '\\const{FrQFT_g_text_VakuumElapson}'))),
+                      
+                  array( 'text', array( text => array(
+                  '\\condb{Die wellenförmige Störung der Lichtbahn hat ihre Ursache in den rotierenden Impulskegeln der Feinstruktur der Elementarteilchen der gravitativen Masse} \\\\'."\n".
+                    'Die gravitativ anziehende Masse besteht aus Elementarteilchen.'."\n".
+                    'Die Feinstruktur dieser Elementarteilchen besteht aus Wirkungsquanten (siehe \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton}).'."\n".
+                    'Auch deren Wirkungsquanten strahlen Impulskegel in den Raum ab (siehe \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung}),'."\n".
+                    'wie sie in \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson} dargestellt sind.'."\n",
+                      'Die Impulskegel treffen auf Licht oder dem Licht ähnliche Strukturen in ihrer Umgebung und stören deren Bahn wellenförmig (siehe \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn}),'."\n".
+                    'was deren Verlangsamung zur Folge hat.'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Erst die Berücksichtigung der statistischen Verteilung dieser Störung bringt das korrekte Ergebnis hervor} \\\\'."\n".
+                    'Analysieren wir die Lichtverlangsamung, die ein einzelnes Elementarteilchen durch seinen gravitativen Effekt in der Umgebung verursacht,'."\n".
+                    'dann erhalten wir nicht die Lichtverlangsamung, die beobachtet und in der Allgemeinen Relativitätstheorie vorhergesagt wird.'."\n",
+                      'Erst viele in einer Zentralmasse versammelte Elementarteilchen bringen die korrekte Lichtverlangsamung im 3-dimensionalen Raum hervor.'."\n".
+                    'Nämlich dann, wenn wir verstehen, dass die wellenförmigen Störungen vieler Elementarteilchen einem statistischen Effekt unterliegen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Vortext:XXX', text =>
                                            
                 'Quanten der Gravitation bisher unbeobachtet?', subline =>
@@ -61,23 +128,8 @@
                   array( 'text', array( text => array(
                     'So gesehen beobachten wir die Impulse der Quanten der Gravitation längst als \\jump{OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation}{Plancksches Wirkungsquantum},'."\n".
                     'haben sie aber bisher nicht als solche erkannt.'."\n".
-                    'Hieran wird wunderbar sichtbar, wie entscheidend Interpretationen und ihre Perspektivwechsel dafür sein können zu beurteilen, was wir schon längst in Händen halten.'."\n"))),
-                      
-                  // array( 'youtube',
-                  //   array_merge( $FrQFT_g_youtube_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson'))),
-                  array( 'figure',
-                    array_merge( $FrQFT_g_figure_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson',
-                                                         text => '\\const{FrQFT_g_text_VakuumElapson}'))),
-                  // array( 'youtube',
-                  //   array_merge( $FrQFT_g_youtube_ary_Lepton, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton'))),
-                  array( 'figure',
-                    array_merge( $FrQFT_g_figure_ary_Lepton_highRes, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton',
-                                                         text => 'Ein Wirkungsquanten-String eines hypothetischen, geladenen Leptons; ein Elektron oder eines seiner Verwandten.'."\n".
-                                                                 'Die Wirkungsquanten sind als rote Kugeln dargestellt, die durch ihre abgestrahlten Impulskegel miteinander Verbunden sind (nicht eingezeichnet). '."\n".
-                                                                 'Seine Ladung entsteht durch die ungleiche Dichte der Wirkungsquanten auf dem String.'))),
-                      
-                  array( 'text', array( text => array(
-                    'Durch die ›Abzählinterpretation der Heisenbergschen Unschärferelation‹ wird das Plancksche Wirkungsquantum zum neuen Fundamentalteilchen,'."\n".
+                    'Hieran wird wunderbar sichtbar, wie entscheidend Interpretationen und ihre Perspektivwechsel dafür sein können zu beurteilen, was wir schon längst in Händen halten.'."\n",
+                      'Durch die ›Abzählinterpretation der Heisenbergschen Unschärferelation‹ wird das Plancksche Wirkungsquantum zum neuen Fundamentalteilchen,'."\n".
                     'zum \\jump{*Wirkungsquanten-Herlei}{Wirkungsquant} \\term{wq} (siehe rote Kugeln in \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson} und \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton}).'."\n".
                     'Diese Wirkungsquanten fügen sich zu den \\jump{OM:FrQFT:Elementarteilchen}{Elementarteilchen-Strings} der Quanten-Fluss-Theorie zusammen.'."\n",
                       'Die von den Wirkungsquanten abgestrahlten Impulskegel in \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson},'."\n".
@@ -269,7 +321,7 @@
                     '• Darauf hinweisen, dass diese Berechnungen im Rahmen des Wirkungsquanten-Bewegungsraums erfolgen und nicht im Rahmen des Licht-Bewegungsraums. Daher ergibt sich die gravitative Rotverschiebung und Zeitdilatation erst korrekt, wenn das Verhältnis von tangentialer und radialer Lichtgeschwindigkeit im hier verwendeten Wirkungsquanten-Bewegungsraum im Verhältnis zur \\jump{OM:FrQFT:Quantengravitation:Laengenkontraktion}{gravitativen Längenkontraktion} berücksichtigt wird. Im Licht-Bewegungsraum ist dann in Bezug auf die LG generell \\term{p = 0} und in Bezug auf die Rotverschiebung für den tangentialen Fall \\term{p = 0} und im radialen Fall \\term{p = 1/2} zu setzen, so dass sich die korrekte Rotverschiebungsformel\\footnote[*Bearb]{\\const{FrQFT_g_footnote_text_PhotonFrequenzGravi}} ergibt.',
                     '• Der Berechnung liegen die Formeln \\term{E_{ele} = h⋅f_{ele}} und \\term{E_{ele} = ħ⋅ω_{ele}} der Quantenphysik für die Energie eines Elementarteilchens zugrunde.',
                     '• Aus der Relativitätstheorie wird allerdings die Allgemeingültigkeit der Formel \\term{E = m⋅c^{2}} vorausgesetzt und findet dann natürlich auch Anwendung.',
-                    '– Die Proportionalität von Energie und Masse ist eine direkte Schlussfolgerung der FrQFT, die sich aus der Annahme (\\jump{OM:FrQFT:FirstPrinziples}{Postulat} bzw. Axiom) ergibt, dass Wirkungsquanten sowohl Energieeinheiten als auch Masseneinheiten sind (absolut nur auf der untersten Strukturebene des analysierten Modells)! Dies setzt ein konstantes Verhältnis voraus, welches nach unseren Beobachtungen das Quadrat der Lichtgeschwindigkeit \\term{c^{2}} der bekannten Formel \\term{E = m⋅c^{2}} ist.(Verweis auf Wikipedia: ›Äquivalenz von Masse und Energie‹, Überblick und Beispiele, Vernichtungsstrahlung. Dies ist keine relativistisch interpretierte Beobachtung, sondern eine quantenphysikalisch interpretierte!)',
+                    '– Die Proportionalität von Energie und Masse ist eine direkte Schlussfolgerung der FrQFT, die sich aus der Annahme (\\jump{OM:FrQFT:FirstPrinciples}{Postulat} bzw. Axiom) ergibt, dass Wirkungsquanten sowohl Energieeinheiten als auch Masseneinheiten sind (absolut nur auf der untersten Strukturebene des analysierten Modells)! Dies setzt ein konstantes Verhältnis voraus, welches nach unseren Beobachtungen das Quadrat der Lichtgeschwindigkeit \\term{c^{2}} der bekannten Formel \\term{E = m⋅c^{2}} ist.(Verweis auf Wikipedia: ›Äquivalenz von Masse und Energie‹, Überblick und Beispiele, Vernichtungsstrahlung. Dies ist keine relativistisch interpretierte Beobachtung, sondern eine quantenphysikalisch interpretierte!)',
                     '– Ergibt sich die Formel \\term{E = m⋅c^{2}} auch aus der Quantenphysik? Ja, wie gerade bemerkt, bei der Paarvernichtung.',
                     '– Könnte Formel \\term{E = m⋅c^{2}} auch vermieden werden?',
                     '• Diese drei Formeln reichen aus, zusammen mit der Struktur des Elementarteilchen-Modells der FrQFT und gewisser Vereinfachungen dieses Modells zuzüglich einer simplen Näherung für größere Abstände sowie einer statistischen Näherung für größere Massen, um die gravitative Lichtablenkung (Gravitation) eines einzelnen Elementarteilchens und die gravitative Lichtablenkung (Gravitation) einer Zentralmasse aus Elementarteilchen korrekt so herzuleiten, wie diese in der Schwarzschild-Metrik der Allgemeinen Relativitätstheorie beschrieben ist.',
@@ -558,7 +610,7 @@
                                                footnote => 'Vgl. \\cite{wiki:PlanckschesWirkungsquantum2013}, Definition.'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \omega_{ele}  =  \frac{ E_{ele} }{ \hbar }  }'),
                       array( display => 'on',  latex => '{  E_{ele}  =  m_{ele} \cdot {_{\lowZero}c^{2}}  }',
-                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse-1', label_text => '\\jump{OM:FrQFT:FirstPrinziples:Vortext:Equ-E-ele-aequi-zu-Masse}{\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse-1}}', label_incr => false,
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse-1', label_text => '\\jump{OM:FrQFT:FirstPrinciples:Vortext:Equ-E-ele-aequi-zu-Masse}{\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse-1}}', label_incr => false,
                                                footnote => '\\const{FrQFT_g_footnote_text_AequivalMasseEnergie}'),
                       array( display => 'on',  latex => '{  \Rightarrow  {T_{kegel}}  =  g_{\omega} \cdot \frac{ \hbar }{ E_{ele} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  {T_{kegel}}  =  g_{\omega} \cdot \frac{ \hbar }{ m_{ele} \cdot {_{\lowZero}c^{2}} }  }'),
@@ -587,7 +639,7 @@
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  m_{ele}  =  n_{ele,wq} \cdot m_{wq}  }',
-                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-EMasseSumWQEnergie-1', label_text => '\\jump{OM:FrQFT:FirstPrinziples:Vortext:Equ-EMasseSumWQEnergie}{\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-EMasseSumWQEnergie-1}}', label_incr => false),
+                                               label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-EMasseSumWQEnergie-1', label_text => '\\jump{OM:FrQFT:FirstPrinciples:Vortext:Equ-EMasseSumWQEnergie}{\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-EMasseSumWQEnergie-1}}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  {T_{kegel}}  =  g_{\omega} \cdot \frac{ \hbar }{ n_{ele,wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}} }  }',
                                                label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-T-kegel', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-T-kegel}', label_incr => true),
                     ))),
@@ -601,7 +653,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Über \\jump{OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit}{Plancks Proportionalität von Energie und Frequenz} aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-EinsteinEnergieLichtQuant-1}'."\n".
-                    'und \\jump{OM:FrQFT:FirstPrinziples:Vortext:Abzählprinzip}{Einstens Energie-Masse-Äquivalenz} aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse-1}'."\n".
+                    'und \\jump{OM:FrQFT:FirstPrinciples:Vortext:Abzählprinzip}{Einstens Energie-Masse-Äquivalenz} aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse-1}'."\n".
                     'können wir die effektiv störende Wirkung durch die Masse \\term{m_{ele}} ausdrücken.'."\n".
                     'So formuliert benötigen wir diese im weiteren Verlauf:'."\n"))),
                   array( 'equations',
