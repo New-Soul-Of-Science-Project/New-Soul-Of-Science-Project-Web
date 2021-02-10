@@ -301,7 +301,7 @@
                                                                   'Das wäre in Bezug auf die Physik eine unsinnige Vorstellung.');
   
   //$FrQFT_g_figure_ary_GraviLeptonWirkung        = array( fig_file_name => 'Gravi_Lepton-Wirkung_v09', fig_alt_description => 'Gravitative Wirkung eines simplifizierten Leptons', width => '700px', height => '875px', name => 'set local',
-  $FrQFT_g_figure_ary_GraviLeptonWirkung        = array( fig_file_name => 'FrQFT/Gravi_Lepton-Wirkung_v11', fig_alt_description => 'Graviradiation ei­nes sim­pli­fi­zier­ten Lep­to­nen-­Strings', width => '660px', height => '825px', name => 'set local',
+  $FrQFT_g_figure_ary_GraviLeptonWirkung        = array( fig_file_name => 'FrQFT/Gravi_Lepton-Wirkung_v12', fig_alt_description => 'Graviradiation ei­nes sim­pli­fi­zier­ten Lep­to­nen-­Strings', width => '660px', height => '825px', name => 'set local',
                                                          text => 'Die Darstellung zeigt die graviradiative Wirkung eines simplifizierten Leptonen-Strings auf sein Umfeld.'."\n".
                                                                  'Jedes einzelne Wirkungsquant des Strings erzeugt ständig neue, virtuelle Wirkungsquanten, die ringförmig um den und'."\n".
                                                                  'senkrecht zum String abgestrahlt werden.'."\n".

@@ -122,15 +122,16 @@
                       'bedeutet in meinen Augen,'."\n".
                       'dass die Elementarteilchen Wirkungsimpulse \\bold{\\term{h}} (Plancksches Wirkungsquantum) als Impulskegel abstrahlen'."\n".
                       '(siehe \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson}), die wir bei ihrer Energie- oder Impulsmessung beobachten und pro Zeit- oder Längeninterval zählen.'."\n",
-                        'Genau diese Impulse sind jedoch auch, wie nachfolgend beschrieben, die Ursache der gravitativen Lichtverlangsamung (gravitative Zeitdilatation\\footnote{\\const{FrQFT_g_footnote_text_ZeitdilatationGrav}})'."\n".
-                      'und Lichtbeugung, die aufgrund der Elementarteilchen-String-Struktur zur Gravitation führt (siehe \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Fig-Gravitation-Masse}).'."\n"))),
+                        'Genau diese Impulse sind jedoch auch, wie bereits erwähnt und nachfolgend detailliert beschrieben,'."\n".
+                      'die Ursache der gravitativen Lichtverlangsamung (gravitative Zeitdilatation\\footnote{\\const{FrQFT_g_footnote_text_ZeitdilatationGrav}}) und Lichtbeugung,'."\n".
+                      'die schließlich, aufgrund der neuen Elementarteilchen-String-Struktur, zur Gravitation führen (siehe \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Fig-Gravitation-Masse}).'."\n"))),
                       
                   array( 'text', array( text => array(
                     'So gesehen beobachten wir die Impulse der Quanten der Gravitation längst als \\jump{OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation}{Plancksches Wirkungsquantum},'."\n".
                     'haben sie aber bisher nicht als solche erkannt.'."\n".
                     'Hieran wird wunderbar sichtbar, wie entscheidend Interpretationen und ihre Perspektivwechsel dafür sein können zu beurteilen, was wir schon längst in Händen halten.'."\n",
                       'Durch die ›Abzählinterpretation der Heisenbergschen Unschärferelation‹ wird das Plancksche Wirkungsquantum zum neuen Fundamentalteilchen,'."\n".
-                    'zum \\jump{*Wirkungsquanten-Herlei}{Wirkungsquant} \\term{wq} (siehe rote Kugeln in \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson} und \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton}).'."\n".
+                    'zum \\jump{*Wirkungsquanten-Herlei}{Wirkungsquant} \\term{wq} (siehe rote Kugeln in \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton} und \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson}).'."\n".
                     'Diese Wirkungsquanten fügen sich zu den \\jump{OM:FrQFT:Elementarteilchen}{Elementarteilchen-Strings} der Quanten-Fluss-Theorie zusammen.'."\n",
                       'Die von den Wirkungsquanten abgestrahlten Impulskegel in \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson},'."\n".
                     'die entsprechend auch die Wirkungsquanten in \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton} verbinden (nicht eingezeichnet),'."\n".
