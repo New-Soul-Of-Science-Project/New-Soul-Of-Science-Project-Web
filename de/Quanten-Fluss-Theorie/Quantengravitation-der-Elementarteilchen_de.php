@@ -34,8 +34,9 @@
                   array( 'text', array( text => array(
                     'Die Erklärung der Gravitation in Form der Quantengravitation\\footnote{\\const{FrQFT_g_footnote_text_Quantengravi}} ist eine der sehnlichsten Wünsche'."\n".
                     'der heutigen theoretischen Physik.\\color{*Bearb}{(Verweis auf Hossenfelder Blog und SdW)}'."\n".
-                    'Sie steht im Zentrum der Vereinheitlichung der Physik, der Verschmelzung von Quantenphysik\\footnote{\\const{FrQFT_g_footnote_text_Quantenphysik}} (Quantenfeldtheorie\\footnote{\\const{FrQFT_g_footnote_text_QFT}}) und Allgemeiner Relativitätstheorie\\footnote{\\const{FrQFT_g_footnote_text_ART}},'."\n".
-                    'von der sich vermutlich die Mehrheit der Physiker das Verständnis vieler bisher \\jump{OM:FrQFT:NotwenVereinheit}{unerklärlicher Beobachtungen und wichtiger Fragen} erhoffen.'."\n"))),
+                    'Sie steht im Zentrum der Vereinheitlichung der Physik, der Verschmelzung von Quantenphysik\\footnote{\\const{FrQFT_g_footnote_text_Quantenphysik}}'."\n".
+                    '(Quantenfeldtheorie\\footnote{\\const{FrQFT_g_footnote_text_QFT}}) und Allgemeiner Relativitätstheorie\\footnote{\\const{FrQFT_g_footnote_text_ART}},'."\n".
+                    'von der sich viele Physiker das Verständnis mancher bisher \\jump{OM:FrQFT:NotwenVereinheit}{unerklärlicher Beobachtungen und wichtiger Fragen} erhoffen.'."\n"))),
 
                   // #!: Wiederholt in "Mechanismus der Gravitation"!
                   array( 'figure',
@@ -55,7 +56,7 @@
                 'Mehrere Mechanismen führen zur Gravitation', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Eine Kette von aufeinander aufbauenden Mechanismen liefern uns das Verständnis dafür, wie die Quantengravitation zustande kommt.'."\n".
+                    'Eine Kette von aufeinander aufbauenden Mechanismen liefert uns das Verständnis dafür, wie die Quantengravitation zustande kommt.'."\n".
                     'Für den Überblick der Mechanismen, die hier am Wirken sind, beginne ich die Beschreibung beim Elementarteilchen, das angezogen wird,'."\n".
                     'und ende mit dem Ausgangspunkt, dem Ursprung, dieser Kette.'."\n",
                       'Bei der anschließenden detaillierten Beschreibung beginne ich dann in umgekehrter Reihenfolge …'."\n"))),
@@ -76,18 +77,18 @@
                     'Oberhalb der anziehenden Zentralmasse befindet sich ein schematisches Elementarteilchen des Modells, in dem lichtähnliche Strukturen zirkulieren (detaillierter in \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton}).'."\n".
                     'Diese lichtähnlichen Strukturen werden, wie von Lichtteilchen (Photonen) in der Allgemeinen Relativitätstheorie bekannt, zur zentralen Masse hin abgelenkt.'."\n".
                     'Ihre Bahn ist also gebeugt.'."\n".
-                    'Die Beugung der in ihnen zirkulierenden Strukturen führt zu einer Beschleunigung des angezogenen Elementarteilchens in Richtung der Masse, die der gravitation entspricht.'."\n"))),
+                    'Die Beugung der in ihnen zirkulierenden Strukturen führt zu einer Beschleunigung des angezogenen Elementarteilchens in Richtung der Masse, die der bekannten Gravitation entspricht.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Die Beugung lichtähnlicher Strukturen kommt durch deren Verlangsamung im Gravitationsfeld zustande – Shapiro-Verzögerung} \\\\'."\n".
                     'Die angesprochene Beugung von Licht, oder von dem Licht ähnlichen Strukturen, ergibt sich dadurch, dass deren Ausbreitungsgeschwindigkeit im dreidimensionalen Raum'."\n".
                     'auf der der Masse zugewandten Seite langsamer ist, als auf der von ihr abgewandten Seite (siehe \\jumpname{OM:FrQFT:Quantengravitation:Lichtbeugung:Fig-GravitationPhotonBeugung}).'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Die Verlangsamung lichtähnlicher Strukturen wird durch eine Störung der Lichtbewegung verursacht – Undulation der Lichtbahn} \\\\'."\n".
-                    'Anders als in der Allgemeinen Relativitätstheorie wird die Verlangsamung des Lichts oder ähnlicher Strukturen durch eine'."\n".
+                    'Anders als in der Allgemeinen Relativitätstheorie wird die Verlangsamung des Lichts, oder ähnlicher Strukturen, durch eine'."\n".
                     'wellenförmige Störung seiner Ausbreitungsbahn verursacht und nicht direkt durch die Krümmung des Raums oder der Raumzeit.'."\n",
-                    'Diese wellenförmige Störung der Lichtbahnen und vergleichbarer Bahnen lichtähnlicher Strukturen des Vakuums in der Umgebung einer Masse'."\n".
+                      'Diese wellenförmige Störung der Lichtbahnen, und vergleichbarer Bahnen lichtähnlicher Strukturen des Vakuums in der Umgebung einer Masse,'."\n".
                     'bringt allerdings unterschiedliche Energiedichten des Vakuums hervor, die als Raumzeitkrümmung erscheinen (siehe \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Fig-Gravitation-Masse},'."\n".
-                    'wellenförmige Erscheinungen im dem Vakuum eingeprägten Gravitationspotenzial; Energiedichtegradient als de-Broglie-Wellenlänge oder de-Broglie-Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}}).'."\n"))),
+                    'wellenförmige Erscheinungen im dem Vakuum eingeprägten Gravitationspotenzial; Energiedichtegradient als Gradient der de-Broglie-Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}} oder de-Broglie-Wellenlänge).'."\n"))),
                       
                   // array( 'youtube',
                   //   array_merge( $FrQFT_g_youtube_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson'))),
@@ -108,7 +109,7 @@
                     'Analysieren wir die Lichtverlangsamung, die ein einzelnes Elementarteilchen durch seinen gravitativen Effekt in der Umgebung verursacht,'."\n".
                     'dann erhalten wir nicht die Lichtverlangsamung, die beobachtet und in der Allgemeinen Relativitätstheorie vorhergesagt wird.'."\n",
                       'Erst viele in einer Zentralmasse versammelte Elementarteilchen bringen die korrekte Lichtverlangsamung im 3-dimensionalen Raum hervor.'."\n".
-                    'Nämlich dann, wenn wir verstehen, dass die wellenförmigen Störungen vieler Elementarteilchen einem statistischen Effekt unterliegen.'."\n"))),
+                    'Nämlich dann, wenn wir verstehen, dass das Zusammenspiel der wellenförmigen Störungen vieler Elementarteilchen einem statistischen Effekt unterliegt.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Vortext:XXX', text =>
                                            
                 'Quanten der Gravitation bisher unbeobachtet?', subline =>
