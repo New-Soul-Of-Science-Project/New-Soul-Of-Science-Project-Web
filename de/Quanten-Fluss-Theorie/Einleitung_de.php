@@ -203,44 +203,53 @@
                       
                   array( 'text', array( text => array(
                     'Die theoretische Physik befindet sich offenbar in einer zunehmenden Krise, die sich in den letzten Jahren immer weiter zuspitzt.\\footnote{\\const{FrQFT_g_footnote_text_PhysikKrise}}'."\n".
-                    'Trotzdessen wir zwei experimentell zunehmend gut bestätigte Haupttheorien haben\\footnote{Bezüglich der QFT: \\\\ \\const{FrQFT_g_footnote_text_QFTPruef}}\\footnote{Bezüglich der ART: \\\\ \\const{FrQFT_g_footnote_text_ARTPruef}}'."\n".
-                    '– für die Teilchenphysik die Quantenfeldtheorie\\footnote{\\const{FrQFT_g_footnote_text_QFT}} und für die Gravitation'."\n".
+                    'Trotz dessen wir zwei experimentell extrem gut bestätigte Haupttheorien haben\\footnote{Bezüglich der QFT: \\\\ \\const{FrQFT_g_footnote_text_QFTPruef}}\\footnote{Bezüglich der ART: \\\\ \\const{FrQFT_g_footnote_text_ARTPruef}}'."\n".
+                    '– für die Teilchenphysik die -Quantenfeldtheorie-\\footnote{\\const{FrQFT_g_footnote_text_QFT}} und für die Gravitation'."\n".
                     'sowie für die Kosmologie die Allgemeine Relativitätstheorie\\footnote{\\const{FrQFT_g_footnote_text_ART}} –,'."\n".
                     'wird es auch immer deutlicher, dass wir Beobachtungen machen, die durch die Haupttheorien nicht erklärt werden können.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Unerklärliche Beobachtungen und theoretisch aufgeworfene Fragen …} \\\\'."\n".
+                  '\\condb{Unerklärliche Beobachtungen und theoretisch aufgeworfene Fragen} \\\\'."\n".
                     'Zu diesen Beobachtungen gehört das Phänomen der Dunklen Materie\\footnote[*Bearb]{\\const{FrQFT_g_footnote_text_DunkleMat}} und das Phänomen der Dunklen Energie\\footnote{\\const{FrQFT_g_footnote_text_DunkleEnergie}}, die für die Entstehung unseres Kosmos und'."\n".
                     'für seine Entwicklung von entscheidender Bedeutung sind.'."\n".
-                    'Auch sind Fragen offen wie:'."\n".
-                    'Was geschah ganz direkt nach dem Urknall?\\color{*Bearb}{(Verweis)}'."\n".
-                    'Oder wie kommt die Hubble-Konstante auf ihren gemessenen Wert?\\color{*Bearb}{(Verweis)}'."\n".
-                    'Was passiert an der Oberfläche Schwarzer Löcher?\\color{*Bearb}{(Verweis)}'."\n".
-                    'Und so fort …'."\n",
-                      'Aber auch viele Beobachtungen in der Teilchenphysik sind bisher nicht zu erklären oder es werden diesbezüglich theoretische Fragen aufgeworfen:'."\n".
-                    'Warum ergeben sich die Massen der Elementarteilchen wie beobachtet?\\color{*Bearb}{(Verweis)}'."\n".
-                    'Wie groß ist die Vakuumenergiedichte?\\color{*Bearb}{(Verweis)}'."\n".
-                    'Warum haben wir mehr Materie als Antimaterie?\\footnote{\\const{FrQFT_g_footnote_text_AntimaterieProblem}}'."\n".
-                    'Und vieles mehr …'."\n"))),
+                    'Auch sind Fragen offen wie:'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Was geschah ganz direkt nach dem Urknall?\\color{*Bearb}{(Verweis)}',
+                        'Oder wie kommt die Hubble-Konstante auf ihren gemessenen Wert?\\color{*Bearb}{(Verweis)}',
+                        'Was passiert an der Oberfläche Schwarzer Löcher?\\color{*Bearb}{(Verweis)}',
+                    ))),
                   array( 'text', array( text => array(
-                  '\\condb{Hoffnungsträger fallen aus …} \\\\'."\n".
+                    'Und so fort …'."\n",
+                      'Aber auch viele Beobachtungen in der Teilchenphysik sind bisher nicht zu erklären oder werfen theoretische Fragen auf:'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Warum ergeben sich die Massen der Elementarteilchen wie beobachtet?\\color{*Bearb}{(Verweis)}',
+                        'Wie groß ist die Vakuumenergiedichte?\\color{*Bearb}{(Verweis)}',
+                        'Warum haben wir mehr Materie als Antimaterie?\\footnote{\\const{FrQFT_g_footnote_text_AntimaterieProblem}}',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Und viele Fragen mehr …'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Hoffnungsträger fallen aus} \\\\'."\n".
                     'Antworten auf das Phänomen der Dunklen Materie wurden von der theoretischen Physik seit einiger Zeit im Bereich der Teilchenphysik vermutet.'."\n".
                     'Dazu wurden neue Theorien entwickelt, in die die Physiker große Hoffnungen gesetzt haben.'."\n".
-                    'Zu diesen großen Hoffnungsträgern gehören – um nicht schon zu sagen gehörten – die Stringtheorie\\footnote{\\const{FrQFT_g_footnote_text_ST}} und die Supersymmetrie\\footnote{\\const{FrQFT_g_footnote_text_SUSY}}.'."\n",
-                      'In Bezug auf erste ist bisher nicht klar geworden, was sie vorhersagt, das wir experimentell wiederlegen, also falsifizieren könnten.'."\n".
-                    'Oder wie anhand dessen die Stringtheorie gar mit großer Wahrscheinlichkeit als gültig bestätigt, also recht sicher verifiziert werden könnte.\\color{*Bearb}{(Verweis)}'."\n".
-                    'Was die Supersymmetrie und die durch sie vorhergasagte Veränderung des Standardmodells der Teilchenphysik betrifft,'."\n".
-                    'so haben unterschiedliche ihrer Varianten neue Elementarteilchen vorhergesagt.'."\n".
-                    'Von denen könnten einzelne mit dem Phänomen der Dunklen Materie in Verbindung stehen, die allerdings bisher nicht entdeckt werden konnten.\\color{*Bearb}{(Verweis)}'."\n"))),
+                    'Zu diesen großen Hoffnungsträgern gehören die Stringtheorie\\footnote{\\const{FrQFT_g_footnote_text_ST}} und die Supersymmetrie\\footnote{\\const{FrQFT_g_footnote_text_SUSY}}.'."\n",
+                      'Aber wir kommen offenbar in eine Situation, in der wir vielleicht schon bald sagen müssen, diese Theorien gehörten zu den Hoffnungsträgern.'."\n",
+                      'In Bezug auf die Stringtheorie ist bisher nicht klar geworden, was sie vorhersagt, das wir experimentell bestätigen oder widerlegen, also falsifizieren, könnten.\\color{*Bearb}{(Verweis)}'."\n".
+                    'Was die Supersymmetrie und die durch sie vorhergesagte Veränderung des Standardmodells der Teilchenphysik betrifft,'."\n".
+                    'haben unterschiedliche ihrer Varianten neue Elementarteilchen vorhergesagt.'."\n".
+                    'Von denen könnten einzelne mit dem Phänomen der Dunklen Materie in Verbindung stehen, die allerdings bisher nicht entdeckt wurden.\\color{*Bearb}{(Verweis)}'."\n",
+                      'Auch ist die Supersymmetrie in Form der Superstringtheorie zu einem wesentlichen und scheinbar unverzichtbaren Bestandteil der Stringtheorie geworden, ohne die sie kaum zu den Beobachtungen passt.\\color{*Bearb}{(Verweis)}'."\n".
+                    'Ein Umstand, der die Möglichkeit einer Bestätigung der Gültigkeit der Stringtheorie doppelt bedroht.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Althergebrachtes bestätigt sich aufs Neue … \\\\ … obwohl wir wissen, dass es so alleine nicht sein kann} \\\\'."\n".
-                    'Das Standardmodell der Teilchenphysik in seiner althergebrachten Form, wurde durch die Entdeckung des Higgs-Teilchens am LHC hingegen abermals bestätigt.\\color{*Bearb}{(Verweis)}'."\n".
-                    'Und die Allgemeine Relativitätstheorie erlebte jüngst einen erneuten Triumpf durch den Nachweis der von ihr schon lange vorhergesagten Gravitationswellen.\\color{*Bearb}{(Verweis)}'."\n",
-                      'Das alt hergebrachte triumpfiert, obwohl wir wissen, dass es nicht der Weisheit letzter Schluss sein kann.\\color{*Bearb}{(Verweis)}'."\n".
-                    'Und die neuen populären Ideen der theoretischen Physik entpuppen sich scheinbar zusehens als Hirngespinnste.'."\n",
-                      'So driftet die theoretische Physik immer weiter in ein Dilemma, denn mögliche neue Theorien müssen die althergebrachten extrem genau wiedergeben.'."\n"))),
+                    'Nun ist es gleichzeitig so, dass das Standardmodell der Teilchenphysik in seiner althergebrachten Form, durch die Entdeckung des Higgs-Teilchens'."\n".
+                    'am LHC abermals grandios bestätigt wurde.\\color{*Bearb}{(Verweis)}'."\n".
+                    'Und die Allgemeine Relativitätstheorie erlebte jüngst einen erneuten Triumph durch den Nachweis der von ihr schon lange vorhergesagten Gravitationswellen.\\color{*Bearb}{(Verweis)}'."\n",
+                      'Das alt hergebrachte triumphiert, obwohl wir wissen, dass es nicht der Weisheit letzter Schluss sein kann.\\color{*Bearb}{(Verweis)}'."\n".
+                    'Und die neuen populären Ideen der theoretischen Physik entpuppen sich scheinbar zusehends als Hirngespinste.'."\n".
+                    'So driftet die theoretische Physik immer weiter in ein Dilemma, denn mögliche neue Theorien müssen die althergebrachten extrem genau wiedergeben.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Die gesuchte Vereinheitlichung der Physik bleibt bisher aus … \\\\ … ist aber nach wie vor notwendig} \\\\'."\n".
-                    'Noch vertrakter wird die Situation der theoretischen Physik dadurch, dass wir durch die beiden Haupttheorien'."\n".
+                    'Noch vertrackter wird die Situation der theoretischen Physik dadurch, dass wir durch die beiden Haupttheorien'."\n".
                     'eine in zwei unverträgliche Teile separierte Physik haben.'."\n".
                     'Denn generell ist es erstaunlicherweise nicht klar, wie die beiden Haupttheorien zusammengeführt werden können.'."\n".
                     'Auch wenn sie viele gemeinsame physikalische Begrifflichkeiten teilen, so erscheinen sie in ihren mathematisch strukturellen Grundfesten doch unvereinbar.\\footnote{\\const{FrQFT_g_footnote_text_VereinhQMuARTProbl}}'."\n",
@@ -258,17 +267,17 @@
                     'Ich würde ergänzen:'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                      '\\quote{ Auf diese Weise straft die Natur […] unverschämte Theoretiker, die ihre Einheit zu brechen wagen }, indem sie die Natur allzusehr vereinfachen und'."\n".
-                      'dies im Laufe der Zeit schließlich vergessen.'."\n"))),
+                      '\\quote{ Auf diese Weise straft die Natur […] unverschämte Theoretiker, die ihre Einheit zu brechen wagen}, indem sie die Natur – aus guten Gründen – sehr vereinfachen,'."\n".
+                      'dies aber schließlich im Laufe der Zeit vergessen.'."\n"))),
  
                   /*array( 'text', array( text => array(
                     'Auf die Details der Vereinfachungen und deren Folgen komme ich im Verlauf der Arbeit natürlich noch zu sprechen.'."\n"))),*/
                   array( 'text', array( text => array(
-                  '\\condb{Die neue Physik braucht neue Konzepte, neue Ideenwelten, Prinzipien der Zusammenhänge …} \\\\'."\n".
+                  '\\condb{Die neue Physik braucht neue Konzepte, neue Ideenwelten, Prinzipien der Zusammenhänge} \\\\'."\n".
                     'Es werden nicht nur neue Vorstellungen davon benötigt, welche Bestandteile unsere Natur ausmachen.'."\n".
-                    'Für eine neue Physik sind vor allem Ideen der Prinzipien der Zusammenhänge der Bestandteile und deren Veränderung von nöten, also wie sich die Dinge aus ihren Bestandteilen selbst organisieren,'."\n".
+                    'Für eine neue Physik sind vor allem Ideen der Prinzipien der Zusammenhänge der Bestandteile und deren Veränderung von Nöten, also wie sich die Dinge aus ihren Bestandteilen selbst organisieren,'."\n".
                     'ihre Organisation transformieren und diese wieder auflösen.'."\n",
-                      'Harald Lesch hat 2018 zu diesem Thema und zur aktuellen Situation der Physik einen anregenden, längeren Vortrag gehalten, den ich hier gerne empfehle: \\\\'."\n".
+                      'Harald Lesch hat 2018 zu diesem Thema und zur aktuellen Situation der Physik einen anregenden, längeren Vortrag gehalten, den ich gerne empfehle: \\\\'."\n".
                     'Teil 1: \\jump[https://www.youtube.com/watch?v=T0-8tzdHEo0]{}{Emergenz oder Evolution - Wie entsteht das Neue? (1/2) • Live im Hörsaal | Harald Lesch} \\\\'."\n".
                     'Teil 2: \\jump[https://www.youtube.com/watch?v=aDls12DdKpg]{}{Emergenz oder Evolution - Wie entsteht das Neue? (2/2) • Live im Hörsaal | Harald Lesch}'."\n"))),
                       
@@ -299,11 +308,11 @@
                   array( 'text', array( text => array(
                     'Wenn, wie oben verdeutlicht, die Frage nach dem Wesen der Zeit die grundlegenste Frage der heutigen Physik ist,'."\n".
                     'dann macht es auch Sinn, den Weg zur Vereinheitlichung in einer neuen Physik damit zu beginnen,'."\n".
-                    'unsere heutige Schwierigkeit mit der Zeit auf einen Punkt zu bringen und zu schauen, wie wir ihr entkommen können.'."\n",
-                      'Dies ist allerdings gar nicht so einfach, weil unsere heutigen physikalischen Denk- und Erklärungsmuster diese Schwierigkeit verschleiern.'."\n".
-                    'Denn gewisse, heute dogmatisch behandelte Erkenntnisse, die sich sicherlich auch aufgrund historischer Auseinandersetzungen so verfestigt haben,'."\n".
-                    'sind durch Differenzierung zu lockern, um eine Lösung dieser Schwierigkeit damit zu ermöglichen.'."\n",
-                      'Jedoch genau die sich aus den dogmatischen Erkenntnissen ergebenden Denktabus verhindern in solchen Fällen meist, die richtigen Fragen zu stellen.'."\n"))),
+                    'unsere heutige Schwierigkeit mit der Zeit auf einen Punkt zu bringen und zu schauen, wie wir dieser entkommen können.'."\n",
+                      'Das ist allerdings gar nicht so einfach, weil unsere heutigen physikalischen Denk- und Erklärungsmuster diese Schwierigkeit verschleiern.'."\n".
+                    'Denn gewisse, heute in meinen Augen zu dogmatisch behandelte Erkenntnisse, die sich sicherlich auch aufgrund historischer Auseinandersetzungen so verfestigt haben,'."\n".
+                    'sind durch Differenzierung und Konkretisierung der Lehrmeinung zu lockern, um damit eine Lösung dieser Schwierigkeit zu ermöglichen.'."\n",
+                      'Jedoch genau die sich aus den etwas dogmatischen Erkenntnissen ergebenden „Denktabus“ verhindern in solchen Fällen oft, die richtigen Fragen zu stellen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Ansatz: Lösung des ›Problems der Zeit‹')),
@@ -319,7 +328,7 @@
  
                   array( 'text', array( text => array(
                     'Wie fast immer, liegen auch dieser Frage unausgesprochene Annahmen zugrunde.'."\n",
-                      'Und mit den hier getroffenen Annhamen werden dann auch bestimmte Denktabus der heutigen Physik angekratzt …'."\n"))),
+                      'Und mit den hier insgeheim getroffenen Annahmen werden dann auch bestimmte „Denktabus“ der heutigen Physik berührt …'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Hypothese: Eigenschaften der Dinge entspringen ihrer Struktur')),
@@ -333,7 +342,7 @@
                       'Und dann werden wir schon herausfinden, woher seine Eigenschaften kommen.'."\n"))),
  
                   array( 'text', array( text => array(
-                    'Mit dieser Erwartung und ihrer Erfüllung werden wir uns auf der nachfolgenden Seite, \\italic{›\\jumpname{OM:FrQFT:WasIstPhysik} \\name[undertitle]{OM:FrQFT:WasIstPhysik}‹}, noch genauer beschäftigen.'."\n"))),
+                    'Mit dieser Erwartung und ihrer Erfüllung werden wir uns auf der nachfolgenden Seite \\italic{\\jumpname{OM:FrQFT:WasIstPhysik}}, \\italic{\\name[undertitle]{OM:FrQFT:WasIstPhysik}}, noch genauer beschäftigen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 //'Naturphilosophische Betrachtung: Vereinfachungen und deren Probleme')),

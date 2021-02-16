@@ -154,7 +154,8 @@
   //                      +:  "$Glo_g_Color_list":  '*SiteUndertitleH2' is new.
   //                      >:  "To_f_Color":  Add parameter '$removeNumberSign = true'.
   //           20200621:  +:  "To_f_Paragraph", 'headline':  'subline' supports now "To_f_Text_replace_html".
-  //           20200901:  +:  "$To_g_Text_replace_ary":  '↔︎' -> '&harr;' is new.
+  //           20200901:  +:  "$To_g_Text_replace_ary":  '↔︎' -> 'Quan&shy;ten&shy;feld&shy;the&shy;o&shy;rie' is new.
+  //           20210216:  +:  "$To_g_Text_replace_ary":  '-Quantenfeldtheorie-' -> '&harr;' is new.
   // v01.004:  20130609:  !:  "To_f_headline_make":  Tables left margin changed to 10px.
   //                      !:  "$To_g_Text_replace_ary":  '„', '›', '‹', '»', '«' entries new.
   //           20130618:  !:  "$To_g_Text_replace_ary":  '&nbsp;', '&amp;', '&reg;', '&ldquo;' entries new.
@@ -431,6 +432,8 @@
                                     array( '←', '&larr;'),
                                     array( '→', '&rarr;'),
                                     array( '↔︎', '&harr;'),
+                                    // #: hyphenations with &shy; — ??? this may be better added in the specific website file?
+                                    array( '-Quantenfeldtheorie-', 'Quan&shy;ten&shy;feld&shy;the&shy;o&shy;rie'),
                                   );
 
 

@@ -35,7 +35,7 @@
                     'Wir sind mit der Art und Weise, wie wir heute Physik und ganz im Allgemeinen Wissenschaft betreiben, erstaunlich weit gekommen.'."\n".
                     'Unsere modernen technischen wie auch medizinischen Errungenschaften zum Beispiel, wären ohne in die Details der Dinge zu gehen – zu mikroskopieren –'."\n".
                     'und dabei natürlich auch neue Zusammenhänge im Kleineren und Größeren zu erkennen, kaum denkbar.'."\n".
-                    'Denn manche, sehr der Realität wiedersprechende Ideen vom Gesamtzusammenhang wurden so entlarvt und ihr Dogma gebrochen.'."\n",
+                    'Denn manche, sehr der Realität widersprechende Ideen vom Gesamtzusammenhang wurden so entlarvt und ihr Dogma gebrochen.'."\n",
                       'Allerdings hat dieses Vorgehen, die Dinge immer weiter zu sezieren und zu zerlegen, einen Preis, der mir immer größer zu werden scheint:'."\n".
                     'Wir verlieren übergeordnete Ideen vom Zusammenhang.'."\n".
                     'Und dies bringt uns fortschreitende existenzielle Probleme, auch in der Gesellschaft und in unserer Umwelt.'."\n".
@@ -147,11 +147,11 @@
                     'des Lebens in die neue Physik erkennen.'."\n"))),
                     ))),*/
                   array( 'text', array( text => array(
-                  '\\condb{Ziel der Arbeit …} \\\\'."\n".
+                  '\\condb{Ziel der Arbeit} \\\\'."\n".
                     'Das Ziel der vorliegenden Arbeit, die live online entwickelt wird, ist es, die Physik zu vereinheitlichen.'."\n".
                     'Dahinter steht vor allem auch die Hoffnung, viele der heute unerklärten Beobachtungen erklären und die offenen Fragen der Physik beantworten zu können.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Naturphilosophische Einsichten – First Principles …} \\\\'."\n".
+                  '\\condb{Naturphilosophische Einsichten – First Principles} \\\\'."\n".
                     'Im Zentrum der neuen Physik stehen neue naturphilosophische Einsichten, mit deren Hilfe die moderne Physik analysiert und neu interpretiert wird.'."\n".
                     'So wird ein Weg deutlich, wie die heute unverträglich erscheinenden Interpretationen der Quantenphysik und der Allgemeinen Relativitätstheorie'."\n".
                     'verändert werden können, um deren Vereinheitlichung nicht weiter zu behindern.'."\n",
@@ -159,7 +159,7 @@
                     'Stabilität und deren Fortentwicklung – deren Entstehung, deren Transformation und deren Zerfall oder Zerstörung – verbunden ist.'."\n".
                     'Dieses Prinzip beschreibt die Organisation der Balance zwischen Ordnung und Chaos.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Mit Relativitätstheorie verträgliche Überlichtgeschwindigkeit …} \\\\'."\n".
+                  '\\condb{Mit der Relativitätstheorie verträgliche Überlichtgeschwindigkeit} \\\\'."\n".
                     'Ausgehend von diesem Prinzip zeigt sich, dass ein differenziertes Verständnis der Zeit, einen Ausweg aus der heutigen Sackgasse der theoretischen Physik bietet.'."\n".
                     'Dieses differenzierte Verständnis der Zeit basiert auf der Analyse von Veränderungsprozessen strukturiert gedachter Elementarteilchen.'."\n",
                       'Die Veränderung der hypothetischen Feinstruktur der Elementarteilchen vollzieht sich demnach mit Überlichtgeschwindigkeit.'."\n".
@@ -170,22 +170,22 @@
                     'weil sie deren Struktur nach einem bestimmten Zeitinterval in den ununterscheidbaren Ausgangszustand zurückführt.'."\n".
                     'Diese Schwingung entspricht dem Informationsgehalt der Struktur.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Neue Interpretation mündet in Vereinheitlichung …} \\\\'."\n".
+                  '\\condb{Neue Interpretation mündet in Vereinheitlichung} \\\\'."\n".
                     'Die Betrachtung, Analyse und deren neue, dynamisch-strukturelle Interpretation der modernen Physik mündet direkt in ihrer Vereinheitlichung.'."\n".
                     'Erhebliche Perspektivwechsel bringen so die neue Physik hervor und erhalten zugleich den Zugang zur Perspektive der modernen Physik, die'."\n".
                     'für uns auch praktisch weiterhin von großer Bedeutung bleibt.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Elementarteilchen als selbstorganisierte Regelprozesse fadenförmig verketteter Fundamentalteilchen …} \\\\'."\n".
+                  '\\condb{Elementarteilchen als selbstorganisierte Regelprozesse fadenförmig verketteter Fundamentalteilchen} \\\\'."\n".
                     'Jedes Elementarteilchen besteht demnach aus einem selbstorganisierten Regelprozess, in dem die Wechselwirkungen seiner Feinstruktur seine Stabilität regeln.'."\n".
                     'Seine Feinstruktur besteht aus fadenförmig verketteten Fundamentalteilchen, die als geschlossene und in drei Dimensionen schwingende, rotierende Strings'."\n".
                     'unterschiedlicher Struktur und Komplexität erscheinen.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Beschreibung der Quantengravitation … \\\\ Verständnis des Phänomens der Dunklen Materie … \\\\ Einblicke in Schwarze Löcher und Verständnis des Urknalls …} \\\\'."\n".
+                  '\\condb{Beschreibung der Quantengravitation \\\\ Verständnis des Phänomens der Dunklen Materie \\\\ Einblicke in Schwarze Löcher und Verständnis des Urknalls} \\\\'."\n".
                     'Die dynamisch-strukturelle Perspektive der neuen Physik erklärt alle bekannten Wechselwirkungen mit geometrischen Symmetriebrüchen.'."\n".
                     'Die so gefundene Quantengravitation beinhaltet ein Verständnis des Phänomens der Dunklen Materie, gibt einen tiefen Einblick in das Innere Schwarzer Löcher,'."\n".
                     'in die Ursache und den Ablauf des Urknalls unseres Kosmos und in die fraktale Struktur des Universums, seines Vakuums und seiner Elementarteilchen.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Der Wert naturphilosophischer und althergebrachter Perspektiven sowie von Perspektivwechseln …} \\\\'."\n".
+                  '\\condb{Der Wert naturphilosophischer und althergebrachter Perspektiven sowie von Perspektivwechseln} \\\\'."\n".
                     'Mit dieser Arbeit wird der Wert naturphilosophischer Interpretationen und deren Perspektiven auf die Physik und unsere Natur im Allgemeinen erkennbar.'."\n".
                     'Denn sie sind in der Lage, größere Zusammenhänge herzustellen.'."\n".
                     'Zugleich wird der versöhnliche Wert von plausibel definierten Perspektivwechseln zwischen zunächst als völlig unvereinbar erscheinenden Perspektiven gewürdigt.'."\n",
@@ -380,19 +380,19 @@
                     'Sekundärliteratur oder populärwissenschaftliche Literatur und auf Internetseiten entsprechend zu kennzeichnen.'."\n".
                     'Die Verweise werden im Hinblick darauf nach und nach ergänzt.'."\n"))),*/
                   array( 'text', array( text => array(
-                  '\\condb{Mit guten Argumenten überzeugen …} \\\\'."\n".
+                  '\\condb{Mit guten Argumenten überzeugen} \\\\'."\n".
                     'Im Mittelpunkt dieser Arbeit stehen gute Argumente.'."\n".
                     'Denn zur Begründung neuer Ideen, die teilweise der heutigen akademischen Physik zu widersprechen scheinen, und deshalb bei vielen Physikern vermutlich'."\n".
                     'erst einmal auf Ablehnung stoßen, gilt es, vorrangig viel Arbeit – und damit auch viel Zeit – in eine überzeugende Argumentation zu investieren.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Allgemeine Verständlichkeit …} \\\\'."\n".
+                  '\\condb{Allgemeine Verständlichkeit} \\\\'."\n".
                     'Ich habe den Wunsch, die Arbeit auch für möglichst viele an Physik interessierte Menschen, die keine sehr umfangreiche Vorbildung'."\n".
                     'diesbezüglich haben, verständlich zu halten.'."\n".
                     'Dies bedingt, dass ich eine Sprache nutze, die nicht die Fachtermini, ohne klärende Begriffe, alleine stehen lässt.'."\n".
                     'Aus diesem Anliegen heraus resultieren ausführliche Erläuterungen, die das Fachpublikum meist nicht bräuchte.'."\n".
                     'Und deshalb enthalten die Fußnoten mehr Verweise als in wissenschaftlichen Arbeiten üblich und auch Verweise auf Sekundärliteratur, populärwissenschaftliche Literatur und Internetseiten.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Online live Entwicklung der Arbeit …} \\\\'."\n".
+                  '\\condb{Online live Entwicklung der Arbeit} \\\\'."\n".
                     'Aufgrund der Neuheit der Gedanken, Ideen und Ansätze der Arbeit, deren beständiger Weiterentwicklung und Verfeinerung sowie des großen Gesamtumfangs,'."\n".
                     'ist es nicht möglich, sie in vollständig entwickelter Form komplett niederzuschreiben.'."\n".
                     'Deshalb habe ich mich entschieden, die Arbeit online live zu entwickeln und quasi als Lebenswerk in Stufen immer weiter fortzuschreiben.'."\n",
@@ -401,7 +401,7 @@
                     'Stufen vollziehen müssen, bis sie in die Internetseite eingepflegt werden können.'."\n".
                     'Meine Gedanken und neuen Ideen zur Weiterentwicklung versuche ich dann mit im Text angebrachten Notizen für meine Leser erkennbar zu machen.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Ungewöhnliche Situationen erfordern ungewöhnliche Maßnahmen …} \\\\'."\n".
+                  '\\condb{Ungewöhnliche Situationen erfordern ungewöhnliche Maßnahmen} \\\\'."\n".
                     'Dieses ungewöhnliche Vorgehen mag dem einen oder anderen nicht gefallen oder bei ihm zu Unverständnis oder Ablehnung führen.'."\n",
                       'Doch es hat den Vorteil, dass dem interessierten Publikum meine Gedanken und Ideen schon jetzt zugänglich sind.'."\n".
                     'Auch habe ich so die frühzeitige Chance, mit meinen Lesern in einen korrektiven und konstruktiven Dialog zu treten und meine Leser haben die Möglichkeit auf diese Weise'."\n".

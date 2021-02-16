@@ -105,7 +105,7 @@
                     'Halte ich sie für elegant, brilliant, einfach für schön, mathematisch inspirierend, mein Herz hängt an ihr oder ich finde sie gresslich,'."\n".
                     'ich beziehe ihre Bedeutung auf meinen oder unseren Nutzen, den ich oder wir aus ihr ziehen.'."\n",
                       'Erklärt sie in meinen Augen Beobachtungen, ist dies ebenso.'."\n".
-                    'Und nur das letzte macht sie zu einer bestätigten physikalischen oder allgemeiner naturwissenschaftlichen Theorie, in dem Sinne,'."\n".
+                    'Und nur die erklärten Beobachtungen machen sie zu einer bestätigten physikalischen oder naturwissenschaftlichen Theorie, in dem Sinne,'."\n".
                     'dass sie zur Erklärung der Phänomene der Natur herangezogen werden kann und den Menschen dadurch nützt, also dienlich ist.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Vorwort:Vortext:XXX', text =>
                                            
