@@ -2882,10 +2882,14 @@
                                               'OM:SupNum:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
                                                 'OM:SupNum:Einleitung:Vortext:Frage-und-zweite-Erkenntnis' => array( headline_text => 'Frage und zweite Erkenntnis', headline_text_short => 'Frage und zweite Erkenntnis'),
-                                                'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N' => array( headline_text => 'SN.Ein.12', headline_text_short => 'SN.Ein.12'),
-                                                'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega' => array( headline_text => 'SN.Ein.14', headline_text_short => 'SN.Ein.14'),
+                                                'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N' => array( headline_text => 'SN.Ein.12'),
+                                                'OM:SupNum:Einleitung:Vortext:Equ-N-ist-mit-Null' => array( headline_text => 'SN.Ein.13'),
+                                                'OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N' => array( headline_text => 'SN.Ein.14'),
+                                                'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega' => array( headline_text => 'SN.Ein.15'),
                                                 'OM:SupNum:Einleitung:Vortext:Ueberrationalitaetsvermutung' => array( headline_text => 'Überrationalitätsvermutung', headline_text_short => 'Überrationalitätsvermutung'),
                                                 'OM:SupNum:Einleitung:Vortext:Primzahlenprodukt-Vermutung' => array( headline_text => 'Primzahlenprodukt-Vermutung', headline_text_short => 'Primzahlenprodukt-Vermutung'),
+                                                         
+                                              'OM:SupNum:Einleitung:Grundlagen' => array( headline_text => 'Grundlagen', headline_text_short => 'Grundlagen'),
                                             ),
                                      ),
                               'OM:SupNum:Formale-Entwicklung' =>

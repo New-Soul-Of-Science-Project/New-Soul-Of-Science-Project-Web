@@ -3,7 +3,7 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 17.01.2021, 19:00h
+  // #: Stand: 13.02.2021, 19:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
@@ -87,6 +87,7 @@
   //           20200610:  +:  "$Sc_g_equation_replace_ary":  New elements '  ≔  ', '  ?=  ', '  ?\in  '.
   //                      >:  "$Sc_g_equation_replace_ary":  Redefine element '  :=  '.
   //           20210117:  !:  "$Sc_g_Text_replace_preg_ary", 'latexmath':  Default changed from 'Google' to 'MathJax'.
+  //           20210213:  +:  "$Sc_g_Text_replace_ary":  Elements "\M(T)" as "&#120139;" (Mathematical Double-Struck Capital T) is new.
   // v01.004:  20130609:  !:  Include "Tools_v01_004.php"
   //           20130628:  +:  "$Glo_PathRel_back" added;
   // v01.003:  20130522:  !:  Include "Tools_v01_002.php"  -->  "Tools_v01_003.php"
@@ -207,7 +208,7 @@
   
   
   
-  // #: The order of entries may be importened: As example XXX.
+  // #: The order of entries may be important: As example XXX.
   // !: Change name to "$Sc_g_HTML_replace_ary"!
   $Sc_g_Text_replace_ary = array_merge( $To_g_Text_replace_ary,
                                   array(
@@ -229,6 +230,7 @@
                                     array( '\M(N)', '&#8469;'),  // #: Double-struck capital n: http://unicode-table.com/de/2115/
                                     array( '\M(P)', '&#8473;'),  // #: Double-struck capital p: http://unicode-table.com/de/2119/
                                     array( '\M(S)', '&#120138;'),  // #: Mathematical Double-Struck Capital S: http://unicode-table.com/de/1D54A/
+                                    array( '\M(T)', '&#120139;'),  // #: Mathematical Double-Struck Capital T: http://unicode-table.com/de/1D54B/
                                     array( '\M(U)', '&#120140;'),  // #: Mathematical Double-Struck Capital U: http://unicode-table.com/de/1D54C/
                                   ));
 

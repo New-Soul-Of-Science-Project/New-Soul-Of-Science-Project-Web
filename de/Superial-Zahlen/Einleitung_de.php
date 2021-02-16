@@ -49,9 +49,9 @@
                     'Ich setzte den gegen Null gehenden Summanden \\term{Δx ≔ s^{-1}}.'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0}{ \frac{ f(x + \Delta x) - f(x) }{ \Delta x } }  }'),
-                      array( display => 'on', latex => '{  \Delta x  :=  s^{-1}  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  f\'(x)  :=  \frac{ f(x + s^{-1}) - f(x) }{ s^{-1} }  }'),
+                      array( display => 'on',  latex => '{  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0}{ \frac{ f(x + \Delta x) - f(x) }{ \Delta x } }  }'),
+                      array( display => 'on',  latex => '{  \Delta x  :=  s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  :=  \frac{ f(x + s^{-1}) - f(x) }{ s^{-1} }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dabei war \\term{s^{-1}} ein neues Symbol, über das ich zunächst nur annahm, dass es kleiner als jede positive Zahl war und doch größer als Null.'."\n".
@@ -65,11 +65,11 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       //%! array( display => 'off', latex => '{  f\'(x)  =  \frac{ f(x + s^{-1}) - f(x) }{ s^{-1} }  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  f\'(x)  =  \frac{ \left(x + s^{-1}\right)^{2} - x^{2} }{ s^{-1} }  }',
-                                              latex_if_visible => '{  \Leftrightarrow  f\'(x)  =  \frac{ \left(x + s^{-1}\right)^{2} - x^{2} }{ s^{-1} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  \frac{ \left(x + s^{-1}\right)^{2} - x^{2} }{ s^{-1} }  }',
+                                               latex_if_visible => '{  \Leftrightarrow  f\'(x)  =  \frac{ \left(x + s^{-1}\right)^{2} - x^{2} }{ s^{-1} }  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ \left(x^{2} + 2 x \cdot s^{-1} + s^{-2}\right) - x^{2} }{ s^{-1} }  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ 2 x \cdot s^{-1} + s^{-2} }{ s^{-1} }  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  f\'(x)  =  2 x + s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  2 x + s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wenn man also \\term{s^{-1}} zu Null setzt, dann kommt das übliche Ergebnis \\term{f\'(x) = 2x} heraus.'."\n",
@@ -77,17 +77,18 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       //%! array( display => 'off', latex => '{  f\'(x)  =  \frac{ f(x + s^{-1}) - f(x) }{ s^{-1} }  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  f\'(x)  =  \frac{ \left(x + s^{-1}\right)^{3} - x^{3} }{ s^{-1} }  }',
-                                              latex_if_visible => '{  \Leftrightarrow  f\'(x)  =  \frac{ \left(x + s^{-1}\right)^{3} - x^{3} }{ s^{-1} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  \frac{ \left(x + s^{-1}\right)^{3} - x^{3} }{ s^{-1} }  }',
+                                               latex_if_visible => '{  \Leftrightarrow  f\'(x)  =  \frac{ \left(x + s^{-1}\right)^{3} - x^{3} }{ s^{-1} }  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ \left(x^{3} + 3 x^{2} \cdot s^{-1} + 3 x \cdot s^{-2} + s^{-3}\right) - x^{3} }{ s^{-1} }  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ 3 x^{2} \cdot s^{-1} + 3 x \cdot s^{-2} + s^{-3} }{ s^{-1} }  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  f\'(x)  =  3 x^{2} + 3 x \cdot s^{-1} + s^{-2}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  3 x^{2} + 3 x \cdot s^{-1} + s^{-2}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wenn man also \\term{s^{-1}} zu Null setzt, dann kommt das übliche Ergebnis \\term{f\'(x) = 3x^{2}} heraus.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
-                'Erste Erkenntnis')),
+                'Eine fraktale Struktur', subline =>
+                  '… erste Erkenntnis')),
                   array( 'text', array( text => array(
                     'Dieses Vorgehen gab dem unendlich Kleinen eine interessante fraktale Struktur.'."\n".
                     'Ihre Selbstähnlichkeit bezieht sich darauf, dass die Gerade der endlichen Zahlen, um die unendlich kleinen, superialen Zahlen erweitert, auf diese Weise zwischen'."\n".
@@ -98,10 +99,11 @@
                     'Zwischen denen liegen dann unsere endlichen Zahlen und die superial kleinen Zahlen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Frage-und-zweite-Erkenntnis', text =>
                                            
-                'Frage und zweite Erkenntnis')),
+                'Was ist \\term{s}?', subline =>
+                  '… zweite Erkenntnis')),
                   array( 'text', array( text => array(
-                    'So stellte sich schließlich die Frage:'."\n".
-                    'Was ist \\term{s}?'."\n".
+                    'So stellte sich schließlich die genannte Frage:'."\n".
+                    'Was \\term{s} denn konkret ist?'."\n".
                     'Könnte man das noch näher definieren und damit noch mehr Sinn stiften und noch mehr Erkenntnis gewinnen?'."\n",
                       'Bei der Überlegung dieser Frage viel mir nach längerem Ringen auf, dass sich das Zählen von natürlichen Zahlen mit den \\italic{Superial-Zahlen} \\term{\M(S)} ins unendlich Große'."\n".
                     'vorsetzen ließ.'."\n".
@@ -142,17 +144,22 @@
                     'So können wir über das Symbol \\term{#} der Anzahl der Elemente einer Menge auch definieren, dass ich hier auf unendlich große, abzählbare Mengen erweitere:\\color{*Bearb}{(Verweis auf Wikipedia \\jump[https://de.wikipedia.org/w/index.php?title=Mächtigkeit_(Mathematik)&oldid=200036198]{}{Mächtigkeit (Mathematik), Mächtigkeit bei endlichen Mengen})}'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \omega   :=  \#\mathbb{N}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{N}   :=  \mathbb{N}_{0}  }',
+                                               label_name => 'OM:SupNum:Einleitung:Vortext:Equ-N-ist-mit-Null', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-N-ist-mit-Null}', label_incr => true),
+                      array( display => 'on',  latex => '{  \omega   :=  \#\mathbb{N}  }',
+                                               label_name => 'OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  s  :=  \displaystyle \left( \prod_{\forall p \in \mathbb{P}}  p \right)^{\omega}  }',
                                                label_name => 'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Über diese Definition von \\term{s} kommt man also wirklich zu einer Erweiterung der natürlichen Zahlen ins Unendliche, in der man'."\n".
+                    'Wie Formel \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-N-ist-mit-Null} definiert, setze ich voraus, dass die natürlichen Zahlen die Null enthalten.'."\n".
+                    'Den Grund dafür verdeutliche ich im Abschnitt \\italic{\\jumpname{OM:SupNum:Einleitung:Grundlagen}}.'."\n",
+                      'Über diese Definition von \\term{s} kommt man also wirklich zu einer Erweiterung der natürlichen Zahlen ins Unendliche, in der man'."\n".
                     'beliebig vorwärts und rückwärts zählen kann.'."\n".
                     'Wie ich noch zeigen werde lässt sich eine entsprechende Erweiterung der ganzen Zahlen definieren.'."\n".
                     'Auch eine Erweiterung der Primzahlen kann auf diese Weise definiert werden und man erhält die Menge \\term{\M(S)_{P}} der \\italic{superialen Primzahlen}.'."\n".
                     'Zum Beispiel sind die Zahlen \\term{s-1} und \\term{s+1} unendlich große Primzahlen, weil sie durch keine endliche Primzahl ganzzahlig teilbar sind'."\n".
-                    'und auch keine andere Zahl in diesem System gefunden werden kann, die diese Zahlen ganzzahlig teilen kann.'."\n".
+                    'und auch keine andere Zahl in diesem System gefunden werden kann, die diese Zahlen ganzzahlig teilt.'."\n".
                     'Die Zahlen \\term{s±2} sind hingegen beide durch \\term{2} teilbar, also keine Primzahlen.'."\n".
                     'Diese Erweiterung der Primzahlen ins Unendliche ist interessant, weil sie die Verteilung der Primzahlen im Unendlichen beleuchtet und so auch neue Einsichten für die endlichen Primzahlen verschaffen kann.'."\n",
                       'Dadurch, dass die Superial-Zahlen, durch diese sinnvolle Definition natürlicher Superial-Zahlen, dann zunächst mit rationalen Koeffizienten definiert sind, kommt man in die Lage, dass die rationalen Zahlen als Koeffizienten von \\term{s},'."\n".
@@ -193,8 +200,8 @@
                       'Als Beispiel stellt sich die Frage, ist die Wurzel aus Zwei als überrationaler Bruch darstellbar:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \exists  \,\,  \sqrt{2}  ?\in  \mathbb{U}  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  \sqrt{2} \cdot s  ?\in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \exists  \,\,  \sqrt{2}  ?\in  \mathbb{U}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \sqrt{2} \cdot s  ?\in  \mathbb{S}_{N}  }'),
                     ))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Primzahlenprodukt-Vermutung', text =>
                                            
@@ -212,8 +219,8 @@
                     'Dies würde auf folgende Formeln hinauslaufen:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \displaystyle \left( \prod_{\forall p \in \mathbb{P}}  p \right)  ?=  \omega  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  s  ?=  \omega^{\omega}  }'),
+                      array( display => 'on',  latex => '{  \displaystyle \left( \prod_{\forall p \in \mathbb{P}}  p \right)  ?=  \omega  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  s  ?=  \omega^{\omega}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Richtigkeit dieser Vermutung setzt eine Eigenschaft der Primzahlverteilung unter den extrem großen natürlichen Zahlen voraus, die so'."\n".
@@ -286,7 +293,7 @@
                     
                   array( 'jumplist',
                     array(
-                      //array(  jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz'),
+                      array(  jump_name => 'OM:SupNum:Einleitung:Grundlagen'),
                     )),
                 )
           ); ?>
@@ -294,6 +301,161 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
+		    	<!  • Grundlagen  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:SupNum:Einleitung:Grundlagen',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Einleitung', type => 'back'),
+                    )),
+                  
+                  array( 'text', array( text => array(
+                    'Ich möchte ergänzend und klarstellend noch beleuchten, welche hier wichtigen Eigenschaften von Zahlen und Mengen'."\n".
+                    'sich wie beim Übergang vom Endlichen ins Unendliche verhalten sollten, um Sinn zu machen und eine gute Plausibilität zu ergeben.'."\n",
+                      'Das bedeutet nicht, dass es prinzipiell nicht auch weitere Möglichkeiten mit ihren Perspektiven und deren jeweiligen Vor- und Nachteilen gibt.'."\n".
+                    'Mir erscheint die nachfolgende Perspektive natürlich am besten zu den Superial-Zahlen passend.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Grundlagen:XXX', text =>
+                'Zahlen und Mengen im Endlichen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                  '\\condb{Die Teilmengen vom Beginn der natürlichen Zahlen} \\\\'."\n".
+                    'Betrachten wird die Teilmengen \\term{\M(T)_{n}}, die wir vom Beginn der natürlichen Zahlen bilden können und deren Größe, also die Anzahl ihrer Elemente \\term{n}.'."\n",
+                      'Exemplarisch vereinfacht definieren wir diese Mengen wie folgt:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \mathbb{T}_{n}  :=  \left\{ 0,1,2,3,4,…,n \right\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Formell korrekter können wir schreiben:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \mathbb{T}_{n}  :=  \left\{ x ~\middle|~ \left( n \in \mathbb{N} \right) \left( \forall x \in \mathbb{N} \right) \left[ x < n \right] \right\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'italic', text => array(
+                      'Die Teilmengen \\term{\M(T)_{n}} der ersten \\term{n} Elemente wird definiert als die Menge der Elemente x für die Gilt:'."\n".
+                      'Ich nehme das Element \\term{n} aus der Menge der natürlichen Zahlen \\term{\M(N)} und alle \\term{x}, die kleiner als \\term{n} sind.'."\n"))),
+                      
+                  array( 'text', array( text => array(
+                    'Wir sehen schon an der Definition, dass die Anzahl der Elemente in \\term{\M(T)_{n}} größer als alle Elemente dieser Menge ist.'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                      'Mein Freund Raimund Welsch bemerkte hierzu zu recht, dies gilt nur, weil die natürlichen Zahlen vorstehend einschließlich der Null definiert sind.'."\n",
+                        'Ich antworte darauf, dass dies deutlich macht, wie sinnvoll und plausibel die Definition der natürlichen Zahlen einschließlich der Null ist,'."\n".
+                      'wenn wir uns mit dem Übergang uns Unendliche beschäftigen.'."\n"))),
+                      
+                  array( 'text', array( text => array(
+                  '\\condb{Das größte Element einer Menge} \\\\'."\n".
+                    'In Fall der Mengen mit endlich vielen Elementen, hier repräsentiert durch die Mengen \\term{\M(T)_{n}}, existiert ein größtes Element in der Menge.'."\n".
+                    'Es gilt:'."\n"))),
+                      
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \Rightarrow  \#\mathbb{T}_{n}  =  n  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  groesstes(\mathbb{T}_{n})  =  n - 1  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  groesstes(\mathbb{T}_{n}) + 1  =  n  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  groesstes(\mathbb{T}_{n})  <  n  }'),
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Nun gehen wir ins Unendliche über.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Grundlagen:XXX', text =>
+                'Zahlen und Mengen im Unendlichen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Anders als im Endlichen der Mengen \\term{\M(T)_{n}} verhält es sich, wenn wir zur Menge aller natürlich Zahlen übergehen, die unendlich viele Elemente hat.'."\n".
+                    'Auch sie beginnt mit der Null, aber in ihr gibt es per Definition kein größtes Element:'."\n"))),
+                      
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \Rightarrow  \nexists \; groesstes(\mathbb{N})  }'),
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                      'Jedoch kann die Anzahl der Elemente in \\term{\M(N)} nach obiger Definition \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N} mit der aktualunendlichen Zahl \\term{ω} angegeben werden.'."\n"))),
+                      
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \Rightarrow  \left( \forall n \in \mathbb{N} \right)  \left[  n < \omega  \right]  }'),
+                      array( display => 'on', latex => '{  \left( \forall r \in \mathbb{R} \right)  \left( \exists n \in \mathbb{N} \right)  \left[  r < n  \right]  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  \left( \forall r \in \mathbb{R} \right)  \left[  -\omega < r < \omega  \right]  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  \left( \forall r \in \mathbb{R^{+}} \right)  \left[  0 < \frac{ 1 }{ \omega } < r  \right]  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  \left( k \in \mathbb{R} \right)  \left( \forall r \in \mathbb{R^{+}} \right)  \\\ \qquad\qquad  \left[  k - r < k - \frac{ 1 }{ \omega } < k < k + \frac{ 1 }{ \omega } < k + r  \right]  }'),
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Auf diese Weise kommen wir in die Lage Zahlen außerhalb des Endlichen Zahlen zu definieren.'."\n".
+                    'Zahlen, die also wirklich im Unendlichen liegen.'."\n",
+                      'Auch können wir nun Zahlen definieren, die um eine endliche reelle Zahl herum liegen und näher an dieser sind, als jede andere reelle Zahl.'."\n".
+                    'Sie verhalten sich ähnliche wie der Limes einer Umgebung \\term{ε}, der gegen Null geht.'."\n".
+                    'Nur sind diese Umgebungszahlen nicht unscharf, wie ein Limes, sondern konkret und damit scharf.'."\n",
+                      'Das gleiche gilt, wenn wir das \\term{ω} durch das noch viel größere \\term{s} ersetzen:'."\n"))),
+                      
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \Rightarrow  \left( \forall n \in \mathbb{N} \right)  \left[  n < s  \right]  }'),
+                      array( display => 'on', latex => '{  \left( \forall r \in \mathbb{R} \right)  \left( \exists n \in \mathbb{N} \right)  \left[  r < n  \right]  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  \left( \forall r \in \mathbb{R} \right)  \left[  - s < r < s  \right]  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  \left( \forall r \in \mathbb{R^{+}} \right)  \left[  0 < \frac{ 1 }{ s } < r  \right]  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  \left( k \in \mathbb{R} \right)  \left( \forall r \in \mathbb{R^{+}} \right)  \\\ \qquad\qquad  \left[  k - r < k - \frac{ 1 }{ s } < k < k + \frac{ 1 }{ s } < k + r  \right]  }'),
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Dadurch, dass \\term{s} die \\term{ω}-ste Potenz aller endlichen Primzahlen als Faktoren enthält, bekommen wir besondere arithmetische Eigenschaften'."\n".
+                    'bezüglich ihrer Multiplikation mit rationalen Zahlen, Brüchen aus ganzen Zahlen, wie wir auf den nachfolgenden Seiten sehen werden.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Grundlagen:XXX', text =>
+                'XXX', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung'),
+                    )),
+                )
+          ); ?>
+
+          
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>
 
 	
