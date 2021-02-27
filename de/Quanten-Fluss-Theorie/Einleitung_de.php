@@ -306,55 +306,57 @@
                     ))),*/
                       
                   array( 'text', array( text => array(
-                    'Wenn, wie oben verdeutlicht, die Frage nach dem Wesen der Zeit die grundlegenste Frage der heutigen Physik ist,'."\n".
+                    'Wenn, wie eingangs verdeutlicht, die Frage nach dem Wesen der Zeit die grundlegendste Frage der heutigen Physik ist,'."\n".
                     'dann macht es auch Sinn, den Weg zur Vereinheitlichung in einer neuen Physik damit zu beginnen,'."\n".
-                    'unsere heutige Schwierigkeit mit der Zeit auf einen Punkt zu bringen und zu schauen, wie wir dieser entkommen können.'."\n",
+                    'unsere heutige Schwierigkeit mit der Zeit auf einen Punkt zu bringen und zu schauen, wie wir diesem Problem entkommen können.'."\n",
                       'Das ist allerdings gar nicht so einfach, weil unsere heutigen physikalischen Denk- und Erklärungsmuster diese Schwierigkeit verschleiern.'."\n".
                     'Denn gewisse, heute in meinen Augen zu dogmatisch behandelte Erkenntnisse, die sich sicherlich auch aufgrund historischer Auseinandersetzungen so verfestigt haben,'."\n".
                     'sind durch Differenzierung und Konkretisierung der Lehrmeinung zu lockern, um damit eine Lösung dieser Schwierigkeit zu ermöglichen.'."\n",
-                      'Jedoch genau die sich aus den etwas dogmatischen Erkenntnissen ergebenden „Denktabus“ verhindern in solchen Fällen oft, die richtigen Fragen zu stellen.'."\n"))),
+                      'Jedoch genau die sich aus den etwas zu dogmatisch interpretierten Erkenntnisse ergebenden „Denktabus“ verhindern in solchen Fällen oft, die richtigen Fragen zu stellen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Ansatz: Lösung des ›Problems der Zeit‹')),
                   array( 'text', array( text => array(
-                    'Der grundlegende Ansatz der neuen Physik ergibt sich aus der hiermit vorgeschlagenen Lösung des sogenannten ›Problems der Zeit‹\\footnote{\\const{FrQFT_g_footnote_text_ProblemDerZeit}},'."\n".
+                    'Der grundlegende Ansatz der neuen Physik ergibt sich aus der hier vorgeschlagenen Lösung des sogenannten ›Problems der Zeit‹\\footnote{\\const{FrQFT_g_footnote_text_ProblemDerZeit}},'."\n".
                     'welches heute die Vereinheitlichung der Quantenphysik und der Allgemeinen Relativitätstheorie verhindert.'."\n".
                     'Denn die bei dieser Art von Problem aufgezeigten (scheinbaren) Widersprüche ergeben sich im Rahmen der Kombination von Beobachtungen aus der Quantenphysik und der Relativitätstheorie und deren heute üblichen Interpretationen.'."\n",
                       'In einer einfachen Form steckt hinter dem ›Problem der Zeit‹ die Frage:'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                       'Wie kann es sein, dass es in einem Photon – einem Lichtteilchen – aufgrund seiner Lichtgeschwindigkeit, nach heutiger Interpretation der Relativitätstheorie,'."\n".
-                      'keinen Fortgang der Zeit gibt – die Zeit also still steht –, aber sich sein elektromagnetisches Feld dennoch schwingend ändert?'."\n"))),
+                      'keinen Fortgang der Zeit gibt, die Zeit also still steht, aber sich sein elektromagnetisches Feld dennoch schwingend ändert?'."\n"))),
  
                   array( 'text', array( text => array(
-                    'Wie fast immer, liegen auch dieser Frage unausgesprochene Annahmen zugrunde.'."\n",
-                      'Und mit den hier insgeheim getroffenen Annahmen werden dann auch bestimmte „Denktabus“ der heutigen Physik berührt …'."\n"))),
+                    'Auch dieser Frage liegen unausgesprochene Annahmen zugrunde, wie das eigentlich immer der Fall ist.'."\n".
+                    'Und mit diesen insgeheimen Annahmen werden dann auch bestimmte „Denktabus“ der heutigen Physik berührt …'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Hypothese: Eigenschaften der Dinge entspringen ihrer Struktur')),
                   array( 'text', array( text => array(
-                    'Eine unausgesprochene Annahme dieser Frage ist, dass die Ursache seines schwingenden elektromagnetischen Feldes in einer vermuteten schwingenden Struktur des Photons zu finden sei.'."\n".
-                    'Dahinter steckt quasi die generelle Hypothese, jede Eigenschaft eines Dings ergäbe sich aus seiner Struktur.'."\n",
-                      'Diese Annahme entspringt unserer Alltagserfahrung und auch der Erwartungshaltung jeder „mikroskopierenden“ Wissenschaft, also auch den Naturwissenschaften:'."\n"))),
+                    'Eine Annahme dieser Frage ist, dass die Ursache seines schwingenden elektromagnetischen Feldes in einer vermuteten sich ändernden Struktur des Photons zu finden sei.'."\n".
+                    'Dahinter steckt im Grunde die generelle Hypothese, jede Eigenschaft eines Dings ergäbe sich aus seiner (dynamischen) Struktur.'."\n",
+                      'Diese Annahme entspringt unserer Alltagserfahrung und auch der Erwartungshaltung jeder „mikroskopierenden“ Wissenschaft, also jeder Naturwissenschaft:'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                      'Wir untersuchen das Ding, was wir verstehen möchten, genauer, mikroskopieren es oder wir zerlegen es notfalls sogar und konzentrieren uns auf seine Bestandteile.'."\n".
+                      'Wir untersuchen das Ding genauer, das wir verstehen möchten, mikroskopieren es oder wir zerlegen es notfalls sogar und konzentrieren uns auf seine Bestandteile.'."\n".
                       'Und dann werden wir schon herausfinden, woher seine Eigenschaften kommen.'."\n"))),
  
                   array( 'text', array( text => array(
-                    'Mit dieser Erwartung und ihrer Erfüllung werden wir uns auf der nachfolgenden Seite \\italic{\\jumpname{OM:FrQFT:WasIstPhysik}}, \\italic{\\name[undertitle]{OM:FrQFT:WasIstPhysik}}, noch genauer beschäftigen.'."\n"))),
+                    'Mit dieser Erwartung und deren Erfüllung werden wir uns auf der nachfolgenden Seite \\italic{\\jumpname{OM:FrQFT:WasIstPhysik} – \\name[undertitle]{OM:FrQFT:WasIstPhysik}}, noch genauer beschäftigen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 //'Naturphilosophische Betrachtung: Vereinfachungen und deren Probleme')),
                 'Vereinfachungen und deren Probleme')),
                   array( 'text', array( text => array(
-                    'Physiker mögen argumentieren, das Photon sei nur punktförmig, habe daher keine Struktur und könne nicht rotieren.'."\n".
-                    'Dabei verschweigen sie allerdings, dass seine Punktform eine mathematische Vereinfachung darstellt, um die seine Eigenschaften beschreibenden Formelwerke einfacher oder überhaupt erst entwickeln zu können.'."\n".
-                    'Seine Punktform ist nicht unbedingt naturgegeben.'."\n",
+                    'Physiker mögen argumentieren, das Photon sei nur punktförmig, habe daher keine Struktur und könne nicht rotieren,'."\n".
+                    'wobei sie allerdings verschweigen, dass seine Punktform eine mathematische Vereinfachung darstellt, um die seine Eigenschaften'."\n".
+                    'beschreibenden Formelwerke einfacher zu formulieren oder überhaupt erst entwickeln zu können.'."\n".
+                    'Ebenso kann ein Mangel an Ideen und Vorstellungen über des Photons innere Struktur zur Folge haben, dass wir einfach von einem Punkt ausgehen.'."\n".
+                    'Seine Punktform ist jedenfalls nicht unbedingt naturgegeben.'."\n",
                     //  'Nutzen wir Photonen, um zu mikroskopieren – mit modernen Röntgenlasern zum Beispiel –, dann legt ihr frequenzabhängiges Auflösungsvermögen geradezu nahe,'."\n".
                     //'es hätte mit einer ihnen innewohnenden Struktur zu tun.'."\n",
-                      'Und die Punktform der Elementarteilchen macht durchaus auch größere Schwierigkeiten in der theoretischen Physik:'."\n".
-                    'Sie kann beispielsweise zu „unnatürlichen“\\color{*Bearb}{(Verweis)} Unendlichkeiten in ihren Wechselwirkungen führen, wenn sich zwei dieser Punktteilchen beliebig nah annähern können.\\footnote{\\const{FrQFT_g_footnote_text_Unendlichkeiten}}'."\n".
+                      'Und die Punktform der Elementarteilchen macht durchaus auch größere Schwierigkeiten in der theoretischen Physik, wie \\jump{OM:FrQFT:Einleitung:Ausgangssituation}{oben} von Lee Smolin angesprochen:'."\n".
+                    'Sie kann beispielsweise zu „unnatürlichen“\\color{*Bearb}{(Verweis)} Unendlichkeiten in ihren Wechselwirkungen führen, wenn sich zwei dieser Punktteilchen beliebig nahe kommen können.\\footnote{\\const{FrQFT_g_footnote_text_Unendlichkeiten}}'."\n".
                     'Diese Schwierigkeiten müssen dann durch mathematische Kniffe umgangen werden.\\footnote{Hierfür wird eine Renormierung durchgeführt, die bei manchen Theorien leider nicht möglich scheint: \\\\ \\const{FrQFT_g_footnote_text_Renormierung}}'."\n".
                     'Die Beseitigung der Vereinfachung führt zu einer fraktalen Struktur, wie wir sehen werden, die geeignet sein könnte, die Unendlichkeitsprobleme zu beseitigen.\\footnote{Fraktale Strukturen sorgen für Skaleninvarianz: \\\\ \\const{FrQFT_g_footnote_text_FraktalLoestUnendlichk}}'."\n",
                       'Bezüglich der Relativitätstheorie werden wir noch feststellen, dass die Vereinfachung der Materie auf die Punktform die Genialität von Einsteins naturphilosophischem Ansatz'."\n".
@@ -362,11 +364,11 @@
                     'Um dieses wichtige Argument zu verstehen und sich mit der Lösung dieses Problems aus Perspektive der Relativitätstheorie näher zu beschäftigen,'."\n".
                     'wird innerhalb der neuen Physik die \\jump{OM:VRT:Home}{Vereinheitlichte Relativitätstheorie} geschaffen und auf einer eigenen Theorieseite entwickelt.'."\n",
                       'Denn diese Aushöhlung zeigt sich als einer der Gründe dafür, dass die Verbindung der Relativitätstheorie mit der Quantenphysik verborgen bleibt und so die Vereinheitlichung behindert wird.'."\n",
-                    'Die Einführung der mathematisch genialen Idee der vierdimensionalen Raumzeit kompensiert die Aushölung zu einem Teil und führt gleichzeitig dazu,'."\n".
-                    'dass die verbleibende strukturelle Aushölung noch mehr verborgen wird, geradezu in einem zusammengezogenen Knoten versteckt ist.'."\n",
+                    'Die Einführung der mathematisch genialen Idee der vierdimensionalen Raumzeit kompensiert die Aushöhlung zu einem Teil und führt gleichzeitig dazu,'."\n".
+                    'dass die verbleibende strukturelle Aushöhlung noch mehr verborgen wird, geradezu in einem zusammengezogenen Knoten versteckt ist.'."\n",
                       'Mit dem gerade Ausgeführten möchte ich einführend ein erstes Mal anreißen, welche Folgen es haben kann, wenn wir uns der sehr hilfreichen, vor langer Zeit vorgenommenen Vereinfachungen'."\n".
-                    'nicht mehr bewusst sind und sie teils völlig unhinterfragt und daher unreflektiert als quasi naturgegeben hinnehmen.'."\n".
-                    'Später komme ich hier und da noch auf die Folgen von Vereinfachungen zurück.'."\n"))),
+                    'nicht mehr bewusst sind und sie teils unreflektiert, und damit völlig unhinterfragt, als quasi naturgegeben hinnehmen.'."\n".
+                    'Später komme ich noch auf die Folgen von unbewussten Vereinfachungen zurück.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Hypothese: Prinzip des Zusammenhangs – First Principle')),
