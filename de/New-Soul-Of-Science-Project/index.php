@@ -872,6 +872,108 @@
           ); ?>
 
 
+		    	<!  • Wolfgang Huß – Projekte  >
+          <?php $Sc_g_equation_auto_num = 0; ?>
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:nSOSp:Home:Wolfgang-Huss',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      //array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                    )),
+                      
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
+                                           
+                '\\name{OM:SpaLeb:Home}', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                  '\\condb{\\name[undertitle]{OM:SpaLeb:Home}} \\\\'."\n".
+                    '\\name[description]{OM:SpaLeb:Home}.'."\n"))),
+                    
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SpaLeb:Home'),
+                    )),
+                      
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
+                                           
+                '\\name{OM:NPYo:Home}', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                  '\\condb{\\name[undertitle]{OM:NPYo:Home}} \\\\'."\n".
+                    '\\name[description]{OM:NPYo:Home}.'."\n"))),
+                    
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:Home'),
+                    )),
+                      
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
+                                           
+                '\\name{OM:FrQFT:Home}', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                  '\\condb{\\name[undertitle]{OM:FrQFT:Home}} \\\\'."\n".
+                    '\\name[description]{OM:FrQFT:Home}.'."\n"))),
+                    
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Home'),
+                    )),
+                      
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
+                                           
+                '\\name{OM:VRT:Home}', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                  '\\condb{\\name[undertitle]{OM:VRT:Home}} \\\\'."\n".
+                    '\\name[description]{OM:VRT:Home}.'."\n"))),
+                    
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:VRT:Home'),
+                    )),
+                      
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
+                                           
+                '\\name{OM:NPT:Home}', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                  '\\condb{\\name[undertitle]{OM:NPT:Home}} \\\\'."\n".
+                    '\\name[description]{OM:NPT:Home}.'."\n"))),
+                    
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPT:Home'),
+                    )),
+                      
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
+                                           
+                'Plus und Minus versa Existenz und Nichtexistenz', subline =>
+                  '')),
+                  // array( 'text', array( text => array(
+                  // '\\condb{\\name[undertitle]{OM:NPT:Home}} \\\\'."\n".
+                  //   '\\name[description]{OM:NPT:Home}'."\n"))),
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '• In Planung: Die Naturphilosophie der Gegensätze – Existenz und Nichtexistenz, Plus und Minus: Plus und Minus würde ich dabei als räumliches Phänomen bezeichnen.',
+                    '• Wie verhalten sich die Existenz sowie die Nichtexistenz und die Existenz sowie die fehlende Existenz zueinander?',
+                    ))),
+                    
+                  array( 'jumplist', array(
+                      // array(  jump_name => 'OM:NPT:Home'),
+                    )),
+                      
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
+                                           
+                '\\name{OM:SupNum:Home}', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                  '\\condb{\\name[undertitle]{OM:SupNum:Home}} \\\\'."\n".
+                    '\\name[description]{OM:SupNum:Home}.'."\n"))),
+                    
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Home'),
+                    )),
+                      
+              )
+          ); ?>
+
+
 		    	<!  • Spannungsspiel des Lebens (Neue Biophysik, NB)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',

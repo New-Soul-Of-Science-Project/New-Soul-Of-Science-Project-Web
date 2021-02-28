@@ -1690,7 +1690,7 @@
                                        text_titel_h1 => 'Die strukturelle Naturphilosophie der Zeit \\color{*TitleAdd}{\\small{(NPT)}}',
                                        text_titel_short => 'Naturphilosophie der Zeit',
                                        text_undertitel_h2 => 'Ein strukturelles Verständnis der dynamischen Existenz und ihrer Zeit',
-                                       text_titel_discr_h3 => 'Der Djet-Neheh-Dualismus bringt die Begriffe Struktur, Bewegung als deren Veränderung, Existenz, Zeit, Wechselwirkung, Symmetriebruch und Spannung in einen allgemeinen Zusammenhang.',
+                                       text_titel_discr_h3 => 'Der Djet-Neheh-Dualismus bringt die Begriffe Struktur, Bewegung als deren Veränderung, Existenz, Zeit, Wechselwirkung, Symmetriebruch und Spannung in einen allgemeinen Zusammenhang',
                                        jump_ary => array(
                                               'OM:NPT:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
                                               'OM:NPT:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
@@ -2110,6 +2110,7 @@
                                                 'OM:nSOSp:Home:Forschungsstand:Fig-Photon' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                          
                                               'OM:nSOSp:Home:nSOSp' => array( headline_text => '\\name[title]{OM:nSOSp:Home}', headline_text_short => '\\name[shorttitle]{OM:nSOSp:Home}'),
+                                              'OM:nSOSp:Home:Wolfgang-Huss' => array( headline_text => 'Wolfgang Huß – Projekte', headline_text_short => 'Wolfgang Huß – Projekte'),
                                               'OM:nSOSp:Home:Spannungsspiel-des-Lebens' => array( headline_text => '\\name[title]{OM:SpaLeb:Home}', headline_text_short => '\\name[shorttitle]{OM:SpaLeb:Home}'),
                                               'OM:nSOSp:Home:Naturphilosophie-Yoga' => array( headline_text => '\\name[title]{OM:NPYo:Home}', headline_text_short => '\\name[shorttitle]{OM:NPYo:Home}'),
                                               'OM:nSOSp:Home:Fraktale-Quanten-Fluss-Theorie' => array( headline_text => '\\name[title]{OM:FrQFT:Home}', headline_text_short => '\\name[shorttitle]{OM:FrQFT:Home}'),

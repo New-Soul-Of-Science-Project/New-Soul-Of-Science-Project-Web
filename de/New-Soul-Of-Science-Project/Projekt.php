@@ -66,7 +66,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Entwicklting \\small{– Einführung}}</h3>'."\n"),
+                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Entwicklung \\small{– Einführung}}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       // nSOSp_f_tableOfContents_elementAry( 'OM:nSOSp:Einleitung'),
