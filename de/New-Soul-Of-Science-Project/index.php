@@ -76,179 +76,6 @@
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:nSOSp:Home:Forschungsstand'),
                     )),
-                      
-                  array( 'fade-in-area', array( Display => 'invis',
-                    Title => '\\color{*Bearb}{Geplante Themen}', ParagraphList => array(
-                  // !!!: 'fade-in-area' can not include themselfes at the Moment!
-                  /*array( 'notice', array( Display => 'invis',
-                    Title => 'Gesellschaftsphilosophie', text => array(
-                    '(• Nachhaltiges Bauen, siehe \\jump[https://kenfm.de/erwin-thoma/][*Bearb]{}{KenFM im Gespräch mit: Erwin Thoma – DIE MACHER (1)}.)',
-                    '(• Die Gesellschaft der Bäume im Wald als Vorbild nehmen, siehe \\jump[https://kenfm.de/erwin-thoma/][*Bearb]{}{KenFM im Gespräch mit: Erwin Thoma – DIE MACHER (1)} und \\jump[https://www.youtube.com/watch?v=w0tBdpz2TBs&feature=youtu.be][*Bearb]{}{KenFM auf YouTube, Die Macher: Erwin Thoma - Holz100}.)',
-                    ))),*/
-                  // !!!: 'fade-in-area' can not include themselfes at the Moment!
-                  /*array( 'notice', array( Display => 'invis',
-                    Title => 'Entstehungserhaltendes Spiecherformat – Format mit Historie', text => array(
-                    '(• OpenStruct / Vec2)',
-                    ))),*/
-                                                                                        
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{'."\n".
-                    '\\bold{Menschheitsfamilie – Gesellschaftsphilosophie:} \\\\'."\n".
-                    '• Den \\bold{Begriff Menschheitsfamilie} kenne ich von Daniele Ganser, der ihn in der folgenden Sendung gut erklärt, siehe \\jump[https://kenfm.de/positionen-15/]{}{Positionen 15: Der Tiefe Staat – Mythos oder Wirklichkeit?} \\\\'."\n".
-                    '– Zu dieser Sendung würde ich folgenden Standpunkt und seine Perspektive vorschlagen: \\\\'."\n".
-                    '· Der Tiefenstaat kann nicht überleben! Die Struktur des Tiefenstaats ist in der Gesellschaft im Grunde das, was in unserem Körper ein Krebs ist. Besonders im Zusammenspiel mit dem Neoliberalismus und seiner Folgen für unsere Gesellschaft und unser Ökosystem, also für unsere Lebensgrundlagen, können wir sicher mit Fug und Recht sagen, der Tiefenstaat wird unsere Gesellschaft und unsere Lebensgrundlagen insgesamt zerstören, wenn er nicht vorher schon verschwindet. (Vgl. \\jump[https://kenfm.de/rainer-mausfeld-warum-schweigen-die-laemmer/]{}{KenFM im Gespräch mit: Prof. Rainer Mausfeld („Warum schweigen die Lämmer?“)}, Sek. 1:26:10.) Damit steht fest, er wird sich selber zerstören, denn er kann nur auf Basis einer Gesellschaft und ihrer Lebensgrundlagen existieren. Er ist ein Teil von uns. Aber nicht die Betreiber des Tiefenstaats sind ansich unser Verderben, denn sie sind Mitglieder unserer Gesellschaft, der Menschheitsfamilie. Sondern die Struktur, die sie in unserer Gesellschaft gebildet haben, die Struktur Tiefenstaat, führt uns in den allgemeinen Abgrund. Daher appelliere ich an diese Menschen, die Teilstrukturen so zu verändern, dass sie das Wohl von uns allen im Sinn führen, ein Win-Win für alle, oder die Teilstrukturen des Tiefenstaats aufzulösen. Tun die Mitglieder dieser Struktur dies nicht, dann wird es der Untergang von ihnen oder spätestens ihrer Kinder oder Enkel sein. Der Krebs stirb in jedem Fall mit oder ohne dem Organismus, in dem er sich gebildet hat. Diese Gewissheit muss allen Menschen klar werden. Und deshalb müssen wir sie verbreiten. \\\\'."\n".
-                    '· Die Verbreitung der ›Untergangsgewissheit des Tiefenstaats‹ ist authentisch, weil ich wirklich an sie glaube. \\\\'."\n".
-                    '· Die ›Untergangsgewissheit des Tiefenstaats‹ ist unabhängig davon gültig, ob sie verbreitet wird oder jemand sie glaubt. Denn ein Krebs tötet am Ende seinen Organismus und damit sich selber, egal ob dies jemand glaubt oder ihn dabei Beobachtet. Der Tiefenstaat ändert diese Tatsache nicht dadurch, dass er die Überbringer seiner Untergangsgewissheit bekämpft und mundtot macht. \\\\'."\n".
-                    '· Im Gegenteil: Gehen die Dienste gegen die Verbreitung der ›Untergangsgewissheit des Tiefenstaats‹ vor, dann werden sie die Verbreitung dieser Gewissheit und damit ihren Untergang beschleunigen. Denn dadurch macht der Tiefenstaat deutlich, dass seine Untergangsgewissheit Wahr ist und Realitätsbezug hat. \\\\'."\n".
-                    '– Warum ist der Tiefenstaat wie ein bösartiger Krebs in einem Organismus? \\\\'."\n".
-                    '· Einen bösartigen Krebs zeichnet aus, dass er seinen Organismus, in dem er sich gebildet hat, auslaugt und in dessen Funktion so stark blockiert oder so viel Raum einnimmt, bis der Gesamtorganismus nicht mehr lebensfähig ist. \\\\'."\n".
-                    '· Der Tiefenstaat durchwuchert als teils unsichbares Netz die Politik, die Dienste, die Polizei, die Justiz, die Banken, die Medien und letztlich auch viele andere Teile der Gesellschaft. Dabei arbeiten seine Netzwerke verdeckt oder zumindest verschleiert. Seine sichtbaren Teile geben sich nicht offen als Teil seines Netzes aus oder sind sich ihrer Funktion im Sinne dieses Netzes nicht bewusst. Diese Teile sind daher verschleiert. \\\\'."\n".
-                    '· In Verbindung mit der Geldschöpfung der Banken, also der Geldschöpfung über Kredite – Fiat-Money oder Giralgeldsystem -, und dem Neoliberalismus ergibt sich eine mafiöse Struktur, die der Bereicherung privater Personen Tür und Tor öffnet. \\\\'."\n".
-                    '· Dieses System ist völlig außer Kontrolle und eben auch nicht kontrollierbar, was es dem bösartigen Krebs stark ähnlich macht. \\\\'."\n".
-                    '· Es ist nicht eigenständig lebensfähig, sondern existiert „parasitär“ nur auf Basis der restlichen Gesellschaft, deren Resourcen angezapft werden. \\\\'."\n".
-                    '· Damit ist es eben ein Teil unserer Gesellschaft, der Menschheitsfamilie, und bedroht deren Existenz. \\\\'."\n".
-                    '• \\bold{Filme und Geschichten, die solche gesellschaftlichen Manipulationen zum Thema machen:} \\\\'."\n".
-                    '– Film: Zoomania – Ganz schön ausgefuchst. \\jump[https://de.wikipedia.org/wiki/Zoomania]{}{Zoomania, auf Wikipedia}. \\\\'."\n".
-                    '· Und davon ab ist es für mich einer süßesten und liebenswertesten Filme aller Zeiten. \\\\'."\n".
-                    '– Kurzfilm: \\jump[http://www.heliofant.com/index.html]{}{I, pet goat II}. Das einschlagende Erlebnis von 9/11, sein Kontext und unsere eigene Rolle. \\\\'."\n".
-                    '• \\bold{Wir sollten uns enttäuschen und die Zusammenhänge für uns neu entwickeln:} \\\\'."\n".
-                    '– Unsere Gesellschaft, unsere Wissenschaft und unsere Geschichte beruhen nach meinem Eindruck offenbar auch auf vielen Täuschungen. Teils im guten Glauben, teils auch beabsichtigt. In Sachen optische Täuschung vgl. GEO 04/2020, Illusionen, S. 72. \\\\'."\n".
-                    '⋅ Eine wichtige Binsenweisheit diesbezüglich ist: \\italic{Die „Sieger“ schreiben die Geschichte.} \\\\'."\n".
-                    '– Wir sind gut beraten uns mit unserer Wahrnehmung, ihrer Funktionsweise, deren Trugbildern und der Wirkung unserer Vorurteile zu beschäftigen. \\\\'."\n".
-                    '⋅ Diese Täuschungen und Trugbilder sind aufgrund der Funktionsweise unserer Wahrnehmung und unseres Denkens immer vorhanden. Und sie haben auch stark mit unseren Denkrahmen zu tun, denen wir uns auch bewusst werden sollten. \\\\'."\n".
-                    '⋅ Unsere Denkrahmen sind auch ein besonderes Einfallstor für äußere bewusste und unbewusste Manipulationen. Diese kommen besonders oft vor, wenn es um Einfluss, Geld und Macht geht. \\\\'."\n".
-                    '⋅ In der Physik ist hierbei das Buch von Sabine Hossenfelder \\jump[https://www.fischerverlage.de/buch/sabine_hossenfelder_das_haessliche_universum/9783103972467]{}{›Das hässliche Universum‹} und ihr Blog \\jump[http://backreaction.blogspot.com]{}{›BackReAction‹} und ihre Vorträge empfehlenswert. \\\\'."\n".
-                    '⸰ Es geht dabei auch um die Transparenz der Wissenschaft, um die Veröffentlichung von Messergebnissen, die es anderen Wissenschaftlern ermöglichen deren Interpretation zu überprüfen, vgl. \\jump[http://backreaction.blogspot.com/2020/03/how-good-is-evidence-for-dark-energy.html]{}{How good is the evidence for Dark Energy?} \\\\'."\n".
-                    '⋅ In Bezug auf die Medizin regt das Buch \\jump[https://www.torstenengelbrecht.com/de/buch_viruswahn.html]{}{›Virus-Wahn‹} von Torsten Engelbrecht und Claus Köhnlein zum kritischen Denken an und das KenFM Gespräch mit \\jump[https://kenfm.de/lothar-hirneise/]{}{Lothar Hirneise („Chemotherapie heilt Krebs und die Erde ist eine Scheibe“)} lässt uns noch einmal anders über Krebs nachdenken. \\\\'."\n".
-                    '• \\bold{Eine Kultur der Balance aus Stabilität und Veränderung:} \\\\'."\n".
-                    '– Unser \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}, der zentrale Regelprozess unseres Lebens, organisiert eine möglichst angenehme Balance von Stabilität und Veränderung. \\\\'."\n".
-                    '– Mein Anliegen ist eine Kultur in unserer Gesellschaft zu schaffen, die sich der Notwendigkeit beider Facetten des Lebens, der Stabilität und der Veränderung, und ihrer Austarierung bewusst ist. Ich möchte eine solche Kultur in unserer Gesellschaft etablieren und kultivieren. \\\\'."\n".
-                    '– Es ist eine Kultur der Pflege unserer Riten und lieb gewonnenen Gewohnheiten, zu deren grundlegenden Gewohnheit es auch gehört, diese auch neugierig zu hinterfragen und gegebenenfalls zu verändern, wenn es plausibel oder viabel (nützlich), also sinnvoll, erscheint. Die Neugier und der Spaß daran, auch mal Neues auszuprobieren, dass ja auch nicht beibehalten werden muss, sind positiv belegt und werden gesellschaftlich anerkannt und gefördert. Mit dem Fokus darauf zu schauen, wie sich das Neue für uns anfühlt und was es zum Positiven und zum Negativen verändert. \\\\'."\n".
-                    '– Es ist eine Kultur des sowohl als auch, in der Altes, Bewährtes und Liebgewonnenes nicht gleich über Bord geworfen wird, wenn Neues auftaucht, gesucht und gefunden wird. Evolutionäre Dinge entwickeln sich oft parallel zum Alten. \\\\'."\n".
-                    '– So entsteht eine Kultur der Balance der Ambiguitätstoleranz, der Mehrdeutigkeiten und Widersprüche, und deren Auflösung, wenn es sinnvoll oder möglich erscheint. \\\\'."\n".
-                    '– Diese Kultur organisiert eine angenehme Balance zwischen Ordnung und Chaos. (Vgl. Sunil Mundra, Enterprise Agility.) \\\\'."\n".
-                    '– Dabei ist uns im Gegensatz dazu bewusst, dass sowohl Stillstand als auch zu viel Veränderung nicht angenehm und gesund sind. Beides ist mit Stress verbunden. Wenn wir unseren persönlichen Achtsamkeitsprozess, und auch den unserer Gesellschaft, gut justieren und auf ihn hören, dann aktivieren wir unsere Selbstheilungskräfte und es stellt sich eine gute Balance ein, denn das ist die Funktion und Bedeutung des Achtsamkeitsprozesses für und in unserem Leben, sein Sinn. \\\\'."\n".
-                    '– Das Wissen um diese Zusammenhänge möchte ich kultivieren. \\\\'."\n".
-                    '• Die \\bold{Seele als Zusammenhang} der Dinge und der Bestandteile der Dinge. \\\\'."\n".
-                    '– Dieser Perspektive auf den Seelenbegriff ist quasi der Gegenentwurf zum Neoliberalismus. \\\\'."\n".
-                    '– Unser Leben dreht sich demnach um unsere Seele, die sich aus all unseren inneren Vorgängen, unserem inneren Zusammenhang, und aus unserem äußeren Zusammenhang, unserer Interaktion mit unserer Umwelt, insbesondere mit den Menschen und anderen Lebewesen, ergibt. \\\\'."\n".
-                    '– Die Qualität unserer Seele könnte demnach davon abhängen, welche Gefühle bei uns selber und bei anderen Entstehen. \\\\'."\n".
-                    '– Durch die Interaktion mit anderen sind wir in der Lage, unsere Seele über unseren eigenen Körper hinaus zu erweitern, was für unser Wohlbefinden im Allgemeinen sehr förderlich sein kann. \\\\'."\n".
-                    '– Hier geht es also um das Miteinander, also allgemein und im Großen gesprochen, um die Menschheitsfamilie. \\\\'."\n".
-                    '– Der Sinn ist Teil der Seele. \\\\'."\n".
-                    '· Der Zusammenhang der Dinge, also auch von uns Menschen, kann eben auch einen Sinn enthalten, den wir wohl als individuelle oder gruppenbezogene Deutung des Zusammenhangs verstehen können. Vielleicht auch auf Basis unserer Gefühle dazu. \\\\'."\n".
-                    '• \\bold{Technologie und Internet:} \\\\'."\n".
-                    '– Wir müssen die Technologie so formen, dass sie zu uns passt und uns nicht einer vorgegebenen Technologie anpassen. \\\\'."\n".
-                    '– Als Beispiel hat Apple dies in den 80gern und folgenden Jahren mit ihrem Konzept vom Human-Interface vorgemacht und war damit sehr erfolgreich. \\\\'."\n".
-                    '• \\bold{Meinungsfreiheit:} \\\\'."\n".
-                    '– Die Wikipedia bedroht unsere Verfassungsmäßige Grundordnung, das Recht auf freie Meinungsäußerung! Siehe \\jump[https://www.youtube.com/watch?v=f6eon2C-Id4&feature=youtu.be]{}{Rufmord an Gabriele Krone-Schmalz über die Wikipedia. | #03 Geschichten aus Wikihausen}. \\\\'."\n".
-                    '• \\bold{George Orwell 1984 und das kulturelle Zeitgedächnis:} »In seinem Roman 1984 hat George Orwell das Schreckbild einer Gesellschaft gezeichnet, die nur noch in einer einzigen Zeit, der von der Partei verordneten „ewigen Gegenwart“ lebt. Durch systematische Spurenverwischung hat es die Partei geschafft, das kulturelle Gedächtnis der Gesellschaft vollständig zu vernichten. Niemand, auch nicht die Alten, die lange vor der „Großen Revolution“ geboren wurden, kann sich mehr daran erinnern, ob die Vergangenheit irgendwie anders, vielleicht gar besser war als die Gegenwart. Das kommunikative Gedächtnis, auf das die Menschen reduziert sind und das voll und ganz von der Partei kontrolliert wird, ist zu jeder Art von kritischer Distanznahme außerstande. Orwells Roman verarbeitet seine Erfahrungen mit dem Stalinismus und Faschismus; es handelt sich hier um eine Art fiktionaler Hochrechnung von Tendenzen, die es immer wieder in der Geschichte gegeben hat und die in den totalitären Regimes des 20. Jahrhunderts kulminierten. Das kulturelle Gedächtnis ist nicht nur die tragende, legitimierende Unterfütterung einer jeweiligen Gegenwart, sondern kann durchaus auch eine kritische, ja geradezu subversive und revolutionäre Instanz darstellen.« (\\cite{Assmann:ZeitUndGeschichteInFruehenKulturen:2006}, PDF, S. 489–496, hier S. 493–494. \\\\'."\n".
-                    '– Die heutigen Medien und die Politik sind in der Lage das soziale und kulturelle Gedächtnis zu dominieren. Moralische und mythische Überlieferungen können so überschrieben oder ganz zerstört werden. \\\\'."\n".
-                    '– Hierzu gehört auch die heutige Unterminierung des Gedächtnisses um die Grausamkeiten des ersten und zweiten Weltkriegs. Dieses Gedächtnis muss getilgt werden, damit Russland und andere Staaten und Führer als Feinde, mit denen man nicht sprechen „kann“ (darf oder soll), betrachtet werden können. Nur so ist eine Aufrüstung etc. durchzusetzen. \\\\'."\n".
-                    '– Auch die Wichtigkeit der Menschenrechte für alle(!) Menschen kann so vergessen werden, denn Terroristen sollen sie tendenziell abgesprochen werden. \\\\'."\n".
-                    '• \\quote{Sei Du selbst die Veränderung, die Du Dir wünschst für diese Welt.} Mahatma Gandhi\\hidden{Varianten: \\quote{Du musst die Veränderung sein, die Du in der Welt sehen willst.}} \\\\'."\n".
-                    '• \\quote{Entweder wir kooperieren, oder wir gehen unter.} Siehe \\cite{Pontzer:AktivImEnergiesparmodus:2017}, S. 25. Dies erklärt vielleicht einen Teil der Gründe, warum die Menschen ihren Artgenossen so offensichtlicht mitteilen, wie es ihnen geht. \\\\'."\n".
-                    '• \\bold{Selbstbemächtigung – Nachdenken über unsere Demokratie}, siehe \\jump[https://kenfm.de/daniela-dahn/][*Bearb]{}{KenFM im Gespräch mit: Daniela Dahn („Wir sind der Staat!“)}. \\\\'."\n".
-                    '• \\bold{Menschenrechte:} \\\\'."\n".
-                    '– Äußerung gegen Menschenrechtskonvention: René Proglio, Chef von Morgan Stanley Frankreich, sagte: \\quote{Don\'t get carried away with a humanistic philosophy. Like it or not. Their only objective is to defend the interests of the shareholders.} Vgl. \\jump[https://youtu.be/gMRnowgpGig]{}{Die Menschheit schafft sich ab | Harald Lesch | SWR Tele-Akademie}, Sek. 2:35. Vgl. Lesch, Harald und Kamphausen, Klaus. Wenn nicht jetzt, wann dann? Handeln für eine Welt, in der wir leben wollen. Kap. 21, Beginn. \\\\'."\n".
-                    '· Wir sollten Menschen, die eindeutig Psychopathen sind, nicht gestatten Führungspositionen zu bekleiden!!! So wird es sogar auf Wikipedia empfohlen (Vgl. Wikipedia. Psychopathie. 09.10.2018). Niemand von uns würde auf die Idee kommen, sein Flugzeug von jemandem steuern zu lassen, der Depressiv ist und daher selbstmordgefährdet sein könnte! Und der Psychopath als letzter. Der Psychopath ist jemand, der eine extrem schwere Form der antisozialen (dissozialen) Persönlichkeitsstörung hat. \\quote{Psychopathie bezeichnet eine schwere Persönlichkeitsstörung, die bei den Betroffenen mit dem weitgehenden oder völligen Fehlen von Empathie, sozialer Verantwortung und Gewissen einhergeht.} (Wikipedia. Psychopathie. 09.10.2018) Wie soll so jemand Menschen zum Wohle aller führen können. Überproportional oft in Führungspositionen anzutreffen (Vgl. Wikipedia. Psychopathie. 09.10.2018)(Vgl. Donner, Monika. Krieg, Terror, Weltherrschaft. Warum Deutschland sterben soll.). \\\\'."\n".
-                    '· Warum ist laut Wikipedia Psychopathie in den Klassifikationssystemen DSM-5 und ICD-10 als Diagnose nicht enthalten? (Vgl. Wikipedia. Psychopathie. 09.10.2018) Sehr interessant! Vielleicht kein Zufall? \\\\'."\n".
-                    '· Es gibt ein Spektrum Kompakt Macht, vom 09.10.2018, zu diesem Thema und zur Dunklen Triade aus Nazissmus, Machiavellismus und Psychopathie. \\\\'."\n".
-                    '– UN Menschenrechtskonvention und Menschenrechtskonvention für Kinder, siehe \\jump[https://kenfm.de/gunther-moll/]{}{KenFM im Gespräch mit: Gunther Moll („Hallo, hier spricht mein Gehirn“)}. \\\\'."\n".
-                    //'• \\bold{Nicht der „arme“ Mensch\\hidden{ und Bürger} ist bedauernswert, sondern die Menschen des Teils der sich möglichst unsichtbar machenden psychopatischen Elite, die sich nicht anders zu helfen wissen, als die übrigen Menschen ihrer Informationsfreiheit und Selbstbestimmung zu berauben:} \\\\'."\n".
-                    '• \\bold{Nicht der „arme“ Mensch ist bedauernswert, sondern die Menschen des psychopatischen Teils der Elite, die sich nicht anders zu helfen wissen, als die übrigen Menschen ihrer Informationsfreiheit und Selbstbestimmung zu berauben:} \\\\'."\n".
-                    '– Um dies zu rechtfertigen werden viele fantasievolle, interessante und teils absurde Gründe angeführt. Doch am Ende sind es krankhafte Machtgelüste, Narzissmus und unersättliche Gier; einfach Süchte, die Dinge kompensieren müssen, die diese Menschen bedauerlicher Weise ohne sich ernsthaft helfen zu lassen, kaum selber erreichen können. Tragisch ist, dass diese Menschen es zwar tief in sich selber wissen, aber dieses Wissen bis zur Selbstunkenntlichkeit verdrängt haben. Daher können wir bei den wirklich schwer in ihrer Persönlichkeit gestörten Menschen von ihnen nicht erwarten, dass sie etwas für uns – die Gesellschaft – tun. Sie sind notorische Lügner und Blender, denn das ist ihr Krankheitsbild. Darum können wir ihnen leider nicht vertrauen. Wir müssen sie in ihren Machtpositionen isolieren und letztendlich liebevoll, aber unnachgiebig, von dort entfernen. Sie und ihre Macht leben davon, dass wir hinter ihnen stehen. Ohne uns sind sie gesellschaftlich machtlos. \\\\'."\n".
-                    '– \\quote{Nur wer nicht geliebt wird, hasst!}, sagt Charlie Chaplin im Film ›Der Große Diktator‹. Dies muss etwas modifiziert werden. \\\\'."\n".
-                    '• \\jump[http://de.humanconnection.org]{}{Human Connection}: gemeinnütziges Soziales Netzwerk, siehe \\jump[https://kenfm.de/dennis-hack/][*Bearb]{}{KenFM im Gespräch mit: Dennis Hack (Human Connection) – DIE MACHER (2)}. \\\\'."\n".
-                    '• \\bold{Nachhaltiges Bauen}, siehe \\jump[https://kenfm.de/erwin-thoma/][*Bearb]{}{KenFM im Gespräch mit: Erwin Thoma – DIE MACHER (1)}. \\\\'."\n".
-                    '• \\bold{Die Gesellschaft der Bäume} im Wald als Vorbild nehmen, siehe \\jump[https://kenfm.de/erwin-thoma/][*Bearb]{}{KenFM im Gespräch mit: Erwin Thoma – DIE MACHER (1)} und \\jump[https://www.youtube.com/watch?v=w0tBdpz2TBs&feature=youtu.be][*Bearb]{}{KenFM auf YouTube, Die Macher: Erwin Thoma - Holz100}. \\\\'."\n".
-                    '• \\bold{Probleme mit dem Finanzsystem:} \\\\'."\n".
-                    '– \\bold{Gehört einem das Geld was wir jeweils im Besitz haben? Ist es unser Eigentum?} \\\\'."\n".
-                    '· Angenommen jemand macht ein gutes Geschäft und verdient Geld damit, dass er die Notsituation eines anderen ausnutzt? Vielleicht handelt er einfach unmoralisch, vielleicht bricht er sogar Gesetze. Ist das fair? Wohl eher nicht. Gehört dem neuen Besitzer des Geldes dieses so erworbene Geld dann? Ist es sein Eigentum? \\\\'."\n".
-                    '· Halten wir uns diese Sicht vor Augen, dann wird recht schnell klar, dass Geld und aller Besitz kein echtes Eigentum sein kann. Denn niemand kann abschließend moralisch beurteilen, wie es zum Besitz gekommen ist. \\\\'."\n".
-                    '· Das Geld, wie jeder größere Besitz, und sein Sinn kommt erst durch die Gesellschaft zustande und es ist dann auch Eigentum der Gesellschaft. Sie darf seine Verteilung bestimmen. \\\\'."\n".
-                    '– \\jump[https://kenfm.de/guenter-grzega/]{}{KenFM im Gespräch mit: Günter Grzega (Gemeinwohl-Ökonomie)} \\\\'."\n".
-                    '– \\jump[https://kenfm.de/bernd-senf/]{}{KenFM im Gespräch mit: Bernd Senf (Volkswirt)} \\\\'."\n".
-                    '• \\bold{Bedingungsloses Grundeinkommen:} \\jump[https://perspective-daily.de/article/175/IjccDZAa#/][*Bearb]{}{Han Langeslag in Perspective Daily: Was macht Gratis-Geld mit der Arbeitswelt?} \\\\'."\n".
-                    '}'."\n"))),
-                                                                                        
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{'."\n".
-                    '\\bold{Beräte – ein gutes Mikroklima in der Gesellschaft schaffen:} \\\\'."\n".
-                    '\\bold{• Grundsatz:} \\\\'."\n".
-                    '• Nur, wenn wir die Mikrostruktur unserer Gesellschaft verbessern, das bedeutet in meinen Augen, eine für die Menschen vor Ort nützliche gesellschaftliche Mikrostruktur ermöglichen, können wir, von unten ausgehend, die gesamte Gesellschaft zum Nutzen der Menschen und der Menschheit verändern. \\\\'."\n".
-                    '• Der Ausgangspunkt sollte sein, dass wir uns gegenseitig auf Augenhöhe beraten und versuchen zu helfen. \\\\'."\n".
-                    '– So gut es geht. So zu helfen, dass niemand über Gebühr belastet wird. Es ist wichtig die Lasten gut zu verteilen, damit nicht die Helfenden in Not geraten. \\\\'."\n".
-                    '– Wenn eine gegenseitige Hilfe möglich ist, dann ist die zu bevorzugen, denn Leben ist Interaktion. Der Sinn des Lebens hat offenbar etwas mit Nützlichkeit zu tun. Wenn wir uns gegenseitig von Nutzen sind – wirklich in einem sehr weit gefassten Sinne und nicht einfach nur von Vorteil –, dann schaffen wir menschliche Verbindungen. \\\\'."\n".
-                    '• Es könnte zeitlich begrenzte hauptamtliche Beräte geben, die teils gewählt und teils per Zufallsverfahren bestimmt werden. \\\\'."\n".
-                    '• Zusätzlich ist ein Jugendberat und ein ältesten Berat sowwie ein Frauenberat und ein Männerberat oder auch ein LGBT*-Berat etc. denkbar, die ähnlich bestimmt werden. \\\\'."\n".
-                    '• Die Mitglieder eines Berats sollten Menschen sein, die ihre Funktion auf Zeit annehmen und ernstnehmen. \\\\'."\n".
-                    '• Wer sich beraten lässt, wird für diese Zeit Mitglied des Berats. So ist Augenhöhe hergestellt, denn eine Beratung ist nichts einseitiges. Alle lernen und versuchen zu helfen und für alle die Situation zu verbessern. Die amtlichen Beräte, wie auch der vorübergehende Berat oder Beräte. \\\\'."\n".
-                    '• Niemand wird im Berat zu etwas gezwungen. Es geht um einen Dialog. Alle sehen sich gegenseitig als Teil des Spiels des Lebens und versuchen Verständnis füreinander zu haben und zu helfen. Hilfe ist hingegen, im sehr weit gefassten Sinne, keine Einbahnstraße. \\\\'."\n".
-                    '\\bold{• Anliegen:} \\\\'."\n".
-                    '• Ein Anliegen des Berats ist es, gesellschaftliche Strukturen – vorzugsweise vor Ort – zu organisieren und zu fördern, die das Mikroklima und die Beziehungen der Menschen vor Ort stärken. Im Besonderen geht es darum, Not und Hilflosigkeit zu verhindern oder wenigstens zu lindern. \\\\'."\n".
-                    '\\bold{• Finanzen:} \\\\'."\n".
-                    '• Wer sich beraten lässt, verpflichtet sich, im nachfolgenden Jahr jede Woche oder monatilich einen Mini-Obulus an die Finanzierung des Berates zu entrichten. \\\\'."\n".
-                    '– Der Obulus ist eine Standardgröße an Hilfe oder Geld, die zu Beginn der Beratung festgelegt wird. \\\\'."\n".
-                    '– Der Obulus kann auf Antrag vergrößert und verringert werden. \\\\'."\n".
-                    '• Was sich an Geld ansammelt kann zum Beispiel als Hilfe für Bedürftige für Projekte bis hin zu Bürgschaften zur Absicherung von Krediten (im Sinne einer Bürgschaftsstruktur nach Rudolf Diesel) ausgegeben werden. \\\\'."\n".
-                    '}'."\n"))),
-                                                                                        
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{'."\n".
-                    '\\bold{Lernen ist ein spielerischer Prozess des Trial-Success-Or-Error – kurz Trial-And-Error:} \\\\'."\n".
-                    '• Das gilt nach meiner Ansicht ganz generell. \\\\'."\n".
-                    '• Wo findet sich das in unserem Schul- und Bildungssystem wieder? Ein Trauerspiel! \\\\'."\n".
-                    '• Quereinsteiger: \\\\'."\n".
-                    '– Wer nicht direkt von Fach kommt, der schaut mit anderen Augen, mit weniger oder anderen Filtern, auf die Dinge, siehe \\jump[https://kenfm.de/mirko-hannemann/]{}{KenFM im Gespräch mit: Mirko Hannemann (Batterie-Pionier)}. \\\\'."\n".
-                    '• Precht kritisiert das Bildungssystem: \\jump[https://www.randomhouse.de/Richard-David-Precht:-Bildungsrevolution-statt-blosser-Bildungsreform/aid44712.rhd][*Bearb]{}{Buch - Anna, die Schule und der liebe Gott} und \\jump[https://www.youtube.com/watch?v=q4wmSt_3jm8][*Bearb]{}{Gespräch in 3nach9 auf Radiobremen}. \\\\'."\n".
-                    '}'."\n"))),
-                                                                                        
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{'."\n".
-                    '\\bold{Wissenschaftsphilosophie und diesbezügliche Wissenschaftsgeschichte:} \\\\'."\n".
-                    '• \\bold{Die Umkehrung von Deduktion und Induktion:} \\\\'."\n".
-                    '– Auf der Seite \\jumpname{OM:FrQFT:WasIstPhysik} wird dargelegt, was passiert, wenn wir immer weiter ins Kleine gehen, immer weiter die Bestandteile der Dinge aufsuchen. Wir finden erst Vielheit und schließlich Einheitlichkeit. Die ist in Bezug auf die Deduktion und die Induktion wie eine plötzliche Umkehrung! \\\\'."\n".
-                    '– Die Grundlage der Deduktion ist die Einheit im Großen, das große Prinzip oder Gesetz, von dem auf die Vielheit im kleinen geschlossen wird. \\\\'."\n".
-                    '– Die Grundlage der Induktion ist die Vielheit im Kleinen, von der auf die Einheit im Großen, auf das große Prinzip oder Gesetz, geschlossen wird. \\\\'."\n".
-                    '– Gehen wir in der Naturwissenschaft aber noch tiefer ins Detail, dann finden wir Einheitlichkeit, also Einheit im ganz Kleinen. Und dies lässt sich auch natur- und wissenschaftsphilosophisch sehr gut begründen. Die Deduktion und die Induktion müssen hier also noch einmal neu überdacht werden. \\\\'."\n".
-                    '• \\bold{Ambiguitäten in der Wissenschaft – Doppeldeutigkeit, Mehrdeutigkeit oder scheinbare Widersprüche:} \\\\'."\n".
-                    '– Übertragen die Nerven Signale mechanisch oder elektrisch? Siehe: Das mechanische Gehirn. In: Spektrum der Wissenschaft 09/2018. S. 12-20, hier Seite 19-20. \\\\'."\n".
-                    '· Was wir sehen, hängt massiv von der Perspektive ab. Adrian Persegian sagt dazu: \\quote{›Der Blick auf die Realität hängt davon ab, welches Werkzeug die Forscher zu verstehen glauben und daher verwenden. Instrumente, die sie nicht verstehen, benutzen sie erst gar nicht. Dies könnte so manche Schieflage des wissenschaftlichen Denkens erklären.‹} \\\\'."\n".
-                    '}'."\n"))),
-                                                                                        
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{'."\n".
-                    '\\bold{Symbole, ihre Werte und Eigenschaften: (Wissenschaftsphilosophie)} \\\\'."\n".
-                    '• Symbole stehen für einen Wert. \\\\'."\n".
-                    '• Dieser Wert steht in direktem Bezug zu den Eigenschaften eines Symbols, sie sind identisch. \\\\'."\n".
-                    '– Dies ist besonders gut bei der imaginären Einheit \\term{i = √-1} der komplexen Zahlen zu erkennen. Durch die Formel wird dem neu eingeführten Symbol \\term{i} eine Eigenschaft gegeben, die zu klaren Regeln seiner Anwendung führt. Dies gibt dem neuen Symbol im wahrsten Sinne des Wortes für uns einen neuen, zusätzlichen Wert. \\\\'."\n".
-                    '• Der Wert eines Symbols steht also in direktem Bezug zu seiner Anwendung. \\\\'."\n".
-                    '• In diesem Sinne stehen Symbole für (neue) Zusammenhänge und symbolisieren nach der hier entwickelten Naturphilosophie des \\jump{OM:nSOSp:Home:Spannungsspiel-des-Lebens}{›Spannungsspiels des Lebens‹} so etwas wie die Erweiterung oder die Sichtbarmachung des Verhaltens von Dingen – wie sich die Dinge zueinander verhalten –, die Erweiterung und Sichtbarmachung der Seele der Dinge. Dies scheint mir der Hintergrund dafür, warum besonderen Symbolen etwas mystisches anhaftet. \\\\'."\n".
-                    '• Die neue Physik der \\jump{OM:nSOSp:Home:Fraktale-Quanten-Fluss-Theorie}{fraktalen Quanten-Fluss-Theorie} scheint mir in diesem Sinne etwas besonderes zu sein. Hier sind die Symbole die strukturellen Muster der Entitäten. Diese enthalten sogleich ihre Eigenschaften, wenn sie im Bezug zu den Mustern der übrigen Entitäten verstanden werden. Das Symbol und seine Eigenschaften verschmelzen physikalisch zu einer Entität. Dies gilt dann auch für jedes individuelle Lebewesen, was uns einen Einblick in die Bedeutung der Personen gibt, insbesondere, weil sich diese alle stark unterscheiden. \\\\'."\n".
-                    '– In der Mathematik und der Sprache gibt es hingegen keine Identität zwischen der physikalischen Erscheinung eines Symbols und seinen Eigenschaften. \\\\'."\n".
-                    '– Mathematik und physikalische Realität können demnach niemals das Gleiche sein! \\\\'."\n".
-                    '– Auch können wir zum Beispiel sagen: In der Physik ist die Drei drei Äpfel oder drei Elektronen. In der Mathematik ist die Drei ein geschriebenes Symbol, das mit der physikalischen Drei, also gegebenenfalls mit drei Äpfeln, assoziiert wird. Wenn ich das so richtig sehe. Dies geht aber nur durch eine Abstraktion, die aus drei Äpfeln und drei Elektronen das selbe macht, die mathematische Drei. Damit werden die drei ähnlichen Dinge „ent(be)grifflicht“ – es wird darüber hinweggesehen, dass es eigentlich Äpfel und Elektronen waren – und die Bezeichnung Drei hat sie zuvor schon entindividualisiert – entphysikalisiert –, denn die drei Äpfel waren ja nicht die selben. \\\\'."\n".
-                    '}'."\n"))),
-                                                                                        
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{'."\n".
-                    '\\bold{Internetarchiv auf IPFS Basis – im Interplanetary File System:} \\\\'."\n".
-                    '• Datierte Versionen von Internetseiten im Interplanetary File System (IPFS) speichern. \\\\'."\n".
-                    '– Ähnlich wie \\jump[http://web.archive.org/web/20200213213708/http://www.nsosp.org/de/New-Soul-Of-Science-Project/index.php]{}{WayBackMachine} und \\jump[http://archive.ph/www.nsosp.org]{}{archive today}.'."\n".
-                    '}'."\n"))),
-                                                                                        
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{'."\n".
-                    '\\bold{Entstehungserhaltendes Speicherformat – Universelles Grafikformat mit Bezug zu den Ausgangsdaten:} \\\\'."\n".
-                    '• OpenStruct-Vec2: Ähnlich dem PDF ist die Darstellung rein grafisch und damit inhaltsunabhängig gespeichert. \\\\'."\n".
-                    '– Die Ausgangsdaten sind im Hintergrund gespeichert und können zum Editieren verwendet werden. \\\\'."\n".
-                    '– Die Grafikdaten können von den Ausgangsdaten entkoppelt und dann auch direkt editiert werden. \\\\'."\n".
-                    '• Anders als im PDF kann durch die Ursprungsinformation ein Text originaler in die Ablage genommen oder automatisch vorgelesen werden, weil noch mehr informationen vorhanden sind. So werden Trennstriche bei Zeilenumbrüchen nicht mit in die Ablage genommen. \\\\'."\n".
-                    '• Ein solches Format ist auch für Formeln und deren Werte denkbar. Siehe oben \\italic{Symbole und ihre Werte und Eigenschaften} \\\\'."\n".
-                    '}'."\n"))),
-                                                                                        
-                    ))),
                 )
           ); ?>
 		    	<br>
@@ -872,76 +699,116 @@
           ); ?>
 
 
-		    	<!  • Wolfgang Huß – Projekte  >
+		    	<!  • Wolfgang Huß  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
             'OM:nSOSp:Home:Wolfgang-Huss',
-              '', 'Sc_f_Paragraph',
+              'Meine Forschungsarbeiten', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       //array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
                     )),
                       
+                  array( 'text', array( text => array(
+                    '\\\\'."\n"))),
+                  array( 'figure',
+                    array_merge( $NSOSP_g_figure_ary_WolfgangHuss, array( name => 'OM:nSOSp:Home:Wolfgang-Huss:Fig-WolfgangHuss'))),
+                      
+                  array( 'text', array( text => array(
+                    'Danke für das Interesse an meiner Arbeit.'."\n".
+                    'Nachfolgend eine Liste der mir wichtigen Themen, mit denen ich mich beschäftige.'."\n".
+                    'Interessanterweise stehen alle miteinander in Verbindung und ergänzen sich beziehungsweise vertiefen Aspekte, die in anderen dieser Arbeiten eine wichtige Rolle spielen.'."\n"))),
+                    // 'XXX'."\n".
+                    // 'XXX'."\n".
+                    // 'XXX'."\n".
+                    // 'XXX'."\n"))),
+                  array( 'text', array( text => array(
+                    '\\\\'."\n"))),
                   array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
                                            
-                '\\name{OM:SpaLeb:Home}', subline =>
+                '\\jumpname{OM:SpaLeb:Home}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                  '\\condb{\\name[undertitle]{OM:SpaLeb:Home}} \\\\'."\n".
-                    '\\name[description]{OM:SpaLeb:Home}.'."\n"))),
-                    
+                    '\\bold{\\name[undertitle]{OM:SpaLeb:Home}} \\\\'."\n"))),
+                  array( 'text', array( text => array(
+                    '\\name[description]{OM:SpaLeb:Home}'."\n"))),
+
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Home'),
+                      // array(  jump_name => 'OM:SpaLeb:Home'),
                     )),
                       
+                  array( 'text', array( text => array(
+                    '\\\\'."\n"))),
                   array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
                                            
-                '\\name{OM:NPYo:Home}', subline =>
+                '\\jumpname{OM:NPYo:Home}', subline =>
                   '')),
                   array( 'text', array( text => array(
                   '\\condb{\\name[undertitle]{OM:NPYo:Home}} \\\\'."\n".
-                    '\\name[description]{OM:NPYo:Home}.'."\n"))),
+                    '\\cond{\\name[description]{OM:NPYo:Home}.}'."\n"))),
                     
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:NPYo:Home'),
+                      // array(  jump_name => 'OM:NPYo:Home'),
                     )),
                       
+                  array( 'text', array( text => array(
+                    '\\\\'."\n"))),
                   array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
                                            
-                '\\name{OM:FrQFT:Home}', subline =>
+                '\\jumpname{OM:FrQFT:Home}', subline =>
                   '')),
                   array( 'text', array( text => array(
                   '\\condb{\\name[undertitle]{OM:FrQFT:Home}} \\\\'."\n".
-                    '\\name[description]{OM:FrQFT:Home}.'."\n"))),
+                    '\\cond{\\name[description]{OM:FrQFT:Home}.}'."\n"))),
                     
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:FrQFT:Home'),
+                      // array(  jump_name => 'OM:FrQFT:Home'),
                     )),
                       
+                  array( 'text', array( text => array(
+                    '\\\\'."\n"))),
                   array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
                                            
-                '\\name{OM:VRT:Home}', subline =>
+                '\\jumpname{OM:VRT:Home}', subline =>
                   '')),
                   array( 'text', array( text => array(
                   '\\condb{\\name[undertitle]{OM:VRT:Home}} \\\\'."\n".
-                    '\\name[description]{OM:VRT:Home}.'."\n"))),
+                    '\\cond{\\name[description]{OM:VRT:Home}.}'."\n"))),
                     
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:VRT:Home'),
+                      // array(  jump_name => 'OM:VRT:Home'),
                     )),
                       
+                  array( 'text', array( text => array(
+                    '\\\\'."\n"))),
                   array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
                                            
-                '\\name{OM:NPT:Home}', subline =>
+                '\\jumpname{OM:SupNum:Home}', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                  '\\condb{\\name[undertitle]{OM:SupNum:Home}} \\\\'."\n".
+                    '\\cond{\\name[description]{OM:SupNum:Home}.}'."\n"))),
+                    
+                  array( 'jumplist', array(
+                      // array(  jump_name => 'OM:SupNum:Home'),
+                    )),
+                      
+                  array( 'text', array( text => array(
+                    '\\\\'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
+                                           
+                '\\jumpname{OM:NPT:Home}', subline =>
                   '')),
                   array( 'text', array( text => array(
                   '\\condb{\\name[undertitle]{OM:NPT:Home}} \\\\'."\n".
-                    '\\name[description]{OM:NPT:Home}.'."\n"))),
+                    '\\cond{\\name[description]{OM:NPT:Home}.}'."\n"))),
                     
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:NPT:Home'),
+                      // array(  jump_name => 'OM:NPT:Home'),
                     )),
                       
+                  array( 'text', array( text => array(
+                    '\\\\'."\n"))),
                   array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
                                            
                 'Plus und Minus versa Existenz und Nichtexistenz', subline =>
@@ -958,18 +825,181 @@
                       // array(  jump_name => 'OM:NPT:Home'),
                     )),
                       
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
-                                           
-                '\\name{OM:SupNum:Home}', subline =>
-                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{\\name[undertitle]{OM:SupNum:Home}} \\\\'."\n".
-                    '\\name[description]{OM:SupNum:Home}.'."\n"))),
-                    
-                  array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Home'),
-                    )),
+                    '\\\\'."\n"))),
                       
+                  array( 'fade-in-area', array( Display => 'invis',
+                    Title => '\\color{*Bearb}{Geplante Themen}', ParagraphList => array(
+                  // !!!: 'fade-in-area' can not include themselfes at the Moment!
+                  /*array( 'notice', array( Display => 'invis',
+                    Title => 'Gesellschaftsphilosophie', text => array(
+                    '(• Nachhaltiges Bauen, siehe \\jump[https://kenfm.de/erwin-thoma/][*Bearb]{}{KenFM im Gespräch mit: Erwin Thoma – DIE MACHER (1)}.)',
+                    '(• Die Gesellschaft der Bäume im Wald als Vorbild nehmen, siehe \\jump[https://kenfm.de/erwin-thoma/][*Bearb]{}{KenFM im Gespräch mit: Erwin Thoma – DIE MACHER (1)} und \\jump[https://www.youtube.com/watch?v=w0tBdpz2TBs&feature=youtu.be][*Bearb]{}{KenFM auf YouTube, Die Macher: Erwin Thoma - Holz100}.)',
+                    ))),*/
+                  // !!!: 'fade-in-area' can not include themselfes at the Moment!
+                  /*array( 'notice', array( Display => 'invis',
+                    Title => 'Entstehungserhaltendes Spiecherformat – Format mit Historie', text => array(
+                    '(• OpenStruct / Vec2)',
+                    ))),*/
+                                                                                        
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{'."\n".
+                    '\\bold{Menschheitsfamilie – Gesellschaftsphilosophie:} \\\\'."\n".
+                    '• Den \\bold{Begriff Menschheitsfamilie} kenne ich von Daniele Ganser, der ihn in der folgenden Sendung gut erklärt, siehe \\jump[https://kenfm.de/positionen-15/]{}{Positionen 15: Der Tiefe Staat – Mythos oder Wirklichkeit?} \\\\'."\n".
+                    '– Zu dieser Sendung würde ich folgenden Standpunkt und seine Perspektive vorschlagen: \\\\'."\n".
+                    '· Der Tiefenstaat kann nicht überleben! Die Struktur des Tiefenstaats ist in der Gesellschaft im Grunde das, was in unserem Körper ein Krebs ist. Besonders im Zusammenspiel mit dem Neoliberalismus und seiner Folgen für unsere Gesellschaft und unser Ökosystem, also für unsere Lebensgrundlagen, können wir sicher mit Fug und Recht sagen, der Tiefenstaat wird unsere Gesellschaft und unsere Lebensgrundlagen insgesamt zerstören, wenn er nicht vorher schon verschwindet. (Vgl. \\jump[https://kenfm.de/rainer-mausfeld-warum-schweigen-die-laemmer/]{}{KenFM im Gespräch mit: Prof. Rainer Mausfeld („Warum schweigen die Lämmer?“)}, Sek. 1:26:10.) Damit steht fest, er wird sich selber zerstören, denn er kann nur auf Basis einer Gesellschaft und ihrer Lebensgrundlagen existieren. Er ist ein Teil von uns. Aber nicht die Betreiber des Tiefenstaats sind ansich unser Verderben, denn sie sind Mitglieder unserer Gesellschaft, der Menschheitsfamilie. Sondern die Struktur, die sie in unserer Gesellschaft gebildet haben, die Struktur Tiefenstaat, führt uns in den allgemeinen Abgrund. Daher appelliere ich an diese Menschen, die Teilstrukturen so zu verändern, dass sie das Wohl von uns allen im Sinn führen, ein Win-Win für alle, oder die Teilstrukturen des Tiefenstaats aufzulösen. Tun die Mitglieder dieser Struktur dies nicht, dann wird es der Untergang von ihnen oder spätestens ihrer Kinder oder Enkel sein. Der Krebs stirb in jedem Fall mit oder ohne dem Organismus, in dem er sich gebildet hat. Diese Gewissheit muss allen Menschen klar werden. Und deshalb müssen wir sie verbreiten. \\\\'."\n".
+                    '· Die Verbreitung der ›Untergangsgewissheit des Tiefenstaats‹ ist authentisch, weil ich wirklich an sie glaube. \\\\'."\n".
+                    '· Die ›Untergangsgewissheit des Tiefenstaats‹ ist unabhängig davon gültig, ob sie verbreitet wird oder jemand sie glaubt. Denn ein Krebs tötet am Ende seinen Organismus und damit sich selber, egal ob dies jemand glaubt oder ihn dabei Beobachtet. Der Tiefenstaat ändert diese Tatsache nicht dadurch, dass er die Überbringer seiner Untergangsgewissheit bekämpft und mundtot macht. \\\\'."\n".
+                    '· Im Gegenteil: Gehen die Dienste gegen die Verbreitung der ›Untergangsgewissheit des Tiefenstaats‹ vor, dann werden sie die Verbreitung dieser Gewissheit und damit ihren Untergang beschleunigen. Denn dadurch macht der Tiefenstaat deutlich, dass seine Untergangsgewissheit Wahr ist und Realitätsbezug hat. \\\\'."\n".
+                    '– Warum ist der Tiefenstaat wie ein bösartiger Krebs in einem Organismus? \\\\'."\n".
+                    '· Einen bösartigen Krebs zeichnet aus, dass er seinen Organismus, in dem er sich gebildet hat, auslaugt und in dessen Funktion so stark blockiert oder so viel Raum einnimmt, bis der Gesamtorganismus nicht mehr lebensfähig ist. \\\\'."\n".
+                    '· Der Tiefenstaat durchwuchert als teils unsichbares Netz die Politik, die Dienste, die Polizei, die Justiz, die Banken, die Medien und letztlich auch viele andere Teile der Gesellschaft. Dabei arbeiten seine Netzwerke verdeckt oder zumindest verschleiert. Seine sichtbaren Teile geben sich nicht offen als Teil seines Netzes aus oder sind sich ihrer Funktion im Sinne dieses Netzes nicht bewusst. Diese Teile sind daher verschleiert. \\\\'."\n".
+                    '· In Verbindung mit der Geldschöpfung der Banken, also der Geldschöpfung über Kredite – Fiat-Money oder Giralgeldsystem -, und dem Neoliberalismus ergibt sich eine mafiöse Struktur, die der Bereicherung privater Personen Tür und Tor öffnet. \\\\'."\n".
+                    '· Dieses System ist völlig außer Kontrolle und eben auch nicht kontrollierbar, was es dem bösartigen Krebs stark ähnlich macht. \\\\'."\n".
+                    '· Es ist nicht eigenständig lebensfähig, sondern existiert „parasitär“ nur auf Basis der restlichen Gesellschaft, deren Resourcen angezapft werden. \\\\'."\n".
+                    '· Damit ist es eben ein Teil unserer Gesellschaft, der Menschheitsfamilie, und bedroht deren Existenz. \\\\'."\n".
+                    '• \\bold{Filme und Geschichten, die solche gesellschaftlichen Manipulationen zum Thema machen:} \\\\'."\n".
+                    '– Film: Zoomania – Ganz schön ausgefuchst. \\jump[https://de.wikipedia.org/wiki/Zoomania]{}{Zoomania, auf Wikipedia}. \\\\'."\n".
+                    '· Und davon ab ist es für mich einer süßesten und liebenswertesten Filme aller Zeiten. \\\\'."\n".
+                    '– Kurzfilm: \\jump[http://www.heliofant.com/index.html]{}{I, pet goat II}. Das einschlagende Erlebnis von 9/11, sein Kontext und unsere eigene Rolle. \\\\'."\n".
+                    '• \\bold{Wir sollten uns enttäuschen und die Zusammenhänge für uns neu entwickeln:} \\\\'."\n".
+                    '– Unsere Gesellschaft, unsere Wissenschaft und unsere Geschichte beruhen nach meinem Eindruck offenbar auch auf vielen Täuschungen. Teils im guten Glauben, teils auch beabsichtigt. In Sachen optische Täuschung vgl. GEO 04/2020, Illusionen, S. 72. \\\\'."\n".
+                    '⋅ Eine wichtige Binsenweisheit diesbezüglich ist: \\italic{Die „Sieger“ schreiben die Geschichte.} \\\\'."\n".
+                    '– Wir sind gut beraten uns mit unserer Wahrnehmung, ihrer Funktionsweise, deren Trugbildern und der Wirkung unserer Vorurteile zu beschäftigen. \\\\'."\n".
+                    '⋅ Diese Täuschungen und Trugbilder sind aufgrund der Funktionsweise unserer Wahrnehmung und unseres Denkens immer vorhanden. Und sie haben auch stark mit unseren Denkrahmen zu tun, denen wir uns auch bewusst werden sollten. \\\\'."\n".
+                    '⋅ Unsere Denkrahmen sind auch ein besonderes Einfallstor für äußere bewusste und unbewusste Manipulationen. Diese kommen besonders oft vor, wenn es um Einfluss, Geld und Macht geht. \\\\'."\n".
+                    '⋅ In der Physik ist hierbei das Buch von Sabine Hossenfelder \\jump[https://www.fischerverlage.de/buch/sabine_hossenfelder_das_haessliche_universum/9783103972467]{}{›Das hässliche Universum‹} und ihr Blog \\jump[http://backreaction.blogspot.com]{}{›BackReAction‹} und ihre Vorträge empfehlenswert. \\\\'."\n".
+                    '⸰ Es geht dabei auch um die Transparenz der Wissenschaft, um die Veröffentlichung von Messergebnissen, die es anderen Wissenschaftlern ermöglichen deren Interpretation zu überprüfen, vgl. \\jump[http://backreaction.blogspot.com/2020/03/how-good-is-evidence-for-dark-energy.html]{}{How good is the evidence for Dark Energy?} \\\\'."\n".
+                    '⋅ In Bezug auf die Medizin regt das Buch \\jump[https://www.torstenengelbrecht.com/de/buch_viruswahn.html]{}{›Virus-Wahn‹} von Torsten Engelbrecht und Claus Köhnlein zum kritischen Denken an und das KenFM Gespräch mit \\jump[https://kenfm.de/lothar-hirneise/]{}{Lothar Hirneise („Chemotherapie heilt Krebs und die Erde ist eine Scheibe“)} lässt uns noch einmal anders über Krebs nachdenken. \\\\'."\n".
+                    '• \\bold{Eine Kultur der Balance aus Stabilität und Veränderung:} \\\\'."\n".
+                    '– Unser \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}, der zentrale Regelprozess unseres Lebens, organisiert eine möglichst angenehme Balance von Stabilität und Veränderung. \\\\'."\n".
+                    '– Mein Anliegen ist eine Kultur in unserer Gesellschaft zu schaffen, die sich der Notwendigkeit beider Facetten des Lebens, der Stabilität und der Veränderung, und ihrer Austarierung bewusst ist. Ich möchte eine solche Kultur in unserer Gesellschaft etablieren und kultivieren. \\\\'."\n".
+                    '– Es ist eine Kultur der Pflege unserer Riten und lieb gewonnenen Gewohnheiten, zu deren grundlegenden Gewohnheit es auch gehört, diese auch neugierig zu hinterfragen und gegebenenfalls zu verändern, wenn es plausibel oder viabel (nützlich), also sinnvoll, erscheint. Die Neugier und der Spaß daran, auch mal Neues auszuprobieren, dass ja auch nicht beibehalten werden muss, sind positiv belegt und werden gesellschaftlich anerkannt und gefördert. Mit dem Fokus darauf zu schauen, wie sich das Neue für uns anfühlt und was es zum Positiven und zum Negativen verändert. \\\\'."\n".
+                    '– Es ist eine Kultur des sowohl als auch, in der Altes, Bewährtes und Liebgewonnenes nicht gleich über Bord geworfen wird, wenn Neues auftaucht, gesucht und gefunden wird. Evolutionäre Dinge entwickeln sich oft parallel zum Alten. \\\\'."\n".
+                    '– So entsteht eine Kultur der Balance der Ambiguitätstoleranz, der Mehrdeutigkeiten und Widersprüche, und deren Auflösung, wenn es sinnvoll oder möglich erscheint. \\\\'."\n".
+                    '– Diese Kultur organisiert eine angenehme Balance zwischen Ordnung und Chaos. (Vgl. Sunil Mundra, Enterprise Agility.) \\\\'."\n".
+                    '– Dabei ist uns im Gegensatz dazu bewusst, dass sowohl Stillstand als auch zu viel Veränderung nicht angenehm und gesund sind. Beides ist mit Stress verbunden. Wenn wir unseren persönlichen Achtsamkeitsprozess, und auch den unserer Gesellschaft, gut justieren und auf ihn hören, dann aktivieren wir unsere Selbstheilungskräfte und es stellt sich eine gute Balance ein, denn das ist die Funktion und Bedeutung des Achtsamkeitsprozesses für und in unserem Leben, sein Sinn. \\\\'."\n".
+                    '– Das Wissen um diese Zusammenhänge möchte ich kultivieren. \\\\'."\n".
+                    '• Die \\bold{Seele als Zusammenhang} der Dinge und der Bestandteile der Dinge. \\\\'."\n".
+                    '– Dieser Perspektive auf den Seelenbegriff ist quasi der Gegenentwurf zum Neoliberalismus. \\\\'."\n".
+                    '– Unser Leben dreht sich demnach um unsere Seele, die sich aus all unseren inneren Vorgängen, unserem inneren Zusammenhang, und aus unserem äußeren Zusammenhang, unserer Interaktion mit unserer Umwelt, insbesondere mit den Menschen und anderen Lebewesen, ergibt. \\\\'."\n".
+                    '– Die Qualität unserer Seele könnte demnach davon abhängen, welche Gefühle bei uns selber und bei anderen Entstehen. \\\\'."\n".
+                    '– Durch die Interaktion mit anderen sind wir in der Lage, unsere Seele über unseren eigenen Körper hinaus zu erweitern, was für unser Wohlbefinden im Allgemeinen sehr förderlich sein kann. \\\\'."\n".
+                    '– Hier geht es also um das Miteinander, also allgemein und im Großen gesprochen, um die Menschheitsfamilie. \\\\'."\n".
+                    '– Der Sinn ist Teil der Seele. \\\\'."\n".
+                    '· Der Zusammenhang der Dinge, also auch von uns Menschen, kann eben auch einen Sinn enthalten, den wir wohl als individuelle oder gruppenbezogene Deutung des Zusammenhangs verstehen können. Vielleicht auch auf Basis unserer Gefühle dazu. \\\\'."\n".
+                    '• \\bold{Technologie und Internet:} \\\\'."\n".
+                    '– Wir müssen die Technologie so formen, dass sie zu uns passt und uns nicht einer vorgegebenen Technologie anpassen. \\\\'."\n".
+                    '– Als Beispiel hat Apple dies in den 80gern und folgenden Jahren mit ihrem Konzept vom Human-Interface vorgemacht und war damit sehr erfolgreich. \\\\'."\n".
+                    '• \\bold{Meinungsfreiheit:} \\\\'."\n".
+                    '– Die Wikipedia bedroht unsere Verfassungsmäßige Grundordnung, das Recht auf freie Meinungsäußerung! Siehe \\jump[https://www.youtube.com/watch?v=f6eon2C-Id4&feature=youtu.be]{}{Rufmord an Gabriele Krone-Schmalz über die Wikipedia. | #03 Geschichten aus Wikihausen}. \\\\'."\n".
+                    '• \\bold{George Orwell 1984 und das kulturelle Zeitgedächnis:} »In seinem Roman 1984 hat George Orwell das Schreckbild einer Gesellschaft gezeichnet, die nur noch in einer einzigen Zeit, der von der Partei verordneten „ewigen Gegenwart“ lebt. Durch systematische Spurenverwischung hat es die Partei geschafft, das kulturelle Gedächtnis der Gesellschaft vollständig zu vernichten. Niemand, auch nicht die Alten, die lange vor der „Großen Revolution“ geboren wurden, kann sich mehr daran erinnern, ob die Vergangenheit irgendwie anders, vielleicht gar besser war als die Gegenwart. Das kommunikative Gedächtnis, auf das die Menschen reduziert sind und das voll und ganz von der Partei kontrolliert wird, ist zu jeder Art von kritischer Distanznahme außerstande. Orwells Roman verarbeitet seine Erfahrungen mit dem Stalinismus und Faschismus; es handelt sich hier um eine Art fiktionaler Hochrechnung von Tendenzen, die es immer wieder in der Geschichte gegeben hat und die in den totalitären Regimes des 20. Jahrhunderts kulminierten. Das kulturelle Gedächtnis ist nicht nur die tragende, legitimierende Unterfütterung einer jeweiligen Gegenwart, sondern kann durchaus auch eine kritische, ja geradezu subversive und revolutionäre Instanz darstellen.« (\\cite{Assmann:ZeitUndGeschichteInFruehenKulturen:2006}, PDF, S. 489–496, hier S. 493–494. \\\\'."\n".
+                    '– Die heutigen Medien und die Politik sind in der Lage das soziale und kulturelle Gedächtnis zu dominieren. Moralische und mythische Überlieferungen können so überschrieben oder ganz zerstört werden. \\\\'."\n".
+                    '– Hierzu gehört auch die heutige Unterminierung des Gedächtnisses um die Grausamkeiten des ersten und zweiten Weltkriegs. Dieses Gedächtnis muss getilgt werden, damit Russland und andere Staaten und Führer als Feinde, mit denen man nicht sprechen „kann“ (darf oder soll), betrachtet werden können. Nur so ist eine Aufrüstung etc. durchzusetzen. \\\\'."\n".
+                    '– Auch die Wichtigkeit der Menschenrechte für alle(!) Menschen kann so vergessen werden, denn Terroristen sollen sie tendenziell abgesprochen werden. \\\\'."\n".
+                    '• \\quote{Sei Du selbst die Veränderung, die Du Dir wünschst für diese Welt.} Mahatma Gandhi\\hidden{Varianten: \\quote{Du musst die Veränderung sein, die Du in der Welt sehen willst.}} \\\\'."\n".
+                    '• \\quote{Entweder wir kooperieren, oder wir gehen unter.} Siehe \\cite{Pontzer:AktivImEnergiesparmodus:2017}, S. 25. Dies erklärt vielleicht einen Teil der Gründe, warum die Menschen ihren Artgenossen so offensichtlicht mitteilen, wie es ihnen geht. \\\\'."\n".
+                    '• \\bold{Selbstbemächtigung – Nachdenken über unsere Demokratie}, siehe \\jump[https://kenfm.de/daniela-dahn/][*Bearb]{}{KenFM im Gespräch mit: Daniela Dahn („Wir sind der Staat!“)}. \\\\'."\n".
+                    '• \\bold{Menschenrechte:} \\\\'."\n".
+                    '– Äußerung gegen Menschenrechtskonvention: René Proglio, Chef von Morgan Stanley Frankreich, sagte: \\quote{Don\'t get carried away with a humanistic philosophy. Like it or not. Their only objective is to defend the interests of the shareholders.} Vgl. \\jump[https://youtu.be/gMRnowgpGig]{}{Die Menschheit schafft sich ab | Harald Lesch | SWR Tele-Akademie}, Sek. 2:35. Vgl. Lesch, Harald und Kamphausen, Klaus. Wenn nicht jetzt, wann dann? Handeln für eine Welt, in der wir leben wollen. Kap. 21, Beginn. \\\\'."\n".
+                    '· Wir sollten Menschen, die eindeutig Psychopathen sind, nicht gestatten Führungspositionen zu bekleiden!!! So wird es sogar auf Wikipedia empfohlen (Vgl. Wikipedia. Psychopathie. 09.10.2018). Niemand von uns würde auf die Idee kommen, sein Flugzeug von jemandem steuern zu lassen, der Depressiv ist und daher selbstmordgefährdet sein könnte! Und der Psychopath als letzter. Der Psychopath ist jemand, der eine extrem schwere Form der antisozialen (dissozialen) Persönlichkeitsstörung hat. \\quote{Psychopathie bezeichnet eine schwere Persönlichkeitsstörung, die bei den Betroffenen mit dem weitgehenden oder völligen Fehlen von Empathie, sozialer Verantwortung und Gewissen einhergeht.} (Wikipedia. Psychopathie. 09.10.2018) Wie soll so jemand Menschen zum Wohle aller führen können. Überproportional oft in Führungspositionen anzutreffen (Vgl. Wikipedia. Psychopathie. 09.10.2018)(Vgl. Donner, Monika. Krieg, Terror, Weltherrschaft. Warum Deutschland sterben soll.). \\\\'."\n".
+                    '· Warum ist laut Wikipedia Psychopathie in den Klassifikationssystemen DSM-5 und ICD-10 als Diagnose nicht enthalten? (Vgl. Wikipedia. Psychopathie. 09.10.2018) Sehr interessant! Vielleicht kein Zufall? \\\\'."\n".
+                    '· Es gibt ein Spektrum Kompakt Macht, vom 09.10.2018, zu diesem Thema und zur Dunklen Triade aus Nazissmus, Machiavellismus und Psychopathie. \\\\'."\n".
+                    '– UN Menschenrechtskonvention und Menschenrechtskonvention für Kinder, siehe \\jump[https://kenfm.de/gunther-moll/]{}{KenFM im Gespräch mit: Gunther Moll („Hallo, hier spricht mein Gehirn“)}. \\\\'."\n".
+                    //'• \\bold{Nicht der „arme“ Mensch\\hidden{ und Bürger} ist bedauernswert, sondern die Menschen des Teils der sich möglichst unsichtbar machenden psychopatischen Elite, die sich nicht anders zu helfen wissen, als die übrigen Menschen ihrer Informationsfreiheit und Selbstbestimmung zu berauben:} \\\\'."\n".
+                    '• \\bold{Nicht der „arme“ Mensch ist bedauernswert, sondern die Menschen des psychopatischen Teils der Elite, die sich nicht anders zu helfen wissen, als die übrigen Menschen ihrer Informationsfreiheit und Selbstbestimmung zu berauben:} \\\\'."\n".
+                    '– Um dies zu rechtfertigen werden viele fantasievolle, interessante und teils absurde Gründe angeführt. Doch am Ende sind es krankhafte Machtgelüste, Narzissmus und unersättliche Gier; einfach Süchte, die Dinge kompensieren müssen, die diese Menschen bedauerlicher Weise ohne sich ernsthaft helfen zu lassen, kaum selber erreichen können. Tragisch ist, dass diese Menschen es zwar tief in sich selber wissen, aber dieses Wissen bis zur Selbstunkenntlichkeit verdrängt haben. Daher können wir bei den wirklich schwer in ihrer Persönlichkeit gestörten Menschen von ihnen nicht erwarten, dass sie etwas für uns – die Gesellschaft – tun. Sie sind notorische Lügner und Blender, denn das ist ihr Krankheitsbild. Darum können wir ihnen leider nicht vertrauen. Wir müssen sie in ihren Machtpositionen isolieren und letztendlich liebevoll, aber unnachgiebig, von dort entfernen. Sie und ihre Macht leben davon, dass wir hinter ihnen stehen. Ohne uns sind sie gesellschaftlich machtlos. \\\\'."\n".
+                    '– \\quote{Nur wer nicht geliebt wird, hasst!}, sagt Charlie Chaplin im Film ›Der Große Diktator‹. Dies muss etwas modifiziert werden. \\\\'."\n".
+                    '• \\jump[http://de.humanconnection.org]{}{Human Connection}: gemeinnütziges Soziales Netzwerk, siehe \\jump[https://kenfm.de/dennis-hack/][*Bearb]{}{KenFM im Gespräch mit: Dennis Hack (Human Connection) – DIE MACHER (2)}. \\\\'."\n".
+                    '• \\bold{Nachhaltiges Bauen}, siehe \\jump[https://kenfm.de/erwin-thoma/][*Bearb]{}{KenFM im Gespräch mit: Erwin Thoma – DIE MACHER (1)}. \\\\'."\n".
+                    '• \\bold{Die Gesellschaft der Bäume} im Wald als Vorbild nehmen, siehe \\jump[https://kenfm.de/erwin-thoma/][*Bearb]{}{KenFM im Gespräch mit: Erwin Thoma – DIE MACHER (1)} und \\jump[https://www.youtube.com/watch?v=w0tBdpz2TBs&feature=youtu.be][*Bearb]{}{KenFM auf YouTube, Die Macher: Erwin Thoma - Holz100}. \\\\'."\n".
+                    '• \\bold{Probleme mit dem Finanzsystem:} \\\\'."\n".
+                    '– \\bold{Gehört einem das Geld was wir jeweils im Besitz haben? Ist es unser Eigentum?} \\\\'."\n".
+                    '· Angenommen jemand macht ein gutes Geschäft und verdient Geld damit, dass er die Notsituation eines anderen ausnutzt? Vielleicht handelt er einfach unmoralisch, vielleicht bricht er sogar Gesetze. Ist das fair? Wohl eher nicht. Gehört dem neuen Besitzer des Geldes dieses so erworbene Geld dann? Ist es sein Eigentum? \\\\'."\n".
+                    '· Halten wir uns diese Sicht vor Augen, dann wird recht schnell klar, dass Geld und aller Besitz kein echtes Eigentum sein kann. Denn niemand kann abschließend moralisch beurteilen, wie es zum Besitz gekommen ist. \\\\'."\n".
+                    '· Das Geld, wie jeder größere Besitz, und sein Sinn kommt erst durch die Gesellschaft zustande und es ist dann auch Eigentum der Gesellschaft. Sie darf seine Verteilung bestimmen. \\\\'."\n".
+                    '– \\jump[https://kenfm.de/guenter-grzega/]{}{KenFM im Gespräch mit: Günter Grzega (Gemeinwohl-Ökonomie)} \\\\'."\n".
+                    '– \\jump[https://kenfm.de/bernd-senf/]{}{KenFM im Gespräch mit: Bernd Senf (Volkswirt)} \\\\'."\n".
+                    '• \\bold{Bedingungsloses Grundeinkommen:} \\jump[https://perspective-daily.de/article/175/IjccDZAa#/][*Bearb]{}{Han Langeslag in Perspective Daily: Was macht Gratis-Geld mit der Arbeitswelt?} \\\\'."\n".
+                    '}'."\n"))),
+                                                                                        
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{'."\n".
+                    '\\bold{Beräte – ein gutes Mikroklima in der Gesellschaft schaffen:} \\\\'."\n".
+                    '\\bold{• Grundsatz:} \\\\'."\n".
+                    '• Nur, wenn wir die Mikrostruktur unserer Gesellschaft verbessern, das bedeutet in meinen Augen, eine für die Menschen vor Ort nützliche gesellschaftliche Mikrostruktur ermöglichen, können wir, von unten ausgehend, die gesamte Gesellschaft zum Nutzen der Menschen und der Menschheit verändern. \\\\'."\n".
+                    '• Der Ausgangspunkt sollte sein, dass wir uns gegenseitig auf Augenhöhe beraten und versuchen zu helfen. \\\\'."\n".
+                    '– So gut es geht. So zu helfen, dass niemand über Gebühr belastet wird. Es ist wichtig die Lasten gut zu verteilen, damit nicht die Helfenden in Not geraten. \\\\'."\n".
+                    '– Wenn eine gegenseitige Hilfe möglich ist, dann ist die zu bevorzugen, denn Leben ist Interaktion. Der Sinn des Lebens hat offenbar etwas mit Nützlichkeit zu tun. Wenn wir uns gegenseitig von Nutzen sind – wirklich in einem sehr weit gefassten Sinne und nicht einfach nur von Vorteil –, dann schaffen wir menschliche Verbindungen. \\\\'."\n".
+                    '• Es könnte zeitlich begrenzte hauptamtliche Beräte geben, die teils gewählt und teils per Zufallsverfahren bestimmt werden. \\\\'."\n".
+                    '• Zusätzlich ist ein Jugendberat und ein ältesten Berat sowwie ein Frauenberat und ein Männerberat oder auch ein LGBT*-Berat etc. denkbar, die ähnlich bestimmt werden. \\\\'."\n".
+                    '• Die Mitglieder eines Berats sollten Menschen sein, die ihre Funktion auf Zeit annehmen und ernstnehmen. \\\\'."\n".
+                    '• Wer sich beraten lässt, wird für diese Zeit Mitglied des Berats. So ist Augenhöhe hergestellt, denn eine Beratung ist nichts einseitiges. Alle lernen und versuchen zu helfen und für alle die Situation zu verbessern. Die amtlichen Beräte, wie auch der vorübergehende Berat oder Beräte. \\\\'."\n".
+                    '• Niemand wird im Berat zu etwas gezwungen. Es geht um einen Dialog. Alle sehen sich gegenseitig als Teil des Spiels des Lebens und versuchen Verständnis füreinander zu haben und zu helfen. Hilfe ist hingegen, im sehr weit gefassten Sinne, keine Einbahnstraße. \\\\'."\n".
+                    '\\bold{• Anliegen:} \\\\'."\n".
+                    '• Ein Anliegen des Berats ist es, gesellschaftliche Strukturen – vorzugsweise vor Ort – zu organisieren und zu fördern, die das Mikroklima und die Beziehungen der Menschen vor Ort stärken. Im Besonderen geht es darum, Not und Hilflosigkeit zu verhindern oder wenigstens zu lindern. \\\\'."\n".
+                    '\\bold{• Finanzen:} \\\\'."\n".
+                    '• Wer sich beraten lässt, verpflichtet sich, im nachfolgenden Jahr jede Woche oder monatilich einen Mini-Obulus an die Finanzierung des Berates zu entrichten. \\\\'."\n".
+                    '– Der Obulus ist eine Standardgröße an Hilfe oder Geld, die zu Beginn der Beratung festgelegt wird. \\\\'."\n".
+                    '– Der Obulus kann auf Antrag vergrößert und verringert werden. \\\\'."\n".
+                    '• Was sich an Geld ansammelt kann zum Beispiel als Hilfe für Bedürftige für Projekte bis hin zu Bürgschaften zur Absicherung von Krediten (im Sinne einer Bürgschaftsstruktur nach Rudolf Diesel) ausgegeben werden. \\\\'."\n".
+                    '}'."\n"))),
+                                                                                        
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{'."\n".
+                    '\\bold{Lernen ist ein spielerischer Prozess des Trial-Success-Or-Error – kurz Trial-And-Error:} \\\\'."\n".
+                    '• Das gilt nach meiner Ansicht ganz generell. \\\\'."\n".
+                    '• Wo findet sich das in unserem Schul- und Bildungssystem wieder? Ein Trauerspiel! \\\\'."\n".
+                    '• Quereinsteiger: \\\\'."\n".
+                    '– Wer nicht direkt von Fach kommt, der schaut mit anderen Augen, mit weniger oder anderen Filtern, auf die Dinge, siehe \\jump[https://kenfm.de/mirko-hannemann/]{}{KenFM im Gespräch mit: Mirko Hannemann (Batterie-Pionier)}. \\\\'."\n".
+                    '• Precht kritisiert das Bildungssystem: \\jump[https://www.randomhouse.de/Richard-David-Precht:-Bildungsrevolution-statt-blosser-Bildungsreform/aid44712.rhd][*Bearb]{}{Buch - Anna, die Schule und der liebe Gott} und \\jump[https://www.youtube.com/watch?v=q4wmSt_3jm8][*Bearb]{}{Gespräch in 3nach9 auf Radiobremen}. \\\\'."\n".
+                    '}'."\n"))),
+                                                                                        
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{'."\n".
+                    '\\bold{Wissenschaftsphilosophie und diesbezügliche Wissenschaftsgeschichte:} \\\\'."\n".
+                    '• \\bold{Die Umkehrung von Deduktion und Induktion:} \\\\'."\n".
+                    '– Auf der Seite \\jumpname{OM:FrQFT:WasIstPhysik} wird dargelegt, was passiert, wenn wir immer weiter ins Kleine gehen, immer weiter die Bestandteile der Dinge aufsuchen. Wir finden erst Vielheit und schließlich Einheitlichkeit. Die ist in Bezug auf die Deduktion und die Induktion wie eine plötzliche Umkehrung! \\\\'."\n".
+                    '– Die Grundlage der Deduktion ist die Einheit im Großen, das große Prinzip oder Gesetz, von dem auf die Vielheit im kleinen geschlossen wird. \\\\'."\n".
+                    '– Die Grundlage der Induktion ist die Vielheit im Kleinen, von der auf die Einheit im Großen, auf das große Prinzip oder Gesetz, geschlossen wird. \\\\'."\n".
+                    '– Gehen wir in der Naturwissenschaft aber noch tiefer ins Detail, dann finden wir Einheitlichkeit, also Einheit im ganz Kleinen. Und dies lässt sich auch natur- und wissenschaftsphilosophisch sehr gut begründen. Die Deduktion und die Induktion müssen hier also noch einmal neu überdacht werden. \\\\'."\n".
+                    '• \\bold{Ambiguitäten in der Wissenschaft – Doppeldeutigkeit, Mehrdeutigkeit oder scheinbare Widersprüche:} \\\\'."\n".
+                    '– Übertragen die Nerven Signale mechanisch oder elektrisch? Siehe: Das mechanische Gehirn. In: Spektrum der Wissenschaft 09/2018. S. 12-20, hier Seite 19-20. \\\\'."\n".
+                    '· Was wir sehen, hängt massiv von der Perspektive ab. Adrian Persegian sagt dazu: \\quote{›Der Blick auf die Realität hängt davon ab, welches Werkzeug die Forscher zu verstehen glauben und daher verwenden. Instrumente, die sie nicht verstehen, benutzen sie erst gar nicht. Dies könnte so manche Schieflage des wissenschaftlichen Denkens erklären.‹} \\\\'."\n".
+                    '}'."\n"))),
+                                                                                        
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{'."\n".
+                    '\\bold{Symbole, ihre Werte und Eigenschaften: (Wissenschaftsphilosophie)} \\\\'."\n".
+                    '• Symbole stehen für einen Wert. \\\\'."\n".
+                    '• Dieser Wert steht in direktem Bezug zu den Eigenschaften eines Symbols, sie sind identisch. \\\\'."\n".
+                    '– Dies ist besonders gut bei der imaginären Einheit \\term{i = √-1} der komplexen Zahlen zu erkennen. Durch die Formel wird dem neu eingeführten Symbol \\term{i} eine Eigenschaft gegeben, die zu klaren Regeln seiner Anwendung führt. Dies gibt dem neuen Symbol im wahrsten Sinne des Wortes für uns einen neuen, zusätzlichen Wert. \\\\'."\n".
+                    '• Der Wert eines Symbols steht also in direktem Bezug zu seiner Anwendung. \\\\'."\n".
+                    '• In diesem Sinne stehen Symbole für (neue) Zusammenhänge und symbolisieren nach der hier entwickelten Naturphilosophie des \\jump{OM:nSOSp:Home:Spannungsspiel-des-Lebens}{›Spannungsspiels des Lebens‹} so etwas wie die Erweiterung oder die Sichtbarmachung des Verhaltens von Dingen – wie sich die Dinge zueinander verhalten –, die Erweiterung und Sichtbarmachung der Seele der Dinge. Dies scheint mir der Hintergrund dafür, warum besonderen Symbolen etwas mystisches anhaftet. \\\\'."\n".
+                    '• Die neue Physik der \\jump{OM:nSOSp:Home:Fraktale-Quanten-Fluss-Theorie}{fraktalen Quanten-Fluss-Theorie} scheint mir in diesem Sinne etwas besonderes zu sein. Hier sind die Symbole die strukturellen Muster der Entitäten. Diese enthalten sogleich ihre Eigenschaften, wenn sie im Bezug zu den Mustern der übrigen Entitäten verstanden werden. Das Symbol und seine Eigenschaften verschmelzen physikalisch zu einer Entität. Dies gilt dann auch für jedes individuelle Lebewesen, was uns einen Einblick in die Bedeutung der Personen gibt, insbesondere, weil sich diese alle stark unterscheiden. \\\\'."\n".
+                    '– In der Mathematik und der Sprache gibt es hingegen keine Identität zwischen der physikalischen Erscheinung eines Symbols und seinen Eigenschaften. \\\\'."\n".
+                    '– Mathematik und physikalische Realität können demnach niemals das Gleiche sein! \\\\'."\n".
+                    '– Auch können wir zum Beispiel sagen: In der Physik ist die Drei drei Äpfel oder drei Elektronen. In der Mathematik ist die Drei ein geschriebenes Symbol, das mit der physikalischen Drei, also gegebenenfalls mit drei Äpfeln, assoziiert wird. Wenn ich das so richtig sehe. Dies geht aber nur durch eine Abstraktion, die aus drei Äpfeln und drei Elektronen das selbe macht, die mathematische Drei. Damit werden die drei ähnlichen Dinge „ent(be)grifflicht“ – es wird darüber hinweggesehen, dass es eigentlich Äpfel und Elektronen waren – und die Bezeichnung Drei hat sie zuvor schon entindividualisiert – entphysikalisiert –, denn die drei Äpfel waren ja nicht die selben. \\\\'."\n".
+                    '}'."\n"))),
+                                                                                        
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{'."\n".
+                    '\\bold{Internetarchiv auf IPFS Basis – im Interplanetary File System:} \\\\'."\n".
+                    '• Datierte Versionen von Internetseiten im Interplanetary File System (IPFS) speichern. \\\\'."\n".
+                    '– Ähnlich wie \\jump[http://web.archive.org/web/20200213213708/http://www.nsosp.org/de/New-Soul-Of-Science-Project/index.php]{}{WayBackMachine} und \\jump[http://archive.ph/www.nsosp.org]{}{archive today}.'."\n".
+                    '}'."\n"))),
+                                                                                        
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{'."\n".
+                    '\\bold{Entstehungserhaltendes Speicherformat – Universelles Grafikformat mit Bezug zu den Ausgangsdaten:} \\\\'."\n".
+                    '• OpenStruct-Vec2: Ähnlich dem PDF ist die Darstellung rein grafisch und damit inhaltsunabhängig gespeichert. \\\\'."\n".
+                    '– Die Ausgangsdaten sind im Hintergrund gespeichert und können zum Editieren verwendet werden. \\\\'."\n".
+                    '– Die Grafikdaten können von den Ausgangsdaten entkoppelt und dann auch direkt editiert werden. \\\\'."\n".
+                    '• Anders als im PDF kann durch die Ursprungsinformation ein Text originaler in die Ablage genommen oder automatisch vorgelesen werden, weil noch mehr informationen vorhanden sind. So werden Trennstriche bei Zeilenumbrüchen nicht mit in die Ablage genommen. \\\\'."\n".
+                    '• Ein solches Format ist auch für Formeln und deren Werte denkbar. Siehe oben \\italic{Symbole und ihre Werte und Eigenschaften} \\\\'."\n".
+                    '}'."\n"))),
+                                                                                        
+                    ))),
               )
           ); ?>
 

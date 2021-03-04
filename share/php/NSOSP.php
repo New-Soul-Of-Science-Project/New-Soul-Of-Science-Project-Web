@@ -511,6 +511,11 @@
   
 
 
+  $NSOSP_g_figure_ary_WolfgangHuss              = array( fig_file_name => 'Wolfgang_Huss-2016-IMG_3683-clip', fig_alt_description => 'Wolfgang Huß ©2016 by Wolfgang Huß', figFileType => 'jpg', figPDF_is => false, width => '270px', height => '288px', name => 'set local!',
+                                                         text => 'Yoga-Lehrer/-Coach, Forscher, Programmierer');
+  
+
+
   $SpaLeb_g_figure_ary_Achtsamkeitsgradient      = array( fig_file_name => 'Spannungsspiel-des-Lebens/Achtsamkeitsgradient-v01', fig_alt_description => 'Der Achtsamkeitsgradient', width => '380px', height => '500px', name => 'set local!',
                                                          text => 'Die Basis des Achtsamkeitsgradienten ist der Anus.'."\n".
                                                                   'Die Intensitätszunahme des Gefühlsgradienten und des Handlungsgradienten bedingen einander.'."\n".
@@ -2110,7 +2115,10 @@
                                                 'OM:nSOSp:Home:Forschungsstand:Fig-Photon' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                          
                                               'OM:nSOSp:Home:nSOSp' => array( headline_text => '\\name[title]{OM:nSOSp:Home}', headline_text_short => '\\name[shorttitle]{OM:nSOSp:Home}'),
-                                              'OM:nSOSp:Home:Wolfgang-Huss' => array( headline_text => 'Wolfgang Huß – Projekte', headline_text_short => 'Wolfgang Huß – Projekte'),
+                                                         
+                                              'OM:nSOSp:Home:Wolfgang-Huss' => array( headline_text => 'Wolfgang Huß', headline_text_short => 'Wolfgang Huß'),
+                                                'OM:nSOSp:Home:Wolfgang-Huss:Fig-WolfgangHuss' => array( headline_text => 'Wolfgang Huß', headline_text_short => 'Wolfgang Huß'),
+                                                         
                                               'OM:nSOSp:Home:Spannungsspiel-des-Lebens' => array( headline_text => '\\name[title]{OM:SpaLeb:Home}', headline_text_short => '\\name[shorttitle]{OM:SpaLeb:Home}'),
                                               'OM:nSOSp:Home:Naturphilosophie-Yoga' => array( headline_text => '\\name[title]{OM:NPYo:Home}', headline_text_short => '\\name[shorttitle]{OM:NPYo:Home}'),
                                               'OM:nSOSp:Home:Fraktale-Quanten-Fluss-Theorie' => array( headline_text => '\\name[title]{OM:FrQFT:Home}', headline_text_short => '\\name[shorttitle]{OM:FrQFT:Home}'),

@@ -4,7 +4,7 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 21.06.2020, 14:00h
+  // #: Stand: 04.03.2021, 15:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
@@ -156,6 +156,7 @@
   //           20200621:  +:  "To_f_Paragraph", 'headline':  'subline' supports now "To_f_Text_replace_html".
   //           20200901:  +:  "$To_g_Text_replace_ary":  '↔︎' -> 'Quan&shy;ten&shy;feld&shy;the&shy;o&shy;rie' is new.
   //           20210216:  +:  "$To_g_Text_replace_ary":  '-Quantenfeldtheorie-' -> '&harr;' is new.
+  //           20210304:  >:  "To_f_Paragraph":  'Figure': Changed table to 'margin-left: 30px; margin-right: 40px' by using the standard from 'main.css'. Then changed to 'width: 660px'.
   // v01.004:  20130609:  !:  "To_f_headline_make":  Tables left margin changed to 10px.
   //                      !:  "$To_g_Text_replace_ary":  '„', '›', '‹', '»', '«' entries new.
   //           20130618:  !:  "$To_g_Text_replace_ary":  '&nbsp;', '&amp;', '&reg;', '&ldquo;' entries new.
@@ -1822,7 +1823,8 @@
           // #: "margin" can intersect, "padding" can not intersect and it will allways add.
           //%!echo '          <table border="0px" width="700px" style="margin-top: 20px; margin-bottom: 20px;">'."\n";
           //%!echo '          <table border="0px" width="700px" style="margin-left: 10px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of centering in the midddle of the content and enable widths up to "700px".
-          echo '          <table border="0px" width="700px" style="margin-left: 10px; margin-right: 20px; margin-top: 30px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of centering in the midddle of the content and enable widths up to "700px".
+          // echo '          <table border="0px" width="700px" style="margin-left: 10px; margin-right: 20px; margin-top: 30px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of centering in the midddle of the content and enable widths up to "700px".
+          echo '          <table border="0px" width="660px" style="margin-top: 30px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of centering in the midddle of the content and enable widths up to "700px".
           echo '            <tr>'."\n";
           
           // #: Margin left as column.
@@ -1858,6 +1860,7 @@
               // #: Define the table cell.
           
               echo '              <td align="'.$Glo_g_FigAlign.'" valign="top">'."\n";
+              // echo '              <td align="left" valign="top">'."\n";
               
               echo '            <table border="0" style="margin: 0px; padding: 0px;">'."\n";
               echo '              <colgroup>'."\n";
@@ -1883,10 +1886,10 @@
                     
                   echo '              <tr>'."\n";
                   echo '                <td>'."\n";
-                  echo '                  <! #: PDF ist in "sitemap.xml" ausgelistet und auch in der Bildunterschrift verlinkt. >'."\n";
+                  echo '                  <! #: PDF ist in "sitemap.xml" aufgelistet und auch in der Bildunterschrift verlinkt. >'."\n";
                   if ($figPDF_is || $figBigger_is)
                     echo '                  <a target="_blank" href="'.$Glo_PathRel_back.'../share/images/'.($value_ary[fig_file_name]).(($figPDF_is) ? '.pdf' : '.'.$figFileType).'">'."\n";
-                  echo '                    <! #: PDF in der Vorschau in JPEG mit optimaler Qualität und 20dpi exportieren. Bezogen auf eine max. Breite von 700px bei 300,4cm = Faktor 2,33022636484687 im PDF. >'."\n";
+                  echo '                    <! #: PDF in der Vorschau in JPEG mit optimaler Qualität und 20dpi exportieren. Bezogen auf eine max. Breite von 700px (nun 660px) bei 300,4cm = Faktor 2,33022636484687 im PDF. >'."\n";
                   echo '                    <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($value_ary[fig_file_name]).'.'.$figFileType.'" width="'.($value_ary[width]).'" height="'.($value_ary[height]).'"'.((array_key_exists( border, $value_ary)) ? '' : ' border="0"').' alt="'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[fig_alt_description])).'"'.($figPDF_is ? ' title="PDF-Darstellung in neuem Fenster &ouml;ffnen"' : '').((array_key_exists( border, $value_ary)) ? ' style="border-width: '.($value_ary[border]).'; border-color: black;"' : '').'>'."\n";
                   if ($figPDF_is || $figBigger_is)
                     echo '                  </a>'."\n";
@@ -1894,11 +1897,14 @@
                   echo '              </tr>'."\n";
                   echo '              <tr>'."\n";
                   echo '                <td class="tools-class-text tools-class-text-figure" style="color: #'.(To_f_Color('*FigDescr', true)).';'.(($Glo_g_TextAlign == 'block') ? ' text-align: justify;' : '').'">'."\n";
-                  echo '                  <! #: PDF ist in "sitemap.xml" aufgelistet und auch im Bild verlinkt. >'."\n";
-                  if ($figPDF_is || $figBigger_is)
-                    echo '                  <i><a target="_blank" href="'.$Glo_PathRel_back.'../share/images/'.($value_ary[fig_file_name]).(($figPDF_is) ? '.pdf' : '.'.$figFileType).'" style="color: #'.(To_f_Color('*FigTitle', true)).'">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).' <img src="'.$Glo_PathRel_back.'../share/images/add.jpg" width="11" height="13" border="0" alt="New window"></a><span style="color: #505050">:</span></i>'."\n";
-                  else
-                    echo '                  <i style="color: #'.(To_f_Color('*FigTitle', true)).'">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).':</i>'."\n";
+                  if (count($value_ary[titel]))
+                  {
+                    echo '                  <! #: PDF ist in "sitemap.xml" aufgelistet und auch im Bild verlinkt. >'."\n";
+                    if ($figPDF_is || $figBigger_is)
+                      echo '                  <i><a target="_blank" href="'.$Glo_PathRel_back.'../share/images/'.($value_ary[fig_file_name]).(($figPDF_is) ? '.pdf' : '.'.$figFileType).'" style="color: #'.(To_f_Color('*FigTitle', true)).'">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).' <img src="'.$Glo_PathRel_back.'../share/images/add.jpg" width="11" height="13" border="0" alt="New window"></a><span style="color: #505050">:</span></i>'."\n";
+                    else
+                      echo '                  <i style="color: #'.(To_f_Color('*FigTitle', true)).'">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).':</i>'."\n";
+                  }
                   echo '                  <i>'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[text])).'</i>'."\n";
                   echo '                </td>'."\n";
                   echo '              </tr>'."\n";
@@ -1917,7 +1923,10 @@
                   echo '            </tr>'."\n";
                   echo '            <tr>'."\n";
                   echo '              <td class="tools-class-text tools-class-text-figure" style="color: #'.(To_f_Color('*FigDescr', true)).';'.(($Glo_g_TextAlign == 'block') ? ' text-align: justify;' : '').'">'."\n";
-                  echo '                <i style="color: #'.(To_f_Color('*FigTitle', true)).';">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).':</i>'."\n";
+                  if (count($value_ary[titel]))
+                  {
+                    echo '                <i style="color: #'.(To_f_Color('*FigTitle', true)).';">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).':</i>'."\n";
+                  }
                   echo '                <i>'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[text])).'</i>'."\n";
                   echo '              </td>'."\n";
                   echo '            </tr>'."\n";
