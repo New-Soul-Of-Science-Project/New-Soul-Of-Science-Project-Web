@@ -89,7 +89,7 @@
                     'Und der Zusammenhang ihrer Bestandteile ist es, der die Dinge kompliziert oder komplex macht.'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Daraus resultieren dann, bei fortschreitender Zerlegung,  immer einheitlichere Bestandteile, die sich auch mit immer einheitlicherer Geschwindigkeit bewegen.'."\n".
-                          'Wegen des Dynamikprinzips mit konstanter endlicher Geschwindigkeit.',
+                          'Wegen des \\jump{OM:FrQFT:FirstPrinciples:Vortext:Dynamikprinzip}{Dynamikprinzips} mit konstanter endlicher Geschwindigkeit.',
                         'Die Geschwindigkeit der Bestandteile ist nicht in ihrer Richtung eingeschränkt.'."\n".
                           'Denn durch den Neheh-Aspekt des Existenzprinzips wird klar, die Bewegungsrichtung muss im Kreis laufen.',
                     ))),
@@ -98,8 +98,26 @@
                 'Fraktalitätsprinzip', subline =>
                   '… fraktales Existenzprinzip, fraktaler Djet-Neheh-Dualismus')),
                   array( 'text', array( text => array(
+                    'Die Physik besitzt eine fraktale Struktur:'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Holarchie} \\\\'."\n".
                     'Jedes Ding ist auch ein Bestandteil und jeder Bestandteil ist auch ein Ding.'."\n".
                     'Die Natur ist eine Holarchie\\color{*Bearb}{(Verweis)}.'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Bewegung ist Ausgangspunkt, nicht Ruhe} \\\\'."\n".
+                    'Nach dem \\jump{OM:FrQFT:FirstPrinciples:Vortext:Vereinfachungsprinzip}{Vereinfachungsprinzip} ist die konstante Bewegung der tiefen Strukturen'."\n".
+                    'ein First-Principle der Theorie.'."\n".
+                    'Es wird also nicht die Ruhe der Bestandteile als Ausgangspunkt der Physik angenommen, sondern in den tiefsten Tiefen die ewige konstante Bewegung.'."\n",
+                      'Jede Wechselwirkung in einer solchen Struktur, jede Form von Spannung, ist dann nichts anderes als die Ablenkung eines Teils der Bewegung der Bestandteile der Dinge.'."\n".
+                    'Diese Ablenkung geht ins Innere ihrer gebundenen Struktur.'."\n".
+                    'So entsteht ihr Zusammenhang.'."\n",
+                      'Die Ablenkung konstanter Bewegung der tiefen Bestandteile bedeutet auch, dass sich ihre Ausbreitungsgeschwindigkeit im dreidimensionalen Raum'."\n".
+                    'von Strukturebene zu Strukturebene zum Größeren hin effektiv verringert.'."\n".
+                    'Dies geht so, bis wir bei der Lichtgeschwindigkeit angekommen sind.'."\n".
+                    'Auf dieser Fraktalebene, die des elektromagnetisch polarisierten Lichts, können sich dann der Lichtuhr Einsteins ähnliche Anregungszustände '."\n".
+                    'in sich selber rückkoppeln.'."\n".
+                    'Das hat die Entstehung von Materie zur Folge, die von der Ruhe ihres Schwerpunktes bis fast zur Lichtgeschwindigkeit eine variable Geschwindigkeit'."\n".
+                    'annehmen können.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
                                            
                 'Raum-Zeit-Prinzip', subline =>
@@ -164,7 +182,7 @@
                                                       
                   array( 'text', array( text => array(
                     'Hieraus ergibt sich dann Plancks allgemeine Proportionalität von Energie und de-Broglie-Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}}'."\n".
-                    'der Elementarteilchen, die uns auch in Form von ›Einsteinsche Gleichung für das Lichtquant‹\\footnote{\\const{FrQFT_g_footnote_text_EinsteinGleichLichtq}} bekannt ist:'."\n"))),
+                    'der Elementarteilchen, die uns auch in Form der ›Einsteinschen Gleichung für das Lichtquant‹\\footnote{\\const{FrQFT_g_footnote_text_EinsteinGleichLichtq}} bekannt ist:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'FP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E_{ele}  =  h \cdot f_{ele}  }',
