@@ -1170,6 +1170,8 @@
                       
                   array( 'text', array( text => array(
                     '\\name[description]{OM:ZS:Home}'."\n"))),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{Seite befindet sich im Aufbau …}'."\n"))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:ZS:Home'),

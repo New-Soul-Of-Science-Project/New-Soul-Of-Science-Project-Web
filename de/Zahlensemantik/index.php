@@ -14,6 +14,9 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'text', array( text => array(
+                    '\\color{*Bearb}{Seite befindet sich im Aufbau …}'."\n"))),
+                      
+                  array( 'text', array( text => array(
                     'Mit den Superial-Zahlen die fraktale Struktur des Unendlichen entdecken …'."\n",
                       'Vom Endlichen bis ins Aktualunendliche mit ganzen Zahlen zählen, ist eine faszinierende Sache.'."\n".
                     'Welche Primfaktorenzerlegung haben diese aktualunendlichen ganzen Zahlen?'."\n".
