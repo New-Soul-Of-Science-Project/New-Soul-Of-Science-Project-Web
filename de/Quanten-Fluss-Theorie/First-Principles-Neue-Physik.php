@@ -96,13 +96,20 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
                                            
                 'Fraktalitätsprinzip', subline =>
-                  '… fraktales Existenzprinzip, fraktaler Djet-Neheh-Dualismus')),
+                  '')),
                   array( 'text', array( text => array(
-                    'Die Physik besitzt eine fraktale Struktur:'."\n"))),
+                    'Die Physik besitzt eine fraktale Struktur, die wir aus unterschiedlichen Perspektiven erkennen können:'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Holarchie} \\\\'."\n".
                     'Jedes Ding ist auch ein Bestandteil und jeder Bestandteil ist auch ein Ding.'."\n".
                     'Die Natur ist eine Holarchie\\color{*Bearb}{(Verweis)}.'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Fraktales Existenzprinzip, fraktaler Djet-Neheh-Dualismus} \\\\'."\n".
+                    'Wenn jedes Bestandteil auch ein Ding ist, dann gilt auch für dieses das \\jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{Existenzprinzip}.'."\n".
+                    'Es besteht aus Bestandteilen, die aneinander gebunden sind.'."\n".
+                    'Für diese gilt wiederum das Existenzprinzip.'."\n".
+                    'Und so setzt sich das Fraktal ins immer Kleinere fort.'."\n",
+                      'Da in einer Holarchie jedes Ding auch ein Bestandteil eines anderen Dings ist, reicht die fraktale Struktur ebenso ins immer Größere.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Bewegung ist Ausgangspunkt, nicht Ruhe} \\\\'."\n".
                     'Nach dem \\jump{OM:FrQFT:FirstPrinciples:Vortext:Vereinfachungsprinzip}{Vereinfachungsprinzip} ist die konstante Bewegung der tiefen Strukturen'."\n".
