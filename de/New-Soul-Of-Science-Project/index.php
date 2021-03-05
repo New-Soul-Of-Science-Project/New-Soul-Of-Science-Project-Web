@@ -673,7 +673,7 @@
                     'XXX'."\n"))),
                     
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:nSOSp:Home:Spannungsspiel-des-Lebens'),
+                      // array(  jump_name => 'OM:nSOSp:Home:Spannungsspiel-des-Lebens'),
                     )),
               )
           ); ?>
@@ -724,9 +724,9 @@
                     // 'XXX'."\n"))),
                   array( 'text', array( text => array(
                     '\\\\'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:SpaLeb', text =>
                                            
-                '\\jumpname{OM:SpaLeb:Home}', subline =>
+                '\\name{OM:SpaLeb:Home}', subline =>
                   '')),
                   array( 'text', array( text => array(
                     '\\bold{\\name[undertitle]{OM:SpaLeb:Home}} \\\\'."\n"))),
@@ -734,77 +734,82 @@
                     '\\name[description]{OM:SpaLeb:Home}'."\n"))),
 
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:SpaLeb:Home'),
+                      array(  jump_name => 'OM:SpaLeb:Home'),
                     )),
                       
                   array( 'text', array( text => array(
                     '\\\\'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:NPYo', text =>
                                            
-                '\\jumpname{OM:NPYo:Home}', subline =>
+                '\\name{OM:NPYo:Home}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                  '\\condb{\\name[undertitle]{OM:NPYo:Home}} \\\\'."\n".
-                    '\\cond{\\name[description]{OM:NPYo:Home}.}'."\n"))),
+                    '\\bold{\\name[undertitle]{OM:NPYo:Home}} \\\\'."\n"))),
+                  array( 'text', array( text => array(
+                    '\\name[description]{OM:NPYo:Home}'."\n"))),
                     
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:NPYo:Home'),
+                      array(  jump_name => 'OM:NPYo:Home'),
                     )),
                       
                   array( 'text', array( text => array(
                     '\\\\'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:FrQFT', text =>
                                            
-                '\\jumpname{OM:FrQFT:Home}', subline =>
+                '\\name{OM:FrQFT:Home}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                  '\\condb{\\name[undertitle]{OM:FrQFT:Home}} \\\\'."\n".
-                    '\\cond{\\name[description]{OM:FrQFT:Home}.}'."\n"))),
+                    '\\bold{\\name[undertitle]{OM:FrQFT:Home}} \\\\'."\n"))),
+                  array( 'text', array( text => array(
+                    '\\name[description]{OM:FrQFT:Home}'."\n"))),
                     
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:FrQFT:Home'),
+                      array(  jump_name => 'OM:FrQFT:Home'),
                     )),
                       
                   array( 'text', array( text => array(
                     '\\\\'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:VRT', text =>
                                            
-                '\\jumpname{OM:VRT:Home}', subline =>
+                '\\name{OM:VRT:Home}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                  '\\condb{\\name[undertitle]{OM:VRT:Home}} \\\\'."\n".
-                    '\\cond{\\name[description]{OM:VRT:Home}.}'."\n"))),
+                    '\\bold{\\name[undertitle]{OM:VRT:Home}} \\\\'."\n"))),
+                  array( 'text', array( text => array(
+                    '\\name[description]{OM:VRT:Home}'."\n"))),
                     
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:VRT:Home'),
+                      array(  jump_name => 'OM:VRT:Home'),
                     )),
                       
                   array( 'text', array( text => array(
                     '\\\\'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:SupNum', text =>
                                            
-                '\\jumpname{OM:SupNum:Home}', subline =>
+                '\\name{OM:SupNum:Home}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                  '\\condb{\\name[undertitle]{OM:SupNum:Home}} \\\\'."\n".
-                    '\\cond{\\name[description]{OM:SupNum:Home}.}'."\n"))),
+                    '\\bold{\\name[undertitle]{OM:SupNum:Home}} \\\\'."\n"))),
+                  array( 'text', array( text => array(
+                    '\\name[description]{OM:SupNum:Home}'."\n"))),
                     
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:SupNum:Home'),
+                      array(  jump_name => 'OM:SupNum:Home'),
                     )),
                       
                   array( 'text', array( text => array(
                     '\\\\'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:NPT', text =>
                                            
-                '\\jumpname{OM:NPT:Home}', subline =>
+                '\\name{OM:NPT:Home}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                  '\\condb{\\name[undertitle]{OM:NPT:Home}} \\\\'."\n".
-                    '\\cond{\\name[description]{OM:NPT:Home}.}'."\n"))),
+                    '\\bold{\\name[undertitle]{OM:NPT:Home}} \\\\'."\n"))),
+                  array( 'text', array( text => array(
+                    '\\name[description]{OM:NPT:Home}'."\n"))),
                     
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:NPT:Home'),
+                      array(  jump_name => 'OM:NPT:Home'),
                     )),
                       
                   array( 'text', array( text => array(
