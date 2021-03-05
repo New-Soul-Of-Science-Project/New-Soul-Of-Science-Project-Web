@@ -235,7 +235,7 @@
                                   ));
 
   // #: Replaces all simple LaTeX character notations with the usual chars.
-  // #: The order of entries may be importened: As example XXX.
+  // #: The order of entries may be important: As example XXX.
   $Sc_g_LaTeX_replace_ary =       array(
                                     array( '--', '–'),
                                     array( '\\&', '&'),

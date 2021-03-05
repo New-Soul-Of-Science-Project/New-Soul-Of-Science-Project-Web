@@ -26,9 +26,9 @@
   //phpinfo();
   
   // #: Mute Errors.
-  //ini_set('display_errors', 'Off');
-  //error_reporting(E_ALL & ~E_WARNING);
-  //error_reporting(E_ERROR | E_WARNING | E_PARSE);
+  // ini_set('display_errors', 'Off');
+  // error_reporting(E_ALL & ~E_WARNING);
+  // error_reporting(E_ERROR | E_WARNING | E_PARSE);
   error_reporting(E_ERROR);
 
   
@@ -604,11 +604,21 @@
   $SupNum_g_figure_ary_sGeomKonstruktWiederholung = array( fig_file_name => 'SN/s-geom-Konstrukt-Wiederholung-v02', fig_alt_description => 'Rhythmische Wiederholung auf Basis natürlicher Zahlen', width => '600px', height => '290px', name => 'set local!',
                                                          text => 'Die Grafik zeigt, wie durch den Zusammenfall aller Rhythmen der natürlichen Zahlen,'."\n".
                                                                  'von der Eins an bis ins Unendliche, die superiale Basis s konstruiert wird.'."\n");
+                                                                 
+                                                                 
+  $ZS_g_figure_ary_GraviLeptonWirkung        = array( fig_file_name => 'Zahlensemantik/Gravi_Lepton-Wirkung_v12', fig_alt_description => 'Graviradiation ei­nes sim­pli­fi­zier­ten Lep­to­nen-­Strings', width => '660px', height => '825px', name => 'set local',
+                                                         text => 'Die Darstellung zeigt die graviradiative Wirkung eines simplifizierten Leptonen-Strings auf sein Umfeld.'."\n".
+                                                                 'Jedes einzelne Wirkungsquant des Strings erzeugt ständig neue, virtuelle Wirkungsquanten, die ringförmig um den und'."\n".
+                                                                 'senkrecht zum String abgestrahlt werden.'."\n".
+                                                                 'Ihre Wirkung nimmt beim Abstand \\term{r} zum String nur mit \\term{1/r} ab.'."\n".
+                                                                 'Bei doppelter Energie und Masse \\term{m_{ele}} des Strings halbiert sich sein Radius \\term{r_{ele}} und vervierfacht sich seine Wirkungsquanten-Dichte.'."\n".
+                                                                 'Seine Graviradiation verdoppelt sich aber nur, weil die Länge \\term{Δt_{vwq}} seiner abgestrahlten Impulse sich durch die doppelte Winkelgeschwindigkeit \\term{ω_{ele}}'."\n".
+                                                                 'halbiert.');
+  
   
 
 
-  
-  $Glo_g_Color_list = array_merge( array(
+    $Glo_g_Color_list = array_merge( array(
                              '*Bearb'                 => array( color => '7000A0'),
                              '*Concl'                 => array( color => '*Conclusion'),
                              '*Entwick'               => array( color => '009000'),  // #: Grün
@@ -1122,12 +1132,13 @@
                                 array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Leptonen-Modell-Elektron-Positron-Myon-Tauon-Neutrino_de.php',
                                        url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Leptonen-Modell-Elektron-Positron-Myon-Tauon-Neutrino_de.php',
                                        titel => 'Leptonen-Modell, Elektron/Positron, Myon, Tauon, Neutrino - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
-                                       description => 'Das neue Leptonen-Modell beschreibt, wie die elektroschwache Ladung die Gravitation sowie die Massen von Elektron/Positron, Myon, Tauon und Neutrino entstehen.',
+                                       // description => 'Das neue Leptonen-Modell beschreibt, wie die elektroschwache Ladung die Gravitation sowie die Massen von Elektron/Positron, Myon, Tauon und Neutrino entstehen.',
+                                       description => '\\name[undertitle]{OM:FrQFT:Lepton}.',
                                        keywords => '',
                                        text_titel_h1 => 'Leptonen-Modell \\\\ \\color{*TitleAdd}{<small>Elektron, Myon, Tauon und Neutrinos</small>}',
                                        text_titel_short => 'Leptonen-Modell',
-                                       text_undertitel_h2 => 'Aus den bekannten Eigenschaften der Leptonen lässt sich die Struktur der Leptonen-Strings im Rahmen des Prinzips der neuen Physik konstruieren',
-                                       //text_titel_discr_h3 => '',
+                                       text_undertitel_h2 => 'Aus den bekannten Eigenschaften der Leptonen lässt sich mit Hilfe der First-Principles die Struktur der Leptonen-Strings rekonstruieren',
+                                       text_titel_discr_h3 => '',
                                        jump_ary => array(
                                               'OM:FrQFT:Lepton:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
@@ -2134,6 +2145,7 @@
                                               'OM:nSOSp:Home:Superial-Zahlen' => array( headline_text => '\\name[title]{OM:SupNum:Home}', headline_text_short => '\\name[shorttitle]{OM:SupNum:Home}'),
                                               'OM:nSOSp:Home:Naturphilosophie-der-Zeit' => array( headline_text => '\\name[title]{OM:NPT:Home}', headline_text_short => '\\name[shorttitle]{OM:NPT:Home}'),
                                               'OM:nSOSp:Home:Naturphilosophie-der-Gegensaetze' => array( headline_text => 'Die strukturelle Naturphilosophie der Gegensätze', headline_text_short => 'Naturphilosophie der Gegensätze'),
+                                              'OM:nSOSp:Home:Zahlensemantik' => array( headline_text => '\\name[title]{OM:ZS:Home}', headline_text_short => '\\name[shorttitle]{OM:ZS:Home}'),
                                               'OM:nSOSp:Home:Inspiration' => array( headline_text => 'Inspiration', headline_text_short => 'Inspiration'),
                                             ),
                                      ),
@@ -3068,6 +3080,79 @@
                                                 'OM:VRT:Vereinheitlichung-RT-LET:Fig-Gekruemmter-Licht-Bewegungsraum' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:VRT:Vereinheitlichung-RT-LET:Fig-Gravitation-Masse' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 //%!'OM:VRT:Vereinheitlichung-RT-LET:VereinheitART' => array( headline_text => 'Vereinheitlichung mit der Allgemeinen Relativitätstheorie', headline_text_short => 'Vereinheitlichung mit der Allgemeinen Relativitätstheorie'),
+                                            ),
+                                     ),
+                              'OM:ZS:' =>
+                                array( url_abs => 'http://www.nsosp.org/de/Zahlensemantik/',
+                                       url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/',
+                                       favicons_url_rel_opt => $Glo_PathRel_back.'../de/Zahlensemantik/favicon/',
+                                       //header_pict_name => 'Fractal-Quantum-Flow-Theory_En.jpg',
+                                       //header_pict_alt => 'Fractal Quantum Flow Theory, Ideas of new Science',
+                                       name_short => 'ZS',
+                                       font_ary => array(
+                                                          '<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
+                                                          '<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
+                                                        ),
+                                       header_bgcolor => '#FFFFFF',
+                                       header_pict_name => 'ZS/ZS_header_v01_2_1860x354_72dpi_de.jpg',
+                                       header_pict_width => '930px',
+                                       header_pict_height => '177px',
+                                       header_pict_bgcolor => '#FFFFFF',
+                                       header_pict_alt => 'Die Zahlensemantik',
+                                       header_links_marginLeft => '383px',
+                                       copy_right => 'Zahlensemantik (ZS) \\\\'."\n".
+                                                      '© 2010–2021 by \\\\'."\n".
+                                                      'Raimund Welsch \\\\'."\n".
+                                                      'is licensed under \\\\'."\n".
+                                                      '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
+                                       litera_url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Literatur_de.php',
+                                       litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/zahlensemantik_bibliographie.bib',
+                                     ),
+                          
+                               'OM:ZS:Home' =>
+                                array( url_abs => 'http://www.nsosp.org/de/Zahlensemantik/index.php',
+                                       url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/index.php',
+                                       titel => 'Die Zahlensemantik (ZS) - Deutsch',
+                                       description => '\\name[undertitle]{OM:ZS:Home}. — \\name[description]{OM:ZS:Home}.',
+                                       keywords => '',
+                                       text_titel_h1 => 'Die Zahlensemantik \\color{*TitleAdd}{\\small{(ZS)}}',
+                                       text_titel_short => 'Zahlensemantik',
+                                       text_undertitel_h2 => 'XXX',
+                                       text_titel_discr_h3 => 'YYY',
+                                       jump_ary => array(
+                                              'OM:ZS:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
+                                              'OM:ZS:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
+                                            ),
+                                     ),
+                               'OM:ZS:Einleitung' =>
+                                array( url_abs => 'http://www.nsosp.org/de/Zahlensemantik/Einleitung.php',
+                                       url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Einleitung.php',
+                                       titel => 'Einleitung zur Zahlensemantik - Zahlensemantik (ZS) - Deutsch',
+                                       description => '\\name[undertitle]{OM:ZS:Einleitung}. — \\name[description]{OM:ZS:Einleitung}.',
+                                       keywords => '',
+                                       text_titel_h1 => 'Einleitung',
+                                       text_titel_short => 'Einleitung',
+                                       text_undertitel_h2 => 'XXX',
+                                       text_titel_discr_h3 => 'YYY',
+                                       jump_ary => array(
+                                              'OM:ZS:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                                                         
+                                                'OM:ZS:Einleitung:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                         
+                                              'OM:ZS:Einleitung:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                                            ),
+                                     ),
+                               'OM:ZS:Literatur' =>
+                                array( url_abs => 'http://www.nsosp.org/de/Zahlensemantik/Literatur.php',
+                                       url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Literatur.php',
+                                       titel => 'Literatur - Zahlensemantik (ZS) - Deutsch',
+                                       description => 'Literatur zur Zahlensemantik.',
+                                       keywords => '',
+                                       text_titel_h1 => 'Literatur',
+                                       text_titel_short => 'Literatur',
+                                       text_undertitel_h2 => 'und Informationen',
+                                       text_titel_discr_h3 => '',
+                                       jump_ary => array(
                                             ),
                                      ),
                           
