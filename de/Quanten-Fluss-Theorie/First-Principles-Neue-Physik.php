@@ -15,6 +15,7 @@
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
                     '\\bold{Postulate}',
+                    '• Ist hier schon das Prinzip der Lichtuhr eingepflegt?',
                     '• \\term{E = m⋅c^{2}}:',
                     '– Die Proportionalität von Energie und Masse ist eine direkte Schlussfolgerung der FrQFT, die sich aus der Annahme (Postulat bzw. Axiom) ergibt, dass Wirkungsquanten sowohl Energieeinheiten als auch Masseneinheiten sind (absolut nur auf der untersten Strukturebene des analysierten Modells)! Dies setzt ein konstantes Verhältnis voraus, welches nach unseren Beobachtungen das Quadrat der Lichtgeschwindigkeit \\term{c^{2}} der bekannten Formel \\term{E = m⋅c^{2}} ist.(Verweis auf Wikipedia: ›Äquivalenz von Masse und Energie‹, Überblick und Beispiele, Vernichtungsstrahlung. Dies ist keine relativistisch interpretierte Beobachtung, sondern eine quantenphysikalisch interpretierte!) Siehe auch \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{Herleitung der Lichtverlangsamung} (falls dort nicht entbehrlich geworden …).',
                     ))),
@@ -48,7 +49,7 @@
                   array( 'text', array( text => array(
                     'Das Strukturprinzip wird von den nachfolgenden Naturprinzipien ergänzt und so konkretisiert.'."\n",
                       'Ich erkläre diese zunächst so kurz wie möglich und so ausführlich wie nötig, um einen ersten Überblick zu geben.'."\n".
-                    'Dabei fällt auch eine detailierte Erklärung des Djet-Neheh-Dualismus unter den Tisch, die ich später nachhole, um es hier nicht zu verkomplizieren.'."\n"))),
+                    'Eine detaillierte Erklärung des Djet-Neheh-Dualismus hole ich später nach, um es an dieser Stelle übersichtlich zu halten.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip', text =>
                                            
                 'Existenzprinzip', subline =>
@@ -66,7 +67,7 @@
                         'Djet-Aspekt (Chaos): Bewegen sie sich unabhängig voneinander, dann gehören sie nicht zum selben Ding.',
                     ))),
                   array( 'text', array( text => array(
-                    'Nur auf diese Weise können wir Existenz feststellen.'."\n"))),
+                    'Nur auf diese Weise können wir Existenz feststellen.\\footnote[*Bearb]{\\color{*Bearb}{Damit, dass Systeme nur im Kontext ihrer Umgebung funktionieren und sich in ihrem Unterschied zu dieser definieren, über ihre Differenz, hat \\jump[https://de.wikipedia.org/wiki/Niklas_Luhmann]{}{Niklas Luhmann} sich ausgiebig in der \\jump[https://de.wikipedia.org/wiki/Systemtheorie_(Luhmann)]{}{Luhmannschen Systemtheorie} beschäftigt. \\\\ Weitere Quellen dazu: \\\\ Videos: \\\\ \\jump[https://www.youtube.com/watch?v=_J-8lrTW9Fc]{}{Niklas Luhmann: Systemtheorie} \\\\ \\jump[https://www.youtube.com/watch?v=Bg7ijbjvcm8]{}{Philosophisches Gespräch: Niklas Luhmann. Die unwahrscheinliche Gesellschaft} }}'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:Eigenschaftsprinzip', text =>
                                            
                 'Eigenschaftsprinzip', subline =>
