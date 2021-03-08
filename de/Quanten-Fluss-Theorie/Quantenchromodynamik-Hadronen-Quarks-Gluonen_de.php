@@ -13,10 +13,13 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'invis', text => array(
                     // '\\bold{XXX}',
                     '• Ein ausführlicher Artikel über die Gluonen und die Probleme der QCD findet sich in \\cite{Ent:DerKlebstoffDerWelt:2015}. Die FrQFT kann wichtige dieser Fragen, wie zum Confinement und der Gluonen-Energie, zumindestens qualitativ beantworten.',
                     '• Mesonen bestehen aus Quarks und Antiquarks. Wie arbeiten diese im String genau zusammen? Gibt es Mesonen aus allen Quark-Flavours?',
+                    '\\bold{Aktuelle Forschung}',
+                    '• Kleines elektrisches Dipolmoment des Neutrons: Kann das kleine elektrische Dipolmoment des Neutrons zur Berechnung der Wellenzahl der Leptonen benutzt werden? Siehe Sabine Hossenfelder, Vortrag in Stuttgart: \\jump[https://www.youtube.com/watch?v=99hVAu1k6G8#t=48m00s]{}{Was läuft falsch in der gegenwärtigen Physik?} bei Minute 48.',
+                    '⋅ \\quote{Das Neutron – unverzichtbarer Bauteil aller Atomkerne mit mehr als einem Proton – ist nach außen hin zwar elektrisch neutral. Aber es setzt sich aus geladenen Bestandteilen zusammen.} (siehe Spektrum der Wissenschaft, online: \\jump[https://www.spektrum.de/news/elektrisches-dipolmoment-des-neutrons-neu-vermessen/1711678]{}{Das Neutron bleibt symmetrisch})',
                     ))),
                       
                   array( 'text', array( text => array(
