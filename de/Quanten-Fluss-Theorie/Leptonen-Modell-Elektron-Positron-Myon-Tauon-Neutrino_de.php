@@ -46,13 +46,74 @@
 		    	<!  • XXX  >
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '\\bold{Neuer Ansatz dieser Seite}',
+                    '• First-Principles und Beobachtungen',
+                    '– Lichtuhr',
+                    '– rückgekoppelte fraktale Struktur',
+                    '– (schwingende) Ladung: elektroschwach, das Neutrino hat keinen relevanten elektromagnetischen Anteil',
+                    '– keine Ladung: starke Ladung',
+                    '– Ruhemasse',
+                    '– Spin',
+                    '\\bold{Zu untersuchende Eigenschaften}',
+                    '• Magnetisches Moment des Elektronen-Spins, siehe \\cite{wiki:Elektron:2015}, Eigenschaften.',
+                    ))),
+                                       
                   array( 'text', array( text => array(
-                    'Das neue Leptonen-Modell löst das ›Problem der Zeit‹ durch ein neues, prozessuales Verständnis'."\n".
-                    'der Zeit und vereinheitlicht so die Quantenmechanik mit der Allgemeinen Relativitätstheorie.'."\n".
-                    'Die neue String-Struktur gibt die beobachteten Eigenschaften der Teilchen wieder.'."\n".
+                    'Um die verschiedenen Leptonen aus Perspektive der Quanten-Fluss-Theorie ähnlich den \\jump{*Photonen-Herlei}{Photonen} beschreiben zu können, ist es notwendig,'."\n".
+                    'uns sowohl die dafür entscheidenden Grundlagen, die \\jump{OM:FrQFT:FirstPrinciples}{First-Principles} der neuen Physik, als auch ihre beobachteten Eigenschaften vor Augen zu führen.'."\n"))),
+                      
+                  // array( 'youtube',
+                  //   array_merge( $FrQFT_g_youtube_ary_Lepton, array( name => 'OM:FrQFT:Lepton:Vortext:Ani-Lepton'))),
+                  array( 'figure',
+                    array_merge( $FrQFT_g_figure_ary_Lepton_highRes, array( name => 'OM:FrQFT:Lepton:Vortext:Ani-Lepton'))),
+                      
+                  array( 'text', array( text => array(
+                    'Leptonen kommen in der Natur in geladener und ungeladener Form vor. \\jump{OM:FrQFT:Lepton:Elektrische-Ladung}{Geladene Leptonen} sind das Elektron/Positron,'."\n".
+                    'das Myon und das Tauon (siehe \\jumpname{OM:FrQFT:Lepton:Vortext:Ani-Lepton}).'."\n".
+                    'Die ungeladenen Leptonen sind die entsprechenden \\jump{OM:FrQFT:Lepton:Neutrinos}{Neutrinos}.'."\n",
+                      'Hier eine Liste dieser und weiterer beobachteter Eigenschaften:'."\n"))),
+                      
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'elektrisch positiv oder negativ geladen oder ungeladen',
+                        'schwache Ladung',
+                        'keine starke Ladung',
+                        'Ruhemasse (gravitative und träge Masse)',
+                        'Spin',
+                        'Magnetisches Moment des Spins',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Wenn wir einen Weg finden wollen, diese Eigenschaften prinzipiell in einem neuen Modell des Leptons der hier entwickelten neuen Physik darzustellen,'."\n".
+                    'dann ist es entscheidend, zu welchen entsprechenden First-Principles die aufgelisteten Eigenschaften passen sollten.'."\n".
+                    'Folgende First-Principles kommen für mich dabei in Betracht:'."\n"))),
+                      
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Lichtuhr',
+                        'rückgekoppelte fraktale Struktur',
+                        'Existenzprinzip',
+                        'Eigenschaftsprinzip',
+                        'Dynamikprinzip',
+                        'Abzählprinzip',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                      
+                      
                   array( 'text', array( text => array(
                     'Leptonen kommen in der Natur in geladener und ungeladener Form vor. Geladene Leptonen sind das Elektron/Positron,'."\n".
                     'das Myon und das Tauon. Die ungeladenen Leptonen sind die entsprechenden \\jump{OM:FrQFT:Lepton:Neutrinos}{Neutrinos}. \\\\'."\n".
@@ -81,11 +142,6 @@
                       array(  jump_name => 'OM:FrQFT:ElektroschwacheWW:Teilchenumwandlungen'),
                       array(  jump_name => 'OM:FrQFT:Gravitation'),
                         )),
-                      
-                  // array( 'youtube',
-                  //   array_merge( $FrQFT_g_youtube_ary_Lepton, array( name => 'OM:FrQFT:Lepton:Vortext:Ani-Lepton'))),
-                  array( 'figure',
-                    array_merge( $FrQFT_g_figure_ary_Lepton_highRes, array( name => 'OM:FrQFT:Lepton:Vortext:Ani-Lepton'))),
                 )
           ); ?>
 		    	<br>
