@@ -92,7 +92,7 @@
                         'Daraus resultieren dann, bei fortschreitender Zerlegung,  immer einheitlichere Bestandteile, die sich auch mit immer einheitlicherer Geschwindigkeit bewegen.'."\n".
                           'Wegen des \\jump{OM:FrQFT:FirstPrinciples:Vortext:Dynamikprinzip}{Dynamikprinzips} mit konstanter endlicher Geschwindigkeit.',
                         'Die Geschwindigkeit der Bestandteile ist nicht in ihrer Richtung eingeschränkt.'."\n".
-                          'Denn durch den Neheh-Aspekt des Existenzprinzips wird klar, die Bewegungsrichtung muss im Kreis laufen.',
+                          'Denn durch den Neheh-Aspekt des Existenzprinzips wird klar, die Bewegungsrichtung muss im Kreis laufen können.',
                     ))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
                                            
@@ -165,12 +165,12 @@
                   array( 'text', array( text => array(
                     'Nach dem \\jump{OM:FrQFT:FirstPrinciples:Vortext:Vereinfachungsprinzip}{Vereinfachungsprinzip} haben wir es bei extremer Auflösung, in der Fraktalebene unterhalb der Photonen – der Lichtteilchen –,'."\n".
                     'mit ziemlich einheitlichen Bestandteilen unserer Natur zu tun.'."\n".
-                    'Die Einheitlichkeit der Bestandteile resultiert demnach auch in ihrer konstanten Geschwindigkeit.'."\n".
+                    'Die Einheitlichkeit der Bestandteile resultiert demnach auch in ihrer konstanten Geschwindigkeit, ihrer konstanten Energie und ihrer konstanten Masse.'."\n".
                     'Das \\jump{OM:FrQFT:FirstPrinciples:Vortext:Eigenschaftsprinzip}{Eigenschaftsprinzip} wiederum besagt, das alle Eigenschaften der Dinge aus ihrer Struktur entstehen.'."\n",
-                      'Das Abzählprinzip erkennt, das zwei wesentliche Eigenschaften der Dinge, ihre Masse und ihre Energie, einfach auf der Anzahl \\term{n_{wq}}'."\n".
-                    'der einheitlichen Bestandteile beruhen, die zu einem Ding gehören, deren Zusammenhang das Ding formen.'."\n".
-                    'Damit ist jedes im Grunde einheitliche Bestandteil, jedes Fundamentalteilchen, eines Dings eine konstante Masseneinheit \\term{m_{wq}}'."\n".
-                    'oder eine konstante Energieeinheit \\term{E_{wq}} (allgemeiner in Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-EnergieSumWQEnergie} beschrieben):'."\n"))),
+                      'Das Abzählprinzip erkennt, dass die Energie und die Masse eines Dings einfach auf der Anzahl \\term{n_{wq}}'."\n".
+                    'der einheitlichen Bestandteile beruhen, die zu ihm gehören, deren Zusammenhang das Ding formen.'."\n".
+                    'Jedes im Grunde einheitliche Bestandteil, jedes Fundamentalteilchen, eines Dings ist also eine konstante Energieeinheit \\term{E_{wq}}'."\n".
+                    'oder eine konstante Masseneinheit \\term{m_{wq}} (allgemeiner in Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-EnergieSumWQEnergie} beschrieben):'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'FP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E  =  n_{wq} \cdot E_{wq}  }',
@@ -179,10 +179,12 @@
                                                label_name => 'OM:FrQFT:FirstPrinciples:Vortext:Equ-EMasseSumWQEnergie', label_text => '\\name{OM:FrQFT:FirstPrinciples:Vortext:Equ-EMasseSumWQEnergie}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Energieeinheit passt auch sehr plausibel zu deren konstanten Geschwindigkeit.'."\n",
-                      'Ist das Ding ein Elementarteilchen, dann äußert sich die Abzählbarkeit seiner einheitlichen Bestandteile bei der Messung seiner Energie \\term{E_{ele}} oder seines Impulses.'."\n".
-                    'In der \\jump{OM:FrQFT:HeisenbergUnschaerfe}{Abzählinterpretation der Heisenbergschen Unschärferelation} spiegelt sich die prinzipielle Unschärfe einer solchen Abzählung wider,'."\n".
-                    'wenn wir davon ausgehen, dass es bei der Energie um die Zählung von einheitlichen Wirkungen \\term{h} (Plancksches Wirkungsquantum) pro Zeit geht.'."\n"))),
+                    'Die Energieeinheit passt auch sehr plausibel zu deren konstanten Geschwindigkeit.'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Abgeleitete fundamentale Zusammhänge} \\\\'."\n".
+                    'Ist das Ding ein Elementarteilchen, dann zeigt sich die Abzählbarkeit seiner einheitlichen Bestandteile bei der Messung seiner Energie \\term{E_{ele}} oder seines Impulses \\term{p_{ele}} in der Heisenbergschen Unschärferelation.'."\n".
+                    'Denn in der \\jump{OM:FrQFT:HeisenbergUnschaerfe}{Abzählinterpretation der Heisenbergschen Unschärferelation} spiegelt sich die prinzipielle Unschärfe einer solchen Abzählung wider,'."\n".
+                    'wenn wir davon ausgehen, dass es bei der Energie um die Zählung von einheitlichen Wirkungen \\term{h} (Plancksches Wirkungsquantum) pro Zeit und beim Impuls um \\term{h} pro Strecke geht.'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                       'Die in der Abzählinterpretation der Heisenbergschen Unschärferelation gezählten diskreten Wirkungen \\term{h} entsprechen den genannten einheitlichen Fundamentalteilchen'."\n".
@@ -198,7 +200,8 @@
                                                footnote => 'Vgl. \\cite{wiki:PlanckschesWirkungsquantum2013}, Definition.'),
                     ))),
                   array( 'text', array( text => array(
-                    'Auch ist ersichtlich, dass es sich bei der Masse und der Energie eines Dings im Grunde um das gleiche handelt, was zur Äquivalenz von Masse und Energie führt.'."\n".
+                    'Aus den Formeln \\jumpname{OM:FrQFT:FirstPrinciples:Vortext:Equ-EnergieSumWQEnergie} und \\jumpname{OM:FrQFT:FirstPrinciples:Vortext:Equ-EMasseSumWQEnergie} ist auch ersichtlich,'."\n".
+                    'dass es sich bei der Masse und der Energie eines Dings im Grunde um das gleiche handelt, was zur Äquivalenz von Masse und Energie führt.'."\n".
                     'Einsteins berühmte Formel ergibt sich hieraus also selbstredend, weil die Proportionalitätskonstante offensichtlich \\hidden{\\latexmath{ {_{\lowZero}c^{2}} }}\\term{_{0}c^{2}} ist,'."\n".
                     'wie wir aus vielen experimentellen Beobachtungen wissen.\\footnote{Die Äquivalenz von Masse und Energie ist keine reine Erkenntnis der Relativitätstheorie und eben auch in vielen verschiedenen Experimenten aus der Quantenphysik bestätigt: \\\\ \\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AequivalenzVonMasseUndEnergie2013}.}'."\n".
                     'Ich sehe keinen Grund eine andere Proportionalität anzunehmen:'."\n"))),
@@ -209,7 +212,21 @@
                                                footnote => '\\const{FrQFT_g_footnote_text_AequivalMasseEnergie}'),
                     ))),
                   array( 'text', array( text => array(
-                    'Einsteins Allgemeingültigkeit der Äquivalenz von Masse und Energie gehört also zum Ausgangspunkt der fraktalen Quanten-Fluss-Theorie.'."\n"))),
+                    'Einsteins Allgemeingültigkeit der Äquivalenz von Masse und Energie gehört also aus strukturellen Gründen zum Ausgangspunkt der fraktalen Quanten-Fluss-Theorie.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
+                                           
+                'String-Prinzip', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'Aus dem Existenzprinzip und dem Abzählprinzip folgt(???), dass es sich bei Elementarteilchen um rotierende Wirkungsquanten-Strings handeln muss.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
                                            
                 'Modellprinzip', subline =>
@@ -250,7 +267,6 @@
                     'mit \\jump{OM:SpaLeb:Bewusstsein:Vortext:RudimentaeresBewusstsein}{rudimentärem Bewusstsein} oder'."\n".
                     '\\jump{OM:SpaLeb:Bewusstsein:Vortext:KognitivesBewusstsein}{kognitivem Bewusstsein} weiterentwickeln.'."\n"))),
                     ))),
-                      
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
                                            
                 'XXX', subline =>
