@@ -196,8 +196,8 @@
     //echo '      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">'."\n";
     // #: MathJax 2.7.1: CDN host moved from "cdn.mathjax.org" to "cdnjs.cloudflare.com". See: https://www.mathjax.org/cdn-shutting-down/
     //echo '      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">'."\n";
-    echo '      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML">'."\n";
-    //-- echo '      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.8/MathJax.js?config=TeX-AMS_HTML">'."\n";  // !!!: Not working!
+    //-- echo '      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML">'."\n";
+    echo '      src="https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-AMS_HTML">'."\n";  // #: Different CDN network.
     echo '    </script>'."\n";
     // #!: Does not work for scaling!
     //echo '    <style>'."\n";
