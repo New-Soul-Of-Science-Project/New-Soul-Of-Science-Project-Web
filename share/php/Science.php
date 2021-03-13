@@ -180,11 +180,12 @@
     echo '          }'."\n";
     echo '        },'."\n";
     echo '        menuSettings: {'."\n";
-    echo '          zoom: "Hover",'."\n";  // !!!: Not working on Safari, but on FireFox. May this is, because I have set it manually before in Safari and that overwrites? Test on other Macs!
+    //-- echo '          zoom: "Hover",'."\n";  // !!!: Not working on Safari, but on FireFox. May this is, because I have set it manually before in Safari and that overwrites? Test on other Macs!
+    echo '          zoom: "Double-Click",'."\n";  // !!!: Not working on Safari, but on FireFox. May this is, because I have set it manually before in Safari and that overwrites? Test on other Macs!
     echo '          zscale: "200%"'."\n";  // !!!: This works on Safari and FireFox.
     echo '        },'."\n";
     echo '        MathEvents: {'."\n";
-    echo '          hover: 1000'."\n";
+    //-- echo '          hover: 1000'."\n";
     echo '        }'."\n";
     echo '      });'."\n";
     echo '    </script>'."\n";
