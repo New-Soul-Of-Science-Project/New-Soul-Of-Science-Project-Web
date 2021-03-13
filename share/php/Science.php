@@ -139,9 +139,10 @@
     global $Glo_PathRel_back;
     
     To_f_HeaderElements();
+    
     echo ''."\n";
     // #: MathJax
-    echo '    <!-- MathJax -->'."\n";
+    echo '    <!-- MathJax 2 -->'."\n";
     echo '    <script type="text/x-mathjax-config">'."\n";
     // #: See: http://docs.mathjax.org/en/latest/tex.html and http://docs.mathjax.org/en/latest/configuration.html
     // #: MathJax 2.5
@@ -200,6 +201,60 @@
     //echo '        font-size: 200%;'."\n";
     //echo '      }'."\n";
     //echo '    </style>'."\n";
+    
+    /*
+    echo ''."\n";
+    // #: MathJax
+    //
+    echo '    <!-- MathJax 3 -->'."\n";
+    // #: Parameter converted from v2 to v3 on page https://mathjax.github.io/MathJax-demos-web/convert-configuration/convert-configuration.html
+    // !!!!!!!!!!!  CommonHTML dosen't work properly  –  looks not nice and patly destroyed  !!!!!!!!!!
+    // couldn't figure out why
+    // SVG works, but looks not as nice as v2
+    echo '    <script>'."\n";
+    echo '      window.MathJax = {'."\n";
+    // echo '        tex: {'."\n";
+    // echo '          inlineMath: [['$', '$'], ['\\(', '\\)']]'."\n";
+    // echo '        }'."\n";
+    echo '        tex: {'."\n";
+    echo '          autoload: {'."\n";
+    echo '            color: [],          // don\'t autoload the color extension'."\n";
+    echo '            colorv2: ["color"], // do autoload the colorv2 extension'."\n";
+    echo '          },'."\n";
+    // echo '          processEscapes: true,'."\n";  // default in v3
+    echo '          macros: {'."\n";
+    echo '            lowZero: "\\\\raise -.3ex 0",'."\n";
+    echo '            MDo: "\\\\mathrm{\\\\downarrow}",'."\n";
+    echo '            MUp: "\\\\mathrm{\\\\uparrow}",'."\n";
+    echo '            MLe: ["\\\\overset{\\\\leftarrow}{#1}", 1],'."\n";
+    echo '            MRi: ["\\\\overset{\\\\rightarrow}{#1}", 1],'."\n";
+    echo '            PdDown: "\\\\MDo{}\\\\MLe{d}^{-\\\\frac{1}{3}}",'."\n";
+    echo '            PuUp: "\\\\MUp{}\\\\MRi{u}^{+\\\\frac{2}{3}}"'."\n";
+    echo '          },'."\n";
+    echo '          packages: {"[+]": ["noerrors", "color"]}'."\n";
+    echo '        },'."\n";
+    echo '        options: {'."\n";
+    echo '          menuOptions: {'."\n";
+    echo '            settings: {'."\n";
+    echo '              zoom: "Double-Click",'."\n";
+    echo '              zscale: "200%"'."\n";
+    echo '            }'."\n";
+    echo '          },'."\n";
+    echo '          ignoreHtmlClass: "tex2jax_ignore",'."\n";
+    echo '          processHtmlClass: "tex2jax_process"'."\n";
+    echo '        },'."\n";
+    echo '        loader: {'."\n";
+    echo '          load: ["[tex]/noerrors", "[tex]/color"]'."\n";
+    echo '        }'."\n";
+    echo '      };'."\n";
+    echo '    </script>'."\n";
+    echo '    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>'."\n";
+    echo '    <script id="MathJax-script" async'."\n";
+    // echo '      src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js">'."\n";
+    // echo '      src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-chtml.js">'."\n";
+    echo '      src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-svg.js">'."\n";  // #: SVG
+    echo '    </script>'."\n";
+    */
   }
   
   
