@@ -282,13 +282,13 @@
                     'ordnet die Orientierungen und die Vorzeichen der Spins den Teilchen und Antiteilchen in einer Konvention zu.'."\n".
                     'Dabei gibt es die dort dargestellten, folgenden Möglichkeiten:'."\n"),
                   array( 'normal',
-                    '\\latexmath[][Google]{  \mathrm{\uparrow}\overset{\rightarrow}{x}  },'."\n".
-                    '\\latexmath[][Google]{  \mathrm{\downarrow}\overset{\leftarrow}{x}  },'."\n".
-                    '\\latexmath[][Google]{  \mathrm{\uparrow}\overset{\leftarrow}{\overline{x}}  } und'."\n".
-                    '\\latexmath[][Google]{  \mathrm{\downarrow}\overset{\rightarrow}{\overline{x}}  }.'."\n"),
+                    '\\latexmath{  \mathrm{\uparrow}\overset{\rightarrow}{x}  },'."\n".
+                    '\\latexmath{  \mathrm{\downarrow}\overset{\leftarrow}{x}  },'."\n".
+                    '\\latexmath{  \mathrm{\uparrow}\overset{\leftarrow}{\overline{x}}  } und'."\n".
+                    '\\latexmath{  \mathrm{\downarrow}\overset{\rightarrow}{\overline{x}}  }.'."\n"),
                   array( 'normal',
-                    'Die vertikalen Pfeile ↓ und ↑ stehen für den negativen (down) und positiven (up) äußeren Spin.'."\n".
-                    'Die horizontalen Pfeile ← und → stehen für den negativen (backward) und positiven (forward) inneren Spin.'."\n".
+                    'Die vertikalen Pfeile \\latexmath{\downarrow} und \\latexmath{\uparrow} stehen für den negativen (down) und positiven (up) äußeren Spin.'."\n".
+                    'Die horizontalen Pfeile \\latexmath{\leftarrow} und \\latexmath{\rightarrow} stehen für den negativen (backward) und positiven (forward) inneren Spin.'."\n".
                     'Die Orientierungen der Rotationen sind absolut im Raum definiert. \\\\'."\n".
                     'Bei der ersten und der zweiten Variante handelt es sich um das gleiche Teilchen, welches im Raum um 180° gedreht ist.'."\n".
                     'Die dritte und vierte Variante ist das dazugehörige Antiteilchen – durch den Balken gekennzeichnet –,'."\n".

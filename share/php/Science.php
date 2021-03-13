@@ -164,7 +164,7 @@
     echo '        jax: ["input/TeX", "output/HTML-CSS", "output/PreviewHTML"],'."\n";
     echo '        extensions: ["tex2jax.js","MathZoom.js"],'."\n";
     echo '        tex2jax: {'."\n";
-    //-- echo '            inlineMath: [ ["$","$"], ["\\\\(","\\\\)"] ],'."\n";
+    echo '            inlineMath: [ ["$","$"], ["\\\\(","\\\\)"] ],'."\n";
     echo '            processEscapes: true,'."\n";
     echo '            preview: ["[MathJax]"]'."\n";
     echo '          },'."\n";
@@ -213,14 +213,12 @@
     // SVG works, but looks not as nice as v2
     echo '    <script>'."\n";
     echo '      window.MathJax = {'."\n";
-    // echo '        tex: {'."\n";
-    // echo '          inlineMath: [['$', '$'], ['\\(', '\\)']]'."\n";
-    // echo '        }'."\n";
     echo '        tex: {'."\n";
     echo '          autoload: {'."\n";
     echo '            color: [],          // don\'t autoload the color extension'."\n";
     echo '            colorv2: ["color"], // do autoload the colorv2 extension'."\n";
     echo '          },'."\n";
+    echo '          inlineMath: [ ["$","$"], ["\\\\(","\\\\)"] ],'."\n";
     // echo '          processEscapes: true,'."\n";  // default in v3
     echo '          macros: {'."\n";
     echo '            lowZero: "\\\\raise -.3ex 0",'."\n";
