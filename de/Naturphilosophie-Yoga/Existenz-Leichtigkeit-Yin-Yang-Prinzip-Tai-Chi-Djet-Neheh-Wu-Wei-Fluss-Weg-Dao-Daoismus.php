@@ -51,7 +51,7 @@
                     'Das Existenzprinzip ist verbunden mit dem von mir entdeckten \\jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{Djet-Neheh-Dualismus}'."\n".
                     'und der \\jump{OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung}{Farbpolarisation} der Quantenphysik.'."\n",
                       'Demnach kommt zur Existenz, was aus Bestandteilen gebildet wird, die in einem Zusammenhang stehen.'."\n".
-                    'Da die Bestandteile aus prinzipiellen Gründen am Ende im Kleinen \\jump{OM:FrQFT:FirstPrinciples:Vortext:Dynamikprinzip}{immer in Bewegung} sein '."\n".
+                    'Da die Bestandteile aus prinzipiellen Gründen am Ende im Kleinen \\jump{OM:FrQFT:FirstPrinciples:Vortext:Bewegungsprinzip}{immer in Bewegung} sein '."\n".
                     'müssen – sie fließen beständig –, rotieren Bestandteile, die in einem Zusammenhang stehen, umeinander, in einer Ordnung.'."\n".
                     'Stehen sie nicht in einem Zusammenhang, so bewegen sie sich geradlinig und damit chaotisch durcheinander.'."\n",
                       'Der Zusammenhang entsteht durch die Polarisation der Bestandteile.'."\n".

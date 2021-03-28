@@ -387,6 +387,9 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Neuinterpretation benötigt Relativierung von Denktabus')),
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '• Vielleicht besser Denkbarrieren?',
+                    ))),
                   array( 'text', array( text => array(
                     'Um dies abschließend zu erreichen, kommen wir nicht umhin, uns die ein oder andere Einsicht und Neuinterpretation zu erarbeiten und so liebgewonnene Denktabus zu relativieren.'."\n".
                     'Und hierbei müssen wir uns auch noch – mühevollerweise – von mehreren voneinander abhängigen Denktabus nacheinander lösen.'."\n",

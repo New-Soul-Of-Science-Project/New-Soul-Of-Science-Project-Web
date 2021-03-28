@@ -23,26 +23,35 @@
                   array( 'text', array( text => array(
                     'In der \\italic{\\jumpname{OM:FrQFT:Einleitung}} sowie auf den daran anschließenden Seiten \\italic{\\jumpname{OM:FrQFT:WasIstPhysik}} und \\italic{\\jumpname{OM:FrQFT:WieMessenWirInDerPhysik}}'."\n".
                     'leite ich Grundprinzipien oder Naturprinzipien – sogenannte First-Principles – der Physik her.'."\n".
-                    'Die nachfolgend aufgeführten Naturprinzipien sollen ohne Einschränkung gelten.'."\n"))),
+                    'Die nachfolgend aufgeführten Naturprinzipien gelten ohne Einschränkung.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
                                            
                 'Warum ein Naturprinzip?', subline =>
                   '… und keine Weltformel?')),
                   array( 'text', array( text => array(
-                    'Diesem Vorgehen liegt meine Annahme zugrunde, dass die Natur nicht mit der Mathematik einer Formel beschrieben werden kann.'."\n".
+                    'Diesem Vorgehen liegt meine Annahme zugrunde, dass die Natur nicht mit der Mathematik in einer einzigen Formel beschrieben werden kann.'."\n".
                     'Die Mathematik kann, nach meinem jetzigen Wissen, nur Erscheinungen beschreiben, die sich aus einem emergenten Phänomen ergeben, welches sich bei'."\n".
                     'recht festen Bedingungen zeigt.'."\n".
                     'Findet aufgrund stark geänderter Bedingungen ein sogennanter Phasenübergang statt, dann ändern sich die emergenten Phänomene oft so grundlegend,'."\n".
                     'dass sie nicht mit den selben Formeln beschreibbar erscheinen. \\color{*Bearb}{(Vgl. Mäder, Alexander. WISSENSCHAFTSPHILOSOPHIE. Wie universell sind Naturgesetze? SdW 2.20, S. 82-85.)}'."\n",
                       'Ein Ansatz, der die Physik aus einem Naturprinzip heraus beschreibt, bietet die Möglichkeit, einen Grundrahmen der Interpretation des Geschehens zu schaffen'."\n".
                     'und auf dessen Basis die Beobachtungen zu deuten und in ein entsprechendes Szenario einzubetten.'."\n".
-                    'Anschließend lässt sich feststellen, ob die sich aus allen Beobachtungen ergebenden Szenarien auf diese Weise logisch, plausibel ineinandergreifen.'."\n",
+                    'Anschließend lässt sich feststellen, ob die sich aus allen Beobachtungen ergebenden Szenarien auf diese Weise logisch plausibel ineinandergreifen.'."\n",
                       'Das bedeutet, das generelle Naturprinzip und seine ergänzenden Naturprinzipien beschreiben die Natur nicht vollständig in jedem Detail.'."\n".
-                    'Mit ihrer Hilfe ist aber aufgrund der Beobachungen ein Schluss auf die unterschiedlichen Szenarien möglich.'."\n"))),
+                    'Mit ihrer Hilfe ist aber aufgrund der Beobachtungen ein Schluss auf die unterschiedlichen Szenarien möglich.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:Bewegungsprinzip', text =>
+                                           
+                'Bewegungsprinzip', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Physik macht nur Sinn, wenn sich die Eigenschaften der Dinge verändern können, ihre Bestandteile also in einem dynamischen Zusammenhang stehen und sich'."\n".
+                    'daher \\jump{OM:FrQFT:WasIstPhysik:Vortext:WarumDynamStrukt}{immer bewegen}.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
                                            
                 'Strukturprinzip', subline =>
                   '')),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{Hier geht es um die gesamte dynamische Struktur und um die innere dynamische Struktur, die ja ausgedehnt sein muss, siehe Farbladung.}'."\n"))),
                   array( 'text', array( text => array(
                     'Dies ist das generelle Naturprinzip.'."\n".
                     'Es besagt, dass die Natur ausschließlich auf in sich wechselwirkender dynamischer Struktur beruht.'."\n"))),
@@ -67,34 +76,31 @@
                         'Djet-Aspekt (Chaos): Bewegen sie sich unabhängig voneinander, dann gehören sie nicht zum selben Ding.',
                     ))),
                   array( 'text', array( text => array(
-                    'Nur auf diese Weise können wir Existenz feststellen.\\footnote[*Bearb]{\\color{*Bearb}{Damit, dass Systeme nur im Kontext ihrer Umgebung funktionieren und sich in ihrem Unterschied zu dieser definieren, über ihre Differenz, hat \\jump[https://de.wikipedia.org/wiki/Niklas_Luhmann]{}{Niklas Luhmann} sich ausgiebig in der \\jump[https://de.wikipedia.org/wiki/Systemtheorie_(Luhmann)]{}{Luhmannschen Systemtheorie} beschäftigt. \\\\ Weitere Quellen dazu: \\\\ Videos: \\\\ \\jump[https://www.youtube.com/watch?v=_J-8lrTW9Fc]{}{Niklas Luhmann: Systemtheorie} \\\\ \\jump[https://www.youtube.com/watch?v=Bg7ijbjvcm8]{}{Philosophisches Gespräch: Niklas Luhmann. Die unwahrscheinliche Gesellschaft} }}'."\n"))),
+                    'Nur auf diese Weise können wir Existenz feststellen.\\footnote[*Bearb]{\\color{*Bearb}{Damit, dass Systeme nur im Kontext ihrer Umgebung über ihre Differenz zu dieser funktionieren und sich in ihrem Unterschied zu dieser definieren, hat \\jump[https://de.wikipedia.org/wiki/Niklas_Luhmann]{}{Niklas Luhmann} sich ausgiebig in der \\jump[https://de.wikipedia.org/wiki/Systemtheorie_(Luhmann)]{}{Luhmannschen Systemtheorie} beschäftigt. \\\\ Weitere Quellen dazu: \\\\ Videos: \\\\ \\jump[https://www.youtube.com/watch?v=_J-8lrTW9Fc]{}{Niklas Luhmann: Systemtheorie} \\\\ \\jump[https://www.youtube.com/watch?v=Bg7ijbjvcm8]{}{Philosophisches Gespräch: Niklas Luhmann. Die unwahrscheinliche Gesellschaft} }}'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:Eigenschaftsprinzip', text =>
                                            
                 'Eigenschaftsprinzip', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die Dinge haben immer Eigenschaften und diese ergeben sich ausschließlich aus der dynamischen Struktur ihrer Bestandteile.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:Dynamikprinzip', text =>
-                                           
-                'Dynamikprinzip', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'Physik macht nur Sinn, wenn sich die Eigenschaften der Dinge verändern können, ihre Bestandteile also in einem dynamischen Zusammenhang stehen und sich'."\n".
-                    'daher \\jump{OM:FrQFT:WasIstPhysik:Vortext:WarumDynamStrukt}{immer bewegen}.'."\n"))),
+                    'Die Dinge haben immer Eigenschaften und diese ergeben sich ausschließlich aus der dynamischen Struktur ihrer Bestandteile.'."\n",
+                    '\\color{*Bearb}{Ausschließlich aus dem dynamischen Verhalten der Bestandteile der Dinge ergeben sich deren Eigenschaften. Dieses Verhalten ist Ausdruck der gesamten dynamischen Struktur.}'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:Vereinfachungsprinzip', text =>
                                            
                 'Vereinfachungsprinzip', subline =>
                   '')),
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '• Vielleicht besser Entkopplungsprinzip?',
+                    ))),
                   array( 'text', array( text => array(
                     'Wenn wir die Dinge in ihre Bestandteile zerlegen, dann müssen die Bestandteile am Ende immer einfacher werden, denn sie verlieren ihren Zusammenhang.'."\n".
                     'Und der Zusammenhang ihrer Bestandteile ist es, der die Dinge kompliziert oder komplex macht.'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Daraus resultieren dann, bei fortschreitender Zerlegung,  immer einheitlichere Bestandteile, die sich auch mit immer einheitlicherer Geschwindigkeit bewegen.'."\n".
-                          'Wegen des \\jump{OM:FrQFT:FirstPrinciples:Vortext:Dynamikprinzip}{Dynamikprinzips} mit konstanter endlicher Geschwindigkeit.',
+                          'Wegen des \\jump{OM:FrQFT:FirstPrinciples:Vortext:Bewegungsprinzip}{Bewegungsprinzips} mit konstanter endlicher Geschwindigkeit.',
                         'Die Geschwindigkeit der Bestandteile ist nicht in ihrer Richtung eingeschränkt.'."\n".
                           'Denn durch den Neheh-Aspekt des Existenzprinzips wird klar, die Bewegungsrichtung muss im Kreis laufen können.',
                     ))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:Fraktalitaetsprinzip', text =>
                                            
                 'Fraktalitätsprinzip', subline =>
                   '')),
@@ -191,7 +197,7 @@
                       'der Elementarteilchen, weshalb ich diese \\bold{Wirkungsquanten (wq)} nenne.'."\n"))),
                                                       
                   array( 'text', array( text => array(
-                    'Hieraus ergibt sich dann Plancks allgemeine Proportionalität von Energie und de-Broglie-Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}}'."\n".
+                    'Hieraus ergibt sich dann Plancks allgemeine Proportionalität von Energie und De-Broglie-Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}}'."\n".
                     'der Elementarteilchen, die uns auch in Form der ›Einsteinschen Gleichung für das Lichtquant‹\\footnote{\\const{FrQFT_g_footnote_text_EinsteinGleichLichtq}} bekannt ist:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'FP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -217,6 +223,9 @@
                                            
                 'String-Prinzip', subline =>
                   '')),
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '• Siehe auch Regelprozess-Prinzip.',
+                    ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
@@ -252,6 +261,9 @@
                                            
                 'Regelprozess-Prinzip', subline =>
                   '')),
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '• Enthält automatisch das Sombrero-Potenzial, den Symmetriebruch und den Spin sowie auch das String-Prinzip.',
+                    ))),
                   array( 'text', array( text => array(
                     'Die dynamischen Strukturen der Dinge werden durch selbstorganisierte Regelprozesse stabil gehalten, die mit gegeneinander spielenden Wechselwirkungen funktionieren.'."\n".
                     'Diese Regelprozesse halten die Dinge in Form und damit existent oder am Leben.'."\n".
@@ -296,6 +308,212 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                  array( 'fade-in-area', array( Display => 'invis', Title =>
+                '\\color{*Bearb}{Experimentelle Untersuchungen …}', TitleVis =>
+                '\\color{*Bearb}{Experimentelle Untersuchungen:}', ParagraphList => array(
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{In Arbeit …}'."\n"))),
+                  array( 'text', array( text => array(
+                    'Warum ist die Proportionalitätskonstante in der Äquivalenz von Energie und Masse immer \\term{_{0}c^{2}}?'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'Test', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E  =  m \cdot {_{\lowZero}c^{2}}  }'),
+                    ))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\\color{*Bearb}{Dazu passen würde, dass die Mantelflächen der Impulskegel der Wirkungsquanten in der Zeit mit der Flächengeschwindigkeit \\term{_{0}c^{2}} wachsen.}',
+                        'XXX',
+                        'XXX',
+                        'XXX',
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
+                                           
+                'Einsteins Herleitung der Äquivalenz von Energie und Masse', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Nach Einsteins Herleitung der Äquivalenz von Energie und Masse geht es um die Einsicht, dass der Austausch von Energie dem Austausch von Masse gleich kommen muss,'."\n".
+                    'wollen wir die Erhaltung von Energie und Masse sowie die Erhaltung der Bewegung, ohne einen Einfluss von Außen, erfüllen.'."\n".
+                    'Alles zusammen entspricht dem Prinzip der trägen Masse, die ohne Einfluss von außen ihren Bewegungszustand nicht verändert.'."\n",
+                      '(Vgl. Wikipedia: \\jump[https://de.wikipedia.org/w/index.php?title=Äquivalenz_von_Masse_und_Energie&oldid=209175854#cite_note-Einstein1907-10]{}{Äquivalenz von Masse und Energie} — Albert Einstein: Über die vom Relativitätsprinzip geforderte Trägheit der Energie. In: Annalen der Physik. Band 328, Nr. 7, 1907, S. 371–384, doi:\\jump[https://doi.org/10.1002/andp.19073280713]{}{10.1002/andp.19073280713}, bibcode:\\jump[https://ui.adsabs.harvard.edu/abs/1907AnP...328..371E]{}{1907AnP...328..371E} (\\jump[http://www.physik.uni-augsburg.de/annalen/history/einstein-papers/1907_23_371-384.pdf]{}{physik.uni-augsburg.de} [PDF]).)'."\n",
+                      '(Vgl. Wikipedia: \\jump[https://de.wikipedia.org/w/index.php?title=Äquivalenz_von_Masse_und_Energie&oldid=209175854#cite_note-Einstein1906-11]{}{Äquivalenz von Masse und Energie} — Albert Einstein: Das Prinzip von der Erhaltung der Schwerpunktsbewegung und die Trägheit der Energie. In: Annalen der Physik. Band 325, Nr. 8, 1906, S. 627–633, doi:\\jump[https://doi.org/10.1002/andp.19063250814]{}{10.1002/andp.19063250814}, bibcode:\\jump[https://ui.adsabs.harvard.edu/abs/1906AnP...325..627E]{}{1906AnP...325..627E} (\\jump[http://www.physik.uni-augsburg.de/annalen/history/einstein-papers/1906_20_627-633.pdf]{}{physik.uni-augsburg.de} [PDF]).)'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
+                                           
+                'Meine Ideen zur Äquivalenz von Energie sowie träger und schwerer Masse', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Der Begriff Masse ist mit der Konzentration von etwas verbunden, dass sich zu Materie, zu den Dingen, zusammenfügt.'."\n",
+                      'Während der Energiebegriff mit dem Zustand von etwas wie Masse verbunden ist, wie seine Bewegung, seine Lage in einem Potenzial, seine Ladung oder ähnliches, der auch auf anderes übergehen kann.'."\n".
+                    'Der Austausch von Energie ist mittlerweile auch mit dem Austausch elektromagnetischer Strahlung verknüpft, die den Zustand von Materie verändern kann.'."\n",
+                      'Damit ergibt sich Energie aus einer mehr transzendenten Perspektive und die Masse aus einer mehr gegenständlichen.'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Energie} \\\\'."\n".
+                    'Aus Sicht der FrQFT ist die Dynamik, die Bewegung der Feinstruktur der Wirkungsquanten, das, was energetisch ist.'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Masse} \\\\'."\n".
+                    'Aus dieser Sicht ist Masse das, was in der Struktur der Dinge gebunden ist, die in ihren Eigenschaften durch Wechselwirkungen gut manipulierbar sind.'."\n".
+                    'Diese Eigenschaften sind durch die dynamische Struktur bestimmt, die wiederum eine Summe der Menge und Dynamik der einzelnen Bestandteile darstellt, der Feinstruktur.'."\n",
+                      'Die Manipulation geschieht durch den Austausch, das Hinzufügen oder das Wegnehmen von Unterstrukturen.'."\n".
+                    'Dadurch ändert sich die dynamische Struktur der Dinge.'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Träge Masse} \\\\'."\n".
+                    'Der Aspekt der trägen Masse ist nun, dass die äußere Bewegungsdynamik eines Dings eben nur durch das Hinzufügen und Wegnehmen von Unterstrukturen manipulierbar ist.'."\n",
+                      'Wie stark sich die Bewegung eines Dings ändert, wenn ich etwas hinzufüge oder wegnehme, hängt vom Verhältnis der Menge und der Dynamik der Änderung ab.'."\n".
+                    'Das nennen wir Impulserhaltung.'."\n",
+                      'Dadurch erscheinen die Dinge umso träger, je größer ihre Masse ist.'."\n".
+                    'Denn bei einem doppelt so schweren Ding muss ich doppelt so viel Dynamik oder Energie aufwenden, um seine Bewegung im gleichen Maße zu ändern,'."\n".
+                    'wie bei dem Ding einfacher Masse.'."\n".
+                    'Das bedeutet, die Trägheit ist proportional zur Menge an vorhandener Struktur.'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Schwere Masse} \\\\'."\n".
+                    'Genau diese Struktur strahlt aber auch Störungswellen ab, die die Gravitation erzeugen und in ihrer Wirkung auch proportional zur Menge der vorhandenen Struktur sind.'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Äquivalenz von Energie und Masse} \\\\'."\n".
+                    'Das die träge Masse und die schwere Masse beide gleich und proportional zur Menge der vorhandenen Struktur sind und diese wiederum proportional zur Menge der inneren'."\n".
+                    'Dynamik ist, die in der Struktur gebunden ist, führt zur Äquivalenz von Energie und Masse.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
+                                           
+                'Formelle Spielereien', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'Test', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E_{ele}  =  n_{ele,wq} \cdot E_{wq}  }'),
+                      array( display => 'on',  latex => '{  E_{ele}  =  h \cdot f_{ele}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n_{ele,wq} \cdot E_{wq}  =  h \cdot f_{ele}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ n_{ele,wq} }{ h }  =  \frac{ f_{ele} }{ E_{wq} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ h }{ n_{ele,wq} }  =  \frac{ E_{wq} }{ f_{ele} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'Test', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E_{ele}  =  h \cdot f_{ele}  }'),
+                      array( display => 'on',  latex => '{  \omega_{ele}  =  2 \pi \cdot f_{ele}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{ele}  =  \frac{ \omega_{ele} }{ 2 \pi }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  E_{ele}  =  h \cdot \frac{ \omega_{ele} }{ 2 \pi }  }'),
+                      array( display => 'on',  latex => '{  f_{ele,wq}  =  n_{ele,wq} \cdot f_{ele}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{ele}  =  \frac{ f_{ele,wq} }{ n_{ele,wq} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \omega_{ele} }{ 2 \pi }  =  \frac{ f_{ele,wq} }{ n_{ele,wq} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  E_{ele}  =  h \cdot \frac{ f_{ele,wq} }{ n_{ele,wq} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'Test', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E_{ele}  =  n_{ele,wq} \cdot E_{wq}  }'),
+                      array( display => 'on',  latex => '{  E_{ele} \pm \Delta E_{ele}  =  \frac{ \Delta n \cdot h }{ \Delta t } \pm \frac{ h }{ \Delta t }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \left( E_{wq} \pm \Delta E_{wq} \right) \cdot n_{ele,wq}  =  \frac{ \Delta n \cdot h }{ \Delta t } \pm \frac{ h }{ \Delta t }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  E_{wq} \pm \Delta E_{wq}  =  \frac{ \Delta n \cdot h }{ n_{ele,wq} \cdot \Delta t } \pm \frac{ h }{ n_{ele,wq} \cdot \Delta t }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  E_{wq} \pm \Delta E_{wq}  =  \frac{ \Delta n \cdot \frac{ h }{ n_{ele,wq} } }{ \Delta t } \pm \frac{ \frac{ h }{ n_{ele,wq} } }{ \Delta t }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Was passiert mit der Heisenbergschen Unschärfe im Gravitationspotenzial?'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'Test', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E_{ele} \pm \Delta E_{ele}  =  \frac{ \Delta n \cdot h }{ \Delta t } \pm \frac{ h }{ \Delta t }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'Test', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  m  =  n_{wq} \cdot m_{wq}  }'),
+                      array( display => 'on',  latex => '{  E  =  m \cdot {_{\lowZero}c^{2}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  E_{wq}  =  m_{wq} \cdot {_{\lowZero}c^{2}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  E  =  n_{wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'Test', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f_{ele,wq}  =  n_{ele,wq} \cdot f_{ele}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{ele}  =  \frac{ f_{ele,wq} }{ n_{ele,wq} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ h }{ n_{ele,wq} }  =  \frac{ E_{wq} }{ \frac{ f_{ele,wq} }{ n_{ele,wq} } }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ h }{ n_{ele,wq} }  =  \frac{ n_{ele,wq} \cdot E_{wq} }{ f_{ele,wq} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  h  =  \frac{ n_{ele,wq}^{2} \cdot E_{wq} }{ f_{ele,wq} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  h \cdot f_{ele,wq}  =  n_{ele,wq}^{2} \cdot E_{wq}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'Test', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E  =  m \cdot {_{\lowZero}c^{2}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  E  =  n_{wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                    ))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:NeuePhysik'),
