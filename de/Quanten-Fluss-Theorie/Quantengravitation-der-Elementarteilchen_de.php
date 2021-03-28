@@ -88,7 +88,7 @@
                     'wellenförmige Störung seiner Ausbreitungsbahn verursacht und nicht direkt durch die Krümmung des Raums oder der Raumzeit.'."\n",
                       'Diese wellenförmige Störung der Lichtbahnen, und vergleichbarer Bahnen lichtähnlicher Strukturen des Vakuums in der Umgebung einer Masse,'."\n".
                     'bringt allerdings unterschiedliche Energiedichten des Vakuums hervor, die als Raumzeitkrümmung erscheinen (siehe \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Fig-Gravitation-Masse},'."\n".
-                    'wellenförmige Erscheinungen im dem Vakuum eingeprägten Gravitationspotenzial; Energiedichtegradient als Gradient der de-Broglie-Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}} oder de-Broglie-Wellenlänge).'."\n"))),
+                    'wellenförmige Erscheinungen im dem Vakuum eingeprägten Gravitationspotenzial; Energiedichtegradient als Gradient der De-Broglie-Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}} oder De-Broglie-Wellenlänge).'."\n"))),
                       
                   // array( 'youtube',
                   //   array_merge( $FrQFT_g_youtube_ary_VakuumElapson, array( name => 'OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson'))),
@@ -1492,8 +1492,8 @@
                     'Die vorstehende Rechnung führe ich im Abschnitt \\italic{\\jumpname{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld}}'."\n".
                     'auch für die etwas abweichenden Formeln des \\jump{OM:FrQFT:Basisteilchenmodell}{Basisteilchenmodells} durch.'."\n".
                     'Da das Basisteilchenmodell, anders als die Quanten-Fluss-Theorie und die akademische Physik, nicht zwischen der Elementarteilchen-Spin-Frequenz'."\n".
-                    'und der de-Broglie-Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}} der Elementarteilchen unterscheidet, sondern sogar behauptet, beide wären das Gleiche, wird'."\n".
-                    'dort sichtbar, dass das Basisteilchenmodell die de-Broglie-Frequenz im Widerspruch zu den Beobachtungen beschreibt.'."\n",
+                    'und der De-Broglie-Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}} der Elementarteilchen unterscheidet, sondern sogar behauptet, beide wären das Gleiche, wird'."\n".
+                    'dort sichtbar, dass das Basisteilchenmodell die De-Broglie-Frequenz im Widerspruch zu den Beobachtungen beschreibt.'."\n",
                       'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -1504,8 +1504,8 @@
                     'XXX'."\n"))),
                   array( 'text', array( text => array(
                     'Dieses Ergebnis können wir nutzen, um im Folgenden die Lichtgeschwindigkeitsänderung isotrop, also Richtungsunabhängig, zu beschreiben.'."\n",
-                      '\\color{*Bearb}{Im Basisteilchenmodell Gieses beschreibt eine Formel dieser Art die de-Broglie-Frequenz der Elementarteilchen, was den \\jump{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld}{experimentellen Beobachtungen widerspricht}.'."\n".
-                    'In der Quanten-Fluss-Theorie wird die de-Broglie-Frequenz der Elementarteilchen hingegen beobachtungskonform beschrieben.\\color{*Bearb}{(Link)}}'."\n"))),
+                      '\\color{*Bearb}{Im Basisteilchenmodell Gieses beschreibt eine Formel dieser Art die De-Broglie-Frequenz der Elementarteilchen, was den \\jump{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld}{experimentellen Beobachtungen widerspricht}.'."\n".
+                    'In der Quanten-Fluss-Theorie wird die De-Broglie-Frequenz der Elementarteilchen hingegen beobachtungskonform beschrieben.\\color{*Bearb}{(Link)}}'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Laengenkontraktion:XXX', text =>
                                            
                 'Gieses Längenkontraktion im Gravitationsfeld ist korrekt', subline =>

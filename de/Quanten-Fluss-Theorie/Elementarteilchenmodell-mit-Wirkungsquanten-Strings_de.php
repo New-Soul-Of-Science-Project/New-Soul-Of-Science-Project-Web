@@ -15,7 +15,7 @@
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
                     '\\bold{Interessante Aspekte}',
-                    '• Die Materiewelle und die Einstein-de-Broglie-Beziehungen, siehe Wikipedia \\jump[https://de.wikipedia.org/wiki/Materiewelle]{}{Materiewelle}.',
+                    '• Die Materiewelle und die Einstein-De-Broglie-Beziehungen, siehe Wikipedia \\jump[https://de.wikipedia.org/wiki/Materiewelle]{}{Materiewelle}.',
                     '\\bold{Strukturelle Analyse}',
                     '• Windungsanzahl der Doppelspirale des Leptonen-Modells:'."\n".
                       'Die bisher unbekannte Windungsanzahl oder „Sternspitzenanzahl“ könnte ggf. aus folgender Frage beantwortet werden.'."\n".

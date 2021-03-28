@@ -195,7 +195,7 @@
                            text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n_{phase} = n_{wel} / n_{polwel} = 12/2 = 6}.'."\n".
                                    'Die Wirkungsquanten eines Wirkungsquanten-Strings mit wechselnder Wirkungsquanten-Dichte bewegen sich auf einer doppelt geschachtelten, helixförmigen'."\n".
                                    'Spiralbahn um ein gemeinsames Rotationszentrum.'."\n".
-                                   'In der gezeigten Struktur blinkt das Lepton mit der de-Broglie-Frequenz in einem Wechsel zwischen einer positiven'."\n".
+                                   'In der gezeigten Struktur blinkt das Lepton mit der De-Broglie-Frequenz in einem Wechsel zwischen einer positiven'."\n".
                                    'und einer gleich großen negativen Polarisation und ist damit ohne elektrische Ladung.'."\n".
                                    'Aus weitem Blickwinkel erscheint das Lepton im Mittel vornehmlich elektrisch neutral, während von nahem die differenzierte'."\n".
                                    'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
