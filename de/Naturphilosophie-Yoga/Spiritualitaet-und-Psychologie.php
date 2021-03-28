@@ -26,9 +26,9 @@
                     '• »Wisst ihr nicht, dass ihr alle Götter seid?« - hermetischer Aphorismus von Hermes Trismegistos (siehe Ordner gleichen Namens)',
                     '⋅ Es ist eine Aufforderung, dass göttliche in sich selber zu sehen, das Potenzial zur Heilung.',
                     '\\bold{Die Welt zum Besseren verändern}',
-                    '• Die Vereinigung der konsensualen Anarchie (no rulers/masters and no slaves, keine Herren/Meister und keine Sklaven) mit New Age, siehe \\jump{https://www.youtube.com/watch?v=yUGJv2BqoM4&list=UUnYAKmlbcxhpXCR5KIAyqKw&index=53}{Mark Passio - Anarchie & Okkultismus - Teil II - Religion vs Initiation}.',
-                    '• Die beiden spirituellen Währungen Zeit und Aufmerksamkeit (sehendes Auge), siehe \\jump{https://www.youtube.com/watch?v=OU4EXX5IUeM}{Mark Passio - Das wahre Gesetz der Anziehung - Natural Law / Naturgesetze 2/3 deutsch}.',
-                    '• Unser Fokus (Aufmerksamkeit, achtsam, Achtsamkeit, Zeit) – Wohin wir fokussieren, was wir „sehen“ und uns bewusst wird, das können wir verändern – der Schöpfer, Genesis (sehendes Auge), siehe \\jump{https://www.youtube.com/watch?v=OU4EXX5IUeM}{Mark Passio - Das wahre Gesetz der Anziehung - Natural Law / Naturgesetze 2/3 deutsch}.',
+                    '• Die Vereinigung der konsensualen Anarchie (no rulers/masters and no slaves, keine Herren/Meister und keine Sklaven) mit New Age, siehe \\jump[https://www.youtube.com/watch?v=yUGJv2BqoM4&list=UUnYAKmlbcxhpXCR5KIAyqKw&index=53]{}{Mark Passio - Anarchie & Okkultismus - Teil II - Religion vs Initiation}.',
+                    '• Die beiden spirituellen Währungen Zeit und Aufmerksamkeit (sehendes Auge), siehe \\jump[https://www.youtube.com/watch?v=OU4EXX5IUeM]{}{Mark Passio - Das wahre Gesetz der Anziehung - Natural Law / Naturgesetze 2/3 deutsch}.',
+                    '• Unser Fokus (Aufmerksamkeit, achtsam, Achtsamkeit, Zeit) – Wohin wir fokussieren, was wir „sehen“ und uns bewusst wird, das können wir verändern – der Schöpfer, Genesis (sehendes Auge), siehe \\jump[https://www.youtube.com/watch?v=OU4EXX5IUeM]{}{Mark Passio - Das wahre Gesetz der Anziehung - Natural Law / Naturgesetze 2/3 deutsch}.',
                     ))),
                       
                   array( 'text', array( text => array(
