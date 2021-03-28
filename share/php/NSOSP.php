@@ -363,7 +363,7 @@
                                                          text => '\\color{*Bearb}{(Die Grafik enthält einen Rechenfehler und muss korrigiert werden! \\term{r_{gr}} muss in \\term{r_{wq}} umbenannt werden.)} Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n_{phase} = n_{wel} / n_{polwel} = 6/1 = 6}.'."\n".
                                                                  'Die Wirkungsquanten eines Wirkungsquanten-Strings mit wechselnder Wirkungsquanten-Dichte bewegen sich auf einer doppelt geschachtelten, helixförmigen'."\n".
                                                                  'Spiralbahn um ein gemeinsames Rotationszentrum.'."\n".
-                                                                 'In der gezeigten Struktur blinkt das Lepton mit der de-Broglie-Frequenz in einem Wechsel zwischen einer leicht positiven'."\n".
+                                                                 'In der gezeigten Struktur blinkt das Lepton mit der De-Broglie-Frequenz in einem Wechsel zwischen einer leicht positiven'."\n".
                                                                  'und einer stärker negativen Polarisation und damit elektrischen Ladung.'."\n".
                                                                  'Aus weitem Blickwinkel erscheint das Lepton im Mittel vornehmlich elektrisch negativ geladen, während von nahem die differenzierte'."\n".
                                                                  'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
@@ -373,7 +373,7 @@
                                                          text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n_{phase} = n_{wel} / n_{polwel} = 12/2 = 6}.'."\n".
                                                                  'Die Wirkungsquanten eines Wirkungsquanten-Strings mit wechselnder Wirkungsquanten-Dichte bewegen sich auf einer doppelt geschachtelten, helixförmigen'."\n".
                                                                  'Spiralbahn um ein gemeinsames Rotationszentrum.'."\n".
-                                                                 'In der gezeigten Struktur blinkt das Lepton mit der de-Broglie-Frequenz in einem Wechsel zwischen einer positiven'."\n".
+                                                                 'In der gezeigten Struktur blinkt das Lepton mit der De-Broglie-Frequenz in einem Wechsel zwischen einer positiven'."\n".
                                                                  'und einer gleich großen negativen Polarisation und ist damit ohne elektrische Ladung.'."\n".
                                                                  'Aus weitem Blickwinkel erscheint das Lepton im Mittel vornehmlich elektrisch neutral, während von nahem die differenzierte'."\n".
                                                                  'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
@@ -627,6 +627,9 @@
                              '*ContentItemDisabled'   => array( color => 'A0A0A0'),
                              '*TitleAdd'              => array( color => '808080'),
                              '*CloserDesc'            => array( color => '*Conclusion'),  // #: Blau
+                             '*WirkungsquantenRot'    => array( color => 'D00000'),
+                             '*LichtbahnGruen'        => array( color => '00D000'),
+                             '*SpinBahnBlau'          => array( color => '0000D0'),
                            ), $Glo_g_Color_list);
   
   
@@ -1063,8 +1066,9 @@
                                                          
                                                 'OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip' => array( headline_text => 'Existenzprinzip', headline_text_short => 'Existenzprinzip'),
                                                 'OM:FrQFT:FirstPrinciples:Vortext:Eigenschaftsprinzip' => array( headline_text => 'Eigenschaftsprinzip', headline_text_short => 'Eigenschaftsprinzip'),
-                                                'OM:FrQFT:FirstPrinciples:Vortext:Dynamikprinzip' => array( headline_text => 'Dynamikprinzip', headline_text_short => 'Dynamikprinzip'),
+                                                'OM:FrQFT:FirstPrinciples:Vortext:Bewegungsprinzip' => array( headline_text => 'Bewegungsprinzip', headline_text_short => 'Bewegungsprinzip'),
                                                 'OM:FrQFT:FirstPrinciples:Vortext:Vereinfachungsprinzip' => array( headline_text => 'Vereinfachungsprinzip', headline_text_short => 'Vereinfachungsprinzip'),
+                                                'OM:FrQFT:FirstPrinciples:Vortext:Fraktalitaetsprinzip' => array( headline_text => 'Fraktalitätsprinzip', headline_text_short => 'Fraktalitätsprinzip'),
                                                 'OM:FrQFT:FirstPrinciples:Vortext:Abzählprinzip' => array( headline_text => 'Abzählprinzip', headline_text_short => 'Abzählprinzip'),
                                                 'OM:FrQFT:FirstPrinciples:Vortext:Equ-EnergieSumWQEnergie' => array( headline_text => 'FP.1'),
                                                 'OM:FrQFT:FirstPrinciples:Vortext:Equ-EMasseSumWQEnergie' => array( headline_text => $nSOSp_g_formelName_FP_2),
@@ -1143,7 +1147,19 @@
                                               'OM:FrQFT:Lepton:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
                                                          
-                                                'OM:FrQFT:Lepton:Vortext:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
+                                                'OM:FrQFT:Lepton:Vortext:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx)),
+                                                'OM:FrQFT:Lepton:Vortext:Equ-LG-aus-Frequenz-Lambda' => array( headline_text => 'Lep.Mod.1'),
+                                                'OM:FrQFT:Lepton:Vortext:Equ-EinsteinEnergieLichtQuant' => array( headline_text => $nSOSp_g_formelName_FP_2),
+                                                'OM:FrQFT:Lepton:Vortext:Equ-E-ele-aequi-zu-Masse' => array( headline_text => $nSOSp_g_formelName_FP_3),
+                                                'OM:FrQFT:Lepton:Vortext:Equ-Frequenz-aus-Spin-Geschw-Radius' => array( headline_text => 'Lep.Mod.7'),
+                                                'OM:FrQFT:Lepton:Vortext:Equ-Masse-Radius' => array( headline_text => 'Lep.Mod.12'),
+                                                'OM:FrQFT:Lepton:Vortext:Equ-Spin-Lep' => array( headline_text => 'Lep.Mod.14'),
+                                                'OM:FrQFT:Lepton:Vortext:Equ-Spin-Geschw-aus-LG' => array( headline_text => 'Lep.Mod.19'),
+                                                'OM:FrQFT:Lepton:Vortext:Equ-LG-aus-Spin-Geschw' => array( headline_text => 'Lep.Mod.20'),
+                                                'OM:FrQFT:Lepton:Vortext:Equ-c-licht-rot-aus-c-spin' => array( headline_text => 'Lep.Mod.28'),
+                                                'OM:FrQFT:Lepton:Vortext:Equ-r-licht-rot-aus-r-spin' => array( headline_text => 'Lep.Mod.35'),
+                                                'OM:FrQFT:Lepton:Vortext:Equ-r-spin-aus-Masse-LG' => array( headline_text => 'Lep.Mod.39'),
+                                                'OM:FrQFT:Lepton:Vortext:Equ-r-wq-rot-aus-r-spin' => array( headline_text => 'Lep.Mod.58'),
                                                          
                                               'OM:FrQFT:Lepton:Zeit-und-Alterung' => array( headline_text => 'Zeit und Alterung', headline_text_short => 'Zeit und Alterung'),
                                                          
