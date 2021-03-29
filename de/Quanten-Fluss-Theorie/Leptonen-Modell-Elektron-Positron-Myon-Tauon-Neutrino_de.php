@@ -405,6 +405,20 @@
                     'XXX'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Vortext:XXX', text =>
                                            
+                'Abschätzung der Richtigkeit der Näherung der Mittelwerte.', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Vortext:XXX', text =>
+                                           
                 'Berechnung des magnetischen Moments', subline =>
                   '')),
                   array( 'text', array( text => array(
