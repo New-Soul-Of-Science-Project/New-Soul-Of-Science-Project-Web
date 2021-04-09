@@ -20,7 +20,7 @@
                       
                   array( 'text', array( text => array(
                     'Die drei Mythen und Sagen um den Stein der Weisen, den Heiligen Gral und den Phönix aus der Asche beinhalten wunderbare Weisheiten, Sehnsüchte und Motive,'."\n".
-                    'die alle drei miteinander verbinden.'."\n".
+                    'die diese drei miteinander verbinden.'."\n".
                     'Auch sind alle drei mit unserer Geschichte, der Menschheitsgeschichte, über die Philosophien und Religionen der Welt verknüpft.'."\n",
                       'Hinter ihnen, hinter den Geweben unserer Geschichte, verbergen sich tiefgründige (natur-)philosophische Einsichten und Kritiken, denen Naturprinzipien'."\n".
                     'zugrunde liegen, mit denen ich mich intensiv beschäftige.'."\n",

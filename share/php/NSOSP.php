@@ -1793,9 +1793,9 @@
                                        keywords => '',
                                        text_titel_h1 => 'Naturphilosophie-Yoga \\color{*TitleAdd}{\\small{(NaPhil-Yoga)}}',
                                        text_titel_short => 'NaPhil-Yoga',
-                                       //text_undertitel_h2 => '\\color{*FigDescr}{›Liebe zur Weisheit‹ Yoga} – die Natur des Lebens verstehen und dieses Wissen anwenden. Körper und Seele als Einheit sehen, die Gedanken zur Ruhe kommen lassen …',
-                                       text_undertitel_h2 => 'Yoga der Brücken der Zuversicht \\\\ \\small{\\color{*Light}{Yoga der Neugier des Spielens \\\\ Yoga der Liebe meiner Natur \\\\ Yoga des In-der-Schwebe-Lassens}}',
-                                       //text_titel_discr_h3 => 'Yoga nach der Naturphilosophie des ›Spannungsspiels des Lebens‹',
+                                       // text_undertitel_h2 => '\\color{*FigDescr}{›Liebe zur Weisheit‹ Yoga} – die Natur des Lebens verstehen und dieses Wissen anwenden. Körper und Seele als Einheit sehen, die Gedanken zur Ruhe kommen lassen …',
+                                       // text_undertitel_h2 => 'Yoga der Brücken der Zuversicht \\\\ \\small{\\color{*Light}{Yoga der Neugier des Spielens \\\\ Yoga der Liebe meiner Natur \\\\ Yoga des In-der-Schwebe-Lassens}}',
+                                       text_undertitel_h2 => 'Yoga des Werdens',
                                        text_titel_discr_h3 => 'Nach der Naturphilosophie des ›Spannungsspiels des Lebens‹',
                                        jump_ary => array(
                                               'OM:NPYo:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
@@ -1821,6 +1821,24 @@
                                               'OM:NPYo:Angebote-Veranstaltungen:PhysikAchtsamkeitYoga' => array( headline_text => 'Physik, Achtsamkeit und Yoga \\color{*TitleAdd}{\\small{(Vortrag mit Diskussion)}}', headline_text_short => 'Physik, Achtsamkeit und Yoga'),
                                               'OM:NPYo:Angebote-Veranstaltungen:PerspektivwechselAmbiguitaetstoleranzEntscheidungen' => array( headline_text => 'Perspektivwechsel, Ambiguitätstoleranz und Entscheidungen \\color{*TitleAdd}{\\small{(Vortrag mit Diskussion)}}', headline_text_short => 'Perspektivwechsel, Ambiguitätstoleranz und Entscheidungen'),
                                               'OM:NPYo:Angebote-Veranstaltungen:AchtsamkeitsprozessWoPhysikAufYogaTrifft' => array( headline_text => 'Der Achtsamkeitsprozess — Wo Physik auf Yoga trifft \\color{*TitleAdd}{\\small{(Worshop)}}', headline_text_short => 'Der Achtsamkeitsprozess — Wo Physik auf Yoga trifft'),
+                                            ),
+                                     ),
+                              'OM:NPYo:Chakras-Kabbala-Tarot' =>
+                                array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Chakras-Kabbala-Tarot.php',
+                                       url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Chakras-Kabbala-Tarot.php',
+                                       titel => 'Chakras, Kabbala und Tarot - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
+                                       description => 'XXX.',
+                                       keywords => '',
+                                       text_titel_h1 => 'Chakras, Kabbala und Tarot',
+                                       text_titel_short => 'Chakras, Kabbala und Tarot',
+                                       text_undertitel_h2 => 'XXX',
+                                       text_titel_discr_h3 => 'XXX',
+                                       jump_ary => array(
+                                              'OM:NPYo:Chakras-Kabbala-Tarot:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                                                         
+                                                'OM:NPYo:Chakras-Kabbala-Tarot:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                                                         
+                                              'OM:NPYo:Chakras-Kabbala-Tarot:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
                                             ),
                                      ),
                               'OM:NPYo:Einleitung' =>
@@ -1883,7 +1901,7 @@
                                        keywords => '',
                                        text_titel_h1 => 'Existenz und Leichtigkeit',
                                        text_titel_short => 'Existenz und Leichtigkeit',
-                                       text_undertitel_h2 => 'Dao, Qi, Yin und Yang sowie Wu Wei',
+                                       text_undertitel_h2 => 'Dao, Qi, Yin und Yang sowie Wu Wei und I Ging',
                                        text_titel_discr_h3 => 'Die Naturphilosophie der Physik des Achtsamkeitsprozesses findet sich in den Grundkonzepten des Daoismus',
                                        jump_ary => array(
                                               'OM:NPYo:ExistenzLeichtigkeit:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),

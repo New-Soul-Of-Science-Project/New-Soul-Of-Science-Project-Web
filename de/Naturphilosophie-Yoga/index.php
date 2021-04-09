@@ -13,12 +13,17 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  /*array( 'jumplist', array(
+                  /* array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:Angebote-Veranstaltungen:NaPhilYogaCoaching'),
-                    )),*/
+                    )), */
                       
                   array( 'text', array( text => array(
-                    'All die im Untertitel aufgezählten Dinge, um die sich das NaPhil-Yoga dreht, haben etwas gemein, das erkennbar wird, wenn wir uns etwas tiefer mit dem Leben und unserer Natur beschäftigen:'."\n",
+                    '\\condb{Yoga der Brücken der Zuversicht} \\\\ '."\n".
+                    '\\condb{Yoga der Neugier des Spielens} \\\\ '."\n".
+                    '\\condb{Yoga der Liebe meiner Natur} \\\\ '."\n".
+                    '\\condb{Yoga des In-der-Schwebe-Lassens}'."\n"))),
+                  array( 'text', array( text => array(
+                    'All die aufgezählten Dinge, um die sich das NaPhil-Yoga dreht, haben etwas gemein, das erkennbar wird, wenn wir uns etwas tiefer mit dem Leben und unserer Natur beschäftigen:'."\n",
                       'Das In-der-Schwebe-Lassen oder Schwebenlassen ist in meinen Augen ein Grundpfeiler unserer Existenz.'."\n".
                     'Mit Schwebenlassen meine ich, die Dinge loslassen, ohne sie gehen zu lassen oder zu ignorieren.'."\n".
                     'Sie nicht extrem zu kontrollieren, sondern sie sich entwickeln zu lassen, ohne sie sich zu sehr zu wünschen und ohne die Hoffnung zu verlieren.'."\n".
@@ -36,7 +41,7 @@
                     'Interessanterweise entspricht diesem Bild auch jede \\jump{OM:FrQFT:Home}{physikalische Existenz} und damit auch \\jump{OM:SpaLeb:Home}{unsere Existenz}.'."\n".
                     'Die Planeten, die um unsere Sonne kreisen, werden von ihr gehalten, aber nicht festgehalten.'."\n".
                     'Sie sind im Fluss der Bewegung und doch durch ihre Anziehungskraft gehalten.'."\n".
-                    'Wären sie festgehalten, dann würde unser Sonnensystem kollabieen.'."\n".
+                    'Wären sie festgehalten, dann würde unser Sonnensystem kollabieren.'."\n".
                     'Wären sie losgelassen, dann würden sie davon fliegen.'."\n".
                     'Die Stabilität unseres Sonnensystems macht aus, dass es sich in einer Balance zwischen halten und loslassen befindet und so in einem stabilen Fluss bleibt.'."\n",
                       'Solche Balancen bestimmen unser Leben sehr ähnlich, wie wir sie in allen stabilen Strukturen der Natur finden.'."\n".
@@ -116,8 +121,6 @@
                     '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Ausrichtung \\small{– Motivation und Beschreibung}}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
-                      //%!array( title => '\\name{OM:NPYo:Einleitung}', jumpname => 'OM:NPYo:Einleitung', startsign => '',
-                      //%!          description => 'Worum geht es?'/*$Glo_g_Site_ary['OM:FrQFT:Einleitung'][text_undertitel_h2]*/),
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Einleitung'),
                       array( title => 'Die Naturphilosophie des Yoga \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => 'Das ›Spannungsspiel des Lebens‹ und die Quanten-Fluss-Theorie im Yoga'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
@@ -125,13 +128,20 @@
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:WasUnterschiedYogaSport'),
                       array( title => 'ReConnection — wieder verbinden \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => 'Yoga — Wir verbinden uns wieder mit uns selber, miteinander, mit unserer Geschichte, dem alten Wissen, unseren Ahnen und unserer Zukunft'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Stein-der-Weisen'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:HaTha'),
                       array( title => 'Atmung – Lösen und Verbinden, Neuordnen \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => 'Die Atmung ist die Grundlage der Persönlichkeitsentwicklung. Wir lösen mit jeder Einatmung und verbinden neu mit jeder Ausatmung. Löse und verbinde, ›Solve et Coagula‹, die Weisheit des Hermes Trismegistos (Thot-Hermes)'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:ExistenzLeichtigkeit'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Spiritualitaet-Psychologie'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:WieVeraendereIchMeineVergangenheit'),
+                    ))),
+                    
+                  array( 'normal',
+                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Historisches und mythologisches Wissen \\small{– Zusammenhang und Interpretation}}</h3>'."\n"),
+                  array( 'contentlist',
+                    array( content_ary => array(
+                      nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:HaTha'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Chakras-Kabbala-Tarot'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:ExistenzLeichtigkeit'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Stein-der-Weisen'),
                     ))),
                     
                  array( 'normal',
