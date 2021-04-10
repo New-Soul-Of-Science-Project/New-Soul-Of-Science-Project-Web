@@ -4,7 +4,7 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 04.03.2021, 15:00h
+  // #: Stand: 10.04.2021, 18:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
@@ -157,6 +157,7 @@
   //           20200901:  +:  "$To_g_Text_replace_ary":  '↔︎' -> 'Quan&shy;ten&shy;feld&shy;the&shy;o&shy;rie' is new.
   //           20210216:  +:  "$To_g_Text_replace_ary":  '-Quantenfeldtheorie-' -> '&harr;' is new.
   //           20210304:  >:  "To_f_Paragraph":  'Figure': Changed table to 'margin-left: 30px; margin-right: 40px' by using the standard from 'main.css'. Then changed to 'width: 660px'.
+  //           20210410:  +:  "$To_g_Text_replace_ary":  '𓇳' -> '&#78323;', '☉' -> '&#9737;' new.
   // v01.004:  20130609:  !:  "To_f_headline_make":  Tables left margin changed to 10px.
   //                      !:  "$To_g_Text_replace_ary":  '„', '›', '‹', '»', '«' entries new.
   //           20130618:  !:  "$To_g_Text_replace_ary":  '&nbsp;', '&amp;', '&reg;', '&ldquo;' entries new.
@@ -428,6 +429,8 @@
                                     array( '°', '&deg;'),
                                     array( '©', '&copy;'),
                                     array( '®', '&reg;'),
+                                    array( '𓇳', '&#78323;'),  // #: https://unicode-table.com/en/131F3/
+                                    array( '☉', '&#9737;'),  // #: https://unicode-table.com/en/131F3/
                                     array( '↓', '&darr;'),
                                     array( '↑', '&uarr;'),
                                     array( '←', '&larr;'),

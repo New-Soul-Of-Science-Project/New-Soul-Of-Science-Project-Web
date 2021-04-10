@@ -1148,23 +1148,25 @@
                                                          
                                                          
                                                 'OM:FrQFT:Lepton:Vortext:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx)),
-                                                'OM:FrQFT:Lepton:Vortext:Equ-LG-aus-Frequenz-Lambda' => array( headline_text => 'Lep.Mod.1'),
-                                                'OM:FrQFT:Lepton:Vortext:Equ-EinsteinEnergieLichtQuant' => array( headline_text => $nSOSp_g_formelName_FP_2),
-                                                'OM:FrQFT:Lepton:Vortext:Equ-E-ele-aequi-zu-Masse' => array( headline_text => $nSOSp_g_formelName_FP_3),
-                                                'OM:FrQFT:Lepton:Vortext:Equ-Frequenz-aus-Spin-Geschw-Radius' => array( headline_text => 'Lep.Mod.7'),
-                                                'OM:FrQFT:Lepton:Vortext:Equ-Masse-Radius' => array( headline_text => 'Lep.Mod.12'),
-                                                'OM:FrQFT:Lepton:Vortext:Equ-Spin-Lep' => array( headline_text => 'Lep.Mod.14'),
-                                                'OM:FrQFT:Lepton:Vortext:Equ-Spin-Geschw-aus-LG' => array( headline_text => 'Lep.Mod.19'),
-                                                'OM:FrQFT:Lepton:Vortext:Equ-LG-aus-Spin-Geschw' => array( headline_text => 'Lep.Mod.20'),
-                                                'OM:FrQFT:Lepton:Vortext:Equ-c-licht-rot-aus-c-spin' => array( headline_text => 'Lep.Mod.28'),
-                                                'OM:FrQFT:Lepton:Vortext:Equ-r-licht-rot-aus-r-spin' => array( headline_text => 'Lep.Mod.35'),
-                                                'OM:FrQFT:Lepton:Vortext:Equ-r-spin-aus-Masse-LG' => array( headline_text => 'Lep.Mod.39'),
-                                                'OM:FrQFT:Lepton:Vortext:Equ-r-wq-rot-aus-r-spin' => array( headline_text => 'Lep.Mod.58'),
+                                                         
+                                              'OM:FrQFT:Lepton:Berechnung-der-Mechanik' => array( headline_text => 'Berechnung der Mechanik', headline_text_short => 'Berechnung der Mechanik'),
+                                                'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-LG-aus-Frequenz-Lambda' => array( headline_text => 'Lep.Mod.1'),
+                                                'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-EinsteinEnergieLichtQuant' => array( headline_text => $nSOSp_g_formelName_FP_2),
+                                                'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-E-ele-aequi-zu-Masse' => array( headline_text => $nSOSp_g_formelName_FP_3),
+                                                'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-Frequenz-aus-Spin-Geschw-Radius' => array( headline_text => 'Lep.Mod.7'),
+                                                'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-Masse-Radius' => array( headline_text => 'Lep.Mod.12'),
+                                                'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-Spin-Lep' => array( headline_text => 'Lep.Mod.14'),
+                                                'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-Spin-Geschw-aus-LG' => array( headline_text => 'Lep.Mod.19'),
+                                                'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-LG-aus-Spin-Geschw' => array( headline_text => 'Lep.Mod.20'),
+                                                'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-c-licht-rot-aus-c-spin' => array( headline_text => 'Lep.Mod.28'),
+                                                'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-licht-rot-aus-r-spin' => array( headline_text => 'Lep.Mod.35'),
+                                                'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-spin-aus-Masse-LG' => array( headline_text => 'Lep.Mod.39'),
+                                                'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-wq-rot-aus-r-spin' => array( headline_text => 'Lep.Mod.58'),
                                                          
                                               'OM:FrQFT:Lepton:Zeit-und-Alterung' => array( headline_text => 'Zeit und Alterung', headline_text_short => 'Zeit und Alterung'),
                                                          
                                               'OM:FrQFT:Lepton:Elektrische-Ladung' => array( headline_text => 'Elektrische Ladung', headline_text_short => 'Elektrische Ladung'),
-                                                'OM:FrQFT:Lepton:Elektrisch-geladenes-Lepton' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:FrQFT:Lepton:Elektrisch-geladenes-Lepton' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                                                          
                                               'OM:FrQFT:Lepton:Schwache-Ladung' => array( headline_text => 'Schwache Ladung', headline_text_short => 'Schwache Ladung'),
                                                          
@@ -1179,7 +1181,7 @@
                                               'OM:FrQFT:Lepton:Antiteilchen' => array( headline_text => 'Antiteilchen', headline_text_short => 'Antiteilchen'),
                                                          
                                               'OM:FrQFT:Lepton:Neutrinos' => array( headline_text => 'Neutrinos', headline_text_short => 'Neutrinos'),
-                                                'OM:FrQFT:Lepton:Elektrisch-neutrales-Lepton' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:FrQFT:Lepton:Elektrisch-neutrales-Lepton' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                                                          
                                               'OM:FrQFT:Lepton:Familien-und-Generationen' => array( headline_text => 'Familien und Generationen', headline_text_short => 'Familien und Generationen'),
                                                          
@@ -1788,14 +1790,16 @@
                                 array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/index.php',
                                        url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/index.php',
                                        titel => 'Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
-                                       //description => '›Liebe zur Weisheit‹ Yoga – die Natur des Lebens verstehen und dieses Wissen anwenden. Körper und Seele als Einheit sehen, die Gedanken zur Ruhe kommen lassen … – Yoga nach der Naturphilosophie des ›Spannungsspiels des Lebens‹.',
-                                       description => 'Yoga der Brücken der Zuversicht. Yoga der Neugier des Spielens. Yoga der Liebe meiner Natur. Yoga des In-der-Schwebe-Lassens. Nach der Naturphilosophie des ›Spannungsspiels des Lebens.',
+                                       // description => '›Liebe zur Weisheit‹ Yoga – die Natur des Lebens verstehen und dieses Wissen anwenden. Körper und Seele als Einheit sehen, die Gedanken zur Ruhe kommen lassen … – Yoga nach der Naturphilosophie des ›Spannungsspiels des Lebens‹.',
+                                       // description => 'Yoga der Brücken der Zuversicht. Yoga der Neugier des Spielens. Yoga der Liebe meiner Natur. Yoga des In-der-Schwebe-Lassens. Nach der Naturphilosophie des ›Spannungsspiels des Lebens.',
+                                       description => '\\name[undertitle]{OM:NPYo:Home}. — \\name[description]{OM:NPYo:Home}.',
+                                       // description => 'Yoga des Werdens. — Nach der Naturphilosophie des ›Spannungsspiels des Lebens‹.',
                                        keywords => '',
                                        text_titel_h1 => 'Naturphilosophie-Yoga \\color{*TitleAdd}{\\small{(NaPhil-Yoga)}}',
                                        text_titel_short => 'NaPhil-Yoga',
                                        // text_undertitel_h2 => '\\color{*FigDescr}{›Liebe zur Weisheit‹ Yoga} – die Natur des Lebens verstehen und dieses Wissen anwenden. Körper und Seele als Einheit sehen, die Gedanken zur Ruhe kommen lassen …',
                                        // text_undertitel_h2 => 'Yoga der Brücken der Zuversicht \\\\ \\small{\\color{*Light}{Yoga der Neugier des Spielens \\\\ Yoga der Liebe meiner Natur \\\\ Yoga des In-der-Schwebe-Lassens}}',
-                                       text_undertitel_h2 => 'Yoga des Werdens',
+                                       text_undertitel_h2 => 'Yoga des Werdens 𓇳',
                                        text_titel_discr_h3 => 'Nach der Naturphilosophie des ›Spannungsspiels des Lebens‹',
                                        jump_ary => array(
                                               'OM:NPYo:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
