@@ -88,6 +88,7 @@
   //                      >:  "$Sc_g_equation_replace_ary":  Redefine element '  :=  '.
   //           20210117:  !:  "$Sc_g_Text_replace_preg_ary", 'latexmath':  Default changed from 'Google' to 'MathJax'.
   //           20210213:  +:  "$Sc_g_Text_replace_ary":  Elements "\M(T)" as "&#120139;" (Mathematical Double-Struck Capital T) is new.
+  //           20210411:  +:  "MathJax":  Add Macros "updownarrows", "MDoDo", "MUpUp", "MUpDo".
   // v01.004:  20130609:  !:  Include "Tools_v01_004.php"
   //           20130628:  +:  "$Glo_PathRel_back" added;
   // v01.003:  20130522:  !:  Include "Tools_v01_002.php"  -->  "Tools_v01_003.php"
@@ -172,8 +173,12 @@
     echo '          extensions: ["color.js"],'."\n";
     echo '          Macros: {'."\n";
     echo '            lowZero: "\\\\raise -.3ex 0",'."\n";
+    echo '            updownarrows: "\\\\uparrow\\\\!\\\\downarrow",'."\n";
     echo '            MDo: "\\\\mathrm{\\\\downarrow}",'."\n";
     echo '            MUp: "\\\\mathrm{\\\\uparrow}",'."\n";
+    echo '            MDoDo: "\\\\mathrm{\\\\downdownarrows}",'."\n";
+    echo '            MUpUp: "\\\\mathrm{\\\\upuparrows}",'."\n";
+    echo '            MUpDo: "\\\\mathrm{\\\\updownarrows}",'."\n";
     echo '            MLe: ["\\\\overset{\\\\leftarrow}{#1}", 1],'."\n";
     echo '            MRi: ["\\\\overset{\\\\rightarrow}{#1}", 1],'."\n";
     echo '            PdDown: "\\\\MDo{}\\\\MLe{d}^{-\\\\frac{1}{3}}",'."\n";

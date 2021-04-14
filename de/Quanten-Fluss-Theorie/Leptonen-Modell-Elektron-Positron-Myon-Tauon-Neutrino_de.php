@@ -12,8 +12,6 @@
 
 	
 		    	<!Ideen:>
-		    	<!  • Allgemein:  >
-		    	<!    • Alle formellen Herleitungen des Manuskripts hier einpflegen.  >
 		    	<!  • Lepton Film:  >
 		    	<!    • Die Wirkungsquanten-Bahn anzeigen  >
 		    	<!    • Elektrisches/-tromagnetisches Feld anzeigen  >
@@ -43,33 +41,107 @@
 		    	<!    • Quarks auf eine eigene Seite.  >
 		    
 
-		    	<!  • XXX  >
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
-                    '\\bold{Neuer Ansatz dieser Seite}',
-                    '• First-Principles und Beobachtungen',
-                    '– Lichtuhr',
-                    '– rückgekoppelte fraktale Struktur',
-                    '– (schwingende) Ladung: elektroschwach, das Neutrino hat keinen relevanten elektromagnetischen Anteil',
-                    '– keine Ladung: starke Ladung',
-                    '– Ruhemasse',
-                    '– Spin',
                     '\\bold{Zu untersuchende Eigenschaften}',
+                    '• \\bold{\\italic{Phasenzahl bzw. Wellenanzahl}}',
+                    '– \\italic{Elektronen-Radius:} Passt der Elektronen-Radius, der wohl über das elektromagnetische Feld des Elektrons berechnet werden kann, in dieses Modell? Siehe \\jump[https://de.wikipedia.org/w/index.php?title=Elektron&oldid=208321591#Klassischer_Radius_und_Punktförmigkeit]{}{Wikipedia: Elektron, Klassischer Radius und Punktförmigkeit}. Kann die Phasenzahl bzw. Wellenanzahl hiermit in Zusammenhang gebracht werden?',
+                    '– \\italic{Feinstrukturkonstante:} Kann die Phasenzahl bzw. Wellenanzahl mit der Feinstrukturkonstanten in Zusammenhang gebracht werden? Das sieht so aus. \\quote{Sommerfeld definierte sie ursprünglich als das Verhältnis der Bahngeschwindigkeit des Elektrons im Grundzustand des Bohrschen Wasserstoffatoms zur Lichtgeschwindigkeit im Vakuum[2].} Siehe \\jump[https://de.wikipedia.org/w/index.php?title=Feinstrukturkonstante&oldid=210649008]{}{Wikipedia: Feinstrukturkonstante}',
                     '• Magnetisches Moment des Elektronen-Spins, siehe \\cite{wiki:Elektron:2015}, Eigenschaften.',
+                    '• Elektrisches Dipolmoment des Elektrons, siehe \\jump[https://de.wikipedia.org/w/index.php?title=Elektron&oldid=208321591#Klassischer_Radius_und_Punktförmigkeit]{}{Wikipedia: Elektron, Klassischer Radius und Punktförmigkeit}.',
+                    '– Hier geht es darum, inwieweit das Massenzentrum dem Zentrum des elektrischen Feldes entspricht.',
+                    '– Im Leptonen-Modell sollten beide Zentren extrem nahe beieinander liegen, wie es die Experimente bestätigen.',
                     ))),
-                                       
-                  array( 'text', array( text => array(
-                    'Um die verschiedenen Leptonen aus Perspektive der Quanten-Fluss-Theorie ähnlich den \\jump{*Photonen-Herlei}{Photonen} beschreiben zu können, ist es notwendig,'."\n".
-                    'uns sowohl die dafür entscheidenden Grundlagen, die \\jump{OM:FrQFT:FirstPrinciples}{First-Principles} der neuen Physik, als auch ihre beobachteten Eigenschaften vor Augen zu führen.'."\n"))),
                       
-                  // array( 'youtube',
+                  array( 'text', array( text => array(
+                    'Leptonen kommen in der Natur in geladener und ungeladener Form vor. Geladene Leptonen sind das Elektron/Positron,'."\n".
+                    'das Myon und das Tauon. Die ungeladenen Leptonen sind die entsprechenden \\jump{OM:FrQFT:Lepton:Neutrinos}{Neutrinos}. \\\\'."\n".
+                    'In der hier beschriebenen Quanten-Fluss-Theorie bestehen alle Leptonen aus einem'."\n".
+                    '\\jump{OM:FrQFT:Elementarteilchen}{Wirkungsquanten-String}\\footnote{\\const{FrQFT_g_footnote_text_WQString}},'."\n".
+                    'der in asymmetrischer Form mit drei Spins rotiert. Die folgende \\jumpname{OM:FrQFT:Lepton:Vortext:Ani-Lepton} und die \\jumpname{OM:FrQFT:Lepton:Elektrisch-geladenes-Lepton} veranschaulichen ein geladenes Lepton mit hypothetischen sechs'."\n".
+                    'wellenförmigen Phasen.'."\n"))),
+
+                      // array( 'youtube',
                   //   array_merge( $FrQFT_g_youtube_ary_Lepton, array( name => 'OM:FrQFT:Lepton:Vortext:Ani-Lepton'))),
                   array( 'figure',
                     array_merge( $FrQFT_g_figure_ary_Lepton_highRes, array( name => 'OM:FrQFT:Lepton:Vortext:Ani-Lepton'))),
                       
                   array( 'text', array( text => array(
-                    'Leptonen kommen in der Natur in geladener und ungeladener Form vor. \\jump{OM:FrQFT:Lepton:Elektrische-Ladung}{Geladene Leptonen} sind das Elektron,'."\n".
+                    'Wieviele Phasen das Lepton wirklich besitzt ist noch nicht geklärt.\\footnote[*Entwick]{\\color{*Entwick}{Eine genaue Herleitung der Phasenzahl wird gesucht. Hinweise darauf sind erbeten.}}'."\n".
+                    'Wie man aus den in der Natur beobachteten'."\n".
+                    '\\jump{OM:FrQFT:ElektroschwacheWW:Teilchenumwandlungen}{Teilchenumwandlungen durch die elektroschwache Wechselwirkung}'."\n".
+                    'erkennen kann, besitzen alle Leptonen und \\jump{OM:FrQFT:ElektroschwacheWW:Quarks}{Quarks} die gleiche Phasenzahl. Diese ist mit einem neuen,'."\n".
+                    'inneren \\jump{OM:FrQFT:Lepton:Spins}{Spin} verknüpft, der einer globalen Erhaltung unterliegt.'."\n"))),
+                  array( 'text', array( text => array(
+                    'Die String-Struktur und deren Bewegung gibt alle Teilcheneigenschaften, wie \\jump{OM:FrQFT:Lepton:Elektrische-Ladung}{elektrische} sowie \\jump{OM:FrQFT:Lepton:Schwache-Ladung}{schwache Ladung}'."\n".
+                    'und \\jump{OM:FrQFT:Lepton:Masse-Impuls-Energie}{Masse/Energie}, wider und ist sogar in der Lage die Einsteinschen Formeln der \\jump{OM:FrQFT:Gravitation}{Gravitation} durch die'."\n".
+                    'Einführung einer \\jump{OM:FrQFT:Lepton:Quantengravitation}{Quantengravitation} herzuleiten. \\\\'."\n".
+                    'Die Gestalt einer helixförmigen Doppelspirale für die String-Bewegung ergibt sich aus der Lösung des \\jump{OM:FrQFT:NeuePhysik:Problem-der-Zeit}{›Problems der Zeit‹}\\footnote{Vgl. \\cite{Kiefer:WegZurQG2012}, S. 37.}'."\n".
+                    'in der Quanten-Fluss-Theorie durch die Differenzierung des heutigen Zeitbegriffs in die Begriffe \\jump{OM:FrQFT:Lepton:Zeit-und-Alterung}{Zeit und Alterung} sowie'."\n".
+                    'durch die experimentellen Beobachtungen, die einst in das heutige Standardmodell der Teilchenphysik mündeten.'."\n"))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Lepton:Zeit-und-Alterung'),
+                    )),
+                )
+          ); ?>
+		    	<br>
+          <?php To_f_headline_add_hides_end_line(); ?>
+          
+
+		    	<!  • Zeit und Alterung:  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:FrQFT:Lepton:Zeit-und-Alterung',
+              'Vereinheitlichung der Physik durch ein strukturelles Verständnis der Zeit', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Lepton', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '\\bold{Ansatz}',
+                    '• Lichtuhr ist im Zentrum',
+                    '• Scheinbarer Widerspruch des ›Problems der Zeit‹ wird gelöst',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Das Modell der Quanten-Fluss-Theorie basiert auf einem neuen Verständnis der Zeit, welches entscheidend dazu beiträgt, die Physik zu vereinheitlichen.'."\n".
+                    'Es löst das \\jump{OM:FrQFT:NeuePhysik:Problem-der-Zeit}{›Problem der Zeit‹}\\footnote{Vgl. \\cite{Kiefer:WegZurQG2012}, S. 37.}'."\n".
+                    'indem es jede Form der Zeit als Veränderung und damit als bestimmten Aspekt von Bewegung versteht.\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 3.1 Grundannahmen zur Raumzeit-Struktur der Elementarteilchen, S. 36-41, hier Alterungspostulat, S. 38.}'."\n".
+                    'Im einfachsten Fall wird die konstante Geschwindigkeit der rot gefärbten Wirkungsquanten (siehe \\jumpname{OM:FrQFT:Lepton:Vortext:Ani-Lepton}) als alles bestimmender Zeitgeber'."\n".
+                    'angesehen; als Normaluhr, die überall im Raum gleich läuft.\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 4.1.1 Zeit, Alterung und Licht-Raumzeit-Geometrie, S. 51-56, hier S. 51-52.}'."\n"))),
+                  array( 'text', array( text => array(
+                    'Die damit verglichen langsamere Geschwindigkeit der Wirkungsquanten entlang der grünen Lichtbahn des Leptonen-Modells wird hingegen abgrenzend als Alterung bezeichnet.'."\n".
+                    'Sie entspricht der Lichtgeschwindigkeit im 3-dimensionalen Raum und somit der Zeit der Allgemeinen Relativitätstheorie.\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 4.1.1 Zeit, Alterung und Licht-Raumzeit-Geometrie, S. 51-56, hier S. 52.} \\\\'."\n".
+                    'Die Alterung ist folglich ein anderer Aspekt der Bewegung und eine andere Form der Zeit, der mit der Gangweite der Wicklungen der Wirkungsquanten-Bahn um die'."\n".
+                    'Lichtbahn variiert.'."\n".
+                    'Umso schneller sich das Lepton im Raum bewegt, desto langsamer ist die Geschwindigkeit der Wirkungsquanten entlang der Lichtbahn. Entsprechend ist die Alterung des'."\n".
+                    'Leptons geringer und entspricht seiner Bwegungsuhr. \\\\'."\n".
+                    'Ähnliches gilt, wenn sich ein Lepton einem Gestirn mit großer Masse nähert.'."\n".
+                    'Seine Alterung läuft langsamer und die Bewegung der Wirkungsquanten entlang der Lichtbahn entspricht seiner Gravitationsuhr.'."\n".
+                    'Diese geht umso langsamer, je größer der \\jump{Gravitation}{Gravitationseinfluss} ist, welche das Lepton ausgesetzt ist.'."\n"))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Lepton:Naturphilosophie-der-Mechanik'),
+                   )),
+              )
+          ); ?>
+          
+          
+		    	<!  • Naturphilosophie der Mechanik  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:FrQFT:Lepton:Naturphilosophie-der-Mechanik',
+              'Naturphilosophische Analyse des Leptonen-Modells', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Lepton:Zeit-und-Alterung', type => 'back'),
+                    )),
+                      
+                  array( 'text', array( text => array(
+                    'Um die verschiedenen Leptonen aus Perspektive der Quanten-Fluss-Theorie ähnlich den \\jump{*Photonen-Herlei}{Photonen} beschreiben zu können, ist es notwendig,'."\n".
+                    'uns sowohl die dafür entscheidenden Grundlagen, die \\jump{OM:FrQFT:FirstPrinciples}{First-Principles} der neuen Physik, als auch ihre beobachteten Eigenschaften vor Augen zu führen.'."\n",
+                      'Leptonen kommen in der Natur in geladener und ungeladener Form vor. \\jump{OM:FrQFT:Lepton:Elektrische-Ladung}{Geladene Leptonen} sind das Elektron,'."\n".
                     'das Myon und das Tauon sowie das Positron, als Antiteilchen des Elektrons, und die Antiteilchen zum Myon und Tauon.'."\n".
                     'Die ungeladenen Leptonen sind die entsprechenden \\jump{OM:FrQFT:Lepton:Neutrinos}{Neutrinos}.'."\n",
                       'Hier eine Liste ihrer beobachteten Eigenschaften:'."\n"))),
@@ -165,44 +237,20 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                       
-                      
-                  array( 'text', array( text => array(
-                    'Leptonen kommen in der Natur in geladener und ungeladener Form vor. Geladene Leptonen sind das Elektron/Positron,'."\n".
-                    'das Myon und das Tauon. Die ungeladenen Leptonen sind die entsprechenden \\jump{OM:FrQFT:Lepton:Neutrinos}{Neutrinos}. \\\\'."\n".
-                    'In der hier beschriebenen Quanten-Fluss-Theorie bestehen alle Leptonen aus einem'."\n".
-                    '\\jump{OM:FrQFT:Elementarteilchen}{Wirkungsquanten-String}\\footnote{\\const{FrQFT_g_footnote_text_WQString}},'."\n".
-                    'der in asymmetrischer Form mit drei Spins rotiert. Die folgende \\jumpname{OM:FrQFT:Lepton:Vortext:Ani-Lepton} und die \\jumpname{OM:FrQFT:Lepton:Elektrisch-geladenes-Lepton} veranschaulichen ein geladenes Lepton mit hypothetischen sechs'."\n".
-                    'wellenförmigen Phasen.'."\n"))),
-                  array( 'text', array( text => array(
-                    'Wieviele Phasen das Lepton wirklich besitzt ist noch nicht geklärt.\\footnote[*Entwick]{\\color{*Entwick}{Eine genaue Herleitung der Phasenzahl wird gesucht. Hinweise darauf sind erbeten.}}'."\n".
-                    'Wie man aus den in der Natur beobachteten'."\n".
-                    '\\jump{OM:FrQFT:ElektroschwacheWW:Teilchenumwandlungen}{Teilchenumwandlungen durch die elektroschwache Wechselwirkung}'."\n".
-                    'erkennen kann, besitzen alle Leptonen und \\jump{OM:FrQFT:ElektroschwacheWW:Quarks}{Quarks} die gleiche Phasenzahl. Diese ist mit einem neuen,'."\n".
-                    'inneren \\jump{OM:FrQFT:Lepton:Spins}{Spin} verknüpft, der einer globalen Erhaltung unterliegt.'."\n"))),
-                  array( 'text', array( text => array(
-                    'Die String-Struktur und deren Bewegung gibt alle Teilcheneigenschaften, wie \\jump{OM:FrQFT:Lepton:Elektrische-Ladung}{elektrische} sowie \\jump{OM:FrQFT:Lepton:Schwache-Ladung}{schwache Ladung}'."\n".
-                    'und \\jump{OM:FrQFT:Lepton:Masse-Impuls-Energie}{Masse/Energie}, wider und ist sogar in der Lage die Einsteinschen Formeln der \\jump{OM:FrQFT:Gravitation}{Gravitation} durch die'."\n".
-                    'Einführung einer \\jump{OM:FrQFT:Lepton:Quantengravitation}{Quantengravitation} herzuleiten. \\\\'."\n".
-                    'Die Gestalt einer helixförmigen Doppelspirale für die String-Bewegung ergibt sich aus der Lösung des \\jump{OM:FrQFT:NeuePhysik:Problem-der-Zeit}{›Problems der Zeit‹}\\footnote{Vgl. \\cite{Kiefer:WegZurQG2012}, S. 37.}'."\n".
-                    'in der Quanten-Fluss-Theorie durch die Differenzierung des heutigen Zeitbegriffs in die Begriffe \\jump{OM:FrQFT:Lepton:Zeit-und-Alterung}{Zeit und Alterung} sowie'."\n".
-                    'durch die experimentellen Beobachtungen, die einst in das heutige Standardmodell der Teilchenphysik mündeten.'."\n"))),
-                      
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Lepton:Berechnung-der-Mechanik'),
                     )),
-                )
+              )
           ); ?>
-		    	<br>
-          <?php To_f_headline_add_hides_end_line(); ?>
           
-
+          
 		    	<!  • Berechnung der Mechanik  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
             'OM:FrQFT:Lepton:Berechnung-der-Mechanik',
               'Die Mechanik des Leptonen-Wirkungsquanten-Strings', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:FrQFT:Lepton', type => 'back'),
+                      array(  jump_name => 'OM:FrQFT:Lepton:Naturphilosophie-der-Mechanik', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -516,44 +564,8 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:FrQFT:Lepton:Zeit-und-Alterung'),
+                      array(  jump_name => 'OM:FrQFT:Lepton:Elektrische-Ladung'),
                     )),
-              )
-          ); ?>
-          
-          
-		    	<!  • Zeit und Alterung:  >
-		    	<!    • Vereinheitlichung der Physik, Link zur eigenen Seite und Fußnote  >
-		    	<!    • Zeit, Alterung, Link zur eigenen Seite und Fußnote  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
-            'OM:FrQFT:Lepton:Zeit-und-Alterung',
-              'Vereinheitlichung der Physik durch ein neues Verständnis von Zeit als Veränderungsprozesse durch Bewegung auf verschiedenen Strukturebenen', 'Sc_f_Paragraph',
-                array(
-                  array( 'jumplist', array(
-                      array(  jump_name => 'OM:FrQFT:Lepton:Berechnung-der-Mechanik', type => 'back'),
-                    )),
-                      
-                  array( 'text', array( text => array(
-                    'Das Modell der Quanten-Fluss-Theorie basiert auf einem neuen Verständnis der Zeit, welches entscheidend dazu beiträgt, die Physik zu vereinheitlichen.'."\n".
-                    'Es löst das \\jump{OM:FrQFT:NeuePhysik:Problem-der-Zeit}{›Problem der Zeit‹}\\footnote{Vgl. \\cite{Kiefer:WegZurQG2012}, S. 37.}'."\n".
-                    'indem es jede Form der Zeit als Veränderung und damit als bestimmten Aspekt von Bewegung versteht.\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 3.1 Grundannahmen zur Raumzeit-Struktur der Elementarteilchen, S. 36-41, hier Alterungspostulat, S. 38.}'."\n".
-                    'Im einfachsten Fall wird die konstante Geschwindigkeit der rot gefärbten Wirkungsquanten (siehe \\jumpname{OM:FrQFT:Lepton:Vortext:Ani-Lepton}) als alles bestimmender Zeitgeber'."\n".
-                    'angesehen; als Normaluhr, die überall im Raum gleich läuft.\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 4.1.1 Zeit, Alterung und Licht-Raumzeit-Geometrie, S. 51-56, hier S. 51-52.}'."\n"))),
-                  array( 'text', array( text => array(
-                    'Die damit verglichen langsamere Geschwindigkeit der Wirkungsquanten entlang der grünen Lichtbahn des Leptonen-Modells wird hingegen abgrenzend als Alterung bezeichnet.'."\n".
-                    'Sie entspricht der Lichtgeschwindigkeit im 3-dimensionalen Raum und somit der Zeit der Allgemeinen Relativitätstheorie.\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 4.1.1 Zeit, Alterung und Licht-Raumzeit-Geometrie, S. 51-56, hier S. 52.} \\\\'."\n".
-                    'Die Alterung ist folglich ein anderer Aspekt der Bewegung und eine andere Form der Zeit, der mit der Gangweite der Wicklungen der Wirkungsquanten-Bahn um die'."\n".
-                    'Lichtbahn variiert.'."\n".
-                    'Umso schneller sich das Lepton im Raum bewegt, desto langsamer ist die Geschwindigkeit der Wirkungsquanten entlang der Lichtbahn. Entsprechend ist die Alterung des'."\n".
-                    'Leptons geringer und entspricht seiner Bwegungsuhr. \\\\'."\n".
-                    'Ähnliches gilt, wenn sich ein Lepton einem Gestirn mit großer Masse nähert.'."\n".
-                    'Seine Alterung läuft langsamer und die Bewegung der Wirkungsquanten entlang der Lichtbahn entspricht seiner Gravitationsuhr.'."\n".
-                    'Diese geht umso langsamer, je größer der \\jump{Gravitation}{Gravitationseinfluss} ist, welche das Lepton ausgesetzt ist.'."\n"))),
-                  array( 'jumplist',
-                    array(
-                      array(  jump_name => 'OM:FrQFT:NeuePhysik:Loesungsansatz'),
-                      array(  jump_name => 'OM:FrQFT:Gravitation'),
-                  )),
               )
           ); ?>
           
@@ -563,7 +575,10 @@
             'OM:FrQFT:Lepton:Elektrische-Ladung',
               'Variierende Dichten der Wirkungsquanten auf dem Leptonen-String erzeugen elektrische Felder', 'Sc_f_Paragraph',
                 array(
-                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Lepton:Berechnung-der-Mechanik', type => 'back'),
+                    )),
+                                            
                   /*array( 'figure',
                     array( fig_file_name => 'Lepton_geladen_v09', fig_alt_description => 'Elektrisch geladenes Lepton', width => '700px', height => '374px', name => 'OM:FrQFT:Lepton:Elektrisch-geladenes-Lepton',
                            text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n_{phase} = n_{wel} / n_{polwel} = 6/1 = 6}.'."\n".

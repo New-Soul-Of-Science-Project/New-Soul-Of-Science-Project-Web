@@ -14,12 +14,13 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
-                    '(• Seele ist Interaktion!)',
-                    '(– Spannungsspiel des Lebens (und FrQFT): Das Seelenverständnis des ›Spannungsspiels des Lebens‹, die Seele als das Verhalten der Dinge miteinander oder untereinander zu erkennen, als den Zusammenhang zwischen den Dingen, ist sehr dazu geeignet Geist und Seele sowie deren Beziehung zur Materie wieder besser zu verstehen und neu in die Gesellschaft und Wissenschaft zurück zu integrieren.)',
-                    '(⋅ Die Materie kann hier auch als Rückgrat, als auskristallisierte Knochen – auskristallisiertes Bewusstsein –, im Zusammenspiel zwischen Seele und Materie gesehen werden. Durch die auskristallisierte Materie ist erst ein intensives Wechselspiel möglich. Siehe auch \\jumpname{OM:SpaLeb:Bewusstsein}.)',
-                    '(– New Soul of Science Project: Deshalb nenne ich all meine Theorien zusammen auch ›The New Soul of Science Project‹.)',
-                    '(• Den \\jump[][*Bearb]{OM:NPYo:Einleitung:ErkenneDichSelbst:Achtsamkeitsprozess}{Achtsamkeitsprozess} als zentralen Prozess unseres Überlebens einbeziehen: Lebenslang leben lernen, uns selber kennenlernen und erforschen.)',
-                    '(• Wenn man die Dinge seziert, sie immer weiter in Teile – in Teilchen – zerlegt, dann verlieren die Teile ihren Zusammenhang, ihr gemeinsames Verhalten im Ding, und damit das, was sie beseelt. Die Teile verlieren einen Teil ihrer Seele, der sie zu mehr gemacht hat, als ihre Summe.)',
+                    '• Diese Seite in \\italic{(neue) Anthropologie} umbenennen? Verweis von \\italic{\\jumpname{OM:SpaLeb:Achtsamkeitsprozess:NeueAnthropologie}} hierher?',
+                    '• Seele ist Interaktion!',
+                    '– Spannungsspiel des Lebens (und FrQFT): Das Seelenverständnis des ›Spannungsspiels des Lebens‹, die Seele als das Verhalten der Dinge miteinander oder untereinander zu erkennen, als den Zusammenhang zwischen den Dingen, ist sehr dazu geeignet Geist und Seele sowie deren Beziehung zur Materie wieder besser zu verstehen und neu in die Gesellschaft und Wissenschaft zurück zu integrieren.',
+                    '⋅ Die Materie kann hier auch als Rückgrat, als auskristallisierte Knochen – auskristallisiertes Bewusstsein –, im Zusammenspiel zwischen Seele und Materie gesehen werden. Durch die auskristallisierte Materie ist erst ein intensives Wechselspiel möglich. Siehe auch \\jumpname{OM:SpaLeb:Bewusstsein}.',
+                    '– New Soul of Science Project: Deshalb nenne ich all meine Theorien zusammen auch ›The New Soul of Science Project‹.',
+                    '• Den \\jump[][*Bearb]{OM:NPYo:Einleitung:ErkenneDichSelbst:Achtsamkeitsprozess}{Achtsamkeitsprozess} als zentralen Prozess unseres Überlebens einbeziehen: Lebenslang leben lernen, uns selber kennenlernen und erforschen.',
+                    '• Wenn man die Dinge seziert, sie immer weiter in Teile – in Teilchen – zerlegt, dann verlieren die Teile ihren Zusammenhang, ihr gemeinsames Verhalten im Ding, und damit das, was sie beseelt. Die Teile verlieren einen Teil ihrer Seele, der sie zu mehr gemacht hat, als ihre Summe.',
                     ))),
                       
                   array( 'text', array( text => array(

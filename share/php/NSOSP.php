@@ -1137,19 +1137,21 @@
                                        url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Leptonen-Modell-Elektron-Positron-Myon-Tauon-Neutrino_de.php',
                                        titel => 'Leptonen-Modell, Elektron/Positron, Myon, Tauon, Neutrino - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
                                        // description => 'Das neue Leptonen-Modell beschreibt, wie die elektroschwache Ladung die Gravitation sowie die Massen von Elektron/Positron, Myon, Tauon und Neutrino entstehen.',
-                                       description => '\\name[undertitle]{OM:FrQFT:Lepton}.',
+                                       description => '\\name[undertitle]{OM:FrQFT:Lepton}. – \\name[description]{OM:FrQFT:Lepton}.',
                                        keywords => '',
                                        text_titel_h1 => 'Leptonen-Modell \\\\ \\color{*TitleAdd}{<small>Elektron, Myon, Tauon und Neutrinos</small>}',
                                        text_titel_short => 'Leptonen-Modell',
-                                       text_undertitel_h2 => 'Aus den bekannten Eigenschaften der Leptonen lässt sich mit Hilfe der First-Principles die Struktur der Leptonen-Strings rekonstruieren',
-                                       text_titel_discr_h3 => '',
+                                       // text_undertitel_h2 => 'Aus den bekannten Eigenschaften der Leptonen lässt sich mit Hilfe der First-Principles die Struktur der Leptonen-Strings verstehen',
+                                       text_undertitel_h2 => 'Ein neuartiges String-Modell trägt die Eigenschaften der Leptonen',
+                                       text_titel_discr_h3 => 'Durch die Lösung des ›Problems der Zeit‹ lässt sich mit Hilfe der First-Principles die Struktur der Leptonen-Strings verstehen',
                                        jump_ary => array(
                                               'OM:FrQFT:Lepton:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
-                                                         
                                                 'OM:FrQFT:Lepton:Vortext:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx)),
-                                                         
-                                              'OM:FrQFT:Lepton:Berechnung-der-Mechanik' => array( headline_text => 'Berechnung der Mechanik', headline_text_short => 'Berechnung der Mechanik'),
+                                              // 'OM:FrQFT:Lepton:Zeit-und-Alterung' => array( headline_text => 'Zeit und Alterung', headline_text_short => 'Zeit und Alterung'),
+                                              'OM:FrQFT:Lepton:Zeit-und-Alterung' => array( headline_text => 'Lösung des ›Problems der Zeit‹'/*, headline_text_short => ''*/),
+                                              'OM:FrQFT:Lepton:Naturphilosophie-der-Mechanik' => array( headline_text => 'Naturphilosophie der Mechanik'/*, headline_text_short => ''*/),
+                                              'OM:FrQFT:Lepton:Berechnung-der-Mechanik' => array( headline_text => 'Berechnung der Mechanik'/*, headline_text_short => ''*/),
                                                 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-LG-aus-Frequenz-Lambda' => array( headline_text => 'Lep.Mod.1'),
                                                 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-EinsteinEnergieLichtQuant' => array( headline_text => $nSOSp_g_formelName_FP_2),
                                                 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-E-ele-aequi-zu-Masse' => array( headline_text => $nSOSp_g_formelName_FP_3),
@@ -1162,33 +1164,19 @@
                                                 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-licht-rot-aus-r-spin' => array( headline_text => 'Lep.Mod.35'),
                                                 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-spin-aus-Masse-LG' => array( headline_text => 'Lep.Mod.39'),
                                                 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-wq-rot-aus-r-spin' => array( headline_text => 'Lep.Mod.58'),
-                                                         
-                                              'OM:FrQFT:Lepton:Zeit-und-Alterung' => array( headline_text => 'Zeit und Alterung', headline_text_short => 'Zeit und Alterung'),
-                                                         
                                               'OM:FrQFT:Lepton:Elektrische-Ladung' => array( headline_text => 'Elektrische Ladung', headline_text_short => 'Elektrische Ladung'),
                                                 'OM:FrQFT:Lepton:Elektrisch-geladenes-Lepton' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
-                                                         
                                               'OM:FrQFT:Lepton:Schwache-Ladung' => array( headline_text => 'Schwache Ladung', headline_text_short => 'Schwache Ladung'),
-                                                         
                                               'OM:FrQFT:Lepton:Masse-Impuls-Energie' => array( headline_text => 'Masse, Impuls und Energie', headline_text_short => 'Masse, Impuls und Energie'),
-                                                         
                                               'OM:FrQFT:Lepton:Quantengravitation' => array( headline_text => 'Quantengravitation', headline_text_short => 'Quantengravitation'),
-                                                         
                                               'OM:FrQFT:Lepton:Spins' => array( headline_text => 'Spins', headline_text_short => 'Spins'),
-                                                         
                                               'OM:FrQFT:Lepton:Radius' => array( headline_text => 'Radius', headline_text_short => 'Radius'),
-                                                         
                                               'OM:FrQFT:Lepton:Antiteilchen' => array( headline_text => 'Antiteilchen', headline_text_short => 'Antiteilchen'),
-                                                         
                                               'OM:FrQFT:Lepton:Neutrinos' => array( headline_text => 'Neutrinos', headline_text_short => 'Neutrinos'),
                                                 'OM:FrQFT:Lepton:Elektrisch-neutrales-Lepton' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
-                                                         
                                               'OM:FrQFT:Lepton:Familien-und-Generationen' => array( headline_text => 'Familien und Generationen', headline_text_short => 'Familien und Generationen'),
-                                                         
                                               'OM:FrQFT:Lepton:Quantenmechanik' => array( headline_text => 'Quantenmechanik', headline_text_short => 'Quantenmechanik'),
-                                                         
                                               'OM:FrQFT:Lepton:Welle-Teilchen-Dualismus' => array( headline_text => 'Welle-Teilchen-Dualismus', headline_text_short => 'Welle-Teilchen-Dualismus'),
-                                                         
                                               'OM:FrQFT:Lepton:Berechnungen' => array( headline_text => 'Berechnungen', headline_text_short => 'Berechnungen'),
                                             ),
                                      ),
@@ -2297,6 +2285,7 @@
                                               'OM:SpaLeb:Achtsamkeitsprozess:ErweiSicht' => array( headline_text => 'Erweiterte Sicht', headline_text_short => 'Erweiterte Sicht'),
                                               'OM:SpaLeb:Achtsamkeitsprozess:PhysAchtsa' => array( headline_text => 'Die Physik der Achtsamkeit\\hidden{Titelidee von Olli}', headline_text_short => 'Die Physik der Achtsamkeit'),
                                               'OM:SpaLeb:Achtsamkeitsprozess:AchtsamkeitsprozesGrundlLeben' => array( headline_text => 'Zentraler Regelprozess des Lebens', headline_text_short => 'Zentraler Regelprozess des Lebens'),
+                                              'OM:SpaLeb:Achtsamkeitsprozess:NeueAnthropologie' => array( headline_text => 'Neue Anthropologie'/*, headline_text_short => ''*/),
                                               'OM:SpaLeb:Achtsamkeitsprozess:KIundRobotik' => array( headline_text => 'Künstliche Intelligenz und Robotik', headline_text_short => 'Künstliche Intelligenz und Robotik'),
                                             ),
                                      ),

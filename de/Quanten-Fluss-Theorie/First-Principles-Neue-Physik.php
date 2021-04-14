@@ -14,10 +14,10 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
-                    '\\bold{Postulate}',
-                    '• Ist hier schon das Prinzip der Lichtuhr eingepflegt?',
-                    '• \\term{E = m⋅c^{2}}:',
-                    '– Die Proportionalität von Energie und Masse ist eine direkte Schlussfolgerung der FrQFT, die sich aus der Annahme (Postulat bzw. Axiom) ergibt, dass Wirkungsquanten sowohl Energieeinheiten als auch Masseneinheiten sind (absolut nur auf der untersten Strukturebene des analysierten Modells)! Dies setzt ein konstantes Verhältnis voraus, welches nach unseren Beobachtungen das Quadrat der Lichtgeschwindigkeit \\term{c^{2}} der bekannten Formel \\term{E = m⋅c^{2}} ist.(Verweis auf Wikipedia: ›Äquivalenz von Masse und Energie‹, Überblick und Beispiele, Vernichtungsstrahlung. Dies ist keine relativistisch interpretierte Beobachtung, sondern eine quantenphysikalisch interpretierte!) Siehe auch \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{Herleitung der Lichtverlangsamung} (falls dort nicht entbehrlich geworden …).',
+                    '\\bold{Lösung des ›Problems der Zeit‹}',
+                    '• Die Einleitung stellt die Lösung des ›Problems der Zeit‹ als Ansatzpunkt in den Vordergrund. Darauf sollte auch hier Bezug genommen werden.',
+                    '• \\bold{Prinzip der Lichtuhr:} Damit ist das Prinzip der Lichtuhr verbunden. Ist dies hier schon hinreichen direkt eingepflegt?',
+                    '• \\bold{Fraktale Zeitebenen:} Dabei wird die Fraktalität der Zeit im Ansatz sichtbar. Das sollte ebenfalls Erwähnung finden.',
                     ))),
                                        
                   array( 'text', array( text => array(
@@ -168,6 +168,10 @@
                                            
                 'Abzählprinzip', subline =>
                   'Äquivalenz von Masse und Energie')),
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '• \\term{E = m⋅c^{2}}:',
+                    '– Die Proportionalität von Energie und Masse ist eine direkte Schlussfolgerung der FrQFT, die sich aus der Annahme (Postulat bzw. Axiom) ergibt, dass Wirkungsquanten sowohl Energieeinheiten als auch Masseneinheiten sind (absolut nur auf der untersten Strukturebene des analysierten Modells)! Dies setzt ein konstantes Verhältnis voraus, welches nach unseren Beobachtungen das Quadrat der Lichtgeschwindigkeit \\term{c^{2}} der bekannten Formel \\term{E = m⋅c^{2}} ist.(Verweis auf Wikipedia: ›Äquivalenz von Masse und Energie‹, Überblick und Beispiele, Vernichtungsstrahlung. Dies ist keine relativistisch interpretierte Beobachtung, sondern eine quantenphysikalisch interpretierte!) Siehe auch \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{Herleitung der Lichtverlangsamung} (falls dort nicht entbehrlich geworden …).',
+                    ))),
                   array( 'text', array( text => array(
                     'Nach dem \\jump{OM:FrQFT:FirstPrinciples:Vortext:Vereinfachungsprinzip}{Vereinfachungsprinzip} haben wir es bei extremer Auflösung, in der Fraktalebene unterhalb der Photonen – der Lichtteilchen –,'."\n".
                     'mit ziemlich einheitlichen Bestandteilen unserer Natur zu tun.'."\n".

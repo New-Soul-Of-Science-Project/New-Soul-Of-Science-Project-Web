@@ -717,7 +717,7 @@
                     )),
                       
                   array( 'notice', array( Display => 'vis', text => array(
-                    '• Buchtitel ›Die Physik der Achtsamkeit‹? (Titelidee von Olli',
+                    '• Buchtitel ›Die Physik der Achtsamkeit‹? (Titelidee von Olli)',
                     '• Seite zu diesem Thema \\italic{\\jumpname{OM:NPYo:ExistenzLeichtigkeit}}.',
                     '• Regelprozesse:',
                     '– Jeder Regelprozess hat eine wellenartige, rotierende Dynamik. Das hat zur Konsequenz, dass er Wechselwirkungswellen seiner Spieler- und Gegenspieler-Wechselwirkungen abstrahlt. Was hat das zu bedeuten?',
@@ -766,7 +766,7 @@
                       
                   array( 'notice', array( Display => 'vis', text => array(
                     '\\bold{Evolution:}',
-                    '• Die Evolutionstheorie muss modifiziert werden, denn der Achtsamkeitsprozess beeinflusst unsere genetische Evolution, ohne Selektion:',
+                    '• Die Evolutionstheorie muss modifiziert werden, denn der Achtsamkeitsprozess beeinflusst unsere genetische Evolution, ohne Selektion:\\footnote[*Bearb]{\\color{*Bearb}{Das so etwas existieren muss, dachte auch Wolfgang Pauli: \\\\ Vgl. \\jump[https://www.youtube.com/watch?v=YRlzDm6mQG0]{}{Portrait Wolfgang Pauli | Ernst Peter Fischer}.}}',
                     '– Stress ist Ausdruck eines nicht gut funktionierenden Achtsamkeitsprozesses.',
                     '– Stress beeinflusst unsere Epigenetik.',
                     '– Unsere Epigenetik wird teilweise vererbt.',
@@ -776,6 +776,50 @@
                     '• Lebensentstehung: Kranendonk, Martin J. Van, Tara Djokic und David Deamer. Wie entstand das Leben? In: Spektrum der Wissenschaft, 12/2017, S. 12-19.',
                     '\\bold{Sonstiges:}',
                     '• Konzentriert man sich auf die Facetten der Situation und des Antriebs im Zirkel des Achtsamkeitsprozesses, zunächst ohne das Lernen, dann hat dieser vereinfachte Prozess viel mit Physik und chemischen Reaktionen zu tun. Sowie das Lernen hinzukommt und Vererbung entsteht, ist es der Übergang ins Leben. Lernen kann hier zunächst als die Kodierung der DNA – der Gene – aufgefasst werden. Das Lernen, was wir kennen, ist dann ein Lernen höherer Stufe. Seine Vererbung ist die Tradierung des Wissen, das Weitergeben von Memen, memorischen Einheiten.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:NeueAnthropologie'),
+                    )),
+              )
+          ); ?>
+
+
+		    	<!  • Neue Anthropologie  >
+          <?php $Sc_g_equation_auto_num = 0; ?>
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:SpaLeb:Achtsamkeitsprozess:NeueAnthropologie',
+              'Der Achtsamkeitsprozess ermöglicht eine neue Anthropologie', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:AchtsamkeitsprozesGrundlLeben', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'vis', text => array(
+                    '• Seite \\italic{\\jumpname{OM:SpaLeb:Koerperliche-und-seelische-Existenz}} in \\italic{neue Anthropologie} umbenennen?',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -815,7 +859,7 @@
               '\\name[undertitle]{OM:SpaLeb:KIundRobotik}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:AchtsamkeitsprozesGrundlLeben', type => 'back'),
+                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:NeueAnthropologie', type => 'back'),
                     )),
                       
                   /*array( 'notice', array( Display => 'vis', text => array(

@@ -264,19 +264,49 @@
                   array( 'equations',
                     array( equ_text_std => 'QCD.Q', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  | \MUp{}\MRi{p}^{+1} \rangle  =  | \PuUp \rangle + | \PuUp \rangle + | \PdDown \rangle  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  q_{p}  =  1 e  =  \left( +\frac{2}{3} \right) e + \left( +\frac{2}{3} \right) e + \left( -\frac{1}{3} \right) e  }'),
-                      array( display => 'on',  latex => '{  | \MDo{}\MLe{n}^{0} \rangle  =  | \PuUp \rangle + | \PdDown \rangle + | \PdDown \rangle  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  q_{n}  =  0 e  =  \left( +\frac{2}{3} \right) e + \left( -\frac{1}{3} \right) e + \left( -\frac{1}{3} \right) e  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  q_{p}  =  1 e  =  \frac{2}{3} e + \frac{2}{3} e - \frac{1}{3} e  }'),
+                      array( display => 'on',  latex => '{  | \MDo{}\MLe{n}^{\,0} \rangle  =  | \PuUp \rangle + | \PdDown \rangle + | \PdDown \rangle  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  q_{n}  =  0 e  =  \frac{2}{3} e - \frac{1}{3} e - \frac{1}{3} e  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Eine Abweichung vom anteiligen Lepton stellt der Spin dar, der sowohl für das Proton und Neutron als auch für die Quarks mit \\term{±½ħ} halbwertig ist:'."\n"))),
+                  '\\condb{Abweichung vom Quark als anteiliges Lepton beim Spin} \\\\'."\n".
+                    'Eine Abweichung vom anteiligen Lepton stellt der Spin dar, der sowohl für das Proton und Neutron als auch für die Quarks mit \\latexmath{ \pm ½ \hbar } halbwertig ist:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QCD.Q', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  s_{p}  =  \left( +\frac{1}{2} \right) \hbar  =  \left( +\frac{1}{2} \right) \hbar + \left( +\frac{1}{2} \right) \hbar + \left( -\frac{1}{2} \right) \hbar  }'),
-                      array( display => 'on',  latex => '{  s_{n}  =  \left( -\frac{1}{2} \right) \hbar  =  \left( +\frac{1}{2} \right) \hbar + \left( -\frac{1}{2} \right) \hbar + \left( -\frac{1}{2} \right) \hbar  }'),
+                      array( display => 'on',  latex => '{  s_{p}  =  \frac{1}{2} \hbar  =  \frac{1}{2} \hbar + \frac{1}{2} \hbar - \frac{1}{2} \hbar  }'),
+                      array( display => 'on',  latex => '{  s_{n}  =  -\frac{1}{2} \hbar  =  \frac{1}{2} \hbar - \frac{1}{2} \hbar - \frac{1}{2} \hbar  }'),
                     ))),
                   array( 'text', array( text => array(
+                  '\\condb{Quark und Leptonen Umwandlungen} \\\\'."\n".
+                    'In der Natur zerfallen Neutronen nach einer bestimmten Halbwertszeit jeweils in ein Proton, ein Elektron und ein Elektron-Anti-Neutrino, wobei noch Photonen entstehen können:\\footnote{Vgl. \\cite{Beringer:ParticlePhysicsBooklet2012}, S. 8-9, 144-145. \\\\ Vgl. \cite{Fritzsch:Mikrokosmos2012}, 6. Kap. Elektroschwache Wechselwirkungen, S. 105-118, hier S. 106. \\\\ Internet: \\\\ Vgl. \\cite{wiki:WeakInteraction2013}, Interaction types, Charged current interaction. \\\\ Spin und elektrische Ladung des \\term{W^{±}}-Bosons vgl. \\cite{wiki:W-Boson-Deu2012}. \\\\ Schwacher Isospin und schwache Ladung des \\term{W^{±}}-Bosons vgl. \\cite{wiki:SchwacheLadung2012}, Kopplungen der elektroschwachen WW im Standardmodell.}\\footnote[*Bearb]{\\color{*Bearb}{Dazu hab ich probeweise Auflistungen in meinem unveröffentlichten Manuskript v8.009 vom 18.07.2015.}}'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QCD.Q', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \MDo{}\MLe{n}^{\,0}  \rightarrow  \MUp{}\MRi{p}^{+1} + \MDoDo{}\overset{\leftleftarrows}{W}^{\raise -1.2ex {-1}} + \MUpDo{}\gamma  \\\ \qquad\,  \rightarrow \;\;\; 	\MUp{}\MRi{p}^{+1} + \MDo{}\MLe{e}^{-1} + \MDo{}\MLe{\overline{\nu}}_{e}^{\raise -.9ex {\,0}} + \MUpDo{}\gamma  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die durch die Pfeile dargestellte und mit dem Leptonen-Modell zusammenhängende Spin-Symbolik erkläre ich im Abschnitt \\italic{\\jumpname{OM:FrQFT:ElektroschwacheWW:Symbolismus}} der Seite \\italic{\\jumpname{OM:FrQFT:ElektroschwacheWW}}.'."\n",
+                      'Im Grunde setzt hierbei die Umwandlung eines Down-Quarks des Neutrons in ein Up-Quark des dadurch entstehenden Protons ein \\term{W^{-1}} Boson der schwachen Wechselwirkung frei, das dann in ein Elektron und ein Elektron-Anti-Neutrino zerfällt:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QCD.Q', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \PdDown  \rightarrow  \PuUp + \MDoDo{}\overset{\leftleftarrows}{W}^{\raise -1.2ex {-1}} + \MUpDo{}\gamma  }'),
+                      array( display => 'on',  latex => '{  \MDoDo{}\overset{\leftleftarrows}{W}^{\raise -1.2ex {-1}}  \rightarrow  \MDo{}\MLe{e}^{-1} + \MDo{}\MLe{\overline{\nu}}_{e}^{\raise -.9ex {\,0}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                  '\\condb{Ladungserhaltung verletzender Neutronen-Zerfall} \\\\'."\n".
+                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    'Lässt sich dieser ungewöhnliche Zerfall mit dem neuen Elementarteilchen-Modell erklären?'."\n".
+                    'Wie erklärt das Standardmodell der Teilchenphysik ihn?'."\n".
                     'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX:\\footnote{Vgl. \\cite{Beringer:ParticlePhysicsBooklet2012}, S. 144-145, hier S. 145.}'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QCD.Q', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \MDo{}\MLe{n}^{\,0}  \rightarrow  \MUp{}\MRi{p}^{+1} + \MDo{}\MLe{\nu}_{e}^{\raise -.9ex {\,0}} + \MDo{}\MLe{\overline{\nu}}_{e}^{\raise -.9ex {\,0}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                  '\\condb{XXX} \\\\'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
