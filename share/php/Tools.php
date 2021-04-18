@@ -4,7 +4,7 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 10.04.2021, 18:00h
+  // #: Stand: 17.04.2021, 20:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
@@ -158,6 +158,8 @@
   //           20210216:  +:  "$To_g_Text_replace_ary":  '-Quantenfeldtheorie-' -> '&harr;' is new.
   //           20210304:  >:  "To_f_Paragraph":  'Figure': Changed table to 'margin-left: 30px; margin-right: 40px' by using the standard from 'main.css'. Then changed to 'width: 660px'.
   //           20210410:  +:  "$To_g_Text_replace_ary":  '𓇳' -> '&#78323;', '☉' -> '&#9737;' new.
+  //           20210417:  !:  "$To_g_Text_replace_preg_ary":  '\\brintent' and 'callcode =>' removed.
+  //                      >:  Defined a lot of constants to be compatible with PHP 7.2 and higher.
   // v01.004:  20130609:  !:  "To_f_headline_make":  Tables left margin changed to 10px.
   //                      !:  "$To_g_Text_replace_ary":  '„', '›', '‹', '»', '«' entries new.
   //           20130618:  !:  "$To_g_Text_replace_ary":  '&nbsp;', '&amp;', '&reg;', '&ldquo;' entries new.
@@ -184,8 +186,8 @@
   
   
   
-  //echo "Hello, world!";
-  //phpinfo();
+  // echo "Hello, world!";
+  // phpinfo();
   
   
   
@@ -211,6 +213,8 @@
   
   $Glo_g_Theme_list = array();
 
+  const color = 'color';
+  
   $Glo_g_Color_list = array(
                              '*Error:ColorNotFound'   => array( color => 'FF0000'),  // #!: Do not remove!
                              // '*SiteUndertitleH2'      => array( color => '#505050'),
@@ -232,7 +236,7 @@
   $Glo_g_Intent_InFirstLine = false;
   $Glo_g_FigAlign = 'left';
   
-  $Glo_g_Paragraph_fn = To_f_Paragraph;
+  $Glo_g_Paragraph_fn = 'To_f_Paragraph';
   
   
   
@@ -524,6 +528,8 @@
     
   }
 
+  const latexparam = 'latexparam';
+  const remain_str = 'remain_str';
   
   function To_f_replace_latexcommand_parameters( $param_str, $param_dim, $param_optional_max, $replace_ary=null, $replace_preg_ary=null, $replace_internal=true)
   {
@@ -695,7 +701,8 @@
   
   function To_f_replace_callback__latexcommand__const( $value, $replace_ary=null, $replace_preg_ary=null)
   {
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if (0 < count( $value))
     {
       $varname = $value[0][0];
       global $$varname;
@@ -715,11 +722,12 @@
   {
     global $Glo_g_Site_ary, $Glo_g_Site_activ;
 
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if (0 < count( $value))
     {
       
       return '<span style="color: #'.(To_f_Color( $value[0][0])).'">'.($value[0][1]).'</span>';  // #!: Changes the "a:hover" attribute as well for a pitty!!!
-      //return '<span style="color: #'.(To_f_Color( $value[0][0])).'" class="tools-class-link">'.($value[0][1]).'</span>';
+      // return '<span style="color: #'.(To_f_Color( $value[0][0])).'" class="tools-class-link">'.($value[0][1]).'</span>';
 
     }
     else
@@ -733,7 +741,8 @@
   {
     global $Glo_g_Site_ary, $Glo_g_Site_activ;
 
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if ((0 < count( $value)) && (1 < count( $value[0])))
     {
       
       return '<span class="'.(To_f_Color( $value[0][0])).'">'.($value[0][1]).'</span>';
@@ -750,20 +759,22 @@
   {
     global $Glo_g_Site_ary;
 
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if (0 < count( $value))
     {
       //print_r( $value);
 
       $site_name = '';
       // #?: Is type of name def?
-      if (($value[1] != null) && ($value[1][0] != null) && (strlen( $value[1][0]) != 0))
+      //%! if (($value[1] != null) && ($value[1][0] != null) && (strlen( $value[1][0]) != 0))
+      if ((1 < count( $value)) && (0 < count( $value[1])) && (strlen( $value[1][0]) != 0))
         $type = $value[1][0];
       else
         $type = 'shorttitle';
       $name = '-?-';
       
       // #?: Global notation with 3 or more parts?
-      if (To_f_Site( $site_name, $value[0][0]))
+      if (To_f_Site( $site_name, $value[0][0]))  // !!!: Check for more parameters.
       {
         //print_r( $site_name);
 
@@ -842,10 +853,12 @@
   {
     global $Glo_g_Site_ary, $Glo_g_Site_activ;
 
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if ((0 < count( $value)) && (1 < count( $value[0])))
     {
       // #: There is no url parameter "$value[1][0]" or it has no length? Check "$value[0][0]" for "$Glo_g_Site_ary" meaning.
-      if (($value[1] == null) || (strlen( $value[1][0]) == 0))
+      //%! if (($value[1] == null) || (strlen( $value[1][0]) == 0))
+      if ((count( $value) == 1) || (((2 <= count( $value)) && (1 <= count( $value[1]))) && (strlen( $value[1][0]) == 0)))
       {
         // #: Generate the site name from the "$value[0][0]".
         //%!$parts = explode( ':', $value[0][0]);
@@ -860,7 +873,8 @@
           if ($site_name != $Glo_g_Site_activ)
           {
             // #: No url string? Generate url string.
-            if ($value[1] == null)
+            //%! if ($value[1] == null)
+            if (count( $value) == 1)
             {
               $value[1] = array();
               $value[1][0] = '';
@@ -875,7 +889,7 @@
         }
       }
 
-      // #?: If site is not the activ one or is URL defined?
+      // #?: If site is not the active one or is URL defined?
       if ((isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || !(($value[1] == null) || (strlen( $value[1][0]) == 0)))
                          
         //%!{return "<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\" style=\"color: #".(((1 < count( $value[1])) && (strlen( $value[1][1]) == 6)) ? $value[1][1] : '000000')."\">{$value[0][1]}</a>";}
@@ -899,10 +913,12 @@
   
   function To_f_replace_callback__latexcommand__jumpname( $value, $replace_ary=null, $replace_preg_ary=null)
   {
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if (0 < count( $value))
     {
       // #?: Is type of name def?
-      if (($value[1] != null) && ($value[1][1] != null) && (strlen( $value[1][1]) != 0))
+      //%! if (($value[1] != null) && ($value[1][1] != null) && (strlen( $value[1][1]) != 0))
+      if ((1 < count( $value)) && (1 < count( $value[1])) && (strlen( $value[1][1]) != 0))
         $type = $value[1][1];
       else
         $type = '';
@@ -919,7 +935,8 @@
   
   function To_f_replace_callback__latexcommand__hidden( $value, $replace_ary=null, $replace_preg_ary=null)
   {
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if (0 < count( $value))
     
       return '';
       
@@ -932,10 +949,11 @@
   
   function To_f_replace_callback__latexcommand__italic( $value, $replace_ary=null, $replace_preg_ary=null)
   {
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if (0 < count( $value))
     {
 
-      return '<i>'.($value[0][0]).'</i>';
+      return '<i>'.($value[0][0]).'</i>';  // !!!: Check for parameters.
     
     }
     else
@@ -947,11 +965,12 @@
 
   function To_f_replace_callback__latexcommand__bold( $value, $replace_ary=null, $replace_preg_ary=null)
   {
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if (0 < count( $value))
     {
 
       //%!return '<b>'.($value[0][0]).'</b>';
-      return '<strong>'.($value[0][0]).'</strong>';
+      return '<strong>'.($value[0][0]).'</strong>';  // !!!: Check for parameters.
     
     }
     else
@@ -966,10 +985,11 @@
   // #: Condensed
   
   {
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if (0 < count( $value))
     {
 
-      return '<span class="tools-class-text-condensed">'.($value[0][0]).'</span>';
+      return '<span class="tools-class-text-condensed">'.($value[0][0]).'</span>';  // !!!: Check for parameters.
     
     }
     else
@@ -984,10 +1004,11 @@
   // #: Condensed Bold
   
   {
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if (0 < count( $value))
     {
 
-      return '<span class="tools-class-text-condensed-bold">'.($value[0][0]).'</span>';
+      return '<span class="tools-class-text-condensed-bold">'.($value[0][0]).'</span>';  // !!!: Check for parameters.
     
     }
     else
@@ -999,10 +1020,11 @@
 
   function To_f_replace_callback__latexcommand__small( $value, $replace_ary=null, $replace_preg_ary=null)
   {
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if (0 < count( $value))
     {
 
-      return '<small>'.($value[0][0]).'</small>';
+      return '<small>'.($value[0][0]).'</small>';  // !!!: Check for parameters.
     
     }
     else
@@ -1012,6 +1034,15 @@
   }
 
 
+  const type = 'type';
+  const search = 'search';
+  const multi_is = 'multi_is';
+  const param_dim = 'param_dim';
+  const param_optional_max = 'param_optional_max';
+  const callback_f = 'callback_f';
+  const replace_internal = 'replace_internal';
+  const callcode = 'callcode';  // #: Unused?
+
   // #: The order of entries may be importened: As example 'hidden' must be at the very beginning nad 'const' must be the next.
   $To_g_Text_replace_preg_ary = array(
                                     'hidden' =>
@@ -1020,7 +1051,6 @@
                                              multi_is => false,
                                              param_dim => 1,
                                              param_optional_max => 0,
-                                             //callcode => '',
                                              callback_f => 'To_f_replace_callback__latexcommand__hidden',
                                              replace_internal => false,     // #!: This is important for velocity and if "\\footnote" is hidden it shall not be counted and registered!
                                           ),
@@ -1029,50 +1059,13 @@
                                              search => '\\const',
                                              param_dim => 1,
                                              param_optional_max => 0,
-                                             //callcode => '',
                                              callback_f => 'To_f_replace_callback__latexcommand__const',
                                           ),
-                                    'brintent' =>     // #: Unused?
-                                      array( type => 'latexcommand',
-                                             search => '\\brintent',
-                                             param_dim => 1,     // #: This one is always empty.
-                                             param_optional_max => 1,
-                                             callcode =>
-                                                'if ($value[0] != null)'."\n".
-                                                '{'."\n".
-                                                '  if ($value[1] == null)'."\n".
-                                                '  {'."\n".
-                                                '    $value[1] = array();'."\n".
-                                                '    $value[1][0] = 6;'."\n".
-                                                '  }'."\n".
-                                                ''."\n".
-                                                '  $ret = "<br>\\n";'."\n".
-                                                ''."\n".
-                                                '  for ($i = 0; $i < $value[1][0]; $i++)'."\n".
-                                                '    $ret .= "&nbsp;&#x2060;";'."\n".
-                                                ''."\n".
-                                                '  return $ret;'."\n".
-                                                '}'."\n".
-                                                'else {return "Error: \\brintent: Parameter amount is not 0 and 1 optional!";}',
-                                              //callback_f => 'XXX_temp_internal_function_name',
-                                            ),
                                     'color' =>
                                       array( type => 'latexcommand',
-                                             //search => '/\\\\color\{[a-fA-F0-9]{6}\}\{[^\}]+\}/',
                                              search => '\\color',
                                              param_dim => 2,
                                              param_optional_max => 0,
-                                             /*%!callcode =>
-                                                //'$value = To_f_replace_preg_latexstyle_parameters( $match[0], "\\\\color", 2, 0);'.
-                                                ''.
-                                                'if ($value[0] != null)'.
-                                                '{'.
-                                                //%!'  return "<span style=\"color: #{$value[0][0]}\">{$value[0][1]}</span>";'.
-                                                //%!'  return "<span style=\"color: #".(To_f_Color( $value[0][0]))."\">{$value[0][1]}</span>";'.
-                                                '  return "<span style=\"color: #".(To_f_Color( $value[0][0]))."\" class=\"tools-class-link\">{$value[0][1]}</span>";'.
-                                                '}'.
-                                                'else {return "Error: \\color: Parameter amount is not 2 and 0 optional! $match[0]";}',*/
-                                             //callcode => '',
                                               callback_f => 'To_f_replace_callback__latexcommand__color',
                                             ),
                                     'class' =>
@@ -1080,17 +1073,13 @@
                                              search => '\\class',
                                              param_dim => 2,
                                              param_optional_max => 0,
-                                             //callcode => '',
-                                              callback_f => 'To_f_replace_callback__latexcommand__class',
+                                             callback_f => 'To_f_replace_callback__latexcommand__class',
                                             ),
                                     'name' =>
                                       array( type => 'latexcommand',
-                                             //%!search => '/\\\\name\{[*a-zA-Z0-9:-]+\}/',
                                              search => '\\name',
                                              param_dim => 1,
                                              param_optional_max => 1,
-                                             //callcode => '',
-                                             //%!callback_f => 'To_f_replace_callback__preg_replace_callback__name',
                                              callback_f => 'To_f_replace_callback__latexcommand__name',
                                           ),
                                     'jump' =>
@@ -1098,7 +1087,6 @@
                                              search => '\\jump',
                                              param_dim => 2,
                                              param_optional_max => 2,
-                                             //callcode => '',
                                              callback_f => 'To_f_replace_callback__latexcommand__jump',
                                           ),
                                     'jumpname' =>
@@ -1106,7 +1094,6 @@
                                              search => '\\jumpname',
                                              param_dim => 1,
                                              param_optional_max => 2,
-                                             //callcode => '',
                                              callback_f => 'To_f_replace_callback__latexcommand__jumpname',
                                           ),
                                     'italic' =>
@@ -1114,7 +1101,6 @@
                                              search => '\\italic',
                                              param_dim => 1,
                                              param_optional_max => 0,
-                                             //callcode => '',
                                              callback_f => 'To_f_replace_callback__latexcommand__italic',
                                           ),
                                     'bold' =>
@@ -1122,7 +1108,6 @@
                                              search => '\\bold',
                                              param_dim => 1,
                                              param_optional_max => 0,
-                                             //callcode => '',
                                              callback_f => 'To_f_replace_callback__latexcommand__bold',
                                           ),
                                     'cond' =>
@@ -1130,7 +1115,6 @@
                                              search => '\\cond',
                                              param_dim => 1,
                                              param_optional_max => 0,
-                                             //callcode => '',
                                              callback_f => 'To_f_replace_callback__latexcommand__cond',
                                           ),
                                     'condb' =>
@@ -1138,7 +1122,6 @@
                                              search => '\\condb',
                                              param_dim => 1,
                                              param_optional_max => 0,
-                                             //callcode => '',
                                              callback_f => 'To_f_replace_callback__latexcommand__condb',
                                           ),
                                     'small' =>
@@ -1146,7 +1129,6 @@
                                              search => '\\small',
                                              param_dim => 1,
                                              param_optional_max => 0,
-                                             //callcode => '',
                                              callback_f => 'To_f_replace_callback__latexcommand__small',
                                           ),
                                   );
@@ -1180,8 +1162,8 @@
 
           case 'latexcommand':
             // #?: Function not already defined?
-            if (!array_key_exists( callback_f, $value))
-              $value[callback_f] = create_function( '$value,$replace_ary=null,$replace_preg_ary=null', $value[callcode]);
+            /*%! if (!array_key_exists( callback_f, $value))
+              $value[callback_f] = create_function( '$value,$replace_ary=null,$replace_preg_ary=null', $value[callcode]); */
 
             // #: While something is found? There are two parts.
             do
@@ -1336,8 +1318,8 @@
             }
           
             // #?: Function not already defined?
-            if (!array_key_exists( callback_f, $value))
-              $value[callback_f] = create_function( '$match,$replace_ary=null,$replace_preg_ary=null', $value[callcode]);
+            /*%! if (!array_key_exists( callback_f, $value))
+              $value[callback_f] = create_function( '$match,$replace_ary=null,$replace_preg_ary=null', $value[callcode]); */
             
             // #: How to handle regular expressions is dicribed here: "http://www.regular-expressions.info/tutorial.html", "http://www.regular-expressions.info/email.html", "http://de1.php.net/manual/de/regexp.reference.meta.php".
             //%!$text_ret = preg_replace_callback( $value[search], create_function( '$match', $value[callcode]), $text_ret);
@@ -1497,7 +1479,32 @@
     
   }
   
+
   
+  const title_site = 'title_site';
+  const jump_url = 'jump_url';
+  const title_chapter = 'title_chapter';
+  const jump_anchor = 'jump_anchor';
+  // const jump_url = 'jump_url';
+  const Display = 'Display';
+  const Title = 'Title';
+  const ParagraphList = 'ParagraphList';
+  const titleColor = 'titleColor';
+  const titleClass = 'titleClass';
+  const jumpName = 'jumpName';
+  const TextColor = 'TextColor';
+  const TextAlign = 'TextAlign';
+  const intent = 'intent';
+  const NoIntentInFirstLine = 'NoIntentInFirstLine';
+  const arrayType = 'arrayType';
+  const titel_short = 'titel_short';
+  const bullet_ary = 'bullet_ary';
+  const subline = 'subline';
+  const headlineColor = 'headlineColor';
+  const TitleVis = 'TitleVis';
+  const arrayMarginLeftRight = 'arrayMarginLeftRight';
+  const sublineColor = 'sublineColor';
+  const jumpurl = 'jumpurl';
 
   function To_f_Paragraph( $type, $replace_ary=null, $replace_preg_ary=null, $offset='            ', $text)
   {
@@ -1795,11 +1802,11 @@
             
             // #?: Is URL?
             // #?: If site is not the activ one or is URL defined?
-            if ((isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || (array_key_exists( jump_url, $value_ary)))
+            if ((!array_key_exists(jump_anchor, $value_ary)) || (isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || (array_key_exists( jump_url, $value_ary)))
               //%!echo $offset.'  &rarr; &nbsp; <a href="'.($value_ary[jump_url]).( (array_key_exists( jump_anchor, $value_ary)) ? '#'.($value_ary[jump_anchor]) : '').'" style="color: #505050;">'.((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')).'</a>'.((array_key_exists( title_chapter, $value_ary) && ($value_ary[title_site] != '')) ? ' &mdash; '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')) : '').'<br>'."\n";
-              echo $offset.'  '.(((array_key_exists( type, $value_ary) && $value_ary[type] == 'back')) ? '&larr;' : '&rarr;').' &nbsp; <a href="'.($value_ary[jump_url]).( (array_key_exists( jump_anchor, $value_ary)) ? '#'.($value_ary[jump_anchor]) : '').'" style="color: #505050;">'.((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')).'</a>'.((array_key_exists( title_chapter, $value_ary) && ($value_ary[title_site] != '')) ? ' &mdash; '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')) : '').'<br>'."\n";
+              echo $offset.'  '.(((array_key_exists( type, $value_ary) && $value_ary[type] == 'back')) ? '&larr;' : '&rarr;').' &nbsp; <a href="'.(array_key_exists( jump_url, $value_ary) ? $value_ary[jump_url] : '').( (array_key_exists( jump_anchor, $value_ary)) ? '#'.($value_ary[jump_anchor]) : '').'" style="color: #505050;">'.((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')).'</a>'.((array_key_exists( title_chapter, $value_ary) && ($value_ary[title_site] != '')) ? ' &mdash; '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')) : '').'<br>'."\n";
             else
-              echo $offset.'  '.(((array_key_exists( type, $value_ary) && $value_ary[type] == 'back')) ? '&larr;' : '&rarr;').' &nbsp; '.(To_f_anchor_Jump_html( ((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_site])), $value_ary[jump_anchor], '505050', $replace_ary, $replace_preg_ary))/*.((array_key_exists( title_chapter, $value_ary) && ($value_ary[title_site] != '')) ? ' &mdash; '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_site])) : '')*/.'<br>'."\n";
+              echo $offset.'  '.(((array_key_exists( type, $value_ary) && $value_ary[type] == 'back')) ? '&larr;' : '&rarr;').' &nbsp; '.(To_f_anchor_Jump_html( ((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_site])), ((array_key_exists(jump_anchor, $value_ary)) ? $value_ary[jump_anchor] : ''), '505050', $replace_ary, $replace_preg_ary))/*.((array_key_exists( title_chapter, $value_ary) && ($value_ary[title_site] != '')) ? ' &mdash; '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_site])) : '')*/.'<br>'."\n";
           }
           
         break;
@@ -1808,6 +1815,7 @@
       case 'youtube':
       
         $textAry = array();
+        $arrayMarginLeftRight = '';
         // #?: Is it an array of figures or videos?
         if (array_key_exists( arrayType, $text) && ($text[arrayType] == 'ArrayOfDirect')) {
           $textAry = $text;
@@ -1900,7 +1908,7 @@
                   echo '              </tr>'."\n";
                   echo '              <tr>'."\n";
                   echo '                <td class="tools-class-text tools-class-text-figure" style="color: #'.(To_f_Color('*FigDescr', true)).';'.(($Glo_g_TextAlign == 'block') ? ' text-align: justify;' : '').'">'."\n";
-                  if (count($value_ary[titel]))
+                  if (0 < strlen($value_ary[titel]))
                   {
                     echo '                  <! #: PDF ist in "sitemap.xml" aufgelistet und auch im Bild verlinkt. >'."\n";
                     if ($figPDF_is || $figBigger_is)
@@ -1926,7 +1934,7 @@
                   echo '            </tr>'."\n";
                   echo '            <tr>'."\n";
                   echo '              <td class="tools-class-text tools-class-text-figure" style="color: #'.(To_f_Color('*FigDescr', true)).';'.(($Glo_g_TextAlign == 'block') ? ' text-align: justify;' : '').'">'."\n";
-                  if (count($value_ary[titel]))
+                  if (0 < strlen($value_ary[titel]))
                   {
                     echo '                <i style="color: #'.(To_f_Color('*FigTitle', true)).';">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[titel])).':</i>'."\n";
                   }
@@ -2234,9 +2242,15 @@
   
   
 
+  const label_name = 'label_name';
+  const label_text = 'label_text';
+  
   $To_g_anchor_ary_dim = 0;
   $To_g_anchor_ary = array( label_name => array(), label_text => array());
   
+  const vis_id_part_ary = 'vis_id_part_ary';
+  const invis_id_part_ary = 'invis_id_part_ary';
+
   $To_g_elements_hides_ary_dim = 0;
   $To_g_elements_hides_ary = array( vis_id_part_ary => array( array()), invis_id_part_ary => array( array()));
 
@@ -2328,6 +2342,10 @@
   
   
   
+  const text = 'text';
+  const text_short = 'text_short';
+  const name = 'name';
+
   $To_g_headline_ary_dim = 0;
   $To_g_headline_ary = array( text => array(), text_short => array(), name => array());
 

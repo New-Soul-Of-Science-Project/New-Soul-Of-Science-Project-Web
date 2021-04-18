@@ -3,7 +3,7 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 13.02.2021, 19:00h
+  // #: Stand: 17.04.2021, 20:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
@@ -89,6 +89,8 @@
   //           20210117:  !:  "$Sc_g_Text_replace_preg_ary", 'latexmath':  Default changed from 'Google' to 'MathJax'.
   //           20210213:  +:  "$Sc_g_Text_replace_ary":  Elements "\M(T)" as "&#120139;" (Mathematical Double-Struck Capital T) is new.
   //           20210411:  +:  "MathJax":  Add Macros "updownarrows", "MDoDo", "MUpUp", "MUpDo".
+  //           20210417:  !:  "$Sc_g_Text_replace_preg_ary":  '//numbermdash' and 'callcode =>' removed.
+  //                      >:  Defined a lot of constants to be compatible with PHP 7.2 and higher.
   // v01.004:  20130609:  !:  Include "Tools_v01_004.php"
   //           20130628:  +:  "$Glo_PathRel_back" added;
   // v01.003:  20130522:  !:  Include "Tools_v01_002.php"  -->  "Tools_v01_003.php"
@@ -125,7 +127,7 @@
                              '*Equation-Number'       => array( color => '000000'),
                            ), $Glo_g_Color_list);
   
-  $Glo_g_Paragraph_fn = Sc_f_Paragraph;
+  $Glo_g_Paragraph_fn = 'Sc_f_Paragraph';
   
   
   
@@ -301,7 +303,8 @@
   {
     global $Sc_g_sup_style;
 
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if (0 < count( $value))
     {
       
       return "<span style=\"{$Sc_g_sup_style}\">{$value[0][0]}</span>";
@@ -318,7 +321,8 @@
   {
     global $Sc_g_sub_style;
 
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if (0 < count( $value))
     {
       
       return "<span style=\"{$Sc_g_sub_style}\">{$value[0][0]}</span>";
@@ -331,23 +335,26 @@
   }
 
   
-  /*%! function Sc_f_replace_callback__preg_replace_callback__term( $match)
+  function Sc_f_replace_callback__latexcommand__latexmath( $value, $replace_ary=null, $replace_preg_ary=null)
   {
-    $value = To_f_replace_preg_latexstyle_parameters( $match[0], "\\term", 1, 0);
-
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if (0 < count( $value))
     {
       
-      return "<i>{$value[0][0]}</i>";
+      //-- return Sc_f_equation_latex_html( $value[0][0], ($value[1] == null) ? "" : (($value[1][0] == null) ? "" : $value[1][0]), ($value[1] == null) ? "Google" : (($value[1][1] == null) ? "Google" : $value[1][1]), "inline");
+      return Sc_f_equation_latex_html( $value[0][0], ($value[1] == null) ? "" : (($value[1][0] == null) ? "" : $value[1][0]), ($value[1] == null) ? "MathJax" : (($value[1][1] == null) ? "MathJax" : $value[1][1]), "inline");
       
     }
-    else {return "Error: \\term: Parameter amount is not 1 and 0 optional! $match[0]";}
-  } */
+    else
+      
+      return "Error: \\latexmath: Parameter amount is not 1 and 2 optional! $match[0]";
+  }
 
   
   function Sc_f_replace_callback__latexcommand__term( $value, $replace_ary=null, $replace_preg_ary=null)
   {
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if (0 < count( $value))
     {
       
       return "<i>{$value[0][0]}</i>";
@@ -360,28 +367,16 @@
   }
 
   
-  /*%! function Sc_f_replace_callback__preg_replace_callback__cite( $match)
-  {
-    $value = To_f_replace_preg_latexstyle_parameters( $match[0], "\\\\cite", 1, 0);
-
-    if ($value[0] != null)
-    {
-      
-      return Sc_f_litera_cite_html( $value[0][0], ($value[1] != null && $value[1][0] != null) ? $value[1][0] : "full");
-      
-    }
-    else {return "Error: \\cite: Parameter amount is not 1 and 0 optional! $match[0]";}
-  } */
-
-  
   function Sc_f_replace_callback__latexcommand__cite( $value, $replace_ary=null, $replace_preg_ary=null)
   {
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if (0 < count( $value))
     {
       $optional = 'standard';
 
       // #?: Is optional def?
-      if (($value[1] != null) && ($value[1][0] != null) && (strlen( $value[1][0]) != 0))
+      //%! if (($value[1] != null) && ($value[1][0] != null) && (strlen( $value[1][0]) != 0))
+      if ((1 < count( $value)) && (0 < count( $value[1])) && (strlen( $value[1][0]) != 0))
         $optional = $value[1][0];
       
       return Sc_f_litera_cite_html( $value[0][0], $optional);
@@ -398,7 +393,8 @@
   {
     $value = To_f_replace_preg_latexstyle_parameters( $match[0], "\\quote", 1, 0);
 
-    if ($value[0] != null)
+    //%! if ($value[0] != null)
+    if (0 < count( $value))
     {
       
       return "<i>&raquo;{$value[0][0]}&laquo;</i>";
@@ -406,44 +402,6 @@
     
     else {return "Error: \\quote: Parameter amount is not 1 and 0 optional! $match[0]";}
   }
-
-  
-/*%!  function Sc_f_replace_callback__preg_replace_callback__footnote( $match)
-  {
-    global $Sc_g_footnote_style;
-
-    //echo $match[0];
-    $parts = explode( "\\footnote", $match[0]);
-    unset( $parts[0]);
-    //print_r( $parts);
-
-    $error_is = false;
-    $footnote_html = "";
-
-    foreach ($parts as $key => $footnote_param)
-    {
-      $value = To_f_replace_preg_latexstyle_parameters( "\\footnote".$footnote_param, "\\footnote", 1, 1);
-
-      if ($value[0] != null)
-        $footnote_html = $footnote_html.(Sc_f_footnote_add_html( $value[0][0], (((0 < count( $value[1])) && (strlen( $value[1][0]) == 6)) ? $value[1][0] : '000000')));
-      else {$error_is = true; break;}
-
-      if (isset( $parts[$key + 1]))
-        //%!$footnote_html = $footnote_html."<sup>,</sup>";
-        $footnote_html = $footnote_html.'<span style="'.($Sc_g_footnote_style).'">,</span>';
-    }
-
-    //if ($value[0] != null)
-    if (!$error_is)
-    {
-      
-    //  return $value[0][0];
-    //  return Sc_f_footnote_add_html( $value[0][0], (((0 < count( $value[1])) && (strlen( $value[1][0]) == 6)) ? $value[1][0] : '000000'));
-      return $footnote_html;
-      
-    }
-    else {return "Error: \\footnote: Parameter amount is not 1 and 1 optional! $match[0]";}
-  }*/
 
   
   function Sc_f_replace_callback__latexcommand__footnote( $value_ary, $replace_ary=null, $replace_preg_ary=null)
@@ -455,14 +413,12 @@
     $error_is = false;
     $footnote_html = '';
     
-    //$value_ary = array( $value_ary);
-
     foreach ($value_ary as $key => $value)
     {
       //print_r( $value);
 
-      if ($value[0] != null)
-        //%!$footnote_html = $footnote_html.(Sc_f_footnote_add_html( $value[0][0], (((0 < count( $value[1])) && (strlen( $value[1][0]) == 6)) ? $value[1][0] : '000000')));
+      //%! if ($value[0] != null)
+      if (0 < count( $value))
         $footnote_html = $footnote_html.(Sc_f_footnote_add_html( $value[0][0], ((0 < count( $value[1])) ? $value[1][0] : '')));
       else
       {
@@ -471,11 +427,9 @@
       }
 
       if ($key < count( $value_ary) - 1)
-        //%!$footnote_html = $footnote_html."<sup>,</sup>";
         $footnote_html = $footnote_html.'<span style="'.($Sc_g_footnote_style).'">,</span>';
     }
 
-    //if ($value[0] != null)
     if (!$error_is)
 
       return $footnote_html;
@@ -500,140 +454,56 @@
                                       'color' =>
                                         $To_g_Text_replace_preg_ary['color'],     // #!: "color" must be the thirt element, because in "latexmath" there is "\color{formcolor}" used for color setting which not should be replaced. Was removed from the array in the lines obove.
                                       '^' =>
-                                        /*%! array( type => 'preg_replace_callback',
-                                               search => '/\^\{[^\}]+\}/',
-                                               callcode =>
-                                                  'global $Sc_g_sup_style;'.
-                                                  ''.
-                                                  '$value = To_f_replace_preg_latexstyle_parameters( $match[0], "^", 1, 0);'.
-                                                  ''.
-                                                  'if ($value[0] != null)'.
-                                                  '{'.
-                                                  //%!'  return "<sup>{$value[0][0]}</sup>";'.
-                                                  '  return "<span style=\"{$Sc_g_sup_style}\">{$value[0][0]}</span>";'.
-                                                  '}'.
-                                                  'else {return "Error: ^: Parameter amount is not 1 and 0 optional! $match[0]";}',
-                                                //callback_f => 'XXX_temp_internal_function_name',
-                                              ), */
                                         array( type => 'latexcommand',
                                                search => '^',
                                                param_dim => 1,
                                                param_optional_max => 0,
-                                               //callcode => '',
                                                callback_f => 'Sc_f_replace_callback__latexcommand__zirkumflex',
-                                            ),
+                                             ),
                                       '_' =>
-                                        /*%! array( type => 'preg_replace_callback',
-                                               search => '/_\{[^\}]+\}/',
-                                               callcode =>
-                                                  'global $Sc_g_sub_style;'.
-                                                  ''.
-                                                  '$value = To_f_replace_preg_latexstyle_parameters( $match[0], "_", 1, 0);'.
-                                                  ''.
-                                                  'if ($value[0] != null)'.
-                                                  '{'.
-                                                  //%!'  return "<sub>{$value[0][0]}</sub>";'.
-                                                  '  return "<span style=\"{$Sc_g_sub_style}\">{$value[0][0]}</span>";'.
-                                                  '}'.
-                                                  'else {return "Error: _: Parameter amount is not 1 and 0 optional! $match[0]";}',
-                                                //callback_f => 'XXX_temp_internal_function_name',
-                                              ), */
                                         array( type => 'latexcommand',
                                                search => '_',
                                                param_dim => 1,
                                                param_optional_max => 0,
-                                               //callcode => '',
                                                callback_f => 'Sc_f_replace_callback__latexcommand__underscore',
-                                            ),
+                                             ),
                                       'latexmath' =>     // #: It is not working this way, because latex includes '{' and '}' as well. A method where only searching for '\latexmath' and then looking for the Balance of an array of '[]' and '{}' would be better and can handle recursion.
                                         array( type => 'latexcommand',
                                                search => '\\latexmath',
                                                param_dim => 1,
                                                param_optional_max => 2,
-                                               callcode =>
-                                                  //'$value = To_f_replace_preg_latexstyle_parameters( $match[0], "\\\\latexmath", 1, 0);'.
-                                                  ''.
-                                                  'if ($value[0] != null)'.
-                                                  '{'.
-                                                  //'  print_r( $value[1][0]);'.
-                                                  //-- '  return Sc_f_equation_latex_html( $value[0][0], ($value[1] == null) ? "" : (($value[1][0] == null) ? "" : $value[1][0]), ($value[1] == null) ? "Google" : (($value[1][1] == null) ? "Google" : $value[1][1]), "inline");'.
-                                                  '  return Sc_f_equation_latex_html( $value[0][0], ($value[1] == null) ? "" : (($value[1][0] == null) ? "" : $value[1][0]), ($value[1] == null) ? "MathJax" : (($value[1][1] == null) ? "MathJax" : $value[1][1]), "inline");'.
-                                                  '}'.
-                                                  'else {return "Error: \\latexmath: Parameter amount is not 1 and 2 optional! $match[0]";}',
-                                                //callback_f => 'XXX_temp_internal_function_name',
-                                              ),
+                                               callback_f => 'Sc_f_replace_callback__latexcommand__latexmath',
+                                             ),
                                       'term' =>
-                                        /*%! array( type => 'preg_replace_callback',
-                                               search => '/\\\\term\{[^\}]+\}/',
-                                               //callcode => XXX, */
-                                                  /*'$value = To_f_replace_preg_latexstyle_parameters( $match[0], "\\\\term", 1, 0);'.
-                                                  ''.
-                                                  'if ($value[0] != null)'.
-                                                  '{'.
-                                                  '  return "<i>{$value[0][0]}</i>";'.
-                                                  '}'.
-                                                  'else {return "Error: \\term: Parameter amount is not 1 and 0 optional! $match[0]";}',*/
-                                                /* callback_f => 'Sc_f_replace_callback__preg_replace_callback__term',
-                                              ),*/
                                         array( type => 'latexcommand',
                                                search => '\\term',
                                                param_dim => 1,
                                                param_optional_max => 0,
-                                               //callcode => '',
                                                callback_f => 'Sc_f_replace_callback__latexcommand__term',
-                                            ),
+                                             ),
                                       'cite' =>
-                                        /*%! array( type => 'preg_replace_callback',
-                                               search => '/\\\\cite\{[\.a-zA-Z0-9:-]+\}/',
-                                               //callcode => '',
-                                               callback_f => 'Sc_f_replace_callback__preg_replace_callback__cite',
-                                              ), */
                                         array( type => 'latexcommand',
                                                search => '\\cite',
                                                param_dim => 1,
                                                param_optional_max => 1,
-                                               //callcode => '',
                                                callback_f => 'Sc_f_replace_callback__latexcommand__cite',
-                                            ),
+                                             ),
                                           ),
                                     $Sc_g_Text_replace_preg_ary,     // #!: "const" was removed from the array in the lines obove.
                                     array(
-                                      // #!: In German we do no "&mdash;" between numbers, we do "&ndash;".
-                                      'numbermdash' =>
-                                        //%!array( '/[0-9]-[0-9]/',
-                                        //%!        'return $match[0] = substr_replace( $match[0], "&mdash;", 1, 1);'),
-                                        array( type => 'preg_replace_callback',
-                                               search => '/[\s,][0-9]+-[0-9]+/',     // #!: Changed from '/[0-9]-[0-9]/' to '/[\s,][0-9]+-[0-9]+/' because anchor 'Pj:RIP:Printer-HP-Designjet-5000-5500' was modified to 'Pj:RIP:Printer-HP-Designjet-5000&mdash;5500' and made an error.
-                                               callcode =>
-                                                'return $match[0] = str_replace( "-", "&ndash;", $match[0]);'),
-                                        // ???: May be moved to Tools? Because paragraph quote is there, too.
                                       'quote' =>
                                         array( type => 'preg_replace_callback',
                                                search => '/\\\\quote\{[^\}]+\}/',
-                                               //callcode => XXX,
-                                                  /*'$value = To_f_replace_preg_latexstyle_parameters( $match[0], "\\\\quote", 1, 0);'.
-                                                  ''.
-                                                  'if ($value[0] != null)'.
-                                                  '{'.
-                                                  '  return "<i>&raquo;{$value[0][0]}&laquo;</i>";'.
-                                                  '}'.
-                                                  'else {return "Error: \\quote: Parameter amount is not 1 and 0 optional! $match[0]";}',*/
-                                                callback_f => 'Sc_f_replace_callback__preg_replace_callback__quote',
-                                              ),
-                                      /*'footnote' =>     // #: Multiple "\footnote" array is supported.
-                                        array( type => 'preg_replace_callback',
-                                               search => '/(\\\\footnote((\[\])|(\[[a-fA-F0-9]{6}\]))?\{[^\}]+\})+/',
-                                                callback_f => 'Sc_f_replace_callback__preg_replace_callback__footnote',
-                                              ),*/
+                                               callback_f => 'Sc_f_replace_callback__preg_replace_callback__quote',
+                                             ),
                                       'footnote' =>
                                         array( type => 'latexcommand',
                                                search => '\\footnote',
                                                multi_is => true,
                                                param_dim => 1,
                                                param_optional_max => 1,
-                                               //callcode => '',
                                                callback_f => 'Sc_f_replace_callback__latexcommand__footnote',
-                                            ),
+                                             ),
                                           )
                                     );
   
@@ -652,6 +522,11 @@
   
   
 
+  const equ_text_std = 'equ_text_std';
+  const equ_autonum_reset = 'equ_autonum_reset';
+  const latex_tech = 'latex_tech';
+  const equ_list = 'equ_list';
+  
   function Sc_f_Paragraph( $type, $replace_ary=null, $replace_preg_ary=null, $offset='            ', $text)
   {
     global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ, $Sc_g_equation_auto_num;
@@ -909,6 +784,13 @@
                                                                footnote => 'XXX'))); ? -->*/
 
   
+  const display = 'display';
+  const latex = 'latex';
+  const label_incr = 'label_incr';
+  const latex_if_visible = 'latex_if_visible';
+  const footnote = 'footnote';
+  const footnote_num_color = 'footnote_num_color';
+  
   function Sc_f_equation_list( $equ_text_std, $offset, $list, $latex_tech='Google')
   {
     global $Glo_g_Color_list, $To_g_anchor_ary_dim, $To_g_anchor_ary, $To_g_elements_hides_ary_dim, $To_g_elements_hides_ary, $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Sc_g_equation_auto_num,
@@ -1103,6 +985,9 @@
   }
   
   
+  // const text = 'text';
+  const text_hint = 'text_hint';
+  const text_color = 'text_color';
   
   $Sc_g_footnote_ary_dim = 0;
   $Sc_g_footnote_ary = array( text => array(), text_hint => array(), text_color => array());
@@ -1228,6 +1113,8 @@
   //$Sc_g_litera_encoding = 'MacRoman';
   //$Sc_g_litera_encoding = 'UTF-8';
   
+  const typ = 'typ';
+
   $Sc_g_litera_ary_dim = 0;
   $Sc_g_litera_ary = array( array( typ/*, label_text*/));
 
@@ -1253,7 +1140,7 @@
       $line = trim( $line);
       
       // #?: Line is not empty?
-      if (0 < count( $line))
+      if (0 < strlen( $line))
         // #?: Not in reading an entry?
         if (!$entry_open_is)
         {
@@ -1512,7 +1399,7 @@
               $author_name_ary[1] = trim( $author_name_ary[1]);
 
               echo (($author_idx < count( $author_ary) - 1) ? ', ' : ' und ').$author_name_ary[1].' '.$author_name_ary[0];
-              $author_char_last = $author_name_ary[0][count( $author_name_ary[0]) - 1];
+              $author_char_last = $author_name_ary[0][strlen( $author_name_ary[0]) - 1];
 
               $author_idx++;
             }

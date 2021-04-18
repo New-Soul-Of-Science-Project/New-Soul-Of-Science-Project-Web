@@ -1038,7 +1038,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Die Wirkungsquanten-Anzahl ergibt sich also aus dem Verhältnis seiner Energie zur Energie eines Wirkungsquants.'."\n",
-                      'Wegen der \\jump{OM:FrQFT:FirstPrinciples:Vortext:Abzählprinzip}{Einsteinschen Energie-Masse-Äquivalenz} gilt äquivalentes auch für die Masse (siehe Formel \\jumpname{OM:FrQFT:FirstPrinciples:Vortext:Equ-EMasseSumWQEnergie}).'."\n"))),
+                      'Wegen der \\jump{OM:FrQFT:FirstPrinciples:Vortext:Abzaehlprinzip}{Einsteinschen Energie-Masse-Äquivalenz} gilt äquivalentes auch für die Masse (siehe Formel \\jumpname{OM:FrQFT:FirstPrinciples:Vortext:Equ-EMasseSumWQEnergie}).'."\n"))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{(Die Detektorwellenlängenveränderung der Elapsonen aus \\jumpname[*Bearb]{OM:FrQFT:ZeitAlterungFrequenz:Dichtestruktur:EBDicht}, ZAF.RED.1, hier entwickeln und von dort hierher verweisen.)}'."\n"))),
                   /*array( 'text', array( text => array(

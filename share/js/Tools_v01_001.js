@@ -109,7 +109,7 @@ function To_f_anchor_JumpToBy_hash( hash)
 
 function To_f_hash_changed( hash)
 
-// #: Is the anchor of a window hash not visible than make it visible.
+// #: Is the anchor of a window hash not visible then make it visible.
 // !!!: If the hash is already the value and hides the equation with the anchor per click a second jump to the anchor fails because the hash does not change,
 //        but the anchor is again not displayed and can not be jumped to.
 

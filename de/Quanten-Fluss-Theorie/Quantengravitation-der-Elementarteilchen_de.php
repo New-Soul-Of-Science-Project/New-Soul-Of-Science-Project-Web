@@ -655,7 +655,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Über \\jump{OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit}{Plancks Proportionalität von Energie und Frequenz} aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-EinsteinEnergieLichtQuant-1}'."\n".
-                    'und \\jump{OM:FrQFT:FirstPrinciples:Vortext:Abzählprinzip}{Einstens Energie-Masse-Äquivalenz} aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse-1}'."\n".
+                    'und \\jump{OM:FrQFT:FirstPrinciples:Vortext:Abzaehlprinzip}{Einstens Energie-Masse-Äquivalenz} aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse-1}'."\n".
                     'können wir die effektiv störende Wirkung durch die Masse \\term{m_{ele}} ausdrücken.'."\n".
                     'So formuliert benötigen wir diese im weiteren Verlauf:'."\n"))),
                   array( 'equations',

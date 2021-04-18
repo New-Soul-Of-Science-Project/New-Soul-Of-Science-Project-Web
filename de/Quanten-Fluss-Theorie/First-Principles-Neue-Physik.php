@@ -164,7 +164,7 @@
                     'XXX'."\n"))),
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:Abzählprinzip', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:Abzaehlprinzip', text =>
                                            
                 'Abzählprinzip', subline =>
                   'Äquivalenz von Masse und Energie')),

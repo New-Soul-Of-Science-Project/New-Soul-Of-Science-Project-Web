@@ -3,7 +3,7 @@
   // #: Name:  "NSOSP.php"
   
   
-  // #: Stand: 25.02.2019
+  // #: Stand: 17.04.2021
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
@@ -19,6 +19,7 @@
   //                     +:  "nSOSp_f_tableOfContents_elementAry":  Is new.
   //          20181017:  +:  Several favicons implemented.
   //          20190225:  +:  "rel=canonical" in metadata is new.
+  //          20210417:  !:  Defined a lot of constants to be compatible with PHP 7.2 and higher.
   
   
   
@@ -29,7 +30,7 @@
   // ini_set('display_errors', 'Off');
   // error_reporting(E_ALL & ~E_WARNING);
   // error_reporting(E_ERROR | E_WARNING | E_PARSE);
-  error_reporting(E_ERROR);
+  // error_reporting(E_ERROR);
 
   
   
@@ -56,6 +57,10 @@
                                                    'Ihre Impulskegel verbinden die Wirkungsquanten zu einem geschlossenen String, der so durch einen strukturellen Regelprozess stabilisiert ist.';
   $FrQFT_g_text_WQSWQMenge                     = 'In der Realität sind extrem viele, sehr kleine Wirkungsquanten im String, die sehr nahe beieinander liegen.';
   
+  // const text = 'text';
+  const Shape = 'Shape';
+  const addtext = 'addtext';
+
   $OM_g_text_MedHaftungsausschluss =
                   array( 'text', array( text => array(
                     // # Übernommen von Alexis Rada Ling, URL: https://www.soul-frequencing.com/impressum-1
@@ -273,6 +278,18 @@
   $SpaLeb_g_footnote_text_Zwerchfell            = 'Internet: \\\\ Vgl. \\cite{Schumann:DasZwerchfellIstDerAtemmuskelSchlechthin:2011}.';
 
   
+  const fig_file_name = 'fig_file_name';
+  const fig_alt_description = 'fig_alt_description';
+  const width = 'width';
+  const height = 'height';
+  // const name = 'name';
+  // const text = 'text';
+  const figFileType = 'figFileType';
+  const figPDF_is = 'figPDF_is';
+  const figBigger_is = 'figBigger_is';
+  const border = 'border';
+  const source = 'source';
+
   $FrQFT_g_figure_ary_Elapson                   = array( fig_file_name => 'Elapson_v05', fig_alt_description => 'Elapson (ep)', width => '514px', height => '327px', name => 'set local!',
                                                          text => 'Der Wirkunsquanten-String eines idealisierter Weise kreisförmigen Elapsons ist als elektromagnetisch unpolarisierter Prototyp des Photons zu verstehen.'."\n".
                                                                   'Als solcher ist das kreisförmige Elapson als Grundbaustein des Vakuums zu sehen und wird Vakuum-Elapson genannt.'."\n".
@@ -618,7 +635,9 @@
   
 
 
-    $Glo_g_Color_list = array_merge( array(
+  // const color = 'color';
+
+  $Glo_g_Color_list = array_merge( array(
                              '*Bearb'                 => array( color => '7000A0'),
                              '*Concl'                 => array( color => '*Conclusion'),
                              '*Entwick'               => array( color => '009000'),  // #: Grün
@@ -633,6 +652,8 @@
                            ), $Glo_g_Color_list);
   
   
+  const jump_name = 'jump_name';
+
   $Glo_g_Theme_list = array(
                              // #: FrQFT
                              '*Alterung-Herlei'                      => array( jump_name => 'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:Exist'),
@@ -701,6 +722,35 @@
   $FrQFT_g_Ani_idx = 0;
   $FrQFT_g_Fig_idx = 0;
   $FrQFT_g_Vid_idx = 0;
+  
+  const url_abs = 'url_abs';
+  const url_rel = 'url_rel';
+  const titel = 'titel';
+  const description = 'description';
+  const keywords = 'keywords';
+  const text_titel_h1 = 'text_titel_h1';
+  const text_titel_short = 'text_titel_short';
+  const text_undertitel_h2 = 'text_undertitel_h2';
+  const text_titel_discr_h3 = 'text_titel_discr_h3';
+  const jump_ary = 'jump_ary';
+  const headline_text = 'headline_text';
+  const headline_text_short = 'headline_text_short';
+  const favicons_url_rel_opt = 'favicons_url_rel_opt';
+  const name_short = 'name_short';
+  const font_ary = 'font_ary';
+  const header_bgcolor = 'header_bgcolor';
+  const header_pict_name = 'header_pict_name';
+  const header_pict_width = 'header_pict_width';
+  const header_pict_height = 'header_pict_height';
+  const header_pict_bgcolor = 'header_pict_bgcolor';
+  const header_pict_alt = 'header_pict_alt';
+  const header_links_marginLeft = 'header_links_marginLeft';
+  const copy_right = 'copy_right';
+  const litera_url_rel = 'litera_url_rel';
+  const litera_bibtex_url_rel = 'litera_bibtex_url_rel';
+  const Ani_init = 'Ani_init';
+  const Fig_init = 'Fig_init';
+  const Vid_init = 'Vid_init';
   
   $Glo_g_Site_ary = array(
                           
@@ -1069,7 +1119,7 @@
                                                 'OM:FrQFT:FirstPrinciples:Vortext:Bewegungsprinzip' => array( headline_text => 'Bewegungsprinzip', headline_text_short => 'Bewegungsprinzip'),
                                                 'OM:FrQFT:FirstPrinciples:Vortext:Vereinfachungsprinzip' => array( headline_text => 'Vereinfachungsprinzip', headline_text_short => 'Vereinfachungsprinzip'),
                                                 'OM:FrQFT:FirstPrinciples:Vortext:Fraktalitaetsprinzip' => array( headline_text => 'Fraktalitätsprinzip', headline_text_short => 'Fraktalitätsprinzip'),
-                                                'OM:FrQFT:FirstPrinciples:Vortext:Abzählprinzip' => array( headline_text => 'Abzählprinzip', headline_text_short => 'Abzählprinzip'),
+                                                'OM:FrQFT:FirstPrinciples:Vortext:Abzaehlprinzip' => array( headline_text => 'Abzählprinzip', headline_text_short => 'Abzählprinzip'),
                                                 'OM:FrQFT:FirstPrinciples:Vortext:Equ-EnergieSumWQEnergie' => array( headline_text => 'FP.1'),
                                                 'OM:FrQFT:FirstPrinciples:Vortext:Equ-EMasseSumWQEnergie' => array( headline_text => $nSOSp_g_formelName_FP_2),
                                                 'OM:FrQFT:FirstPrinciples:Vortext:Equ-E-ele-aequi-zu-Masse' => array( headline_text => $nSOSp_g_formelName_FP_3),
@@ -3190,6 +3240,12 @@
 
   
   
+  const vorname = 'vorname';
+  const nachname = 'nachname';
+  const stadt = 'stadt';
+  const euro = 'euro';
+  const support = 'support';
+
   $FrQFT_g_donater_list   = array(
                                    array( vorname => 'Angelika', nachname => 'Bröder', stadt => 'Castrop Rauxel \\\\ \\color{*TitleAdd}{\\small{ (die Europastadt im Grünen ;) )}}', euro => '10'),
                                  );
@@ -3203,6 +3259,10 @@
                                  
                                  
                                  
+  const title = 'title';
+  const jumpname = 'jumpname';
+  const startsign = 'startsign';
+
   function nSOSp_f_tableOfContents_elementAry( $site_activ, $descriptionManual='')
   {
     //global $Glo_g_Site_ary;
@@ -3547,6 +3607,8 @@
 
   
   
+  const margin = 'margin';
+  
   function FrQFT_f_Div_WrapperBegin( $offset, $backward_link='')
   {
     global $Glo_PathRel_back, $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary, $Glo_g_Site_activ;
@@ -3587,14 +3649,14 @@
     echo $offset.''."\n";
     echo $offset.'    <p>'."\n";
     echo $offset.'      <h1>'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_h1])).'</h1>'."\n";
-    if (0 < strlen( $Glo_g_Site_ary[$Glo_g_Site_activ][text_undertitel_h2]))
+    if (array_key_exists( text_undertitel_h2, $Glo_g_Site_ary[$Glo_g_Site_activ]) && (0 < strlen( $Glo_g_Site_ary[$Glo_g_Site_activ][text_undertitel_h2])))
       //%! echo $offset.'      <h2 style="color: #505050">'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_undertitel_h2])).'</h2>'."\n";
       echo $offset.'      <h2 style="color: '.(To_f_Color('*SiteUndertitleH2', false)).'">'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_undertitel_h2])).'</h2>'."\n";
     echo $offset.'    </p>'."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.''."\n";
     echo $offset.''."\n";
-    if (0 < strlen( $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_discr_h3]))
+    if (array_key_exists( text_titel_discr_h3, $Glo_g_Site_ary[$Glo_g_Site_activ]) && (0 < strlen( $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_discr_h3])))
     {
       echo $offset.'    <p>'."\n";
       echo $offset.'      <h3 style="line-height: 1.4em;">'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_discr_h3])).'</h3>'."\n";
@@ -3701,6 +3763,8 @@
   
   
   
+  const content_ary = 'content_ary';
+
   $NPYo_g_index_KurseVortraegeWorkshops_Head      =
                   array( 'normal',
                     '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Kurse, Vorträge, Workshops\\hidden{, Seminare} \\small{– Erfahrungs- und Wissensvermittlung}}</h3>'."\n");
