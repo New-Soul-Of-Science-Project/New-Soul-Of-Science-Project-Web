@@ -2044,12 +2044,13 @@
                                        jump_ary => array(
                                               'OM:NPYo:Stein-der-Weisen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
-                                                'OM:NPYo:Stein-der-Weisen:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
-                                                'OM:NPYo:Stein-der-Weisen:Vortext:Fig-Hermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                                                'OM:NPYo:Stein-der-Weisen:Vortext:Fig-Hexagramm' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                                                'OM:NPYo:Stein-der-Weisen:Vortext:Fig-LebenDesHorusHermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                                                         
-                                              'OM:NPYo:Stein-der-Weisen:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                                                'OM:NPYo:Stein-der-Weisen:Vortext:XXX' => array( headline_text => 'XXX'/* , headline_text_short => '' */),
+                                              'OM:NPYo:Stein-der-Weisen:Stein-der-Weisen' => array( headline_text => 'Stein der Weisen'/* , headline_text_short => ''*/),
+                                                'OM:NPYo:Stein-der-Weisen:Stein-der-Weisen:Fig-Hermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                              'OM:NPYo:Stein-der-Weisen:Heiliger-Gral' => array( headline_text => 'Heiliger Gral'/* , headline_text_short => ''*/),
+                                                'OM:NPYo:Stein-der-Weisen:Heiliger-Gral:Fig-Hexagramm' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                              'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche' => array( headline_text => 'Phönix aus der Asche'/* , headline_text_short => ''*/),
+                                                'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-LebenDesHorusHermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                                             ),
                                      ),
                               'OM:NPYo:Vorwort' =>

@@ -29,10 +29,26 @@
                     'interpretiere in diesem Sinne den gesamthistorischen Verlauf, wie er sich mir derzeit darstellt.'."\n".
                     'Diese Zusammenhänge zeigen in meinen Augen ein tiefes intuitives und analytisches Verständnis unserer Vorfahren von der Natur unseres Lebens und unserer Welt sowie'."\n".
                     'der menschlichen Sehnsucht der Erfüllung eines glücklichen, sinnvollen und gesunden Lebens wie auch unseres Wirkens darüberhinaus.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Vortext:XXX', text =>
-                                           
-                'Stein der Weisen', subline =>
-                  'Das Prinzip der Alchemie – der Wandlungen')),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:Stein-der-Weisen:Stein-der-Weisen'),
+                    )),
+                )
+          ); ?>
+		    	<br>
+          <?php To_f_headline_add_hides_end_line(); ?>
+          
+
+		    	<!  • Stein der Weisen  >
+          <?php $Sc_g_equation_auto_num = 0; ?>
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:NPYo:Stein-der-Weisen:Stein-der-Weisen',
+              'Das Prinzip der Alchemie – das Prinzip der Wandlungen', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:Stein-der-Weisen', type => 'back'),
+                    )),
+                      
                   array( 'text', array( text => array(
                     'Beim Stein der Weisen\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:SteinDerWeisen:2019}.} handelt es sich in meinen Augen um Lebensweisheiten, die sich um das naturphilosophische Prinzip des Lebens und'."\n".
                     'der (physikalischen) Natur im Allgemeinen drehen:'."\n",
@@ -102,7 +118,7 @@
                     'Die Unterscheidung zwischen innerem und äußerem Stein der Weisen und deren Personifizierungen ist ein Ausdruck dieser Spannung und Zerrissenheit.'."\n"))),
                       
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
-                    array_merge( $NPYo_g_figure_ary_Hermesstab, array( name => 'OM:NPYo:Stein-der-Weisen:Vortext:Fig-Hermesstab',
+                    array_merge( $NPYo_g_figure_ary_Hermesstab, array( name => 'OM:NPYo:Stein-der-Weisen:Stein-der-Weisen:Fig-Hermesstab',
                                                          /* text => '' */)),
                       )),
                       
@@ -134,7 +150,7 @@
                     'Jedenfalls passt sie für mich nicht auf einen materiellen Gegenstand.'."\n",
                       'Des Rätsels Lösung ist der \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess} oder \\jump{OM:SpaLeb:Psychosomatik:Vortext:KundaliniProzess}{Kundalini-Prozess},'."\n".
                     'wie am Hermesstab\\footnote{\\const{NPYo_g_footnote_text_Hermesstab}} und'."\n".
-                    'seinen Kundalini-Schlangen zu erkennen (siehe \\jumpname{OM:NPYo:Stein-der-Weisen:Vortext:Fig-Hermesstab}).'."\n".
+                    'seinen Kundalini-Schlangen zu erkennen (siehe \\jumpname{OM:NPYo:Stein-der-Weisen:Stein-der-Weisen:Fig-Hermesstab}).'."\n".
                     'Die Darstellung dieses Entwicklungsprozesses durch aufsteigende Schlangen gab es entsprechend auch im alten Ägypten.'."\n".
                     'Ich würde die vier Zeilen demnach so deuten:'."\n"))),
                       
@@ -283,10 +299,23 @@
                       'Unsere Ahnen hatten von diesen Zusammenhängen also eine Ahnung.'."\n".
                     'Hier geht es um Konzepte vom Schicksal unseres Lebens, unserer Gesellschaft und unserer Welt.'."\n".
                     'Genau das, womit sich Religionen und Philosophien intensiv beschäftigen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Vortext:XXX', text =>
-                                           
-                'Heiliger Gral', subline =>
-                  'In seine Mythologie des Verlusts kann der Verlust eines wesentlichen Pols unseres Lebens und unserer Gesellschaft hineininterpretiert werden')),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:Stein-der-Weisen:Heiliger-Gral'),
+                    )),
+              )
+          ); ?>
+          
+
+		    	<!  • Heiliger Gral  >
+          <?php $Sc_g_equation_auto_num = 0; ?>
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:NPYo:Stein-der-Weisen:Heiliger-Gral',
+              'In seine Mythologie des Verlusts kann der Verlust eines wesentlichen Pols unseres Lebens und unserer Gesellschaft hineininterpretiert werden', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:Stein-der-Weisen:Stein-der-Weisen', type => 'back'),
+                    )),
                       
                   array( 'notice', array( Display => 'vis', text => array(
                     '• In der Hermetik ist das Androgyne der Ausgangspunkt der Schöpfung, dass sich später in die Geschlechter aufspaltet und so polarisiert.\\footnote{Vgl. \\cite{wiki:Hermetik:2019}, Die religiös-philosophischen Lehren, Der Poimandres.}',
@@ -355,13 +384,13 @@
                     'Auf diese Weise ergibt sich also für den Fall der verschwundenen Schlange ein einigermaßen plausibles Bild.'."\n"))),
                       
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
-                    array_merge( $SpaLeb_g_figure_ary_Hexagramm, array( name => 'OM:NPYo:Stein-der-Weisen:Vortext:Fig-Hexagramm',
+                    array_merge( $SpaLeb_g_figure_ary_Hexagramm, array( name => 'OM:NPYo:Stein-der-Weisen:Heiliger-Gral:Fig-Hexagramm',
                                                          /* text => '' */)),
                       )),
                       
                   array( 'text', array( text => array(
                   '\\condb{Ein Kelch verschwindet} \\\\'."\n".
-                    'Eine weitere bedeutende symbolische Veränderung betrifft die Veränderung des Hexagramms als Zeichen der Alchemie (siehe \\jumpname{OM:NPYo:Stein-der-Weisen:Vortext:Fig-Hexagramm}).'."\n".
+                    'Eine weitere bedeutende symbolische Veränderung betrifft die Veränderung des Hexagramms als Zeichen der Alchemie (siehe \\jumpname{OM:NPYo:Stein-der-Weisen:Heiliger-Gral:Fig-Hexagramm}).'."\n".
                     'Vermutlich noch viel älter ist dieses Symbol als Shiva-Shakti des hinduistischen Tantra.'."\n",
                       'Die beiden Dreiecke stehen hier für das Männliche (Spitze aufwärts, Phallus) und das Weibliche (Spitze abwärts, Kelch oder Vagina).'."\n".
                     'Die Veränderung dieses göttlichen Zeichens hat im Christentum ebenfalls das weibliche Element verloren.'."\n".
@@ -492,10 +521,23 @@
                     'Jeder muss lernen, mit ihnen umzugehen, sie zu schätzen wissen.'."\n".
                     'Erst sie machen unser Leben bunt und kreativ.'."\n",
                       'Es geht in unserem Leben, in unserer Persönlichkeitsentwicklung, im Achtsamkeitsprozess darum, zu lernen mit ihnen umzugehen, eine kluge Harmonie (fast) wieder herzustellen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Vortext:XXX', text =>
-                                           
-                'Phönix aus der Asche', subline =>
-                  '')),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche'),
+                    )),
+              )
+          ); ?>
+          
+
+		    	<!  • Phönix aus der Asche  >
+          <?php $Sc_g_equation_auto_num = 0; ?>
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:Stein-der-Weisen:Heiliger-Gral', type => 'back'),
+                    )),
                       
                   array( 'notice', array( Display => 'vis', text => array(
                     '• Den Phönix aus der Asche finden wir im \\jump{OM:NPYo:HaTha:Vortext:Fig-LebenDesHorusHermesstab}{Leben des Horus} wieder. Das Ei des Phönix ist das Ei der Metamorphose. Nach dem das Leben gelebt ist kommen wir idealer Weise im Dritten Auge an, der Sonne, die uns verbrennt und das neue Ei gebiert. So wird der Phönix wieder geboren. Der Phönix wird hier im Gott \\jump[https://de.wikipedia.org/wiki/Benu]{}{Benu} versinnbildlicht, wobei sein Feuer im Sonnenuntergang, sein feuriger Untergang als Falke, und in der Glut der Morgenröte, seiner Auferstehung als Reiher aus Aschenglut, zu finden ist.',
@@ -524,14 +566,14 @@
                     'Also geht es um die Prüfungen, die das Leben uns stellt, und ob wir diese bestehen (überleben), bis zur Fortpflanzung.'."\n"))),
                       
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
-                    array_merge( $NPYo_g_figure_ary_LebenDesHorusHermesstab, array( name => 'OM:NPYo:Stein-der-Weisen:Vortext:Fig-LebenDesHorusHermesstab',
+                    array_merge( $NPYo_g_figure_ary_LebenDesHorusHermesstab, array( name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-LebenDesHorusHermesstab',
                                                          text => 'Abbild des Lebens, das sehr ähnlich in altägyptischen Darstellungen zu finden ist. Es entsteht unten im Ei der Metamorphose, dem aschefarbenen Dreiviertel-Mond, und entwickelt sich über den Aufstieg der Kundalini-Schlangen aus der Wurzel, dem mütterlichen Schoß, ins Licht der väterlichen Sonne, der Klugheit oder Weisheit, wo es verbrennt und wieder zur Asche wird. So gesehen stellt dieses Bild erstaunlich authentisch den Kreislauf des ›Phönix aus der Asche‹ dar.')),
                       )),
                       
                   array( 'text', array( text => array(
                   '\\condb{Metamorphose zwischen Generationen} \\\\'."\n".
                     'Die me­ta­mor­phische Verwandlung vom ausgewachsenen Vogel zum Ei hat beim Phönix offensichtlicher etwas mit ›löse und verbinde‹, ›solve et coagula‹, der Alchemie zu tun.'."\n".
-                    'Die Veraschung des erwachsenen Phönix entspricht dem Vorgang der Kalzination\\color{*Bearb}{(Verweis)} der Alchemie (siehe \\jumpname{OM:NPYo:Stein-der-Weisen:Vortext:Fig-LebenDesHorusHermesstab}).\\color{*Bearb}{(Verweis)}'."\n",
+                    'Die Veraschung des erwachsenen Phönix entspricht dem Vorgang der Kalzination\\color{*Bearb}{(Verweis)} der Alchemie (siehe \\jumpname{OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-LebenDesHorusHermesstab}).\\color{*Bearb}{(Verweis)}'."\n",
                       'Hier geht es um unsere Reinigung im Sinne von Läuterung und Reinheit – reinen Herzens sein oder werden –, ähnlich, wie im Fegefeuer.'."\n".
                     'Es geht um das Mysterium der Fortpflanzung, um unser Vertrauen in dieses, um die Prüfung unseres Vertrauens, dass es weiter geht, die Saat aufgeht.'."\n".
                     'Dies ist eine \\jump{OM:NPYo:Spiritualitaet-Psychologie:Vortext:BinIchSpirituell}{Prüfung unseres Glaubens}.'."\n".
@@ -633,56 +675,10 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:XXX'),
-                    )),
-                )
-          ); ?>
-		    	<br>
-          <?php To_f_headline_add_hides_end_line(); ?>
-          
-
-		    	<!  • XXX  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
-            'OM:NPYo:Stein-der-Weisen:XXX',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
-                array(
-                  array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:XXX', type => 'back'),
-                    )),
-                      
-                  array( 'notice', array( Display => 'vis', text => array(
-                    '• XXX',
-                    ))),
-                      
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                      
-                  array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:XXX'),
+                      array(  jump_name => 'OM:NPYo:Home:Inhalt'),
                     )),
               )
-          ); */ ?>
+          ); ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>
