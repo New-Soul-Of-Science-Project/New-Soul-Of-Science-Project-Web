@@ -3,7 +3,7 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 17.04.2021, 20:00h
+  // #: Stand: 15.05.2021, 20:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
@@ -91,6 +91,7 @@
   //           20210411:  +:  "MathJax":  Add Macros "updownarrows", "MDoDo", "MUpUp", "MUpDo".
   //           20210417:  !:  "$Sc_g_Text_replace_preg_ary":  '//numbermdash' and 'callcode =>' removed.
   //                      >:  Defined a lot of constants to be compatible with PHP 7.2 and higher.
+  //           20210517:  >:  "Sc_f_replace_callback__latexcommand__zirkumflex": Use now "To_f_replace_callback__latexcommand__parameterCheck".
   // v01.004:  20130609:  !:  Include "Tools_v01_004.php"
   //           20130628:  +:  "$Glo_PathRel_back" added;
   // v01.003:  20130522:  !:  Include "Tools_v01_002.php"  -->  "Tools_v01_003.php"
@@ -304,7 +305,8 @@
     global $Sc_g_sup_style;
 
     //%! if ($value[0] != null)
-    if (0 < count( $value))
+    // if (0 < count( $value))
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 0))
     {
       
       return "<span style=\"{$Sc_g_sup_style}\">{$value[0][0]}</span>";
@@ -312,7 +314,7 @@
     }
     else
     
-      return 'Error: "^{}": Parameter amount is not 1 and 0 optional! $value[0]';
+      return 'Error: "^{}": Parameter amount is not 1 and 0 optional! Value: $value';
 
   }
 
@@ -322,7 +324,7 @@
     global $Sc_g_sub_style;
 
     //%! if ($value[0] != null)
-    if (0 < count( $value))
+    if (0 < count( $value))  // !!!: Change this to "To_f_replace_callback__latexcommand__parameterCheck" see above.
     {
       
       return "<span style=\"{$Sc_g_sub_style}\">{$value[0][0]}</span>";
@@ -338,7 +340,7 @@
   function Sc_f_replace_callback__latexcommand__latexmath( $value, $replace_ary=null, $replace_preg_ary=null)
   {
     //%! if ($value[0] != null)
-    if (0 < count( $value))
+    if (0 < count( $value))  // !!!: Change this to "To_f_replace_callback__latexcommand__parameterCheck" see above.
     {
       
       //-- return Sc_f_equation_latex_html( $value[0][0], ($value[1] == null) ? "" : (($value[1][0] == null) ? "" : $value[1][0]), ($value[1] == null) ? "Google" : (($value[1][1] == null) ? "Google" : $value[1][1]), "inline");
@@ -354,7 +356,7 @@
   function Sc_f_replace_callback__latexcommand__term( $value, $replace_ary=null, $replace_preg_ary=null)
   {
     //%! if ($value[0] != null)
-    if (0 < count( $value))
+    if (0 < count( $value))  // !!!: Change this to "To_f_replace_callback__latexcommand__parameterCheck" see above.
     {
       
       return "<i>{$value[0][0]}</i>";
@@ -370,7 +372,7 @@
   function Sc_f_replace_callback__latexcommand__cite( $value, $replace_ary=null, $replace_preg_ary=null)
   {
     //%! if ($value[0] != null)
-    if (0 < count( $value))
+    if (0 < count( $value))  // !!!: Change this to "To_f_replace_callback__latexcommand__parameterCheck" see above.
     {
       $optional = 'standard';
 
@@ -394,7 +396,7 @@
     $value = To_f_replace_preg_latexstyle_parameters( $match[0], "\\quote", 1, 0);
 
     //%! if ($value[0] != null)
-    if (0 < count( $value))
+    if (0 < count( $value))  // !!!: Change this to "To_f_replace_callback__latexcommand__parameterCheck" see above.
     {
       
       return "<i>&raquo;{$value[0][0]}&laquo;</i>";
@@ -418,7 +420,7 @@
       //print_r( $value);
 
       //%! if ($value[0] != null)
-      if (0 < count( $value))
+      if (0 < count( $value))  // !!!: Change this to "To_f_replace_callback__latexcommand__parameterCheck" see above.
         $footnote_html = $footnote_html.(Sc_f_footnote_add_html( $value[0][0], ((0 < count( $value[1])) ? $value[1][0] : '')));
       else
       {

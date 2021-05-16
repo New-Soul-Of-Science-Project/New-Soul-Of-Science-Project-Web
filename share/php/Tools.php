@@ -4,7 +4,7 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 17.04.2021, 20:00h
+  // #: Stand: 17.05.2021, 20:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
@@ -160,7 +160,8 @@
   //           20210410:  +:  "$To_g_Text_replace_ary":  '𓇳' -> '&#78323;', '☉' -> '&#9737;' new.
   //           20210417:  !:  "$To_g_Text_replace_preg_ary":  '\\brintent' and 'callcode =>' removed.
   //                      >:  Defined a lot of constants to be compatible with PHP 7.2 and higher.
-  // v01.004:  20130609:  !:  "To_f_headline_make":  Tables left margin changed to 10px.
+  //           20210517:  >:  "To_f_replace_callback__latexcommand__parameterCheck", "To_f_replace_callback__latexcommand__parameterDef": Implemented.
+// v01.004:  20130609:  !:  "To_f_headline_make":  Tables left margin changed to 10px.
   //                      !:  "$To_g_Text_replace_ary":  '„', '›', '‹', '»', '«' entries new.
   //           20130618:  !:  "$To_g_Text_replace_ary":  '&nbsp;', '&amp;', '&reg;', '&ldquo;' entries new.
   //           20130628:  +:  "$Glo_PathRel_back" added;
@@ -699,10 +700,40 @@
   }
 
   
+  function To_f_replace_callback__latexcommand__parameterCheck( $valueAryAry, $requiredParamCount, $optionalParamCount)
+  {
+    $correct = ((in_array(count( $valueAryAry), [1, 2])) && (count( $valueAryAry[0]) == $requiredParamCount));
+    
+    if ($correct) {
+      // #?: Optionals array in array?
+      if (count( $valueAryAry) == 2) {
+        $correct = (count( $valueAryAry[1]) <= $optionalParamCount);
+      }
+    }
+
+    return $correct;
+    
+  }
+
+
+  function To_f_replace_callback__latexcommand__parameterDef( $valueAryAry, $paramType, $paramPosition)
+  
+  // #: Required parameters: $paramType == 0
+  // #: Optional parameters: $paramType == 1
+
+  {
+    // print_r( '$valueAryAry: '); print_r( $valueAryAry);
+
+    return (($paramType < count( $valueAryAry)) && (($paramPosition < count( $valueAryAry[$paramType])) && (0 < strlen( $valueAryAry[$paramType][$paramPosition]))));
+    
+  }
+
+
   function To_f_replace_callback__latexcommand__const( $value, $replace_ary=null, $replace_preg_ary=null)
   {
     //%! if ($value[0] != null)
-    if (0 < count( $value))
+    // if (0 < count( $value))
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 0))
     {
       $varname = $value[0][0];
       global $$varname;
@@ -713,7 +744,7 @@
     }
     else
     
-      return 'Error: \\const: Parameter amount is not 1 and 0 optional! $value[0]';
+      return 'Error: \\const: Parameter amount is not 1 and 0 optional! Value: $value';
       
   }
 
@@ -723,7 +754,8 @@
     global $Glo_g_Site_ary, $Glo_g_Site_activ;
 
     //%! if ($value[0] != null)
-    if (0 < count( $value))
+    // if (0 < count( $value))
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 2, 0))
     {
       
       return '<span style="color: #'.(To_f_Color( $value[0][0])).'">'.($value[0][1]).'</span>';  // #!: Changes the "a:hover" attribute as well for a pitty!!!
@@ -732,7 +764,7 @@
     }
     else
       
-      return 'Error: \\color: Parameter amount is not 2 and 0 optional! '.($value[0]);
+      return 'Error: \\color: Parameter amount is not 2 and 0 optional! Value: '.($value);
     
   }
 
@@ -742,7 +774,8 @@
     global $Glo_g_Site_ary, $Glo_g_Site_activ;
 
     //%! if ($value[0] != null)
-    if ((0 < count( $value)) && (1 < count( $value[0])))
+    // if ((0 < count( $value)) && (1 < count( $value[0])))
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 2, 0))
     {
       
       return '<span class="'.(To_f_Color( $value[0][0])).'">'.($value[0][1]).'</span>';
@@ -750,7 +783,7 @@
     }
     else
       
-      return 'Error: \\class: Parameter amount is not 2 and 0 optional! '.($value[0]);
+      return 'Error: \\class: Parameter amount is not 2 and 0 optional! Value: '.($value);
     
   }
 
@@ -760,14 +793,16 @@
     global $Glo_g_Site_ary;
 
     //%! if ($value[0] != null)
-    if (0 < count( $value))
+    //%! if (0 < count( $value))
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 1))
     {
-      //print_r( $value);
+      // print_r( $value);
 
       $site_name = '';
       // #?: Is type of name def?
       //%! if (($value[1] != null) && ($value[1][0] != null) && (strlen( $value[1][0]) != 0))
-      if ((1 < count( $value)) && (0 < count( $value[1])) && (strlen( $value[1][0]) != 0))
+      // if ((1 < count( $value)) && (0 < count( $value[1])) && (strlen( $value[1][0]) != 0))
+      if (To_f_replace_callback__latexcommand__parameterDef( $value, 1, 0))
         $type = $value[1][0];
       else
         $type = 'shorttitle';
@@ -776,7 +811,7 @@
       // #?: Global notation with 3 or more parts?
       if (To_f_Site( $site_name, $value[0][0]))  // !!!: Check for more parameters.
       {
-        //print_r( $site_name);
+        // print_r( $site_name);
 
         // #?: Does site exist?
         if (array_key_exists( $site_name, $Glo_g_Site_ary))
@@ -786,7 +821,7 @@
           // #?: Is the jumpname a normal direct site jumpname with 3 not empty parts?
           if (To_f_Site_is( $value[0][0]))
           {
-            //print_r( $value[0][0]);
+            // print_r( $value[0][0]);
             
             // #?: If short title does not exist?
             if (($type == 'shorttitle') && !array_key_exists( text_titel_short, $Glo_g_Site_ary[$site_name]))
@@ -844,7 +879,7 @@
     }
     else
     
-      return 'Error: \\name: Parameter amount is not 1 and 0 optional! $value[0]';
+      return 'Error: \\name: Parameter amount is not 1 and 1 optional! Value: $value';
       
   }
 
@@ -853,13 +888,25 @@
   {
     global $Glo_g_Site_ary, $Glo_g_Site_activ;
 
+    // print_r( '$value: '); print_r( $value);
+
+    // #?: Two required parameters defined?
     //%! if ($value[0] != null)
-    if ((0 < count( $value)) && (1 < count( $value[0])))
+    //%! if ((1 <= count( $value)) && (2 <= count( $value[0])))
+    // if ((in_array(count( $value), [1, 2])) && (count( $value[0]) == 2) && ((count( $value) == 1) || ((count( $value) == 2) && (in_array(count( $value[1]), [0, 1, 2])))))
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 2, 2))
     {
+      // print_r( 'Two required parameters defined !!!');
+      // print_r( 'count( $value): '); print_r( count( $value));
+      
       // #: There is no url parameter "$value[1][0]" or it has no length? Check "$value[0][0]" for "$Glo_g_Site_ary" meaning.
       //%! if (($value[1] == null) || (strlen( $value[1][0]) == 0))
-      if ((count( $value) == 1) || (((2 <= count( $value)) && (1 <= count( $value[1]))) && (strlen( $value[1][0]) == 0)))
+      //%! if ((count( $value) == 1) || (((2 <= count( $value)) && (1 <= count( $value[1]))) && (strlen( $value[1][0]) == 0)))
+      // if ((count( $value) == 1) || ((count( $value) == 2) && ((count( $value[1]) == 0) || (strlen( $value[1][0]) == 0))))
+      if (!To_f_replace_callback__latexcommand__parameterDef( $value, 1, 0))
       {
+        // print_r( 'There is no url parameter "$value[1][0]" or it has no length? Check "$value[0][0]" for "$Glo_g_Site_ary" meaning.');
+        
         // #: Generate the site name from the "$value[0][0]".
         //%!$parts = explode( ':', $value[0][0]);
 
@@ -889,24 +936,36 @@
         }
       }
 
+      // print_r( '$value: '); print_r( $value);
+      // print_r( '$site_name: '); print_r( $site_name);
+      // print_r( '$Glo_g_Site_activ: '); print_r( $Glo_g_Site_activ);
+
       // #?: If site is not the active one or is URL defined?
-      if ((isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || !(($value[1] == null) || (strlen( $value[1][0]) == 0)))
-                         
+      //%! if ((isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || !(($value[1] == null) || (strlen( $value[1][0]) == 0)))
+      if ((isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || ((2 <= count( $value)) && (1 <= count( $value[1])) && (0 < strlen( $value[1][0]))))
+
         //%!{return "<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\" style=\"color: #".(((1 < count( $value[1])) && (strlen( $value[1][1]) == 6)) ? $value[1][1] : '000000')."\">{$value[0][1]}</a>";}
         //%!{return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\" title=\"".((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")."\" style=\"color: #".(((1 < count( $value[1])) && (strlen( $value[1][1]) == 6)) ? $value[1][1] : '000000')."\">{$value[0][1]}</a>";}
         //%!{return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\" title=\"".((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")."\"".(((1 < count( $value[1])) && (strlen( $value[1][1]) == 6)) ? " style=\"color: #".(To_f_Color( $value[1][1]))."\"" : '').">{$value[0][1]}</a>";}
-        {return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\" title=\"".((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")."\"".((1 < count( $value[1])) ? " style=\"color: #".(To_f_Color( $value[1][1]))."\"" : '').">{$value[0][1]}</a>";}
-        
+        {
+          
+          return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\" title=\"".((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")."\"".((1 < count( $value[1])) ? " style=\"color: #".(To_f_Color( $value[1][1]))."\"" : '').">{$value[0][1]}</a>";
+          
+        }
       else
                                             
         //%!{return To_f_anchor_Jump_html( $value[0][1], $value[0][0], (((1 < count( $value[1])) && (strlen( $value[1][1]) == 6)) ? $value[1][1] : '000000'));}
         //%!{return To_f_anchor_Jump_html( $value[0][1], $value[0][0], (((1 < count( $value[1])) && (strlen( $value[1][1]) == 6)) ? $value[1][1] : ''));}
-        {return To_f_anchor_Jump_html( $value[0][1], $value[0][0], ((1 < count( $value[1])) ? $value[1][1] : ''), $replace_ary, $replace_preg_ary);}
+        {
+          
+          return To_f_anchor_Jump_html( $value[0][1], $value[0][0], ((1 < count( $value[1])) ? $value[1][1] : ''), $replace_ary, $replace_preg_ary);
+          
+        }
         
     }
     else
                                                                     
-      return 'Error: \\jump: Parameter amount is not 2 and 2 optional! $value[0]';
+      return 'Error: \\jump: Parameter amount is not 2 and 2 optional! Value: $value';
                                                                     
   }
 
@@ -914,21 +973,24 @@
   function To_f_replace_callback__latexcommand__jumpname( $value, $replace_ary=null, $replace_preg_ary=null)
   {
     //%! if ($value[0] != null)
-    if (0 < count( $value))
+    // if (0 < count( $value))
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 2))
     {
       // #?: Is type of name def?
       //%! if (($value[1] != null) && ($value[1][1] != null) && (strlen( $value[1][1]) != 0))
-      if ((1 < count( $value)) && (1 < count( $value[1])) && (strlen( $value[1][1]) != 0))
+      // if ((1 < count( $value)) && (1 < count( $value[1])) && (strlen( $value[1][1]) != 0))
+      if (To_f_replace_callback__latexcommand__parameterDef( $value, 1, 1))
         $type = $value[1][1];
       else
         $type = '';
       
-      return To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '\\jump'.((!(($value[1] == null) || (strlen( $value[1][0]) == 0))) ? '[]['.($value[1][0]).']' : '').'{'.($value[0][0]).'}{\\name['.$type.']{'.($value[0][0]).'}}');
-      
+      // return To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '\\jump'.((!(($value[1] == null) || (strlen( $value[1][0]) == 0))) ? '[]['.($value[1][0]).']' : '').'{'.($value[0][0]).'}{\\name['.$type.']{'.($value[0][0]).'}}');
+      return To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '\\jump'.((To_f_replace_callback__latexcommand__parameterDef( $value, 1, 0)) ? '[]['.($value[1][0]).']' : '').'{'.($value[0][0]).'}{\\name['.$type.']{'.($value[0][0]).'}}');
+
     }
     else
     
-      return 'Error: \\jumpname: Parameter amount is not 1 and 2 optional! $value[0]';
+      return 'Error: \\jumpname: Parameter amount is not 1 and 2 optional! Value: $value';
 
   }
 
@@ -936,13 +998,14 @@
   function To_f_replace_callback__latexcommand__hidden( $value, $replace_ary=null, $replace_preg_ary=null)
   {
     //%! if ($value[0] != null)
-    if (0 < count( $value))
+    // if (0 < count( $value))
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 0))
     
       return '';
       
     else
                                                                     
-      return 'Error: \\hidden: Parameter amount is not 1 and 0 optional! $value[0]';
+      return 'Error: \\hidden: Parameter amount is not 1 and 0 optional! Value: $value';
                                                                     
   }
 
@@ -950,7 +1013,8 @@
   function To_f_replace_callback__latexcommand__italic( $value, $replace_ary=null, $replace_preg_ary=null)
   {
     //%! if ($value[0] != null)
-    if (0 < count( $value))
+    // if (0 < count( $value))
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 0))
     {
 
       return '<i>'.($value[0][0]).'</i>';  // !!!: Check for parameters.
@@ -958,7 +1022,7 @@
     }
     else
     
-      return 'Error: \\italic: Parameter amount is not 1 and 0 optional! $value[0]';
+      return 'Error: \\italic: Parameter amount is not 1 and 0 optional! Value: $value';
       
   }
 
@@ -966,7 +1030,8 @@
   function To_f_replace_callback__latexcommand__bold( $value, $replace_ary=null, $replace_preg_ary=null)
   {
     //%! if ($value[0] != null)
-    if (0 < count( $value))
+    // if (0 < count( $value))
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 0))
     {
 
       //%!return '<b>'.($value[0][0]).'</b>';
@@ -975,7 +1040,7 @@
     }
     else
     
-      return 'Error: \\bold: Parameter amount is not 1 and 0 optional! $value[0]';
+      return 'Error: \\bold: Parameter amount is not 1 and 0 optional! Value: $value';
     
   }
 
@@ -986,15 +1051,16 @@
   
   {
     //%! if ($value[0] != null)
-    if (0 < count( $value))
+    // if (0 < count( $value))
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 0))
     {
 
-      return '<span class="tools-class-text-condensed">'.($value[0][0]).'</span>';  // !!!: Check for parameters.
+      return '<span class="tools-class-text-condensed">'.($value[0][0]).'</span>';
     
     }
     else
     
-      return 'Error: \\cond: Parameter amount is not 1 and 0 optional! $value[0]';
+      return 'Error: \\cond: Parameter amount is not 1 and 0 optional! Value: $value';
     
   }
 
@@ -1005,7 +1071,8 @@
   
   {
     //%! if ($value[0] != null)
-    if (0 < count( $value))
+    // if (0 < count( $value))
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 0))
     {
 
       return '<span class="tools-class-text-condensed-bold">'.($value[0][0]).'</span>';  // !!!: Check for parameters.
@@ -1013,7 +1080,7 @@
     }
     else
     
-      return 'Error: \\conbd: Parameter amount is not 1 and 0 optional! $value[0]';
+      return 'Error: \\condb: Parameter amount is not 1 and 0 optional! Value: $value';
     
   }
 
@@ -1021,7 +1088,8 @@
   function To_f_replace_callback__latexcommand__small( $value, $replace_ary=null, $replace_preg_ary=null)
   {
     //%! if ($value[0] != null)
-    if (0 < count( $value))
+    // if (0 < count( $value))
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 0))
     {
 
       return '<small>'.($value[0][0]).'</small>';  // !!!: Check for parameters.
@@ -1029,7 +1097,7 @@
     }
     else
     
-      return 'Error: \\small: Parameter amount is not 1 and 0 optional! $value[0]';
+      return 'Error: \\small: Parameter amount is not 1 and 0 optional! Value: $value';
       
   }
 
@@ -2271,9 +2339,13 @@
       //echo '<a href="#Equ-Gra.'.($To_g_anchor_ary[label_text][$idx]).'">Gra.'.($To_g_anchor_ary[label_text][$idx]).'</a>';
       //echo '<a href="#'.($To_g_anchor_ary[label_name][$idx]).'">'.($To_g_anchor_ary[label_text][$idx]).'</a>';
       //echo '<a href="javascript:To_f_anchor_JumpToBy_hash( \'#'.($To_g_anchor_ary[label_name][$idx]).'\')">'.($To_g_anchor_ary[label_text][$idx]).'</a>';
+      
       return To_f_anchor_Jump_html( $To_g_anchor_ary[label_text][$idx], $To_g_anchor_ary[label_name][$idx], $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary);
+      
     else
+    
       return '-?-';
+      
   }
   
   
