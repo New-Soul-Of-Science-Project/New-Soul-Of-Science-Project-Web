@@ -506,6 +506,12 @@
   $NPYo_g_figure_ary_Hermesstab                  = array( fig_file_name => 'Naturphilosophie-Yoga/Hermesstab-schwarzweisseFluegel-v01', fig_alt_description => 'Hermesstab', width => '380px', height => '500px', name => 'set local!',
                                                          text => '\\color{*Bearb}{(Die Kugel sollte entsprechend der Zirbeldrüse die Form einer Zirbelnuss, eines Pinienzapfens, des Zapfens der Zirbelkiefer, bekommen, siehe Ordner Zirbeldrüse.)} Der Hermesstab mit seinen Flügeln steht für Heilung, Weisheit, und wie ich vermute für Erleuchtung und die Beflügelung der Seele und des Geistes durch ein polares Yin-Yang-Prinzip. Im Hermes Trismegistos kommt durch die Verschmelzung des griechischen Gottes Hermes mit dem ägyptischen Gott Thot auch das Wissen und die Philosophie in seine Bedeutung.');
   
+  $NPYo_g_figure_ary_HerzChakraHerzkreisAtmung   = array( fig_file_name => 'Naturphilosophie-Yoga/Herz-Chakra-Herzkreislauf-Atmung-v01', fig_alt_description => 'Herz-Chakra, Herzkreislauf, Atmung', width => '380px', height => '500px', name => 'set local!',
+                                                         text => 'Der Herzkreislauf ist das mehr unbewusste innere Care (weiblicher Aspekt) und die Atmung ist das mehr bewusste innere Care (männlicher Aspekt).');
+  
+  $NPYo_g_figure_ary_HerzChakraShivaShakti       = array( fig_file_name => 'Naturphilosophie-Yoga/Herz-Chakra-Shiva-Shakti-v01', fig_alt_description => 'Herz-Chakra, Shiva-Shakti', width => '380px', height => '500px', name => 'set local!',
+                                                         text => 'XXX');
+  
   $NPYo_g_figure_ary_IGingXiantian               = array( fig_file_name => 'Naturphilosophie-Yoga/I-Ging-Xiantian-Anordnung-v01', fig_alt_description => 'Das Yin und Yang oder Taijitu', width => '380px', height => '500px', name => 'set local!',
                                                          text => 'Das I Ging in dieser Anordnung beschreibt eine Raum aufspannende Polarisation in einer Ebene.'."\n".
                                                                   'Die sich jeweils gegenüberliegenden Gegenpole haben sich quasi im Zentrum des Rings getrennt und sich in die Entgegengesetzte Raumrichtung bewegt.'."\n".
@@ -2044,12 +2050,15 @@
                                        jump_ary => array(
                                               'OM:NPYo:Stein-der-Weisen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
-                                                'OM:NPYo:Stein-der-Weisen:Vortext:XXX' => array( headline_text => 'XXX'/* , headline_text_short => '' */),
+                                                'OM:NPYo:Stein-der-Weisen:Vortext:XXX' => array( headline_text => 'XXX'/*, headline_text_short => '' */),
+                                                         
                                               'OM:NPYo:Stein-der-Weisen:Stein-der-Weisen' => array( headline_text => 'Stein der Weisen'/* , headline_text_short => ''*/),
                                                 'OM:NPYo:Stein-der-Weisen:Stein-der-Weisen:Fig-Hermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
-                                              'OM:NPYo:Stein-der-Weisen:Heiliger-Gral' => array( headline_text => 'Heiliger Gral'/* , headline_text_short => ''*/),
+                                                         
+                                              'OM:NPYo:Stein-der-Weisen:Heiliger-Gral' => array( headline_text => 'Heiliger Gral'/*, headline_text_short => ''*/),
                                                 'OM:NPYo:Stein-der-Weisen:Heiliger-Gral:Fig-Hexagramm' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
-                                              'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche' => array( headline_text => 'Phönix aus der Asche'/* , headline_text_short => ''*/),
+                                                         
+                                              'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche' => array( headline_text => 'Phönix aus der Asche'/*, headline_text_short => ''*/),
                                                 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-LebenDesHorusHermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                                             ),
                                      ),
@@ -2748,26 +2757,30 @@
                                        jump_ary => array(
                                               'OM:SpaLeb:Psychosomatik:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
-                                                'OM:SpaLeb:Psychosomatik:Vortext:MehrGeschDetails' => array( headline_text => 'Mehr geschichtliche Details', headline_text_short => 'Mehr geschichtliche Details'),
-                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Gefuehls-Handlungspol' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Hermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Hexagramm' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-LebenDesHorusHermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Handlungsgradient' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Gefuehlsgradient' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                                                'OM:SpaLeb:Psychosomatik:Vortext:Achtsamkeitsgradient' => array( headline_text => 'Der Achtsamkeitsgradient im menschlichen Körper', headline_text_short =>  'Der Achtsamkeitsgradient im menschlichen Körper'),
-                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Achtsamkeitsgradient' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                                                'OM:SpaLeb:Psychosomatik:Vortext:AtmungEntlangAchtsamkeitsgradienten' => array( headline_text => 'Die Atmung läuft entlang des Achtsamkeitsgradienten', headline_text_short =>  'Die Atmung läuft entlang des Achtsamkeitsgradienten'),
-                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Atmung-Atemspannung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:MehrGeschDetails' => array( headline_text => 'Mehr geschichtliche Details'/*, headline_text_short => ''*/),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Gefuehls-Handlungspol' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Hermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Hexagramm' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-LebenDesHorusHermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Handlungsgradient' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Gefuehlsgradient' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:Achtsamkeitsgradient' => array( headline_text => 'Der Achtsamkeitsgradient im menschlichen Körper'/* , headline_text_short =>  ''*/),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Achtsamkeitsgradient' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:AtmungEntlangAchtsamkeitsgradienten' => array( headline_text => 'Die Atmung läuft entlang des Achtsamkeitsgradienten'/*, headline_text_short =>  ''*/),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Atmung-Atemspannung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Psychosomatik:Vortext:LoeseUndVerbinde' => array( headline_text => 'Löse und verbinde — ›solve et coagula‹', headline_text_short =>  'Löse und verbinde'),
-                                                'OM:SpaLeb:Psychosomatik:Vortext:KundaliniProzess' => array( headline_text => 'Der Kundalini-Prozess', headline_text_short =>  'Der Kundalini-Prozess'),
-                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Kundalini-Prozess' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Gefuehls-Handlungspol-Waage' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                                                'OM:SpaLeb:Psychosomatik:Vortext:Perspektiven' => array( headline_text => 'Das kluge Spiel mit unseren Perspektiven', headline_text_short => 'Das kluge Spiel mit unseren Perspektiven'),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:KundaliniProzess' => array( headline_text => 'Der Kundalini-Prozess'/*, headline_text_short =>  ''*/),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Kundalini-Prozess' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:Care' => array( headline_text => 'Der Stein der Weisen'/*, headline_text_short =>  ''*/),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Herz-Chakra-Herzkreislauf-Atmung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Herz-Chakra-Shiva-Shakti' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Hermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:Fig-Gefuehls-Handlungspol-Waage' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:Perspektiven' => array( headline_text => 'Das kluge Spiel mit unseren Perspektiven'/*, headline_text_short => ''*/),
                                                          
-                                              'OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler' => array( headline_text => 'Innerer Marionettenspieler', headline_text_short => 'Innerer Marionettenspieler'),
+                                              'OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler' => array( headline_text => 'Innerer Marionettenspieler'/*, headline_text_short => ''*/),
                                                          
-                                              'OM:SpaLeb:Psychosomatik:Muskuloese-Rueckseite' => array( headline_text => 'Muskulöse Rückseite', headline_text_short => 'Muskulöse Rückseite'),
+                                              'OM:SpaLeb:Psychosomatik:Muskuloese-Rueckseite' => array( headline_text => 'Muskulöse Rückseite'/*, headline_text_short => ''*/),
                                             ),
                                      ),
                               'OM:SpaLeb:Psychosomatik-Entscheidungen' =>

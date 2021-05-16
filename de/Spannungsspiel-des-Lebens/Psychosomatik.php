@@ -226,7 +226,50 @@
                   array( 'text', array( text => array(
                     'Ist sicherlich nicht rein zufällig in unseren Sprachgebrauch gelangt.'."\n",
                       'Ich vermute, dass auch gerade dieses Heilen und Weise-Werden als sich transformieren durch lernen, dadurch, dass wir uns fortentwickeln,'."\n".
-                    'mit dem ›Stein der Weisen‹ der Alchemie des Gottes Hermes Trismegistos\\footnote{\\const{NPYo_g_footnote_text_HermesTrismegistos}} (Thot-Hermes) gemeint ist.'."\n"))),
+                    'mit dem \\jump{OM:SpaLeb:Psychosomatik:Vortext:Care}{›Stein der Weisen‹} der Alchemie des Gottes Hermes Trismegistos\\footnote{\\const{NPYo_g_footnote_text_HermesTrismegistos}} (Thot-Hermes) gemeint ist.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:Care', text =>
+                      
+                'Care oder Fürsorge – fühlen, mitfühlen, sich kümmern und dabei lernen', subline =>
+                  'Der Stein der Weisen')),
+                  array( 'text', array( text => array(
+                    'In meinen Augen ist der innere \\jump{OM:NPYo:Stein-der-Weisen:Stein-der-Weisen}{›Stein der Weisen‹} tief mit unserer Psychosomatik verbunden.'."\n".
+                    'Er ist das Symbol für das Sich-Kümmern; für die innere und äußere Fürsorge, für die Liebe und Leidenschaft; für die emotionale und handelnde Verbundenheit'."\n".
+                    'zu sich selbst, zu anderen und unserer Lebenswelt.'."\n".
+                    'Und dabei lernen wir, wie das zusammenhängt; wir werden weiser über das Leben.'."\n"))),
+                      
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
+                    array_merge( $NPYo_g_figure_ary_HerzChakraHerzkreisAtmung, array( name => 'OM:SpaLeb:Psychosomatik:Vortext:Fig-Herz-Chakra-Herzkreislauf-Atmung',
+                                                         /* text => '' */)),
+                      )),
+                      
+                  array( 'text', array( text => array(
+                    'Unser Herzkreislaufsystem mit unserem Herzschlag besorgt unsere innere Versorgung und kümmert sich so darum, unseren Stoffwechsel in Gang zu halten.'."\n".
+                    'Dieser Prozess läuft weitgehend unbewusst und gehört deshalb zum weiblichen Aspekt unseres Bewusstseins/Unbewusstseins-Pols.'."\n".
+                    'Das Herz sitzt auf der Gefühlsseite unserer Körperhälften.'."\n",
+                      'Unsere \\jump{OM:SpaLeb:Psychosomatik:Vortext:AtmungEntlangAchtsamkeitsgradienten}{Atmung} versorgt unser Inneres mit wichtigen Stoffen von außen und entsorgt andere nach außen.'."\n".
+                    'Die Atmung ist ein eher bewusster und nur teils unbewusster Vorgang und daher mehr auf der Handlungsseite unserer Körperhälften verortet.'."\n".
+                    'Der Lungenflügel auf der Handlungsseite ist deutlich größer als der auf der Gefühlsseite.'."\n"))),
+                      
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
+                    array_merge( $NPYo_g_figure_ary_HerzChakraShivaShakti, array( name => 'OM:SpaLeb:Psychosomatik:Vortext:Fig-Herz-Chakra-Shiva-Shakti',
+                                                         /* text => '' */)),
+                      )),
+                      
+                  array( 'text', array( text => array(
+                    'Die gerade beschriebene innere Versorgung ist die Erdung für das Care nach außen.'."\n".
+                    'Sind wir gut geerdet, so richten wir uns durch die Atemspannung auf und richten unsere gefühlvoll sensible Vorderseite nach vorne aus,'."\n".
+                    'so dass wir gut nach außen fühlen und handeln können.'."\n"))),
+                      
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
+                    array_merge( $NPYo_g_figure_ary_Hermesstab, array( name => 'OM:SpaLeb:Psychosomatik:Vortext:Fig-Hermesstab',
+                                                         /* text => '' */)),
+                      )),
+                      
+                  array( 'text', array( text => array(
+                    'Wir lernen uns und unsere Lebenswelt durch fühlen, mitfühlen – durch hinein horchen, zuhören, kommunizieren – und uns kümmern kennen.'."\n".
+                    'Wir machen eine Persönlichkeitsentwicklung durch und werden weiser.'."\n".
+                    'Uns darum zu kümmern, wie es uns geht, und dafür zu sorgen, dass es uns und unserer Lebenswelt immer besser geht,'."\n".
+                    'fördert und beflügelt unsere Selbstheilung, ausgedrückt durch den Hermesstab\\footnote{\\const{NPYo_g_footnote_text_Hermesstab}} (heute meist Äskulapstab oder Asklepiosstab\\footnote{\\const{FrQFT_g_footnote_text_Aeskulapstab}}).'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:KundaliniProzess', text =>
                       
                 'Der Kundalini-Prozess', subline =>
