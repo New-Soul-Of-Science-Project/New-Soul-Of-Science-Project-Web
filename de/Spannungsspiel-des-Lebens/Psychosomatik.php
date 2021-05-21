@@ -293,6 +293,9 @@
                       
                 'Ausgeglichenheit', subline =>
                   '')),
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '• HaTha Yoga bezieht sich aus tantrischer Sicht auf den Ausgleich, die Harmonie, unserer Körperhälften.',
+                    ))),
                   array( 'text', array( text => array(
                     'Bei unserer Ausgeglichenheit geht es um eine angenehme Balance zwischen unseren Gefühlen – unserer Wahnehmung - und unseren Handlungen.'."\n".
                     'Diese Balance zwischen den Polen zu finden ist ein wesentlicher Teil des Kundalini-Prozesses.'."\n".
