@@ -2778,6 +2778,8 @@
                                                 'OM:SpaLeb:Psychosomatik:Vortext:Fig-Gefuehls-Handlungspol-Waage' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Psychosomatik:Vortext:Perspektiven' => array( headline_text => 'Das kluge Spiel mit unseren Perspektiven'/*, headline_text_short => ''*/),
                                                          
+                                              'OM:SpaLeb:Psychosomatik:Betaeubt-Gelaehmt' => array( headline_text => 'Betäubt und Gelähmt'/*, headline_text_short => ''*/),
+                                                         
                                               'OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler' => array( headline_text => 'Innerer Marionettenspieler'/*, headline_text_short => ''*/),
                                                          
                                               'OM:SpaLeb:Psychosomatik:Muskuloese-Rueckseite' => array( headline_text => 'Muskulöse Rückseite'/*, headline_text_short => ''*/),

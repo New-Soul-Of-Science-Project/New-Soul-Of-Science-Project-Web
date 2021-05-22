@@ -126,6 +126,9 @@
                       
                 'Der Gefühlsgradient und der Handlungsgradient im menschlichen Körper', subline =>
                   '')),
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '• Es gibt auch noch die Perspektive, in der unsere Rückseite unbewusster oder unterbewusster ist (weiblicher Aspekt) und die Vorderseite bewusster (männlicher Aspekt).',
+                    ))),
                   array( 'text', array( text => array(
                     'Die Pole des Achtsamkeitsprozesses drücken sich nicht nur in der Spezialisierung unserer Gehirn- und Körperhälften aus.'."\n".
                     'Wir finden sie auch als Verläufe oder Gradienten in den beiden zu unseren Körperhälften senkrechten Richtungen:'."\n"))),
@@ -646,13 +649,65 @@
 //                    'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler'),
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik:Betaeubt-Gelaehmt'),
                     )),
                 )
           ); ?>
 		    	<br>
           <?php To_f_headline_add_hides_end_line(); ?>
           
+
+		    	<! Betäubt und Gelähmt >
+          <?php $Sc_g_equation_auto_num = 0; ?>
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:SpaLeb:Psychosomatik:Betaeubt-Gelaehmt',
+              'Psychosomatische Probleme', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'vis', text => array(
+                    // '\\bold{XXX:}',
+                    '• Wenn wir uns gegen unsere eigenen Gefühle schützen, dann ergibt sich nach meiner eigenen Erfahrung auf der Gefühlsseite ein verdecktes Taubheitsgefühl.',
+                    '• Auf der Handlungsseite stellt es sich mir als Lähmung dar; wir können uns nicht zu einer Handlung entscheiden oder wollen alles zu gleich.',
+                    '• Ein näherer Blick darauf zeigt für mich: Wir sind nicht aktiv bereit und fähig klug zu fühlen. Wir sind nicht aktiv bereit klug zu handeln:',
+                    '– Muskulatur und Faszien: Die Muskulatur beispielsweise ist nicht locker und dennoch aktiv und leicht vorgespannt. Sie ist eher deaktiviert und teilweise verspannt.',
+                    '⋅ Diese Verspannungen kommen nach meinem Eindruck dadurch, dass unser Unterbewusstsein ein Notprogramm fährt, in dem es eine unflexible Grund- oder Notstabilität herstellt.',
+                    '⋅ Geben wir unserem Unterbewusstsein das mehr bewusste Signal, wir  kümmern uns, ›we care‹, dann kann das Notprogramm zurückgefahren werden.',
+                    '⋅ Achtung: Wenn dies so einen guten Realitätsbezug hat, dies so stimmt, dann ist Progressive Muskelentspannung nach Jacobson(link) nicht so ganz das Richtige. Das kommt weil bei Jacobson das Risiko besteht, dass es zu einer Überentspannung führt, weil perspektivisch der Grundtonus unserer Muskulatur reduziert werden kann, was ja nach meiner Erfahrung und Analyse genau das Problem hervorruft. Jacobson könnte demnach vorwiegend eine anfängliche Erleichterung bringen und später das Problem verstärken, wenn wir uns nicht um den Erhalt unseres Muskulgrundtonus kümmern.',
+                    '• Dies alles führt zu Verspannungen, weil das Unterbewusstsein die Faszien in einen stabilisierenden Notmodus bringt (siehe \\italic{\\jumpname{OM:SpaLeb:Psychosomatik-Stress}}).',
+                    ))),
+                      
+                   array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler'),
+                    )),
+              )
+          ); ?>
+
 
 		    	<! Innerer Marionettenspieler >
           <?php $Sc_g_equation_auto_num = 0; ?>
@@ -661,7 +716,7 @@
               'In unserem Kopf sitzt ein psychomechanisches Kopf-Stimmungssystem', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Psychosomatik', type => 'back'),
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik:Betaeubt-Gelaehmt', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'vis', text => array(
@@ -719,6 +774,7 @@
                     )),
                       
                   array( 'notice', array( Display => 'vis', text => array(
+                    '• Es gibt auch noch die Perspektive, in der unsere Rückseite unbewusster oder unterbewusster ist (weiblicher Aspekt) und die Vorderseite bewusster (männlicher Aspekt).',
                     // '\\bold{XXX:}',
                     '• Unsere muskulöse Körperrückseite ist, wenn wir in einer generalisierten Schonhaltung sind, deaktiviert und verspannt.',
                     '• Eine generalisierte Schonhaltung können wir verlassen, wenn wir diese Muskulatur aktivieren. Dazu gehört auch die Muskulatur unseres \\jump{OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler}{inneren Marionettenspielers}, die unter anderem die Räume im Kopf öffnet.',
