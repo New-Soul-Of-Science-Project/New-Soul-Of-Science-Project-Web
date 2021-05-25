@@ -14,14 +14,14 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
-                    // !!! '• Zu Untersuchungen diesbezüglich, siehe Ordner "Sandkuhl, Jan". Er hat dort diverse Hnweise darauf gegeben. Mal durchschauen.',
+                    // !!! '• Zu Untersuchungen diesbezüglich, siehe Ordner "Sandkuhl, Jan". Er hat dort diverse Hinweise darauf gegeben. Mal durchschauen.',
                     '\\bold{Entstehung von Verspannungen}',
                     '• Siehe auch besonders \\italic{\\jumpname{OM:SpaLeb:Psychosomatik:Betaeubt-Gelaehmt}}. Auch für die \\jumpname{OM:SpaLeb:Psychosomatik-Stress:Problemloesungsansaetze}.',
                     '\\bold{Zwerchfellverspanung:}',
                     '• Gute Infos: \\jump[https://yoga-body.de/zwerchfell/]{}{yoga-body.de – ZWERCHFELL – DIE 1 WICHTIGE URSACHE FÜR SCHMERZEN IM GANZEN KÖRPER – TEST – IST DEIN ZWERCHFELL VERSPANNT?}',
                     '• Test: \\quote{Lege dich auf einen stabilen und festen Untergrund. Am Besten auf eine Matte am Boden. Du solltest lockere und bewegliche Hosen anhaben. Stelle die Beine an, die Füße stellst du da hin wo deine Knie vorher waren. Die Arme liegen ausgestreckt auf Schulterhöhe. Die Beine zusammen erst zu einen und dann zur anderen Seite komplett absinken lassen. Auswertung …} (\\jump[https://yoga-body.de/zwerchfell/]{Test_8211_Ist_dein_Zwerchfell_verspannt}{yoga-body.de – ZWERCHFELL – DIE 1 WICHTIGE URSACHE FÜR SCHMERZEN IM GANZEN KÖRPER – TEST – IST DEIN ZWERCHFELL VERSPANNT?}',
-                    '• Magenschmerzen, Magenförtner und Sodbrennen etc.:',
-                    '– Der Magenförtner ist kein richtiger Schließmuskel, sondern ein Teil des Zwerchfells. Siehe \\jump[https://de.wikipedia.org/w/index.php?title=Schließmuskel&oldid=178568770]{}{Wikipedia – Schließmuskel}.',
+                    '• Magenschmerzen, Magenpförtner und Sodbrennen etc.:',
+                    '– Der Magenpförtner ist kein richtiger Schließmuskel, sondern ein Teil des Zwerchfells. Siehe \\jump[https://de.wikipedia.org/w/index.php?title=Schließmuskel&oldid=178568770]{}{Wikipedia – Schließmuskel}.',
                     '– Wenn bei Stress das Zwerchfell Druck auf den Magen ausübt, können Magenschmerzen und Sodbrennen die Folge sein.',
                     '\\bold{Sonstiges:}',
                     '• Beckenboden-Anus: Der Beckenboden-Anus zusammen mit der Atmung scheint mir der Schlüssel bei der Psychosomatik. Besonders auch was den Hüft-, Rücken- und Nackenbereich angeht. Wenn ich den Beckenboden-Anus intensiv bei der Einatmung aktiviere, dann lösen sich die Verspannungen in Hüfte, Rücken und Nacken merklich. Vermutlich ist es die intensive Verbindung vom Beckenboen-Anus-Pol zum Kopfraum-Öffnungspol, wobei der Beckenboen-Anus-Pol der Ausgangspunkt der Körperspannung ist.',
@@ -31,7 +31,7 @@
                     '• Verspannungen verstärken sich im Laufe des Alters tendenziell. Aber nicht, weil man 50, 60 oder 70 ist, sonder weil der Teufelskreis immer länger auf einen einwirkt. Wenn zum Beispiel 10 Jahre ein Gift auf einen einwirkt, dann wird man in der Zeit schleichend immer kränker. Es ist aber nicht so entscheidend, ob ich 10, 30, 40 oder 50 Jahre alt bin. Es geht um die Dauer.',
                     '• \\jump{OM:SpaLeb:Koerperspannung:Schonhaltung}{körperliche Schonhaltung} anmerken und drauf verweisen.',
                     '• Die hier beschriebenen chronischen Verspannungen führen zu Schmerzen, die dann ganz oder zum Teil ausgeblendet werden. Der untergründige durch unseren Selbstschutz oder Unwichtigkeitsfilter ausgeblendete \\jump{OM:SpaLeb:Psychosomatik-Stress}{körperliche Schmerz} oder \\jump{OM:SpaLeb:Psyche-und-Stimmung:Selbstmitgefuehl}{seelische Schmerz} hat massiven Einfluss auf unser Wohlbefinden. Wir können diesen Bezug aufgrund des Ausgeblendet-Seins nur sehr schwer herstellen. Dies könnte einer der wesentliche Gründe sein, warum Schmerzmittel Abusus so weit verbreitet ist. Es sind viel mehr Schmerzen vorhanden, als wir uns Bewusst sind, und so fällt auch die Erleichterung um einiges Größer aus, wenn wir Schmerzmittel nehmen, als wir gedacht hätten. Ein unbewusster Aha-Effekt, der einen tiefen Anker setzt und uns verleitet immer wieder darauf zurück zu greifen.',
-                    '• Über eine innere Unlockerheit und psychische wie körperliche Verspanntheit, können nach meiner Beobachtung Schwierigkeiten wie Leseschwächen und Legastenie ausgelöst werden.',
+                    '• Über eine innere Unlockerheit und psychische wie körperliche Verspanntheit, können nach meiner Beobachtung auch Schwierigkeiten wie Leseschwächen und Legasthenie ausgelöst werden.',
                     ))),
                       
                   array( 'text', array( text => array(
