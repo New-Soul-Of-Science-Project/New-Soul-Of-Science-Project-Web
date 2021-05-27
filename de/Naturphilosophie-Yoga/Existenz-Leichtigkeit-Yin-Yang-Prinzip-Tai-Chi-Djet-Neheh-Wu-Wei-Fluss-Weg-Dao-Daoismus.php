@@ -238,7 +238,7 @@
                     '\\bold{Prioritäten und Entscheidungen}',
                      '• Wu Wei hat etwas damit zu tun, gute Prioritäten zu setzen und gute Entscheidungen zu fällen, siehe \\italic{\\jumpname{OM:SpaLeb:Psychosomatik-Entscheidungen}}.',
                      '⋅ Unser Leben bekommt mehr Leichtigkeit, wenn wir die Interpretation unserer Vergangenheit durch für uns leichtere Neuinterpretationen ergänzen. Wir verändern dadurch tatsächlich unsere Vergangenheit (siehe \\italic{\\jumpname{OM:NPYo:WieVeraendereIchMeineVergangenheit}}).',
-                     '• Wu Wei heißt: Solange warten, bis ich weiß, was ich tue. (Stefan)',
+                     '• Wu Wei heißt: Solange warten, bis ich weiß, was ich tue.',
                     ))),
                       
                   array( 'text', array( text => array(

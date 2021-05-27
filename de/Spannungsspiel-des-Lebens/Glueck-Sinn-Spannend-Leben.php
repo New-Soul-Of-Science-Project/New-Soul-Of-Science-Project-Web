@@ -30,7 +30,7 @@
                                            
                 'Der Sinn in meinem Leben')),
                   array( 'text', array( text => array(
-                    'Im Juni 2019 haben wir uns mit unserem guten und lieben Freund Stefan unterhalten und ihn wieder einmal, wie so oft, in ein tiefsinniges Gespräch verwickelt.'."\n".
+                    'Im Juni 2019 haben wir uns mit einem guten und lieben Freund unterhalten und ihn wieder einmal, wie so oft, in ein tiefsinniges Gespräch verwickelt.'."\n".
                     'Es ging eingangs darum, dass ich das Wort Schicksal für mich entdeckt hatte und nun mehr damit anzufangen wusste.'."\n".
                     'Ausdruck dessen war meine neue Internetseite \\italic{\\jumpname{OM:NPYo:HaTha}}.'."\n",
                       'Über die Bedeutung des Begriffs Schicksal kamen wir auch auf die Bedeutung des Begriffs Sinn, oder Sinn des Lebens.'."\n"))),
@@ -38,7 +38,7 @@
                                            
                 'Der Zusammenhang der Dinge in meinem Leben \\\\ \\color{*TitleAdd}{\\small{Der Zusammenhang meines Lebens}}')),
                   array( 'text', array( text => array(
-                    'Und nach einigem Hin und Her sagte Stefan so etwas ähnliches wie:'."\n"))),
+                    'Und nach einigem Hin und Her sagte mein Freund so etwas ähnliches wie:'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                       'Seinem Leben einen Sinn geben heißt doch, alle Dinge, die wir im Leben machen, miteinander zu verbinden.'."\n"))),
