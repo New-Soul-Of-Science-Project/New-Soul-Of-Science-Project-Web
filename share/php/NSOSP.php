@@ -1184,6 +1184,7 @@
                                                 'OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant' => array( headline_text => $nSOSp_g_formelName_Un_10),
                                                 'OM:FrQFT:HeisenbergUnschaerfe:Equ-HeisenbUnschDeltaEnergieMalDeltaZeitGroesserUngefaehrH' => array( headline_text => 'Un.14'),
                                               'OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit-Uebergang-Substruktur' => array( headline_text => 'Energie und Zeit – Übergang zur Substruktur'/* , headline_text_short => '' */),
+                                                'OM:FrQFT:HeisenbergUnschaerfe:Equ-EnergieWQRotationsteilung' => array( headline_text => 'Un.18'),
                                               'OM:FrQFT:HeisenbergUnschaerfe:Impuls-und-Ort' => array( headline_text => 'Impuls und Ort', headline_text_short => 'Impuls und Ort'),
                                               'OM:FrQFT:HeisenbergUnschaerfe:Schlussfolgerung-fuer-die-Quantenmechanik' => array( headline_text => 'Schlussfolgerung für die Quantenmechanik', headline_text_short => 'Schlussfolgerung für die Quantenmechanik'),
                                             ),

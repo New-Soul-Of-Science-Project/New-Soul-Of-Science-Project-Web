@@ -274,9 +274,14 @@
                   //   array_merge( $FrQFT_g_figure_ary_HeisenbUnschaerf, array( name => 'OM:FrQFT:HeisenbergUnschaerfe:Fig-HeisenbUnschaerf'))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Der Zähler \\term{n} meint die Anzahl der Rotationen eines Elementarteilchens.'."\n".
+                    'Während \\term{n_{ele,wq}} für die Anzahl der Wirkungsquanten des Substruktur steht:'."\n".
+                    'Das bedeutet, dass bei jeder Rotation \\term{n_{ele,wq}} Wirkungsquanten mit ihren Impulskegeln durch rotieren.'."\n",
+                      'In der \\italic{\\jumpname{OM:FrQFT:Quantengravitation}} sollte also jeder Impulskegel \\term{h} nicht, wie bisher gedacht, für einen Wirkungsquanten-Impulskegel stehen,'."\n".
+                    'sondern für einen Impuls, der einer einzelnen Rotation des Elementarteilchens entspricht.'."\n".
+                    'Das würde bedeuten, dass ein Impulskegel, der \\term{h} entspricht, einem Graviton entsprechen sollte.'."\n",
+                      'Bringen wir die fundamentale Annahme, dass die „Körner“ der Substruktur der Elementarteilchen, die Wirkungsquanten, Energie- und Masseeinheiten sind,'."\n".
+                    'dann ergibt sich folgendes:'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -284,11 +289,24 @@
                     'XXX'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Un', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  E_{ele} \pm \Delta E_{ele}  =  \frac{ \Delta n \cdot h }{ \Delta t } \pm \frac{ h }{ \Delta t }  }',
-                                               label_name => 'OM:FrQFT:HeisenbergUnschaerfe:Equ-EnergieHsZaehlen'),
+                      array( display => 'on',  latex => '{  E_{ele} \pm \Delta E_{ele}  =  \frac{ \Delta n \cdot h }{ \Delta t } \pm \frac{ h }{ \Delta t }  }',
+                                               /* label_name => '', */ label_text => '\\jumpname{OM:FrQFT:HeisenbergUnschaerfe:Equ-EnergieHsZaehlen}', label_incr => false),
                       array( display => 'on',  latex => '{  E_{ele}  =  n_{ele,wq} \cdot E_{wq}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ E_{ele} \pm \Delta E_{ele} }{ h }  =  \frac{ \Delta n }{ \Delta t } \pm \frac{ 1 }{ \Delta t }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \left( E_{wq} \pm \Delta E_{wq} \right) \cdot n_{ele,wq}  =  \frac{ \Delta n \cdot h }{ \Delta t } \pm \frac{ h }{ \Delta t }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  E_{wq} \pm \Delta E_{wq}  =  \frac{ \Delta n \cdot h }{ n_{ele,wq} \cdot \Delta t } \pm \frac{ h }{ n_{ele,wq} \cdot \Delta t }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  E_{wq} \pm \Delta E_{wq}  =  \frac{ \frac{ \Delta n }{ n_{ele,wq} } \cdot h }{ \Delta t } \pm \frac{ \frac{ 1 }{ n_{ele,wq} } \cdot h }{ \Delta t }  }',
+                                              label_name => 'OM:FrQFT:HeisenbergUnschaerfe:Equ-EnergieWQRotationsteilung'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  E_{wq} \pm \Delta E_{wq}  =  \frac{ \Delta n \cdot \frac{ h }{ n_{ele,wq} } }{ \Delta t } \pm \frac{ \frac{ h }{ n_{ele,wq} } }{ \Delta t }  }'),
                     ))),
+                  array( 'text', array( text => array(
+                    'Wie sind die beiden letzten Formeln zu interpretieren?'."\n",
+                      'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
