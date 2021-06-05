@@ -232,7 +232,7 @@
                     'in ihr Umfeld ab, von mir \\italic{virtuelle Wirkungsquanten}\\hidden{Ref: *Wirkungsquanten-virtuelle-Einfuehr} genannt (siehe \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung}, unten).'."\n",
                       'Die virtuellen Wirkungsquanten sind als Dichtewellen in den Wirkungsquanten des \\jump{*Bewegungsraum-Herlei}{Bewegungsraums} der Quanten-Fluss-Theorie zu verstehen.'."\n".
                     'Diese vermitteln die neue Wechselwirkung der \\jump{*Graviradiation-Einfuehr}{Graviradiation}, was bedeutet, dass sie die makroskopische Geschwindigkeit anderer Wirkungsquanten'."\n".
-                    'in ihrem Umfeld verringern und deren Bahn ablenken, wie wir sehen werden (siehe \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn}, links).'."\n"))),
+                    'in ihrem Umfeld durch eine wellenförmige Ablenkung (Undulation) verringern und deren Bahn oft auch insgesamt ablenken, wie wir sehen werden (siehe \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn}, links).'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:WarumImpulskegel', text =>
                                        
                 'Warum Impulskegel?', subline =>
@@ -241,8 +241,8 @@
                     'Wie Giese an anderer Stelle in seinem Basisteilchenmodell ausführt, verändert sich die räumliche Geometrie der Ausbreitung von'."\n".
                     'lichtschnellen Wechselwirkungsteilchen, wenn das abstrahlende Teilchen sich bewegt.\\footnote{Vgl. \\cite{Giese:RelaContra2009}.}'."\n".
                     'Die Veränderung vollzieht sich dabei in Abhängigkeit von der Bewegungsgeschwindigkeit so, dass sich das'."\n".
-                    'abgestrahlte Feld in Bewegungsrichtung umso mehr abflacht, also von der Kugel zum sogenannten Heaviside-Ellipsoid verformt, je größer die Geschwindigkeit ist.\\footnote{\\const{FrQFT_g_footnote_text_LorentzKontrFelder}}'."\n",
-                      'Dies entspricht der \\jump{OM:VRT:Laengenkontraktion-Bewegung}{Lorentzkontraktion} (Längenkontraktion) der Relativitätstheorie.'."\n",
+                    'abgestrahlte Feld in Bewegungsrichtung umso mehr abflacht, also von der Kugel zum sogenannten Heaviside-Ellipsoid verformt, je größer die Geschwindigkeit ist.\\footnote{\\const{FrQFT_g_footnote_text_LorentzKontrFelder}}'."\n".
+                    'Dies entspricht der \\jump{OM:VRT:Laengenkontraktion-Bewegung}{Lorentzkontraktion} (Längenkontraktion) der Relativitätstheorie.'."\n",
                       'Erreicht das abstrahlende Teilchen Lichtgeschwindigkeit, wie die simplifizierten Wirkungsquanten im vereinfachten Elementarteilchen-String,'."\n".
                     'dann werden effektiv nur noch Wechselwirkungsteilchen senkrecht zur Bewegungsrichtung ausgesandt.\\footnote[*Entwick]{\\color{*Entwick}{Dies muss an anderer Stelle noch explizit aus Gieses Überlegungen hergeleitet werden. Auch Oliver Heaviside soll dazu gearbeitet haben (siehe \\jump[https://en.wikisource.org/w/index.php?title=Motion_of_Electrification_through_a_Dielectric&oldid=4808645]{}{Motion of Electrification through a Dielectric}).}}'."\n".
                     'Deutlich wird dies auch an folgender Überlegung:'."\n"))),
@@ -251,8 +251,8 @@
                       'Flacht sich die Struktur eines Elementarteilchens immer weiter ab, dann bewegen sich die Wechselwirkungspole, die für den Zusammenhalt seiner Struktur sorgen,'."\n".
                       'immer weiter in die zentrale Ebene senkrecht zu seiner Bewegungsrichtung.'."\n".
                       'Sind diese Pole nun so gut wie auf dieser Ebene angekommen, dann können sich die Wechselwirkungsteilchen zwischen ihnen auch nur in dieser Ebene'."\n".
-                      'und so dann auch in den Raum hinaus bewegen.'."\n",
-                        'Das bedeutet eine senkrechte und zu jedem Zeitpunkt ringförmige Abstrahlung der Wechselwirkungsteilchen der Wirkungsquanten in den Raum.'."\n"))),
+                      'und auf diese Weise dann auch nur in Richtung dieser Ebene in den Raum hinaus bewegen.'."\n",
+                        'Dies bedeutet eine zur Bewegungsrichtung der Wirkungsquanten senkrechte und zu jedem Zeitpunkt ringförmige Abstrahlung ihrer Wechselwirkungsteilchen in den Raum.'."\n"))),
 
                   array( 'text', array( text => array(
                     'So ergibt sich dann die Form eines Impulskegels für die Abstrahlung der Wirkungsquanten:'."\n"))),
