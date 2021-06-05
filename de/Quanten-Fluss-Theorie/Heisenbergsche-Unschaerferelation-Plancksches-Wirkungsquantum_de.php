@@ -166,7 +166,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
           
-		    	<!  • Energie und Zeit:  >
+		    	<!  • Energie und Zeit  >
 		    	<!    • Photonen und Elementarteilchen verlinken  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
             'OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit',
@@ -253,13 +253,55 @@
                     'Genauer kann man grundsätzlich nicht messen oder beobachten.'."\n".
                     'Dies liegt nicht in der Unzulänglichkeit der Messintrumente begründet, sondern folgt aus einem prinzipiellen Abzählproblem der Natur.'."\n".
                     'Daraus ergibt sich eine grundlegende \\jump{OM:FrQFT:HeisenbergUnschaerfe:Schlussfolgerung-fuer-die-Quantenmechanik}{Schlussfolgerung für die Quantenmechanik}.'."\n"))),
-                  array( 'jumplist',
-                    array(
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Elementarteilchen:Welleneigenschaften-der-Elementarteilchen'),
                       array(  jump_name => 'OM:FrQFT:Quantengravitation'),
                       array(  jump_name => 'OM:FrQFT:HeisenbergUnschaerfe:Impuls-und-Ort'),
                       array(  jump_name => 'OM:FrQFT:HeisenbergUnschaerfe:Schlussfolgerung-fuer-die-Quantenmechanik'),
                     )),
+              )
+          ); ?>
+
+          
+		    	<!  • Energie und Zeit – Übergang zur Substruktur  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit-Uebergang-Substruktur',
+              '', 'Sc_f_Paragraph',
+                array(
+                      
+                  // array( 'figure',
+                  //   array_merge( $FrQFT_g_figure_ary_HeisenbUnschaerf, array( name => 'OM:FrQFT:HeisenbergUnschaerfe:Fig-HeisenbUnschaerf'))),
+                      
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'Un', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  E_{ele} \pm \Delta E_{ele}  =  \frac{ \Delta n \cdot h }{ \Delta t } \pm \frac{ h }{ \Delta t }  }',
+                                               label_name => 'OM:FrQFT:HeisenbergUnschaerfe:Equ-EnergieHsZaehlen'),
+                      array( display => 'on',  latex => '{  E_{ele}  =  n_{ele,wq} \cdot E_{wq}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ E_{ele} \pm \Delta E_{ele} }{ h }  =  \frac{ \Delta n }{ \Delta t } \pm \frac{ 1 }{ \Delta t }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                      
+                  // array( 'jumplist', array(
+                  //     array(  jump_name => 'OM:FrQFT:Elementarteilchen:Welleneigenschaften-der-Elementarteilchen'),
+                  //   )),
               )
           ); ?>
 
