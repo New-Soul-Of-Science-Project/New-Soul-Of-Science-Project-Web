@@ -295,7 +295,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \left( E_{wq} \pm \Delta E_{wq} \right) \cdot n_{ele,wq}  =  \frac{ \Delta n \cdot h }{ \Delta t } \pm \frac{ h }{ \Delta t }  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  E_{wq} \pm \Delta E_{wq}  =  \frac{ \Delta n \cdot h }{ n_{ele,wq} \cdot \Delta t } \pm \frac{ h }{ n_{ele,wq} \cdot \Delta t }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  E_{wq} \pm \Delta E_{wq}  =  \frac{ \frac{ \Delta n }{ n_{ele,wq} } \cdot h }{ \Delta t } \pm \frac{ \frac{ 1 }{ n_{ele,wq} } \cdot h }{ \Delta t }  }',
-                                              label_name => 'OM:FrQFT:HeisenbergUnschaerfe:Equ-EnergieWQRotationsteilung'),
+                                               label_name => 'OM:FrQFT:HeisenbergUnschaerfe:Equ-EnergieWQRotationsteilung'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  E_{wq} \pm \Delta E_{wq}  =  \frac{ \Delta n \cdot \frac{ h }{ n_{ele,wq} } }{ \Delta t } \pm \frac{ \frac{ h }{ n_{ele,wq} } }{ \Delta t }  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -306,7 +306,29 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
+                    'XXX'."\n",
+                      'Gehen wir noch eine Ebene tiefer, so wird die Anzahl der Sub-Wirkungsquanten, die die Wirkungsquanten bilden, je weiterer Verschachtelung beziehungsweise Ebene konstant:'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'Un', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E_{ele}  =  n_{ele,wq} \cdot E_{wq}  }'),
+                      array( display => 'on',  latex => '{  E_{wq}  =  E_{wq_{1}}  }'),
+                      array( display => 'on',  latex => '{  E_{wq_{1}}  =  n_{wq_{1},wq_{2}} \cdot E_{wq_{2}}  }'),
+                      array( display => 'on',  latex => '{  E_{wq_{i}}  =  n_{wq_{i},wq_{i+1}} \cdot E_{wq_{i+1}}  }'),
+                      array( display => 'on',  latex => '{  E_{wq}  =  const.  }'),
+                      array( display => 'on',  latex => '{  n_{wq_{1},wq_{2}}  =  const.  }'),
+                      array( display => 'on',  latex => '{  n_{wq_{1},wq_{2}}  =  n_{wq_{2},wq_{3}}  =  const.  }'),
+                      array( display => 'on',  latex => '{  n_{wq_{i},wq_{i+1}}  =  n_{wq_{i+1},wq_{i+2}}  }'),
+                      array( display => 'on',  latex => '{  E_{wq} \pm \Delta E_{wq}  =  \frac{ \frac{ \Delta n }{ n_{ele,wq} } \cdot h }{ \Delta t } \pm \frac{ \frac{ 1 }{ n_{ele,wq} } \cdot h }{ \Delta t }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \left( E_{wq_{2}} \pm \Delta E_{wq_{2}} \right) \cdot n_{wq_{1},wq_{2}}  =  \frac{ \frac{ \Delta n }{ n_{ele,wq} } \cdot h }{ \Delta t } \pm \frac{ \frac{ 1 }{ n_{ele,wq} } \cdot h }{ \Delta t }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  E_{wq_{2}} \pm \Delta E_{wq_{2}}  =  \frac{ \frac{ \Delta n }{ n_{ele,wq} \cdot n_{wq_{1},wq_{2}} } \cdot h }{ \Delta t } \pm \frac{ \frac{ 1 }{ n_{ele,wq} \cdot n_{wq_{1},wq_{2}} } \cdot h }{ \Delta t }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  E_{wq_{i}} \pm \Delta E_{wq_{i}}  =  \frac{ \frac{ \Delta n }{ n_{ele,wq} \cdot n_{wq_{1},wq_{2}}^{i-1} } \cdot h }{ \Delta t } \pm \frac{ \frac{ 1 }{ n_{ele,wq} \cdot n_{wq_{1},wq_{2}}^{i-1} } \cdot h }{ \Delta t }  }'),
+                    ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
