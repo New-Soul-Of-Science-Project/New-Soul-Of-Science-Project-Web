@@ -484,7 +484,7 @@
                   array( 'text', array( text => array(
                     'Die effektiv störende Wirkung ist also dem folgenden Produkt proportional:'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{(\\bold{Untersuchung:}'."\n".
+                    '\\color{*Bearb}{(\\bold{Untersuchung – Perspektive Ele-Ebene:}'."\n".
                     'Die Wirkungsquanten-Detektorfrequenz \\term{f_{vwq}} sollte nun die Rotationsfrequenz \\term{f_{ele}} sein.'."\n".
                     'Die Einwirkungsdauer (Einwirkdauer?) ist weiterhin nur von der Dauer einer Rotation abhängig, bleibt also \\term{T_{kegel}}.'."\n".
                     'Die Amplitude ist nunmehr allerdings nicht einfach nur \\term{h}, sondern sein Vielfaches proportional zur Energie des Elementarteilchens,'."\n".
@@ -498,14 +498,35 @@
                     'XXX)}'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  {_{r}p_{abl}}  \sim  \frac{ h \cdot T_{kegel} \cdot f_{ele} }{ r }  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.XXX', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ h \cdot T_{kegel} \cdot f_{ele} }{ r }  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.XXX', label_incr => false),
                       array( display => 'on',  latex => '{  h  \mapsto  n_{ele,wq} \cdot h  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.XXX', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Unter.Ele-Eb', label_incr => false),
+                      array( display => 'on',  latex => '{  {_{r}p_{abl}}  \sim  \frac{ n_{ele,wq} \cdot h \cdot T_{kegel} \cdot f_{ele} }{ r }  }',
+                                               /* label_name => '', */label_text => 'QGra.LV.Unter.Ele-Eb', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ n_{ele,wq} \cdot h \cdot T_{kegel} \cdot f_{ele} }{ r }  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.XXX', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Unter.Ele-Eb', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{(———)}'."\n"))),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{(\\bold{Untersuchung – Perspektive WQ_{2}-Ebene:}'."\n".
+                    'Hier wird nun unterstellt, dass sich die Wirkungsquanten ein Mal um sich selber drehen, wenn sie eine Wirkungsquanten-Position weiter rotieren.'."\n".
+                    'Ist das realistisch möglich?'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX)}'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  h  \mapsto  \frac{ h }{ n_{wq_{1},wq_{2}} }  }',
+                                               /* label_name => '', */label_text => 'QGra.LV.Unter.WQ_{2}-Eb', label_incr => false),
+                      array( display => 'on',  latex => '{  f_{vwq}  \mapsto  n_{wq_{1},wq_{2}} \cdot f_{vwq}  }',
+                                               /* label_name => '', */label_text => 'QGra.LV.Unter.WQ_{2}-Eb', label_incr => false),
+                      array( display => 'on',  latex => '{  {_{r}p_{abl}}  \sim  \frac{ \frac{ h }{ n_{wq_{1},wq_{2}} } \cdot T_{kegel} \cdot n_{wq_{1},wq_{2}} \cdot f_{vwq} }{ r }  }',
+                                               /* label_name => '', */label_text => 'QGra.LV.Unter.WQ_{2}-Eb', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}p_{abl}}  \sim  \frac{ h \cdot T_{kegel} \cdot f_{vwq} }{ r }  }',
+                                               /* label_name => '', */label_text => 'QGra.LV.Unter.WQ_{2}-Eb', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ h \cdot T_{kegel} \cdot f_{vwq} }{ r }  }',
+                                               /* label_name => '', */label_text => 'QGra.LV.Unter.WQ_{2}-Eb', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{(———)}'."\n"))),
@@ -610,7 +631,7 @@
                   array( 'text', array( text => array(
                     'In die Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-eff} der effektiv störenden Wirkung eingesetzt erhalten wir:'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{(\\bold{Untersuchung:}'."\n".
+                    '\\color{*Bearb}{(\\bold{Untersuchung – Perspektive Ele-Ebene:}'."\n".
                     'Wir sehen also, dass diese Perspektive schlussendlich genau in die gleiche Formel mündet.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -623,9 +644,9 @@
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ n_{ele,wq} \cdot h \cdot T_{kegel} \cdot f_{ele} }{ r }  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.XXX', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Unter.Ele-Eb', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ h \cdot T_{kegel} \cdot n_{ele,wq} \cdot f_{ele} }{ r }  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.XXX', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Unter.Ele-Eb', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{(———)}'."\n"))),
@@ -905,7 +926,7 @@
                     '(siehe \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung}, Mitte, und \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn}),'."\n".
                     'weil die virtuellen Wirkungsquanten nur genau radial, senkrecht zur Bewegungsrichtung der Wirkungsquanten auf dem String, abgestrahlt werden.'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{(\\bold{Untersuchung:}'."\n".
+                    '\\color{*Bearb}{(\\bold{Untersuchung – Perspektive Ele-Ebene:}'."\n".
                     'Hier ist in der neuen Perspektive zu berücksichtigen, dass es sich bei der Abstrahlung eines Photons bei näherer Betrachtung um einen Doppelwandigen Impulskegel handelt.'."\n".
                     'Die Wirkung \\term{h} des Impulskegels eines Wirkungsquants enthält die Doppelwandigkeit bereits.'."\n".
                     'Im Falle von Leptonen kommt durch das Auf- und wieder Einfalten seiner schwingenden Struktur ebenfalls von jeder der beiden Seiten des Stings ein eigener Impuls.'."\n".
