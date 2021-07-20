@@ -338,6 +338,24 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'Un', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E_{ele}  =  h \cdot f_{ele}  }'),
+                      array( display => 'on',  latex => '{  E_{wq}  ?=  \frac{ h }{ n_{wq_{1},wq_{2}} } \cdot f_{wq}  }'),
+                      array( display => 'on',  latex => '{  E_{ele}  =  n_{ele,wq} \cdot E_{wq}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  E_{wq}  =  \frac{ E_{ele} }{ n_{ele,wq} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ h }{ n_{wq_{1},wq_{2}} } \cdot f_{wq}  ?=  \frac{ E_{ele} }{ n_{ele,wq} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  E_{ele}  ?=  \frac{ n_{ele,wq} \cdot h }{ n_{wq_{1},wq_{2}} } \cdot f_{wq}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
                       
                   // array( 'jumplist', array(
                   //     array(  jump_name => 'OM:FrQFT:Elementarteilchen:Welleneigenschaften-der-Elementarteilchen'),
