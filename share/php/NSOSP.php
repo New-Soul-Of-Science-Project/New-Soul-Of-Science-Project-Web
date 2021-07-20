@@ -3008,10 +3008,12 @@
                                                 'OM:SupNum:Einleitung:Vortext:Equ-N-ist-mit-Null' => array( headline_text => 'SN.Ein.13'),
                                                 'OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N' => array( headline_text => 'SN.Ein.14'),
                                                 'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega' => array( headline_text => 'SN.Ein.15'),
-                                                'OM:SupNum:Einleitung:Vortext:Ueberrationalitaetsvermutung' => array( headline_text => 'Überrationalitätsvermutung', headline_text_short => 'Überrationalitätsvermutung'),
-                                                'OM:SupNum:Einleitung:Vortext:Primzahlenprodukt-Vermutung' => array( headline_text => 'Primzahlenprodukt-Vermutung', headline_text_short => 'Primzahlenprodukt-Vermutung'),
-                                                         
-                                              'OM:SupNum:Einleitung:Grundlagen' => array( headline_text => 'Grundlagen', headline_text_short => 'Grundlagen'),
+                                              'OM:SupNum:Einleitung:Grundlagen' => array( headline_text => 'Grundlagen'/*, headline_text_short => 'XXX'*/),
+                                                'OM:SupNum:Einleitung:Grundlagen:Equ-alle-n-kleiner-s' => array( headline_text => 'SN.Ein.Gr.14'),
+                                                'OM:SupNum:Einleitung:Grundlagen:Equ-exist-n-mit-r-kleiner-n' => array( headline_text => 'SN.Ein.Gr.15'),
+                                              'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn' => array( headline_text => 'Fragestellungen und perspektivischer Erkenntnisgewinn'/*, headline_text_short => 'XXX'*/),
+                                                'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung' => array( headline_text => 'Überrationalitätsvermutung', headline_text_short => 'Überrationalitätsvermutung'),
+                                                'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung' => array( headline_text => 'Primzahlenprodukt-Vermutung', headline_text_short => 'Primzahlenprodukt-Vermutung'),
                                             ),
                                      ),
                               'OM:SupNum:Formale-Entwicklung' =>
