@@ -1175,7 +1175,6 @@
                                                 'OM:FrQFT:HeisenbergUnschaerfe:Fig-Elapson' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:FrQFT:HeisenbergUnschaerfe:Fig-Photon' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:FrQFT:HeisenbergUnschaerfe:Vortext:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
-                                                         
                                               'OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit' => array( headline_text => 'Energie und Zeit', headline_text_short => 'Energie und Zeit'),
                                                 'OM:FrQFT:HeisenbergUnschaerfe:Fig-HeisenbUnschaerf' => array( headline_text => 'Abbildung '.($FrQFT_g_Fig_idx = 1), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:FrQFT:HeisenbergUnschaerfe:Equ-FrequAnzahlProZeit' => array( headline_text => 'Un.1'),
@@ -1184,6 +1183,8 @@
                                                 'OM:FrQFT:HeisenbergUnschaerfe:Equ-EnergieHsZaehlen' => array( headline_text => 'Un.5'),
                                                 'OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant' => array( headline_text => $nSOSp_g_formelName_Un_10),
                                                 'OM:FrQFT:HeisenbergUnschaerfe:Equ-HeisenbUnschDeltaEnergieMalDeltaZeitGroesserUngefaehrH' => array( headline_text => 'Un.14'),
+                                              'OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit-Uebergang-Substruktur' => array( headline_text => 'Energie und Zeit – Übergang zur Substruktur'/* , headline_text_short => '' */),
+                                                'OM:FrQFT:HeisenbergUnschaerfe:Equ-EnergieWQRotationsteilung' => array( headline_text => 'Un.18'),
                                               'OM:FrQFT:HeisenbergUnschaerfe:Impuls-und-Ort' => array( headline_text => 'Impuls und Ort', headline_text_short => 'Impuls und Ort'),
                                               'OM:FrQFT:HeisenbergUnschaerfe:Schlussfolgerung-fuer-die-Quantenmechanik' => array( headline_text => 'Schlussfolgerung für die Quantenmechanik', headline_text_short => 'Schlussfolgerung für die Quantenmechanik'),
                                             ),

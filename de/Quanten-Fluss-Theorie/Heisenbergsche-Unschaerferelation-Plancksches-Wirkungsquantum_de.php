@@ -166,7 +166,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
           
-		    	<!  • Energie und Zeit:  >
+		    	<!  • Energie und Zeit  >
 		    	<!    • Photonen und Elementarteilchen verlinken  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
             'OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit',
@@ -253,13 +253,113 @@
                     'Genauer kann man grundsätzlich nicht messen oder beobachten.'."\n".
                     'Dies liegt nicht in der Unzulänglichkeit der Messintrumente begründet, sondern folgt aus einem prinzipiellen Abzählproblem der Natur.'."\n".
                     'Daraus ergibt sich eine grundlegende \\jump{OM:FrQFT:HeisenbergUnschaerfe:Schlussfolgerung-fuer-die-Quantenmechanik}{Schlussfolgerung für die Quantenmechanik}.'."\n"))),
-                  array( 'jumplist',
-                    array(
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Elementarteilchen:Welleneigenschaften-der-Elementarteilchen'),
                       array(  jump_name => 'OM:FrQFT:Quantengravitation'),
                       array(  jump_name => 'OM:FrQFT:HeisenbergUnschaerfe:Impuls-und-Ort'),
                       array(  jump_name => 'OM:FrQFT:HeisenbergUnschaerfe:Schlussfolgerung-fuer-die-Quantenmechanik'),
                     )),
+              )
+          ); ?>
+
+          
+		    	<!  • Energie und Zeit – Übergang zur Substruktur  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit-Uebergang-Substruktur',
+              '', 'Sc_f_Paragraph',
+                array(
+                      
+                  // array( 'figure',
+                  //   array_merge( $FrQFT_g_figure_ary_HeisenbUnschaerf, array( name => 'OM:FrQFT:HeisenbergUnschaerfe:Fig-HeisenbUnschaerf'))),
+                      
+                  array( 'text', array( text => array(
+                    'Der Zähler \\term{n} meint die Anzahl der Rotationen eines Elementarteilchens.'."\n".
+                    'Während \\term{n_{ele,wq}} für die Anzahl der Wirkungsquanten des Substruktur steht:'."\n".
+                    'Das bedeutet, dass bei jeder Rotation \\term{n_{ele,wq}} Wirkungsquanten mit ihren Impulskegeln durch rotieren.'."\n",
+                      'In der \\italic{\\jumpname{OM:FrQFT:Quantengravitation}} sollte also jeder Impulskegel \\term{h} nicht, wie bisher gedacht, für einen Wirkungsquanten-Impulskegel stehen,'."\n".
+                    'sondern für einen Impuls, der einer einzelnen Rotation des Elementarteilchens entspricht.'."\n".
+                    'Das würde bedeuten, dass ein Impulskegel, der \\term{h} entspricht, einem Graviton entsprechen sollte.'."\n",
+                      'Bringen wir die fundamentale Annahme, dass die „Körner“ der Substruktur der Elementarteilchen, die Wirkungsquanten, Energie- und Masseeinheiten sind,'."\n".
+                    'dann ergibt sich folgendes:'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'Un', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E_{ele} \pm \Delta E_{ele}  =  \frac{ \Delta n \cdot h }{ \Delta t } \pm \frac{ h }{ \Delta t }  }',
+                                               /* label_name => '', */ label_text => '\\jumpname{OM:FrQFT:HeisenbergUnschaerfe:Equ-EnergieHsZaehlen}', label_incr => false),
+                      array( display => 'on',  latex => '{  E_{ele}  =  n_{ele,wq} \cdot E_{wq}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \left( E_{wq} \pm \Delta E_{wq} \right) \cdot n_{ele,wq}  =  \frac{ \Delta n \cdot h }{ \Delta t } \pm \frac{ h }{ \Delta t }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  E_{wq} \pm \Delta E_{wq}  =  \frac{ \Delta n \cdot h }{ n_{ele,wq} \cdot \Delta t } \pm \frac{ h }{ n_{ele,wq} \cdot \Delta t }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  E_{wq} \pm \Delta E_{wq}  =  \frac{ \frac{ \Delta n }{ n_{ele,wq} } \cdot h }{ \Delta t } \pm \frac{ \frac{ 1 }{ n_{ele,wq} } \cdot h }{ \Delta t }  }',
+                                               label_name => 'OM:FrQFT:HeisenbergUnschaerfe:Equ-EnergieWQRotationsteilung'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  E_{wq} \pm \Delta E_{wq}  =  \frac{ \Delta n \cdot \frac{ h }{ n_{ele,wq} } }{ \Delta t } \pm \frac{ \frac{ h }{ n_{ele,wq} } }{ \Delta t }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wie sind die beiden letzten Formeln zu interpretieren?'."\n",
+                      'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      'Gehen wir noch eine Ebene tiefer, so wird die Anzahl der Sub-Wirkungsquanten, die die Wirkungsquanten bilden, je weiterer Verschachtelung beziehungsweise Ebene konstant:'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'Un', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E_{ele}  =  n_{ele,wq} \cdot E_{wq}  }'),
+                      array( display => 'on',  latex => '{  E_{wq}  =  E_{wq_{1}}  }'),
+                      array( display => 'on',  latex => '{  E_{wq_{1}}  =  n_{wq_{1},wq_{2}} \cdot E_{wq_{2}}  }'),
+                      array( display => 'on',  latex => '{  E_{wq_{i}}  =  n_{wq_{i},wq_{i+1}} \cdot E_{wq_{i+1}}  }'),
+                      array( display => 'on',  latex => '{  E_{wq}  =  const.  }'),
+                      array( display => 'on',  latex => '{  n_{wq_{1},wq_{2}}  =  const.  }'),
+                      array( display => 'on',  latex => '{  n_{wq_{1},wq_{2}}  =  n_{wq_{2},wq_{3}}  =  const.  }'),
+                      array( display => 'on',  latex => '{  n_{wq_{i},wq_{i+1}}  =  n_{wq_{i+1},wq_{i+2}}  }'),
+                      array( display => 'on',  latex => '{  E_{wq} \pm \Delta E_{wq}  =  \frac{ \frac{ \Delta n }{ n_{ele,wq} } \cdot h }{ \Delta t } \pm \frac{ \frac{ 1 }{ n_{ele,wq} } \cdot h }{ \Delta t }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \left( E_{wq_{2}} \pm \Delta E_{wq_{2}} \right) \cdot n_{wq_{1},wq_{2}}  =  \frac{ \frac{ \Delta n }{ n_{ele,wq} } \cdot h }{ \Delta t } \pm \frac{ \frac{ 1 }{ n_{ele,wq} } \cdot h }{ \Delta t }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  E_{wq_{2}} \pm \Delta E_{wq_{2}}  =  \frac{ \frac{ \Delta n }{ n_{ele,wq} \cdot n_{wq_{1},wq_{2}} } \cdot h }{ \Delta t } \pm \frac{ \frac{ 1 }{ n_{ele,wq} \cdot n_{wq_{1},wq_{2}} } \cdot h }{ \Delta t }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  E_{wq_{i}} \pm \Delta E_{wq_{i}}  =  \frac{ \frac{ \Delta n }{ n_{ele,wq} \cdot n_{wq_{1},wq_{2}}^{i-1} } \cdot h }{ \Delta t } \pm \frac{ \frac{ 1 }{ n_{ele,wq} \cdot n_{wq_{1},wq_{2}}^{i-1} } \cdot h }{ \Delta t }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'Un', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E_{ele}  =  h \cdot f_{ele}  }'),
+                      array( display => 'on',  latex => '{  E_{wq}  ?=  \frac{ h }{ n_{wq_{1},wq_{2}} } \cdot f_{wq}  }'),
+                      array( display => 'on',  latex => '{  E_{ele}  =  n_{ele,wq} \cdot E_{wq}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  E_{wq}  =  \frac{ E_{ele} }{ n_{ele,wq} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ h }{ n_{wq_{1},wq_{2}} } \cdot f_{wq}  ?=  \frac{ E_{ele} }{ n_{ele,wq} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  E_{ele}  ?=  \frac{ n_{ele,wq} \cdot h }{ n_{wq_{1},wq_{2}} } \cdot f_{wq}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                      
+                  // array( 'jumplist', array(
+                  //     array(  jump_name => 'OM:FrQFT:Elementarteilchen:Welleneigenschaften-der-Elementarteilchen'),
+                  //   )),
               )
           ); ?>
 
