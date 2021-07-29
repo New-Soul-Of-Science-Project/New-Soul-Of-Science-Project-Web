@@ -23,7 +23,7 @@
                     'Ich habe mich dafür entschieden dies auf eine Weise zu tun, die sicher stellt, dass möglichst große Teilmengen von ihnen als'."\n".
                     '\\jump{OM:SupNum:Formale-Entwicklung:GanzeSN}{ganze Superial-Zahlen}, als \\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSN}{natürliche Superial-Zahlen}'."\n".
                     'und als \\jump{OM:SupNum:Formale-Entwicklung:XXX}{superiale Primzahlen} definiert werden können.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Vortext:DefinitionSuperialeEinheit', text =>
                       
                 'Definition der superialen Einheit \\term{s}', subline =>
                   '')),

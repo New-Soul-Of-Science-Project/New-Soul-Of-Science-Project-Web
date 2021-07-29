@@ -323,7 +323,7 @@
                     'wichtige Eigenschaften der Zahlen näher untersuchen zu können, wie wir später sehen werden.'."\n".
                     'Sie ermöglicht so unter anderem die Definition einer konkreten Differentialrechnung, wie oben schon angedeutet.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Grundlagen:XXX', text =>
-                'Definition ganzer und natürlicher Superial-Zahlen', subline =>
+                'Definition ganzer und natürlicher Superial-Zahlen und die Integration', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Dadurch, dass \\term{s} die \\term{ω}-ste Potenz aller endlichen Primzahlen als Faktoren enthält, kommen wir zu besonderen arithmetischen Eigenschaften'."\n".
@@ -333,14 +333,14 @@
                     'Um uns einer sinnvollen Definition von ganzen und natürlichen Superial-Zahlen zu nähern stellen wir fest, dass reelle Zahlen'."\n".
                     'nicht grundsätzlich größer sind als rationale, aber nach den Formeln \\jumpname{OM:SupNum:Einleitung:Grundlagen:Equ-alle-n-kleiner-s} und \\jumpname{OM:SupNum:Einleitung:Grundlagen:Equ-exist-n-mit-r-kleiner-n} alle kleiner als \\term{s}:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  (\forall q \in \mathbb{Q}) (\exists  r \in \mathbb{R}) [r < q < s]  }'),
                       array( display => 'on',  latex => '{  (\forall r \in \mathbb{R}) (\exists  q \in \mathbb{Q}) [q < r < s]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Daraus folgt:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  (\forall r \in \mathbb{R}^{+}) [0 < s^{-1} <  r]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  (\forall q \in \mathbb{Q}^{+}) [0 < s^{-1} <  q]  }'),
                     ))),
@@ -349,20 +349,110 @@
                     'Allerdings gilt dies auch alles für reelle Zahlen.'."\n",
                       'Multiplizieren wir die ganze jeweilige rationale Ungleichung mit einer beliebigen positiven rationalen Zahl, dann ergibt sich:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  (\forall q \in \mathbb{Q}^{+}) (\forall k \in \mathbb{Q}^{+}) [0 < k \cdot s^{-1} <  k \cdot q]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Weil der letzte Term durch das frei wählbare \\term{q} alle möglichen positiven Werte annehmen kann, ist dies auch äquivalent mit:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  (\forall q \in \mathbb{Q}^{+}) (\forall k \in \mathbb{Q}^{+}) [0 < k \cdot s^{-1} <  q]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wir können hieran erkennen, dass keine rationale Zahl \\term{k} existiert, die im Produkt mit \\term{s^{-1}} ins Endliche kommen kann.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Ein besonderes Zahlenwertsystem} \\\\'."\n".
-                    'Das ist sehr bemerkenswert und ermöglicht ein neues und besonderes Zahlenwertsystem auf Basis der superialen Basis \\term{s}.'."\n".
+                    'Das ist sehr bemerkenswert und ermöglicht ein neues und besonderes Zahlenwertsystem auf Basis der superialen Basis \\term{s}:'."\n",
+                      'Jede Ziffer dieses Zahlenwertsystems auf Basis \\term{s} kann eine Zahl sein; in jedem Fall eine rationale, möglicherweise auch eine algebraische (siehe \\jumpname{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}).'."\n".
+                    'Fraglich ist für mich, ob es sinnvollerweise wirklich auch jede reelle Zahl sein kann.'."\n",
+                      'Nachfolgend ein paar Beispiele in einer neuen Notation, die jede Ziffer dieses Zahlensystems in spitzen Klammern notiert:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \left( \forall a, b, c, d \in \mathbb{Q} \right) \left[\; 〈a〉〈b〉〈c〉․〈d〉 \\\ \qquad\qquad\qquad  :=  a \cdot s^{2} + b \cdot s^{1} + c \cdot s^{0} + d \cdot s^{-1} \\\ \qquad\qquad\qquad  \in  \mathbb{S}  \;\right]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  s^{1}  =  〈1〉〈0〉․  =  〈1〉〈0〉_{0}  =  〈1〉_{1}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  s^{0}  =  〈1〉․  =  〈1〉_{0}  =  1  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  s^{-1}  =  ․〈1〉  =  _{0}〈1〉  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  - \frac{3}{5} \cdot s^{2} + 25 \cdot s^{1} + 3,5 \cdot s^{0} - 7,2 \cdot s^{-1} \\\ \qquad\qquad\qquad\quad  =  \left〈 - \frac{3}{5} \right〉〈25〉〈3,5〉․〈-7,2〉 \\\ \qquad\qquad\qquad\quad  =  \left〈- \frac{3}{5} \right〉〈25〉〈3,5〉_{0}〈-7,2〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Ich denke an diesen einfachen Beispielen wird klar, wie das superiale Zahlenwertsystem funktioniert und wie es notiert wird.'."\n".
+                    'Der Punkt hinter der nullten Potenz von \\term{s} markiert quasi das Komma, ähnlich unseren reellen Zahlen im Zehnersystem notiert.'."\n".
+                    'Alternativ kann hinter einer spitzen Klammer auch die Potenz der superialen Basis \\term{s} als ganze Zahl angegeben werden.'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Integration und ganze Superial-Zahlen} \\\\'."\n".
+                    'Den ganzen Superial-Zahlen begegnen wir, wenn wir uns mit der Umkehrung der oben definierten Ableitung beschäftigen, der Integration:'."\n",
+                      'Bei der Integration addieren wir nämlich all die unendlich vielen und superial kleinen Differenzen des Abstands \\term{s^{-1}} der Ableitung als'."\n".
+                    'superial kleine, feine oder schmale Streifen einer Fläche auf.'."\n".
+                    'Diese Streifen müssen wir dann in einer unendlichen Summe durchzählen und aufsummieren.'."\n",
+                      'Zum Einstieg die Formel XXX vorab in der neuen Notation:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wenn im Folgenden \\term{n} Element der Menge aller ganzen Superial-Zahlen \\term{\M(S)_{Z}} einschließlich Null und ausschließlich \\term{x⋅s^{1}} ist,'."\n".
+                    'können wir die Integration über folgende Summe ausdrücken:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n  \in  [0;〈x〉_{1}[  \subset  \mathbb{S}_{Z}  }'),
+                      array( display => 'on',  latex => '{  f(x)  :=  f(0) + \sum_{ n \in [0;〈x〉_{1}[ }  ․〈f\'(n)〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit haben wir die vorherige Ableitung wieder rückgängig gemacht, wenn wir eine schlüssige Definition der ganzen Superial-Zahlen \\term{\M(S)_{Z}} finden.'."\n",
+                      'Wie könnten ganze Superial-Zahlen nun aussehen?'."\n".
+                    'Wir haben es zuvor ja schon angedeutet:'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Die gebrochenen Summanden mit negativer Potenz von \\term{s} sollten Null sein.',
+                        'Im endlichen Summanden \\term{s^{0}} sollten sie nur ganze Zahlen haben.',
+                        'Die Summanden mit Potenzen von \\term{s} größer Null sollten ganze Zahlen sein, was bedeutet, dass nur Koeffizienten als Faktoren der potenzierten \\jump{OM:SupNum:Formale-Entwicklung:Vortext:DefinitionSuperialeEinheit}{Primzahlprodukt-Fläche} in Frage kommen, die aus dem Produkt Primzahlen entfernen oder hinzufügen, ohne seine Größenordnung zu verändern.',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Faktoren, die aus der Primzahlprodukt-Fläche in diesem Sinne nur Primfaktoren entfernen oder hinzufügen sind zunächst erst einmal ganz klar die rationalen Zahlen.'."\n".
+                    'Sie bestehen nur aus endlichen Brüchen von Primfaktoren endlicher Anzahl und Potenz.'."\n",
+                      'In Frage kämen vielleicht noch, wie schon erwähnt, Brüche unendlicher Anzahl von Primfaktoren endlicher Potenz, was zur \\jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} führt,'."\n".
+                    'mit der wir uns hier erst später näher beschäftigen wollen.'."\n",
+                      'Beispiele für ganze Superial-Zahlen sind:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \left( \forall a, b \in \mathbb{Q} \right) \left( \forall z \in \mathbb{Z} \right) \left[\; 〈a〉〈b〉〈z〉․  \in  \mathbb{S}_{Z}  \;\right]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  〈-5〉․  \in  \mathbb{S}_{Z}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \left〈 - \frac{4}{25} \right〉\left〈 \frac{3}{2} \right〉〈5〉․  \in  \mathbb{S}_{Z}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \left〈 \frac{4}{25} \right〉\left〈 \frac{3}{2} \right〉〈-5〉․〈1〉  \notin  \mathbb{S}_{Z}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das vorletzte letzte Beispiel ist übrigens eine negative ganze Superial-Zahl und das letzte eine positive nicht ganze Superial-Zahl,'."\n".
+                    'weil die größte Stelle dominant ist.'."\n".
+                    'Eine genaue Definition der \\jump{OM:SupNum:Formale-Entwicklung:GanzeSN}{ganzen Superial-Zahlen} findet sich in der formalen Entwicklung.'."\n",
+                      'Ganze Superial-Zahlen lassen sich also sinnvoll definieren und bei näherer Betrachtung, die wir später vollziehen,'."\n".
+                    'haben diese sehr interessante Eigenschaften und lassen uns Zahlen besser verstehen.'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Natürliche Superial-Zahlen} \\\\'."\n".
+                    'Wenn wir nun mitten in der Zahlentheorie sind, dann stellt sich auch die Frage, ob es ebenso natürliche Superial-Zahlen \\term{\M(S)_{N}} gibt.'."\n",
+                      'Das ist im Grunde ziemlich leicht zu beantworten, denn natürliche Zahlen sind generell alle positiven ganzen Superial-Zahlen,'."\n".
+                    'hier per obiger Definition einschließlich der Null.'."\n".
+                    'Um dies zu beurteilen müssen wir sagen können, welche ganzen Superial-Zahlen größer als Null sind.'."\n",
+                      'Bei den Superial-Zahlen handelt es sich um eine lexikografische Ordnung:'."\n".
+                    'Die Ordnung der ungleichen Faktoren der größten Potenz bestimmt die Ordnung zweier Superial-Zahlen,'."\n".
+                    'ähnlich wie die Wörter in einem Lexikon geordnet werden.'."\n",
+                      'Positiv ist eine ganze Superial-Zahl also, wenn der Faktor seiner größten Potenz größer als Null ist.'."\n".
+                    'Alle kleineren Potenzen können auch negativ sein, weil die größte Potenz dominant ist,'."\n".
+                    'wie in einigen der Beispiele:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \left( \forall a, b \in \mathbb{Q} \right) \left( \forall z \in \mathbb{Z} \right) \left[\; 0  \leq  〈a〉〈b〉〈z〉․  \in  \mathbb{S}_{N}  \;\right]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  〈5〉․  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \left〈 \frac{4}{25} \right〉\left〈 - \frac{3}{2} \right〉〈-5〉․  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \left〈 - \frac{4}{25} \right〉\left〈 \frac{3}{2} \right〉〈5〉  \notin  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \left〈 \frac{4}{25} \right〉\left〈 \frac{3}{2} \right〉〈5〉․〈1〉  \notin  \mathbb{S}_{N}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSN}{Natürliche Superial-Zahlen} lassen sich in den Superial-Zahlen also definieren.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Grundlagen:XXX', text =>
+                'Superiale Primzahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -381,28 +471,172 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Eig.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  s^{-1}  :=  〈0〉.〈1〉  }'),
-                      array( display => 'on',  latex => '{  s^{0}  :=  〈1〉.  :=  1  }'),
-                      array( display => 'on',  latex => '{  s^{1}  :=  〈1〉〈0〉.  }'),
-                      array( display => 'on',  latex => '{  a \cdot s^{1} + b \cdot s^{0} + c \cdot s^{-1}  :=  〈a〉〈b〉.〈c〉  }'),
+                  array( 'text', array( text => array(
+                    'Primzahlen im Endlichen:'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Bilde die Primfakultät einer Primzahl: \term{p#}',
+                        'Addiere einen dazu oder ziehen einen ab: \term{p# ± 1}',
+                        '\term{p# ± 1} ist nicht durch eine der Primzahlen in \term{p#} teilbar.',
+                        'Diese Zahl kann nur selber eine Primzahl sein oder ihr Primzahlprodukt enthält ausschließlich Primzahlen – mindestens zwei Stück – die nicht in \term{p#} enthalten und damit größer als \term{p} sind. ',
                     ))),
                   array( 'text', array( text => array(
-                    'Ganze Superial-Zahlen:'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Eig.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  u  :=  〈q〉〈z〉.〈0〉  \;\;\;  |  \;\;\;  (q \in \mathbb{Q}) (z \in \mathbb{Z})  }'),
-                      array( display => 'on',  latex => '{  u  :=  〈q〉〈z〉.〈0〉  \;\;\;  |  \;\;\;  (q \in \mathbb{Q}) (z \in \mathbb{Z})  }'),
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Nähern sich die Lücken in den Primzahlen \term{Δ  =  (p# - 1) - p}?',
+                        'Dann sind tendenziell alle \term{p# ± 1} Primzahlen.',
+                        'XXX',
+                        'XXX',
+                        'XXX',
+                        'XXX',
+                        'XXX',
+                        'XXX',
                     ))),
                   array( 'text', array( text => array(
-                    'Natürliche Superial-Zahlen:'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Eig.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  =  〈0〉〈n〉.〈0〉  }'),
-                      array( display => 'on',  latex => '{  〈1〉〈-1〉.〈0〉  }'),
-                      array( display => 'on',  latex => '{  v  :=  〈q〉〈n〉.〈0〉  \;\;\;  |  \;\;\;  (q \in \mathbb{Q}) (q \geq 0) (z \in \mathbb{Z})  }'),
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\term{Δp_{i}# = p_{i+1}# - p_{i}#}',
+                        'Annahme \term{Δp_{i}# < Δp_{i+1}#}',
+                        'XXX',
+                        'XXX',
                     ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '2 ⋅ 3 ⋅ 5  =  30',
+                        '30 / 2  =  15',
+                        'XXX',
+                        'XXX',
+                        'XXX',
+                        'XXX',
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}  :=  \left\{ x ~\middle|~ \left( \forall d \in \mathbb{Z} \right) \left( \forall q_{d} \in \mathbb{Q} \setminus \{0\} \right) \left( \forall q_{i} \in \mathbb{Q} \right) \\\ \qquad\qquad\qquad\qquad\qquad\quad \left[ q_{d} s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i]} q_{i} s^{i} \right] \right\}  }'),
+                      array( display => 'on',  latex => '{  p_{x}\# \pm 1  =  XXX  }'),
+                      array( display => 'on',  latex => '{  p  =  〈a〉〈b〉〈\pm 1〉․〈0〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'text', array( text => array(
+                    'Primzahlen in den Superial-Zahlen:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p  =  〈\frac{1}{2}〉〈\pm 1〉․〈0〉  }'),
+                      array( display => 'on',  latex => '{  p  =  〈a〉〈b〉〈\pm 1〉․〈0〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'text', array( text => array(
+                    'Experiment:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{\mathbb{N}\#}{2}  =  ungerade  }'),
+                      array( display => 'on',  latex => '{  \frac{\mathbb{N}\#}{2} \pm 1  =  gerade  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Diese beiden Zahlen sind durch keine endliche ungerade Primzahl teilbar.'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{\mathbb{N}\#}{2} - 1  ?=  2^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{\mathbb{N}\#}{2} + 1  =  2^{x} + 2  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{\mathbb{N}\#}{2} + 1  \neq  2^{y}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Oder:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{\mathbb{N}\#}{2} + 1  ?=  2^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{\mathbb{N}\#}{2} - 1  =  2^{x} - 2  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{\mathbb{N}\#}{2} - 1  \neq  2^{y}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{\mathbb{N}\#}{2} - 1  ?=  2^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{\mathbb{N}\#}{2} + 1  =  2^{x} + 2  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{\mathbb{N}\#}{2} + 1  =  (2^{x - 1} + 1) \cdot 2  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{\mathbb{N}\#}{2} + 1  \neq  2^{y}  }'),
+                      array( display => 'on',  latex => '{  (2^{x - 1} + 1) \cdot 2  =  2^{y}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  (2^{x - 1} + 1)  =  2^{y - 1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y - 1  =  log_{2} (2^{x - 1} + 1)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  log_{2} (2^{x - 1} + 1) + 1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  log_{2} ((2^{x - 1} + 1) \cdot 2)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  log_{2} (2^{x - 1} + 1) + log_{2} 2 }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  log_{2} (2^{x - 1} + 1) + 1 }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:XXX', text =>
                       
                 'XXX', subline =>

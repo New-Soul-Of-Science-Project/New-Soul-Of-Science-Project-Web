@@ -3030,8 +3030,9 @@
                                        jump_ary => array(
                                               'OM:SupNum:Formale-Entwicklung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
-                                                'OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktWiederholung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                                                'OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:SupNum:Formale-Entwicklung:Vortext:DefinitionSuperialeEinheit' => array( headline_text => 'Definition der superialen Einheit \\term{s}',/* headline_text_short => 'XXX'*/),
+                                                'OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktWiederholung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                                'OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                                               'OM:SupNum:Formale-Entwicklung:GanzeSN' => array( headline_text => 'Ganze Superial-Zahlen', headline_text_short => 'Ganze Superial-Zahlen'),
                                               'OM:SupNum:Formale-Entwicklung:NatuerlicheSN' => array( headline_text => 'Natürliche Superial-Zahlen', headline_text_short => 'Natürliche Superial-Zahlen'),
                                               'OM:SupNum:Formale-Entwicklung:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),

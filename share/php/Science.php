@@ -3,7 +3,7 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 26.06.2021, 21:00h
+  // #: Stand: 27.07.2021, 23:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
@@ -92,7 +92,10 @@
   //           20210417:  !:  "$Sc_g_Text_replace_preg_ary":  '//numbermdash' and 'callcode =>' removed.
   //                      >:  Defined a lot of constants to be compatible with PHP 7.2 and higher.
   //           20210517:  >:  "Sc_f_replace_callback__latexcommand__zirkumflex": Use now "To_f_replace_callback__latexcommand__parameterCheck".
-  //           20210625:  >:  "$Sc_g_LaTeX_replace_ary": Add "'〈' --> '\langle'", '〉' --> '\rangle'".
+  //           20210626:  >:  "$Sc_g_LaTeX_replace_ary": Add "'〈' --> '\langle'", '〉' --> '\rangle'".
+  //           20210726:  >:  "$Sc_g_LaTeX_replace_ary": Remove "'〈' --> '\langle'", '〉' --> '\rangle'".
+  //                      >:  "$Sc_g_equation_replace_ary": Add "'〈' --> '\langle '", '〉' --> '\rangle '", "'․', '.\\!'", "'  \neq  ', '\;\;\;\neq\;\;\;'", "'  \in  ', '\;\;\;\in\;\;\;'", "'  \subset  ', '\;\;\;\subset\;\;\;'".
+  //           20210727:  >:  "$Sc_g_equation_replace_ary": Add "'  \notin  ', '\;\;\;\notin\;\;\;'", '  \leq  ', '\;\;\;\leq\;\;\;'.
   // v01.004:  20130609:  !:  Include "Tools_v01_004.php"
   //           20130628:  +:  "$Glo_PathRel_back" added;
   // v01.003:  20130522:  !:  Include "Tools_v01_002.php"  -->  "Tools_v01_003.php"
@@ -297,8 +300,6 @@
   $Sc_g_LaTeX_replace_ary =       array(
                                     array( '--', '–'),
                                     array( '\\&', '&'),
-                                    array( '〈', '\langle'),
-                                    array( '〉', '\rangle'),
                                   );
 
 
@@ -564,7 +565,9 @@
   $Sc_g_equation_replace_ary = array(
                                     // #: Arrange space around symbols and save chars.
                                     array( '  =  ', '\;\;\;=\;\;\;'),
+                                    array( '  \neq  ', '\;\;\;\neq\;\;\;'),
                                     array( '  <  ', '\;\;\;<\;\;\;'),
+                                    array( '  \leq  ', '\;\;\;\leq\;\;\;'),
                                     array( '  \approx  ', '\;\;\;\approx\;\;\;'),
                                     array( '  \sim  ', '\;\;\;\sim\;\;\;'),
                                     array( '  \ll  ', '\;\;\;\ll\;\;\;'),
@@ -572,12 +575,18 @@
                                     array( '  :=  ', '\;\;\;≔\;\;\;'),
                                     array( '  ?=  ', '\;\;\;\overset{?}{=}\;\;\;'),
                                     array( '  \mapsto  ', '\;\;\;\mapsto\;\;\;'),
+                                    array( '  \in  ', '\;\;\;\in\;\;\;'),
                                     array( '  ?\in  ', '\;\;\;\overset{?}{\in}\;\;\;'),
+                                    array( '  \notin  ', '\;\;\;\notin\;\;\;'),
+                                    array( '  \subset  ', '\;\;\;\subset\;\;\;'),
                                     array( '  \rightarrow  ', '\;\;\;\rightarrow\;\;\;'),
                                     array( '  \not\rightarrow  ', '\;\;\;\not\rightarrow\;\;\;\;\;'),
                                     array( '\partial ', '\partial\,'),
                                     array( '\*part ', '\partial\,'),
                                     array( '\*part', '\partial\,'),
+                                    array( '〈', '\langle '),
+                                    array( '〉', '\rangle '),
+                                    array( '․', '.\\!'),  // #: Unicode Character 'ONE DOT LEADER' (U+2024)  -->  dot without a little following space
                                  );
 
   // #: The order of entries may be importened: As example see first ' + '-> ' \;+\; ' and than '+' -> '%2B'.
@@ -609,7 +618,7 @@
                                     array( '+', '%2B')
                                   ));
 
-  // #: The order of entries may be importened: As example see first ' + '-> ' \;+\; ' and than '+' -> '%2B'.
+  // #: The order of entries may be importent: As example see first ' + '-> ' \;+\; ' and than '+' -> '%2B'.
   $Sc_g_equation_replace_MathJax_ary = array_merge(
                                   array(
                                     // #: Simplify commands and save chars.
