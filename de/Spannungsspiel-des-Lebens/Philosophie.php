@@ -14,11 +14,13 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
-                    '(\\bold{Neues Verständnis der Philosophie:})',
-                    '(• Die Philosophie hat therapeutische Aspekte und ist somit mehr als nur Analyse: \\jump[https://www.youtube.com/watch?v=w8VTLnHdQX8]{}{Chinesische Philosophie – oder die Kunst, das Nichts zu denken, Sternstunde Philosophie | SRF Kultur - YouTube}\\hidden{Vgl. Ordner "Marchal, Kai - Chinesische Philosophie – oder die Kunst, das Nichts zu denken, Sternstunde Philosophie | SRF Kultur - 20190429"})',
-                    '(•o Die Philosophie ermöglicht Antworten auf die Frage nach unserem Glück und nach unserem Sinn des Lebens: \\jumpname{OM:SpaLeb:Glueck})',
-                    '(•o Philosophieren ist das Üben von Perspektivwechseln und damit bessere Entscheidungen zu fällen: \\jumpname{OM:SpaLeb:Psychosomatik-Entscheidungen})',
-                    '(–o Damit kann angewandte Philosophie einen großen Einfluss auf unsere Psychosomatik haben: \\jumpname{OM:SpaLeb:Psychosomatik-Stress})',
+                    '\\bold{Philosophieren über Esoterik, alternative Wissenschaft und akademische Wissenschaft}',
+                    '• Josef Gaßner und Harald Lesch diskutieren darüber: \\jump{https://www.youtube.com/watch?v=OPQtrDTPXsA}{Harald Lesch zu komplexen Systemen, Esoterik und alternativen Weltbildern | Lesch & Gaßner}',
+                    '\\bold{Neues Verständnis der Philosophie}',
+                    '• Die Philosophie hat therapeutische Aspekte und ist somit mehr als nur Analyse: \\jump[https://www.youtube.com/watch?v=w8VTLnHdQX8]{}{Chinesische Philosophie – oder die Kunst, das Nichts zu denken, Sternstunde Philosophie | SRF Kultur - YouTube}\\hidden{Vgl. Ordner "Marchal, Kai - Chinesische Philosophie – oder die Kunst, das Nichts zu denken, Sternstunde Philosophie | SRF Kultur - 20190429"}',
+                    '•o Die Philosophie ermöglicht Antworten auf die Frage nach unserem Glück und nach unserem Sinn des Lebens: \\jumpname{OM:SpaLeb:Glueck}',
+                    '•o Philosophieren ist das Üben von Perspektivwechseln und damit bessere Entscheidungen zu fällen: \\jumpname{OM:SpaLeb:Psychosomatik-Entscheidungen}',
+                    '–o Damit kann angewandte Philosophie einen großen Einfluss auf unsere Psychosomatik haben: \\jumpname{OM:SpaLeb:Psychosomatik-Stress}',
                     ))),
                       
                   array( 'text', array( text => array(

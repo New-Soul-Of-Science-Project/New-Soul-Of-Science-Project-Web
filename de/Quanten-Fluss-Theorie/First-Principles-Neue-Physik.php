@@ -14,6 +14,8 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'invis', text => array(
+                    '\\bold{Prinzipien der komplexen Systeme}',
+                    '• Josef Gaßner und Harald Lesch diskutieren darüber, ob der „reine“ Reduktionismus am Ende ist und wie die Physik weiter kommen kann: \\jump{https://www.youtube.com/watch?v=OPQtrDTPXsA}{Harald Lesch zu komplexen Systemen, Esoterik und alternativen Weltbildern | Lesch & Gaßner}',
                     '\\bold{Lösung des ›Problems der Zeit‹}',
                     '• Die Einleitung stellt die Lösung des ›Problems der Zeit‹ als Ansatzpunkt in den Vordergrund. Darauf sollte auch hier Bezug genommen werden.',
                     '• \\bold{Prinzip der Lichtuhr:} Damit ist das Prinzip der Lichtuhr verbunden. Ist dies hier schon hinreichen direkt eingepflegt?',
