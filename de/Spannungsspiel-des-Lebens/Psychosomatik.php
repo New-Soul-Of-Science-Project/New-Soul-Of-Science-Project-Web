@@ -8,7 +8,7 @@
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SpaLeb:Koerperliche-und-seelische-Existenz'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SpaLeb:Gesundheit-Heilung'); ?>
 
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',

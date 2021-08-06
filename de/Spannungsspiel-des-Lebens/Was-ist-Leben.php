@@ -190,8 +190,8 @@
                     'XXX'."\n"))),*/
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Information-Kommunikation'),
-                      array(  jump_name => 'OM:SpaLeb:Bewusstsein'),
+                      // array(  jump_name => 'OM:SpaLeb:Information-Kommunikation'),
+                      // array(  jump_name => 'OM:SpaLeb:Bewusstsein'),
                       array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess', title_site => '\\name{OM:SpaLeb:Achtsamkeitsprozess} \\color{*TitleAdd}{\\small{(Definition des Lebens)}}'),
                     )),
                 )

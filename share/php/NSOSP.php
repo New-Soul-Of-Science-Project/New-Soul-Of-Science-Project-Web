@@ -2535,6 +2535,24 @@
                                               'OM:SpaLeb:Gesichtsausdruck:FaceYourFaceApp' => array( headline_text => 'FaceYourFace App \\small{\\color{*TitleAdd}{(Face Your Face App)}}', headline_text_short => 'FaceYourFace App'),
                                             ),
                                      ),
+                              'OM:SpaLeb:Gesundheit-Heilung' =>
+                                array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Gesundheit-Heilung.php',
+                                       url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Gesundheit-Heilung.php',
+                                       titel => 'Gesundheit und Heilung - Spannungsspiel des Lebens - Deutsch',
+                                       // -> Gesichtssymmetrie wg Google?
+                                       description => '\\name[undertitle]{OM:SpaLeb:Gesundheit-Heilung}. — \\name[description]{OM:SpaLeb:Gesundheit-Heilung}.',
+                                       keywords => '',
+                                       text_titel_h1 => 'Gesundheit und Heilung',
+                                       text_titel_short => 'Gesundheit und Heilung',
+                                       text_undertitel_h2 => 'Gesundheit und Heilung lassen sich nicht delegieren',
+                                       text_titel_discr_h3 => 'Jede Form von Heilung ist immer eine Selbstheilung. Wir können diese unterstützen und uns dabei von anderen helfen lassen',
+                                       jump_ary => array(
+                                              'OM:SpaLeb:Gesundheit-Heilung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                                                         
+                                                'OM:SpaLeb:Gesundheit-Heilung:Vortext:Fig-XXX' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                              'OM:SpaLeb:Gesundheit-Heilung:XXX' => array( headline_text => 'XXX'/*, headline_text_short => 'XXX'*/),
+                                            ),
+                                     ),
                               'OM:SpaLeb:Glueck' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Glueck-Sinn-Spannend-Leben.php',
                                        url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Glueck-Sinn-Spannend-Leben.php',

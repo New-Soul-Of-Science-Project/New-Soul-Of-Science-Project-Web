@@ -687,7 +687,7 @@
                     'und bessere Entscheidungen zu fällen.'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Psychosomatik'),
+                      array(  jump_name => 'OM:SpaLeb:Gesundheit-Heilung'),
                     )),
               )
           ); ?>

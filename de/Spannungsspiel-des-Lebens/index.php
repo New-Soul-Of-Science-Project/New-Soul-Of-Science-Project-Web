@@ -151,12 +151,11 @@
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Einleitung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Was-ist-Leben'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Information-Kommunikation'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Bewusstsein'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Achtsamkeitsprozess'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Koerperliche-und-seelische-Existenz'),
                       array( title => 'Unser Fokus \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => 'Wohin wir fokussieren, was wir „sehen“ und uns bewusst wird, das können wir verändern'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Gesundheit-Heilung'),
                     ))),
                       
                   array( 'normal',
@@ -210,9 +209,11 @@
                     ))),
                     
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Spannungsbiologie \\small{– Biologie, Technik und Mechanik}}</h3>'."\n"),
+                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Neue Biophysik \\small{– Physikalische Grundlagen, Biologie, Technik und Mechanik}}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Information-Kommunikation'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Bewusstsein'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:KIundRobotik'),
                       array( title => 'Holz \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => 'Ein Stoff zwischen Leben und Tod – Flexibel, beständig, gesund und sinnlich, einfach liebenswert (• Was stabilisiert das Holz? • \\jump[https://kenfm.de/erwin-thoma/]{}{KenFM im Gespräch mit: Erwin Thoma – DIE MACHER (1)} und \\jump[https://www.youtube.com/watch?v=w0tBdpz2TBs&feature=youtu.be]{}{KenFM auf YouTube, Die Macher: Erwin Thoma - Holz100})'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
