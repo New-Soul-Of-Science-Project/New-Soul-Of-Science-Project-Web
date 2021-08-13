@@ -17,20 +17,13 @@
                     '\\color{*Bearb}{Seite befindet sich im Aufbau …}'."\n"))),
                       
                   array( 'text', array( text => array(
-                    'Mit den Superial-Zahlen die fraktale Struktur des Unendlichen entdecken …'."\n",
-                      'Vom Endlichen bis ins Aktualunendliche mit ganzen Zahlen zählen, ist eine faszinierende Sache.'."\n".
-                    'Welche Primfaktorenzerlegung haben diese aktualunendlichen ganzen Zahlen?'."\n".
-                    'Wie sind die Primzahlen im Aktualunendlichen verteilt?'."\n".
-                    'Wie sind Ableitungen und Integrale im Endlichen definiert, wenn wir die Superial-Zahlen dafür benutzen?'."\n",
-                      'Viele spannende Fragen, deren Antworten sich in dieser Arbeit ergeben.'."\n"))),
-                      //'Verstehen, was eine negative Menge ist, gibt einen besseren Einblick in die Realität unserer Welt.'."\n"))),
-                      
-                  array( 'text', array( text => array(
-                    'Dies ist die Startseite der kompletten Arbeit.'."\n".
-                    'Bitte wählen sie den direkten Zugang zu den einzelnen Themen über das nachfolgende \\jump{OM:ZS:Home:Inhalt}{Inhaltsverzeichnis}.'."\n".
-                    'Die \\jump{OM:ZS:Einleitung}{Einleitung} zu den Superial-Zahlen bietet einen Überblick über die grundlegende Herleitung.'."\n".
-                    'Bei Nachfragen und Interesse an einer Diskussion, Kritik oder Beteiligung sind Sie herzlich eingeladen \\jump{OM:FrQFT:Impressum:Inhaberdaten}{Kontakt} aufzunehmen.'."\n".
-                    'Auch eine Unterstützung durch \\jump{OM:FrQFT:Impressum:Spenden}{Spenden} ist herzlich willkommen.'."\n"))),
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    'XXX'."\n",
+                    'XXX'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         // #: Text so auch auf der Seite "OM:NPYo:Home". Durch eine Konstante ersetzen, in der der Hinweis auf den Haftungsausschluss durch eine Wild-Card der aktuellen Seite ersetzt ist. Z.B. "!:Haftungsausschluss".
