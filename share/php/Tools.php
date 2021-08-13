@@ -389,7 +389,7 @@
 
   
   
-  // #: The order of entries may be importened: As example XXX.
+  // #: The order of entries may be important: As example XXX.
   // !: Change name to "$To_g_HTML_replace_ary"!
   $To_g_Text_replace_ary = array(
                                     //array( "\r\n", '<br>'),     // #!: Makes problems in the contact form.
@@ -1111,7 +1111,7 @@
   const replace_internal = 'replace_internal';
   const callcode = 'callcode';  // #: Unused?
 
-  // #: The order of entries may be importened: As example 'hidden' must be at the very beginning nad 'const' must be the next.
+  // #: The order of entries may be important: As example 'hidden' must be at the very beginning nad 'const' must be the next.
   $To_g_Text_replace_preg_ary = array(
                                     'hidden' =>
                                       array( type => 'latexcommand',

@@ -451,7 +451,7 @@
   unset( $Sc_g_Text_replace_preg_ary['hidden']);
   unset( $Sc_g_Text_replace_preg_ary['const']);
   unset( $Sc_g_Text_replace_preg_ary['color']);
-  // #: The order of entries may be importened: 'const' must be at the very beginning. As example "\cite" can be inside "\color" but not vice versa.
+  // #: The order of entries may be important: 'const' must be at the very beginning. As example "\cite" can be inside "\color" but not vice versa.
   $Sc_g_Text_replace_preg_ary = array_merge(
                                     array(
                                       'hidden' =>
@@ -562,7 +562,7 @@
   
   
 
-  // #: The order of entries may be importened: As example see first ' + '-> ' \;+\; ' and than '+' -> '%2B'.
+  // #: The order of entries may be important: As example see first ' + '-> ' \;+\; ' and than '+' -> '%2B'.
   $Sc_g_equation_replace_ary = array(
                                     // #: Arrange space around symbols and save chars.
                                     array( '  =  ', '\;\;\;=\;\;\;'),
@@ -610,7 +610,7 @@
                                     array( '․', '.\\!'),  // #: Unicode Character 'ONE DOT LEADER' (U+2024)  -->  dot without a little following space
                                  );
 
-  // #: The order of entries may be importened: As example see first ' + '-> ' \;+\; ' and than '+' -> '%2B'.
+  // #: The order of entries may be important: As example see first ' + '-> ' \;+\; ' and than '+' -> '%2B'.
   $Sc_g_equation_replace_Google_ary = array_merge(
                                   array(
                                     // #: Simplify commands and save chars.
