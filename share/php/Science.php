@@ -3,7 +3,7 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 27.07.2021, 23:00h
+  // #: Stand: 13.08.2021, 13:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
@@ -96,6 +96,7 @@
   //           20210726:  >:  "$Sc_g_LaTeX_replace_ary": Remove "'〈' --> '\langle'", '〉' --> '\rangle'".
   //                      >:  "$Sc_g_equation_replace_ary": Add "'〈' --> '\langle '", '〉' --> '\rangle '", "'․', '.\\!'", "'  \neq  ', '\;\;\;\neq\;\;\;'", "'  \in  ', '\;\;\;\in\;\;\;'", "'  \subset  ', '\;\;\;\subset\;\;\;'".
   //           20210727:  >:  "$Sc_g_equation_replace_ary": Add "'  \notin  ', '\;\;\;\notin\;\;\;'", '  \leq  ', '\;\;\;\leq\;\;\;'.
+  //           20210813:  >:  "$Sc_g_equation_replace_ary": Add "'*(', '\left('", "'*)', '\right)'", "'*[', '\left['", "'*]', '\right]'", "'*\{', '\left\{'", "'*\}', '\right\}'", "'*\langle', '\left\langle'", "'*\rangle', '\right\rangle'", "'(  ', ')\; '", "'  )', ' \;)'", "'\left(  ', '\left(\; '", "'  \right)', ' \;\right)'", "'[  ', '[\; '", "'  ]', ' \;]'", "'\left[  ', '\left[\; '", "'  \right]', ' \;\right]'", "'\{  ', '\{\; '", "'  \}', ' \;\}'", "'\left\{  ', '\left\{\; '", "'  \right\}', ' \;\right\}'",
   // v01.004:  20130609:  !:  Include "Tools_v01_004.php"
   //           20130628:  +:  "$Glo_PathRel_back" added;
   // v01.003:  20130522:  !:  Include "Tools_v01_002.php"  -->  "Tools_v01_003.php"
@@ -586,6 +587,26 @@
                                     array( '\*part', '\partial\,'),
                                     array( '〈', '\langle '),
                                     array( '〉', '\rangle '),
+                                    array( '*(', '\left('),
+                                    array( '*)', '\right)'),
+                                    array( '*[', '\left['),
+                                    array( '*]', '\right]'),
+                                    array( '*\{', '\left\{'),
+                                    array( '*\}', '\right\}'),
+                                    array( '*\langle', '\left\langle'),
+                                    array( '*\rangle', '\right\rangle'),
+                                    array( '(  ', ')\; '),
+                                    array( '  )', ' \;)'),
+                                    array( '\left(  ', '\left(\; '),
+                                    array( '  \right)', ' \;\right)'),
+                                    array( '[  ', '[\; '),
+                                    array( '  ]', ' \;]'),
+                                    array( '\left[  ', '\left[\; '),
+                                    array( '  \right]', ' \;\right]'),
+                                    array( '\{  ', '\{\; '),
+                                    array( '  \}', ' \;\}'),
+                                    array( '\left\{  ', '\left\{\; '),
+                                    array( '  \right\}', ' \;\right\}'),
                                     array( '․', '.\\!'),  // #: Unicode Character 'ONE DOT LEADER' (U+2024)  -->  dot without a little following space
                                  );
 

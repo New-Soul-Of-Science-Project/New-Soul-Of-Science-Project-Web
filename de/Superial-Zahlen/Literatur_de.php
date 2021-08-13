@@ -16,6 +16,7 @@
                                           'Plichta:GottesGeheimeFormel:1995',
                                           'wiki:Ordinalzahl:2021',
                                           'wiki:Primorial:2015',
+                                          'wiki:Primzahl:2021',
                                           'wiki:Unendlichkeitsaxiom:2021',
                                         )); ?>
 
