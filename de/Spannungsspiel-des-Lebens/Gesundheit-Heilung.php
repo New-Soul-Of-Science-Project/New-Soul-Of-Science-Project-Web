@@ -23,7 +23,7 @@
                     '\\bold{Schulmedizin}',
                     '• Eine Pille, Impfung oder ähnliches heilt einen nicht komplett, sie kann „nur“ bei der Selbstheilung helfen. Das ist allerdings auch nicht zu unterschätzen und kann ganz entscheidend sein. Dies gilt ebenso natürlich auch für jedes Kraut und alle anderen von außen zugeführten Dinge.',
                     '• Ohne unsere Selbstheilung, die auf den zentralen Aspekten des ›Spannungsspiels des Lebens‹ basiert, gibt es keine Heilung. Heilung kann also nicht delegiert, sondern nützlicherweise unterstützt werden.',
-                    '• Die Förderung des guten Funktionierens all unserer eigenen biophysikalischen Regelprozesse und besonders unserer psychischen sowie physischen Lebenssituation sindhier entscheidend, weil sonst die Grundlage jeder Heilung marode ist oder fast ganz fehlt.',
+                    '• Die Förderung des guten Funktionierens all unserer eigenen biophysikalischen Regelprozesse und besonders unserer psychischen sowie physischen Lebenssituation sind hier entscheidend, weil sonst die Grundlage jeder Heilung marode ist oder fast ganz fehlt.',
                     ))),
                       
                   array( 'text', array( text => array(
