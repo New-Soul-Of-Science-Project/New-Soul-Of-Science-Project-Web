@@ -3,7 +3,7 @@
   // #: Name:  "NSOSP.php"
   
   
-  // #: Stand: 17.04.2021
+  // #: Stand: 15.08.2021
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
@@ -618,6 +618,13 @@
                                                          text => 'Toms doppelrechtes Gesicht.');
 
                                                          
+  $SupNum_g_figure_ary_GeradeSuperialZahlen    = array( fig_file_name => 'SN/superial-zahlen-gerade-v02', fig_alt_description => 'Gerade der Superial-Zahlen in geschachtelten Dimensionen', width => '600px', height => '290px', name => 'set local!',
+                                                         text => 'Die Grafik zeigt die fraktale Struktur der Geraden der Superial-Zahlen.'."\n".
+                                                                 'Untereinander dargestellt sind die verschachtelten Zahlengeraden, die jeweils darunter die unendlich kleine Umgebung'."\n".
+                                                                 'um eine Zahl der darüber liegenden Ebene herum zeigt.'."\n".
+                                                                 'Auf der unendlich kleinen, umgebenden Zahlengeraden ist jeweils eine bestimmte Zahl angegeben, die wieder eine solche Umgebung hat.'."\n".
+                                                                 'Die hier dargestellte Zahl ist:  \\term{2,6⋅s^{2} + 0,5⋅s^{1} – 1,4⋅s^{0} + 3,5⋅s^{-1}  = 〈2,6〉〈0,5〉〈–1,4〉_{0}〈3,5〉}');
+  
   $SupNum_g_figure_ary_sGeomKonstruktTeilung   = array( fig_file_name => 'SN/s-geom-Konstrukt-Teilung-v02', fig_alt_description => 'Rhythmische Zerlegung der Eins durch natürliche Zahlen', width => '600px', height => '290px', name => 'set local!',
                                                          text => 'Die Grafik zeigt, wie durch die Projektion der Begrenzungspunkte aller regelmäßigen natürlichzahligen Teilstrecken auf die Einheitsstrecke,'."\n".
                                                                  'von der Eins an bis ins Unendliche, und durch das Interpolieren ihrer Begrenzungspunkte zu einem gleichmäßigen Rhythmus,'."\n".
@@ -3022,7 +3029,8 @@
                                        jump_ary => array(
                                               'OM:SupNum:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
-                                                'OM:SupNum:Einleitung:Vortext:Frage-und-zweite-Erkenntnis' => array( headline_text => 'Frage und zweite Erkenntnis', headline_text_short => 'Frage und zweite Erkenntnis'),
+                                                'OM:SupNum:Einleitung:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                                'OM:SupNum:Einleitung:Vortext:Frage-und-zweite-Erkenntnis' => array( headline_text => 'Was ist \\term{s}?'/*, headline_text_short => 'XXX'*/),
                                                 'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N' => array( headline_text => 'SN.Ein.12'),
                                                 'OM:SupNum:Einleitung:Vortext:Equ-N-ist-mit-Null' => array( headline_text => 'SN.Ein.13'),
                                                 'OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N' => array( headline_text => 'SN.Ein.14'),
@@ -3030,6 +3038,7 @@
                                               'OM:SupNum:Einleitung:Grundlagen' => array( headline_text => 'Grundlagen'/*, headline_text_short => 'XXX'*/),
                                                 'OM:SupNum:Einleitung:Grundlagen:Equ-alle-n-kleiner-s' => array( headline_text => 'SN.Ein.Gr.14'),
                                                 'OM:SupNum:Einleitung:Grundlagen:Equ-exist-n-mit-r-kleiner-n' => array( headline_text => 'SN.Ein.Gr.15'),
+                                                'OM:SupNum:Einleitung:Grundlagen:Ganze-Natuerl-Sup-Zahl-und-Integration' => array( headline_text => 'Definition ganzer und natürlicher Superial-Zahlen und die Integration'/*, headline_text_short => 'XXX'*/),
                                               'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn' => array( headline_text => 'Fragestellungen und perspektivischer Erkenntnisgewinn'/*, headline_text_short => 'XXX'*/),
                                                 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung' => array( headline_text => 'Überrationalitätsvermutung', headline_text_short => 'Überrationalitätsvermutung'),
                                                 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung' => array( headline_text => 'Primzahlenprodukt-Vermutung', headline_text_short => 'Primzahlenprodukt-Vermutung'),

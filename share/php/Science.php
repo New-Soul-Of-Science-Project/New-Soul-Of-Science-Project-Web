@@ -97,6 +97,7 @@
   //                      >:  "$Sc_g_equation_replace_ary": Add "'〈' --> '\langle '", '〉' --> '\rangle '", "'․', '.\\!'", "'  \neq  ', '\;\;\;\neq\;\;\;'", "'  \in  ', '\;\;\;\in\;\;\;'", "'  \subset  ', '\;\;\;\subset\;\;\;'".
   //           20210727:  >:  "$Sc_g_equation_replace_ary": Add "'  \notin  ', '\;\;\;\notin\;\;\;'", '  \leq  ', '\;\;\;\leq\;\;\;'.
   //           20210813:  >:  "$Sc_g_equation_replace_ary": Add "'*(', '\left('", "'*)', '\right)'", "'*[', '\left['", "'*]', '\right]'", "'*\{', '\left\{'", "'*\}', '\right\}'", "'*\langle', '\left\langle'", "'*\rangle', '\right\rangle'", "'(  ', ')\; '", "'  )', ' \;)'", "'\left(  ', '\left(\; '", "'  \right)', ' \;\right)'", "'[  ', '[\; '", "'  ]', ' \;]'", "'\left[  ', '\left[\; '", "'  \right]', ' \;\right]'", "'\{  ', '\{\; '", "'  \}', ' \;\}'", "'\left\{  ', '\left\{\; '", "'  \right\}', ' \;\right\}'",
+  //           20210813:  >:  "$Sc_g_equation_replace_ary": Change "'  :=  ', '\;\;\;≔\;\;\;'" to "':=', '≔'" and set it before "'  ≔  ', '\;\;\;≔\;\;\;'".
   // v01.004:  20130609:  !:  Include "Tools_v01_004.php"
   //           20130628:  +:  "$Glo_PathRel_back" added;
   // v01.003:  20130522:  !:  Include "Tools_v01_002.php"  -->  "Tools_v01_003.php"
@@ -572,8 +573,8 @@
                                     array( '  \approx  ', '\;\;\;\approx\;\;\;'),
                                     array( '  \sim  ', '\;\;\;\sim\;\;\;'),
                                     array( '  \ll  ', '\;\;\;\ll\;\;\;'),
+                                    array( ':=', '≔'),
                                     array( '  ≔  ', '\;\;\;≔\;\;\;'),
-                                    array( '  :=  ', '\;\;\;≔\;\;\;'),
                                     array( '  ?=  ', '\;\;\;\overset{?}{=}\;\;\;'),
                                     array( '  \mapsto  ', '\;\;\;\mapsto\;\;\;'),
                                     array( '  \in  ', '\;\;\;\in\;\;\;'),
