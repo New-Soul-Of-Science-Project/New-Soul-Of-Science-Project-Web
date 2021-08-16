@@ -2886,7 +2886,7 @@
                                        text_titel_h1 => 'Schlaf und Aktivsein, Unterbewusstsein und Bewusstsein',
                                        text_titel_short => 'Schlaf und Aktivsein, Unterbewusstsein und Bewusstsein',
                                        text_undertitel_h2 => 'Unser Schlaf entspringt dem Gefühlspol unseres Achtsamkeitsprozesses, unser Aktivsein unserem Handlungspol',
-                                       text_titel_discr_h3 => 'Ebenso ist unser Unterbewusstsein mit unserem Schlaf und Gefühl verbunden, wie unser Bewusstsein mit unserem Aktivsein und unseren Handlungen',
+                                       text_titel_discr_h3 => 'Ebenso ist unser Unterbewusstsein mit unserem Schlaf und Gefühl verbunden, wie unser Bewusstsein mit unserem Aktivsein und unseren Handlungen verbunden ist',
                                        jump_ary => array(
                                               'OM:SpaLeb:Schlaf-und-Aktivsein:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
                                             ),

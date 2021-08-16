@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'invis', text => array(
                     '\\bold{Biologischer Bezug}',
                     '• Die weibliche Gefühlsseite unseres Achtsamkeitsprozesses ist mit unserem Parasympathikus, dem parasympathischen Teil unseres zentralen Nervensystems verknüpft.',
                     '– Wird unser Parasympathikus aktiviert, dann beruhigen wir uns vornehmlich, bis in den Schlaf.',
@@ -30,7 +30,14 @@
                     '– Bezeichne ich unsere weibliche Gefühlsseite als unsere passive Seite, dann können wir sagen: Wenn wir ganz in Ruhe und beständig unsere passive Seite aktivieren (in Ruhe → aktivieren → passive Seite), dann kommen wir zur Ruhe, bis in unseren Schlaf. Unser Schlaf ist also mit einer fraktal wechselnden Hierarchie von passiv, aktiv, passiv, und so fort, verbunden.',
                     '– Bezeichne ich unsere männliche Handlungsseite als unsere aktive Seite, dann können wir sagen: Wenn wir aktiv und beständig unsere aktive Seite aktivieren (aktiv → aktivieren → aktive Seite), wir erwachen und kommen wir in Aktion. Unsere Aktion oder starke Handlung ist also mit einer fraktal gleichen Hierarchie von aktiv, aktiv, aktiv, und so fort, verbunden.',
                     '\\bold{Bewusstsein}',
-                    '• Siehe auch \\italic{\\jumpname{OM:SpaLeb:Bewusstsein}}',
+                    '• Siehe auch \\italic{\\jumpname{OM:SpaLeb:Bewusstsein}}.',
+                    '\\bold{Dualität von und Dialog zwischen Bewusstsein und Unterbewusstsein}',
+                    '• Eigene Seite?',
+                    '• Bewusstsein steht für Wissen, für Licht, für Weisheit (weiße Haare) und Unterbewusstsein oder Unbewussten steht für Unwissen, für Dunkelheit, für Unbestimmtheit und auch für Potenzial.',
+                    '• Wir schöpfen aus dem Unterbewusstsein ins Bewusstsein, wir lernen, wir bringen Dinge zur Existenz und realisieren sie. Dies geschieht in unserem Dialog zwischen Bewusstsein und Unterbewusstsein.',
+                    '• Bezug zu den \\italic{\\jump{OM:SupNum:Home}{Superial-Zahlen}}:',
+                    '– \\term{s} steht für das Potenzial, den Raum der Möglichkeiten.',
+                    '– Zählen wir die natürlichen Superial-Zahlen von Null bis \\term{s}, dann zählen wir übers Endliche hinaus, über einen unbekannten „dunklen“ Bereich, bis ins Unendliche und kommen dort bei der unendlichen Eins (\\term{1⋅s}) wieder heraus. Dazwischen liegen unbewusste, verborgene Welten – Mysterien.',
                     '\\bold{Historischer Bezug}',
                     '• In dem oben geschilderten Kontext ist nun zu verstehen, warum unsere weibliche Gefühlsseite in früheren Kulturen, Religionen und Mythen mit dem Mond identifiziert wurde und unsere männliche Handlungsseite mit der Sonne. Der Schlaf und unser Unterbewusstsein spielten dort eine große und wichtige Rolle.',
                     '• Die bisher zu wenig erkannten und gewürdigten Aspekte der Bedeutung unseres Schlafs und Unterbewusstseins können wir sicher auch in früheren Kulturen finden, denn diese Menschen hatten einen ganz anderen Blick auf ihr Leben und auf ihren Schlaf und ihr Unterbewusstsein als wir.',
@@ -47,7 +54,41 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
+                    'Unser Leben vollzieht sich in einer dem Tag- und Nachtrhythmus folgenden Schwingung zwischen Wachsein sowie Aktivsein und Schlaf.'."\n".
+                    'Es ist eine Tag-Nacht-Schwingung zwischen den Polen unseres \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozesses},'."\n".
+                    'die Tagsüber meist unseren Handlungspol in den Vordergrund bringt und des Nachts unseren Gefühlspol;'."\n".
+                    'eine Schwingen zwischen unserem Bewusstsein und unserem Unterbewusstsein, Unbewusstsein oder Nichtbewusstsein.'."\n",
+                      'Die Realität dieser Schwingung zwischen den Polen unseres Achtsamkeitsprozesses ist ein weiterer deutlicher Hinweis auf \\jump{OM:SpaLeb:Achtsamkeitsprozess:BeobachtHinweise}{seinen Realitätsbezug}'."\n".
+                    'und seine Bedeutung für unser Leben.'."\n".
+                    'Unsere dauerhafte Ignoranz dieses Rhythmus ist mit unserem Leben nicht vereinbar.'."\n".
+                    'Sie ist tödlich.'."\n",
+                      'Die Erkenntnis, dass es sich hier um verschiedene Pole unserer Existenz handelt, die aus der Prozessperspektive miteinander in'."\n".
+                    'ständiger, ausgleichender Kommunikation stehen, erlaubt ein tieferes Verständnis unseres Schlafs, unserer Träume und'."\n".
+                    'unserer Intuitionen, als auch davon, was Bewusstsein und Unterbewusstsein bedeuten und welche Rolle sie im Zusammenhang spielen.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:XXX', text =>
+                      
+                'Wachsein bedeutet, unser Bewusstsein ist im Vordergrund', subline =>
+                  '… besonders unser bewusstes Handeln, so auch das Denken und damit unser Verstand')),
+                  array( 'text', array( text => array(
+                    'Wachsein ist auch viel mit Aktivsein verbunden, mit äußerem Handeln.'."\n",
+                      'Aber auch inneres Handeln in Form von Denken gehört ganz klar dazu.'."\n".
+                    'Unseren bewussten Verstand benutzen wir meist tagsüber in unserer Wachphase.'."\n".
+                    'Ebenso gilt dies für unsere bewusste Reflexion, unsere Selbstbeobachtung.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:XXX', text =>
+                      
+                'Intuitionen und Tagträume sind unser Dialog zwischen Bewusstsein und Unterbewusstsein, während unser Bewusstsein im Vordergrund ist', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Sind wir wach, und lassen vielleicht auch mal etwas mehr los, dann haben wir in dieser Mußephase Tagträume und besonders viele Intuitionen.'."\n",
+                      'In unserem inneren Dialog zwischen Bewusstsein und Unterbewusstsein steht immer noch unser Bewusstsein im Vordergrund.'."\n".
+                    'Wir gewinnen Informationen aus unserem Unterbewusstsein mit Hilfe unseres Bewusstseins, wir schöpfen Wissen in unser Bewusstsein.'."\n".
+                    'Dieser Wissensschöpfungsprozess mündet in Intuitionen und Tagträume oder Visionen.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:XXX', text =>
+                      
+                'Intuition meint, unbewusstes kommt uns bewusst zu Bewusstsein', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -104,37 +145,7 @@
                     'XXX'."\n"))),
                   array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:XXX', text =>
                       
-                'Intuitionen und Tagträume sind unser Dialog zwischen Bewusstsein und Unterbewusstsein, während unser Bewusstsein im Vordergrund ist', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:XXX', text =>
-                      
-                'Intuition meint, unbewusstes kommt uns bewusst zu Bewusstsein', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:XXX', text =>
-                      
-                'XXX', subline =>
+                'Wir schöpfen Wissen aus unserem Unterbewusstsein in unser Bewusstsein', subline =>
                   '')),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n".
