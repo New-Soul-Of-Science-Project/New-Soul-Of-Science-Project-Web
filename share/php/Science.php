@@ -3,7 +3,7 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 13.08.2021, 13:00h
+  // #: Stand: 28.08.2021, 21:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
@@ -98,6 +98,7 @@
   //           20210727:  >:  "$Sc_g_equation_replace_ary": Add "'  \notin  ', '\;\;\;\notin\;\;\;'", '  \leq  ', '\;\;\;\leq\;\;\;'.
   //           20210813:  >:  "$Sc_g_equation_replace_ary": Add "'*(', '\left('", "'*)', '\right)'", "'*[', '\left['", "'*]', '\right]'", "'*\{', '\left\{'", "'*\}', '\right\}'", "'*\langle', '\left\langle'", "'*\rangle', '\right\rangle'", "'(  ', ')\; '", "'  )', ' \;)'", "'\left(  ', '\left(\; '", "'  \right)', ' \;\right)'", "'[  ', '[\; '", "'  ]', ' \;]'", "'\left[  ', '\left[\; '", "'  \right]', ' \;\right]'", "'\{  ', '\{\; '", "'  \}', ' \;\}'", "'\left\{  ', '\left\{\; '", "'  \right\}', ' \;\right\}'",
   //           20210813:  >:  "$Sc_g_equation_replace_ary": Change "'  :=  ', '\;\;\;≔\;\;\;'" to "':=', '≔'" and set it before "'  ≔  ', '\;\;\;≔\;\;\;'".
+  //           20210828:  >:  "$Sc_g_equation_replace_ary": Add "'*|', '\left|'", "'|*', '\right|'".
   // v01.004:  20130609:  !:  Include "Tools_v01_004.php"
   //           20130628:  +:  "$Glo_PathRel_back" added;
   // v01.003:  20130522:  !:  Include "Tools_v01_002.php"  -->  "Tools_v01_003.php"
@@ -594,6 +595,8 @@
                                     array( '*]', '\right]'),
                                     array( '*\{', '\left\{'),
                                     array( '*\}', '\right\}'),
+                                    array( '*|', '\left|'),
+                                    array( '|*', '\right|'),
                                     array( '*\langle', '\left\langle'),
                                     array( '*\rangle', '\right\rangle'),
                                     array( '(  ', ')\; '),
