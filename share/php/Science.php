@@ -3,7 +3,7 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 28.08.2021, 21:00h
+  // #: Stand: 29.08.2021, 11:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
@@ -99,6 +99,7 @@
   //           20210813:  >:  "$Sc_g_equation_replace_ary": Add "'*(', '\left('", "'*)', '\right)'", "'*[', '\left['", "'*]', '\right]'", "'*\{', '\left\{'", "'*\}', '\right\}'", "'*\langle', '\left\langle'", "'*\rangle', '\right\rangle'", "'(  ', ')\; '", "'  )', ' \;)'", "'\left(  ', '\left(\; '", "'  \right)', ' \;\right)'", "'[  ', '[\; '", "'  ]', ' \;]'", "'\left[  ', '\left[\; '", "'  \right]', ' \;\right]'", "'\{  ', '\{\; '", "'  \}', ' \;\}'", "'\left\{  ', '\left\{\; '", "'  \right\}', ' \;\right\}'",
   //           20210813:  >:  "$Sc_g_equation_replace_ary": Change "'  :=  ', '\;\;\;≔\;\;\;'" to "':=', '≔'" and set it before "'  ≔  ', '\;\;\;≔\;\;\;'".
   //           20210828:  >:  "$Sc_g_equation_replace_ary": Add "'*|', '\left|'", "'|*', '\right|'".
+  //           20210829:  >:  "$Sc_g_equation_replace_ary": Add "'\left|  ', '\left|\; '", "'  \right|', ' \;\right|'".
   // v01.004:  20130609:  !:  Include "Tools_v01_004.php"
   //           20130628:  +:  "$Glo_PathRel_back" added;
   // v01.003:  20130522:  !:  Include "Tools_v01_002.php"  -->  "Tools_v01_003.php"
@@ -611,6 +612,8 @@
                                     array( '  \}', ' \;\}'),
                                     array( '\left\{  ', '\left\{\; '),
                                     array( '  \right\}', ' \;\right\}'),
+                                    array( '\left|  ', '\left|\; '),
+                                    array( '  \right|', ' \;\right|'),
                                     array( '․', '.\\!'),  // #: Unicode Character 'ONE DOT LEADER' (U+2024)  -->  dot without a little following space
                                  );
 
