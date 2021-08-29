@@ -825,7 +825,7 @@
                                                           '<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
                                                         ),
                                        header_bgcolor => '#FFFFFF',
-                                       header_pict_name => 'FrQFT/FrQFT_header_v01_2_1860x354_72dpi_de.jpg',
+                                       header_pict_name => 'FrQFT/FrQFT_header_v01_3.jpg',
                                        header_pict_width => '930px',
                                        header_pict_height => '177px',
                                        header_pict_bgcolor => '#FFFFFF',
