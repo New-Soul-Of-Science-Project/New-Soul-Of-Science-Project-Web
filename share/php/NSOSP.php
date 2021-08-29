@@ -829,7 +829,7 @@
                                        header_pict_width => '930px',
                                        header_pict_height => '177px',
                                        header_pict_bgcolor => '#FFFFFF',
-                                       header_pict_alt => 'Die Fraktale Quanten-Fluss-Theorie, Organische Physik',
+                                       header_pict_alt => 'Fraktale Quanten-Fluss-Theorie, Organische Physik',
                                        header_links_marginLeft => '336px',
                                        copy_right => 'Fraktale Quanten-Fluss-Theorie (FrQFT) \\\\'."\n".
                                                       '© 1990–2021 by \\\\'."\n".
@@ -1770,10 +1770,10 @@
                               'OM:NPT:Home' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-der-Zeit/index.php',
                                        url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/index.php',
-                                       titel => 'Die strukturelle Naturphilosophie der Zeit (NPT) - Deutsch',
-                                       description => 'Die strukturelle Naturphilosophie der Zeit (NPT) – der Djet-Neheh-Dualismus bringt die Begriffe Zeit, Existenz, Struktur, Veränderung oder Bewegung, Wechselwirkung, Symmetriebruch und Spannung in einen allgemeinen Zusammenhang.',
+                                       titel => 'Strukturelle Naturphilosophie der Zeit (NPT) - Deutsch',
+                                       description => 'Strukturelle Naturphilosophie der Zeit (NPT) – der Djet-Neheh-Dualismus bringt die Begriffe Zeit, Existenz, Struktur, Veränderung oder Bewegung, Wechselwirkung, Symmetriebruch und Spannung in einen allgemeinen Zusammenhang.',
                                        keywords => '',
-                                       text_titel_h1 => 'Die strukturelle Naturphilosophie der Zeit \\color{*TitleAdd}{\\small{(NPT)}}',
+                                       text_titel_h1 => 'Strukturelle Naturphilosophie der Zeit \\color{*TitleAdd}{\\small{(NPT)}}',
                                        text_titel_short => 'Naturphilosophie der Zeit',
                                        text_undertitel_h2 => 'Ein strukturelles Verständnis der dynamischen Existenz und ihrer Zeit',
                                        text_titel_discr_h3 => 'Der Djet-Neheh-Dualismus bringt die Begriffe Struktur, Bewegung als deren Veränderung, Existenz, Zeit, Wechselwirkung, Symmetriebruch und Spannung in einen allgemeinen Zusammenhang',
@@ -2191,9 +2191,9 @@
                                        header_pict_width => '930px',
                                        header_pict_height => '177px',
                                        header_pict_bgcolor => '#FFFFFF',
-                                       header_pict_alt => 'The New Soul Of Science Project, Knowledge And Care Helps …',
+                                       header_pict_alt => 'New Soul Of Science Project, Knowledge And Care Helps',
                                        header_links_marginLeft => '384px',
-                                       copy_right => 'The New Soul Of Science Project (NSOSP) \\\\'."\n".
+                                       copy_right => 'New Soul Of Science Project (NSOSP) \\\\'."\n".
                                                       '© 1988–2021 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
@@ -2206,11 +2206,11 @@
                                 array( url_abs => 'http://www.nsosp.org/de/New-Soul-Of-Science-Project/index.php',
                                        url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/index.php',
                                        titel => 'New Soul Of Science Project (NSOSP) – Deutsch',
-                                       description => 'Knowledge And Care Helps … – Bewusstsein, Wissen, Fürsorge und Können helfen gegen Hilflosigkeit in der Not, in dem sie uns Werkzeuge zur Verbesserung unserer Lebenssituation und Lebensqualität an die Hand geben.',
+                                       description => 'Knowledge And Care Helps – Bewusstsein, Wissen, Fürsorge und Können helfen gegen Hilflosigkeit in der Not, in dem sie uns Werkzeuge zur Verbesserung unserer Lebenssituation und Lebensqualität an die Hand geben.',
                                        keywords => '',
                                        text_titel_h1 => 'New Soul Of Science Project \\color{*TitleAdd}{\\small{(NSOSP)}}',
                                        text_titel_short => 'New Soul Of Science Project',
-                                       text_undertitel_h2 => 'Knowledge And Care Helps …',
+                                       text_undertitel_h2 => 'Knowledge And Care Helps',
                                        text_titel_discr_h3 => 'Bewusstsein, Wissen, Fürsorge und Können helfen gegen Hilflosigkeit in der Not, in dem sie uns Werkzeuge zur Verbesserung unserer Lebenssituation und Lebensqualität an die Hand geben',
                                        jump_ary => array(
                                               'OM:nSOSp:Home:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
@@ -2228,7 +2228,7 @@
                                                 'OM:nSOSp:Home:Wolfgang-Huss:FrQFT' => array( headline_text => '\\name[title]{OM:FrQFT:Home}', headline_text_short => '\\name[shorttitle]{OM:FrQFT:Home}'),
                                                 'OM:nSOSp:Home:Wolfgang-Huss:VRT' => array( headline_text => '\\name[title]{OM:VRT:Home}', headline_text_short => '\\name[shorttitle]{OM:VRT:Home}'),
                                                 'OM:nSOSp:Home:Wolfgang-Huss:SupNum' => array( headline_text => '\\name[title]{OM:SupNum:Home}', headline_text_short => '\\name[shorttitle]{OM:SupNum:Home}'),
-                                                'OM:nSOSp:Home:Wolfgang-Huss:NPT' => array( headline_text => 'Die strukturelle Naturphilosophie der Gegensätze', headline_text_short => 'Naturphilosophie der Gegensätze'),
+                                                'OM:nSOSp:Home:Wolfgang-Huss:NPT' => array( headline_text => 'Strukturelle Naturphilosophie der Gegensätze', headline_text_short => 'Naturphilosophie der Gegensätze'),
                                                 'OM:nSOSp:Home:Wolfgang-Huss:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
                                                          
                                               'OM:nSOSp:Home:Spannungsspiel-des-Lebens' => array( headline_text => '\\name[title]{OM:SpaLeb:Home}', headline_text_short => '\\name[shorttitle]{OM:SpaLeb:Home}'),
@@ -2238,7 +2238,7 @@
                                               // 'OM:nSOSp:Home:Superial-Zahlen' => array( headline_text => 'Die Superial-Zahlen \\color{*TitleAdd}{<small>(SN)</small>}', headline_text_short => 'Superial-Zahlen'),
                                               'OM:nSOSp:Home:Superial-Zahlen' => array( headline_text => '\\name[title]{OM:SupNum:Home}', headline_text_short => '\\name[shorttitle]{OM:SupNum:Home}'),
                                               'OM:nSOSp:Home:Naturphilosophie-der-Zeit' => array( headline_text => '\\name[title]{OM:NPT:Home}', headline_text_short => '\\name[shorttitle]{OM:NPT:Home}'),
-                                              'OM:nSOSp:Home:Naturphilosophie-der-Gegensaetze' => array( headline_text => 'Die strukturelle Naturphilosophie der Gegensätze', headline_text_short => 'Naturphilosophie der Gegensätze'),
+                                              'OM:nSOSp:Home:Naturphilosophie-der-Gegensaetze' => array( headline_text => 'Strukturelle Naturphilosophie der Gegensätze', headline_text_short => 'Naturphilosophie der Gegensätze'),
                                               'OM:nSOSp:Home:Zahlensemantik' => array( headline_text => '\\name[title]{OM:ZS:Home}', headline_text_short => '\\name[shorttitle]{OM:ZS:Home}'),
                                               'OM:nSOSp:Home:Inspiration' => array( headline_text => 'Inspiration', headline_text_short => 'Inspiration'),
                                             ),
@@ -2976,7 +2976,7 @@
                                        header_pict_width => '930px',
                                        header_pict_height => '177px',
                                        header_pict_bgcolor => '#FFFFFF',
-                                       header_pict_alt => 'Die Superial-Zahlen, mit Primzahlen ins Unendliche',
+                                       header_pict_alt => 'Superial-Zahlen, mit Primzahlen ins Unendliche',
                                        header_links_marginLeft => '398px',
                                        copy_right => 'Superial-Zahlen (SN) \\\\'."\n".
                                                       '© \\hidden{(1988?)}1989–2021 by \\\\'."\n".
@@ -2990,10 +2990,10 @@
                               'OM:SupNum:Home' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/index.php',
                                        url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/index.php',
-                                       titel => 'Die Superial-Zahlen (SN) - Deutsch',
+                                       titel => 'Superial-Zahlen (SN) - Deutsch',
                                        description => 'Mit Primzahlen ins Unendliche. Der Unendlichkeit eine fundamentale und fraktale Struktur geben.',
                                        keywords => '',
-                                      text_titel_h1 => 'Die Superial-Zahlen \\color{*TitleAdd}{\\small{(SN)}}',
+                                       text_titel_h1 => 'Superial-Zahlen \\color{*TitleAdd}{\\small{(SN)}}',
                                        text_titel_short => 'Superial-Zahlen',
                                        text_undertitel_h2 => 'Mit Primzahlen ins Unendliche',
                                        text_titel_discr_h3 => 'Der Unendlichkeit eine fundamentale und fraktale Struktur geben',
@@ -3095,7 +3095,7 @@
                                        header_pict_width => '930px',
                                        header_pict_height => '177px',
                                        header_pict_bgcolor => '#FFFFFF',
-                                       header_pict_alt => 'Die Vereinheitlichte Relativitätstheorie, in der Quanten-Fluss-Theorie',
+                                       header_pict_alt => 'Vereinheitlichte Relativitätstheorie, in der Quanten-Fluss-Theorie',
                                        header_links_marginLeft => '383px',
                                        copy_right => 'Vereinheitlichte Relativitätstheorie (VRT) \\\\'."\n".
                                                       '© 1990–2021 by \\\\'."\n".
@@ -3109,10 +3109,10 @@
                                'OM:VRT:Home' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Vereinheitlichte-Relativitaetstheorie/index.php',
                                        url_rel => $Glo_PathRel_back.'../de/Vereinheitlichte-Relativitaetstheorie/index.php',
-                                       titel => 'Die Vereinheitlichte Relativitätstheorie (VRT) - Deutsch',
+                                       titel => 'Vereinheitlichte Relativitätstheorie (VRT) - Deutsch',
                                        description => 'Die strukturelle Vereinheitlichung der Speziellen und Allgemeinen Relativitätstheorie mit der Lorentzschen Äthertheorie. Ein Schritt zu Vereinheitlichung der Physik im Rahmen der Quanten-Fluss-Theorie. — Eine Vereinfachung Einsteins bei der Formulierung der Relativitätstheorie steht der Quantengravitation und der Vereinheitlichung der Physik im Weg.',
                                        keywords => '',
-                                       text_titel_h1 => 'Die Vereinheitlichte Relativitätstheorie \\color{*TitleAdd}{\\small{(VRT)}}',
+                                       text_titel_h1 => 'Vereinheitlichte Relativitätstheorie \\color{*TitleAdd}{\\small{(VRT)}}',
                                        text_titel_short => 'Vereinheitlichte Relativitätstheorie',
                                        //text_undertitel_h2 => 'Vereinheitlichung der Speziellen und Allgemeinen Relativitätstheorie mit der Lorentzschen Äthertheorie im Rahmen der Quanten-Fluss-Theorie',
                                        text_undertitel_h2 => 'Die strukturelle Vereinheitlichung der Speziellen und Allgemeinen Relativitätstheorie mit der Lorentzschen Äthertheorie. Ein Schritt zu Vereinheitlichung der Physik im Rahmen der Quanten-Fluss-Theorie',
@@ -3222,7 +3222,7 @@
                                        header_pict_width => '930px',
                                        header_pict_height => '177px',
                                        header_pict_bgcolor => '#FFFFFF',
-                                       header_pict_alt => 'Die Zahlensemantik',
+                                       header_pict_alt => 'Zahlensemantik',
                                        header_links_marginLeft => '383px',
                                        copy_right => 'Zahlensemantik (ZS) \\\\'."\n".
                                                       '© 2010–2021 by \\\\'."\n".
@@ -3236,10 +3236,10 @@
                                'OM:ZS:Home' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Zahlensemantik/index.php',
                                        url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/index.php',
-                                       titel => 'Die Zahlensemantik (ZS) - Deutsch',
+                                       titel => 'Zahlensemantik (ZS) - Deutsch',
                                        description => '\\name[undertitle]{OM:ZS:Home}. — \\name[description]{OM:ZS:Home}.',
                                        keywords => '',
-                                       text_titel_h1 => 'Die Zahlensemantik \\color{*TitleAdd}{\\small{(ZS)}}',
+                                       text_titel_h1 => 'Zahlensemantik \\color{*TitleAdd}{\\small{(ZS)}}',
                                        text_titel_short => 'Zahlensemantik',
                                        text_undertitel_h2 => 'XXX',
                                        text_titel_discr_h3 => 'YYY',

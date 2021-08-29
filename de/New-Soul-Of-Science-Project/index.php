@@ -1114,7 +1114,7 @@
           ); ?>
 
 
-		    	<!  • Die strukturelle Naturphilosophie der Gegensätze  >
+		    	<!  • Strukturelle Naturphilosophie der Gegensätze  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
             'OM:nSOSp:Home:Naturphilosophie-der-Gegensaetze',
@@ -1137,7 +1137,7 @@
           ); ?>
 
 
-		    	<!  • Die Superial-Zahlen (SN)  >
+		    	<!  • Superial-Zahlen (SN)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
             'OM:nSOSp:Home:Superial-Zahlen',
@@ -1158,7 +1158,7 @@
           ); ?>
 
 
-		    	<!  • Die Zahlensemantik (ZS)  >
+		    	<!  • Zahlensemantik (ZS)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
             'OM:nSOSp:Home:Zahlensemantik',
