@@ -62,24 +62,38 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • XXX  >
+		    	<!  • Heilung und Schlaf  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
-            'OM:SpaLeb:Gesundheit-Heilung:XXX',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+            'OM:SpaLeb:Gesundheit-Heilung:HeilungSchlaf',
+              'Eine Frage der bewussten Kontrolle', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'vis', text => array(
-                    '\\bold{XXX}',
-                    '• XXX',
+                    // '\\bold{XXX}',
+                    // '• XXX',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Einer der wesentlichen Unterschiede zwischen \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{Aktivsein und Schlaf} ist, dass das Aktivsein ein kontrollierter Zustand ist,'."\n".
+                    'während das Schlafen einen Kontrollverlust bedeutet.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Gesundheit-Heilung:HeilungSchlaf:HeilungImSchlaf', text =>
+                      
+                'Heilung im Schlaf', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Dieses Loslassen, dieser Kontrollverlust im Schlaf, ermöglicht es dem Unterbewusstsein uns zu heilen; von unserem Tag und auch generell.'."\n",
+                      'Nehmen wir zu viel Kontrolle mit in den Schlaf, indem wir zum Beispiel unsere Gedanken, unsere Sorgen, mit in den Schlaf nehmen,'."\n".
+                    'dann wird diese Heilung, diese Regeneration, gestört.'."\n",
+                      'Um uns zu regenerieren detektieren wir tief in unseren inneren Zustand hinein.'."\n".
+                    'Das Detektieren gehört zu Regelprozessen, die in Gang gesetzt werden, um zu verarbeiten, aufzuräumen und wieder einen guten Zustand für den nächsten Tag herzustellen.'."\n".
+                    'Ich vermute, dass diese Regelprozesse der Verarbeitung und Regeneration nur gut funktionieren, wenn sie nicht von den Handlungsabläufen des Tages und dem für diese'."\n".
+                    'notwendigen Fokus „gestört“ werden.'."\n".
+                    'Sie müssen für ein gutes Lernen und eine gute Heilung im Flow sein, worin wir erkennen können, das Lernen und Heilung im Grunde keine zwei Dinge sind.'."\n",
+                      'Einen wichtigen Teil der Verarbeitung, des Lernens, vermute ich in unseren \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{Träumen}.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -88,7 +102,18 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Gesundheit-Heilung:XXX:XXX', text =>
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX Vertrauen, Glauben, \\jump{OM:NPYo:Spiritualitaet-Psychologie}{Spiritualität}'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Gesundheit-Heilung:HeilungSchlaf:XXX', text =>
                       
                 'XXX', subline =>
                   '')),

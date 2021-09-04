@@ -2556,8 +2556,9 @@
                                        jump_ary => array(
                                               'OM:SpaLeb:Gesundheit-Heilung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
-                                                'OM:SpaLeb:Gesundheit-Heilung:Vortext:Fig-XXX' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
-                                              'OM:SpaLeb:Gesundheit-Heilung:XXX' => array( headline_text => 'XXX'/*, headline_text_short => 'XXX'*/),
+                                                // 'OM:SpaLeb:Gesundheit-Heilung:Vortext:Fig-XXX' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                              'OM:SpaLeb:Gesundheit-Heilung:HeilungSchlaf' => array( headline_text => 'Heilung und Schlaf'/*, headline_text_short => 'XXX'*/),
+                                                'OM:SpaLeb:Gesundheit-Heilung:HeilungSchlaf:HeilungImSchlaf' => array( headline_text => 'Heilung im Schlaf'/*, headline_text_short => 'XXX'*/),
                                             ),
                                      ),
                               'OM:SpaLeb:Glueck' =>
