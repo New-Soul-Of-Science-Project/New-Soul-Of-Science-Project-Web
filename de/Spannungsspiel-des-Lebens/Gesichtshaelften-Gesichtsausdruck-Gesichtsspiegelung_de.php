@@ -77,8 +77,8 @@
                     'Das Aufgeführte ist wesentlicher Bestandteil alten philosophischen und medizinischen Wissens der Welt und unserer Religionen, wie der Veden, des Yoga (auch Tantra),'."\n".
                     'des Hinduismus, des Buddhismus, der altägyptischen Mythologie, des Judentums, des Christentums und des Islams.'."\n".
                     'Und die Liste kann noch weiter fortgesetzt werden.'."\n",
-                      'Diese Themen haben mich schon immer fasziniert und über viele von ihnen schreibe ich auf den Seiten zum \\jump{OM:SpaLeb:Home:Inhalt}{›Spannungsspiel des Lebens‹},'."\n".
-                    'des \\jump{OM:NPYo:Home:Inhalt}{Naturphilosophie-Yoga} und in der \\jump{OM:FrQFT:Home:Inhalt}{Quanten-Fluss-Theorie}.'."\n".
+                      'Diese Themen haben mich schon immer fasziniert und über viele von ihnen schreibe ich auf den Seiten zum \\jump{OM:SpaLeb:Home}{›Spannungsspiel des Lebens‹},'."\n".
+                    'des \\jump{OM:NPYo:Home}{Naturphilosophie-Yoga} und in der \\jump{OM:FrQFT:Home}{Quanten-Fluss-Theorie}.'."\n".
                     'Wesentliche Teile dieses Wissens und dieser Glauben sind verbunden durch tiefe Einsichten der hier beschriebenen Naturphilosophie.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
@@ -90,7 +90,7 @@
                     'von denen uns manche, ohne diese Reflexionsmöglichkeit, verborgen bleiben würden.'."\n",
                       'Es ist sicherlich kein Zufall, dass unser Gesicht ein so tiefblickender Informationsträger ist, der \\jump{OM:SpaLeb:Gesichtsausdruck:SozialeKomponente}{anderen Menschen etwas darüber'."\n".
                     'erzählt}, wie es uns geht.'."\n".
-                    'Das selbe gilt auch für unsere \\jump{OM:SpaLeb:OM:SpaLeb:Koerperspannung}{Körperhaltung} und unsere \\jump{OM:SpaLeb:Gesangstechnik}{Stimme}.'."\n",
+                    'Das selbe gilt auch für unsere \\jump{OM:SpaLeb:Koerperspannung}{Körperhaltung} und unsere \\jump{OM:SpaLeb:Gesangstechnik}{Stimme}.'."\n",
                       'Der Vergleich unserer beiden Gesichtshälften – am deutlichsten beim Vergleich unseres doppelrechten und doppellinken Gesichts (siehe \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppellinkesGesicht} und \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppelrechtesGesicht}) –'."\n".
                     'kann uns sichtbar machen, wie gut der Gefühlspol und der Denk-/Handlungspol unseres Achtsamkeitsprozesses funktioniert.'."\n".
                     'Wir könnten zum Beispiel erkennen, wie gut beide Pole unserer Achtsamkeit in Balance sind.'."\n"))),
