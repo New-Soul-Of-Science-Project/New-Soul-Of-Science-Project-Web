@@ -737,7 +737,6 @@
   $FrQFT_g_Vid_idx = 0;
   
   const url_abs = 'url_abs';
-  const url_rel = 'url_rel';
   const titel = 'titel';
   const description = 'description';
   const keywords = 'keywords';

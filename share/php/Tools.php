@@ -4,7 +4,7 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 17.05.2021, 20:00h
+  // #: Stand: 13.09.2021, 14:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
@@ -161,7 +161,8 @@
   //           20210417:  !:  "$To_g_Text_replace_preg_ary":  '\\brintent' and 'callcode =>' removed.
   //                      >:  Defined a lot of constants to be compatible with PHP 7.2 and higher.
   //           20210517:  >:  "To_f_replace_callback__latexcommand__parameterCheck", "To_f_replace_callback__latexcommand__parameterDef": Implemented.
-// v01.004:  20130609:  !:  "To_f_headline_make":  Tables left margin changed to 10px.
+  //           20210913:  >:  "To_f_Site":  Use "To_f_JumpName_StarReplace".
+  // v01.004:  20130609:  !:  "To_f_headline_make":  Tables left margin changed to 10px.
   //                      !:  "$To_g_Text_replace_ary":  '„', '›', '‹', '»', '«' entries new.
   //           20130618:  !:  "$To_g_Text_replace_ary":  '&nbsp;', '&amp;', '&reg;', '&ldquo;' entries new.
   //           20130628:  +:  "$Glo_PathRel_back" added;
@@ -284,20 +285,9 @@
   {
     global $Glo_g_Theme_list;
     
-    // !!!: Replace with "To_f_JumpName_StarReplace"!
     // #?: Is "$jump_name" a theme?
-    while (substr( $jump_name, 0, 1) == '*')
-    {
-      //print_r( $jump_name);
+    To_f_JumpName_StarReplace( $jump_name);
 
-      if (array_key_exists( $jump_name, $Glo_g_Theme_list))
-        $jump_name = $Glo_g_Theme_list[$jump_name][jump_name];
-      else
-        exit;
-
-      //print_r( $jump_name);
-    }
-    
     // #: Generate the site name from the "$value[0][0]".
     $parts = explode( ':', $jump_name);
 
@@ -884,6 +874,8 @@
   }
 
   
+  const url_rel = 'url_rel';
+
   function To_f_replace_callback__latexcommand__jump( $value, $replace_ary=null, $replace_preg_ary=null)
   {
     global $Glo_g_Site_ary, $Glo_g_Site_activ;
