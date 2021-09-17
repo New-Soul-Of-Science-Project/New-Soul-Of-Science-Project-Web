@@ -2797,7 +2797,7 @@
                                                 'OM:SpaLeb:Psychosomatik:Vortext:LoeseUndVerbinde' => array( headline_text => 'Löse und verbinde — ›solve et coagula‹', headline_text_short =>  'Löse und verbinde'),
                                                 'OM:SpaLeb:Psychosomatik:Vortext:KundaliniProzess' => array( headline_text => 'Der Kundalini-Prozess'/*, headline_text_short =>  ''*/),
                                                 'OM:SpaLeb:Psychosomatik:Vortext:Fig-Kundalini-Prozess' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
-                                                'OM:SpaLeb:Psychosomatik:Vortext:Care' => array( headline_text => 'Der Stein der Weisen'/*, headline_text_short =>  ''*/),
+                                                'OM:SpaLeb:Psychosomatik:Vortext:Care' => array( headline_text => 'Care oder Fürsorge'/*, headline_text_short =>  ''*/),
                                                 'OM:SpaLeb:Psychosomatik:Vortext:Fig-Herz-Chakra-Herzkreislauf-Atmung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Psychosomatik:Vortext:Fig-Herz-Chakra-Shiva-Shakti' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Psychosomatik:Vortext:Fig-Hermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),

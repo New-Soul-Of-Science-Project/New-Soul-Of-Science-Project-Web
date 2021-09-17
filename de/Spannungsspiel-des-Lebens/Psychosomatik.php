@@ -386,18 +386,18 @@
                     'Haben wir eine schmerzende Hand, dann ist uns bewusst, dass es diese Hand ist, die schmerzt.'."\n".
                     'Sie teilt dies dem Rest unseres Körpers und insbesondere unserem Gehirn mit und diese Anderen hören zu.'."\n",
                       'In solchen Dialogen werden auch die möglichen Prioritäten und Entscheidungen geklärt, zum Beispeil die Ausschüttung schmerzlindernder Hormone.'."\n".
-                    'Die Vorstellung eines Dialogs in uns selbst wird dem Fascettenreichtum unserer Existenz gerecht.'."\n".
+                    'Die Vorstellung eines Dialogs in uns selbst wird dem Facettenreichtum unserer Existenz gerecht.'."\n".
                     'Sie ist wunderbar dazu geeignet, innere Perspektiven auf unser Leben zu kreieren, weil in uns viele Bedürfnisse miteinander spielen und im Wettbewerb stehen.'."\n",
                       'Wir haben nicht nur einen Körper, der aus verschiedensten Teilen und Organen besteht.'."\n".
                     'Auch in unserem Gehirn gibt es verschiedenste Interessen, die auch mal ziemlich konträr zueinander verlaufen können.'."\n",
                       'Dazu gehören Pole und Aktivitätszentren, die für verschiedene, sich ergänzende Gegensätze – Symmetriebrüche – stehen. '."\n".
                     'Zu diesen Polen gehören unter anderem auch die oben angegebenen Pole des Achtsamkeitsprozesses, der Gefühlspol und der Handlungspol.'."\n".
-                    'Und auch unsere verschiedenen „weiblichen“ und „männlichen“ Fascetten und unsere Chakras gehören zum Beispiel dazu.'."\n",
-                      'Damit der Dialog gut funktionieren kann, ist es wichtig, wie auch im zwischenmenschlichen Dialog, dass keine Seite, also Fascette, prinzipiell unterdrückt wird.'."\n".
+                    'Und auch unsere verschiedenen „weiblichen“ und „männlichen“ Facetten und unsere Chakras gehören zum Beispiel dazu.'."\n",
+                      'Damit der Dialog gut funktionieren kann, ist es wichtig, wie auch im zwischenmenschlichen Dialog, dass keine Seite, also Facette, prinzipiell unterdrückt wird.'."\n".
                     'Es ist wichtig, dass alle in Ruhe zuhören, wenn einer was auf dem „Herzen“ hat!'."\n".
                     'Denn sonst kann der Rest sich nicht mit dem oder der Betroffenen um das Problem kümmern.'."\n".
                     'Nur so ist eine gute Abwägung der Entscheidungen möglich!'."\n",
-                      'Wenn eine Fascette herumschreit, die von manch anderem nicht so gemocht wird, dann ist dies ganz besonders wichtig.'."\n".
+                      'Wenn eine Facette herumschreit, die von manch anderem nicht so gemocht wird, dann ist dies ganz besonders wichtig.'."\n".
                     'Denn es stellt sich gerade auch für die, die eine ablehnende Haltung haben die ernsthafte Frage, warum sie ablehnen anstatt zu lieben?'."\n".
                     'Einen Teil von uns herauszuschmeißen ist nicht ohne große Verletzung, ohne ein Blutbad quasi, möglich.'."\n",
                       'Hinzu kommt, dass es sich um sich ergänzende Gegensätze handelt.'."\n".
@@ -412,10 +412,10 @@
                     'Können kein Kind zeugen.'."\n".
                     'Sind nicht gut in der Schule.'."\n".
                     'Und vieles andere mehr …'."\n",
-                      'Lasst uns uns selber gegenüber, für diese Fascetten in uns, Verständnis haben.'."\n".
+                      'Lasst uns uns selber gegenüber, für diese Facetten in uns, Verständnis haben.'."\n".
                     'Sie einfach erst mal wahrnehmen, wie sie sind.'."\n".
                     'Gucken, warum sie vielleicht so sind.'."\n".
-                    'Wenn wir ihnen zuhören und diese Fascetten annehmen, dann findet sich vielleicht mal eine Lösung.'."\n".
+                    'Wenn wir ihnen zuhören und diese Facetten annehmen, dann findet sich vielleicht mal eine Lösung.'."\n".
                     'Lehnen wir sie ab, dann betreiben wir Selbstzerstörung und verschlimmern alles nur.'."\n".
                     'Nehmen wir sie an, dann verringert sich unser innerer Stress und das ist oft schon ein großes Stück des Wegs zu einer möglichen Lösung.'."\n".
                     'Denn wir lösen eine Blockade auf.'."\n".
@@ -509,7 +509,7 @@
                     Title => 'Detailierter …', TitleVis => 'Detailierter:', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Bei gut funktionierendem Achtsamkeitsprozess bin ich in mir, in meinem inneren Dialog meiner Bedürfnisse und (Handlungs-)Möglichkeiten,'."\n".
-                    'recht gut orientiert und in der Lage, fascettenreich zu sehen und kluge Prioritäten zu setzen.'."\n".
+                    'recht gut orientiert und in der Lage, facettenreich zu sehen und kluge Prioritäten zu setzen.'."\n".
                     'Es gelingt mir, flexible Räume der Möglichkeiten zu erschaffen, indem ich \\jump{OM:SpaLeb:Psychosomatik:Vortext:Perspektiven}{kluge Perspektiven kreiere} und, gemessen an der emotionalen Nützlichkeit,'."\n".
                     'zwischen diesen Perspektiven entscheide, sie nebeneinander stehen lasse oder sie durch Plausibilisierung vereinige.'."\n",
                       'Dadurch komme ich in die Lage, im genannten Sinne zu wachsen, zu lernen und mich weiter zu entwickeln.'."\n".
@@ -525,7 +525,7 @@
                         'Bewusstsein und Un-/Unterbewusstsein',
                         'Lernen/Merken/Verinnerlichen und Neulernen',
                         'linke und rechte Körperhälfte',
-                        'männliche und weibliche Fascetten meiner selbst (aktive und passive Sexualität, Stolz und Selbstschutz/Niedergeschlagenheit, Gefühlskühle und Mitgefühl, Agressivität und Güte, Aktivität und Muße, Dominant und Devot, Unabhängigkeit und Liebe/Geborgenheit, Extrovertiertheit und Introvertiertheit etc.)',
+                        'männliche und weibliche Facetten meiner selbst (aktive und passive Sexualität, Stolz und Selbstschutz/Niedergeschlagenheit, Gefühlskühle und Mitgefühl, Agressivität und Güte, Aktivität und Muße, Dominant und Devot, Unabhängigkeit und Liebe/Geborgenheit, Extrovertiertheit und Introvertiertheit etc.)',
                         'multipoles Chakren-System als Ganzes',
                         '„Dienst“ am Selbst und „Dienst“ am Anderen (mit „Dienst“ am Selbst durch „Dienst“ am Anderen und umgekehrt)',
                     ))),

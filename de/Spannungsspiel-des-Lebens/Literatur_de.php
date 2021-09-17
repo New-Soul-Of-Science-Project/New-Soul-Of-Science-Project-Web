@@ -76,6 +76,7 @@
                                           'wiki:Normopathie:2017',
                                           'wiki:Philosophie:2015',
                                           'wiki:PhilosophieDesGeistes:2015',
+                                          'wiki:PhoenixAusDerAsche:2020',
                                           'wiki:Prana:2016',
                                           'wiki:Psyche:2017',
                                           'wiki:Psyche:2015',

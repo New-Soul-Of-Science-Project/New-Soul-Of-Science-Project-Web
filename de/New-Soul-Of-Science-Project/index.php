@@ -532,7 +532,7 @@
                     'Ein tiefgehender Zusammenhang, der mir durch die Ausformulierung meiner Ideen bewusst wurde und den ich durch anschließendes Lesen von Arbeiten anderer bestätigt fand,'."\n".
                     'ist einer, der die Bedeutung von Zusammenhängen selber betrifft.'."\n".
                     'Und interessanterweise steckt er schon im Wort.'."\n",
-                      'Hängt etwas zusammen, und mir wird dies Bewusst, dann wird eine neue Fascette seiner Existenz sichbar.'."\n".
+                      'Hängt etwas zusammen, und mir wird dies Bewusst, dann wird eine neue Facette seiner Existenz sichbar.'."\n".
                     'Oder anders, es kommt etwas in einen Zusammenhang, dann bildet sich etwas Neues heraus.'."\n".
                     'Der Zusammenhang hat also etwas mit Existenz und dessen Eigenschaften zu tun.'."\n",
                       'Bringen wir nun das neue, dynamische Struturprinzip ins Spiel, das sich unter anderem auf die Stabilität einer Existenz und ihr Verhalten bezieht, eben auf ihre dynamik,'."\n".
