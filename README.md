@@ -1,4 +1,4 @@
-![CC](/share/images/NSOSP/NSOSP_header_v01_6_1280x377_72dpi_en-GitHub.jpg)
+![CC](/share/images/NSOSP/NSOSP_header_v01_8.jpg)
 
 
 # The New Soul Of Science Project Website
