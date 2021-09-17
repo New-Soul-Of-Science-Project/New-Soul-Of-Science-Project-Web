@@ -3078,6 +3078,23 @@
                                        jump_ary => array(
                                             ),
                                      ),
+                              'OM:SupNum:Primzahlprodukt-Vermutung' =>
+                                array( url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Primzahlprodukt-Vermutung.php',
+                                       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Primzahlprodukt-Vermutung.php',
+                                       titel => 'Primzahlprodukt-Vermutung - Die Superial-Zahlen (SN) - Deutsch',
+                                       description => '\\name[undertitle]{OM:SupNum:Primzahlprodukt-Vermutung}. — \\name[description]{OM:SupNum:Primzahlprodukt-Vermutung}.',
+                                       keywords => '',
+                                       text_titel_h1 => 'Primzahlprodukt-Vermutung',
+                                       text_titel_short => 'Primzahlprodukt-Vermutung',
+                                       text_undertitel_h2 => 'XXX',
+                                       text_titel_discr_h3 => '',
+                                       jump_ary => array(
+                                              'OM:SupNum:Primzahlprodukt-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                                                         
+                                                'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX' => array( headline_text => 'XXX',/* headline_text_short => 'XXX'*/),
+                                              'OM:SupNum:Primzahlprodukt-Vermutung:XXX' => array( headline_text => 'XXX',/* headline_text_short => 'XXX'*/),
+                                            ),
+                                     ),
                           
                               'OM:VRT:' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Vereinheitlichte-Relativitaetstheorie/',

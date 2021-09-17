@@ -73,8 +73,7 @@
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Einleitung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Formale-Entwicklung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Eigenschaften'),
-                      array( title => '\\color{*ContentItemDisabled}{Primzahlprodukt-Vermutung (geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
-                                description => '(in Vorbereitung)'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Primzahlprodukt-Vermutung'),
                     ))),
                       
                   array( 'normal',
