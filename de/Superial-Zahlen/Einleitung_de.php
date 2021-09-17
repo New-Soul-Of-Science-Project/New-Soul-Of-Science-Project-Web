@@ -741,6 +741,7 @@
                       
                   array( 'notice', array( Display => 'invis', text => array(
                     '\\bold{Eigene Überlegungen}',
+                    '• Betrachten wir die Primzahlen als alle möglichen Grundschwingungen in den natürlichen Zahlen, dann ist ihr Produkt die Zahl, bei der all diese Grundschwingungen das erste Mal wieder zusammentreffen. Daher wiederholen sich die natürlichen Zahlen ab der Zahl \\term{ω}. Nur folgt daraus, dass z.B. \\term{ω-1} nicht zu den natürlichen Zahlen gehört. \\term{ω-n} für \\term{n ∈ \M(N)} ist diese Struktur gespiegelt, quasi rückwärts.',
                     '• Siehe Erklärung für Raimund: Ordner "20200904 - Wissenschaft mit Raimund - Superial-Zahlen"',
                     '• Siehe meine Latex-Abhandlungen.',
                     ))),
