@@ -61,24 +61,24 @@
                     'Diese Pole haben eine facettenreiche Bedeutung für unseren Körper und unsere Seele, die zum großen Teil offenbar schon unseren Vorfahren bekannt war.'."\n".
                     'Unser Achtsamkeitsprozess und die Balance seiner Pole spiegeln sich in den folgenden Dingen wider:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        '\\condb{unser Wohlbefinden, unser Glück und die Sinnhaftigkeit unseres Lebens} \\\\ \\italic{Führen wir ein gutes Leben?}',
-                        '\\condb{unsere seelische und physische Existenz und die unserer Welt} \\\\ \\italic{Die Leichtigkeit des Seins – Dao, Qi, Yin und Yang, Wu Wei.}',
-                        '\\condb{unsere Psyche, Psychosomatik und Persönlichkeitsentwicklung} \\\\ \\italic{Die Verknüpfung von Seele und Körper – eine Balance aus Stabilität und Fortentwicklung.}',
-                        '\\condb{unsere Atmung, körperliche Übung und Heilung} \\\\ \\italic{Die Justierung und Schulung der gesunden Balancen unserer biologischen Regelprozesse.}',
+                        '\\condb{unser Wohlbefinden, unser Glück und die Sinnhaftigkeit unseres Lebens} \\\\ \\italic{\\jump{OM:SpaLeb:Glueck}{Führen wir ein gutes Leben?}}',
+                        '\\condb{unsere seelische und physische Existenz und die unserer Welt} \\\\ \\italic{Die Leichtigkeit des Seins – \\jump{OM:NPYo:ExistenzLeichtigkeit}{Dao, Qi, Yin und Yang, Wu Wei}.}',
+                        '\\condb{unsere Psyche, Psychosomatik und Persönlichkeitsentwicklung} \\\\ \\italic{Die Verknüpfung von \\jump{OM:SpaLeb:Koerperliche-und-seelische-Existenz}{Seele und Körper} – eine Balance aus \\jump{OM:SpaLeb:Koerperliche-und-seelische-Existenz:RitualFortentwicklung}{Stabilität und Fortentwicklung}.}',
+                        '\\condb{unsere Atmung, körperliche Übung und Heilung} \\\\ \\italic{\\jump{OM:SpaLeb:Gesundheit-Heilung}{Die Justierung und Schulung der gesunden Balancen unserer biologischen Regelprozesse.}}',
                         '\\condb{unsere Achtsamkeit, unser Selbstmitgefühl und unsere Empathie} \\\\ \\italic{Dienst am Selbst und Dienst am Anderen.}',
-                        '\\condb{unser aufrechter Gang, die Achtsamkeitsgradienten} \\\\ \\italic{Gut ins Handeln kommen und dabei unsere empfindliche, gefühlvolle, wahrnehmungsorientierte Vorderseite zu unseren Mitmenschen und in unsere Umwelt richten.}',
-                        '\\condb{unser Denken und unser Verstand} \\\\ \\italic{Lernen und Philosophie}',
-                        '\\condb{unsere Entscheidungen und unser Schicksal} \\\\ \\italic{Das Spiel mit Ambiguitäten und deren Auflösung.}',
-                        '\\condb{unser Wachen als auch Schlafen, unser Bewusstsein und Unterbewusstsein} \\\\ \\italic{Sympathikus und Parasympathikus}',
-                        '\\condb{unsere Spiritualität} \\\\ \\italic{Glaube und vertraue ich? Weil ich nicht alles weiß und wissen kann! Der Dialog unseres Bewusstseins mit unserem Unterbewusstsein und all unserer anderen inneren Pole.}',
-                        '\\condb{unsere Beziehungen, unsere Sexualität und unsere Fortpflanzung} \\\\ \\italic{Der Zusammenhang unseres Lebens.}',
+                        '\\condb{unser aufrechter Gang, die Achtsamkeitsgradienten} \\\\ \\italic{Gut ins Handeln kommen und dabei unsere \\jump{OM:SpaLeb:Psychosomatik}{empfindliche, gefühlvolle, wahrnehmungsorientierte Vorderseite zu unseren Mitmenschen} und in unsere Umwelt richten.}',
+                        '\\condb{unser Denken und unser Verstand} \\\\ \\italic{Lernen und \\jump{OM:SpaLeb:Philosophie}{Philosophie}}',
+                        '\\condb{unsere Entscheidungen und unser Schicksal} \\\\ \\italic{\\jump{OM:SpaLeb:Psychosomatik-Entscheidungen}{Das Spiel mit Ambiguitäten und deren Auflösung.}}',
+                        '\\condb{unser Wachen als auch Schlafen, unser Bewusstsein und Unterbewusstsein} \\\\ \\italic{\\jump{OM:SpaLeb:Psychosomatik}{Sympathikus und Parasympathikus}}',
+                        '\\condb{unsere Spiritualität} \\\\ \\italic{\\jump{OM:NPYo:Spiritualitaet-Psychologie}{Glaube und vertraue ich?} Weil ich nicht alles weiß und wissen kann! Der Dialog unseres Bewusstseins mit unserem Unterbewusstsein und all unserer anderen inneren Pole.}',
+                        '\\condb{unsere Beziehungen, unsere Sexualität und unsere Fortpflanzung} \\\\ \\italic{\\jump{OM:SpaLeb:Glueck}{Der Zusammenhang unseres Lebens.}}',
                     ))),
                   array( 'text', array( text => array(
                     'Das Aufgeführte ist wesentlicher Bestandteil alten philosophischen und medizinischen Wissens der Welt und unserer Religionen, wie der Veden, des Yoga und Tantra,'."\n".
                     'des Hinduismus, des Buddhismus, der altägyptischen Mythologie, des Judentums, des Christentums und des Islam.'."\n".
                     'Und die Liste kann noch weiter fortgesetzt werden.'."\n",
-                      'Diese Themen faszinieren mich und über viele schreibe ich auf den Seiten zum \\jump{OM:SpaLeb:Home}{›Spannungsspiel des Lebens‹},'."\n".
-                    'des \\jump{OM:NPYo:Home}{Naturphilosophie-Yoga} und in der \\jump{OM:FrQFT:Home}{Quanten-Fluss-Theorie}.'."\n".
+                      'Diese Themen faszinieren mich und über viele schreibe ich auf den Seiten des \\jump{OM:NPYo:Home}{Naturphilosophie-Yoga},'."\n".
+                    'zum \\jump{OM:SpaLeb:Home}{›Spannungsspiel des Lebens‹} und in der \\jump{OM:FrQFT:Home}{Quanten-Fluss-Theorie}.'."\n".
                     'Wesentliche Facetten dieses Wissens, dieser Mythologien und Glaubenssysteme sind durch tiefe Einsichten der hier beschriebenen Naturphilosophie verbunden.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
@@ -92,7 +92,7 @@
                     'wie es uns geht.'."\n".
                     'Das selbe gilt auch für unsere \\jump{OM:SpaLeb:Koerperspannung}{Körperhaltung} und unsere \\jump{OM:SpaLeb:Gesangstechnik}{Stimme}.'."\n",
                       'Der Vergleich unserer beiden Gesichtshälften – am deutlichsten beim Vergleich unseres doppelrechten und doppellinken Gesichts (siehe \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppelrechtesGesicht} und \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppellinkesGesicht}) –'."\n".
-                    'kann uns sichtbar machen, wie gut der Gefühlspol und der Denk-/Handlungspol unseres Achtsamkeitsprozesses funktioniert.'."\n".
+                    'kann uns sichtbar machen, wie gut der Gefühlspol und der Denk-/Handlungspol unseres Achtsamkeitsprozesses funktionieren.'."\n".
                     'Wir können zum Beispiel erahnen, wie gut beide Pole unserer Achtsamkeit in Balance sind.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
@@ -102,7 +102,7 @@
                     'Der zentrale Regelprozess unseres Lebens wird vordergründig durch unser \\jump{OM:NPYo:Spiritualitaet-Psychologie}{Bewusstsein} gesteuert (siehe \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-AchtsamkeitsprozessBewWiss}),'."\n".
                     'hat aber letztendlich auch viele \\jump{OM:NPYo:Spiritualitaet-Psychologie}{unbewusste Komponenten} im Hintergrund.'."\n".
                     'Dies ist maßgeblich mit unserer \\jump{OM:SpaLeb:Gesundheit-Heilung}{Gesundheit und Heilung} und mit unserer \\jump{OM:SpaLeb:Psychosomatik}{Psychosomatik} verbunden.'."\n",
-                      'Der Achtsamkeitsprozess verbindet unsere Lebenssituation mit unseren Gefühlen zu dieser.'."\n".
+                      'Der Achtsamkeitsprozess verknüpft unsere Lebenssituation mit unseren Gefühlen zu dieser.'."\n".
                     'Diese Gefühle können in Antrieben münden, die schließlich zu Handlungen führen können, zu denen auch das Denken zählt.'."\n".
                     'Aus unseren Handlungen resultiert unsere neue Lebenssituation und der Kreislauf unseres \\jump{*SpaLeb:Achtsamkeitsprozess-Implem}{Achtsamkeitsprozesses} beginnt erneut.'."\n"))),
                     
@@ -756,7 +756,7 @@
                     'und interessante Interviews gegeben:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Bilbo Calvez – Ausstellung – \\jump[http://www.bilbo.calvez.info/Fol_GB/facesoflove.html]{}{FACES OF LOVE}',
-                        'KenFM – Gespräch – \\jump[https://www.youtube.com/watch?v=5-KH-vwdxwk]{}{Ken Jebsen im Gespräch mit Bilbo Calvez}',
+                        'KenFM – Gespräch – \\jump[https://tube.kenfm.de/w/2bf812df-2c6f-4688-86ac-377daeb4c129]{}{Ken Jebsen im Gespräch mit Bilbo Calvez}',
                         'Bilbo Calvez – Ausstellung – \\jump[http://www.bilbo.calvez.info/publik_privat_GB/Infos_1.html]{}{PUBLIK - PRIVAT}',
                         'CamFM #12 – Interview – \\jump[https://www.youtube.com/watch?v=plKTY6MaJ08]{}{Ken Jebsen im Interview mit Bilbo Calvez und Herr von Grau – Face to face!}',
                         'Bilbo Calvez – Ausstellung – \\jump[http://www.bilbo.calvez.info/asymmetrophobie.html]{}{ASYMMETROPHOBIE}',
