@@ -539,9 +539,11 @@
                       array(  jump_name => 'OM:NPYo:Stein-der-Weisen:Heiliger-Gral', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'invis', text => array(
                     '• Den Phönix aus der Asche finden wir im \\jump{OM:NPYo:HaTha:Vortext:Fig-LebenDesHorusHermesstab}{Leben des Horus} wieder. Das Ei des Phönix ist das Ei der Metamorphose. Nach dem das Leben gelebt ist kommen wir idealer Weise im Dritten Auge an, der Sonne, die uns verbrennt und das neue Ei gebiert. So wird der Phönix wieder geboren. Der Phönix wird hier im Gott \\jump[https://de.wikipedia.org/wiki/Benu]{}{Benu} versinnbildlicht, wobei sein Feuer im Sonnenuntergang, sein feuriger Untergang als Falke, und in der Glut der Morgenröte, seiner Auferstehung als Reiher aus Aschenglut, zu finden ist.',
                     '• Der Phönix findet sich auch im \\jump[https://de.wikipedia.org/wiki/Garuda]{}{Garuda} der indischen Mythologie des Hinduismus: Garuda ist das halb mensch-, halb adlergestaltige Reittier des Vishnu, des Gottes der Erhaltung. Garuda kann damit als Symbol für den Zirkel der Wiedergeburt, der Erneuerung, verstanden werden. Dies drückt den Neheh-Aspekt des Lebens in einem Lebewesen und zwischen den Generationen aus.',
+                    '\\bold{Gog und Magog}',
+                    '• Der Phönix ist in der City of London auf dem Schild von Gog und Magog zu finden: \\jump[https://nuoflix.de/city-of-london--das-herz-des-drachen-2]{}{City of London - Das Herz des Drachen 2/2}, Sek. 01:00:08.',
                     '\\bold{Moderne Märchen}',
                     '• In der ›Die Unendlichen Geschichte‹ geht es auch um einer Heldenreise, eine Suche, nach Selbsterkenntnis.',
                     '⋅ Hier steht das Selbstvertrauen, das Vertrauen in die Selbstwirksamkeit, und die Prüfung des Glaubens an die Wirksamkeit der eigenen Fantasie des Lesers im Zentrum. Hier ist die Wirksamkeit unserer eigenen Fantasie auf unsere eigene Realität gemeint, die allzuoft verkannt, vergessen oder gar verleugnet wird.',
