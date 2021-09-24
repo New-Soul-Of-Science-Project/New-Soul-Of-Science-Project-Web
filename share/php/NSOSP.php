@@ -56,6 +56,10 @@
                                                    'Die Wirkungsquanten sind als rote Kugeln mit ihren abgestrahlten Impulskegeln dargestellt.'."\n".
                                                    'Ihre Impulskegel verbinden die Wirkungsquanten zu einem geschlossenen String, der so durch einen strukturellen Regelprozess stabilisiert ist.';
   $FrQFT_g_text_WQSWQMenge                     = 'In der Realität sind extrem viele, sehr kleine Wirkungsquanten im String, die sehr nahe beieinander liegen.';
+
+  $NPYo_g_text_LebenDesHorusHermesstab_Orig    = 'Abbild des Lebens, das sehr ähnlich in altägyptischen Darstellungen zu finden ist. Hier mit Hermesstab, im näherem Bezug zum Achtsamkeitsprozess mit zwei Schlangen, wie auch im alten Ägypten. Die beiden Schlangen stellen hier das Gefühl und die Handlung, das (Wahr-)Nehmen/Empfangen und das Geben/Senden des Achtsamkeitsprozesses dar. \\color{*Light}{\\small{Lizenz: \\jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}';
+  $NPYo_g_text_LebenDesHorusHermesstab_Phoenix = 'Abbild des Lebens, das sehr ähnlich in altägyptischen Darstellungen zu finden ist. Es entsteht unten im Ei der Metamorphose, dem aschefarbenen Dreiviertel-Mond, und entwickelt sich über den Aufstieg der Kundalini-Schlangen aus der Wurzel, dem mütterlichen Schoß, ins Licht der väterlichen Sonne, der Klugheit oder Weisheit, wo es verbrennt und wieder zur Asche wird. So gesehen stellt dieses Bild erstaunlich authentisch den Kreislauf des ›Phönix aus der Asche‹ dar. \\color{*Light}{\\small{Lizenz: \\jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}';
+
   
   // const text = 'text';
   const Shape = 'Shape';
@@ -521,7 +525,7 @@
                                                          text => 'Abbild des Lebens, das in vergleichbarer Form in altägyptischen Darstellungen zu finden ist. Hier in einer von mir modernisierten Variante mit Äskulap- oder Asklepiosstab, um einen Bezug zur heutigen Medizin, und auch zum Kundalini-Prozess des Tantra und Yoga, herzustellen. \\color{*Light}{\\small{Lizenz: \\jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}');
   
   $NPYo_g_figure_ary_LebenDesHorusHermesstab     = array( fig_file_name => 'Naturphilosophie-Yoga/Leben-des-Horus-Hermesstab-v02', fig_alt_description => 'Leben des Horus mit Hermesstab', width => '660px', height => '600px', name => 'set local!',
-                                                         text => 'Abbild des Lebens, das sehr ähnlich in altägyptischen Darstellungen zu finden ist. Hier mit Hermesstab, im näherem Bezug zum Achtsamkeitsprozess mit zwei Schlangen, wie auch im alten Ägypten. Die beiden Schlangen stellen hier das Gefühl und die Handlung, das (Wahr-)Nehmen/Empfangen und das Geben/Senden des Achtsamkeitsprozesses dar. \\color{*Light}{\\small{Lizenz: \\jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}');
+                                                         text => $NPYo_g_text_LebenDesHorusHermesstab_Orig);
   
   $NPYo_g_figure_ary_SymbolYinYangKoerperSeeleExistenz
                                                  = array( fig_file_name => 'Naturphilosophie-Yoga/Yin_und_Yang_der_Koerper_Seele_Existenz_v03', figPDF_is => false, fig_alt_description => 'Yin und Yang der Körper-Seele-Existenz', width => '284px', height => '379px', name => 'set local!',
@@ -3002,11 +3006,25 @@
                                               'OM:SupNum:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
                                             ),
                                      ),
+                              'OM:SupNum:Biordinalzahlen' =>
+                                array( url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Biordinalzahlen.php',
+                                       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Biordinalzahlen.php',
+                                       titel => 'Biordinalzahlen - Die Superial-Zahlen (SN) - Deutsch',
+                                       description => '\\name[undertitle]{OM:SupNum:Biordinalzahlen}. — \\name[description]{OM:SupNum:Biordinalzahlen}.',
+                                       keywords => '',
+                                       text_titel_h1 => 'Biordinalzahlen',
+                                       text_titel_short => 'Biordinalzahlen',
+                                       text_undertitel_h2 => 'XXX',
+                                       text_titel_discr_h3 => '',
+                                       jump_ary => array(
+                                              'OM:SupNum:Biordinalzahlen:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                                            ),
+                                     ),
                               'OM:SupNum:Eigenschaften' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Eigenschaften.php',
                                        url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Eigenschaften.php',
                                        titel => 'Eigenschaften - Die Superial-Zahlen (SN) - Deutsch',
-                                       description => 'XXX',
+                                       description => '\\name[undertitle]{OM:SupNum:Eigenschaften}. — \\name[description]{OM:SupNum:Eigenschaften}.',
                                        keywords => '',
                                        text_titel_h1 => 'Eigenschaften',
                                        text_titel_short => 'Eigenschaften',

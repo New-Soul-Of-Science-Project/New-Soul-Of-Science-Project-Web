@@ -80,6 +80,7 @@
                     '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Biordinalzahlen <small>– Zählen mit Mengen, negative Mengen</small>}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Biordinalzahlen'),
                       array( title => '\\color{*ContentItemDisabled}{Integrierte Mengenlehre (geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => '(in Vorbereitung)'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
                       array( title => '\\color{*ContentItemDisabled}{Formale Entwicklung (geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',

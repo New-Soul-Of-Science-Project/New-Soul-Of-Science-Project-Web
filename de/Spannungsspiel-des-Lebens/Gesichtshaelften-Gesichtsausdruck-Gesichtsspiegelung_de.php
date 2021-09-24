@@ -78,7 +78,7 @@
                     'des Hinduismus, des Buddhismus, der altägyptischen Mythologie, des Judentums, des Christentums und des Islam.'."\n".
                     'Und die Liste kann noch weiter fortgesetzt werden.'."\n",
                       'Diese Themen faszinieren mich und über viele schreibe ich auf den Seiten des \\jump{OM:NPYo:Home}{Naturphilosophie-Yoga},'."\n".
-                    'zum \\jump{OM:SpaLeb:Home}{›Spannungsspiel des Lebens‹} und in der \\jump{OM:FrQFT:Home}{Quanten-Fluss-Theorie}.'."\n".
+                    'hier zum \\jump{OM:SpaLeb:Home}{›Spannungsspiel des Lebens‹} und in der \\jump{OM:FrQFT:Home}{Quanten-Fluss-Theorie}.'."\n".
                     'Wesentliche Facetten dieses Wissens, dieser Mythologien und Glaubenssysteme sind durch tiefe Einsichten der hier beschriebenen Naturphilosophie verbunden.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
@@ -125,7 +125,8 @@
                       'Damit spielt unser Achtsamkeitsprozess die Hauptrolle in unserem Leben und ist die Grundlage unserer Biologie oder Biophysik.'."\n"))),
  
                   array( 'text', array( text => array(
-                    'Er regelt letztlich auch unser Überleben und nimmt sogar wichtigen Einfluss auf unsere \\jump{OM:SpaLeb:Achtsamkeitsprozess:AchtsamkeitsprozesGrundlLeben}{Evolution}.'."\n"))),
+                    'Er regelt letztlich auch unser Überleben und spielt sogar eine wichtige Rolle in unserer \\jump{OM:SpaLeb:Achtsamkeitsprozess:AchtsamkeitsprozesGrundlLeben}{Evolution},'."\n".
+                    'was eine neue und in diesem Gesamtzusammenhang revolutionäre Erkenntnis ist.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
                 'Die Pole unserer Achtsamkeit spiegeln sich in der Spezialisierung unserer Gehirnhälften', subline =>
@@ -160,7 +161,7 @@
                         '\\condb{rechte Gesichtshälfte ↔︎ linke Gesichtshälfte} \\\\ \\italic{diagonale Verbindung mit dem Gehirn}',
                         '\\condb{rechte Körperhälfte ↔︎ linke Körperhälfte} \\\\ \\italic{diagonale Verbindung mit dem Gehirn}',
                         '\\condb{rechter Nasenton ↔︎ linker Nasenton} \\\\ \\italic{die Zweistimmigkeit unserer \\jump{OM:SpaLeb:Gesangstechnik}{Stimme}}',
-                        '\\condb{Aufrichtung ↔︎ Geknickt-Sein} \\\\ \\condb{Körperrückseite ↔︎ Körpervorderseite} \\\\ \\italic{der \\jump{OM:SpaLeb:Psychosomatik}{Handlungs- und Gefühlsgradient} unseres Körpers darin \\jumpname{OM:SpaLeb:Psychosomatik:Vortext:Care}}',
+                        '\\condb{Aufrichtung ↔︎ Geknickt-Sein} \\\\ \\condb{Körperrückseite ↔︎ Körpervorderseite} \\\\ \\italic{der \\jump{OM:SpaLeb:Psychosomatik}{Handlungs- und Gefühlsgradient} unseres Körpers, darin \\jumpname{OM:SpaLeb:Psychosomatik:Vortext:Care}}',
                         '\\condb{Wachen (Sonne) ↔︎ Schlafen (Mond)} \\\\ \\italic{die \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{zwei Seiten unseres Lebens}}',
                         '\\condb{Bewusstsein (Sonne) ↔︎ Unterbewusstsein (Mond)} \\\\ \\italic{unser \\jump{OM:NPYo:Spiritualitaet-Psychologie}{spiritueller Dialog} und \\jump{OM:SpaLeb:Gesundheit-Heilung:HeilungSchlaf}{unsere Heilung und unser Schlaf}}',
                         '\\condb{Atmung (Sonne) ↔︎ Herzkreislauf (Mond)} \\\\ \\italic{\\jumpname{OM:SpaLeb:Psychosomatik:Vortext:Care}}',
@@ -213,7 +214,7 @@
                       )),
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
                     array_merge( $NPYo_g_figure_ary_LebenDesHorusHermesstab, array( name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-LebenDesHorusHermesstab',
-                                                         text => 'Abbild des Lebens, das sehr ähnlich in altägyptischen Darstellungen zu finden ist. Es entsteht unten im Ei der Metamorphose, dem aschefarbenen Dreiviertel-Mond, und entwickelt sich über den Aufstieg der Kundalini-Schlangen aus der Wurzel, dem mütterlichen Schoß, ins Licht der väterlichen Sonne, der Klugheit oder Weisheit, wo es verbrennt und wieder zur Asche wird. So gesehen stellt dieses Bild erstaunlich authentisch den Kreislauf des ›Phönix aus der Asche‹ dar.')),
+                                                         text => $NPYo_g_text_LebenDesHorusHermesstab_Phoenix)),
                       )),
                       
                   array( 'text', array( text => array(
@@ -234,15 +235,21 @@
                       'Unsere Gefühle.'."\n"))),
  
                   array( 'text', array( text => array(
-                    'Der Gefühlspol spielt also eine herausragende Rolle.'."\n"))),
+                    'Und unser Gefühlspol spielt hierbei eine herausragende Rolle.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
                 'Unser Gesicht hat drei Ebenen der Prägung')),
                   array( 'text', array( text => array(
                     'Unsere Nervenbahnen steuern nicht nur unsere Muskulatur, den kurzfristigen Ausdruck unseres Gesichts, sondern auch die Spannung unserer Faszien,'."\n".
-                    'die den langfristigen Ausdruck unseres Gesichts prägen.'."\n",
-                      'Unsere Geschichte, unsere Erfahrungen und wie wir diese verarbeitet haben, werden in unserem langfristigen Gesichtsausdruck sichtbar.'."\n".
-                    'In der tiefsten Ebene, ganz unten drunter, ist das Wachstum unseres Gesichts.'."\n"))),
+                    'die den langfristigen Ausdruck unseres Gesichts prägen.'."\n".
+                    'Unsere Geschichte, unsere Erfahrungen und wie wir diese verarbeitet haben, werden in unserem langfristigen Gesichtsausdruck sichtbar.'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'aktueller Gesichtsausdruck durch unsere Muskulatur',
+                        'langfristiger Gesichtsausdruck durch unsere Faszienspannung und -verspannung',
+                        'Wachstum unseres Gesichts',
+                    ))),
+                  array( 'text', array( text => array(
+                    'In der tiefsten Ebene dann, ganz als Unterstes, ist, wie unser Gesicht gewachsen ist.'."\n"))),
                   /* array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
                 'Was konkret können wir beim Vergleich unserer Gesichtshälften möglicherweise erkennen?')),
@@ -287,7 +294,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Soweit meine Auswahl.'."\n".
-                    'Zu Anregungen weiter unten.'."\n"))),
+                    'Zu möglichen Anregungen von euch weiter unten.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
                 'Weitere polare Persönlichkeitseigenschaften')),
@@ -311,6 +318,8 @@
                       'Mache einfach eine achtsame Bestandsaufnahme.'."\n",
                         'Erkläre dies auch anderen, von denen du eine Gesichtsspiegelung machst.'."\n"))),
  
+                  array( 'text', array( text => array(
+                    'Beherzigen wir dies, liegt vermutlich ein wertvoller Erkenntnisgewinn vor uns.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
                 'Wir können vielleicht sehen, wie gut unser Gefühlspol und unser Denk-/Handlungspol funktionieren und wie gut ausbalanciert beide sind')),
@@ -374,13 +383,13 @@
                     'wie frontal es in die Kamera guckt und wie die Frisur gestylt ist.'."\n".
                     'Selbst der Hintergrund kann eine Rolle spielen.'."\n",
                       'Und natürlich kann deine, ihre Stimmung ganz unterschiedlich sein.'."\n".
-                    'Ganz schlechte Tage sind eher weniger zu empfehlen … ;-)'."\n",
+                    'Ganz schlechte Tage sind eher weniger zu empfehlen … 😉'."\n",
                       'Ich empfehle dir also immer wieder mal eine Gesichtsspiegelung von dir und den anderen zu machen.'."\n".
                     'Du bekommst so am besten ein Gefühl dafür, wie das funktioniert und wie es möglicherweise zu deuten ist.'."\n".
                     'Und du, ihr bekommt so einen Querschnitt von Eindrücken des Gesichtsausdrucks deines, eures Selbst.'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                      'Und vielleicht siehst du, ihr sogar eine positive Entwicklung … ;-)'."\n"))),
+                      'Und vielleicht siehst du, ihr sogar eine positive Entwicklung … 😉'."\n"))),
  
                   array( 'text', array( text => array(
                     'Das würde mich freuen!'."\n"))),

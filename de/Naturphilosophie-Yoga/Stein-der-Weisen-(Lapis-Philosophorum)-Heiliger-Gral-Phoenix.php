@@ -569,7 +569,7 @@
                       
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
                     array_merge( $NPYo_g_figure_ary_LebenDesHorusHermesstab, array( name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-LebenDesHorusHermesstab',
-                                                         text => 'Abbild des Lebens, das sehr ähnlich in altägyptischen Darstellungen zu finden ist. Es entsteht unten im Ei der Metamorphose, dem aschefarbenen Dreiviertel-Mond, und entwickelt sich über den Aufstieg der Kundalini-Schlangen aus der Wurzel, dem mütterlichen Schoß, ins Licht der väterlichen Sonne, der Klugheit oder Weisheit, wo es verbrennt und wieder zur Asche wird. So gesehen stellt dieses Bild erstaunlich authentisch den Kreislauf des ›Phönix aus der Asche‹ dar.')),
+                                                         text => $NPYo_g_text_LebenDesHorusHermesstab_Phoenix)),
                       )),
                       
                   array( 'text', array( text => array(
