@@ -789,12 +789,13 @@
                     )),
                       
                   array( 'text', array( text => array(
-                    'Mit der \\jump[http://www.pjannto.com/de/FaceYourFaceApp/index.php]{}{FaceYourFace} iPhone und iPad App kann man mit wenigen Handgriffen Gesichtsspiegelungen für mehrere Personen erstellen und als Bilder abspeichern oder versenden.'."\n".
+                    'Mit der \\jump[http://www.pjannto.com/de/FaceYourFaceApp/index.php]{}{FaceYourFace} iPhone und iPad App (im \\jump[https://itunes.apple.com/de/app/faceyourface/id1137963659?mt=8]{}{Apple AppStore}) kann man mit wenigen Handgriffen Gesichtsspiegelungen für mehrere Personen erstellen und als Bilder abspeichern oder versenden.'."\n".
                     'Damit kann man einfach herumspielen, um ein Gefühl dafür zu bekommen, wie Gesichtsspiegelungen funktionieren und was sie aussagen könnten.'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SpaLeb:XXX'),
-                      array(  title_chapter => 'FaceYourFace iPhone, iPad App', jump_url => 'http://www.pjannto.com/de/FaceYourFaceApp/index.php'),
+                      // array(  jump_name => 'OM:SpaLeb:XXX'),
+                      array(  title_site => 'FaceYourFace iPhone, iPad App von Pjannto Software e.K.', jump_url => 'http://www.pjannto.com/de/FaceYourFaceApp/index.php'),
+                      array(  title_site => 'FaceYourFace App im Apple AppStore', jump_url => 'https://itunes.apple.com/de/app/faceyourface/id1137963659?mt=8'),
                     )),
               )
           ); ?>
