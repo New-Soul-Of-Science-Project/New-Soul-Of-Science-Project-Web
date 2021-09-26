@@ -13,7 +13,7 @@ The New Soul Of Science Project Website is the most visible part of an initiativ
 - and more …
   
 
-## ![The New Soul Of Science Project - Favicon](/de/New-Soul-Of-Science-Project/favicon/favicon-32.png) On The Web
+## ![The New Soul Of Science Project - Favicon](/de/New-Soul-Of-Science-Project/favicon/favicon-32.png) &nbsp;&nbsp;On The Web
 
 The New Soul Of Science Project: [http://www.nsosp.org](http://www.nsosp.org)
 
