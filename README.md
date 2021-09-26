@@ -13,12 +13,12 @@ The New Soul Of Science Project Website is the most visible part of an initiativ
 - and more …
   
 
-## ![The New Soul Of Science Project - Favicon](/de/New-Soul-Of-Science-Project/favicon/favicon-32.png) &nbsp;&nbsp;On The Web
+## ![The New Soul Of Science Project - Favicon](/de/New-Soul-Of-Science-Project/favicon/favicon-32.png) &nbsp;&nbsp; On The Web
 
 The New Soul Of Science Project: [http://www.nsosp.org](http://www.nsosp.org)
 
 
-## ![Fractal Quantum Flow Theory - Favicon](/de/Quanten-Fluss-Theorie/favicon/favicon-32.png) Fractal Quantum Flow Theory
+## ![Fractal Quantum Flow Theory - Favicon](/de/Quanten-Fluss-Theorie/favicon/favicon-32.png) &nbsp;&nbsp; Fractal Quantum Flow Theory
 
 **(fraktale Quanten-Fluss-Theorie)**
 
@@ -31,7 +31,7 @@ On the web: [Fractal Quantum Flow Theory](http://www.nsosp.org/FrQFT)
   - including [Quantum Gravity](http://www.nsosp.org/de/Quanten-Fluss-Theorie/Quantengravitation-der-Elementarteilchen_de.php)
 
 
-## ![Tension Game Of Life - Favicon](/de/Spannungsspiel-des-Lebens/favicon/favicon-32.png) Tension Game Of Life
+## ![Tension Game Of Life - Favicon](/de/Spannungsspiel-des-Lebens/favicon/favicon-32.png) &nbsp;&nbsp; Tension Game Of Life
 
 **(Spannungsspiel des Lebens)**
 
@@ -49,7 +49,7 @@ On the web: [Tension Game Of Life](http://www.nsosp.org/spannung)
 - let us see even regulation processes in the interactions in societies
 
 
-## ![Nature Philosophy Yoga - Favicon](/de/Naturphilosophie-Yoga/favicon/favicon-32.png) Nature Philosophy Yoga (NaPhil-Yoga)
+## ![Nature Philosophy Yoga - Favicon](/de/Naturphilosophie-Yoga/favicon/favicon-32.png) &nbsp;&nbsp; Nature Philosophy Yoga (NaPhil-Yoga)
 
 **(Naturphilosophie-Yoga)**
 
@@ -58,7 +58,7 @@ On the web: [Nature Philosophy Yoga](http://www.NaPhil-Yoga.org)
 - based on the insights of the [Tension Game Of Life](#-tension-game-of-life) and the [Fractal Quantum Flow Theory](#-fractal-quantum-flow-theory)
 
 
-## ![Superial Numbers - Favicon](/de/Superial-Zahlen/favicon/favicon-32.png) Superial Numbers
+## ![Superial Numbers - Favicon](/de/Superial-Zahlen/favicon/favicon-32.png) &nbsp;&nbsp; Superial Numbers
 
 **(Superial-Zahlen)**
 
