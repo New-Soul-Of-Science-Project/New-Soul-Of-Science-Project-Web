@@ -92,20 +92,28 @@
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
                       
                 'Eine fundamentale Asymmetrie', subline =>
-                  '')),
+                  'Die ontologische Struktur beinhaltet die Zählrichtung')),
                   array( 'text', array( text => array(
                     'Interessanterweise ergibt sich auf diese Weise, dass es eine negative Zahl mehr gibt als positive Zahlen.'."\n".
                     'Wie kann das sein?'."\n",
-                      'Die ontologische, also die Struktur des Seins oder der Realität betreffende, Begründung dafür hat mir mein Freund Raimund Welche nahegelegt:'."\n".
-                    'Begreifen wir jede nach oben gezählte Eins als Welle – oder alternativ als Sägezahn – dann fängt jede dieser Wellen bei einer ganzen'."\n".
+                      'Die ontologische Begründung dafür, also die Begründung aus Sicht der Struktur des Seins oder die Realität betreffend, hat mir mein Freund Raimund Welche nahegelegt:'."\n".
+                    'Begreifen wir jede nach oben gezählten Abstand Eins als Welle – oder alternativ als Sägezahn, wie ich es selber schon früher gedacht hab – dann fängt jede dieser Wellen bei einer ganzen'."\n".
                     'Zahl an.'."\n".
-                    'Die darauf folgende nächste ganze Zahl ist schon der beginn der nächsten Welle und gehört nicht mehr zu der, die wir gerade gezählt haben.'."\n",
+                    'Die darauf folgende nächste ganze Zahl ist schon der Beginn der nächsten Welle und gehört nicht mehr zu der, die wir gerade gezählt haben.'."\n",
                       'Die nullte Welle beginnt also bei der Null.'."\n",
                       'Duplizieren wir die positiven Wellen, beginnend bei der der Null, indem wir die gleiche Anzahl ins Negative verschieben,'."\n".
                     'dann ist der Nullpunkt auf der negativen Seite zusätzlich dupliziert.'."\n".
                     'Während der verschobene Nullpunkt der negativen Seite eine negative Zahl repräsentiert, repräsentiert der originale Nullpunkt keine positive'."\n".
                     'Zahl, sondern die Null selber.'."\n",
-                      'Der Mittelwert aller endlichen ganzen Zahlen ist demnach \\term{-0,5}.'."\n".
+                      'Ontologisch betrachtet sind negative Zahlen also nicht die inklusive der Zählrichtung an der Null gespiegelten positiven Zahlen, inklusive der Null.'."\n".
+                    'Sondern es handelt sich um eine Verschiebung, die die Zählrichtung beibehält.'."\n".
+                    'Und dazu macht eine Doppelung der Null keinen Sinn.'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                      'Der Mittelwert aller endlichen ganzen Zahlen ist demnach \\term{-0,5}.'."\n"))),
+                      
+                  array( 'text', array( text => array(
+                    'Das ist möglicherweise für den einen oder anderen eine überraschende Erkenntnis.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
