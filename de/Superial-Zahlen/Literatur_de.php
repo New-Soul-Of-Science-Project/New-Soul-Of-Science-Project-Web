@@ -14,6 +14,7 @@
           <?php Sc_g_litera_make( array(  'Freistetter:DieFreiheitDerImaginaerenZahlen:2016',
                                           'Freistetter:DieFreiheitDerMathematik:2016',
                                           'Plichta:GottesGeheimeFormel:1995',
+                                          'wiki:Allklasse:2020',
                                           'wiki:Ordinalzahl:2021',
                                           'wiki:Primorial:2015',
                                           'wiki:Primzahl:2021',

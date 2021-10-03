@@ -3010,11 +3010,11 @@
                                 array( url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Biordinalzahlen.php',
                                        url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Biordinalzahlen.php',
                                        titel => 'Biordinalzahlen - Die Superial-Zahlen (SN) - Deutsch',
-                                       description => '\\name[undertitle]{OM:SupNum:Biordinalzahlen}. — \\name[description]{OM:SupNum:Biordinalzahlen}.',
+                                       description => '\\name[undertitle]{OM:SupNum:Biordinalzahlen}.\\hidden{ — \\name[description]{OM:SupNum:Biordinalzahlen}.}',
                                        keywords => '',
                                        text_titel_h1 => 'Biordinalzahlen',
                                        text_titel_short => 'Biordinalzahlen',
-                                       text_undertitel_h2 => 'XXX',
+                                       text_undertitel_h2 => 'Positive und negative Ordinalzahlen',
                                        text_titel_discr_h3 => '',
                                        jump_ary => array(
                                               'OM:SupNum:Biordinalzahlen:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
