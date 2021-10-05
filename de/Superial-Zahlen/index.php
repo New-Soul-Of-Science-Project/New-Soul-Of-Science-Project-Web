@@ -15,9 +15,9 @@
                 array(
                   array( 'text', array( text => array(
                     'Mit den Superial-Zahlen die fraktale Struktur des Unendlichen entdecken …'."\n",
-                      'Vom Endlichen bis ins Aktualunendliche mit ganzen Zahlen zählen, ist eine faszinierende Sache.'."\n".
-                    'Welche Primfaktorenzerlegung haben diese aktualunendlichen ganzen Zahlen?'."\n".
-                    'Wie sind die Primzahlen im Aktualunendlichen verteilt?'."\n".
+                      'Vom Endlichen bis ins Aktual-Unendliche mit ganzen Zahlen zählen, ist eine faszinierende Sache.'."\n".
+                    'Welche Primfaktorenzerlegung haben diese aktual unendlichen ganzen Zahlen?'."\n".
+                    'Wie sind die Primzahlen im Aktual-Unendlichen verteilt?'."\n".
                     'Wie sind Ableitungen und Integrale im Endlichen definiert, wenn wir die Superial-Zahlen dafür benutzen?'."\n",
                       'Viele spannende Fragen, deren Antworten sich in dieser Arbeit ergeben.'."\n"))),
                       //'Verstehen, was eine negative Menge ist, gibt einen besseren Einblick in die Realität unserer Welt.'."\n"))),

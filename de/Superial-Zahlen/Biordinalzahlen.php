@@ -14,27 +14,35 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'vis', text => array(
-                    '\\bold{Ausgangspunkt}',
-                    '• Die Biordinalzahlen sind eine Darstellung aller ganzer Zahlen durch Mengen, also auch der negativen ganzen Zahlen.',
+                    // '\\bold{Ausgangspunkt}',
+                    // '• Die Biordinalzahlen sind eine Darstellung aller ganzer Zahlen durch Mengen, also auch der negativen ganzen Zahlen.',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Ausgangspunkt der Biordinalzahlen sind die Ordinalzahlen\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ordinalzahl:2021}.}.'."\n".
+                    'Bei den Ordinalzahlen handelt es sich um die Fortsetzung des Zählens oder der uns allgemein bekannten Anzahl von Dingen ins Aktual-Unendliche.'."\n".
+                    'Diese Fortsetzung wird mit Hilfe der Mengenlehre, durch die Definition einer Entsprechung eines (An-)Zahlensymbols mit einer bestimmten Menge, die eben selber wieder diese Anzahlen an Mengen enthält, erreicht. '."\n",
+                      'Die nachfolgend eingeführten Biordinalzahlen erweitern das Zählen in den negativen Bereich, auf die Anzahl, die Fehlt.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
+                      
+                'Erwartete Erkenntnisgewinne', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Aus der Perspektive der Superial-Zahlen bringt dies auch ein besseres Verständnis der positiven aktualunendlichen Zahlen, wie zum Beispiel \\term{s-1}, mit sich.'."\n".
+                    'Denn hier fehlt an \\term{s} etwas.'."\n",
+                      'Auch zur Klärung der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} kann die mengentheoretische Perspektive des Negativen'."\n".
+                    'tiefere Einsichten beitragen, indem festgestellt wird, dass \\term{ω-1} zu einer riesigen Lücke zwischen den endlichen natürlichen Zahlen'."\n".
+                    'und dem vermuteten Produkt aller endlicher Primzahlen \\term{ω} gehört.'."\n",
+                      'Und nicht zuletzt können wir im Zusammenhang mit geometrischen Überlegungen etwas über die ontologische Struktur des Zählens lernen,'."\n".
+                    'deren Erweiterung auf das Negative eine grundlegende Asymmetrie in den ganzen Zahlen erkennen lässt.'."\n".
+                    'Meine Intuition sagt mir, dass diese Asymmetrie gemeinsam mit der Primzahlprodukt-Vermutung in der Lage sein könnte'."\n".
+                    'entscheidendes zur Klärung der Riemannschen Vermutung beizutragen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
                       
                 'Ordinalzahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die Ordinalzahlen\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ordinalzahl:2021}.} sind folgendermaßen definiert:'."\n"))),
+                    'Die Ordinalzahlen sind über ihre Definition durch geordnete Mengen folgendermaßen definiert:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ordinalzahl:2021}, Die natürlichen Zahlen als geordnete Mengen.}'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  0  :=  \left\{ \right\}  }'),
@@ -45,18 +53,23 @@
                       array( display => 'on', latex => '{  n + 1  :=  \left\{ 0, 1, 2, …, n \right\}  =  n \cup \left\{ n \right\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Ganz allgemein gilt hier:'."\n"))),
+                    'Im Folgenden soll gelten:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \mathbb{N}  :=  \mathbb{N}_{0}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der Übergang vom Endlichen ins Aktual-Unendliche geschieht durch die Feststellung, dass dann auch die Anzahl der Elemente der Menge der natürlichen Zahlen \\term{\M(N)} durch ein Symbol dargestellt werden kann, nämlich \\term{ω}:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega  :=  \mathbb{N}  }'),
                       array( display => 'on', latex => '{  \mathbb{N}  :=  ??? \left\{  n ~\middle|~ \left( n \in \mathbb{N} \right) \left( \forall x \in \mathbb{N} \right) \left[  x < n  \right]  \right\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Insgesamt sehen wir, dass jede definierte Zahl der Anzahl der Elemente in der Menge entspricht.'."\n"))),
+                    'Insgesamt sehen wir, dass jede definierte Zahl der Anzahl der Elemente in einer bestimmten Menge entspricht.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
                       
-                'Erster Ansatz der Fortsetzung der Ordinalzahlen ins Negative', subline =>
+                'Erster Ansatz zur Erweiterung der Ordinalzahlen ins Negative', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Eine mögliche Fortsetzung der Ordinalzahlen ins Negative ist:'."\n".
@@ -70,7 +83,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  2  :=  \left\{ 0, 1 \right\}  =  \left\{ \left\{ \right\}, \left\{ \left\{ \right\} \right\} \right\}  }'),
                       array( display => 'on', latex => '{  1  :=  \left\{ 0 \right\}  =  \left\{ \left\{ \right\} \right\}  }'),
                       array( display => 'on', latex => '{  0  :=  \left\{ \right\}  }'),
@@ -137,7 +150,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  2  :=  \left\{ 0, 1 \right\}  =  \left\{ \left\{ \right\}, \left\{ \left\{ \right\} \right\} \right\}  }'),
                       array( display => 'on', latex => '{  1  :=  \left\{ 0 \right\}  =  \left\{ \left\{ \right\} \right\}  }'),
                       array( display => 'on', latex => '{  0  :=  \left\{ \right\}  }'),
@@ -172,7 +185,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega - 1  :=  \mathbb{N} \setminus 1  =  \mathbb{N} \setminus \left\{ \left\{ \right\} \right\}  }'),
                       array( display => 'on', latex => '{  \omega - 2  :=  \mathbb{N} \setminus 2  =  \mathbb{N} \setminus \left\{ 0, 1 \right\}  =  \mathbb{N} \setminus \left\{ \left\{ \right\}, \left\{ \left\{ \right\} \right\} \right\}  }'),
                       array( display => 'on', latex => '{  \omega - n  :=  \mathbb{N} \setminus n  =  \mathbb{N} \setminus \left\{ 0, 1, …, n - 1 \right\}  }'),
@@ -187,7 +200,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega - 1  \notin  \mathbb{N}  }'),
                     ))),
                   array( 'text', array( text => array(

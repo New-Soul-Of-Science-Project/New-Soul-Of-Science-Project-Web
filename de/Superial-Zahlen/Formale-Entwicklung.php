@@ -213,7 +213,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Für den Fall, dass \\term{d = 0} ist, es sich also um endliche Zahlen handelt, bleiben nur endliche natürliche Zahlen über.'."\n",
-                      'Für \\term{d > 0}, den Fall, dass es sich um aktualunendlich große natürliche Zahlen handelt, entspricht die Definition der von positiven ganzen Superial-Zahlen.'."\n".
+                      'Für \\term{d > 0}, den Fall, dass es sich um aktual unendlich große natürliche Zahlen handelt, entspricht die Definition der von positiven ganzen Superial-Zahlen.'."\n".
                     'Dies ist dadurch bestimmt, dass der Koeffizient \\term{q_{d}} der größten Potenz \\term{s^{d}} positiv sein muss.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".

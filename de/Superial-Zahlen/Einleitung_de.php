@@ -15,8 +15,8 @@
                   array( 'notice', array( Display => 'invis', text => array(
                     '\\bold{Ist die Geometrie fraktal?} – Ist ein Punkt, eine Linie und eine Fläche fraktal?',
                     '• Das Problem der Geometrie, eine Linie aus Punkten aufzubauen (Verwandt mit der Kontinuumshypothese): Die nullte, die erste und die zweite Dimension haben keine Ausdehnung, kein Volumen, – also Punkt, Linie und Fläche – und in gewisser Weise existieren sie so nicht. Aber mit ihnen sollen wir die dritte Dimension aus Punkten (Ecken) und Flächen konstruieren, die dann eine Ausdehnung hat und plötzlich existiert. Das scheint komisch und merkwürdig. Siehe Nassim Haramein, Die Entschlüsselung des Universums, S. 11-14, hier S. 12-13.',
-                    '– Es geht einfach darum, wie man aus Punkten eine Linie exakt konstruieren kann: Handelt es sich wirklich um einen absolut unendlich kleinen Punkt, dann bekommen wir ein Problem. Es scheint mir, dass ein strukturierter Punkt, mit aktualunendlich kleiner Ausdehnung hier Abhilfe schaffen kann. Ich kann nämlich in Form von aktualunendlich großen Zahlen beschreiben, wie oft ich diesen superialen Punkt aneinander legen muss. Dies kann ich bei absolut unendlich kleinen Punkten nicht tun.',
-                    '– Bietet hier die aktualunendlich kleine Hülle der superial-kleinen Zahlen um einen Punkt einen logischen Lösungsansatz für die Geometrie? Denn bei einem absolut unendlich kleinen Punkt können wir nicht sicher und exakt definieren, wie oft wir ihn aneinander legen müssen, um eine Gerade einer bestimmten Länge zu erzeugen. Bei einem Punkt mit superial-kleiner Hülle ist dies wohldefiniert.',
+                    '– Es geht einfach darum, wie man aus Punkten eine Linie exakt konstruieren kann: Handelt es sich wirklich um einen absolut unendlich kleinen Punkt, dann bekommen wir ein Problem. Es scheint mir, dass ein strukturierter Punkt, mit aktual unendlich kleiner Ausdehnung hier Abhilfe schaffen kann. Ich kann nämlich in Form von aktual unendlich großen Zahlen beschreiben, wie oft ich diesen superialen Punkt aneinander legen muss. Dies kann ich bei absolut unendlich kleinen Punkten nicht tun.',
+                    '– Bietet hier die aktual unendlich kleine Hülle der superial-kleinen Zahlen um einen Punkt einen logischen Lösungsansatz für die Geometrie? Denn bei einem absolut unendlich kleinen Punkt können wir nicht sicher und exakt definieren, wie oft wir ihn aneinander legen müssen, um eine Gerade einer bestimmten Länge zu erzeugen. Bei einem Punkt mit superial-kleiner Hülle ist dies wohldefiniert.',
                     '– Ist die Geometrie also eigentlich fraktal? Was durch die Analysis, mit ihren Ableitungen und Integralen, schließlich sichtbar wird?',
                     '\\bold{Aktuelle Forschung}',
                     '• Der Fields-Medaillenträger 2018, Peter Scholze, bringt neue Zusammenhänge zwischen der Arithmetik und der Geometrie ins Spiel.',
@@ -111,7 +111,7 @@
                     'Könnte man das noch näher definieren und damit noch mehr Sinn stiften und noch mehr Erkenntnis gewinnen?'."\n",
                       'Bei Überlegung zu dieser Frage viel mir nach und nach auf, dass sich das Zählen von natürlichen Zahlen mit den \\italic{Superial-Zahlen} \\term{\M(S)} ins unendlich Große'."\n".
                     'vorsetzen ließ und dies nach meiner vorhergehenden Forschung mit der Umkehrung der Ableitung, mit dem \\jump{OM:SupNum:Einleitung:Grundlagen:Ganze-Natuerl-Sup-Zahl-und-Integration}{Integral}, verbunden war.'."\n".
-                    'Beim Integrieren mit Superial-Zahlen wurde eine wohldefinierte aktualunendliche Summe mit \\term{s} Summanden von Flächenstreifen der Breite \\term{s^{-1}} aufsummiert.'."\n",
+                    'Beim Integrieren mit Superial-Zahlen wurde eine wohldefinierte aktual unendliche Summe mit \\term{s} Summanden von Flächenstreifen der Breite \\term{s^{-1}} aufsummiert.'."\n",
                       'Darüber ließ sich die Menge der ganzen Superial-Zahlen \\term{\M(S)_{Z}} oder der natürlichen Superial-Zahlen \\term{\M(S)_{N}} definieren.'."\n".
                     'Wobei es einen Übergang ins Unendliche gab, der im Dunkeln lag, jedoch kam man nach belieben irgendwo im unendlich großen heraus.'."\n".
                     'Man zählt:'."\n"))),
@@ -196,7 +196,7 @@
                                            
                 'Feine Differenzierung des aktualen Unendlichen')),
                   array( 'text', array( text => array(
-                    'Durch die Definition der superialen Einheit \\term{s} als unendliches Primzahlprodukt erhalten die Superial-Zahlen den Mehrwert, dass sich das Aktualunendliche nach den gewohnten Regeln'."\n".
+                    'Durch die Definition der superialen Einheit \\term{s} als unendliches Primzahlprodukt erhalten die Superial-Zahlen den Mehrwert, dass sich das Aktual-Unendliche nach den gewohnten Regeln'."\n".
                     'der Arithmetrik behandeln und differenzieren lässt.'."\n".
                     'Wichtige Elemente der Arithmetrik, wie beispeilsweise natürliche, ganze, gerade und ungerade Zahlen sowie Primzahlen, lassen sich so im Unendlichen untersuchen.'."\n".
                     'Dies hat auch Rückwirkung auf die Betrachtung des Endlichen.'."\n".
@@ -302,7 +302,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                      'Jedoch kann die Anzahl der Elemente in \\term{\M(N)} nach obiger Definition \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N} mit der aktualunendlichen Zahl \\term{ω} angegeben werden:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ordinalzahl:2021}, Topologische Eigenschaften.}'."\n"))),
+                      'Jedoch kann die Anzahl der Elemente in \\term{\M(N)} nach obiger Definition \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N} mit der aktual unendlichen Zahl \\term{ω} angegeben werden:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ordinalzahl:2021}, Topologische Eigenschaften.}'."\n"))),
                       
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -761,14 +761,14 @@
                     'Es wird letztendlich behauptet, dass das Produkt aller Primzahlen innerhalb der natürlichen Zahlen genau so groß ist, wie die Anzahl der natürlichen Zahlen selbst.'."\n".
                     'Dies kann nur sein, wenn unter den extrem großen natürlichen Zahlen nur noch sehr wenige Primzahlen vorkommen, sie dort also im Prinzip verschwinden und schließlich eigentlich nicht mehr vorkommen.'."\n".
                     'Oder es gibt zwischen den endlichen, natürlichen Zahlen und ihrer Anzahl \\term{⍵} eine riesige Lücke, wonach \\term{⍵-1} dann keine endliche, natürliche Zahl wäre.'."\n".
-                    '\\term{⍵-1} wäre demnach das Symbol für eine aktualunendliche Zahl.'."\n".
+                    '\\term{⍵-1} wäre demnach das Symbol für eine aktual unendliche Zahl.'."\n".
                     'Ich vermute genau letzteres, weil es meiner logischen Intuition entspricht.'."\n".
                     'Denn die Primzahlen kommen innerhalb der natürlichen Zahlen nicht zu einem endlichen Ende, wie sich zeigen lässt.'."\n".
                     'Es muss auch diese Lücke geben, weil die natürlichen Zahlen selber nicht im Endlichen zum Ende kommen und \\term{⍵-1} damit nicht quasi die größte oder letzte natürliche Zahl symbolisieren kann.'."\n".
                     'Die Lücke könnte also tatsächlich so groß sein, dass das Produkt aller endlicher Primzahlen gleich der Anzahl der natürlichen Zahlen ist.'."\n".
                     'Auch wenn dies erst einmal überraschent erscheint.'."\n",
                       'Schaut man sich den Grafen der Primfakultät\\footnote{Vgl. \\cite{wiki:Primorial:2015}.} \\term{n#} an, so steigt dieser anfangs sehr viel schneller, als der der Anzahl der natürlichen Zahlen.\\footnote{Vgl. \\cite{wiki:Primorial:2015}, Eigenschaften, Grafik und Tabelle mit Beispielwerten.}'."\n".
-                    'Der Graf der Primfakultät kann am „Ende“ der natürlichen Zahlen nur dann wieder gleich groß werden, wenn ab einem bestimmten Punkt im Prinzip, vielleicht quasi erst im Aktualunendlichen, keine Primzahlen mehr in das Produkt hinzu kommen.'."\n".
+                    'Der Graf der Primfakultät kann am „Ende“ der natürlichen Zahlen nur dann wieder gleich groß werden, wenn ab einem bestimmten Punkt im Prinzip, vielleicht quasi erst im Aktual-Unendlichen, keine Primzahlen mehr in das Produkt hinzu kommen.'."\n".
                     'Die Primfakultät, bezogen auf die Anzahl der natürlichen Zahlen, \\term{n#-n} oder auch \\term{n#/n} kann im Endlichen kein Maximum haben.'."\n".
                     'Denn immer, wenn wieder eine Primzahl auftaucht, wird es „übermächtig“ groß, und die Primzahlen hören nicht auf aufzutauchen.'."\n".
                     'Die Vermutung muss also mit der Lücke zwischen allen endlichen natürlichen Zahlen \\term{\M(N)} und \\term{⍵} zu tun haben.'."\n".
