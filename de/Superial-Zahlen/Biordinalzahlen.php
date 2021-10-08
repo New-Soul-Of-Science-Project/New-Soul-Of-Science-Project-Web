@@ -36,7 +36,7 @@
                       'Und nicht zuletzt können wir im Zusammenhang mit geometrischen Überlegungen etwas über die ontologische Struktur des Zählens lernen,'."\n".
                     'deren Erweiterung auf das Negative eine grundlegende Asymmetrie in den ganzen Zahlen erkennen lässt.'."\n".
                     'Meine Intuition sagt mir, dass diese Asymmetrie gemeinsam mit der Primzahlprodukt-Vermutung in der Lage sein könnte'."\n".
-                    'entscheidendes zur Klärung der Riemannschen Vermutung beizutragen.'."\n"))),
+                    'entscheidendes zur Klärung der Riemannschen Vermutung\\color{*Bearb}{(Verweis)} beizutragen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
                       
                 'Ordinalzahlen', subline =>
@@ -45,12 +45,12 @@
                     'Die Ordinalzahlen sind über ihre Definition durch geordnete Mengen folgendermaßen definiert:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ordinalzahl:2021}, Die natürlichen Zahlen als geordnete Mengen.}'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  0  :=  \left\{ \right\}  }'),
-                      array( display => 'on', latex => '{  1  :=  \left\{ 0 \right\}  =  \left\{ \left\{ \right\} \right\}  }'),
-                      array( display => 'on', latex => '{  2  :=  \left\{ 0, 1 \right\}  =  \left\{ \left\{ \right\}, \left\{ \left\{ \right\} \right\} \right\}  }'),
-                      array( display => 'on', latex => '{  3  :=  \left\{ 0, 1, 2 \right\}  =  \left\{ \left\{ \right\}, \left\{ \left\{ \right\} \right\}, \left\{ \left\{ \right\}, \left\{ \left\{ \right\} \right\} \right\} \right\}  }'),
-                      array( display => 'on', latex => '{  n  :=  \left\{ 0, 1, 2, …, n - 1 \right\}  }'),
-                      array( display => 'on', latex => '{  n + 1  :=  \left\{ 0, 1, 2, …, n \right\}  =  n \cup \left\{ n \right\}  }'),
+                      array( display => 'on', latex => '{  0  :=  *\{ *\}  }'),
+                      array( display => 'on', latex => '{  1  :=  *\{ 0 *\}  =  *\{ *\{ *\} *\}  }'),
+                      array( display => 'on', latex => '{  2  :=  *\{ 0, 1 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
+                      array( display => 'on', latex => '{  3  :=  *\{ 0, 1, 2 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\}, *\{ *\{ *\}, *\{ *\{ *\} *\} *\} *\}  }'),
+                      array( display => 'on', latex => '{  n  :=  *\{ 0, 1, 2, …, n - 1 *\}  }'),
+                      array( display => 'on', latex => '{  n + 1  :=  *\{ 0, 1, 2, …, n *\}  =  n \cup *\{ n *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Im Folgenden soll gelten:'."\n"))),
@@ -63,7 +63,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega  :=  \mathbb{N}  }'),
-                      array( display => 'on', latex => '{  \mathbb{N}  :=  ??? \left\{  n ~\middle|~ \left( n \in \mathbb{N} \right) \left( \forall x \in \mathbb{N} \right) \left[  x < n  \right]  \right\}  }'),
+                      // array( display => 'on', latex => '{  \mathbb{N}  :=  ??? *\{  n ~\middle|~ \left( n \in \mathbb{N} \right) \left( \forall x \in \mathbb{N} \right) \left[  x < n  \right]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Insgesamt sehen wir, dass jede definierte Zahl der Anzahl der Elemente in einer bestimmten Menge entspricht.'."\n"))),
@@ -72,36 +72,23 @@
                 'Erster Ansatz zur Erweiterung der Ordinalzahlen ins Negative', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Eine mögliche Fortsetzung der Ordinalzahlen ins Negative ist:'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Aufgrund meines strukturellen Interesses an der Unendlichkeit und meiner Neugier suchte ich vor vielen Jahren'."\n".
+                    'nach einer möglichen Fortsetzung der Ordinalzahlen ins Negative.'."\n".
+                    'Schließlich kam ich darauf, dass negative Zahlen zum Beispiel über das Fehlen von bestimmten Mengen an der Menge der natürlichen Zahlen'."\n".
+                    'dargestellt werden können:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  2  :=  \left\{ 0, 1 \right\}  =  \left\{ \left\{ \right\}, \left\{ \left\{ \right\} \right\} \right\}  }'),
-                      array( display => 'on', latex => '{  1  :=  \left\{ 0 \right\}  =  \left\{ \left\{ \right\} \right\}  }'),
-                      array( display => 'on', latex => '{  0  :=  \left\{ \right\}  }'),
-                      array( display => 'on', latex => '{  -1  :=  \mathbb{N} \setminus 1  =  \mathbb{N} \setminus \left\{ \left\{ \right\} \right\}  }'),
-                      array( display => 'on', latex => '{  -2  :=  \mathbb{N} \setminus 2  =  \mathbb{N} \setminus \left\{ 0, 1 \right\}  =  \mathbb{N} \setminus \left\{ \left\{ \right\}, \left\{ \left\{ \right\} \right\} \right\}  }'),
-                      array( display => 'on', latex => '{  -n  :=  \mathbb{N} \setminus n  =  \mathbb{N} \setminus \left\{ 0, 1, …, n - 1 \right\}  }'),
+                      array( display => 'on', latex => '{  2  :=  *\{ 0, 1 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
+                      array( display => 'on', latex => '{  1  :=  *\{ 0 *\}  =  *\{ *\{ *\} *\}  }'),
+                      array( display => 'on', latex => '{  0  :=  *\{ *\}  }'),
+                      array( display => 'on', latex => '{  -1  :=  \mathbb{N} \setminus 1  =  \mathbb{N} \setminus *\{ *\{ *\} *\}  }'),
+                      array( display => 'on', latex => '{  -2  :=  \mathbb{N} \setminus 2  =  \mathbb{N} \setminus *\{ 0, 1 *\}  =  \mathbb{N} \setminus *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
+                      array( display => 'on', latex => '{  -n  :=  \mathbb{N} \setminus n  =  \mathbb{N} \setminus *\{ 0, 1, …, n - 1 *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Auch hier wird konsequenterweise das Prinzip aufrecht erhalten, dass die Menge, die eine Zahl repräsentiert zum Negativen hin'."\n".
+                    'Auch hier wird konsequenterweise das Prinzip aufrecht erhalten, dass die Menge, die eine Zahl repräsentiert in Richtung des Negativen'."\n".
                     'in ihrer Anzahl sinkt.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'An einer gegebenen Anzahl fehlen entsprechend viele Zahlen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
                       
                 'Eine fundamentale Asymmetrie', subline =>
@@ -127,68 +114,49 @@
                       
                   array( 'text', array( text => array(
                     'Das ist möglicherweise für den einen oder anderen eine überraschende Erkenntnis.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Ich finde sie hochspannend.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
                       
                 'Biordinalzahlen als Fortsetzung der Ordinalzahlen ins Negative', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX Eine mögliche Fortsetzung der Ordinalzahlen ins Negative ist:'."\n".
-                    'XXX Mengenuniversum\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Allklasse:2020}.} \\term{\M(U)} XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Auch, wenn sich auf die oben geschilderte Weise endliche negative Zahlen sinnvoll darstellen lassen, können wir auf diese Weise nicht alle negativen Ordinalzahlen darstellen.'."\n".
+                    'Die Darstellung von \\term{-ω} entspräche so zum Beispiel der leeren Menge, die aber schon der Null entspricht.'."\n".
+                    'Noch größere unendliche negative Ordinalzahlen lassen sich auf diese Weise generell nicht darstellen, denn an der Menge'."\n".
+                    'der natürlichen Zahlen \\term{\M(N)} können nicht mehr Zahlen fehlen, als drinne sind.'."\n",
+                      'Die Lösung dieses Problems fand ich darin, anstatt Zahlen an der Menge der natürlichen Zahlen fehlen zu lassen dafür das Mengenuniversum\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Allklasse:2020}.} zu nutzen. '."\n".
+                    'Das Mengenuniversum \\term{\M(U)} ist die kleinste Klasse von Mengen, die alle Mengen enthält, die definierbar sind.'."\n".
+                    'Am Mengenuniversum können wir quasi beliebig viele Zahlen fehlen lassen, wenn wir diese alle durch Mengen darstellen.'."\n".
+                    'Wir ersetzen also die Menge der natürlichen Zahlen \\term{\M(N)} durch das Mengenuniversum \\term{\M(U)}:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  2  :=  \left\{ 0, 1 \right\}  =  \left\{ \left\{ \right\}, \left\{ \left\{ \right\} \right\} \right\}  }'),
-                      array( display => 'on', latex => '{  1  :=  \left\{ 0 \right\}  =  \left\{ \left\{ \right\} \right\}  }'),
-                      array( display => 'on', latex => '{  0  :=  \left\{ \right\}  }'),
-                      array( display => 'on', latex => '{  -1  :=  \mathbb{U} \setminus 1  =  \mathbb{U} \setminus \left\{ \left\{ \right\} \right\}  }'),
-                      array( display => 'on', latex => '{  -2  :=  \mathbb{U} \setminus 2  =  \mathbb{U} \setminus \left\{ 0, 1 \right\}  =  \mathbb{U} \setminus \left\{ \left\{ \right\}, \left\{ \left\{ \right\} \right\} \right\}  }'),
-                      array( display => 'on', latex => '{  -n  :=  \mathbb{U} \setminus n  =  \mathbb{U} \setminus \left\{ 0, 1, …, n - 1 \right\}  }'),
+                      array( display => 'on', latex => '{  2  :=  *\{ 0, 1 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
+                      array( display => 'on', latex => '{  1  :=  *\{ 0 *\}  =  *\{ *\{ *\} *\}  }'),
+                      array( display => 'on', latex => '{  0  :=  *\{ *\}  }'),
+                      array( display => 'on', latex => '{  -1  :=  \mathbb{U} \setminus 1  =  \mathbb{U} \setminus *\{ *\{ *\} *\}  }'),
+                      array( display => 'on', latex => '{  -2  :=  \mathbb{U} \setminus 2  =  \mathbb{U} \setminus *\{ 0, 1 *\}  =  \mathbb{U} \setminus *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
+                      array( display => 'on', latex => '{  -n  :=  \mathbb{U} \setminus n  =  \mathbb{U} \setminus *\{ 0, 1, …, n - 1 *\}  }'),
+                      array( display => 'on', latex => '{  -\omega  :=  \mathbb{U} \setminus \omega  =  \mathbb{U} \setminus \mathbb{N} \\\ \qquad\qquad\qquad\;  =  \mathbb{U} \setminus *\{ 0, 1, 2, 3, … *\}  }'),
+                      array( display => 'on', latex => '{  - *(\omega + 1 *)  :=  \mathbb{U} \setminus \omega + 1  =  \mathbb{U} \setminus \mathbb{N} \cup *\{ \mathbb{N} *\} \\\ \qquad\qquad\qquad\qquad\qquad  =  \mathbb{U} \setminus *\{ 0, 1, 2, 3, …, \mathbb{N} *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX Auch hier wird konsequenterweise das Prinzip aufrecht erhalten, dass die Menge, die eine Zahl repräsentiert zum Negativen hin'."\n".
-                    'in ihrer Anzahl sinkt.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Auch in diesem Fall wird konsequenterweise das Prinzip aufrecht erhalten, dass die Klasse – das Mengenuniversum ist auch ein Container, aber definitionsgemäß keine Menge –, die eine Zahl repräsentiert zum Negativen hin'."\n".
+                    'in ihrer Anzahl sinkt.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
                       
-                'XXX Biordinalzahlen als Fortsetzung der Ordinalzahlen ins Negative', subline =>
+                'Zusätzliche Erweiterung der Limeszahlen um biordinale Vorgänger', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX Eine mögliche Fortsetzung der Ordinalzahlen ins Negative ist:'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Ich möchte erreichen, dass wir innerhalb der Biordinalzahlen generell von jeder Zahl aus nicht nur ins Positive,'."\n".
+                    'sondern auch ins Negative zählen können.'."\n".
+                    'Die sogenannten Limeszahlen\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ordinalzahl:2021}, Motivation und Definition, Limes- und Nachfolgerzahlen.},'."\n".
+                    'wie \\term{ω} oder \\term{ω^{2}}, haben immer noch keine Vorgänger.'."\n",
+                      'Die Vorgänger der Limeszahlen lassen sich nun entsprechend der negativen Zahlen definieren:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \omega - 1  :=  \mathbb{N} \setminus 1  =  \mathbb{N} \setminus \left\{ \left\{ \right\} \right\}  }'),
-                      array( display => 'on', latex => '{  \omega - 2  :=  \mathbb{N} \setminus 2  =  \mathbb{N} \setminus \left\{ 0, 1 \right\}  =  \mathbb{N} \setminus \left\{ \left\{ \right\}, \left\{ \left\{ \right\} \right\} \right\}  }'),
-                      array( display => 'on', latex => '{  \omega - n  :=  \mathbb{N} \setminus n  =  \mathbb{N} \setminus \left\{ 0, 1, …, n - 1 \right\}  }'),
+                      array( display => 'on', latex => '{  \omega - 1  :=  \mathbb{N} \setminus 1  =  \mathbb{N} \setminus *\{ *\{ *\} *\}  }'),
+                      array( display => 'on', latex => '{  \omega - 2  :=  \mathbb{N} \setminus 2  =  \mathbb{N} \setminus *\{ 0, 1 *\} \\\ \qquad\qquad\qquad\quad  =  \mathbb{N} \setminus *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
+                      array( display => 'on', latex => '{  \omega - n  :=  \mathbb{N} \setminus n  =  \mathbb{N} \setminus *\{ 0, 1, …, n - 1 *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
