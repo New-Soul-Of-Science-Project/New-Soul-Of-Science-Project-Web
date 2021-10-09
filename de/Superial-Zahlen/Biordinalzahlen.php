@@ -159,28 +159,24 @@
                       array( display => 'on', latex => '{  \omega - n  :=  \mathbb{N} \setminus n  =  \mathbb{N} \setminus *\{ 0, 1, …, n - 1 *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Diese Definition aus Seite der Mengen wurde eingangs für die Definition der negativen Zahlen verwandt und bekommt hiermit eine neue Rolle.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:NeueEinsichten', text =>
+                      
+                'Neue Einsichten zu positiven aktual unendlichen Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wir können nun zu Aussagen kommen, die etwas über die Größe von \\term{ω} verraten.'."\n".
+                    'Ziehen wir eine beliebige endliche natürliche Zahl \\term{n} von \\term{ω} ab, ergibt sich niemals eine Zahl, die zur Menge'."\n".
+                    'der natürlichen Zahlen gehört:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \omega - 1  \notin  \mathbb{N}  }'),
+                      array( display => 'on', latex => '{  *( \forall n \in \mathbb{N} *)  *[  \omega - n  \notin  \mathbb{N}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\\term{ω-1} ist nicht in den natürlichen Zahlen \\term{\M(N)}, weil eine unendlich große Zahl \\term{ω} minus einer endlichen Zahl \\term{1} eine unendlich große Zahl bleibt.'."\n".
-                    'Und eine unendlich große Zahl ist kein Element von \\term{\M(N)}.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\\term{ω-n} ist nicht in den natürlichen Zahlen \\term{\M(N)}, weil eine unendlich große Zahl \\term{ω} minus einer endlichen Zahl \\term{n} eine unendlich große Zahl bleibt.'."\n".
+                    'Und eine unendlich große Zahl ist kein Element von \\term{\M(N)}.'."\n",
+                      'Es zeigt sich also eine riesige mit unendlich großen natürlichen Zahlen gefüllte Lücke zwischen den endlichen natürlichen Zahlen und \\term{ω}.'."\n".
+                    'Diese Lücke ist ein Grund dafür, dass die \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} wahr sein könnte.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
                       
                 'XXX', subline =>

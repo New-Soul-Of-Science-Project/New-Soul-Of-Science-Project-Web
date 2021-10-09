@@ -3017,7 +3017,7 @@
                                        text_undertitel_h2 => 'Positive und negative Ordinalzahlen',
                                        text_titel_discr_h3 => '',
                                        jump_ary => array(
-                                              'OM:SupNum:Biordinalzahlen:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                                              'OM:SupNum:Biordinalzahlen:Vortext:NeueEinsichten' => array( headline_text => 'Neue Einsichten zu positiven aktual unendlichen Zahlen'/*, headline_text_short => 'XXX'*/),
                                             ),
                                      ),
                               'OM:SupNum:Eigenschaften' =>

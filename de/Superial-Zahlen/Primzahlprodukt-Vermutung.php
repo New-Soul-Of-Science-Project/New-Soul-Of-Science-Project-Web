@@ -14,8 +14,9 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'vis', text => array(
-                    '\\bold{XXX}',
-                    '• XXX',
+                    '\\bold{Warum könnte die Primzahlprodukt-Vermutung stimmen?}',
+                    '• Die Primzahlen werden unter den sehr großen natürlichen Zahlen extrem selten.',
+                    '• Es klafft eine riesige Lücke zwischen den endlichen natürlichen Zahlen und \\term{ω}, siehe \\jumpname{OM:SupNum:Biordinalzahlen:Vortext:NeueEinsichten}.',
                     ))),
                       
                   array( 'text', array( text => array(
