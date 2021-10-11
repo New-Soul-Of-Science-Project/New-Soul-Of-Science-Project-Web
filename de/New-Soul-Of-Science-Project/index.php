@@ -1206,6 +1206,16 @@
                         ''."\n"),
                         addtext => '')),
                       
+                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
+                  // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Spiritualitaet-Psychologie)
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Make your life a celebration!'."\n"),
+                        addtext => '\\small{\\color{*TitleAdd}{ ~Mike Love — \\jump[https://www.youtube.com/watch?v=NKx_kxR9hWU]{}{"I Love You & Permanent Holiday" Live at Woodstock Poland 2016}, Sek. 13:57.}}')),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        ''."\n"),
+                        addtext => '')),
+                      
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Die Angst vor deinem Tod \\\\'."\n".
                         'ist eigentlich die Angst vor deinem Leben. \\\\'."\n".
