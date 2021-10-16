@@ -16,10 +16,11 @@
                   array( 'notice', array( Display => 'invis', text => array(
                     '\\bold{"Make your life a celebration!"}',
                     '• Aus: Mike Love Sings \\jump[https://www.youtube.com/watch?v=NKx_kxR9hWU]{}{"I Love You & Permanent Holiday" Live at Woodstock Poland 2016}, Sek. 13:57.',
-                    '• Zelebrieren heißt, den Dingen Bedeutung zu geben. — Das können wir für jedes kleine Ding, das wir tun, machen.',
+                    '• Zelebrieren heißt, den Dingen Bedeutung (Sinn, Orientierung) zu geben, sich mit den Dingen und der Welt verbinden (\\jump{OM:NPYo:Spiritualitaet-Psychologie}{Spiritualität}). — Das können wir für jedes kleine Ding, das wir tun, machen.',
                     '• Zelebrieren heißt, mit meinem Fokus, mit meinen Gedanken mehr im Hier-Und-Jetzt sein. — Die Dinge bewusster tun.',
                     '• Zelebrieren heißt, die Dinge, die wir tun zu feiern. — Jedes Ding, dass wir tun, ist eine kleine Feier, sagt Martina.',
                     '\\bold{Divers}',
+                    '• Sinn ist auch Orientierung.',
                     '• Glück hat etwas mit der richtigen Balance zwischen Harmonie und Disharmonie zu tun und um diese zu finden gibt es den Achtsamkeitsprozess, der das Wohlbefinden in eine Harmonie bringen kann. Möglicherweise ist das Wohlbefinden die oberste Ebene der Brüche, die dann sehr recht harmonisch sein kann.',
                     '– Sehr oft wird nur auf Harmonie abgehoben, weil man nur das Wohlbefinden sieht, und die kleinen notwendigen Balancen zwischen Harmonie und Disharmonie werden nicht gesehen. Dies führt zu einer Fehldeutung der Disharmonie als etwas rein Schlechtem',
                     '• Es geht nicht um den Gesundheitswahn. Es geht darum durch das ›Spannungsspiel des Lebens‹ das Prinzip der Existenz und des Lebens zu verstehen, dies mit der Erfahrung anderer sowie mit Selbsterfahrung zu ergänzen und daraus bei Bedarf Handlungsmöglichkeiten zur Verbesserung des Lebens für sich abzuleiten. Es kann Anti-Aging in dem Sinne sein, dass man eine allzu große Ansammlung von inneren Spannungen im Laufe des Lebens vermeidet oder eine bereits vorhandene Ansammlung reduziert. Damit sind Spannungen gemeint, die einem angenehmen Leben im Weg stehen, es blockieren. Dies kann/sollte tatsächlich in besserer Durchblutung der Haut und einem entspannterem Aussehen resultieren und von daher eine gewisse Anti-Aging Wirkung haben, aber von innen heraus. Der Zweck der „Übung“ ist aber nicht dies zu erreichen, sondern angenehmer und gesünder zu leben.',

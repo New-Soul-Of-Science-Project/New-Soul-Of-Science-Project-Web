@@ -22,6 +22,11 @@
                     '• Spiritualität bedeutet auch, sich tiefer mit unserer Natur, mit den Grundlagen unseres Lebens und unserer Welt, zu beschäftigen, siehe \\italic{\\jumpname{OM:NPYo:ExistenzLeichtigkeit}}.',
                     '• Der Dialog unserer inneren Pole: \\jump[https://www.schulz-von-thun.de/die-modelle/das-innere-team]{}{Das innere Team – Schulz von Thun}.',
                     '⋅ Zu unseren inneren Polen, die im Dialog sind, gehören z.B. auch die Elemente der Tibetischen Medizin, wie Wind, Galle (Feuer) und Schleim (Erde, Wasser): \\jump[https://kenfm.de/tree-tv-klaus-herkommer/]{}{TREE.TV 10 mit Klaus Herkommer: „Buddha kocht – Heilkunst vom Dach der Welt“}.',
+                    '\\bold{"Make your life a celebration!"}',
+                    '• Aus: Mike Love Sings \\jump[https://www.youtube.com/watch?v=NKx_kxR9hWU]{}{"I Love You & Permanent Holiday" Live at Woodstock Poland 2016}, Sek. 13:57.',
+                    '• Zelebrieren heißt, den Dingen Bedeutung (\\jump{OM:SpaLeb:Glueck}{Sinn}, Orientierung) zu geben, sich mit den Dingen und der Welt verbinden (Spiritualität). — Das können wir für jedes kleine Ding, das wir tun, machen.',
+                    '• Zelebrieren heißt, mit meinem Fokus, mit meinen Gedanken mehr im Hier-Und-Jetzt sein. — Die Dinge bewusster tun.',
+                    '• Zelebrieren heißt, die Dinge, die wir tun zu feiern. — Jedes Ding, dass wir tun, ist eine kleine Feier, sagt Martina.',
                     '\\bold{Heilung}',
                     '• Siehe \\jumpname{OM:SpaLeb:Gesundheit-Heilung:HeilungSchlaf:HeilungImSchlaf}.',
                     '• »Wisst ihr nicht, dass ihr alle Götter seid?« - hermetischer Aphorismus von Hermes Trismegistos (siehe Ordner gleichen Namens)',
