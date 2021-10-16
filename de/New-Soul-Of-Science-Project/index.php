@@ -686,7 +686,7 @@
               '\\name[undertitle]{OM:nSOSp:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -706,7 +706,7 @@
               'Meine Forschungsarbeiten', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1016,7 +1016,7 @@
               '\\name[undertitle]{OM:SpaLeb:Home}'/*'Spannungen im Leben, deren Brüche und das finden neuer Balancen'*/, 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1036,7 +1036,7 @@
               '\\name[undertitle]{OM:NPYo:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1057,7 +1057,7 @@
               '\\name[undertitle]{OM:FrQFT:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
                     )),
                       
                   /*array( 'text', array( text => array(
@@ -1081,7 +1081,7 @@
               '\\name[undertitle]{OM:VRT:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1101,7 +1101,7 @@
               '\\name[undertitle]{OM:NPT:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1121,17 +1121,18 @@
               'Plus und Minus versa Existenz und Nichtexistenz', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
                     )),
                       
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'In Planung: Die Naturphilosophie der Gegensätze – Existenz und Nichtexistenz, Plus und Minus: Plus und Minus würde ich dabei als räumliches Phänomen bezeichnen.',
+                        'Wie verhalten sich die Existenz sowie die Nichtexistenz und die Existenz sowie die fehlende Existenz zueinander?',
+                    ))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{'."\n".
-                    '(• In Planung: Die Naturphilosophie der Gegensätze – Existenz und Nichtexistenz, Plus und Minus: Plus und Minus würde ich dabei als räumliches Phänomen bezeichnen.) \\\\'."\n".
-                    '(• Wie verhalten sich die Existenz sowie die Nichtexistenz und die Existenz sowie die fehlende Existenz zueinander?) \\\\'."\n".
-                    '}'."\n"))),
+                    '\\color{*Bearb}{Eigene Seite in Planung …}'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:NPT:Home'),
+                      // array(  jump_name => 'OM:NPT:Home'),
                     )),
               )
           ); ?>
@@ -1144,15 +1145,65 @@
               'Der Unendlichkeit Struktur geben – neue Ideen elementarer Mathematik', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
                     )),
                       
-                  array( 'text', array( text => array(
-                    '• Mit Primzahlen ins Unendliche. \\\\'."\n".
-                    '• Negative Mengen durch die Integrierte Mengenlehre.'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Mit Primzahlen ins Unendliche.',
+                    ))),
                     
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Home'),
+                    )),
+              )
+          ); ?>
+
+
+		    	<!  • Biordinalzahlen und integrierte Mengenlehre  >
+          <?php $Sc_g_equation_auto_num = 0; ?>
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:nSOSp:Home:Biordinalzahlen',
+              'Überall vorwärts- und rückwärtszählen in erweiterten Ordinalzahlen', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                    )),
+                      
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Erweiterung der Ordinalzahlen um negative Zahlen.',
+                        'Und Erweiterung der ordinalen Limeszahlen um Vorgängerzahlen.',
+                        'Dazu eine Erweiterung der Mengenlehre um Antimengen zur Integrierten Mengenlehre.',
+                    ))),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{Eigene Seite in Planung …}'."\n"))),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Biordinalzahlen'),
+                    )),
+              )
+          ); ?>
+
+
+		    	<!  • Operialtheorie  >
+          <?php $Sc_g_equation_auto_num = 0; ?>
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:nSOSp:Home:Operialtheorie',
+              'Systematik der arithmetischen Operatoren', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                    )),
+                      
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Zusammenhänge zwischen den arithmetischen Operatoren Addition, Multiplikation, Exponenten.',
+                        'Fortsetzung der Operatoren.',
+                        'Das Zählen als Vorgängeroperator der Addition.',
+                    ))),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{Eigene Seite in Planung …}'."\n"))),
+
+                  array( 'jumplist', array(
+                      // array(  jump_name => 'OM:SupNum:Biordinalzahlen'),
                     )),
               )
           ); ?>
@@ -1165,7 +1216,7 @@
               '\\name[undertitle]{OM:ZS:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(

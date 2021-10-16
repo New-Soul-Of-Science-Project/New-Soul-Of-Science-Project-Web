@@ -2238,10 +2238,11 @@
                                               'OM:nSOSp:Home:Naturphilosophie-Yoga' => array( headline_text => '\\name[title]{OM:NPYo:Home}', headline_text_short => '\\name[shorttitle]{OM:NPYo:Home}'),
                                               'OM:nSOSp:Home:Fraktale-Quanten-Fluss-Theorie' => array( headline_text => '\\name[title]{OM:FrQFT:Home}', headline_text_short => '\\name[shorttitle]{OM:FrQFT:Home}'),
                                               'OM:nSOSp:Home:Vereinheitlichte-Relativitaetstheorie' => array( headline_text => '\\name[title]{OM:VRT:Home}', headline_text_short => '\\name[shorttitle]{OM:VRT:Home}'),
-                                              // 'OM:nSOSp:Home:Superial-Zahlen' => array( headline_text => 'Die Superial-Zahlen \\color{*TitleAdd}{<small>(SN)</small>}', headline_text_short => 'Superial-Zahlen'),
                                               'OM:nSOSp:Home:Superial-Zahlen' => array( headline_text => '\\name[title]{OM:SupNum:Home}', headline_text_short => '\\name[shorttitle]{OM:SupNum:Home}'),
                                               'OM:nSOSp:Home:Naturphilosophie-der-Zeit' => array( headline_text => '\\name[title]{OM:NPT:Home}', headline_text_short => '\\name[shorttitle]{OM:NPT:Home}'),
                                               'OM:nSOSp:Home:Naturphilosophie-der-Gegensaetze' => array( headline_text => 'Strukturelle Naturphilosophie der Gegensätze', headline_text_short => 'Naturphilosophie der Gegensätze'),
+                                              'OM:nSOSp:Home:Biordinalzahlen' => array( headline_text => 'Biordinalzahlen und integrierte Mengenlehre'/*, headline_text_short => 'XXX'*/),
+                                              'OM:nSOSp:Home:Operialtheorie' => array( headline_text => 'Operialtheorie'/*, headline_text_short => 'XXX'*/),
                                               'OM:nSOSp:Home:Zahlensemantik' => array( headline_text => '\\name[title]{OM:ZS:Home}', headline_text_short => '\\name[shorttitle]{OM:ZS:Home}'),
                                               'OM:nSOSp:Home:Inspiration' => array( headline_text => 'Inspiration', headline_text_short => 'Inspiration'),
                                             ),
@@ -3018,6 +3019,7 @@
                                        text_titel_discr_h3 => '',
                                        jump_ary => array(
                                               'OM:SupNum:Biordinalzahlen:Vortext:NeueEinsichten' => array( headline_text => 'Neue Einsichten zu positiven aktual unendlichen Zahlen'/*, headline_text_short => 'XXX'*/),
+                                              'OM:SupNum:Biordinalzahlen:XXX' => array( headline_text => 'XXX'/*, headline_text_short => 'XXX'*/),
                                             ),
                                      ),
                               'OM:SupNum:Eigenschaften' =>
