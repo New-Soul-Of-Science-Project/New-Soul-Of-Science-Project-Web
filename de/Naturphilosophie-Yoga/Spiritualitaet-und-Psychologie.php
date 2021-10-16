@@ -322,7 +322,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:NPYo:WieVeraendereIchMeineVergangenheit'),
+                      array(  jump_name => 'OM:NPYo:Spiritualitaet-Psychologie:Wissen-Unwissen'),
                     )),
                 )
           ); ?>
@@ -330,13 +330,13 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • XXX  >
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
-            'OM:NPYo:Spiritualitaet-Psychologie:XXX',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+		    	<!  • Wissen und Unwissen  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:NPYo:Spiritualitaet-Psychologie:Wissen-Unwissen',
+              'Die Kommunikation zwischen dem Bewusstsein und dem Unterbewusstsein', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:XXX', type => 'back'),
+                      array(  jump_name => 'OM:NPYo:Spiritualitaet-Psychologie', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'vis', text => array(
@@ -371,10 +371,10 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:XXX'),
+                      array(  jump_name => 'OM:NPYo:WieVeraendereIchMeineVergangenheit'),
                     )),
               )
-          ); */ ?>
+          ); ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

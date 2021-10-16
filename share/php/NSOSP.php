@@ -2045,7 +2045,7 @@
                                                          
                                                 'OM:NPYo:Spiritualitaet-Psychologie:Vortext:BinIchSpirituell' => array( headline_text => 'Bin ich spirituell? Glaube und vertraue ich?', headline_text_short => 'Bin ich spirituell?'),
                                                          
-                                              // 'OM:NPYo:Spiritualitaet-Psychologie:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                                              'OM:NPYo:Spiritualitaet-Psychologie:Wissen-Unwissen' => array( headline_text => 'Wissen und Unwissen'/*, headline_text_short => 'XXX'*/),
                                             ),
                                      ),
                               'OM:NPYo:Stein-der-Weisen' =>
