@@ -19,6 +19,7 @@
                     '• Zelebrieren heißt, den Dingen Bedeutung (Sinn, Orientierung) zu geben, sich mit den Dingen und der Welt verbinden (\\jump{OM:NPYo:Spiritualitaet-Psychologie}{Spiritualität}). — Das können wir für jedes kleine Ding, das wir tun, machen.',
                     '• Zelebrieren heißt, mit meinem Fokus, mit meinen Gedanken mehr im Hier-Und-Jetzt sein. — Die Dinge bewusster tun.',
                     '• Zelebrieren heißt, die Dinge, die wir tun zu feiern. — Jedes Ding, dass wir tun, ist eine kleine Feier, sagt Martina.',
+                    '• Zelebrieren heißt daher auch, uns ein Vergnügen daraus zu machen.',
                     '\\bold{Divers}',
                     '• Sinn ist auch Orientierung.',
                     '• Glück hat etwas mit der richtigen Balance zwischen Harmonie und Disharmonie zu tun und um diese zu finden gibt es den Achtsamkeitsprozess, der das Wohlbefinden in eine Harmonie bringen kann. Möglicherweise ist das Wohlbefinden die oberste Ebene der Brüche, die dann sehr recht harmonisch sein kann.',

@@ -27,6 +27,7 @@
                     '• Zelebrieren heißt, den Dingen Bedeutung (\\jump{OM:SpaLeb:Glueck}{Sinn}, Orientierung) zu geben, sich mit den Dingen und der Welt verbinden (Spiritualität). — Das können wir für jedes kleine Ding, das wir tun, machen.',
                     '• Zelebrieren heißt, mit meinem Fokus, mit meinen Gedanken mehr im Hier-Und-Jetzt sein. — Die Dinge bewusster tun.',
                     '• Zelebrieren heißt, die Dinge, die wir tun zu feiern. — Jedes Ding, dass wir tun, ist eine kleine Feier, sagt Martina.',
+                    '• Zelebrieren heißt daher auch, uns ein Vergnügen daraus zu machen.',
                     '\\bold{Heilung}',
                     '• Siehe \\jumpname{OM:SpaLeb:Gesundheit-Heilung:HeilungSchlaf:HeilungImSchlaf}.',
                     '• »Wisst ihr nicht, dass ihr alle Götter seid?« - hermetischer Aphorismus von Hermes Trismegistos (siehe Ordner gleichen Namens)',
