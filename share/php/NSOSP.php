@@ -3018,7 +3018,10 @@
                                        text_undertitel_h2 => 'Positive und negative Ordinalzahlen',
                                        text_titel_discr_h3 => '',
                                        jump_ary => array(
-                                              'OM:SupNum:Biordinalzahlen:Vortext:NeueEinsichten' => array( headline_text => 'Neue Einsichten zu positiven aktual unendlichen Zahlen'/*, headline_text_short => 'XXX'*/),
+                                              'OM:SupNum:Biordinalzahlen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                                                         
+                                                'OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins' => array( headline_text => 'SN.Biord.6'),
+                                                'OM:SupNum:Biordinalzahlen:Vortext:NeueEinsichten' => array( headline_text => 'Neue Einsichten zu positiven aktual unendlichen Zahlen'/*, headline_text_short => 'XXX'*/),
                                               'OM:SupNum:Biordinalzahlen:XXX' => array( headline_text => 'XXX'/*, headline_text_short => 'XXX'*/),
                                             ),
                                      ),

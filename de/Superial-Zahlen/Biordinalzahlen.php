@@ -44,26 +44,29 @@
                   array( 'text', array( text => array(
                     'Die Ordinalzahlen sind über ihre Definition durch geordnete Mengen folgendermaßen definiert:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ordinalzahl:2021}, Die natürlichen Zahlen als geordnete Mengen.}'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  0  :=  *\{ *\}  }'),
-                      array( display => 'on', latex => '{  1  :=  *\{ 0 *\}  =  *\{ *\{ *\} *\}  }'),
-                      array( display => 'on', latex => '{  2  :=  *\{ 0, 1 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
-                      array( display => 'on', latex => '{  3  :=  *\{ 0, 1, 2 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\}, *\{ *\{ *\}, *\{ *\{ *\} *\} *\} *\}  }'),
-                      array( display => 'on', latex => '{  n  :=  *\{ 0, 1, 2, …, n - 1 *\}  }'),
-                      array( display => 'on', latex => '{  n + 1  :=  *\{ 0, 1, 2, …, n *\}  =  n \cup *\{ n *\}  }'),
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  0  :=  *\{ *\}  }'),
+                      array( display => 'on',  latex => '{  1  :=  *\{ 0 *\}  =  *\{ *\{ *\} *\}  }'),
+                      array( display => 'on',  latex => '{  2  :=  *\{ 0, 1 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
+                      array( display => 'on',  latex => '{  3  :=  *\{ 0, 1, 2 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\}, *\{ *\{ *\}, *\{ *\{ *\} *\} *\} *\}  }'),
+                      array( display => 'on',  latex => '{  n  :=  *\{ 0, 1, 2, …, n - 1 *\}  }'),
+                      array( display => 'on',  latex => '{  n + 1  :=  *\{ 0, 1, 2, …, n *\}  =  n \cup *\{ n *\}  }',
+                                               label_name => 'OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins', label_text => '\\name{OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Im Folgenden soll gelten:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \mathbb{N}  :=  \mathbb{N}_{0}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Der Übergang vom Endlichen ins Aktual-Unendliche geschieht durch die Feststellung, dass dann auch die Anzahl der Elemente der Menge der natürlichen Zahlen \\term{\M(N)} durch ein Symbol dargestellt werden kann, nämlich \\term{ω}:'."\n"))),
+                    'Der Übergang vom Endlichen ins Aktual-Unendliche geschieht durch die Feststellung, dass dann auch die Anzahl der Elemente der Menge der natürlichen Zahlen \\term{\M(N)} durch ein Symbol dargestellt werden kann, nämlich \\term{ω};'."\n".
+                    'und nach Formel \\jumpname{OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins} so dann auch \\term{ω+1} und folgende:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \omega  :=  \mathbb{N}  }'),
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       // array( display => 'on', latex => '{  \mathbb{N}  :=  ??? *\{  n ~\middle|~ \left( n \in \mathbb{N} \right) \left( \forall x \in \mathbb{N} \right) \left[  x < n  \right]  *\}  }'),
+                      array( display => 'on', latex => '{  \omega  :=  \mathbb{N}  }'),
+                      array( display => 'on', latex => '{  \omega + 1  :=  \mathbb{N} \cup *\{ \mathbb{N} *\}  =  *\{ 0, 1, 2, 3, …, \mathbb{N} *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Insgesamt sehen wir, dass jede definierte Zahl der Anzahl der Elemente in einer bestimmten Menge entspricht.'."\n"))),
@@ -77,7 +80,7 @@
                     'Schließlich kam ich darauf, dass negative Zahlen zum Beispiel über das Fehlen von bestimmten Mengen an der Menge der natürlichen Zahlen'."\n".
                     'dargestellt werden können:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  2  :=  *\{ 0, 1 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
                       array( display => 'on', latex => '{  1  :=  *\{ 0 *\}  =  *\{ *\{ *\} *\}  }'),
                       array( display => 'on', latex => '{  0  :=  *\{ *\}  }'),
@@ -129,7 +132,7 @@
                     'Am Mengenuniversum können wir quasi beliebig viele Zahlen fehlen lassen, wenn wir diese alle durch Mengen darstellen.'."\n".
                     'Wir ersetzen also die Menge der natürlichen Zahlen \\term{\M(N)} durch das Mengenuniversum \\term{\M(U)}:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  2  :=  *\{ 0, 1 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
                       array( display => 'on', latex => '{  1  :=  *\{ 0 *\}  =  *\{ *\{ *\} *\}  }'),
                       array( display => 'on', latex => '{  0  :=  *\{ *\}  }'),
@@ -153,7 +156,7 @@
                     'wie \\term{ω} oder \\term{ω^{2}}, haben immer noch keine Vorgänger.'."\n",
                       'Die Vorgänger der Limeszahlen lassen sich nun entsprechend der negativen Zahlen definieren:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega - 1  :=  \mathbb{N} \setminus 1  =  \mathbb{N} \setminus *\{ *\{ *\} *\}  }'),
                       array( display => 'on', latex => '{  \omega - 2  :=  \mathbb{N} \setminus 2  =  \mathbb{N} \setminus *\{ 0, 1 *\} \\\ \qquad\qquad\qquad\quad  =  \mathbb{N} \setminus *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
                       array( display => 'on', latex => '{  \omega - n  :=  \mathbb{N} \setminus n  =  \mathbb{N} \setminus *\{ 0, 1, …, n - 1 *\}  }'),
@@ -169,7 +172,7 @@
                     'Ziehen wir eine beliebige endliche natürliche Zahl \\term{n} von \\term{ω} ab, ergibt sich niemals eine Zahl, die zur Menge'."\n".
                     'der natürlichen Zahlen gehört:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  *( \forall n \in \mathbb{N} *)  *[  \omega - n  \notin  \mathbb{N}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
