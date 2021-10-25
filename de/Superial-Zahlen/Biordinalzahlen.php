@@ -92,7 +92,7 @@
                     'Auch hier wird konsequenterweise das Prinzip aufrecht erhalten, dass die Menge, die eine Zahl repräsentiert in Richtung des Negativen'."\n".
                     'in ihrer Anzahl sinkt.'."\n".
                     'An einer gegebenen Anzahl fehlen entsprechend viele Zahlen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:FundamentaleAsymmetrie', text =>
                       
                 'Eine fundamentale Asymmetrie', subline =>
                   'Die ontologische Struktur beinhaltet die Zählrichtung')),
@@ -162,7 +162,61 @@
                       array( display => 'on', latex => '{  \omega - n  :=  \mathbb{N} \setminus n  =  \mathbb{N} \setminus *\{ 0, 1, …, n - 1 *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Diese Definition aus Seite der Mengen wurde eingangs für die Definition der negativen Zahlen verwandt und bekommt hiermit eine neue Rolle.'."\n"))),
+                    'Diese Definition basierend auf \\term{\M(N)} wurde eingangs für die Definition der negativen Zahlen verwandt und bekommt hiermit eine neue Rolle.'."\n",
+                      'Aber wie steht es mit der Eindeutigkeit?'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \omega^2 - \omega - n  =  \omega^2 - *( \omega + n *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Diese beiden Darstellungen sind aus Sicht der an \\term{ω^{2}} fehlenden Mengen im ersten Moment nicht identisch.'."\n".
+                    'Dabei müssen wir uns zuerst klar machen, dass an \\term{ω^{2}} auch nur fehlen kann, was drinne ist.'."\n".
+                    'Und es taucht die Frage auf, ob es nicht generell möglich ist, immer die folgende Definition zu benutzen:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \lambda - \beta  :=  \lambda \setminus \beta  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dann wäre das Beispiel so Definiert:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \omega^2 - *( \omega + n *)  :=  \omega^2 \setminus *( \omega + n *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Doch was wäre dann mit:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \omega^2 - \omega + n  =  \omega^2 - *( \omega - n *)  }'),
+                      array( display => 'on', latex => '{  \omega^2 - *( \omega - n *)  :=  \omega^2 \setminus *( \omega - n *)  }'),
+                      array( display => 'on', latex => '{  \omega - n  :=  \omega \setminus n  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  \omega^2 - *( \omega - n *)  :=  \omega^2 \setminus *( \omega \setminus n *) \\\  =  \omega^2 \setminus *( \omega \setminus *\{ 0, 1, …, n - 1 *\} *) \\\  =  \omega^2 \setminus *\{ n, n + 1, n + 2, n + 3, … *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die andere Möglichkeit ist, wir lassen die Klammerung grundsätzlich weg, was zu einer impliziten Klammerung von vorne führen muss, denn wir können ja nur kleinere Mengen von den größeren weglassen:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \omega^2 - \omega + n  =  *( \omega^2 - \omega *) + n  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  \omega^2 - \omega + n  :=  *( \omega^2 \setminus \omega *) + n  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dann würden wir von \\term{ω^2 - ω} um \\term{n} Schritte neu loszählen und erhielten so bisher nicht da gewesene Mengen, die diese Zahlen darstellten.'."\n".
+                    'Das macht mir ein ungutes Gefühl.'."\n",
+                      'Doch dann bekommen wir Schwierigkeiten mit XXX(?):'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \omega^3 - *( \omega^2 - \omega + n *)  =  \omega^3 - \omega^2 + \omega - n  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:NeueEinsichten', text =>
                       
                 'Neue Einsichten zu positiven aktual unendlichen Zahlen', subline =>

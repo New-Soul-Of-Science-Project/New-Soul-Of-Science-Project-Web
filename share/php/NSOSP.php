@@ -1761,7 +1761,7 @@
                                                         ),
                                        header_pict_name => 'Organical-Matters_Logo_De.jpg',
                                        header_pict_alt => 'Organical Matters Website, Ideen neuer Wissenschaft',
-                                       copy_right => 'Strukturelle Naturphilosophie der Zeit (NPT) \\\\'."\n".
+                                       copy_right => 'Naturphilosophie der Zeit (NPT) \\\\'."\n".
                                                       '© 2014–2021 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
@@ -1773,13 +1773,14 @@
                               'OM:NPT:Home' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-der-Zeit/index.php',
                                        url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/index.php',
-                                       titel => 'Strukturelle Naturphilosophie der Zeit (NPT) - Deutsch',
-                                       description => 'Strukturelle Naturphilosophie der Zeit (NPT) – der Djet-Neheh-Dualismus bringt die Begriffe Zeit, Existenz, Struktur, Veränderung oder Bewegung, Wechselwirkung, Symmetriebruch und Spannung in einen allgemeinen Zusammenhang.',
+                                       titel => 'Naturphilosophie der Zeit (NPT) - Deutsch',
+                                       // description => 'Naturphilosophie der Zeit (NPT) – der Djet-Neheh-Dualismus bringt die Begriffe Zeit, Existenz, Struktur, Veränderung oder Bewegung, Wechselwirkung, Symmetriebruch und Spannung in einen allgemeinen Zusammenhang.',
+                                       description => '\\name[undertitle]{OM:NPT:Home}. — \\name[description]{OM:NPT:Home}.',
                                        keywords => '',
-                                       text_titel_h1 => 'Strukturelle Naturphilosophie der Zeit \\color{*TitleAdd}{\\small{(NPT)}}',
+                                       text_titel_h1 => 'Naturphilosophie der Zeit \\color{*TitleAdd}{\\small{(NPT)}}',
                                        text_titel_short => 'Naturphilosophie der Zeit',
                                        text_undertitel_h2 => 'Ein strukturelles Verständnis der dynamischen Existenz und ihrer Zeit',
-                                       text_titel_discr_h3 => 'Der Djet-Neheh-Dualismus bringt die Begriffe Struktur, Bewegung als deren Veränderung, Existenz, Zeit, Wechselwirkung, Symmetriebruch und Spannung in einen allgemeinen Zusammenhang',
+                                       text_titel_discr_h3 => 'Der Djet-Neheh-Dualismus bringt die Begriffe Struktur, Bewegung als deren Veränderung, Existenz, Zeit, Prozess, Wechselwirkung, Symmetriebruch und Spannung in einen allgemeinen Zusammenhang',
                                        jump_ary => array(
                                               'OM:NPT:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
                                               'OM:NPT:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
@@ -1788,7 +1789,7 @@
                               'OM:NPT:Einleitung' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-der-Zeit/Einleitung_de.php',
                                        url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/Einleitung_de.php',
-                                       titel => 'Einleitung - Die strukturelle Naturphilosophie der Zeit (NPT) - Deutsch',
+                                       titel => 'Einleitung - Naturphilosophie der Zeit (NPT) - Deutsch',
                                        description => 'Ein strukturelles Verständnis der Zeit.',
                                        keywords => '',
                                        text_titel_h1 => 'Einleitung',
@@ -1796,14 +1797,13 @@
                                        text_undertitel_h2 => 'Die Struktur der Zeit aus der Perspektive der zeitlichen Aspekte Djet und Neheh verknüpft die Begriffe Existenz, Struktur, Veränderung oder Bewegung, Wechselwirkung, Spannung und Symmetriebruch',
                                        //text_titel_discr_h3 => 'Vereinheitlichte Physik auf Basis eines selbstorganisierten, fraktalen Systems von lichtähnlichen, zu Strings verbundenen Wirkungsquanten.',
                                        jump_ary => array(
-                                              //'OM:SupNum:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
-                                              //'OM:SupNum:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
+                                              'OM:NPT:Einleitung:Arithmetik' => array( headline_text => 'Arithmetik', headline_text_short => 'Arithmetik'),
                                             ),
                                      ),
                                'OM:NPT:Literatur' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-der-Zeit/Literatur_de.php',
                                        url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/Literatur_de.php',
-                                       titel => 'Literatur - Die strukturelle Naturphilosophie der Zeit (NPT) - Deutsch',
+                                       titel => 'Literatur - Naturphilosophie der Zeit (NPT) - Deutsch',
                                        description => 'Literatur zur strukturellen Naturphilosophie der Zeit.',
                                        keywords => '',
                                        text_titel_h1 => 'Literatur',
@@ -3021,6 +3021,7 @@
                                               'OM:SupNum:Biordinalzahlen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
                                                 'OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins' => array( headline_text => 'SN.Biord.6'),
+                                                'OM:SupNum:Biordinalzahlen:Vortext:FundamentaleAsymmetrie' => array( headline_text => 'Eine fundamentale Asymmetrie'/*, headline_text_short => 'XXX'*/),
                                                 'OM:SupNum:Biordinalzahlen:Vortext:NeueEinsichten' => array( headline_text => 'Neue Einsichten zu positiven aktual unendlichen Zahlen'/*, headline_text_short => 'XXX'*/),
                                               'OM:SupNum:Biordinalzahlen:XXX' => array( headline_text => 'XXX'/*, headline_text_short => 'XXX'*/),
                                             ),
