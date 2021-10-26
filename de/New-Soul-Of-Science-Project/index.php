@@ -1114,7 +1114,7 @@
           ); ?>
 
 
-		    	<!  • Strukturelle Naturphilosophie der Gegensätze  >
+		    	<!  • Naturphilosophie der Gegensätze  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
             'OM:nSOSp:Home:Naturphilosophie-der-Gegensaetze',
@@ -1126,7 +1126,9 @@
                       
                   array( 'bulletlist', array( bullet_ary => array(
                         'In Planung: Die Naturphilosophie der Gegensätze – Existenz und Nichtexistenz, Plus und Minus: Plus und Minus würde ich dabei als räumliches Phänomen bezeichnen.',
+                        'Nur aus dem Positiven heraus kann das Negative entstehen: siehe Biordinalzahlen oder das Böse als Verdrehung des Guten.',
                         'Wie verhalten sich die Existenz sowie die Nichtexistenz und die Existenz sowie die fehlende Existenz zueinander?',
+                        'Genauso mit dem Bewussten, dem Wissen, und dem Unbewussten, dem Unwissen?',
                     ))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{Eigene Seite in Planung …}'."\n"))),

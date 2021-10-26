@@ -2240,7 +2240,7 @@
                                               'OM:nSOSp:Home:Vereinheitlichte-Relativitaetstheorie' => array( headline_text => '\\name[title]{OM:VRT:Home}', headline_text_short => '\\name[shorttitle]{OM:VRT:Home}'),
                                               'OM:nSOSp:Home:Superial-Zahlen' => array( headline_text => '\\name[title]{OM:SupNum:Home}', headline_text_short => '\\name[shorttitle]{OM:SupNum:Home}'),
                                               'OM:nSOSp:Home:Naturphilosophie-der-Zeit' => array( headline_text => '\\name[title]{OM:NPT:Home}', headline_text_short => '\\name[shorttitle]{OM:NPT:Home}'),
-                                              'OM:nSOSp:Home:Naturphilosophie-der-Gegensaetze' => array( headline_text => 'Strukturelle Naturphilosophie der Gegensätze', headline_text_short => 'Naturphilosophie der Gegensätze'),
+                                              'OM:nSOSp:Home:Naturphilosophie-der-Gegensaetze' => array( headline_text => 'Naturphilosophie der Gegensätze'/*, headline_text_short => 'XXX'*/),
                                               'OM:nSOSp:Home:Biordinalzahlen' => array( headline_text => 'Biordinalzahlen und integrierte Mengenlehre'/*, headline_text_short => 'XXX'*/),
                                               'OM:nSOSp:Home:Operialtheorie' => array( headline_text => 'Operialtheorie'/*, headline_text_short => 'XXX'*/),
                                               'OM:nSOSp:Home:Zahlensemantik' => array( headline_text => '\\name[title]{OM:ZS:Home}', headline_text_short => '\\name[shorttitle]{OM:ZS:Home}'),
