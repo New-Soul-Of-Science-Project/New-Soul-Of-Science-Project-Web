@@ -679,6 +679,21 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Mit Primzahlen ins Unendliche – 2. Ansatz} \\\\'."\n".
+                    'Lässt sich die Körnung der natürlichen Zahlen über das folgende Produkt beschreiben?'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  \frac{ 1 }{ p } *)  =  \frac{ 1 }{ 2 } \cdot \frac{ 1 }{ 3 } \cdot \frac{ 1 }{ 5 } \cdot \frac{ 1 }{ 7 } \cdot …  =  \frac{ 1 }{ \omega_{p} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Hälfte aller natürlichen Zahlen enthält die \\term{2}.'."\n".
+                    'Ein drittel aller natürlichen Zahlen enthält die \\term{3} und so fort … ?'."\n",
+                      'Da würde die Null bei allen mit zu zählen.'."\n".
+                    'Es gibt aber sehr viele Zahlen, die sowohl die \\term{2} als auch die \\term{3} oder andere Primzahlen enthalten und diese müssen mitgezählt werden.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:XXX', text =>
                       
                 'XXX', subline =>
@@ -752,8 +767,9 @@
                     'Dies würde auf folgende Formeln hinauslaufen:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \displaystyle \left( \prod_{\forall p \in \mathbb{P}}  p \right)  ?=  \omega  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  s  ?=  \omega^{\omega}  }'),
+                      array( display => 'on',  latex => '{  \displaystyle \left( \prod_{\forall p \in \mathbb{P}}  p \right)  =  \omega_{p}  }'),
+                      array( display => 'on',  latex => '{  \omega_{p}  ?=  \omega  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  s  =  \omega_{p}^{\omega}  ?=  \omega^{\omega}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Richtigkeit dieser Vermutung setzt eine Eigenschaft der Primzahlverteilung unter den extrem großen natürlichen Zahlen voraus, die so'."\n".
@@ -761,8 +777,8 @@
                     'Es wird letztendlich behauptet, dass das Produkt aller Primzahlen innerhalb der natürlichen Zahlen genau so groß ist, wie die Anzahl der natürlichen Zahlen selbst.'."\n".
                     'Dies kann nur sein, wenn unter den extrem großen natürlichen Zahlen nur noch sehr wenige Primzahlen vorkommen, sie dort also im Prinzip verschwinden und schließlich eigentlich nicht mehr vorkommen.'."\n".
                     'Oder es gibt zwischen den endlichen, natürlichen Zahlen und ihrer Anzahl \\term{⍵} eine riesige Lücke, wonach \\term{⍵-1} dann keine endliche, natürliche Zahl wäre.'."\n".
-                    '\\term{⍵-1} wäre demnach das Symbol für eine aktual unendliche Zahl.'."\n".
-                    'Ich vermute genau letzteres, weil es meiner logischen Intuition entspricht.'."\n".
+                    '\\term{⍵-1} wäre demnach das Symbol für eine aktual unendliche Zahl.'."\n",
+                      'Ich vermute genau letzteres, nicht mehr nur, weil es meiner logischen Intuition entspricht, sondern, weil die Konstruktion meiner \\jump{OM:SupNum:Biordinalzahlen}{Biordinalzahlen} genau diese \\jump{OM:SupNum:Biordinalzahlen:Vortext:NeueEinsichten}{Lücke} erkennen lässt.'."\n".
                     'Denn die Primzahlen kommen innerhalb der natürlichen Zahlen nicht zu einem endlichen Ende, wie sich zeigen lässt.'."\n".
                     'Es muss auch diese Lücke geben, weil die natürlichen Zahlen selber nicht im Endlichen zum Ende kommen und \\term{⍵-1} damit nicht quasi die größte oder letzte natürliche Zahl symbolisieren kann.'."\n".
                     'Die Lücke könnte also tatsächlich so groß sein, dass das Produkt aller endlicher Primzahlen gleich der Anzahl der natürlichen Zahlen ist.'."\n".
