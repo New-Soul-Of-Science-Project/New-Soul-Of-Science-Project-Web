@@ -757,17 +757,17 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Psychosomatik:Muskuloese-Rueckseite'),
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik:Aeusserer-Marionettenspieler'),
                     )),
               )
           ); ?>
 
 
-		    	<! Muskulöse Rückseite >
+		    	<! Äußerer Marionettenspieler >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
-            'OM:SpaLeb:Psychosomatik:Muskuloese-Rueckseite',
-              'Unsere Körperrückseite ist durchgängig mit starker Muskulatur besetzt, die, wenn aktiviert, für unsere Körperstabilität sorgt', 'Sc_f_Paragraph',
+            'OM:SpaLeb:Psychosomatik:Aeusserer-Marionettenspieler',
+              'An unserer Körperrückseite sitzt eine starke Muskelplatte, von der Kopfrückseite, über den Rücken bis zum Gesäß, die für unsere Körperstabilität und kraftvolle Aktion sorgt', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler', type => 'back'),

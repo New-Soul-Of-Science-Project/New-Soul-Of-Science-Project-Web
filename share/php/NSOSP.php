@@ -2813,7 +2813,7 @@
                                                          
                                               'OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler' => array( headline_text => 'Innerer Marionettenspieler'/*, headline_text_short => ''*/),
                                                          
-                                              'OM:SpaLeb:Psychosomatik:Muskuloese-Rueckseite' => array( headline_text => 'Muskulöse Rückseite'/*, headline_text_short => ''*/),
+                                              'OM:SpaLeb:Psychosomatik:Aeusserer-Marionettenspieler' => array( headline_text => 'Äußerer Marionettenspieler'/*, headline_text_short => ''*/),
                                             ),
                                      ),
                               'OM:SpaLeb:Psychosomatik-Entscheidungen' =>
