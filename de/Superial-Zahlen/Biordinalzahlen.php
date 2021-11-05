@@ -150,11 +150,11 @@
                 'Zusätzliche Erweiterung der Limeszahlen um biordinale Vorgänger', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Ich möchte erreichen, dass wir innerhalb der Biordinalzahlen generell von jeder Zahl aus nicht nur ins Positive,'."\n".
-                    'sondern auch ins Negative zählen können.'."\n".
+                    'Ich möchte erreichen, dass wir innerhalb der Biordinalzahlen generell von jeder Zahl aus nicht nur in die positive Richtung,'."\n".
+                    'sondern auch in die negative Richtung zählen können.'."\n".
                     'Die sogenannten Limeszahlen\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ordinalzahl:2021}, Motivation und Definition, Limes- und Nachfolgerzahlen.},'."\n".
-                    'wie \\term{ω} oder \\term{ω^{2}}, haben immer noch keine Vorgänger.'."\n",
-                      'Die Vorgänger der Limeszahlen lassen sich nun entsprechend der negativen Zahlen definieren:'."\n"))),
+                    'wie \\term{ω} oder \\term{ω^{2}}, haben in unserer Konstruktion immer noch keine Vorgänger.'."\n",
+                      'Die Vorgänger der Limeszahlen lassen sich nun entsprechend der absolut negativen Zahlen definieren:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega - 1  :=  \mathbb{N} \setminus 1  =  \mathbb{N} \setminus *\{ *\{ *\} *\}  }'),
@@ -162,8 +162,9 @@
                       array( display => 'on', latex => '{  \omega - n  :=  \mathbb{N} \setminus n  =  \mathbb{N} \setminus *\{ 0, 1, …, n - 1 *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Diese Definition basierend auf \\term{\M(N)} wurde eingangs für die Definition der negativen Zahlen verwandt und bekommt hiermit eine neue Rolle.'."\n",
-                      'Aber wie steht es mit der Eindeutigkeit?'."\n"))),
+                    'Diese Definition, basierend auf \\term{\M(N)}, wurde eingangs für die Definition der absolut negativen Zahlen in Erwägung gezogen, dafür jedoch wieder verworfen, und bekommt hiermit ihre passende Rolle.'."\n",
+                      'Aber wie steht es mit der Eindeutigkeit, der Praktikabilität und der generellen Plausibilität in komplexeren Fällen?'."\n".
+                    'An folgendem Beispiel können wir einmal sehen, warum es geht:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega^2 - \omega - n  =  \omega^2 - *( \omega + n *)  }'),
@@ -171,35 +172,44 @@
                   array( 'text', array( text => array(
                     'Diese beiden Darstellungen sind aus Sicht der an \\term{ω^{2}} fehlenden Mengen im ersten Moment nicht identisch.'."\n".
                     'Dabei müssen wir uns zuerst klar machen, dass an \\term{ω^{2}} auch nur fehlen kann, was drinne ist.'."\n".
-                    'Und es taucht die Frage auf, ob es nicht generell möglich ist, immer die folgende Definition zu benutzen:'."\n"))),
+                    'Und es taucht die Frage auf, ob es nicht generell möglich ist, immer die folgende Definition zu benutzen,'."\n".
+                    'wenn \\term{λ} die größte Limeszahl in der Summe ist und \\term{β} die restlichen Summanden zusammenfasst:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \lambda - \beta  :=  \lambda \setminus \beta  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dann wäre das Beispiel so Definiert:'."\n"))),
+                    'Dann wäre das Beispiel so definiert:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega^2 - *( \omega + n *)  :=  \omega^2 \setminus *( \omega + n *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Doch was wäre dann mit:'."\n"))),
+                    'Und das erscheint schlüssig, weil alle Zahlen, die aus \\term{ω^{2}} entfernt werden auch darin enthalten sind.'."\n",
+                      'Doch was wäre dann mit:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega^2 - \omega + n  =  \omega^2 - *( \omega - n *)  }'),
                       array( display => 'on', latex => '{  \omega^2 - *( \omega - n *)  :=  \omega^2 \setminus *( \omega - n *)  }'),
                       array( display => 'on', latex => '{  \omega - n  :=  \omega \setminus n  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  \omega^2 - *( \omega - n *)  :=  \omega^2 \setminus *( \omega \setminus n *) \\\  =  \omega^2 \setminus *( \omega \setminus *\{ 0, 1, …, n - 1 *\} *) \\\  =  \omega^2 \setminus *\{ n, n + 1, n + 2, n + 3, … *\}  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  \omega^2 - *( \omega - n *)  :=  \omega^2 \setminus *( \omega \setminus n *) \\\ \qquad\qquad\qquad\quad\;\;  =  \omega^2 \setminus *( \omega \setminus *\{ 0, 1, …, n - 1 *\} *) \\\ \qquad\qquad\qquad\quad\;\;  =  \omega^2 \setminus *\{ n, n + 1, n + 2, n + 3, … *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die andere Möglichkeit ist, wir lassen die Klammerung grundsätzlich weg, was zu einer impliziten Klammerung von vorne führen muss, denn wir können ja nur kleinere Mengen von den größeren weglassen:'."\n"))),
+                    'Das scheint so in sich stimmig sowie möglich als auch eindeutig.'."\n",
+                      'XXX'."\n"))),
+                      
+                  array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:SpaLeb:Psychosomatik:Vortext:MehrGeschDetails',
+                Title => 'Verworfene Möglichkeit …',
+                TitleVis => 'Verworfene Möglichkeit:', ParagraphList => array(
+                  array( 'text', array( text => array(
+                    'Die andere Möglichkeit ist, wir klammern von vorne:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega^2 - \omega + n  =  *( \omega^2 - \omega *) + n  }'),
                       array( display => 'on', latex => '{  \Rightarrow  \omega^2 - \omega + n  :=  *( \omega^2 \setminus \omega *) + n  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dann würden wir von \\term{ω^2 - ω} um \\term{n} Schritte neu loszählen und erhielten so bisher nicht da gewesene Mengen, die diese Zahlen darstellten.'."\n".
+                    'Dann würden wir von \\term{ω^{2} - ω} um \\term{n} Schritte neu loszählen und erhielten so bisher nicht da gewesene Mengen, die diese Zahlen darstellten.'."\n".
                     'Das macht mir ein ungutes Gefühl.'."\n",
                       'Doch dann bekommen wir Schwierigkeiten mit XXX(?):'."\n"))),
                   array( 'equations',
@@ -217,6 +227,8 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                    ))),
+                      
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:NeueEinsichten', text =>
                       
                 'Neue Einsichten zu positiven aktual unendlichen Zahlen', subline =>
