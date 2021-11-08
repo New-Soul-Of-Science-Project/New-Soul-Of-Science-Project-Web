@@ -3,7 +3,7 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 29.08.2021, 11:00h
+  // #: Stand: 06.11.2021, 07:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
@@ -100,6 +100,8 @@
   //           20210813:  >:  "$Sc_g_equation_replace_ary": Change "'  :=  ', '\;\;\;≔\;\;\;'" to "':=', '≔'" and set it before "'  ≔  ', '\;\;\;≔\;\;\;'".
   //           20210828:  >:  "$Sc_g_equation_replace_ary": Add "'*|', '\left|'", "'|*', '\right|'".
   //           20210829:  >:  "$Sc_g_equation_replace_ary": Add "'\left|  ', '\left|\; '", "'  \right|', ' \;\right|'".
+  //           20211106:  +:  "$Sc_g_term_replace_ary": Implemented.
+  //                      >:  "$Sc_g_Text_replace_preg_ary": Moved "term" before "^". But I didn't reached the effect I wanted. See "$Sc_g_term_replace_ary".
   // v01.004:  20130609:  !:  Include "Tools_v01_004.php"
   //           20130628:  +:  "$Glo_PathRel_back" added;
   // v01.003:  20130522:  !:  Include "Tools_v01_002.php"  -->  "Tools_v01_003.php"
@@ -363,11 +365,14 @@
   
   function Sc_f_replace_callback__latexcommand__term( $value, $replace_ary=null, $replace_preg_ary=null)
   {
-    //%! if ($value[0] != null)
-    if (0 < count( $value))  // !!!: Change this to "To_f_replace_callback__latexcommand__parameterCheck" see above.
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 0))
     {
+      global $Sc_g_term_replace_ary;
       
-      return "<i>{$value[0][0]}</i>";
+      //print_r( $value[0][0]);
+      $term_str = To_f_replace_str_ary( $value[0][0], $Sc_g_term_replace_ary);
+
+      return "<i>{$term_str}</i>";
 
     }
     else
@@ -462,7 +467,14 @@
                                       'const' =>
                                         $To_g_Text_replace_preg_ary['const'],     // #!: "const" must be the second element. Was removed from the array in the lines obove.
                                       'color' =>
-                                        $To_g_Text_replace_preg_ary['color'],     // #!: "color" must be the thirt element, because in "latexmath" there is "\color{formcolor}" used for color setting which not should be replaced. Was removed from the array in the lines obove.
+                                        $To_g_Text_replace_preg_ary['color'],     // #!: "color" must be the third element, because in "latexmath" there is "\color{formcolor}" used for color setting which not should be replaced. Was removed from the array in the lines obove.
+                                      'term' => // #!: "term" must be before its possible internal commands, because if it's content is already replaced by HTML it's small dash replacement destroys negative numbers.
+                                        array( type => 'latexcommand',
+                                               search => '\\term',
+                                               param_dim => 1,
+                                               param_optional_max => 0,
+                                               callback_f => 'Sc_f_replace_callback__latexcommand__term',
+                                             ),
                                       '^' =>
                                         array( type => 'latexcommand',
                                                search => '^',
@@ -484,13 +496,6 @@
                                                param_optional_max => 2,
                                                callback_f => 'Sc_f_replace_callback__latexcommand__latexmath',
                                              ),
-                                      'term' =>
-                                        array( type => 'latexcommand',
-                                               search => '\\term',
-                                               param_dim => 1,
-                                               param_optional_max => 0,
-                                               callback_f => 'Sc_f_replace_callback__latexcommand__term',
-                                             ),
                                       'cite' =>
                                         array( type => 'latexcommand',
                                                search => '\\cite',
@@ -499,7 +504,7 @@
                                                callback_f => 'Sc_f_replace_callback__latexcommand__cite',
                                              ),
                                           ),
-                                    $Sc_g_Text_replace_preg_ary,     // #!: "const" was removed from the array in the lines obove.
+                                    $Sc_g_Text_replace_preg_ary,     // #!: "hidden", "const", "color" was removed from the array in the lines above.
                                     array(
                                       'quote' =>
                                         array( type => 'preg_replace_callback',
@@ -565,6 +570,13 @@
   
   
 
+  // #: The order of entries may be important: As example see first ' + '-> ' \;+\; ' and than '+' -> '%2B'.
+  $Sc_g_term_replace_ary = array(
+                                    // !!!: does not work at the moment, because here already is HTML in the content with negative number for "^{-1}" as example. if its dash gets then replace the HTML is destroyed: I changed the order of commands in "$Sc_g_Text_replace_preg_ary" and moved "term" before "^", but had no effect of a reason I could not quickly find
+                                    // array( '-', '–'), // #: replace small dash by middle dash in terms
+                                 );
+
+  
   // #: The order of entries may be important: As example see first ' + '-> ' \;+\; ' and than '+' -> '%2B'.
   $Sc_g_equation_replace_ary = array(
                                     // #: Arrange space around symbols and save chars.
@@ -754,7 +766,7 @@
   // #param: "$latex" may be a string or an array of strings.
   
   {
-    global $Sc_g_equation_replace_ary;
+    global $Sc_g_equation_replace_ary; // ??? unused here?
     
     $ret_html = '';
     
@@ -793,7 +805,7 @@
   // #param: "$latex" may be a string or an array of strings.
   
   {
-    global $Sc_g_equation_replace_ary;
+    global $Sc_g_equation_replace_ary; // ??? unused here?
     
     echo Sc_f_equation_latex_html( $latex, $latex_color, $latex_tech);
     

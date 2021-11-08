@@ -54,7 +54,7 @@
                                                label_name => 'OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins', label_text => '\\name{OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Im Folgenden soll gelten:'."\n"))),
+                    'Im Folgenden soll gelten, dass die Null ein Element der natürlichen Zahlen ist, wie in den Peano-Axiomen\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:PeanoAxiome:2021}, Axiome, Ursprüngliche Formalisierung.} zur Definition von \\term{\M(N)} gefordert:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \mathbb{N}  :=  \mathbb{N}_{0}  }'),
@@ -72,8 +72,8 @@
                     'Insgesamt sehen wir, dass jede definierte Zahl der Anzahl der Elemente in einer bestimmten Menge entspricht.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
                       
-                'Erster Ansatz zur Erweiterung der Ordinalzahlen ins Negative', subline =>
-                  '')),
+                'Grundsätzliche Idee zur Erweiterung der Ordinalzahlen ins Negative', subline =>
+                  '… später dann mit dem Mengenuniversum verwirklicht')),
                   array( 'text', array( text => array(
                     'Aufgrund meines strukturellen Interesses an der Unendlichkeit und meiner Neugier suchte ich vor vielen Jahren'."\n".
                     'nach einer möglichen Fortsetzung der Ordinalzahlen ins Negative.'."\n".
@@ -113,18 +113,18 @@
                     'Und dazu macht eine Doppelung der Null keinen Sinn.'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                      'Der Mittelwert aller endlichen ganzen Zahlen ist demnach \\term{-0,5}.'."\n"))),
+                      'Der Mittelwert aller endlichen ganzen Zahlen ist demnach \\term{–0,5}.'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Das ist möglicherweise für den einen oder anderen eine überraschende Erkenntnis.'."\n".
                     'Ich finde sie hochspannend.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
                       
-                'Biordinalzahlen als Fortsetzung der Ordinalzahlen ins Negative', subline =>
-                  '')),
+                'Biordinalzahlen als Erweiterung der Ordinalzahlen ins Negative', subline =>
+                  'Ansatz')),
                   array( 'text', array( text => array(
                     'Auch, wenn sich auf die oben geschilderte Weise endliche negative Zahlen sinnvoll darstellen lassen, können wir auf diese Weise nicht alle negativen Ordinalzahlen darstellen.'."\n".
-                    'Die Darstellung von \\term{-ω} entspräche so zum Beispiel der leeren Menge, die aber schon der Null entspricht.'."\n".
+                    'Die Darstellung von \\term{–ω} entspräche so zum Beispiel der leeren Menge, die aber schon der Null entspricht.'."\n".
                     'Noch größere unendliche negative Ordinalzahlen lassen sich auf diese Weise generell nicht darstellen, denn an der Menge'."\n".
                     'der natürlichen Zahlen \\term{\M(N)} können nicht mehr Zahlen fehlen, als drinne sind.'."\n",
                       'Die Lösung dieses Problems fand ich darin, anstatt Zahlen an der Menge der natürlichen Zahlen fehlen zu lassen dafür das Mengenuniversum\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Allklasse:2020}.} zu nutzen. '."\n".
@@ -147,8 +147,8 @@
                     'in ihrer Anzahl sinkt.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
                       
-                'Zusätzliche Erweiterung der Limeszahlen um biordinale Vorgänger', subline =>
-                  '')),
+                'Biordinalzahlen als Erweiterung der Limeszahlen um ihre Vorgänger', subline =>
+                  'Ansatz')),
                   array( 'text', array( text => array(
                     'Ich möchte erreichen, dass wir innerhalb der Biordinalzahlen generell von jeder Zahl aus nicht nur in die positive Richtung,'."\n".
                     'sondern auch in die negative Richtung zählen können.'."\n".
@@ -186,7 +186,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Und das erscheint schlüssig, weil alle Zahlen, die aus \\term{ω^{2}} entfernt werden auch darin enthalten sind.'."\n",
-                      'Doch was wäre dann mit:'."\n"))),
+                      'Doch was wäre, wenn sich Vorzeichen der hinteren Summanden ändern:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega^2 - \omega + n  =  \omega^2 - *( \omega - n *)  }'),
@@ -195,12 +195,34 @@
                       array( display => 'on', latex => '{  \Rightarrow  \omega^2 - *( \omega - n *)  :=  \omega^2 \setminus *( \omega \setminus n *) \\\ \qquad\qquad\qquad\quad\;\;  =  \omega^2 \setminus *( \omega \setminus *\{ 0, 1, …, n - 1 *\} *) \\\ \qquad\qquad\qquad\quad\;\;  =  \omega^2 \setminus *\{ n, n + 1, n + 2, n + 3, … *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Das scheint so in sich stimmig sowie möglich als auch eindeutig.'."\n",
-                      'XXX'."\n"))),
+                    'Das scheint in sich stimmig zu sein, weil möglich, denn die weggelassenen Mengen existieren, als auch eindeutig,'."\n".
+                    'denn es gibt keine andere Möglichkeit, die selbe Darstellung des Wertes durch eine solche Konstruktion zu erreichen.'."\n",
+                      'Und diese Darstellung erfüllt auch die wichtige Eigenschaft, dass die durch Mengen dargestellte Zahl auch so viele Mengen enthält,'."\n".
+                    'wie ihr Wert groß ist.'."\n".
+                    'Am vorstehenden Beispiel veranschaulicht bedeutet dies:'."\n".
+                    'Beim Wert \\term{ω^{2} –  ω + n} haben wir als Basis die Menge \\term{ω^{2}} aus der wir die Mengen in \\term{ω} herausnehmen,'."\n".
+                    'die Mengen in \\term{n} jedoch drinne lassen beziehungsweise wieder hinzufügen:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \Leftrightarrow  \omega^2 \setminus *( \omega \setminus n *)  =  *( \omega^2 \setminus \omega *) \cup n  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \omega^2 - *( \omega - n *)  =  *( \omega^2 - \omega *) + n  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Entsprechendes gilt auch für alle anderen Vorgänger aller Limeszahlen.'."\n",
+                      'Auf diese Weise entsteht das von einer Limeszahl aus Rückwärtszählen und dann auch wieder von dort aus in kleineren Schritten vorwärtszählen'."\n".
+                    'durch unterschiedliche Kombinationen des Entfernens von in ihr enthaltenen Mengen.'."\n".
+                    'Es entstehen hierdurch innerhalb der Menge der Basis-Limeszahl keine Mengen, die von ganz neuer Struktur sind.'."\n".
+                    'Sondern es ändern sich wirklich nur die Mengenkombinationen in der obersten Ebene der größten Limeszahl.'."\n".
+                    'Alle tieferen Ebenen bleiben unberührt.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:SpaLeb:Psychosomatik:Vortext:MehrGeschDetails',
+                  array( 'fade-in-area', array( Display => 'vis', jumpName => 'OM:SpaLeb:Psychosomatik:Vortext:MehrGeschDetails',
                 Title => 'Verworfene Möglichkeit …',
                 TitleVis => 'Verworfene Möglichkeit:', ParagraphList => array(
+                  array( 'notice', array( Display => 'vis', text => array(
+                     '\\bold{Überprüfen}',
+                     '• Warum sollte die Addition von \\term{n} in \\term{(ω^{2} – ω) + n} anders laufen als oben?',
+                    ))),
+                      
                   array( 'text', array( text => array(
                     'Die andere Möglichkeit ist, wir klammern von vorne:'."\n"))),
                   array( 'equations',
@@ -209,24 +231,18 @@
                       array( display => 'on', latex => '{  \Rightarrow  \omega^2 - \omega + n  :=  *( \omega^2 \setminus \omega *) + n  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dann würden wir von \\term{ω^{2} - ω} um \\term{n} Schritte neu loszählen und erhielten so bisher nicht da gewesene Mengen, die diese Zahlen darstellten.'."\n".
-                    'Das macht mir ein ungutes Gefühl.'."\n",
-                      'Doch dann bekommen wir Schwierigkeiten mit XXX(?):'."\n"))),
+                    'Dann würden wir von \\term{ω^{2} – ω} um \\term{n} Schritte neu loszählen und erhielten so bisher nicht da gewesene Mengen, die diese Zahlen darstellten.'."\n".
+                    'Das finde ich viel weniger intuitiv, weil sich die Strukturen der Mengen dann nicht nur in der obersten Verschachtelungsebene der größten Limeszahl ändern,'."\n".
+                    'sondern auch in tieferen Ebenen.'."\n",
+                      'Noch komplexer wird es dann im folgenden Beispiel:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \omega^3 - *( \omega^2 - \omega + n *)  =  \omega^3 - \omega^2 + \omega - n  }'),
+                      array( display => 'on', latex => '{  \omega^3 - *( \omega^2 - *( \omega - n *) *)  =  *( *( \omega^3 - \omega^2 *) + \omega *) - n  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'So ergibt sich in dieser Möglichkeit ein heilloses Durcheinander.'."\n",
+                      'Deshalb ist für mich diese Möglichkeit zu verwerfen, wenn wir oben eine wunderbar einfache Möglichkeit gefunden haben,'."\n".
+                    'dasselbe sehr übersichtlich und plausibel zu leisten.'."\n"))),
                     ))),
                       
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:NeueEinsichten', text =>
@@ -242,7 +258,7 @@
                       array( display => 'on', latex => '{  *( \forall n \in \mathbb{N} *)  *[  \omega - n  \notin  \mathbb{N}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\\term{ω-n} ist nicht in den natürlichen Zahlen \\term{\M(N)}, weil eine unendlich große Zahl \\term{ω} minus einer endlichen Zahl \\term{n} eine unendlich große Zahl bleibt.'."\n".
+                    '\\term{ω – n} ist nicht in den natürlichen Zahlen \\term{\M(N)}, weil eine unendlich große Zahl \\term{ω} minus einer endlichen Zahl \\term{n} eine unendlich große Zahl bleibt.'."\n".
                     'Und eine unendlich große Zahl ist kein Element von \\term{\M(N)}.'."\n",
                       'Es zeigt sich also eine riesige mit unendlich großen natürlichen Zahlen gefüllte Lücke zwischen den endlichen natürlichen Zahlen und \\term{ω}.'."\n".
                     'Diese Lücke ist ein Grund dafür, dass die \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} wahr sein könnte.'."\n"))),
