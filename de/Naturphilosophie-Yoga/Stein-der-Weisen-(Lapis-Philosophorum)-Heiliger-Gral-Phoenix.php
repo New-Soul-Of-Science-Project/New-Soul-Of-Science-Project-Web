@@ -550,12 +550,70 @@
                     '⋅ Mit dem ›Phönix aus der Asche‹ verbindet dieses Märchen, dass selbst dann, nachdem die eigene Fantasiewelt vollends zerstört und unwiederbringlich verloren scheint, nicht vergessen werden sollte, dass, solange wir selber noch leben, immer ein Saatkorn vorhanden ist, sie wieder aus ihrer vermeintlichen Asche entstehen zu lassen. Wir bleiben immer Kinder, die von ihrer Fantasie leben. Wir sind erst Tod, wenn dieses Saatkorn, dieser letzte Funke der Hoffnung, diese letzte Möglichkeit unsere Perspektive noch zu erweitern, in uns erlischt. Unser Glaube an diese Möglichkeit ist ein wesentlicher Teil unseres Lebenselixiers.',
                     ))),
                       
-                  array( 'text', array( text => array(
+                  /* array( 'text', array( text => array(
                     'Der ›Phönix aus der Asche‹ steht für die Neuentstehung, die Geburt, durch Vergänglichkeit, Zerstörung und Tod.'."\n".
                     'In milderer Form steht er für die Verwandlung, die Transformation, aber auch für die Metamorphose.'."\n",
                       'Der Prozess des Phönix hat eine starke Verbindung zum ›löse und verbinde‹, ›solve et coagula‹, der Alchemie.'."\n".
                     'Hier ist der Entwicklungsprozess, die Verwandlung, aber nicht auf ein einziges Leben begrenzt, sondern wird auch Generationsübergreifend und gesellschaftlich betrachtet.'."\n".
                     'Aber natürlich können wir auch in unserem Leben wie der Phönix aus der Asche neu entstehen.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))), */
+                  array( 'text', array( text => array(
+                    'Der ›Phönix aus der Asche‹ steht für die Neuentstehung, die Wiedergeburt (Geburt), durch Vergänglichkeit, aus Zerstörung und Tod.'."\n".
+                    'In milderer Form steht er für die Verwandlung, die Transformation, für die Metamorphose.'."\n",
+                      'Im Laufe der Jahre sind mir nach und nach einige weitere sehr tiefe Bezüge zu unserem Leben, unserer Kultur und Mythologie, zu altem Wissen, aufgegangen,'."\n".
+                    'durch von mir neu erworbenes Wissen und besonders durch meine eigenen Erlebnisse und darin entstandenen Reflexionen in meinem intensiven Leben mit Lerngeschenken zur Persönlichkeitsentwicklung.'."\n",
+                      'Ganz allgemein können wir in meinen Augen sagen, beim ›Phönix aus der Asche‹ geht es um die stetige Verwandlung von Dunkelheit in Licht,'."\n".
+                    'in kleinen und größeren Schritten in unserem Leben oder auch über mehrere Generationen hinweg.'."\n",
+                      'In unserem Leben bezieht sich dies auf die kleinsten Schritte des \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozesses}, wie ich habe Hunger und esse etwas leckeres –'."\n".
+                    'ich verwandle den Mangel in Befriedigung und Genuss.'."\n".
+                    'Oder auf größere Schritte unserer Persönlichkeitsentwicklung, in denen wir wichtige Dinge lernen und tiefere Probleme unseres Lebens lösen,'."\n".
+                    'was auch aus dem Dunklen, Unwissenden, Unfähigen ins Licht führt.'."\n".
+                    'Und beim Erwerb von Wissen aus dem dunklen Unbewussten ins helle Bewusste, dann abgespeichert im Unbewussten, wo es leicht wieder abgerufen werden kann.'."\n",
+                      'Es beschreibt ebenso auch die Wintersonnenwende, also das Julfest oder Lichterfest, das wir auch Weihnachten oder Neujahr nennen,'."\n".
+                    'wo wir am kürzesten und dunkelsten Tag des Jahres in innerer Einkehr und äußerer Feier Hoffnung und Perspektive für das kommende Jahr schöpfen –'."\n".
+                    'dem Frühling und dem Sommer dann positiv entgegensehend.'."\n".
+                    'Und hier verwandeln wir so auf mystische und mythologische Weise auch Dunkelheit in Licht.'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Mythologien und Rituale}\\cond{ – Wintersonnenwende, altes Ägypten} \\\\'."\n".
+                    'Mittwinter beziehungsweise die Mittwinternacht oder Wintersonnenwende, das Lichterfest, ist ein Fest, bei dem wir das Kommen'."\n".
+                    'des nächsten Frühjahrs und Sommers feiern.'."\n",
+                      'Im Norden ist es eine Zeit der Dunkelheit und früher war es hier oft eine Zeit der Entbehrung und auch der inneren Einkehr, des Reflektierens, des Planens.'."\n".
+                    'Bildlich gesprochen war der Phönix zu Beginn des vergangenen Jahres aus aschiger Dunkelheit ins Frühjahr und den Sommer ins Licht aufgestiegen.'."\n".
+                    'Hier verglühte er am Ende des Sommers in der Sonne, wo seine herniedersinkende Asche noch den Herbst erleuchtete.'."\n",
+                      'Zum Lichterfest finden wir den Rest seiner glimmenden Glut als Kerzen in den Häusern und am Tannenbaum.'."\n".
+                    'Dort leuchten die Lichter des erworbenen Wissens und der Erfahrung des letzten Jahres die tiefe Dunkelheit des Winters aus, schenken uns Wärme und Geborgenheit'."\n".
+                    'und künden uns von der erneuten Geburt des glücksbringenden Phönix des kommenden Neuen Jahres.'."\n".
+                    'Die Geschenke des Julfestes zu Weihnachten sollen uns für das kommende Jahr zu lichten Gedanken und Ideen inspirieren.'."\n",
+                      'Das Leben des Horus (siehe \\jumpname{OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-LebenDesHorusHermesstab}) der altägyptischen Mythologie'."\n".
+                    'vollzieht sich gleich dem ›Phönix aus der Asche‹.'."\n".
+                    'Er wird aus dem Ei der Metamorphose, dem Dreiviertelmond, geboren und seine Persönlichkeitsentwicklung steigt, wie die Kundalini-Schlangen,'."\n".
+                    'aus seinem Schoß, ausbalanciert von Gefühl und Handlung des Ra- und des Horus-Auges, auf bis er in der Sonne der Weisheit verbrennt.'."\n",
+                      'Der altägyptische Mythos von Benu\\color{*Bearb}{(Verweis)}, eines altägyptischen Totengottes, wurde teilweise als Tag und Nachtwechsel verstanden,'."\n".
+                    'als auch auf einen historischen Rhythmus von etwa 500 oder 1461 Jahren bezogen.'."\n".
+                    'Der Benu hieß auf griechisch tatsächlich Phönix.'."\n"))),
+                      
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
+                    array_merge( $NPYo_g_figure_ary_LebenDesHorusHermesstab, array( name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-LebenDesHorusHermesstab',
+                                                         text => $NPYo_g_text_LebenDesHorusHermesstab_Phoenix)),
+                      )),
+                      
+                  array( 'text', array( text => array(
+                  '\\condb{Altes Wissen}\\cond{ – Hermes Trismegistos} \\\\'."\n".
+                    'Der Prozess des Phönix hat eine starke Verbindung zum ›löse und verbinde‹, ›solve et coagula‹, der Alchemie.'."\n".
+                    'Hier ist der Entwicklungsprozess, die Verwandlung, aber nicht auf ein einziges Leben begrenzt, sondern wird auch Generationsübergreifend und gesellschaftlich betrachtet.'."\n".
+                    'Aber natürlich können wir auch in unserem Leben wie der ›Phönix aus der Asche‹ neu entstehen.'."\n".
+                    'XXX'."\n".
+                    'XXX Hermes Trismegistos\\footnote{\\const{NPYo_g_footnote_text_HermesTrismegistos}}'."\n".
+                    'XXX'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Neues Wissen}\\cond{ – Biophysik} \\\\'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX Achtsamkeitsprozess'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
@@ -566,12 +624,6 @@
                       'Es gibt den ›Phönix aus der Asche‹ also auch in der Persönlichkeitsentwicklung, innerhalb eines Lebens.'."\n".
                     'Hier als me­ta­mor­phische Verwandlung vom Ei bis zum ausgewachsenen Vogel.'."\n".
                     'Also geht es um die Prüfungen, die das Leben uns stellt, und ob wir diese bestehen (überleben), bis zur Fortpflanzung.'."\n"))),
-                      
-                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
-                    array_merge( $NPYo_g_figure_ary_LebenDesHorusHermesstab, array( name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-LebenDesHorusHermesstab',
-                                                         text => $NPYo_g_text_LebenDesHorusHermesstab_Phoenix)),
-                      )),
-                      
                   array( 'text', array( text => array(
                   '\\condb{Metamorphose zwischen Generationen} \\\\'."\n".
                     'Die me­ta­mor­phische Verwandlung vom ausgewachsenen Vogel zum Ei hat beim Phönix offensichtlicher etwas mit ›löse und verbinde‹, ›solve et coagula‹, der Alchemie zu tun.'."\n".

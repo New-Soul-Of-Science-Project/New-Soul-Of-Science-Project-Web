@@ -2359,6 +2359,7 @@
                                               'OM:SpaLeb:Achtsamkeitsprozess:AchtsamkeitsprozesGrundlLeben' => array( headline_text => 'Zentraler Regelprozess des Lebens', headline_text_short => 'Zentraler Regelprozess des Lebens'),
                                               'OM:SpaLeb:Achtsamkeitsprozess:NeueAnthropologie' => array( headline_text => 'Neue Anthropologie'/*, headline_text_short => ''*/),
                                               'OM:SpaLeb:Achtsamkeitsprozess:KIundRobotik' => array( headline_text => 'Künstliche Intelligenz und Robotik', headline_text_short => 'Künstliche Intelligenz und Robotik'),
+                                              'OM:SpaLeb:Achtsamkeitsprozess:MystischeBedeutung' => array( headline_text => 'Mystische Bedeutung'/*, headline_text_short => 'XXX'*/),
                                             ),
                                      ),
                               'OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet' =>

@@ -862,12 +862,9 @@
                       array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:NeueAnthropologie', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'vis', text => array(
-                    'Aktuelle Fachdiskussion:',
-                    '• Lernen von Robotern und Kleinkindern: Roboter lernen am Besten, wenn sie die Vorhersagefehler minimieren. Theorie der prädiktiven Informationsverarbeitung (predictive proccessing). Ein rückgekoppeltes neuronales Netzwerk, wo die Differenz zwischen Vorhersage und deren realen Überprüfung als Fehlerdiffereznz wieder in die Verarbeitung der Informationsschichten eingespeist wird. Durch das Nachbilden des Lernens von Kleinkindern mit Robotern verstehen wir besser, wie Kleinkinder lernen, welche Probleme dabei auftreten können und wie wir diese vermeiden können.\\footnote{Vgl. \\cite{Kwon:SelbststaendigLernendeRoboter:2018}.}',
-                    '– Der Achtsamkeitsprozess scheint universal zu sein: Solche Roboter sind Kleinkindern scheinbar so ähnlich, dass für sie die gleichen Voraussetzungen gelten, wenn sie so wie Kleinkinder werden sollen. »›Wenn mich jemand fragt, ob ein Roboter wirklich Menschenähnlich werden kann, dann frage ich zurück, ob sich jemand um ihn, wie um ein echtes Kind kümmern würde. Wenn ja, dann ist das vielleicht realisierbar; wenn nein, dann kann sich ein Roboter unmöglich wie ein richtiges menschliches Kind entwickeln.‹«, S. 72.',
-                    '– Feynman sagt dazu: »›Was ich nicht erschaffen kann, verstehe ich nicht.‹« Jun Tani sagt dazu: »›Ich kann verstehen, was ich erschaffen kann.‹«, S. 72.',
-                    ))),*/
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '• Kybernetik einführen, siehe \\jump[https://de.wikipedia.org/w/index.php?title=Kybernetik&oldid=217706680]{}{https://de.wikipedia.org/w/index.php?title=Kybernetik&oldid=217706680}.',
+                    ))),
                       
                   array( 'text', array( text => array(
                     '\\hidden{\\name[description]{OM:SpaLeb:KIundRobotik}. }Menschenähnliche \\jump{OM:SpaLeb:KIundRobotik}{Künstliche Intelligenz und Robotik} sind nur über einen zentralen Regelprozess des (körperlichen) Lernens möglich, über eine Nachbildung des Achtsamkeitsprozesses.'."\n",
@@ -875,6 +872,35 @@
                     'nur auf diese Weise ein für Menschen akzeptables, weil vergleichbares, Modell ihrer Umwelt entwickeln können.'."\n".
                     'Es scheint, dass nur durch ein körperliches Modell der Welt die neuronalen Netzwerke Fähigkeiten lernen können, die den unseren vergleichbar sind.'."\n",
                       'Darüber hinaus hat die Künstliche Intelligenz und die Robotik ein \\jump{OM:SpaLeb:KIundRobotik}{Vertrauensproblem}, was mit der Unmöglichkeit der exakten Nachbildung des Achtsamkeitsprozesses zu tun hat, wie ich auf der dazugehörigen Seite erläutere.'."\n"))),
+            
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:MystischeBedeutung'),
+                    )),
+              )
+          ); ?>
+
+
+		    	<!  • Mystische Bedeutung  >
+          <?php $Sc_g_equation_auto_num = 0; ?>
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:SpaLeb:Achtsamkeitsprozess:MystischeBedeutung',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:KIundRobotik', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'vis', text => array(
+                    '• Der Achtsamkeitsprozess steht für den ›Phönix aus der Asche‹ als beständige Verwandlung der Dunkelheit in Licht, vom Dunklen (Mond, Asche) zum Hellen (Sonne, Flamme, Licht): 🌓 → 🌞',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
             
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz'),
