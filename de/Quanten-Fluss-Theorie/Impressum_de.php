@@ -224,6 +224,7 @@
             'OM:FrQFT:Impressum:CopyrightLizenz',
               '', 'Sc_f_Paragraph',
                 array(
+                      
                   array( 'headline', array( jump_name => 'OM:FrQFT:Impressum:CopyrightLizenz:Inhalt', text =>
                       
                 'Copyright des Inhalts')),
@@ -242,6 +243,7 @@
                   array( 'bulletlist', array( bullet_ary => array(
                         '\\jump{OM:FrQFT:Impressum:Beteiligung:GitHub}{GitHub / New-Soul-Of-Science-Project / New-Soul-Of-Science-Project-Web}',
                     ))),
+                      
                   array( 'headline', array( jump_name => 'OM:FrQFT:Impressum:CopyrightLizenz:OpenSansFont', text =>
                       
                 'Open Sans Font')),
@@ -257,6 +259,7 @@
                     '    \\jump[http://www.apache.org/licenses/LICENSE-2.0]{}{http://www.apache.org/licenses/LICENSE-2.0}'."\n"))),
                   array( 'text', array( text => array(
                     'Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.'."\n"))),
+                      
                   array( 'headline', array( jump_name => 'OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus', text =>
                       
                 'Eye of Horus')),
@@ -275,6 +278,19 @@
                     '    \\jump[https://en.wikipedia.org/wiki/de:Creative_Commons]{}{Creative Commons} Attribution-Share Alike'."\n"))),
                   // array( 'text', array( text => array(
                   //   'Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.'."\n"))),
+                      
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Impressum:CopyrightLizenz:BilboCalvez', text =>
+                      
+                'Bilbo Calvez')),
+                  array( 'text', array( text => array(
+                    'Danke liebe Bilbo, dass ich deine wunderschönen Bilder verwenden darf!'."\n"))),
+                  array( 'text', array( text => array(
+                    'Originale auf der Seite der Ausstellung „Publik – Privat“ von Bilbo Calvez: \\jump[https://www.bilbo.calvez.info/publik-privat]{}{https://www.bilbo.calvez.info/publik-privat}'."\n"))),
+                  array( 'text', array( text => array(
+                    '\\bold{Lizenz:}'."\n"))),
+                  array( 'text', array( text => array(
+                    'Mit freundlicher Genehmigung der Künstlerin.'."\n"))),
+                      
               )
           ); ?>
 

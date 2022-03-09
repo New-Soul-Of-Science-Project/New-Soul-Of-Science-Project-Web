@@ -24,15 +24,19 @@
                       
                   array( 'text', array( text => array(
                     'Seit ich meine App zur Gesichtsspiegelung geschrieben habe, angeregt durch ein \\jump{OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung:Kunst}{Gesprächsinterview von Bilbo Calves}'."\n".
-                    'über ihre Ausstellung \\jump[http://www.bilbo.calvez.info/publik_privat_GB/Infos_1.html]{}{PUBLIK - PRIVAT}, hat sich für mich nach und nach eine neue und spannende Welt des Verständnisses aufgetan.'."\n".
+                    'über ihre Ausstellung \\jump[https://www.bilbo.calvez.info/publik-privat]{}{PUBLIK - PRIVAT}, hat sich für mich nach und nach eine neue und spannende Welt des Verständnisses aufgetan.'."\n".
                     'Tatsächlich habe ich erst nachdem meine \\jump{OM:SpaLeb:Gesichtsausdruck:FaceYourFaceApp}{FaceYourFace App} fertig war ihren genauen, tiefen Zusammenhang mit dem hier beschriebenen ›Spannungsspiel des Lebens‹ erkannt.'."\n"))),
  
-                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '36px',
-                    array_merge( $SpaLeb_g_figure_ary_TomDoppelrechtesGesicht, array( name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppelrechtesGesicht',
-                                                         text => ($SpaLeb_g_figure_ary_TomDoppelrechtesGesicht[text]).' Die Denk- und Handlungsseite.')),
-                    array_merge( $SpaLeb_g_figure_ary_TomDoppellinkesGesicht, array( name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppellinkesGesicht',
-                                                         text => ($SpaLeb_g_figure_ary_TomDoppellinkesGesicht[text]).' Die Gefühlsseite.')),
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '0px',
+                    array_merge( $SpaLeb_g_figure_ary_KirstenBlockDoppellinkesGesicht, array( name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-KirstenBlockDoppelrechtesGesicht',
+                                                         /* text => 'XXX' */)),
+                    array_merge( $SpaLeb_g_figure_ary_KirstenBlockDoppelrechtesGesicht, array( name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-KirstenBlockDoppellinkesGesicht',
+                                                         /* text => 'XXX' */)),
                       )),
+                      
+                  array( 'notice', array( Display => 'invis', text => array(
+                    '• Weitere Beispiele von Bilbo einfügen. Originale auf der Seite der Ausstellung „Publik – Privat“ von Bilbo Calvez: \\jump[https://www.bilbo.calvez.info/publik-privat]{}{https://www.bilbo.calvez.info/publik-privat}',
+                    ))),
                       
                   array( 'text', array( text => array(
                     'Denn ohne meine Entdeckung des \\jump{*SpaLeb:Achtsamkeitsprozess-Implem}{Achtsamkeitsprozesses} als \\jump{OM:SpaLeb:Was-ist-Leben}{physikalische Grundlage des Lebens},'."\n".
@@ -91,7 +95,7 @@
                       'Es ist sicherlich kein Zufall, dass unser Gesicht ein so tiefblickender Informationsträger ist, der \\jump{OM:SpaLeb:Gesichtsausdruck:SozialeKomponente}{anderen Menschen etwas darüber erzählt},'."\n".
                     'wie es uns geht.'."\n".
                     'Das selbe gilt auch für unsere \\jump{OM:SpaLeb:Koerperspannung}{Körperhaltung} und unsere \\jump{OM:SpaLeb:Gesangstechnik}{Stimme}.'."\n",
-                      'Der Vergleich unserer beiden Gesichtshälften – am deutlichsten beim Vergleich unseres doppelrechten und doppellinken Gesichts (siehe \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppelrechtesGesicht} und \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppellinkesGesicht}) –'."\n".
+                      'Der Vergleich unserer beiden Gesichtshälften – am deutlichsten beim Vergleich unseres doppelrechten und doppellinken Gesichts (siehe \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-KirstenBlockDoppelrechtesGesicht} und \\jumpname{OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-KirstenBlockDoppellinkesGesicht}) –'."\n".
                     'kann uns sichtbar machen, wie gut der Gefühlspol und der Denk-/Handlungspol unseres Achtsamkeitsprozesses funktionieren.'."\n".
                     'Wir können zum Beispiel erahnen, wie gut beide Pole unserer Achtsamkeit in Balance sind.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
@@ -766,9 +770,9 @@
                   array( 'bulletlist', array( bullet_ary => array(
                         'Bilbo Calvez – Ausstellung – \\jump[http://www.bilbo.calvez.info/Fol_GB/facesoflove.html]{}{FACES OF LOVE}',
                         'KenFM – Gespräch – \\jump[https://tube.kenfm.de/w/2bf812df-2c6f-4688-86ac-377daeb4c129]{}{Ken Jebsen im Gespräch mit Bilbo Calvez}',
-                        'Bilbo Calvez – Ausstellung – \\jump[http://www.bilbo.calvez.info/publik_privat_GB/Infos_1.html]{}{PUBLIK - PRIVAT}',
+                        'Bilbo Calvez – Ausstellung – \\jump[https://www.bilbo.calvez.info/publik-privat]{}{PUBLIK - PRIVAT}',
                         'CamFM #12 – Interview – \\jump[https://www.youtube.com/watch?v=plKTY6MaJ08]{}{Ken Jebsen im Interview mit Bilbo Calvez und Herr von Grau – Face to face!}',
-                        'Bilbo Calvez – Ausstellung – \\jump[http://www.bilbo.calvez.info/asymmetrophobie.html]{}{ASYMMETROPHOBIE}',
+                        'Bilbo Calvez – Ausstellung – \\jump[http://calvez.info/bilbo/asymmetrophobie.html]{}{ASYMMETROPHOBIE}',
                     ))),
                       
                   array( 'jumplist', array(
@@ -787,6 +791,13 @@
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung', type => 'back'),
                     )),
+                      
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '36px',
+                    array_merge( $SpaLeb_g_figure_ary_TomDoppelrechtesGesicht, array( name => 'OM:SpaLeb:Gesichtsausdruck:FaceYourFaceApp:Fig-TomDoppelrechtesGesicht',
+                                                         text => ($SpaLeb_g_figure_ary_TomDoppelrechtesGesicht[text]).' Die Denk- und Handlungsseite.')),
+                    array_merge( $SpaLeb_g_figure_ary_TomDoppellinkesGesicht, array( name => 'OM:SpaLeb:Gesichtsausdruck:FaceYourFaceApp:Fig-TomDoppellinkesGesicht',
+                                                         text => ($SpaLeb_g_figure_ary_TomDoppellinkesGesicht[text]).' Die Gefühlsseite.')),
+                      )),
                       
                   array( 'text', array( text => array(
                     'Mit der \\jump[http://www.pjannto.com/de/FaceYourFaceApp/index.php]{}{FaceYourFace} iPhone und iPad App (im \\jump[https://itunes.apple.com/de/app/faceyourface/id1137963659?mt=8]{}{Apple AppStore}) kann man mit wenigen Handgriffen Gesichtsspiegelungen für mehrere Personen erstellen und als Bilder abspeichern oder versenden.'."\n".

@@ -521,6 +521,9 @@
                                                                   'Die sich jeweils gegenüberliegenden Gegenpole haben sich quasi im Zentrum des Rings getrennt und sich in die Entgegengesetzte Raumrichtung bewegt.'."\n".
                                                                   'Dabei greifen sie Raum oder Fläche, wie hier dargestellt.');
   
+  $NPYo_g_figure_ary_DunkelheitZuLicht     = array( fig_file_name => 'Naturphilosophie-Yoga/Phoenix-aus-der-Asche-v01', fig_alt_description => 'Phoenix aus der Asche', width => '660px', height => '600px', name => 'set local!',
+                                                         text => 'XXX');
+  
   $NPYo_g_figure_ary_LebenDesHorusAsklepiosstab  = array( fig_file_name => 'Naturphilosophie-Yoga/Leben-des-Horus-Asklepiosstab-v02', fig_alt_description => 'Leben des Horus mit Asklepiosstab', width => '660px', height => '600px', name => 'set local!',
                                                          text => 'Abbild des Lebens, das in vergleichbarer Form in altägyptischen Darstellungen zu finden ist. Hier in einer von mir modernisierten Variante mit Äskulap- oder Asklepiosstab, um einen Bezug zur heutigen Medizin, und auch zum Kundalini-Prozess des Tantra und Yoga, herzustellen. \\color{*Light}{\\small{Lizenz: \\jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}');
   
@@ -607,6 +610,11 @@
                                                                   'Niemand anders, außer wir selber, kann dies beurteilen.'."\n".
                                                                   'Daher ist es wichtig, dass wir unser Bewusstsein und unsere Achtsamkeit üben und die Filter unserer Wahrnehmung klug justieren.');
 
+  $SpaLeb_g_figure_ary_KirstenBlockDoppellinkesGesicht  = array( fig_file_name => 'Spannungsspiel-des-Lebens/BLOPL-clip', figFileType => 'jpeg', figPDF_is => false, fig_alt_description => 'Doppellinkes Gesicht von Kirsten Block', width => /* '615px' */'308px', height => /* '669px' */'335px', border => '1px', name => 'set local!',
+                                                         text => 'Doppellinkes Gesicht von Kirsten Block. Die Denk- und Handlungsseite. \\color{*Light}{\\small{Copyright: \\jumpname{OM:FrQFT:Impressum:CopyrightLizenz:BilboCalvez}}}');
+  $SpaLeb_g_figure_ary_KirstenBlockDoppelrechtesGesicht = array( fig_file_name => 'Spannungsspiel-des-Lebens/BLOCKR-clip', figFileType => 'jpeg', figPDF_is => false, fig_alt_description => 'Doppelrechtes Gesicht von Kirsten Block', width => /* '601px' */'301px', height => /* '670px' */'335px', border => '1px', name => 'set local!',
+                                                         text => 'Doppelrechtes Gesicht von Kirsten Block. Die Gefühlsseite. \\color{*Light}{\\small{Copyright: \\jumpname{OM:FrQFT:Impressum:CopyrightLizenz:BilboCalvez}}}');
+                                                                  
   $SpaLeb_g_figure_ary_KundaliniProzess        = array( fig_file_name => 'Spannungsspiel-des-Lebens/Kundalini-Prozess-v02', fig_alt_description => 'Der Kundalini-Prozess', width => '380px', height => '500px', name => 'set local!',
                                                          text => 'Der Kundalini-Prozess kommt nach dem Yoga Vidja Kundalini Portal aus dem Tantra des Hinduismus und ist auch in den tibetanischen Buddhismus eingegangen.'."\n".
                                                                   'Die Darstellung bringt diesen Prozess mit dem Achtsamkeitsprozess in Zusammenhang, mit dem er, je nach Perspektive, identisch oder ein Teil von ihm ist.');
@@ -798,6 +806,7 @@
                                                 'OM:FrQFT:Impressum:CopyrightLizenz:Inhalt' => array( headline_text => 'Copyright des Inhalts', headline_text_short => 'Copyright des Inhalts'),
                                                 'OM:FrQFT:Impressum:CopyrightLizenz:OpenSansFont' => array( headline_text => 'Open Sans Font', headline_text_short => 'Open Sans Font'),
                                                 'OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus' => array( headline_text => 'Eye of Horus', headline_text_short => 'Eye of Horus'),
+                                                'OM:FrQFT:Impressum:CopyrightLizenz:BilboCalvez' => array( headline_text => 'Bilbo Calvez'/* , headline_text_short => 'XXX' */),
                                             ),
                                      ),
 
@@ -2070,6 +2079,7 @@
                                                 'OM:NPYo:Stein-der-Weisen:Heiliger-Gral:Fig-Hexagramm' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                                                          
                                               'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche' => array( headline_text => 'Phönix aus der Asche'/*, headline_text_short => ''*/),
+                                                'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-DunkelheitZuLicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                                                 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-LebenDesHorusHermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                                             ),
                                      ),
@@ -2514,16 +2524,16 @@
                                        jump_ary => array(
                                               'OM:SpaLeb:Gesichtsausdruck:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                                          
-                                                'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppelrechtesGesicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                                                'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-TomDoppellinkesGesicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-KirstenBlockDoppelrechtesGesicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-KirstenBlockDoppellinkesGesicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-AchtsamkeitsprozessBewWiss' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-Achtsamkeitsprozess' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-Hermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-Kundalini-Prozess' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-Gefuehls-Handlungspol-Waage' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                                 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-AugeDesRa' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                                                'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-AugeDesHorus' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                                                'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-LebenDesHorusHermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-AugeDesHorus' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-LebenDesHorusHermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                                                          
                                               'OM:SpaLeb:Gesichtsausdruck:YogaTantra' => array( headline_text => 'Hatha Yoga und Tantra', headline_text_short => 'Hatha Yoga und Tantra'),
                                                          
@@ -2545,6 +2555,8 @@
                                                 'OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung:Kunst' => array( headline_text => 'Kunst', headline_text_short => 'Kunst'),
                                                          
                                               'OM:SpaLeb:Gesichtsausdruck:FaceYourFaceApp' => array( headline_text => 'FaceYourFace App \\small{\\color{*TitleAdd}{(Face Your Face App)}}', headline_text_short => 'FaceYourFace App'),
+                                                'OM:SpaLeb:Gesichtsausdruck:FaceYourFaceApp:Fig-TomDoppelrechtesGesicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                                                'OM:SpaLeb:Gesichtsausdruck:FaceYourFaceApp:Fig-TomDoppellinkesGesicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                             ),
                                      ),
                               'OM:SpaLeb:Gesundheit-Heilung' =>

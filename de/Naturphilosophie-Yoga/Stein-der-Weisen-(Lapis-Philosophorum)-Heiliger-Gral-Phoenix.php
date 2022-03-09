@@ -565,18 +565,28 @@
                       'Im Laufe der Jahre sind mir nach und nach einige weitere sehr tiefe Bezüge zu unserem Leben, unserer Kultur und Mythologie, zu altem Wissen, aufgegangen,'."\n".
                     'durch von mir neu erworbenes Wissen und besonders durch meine eigenen Erlebnisse und darin entstandenen Reflexionen in meinem intensiven Leben mit Lerngeschenken zur Persönlichkeitsentwicklung.'."\n",
                       'Ganz allgemein können wir in meinen Augen sagen, beim ›Phönix aus der Asche‹ geht es um die stetige Verwandlung von Dunkelheit in Licht,'."\n".
-                    'in kleinen und größeren Schritten in unserem Leben oder auch über mehrere Generationen hinweg.'."\n",
-                      'In unserem Leben bezieht sich dies auf die kleinsten Schritte des \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozesses}, wie ich habe Hunger und esse etwas leckeres –'."\n".
+                    'in kleinen und größeren Schritten in unserem Leben oder auch über mehrere Generationen hinweg.'."\n"))),
+                      
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
+                    array_merge( $NPYo_g_figure_ary_DunkelheitZuLicht, array( name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-DunkelheitZuLicht',
+                                                         /* text => 'XXX' */)),
+                      )),
+                      
+                  array( 'text', array( text => array(
+                    'In unserem Leben bezieht sich dies auf die kleinsten Schritte des \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozesses}, wie ich habe Hunger und esse etwas leckeres –'."\n".
                     'ich verwandle den Mangel in Befriedigung und Genuss.'."\n".
-                    'Oder auf größere Schritte unserer Persönlichkeitsentwicklung, in denen wir wichtige Dinge lernen und tiefere Probleme unseres Lebens lösen,'."\n".
+                    'Oder in Bezug auf größere Schritte unserer Persönlichkeitsentwicklung, in denen wir wichtige Dinge lernen und tiefere Probleme unseres Lebens lösen,'."\n".
                     'was auch aus dem Dunklen, Unwissenden, Unfähigen ins Licht führt.'."\n".
                     'Und beim Erwerb von Wissen aus dem dunklen Unbewussten ins helle Bewusste, dann abgespeichert im Unbewussten, wo es leicht wieder abgerufen werden kann.'."\n",
                       'Es beschreibt ebenso auch die Wintersonnenwende, also das Julfest oder Lichterfest, das wir auch Weihnachten oder Neujahr nennen,'."\n".
                     'wo wir am kürzesten und dunkelsten Tag des Jahres in innerer Einkehr und äußerer Feier Hoffnung und Perspektive für das kommende Jahr schöpfen –'."\n".
                     'dem Frühling und dem Sommer dann positiv entgegensehend.'."\n".
                     'Und hier verwandeln wir so auf mystische und mythologische Weise auch Dunkelheit in Licht.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                      
+                'Mythologien und Rituale', subline =>
+                  'Wintersonnenwende, altes Ägypten')),
                   array( 'text', array( text => array(
-                  '\\condb{Mythologien und Rituale}\\cond{ – Wintersonnenwende, altes Ägypten} \\\\'."\n".
                     'Mittwinter beziehungsweise die Mittwinternacht oder Wintersonnenwende, das Lichterfest, ist ein Fest, bei dem wir das Kommen'."\n".
                     'des nächsten Frühjahrs und Sommers feiern.'."\n",
                       'Im Norden ist es eine Zeit der Dunkelheit und früher war es hier oft eine Zeit der Entbehrung und auch der inneren Einkehr, des Reflektierens, des Planens.'."\n".
@@ -586,8 +596,16 @@
                     'Dort leuchten die Lichter des erworbenen Wissens und der Erfahrung des letzten Jahres die tiefe Dunkelheit des Winters aus, schenken uns Wärme und Geborgenheit'."\n".
                     'und künden uns von der erneuten Geburt des glücksbringenden Phönix des kommenden Neuen Jahres.'."\n".
                     'Die Geschenke des Julfestes zu Weihnachten sollen uns für das kommende Jahr zu lichten Gedanken und Ideen inspirieren.'."\n",
-                      'Das Leben des Horus (siehe \\jumpname{OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-LebenDesHorusHermesstab}) der altägyptischen Mythologie'."\n".
-                    'vollzieht sich gleich dem ›Phönix aus der Asche‹.'."\n".
+                      'Im Christentum finden wir das Lichterfest mit der Geburt von Jesus Christus in Verbindung gebracht.'."\n".
+                    'Auch in diesem Mythos geht es in meinen Augen darum, die Dunkelheit in Licht zu verwandeln.'."\n".
+                    'Christus Auferstehung möchte ich auch als einen Hinweis auf die Wiedergeburt in Bezug auf den Phönix aus der Asche verstehen.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      'Das Leben des Horus (siehe \\jumpname{OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-LebenDesHorusHermesstab}) der altägyptischen Mythologie,'."\n".
+                    'vermutlich die Vorlage für Christus, vollzieht sich gleich dem ›Phönix aus der Asche‹.'."\n".
                     'Er wird aus dem Ei der Metamorphose, dem Dreiviertelmond, geboren und seine Persönlichkeitsentwicklung steigt, wie die Kundalini-Schlangen,'."\n".
                     'aus seinem Schoß, ausbalanciert von Gefühl und Handlung des Ra- und des Horus-Auges, auf bis er in der Sonne der Weisheit verbrennt.'."\n",
                       'Der altägyptische Mythos von Benu\\color{*Bearb}{(Verweis)}, eines altägyptischen Totengottes, wurde teilweise als Tag und Nachtwechsel verstanden,'."\n".
@@ -599,16 +617,22 @@
                                                          text => $NPYo_g_text_LebenDesHorusHermesstab_Phoenix)),
                       )),
                       
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                      
+                'Altes Wissen', subline =>
+                  'Hermes Trismegistos')),
                   array( 'text', array( text => array(
-                  '\\condb{Altes Wissen}\\cond{ – Hermes Trismegistos} \\\\'."\n".
                     'Der Prozess des Phönix hat eine starke Verbindung zum ›löse und verbinde‹, ›solve et coagula‹, der Alchemie.'."\n".
                     'Hier ist der Entwicklungsprozess, die Verwandlung, aber nicht auf ein einziges Leben begrenzt, sondern wird auch Generationsübergreifend und gesellschaftlich betrachtet.'."\n".
                     'Aber natürlich können wir auch in unserem Leben wie der ›Phönix aus der Asche‹ neu entstehen.'."\n".
                     'XXX'."\n".
                     'XXX Hermes Trismegistos\\footnote{\\const{NPYo_g_footnote_text_HermesTrismegistos}}'."\n".
                     'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                      
+                'Neues Wissen', subline =>
+                  'Biophysik')),
                   array( 'text', array( text => array(
-                  '\\condb{Neues Wissen}\\cond{ – Biophysik} \\\\'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -617,15 +641,21 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                      
+                'Metamorphose in der Persönlichkeitsentwicklung', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Metamorphose in der Persönlichkeitsentwicklung} \\\\'."\n".
                     'Wenn wir aus einer „Niederlage“ wieder auf(er)stehen, dann erscheinen wir wie Phönix aus der Asche.'."\n".
                     'Gewandelt und gestärkt haben wir dazugelernt, wie neu geboren.'."\n",
                       'Es gibt den ›Phönix aus der Asche‹ also auch in der Persönlichkeitsentwicklung, innerhalb eines Lebens.'."\n".
                     'Hier als me­ta­mor­phische Verwandlung vom Ei bis zum ausgewachsenen Vogel.'."\n".
                     'Also geht es um die Prüfungen, die das Leben uns stellt, und ob wir diese bestehen (überleben), bis zur Fortpflanzung.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                      
+                'Metamorphose zwischen Generationen', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Metamorphose zwischen Generationen} \\\\'."\n".
                     'Die me­ta­mor­phische Verwandlung vom ausgewachsenen Vogel zum Ei hat beim Phönix offensichtlicher etwas mit ›löse und verbinde‹, ›solve et coagula‹, der Alchemie zu tun.'."\n".
                     'Die Veraschung des erwachsenen Phönix entspricht dem Vorgang der Kalzination\\color{*Bearb}{(Verweis)} der Alchemie (siehe \\jumpname{OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-LebenDesHorusHermesstab}).\\color{*Bearb}{(Verweis)}'."\n",
                       'Hier geht es um unsere Reinigung im Sinne von Läuterung und Reinheit – reinen Herzens sein oder werden –, ähnlich, wie im Fegefeuer.'."\n".
@@ -638,8 +668,11 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                      
+                'Mysterium der Ewigkeit über Generationen', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Mysterium der Ewigkeit über Generationen} \\\\'."\n".
                     'Die Auferstehung aus der Asche des Phönix steht für die Ewigkeit der Existenz des Lebens und der Welt.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -647,8 +680,11 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                      
+                'Symbol der Asche', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Symbol der Asche} \\\\'."\n".
                     'Asche steht für Vergänglichkeit, Reinigung und Fruchtbarkeit.'."\n".
                     'Weiter steht sie auch für Trauer, Buße oder Reue, und in diesem Sinne steht sie auch für die Anerkennung von Schuld, für Demut und Umkehr, wie in der Redewendung:'."\n".
                     '\\quote{Asche auf mein Haupt.}'."\n",
@@ -656,8 +692,11 @@
                     'Es muss sich etwas ganz grundlegendes verändern.'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                      
+                'Grundsätzliche Erneuerung und Auferstehung', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Grundsätzliche Erneuerung und Auferstehung} \\\\'."\n".
                     'Dieser Lernprozess und diese Persönlichkeitsentwicklung machen eine Erneuerung und deren Auferstehung erst möglich.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -665,8 +704,11 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                      
+                'XXX', subline =>
+                  'XXX')),
                   array( 'text', array( text => array(
-                  '\\condb{XXX} \\\\'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -674,8 +716,11 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                      
+                'Pflanzenwelt', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Pflanzenwelt} \\\\'."\n".
                     'Es gibt etliche Pflanzen, deren Samen Feuer brauchen, damit sie aus der Asche keimen können.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -683,8 +728,12 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                      
+                'Naturphilosophie', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Naturphilosophie} \\\\'."\n"))),
+                  'XXX'."\n"))),
                       
                   array( 'notice', array( Display => 'vis', text => array(
                     '• Eine Verbindung zur Naturphilosophie besteht in der Erkenntnis, dass der Samen, der Keim, des Lebens in der Grundstruktur der Natur angelegt ist.',
@@ -708,6 +757,10 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                      
+                'XXX', subline =>
+                  'XXX')),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
