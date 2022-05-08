@@ -252,7 +252,7 @@
                   array( 'text', array( text => array(
                     'Wir können nun zu Aussagen kommen, die etwas über die Größe von \\term{ω} verraten.'."\n".
                     'Ziehen wir eine beliebige endliche natürliche Zahl \\term{n} von \\term{ω} ab, ergibt sich niemals eine Zahl, die zur Menge'."\n".
-                    'der natürlichen Zahlen gehört:'."\n"))),
+                    'der endlichen natürlichen Zahlen gehört:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  *( \forall n \in \mathbb{N} *)  *[  \omega - n  \notin  \mathbb{N}  *]  }'),
