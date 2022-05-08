@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+			body { margin: 0; }
+		</style>
+	</head>
+	<body>
+    <script src="js/three.js"></script>
+<!--    <script src="js/OrbitControls.js"></script>-->
+    <script src="js/const.js"></script>
+<!--    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>-->
+		<script>
+      const eleWidth = 1000
+      const eleHeight = 600
+      const cameraFov = 10  // lower value reduces perspective distortion. but you have to scale your objects smaller then
+
+      const scene = new THREE.Scene();
+      scene.background = new THREE.Color( backgroundColor/* 0xf0f0f0 */ );
+      // const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+      const camera = new THREE.PerspectiveCamera( cameraFov, eleWidth / eleHeight, 1, 2000 );
+      // const camera = new THREE.OrthographicCamera( eleWidth / - 2, eleWidth / 2, eleHeight / 2, eleHeight / - 2, 1, 1000 );
+      camera.position.z = 7;
+                                                 
+      // const controls = new OrbitControls( camera, renderer.domElement );
+
+      const renderer = new THREE.WebGLRenderer( { antialias: true });
+      //%! renderer.antialias  = true;
+      renderer.shadowMap.enabled = true;
+      renderer.setSize( eleWidth, eleHeight );
+      document.body.appendChild( renderer.domElement );
+                                                 
+      var spotLight = new THREE.SpotLight( 0xffffff, 1.0 );
+      // var spotLight = new THREE.Light( 0xffffff, 1.0 );
+      spotLight.position.set( -4, 6, 10 );
+      spotLight.castShadow = true;
+      scene.add( spotLight );
+      // const spotLightHelper = new THREE.SpotLightHelper( spotLight );
+      // scene.add( spotLightHelper );
+                                                 
+      const pi2 = 2 * Math.PI;
+      const centerSphereRadius = 0.075;
+      const fractalWithTorus = true
+      // const fractalWithWqWqs = true
+      const sphereRadiusWithTorus = 0.015
+      const sphereRadiusWithoutTorus = 0.02 // 0.2
+      const sphereRadius = fractalWithTorus ? sphereRadiusWithTorus : sphereRadiusWithoutTorus;
+      const torusRadius = 0.125;
+      const coneSize = 1
+      const coneScale = 0.75 // 1.5
+      const coneSegments = 100
+      const coneCutOff = torusRadius * coneSize * coneScale * (fractalWithTorus ? 1 : 0)
+      const generalScale = 0.15
+                                                 
+      const movingSpaceGroup = new THREE.Group();
+      spotLight.target = movingSpaceGroup; // set spotLight target for spotLight
+      scene.add( movingSpaceGroup );
+      // const dphPathCylinderAxesHelper = new THREE.AxesHelper( 2 );
+      // movingSpaceGroup.add( dphPathCylinderAxesHelper );
+      // movingSpaceGroup.rotation.set( 0.1, -0.8, 0 )
+      movingSpaceGroup.rotation.set( 0, pi2 * -0.15, 0 )
+                                                 
+      const dphGroup = new THREE.Group();
+      movingSpaceGroup.add( dphGroup );
+      dphGroup.position.set( 0, 0, 0 )
+      // dphGroup.rotation.set( 0, -1, 0 )
+      // dphGroup.scale.set( 0.5, 0.5, 0.5 )
+      dphGroup.scale.set( generalScale, generalScale, generalScale )
+                   
+      // #: dphPathCylinder
+      const dphPathCylGeo = new THREE.CylinderGeometry( torusRadius * 0.25, torusRadius * 0.25, 0, 32, 25 )
+      const dphPathCylMat = new THREE.MeshLambertMaterial( {color: 0x00ff00} );
+      const dphPathCylinder = new THREE.Mesh( dphPathCylGeo, dphPathCylMat );
+      dphGroup.add( dphPathCylinder );
+      // dphPathCylinder.position.set( 0.5, 0, 0 )
+      dphPathCylinder.rotation.set( pi2 * 0.25, 0, 0 )
+      // dphPathCylinder.scale.set( 0, 0, 0 )
+
+      const dphCenterSphereGeo = new THREE.SphereGeometry( centerSphereRadius, 50, 50, 0, pi2, 0, pi2 );
+      const dphCenterSphereMat = new THREE.MeshLambertMaterial({
+        // color: 0xff3000,
+        color: blackColor,
+        // opacity: 0.5,
+        // transparent: true,
+      });
+      const dphCenterSphere = new THREE.Mesh( dphCenterSphereGeo, dphCenterSphereMat );
+      // sphere.receiveShadow = true;
+      // sphere.castShadow = true;
+      dphGroup.add( dphCenterSphere );
+      // const coneGroupAxesHelper = new THREE.AxesHelper( 2 );
+      // dphGroup.add( coneGroupAxesHelper );
+
+      let wqCount = 8
+      let wqGroups = []
+                                                 
+      function setWq() {
+        const wqGroup = new THREE.Group();
+        // wqGroup.rotation.set( pi2 * 0.125, 0, 0 )
+
+        // const wqGroupAxesHelper = new THREE.AxesHelper( 2 );
+        // wqGroup.add( wqGroupAxesHelper );
+        
+        // const sphereGeometry = new THREE.SphereGeometry( sphereRadius, 50, 50, 0, pi2, 0, pi2 );
+        const sphereGeometry = new THREE.SphereGeometry( sphereRadius, 50, 50, 0, pi2, 0, pi2 );
+        const sphereMaterial = new THREE.MeshLambertMaterial({
+          color: fractalWithTorus ? 0x000000 : 0xff3000,
+          // opacity: 0.5,
+          // transparent: true,
+        });
+        const sphere = new THREE.Mesh( sphereGeometry, sphereMaterial );
+        // sphere.receiveShadow = true;
+        // sphere.castShadow = true;
+        wqGroup.add( sphere );
+
+        if (fractalWithTorus) {
+          const torusGroup = new THREE.Group();
+          wqGroup.add( torusGroup );
+
+          const torusGeo = new THREE.TorusGeometry( torusRadius * coneScale, torusRadius * coneScale * 0.25, 16, 100 );
+          const torusMat = new THREE.MeshLambertMaterial({
+            color: 0xff3000,
+            // shininess: 100,
+            // opacity: 0.5,
+            // transparent: true,
+            side: THREE.DoubleSide,
+          });
+          const torus = new THREE.Mesh( torusGeo, torusMat );
+          // torus.scale.set( 0.5, 0.5, 0.5 )
+          // torus.position.set( 0, -coneCutOff, 0 )
+          torus.rotation.set( pi2 * 0.25, 0, 0 )
+          torusGroup.add( torus );
+        }
+
+        let coneGeo = null
+        const coneMat = new THREE.MeshLambertMaterial({
+          color: 0xe0e0e0,
+          // shininess: 100,
+          opacity: 0.9,
+          transparent: true,
+          side: THREE.DoubleSide,
+          // clippingPlanes: [ localPlane ],
+        });
+        if (fractalWithTorus) {
+          coneGeo = new THREE.CylinderGeometry( coneCutOff, coneSize, coneSize, coneSegments, 1, true );
+        } else {
+          coneGeo = new THREE.ConeGeometry( coneSize, coneSize, coneSegments, 1, true );
+        }
+        let cone = new THREE.Mesh( coneGeo, coneMat );
+        cone.scale.set( coneScale, coneScale, coneScale )
+        cone.position.set( 0, -0.5 * coneScale, 0 )
+        wqGroup.add( cone );
+
+        dphGroup.add( wqGroup );
+        wqGroups.push( wqGroup );
+      }
+                                                 
+      for ( let i = 0; i < wqCount; i++ ) {
+        setWq()
+      }
+
+                                                 
+      var clock = new THREE.Clock();
+      var time = 0;
+      var movingTime = 0;
+      var radius = 2;
+
+      renderer.setAnimationLoop(() => {
+        time = -( clock.getElapsedTime() * pi2 * 0.05 ) % 4,5;
+        movingTime = -time - 2;
+
+        dphGroup.position.set( 0, 0, movingTime * pi2 * 0.05 )
+        
+        dphPathCylinder.geometry.dispose()
+        dphPathCylinder.geometry = new THREE.CylinderGeometry( torusRadius * 0.25, torusRadius * 0.25, time * pi2 * 0.05, 32, 25 )
+        // dphPathCylinder.position.set( (time * pi2 * 0.05) * 0.5, 0, 0 )
+
+        wqGroups.forEach((wqGroup, ndx) => {
+          wqGroup.position.set(
+            Math.cos(-movingTime + pi2 / wqCount * ndx) * radius,
+            Math.sin(-movingTime + pi2 / wqCount * ndx) * radius,
+            0
+          )
+          // wqGroup.rotation.set( 0, 0, movingTime + pi2 / wqCount * ndx )
+          // wqGroup.rotation.set( pi2 * 0.125, 0, movingTime + pi2 / wqCount * ndx )
+          // let euler = new THREE.Euler( pi2 * 0.125, 0, movingTime + pi2 / wqCount * ndx, 'ZXY' )  // rotation axis order must be changed
+          let euler = new THREE.Euler( pi2 * 0.0, 0, -movingTime + pi2 / wqCount * ndx, 'ZXY' )  // rotation axis order must be changed
+          wqGroup.rotation.copy( euler )
+        })
+
+        renderer.render(scene, camera)
+      });
+    </script>
+	</body>
+</html>
