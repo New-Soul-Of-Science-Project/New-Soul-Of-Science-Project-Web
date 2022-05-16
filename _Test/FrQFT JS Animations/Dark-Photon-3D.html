@@ -8,30 +8,63 @@
 		</style>
 	</head>
 	<body>
-    <script src="js/three.js"></script>
-<!--    <script src="js/OrbitControls.js"></script>-->
+    <!-- older version <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script> -->
+    <!-- versions see: https://unpkg.com/browse/es-module-shims@1.5.4/ -->
+    <script async src="https://unpkg.com/es-module-shims@1.5.4/dist/es-module-shims.js"></script>
+
+    <!-- versions see: https://unpkg.com/browse/three@0.140.2/ -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.140.2/build/three.module.js"
+        }
+      }
+    </script>
+    <!-- as local module file, like I would prefer -->
+    <!-- !!! SyntaxError: Importing binding name 'TOUCH' is not found. -->
+    <!-- <script type="importmap">
+      {
+        "imports": {
+          "three": "./js/three.js/r140-0.140.2/three.module.js"
+        }
+      }
+    </script> -->
+
     <script src="js/const.js"></script>
-<!--    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>-->
-		<script>
+
+    <script type="module">
+
+      import * as THREE from 'three' // is needed as module with this name in deeper three.js structures
+      // import * as THREE from 'https://unpkg.com/three@0.140.2/build/three.module.js';
+
+			import { OrbitControls } from 'https://unpkg.com/three@0.140.2/examples/jsm/controls/OrbitControls.js';
+      // as local module file, like I would prefer
+      // !!! SyntaxError: Importing binding name 'TOUCH' is not found.
+			// import { OrbitControls } from './js/three.js/r140-0.140.2/examples/jsm/controls/OrbitControls.js';
+
       const eleWidth = 1000
       const eleHeight = 600
       const cameraFov = 10  // lower value reduces perspective distortion. but you have to scale your objects smaller then
 
       const scene = new THREE.Scene();
+
       scene.background = new THREE.Color( backgroundColor/* 0xf0f0f0 */ );
       // const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
       const camera = new THREE.PerspectiveCamera( cameraFov, eleWidth / eleHeight, 1, 2000 );
       // const camera = new THREE.OrthographicCamera( eleWidth / - 2, eleWidth / 2, eleHeight / 2, eleHeight / - 2, 1, 1000 );
-      camera.position.z = 7;
                                                  
-      // const controls = new OrbitControls( camera, renderer.domElement );
-
       const renderer = new THREE.WebGLRenderer( { antialias: true });
       //%! renderer.antialias  = true;
       renderer.shadowMap.enabled = true;
       renderer.setSize( eleWidth, eleHeight );
       document.body.appendChild( renderer.domElement );
                                                  
+      const controls = new OrbitControls( camera, renderer.domElement )
+
+      // controls.update() must be called after any manual changes to the camera's transform
+      camera.position.z = 7
+      controls.update()
+
       var spotLight = new THREE.SpotLight( 0xffffff, 1.0 );
       // var spotLight = new THREE.Light( 0xffffff, 1.0 );
       spotLight.position.set( -4, 6, 10 );
@@ -191,6 +224,7 @@
 
         renderer.render(scene, camera)
       });
+
     </script>
 	</body>
 </html>
