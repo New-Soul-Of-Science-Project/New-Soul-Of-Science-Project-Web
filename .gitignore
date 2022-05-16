@@ -1,7 +1,9 @@
+# Apple macOS folder attribute file
+.DS_Store
+
 $Vorlagen/
 Archivieren/
 
-.DS_Store
 /Aufgaben - NSOSP Web.txt
 /google70561a8ac6150b0f.html.txt
 /hello.php
