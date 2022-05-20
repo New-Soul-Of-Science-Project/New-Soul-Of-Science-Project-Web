@@ -149,6 +149,7 @@
       const screenMaterial = new THREE.MeshLambertMaterial( screenParamsMeshLambertMaterial )
 
       // Scene Basics
+      const centerDistance = 1
       const centerHeightPosition = plateHeight / 2
 
 
@@ -187,14 +188,14 @@
       senderPyramid.position.set( 0, 0, - (senderPyramidCylinderGeometryParamsObj.height / 2) )
       senderGroup.add( senderPyramid )
       // Sender Place
-      senderGroup.position.set( 0, centerHeightPosition, 1 + senderCorpusBoxGeometryParamsObj.dept / 2 )
+      senderGroup.position.set( 0, centerHeightPosition, centerDistance + senderCorpusBoxGeometryParamsObj.dept / 2 )
 
       /*--------------------
       Mian Mirror
       --------------------*/
       const mirrorMain = new THREE.Mesh( mirrorGeometry, mirrorMaterial )
       render.scene.add( mirrorMain )
-      mirrorMain.position.set( 0, centerHeightPosition, -1 )
+      mirrorMain.position.set( 0, centerHeightPosition, -centerDistance )
 
       /*--------------------
       Side Mirror
@@ -202,7 +203,7 @@
       const mirrorSide = new THREE.Mesh( mirrorGeometry, mirrorMaterial )
       render.scene.add( mirrorSide )
       mirrorSide.rotation.set( 0, pi2 / 4, 0)
-      mirrorSide.position.set( -1, centerHeightPosition, 0 )
+      mirrorSide.position.set( centerDistance, centerHeightPosition, 0 )
 
       /*--------------------
       Center Half Mirror
@@ -218,7 +219,7 @@
       const screenInterference = new THREE.Mesh( screenGeometry, screenMaterial )
       render.scene.add( screenInterference )
       screenInterference.rotation.set( 0, - (pi2 / 4), 0)
-      screenInterference.position.set( 1, centerHeightPosition, 0 )
+      screenInterference.position.set( -centerDistance, centerHeightPosition, 0 )
 
 
       /*--------------------
