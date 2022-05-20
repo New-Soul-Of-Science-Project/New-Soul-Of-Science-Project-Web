@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>My first three.js app</title>
-		<style>
-			body { margin: 0; }
-		</style>
-	</head>
-	<body>
-    <!-- older version <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script> -->
+  <head>
+    <meta charset="utf-8">
+    <title>Dark-Photon-3D – FrQFT</title>
+    <style>
+      body { margin: 0; }
+    </style>
+  </head>
+  <body>
+
+    <!-- *** Imports *** -->
+
+    <!-- Import maps polyfill -->
+    <!-- Remove this when import maps will be widely supported -->
+    <!-- old version <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script> -->
     <!-- versions see: https://unpkg.com/browse/es-module-shims@1.5.4/ -->
     <script async src="https://unpkg.com/es-module-shims@1.5.4/dist/es-module-shims.js"></script>
 
@@ -16,7 +21,9 @@
     <script type="importmap">
       {
         "imports": {
-          "three": "https://unpkg.com/three@0.140.2/build/three.module.js"
+          "three": "https://unpkg.com/three@0.140.2/build/three.module.js",
+          "const": "./js/const.js",
+          "render": "./js/render.js"
         }
       }
     </script>
@@ -30,50 +37,26 @@
       }
     </script> -->
 
-    <script src="js/const.js"></script>
-
     <script type="module">
 
       import * as THREE from 'three' // is needed as module with this name in deeper three.js structures
-      // import * as THREE from 'https://unpkg.com/three@0.140.2/build/three.module.js';
 
-			import { OrbitControls } from 'https://unpkg.com/three@0.140.2/examples/jsm/controls/OrbitControls.js';
-      // as local module file, like I would prefer
-      // !!! SyntaxError: Importing binding name 'TOUCH' is not found.
-			// import { OrbitControls } from './js/three.js/r140-0.140.2/examples/jsm/controls/OrbitControls.js';
+      import {
+        pi2,
+        blackColor,
+        eleWidth,
+        eleHeight,
+      } from 'const' // with 'es-module-shims.js' using the relative local path './js/const.js' gives an error: TypeError: Module name, './js/const.js' does not resolve to a valid URL.
+      import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render.js' gives an error: TypeError: Module name, './js/render.js' does not resolve to a valid URL.
 
-      const eleWidth = 1000
-      const eleHeight = 600
-      const cameraFov = 10  // lower value reduces perspective distortion. but you have to scale your objects smaller then
-
-      const scene = new THREE.Scene();
-
-      scene.background = new THREE.Color( backgroundColor/* 0xf0f0f0 */ );
-      // const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-      const camera = new THREE.PerspectiveCamera( cameraFov, eleWidth / eleHeight, 1, 2000 );
-      // const camera = new THREE.OrthographicCamera( eleWidth / - 2, eleWidth / 2, eleHeight / 2, eleHeight / - 2, 1, 1000 );
-                                                 
-      const renderer = new THREE.WebGLRenderer( { antialias: true });
-      //%! renderer.antialias  = true;
-      renderer.shadowMap.enabled = true;
-      renderer.setSize( eleWidth, eleHeight );
-      document.body.appendChild( renderer.domElement );
-                                                 
-      const controls = new OrbitControls( camera, renderer.domElement )
+      const render = new Render( eleWidth, eleHeight )
 
       // controls.update() must be called after any manual changes to the camera's transform
-      camera.position.z = 7
-      controls.update()
-
-      var spotLight = new THREE.SpotLight( 0xffffff, 1.0 );
-      // var spotLight = new THREE.Light( 0xffffff, 1.0 );
-      spotLight.position.set( -4, 6, 10 );
-      spotLight.castShadow = true;
-      scene.add( spotLight );
-      // const spotLightHelper = new THREE.SpotLightHelper( spotLight );
-      // scene.add( spotLightHelper );
+      render.camera.position.z = 7
+      render.controls.update()
                                                  
-      const pi2 = 2 * Math.PI;
+      render.spotLight.position.set( -4, 6, 10 )
+                                                 
       const centerSphereRadius = 0.075;
       const fractalWithTorus = true
       // const fractalWithWqWqs = true
@@ -88,8 +71,8 @@
       const generalScale = 0.15
                                                  
       const movingSpaceGroup = new THREE.Group();
-      spotLight.target = movingSpaceGroup; // set spotLight target for spotLight
-      scene.add( movingSpaceGroup );
+      render.spotLight.target = movingSpaceGroup; // set spotLight target for spotLight
+      render.scene.add( movingSpaceGroup );
       // const dphPathCylinderAxesHelper = new THREE.AxesHelper( 2 );
       // movingSpaceGroup.add( dphPathCylinderAxesHelper );
       // movingSpaceGroup.rotation.set( 0.1, -0.8, 0 )
@@ -194,13 +177,12 @@
       }
 
                                                  
-      var clock = new THREE.Clock();
       var time = 0;
       var movingTime = 0;
       var radius = 2;
 
-      renderer.setAnimationLoop(() => {
-        time = -( clock.getElapsedTime() * pi2 * 0.05 ) % 4,5;
+      render.renderer.setAnimationLoop(() => {
+        time = -( render.clock.getElapsedTime() * pi2 * 0.05 ) % 4,5;
         movingTime = -time - 2;
 
         dphGroup.position.set( 0, 0, movingTime * pi2 * 0.05 )
@@ -222,9 +204,9 @@
           wqGroup.rotation.copy( euler )
         })
 
-        renderer.render(scene, camera)
+        render.renderer.render( render.scene, render.camera )
       });
 
     </script>
-	</body>
+  </body>
 </html>
