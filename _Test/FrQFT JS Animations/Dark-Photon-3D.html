@@ -23,6 +23,7 @@
         "imports": {
           "three": "https://unpkg.com/three@0.140.2/build/three.module.js",
           "const": "./js/const.js",
+          "utilities": "./js/utilities.js",
           "render": "./js/render.js"
         }
       }
@@ -47,6 +48,7 @@
         eleWidth,
         eleHeight,
       } from 'const' // with 'es-module-shims.js' using the relative local path './js/const.js' gives an error: TypeError: Module name, './js/const.js' does not resolve to a valid URL.
+      import { objectValuesToArray } from 'utilities' // with 'es-module-shims.js' using the relative local path './js/utilities.js' gives an error: TypeError: Module name, './js/utilities.js' does not resolve to a valid URL.
       import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render.js' gives an error: TypeError: Module name, './js/render.js' does not resolve to a valid URL.
 
       const render = new Render( eleWidth, eleHeight )
@@ -70,6 +72,28 @@
       const coneCutOff = torusRadius * coneSize * coneScale * (fractalWithTorus ? 1 : 0)
       const generalScale = 0.15
                                                  
+      // Light, additional
+      const spotLightSecondParamsObj = {
+        color: 0xffffff,
+        intensity: 0.5,
+        // distance: Float,
+        // angle: Radians,
+        // penumbra: Float,
+        // decay: Float,
+      }
+      const spotLightSecondParams = objectValuesToArray(spotLightSecondParamsObj)
+      /*--------------------
+      Light, additional
+      --------------------*/
+      const spotLightSecond = new THREE.SpotLight( ...spotLightSecondParams )
+      spotLightSecond.castShadow = true
+      render.scene.add( spotLightSecond )
+      spotLightSecond.position.set( -4, -2, 0 )
+      // const spotLightSecondHelper = new THREE.SpotLightHelper( spotLightSecond )
+      // render.scene.add( spotLightSecondHelper )
+      // const spotLightHelper = new THREE.SpotLightHelper( render.spotLight )
+      // render.scene.add( spotLightHelper )
+
       const movingSpaceGroup = new THREE.Group();
       render.spotLight.target = movingSpaceGroup; // set spotLight target for spotLight
       render.scene.add( movingSpaceGroup );
