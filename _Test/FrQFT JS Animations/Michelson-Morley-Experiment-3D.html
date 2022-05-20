@@ -136,14 +136,15 @@
       const plateThickness = 0.025
       const plateWidth = 0.5
       const plateHeight = 0.25
-      const plateBoxGeometryParams = objectValuesToArray({
+      const plateBoxGeometryParamsObj = {
         width: plateWidth,
         height: plateHeight,
         dept: plateThickness,
         // widthSegments: Integer,
         // heightSegments: Integer,
         // depthSegments: Integer,
-      })
+      }
+      const plateBoxGeometryParams = objectValuesToArray( plateBoxGeometryParamsObj )
 
       // Mirrors
       const mirrorBoxColor = 0xe0e0e0
@@ -155,6 +156,12 @@
       //   opacity: 0.5,
       //   transparent: true,
       // })
+      const mirrorHalfGeometryParamsObj = {
+        ...plateBoxGeometryParamsObj,
+        dept: plateBoxGeometryParamsObj.dept / 2,
+      }
+      const mirrorHalfGeometryParams = objectValuesToArray( mirrorHalfGeometryParamsObj )
+      const mirrorHalfGeometry = new THREE.BoxGeometry( ...mirrorHalfGeometryParams )
       const mirrorHalfMeshPhysicalMaterialParams = {
         color: mirrorBoxColor,
         // opacity: 0.5,
@@ -193,6 +200,28 @@
       const screenGeometry = new THREE.BoxGeometry( ...plateBoxGeometryParams )
       const screenParamsMeshLambertMaterial = { color: screenColor, side: THREE.DoubleSide }
       const screenMaterial = new THREE.MeshLambertMaterial( screenParamsMeshLambertMaterial )
+
+      // Laser
+      const laserGeometryFactor = 0.1
+      const laserCylinderGeometryParamsObj = {
+        radiusTop: 0.125 * laserGeometryFactor,
+        radiusBottom: 0.125 * laserGeometryFactor,
+        height: 1 * laserGeometryFactor,
+        radialSegments: 40,
+        heightSegments: 1,
+        // openEnded: true,
+        // thetaStart: Float,
+        // thetaLength: Float,
+      }
+      const laserCylinderGeometryParams = objectValuesToArray(laserCylinderGeometryParamsObj)
+      const laserGeometry = new THREE.CylinderGeometry( ...laserCylinderGeometryParams )
+      const laserMeshLambertMaterialParams = {
+        color: 0x00ff00,
+        opacity: 0.5,
+        transparent: true,
+        // side: THREE.DoubleSide
+      }
+      const laserMaterial = new THREE.MeshLambertMaterial( laserMeshLambertMaterialParams )
 
       // Scene Basics
       const centerDistance = 1
@@ -249,6 +278,7 @@
       /*--------------------
       Sender
       --------------------*/
+      // Group
       const senderGroup = new THREE.Group()
       render.scene.add( senderGroup )
       // Corpus
@@ -289,9 +319,9 @@
       mirrorSide.position.set( centerDistance, centerHeightPosition, 0 )
 
       /*--------------------
-      Center Half Mirror
+      Half Mirror
       --------------------*/
-      const mirrorCenter = new THREE.Mesh( mirrorBoxGeometry, mirrorHalfMaterial )
+      const mirrorCenter = new THREE.Mesh( mirrorHalfGeometry, mirrorHalfMaterial )
       render.scene.add( mirrorCenter )
       mirrorCenter.rotation.set( 0, pi2 / 8, 0)
       mirrorCenter.position.set( 0, centerHeightPosition, 0 )
@@ -304,35 +334,24 @@
       screenInterference.rotation.set( 0, - (pi2 / 4), 0)
       screenInterference.position.set( -centerDistance, centerHeightPosition, 0 )
 
+      /*--------------------
+      Laser
+      --------------------*/
+      const laserInterference = new THREE.Mesh( laserGeometry, laserMaterial )
+      render.scene.add( laserInterference )
+      laserInterference.rotation.set( pi2 / 4, 0, 0)
+      laserInterference.position.set( 0, centerHeightPosition, centerDistance )
+
 
       /*--------------------
       Animation
       --------------------*/
       var time = 0
-      var movingTime = 0
 
       render.renderer.setAnimationLoop(() => {
-        time = -( render.clock.getElapsedTime() * pi2 * 0.05 ) % 4,5
-        movingTime = -time - 2
+        time = ( render.clock.getElapsedTime() * 1 ) % 2
 
-        // dphGroup.position.set( 0, 0, movingTime * pi2 * 0.05 )
-        
-        // dphPathCylinder.geometry.dispose()
-        // dphPathCylinder.geometry = new THREE.CylinderGeometry( torusRadius * 0.25, torusRadius * 0.25, time * pi2 * 0.05, 32, 25 )
-        // // dphPathCylinder.position.set( (time * pi2 * 0.05) * 0.5, 0, 0 )
-
-        // wqGroups.forEach((wqGroup, ndx) => {
-        //   wqGroup.position.set(
-        //     Math.cos(-movingTime + pi2 / wqCount * ndx) * radius,
-        //     Math.sin(-movingTime + pi2 / wqCount * ndx) * radius,
-        //     0
-        //   )
-        //   // wqGroup.rotation.set( 0, 0, movingTime + pi2 / wqCount * ndx )
-        //   // wqGroup.rotation.set( pi2 * 0.125, 0, movingTime + pi2 / wqCount * ndx )
-        //   // let euler = new THREE.Euler( pi2 * 0.125, 0, movingTime + pi2 / wqCount * ndx, 'ZXY' )  // rotation axis order must be changed
-        //   let euler = new THREE.Euler( pi2 * 0.0, 0, -movingTime + pi2 / wqCount * ndx, 'ZXY' )  // rotation axis order must be changed
-        //   wqGroup.rotation.copy( euler )
-        // })
+        laserInterference.position.set( 0, centerHeightPosition, centerDistance - time )
 
         render.renderer.render( render.scene, render.camera )
       })
