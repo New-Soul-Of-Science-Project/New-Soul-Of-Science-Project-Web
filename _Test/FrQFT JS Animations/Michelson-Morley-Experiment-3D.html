@@ -72,7 +72,8 @@
       render.camera.position.set( 3, 2, 7 )
       render.controls.update()
                                                  
-      render.spotLight.position.set( 4, 6, 10 )
+      // render.spotLight.position.set( 4, 6, 10 )
+      render.spotLight.position.set( 4, 2, 0 )
                                                  
       /*--------------------
       Consts Local
@@ -93,8 +94,21 @@
       const senderGeometryFactor = 0.25
       const senderColor = 0x2050ff
       const senderCorpusSize = 0.5
-      const senderMeshLambertMaterial = { color: senderColor, side: THREE.DoubleSide }
-      const senderMaterial = new THREE.MeshLambertMaterial( senderMeshLambertMaterial )
+      // const senderMeshLambertMaterialParams = { color: senderColor, side: THREE.DoubleSide }
+      // const senderMaterial = new THREE.MeshLambertMaterial( senderMeshLambertMaterialParams )
+      const senderMeshPhysicalMaterialParams = {
+        color: senderColor,
+        // opacity: 0.5,
+        // transparent: true,
+        emissive: 0x000000,
+        metalness: 0.7,
+        flatShading: false,
+        roughness: 0.7,
+        // envMap: textureCube,
+        reflectivity: 1,
+        side: THREE.DoubleSide,
+      }
+      const senderMaterial = new THREE.MeshPhysicalMaterial( senderMeshPhysicalMaterialParams )
       const senderCorpusBoxGeometryParamsObj = {
         width: senderCorpusSize * senderGeometryFactor,
         height: senderCorpusSize * senderGeometryFactor,
@@ -132,15 +146,47 @@
       })
 
       // Mirrors
-      const mirrorColor = 0xe0e0e0
-      const mirrorGeometry = new THREE.BoxGeometry( ...plateBoxGeometryParams )
-      const mirrorParamsMeshLambertMaterial = { color: mirrorColor, side: THREE.DoubleSide }
-      const mirrorMaterial = new THREE.MeshLambertMaterial( mirrorParamsMeshLambertMaterial )
-      const mirrorHalfMaterial = new THREE.MeshLambertMaterial({
-        ...mirrorParamsMeshLambertMaterial,
+      const mirrorBoxColor = 0xe0e0e0
+      const mirrorBoxGeometry = new THREE.BoxGeometry( ...plateBoxGeometryParams )
+      const mirrorBoxMeshLambertMaterialParams = { color: mirrorBoxColor, side: THREE.DoubleSide }
+      const mirrorMaterial = new THREE.MeshLambertMaterial( mirrorBoxMeshLambertMaterialParams )
+      // const mirrorHalfMaterial = new THREE.MeshLambertMaterial({
+      //   ...mirrorBoxMeshLambertMaterialParams,
+      //   opacity: 0.5,
+      //   transparent: true,
+      // })
+      const mirrorHalfMeshPhysicalMaterialParams = {
+        color: mirrorBoxColor,
+        // opacity: 0.5,
+        // transparent: true,
+        emissive: 0x000000,
+        metalness: 0.7,
+        flatShading: false,
+        roughness: 0.5,
+        // envMap: textureCube,
+        reflectivity: 1,
+        side: THREE.DoubleSide,
+      }
+      const mirrorHalfMaterial = new THREE.MeshPhysicalMaterial({
+        ...mirrorHalfMeshPhysicalMaterialParams,
         opacity: 0.5,
         transparent: true,
       })
+      const mirrorPlaneGeometryParams = objectValuesToArray({
+        width: plateWidth,
+        height: plateHeight,
+        // widthSegments: Integer,
+        // heightSegments: Integer,
+      })
+      const mirrorPlaneGeometry = new THREE.PlaneGeometry( ...mirrorPlaneGeometryParams )
+      // const mirrorPlaneMaterial = new THREE.MeshLambertMaterial({ color: 0xff0000, side: THREE.DoubleSide })
+      const mirrorPlaneMeshPhysicalMaterialParams = {
+        ...mirrorHalfMeshPhysicalMaterialParams,
+        // color: 0xffd700,
+        color: 0xffff00,
+        side: THREE.FrontSide,
+      }
+      const mirrorPlaneMaterial = new THREE.MeshPhysicalMaterial( mirrorPlaneMeshPhysicalMaterialParams )
 
       // Screen
       const screenColor = 0xffffff
@@ -154,12 +200,38 @@
 
 
       /*--------------------
+      Functions Local
+      --------------------*/
+      const mirrorCreate = (params) => {
+        // params: {
+        //   withMirrorPlane: Boolean, required
+        //   mirrorBoxMaterial: Object, required
+        //   mirrorPlaneMaterial: Object, required
+        // }
+        let mirror = null
+        const mirrorBox = new THREE.Mesh( mirrorBoxGeometry, params.mirrorBoxMaterial )
+        if (params.withMirrorPlane) {
+          mirror = new THREE.Group()
+          mirror.add( mirrorBox )
+          const mirrorPlate = new THREE.Mesh( mirrorPlaneGeometry, params.mirrorPlaneMaterial )
+          mirrorPlate.rotation.set( 0, pi2 / 2, 0)
+          mirrorPlate.position.set( 0, 0, - (plateThickness / 2 + 0.001) )
+          mirror.add( mirrorPlate )
+        } else {
+          mirror = mirrorBox
+        }
+        return mirror
+      }
+       
+
+      /*--------------------
       Light, additional
       --------------------*/
       const spotLightSecond = new THREE.SpotLight( ...spotLightSecondParams )
       spotLightSecond.castShadow = true
       render.scene.add( spotLightSecond )
-      spotLightSecond.position.set( -4, -2, 0 )
+      // spotLightSecond.position.set( -4, -2, 10 )
+      spotLightSecond.position.set( -4, -1, 2 )
       // const spotLightSecondHelper = new THREE.SpotLightHelper( spotLightSecond )
       // render.scene.add( spotLightSecondHelper )
       // const spotLightHelper = new THREE.SpotLightHelper( render.spotLight )
@@ -193,14 +265,25 @@
       /*--------------------
       Mian Mirror
       --------------------*/
-      const mirrorMain = new THREE.Mesh( mirrorGeometry, mirrorMaterial )
+      // const mirrorMain = new THREE.Mesh( mirrorBoxGeometry, mirrorMaterial )
+      const mirrorMain = mirrorCreate({
+        withMirrorPlane: true,
+        mirrorBoxMaterial: mirrorMaterial,
+        mirrorPlaneMaterial: mirrorPlaneMaterial,
+      })
       render.scene.add( mirrorMain )
+      mirrorMain.rotation.set( 0, pi2 / 2, 0)
       mirrorMain.position.set( 0, centerHeightPosition, -centerDistance )
 
       /*--------------------
       Side Mirror
       --------------------*/
-      const mirrorSide = new THREE.Mesh( mirrorGeometry, mirrorMaterial )
+      // const mirrorSide = new THREE.Mesh( mirrorBoxGeometry, mirrorMaterial )
+      const mirrorSide = mirrorCreate({
+        withMirrorPlane: true,
+        mirrorBoxMaterial: mirrorMaterial,
+        mirrorPlaneMaterial: mirrorPlaneMaterial,
+      })
       render.scene.add( mirrorSide )
       mirrorSide.rotation.set( 0, pi2 / 4, 0)
       mirrorSide.position.set( centerDistance, centerHeightPosition, 0 )
@@ -208,7 +291,7 @@
       /*--------------------
       Center Half Mirror
       --------------------*/
-      const mirrorCenter = new THREE.Mesh( mirrorGeometry, mirrorHalfMaterial )
+      const mirrorCenter = new THREE.Mesh( mirrorBoxGeometry, mirrorHalfMaterial )
       render.scene.add( mirrorCenter )
       mirrorCenter.rotation.set( 0, pi2 / 8, 0)
       mirrorCenter.position.set( 0, centerHeightPosition, 0 )
