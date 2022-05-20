@@ -9,6 +9,8 @@ import {
   cameraFov,
 } from 'const' // with 'es-module-shims.js' using the relative local path './js/const.js' gives an error: TypeError: Module name, './js/const.js' does not resolve to a valid URL.
 
+import { objectValuesToArray } from 'utilities' // with 'es-module-shims.js' using the relative local path './js/utilities.js' gives an error: TypeError: Module name, './js/utilities.js' does not resolve to a valid URL.
+
 export class Render {
   constructor(width, height)
   {
@@ -42,12 +44,20 @@ export class Render {
     /*--------------------
     Light
     --------------------*/
-    this.spotLight = new THREE.SpotLight( 0xffffff, 1.0 )
-    // var spotLight = new THREE.Light( 0xffffff, 1.0 )
-    this.spotLight.castShadow = true;
-    this.scene.add( this.spotLight );
-    // const spotLightHelper = new THREE.SpotLightHelper( spotLight );
-    // scene.add( spotLightHelper );
+		this.spotLightParamsObj = {
+			color: 0xffffff,
+			intensity: 1.0,
+			// distance: Float,
+			// angle: Radians,
+			// penumbra: Float,
+			// decay: Float,
+		}
+		this.spotLightParams = objectValuesToArray(this.spotLightParamsObj)
+    this.spotLight = new THREE.SpotLight( ...this.spotLightParams )
+    this.spotLight.castShadow = true
+    this.scene.add( this.spotLight )
+    // this.spotLightHelper = new THREE.SpotLightHelper( this.spotLight )
+    // this.scene.add( this.spotLightHelper )
 
     /*--------------------
     Controls
