@@ -23,6 +23,7 @@
         "imports": {
           "three": "https://unpkg.com/three@0.140.2/build/three.module.js",
           "const": "./js/const.js",
+          "utilities": "./js/utilities.js",
           "render": "./js/render.js"
         }
       }
@@ -47,6 +48,7 @@
         eleWidth,
         eleHeight,
       } from 'const' // with 'es-module-shims.js' using the relative local path './js/const.js' gives an error: TypeError: Module name, './js/const.js' does not resolve to a valid URL.
+      import { objectValuesToArray } from 'utilities' // with 'es-module-shims.js' using the relative local path './js/utilities.js' gives an error: TypeError: Module name, './js/utilities.js' does not resolve to a valid URL.
       import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render.js' gives an error: TypeError: Module name, './js/render.js' does not resolve to a valid URL.
 
 
@@ -73,20 +75,94 @@
       render.spotLight.position.set( 4, 6, 10 )
                                                  
       /*--------------------
-      Const Local
+      Consts Local
       --------------------*/
-      const mirrorThickness = 0.025
-      const mirrorWidth = 0.5
-      const mirrorHeight = 0.25
+
+      // Light, additional
+      const spotLightSecondParamsObj = {
+        color: 0xffffff,
+        intensity: 0.5,
+        // distance: Float,
+        // angle: Radians,
+        // penumbra: Float,
+        // decay: Float,
+      }
+      const spotLightSecondParams = objectValuesToArray(spotLightSecondParamsObj)
+
+      // Sender
+      const senderGeometryFactor = 0.25
+      const senderColor = 0x2050ff
+      const senderCorpusSize = 0.5
+      const senderMeshLambertMaterial = { color: senderColor, side: THREE.DoubleSide }
+      const senderMaterial = new THREE.MeshLambertMaterial( senderMeshLambertMaterial )
+      const senderCorpusBoxGeometryParamsObj = {
+        width: senderCorpusSize * senderGeometryFactor,
+        height: senderCorpusSize * senderGeometryFactor,
+        dept: senderCorpusSize * senderGeometryFactor,
+        // widthSegments: Integer,
+        // heightSegments: Integer,
+        // depthSegments: Integer,
+      }
+      const senderCorpusBoxGeometryParams = objectValuesToArray(senderCorpusBoxGeometryParamsObj)
+      const senderCorpusGeometry = new THREE.BoxGeometry( ...senderCorpusBoxGeometryParams )
+      const senderPyramidCylinderGeometryParamsObj = {
+        radiusTop: 0.25 * senderGeometryFactor,
+        radiusBottom: 0.5 * senderGeometryFactor,
+        height: 1 * senderGeometryFactor,
+        radialSegments: 4,
+        heightSegments: 1,
+        openEnded: true,
+        // thetaStart: Float,
+        // thetaLength: Float,
+      }
+      const senderPyramidCylinderGeometryParams = objectValuesToArray(senderPyramidCylinderGeometryParamsObj)
+      const senderPyramidGeometry = new THREE.CylinderGeometry( ...senderPyramidCylinderGeometryParams )
+
+      // Plates
+      const plateThickness = 0.025
+      const plateWidth = 0.5
+      const plateHeight = 0.25
+      const plateBoxGeometryParams = objectValuesToArray({
+        width: plateWidth,
+        height: plateHeight,
+        dept: plateThickness,
+        // widthSegments: Integer,
+        // heightSegments: Integer,
+        // depthSegments: Integer,
+      })
+
+      // Mirrors
       const mirrorColor = 0xe0e0e0
-      const mirrorGeometry = new THREE.BoxGeometry( mirrorWidth, mirrorHeight, mirrorThickness )
-      const mirrorMaterial = new THREE.MeshLambertMaterial({ color: mirrorColor })
+      const mirrorGeometry = new THREE.BoxGeometry( ...plateBoxGeometryParams )
+      const mirrorParamsMeshLambertMaterial = { color: mirrorColor, side: THREE.DoubleSide }
+      const mirrorMaterial = new THREE.MeshLambertMaterial( mirrorParamsMeshLambertMaterial )
       const mirrorHalfMaterial = new THREE.MeshLambertMaterial({
-        color: mirrorColor,
+        ...mirrorParamsMeshLambertMaterial,
         opacity: 0.5,
         transparent: true,
-        // side: THREE.DoubleSide,
       })
+
+      // Screen
+      const screenColor = 0xffffff
+      const screenGeometry = new THREE.BoxGeometry( ...plateBoxGeometryParams )
+      const screenParamsMeshLambertMaterial = { color: screenColor, side: THREE.DoubleSide }
+      const screenMaterial = new THREE.MeshLambertMaterial( screenParamsMeshLambertMaterial )
+
+      // Scene Basics
+      const centerHeightPosition = plateHeight / 2
+
+
+      /*--------------------
+      Light, additional
+      --------------------*/
+      const spotLightSecond = new THREE.SpotLight( ...spotLightSecondParams )
+      spotLightSecond.castShadow = true
+      render.scene.add( spotLightSecond )
+      spotLightSecond.position.set( -4, -2, 0 )
+      // const spotLightSecondHelper = new THREE.SpotLightHelper( spotLightSecond )
+      // render.scene.add( spotLightSecondHelper )
+      // const spotLightHelper = new THREE.SpotLightHelper( render.spotLight )
+      // render.scene.add( spotLightHelper )
 
       /*--------------------
       Grid
@@ -98,11 +174,27 @@
       render.scene.add( gridHelper )
 
       /*--------------------
+      Sender
+      --------------------*/
+      const senderGroup = new THREE.Group()
+      render.scene.add( senderGroup )
+      // Corpus
+      const senderCorpus = new THREE.Mesh( senderCorpusGeometry, senderMaterial )
+      senderGroup.add( senderCorpus )
+      // Pyramid
+      const senderPyramid = new THREE.Mesh( senderPyramidGeometry, senderMaterial )
+      senderPyramid.rotation.set( pi2 / 4, pi2 / 8, 0)
+      senderPyramid.position.set( 0, 0, - (senderPyramidCylinderGeometryParamsObj.height / 2) )
+      senderGroup.add( senderPyramid )
+      // Sender Place
+      senderGroup.position.set( 0, centerHeightPosition, 1 + senderCorpusBoxGeometryParamsObj.dept / 2 )
+
+      /*--------------------
       Mian Mirror
       --------------------*/
       const mirrorMain = new THREE.Mesh( mirrorGeometry, mirrorMaterial )
       render.scene.add( mirrorMain )
-      mirrorMain.position.set( 0, mirrorHeight / 2, -1 )
+      mirrorMain.position.set( 0, centerHeightPosition, -1 )
 
       /*--------------------
       Side Mirror
@@ -110,7 +202,7 @@
       const mirrorSide = new THREE.Mesh( mirrorGeometry, mirrorMaterial )
       render.scene.add( mirrorSide )
       mirrorSide.rotation.set( 0, pi2 / 4, 0)
-      mirrorSide.position.set( -1, mirrorHeight / 2, 0 )
+      mirrorSide.position.set( -1, centerHeightPosition, 0 )
 
       /*--------------------
       Center Half Mirror
@@ -118,18 +210,26 @@
       const mirrorCenter = new THREE.Mesh( mirrorGeometry, mirrorHalfMaterial )
       render.scene.add( mirrorCenter )
       mirrorCenter.rotation.set( 0, pi2 / 8, 0)
-      mirrorCenter.position.set( 0, mirrorHeight / 2, 0 )
+      mirrorCenter.position.set( 0, centerHeightPosition, 0 )
+
+      /*--------------------
+      Screen For Interference
+      --------------------*/
+      const screenInterference = new THREE.Mesh( screenGeometry, screenMaterial )
+      render.scene.add( screenInterference )
+      screenInterference.rotation.set( 0, - (pi2 / 4), 0)
+      screenInterference.position.set( 1, centerHeightPosition, 0 )
 
 
       /*--------------------
       Animation
       --------------------*/
-      var time = 0;
-      var movingTime = 0;
+      var time = 0
+      var movingTime = 0
 
       render.renderer.setAnimationLoop(() => {
-        time = -( render.clock.getElapsedTime() * pi2 * 0.05 ) % 4,5;
-        movingTime = -time - 2;
+        time = -( render.clock.getElapsedTime() * pi2 * 0.05 ) % 4,5
+        movingTime = -time - 2
 
         // dphGroup.position.set( 0, 0, movingTime * pi2 * 0.05 )
         
@@ -151,7 +251,7 @@
         // })
 
         render.renderer.render( render.scene, render.camera )
-      });
+      })
 
     </script>
   </body>
