@@ -199,12 +199,14 @@
       /*--------
       Laser */
       const laserAnimated = true
-      const laserPartsCount = 9
+      const laserColor = 0x00ff00
+      const laserOpacity = 0.5
+      const laserDiscsInside = false
+      const laserPartsCount = 41
       const laserGeometryFactor = 0.125 * 0.1
       const laserCylinderGeometryParamsObj = {
         radiusTop: 1 * laserGeometryFactor,
         radiusBottom: 1 * laserGeometryFactor,
-        // height: 8 * laserGeometryFactor,
         height: (8 * laserGeometryFactor) / laserPartsCount,
         radialSegments: 40,
         heightSegments: 1,
@@ -215,14 +217,14 @@
       const laserCylinderGeometryParams = objectValuesToArray(laserCylinderGeometryParamsObj)
       const laserGeometry = new THREE.CylinderGeometry( ...laserCylinderGeometryParams )
       const laserMeshLambertMaterialParams = {
-        color: 0x00ff00,
-        opacity: 0.5,
+        color: laserColor,
+        opacity: laserOpacity,
         transparent: true,
         side: THREE.DoubleSide
       }
       const laserClearMeshLambertMaterialParams = {
         ...laserMeshLambertMaterialParams,
-        opacity: 0.0,
+        opacity: !laserDiscsInside ? 0.0 : laserOpacity,
         transparent: true
       }
       const laserClosedTopMaterialsParams = [
@@ -447,11 +449,15 @@
       }
       /*--------
       Parts */
-      const laserPartsOpacities = [0.1, 0.2, 0.5, 0.8, 1, 0.8, 0.5, 0.2, 0.1]
+      const laserPartsOpacity = (partIndex, partsCount) => {
+        // ???: use Gauß'sche Normalverteilung?
+        return Math.sin( Math.PI * (partIndex / (partsCount - 1)) )
+      }
       const laserPushMaterialByOpacityAry = (laserMaterials, materialParams, indexPart) => {
         laserMaterials.push( new THREE.MeshLambertMaterial(
-          { ...materialParams, opacity: materialParams.opacity * laserPartsOpacities[indexPart] }
-      ))}
+          { ...materialParams, opacity: materialParams.opacity * laserPartsOpacity( indexPart, laserPartsCount ) }
+        ))
+      }
       const laserParts = []
       for (let index = 0; index < laserPartsCount; index++) {
         let laserMaterials = []
