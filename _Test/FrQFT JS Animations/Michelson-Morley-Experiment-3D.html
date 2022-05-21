@@ -79,7 +79,7 @@
       Consts Local
       --------------------*/
 
-      /* ----
+      /*--------
       Light, additional */
       const spotLightSecondParamsObj = {
         color: 0xffffff,
@@ -91,50 +91,40 @@
       }
       const spotLightSecondParams = objectValuesToArray(spotLightSecondParamsObj)
 
-      /* ----
-      Sender */
-      const senderGeometryFactor = 0.25
-      const senderColor = 0x2050ff
-      const senderCorpusSize = 0.5
-      // const senderMeshLambertMaterialParams = { color: senderColor, side: THREE.DoubleSide }
-      // const senderMaterial = new THREE.MeshLambertMaterial( senderMeshLambertMaterialParams )
-      const senderMeshPhysicalMaterialParams = {
-        color: senderColor,
+      /*--------
+      Dimension Bowls */
+      const bowlGeometryFactor = 1 / 16
+      const bowlRadius = 1 * bowlGeometryFactor
+      const bowlColor = 0xe01010
+      const bowlMeshPhysicalMaterialParams = {
+        color: bowlColor,
         // opacity: 0.5,
         // transparent: true,
         emissive: 0x000000,
-        metalness: 0.7,
+        // metalness: 0.7,
+        metalness: 0.2,
         flatShading: false,
-        roughness: 0.7,
+        // roughness: 0.7,
+        roughness: 0.9,
         // envMap: textureCube,
-        reflectivity: 1,
+        // reflectivity: 1,
+        reflectivity: 0.5,
         side: THREE.DoubleSide,
       }
-      const senderMaterial = new THREE.MeshPhysicalMaterial( senderMeshPhysicalMaterialParams )
-      const senderCorpusBoxGeometryParamsObj = {
-        width: senderCorpusSize * senderGeometryFactor,
-        height: senderCorpusSize * senderGeometryFactor,
-        dept: senderCorpusSize * senderGeometryFactor,
-        // widthSegments: Integer,
-        // heightSegments: Integer,
-        // depthSegments: Integer,
-      }
-      const senderCorpusBoxGeometryParams = objectValuesToArray(senderCorpusBoxGeometryParamsObj)
-      const senderCorpusGeometry = new THREE.BoxGeometry( ...senderCorpusBoxGeometryParams )
-      const senderPyramidCylinderGeometryParamsObj = {
-        radiusTop: 0.25 * senderGeometryFactor,
-        radiusBottom: 0.5 * senderGeometryFactor,
-        height: 1 * senderGeometryFactor,
-        radialSegments: 4,
-        heightSegments: 1,
-        openEnded: true,
+      const bowlMaterial = new THREE.MeshPhysicalMaterial( bowlMeshPhysicalMaterialParams )
+      const bowlSphereGeometryParamsObj = {
+        radius: bowlRadius,
+        widthSegments: 20,
+        heightSegments: 20,
+        // phiStart: Float,
+        // phiLength: Float,
         // thetaStart: Float,
         // thetaLength: Float,
       }
-      const senderPyramidCylinderGeometryParams = objectValuesToArray(senderPyramidCylinderGeometryParamsObj)
-      const senderPyramidGeometry = new THREE.CylinderGeometry( ...senderPyramidCylinderGeometryParams )
+      const bowlSphereGeometryParams = objectValuesToArray(bowlSphereGeometryParamsObj)
+      const bowlSphereGeometry = new THREE.SphereGeometry( ...bowlSphereGeometryParams )
 
-      /* ----
+      /*--------
       Plates */
       const plateThickness = 0.025
       const plateWidth = 0.5
@@ -149,7 +139,7 @@
       }
       const plateBoxGeometryParams = objectValuesToArray( plateBoxGeometryParamsObj )
 
-      /* ----
+      /*--------
       Mirrors */
       const mirrorBoxColor = 0xe0e0e0
       const mirrorBoxGeometry = new THREE.BoxGeometry( ...plateBoxGeometryParams )
@@ -199,14 +189,14 @@
       }
       const mirrorPlaneMaterial = new THREE.MeshPhysicalMaterial( mirrorPlaneMeshPhysicalMaterialParams )
 
-      /* ----
+      /*--------
       Screen */
       const screenColor = 0xffffff
       const screenGeometry = new THREE.BoxGeometry( ...plateBoxGeometryParams )
       const screenParamsMeshLambertMaterial = { color: screenColor, side: THREE.DoubleSide }
       const screenMaterial = new THREE.MeshLambertMaterial( screenParamsMeshLambertMaterial )
 
-      /* ----
+      /*--------
       Laser */
       const laserGeometryFactor = 0.1
       const laserCylinderGeometryParamsObj = {
@@ -229,7 +219,50 @@
       }
       const laserMaterial = new THREE.MeshLambertMaterial( laserMeshLambertMaterialParams )
 
-      /* ----
+      /*--------
+      Sender */
+      const senderGeometryFactor = 0.25
+      const senderColor = 0x2050ff
+      const senderCorpusSize = 0.5
+      // const senderMeshLambertMaterialParams = { color: senderColor, side: THREE.DoubleSide }
+      // const senderMaterial = new THREE.MeshLambertMaterial( senderMeshLambertMaterialParams )
+      const senderMeshPhysicalMaterialParams = {
+        color: senderColor,
+        // opacity: 0.5,
+        // transparent: true,
+        emissive: 0x000000,
+        metalness: 0.7,
+        flatShading: false,
+        roughness: 0.7,
+        // envMap: textureCube,
+        reflectivity: 1,
+        side: THREE.DoubleSide,
+      }
+      const senderMaterial = new THREE.MeshPhysicalMaterial( senderMeshPhysicalMaterialParams )
+      const senderCorpusBoxGeometryParamsObj = {
+        width: senderCorpusSize * senderGeometryFactor,
+        height: senderCorpusSize * senderGeometryFactor,
+        dept: senderCorpusSize * senderGeometryFactor,
+        // widthSegments: Integer,
+        // heightSegments: Integer,
+        // depthSegments: Integer,
+      }
+      const senderCorpusBoxGeometryParams = objectValuesToArray(senderCorpusBoxGeometryParamsObj)
+      const senderCorpusGeometry = new THREE.BoxGeometry( ...senderCorpusBoxGeometryParams )
+      const senderPyramidCylinderGeometryParamsObj = {
+        radiusTop: 0.25 * senderGeometryFactor,
+        radiusBottom: 0.5 * senderGeometryFactor,
+        height: 1 * senderGeometryFactor,
+        radialSegments: 4,
+        heightSegments: 30,
+        openEnded: true,
+        // thetaStart: Float,
+        // thetaLength: Float,
+      }
+      const senderPyramidCylinderGeometryParams = objectValuesToArray(senderPyramidCylinderGeometryParamsObj)
+      const senderPyramidGeometry = new THREE.CylinderGeometry( ...senderPyramidCylinderGeometryParams )
+
+      /*--------
       Scene Basics */
       const centerDistance = 1
       const centerHeightPosition = plateHeight / 2
@@ -283,23 +316,38 @@
       render.scene.add( gridHelper )
 
       /*--------------------
-      Sender
+      Dimension Bowls
       --------------------*/
-      /* ----
+      /*--------
       Group */
-      const senderGroup = new THREE.Group()
-      render.scene.add( senderGroup )
-      senderGroup.position.set( 0, centerHeightPosition, centerDistance + senderCorpusBoxGeometryParamsObj.dept / 2 )
-      /* ----
-      Corpus */
-      const senderCorpus = new THREE.Mesh( senderCorpusGeometry, senderMaterial )
-      senderGroup.add( senderCorpus )
-      /* ----
-      Pyramid */
-      const senderPyramid = new THREE.Mesh( senderPyramidGeometry, senderMaterial )
-      senderPyramid.rotation.set( pi2 / 4, pi2 / 8, 0)
-      senderPyramid.position.set( 0, 0, - (senderPyramidCylinderGeometryParamsObj.height / 2) )
-      senderGroup.add( senderPyramid )
+      const bowlsGroup = new THREE.Group()
+      render.scene.add( bowlsGroup )
+      bowlsGroup.position.set( 0, bowlRadius, 0 )
+      /*--------
+      Bowls */
+      const bowls = [
+        new THREE.Mesh( bowlSphereGeometry, bowlMaterial ),
+        new THREE.Mesh( bowlSphereGeometry, bowlMaterial ),
+        new THREE.Mesh( bowlSphereGeometry, bowlMaterial ),
+        new THREE.Mesh( bowlSphereGeometry, bowlMaterial ),
+      ]
+      bowls.forEach((bowl, index) => {
+        bowlsGroup.add( bowl )
+        switch (index) {
+          case 0:            
+            bowl.position.set( centerDistance, 0, centerDistance )
+            break
+          case 1:            
+            bowl.position.set( centerDistance, 0, -centerDistance )
+            break
+          case 2:            
+            bowl.position.set( -centerDistance, 0, centerDistance )
+            break
+          case 3:            
+            bowl.position.set( -centerDistance, 0, -centerDistance )
+            break
+        }
+      })
 
       /*--------------------
       Mian Mirror
@@ -344,6 +392,25 @@
       screenInterference.position.set( -centerDistance, centerHeightPosition, 0 )
 
       /*--------------------
+      Sender
+      --------------------*/
+      /*--------
+      Group */
+      const senderGroup = new THREE.Group()
+      render.scene.add( senderGroup )
+      senderGroup.position.set( 0, centerHeightPosition, centerDistance + senderCorpusBoxGeometryParamsObj.dept / 2 )
+      /*--------
+      Corpus */
+      const senderCorpus = new THREE.Mesh( senderCorpusGeometry, senderMaterial )
+      senderGroup.add( senderCorpus )
+      /*--------
+      Pyramid */
+      const senderPyramid = new THREE.Mesh( senderPyramidGeometry, senderMaterial )
+      senderPyramid.rotation.set( pi2 / 4, pi2 / 8, 0)
+      senderPyramid.position.set( 0, 0, - (senderPyramidCylinderGeometryParamsObj.height / 2) )
+      senderGroup.add( senderPyramid )
+
+      /*--------------------
       Laser
       --------------------*/
       const laserInterference = new THREE.Mesh( laserGeometry, laserMaterial )
@@ -355,6 +422,7 @@
       /*--------------------
       Animation
       --------------------*/
+
       var time = 0
 
       render.renderer.setAnimationLoop(() => {
