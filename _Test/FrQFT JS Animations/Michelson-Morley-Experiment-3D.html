@@ -225,21 +225,6 @@
         opacity: 0.0,
         transparent: true
       }
-      // const laserClosedTopMaterials = [
-      //   new THREE.MeshLambertMaterial( laserMeshLambertMaterialParams ),
-      //   new THREE.MeshLambertMaterial( laserMeshLambertMaterialParams ),
-      //   new THREE.MeshLambertMaterial( laserClearMeshLambertMaterialParams ),
-      // ]
-      // const laserOpenEndedMaterials = [
-      //   new THREE.MeshLambertMaterial( laserMeshLambertMaterialParams ),
-      //   new THREE.MeshLambertMaterial( laserClearMeshLambertMaterialParams ),
-      //   new THREE.MeshLambertMaterial( laserClearMeshLambertMaterialParams ),
-      // ]
-      // const laserClosedBottomMaterials = [
-      //   new THREE.MeshLambertMaterial( laserMeshLambertMaterialParams ),
-      //   new THREE.MeshLambertMaterial( laserClearMeshLambertMaterialParams ),
-      //   new THREE.MeshLambertMaterial( laserMeshLambertMaterialParams ),
-      // ]
       const laserClosedTopMaterialsParams = [
         laserMeshLambertMaterialParams,
         laserMeshLambertMaterialParams,
@@ -450,10 +435,6 @@
       /*--------------------
       Laser
       --------------------*/
-      // const laserWaveGroup = new THREE.Mesh( laserGeometry, laserMaterial )
-      // render.scene.add( laserWaveGroup )
-      // laserWaveGroup.rotation.set( pi2 / 4, 0, 0)
-      // laserWaveGroup.position.set( 0, centerHeightPosition, centerDistance )
       /*--------
       Group */
       const laserWaveGroup = new THREE.Group()
@@ -473,58 +454,23 @@
       ))}
       const laserParts = []
       for (let index = 0; index < laserPartsCount; index++) {
-        // let laserMaterials = []
-        // switch (index === 0 ? 'first' : index < laserPartsCount - 1 ? 'middle' : 'last') {
-        //   case 'first':
-        //     laserMaterials = laserClosedTopMaterials
-        //     break
-        //   case 'middle':
-        //     laserMaterials = laserOpenEndedMaterials
-        //     break
-        //   case 'last':
-        //     laserMaterials = laserClosedBottomMaterials
-        //     break
-        // }
         let laserMaterials = []
         switch (index === 0 ? 'first' : index < laserPartsCount - 1 ? 'middle' : 'last') {
           case 'first':
-            // laserClosedTopMaterialsParams.forEach( (materialParams) => laserMaterials.push( new THREE.MeshLambertMaterial( { ...materialParams, opacity: materialParams.opacity * laserPartsOpacities[index] })))
             laserClosedTopMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
             break
           case 'middle':
-            // laserOpenEndedMaterialsParams.forEach( (materialParams) => laserMaterials.push( new THREE.MeshLambertMaterial( { ...materialParams, opacity: materialParams.opacity * laserPartsOpacities[index] })))
             laserOpenEndedMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
             break
           case 'last':
-            // laserClosedBottomMaterialsParams.forEach( (materialParams) => laserMaterials.push( new THREE.MeshLambertMaterial( { ...materialParams, opacity: materialParams.opacity * laserPartsOpacities[index] })))
             laserClosedBottomMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
             break
         }
         const laserPart = new THREE.Mesh( laserGeometry, laserMaterials )
-        // laserPart.material.forEach((material, indexMat) => {
-        //   const oldOpacity = material.opacity
-        //   laserPart.material[indexMat] = material.opacity * laserPartsOpacities[index]
-        //   console.log('material.opacity: indexPart: #', index, ', indexMat: #', indexMat, ', opacity: ', material.opacity, ' = ', oldOpacity, ' * ', laserPartsOpacities[index])
-        // })
         laserParts.push( laserPart )
         laserWaveGroup.add( laserPart )
         laserPart.position.set( 0, (laserCylinderGeometryParamsObj.height / 2) - laserCylinderGeometryParamsObj.height * index, 0, )
       }
-      const laserClosedTopMaterials = [
-        new THREE.MeshLambertMaterial( laserMeshLambertMaterialParams ),
-        new THREE.MeshLambertMaterial( laserMeshLambertMaterialParams ),
-        new THREE.MeshLambertMaterial( laserClearMeshLambertMaterialParams ),
-      ]
-      const laserOpenEndedMaterials = [
-        new THREE.MeshLambertMaterial( laserMeshLambertMaterialParams ),
-        new THREE.MeshLambertMaterial( laserClearMeshLambertMaterialParams ),
-        new THREE.MeshLambertMaterial( laserClearMeshLambertMaterialParams ),
-      ]
-      const laserClosedBottomMaterials = [
-        new THREE.MeshLambertMaterial( laserMeshLambertMaterialParams ),
-        new THREE.MeshLambertMaterial( laserClearMeshLambertMaterialParams ),
-        new THREE.MeshLambertMaterial( laserMeshLambertMaterialParams ),
-      ]
 
       /*--------------------
       Animation
