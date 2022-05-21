@@ -79,7 +79,8 @@
       Consts Local
       --------------------*/
 
-      // Light, additional
+      /* ----
+      Light, additional */
       const spotLightSecondParamsObj = {
         color: 0xffffff,
         intensity: 0.5,
@@ -90,7 +91,8 @@
       }
       const spotLightSecondParams = objectValuesToArray(spotLightSecondParamsObj)
 
-      // Sender
+      /* ----
+      Sender */
       const senderGeometryFactor = 0.25
       const senderColor = 0x2050ff
       const senderCorpusSize = 0.5
@@ -132,7 +134,8 @@
       const senderPyramidCylinderGeometryParams = objectValuesToArray(senderPyramidCylinderGeometryParamsObj)
       const senderPyramidGeometry = new THREE.CylinderGeometry( ...senderPyramidCylinderGeometryParams )
 
-      // Plates
+      /* ----
+      Plates */
       const plateThickness = 0.025
       const plateWidth = 0.5
       const plateHeight = 0.25
@@ -146,7 +149,8 @@
       }
       const plateBoxGeometryParams = objectValuesToArray( plateBoxGeometryParamsObj )
 
-      // Mirrors
+      /* ----
+      Mirrors */
       const mirrorBoxColor = 0xe0e0e0
       const mirrorBoxGeometry = new THREE.BoxGeometry( ...plateBoxGeometryParams )
       const mirrorBoxMeshLambertMaterialParams = { color: mirrorBoxColor, side: THREE.DoubleSide }
@@ -195,13 +199,15 @@
       }
       const mirrorPlaneMaterial = new THREE.MeshPhysicalMaterial( mirrorPlaneMeshPhysicalMaterialParams )
 
-      // Screen
+      /* ----
+      Screen */
       const screenColor = 0xffffff
       const screenGeometry = new THREE.BoxGeometry( ...plateBoxGeometryParams )
       const screenParamsMeshLambertMaterial = { color: screenColor, side: THREE.DoubleSide }
       const screenMaterial = new THREE.MeshLambertMaterial( screenParamsMeshLambertMaterial )
 
-      // Laser
+      /* ----
+      Laser */
       const laserGeometryFactor = 0.1
       const laserCylinderGeometryParamsObj = {
         radiusTop: 0.125 * laserGeometryFactor,
@@ -223,7 +229,8 @@
       }
       const laserMaterial = new THREE.MeshLambertMaterial( laserMeshLambertMaterialParams )
 
-      // Scene Basics
+      /* ----
+      Scene Basics */
       const centerDistance = 1
       const centerHeightPosition = plateHeight / 2
 
@@ -278,19 +285,21 @@
       /*--------------------
       Sender
       --------------------*/
-      // Group
+      /* ----
+      Group */
       const senderGroup = new THREE.Group()
       render.scene.add( senderGroup )
-      // Corpus
+      senderGroup.position.set( 0, centerHeightPosition, centerDistance + senderCorpusBoxGeometryParamsObj.dept / 2 )
+      /* ----
+      Corpus */
       const senderCorpus = new THREE.Mesh( senderCorpusGeometry, senderMaterial )
       senderGroup.add( senderCorpus )
-      // Pyramid
+      /* ----
+      Pyramid */
       const senderPyramid = new THREE.Mesh( senderPyramidGeometry, senderMaterial )
       senderPyramid.rotation.set( pi2 / 4, pi2 / 8, 0)
       senderPyramid.position.set( 0, 0, - (senderPyramidCylinderGeometryParamsObj.height / 2) )
       senderGroup.add( senderPyramid )
-      // Sender Place
-      senderGroup.position.set( 0, centerHeightPosition, centerDistance + senderCorpusBoxGeometryParamsObj.dept / 2 )
 
       /*--------------------
       Mian Mirror
