@@ -291,11 +291,16 @@
         laserClearMeshLambertMaterialParams,
         laserMeshLambertMaterialParams,
       ]
+      // const laserPartsPositionCenterCorrection =
+      //   // half of the total length of the laser beam
+      //   laserCylinderGeometryParamsObj.height * laserPartsCount / 2
+      //     // subtract a half of length of a part to be in the center of a laser beam part
+      //     - laserCylinderGeometryParamsObj.height / 2
       const laserPartsPositionCenterCorrection =
         // half of the total length of the laser beam
-        laserCylinderGeometryParamsObj.height * laserPartsCount / 2
+        - laserCylinderGeometryParamsObj.height * laserPartsCount / 2
           // subtract a half of length of a part to be in the center of a laser beam part
-          - laserCylinderGeometryParamsObj.height / 2
+          + laserCylinderGeometryParamsObj.height / 2
       const laserSplitsCount = 4
       const laserSlpitsSeparationDistance = laserCylinderGeometryParamsObj.radiusTop
       const laserSlpitsPositionCenterCorrection =
@@ -397,30 +402,43 @@
         )
        
       const laserPartPositionSet = (laserPart, index, move) => {
+        if (!laserAnimated) {
+          move = centerDistance / 2
+        }
+        const partPos =
+          laserPartsPositionCenterCorrection
+            // shift to the next part
+            + laserCylinderGeometryParamsObj.height * index
+        move += partPos
         let arm = null
         let armDirection = null
-        const sender = 0
-        const mainMirror = 1
-        const sideMirror = 2
-        const screen = 3
+        let moveConsumed = 0
+        const x = 0
+        const z = 2
+        const forward = 1
+        const backward = -1
         if (move <= centerDistance) {
-          arm = sender
-          armDirection = forward
+          arm = z
+          armDirection = backward
+          moveConsumed = 0
         } else {
           switch (index) {
             /*-----
             StraightAndBack – straight forth to main mirror and back */
             case 0:
               if (move <= 2 * centerDistance) {
-                arm = mainMirror
-                armDirection = forward
+                arm = z
+                armDirection = backward
+                moveConsumed = centerDistance
               } else {
                 if (move <= 3 * centerDistance) {
-                  arm = mainMirror
-                  armDirection = backward
+                  arm = z
+                  armDirection = forward
+                  moveConsumed = 2 * centerDistance
                 } else {
-                  arm = sender
-                  armDirection = backward
+                  arm = z
+                  armDirection = forward
+                  moveConsumed = 3 * centerDistance
                 }
               }
               break
@@ -428,31 +446,37 @@
             StraightAndScreen – straight forth to main mirror and sideways to screen */
             case 1:
               if (move <= 2 * centerDistance) {
-                arm = mainMirror
-                armDirection = forward
+                arm = z
+                armDirection = backward
+                moveConsumed = centerDistance
               } else {
                 if (move <= 3 * centerDistance) {
-                  arm = mainMirror
-                  armDirection = backward
-                } else {
-                  arm = screen
+                  arm = z
                   armDirection = forward
+                  moveConsumed = 2 * centerDistance
+                } else {
+                  arm = x
+                  armDirection = backward
+                  moveConsumed = 3 * centerDistance
                 }
               }
               break
             /*-----
-            SidewaysAndBack – AndBack – sideways to side mirror and sideways back */
+            SidewaysAndBack – sideways to side mirror and sideways back */
             case 2:
               if (move <= 2 * centerDistance) {
-                arm = sideMirror
+                arm = x
                 armDirection = forward
+                moveConsumed = centerDistance
               } else {
                 if (move <= 3 * centerDistance) {
-                  arm = sideMirror
+                  arm = x
                   armDirection = backward
+                  moveConsumed = 2 * centerDistance
                 } else {
-                  arm = sender
-                  armDirection = backward
+                  arm = z
+                  armDirection = forward
+                  moveConsumed = 3 * centerDistance
                 }
               }
               break
@@ -460,28 +484,35 @@
             SidewaysAndScreen – sideways to side mirror and straight to screen */
             case 3:
               if (move <= 2 * centerDistance) {
-                arm = sideMirror
+                arm = x
                 armDirection = forward
+                moveConsumed = centerDistance
               } else {
                 if (move <= 3 * centerDistance) {
-                  arm = sideMirror
+                  arm = x
                   armDirection = backward
+                  moveConsumed = 2 * centerDistance
                 } else {
-                  arm = screen
-                  armDirection = forward
+                  arm = x
+                  armDirection = backward
+                  moveConsumed = 3 * centerDistance
                 }
               }
               break
           }
         }
+        let armPos =
+          (armDirection === forward ? -centerDistance : centerDistance)
+            + armDirection * (move - moveConsumed)
         laserPart.position.set(
+          arm === x ? armPos : 0,
           0,
-          0,
-          laserPartsPositionCenterCorrection
-            // shift to the next part
-            - laserCylinderGeometryParamsObj.height * index
-            // move position
-            + (laserAnimated ? centerDistance - move : centerDistance / 2),
+          // laserPartsPositionCenterCorrection
+          //   // shift to the next part
+          //   - laserCylinderGeometryParamsObj.height * index
+          //   // move position
+          //   + (laserAnimated ? centerDistance - move : centerDistance / 2),
+          arm === z ? armPos : 0,
         )
       }
        
@@ -624,7 +655,8 @@
         if (laserAnimated) {
           laserSplits.forEach( (laserSplit, indexLaserSplit) => {
             laserSplit.laserParts.forEach(
-              (laserPart, indexLaserPart) => laserPartPositionSet( laserPart, indexLaserPart, time )
+              // (laserPart, indexLaserPart) => laserPartPositionSet( laserPart, indexLaserPart, time )
+              (laserPart, indexLaserPart) => laserPartPositionSet( laserPart, indexLaserPart, centerDistance )
             )
           })
         }
