@@ -291,10 +291,26 @@
         laserClearMeshLambertMaterialParams,
         laserMeshLambertMaterialParams,
       ]
-      const laserAnimated = true
+      const laserPartsPositionCenterCorrection =
+        // half of the total length of the laser beam
+        laserCylinderGeometryParamsObj.height * laserPartsCount / 2
+          // subtract a half of length of a part to be in the center of a laser beam part
+          - laserCylinderGeometryParamsObj.height / 2
       const laserSplitsCount = 4
-      const laserSlpitsSeparated = true
       const laserSlpitsSeparationDistance = laserCylinderGeometryParamsObj.radiusTop
+      const laserSlpitsPositionCenterCorrection =
+        // half of the total height
+        - (
+            laserCylinderGeometryParamsObj.radiusTop * 2 * laserSplitsCount
+            + laserSlpitsSeparationDistance *  (laserSplitsCount - 1)
+        ) / 2
+          // add a radius to be in the center of the bottom split
+          + laserCylinderGeometryParamsObj.radiusTop
+      const laserSlpitsPositionDistance = 
+        laserCylinderGeometryParamsObj.radiusTop * 2
+          + laserSlpitsSeparationDistance
+      const laserSlpitsSeparated = true
+      const laserAnimated = false
 
       /*--------
       Scene Basics */
@@ -332,7 +348,7 @@
         Group */
         const laserWaveGroup = new THREE.Group()
         render.scene.add( laserWaveGroup )
-        laserWaveGroup.rotation.set( pi2 / 4, 0, 0)
+        // laserWaveGroup.rotation.set( pi2 / 4, 0, 0)
         /*--------
         Parts */
         const laserPartsOpacity = (partIndex, partsCount) => {
@@ -361,24 +377,28 @@
           const laserPart = new THREE.Mesh( laserGeometry, laserMaterials )
           laserParts.push( laserPart )
           laserWaveGroup.add( laserPart )
-          laserPart.position.set( 0, (laserCylinderGeometryParamsObj.height / 2) - laserCylinderGeometryParamsObj.height * index, 0, )
+          laserPart.rotation.set( pi2 / 4, 0, 0)
+          // laserPart.position.set(
+          //   0,
+          //   (laserCylinderGeometryParamsObj.height / 2) - laserCylinderGeometryParamsObj.height * index,
+          //   0,
+          // )
+          laserPart.position.set(
+            0,
+            0,
+            laserPartsPositionCenterCorrection
+              // shift to the next part
+              - laserCylinderGeometryParamsObj.height * index,
+          )
         }
         return { laserWaveGroup, laserParts }
       }
 
       const laserSplitedAddDistance = (index) => 
         laserSlpitsSeparated ?
-          // half of the total height
-          -(
-            (
-              laserCylinderGeometryParamsObj.radiusTop * 2 * laserSplitsCount
-              + laserSlpitsSeparationDistance *  (laserSplitsCount - 1)
-            ) / 2
-          )
-          // add a radius to be in the senter of the bottom split
-          + laserCylinderGeometryParamsObj.radiusTop
-          // shift to the next split
-          + (laserCylinderGeometryParamsObj.radiusTop * 2 + laserSlpitsSeparationDistance) * index
+          laserSlpitsPositionCenterCorrection
+            // shift to the next split
+            + laserSlpitsPositionDistance * index
           : 0
 
       const laserPiecePositionSet = (laserPiece, index, move) => 
@@ -511,6 +531,7 @@
       for (let index = 0; index < laserSplitsCount; index++) {
         const laserSplit = laserSplitCreate( laserSplitsCount )
         laserSplits.push( laserSplit )
+        // laserPiecePositionSet( laserSplit.laserWaveGroup, index, centerDistance )
         laserPiecePositionSet( laserSplit.laserWaveGroup, index, centerDistance )
       }
 
