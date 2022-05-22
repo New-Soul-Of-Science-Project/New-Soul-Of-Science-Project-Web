@@ -45,7 +45,6 @@
 
       import {
         pi2,
-        blackColor,
         eleWidth,
         eleHeight,
       } from 'const' // with 'es-module-shims.js' using the relative local path './js/const.js' gives an error: TypeError: Module name, './js/const.js' does not resolve to a valid URL.
@@ -149,17 +148,17 @@
       const mirrorBoxGeometry = new THREE.BoxGeometry( ...plateBoxGeometryParams )
       const mirrorBoxMeshLambertMaterialParams = { color: mirrorBoxColor, side: THREE.DoubleSide }
       const mirrorMaterial = new THREE.MeshLambertMaterial( mirrorBoxMeshLambertMaterialParams )
-      // const mirrorHalfMaterial = new THREE.MeshLambertMaterial({
-      //   ...mirrorBoxMeshLambertMaterialParams,
-      //   opacity: 0.5,
-      //   transparent: true,
-      // })
       const mirrorHalfGeometryParamsObj = {
         ...plateBoxGeometryParamsObj,
         dept: plateBoxGeometryParamsObj.dept / 2,
       }
       const mirrorHalfGeometryParams = objectValuesToArray( mirrorHalfGeometryParamsObj )
       const mirrorHalfGeometry = new THREE.BoxGeometry( ...mirrorHalfGeometryParams )
+      // const mirrorHalfMaterial = new THREE.MeshLambertMaterial({
+      //   ...mirrorBoxMeshLambertMaterialParams,
+      //   opacity: 0.5,
+      //   transparent: true,
+      // })
       const mirrorHalfMeshPhysicalMaterialParams = {
         color: mirrorBoxColor,
         // opacity: 0.5,
@@ -199,53 +198,6 @@
       const screenGeometry = new THREE.BoxGeometry( ...plateBoxGeometryParams )
       const screenParamsMeshLambertMaterial = { color: screenColor, side: THREE.DoubleSide }
       const screenMaterial = new THREE.MeshLambertMaterial( screenParamsMeshLambertMaterial )
-
-      /*--------
-      Laser */
-      const laserAnimated = true
-      const laserColor = 0x00ff00
-      const laserOpacity = 0.5
-      const laserDiscsInside = false
-      const laserPartsCount = 41
-      const laserGeometryFactor = 0.125 * 0.1
-      const laserCylinderGeometryParamsObj = {
-        radiusTop: 1 * laserGeometryFactor,
-        radiusBottom: 1 * laserGeometryFactor,
-        height: (8 * laserGeometryFactor) / laserPartsCount,
-        radialSegments: 40,
-        heightSegments: 1,
-        // openEnded: true,
-        // thetaStart: Float,
-        // thetaLength: Float,
-      }
-      const laserCylinderGeometryParams = objectValuesToArray(laserCylinderGeometryParamsObj)
-      const laserGeometry = new THREE.CylinderGeometry( ...laserCylinderGeometryParams )
-      const laserMeshLambertMaterialParams = {
-        color: laserColor,
-        opacity: laserOpacity,
-        transparent: true,
-        side: THREE.DoubleSide
-      }
-      const laserClearMeshLambertMaterialParams = {
-        ...laserMeshLambertMaterialParams,
-        opacity: !laserDiscsInside ? 0.0 : laserOpacity,
-        transparent: true
-      }
-      const laserClosedTopMaterialsParams = [
-        laserMeshLambertMaterialParams,
-        laserMeshLambertMaterialParams,
-        laserClearMeshLambertMaterialParams,
-      ]
-      const laserOpenEndedMaterialsParams = [
-        laserMeshLambertMaterialParams,
-        laserClearMeshLambertMaterialParams,
-        laserClearMeshLambertMaterialParams,
-      ]
-      const laserClosedBottomMaterialsParams = [
-        laserMeshLambertMaterialParams,
-        laserClearMeshLambertMaterialParams,
-        laserMeshLambertMaterialParams,
-      ]
 
       /*--------
       Sender */
@@ -291,6 +243,56 @@
       const senderPyramidGeometry = new THREE.CylinderGeometry( ...senderPyramidCylinderGeometryParams )
 
       /*--------
+      Laser */
+      const laserColor = 0x00ff00
+      const laserOpacity = 0.5
+      const laserDiscsInside = false
+      const laserPartsCount = 41
+      const laserGeometryFactor = 0.125 * 0.1
+      const laserCylinderGeometryParamsObj = {
+        radiusTop: 1 * laserGeometryFactor,
+        radiusBottom: 1 * laserGeometryFactor,
+        height: (8 * laserGeometryFactor) / laserPartsCount,
+        radialSegments: 40,
+        heightSegments: 1,
+        // openEnded: true,
+        // thetaStart: Float,
+        // thetaLength: Float,
+      }
+      const laserCylinderGeometryParams = objectValuesToArray(laserCylinderGeometryParamsObj)
+      const laserGeometry = new THREE.CylinderGeometry( ...laserCylinderGeometryParams )
+      const laserMeshLambertMaterialParams = {
+        color: laserColor,
+        opacity: laserOpacity,
+        transparent: true,
+        side: THREE.DoubleSide
+      }
+      const laserClearMeshLambertMaterialParams = {
+        ...laserMeshLambertMaterialParams,
+        opacity: !laserDiscsInside ? 0.0 : laserOpacity,
+        transparent: true
+      }
+      const laserClosedTopMaterialsParams = [
+        laserMeshLambertMaterialParams,
+        laserMeshLambertMaterialParams,
+        laserClearMeshLambertMaterialParams,
+      ]
+      const laserOpenEndedMaterialsParams = [
+        laserMeshLambertMaterialParams,
+        laserClearMeshLambertMaterialParams,
+        laserClearMeshLambertMaterialParams,
+      ]
+      const laserClosedBottomMaterialsParams = [
+        laserMeshLambertMaterialParams,
+        laserClearMeshLambertMaterialParams,
+        laserMeshLambertMaterialParams,
+      ]
+      const laserAnimated = true
+      const laserSplitsCount = 4
+      const laserSlpitsSeparated = true
+      const laserSlpitsSeparationDistance = laserCylinderGeometryParamsObj.radiusTop
+
+      /*--------
       Scene Basics */
       const centerDistance = 1
       const centerHeightPosition = plateHeight / 2
@@ -299,6 +301,7 @@
       /*--------------------
       Functions Local
       --------------------*/
+
       const mirrorCreate = (params) => {
         // params: {
         //   withMirrorPlane: Boolean, required
@@ -319,6 +322,67 @@
         }
         return mirror
       }
+
+      const laserSplitCreate = (splitsCount) => {
+        /*--------
+        Group */
+        const laserWaveGroup = new THREE.Group()
+        render.scene.add( laserWaveGroup )
+        laserWaveGroup.rotation.set( pi2 / 4, 0, 0)
+        /*--------
+        Parts */
+        const laserPartsOpacity = (partIndex, partsCount) => {
+          // ???: use Gauß'sche Normalverteilung?
+          return Math.sin( Math.PI * (partIndex / (partsCount - 1)) )
+        }
+        const laserPushMaterialByOpacityAry = (laserMaterials, materialParams, indexPart) => {
+          laserMaterials.push( new THREE.MeshLambertMaterial(
+            { ...materialParams, opacity: materialParams.opacity * laserPartsOpacity( indexPart, laserPartsCount ) / laserSplitsCount }
+          ))
+        }
+        const laserParts = []
+        for (let index = 0; index < laserPartsCount; index++) {
+          let laserMaterials = []
+          switch (index === 0 ? 'first' : index < laserPartsCount - 1 ? 'middle' : 'last') {
+            case 'first':
+              laserClosedTopMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
+              break
+            case 'middle':
+              laserOpenEndedMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
+              break
+            case 'last':
+              laserClosedBottomMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
+              break
+          }
+          const laserPart = new THREE.Mesh( laserGeometry, laserMaterials )
+          laserParts.push( laserPart )
+          laserWaveGroup.add( laserPart )
+          laserPart.position.set( 0, (laserCylinderGeometryParamsObj.height / 2) - laserCylinderGeometryParamsObj.height * index, 0, )
+        }
+        return { laserWaveGroup, laserParts }
+      }
+
+      const laserSplitedAddDistance = (index) => 
+        laserSlpitsSeparated ?
+          // half of the total height
+          -(
+            (
+              laserCylinderGeometryParamsObj.radiusTop * 2 * laserSplitsCount
+              + laserSlpitsSeparationDistance *  (laserSplitsCount - 1)
+            ) / 2
+          )
+          // add a radius to be in the senter of the bottom split
+          + laserCylinderGeometryParamsObj.radiusTop
+          // shift to the next split
+          + (laserCylinderGeometryParamsObj.radiusTop * 2 + laserSlpitsSeparationDistance) * index
+          : 0
+
+      const laserPiecePositionSet = (laserPiece, index, move) => 
+        laserPiece.position.set(
+          0,
+          centerHeightPosition + (laserSlpitsSeparated ? laserSplitedAddDistance( index ) : 0),
+          laserAnimated ? move : centerDistance / 2
+        )
        
 
       /*--------------------
@@ -380,7 +444,6 @@
       /*--------------------
       Mian Mirror
       --------------------*/
-      // const mirrorMain = new THREE.Mesh( mirrorBoxGeometry, mirrorMaterial )
       const mirrorMain = mirrorCreate({
         withMirrorPlane: true,
         mirrorBoxMaterial: mirrorMaterial,
@@ -393,7 +456,6 @@
       /*--------------------
       Side Mirror
       --------------------*/
-      // const mirrorSide = new THREE.Mesh( mirrorBoxGeometry, mirrorMaterial )
       const mirrorSide = mirrorCreate({
         withMirrorPlane: true,
         mirrorBoxMaterial: mirrorMaterial,
@@ -441,46 +503,13 @@
       /*--------------------
       Laser
       --------------------*/
-      /*--------
-      Group */
-      const laserWaveGroup = new THREE.Group()
-      render.scene.add( laserWaveGroup )
-      laserWaveGroup.rotation.set( pi2 / 4, 0, 0)
-      if (laserAnimated) {
-        laserWaveGroup.position.set( 0, centerHeightPosition, centerDistance )
-      } else {
-        laserWaveGroup.position.set( 0, centerHeightPosition, centerDistance / 2 )
+      const laserSplits = []
+      for (let index = 0; index < laserSplitsCount; index++) {
+        const laserSplit = laserSplitCreate( laserSplitsCount )
+        laserSplits.push( laserSplit )
+        laserPiecePositionSet( laserSplit.laserWaveGroup, index, centerDistance )
       }
-      /*--------
-      Parts */
-      const laserPartsOpacity = (partIndex, partsCount) => {
-        // ???: use Gauß'sche Normalverteilung?
-        return Math.sin( Math.PI * (partIndex / (partsCount - 1)) )
-      }
-      const laserPushMaterialByOpacityAry = (laserMaterials, materialParams, indexPart) => {
-        laserMaterials.push( new THREE.MeshLambertMaterial(
-          { ...materialParams, opacity: materialParams.opacity * laserPartsOpacity( indexPart, laserPartsCount ) }
-        ))
-      }
-      const laserParts = []
-      for (let index = 0; index < laserPartsCount; index++) {
-        let laserMaterials = []
-        switch (index === 0 ? 'first' : index < laserPartsCount - 1 ? 'middle' : 'last') {
-          case 'first':
-            laserClosedTopMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
-            break
-          case 'middle':
-            laserOpenEndedMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
-            break
-          case 'last':
-            laserClosedBottomMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
-            break
-        }
-        const laserPart = new THREE.Mesh( laserGeometry, laserMaterials )
-        laserParts.push( laserPart )
-        laserWaveGroup.add( laserPart )
-        laserPart.position.set( 0, (laserCylinderGeometryParamsObj.height / 2) - laserCylinderGeometryParamsObj.height * index, 0, )
-      }
+
 
       /*--------------------
       Animation
@@ -492,7 +521,7 @@
         time = ( render.clock.getElapsedTime() * 1 ) % 2
 
         if (laserAnimated) {
-          laserWaveGroup.position.set( 0, centerHeightPosition, centerDistance - time )
+          laserSplits.forEach( (laserSplit, index) => laserPiecePositionSet( laserSplit.laserWaveGroup, index, centerDistance - time ))
         }
 
         render.renderer.render( render.scene, render.camera )
