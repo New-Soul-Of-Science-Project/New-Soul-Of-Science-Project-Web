@@ -348,7 +348,6 @@
         Group */
         const laserWaveGroup = new THREE.Group()
         render.scene.add( laserWaveGroup )
-        // laserWaveGroup.rotation.set( pi2 / 4, 0, 0)
         /*--------
         Parts */
         const laserPartsOpacity = (partIndex, partsCount) => {
@@ -378,19 +377,7 @@
           laserParts.push( laserPart )
           laserWaveGroup.add( laserPart )
           laserPart.rotation.set( pi2 / 4, 0, 0)
-          // laserPart.position.set(
-          //   0,
-          //   (laserCylinderGeometryParamsObj.height / 2) - laserCylinderGeometryParamsObj.height * index,
-          //   0,
-          // )
-          // laserPart.position.set(
-          //   0,
-          //   0,
-          //   laserPartsPositionCenterCorrection
-          //     // shift to the next part
-          //     - laserCylinderGeometryParamsObj.height * index,
-          // )
-          laserPartPositionSet( laserPart, index, 0 )
+          laserPartPositionSet( laserPart, index, centerDistance )
         }
         return { laserWaveGroup, laserParts }
       }
@@ -402,12 +389,10 @@
             + laserSlpitsPositionDistance * index
           : 0
 
-      // const laserSplitPositionSet = (laserSplit, index, move) => 
       const laserSplitPositionSet = (laserSplit, index) => 
         laserSplit.position.set(
           0,
           centerHeightPosition + (laserSlpitsSeparated ? laserSplitedAddDistance( index ) : 0),
-          // laserAnimated ? move : centerDistance / 2
           0
         )
        
@@ -545,8 +530,7 @@
       for (let indexLaserSplit = 0; indexLaserSplit < laserSplitsCount; indexLaserSplit++) {
         const laserSplit = laserSplitCreate( laserSplitsCount )
         laserSplits.push( laserSplit )
-        laserSplitPositionSet( laserSplit.laserWaveGroup, indexLaserSplit/* , centerDistance */ )
-        // laserSplit.laserParts.forEach( (laserPart, indexLaserPart) => laserPartPositionSet( laserPart, indexLaserPart, centerDistance ))
+        laserSplitPositionSet( laserSplit.laserWaveGroup, indexLaserSplit )
       }
 
 
@@ -561,7 +545,6 @@
 
         if (laserAnimated) {
           laserSplits.forEach( (laserSplit, indexLaserSplit) => {
-            // laserSplitPositionSet( laserSplit.laserWaveGroup, indexLaserSplit/* , centerDistance - time */ )
             laserSplit.laserParts.forEach(
               (laserPart, indexLaserPart) => laserPartPositionSet( laserPart, indexLaserPart, centerDistance - time )
             )
