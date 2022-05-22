@@ -309,11 +309,11 @@
       const laserSlpitsPositionDistance = 
         laserCylinderGeometryParamsObj.radiusTop * 2
           + laserSlpitsSeparationDistance
-      const laserSlpitsSeparated = true
-      const laserAnimated = false
-
+      
       /*--------
       Scene Basics */
+      const laserAnimated = true
+      const laserSlpitsSeparated = false
       const centerDistance = 1
       const centerHeightPosition = plateHeight / 2
 
@@ -383,13 +383,14 @@
           //   (laserCylinderGeometryParamsObj.height / 2) - laserCylinderGeometryParamsObj.height * index,
           //   0,
           // )
-          laserPart.position.set(
-            0,
-            0,
-            laserPartsPositionCenterCorrection
-              // shift to the next part
-              - laserCylinderGeometryParamsObj.height * index,
-          )
+          // laserPart.position.set(
+          //   0,
+          //   0,
+          //   laserPartsPositionCenterCorrection
+          //     // shift to the next part
+          //     - laserCylinderGeometryParamsObj.height * index,
+          // )
+          laserPartPositionSet( laserPart, index, 0 )
         }
         return { laserWaveGroup, laserParts }
       }
@@ -401,11 +402,24 @@
             + laserSlpitsPositionDistance * index
           : 0
 
-      const laserPiecePositionSet = (laserPiece, index, move) => 
-        laserPiece.position.set(
+      // const laserSplitPositionSet = (laserSplit, index, move) => 
+      const laserSplitPositionSet = (laserSplit, index) => 
+        laserSplit.position.set(
           0,
           centerHeightPosition + (laserSlpitsSeparated ? laserSplitedAddDistance( index ) : 0),
-          laserAnimated ? move : centerDistance / 2
+          // laserAnimated ? move : centerDistance / 2
+          0
+        )
+       
+      const laserPartPositionSet = (laserPart, index, move) => 
+        laserPart.position.set(
+          0,
+          0,
+          laserPartsPositionCenterCorrection
+            // shift to the next part
+            - laserCylinderGeometryParamsObj.height * index
+            // move position
+            + (laserAnimated ? move : centerDistance / 2),
         )
        
 
@@ -528,11 +542,11 @@
       Laser
       --------------------*/
       const laserSplits = []
-      for (let index = 0; index < laserSplitsCount; index++) {
+      for (let indexLaserSplit = 0; indexLaserSplit < laserSplitsCount; indexLaserSplit++) {
         const laserSplit = laserSplitCreate( laserSplitsCount )
         laserSplits.push( laserSplit )
-        // laserPiecePositionSet( laserSplit.laserWaveGroup, index, centerDistance )
-        laserPiecePositionSet( laserSplit.laserWaveGroup, index, centerDistance )
+        laserSplitPositionSet( laserSplit.laserWaveGroup, indexLaserSplit/* , centerDistance */ )
+        // laserSplit.laserParts.forEach( (laserPart, indexLaserPart) => laserPartPositionSet( laserPart, indexLaserPart, centerDistance ))
       }
 
 
@@ -546,7 +560,12 @@
         time = ( render.clock.getElapsedTime() * 1 ) % 2
 
         if (laserAnimated) {
-          laserSplits.forEach( (laserSplit, index) => laserPiecePositionSet( laserSplit.laserWaveGroup, index, centerDistance - time ))
+          laserSplits.forEach( (laserSplit, indexLaserSplit) => {
+            // laserSplitPositionSet( laserSplit.laserWaveGroup, indexLaserSplit/* , centerDistance - time */ )
+            laserSplit.laserParts.forEach(
+              (laserPart, indexLaserPart) => laserPartPositionSet( laserPart, indexLaserPart, centerDistance - time )
+            )
+          })
         }
 
         render.renderer.render( render.scene, render.camera )
