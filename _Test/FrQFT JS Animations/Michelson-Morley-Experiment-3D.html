@@ -313,7 +313,7 @@
       /*--------
       Scene Basics */
       const laserAnimated = true
-      const laserSlpitsSeparated = false
+      const laserSlpitsSeparated = true
       const centerDistance = 1
       const centerHeightPosition = plateHeight / 2
 
@@ -377,7 +377,7 @@
           laserParts.push( laserPart )
           laserWaveGroup.add( laserPart )
           laserPart.rotation.set( pi2 / 4, 0, 0)
-          laserPartPositionSet( laserPart, index, centerDistance )
+          laserPartPositionSet( laserPart, index, 0 )
         }
         return { laserWaveGroup, laserParts }
       }
@@ -396,7 +396,84 @@
           0
         )
        
-      const laserPartPositionSet = (laserPart, index, move) => 
+      const laserPartPositionSet = (laserPart, index, move) => {
+        let arm = null
+        let armDirection = null
+        const sender = 0
+        const mainMirror = 1
+        const sideMirror = 2
+        const screen = 3
+        if (move <= centerDistance) {
+          arm = sender
+          armDirection = forward
+        } else {
+          switch (index) {
+            /*-----
+            StraightAndBack – straight forth to main mirror and back */
+            case 0:
+              if (move <= 2 * centerDistance) {
+                arm = mainMirror
+                armDirection = forward
+              } else {
+                if (move <= 3 * centerDistance) {
+                  arm = mainMirror
+                  armDirection = backward
+                } else {
+                  arm = sender
+                  armDirection = backward
+                }
+              }
+              break
+            /*-----
+            StraightAndScreen – straight forth to main mirror and sideways to screen */
+            case 1:
+              if (move <= 2 * centerDistance) {
+                arm = mainMirror
+                armDirection = forward
+              } else {
+                if (move <= 3 * centerDistance) {
+                  arm = mainMirror
+                  armDirection = backward
+                } else {
+                  arm = screen
+                  armDirection = forward
+                }
+              }
+              break
+            /*-----
+            SidewaysAndBack – AndBack – sideways to side mirror and sideways back */
+            case 2:
+              if (move <= 2 * centerDistance) {
+                arm = sideMirror
+                armDirection = forward
+              } else {
+                if (move <= 3 * centerDistance) {
+                  arm = sideMirror
+                  armDirection = backward
+                } else {
+                  arm = sender
+                  armDirection = backward
+                }
+              }
+              break
+            /*-----
+            SidewaysAndScreen – sideways to side mirror and straight to screen */
+            case 3:
+              if (move <= 2 * centerDistance) {
+                arm = sideMirror
+                armDirection = forward
+              } else {
+                if (move <= 3 * centerDistance) {
+                  arm = sideMirror
+                  armDirection = backward
+                } else {
+                  arm = screen
+                  armDirection = forward
+                }
+              }
+              break
+          }
+        }
         laserPart.position.set(
           0,
           0,
@@ -404,8 +481,9 @@
             // shift to the next part
             - laserCylinderGeometryParamsObj.height * index
             // move position
-            + (laserAnimated ? move : centerDistance / 2),
+            + (laserAnimated ? centerDistance - move : centerDistance / 2),
         )
+      }
        
 
       /*--------------------
@@ -546,7 +624,7 @@
         if (laserAnimated) {
           laserSplits.forEach( (laserSplit, indexLaserSplit) => {
             laserSplit.laserParts.forEach(
-              (laserPart, indexLaserPart) => laserPartPositionSet( laserPart, indexLaserPart, centerDistance - time )
+              (laserPart, indexLaserPart) => laserPartPositionSet( laserPart, indexLaserPart, time )
             )
           })
         }
