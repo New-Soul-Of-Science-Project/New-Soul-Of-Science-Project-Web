@@ -278,8 +278,10 @@
       }
       const laserClosedTopMaterialsParams = [
         laserMeshLambertMaterialParams,
-        laserMeshLambertMaterialParams,
+        // Wolle: laserMeshLambertMaterialParams,
+        // laserClearMeshLambertMaterialParams,
         laserClearMeshLambertMaterialParams,
+        laserMeshLambertMaterialParams,
       ]
       const laserOpenEndedMaterialsParams = [
         laserMeshLambertMaterialParams,
@@ -288,8 +290,10 @@
       ]
       const laserClosedBottomMaterialsParams = [
         laserMeshLambertMaterialParams,
-        laserClearMeshLambertMaterialParams,
+        // Wolle: laserClearMeshLambertMaterialParams,
+        // laserMeshLambertMaterialParams,
         laserMeshLambertMaterialParams,
+        laserClearMeshLambertMaterialParams,
       ]
       // const laserPartsPositionCenterCorrection =
       //   // half of the total length of the laser beam
@@ -318,7 +322,7 @@
       /*--------
       Scene Basics */
       const laserAnimated = true
-      const laserSlpitsSeparated = true
+      const laserSlpitsSeparated = false
       const centerDistance = 1
       const centerHeightPosition = plateHeight / 2
 
@@ -348,7 +352,7 @@
         return mirror
       }
 
-      const laserSplitCreate = (splitsCount) => {
+      const laserSplitCreate = (indexLaserSplit, splitsCount) => {
         /*--------
         Group */
         const laserWaveGroup = new THREE.Group()
@@ -357,7 +361,8 @@
         Parts */
         const laserPartsOpacity = (partIndex, partsCount) => {
           // ???: use Gauß'sche Normalverteilung?
-          return Math.sin( Math.PI * (partIndex / (partsCount - 1)) )
+          return 1
+          // Wolle: return Math.sin(Math.PI * (partIndex / (partsCount - 1)))
         }
         const laserPushMaterialByOpacityAry = (laserMaterials, materialParams, indexPart) => {
           laserMaterials.push( new THREE.MeshLambertMaterial(
@@ -381,8 +386,8 @@
           const laserPart = new THREE.Mesh( laserGeometry, laserMaterials )
           laserParts.push( laserPart )
           laserWaveGroup.add( laserPart )
-          laserPart.rotation.set( pi2 / 4, 0, 0)
-          laserPartPositionSet( laserPart, index, 0 )
+          // Wolle: laserPart.rotation.set( pi2 / 4, 0, 0)
+          laserPartPositionSet(laserPart, index, indexLaserSplit, 0)
         }
         return { laserWaveGroup, laserParts }
       }
@@ -401,44 +406,59 @@
           0
         )
        
-      const laserPartPositionSet = (laserPart, index, move) => {
+      const laserPartPositionSet = (laserPart, indexLaserPart, indexLaserSplit, move) => {
         if (!laserAnimated) {
+          // Wolle:
           move = centerDistance / 2
+          // move = 1 * centerDistance
+          // move = 2 * centerDistance
+          // move = 4 * centerDistance
         }
         const partPos =
           laserPartsPositionCenterCorrection
             // shift to the next part
-            + laserCylinderGeometryParamsObj.height * index
+            + laserCylinderGeometryParamsObj.height * indexLaserPart
         move += partPos
+        // Wolle:
+        // console.log('move: ', move)
         let arm = null
         let armDirection = null
+        let armStart = null
         let moveConsumed = 0
         const x = 0
         const z = 2
         const forward = 1
         const backward = -1
+        const end = centerDistance
+        const middle = 0
         if (move <= centerDistance) {
           arm = z
           armDirection = backward
+          armStart = end
           moveConsumed = 0
         } else {
-          switch (index) {
+          switch (indexLaserSplit) {
             /*-----
             StraightAndBack – straight forth to main mirror and back */
             case 0:
               if (move <= 2 * centerDistance) {
                 arm = z
                 armDirection = backward
-                moveConsumed = centerDistance
+                armStart = end
+                moveConsumed = 0
+                // Wolle:
+                // console.log('arm to main mirror ')
               } else {
                 if (move <= 3 * centerDistance) {
                   arm = z
                   armDirection = forward
+                  armStart = end
                   moveConsumed = 2 * centerDistance
                 } else {
                   arm = z
                   armDirection = forward
-                  moveConsumed = 3 * centerDistance
+                  armStart = end
+                  moveConsumed = 2 * centerDistance
                 }
               }
               break
@@ -448,15 +468,20 @@
               if (move <= 2 * centerDistance) {
                 arm = z
                 armDirection = backward
-                moveConsumed = centerDistance
+                armStart = end
+                moveConsumed = 0
+                // Wolle:
+                // console.log('arm to main mirror ')
               } else {
                 if (move <= 3 * centerDistance) {
                   arm = z
                   armDirection = forward
+                  armStart = end
                   moveConsumed = 2 * centerDistance
                 } else {
                   arm = x
                   armDirection = backward
+                  armStart = middle
                   moveConsumed = 3 * centerDistance
                 }
               }
@@ -467,15 +492,20 @@
               if (move <= 2 * centerDistance) {
                 arm = x
                 armDirection = forward
+                armStart = middle
                 moveConsumed = centerDistance
+                // Wolle:
+                // console.log('arm to side mirror ')
               } else {
                 if (move <= 3 * centerDistance) {
                   arm = x
                   armDirection = backward
+                  armStart = end
                   moveConsumed = 2 * centerDistance
                 } else {
                   arm = z
                   armDirection = forward
+                  armStart = middle
                   moveConsumed = 3 * centerDistance
                 }
               }
@@ -486,30 +516,56 @@
               if (move <= 2 * centerDistance) {
                 arm = x
                 armDirection = forward
+                armStart = middle
                 moveConsumed = centerDistance
               } else {
                 if (move <= 3 * centerDistance) {
                   arm = x
                   armDirection = backward
+                  armStart = end
                   moveConsumed = 2 * centerDistance
                 } else {
                   arm = x
                   armDirection = backward
-                  moveConsumed = 3 * centerDistance
+                  armStart = end
+                  moveConsumed = 2 * centerDistance
                 }
               }
               break
           }
         }
         let armPos =
-          (armDirection === forward ? -centerDistance : centerDistance)
-            + armDirection * (move - moveConsumed)
+          // Wolle: (armDirection === forward ? -centerDistance : centerDistance)
+          (-armDirection) * armStart + armDirection * (move - moveConsumed)
+        // if (moveConsumed === centerDistance) {
+        //   // Wolle:
+        //   console.log('moveConsumed: ', moveConsumed)
+        //   // Wolle:
+        //   console.log('move - moveConsumed: ', move - moveConsumed)
+        //   if (arm === x) {
+        //     console.log('arm: x')
+        //   } else {
+        //     console.log('arm: z')
+        //   }
+        //   if (armDirection === forward) {
+        //     console.log('armDirection: forward')
+        //   } else {
+        //     console.log('armDirection: backward')
+        //   }
+        //   // Wolle:
+        //   console.log('armPos: ', armPos)
+        // }
+        if (arm === x) {
+          laserPart.rotation.set( 0, 0, (pi2 / 4) * armDirection)
+        } else {
+          laserPart.rotation.set( (pi2 / 4) * armDirection, 0, 0)
+        }
         laserPart.position.set(
           arm === x ? armPos : 0,
           0,
           // laserPartsPositionCenterCorrection
           //   // shift to the next part
-          //   - laserCylinderGeometryParamsObj.height * index
+          //   - laserCylinderGeometryParamsObj.height * indexLaserPart
           //   // move position
           //   + (laserAnimated ? centerDistance - move : centerDistance / 2),
           arm === z ? armPos : 0,
@@ -637,9 +693,11 @@
       --------------------*/
       const laserSplits = []
       for (let indexLaserSplit = 0; indexLaserSplit < laserSplitsCount; indexLaserSplit++) {
-        const laserSplit = laserSplitCreate( laserSplitsCount )
-        laserSplits.push( laserSplit )
-        laserSplitPositionSet( laserSplit.laserWaveGroup, indexLaserSplit )
+        // Wolle:
+        // console.log('indexLaserSplit: ', indexLaserSplit)
+        const laserSplit = laserSplitCreate( indexLaserSplit, laserSplitsCount )
+        laserSplits.push(laserSplit)
+        laserSplitPositionSet(laserSplit.laserWaveGroup, indexLaserSplit)
       }
 
 
@@ -650,13 +708,12 @@
       var time = 0
 
       render.renderer.setAnimationLoop(() => {
-        time = ( render.clock.getElapsedTime() * 1 ) % 2
+        time = ( render.clock.getElapsedTime() * 1 ) % (4 * centerDistance)
 
         if (laserAnimated) {
           laserSplits.forEach( (laserSplit, indexLaserSplit) => {
             laserSplit.laserParts.forEach(
-              // (laserPart, indexLaserPart) => laserPartPositionSet( laserPart, indexLaserPart, time )
-              (laserPart, indexLaserPart) => laserPartPositionSet( laserPart, indexLaserPart, centerDistance )
+              (laserPart, indexLaserPart) => laserPartPositionSet( laserPart, indexLaserPart, indexLaserSplit, time)
             )
           })
         }
