@@ -278,8 +278,6 @@
       }
       const laserClosedTopMaterialsParams = [
         laserMeshLambertMaterialParams,
-        // Wolle: laserMeshLambertMaterialParams,
-        // laserClearMeshLambertMaterialParams,
         laserClearMeshLambertMaterialParams,
         laserMeshLambertMaterialParams,
       ]
@@ -290,8 +288,6 @@
       ]
       const laserClosedBottomMaterialsParams = [
         laserMeshLambertMaterialParams,
-        // Wolle: laserClearMeshLambertMaterialParams,
-        // laserMeshLambertMaterialParams,
         laserMeshLambertMaterialParams,
         laserClearMeshLambertMaterialParams,
       ]
@@ -361,8 +357,8 @@
         Parts */
         const laserPartsOpacity = (partIndex, partsCount) => {
           // ???: use Gauß'sche Normalverteilung?
-          return 1
-          // Wolle: return Math.sin(Math.PI * (partIndex / (partsCount - 1)))
+          // return 1 // for full cylinder
+          return Math.sin(Math.PI * (partIndex / (partsCount - 1)))
         }
         const laserPushMaterialByOpacityAry = (laserMaterials, materialParams, indexPart) => {
           laserMaterials.push( new THREE.MeshLambertMaterial(
@@ -386,7 +382,6 @@
           const laserPart = new THREE.Mesh( laserGeometry, laserMaterials )
           laserParts.push( laserPart )
           laserWaveGroup.add( laserPart )
-          // Wolle: laserPart.rotation.set( pi2 / 4, 0, 0)
           laserPartPositionSet(laserPart, index, indexLaserSplit, 0)
         }
         return { laserWaveGroup, laserParts }
@@ -408,10 +403,12 @@
        
       const laserPartPositionSet = (laserPart, indexLaserPart, indexLaserSplit, move) => {
         if (!laserAnimated) {
-          // Wolle:
+          // stand still position
           move = centerDistance / 2
+          // move = 0 * centerDistance
           // move = 1 * centerDistance
           // move = 2 * centerDistance
+          // move = 3 * centerDistance
           // move = 4 * centerDistance
         }
         const partPos =
@@ -419,8 +416,6 @@
             // shift to the next part
             + laserCylinderGeometryParamsObj.height * indexLaserPart
         move += partPos
-        // Wolle:
-        // console.log('move: ', move)
         let arm = null
         let armDirection = null
         let armStart = null
@@ -446,8 +441,6 @@
                 armDirection = backward
                 armStart = end
                 moveConsumed = 0
-                // Wolle:
-                // console.log('arm to main mirror ')
               } else {
                 if (move <= 3 * centerDistance) {
                   arm = z
@@ -470,8 +463,6 @@
                 armDirection = backward
                 armStart = end
                 moveConsumed = 0
-                // Wolle:
-                // console.log('arm to main mirror ')
               } else {
                 if (move <= 3 * centerDistance) {
                   arm = z
@@ -494,8 +485,6 @@
                 armDirection = forward
                 armStart = middle
                 moveConsumed = centerDistance
-                // Wolle:
-                // console.log('arm to side mirror ')
               } else {
                 if (move <= 3 * centerDistance) {
                   arm = x
@@ -535,39 +524,14 @@
           }
         }
         let armPos =
-          // Wolle: (armDirection === forward ? -centerDistance : centerDistance)
           (-armDirection) * armStart + armDirection * (move - moveConsumed)
-        // if (moveConsumed === centerDistance) {
-        //   // Wolle:
-        //   console.log('moveConsumed: ', moveConsumed)
-        //   // Wolle:
-        //   console.log('move - moveConsumed: ', move - moveConsumed)
-        //   if (arm === x) {
-        //     console.log('arm: x')
-        //   } else {
-        //     console.log('arm: z')
-        //   }
-        //   if (armDirection === forward) {
-        //     console.log('armDirection: forward')
-        //   } else {
-        //     console.log('armDirection: backward')
-        //   }
-        //   // Wolle:
-        //   console.log('armPos: ', armPos)
-        // }
-        if (arm === x) {
-          laserPart.rotation.set( 0, 0, (pi2 / 4) * armDirection)
-        } else {
-          laserPart.rotation.set( (pi2 / 4) * armDirection, 0, 0)
-        }
+        laserPart.rotation.set(
+          arm === z ? (pi2 / 4) * armDirection : 0,
+          0,
+          arm === x ? (pi2 / 4) * armDirection : 0)
         laserPart.position.set(
           arm === x ? armPos : 0,
           0,
-          // laserPartsPositionCenterCorrection
-          //   // shift to the next part
-          //   - laserCylinderGeometryParamsObj.height * indexLaserPart
-          //   // move position
-          //   + (laserAnimated ? centerDistance - move : centerDistance / 2),
           arm === z ? armPos : 0,
         )
       }
@@ -693,8 +657,6 @@
       --------------------*/
       const laserSplits = []
       for (let indexLaserSplit = 0; indexLaserSplit < laserSplitsCount; indexLaserSplit++) {
-        // Wolle:
-        // console.log('indexLaserSplit: ', indexLaserSplit)
         const laserSplit = laserSplitCreate( indexLaserSplit, laserSplitsCount )
         laserSplits.push(laserSplit)
         laserSplitPositionSet(laserSplit.laserWaveGroup, indexLaserSplit)
