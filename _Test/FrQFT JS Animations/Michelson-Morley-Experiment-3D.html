@@ -102,20 +102,20 @@
       Dimension Bowls */
       const bowlGeometryFactor = 1 / 16
       const bowlRadius = 1 * bowlGeometryFactor
-      const bowlColor = 0xe01010
+      const bowlColor = 0xff0000
       const bowlMeshPhysicalMaterialParams = {
         color: bowlColor,
         // opacity: 0.5,
         // transparent: true,
         emissive: 0x000000,
-        // metalness: 0.7,
-        metalness: 0.2,
+        metalness: 0.7,
+        // metalness: 0.2,
         flatShading: false,
-        // roughness: 0.7,
-        roughness: 0.9,
+        roughness: 0.7,
+        // roughness: 0.9,
         // envMap: textureCube,
-        // reflectivity: 1,
-        reflectivity: 0.5,
+        reflectivity: 1,
+        // reflectivity: 0.5,
         side: THREE.DoubleSide,
       }
       const bowlMaterial = new THREE.MeshPhysicalMaterial( bowlMeshPhysicalMaterialParams )
@@ -148,7 +148,9 @@
 
       /*--------
       Mirrors */
-      const mirrorBoxColor = 0xe0e0e0
+      const mirrorHalfColor = 0xe0e0e0
+      // const mirrorBoxColor = 0xe0e0e0
+      const mirrorBoxColor = 0x808080
       const mirrorBoxGeometry = new THREE.BoxGeometry( ...plateBoxGeometryParams )
       const mirrorBoxMeshLambertMaterialParams = { color: mirrorBoxColor, side: THREE.DoubleSide }
       const mirrorMaterial = new THREE.MeshLambertMaterial( mirrorBoxMeshLambertMaterialParams )
@@ -177,6 +179,7 @@
       }
       const mirrorHalfMaterial = new THREE.MeshPhysicalMaterial({
         ...mirrorHalfMeshPhysicalMaterialParams,
+        color: mirrorHalfColor,
         opacity: 0.5,
         transparent: true,
       })
@@ -249,9 +252,11 @@
       /*--------
       Laser */
       const laserColor = 0x00ff00
+      // const laserColor = 0x00e000
       const laserOpacity = 0.5
       const laserDiscsInside = false
-      const laserPartsCount = 41
+      // const laserPartsCount = 41
+      const laserPartsCount = 21
       const laserGeometryFactor = 0.125 * 0.1
       const laserCylinderGeometryParamsObj = {
         radiusTop: 1 * laserGeometryFactor,
@@ -265,31 +270,58 @@
       }
       const laserCylinderGeometryParams = objectValuesToArray(laserCylinderGeometryParamsObj)
       const laserGeometry = new THREE.CylinderGeometry( ...laserCylinderGeometryParams )
-      const laserMeshLambertMaterialParams = {
+      // const laserMeshLambertMaterialParams = {
+      //   color: laserColor,
+      //   opacity: laserOpacity,
+      //   transparent: true,
+      //   side: THREE.DoubleSide,
+      // }
+      // const laserClearMeshLambertMaterialParams = {
+      //   ...laserMeshLambertMaterialParams,
+      //   opacity: !laserDiscsInside ? 0.0 : laserOpacity,
+      //   transparent: true,
+      // }
+      const laserMeshPhysicalMaterialParams = {
         color: laserColor,
         opacity: laserOpacity,
         transparent: true,
-        side: THREE.DoubleSide
+        // emissive: 0x000000,
+        emissive: laserColor,
+        metalness: 0.0,
+        flatShading: false,
+        roughness: 0.0,
+        // envMap: textureCube,
+        reflectivity: 0,
+        side: THREE.DoubleSide,
       }
-      const laserClearMeshLambertMaterialParams = {
-        ...laserMeshLambertMaterialParams,
+      const laserClearMeshPhysicalMaterialParams = {
+        ...laserMeshPhysicalMaterialParams,
         opacity: !laserDiscsInside ? 0.0 : laserOpacity,
-        transparent: true
+        transparent: true,
       }
       const laserClosedTopMaterialsParams = [
-        laserMeshLambertMaterialParams,
-        laserClearMeshLambertMaterialParams,
-        laserMeshLambertMaterialParams,
+        // laserMeshLambertMaterialParams,
+        // laserClearMeshLambertMaterialParams,
+        // laserMeshLambertMaterialParams,
+        laserMeshPhysicalMaterialParams,
+        laserClearMeshPhysicalMaterialParams,
+        laserMeshPhysicalMaterialParams,
       ]
       const laserOpenEndedMaterialsParams = [
-        laserMeshLambertMaterialParams,
-        laserClearMeshLambertMaterialParams,
-        laserClearMeshLambertMaterialParams,
+        // laserMeshLambertMaterialParams,
+        // laserClearMeshLambertMaterialParams,
+        // laserClearMeshLambertMaterialParams,
+        laserMeshPhysicalMaterialParams,
+        laserClearMeshPhysicalMaterialParams,
+        laserClearMeshPhysicalMaterialParams,
       ]
       const laserClosedBottomMaterialsParams = [
-        laserMeshLambertMaterialParams,
-        laserMeshLambertMaterialParams,
-        laserClearMeshLambertMaterialParams,
+        // laserMeshLambertMaterialParams,
+        // laserMeshLambertMaterialParams,
+        // laserClearMeshLambertMaterialParams,
+        laserMeshPhysicalMaterialParams,
+        laserMeshPhysicalMaterialParams,
+        laserClearMeshPhysicalMaterialParams,
       ]
       const laserPartsPositionCenterCorrection =
         // half of the total length of the laser beam
@@ -356,7 +388,8 @@
           return Math.sin(Math.PI * (partIndex / (partsCount - 1)))
         }
         const laserPushMaterialByOpacityAry = (laserMaterials, materialParams, indexPart) => {
-          laserMaterials.push( new THREE.MeshLambertMaterial(
+          // laserMaterials.push( new THREE.MeshLambertMaterial(
+          laserMaterials.push( new THREE.MeshPhysicalMaterial(
             { ...materialParams, opacity: materialParams.opacity * laserPartsOpacity( indexPart, laserPartsCount ) / laserSplitsCount }
           ))
         }

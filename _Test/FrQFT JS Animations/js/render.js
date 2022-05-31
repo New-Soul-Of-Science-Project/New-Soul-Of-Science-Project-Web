@@ -44,6 +44,10 @@ export class Render {
     /*--------------------
     Light
     --------------------*/
+
+    // this.ambientLight = new THREE.AmbientLight(0xffffff, .5)
+    // this.scene.add(this.ambientLight)
+
 		this.spotLightParamsObj = {
 			color: 0xffffff,
 			intensity: 1.0,
