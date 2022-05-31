@@ -251,17 +251,20 @@
 
       /*--------
       Laser */
+      // const laserColor = 0xffff00
+      // const laserColor = 0xff0000
       const laserColor = 0x00ff00
-      // const laserColor = 0x00e000
       const laserOpacity = 0.5
       const laserDiscsInside = false
       // const laserPartsCount = 41
       const laserPartsCount = 21
       const laserGeometryFactor = 0.125 * 0.1
+      const laserBeamLengthUnits = 8
+      const laserBeamLength = laserBeamLengthUnits * laserGeometryFactor
       const laserCylinderGeometryParamsObj = {
         radiusTop: 1 * laserGeometryFactor,
         radiusBottom: 1 * laserGeometryFactor,
-        height: (8 * laserGeometryFactor) / laserPartsCount,
+        height: laserBeamLength / laserPartsCount,
         radialSegments: 40,
         heightSegments: 1,
         // openEnded: true,
@@ -448,6 +451,7 @@
         let armDirection = null
         let armStart = null
         let moveConsumed = 0
+        // let scale = 1
         const x = 0
         const z = 2
         const forward = 1
@@ -557,6 +561,16 @@
           arm === z ? (pi2 / 4) * armDirection : 0,
           0,
           arm === x ? (pi2 / 4) * armDirection : 0)
+        // ? on and after screen position 
+        if (arm === x && armDirection === -1 && centerDistance * 2 <= move - moveConsumed) {
+          armPos = -centerDistance
+          // armPos = -centerDistance + (laserBeamLength / 2)
+          // scale = ((move - moveConsumed) / (laserBeamLength / 2)) / 2
+          // scale = 2
+        } else {
+          // scale = 1
+        }
+        // laserPart.scale.set(scale, 1, scale)
         laserPart.position.set(
           arm === x ? armPos : 0,
           0,
@@ -696,16 +710,24 @@
       --------------------*/
 
       var time = 0
+      var move = 0
+      let velocityFactor = 1
+      const arms = 4
+      const completeWay = (laserBeamLength / 2) + centerDistance * arms + (laserBeamLength / 2)
 
       render.renderer.setAnimationLoop(() => {
-        time = ( render.clock.getElapsedTime() * 1 ) % (4 * centerDistance)
+        time = render.clock.getElapsedTime()
+        move = -laserBeamLength + (time * velocityFactor) % completeWay
 
         if (laserAnimated) {
-          laserSplits.forEach( (laserSplit, indexLaserSplit) => {
-            laserSplit.laserParts.forEach(
-              (laserPart, indexLaserPart) => laserPartPositionSet( laserPart, indexLaserPart, indexLaserSplit, time)
-            )
-          })
+          laserSplits.forEach(
+            (laserSplit, indexLaserSplit) => {
+              laserSplit.laserParts.forEach(
+                (laserPart, indexLaserPart) =>
+                  laserPartPositionSet( laserPart, indexLaserPart, indexLaserSplit, move)
+              )
+            }
+          )
         }
 
         render.renderer.render( render.scene, render.camera )
