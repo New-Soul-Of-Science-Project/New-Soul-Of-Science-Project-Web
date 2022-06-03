@@ -3,11 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Michelson-Morley-Experiment-3D – FrQFT</title>
-    <style>
-      body { margin: 0; }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link type="text/css" rel="stylesheet" href="animation.css">
   </head>
   <body>
+    <div id="container"></div>
+    <div id="info">
+      <h1>Michelson-Morley-Experiment</h1>
+      <h2 id="headline"></h2>
+    </div>
 
     <!-- *** Imports *** -->
 
@@ -47,6 +52,8 @@
 
       import * as THREE from 'three' // is needed as module with this name in deeper three.js structures
 
+      import { GUI } from 'https://unpkg.com/three@0.140.2/examples/jsm/libs/lil-gui.module.min.js'
+
       import {
         pi2,
         eleWidth,
@@ -67,7 +74,18 @@
       Light
       Controls
       --------------------*/
-      const render = new Render( eleWidth, eleHeight )
+      const render = new Render(eleWidth, eleHeight)
+
+      const container = document.getElementById( 'container' )
+      container.style.width = render.dimensions.width + 'px'
+      container.style.height = render.dimensions.height + 'px'
+      container.appendChild( render.renderer.domElement )
+
+      const info = document.getElementById( 'info' )
+      info.style.width = render.dimensions.width + 'px'
+      info.style.height = render.dimensions.height + 'px'
+
+      const headline = document.getElementById( 'headline' )
 
 
       /*--------------------
@@ -352,10 +370,14 @@
       const centerDistance = 1
       const centerHeightPosition = plateHeight / 2
 
+      let theoryModel = 'SRT' // 'FrQFT'
+
+
 
       /*--------------------
       Functions Local
       --------------------*/
+
 
       const mirrorCreate = (params) => {
         // params: {
@@ -577,7 +599,124 @@
           arm === z ? armPos : 0,
         )
       }
-       
+
+      let settings
+      let folderTheory
+      let buttonFrQFT
+      let buttonSRT
+
+      function createPanel() {
+
+        const panel = new GUI({ width: 310 })
+        // container.appendChild( panel.domElement )
+
+        // const folder1 = panel.addFolder( 'Visibility' );
+        const folderTheory = panel.addFolder( 'Theorie / Model' )
+        // const folder2 = panel.addFolder( 'Activation/Deactivation' );
+        // const folder3 = panel.addFolder( 'Pausing/Stepping' );
+        // const folder4 = panel.addFolder( 'Crossfading' );
+        // const folder5 = panel.addFolder( 'Blend Weights' );
+        // const folder6 = panel.addFolder( 'Speed In ' );
+
+        settings = {
+          // 'show model': true,
+          // 'show skeleton': false,
+          'FrQFT / Medium Theorie': function () {
+            setTheory('FrQFT')
+          },
+          'SRT': function () {
+            setTheory('SRT')
+          },
+          // 'deactivate all': deactivateAllActions,
+          // 'activate all': activateAllActions,
+          // 'pause/continue': pauseContinue,
+          // 'make single step': toSingleStepMode,
+          // 'modify step size': 0.05,
+          // 'from walk to idle': function () {
+
+          //   prepareCrossFade( walkAction, idleAction, 1.0 );
+
+          // },
+        //   'from idle to walk': function () {
+
+        //     prepareCrossFade( idleAction, walkAction, 0.5 );
+
+        //   },
+        //   'from walk to run': function () {
+
+        //     prepareCrossFade( walkAction, runAction, 2.5 );
+
+        //   },
+        //   'from run to walk': function () {
+
+        //     prepareCrossFade( runAction, walkAction, 5.0 );
+
+        //   },
+        //   'use default duration': true,
+        //   'set custom duration': 3.5,
+        //   'modify idle weight': 0.0,
+        //   'modify walk weight': 1.0,
+        //   'modify run weight': 0.0,
+        //   'modify time scale': 1.0
+        }
+
+        buttonFrQFT = folderTheory.add( settings, 'FrQFT / Medium Theorie' )
+        buttonSRT = folderTheory.add( settings, 'SRT' )
+        setTheory()
+        // folder2.add( settings, 'deactivate all' );
+        // folder2.add( settings, 'activate all' );
+        // folder3.add( settings, 'pause/continue' );
+        // folder3.add( settings, 'make single step' );
+        // folder3.add( settings, 'modify step size', 0.01, 0.1, 0.001 );
+        // crossFadeControls.push( folder4.add( settings, 'from walk to idle' ) );
+        // crossFadeControls.push( folder4.add( settings, 'from idle to walk' ) );
+        // crossFadeControls.push( folder4.add( settings, 'from walk to run' ) );
+        // crossFadeControls.push( folder4.add( settings, 'from run to walk' ) );
+        // folder4.add( settings, 'use default duration' );
+        // folder4.add( settings, 'set custom duration', 0, 10, 0.01 );
+        // folder5.add( settings, 'modify idle weight', 0.0, 1.0, 0.01 ).listen().onChange( function ( weight ) {
+
+        //   setWeight( idleAction, weight );
+
+        // } );
+        // folder5.add( settings, 'modify walk weight', 0.0, 1.0, 0.01 ).listen().onChange( function ( weight ) {
+
+        //   setWeight( walkAction, weight );
+
+        // } );
+        // folder5.add( settings, 'modify run weight', 0.0, 1.0, 0.01 ).listen().onChange( function ( weight ) {
+
+        //   setWeight( runAction, weight );
+
+        // } );
+        // folder6.add( settings, 'modify time scale', 0.0, 1.5, 0.01 ).onChange( modifyTimeScale );
+
+        // folder1.open();
+        // folder2.open();
+        // folder3.open();
+        // folder4.open();
+        // folder5.open();
+        // folder6.open();
+
+      }
+
+      function setTheory(newTheoryModel = null) {
+        if (newTheoryModel) theoryModel = newTheoryModel
+        switch (theoryModel) {
+          case 'FrQFT':
+            headline.innerText = 'Fraktale Quanten-Fluss-Theorie (FrQFT) / Medium Theorie'
+            buttonFrQFT.disable()
+            buttonSRT.enable()
+            break
+          case 'SRT':
+            headline.innerText = 'Spezielle Relativitätstheorie (SRT)'
+            buttonFrQFT.enable()
+            buttonSRT.disable()
+            break
+          default:
+            break
+        }
+      }
 
       /*--------------------
       Light, additional
@@ -703,6 +842,12 @@
         laserSplits.push(laserSplit)
         laserSplitPositionSet(laserSplit.laserWaveGroup, indexLaserSplit)
       }
+
+      /*--------------------
+      Panel
+      --------------------*/
+      createPanel()
+      setTheory()
 
 
       /*--------------------

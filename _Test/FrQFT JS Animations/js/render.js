@@ -14,6 +14,8 @@ import { objectValuesToArray } from 'utilities' // with 'es-module-shims.js' usi
 export class Render {
   constructor(width, height)
   {
+    this.dimensions = new Object({ width, height })
+
     /*--------------------
     Clock
     --------------------*/
@@ -48,15 +50,15 @@ export class Render {
     // this.ambientLight = new THREE.AmbientLight(0xffffff, .5)
     // this.scene.add(this.ambientLight)
 
-		this.spotLightParamsObj = {
-			color: 0xffffff,
-			intensity: 1.0,
-			// distance: Float,
-			// angle: Radians,
-			// penumbra: Float,
-			// decay: Float,
-		}
-		this.spotLightParams = objectValuesToArray(this.spotLightParamsObj)
+    this.spotLightParamsObj = {
+      color: 0xffffff,
+      intensity: 1.0,
+      // distance: Float,
+      // angle: Radians,
+      // penumbra: Float,
+      // decay: Float,
+    }
+    this.spotLightParams = objectValuesToArray(this.spotLightParamsObj)
     this.spotLight = new THREE.SpotLight( ...this.spotLightParams )
     this.spotLight.castShadow = true
     this.scene.add( this.spotLight )
