@@ -612,6 +612,8 @@
       let folderVelocity = null
       let sliderTimeFactor = null
       const sliderTimeFactorName = 'Zeitskala'
+      let sliderExperimentVelocity = null
+      const sliderExperimentVelocityName = 'Zum Beobachter'
 
       function createPanel() {
 
@@ -620,10 +622,6 @@
 
         const folderTheory = panel.addFolder( 'Theorie / Model' )
         const folderVelocity = panel.addFolder( 'Geschwindigkeit' );
-        // const folder3 = panel.addFolder( 'Pausing/Stepping' );
-        // const folder4 = panel.addFolder( 'Crossfading' );
-        // const folder5 = panel.addFolder( 'Blend Weights' );
-        // const folder6 = panel.addFolder( 'Speed In ' );
 
         settings = {
           [buttonFrQFTName]: function () {
@@ -633,6 +631,7 @@
             setTheory(theoryModel_enum_SRT)
           },
           [sliderTimeFactorName]: 1.0,
+          [sliderExperimentVelocityName]: 1.0,
           // 'deactivate all': deactivateAllActions,
           // 'activate all': activateAllActions,
           // 'pause/continue': pauseContinue,
@@ -671,6 +670,9 @@
         setTheory()
         sliderTimeFactor = folderVelocity.add(settings, sliderTimeFactorName, 0.0, 2.0).onChange(function (timeFactor) {
           setTimeFactor(timeFactor)
+        })
+        sliderExperimentVelocity = folderVelocity.add(settings, sliderExperimentVelocityName, 0.0, 1.0).onChange(function (experimentVelocity) {
+          // setTimeFactor(timeFactor)
         })
         // folder2.add( settings, 'deactivate all' );
         // folder2.add( settings, 'activate all' );
@@ -870,11 +872,11 @@
       var time = 0
       var move = 0
       const arms = 4
-      const completeWay = (laserBeamLength / 2) + centerDistance * arms + (laserBeamLength / 2)
+      const completeWay = (laserBeamLength / 2) + centerDistance * arms // + (laserBeamLength / 2)
 
       render.renderer.setAnimationLoop(() => {
         time = render.clock.getElapsedTime()
-        move = -laserBeamLength + (time * timeFactor) % completeWay
+        move = -(laserBeamLength / 2) + ((time * timeFactor) % completeWay)
 
         if (laserAnimated) {
           laserSplits.forEach(
