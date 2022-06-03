@@ -370,7 +370,10 @@
       const centerDistance = 1
       const centerHeightPosition = plateHeight / 2
 
-      let theoryModel = 'SRT' // 'FrQFT'
+      let theoryModel_enum_FrQFT = 'FrQFT'
+      let theoryModel_enum_SRT = 'SRT'
+      let theoryModel = theoryModel_enum_SRT
+      let timeFactor = 1.0
 
 
 
@@ -600,33 +603,36 @@
         )
       }
 
-      let settings
-      let folderTheory
-      let buttonFrQFT
-      let buttonSRT
+      let settings = null
+      let folderTheory = null
+      let buttonFrQFT = null
+      const buttonFrQFTName = 'FrQFT / Medium Theorie'
+      let buttonSRT = null
+      const buttonSRTName = 'SRT'
+      let folderVelocity = null
+      let sliderTimeFactor = null
+      const sliderTimeFactorName = 'Zeitskala'
 
       function createPanel() {
 
         const panel = new GUI({ width: 310 })
         // container.appendChild( panel.domElement )
 
-        // const folder1 = panel.addFolder( 'Visibility' );
         const folderTheory = panel.addFolder( 'Theorie / Model' )
-        // const folder2 = panel.addFolder( 'Activation/Deactivation' );
+        const folderVelocity = panel.addFolder( 'Geschwindigkeit' );
         // const folder3 = panel.addFolder( 'Pausing/Stepping' );
         // const folder4 = panel.addFolder( 'Crossfading' );
         // const folder5 = panel.addFolder( 'Blend Weights' );
         // const folder6 = panel.addFolder( 'Speed In ' );
 
         settings = {
-          // 'show model': true,
-          // 'show skeleton': false,
-          'FrQFT / Medium Theorie': function () {
-            setTheory('FrQFT')
+          [buttonFrQFTName]: function () {
+            setTheory(theoryModel_enum_FrQFT)
           },
-          'SRT': function () {
-            setTheory('SRT')
+          [buttonSRTName]: function () {
+            setTheory(theoryModel_enum_SRT)
           },
+          [sliderTimeFactorName]: 1.0,
           // 'deactivate all': deactivateAllActions,
           // 'activate all': activateAllActions,
           // 'pause/continue': pauseContinue,
@@ -660,9 +666,12 @@
         //   'modify time scale': 1.0
         }
 
-        buttonFrQFT = folderTheory.add( settings, 'FrQFT / Medium Theorie' )
-        buttonSRT = folderTheory.add( settings, 'SRT' )
+        buttonFrQFT = folderTheory.add(settings, buttonFrQFTName)
+        buttonSRT = folderTheory.add(settings, buttonSRTName)
         setTheory()
+        sliderTimeFactor = folderVelocity.add(settings, sliderTimeFactorName, 0.0, 2.0).onChange(function (timeFactor) {
+          setTimeFactor(timeFactor)
+        })
         // folder2.add( settings, 'deactivate all' );
         // folder2.add( settings, 'activate all' );
         // folder3.add( settings, 'pause/continue' );
@@ -703,12 +712,12 @@
       function setTheory(newTheoryModel = null) {
         if (newTheoryModel) theoryModel = newTheoryModel
         switch (theoryModel) {
-          case 'FrQFT':
+          case theoryModel_enum_FrQFT:
             headline.innerText = 'Fraktale Quanten-Fluss-Theorie (FrQFT) / Medium Theorie'
             buttonFrQFT.disable()
             buttonSRT.enable()
             break
-          case 'SRT':
+          case theoryModel_enum_SRT:
             headline.innerText = 'Spezielle Relativitätstheorie (SRT)'
             buttonFrQFT.enable()
             buttonSRT.disable()
@@ -716,6 +725,10 @@
           default:
             break
         }
+      }
+
+      function setTimeFactor(newTimeFactor) {
+        timeFactor = newTimeFactor
       }
 
       /*--------------------
@@ -856,13 +869,12 @@
 
       var time = 0
       var move = 0
-      let velocityFactor = 1
       const arms = 4
       const completeWay = (laserBeamLength / 2) + centerDistance * arms + (laserBeamLength / 2)
 
       render.renderer.setAnimationLoop(() => {
         time = render.clock.getElapsedTime()
-        move = -laserBeamLength + (time * velocityFactor) % completeWay
+        move = -laserBeamLength + (time * timeFactor) % completeWay
 
         if (laserAnimated) {
           laserSplits.forEach(
