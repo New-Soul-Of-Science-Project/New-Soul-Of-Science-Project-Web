@@ -375,6 +375,7 @@
       let theoryModel = theoryModel_enum_SRT
       let timeFactor = 1.0
       let experimentVelocity = 0.0
+      let inversGammaZ = 1.0
 
 
 
@@ -742,9 +743,10 @@
 
       function setExperimentVelocity(newExperimentVelocity) {
         experimentVelocity = newExperimentVelocity
+        // Lorentz contraction
         const c0Pow2 = 1
-        let gamma = 1.0 / Math.sqrt(1 - Math.pow(experimentVelocity, 2) / c0Pow2)
-        experimentGroup.scale.set(1.0, 1.0, 1.0 / gamma)
+        inversGammaZ = Math.sqrt(1 - Math.pow(experimentVelocity, 2) / c0Pow2)
+        experimentGroup.scale.set(1.0, 1.0, inversGammaZ)
       }
 
 
