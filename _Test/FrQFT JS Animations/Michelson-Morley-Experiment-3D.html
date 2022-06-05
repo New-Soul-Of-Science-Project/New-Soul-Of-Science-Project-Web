@@ -710,7 +710,7 @@
         sliderTimeFactor = folderVelocity.add(settings, sliderTimeFactorName, 0.0, 200.0).onChange(function (newTimeFactorPercent) {
           setTimeFactor(newTimeFactorPercent / 100)
         })
-        sliderExperimentVelocity = folderVelocity.add(settings, sliderExperimentVelocityName, -100.0, 100.0).onChange(function (newExperimentVelocityPercent) {
+        sliderExperimentVelocity = folderVelocity.add(settings, sliderExperimentVelocityName, -99.9995, 99.9995).onChange(function (newExperimentVelocityPercent) {
           setExperimentVelocity(newExperimentVelocityPercent / 100)
         })
 
@@ -742,7 +742,16 @@
 
       function setExperimentVelocity(newExperimentVelocity) {
         experimentVelocity = newExperimentVelocity
+        const c0Pow2 = 1
+        let gamma = 1.0 / Math.sqrt(1 - Math.pow(experimentVelocity, 2) / c0Pow2)
+        experimentGroup.scale.set(1.0, 1.0, 1.0 / gamma)
       }
+
+
+      /*--------------------
+      Scene Objects
+      --------------------
+      --------------------*/
 
       /*--------------------
       Light, additional
@@ -784,13 +793,27 @@
       render.scene.add(gridGroup)
       gridGroup.rotation.set( pi2 / 4, 0, 0)
 
+
+      /*--------------------
+      Expermiment Objects
+      --------------------
+      --------------------*/
+
+      /*--------------------
+      Experiment Group
+      --------------------*/
+
+      const experimentGroup = new THREE.Group()
+      render.scene.add(experimentGroup)
+      setExperimentVelocity(experimentVelocity)
+
       /*--------------------
       Dimension Bowls
       --------------------*/
       /*--------
       Group */
       const bowlsGroup = new THREE.Group()
-      render.scene.add( bowlsGroup )
+      experimentGroup.add( bowlsGroup )
       bowlsGroup.position.set( 0, bowlRadius, 0 )
       /*--------
       Bowls */
@@ -826,7 +849,7 @@
         mirrorBoxMaterial: mirrorMaterial,
         mirrorPlaneMaterial: mirrorPlaneMaterial,
       })
-      render.scene.add( mirrorMain )
+      experimentGroup.add( mirrorMain )
       mirrorMain.rotation.set( 0, pi2 / 2, 0)
       mirrorMain.position.set( 0, centerHeightPosition, -centerDistance )
 
@@ -838,7 +861,7 @@
         mirrorBoxMaterial: mirrorMaterial,
         mirrorPlaneMaterial: mirrorPlaneMaterial,
       })
-      render.scene.add( mirrorSide )
+      experimentGroup.add( mirrorSide )
       mirrorSide.rotation.set( 0, pi2 / 4, 0)
       mirrorSide.position.set( centerDistance, centerHeightPosition, 0 )
 
@@ -846,7 +869,7 @@
       Half Mirror
       --------------------*/
       const mirrorCenter = new THREE.Mesh( mirrorHalfGeometry, mirrorHalfMaterial )
-      render.scene.add( mirrorCenter )
+      experimentGroup.add( mirrorCenter )
       mirrorCenter.rotation.set( 0, pi2 / 8, 0)
       mirrorCenter.position.set( 0, centerHeightPosition, 0 )
 
@@ -854,7 +877,7 @@
       Screen For Interference
       --------------------*/
       const screenInterference = new THREE.Mesh( screenGeometry, screenMaterial )
-      render.scene.add( screenInterference )
+      experimentGroup.add( screenInterference )
       screenInterference.rotation.set( 0, - (pi2 / 4), 0)
       screenInterference.position.set( -centerDistance, centerHeightPosition, 0 )
 
@@ -864,7 +887,7 @@
       /*--------
       Group */
       const senderGroup = new THREE.Group()
-      render.scene.add( senderGroup )
+      experimentGroup.add( senderGroup )
       senderGroup.position.set( 0, centerHeightPosition, centerDistance + senderCorpusBoxGeometryParamsObj.dept / 2 )
       /*--------
       Corpus */
