@@ -683,7 +683,7 @@
       let sliderTimeFactor = null
       const sliderTimeFactorName = 'Zeitskala (%)'
       let sliderExperimentVelocity = null
-      const sliderExperimentVelocityName = 'Zum Beobachter (% per LGS)'
+      const sliderExperimentVelocityName = 'Zum Beobachter (% der LG)'
 
       function createPanel() {
 
@@ -908,16 +908,18 @@
         move = -(laserBeamLength / 2) + ((time * timeFactor) % completeWay)
 
         // performance: maybe move the grid lines instead of creating a new group every time?
-        render.scene.remove(gridGroup)
-        gridGroup = null
-        gridParameters = {
-          ...gridParameters,
-          widthOffset: 0.0,
-          heightOffset: (time * timeFactor) * experimentVelocity,
+        if (experimentVelocity !== 0 || gridParameters.heightOffset !== 0) {
+          render.scene.remove(gridGroup)
+          gridGroup = null
+          gridParameters = {
+            ...gridParameters,
+            // widthOffset: 0.0,
+            heightOffset: experimentVelocity === 0 ? 0 : (time * timeFactor) * experimentVelocity,
+          }
+          gridGroup = drawGrid(gridParameters)
+          render.scene.add(gridGroup)
+          gridGroup.rotation.set( pi2 / 4, 0, 0)
         }
-        gridGroup = drawGrid(gridParameters)
-        render.scene.add(gridGroup)
-        gridGroup.rotation.set( pi2 / 4, 0, 0)
 
         if (laserAnimated) {
           laserSplits.forEach(
