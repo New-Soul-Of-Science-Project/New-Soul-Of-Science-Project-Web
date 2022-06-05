@@ -374,6 +374,7 @@
       let theoryModel_enum_SRT = 'SRT'
       let theoryModel = theoryModel_enum_SRT
       let timeFactor = 1.0
+      let experimentVelocity = 0.0
 
 
 
@@ -381,6 +382,75 @@
       Functions Local
       --------------------*/
 
+
+      // drawGrid will determine blocksize based on the 
+      // amount of horizontal gridlines to draw
+      function drawGrid({
+        width,
+        height,
+        widthNumGridLines,
+        heightNumGridLines,
+        widthOffset,
+        heightOffset,
+        color = 0x000000,
+        opacity = 1.0,
+      }) {
+
+        // Determine the size of a grid block (square)
+        const widthGridBlockSize = width / widthNumGridLines
+        const heightGridBlockSize = height / heightNumGridLines
+
+        // correct negative offsets
+        widthOffset = widthOffset < 0 ? widthGridBlockSize - ((-widthOffset) % widthGridBlockSize) : widthOffset % widthGridBlockSize
+        heightOffset = heightOffset < 0 ? heightGridBlockSize - ((-heightOffset) % heightGridBlockSize) : heightOffset % heightGridBlockSize
+
+        const widthHalf = width / 2
+        const heightHalf = height / 2
+
+        var material = new THREE.LineBasicMaterial({
+          color,
+          opacity,
+          transparent: (opacity < 1),
+        })
+
+        const gridGroup = new THREE.Group()
+
+        for (var x = 0; x <= widthNumGridLines; x++) {
+          let xPos
+          if (widthOffset % widthGridBlockSize === 0) {
+            xPos = -widthHalf + (widthOffset + widthGridBlockSize * x)
+          } else {
+            xPos = -widthHalf + ((widthOffset + widthGridBlockSize * x) % width)
+          }
+
+          const points = []
+          points.push(new THREE.Vector3(xPos, -heightHalf, 0))
+          points.push(new THREE.Vector3(xPos, heightHalf, 0))
+
+          const geometry = new THREE.BufferGeometry().setFromPoints(points)
+          const line = new THREE.Line(geometry, material)
+          gridGroup.add(line)
+        }
+
+        for (var y = 0; y <= heightNumGridLines; y++) {
+          let yPos
+          if (heightOffset % heightGridBlockSize === 0) {
+            yPos = -heightHalf + (heightOffset + heightGridBlockSize * y)
+          } else {
+            yPos = -heightHalf + ((heightOffset + heightGridBlockSize * y) % height)
+          }
+
+          const points = []
+          points.push(new THREE.Vector3(-widthHalf, yPos, 0))
+          points.push(new THREE.Vector3(widthHalf, yPos, 0))
+
+          const geometry = new THREE.BufferGeometry().setFromPoints(points)
+          const line = new THREE.Line(geometry, material)
+          gridGroup.add(line)
+        }
+
+        return gridGroup
+      }
 
       const mirrorCreate = (params) => {
         // params: {
@@ -611,9 +681,9 @@
       const buttonSRTName = 'SRT'
       let folderVelocity = null
       let sliderTimeFactor = null
-      const sliderTimeFactorName = 'Zeitskala'
+      const sliderTimeFactorName = 'Zeitskala (%)'
       let sliderExperimentVelocity = null
-      const sliderExperimentVelocityName = 'Zum Beobachter'
+      const sliderExperimentVelocityName = 'Zum Beobachter (% per LGS)'
 
       function createPanel() {
 
@@ -630,84 +700,21 @@
           [buttonSRTName]: function () {
             setTheory(theoryModel_enum_SRT)
           },
-          [sliderTimeFactorName]: 1.0,
-          [sliderExperimentVelocityName]: 1.0,
-          // 'deactivate all': deactivateAllActions,
-          // 'activate all': activateAllActions,
-          // 'pause/continue': pauseContinue,
-          // 'make single step': toSingleStepMode,
-          // 'modify step size': 0.05,
-          // 'from walk to idle': function () {
-
-          //   prepareCrossFade( walkAction, idleAction, 1.0 );
-
-          // },
-        //   'from idle to walk': function () {
-
-        //     prepareCrossFade( idleAction, walkAction, 0.5 );
-
-        //   },
-        //   'from walk to run': function () {
-
-        //     prepareCrossFade( walkAction, runAction, 2.5 );
-
-        //   },
-        //   'from run to walk': function () {
-
-        //     prepareCrossFade( runAction, walkAction, 5.0 );
-
-        //   },
-        //   'use default duration': true,
-        //   'set custom duration': 3.5,
-        //   'modify idle weight': 0.0,
-        //   'modify walk weight': 1.0,
-        //   'modify run weight': 0.0,
-        //   'modify time scale': 1.0
+          [sliderTimeFactorName]: timeFactor * 100,
+          [sliderExperimentVelocityName]: experimentVelocity * 100,
         }
 
         buttonFrQFT = folderTheory.add(settings, buttonFrQFTName)
         buttonSRT = folderTheory.add(settings, buttonSRTName)
         setTheory()
-        sliderTimeFactor = folderVelocity.add(settings, sliderTimeFactorName, 0.0, 2.0).onChange(function (timeFactor) {
-          setTimeFactor(timeFactor)
+        sliderTimeFactor = folderVelocity.add(settings, sliderTimeFactorName, 0.0, 200.0).onChange(function (newTimeFactorPercent) {
+          setTimeFactor(newTimeFactorPercent / 100)
         })
-        sliderExperimentVelocity = folderVelocity.add(settings, sliderExperimentVelocityName, 0.0, 1.0).onChange(function (experimentVelocity) {
-          // setTimeFactor(timeFactor)
+        sliderExperimentVelocity = folderVelocity.add(settings, sliderExperimentVelocityName, -100.0, 100.0).onChange(function (newExperimentVelocityPercent) {
+          setExperimentVelocity(newExperimentVelocityPercent / 100)
         })
-        // folder2.add( settings, 'deactivate all' );
-        // folder2.add( settings, 'activate all' );
-        // folder3.add( settings, 'pause/continue' );
-        // folder3.add( settings, 'make single step' );
-        // folder3.add( settings, 'modify step size', 0.01, 0.1, 0.001 );
-        // crossFadeControls.push( folder4.add( settings, 'from walk to idle' ) );
-        // crossFadeControls.push( folder4.add( settings, 'from idle to walk' ) );
-        // crossFadeControls.push( folder4.add( settings, 'from walk to run' ) );
-        // crossFadeControls.push( folder4.add( settings, 'from run to walk' ) );
-        // folder4.add( settings, 'use default duration' );
-        // folder4.add( settings, 'set custom duration', 0, 10, 0.01 );
-        // folder5.add( settings, 'modify idle weight', 0.0, 1.0, 0.01 ).listen().onChange( function ( weight ) {
-
-        //   setWeight( idleAction, weight );
-
-        // } );
-        // folder5.add( settings, 'modify walk weight', 0.0, 1.0, 0.01 ).listen().onChange( function ( weight ) {
-
-        //   setWeight( walkAction, weight );
-
-        // } );
-        // folder5.add( settings, 'modify run weight', 0.0, 1.0, 0.01 ).listen().onChange( function ( weight ) {
-
-        //   setWeight( runAction, weight );
-
-        // } );
-        // folder6.add( settings, 'modify time scale', 0.0, 1.5, 0.01 ).onChange( modifyTimeScale );
 
         // folder1.open();
-        // folder2.open();
-        // folder3.open();
-        // folder4.open();
-        // folder5.open();
-        // folder6.open();
 
       }
 
@@ -733,6 +740,10 @@
         timeFactor = newTimeFactor
       }
 
+      function setExperimentVelocity(newExperimentVelocity) {
+        experimentVelocity = newExperimentVelocity
+      }
+
       /*--------------------
       Light, additional
       --------------------*/
@@ -749,11 +760,29 @@
       /*--------------------
       Grid
       --------------------*/
-      const size = 4
-      const divisions = 4
-      const colorCenterLine = 0x009000
-      const gridHelper = new THREE.GridHelper( size, divisions, colorCenterLine )
-      render.scene.add( gridHelper )
+      // const size = 4
+      // const divisions = 4
+      // const colorCenterLine = 0x009000
+      // const gridHelper = new THREE.GridHelper( size, divisions, colorCenterLine )
+      // render.scene.add(gridHelper)
+
+      const gridSize = 4
+      const gridDivisions = 4
+      const gridColor = 0x009000
+      const gridOpacity = 0.4
+      let gridParameters = {
+        width: gridSize,
+        height: gridSize,
+        widthNumGridLines: gridDivisions,
+        heightNumGridLines: gridDivisions,
+        widthOffset: 0.0,
+        heightOffset: 0.0,
+        color: gridColor,
+        opacity: gridOpacity,
+      }
+      let gridGroup = drawGrid(gridParameters)
+      render.scene.add(gridGroup)
+      gridGroup.rotation.set( pi2 / 4, 0, 0)
 
       /*--------------------
       Dimension Bowls
@@ -877,6 +906,18 @@
       render.renderer.setAnimationLoop(() => {
         time = render.clock.getElapsedTime()
         move = -(laserBeamLength / 2) + ((time * timeFactor) % completeWay)
+
+        // performance: maybe move the grid lines instead of creating a new group every time?
+        render.scene.remove(gridGroup)
+        gridGroup = null
+        gridParameters = {
+          ...gridParameters,
+          widthOffset: 0.0,
+          heightOffset: (time * timeFactor) * experimentVelocity,
+        }
+        gridGroup = drawGrid(gridParameters)
+        render.scene.add(gridGroup)
+        gridGroup.rotation.set( pi2 / 4, 0, 0)
 
         if (laserAnimated) {
           laserSplits.forEach(
