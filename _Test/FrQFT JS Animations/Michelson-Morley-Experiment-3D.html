@@ -476,15 +476,14 @@
             arm: z,
             wayLength: laserPartLength, // Wolle
             directionToCoord: backward,
-            // startPos: backward * end[z],
-            startPos: end[z] + laserBeamLength / 2,
+            startPos: end[z] + laserBeamLength / 2 + laserPartLength,
             velocity: 0.0, // Wolle
           },
+          // starts half a beam before source to show no beam at the very start
           [armStarWaysEnums.beforeSource]: {
             arm: z,
             wayLength: laserBeamLength / 2,
             directionToCoord: backward,
-            // startPos: backward * end[z],
             startPos: end[z] + laserBeamLength / 2,
             velocity: velocity.obs.z,
           },
@@ -492,7 +491,6 @@
             arm: z,
             wayLength: centerDistance.obs.z,
             directionToCoord: backward,
-            // startPos: backward * end[z],
             startPos: end[z],
             velocity: velocity.obs.z,
           },
@@ -528,18 +526,17 @@
             arm: z,
             wayLength: centerDistance.obs.z,
             directionToCoord: forward,
-            // startPos: forward * end[z],
-            startPos: end[z],
+            startPos: -end[z],
             velocity: velocity.obs.z,
           },
           [armStarWaysEnums.sideMirrorToHalfMirror]: {
             arm: x,
             wayLength: centerDistance.obs.x,
             directionToCoord: backward,
-            // startPos: backward * end[x],
             startPos: end[x],
             velocity: velocity.obs.x,
           },
+          // end half a beam behind source to show no beam at the very end
           [armStarWaysEnums.behindSource]: {
             arm: z,
             wayLength: laserBeamLength / 2,
@@ -554,11 +551,12 @@
             startPos: end[z] + laserBeamLength / 2,
             velocity: 0.0, // Wolle
           },
+          // end half in screen to show no beam at the very end
           [armStarWaysEnums.inScreen]: {
             arm: x,
             wayLength: laserPartLength, // Wolle
             directionToCoord: backward,
-            startPos: end[x],
+            startPos: -end[x],
             velocity: 0.0, // Wolle
           },
         }
@@ -724,12 +722,18 @@
       function laserPartPositionSet(laserPart, indexLaserPart, indexLaserSplit, move) {
         if (!laserAnimated) {
           // stand still position
-          move = centerDistance.obs.z / 2
-          // move = 0 * centerDistance
-          // move = 1 * centerDistance
-          // move = 2 * centerDistance
-          // move = 3 * centerDistance
-          // move = 4 * centerDistance
+          // move = centerDistance.obs.z / 2
+          move =
+            armStarWays.beforeSourceToBeamOutOfSight.wayLength
+            + armStarWays.beforeSource.wayLength
+            // + armStarWays.sourceToHalfMirror.wayLength / 2
+            + armStarWays.sourceToHalfMirror.wayLength
+            + armStarWays.halfMirrorToMainMirror.wayLength
+            + armStarWays.mainMirrorToHalfMirror.wayLength
+            + armStarWays.halfMirrorToSource.wayLength
+            // - 0.01
+            + laserPartLength
+            // + armStarWays.XXX.wayLength
         }
         const partPos =
           laserPartsPositionCenterCorrection
@@ -762,17 +766,25 @@
               = usedArmWays[indexArmStar])
             moveConsumed = localMoveConsumed
             // Wolle
-            // console.log('indexLaserSplit: ', indexLaserSplit)
-            // console.log('indexLaserPart: ', indexLaserPart)
-            // console.log('indexArmStar: ', indexArmStar)
-            // console.log('arm: ', arm)
-            // console.log('armDirection: ', armDirection)
-            // console.log('armStart: ', armStart)
-            // console.log('moveConsumed: ', moveConsumed)
+            // if (indexLaserSplit === 1 && indexLaserPart === 10) {
+            //   console.log('name: ', usedArmWays[indexArmStar].name)
+            //   console.log('indexLaserSplit: ', indexLaserSplit)
+            //   console.log('indexLaserPart: ', indexLaserPart)
+            //   console.log('indexArmStar: ', indexArmStar)
+            //   console.log('arm: ', arm)
+            //   console.log('armDirection: ', armDirection)
+            //   console.log('armStart: ', armStart)
+            //   console.log('moveConsumed: ', moveConsumed)
+            // }
           }
         }
         let armPos =
-          (-armDirection) * armStart + armDirection * (move - moveConsumed)
+          armStart + armDirection * (move - moveConsumed)
+        // Wolle
+        // if (indexLaserSplit === 1 && indexLaserPart === 10) {
+        //   console.log('move: ', move)
+        //   console.log('armPos: ', armPos)
+        // }
         laserPart.rotation.set(
           arm === z ? (pi2 / 4) * armDirection : 0,
           0,
@@ -1118,9 +1130,6 @@
       render.renderer.setAnimationLoop(() => {
 
         // means longest way of all possible
-        // starts half a beam before source to show no beam at the very start
-        // Wolle: const completeWay = (laserBeamLength / 2)
-        //   + centerDistance.obs.z + centerDistance.obs.x * 3 // + (laserBeamLength / 2)
         const completeWay = longestWay
 
         time = render.clock.getElapsedTime() - timeReset
