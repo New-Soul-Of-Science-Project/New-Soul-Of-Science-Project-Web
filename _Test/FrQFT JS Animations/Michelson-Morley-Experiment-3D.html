@@ -279,10 +279,11 @@
       const laserGeometryFactor = 0.125 * 0.1
       const laserBeamLengthUnits = 8
       const laserBeamLength = laserBeamLengthUnits * laserGeometryFactor
+      const laserPartLength = laserBeamLength / laserPartsCount
       const laserCylinderGeometryParamsObj = {
         radiusTop: 1 * laserGeometryFactor,
         radiusBottom: 1 * laserGeometryFactor,
-        height: laserBeamLength / laserPartsCount,
+        height: laserPartLength,
         radialSegments: 40,
         heightSegments: 1,
         // openEnded: true,
@@ -349,7 +350,19 @@
         - laserCylinderGeometryParamsObj.height * laserPartsCount / 2
           // subtract a half of length of a part to be in the center of a laser beam part
           + laserCylinderGeometryParamsObj.height / 2
-      const laserSplitsCount = 4
+      const laserSplitsEnums = {
+        sourceToMainMirrorToSource: 'sourceToMainMirrorToSource',
+        sourceToMainMirrorToScreen: 'sourceToMainMirrorToScreen',
+        sourceToSideMirrorToSource: 'sourceToSideMirrorToSource',
+        sourceToSideMirrorToScreen: 'sourceToSideMirrorToScreen',
+      }
+      const laserSplitsNames = [
+        laserSplitsEnums.sourceToMainMirrorToSource,
+        laserSplitsEnums.sourceToMainMirrorToScreen,
+        laserSplitsEnums.sourceToSideMirrorToSource,
+        laserSplitsEnums.sourceToSideMirrorToScreen,
+      ]
+      const laserSplitsCount = laserSplitsNames.length
       const laserSlpitsSeparationDistance = laserCylinderGeometryParamsObj.radiusTop
       const laserSlpitsPositionCenterCorrection =
         // half of the total height
@@ -362,26 +375,258 @@
       const laserSlpitsPositionDistance = 
         laserCylinderGeometryParamsObj.radiusTop * 2
           + laserSlpitsSeparationDistance
+
+      /*--------
+      Arms Ways */
+      const armStarWaysEnums = {
+        beforeSourceToBeamOutOfSight: 'beforeSourceToBeamOutOfSight',
+        beforeSource: 'beforeSource',
+        sourceToHalfMirror: 'sourceToHalfMirror',
+        halfMirrorToMainMirror: 'halfMirrorToMainMirror',
+        halfMirrorToSideMirror: 'halfMirrorToSideMirror',
+        halfMirrorToScreen: 'halfMirrorToScreen',
+        halfMirrorToSource: 'halfMirrorToSource',
+        mainMirrorToHalfMirror: 'mainMirrorToHalfMirror',
+        sideMirrorToHalfMirror: 'sideMirrorToHalfMirror',
+        behindSource: 'behindSource',
+        behindSourceToBeamOutOfSight: 'behindSourceToBeamOutOfSight',
+        inScreen: 'inScreen',
+      }
+      const armStarWaysNames = [
+        armStarWaysEnums.beforeSourceToBeamOutOfSight,
+        armStarWaysEnums.beforeSource,
+        armStarWaysEnums.sourceToHalfMirror,
+        armStarWaysEnums.halfMirrorToMainMirror,
+        armStarWaysEnums.halfMirrorToSideMirror,
+        armStarWaysEnums.halfMirrorToScreen,
+        armStarWaysEnums.halfMirrorToSource,
+        armStarWaysEnums.mainMirrorToHalfMirror,
+        armStarWaysEnums.sideMirrorToHalfMirror,
+        armStarWaysEnums.behindSource,
+        armStarWaysEnums.behindSourceToBeamOutOfSight,
+        armStarWaysEnums.inScreen,
+      ]
       
       /*--------
       Scene Basics */
+
       const laserAnimated = true
-      const laserSlpitsSeparated = false
-      const centerDistance = 1
+      const laserSlpitsSeparated = true
+
       const centerHeightPosition = plateHeight / 2
 
       let theoryModel_enum_FrQFT = 'FrQFT'
       let theoryModel_enum_SRT = 'SRT'
       let theoryModel = theoryModel_enum_SRT
       let timeFactor = 1.0
+      let timeReset = 0.0
       let experimentVelocity = 0.0
       let inversGammaZ = 1.0
+
+      let centerDistance = null
+      let velocity = null
+      let armStarWays = null
+      let armWays = null
+      let longestWay = null
 
 
 
       /*--------------------
       Functions Local
       --------------------*/
+
+
+      function calcArms() {
+
+        centerDistance = {
+          // from inside
+          ins: {
+            x: 1.0,
+            z: 1.0,
+          },
+          // seen by observer
+          obs: {
+            x: 1.0,
+            z: inversGammaZ,
+          },
+        }
+        velocity = {
+          // seen by observer
+          obs: {
+            // calcOrigin: 'Math.pow(1.0, 2) = 1.0 = Math.pow(x, 2) + Math.pow(z, 2)',
+            // calcX:                           'x = Math.sqrt(1.0 - Math.pow(z, 2))',
+            // calcZ:                           'z = Math.sqrt(1.0 - Math.pow(x, 2))',
+            x: Math.sqrt(1.0 - Math.pow(1.0 - experimentVelocity, 2)),
+            z: 1.0 - experimentVelocity,
+          },
+        }
+        const x = 'x'
+        const z = 'z'
+        const forward = 1.0
+        const backward = -1.0
+        const stop = 0.0
+        const end = {
+          x: centerDistance.obs.x,
+          z: centerDistance.obs.z,
+        }
+        const middle = 0.0
+        armStarWays = {
+          [armStarWaysEnums.beforeSourceToBeamOutOfSight]: {
+            // name: added below for all
+            arm: z,
+            wayLength: laserPartLength, // Wolle
+            directionToCoord: backward,
+            // startPos: backward * end[z],
+            startPos: end[z] + laserBeamLength / 2,
+            velocity: 0.0, // Wolle
+          },
+          [armStarWaysEnums.beforeSource]: {
+            arm: z,
+            wayLength: laserBeamLength / 2,
+            directionToCoord: backward,
+            // startPos: backward * end[z],
+            startPos: end[z] + laserBeamLength / 2,
+            velocity: velocity.obs.z,
+          },
+          [armStarWaysEnums.sourceToHalfMirror]: {
+            arm: z,
+            wayLength: centerDistance.obs.z,
+            directionToCoord: backward,
+            // startPos: backward * end[z],
+            startPos: end[z],
+            velocity: velocity.obs.z,
+          },
+          [armStarWaysEnums.halfMirrorToMainMirror]: {
+            arm: z,
+            wayLength: centerDistance.obs.z,
+            directionToCoord: backward,
+            startPos: middle,
+            velocity: velocity.obs.z,
+          },
+          [armStarWaysEnums.halfMirrorToSideMirror]: {
+            arm: x,
+            wayLength: centerDistance.obs.x,
+            directionToCoord: forward,
+            startPos: middle,
+            velocity: velocity.obs.x,
+          },
+          [armStarWaysEnums.halfMirrorToScreen]: {
+            arm: x,
+            wayLength: centerDistance.obs.x,
+            directionToCoord: backward,
+            startPos: middle,
+            velocity: velocity.obs.x,
+          },
+          [armStarWaysEnums.halfMirrorToSource]: {
+            arm: z,
+            wayLength: centerDistance.obs.z,
+            directionToCoord: forward,
+            startPos: middle,
+            velocity: velocity.obs.z,
+          },
+          [armStarWaysEnums.mainMirrorToHalfMirror]: {
+            arm: z,
+            wayLength: centerDistance.obs.z,
+            directionToCoord: forward,
+            // startPos: forward * end[z],
+            startPos: end[z],
+            velocity: velocity.obs.z,
+          },
+          [armStarWaysEnums.sideMirrorToHalfMirror]: {
+            arm: x,
+            wayLength: centerDistance.obs.x,
+            directionToCoord: backward,
+            // startPos: backward * end[x],
+            startPos: end[x],
+            velocity: velocity.obs.x,
+          },
+          [armStarWaysEnums.behindSource]: {
+            arm: z,
+            wayLength: laserBeamLength / 2,
+            directionToCoord: forward,
+            startPos: end[z],
+            velocity: velocity.obs.z,
+          },
+          [armStarWaysEnums.behindSourceToBeamOutOfSight]: {
+            arm: z,
+            wayLength: laserPartLength, // Wolle
+            directionToCoord: forward,
+            startPos: end[z] + laserBeamLength / 2,
+            velocity: 0.0, // Wolle
+          },
+          [armStarWaysEnums.inScreen]: {
+            arm: x,
+            wayLength: laserPartLength, // Wolle
+            directionToCoord: backward,
+            startPos: end[x],
+            velocity: 0.0, // Wolle
+          },
+        }
+        armStarWaysNames.forEach(name => {
+          armStarWays[name].name = name
+        })
+        armWays = {
+          [laserSplitsEnums.sourceToMainMirrorToSource]: [
+            armStarWays.beforeSourceToBeamOutOfSight,
+            armStarWays.beforeSource,
+
+            armStarWays.sourceToHalfMirror,
+            armStarWays.halfMirrorToMainMirror,
+            armStarWays.mainMirrorToHalfMirror,
+            armStarWays.halfMirrorToSource,
+
+            armStarWays.behindSource,
+            armStarWays.behindSourceToBeamOutOfSight,
+          ],
+          [laserSplitsEnums.sourceToMainMirrorToScreen]: [
+            armStarWays.beforeSourceToBeamOutOfSight,
+            armStarWays.beforeSource,
+
+            armStarWays.sourceToHalfMirror,
+            armStarWays.halfMirrorToMainMirror,
+            armStarWays.mainMirrorToHalfMirror,
+            armStarWays.halfMirrorToScreen,
+
+            armStarWays.inScreen,
+          ],
+          [laserSplitsEnums.sourceToSideMirrorToSource]: [
+            armStarWays.beforeSourceToBeamOutOfSight,
+            armStarWays.beforeSource,
+
+            armStarWays.sourceToHalfMirror,
+            armStarWays.halfMirrorToSideMirror,
+            armStarWays.sideMirrorToHalfMirror,
+            armStarWays.halfMirrorToSource,
+
+            armStarWays.behindSource,
+            armStarWays.behindSourceToBeamOutOfSight,
+          ],
+          [laserSplitsEnums.sourceToSideMirrorToScreen]: [
+            armStarWays.beforeSourceToBeamOutOfSight,
+            armStarWays.beforeSource,
+
+            armStarWays.sourceToHalfMirror,
+            armStarWays.halfMirrorToSideMirror,
+            armStarWays.sideMirrorToHalfMirror,
+            armStarWays.halfMirrorToScreen,
+
+            armStarWays.inScreen,
+          ],
+        }
+
+        // calc longest way
+        longestWay = 0
+        laserSplitsNames.forEach(wayName => {
+          let wayLength = 0
+          armWays[wayName].forEach(armStarWay => {
+            wayLength += armStarWay.wayLength
+          })
+          if (longestWay < wayLength) {
+            longestWay = wayLength
+          }
+        })
+
+      }
 
 
       // drawGrid will determine blocksize based on the 
@@ -453,6 +698,7 @@
         return gridGroup
       }
 
+
       const mirrorCreate = (params) => {
         // params: {
         //   withMirrorPlane: Boolean, required
@@ -473,6 +719,87 @@
         }
         return mirror
       }
+
+
+      function laserPartPositionSet(laserPart, indexLaserPart, indexLaserSplit, move) {
+        if (!laserAnimated) {
+          // stand still position
+          move = centerDistance.obs.z / 2
+          // move = 0 * centerDistance
+          // move = 1 * centerDistance
+          // move = 2 * centerDistance
+          // move = 3 * centerDistance
+          // move = 4 * centerDistance
+        }
+        const partPos =
+          laserPartsPositionCenterCorrection
+            // shift to the next part
+            + laserCylinderGeometryParamsObj.height * indexLaserPart
+        move += partPos
+        const x = 'x'
+        const z = 'z'
+        let armStarIndex = null
+        let arm = null
+        let armDirection = null
+        let armStart = null
+        let moveConsumed = 0
+        // let scale = 1
+        const usedArmWays = armWays[laserSplitsNames[indexLaserSplit]]
+        let localMoveConsumed = 0
+        let isCalc = true
+        for (let indexArmStar = 0; isCalc; indexArmStar++) {
+          if (indexArmStar < usedArmWays.length) {
+            isCalc = 0 < move - (localMoveConsumed + usedArmWays[indexArmStar].wayLength)
+          } else {
+            isCalc = false
+            indexArmStar = usedArmWays.length - 1
+          }
+
+          if (isCalc) {
+            localMoveConsumed += usedArmWays[indexArmStar].wayLength
+          } else {
+            ({ arm, directionToCoord: armDirection, startPos: armStart }
+              = usedArmWays[indexArmStar])
+            moveConsumed = localMoveConsumed
+            // Wolle
+            // console.log('indexLaserSplit: ', indexLaserSplit)
+            // console.log('indexLaserPart: ', indexLaserPart)
+            // console.log('indexArmStar: ', indexArmStar)
+            // console.log('arm: ', arm)
+            // console.log('armDirection: ', armDirection)
+            // console.log('armStart: ', armStart)
+            // console.log('moveConsumed: ', moveConsumed)
+          }
+        }
+        let armPos =
+          (-armDirection) * armStart + armDirection * (move - moveConsumed)
+        laserPart.rotation.set(
+          arm === z ? (pi2 / 4) * armDirection : 0,
+          0,
+          arm === x ? (pi2 / 4) * armDirection : 0)
+        // // ? screen position: on or after
+        // if (arm === x && armDirection === -1
+        //   && (indexLaserSplit === 1
+        //     // Main Mirror to Screen
+        //     ? centerDistance.obs.z + centerDistance.obs.z
+        //     // Side Mirror to Screen
+        //     : centerDistance.obs.z + centerDistance.obs.x)
+        //       <= move - moveConsumed) {
+        //   armPos = -centerDistance.obs.x
+        //   // armPos = -centerDistance + (laserBeamLength / 2)
+        //   // scale = ((move - moveConsumed) / (laserBeamLength / 2)) / 2
+        //   // scale = 2
+        // } else {
+        //   // scale = 1
+        // }
+        // // laserPart.scale.set(scale, 1, scale)
+        laserPart.position.set(
+          arm === x ? armPos : 0,
+          0,
+          arm === z ? armPos : 0,
+        )
+      }
+
 
       const laserSplitCreate = (indexLaserSplit, splitsCount) => {
         /*--------
@@ -527,152 +854,7 @@
           centerHeightPosition + (laserSlpitsSeparated ? laserSplitedAddDistance( index ) : 0),
           0
         )
-       
-      const laserPartPositionSet = (laserPart, indexLaserPart, indexLaserSplit, move) => {
-        if (!laserAnimated) {
-          // stand still position
-          move = centerDistance / 2
-          // move = 0 * centerDistance
-          // move = 1 * centerDistance
-          // move = 2 * centerDistance
-          // move = 3 * centerDistance
-          // move = 4 * centerDistance
-        }
-        const partPos =
-          laserPartsPositionCenterCorrection
-            // shift to the next part
-            + laserCylinderGeometryParamsObj.height * indexLaserPart
-        move += partPos
-        let arm = null
-        let armDirection = null
-        let armStart = null
-        let moveConsumed = 0
-        // let scale = 1
-        const x = 0
-        const z = 2
-        const forward = 1
-        const backward = -1
-        const end = centerDistance
-        const middle = 0
-        if (move <= centerDistance) {
-          arm = z
-          armDirection = backward
-          armStart = end
-          moveConsumed = 0
-        } else {
-          switch (indexLaserSplit) {
-            /*-----
-            StraightAndBack – straight forth to main mirror and back */
-            case 0:
-              if (move <= 2 * centerDistance) {
-                arm = z
-                armDirection = backward
-                armStart = end
-                moveConsumed = 0
-              } else {
-                if (move <= 3 * centerDistance) {
-                  arm = z
-                  armDirection = forward
-                  armStart = end
-                  moveConsumed = 2 * centerDistance
-                } else {
-                  arm = z
-                  armDirection = forward
-                  armStart = end
-                  moveConsumed = 2 * centerDistance
-                }
-              }
-              break
-            /*-----
-            StraightAndScreen – straight forth to main mirror and sideways to screen */
-            case 1:
-              if (move <= 2 * centerDistance) {
-                arm = z
-                armDirection = backward
-                armStart = end
-                moveConsumed = 0
-              } else {
-                if (move <= 3 * centerDistance) {
-                  arm = z
-                  armDirection = forward
-                  armStart = end
-                  moveConsumed = 2 * centerDistance
-                } else {
-                  arm = x
-                  armDirection = backward
-                  armStart = middle
-                  moveConsumed = 3 * centerDistance
-                }
-              }
-              break
-            /*-----
-            SidewaysAndBack – sideways to side mirror and sideways back */
-            case 2:
-              if (move <= 2 * centerDistance) {
-                arm = x
-                armDirection = forward
-                armStart = middle
-                moveConsumed = centerDistance
-              } else {
-                if (move <= 3 * centerDistance) {
-                  arm = x
-                  armDirection = backward
-                  armStart = end
-                  moveConsumed = 2 * centerDistance
-                } else {
-                  arm = z
-                  armDirection = forward
-                  armStart = middle
-                  moveConsumed = 3 * centerDistance
-                }
-              }
-              break
-            /*-----
-            SidewaysAndScreen – sideways to side mirror and straight to screen */
-            case 3:
-              if (move <= 2 * centerDistance) {
-                arm = x
-                armDirection = forward
-                armStart = middle
-                moveConsumed = centerDistance
-              } else {
-                if (move <= 3 * centerDistance) {
-                  arm = x
-                  armDirection = backward
-                  armStart = end
-                  moveConsumed = 2 * centerDistance
-                } else {
-                  arm = x
-                  armDirection = backward
-                  armStart = end
-                  moveConsumed = 2 * centerDistance
-                }
-              }
-              break
-          }
-        }
-        let armPos =
-          (-armDirection) * armStart + armDirection * (move - moveConsumed)
-        laserPart.rotation.set(
-          arm === z ? (pi2 / 4) * armDirection : 0,
-          0,
-          arm === x ? (pi2 / 4) * armDirection : 0)
-        // ? on and after screen position 
-        if (arm === x && armDirection === -1 && centerDistance * 2 <= move - moveConsumed) {
-          armPos = -centerDistance
-          // armPos = -centerDistance + (laserBeamLength / 2)
-          // scale = ((move - moveConsumed) / (laserBeamLength / 2)) / 2
-          // scale = 2
-        } else {
-          // scale = 1
-        }
-        // laserPart.scale.set(scale, 1, scale)
-        laserPart.position.set(
-          arm === x ? armPos : 0,
-          0,
-          arm === z ? armPos : 0,
-        )
-      }
+
 
       let settings = null
       let folderTheory = null
@@ -715,7 +897,7 @@
           setExperimentVelocity(newExperimentVelocityPercent / 100)
         })
 
-        // folder1.open();
+        // folder1.open()
 
       }
 
@@ -739,14 +921,21 @@
 
       function setTimeFactor(newTimeFactor) {
         timeFactor = newTimeFactor
+        timeReset = render.clock.getElapsedTime()
       }
 
       function setExperimentVelocity(newExperimentVelocity) {
         experimentVelocity = newExperimentVelocity
+
         // Lorentz contraction
         const c0Pow2 = 1
         inversGammaZ = Math.sqrt(1 - Math.pow(experimentVelocity, 2) / c0Pow2)
+
+        calcArms()
+
         experimentGroup.scale.set(1.0, 1.0, inversGammaZ)
+
+        timeReset = render.clock.getElapsedTime()
       }
 
 
@@ -829,16 +1018,16 @@
         bowlsGroup.add( bowl )
         switch (index) {
           case 0:            
-            bowl.position.set( centerDistance, 0, centerDistance )
+            bowl.position.set(centerDistance.ins.x, 0, centerDistance.ins.z)
             break
           case 1:            
-            bowl.position.set( centerDistance, 0, -centerDistance )
+            bowl.position.set(centerDistance.ins.x, 0, -centerDistance.ins.z)
             break
           case 2:            
-            bowl.position.set( -centerDistance, 0, centerDistance )
+            bowl.position.set(-centerDistance.ins.x, 0, centerDistance.ins.z)
             break
           case 3:            
-            bowl.position.set( -centerDistance, 0, -centerDistance )
+            bowl.position.set(-centerDistance.ins.x, 0, -centerDistance.ins.z)
             break
         }
       })
@@ -853,7 +1042,7 @@
       })
       experimentGroup.add( mirrorMain )
       mirrorMain.rotation.set( 0, pi2 / 2, 0)
-      mirrorMain.position.set( 0, centerHeightPosition, -centerDistance )
+      mirrorMain.position.set( 0, centerHeightPosition, -centerDistance.ins.z )
 
       /*--------------------
       Side Mirror
@@ -865,7 +1054,7 @@
       })
       experimentGroup.add( mirrorSide )
       mirrorSide.rotation.set( 0, pi2 / 4, 0)
-      mirrorSide.position.set( centerDistance, centerHeightPosition, 0 )
+      mirrorSide.position.set( centerDistance.ins.x, centerHeightPosition, 0 )
 
       /*--------------------
       Half Mirror
@@ -881,7 +1070,7 @@
       const screenInterference = new THREE.Mesh( screenGeometry, screenMaterial )
       experimentGroup.add( screenInterference )
       screenInterference.rotation.set( 0, - (pi2 / 4), 0)
-      screenInterference.position.set( -centerDistance, centerHeightPosition, 0 )
+      screenInterference.position.set( -centerDistance.ins.x, centerHeightPosition, 0 )
 
       /*--------------------
       Sender
@@ -890,7 +1079,7 @@
       Group */
       const senderGroup = new THREE.Group()
       experimentGroup.add( senderGroup )
-      senderGroup.position.set( 0, centerHeightPosition, centerDistance + senderCorpusBoxGeometryParamsObj.dept / 2 )
+      senderGroup.position.set( 0, centerHeightPosition, centerDistance.ins.z + senderCorpusBoxGeometryParamsObj.dept / 2 )
       /*--------
       Corpus */
       const senderCorpus = new THREE.Mesh( senderCorpusGeometry, senderMaterial )
@@ -925,11 +1114,16 @@
 
       var time = 0
       var move = 0
-      const arms = 4
-      const completeWay = (laserBeamLength / 2) + centerDistance * arms // + (laserBeamLength / 2)
 
       render.renderer.setAnimationLoop(() => {
-        time = render.clock.getElapsedTime()
+
+        // means longest way of all possible
+        // starts half a beam before source to show no beam at the very start
+        // Wolle: const completeWay = (laserBeamLength / 2)
+        //   + centerDistance.obs.z + centerDistance.obs.x * 3 // + (laserBeamLength / 2)
+        const completeWay = longestWay
+
+        time = render.clock.getElapsedTime() - timeReset
         move = -(laserBeamLength / 2) + ((time * timeFactor) % completeWay)
 
         // performance: maybe move the grid lines instead of creating a new group every time?
