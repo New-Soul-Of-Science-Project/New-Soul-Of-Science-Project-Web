@@ -406,6 +406,7 @@
         armStarWaysEnums.behindSourceToBeamOutOfSight,
         armStarWaysEnums.inScreen,
       ]
+      const endlessTimeLength = -1.0
       
       /*--------
       Scene Basics */
@@ -427,7 +428,7 @@
       let velocity = null
       let armStarWays = null
       let armWays = null
-      let longestWay = null
+      let longestTime = null
 
 
 
@@ -474,94 +475,100 @@
           [armStarWaysEnums.beforeSourceToBeamOutOfSight]: {
             // name: added below for all
             arm: z,
-            wayLength: laserPartLength, // Wolle
             directionToCoord: backward,
             startPos: end[z] + laserBeamLength / 2 + laserPartLength,
+            wayLength: laserPartLength, // Wolle
             velocity: 0.0, // Wolle
+            // timeLength: added below for allö
           },
           // starts half a beam before source to show no beam at the very start
           [armStarWaysEnums.beforeSource]: {
             arm: z,
-            wayLength: laserBeamLength / 2,
             directionToCoord: backward,
             startPos: end[z] + laserBeamLength / 2,
+            wayLength: laserBeamLength / 2,
             velocity: velocity.obs.z,
           },
           [armStarWaysEnums.sourceToHalfMirror]: {
             arm: z,
-            wayLength: centerDistance.obs.z,
             directionToCoord: backward,
             startPos: end[z],
+            wayLength: centerDistance.obs.z,
             velocity: velocity.obs.z,
           },
           [armStarWaysEnums.halfMirrorToMainMirror]: {
             arm: z,
-            wayLength: centerDistance.obs.z,
             directionToCoord: backward,
             startPos: middle,
+            wayLength: centerDistance.obs.z,
             velocity: velocity.obs.z,
           },
           [armStarWaysEnums.halfMirrorToSideMirror]: {
             arm: x,
-            wayLength: centerDistance.obs.x,
             directionToCoord: forward,
             startPos: middle,
+            wayLength: centerDistance.obs.x,
             velocity: velocity.obs.x,
           },
           [armStarWaysEnums.halfMirrorToScreen]: {
             arm: x,
-            wayLength: centerDistance.obs.x,
             directionToCoord: backward,
             startPos: middle,
+            wayLength: centerDistance.obs.x,
             velocity: velocity.obs.x,
           },
           [armStarWaysEnums.halfMirrorToSource]: {
             arm: z,
-            wayLength: centerDistance.obs.z,
             directionToCoord: forward,
             startPos: middle,
+            wayLength: centerDistance.obs.z,
             velocity: velocity.obs.z,
           },
           [armStarWaysEnums.mainMirrorToHalfMirror]: {
             arm: z,
-            wayLength: centerDistance.obs.z,
             directionToCoord: forward,
             startPos: -end[z],
+            wayLength: centerDistance.obs.z,
             velocity: velocity.obs.z,
           },
           [armStarWaysEnums.sideMirrorToHalfMirror]: {
             arm: x,
-            wayLength: centerDistance.obs.x,
             directionToCoord: backward,
             startPos: end[x],
+            wayLength: centerDistance.obs.x,
             velocity: velocity.obs.x,
           },
           // end half a beam behind source to show no beam at the very end
           [armStarWaysEnums.behindSource]: {
             arm: z,
-            wayLength: laserBeamLength / 2,
             directionToCoord: forward,
             startPos: end[z],
+            wayLength: laserBeamLength / 2,
             velocity: velocity.obs.z,
           },
           [armStarWaysEnums.behindSourceToBeamOutOfSight]: {
             arm: z,
-            wayLength: laserPartLength, // Wolle
             directionToCoord: forward,
             startPos: end[z] + laserBeamLength / 2,
+            wayLength: laserPartLength, // Wolle
             velocity: 0.0, // Wolle
           },
           // end half in screen to show no beam at the very end
           [armStarWaysEnums.inScreen]: {
             arm: x,
-            wayLength: laserPartLength, // Wolle
             directionToCoord: backward,
             startPos: -end[x],
+            wayLength: laserPartLength, // Wolle
             velocity: 0.0, // Wolle
           },
         }
         armStarWaysNames.forEach(name => {
           armStarWays[name].name = name
+          if (armStarWays[name].velocity === 0.0) {
+            armStarWays[name].timeLength = endlessTimeLength
+          } else {
+            armStarWays[name].timeLength = armStarWays[name].wayLength / armStarWays[name].velocity
+          }
         })
         armWays = {
           [laserSplitsEnums.sourceToMainMirrorToSource]: [
@@ -612,15 +619,19 @@
           ],
         }
 
-        // calc longest way
-        longestWay = 0
+        // calc longest time
+        longestTime = 0
         laserSplitsNames.forEach(wayName => {
-          let wayLength = 0
+          let timeLength = 0
+          let timeStopped = false
           armWays[wayName].forEach(armStarWay => {
-            wayLength += armStarWay.wayLength
+            timeStopped = armStarWay.timeLength === endlessTimeLength
+            if (!timeStopped) {
+              timeLength += armStarWay.timeLength
+            }
           })
-          if (longestWay < wayLength) {
-            longestWay = wayLength
+          if (longestTime < timeLength) {
+            longestTime = timeLength
           }
         })
 
@@ -724,16 +735,16 @@
           // stand still position
           // move = centerDistance.obs.z / 2
           move =
-            armStarWays.beforeSourceToBeamOutOfSight.wayLength
-            + armStarWays.beforeSource.wayLength
-            // + armStarWays.sourceToHalfMirror.wayLength / 2
-            + armStarWays.sourceToHalfMirror.wayLength
-            + armStarWays.halfMirrorToMainMirror.wayLength
-            + armStarWays.mainMirrorToHalfMirror.wayLength
-            + armStarWays.halfMirrorToSource.wayLength
+            armStarWays.beforeSourceToBeamOutOfSight.timeLength
+            + armStarWays.beforeSource.timeLength
+            // + armStarWays.sourceToHalfMirror.timeLength / 2
+            + armStarWays.sourceToHalfMirror.timeLength
+            + armStarWays.halfMirrorToMainMirror.timeLength
+            + armStarWays.mainMirrorToHalfMirror.timeLength
+            + armStarWays.halfMirrorToSource.timeLength
             // - 0.01
-            + laserPartLength
-            // + armStarWays.XXX.wayLength
+            + laserPartLength // Wolle
+            // + armStarWays.XXX.timeLength
         }
         const partPos =
           laserPartsPositionCenterCorrection
@@ -753,17 +764,19 @@
         let isCalc = true
         for (let indexArmStar = 0; isCalc; indexArmStar++) {
           if (indexArmStar < usedArmWays.length) {
-            isCalc = 0 < move - (localMoveConsumed + usedArmWays[indexArmStar].wayLength)
+            // Wolle: isCalc = 0 < move - (localMoveConsumed + usedArmWays[indexArmStar].wayLength)
+            isCalc = (usedArmWays[indexArmStar].timeLength !== endlessTimeLength) && (0 < move - (localMoveConsumed + usedArmWays[indexArmStar].timeLength))
           } else {
             isCalc = false
             indexArmStar = usedArmWays.length - 1
           }
 
           if (isCalc) {
-            localMoveConsumed += usedArmWays[indexArmStar].wayLength
+            // Wolle: localMoveConsumed += usedArmWays[indexArmStar].wayLength
+            localMoveConsumed += usedArmWays[indexArmStar].timeLength
           } else {
             ({ arm, directionToCoord: armDirection, startPos: armStart }
-              = usedArmWays[indexArmStar])
+              = usedArmWays[indexArmStar]) // Wolle
             moveConsumed = localMoveConsumed
             // Wolle
             // if (indexLaserSplit === 1 && indexLaserPart === 10) {
@@ -1130,10 +1143,10 @@
       render.renderer.setAnimationLoop(() => {
 
         // means longest way of all possible
-        const completeWay = longestWay
+        const completeWay = longestTime // Wolle
 
         time = render.clock.getElapsedTime() - timeReset
-        move = -(laserBeamLength / 2) + ((time * timeFactor) % completeWay)
+        move = -(laserBeamLength / 2) + ((time * timeFactor) % completeWay) // Wolle
 
         // performance: maybe move the grid lines instead of creating a new group every time?
         if (experimentVelocity !== 0 || gridParameters.heightOffset !== 0) {
