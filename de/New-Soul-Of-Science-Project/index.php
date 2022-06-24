@@ -1252,6 +1252,17 @@
                   // #!: Auch auf der NaPhil-Yoga-Einleitungsseite! (OM:NPYo:Einleitung)
                   // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
                   array( 'text', array( Shape  => 'italic', text => array(
+                        'Das ganze Leben ist ein sich Finden …'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        ''."\n"),
+                        addtext => '')),
+                      
+                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
+                  // #!: Auch auf der NaPhil-Yoga-Startseite! (OM:NPYo:Home)
+                  // #!: Auch auf der NaPhil-Yoga-Einleitungsseite! (OM:NPYo:Einleitung)
+                  // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
+                  array( 'text', array( Shape  => 'italic', text => array(
                         'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
                         'der hat die Magie, Dinge zum Schweben zu bringen.'."\n"))),
                       
@@ -1263,7 +1274,7 @@
                   // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Spiritualitaet-Psychologie)
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Make your life a celebration!'."\n"),
-                        addtext => '\\small{\\color{*TitleAdd}{ ~Mike Love — \\jump[https://www.youtube.com/watch?v=NKx_kxR9hWU]{}{"I Love You & Permanent Holiday" Live at Woodstock Poland 2016}, Sek. 13:57.}}')),
+                        addtext => '\\small{\\color{*TitleAdd}{ ~Mike Love\\footnote{\\jump[https://www.youtube.com/watch?v=NKx_kxR9hWU]{}{"I Love You & Permanent Holiday" Live at Woodstock Poland 2016}, Sek. 13:57.}}}')),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         ''."\n"),
@@ -1281,9 +1292,9 @@
                         'All diese sind dein größter Schatz; \\\\'."\n".
                         'deine Leuchttürme und Steinhaufen \\\\'."\n".
                         'leiten dich durch deine Abenteuer.'."\n",
-                          'Also lerne dein Handwerk des Abenteurers; \\\\'."\n".
-                        'lerne sie in Ruhe kennen und nutzen. \\\\'."\n".
-                        'Denn Leben ist niemals ohne Gefahr.'."\n"),
+                          'Also lerne dein Handwerk des Abenteurers, \\\\'."\n".
+                        'lerne deine Gefühle in Ruhe kennen und nutze sie, \\\\'."\n".
+                        'denn Leben ist niemals ohne Gefahr.'."\n"),
                         addtext => '')),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
