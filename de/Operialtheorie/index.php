@@ -34,6 +34,20 @@
                       array( display => 'on',  latex => '{  a \cdot b  :=  a^{\llcorner 2}b  }'),
                       array( display => 'on',  latex => '{  a^{b}  :=  a^{\llcorner 3}b  }'),
                     ))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Home', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a + 1  :=  ^{\llangle 0}a  :=  a^{\llangle 0}b  }'),
+                      array( display => 'on',  latex => '{  a + b  :=  a^{\llangle 1}b  }'),
+                      array( display => 'on',  latex => '{  a \cdot b  :=  a^{\llangle 2}b  }'),
+                      array( display => 'on',  latex => '{  a^{b}  :=  a^{\llangle 3}b  }'),
+                    ))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Home', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a + 1  :=  ^{\llangle 0 \rrangle}a  :=  a^{\llangle 0 \rrangle}b  }'),
+                      array( display => 'on',  latex => '{  a + b  :=  a^{\llangle 1 \rrangle}b  }'),
+                      array( display => 'on',  latex => '{  a \cdot b  :=  a^{\llangle 2 \rrangle}b  }'),
+                      array( display => 'on',  latex => '{  a^{b}  :=  a^{\llangle 3 \rrangle}b  }'),
+                    ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
@@ -62,6 +76,16 @@
                     array( equ_text_std => 'OT.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( a^{\llcorner *( x + 1 *)}b *)^{\llcorner x}a  :=  a^{\llcorner *( x + 1 *)}*( b + 1 *)  }'),
                       array( display => 'on',  latex => '{  *( a^{\llcorner *( ^{\llcorner 0}x *)}b *)^{\llcorner x}a  :=  a^{\llcorner *( ^{\llcorner 0}x *)}*( ^{\llcorner 0}b *)  }'),
+                    ))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( a^{\llangle *( x + 1 *)}b *)^{\llangle x}a  :=  a^{\llangle *( x + 1 *)}*( b + 1 *)  }'),
+                      array( display => 'on',  latex => '{  *( a^{\llangle *( ^{\llangle 0}x *)}b *)^{\llangle x}a  :=  a^{\llangle *( ^{\llangle 0}x *)}*( ^{\llangle 0}b *)  }'),
+                    ))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( a^{\llangle x + 1 \rrangle}b *)^{\llangle x \rrangle}a  :=  a^{\llangle x + 1 \rrangle}*( b + 1 *)  }'),
+                      array( display => 'on',  latex => '{  *( a^{\llangle ^{\llangle 0 \rrangle}x \rrangle}b *)^{\llangle x \rrangle}a  :=  a^{\llangle ^{\llangle 0 \rrangle}x \rrangle}*( ^{\llangle 0 \rrangle}b *)  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".

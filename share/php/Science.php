@@ -187,6 +187,8 @@
     echo '          Macros: {'."\n";
     echo '            lowZero: "\\\\raise -.3ex 0",'."\n";
     echo '            updownarrows: "\\\\uparrow\\\\!\\\\downarrow",'."\n";
+    echo '            llangle: "\\\\langle \\\\mspace{-3.5mu} \\\\langle",'."\n";
+    echo '            rrangle: "\\\\rangle \\\\mspace{-3.5mu} \\\\rangle",'."\n";
     echo '            MDo: "\\\\mathrm{\\\\downarrow}",'."\n";
     echo '            MUp: "\\\\mathrm{\\\\uparrow}",'."\n";
     echo '            MDoDo: "\\\\mathrm{\\\\downdownarrows}",'."\n";
