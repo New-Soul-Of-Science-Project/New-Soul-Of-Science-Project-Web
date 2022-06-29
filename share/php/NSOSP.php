@@ -844,7 +844,7 @@
                                        header_pict_alt => 'Fraktale Quanten-Fluss-Theorie, Organische Physik',
                                        header_links_marginLeft => '336px',
                                        copy_right => 'Fraktale Quanten-Fluss-Theorie (FrQFT) \\\\'."\n".
-                                                      '© 1990–2021 by \\\\'."\n".
+                                                      '© 1990–2022 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
@@ -1771,7 +1771,7 @@
                                        header_pict_name => 'Organical-Matters_Logo_De.jpg',
                                        header_pict_alt => 'Organical Matters Website, Ideen neuer Wissenschaft',
                                        copy_right => 'Naturphilosophie der Zeit (NPT) \\\\'."\n".
-                                                      '© 2014–2021 by \\\\'."\n".
+                                                      '© 2014–2022 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
@@ -1842,7 +1842,7 @@
                                        header_pict_alt => 'Naturphilosophie-Yoga, Spannungsspiel des Lebens',
                                        header_links_marginLeft => '254px',
                                        copy_right => 'Naturphilosophie-Yoga (NaPhil-Yoga) \\\\'."\n".
-                                                      '© 2014–2021 by \\\\'."\n".
+                                                      '© 2014–2022 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
@@ -2207,7 +2207,7 @@
                                        header_pict_alt => 'New Soul Of Science Project, Knowledge And Care Helps',
                                        header_links_marginLeft => '384px',
                                        copy_right => 'New Soul Of Science Project (NSOSP) \\\\'."\n".
-                                                      '© 1988–2021 by \\\\'."\n".
+                                                      '© 1986–2022 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
@@ -2317,7 +2317,7 @@
                                        header_pict_alt => 'Operialtheorie, Zählen und dann weiter … ?',
                                        header_links_marginLeft => '398px',
                                        copy_right => 'Operialtheorie (OT) \\\\'."\n".
-                                                      '© 1988–2021 by \\\\'."\n".
+                                                      '© 1986–2022 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
@@ -2372,7 +2372,7 @@
                                        header_pict_alt => 'Spannungsspiel des Lebens, Natur- und Lebensphilosophie',
                                        header_links_marginLeft => '182px',
                                        copy_right => 'Spannungsspiel des Lebens (Neue Biophysik, NB) \\\\'."\n".
-                                                      '© 2014–2021 by \\\\'."\n".
+                                                      '© 2014–2022 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
@@ -3052,7 +3052,7 @@
                                        header_pict_alt => 'Superial-Zahlen, mit Primzahlen ins Unendliche',
                                        header_links_marginLeft => '398px',
                                        copy_right => 'Superial-Zahlen (SN) \\\\'."\n".
-                                                      '© \\hidden{(1988?)}1989–2021 by \\\\'."\n".
+                                                      '© 1988–2022 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
@@ -3207,7 +3207,7 @@
                                        header_pict_alt => 'Vereinheitlichte Relativitätstheorie, in der Quanten-Fluss-Theorie',
                                        header_links_marginLeft => '383px',
                                        copy_right => 'Vereinheitlichte Relativitätstheorie (VRT) \\\\'."\n".
-                                                      '© 1990–2021 by \\\\'."\n".
+                                                      '© 1990–2022 by \\\\'."\n".
                                                       'Wolfgang Huß und \\\\'."\n".
                                                       'Media Line Digital e.K. \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
@@ -3334,7 +3334,7 @@
                                        header_pict_alt => 'Zahlensemantik',
                                        header_links_marginLeft => '383px',
                                        copy_right => 'Zahlensemantik (ZS) \\\\'."\n".
-                                                      '© 2010–2021 by \\\\'."\n".
+                                                      '© 2010–2022 by \\\\'."\n".
                                                       'Raimund Welsch \\\\'."\n".
                                                       'is licensed under \\\\'."\n".
                                                       '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
@@ -3702,7 +3702,7 @@
     echo ''."\n";
     echo '			<div id="footer" class="footer main-shadow-0-5-30 main-layer-3">'."\n";
     echo '				<p align="center">'."\n";
-    echo '					<a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1988–2021 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a> &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
+    echo '					<a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2022 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a> &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
     echo '					<a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Kontakt</a>'."\n";
     echo '				</p>'."\n";
     echo '			</div>'."\n";
