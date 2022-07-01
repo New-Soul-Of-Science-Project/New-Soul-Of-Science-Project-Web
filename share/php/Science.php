@@ -3,7 +3,7 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 06.11.2021, 07:00h
+  // #: Stand: 29.06.2022, 15:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
@@ -80,7 +80,7 @@
   //           20200410:  +:  "Sc_f_equation_list":  New '*Equation-Number' and "$equationNumber_color".
   //                      >:  "Sc_f_equation_list":  Changed '*Formular' and '*Equation-Number' to black.
   //                      +:  "$Glo_g_Paragraph_fn":  Is new.
-  //                      +:  "$$Sc_g_Text_replace_ary":  Elements '≈' as '&asymp;' is new.
+  //                      +:  "$Sc_g_Text_replace_ary":  Elements '≈' as '&asymp;' is new.
   //           20200420:  >:  "$Sc_g_Text_replace_preg_ary":  Elements "term", "_", "^" changed to type "latexcommand".
   //           20200430:  >:  "Sc_f_equation_list":  New arrows at show and hide links. Removed ellipses.
   //           20200606:  +:  "$Sc_g_equation_replace_ary":  New element '  \mapsto  '.
@@ -102,6 +102,7 @@
   //           20210829:  >:  "$Sc_g_equation_replace_ary": Add "'\left|  ', '\left|\; '", "'  \right|', ' \;\right|'".
   //           20211106:  +:  "$Sc_g_term_replace_ary": Implemented.
   //                      >:  "$Sc_g_Text_replace_preg_ary": Moved "term" before "^". But I didn't reached the effect I wanted. See "$Sc_g_term_replace_ary".
+  //           20220629:  +:  "MathJax":  Add Macros "llangle", "rrangle".
   // v01.004:  20130609:  !:  Include "Tools_v01_004.php"
   //           20130628:  +:  "$Glo_PathRel_back" added;
   // v01.003:  20130522:  !:  Include "Tools_v01_002.php"  -->  "Tools_v01_003.php"
