@@ -89,10 +89,10 @@
                     ))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Home', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a + 1  :=  ^{\llcorner 0}a  :=  a^{\llcorner 0}b  }'),
-                      array( display => 'on',  latex => '{  a + b  :=  a^{\llcorner 1}b  }'),
-                      array( display => 'on',  latex => '{  a \cdot b  :=  a^{\llcorner 2}b  }'),
-                      array( display => 'on',  latex => '{  a^{b}  :=  a^{\llcorner 3}b  }'),
+                      array( display => 'on',  latex => '{  a + 1  :=  ^{\llcorner 0 \lrcorner}a  :=  a^{\llcorner 0 \lrcorner}b  }'),
+                      array( display => 'on',  latex => '{  a + b  :=  a^{\llcorner 1 \lrcorner}b  }'),
+                      array( display => 'on',  latex => '{  a \cdot b  :=  a^{\llcorner 2 \lrcorner}b  }'),
+                      array( display => 'on',  latex => '{  a^{b}  :=  a^{\llcorner 3 \lrcorner}b  }'),
                     ))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Home', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -134,8 +134,8 @@
                     ))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( a^{\llcorner *( x + 1 *)}b *)^{\llcorner x}a  :=  a^{\llcorner *( x + 1 *)}*( b + 1 *)  }'),
-                      array( display => 'on',  latex => '{  *( a^{\llcorner *( ^{\llcorner 0}x *)}b *)^{\llcorner x}a  :=  a^{\llcorner *( ^{\llcorner 0}x *)}*( ^{\llcorner 0}b *)  }'),
+                      array( display => 'on',  latex => '{  *( a^{\llcorner x + 1 \lrcorner}b *)^{\llcorner x \lrcorner}a  :=  a^{\llcorner x + 1 \lrcorner}*( b + 1 *)  }'),
+                      array( display => 'on',  latex => '{  *( a^{\llcorner ^{\llcorner 0 \lrcorner}x \lrcorner}b *)^{\llcorner x \lrcorner}a  :=  a^{\llcorner ^{\llcorner 0 \lrcorner}x \lrcorner}*( ^{\llcorner 0 \lrcorner}b *)  }'),
                     ))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -146,6 +146,11 @@
                     array( equ_text_std => 'OT.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( a^{\llangle x + 1 \rrangle}b *)^{\llangle x \rrangle}a  :=  a^{\llangle x + 1 \rrangle}*( b + 1 *)  }'),
                       array( display => 'on',  latex => '{  *( a^{\llangle ^{\llangle 0 \rrangle}x \rrangle}b *)^{\llangle x \rrangle}a  :=  a^{\llangle ^{\llangle 0 \rrangle}x \rrangle}*( ^{\llangle 0 \rrangle}b *)  }'),
+                    ))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Home', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( a^{\langle x + 1 \rangle}b *)^{\langle x \rangle}a  :=  a^{\langle x + 1 \rangle}*( b + 1 *)  }'),
+                      array( display => 'on',  latex => '{  *( a^{\langle ^{\langle 0 \rangle}x \rangle}b *)^{\langle x \rangle}a  :=  a^{\langle ^{\langle 0 \rangle}x \rangle}*( ^{\langle 0 \rangle}b *)  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
