@@ -2337,8 +2337,8 @@
                                        text_undertitel_h2 => 'Zählen und dann weiter … ?',
                                        text_titel_discr_h3 => 'Das Zählen, Addieren, Multiplizieren und den Exponenten durch Zählen verbinden. Der Zusammenhang zwischen dem Zählen, den Grundrechenarten und deren Erweiterung',
                                        jump_ary => array(
-                                              'OM:OT:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
-                                              'OM:OT:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
+                                              'OM:OT:Home:Inhalt' => array( headline_text => 'Inhalt'/* , headline_text_short => 'XXX' */),
+                                              'OM:OT:Home:Lexikon' => array( headline_text => 'Lexikon'/* , headline_text_short => 'XXX' */),
                                             ),
                                      ),
                                'OM:OT:Einleitung' =>
@@ -2352,6 +2352,7 @@
                                        text_undertitel_h2 => 'Die Grundlagen der Arithmetik erhellen',
                                        text_titel_discr_h3 => '',
                                        jump_ary => array(
+                                              'OM:OT:Einleitung:Test-der-Notation' => array( headline_text => 'Test der Notation'/* , headline_text_short => 'XXX' */),
                                             ),
                                      ),
                                'OM:OT:Literatur' =>
