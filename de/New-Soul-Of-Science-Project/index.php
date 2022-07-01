@@ -1201,11 +1201,9 @@
                         'Fortsetzung der Operatoren.',
                         'Das Zählen als Vorgängeroperator der Addition.',
                     ))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{Eigene Seite in Planung …}'."\n"))),
 
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:SupNum:Biordinalzahlen'),
+                      array(  jump_name => 'OM:OT:Home'),
                     )),
               )
           ); ?>
