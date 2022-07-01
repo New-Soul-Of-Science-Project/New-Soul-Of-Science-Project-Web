@@ -148,6 +148,7 @@
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:OT:Literatur'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:OT:Einleitung'),
                     ))),
                       
                   $NPYo_g_index_KurseVortraegeWorkshops_Head,

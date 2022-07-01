@@ -2341,6 +2341,19 @@
                                               'OM:OT:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
                                             ),
                                      ),
+                               'OM:OT:Einleitung' =>
+                                array( url_abs => 'http://www.nsosp.org/de/Operialtheorie/Einleitung.php',
+                                       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Einleitung.php',
+                                       titel => 'Einleitung - Operialtheorie - Deutsch',
+                                       description => 'Einleitung zur ›Operialtheorie‹.',
+                                       keywords => '',
+                                       text_titel_h1 => 'Einleitung',
+                                       text_titel_short => 'Einleitung',
+                                       text_undertitel_h2 => 'Die Grundlagen der Arithmetik erhellen',
+                                       text_titel_discr_h3 => '',
+                                       jump_ary => array(
+                                            ),
+                                     ),
                                'OM:OT:Literatur' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Operialtheorie/Literatur.php',
                                        url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Literatur.php',
