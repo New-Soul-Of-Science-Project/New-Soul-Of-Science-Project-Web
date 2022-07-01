@@ -11,7 +11,7 @@
       <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:OT:Home'); ?>
 
 	
-          <?php Sc_g_litera_make( array(  'XXX',
+          <?php Sc_g_litera_make( array(  /* 'XXX', */
                                         )); ?>
 
 
