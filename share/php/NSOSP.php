@@ -2368,6 +2368,20 @@
                                        jump_ary => array(
                                             ),
                                      ),
+                               'OM:OT:Vorwort' =>
+                                array( url_abs => 'http://www.nsosp.org/de/Operialtheorie/Vorwort.php',
+                                       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Vorwort.php',
+                                       titel => 'Vorwort - Operialtheorie - Deutsch',
+                                       description => 'Vorwort zur ›Operialtheorie‹.',
+                                       keywords => '',
+                                       text_titel_h1 => 'Vorwort',
+                                       text_titel_short => 'Vorwort',
+                                       text_undertitel_h2 => 'Meine erste tief gehende Entdeckung',
+                                       text_titel_discr_h3 => '',
+                                       jump_ary => array(
+                                              // 'OM:OT:Einleitung:Test-der-Notation' => array( headline_text => 'Test der Notation'/* , headline_text_short => 'XXX' */),
+                                            ),
+                                     ),
 
                               'OM:SpaLeb:' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/index.php',

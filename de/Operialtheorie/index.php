@@ -59,11 +59,18 @@
                     ))),
                       
                   array( 'normal',
+                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Operialtheorie \\small{– Die Grundlagen der Arithmetik erhellen}}</h3>'."\n"),
+                  array( 'contentlist',
+                    array( content_ary => array(
+                      nSOSp_f_tableOfContents_elementAry( 'OM:OT:Vorwort'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:OT:Einleitung'),
+                    ))),
+                      
+                  array( 'normal',
                     '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Lesestoff und Verweise \\small{– Informationen}}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:OT:Literatur'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:OT:Einleitung'),
                     ))),
                       
                   $NPYo_g_index_KurseVortraegeWorkshops_Head,
