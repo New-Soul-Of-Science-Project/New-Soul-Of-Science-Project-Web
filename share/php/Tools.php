@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 13.09.2021, 14:00h
+  // #: Stand: 02.07.2021, 11:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20220702:  +:  "$To_g_Text_replace_ary":  '∘' -> '&#8728;' entry new.
   // v01.005:  20130713:  +:  "To_f_Paragraph":  Type "quote" is new.
   //           20130714:  +:  "To_f_Chapter_v1":  Is new.
   //                      !:  "To_f_Paragraph" type "jumplist":  Key "jump_name" is new.
@@ -424,6 +425,7 @@
                                     array( '°', '&deg;'),
                                     array( '©', '&copy;'),
                                     array( '®', '&reg;'),
+                                    array( '∘', '&#8728;'),  // #: https://de.wikipedia.org/wiki/Verkettungszeichen
                                     array( '𓇳', '&#78323;'),  // #: https://unicode-table.com/en/131F3/
                                     array( '☉', '&#9737;'),  // #: https://unicode-table.com/en/131F3/
                                     array( '↓', '&darr;'),

@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 29.06.2022, 15:00h
-  
+  // #: Stand: 02.07.2021, 11:00h
+
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20220702:  +:  "MathJax":  Add Macros "lOpera", "rOpera".
   // v01.005:  20130713:  !:  "Tools_v01_004.php"  -->  "Tools_v01_005.php"
   //                      !:  "\quot"  -->  "\quote"
   //                      !:  "$Sc_g_Text_replace_preg_ary":  "\term" and "\cite" are placed now in front of the merged Tools-Array, the remain afterwards. This is because both can be inside a "\color" part of text.
@@ -186,10 +187,12 @@
     echo '        TeX: {'."\n";
     echo '          extensions: ["color.js"],'."\n";
     echo '          Macros: {'."\n";
-    echo '            lowZero: "\\\\raise -.3ex 0",'."\n";
-    echo '            updownarrows: "\\\\uparrow\\\\!\\\\downarrow",'."\n";
     echo '            llangle: "\\\\langle \\\\mspace{-3.5mu} \\\\langle",'."\n";
     echo '            rrangle: "\\\\rangle \\\\mspace{-3.5mu} \\\\rangle",'."\n";
+    echo '            lOpera: "\\\\langle \\\\mspace{-2.2mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-1.0mu}",'."\n";
+    echo '            rOpera: "\\\\mspace{-1.0mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-2.4mu} \\\\rangle \\\\mspace{2.0mu}",'."\n";
+    echo '            lowZero: "\\\\raise -.3ex 0",'."\n";
+    echo '            updownarrows: "\\\\uparrow\\\\!\\\\downarrow",'."\n";
     echo '            MDo: "\\\\mathrm{\\\\downarrow}",'."\n";
     echo '            MUp: "\\\\mathrm{\\\\uparrow}",'."\n";
     echo '            MDoDo: "\\\\mathrm{\\\\downdownarrows}",'."\n";
