@@ -3,11 +3,12 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 02.07.2021, 11:00h
+  // #: Stand: 02.07.2021, 16:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
-  //           20220702:  +:  "MathJax":  Add Macros "lOpera", "rOpera".
+  //           20220702:  +:  "$Sc_g_equation_replace_ary":  '*o(' -> '\lOpera' and '*o)' -> '\rOpera' are new.
+  //                      +:  "MathJax":  Add Macros "lOpera", "rOpera".
   // v01.005:  20130713:  !:  "Tools_v01_004.php"  -->  "Tools_v01_005.php"
   //                      !:  "\quot"  -->  "\quote"
   //                      !:  "$Sc_g_Text_replace_preg_ary":  "\term" and "\cite" are placed now in front of the merged Tools-Array, the remain afterwards. This is because both can be inside a "\color" part of text.
@@ -606,6 +607,8 @@
                                     array( '\partial ', '\partial\,'),
                                     array( '\*part ', '\partial\,'),
                                     array( '\*part', '\partial\,'),
+                                    array( '*o(', '\lOpera'),
+                                    array( '*o)', '\rOpera'),
                                     array( '〈', '\langle '),
                                     array( '〉', '\rangle '),
                                     array( '*(', '\left('),
