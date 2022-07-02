@@ -95,7 +95,8 @@
                     ''))),
                       
                   array( 'text', array( text => array(
-                    'In Form von Beispielen sieht das dann so aus:'."\n".
+                    'So erhalten wir eine relative, weil rekursive, Definition.'."\n",
+                      'In Form von Beispielen sieht das dann so aus:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -104,7 +105,8 @@
                       array( display => 'on',  latex => '{  *( a^{a} *)^{a}  =  a^{\lOpera 4 \rOpera}3  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Der vierte Operator ergibt sich auf diese Weise zu einer Verkettung von Exponenten.'."\n".
+                    'Der vierte Operator, die niedere Tetration beziehungsweise der niedere Hyper-4-Operator,'."\n".
+                    'ergibt sich auf diese Weise zu einer Verkettung von Exponenten.'."\n".
                     'Dabei setze ich voraus, dass der Exponent-Operator als Vorzeichen von a, nämlich \\term{↑a},'."\n".
                     'das \\term{a} nicht verändert.'."\n".
                     ''))),
@@ -115,13 +117,51 @@
                     ))),
                   array( 'text', array( text => array(
                     'Gleiches gilt dann auch für das Mal als Vorzeichen, wie ich gleich dazu geschrieben hab.'."\n",
-                      'Diesen Zusammenhang drücken wir nun als Verkettung ›𓇳‹ aus, wobei bei dieser Verkettung die Funktionsschachtelung genau anders herum ist als die übliche ›∘‹.\\color{*Bearb}{(Link zu Wikipedia: https://de.wikipedia.org/wiki/Komposition_(Mathematik), https://de.wikipedia.org/wiki/Verkettungszeichen)}'."\n".
+                      'Diesen Zusammenhang drücken wir nun als umgekehrte Verkettung ›𓇳‹ aus, weil bei dieser Verkettung'."\n".
+                    'die Funktionsschachtelung genau anders herum ist als die übliche ›∘‹.\\color{*Bearb}{(Link zu Wikipedia\\footnote{https://de.wikipedia.org/wiki/Komposition_(Mathematik), https://de.wikipedia.org/wiki/Verkettungszeichen})}'."\n".
                     'Das nachfolgende Glied der Verkettung wird auf das Ergebnis aller vorherigen Glieder angewandt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  a^{\lOpera x + 1 \rOpera}b  :=  \overset{\huge{\circledcirc}}{\tiny{(\forall n \in \mathbb{N})[0 \le n < b]}} \;\; ^{\lOpera x \rOpera}a  }'),
                     ))),
+                  array( 'text', array( text => array(
+                    'Auf diese Weise gibt es eine klare absolute, weil explizite, Definition, die auch die Vorzeichen berücksichtigt.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:XXX', text =>
+                                           
+                'Was ist der Null-Operator')),
+                  array( 'text', array( text => array(
+                    'Interessant ist nun die Funktion des Null-Operators.'."\n".
+                    'Er muss zum Beispiel die folgende Formel erfüllen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \odot a \odot a \odot a  =  a + 3  }'),
+                      array( display => 'on',  latex => '{  ( a \odot a ) \odot a \odot a  =  a + 3  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \odot a \odot a \odot a  =  ( ( ( \odot a) \odot a ) \odot a )  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \odot a \odot a \odot a  =  ( ( ( a + 1 ) \odot a ) \odot a )  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \odot a \odot a \odot a  =  ( ( ( a + 1 ) + 1 ) \odot a )  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \odot a \odot a \odot a  =  ( ( ( a + 1 ) + 1 ) + 1 )  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \odot a \odot a \odot a  =  ( ( a + 2 ) \odot a )  }'),
+                      array( display => 'on',  latex => '{  \odot a  =  a + 1  }'),
+                      array( display => 'on',  latex => '{  + a + a + a  =  a \cdot 3  }'),
+                      array( display => 'on',  latex => '{  \cdot a \cdot a \cdot a  =  a^{3}  }'),
+                      array( display => 'on',  latex => '{  *( a^{a} *)^{a}  =  a^{\lOpera 4 \rOpera}3  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a^{a \cdot a}  =  a^{\lOpera 4 \rOpera}3  }'),
+                      array( display => 'on',  latex => '{  a^{ *( a^{b - 1} *) }  =  a^{\lOpera 4 \rOpera}b  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:XXX', text =>
+                                           
+                'Genaue Betrachtung der niederen Tetration beziehungsweise des niederen Hyper-4-Operators')),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
