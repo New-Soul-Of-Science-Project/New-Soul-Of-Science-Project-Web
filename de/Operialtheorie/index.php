@@ -14,10 +14,11 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Es gibt einen systematischen Zusammenhang zwischen den arithmetischen Operatoren:'."\n".
+                    'Die Addition, die Multiplikation und die Exponentialrechnung gehen auf gleiche Weise auseinander hervor,'."\n".
+                    'vom ersten (+) über den zweiten (⋅) bis zum dritten (^).'."\n".
+                    'Dadurch werden diese Operatoren zählbar.'."\n".
+                    'Es stellt sich heraus, dass der Vorgänger-Operator der Addition tatsächlich das Zählen selber ist.'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
                       
