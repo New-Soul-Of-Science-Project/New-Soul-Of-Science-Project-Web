@@ -73,9 +73,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a^{*o( 1 *o)}b  :=  a + b  }'),
-                      array( display => 'on',  latex => '{  a^{*o( 2 *o)}b  :=  a \cdot b  }'),
-                      array( display => 'on',  latex => '{  a^{*o( 3 *o)}b  :=  a^{b}  }'),
+                      array( display => 'on',  latex => '{  a*o( 1 *o)b  :=  a + b  }'),
+                      array( display => 'on',  latex => '{  a*o( 2 *o)b  :=  a \cdot b  }'),
+                      array( display => 'on',  latex => '{  a*o( 3 *o)b  :=  a^{b}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'So können wir die eben festgestellte Regelmäßigkeit zwischen zwei aufeinander folgenden Operatoren'."\n".
@@ -83,7 +83,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( a^{*o( x + 1 *o)}b *)^{*o( x *o)}a  :=  a^{*o( x + 1 *o)}*( b + 1 *)  }'),
+                      array( display => 'on',  latex => '{  *( a*o( x + 1 *o)b *)*o( x *o)a  :=  a*o( x + 1 *o)*( b + 1 *)  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wenn wir beschreiben, wofür diese Formel steht, dann würde ich sagen:'."\n".
@@ -102,7 +102,7 @@
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  + a + a + a  =  a \cdot 3  }'),
                       array( display => 'on',  latex => '{  \cdot a \cdot a \cdot a  =  a^{3}  }'),
-                      array( display => 'on',  latex => '{  *( a^{a} *)^{a}  =  a^{*o( 4 *o)}3  }'),
+                      array( display => 'on',  latex => '{  *( a^{a} *)^{a}  =  a*o( 4 *o)3  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Der vierte Operator, die niedere Tetration beziehungsweise der niedere Hyper-4-Operator,'."\n".
@@ -112,8 +112,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  a^{*o( 4 *o)}1  =  ^{*o( 3 *o)}a  =  \uparrow a  =  a  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  a^{*o( 3 *o)}1  =  ^{*o( 2 *o)}a  =  \cdot a  =  a  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  a*o( 4 *o)1  =  *o( 3 *o)a  =  \uparrow a  =  a  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  a*o( 3 *o)1  =  *o( 2 *o)a  =  \cdot a  =  a  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Gleiches gilt dann auch für das Mal als Vorzeichen, wie ich gleich dazu geschrieben hab.'."\n",
@@ -123,7 +123,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a^{*o( x + 1 *o)}b  :=  \overset{\huge{\circledcirc}}{\tiny{(\forall n \in \mathbb{N})[0 \le n < b]}} \;\; ^{*o( x *o)}a  }'),
+                      array( display => 'on',  latex => '{  a*o( x + 1 *o)b  :=  \overset{\huge{\circledcirc}}{\tiny{(\forall n \in \mathbb{N})[0 \le n < b]}} \;\; *o( x *o)a  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Auf diese Weise gibt es eine klare absolute, weil explizite, Definition, die auch die Vorzeichen berücksichtigt.'."\n".
@@ -137,7 +137,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \odot a \odot a \odot a  =  a + 3  }'),
+                      array( display => 'on',  latex => '{  *o( 0 *o) a *o( 0 *o) a *o( 0 *o) a  =  a *o( 1 *o) 3  =  a + 3  }'),
                       array( display => 'on',  latex => '{  ( a \odot a ) \odot a \odot a  =  a + 3  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \odot a \odot a \odot a  =  ( ( ( \odot a) \odot a ) \odot a )  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \odot a \odot a \odot a  =  ( ( ( a + 1 ) \odot a ) \odot a )  }'),
@@ -147,9 +147,9 @@
                       array( display => 'on',  latex => '{  \odot a  =  a + 1  }'),
                       array( display => 'on',  latex => '{  + a + a + a  =  a \cdot 3  }'),
                       array( display => 'on',  latex => '{  \cdot a \cdot a \cdot a  =  a^{3}  }'),
-                      array( display => 'on',  latex => '{  *( a^{a} *)^{a}  =  a^{*o( 4 *o)}3  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a^{a \cdot a}  =  a^{*o( 4 *o)}3  }'),
-                      array( display => 'on',  latex => '{  a^{ *( a^{b - 1} *) }  =  a^{*o( 4 *o)}b  }'),
+                      array( display => 'on',  latex => '{  *( a^{a} *)^{a}  =  a*o( 4 *o)3  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a^{a \cdot a}  =  a*o( 4 *o)3  }'),
+                      array( display => 'on',  latex => '{  a^{ *( a^{b - 1} *) }  =  a*o( 4 *o)b  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -172,9 +172,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( a^{a} *)^{a}  =  a^{*o( 4 *o)}3  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a^{a \cdot a}  =  a^{*o( 4 *o)}3  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  a^{ *( a^{b - 1} *) }  =  a^{*o( 4 *o)}b  }'),
+                      array( display => 'on',  latex => '{  *( a^{a} *)^{a}  =  a*o( 4 *o)3  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a^{a \cdot a}  =  a*o( 4 *o)3  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  a^{ *( a^{b - 1} *) }  =  a*o( 4 *o)b  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -186,7 +186,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( a^{*o( ^{*o( 0 *o)}x *o)}b *)^{*o( x *o)}a  :=  a^{*o( ^{*o( 0 *o)}x *o)}*( ^{*o( 0 *o)}b *)  }'),
+                      array( display => 'on',  latex => '{  *( a*o( *o( 0 *o)x *o)b *)*o( x *o)a  :=  a*o( *o( 0 *o)x *o)*( *o( 0 *o)b *)  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -198,8 +198,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ^{*o( 0 *o)}a  :=  a + 1  }'),
-                      array( display => 'on',  latex => '{  a^{*o( 0 *o)}b  :=  a + 1  }'),
+                      array( display => 'on',  latex => '{  *o( 0 *o)a  :=  a + 1  }'),
+                      array( display => 'on',  latex => '{  a*o( 0 *o)b  :=  a + 1  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -223,9 +223,9 @@
                       array( display => 'on',  latex => '{  \odot a  =  a + 1  }'),
                       array( display => 'on',  latex => '{  + a + a + a  =  a \cdot 3  }'),
                       array( display => 'on',  latex => '{  \cdot a \cdot a \cdot a  =  a^{3}  }'),
-                      array( display => 'on',  latex => '{  *( a^{a} *)^{a}  =  a^{*o( 4 *o)}3  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a^{a \cdot a}  =  a^{*o( 4 *o)}3  }'),
-                      array( display => 'on',  latex => '{  a^{ *( a^{b - 1} *) }  =  a^{*o( 4 *o)}b  }'),
+                      array( display => 'on',  latex => '{  *( a^{a} *)^{a}  =  a*o( 4 *o)3  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a^{a \cdot a}  =  a*o( 4 *o)3  }'),
+                      array( display => 'on',  latex => '{  a^{ *( a^{b - 1} *) }  =  a*o( 4 *o)b  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -237,7 +237,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( a^{a} *)^{a}  =  a^{*o( 4 *o)}3  }'),
+                      array( display => 'on',  latex => '{  *( a^{a} *)^{a}  =  a*o( 4 *o)3  }'),
                       array( display => 'on',  latex => '{  *( *( n^a *)^{a} *)^{a}  =  *( a^{a} *)^{a}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^a  =  a  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n  =  \sqrt[a]{a}  }'),
@@ -252,7 +252,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{   ^{*o( x *o)}2^{*o( x *o)}2  :=  4  }'),
+                      array( display => 'on',  latex => '{   *o( x *o)2*o( x *o)2  :=  4  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
