@@ -2352,7 +2352,10 @@
                                        text_undertitel_h2 => 'Die Grundlagen der Arithmetik erhellen',
                                        text_titel_discr_h3 => '',
                                        jump_ary => array(
-                                              'OM:OT:Einleitung:Test-der-Notation' => array( headline_text => 'Test der Notation'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv' => array( headline_text => 'OT.Ein.4'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Vortext:Equ-Tetration-Beispiel' => array( headline_text => 'OT.Ein.7'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut' => array( headline_text => 'OT.Ein.12'/* , headline_text_short => 'XXX' */),
+                                              'OM:OT:Einleitung:Weitere-Untersuchungen' => array( headline_text => 'Weitere Untersuchungen'/* , headline_text_short => 'XXX' */),
                                             ),
                                      ),
                                'OM:OT:Literatur' =>
