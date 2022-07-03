@@ -140,7 +140,7 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:XXX', text =>
                                            
-                'Was ist der Null-Operator')),
+                'Was ist der Null-Operator?')),
                   array( 'text', array( text => array(
                     'Interessant ist nun die Funktion des Null-Operators.'."\n".
                     'Er muss zum Beispiel die folgende Formel erfüllen:'."\n".
@@ -149,12 +149,13 @@
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *o( 0 *o) a *o( 0 *o) a *o( 0 *o) a  =  a *o( 1 *o) 3  =  a + 3  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( *( *o( 0 *o) a *) *o( 0 *o) a *) *o( 0 *o) a  =  a + 3  }'),
+                      array( display => 'on',  latex => '{  *( a *o( 1 *o) b *) *o( 0 *o) a  :=  a *o( 1 *o) *( b + 1 *)  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Durch die Klammerung hab ich noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
                       'Da drei Mal der Null-Operator auf ein beliebiges \\term{a} angewandt wird und dies insgesamt \\term{a} um Drei'."\n".
                     'erhöhen soll, kann es nur so sein, dass jeder Operator das Ergebnis um Eins erhöht.'."\n".
-                    'Das bedeutet dann:'."\n".
+                    'Das bedeutet dann, wenn \\term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -240,6 +241,92 @@
                       array(  jump_name => 'OM:OT:Einleitung', type => 'back'),
                     )),
                   
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Weitere-Untersuchungen:XXX', text =>
+                                           
+                'Was ist der Minus-Eins-Operator?')),
+                  array( 'text', array( text => array(
+                    'Interessant ist nun auch noch die Funktion des Minus-Eins-Operators.'."\n".
+                    'Er muss zum Beispiel die folgenden Formeln erfüllen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *o( -1 *o) a *o( -1 *o) a  =  a *o( 0 *o) 2  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *o( -1 *o) a *) *o( -1 *o) a  =  a + 1  }'),
+                      array( display => 'on',  latex => '{  *o( -1 *o) a *o( -1 *o) a *o( -1 *o) a  =  a *o( 0 *o) 3  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( *o( -1 *o) a *) *o( -1 *o) a *) *o( -1 *o) a  =  a + 1  }'),
+                      array( display => 'on',  latex => '{  *( a *o( 0 *o) b *) *o( -1 *o) a  :=  a *o( 0 *o) *( b + 1 *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Durch die Klammerung hab ich noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
+                      'Da zwei und drei Mal der Minus-Eins-Operator auf ein beliebiges \\term{a} angewandt wird und dies insgesamt \\term{a} immer genau um Eins'."\n".
+                    'erhöhen soll, kann es nur so sein, dass der erste Operator als Vorzeichen das Ergebnis bestimmt.'."\n".
+                    'Das bedeutet dann, wenn \\term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *o( -1 *o) a  =  *o( 0 *o) a  =  a + 1  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c *o( -1 *o) a  =  c  \neq  c *o( 0 *o) a  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wir sehen:'."\n",
+                      'Ist der Minus-Eins-Operator ein Vorzeichen, dann erhöht er die nach ihm stehende Zahl, also die rechts stehende, um Eins.'."\n".
+                    'Steht der Minus-Eins-Operator zwischen zwei Zahlen, dann ändert dies nichts am Ergebnis.'."\n".
+                    'Die nachfolgende Zahl, die rechts stehende, hat darauf dann natürlich auch keinen Einfluss.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                      'Der Minus-Eins-Operator ist nur als Vorzeichen ein Inkrement- oder Zähl-Operator.'."\n".
+                      'Als Operator zwischen zwei Zahlen ist er neutral.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( text => array(
+                    'Damit ähnelt er dem Null-Operator, ist ihm aber nicht in jedem Fall gleich.'."\n".
+                    'Auf die philosophische und auch physikalische Bedeutung, komme ich im weiteren Verlauf'."\n".
+                    'noch zu sprechen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Weitere-Untersuchungen:XXX', text =>
+                                           
+                'Was ist der Minus-Zwei-Operator?')),
+                  array( 'text', array( text => array(
+                    'Interessant ist nun auch noch die Funktion des Minus-Zwei-Operators.'."\n".
+                    'Er muss zum Beispiel die folgende Formel erfüllen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *o( -2 *o) a *o( -2 *o) a  =  a *o( -1 *o) 2  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *o( -2 *o) a *) *o( -2 *o) a  =  a  }'),
+                      array( display => 'on',  latex => '{  *o( -2 *o) a *o( -2 *o) a *o( -2 *o) a  =  a *o( -1 *o) 3  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( *o( -2 *o) a *) *o( -2 *o) a *) *o( -2 *o) a  =  a  }'),
+                      array( display => 'on',  latex => '{  *( a *o( -1 *o) b *) *o( -2 *o) a  :=  a *o( -1 *o) *( b + 1 *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Durch die Klammerung hab ich noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
+                      'Der Minus-Zwei-Operator, auf ein beliebiges \\term{a} angewandt, ändert an \\term{a} nie etwas;'."\n".
+                    'weder als Vorzeichen, noch als Operator zwischen Zahlen.'."\n".
+                    'Das bedeutet dann, wenn \\term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *o( -2 *o) a  =  a  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c *o( -2 *o) a  =  c  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wir sehen:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                      'Ist der Minus-Zwei-Operator ist völlig neutral.'."\n".
+                      'Damit sind alle noch kleineren Operatoren auch neutral.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( text => array(
+                    'Damit ähnelt er dem Minus-Eins-Operator, ist ihm aber nicht in jedem Fall gleich.'."\n".
+                    'Auf die philosophische und auch physikalische Bedeutung, komme ich im weiteren Verlauf'."\n".
+                    'noch zu sprechen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:XXX', text =>
+                                           
+                'XXX')),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
