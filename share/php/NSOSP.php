@@ -3733,8 +3733,11 @@
     echo ''."\n";
     echo '			<div id="footer" class="footer main-shadow-0-5-30 main-layer-3">'."\n";
     echo '				<p align="center">'."\n";
-    echo '					<a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2022 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a> &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
+    echo '					<a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2022 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
+    echo '					&nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
     echo '					<a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Kontakt</a>'."\n";
+    echo '					&nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
+    echo '					<a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web" target="_blank">v9.23</a>'."\n";
     echo '				</p>'."\n";
     echo '			</div>'."\n";
     echo ''."\n";
