@@ -2356,6 +2356,8 @@
                                                 'OM:OT:Einleitung:Vortext:Equ-Tetration-Beispiel' => array( headline_text => 'OT.Ein.7'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut' => array( headline_text => 'OT.Ein.12'/* , headline_text_short => 'XXX' */),
                                               'OM:OT:Einleitung:Weitere-Untersuchungen' => array( headline_text => 'Weitere Untersuchungen'/* , headline_text_short => 'XXX' */),
+                                              'OM:OT:Einleitung:Andere-Moeglichkeiten' => array( headline_text => 'Andere Möglichkeiten'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Andere-Moeglichkeiten:Equ-Operial-Rekursiv-mit-Vorzeichen' => array( headline_text => 'OT.Ein.38'/* , headline_text_short => 'XXX' */),
                                             ),
                                      ),
                                'OM:OT:Literatur' =>
