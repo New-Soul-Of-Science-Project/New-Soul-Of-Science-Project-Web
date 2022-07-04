@@ -60,7 +60,8 @@
                     'XXX'."\n"))),
                   array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:XXX', text =>
                                            
-                'Herleitung der allgemeinen Operatoren Formeln')),
+                'Herleitung der allgemeinen Operatoren Formeln', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     'Im Mathematikunterricht in der Oberstufe war mir aufgefallen, dass es Regelmäßigkeiten zwischen'."\n".
                     'den grundlegenden Operatoren der Arithmetik\\color{*Bearb}{(Link zu Wikipedia)} gibt.'."\n".
@@ -140,7 +141,8 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:XXX', text =>
                                            
-                'Was ist der Null-Operator?')),
+                'Was ist der Null-Operator?', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     'Interessant ist nun die Funktion des Null-Operators.'."\n".
                     'Er muss zum Beispiel die folgende Formel erfüllen:'."\n".
@@ -191,7 +193,8 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:XXX', text =>
                                            
-                'Genaue Betrachtung der niederen Tetration beziehungsweise des niederen Hyper-4-Operators')),
+                'Genaue Betrachtung der niederen Tetration beziehungsweise des niederen Hyper-4-Operators', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     'Der auf die Exponentialrechnung folgende Operator ist die sogenannte ›niedere Tetration‹'."\n".
                     'oder der ›niedere Hyper-4-Operator‹.'."\n".
@@ -243,7 +246,8 @@
                   
                   array( 'headline', array( jump_name => 'OM:OT:Einleitung:Weitere-Untersuchungen:XXX', text =>
                                            
-                'Was ist der Minus-Eins-Operator?')),
+                'Was ist der Minus-Eins-Operator?', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     'Interessant ist nun auch noch die Funktion des Minus-Eins-Operators.'."\n".
                     'Er muss zum Beispiel die folgenden Formeln erfüllen:'."\n".
@@ -286,7 +290,8 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Einleitung:Weitere-Untersuchungen:XXX', text =>
                                            
-                'Was ist der Minus-Zwei-Operator?')),
+                'Was ist der Minus-Zwei-Operator?', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     'Interessant ist nun auch noch die Funktion des Minus-Zwei-Operators.'."\n".
                     'Er muss zum Beispiel die folgende Formel erfüllen:'."\n".
@@ -324,6 +329,20 @@
                     'Auf die philosophische und auch physikalische Bedeutung, komme ich im weiteren Verlauf'."\n".
                     'noch zu sprechen.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:XXX', text =>
+                                           
+                'Der Beginn des Zählens', subline =>
+                  'Wie kommen wir von den kleinen, neutralen Operatoren zum Zählen?')),
+                  array( 'text', array( text => array(
+                    'Wenn der Minus-Zwei-Operator und alle kleineren demnach nun völlig neutral sind, wie fängt das Zählen'."\n".
+                    'dann an?'."\n",
+                      'Von den kleinen, neutralen Operatoren her gedacht bleibt uns nichts anderes übrig, als einen von ihren'."\n".
+                    'Vorzeichen als das erste Zählen zu definieren:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *o( -1 *o) a  :=  a + 1  }'),
+                    ))),
                   array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:XXX', text =>
                                            
                 'XXX')),
