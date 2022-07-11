@@ -11,6 +11,7 @@
   //                      +:  "MathJax":  Add Macros "lROpera", "rROpera".
   //                      +:  "$Sc_g_equation_replace_ary":  '*l(' -> '^{\lLOpera' and '*l)' -> '\rLOpera}' are new.
   //                      +:  "MathJax":  Add Macros "lLOpera", "rLOpera".
+  //                      *:  "$Sc_g_equation_replace_ary":  Correct '(  ' -> ')\; ' to '(  ' -> '(\; '.
   //           20220702:  +:  "$Sc_g_equation_replace_ary":  '*o(' -> '^{\lOpera' and '*o)' -> '\rOpera}' are new.
   //                      +:  "MathJax":  Add Macros "lOpera", "rOpera".
   // v01.005:  20130713:  !:  "Tools_v01_004.php"  -->  "Tools_v01_005.php"
@@ -633,7 +634,7 @@
                                     array( '|*', '\right|'),
                                     array( '*\langle', '\left\langle'),
                                     array( '*\rangle', '\right\rangle'),
-                                    array( '(  ', ')\; '),
+                                    array( '(  ', '(\; '),
                                     array( '  )', ' \;)'),
                                     array( '\left(  ', '\left(\; '),
                                     array( '  \right)', ' \;\right)'),
