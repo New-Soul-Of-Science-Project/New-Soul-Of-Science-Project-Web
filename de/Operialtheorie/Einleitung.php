@@ -389,9 +389,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{   a *o( x *o) b  :=  c  }'),
-                      array( display => 'on',  latex => '{   \Leftrightarrow  a  :=  c *r( x *r) b  }'),
-                      array( display => 'on',  latex => '{   \Leftrightarrow  b  :=  c *l( x *l) a  }'),
+                      array( display => 'on',  latex => '{   c  =  a *o( x *o) b  }'),
+                      array( display => 'on',  latex => '{   \Leftrightarrow  c *r( x *r) b  :=  a  }'),
+                      array( display => 'on',  latex => '{   \Leftrightarrow  c *l( x *l) a  :=  b  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -425,6 +425,11 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  n *o( x *o) a  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n  =  a *r( x *r) a  }'),
+                    ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
@@ -435,10 +440,45 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( a^{a} *)^{a}  =  a*o( 4 *o)3  }'),
-                      array( display => 'on',  latex => '{  *( *( n^a *)^{a} *)^{a}  =  *( a^{a} *)^{a}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^a  =  a  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n  =  \sqrt[a]{a}  }'),
+                      array( display => 'on',  latex => '{  a  =  a *o( x *o) n  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n  =  a *l( x *l) a  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
+                                           
+                'Neutrale Elemente der Potenz', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  n *o( 3 *o) a  =  n^a  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n  =  a *r( 3 *r) a  =  \sqrt[a]{a}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  a *o( 3 *o) n  =  a^n  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n  =  a *l( 3 *l) a  =  log_{a} a  =  1  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -462,16 +502,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ( ( ( ( a - 2 ) \odot ( a - 1 ) ) \odot a ) \odot a ) \odot a \odot a  =  a + 3  }'),
-                      array( display => 'on',  latex => '{  ( ( ( a - 1 ) \odot a ) \odot a ) \odot a \odot a  =  a + 3  }'),
-                      array( display => 'on',  latex => '{  ( a \odot a ) \odot a \odot a  =  a + 3  }'),
-                      array( display => 'on',  latex => '{  \odot a \odot a \odot a  =  a + 3  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \odot a \odot a \odot a  =  ( ( ( \odot a) \odot a ) \odot a )  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \odot a \odot a \odot a  =  ( ( ( a + 1 ) \odot a ) \odot a )  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \odot a \odot a \odot a  =  ( ( ( a + 1 ) + 1 ) \odot a )  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \odot a \odot a \odot a  =  ( ( ( a + 1 ) + 1 ) + 1 )  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \odot a \odot a \odot a  =  ( ( a + 2 ) \odot a )  }'),
-                      array( display => 'on',  latex => '{  \odot a  =  a + 1  }'),
+                      array( display => 'on',  latex => '{  a  =  n *o( 0 *o) a  =  n + 1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n  =  a *r( 0 *r) a  =  a - 1  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -481,7 +513,14 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  a *o( 0 *o) n  =  a + 1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \nexists n *) *[  a  =  a *o( 0 *o) n  =  a + 1  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \nexists n *) *[  n  =  a *r( 0 *r) a  *]  }'),
+                    ))),
                   array( 'text', array( text => array(
+                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
