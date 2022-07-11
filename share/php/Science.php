@@ -3,10 +3,14 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 02.07.2021, 16:00h
+  // #: Stand: 11.07.2021, 23:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20220711:  +:  "$Sc_g_equation_replace_ary":  '*r(' -> '^{\lROpera' and '*r)' -> '\rROpera}' are new.
+  //                      +:  "MathJax":  Add Macros "lROpera", "rROpera".
+  //                      +:  "$Sc_g_equation_replace_ary":  '*l(' -> '^{\lLOpera' and '*l)' -> '\rLOpera}' are new.
+  //                      +:  "MathJax":  Add Macros "lLOpera", "rLOpera".
   //           20220702:  +:  "$Sc_g_equation_replace_ary":  '*o(' -> '^{\lOpera' and '*o)' -> '\rOpera}' are new.
   //                      +:  "MathJax":  Add Macros "lOpera", "rOpera".
   // v01.005:  20130713:  !:  "Tools_v01_004.php"  -->  "Tools_v01_005.php"
@@ -192,6 +196,10 @@
     echo '            rrangle: "\\\\rangle \\\\mspace{-3.5mu} \\\\rangle",'."\n";
     echo '            lOpera: "\\\\langle \\\\mspace{-2.2mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-1.0mu}",'."\n";
     echo '            rOpera: "\\\\mspace{-1.0mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-2.4mu} \\\\rangle \\\\mspace{2.0mu}",'."\n";
+    echo '            lROpera: "\\\\langle \\\\mspace{-2.2mu} \\\\mspace{1.5mu}",'."\n";
+    echo '            rROpera: "\\\\mspace{-1.0mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-2.5mu} \\\\raise .908ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-2.4mu} \\\\rangle \\\\mspace{2.0mu}",'."\n";
+    echo '            lLOpera: "\\\\langle \\\\mspace{-2.2mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-2.5mu} \\\\raise .908ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-1.0mu}",'."\n";
+    echo '            rLOpera: "\\\\mspace{-0.4mu} \\\\rangle \\\\mspace{2.0mu}",'."\n";
     echo '            lowZero: "\\\\raise -.3ex 0",'."\n";
     echo '            updownarrows: "\\\\uparrow\\\\!\\\\downarrow",'."\n";
     echo '            MDo: "\\\\mathrm{\\\\downarrow}",'."\n";
@@ -609,6 +617,10 @@
                                     array( '\*part', '\partial\,'),
                                     array( '*o(', '^{\lOpera'),
                                     array( '*o)', '\rOpera}'),
+                                    array( '*r(', '^{\lROpera'),
+                                    array( '*r)', '\rROpera}'),
+                                    array( '*l(', '^{\lLOpera'),
+                                    array( '*l)', '\rLOpera}'),
                                     array( '〈', '\langle '),
                                     array( '〉', '\rangle '),
                                     array( '*(', '\left('),

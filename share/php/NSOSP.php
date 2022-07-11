@@ -2355,7 +2355,15 @@
                                                 'OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv' => array( headline_text => 'OT.Ein.4'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Vortext:Equ-Tetration-Beispiel' => array( headline_text => 'OT.Ein.7'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut' => array( headline_text => 'OT.Ein.12'/* , headline_text_short => 'XXX' */),
-                                              'OM:OT:Einleitung:Weitere-Untersuchungen' => array( headline_text => 'Weitere Untersuchungen'/* , headline_text_short => 'XXX' */),
+                                                         
+                                              'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator' => array( headline_text => 'Minus-Eins-Operator und Minus-Zwei-Operator'/* , headline_text_short => 'XXX' */),
+                                                         
+                                              'OM:OT:Einleitung:Inverse-Operatoren' => array( headline_text => 'Inverse Operatoren'/* , headline_text_short => 'XXX' */),
+                                                         
+                                              'OM:OT:Einleitung:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'XXX' */),
+                                                         
+                                              'OM:OT:Einleitung:Eigenschaften' => array( headline_text => 'Eigenschaften'/* , headline_text_short => 'XXX' */),
+                                                         
                                               'OM:OT:Einleitung:Andere-Moeglichkeiten' => array( headline_text => 'Andere Möglichkeiten'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Andere-Moeglichkeiten:Equ-Operial-Rekursiv-mit-Vorzeichen' => array( headline_text => 'OT.Ein.AM.1'/* , headline_text_short => 'XXX' */),
                                             ),

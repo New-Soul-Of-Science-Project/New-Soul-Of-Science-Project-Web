@@ -225,7 +225,7 @@
                     
                   array( 'jumplist',
                     array(
-                      array(  jump_name => 'OM:OT:Einleitung:Weitere-Untersuchungen'),
+                      array(  jump_name => 'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator'),
                     )),
                 )
           ); ?>
@@ -233,9 +233,9 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-		    	<!  • Weitere Untersuchungen  >
+		    	<!  • Minus-Eins-Operator und Minus-Zwei-Operator  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
-            'OM:OT:Einleitung:Weitere-Untersuchungen',
+            'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
@@ -249,7 +249,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Weitere-Untersuchungen:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:XXX', text =>
                                            
                 'Was ist der Minus-Eins-Operator?', subline =>
                   '')),
@@ -293,7 +293,7 @@
                     'Auf die philosophische und auch physikalische Bedeutung, komme ich im weiteren Verlauf'."\n".
                     'noch zu sprechen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Weitere-Untersuchungen:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:XXX', text =>
                                            
                 'Was ist der Minus-Zwei-Operator?', subline =>
                   '')),
@@ -334,7 +334,7 @@
                     'Auf die philosophische und auch physikalische Bedeutung, komme ich im weiteren Verlauf'."\n".
                     'noch zu sprechen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:XXX', text =>
                                            
                 'Der Beginn des Zählens', subline =>
                   'Wie kommen wir von den kleinen, neutralen Operatoren zum Zählen?')),
@@ -351,9 +351,107 @@
                   array( 'text', array( text => array(
                     'Ohne diesen ersten Funken des Lichts tut sich nichts!'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:XXX', text =>
                                            
                 'XXX')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:OT:Einleitung:Inverse-Operatoren'),
+                    )),
+                )
+          ); ?>
+
+          
+		    	<!  • Inverse Operatoren  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:OT:Einleitung:Inverse-Operatoren',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator', type => 'back'),
+                    )),
+                  
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{   a *o( x *o) b  :=  c  }'),
+                      array( display => 'on',  latex => '{   \Leftrightarrow  a  :=  c *r( x *r) b  }'),
+                      array( display => 'on',  latex => '{   \Leftrightarrow  b  :=  c *l( x *l) a  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:OT:Einleitung:Neutrale-Elemente'),
+                    )),
+                )
+          ); ?>
+
+          			
+		    	<!  • Neutrale Elemente  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:OT:Einleitung:Neutrale-Elemente',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:OT:Einleitung:Inverse-Operatoren', type => 'back'),
+                    )),
+                  
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( a^{a} *)^{a}  =  a*o( 4 *o)3  }'),
+                      array( display => 'on',  latex => '{  *( *( n^a *)^{a} *)^{a}  =  *( a^{a} *)^{a}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^a  =  a  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n  =  \sqrt[a]{a}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
+                                           
+                'Neutrale Elemente des Null-Operators', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
@@ -383,13 +481,63 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( a^{a} *)^{a}  =  a*o( 4 *o)3  }'),
-                      array( display => 'on',  latex => '{  *( *( n^a *)^{a} *)^{a}  =  *( a^{a} *)^{a}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^a  =  a  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n  =  \sqrt[a]{a}  }'),
-                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:XXX', text =>
+                                           
+                'Neutrale Elemente des Minus-Eins-Operators', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:XXX', text =>
+                                           
+                'Neutrale Elemente des Minus-Zwei-Operators', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
+                                           
+                'XXX')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:OT:Einleitung:Eigenschaften'),
+                    )),
+                )
+          ); ?>
+
+          			
+		    	<!  • Eigenschaften  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+            'OM:OT:Einleitung:Eigenschaften',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:OT:Einleitung:Neutrale-Elemente', type => 'back'),
+                    )),
+                  
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
@@ -400,7 +548,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{   *o( x *o)2*o( x *o)2  :=  4  }'),
+                      array( display => 'on',  latex => '{   *o( x *o) 2 *o( x *o) 2  :=  4  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -417,14 +565,14 @@
                 )
           ); ?>
 
-          
+          			
 		    	<!  • Andere Möglichkeiten  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
             'OM:OT:Einleitung:Andere-Moeglichkeiten',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:OT:Einleitung:Weitere-Untersuchungen', type => 'back'),
+                      array(  jump_name => 'OM:OT:Einleitung:Eigenschaften', type => 'back'),
                     )),
                   
                   array( 'text', array( text => array(
@@ -447,7 +595,7 @@
                   array( 'text', array( text => array(
                     'Dann sehen die kleineren Operatoren anders aus …'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:XXX', text =>
                                            
                 'Was ist dann der Null-Operator?', subline =>
                   '')),
@@ -576,7 +724,7 @@
                     'noch zu sprechen.'."\n",
                       'Ebenso hier macht die Version mit zusätzlichem Vorzeichen keinen Unterschied.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:XXX', text =>
                                            
                 'Die Versionen ohne und mit zusätzlichem Vorzeichen in der rekursiven Definition sind identisch', subline =>
                   '')),
@@ -599,7 +747,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:XXX', text =>
                                            
                 'XXX')),
                   array( 'text', array( text => array(
@@ -617,7 +765,8 @@
                 )
           ); ?>
 
-          			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>
+          			
+    <?php FrQFT_f_Div_WrapperEnd( '      '); ?>
 
 	
 <?php FrQFT_f_HTML_EndDivsNavExtrFootContainerBody(); ?>
