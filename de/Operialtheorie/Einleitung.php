@@ -427,8 +427,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a  =  n *o( x *o) a  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n  =  a *r( x *r) a  }'),
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  n *o( x *o) a  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n  =  a *r( x *r) a  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -440,8 +440,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a  =  a *o( x *o) n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n  =  a *l( x *l) a  }'),
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  a *o( x *o) n  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n  =  a *l( x *l) a  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -464,8 +464,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a  =  n *o( 3 *o) a  =  n^a  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n  =  a *r( 3 *r) a  =  \sqrt[a]{a}  }'),
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  n *o( 3 *o) a  =  n^a  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n  =  a *r( 3 *r) a  =  \sqrt[a]{a}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -477,8 +477,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a  =  a *o( 3 *o) n  =  a^n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n  =  a *l( 3 *l) a  =  log_{a} a  =  1  }'),
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  a *o( 3 *o) n  =  a^n  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n  =  a *l( 3 *l) a  =  log_{a} a  =  1  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -502,8 +502,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a  =  n *o( 0 *o) a  =  n + 1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n  =  a *r( 0 *r) a  =  a - 1  }'),
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  n *o( 0 *o) a  =  n + 1  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n  =  a *r( 0 *r) a  =  a - 1  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -515,9 +515,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a  =  a *o( 0 *o) n  =  a + 1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \nexists n *) *[  a  =  a *o( 0 *o) n  =  a + 1  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \nexists n *) *[  n  =  a *r( 0 *r) a  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  a *o( 0 *o) n  =  a + 1  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n *) *( \forall a *) *[  a  =  a *o( 0 *o) n  =  a + 1  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n *) *( \forall a *) *[  n  =  a *r( 0 *r) a  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -527,7 +527,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
                                            
                 'Neutrale Elemente des Minus-Eins-Operators', subline =>
                   '')),
@@ -538,10 +538,62 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:XXX', text =>
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  n *o( -1 *o) a  =  n  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n  =  a *r( -1 *r) a  =  a  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  a *o( -1 *o) n  =  a  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n *) *( \forall a *) *[  a  =  a *o( -1 *o) n  =  a  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n *) *( \forall a *) *[  n  =  a *l( -1 *l) a  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
                                            
                 'Neutrale Elemente des Minus-Zwei-Operators', subline =>
                   '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  n *o( -2 *o) a  =  n  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n  =  a *r( -2 *r) a  =  a  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  a *o( -2 *o) n  =  a  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n *) *( \forall a *) *[  a  =  a *o( -2 *o) n  =  a  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n *) *( \forall a *) *[  n  =  a *l( -2 *l) a  *]  }'),
+                    ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
@@ -587,7 +639,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{   *o( x *o) 2 *o( x *o) 2  :=  4  }'),
+                      array( display => 'on',  latex => '{   *( \forall x *) *( 0 \leq x *) *[  *o( x *o) 2 *o( x *o) 2  =  4  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
