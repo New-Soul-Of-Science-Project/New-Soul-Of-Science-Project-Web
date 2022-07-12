@@ -493,12 +493,15 @@
                 'Neutrale Elemente des Null-Operators', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Die links- und rechtsseitigen neutralen Elemente des Null-Operators weisen'."\n".
+                    'Besonderheiten auf, die andere Operatoren nicht besitzen.'."\n".
+                    'Das verleiht dem Null-Operator eine außergewöhnliche Bedeutung und'."\n".
+                    'macht ihn zu etwas Besondererem.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Linksseitig neutrales Element} \\\\'."\n".
+                    'Um das linksseitig neutrale Element des Null-Operators zu bestimmen setzen wir diesen Operator'."\n".
+                    'in Formel \\color{*Bearb}{XXX} ein und erhalten:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -506,26 +509,63 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n  =  a *r( 0 *r) a  =  a - 1  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Wir sehen, dass das linksseitig neutrale Element aus dem Zählen geboren ist und'."\n".
+                    'immer den Vorgänger unserer Zahl \\term{a} darstellt.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Rechtsseitig neutrales Element} \\\\'."\n".
+                    'Um das rechtsseitig neutrale Element des Null-Operators zu bestimmen setzen wir diesen Operator'."\n".
+                    'in Formel \\color{*Bearb}{XXX} ein und erhalten:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  a *o( 0 *o) n  =  a + 1  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n *) *( \forall a *) *[  a  =  a *o( 0 *o) n  =  a + 1  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n *) *( \forall a *) *[  n  =  a *r( 0 *r) a  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \nexists n *) *( \forall a *) *[  a  =  a *o( 0 *o) n  =  a + 1  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \nexists n *) *( \forall a *) *[  n  =  a *r( 0 *r) a  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Wir können erkennen, dass es kein rechtsseitig neutrales Element des Null-Operators gibt.'."\n".
+                    'Es existiert nicht, weil jede Zahl \\term{n} unser \\term{a} um einen hoch zählt.'."\n".
+                    'Es gibt keine Zahl \\term{n}, die unser \\term{a} nicht verändert.'."\n",
+                      'Halten wir also unser jetziges \\term{a} fest, dann sieht ihre Einbettung in'."\n".
+                    'neutrale Elemente wie folgt aus:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  \cdots *( a - 3 *) *o( 0 *o) *( a - 2 *) *o( 0 *o) *( a - 1 *) *o( 0 *o) a  =  a  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auf der rechten Seite von a existieren keine neutralen Elemente und daher auch kleine Einbettung.'."\n",
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Naturphilosophische Interpretation} \\\\'."\n".
+                    'Betrachten wir das Zählen mit diesem Operator naturphilosophisch aus einer zeitlichen Perspektive,'."\n".
+                    'dann können wir unser festgehaltenes oder festgelegtes \\term{a} als die Gegenwart verstehen:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                      'Diese Gegenwart unserer Zahl \\term{a} hat eine Historie in die sie eingebettet ist, aus der sie folgt.'."\n".
+                      'Aber sie hat noch keine Zukunft.'."\n".
+                      'Ihre Zukunft wird erst durch den Prozess des Zählens, durch das Anhängen eines weiteren Zähloperators'."\n".
+                      'mit einer beliebigen Zahl, einer beliebigen Existenz, erschaffen.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( text => array(
+                    'Unser Null-Operator hat also bedeutende zeitliche Qualitäten.'."\n",
+                      'Und wir können mit dem Null-Operator überprüfen, ob eine Zahl existiert:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a *o( 0 *o) n  =  a + 1  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( \forall a *) *[  a *o( 0 *o) n  =  a + 1  *] *) *[  \exists n  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a *o( 0 *o) n  =  a  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( \forall a *) *[  a *o( 0 *o) n  =  a  *] *) *[  \nexists n  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dies gilt so allgemein, weil es nicht darauf ankommt, was \\term{n} ist,'."\n".
+                    'sondern es kommt nur darauf an, ob es existiert.'."\n",
+                      'Wir können mit Hilfe unseres Null-Operators allgemeine Aussagen über die logische Existenz einer Zahl machen.'."\n".
+                    'Auch deshalb ist unser Null-Operator wirklich etwas ganz besonderes.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
                                            
