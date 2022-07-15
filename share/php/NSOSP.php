@@ -2359,6 +2359,8 @@
                                               'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator' => array( headline_text => 'Minus-Eins-Operator und Minus-Zwei-Operator'/* , headline_text_short => 'XXX' */),
                                                          
                                               'OM:OT:Einleitung:Inverse-Operatoren' => array( headline_text => 'Inverse Operatoren'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Wurzel-Definition' => array( headline_text => 'OT.Ein.Inv.2'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Logarithmus-Definition' => array( headline_text => 'OT.Ein.Inv.3'/* , headline_text_short => 'XXX' */),
                                                          
                                               'OM:OT:Einleitung:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'XXX' */),
                                                          

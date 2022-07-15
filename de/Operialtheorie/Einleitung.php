@@ -258,7 +258,7 @@
                     'Er muss zum Beispiel die folgenden Formeln erfüllen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.Ein.MO', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *o( -1 *o) a *o( -1 *o) a  =  a *o( 0 *o) 2  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( *o( -1 *o) a *) *o( -1 *o) a  =  a + 1  }'),
                       array( display => 'on',  latex => '{  *o( -1 *o) a *o( -1 *o) a *o( -1 *o) a  =  a *o( 0 *o) 3  }'),
@@ -272,7 +272,7 @@
                     'Das bedeutet dann, wenn \\term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.Ein.MO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *o( -1 *o) a  =  *o( 0 *o) a  =  a + 1  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  c *o( -1 *o) a  =  c  \neq  c *o( 0 *o) a  }'),
                     ))),
@@ -302,7 +302,7 @@
                     'Er muss zum Beispiel die folgende Formel erfüllen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.Ein.MO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *o( -2 *o) a *o( -2 *o) a  =  a *o( -1 *o) 2  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( *o( -2 *o) a *) *o( -2 *o) a  =  a  }'),
                       array( display => 'on',  latex => '{  *o( -2 *o) a *o( -2 *o) a *o( -2 *o) a  =  a *o( -1 *o) 3  }'),
@@ -316,7 +316,7 @@
                     'Das bedeutet dann, wenn \\term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.Ein.MO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *o( -2 *o) a  =  a  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  c *o( -2 *o) a  =  c  }'),
                     ))),
@@ -345,7 +345,7 @@
                     'Vorzeichen als das erste Zählen zu definieren:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.Ein.MO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *o( -1 *o) a  :=  a + 1  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -388,12 +388,16 @@
                     'XXX'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.Ein.Inv', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{   c  =  a *o( x *o) b  }'),
-                      array( display => 'on',  latex => '{   \Leftrightarrow  c *r( x *r) b  :=  a  }'),
-                      array( display => 'on',  latex => '{   \Leftrightarrow  c *l( x *l) a  :=  b  }'),
+                      array( display => 'on',  latex => '{   \Leftrightarrow  c *r( x *r) b  :=  a  }',
+                                               label_name => 'OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Wurzel-Definition', label_text => '\\name{OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Wurzel-Definition}', label_incr => true),
+                      array( display => 'on',  latex => '{   \Leftrightarrow  c *l( x *l) a  :=  b  }',
+                                               label_name => 'OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Logarithmus-Definition', label_text => '\\name{OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Logarithmus-Definition}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
+                    'Der neue x-Wurzeloperator ohne Häkchen links und mit zwei Häkchen rechts symbolisiert,'."\n".
+                    'dass der rechte Operand auf die andere Seite gebracht wurde.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -419,74 +423,124 @@
                     )),
                   
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Grundsätzlich gibt es vom Prinzip her immer zwei neutrale Elemente,'."\n".
+                    'ein linkes und ein rechtes.'."\n".
+                    'Bei der Addition und Multiplikation sind wegen der Vertauschbarkeit der Reihenfolge der Operanden beide immer gleich.'."\n".
+                    'Bei den anderen Operatoren ist das nicht unbedingt der Fall.'."\n",
+                      'Das linksseitige neutrale Element kann wie folgt durch den'."\n".
+                    '\\jump{OM:OT:Einleitung:Inverse-Operatoren}{allgemeinen inversen Wurzeloperator} errechnet werden:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  n *o( x *o) a  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n  =  a *r( x *r) a  *]  }'),
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  n_{x,l} *o( x *o) a  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n_{x,l}  =  a *r( x *r) a  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Die allgemeine x-Wurzel einer Zahl \\term{a} aus oder von sich selbst'."\n".
+                    'ergibt also das linksseitige neutrale Element.'."\n",
+                      'Das rechtsseitige neutrale Element kann wie folgt durch den'."\n".
+                    '\\jump{OM:OT:Einleitung:Inverse-Operatoren}{allgemeinen inversen Logarithmusoperator} errechnet werden:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  a *o( x *o) n  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n  =  a *l( x *l) a  *]  }'),
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  a *o( x *o) n_{x,r}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n_{x,r}  =  a *l( x *l) a  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Die allgemeine x-Logarithmus einer Zahl \\term{a} zur seiner eigenen Basis oder von sich selbst'."\n".
+                    'ergibt also das linksseitige neutrale Element.'."\n",
+                      'Dann schauen wir uns im Folgenden an, was sich für die konkreten Operatoren ergibt.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
                                            
-                'Neutrale Elemente der Potenz', subline =>
+                'Addition – neutrales Element', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Die Addition ist eine besondere Operation.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Linksseitig und rechtsseitig neutrales Element} \\\\'."\n".
+                    'Wegen der Vertauschbarkeit ihrer Operanden, ihrer Kommutativität,'."\n".
+                    'fallen beide neutralen Elemente zu einem zusammen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  n *o( 3 *o) a  =  n^a  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n  =  a *r( 3 *r) a  =  \sqrt[a]{a}  *]  }'),
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  n_{1} *o( 1 *o) a  =  n_{1} + a  =  a *o( 1 *o) n_{1}  =  a + n_{1}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n_{1}  =  a *r( 1 *r) a  =  a *l( 1 *l) a  =  a - a  =  0  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Wie bekannt ergeben sich auf diese Weise beide neutralen Elemente zu Null.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
+                                           
+                'Multiplikation – neutrales Element', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Auch die Multiplikation ist eine besondere Operation.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Linksseitig und rechtsseitig neutrales Element} \\\\'."\n".
+                    'Auch bei ihr fallen wegen der Vertauschbarkeit ihrer Operanden, ihrer Kommutativität,'."\n".
+                    'beide neutralen Elemente zu einem zusammen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  a *o( 3 *o) n  =  a^n  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n  =  a *l( 3 *l) a  =  log_{a} a  =  1  *]  }'),
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  n_{2} *o( 2 *o) a  =  n_{2} \cdot a  =  a *o( 2 *o) n_{2}  =  a \cdot n_{2}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n_{2}  =  a *r( 2 *r) a  =  a *l( 2 *l) a  =  \\frac{ a }{ a }  =  1  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Wie bekannt ergeben sich auf diese Weise beide neutralen Elemente zu Eins.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
+                                           
+                'Potenz – neutrale Elemente', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Da bei der Potenz im Allgemeinen die Operanden nicht vertauschbar sind'."\n".
+                    'unterscheidet sich das linksseitige neutrale Element der Operation vom rechtsseitigen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Linksseitig neutrales Element} \\\\'."\n".
+                    'Um das linksseitig neutrale Element der Potenz zu bestimmen, setzen wir diesen Operator'."\n".
+                    'in Formel \\jumpname{OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Wurzel-Definition} ein und erhalten:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  n_{3,l} *o( 3 *o) a  =  n_{3,l}^a  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n_{3,l}(a)  =  a *r( 3 *r) a  =  \sqrt[a]{a}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die linksseitig neutralen Element der Potenz sind von \\term{a} abhängig und unterscheiden sich so im Allgemeinen voneinander.'."\n",
+                      'Dies gilt auch für alle linksseitig neutralen Element der Operatoren größer als Drei.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Rechtsseitig neutrales Element} \\\\'."\n".
+                    'Um das rechtsseitig neutrale Element der Potenz zu bestimmen, setzen wir diesen Operator'."\n".
+                    'in Formel \\jumpname{OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Logarithmus-Definition} ein und erhalten:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  a *o( 3 *o) n_{3,r}  =  a^n_{3,r}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n_{3,r}  =  a *l( 3 *l) a  =  log_{a} a  =  1  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wie bekannt ergibt sich das rechtsseitig neutrale Element auf diese Weise zu Eins.'."\n",
+                      'Dies gilt auch für alle rechtsseitig neutralen Element der Operatoren größer als Drei.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Einbettung in neutrale Elemente} \\\\'."\n".
+                    'Halten wir also unser jetziges \\term{a} fest, dann sieht seine Einbettung in'."\n".
+                    'neutrale Elemente wie folgt aus – \\term{*a*} mit Sternchen markiert, damit wir es besser finden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  \cdots *( *( a *r( 3 *r) a *) *r( 3 *r) *( a *r( 3 *r) a *) *) *o( 3 *o) *( a *r( 3 *r) a *) *o( 3 *o) *( *a* *) *o( 3 *o) 1 *o( 3 *o) 1  =  a  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  \cdots *( *( \sqrt[a]{a} *) ^{ *a* } *) ^1  =  a  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Eine tiefere Einbettung ist hier aus technischen Gründen leider nicht darstellbar.'."\n",
+                      'Die Einbettung ist bei der Potenz beidseitig.'."\n".
+                    'Anders, als wir das gleich beim Null-Operator sehen werden.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
                                            
@@ -495,16 +549,15 @@
                   array( 'text', array( text => array(
                     'Die links- und rechtsseitigen neutralen Elemente des Null-Operators weisen'."\n".
                     'Besonderheiten auf, die andere Operatoren nicht besitzen.'."\n".
-                    'Das verleiht dem Null-Operator eine außergewöhnliche Bedeutung und'."\n".
-                    'macht ihn zu etwas Besondererem.'."\n".
+                    'Das verleiht dem Null-Operator auch eine außergewöhnliche naturphilosophische Bedeutung.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Linksseitig neutrales Element} \\\\'."\n".
-                    'Um das linksseitig neutrale Element des Null-Operators zu bestimmen setzen wir diesen Operator'."\n".
-                    'in Formel \\color{*Bearb}{XXX} ein und erhalten:'."\n".
+                    'Um das linksseitig neutrale Element des Null-Operators zu bestimmen, setzen wir diesen Operator'."\n".
+                    'in Formel \\jumpname{OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Wurzel-Definition} ein und erhalten:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  n *o( 0 *o) a  =  n + 1  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n  =  a *r( 0 *r) a  =  a - 1  *]  }'),
                     ))),
@@ -514,11 +567,11 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Rechtsseitig neutrales Element} \\\\'."\n".
-                    'Um das rechtsseitig neutrale Element des Null-Operators zu bestimmen setzen wir diesen Operator'."\n".
-                    'in Formel \\color{*Bearb}{XXX} ein und erhalten:'."\n".
+                    'Um das rechtsseitig neutrale Element des Null-Operators zu bestimmen, setzen wir diesen Operator'."\n".
+                    'in Formel \\jumpname{OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Logarithmus-Definition} ein und erhalten:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  a *o( 0 *o) n  =  a + 1  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \nexists n *) *( \forall a *) *[  a  =  a *o( 0 *o) n  =  a + 1  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \nexists n *) *( \forall a *) *[  n  =  a *r( 0 *r) a  *]  }'),
@@ -526,16 +579,19 @@
                   array( 'text', array( text => array(
                     'Wir können erkennen, dass es kein rechtsseitig neutrales Element des Null-Operators gibt.'."\n".
                     'Es existiert nicht, weil jede Zahl \\term{n} unser \\term{a} um einen hoch zählt.'."\n".
-                    'Es gibt keine Zahl \\term{n}, die unser \\term{a} nicht verändert.'."\n",
-                      'Halten wir also unser jetziges \\term{a} fest, dann sieht ihre Einbettung in'."\n".
+                    'Es gibt keine Zahl \\term{n}, die unser \\term{a} nicht verändert.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Einbettung in neutrale Elemente} \\\\'."\n".
+                    'Halten wir also unser jetziges \\term{a} fest, dann sieht seine Einbettung in'."\n".
                     'neutrale Elemente wie folgt aus:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a *) *[  \cdots *( a - 3 *) *o( 0 *o) *( a - 2 *) *o( 0 *o) *( a - 1 *) *o( 0 *o) a  =  a  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Auf der rechten Seite von a existieren keine neutralen Elemente und daher auch kleine Einbettung.'."\n",
+                    'Auf der rechten Seite von a existiert kein neutrales Element und daher auch kleine Einbettung.'."\n",
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Naturphilosophische Interpretation} \\\\'."\n".
@@ -555,7 +611,7 @@
                       'Und wir können mit dem Null-Operator überprüfen, ob eine Zahl existiert:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a *) *[  a *o( 0 *o) n  =  a + 1  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( *( \forall a *) *[  a *o( 0 *o) n  =  a + 1  *] *) *[  \exists n  *]  }'),
                       array( display => 'on',  latex => '{  *( \forall a *) *[  a *o( 0 *o) n  =  a  *]  }'),
@@ -579,7 +635,7 @@
                     'XXX'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  n *o( -1 *o) a  =  n  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n  =  a *r( -1 *r) a  =  a  *]  }'),
                     ))),
@@ -592,7 +648,7 @@
                     'XXX'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  a *o( -1 *o) n  =  a  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n *) *( \forall a *) *[  a  =  a *o( -1 *o) n  =  a  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n *) *( \forall a *) *[  n  =  a *l( -1 *l) a  *]  }'),
@@ -616,7 +672,7 @@
                     'XXX'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  n *o( -2 *o) a  =  n  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a *) *[  n  =  a *r( -2 *r) a  =  a  *]  }'),
                     ))),
@@ -629,7 +685,7 @@
                     'XXX'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  a *o( -2 *o) n  =  a  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n *) *( \forall a *) *[  a  =  a *o( -2 *o) n  =  a  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n *) *( \forall a *) *[  n  =  a *l( -2 *l) a  *]  }'),
@@ -678,7 +734,7 @@
                     'XXX'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.Ein.Eig', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{   *( \forall x *) *( 0 \leq x *) *[  *o( x *o) 2 *o( x *o) 2  =  4  *]  }'),
                     ))),
                   array( 'text', array( text => array(
