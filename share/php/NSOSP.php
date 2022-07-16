@@ -2352,9 +2352,9 @@
                                        text_undertitel_h2 => 'Die Grundlagen der Arithmetik erhellen',
                                        text_titel_discr_h3 => '',
                                        jump_ary => array(
-                                                'OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv' => array( headline_text => 'OT.Ein.4'/* , headline_text_short => 'XXX' */),
-                                                'OM:OT:Einleitung:Vortext:Equ-Tetration-Beispiel' => array( headline_text => 'OT.Ein.7'/* , headline_text_short => 'XXX' */),
-                                                'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut' => array( headline_text => 'OT.Ein.12'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv' => array( headline_text => 'OT.Ein.6'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Vortext:Equ-Tetration-Beispiel' => array( headline_text => 'OT.Ein.9'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut' => array( headline_text => 'OT.Ein.14'/* , headline_text_short => 'XXX' */),
                                                          
                                               'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator' => array( headline_text => 'Minus-Eins-Operator und Minus-Zwei-Operator'/* , headline_text_short => 'XXX' */),
                                                          
@@ -2363,6 +2363,8 @@
                                                 'OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Logarithmus-Definition' => array( headline_text => 'OT.Ein.Inv.3'/* , headline_text_short => 'XXX' */),
                                                          
                                               'OM:OT:Einleitung:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Neutrale-Elemente:Equ-x-linksneutrales-Element' => array( headline_text => 'OT.Ein.NE.2'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Neutrale-Elemente:Equ-x-rechtsneutrales-Element' => array( headline_text => 'OT.Ein.NE.4'/* , headline_text_short => 'XXX' */),
                                                          
                                               'OM:OT:Einleitung:Eigenschaften' => array( headline_text => 'Eigenschaften'/* , headline_text_short => 'XXX' */),
                                                          
