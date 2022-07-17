@@ -821,7 +821,7 @@
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  a + 1  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \nexists n_{rechts} *) *( \forall a *) *[  a  =  a + 1  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \nexists n_{rechts} *) *( \forall a *) *[  a  =  a + 1  *]  .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wir können erkennen, dass es kein rechtsseitig neutrales Element des Null-Operators gibt.'."\n".
@@ -1013,7 +1013,7 @@
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  a  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n_{rechts} *) *( \forall a *) *[  a  =  a  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n_{rechts} *) *( \forall a *) *[  a  =  a  *]  .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wir können erkennen, dass alle Elemente \\term{n_{rechts}} rechtsseitig neutrale Elemente des Minus-Eins-Operators sind,'."\n".
