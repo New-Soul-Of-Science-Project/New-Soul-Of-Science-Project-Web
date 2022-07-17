@@ -2365,6 +2365,7 @@
                                               'OM:OT:Einleitung:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Neutrale-Elemente:Equ-x-linksneutrales-Element' => array( headline_text => 'OT.Ein.NE.2'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Neutrale-Elemente:Equ-x-rechtsneutrales-Element' => array( headline_text => 'OT.Ein.NE.4'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Neutrale-Elemente:Null-Operator' => array( headline_text => 'Neutrale Elemente des Null-Operators'/* , headline_text_short => 'XXX' */),
                                                          
                                               'OM:OT:Einleitung:Eigenschaften' => array( headline_text => 'Eigenschaften'/* , headline_text_short => 'XXX' */),
                                                          
