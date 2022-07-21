@@ -80,7 +80,8 @@
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  a*o( 1 *o)b  :=  a + b  }'),
                       array( display => 'on',  latex => '{  a*o( 2 *o)b  :=  a \cdot b  }'),
-                      array( display => 'on',  latex => '{  a*o( 3 *o)b  :=  a^{b}  }'),
+                      array( display => 'on',  latex => '{  a*o( 3 *o)b  :=  a^{b}  }',
+                                               label_name => 'OM:OT:Einleitung:Vortext:Equ-Operator-3-ist-Potenz', label_text => '\\name{OM:OT:Einleitung:Vortext:Equ-Operator-3-ist-Potenz}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'So können wir die eben festgestellte Regelmäßigkeit zwischen zwei aufeinander folgenden Operatoren'."\n".
@@ -318,7 +319,8 @@
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.MO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *o( -2 *o) a  =  a  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  c *o( -2 *o) a  =  c  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c *o( -2 *o) a  =  c  }',
+                                               label_name => 'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Zwei-a-ist-c', label_text => '\\name{OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Zwei-a-ist-c}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Wir sehen:'."\n".
@@ -656,7 +658,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formel \\color{*Bearb}{XXX} –'."\n".
+                      'wegen – Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Operator-3-ist-Potenz} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -699,7 +701,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formel \\color{*Bearb}{XXX} –'."\n".
+                      'wegen – Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Operator-3-ist-Potenz} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1129,7 +1131,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formel \\color{*Bearb}{XXX} –'."\n".
+                      'wegen – Formel \\jumpname{OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Zwei-a-ist-c} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1162,7 +1164,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formel \\color{*Bearb}{XXX} –'."\n".
+                      'wegen – Formel \\jumpname{OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Zwei-a-ist-c} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1210,7 +1212,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formeln \\color{*Bearb}{XXX} –'."\n".
+                      'wegen – Formeln \\jumpname{OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Zwei-a-ist-c} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1433,7 +1435,7 @@
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.AM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *o( -2 *o) a  =  a  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  c *o( -2 *o) a  =  c  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  c *o( -2 *o) a  =  c  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wir sehen:'."\n".

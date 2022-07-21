@@ -2352,11 +2352,13 @@
                                        text_undertitel_h2 => 'Die Grundlagen der Arithmetik erhellen',
                                        text_titel_discr_h3 => '',
                                        jump_ary => array(
+                                                'OM:OT:Einleitung:Vortext:Equ-Operator-3-ist-Potenz' => array( headline_text => 'OT.Ein.5'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv' => array( headline_text => 'OT.Ein.6'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Vortext:Equ-Tetration-Beispiel' => array( headline_text => 'OT.Ein.9'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut' => array( headline_text => 'OT.Ein.14'/* , headline_text_short => 'XXX' */),
                                                          
                                               'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator' => array( headline_text => 'Minus-Eins-Operator und Minus-Zwei-Operator'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Zwei-a-ist-c' => array( headline_text => 'OT.Ein.MO.14'/* , headline_text_short => 'XXX' */),
                                                          
                                               'OM:OT:Einleitung:Inverse-Operatoren' => array( headline_text => 'Inverse Operatoren'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Wurzel-Definition' => array( headline_text => 'OT.Ein.Inv.2'/* , headline_text_short => 'XXX' */),
