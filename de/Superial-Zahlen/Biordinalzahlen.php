@@ -54,7 +54,7 @@
                                                label_name => 'OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins', label_text => '\\name{OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Im Folgenden soll gelten, dass die Null ein Element der natürlichen Zahlen ist, wie in den Peano-Axiomen\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:PeanoAxiome:2021}, Axiome, Ursprüngliche Formalisierung.} zur Definition von \\term{\M(N)} gefordert:'."\n"))),
+                    'Im Folgenden soll gelten, dass die Null ein Element der natürlichen Zahlen ist, wie in den Peano-Axiomen\\footnote{\\const{NSOSP_g_footnote_text_PeanoAxiome}} zur Definition von \\term{\M(N)} gefordert:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \mathbb{N}  :=  \mathbb{N}_{0}  }'),

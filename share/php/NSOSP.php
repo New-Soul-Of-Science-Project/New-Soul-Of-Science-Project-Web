@@ -119,7 +119,10 @@
                           'Unter Machprinzip wird verstanden, daß die Massen im Universum die Inertialsysteme festlegen.'."\n".
                         'Die jetzt gefundene Aussage kann als Bestätigung des Machprinzips betrachtet werden.'."\n"),
                         addtext => '\\footnote{\\cite{Fliessbach:ART1998}, Teil IX Dynamische Sternmodelle, Kap. 44 Isotrope zeitabhängige Metrik und Birkhoff-Theorem, Machsches Prinzip, S. 253-254, hier S. 254.}'));
+
   
+  $NSOSP_g_footnote_text_PeanoAxiome            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:PeanoAxiome:2021}, Axiome, Ursprüngliche Formalisierung.';
+
   $FrQFT_g_footnote_text_AequivalPrinzTraeSchMasse = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, S. 2-6. \\\\ Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290, hier S. 253-260. \\\\ Vgl. \\cite{Born:RTEinsteins1969}, Kap. VII. Die allgemeine Relativitätstheorie Einsteins, S. 266-324, hier S. 269-273. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, S. 58-61. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Aequivalenzprinzip2014}.';
   $FrQFT_g_footnote_text_AequivalMasseEnergie   = 'Vgl. \\cite{Einstein:IstDieTraegheitSeinEnergieInhalt1905}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:AequivalenzVonMasseUndEnergie2013}.';
   $FrQFT_g_footnote_text_Annihilation           = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Annihilation:2015}.';
@@ -2357,9 +2360,9 @@
                                                 'OM:OT:Einleitung:Vortext:Equ-Operator-3-ist-Potenz' => array( headline_text => 'OT.Ein.5'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv' => array( headline_text => 'OT.Ein.6'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Vortext:Equ-Tetration-Beispiel' => array( headline_text => 'OT.Ein.9'/* , headline_text_short => 'XXX' */),
-                                                'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut' => array( headline_text => 'OT.Ein.14'/* , headline_text_short => 'XXX' */),
-                                                'OM:OT:Einleitung:Vortext:Equ-Vorzeichen-Null-OP-ist-plus-Eins' => array( headline_text => 'OT.Ein.18'/* , headline_text_short => 'XXX' */),
-                                                'OM:OT:Einleitung:Vortext:Equ-Null-OP-ist-plus-Eins' => array( headline_text => 'OT.Ein.19'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut' => array( headline_text => 'OT.Ein.15'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Vortext:Equ-Vorzeichen-Null-OP-ist-plus-Eins' => array( headline_text => 'OT.Ein.19'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Vortext:Equ-Null-OP-ist-plus-Eins' => array( headline_text => 'OT.Ein.20'/* , headline_text_short => 'XXX' */),
                                                          
                                               'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator' => array( headline_text => 'Minus-Eins-Operator und Minus-Zwei-Operator'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-Vorzeichen-Minus-Eins-a' => array( headline_text => 'OT.Ein.MO.6'/* , headline_text_short => 'XXX' */),
