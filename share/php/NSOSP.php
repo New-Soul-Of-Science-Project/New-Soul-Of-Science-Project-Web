@@ -2378,6 +2378,7 @@
                                                 'OM:OT:Einleitung:Neutrale-Elemente:Equ-Nachzeichen-Null-OP' => array( headline_text => 'OT.Ein.NE.52'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht' => array( headline_text => 'OT.Ein.NE.54'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert' => array( headline_text => 'OT.Ein.NE.57'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Neutrale-Elemente:Equ-Minus-Eins-Einbettung' => array( headline_text => 'OT.Ein.NE.70'/* , headline_text_short => 'XXX' */),
                                                          
                                               'OM:OT:Einleitung:Eigenschaften' => array( headline_text => 'Eigenschaften'/* , headline_text_short => 'XXX' */),
                                                          

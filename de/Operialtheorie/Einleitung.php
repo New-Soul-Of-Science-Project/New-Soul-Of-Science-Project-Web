@@ -1104,7 +1104,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall c_{1},c_{2},\cdots *) *( \forall a *) *[  a  =  \cdots \, *o( -1 *o) a *o( -1 *o) a \\\ \qquad\qquad\qquad\qquad\qquad\;\;\;\, *o( -1 *o) {*a*} \\\ \qquad\qquad\qquad\qquad\qquad\;\;\;\, *o( -1 *o) {c_{1}} *o( -1 *o) {c_{2}} *o( -1 *o) \cdots  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a *) *( \forall c_{1},c_{2},\cdots *) *[  a  =  \cdots \, *o( -1 *o) a *o( -1 *o) a \\\ \qquad\qquad\qquad\qquad\qquad\;\;\;\, *o( -1 *o) {*a*} \\\ \qquad\qquad\qquad\qquad\qquad\;\;\;\, *o( -1 *o) {c_{1}} *o( -1 *o) {c_{2}} *o( -1 *o) \cdots  *]  }',
+                                               label_name => 'OM:OT:Einleitung:Neutrale-Elemente:Equ-Minus-Eins-Einbettung', label_text => '\\name{OM:OT:Einleitung:Neutrale-Elemente:Equ-Minus-Eins-Einbettung}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Auf der rechten Seite von \\term{a} existiert immer das gleiche neutrales Element \\term{a}'."\n".
@@ -1163,22 +1164,41 @@
                   array( 'text', array( text => array(
                   '\\condb{Naturphilosophische Interpretation} \\\\'."\n".
                     'Betrachten wir das Zählen mit dem Minus-Eins-Operator naturphilosophisch aus einer zeitlichen Perspektive,'."\n".
-                    'dann können wir unser festgehaltenes oder festgelegtes \\term{a} auch als die Gegenwart verstehen:'."\n".
+                    'dann können wir unser festgehaltenes oder festgelegtes \\term{a} auch als die direkt vor uns liegende Vergangenheit verstehen:'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'italic', text => array(
-                      'Diese Gegenwart unserer Zahl \\term{a} hat eine Konstanz, in die sie vorne eingebettet ist, aus der sie folgt.'."\n".
-                      'Eine Zukunft hat sie, in der alles Einfluss nehmen kann, dies aber ihre Konstanz nicht verändert.'."\n".
-                      'Die Konstanz ihrer Zukunft wird durch den Prozess des Erhaltens, durch das Anhängen eines weiteren dieses Operators mit einem beliebigen Operanden,'."\n".
-                      'in Form einer beliebigen Zahl, nicht verändert.'."\n",
-                        'Nur als Vorzeichen vor dem nichts existiert, wird aus dem Nichts die eigene Veränderung kreiert.'."\n".
+                      'Existiert in der Gegenwart auf den zeitlichen Schritt vorher \\term{a} noch nichts, dann erzeugt der'."\n".
+                      'an das Nicht-Existente angehängte \\term{a} den nächsten Schritt \\term{a + 1}.'."\n".
+                      'Nimmt dann im selben, nun existierenden Schritt noch ein beliebiger Operand mit dem Operator Minus-Eins Einfluss,'."\n".
+                      'so ändert sich nichts weiter, bis der nächste, noch nicht existierende Schritt erreicht ist.'."\n".
                     ''))),
                       
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *( \forall c_1,c_2,\cdots *) *[  a *o( -1 *o) c_1 *o( -1 *o) c_2 *o( -1 *o) \cdots  =  a  *]  }'),
+                      //                         /* label_name => 'OM:OT:Einleitung:Neutrale-Elemente:Equ-Minus-Eins-Einbettung', */label_text => '\\jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-Minus-Eins-Einbettung}', label_incr => false),
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Denn:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'italic', text => array(
+                      'Nur als Vorzeichen vor dem Nichts existiert, wird aus dem Nichts die eigene Veränderung von \\term{a} kreiert.'."\n".
+                      'Die Vergangenheit oder Historie \\term{a} kreiert also seine noch nicht existierende Zukunft zu \\term{a + 1}.'."\n".
+                    ''))),
+                      
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *( \forall c_1,c_2,\cdots *) *[  *o( -1 *o) a *o( -1 *o) c_1 *o( -1 *o) c_2 *o( -1 *o) \cdots  =  a + 1  *]  }'),
+                      //                         /* label_name => 'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-Vorzeichen-Minus-Eins-a', */label_text => '\\jumpname{OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-Vorzeichen-Minus-Eins-a}', label_incr => false),
+                    ))),
                   array( 'text', array( text => array(
                     'Unser Minus-Eins-Operator hat also ebenfalls eine bedeutende zeitliche Qualität durch sein Vorzeichen des Zählens.'."\n",
-                      'Interpretieren wir die Minus-Eins-Operator-Einbettung naturphilosophisch und vergleichen sie, wie die anderen Einbettungen,'."\n".
-                    'mit dem Vakuum der Physik, sehen wir, dass sie völlig neutral und die Konstanz erhaltend erscheint.'."\n".
-                    'Denn das Hier-und-Jetzt unterscheidet sich von seiner Historie und in seiner Zukunft nicht.'."\n".
+                      'Interpretieren wir den Minus-Eins-Operator naturphilosophisch und vergleichen ihn'."\n".
+                    'mit dem Vakuum der Physik, sehen wir, dass er im Hier-und-Jetzt völlig neutral wirkt.'."\n".
+                    'Aber in seine gerade noch nicht existierende Zukunft wirkt, mit seiner Hilfe, das ehemalige Hier-und-Jetzt kreierend.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
                                            
