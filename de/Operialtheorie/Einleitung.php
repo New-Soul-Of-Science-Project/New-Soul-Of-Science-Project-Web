@@ -26,8 +26,10 @@
                     '⋅ Kann gedeutet werden als, dass das Zählen oder die Zeit immer weiter gehen muss. Sie kann nicht anhalten!',
                     '• Philosophische und physikalische Bedeutung:',
                     '– Das Zählen entspricht dem immerwährenden Fortschritt der Zeit. Das Immerwährende können wir daran erkennen, dass in der Operialtheorie kein rechtsneutrales Element existiert.',
-                    '– Die Konstanz des Zählens erkennen wir daran, dass der Wert der rechts stehenden Zahl keinen Einfluss auf das Zählen hat, sondern nur ihre Existenz. Der Null-Operator kann folglich zur Überprüfung der Existenz einer Zahl genutzt werden.',
-                    '⋅ a *o( 0 *o) b = a + 1  ⇒  ∃ b',
+                    '–o Die Konstanz des Zählens erkennen wir daran, dass der Wert der rechts stehenden Zahl keinen Einfluss auf das Zählen hat, sondern nur ihre Existenz. Der Null-Operator kann folglich zur Überprüfung der Existenz einer Zahl genutzt werden.',
+                    '⋅o a *o( 0 *o) b = a + 1  ⇒  ∃ b',
+                    '– Das Nachzeichen ist physikalisch wie eine Hülle, die erst einmal neutral ist:',
+                    '⋅ Hängen sich dort rechte Operanden rein, dann passiert etwas und die neue Hülle verschiebt sich nach rechts hinter den neuen Operanden.',
                     '\\bold{Operator \\term{-1}}',
                     '• Nur als Vorzeichen zählt der einen hoch.',
                     '• Als Verbindungsoperator ändert er nichts.',
@@ -78,8 +80,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a*o( 1 *o)b  :=  a + b  }'),
-                      array( display => 'on',  latex => '{  a*o( 2 *o)b  :=  a \cdot b  }'),
+                      array( display => 'on',  latex => '{  a*o( 1 *o)b  :=  a + b  }',
+                                               label_name => 'OM:OT:Einleitung:Vortext:Equ-Operator-1-ist-Addition', label_text => '\\name{OM:OT:Einleitung:Vortext:Equ-Operator-1-ist-Addition}', label_incr => true),
+                      array( display => 'on',  latex => '{  a*o( 2 *o)b  :=  a \cdot b  }',
+                                               label_name => 'OM:OT:Einleitung:Vortext:Equ-Operator-2-ist-Multiplikation', label_text => '\\name{OM:OT:Einleitung:Vortext:Equ-Operator-2-ist-Multiplikation}', label_incr => true),
                       array( display => 'on',  latex => '{  a*o( 3 *o)b  :=  a^{b}  }',
                                                label_name => 'OM:OT:Einleitung:Vortext:Equ-Operator-3-ist-Potenz', label_text => '\\name{OM:OT:Einleitung:Vortext:Equ-Operator-3-ist-Potenz}', label_incr => true),
                     ))),
@@ -162,8 +166,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *o( 0 *o) a  =  a *o( 1 *o) 1  =  a + 1  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  c *o( 0 *o) a  =  c *o( 1 *o) 1  =  c + 1  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *o( 0 *o) a  =  a *o( 1 *o) 1  =  a + 1  }',
+                                               label_name => 'OM:OT:Einleitung:Vortext:Equ-Vorzeichen-Null-OP-ist-plus-Eins', label_text => '\\name{OM:OT:Einleitung:Vortext:Equ-Vorzeichen-Null-OP-ist-plus-Eins}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  c *o( 0 *o) a  =  c *o( 1 *o) 1  =  c + 1  }',
+                                               label_name => 'OM:OT:Einleitung:Vortext:Equ-Null-OP-ist-plus-Eins', label_text => '\\name{OM:OT:Einleitung:Vortext:Equ-Null-OP-ist-plus-Eins}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Wir sehen:'."\n",
@@ -274,8 +280,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.MO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *o( -1 *o) a  =  *o( 0 *o) a  =  a + 1  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  c *o( -1 *o) a  =  c  \neq  c *o( 0 *o) a  =  c + 1  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *o( -1 *o) a  =  *o( 0 *o) a  =  a + 1  }',
+                                               label_name => 'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-Vorzeichen-Minus-Eins-a', label_text => '\\name{OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-Vorzeichen-Minus-Eins-a}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  c *o( -1 *o) a  =  c  \neq  c *o( 0 *o) a  =  c + 1  }',
+                                               label_name => 'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Eins-a-ist-c', label_text => '\\name{OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Eins-a-ist-c}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Wir sehen:'."\n",
@@ -318,7 +326,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.MO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *o( -2 *o) a  =  a  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *o( -2 *o) a  =  a  }',
+                                               label_name => 'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-Vorzeichen-Minus-Zwei-a', label_text => '\\name{OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-Vorzeichen-Minus-Zwei-a}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  c *o( -2 *o) a  =  c  }',
                                                label_name => 'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Zwei-a-ist-c', label_text => '\\name{OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Zwei-a-ist-c}', label_incr => true),
                     ))),
@@ -442,7 +451,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'so erhalten wir durch Umformung'."\n".
+                      'so erhalten wir nach Formel \\jumpname{OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Wurzel-Definition} durch Umformung'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -465,7 +474,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'so erhalten wir durch Umformung'."\n".
+                      'so erhalten wir nach Formel \\jumpname{OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Logarithmus-Definition} durch Umformung'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -500,7 +509,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formel \\color{*Bearb}{XXX} –'."\n".
+                      'wegen – Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Operator-1-ist-Addition} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -579,7 +588,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formel \\color{*Bearb}{XXX} –'."\n".
+                      'wegen – Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Operator-2-ist-Multiplikation} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -766,7 +775,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formel \\color{*Bearb}{XXX} –'."\n".
+                      'wegen – Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Null-OP-ist-plus-Eins} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -810,7 +819,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formel \\color{*Bearb}{XXX} –'."\n".
+                      'wegen – Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Null-OP-ist-plus-Eins} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -823,7 +832,7 @@
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  a + 1  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \nexists n_{rechts} *) *( \forall a *) *[  a  =  a + 1  *]  .  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists n_{rechts} *) *( \forall a *) *[  a  =  a + 1  *]  .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wir können erkennen, dass es kein rechtsseitig neutrales Element des Null-Operators gibt.'."\n".
@@ -840,22 +849,89 @@
                       array( display => 'on',  latex => '{  *( \forall a *) *[  a  =  \cdots *( a - 3 *) *o( 0 *o) *( a - 2 *) *o( 0 *o) *( a - 1 *) *o( 0 *o) {*a*}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Auf der rechten Seite von \\term{a} existiert kein neutrales Element und daher auch kleine Einbettung,'."\n".
+                    'Auf der rechten Seite von \\term{a} existiert kein neutrales Element und daher auch keine Einbettung,'."\n".
                     'was sehr bemerkenswert ist.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Perspektive der Logik} \\\\'."\n".
-                    'Interessanterweise können wir, dazu passend, mit dem Null-Operator dann auch überprüfen, ob eine Zahl \\term{x} existiert:'."\n".
+                    'Interessanterweise können wir, dazu passend, bei kluger, weil plausibler, Definition der Operatoren als Nachzeichen,'."\n".
+                    'mit dem Null-Operator dann auch überprüfen, ob eine Zahl \\term{q} existiert.\\footnote{Nachfolgende Definition und Herleitungen mit Raimund Welsch erschaffen.}'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Für alle Operatoren \\term{x} soll – äquivalent zum Vorzeichen –\\footnote[*Bearb]{\\color{*Bearb}{Definition muss noch geschrieben werden.}} gelten, dass der dem Operator als Nachzeichen'."\n".
+                    'virtuell folgende Operand dem rechtsneutralen Element \\term{n_{x,rechts}} des Operators entspricht.'."\n".
+                    'Sollte es kein rechtsneutrales Element geben, wie beim Null-Operator, dann ist dieser Operand \\term{n_{x,rechts}} eben nicht existent:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\\\\'."\n",
+                      'Wir definieren'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a *) *[  a *o( 0 *o) x  =  a + 1  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( \forall a *) *[  a *o( 0 *o) x  =  a + 1  *] *) *[  \exists x  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall a *) *[  a *o( 0 *o) x  =  a  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( \forall a *) *[  a *o( 0 *o) x  =  a  *] *) *[  \nexists x  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall x *) *( \forall a *) *[  a *o( x *o)  :=  a *o( x *o) n_{x,rechts}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall x *) *( \forall a *) *[  a *o( x *o)  :=  a  *]  ,  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dies gilt so allgemein, weil es nicht darauf ankommt, was \\term{x} ist,'."\n".
+                    ''."\n",
+                      'dann gilt insbesondere'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a *o( 0 *o)  =  a  *]  .  }',
+                                               label_name => 'OM:OT:Einleitung:Neutrale-Elemente:Equ-Nachzeichen-Null-OP', label_text => '\\name{OM:OT:Einleitung:Neutrale-Elemente:Equ-Nachzeichen-Null-OP}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\\\\'."\n",
+                      'Für'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \nexists q  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'muss wegen \\jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-Nachzeichen-Null-OP} gelten:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a *o( 0 *o) q  =  a  *]  .  }',
+                                               label_name => 'OM:OT:Einleitung:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht', label_text => '\\name{OM:OT:Einleitung:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\\\\'."\n",
+                      'Umgekehrt folgt aus \\jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht} die Nicht-Existenz von \\term{q}:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \nexists q  \;\;  .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\\\\'."\n",
+                      'Für'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \exists q  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'muss wegen \\jumpname{OM:OT:Einleitung:Vortext:Equ-Null-OP-ist-plus-Eins} gelten:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a *) *[  a *o( 0 *o) q  =  a + 1  *]  .  }',
+                                               label_name => 'OM:OT:Einleitung:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert', label_text => '\\name{OM:OT:Einleitung:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\\\\'."\n",
+                      'Umgekehrt folgt aus \\jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert} die Existenz von \\term{q}:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \exists q  \;\;  .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dies gilt so allgemein, weil es nicht darauf ankommt, was \\term{q} ist,'."\n".
                     'sondern es kommt nur darauf an, ob es existiert.'."\n",
                       'Wir können mit Hilfe unseres Null-Operators also allgemeine Aussagen über die logische Existenz einer Zahl machen.'."\n".
                     'Auch deshalb ist unser Null-Operator wirklich etwas ganz besonderes.'."\n".
@@ -875,7 +951,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formeln \\color{*Bearb}{XXX} –'."\n".
+                      'wegen – Formeln \\jumpname{OM:OT:Einleitung:Vortext:Equ-Vorzeichen-Null-OP-ist-plus-Eins} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -970,7 +1046,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formel \\color{*Bearb}{XXX} –'."\n".
+                      'wegen – Formel \\jumpname{OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Eins-a-ist-c} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1002,7 +1078,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formel \\color{*Bearb}{XXX} –'."\n".
+                      'wegen – Formel \\jumpname{OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Eins-a-ist-c} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1066,7 +1142,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formeln \\color{*Bearb}{XXX} –'."\n".
+                      'wegen – Formeln \\jumpname{OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-Vorzeichen-Minus-Eins-a} und \\jumpname{OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Eins-a-ist-c} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1212,7 +1288,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formeln \\jumpname{OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Zwei-a-ist-c} –'."\n".
+                      'wegen – Formeln \\jumpname{OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-Vorzeichen-Minus-Zwei-a} und \\jumpname{OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Zwei-a-ist-c} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(

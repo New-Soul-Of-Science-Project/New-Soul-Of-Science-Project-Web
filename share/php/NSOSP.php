@@ -2352,12 +2352,19 @@
                                        text_undertitel_h2 => 'Die Grundlagen der Arithmetik erhellen',
                                        text_titel_discr_h3 => '',
                                        jump_ary => array(
+                                                'OM:OT:Einleitung:Vortext:Equ-Operator-1-ist-Addition' => array( headline_text => 'OT.Ein.3'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Vortext:Equ-Operator-2-ist-Multiplikation' => array( headline_text => 'OT.Ein.4'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Vortext:Equ-Operator-3-ist-Potenz' => array( headline_text => 'OT.Ein.5'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv' => array( headline_text => 'OT.Ein.6'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Vortext:Equ-Tetration-Beispiel' => array( headline_text => 'OT.Ein.9'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut' => array( headline_text => 'OT.Ein.14'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Vortext:Equ-Vorzeichen-Null-OP-ist-plus-Eins' => array( headline_text => 'OT.Ein.18'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Vortext:Equ-Null-OP-ist-plus-Eins' => array( headline_text => 'OT.Ein.19'/* , headline_text_short => 'XXX' */),
                                                          
                                               'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator' => array( headline_text => 'Minus-Eins-Operator und Minus-Zwei-Operator'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-Vorzeichen-Minus-Eins-a' => array( headline_text => 'OT.Ein.MO.6'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Eins-a-ist-c' => array( headline_text => 'OT.Ein.MO.7'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-Vorzeichen-Minus-Zwei-a' => array( headline_text => 'OT.Ein.MO.13'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Zwei-a-ist-c' => array( headline_text => 'OT.Ein.MO.14'/* , headline_text_short => 'XXX' */),
                                                          
                                               'OM:OT:Einleitung:Inverse-Operatoren' => array( headline_text => 'Inverse Operatoren'/* , headline_text_short => 'XXX' */),
@@ -2368,6 +2375,9 @@
                                                 'OM:OT:Einleitung:Neutrale-Elemente:Equ-x-linksneutrales-Element' => array( headline_text => 'OT.Ein.NE.2'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Neutrale-Elemente:Equ-x-rechtsneutrales-Element' => array( headline_text => 'OT.Ein.NE.4'/* , headline_text_short => 'XXX' */),
                                                 'OM:OT:Einleitung:Neutrale-Elemente:Null-Operator' => array( headline_text => 'Neutrale Elemente des Null-Operators'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Neutrale-Elemente:Equ-Nachzeichen-Null-OP' => array( headline_text => 'OT.Ein.NE.52'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht' => array( headline_text => 'OT.Ein.NE.54'/* , headline_text_short => 'XXX' */),
+                                                'OM:OT:Einleitung:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert' => array( headline_text => 'OT.Ein.NE.57'/* , headline_text_short => 'XXX' */),
                                                          
                                               'OM:OT:Einleitung:Eigenschaften' => array( headline_text => 'Eigenschaften'/* , headline_text_short => 'XXX' */),
                                                          
