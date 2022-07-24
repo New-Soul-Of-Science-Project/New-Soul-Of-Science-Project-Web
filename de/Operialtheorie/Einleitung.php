@@ -97,7 +97,7 @@
                                                label_name => 'OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv', label_text => '\\name{OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Wenn wir beschreiben, wofür diese Formel steht, dann würde ich sagen:'."\n".
+                    'Wenn wir beschreiben, wofür diese Formel steht, dann können wir sagen:'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
@@ -119,7 +119,7 @@
                   array( 'text', array( text => array(
                     'Der vierte Operator, die niedere Tetration beziehungsweise der niedere Hyper-4-Operator,'."\n".
                     'ergibt sich auf diese Weise zu einer Verkettung von Exponenten.'."\n".
-                    'Dabei setze ich voraus, dass der Exponent-Operator als Vorzeichen von a, nämlich \\term{↑a},'."\n".
+                    'Dabei setzen wir voraus, dass der Exponent-Operator als Vorzeichen von a, nämlich \\term{↑a},'."\n".
                     'das \\term{a} nicht verändert. Dies stellt sich im Folgenden durch'."\n".
                     'Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Absolut} als korrekt heraus:'."\n".
                     ''))),
@@ -129,7 +129,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  a*o( 4 *o)1  =  *o( 3 *o)a  =  \uparrow a  =  a  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Gleiches gilt dann auch für das Mal als Vorzeichen, wie ich gleich dazu geschrieben hab.'."\n",
+                    'Gleiches gilt dann auch für das Mal als Vorzeichen, wie gleich verdeutlicht wurde.'."\n",
                       'Im Folgenden soll gelten, dass die Null ein Element der natürlichen Zahlen ist, wie in den Peano-Axiomen\\footnote{\\const{NSOSP_g_footnote_text_PeanoAxiome}} zur Definition von \\term{\M(N)} gefordert:'."\n".
                     ''))),
                   array( 'equations',
@@ -167,7 +167,7 @@
                       array( display => 'on',  latex => '{  *( a *o( 1 *o) b *) *o( 0 *o) a  :=  a *o( 1 *o) *( b + 1 *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Durch die Klammerung hab ich noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
+                    'Durch die Klammerung haben wir noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
                       'Da drei Mal der Null-Operator auf ein beliebiges \\term{a} angewandt wird und dies insgesamt \\term{a} um Drei'."\n".
                     'erhöhen soll, kann es nur so sein, dass jeder Operator das Ergebnis um Eins erhöht.'."\n".
                     'Das bedeutet dann, wenn \\term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
@@ -192,7 +192,7 @@
                       
                   array( 'text', array( text => array(
                     'Das Zählen ist in der Arithmetik, ja in der ganzen Mathematik, von zentraler Bedeutung.'."\n".
-                    'Auf die philosophische und auch physikalische Bedeutung, im Rahmen der Zeit, komme ich im weiteren Verlauf'."\n".
+                    'Auf die philosophische und auch physikalische Bedeutung, im Rahmen der Zeit, kommen wir im weiteren Verlauf'."\n".
                     'noch zu sprechen.'."\n",
                       'So lässt sich Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv} konsequenterweise nun wie folgt darstellen:'."\n".
                     ''))),
@@ -281,7 +281,7 @@
                       array( display => 'on',  latex => '{  *( a *o( 0 *o) b *) *o( -1 *o) a  :=  a *o( 0 *o) *( b + 1 *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Durch die Klammerung hab ich noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
+                    'Durch die Klammerung haben wir noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
                       'Da zwei und drei Mal der Minus-Eins-Operator auf ein beliebiges \\term{a} angewandt wird und dies insgesamt \\term{a} immer genau um Eins'."\n".
                     'erhöhen soll, kann es nur so sein, dass der erste Operator als Vorzeichen das Ergebnis bestimmt.'."\n".
                     'Das bedeutet dann, wenn \\term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
@@ -307,7 +307,7 @@
                       
                   array( 'text', array( text => array(
                     'Damit ähnelt er dem Null-Operator, ist ihm aber nicht in jedem Fall gleich.'."\n".
-                    'Auf die philosophische und auch physikalische Bedeutung, komme ich im weiteren Verlauf'."\n".
+                    'Auf die philosophische und auch physikalische Bedeutung, kommen wir im weiteren Verlauf'."\n".
                     'noch zu sprechen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:XXX', text =>
@@ -327,7 +327,7 @@
                       array( display => 'on',  latex => '{  *( a *o( -1 *o) b *) *o( -2 *o) a  :=  a *o( -1 *o) *( b + 1 *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Durch die Klammerung hab ich noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
+                    'Durch die Klammerung haben wir noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
                       'Der Minus-Zwei-Operator, auf ein beliebiges \\term{a} angewandt, ändert an \\term{a} nie etwas;'."\n".
                     'weder als Vorzeichen, noch als Operator zwischen Zahlen.'."\n".
                     'Das bedeutet dann, wenn \\term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
@@ -350,7 +350,7 @@
                       
                   array( 'text', array( text => array(
                     'Damit ähnelt er dem Minus-Eins-Operator, ist ihm aber nicht in jedem Fall gleich.'."\n".
-                    'Auf die philosophische und auch physikalische Bedeutung, komme ich im weiteren Verlauf'."\n".
+                    'Auf die philosophische und auch physikalische Bedeutung, kommen wir im weiteren Verlauf'."\n".
                     'noch zu sprechen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:XXX', text =>
@@ -535,7 +535,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'substituiere ich'."\n".
+                      'substituieren wir'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -614,7 +614,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'substituiere ich'."\n".
+                      'substituieren wir'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1402,7 +1402,7 @@
                     )),
                   
                   array( 'text', array( text => array(
-                    'Hier möchte ich einmal experimentell andere Möglichkeiten untersuchen.'."\n".
+                    'Hier wollen wir einmal experimentell andere Möglichkeiten untersuchen.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -1436,7 +1436,7 @@
                       array( display => 'on',  latex => '{  *( *o( 1 *o) a *o( 1 *o) b *) *o( 0 *o) a  :=  *o( 1 *o) a *o( 1 *o) *( b + 1 *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Durch die Klammerung hab ich noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
+                    'Durch die Klammerung haben wir noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
                       'Da drei Mal der Null-Operator auf ein beliebiges \\term{a} angewandt wird und dies insgesamt \\term{a} um Drei'."\n".
                     'erhöhen soll, kann es nur so sein, dass jeder Operator das Ergebnis um Eins erhöht.'."\n".
                     'Das bedeutet dann, wenn \\term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
@@ -1459,7 +1459,7 @@
                       
                   array( 'text', array( text => array(
                     'Das Zählen ist in der Arithmetik, ja in der ganzen Mathematik, von zentraler Bedeutung.'."\n".
-                    'Auf die philosophische und auch physikalische Bedeutung, im Rahmen der Zeit, komme ich im weiteren Verlauf'."\n".
+                    'Auf die philosophische und auch physikalische Bedeutung, im Rahmen der Zeit, kommen wir im weiteren Verlauf'."\n".
                     'noch zu sprechen.'."\n",
                       'Dies ist also identisch mit der Version ohne zusätzlichem Vorzeichen in der rekursiven Definition.'."\n".
                     ''))),
@@ -1480,7 +1480,7 @@
                       array( display => 'on',  latex => '{  *( *o( 0 *o) a *o( 0 *o) b *) *o( -1 *o) a  :=  *o( 0 *o) a *o( 0 *o) *( b + 1 *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Durch die Klammerung hab ich noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
+                    'Durch die Klammerung haben wir noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
                       'Da zwei und drei Mal der Minus-Eins-Operator auf ein beliebiges \\term{a} angewandt wird und dies insgesamt \\term{a} immer genau um Eins'."\n".
                     'erhöhen soll, kann es nur so sein, dass der erste Operator als Vorzeichen das Ergebnis bestimmt.'."\n".
                     'Das bedeutet dann, wenn \\term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
@@ -1504,7 +1504,7 @@
                       
                   array( 'text', array( text => array(
                     'Damit ähnelt er dem Null-Operator, ist ihm aber nicht in jedem Fall gleich.'."\n".
-                    'Auf die philosophische und auch physikalische Bedeutung, komme ich im weiteren Verlauf'."\n".
+                    'Auf die philosophische und auch physikalische Bedeutung, kommen wir im weiteren Verlauf'."\n".
                     'noch zu sprechen.'."\n",
                       'Auch hier macht die Version mit zusätzlichem Vorzeichen keinen Unterschied.'."\n".
                     ''))),
@@ -1525,7 +1525,7 @@
                       array( display => 'on',  latex => '{  *( *o( -1 *o) a *o( -1 *o) b *) *o( -2 *o) a  :=  *o( -1 *o) a *o( -1 *o) *( b + 1 *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Durch die Klammerung hab ich noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
+                    'Durch die Klammerung haben wir noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
                       'Der Minus-Zwei-Operator, auf ein beliebiges \\term{a} angewandt, ändert an \\term{a} nie etwas;'."\n".
                     'weder als Vorzeichen, noch als Operator zwischen Zahlen.'."\n".
                     'Das bedeutet dann, wenn \\term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
@@ -1546,7 +1546,7 @@
                       
                   array( 'text', array( text => array(
                     'Damit ähnelt er dem Minus-Eins-Operator, ist ihm aber nicht in jedem Fall gleich.'."\n".
-                    'Auf die philosophische und auch physikalische Bedeutung, komme ich im weiteren Verlauf'."\n".
+                    'Auf die philosophische und auch physikalische Bedeutung, kommen wir im weiteren Verlauf'."\n".
                     'noch zu sprechen.'."\n",
                       'Ebenso hier macht die Version mit zusätzlichem Vorzeichen keinen Unterschied.'."\n".
                     ''))),
