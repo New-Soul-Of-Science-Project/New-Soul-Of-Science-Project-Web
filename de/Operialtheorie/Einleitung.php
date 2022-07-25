@@ -722,7 +722,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a *o( 3 *o) n_{rechts}  =  a^n_{rechts}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a *o( 3 *o) n_{rechts}  =  a^{n_{rechts}}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
@@ -730,7 +730,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a  =  a^n_{rechts}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a  =  a^{n_{rechts}}  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a \in \mathbb{R}  *) *[  n_{rechts}  =  log_{a} a  =  1  *]  .  }'),
                     ))),
                   array( 'text', array( text => array(
