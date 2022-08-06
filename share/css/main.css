@@ -121,6 +121,10 @@ a:hover {
   /*color: #000000; text-decoration: underline;*/
   color: #C00000;
 }
+  .navigation-extra-text {
+    color: #505050;
+    line-height: 1.4em;
+  }
 
 /* == Container == */
 .container {
@@ -290,6 +294,12 @@ a:hover {
 		color:#BBB;
 		padding:0;
 	}
+  .footer-extra-table {
+    display: none;
+  }
+  .footer-extra-text {
+    line-height: 1.4em;
+  }
 
 
 /* main Classes */

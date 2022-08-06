@@ -743,6 +743,29 @@
   
   
   
+  const author_adress = 'author_adress';
+  const author_contact = 'author_contact';
+  const author_name = 'author_name';
+  const author_image_URL = 'author_image_URL';
+  const author_image_alt = 'author_image_alt';
+  const author_image_width = 'author_image_width';
+  const author_image_height = 'author_image_height';
+  
+  $nSOSp_g_info_wolfgangHuss = array(
+    author_adress => 'Wolfgang Huß \\\\'."\n".
+                   'und Media Line Digital e.K. \\\\'."\n".
+                   'Steinburger Straße 38 \\\\'."\n".
+                   '22527 Hamburg, Germany, EU',
+    author_contact => 'E-Mail: <span class="mailto" title="wolle.huss at pjannto.com">wolle.huss at pjannto.com</span> \\\\'."\n".
+                   'Telefon: +49. 40. 38 03 77 37 \\\\'."\n".
+                   'Mobil: +49. 173. 622 60 91',
+    author_name => 'Wolfgang Huß',
+    author_image_URL => 'Wolfgang_Huss-2016-IMG_3683-clip.jpg',
+    author_image_alt => 'Wolfgang Huß ©2016 by Wolfgang Huß',
+    author_image_width => '180px',
+    author_image_height => '192px',
+  );
+                           
   $nSOSp_g_formelName_FP_2 = 'FP.2';
   $nSOSp_g_formelName_FP_3 = 'FP.3';
   $nSOSp_g_formelName_Un_10 = 'Un.10';
@@ -829,6 +852,7 @@
                                      ),*/
 
                               'OM:FrQFT:' =>
+                                array_merge( $nSOSp_g_info_wolfgangHuss,
                                 array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/',
                                        url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/',
                                        favicons_url_rel_opt => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/favicon/',
@@ -854,7 +878,7 @@
                                                       '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
-                                     ),
+                                     )),
                                'OM:FrQFT:Home' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/index.php',
                                        url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/index.php',
@@ -1764,6 +1788,7 @@
                                      ),
                           
                               'OM:NPT:' =>
+                                array_merge( $nSOSp_g_info_wolfgangHuss,
                                 array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-der-Zeit/',
                                        url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/',
                                        name_short => 'NaturZeit',
@@ -1781,7 +1806,7 @@
                                                       '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
-                                     ),
+                                     )),
                               'OM:NPT:Home' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-der-Zeit/index.php',
                                        url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/index.php',
@@ -1827,6 +1852,7 @@
                                      ),
                           
                               'OM:NPYo:' =>
+                                array_merge( $nSOSp_g_info_wolfgangHuss,
                                 array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/',
                                        url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/',
                                        favicons_url_rel_opt => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/favicon/',
@@ -1852,7 +1878,7 @@
                                                       '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
-                                     ),
+                                     )),
                               'OM:NPYo:Home' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/index.php',
                                        url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/index.php',
@@ -2194,6 +2220,7 @@
                                      ),
                           
                               'OM:nSOSp:' =>
+                                array_merge( $nSOSp_g_info_wolfgangHuss,
                                 array( url_abs => 'http://www.nsosp.org/de/New-Soul-Of-Science-Project/',
                                        url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/',
                                        favicons_url_rel_opt => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/favicon/',
@@ -2217,7 +2244,7 @@
                                                       '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/Literatur.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
-                                     ),
+                                     )),
                               'OM:nSOSp:Home' =>
                                 array( url_abs => 'http://www.nsosp.org/de/New-Soul-Of-Science-Project/index.php',
                                        url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/index.php',
@@ -2304,6 +2331,7 @@
                                      ),
                           
                               'OM:OT:' =>
+                                array_merge( $nSOSp_g_info_wolfgangHuss,
                                 array( url_abs => 'http://www.nsosp.org/de/Operialtheorie/',
                                        url_rel => $Glo_PathRel_back.'../de/Operialtheorie/',
                                        favicons_url_rel_opt => $Glo_PathRel_back.'../de/Operialtheorie/favicon/',
@@ -2327,7 +2355,7 @@
                                                       '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Literatur.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
-                                     ),
+                                     )),
                               'OM:OT:Home' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Operialtheorie/index.php',
                                        url_rel => $Glo_PathRel_back.'../de/Operialtheorie/index.php',
@@ -2418,6 +2446,7 @@
                                      ),
 
                               'OM:SpaLeb:' =>
+                                array_merge( $nSOSp_g_info_wolfgangHuss,
                                 array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/index.php',
                                        url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/index.php',
                                        favicons_url_rel_opt => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/favicon/',
@@ -2441,7 +2470,7 @@
                                                       '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
-                                     ),
+                                     )),
                               'OM:SpaLeb:Home' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/index.php',
                                        url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/index.php',
@@ -3098,6 +3127,7 @@
                                      ),
                           
                               'OM:SupNum:' =>
+                                array_merge( $nSOSp_g_info_wolfgangHuss,
                                 array( url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/',
                                        url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/',
                                        favicons_url_rel_opt => $Glo_PathRel_back.'../de/Superial-Zahlen/favicon/',
@@ -3121,7 +3151,7 @@
                                                       '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
-                                     ),
+                                     )),
                               'OM:SupNum:Home' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/index.php',
                                        url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/index.php',
@@ -3251,6 +3281,7 @@
                                      ),
                           
                               'OM:VRT:' =>
+                                array_merge( $nSOSp_g_info_wolfgangHuss,
                                 array( url_abs => 'http://www.nsosp.org/de/Vereinheitlichte-Relativitaetstheorie/',
                                        url_rel => $Glo_PathRel_back.'../de/Vereinheitlichte-Relativitaetstheorie/',
                                        favicons_url_rel_opt => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/favicon/',
@@ -3276,7 +3307,7 @@
                                                       '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
                                        litera_url_rel => $Glo_PathRel_back.'../de/Vereinheitlichte-Relativitaetstheorie/Literatur_de.php',
                                        litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
-                                     ),
+                                     )),
                                'OM:VRT:Home' =>
                                 array( url_abs => 'http://www.nsosp.org/de/Vereinheitlichte-Relativitaetstheorie/index.php',
                                        url_rel => $Glo_PathRel_back.'../de/Vereinheitlichte-Relativitaetstheorie/index.php',
@@ -3395,6 +3426,13 @@
                                        header_pict_bgcolor => '#FFFFFF',
                                        header_pict_alt => 'Zahlensemantik',
                                        header_links_marginLeft => '383px',
+                                       author_adress => 'Raimund Welsch',
+                                       author_contact => '',
+                                       author_name => 'Raimund Welsch',
+                                       // author_image_URL => '',
+                                       // author_image_alt => 'Raimund Welsch',
+                                       // author_image_width => '',
+                                       // author_image_height => '',
                                        copy_right => 'Zahlensemantik (ZS) \\\\'."\n".
                                                       '© 2010–2022 by \\\\'."\n".
                                                       'Raimund Welsch \\\\'."\n".
@@ -3729,47 +3767,75 @@
     //echo '						<!Lucius Damian [Cosmas] Stardust (Lichtbringer DerM&auml;chtigeMann [Schmuck-Ordnung-Welt] Sternenstaub)>'."\n";
     //echo '					</small>'."\n";
     //echo '				</p>'."\n";
-    echo '				<p align="left" style="margin-bottom: 4px;">'."\n";
-    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/Wolfgang_Huss-2016-IMG_3683-clip.jpg" width="180" height="192" border="0" alt="Wolfgang Huß ©2016 by Wolfgang Huß"> </a>'."\n";
-    echo '        </p>'."\n";
-    echo '        <p align="left" style="margin-top: 0px;">'."\n";
-    echo '					<!small><span style="color: #505050;">'."\n";
-    echo '						Wolfgang Huß'."\n";
-    echo '					</span><!/small>'."\n";
-    echo '				</p>'."\n";
-    echo '				<br>'."\n";
-    echo '				<br>'."\n";
-    echo '				<p align="left" style="line-height: 1.4em;">'."\n";
-    echo '					<!small><span style="color: #505050;">'."\n";
+    if (array_key_exists( author_image_URL, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) {
+      echo '        <p align="left" style="margin-bottom: 4px;">'."\n";
+      echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt]).'"> </a>'."\n";
+      echo '        </p>'."\n";
+      echo '        <p class="navigation-extra-text" align="left">'."\n";
+      echo '          '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_name])."\n";
+      echo '        </p>'."\n";
+      echo '        <br>'."\n";
+      echo '        <br>'."\n";
+    }
+    echo '				<p class="navigation-extra-text" align="left">'."\n";
                   // #: Siehe "http://www.youtube.com/watch?feature=player_embedded&v=HkBEKU-E38k", Sek. 7:05, gespeichert als "Don Lincoln Welches sind die kleinsten Bausteine des Universums.mp4", und "http://en.wikiquote.org/wiki/Talk:Albert_Einstein". Zitat ähnlich siehe URL: http://www.liss-kompendium.de/zitate/einstein-zitate.htm
                   //    Auch auf der Home-Seite von NSOSP.
-    echo '						&raquo;<i>Wenn ich <small>[</small>immer<small>]</small> w&uuml;sste, was ich tue,'."\n";
-    echo '						dann w&uuml;rde man es nicht Forschung nennen, oder?</i>&laquo; *<br>'."\n";
-    echo '					</span><!/small>'."\n";
+    echo '					&raquo;<i>Wenn ich <small>[</small>immer<small>]</small> w&uuml;sste, was ich tue,'."\n";
+    echo '					dann w&uuml;rde man es nicht Forschung nennen, oder?</i>&laquo; *<br>'."\n";
     echo '				</p>'."\n";
     echo '				<br>'."\n";
     echo '				<br>'."\n";
-    echo '				<p align="left" style="line-height: 1.4em;">'."\n";
-    echo '					<!small><span style="color: #505050;">'."\n";
-    echo '						'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][copy_right]))."\n";
-    echo '					</span><!/small>'."\n";
+    echo '				<p class="navigation-extra-text" align="left">'."\n";
+    echo '					'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][copy_right]))."\n";
     echo '				</p>'."\n";
     echo '				<br>'."\n";
     echo '				<br>'."\n";
-    echo '				<p align="left" style="line-height: 1.4em;">'."\n";
+    echo '				<p class="navigation-extra-text" align="left">'."\n";
                     // #: Siehe oben.
-    echo '					<small><span style="color: #505050;">* Einstein zugeschrieben</span></small>'."\n";
+    echo '					<small>* Einstein zugeschrieben</small>'."\n";
     echo '				</p>'."\n";
     echo '			</div>'."\n";
     echo ''."\n";
     echo '			<div id="footer" class="footer main-shadow-0-5-30 main-layer-3">'."\n";
-    echo '				<p align="center">'."\n";
-    echo '					<a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2022 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
-    echo '					&nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
-    echo '					<a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Kontakt</a>'."\n";
-    echo '					&nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
-    echo '					<a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/tree/v9.26-d20220715-t1300" target="_blank">v9.26</a>'."\n";
-    echo '				</p>'."\n";
+    echo '        <table class="footer-extra-table" width="700px" align="center" style="padding-top: 16px;">'."\n";
+    echo '          <colgroup>'."\n";
+    echo '            <col width="150">'."\n";
+    echo '            <col width="150">'."\n";
+    echo '            <! col height="134">'."\n";
+    echo '          </colgroup>'."\n";
+    echo '          <tr>'."\n";
+    echo '            <td>'."\n";
+    echo '            </td>'."\n";
+    echo '            <td>'."\n";
+    if (array_key_exists( author_image_URL, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) {
+      echo '              <p align="left" style="margin-top: 16px; margin-bottom: -4px;">'."\n";
+      echo '                <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt]).'"> </a>'."\n";
+      echo '              </p>'."\n";
+      echo '              <p class="footer-extra-text" align="left">'."\n";
+      echo '                '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_name])."\n";
+      echo '              </p>'."\n";
+    }
+    echo '            </td>'."\n";
+    echo '            <td>'."\n";
+    echo '              <p class="footer-extra-text" align="left">'."\n";
+    echo '                '.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][copy_right]))."\n";
+    echo '              </p>'."\n";
+    echo '              <p class="footer-extra-text" align="left">'."\n";
+    echo '                '.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_adress]))."\n";
+    echo '              </p>'."\n";
+    echo '              <p class="footer-extra-text" align="left">'."\n";
+    echo '                '.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_contact]))."\n";
+    echo '              </p>'."\n";
+    echo '            </td>'."\n";
+    echo '          </tr>'."\n";
+    echo '        </table>'."\n";
+    echo '        <p align="center">'."\n";
+    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2022 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
+    echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
+    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Kontakt</a>'."\n";
+    echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
+    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/tree/v9.26-d20220715-t1300" target="_blank">v9.26</a>'."\n";
+    echo '        </p>'."\n";
     echo '			</div>'."\n";
     echo ''."\n";
     echo '		</div>'."\n";
@@ -3801,10 +3867,10 @@
     echo $offset.'    <tr'.((array_key_exists( header_pict_bgcolor, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? ' bgcolor="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_bgcolor]).'"' : '').'>'."\n";
     echo $offset.'      <td align="center" valign="middle">'."\n";
     //%!echo $offset.'        <img src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_name]).'" width="930" height="134" border="0" alt="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_alt])).'"><br>'."\n";
-    echo $offset.'        <img src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_name]).'" width="'.((array_key_exists( header_pict_width, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_width] : '930').'" height="'.((array_key_exists( header_pict_height, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_height] : '134').'" border="0" alt="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_alt])).'"><br>'."\n";
+    echo $offset.'        <img class="print-header-image" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_name]).'" width="'.((array_key_exists( header_pict_width, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_width] : '930').'" height="'.((array_key_exists( header_pict_height, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_height] : '134').'" border="0" alt="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_alt])).'"><br>'."\n";
     echo $offset.'      </td>'."\n";
     echo $offset.'    </tr>'."\n";
-    echo $offset.'    <tr>'."\n";
+    echo $offset.'    <tr class="header-links">'."\n";
     echo $offset.'      <td>'."\n";
     //%!echo $offset.'        <p align="center" style="margin-bottom: 5px;">'."\n";
     echo $offset.'        <p '.((array_key_exists( header_links_marginLeft, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? 'style="margin-left: '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_links_marginLeft]).'; margin-bottom: 5px;"' : 'align="center" style="margin-bottom: 5px;"').'>'."\n";

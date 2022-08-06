@@ -25,15 +25,21 @@
                     '<!img src="../../share/images/Wolfgang Huss - CIMG0373 bearb.jpg" width="569" height="872" border="0" alt="Foto: Wolfgang Huß" align="right">'."\n".
                     '<!img src="../../share/images/Wolfgang Huss - CIMG0373 bearb.jpg" width="200" height="307" border="0" alt="Foto: Wolfgang Huß" align="right">'."\n".
                     '<img src="../../share/images/Wolfgang Huss-IMG_2229 beschn klein.jpg" width="238" height="307" border="0" alt="Foto: Wolfgang Huß" align="right">'."\n".
+                    ''."\n"))),
+                  array( 'text', array( text => array(
                     //'Wolfgang Huß \\italic{alias} Lucius Damian \\hidden{Cosmas }Stardust \\\\'."\n".
-                    'Wolfgang Huß \\\\'."\n".
+                    /* 'Wolfgang Huß \\\\'."\n".
                     'und Media Line Digital e.K. \\\\'."\n".
                     'Steinburger Straße 38 \\\\'."\n".
                     '22527 Hamburg, Germany, EU \\\\'."\n".
                     '\\\\'."\n".
                     'E-Mail: <span class="mailto" title="wolle.huss at pjannto.com">wolle.huss at pjannto.com</span> \\\\'."\n".
                     'Telefon: +49. 40. 38 03 77 37 \\\\'."\n".
-                    'Mobil: +49. 173. 622 60 91'."\n".
+                    'Mobil: +49. 173. 622 60 91'."\n". */
+                    ($Glo_g_Site_ary['OM:FrQFT:'][author_adress])."\n".
+                    ''."\n"))),
+                  array( 'text', array( text => array(
+                    ($Glo_g_Site_ary['OM:FrQFT:'][author_contact])."\n".
                     '\\\\'."\n".
                     '\\\\'."\n".
                     '\\\\'."\n".
@@ -44,9 +50,10 @@
                     '\\\\'."\n".
                     '\\\\'."\n".
                     '\\\\'."\n".
-                    '\\\\'."\n"))),
-                  array( 'jumplist',
-                    array(
+                    '\\\\'."\n".
+                    ''."\n"))),
+                      
+                  array( 'jumplist', array(
                       //array(  jump_name => 'XXX'),
                     )),
               )

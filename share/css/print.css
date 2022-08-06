@@ -11,13 +11,29 @@ html, body {
 /* == Container == */
 .container {
   height: 100%;
+  width: 731px !important;
 }
 
-.header,
+/* .header,
 .navigation,
 .extra,
 .footer {
 	display: none;
+} */
+/*%! .header-table {
+  column-width: 731px !important;
+} */
+.print-header-image {
+  position: relative;
+  left: -100px;
+}
+.header-links,
+.navigation,
+.extra {
+  display: none;
+}
+.footer-extra-table {
+  display: block;
 }
 
 /* == Content == */
@@ -28,6 +44,14 @@ html, body {
     overflow: visible;
 	}
 
+/* Shadows */
+.main-shadow-5-5-20/*, .tools-class-fig*/ {
+  -webkit-box-shadow: none;  /* #: Safari */
+  -moz-box-shadow: none;  /* #: Mozilla */
+  -o-box-shadow: none;  /* #: Opera */
+  -ms-box-shadow: none;  /* #: Internet Explorer */
+  box-shadow: none;  /* #: Standard */
+}
 .main-shadow-0-5-30 {
   -webkit-box-shadow: none;  /* #: Safari */
   -moz-box-shadow: none;  /* #: Mozilla */
@@ -36,3 +60,14 @@ html, body {
   box-shadow: none;  /* #: Standard */
 }
 
+
+/* Tools Classes */
+
+.tools-class-fig, .tools-class-vid {
+  /* shadow */
+  -webkit-box-shadow: none;  /* #: Safari */
+  -moz-box-shadow: none;  /* #: Mozilla */
+  -o-box-shadow: none;  /* #: Opera */
+  -ms-box-shadow: none;  /* #: Internet Explorer */
+  box-shadow: none;  /* #: Standard */
+}
