@@ -136,7 +136,7 @@
   //                      >:  "To_f_Paragraph", 'text', 'conclusion', 'quote':  Added classes: 'tools-class-text-conclusion', 'tools-class-text-italic', 'tools-class-text-quote' to set margins etc. via CSS. In 'text' removed therefore "(((array_key_exists( Shape, $text)) && in_array( $text[Shape], array( 'conclusion', 'italic', 'quote'))) ? ' margin-left: 30px; margin-right: 30px;' : '')".
   //           20181006:  +:  "To_f_replace_callback__latexcommand__cond", "To_f_replace_callback__latexcommand__condb":  New.
   //           20181008:  +:  "To_f_Paragraph", 'figure':  Added parameter "figBigger_is".
-  //                      >:  "To_f_Paragraph", 'fade-in-area':  Replaced explicit "background-color" style with class "tools-class-fade-in-area-div-vis".
+  //                      >:  "To_f_Paragraph", 'fade-in-area':  Replaced explicit "background-color" style with class "tools-class-fade-in-area-div-show-content".
   //                      +:  "$To_g_Text_replace_ary":  '⅓' -> '&frac13;'  and  '⅔' -> '&frac23;'  new.
   //           20181018:  +:  "To_f_HTMLHeader_init", "To_f_HTMLHeader_Favicons_make", "To_f_HTMLHeader_Fonts_make":  New.
   //           20181031:  +:  "To_f_Paragraph", 'fade-in-area':  "TitleVis" is new optional parameter.
@@ -147,7 +147,7 @@
   //                      *:  "$To_g_Text_replace_ary":  '–' -> '&mdash;' changed to '–' -> '&ndash;', because '&mdash;' was to wide and wrong at the end.
   //                      +:  "$To_g_Text_replace_ary":  '—' -> '&mdash;', 'Ⅰ' -> '&#x2160;', 'Ⅱ' -> '&#x2161;', and 'Ⅲ' -> '&#x2162;' new.
   //                      +:  "To_f_Paragraph", 'headline':  'headlineColor', 'subline', 'sublineColor' is new'
-  //           20190928:  >:  "To_f_Paragraph", 'fade-in-area':  Replaced explicit "color" style with class "tools-class-fade-in-area-div-invis".
+  //           20190928:  >:  "To_f_Paragraph", 'fade-in-area':  Replaced explicit "color" style with class "tools-class-fade-in-area-div-hide-content".
   //           20200103:  >:  "To_f_Paragraph", 'notice':  With no elements 'notice' is not shown.
   //           20200202:  >:  "To_f_Paragraph", 'fade-in-area':  'jumpName' is new.
   //           20200410:  +:  "$Glo_g_Paragraph_fn":  Is new.
@@ -2045,7 +2045,7 @@
 
           // #: Elements for visibility.
           //%!echo $offset.'  <div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'"  v-if="display" style="background-color: #F9F9F9;">'."\n";
-          echo $offset.'  <div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'"  v-if="display" class="tools-class-fade-in-area-div-vis">'."\n";
+          echo $offset.'  <div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'"  v-if="display" class="tools-class-fade-in-area-div-show-content">'."\n";
           $To_g_elements_hides_ary[noContentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'    <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
@@ -2066,7 +2066,7 @@
           echo "\n";
         
           // #: Elements for invisibility.
-          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" v-else class="tools-class-fade-in-area-div-invis">'."\n";
+          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" v-else class="tools-class-fade-in-area-div-hide-content">'."\n";
           $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
@@ -2095,7 +2095,7 @@
         else
         {
           // #: 'showContent': Without content.
-          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-invis" style="display: '.(($start_display == 'hideContent') ? '' : 'none').';">'."\n";
+          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-hide-content" style="display: '.(($start_display == 'hideContent') ? '' : 'none').';">'."\n";
           $To_g_elements_hides_ary[noContentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
@@ -2115,7 +2115,7 @@
         
           // #: 'hideContent': With content.
           //%!echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'hideContent') ? 'none' : '').'; background-color: #F9F9F9;">'."\n";
-          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-vis" style="display: '.(($start_display == 'hideContent') ? 'none' : '').';">'."\n";
+          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-show-content" style="display: '.(($start_display == 'hideContent') ? 'none' : '').';">'."\n";
           $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";

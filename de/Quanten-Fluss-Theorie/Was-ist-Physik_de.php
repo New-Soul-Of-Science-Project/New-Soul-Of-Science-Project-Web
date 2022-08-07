@@ -246,7 +246,7 @@
                     '(sprich »Dschet«).\\footnote{\\const{FrQFT_g_footnote_text_ZeitDjetNeheh}}'."\n".
                     'Ich interpretiere Djet hier in abgewandelter Form als die ewige Entwicklung der Welt, also als eine zeitliche Veränderung und nicht als Vollendet oder als die gesamte Entwicklung enthaltend.'."\n"))),*/
                       
-                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
+                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-show-content" und "tools-class-fade-in-area-div-hide-content".
                   array( 'fade-in-area', array( Display => 'hideContent',
                      Title => '\\color{*CloserDesc}{Bezug zum Hinduismus: Djet- und Neheh-Zeit und die drei kosmischen Funktionen des Hinduismus}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
@@ -316,7 +316,7 @@
                       'Diese Betrachtungsweise, diese radikale und neue Perspektive auf die Grundlagenphysik, und ihr fundiertes Verständnis sind wichtig, um bisher unerklärbare Phänomene'."\n".
                     'der Physik zu verstehen und verbinden die Grundlagenphysik mit jeder Naturwissenschaft und schließlich sogar mit der \\jump{OM:SpaLeb:Home}{Naturphilosophie des Lebens}.'."\n"))),
                      
-                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
+                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-show-content" und "tools-class-fade-in-area-div-hide-content".
                   array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*CloserDesc}{Bezug zur heutigen und zur neuen Physik}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
@@ -355,7 +355,7 @@
                     'wieder durch die auf sie zum Größeren hin folgende Neheh-Bewegung in eine Rotation gezwungen.'."\n"))),
                     //'Nur wenn ein Bestandteil in dieser Struktur seinen Platz wechselt, ist es vorübergehend frei.'."\n"))),
                       
-                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
+                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-show-content" und "tools-class-fade-in-area-div-hide-content".
                   array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*CloserDesc}{Bezug zur heutigen und zur neuen Physik}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
@@ -382,7 +382,7 @@
                     'Es handelt sich dabei um eine festgelegte, grundlegende, absolute Zeit der Struktur, unseres modellierten physikalischen Systems.'."\n".
                     'Sie existiert in dieser Form allerdings nur, weil wir uns im Modell auf eine unterste Ebene dieser Struktur festgelegt haben.'."\n"))),
                       
-                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
+                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-show-content" und "tools-class-fade-in-area-div-hide-content".
                   array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*CloserDesc}{Bezug zur heutigen und zur neuen Physik}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
@@ -406,7 +406,7 @@
                     'So ergibt sich schließlich die Vereinheitlichte Relativitätstheorie.'."\n"))),
                     ))),
                       
-                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
+                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-show-content" und "tools-class-fade-in-area-div-hide-content".
                   array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*CloserDesc}{Weitreichender Bezug zur heutigen und zur neuen Physik}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
@@ -491,7 +491,7 @@
                     'Damit entfallen viele Probleme, die uns unser Urknall bisher mit seiner physikalischen Beschreibung in der Kosmologie beschert.'."\n"))),
                     ))),
                       
-                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
+                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-show-content" und "tools-class-fade-in-area-div-hide-content".
                   array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*CloserDesc}{Kritische Aspekte der heutigen Physik}', ParagraphList => array(
                   /*array( 'text', array( TextColor => '*CloserDesc', text => array(

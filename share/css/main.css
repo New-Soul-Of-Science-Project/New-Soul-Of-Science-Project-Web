@@ -423,14 +423,14 @@ td.tools-class-text-figure {
   line-height: 1.4em;
 }
 
-.tools-class-fade-in-area-div-vis {
+.tools-class-fade-in-area-div-show-content {
   margin-top: 20px;
   color: #000AC4;
   /*background-color: #F9F9F9;*/
   /*background-color: #F0F0F0;*/
   background-color: #F4F4F4;
 }
-.tools-class-fade-in-area-div-invis {
+.tools-class-fade-in-area-div-hide-content {
   margin-top: 20px;
   color: #000AC4;
 }

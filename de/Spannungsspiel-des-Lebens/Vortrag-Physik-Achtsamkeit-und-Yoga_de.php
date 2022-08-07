@@ -441,7 +441,7 @@
                         '• nicht wertend ist.'."\n"),
                         addtext => '\\footnote{\\cite{wiki:AchtsamkeitMindfulness:2017}, Definitionen von Achtsamkeit, Achtsamkeit nach Kabat-Zinn.}')),
                       
-                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
+                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-show-content" und "tools-class-fade-in-area-div-hide-content".
                   array( 'fade-in-area', array( Display => 'hideContent',
                      Title => '\\color{*CloserDesc}{Längeres Zitat von Kabat-Zinn}', ParagraphList => array(
                   array( 'text', array( Shape  => 'quote',  TextColor => '*CloserDesc', text => array(
@@ -528,7 +528,7 @@
                     'wie wir das Problem auf der Leinwand lösen können.'."\n".
                     'Oder wir bemerken, dass wir uns gar nicht ärgern müssen, weil es gar nicht so relevant ist.'."\n"))),
                       
-                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
+                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-show-content" und "tools-class-fade-in-area-div-hide-content".
                   array( 'fade-in-area', array( Display => 'hideContent',
                      Title => '\\color{*CloserDesc}{Aus der Perspektive des Achtsamkeitsprozesses kann man analysieren:}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(

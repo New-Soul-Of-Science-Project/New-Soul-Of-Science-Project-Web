@@ -478,7 +478,7 @@
                     'Wir strahlen etwas in die Welt ab – einen Radarstrahl oder so – und wir sind Empfänglich für etwas – beispielsweise für Radarstrahlen.'."\n".
                     'So funktioniert in meinen Augen unser rudimentäres Bewusstsein\\color{*Bearb}{(Link)}.'."\n"))),
                       
-                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
+                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-show-content" und "tools-class-fade-in-area-div-hide-content".
                   array( 'fade-in-area', array( Display => 'hideContent',
                      Title => '\\color{*CloserDesc}{Bewusstsein aus naturphilosophischer und naturwissenschaftlicher Perspektive}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(

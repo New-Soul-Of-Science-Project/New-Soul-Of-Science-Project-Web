@@ -184,7 +184,7 @@
                     'Dazu, dass lichtähnliche Strukturen in Elementarteilchen vorhanden sind, passt sehr gut die Entstehung von Teilchen-Antiteilchen-Paaren durch Gammastrahlung, die Paarbildung.\\footnote{\\const{FrQFT_g_footnote_text_Paarbildung}}'."\n".
                     'Sowie auch die entsprechende Zerstrahlung von Teilchen-Antiteilchen-Paaren in Gammastrahlung, die Annihilation.\\footnote{\\const{FrQFT_g_footnote_text_Annihilation}}'."\n"))),
                       
-                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
+                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-show-content" und "tools-class-fade-in-area-div-hide-content".
                   array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*CloserDesc}{Bezug zur Quanten-Fluss-Theorie: Das strukturgebende Ordnungsprinzip – das Existenzprinzip und der Djet-Neheh-Dualismus}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
@@ -274,7 +274,7 @@
                       'Und das alles Einfach nur dadurch, dass die Uhren langsamer gehen.'."\n".
                     'Das beobachten wir nicht und es erscheint auch unsinnig.'."\n"))),
                       
-                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
+                  // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-show-content" und "tools-class-fade-in-area-div-hide-content".
                   array( 'fade-in-area', array( Display => 'hideContent',
                      Title => '\\color{*CloserDesc}{Es gibt gravitative Scherkräfte bei Planeten und Sonnen tatsächlich}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
