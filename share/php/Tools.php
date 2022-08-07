@@ -249,7 +249,7 @@
     
     echo ''."\n";
     echo '    <script src="'.$Glo_PathRel_back.'../share/js/nospam.js" type="text/javascript" language="JavaScript"></script>'."\n";
-    echo '    <script src="'.$Glo_PathRel_back.'../share/js/Tools_v01_001.js" type="text/javascript" language="JavaScript"></script>'."\n";
+    echo '    <script src="'.$Glo_PathRel_back.'../share/js/Tools.js" type="text/javascript" language="JavaScript"></script>'."\n";
     echo '    <script type="text/javascript">'."\n";
     echo '          <!--'."\n";
     // #: Call JavaScript start sequence.

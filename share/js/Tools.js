@@ -1,19 +1,20 @@
 
-// #: Name:  "Tools_v01_001.js"
+// #: Name:  "Tools.js"
 
 
-// #: Stand: 10.07.2018, 18:00h
+// #: Stand: 07.08.2022, 09:00h
 
 // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+//          20220807:  +:  "To_f_manage_site_end", "To_f_manage_beforePrint", "To_f_manage_afterPrint":  Add event handlers for printing.
 //v01.001:  20130515:  +:  History started.
 //          20170129:  +:  "To_f_manage_site_end":  "autoResize = false" is new.
 //                     +:  "To_f_manage_resize", "To_f_manage_pageshow":  Are new.
 //          20170207:  +:  "To_f_manage_resize":  Fit extra or optional navigation to windows height.
-//          20170226:  +:  "To_f_manage_resize":  Use on mobils windows outer heigt and on desktop windows inner height.
+//          20170226:  +:  "To_f_manage_resize":  Use on mobiles windows outer height and on desktop windows inner height.
 
 
-// Comment:  20170226:  "To_f_manage_resize":  There seems to be no difference at the moment between mobils windows outer heigt and mobils windows inner height. Not on Safari nor FireFox nor Chrome.
+// Comment:  20170226:  "To_f_manage_resize":  There seems to be no difference at the moment between mobiles windows outer height and mobiles windows inner height. Not on Safari nor FireFox nor Chrome.
 
 
 
@@ -185,6 +186,8 @@ function To_f_manage_site_end( autoResize = false)
     window.addEventListener('resize', To_f_manage_resize);
   }
 
+  window.onbeforeprint = To_f_manage_beforePrint;
+  window.window.onafterprint = To_f_manage_afterPrint;
 }
 
 
@@ -440,5 +443,25 @@ function To_f_manage_pageshow()
                
   // #: Fit content height to need.
   To_f_manage_resize();
+}
+
+
+
+function To_f_manage_beforePrint()
+{
+  // The beforeprint event is fired when the associated document is about to be printed or previewed for printing.
+  // See: https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeprint_event
+  
+  console.log('Before print');
+}
+
+
+
+function To_f_manage_afterPrint()
+{
+  // The afterprint event is fired after the associated document has started printing or the print preview has been closed.
+  // See: https://developer.mozilla.org/en-US/docs/Web/API/Window/afterprint_event
+  
+  console.log('After print');
 }
 
