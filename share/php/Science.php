@@ -936,11 +936,11 @@
         if (!$display_is)
         {
           echo $offset.'  <tr id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'invis') ? 'none' : '').';">'."\n";
-          $To_g_elements_hides_ary[invis_id_part_ary][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+          $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'    <td colspan="2" align="left">'."\n";
           echo $offset.'      <table border="0" style="margin: 0; padding: 0;"> <colgroup> <col width="80"> </colgroup>'."\n";
-          echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])" style="font-size: 10px; color: #A0A0A0;">&#9650; ausblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
+          echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])" style="font-size: 10px; color: #A0A0A0;">&#9650; ausblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
           echo "\n";
           echo $offset.'  <tr><td height="10"></td></tr>'."\n";
           echo "\n";
@@ -956,13 +956,13 @@
         {     // #: "$value[latex]" is array.
           //echo $offset.'    <td id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: ;" align="center">'."\n";
           echo $offset.'    <td id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'invis') ? '' : 'none').';" align="center">'."\n";
-          $To_g_elements_hides_ary[vis_id_part_ary][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+          $To_g_elements_hides_ary[noContentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'      '.(Sc_f_equation_latex( $value[latex], $latex_color, $latex_tech)).' </td>'."\n";
           
           //echo $offset.'    <td id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: none;" align="center">'."\n";
           echo $offset.'    <td id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'invis') ? 'none' : '').';" align="center">'."\n";
-          $To_g_elements_hides_ary[invis_id_part_ary][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+          $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'      '.(Sc_f_equation_latex( $value[latex_if_visible], $latex_color, $latex_tech)).' </td>'."\n";
         }
@@ -1009,20 +1009,20 @@
           $To_g_elements_hides_ary_dim++;
 
           echo $offset.'  <tr id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'invis') ? '' : 'none').';">'."\n";
-          $To_g_elements_hides_ary[vis_id_part_ary][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+          $To_g_elements_hides_ary[noContentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'    <td colspan="2" align="left">'."\n";
           echo $offset.'      <table border="0" style="margin: 0; padding: 0;"> <colgroup> <col width="80"> </colgroup>'."\n";
-          echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'vis\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])" style="font-size: 10px; color: #A0A0A0;">&#9658; einblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
+          echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'vis\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])" style="font-size: 10px; color: #A0A0A0;">&#9658; einblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
           echo $offset.'  <tr id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'invis') ? 'none' : '').';">'."\n";
-          $To_g_elements_hides_ary[invis_id_part_ary][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+          $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'    <td colspan="2" align="left">'."\n";
           echo $offset.'      <table border="0" style="margin: 0; padding: 0;"> <colgroup> <col width="80"> </colgroup>'."\n";
-          echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])" style="font-size: 10px; color: #A0A0A0;">&#9660; ausblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
+          echo $offset.'        <tr> <td valign="baseline" style="font-size: 10px;"><a href="javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])" style="font-size: 10px; color: #A0A0A0;">&#9660; ausblenden</a></td> <td valign="baseline">'.(Sc_f_equation_list_HideLine_html()).'</td> </tr> </table> </td> </tr>'."\n";
           echo "\n";
           echo $offset.'  <tr id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'invis') ? 'none' : '').';"><td height="10"></td></tr>'."\n";
-          $To_g_elements_hides_ary[invis_id_part_ary][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+          $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo "\n";
 
@@ -1031,7 +1031,7 @@
         
         //echo $offset.'  <tr id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: none;">'."\n";
         echo $offset.'  <tr id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'invis') ? 'none' : '').';">'."\n";
-        $To_g_elements_hides_ary[invis_id_part_ary][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+        $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
         $local_elements_hides_ele_num++;
         echo $offset.'    <td align="center">'."\n";
         echo $offset.'      '.(Sc_f_equation_latex( $value[latex], $latex_color, $latex_tech)).' </td>'."\n";
@@ -1057,7 +1057,7 @@
         
         //echo $offset.'  <tr id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: none;"><td height="5"></td></tr>'."\n";
         echo $offset.'  <tr id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'invis') ? 'none' : '').';"><td height="'.$Sc_g_equation_list_LineDistance.'"></td></tr>'."\n";
-        $To_g_elements_hides_ary[invis_id_part_ary][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+        $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
         $local_elements_hides_ele_num++;
         echo "\n";
       }

@@ -140,16 +140,16 @@ function To_f_hash_changed( hash)
           hides_idx_idx = 0;
           var search_is = true;
           
-          while (search_is && (hides_idx_idx < To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'].length))
+          while (search_is && (hides_idx_idx < To_g_elements_hides_ary[hides_idx]['contentAry'].length))
           {
-            //alert( "Anker \"" + anchor_name + "\" gesucht in ID: " + To_g_elements_hides_ary[hides_idx]['base_name'] + To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx]);
+            //alert( "Anker \"" + anchor_name + "\" gesucht in ID: " + To_g_elements_hides_ary[hides_idx]['base_name'] + To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx]);
             
-            if (To_f_anchor_search( document.getElementById( To_g_elements_hides_ary[hides_idx]['base_name'] + To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx]), anchor_name))
+            if (To_f_anchor_search( document.getElementById( To_g_elements_hides_ary[hides_idx]['base_name'] + To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx]), anchor_name))
             {
-              //alert( "Anker \"" + anchor_name + "\" in ID " + To_g_elements_hides_ary[hides_idx]['base_name'] + To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx] + " gefunden! Nun sichtbar machen ...");
-              //alert( "Sichtbar machen: ID-Basis " + To_g_elements_hides_ary[hides_idx]['base_name'] + ", erster sichtbarer Part " + To_g_elements_hides_ary[hides_idx]['vis_id_part_ary'][0] + ", erster unsichtb. Part " + To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][0]);
+              //alert( "Anker \"" + anchor_name + "\" in ID " + To_g_elements_hides_ary[hides_idx]['base_name'] + To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx] + " gefunden! Nun sichtbar machen ...");
+              //alert( "Sichtbar machen: ID-Basis " + To_g_elements_hides_ary[hides_idx]['base_name'] + ", erster sichtbarer Part " + To_g_elements_hides_ary[hides_idx]['noContentAry'][0] + ", erster unsichtb. Part " + To_g_elements_hides_ary[hides_idx]['contentAry'][0]);
               
-              To_f_elements_hides_switch( 'vis', To_g_elements_hides_ary[hides_idx]['base_name'], To_g_elements_hides_ary[hides_idx]['vis_id_part_ary'], To_g_elements_hides_ary[hides_idx]['invis_id_part_ary']);
+              To_f_elements_hides_switch( 'vis', To_g_elements_hides_ary[hides_idx]['base_name'], To_g_elements_hides_ary[hides_idx]['noContentAry'], To_g_elements_hides_ary[hides_idx]['contentAry']);
               To_g_anchor_search_LastFoundElement.scrollIntoView( true);
               // #: Stop search in this "hides_idx".
               search_is = false;
@@ -191,34 +191,34 @@ function To_f_openAll( rememberOldStatus = false)
     for (hides_idx = 0; hides_idx < To_g_elements_hides_ary.length; hides_idx++)
     {
       console.log( 'hides_idx: ', hides_idx);
-      console.log( "'To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'].length: ", To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'].length);
+      console.log( "'To_g_elements_hides_ary[hides_idx]['contentAry'].length: ", To_g_elements_hides_ary[hides_idx]['contentAry'].length);
       if (saveStatus) {
         To_g_rememberOldStatus_elements_hides_ary.push( []);
       }
       
       var hides_idx_idx = 0;
 
-      while (hides_idx_idx < To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'].length)
+      while (hides_idx_idx < To_g_elements_hides_ary[hides_idx]['contentAry'].length)
       {
         // part which has the hidden content
         var displayVisiblePart
-        console.log( 'is of type: ', typeof To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx]);
-        if (typeof To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx] == 'string') {
-          displayVisiblePart = document.getElementById( To_g_elements_hides_ary[hides_idx]['base_name'] + To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx]).style.display;
+        console.log( 'is of type: ', typeof To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx]);
+        if (typeof To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx] == 'string') {
+          displayVisiblePart = document.getElementById( To_g_elements_hides_ary[hides_idx]['base_name'] + To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx]).style.display;
         } else {
-          displayVisiblePart = document.getElementById( To_g_elements_hides_ary[hides_idx]['base_name'] + To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx][0].style.display);
+          displayVisiblePart = document.getElementById( To_g_elements_hides_ary[hides_idx]['base_name'] + To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx][0].style.display);
         }
         var contentWasInvisible = (displayVisiblePart === 'none')
 
         console.log( 'hides_idx_idx: ', hides_idx_idx);
         console.log( "To_g_elements_hides_ary[hides_idx]['base_name']: ", To_g_elements_hides_ary[hides_idx]['base_name']);
-        // console.log( "To_g_elements_hides_ary[hides_idx]['vis_id_part_ary']: ", To_g_elements_hides_ary[hides_idx]['vis_id_part_ary'][hides_idx_idx]);
-        console.log( "To_g_elements_hides_ary[hides_idx]['invis_id_part_ary']: ", To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx]);
+        // console.log( "To_g_elements_hides_ary[hides_idx]['noContentAry']: ", To_g_elements_hides_ary[hides_idx]['noContentAry'][hides_idx_idx]);
+        console.log( "To_g_elements_hides_ary[hides_idx]['contentAry']: ", To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx]);
         if (saveStatus) {
           To_g_rememberOldStatus_elements_hides_ary[hides_idx].push( { contentWasInvisible });
         }
         if (contentWasInvisible) {
-          To_f_elements_hides_switch( 'vis', To_g_elements_hides_ary[hides_idx]['base_name'], To_g_elements_hides_ary[hides_idx]['vis_id_part_ary'], To_g_elements_hides_ary[hides_idx]['invis_id_part_ary']);
+          To_f_elements_hides_switch( 'vis', To_g_elements_hides_ary[hides_idx]['base_name'], To_g_elements_hides_ary[hides_idx]['noContentAry'], To_g_elements_hides_ary[hides_idx]['contentAry']);
         }
         
         hides_idx_idx++;
@@ -243,21 +243,21 @@ function To_f_closeAll(toOldStatus = false)
     for (hides_idx = 0; hides_idx < To_g_elements_hides_ary.length; hides_idx++)
     {
       console.log( 'hides_idx: ', hides_idx);
-      console.log( "'To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'].length: ", To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'].length);
+      console.log( "'To_g_elements_hides_ary[hides_idx]['contentAry'].length: ", To_g_elements_hides_ary[hides_idx]['contentAry'].length);
       
       var hides_idx_idx = 0;
 
-      while (hides_idx_idx < To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'].length)
+      while (hides_idx_idx < To_g_elements_hides_ary[hides_idx]['contentAry'].length)
       {
         console.log( 'hides_idx_idx: ', hides_idx_idx);
         console.log( "To_g_elements_hides_ary[hides_idx]['base_name']: ", To_g_elements_hides_ary[hides_idx]['base_name']);
-        // console.log( "To_g_elements_hides_ary[hides_idx]['vis_id_part_ary']: ", To_g_elements_hides_ary[hides_idx]['vis_id_part_ary'][hides_idx_idx]);
-        console.log( "To_g_elements_hides_ary[hides_idx]['invis_id_part_ary']: ", To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx]);
-        console.log( 'is of type: ', typeof To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx]);
+        // console.log( "To_g_elements_hides_ary[hides_idx]['noContentAry']: ", To_g_elements_hides_ary[hides_idx]['noContentAry'][hides_idx_idx]);
+        console.log( "To_g_elements_hides_ary[hides_idx]['contentAry']: ", To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx]);
+        console.log( 'is of type: ', typeof To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx]);
 
-        console.log( "To_g_elements_hides_ary[hides_idx]['invis_id_part_ary']: ", To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx]);
+        console.log( "To_g_elements_hides_ary[hides_idx]['contentAry']: ", To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx]);
         if (!resetStatus || To_g_rememberOldStatus_elements_hides_ary[hides_idx][hides_idx_idx].contentWasInvisible) {
-          To_f_elements_hides_switch( 'invis', To_g_elements_hides_ary[hides_idx]['base_name'], To_g_elements_hides_ary[hides_idx]['vis_id_part_ary'], To_g_elements_hides_ary[hides_idx]['invis_id_part_ary']);
+          To_f_elements_hides_switch( 'invis', To_g_elements_hides_ary[hides_idx]['base_name'], To_g_elements_hides_ary[hides_idx]['noContentAry'], To_g_elements_hides_ary[hides_idx]['contentAry']);
         }
         
         hides_idx_idx++;
@@ -270,12 +270,12 @@ function To_f_closeAll(toOldStatus = false)
 
 
 
-function To_f_elements_hides_switch( setting, id_base_name, vis_id_part_ary, invis_id_part_ary)
+function To_f_elements_hides_switch( setting, id_base_name, noContentAry, contentAry)
 {
   var i;
 
   //alert( "setting: " + setting + ", base_name: " + id_base_name);
-  //alert( "Sichtbar machen: setting: " + setting + ", ID-Basis: " + id_base_name + ", erster sichtbarer Part " + vis_id_part_ary[0] + ", erster unsichtb. Part " + invis_id_part_ary[0]);
+  //alert( "Sichtbar machen: setting: " + setting + ", ID-Basis: " + id_base_name + ", erster sichtbarer Part " + noContentAry[0] + ", erster unsichtb. Part " + contentAry[0]);
 
   if (document.getElementById)
   {
@@ -283,50 +283,50 @@ function To_f_elements_hides_switch( setting, id_base_name, vis_id_part_ary, inv
     {
       case 'invis':
         
-        for (i = 0; i < vis_id_part_ary.length; i++)
-          if (typeof vis_id_part_ary[i] == 'string')
+        for (i = 0; i < noContentAry.length; i++)
+          if (typeof noContentAry[i] == 'string')
           {
-            //alert( "Sichtbar machen: " + id_base_name + vis_id_part_ary[i]);
-            document.getElementById( id_base_name + vis_id_part_ary[i]).style.display = '';
+            //alert( "Sichtbar machen: " + id_base_name + noContentAry[i]);
+            document.getElementById( id_base_name + noContentAry[i]).style.display = '';
           }
           else
           {
-            document.getElementById( id_base_name + vis_id_part_ary[i][0]).style.display = '';
-            //document.getElementById( id_base_name + vis_id_part_ary[i][0] + '-Name').style.display = '';
-            //document.getElementById( id_base_name + vis_id_part_ary[i][0] + '-Name').name = vis_id_part_ary[i][1];
+            document.getElementById( id_base_name + noContentAry[i][0]).style.display = '';
+            //document.getElementById( id_base_name + noContentAry[i][0] + '-Name').style.display = '';
+            //document.getElementById( id_base_name + noContentAry[i][0] + '-Name').name = noContentAry[i][1];
           }
         
-        for (i = 0; i < invis_id_part_ary.length; i++)
-          if (typeof invis_id_part_ary[i] == 'string')
-            document.getElementById( id_base_name + invis_id_part_ary[i]).style.display = 'none';
+        for (i = 0; i < contentAry.length; i++)
+          if (typeof contentAry[i] == 'string')
+            document.getElementById( id_base_name + contentAry[i]).style.display = 'none';
           else
           {
-            document.getElementById( id_base_name + invis_id_part_ary[i][0]).style.display = 'none';
-            //document.getElementById( id_base_name + invis_id_part_ary[i][0] + '-Name').style.display = 'none';
-            //document.getElementById( id_base_name + invis_id_part_ary[i][0] + '-Name').name = '';
+            document.getElementById( id_base_name + contentAry[i][0]).style.display = 'none';
+            //document.getElementById( id_base_name + contentAry[i][0] + '-Name').style.display = 'none';
+            //document.getElementById( id_base_name + contentAry[i][0] + '-Name').name = '';
           }
         
         break;
       case 'vis':
         
-        for (i = 0; i < vis_id_part_ary.length; i++)
-          if (typeof vis_id_part_ary[i] == 'string')
-            document.getElementById( id_base_name + vis_id_part_ary[i]).style.display = 'none';
+        for (i = 0; i < noContentAry.length; i++)
+          if (typeof noContentAry[i] == 'string')
+            document.getElementById( id_base_name + noContentAry[i]).style.display = 'none';
           else
           {
-            document.getElementById( id_base_name + vis_id_part_ary[i][0]).style.display = 'none';
-            //document.getElementById( id_base_name + vis_id_part_ary[i][0] + '-Name').style.display = 'none';
-            //document.getElementById( id_base_name + vis_id_part_ary[i][0] + '-Name').name = '';
+            document.getElementById( id_base_name + noContentAry[i][0]).style.display = 'none';
+            //document.getElementById( id_base_name + noContentAry[i][0] + '-Name').style.display = 'none';
+            //document.getElementById( id_base_name + noContentAry[i][0] + '-Name').name = '';
           }
         
-        for (i = 0; i < invis_id_part_ary.length; i++)
-          if (typeof invis_id_part_ary[i] == 'string')
-            document.getElementById( id_base_name + invis_id_part_ary[i]).style.display = '';
+        for (i = 0; i < contentAry.length; i++)
+          if (typeof contentAry[i] == 'string')
+            document.getElementById( id_base_name + contentAry[i]).style.display = '';
           else
           {
-            document.getElementById( id_base_name + invis_id_part_ary[i][0]).style.display = '';
-            //document.getElementById( id_base_name + invis_id_part_ary[i][0] + '-Name').style.display = '';
-            //document.getElementById( id_base_name + invis_id_part_ary[i][0] + '-Name').name = invis_id_part_ary[i][1];
+            document.getElementById( id_base_name + contentAry[i][0]).style.display = '';
+            //document.getElementById( id_base_name + contentAry[i][0] + '-Name').style.display = '';
+            //document.getElementById( id_base_name + contentAry[i][0] + '-Name').name = contentAry[i][1];
           }
         
         break;

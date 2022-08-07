@@ -2027,7 +2027,7 @@
       case 'fade-in-area':
         global $To_g_elements_hides_ary_dim, $To_g_elements_hides_ary;
         
-        // #: Start with visibility, than it is visible, if JavaScript is not aviable. Than Google will see the text.
+        // #: Start with visibility, then it is visible, if JavaScript is not avialable. Then Google will see the text.
         $start_display = 'vis';
 
         $To_g_elements_hides_ary_dim++;
@@ -2046,13 +2046,13 @@
           // #: Elements for visibility.
           //%!echo $offset.'  <div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'"  v-if="display" style="background-color: #F9F9F9;">'."\n";
           echo $offset.'  <div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'"  v-if="display" class="tools-class-fade-in-area-div-vis">'."\n";
-          $To_g_elements_hides_ary[vis_id_part_ary][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+          $To_g_elements_hides_ary[noContentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'    <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
           echo $offset.'      <tr>'."\n";
           echo $offset.'        <td>'."\n";
           // @click="display = false"
-          $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'vis\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])';
+          $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'vis\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])';
           // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
           echo $offset.'      <a href="'.$local_JavaRef.'" style="text-decoration: none; color: #000000;">&#9662;</a>'."\n";
           echo $offset.'        </td>'."\n";
@@ -2067,13 +2067,13 @@
         
           // #: Elements for invisibility.
           echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" v-else class="tools-class-fade-in-area-div-invis">'."\n";
-          $To_g_elements_hides_ary[invis_id_part_ary][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+          $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
           echo $offset.'    <tr>'."\n";
           echo $offset.'      <td>'."\n";
           // @click="display = true"
-          $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])';
+          $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])';
           // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
           echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: #A0A0A0;">&#9656;</a>'."\n";
           echo $offset.'      </td>'."\n";
@@ -2096,12 +2096,12 @@
         {
           // #: 'vis': Without content.
           echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-invis" style="display: '.(($start_display == 'invis') ? '' : 'none').';">'."\n";
-          $To_g_elements_hides_ary[vis_id_part_ary][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+          $To_g_elements_hides_ary[noContentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
           echo $offset.'    <tr>'."\n";
           echo $offset.'      <td>'."\n";
-          $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'vis\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])';
+          $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'vis\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])';
           // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
           echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: #A0A0A0;">&#9656;</a>'."\n";
           echo $offset.'      </td>'."\n";
@@ -2116,12 +2116,12 @@
           // #: 'invis': With content.
           //%!echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'invis') ? 'none' : '').'; background-color: #F9F9F9;">'."\n";
           echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-vis" style="display: '.(($start_display == 'invis') ? 'none' : '').';">'."\n";
-          $To_g_elements_hides_ary[invis_id_part_ary][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+          $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
           echo $offset.'    <tr>'."\n";
           echo $offset.'      <td>'."\n";
-          $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])';
+          $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'contentAry\'])';
           // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
           //echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: #000000;">&#9662;</a>'."\n";
           echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: #000000;">&#9662;</a>'."\n";
@@ -2314,11 +2314,11 @@
   $To_g_anchor_ary_dim = 0;
   $To_g_anchor_ary = array( label_name => array(), label_text => array());
   
-  const vis_id_part_ary = 'vis_id_part_ary';
-  const invis_id_part_ary = 'invis_id_part_ary';
+  const noContentAry = 'noContentAry';
+  const contentAry = 'contentAry';
 
   $To_g_elements_hides_ary_dim = 0;
-  $To_g_elements_hides_ary = array( vis_id_part_ary => array( array()), invis_id_part_ary => array( array()));
+  $To_g_elements_hides_ary = array( noContentAry => array( array()), contentAry => array( array()));
 
   
   function To_f_elements_hides_link_simple_html( $label_name)
@@ -2367,11 +2367,11 @@
     if ((0 <= $a_elements_hides_ary_idx) && ($a_elements_hides_ary_idx < $To_g_elements_hides_ary_dim))
     {
       //print_r( $To_g_elements_hides_ary);
-      //print_r( $To_g_elements_hides_ary[vis_id_part_ary]);
-      //print_r( $To_g_elements_hides_ary[vis_id_part_ary][0]);
-      //print_r( $To_g_elements_hides_ary[vis_id_part_ary][0][0]);
-      //print_r( $To_g_elements_hides_ary[invis_id_part_ary][$To_g_elements_hides_ary_dim - 1][2]);
-      //print_r( To_f_get_type( $To_g_elements_hides_ary[invis_id_part_ary][$To_g_elements_hides_ary_dim - 1][2]));
+      //print_r( $To_g_elements_hides_ary[noContentAry]);
+      //print_r( $To_g_elements_hides_ary[noContentAry][0]);
+      //print_r( $To_g_elements_hides_ary[noContentAry][0][0]);
+      //print_r( $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][2]);
+      //print_r( To_f_get_type( $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][2]));
       
       echo $offset.'  <script type="text/javascript"> <!--'."\n";
       
@@ -2380,26 +2380,26 @@
       
       echo $offset.'    To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'base_name\'] = \'Elements-Hides-'.($a_elements_hides_ary_idx + 1).'\';'."\n";
       
-      echo $offset.'    To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'vis_id_part_ary\'] = ';
+      echo $offset.'    To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'noContentAry\'] = ';
       echo '[';
-      for ($i = 0; $i < count( $To_g_elements_hides_ary[vis_id_part_ary][$a_elements_hides_ary_idx]); $i++)
+      for ($i = 0; $i < count( $To_g_elements_hides_ary[noContentAry][$a_elements_hides_ary_idx]); $i++)
       {
-        echo '\'-'.($To_g_elements_hides_ary[vis_id_part_ary][$a_elements_hides_ary_idx][$i]).'\''.(($i + 1 < count( $To_g_elements_hides_ary[vis_id_part_ary][$a_elements_hides_ary_idx])) ? ',' : '');
+        echo '\'-'.($To_g_elements_hides_ary[noContentAry][$a_elements_hides_ary_idx][$i]).'\''.(($i + 1 < count( $To_g_elements_hides_ary[noContentAry][$a_elements_hides_ary_idx])) ? ',' : '');
       }
       echo ']';
       echo ';'."\n";
       
-      echo $offset.'    To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'invis_id_part_ary\'] = ';
+      echo $offset.'    To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'contentAry\'] = ';
       echo '[';
-      for ($i = 0; $i < count( $To_g_elements_hides_ary[invis_id_part_ary][$a_elements_hides_ary_idx]); $i++)
+      for ($i = 0; $i < count( $To_g_elements_hides_ary[contentAry][$a_elements_hides_ary_idx]); $i++)
       {
-        echo '\'-'.($To_g_elements_hides_ary[invis_id_part_ary][$a_elements_hides_ary_idx][$i]).'\''.(($i + 1 < count( $To_g_elements_hides_ary[invis_id_part_ary][$a_elements_hides_ary_idx])) ? ',' : '');
+        echo '\'-'.($To_g_elements_hides_ary[contentAry][$a_elements_hides_ary_idx][$i]).'\''.(($i + 1 < count( $To_g_elements_hides_ary[contentAry][$a_elements_hides_ary_idx])) ? ',' : '');
       }
       echo ']';
       echo ';'."\n";
       
       // #: Switch displaying to the state on like to have at the beginning. If it is not a bot.
-      echo $offset.'    To_f_elements_hides_switch( \''.(($To_g_DisplayHides_General_is) ? 'vis' : $switch_display).'\', To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'base_name\'], To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'invis_id_part_ary\']);'."\n";
+      echo $offset.'    To_f_elements_hides_switch( \''.(($To_g_DisplayHides_General_is) ? 'vis' : $switch_display).'\', To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'base_name\'], To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'noContentAry\'], To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'contentAry\']);'."\n";
       
       echo $offset.'  --> </script>'."\n";
       //echo "\n";
@@ -2491,11 +2491,11 @@
       else
         echo '';
       echo ';">'."\n";
-      $To_g_elements_hides_ary[vis_id_part_ary][$To_g_headline_last_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+      $To_g_elements_hides_ary[noContentAry][$To_g_headline_last_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
       $local_elements_hides_ele_num++;
-      //%!echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <h2 style="margin: 0; margin-left: 0px; padding: 0;"><a href="javascript:To_f_elements_hides_switch( \'vis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])" title="einblenden">'.$headline_text.'</a></h2> </td>'."\n";
-      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'vis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])" title="einblenden"><h2 style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
-      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'vis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Down.jpg" width="32" height="12" border="0" alt="einblenden" title="einblenden" align="right" style="margin: 0; padding: 0;"> </a> </td>'."\n";
+      //%!echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <h2 style="margin: 0; margin-left: 0px; padding: 0;"><a href="javascript:To_f_elements_hides_switch( \'vis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="einblenden">'.$headline_text.'</a></h2> </td>'."\n";
+      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'vis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="einblenden"><h2 style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
+      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'vis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Down.jpg" width="32" height="12" border="0" alt="einblenden" title="einblenden" align="right" style="margin: 0; padding: 0;"> </a> </td>'."\n";
       echo $offset.'  </tr>'."\n";
       
       // #: 'invis': With content.
@@ -2505,13 +2505,13 @@
       else
         echo '';
       echo ';">'."\n";
-      $To_g_elements_hides_ary[invis_id_part_ary][$To_g_headline_last_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+      $To_g_elements_hides_ary[contentAry][$To_g_headline_last_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
       $local_elements_hides_ele_num++;
       // #!: The anchor was moved into 'invis' "h2" to make the headline hide visible if jumped to.
-      //%!echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <h2 style="margin: 0; margin-left: 0px; padding: 0;"><a name="'.$headline_name.'"></a><a href="javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])" title="ausblenden">'.$headline_text.'</a></h2> </td>'."\n";
-      //%!echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a name="'.$headline_name.'"></a><a href="javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])" title="ausblenden"><h2 style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
-      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a name="'.$headline_name.'" href="javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])" title="ausblenden"><h2 style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
-      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Up.jpg" width="32" height="12" border="0" alt="ausblenden" title="ausblenden" align="right" style="margin-top: 0; padding: 0;"> </a> </td>'."\n";
+      //%!echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <h2 style="margin: 0; margin-left: 0px; padding: 0;"><a name="'.$headline_name.'"></a><a href="javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="ausblenden">'.$headline_text.'</a></h2> </td>'."\n";
+      //%!echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a name="'.$headline_name.'"></a><a href="javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="ausblenden"><h2 style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
+      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a name="'.$headline_name.'" href="javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="ausblenden"><h2 style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
+      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Up.jpg" width="32" height="12" border="0" alt="ausblenden" title="ausblenden" align="right" style="margin-top: 0; padding: 0;"> </a> </td>'."\n";
       echo $offset.'  </tr>'."\n";
       
       echo $offset.'</table>'."\n";
@@ -2526,7 +2526,7 @@
     else
       echo '';
     echo ';">'."\n";
-    $To_g_elements_hides_ary[invis_id_part_ary][$To_g_headline_last_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+    $To_g_elements_hides_ary[contentAry][$To_g_headline_last_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
     $local_elements_hides_ele_num++;
 
     //To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_headline_last_elements_hides_ary_dim - 1, $display);
@@ -2556,10 +2556,10 @@
     else
       echo '';
     echo ';">'."\n";
-    $To_g_elements_hides_ary[invis_id_part_ary][$To_g_headline_last_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+    $To_g_elements_hides_ary[contentAry][$To_g_headline_last_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
     $local_elements_hides_ele_num++;
     echo $offset.'      <td valign="baseline" style="margin: 0; padding: 0;">  </td>'."\n";
-    echo $offset.'      <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Up.jpg" width="32" height="12" border="0" alt="ausblenden" title="ausblenden" align="right" style="margin-top: 0; padding: 0;"> </a> </td>'."\n";
+    echo $offset.'      <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Up.jpg" width="32" height="12" border="0" alt="ausblenden" title="ausblenden" align="right" style="margin-top: 0; padding: 0;"> </a> </td>'."\n";
     echo $offset.'    </tr>'."\n";
     
     echo $offset.'  </table>'."\n";
