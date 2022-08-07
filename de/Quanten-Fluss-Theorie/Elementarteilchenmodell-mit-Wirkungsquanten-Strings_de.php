@@ -190,7 +190,7 @@
                       array(  jump_name => 'OM:FrQFT:Elementarteilchen:Photonen', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Massenträgheit entsteht in der FrQFT dadurch, dass sich die Struktur eines Teilchens durch einen Fluss von Wirkungsquanten ändern muss. Dieser Fluss, das Umbauen der Elementarteilchen, kostet Zeit. Diese Verzögerung ist Proportional zur Masse des Elementarteilchens. Denn je schwerer es ist, desto mehr Energie muss aufgewendet werden, dessen Bewegungszustand zu verändern, weil ein bestimmtes Verhältnis der Wirkungsquanten ausgetauscht werden muss. Dies führt auch zu den Erhaltungssätzen von Masse, Energie und Impuls.)',
                     '(• Ähnlich scheint es auch in der Heim-Theorie zu sein. Siehe Ordner: "Massenträgheit entspringt Strukturflüssen, wie in der FrQFT, die ART weiß dazu nichts zu sagen, außer das Machsche Prinzip - Burkhard Heim - Das neue Weltbild des Physikers - cd2v4-06")',
                     ))),

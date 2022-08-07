@@ -50,7 +50,7 @@
             'OM:NPYo:XXX-Notizen:MeditationAchtsamkeitTechniken',
               'XXX', 'Sc_f_Paragraph',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• \\quote{Die so genannte fokussierte Wahrnehmung beinhaltet, sich ausschließlich auf eine bestimmte Sinneswahrnehmung zu konzentrieren, etwa auf die eigene Atmung.} Siehe Spektrum Kompakt. Achtsamkeit und Empathie. 04.07.2016. Augenblick mal! (aus Gehirn und Geist, 11/2013) S. 4-12, hier S. 6.)',
                     '(• \\quote{Bei anderen Übungen beobachten die Teilnehmer, was in ihr Bewusstsein dringt und es anschließend wieder verlässt, Augenblick für Augenblick. Stellen Sie sich zum Beispiel vor, wie sich das ferne, langsam vorbeiziehende Heulen eines Martinshorns anhört. Anfangs ist die Sirene noch Teil eines großen Klangteppichs, dann wird sie zum lautesten Geräusch, um schließlich wieder in den Hintergrund zu treten. Gedanken, Gefühle und andere Emp ndungen können genauso an- und abschwellen, während wir ihrer gewahr werden. Schon der Religionsstifter Buddha Siddhartha Gautama (um 563–483 v. Chr.) warb für diese Meditationsform als einen Weg, die Achtsamkeit im Alltag zu steigern.} Siehe Spektrum Kompakt. Achtsamkeit und Empathie. 04.07.2016. Augenblick mal! (aus Gehirn und Geist, 11/2013) S. 4-12, hier S. 6.)',
                     '(• \\quote{… achtsamkeitsbasierte Stressreduktion (kurz: MBSR, von mindfulness-based stress reduction)} Siehe Spektrum Kompakt. Achtsamkeit und Empathie. 04.07.2016. Augenblick mal! (aus Gehirn und Geist, 11/2013) S. 4-12, hier S. 7-12.)',

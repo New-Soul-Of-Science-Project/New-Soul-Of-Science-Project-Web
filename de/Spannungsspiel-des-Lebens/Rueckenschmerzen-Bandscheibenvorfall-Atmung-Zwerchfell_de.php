@@ -14,7 +14,7 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(\\bold{Zwerchfellverspanung:})',
                     '(⋅ Gute Infos: \\jump[https://yoga-body.de/zwerchfell/]{}{yoga-body.de – ZWERCHFELL – DIE 1 WICHTIGE URSACHE FÜR SCHMERZEN IM GANZEN KÖRPER – TEST – IST DEIN ZWERCHFELL VERSPANNT?})',
                     '(⋅ Test: \\quote{Lege dich auf einen stabilen und festen Untergrund. Am Besten auf eine Matte am Boden. Du solltest lockere und bewegliche Hosen anhaben. Stelle die Beine an, die Füße stellst du da hin wo deine Knie vorher waren. Die Arme liegen ausgestreckt auf Schulterhöhe. Die Beine zusammen erst zu einen und dann zur anderen Seite komplett absinken lassen. Auswertung …} (\\jump[https://yoga-body.de/zwerchfell/]{Test_8211_Ist_dein_Zwerchfell_verspannt}{yoga-body.de – ZWERCHFELL – DIE 1 WICHTIGE URSACHE FÜR SCHMERZEN IM GANZEN KÖRPER – TEST – IST DEIN ZWERCHFELL VERSPANNT?}))',

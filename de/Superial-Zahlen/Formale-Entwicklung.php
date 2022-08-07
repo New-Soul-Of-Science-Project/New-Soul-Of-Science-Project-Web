@@ -133,7 +133,7 @@
                       //array(  jump_name => 'OM:SupNum:XXX', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '\\bold{XXX}',
                     '• XXX',
                     ))),

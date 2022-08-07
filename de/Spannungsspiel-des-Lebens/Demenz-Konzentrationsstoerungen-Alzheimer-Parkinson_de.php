@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Konzentrationsstörungen und Alzheimer gehören nicht unbedingt zu den Dementiellen Erkrankungen!)',
                     '(• Ein ganz anderer Blick auf Demenz: \\cite{Huether:RausAusDerDemenzFalle:2017}. Nonnen haben genau die gleichen demenziellen Degenerationen in ihren Gehirnen, sind aber zu ihren Lebzeiten fast nie dement.)',
                     '(• \\quote{Schlafmangel ist Stress und Stress ist eine Vorstufe, ein Hochrisikofaktor, für Demenz.} Siehe \\jump[https://kenfm.de/gunther-moll/][*Bearb]{}{KenFM im Gespräch mit: Gunther Moll („Hallo, hier spricht mein Gehirn“)}, Sek. 1:26:46.)',

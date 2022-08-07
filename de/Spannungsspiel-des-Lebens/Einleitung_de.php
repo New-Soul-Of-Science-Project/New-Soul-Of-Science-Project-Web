@@ -189,7 +189,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Einleitung:XXX', text =>
                                            
                 'Hypothese des Achtsamkeitsprozesses')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Die Antriebe stellen sich in unserem Leben als Emotionen dar, die einen dazu bewegen, etwas zu tun, zu handeln. Dies ist eine der Grundlagen des Achtsamkeitsprozesses.)',
                     ))),
                   array( 'text', array( text => array(

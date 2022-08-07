@@ -85,7 +85,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Von hier aus auf die Hauptseite verweisen: \\jumpname[*Bearb]{OM:SpaLeb:Achtsamkeitsprozess})',
                     ))),
                       
@@ -227,7 +227,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Pubertaet', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Eingriff beim Überschreiten der emotionalen und körperlichen Toleranz eines Schutzbedürftigen.)',
                     '(• Ursachen von und Brüche durch Partnerschaften.)',
                     '(• Außen- und Innensicht: Versuche ich überwiegend zu sehen, wie andere mich wahrnehmen und versuche ich denen zu gefallen, oder habe ich ein gutes Gefühl und Gespühr dafür in welchem Rahmen ich mich verhalten kann, ohne alzu sehr darüber zu reflektieren, was sehr anstrengend ist, vor allem, wenn ich nicht so viel Nervenkapazität habe, weil meine Nerven mit Anspannungen und Kreisgedanken belasstet sind. Sich locker zu machen entastet dann in vielerlei Hinsicht. (Siehe auch \\jumpname[*Bearb]{OM:SpaLeb:Psyche-und-Stimmung:Zwaenge}))',
@@ -273,7 +273,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Individualitaet-und-Gesellschaft', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Selbstschutz durch Filterung von Informationen. Eine übermäßige Filterung kann das Selbstmitgefühl unterdrücken, siehe Kapitel \\italic{\\jumpname[*Bearb]{OM:SpaLeb:Psyche-und-Stimmung:Selbstmitgefuehl}}.)',
                     '(• Im Rahmen des Selbstschutzes wird auch eine Funktion des Bewusstseins deutlich. Wir scheinen uns vornehmlich dann verändern zu können, wenn uns Dinge bewusst werden; der Selbstschutz also teilweise aufgehoben wird.\\hidden{ (Es gibt Ähnlichkeiten mit der schwachen Kraft in der Physik. Denn sie ist als einzige für die Teilchenumwandlung verantwortlich, also einen strukturellen Veränderung, die nicht nur Anziehung oder Abstoßung ist.)} Der Filter, der dem Fokus auf „eine“ Sache zugrunde liegt, steurt, was ins Bewusstsein kommt. Dieser Filter kann sich aber auch an einer Sache ungünstigerweise festhaften, wie starken Schmerz beispielsweise. Siehe Kapitel \\italic{\\jumpname[*Bearb]{OM:SpaLeb:Meditation-Selbstakupressur}}.)',
                     '(• Das Bewusstsein ist im Yoga mit der Lenkung des Aufmerksamkeitsfokus verbunden, der auch mit der Veränderungsfähigkeit zu tun hat.)',
@@ -320,7 +320,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:BewusstseinWahrnehmung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Mitgefühl soll angeblich etwas anderes als Emphatie sein. Zwei verschiedene Netzwerke im Gehirn, sagt MPI Leipzig Frau Tania Singer in der Sendung Scobel vom 15.12.2016 \\jump[http://www.3sat.de/page/?source=/scobel/188236/index.html][*Bearb]{}{Die Kraft des Guten – Warum das egoistische Gen nur die halbe Wahrheit ist – Altruismus kann man lernen - und auch weiter kultivieren}.)',
                     '(• \\italic{Selbstschutz} (*SpaLeb:Selbstschutz) als Begriff hier einfügen.)',
                     '(• Mangelndes Selbstmitgefühl heißt auch mangelnde Selbstreflexion und übermäßiger psychischer Selbstschutz.)',
@@ -388,7 +388,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Selbstmitgefuehl:XXX', text =>
                                            
                 'Anpassungsverhalten (Normopathie)')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Es gibt einen Zusammenhang zwischen Anpassungsverhalten (Normopathie), Ängsten, Depressionen, und Körpertemperatur. Siehe das Zitat unten.)',
                     '(– Anpassungsverhalten (Normopathie) resultiert in \\jump[][*Bearb]{OM:SpaLeb:Psychosomatik-Stress:EinatemreflexAtemunterdrueckung}{Atemunterdrückung}, also ggf. \\jump[][*Bearb]{OM:SpaLeb:Psychosomatik-Stress:EinatemreflexAtemunterdrueckung}{Zwerchfellverspannung}, sie das Zitat unten. Man möchte nicht weiter auffallen, um sich selbst zu schützen und Auseinandersetzungen mit der Umwelt zu vermeiden. Ich vermute, dass dieses Verhalten aus einem Erstarrungsreflex bei Gefahr resultiert. Der Hase duckt sich bei Gefahr ins Gras und unterdrückt seinen Atem, damit er nicht entdeckt wird.)',
                     '(– Normopathie\\footnote[*Bearb]{Vgl. \\cite{wiki:Normopathie:2017}.}: Literatur und Verweise siehe \\cite{wiki:Normopathie:2017}.)',
@@ -407,7 +407,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Selbstmitgefuehl:XXX', text =>
                                            
                 'Entstehung von (Ver-)Spannungen, Antrieben und Bedürfnissen')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Die Suche nach einer Lösung der emotionalen Desorientierung ist Ausdruck von vielen neuen Bedürfnissen und Antrieben.'."\n".
                     'Dabei ist die Suche selber ja schon eine getriebene.)',
                     '(• Der durch das Trauma ausgelöste Bruch des Selbstschutzes in der Seele und Psyche des Menschen äußert sich auch in veränderter Körperspannung.'."\n".
@@ -424,7 +424,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Selbstmitgefuehl:XXX', text =>
                                            
                 'Persönlickeitsentwicklung')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Die Persönlickeitsentwicklung kann gestört werden.'."\n".
                     'Durch die Traumatisierung und deren Folgen kann das „Erwachsenwerden“ gestört sein, während der Körper reift. Warum?)',
                     ))),
@@ -506,7 +506,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Selbstmitgefuehl', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Verspannungen und Kreisgedanken kosten Nerven!)',
                     '(• Verspannungen und Kreisgedanken sind Blockaden des Entwicklungsflusses des Lebens.)',
                     '(• Das Grundgerüst wird beim Menschen von den Knochen gegeben. Darüber liegt das halb flexible Netzwerk der Faszien (Faszi[e]nierend!). Erst darauf aufsetzend kommt das flexiblere Netzwerk der Muskeln. (Sekundärliteratur: Vgl. Hania Luczak, Der innere Halt, Bindegewebe, das verkannte Organ, Faszinierende Faszien, in: GEO, Die Welt mit anderen Augen sehen, 02/2015, 96-119.))',
@@ -554,7 +554,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Verspannungen-Kreisgedanken', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Nach dem Prinzip von Djet und Neheh lassen sich psychische Probleme nicht wegdrücken, ohne sie in einem Neheh-Strudel zu fangen, im dem ein „Dämon“ kreiert wird. Drückt man diesen immer weiter weg und erlaubt keine „Bearbeitung“, dann wird es zur Verdrängung, bis zur Schitzophrenie, während seine innere Dynamik immer weiter zu nimmt; seine Existenz wird immer manifester.)',
                     '(• Man zwängt den Fluss des Djet aus \\jump[][*Bearb]{XXX}{Selbstschutz} in einen Raum, wo er automatisch einen Wirbel bildet und eine Art Existenz erzeugt, ein Eigenleben. Es folgt eine „Versteinerung“, die sich auch im Körper des Betroffenen zeigt, die hier aber nicht wirkliche Ruhe ist, sondern quasi gebändigtes, eingeschlossenes Feuer.)',
                     '(• Probleme sollten nach dem Aikido-Prinzip (um-)gelenkt und kanalisiert werden. Kontrollieren kann man sie nicht wirklich, weil sie transzendent im Fluss sind und sich dieser nicht aufhalten oder zur Ruhe bringen lässt. Unser Bild, dass es wirkliche Ruhe gäbe, ist nicht realistisch und führt daher zu falschen Vorstellungen und Schlussfolgerungen. Verweis auf \\jumpname[*Bearb]{OM:SpaLeb:Koerperliche-und-seelische-Existenz:Spannungsbiologie:Quantenbiologie}.)',
@@ -565,7 +565,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:XXX:XXX', text =>
                                            
                 'Sich im Widerstand spüren')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Mangelndes \\jump[][*Bearb]{OM:SpaLeb:Psyche-und-Stimmung:Selbstmitgefuehl}{Sich-SelberSpüren} verleitet dazu, im Fühlen von \\jump[][*Bearb]{OM:SpaLeb:Koerperspannung:Widerstand}{körperlichen} und \\jump[][*Bearb]{OM:SpaLeb:Psyche-und-Stimmung:Widerstand-und-Umlenkung}{psychischen Widerständen} einen Ersatz zu suchen und zu finden. Dies fördert ein Aufbau dieser Widerstände, weil man sie nur so gut fühlen kann,)',
                     '(• Das Auf-Der-Erde-Stehen ist im vollen Widerstand zu sein und sich so zu spüren. Das Gehen wird ist eine Mischung aus sich spüren und dich flexibel Bewegen, die Umgebung erkunden. Es ist ein Tuschieren und nicht nur im Widerstand zu sein. Dieses Körperliche Beispiel lässt sich auf die Psyche übertragen und ist mit ihr auch zutiefst verbunden. Sich in auswegslose Situationen zu begeben führt dazu, sich in diesem Widerstand zu spüren und die Situation dann ungern zu verlassen. Denn es gibt Sicherheit und das Verlassen gibt Unsicherheit. Doch Leben ist eher die Sackgasse zu verlassen und sich tuschierend an Widerständen, die sich im Leben ergeben, zu reiben und sich dadurch zu orientieren. Die Sackgasse gibt wenig Orientierung.)',
                     ))),
@@ -598,7 +598,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Widerstand-und-Umlenkung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Verweis auf Kapitel \\italic{\\jumpname[*Bearb]{OM:SpaLeb:Glueck:Resilienz}}.)',
                     '(• Resilienz hat etwas mit der eigenen Positionierung im Leben zu tun. Wie es uns geht und hängt stark davon ab, welche Wertebilder wir in uns tragen, was wir erreichen oder haben wollen(!). Siehe Vortrag und Buch von Albert Kitzler (\\jump[http://www.massundmitte.de][*Bearb]{}{Maß und Mitte}), »Denken heilt!« in der modern life school vom 17.02.2017 (siehe meine Notizen).)',
                     '(• Nur wer sich seiner eigenen Schwäche bewusst ist und sie auch mal zulassen, zugeben, ertragen und leben kann, der kann auch ein starkes Selbstbewusstsein entwickeln. Ich weiß, dass ich nichts weiß. Ich war ein Kind und werde es auch immer bleiben, aber ich werde erwachsener. ;-) Das nennt man Ambiguitätstolleranz und ist eine ganz wichtige Sache im Leben.)',
@@ -672,7 +672,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Schonhaltung:XXX', text =>
                                            
                 'Süchte und Drogen \\color{*Bearb}{(ähnlich bei Körperspannung)}')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Alkohol)',
                     '(• eigentlich alle Drogen manipulieren die psychische und die Körperspannung)',
                     '(• Internetsucht als psychische Schonhaltung)',
@@ -703,7 +703,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Schonhaltung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Die Frage ist also, wie bekommt man die Fesseln so verschoben, dass sie unterstützen und nicht behindern?)',
                     '(• Dieses Kapitel auch ähnlich zu Körperspannung)',
                     '(• Dieses Kapitel auch ähnlich zu Körperspannung)',
@@ -755,7 +755,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:In-Fesseln-tanzen', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Der untergründige durch unseren Selbstschutz oder Unwichtigkeitsfilter ausgeblendete \\jump[][*Bearb]{OM:SpaLeb:Psychosomatik-Stress}{körperliche Schmerz} oder \\jump[][*Bearb]{OM:SpaLeb:Psyche-und-Stimmung:Selbstmitgefuehl}{seelische Schmerz} hat massiven Einfluss auf unser Wohlbefinden. Wir können diesen Bezug aufgrund des Ausgeblendet-Seins nur sehr schwer herstellen. Dies könnte einer der wesentliche Gründe sein, warum Schmerzmittel Abusus so weit verbreitet ist. Es sind viel mehr Schmerzen vorhanden, als wir uns Bewusst sind, und so fällt auch die Erleichterung um einiges Größer aus, wenn wir Schmerzmittel nehmen, als wir gedacht hätten. Ein unbewusster Aha-Effekt, der einen tiefen Anker setzt und uns verleitet immer wieder darauf zurück zu greifen.)',
                     '(• Verspannungen und Angst kosten Nerven!)',
                     '(• Der übermäßig blockierende Selbstschutzfilter hat möglicherweise noch einen Effekt: Der Betroffenen kann nicht mehr so gut zwischen sich und anderen unterscheiden. Er macht seine Probleme und Bedürfnisse zu denen der Anderen und auch die der Anderen zu seinen. Dieses Phänomen soll Psychosen vorausgehen oder oft an ihnen beteiligt sein.)',
@@ -849,7 +849,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Schmerz', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Ob wir von einer Hektik überweltigt und getrieben werden oder von einem Fleckma gelähmt, das hängt mit der Struktur der Antriebe durch unsere Brüche zusammen. Ziehen viele davon in ähnliche Richtungen, dann wird es hektisch. Ziehen sie alles in ganz unterschiedliche, dann werden wir fleckmatisch.)',
                     '(• Ein Fleckma entsteht dann, wenn ich micht nicht für eine Richtung \\jump[][*Bearb]{OM:SpaLeb:Psyche-und-Stimmung:Entscheidungen}{entscheiden} kann.)',
                     ))),
@@ -883,7 +883,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:HektikFleckma', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Titel ändern in ›Stimmung und Wahrnehmung‹?)',
                     '(• Man erkennt, dass das Erleben und Empfinden von Situationen sehr stark von der eigenen Stimmung abhängig ist, daran, dass wenn man Yoga oder andere Entspannungstechniken anwendet, sich das Erleben und Empfinden sehr verändern kann.'."\n".
                     'Wie wir die Aussendungen unserer Umwelt Empfangen und Wahrnehmen und unser eigenes Verhalten Empfinden, hängt stark von unserem inneren Zustand ab.)',
@@ -938,7 +938,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Stimmung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Wahrheit wird auch im Kaptel \\italic{\\jumpname[*Bearb]{OM:SpaLeb:Psyche-und-Stimmung:Wahrheit}} behandelt.)',
                     '(• Vertrauen kann nur aufgebaut werden, wenn man lernt, dass die Angst, die man in bestimmten Situationen hat, immer wieder unbegründet ist. Beispiel unsere Katze Kimmy, die man auf den Arm nimmt und gleich wieder absetzt, wobei Sie merkt, dass am Ende nichts Schlimmes passiert. So funktioniert auch SM.)',
                     ))),
@@ -1128,7 +1128,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Vertrauen', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Sehr anregender GEO Artikel zu diesem Thema: Schaefer, Jürgen. »Motivation.« Ach, mach doch was du willst! In GEO 09/2015, 116-130.)',
                     '(• Dies spielt in der \\jump[][*Bearb]{OM:SpaLeb:Psyche-und-Stimmung:Musse}{Muße} eine Rolle.)',
                     ))),
@@ -1172,7 +1172,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Motivation', type => 'back'),
                     )),
 
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Zwängige Menschen versuchen im Wellengang gerade Linien zu schwimmen. Wenn sie begreifen, dass die Welle sie nur im Kreis bewegt und gar nicht von ihrem Ziel abbringt, dann können sie merken, dass sie in einer Schlangenlinie viel leichter zum Ziel kommen.)',
                     ))),
                     
@@ -1245,7 +1245,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Zwaenge:XXX', text =>
                                            
                 'Druck von Außen')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Das Nein-Sagen)',
                     '(• Außen- und Innensicht: Versuche ich überwiegend zu sehen, wie andere mich wahrnehmen und versuche ich denen zu gefallen, oder habe ich ein gutes Gefühl und Gespühr dafür in welchem Rahmen ich mich verhalten kann, ohne alzu sehr darüber zu reflektieren, was sehr anstrengend ist, vor allem, wenn ich nicht so viel Nervenkapazität habe, weil meine Nerven mit Anspannungen und Kreisgedanken belasstet sind. Sich locker zu machen entastet dann in vielerlei Hinsicht. (Siehe auch \\jumpname[*Bearb]{OM:SpaLeb:Psyche-und-Stimmung:Individualitaet-und-Gesellschaft}))',
                     ))),
@@ -1341,7 +1341,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Abwechslung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Dies spielt in der \\jump[][*Bearb]{OM:SpaLeb:Psyche-und-Stimmung:Motivation}{Motivation} eine Rolle.)',
                     ))),
                       
@@ -1469,7 +1469,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Wahrheit', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Es ist auch wichtig, einen Raum der Möglichkeiten zu schaffen und zu erhalten.)',
                     '(• Ambiguitätstoleranz kostet Nerven!)',
                     '(• Fragestellung: Gestallte ich aktiv mein Leben oder lasse ich alles auf mich zukommen.)',
@@ -1505,7 +1505,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Ambiguitaetstoleranz', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Siehe auch \\italic{\\jumpname{OM:SpaLeb:Vor-PerspektivW-AmbiguitaetsT-Entscheid-Demokra}}.)',
                     '(• Die Entscheidung ist der Prozess, der die Ambiguität von „Wahrheiten“ oder Möglichkeiten auflöst und den Raum, den diese aufspannen, reduziert und damit die Situation vereinfacht und übersichtlicher macht.)',
                     '(• Jeder Entscheidung geht also eine Ambiguität voraus, die man einen Moment aushalten muss. Wenn man die nicht aushalten kann, dann kann man auch nichts entscheiden.)',
@@ -1581,7 +1581,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:GeschenkVerlust', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Denken und Fühlen sind zwei Seiten der selben Medaile. Ist es ein Dualismus? Denken und Fühlen sind nichts getrenntes, denn zu einem Gedanken entsteht immer ein Gefühl und zu einem Gefühl auch ein Gedanke. Es ist eher, als wenn es zwischen beidem hin und her schwingt.)',
                     '(• Der \\italic{Denk-Achtsamkeitsprozess} ist der Ausdruck vom Denken, als Handlung, und Fühlen und ist vermutlich mit der Existenz von einer mehr rationalen und einer mehr emotionalen Gehirnhälfte verbunden. Denn beim \\jump[][*Bearb]{OM:NPYo:Einleitung:ErkenneDichSelbst:Achtsamkeitsprozess}{Achtsamkeitsprozess} geht es um ein Ping-Pong-Spiel zwischen meiner (bewusst kontrollierten) Handlung und dem Gefühl, das diese Handlung und ihre Folgen hervorbringen. Das Ping-Pong-Spiel ist demnach in einer sich den Ball zuspielenden Schwingung zwischen den Gehirnhälften zu vermuten.)',
                     '(• Entscheidungen fällen: Ich habe einen (Probe-)Gedanken und bekomme dazu ein (Probe-)Gefühl. Zu diesem neuen Gefühl bekomme ich wieder einen neuen Gedanken und so weiter. So gibt einem das Wechselspiel zwischen Denken und Fühlen, als theoretische Probehandlung, die Möglichkeit diese Handlung durchzuspielen, bevor man sie in die Tat umsetzt. Ich kann die mögliche Tat vorab auf mögliche Konsequenzen reflektieren. \\jump[][*Bearb]{OM:SpaLeb:Psyche-und-Stimmung:Verspannungen-Kreisgedanken}{Kreisgedanken} haben diese Funktion, sollten nur nicht zum Zwang werden.)',
@@ -1697,7 +1697,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Notizen:XXX', text =>
                       
                 'Diskussion')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Vergleich mit der stoischen Philosophie oder Physik (\\jump[https://de.wikipedia.org/wiki/Stoa]{}{Stoa} oder auch stoischen Lehre vom Tonos(?)\\hidden{Julius (Smythies, 30620608) von PlanetRomeo hat mich darauf aufmerksam gemacht}): Es gibt dort tatsächlich einige Ähnlichkeiten oder mögliche Übereinstimmungen, die man Diskutieren kann.)',
                     '(• Notiz: Ich habe den Eindruck, dass ich weniger träume, wenn ich gestresster bin.)',
                     '(• Notiz: Ein Gespräch mit Tom über die Narkose seines Vaters und dessen Durchgangssyndrom macht die Betrachtung von Narkosen im Licht des Spannungsbiologie interessant. Bei Narkosen werden häufig unwillentlich oder auch willentlich Regelprozesse des Körpers, wie beispielsweise der Blutdruck oder der Blutzucker, in einen Normbereich verschoben oder zumindestens stark verändert, die schon seit Jahren oder Jahrzenten neben der Norm laufen. Laufen Regelprozesse neben der Norm, so hat dies sicherlich auch starken Einfluss auf andere mit ihnen gekoppelte Regelprozesse, die bei Veränderungen dann durcheinander geraten könnten oder in einen schockhaften Zustand kommen. Auch psychische und muskaläre oder fasziale Verspannungen werden sich durch eine Narkose verändern, was nach meinen Erfahrungen starke psychische und körperliche Belastungen zur Folge haben kann: Verarbeitungsträume können auftreten. Starkes Schwitzen auch. Schmerzen können zum Vorschein kommen. Schockhafte Zustände können auftreten. Man fühlt sich zerschlagen, etc.. Es ist sicher interessant dies zu diskutieren und als Arzt oder Anestesisten zu berücksichtigen.)',

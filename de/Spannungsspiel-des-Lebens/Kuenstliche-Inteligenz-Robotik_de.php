@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(\\bold{Vertrauensproblem:})',
                     '(• Ein sehr großes Problem, was wir mit KI vermutlich erleben werden ist ein Vertrauensproblem.)',
                     '(• Dies gilt ganz besonders für Roboter. Der Mensch ist so evolutionär konstruiert, dass er durch seine Körpersprache, seine Stimme und ganz besonders über sein Gesicht etwas über sich selbst verrät, was er nicht bewusst und schon gar nicht kurzfristig steuern kann. Dies hat die Evolution nicht zufällig eingefädelt!)',
@@ -72,7 +72,7 @@
                       array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:AchtsamkeitsprozesGrundlLeben', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),
                       

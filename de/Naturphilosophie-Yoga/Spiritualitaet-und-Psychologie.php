@@ -340,7 +340,7 @@
                       array(  jump_name => 'OM:NPYo:Spiritualitaet-Psychologie', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• XXX',
                     ))),
                       

@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '\\bold{Schwarze Löcher}',
                     '• Logischer Bruch in der ART:',
                     '– Wenn sich die Gravitationswellen und die Gravitationswechselwirkung nur mit Lichtgeschwindigkeit im Raum ausbreiten können, wie kann dann die Gravitation, die der Singularität hinter dem Ereignishorizont entspringt, dem Schwarzen Loch durch den Ereignishorizont entkommen, wenn es das Licht nicht kann? Ein Schwarzes Loch dürfte demnach in der ART keine Gravitation haben! Es fehlt jedenfalls die Wechselwirkung zwischen dem Inneren des Schwarzen Lochs und der Umgebung, welche dann ja erst die Raumzeitkrümmung entstehen lassen kann, welche in der ART der gravitativen Wirkung des Raums zugrunde liegt.',

@@ -565,7 +565,7 @@
                       array(  jump_name => 'OM:SpaLeb:Gesichtsausdruck:YogaTantra', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• XXX',
                     ))),
                       
@@ -597,7 +597,7 @@
                       array(  jump_name => 'OM:SpaLeb:Gesichtsausdruck:SozialeKomponente', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Viele Männer haben von Natur aus einen Bart.',
                     '• Warum tragen BankräuberInnen ein Tuch über die Mundpartie oder eine Maske.',
                     '• Dass viele Primaten keine oder nur wenig Haare im Gesichtsfeld haben bedeutet, sie zeigen Gesicht. Ein Hinweis, dass die Hypothese stimmt, dass sie und wir darauf angewiesen sind, die Mimik des anderen lesen zu können, weil sich im Gesicht unsere aktuelle Stimmung und damit unser aller Achtsamkeitsprozess widerspiegelt.',

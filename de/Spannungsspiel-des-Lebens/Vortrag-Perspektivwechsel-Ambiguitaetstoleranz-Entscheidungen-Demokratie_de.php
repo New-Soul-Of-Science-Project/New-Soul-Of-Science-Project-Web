@@ -268,7 +268,7 @@
                       //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),*/
                       
@@ -462,7 +462,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Vor-PerspektivW-AmbiguitaetsT-Entscheid-Demokra:XXX', text =>
                                            
                 'Gibt es dann so etwas wie eine absolute Realität oder Wahrheit oder Objektivität?')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                       '(• Gibt es den einen wahren Standpunkt, die eine wahre Perspektive?)',
                     ))),
                   array( 'text', array( text => array(

@@ -1069,7 +1069,7 @@
                       array(  jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:FormBewegRaum', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     // '• XXX',
                     ))),
                       
@@ -1132,7 +1132,7 @@
                       array(  jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:DefinitionVonSubraeumen', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     // '• XXX',
                     ))),
                       
@@ -1210,7 +1210,7 @@
                       array(  jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:XXX', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     // '• XXX',
                     ))),
                       

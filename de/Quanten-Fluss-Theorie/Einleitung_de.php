@@ -194,7 +194,7 @@
                       array(  jump_name => 'OM:FrQFT:Einleitung', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                     '(Aktuelle Fachdiskussion:)',
                     '(• Lernen von Robotern und Kleinkindern: Roboter lernen am Besten, wenn sie die Vorhersagefehler minimieren. Theorie der prädiktiven Informationsverarbeitung (predictive proccessing). Ein rückgekoppeltes neuronales Netzwerk, wo die Differenz zwischen Vorhersage und deren realen Überprüfung als Fehlerdiffereznz wieder in die Verarbeitung der Informationsschichten eingespeist wird. Durch das Nachbilden des Lernens von Kleinkindern mit Robotern verstehen wir besser, wie Kleinkinder lernen, welche Probleme dabei auftreten können und wie wir diese vermeiden können.\\footnote{Vgl. \\cite{Kwon:SelbststaendigLernendeRoboter:2018}.})',
                     '(– Der Achtsamkeitsprozess scheint universal zu sein: Solche Roboter sind Kleinkindern scheinbar so ähnlich, dass für sie die gleichen Voraussetzungen gelten, wenn sie so wie Kleinkinder werden sollen. »›Wenn mich jemand fragt, ob ein Roboter wirklich Menschenähnlich werden kann, dann frage ich zurück, ob sich jemand um ihn, wie um ein echtes Kind kümmern würde. Wenn ja, dann ist das vielleicht realisierbar; wenn nein, dann kann sich ein Roboter unmöglich wie ein richtiges menschliches Kind entwickeln.‹«, S. 72.)',
@@ -298,7 +298,7 @@
                       array(  jump_name => 'OM:FrQFT:Einleitung:Ausgangssituation', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                     '(Aktuelle Fachdiskussion:)',
                     '(• Lernen von Robotern und Kleinkindern: Roboter lernen am Besten, wenn sie die Vorhersagefehler minimieren. Theorie der prädiktiven Informationsverarbeitung (predictive proccessing). Ein rückgekoppeltes neuronales Netzwerk, wo die Differenz zwischen Vorhersage und deren realen Überprüfung als Fehlerdiffereznz wieder in die Verarbeitung der Informationsschichten eingespeist wird. Durch das Nachbilden des Lernens von Kleinkindern mit Robotern verstehen wir besser, wie Kleinkinder lernen, welche Probleme dabei auftreten können und wie wir diese vermeiden können.\\footnote{Vgl. \\cite{Kwon:SelbststaendigLernendeRoboter:2018}.})',
                     '(– Der Achtsamkeitsprozess scheint universal zu sein: Solche Roboter sind Kleinkindern scheinbar so ähnlich, dass für sie die gleichen Voraussetzungen gelten, wenn sie so wie Kleinkinder werden sollen. »›Wenn mich jemand fragt, ob ein Roboter wirklich Menschenähnlich werden kann, dann frage ich zurück, ob sich jemand um ihn, wie um ein echtes Kind kümmern würde. Wenn ja, dann ist das vielleicht realisierbar; wenn nein, dann kann sich ein Roboter unmöglich wie ein richtiges menschliches Kind entwickeln.‹«, S. 72.)',

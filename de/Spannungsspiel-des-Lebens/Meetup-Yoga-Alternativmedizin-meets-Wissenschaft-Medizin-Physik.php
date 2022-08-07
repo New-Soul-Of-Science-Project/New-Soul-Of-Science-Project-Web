@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                     //'(\\bold{XXX:})',
                     '(• Meetup: \\jump[https://www.meetup.com/de-DE/Yoga-Alternativmedizin-meets-Wissenschaft-Medizin-Physik/]{}{Yoga, Alternativmedizin meets Wissenschaft, Medizin, Physik})',
                     ))),*/
@@ -58,7 +58,7 @@
                       //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
                     )),
                       
-                  //array( 'notice', array( Display => 'vis', text => array(
+                  //array( 'notice', array( Display => 'showContent', text => array(
                   //  '(• XXX)',
                   //  ))),
                       

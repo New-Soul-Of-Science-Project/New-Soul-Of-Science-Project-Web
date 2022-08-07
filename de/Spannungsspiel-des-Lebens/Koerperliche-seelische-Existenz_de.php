@@ -260,7 +260,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz:RitualFortentwicklung:XXX', text =>
                       
                 'Freiheit und Unfreiheit/Gefangenheit – Djet und Neheh in der Psychologie und Gesellschaft')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Im Sinne Fromms entspricht Djet der Freiheit und Neheh der Unfreiheit/Gefangenheit/Abhängigkeit.\\footnote[*Bearb]{Vgl. \\cite{Fromm:DieFurchtVorDerFreiheit:1941}.} Allerdings ist es auch möglich Neheh als die Befreiung vom Chaos und der Unsicherheit zu sehen und Djet als das Joch des Chaos und der Unsicherheit. Hier wird der Yin und Yang Charakter von Djet und Neheh deutlich. Das Leben findet nach dem ›Spannungsspiel des Lebens‹ in einer gebrochenen Balance zwischen Freiheit und Unfreiheit statt. Es scheint im Moment, dass Fromm ebenfalls diese These in den Raum stellt, aber ich lese noch.)',
                     '(• Eine Interessante Fragestellung, die From aufwirft, ist: \\quote{Bedeutet Freiheit nur die Abwesenheit äußeren Drucks, oder bedeutet Freiheit auch das ›Vorhandensein‹ von etwas – und wenn ja, wovon?}\\footnote[*Bearb]{\\cite{Fromm:DieFurchtVorDerFreiheit:1941}, S. 11.})',
                     '(• Die Meinung Freuds, die Fromm wiedergibt, dass die gesellschaftliche Unterdrückung von Trieben Kultur hervorbringe,\\footnote[*Bearb]{Vgl. \\cite{Fromm:DieFurchtVorDerFreiheit:1941}, S. 14.} ist im Rahmen des Spannungspiels durchaus plausibel. Unterdrückung erzeugt Brüche, die zu neuen, kompensatorischen Antrieben führen. Diese können durchaus kultureller Natur sein, wie Filme, Malen, Musik oder Bücher.)',
@@ -557,7 +557,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz:SeeleIstVerhalten', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• \\quote{Mit Psyche wird somit heute vorwiegend die „subjektive“ oder „innere“ Erlebensseite des – im Ganzen auch Handeln und sonstiges Reagieren einschließenden – Gegenstandsbereichs der Psychologie gemeint.}\\footnote[*Bearb]{\\cite{wiki:Psyche:2015}, Definition und Allgemeines.} Es ist die Selbstwahrnehmung des Ich.)',
                     '(• Das Spiegelbild zwischen Körper und Psyche ist im Dualismus als Interaktionistischer Dualismus beschrieben.\\footnote[*Bearb]{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Dualismus:2015}, Ontologischer Dualismus, Vielfalt ontologischer Dualismen, siehe Abbildung – sowie Substanzdualismen, Interaktionistischer Dualismus.} Achtung, die zweite Position des Psychophysischen Parallelismus ist gerade anders als bei mir!!!\\footnote[*Bearb]{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:PsychophysischerParallelismus:2015}.}',
                     '(• Die Psyche resultiert aus den Spannungszuständen des Gehirns. Das gilt auch für die Körperspannung. Deshalb gibt es dort Zusammenhänge, aber die genaue Herleitung ist noch zu suchen. Um diese Herleitung zu finden noch einmal in Ruhe \\jumpname[*Bearb]{OM:SpaLeb:Koerperliche-und-seelische-Existenz:SeeleIstVerhalten} lesen, im Besonderen ›Aristoteles und das Formprinzip‹.))',

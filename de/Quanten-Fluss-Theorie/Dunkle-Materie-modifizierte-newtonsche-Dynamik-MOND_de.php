@@ -17,7 +17,7 @@
 		    	<!  • XXX  >
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '!!! Seite muss abgeändert werden. Siehe folgende Bemerkung. !!!',
                     '\\bold{Abgrenzung – Abweichende Gravitation der FrQFT von anderen Ansätzen unterscheiden}',
                     '• Gravitationsbeschleunigung: In der FrQFT gibt es keine Abweichung bei niedriger Beschleunigung in der Gravitationsbeschleunigung (vgl. MOND-Theorie — vgl. \\jump[https://www.zeit.de/feature/rentnter-widerlegen-newton]{}{Zwölf Männer planen den großen Coup}), sondern entscheidend ist der große Raum, das große Vakuum-Volumen, in der Umgebungssphäre um die anziehende Masse. Im Falle der Gültigkeit der FrQFT sollte das GRAVI Experiment am DESY der zwölf Herren die normalen Gravitationsgesetze ergeben.',
@@ -259,7 +259,7 @@
             'OM:FrQFT:Dunkle-Materie:Berechnung-der-Vakuumgravitation',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
               array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Rotationskurve als Vorlage.\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 25.})',
                     ))),
                     

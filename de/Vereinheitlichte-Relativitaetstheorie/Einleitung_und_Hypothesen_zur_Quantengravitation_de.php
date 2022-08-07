@@ -154,7 +154,7 @@
                   array( 'headline', array( jump_name => 'OM:VRT:Einleitung:XXX', text =>
                       
                 'Ein Schritt in Richtung Vereinheitlichung der Physik \\\\ \\color{*TitleAdd}{– Konkretisierung des Teilchenmodells durch Bezüge zur Quantenphysik}')),
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                       '(• Warum diese Konkretisierung hier?)',
                       '(– Um zu zeigen welche Bezüge sich daraus automatisch zur Quantenphysik und damit zu Vereinheitlichung der Physik ergeben?!)',
                     ))),*/

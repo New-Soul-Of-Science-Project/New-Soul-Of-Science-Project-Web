@@ -192,7 +192,7 @@
                       array(  jump_name => 'OM:SpaLeb:Philosophie', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Der Selbstbezug des Begriffs Sinn und dessen Zusammenhang mit der Selbstwahrnehmung und darüber mit der Rückkopplung leitet ziemlich direkt zur Existenz aufgrund von Regelprozessen.)',
                     '(• Der Begriff Sinn macht erst Sinn, wenn wir seinen Selbstbezug und dadurch seine schöpferische Bedeutung verstehen.)',
                     '(– Berücksichtigen wir dies nicht, können wir seine Bedeutung und damit das Verstehen von Sinn nicht verstehen. Wir landen oder enden in endlosen Zirkeln und darüber möglicherweise in Verwirrung und Frustration.)',

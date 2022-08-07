@@ -12,7 +12,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                     '(• Natur beruht auf dynamischer Struktur. Ist das ganz allgemein eine Hypothese? Für die Physik liefert die Lichtuhr und die Heisenbergsche Unschärferelation einen Hinweis, dass es dort so gilt.)',
                     '(– Gehen wir in der Physik davon aus, dass jede Existenz aus einer Struktur von kleineren Existenzen, also Teilchen, besteht: Sind diese Strukturen nicht dynamisch, dann können wir nicht sehen und beurteilen, ob bestimmte Teilchen eine größere Existenz, ein größeres Objekt, formen. Dass kommt, weil wir keine Wechselwirkungen zwischen den kleineren Teilchen erkennen können, die das größere Objekt aus diesen kleineren Teilchen zusammenhalten. Denn erst die Bewegungsbahn der kleineren Teilchen würde dies verraten, würde verraten, welches der kleineren Teilchen zu dem großen Objekt gehören, welche an das große Objekt gebunden sind. Bewegung gibt es nur in dynamischen Strukturen und wenn es die Dynamik gibt, dann gibt es auch Zeit. Da alle größeren Objekte in einer hierarchischen Struktur so aufgebaut sind, die in diesem Sinne selbstähnlich und damit fraktal strukturiert ist, warum sollte es bei den Elementarteilchen dann enden?)',
                     '(• Es scheint so zu sein, dass der Djet-Neheh-Dualismus immer eine Rolle spielt, wenn es um Existenz geht.)',

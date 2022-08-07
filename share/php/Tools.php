@@ -8,7 +8,7 @@
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
-  //           20220807:  +:  "To_f_Paragraph", "fade-in-area":  Fix mix-up in comparison to the other cases of 'hideContent' and 'vis' in 'fade-in-area' and 'notice'.
+  //           20220807:  +:  "To_f_Paragraph", "fade-in-area":  Fix mix-up in comparison to the other cases of 'hideContent' and 'showContent' in 'fade-in-area' and 'notice'.
   //           20220702:  +:  "$To_g_Text_replace_ary":  '∘' -> '&#8728;' entry new.
   // v01.005:  20130713:  +:  "To_f_Paragraph":  Type "quote" is new.
   //           20130714:  +:  "To_f_Chapter_v1":  Is new.
@@ -2028,7 +2028,7 @@
         global $To_g_elements_hides_ary_dim, $To_g_elements_hides_ary;
         
         // #: Start with visibility, then it is visible, if JavaScript is not avialable. Then Google will see the text.
-        $start_display = 'vis';
+        $start_display = 'showContent';
 
         $To_g_elements_hides_ary_dim++;
 
@@ -2087,14 +2087,14 @@
           echo "\n";
 
           // #: Here "Display" have to be inverted, because (XXX?)!
-          To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'vis' : (($text[Display] == 'vis') ? 'hideContent' : 'vis')));
+          To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'showContent' : (($text[Display] == 'showContent') ? 'hideContent' : 'showContent')));
           
           echo "\n";
           echo $offset.'</div>'."\n";
         }
         else
         {
-          // #: 'vis': Without content.
+          // #: 'showContent': Without content.
           echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-invis" style="display: '.(($start_display == 'hideContent') ? '' : 'none').';">'."\n";
           $To_g_elements_hides_ary[noContentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
@@ -2137,8 +2137,8 @@
           echo "\n";
 
           //%! #: Here "Display" have to be inverted, because (XXX?)!
-          //%! To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'vis' : (($text[Display] == 'vis') ? 'hideContent' : 'vis')));
-          To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'vis' : $text[Display]));
+          //%! To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'showContent' : (($text[Display] == 'showContent') ? 'hideContent' : 'showContent')));
+          To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'showContent' : $text[Display]));
         }
 
         break;
@@ -2399,7 +2399,7 @@
       echo ';'."\n";
       
       // #: Switch displaying to the state on like to have at the beginning. If it is not a bot.
-      echo $offset.'    To_f_elements_hides_switch( \''.(($To_g_DisplayHides_General_is) ? 'vis' : $switch_display).'\', To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'base_name\'], To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'noContentAry\'], To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'contentAry\']);'."\n";
+      echo $offset.'    To_f_elements_hides_switch( \''.(($To_g_DisplayHides_General_is) ? 'showContent' : $switch_display).'\', To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'base_name\'], To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'noContentAry\'], To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'contentAry\']);'."\n";
       
       echo $offset.'  --> </script>'."\n";
       //echo "\n";
@@ -2467,7 +2467,7 @@
     $headline_text_short = To_f_Text_replace_html( $To_g_Text_replace_ary, null, $headline_text_short);
     
     // #: Start with visibility, then it is visible, if JavaScript is not avialable. Then Google will see the text.
-    $start_display = 'vis';
+    $start_display = 'showContent';
     
     $To_g_elements_hides_ary_dim++;
     $To_g_headline_last_elements_hides_ary_dim = $To_g_elements_hides_ary_dim;
@@ -2484,9 +2484,9 @@
       //%!echo $offset.'<table border="0" style="margin: 0; margin-left: 10px; margin-top: 10px; margin-bottom: 10px; padding: 0;"> <colgroup> <col width="668"> </colgroup>'."\n";
       echo $offset.'<table border="0" style="margin-top: 10px; margin-bottom: 10px; padding: 0;"> <colgroup> <col width="668"> </colgroup>'."\n";
       
-      // #: 'vis': Without content.
+      // #: 'showContent': Without content.
       echo $offset.'  <tr id="Elements-Hides-'.$To_g_headline_last_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: ';
-      if ($start_display == 'vis')
+      if ($start_display == 'showContent')
         echo 'none';
       else
         echo '';
@@ -2542,7 +2542,7 @@
     global $Glo_PathRel_back, $To_g_headline_ary_dim, $To_g_headline_ary, $To_g_headline_last_elements_hides_ary_dim, $local_elements_hides_ele_num, $To_g_elements_hides_ary_dim, $To_g_elements_hides_ary;
 
     // #: Start with visibility, than it is visible, if JavaScript is not aviable. Than Google will see the text.
-    $start_display = 'vis';
+    $start_display = 'showContent';
     
     //echo '  <br>'."\n";
     

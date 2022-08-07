@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),*/
                       
@@ -40,7 +40,7 @@
                       //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),*/
                       
@@ -96,7 +96,7 @@
                       //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),*/
                       
@@ -127,7 +127,7 @@
                       //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),*/
                       
@@ -158,7 +158,7 @@
                       //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),*/
                       
@@ -189,7 +189,7 @@
                       //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),*/
                       
@@ -233,7 +233,7 @@
                       //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),*/
                       
@@ -278,7 +278,7 @@
                       //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),*/
                       

@@ -691,7 +691,7 @@
                       //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),
                       
@@ -771,7 +771,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Definition: Die Situation ist emotional und physisch bestimmt.)',
                     ))),
                   array( 'text', array( text => array(

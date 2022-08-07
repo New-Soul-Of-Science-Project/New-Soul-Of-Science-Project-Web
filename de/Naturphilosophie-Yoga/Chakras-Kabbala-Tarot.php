@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '\\bold{Major Arcana (Fool\'s or Soul\'s Journey)}',
                     '\\bold{\\italic{Microcosmic Arcana (innere)}}',
                     '• Wurzel-Chakra oder Muladhara (Tarot: 10. Das Rad des Schicksals Karte, Wheel of Fortune Card)',
@@ -78,7 +78,7 @@
                       //array(  jump_name => 'OM:NPYo:XXX', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• XXX',
                     ))),
                       

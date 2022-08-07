@@ -392,7 +392,7 @@
                       array(  jump_name => 'OM:NPYo:HaTha', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),*/
                       
@@ -439,7 +439,7 @@
                       array(  jump_name => 'OM:NPYo:HaTha:WirZweiWesen', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),*/
                       

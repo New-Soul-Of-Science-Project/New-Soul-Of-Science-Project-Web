@@ -209,7 +209,7 @@
                       //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• XXX',
                     ))),
                       

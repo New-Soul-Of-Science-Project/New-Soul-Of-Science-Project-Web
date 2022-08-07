@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '\\bold{Spannungsspiel des Lebens}',
                     '• Heilung ist immer ein innerer Prozess und somit immer Selbstheilung.',
                     '• Gute Selbstheilung, und auch ein gutes Leben, ist nur möglich, wenn unsere biophysikalischen Regelprozesse gut funktionieren.',
@@ -76,7 +76,7 @@
                       //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     // '\\bold{XXX}',
                     // '• XXX',
                     ))),

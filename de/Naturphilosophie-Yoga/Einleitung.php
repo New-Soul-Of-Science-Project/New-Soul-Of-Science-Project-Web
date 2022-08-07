@@ -346,7 +346,7 @@
                   array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
                       
                 'Die Naturphilosophie des Yoga')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Verschieben auf eine neue Seite dieses Namens: Die Naturphilosophie des Yoga)',
                     '(• NaPhil-Yoga passt als Philosophie zu jedem Yoga-Stil.)',
                     ))),
@@ -471,7 +471,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                       
-                  array( 'notice', array( Display => 'vis', /*Title => 'Notizen zur eigenen Internetseite und Ausrichtung', */text => array(
+                  array( 'notice', array( Display => 'showContent', /*Title => 'Notizen zur eigenen Internetseite und Ausrichtung', */text => array(
                     '(• Warum gehören spirituelle Elemente dazu?)',
                     '(• Die Yoga-Stile und das NaPhil-Yoga.)',
                     '(• Verbindung der Asanas und des gesamten Yoga mit der Naturphilosophie.)',
@@ -567,7 +567,7 @@
                       array(  jump_name => 'OM:NPYo:Einleitung:YinYangKoerperspannung', type => 'back'),
                     )),
                     
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Bild vom Licht und vom Tunnel?)',
                     '(• Eine Metapher vom Inneren oder Dritten Auge und dem, was es sieht.)',
                     '(• Das Licht am Ende des Tunnels: Schauen was ich im Buchentwurf dazu geschrieben habe: Beschreiben, was das Licht und sein Tunnel sind. \\quote{Das „Innere Auge“, und ich würde es auch als \\italic{emotionales Auge} oder \\italic{geistig-emotionales Auge} bezeichnen, es wird im Mystisch-Esoterischen und in manchen Religionen auch unser „Drittes Auge“ oder „Geistiges Auge“ genannt – auch gibt es Bezüge zum „Auge der Vorsehung“ –, blickt auf das Licht und seinen Tunnel. Unser Inneres Auge schaut so auf unsere Vergangenheit, unsere Gegenwart, unser Hier- Und-Jetzt, und in unsere mögliche Zukunft. Diesen geistig-emotionalen Blick als Blick des Inneren Auge zu bezeichnen ist ein Bild, eine Metapher, dass ausdrücken soll, dass wir damit etwas erkennen, also „sehen“ können. Es ist in einem übertragenen Sinn eine Art von Auge. Der Achtsamkeitsprozess kann den Blick unseres Inneren Auges schärfen und dadurch das Leben auf eine Weise verändern und in Fluss oder in Gang bringen, die über- rascht. Sorgen, Ängste und Stress können so reduziert werden, lenken uns weniger ab und wir können einen anderen Blick auf uns, unsere Umwelt, unser Glück und unsere Probleme und Schwierigkeiten werfen.})',
@@ -1124,7 +1124,7 @@
                       array(  jump_name => 'OM:NPYo:Einleitung:Differenzierung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Das Kapitel könnte im Kontrast zur Problematisierung auch ›Leichtigkeit‹ heißen.)',
                     '(• Naturphilosophie-Yoga hat unter anderem im Auge, Blockaden wie Verspannungen und Kreisgedanken aufzulösen und sich das Leben in diesem Sinne leichter und angenehmer zu machen. Durch die Asanas soll körperlich unter anderem erreicht werden, nur die Muskeln für eine Stellung oder Bewegung zu benutzen, die dafür wirklich gebraucht werden. Wir setzen häufig, durch verschiedene Umstände, auch Muskeln ein, die eine Bewegung oder Stellung behindern. Eine Idee ist, wenn ich die richtigen Museln benutze, dann kann ich die anderen auch loslassen und dadurch die Behinderung lösen. Dies macht auch positives mit der Psyche. Es werden die körperlichen und psychischen Umstände beleuchtet, die zur Benutzung eher blockierender Muskulatur führen.)',
                     '(• Gucken, dass man sich in der ›Leichtigkeit‹ der federnden Körperspannung, zum Beispiel der \\jump[][*Bearb]{OM:NPYo:Einleitung:Atmung}{permanenten Atemspannung}, spürt.)',
@@ -1284,7 +1284,7 @@
                       array(  jump_name => 'OM:NPYo:Einleitung:Praxis-Achtsamkeit', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Ganz Ausatmen ist auch aus folgendem Grund wichtig: Wenn du einen Krug mit frischem Wasser füllen willst, dann würdest du doch auch nicht die Hälfte des alten Wassers drinne lassen.)',
                     '(• Bei der Yoga-Atmung wird die Atemmuskulatur und damit die Oberkörperstabilität dadurch aktiviert, dass über eine bewusste völlige Ausatmung die ringförmige Bauchmuskulatur extrem angespannt sowie das Zwerchfell gedehnt wird und die Einatmung unbewusst über den Einatemreflex durch leichten Sauerstoffmangel von selbst kommen gelassen wird. Dies entspricht genau dem, was für die Behebung der \\jump[][*Bearb]{OM:SpaLeb:Psychosomatik-Stress:Problemloesungsansaetze}{psychosomatischen Probleme des Atmens} in meinen Augen Sinnvoll ist: Die Einatmung bewusst zu kontrollieren wäre hierbei kritisch, denn dies verführt dazu Magenschmerzen durch Stress mit der Lockerung der ringförmigen Bauchmuskulatur beim Einatmen zu beheben, anstatt durch die Dehnung und Entspannung des Zwerchfells, wie es bei bewusster extremer völliger Ausatmung geschieht.)',
                     '(• Bei der Yoga-Atmung (und besonders bei der Gesangsatmung) scheint mir wichtig, das beim Einziehen des Bauchs nur die ringförmige Bauchmuskulatur an der Seite voll/stark angespannt ist und benutzt wird. Die glatte, senkrechte Bauchmuskulatur in der Mitte des Bauchs ist etwas locker aber federnd angespannt, um den Oberkörper zu balancieren oder beim Singen federnd zu schwingen. Damit das beim Einatmen so bleiben kann, und nicht die glatte auch angespannt wird, ist es wohl sehr Hilfreich, den Anus/Beckenboden (Mulabandha(Verweis)) leicht anzuziehen. Die ganze Einatmung bleibt der am stärksten eingezogene Punkt der Bauchnabel (Uddiyanabandha(Verweis)).)',
@@ -1339,7 +1339,7 @@
                       array(  jump_name => 'OM:NPYo:Einleitung:Praxis-Atmung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Bei den Asanas geht es darum, die Muskulatur zu benutzen, die ich für diese brauche, und die anderen Muskeln mehr zu entspannen:)',
                     '(– Die Stimmungsspannung im Rumpf, die Atem- und Oberkörperbalancespannung, und im Kopf ermöglichen es die Glieder, die ich gerade nicht brauche, locker zu lassen. Dies funktioniert sogar im Schlaf.)',
                     '(– Das ist ein gleichzeitiges Zulassen und Leben von Stärke und Schwäche. Wer nur stark sein will, der benutzt zu viele Muskeln auf einmal, verspannt sich insgesamt zu doll und blockiert sich. Die Energieausnutzung ist dann auch nicht optimal.)',

@@ -17,7 +17,7 @@
 
 		    	<!  • Inhaberdaten  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'vis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'showContent',
             'OM:FrQFT:Impressum:Inhaberdaten',
               '', 'Sc_f_Paragraph',
                 array(
@@ -62,7 +62,7 @@
 
 		    	<!  • Beteiligung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'vis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'showContent',
             'OM:FrQFT:Impressum:Beteiligung',
               '', 'Sc_f_Paragraph',
                 array(
@@ -87,7 +87,7 @@
 
 		    	<!  • Soziale Netzwerke, Foren  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'vis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'showContent',
             'OM:FrQFT:Impressum:Netzwerke',
               '', 'Sc_f_Paragraph',
                 array(
@@ -104,7 +104,7 @@
 
 		    	<!  • Crowdfunding Spenden  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'vis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'showContent',
             'OM:FrQFT:Impressum:Spenden',
               'Bitte unterstützen Sie mich bei meiner Arbeit', 'Sc_f_Paragraph',
                 array(
@@ -182,7 +182,7 @@
 
 		    	<!  • Spender und Unterstützer  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'vis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'showContent',
             'OM:FrQFT:Impressum:Supporter',
               '', 'Sc_f_Paragraph',
                 array(
@@ -202,7 +202,7 @@
 
 		    	<!  • Haftungshinweis  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'vis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'showContent',
             'OM:FrQFT:Impressum:Haftungshinweis',
               '', 'Sc_f_Paragraph',
                 array(
@@ -227,7 +227,7 @@
 
 		    	<!  • Copyrights und Lizenzen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'vis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'showContent',
             'OM:FrQFT:Impressum:CopyrightLizenz',
               '', 'Sc_f_Paragraph',
                 array(

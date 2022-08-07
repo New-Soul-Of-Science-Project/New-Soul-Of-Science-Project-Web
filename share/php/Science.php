@@ -879,7 +879,7 @@
             $Sc_g_equation_list_SpaceBefore, $Sc_g_equation_list_SpaceAfter, $Sc_g_equation_list_LineDistance;
 
     // #: Start with visibility, than it is visible, if JavaScript is not aviable. Than Google will see the text.
-    $start_display = 'vis';
+    $start_display = 'showContent';
     
     $display_is = true;
     $local_elements_hides_ele_num = 1;

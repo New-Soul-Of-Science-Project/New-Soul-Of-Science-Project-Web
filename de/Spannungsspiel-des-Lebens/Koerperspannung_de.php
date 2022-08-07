@@ -134,7 +134,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperspannung:Fortentwicklung-und-Stabilisierung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Gundheitliche Aspekte: Allgemein gesundheitlicher Zustand, körperlich, psychisch, seelisch. Zusammenhang zwischen Faszien und Immunsystem)',
                     ))),
                       
@@ -252,7 +252,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperspannung:DasAnatomieMenschchen', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Wohl ohne Ausnahme\\footnote[*Entwick]{\\color{*Entwick}{Es ist mir bisher keine Ausnahme bekannt, ich möchte aber ausdrücklich nicht ausschließen, dass es diese gibt. Wer diese Ausnahme kennt, teile mir diese bitte mit.}} gibt es zu jeder Muskulatur eine Gegenmuskulatur, einen Antagonisten\\color{*Bearb}{(Verweis)}.)',
                     '(•o Die Gegenspieler im Bewegungsapparat stehen in ständiger Gegenspannung zueinander. Die vermittelt sich meist über Knochen und Gelenke und ist durch Federung in den verbindenden Bändern flexibilisiert und mit strammem Spiel versehen. Es ist aber eben kein loses Spiel, denn soll es nicht schlackern, dann muss die flexible Struktur beständig elastisch vorgespannt sein.)',
                     '(• Die beständig elastisch Vorgespannung der flexiblen Struktur muss es so auch in der Atemspannung und Oberkörperbalancespannung geben, was bisher wohl nicht so erkannt wurde.)',
@@ -372,7 +372,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperspannung:Atemspannung-und-Oberkoerperbalance', type => 'back'),
                     )),
 
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Die Bewegung des Gehens ist der (Symmetrie-)Bruch des Körperwiderstandes des Stehens gegen die Gravitation. Eine dem Aikido ähnliche Umlenkung von Kräften.)',
                     '(• Bewegung hat etwas mit dem Brechen des Widerstandes zu tun. Der Druck wird Aikido mäßig umgelenkt.)',
                     '(• \\jump[][*Bearb]{OM:SpaLeb:Koerperspannung:Verspannungen}{Verspannungen} haben per se einen negativen Einfluss auf die Haltung und den Bewegungsablauf und führen so zu Fehlbelastungen und ggf. zu Fehlabnutzungen der Gelenke.)',
@@ -489,7 +489,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperspannung:Aengste-und-Selbstschutz', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Dieses Kapitel zu \\italic{\\jumpname[*Bearb]{OM:SpaLeb:Koerperspannung:Aengste-und-Selbstschutz}} und auf die Seite \\italic{\\jumpname[*Bearb]{OM:SpaLeb:Psychosomatik-Stress}} verteilen.)',
                     '(• Eine Schonhaltung behindert das Leben, denn Leben ist erleben.)',
                     '(• Selbstschutz durch körperliche Schonhaltungen, sogar bei Sorgen: Dadurch verrutschen Muskelspannungen im Körper.'."\n".
@@ -741,7 +741,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperspannung:Schonhaltung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Verspannungen verstärken sich im Laufe des Alters tendenziell. Aber nicht, weil man 50, 60 oder 70 ist, sonder weil der Teufelskreis immer länger auf einen einwirkt. Wenn zum Beispiel 10 Jahre ein Gift auf einen einwirkt, dann wird man in der Zeit schleichend immer kränker. Es ist aber nicht so entscheidend, ob ich 10, 30, 40 oder 50 Jahre alt bin. Es geht um die Dauer.)',
                     '(• Verweisen auf die Seite \\italic{\\jumpname[*Bearb]{OM:SpaLeb:Psychosomatik-Stress}}.)',
                     '(• Psychosomatik als Verspannungen durch \\jump[][*Bearb]{OM:SpaLeb:Koerperspannung:Aengste-und-Selbstschutz}{Selbstschutzreflexe}.)',
@@ -789,7 +789,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperspannung:Verspannungen', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Der Körperwiderstand ist eine Form sich selber spüren zu können – zu müssen. Das sich (nur) im Widerstand spüren gibt Sicherheit und eine Form der (Schein-)Orientierung – Sackgasse.)',
                     '(• Es ist von daher mit dem sich nicht selbst spüren der Psychologie verbunden und kann eine Ersatzhandlung sein.)',
                     '(• Es geht um eine Balance zwischen sich selbst und die Umwelt spüren und der Leichtigkeit des Seins. Hier kann \\jump[][*Bearb]{OM:NPYo:Einleitung:Widerstand-reduzieren}{Widerstandsreduktion durch Yoga} oder Akupunktur helfen.)',
@@ -829,7 +829,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperspannung:Widerstand', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Warum ist auch Schlaf ein aktiver Vorgang? Wir sind ja keine Qualle, die von ihrem eigenen Körpergewicht erdrückt hilflos am Strand liegt. Schlaf sollte eben keine hilflose und ins Verderben führende Situatuion sein. Weil wir beim Schlafen Atmen, ist auch der Schlaf von aktiver Gegenspannung bestimmt. Wir sollten nicht widerstandslos in die Matratze sinken und ihr ausgeliefert sein. Wüstenvölker können sogar im Schlaf ihren Ellenbogen aufstützen und ihren Kopf auf die Schulter legen. Ich habe gehört, damit schützen sie ihren Gehörgang vor Krabbeltieren. Ist auch einsichtig und ich hab schon erlebt, das eine Ameise in das Ohr meiner Schwester gekrabbelt ist, während sie schlief. Der Name Ohrenkneifer könnte auch daher kommen, oder? Also: Etwas lebendiges kann so tun, als wenn es tot wäre, hier also schiefe. Aber etwas totes kann nicht so tun, als wenn es lebendig sei. Man kann aktiv inaktiv sein, aber nicht inaktiv aktiv.)',
                     '(• Eine aktive Stimmungsspannung im Schlaf, Atem-Oberkörperbalancespannung als Rumpf-Stimmungsspannung und die Kopf-Stimmungsspannung ermöglicht nach meiner Erfahrung, dass die Glieder sich gut entspannen können. Sie werden gut durchblutet und warm. Insgesamt wird man warm, weil das untere Dantian\\color{*Bearb}{(Link zur Atmungsseite?)} (xia dantian), unterhalb des Bauchnabels, aktiviert wird und bleibt.)',
                     '(• Die Kopf-Stimmungsspannung eine Art erweiternte Atemspannung, sie öffnet die Räume im Kopf. Sie sorgt für eine gute Belüftung der Kopfhöhlen, für deren gute Durchblutung und beugt dem Schnarchen vor.)',
@@ -876,7 +876,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperspannung:AktivesSchlafen', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Gehört hier nicht her? Oder doch, weil die Pole im Körper verteilt sind? Dann den Titel verallgeminern? Oder gehört zu \\jumpname[*Bearb]{OM:SpaLeb:Koerperspannung:Gehirnhaelften} verschoben?)',
                     '(• Gehört hier nicht auch die \\jump[][*Bearb]{OM:SpaLeb:Koerperspannung:Sexualitaet}{Sexualität} mit rein?)',
                     '(• Der Körper besteht aus einem Spannungsfeld zwischen den Polen Kopf (Gehirn, Nervenanfang Mund, Augen etc.) und Genitalien (Anus, Hoden, Eierstöcken, Vagina, Sack, Eichel oder Kitzler ect.): Diese Pole stehen für Gefühl und Verstand ect.)',
@@ -921,7 +921,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperspannung:SpannungsfeldEmotionVerstand', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Das Spannungsfeld Emotion und Verstand findet sich auch zwischen den beiden Gehirnhälften wieder, wo die linke Hirnhälfte bei den meisten Menschen eher verstandesmäßig/logisch denkt und die rechte eher das emotionale wiederspiegelt.',
                     '  – Dieses Spannungsfeld äußert sich körperlich in unterschiedlichen Muskelspannungen auf beiden Seiten, wobei die Hirnhäften bis auf wenige Ausnahmen die jeweils gegenüberliegende Körperhälfte steuert.',
                     '  – Besonders in Gesichtern kann man diesen Spannungsunterschied erkennen, siehe Bilbo Calvez: \\jump[http://www.bilbo.calvez.info][*Bearb]{}{Home Page}, \\jump[https://www.youtube.com/watch?v=plKTY6MaJ08][*Bearb]{}{CamFM Interview zum Projekt „Asymmetrophobie“} und \\jump[https://www.youtube.com/watch?v=5-KH-vwdxwk][*Bearb]{}{KenFM Interview zur Ausstellung „Publik - Privat“, vom 14.3.2013 - 13.4.2013}.)',
@@ -956,7 +956,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperspannung:Gehirnhaelften', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Das Spannungsfeld Emotion und Verstand findet sich auch zwischen den beiden Gehirnhälften wieder, wo die linke Hirnhälfte bei den meisten Menschen eher verstandesmäßig/logisch denkt und die rechte eher das emotionale widerspiegelt.',
                     '  – Dieses Spannungsfeld äußert sich körperlich in unterschiedlichen Muskelspannungen auf beiden Seiten, wobei die Hirnhäften bis auf wenige Ausnahmen die jeweils gegenüberliegende Körperhälfte steuert.',
                     '  – Besonders in Gesichtern kann man diesen Spannungsunterschied erkennen, siehe Bilbo Calvez: \\jump[http://www.bilbo.calvez.info][*Bearb]{}{Home Page}, \\jump[https://www.youtube.com/watch?v=plKTY6MaJ08][*Bearb]{}{CamFM Interview zum Projekt „Asymmetrophobie“} und \\jump[https://www.youtube.com/watch?v=5-KH-vwdxwk][*Bearb]{}{KenFM Interview zur Ausstellung „Publik - Privat“, vom 14.3.2013 - 13.4.2013}.)',
@@ -991,7 +991,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperspannung:Gesichtsspannung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Die Bauchspannung beeinflusst sowohl das sexuelle Gefühl auf psychischer und nervlicher Basis als auch auf mechanischer Basis.)',
                     ))),
                       
@@ -1024,7 +1024,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperspannung:Sexualitaet'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Am Ende (ein?) Kapitel zu den Möglichkeiten der Problembehandlung einführen: Naturphilosophie-Yoga, Akupunktur, Massage, Fußreflexzonenmassage, Gesang, Sex etc.',
                     '  – Naturphilosophie-Yoga hat unter anderem im Auge, Blockaden wie Verspannungen und Kreisgedanken aufzulösen und sich das Leben in diesem Sinne leichter und angenehmer zu machen. Durch die Asanas soll körperlich unter anderem erreicht werden, nur die Muskeln für eine Stellung oder Bewegung zu benutzen, die dafür wirklich gebraucht werden. Wir setzen häufig, durch verschiedene Umstände, auch Muskeln ein, die eine Bewegung oder Stellung behindern. Eine Idee ist, wenn ich die richtigen Museln benutze, dann kann ich die anderen auch loslassen und dadurch die Behinderung lösen. Dies macht auch positives mit der Psyche. Es werden die körperlichen und psychischen Umstände beleuchtet, die zur Benutzung eher blockierender Muskulatur führen.)',
                     ))),

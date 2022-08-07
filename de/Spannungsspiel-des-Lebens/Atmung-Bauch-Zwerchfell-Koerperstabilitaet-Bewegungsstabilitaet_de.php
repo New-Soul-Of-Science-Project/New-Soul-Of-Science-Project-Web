@@ -179,7 +179,7 @@
                       array(  jump_name => 'OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Maria (Intensive Yoga Intermediate Seminar, vom 31.08.-03.09.2017) hat gesagt, dass die Leber, das Zwerchfell und das Herz in der gleichen Faszie liegen. Abklären! Buch bestellen, was sie empfohlen hat.)',
                     '(• Ist die glatte Bauchmuskulatur gespannt, dann fungiert sie ähnlich wie die Spannung im Holz einer Akustikgitarre lengs des Oberkörbers. Die schwingende Luft in der Lunge, den Bronchien, dem Hals, dem Nasenraum und dem Mundraum entspricht der Saite der Gitarre. Die ringförmige Bauchmuskulatur macht nun zwei Dinge gleichzeitig: Zum einen drückt sie die Bauchraumorgane nach innen und oben gegen das Zwerchfell. Über dessen Gegenspannung wird dann der Brustkorb nach oben gedrückt und spannt wiederum die glatte Bauchmuskulatur. Zum anderen spannt die ringförmige Bauchmuskulatur die glatte Bauchmuskulatur gleichzeitig auch darüber, indem sie diese nach innen zieht. Dies wirkt, als wenn man bei der Gitarre das Holz des Klangkörpers von innen über eine Spannung reinziehen würde, was den Klang verändert. (Siehe auch Seite \\italic{\\jumpname[*Bearb]{OM:SpaLeb:Gesangstechnik}}!))',
                     '(• Die genaue Atemfunktion wird beschrieben (Vgl. Diana Laarz, GEO 02/2017, 34-50, hier S. 48.). Zusätzlich sind die Rückenmuskeln beteiligt, die durch das nach hinten-unten ziehen der Schultern durchs Einatmen die Rippen und das Brustbein öffnen und beim Ausatmen zusätzliche Stabilität geben.)',
@@ -216,7 +216,7 @@
                       array(  jump_name => 'OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet:KomplexAtmung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Die Nasenlöcher wechseln sich tatsächlich ab bei der Atmung. Die Lungenbläschenoberfläche ist etwa 120qm, 1/2 Tennisplatz. (Vgl. Diana Laarz, GEO 02/2017, 34-50, hier S. 50.). Dort ist eine Atemtherapie erwähnt, die damit arbeitet (Hier S. 49-50). Atemfunktion genau beschrieben auf Seite 48.)',
                     '(• Die Atmung sendet Wellen der Bewegung durch den Körper (Vgl. Diana Laarz, GEO 02/2017, 34-50, hier S. 50.). Dort ist eine Atemtherapie erwähnt, die damit arbeitet (Hier S. 49-50).)',
                     '(• Die physikalische Atemspannung beruht auf der neuronalen Atemspannung.)',
@@ -245,7 +245,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet:PhysioAtmung:XXX', text =>
                                            
                 'Durchblutung')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Die Atmung beeinflusst in hohem Maße die Weite der Blutgefäße, besonders in den Gliedmaßen und der Periferie des Körpers.)',
                     ))),
                   array( 'text', array( text => array(
@@ -262,7 +262,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet:PhysioAtmung:XXX', text =>
                                            
                 'Versorgung der Bandscheiben mit Nährstoffen')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Siehe SAFS & BETA Intensive Yoga Lehere B-Lizenz Unterlagen. Dort ist beschrieben, dass bestimmte Asanas besonders gut für die Versorgung der Bandscheiben mit Nährstoffen sind.)',
                     '(• Eine Atmung mit \\italic{hoch aktiver Atemspannung} (Powerhouse) ändert durch das Anheben des Brustkorbs etc. die Druckverhältnisse in den Bandscheiben. Es läuft eine Welle durch die Wirbelsäule, die im Steiß beginnt und bis in den Kopf geht. Die wechselnden Druckverhältnisse sorgen für eine sehr gute Versorgung der Bandscheiben mit Nährstoffen. Eine hoch aktive Atemspannung hebt den Oberkörper an. Sie wird besonders ausgeprägt, wenn man nicht nur die Schulterblätter nach hinten-unten zieht, sondern dabei auch noch die Schultern so breit wie möglich macht.)',
                     '(• XXX)',
@@ -296,7 +296,7 @@
                       array(  jump_name => 'OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet:PhysioAtmung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Der Gesang, und so auch die Sprache, ist eine Schwingung auf der physikalischen Atemspannung, die durch die Stimmbänder angeregt wird.)',
                     ))),
                       
@@ -340,7 +340,7 @@
                       array(  jump_name => 'OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet:Gesang', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Der Raum bzw. die Enge in Stirn- und Nasennebenhöhlen sowie die Schleimbildung dort scheint eng mit der Spannung der Kau-, der Nacken-, der Schulter- und sogar der Brustmuskulatur verbunden zu sein.)',
                     ))),
                       

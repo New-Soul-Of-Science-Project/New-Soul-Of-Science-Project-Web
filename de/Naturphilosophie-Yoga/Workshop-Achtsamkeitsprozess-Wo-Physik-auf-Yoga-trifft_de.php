@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• \\bold{Meditation des physikalischen Lebensflusses:})',
                     '(– Meditation, die auf den beständigen Fluss in der Feinstruktur der Physik eingeht und ihre Leichtigkeit über die Regelprozesse unserer Elementarteilchen, Atome und Zellen bis in unseren Achtsamkeitsprozess hinauf transportiert.)',
                     '(– Dabei werden die Strukturebenen und der Transport der Leichtigkeit – des Funktionierens ohne Blockaden – durch die Ebenen in unser Leben verbildlicht.)',
@@ -48,7 +48,7 @@
                       //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),*/
                       
@@ -128,7 +128,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Definition: Die Situation ist emotional und physisch bestimmt.)',
                     ))),
                   array( 'text', array( text => array(
@@ -205,7 +205,7 @@
                       //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Das Bild geben, dass zum Wesen des Achtsamkeitsprozesses in uns die Funktion des Gehirns gehört, den Zustand, die Situation von uns und wie sich diese anfühlt, zu registrieren. Dann gehört auch die Gehirnfunktion dazu, die uns antreibt zu handeln. Beides wird über die Nerven organisiert, die aus dem Gehirn kommend, wie Tentakeln unseren gesamten Körper durchdringend jeden Winkel in uns erfassen.)',
                     '(• Das Bild geben, dass bei der Einatmung mit angezogenem Beckenboden (Wurzelchakra) tief von unten komment die stabile Kraft in den Rumpf aufsteigt, währen gleichtzeitig durch den Atem von oben kommend, die kühle Frische, Leichtigkeit und Reinheit sich mit der Kraft und den Sorgen und Ängsten verbindet und vermischt. Beim Ausatmen werden all diese Sorgen, Krankheiten etc. mit der Luft ausgeatmet.)',
                     ))),

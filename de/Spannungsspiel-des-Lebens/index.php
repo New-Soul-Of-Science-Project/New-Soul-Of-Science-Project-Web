@@ -262,7 +262,7 @@
                       //array(  jump_name => 'OM:SpaLeb:Psychosomatik-Stress:Problemloesungsansaetze', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'vis', text => array(
+                  /*array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),*/
                       

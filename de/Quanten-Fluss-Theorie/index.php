@@ -56,7 +56,7 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:Home:Vortext:XXX', text =>
                                            
                 'Abstract')),
-                  /*array( 'fade-in-area', array( Display => 'vis',
+                  /*array( 'fade-in-area', array( Display => 'showContent',
                     Title => '\\class{tools-class-text-color-FigDescr tools-class-link-hover-red}{Einblenden}', TitleVis => '\\class{tools-class-text-color-FigDescr tools-class-link-hover-red}{Ausblenden}', ParagraphList => array(
                   array( 'text', array( text => array(
                     //'Eine\\hidden{ differenzierte} Analyse der Bewegungsstruktur hypothetischer Bestandteile von strukturiert gedachten Elementarteilchen\\hidden{ der heutigen Physik}'."\n".
@@ -203,7 +203,7 @@
                       '(• Jede Existenz hat ihren zentralen Regelprozess: Die Schlussfolgerungen münden in die Einsicht, dass es für jedes Ding, jede Existenz, der Physik genau einen einzigen grundlegenden Regelprozess geben muss. Dieser Regelprozess organisiert die Stabilität und die Entwicklung seiner Existenz.)',
                     ))),*/
                       
-                  /*array( 'fade-in-area', array( Display => 'vis',
+                  /*array( 'fade-in-area', array( Display => 'showContent',
                     Title => '\\class{tools-class-text-color-FigDescr tools-class-link-hover-red}{Einblenden}', TitleVis => '\\class{tools-class-text-color-FigDescr tools-class-link-hover-red}{Ausblenden}', ParagraphList => array(*/
                       
                   // #: Kurzbeschreibung

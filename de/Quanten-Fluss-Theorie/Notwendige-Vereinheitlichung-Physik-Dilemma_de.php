@@ -178,7 +178,7 @@
                       //array(  jump_name => 'OM:FrQFT:NotwenVereinheit:XXX', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Die Idee einer Supraflüssigkeit aus Dunkler Materie ist meiner Idee der variierenden Vakuumenergiedichte sehr ähnlich.\\footnote[*Bearb]{Vgl. \\cite{Ouellette:IstDieDunkleMaterieEineSuprafluessigkeit:2017}.})',
                     '(• Schwarze Löcher, die beim Urknall erzeugt wurden, könnten einen Teil der Dunklen Materie ausmachen.\\footnote[*Bearb]{Vgl. \\cite{Garcia-Belido:DieSchwarzenLoecherDesUrknalls:2017}.})',
                     '(• Eine neue Theorie von Erik Verlinde unterstützt im Prinzip die MOND-Theorie und ist meinem Ergebnis verblüffend ähnlich.\\footnote[*Bearb]{Vgl. \\cite{Verlinde:EmergentGravityAndTheDarkUniverse:2016}. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Wolchover:DerAnfangVomEndeDunklerMaterie:2017}.} \\quote{Dunkle Materie, sagt Verlinde, sei nicht eine Ansammlung unsichtbarer Teilchen, sondern ›ein Wechselspiel zwischen gewöhnlicher Materie und Dunkler Energie‹.}\\footnote[*Bearb]{\\cite{Wolchover:DerAnfangVomEndeDunklerMaterie:2017}, S. 29.} Danach ist die Gravitation eine emergentes Phänomene, wie in der hier beschriebenen FrQFT.)',
@@ -265,7 +265,7 @@
             'OM:FrQFT:NotwenVereinheit:Problem-der-Dunklen-Energie',
               'Es scheint völlig unklar, welcher Natur diese mysteriöse Energie ist', 'Sc_f_Paragraph',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Ein dynamisches Phänomen aus der Thermodynamik könnte hier eine Rolle spielen. Nimmt man den Behälter um ein Gas mit einer Themperatur größer Null weg, so verteilt sich das Gas schlicht im Raum und dehnt sich so einfach aus. Ähnlich verhält es sich mit Lichtphotonen, Elapsonen oder Wirkungsquanten, die sich frei im Raum bewegen können. So würden sich dann nach der FrQFT auch eventuell die im Verhälnis zum Umfeld verdichteten Bestandteile eines Kosmos innerhalb eines Schwarzen Lochs im Raum verteilen oder in den Eregnishorizont wandern. Dies hätte im Schwarzen Loch, also in dem in ihm enthaltenen Kosmos, den Eindruck einer Expansion zur Folge.)',
                     '(• Kleine CDM Halos verschmelzen in den Simulationen zu schnell zu großen Halos, als Beobachtungen es nahelegen. Dem entgegen zu wirken soll einer der Gründe zur Einführung der Dunklen Energie gewesen sein.\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 24. \\\\ \\color{*Bearb}{(Weitere Verweise)}})',
                     '(• Rolle der Energieerhaltung im Kosmos …\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 24. \\\\ \\color{*Bearb}{(Weitere Verweise)}})',
@@ -296,7 +296,7 @@
             'OM:FrQFT:NotwenVereinheit:Problem-der-Singularitaeten',
               'Punktförmige Elementarteilchen, Schwarze Löcher, der Urknall und Co. \\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Singularität sind unphysikalisch, da es zu unendlichen Werten auf endlichem Raum kommt.\\footnote{Unnatürliche Unendlichkeiten: \\\\ \\const{FrQFT_g_footnote_text_Unendlichkeiten}}\\footnote{Unvollständigkeit der Allgemeinen Relativitätstheorie: \\\\ \\const{FrQFT_g_footnote_text_ARTUnvollstaendig}}\\footnote{Unvollständigkeit der Quantenphysik: \\\\ \\const{FrQFT_g_footnote_text_QuantenphysikUnvollst}})',
                     '(• Beim Urknall soll das Universum angeblich aus dem Nichts entstanden sein. Dies ist aber unlogisch und unphysikalisch: Wie etwas aus Nichts entstehen soll wird nicht erklärt. Nach logischem Verständnis ist ein solches Wunder auch nicht möglich. Darüberhinaus ist jede Form einer Urknallsingularität unphysikalisch.)',
                     '(Fachdiskussion:)',
@@ -345,7 +345,7 @@
             'OM:FrQFT:NotwenVereinheit:Problem-der-Naturkonstanten',
               'Die Werte der Naturkonstanten erscheinen recht willkürlich', 'Sc_f_Paragraph',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(Fachdiskussion:)',
                     '(• Siehe: Hossenfelder, Sabine. \\jump[http://backreaction.blogspot.com/2017/06/if-tensions-in-cosmological-data-are.html]{}{If tensions in cosmological data are not measurement problems, they probably mean dark energy changes}.)',
                     ))),

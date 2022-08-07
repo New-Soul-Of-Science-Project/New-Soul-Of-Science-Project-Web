@@ -70,7 +70,7 @@
                       array(  jump_name => 'OM:FrQFT:Quantenchromodynamik', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     // '\\bold{XXX}',
                     '• Da die Farbpolarisation, die der Farbladung zu grunde liegt, von der Raumrichtung abhängig ist, ist ihr je Richtung eine von drei Farben zugewiesen. Diese Farben sind rot, grün und blau sowie in der jeweils entgegengesetzten Richtung antirot, antigrün und antiblau. Die \\jump{OM:FrQFT:NeuePhysik:Symmetriebrechung}{Farbpolarisation} entsteht durch die Symmetriebrechung der grundlegenden Zeitbewegung der Wirkungsquanten.',
                     '• Am Photon kann man erkennen, wie die Quantität der Farbpolarisation zu berechnen ist. Ein Photon muss nach außen die Farbladung weiß tragen. Seine Wirkungsquanten sind aber in unterschiedlichen, nicht symmetrisch verteilten Auslenkungswinkeln und Auslenkungsabständen gebrochen. Die Summe ihrer Farbpolarisationen muss die Farbladung Null, also weiß ergeben.',
@@ -231,7 +231,7 @@
                       array(  jump_name => 'OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     // '\\bold{XXX}',
                     '• Besitzen \\term{u}- und \\term{d}-Quarks unterschiedliche Frequenzen, weil sie verschiedene Massen haben?',
                     '– Wenn ja, dann rotieren ihre Wirkungsquanten unterschiedlich schnell um die Lichtbahn. Es ist im Hadron ja ein riesen Chaos von virtuellen Quarks und Gluonen. Vielleicht zerreißt der String ihres Hadrons dann ständig?',

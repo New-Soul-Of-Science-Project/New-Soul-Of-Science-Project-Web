@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Die Längenkontraktion von Elementarteilchen im Gravitationsfeld wird auch hier angesprochen oder soll dort angesprochen werden: \\italic{\\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung}} und \\italic{\\jumpname{OM:FrQFT:Gravitation:Laengenkontraktion-im-Gravitationsfeld}}',
                     '• Mediumtransformation: Wie Galilae-Transformation mit relativistischen Eigenschaften.\\footnote[*Bearb]{Vgl. \\cite{Weiss:AltToSpeedOfLight2006}, IV. Medium transformation, S. 11.}',
                     '• Die Lorentzsche Äthertheorie ist mathematisch äquivalent zur SRT.\\footnote{\\const{FrQFT_g_footnote_text_SRTlorenzInter}} Einer der Gründe, warum man die Lorentzsche Äthertheorie verworfen hat ist, \\quote{dass die Äther-Hypothese überflüssig ist.}\\footnote[*Bearb]{\\cite{wiki:MichelsonMorleyExperiment2015}, Erklärung, Spezielle Relativitätstheorie.} Will man allerdings die Physik vereinheitlichen, so kommt man nach der FrQFT nicht um die Äther-Hypothese herum. Damit ist sie dann nicht mehr überflüssig und die Lorentzsche Äthertheorie oder eine ihr entsprechende Theorie wird notwendig.',

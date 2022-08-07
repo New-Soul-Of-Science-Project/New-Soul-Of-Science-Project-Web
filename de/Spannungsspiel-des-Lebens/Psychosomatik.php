@@ -667,7 +667,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     // '\\bold{XXX:}',
                     '• Wenn wir uns gegen unsere eigenen Gefühle schützen, dann ergibt sich nach meiner eigenen Erfahrung auf der Gefühlsseite ein verdecktes Taubheitsgefühl.',
                     '• Auf der Handlungsseite stellt es sich mir als Lähmung dar; wir können uns nicht zu einer Handlung entscheiden oder wollen alles zu gleich.',
@@ -719,7 +719,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik:Betaeubt-Gelaehmt', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     // '\\bold{XXX:}',
                     '• Die Verlängerungen der Faszien unseres Körpers, die in unseren Kopf laufen, regeln eine Art Grundspannung auf vielen Hauptfaszien.',
                     '• Ähnlich, wie bei einer Geige im \\jump[https://de.wikipedia.org/wiki/Wirbelkasten]{}{Wirbelkasten} die Saiten gespannt werden, fungiert unser Kopf wie ein dynamischer „Wirbelkasten“ als unser körperliches Stimmungssystem.',
@@ -773,7 +773,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Es gibt auch noch die Perspektive, in der unsere Rückseite unbewusster oder unterbewusster ist (weiblicher Aspekt) und die Vorderseite bewusster (männlicher Aspekt).',
                     // '\\bold{XXX:}',
                     '• Unsere muskulöse Körperrückseite ist, wenn wir in einer generalisierten Schonhaltung sind, deaktiviert und verspannt.',

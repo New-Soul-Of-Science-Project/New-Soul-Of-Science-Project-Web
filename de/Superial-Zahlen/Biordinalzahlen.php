@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     // '\\bold{Ausgangspunkt}',
                     // '• Die Biordinalzahlen sind eine Darstellung aller ganzer Zahlen durch Mengen, also auch der negativen ganzen Zahlen.',
                     ))),
@@ -215,10 +215,10 @@
                     'Sondern es ändern sich wirklich nur die Mengenkombinationen in der obersten Ebene der größten Limeszahl.'."\n".
                     'Alle tieferen Ebenen bleiben unberührt.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'vis', jumpName => 'OM:SpaLeb:Psychosomatik:Vortext:MehrGeschDetails',
+                  array( 'fade-in-area', array( Display => 'showContent', jumpName => 'OM:SpaLeb:Psychosomatik:Vortext:MehrGeschDetails',
                 Title => 'Verworfene Möglichkeit …',
                 TitleVis => 'Verworfene Möglichkeit:', ParagraphList => array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                      '\\bold{Überprüfen}',
                      '• Warum sollte die Addition von \\term{n} in \\term{(ω^{2} – ω) + n} anders laufen als oben?',
                     ))),
@@ -297,7 +297,7 @@
                       //array(  jump_name => 'OM:SupNum:XXX', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '\\bold{XXX}',
                     '• XXX',
                     ))),

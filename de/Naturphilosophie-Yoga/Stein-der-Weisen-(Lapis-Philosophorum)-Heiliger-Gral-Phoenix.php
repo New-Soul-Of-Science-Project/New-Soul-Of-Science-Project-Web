@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     // '\\bold{XXX}',
                     // '• XXX',
                     ))),
@@ -317,7 +317,7 @@
                       array(  jump_name => 'OM:NPYo:Stein-der-Weisen:Stein-der-Weisen', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• In der Hermetik ist das Androgyne der Ausgangspunkt der Schöpfung, dass sich später in die Geschlechter aufspaltet und so polarisiert.\\footnote{Vgl. \\cite{wiki:Hermetik:2019}, Die religiös-philosophischen Lehren, Der Poimandres.}',
                     '\\bold{Moderne Märchen}',
                     '• Im Film ›Der Dunkle Kristall‹ geht es darum, etwas, dass zerbrochen wurde, symbolisiert durch den Kristall, dass fataler Weise getrennt wurde, hier das Gute und das Böse, wieder zusammenzubringen und dadurch die Welt zu heilen.',
@@ -406,7 +406,7 @@
                   array( 'text', array( text => array(
                   '\\condb{Große Tragweite der Abwertung und Verbannung des Weiblichen und vermeindlich Schwachen} \\\\'."\n"))),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Weiblich wurde vermutlich als mit dem Schlaf verbunden assoziiert, damit ruhig zu sein.',
                     '⋅ Ruhig sein wurde möglicherweise als sie hat die Schnauze zu halten interpretiert.',
                     ))),
@@ -505,7 +505,7 @@
                   array( 'text', array( text => array(
                   '\\condb{Brüche erzeugen Kräfte – Pole und Kräfte in der Naturphilosophie} \\\\'."\n"))),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Auf das prozesshafte der Naturphilosophie und ihrer Stabilisierung der Pole eingehen.',
                     '⋅ Ohne Pole keine Existenz und ohne Prozess keine stabilisierten Pole …',
                     ))),
@@ -735,7 +735,7 @@
                   array( 'text', array( text => array(
                   'XXX'."\n"))),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Eine Verbindung zur Naturphilosophie besteht in der Erkenntnis, dass der Samen, der Keim, des Lebens in der Grundstruktur der Natur angelegt ist.',
                     '• Eine Verbindung zur Physik der fraktalen Quanten-Fluss-Theorie besteht auch in deren Einsicht, dass, aufgrund ihrer Fraktalität, mit der Entstehung jedes Schwarzen Lochs auch ein Kosmos, eine ganz neue Welt, in diesem entsteht.',
                     ))),

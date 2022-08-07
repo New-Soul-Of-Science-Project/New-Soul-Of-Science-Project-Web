@@ -149,7 +149,7 @@ function To_f_hash_changed( hash)
               //alert( "Anker \"" + anchor_name + "\" in ID " + To_g_elements_hides_ary[hides_idx]['base_name'] + To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx] + " gefunden! Nun sichtbar machen ...");
               //alert( "Sichtbar machen: ID-Basis " + To_g_elements_hides_ary[hides_idx]['base_name'] + ", erster sichtbarer Part " + To_g_elements_hides_ary[hides_idx]['noContentAry'][0] + ", erster unsichtb. Part " + To_g_elements_hides_ary[hides_idx]['contentAry'][0]);
               
-              To_f_elements_hides_switch( 'vis', To_g_elements_hides_ary[hides_idx]['base_name'], To_g_elements_hides_ary[hides_idx]['noContentAry'], To_g_elements_hides_ary[hides_idx]['contentAry']);
+              To_f_elements_hides_switch( 'showContent', To_g_elements_hides_ary[hides_idx]['base_name'], To_g_elements_hides_ary[hides_idx]['noContentAry'], To_g_elements_hides_ary[hides_idx]['contentAry']);
               To_g_anchor_search_LastFoundElement.scrollIntoView( true);
               // #: Stop search in this "hides_idx".
               search_is = false;
@@ -218,7 +218,7 @@ function To_f_openAll( rememberOldStatus = false)
           To_g_rememberOldStatus_elements_hides_ary[hides_idx].push( { contentWasInvisible });
         }
         if (contentWasInvisible) {
-          To_f_elements_hides_switch( 'vis', To_g_elements_hides_ary[hides_idx]['base_name'], To_g_elements_hides_ary[hides_idx]['noContentAry'], To_g_elements_hides_ary[hides_idx]['contentAry']);
+          To_f_elements_hides_switch( 'showContent', To_g_elements_hides_ary[hides_idx]['base_name'], To_g_elements_hides_ary[hides_idx]['noContentAry'], To_g_elements_hides_ary[hides_idx]['contentAry']);
         }
         
         hides_idx_idx++;
@@ -307,7 +307,7 @@ function To_f_elements_hides_switch( setting, id_base_name, noContentAry, conten
           }
         
         break;
-      case 'vis':
+      case 'showContent':
         
         for (i = 0; i < noContentAry.length; i++)
           if (typeof noContentAry[i] == 'string')

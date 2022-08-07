@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '\\bold{XXX}',
                     '• XXX',
                     ))),
@@ -64,7 +64,7 @@
                       //array(  jump_name => 'OM:SupNum:XXX', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '\\bold{XXX}',
                     '• XXX',
                     ))),

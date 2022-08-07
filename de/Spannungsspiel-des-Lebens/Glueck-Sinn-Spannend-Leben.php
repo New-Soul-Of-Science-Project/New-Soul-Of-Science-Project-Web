@@ -215,7 +215,7 @@
                       //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Verweis auf Kapitel \\italic{\\jumpname[*Bearb]{OM:SpaLeb:Psyche-und-Stimmung:Staerke}}.',
                     '• Resilienz hat etwas mit der eigenen Positionierung im Leben zu tun. Wie es uns geht und hängt stark davon ab, welche Wertebilder wir in uns tragen, was wir erreichen oder haben wollen(!). Siehe Vortrag und Buch von Albert Kitzler (\\jump[http://www.massundmitte.de][*Bearb]{}{Maß und Mitte}), »Denken heilt!« in der modern life school vom 17.02.2017 (siehe meine Notizen).',
                     ))),

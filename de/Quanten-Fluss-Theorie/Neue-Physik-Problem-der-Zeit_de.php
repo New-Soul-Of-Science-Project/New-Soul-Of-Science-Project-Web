@@ -514,7 +514,7 @@
                       array(  jump_name => 'OM:FrQFT:NeuePhysik:Loesungsansatz', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Hier her verschoben aus Kapitel \\jumpname[*Bearb]{OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip}?',
                     '• Dies ist im Moment mehr ein Brainstorming, dass sich im Schreibfluss ergeben hat. Muss noch aufgearbeitet werden und wird so wahrscheinlich nicht in der Struktur der Seite bleiben!',
                     ))),
@@ -1969,7 +1969,7 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Quantenfeldtheorie:QM', text =>
                                            
                 'Quantenmechanik und Quantenfeldtheorien in der Quanten-Fluss-Theorie')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Einpflegen, dass die QM wegen der Verschränkungsphänomene eine Normaluhr braucht.',
                     '• Im Licht-Materie-Medium gibt es keine Stöße der Wirkungsquanten oder Elapsonen, sondern nur gegenseitige Beugung. Es ist eine sogenannten Supraflüssigkeit, scheinbar ohne \\jump[http://www.spektrum.de/lexikon/physik/dispersion/3180][*Bearb]{}{Dispersion} oder \\jump[http://www.spektrum.de/lexikon/physik/dissipation/3196][*Bearb]{}{Dissipation} (Vgl. http://www.spektrum.de/news/ist-die-raumzeit-superfluessig/1300243). Dies ist nach dem Artikel scheinbar ungewöhnlich. Stöße gibt es nur, wenn Materie-Elementarteilchen entstehen – kondensieren – und dann nur zwischen diesen. Auch gibt es mit den Elapsonen und anderen Strings Transversalwellen im Medium. Verglichen mit einem Gas ist dies ungewöhnlich.',
                     '• Die Grundformeln der Quantenfeldtheorie, wie die \\jump[][*Bearb]{OM:FrQFT:HeisenbergUnschaerfe}{Einsteinsche Gleichung für das Lichtquant} und die \\jump[][*Bearb]{OM:FrQFT:HeisenbergUnschaerfe}{Heisenbergsche Unschärferelation}, ergeben sich aus'."\n".
@@ -2131,7 +2131,7 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Quantenfeldtheorie:V-HM', text =>
                                            
                 'Vakuum und Higgs-Mechanismus(-Feld?)')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Die Gesamtheit der Wirkungsquanten als eine Art (Fest-)Körper angeben, der das Higgs-Feld trägt. Siehe SdW 12/2013, S. 19. Und SdW 02/2014, S. 52.',
                     '• Lesen: Bezug zwischen der kosmischen Konstante und dem Higgs-Feld. Siehe \\jump[http://books.google.de/books?id=7qKCvtUZgiIC&printsec=frontcover&hl=de#v=onepage&q&f=false]{}{Raum, Zeit, Fortschritt: Kategorien des Handelns und der Globalisierung}, S. 70-71. Den Verweisen nachgehen. Dieses Buch ins Literaturverzeichnis aufnehmen? Gibt viele Verweise und Anregungen.',
                     ))),

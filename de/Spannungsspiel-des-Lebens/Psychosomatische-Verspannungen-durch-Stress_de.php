@@ -388,7 +388,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik-Stress:EinatemreflexAtemunterdrueckung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Das Schultern-Nach-Oben-Ziehen scheint ebenfalls ein archaischer Selbstschutzreflex zu sein und mündet vermutlich ebenfalls in einer \\jump{OM:SpaLeb:Koerperspannung:Schonhaltung}{kompensatorischen Schonhaltung}. Diese könnte etwas mit der Entspannung der Innenfeder im Kopf\\color{*Bearb}{(Link zu einem Kapitel hier und von dort zum Yoga)} zu tun haben.',
                     '• Ich habe festgestellt, dass wir – ich ebenso – bei Stress auch tatsächlich chronisch den Kopf einziehen, also die Bandscheiben der Halswirbelsäule unter Druck setzen.',
                     '• Bezug zu bestimmten Kopfschmerzen herstellen. Wirken auch über die Schultermuskulatur, die die Verbindung zwischen Arm-Schulter und Nacken darstellt, weil die Faszien wohl über den Nacken bis in den Kopf laufen.',
@@ -440,7 +440,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik-Stress:SchulterBeugeReflex', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Kiefer- und Kaumuskulaturverspannungen: Man beißt sich quasi durch. Das kennt man ja auch als Spruch: »Da musst du dich durchbeißen!«',
                     ))),
                       
@@ -484,7 +484,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik-Stress:BoesesGesichtBeissreflex', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Viele psychisch angespannte Menschen haben verspannte Gesäßmuskeln. Ich habe mich lange gefragt, wie das kommt. Ist es eine Folge der Instabilität des Oberkörpers durch die anderen Psychosomatiken? Teilweise vielleicht ja, denke ich. Es könnte sich dabei um einen Schutz des Anus bei Gefahr handeln, zur Verhinderung einer möglichen Vergewaltigung. Der Anus ist bei Stress oft selber auch verspannt. Mir ist aber noch eine Intuition gekommen, dass die Gesäßverspannungen aus dem Fluchtreflex stammen könnten. Bei der Flucht werden ja vornehmlich die Gesäßmuskeln angespannt. Da hier der Zusammenhang subtiler ist, als bei den anderen getriggerten Reflexen, ist diese Vermutung natürlich deutlich spekulativer.',
                     ))),
                       
@@ -528,7 +528,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik-Stress:FluchtAngriffsreflex', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Eine Verspannung des Anus bei Stress, könnte ein Reflex zur Verhinderung einer möglichen Vergewaltigung sein. Ich habe den Verdacht, dass diese Verspannung oft zu Hämorrhoiden führt, da hierdurch der Blutfluss aufgestaut werden sollte.',
                     '• Viele psychisch angespannte Menschen haben verspannte Gesäßmuskeln. Ich habe mich lange gefragt, wie das kommt. Ist es eine Folge der Instabilität des Oberkörpers durch die anderen Psychosomatiken? Teilweise vielleicht ja, denke ich. Es könnte sich dabei um einen Schutz des Anus bei Gefahr handeln, zur Verhinderung einer möglichen Vergewaltigung. Der Anus ist bei Stress oft selber auch verspannt. Mir ist aber noch eine Intuition gekommen, dass die Gesäßverspannungen aus dem Fluchtreflex stammen könnten. Bei der Flucht werden ja vornehmlich die Gesäßmuskeln angespannt. Da hier der Zusammenhang subtiler ist, als bei den anderen getriggerten Reflexen, ist diese Vermutung natürlich deutlich spekulativer.',
                     ))),
@@ -573,7 +573,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik-Stress:AnusGesaessreflex', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Diese Verspannungen belegen Nerven und Gehirnkapazität, siehe Kreisgedanken. Sie können vielleicht auch im Gehirn entzündlich Prozesse auslösen? Dies ist zu untersuchen!',
                     ))),
                       
@@ -620,7 +620,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik-Stress:NervenGehirn', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Von diesem Satz oben hierher verweisen und erst dann weiter: Die Selbstbehandlungsmethode, die das Wohlbefinden als Basis der Veränderung einsetzt, ist der \\jump{OM:NPYo:Einleitung:ErkenneDichSelbst:Achtsamkeitsprozess}{Achtsamkeitsprozess}.',
                     '• Die Konditionierung im Nervensystem und in den anderen Regelsystemen des Körpers muss verändert werden, wenn man sich wieder richtig gerade machen, sich aufrichten möchte. Veränderungen könnten z.B. übers \\jump{OM:NPYo:Einleitung}{Yoga} erfolgen, auch indem die Atmung wieder aktiviert wird, und zwar über das im Yoga übliche bewusste völlige Ausatmen, das die ringförmige Bauchmuskulatur extrem anspannt und das Zwerchfell gedehnt, und die Einatmung unbewusst über den Einatemreflex durch leichten Sauerstoffmangel von selbst kommen lassen.',
                     '• Auf \\jump{OM:SpaLeb:Koerperspannung:AktivesSchlafen}{aktives Schlafen} anmerken und drauf verweisen.',

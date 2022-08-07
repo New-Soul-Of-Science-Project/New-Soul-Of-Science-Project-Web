@@ -445,7 +445,7 @@
                       array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Siehe auch \\jumpname[*Bearb]{OM:SpaLeb:Diskussion:Achtsamkeit}.',
                     '• Siehe auch \\jump[][*Bearb]{OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga:Achtsamkeit}{\\name{OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga} – \\name{OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga:Achtsamkeit}}.',
                     '• Es wird im Allgemeinen davon ausgegangen, dass das aufmerksam wahrgenommene von selber wirkt.',
@@ -503,7 +503,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:NaehereBetracht:XXX', text =>
                                            
                 'Der Dialog in uns')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• In uns gibt es viele Pole und Kraftzentren, die Pole, Chakras, Organe oder Organellen, die in einem Dialog miteinander stehen.',
                     '– Je mehr wir uns diesen Dialog bewusst machen, desto klüger können wir ihn gestallten und umso klüger fühlen und verhalten wir uns.',
                     ))),
@@ -575,7 +575,7 @@
                       array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:NaehereBetracht', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '\\bold{Körperliche Hinweise auf den Achtsamkeitsprozess}',
                     '• Die Verbindung unserer körperlichen Gefühlsseite, unseres Gefühlspols, mit unserem Unterbewussten und unserer körperlichen Handlungsseite, unseres Handlungspols, mit unserem Bewusstsein zeigt sich in Folgendem (siehe auch \\italic{\\jumpname{OM:SpaLeb:Schlaf-und-Aktivsein}}):',
                     '– Unser Herz, dessen Schlag wir nicht bewusst steuern können, liegt auf unserer körperlichen Gefühlsseite des Unterbewussten, dafür ist auf dieser Seite unsere Lunge verkleinert. Wir können also sagen, dass unsere Atmung sowohl auf unserer unterbewussten Seite, als auch auf unserer bewussten Seite, mit dem leichten Schwerpunkt in Richtung Bewusstsein, verortet ist. So in etwa beobachten wir auch unsere Verbindung zu unserer Atmung.',
@@ -653,7 +653,7 @@
                       array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:BeobachtHinweise', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '\\bold{Körperliche Bezüge des Achtsamkeitsprozesses:}',
                     '– Der Achtsamkeitsprozess spiegelt sich in den Körperhälften in ihrem Bezug zur Rationalität und zur Emotionalität der Gehirnhälften, die wiederum die Körperhälften weit überwiegend diagonal ansprechen und steuern. Siehe oben.',
                     '– Er ist aber auch mit der Stimmungsspannung, oder den Stimmungsspannungen, verknüpft, die wiederum mit der Psyche in starkem Zusammenhang stehen.',
@@ -716,7 +716,7 @@
                       array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:ErweiSicht', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Buchtitel ›Die Physik der Achtsamkeit‹? (Titelidee von Olli)',
                     '• Seite zu diesem Thema \\italic{\\jumpname{OM:NPYo:ExistenzLeichtigkeit}}.',
                     '• Regelprozesse:',
@@ -764,7 +764,7 @@
                       array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:PhysAchtsa', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '\\bold{Evolution:}',
                     '• Die Evolutionstheorie muss modifiziert werden, denn der Achtsamkeitsprozess beeinflusst unsere genetische Evolution, ohne Selektion:\\footnote[*Bearb]{\\color{*Bearb}{Das so etwas existieren muss, dachte auch Wolfgang Pauli: \\\\ Vgl. \\jump[https://www.youtube.com/watch?v=YRlzDm6mQG0]{}{Portrait Wolfgang Pauli | Ernst Peter Fischer}.}}',
                     '– Stress ist Ausdruck eines nicht gut funktionierenden Achtsamkeitsprozesses.',
@@ -818,7 +818,7 @@
                       array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:AchtsamkeitsprozesGrundlLeben', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Seite \\italic{\\jumpname{OM:SpaLeb:Koerperliche-und-seelische-Existenz}} in \\italic{neue Anthropologie} umbenennen?',
                     ))),
                       
@@ -890,7 +890,7 @@
                       array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:KIundRobotik', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Der Achtsamkeitsprozess steht für den ›Phönix aus der Asche‹ als beständige Verwandlung der Dunkelheit in Licht, vom Dunklen (Mond, Asche) zum Hellen (Sonne, Flamme, Licht): 🌓 → 🌞',
                     ))),
                       

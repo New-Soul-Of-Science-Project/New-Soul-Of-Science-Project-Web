@@ -14,7 +14,7 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Umbennenen(?): Vocal-Coaching > Voice-Coaching',
                     '• Zentral beim Singen ist unser \\jump{OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler}{Kopf-Stimmungssystem} unseres \\jump{OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler}{inneren Marionettenspielers}.',
                     '• Wir singen in gewisser Weise immer mindestens Zweistimmig, wenn unsere Nasenseiten offen sind. Unsere \\jump{OM:NPYo:HaTha}{Körperhälften}, Ha und Tha, Sonne und Mond, singen in Teilen jede für sich. Dies ist tief mit unserer \\jump{OM:SpaLeb:Psychosomatik}{Psychosomatik} verknüpft.',
@@ -100,7 +100,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesangstechnik:Uebungsvorbereitung:XXX', text =>
                                            
                 'Lockerer Stand')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Füße schulterbreit auseinander, Fußaußenseiten parallel und Knie nicht ganz durchgestreckt, also minimal gebeugt.',
                     '• Massieren der Hüft- und Pobackenmuskulatur, um die Hüfte in den Hüftgelenken locker schwingen lassen zu können, wenn man atmet, also die Bauch- und Zwerchfellspannung verändert.',
                     '• Schulterblätter intensiv zusammen und nach unten ziehen.',
@@ -119,7 +119,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesangstechnik:Uebungsvorbereitung:XXX', text =>
                                            
                 'Kiefer- und Nackenmuskulatur entspannen')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Die Kaumuskulatur, und ggf. restliche Kiefermuskulatur, durch Massage oder Akupressur entspannen, denn ihre Entspannung macht die Schwingung der Stimmbänder freier. Das kann äußerst schmerzhaft sein, also behutsam vorgehen! (Hier steht die Frage im Raum, wie die Stimmbänder mit der Kaumuskulatur verbunden sind. Handelt es sich (teilweise) um die gleichen Faszienstränge? Oder ist die Verbindung anderer Natur?)',
                     '• Die Nacken- und Halsmuskulatur durch Massage oder Akupressur entspannen, denn Teile der Nacken- und Halsmuskulatur sind selber Kaumuskulatur oder die Gegenmuskeln zur Kiefer- und Kaumuskulatur und gehören so zu dieser. Desweiteren erleichtert eine Entspannung dieser Muskulatur die muskuläre Öffnung der Klangräume im Schädel (z.B. Nasenflügel öffnen und Ohren zurückziehen.). Die Faszien vieler Nackenmuskeln (vermutlich Halswender als Beispiel) gehen innen in den Schädel.',
                     '• Die flache Kaumuskulatur an der Schläfe spielt eine große Rolle beim Klang der Stimme und bei der Lockerung der gesammten Kaumuskulatur. Sie hat drei(!) dichtere Stränge, die bei Verspannungen zu massieren sind.',
@@ -138,7 +138,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesangstechnik:Uebungsvorbereitung:XXX', text =>
                                            
                 'Bauchmuskulatur entspannen')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Bauchmassage. (Ggf. auch von innen. Dies ist mit bestimmten Sexpraktiken zu erreichen, die ich auf Anfrage gerne erklären kann.\\hidden{ Dildo in den Anus. Dabei auch eine Bauchmassage.})',
                     '• XXX',
                     '• XXX',
@@ -158,7 +158,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesangstechnik:Uebungsvorbereitung:XXX', text =>
                                            
                 'Atemmuskulatur aktivieren')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Die Atemspannung vorm Singen aktivieren. Bestimmte Übungen machen, die die Atemmuskulatur kurzfristig aktivieren (siehe Gesangsbuch).',
                     '• Die flexible Atemspannung aufbauen. Das Praktizieren der Yoga-Atmung in den Alltag einbauen.',
                     ))),
@@ -175,7 +175,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesangstechnik:Uebungsvorbereitung:XXX', text =>
                                            
                 'Kopfhöhlen öffnen')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Venizianische Maske fühlen. (Laut Ani)',
                     '• Man singt offensichtlich einen Großteil durch die Nase. Die Zunge verschließt den Halsausgang zum Teil und lenkt so einen Teil des Luftstroms in die Nase. Um eine anfängliches Gefühl dafür zu bekommen, gerne Lieder mal mit offenem Mund summen. Dann verschließt die Zunge nämlich den Halsausgang komplett und alle Luft geht durch die Nase. Finger mal auf die Stirn legen, denn dort sollte man das Vibrieren spüren können.',
                     '• Zungenspitze nach oben an die Zähne und Mund leicht auf, öffnet besonders die Nüstern.',

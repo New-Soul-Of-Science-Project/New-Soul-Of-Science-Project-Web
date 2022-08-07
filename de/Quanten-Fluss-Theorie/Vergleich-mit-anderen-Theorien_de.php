@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),
                       
@@ -59,7 +59,7 @@
                       array(  jump_name => 'OM:FrQFT:Vergleich', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),
                       
@@ -174,7 +174,7 @@
                       array(  jump_name => 'OM:FrQFT:Vergleich:Spezielle-Relativitaetstheorie', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Die Hypothese, dass Elementarteilchen aus anderen Teilchen aufgebaut sind gilt in der Stringtheorie so nicht. Es bleibt ein String. Allerdings hab ich gelesen, dass viele Strings sich so verhalten können, als wären sie ein einziger, neuer, mit anderen Eigenschaften.)',
                     '(• Die Stringtheorie erweitert das punktförmige Teilchenmodell der heutigen Physik auf ein eindimensionales, da es um Fäden geht. Doch der Querschnitt eines Fadens ist wieder ein Punkt und führt bei der Berechnung von Wechselwirkungen durch den möglichen Abstand Null abermals zu Singularitäten. \\color{*Entwick}{[Stimmt das so?]} \\\\ Die FrQFT ist da ganz anders, weil ihre Strings fraktal sind und nicht eindimensional. Ihnen kann sich Nichts beliebig dicht nähern, weil sie sich immer wieder in noch kleinere Strings auflösen und damit sich der Ort der nötigen Annäherung immer wieder räumlich verschiebt. Die Annäherung wird damit vermutlich endlos lang und letztlich unmöglich. Aber auch die Objekte, die sich annähern können, sind in jeder Richtung von ausgedehnter Struktur und fraktal. Auch deshalb können sie sich keinem Punkt beliebig nähern, weil undefiniert bleibt, was dies sein soll und wie dies geschehen könnte.)',
                     '(• Singularitäten werden im Prinzip überwunden … ?! Stimmt das wirklich? Denn auch ein solches String hat nicht in alle Richtungen eine Ausdehnung und deshalb können andere Strings sich ihm unendlich nähern! Oder nicht?)',
@@ -258,7 +258,7 @@
                       array(  jump_name => 'OM:FrQFT:Vergleich:Stringtheorien', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),
                       
@@ -303,7 +303,7 @@
                       array(  jump_name => 'OM:FrQFT:Vergleich:Schleifen-Quantengravitation', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(\\bold{Weltbild:})',
                     '(• Materialismus: Wir müssen »einer Weltsicht des reinen Materialismus auf wiedersehen sagen«. Siehe Ordner „Materialismus, »Wir müssen »einer Weltsicht des reinen Materialismus auf wiedersehen sagen«. - Burkhard Heim - Das neue Weltbild des Physikers - cd3v4-05“.)',
                     '(• Galileo verzichtet auf das nicht messbare und konzentriert sich auf das messbare. Heute: Was nicht messbar und mathematisierbar ist, dass kann angeblich nicht stimmen. Diese Perspektive muss falsch sein.)',
@@ -374,7 +374,7 @@
                       array(  jump_name => 'OM:FrQFT:Vergleich:Heim-Theorie', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Siehe Notiz "Larson, Dewey Bernard - Notizen - 20180314.rtf".)',
                     ))),
                       
@@ -418,7 +418,7 @@
                       array(  jump_name => 'OM:FrQFT:Vergleich:The-Reciprocal-System', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),
                       
@@ -464,7 +464,7 @@
                       array(  jump_name => 'OM:FrQFT:Vergleich:Wellenmodell-eines-Teilchens', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),
                       

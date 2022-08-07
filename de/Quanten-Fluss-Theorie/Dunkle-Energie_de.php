@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• Die Dunkle Energie in der FrQFT hat mit der Gesamtdynamik der Bewegung der Feinstruktur eines Kosmos zu tun, seiner Energiedichte:)',
                     '(– Die Energiedichte entspricht der Dichte der Körnigkeit des Vakuums, also der Dichte der \\jump[][*Bearb]{*Wirkungsquanten-Herlei}{Wirkungsquanten}.)',
                     '(– Möchte man die Kosmologische Konstante errechnen, so muss man vermutlich besser mit der Dichte der \\jump[][*Bearb]{*Elapsonen-Vakuum-Herlei}{Vakuum-Elapsonen} rechnen, denn sie ist Ausdruck der Krümmung des Raums.)',
@@ -66,7 +66,7 @@
                       //array(  jump_name => 'OM:FrQFT:XXX', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(• XXX)',
                     ))),
                       

@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     // '\\bold{XXX}',
                     '• Ich kann meiner Vergangenheit eine neue Perspektive der Interpretation hinzufügen, die ich zu meiner präferierten Perspektive mache. Ich ändere die Bedeutung meiner Vergangenheit. Weil ich von meiner Vergangenheit nichts anderes weiß als meine Erinnerungen, die nichts anderes als Interpretationsperspektiven sind, verändere ich damit tatsächlich für mich meine Vergangenheit.',
                     '– Dabei gibt es mindestens zwei Ebenen: Ich erinnere meine „faktischen“ Erlebnisse, die auch schon Interpretationen meines Wahrnehmungsapparats sind. Und ich gebe diesen Erlebnissen eine oder mehrere Bedeutungen für mich, indem ich ihre Bedeutung interpretiere.',
@@ -71,7 +71,7 @@
                       //array(  jump_name => 'OM:NPYo:XXX', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• XXX',
                     ))),
                       

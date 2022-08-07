@@ -287,7 +287,7 @@
                       //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     //'(Themen:)',
                     '(• Asymptotische Freiheit und Skaleninvarianz: Der sogenannte Fixpunkt der Skaleninvarianz – der Fraktalität – der asymptotischen Freiheit zeigt sich vermutlich in der kosmischen Hintergrundstrahlung.\\footnote{Vgl. \\cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, 20.})',
                     ))),
@@ -335,7 +335,7 @@
                       //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     //'(Themen:)',
                     '(• Einleitung, Fundierung: Diese Schwierigkeiten müssen dann durch mathematische Kniffe umgangen werden.\\footnote{Hierfür wird eine Renormierung durchgeführt, die bei manchen Theorien leider nicht möglich scheint: \\\\ \\const{FrQFT_g_footnote_text_Renormierung}})',
                     '(• Einleitung, Fundierung: Die Beseitigung der Vereinfachung führt zu einer fraktalen Struktur, wie wir sehen werden, die geeignet sein könnte, die Unendlichkeitsprobleme zu beseitigen.\\footnote{Fraktale Strukturen sorgen für Skaleninvarianz: \\\\ \\const{FrQFT_g_footnote_text_FraktalLoestUnendlichk}})',
@@ -381,7 +381,7 @@
                   array( 'jumplist', array(
                       //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '(Themen:)',
                     '(• Schrödingers Katze.)',
                     '(• EPR.)',
@@ -490,7 +490,7 @@
                       //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     //'(Themen:)',
                     '(• Siehe Startseite, Einleitung und ›Was ist Physik?‹.)',
                     ))),
@@ -887,7 +887,7 @@
                       //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                       '(• Die FrQFT ist außschließlich über ein fraktales Prinzip und System von Regelprozessen definiert:)',
                       '(– Jede Existenz in der FrQFT hat einen zentralen Regelprozess, der seine Existenz stabilisiert.)',
                       '(– Damit liegt auch jedem Lebewesen ein zentraler Regelprozess seiner Existenz, deines Lebens, zugrunde.)',
@@ -897,7 +897,7 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:Diskussion:LebenFrQFT:XXX', text =>
                       
                 'Eigenheiten von Regelprozessen')),
-                  array( 'notice', array( Display => 'vis', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                       '(• XXX:)',
                       '(– XXX)',
                     ))),

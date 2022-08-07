@@ -1233,7 +1233,7 @@
 
 		    	<!  • Inspiration  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'vis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'showContent',
             'OM:nSOSp:Home:Inspiration',
               '', 'Sc_f_Paragraph',
                 array(
