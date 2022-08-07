@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Andere Achtsamkeitsprozesse}',
                     '• Ist der führende Achtsamkeitsprozess vielleicht eher als unser fokusierender Achtsamkeitsprozess zu bezeichnen?',
                     '• Gibt es einen Achtsamkeitsprozess des Träumens, einen visionären Achtsamkeitsprozess? Oder ist das der probierende, reflektierende Achtsamkeitsprozess des Verstandes im Schlaf?',
@@ -159,7 +159,7 @@
                   array( 'text', array( text => array(
                     'Wir verändern uns – wir ändern unsere dynamische Struktur, unseren „Speicher“.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Bewusstsein im Achtsamkeitsprozess …',
                     TitleVis => 'Bewusstsein im Achtsamkeitsprozess:', ParagraphList => array(
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:XXX', text =>
@@ -353,7 +353,7 @@
                                            
                 'Klärungen durch den Achtsamkeitsprozess', subline =>
                   '')),
-                  /*array( 'notice', array( Display => 'invis', text => array(
+                  /*array( 'notice', array( Display => 'hideContent', text => array(
                     '• Auf entsprechendes Kapitel verweisen.',
                     '– Bei der Achtsamkeit oder im Achtsamkeitsprozess ist es nicht so einfach zu unterscheiden, ob man in Bezug auf eine Sache in einer Persönlichkeitsentwicklung ist oder ob man etwas erfolgreich und tief verdrängt.',
                     '– Auch wenn man die Gefühle zu den einzelnen Ebenen der Achtsamkeit oder des  Achtsamkeitsprozesses nicht gut trennt oder trennen kann, kann sich selber einiges vor machen.',
@@ -383,7 +383,7 @@
                                            
                 'Die Tücken des Achtsamkeitsprozesses', subline =>
                   '')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Auf entsprechendes Kapitel verweisen.',
                     '– Bei der Achtsamkeit oder im Achtsamkeitsprozess ist es nicht so einfach zu unterscheiden, ob man in Bezug auf eine Sache in einer Persönlichkeitsentwicklung ist oder ob man etwas erfolgreich und tief verdrängt.',
                     '– Auch wenn man die Gefühle zu den einzelnen Ebenen der Achtsamkeit oder des  Achtsamkeitsprozesses nicht gut trennt oder trennen kann, kann sich selber einiges vor machen.',
@@ -400,7 +400,7 @@
                                            
                 'Der Achtsamkeitsprozess ist tief mit dem Leben und mit Physik verbunden', subline =>
                   '')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Auf entsprechendes Kapitel verweisen.',
                     '– Auf Vortrag verweisen, auch als Seite.',
                     '– Der „leichte“ Fluss der Feinstruktur der Elementarteilchen wird durch den Achtsamkeitsprozess gleichmäßig balanciert auf alle Ebenen der Regelprozesse des Lebens verteilt.',
@@ -437,7 +437,7 @@
 
 		    	<!  • Achtsamkeit  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Achtsamkeitsprozess:Achtsamkeit',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -483,7 +483,7 @@
 
 		    	<!  • Nähere Betrachtung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Achtsamkeitsprozess:NaehereBetracht',
               'Die Facetten des Achtsamkeitsprozesses', 'Sc_f_Paragraph',
                 array(
@@ -491,7 +491,7 @@
                       array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:Achtsamkeit', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Vertrauen baut Brücken über die Lücken, in denen das Gefühl nicht gleich befriedigt werden kann.',
                     '– Selbstvertrauen ist deshalb eine Grundlage des Lebens. Es ergänzt den Zirkel des Achtsamkeitsprozesses, indem von den Gefühlen nicht immer gleich zu den Antrieben und von den Antrieben nicht immer gleich zu den Handlungen übergegangen werden muss.',
                     '• Die Philosophie des Yoga aus Sicht des Achtsamkeitsprozesses:',
@@ -567,7 +567,7 @@
 
 		    	<!  • Beobachtbare Hinweise  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Achtsamkeitsprozess:BeobachtHinweise',
               'Die Facetten des Achtsamkeitsprozesses', 'Sc_f_Paragraph',
                 array(
@@ -645,7 +645,7 @@
 
 		    	<!  • Erweiterte Sicht  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Achtsamkeitsprozess:ErweiSicht',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -708,7 +708,7 @@
 
 		    	<!  • Die Physik der Achtsamkeit  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Achtsamkeitsprozess:PhysAchtsa',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -756,7 +756,7 @@
 
 		    	<!  • Zentraler Regelprozess des Lebens  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Achtsamkeitsprozess:AchtsamkeitsprozesGrundlLeben',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -810,7 +810,7 @@
 
 		    	<!  • Neue Anthropologie  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Achtsamkeitsprozess:NeueAnthropologie',
               'Der Achtsamkeitsprozess ermöglicht eine neue Anthropologie', 'Sc_f_Paragraph',
                 array(
@@ -854,7 +854,7 @@
 
 		    	<!  • Künstliche Intelligenz und Robotik  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Achtsamkeitsprozess:KIundRobotik',
               '\\name[undertitle]{OM:SpaLeb:KIundRobotik}', 'Sc_f_Paragraph',
                 array(
@@ -862,7 +862,7 @@
                       array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:NeueAnthropologie', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Kybernetik einführen, siehe \\jump[https://de.wikipedia.org/w/index.php?title=Kybernetik&oldid=217706680]{}{https://de.wikipedia.org/w/index.php?title=Kybernetik&oldid=217706680}.',
                     ))),
                       
@@ -882,7 +882,7 @@
 
 		    	<!  • Mystische Bedeutung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Achtsamkeitsprozess:MystischeBedeutung',
               '', 'Sc_f_Paragraph',
                 array(

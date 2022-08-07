@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(\\bold{Überleitung von der ›Einleitung – Was ist Leben? (Ⅰ)‹})',
                     '(• ›Was ist Leben? (Ⅰ)‹ hat viel mit Physik zu tun, obwohl es philosophisch und etwas esoterisch daher zu kommen scheint.)',
                     '(• Wie kann dieser erste Ansatz in einen Ansatz verpackt, also aus einer Perspektive betrachtet, werden, der in sich klarer und schlüssiger daher kommt und mit dem wir mehr anfangen können?)',

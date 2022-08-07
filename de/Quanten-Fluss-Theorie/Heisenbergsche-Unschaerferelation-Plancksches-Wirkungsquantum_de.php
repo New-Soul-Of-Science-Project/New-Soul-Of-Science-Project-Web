@@ -28,7 +28,7 @@
 		    	<!  • Energie verlinken  >
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Im Kapitel \\jumpname[*Bearb]{OM:FrQFT:HeisenbergUnschaerfe:Schlussfolgerung-fuer-die-Quantenmechanik} steht: \\quote{Diese Ungenauigkeit ist der eigentliche Grund für das Auftreten statistischer Zusammenhänge in der Quantenmechanik.}\\footnote[*Bearb]{\\cite{Heisenberg:UeberQuantKinMech1927Scan}, S. 1.} Sollte dies nicht (auch) in den Vortext? Dieses Zitat ist wenig passend.',
                     '– Auf Seite 2 seiner Arbeit steht, dass aufgrund der gefundenen Relation (dort angegeben) die Begriffe Ort und Geschwindigkeit zu überdenken seien. Ich denke allerdings, dass die hier aufgezeigte Abzählinterpretation es nicht notwendig macht, diese Begriffe in Bezug auf die Realität völlig neu zu überdenken. Denn es wird klar, dass „nur“ die Wahrnehmung prinzipiell unscharf ist und nicht die Realität. Allerdings hat auch die Realität in dem Sinne eine Unschärfe, als dass eine gebundene Struktur nicht wirklich einen Schwerpunkt hat, weil die Wechselwirkungen innerhalb der Struktur eine Verzögerung der Reaktionen der Bestandteile aufeinander mit sich bringen, als natürlich auch die dem zugrunde liegende räumliche Ausdehnung eine Reduktion auf einen Punkt nur bedingt zulässt.',
                     '• Ist die Argumentationsrichtung im Kapitel \\jumpname[*Bearb]{OM:FrQFT:HeisenbergUnschaerfe:Schlussfolgerung-fuer-die-Quantenmechanik} richtig, wenn ich doch aus der Heisenbergschen Unschärferelation zuvor Schlussfolgere, woraus die Feinstruktur besteht? Sollte der Inhalt nicht in den Vortext?',
@@ -168,7 +168,7 @@
           
 		    	<!  • Energie und Zeit  >
 		    	<!    • Photonen und Elementarteilchen verlinken  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit',
               '… sind nicht gleichzeitig beliebig genau messbar', 'Sc_f_Paragraph',
                 array(
@@ -265,7 +265,7 @@
 
           
 		    	<!  • Energie und Zeit – Übergang zur Substruktur  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit-Uebergang-Substruktur',
               '', 'Sc_f_Paragraph',
                 array(
@@ -366,7 +366,7 @@
           
 		    	<!  • Impuls und Ort:  >
 		    	<!    • Bild oder Film erstellen  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:HeisenbergUnschaerfe:Impuls-und-Ort',
               '… sind nicht gleichzeitig beliebig genau messbar', 'Sc_f_Paragraph',
                 array(
@@ -439,7 +439,7 @@
 
 		    	<!  • Schlussfolgerung für die Quantenmechanik:  >
           <!    • Photonen-Modell und Hadronen-Modell verlinken  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:HeisenbergUnschaerfe:Schlussfolgerung-fuer-die-Quantenmechanik',
               'Das Abzählproblem ist der Nachweis der Wirkungsquanten', 'Sc_f_Paragraph',
                 array(

@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Es handelt sich um eine fraktale Quantenmechanik.',
                     '\\bold{Die Quantenmechanik ist emergent:}',
                     '• Tim Palmer bringt in seinem Beitrag die Unentscheidbarkeit, die Unberechenbarkeit und die Vereinheltlichung der Physik zusammen. Er führt darüber die Quantenphysik, die Relativitätstheorie und die Chaos-Theorie näher aneinander heran. \\jump[http://backreaction.blogspot.com/2020/02/guest-post-undecidability.html]{}{Guest Post: “Undecidability, Uncomputability and the Unity of Physics. Part 1.” by Tim Palmer}',
@@ -150,7 +150,7 @@
 
 		    	<!  • XXX  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:De-Broglie-Bohm-Theorie:XXX',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

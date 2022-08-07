@@ -43,7 +43,7 @@
 		    	<!  • Elementarteilchenmodell verlinken  >
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Virtuelle Photonen}',
                     '• Im Falle der Wirkungsquanten (Transversalwellen) sind ihre abgestrahlten virtuellen Wirkungsquanten Longitudinalwellen (siehe \\italic{\\jumpname{OM:FrQFT:Quantengravitation:VereinfModellQGravitation}}, \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung}). Photonen sind ja auch Transversalwellen und, so denke ich, analog dazu sind auch ihre abgestrahlten, rein elektromagnetischen virtuellen Photonen Longitudinalwellen.',
                     '• Im Leptonen-Modell haben wir es hingegen mit einer Mischung zu tun:',
@@ -81,7 +81,7 @@
           
           
 		    	<!  • Elektromagnetische Wechselwirkung:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:ElektroschwacheWW:Elektromagnetische-WW',
               '… entsteht aus einer schwingenden Wirkungsquanten-Polarisation', 'Sc_f_Paragraph',
                 array(
@@ -117,7 +117,7 @@
 
 
 		    	<!  • Schwache Wechselwirkung:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:ElektroschwacheWW:Schwache-WW',
               'Der schwache Isospin und die kurze Wirkungsdistanz ergeben sich anschaulich aus der Asymmetrie der dynamischen Polarisation', 'Sc_f_Paragraph',
                 array(
@@ -185,7 +185,7 @@
           
 		    	<!  • Neutrinos:  >
 		    	<!    • Darauf hinweisen, dass bestimmte Neutrinos nicht an Teilchenumwandlungen beteiligt sein können.  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:ElektroschwacheWW:Neutrinos',
               '… sind nicht ihre eigenen Antiteilchen', 'Sc_f_Paragraph',
                 array(
@@ -236,7 +236,7 @@
           
 
 		    	<!  • Quarks:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:ElektroschwacheWW:Quarks',
               '… sind den Leptonen ähnliche Teilchen mit einem gewissen Unterschied', 'Sc_f_Paragraph',
                 array(
@@ -263,7 +263,7 @@
 
 		    	<!  • Symbolismus:  >
 		    	<!    • Wirkungsquanten-Spin: Könnte mit "clockwise" und "counterclockwise" benannt werden. Rechtsherum oder linksherum im Deutschen.  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:ElektroschwacheWW:Symbolismus',
               'Kategorisierung der Elementarteilchen', 'Sc_f_Paragraph',
                 array(
@@ -320,7 +320,7 @@
 		    	<!    • Photon verlinken  >
 		    	<!    • Fußnote zur Zusammensetzung von Proton und Neutron  >
 		    	<!    • Rechts- und linkshändige Teilchen berücksichtigen  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:ElektroschwacheWW:Teilchenumwandlungen',
               'Transmutationen der Elementarteilchen', 'Sc_f_Paragraph',
                 array(

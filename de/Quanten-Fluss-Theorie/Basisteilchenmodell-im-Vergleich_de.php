@@ -11,7 +11,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Im Basisteilchenmodell hat das Elektron den Spin \\term{ħ} anstatt \\term{½ħ}.\\footnote{Vgl. \\cite{Giese:TheAppMystOfElectron2012}, Kap. 2.1 The Mass of the Electron, S. 2.}',
                     '• Was wusste ich schon bevor ich das Modell kennen gelernt habe und was nicht?',
                     '– Meine Beschreibung des Zusammenhangs zwischen Frequenz und Zeit',
@@ -60,7 +60,7 @@
           
 
 		    	<!  • Gravitation  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Basisteilchenmodell:Gravitation',
               'Im Basisteilchenmodell hat jedes Elementarteilchen die gleiche Quantengravitation. Die Quanten-Fluss-Theorie beschreibt die Quantengravitation der Elementarteilchen realistisch nach deren Masse', 'Sc_f_Paragraph',
                 array(
@@ -68,7 +68,7 @@
                       array(  jump_name => 'OM:FrQFT:Basisteilchenmodell', type => 'back'),
                     )),
                                             
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Dies ist im nachfolgenden Abschnitt \\italic{\\jumpname{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld}} schon aufgegriffen.',
                     ))),
                       
@@ -103,7 +103,7 @@
 
 
 		    	<!  • Elementarteilchen im Gravitationsfeld  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld',
               '', 'Sc_f_Paragraph',
                 array(
@@ -194,7 +194,7 @@
                                            
                 'Geometrieänderung im Gravitationsfeld', subline =>
                   '')),
-                  /* array( 'notice', array( Display => 'invis', text => array(
+                  /* array( 'notice', array( Display => 'hideContent', text => array(
                     '• Diese Herleitung findet sich nun extrem ähnlich in \\jumpname{OM:FrQFT:Quantengravitation:Laengenkontraktion}, also hier anpassen.',
                     ))), */
                   array( 'text', array( text => array(
@@ -299,7 +299,7 @@
 
 
 		    	<!  • Dunkle Materie  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Basisteilchenmodell:Dunkle-Materie',
               '', 'Sc_f_Paragraph',
                 array(
@@ -327,7 +327,7 @@
 
 
 		    	<!  • Vakuum und virtueller Teilchen  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Basisteilchenmodell:Vakuum-und-virtuelle-Teilchen',
               'Das Basisteilchenmodell kennt nicht das Vakuum mit virtuellen Teilchen', 'Sc_f_Paragraph',
                 array(

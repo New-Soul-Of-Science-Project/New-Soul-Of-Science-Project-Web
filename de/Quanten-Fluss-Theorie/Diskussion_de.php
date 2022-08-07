@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Experimente:}',
                     '• Echo beim Verschmelzen von Schwarzen Löchern: Wie sieht das mögliche Echo der Verschmelzung von Schwarzen Löchern in der FrQFT aus? Dies könnte zwischen Ereignishorizont und Photonensphäre nachhallen. Diese Echos werden vielleicht(/wohl) schon gemessen und könnten die FrQFT von anderen Modellen unterscheiden. (Vgl. Hossenfelder, Sabine. \\jump[http://backreaction.blogspot.com/2020/01/do-black-holes-echo.html]{}{Do Black Holes Echo?})',
                     '• Beschleunigung einer Lichtuhr: Was passiert mit dem Licht in einer Lichtuhr, wenn diese senkrecht zur Bewegungsrichtung dieser Uhr beschleunigt wird. Das habe ich mit Teilnehmer meines Meetups \\jump[https://www.meetup.com/de-DE/Physik-Neu-Sehen-Ergruenden-Hamburg/events/267393083/]{}{Einsteins Gedankenexperiment der Lichtuhr}, am 13. Januar 2020, diskutiert. Ein Experiment hierzu wäre aufschlussreich bezüglich der Eigenschaften des Vakuums, des Lichts und der Materie bei Beschleunigung.',
@@ -64,7 +64,7 @@
 
 		    	<!  • Erhaltungssätze, Verschränkung, Quantisierung, Unschärferelation, Symmetriebrüche und Wechselwirkungen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:ErhaltungVerschraeQuantiEtc',
               'Die Verzauberung unseres Verständnisses der Quantensysteme durch deren Entzauberung', 'Sc_f_Paragraph',
                 array(
@@ -110,7 +110,7 @@
 
 		    	<!  • Naturkonstanten und Eichung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Naturkonstanten',
               'Die Berechnung der Gravitationskonstanten und der Elementarteilchenmassen aus der Wirkungsquanten-Struktur', 'Sc_f_Paragraph',
                 array(
@@ -150,7 +150,7 @@
 
 		    	<!  • Zeit  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Zeit',
               'Eine Analyse des neuen Zeitverständnisses', 'Sc_f_Paragraph',
                 array(
@@ -239,7 +239,7 @@
 
 		    	<!  • Bewegungsraum  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Bewegungsraum',
               '… seine Eigenschaften', 'Sc_f_Paragraph',
                 array(
@@ -279,7 +279,7 @@
 
 		    	<!  • Urknall, Schwarze Löcher und der Kosmos  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Urknall-SchwarzeLoecher-Kosmos',
               'Vergleich mit ähnlichen Theorien', 'Sc_f_Paragraph',
                 array(
@@ -327,7 +327,7 @@
 
 		    	<!  • Keine Singularitäten  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Keine-Singularitaeten',
               'In der Quanten-Fluss-Theorie gibt es keine unphysikalischen Singularitäten', 'Sc_f_Paragraph',
                 array(
@@ -374,7 +374,7 @@
 
 		    	<!  • Nichtlokalität  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Nichtlokalitaet',
               'Eine Diskussion', 'Sc_f_Paragraph',
                 array(
@@ -421,7 +421,7 @@
 
 		    	<!  • Relativität und Michelson-Morley-Experiment  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Relativitaet-und-Michelson-Morley-Experiment',
               'Verwirklichung ihrer wesentlichen Eigenschaften, ihr Gültigkeitsbereich und die lorenzianische Interpretation', 'Sc_f_Paragraph',
                 array(
@@ -482,7 +482,7 @@
 
 		    	<!  • Überlichtgeschwindigkeit  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Ueberlichtgeschwindigkeit',
               'der Wirkungsquanten ist nicht direkt wahrnehmbar; ihr möglicher Zusammenhang mit der Nichtlokalität', 'Sc_f_Paragraph',
                 array(
@@ -527,7 +527,7 @@
 
 		    	<!  • Digitales Verhalten der Wirkungsquanten  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Digitales-Verhalten-der-Wirkungsquanten',
               'Die diskrete Struktur der Physik', 'Sc_f_Paragraph',
                 array(
@@ -567,7 +567,7 @@
 
 		    	<!  • Absoluter Raum und absolute Zeit  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Absoluter-Raum-und-absolute-Zeit',
                '… existieren nur im Modell, nicht aber in der Theorie', 'Sc_f_Paragraph',
                 array(
@@ -609,7 +609,7 @@
 
 		    	<!  • Hintergrundunabhängigkeit, Relationismus, Diffeomorphismeninvarianz  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Hintergrundunabhaengigkeit',
               'Die Quanten-Fluss-Theorie schafft ihre eigene flexible Bühne', 'Sc_f_Paragraph',
                 array(
@@ -651,7 +651,7 @@
 
 
 		    	<!  • Paradigmenwechsel zur Quantenmechanik:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Paradigmenwechsel-zur-Quantenmechanik',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -687,7 +687,7 @@
           
 
 		    	<!  • Paradigmenwechsel zur Relativitätstheorie:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Paradigmenwechsel-zur-Relativitaetstheorie',
               'Das Relativitätsprinzip wird abgeschwächt', 'Sc_f_Paragraph',
                 array(
@@ -850,7 +850,7 @@
 
           
 		    	<!  • Das Bewusstsein  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Bewusstsein',
               '', 'Sc_f_Paragraph',
                 array(
@@ -858,7 +858,7 @@
                       //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'invis', text => array(
+                  /*array( 'notice', array( Display => 'hideContent', text => array(
                       '(• XXX)',
                     ))),*/
                       
@@ -879,7 +879,7 @@
 
 
 		    	<!  • Leben in der Fraktalen Quanten-Fluss-Theorie  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:LebenFrQFT',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

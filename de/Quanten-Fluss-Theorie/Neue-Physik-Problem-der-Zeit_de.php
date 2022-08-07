@@ -48,17 +48,17 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                       
-                  array( 'notice', array( Display => 'invis',
+                  array( 'notice', array( Display => 'hideContent',
                     Title => 'Notizen zum Verständnis der Grundlagen der Physik', text => array(
                     '• Siehe die Diskussion \\jumpname{OM:FrQFT:Diskussion:ErhaltungVerschraeQuantiEtc}.',
                     ))),
                       
-                  array( 'notice', array( Display => 'invis',
+                  array( 'notice', array( Display => 'hideContent',
                     Title => 'Notizen zur Physik auf Basis der Graviradiation – einer neuen fundamentalen Wechselwirkung', text => array(
                     '• Siehe \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Graviradiation}.',
                     ))),
                       
-                  array( 'notice', array( Display => 'invis',
+                  array( 'notice', array( Display => 'hideContent',
                     Title => 'Notizen zur Physik auf Basis von Regelprozessen', text => array(
                     '• Die FrQFT/Spannungsspiel Axiome sind:',
                     '– Alles ist dynamische Struktur. (Abgeleitet aus \\italic{\\jumpname{OM:FrQFT:WasIstPhysik}}.)',
@@ -69,7 +69,7 @@
                     '• Physik: Regelprozesse zeigen sich in Newtons Actio gleich Reactio. Denn hierin kommt das grundlegende Konzept von Spieler und Gegenspieler, Agonist und Antagonist, zum Ausdruck. In Bezug auf das Beispiel unseres Sonnensystems und die stabile Bahn der Erde um die Sonne gibt es auch Actio und Reactio. Die Gravitation spielt gegen die Fliehkraft, also gegen die Trägheit, wie alle Wechselwirkungen, die eine Bewegung ändern. Aus Sicht eines Regelprozesses ist die noch einmal gründlich zu analysieren. Hier spielt irgendwie die Kraft gegen die Zeit, die es braucht, eine Wirkung zu entfalten. Was wiederum mit der Zeit die es braucht zusammenhängt, um, aus Sicht der FrQFT, die Wirkungsquanten-Struktur der Erde durch das Gravitationspotenzial der Sonne so umzubauen, dass die Erde ihre Bewegungsrichtung ändert.',
                     ))),
                       
-                  array( 'notice', array( Display => 'invis',
+                  array( 'notice', array( Display => 'hideContent',
                     Title => 'Notizen zur Physik auf Basis von Information ist Energie und dem holografischen Prinzip', text => array(
                     '\\bold{FrQFT}',
                     '• Da die FrQFT auf dynamischer Struktur beruht, ergibt sich in ihr die Messung der Energie einer vom Rest unterscheidbaren Struktur, eines Elementarteilchens z.B., durch die Zählung der Wirkungsquanten – roten Punkte in meinen Animationen – die in der gemessenen Struktur stecken. Daraus ergibt sich die \\jump{OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit}{Heisenbergsche Unschärferelation als Abzählinterpretation}.',
@@ -92,7 +92,7 @@
                     '• Hier wird das \\jump[http://www.sciencedomain.org/abstract/1298]{}{holografische Prinzip im Grundsatz} übernommen und mit der Tetraederstruktur in Verbindung gebracht, die dem Vektor-Gleichgewicht zugrunde liegt.',
                     ))),
                       
-                  array( 'notice', array( Display => 'invis',
+                  array( 'notice', array( Display => 'hideContent',
                     Title => 'Notizen zum neuen Ansatz zur Veränderung der Struktur dieser Seite', text => array(
                     '• Einleitung:',
                     '–o Sie bekommt eine Hypothese, dass Physik, also die physikalischen Objekte und deren Eigenschaften, immer auf dynamischer Struktur beruht. In der makroskopischen Physik, wie der Atomphysik und Chemie ist das gar keine Frage. Erst die Elementarteilchen sollen plötzlich Punktförmig sein. Dabei gibt es auch hier Hinweise auf Struktur, wie ich zeigen werde: Lichtuhr, Heisenbergsche Unschärferelation, Spin.',
@@ -135,7 +135,7 @@
                     '– Aufbauend auf den von mir schon gemachten Erkenntnissen, wie die Heisenbergsche Unschärferelation das Atommodell und die Spins der Elementarteilchen in der FrQFT realisiert sind, untersuchen, wie im Detail die Quantenmechanik Heisenbergs und Sommerfelds mit der hier entwickelten \\italic{Wirkungsquantenmechanik} verbunden sind.',
                     ))),
                       
-                  array( 'notice', array( Display => 'invis',
+                  array( 'notice', array( Display => 'hideContent',
                     Title => 'Notizen zu älteren Überlegungen zur Veränderung der Struktur dieser Seite', text => array(
                     '• Die Lösung des ›Problems der Zeit‹ fußt auf der Annahme/Hypothese, dass jedes Elementarteilchen, jedes physikalische Objekt, aus Bestandteilen besteht, also eine Stuktur besitzt. Weiterhin fußt die Lösung auf der Hypothese, dass diese Bestandteile sich aus eine bestimmten Perspektive konstant bewegungen und ihre Bewegung einer gewissen Form der Zeit entspricht. Und es gibt starke Hinweise auf innere, dynamiche Strukturen der Elementarteilchen in der Physik, die gut zur Lösung des Problems passen.',
                     '• Zeigen, dass die Physik Hinweise auf kleinere Strukturen und deren konstante Bewegung enthält: ›Philosophie der Lichtuhr‹ und ›Heisenbergsche Unschärferelation‹ daher nach vorne. Bei der ›Heisenbergschen Unschärferelation‹ macht die Abzählvermutung wohl auch nur Sinn, wenn sich die Bestandteile konstant und in äquidistantem Abstand zueinander bewegen. Und diese Bestandteile müssen in gewisser Hinsicht gleich sein.',
@@ -146,7 +146,7 @@
                     '• ›Strings aus Wirkungsquanten‹: Die Wirkungsquantenkegel hier nicht erklären, aber vielleicht im Bild lassen und auf die spätere Erklärung andeuten.',
                     ))),
                       
-                  array( 'notice', array( Display => 'invis',
+                  array( 'notice', array( Display => 'hideContent',
                     Title => 'Notizen zur aktuellen Seite', text => array(
                     '• Die Kunst, ein allgemeines Prinzip der Physik zu formulieren, besteht darin, die Physik auf etwas Grundlegendes herunter zu brechen, aus dem anschließend all die Beobachtungen und Theorien der Physik emergieren, also wieder zum Vorschein kommen. Weil dies bisher nicht ohne weiteres gelingt, kann es sich dabei nur um etwas überraschendes handeln, aus dem sich am Ende sowohl die Quantenphysik als auch die Relativitätstheorie ergibt.',
                     '• Die Brüche der Wechselwirkungen haben eine Art von Hierarchie(?): Farbpolarisation, die zur Existenz der Wirkungsquanten-Strings führt -> elektromagnetische Polarisation, die zur Existenz der Photonen führt -> innere schwache Polarisation, die zur Existenz der Leptonen und zur elektromagnetischen Ladung führt -> innerer Bruch der Farbpolarisation, der zur Existenz der Quarks und Gluonen und der zur Farbladung führt -> Bruch der Wirkungsquanten-String-Verteilung im Kosmos, der zur Existenz von Sternen, Schwarzen Löchern und zur Gravitation führt.',
@@ -204,7 +204,7 @@
 
 		    	<!  • Ein Prinzip für Alles  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NeuePhysik:Ein-Prinzip-fuer-Alles',
               'Keine „Weltformel“, aber ein Weltprinzip', 'Sc_f_Paragraph',
                 array(
@@ -240,7 +240,7 @@
 
 		    	<!  • Philosophie der Lichtuhr  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NeuePhysik:Philosophie-der-Lichtuhr',
               'Einstein implementiert über die Lichtuhr ein Teilchenmodell', 'Sc_f_Paragraph',
                 array(
@@ -248,7 +248,7 @@
                       array(  jump_name => 'OM:FrQFT:NeuePhysik:Ein-Prinzip-fuer-Alles', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Gibt es ähnlich auch in der VRT! Was tun?',
                     '• Der jeder Existenz zugrundeliegende Djet-Neheh-Dualismus spielt in der Lichtuhr die Hauptrolle.',
                     '• Auch die Quantenphysik enthält Hinweise darauf, dass Materie-Elementarteilchen Photonen ähnliche Strukturen enthalten, wie durch den Bezug der Formeln von de Broglie und die Schrödinger-Gleichung auf das Plancksche Wirkungsquantum und dessen Zusammenhang mit der \\jump[][*Bearb]{OM:FrQFT:NeuePhysik:Problem-der-Zeit:Equ-EinsteinEnergieLichtQuant-1}{›Einsteinschen Gleichung für das Lichtquant‹}\\footnote[*Bearb]{\\const{FrQFT_g_footnote_text_EinsteinGleichLichtq}} deutlich wird.\\footnote[*Bearb]{Vgl. \\cite{Weiss:ChargeOfAParticle:2008}, Ab. II. Wave model of a particel, S. 2-5, hier S. 2.})'
@@ -322,7 +322,7 @@
 
 		    	<!  • Problem der Zeit  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NeuePhysik:Problem-der-Zeit',
               'Wo hakt es zwischen den Quantenfeldtheorien und der Allgemeinen Relativitätstheorie?', 'Sc_f_Paragraph',
                 array(
@@ -396,7 +396,7 @@
 
 		    	<!  • Lösungsansatz  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NeuePhysik:Loesungsansatz',
               'Erster Ansatz eines allgemeinen Prinzips', 'Sc_f_Paragraph',
                 array(
@@ -404,7 +404,7 @@
                       array(  jump_name => 'OM:FrQFT:NeuePhysik:Problem-der-Zeit', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Die Ausrichtung des Spins von Photonen in und gegen die Flugrichtung wird beobachtet. Vgl. \\cite{wiki:Photon:2015}, Spin. Hier wird auch der Drehimpuls einer zirkular polarisierten elektromagnetischen Welle angegeben. Etwas detailierter noch auf der Seite vom 10.03.2018.',
                     ))),
                       
@@ -506,7 +506,7 @@
 
 		    	<!  • Beobachtungen und naturphilosophische Überlegungen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen',
               'Der Dualismus der Djet- und Neheh-Zeit führt letztendlich zur Vereinheitlichung der Physik', 'Sc_f_Paragraph',
                 array(
@@ -1001,7 +1001,7 @@
 
 		    	<!  • Raum, Zeit und Existenzprinzip  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip',
               'Das strukturelle Existenzprinzip der Elementarteilchen', 'Sc_f_Paragraph',
                 array(
@@ -1009,7 +1009,7 @@
                       array(  jump_name => 'OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Verschoben ins Kapitel \\jumpname[*Bearb]{OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen}?',
                     '• Die \\italic{Feinstruktur der Elementarteilchen und des Vakuums} hier einführen? Damit dies als Link in der \\jumpname[*Bearb]{OM:FrQFT:HeisenbergUnschaerfe} anstatt der \\jump[][*Bearb]{*FrQFT:Feinstruk-Photon-Einf}{„Feinstruktur der Photonen“} genutzt werden kann.',
                     ))),
@@ -1023,7 +1023,7 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:StrukBew', text =>
                                            
                 'Struktur und Bewegung machen Raum und Zeit')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Verschoben ins Kapitel \\jumpname[*Bearb]{OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen}?',
                     '• Diese Überlegung ins Kapitel \\jumpname[*Bearb]{OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen}?',
                     '• Hypothese: Ich gehe davon aus, das alle Eigenschaften von Objekten auf ihrer Struktur basieren.',
@@ -1046,7 +1046,7 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:DjetNeheh', text =>
                                            
                 'Djet- und Neheh-Zeit')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Verschoben ins Kapitel \\jumpname[*Bearb]{OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen}?',
                     '• Diese Überlegung ins Kapitel \\jumpname[*Bearb]{OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen}?',
                     '• Es handelt sich hier um das Verhältnis zwischen Chaos und Ordnung einer Struktur, siehe Einleitung.',
@@ -1095,7 +1095,7 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:Exist', text =>
                                            
                 'Existenzprinzip der Elementarteilchen')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Eine Brücke zur Lösung des Problems der Zeit schlagen.',
                     '• Hier geht es um die Lichtbewegung insgesamt, um die offene und um die geschlossene Lichtbewegung.',
                     ))),
@@ -1147,7 +1147,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Gehört die Alterung(*Alterung-Herlei) nach hier oder doch zum Existenzprinzip?',
                     '• Hier geht es nur um die geschlossene Lichtbewegung. Diese entsteht durch die abermalige Brechung der Bewegung, diesmal der Lichtbewegung, zu einem geschlossenen System. Es entsteht ein neues Neheh aus dem Djet der Lichtbewegung.',
                     '• Die beiden „Herzschläge“ sind eins und fallen nicht auseinander. Denn die Wirkungsquanten-Rotationsfrequenz ist ein ganzes Vielfaches der Phase der Lichtbahn im Materie-Elementarteilchen. Die de Broglie-Frequenz ergibt sich aus der Differenz der Hin- und Rückwelle der „Licht“-Welle im Materie-Elementsrteilchen, siehe \\cite{Weiss:ChargeOfAParticle:2008}, II. Wave model of a particle, E. de Broglie wavelength λd and phase speed cφ. Bei \\cite{Giese:TheAppMystOfElectron2012} wird die de Broglie Frequenz vorausgesetzt.',
@@ -1220,7 +1220,7 @@
 
 		    	<!  • Heisenbergsche Unschärferelation  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation',
               'Ihre Abzählinterpretation offenbart die Feinstruktur der Elementarteilchen', 'Sc_f_Paragraph',
                 array(
@@ -1228,7 +1228,7 @@
                       array(  jump_name => 'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Im Kapitel \\jumpname[*Bearb]{OM:FrQFT:HeisenbergUnschaerfe:Schlussfolgerung-fuer-die-Quantenmechanik} steht: \\quote{Diese Ungenauigkeit ist der eigentliche Grund für das Auftreten statistischer Zusammenhänge in der Quantenmechanik.}\\footnote{\\cite{Heisenberg:UeberQuantKinMech1927Scan}, S. 1.} Sollte dies nicht (auch) hier her?',
                     '• Ist die Argumentationsrichtung im Kapitel \\jumpname[*Bearb]{OM:FrQFT:HeisenbergUnschaerfe:Schlussfolgerung-fuer-die-Quantenmechanik} richtig, wenn ich doch aus der Heisenbergschen Unschärferelation zuvor Schlussfolgere, woraus die Feinstruktur besteht?',
                     ))),
@@ -1291,7 +1291,7 @@
 
 		    	<!  • Strings aus Wirkungsquanten  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten',
               'Wirkungsquanten bilden feine Wirkungsquanten-Strings', 'Sc_f_Paragraph',
                 array(
@@ -1311,7 +1311,7 @@
                                            
                 'Zusammenhalt der Wirkungsquanten')),
                   // #: *Wirkungsquanten-Impulskegel-Herlei
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Eigene Seite Wirkungsquanten?',
                     '• Hier nicht "Zusammenhalt der Wirkungsquanten", sondern "Verknüpfung der Wirkungsquanten"?',
                     '• Denn die Wechselwirkung kann ein aneinander Haften sein, aber auch Graviradiation ohne Haftung!',
@@ -1369,7 +1369,7 @@
 
 		    	<!  • Fraktales Universum  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NeuePhysik:Fraktales-Universum',
               'Kosmos, Urknall und Schwarze Löcher', 'Sc_f_Paragraph',
                 // #: *Universum-fraktales-Herlei
@@ -1378,7 +1378,7 @@
                       array(  jump_name => 'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten', type => 'back'),
                     )),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*Bearb}{Absatz \\italic{Kosmologisches Prinzip und kosmische Zeit} einfügen?}', ParagraphList => array(
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:KosmoPrinzKosmiZeit', text =>
                                            
@@ -1494,7 +1494,7 @@
 
 		    	<!  • Symmetriebrechung und Farbpolarisation  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NeuePhysik:Symmetriebrechung',
               'Das Existenzprinzip enthält Symmetriebruch und Farbpolarisation', 'Sc_f_Paragraph',
                 array(
@@ -1515,7 +1515,7 @@
                   array( 'figure',
                     array_merge( $FrQFT_g_figure_ary_Elapson, array( name => 'OM:FrQFT:NeuePhysik:Fig-Elapson-Farbpolarisation',
                                                           text => '\\const{FrQFT_g_text_SymmetrieBruchFarbpol}'))),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Das Sombrero-Potential der Farbpolarisation einführen. Es scheint ein anderes als das des Higgs-Felds. Oder es sind dort dieses und das der schwachen WW kombiniert.',
                     '• Das Bild vom Elapson mit Spur für Symmetriebrechung mit Sombrero-Potential korrigieren und hier einfügen.',
                     ))),
@@ -1556,7 +1556,7 @@
 
 		    	<!  • Elektromagnetische Polarisation  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation',
               'Photonen tragen die elektromagnetische Polarisation in Reinform', 'Sc_f_Paragraph',
               // #: *Elektromagnetische-Polar-Herlei
@@ -1570,7 +1570,7 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation:Photonen', text =>
                                            
                 'Photonen')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Die Ausrichtung des Spins von Photonen in und gegen die Flugrichtung wird beobachtet. Vgl. \\cite{wiki:Photon:2015}, Spin. Hier wird auch der Drehimpuls einer zirkular polarisierten elektromagnetischen Welle angegeben. Etwas detailierter noch auf der Seite vom 10.03.2018.',
                     ))),
                   // #: *Photonen-Herlei
@@ -1599,7 +1599,7 @@
 
 		    	<!  • Elementarteilchen der Materie  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NeuePhysik:Elementarteilchen-der-Materie',
               'Leptonen, Hadronen, Quarks und ihre Wechselwirkungen', 'Sc_f_Paragraph',
                 // #: *Elementarteilchen-Materie-Herlei
@@ -1633,7 +1633,7 @@
                                                                   'Je größer die Entfernung vom Lepton, desto weniger bedeutsam wird die unterschiedliche Raumlage der Pole.'."\n".
                                                                   'Dieser Effekt lässt die schwache Wechselwirkung auf Entfernung schnell verschwinden.'))),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Dieses Elementarteilchenmodell der Materie-Elementarteilchen ist eine Konstruktion aus der Philosophie der Lichtuhr, dem Existenzprinzip, dem Photonen-String und den bekannten Eigenschaften der Elementarteilchen der Materie (Elektron?). Der jeder Existenz zugrundeliegende Djet-Neheh-Dualismus spielt in der Lichtuhr die Hauptrolle.',
                     '• Einstein überträgt durch das Gedankenexperiment seiner Lichtuhr die hierfür wesentlichen strukturellen Eigenschaften auf Materie, wenn er sagt, dass alle Uhren und auch alle anderen Prozesse der Materie so funktionieren. Dabei handelt es sich um die Bewegung mit Lichtgeschwindigkeiten und um die lokale Bindung dieser Bewegung in einem System. (Siehe \\jumpname[*Bearb]{OM:VRT:Vereinheitlichung-RT-LET:Philosophie-der-Lichtuhr}) Dies spielt auch im folgenden Kapitel \\jumpname[*Bearb]{OM:FrQFT:NeuePhysik:Relativitaet:RP} eine Rolle.',
                     '• Das Elementarteilchenmodell der Materie ergibt zusammen mit den Spins der Elementarteilchen und den Polarisationen der Wirkungsquanten-Strings das Elementarteilchenmodell der FrQFT. Ob es auch Strings gibt, womit Dunkle Materie Teilchen gemeint sind, die nicht elektromagnetisch interagieren weil sie elektromagnetisch völlig unpolarisiert sind, muss untersucht werden.',
@@ -1719,7 +1719,7 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Elementarteilchen-der-Materie:UTGA', text =>
                                            
                 'Überschuss von Teilchen gegenüber Antiteilchen')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Es gibt hierzu noch eine Überlegung, die mit der Hawkingstrahlung zu tun hat. Bei ihr trennen sich ja Teilchen und Antiteilchen am Ereignishorizont eines Schwarzen Lochs / Kosmos. Welches Teilchen fliegt nach außen und welches nach innen?',
                     ))),
                   array( 'text', array( text => array(
@@ -1742,7 +1742,7 @@
 
 		    	<!  • Relativität und Machsches Prinzip  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NeuePhysik:Relativitaet',
               'Das Relativitätsprinzip ergibt sich aus der real eingeschränkten Messbarkeit der Lichtgeschwindigkeit', 'Sc_f_Paragraph',
                 array(
@@ -1750,14 +1750,14 @@
                       array(  jump_name => 'OM:FrQFT:NeuePhysik:Elementarteilchen-der-Materie', type => 'back'),
                     )),
 
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Einstein überträgt durch das Gedankenexperiment seiner Lichtuhr die hierfür wesentlichen strukturellen Eigenschaften auf Materie, wenn er sagt, dass alle Uhren und auch alle anderen Prozesse der Materie so funktionieren. Dabei handelt es sich um die Bewegung mit Lichtgeschwindigkeiten und um die lokale Bindung dieser Bewegung in einem System. (Siehe VRT) Dies spielt auch im vorhergehenden Kapitel \\jumpname[*Bearb]{OM:FrQFT:NeuePhysik:Elementarteilchen-der-Materie} eine Rolle.',
                     ))),
                       
                     array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Relativitaet:RP', text =>
                                              
                 'Relativitätsprinzip')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Das Relativitätsprinzip hat Vorrangig damit zu tun, dass ein Beobachter nicht seine eigene Geschwindigkeit oder die eines anderen Körpers in Bezug auf ein vermeitnlich existierendes Medium messen kann, siehe \\jump[][*Bearb]{OM:VRT:Vereinheitlichung-RT-LET:Loesung-des-Problems-der-Zeit}{Lösung des ›Problems der Zeit‹ in der Vereinheitlichte Relativitätstheorie}. Ähnliches wird im Abschnitt \\jumpname[*Bearb]{OM:FrQFT:NeuePhysik:Relativitaet:SRT} erklärt.',
                     ))),
                   array( 'text', array( text => array(
@@ -1823,7 +1823,7 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Relativitaet:ART-MP', text =>
                                            
                 'Allgemeine Relativitätstheorie, Machsches Prinzip und Kosmologisches Prinzip')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Hier einflechten, dass die gekrümmte Raumzeit aus dem euklidisch flachen Wirkungsquanten-Bewegungsraum und aus dem dazu gekrümmt erscheinenden Lichtbewegungsraum besteht.',
                     ))),
                   array( 'text', array( text => array(
@@ -1861,7 +1861,7 @@
 
 		    	<!  • Quantengravitation und Higgs-Mechanismus  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NeuePhysik:Quantengravitation',
               'Ein der populärwissenschaftlichen Analogie des Higgs-Mechanismus erstaunlich ähnliches Phänomen ist Teil der neuen Quantengravitation', 'Sc_f_Paragraph',
                 array(
@@ -1869,7 +1869,7 @@
                       array(  jump_name => 'OM:FrQFT:NeuePhysik:Relativitaet', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Die Gravitation wird sichtbar, weil die Wirkungsquanten-Verteilung im Kosmos einem lokalen Symmetriebruch unterliegt, siehe \\jumpname[*Bearb]{OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:EuklFlachKos}. Hier einfließen lassen! So kann das \\italic{Funken} der Wirkungsquanten einer Masse tatsächlich als Graviradiation bezeichnet werden. Während die Gravitation der lokalen Ungleichverteilung der Wirkungsquanten entspringt.',
                     '• Graviradiation einfügen?',
                     ))),
@@ -1916,7 +1916,7 @@
 
 		    	<!  • Relativistische Quantenfeldtheorien und Co  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NeuePhysik:Quantenfeldtheorie',
               'Das neue, allgemeine Prinzip enthält die Grundzüge der modernen Quantenphysik', 'Sc_f_Paragraph',
                 array(
@@ -1924,7 +1924,7 @@
                       array(  jump_name => 'OM:FrQFT:NeuePhysik:Quantengravitation', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Einpflegen: Im Vortext der Theorie steht nun eine gute, zusammenfassende Beschreibung!',
                     ))),
                       

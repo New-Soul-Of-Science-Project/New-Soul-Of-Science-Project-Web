@@ -8,7 +8,7 @@
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
-  //           20220807:  +:  "To_f_Paragraph", "fade-in-area":  Fix mix-up in comparison to the other cases of 'invis' and 'vis' in 'fade-in-area' and 'notice'.
+  //           20220807:  +:  "To_f_Paragraph", "fade-in-area":  Fix mix-up in comparison to the other cases of 'hideContent' and 'vis' in 'fade-in-area' and 'notice'.
   //           20220702:  +:  "$To_g_Text_replace_ary":  '∘' -> '&#8728;' entry new.
   // v01.005:  20130713:  +:  "To_f_Paragraph":  Type "quote" is new.
   //           20130714:  +:  "To_f_Chapter_v1":  Is new.
@@ -2087,7 +2087,7 @@
           echo "\n";
 
           // #: Here "Display" have to be inverted, because (XXX?)!
-          To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'vis' : (($text[Display] == 'vis') ? 'invis' : 'vis')));
+          To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'vis' : (($text[Display] == 'vis') ? 'hideContent' : 'vis')));
           
           echo "\n";
           echo $offset.'</div>'."\n";
@@ -2095,7 +2095,7 @@
         else
         {
           // #: 'vis': Without content.
-          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-invis" style="display: '.(($start_display == 'invis') ? '' : 'none').';">'."\n";
+          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-invis" style="display: '.(($start_display == 'hideContent') ? '' : 'none').';">'."\n";
           $To_g_elements_hides_ary[noContentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
@@ -2113,9 +2113,9 @@
           echo $offset.'</div>'."\n";
           echo "\n";
         
-          // #: 'invis': With content.
-          //%!echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'invis') ? 'none' : '').'; background-color: #F9F9F9;">'."\n";
-          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-vis" style="display: '.(($start_display == 'invis') ? 'none' : '').';">'."\n";
+          // #: 'hideContent': With content.
+          //%!echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'hideContent') ? 'none' : '').'; background-color: #F9F9F9;">'."\n";
+          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-vis" style="display: '.(($start_display == 'hideContent') ? 'none' : '').';">'."\n";
           $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
@@ -2137,7 +2137,7 @@
           echo "\n";
 
           //%! #: Here "Display" have to be inverted, because (XXX?)!
-          //%! To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'vis' : (($text[Display] == 'vis') ? 'invis' : 'vis')));
+          //%! To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'vis' : (($text[Display] == 'vis') ? 'hideContent' : 'vis')));
           To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'vis' : $text[Display]));
         }
 
@@ -2150,7 +2150,7 @@
           foreach ($text[text] as $text_ele)
             $text_sum .= $text_ele.' \\\\'."\n";
           
-          $Glo_g_Paragraph_fn( 'fade-in-area', $replace_ary, $replace_preg_ary, $offset, array( Display => ((array_key_exists( Display, $text)) ? $text[Display] : 'invis'),
+          $Glo_g_Paragraph_fn( 'fade-in-area', $replace_ary, $replace_preg_ary, $offset, array( Display => ((array_key_exists( Display, $text)) ? $text[Display] : 'hideContent'),
                       Title => '\\color{*Bearb}{'.((array_key_exists( Title, $text)) ? $text[Title] : 'Notizen').'}', ParagraphList => array(
                     array( 'text', array( text => array(
                       '\\color{*Bearb}{'."\n".
@@ -2261,7 +2261,7 @@
   }
   
   
-  function To_f_Chapter_v1( $replace_ary, $replace_preg_ary, $offset='          ', $display='invis',
+  function To_f_Chapter_v1( $replace_ary, $replace_preg_ary, $offset='          ', $display='hideContent',
                             $headline_name, $headline_addon='', $Paragraph_fn=null, $paragraph_list=null)
   {
     global $Glo_g_Site_ary, $Glo_g_Site_activ;
@@ -2294,7 +2294,7 @@
   }
   
   
-  function To_f_Chapter( $replace_ary=null, $replace_preg_ary=null, $offset='          ', $display='invis',
+  function To_f_Chapter( $replace_ary=null, $replace_preg_ary=null, $offset='          ', $display='hideContent',
                           $headline_text='', $headline_text_short='', $headline_name='', $headline_addon='', $paragraph_list)
   {
     To_f_headline_add_hides_begin( $headline_text, $headline_text_short, $headline_name, $offset, $display);
@@ -2356,7 +2356,7 @@
   }
   
   
-  function To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $a_elements_hides_ary_idx, $switch_display='invis', $already_pushed_is=false)
+  function To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $a_elements_hides_ary_idx, $switch_display='hideContent', $already_pushed_is=false)
   
   // #: Works textly after the generation of the equation only.
   
@@ -2451,7 +2451,7 @@
   }
   
   
-  function To_f_headline_add_hides_begin_v1( $headline_name='', $offset='          ', $display='invis')
+  function To_f_headline_add_hides_begin_v1( $headline_name='', $offset='          ', $display='hideContent')
   {
     global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ, $To_g_Text_replace_ary, $To_g_headline_ary_dim, $To_g_headline_ary, $To_g_headline_last_elements_hides_ary_dim, $local_elements_hides_ele_num, $To_g_elements_hides_ary_dim, $To_g_elements_hides_ary;
     
@@ -2459,7 +2459,7 @@
   }
   
   
-  function To_f_headline_add_hides_begin( $headline_text='', $headline_text_short='', $headline_name='', $offset='          ', $display='invis')
+  function To_f_headline_add_hides_begin( $headline_text='', $headline_text_short='', $headline_name='', $offset='          ', $display='hideContent')
   {
     global $Glo_PathRel_back, $To_g_Text_replace_ary, $To_g_headline_ary_dim, $To_g_headline_ary, $To_g_headline_last_elements_hides_ary_dim, $local_elements_hides_ele_num, $To_g_elements_hides_ary_dim, $To_g_elements_hides_ary;
     
@@ -2480,7 +2480,7 @@
     
     if (0 < strlen( $headline_text))
     {
-      //echo '<a name="'.$headline_name.'"></a>'."\n";     // #!: Moved into 'invis' "h2" to make the headline hide visible if jumped to.
+      //echo '<a name="'.$headline_name.'"></a>'."\n";     // #!: Moved into 'hideContent' "h2" to make the headline hide visible if jumped to.
       //%!echo $offset.'<table border="0" style="margin: 0; margin-left: 10px; margin-top: 10px; margin-bottom: 10px; padding: 0;"> <colgroup> <col width="668"> </colgroup>'."\n";
       echo $offset.'<table border="0" style="margin-top: 10px; margin-bottom: 10px; padding: 0;"> <colgroup> <col width="668"> </colgroup>'."\n";
       
@@ -2498,16 +2498,16 @@
       echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'vis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Down.jpg" width="32" height="12" border="0" alt="einblenden" title="einblenden" align="right" style="margin: 0; padding: 0;"> </a> </td>'."\n";
       echo $offset.'  </tr>'."\n";
       
-      // #: 'invis': With content.
+      // #: 'hideContent': With content.
       echo $offset.'  <tr id="Elements-Hides-'.$To_g_headline_last_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: ';
-      if ($start_display == 'invis')
+      if ($start_display == 'hideContent')
         echo 'none';
       else
         echo '';
       echo ';">'."\n";
       $To_g_elements_hides_ary[contentAry][$To_g_headline_last_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
       $local_elements_hides_ele_num++;
-      // #!: The anchor was moved into 'invis' "h2" to make the headline hide visible if jumped to.
+      // #!: The anchor was moved into 'hideContent' "h2" to make the headline hide visible if jumped to.
       //%!echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <h2 style="margin: 0; margin-left: 0px; padding: 0;"><a name="'.$headline_name.'"></a><a href="javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="ausblenden">'.$headline_text.'</a></h2> </td>'."\n";
       //%!echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a name="'.$headline_name.'"></a><a href="javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="ausblenden"><h2 style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
       echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a name="'.$headline_name.'" href="javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="ausblenden"><h2 style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
@@ -2519,9 +2519,9 @@
       echo $offset.'<a name="'.$headline_name.'"></a>'."\n";
     }
     
-    // #: 'invis': Header of content.
+    // #: 'hideContent': Header of content.
     echo $offset.'<div id="Elements-Hides-'.$To_g_headline_last_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: ';
-    if ($start_display == 'invis')
+    if ($start_display == 'hideContent')
       echo 'none';
     else
       echo '';
@@ -2537,7 +2537,7 @@
   }
   
   
-  function To_f_headline_add_hides_end( $offset='          ', $display='invis')
+  function To_f_headline_add_hides_end( $offset='          ', $display='hideContent')
   {
     global $Glo_PathRel_back, $To_g_headline_ary_dim, $To_g_headline_ary, $To_g_headline_last_elements_hides_ary_dim, $local_elements_hides_ele_num, $To_g_elements_hides_ary_dim, $To_g_elements_hides_ary;
 
@@ -2546,12 +2546,12 @@
     
     //echo '  <br>'."\n";
     
-    // #: 'invis': Footer of content.
+    // #: 'hideContent': Footer of content.
     //%!echo '  <table border="0" style="margin: 0; margin-left: 10px; margin-top: 10px; margin-bottom: 10px; padding: 0;"> <colgroup> <col width="668"> </colgroup>'."\n";
     echo '  <table border="0" style="margin-top: 10px; margin-bottom: 10px; padding: 0;"> <colgroup> <col width="668"> </colgroup>'."\n";
     
     echo $offset.'    <tr id="Elements-Hides-'.$To_g_headline_last_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: ';
-    if ($start_display == 'invis')
+    if ($start_display == 'hideContent')
       echo 'none';
     else
       echo '';

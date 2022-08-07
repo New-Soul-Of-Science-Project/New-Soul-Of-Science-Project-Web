@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(\\bold{Facetten des ›Problems der Zeit‹:})',
                     '(• Die Relativitätstheorie und die Teilchenphysik tragen in ihrer heutigen Interpretation einen fundamentalen Widerspruch in sich: Wie kann es sein, dass ein Photon, das sich doch mit Lichtgeschwindigkeit bewegt und in dem daher angeblich die Zeit stillstehen muss, ein sich schwingend veränderndes elektromagnetisches Feld „in sich“ trägt? Besonders dann, wenn wir analysieren, dass die Teilchen zwar theoretisch punktförmig, aber in der Realität eine Ausdehnung haben sollten, bemerke das Natürlichkeitsprinzip, dass auch zu der Erkenntnis führt, dass unendlich große Werte nicht vorkommen sollten, die bei Punktteilchen nicht zu vermeiden sind. Vgl. \\cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, S. 14.)',
                     '(• Zeit muss differenzierter betrachtet und interpretiert werden, wenn wir diesen Widerspruch loswerden wollen. Tun wir dies, stellen wir fest, dass es nur ein scheinbarer Widerspruch ist. Denn die Schwingung des elektromagnetischen Feldes benötigt zwar Zeit, im Sinne einer generellen Veränderung, aber sie trägt nichts zur Alterung des Photons bei, nämlich zu seiner grundsätzlichen Veränderung. Und zwar altert das Photon durch seine Schwingung nicht, weil es sich nach einer bestimmten Zeit, seinem Schwingungsdurchgang, wieder genau in dem gleichen Zustand befindet, wie zuvor.)',
@@ -88,7 +88,7 @@
                     'Zum Schluss wird eine Zusammenfassung, ein Fazit und ein Ausblick formuliert.'."\n".
                     'Ergänzend werden verschiedene Ideen, die so nicht in die Arbeit passen und teilweise sehr spekulativ sind, diskutiert sowie Vergleiche mit anderen Theorien angestellt.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*Bearb}{Notiz: Alte Einleitung}', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Mit der hier entwickelten fraktalen Quanten-Fluss-Theorie schaffe ich einen Rahmen, in dem ich die gesamte Physik aus einem allgemeinen Prinzip heraus erklären möchte.'."\n".
@@ -186,7 +186,7 @@
 
 		    	<!  • Ausgangssituation der modernen Physik  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Einleitung:Ausgangssituation',
               'Eine Stagnation, die sich zu einer Krise entwickelt', 'Sc_f_Paragraph',
                 array(
@@ -290,7 +290,7 @@
 
 		    	<!  • Fundierung der neuen Physik  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Einleitung:Fundierung',
               'Phänomenologische und naturphilosophische Fundierung – Ansatz, Hypothesen, Taburelativierungen und Folgerungen', 'Sc_f_Paragraph',
                 array(
@@ -387,7 +387,7 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Neuinterpretation benötigt Relativierung von Denktabus')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Vielleicht besser Denkbarrieren?',
                     ))),
                   array( 'text', array( text => array(
@@ -513,7 +513,7 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Taburelativierung: Medium des Lichts')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Ohne Medium gibt es keine Gleichzeitigkeit. Eine Definition der Gleichzeitigkeit ist in der Quantenphysik unabdingbar, denn entweder muss die Auflösung von Verschränkungen Gleichzeitig an zwei unterschiedlichen Orten passieren (Kopenhagener Deutung der QM) und/oder die Wellenfunktion bzw. das Quantenpotenzial benötigt eine Definition der Gleichzeitigkeit. Ohne Gleichzeitigkeit gibt es demnach keine Vereinheitlichung der Physik.)',
                     ))),
                   array( 'text', array( text => array(

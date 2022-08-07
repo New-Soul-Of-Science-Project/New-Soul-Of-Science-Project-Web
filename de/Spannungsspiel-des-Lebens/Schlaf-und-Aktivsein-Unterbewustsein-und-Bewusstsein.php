@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Biologischer Bezug}',
                     '• Die weibliche Gefühlsseite unseres Achtsamkeitsprozesses ist mit unserem Parasympathikus, dem parasympathischen Teil unseres zentralen Nervensystems verknüpft.',
                     '– Wird unser Parasympathikus aktiviert, dann beruhigen wir uns vornehmlich, bis in den Schlaf.',
@@ -200,7 +200,7 @@
 
 		    	<!  • XXX  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Schlaf-und-Aktivsein:XXX',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

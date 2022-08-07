@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Siehe auch \\italic{\\jumpname[][title]{OM:SpaLeb:Psyche-und-Stimmung:Entscheidungen}} und \\italic{\\jumpname[][title]{OM:SpaLeb:Psychosomatik-Entscheidungen}}.)',
                     '(• Alles in den Medien ist Interpretation: \\quote{… Framing machen wir nicht. Wir wollen die Dinge einfach darstellen, wie sie sind. Und dass man einfach so naiv ist zu glauben, man könnte Sprache und Bilder – subjektive Zeichen – nutzen, um etwas darzustellen wie es ist. Als wär\'s nicht immer eine Interpretation. Immer – für jedes Wort, wofür ich mich entscheide, und gegen ein anderes –, beim genau gleichen Sachverhalt, ist es nunmal immer ein bestimmter Eindruck, ein bestimmtes Bild, [Ken Jebsens Einwurf: Es ist … es ist perspektivisches Sehen] es ist eine Perspektive, ganz genau.} Sabine Schiffer über die ›Hart aber Fair‹ Redaktion. \\jump[https://kenfm.de/zur-sache-gez/]{}{ZUR SACHE: GEZ – Was bekommt der Kunde für die Zwangsabgabe?}, Sek. 49:33.)',
                     '(• \\bold{Perspektiven allgemein:})',
@@ -260,7 +260,7 @@
 
 		    	<!  • Wahrnehmung, Realität, Wahrheit und Objektivität  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Vor-PerspektivW-AmbiguitaetsT-Entscheid-Demokra:WahrnehmRealiWahrhObjekt',
               'Erweiterter Vortrag', 'Sc_f_Paragraph',
                 array(
@@ -346,7 +346,7 @@
                     'Zum Thema Wissenschaftsgeschichte lass ich einen Artikel von John L. Heilbron mit dem Titel ›Die Quantisierung des Atoms‹.\\footnote{Vgl. \\cite{Heilbron:DieQuantisierungDesAtoms2013}.}'."\n".
                     'Der Anlass des Artikels war das 100-jährige Jubiläum des Atommodells von Niels Bohr aus dem Jahr 1913.'."\n".
                     'Darin machte John Heilbron darauf aufmerksam, wie wichtig es sein kann Toleranz gegenüber Mehrdeutigkeiten zu haben:'."\n"))),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                       '(• Ambiguitätstoleranz näher und besser erklären oder klar machen.)',
                     ))),
                       
@@ -479,7 +479,7 @@
                     'So funktioniert in meinen Augen unser rudimentäres Bewusstsein\\color{*Bearb}{(Link)}.'."\n"))),
                       
                   // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                      Title => '\\color{*CloserDesc}{Bewusstsein aus naturphilosophischer und naturwissenschaftlicher Perspektive}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
                         'Kommt noch ein umfangreiches Gedächtnis hinzu, haben wir es mir höherem Bewusstsein\\color{*Bearb}{(Link)} zu tun.'."\n"))),

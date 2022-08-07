@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Regelprozesse spielen in der Physik meiner \\jump[][*Bearb]{OM:FrQFT:Home}{FrQFT} eine zentrale Rolle. Siehe notizen zur \\jump[][*Bearb]{OM:SpaLeb:Einleitung}{Einleitung}.)',
                     '(• Den \\jump[][*Bearb]{OM:NPYo:Einleitung:ErkenneDichSelbst:Achtsamkeitsprozess}{Achtsamkeitsprozess} als zentralen Prozess unseres Überlebens einbeziehen: Lebenslang leben lernen, uns selber kennenlernen und erforschen.)',
                     ))),
@@ -290,7 +290,7 @@
 
 		    	<!  • XXX  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php /*To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php /*To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Vorwort:XXX',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

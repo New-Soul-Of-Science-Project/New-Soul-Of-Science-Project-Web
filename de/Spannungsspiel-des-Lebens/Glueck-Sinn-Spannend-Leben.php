@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{"Make your life a celebration!"}',
                     '• Aus: Mike Love Sings \\jump[https://www.youtube.com/watch?v=NKx_kxR9hWU]{}{"I Love You & Permanent Holiday" Live at Woodstock Poland 2016}, Sek. 13:57.',
                     '• Zelebrieren heißt, den Dingen Bedeutung (Sinn, Orientierung) zu geben, sich mit den Dingen und der Welt verbinden (\\jump{OM:NPYo:Spiritualitaet-Psychologie}{Spiritualität}). — Das können wir für jedes kleine Ding, das wir tun, machen.',
@@ -207,7 +207,7 @@
 
 		    	<!  • Resilienz  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Glueck:Resilienz',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

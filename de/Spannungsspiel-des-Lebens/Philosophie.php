@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Philosophieren über Esoterik, alternative Wissenschaft und akademische Wissenschaft}',
                     '• Josef Gaßner und Harald Lesch diskutieren darüber: \\jump{https://www.youtube.com/watch?v=OPQtrDTPXsA}{Harald Lesch zu komplexen Systemen, Esoterik und alternativen Weltbildern | Lesch & Gaßner}',
                     '\\bold{Neues Verständnis der Philosophie}',
@@ -184,7 +184,7 @@
 
 		    	<!  • Sinnstiftung bedeutet Existenzstiftung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Philosophie:SinnBedeuExistenz',
               'Warum gibt es mich überhaupt? \\\\ Warum mache ich das überhaupt?', 'Sc_f_Paragraph',
                 array(

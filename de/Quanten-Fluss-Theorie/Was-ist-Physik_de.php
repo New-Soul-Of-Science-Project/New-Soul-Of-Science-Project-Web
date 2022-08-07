@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(\\bold{Die Grundlagen der Physik noch zusätzlich aus der Perspektive des Messens entwickeln})',
                     '(• Siehe auch Notiz ganz unten.)',
                     '(• Hier oder auf einer Extraseite?)',
@@ -48,7 +48,7 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:Vortext:XXX', text =>
                       
                 'Hypothesen')),
-                  //array( 'notice', array( Display => 'invis', text => array(
+                  //array( 'notice', array( Display => 'hideContent', text => array(
                   //  '(•o Die Vereinfachnung der Bestandteile der Dinge durch die Zerlegung der Dinge zeigt, dass bei der Zerlegung etwas verloren geht, nämlich der Zusammenhang. Deshalb ist das Ding mehr als die Summe seiner Teile.)',
                   //  ))),
                   array( 'text', array( text => array(
@@ -157,7 +157,7 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:Vortext:XXX', text =>
                       
                 'Warum ergeben sich konstante Geschwindigkeiten der Bestandteile der Dinge?')),
-                  /*array( 'notice', array( Display => 'invis', text => array(
+                  /*array( 'notice', array( Display => 'hideContent', text => array(
                     '(• XXX)',
                     ))),*/
                   array( 'text', array( text => array(
@@ -175,7 +175,7 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:Vortext:XXX', text =>
                       
                 'Die Veränderung der Strukturen der Dinge hat zwei zeitliche Aspekte')),
-                  /*array( 'notice', array( Display => 'invis', text => array(
+                  /*array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Bild einfügen)',
                     ))),*/
                   array( 'text', array( text => array(
@@ -247,7 +247,7 @@
                     'Ich interpretiere Djet hier in abgewandelter Form als die ewige Entwicklung der Welt, also als eine zeitliche Veränderung und nicht als Vollendet oder als die gesamte Entwicklung enthaltend.'."\n"))),*/
                       
                   // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                      Title => '\\color{*CloserDesc}{Bezug zum Hinduismus: Djet- und Neheh-Zeit und die drei kosmischen Funktionen des Hinduismus}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
                     'Im Hinduismus gibt es die drei kosmischen Funktionen der Erschaffung, Erhaltung und Zerstörung oder Umformung, die Trimurti\\footnote{\\const{FrQFT_g_footnote_text_Trimurti}} (übersetzt »drei Formen«).'."\n".
@@ -258,7 +258,7 @@
                     'Der Zusammenhang von Brahma und Shiva mit der Djet-Zeit macht sichtbar, dass die Schöpfung und die Zerstörung über die Umwandlung, die Transformation der Dinge, und die Transzendenz miteinander verbunden und zwei Seiten der selben Medaille sind.'."\n"))),
                     ))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*CloserDesc}{Bezug zur heutigen und zur neuen Physik}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
                     'Die Alterung der Dinge, das Voranschrauben oder die Translation der Spiralbahn in \\jumpname{OM:FrQFT:WasIstPhysik:Vortext:Fig-Elapson-Existenzprinzip} – in diesem Fall die Alterung des Vakuums oder Kosmos –, entspricht der Lichtgeschwindigkeit und somit der Zeit der Relativitätstheorie.'."\n",
@@ -288,7 +288,7 @@
                     'Weil es sich beim Djet-Neheh-Dualismus dementsprechend um eine Kombination einer Rotationsbewegung mit einer geradlinigen Bewegung handelt,'."\n".
                     'hat die kombinierte Bewegung die Form einer Helixspiralbahn, mit sehr konstanter Geschwindigkeit wie oben erläutert.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*CloserDesc}{Bezug zur heutigen Physik: Der Welle-Teilchen-Dualismus}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
                     'Der aus der Physik bekannte Welle-Teilchen-Dualismus ist nichts anderes als das Erscheinungsbild des Djet-Neheh-Dualismus in mikroskopisch kleinen Größenordnungen,'."\n".
@@ -317,7 +317,7 @@
                     'der Physik zu verstehen und verbinden die Grundlagenphysik mit jeder Naturwissenschaft und schließlich sogar mit der \\jump{OM:SpaLeb:Home}{Naturphilosophie des Lebens}.'."\n"))),
                      
                   // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*CloserDesc}{Bezug zur heutigen und zur neuen Physik}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
                     'Bei der elektrischen Ladung beispielsweise wird im Prinzip ein neutrales Ding so in zwei entgegengesetzt geladene Teile – positiver Pol und negativer Pol – aufgeteilt,'."\n".
@@ -356,7 +356,7 @@
                     //'Nur wenn ein Bestandteil in dieser Struktur seinen Platz wechselt, ist es vorübergehend frei.'."\n"))),
                       
                   // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*CloserDesc}{Bezug zur heutigen und zur neuen Physik}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
                     'Kommt man in dieser verschachtelten Struktur zum immer größer Werdenden hin, auf die Ebene der uns bekannten Elementarteilchen, dann muss sich ein Wandel'."\n".
@@ -383,7 +383,7 @@
                     'Sie existiert in dieser Form allerdings nur, weil wir uns im Modell auf eine unterste Ebene dieser Struktur festgelegt haben.'."\n"))),
                       
                   // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*CloserDesc}{Bezug zur heutigen und zur neuen Physik}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
                     'Eine solche grundlegende oder absolute Zeit der Struktur der Physik wird heute, begründet durch die Relativitätstheorie, abgelehnt.'."\n".
@@ -407,7 +407,7 @@
                     ))),
                       
                   // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*CloserDesc}{Weitreichender Bezug zur heutigen und zur neuen Physik}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
                     'Abschließend möchte ich noch einen zusammenfassenden Bezug zur heutigen Physik und zur hier entwickelten neuen Physik herstellen, um die Zusammenhänge und die Faszination der'."\n".
@@ -492,7 +492,7 @@
                     ))),
                       
                   // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*CloserDesc}{Kritische Aspekte der heutigen Physik}', ParagraphList => array(
                   /*array( 'text', array( TextColor => '*CloserDesc', text => array(
                     'XXX'."\n".
@@ -514,7 +514,7 @@
                     'Ich bin gespannt, was sich in dieser Hinsicht noch ergibt.'."\n"))),
                     ))),
 
-                  array( 'notice', array( Display => 'invis',
+                  array( 'notice', array( Display => 'hideContent',
                     Title => 'Notiz – Die Grundlagen der Physik noch zusätzlich aus der Perspektive des Messens entwickeln', text => array(
                     '(• Siehe auch Notiz ganz oben.)',
                     '(• Hier oder auf einer Extraseite?)',
@@ -532,7 +532,7 @@
 
 		    	<!  • XXX  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php /*To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php /*To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:WasIstPhysik:XXX',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

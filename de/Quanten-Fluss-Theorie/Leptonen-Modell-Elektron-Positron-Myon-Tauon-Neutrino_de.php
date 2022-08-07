@@ -43,7 +43,7 @@
 
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Zu untersuchende Eigenschaften}',
                     '• \\bold{\\italic{Phasenzahl bzw. Wellenanzahl}}',
                     '– \\italic{Elektronen-Radius:} Passt der Elektronen-Radius, der wohl über das elektromagnetische Feld des Elektrons berechnet werden kann, in dieses Modell? Siehe \\jump[https://de.wikipedia.org/w/index.php?title=Elektron&oldid=208321591#Klassischer_Radius_und_Punktförmigkeit]{}{Wikipedia: Elektron, Klassischer Radius und Punktförmigkeit}. Kann die Phasenzahl bzw. Wellenanzahl hiermit in Zusammenhang gebracht werden?',
@@ -91,7 +91,7 @@
           
 
 		    	<!  • Zeit und Alterung:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Zeit-und-Alterung',
               'Vereinheitlichung der Physik durch ein strukturelles Verständnis der Zeit', 'Sc_f_Paragraph',
                 array(
@@ -99,7 +99,7 @@
                       array(  jump_name => 'OM:FrQFT:Lepton', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Ansatz}',
                     '• Lichtuhr ist im Zentrum',
                     '• Scheinbarer Widerspruch des ›Problems der Zeit‹ wird gelöst',
@@ -130,7 +130,7 @@
           
           
 		    	<!  • Naturphilosophie der Mechanik  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Naturphilosophie-der-Mechanik',
               'Naturphilosophische Analyse des Leptonen-Modells', 'Sc_f_Paragraph',
                 array(
@@ -245,7 +245,7 @@
           
           
 		    	<!  • Berechnung der Mechanik  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Berechnung-der-Mechanik',
               'Die Mechanik des Leptonen-Wirkungsquanten-Strings', 'Sc_f_Paragraph',
                 array(
@@ -341,7 +341,7 @@
                                            
                 'Ausgangspunkt ist der beobachtete Leptonen-Spin', subline =>
                   '')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Die Beobachtung eines Leptonen-Spins von \\latexmath{½ \hbar} kann durch die Aufspaltung der Photonen-Spins strukturell mechanisch begründet werden.',
                     ))),
                   array( 'text', array( text => array(
@@ -571,7 +571,7 @@
           
           
 		    	<!  • Elektrische Ladung:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Elektrische-Ladung',
               'Variierende Dichten der Wirkungsquanten auf dem Leptonen-String erzeugen elektrische Felder', 'Sc_f_Paragraph',
                 array(
@@ -613,7 +613,7 @@
           
           
 		    	<!  • Schwache Ladung:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Schwache-Ladung',
               'Asymmetrisch verteilte Dichten der Wirkungsquanten auf dem Leptonen-String erzeugen schwache Felder', 'Sc_f_Paragraph',
                 array(
@@ -634,7 +634,7 @@
           
 		    	<!  • Masse, Impuls und Energie:  >
 		    	<!    • Wirkungsquanten verlinken  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Masse-Impuls-Energie',
               'Die Wirkungsquanten eines Strings sind die Quanten der Masse, der Energie sowie des Impulses und Ursprung der Quantengravitation', 'Sc_f_Paragraph',
                 array(
@@ -670,7 +670,7 @@
 		    	<!    • Wirkungsquanten verlinken  >
 		    	<!    • Fußnote zur Herleitung im Manuskript, auch für die Grafik. Ebenso zum Wiki von Standarmodell der Teilchenphysik, Quantenmechanik und Allgemeinen Relativitätstheorie  >
 		    	<!    • Elementarteilchenmodell in der FrQFT, Link dort hin  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Quantengravitation',
               'Wirkungsquanten haben Beugungseffekte in ihrem Umfeld', 'Sc_f_Paragraph',
                 array(
@@ -697,7 +697,7 @@
 
 
           <!  • Spins  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Spins',
               'Drei Spins bestimmen die Struktur und Erhaltungssätze der Leptonen', 'Sc_f_Paragraph',
                 array(
@@ -705,7 +705,7 @@
                       array(  jump_name => 'OM:FrQFT:Lepton:Quantengravitation', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Die Entwicklung aller Formeln zum Lepton in einem Anhangskapitel unterbringen …)',
                     '(• In der Heim-Theorie gibt es Hinweise darauf, wie der Isospin strukturell entsteht und wie sich seine Werte ergeben. Siehe Ordner "Isospin, Spin - Burkhard Heim - Das neue Weltbild des Physikers - cd2v4-07".)',
                     ))),
@@ -762,7 +762,7 @@
 
           
 		    	<!  • Radius  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Radius',
               'Aufgrund der Struktur des Strings und deren elektroschwachen Felder erscheinen Leptonen nahezu Punktförmig', 'Sc_f_Paragraph',
                 array(
@@ -819,7 +819,7 @@
           
 		    	<!  • Antiteilchen:  >
 		    	<!    • XXX.  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Antiteilchen',
               'Aus Teilchen kann man nicht durch Drehung oder Spiegelung Antiteilchen machen', 'Sc_f_Paragraph',
                 array(
@@ -892,7 +892,7 @@
 		    	<!  • Neutrinos:  >
 		    	<!    • Einen Film erstellen.  >
 		    	<!    • Darauf hinweisen, dass in  der FrQFT die Neutrinos zu den Antiteilchen und die Anti-Neutrinos zu den Teilchen zählen.  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Neutrinos',
               'Das neue Modell offenbart, dass sie sich von ihren Antiteilchen unterscheiden', 'Sc_f_Paragraph',
                 array(
@@ -938,7 +938,7 @@
 		    	<!  • Familien und Generationen:  >
 		    	<!    • Darauf hinweisen, dass in der FrQFT die Neutrinos zu den Antiteilchen und die Anti-Neutrinos zu den Teilchen zählen.  >
 		    	<!    • Eventuell beschreiben, warum nur bestimmte Massen möglich sind.  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Familien-und-Generationen',
               'Alle Leptonen und sogar auch alle Quarks besitzen den gleichen inneren Spin', 'Sc_f_Paragraph',
                 array(
@@ -973,7 +973,7 @@
 
           
 		    	<!  • Quantenmechanik:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Quantenmechanik',
               'Die quantemachanischen Phänomene ergeben sich aus der Struktur der Wirkungsquanten-Strings', 'Sc_f_Paragraph',
                 array(
@@ -1001,7 +1001,7 @@
 
 
 		    	<!  • Welle-Teilchen-Dualismus  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Welle-Teilchen-Dualismus',
               'Wellen- und Teilchencharakter sind kein Widerspruch', 'Sc_f_Paragraph',
                 array(
@@ -1065,7 +1065,7 @@
 
           
 		    	<!  • Berechnungen  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Berechnungen',
               'XXX', 'Sc_f_Paragraph',
                 array(

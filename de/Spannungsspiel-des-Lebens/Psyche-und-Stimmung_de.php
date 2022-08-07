@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(\\bold{Perspektivwechsel:})',
                     '(• Perspektivwechsel spielen eine ganz große Rolle bei der Bearbeitung von psychischen Problemen.)',
                     '(• Als Gedankenbeispiel können wir anhand eines neugeborenen Babys folgendes veranschaulichen:)',
@@ -77,7 +77,7 @@
 
 		    	<!  • Achtsamkeitsprozess  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Achtsamkeitsprozess',
               'Um den Achtsamkeitsprozess dreht sich unser Leben', 'Sc_f_Paragraph',
                 array(
@@ -121,7 +121,7 @@
 
 		    	<!  • Geburt  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Geburt',
               'Der unvermeidliche Bruch im Leben', 'Sc_f_Paragraph',
                 array(
@@ -179,7 +179,7 @@
 
 		    	<!  • Pubertät  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Pubertaet',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -219,7 +219,7 @@
 
 		    	<!  • Individualität, Familie und Gesellschaft  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Individualitaet-und-Gesellschaft',
               'Ein Spannungsspiel zwischen innen und außen', 'Sc_f_Paragraph',
                 array(
@@ -265,7 +265,7 @@
 
 		    	<!  • Bewusstsein und Wahrnehmung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:BewusstseinWahrnehmung',
               'Fokussierung und Verarbeitung durch ein- und ausblenden von Informationen durch einen Filter', 'Sc_f_Paragraph',
                 array(
@@ -312,7 +312,7 @@
 
 		    	<!  • Traumata, Selbstschutz und Selbstmitgefühl  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Selbstmitgefuehl',
               'Die Störung des Selbstmitgefühls behindert die Persönlickeitsentwicklung und die Empathie', 'Sc_f_Paragraph',
                 array(
@@ -498,7 +498,7 @@
 
 		    	<!  • Verspannungen und Kreisgedanken  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Verspannungen-Kreisgedanken',
               '… kosten Nerven und sind der Beweglichkeit im Weg', 'Sc_f_Paragraph',
                 array(
@@ -546,7 +546,7 @@
 
 		    	<!  • Widerstand und Umlenkung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Widerstand-und-Umlenkung',
               'XXX', 'Sc_f_Paragraph',
                 array(
@@ -590,7 +590,7 @@
 
 		    	<!  • Stärke und Resilienz  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Staerke',
               'Schwäche zulassen zu können und nicht wollen müssen sind zum Beispiel große Stärken', 'Sc_f_Paragraph',
                 array(
@@ -626,7 +626,7 @@
 
 		    	<!  • Psychische Schonhaltung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Schonhaltung',
               'Psychische Schonhaltung als „Lösung“ von Problemen führt in einen Teufelskreis', 'Sc_f_Paragraph',
                 array(
@@ -634,7 +634,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Staerke', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Eine Schonhaltung behindert das Leben, denn Leben ist erleben.)',
                     ))),
                       
@@ -695,7 +695,7 @@
 
           <!  • In Fesseln tanzen (!!! Vorsicht, denn es gibt das Buch: „In Ketten Tanzen“ !!!)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:In-Fesseln-tanzen',
               'Ohne ein haltendes Korsett geht es nicht, es muss nur richtig sitzen und flexibel sein', 'Sc_f_Paragraph',
                 array(
@@ -747,7 +747,7 @@
 
 		    	<!  • Schmerz und Angst  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Schmerz',
               'Die Differenzierung von Schmerz und Angst ist Zentral', 'Sc_f_Paragraph',
                 array(
@@ -841,7 +841,7 @@
 
 		    	<!  • Hektik oder Fleckma  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:HektikFleckma',
               'Alles ist Struktur', 'Sc_f_Paragraph',
                 array(
@@ -875,7 +875,7 @@
 
 		    	<!  • Stimmung und Empfänglichkeit  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Stimmung',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -930,7 +930,7 @@
 
 		    	<!  • Vertrauen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Vertrauen',
               'XXX', 'Sc_f_Paragraph',
                 array(
@@ -1120,7 +1120,7 @@
 
 		    	<!  • Motivation  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Motivation',
               'XXX', 'Sc_f_Paragraph',
                 array(
@@ -1164,7 +1164,7 @@
 
 		    	<!  • Zwänge  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Zwaenge',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -1284,7 +1284,7 @@
 
 		    	<!  • Abwechslung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Abwechslung',
               'Der Wechsel der Tätigkeit gibt Raum und Inspiration dafür, dass sich das Getane Ordnen kann', 'Sc_f_Paragraph',
                 array(
@@ -1333,7 +1333,7 @@
 
 		    	<!  • Muße  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Musse',
               'Pausen als Phasen der Balancefindung und Orientierung', 'Sc_f_Paragraph',
                 array(
@@ -1373,7 +1373,7 @@
 
 		    	<!  • Wahrheit  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Wahrheit',
               'Es gibt oft nicht nur eine Wahrheit', 'Sc_f_Paragraph',
                 array(
@@ -1381,7 +1381,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Musse', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Gibt es auch oben im Kapitel \\italic{\\jumpname[*Bearb]{OM:SpaLeb:Psyche-und-Stimmung:Vertrauen}}.)',
                     ))),
                       
@@ -1461,7 +1461,7 @@
 
 		    	<!  • Ambiguitätstoleranz  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Ambiguitaetstoleranz',
               'Ambiguitätstoleranz braucht Nervenkapazität', 'Sc_f_Paragraph',
                 array(
@@ -1497,7 +1497,7 @@
 
 		    	<!  • Die Kunst der Entscheidung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Entscheidungen',
               'Jeder Entscheidung geht die Ambiguitätstoleranz voraus', 'Sc_f_Paragraph',
                 array(
@@ -1539,7 +1539,7 @@
 
 		    	<!  • Geschenk und Verlust  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:GeschenkVerlust',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -1547,7 +1547,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Entscheidungen', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     //'(\\bold{Perspektivwechsel:})',
                     '(• Umbennenen in ›Geschenk und Bürde‹.)',
                     '(• Spielt eine Rolle in \\italic{\\jumpname{OM:NPYo:Einleitung:Ehrgeiz}}.)',
@@ -1573,7 +1573,7 @@
 
 		    	<!  • Denken und Fühlen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Denken-und-Fuehlen',
               'Zwei Seiten der selben Medaile', 'Sc_f_Paragraph',
                 array(
@@ -1621,7 +1621,7 @@
 
 		    	<!  • Notizen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psyche-und-Stimmung:Notizen',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

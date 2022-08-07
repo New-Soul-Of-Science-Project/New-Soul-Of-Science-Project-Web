@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Prinzipien der komplexen Systeme}',
                     '• Josef Gaßner und Harald Lesch diskutieren darüber, ob der „reine“ Reduktionismus am Ende ist und wie die Physik weiter kommen kann: \\jump{https://www.youtube.com/watch?v=OPQtrDTPXsA}{Harald Lesch zu komplexen Systemen, Esoterik und alternativen Weltbildern | Lesch & Gaßner}',
                     '\\bold{Lösung des ›Problems der Zeit‹}',
@@ -90,7 +90,7 @@
                                            
                 'Vereinfachungsprinzip', subline =>
                   '')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Vielleicht besser Entkopplungsprinzip?',
                     ))),
                   array( 'text', array( text => array(
@@ -150,7 +150,7 @@
                           'Verändert sich ihre Geschwindigkeit in dem Ding, verändert dies die Veränderung des Dings, den Gang seiner Uhr.',
                     ))),
                       
-                  array( 'fade-in-area', array( Display => 'invis', Title =>
+                  array( 'fade-in-area', array( Display => 'hideContent', Title =>
                 '\\color{*Bearb}{Später in die Entwicklung der neuen Physik …}', TitleVis =>
                 '\\color{*Bearb}{Später in die Entwicklung der neuen Physik:}', ParagraphList => array(
                   array( 'text', array( text => array(
@@ -170,7 +170,7 @@
                                            
                 'Abzählprinzip', subline =>
                   'Äquivalenz von Masse und Energie')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• \\term{E = m⋅c^{2}}:',
                     '– Die Proportionalität von Energie und Masse ist eine direkte Schlussfolgerung der FrQFT, die sich aus der Annahme (Postulat bzw. Axiom) ergibt, dass Wirkungsquanten sowohl Energieeinheiten als auch Masseneinheiten sind (absolut nur auf der untersten Strukturebene des analysierten Modells)! Dies setzt ein konstantes Verhältnis voraus, welches nach unseren Beobachtungen das Quadrat der Lichtgeschwindigkeit \\term{c^{2}} der bekannten Formel \\term{E = m⋅c^{2}} ist.(Verweis auf Wikipedia: ›Äquivalenz von Masse und Energie‹, Überblick und Beispiele, Vernichtungsstrahlung. Dies ist keine relativistisch interpretierte Beobachtung, sondern eine quantenphysikalisch interpretierte!) Siehe auch \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{Herleitung der Lichtverlangsamung} (falls dort nicht entbehrlich geworden …).',
                     ))),
@@ -229,7 +229,7 @@
                                            
                 'String-Prinzip', subline =>
                   '')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Siehe auch Regelprozess-Prinzip.',
                     ))),
                   array( 'text', array( text => array(
@@ -267,7 +267,7 @@
                                            
                 'Regelprozess-Prinzip', subline =>
                   '')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Enthält automatisch das Sombrero-Potenzial, den Symmetriebruch und den Spin sowie auch das String-Prinzip.',
                     ))),
                   array( 'text', array( text => array(
@@ -275,7 +275,7 @@
                     'Diese Regelprozesse halten die Dinge in Form und damit existent oder am Leben.'."\n".
                     'Das bedeutet, die Regelprozesse halten diese Pole in einem dynamischen Spiel auseinander und gleichzeitig auch zusammen.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis', Title =>
+                  array( 'fade-in-area', array( Display => 'hideContent', Title =>
                 'Elementares Bewusstsein …', TitleVis =>
                 'Elementares Bewusstsein:', ParagraphList => array(
                   array( 'text', array( text => array(
@@ -314,7 +314,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
-                  array( 'fade-in-area', array( Display => 'invis', Title =>
+                  array( 'fade-in-area', array( Display => 'hideContent', Title =>
                 '\\color{*Bearb}{Experimentelle Untersuchungen …}', TitleVis =>
                 '\\color{*Bearb}{Experimentelle Untersuchungen:}', ParagraphList => array(
                   array( 'text', array( text => array(
@@ -532,7 +532,7 @@
 
 		    	<!  • XXX  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:XXX:XXX',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

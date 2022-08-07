@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Den Logo Untertitel ändern zu ›Knowledge and Care helps …‹ (knowledge ist auch verkehrt geschrieben).',
                     ))),
                       
@@ -84,7 +84,7 @@
 
 		    	<!  • Forschungsstand  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:nSOSp:Home:Forschungsstand',
               'Ein nie vollständiger Überblick', 'Sc_f_Paragraph',
                 array(
@@ -115,7 +115,7 @@
                     'auf seine Lichtuhr und wie er über diese auf die räumlichen und zeitlichen Eigenschaften der Materie geschlossen hat.'."\n".
                     'Denn der neue Ansatz passt nicht in jeder Hinsicht zur heutigen Formulierung der Relativitätstheorie.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Regelprozesse und ihr Bezug zur modernen Physik', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Regelprozesse haben generell einige Eigenschaften, die uns an grundlegende Prinzipien der Physik erinnern:'."\n".
@@ -195,7 +195,7 @@
                       'Belohnt wird der Perspektivwechsel eben unter anderem mit der Erkenntnis, wie die Quantengravitation der Elementarteilchen zu formulieren ist, nach der schon lange gesucht wird;'."\n".
                     'und mit einem tieferen Verständnis der Gravitation und der Vorgänge im Kosmos, die wir bisher teilweise gar nicht oder nicht gut erklären können.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Was kann die neue, organische Physik bisher erklären?', ParagraphList => array(
                   array( 'text', array( text => array(
                   '\\condb{Organisches Elementarteilchenmodell} \\\\'."\n".
@@ -494,7 +494,7 @@
                     'Möglicherweise ist eine Störung eines biologischen Teilprozesses des Achtsamkeitsprozesses vorhanden, die eine solche Blockade auslöst.'."\n".
                     'Unsere Balance zwischen Stabilität und Fortentwicklung gerät in eine Schieflage.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Was kann das ›Spannungsspiel des Lebens‹ bisher erklären?', ParagraphList => array(
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{(To do …)}'."\n"
@@ -560,7 +560,7 @@
                     'Es stellt die Zusammenhänge wieder her, die beim Sezieren der Dinge verloren gingen, – es beseelt die Dinge, indem es ihnen ihr Verhalten verleiht –'."\n".
                     'und führt uns letztendlich in immer komplexere dynamische Strukturen bis hinauf zum Leben und schließlich bis in die Struktur des Universums.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Was kann der Zusammenhang zwischen dem Begriff Seele und dem Begriff Zusammenhang bisher erklären?', ParagraphList => array(
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{(To do …)}'."\n"
@@ -581,7 +581,7 @@
                   array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:XXX', text =>
                                            
                 'Die neue Perspektive macht neue Zusammenhänge sichtbar')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Die Osteopathie mit einbauen! (Siehe \\jump[https://www.osteopathie.de/osteopathie-was_ist_osteopathie]{}{Was ist Osteopathie}))',
                     ))),
                   array( 'text', array( text => array(
@@ -681,7 +681,7 @@
 
 		    	<!  • New Soul Of Science Project (NSOSP)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:nSOSp:Home:nSOSp',
               '\\name[undertitle]{OM:nSOSp:Home}', 'Sc_f_Paragraph',
                 array(
@@ -701,7 +701,7 @@
 
 		    	<!  • Wolfgang Huß  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:nSOSp:Home:Wolfgang-Huss',
               'Meine Forschungsarbeiten', 'Sc_f_Paragraph',
                 array(
@@ -821,7 +821,7 @@
                   // array( 'text', array( text => array(
                   // '\\condb{\\name[undertitle]{OM:NPT:Home}} \\\\'."\n".
                   //   '\\name[description]{OM:NPT:Home}'."\n"))),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• In Planung: Die Naturphilosophie der Gegensätze – Existenz und Nichtexistenz, Plus und Minus: Plus und Minus würde ich dabei als räumliches Phänomen bezeichnen.',
                     '• Wie verhalten sich die Existenz sowie die Nichtexistenz und die Existenz sowie die fehlende Existenz zueinander?',
                     ))),
@@ -833,16 +833,16 @@
                   array( 'text', array( text => array(
                     '\\\\'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*Bearb}{Geplante Themen}', ParagraphList => array(
                   // !!!: 'fade-in-area' can not include themselfes at the Moment!
-                  /*array( 'notice', array( Display => 'invis',
+                  /*array( 'notice', array( Display => 'hideContent',
                     Title => 'Gesellschaftsphilosophie', text => array(
                     '(• Nachhaltiges Bauen, siehe \\jump[https://kenfm.de/erwin-thoma/][*Bearb]{}{KenFM im Gespräch mit: Erwin Thoma – DIE MACHER (1)}.)',
                     '(• Die Gesellschaft der Bäume im Wald als Vorbild nehmen, siehe \\jump[https://kenfm.de/erwin-thoma/][*Bearb]{}{KenFM im Gespräch mit: Erwin Thoma – DIE MACHER (1)} und \\jump[https://www.youtube.com/watch?v=w0tBdpz2TBs&feature=youtu.be][*Bearb]{}{KenFM auf YouTube, Die Macher: Erwin Thoma - Holz100}.)',
                     ))),*/
                   // !!!: 'fade-in-area' can not include themselfes at the Moment!
-                  /*array( 'notice', array( Display => 'invis',
+                  /*array( 'notice', array( Display => 'hideContent',
                     Title => 'Entstehungserhaltendes Spiecherformat – Format mit Historie', text => array(
                     '(• OpenStruct / Vec2)',
                     ))),*/
@@ -1011,7 +1011,7 @@
 
 		    	<!  • Spannungsspiel des Lebens (Neue Biophysik, NB)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:nSOSp:Home:Spannungsspiel-des-Lebens',
               '\\name[undertitle]{OM:SpaLeb:Home}'/*'Spannungen im Leben, deren Brüche und das finden neuer Balancen'*/, 'Sc_f_Paragraph',
                 array(
@@ -1031,7 +1031,7 @@
 
 		    	<!  • Naturphilosophie-Yoga (NaPhil-Yoga)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:nSOSp:Home:Naturphilosophie-Yoga',
               '\\name[undertitle]{OM:NPYo:Home}', 'Sc_f_Paragraph',
                 array(
@@ -1051,7 +1051,7 @@
 
 		    	<!  • Die fraktale Quanten-Fluss-Theorie (FrQFT)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:nSOSp:Home:Fraktale-Quanten-Fluss-Theorie',
               //'Ein Vorschlag zur Vereinheitlichung der Physik', 'Sc_f_Paragraph',
               '\\name[undertitle]{OM:FrQFT:Home}', 'Sc_f_Paragraph',
@@ -1075,7 +1075,7 @@
 
 		    	<!  • Die Vereinheitlichte Relativitätstheorie (VRT)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:nSOSp:Home:Vereinheitlichte-Relativitaetstheorie',
               //'Die Vereinheitlichung der Speziellen und Allgemeinen Relativitätstheorie mit der Lorentzschen Äthertheorie im Rahmen der Quanten-Fluss-Theorie', 'Sc_f_Paragraph',
               '\\name[undertitle]{OM:VRT:Home}', 'Sc_f_Paragraph',
@@ -1096,7 +1096,7 @@
 
 		    	<!  • Die strukturelle Naturphilosophie der Zeit (NPT)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:nSOSp:Home:Naturphilosophie-der-Zeit',
               '\\name[undertitle]{OM:NPT:Home}', 'Sc_f_Paragraph',
                 array(
@@ -1116,7 +1116,7 @@
 
 		    	<!  • Naturphilosophie der Gegensätze  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:nSOSp:Home:Naturphilosophie-der-Gegensaetze',
               'Plus und Minus versa Existenz und Nichtexistenz', 'Sc_f_Paragraph',
                 array(
@@ -1142,7 +1142,7 @@
 
 		    	<!  • Superial-Zahlen (SN)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:nSOSp:Home:Superial-Zahlen',
               'Der Unendlichkeit Struktur geben – neue Ideen elementarer Mathematik', 'Sc_f_Paragraph',
                 array(
@@ -1163,7 +1163,7 @@
 
 		    	<!  • Biordinalzahlen und integrierte Mengenlehre  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:nSOSp:Home:Biordinalzahlen',
               'Überall vorwärts- und rückwärtszählen in erweiterten Ordinalzahlen', 'Sc_f_Paragraph',
                 array(
@@ -1188,7 +1188,7 @@
 
 		    	<!  • Operialtheorie  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:nSOSp:Home:Operialtheorie',
               'Systematik der arithmetischen Operatoren', 'Sc_f_Paragraph',
                 array(
@@ -1211,7 +1211,7 @@
 
 		    	<!  • Zahlensemantik (ZS)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:nSOSp:Home:Zahlensemantik',
               '\\name[undertitle]{OM:ZS:Home}', 'Sc_f_Paragraph',
                 array(

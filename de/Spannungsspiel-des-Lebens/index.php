@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Die Startseite vielleicht weniger physiklastig?.)',
                     '(• Das ›Spannungsspiel des Lebens‹ ist ein interdisziplinärer und eventuell transdisziplinärer Ansatz.)',
                     '(• Den \\jump[][*Bearb]{OM:NPYo:Einleitung:ErkenneDichSelbst:Achtsamkeitsprozess}{Achtsamkeitsprozess} als zentralen Prozess unseres Überlebens einbeziehen: Lebenslang leben lernen, uns selber kennenlernen und erforschen.)',
@@ -131,7 +131,7 @@
 
 
 		    	<!  • Inhalt  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Home:Inhalt',
               '', 'Sc_f_Paragraph',
                 array(
@@ -240,7 +240,7 @@
           
           
 		    	<!  • Lexikon:  >
-          <?php To_f_headline_add_hides_begin( 'Lexikon', 'Lexikon', 'OM:SpaLeb:Home:Lexikon', '          ', 'invis'); ?>
+          <?php To_f_headline_add_hides_begin( 'Lexikon', 'Lexikon', 'OM:SpaLeb:Home:Lexikon', '          ', 'hideContent'); ?>
             <br>
           
             <table border="0"> <colgroup> <col width="22"> <col width="300"> <col width="16"> <col width="362"> </colgroup>
@@ -249,12 +249,12 @@
                   &hellip;</td> <td valign="top" style="color: #A0A0A0">
                   XXX</td> </tr>
             </table>
-          <?php To_f_headline_add_hides_end( '          ', 'invis'); ?>
+          <?php To_f_headline_add_hides_end( '          ', 'hideContent'); ?>
 
 
 		    	<!  • Haftungsausschluss  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Home:Haftungsausschluss',
               '', 'Sc_f_Paragraph',
                 array(

@@ -12,7 +12,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Wachen und Schlafen – Sympathikus und Parasympathikus}',
                     '• Die Pole des Achtsamkeitsprozesses stehen für aktiv sein (Ha) und zur Ruhe kommen (Tha), für den Sympathikus (Ha) und den Parasympathikus (Tha).',
                     '– Der Gefühlspol steht auch für den Schlaf.',
@@ -67,7 +67,7 @@
                     'Hiernach ist unsere rechte Körperhälfte der Sonne und unsere linke dem Mond zugeordnet.'."\n",
                       'Im Yoga, wie im Tantra, geht es demnach auch darum, beide Körperhälften in eine Balance zu bringen.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Anmerkung …', TitleVis => 'Anmerkung:', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Für mich ist es natürlich auch sehr spannend, diese ganz feste Zuordnung zu hinterfragen.'."\n".
@@ -384,7 +384,7 @@
 
 		    	<!  • Wir sind zwei verwobene Wesen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:HaTha:WirZweiWesen',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -431,7 +431,7 @@
 
 		    	<!  • Herstellung der Balance  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:HaTha:HerstellungBalance',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

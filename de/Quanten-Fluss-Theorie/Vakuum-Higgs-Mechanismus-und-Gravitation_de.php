@@ -12,7 +12,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Graviradiation:}',
                     '• Der Begriff Graviradiation ist für die Abstrahlungen der virtuellen Wirkungsquanten sehr gut getroffen. Denn die Graviradiation gibt es auch im Vakuum eines theoretisch symmetrisch flachen Kosmos, in dem es keine Gravitation gibt.',
                     '• Grundstruktur des Vakuums: Hat das Vakuum überall die gleiche Energiedichte, dann gleicht sich die gravitative Anziehung in allen Richtungen aus, die Graviradiation hingegen nicht. Die Graviradiation führt dazu, dass sich die Spiralen der Vakuum-Elapsonen aufwickeln, je enger, je dichter das Vakuum ist. Oder eventuell gibt es hier auch einen Mechanismus, der automatisch zur 45° Neigung des Gangs der Spirale führt?',
@@ -58,7 +58,7 @@
 
 		    	<!  • Higgs-Feld und Higgs-Mechanismus:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vakuum:Higgs-Feld-und-Higgs-Mechanismus',
               'Entstehung von schwerer und träger Masse', 'Sc_f_Paragraph',
                 array(
@@ -116,7 +116,7 @@
 
 		    	<!  • Grundstruktur des Vakuums:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vakuum:Grundstruktur-des-Vakuums',
               'Vakuumenergie und ihre bisher verborgene Gravitation', 'Sc_f_Paragraph',
                 array(
@@ -152,7 +152,7 @@
 
 		    	<!  • Erhaltungssätze:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vakuum:Erhaltungssaetze',
               '\\color{*Bearb}{(In Arbeit …)}', 'Sc_f_Paragraph',
                 array(
@@ -172,7 +172,7 @@
 
 		    	<!  • Gravitationsfelder:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vakuum:Gravitationsfelder',
               '\\color{*Bearb}{(In Arbeit …)}', 'Sc_f_Paragraph',
                 array(
@@ -188,7 +188,7 @@
 
 		    	<!  • Elektroschwache Felder:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vakuum:Elektroschwache-Felder',
               '\\color{*Bearb}{(In Arbeit …)}', 'Sc_f_Paragraph',
                 array(
@@ -206,7 +206,7 @@
 
 		    	<!  • Starke Felder:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vakuum:Starke-Felder',
               '\\color{*Bearb}{(In Arbeit …)}', 'Sc_f_Paragraph',
                 array(
@@ -245,7 +245,7 @@
 
 		    	<!  • Quantenfluktuationen:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vakuum:Quantenfluktuationen',
               '\\color{*Bearb}{(In Arbeit …)}', 'Sc_f_Paragraph',
                 array(
@@ -265,7 +265,7 @@
 
 		    	<!  • XXX:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vakuum:Fraktales-Vakuum',
               'Fraktaler Raum und fraktale Zeit \\color{*Bearb}{(In Arbeit …)}', 'Sc_f_Paragraph',
                 array(
@@ -285,7 +285,7 @@
 
 		    	<!  • XXX:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vakuum:XXX',
               '\\color{*Bearb}{(In Arbeit …)}', 'Sc_f_Paragraph',
                 array(

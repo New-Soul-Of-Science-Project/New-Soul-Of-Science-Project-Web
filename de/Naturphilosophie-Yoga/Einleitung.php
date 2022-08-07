@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', Title => 'Notizen: Was ist NaPhil-Yoga?', text => array(
+                  array( 'notice', array( Display => 'hideContent', Title => 'Notizen: Was ist NaPhil-Yoga?', text => array(
                     '(• Yoga Asanas sind gut, um Achtsamkeit zu üben:)',
                     '(– Was ist Achtsamkeit in Kurzform? Achtsamkeit besteht im Wesentlichen aus zwei Elementen: Ich orientiere mich in meinem Leben wie es ist, ähnlich einer Bestandsaufnahme. Also wie fühle ich mich in welcher Lebenssituation und wie verändern Handlungen meine Lebenssituation und darüber meine Gefühle? Dann schaue ich auf meine Gefühle, die mal angenehmer und mal unangenehmer sind, und lasse mich durch sie automatisch leiten. Bezogen auf die Asanas beobachte ich im Hier und Jetzt, wie sich die Stellung anfühlt und wie sich das Gefühl verändert, wenn ich die Stellung leicht verändere. Dann lasse ich mich durch das mal angenehmere und mal unangenehmere Gefühl leiten.)',
                     '(– Das Üben der Atmung beim Vinyasa, der Verbindung der Asanas mit Ein- und Ausatmung, bringt mehr Leichtigkeit und Fluss die Übungen und in mein Leben.)',
@@ -25,7 +25,7 @@
                     '(• Bei der rauschenden Atmung – Uddjay Atmung – baut man in sich selber einen ›fließenden Wiederstand‹ auf. Das erzeugt die Stabilität im Zentrum von einem. Wir sind nicht so darauf angewiesen uns im Widerstand gegen andere Sachen oder Dinge zu spüren, sondern können uns in uns selber spüren.)',
                     ))),
                       
-                  array( 'notice', array( Display => 'invis', Title => 'Notizen zur eigenen Internetseite und Ausrichtung', text => array(
+                  array( 'notice', array( Display => 'hideContent', Title => 'Notizen zur eigenen Internetseite und Ausrichtung', text => array(
                     '(Was soll das Symbol des Naturphilosophie-Yoga sein?)',
                     '(• Das Symbol der Stimmungsspannumg? Mit dem Auge des Wohlgefühls darüber? Mit dem der Helixspirale und dem des Existenzprinzips daneben?)',
                     '',
@@ -63,7 +63,7 @@
                     '(• XXX)',
                     ))),
                       
-                  array( 'notice', array( Display => 'invis', Title => 'Notizen Allgemein', text => array(
+                  array( 'notice', array( Display => 'hideContent', Title => 'Notizen Allgemein', text => array(
                     '(\\bold{Zwerchfellverspanung:})',
                     '(⋅ Gute Infos: \\jump[https://yoga-body.de/zwerchfell/]{}{yoga-body.de – ZWERCHFELL – DIE 1 WICHTIGE URSACHE FÜR SCHMERZEN IM GANZEN KÖRPER – TEST – IST DEIN ZWERCHFELL VERSPANNT?})',
                     '(⋅ Test: \\quote{Lege dich auf einen stabilen und festen Untergrund. Am Besten auf eine Matte am Boden. Du solltest lockere und bewegliche Hosen anhaben. Stelle die Beine an, die Füße stellst du da hin wo deine Knie vorher waren. Die Arme liegen ausgestreckt auf Schulterhöhe. Die Beine zusammen erst zu einen und dann zur anderen Seite komplett absinken lassen. Auswertung …} (\\jump[https://yoga-body.de/zwerchfell/]{Test_8211_Ist_dein_Zwerchfell_verspannt}{yoga-body.de – ZWERCHFELL – DIE 1 WICHTIGE URSACHE FÜR SCHMERZEN IM GANZEN KÖRPER – TEST – IST DEIN ZWERCHFELL VERSPANNT?}))',
@@ -497,7 +497,7 @@
 
 		    	<!  • Yin und Yang der Körperspannung und Stimmung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Einleitung:YinYangKoerperspannung',
               'Der Dualismus von Djet und Neheh als Symbole', 'Sc_f_Paragraph',
                 array(
@@ -559,7 +559,7 @@
 
 		    	<!  • Wahrnehmung des Lichts im Tunnel  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Einleitung:LichtTunnelAuge',
               'Eine Metapher vom Inneren oder Dritten Auge und dem, was es sieht', 'Sc_f_Paragraph',
                 array(
@@ -614,7 +614,7 @@
 
 		    	<!  • ›Erkenne dich selbst‹ als Achtsamkeitsprozess  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Einleitung:ErkenneDichSelbst',
               'Von der Selbsterkenntnis zur Welterkenntnis – die Achtsamkeit als Prozess', 'Sc_f_Paragraph',
                 array(
@@ -622,7 +622,7 @@
                       array(  jump_name => 'OM:NPYo:Einleitung:LichtTunnelAuge', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'invis', text => array(
+                  /*array( 'notice', array( Display => 'hideContent', text => array(
                     '(• XXX)',
                     ))),*/
                       
@@ -682,7 +682,7 @@
                   array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:ErkenneDichSelbst:Achtsamkeitsprozess', text =>
                                            
                 'Unser Achtsamkeitsprozess')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Nicht schreiben, dass es sich bei der Achtsamkeit um einen Prozess handelt, sondern, dass man sie unter einer bestimmten Perspektive als Prozess verstehen kann.)',
                     '(• Dazu gehört auch, dass man sich wohler fühlt, wenn man mit seiner Umwelt besser im Einklang lebt. Also Achtsam ist, was und wie man etwas sagt und wie dies ankommt zum Beispiel.)',
                     '(• Das Licht am Ende des Tunnels: Schauen was ich im Buchentwurf dazu geschrieben habe: Beschreiben, was das Licht und sein Tunnel sind. \\quote{Das „Inneres Auge“, es wird im Mystisch-Esoterischen und in manchen Religionen auch unser „Drittes Auge“ oder „Geistiges Auge“ genannt – auch gibt es Bezüge zum „Auge der Vorsehung“ –, blickt auf das Licht und seinen Tunnel. Unser Inneres Auge schaut so auf unsere Vergangenheit, unsere Gegenwart, unser Hier- Und-Jetzt, und in unsere mögliche Zukunft. Diesen geistig-emotionalen Blick als Blick des Inneren Auge zu bezeichnen ist ein Bild, eine Metapher, dass ausdrücken soll, dass wir damit etwas erkennen, also „sehen“ können. Es ist in einem übertragenen Sinn eine Art von Auge. Der Achtsamkeitsprozess kann den Blick unseres Inneren Auges schärfen und dadurch das Leben auf eine Weise verändern und in Fluss oder in Gang bringen, die über- rascht. Sorgen, Ängste und Stress können so reduziert werden, lenken uns weniger ab und wir können einen anderen Blick auf uns, unsere Umwelt, unser Glück und unsere Probleme und Schwierigkeiten werfen.})',
@@ -777,7 +777,7 @@
                   array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:ErkenneDichSelbst:Psyche', text =>
                                            
                 'Unsere Psyche')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Der \\jump[][*Bearb]{OM:NPYo:Einleitung:ErkenneDichSelbst:Achtsamkeitsprozess}{Achtsamkeitsprozess} ist der Regelmechanismus der Psyche: Bei genauerer Betrachtung ist der Achtamkeitsprozess genau das, was die Psyche ausmacht: Wie man sich fühlt, also die Selbstwahrnehnung, in Verbindung mit seinen Handlungen. Aus der Perspektive des Achtamkeitsprozesses wird halt ganz klar erkannt, dass es sich bei der Psyche um einen prozessualen Kreislauf handelt, der ein Lernprozess ist: Man lernt idealerweise gut zu leben. Der Achtamkeitsprozess hat zentral mit unseren unterschiedlichen Gehirnhälften zu tun, im Yoga mit Ha (Sonne) und Tha (Mond) und deren Ausbalancierung.)',
                     '(• Wenn man das Gefühl hat, seinen Körper besser zu verstehen und ihn mit einem guten, sicheren Gefühl einsetzen zu können, dann geht das automatisch mit einer positiveren Psyche einher. Hieraus ergibt sich eine wichtige Verbindung zwischen der Psyche und der \\jump[][*Bearb]{OM:NPYo:Einleitung:Atmung}{Atmung} im nächsten Kapitel.)',
                     '(• Die flexible Veränderung der körperlichen und psychischen Spannungszustände soll durch das Yoga konditioniert werden.)',
@@ -855,7 +855,7 @@
 
 		    	<!  • Atmung und Stimmung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Einleitung:Atmung',
               'Körperstabilität und Persönlichkeitsentwicklung', 'Sc_f_Paragraph',
                 array(
@@ -863,7 +863,7 @@
                       array(  jump_name => 'OM:NPYo:Einleitung:ErkenneDichSelbst', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Der Körper kann durch die Atmung gestimmt werden.)',
                     '(• Wenn man das Gefühl hat, seinen Körper besser zu verstehen und ihn mit einem guten, sicheren Gefühl einsetzen zu können, dann geht das automatisch mit einer positiveren Psyche einher. Hieraus ergibt sich eine wichtige Verbindung zwischen der \\jump[][*Bearb]{OM:NPYo:Einleitung:ErkenneDichSelbst:Psyche}{Psyche} im vorherigen Kapitel und der Atmung.)',
                     '(• Atmung ist Entwicklung, weil bei der Ausdehnung des Brustkorbs die Spiralbewegung drinne steckt.)',
@@ -937,7 +937,7 @@
 
 		    	<!  • Leichtigkeit – Ehrgeiz herausnehmen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Einleitung:Ehrgeiz',
               'Nicht im Widerstand schwelgen, sondern Leichtigkeit finden', 'Sc_f_Paragraph',
                 array(
@@ -945,7 +945,7 @@
                       array(  jump_name => 'OM:NPYo:Einleitung:Atmung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Passt auch zu ›Psyche und Stimmung‹.)',
                     '(• Unbedingt etwas wollen ist arm. Gibt ein ähnliches Zitat. Siehe Vortrag und Buch von Albert Kitzler (\\jump[http://www.massundmitte.de][*Bearb]{}{Maß und Mitte}), »Denken heilt!« in der modern life school vom 17.02.2017 (siehe meine Notizen).)',
                     ))),
@@ -1022,7 +1022,7 @@
                   array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Ehrgeiz:XXX', text =>
                                            
                 'Physikalisch gesehen …')),
-                  /*array( 'notice', array( Display => 'invis', text => array(
+                  /*array( 'notice', array( Display => 'hideContent', text => array(
                     '(• XXX)',
                     ))),*/
                   array( 'text', array( text => array(
@@ -1076,7 +1076,7 @@
 
 		    	<!  • Differenzierung von Schmerz  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Einleitung:Differenzierung',
               'Unterscheiden können zwischen Verletzung und Veränderung', 'Sc_f_Paragraph',
                 array(
@@ -1116,7 +1116,7 @@
 
 		    	<!  • Widerstand reduzieren  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Einleitung:Widerstand-reduzieren',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -1168,7 +1168,7 @@
 
           <!  • Praxis: Achtsamkeit  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Einleitung:Praxis-Achtsamkeit',
               'Die Praxis der Achtsamkeit und ihre wichtigen Aspekte', 'Sc_f_Paragraph',
                 array(
@@ -1276,7 +1276,7 @@
 
           <!  • Praxis: Atmung und Stimmung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Einleitung:Praxis-Atmung',
               'Die Praxis der Yoga-Atmung und ihre wichtigen Aspekte', 'Sc_f_Paragraph',
                 array(
@@ -1331,7 +1331,7 @@
 
           <!  • Praxis: Asanas  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Einleitung:Praxis-Asanas',
               'XXX', 'Sc_f_Paragraph',
                 array(
@@ -1396,7 +1396,7 @@
 
 		    	<!  • Bilder – wir sind was wir denken  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Einleitung:Bilder',
               'Unsere Vorstellung von uns und der Welt bestimmt unser Denken und Handeln', 'Sc_f_Paragraph',
                 array(
@@ -1445,7 +1445,7 @@
 
           <!  • Bild: Wir sind gebändigtes Licht  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Einleitung:Bild-GebaendigtesLicht',
               'Die Leichtigkeit und die Power unseres Körpers', 'Sc_f_Paragraph',
                 array(
@@ -1501,7 +1501,7 @@
 
           <!  • Veranstaltungen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Einleitung:Veranstaltungen',
               'Angebote und Trainingsgruppen', 'Sc_f_Paragraph',
                 array(

@@ -15,7 +15,7 @@
 
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(\\bold{Aktuelle Fachdiskussion:})',
                     '(• Das starke CP-Problem scheint etwas sehr zentrales zu sein: Siehe Ordner ›starkes CP-Problem‹.)',
                     '(• Probleme in der heutigen Physik noch einmal aktuell beschrieben: \\cite{Hossenfelder:DieQuantengravitationAufDemWegZurWissenschaft:2016}.)',
@@ -50,7 +50,7 @@
 
 
 		    	<!  • Problem der Zeit:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-Zeit',
               'Ohne eine Lösung des ›Problems der Zeit‹ können Quantenmechanik und Allgemeine Relativitätstheorie nicht vereinheitlicht werden', 'Sc_f_Paragraph',
                 array(
@@ -110,7 +110,7 @@
           
 
 		    	<!  • Problem der Quantengravitation:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-Quantengravitation',
               'XXX', 'Sc_f_Paragraph',
                 array(
@@ -140,7 +140,7 @@
 
           
 		    	<!  • Problem der Feuerwand:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-Feuerwand',
               'XXX', 'Sc_f_Paragraph',
                 array(
@@ -170,7 +170,7 @@
 
           
 		    	<!  • Problem des Phänomens der Dunklen Materie:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-Dunklen-Materie',
               'Die bisherigen Erklärungsmodelle liefern keine eindeutig passenden Erklärungen aller beobachteten Facetten dieses Phänomens', 'Sc_f_Paragraph',
                 array(
@@ -206,11 +206,11 @@
 
           
 		    	<!  • Problem der kosmologischen Konstanten:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-kosmologischen-Konstanten',
               'Warum erscheint unser Kosmos nicht gekrümmt, sondern im Durchschnitt flach', 'Sc_f_Paragraph',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(Aktueller fachlicher Diskurs:)',
                     '(• Schwarz, Dominik J. - Streit um Hubbles Erbe - 20180620 - Spektrum der Wissenschaft: \\jump[https://www.spektrum.de/magazin/streit-um-hubbles-erbe/1567830]{}{https://www.spektrum.de/magazin/streit-um-hubbles-erbe/1567830})',
                     ))),
@@ -261,7 +261,7 @@
 
           
 		    	<!  • Problem der Dunklen Energie:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-Dunklen-Energie',
               'Es scheint völlig unklar, welcher Natur diese mysteriöse Energie ist', 'Sc_f_Paragraph',
                 array(
@@ -292,7 +292,7 @@
 
           
 		    	<!  • Problem der Singularitäten:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-Singularitaeten',
               'Punktförmige Elementarteilchen, Schwarze Löcher, der Urknall und Co. \\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -317,7 +317,7 @@
 
           
 		    	<!  • Probleme der Quantenchromodynamik:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Probleme-der-Quantenchromodynamik',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -341,7 +341,7 @@
 
           
 		    	<!  • Problem der Naturkonstanten:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-Naturkonstanten',
               'Die Werte der Naturkonstanten erscheinen recht willkürlich', 'Sc_f_Paragraph',
                 array(

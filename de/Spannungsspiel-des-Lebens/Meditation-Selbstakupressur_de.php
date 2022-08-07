@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Für den Einstieg bieten sich Selbstmassagen mit der Hand oder einem Faszienball an, weil man dann selber genau spürt, wo es verspannt ist und eventuell weh tut und damit in eine Rückkopplung zwischen seiner Handlung und seinem Gefühl geht, die selber ein Achtsamkeitsprozess ist.)',
                     '(– Den Faszienball, 8 cm – 12 cm, an der Wand, wo man den Druck gut bestimmen kann, als Sonde benutzen, die über das Gefühl sondiert:)',
                     '(· Es bietet sich an zuerst zwischen den Schulterblättern, neben der Wirbelsäule zu massieren und nach Stellen zu suchen, die man intensiv fühlt. 5 – 10 Min. sind schon ein Beginn.)',
@@ -65,7 +65,7 @@
 
 		    	<!  • Achtsamkeitsprozess und bessere Selbstwahrnehmung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Meditation-Selbstakupressur:Achtsamkeitsprozess',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

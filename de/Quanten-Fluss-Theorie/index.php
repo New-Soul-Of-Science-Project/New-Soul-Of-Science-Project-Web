@@ -25,7 +25,7 @@
           
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  /*array( 'notice', array( Display => 'invis', text => array(
+                  /*array( 'notice', array( Display => 'hideContent', text => array(
                       '(\\bold{Abstract (eine Annäherung):})',
                       '(• Fraktale Quanten-Fluss-Theorie, Spannungsspiel des Lebens: Hier liegt das Konzept der „Einheit von allem“ unter anderem in der Einheitlichkeit der fraktal immer weiter zerlegbaren und einheitlichen Wirkungsquanten – der roten Punkte mit ihren sie umgebenden Kegeln ihrer Interaktion. Das Gesamtsystem dieses Universums ist dabei schon immer vorhanden, in gewissem Hinblick also absolut. Daher kann es sowohl deduktiv als auch induktiv beschrieben werden. Wir können sagen: Die Interaktion verbindet die einheitlichen Wirkungsquanten zu immer größeren Wirkungsquanten, die sich als einigermaßen stabile Regelsysteme manifestieren und damit, durch ihre Interaktion selber, Bewusstsein enthalten. So ist das Vakuum geformt. Stabile Regelsysteme funktionieren nach dem einheitlichen Prinzip des fraktalen Djet-Neheh-Dualismus aus Rotationen und geradlinigen Bewegungen. Ab einer bestimmten Schwelle der Interaktion findet ein Phasenübergang statt und es entfalten sich komplexere Regelsysteme im Vakuum, wie Elementarteilchen, Atome, Moleküle, Planeten, Sonnen, Galaxien, Schwarze Löcher und schließlich auch Zellen und alle Lebewesen. Die Schwarzen Löcher sind die Gebilde, die diese Phasenübergänge voneinander abgrenzen und von innen als Kosmoi erscheinen. Der Regelprozess der die Lebewesen erschafft und stabilisiert heißt Achtsamkeitsprozess. Beim Phasenübergang erschaffen die Interaktionen Zusammenhänge in dieser Struktur, die immer komplexer werden. Diese dynamischen Zusammenhänge würde ich als „Seelen“ bezeichnen, denn sie bestimmen das innere und äußere Verhalten der Dinge und Lebewesen. Verbinden wir unsere Wahrnehmung, unser Bewusstsein und unser Wissen über diese Zusammenhänge mit Gefühlen, dann bringen wir die Zusammenhänge in einen Sinn. Den Sinn erschaffen also wir als Beobachter innerhalb unseres Kosmos durch unsere Gefühle, die Teil unseres jeweiligen Achtsamkeitsprozesses sind.)',
                       '(• Reflexion: Interessanterweise stellt sich hier die Induktion und die Deduktion in gewisser Hinsicht als das Gleiche heraus. Denn wir finden in der Physik, und den Naturwissenschaften allgemein, die Einheit im Kleinen, wenn wir extrem ins Detail gehen, eben noch viel kleiner als die Elementarteilchen, siehe „\\jumpname{OM:FrQFT:WasIstPhysik}“. Die Vorstellung aus der Vielheit der Beobachtungen induktiv auf ein einheitliches Großes und Ganzes zu schließen stimmt hier insofern nicht, als dass sich im extrem Kleinen keine Vielheit mehr findet, sondern die Einheit, die die Vielheit hervorbringt. Die Induktion stellt sich quasi auf den Kopf und wird zur Deduktion. In diesem Sinne enthält jedes Ding im Universum das Ganze, als Prinzip.)',
@@ -198,7 +198,7 @@
                                            
                 'Kurzbeschreibung')),*/
                       
-                  /*array( 'notice', array( Display => 'invis', text => array(
+                  /*array( 'notice', array( Display => 'hideContent', text => array(
                       '(\\bold{Der Regelprozess als Basis der Physik:})',
                       '(• Jede Existenz hat ihren zentralen Regelprozess: Die Schlussfolgerungen münden in die Einsicht, dass es für jedes Ding, jede Existenz, der Physik genau einen einzigen grundlegenden Regelprozess geben muss. Dieser Regelprozess organisiert die Stabilität und die Entwicklung seiner Existenz.)',
                     ))),*/
@@ -361,7 +361,7 @@
                                            
                 'Wissenschaftlicher Anspruch')),
                       
-                  /*array( 'fade-in-area', array( Display => 'invis',
+                  /*array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\class{tools-class-text-color-FigDescr tools-class-link-hover-red}{Einblenden}', TitleVis => '\\class{tools-class-text-color-FigDescr tools-class-link-hover-red}{Ausblenden}', ParagraphList => array(*/
                   /*array( 'text', array( text => array(
                     'Der Autor ist kein akademisch ausgebildeter, sprich studierter, Physiker.'."\n".
@@ -373,7 +373,7 @@
                     'Aufgrund dieser Tatsache und des Umstandes, dass ich nur eine begrenzte Zeit dieser Arbeit widmen kann und sie live entwickelt wird, kann an sie nicht der Maßstab'."\n".
                     'angelegt werden, der in der Physik für gewöhnlich an wissenschaftliche Arbeiten gestellt wird.'."\n".
                     'Im Rahmen meiner Möglichkeiten versuche ich mich den Standards der wissenschaftlichen Praxis anzunähern.'."\n"))),
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\class{tools-class-text-color-FigDescr tools-class-link-hover-red}{mehr …}'/*, TitleVis => '\\class{tools-class-text-color-FigDescr tools-class-link-hover-red}{weniger …}'*/, ParagraphList => array(
                   /*array( 'text', array( text => array(
                     'In Bezug auf Verweise auf Primärliteratur beispielsweise, bemüht sich der Autor, auf diese zu verweisen und Verweise auf'."\n".
@@ -436,7 +436,7 @@
 
 
 		    	<!  • Inhalt:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Home:Inhalt',
               '', 'Sc_f_Paragraph',
                 array(
@@ -577,7 +577,7 @@
 		    	<!    • Lichtgeschwindigkeit einf¸gen  >
 		    	<!    • Wirkungsquanten-String einf¸gen  >
 		    	<!    • Bewegungsraum, Licht-Bewegungsraum, Wirkungsquanten-Bewegungsraum einfügen  >
-          <?php To_f_headline_add_hides_begin( 'Lexikon', 'Lexikon', 'OM:FrQFT:Home:Lexikon', '          ', 'invis'); ?>
+          <?php To_f_headline_add_hides_begin( 'Lexikon', 'Lexikon', 'OM:FrQFT:Home:Lexikon', '          ', 'hideContent'); ?>
             <br>
           
             <table border="0"> <colgroup> <col width="22"> <col width="300"> <col width="16"> <col width="362"> </colgroup>
@@ -703,7 +703,7 @@
                   &hellip;</td> <td valign="top" style="color: #A0A0A0">
                   ein neues Verst&auml;ndnis</td> </tr>
             </table>
-          <?php To_f_headline_add_hides_end( '          ', 'invis'); ?>
+          <?php To_f_headline_add_hides_end( '          ', 'hideContent'); ?>
 
           
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

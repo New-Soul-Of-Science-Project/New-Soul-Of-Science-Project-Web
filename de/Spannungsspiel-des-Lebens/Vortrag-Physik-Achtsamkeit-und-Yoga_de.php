@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  /*array( 'notice', array( Display => 'invis', text => array(
+                  /*array( 'notice', array( Display => 'hideContent', text => array(
                       //'(• Physik: Regelprozesse zeigen sich in Newtons Actio gleich Reactio. Denn hierin kommt das grundlegende Konzept von Spieler und Gegenspieler, Agonist und Antagonist, zum Ausdruck. In Bezug auf das Beispiel unseres Sonnensystems und die stabile Bahn der Erde um die Sonne gibt es auch Actio und Reactio. Die Gravitation spielt gegen die Fliehkraft, also gegen die Trägheit, wie alle Wechselwirkungen, die eine Bewegung ändern. Aus Sicht eines Regelprozesses ist die noch einmal gründlich zu analysieren. Hier spielt irgendwie die Kraft gegen die Zeit, die es braucht, eine Wirkung zu entfalten. Was wiederum mit der Zeit die es braucht zusammenhängt, um, aus Sicht der FrQFT, die Wirkungsquanten-Struktur der Erde durch das Gravitationspotenzial der Sonne so umzubauen, dass die Erde ihre Bewegungsrichtung ändert.)',
                       //'(• Physik: Die Schlussfolgerungen münden in die Einsicht, dass es für jedes Ding, jede Existenz, der Physik genau einen einzigen grundlegenden Regelprozess geben muss. Dieser Regelprozess organisiert die Stabilität und die Entwicklung seiner Existenz.)',
                       //'(– Leben: Da stellt sich die Frage, welcher Regelprozess liegt genau jedem einzelnen Lebewesen zu grunde? Der Achtsamkeitsprozess.)',
@@ -22,7 +22,7 @@
                       //'(⋅ Der Regelprozess, der die Mitglieder einer Art als Fortpflanzungsgemeinschaft verbindet.)',
                       //'(⋅ Die Lebewesensgemeinschaft der Erde als gemeinsamer Organismus. Denn im Grunde hängen alle Lebewesen zusammen. Bäume – Pflanzen – machen zum Beispiel durch Aerosole Regen, der kaum auf sie selber fällt, also direkt nicht dem Baum selber sondern Artgenossen, anderen Pflanzen und Lebewesen dient. Dazu gehören auch Zusammenhänge, in denen wir über unser Mikrobiom, unserer Bakterien- und Pilzflora, mit allen Artgenossen und letztendlich mit sehr vielen Arten, die auch mit den Mitgliedern unseres Mikrobioms in Verbindung stehen.)',
                     ))),*/
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(\\bold{Aktuelle Forschung})',
                     '(• Bezug zwischen der buddhistischen Achtsamkeitspraxis und dem neurobiologischen Konstruktivismus stellt auch viele Bezüge zum Achtsamkeitsprozess her: Vgl. \\cite{Vogd:WozuAchtsamSeinUndWoraufDieAchtsamkeitLenken:2016}.)',
                     ))),
@@ -442,7 +442,7 @@
                         addtext => '\\footnote{\\cite{wiki:AchtsamkeitMindfulness:2017}, Definitionen von Achtsamkeit, Achtsamkeit nach Kabat-Zinn.}')),
                       
                   // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                      Title => '\\color{*CloserDesc}{Längeres Zitat von Kabat-Zinn}', ParagraphList => array(
                   array( 'text', array( Shape  => 'quote',  TextColor => '*CloserDesc', text => array(
                         'Achtsamkeit ist eine wesentliche Richtung der Meditationspraxis – auch bekannt als Vipassana oder Einsichts-Meditation. In der Übung von Achtsamkeit macht man anfangs Gebrauch von einer einsgerichteten Aufmerksamkeit, um Ruhe und Beständigkeit zu kultivieren, doch anschließend geht man darüber hinaus, indem man die Objekte der Beobachtung erweitert, sowie ein Element des Erforschens einbringt. Wenn Gedanken oder Gefühle entstehen, ignoriert man sie nicht, noch unterdrückt man sie, noch analysiert oder beurteilt man ihren Inhalt. Stattdessen betrachtet man sie, absichtlich und so gut man kann, ohne sie zu bewerten, wie sie von Moment zu Moment als Ereignisse im Feld des Gewahrseins entstehen.'."\n",
@@ -529,7 +529,7 @@
                     'Oder wir bemerken, dass wir uns gar nicht ärgern müssen, weil es gar nicht so relevant ist.'."\n"))),
                       
                   // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                      Title => '\\color{*CloserDesc}{Aus der Perspektive des Achtsamkeitsprozesses kann man analysieren:}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
                         'Gefühle können Antriebe erzeugen und sind damit potenzielle Handlungsaufforderungen.'."\n".
@@ -683,7 +683,7 @@
 
 		    	<!  • XXX  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php /*To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php /*To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:WS-Achtsamkeitsprozess-WoPhysikAufYogaTrifft:AchtsamkeitAchtsamkeitsprozess',
               'Vortrag mit Diskussion', 'Sc_f_Paragraph',
                 array(

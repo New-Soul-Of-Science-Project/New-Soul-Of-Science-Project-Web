@@ -32,7 +32,7 @@
 
 		    	<!  • NaPhil-Yoga Coaching  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Angebote-Veranstaltungen:NaPhilYogaCoaching',
               'Kombiniert mit Intensive Yoga Unterricht (Power Yoga)', 'Sc_f_Paragraph',
                 array(
@@ -88,7 +88,7 @@
 
           <!  • Yoga, Alternativmedizin meets Wissenschaft, Medizin, Physik (Meetup Gruppe)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Angebote-Veranstaltungen:YogaMeetsWissenschaft',
               '\\name[undertitle]{OM:SpaLeb:Meetup-Yoga-Meets-Wissenschaft}', 'Sc_f_Paragraph',
                 array(
@@ -119,7 +119,7 @@
 
           <!  • LGBT Spiritual Hamburg (Meetup Gruppe)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Angebote-Veranstaltungen:LGBTSpiritualHamburg',
               '\\name[undertitle]{OM:NPYo:Meetup-LGBT-Spiritual-Hamburg}', 'Sc_f_Paragraph',
                 array(
@@ -150,7 +150,7 @@
 
           <!  • Physik Neu Sehen und Ergründen (Meetup Gruppe)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Angebote-Veranstaltungen:PhysikNeuSehenErgruenden',
               '\\name[undertitle]{OM:FrQFT:Meetup-Physik-Neu-Sehen-Ergruenden}', 'Sc_f_Paragraph',
                 array(
@@ -181,7 +181,7 @@
 
 		    	<!  • Physik, Achtsamkeit und Yoga (Vortrag mit Diskussion)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Angebote-Veranstaltungen:PhysikAchtsamkeitYoga',
               '\\name[undertitle]{OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga} \\name[description]{OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga}', 'Sc_f_Paragraph',
                 array(
@@ -225,7 +225,7 @@
 
 		    	<!  • Perspektivwechsel, Ambiguitätstoleranz und Entscheidungen (Vortrag mit Diskussion)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Angebote-Veranstaltungen:PerspektivwechselAmbiguitaetstoleranzEntscheidungen',
               '\\name[undertitle]{OM:SpaLeb:Vor-PerspektivW-AmbiguitaetsT-Entscheid-Demokra}', 'Sc_f_Paragraph',
                 array(
@@ -270,7 +270,7 @@
 
 		    	<!  • Der Achtsamkeitsprozess — Wo Physik auf Yoga trifft (Worshop)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Angebote-Veranstaltungen:AchtsamkeitsprozessWoPhysikAufYogaTrifft',
               '\\name[undertitle]{OM:NPYo:WS-Achtsamkeitsprozess-WoPhysikAufYogaTrifft}', 'Sc_f_Paragraph',
                 array(

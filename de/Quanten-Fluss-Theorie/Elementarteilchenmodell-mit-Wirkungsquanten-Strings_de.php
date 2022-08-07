@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Interessante Aspekte}',
                     '• Die Materiewelle und die Einstein-De-Broglie-Beziehungen, siehe Wikipedia \\jump[https://de.wikipedia.org/wiki/Materiewelle]{}{Materiewelle}.',
                     '\\bold{Strukturelle Analyse}',
@@ -95,7 +95,7 @@
 
 
 		    	<!  • Elementarteilchen mit Ruhemasse:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Elementarteilchen:Elementarteilchen-mit-Ruhemasse',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -103,7 +103,7 @@
                       array(  jump_name => 'OM:FrQFT:Elementarteilchen', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Film vom Lepton und seine Spins.)',
                     '(• Ruhemasse\\footnote[0000D0]{Vgl. \\cite{wiki:Masse2013}, Spezielle Relativitätstheorie, Ruhemasse.)',
                     ))),
@@ -139,7 +139,7 @@
 
           
 		    	<!  • Photonen:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Elementarteilchen:Photonen',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -147,7 +147,7 @@
                       array(  jump_name => 'OM:FrQFT:Elementarteilchen:Elementarteilchen-mit-Ruhemasse', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• XXX)',
                     ))),
                       
@@ -182,7 +182,7 @@
 
 
 		    	<!  • Massenträgheit  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Elementarteilchen:Massentraegheit',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -226,7 +226,7 @@
 
 
 		    	<!  • Elektrische Ladung:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Elementarteilchen:Elektrische-Ladung',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -265,7 +265,7 @@
 
           
 		    	<!  • Higgs-Feld und Higgs-Mechanismus:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Elementarteilchen:Higgs-Feld-Mechanismus-traege-Masse',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -314,7 +314,7 @@
 
           
 		    	<!  • Gravitation:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Elementarteilchen:Gravitation',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -350,7 +350,7 @@
 
           
 		    	<!  • Hadronen aus Quarks und Gluonen  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Elementarteilchen:Hadronen',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -383,7 +383,7 @@
 
           
 		    	<!  • Quantenmechanik:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Elementarteilchen:Quantenmechanik',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -436,11 +436,11 @@
 		    	<!  • Welleneigenschaften der Elementarteilchen:  >
 		    	<!    • Vakuum, Wirkungsquanten, Elapsonen, Bewegungsraum verlinken  >
 		    	<!    • Bewegungsraum Fußnote zum Manuscript  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Elementarteilchen:Welleneigenschaften-der-Elementarteilchen',
               '… ein neues Verständnis der Interferenz von Elementarteilchen am Beispiel des Doppelspaltexperiments', 'Sc_f_Paragraph',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(\\bold{De-Broglie-Bohm-Theorie (Bohmsche Mechanik, Pilotwellentheorie von de Broglie und Bohm):})',
                     '(• Nach meinem neusten Verständnis (11/2018) korrespondieren die Welleneigenschaften der FrQFT mit der De-Broglie-Bohm-Theorie. Die Pilotwelle ist das Interferenzmuster des Vakuums. Die Elapsonen-Fluss-Projektion ist also die Pilotwelle. Dabei ist das Elementarteilchen, dass scheinbar hinter dem Doppelspalt interferiert, ein Teil des Interferenzmusters des Vakuums und wird aus diesem Grund auch von dieser Pilotwelle mitgetragen, denn das Elementarteilchen ist demnach wirklich ein Teil von ihr.',
                     '(• Die De-Broglie-Bohm-Theorie bekommt in der FrQFT also eine klare Realisierung, die ihre fraglichen hypothetischen Annahmen physikalisch erklärt.',
@@ -555,7 +555,7 @@
 
           
 		    	<!  • Virtuelle-Teilchen:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Elementarteilchen:Virtuelle-Teilchen',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -590,7 +590,7 @@
 
           
 		    	<!  • Verschränkung:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Elementarteilchen:Verschraenkung',
               'Die Entwicklung eines Bildes', 'Sc_f_Paragraph',
                 array(
@@ -638,7 +638,7 @@
 
           
 		    	<!  • XXX:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Elementarteilchen:Punktfoermige-Erscheinung',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -673,7 +673,7 @@
 
           
 		    	<!  • XXX:  >
-          <?php /*To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php /*To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Elementarteilchen:XXX',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

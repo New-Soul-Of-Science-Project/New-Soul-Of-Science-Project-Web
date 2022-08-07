@@ -25,7 +25,7 @@
                     '• Wenn durch die unterschiedliche Verteilung der Energiedichte im Vakuum das zusätzliche Gravitationsphänomen der Dunklen Materie zustande kommt, dann müsste anhand der Messdaten berechnet werden können, wo im Kosmos die Pole der negativen Gravitation liegen.',
                     ))),
                     
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Aktuelle fachliche Diskussion}',
                     '• Eigenschaften der Dunklen-Materie-Verteilung passen zur FrQFT: Sabine Hossenfelder bemerkt in dem Video \\jump[http://backreaction.blogspot.com/2018/10/dark-matter-or-what-video.html]{}{Dark matter. Or what? [Video] (Sek. 7:29)} in ihrem Blog \\jump[http://backreaction.blogspot.com]{}{BackReaction} zu den Eigenschaften der Dunklen Materie, dass diese mengenmäßig in ihrer örtlichen Verteilung sehr genau mit der sichtbaren Materie korreliert sein muss. Dies ist mit den bisher angenommenen Eigenschaften der vermuteten Eigenschaften der Dunklen Materie kaum zu erklären. Diese Eigenschaft passt aber sehr gut zur Ursache des Phänomens in der FrQFT. Was dann durch die FrQFT ergänzend zu erklären ist ist, wie die Anfangsverteilung der Materie zu Beginn des Urknalls zustande kommt. Der Ansatz dieser Erklärung beruht darauf, dass zu Beginn des Urknall in der FrQFT ja schon in einer Form verteilt war, die der Feinstruktur des Vakuums und der Elementarteilchen der ursprünglichen Sonne zum Zeitpunkt des Urknalls entspricht. Siehe Notizen der Seite \\jumpname{OM:FrQFT:Universum-SchwarzeLoecher-Kosmos-Urknall}.',
                     '• Vergleich Dunkle Materie, Modifizierte Gravitation und MOND: Siehe Sabine Hossenfelder in ihrem Video \\jump[http://backreaction.blogspot.com/2018/10/dark-matter-or-what-video.html]{}{Dark matter. Or what? [Video]} ihres Blogs \\jump[http://backreaction.blogspot.com]{}{BackReaction}.',
@@ -90,7 +90,7 @@
 
 		    	<!  • Die Sache mit der Gravitation der Vakuumenergie:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Dunkle-Materie:Die-Sache-mit-der-Gravitation-der-Vakuumenergie',
               'Vom Basisteilchenmodell zur Vakuumgravitation', 'Sc_f_Paragraph',
                 array(
@@ -124,7 +124,7 @@
           
 
 		    	<!  • Gravitative Wirkung des Vakuums  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Dunkle-Materie:Gravitative-Wirkung-des-Vakuums',
               'Versteht man die Grundstrutur des Vakuums, hat man den Ansatz zur Lösung des Dunklen Materie Phänomens', 'Sc_f_Paragraph',
                 array(
@@ -180,7 +180,7 @@
 
 		    	<!  • Mechanismus des Phänomens der Dunklen Materie:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Dunkle-Materie:Mechanismus-des-Phaenomens-der-Dunklen-Materie',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
               array(
@@ -232,7 +232,7 @@
 
 		    	<!  • Beugungsrückkoppelung der Gravitationsvermittlung:  >
 		    	<!    • XXX  >
-          <?php /* To_f_Chapter( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php /* To_f_Chapter( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'Beugungsrückkoppelung der Gravitationsvermittlung', 'Beugungsrückkoppelung der Gravitationsvermittlung', 'XXX:Beugungsrueckkoppelung-der-Gravitationsvermittlung',
               '\\color{*Bearb}{In Arbeit …}',
               array(
@@ -255,7 +255,7 @@
 
 		    	<!  • Berechnung der Vakuumgravitation:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Dunkle-Materie:Berechnung-der-Vakuumgravitation',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
               array(
@@ -280,7 +280,7 @@
 
 		    	<!  • Heiße Dunkle Materie und MOND ähnlich:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Dunkle-Materie:Heisze-Dunkle-Materie-und-MOND-aehnlich',
               'Es geht nicht um ›kalt‹, sondern um ›heiß‹, und nicht um heiße Dunkle Materie ›oder‹ MOND, sondern um ›und‹', 'Sc_f_Paragraph',
               array(
@@ -339,7 +339,7 @@
 
 		    	<!  • Phänomene in der Milchstraße:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Dunkle-Materie:Phaenomene-in-der-Milchstrasse',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
               array(

@@ -12,7 +12,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• !!! Nach dem Abstract auf der Startseite überarbeiten.)',
                     '(\\bold{Bewusstsein und Regelprozesse:})',
                     '(• Physik der FrQFT: Die \\jump{OM:FrQFT:Home}{FrQFT} stellt in ihrer Überlegung \\italic{\\jumpname{OM:FrQFT:WasIstPhysik}} fest, dass jedes Ding, jede Existenz, einen einzigen zentralen Regelprozess haben muss, der seine Stabilität und Entwicklung organisiert.)',
@@ -199,7 +199,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Einleitung:XXX', text =>
                                            
                 'Schlussfolgerungen')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Das hat etwas mit Kintsugi oder Kintsukuroi zu tun: Eine japanische Reparaturtechnik, die durch das Einstreuen von Gold in den Kitt die Brüche der reparierten Keramik, den Makel, stolz hervorhebt. (Vgl. Mackenzi Lee, Cavaliersreise, Königskinder Verlag in der Carlsen Verlag GmbH, Hamburg, 2017. S. 181.))',
                     ))),
                   array( 'text', array( text => array(
@@ -255,7 +255,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Einleitung:XXX', text =>
                                            
                 'Gesellschaft und persönliches Statement')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Die wichtige Bedeutung der Gesellschaft fürs Individuum darstellen und die sich daraus ergebende Unfreiheit.) \\\\'."\n".
                     '(• Die Gesellschaft funktioniert ähnlich, wie unsere Seele, siehe ›der Wagenlenker‹. (Sokrates(?) Siehe Vortrag und Buch von Albert Kitzler (\\jump[http://www.massundmitte.de][*Bearb]{}{Maß und Mitte}), »Denken heilt!« in der modern life school vom 17.02.2017 (siehe meine Notizen).))',
                     ))),

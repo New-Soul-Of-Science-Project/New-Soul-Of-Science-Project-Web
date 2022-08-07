@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Siehe Meetup zu diesem Thema: \\italic{\\jumpname{OM:NPYo:Meetup-LGBT-Spiritual-Hamburg}}, Veranstaltung vom 09.03.2020',
                     '• Unsere Pole kommunizieren lassen bedeutet uns wieder mit uns selber verbinden, ReConnection, siehe geplante Seite. Das bedeutet auch Yoga – Joch, Zuggeschirr, conjugare, vereinigen, zusammenschließen, sich verbinden.',
                     '– Einer dieser Pole ist unser sogenanntes Ego.',
@@ -122,7 +122,7 @@
                       'Dies verhält sich wie ein Baum des Bewusstseins, der zwar über der Erde wächst, aber dessen Wurzeln des Erkennens in die Erde, ins Unbekannte und Unbewusste reichen.'."\n".
                     'Auch ziehen die Wurzeln vom Unbekannten natürlich etwas mit über die Erdoberfläche.'."\n"))),
                       
-                  /* array( 'fade-in-area', array( Display => 'invis',
+                  /* array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Anmerkung …', TitleVis => 'Anmerkung:', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Ich möchte damit nicht behaupten'."\n".
@@ -202,7 +202,7 @@
                     'Auf ihr stehen viele Dinge, von denen wir fest annehmen, sie seien schon längst erklärt oder die vorgebrachten Erklärungen seien sicher.'."\n".
                     'Auch stehen auf ihr Erklärungen, die gut oder sogar sehr gut und genau funktionieren, von denen wir aber schon längst wissen, dass sie abschließend nicht richtig sein können.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX',
                 Title => 'Liste unerklärter Beobachtungen …',
                 TitleVis => 'Liste unerklärter Beobachtungen:', ParagraphList => array(
                   array( 'bulletlist', array( bullet_ary => array(
@@ -332,7 +332,7 @@
           
 
 		    	<!  • Wissen und Unwissen  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Spiritualitaet-Psychologie:Wissen-Unwissen',
               'Die Kommunikation zwischen dem Bewusstsein und dem Unterbewusstsein', 'Sc_f_Paragraph',
                 array(

@@ -47,7 +47,7 @@
 
 		    	<!  • Zeit-Ebenen:  >
 		    	<!    • Vakuum verlinken  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Zusammenfassung:Zeit-Ebenen',
               '\\color{*Bearb}{(In Arbeit …)} Bewegungsraum und Veränderungsprozesse – fraktale Stuktur', 'Sc_f_Paragraph',
                 array(
@@ -124,7 +124,7 @@
 
 		    	<!  • Universum aus gestaffelten Kosmoi:  >
 		    	<!    • Verlinken: Universum, Schwarze Löcher, Kosmos und Urknall  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Zusammenfassung:Universum-aus-gestaffelten-Kosmoi',
               'Kosmos und Schwarzes Loch sind zwei Seiten der selben Medaille', 'Sc_f_Paragraph',
                 array(
@@ -171,7 +171,7 @@
 
 		    	<!  • Urknall und Schwarze Löcher:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Zusammenfassung:Urknall-und-Schwarze-Loecher',
               'Der Urknall unseres Kosmos und die Entstehung des Schwarzen Lochs, indem sich unser Kosmos befindet, sind das selbe Ereignis', 'Sc_f_Paragraph',
                 array(
@@ -207,7 +207,7 @@
 
 		    	<!  • XXX  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Zusammenfassung:XXX',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

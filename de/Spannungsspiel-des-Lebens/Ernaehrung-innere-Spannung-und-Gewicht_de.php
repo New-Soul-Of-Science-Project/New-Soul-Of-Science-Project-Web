@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Der Kalorienverbrauch unseres Körpers hängt kaum von Sport oder unserer sonstigen körperlichen Aktivität ab. Vgl. \\cite{Roberts:WasUnserKoerpergewichtBestimmt:2017} und \\cite{Pontzer:AktivImEnergiesparmodus:2017}.',
                     '• Fettleibigkeit kommt durch Stress und Schlafmangel. Vgl. \\jump[https://kenfm.de/gunther-moll/]{}{KenFM im Gespräch mit: Gunther Moll („Hallo, hier spricht mein Gehirn“)}, Sek. 1:26:46.',
                     '• Video zu Schlafmangel, Gewicht und Denkvermögen: \\jump[http://www.sueddeutsche.de/gesundheit/der-naechste-bitte-schlafmangel-macht-dick-dumm-und-krank-1.3446365]{}{Schlafmangel macht dick, dumm und krank, Süddeutsche Zeitung, Online, 3. April 2017, 12:16}.\\hidden{Siehe Ordner: "Schlafmangel macht dick, dumm und krank - Süddeutsche Zeitung - 20170403"}',
@@ -58,7 +58,7 @@
 
 		    	<!  • Nahrungsmittel beeinflussen die innere Spannung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Ernaehrung-Spannung-und-Gewicht:Nahrungsmittel',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -98,7 +98,7 @@
 
 		    	<!  • Stresssignale befördern das Übergewicht  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Ernaehrung-Spannung-und-Gewicht:StresssignaleUebergewicht',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -214,7 +214,7 @@
 
 		    	<!  • Schonhaltungen und Grundenergieverbrauch  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Ernaehrung-Spannung-und-Gewicht:SchonhaltungenGrundenergieverbrauch',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(\\bold{Wechselspannungen im Körper vermeiden Verspannungen:})',
                     '(• Atem hat auch die Funktion eine Wechselspannung im Rumpf zu erzeugen. Diese beugt Verspannungen vor. Das funktioniert besonders gut, wenn die Atmung unter hoher Spannung und als Uddjay Atmung ausgeführt wird.)',
                     /*--
@@ -79,7 +79,7 @@
 
 		    	<!  • Spannungsfeld Fortentwicklung und Stabilisierung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperspannung:Fortentwicklung-und-Stabilisierung',
               'Der Djet-Neheh-Dualismus im Körper', 'Sc_f_Paragraph',
                 array(
@@ -87,7 +87,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperspannung', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'invis', text => array(
+                  /*array( 'notice', array( Display => 'hideContent', text => array(
                     '(• XXX)',
                     ))),*/
                       
@@ -126,7 +126,7 @@
 
 		    	<!  • Muskeln, Faszien und Knochen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperspannung:Muskeln-Faszien-und-Knochen',
               'Das Rahmengerüst des Bewegungsapperats', 'Sc_f_Paragraph',
                 array(
@@ -187,7 +187,7 @@
 
 		    	<!  • Das Anatomie-Menschchen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperspannung:DasAnatomieMenschchen',
               'Auf die Justierung, Kalibrierung, Stabilität und Flexibilität kommt es an', 'Sc_f_Paragraph',
                 array(
@@ -224,7 +224,7 @@
                     'Sind die Faszien des Bewegungsapparats durch körperliche oder seelisch-psychische Probleme nicht richtig justiert oder in ihrer Flexibilität eingeschränkt,'."\n".
                     'so hat auch das massive Auswirkungen auf den Körper und seine \\jump{OM:SpaLeb:Koerperspannung:Bewegung}{Bewegung}.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Fortgeschrittene Betrachtung', ParagraphList => array(
                   // !!!: 'fade-in-area' can not include themselfes at the Moment!
                   array( 'text', array( text => array(
@@ -244,7 +244,7 @@
 
 		    	<!  • Gegenmuskulatur (Gegenfaszien)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperspannung:Gegenfaszien',
               'Die mechanische Spannung von Agonisten und Antagonisten', 'Sc_f_Paragraph',
                 array(
@@ -285,7 +285,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Fortgeschrittene Betrachtung', ParagraphList => array(
                   // !!!: 'fade-in-area' can not include themselfes at the Moment!
                   array( 'text', array( text => array(
@@ -303,7 +303,7 @@
 
 		    	<!  • Atemspannung und Oberkörperbalance  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperspannung:Atemspannung-und-Oberkoerperbalance',
               //'Der zentrale Halt und die Bewegungsstabilität des Körpers', 'Sc_f_Paragraph',
               'Die zentrale Aufrichtung und Bewegungsstabilität des Oberkörpers', 'Sc_f_Paragraph',
@@ -312,7 +312,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperspannung:Gegenfaszien', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Atemspannung und Oberkörperbalance bezeichne ich nun als Rumpf-Stimmungsspannung, weil sie den Stolz des Rumpfes repräsentieren und den Gesang stimmen.)',
                     '(• Inwieweit soll hier die gesamte Stimmungsspannung behandelt werden? Also auch die Kopf-Stimmungsspannung? Gehören auch der Stand und die Arme dazu?)',
                     ))),
@@ -345,7 +345,7 @@
                     'Ich stelle diese Zusammenhänge hiermit fest und beschreibe sie auf den Seiten »\\jumpname{OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet}« und »\\jumpname{OM:SpaLeb:Rueckenschmerzen-Atmung-Zwerchfell}«'."\n".
                     'und im Kapitel \\italic{\\jumpname{OM:SpaLeb:Koerperspannung:Aengste-und-Selbstschutz}} ausführlich.'."\n"))),
                     
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Fortgeschrittene Betrachtung', ParagraphList => array(
                   // !!!: 'fade-in-area' can not include themselfes at the Moment!
                   array( 'text', array( text => array(
@@ -364,7 +364,7 @@
 
 		    	<!  • Bewegung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperspannung:Bewegung',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -401,7 +401,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Fortgeschrittene Betrachtung', ParagraphList => array(
                   // !!!: 'fade-in-area' can not include themselfes at the Moment!
                   array( 'text', array( text => array(
@@ -421,7 +421,7 @@
 
 		    	<!  • Psychosomatische Urreflexe auf Stress  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperspannung:Aengste-und-Selbstschutz',
               //'Viele Menschen haben Verspannungen in der Brustmuskulatur und im Zwerchfell und sind sich dessen nicht bewusst …', 'Sc_f_Paragraph',
               'Chronischer Stress durch Sorgen und Ängste triggert über Selbstschutzreflexe Muskeln und Faszien, die so Verspannen', 'Sc_f_Paragraph',
@@ -430,7 +430,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperspannung:Bewegung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Verweisen auf die Seite \\jumpname[*Bearb]{OM:SpaLeb:Psychosomatik-Stress}!)',
                     '(• \\jump[][*Bearb]{OM:SpaLeb:Koerperspannung:Schonhaltung}{körperliche Schonhaltung} hier einfließen lassen und ausführlicher auf der Seite \\jumpname[*Bearb]{OM:SpaLeb:Psychosomatik-Stress}.)',
                     '(• Die Körperhaltung scheint noch weitere Zusammenhänge mit der Phsyche zu haben. Ängste und Demütigungen scheinen einen ursprünglichen Selbstschutzreflex zu aktivieren. Dieser hat vermutlich seinen archaischen Ursprung im Zusammenrollen, um körperlich seine verletzliche Seite, den Bauch und das Gesicht, zu schützen. Ängste und Demütigungen scheinen nicht nur als Reflex, sondern auch auf längere Sicht, die Brustmuskulatur zum Sich-Zusammenziehen zu aktivieren und lösen so eine gebeugte Haltung aus. Im Volksmund als »den Kopf hängen lassen« oder Geknickt-Sein bekannt.)',
@@ -481,7 +481,7 @@
 
 		    	<!  • Körperliche Schonhaltung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperspannung:Schonhaltung',
               'Die körperliche Schonhaltung kann der Beginn eines Teufelskreises sein', 'Sc_f_Paragraph',
                 array(
@@ -704,7 +704,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Schonhaltung:XXX', text =>
                                            
                 'Süchte und Drogen \\color{*Bearb}{(ähnlich bei Psyche)}')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Alkohol)',
                     '(• eigentlich alle Drogen manipulieren die psychische und die Körperspannung.)',
                     '(• Sinja Köllner erzählte auf meine Frage, was passiert, wenn sie Stress hat und deshalb eine Rauch: Es würde eine Distanz zum Stress schafen, der dann nicht mehr so nahe an einen ran käme. Ich frage mich, befördert rauchen und ggf. Nikotin den Selbstschutz?)',
@@ -733,7 +733,7 @@
 
 		    	<!  • Verspannungen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperspannung:Verspannungen',
               '… von Faszien und Muskeln', 'Sc_f_Paragraph',
                 array(
@@ -781,7 +781,7 @@
 
 		    	<!  • Widerstand  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperspannung:Widerstand',
               'Sich im eigenen Widerstand spüren oder ihn aufweichen und überwinden', 'Sc_f_Paragraph',
                 array(
@@ -821,7 +821,7 @@
 
 		    	<!  • Aktives Schlafen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperspannung:AktivesSchlafen',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -868,7 +868,7 @@
 
 		    	<!  • Spannungsfeld Emotion und Verstand  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperspannung:SpannungsfeldEmotionVerstand',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -913,7 +913,7 @@
 
 		    	<!  • Linke und rechte Gehirnhälfte  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperspannung:Gehirnhaelften',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -948,7 +948,7 @@
 
 		    	<!  • Gesichtsspannung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperspannung:Gesichtsspannung',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -983,7 +983,7 @@
 
 		    	<!  • Sexualität  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperspannung:Sexualitaet',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -1016,7 +1016,7 @@
 
 		    	<!  • Prävention und Hilfe  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperspannung:Praevention-und-Hilfe',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

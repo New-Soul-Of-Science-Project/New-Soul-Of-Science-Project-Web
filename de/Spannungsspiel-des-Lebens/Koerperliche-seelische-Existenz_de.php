@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Diese Seite in \\italic{(neue) Anthropologie} umbenennen? Verweis von \\italic{\\jumpname{OM:SpaLeb:Achtsamkeitsprozess:NeueAnthropologie}} hierher?',
                     '• Seele ist Interaktion!',
                     '– Spannungsspiel des Lebens (und FrQFT): Das Seelenverständnis des ›Spannungsspiels des Lebens‹, die Seele als das Verhalten der Dinge miteinander oder untereinander zu erkennen, als den Zusammenhang zwischen den Dingen, ist sehr dazu geeignet Geist und Seele sowie deren Beziehung zur Materie wieder besser zu verstehen und neu in die Gesellschaft und Wissenschaft zurück zu integrieren.',
@@ -138,7 +138,7 @@
 
 		    	<!  • Biologisches Existenzprinzip  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperliche-und-seelische-Existenz:OrganischesExistenzprinzip',
               'Existenz zwischen fest und flüssig, etwas aus der Spannungsbalance …', 'Sc_f_Paragraph',
                 array(
@@ -200,7 +200,7 @@
 
 		    	<!  • Ewige Fortentwicklung und stabilisierendes Ritual  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperliche-und-seelische-Existenz:RitualFortentwicklung',
               'Die Djet- und die Neheh-Zeit – der Djet-Neheh-Dualismus in der Spannungsphilosophie', 'Sc_f_Paragraph',
                 array(
@@ -208,7 +208,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz:OrganischesExistenzprinzip', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• !!! Nach dem Abstract auf der Startseite überarbeiten.)',
                     '(• Titel ändern zu »Balance zwischen Stabilität und Fortentwicklung«, also zwischen Harmonie und Disharmonie, zwischen Neheh und Djet)',
                     '(• Link und Hinweis auf die ›strukturelle Naturphilosophie der Zeit‹.)',
@@ -310,7 +310,7 @@
 
 		    	<!  • Spannungsbiologie  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperliche-und-seelische-Existenz:Spannungsbiologie',
               'Eine Sicht auf die Biologie als dynamische Regelsysteme von Organismen', 'Sc_f_Paragraph',
                 array(
@@ -353,7 +353,7 @@
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz:Spannungsbiologie:Quantenbiologie', text =>
                       
                 'Quantenbiologie')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Quanteneffekte in der Biologie:)',
                     '(– Bestätigung. Vögel und Fische „sehen“ das Magnetfeld der Erde. Sekundärliteratur: \\jump[http://www.sciencemag.org/news/2016/06/body-s-hidden-compass-what-it-and-how-does-it-work]{}{The body’s hidden compass—what is it, and how does it work?} Und: \\jump[https://resonance.is/quantum-coherence-underlying-magnetoreception-avian-species-confirmed/]{}{Quantum Coherence Underlying Magnetoreception in Avian Species Confirmed. Birds Can See Earth\'s Magnetic Fields, And We Finally Know How That\'s Possible.})',
                     ))),
@@ -395,7 +395,7 @@
 
 		    	<!  • Erkenne dich selbst  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperliche-und-seelische-Existenz:ErkenneDichSelbst',
               'Die Existenz durch Neheh drückt sich im inneren Dialog der Selbsterkenntnis von Körper und Seele aus', 'Sc_f_Paragraph',
                 array(
@@ -457,7 +457,7 @@
 
 		    	<!  • Seele ist Antrieb und resultierendes Verhalten  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperliche-und-seelische-Existenz:SeeleIstVerhalten',
               'Die Seele ist der Spannungszustand, der durch die Interaktion der körperlichen Bestandteile den Antrieb, also das innere und äußere Verhalten und dessen Selbst- und Fremdwahrnehmung ausmacht', 'Sc_f_Paragraph',
                 array(
@@ -465,7 +465,7 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz:ErkenneDichSelbst', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Der Symmetriebruch ist der Lebensfunke.)',
                     '(• Mangelndes Selbstmitgefühl heißt auch mangelnde Selbstreflexion.)',
                     '(• Die christlich religiös bedingte, historische Trennung von Seele und Körper, die sich im ›Leib-Seele-Problem‹\\footnote[*Bearb]{\\const{SpaLeb_g_footnote_text_LeibSeeleProblem}} widerspiegelt, ist ungesund. Denn diese Trennung hat zu einer Vernachlässigung des Körpers geführt, wie man sie bei vielen Menschen der westlichen Welt oder der westlich beeinflussten Welt finden kann, weil der Geist vielfach überhöht worden ist. Doch nur in einem gesunden Körper wohnt auch ein gesunder Geist.)',
@@ -549,7 +549,7 @@
 
 		    	<!  • Körperspannung und Psyche sind Spiegelbilder  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperliche-und-seelische-Existenz:KoerperSpaPsycheSpiegelbilder',
               'XXX', 'Sc_f_Paragraph',
                 array(
@@ -591,7 +591,7 @@
 
 		    	<!  • Urvertrauen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperliche-und-seelische-Existenz:Urvertrauen',
               'Die Basis auf der wir überwiegend positiv durchs Leben gehen können', 'Sc_f_Paragraph',
                 array(
@@ -624,7 +624,7 @@
 
 		    	<!  • Dauerhafte, gesunde Existenz und Gesellschaft  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Koerperliche-und-seelische-Existenz:DauerhafteUndGesundeExistenz',
               'Die Überwindung der Not und Hilflosigkeit', 'Sc_f_Paragraph',
                 array(

@@ -51,7 +51,7 @@
 
 		    	<!  • Spezielle Relativitätstheorie  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vergleich:Spezielle-Relativitaetstheorie',
               'Eine entscheidende Abänderung und eine andere Erweiterung der Speziellen Relativitätstheorie als die Allgemeine Relativitätstheorie es ist', 'Sc_f_Paragraph',
                 array(
@@ -166,7 +166,7 @@
 
 		    	<!  • Stringtheorien  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vergleich:Stringtheorien',
               'Ähnlich aber doch ganz anders', 'Sc_f_Paragraph',
                 array(
@@ -250,7 +250,7 @@
 
 		    	<!  • Schleifen-Quantengravitation  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vergleich:Schleifen-Quantengravitation',
               'Ähnlich aber anders', 'Sc_f_Paragraph',
                 array(
@@ -295,7 +295,7 @@
 
 		    	<!  • Heim-Theorie  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vergleich:Heim-Theorie',
               'Erstaunliche Ähnlichkeiten', 'Sc_f_Paragraph',
                 array(
@@ -366,7 +366,7 @@
 
 		    	<!  • The Reciprocal System  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vergleich:The-Reciprocal-System',
               'Die Physik Dewey Bernard Larsons', 'Sc_f_Paragraph',
                 array(
@@ -410,7 +410,7 @@
 
 		    	<!  • Wellenmodell eines Teilchens  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vergleich:Wellenmodell-eines-Teilchens',
               'Eine simple Annäherung an das Prinzip des Lichts in Elementarteilchen mit Ruhemasse', 'Sc_f_Paragraph',
                 array(
@@ -456,7 +456,7 @@
 
 		    	<!  • Verschiedene Theorien  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vergleich:Verschiedene-Theorien-oder-Ideen',
               'Wo findet man Prinzipien und Eigenschaften der Quanten-Fluss-Theorie ebenfalls', 'Sc_f_Paragraph',
                 array(

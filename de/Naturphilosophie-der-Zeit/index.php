@@ -28,7 +28,7 @@
 
 
 		    	<!  • Inhalt:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPT:Home:Inhalt',
               '', 'Sc_f_Paragraph',
                 array(
@@ -67,7 +67,7 @@
           
           
 		    	<!  • Lexikon:  >
-          <?php To_f_headline_add_hides_begin( 'Lexikon', 'Lexikon', 'OM:NPT:Home:Lexikon', '          ', 'invis'); ?>
+          <?php To_f_headline_add_hides_begin( 'Lexikon', 'Lexikon', 'OM:NPT:Home:Lexikon', '          ', 'hideContent'); ?>
             <br>
           
             <table border="0"> <colgroup> <col width="22"> <col width="300"> <col width="16"> <col width="362"> </colgroup>
@@ -76,7 +76,7 @@
                   &hellip;</td> <td valign="top" style="color: #A0A0A0">
                   XXX</td> </tr>
             </table>
-          <?php To_f_headline_add_hides_end( '          ', 'invis'); ?>
+          <?php To_f_headline_add_hides_end( '          ', 'hideContent'); ?>
 
           
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

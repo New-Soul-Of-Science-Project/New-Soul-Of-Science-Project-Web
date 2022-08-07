@@ -3962,9 +3962,9 @@
 
     if (0 < $Sc_g_footnote_ary_dim)
     {
-      To_f_headline_add_hides_begin( 'Fußnoten', 'Fußnoten', $Glo_g_Site_activ.':Fussnoten', $offset, 'invis');
+      To_f_headline_add_hides_begin( 'Fußnoten', 'Fußnoten', $Glo_g_Site_activ.':Fussnoten', $offset, 'hideContent');
         Sc_g_footnote_make( false);
-      To_f_headline_add_hides_end( $offset, 'invis');
+      To_f_headline_add_hides_end( $offset, 'hideContent');
     }
     echo $offset.''."\n";
     echo $offset.''."\n";

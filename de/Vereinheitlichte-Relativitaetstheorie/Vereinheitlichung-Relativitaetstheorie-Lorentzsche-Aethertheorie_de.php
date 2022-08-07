@@ -20,7 +20,7 @@
                     '\\color{*Bearb}{(Anders formulieren! Einer der Gründe ist die Äquivalenz zwischen der SRT und der LET. Es ist mir wichtig beide Perspektiven zu versöhnen, indem man ihre jeweilige Berechtigung herausarbeitet und so das die Entwicklung der Physik behindernde Kriegbeil begräbt. Der Anstoß ist allerdings die FrQFT. Sind FrQFT und ART Äquivalent? So direkt und einfach nicht unbedingt, wie man am Feuerwand-Problem eines Schwarzen Lochs erkennt. Wie ist der Sinn und Zweck der VRT also genau zu formulieren? Wie ist die VRT sinnvoll zu formulieren, um diesen Zweck zu erfüllen? Muss die ART fraktal von den Wirkungsquanten und Mikro-WQ her formuliert werden, um die Äquivalenz mit der FrQFT herzustellen? Klar ist, dass die gravitative Wirkung des Vakuums einzubeziehen ist. Eine Möglichkeit ist vielleicht: Die SRT ist ein lokaler begrenzter Teil der ART. Unter Masseneinfluss verliert die SRT auf größeren Distanzen ihre Gültigkeit. Könnte die ART ein bestimmter Teil der FrQFT sein? Dann würde die ART unter bestimmten Bedingungen im Rahmen der FrQFT gelten.)} \\\\'."\n".
                     '\\color{*Bearb}{(• Eine Frage der Perspektive. \\\\ • Die Situation soll befriedet werden. \\\\ • Einstein hat eine geniale Vereinfachung vorgenommen und die Betrachtung des Mediums des Lichts unnötig gemacht. Mit dieser Vereinfachung, die ihre sehr erkenntnistheoretische und praktische Berechtigung hat, kann man aber scheinbar nicht die Physik vereinheitlichen.)} \\\\'."\n"))),*/
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Teilchenmodell erweitern?)',
                     '(– Heisenbergsche Abzählinterpretation.)',
                     '(– Rotationsfreuquenz, die sich aus der Struktur ergibt.)',
@@ -230,7 +230,7 @@
 
 		    	<!  • Philosophie der Lichtuhr  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:VRT:Vereinheitlichung-RT-LET:Philosophie-der-Lichtuhr',
               'Einstein implementiert implizit ein Teilchenmodell', 'Sc_f_Paragraph',
                 array(
@@ -238,7 +238,7 @@
                       array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Gibt es ähnlich auch in der FrQFT! Was tun?)',
                     '(• Im Fall der aVRT das Gedankenexperiment der Lichtuhr auf die Lösung des Problems der Zeit erweitern?!)',
                     ))),
@@ -268,7 +268,7 @@
                     'bewegen.'."\n".
                     'Daraus folgt, dass Materie-Elementarteilchen eigentlich eine ausgedehnte Struktur besitzen, also nicht punktförmig sein können.'."\n".
                     'Er nimmt also eine unrealistische Vereinfachung vor und versteckt sein explizites Teilchenmodell der Lichtuhr implizit in den Punkten seiner physikalischen Objekte.'."\n"))),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Enthält die Lorentzsche Äthertheorie ein explizites Teilchenmodell? Wenn nein, enthält die Lorentzsche Äthertheorie die Vereinfachung auf Punktteilchen und damit ein implizites Teilchenmodell?)',
                     ))),
                   array( 'text', array( text => array(
@@ -344,7 +344,7 @@
 
 		    	<!  • Lösung des ›Problems der Zeit‹  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:VRT:Vereinheitlichung-RT-LET:Loesung-des-Problems-der-Zeit',
               '– in der Quanten-Fluss-Theorie', 'Sc_f_Paragraph',
                 array(
@@ -362,7 +362,7 @@
                                            
                 'Lösung des ›Problems der Zeit‹ in der Quanten-Fluss-Theorie')),*/
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Ist sehr ähnlich im Kapitel \\jumpname[*Bearb]{OM:FrQFT:NeuePhysik:Problem-der-Zeit} der FrQFT.)',
                     '(• Die Konstanz der Wirkungsquanten-Geschwindigkeit ergibt sich nur im euklidischen Wirkungsquanten-Bewegungsraum! Die Konstanz der Zweiweg-Lichtgeschwindigkeit gilt nur im gekrümmten Licht-Bewegungsraum.)',
                     '(• Einpflegen: Die kosmische Zeit löst das „Problem der Gleichzeitigkeit“\\footnote[*Bearb]{Vgl. \\cite{Kiefer:DoesTimeExistInQuantumGravity2009}, \\color{*Bearb}{S. XXX}.}. Gleichzeitigkeit wird in der Quantenphysik für die Wellenfunktion und die Verschränkungen der Elementarteilchen benötigt. In der Relativitätstheorie gibt es bisher aber keine Gleichzeitigkeit.)',
@@ -515,7 +515,7 @@
 
 		    	<!  • Relativistisches Licht-Materie-Medium  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:VRT:Vereinheitlichung-RT-LET:Relativistisches-Licht-Materie-Medium',
               '', 'Sc_f_Paragraph',
                 array(
@@ -568,7 +568,7 @@
 
 		    	<!  • Spezielle Vereinheitlichte Relativitätstheorie (sVRT)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:VRT:Vereinheitlichung-RT-LET:Spezielle-Vereinheitlichte-Relativitaetstheorie',
               '', 'Sc_f_Paragraph',
                 array(
@@ -644,7 +644,7 @@
 
 		    	<!  • Kosmologisches Prinzip und flacher Kosmos  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:VRT:Vereinheitlichung-RT-LET:Kosmologisches-Prinzip-und-flacher-Kosmos',
               '', 'Sc_f_Paragraph',
                 array(
@@ -684,7 +684,7 @@
 
 		    	<!  • Gekrümmter Licht-Bewegungsraum  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php /*To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php /*To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:VRT:Vereinheitlichung-RT-LET:XXX',
               '', 'Sc_f_Paragraph',
                 array(
@@ -703,7 +703,7 @@
 
 		    	<!  • Vereinheitlichte Relativitätstheorie (VRT)  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:VRT:Vereinheitlichung-RT-LET:Vereinheitlichte-Relativitaetstheorie',
               '', 'Sc_f_Paragraph',
                 array(
@@ -783,7 +783,7 @@
 
 		    	<!  • XXX  >
           <?php /*$Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:VRT:Vereinheitlichung-RT-LET:XXX',
               '', 'Sc_f_Paragraph',
                 array(

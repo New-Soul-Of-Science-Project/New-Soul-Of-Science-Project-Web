@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     // !!! '• Zu Untersuchungen diesbezüglich, siehe Ordner "Sandkuhl, Jan". Er hat dort diverse Hinweise darauf gegeben. Mal durchschauen.',
                     '\\bold{Entstehung von Verspannungen}',
                     '• Siehe auch besonders \\italic{\\jumpname{OM:SpaLeb:Psychosomatik:Betaeubt-Gelaehmt}}. Auch für die \\jumpname{OM:SpaLeb:Psychosomatik-Stress:Problemloesungsansaetze}.',
@@ -126,7 +126,7 @@
 
 		    	<!  • Erkenntnisweg  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psychosomatik-Stress:Erkenntnisweg',
               'Viele Menschen haben Verspannungen im Zwerchfell, in der Brust, in Schulter sowie Nacken oder im Kiefer und sind sich dessen nicht bewusst', 'Sc_f_Paragraph',
                 array(
@@ -224,7 +224,7 @@
 
 		    	<!  • Einatemreflex und Atemunterdrückung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psychosomatik-Stress:EinatemreflexAtemunterdrueckung',
               'Die Zwerchfellverspannung durch das Triggern des Einatemreflexes und die Atemunterdrückung bei Stress', 'Sc_f_Paragraph',
                 array(
@@ -232,7 +232,7 @@
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik-Stress:Erkenntnisweg', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Ob ich in die Bauchschonhaltung gegangen bin, kann ich feststellen, indem ich beobachte, ob mein Reflex beim aus dem Bett Aufstehen, direkt aus der Rückenlage, mit Bauch nach oben, als erstes den Bauch über die ringförmige Bauchmuskluatur rein zieht oder als erstes über das Zwerchfell den Bauch herausdrückt und dadurch die senkrechte, glatte Bauchmuskulatur strafft.',
                     ))),
                       
@@ -380,7 +380,7 @@
 
 		    	<!  • Schulter-Beug-Reflex  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psychosomatik-Stress:SchulterBeugeReflex',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -432,7 +432,7 @@
 
 		    	<!  • Böses-Gesicht- und Beißreflex  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psychosomatik-Stress:BoesesGesichtBeissreflex',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -476,7 +476,7 @@
 
 		    	<!  • Flucht- und Angriffsreflex  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psychosomatik-Stress:FluchtAngriffsreflex',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -520,7 +520,7 @@
 
 		    	<!  • Anus-Gesäß-Reflex  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psychosomatik-Stress:AnusGesaessreflex',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -565,7 +565,7 @@
 
 		    	<!  • Nerven und Gehirn  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psychosomatik-Stress:NervenGehirn',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -612,7 +612,7 @@
 
 		    	<!  • Problemlösungsansätze  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psychosomatik-Stress:Problemloesungsansaetze',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

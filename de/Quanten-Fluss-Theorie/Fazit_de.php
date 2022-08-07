@@ -184,7 +184,7 @@
 
 		    	<!  • Quantenphysik  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Fazit:Quantenphysik',
               'XXX', 'Sc_f_Paragraph',
                 array(
@@ -225,7 +225,7 @@
 
 		    	<!  • Flacher Kosmos  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Fazit:Flacher-Kosmos',
               'Die Erklärung, warum unser Kosmos euklidisch flach ist', 'Sc_f_Paragraph',
                 array(
@@ -261,7 +261,7 @@
 
 		    	<!  • Gravitation  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Fazit:Gravitation',
               'Die Erklärung bisher unverstandener gravitativer Phänomene', 'Sc_f_Paragraph',
                 array(

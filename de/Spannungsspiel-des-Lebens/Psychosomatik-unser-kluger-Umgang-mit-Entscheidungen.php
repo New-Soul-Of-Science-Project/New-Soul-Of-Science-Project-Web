@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Die Pole und Verläufe, der Gradienten, der Psychosomatik:}',
                     '• Der Achtsamkeitsprozess spiegelt sich in Polen und Verläufen – Gradienten – in unserem Körper wider, siehe \\jumpname{OM:SpaLeb:Psychosomatik} und Notizen \\jumpname{OM:NPYo:HaTha}.',
                     '– Die Beschreibung dieser Pole und Gradienten sollte auch direkt ins ›Spannungsspiel des Lebens‹ eingebunden werden.',
@@ -151,7 +151,7 @@
 
 		    	<! XXX >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psychosomatik-Entscheidungen:XXX',
               '', 'Sc_f_Paragraph',
                 array(

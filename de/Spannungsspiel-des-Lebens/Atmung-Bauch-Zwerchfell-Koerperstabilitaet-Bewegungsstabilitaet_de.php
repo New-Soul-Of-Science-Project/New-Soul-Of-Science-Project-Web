@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Mechanischer Ablauf der Atmung:}',
                     '• Der Achtsamkeitsprozess spiegelt sich in Polen und Verläufen – Gradienten – in unserem Körper wider, siehe Notizen \\jumpname{OM:NPYo:HaTha}.',
                     '– Entlang dieser Gradienten breitet sich die Atmung im Körper aus, nach oben und nach vorne.',
@@ -171,7 +171,7 @@
 
 		    	<!  • Komlexere Beschreibung der Atmung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet:KomplexAtmung',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -208,7 +208,7 @@
 
 		    	<!  • Physiologie der Atmung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet:PhysioAtmung',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -288,7 +288,7 @@
 
 		    	<!  • Gesang  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet:Gesang',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -332,7 +332,7 @@
 
 		    	<!  • Stirn- und Nasennebenhöhlen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet:StirnNasennebenhoehlen',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

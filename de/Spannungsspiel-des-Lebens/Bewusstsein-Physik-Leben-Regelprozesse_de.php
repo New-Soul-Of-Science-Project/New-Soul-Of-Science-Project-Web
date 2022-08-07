@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Der Text ist oft sehr technisch. Es wäre schön, ihn etwas einfacher verständlich zu schreiben und die technischen Detals in ein Extrakapitel oder auf eine Seite der FrQFT zu bringen.',
                     '• Die Materie kann hier auch als Rückgrat, als auskristallisierte Knochen – auskristallisiertes Bewusstsein –, im Zusammenspiel zwischen Seele und Materie gesehen werden. Durch die auskristallisierte Materie ist erst ein intensives Wechselspiel möglich. Siehe auch \\jumpname{OM:SpaLeb:Koerperliche-und-seelische-Existenz}.',
                     '• Hier wird der ›Dualismus vom Teil und vom Ganzen‹ deutlich sichtbar, siehe Ordner. Ein fraktaler Dualismus, der dem Djet-Neheh-Dualismus ähnelt oder gleicht.',
@@ -135,7 +135,7 @@
                       
                 'Verbundenheit von Elementarprozessen', subline =>
                   'Verschränkung')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                      '\\bold{Korrigieren:}',
                      '• Ich glaube nicht mehr, dass es Verschränkung in dem Sinn der heutigen akademischen Physik gibt, denn es scheint sich dabei um die Korrektur der theoretischen Vorhersage an der Realität zu handeln.',
                      '• Die Verbindung zwischen den Regelprozessen scheint eher aus Erhaltungssätzen zu folgen (Superdeterminismus?).',
@@ -232,7 +232,7 @@
 
 		    	<!  • Information ist Wirkung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Bewusstsein:InformationIstWirkung',
               'Nur was wirkt wurde verstanden und ist daher Information', 'Sc_f_Paragraph',
                 array(
@@ -240,7 +240,7 @@
                       array(  jump_name => 'OM:SpaLeb:Bewusstsein', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Eigene Seite?)',
                     '(• \\quote{Information muss erkannt sein, sonst wär es keine Information.} Warnke, Ulrich in \\jump[https://www.youtube.com/watch?time_continue=409&v=lVhFhR_lSdw]{}{Wie das Bewusstsein „Wirklichkeit schaltet" | Dr. Ulrich Warnke im Gespräch}, Sek. 9:50.)',
                     '(\\bold{Bewusstsein und Regelprozesse:})',
@@ -345,7 +345,7 @@
                   array( 'text', array( text => array(
                     '… das Bewusste dann auch noch sehr bewusst anzuwenden.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'In der neuen Physik der Quanten-Fluss-Theorie gilt ebenfalls: \\\\ Information ist Wirkung …', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Es gibt interessanterweise eine Struktur in der Physik, die immer Information ist, weil sie immer wirkt:'."\n".

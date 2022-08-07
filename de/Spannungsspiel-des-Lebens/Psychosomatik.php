@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Wachen und Schlafen – Sympathikus und Parasympathikus}',
                     '• Siehe \\italic{\\jumpname{OM:NPYo:HaTha}}.',
                     '• Siehe \\italic{\\jumpname{OM:SpaLeb:Schlaf-und-Aktivsein}}.',
@@ -48,7 +48,7 @@
                     'Es offenbart die Verbindungen der Veda, dem alten, in Sanskrit formulierten Wissen, das dem Yoga, dem Hinduismus und dem Buddhismus zugrunde liegt, mit dem Glauben und den Mythen der alten Ägypter.'."\n".
                     'Dieses Wissen ist in Teilen auch ins Judentum und ins Christentum wie wohl auch in den Islam übergegangen.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis', jumpName => 'OM:SpaLeb:Psychosomatik:Vortext:MehrGeschDetails',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SpaLeb:Psychosomatik:Vortext:MehrGeschDetails',
                 Title => 'Mehr geschichtliche Details …',
                 TitleVis => 'Mehr geschichtliche Details:', ParagraphList => array(
                       
@@ -126,7 +126,7 @@
                       
                 'Der Gefühlsgradient und der Handlungsgradient im menschlichen Körper', subline =>
                   '')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Es gibt auch noch die Perspektive, in der unsere Rückseite unbewusster oder unterbewusster ist (weiblicher Aspekt) und die Vorderseite bewusster (männlicher Aspekt).',
                     ))),
                   array( 'text', array( text => array(
@@ -296,7 +296,7 @@
                       
                 'Ausgeglichenheit', subline =>
                   '')),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• HaTha Yoga bezieht sich aus tantrischer Sicht auf den Ausgleich, die Harmonie, unserer Körperhälften.',
                     ))),
                   array( 'text', array( text => array(
@@ -505,7 +505,7 @@
                       'Sollte ich bei meinen Handlungen und Emotionen Probleme haben oder erkennen, dann nutze ich diese, um zu lernen und daran zu wachsen.'."\n".
                     'Dabei denke ich Kreativ und benutze meinen Verstand mit Leichtigkeit, um \\italic{Lösungen} zu finden.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Detailierter …', TitleVis => 'Detailierter:', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Bei gut funktionierendem Achtsamkeitsprozess bin ich in mir, in meinem inneren Dialog meiner Bedürfnisse und (Handlungs-)Möglichkeiten,'."\n".
@@ -554,7 +554,7 @@
                     'Und diese Pole spiegeln sich auch in meinen \\jump{OM:SpaLeb:Gesichtsausdruck}{Gesichtshälften} wider.'."\n".
                     'Eine solche Imbalance kann in einer \\jump{OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung}{Gesichtsspiegelung} sichtbar gemacht werden.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Detailierter …', TitleVis => 'Detailierter:', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Übermäßiger negativer Stress und Angst oder gar Not und Hilflosigkeit zeigen sich in unserer Psyche und so, nach den aufgezeigten Zusammenhängen, auch in unserem Körper.'."\n".
@@ -659,7 +659,7 @@
 
 		    	<! Betäubt und Gelähmt >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psychosomatik:Betaeubt-Gelaehmt',
               'Psychosomatische Probleme', 'Sc_f_Paragraph',
                 array(
@@ -711,7 +711,7 @@
 
 		    	<! Innerer Marionettenspieler >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler',
               'In unserem Kopf sitzt ein psychomechanisches Kopf-Stimmungssystem', 'Sc_f_Paragraph',
                 array(
@@ -765,7 +765,7 @@
 
 		    	<! Äußerer Marionettenspieler >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psychosomatik:Aeusserer-Marionettenspieler',
               'An unserer Körperrückseite sitzt eine starke Muskelplatte, von der Kopfrückseite, über den Rücken bis zum Gesäß, die für unsere Körperstabilität und kraftvolle Aktion sorgt', 'Sc_f_Paragraph',
                 array(

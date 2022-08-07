@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                       '(\\bold{Äquivalenz von träger- und schwerer Masse aus Perspektive der Spieler und Gegenspieler eines Regelprozesses, z.B. eines Sonnensystems:})',
                       '(• Regelprozesse zeigen sich in Newtons Actio gleich Reactio. Denn hierin kommt das grundlegende Konzept von Spieler und Gegenspieler, Agonist und Antagonist, zum Ausdruck. In Bezug auf das Beispiel unseres Sonnensystems und die stabile Bahn der Erde um die Sonne gibt es auch Actio und Reactio. Die Gravitation spielt gegen die Fliehkraft, also gegen die Trägheit, wie alle Wechselwirkungen, die eine Bewegung ändern. Aus Sicht eines Regelprozesses ist die noch einmal gründlich zu analysieren. Hier spielt irgendwie die Kraft gegen die Zeit, die es braucht, eine Wirkung zu entfalten. Was wiederum mit der Zeit die es braucht zusammenhängt, um, aus Sicht der FrQFT, die Wirkungsquanten-Struktur der Erde durch das Gravitationspotenzial der Sonne so umzubauen, dass die Erde ihre Bewegungsrichtung ändert.)',
                       '(\\bold{Historischer Bezug:})',
@@ -185,7 +185,7 @@
                     'Sowie auch die entsprechende Zerstrahlung von Teilchen-Antiteilchen-Paaren in Gammastrahlung, die Annihilation.\\footnote{\\const{FrQFT_g_footnote_text_Annihilation}}'."\n"))),
                       
                   // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*CloserDesc}{Bezug zur Quanten-Fluss-Theorie: Das strukturgebende Ordnungsprinzip – das Existenzprinzip und der Djet-Neheh-Dualismus}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
                     'Der Lichtuhr liegt ein strukturgebendes, dynamisches Ordnungsprinzip zu grunde, das ich \\jump{OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip}{Existenzprinzip} nenne.'."\n".
@@ -275,7 +275,7 @@
                     'Das beobachten wir nicht und es erscheint auch unsinnig.'."\n"))),
                       
                   // !!!: Die Textfarbe ist jetzt global festgelegt und kann hier im Einzelnen überall heraugenommen werden. Siehe Class "tools-class-fade-in-area-div-vis" und "tools-class-fade-in-area-div-invis".
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                      Title => '\\color{*CloserDesc}{Es gibt gravitative Scherkräfte bei Planeten und Sonnen tatsächlich}', ParagraphList => array(
                   array( 'text', array( TextColor => '*CloserDesc', text => array(
                     'Die gravitativen Scherkräfte in Objekten, wenn diese sich Planeten oder Sonnen nähern, entstehen durch die Kugelform der Himmelskörper.'."\n".
@@ -600,7 +600,7 @@
 
 		    	<!  • XXX  >
           <?php /*$Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:VRT:Einleitung:XXX',
               '', 'Sc_f_Paragraph',
                 array(

@@ -73,7 +73,7 @@
 
 		    	<!  • Zwerchfell und Bauch-Ringspannung entlasten die Bandscheiben  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Rueckenschmerzen-Atmung-Zwerchfell:ZwerchfellBandscheiben',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -113,7 +113,7 @@
 
 		    	<!  • Zwerchfellverspannung führt zur Bauch-Zwerchfell-Schonhaltung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Rueckenschmerzen-Atmung-Zwerchfell:ZwerchfellverspannungBauch-Zwerchfell-Schonhaltung',
               'Sorgen, Stress und Ängste verspannen des Zwerchfell', 'Sc_f_Paragraph',
                 array(
@@ -153,7 +153,7 @@
 
 		    	<!  • Bauch-Zwerchfell-Schonhaltung führt zu Rückenschmerzen und Bandscheibenvorfall  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Rueckenschmerzen-Atmung-Zwerchfell:Bauch-Zwerchfell-SchonhaltungRueckenprobleme',
               'Instabilität im Bauch-Rückenbereich', 'Sc_f_Paragraph',
                 array(

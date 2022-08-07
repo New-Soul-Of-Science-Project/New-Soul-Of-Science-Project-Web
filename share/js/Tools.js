@@ -257,7 +257,7 @@ function To_f_closeAll(toOldStatus = false)
 
         console.log( "To_g_elements_hides_ary[hides_idx]['contentAry']: ", To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx]);
         if (!resetStatus || To_g_rememberOldStatus_elements_hides_ary[hides_idx][hides_idx_idx].contentWasInvisible) {
-          To_f_elements_hides_switch( 'invis', To_g_elements_hides_ary[hides_idx]['base_name'], To_g_elements_hides_ary[hides_idx]['noContentAry'], To_g_elements_hides_ary[hides_idx]['contentAry']);
+          To_f_elements_hides_switch( 'hideContent', To_g_elements_hides_ary[hides_idx]['base_name'], To_g_elements_hides_ary[hides_idx]['noContentAry'], To_g_elements_hides_ary[hides_idx]['contentAry']);
         }
         
         hides_idx_idx++;
@@ -281,7 +281,7 @@ function To_f_elements_hides_switch( setting, id_base_name, noContentAry, conten
   {
     switch (setting)
     {
-      case 'invis':
+      case 'hideContent':
         
         for (i = 0; i < noContentAry.length; i++)
           if (typeof noContentAry[i] == 'string')

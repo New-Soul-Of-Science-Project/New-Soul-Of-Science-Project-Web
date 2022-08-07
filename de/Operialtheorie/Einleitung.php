@@ -12,7 +12,7 @@
 	
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Zu tun}',
                     '•o Fähnchen unten an die Klammern setzen.',
                     '\\bold{Erzählung}',
@@ -249,7 +249,7 @@
 
 
 		    	<!  • Minus-Eins-Operator und Minus-Zwei-Operator  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator',
               '', 'Sc_f_Paragraph',
                 array(
@@ -390,7 +390,7 @@
 
           
 		    	<!  • Inverse Operatoren  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:OT:Einleitung:Inverse-Operatoren',
               '', 'Sc_f_Paragraph',
                 array(
@@ -433,7 +433,7 @@
 
           			
 		    	<!  • Neutrale Elemente  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:OT:Einleitung:Neutrale-Elemente',
               '', 'Sc_f_Paragraph',
                 array(
@@ -1354,7 +1354,7 @@
 
           			
 		    	<!  • Eigenschaften  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:OT:Einleitung:Eigenschaften',
               '', 'Sc_f_Paragraph',
                 array(
@@ -1393,7 +1393,7 @@
 
           			
 		    	<!  • Andere Möglichkeiten  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:OT:Einleitung:Andere-Moeglichkeiten',
               '', 'Sc_f_Paragraph',
                 array(

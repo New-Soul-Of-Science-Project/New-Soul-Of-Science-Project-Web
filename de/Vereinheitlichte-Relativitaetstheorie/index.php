@@ -25,7 +25,7 @@
           
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Natur beruht auf dynamischer Struktur. Ist das ganz allgemein eine Hypothese? Für die Physik liefert die Lichtuhr und die Heisenbergsche Unschärferelation einen Hinweis, dass es dort so gilt.)',
                     ))),
                       
@@ -166,7 +166,7 @@
 
 
 		    	<!  • Inhalt:  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:VRT:Home:Inhalt',
               '', 'Sc_f_Paragraph',
                 array(
@@ -206,7 +206,7 @@
           
           
 		    	<!  • Lexikon:  >
-          <?php To_f_headline_add_hides_begin( 'Lexikon', 'Lexikon', 'OM:VRT:Home:Lexikon', '          ', 'invis'); ?>
+          <?php To_f_headline_add_hides_begin( 'Lexikon', 'Lexikon', 'OM:VRT:Home:Lexikon', '          ', 'hideContent'); ?>
             <br>
           
             <table border="0"> <colgroup> <col width="22"> <col width="300"> <col width="16"> <col width="362"> </colgroup>
@@ -215,7 +215,7 @@
                   &hellip;</td> <td valign="top" style="color: #A0A0A0">
                   XXX</td> </tr>
             </table>
-          <?php To_f_headline_add_hides_end( '          ', 'invis'); ?>
+          <?php To_f_headline_add_hides_end( '          ', 'hideContent'); ?>
 
           
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

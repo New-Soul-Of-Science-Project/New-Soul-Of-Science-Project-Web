@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  /*array( 'notice', array( Display => 'invis', text => array(
+                  /*array( 'notice', array( Display => 'hideContent', text => array(
                     '(\\bold{o Über den Raum verteilte Zusammenhänge:})',
                     '(•o Dichte:)',
                     '(–o Die Dichte kann ein über den Raum verteilter Zusammenhang sein, wenn die Menge des verteilten Stoffs einer Erhaltung unterliegt. Es können also keine neuen Teilchen des Stoffes entstehen oder verschwinden.)',
@@ -143,7 +143,7 @@
                     'ergibt sich um die Massen herum, nach außen hin, eine stetig abnehmende Dichte der Vakuumenergie.'."\n".
                     'Diese in der Physik Gradient genannte Veränderung der Vakuumenergiedichte erscheint als Raumzeitkrümmung der Allgemeinen Relativitätstheorie\\footnote{\\const{FrQFT_g_footnote_text_ART}} und fungiert als Gravitationspotenzial.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Einschub für kluge, kritische Köpfe …', ParagraphList => array(
                   /*array( 'text', array( text => array(
                     'XXX'."\n".
@@ -240,7 +240,7 @@
 
 		    	<!  • XXX  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php /*To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php /*To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:WieMessenWirInDerPhysik:XXX',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

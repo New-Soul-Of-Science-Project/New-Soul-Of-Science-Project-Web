@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Begriff verwenden(?): "doppelrechte" bzw. "doppellinke" split-half-Gesichter\\footnote[*Bearb]{Internet: \\\\ Vgl. \\cite{SpektrumAkademischerVerlag:Gesicht-Neuro:2000}.}',
                     '• Auch das Erkennen der Augenstellung machen wir unserem Gegenüber leicht. Vermutlich dient dies der Bildung von Vertrauen durch die Transparentmachung dessen, was in uns vor geht. Dies ist also evolutionär tief verankert, so wie mit ziemlicher Sicherheit die Sichtbarmachung unserer Gefühle durch die Spannung unserer Gesichtsfaszien und Gesichtsmuskulatur, die mit unseren psychischen Spannungen gekoppelt sind.',
                     '• Ist die Stimmung Ausdruck eines guten oder schlechten Gefühls, die Resonanz mit sich selber, mit einem Gedanken und mit anderen Menschen? Bei guter Stimmung geht es nicht nur um Entspannung, sondern um Umspannung. Das ist sehr interessant in Bezug auf die Stimmungsspannung.',
@@ -34,7 +34,7 @@
                                                          /* text => 'XXX' */)),
                       )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Weitere Beispiele von Bilbo einfügen. Originale auf der Seite der Ausstellung „Publik – Privat“ von Bilbo Calvez: \\jump[https://www.bilbo.calvez.info/publik-privat]{}{https://www.bilbo.calvez.info/publik-privat}',
                     ))),
                       
@@ -111,7 +111,7 @@
                     'Aus unseren Handlungen resultiert unsere neue Lebenssituation und der Kreislauf unseres \\jump{*SpaLeb:Achtsamkeitsprozess-Implem}{Achtsamkeitsprozesses} beginnt erneut.'."\n"))),
                     
                   // #!: Wird leider nicht automatisch aufgeklappt, wenn ein Link zu den Abbildungen angeklickt wird !!!
-                  /*array( 'fade-in-area', array( Display => 'invis',
+                  /*array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Abbildungen zum Achtsamkeitsprozess', ParagraphList => array(*/
                   array( 'figure',
                     array_merge( $SpaLeb_g_figure_ary_AchtsamkeitsprozessBewWiss, array( name => 'OM:SpaLeb:Gesichtsausdruck:Vortext:Fig-AchtsamkeitsprozessBewWiss'))),
@@ -343,7 +343,7 @@
                         //'XXX ↔︎ XXX',
                     ))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Eure Beteiligung', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Fallen euch noch andere Attribut-Pärchen ein?'."\n".
@@ -423,7 +423,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),*/
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*Bearb}{Notiz: Alter Text}', ParagraphList => array(
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
@@ -518,7 +518,7 @@
 
 		    	<!  • Hatha Yoga und Tantra  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Gesichtsausdruck:YogaTantra',
               'Die Balance der Körperhälften', 'Sc_f_Paragraph',
                 array(
@@ -526,7 +526,7 @@
                       array(  jump_name => 'OM:SpaLeb:Gesichtsausdruck', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'invis', text => array(
+                  /*array( 'notice', array( Display => 'hideContent', text => array(
                     '• XXX',
                     ))),*/
                       
@@ -557,7 +557,7 @@
 
 		    	<!  • Die soziale Komponente  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Gesichtsausdruck:SozialeKomponente',
               'Wir verraten sehr viel darüber, wie es uns geht', 'Sc_f_Paragraph',
                 array(
@@ -589,7 +589,7 @@
 
 		    	<!  • Unbefelltes Gesicht  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Gesichtsausdruck:UnbefelltesGesicht',
               '', 'Sc_f_Paragraph',
                 array(
@@ -623,7 +623,7 @@
 
 		    	<!  • Gesichtsausdruck und Psyche  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Gesichtsausdruck:Psyche',
               'Muskelspannung und Psyche stehen in engem Zusammenhang', 'Sc_f_Paragraph',
                 array(
@@ -649,7 +649,7 @@
 
 		    	<!  • Gesichtsausdruck und Muskulatur  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Gesichtsausdruck:Muskulatur',
               'Psyche, Stimme und Gesichtsmuskulatur stehen in engem Zusammenhang', 'Sc_f_Paragraph',
                 array(
@@ -677,7 +677,7 @@
 
 		    	<!  • Aufgabenteilung der Gehirnhälften  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Gesichtsausdruck:AufgabenteilungGehirnhaelften',
               'Rationalität und Emotionalität, die Lateralisation des Gehirns', 'Sc_f_Paragraph',
                 array(
@@ -707,7 +707,7 @@
 
 		    	<!  • Gesichtsspiegelung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung',
               'Unterschiede im Ausdruck der Gesichtshälften', 'Sc_f_Paragraph',
                 array(
@@ -784,7 +784,7 @@
 
 		    	<!  • FaceYourFace App  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Gesichtsausdruck:FaceYourFaceApp',
               'Eine App um schnell Gesichtsspiegelungen zu erstellen', 'Sc_f_Paragraph',
                 array(

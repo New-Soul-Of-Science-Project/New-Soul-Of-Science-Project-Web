@@ -47,7 +47,7 @@
 
 		    	<!  • Higgs-Feld entspricht einem Äther:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:XXX-Notizen:Higgs-Feld-Aether',
               'Eine andere Interpretation des Michelson-Morley-Experiments ist notwendig', 'Sc_f_Paragraph',
                 array(
@@ -97,7 +97,7 @@
 
 		    	<!  • Problem der fehlenden Gravitation der Vakuumenergie:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:XXX-Notizen:Problem-der-fehlenden-Gravitation-der-Vakuumenergie',
               'Die in der Struktur des Vakuums verborgene Gravitation', 'Sc_f_Paragraph',
                 array(
@@ -149,7 +149,7 @@
           
 		    	<!  • Alte Einleitung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:XXX-Notizen:Alte-Einleitung',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -194,7 +194,7 @@
 
           <!  • Neue Physik: alter Vortext  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:XXX-Notizen:NeuePhysik-AlterVortext',
               'Bewegung macht Zeit', 'Sc_f_Paragraph',
                 array(
@@ -233,7 +233,7 @@
 
 		    	<!  • Neue Physik: Lösung des Problems der Zeit  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:XXX-Notizen:NeuePhysik-Loesung-des-Problems-der-Zeit',
               'Bewegung macht Zeit', 'Sc_f_Paragraph',
                 array(
@@ -332,7 +332,7 @@
 
 		    	<!  • Sonnensystem und moderne Physik  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:XXX-Notizen:Sonnensys-und-moderne-Physik',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -397,7 +397,7 @@
 
 		    	<!  • XXX  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:XXX-Notizen:XXX',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

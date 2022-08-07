@@ -41,7 +41,7 @@
 
 		    	<!  • Stein der Weisen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Stein-der-Weisen:Stein-der-Weisen',
               'Das Prinzip der Alchemie – das Prinzip der Wandlungen', 'Sc_f_Paragraph',
                 array(
@@ -309,7 +309,7 @@
 
 		    	<!  • Heiliger Gral  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Stein-der-Weisen:Heiliger-Gral',
               'In seine Mythologie des Verlusts kann der Verlust eines wesentlichen Pols unseres Lebens und unserer Gesellschaft hineininterpretiert werden', 'Sc_f_Paragraph',
                 array(
@@ -531,7 +531,7 @@
 
 		    	<!  • Phönix aus der Asche  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche',
               '', 'Sc_f_Paragraph',
                 array(
@@ -539,7 +539,7 @@
                       array(  jump_name => 'OM:NPYo:Stein-der-Weisen:Heiliger-Gral', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Den Phönix aus der Asche finden wir im \\jump{OM:NPYo:HaTha:Vortext:Fig-LebenDesHorusHermesstab}{Leben des Horus} wieder. Das Ei des Phönix ist das Ei der Metamorphose. Nach dem das Leben gelebt ist kommen wir idealer Weise im Dritten Auge an, der Sonne, die uns verbrennt und das neue Ei gebiert. So wird der Phönix wieder geboren. Der Phönix wird hier im Gott \\jump[https://de.wikipedia.org/wiki/Benu]{}{Benu} versinnbildlicht, wobei sein Feuer im Sonnenuntergang, sein feuriger Untergang als Falke, und in der Glut der Morgenröte, seiner Auferstehung als Reiher aus Aschenglut, zu finden ist.',
                     '• Der Phönix findet sich auch im \\jump[https://de.wikipedia.org/wiki/Garuda]{}{Garuda} der indischen Mythologie des Hinduismus: Garuda ist das halb mensch-, halb adlergestaltige Reittier des Vishnu, des Gottes der Erhaltung. Garuda kann damit als Symbol für den Zirkel der Wiedergeburt, der Erneuerung, verstanden werden. Dies drückt den Neheh-Aspekt des Lebens in einem Lebewesen und zwischen den Generationen aus.',
                     '\\bold{Gog und Magog}',

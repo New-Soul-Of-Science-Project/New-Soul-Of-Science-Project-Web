@@ -13,7 +13,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     // '\\bold{XXX}',
                     '• Ein ausführlicher Artikel über die Gluonen und die Probleme der QCD findet sich in \\cite{Ent:DerKlebstoffDerWelt:2015}. Die FrQFT kann wichtige dieser Fragen, wie zum Confinement und der Gluonen-Energie, zumindestens qualitativ beantworten.',
                     '• Mesonen bestehen aus Quarks und Antiquarks. Wie arbeiten diese im String genau zusammen? Gibt es Mesonen aus allen Quark-Flavours?',
@@ -62,7 +62,7 @@
 
 		    	<!  • Farbpolarisation und -ladung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -223,7 +223,7 @@
 
 		    	<!  • Quarks  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Quantenchromodynamik:Quarks',
               'Protonen, Neutronen und Mesonen', 'Sc_f_Paragraph',
                 array(
@@ -370,7 +370,7 @@
 
 		    	<!  • Gluonen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Quantenchromodynamik:Gluonen',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
@@ -404,7 +404,7 @@
 
 		    	<!  • Confinement  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Quantenchromodynamik:Confinement',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

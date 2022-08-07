@@ -53,7 +53,7 @@
           
 
 		    	<!  • Einführung  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung',
               'Konzept des Kosmos, seiner Beobachtung und seiner Erhaltungssätze', 'Sc_f_Paragraph',
                 array(
@@ -282,7 +282,7 @@
 
 
 		    	<!  • Zeit  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:ZeitAlterungFrequenz:Zeit',
               'Die Bewegung der Wirkungsquanten entspricht dem Lauf der grundlegenden Zeit, dem einer Normaluhr', 'Sc_f_Paragraph',
                 array(
@@ -343,7 +343,7 @@
 
 
 		    	<!  • Alterung und strukturierter Raum  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:ZeitAlterungFrequenz:Alterung',
               'Die Bewegung des Lichts entspricht dem Lauf der Alterung, einer variablen Gravitationsuhr', 'Sc_f_Paragraph',
                 array(
@@ -443,7 +443,7 @@
 
 
 		    	<!  • Frequenz und Energie  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:ZeitAlterungFrequenz:Frequenz',
               'Der Zusammenhang zwischen Alterungszeit und Frequenz im Gravitationsfeld', 'Sc_f_Paragraph',
                 array(
@@ -452,7 +452,7 @@
                       array(  jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Alterung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Kapitel überarbeiten!',
                     '• Wie ist es mit der Frequenz und Energie bei bewegten Materie-Elementarteilchen? Dort gibt es auch einen scheinbaren Widerspruch, denn schneller bewegen heißt verlangsamte Zeit also geringere Frequenz, aber auch mehr Energie höhere Frequenz?\\footnote[*Bearb]{Vgl. \\cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, S. 13-14.} Er löst diesen Widerspruch durch zwei Frequenzen, steht dort. Die innere Frequenz ist die Compton-Frequenz, wenn ich richtig verstehe, und die äußere ist die Materiewelle. \\quote{Nur letztere [die Materiewelle] erfüllt die Bedingung, dass ihre Frequenz der Gesamtenergie (mit Einschluss der kinetischen und potentiellen) direkt proportional ist.}',
                     '• Umfang einer Ellipse (Bogenlänge): \\jump[https://de.wikipedia.org/w/index.php?title=Ellipse&oldid=199192818#Umfang]{}{Wikipedia. Ellipse. Formelsammlung (Flächeninhalt und Umfang). Umfang.}',
@@ -534,7 +534,7 @@
 
 
 		    	<!  • Wirkungsquanten-Geschwindigkeit  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:ZeitAlterungFrequenz:Wirkungsquanten-Geschwindigkeit',
               'Die erhöhte Lichtgeschwindigkeit, eine neue fundamentale Konstante – die Lichtgeschwindigkeit in neuem Gewand, ein Drilling wird geboren', 'Sc_f_Paragraph',
                 array(
@@ -543,7 +543,7 @@
                       array(  jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Frequenz', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Eine Berechnung der gravitativen Rotverschiebung findet sich auch in \\jump[http://www.d1heidorn.homepage.t-online.de/Physik/Variables_c/Variables_c.html]{}{Variable Lichtgeschwindigkeit in der Allgemeinen Relativitätstheorie}, siehe auch Datei "Variable Lichtgeschwindigkeit in der Allgemeinen Relativitätstheorie.pdf".',
                     ))),
                       
@@ -712,7 +712,7 @@
 
 
 		    	<!  • Dichtestruktur von Raum und Zeit  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:ZeitAlterungFrequenz:Dichtestruktur',
               'Die Existenz Schwarzer Löcher und die fraktale Struktur des Universums', 'Sc_f_Paragraph',
                 array(
@@ -913,7 +913,7 @@
 
 
 		    	<!  • Formeln des Bewegungsraums  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:ZeitAlterungFrequenz:FormBewegRaum',
               'Die allgemeine, ergänzende Formelsammlung', 'Sc_f_Paragraph',
                 array(
@@ -1061,7 +1061,7 @@
 
 		    	<!  • Definition von Subräumen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:ZeitAlterungFrequenz:DefinitionVonSubraeumen',
               'Farbpolarisation ist Raumrichtungspolarisation', 'Sc_f_Paragraph',
                 array(
@@ -1124,7 +1124,7 @@
 
 
 		    	<!  • Holografisches Prinzip  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:ZeitAlterungFrequenz:HolografischesPrinzip',
               'Subräume, ihr Informationsgehalt und ihr Informationsaustausch', 'Sc_f_Paragraph',
                 array(
@@ -1202,7 +1202,7 @@
 
 
 		    	<!  • XXX  >
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:ZeitAlterungFrequenz:XXX',
               'XXX', 'Sc_f_Paragraph',
                 array(

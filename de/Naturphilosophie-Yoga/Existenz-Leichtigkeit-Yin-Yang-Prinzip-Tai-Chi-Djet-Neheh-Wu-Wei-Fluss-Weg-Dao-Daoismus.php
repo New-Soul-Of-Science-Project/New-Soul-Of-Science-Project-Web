@@ -39,7 +39,7 @@
                 'Yin und Yang oder Taiji (Tai Chi)', subline =>
                   '')),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     // '\\bold{XXX}',
                     '• Das Yin und Yang Symbol kann auch als vereinfachtes Symbol – eine Projektion in 2D – der Kundalini-Schlangen des \\jump{OM:SpaLeb:Psychosomatik:Vortext:Fig-Kundalini-Prozess}{Kundalini-Prozesses} oder der des \\jump{OM:NPYo:HaTha:Vortext:Fig-Hermesstab}{Hermesstabs} gesehen werden.',
                     ))),
@@ -121,7 +121,7 @@
                   array( 'figure',
                     array_merge( $FrQFT_g_figure_ary_Elapson, array( name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Elapson'))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Animiert …', TitleVis => 'Animiert:', ParagraphList => array(
                                                                                              
                   array( 'figure',
@@ -159,7 +159,7 @@
                 'Das Vektor-Gleichgewicht und die isotrope Vektor-Matrix', subline =>
                   'Die Stabilität des Vakuums – Sechsecke in der Ebene, Kuboktaeder im Raum')),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     // '\\bold{XXX}',
                     '• Das Circumpunct-Symbol, das altägyptische Zeichen für „Sonne“ oder „Ra“ 𓇳, sehr ähnlich dem heutigem astronomischen und astrologischen Symbol der Sonne ☉, (siehe \\jump[https://de.wikipedia.org/wiki/Sonnensymbol]{}{Wikipedia: Sonnensymbol, Kreis-Symmetrie, Kreis mit einem Punkt in der Mitte}) kann mit den Wirkungsquanten-Kegeln der Quanten-Fluss-Theorie und hierin letztlich auch mit der dynamischen Geometrie der Photonen des Lichts und der dunklen Photonen des Vakuums in Verbindung gebracht werden (siehe in \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Ani-VakuumElapson} die einzelnen Hütchen und die gesamte Struktur).',
                     '⋅ Das Zeichen symbolisiert so Existenz und (elementares) Bewusstsein; im Achtsamkeitsprozess auch höheres Bewusstsein.',
@@ -184,7 +184,7 @@
                     'und zusammen das räumliche Vektor-Gleichgewicht in Form der isotropen Vektor-Matrix erzeugen.'."\n",
                       'Dadurch, dass Elementarteilchen im Grunde immer einen Spin tragen, gibt es in ihnen immer eine Hauptebene der Rotation, die der hexagonalen Farbpolarisation entspricht.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Physikalische Details …', TitleVis => 'Physikalische Details:', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Interessanterweise entspricht die Xiantian-Anordnung\\footnote{Internet: \\\\ Vgl. \\cite{wiki:AchtTrigramme:2019}, Reihenfolge.} einem zirkular polarisierten Photon – Lichtteilchen.'."\n".
@@ -234,7 +234,7 @@
                 'Wu Wei', subline =>
                   'Im Fluss sein – Gelassen sein und im rechten Moment handeln')),
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Prioritäten und Entscheidungen}',
                      '• Wu Wei hat etwas damit zu tun, gute Prioritäten zu setzen und gute Entscheidungen zu fällen, siehe \\italic{\\jumpname{OM:SpaLeb:Psychosomatik-Entscheidungen}}.',
                      '⋅ Unser Leben bekommt mehr Leichtigkeit, wenn wir die Interpretation unserer Vergangenheit durch für uns leichtere Neuinterpretationen ergänzen. Wir verändern dadurch tatsächlich unsere Vergangenheit (siehe \\italic{\\jumpname{OM:NPYo:WieVeraendereIchMeineVergangenheit}}).',
@@ -327,7 +327,7 @@
 
 		    	<!  • XXX  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:ExistenzLeichtigkeit:XXX',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

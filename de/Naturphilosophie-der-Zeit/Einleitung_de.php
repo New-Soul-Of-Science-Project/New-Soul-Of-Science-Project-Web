@@ -135,7 +135,7 @@
 
 		    	<!  • Arithmetik  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPT:Einleitung:Arithmetik',
               'Liegt eine bisher verborgene Struktur hinter dem Zählen und der Arithmetik insgesamt?', 'Sc_f_Paragraph',
                 array(

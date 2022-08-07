@@ -13,11 +13,11 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                      // '\\bold{XXX:}',
                      // '• XXX',
                     ))),
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Bewusstsein und Regelprozesse:}',
                     '• Information ist Wirkung:',
                     '– \\quote{Information muss erkannt sein, sonst wär es keine Information.} Warnke, Ulrich in \\jump[https://www.youtube.com/watch?time_continue=409&v=lVhFhR_lSdw]{}{Wie das Bewusstsein „Wirklichkeit schaltet" | Dr. Ulrich Warnke im Gespräch}, Sek. 9:50.',
@@ -153,7 +153,7 @@
                     'wie der \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess} als zentraler Regelprozess des Lebens funktioniert und'."\n".
                     'wie wir darüber zu den Grundlagen der \\jump{OM:SpaLeb:Psychosomatik}{Psychosomatik} kommen.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Information ist Wirkung – auch in der neuen Physik …',
                     TitleVis => 'Information ist Wirkung – auch in der neuen Physik:', ParagraphList => array(
                   array( 'text', array( text => array(
@@ -201,7 +201,7 @@
 
 		    	<!  • XXX  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Information-Kommunikation:XXX',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(

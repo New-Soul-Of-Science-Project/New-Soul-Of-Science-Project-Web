@@ -11,7 +11,7 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  array( 'fade-in-area', array( Display => 'invis',
+                  array( 'fade-in-area', array( Display => 'hideContent',
                     Title => '\\color{*Bearb}{Noch einarbeiten …}',
                     TitleVis => '\\color{*Bearb}{Noch einarbeiten:}', ParagraphList => array(
                   array( 'headline', array( jump_name => 'OM:FrQFT:Gravitation:Vortext:XXX', text =>
@@ -129,7 +129,7 @@
 
 		    	<!  • Vakuumenergie und ihre Gravitation:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Gravitation:Vakuumenergie-und-ihre-Gravitation',
               'Vakuumgravitation ist ein bisher verborgener Bestandteil der Struktur des Vakuums', 'Sc_f_Paragraph',
               array(
@@ -202,7 +202,7 @@
           
 		    	<!  • Vakuum als Träger des Gravitationsfelds:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Gravitation:Vakuum-als-Traeger-des-Gravitationsfelds',
               'Die variable Dichte des Vakuums ist die physikalische Grundlage des Gravitationsfelds und der Vermittlung der Gravitation', 'Sc_f_Paragraph',
               array(
@@ -245,7 +245,7 @@
           
 		    	<!  • Mechanismus der Gravitation:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Gravitation:Mechanismus-der-Gravitation',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
               array(
@@ -276,11 +276,11 @@
           
 		    	<!  • Längenkontraktion im Gravitationsfeld:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Gravitation:Laengenkontraktion-im-Gravitationsfeld',
               'Eine Verzerrung des strukturellen Kontexts – der Elementarteilchen- und Vakuum-Geometrie – im Umfeld von großen Massen als reales Äquivalent zur Raumzeitkrümmung', 'Sc_f_Paragraph',
                 array(
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '• Auf die Seite \\jumpname{OM:VRT:Laengenkontraktion-Bewegung} verlagern oder beziehen!',
                     '– Die Längenkontraktion von Elementarteilchen im Gravitationsfeld wird auch hier angesprochen oder soll dort angesprochen werden: \\italic{\\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung}} und \\italic{\\jumpname{OM:VRT:Laengenkontraktion-Bewegung}}',
                     '• Einen Faktor für den strukturellen Kontext einführen, der richtungsabhängig ist? Die Kontraktion hängt über die Aussendung von Wechselwirkungsteilchen mit dem Verhältnis der Lichtgeschwindigkeiten in unterschiedlichen Richtungen zusammen. Siehe \\cite{Giese:RelaContra2009}, und \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Alterung}. \\\\ Genauer untersuchen, wie das Zusammen hängt. Am besten mit dem Verständnis und der Aufarbeitung von Gieses Darstellung und Berechnung beginnen.',
@@ -330,7 +330,7 @@
           
 		    	<!  • Zeitdilatation im Gravitationsfeld:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Gravitation:Zeitdilatation-im-Gravitationsfeld',
               'Die Verlangsamung des Lichts und eine Verzerrung der strukturellen Elementarteilchen-Geometrie', 'Sc_f_Paragraph',
               array(
@@ -349,7 +349,7 @@
           
           <!  • Variable Vakuumenergie und Higgs-Feld-Dichte:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Gravitation:Variable-Vakuumenergie-und-Higgs-Feld-Dichte',
               'Relation der Wirkungsquanten- und Elapsonen-Dichteverteilung – eine Struktur des Vakuums und ihr Zusammenbruch', 'Sc_f_Paragraph',
                 array(
@@ -373,7 +373,7 @@
           
           <!  • Elementarteilchen-Frequenz im Gravitationsfeld:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Gravitation:Elementarteilchen-Frequenz-im-Gravitationsfeld',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
               array(
@@ -389,7 +389,7 @@
           
 		    	<!  • Träge und schwere Masse im Gravitationsfeld:  >
 		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Gravitation:Traege-und-schwere-Masse-im-Gravitationsfeld',
               'Die neue, variable Higgs-Feld-Dichte wirkt auf die Elementarteilchen', 'Sc_f_Paragraph',
               array(
@@ -407,7 +407,7 @@
 
           
 		    	<!  • Schwarze Löcher  >
-         <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+         <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Gravitation:Schwarze-Loecher',
               'Die Strutur am Ereignishorizont eines Schwarzen Lochs entspricht neuen theoretischen Untersuchungen', 'Sc_f_Paragraph',
                 array(
@@ -460,7 +460,7 @@
 		    	<!    • Wirkungsquanten-Dichte verlinken, eigene Seite?  >
 		    	<!    • Abbildung der Wirkungsquanten-Dichte aus der Arbeit hier einfügen  >
 		    	<!    • Abbildung der Sphäre um das Zentrum einer Galaxie  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Gravitation:Phaenomen-der-Dunkle-Materie-oder-MOND',
               'Bisher unbekannte gravitative Wirkung des Vakuums erscheint zunächst verborgen', 'Sc_f_Paragraph',
               array(

@@ -13,11 +13,11 @@
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
-                  /*array( 'notice', array( Display => 'invis', Title => 'Notizen: Was ist NaPhil-Yoga?', text => array(
+                  /*array( 'notice', array( Display => 'hideContent', Title => 'Notizen: Was ist NaPhil-Yoga?', text => array(
                     '(• XXX:)',
                     ))),*/
                       
-                  array( 'notice', array( Display => 'invis', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Den nachfolgenden Text radikal kürzen und vieles von dem hier in ein Vorwort einfließen lassen.)',
                     ))),
                       
@@ -126,7 +126,7 @@
 
 		    	<!  • XXX  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php /*To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'invis',
+          <?php /*To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Vorwort:XXX',
               '', 'Sc_f_Paragraph',
                 array(
