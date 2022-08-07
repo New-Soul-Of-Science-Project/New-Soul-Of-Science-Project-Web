@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 02.07.2021, 11:00h
+  // #: Stand: 07.08.2022, 18:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20220807:  +:  "To_f_Paragraph", "fade-in-area":  Fix mix-up in comparison to the other cases of 'invis' and 'vis' in 'fade-in-area' and 'notice'.
   //           20220702:  +:  "$To_g_Text_replace_ary":  '∘' -> '&#8728;' entry new.
   // v01.005:  20130713:  +:  "To_f_Paragraph":  Type "quote" is new.
   //           20130714:  +:  "To_f_Chapter_v1":  Is new.
@@ -2037,6 +2038,8 @@
         if (/*Vue.js*/ false)
         //if (/*Vue.js*/ true)
         {
+          // !!! correct after the else case, because content was in the wrong place !!!
+          
           echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'">'."\n";
           echo "\n";
 
@@ -2091,15 +2094,34 @@
         }
         else
         {
-          // #: Elements for visibility.
-          //%!echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'invis') ? 'none' : '').'; background-color: #F9F9F9;">'."\n";
-          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-vis" style="display: '.(($start_display == 'invis') ? 'none' : '').';">'."\n";
+          // #: 'vis': Without content.
+          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-invis" style="display: '.(($start_display == 'invis') ? '' : 'none').';">'."\n";
           $To_g_elements_hides_ary[vis_id_part_ary][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
           $local_elements_hides_ele_num++;
           echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
           echo $offset.'    <tr>'."\n";
           echo $offset.'      <td>'."\n";
           $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'vis\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])';
+          // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
+          echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: #A0A0A0;">&#9656;</a>'."\n";
+          echo $offset.'      </td>'."\n";
+          echo $offset.'      <td>'."\n";
+          echo $offset.'        <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text[Title])).'</a>'."\n";
+          echo $offset.'      </td>'."\n";
+          echo $offset.'    </tr>'."\n";
+          echo $offset.'  </table>'."\n";
+          echo $offset.'</div>'."\n";
+          echo "\n";
+        
+          // #: 'invis': With content.
+          //%!echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: '.(($start_display == 'invis') ? 'none' : '').'; background-color: #F9F9F9;">'."\n";
+          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-vis" style="display: '.(($start_display == 'invis') ? 'none' : '').';">'."\n";
+          $To_g_elements_hides_ary[invis_id_part_ary][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
+          $local_elements_hides_ele_num++;
+          echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
+          echo $offset.'    <tr>'."\n";
+          echo $offset.'      <td>'."\n";
+          $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])';
           // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
           //echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: #000000;">&#9662;</a>'."\n";
           echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: #000000;">&#9662;</a>'."\n";
@@ -2113,28 +2135,10 @@
           To_f_Paragraph_list_v1( $replace_ary, $replace_preg_ary, '  '.$offset, $Glo_g_Paragraph_fn, $text[ParagraphList]);
           echo $offset.'</div>'."\n";
           echo "\n";
-        
-          // #: Elements for invisibility.
-          echo $offset.'<div id="Elements-Hides-'.$To_g_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" class="tools-class-fade-in-area-div-invis" style="display: '.(($start_display == 'invis') ? '' : 'none').';">'."\n";
-          $To_g_elements_hides_ary[invis_id_part_ary][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
-          $local_elements_hides_ele_num++;
-          echo $offset.'  <table border="0"> <colgroup> <col width="15"> </colgroup>'."\n";
-          echo $offset.'    <tr>'."\n";
-          echo $offset.'      <td>'."\n";
-          $local_JavaRef = 'javascript:To_f_elements_hides_switch( \'invis\', To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])';
-          // #: Triangle Unicode found at "Unicodeblock Geometrische Formen": https://de.wikipedia.org/w/index.php?title=Unicodeblock_Geometrische_Formen&oldid=160204147
-          echo $offset.'    <a href="'.$local_JavaRef.'" style="text-decoration: none; color: #A0A0A0;">&#9656;</a>'."\n";
-          echo $offset.'      </td>'."\n";
-          echo $offset.'      <td>'."\n";
-          echo $offset.'        <a href="'.$local_JavaRef.'"'.(array_key_exists( titleColor, $text) ? ' style="text-decoration: none; color: #'.(To_f_Color($text[titleColor])).';' : '').'"'.(array_key_exists( titleClass, $text) ? '  class="'.(To_f_Color($text[titleClass])).'"' : '').(array_key_exists( jumpName, $text) ? '  name="'.($text[jumpName]).'"' : '').'>'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text[Title])).'</a>'."\n";
-          echo $offset.'      </td>'."\n";
-          echo $offset.'    </tr>'."\n";
-          echo $offset.'  </table>'."\n";
-          echo $offset.'</div>'."\n";
-          echo "\n";
 
-          // #: Here "Display" have to be inverted, because (XXX?)!
-          To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'vis' : (($text[Display] == 'vis') ? 'invis' : 'vis')));
+          //%! #: Here "Display" have to be inverted, because (XXX?)!
+          //%! To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'vis' : (($text[Display] == 'vis') ? 'invis' : 'vis')));
+          To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_elements_hides_ary_dim - 1, ((!array_key_exists( Display, $text)) ? 'vis' : $text[Display]));
         }
 
         break;
@@ -2395,9 +2399,7 @@
       echo ';'."\n";
       
       // #: Switch displaying to the state on like to have at the beginning. If it is not a bot.
-      //if (!$To_g_DisplayHides_General_is)
-      if (!$To_g_DisplayHides_General_is)  // #!: If this is missing the 'notice' and 'fade-in-area' are not visible. But I don't really understand why!
-        echo $offset.'    To_f_elements_hides_switch( \''.(($To_g_DisplayHides_General_is) ? 'vis' : $switch_display).'\', To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'base_name\'], To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'invis_id_part_ary\']);'."\n";
+      echo $offset.'    To_f_elements_hides_switch( \''.(($To_g_DisplayHides_General_is) ? 'vis' : $switch_display).'\', To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'base_name\'], To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.$a_elements_hides_ary_idx.'][\'invis_id_part_ary\']);'."\n";
       
       echo $offset.'  --> </script>'."\n";
       //echo "\n";
@@ -2464,7 +2466,7 @@
     $headline_text = To_f_Text_replace_html( $To_g_Text_replace_ary, null, $headline_text);
     $headline_text_short = To_f_Text_replace_html( $To_g_Text_replace_ary, null, $headline_text_short);
     
-    // #: Start with visibility, than it is visible, if JavaScript is not aviable. Than Google will see the text.
+    // #: Start with visibility, then it is visible, if JavaScript is not avialable. Then Google will see the text.
     $start_display = 'vis';
     
     $To_g_elements_hides_ary_dim++;
@@ -2482,7 +2484,7 @@
       //%!echo $offset.'<table border="0" style="margin: 0; margin-left: 10px; margin-top: 10px; margin-bottom: 10px; padding: 0;"> <colgroup> <col width="668"> </colgroup>'."\n";
       echo $offset.'<table border="0" style="margin-top: 10px; margin-bottom: 10px; padding: 0;"> <colgroup> <col width="668"> </colgroup>'."\n";
       
-      // #: 'vis'
+      // #: 'vis': Without content.
       echo $offset.'  <tr id="Elements-Hides-'.$To_g_headline_last_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: ';
       if ($start_display == 'vis')
         echo 'none';
@@ -2496,7 +2498,7 @@
       echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'vis\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'vis_id_part_ary\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'invis_id_part_ary\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Down.jpg" width="32" height="12" border="0" alt="einblenden" title="einblenden" align="right" style="margin: 0; padding: 0;"> </a> </td>'."\n";
       echo $offset.'  </tr>'."\n";
       
-      // #: 'invis'
+      // #: 'invis': With content.
       echo $offset.'  <tr id="Elements-Hides-'.$To_g_headline_last_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: ';
       if ($start_display == 'invis')
         echo 'none';
@@ -2517,6 +2519,7 @@
       echo $offset.'<a name="'.$headline_name.'"></a>'."\n";
     }
     
+    // #: 'invis': Header of content.
     echo $offset.'<div id="Elements-Hides-'.$To_g_headline_last_elements_hides_ary_dim.'-'.$local_elements_hides_ele_num.'" style="display: ';
     if ($start_display == 'invis')
       echo 'none';
@@ -2543,6 +2546,7 @@
     
     //echo '  <br>'."\n";
     
+    // #: 'invis': Footer of content.
     //%!echo '  <table border="0" style="margin: 0; margin-left: 10px; margin-top: 10px; margin-bottom: 10px; padding: 0;"> <colgroup> <col width="668"> </colgroup>'."\n";
     echo '  <table border="0" style="margin-top: 10px; margin-bottom: 10px; padding: 0;"> <colgroup> <col width="668"> </colgroup>'."\n";
     

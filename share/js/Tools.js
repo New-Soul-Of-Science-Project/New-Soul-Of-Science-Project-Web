@@ -2,11 +2,11 @@
 // #: Name:  "Tools.js"
 
 
-// #: Stand: 07.08.2022, 09:00h
+// #: Stand: 07.08.2022, 18:00h
 
 // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
-//          20220807:  +:  "To_f_manage_site_end", "To_f_manage_beforePrint", "To_f_manage_afterPrint":  Add event handlers for printing.
+//          20220807:  +:  "To_f_manage_site_end", "To_f_manage_beforePrint", "To_f_manage_afterPrint":  Implement event handlers for printing.
 //v01.001:  20130515:  +:  History started.
 //          20170129:  +:  "To_f_manage_site_end":  "autoResize = false" is new.
 //                     +:  "To_f_manage_resize", "To_f_manage_pageshow":  Are new.
@@ -108,12 +108,11 @@ function To_f_anchor_JumpToBy_hash( hash)
 
 
 
-function To_f_hash_changed( hash)
-
 // #: Is the anchor of a window hash not visible then make it visible.
 // !!!: If the hash is already the value and hides the equation with the anchor per click a second jump to the anchor fails because the hash does not change,
 //        but the anchor is again not displayed and can not be jumped to.
 
+function To_f_hash_changed( hash)
 {
   var hides_idx, hides_idx_idx, anchor_name;
   
@@ -139,7 +138,7 @@ function To_f_hash_changed( hash)
         for (hides_idx = 0; hides_idx < To_g_elements_hides_ary.length; hides_idx++)
         {
           hides_idx_idx = 0;
-          search_is = true;
+          var search_is = true;
           
           while (search_is && (hides_idx_idx < To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'].length))
           {
@@ -173,21 +172,100 @@ function To_f_hash_changed( hash)
 
 
 
-function To_f_manage_site_end( autoResize = false)
-{
-  // #: Open hidden areas for the hash of first site call.
-  To_f_hash_changed( window.location.hash);
-  
-  if (autoResize)
-  {
-    // #!: If handled direct in "To_f_manage_site_end" "clientHeight" has not the correct value.
-    // #: Found in URL: http://stackoverflow.com/questions/3374877/why-do-ie-chrome-initially-give-incorrect-clientheight-and-scrollheight-for-a-te
-    window.addEventListener('pageshow', To_f_manage_pageshow);
-    window.addEventListener('resize', To_f_manage_resize);
-  }
+var To_g_rememberOldStatus_elements_hides_ary = null;
 
-  window.onbeforeprint = To_f_manage_beforePrint;
-  window.window.onafterprint = To_f_manage_afterPrint;
+
+function To_f_openAll( rememberOldStatus = false)
+{
+  if (document.getElementById)
+  {
+    var saveStatus = (rememberOldStatus && To_g_rememberOldStatus_elements_hides_ary === null);
+    
+    // console.log( 'To_g_elements_hides_ary: ', To_g_elements_hides_ary);
+    if (saveStatus) {
+      To_g_rememberOldStatus_elements_hides_ary = [];
+    }
+    
+    var hides_idx;
+
+    for (hides_idx = 0; hides_idx < To_g_elements_hides_ary.length; hides_idx++)
+    {
+      console.log( 'hides_idx: ', hides_idx);
+      console.log( "'To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'].length: ", To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'].length);
+      if (saveStatus) {
+        To_g_rememberOldStatus_elements_hides_ary.push( []);
+      }
+      
+      var hides_idx_idx = 0;
+
+      while (hides_idx_idx < To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'].length)
+      {
+        // part which has the hidden content
+        var displayVisiblePart
+        console.log( 'is of type: ', typeof To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx]);
+        if (typeof To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx] == 'string') {
+          displayVisiblePart = document.getElementById( To_g_elements_hides_ary[hides_idx]['base_name'] + To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx]).style.display;
+        } else {
+          displayVisiblePart = document.getElementById( To_g_elements_hides_ary[hides_idx]['base_name'] + To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx][0].style.display);
+        }
+        var contentWasInvisible = (displayVisiblePart === 'none')
+
+        console.log( 'hides_idx_idx: ', hides_idx_idx);
+        console.log( "To_g_elements_hides_ary[hides_idx]['base_name']: ", To_g_elements_hides_ary[hides_idx]['base_name']);
+        // console.log( "To_g_elements_hides_ary[hides_idx]['vis_id_part_ary']: ", To_g_elements_hides_ary[hides_idx]['vis_id_part_ary'][hides_idx_idx]);
+        console.log( "To_g_elements_hides_ary[hides_idx]['invis_id_part_ary']: ", To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx]);
+        if (saveStatus) {
+          To_g_rememberOldStatus_elements_hides_ary[hides_idx].push( { contentWasInvisible });
+        }
+        if (contentWasInvisible) {
+          To_f_elements_hides_switch( 'vis', To_g_elements_hides_ary[hides_idx]['base_name'], To_g_elements_hides_ary[hides_idx]['vis_id_part_ary'], To_g_elements_hides_ary[hides_idx]['invis_id_part_ary']);
+        }
+        
+        hides_idx_idx++;
+      }
+      
+    }
+  }
+}
+
+
+
+function To_f_closeAll(toOldStatus = false)
+{
+  if (document.getElementById)
+  {
+    var resetStatus = (toOldStatus && To_g_rememberOldStatus_elements_hides_ary !== null);
+
+    console.log( 'To_g_rememberOldStatus_elements_hides_ary: ', To_g_rememberOldStatus_elements_hides_ary);
+    
+    var hides_idx;
+
+    for (hides_idx = 0; hides_idx < To_g_elements_hides_ary.length; hides_idx++)
+    {
+      console.log( 'hides_idx: ', hides_idx);
+      console.log( "'To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'].length: ", To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'].length);
+      
+      var hides_idx_idx = 0;
+
+      while (hides_idx_idx < To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'].length)
+      {
+        console.log( 'hides_idx_idx: ', hides_idx_idx);
+        console.log( "To_g_elements_hides_ary[hides_idx]['base_name']: ", To_g_elements_hides_ary[hides_idx]['base_name']);
+        // console.log( "To_g_elements_hides_ary[hides_idx]['vis_id_part_ary']: ", To_g_elements_hides_ary[hides_idx]['vis_id_part_ary'][hides_idx_idx]);
+        console.log( "To_g_elements_hides_ary[hides_idx]['invis_id_part_ary']: ", To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx]);
+        console.log( 'is of type: ', typeof To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx]);
+
+        console.log( "To_g_elements_hides_ary[hides_idx]['invis_id_part_ary']: ", To_g_elements_hides_ary[hides_idx]['invis_id_part_ary'][hides_idx_idx]);
+        if (!resetStatus || To_g_rememberOldStatus_elements_hides_ary[hides_idx][hides_idx_idx].contentWasInvisible) {
+          To_f_elements_hides_switch( 'invis', To_g_elements_hides_ary[hides_idx]['base_name'], To_g_elements_hides_ary[hides_idx]['vis_id_part_ary'], To_g_elements_hides_ary[hides_idx]['invis_id_part_ary']);
+        }
+        
+        hides_idx_idx++;
+      }
+      
+    }
+  }
+  To_g_rememberOldStatus_elements_hides_ary = null;
 }
 
 
@@ -453,6 +531,8 @@ function To_f_manage_beforePrint()
   // See: https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeprint_event
   
   console.log('Before print');
+  
+  To_f_openAll( true);
 }
 
 
@@ -463,5 +543,25 @@ function To_f_manage_afterPrint()
   // See: https://developer.mozilla.org/en-US/docs/Web/API/Window/afterprint_event
   
   console.log('After print');
+  
+  To_f_closeAll( true);
 }
 
+
+
+function To_f_manage_site_end( autoResize = false)
+{
+  // #: Open hidden areas for the hash of first site call.
+  To_f_hash_changed( window.location.hash);
+  
+  if (autoResize)
+  {
+    // #!: If handled direct in "To_f_manage_site_end" "clientHeight" has not the correct value.
+    // #: Found in URL: http://stackoverflow.com/questions/3374877/why-do-ie-chrome-initially-give-incorrect-clientheight-and-scrollheight-for-a-te
+    window.addEventListener('pageshow', To_f_manage_pageshow);
+    window.addEventListener('resize', To_f_manage_resize);
+  }
+
+  window.onbeforeprint = To_f_manage_beforePrint;
+  window.window.onafterprint = To_f_manage_afterPrint;
+}
