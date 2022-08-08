@@ -181,7 +181,6 @@ function To_f_openAll( rememberOldStatus = false)
   {
     var saveStatus = (rememberOldStatus && To_g_rememberOldStatus_elements_hides_ary === null);
     
-    // console.log( 'To_g_elements_hides_ary: ', To_g_elements_hides_ary);
     if (saveStatus) {
       To_g_rememberOldStatus_elements_hides_ary = [];
     }
@@ -190,8 +189,6 @@ function To_f_openAll( rememberOldStatus = false)
 
     for (hides_idx = 0; hides_idx < To_g_elements_hides_ary.length; hides_idx++)
     {
-      console.log( 'hides_idx: ', hides_idx);
-      console.log( "'To_g_elements_hides_ary[hides_idx]['contentAry'].length: ", To_g_elements_hides_ary[hides_idx]['contentAry'].length);
       if (saveStatus) {
         To_g_rememberOldStatus_elements_hides_ary.push( []);
       }
@@ -202,7 +199,7 @@ function To_f_openAll( rememberOldStatus = false)
       {
         // part which has the hidden content
         var displayVisiblePart
-        console.log( 'is of type: ', typeof To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx]);
+
         if (typeof To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx] == 'string') {
           displayVisiblePart = document.getElementById( To_g_elements_hides_ary[hides_idx]['base_name'] + To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx]).style.display;
         } else {
@@ -210,10 +207,6 @@ function To_f_openAll( rememberOldStatus = false)
         }
         var contentWasInvisible = (displayVisiblePart === 'none')
 
-        console.log( 'hides_idx_idx: ', hides_idx_idx);
-        console.log( "To_g_elements_hides_ary[hides_idx]['base_name']: ", To_g_elements_hides_ary[hides_idx]['base_name']);
-        // console.log( "To_g_elements_hides_ary[hides_idx]['noContentAry']: ", To_g_elements_hides_ary[hides_idx]['noContentAry'][hides_idx_idx]);
-        console.log( "To_g_elements_hides_ary[hides_idx]['contentAry']: ", To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx]);
         if (saveStatus) {
           To_g_rememberOldStatus_elements_hides_ary[hides_idx].push( { contentWasInvisible });
         }
@@ -235,27 +228,14 @@ function To_f_closeAll(toOldStatus = false)
   if (document.getElementById)
   {
     var resetStatus = (toOldStatus && To_g_rememberOldStatus_elements_hides_ary !== null);
-
-    console.log( 'To_g_rememberOldStatus_elements_hides_ary: ', To_g_rememberOldStatus_elements_hides_ary);
-    
     var hides_idx;
 
     for (hides_idx = 0; hides_idx < To_g_elements_hides_ary.length; hides_idx++)
     {
-      console.log( 'hides_idx: ', hides_idx);
-      console.log( "'To_g_elements_hides_ary[hides_idx]['contentAry'].length: ", To_g_elements_hides_ary[hides_idx]['contentAry'].length);
-      
       var hides_idx_idx = 0;
 
       while (hides_idx_idx < To_g_elements_hides_ary[hides_idx]['contentAry'].length)
       {
-        console.log( 'hides_idx_idx: ', hides_idx_idx);
-        console.log( "To_g_elements_hides_ary[hides_idx]['base_name']: ", To_g_elements_hides_ary[hides_idx]['base_name']);
-        // console.log( "To_g_elements_hides_ary[hides_idx]['noContentAry']: ", To_g_elements_hides_ary[hides_idx]['noContentAry'][hides_idx_idx]);
-        console.log( "To_g_elements_hides_ary[hides_idx]['contentAry']: ", To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx]);
-        console.log( 'is of type: ', typeof To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx]);
-
-        console.log( "To_g_elements_hides_ary[hides_idx]['contentAry']: ", To_g_elements_hides_ary[hides_idx]['contentAry'][hides_idx_idx]);
         if (!resetStatus || To_g_rememberOldStatus_elements_hides_ary[hides_idx][hides_idx_idx].contentWasInvisible) {
           To_f_elements_hides_switch( 'hideContent', To_g_elements_hides_ary[hides_idx]['base_name'], To_g_elements_hides_ary[hides_idx]['noContentAry'], To_g_elements_hides_ary[hides_idx]['contentAry']);
         }
