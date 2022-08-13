@@ -3741,12 +3741,12 @@
     echo '              '.($NSOSP_g_printSVG)."\n";
     echo '            </img>'."\n";
     echo '          </div>'."\n";
-    echo '          <div id="isUnexpanded" class="main-unexpanded-div" onclick="To_f_expand()">'."\n";
+    echo '          <div id="isUnexpanded" class="main-unexpanded-div" style="display: ;" onclick="To_f_expand()">'."\n";
     echo '            <img class="main-print-expand">'."\n";
     echo '              '.($NSOSP_g_expandSVG)."\n";
     echo '            </img>'."\n";
     echo '          </div>'."\n";
-    echo '          <div id="isExpanded" class="main-expanded-div" onclick="To_f_expand()">'."\n";
+    echo '          <div id="isExpanded" class="main-expanded-div" style="display: none;" onclick="To_f_expand()">'."\n";
     echo '            <img class="main-print-expand">'."\n";
     echo '              '.($NSOSP_g_expandSVG)."\n";
     echo '            </img>'."\n";
