@@ -44,7 +44,16 @@ html, body {
     overflow: visible;
 	}
 
+
+/* main Classes */
+
+.main-print-expand-div {
+  display: none;
+}
+
+
 /* Shadows */
+
 .main-shadow-5-5-20/*, .tools-class-fig*/ {
   -webkit-box-shadow: none;  /* #: Safari */
   -moz-box-shadow: none;  /* #: Mozilla */

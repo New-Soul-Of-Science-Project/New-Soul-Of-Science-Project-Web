@@ -316,8 +316,70 @@ a:hover {
   font-weight: normal;
 }
 
+.main-print-expand-div {
+  /* position: absolut;
+  top: 0px;
+  left: -20px; */
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0px;
+}
+
+svg {
+  fill: currentColor;
+}
+
+.main-print-expand-inner-div {
+  position: absolute;
+  left: -40px;
+  color: #808080;
+}
+
+.main-print-expand-inner-div:hover {
+  color: black;
+}
+
+.main-print-div {
+  position: absolute;
+  top: 10px;
+  left: -40px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.main-print-div:hover {
+  color: rgba(0, 0, 0, 1.0);
+}
+
+.main-unexpanded-div {
+  position: absolute;
+  top: 60px;
+  left: -40px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.main-unexpanded-div:hover {
+  color: rgba(0, 0, 0, 1.0);
+}
+
+.main-expanded-div {
+  position: absolute;
+  top: 60px;
+  left: -40px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main-expanded-div:hover {
+  color: rgba(0, 0, 0, 1.0);
+}
+
+.main-print-expand {
+  width: 100%;
+  height: auto;
+}
+
 
 /* Shadows */
+
 .main-shadow-5-5-20/*, .tools-class-fig*/ {
   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);  /* #: Safari */
   -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);  /* #: Mozilla */

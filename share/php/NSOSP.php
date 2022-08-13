@@ -3721,14 +3721,37 @@
 
   
   
+  $NSOSP_g_printSVG = file_get_contents(
+      $Glo_PathRel_back.'../share/images/_icons/svg/print.svg'
+  );
+  $NSOSP_g_expandSVG = file_get_contents(
+      $Glo_PathRel_back.'../share/images/_icons/svg/expand.svg'
+  );
+  
   function FrQFT_f_HTML_EndDivsNavExtrFootContainerBody()
   {
     global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ, $Glo_g_Site_activ_GenInfo_idx, $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary;
-    //global $To_g_pageUrl, $To_g_query, $To_g_openAll;
-    
+    global $NSOSP_g_printSVG, $NSOSP_g_expandSVG;
+
     echo '			<div id="navigation" class="navigation main-shadow-0-5-30 main-layer-2">'."\n";
-    //%!echo '				<img src="'.$Glo_PathRel_back.'../share/images/Header_zu_Navi_EEEEEE.jpg" width="200" height="10" border="0" alt="" style="position: relative; top: -3px;">'."\n";
-    //%!echo '          <! #: Bei Safari eigentlich "top: -2px;". FireFox Mac+Win und IE sind mit "top: -3px;" ok. >'."\n";
+    echo '        <div class="main-print-expand-div">'."\n";
+    echo '          <br>'."\n";
+    echo '          <div class="main-print-div" onclick="To_f_print()">'."\n";
+    echo '            <img class="main-print-expand">'."\n";
+    echo '              '.($NSOSP_g_printSVG)."\n";
+    echo '            </img>'."\n";
+    echo '          </div>'."\n";
+    echo '          <div id="isUnexpanded" class="main-unexpanded-div" onclick="To_f_expand()">'."\n";
+    echo '            <img class="main-print-expand">'."\n";
+    echo '              '.($NSOSP_g_expandSVG)."\n";
+    echo '            </img>'."\n";
+    echo '          </div>'."\n";
+    echo '          <div id="isExpanded" class="main-expanded-div" onclick="To_f_expand()">'."\n";
+    echo '            <img class="main-print-expand">'."\n";
+    echo '              '.($NSOSP_g_expandSVG)."\n";
+    echo '            </img>'."\n";
+    echo '          </div>'."\n";
+    echo '        </div>'."\n";
     echo '				<br>'."\n";
     echo '<div id="google_translate_element" class="main-google-translate" style="padding-left: 10px !important; white-space: normal!important;"></div><script type="text/javascript">'."\n";
     echo 'function googleTranslateElementInit() {'."\n";
@@ -3892,12 +3915,12 @@
   }
 
   
-  
   const margin = 'margin';
   
   function FrQFT_f_Div_WrapperBegin( $offset, $backward_link='')
   {
-    global $Glo_PathRel_back, $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary, $Glo_g_Site_activ;
+    global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ;
+    global $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary;
 
     echo         '<div id="wrapper" class="wrapper">'."\n";
     echo $offset.'  <div id="content" class="content main-shadow-0-5-30" style="">'."\n";

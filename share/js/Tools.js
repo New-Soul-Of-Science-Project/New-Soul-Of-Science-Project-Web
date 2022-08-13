@@ -177,6 +177,8 @@ var To_g_rememberOldStatus_elements_hides_ary = null;
 
 function To_f_openAll( rememberOldStatus = false)
 {
+  console.log('Open All. rememberOldStatus: ', rememberOldStatus);
+  
   if (document.getElementById)
   {
     var saveStatus = (rememberOldStatus && To_g_rememberOldStatus_elements_hides_ary === null);
@@ -219,12 +221,17 @@ function To_f_openAll( rememberOldStatus = false)
       
     }
   }
+
+  // #: Fit content height to need.
+  // To_f_manage_resize();
 }
 
 
 
 function To_f_closeAll(toOldStatus = false)
 {
+  console.log('Close All. toOldStatus: ', toOldStatus);
+  
   if (document.getElementById)
   {
     var resetStatus = (toOldStatus && To_g_rememberOldStatus_elements_hides_ary !== null);
@@ -245,6 +252,10 @@ function To_f_closeAll(toOldStatus = false)
       
     }
   }
+
+  // #: Fit content height to need.
+  // To_f_manage_resize();
+
   To_g_rememberOldStatus_elements_hides_ary = null;
 }
 
@@ -529,6 +540,56 @@ function To_f_manage_afterPrint()
 
 
 
+function To_f_print()
+{
+  // Print the current page.
+  // See: https://www.w3schools.com/jsref/met_win_print.asp
+  
+  console.log('Print');
+  window.print();
+}
+
+
+
+function To_f_setExpandIcons()
+{
+  if (document.getElementById)
+  {
+    console.log('Set Expand Icons');
+    
+    if (To_g_rememberOldStatus_elements_hides_ary === null)
+    {
+      document.getElementById( 'isUnexpanded').style.display = '';
+      document.getElementById( 'isExpanded').style.display = 'none';
+    } else {
+      document.getElementById( 'isUnexpanded').style.display = 'none';
+      document.getElementById( 'isExpanded').style.display = '';
+    }
+  }
+}
+
+
+
+function To_f_expand()
+{
+  if (document.getElementById)
+  {
+    if (To_g_rememberOldStatus_elements_hides_ary === null)
+    {
+      console.log('Expand');
+
+      To_f_openAll( true);
+    } else {
+      console.log('Unexpand To Old State');
+
+      To_f_closeAll( true);
+    }
+    To_f_setExpandIcons();
+  }
+}
+
+
+
 function To_f_manage_site_end( autoResize = false)
 {
   // #: Open hidden areas for the hash of first site call.
@@ -544,4 +605,6 @@ function To_f_manage_site_end( autoResize = false)
 
   window.onbeforeprint = To_f_manage_beforePrint;
   window.window.onafterprint = To_f_manage_afterPrint;
+  
+  To_f_setExpandIcons();
 }
