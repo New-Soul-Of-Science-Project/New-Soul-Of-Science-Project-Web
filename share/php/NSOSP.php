@@ -3756,6 +3756,8 @@
     echo '<div id="google_translate_element" class="main-google-translate" style="padding-left: 10px !important; white-space: normal!important;"></div><script type="text/javascript">'."\n";
     echo 'function googleTranslateElementInit() {'."\n";
     echo '  new google.translate.TranslateElement({pageLanguage: \'de\', gaTrack: true, gaId: \'UA-5051897-3\'}, \'google_translate_element\');'."\n";
+    // correct Google navigator right overflow
+    echo '  To_f_googleTranslateCorrect();'."\n";
     echo '}'."\n";
     echo '</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>'."\n";
     echo '				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="padding-left: 10px; padding-top: 10px;">'."\n";

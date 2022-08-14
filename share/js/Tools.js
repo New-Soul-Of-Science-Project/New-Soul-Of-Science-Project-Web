@@ -524,6 +524,10 @@ function To_f_manage_beforePrint()
   console.log('Before print');
   
   To_f_openAll( true);
+  
+  // call a kind of nextTick because on the NSOSP index page the footer is not at the right position
+  // I guess because the page really has a lot elements to open
+  // see: https://timnew.me/blog/2014/06/23/process-nexttick-implementation-in-browser/
 }
 
 
@@ -586,6 +590,18 @@ function To_f_expand()
     }
     To_f_setExpandIcons();
   }
+}
+
+
+
+function To_f_googleTranslateCorrect()
+{
+  // correct Google navigator right overflow
+  // see: https://javascript.info/searching-elements-dom
+  
+  // find element after the Google script has load the translation elements
+  let element = document.querySelector('a[href="https://translate.google.com"]')
+  element.style.display = 'block';
 }
 
 
