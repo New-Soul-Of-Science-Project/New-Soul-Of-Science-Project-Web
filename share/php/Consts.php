@@ -6,6 +6,7 @@
   const author_image_alt = 'author_image_alt';
   const author_image_width = 'author_image_width';
   const author_image_height = 'author_image_height';
+  const url_rel = 'url_rel';
   const url_abs = 'url_abs';
   const titel = 'titel';
   const description = 'description';

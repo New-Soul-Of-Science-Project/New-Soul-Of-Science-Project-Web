@@ -210,6 +210,10 @@
   
   //$Glo_PathRel_back = '';     // #: Is set in the site direct.
 
+  
+  include $Glo_PathRel_back.'../share/php/Consts.php';
+  
+  
   // #: Is set in the top PHP include.
   $Glo_g_Site_ary = null;
   $Glo_g_Site_activ = null;
@@ -877,8 +881,6 @@
   }
 
   
-  const url_rel = 'url_rel';
-
   function To_f_replace_callback__latexcommand__jump( $value, $replace_ary=null, $replace_preg_ary=null)
   {
     global $Glo_g_Site_ary, $Glo_g_Site_activ;
