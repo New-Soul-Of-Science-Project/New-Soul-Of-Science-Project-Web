@@ -68,7 +68,9 @@
                     'Im Mathematikunterricht in der Oberstufe war mir aufgefallen, dass es Regelmäßigkeiten zwischen'."\n".
                     'den grundlegenden Operatoren der Arithmetik\\color{*Bearb}{(Link zu Wikipedia)} gibt.'."\n".
                     'Diese Verbinden die Addition, die Multiplikation und die Exponentialrechnung in einer'."\n".
-                    'hierarchischen Reihenfolge:'."\n".
+                    'hierarchischen Reihenfolge.'."\n".
+                    'In den folgenden Formeln kommt zum Ausdruck, dass der jeweils höhere Operator die Häufigkeit'."\n".
+                    'der Verkettung mit seinem Einen niedrigeren Operator zählt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
