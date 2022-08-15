@@ -331,7 +331,7 @@ svg {
 
 .main-print-expand-inner-div {
   position: absolute;
-  left: -40px;
+  left: -37px;
   color: #808080;
 }
 
@@ -342,7 +342,7 @@ svg {
 .main-print-div {
   position: absolute;
   top: 10px;
-  left: -40px;
+  left: -37px;
   color: rgba(0, 0, 0, 0.2);
 }
 
@@ -353,7 +353,7 @@ svg {
 .main-unexpanded-div {
   position: absolute;
   top: 60px;
-  left: -40px;
+  left: -37px;
   color: rgba(0, 0, 0, 0.2);
 }
 
