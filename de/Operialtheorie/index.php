@@ -65,6 +65,7 @@
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:OT:Vorwort'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:OT:Einleitung'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:OT:Zaehloperator'),
                     ))),
                       
                   array( 'normal',
