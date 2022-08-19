@@ -29,12 +29,17 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Der Null-Operator ist der Zähloperator oder Inkrement-Operator, wie wir gleich aus der Addition herleiten werden.'."\n".
+                    'Dann die Addition zählt, wie oft gezählt wird.'."\n",
+                      'Daher kommt es auch, dass der Zähloperator, wie ich ihn ab jetzt nennen möchte,'."\n".
+                    'die Null zugeordnet bekommen hat, also der Null-Operator ist.'."\n".
+                    'Denn in der Operial-Theoorie wird vom höheren Operator \\italic{gezählt}, wie häufig der Einen'."\n".
+                    'niedrigere Operator verkettet angewandt wird.'."\n".
+                    'Das Zählen stellt also den Zusammenhang innerhalb der Operatoren-Hierarchie her'."\n".
+                    'und ist gleichzeitig selber einer der hierarchischen Operatoren.'."\n",
+                      'Wir haben es also in der Operatoren-Hierarchie mit einer Selbstbezüglickeit zu tun.'."\n".
+                    'Es handelt sich um eine selbstbezügliche und selbstähnliche, also um eine in sich rückgekoppelte, fraktale Struktur.'."\n".
+                    'Hier sehen wir eine große Strukturähnlichkeit mit der Physik der \\jump{OM:FrQFT:Home}{›fraktalen Quanten-Fluss-Theorie‹}.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -44,7 +49,7 @@
                     'XXX'."\n"))),
                   array( 'headline', array( jump_name => 'OM:OT:Zaehloperator:Vortext:XXX', text =>
                                            
-                'Was ist der Null-Operator?', subline =>
+                'Herleitung des Zähloperators aus der Addition', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Interessant ist nun die Funktion des Null-Operators.'."\n".
@@ -114,6 +119,14 @@
                       array(  jump_name => 'OM:OT:Zaehloperator', type => 'back'),
                     )),
                   
+                  array( 'text', array( text => array(
+                    'Verweis auf das Hauptkapitel zu neutralen Elementen …'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:Null-Operator', text =>
                                            
                 'Neutrale Elemente des Null-Operators', subline =>
@@ -388,7 +401,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      // array(  jump_name => 'XXX'),
+                      array(  jump_name => 'OM:OT:Sprungoperator'),
                     )),
                 )
           ); ?>

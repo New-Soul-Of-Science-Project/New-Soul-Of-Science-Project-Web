@@ -63,10 +63,8 @@
           'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut' => array( headline_text => 'OT.Ein.15'/* , headline_text_short => 'XXX' */),
                    
         'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator' => array( headline_text => 'Minus-Eins-Operator und Minus-Zwei-Operator'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-Vorzeichen-Minus-Eins-a' => array( headline_text => 'OT.Ein.MO.6'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Eins-a-ist-c' => array( headline_text => 'OT.Ein.MO.7'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-Vorzeichen-Minus-Zwei-a' => array( headline_text => 'OT.Ein.MO.13'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Zwei-a-ist-c' => array( headline_text => 'OT.Ein.MO.14'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-Vorzeichen-Minus-Zwei-a' => array( headline_text => 'OT.Ein.MO.6'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Zwei-a-ist-c' => array( headline_text => 'OT.Ein.MO.7'/* , headline_text_short => 'XXX' */),
                    
         'OM:OT:Einleitung:Inverse-Operatoren' => array( headline_text => 'Inverse Operatoren'/* , headline_text_short => 'XXX' */),
           'OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Wurzel-Definition' => array( headline_text => 'OT.Ein.Inv.2'/* , headline_text_short => 'XXX' */),
@@ -75,7 +73,6 @@
         'OM:OT:Einleitung:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'XXX' */),
           'OM:OT:Einleitung:Neutrale-Elemente:Equ-x-linksneutrales-Element' => array( headline_text => 'OT.Ein.NE.2'/* , headline_text_short => 'XXX' */),
           'OM:OT:Einleitung:Neutrale-Elemente:Equ-x-rechtsneutrales-Element' => array( headline_text => 'OT.Ein.NE.4'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Neutrale-Elemente:Equ-Minus-Eins-Einbettung' => array( headline_text => 'OT.Ein.NE.47'/* , headline_text_short => 'XXX' */),
                    
         'OM:OT:Einleitung:Eigenschaften' => array( headline_text => 'Eigenschaften'/* , headline_text_short => 'XXX' */),
                    
@@ -83,11 +80,29 @@
           'OM:OT:Einleitung:Andere-Moeglichkeiten:Equ-Operial-Rekursiv-mit-Vorzeichen' => array( headline_text => 'OT.Ein.AM.1'/* , headline_text_short => 'XXX' */),
       ),
     ),
+    'OM:OT:Sprungoperator' => array(
+      url_abs => 'http://www.nsosp.org/de/Operialtheorie/Sprungoperator-Quantensprungoperator-Minus-Eins-Operator.php',
+      url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Sprungoperator-Quantensprungoperator-Minus-Eins-Operator.php',
+      titel => 'Sprungoperator – Quantensprungoperator oder Minus-Eins-Operator - Operialtheorie - Deutsch',
+      description => '\\name[undertitle]{OM:OT:Sprungoperator}.\\hidden{ – \\name[description]{OM:OT:Sprungoperator}.}',
+      keywords => '',
+      text_titel_h1 => 'Sprungoperator – Quantensprungoperator oder Minus-Eins-Operator',
+      text_titel_short => 'Sprungoperator',
+      text_undertitel_h2 => 'Die Basis des Zählens',
+      text_titel_discr_h3 => '',
+      jump_ary => array(
+          'OM:OT:Sprungoperator:Vortext:Equ-Vorzeichen-Minus-Eins-a' => array( headline_text => 'OT.Sprung.6'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Sprungoperator:Vortext:Equ-c-Minus-Eins-a-ist-c' => array( headline_text => 'OT.Sprung.7'/* , headline_text_short => 'XXX' */),
+                   
+        'OM:OT:Sprungoperator:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Sprungoperator:Neutrale-Elemente:Equ-Minus-Eins-Einbettung' => array( headline_text => 'OT.Sprung.NE.8'/* , headline_text_short => 'XXX' */),
+      ),
+    ),
     'OM:OT:Zaehloperator' => array(
       url_abs => 'http://www.nsosp.org/de/Operialtheorie/Zaehloperator-Inkrement-Operator-Null-Operator.php',
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Zaehloperator-Inkrement-Operator-Null-Operator.php',
       titel => 'Zähloperator – Inkrement-Operator oder Null-Operator - Operialtheorie - Deutsch',
-      description => '\\name[undertitle]{OM:OT:Inkrement-Operator}. – \\name[description]{OM:OT:Inkrement-Operator}.',
+      description => '\\name[undertitle]{OM:OT:Zaehloperator}.\\hidden{ – \\name[description]{OM:OT:Zaehloperator}.}',
       keywords => '',
       text_titel_h1 => 'Zähloperator – Inkrement-Operator oder Null-Operator',
       text_titel_short => 'Zähloperator',
