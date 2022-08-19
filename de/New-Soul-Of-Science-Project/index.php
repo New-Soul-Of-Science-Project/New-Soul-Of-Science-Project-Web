@@ -1244,19 +1244,33 @@
                     )),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                        ''."\n"),
-                        addtext => '')),
-                      
-                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
-                  // #!: Auch auf der NaPhil-Yoga-Startseite! (OM:NPYo:Home)
-                  // #!: Auch auf der NaPhil-Yoga-Einleitungsseite! (OM:NPYo:Einleitung)
-                  // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
-                  array( 'text', array( Shape  => 'italic', text => array(
-                        'Das ganze Leben ist ein sich Finden …'."\n"))),
+                        '\\\\'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                        ''."\n"),
-                        addtext => '')),
+                        'Liebe ist …'."\n",
+                          '… wenn sich Wege finden. \\\\'."\n".
+                        'Es ist Liebe …'."\n",
+                          '… wenn Wege sich finden.'."\n".
+                  ''))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        '\\\\'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        'Das ganze Leben ist ein sich Finden …'."\n".
+                  ''))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        '\\\\'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        'Wer etwas will, findet Wege. \\\\'."\n".
+                        'Wer etwas nicht will, findet Gründe.'."\n".
+                  ''),
+                    addtext => '\\small{\\color{*TitleAdd}{ ~Autor unbekannt}}')),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        '\\\\'."\n"))),
                       
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
                   // #!: Auch auf der NaPhil-Yoga-Startseite! (OM:NPYo:Home)
@@ -1264,11 +1278,11 @@
                   // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
-                        'der hat die Magie, Dinge zum Schweben zu bringen.'."\n"))),
+                        'der hat die Magie, Dinge zum Schweben zu bringen.'."\n".
+                  ''))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                        ''."\n"),
-                        addtext => '')),
+                        '\\\\'."\n"))),
                       
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
                   // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Spiritualitaet-Psychologie)
@@ -1277,8 +1291,7 @@
                         addtext => '\\small{\\color{*TitleAdd}{ ~Mike Love\\footnote{\\jump[https://www.youtube.com/watch?v=NKx_kxR9hWU]{}{"I Love You & Permanent Holiday" Live at Woodstock Poland 2016}, Sek. 13:57.}}}')),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                        ''."\n"),
-                        addtext => '')),
+                        '\\\\'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Die Angst vor deinem Tod \\\\'."\n".
@@ -1298,8 +1311,7 @@
                         addtext => '')),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                        ''."\n"),
-                        addtext => '')),
+                        '\\\\'."\n"))),
                       
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
                   // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
@@ -1311,8 +1323,7 @@
                         addtext => '')),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                        ''."\n"),
-                        addtext => '')),
+                        '\\\\'."\n"))),
                       
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
                   // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Stein-der-Weisen)
@@ -1323,8 +1334,7 @@
                         addtext => '')),
                     
                   array( 'text', array( Shape  => 'italic', text => array(
-                        ''."\n"),
-                        addtext => '')),
+                        '\\\\'."\n"))),
                       
                   // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Einleitung:Ehrgeiz)
                   array( 'text', array( Shape  => 'italic', text => array(
@@ -1333,8 +1343,7 @@
                         addtext => '')),
                     
                   array( 'text', array( Shape  => 'italic', text => array(
-                        ''."\n"),
-                        addtext => '')),
+                        '\\\\'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Denken und Fühlen sind wie Körper und Seele, \\\\'."\n".
@@ -1342,8 +1351,7 @@
                         addtext => '')),
                     
                   array( 'text', array( Shape  => 'italic', text => array(
-                        ''."\n"),
-                        addtext => '')),
+                        '\\\\'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Wer bereit ist, den Schleier des Offensichtlichen hinter sich zu lassen, \\\\'."\n".
@@ -1351,8 +1359,7 @@
                         addtext => '')),
                     
                   array( 'text', array( Shape  => 'italic', text => array(
-                        ''."\n"),
-                        addtext => '')),
+                        '\\\\'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         '\\small{\\color{*TitleAdd}{Mathematik und physikalische Realität können niemals das Gleiche sein:}} \\\\ '."\n".
@@ -1365,8 +1372,7 @@
                         addtext => '')),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                        ''."\n"),
-                        addtext => '')),
+                        '\\\\'."\n"))),
                       
                   // #: Siehe "http://www.youtube.com/watch?feature=player_embedded&v=HkBEKU-E38k", Sek. 7:05, gespeichert als "Don Lincoln Welches sind die kleinsten Bausteine des Universums.mp4", und "http://en.wikiquote.org/wiki/Talk:Albert_Einstein". Zitat ähnlich siehe URL: http://www.liss-kompendium.de/zitate/einstein-zitate.htm
                   //    Auch auf jeder Seite im Natigationsbalken.
@@ -1377,8 +1383,7 @@
                         addtext => '\\small{\\color{*TitleAdd}{ ~Einstein zugeschrieben}}')),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                        ''."\n"),
-                        addtext => '')),
+                        '\\\\'."\n"))),
                       
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
                   // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Spiritualitaet-Psychologie)
@@ -1394,8 +1399,7 @@
                         addtext => '\\small{\\color{*TitleAdd}{ ~Das Orakel von Delphi}}')),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                        ''."\n"),
-                        addtext => '')),
+                        '\\\\'."\n"))),
                       
                   array( 'jumplist', array(
                       //array(  jump_name => 'OM:SupNum:Home'),
