@@ -2201,12 +2201,12 @@
                               '<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
                             ),
            header_bgcolor => '#FFFFFF',
-           header_pict_name => 'NSOSP/NSOSP_header_v01_8.jpg',
+           header_pict_name => 'NSOSP/NSOSP_header_v01_9.jpg',
            header_pict_width => '930px',
            header_pict_height => '177px',
            header_pict_bgcolor => '#FFFFFF',
            header_pict_alt => 'New Soul Of Science Project, Knowledge And Care Helps',
-           header_links_marginLeft => '384px',
+           header_links_marginLeft => '369px',
            copy_right => 'New Soul Of Science Project (NSOSP) \\\\'."\n".
                           '© 1986–2022 by \\\\'."\n".
                           'Wolfgang Huß und \\\\'."\n".

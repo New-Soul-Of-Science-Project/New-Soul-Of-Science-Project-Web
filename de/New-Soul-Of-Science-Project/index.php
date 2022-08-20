@@ -14,9 +14,8 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '• Kopf-Logo:',
-                    '– Den Logo Untertitel ändern zu ›Knowledge and Care helps …‹ (knowledge ist auch verkehrt geschrieben).',
-                    '– Das Logo erscheint insgesamt etwas zu weit nach rechts.',
+                    // '• Kopf-Logo:',
+                    // '– Das Logo erscheint insgesamt etwas zu weit nach rechts.',
                     ))),
                       
                   array( 'text', array( text => array(
