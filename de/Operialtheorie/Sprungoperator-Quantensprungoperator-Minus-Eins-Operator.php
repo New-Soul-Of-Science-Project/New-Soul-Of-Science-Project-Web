@@ -34,7 +34,7 @@
                     'Er muss zum Beispiel die folgenden Formeln erfüllen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Sprung', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.SpruO', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *o( -1 *o) a *o( -1 *o) a  =  a *o( 0 *o) 2  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( *o( -1 *o) a *) *o( -1 *o) a  =  a + 1  }'),
                       array( display => 'on',  latex => '{  *o( -1 *o) a *o( -1 *o) a *o( -1 *o) a  =  a *o( 0 *o) 3  }'),
@@ -48,7 +48,7 @@
                     'Das bedeutet dann, wenn \\term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Sprung', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.SpruO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *o( -1 *o) a  =  *o( 0 *o) a  =  a + 1  }',
                                                label_name => 'OM:OT:Sprungoperator:Vortext:Equ-Vorzeichen-Minus-Eins-a', label_text => '\\name{OM:OT:Sprungoperator:Vortext:Equ-Vorzeichen-Minus-Eins-a}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  c *o( -1 *o) a  =  c  \neq  c *o( 0 *o) a  =  c + 1  }',
@@ -132,7 +132,7 @@
                       'Sei'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Sprung.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.SpruO.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a  =  {n_{links}} *o( -1 *o) a  *]  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -140,7 +140,7 @@
                       'wegen – Formel \\jumpname{OM:OT:Sprungoperator:Vortext:Equ-c-Minus-Eins-a-ist-c} –'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Sprung.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.SpruO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  {n_{links}} *o( -1 *o) a  =  n_{links}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -148,7 +148,7 @@
                       'folgt'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Sprung.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.SpruO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  n_{links}  =  a  *]  .  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -164,7 +164,7 @@
                       'Sei'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Sprung.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.SpruO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a  =  a *o( -1 *o) n_{rechts}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -172,7 +172,7 @@
                       'wegen – Formel \\jumpname{OM:OT:Sprungoperator:Vortext:Equ-c-Minus-Eins-a-ist-c} –'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Sprung.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.SpruO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *( \forall n_{rechts} \in \mathbb{R} *) *[  a *o( -1 *o) n_{rechts}  =  a  *]  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -180,7 +180,7 @@
                       'folgt'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Sprung.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.SpruO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *( \forall n_{rechts} \in \mathbb{R} *) *[  a  =  a  *]  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -188,7 +188,7 @@
                       'dies gilt also für'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Sprung.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.SpruO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \forall n_{rechts} \in \mathbb{R}  \;\;  .  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -201,7 +201,7 @@
                     'neutrale Elemente wie folgt aus – \\term{*a*} mit Sternchen markiert, damit wir es besser finden:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Sprung.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.SpruO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *( \forall c_{1},c_{2},\cdots \in \mathbb{R} *) *[  a  =  \cdots \, *o( -1 *o) a *o( -1 *o) a \\\ \qquad\qquad\qquad\qquad\qquad\;\;\;\, *o( -1 *o) {*a*} \\\ \qquad\qquad\qquad\qquad\qquad\;\;\;\, *o( -1 *o) {c_{1}} *o( -1 *o) {c_{2}} *o( -1 *o) \cdots  *]  }',
                                                label_name => 'OM:OT:Sprungoperator:Neutrale-Elemente:Equ-Minus-Eins-Einbettung', label_text => '\\name{OM:OT:Sprungoperator:Neutrale-Elemente:Equ-Minus-Eins-Einbettung}', label_incr => true),
                     ))),
@@ -219,7 +219,7 @@
                       'Sei'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Sprung.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.SpruO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  *o( -1 *o) a  =   v *o( -1 *o) a  *]  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -227,7 +227,7 @@
                       'wegen – Formeln \\jumpname{OM:OT:Sprungoperator:Vortext:Equ-Vorzeichen-Minus-Eins-a} und \\jumpname{OM:OT:Sprungoperator:Vortext:Equ-c-Minus-Eins-a-ist-c} –'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Sprung.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.SpruO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  *o( -1 *o) a  =  a + 1  *]  }'),
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  c *o( -1 *o) a  =  c  *]  }'),
                     ))),
@@ -236,7 +236,7 @@
                       'folgt'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'OT.Sprung.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.SpruO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  v  =   a + 1  *]  .  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -256,7 +256,7 @@
                     ''))),
                       
                   array( 'equations',
-                    array( equ_text_std => 'OT.Sprung.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.SpruO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *( \forall c_1,c_2,\cdots *) *[  a *o( -1 *o) c_1 *o( -1 *o) c_2 *o( -1 *o) \cdots  =  a  *]  }'),
                       //                         /* label_name => 'OM:OT:Sprungoperator:Neutrale-Elemente:Equ-Minus-Eins-Einbettung', */label_text => '\\jumpname{OM:OT:Sprungoperator:Neutrale-Elemente:Equ-Minus-Eins-Einbettung}', label_incr => false),
                     ))),
@@ -271,7 +271,7 @@
                     ''))),
                       
                   array( 'equations',
-                    array( equ_text_std => 'OT.Sprung.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'OT.SpruO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *( \forall c_1,c_2,\cdots *) *[  *o( -1 *o) a *o( -1 *o) c_1 *o( -1 *o) c_2 *o( -1 *o) \cdots  =  a + 1  *]  }'),
                       //                         /* label_name => 'OM:OT:Sprungoperator:Vortext:Equ-Vorzeichen-Minus-Eins-a', */label_text => '\\jumpname{OM:OT:Sprungoperator:Vortext:Equ-Vorzeichen-Minus-Eins-a}', label_incr => false),
                     ))),
@@ -283,7 +283,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:OT:Einleitung:Eigenschaften'),
+                      array(  jump_name => 'OM:OT:Konstanzoperator'),
                     )),
                 )
           ); ?>

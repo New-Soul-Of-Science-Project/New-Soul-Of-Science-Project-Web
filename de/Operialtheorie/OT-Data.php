@@ -62,10 +62,6 @@
           'OM:OT:Einleitung:Vortext:Equ-Tetration-Beispiel' => array( headline_text => 'OT.Ein.9'/* , headline_text_short => 'XXX' */),
           'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut' => array( headline_text => 'OT.Ein.15'/* , headline_text_short => 'XXX' */),
                    
-        'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator' => array( headline_text => 'Minus-Eins-Operator und Minus-Zwei-Operator'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-Vorzeichen-Minus-Zwei-a' => array( headline_text => 'OT.Ein.MO.6'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Minus-Eins-und-Minus-Zwei-Operator:Equ-c-Minus-Zwei-a-ist-c' => array( headline_text => 'OT.Ein.MO.7'/* , headline_text_short => 'XXX' */),
-                   
         'OM:OT:Einleitung:Inverse-Operatoren' => array( headline_text => 'Inverse Operatoren'/* , headline_text_short => 'XXX' */),
           'OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Wurzel-Definition' => array( headline_text => 'OT.Ein.Inv.2'/* , headline_text_short => 'XXX' */),
           'OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Logarithmus-Definition' => array( headline_text => 'OT.Ein.Inv.3'/* , headline_text_short => 'XXX' */),
@@ -80,22 +76,52 @@
           'OM:OT:Einleitung:Andere-Moeglichkeiten:Equ-Operial-Rekursiv-mit-Vorzeichen' => array( headline_text => 'OT.Ein.AM.1'/* , headline_text_short => 'XXX' */),
       ),
     ),
+    'OM:OT:Konstanzoperator' => array(
+      url_abs => 'http://www.nsosp.org/de/Operialtheorie/Konstanzoperator-Minus-Zwei-Operator.php',
+      url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Konstanzoperator-Minus-Zwei-Operator.php',
+      titel => 'Konstanzoperator – Minus-Zwei-Operator - Operialtheorie - Deutsch',
+      description => '\\name[undertitle]{OM:OT:Konstanzoperator}.\\hidden{ – \\name[description]{OM:OT:Konstanzoperator}.}',
+      keywords => '',
+      text_titel_h1 => 'Konstanzoperator \\\\ – Minus-Zwei-Operator',
+      text_titel_short => 'Konstanzoperator',
+      text_undertitel_h2 => 'Die Basis von Allem',
+      text_titel_discr_h3 => '',
+      jump_ary => array(
+          'OM:OT:Konstanzoperator:Vortext:Equ-Vorzeichen-Minus-Zwei-a' => array( headline_text => 'OT.KonO.6'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Konstanzoperator:Vortext:Equ-c-Minus-Zwei-a-ist-c' => array( headline_text => 'OT.KonO.7'/* , headline_text_short => 'XXX' */),
+
+        'OM:OT:Konstanzoperator:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'XXX' */),
+      ),
+    ),
+    'OM:OT:Literatur' => array(
+      url_abs => 'http://www.nsosp.org/de/Operialtheorie/Literatur.php',
+      url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Literatur.php',
+      titel => 'Literatur - Operialtheorie - Deutsch',
+      description => 'Literatur zur ›Operialtheorie‹.',
+      keywords => '',
+      text_titel_h1 => 'Literatur',
+      text_titel_short => 'Literatur',
+      text_undertitel_h2 => 'und Informationen',
+      text_titel_discr_h3 => '',
+      jump_ary => array(
+      ),
+    ),
     'OM:OT:Sprungoperator' => array(
       url_abs => 'http://www.nsosp.org/de/Operialtheorie/Sprungoperator-Quantensprungoperator-Minus-Eins-Operator.php',
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Sprungoperator-Quantensprungoperator-Minus-Eins-Operator.php',
-      titel => 'Sprungoperator – Quantensprungoperator oder Minus-Eins-Operator - Operialtheorie - Deutsch',
+      titel => 'Sprungoperator – Quantensprungoperator \\\\ oder Minus-Eins-Operator - Operialtheorie - Deutsch',
       description => '\\name[undertitle]{OM:OT:Sprungoperator}.\\hidden{ – \\name[description]{OM:OT:Sprungoperator}.}',
       keywords => '',
-      text_titel_h1 => 'Sprungoperator – Quantensprungoperator oder Minus-Eins-Operator',
+      text_titel_h1 => 'Sprungoperator – Quantensprungoperator \\\\ oder Minus-Eins-Operator',
       text_titel_short => 'Sprungoperator',
       text_undertitel_h2 => 'Die Basis des Zählens',
       text_titel_discr_h3 => '',
       jump_ary => array(
-          'OM:OT:Sprungoperator:Vortext:Equ-Vorzeichen-Minus-Eins-a' => array( headline_text => 'OT.Sprung.6'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Sprungoperator:Vortext:Equ-c-Minus-Eins-a-ist-c' => array( headline_text => 'OT.Sprung.7'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Sprungoperator:Vortext:Equ-Vorzeichen-Minus-Eins-a' => array( headline_text => 'OT.SpruO.6'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Sprungoperator:Vortext:Equ-c-Minus-Eins-a-ist-c' => array( headline_text => 'OT.SpruO.7'/* , headline_text_short => 'XXX' */),
                    
         'OM:OT:Sprungoperator:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Sprungoperator:Neutrale-Elemente:Equ-Minus-Eins-Einbettung' => array( headline_text => 'OT.Sprung.NE.8'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Sprungoperator:Neutrale-Elemente:Equ-Minus-Eins-Einbettung' => array( headline_text => 'OT.SpruO.NE.8'/* , headline_text_short => 'XXX' */),
       ),
     ),
     'OM:OT:Zaehloperator' => array(
@@ -117,19 +143,6 @@
           'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Nachzeichen-Null-OP' => array( headline_text => 'OT.Zähl.NE.13'/* , headline_text_short => 'XXX' */),
           'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht' => array( headline_text => 'OT.Zähl.NE.15'/* , headline_text_short => 'XXX' */),
           'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert' => array( headline_text => 'OT.Zähl.NE.18'/* , headline_text_short => 'XXX' */),
-      ),
-    ),
-    'OM:OT:Literatur' => array(
-      url_abs => 'http://www.nsosp.org/de/Operialtheorie/Literatur.php',
-      url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Literatur.php',
-      titel => 'Literatur - Operialtheorie - Deutsch',
-      description => 'Literatur zur ›Operialtheorie‹.',
-      keywords => '',
-      text_titel_h1 => 'Literatur',
-      text_titel_short => 'Literatur',
-      text_undertitel_h2 => 'und Informationen',
-      text_titel_discr_h3 => '',
-      jump_ary => array(
       ),
     ),
     'OM:OT:Vorwort' => array(
