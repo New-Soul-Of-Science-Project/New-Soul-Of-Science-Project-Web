@@ -106,6 +106,22 @@
       jump_ary => array(
       ),
     ),
+    'OM:OT:Modulo-Operatoren' => array(
+      url_abs => 'http://www.nsosp.org/de/Operialtheorie/Zaehl-Modulo-Operator-Modulo-Operator-Imaginaere-Operatoren.php',
+      url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Zaehl-Modulo-Operator-Modulo-Operator-Imaginaere-Operatoren.php',
+      titel => 'Modulo-Operatoren – Zähl-Modulo-Operator, Modulo-Operator, Imaginäre-Operatoren - Operialtheorie - Deutsch',
+      description => '\\name[undertitle]{OM:OT:Modulo-Operatoren}. – \\name[description]{OM:OT:Modulo-Operatoren}.',
+      keywords => '',
+      text_titel_h1 => 'Modulo-Operatoren – Zähl-Modulo-Operator, Modulo-Operator, Imaginäre-Operatoren',
+      text_titel_short => 'Modulo-Operatoren',
+      text_undertitel_h2 => 'Sind die imaginären Operatoren die Rotationsoperatoren?',
+      text_titel_discr_h3 => 'Die imaginären Operatoren könnten, nach dem Prinzip des Djet-Neheh-Dualismus, das Zählen als Basis mit Modulo in Verbindung bringen',
+      jump_ary => array(
+          'OM:OT:Modulo-Operatoren:Vortext:Equ-Operial-i-Absolut' => array( headline_text => 'OT.ModO.1'/* , headline_text_short => 'XXX' */),
+
+        'OM:OT:Modulo-Operatoren:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'XXX' */),
+      ),
+    ),
     'OM:OT:Sprungoperator' => array(
       url_abs => 'http://www.nsosp.org/de/Operialtheorie/Sprungoperator-Quantensprungoperator-Minus-Eins-Operator.php',
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Sprungoperator-Quantensprungoperator-Minus-Eins-Operator.php',
@@ -122,20 +138,6 @@
                    
         'OM:OT:Sprungoperator:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'XXX' */),
           'OM:OT:Sprungoperator:Neutrale-Elemente:Equ-Minus-Eins-Einbettung' => array( headline_text => 'OT.SpruO.NE.8'/* , headline_text_short => 'XXX' */),
-      ),
-    ),
-    'OM:OT:Modulo-Operatoren' => array(
-      url_abs => 'http://www.nsosp.org/de/Operialtheorie/Zaehl-Modulo-Operator-Modulo-Operator-Imaginaere-Operatoren.php',
-      url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Zaehl-Modulo-Operator-Modulo-Operator-Imaginaere-Operatoren.php',
-      titel => 'Modulo-Operatoren – Zähl-Modulo-Operator, Modulo-Operator, Imaginäre-Operatoren - Operialtheorie - Deutsch',
-      description => '\\name[undertitle]{OM:OT:Modulo-Operatoren}. – \\name[description]{OM:OT:Modulo-Operatoren}.',
-      keywords => '',
-      text_titel_h1 => 'Modulo-Operatoren – Zähl-Modulo-Operator, Modulo-Operator, Imaginäre-Operatoren',
-      text_titel_short => 'Modulo-Operatoren',
-      text_undertitel_h2 => 'Sind die imaginären Operatoren die Rotationsoperatoren?',
-      text_titel_discr_h3 => 'Die imaginären Operatoren könnten, nach dem Prinzip des Djet-Neheh-Dualismus, das Zählen als Basis mit Modulo in Verbindung bringen',
-      jump_ary => array(
-        'OM:OT:Modulo-Operatoren:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'XXX' */),
       ),
     ),
     'OM:OT:Zaehloperator' => array(

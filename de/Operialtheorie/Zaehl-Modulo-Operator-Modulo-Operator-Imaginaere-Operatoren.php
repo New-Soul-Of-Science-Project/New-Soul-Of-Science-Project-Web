@@ -19,46 +19,100 @@
                       
                   array( 'text', array( text => array(
                     'Eine Frage, die für mich im Raum steht, ist,'."\n".
-                    'ob auch imaginäre Zahlen als Operatoren eine sinnvolle Bedeutung haben oder haben können.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'ob auch imaginäre Zahlen als Operatoren eine sinnvolle Bedeutung haben oder haben können.'."\n",
+                      'In mir kam das Gefühl auf, dass es mir aufgrund meiner langjährigen umfangreichen und tief gehenden Beschäftigung'."\n".
+                    'mit den Operatoren sowie mit den Themen Zählen und Zeit, sowohl aus \\jump{OM:FrQFT:FirstPrinciples}{theoretischer} als ebenso aus'."\n".
+                    '\\jump{OM:NPT:Home}{naturphilosophischer Sicht}, möglich sein könnte, auf diese Frage nun eine Antwort zu finden.'."\n".
+                    'Oder zumindest fundierte Vermutungen dazu anzustellen.'."\n",
+                      'Nach einiger Überlegung war klar, dass meine Intuition auf einen Zusammenhang mit dem \\jump{OM:FrQFT:FirstPrinciples}{Djet-Neheh-Dualismus}'."\n".
+                    'hinwies.'."\n".
+                    'In ihm finden wir ein dualistisch orthogonales, dynamisches Naturprinzip, dass uns im Grunde überall begegnet, egal ob'."\n".
+                    'Mathematik, Physik, Biologie, Medizin/Heilkunde und so weiter.'."\n".
+                    'Seine beiden orthogonalen, zeitähnlichen Struktur-Aspekte sind ihre historische Gradlinigkeit und ihre Wiederholung.'."\n".
+                    'In Bezug auf die Arithmetik steckt ihre Gradlinigkeit im immerwährenden Zählen, während ihre Wiederholung'."\n".
+                    'in der Teilbarkeit in gleich große Teile als eine Art von Schwingung zu erkennen ist.'."\n",
+                      'In Bezug auf das Zählen, als die Basis aller hier betrachteten Operatoren, erschien mir eine'."\n".
+                    'Helixspiralform allerdings als nicht ganz passend.'."\n".
+                    'So kam mir nach einiger Zeit die Eingebung, es könnte sich um eine Form des Modulo-Operators handeln.'."\n".
+                    'Wie ich im Folgenden darlegen werden erscheint dies als sehr plausibel.'."\n",
+                      'Demnach haben wir es in der parallelen, imaginären Operator-Hierarchie mit dem Zähl-Modulo-Operator'."\n".
+                    'in der nullten Hierarchieebene, entsprechend dem Zähloperator, und mit dem echten Modulo-Operator'."\n".
+                    'in der ersten Hierarchieebene, entsprechend der Addition, zu tun.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Konstanzoperator:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Vortext:XXX', text =>
                                            
-                'Was könnten die imaginären Operator sein?', subline =>
+                'Die imaginären Operatoren \\term{i} und \\term{i + 1} als Modulo-Operatoren', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Angenommen der nullte imaginäre Operator \\term{i + 0} ist folgendermaßen definiert, nach Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Absolut}:'."\n".
+                    'Angenommen der nullte imaginäre Operator \\term{i}, also quasi \\term{i + 0}, sei'."\n".
+                    'folgendermaßen definiert:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\\\\'."\n",
+                      'Sei wegen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  a *o( x + 1 *o) b  :=  \underset{(\forall n \in \mathbb{N})[0 \le n < b]}{\huge{\circledcirc}} \;\; *o( x *o) a  }',
                                                /* label_name => 'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut', */label_text => '\\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Absolut}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \underset{(\forall n \in \mathbb{N})[0 \le n < b]}{\huge{\circledcirc}} \;\; *o( i *o) a  =  a *o( i + 1 *o) b  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'hier im Speziellen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \underset{(\forall n \in \mathbb{N})[0 \le n < b]}{\huge{\circledcirc}} \;\; *o( i *o) a  =  a *o( i + 1 *o) b  }',
+                                               label_name => 'OM:OT:Modulo-Operatoren:Vortext:Equ-Operial-i-Absolut', label_text => '\\name{OM:OT:Modulo-Operatoren:Vortext:Equ-Operial-i-Absolut}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'und das beispielhaft verdeutlichte, neu eingeführte Modulo-Zählen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *o( i *o) a  :=  1 \mod a  }'),
                       array( display => 'on',  latex => '{  *o( i *o) a *o( i *o) a  :=  2 \mod a  }'),
                       array( display => 'on',  latex => '{  *o( i *o) a *o( i *o) a *o( i *o) a  :=  3 \mod a  }'),
-                      array( display => 'on',  latex => '{  \underset{(\forall n \in \mathbb{N})[0 \le n < b]}{\huge{\circledcirc}} \;\; *o( i *o) a  :=  b \mod a  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'wird verallgemeinert folgendermaßen definiert'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \underset{(\forall n \in \mathbb{N})[0 \le n < b]}{\huge{\circledcirc}} \;\; *o( i *o) a  :=  b \mod a  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'dann können wir nach Formel \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Operial-i-Absolut} auch sagen, dass'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  a *o( i + 1 *o) b  =  b \mod a  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'und nebenbei erwähnt im Besonderen mit – wie in der Gruppen- oder Ringtheorie –\\color{*Bearb}{(Verweis)}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  a *o( i + 1 *o) 0  =  0 \mod a  =  0  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'gilt.'."\n".
+                      'Für das Modulo-Zählen gehen wir von folgender Definition aus'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  c *o( i *o) a  :=  (c + 1) \mod a  }'),
                     ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'die sich damit plausibel zusammenfügen soll, wie im folgenden zu zeigen ist.'."\n".
+                      '\\\\ \\\\'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                     'Am Beispiel der \\term{2} zeigen wir, dass die Formeln OT.ModO.6 und OT.ModO.8 plausibel zusammen passen:'."\n".
                     ''))),
@@ -112,9 +166,9 @@
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *o( -2 *o) a  =  a  }',
-                                               label_name => 'OM:OT:Konstanzoperator:Vortext:Equ-Vorzeichen-Minus-Zwei-a', label_text => '\\name{OM:OT:Konstanzoperator:Vortext:Equ-Vorzeichen-Minus-Zwei-a}', label_incr => true),
+                                               label_name => 'OM:OT:Modulo-Operatoren:Vortext:Equ-Vorzeichen-Minus-Zwei-a', label_text => '\\name{OM:OT:Modulo-Operatoren:Vortext:Equ-Vorzeichen-Minus-Zwei-a}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  c *o( -2 *o) a  =  c  }',
-                                               label_name => 'OM:OT:Konstanzoperator:Vortext:Equ-c-Minus-Zwei-a-ist-c', label_text => '\\name{OM:OT:Konstanzoperator:Vortext:Equ-c-Minus-Zwei-a-ist-c}', label_incr => true),
+                                               label_name => 'OM:OT:Modulo-Operatoren:Vortext:Equ-c-Minus-Zwei-a-ist-c', label_text => '\\name{OM:OT:Modulo-Operatoren:Vortext:Equ-c-Minus-Zwei-a-ist-c}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Wir sehen:'."\n".
@@ -130,7 +184,7 @@
                     'Auf die philosophische und auch physikalische Bedeutung, kommen wir im weiteren Verlauf'."\n".
                     'noch zu sprechen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Konstanzoperator:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Vortext:XXX', text =>
                                            
                 'Der Beginn des Zählens', subline =>
                   'Wie kommen wir von den kleinen, neutralen Operatoren zum Zählen?')),
@@ -147,7 +201,7 @@
                   array( 'text', array( text => array(
                     'Ohne diesen ersten Funken des Lichts, scheinbar aus dem Nichts, tut sich nichts!'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Konstanzoperator:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Vortext:XXX', text =>
                                            
                 'XXX')),
                   array( 'text', array( text => array(
@@ -160,7 +214,7 @@
                     ''))),
                     
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:OT:Konstanzoperator:Neutrale-Elemente'),
+                      array(  jump_name => 'OM:OT:Modulo-Operatoren:Neutrale-Elemente'),
                     )),
                 )
           ); ?>
@@ -174,7 +228,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:OT:Konstanzoperator', type => 'back'),
+                      array(  jump_name => 'OM:OT:Modulo-Operatoren', type => 'back'),
                     )),
                   
                   array( 'text', array( text => array(
@@ -185,7 +239,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Neutrale-Elemente:XXX', text =>
                                            
                 'Neutrale Elemente des Zähl-Modulo-Operators', subline =>
                   '')),
@@ -212,7 +266,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formel \\jumpname{OM:OT:Konstanzoperator:Vortext:Equ-c-Minus-Zwei-a-ist-c} –'."\n".
+                      'wegen – Formel \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-c-Minus-Zwei-a-ist-c} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -245,7 +299,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formel \\jumpname{OM:OT:Konstanzoperator:Vortext:Equ-c-Minus-Zwei-a-ist-c} –'."\n".
+                      'wegen – Formel \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-c-Minus-Zwei-a-ist-c} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -293,7 +347,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wegen – Formeln \\jumpname{OM:OT:Konstanzoperator:Vortext:Equ-Vorzeichen-Minus-Zwei-a} und \\jumpname{OM:OT:Konstanzoperator:Vortext:Equ-c-Minus-Zwei-a-ist-c} –'."\n".
+                      'wegen – Formeln \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Vorzeichen-Minus-Zwei-a} und \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-c-Minus-Zwei-a-ist-c} –'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -330,7 +384,7 @@
                     'mit dem Vakuum der Physik, sehen wir, dass sie völlig neutral und die Konstanz erhaltend erscheint.'."\n".
                     'Denn das Hier-und-Jetzt unterscheidet sich von seiner Historie und in seiner Zukunft nicht.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Neutrale-Elemente:XXX', text =>
                                            
                 'Neutrale Elemente des Modulo-Operators', subline =>
                   '')),
