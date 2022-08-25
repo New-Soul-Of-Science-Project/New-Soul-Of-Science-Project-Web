@@ -68,6 +68,7 @@
                       nSOSp_f_tableOfContents_elementAry( 'OM:OT:Zaehloperator'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:OT:Sprungoperator'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:OT:Konstanzoperator'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:OT:Modulo-Operatoren'),
                     ))),
                       
                   array( 'normal',

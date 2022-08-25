@@ -3,12 +3,13 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 16.07.2021, 12:00h
+  // #: Stand: 24.08.2021, 18:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
-  //           20220716:  >:  "MathJax":  Substitute LaTeX Macros "rROpera" with "rOpera", "lLOpera" with "lOpera".
-  //                      >:  "MathJax":  Replace in LaTeX Macros "lROpera": "langle" with "lfloor", "rLOpera": "rangle" with "rfloor".
+  //           20220815:  >:  "MathJax":  New LaTeX macro "mod".
+  //           20220716:  >:  "MathJax":  Substitute LaTeX macros "rROpera" with "rOpera", "lLOpera" with "lOpera".
+  //                      >:  "MathJax":  Replace in LaTeX macros "lROpera": "langle" with "lfloor", "rLOpera": "rangle" with "rfloor".
   //           20220711:  +:  "$Sc_g_equation_replace_ary":  '*r(' -> '^{\lROpera' and '*r)' -> '\rROpera}' are new.
   //                      +:  "MathJax":  Add Macros "lROpera", "rROpera".
   //                      +:  "$Sc_g_equation_replace_ary":  '*l(' -> '^{\lLOpera' and '*l)' -> '\rLOpera}' are new.
@@ -199,14 +200,11 @@
     echo '            rrangle: "\\\\rangle \\\\mspace{-3.5mu} \\\\rangle",'."\n";
     echo '            lOpera: "\\\\langle \\\\mspace{-2.2mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-1.0mu}",'."\n";
     echo '            rOpera: "\\\\mspace{-1.0mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-2.4mu} \\\\rangle \\\\mspace{2.0mu}",'."\n";
-    // echo '            lROpera: "\\\\langle \\\\mspace{-2.2mu} \\\\mspace{1.5mu}",'."\n";
     echo '            lROpera: "\\\\lfloor \\\\mspace{.0mu}",'."\n";
-    // echo '            rROpera: "\\\\mspace{-1.0mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-2.5mu} \\\\raise .908ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-2.4mu} \\\\rangle \\\\mspace{2.0mu}",'."\n";
     echo '            rROpera: "\\\\rOpera",'."\n";
-    // echo '            lLOpera: "\\\\langle \\\\mspace{-2.2mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-2.5mu} \\\\raise .908ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-1.0mu}",'."\n";
     echo '            lLOpera: "\\\\lOpera",'."\n";
-    // echo '            rLOpera: "\\\\mspace{-0.4mu} \\\\rangle \\\\mspace{2.0mu}",'."\n";
     echo '            rLOpera: "\\\\mspace{-0.4mu} \\\\rfloor \\\\mspace{2.0mu}",'."\n";
+    echo '            mod: "\\\\; mod \\\\;",'."\n";
     echo '            lowZero: "\\\\raise -.3ex 0",'."\n";
     echo '            updownarrows: "\\\\uparrow\\\\!\\\\downarrow",'."\n";
     echo '            MDo: "\\\\mathrm{\\\\downarrow}",'."\n";
