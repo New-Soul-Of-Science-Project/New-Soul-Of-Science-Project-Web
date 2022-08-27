@@ -49,7 +49,7 @@
                     ''))),
                   array( 'text', array( text => array(
                     '\\\\'."\n",
-                      'Sei wegen'."\n".
+                      'Sei wegen Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Absolut}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -71,13 +71,16 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *o( i *o) a  :=  1 \mod a  }'),
-                      array( display => 'on',  latex => '{  *o( i *o) a *o( i *o) a  :=  2 \mod a  }'),
-                      array( display => 'on',  latex => '{  *o( i *o) a *o( i *o) a *o( i *o) a  :=  3 \mod a  }'),
+                      array( display => 'on',  latex => '{  *o( i *o) a  :=  (0 + 1) \mod a  }',
+                                               label_name => 'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen-Beispiel-1', label_text => '\\name{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen-Beispiel-1}', label_incr => true),
+                      array( display => 'on',  latex => '{  *( *o( i *o) a *) *o( i *o) a  :=  (1 + 1) \mod a  }'),
+                      array( display => 'on',  latex => '{  *( *( *o( i *o) a *) *o( i *o) a *) *o( i *o) a  :=  (2 + 1) \mod a  }',
+                                               label_name => 'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen-Beispiel-3', label_text => '\\name{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen-Beispiel-3}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'wird verallgemeinert folgendermaßen definiert'."\n".
+                      'wird mit der niederen Verkettung nach Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-niedere-Verkettung} folgendermaßen'."\n",
+                      'verallgemeinert definiert'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -89,107 +92,234 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a *o( i + 1 *o) b  =  b \mod a  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a *o( i + 1 *o) b  =  b \mod a  }',
+                                               label_name => 'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo', label_text => '\\name{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'und nebenbei erwähnt im Besonderen mit – wie in der Gruppen- oder Ringtheorie –\\color{*Bearb}{(Verweis)}'."\n".
+                      'und nebenbei erwähnt im Besonderen mit – wie in der Gruppen-'."\n",
+                      'oder Ringtheorie –\\color{*Bearb}{(Verweis)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  a *o( i + 1 *o) 0  =  0 \mod a  =  0  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  0 *o( i + 1 *o) b  =  b \mod 0  =  b  }'),
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
                       'gilt.'."\n".
-                      'Für das Modulo-Zählen gehen wir von folgender Definition aus'."\n".
+                      'Für das Modulo-Zählen gehen wir, durch Verallgemeinerung der Beispiele'."\n",
+                      'der Formeln \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen-Beispiel-1} bis'."\n".
+                      '\\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen-Beispiel-3}, von der Definition'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  c *o( i *o) a  :=  (c + 1) \mod a  }'),
+                      array( display => 'on',  latex => '{  c *o( i *o) a  :=  (c + 1) \mod a  }',
+                                               label_name => 'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen', label_text => '\\name{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'die sich damit plausibel zusammenfügen soll, wie im folgenden zu zeigen ist.'."\n".
+                      'aus, die sich mit dem vorhergehenden plausibel zusammenfügen soll,'."\n",
+                      'wie im folgenden zu zeigen ist.'."\n".
                       '\\\\ \\\\'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Am Beispiel der \\term{2} zeigen wir, dass die Formeln OT.ModO.6 und OT.ModO.8 plausibel zusammen passen:'."\n".
+                    'Am Beispiel der Formel \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen-Beispiel-3},'."\n".
+                    'mit \\term{a = 2}, zeigen wir, dass die Formeln \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo}'."\n".
+                    'und \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen} plausibel zusammen passen'."\n".
+                    'und bekommen auf diese Weise ein Gefühl dafür, wie das funktioniert:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\\\\'."\n",
+                      'Durch Einsetzen von \\term{2} für \\term{a} in die Formel \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen-Beispiel-3} erhalten wir'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *o( i *o) 2 *o( i *o) 2 *o( i *o) 2  =  3 \mod 2  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( *o( i *o) 2 *) *o( i *o) 2 *) *o( i *o) 2  =  3 \mod 2  }'),
+                      array( display => 'on',  latex => '{  *( *( *o( i *o) 2 *) *o( i *o) 2 *) *o( i *o) 2  =  3 \mod 2  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'in der durch Klammersetzung die niedere Verkettung verdeutlicht ist.'."\n".
+                      'Durch'."\n",
+                      'Anwendung des Modulo-Zählens aus Formel \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen-Beispiel-1}'."\n".
+                      'kommen wir zu'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( *( 1 \mod 2 *) *o( i *o) 2 *) *o( i *o) 2  =  3 \mod 2  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 *o( i *o) 2 *) *o( i *o) 2  =  3 \mod 2  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'und durch Anwendung des Modulo-Zählens aus Formel \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen} zu'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( (1 + 1) \mod 2 *) *o( i *o) 2  =  3 \mod 2  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( 2 \mod 2 *) *o( i *o) 2  =  3 \mod 2  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  0 *o( i *o) 2  =  3 \mod 2  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  (0 + 1) \mod 2  =  3 \mod 2  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  1 \mod 2  =  3 \mod 2  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  1  =  1  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Allgemein muss wegen Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv} und durch die Formeln OT.ModO.6 und OT.ModO.8 ausgedrückt gelten:'."\n".
+                    ''."\n",
+                      'und durch deren abermalige Anwendung abschließend weiter zu'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  (0 + 1) \mod 2  =  3 \mod 2  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  1 \mod 2  =  3 \mod 2  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  1  =  1  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'was am Beispiel zu zeigen war.'."\n".
+                      '\\\\ \\\\'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Im Allgemein muss wegen Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv} und durch die Formeln \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo}'."\n".
+                    'und \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen} ausgedrückt gelten:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\\\\'."\n",
+                      'Nehmen wir Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( a *o( x + 1 *o) b *) *o( x *o) a  :=  a *o( x + 1 *o) *( b + 1 *)  \;\; ,  }',
+                                               /* label_name => 'OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv', */label_text => '\\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'setzen für \term{x} den Operator \\term{i} ein'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( a *o( i + 1 *o) b *) *o( i *o) a  :=  a *o( i + 1 *o) *( b + 1 *)  }'),
-                      array( display => 'on',  latex => '{  c *o( i *o) a  :=  (c + 1) \mod a  }'),
-                      array( display => 'on',  latex => '{  a *o( i + 1 *o) b  =  b \mod a  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'und ziehen auf beiden Seiten von \\term{b} Einen ab'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( a *o( i + 1 *o) *( b - 1 *) *) *o( i *o) a  =  a *o( i + 1 *o) b  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'dann können wir den ersten Teil des linken Terms mit \\term{c} substituieren'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  c  =  a *o( i + 1 *o) *( b - 1 *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( b - 1 *) \mod a  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( a *o( i + 1 *o) *( b - 1 *) *) *o( i *o) a  =  *( c + 1 *) \mod a  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( a *o( i + 1 *o) *( b - 1 *) *) *o( i *o) a  =  *( *( *( b - 1 *) \mod a *) + 1 *) \mod a  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a *o( i + 1 *o) b  =  *( *( *( b - 1 *) \mod a *) + 1 *) \mod a  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  b \mod a  =  b \mod a  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c *o( i *o) a  =  a *o( i + 1 *o) b  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Was zu zeigen war.'."\n",
-                      'XXX Interessant ist nun auch noch die Funktion des Minus-Zwei-Operators.'."\n".
-                    'Er muss zum Beispiel die folgende Formel erfüllen:'."\n".
+                    ''."\n",
+                      'deren rechte Seite nach Formel \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo} gleich dem Modulo ist:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *o( i *o) a *o( i *o) a  =  a *o( i + 1 *o) 2  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *o( -2 *o) a *) *o( -2 *o) a  =  a  }'),
-                      array( display => 'on',  latex => '{  *o( -2 *o) a *o( -2 *o) a *o( -2 *o) a  =  a *o( -1 *o) 3  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( *o( -2 *o) a *) *o( -2 *o) a *) *o( -2 *o) a  =  a  }'),
-                      array( display => 'on',  latex => '{  *( a *o( -1 *o) b *) *o( -2 *o) a  :=  a *o( -1 *o) *( b + 1 *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c *o( i *o) a  =  b \mod a  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Durch die Klammerung haben wir noch einmal deutlich gemacht, in welcher Reihenfolge die Operatoren abzuarbeiten sind.'."\n",
-                      'Der Minus-Zwei-Operator, auf ein beliebiges \\term{a} angewandt, ändert an \\term{a} nie etwas;'."\n".
-                    'weder als Vorzeichen, noch als Operator zwischen Zahlen.'."\n".
-                    'Das bedeutet dann, wenn \\term{c} das Ergebnis aller vorherigen Operationen ist:'."\n".
+                    ''."\n",
+                      'Es gilt aber auch Formel \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *o( -2 *o) a  =  a  }',
-                                               label_name => 'OM:OT:Modulo-Operatoren:Vortext:Equ-Vorzeichen-Minus-Zwei-a', label_text => '\\name{OM:OT:Modulo-Operatoren:Vortext:Equ-Vorzeichen-Minus-Zwei-a}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  c *o( -2 *o) a  =  c  }',
-                                               label_name => 'OM:OT:Modulo-Operatoren:Vortext:Equ-c-Minus-Zwei-a-ist-c', label_text => '\\name{OM:OT:Modulo-Operatoren:Vortext:Equ-c-Minus-Zwei-a-ist-c}', label_incr => true),
+                      array( display => 'on',  latex => '{  c *o( i *o) a  :=  (c + 1) \mod a  \;\; ,  }',
+                                               /* label_name => 'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen', */label_text => '\\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir sehen:'."\n".
+                    ''."\n",
+                      'deren linke Seite nun durch den gerade gefundenen Modulo ersetz werden kann'."\n".
                     ''))),
-                      
-                  array( 'text', array( Shape  => 'italic', text => array(
-                      'Ist der Minus-Zwei-Operator ist völlig neutral.'."\n".
-                      'Damit sind alle noch kleineren Operatoren auch neutral.'."\n".
-                    ''))),
-                      
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  b \mod a  =  (c + 1) \mod a  }'),
+                    ))),
                   array( 'text', array( text => array(
-                    'Damit ähnelt er dem Minus-Eins-Operator, ist ihm aber nicht in jedem Fall gleich.'."\n".
-                    'Auf die philosophische und auch physikalische Bedeutung, kommen wir im weiteren Verlauf'."\n".
-                    'noch zu sprechen.'."\n".
+                    ''."\n",
+                      'und auf deren rechten Seite für \\term{c} wieder der vorherige Substituent eingesetzt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  b \mod a  =  *( *( a *o( i + 1 *o) *( b - 1 *) *) + 1 *) \mod a  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'und dann ebenfalls durch Modulo ersetzt werden kann:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  b \mod a  =  ( ( ( b - 1 ) \mod a ) + 1 ) \mod a  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'Weil sowohl nach der Subtraktion von Eins als auch nach der anschließenden'."\n",
+                      'Addition von Eins der selbe Modulo angewandt wird, kann der innere Modulo'."\n",
+                      'weggelassen werden'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  b \mod a  =  ( b - 1 + 1 ) \mod a  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  b \mod a  =  b \mod a  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'was zu zeigen war.'."\n".
+                      '\\\\ \\\\'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Wir sehen, dass der Zähl-Modulo-Operator und der Modulo-Operator als aufeinander'."\n".
+                    'folgende hierarchische Operatoren plausibel zusammen passen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Vortext:XXX', text =>
                                            
-                'Der Beginn des Zählens', subline =>
-                  'Wie kommen wir von den kleinen, neutralen Operatoren zum Zählen?')),
+                'Der Zusammenhang beider Modulos')),
                   array( 'text', array( text => array(
-                    'Wenn der Minus-Zwei-Operator und alle kleineren demnach nun völlig neutral sind, wie fängt das Zählen'."\n".
+                    'Interessant ist, dass der Zähl-Modulo-Operator und der Modulo-Operator über den Modulo zu vergleichen sind:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '\\\\'."\n",
+                      'Für den Zähl-Modulo- und den Modulo-Operator haben wir'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  c *o( i *o) a  :=  (c + 1) \mod a  }',
+                                               /* label_name => 'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen', */label_text => '\\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen}', label_incr => false),
+                      array( display => 'on',  latex => '{  a *o( i + 1 *o) b  =  b \mod a  }',
+                                               /* label_name => 'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo', */label_text => '\\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'wo wir aus letzterer Formel durch die Substitution von \\term{b} mit \\term{c + 1} die rechte'."\n",
+                      'Seite der ersten gewinnen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a *o( i + 1 *o) (c + 1)  =  (c + 1) \mod a  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'So können wir jetzt beide Operatoren gleichsetzen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  c *o( i *o) a  =  a *o( i + 1 *o) (c + 1)  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    ''."\n",
+                      'was wir erreichen wollten.'."\n".
+                      '\\\\ \\\\'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'XXX.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Vortext:XXX', text =>
+                                           
+                'XXX Der Beginn des Zählens', subline =>
+                  'XXX Wie kommen wir von den kleinen, neutralen Operatoren zum Zählen?')),
+                  array( 'text', array( text => array(
+                    'XXX Wenn der Minus-Zwei-Operator und alle kleineren demnach nun völlig neutral sind, wie fängt das Zählen'."\n".
                     'dann an?'."\n",
                       'Von den kleinen, neutralen Operatoren her gedacht bleibt uns nichts anderes übrig, als einen von ihren'."\n".
                     'Vorzeichen als das erste Zählen zu definieren:'."\n".
@@ -199,7 +329,7 @@
                       array( display => 'on',  latex => '{  *o( -1 *o) a  :=  a + 1  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Ohne diesen ersten Funken des Lichts, scheinbar aus dem Nichts, tut sich nichts!'."\n".
+                    'XXX Ohne diesen ersten Funken des Lichts, scheinbar aus dem Nichts, tut sich nichts!'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Vortext:XXX', text =>
                                            

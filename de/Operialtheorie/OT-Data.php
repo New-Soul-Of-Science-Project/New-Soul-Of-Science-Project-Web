@@ -60,6 +60,7 @@
           'OM:OT:Einleitung:Vortext:Equ-Operator-3-ist-Potenz' => array( headline_text => 'OT.Ein.5'/* , headline_text_short => 'XXX' */),
           'OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv' => array( headline_text => 'OT.Ein.6'/* , headline_text_short => 'XXX' */),
           'OM:OT:Einleitung:Vortext:Equ-Tetration-Beispiel' => array( headline_text => 'OT.Ein.9'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Einleitung:Vortext:Equ-niedere-Verkettung' => array( headline_text => 'OT.Ein.14'/* , headline_text_short => 'XXX' */),
           'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut' => array( headline_text => 'OT.Ein.15'/* , headline_text_short => 'XXX' */),
                    
         'OM:OT:Einleitung:Inverse-Operatoren' => array( headline_text => 'Inverse Operatoren'/* , headline_text_short => 'XXX' */),
@@ -118,6 +119,10 @@
       text_titel_discr_h3 => 'Die imaginären Operatoren könnten, nach dem Prinzip des Djet-Neheh-Dualismus, das Zählen als Basis mit Modulo in Verbindung bringen',
       jump_ary => array(
           'OM:OT:Modulo-Operatoren:Vortext:Equ-Operial-i-Absolut' => array( headline_text => 'OT.ModO.1'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen-Beispiel-1' => array( headline_text => 'OT.ModO.2'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen-Beispiel-3' => array( headline_text => 'OT.ModO.4'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo' => array( headline_text => 'OT.ModO.6'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen' => array( headline_text => 'OT.ModO.8'/* , headline_text_short => 'XXX' */),
 
         'OM:OT:Modulo-Operatoren:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'XXX' */),
       ),
