@@ -30,14 +30,14 @@
                     'Mathematik, Physik, Biologie, Medizin/Heilkunde und so weiter.'."\n".
                     'Seine beiden orthogonalen, zeitähnlichen Struktur-Aspekte sind ihre historische Gradlinigkeit und ihre Wiederholung.'."\n".
                     'In Bezug auf die Arithmetik steckt ihre Gradlinigkeit im immerwährenden Zählen, während ihre Wiederholung'."\n".
-                    'in der Teilbarkeit in gleich große Teile als eine Art von Schwingung zu erkennen ist.'."\n",
+                    'in der Teilbarkeit in beliebig große gleiche Teile und dem übrig bleibenden Rest als eine Art von Schwingung zu erkennen ist.'."\n",
                       'In Bezug auf das Zählen, als die Basis aller hier betrachteten Operatoren, erschien mir eine'."\n".
                     'Helixspiralform allerdings als nicht ganz passend.'."\n".
                     'So kam mir nach einiger Zeit die Eingebung, es könnte sich um eine Form des Modulo-Operators handeln.'."\n".
-                    'Wie ich im Folgenden darlegen werden erscheint dies als sehr plausibel.'."\n",
-                      'Demnach haben wir es in der parallelen, imaginären Operator-Hierarchie mit dem Zähl-Modulo-Operator'."\n".
-                    'in der nullten Hierarchieebene, entsprechend dem Zähloperator, und mit dem echten Modulo-Operator'."\n".
-                    'in der ersten Hierarchieebene, entsprechend der Addition, zu tun.'."\n".
+                    'Wie ich im Folgenden darlegen werde, erscheint dies als sehr plausibel.'."\n",
+                      'Demnach haben wir es in der zu den ganzen Zahlen parallelen, imaginären Operator-Hierarchie mit dem neuen Zähl-Modulo-Operator'."\n".
+                    'in der nullten Hierarchieebene, parallel zum Zähloperator, und mit dem echten Modulo-Operator'."\n".
+                    'in der ersten Hierarchieebene, parallel zur Addition, zu tun.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Vortext:XXX', text =>
                                            
@@ -304,7 +304,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  c *o( i *o) a  =  a *o( i + 1 *o) (c + 1)  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c *o( i *o) a  =  a *o( i + 1 *o) (c + 1)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a *o( i + 1 *o) c  =  (c - 1) *o( i *o) a  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
@@ -312,35 +313,33 @@
                       '\\\\ \\\\'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'XXX.'."\n".
+                    'Dieser Zusammenhang und seine Bedeutung sollten weiter untersucht werden.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Vortext:XXX', text =>
                                            
-                'XXX Der Beginn des Zählens', subline =>
-                  'XXX Wie kommen wir von den kleinen, neutralen Operatoren zum Zählen?')),
+                'Die orthogonale Ergänzung des Zählens', subline =>
+                  'Das Naturprinzip des Djet-Neheh-Dualismus im Pärchen des Zähloperators und des Zähl-Modulo-Operators')),
                   array( 'text', array( text => array(
-                    'XXX Wenn der Minus-Zwei-Operator und alle kleineren demnach nun völlig neutral sind, wie fängt das Zählen'."\n".
-                    'dann an?'."\n",
-                      'Von den kleinen, neutralen Operatoren her gedacht bleibt uns nichts anderes übrig, als einen von ihren'."\n".
-                    'Vorzeichen als das erste Zählen zu definieren:'."\n".
+                    'Das Pärchen aus Zähloperator \\term{0} und Zähl-Modulo-Operator \\term{i} lässt erkennen,'."\n".
+                    'wenn sie parallel im prozesshaften, zeitlichen Sinne wiederholt angewendet werden'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *o( -1 *o) a  :=  a + 1  }'),
+                      array( display => 'on',  latex => '{  *o( 0 *o) a *o( 0 *o) a *o( 0 *o) a *o( 0 *o) a *o( 0 *o) a *o( 0 *o) a *o( 0 *o) a *o( 0 *o) a \cdots =  a *o( 0 + 1 *o) b  }'),
+                      array( display => 'on',  latex => '{  *o( i *o) a *o( i *o) a *o( i *o) a *o( i *o) a *o( i *o) a *o( i *o) a *o( i *o) a *o( i *o) a \cdots =  a *o( i + 1 *o) b  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX Ohne diesen ersten Funken des Lichts, scheinbar aus dem Nichts, tut sich nichts!'."\n".
+                    'und am Beispiel der \\term{3} verdeutlicht'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Vortext:XXX', text =>
-                                           
-                'XXX')),
+                  array( 'equations',
+                    array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *o( 0 *o) 3 *o( 0 *o) 3 *o( 0 *o) 3 *o( 0 *o) 3 *o( 0 *o) 3 *o( 0 *o) 3 *o( 0 *o) 3 *o( 0 *o) 3 \cdots =  3 *o( 0 + 1 *o) b  }'),
+                      array( display => 'on',  latex => '{  (3), 4, 5, 6, 7, 8, 9, 10, 11, \cdots  }'),
+                      array( display => 'on',  latex => '{  *o( i *o) 3 *o( i *o) 3 *o( i *o) 3 *o( i *o) 3 *o( i *o) 3 *o( i *o) 3 *o( i *o) 3 *o( i *o) 3 \cdots =  3 *o( i + 1 *o) b  }'),
+                      array( display => 'on',  latex => '{  (0), 1, 2, 0, 1, 2, 0, 1, 2, \cdots  }'),
+                    ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'wie parallel zum Zählen Schwingungen ablaufen.'."\n".
                     ''))),
                     
                   array( 'jumplist', array(
@@ -374,145 +373,10 @@
                 'Neutrale Elemente des Zähl-Modulo-Operators', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX Die links- und rechtsseitigen neutralen Elemente des Minus-Zwei-Operators weisen'."\n".
-                    'noch andere Besonderheiten auf, die andere Operatoren nicht besitzen.'."\n".
-                    'Das verleiht dem Minus-Zwei-Operator auch eine außergewöhnliche naturphilosophische Bedeutung,'."\n".
-                    'aber eine etwas andere, als dem Null- oder dem Minus-Eins-Operator.'."\n",
-                      'Da beim Minus-Zwei-Operator im Allgemeinen die Operanden nicht vertauschbar sind'."\n".
-                    'unterscheidet sich das linksseitige neutrale Element der Operation vom rechtsseitigen.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\\condb{Linksseitig neutrales Element} \\\\'."\n".
-                    'Um das linksseitig neutrale Element des Minus-Zwei-Operators zu bestimmen, setzen wir den Minus-Zwei-Operator'."\n".
-                    'in den Formalismus \\jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-x-linksneutrales-Element} ein:'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    '\\\\'."\n",
-                      'Sei'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'OT.ModO.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a  =  {n_{links}} *o( -2 *o) a  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    ''."\n",
-                      'wegen – Formel \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-c-Minus-Zwei-a-ist-c} –'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'OT.ModO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  {n_{links}} *o( -2 *o) a  =  n_{links}  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    ''."\n",
-                      'folgt'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'OT.ModO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  n_{links}  =  a  *]  .  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Wir sehen, dass das linksseitig neutrale Element \\term{n_{links}} identisch mit'."\n".
-                    'dem ursprünglichen Element \\term{a} ist, genau, wie beim Minus-Eins-Operator.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\\condb{Rechtsseitig neutrales Element} \\\\'."\n".
-                    'Um das rechtsseitig neutrale Element des Minus-Zwei-Operators zu bestimmen, setzen wir den Minus-Zwei-Operator'."\n".
-                    'in den Formalismus \\jumpname{OM:OT:Einleitung:Neutrale-Elemente:Equ-x-rechtsneutrales-Element} ein:'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    '\\\\'."\n",
-                      'Sei'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'OT.ModO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a  =  a *o( -2 *o) n_{rechts}  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    ''."\n",
-                      'wegen – Formel \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-c-Minus-Zwei-a-ist-c} –'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'OT.ModO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a *o( -2 *o) n_{rechts}  =  a  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    ''."\n",
-                      'folgt'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'OT.ModO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  a  =  a  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n_{rechts} *) *( \forall a \in \mathbb{R}  *) *[  a  =  a  *]  .  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Wir können erkennen, dass alle Elemente \\term{n_{rechts}} rechtsseitig neutrale Elemente des Minus-Zwei-Operators sind,'."\n".
-                    'weil alle \\term{n_{rechts}} unser \\term{a} unverändert lassen, genau, wie beim Minus-Eins-Operator.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\\condb{Einbettung in neutrale Elemente} \\\\'."\n".
-                    'Die Einbettung der des Minus-Eins-Operators.'."\n",
-                      'Halten wir also unser jetziges \\term{a} fest, dann sieht seine Einbettung in'."\n".
-                    'neutrale Elemente wie folgt aus – \\term{*a*} mit Sternchen markiert, damit wir es besser finden:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'OT.ModO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *( \forall c_{1},c_{2},\cdots \in \mathbb{R} *) *[  a  =  \cdots \, *o( -2 *o) a *o( -2 *o) a \\\ \qquad\qquad\qquad\qquad\qquad\;\;\;\, *o( -2 *o) {*a*} \\\ \qquad\qquad\qquad\qquad\qquad\;\;\;\, *o( -2 *o) {c_{1}} *o( -2 *o) {c_{2}} *o( -2 *o) \cdots  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Auf der rechten Seite von \\term{a} existiert immer das gleiche neutrales Element \\term{a}'."\n".
-                    'und auf der linken Seite existieren beliebige neutrale Elemente, was auch sehr bemerkenswert ist.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\\condb{Äquivalenter Vorgänger} \\\\'."\n".
-                    'Der Minus-Zwei-Operator ist völlig neutral und wir haben daher auch kein Zählen.'."\n".
-                    'Bezüglich des Vorzeichens gilt für den äquivalenten Vorgänger:'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    '\\\\'."\n",
-                      'Sei'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'OT.ModO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  *o( -2 *o) a  =   v *o( -2 *o) a  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    ''."\n",
-                      'wegen – Formeln \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-Vorzeichen-Minus-Zwei-a} und \\jumpname{OM:OT:Modulo-Operatoren:Vortext:Equ-c-Minus-Zwei-a-ist-c} –'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'OT.ModO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  *o( -2 *o) a  =  a  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  c *o( -2 *o) a  =  c  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    ''."\n",
-                      'folgt'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'OT.ModO.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  v  =  a  *]  .  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Hier ist es nicht einmal ein Unterschied, ob bei der Einbettung das Vorzeichen von \\term{a} mit erhalten werden soll oder nicht.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\\condb{Naturphilosophische Interpretation} \\\\'."\n".
-                    'Beim Minus-Zwei-Operator herrscht aus naturphilosophisch zeitlicher Perspektive völlige Konstanz:'."\n".
-                    ''))),
-
-                  array( 'text', array( Shape  => 'italic', text => array(
-                      'Wie beim Minus-Eins-Operator hat Gegenwart unserer Zahl \\term{a} eine Konstanz, in die sie vorne eingebettet ist, aus der sie folgt.'."\n".
-                      'Eine Zukunft hat sie, in der alles Einfluss nehmen kann, dies aber ihre Konstanz nicht verändert.'."\n".
-                      'Die Konstanz ihrer Zukunft wird durch den Prozess des Erhaltens, durch das Anhängen eines weiteren dieses Operators mit einem beliebigen Operanden,'."\n".
-                      'in Form einer beliebigen Zahl, nicht verändert.'."\n",
-                        'Als Vorzeichen, vor dem Nichts existiert, wird aus dem Nichts Konstanz kreiert.'."\n".
-                    ''))),
-                      
-                  array( 'text', array( text => array(
-                    'XXX Unser Minus-Zwei-Operator hat also ebenfalls eine bedeutende zeitliche Qualität durch sein Vorzeichen der Konstanz.'."\n",
-                      'Interpretieren wir die Minus-Zwei-Operator-Einbettung naturphilosophisch und vergleichen sie, wie die anderen Einbettungen,'."\n".
-                    'mit dem Vakuum der Physik, sehen wir, dass sie völlig neutral und die Konstanz erhaltend erscheint.'."\n".
-                    'Denn das Hier-und-Jetzt unterscheidet sich von seiner Historie und in seiner Zukunft nicht.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Neutrale-Elemente:XXX', text =>
                                            
