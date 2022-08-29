@@ -31,6 +31,7 @@
     'OM:OT:Home' => array(
       url_abs => 'http://www.nsosp.org/de/Operialtheorie/index.php',
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/index.php',
+      pdfArchiveFolder => 'http://www.nsosp.org/download/PDF-Archiv/de/Operialtheorie/index/',
       titel => 'Operialtheorie (OT) – Deutsch',
       description => 'Zählen und dann weiter … ?',
       description => '\\name[undertitle]{OM:OT:Home}. — \\name[description]{OM:OT:Home}.',
@@ -47,6 +48,7 @@
     'OM:OT:Einleitung' => array(
       url_abs => 'http://www.nsosp.org/de/Operialtheorie/Einleitung.php',
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Einleitung.php',
+      pdfArchiveFolder => 'http://www.nsosp.org/download/PDF-Archiv/de/Operialtheorie/Einleitung/',
       titel => 'Einleitung - Operialtheorie - Deutsch',
       description => 'Einleitung zur ›Operialtheorie‹.',
       keywords => '',
@@ -110,6 +112,7 @@
     'OM:OT:Modulo-Operatoren' => array(
       url_abs => 'http://www.nsosp.org/de/Operialtheorie/Zaehl-Modulo-Operator-Modulo-Operator-Imaginaere-Operatoren.php',
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Zaehl-Modulo-Operator-Modulo-Operator-Imaginaere-Operatoren.php',
+      pdfArchiveFolder => 'http://www.nsosp.org/download/PDF-Archiv/de/Operialtheorie/Zaehl-Modulo-Operator-Modulo-Operator-Imaginaere-Operatoren/',
       titel => 'Modulo-Operatoren – Zähl-Modulo-Operator, Modulo-Operator, Imaginäre-Operatoren - Operialtheorie - Deutsch',
       description => '\\name[undertitle]{OM:OT:Modulo-Operatoren}. – \\name[description]{OM:OT:Modulo-Operatoren}.',
       keywords => '',
@@ -148,6 +151,7 @@
     'OM:OT:Zaehloperator' => array(
       url_abs => 'http://www.nsosp.org/de/Operialtheorie/Zaehloperator-Inkrement-Operator-Null-Operator.php',
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Zaehloperator-Inkrement-Operator-Null-Operator.php',
+      pdfArchiveFolder => 'http://www.nsosp.org/download/PDF-Archiv/de/Operialtheorie/Zaehloperator-Inkrement-Operator-Null-Operator/',
       titel => 'Zähloperator – Inkrement-Operator oder Null-Operator - Operialtheorie - Deutsch',
       description => '\\name[undertitle]{OM:OT:Zaehloperator}.\\hidden{ – \\name[description]{OM:OT:Zaehloperator}.}',
       keywords => '',
