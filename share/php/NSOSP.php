@@ -1237,7 +1237,7 @@
                     'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-c-licht-rot-aus-c-spin' => array( headline_text => 'Lep.Mod.28'),
                     'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-licht-rot-aus-r-spin' => array( headline_text => 'Lep.Mod.35'),
                     'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-spin-aus-Masse-LG' => array( headline_text => 'Lep.Mod.39'),
-                    'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-wq-rot-aus-r-spin' => array( headline_text => 'Lep.Mod.58'),
+                    'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-wq-rot-aus-r-spin' => array( headline_text => 'Lep.Mod.56'),
                   'OM:FrQFT:Lepton:Elektrische-Ladung' => array( headline_text => 'Elektrische Ladung', headline_text_short => 'Elektrische Ladung'),
                     'OM:FrQFT:Lepton:Elektrisch-geladenes-Lepton' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                   'OM:FrQFT:Lepton:Schwache-Ladung' => array( headline_text => 'Schwache Ladung', headline_text_short => 'Schwache Ladung'),
@@ -1681,9 +1681,10 @@
                     'OM:FrQFT:ZeitAlterungFrequenz:Equ-DeltaPhiSehrKlein' => array( headline_text => 'ZAF.Wq.2'),
                     'OM:FrQFT:ZeitAlterungFrequenz:Equ-AlphaNaeherFrequenzaender' => array( headline_text => 'ZAF.Wq.5'),
                     'OM:FrQFT:ZeitAlterungFrequenz:Equ-FrequenzAusWQGeschwKos-2' => array( headline_text => '\\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-FrequenzAusWQGeschwKos}'),
-                    'OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwKonst-1' => array( headline_text => 'ZAF.Wq.29'),
                     'OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschw-3' => array( headline_text => '\\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschw}'),
-                             
+                    'OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwKonst-1' => array( headline_text => 'ZAF.Wq.29'),
+                    'OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwRot' => array( headline_text => 'ZAF.Wq.31'),
+
                   'OM:FrQFT:ZeitAlterungFrequenz:Dichtestruktur' => array( headline_text => 'Dichtestruktur von Raum und Zeit', headline_text_short => 'Dichtestruktur von Raum und Zeit'),
                     'OM:FrQFT:ZeitAlterungFrequenz:Dichtestruktur:RelatWQDicht' => array( headline_text => 'Relative Wirkungsquanten-String-Dichte oder -String-Energiedichte des Kosmos', headline_text_short => 'Relative Wirkungsquanten-String-Dichte des Kosmos'),
                       'OM:FrQFT:ZeitAlterungFrequenz:Equ-RelatWQSDicht' => array( headline_text => 'ZAF.RWD.9'),

@@ -683,7 +683,8 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  {_{x,p}v_{wq,rot}}  =  \sqrt{ {v_{wq}^2} - {_{x,p}c^{2}} }  }'),
                       array( display => 'off', latex => '{  \Rightarrow  {_{0,p}v_{wq,rot}}  =  \sqrt{ (\sqrt{ 2 } \cdot {_{\lowZero}c})^{2} - {_{\lowZero}c}^{2} }  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  {_{0,p}v_{wq,rot}}  =  {_{\lowZero}c}  }',
-                                               latex_if_visible => '{  \Leftrightarrow  {_{0,p}v_{wq,rot}}  =  {_{\lowZero}c}  }'),
+                                               latex_if_visible => '{  \Leftrightarrow  {_{0,p}v_{wq,rot}}  =  {_{\lowZero}c}  }',
+                                               label_name => 'OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwRot', label_text => '\\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwRot}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Danach stellt die Lichtgeschwindigkeitskonstante in der neuen Struktur des \\jump{*Bewegungsraum-Herlei}{Bewegungsraums}, also des \\jump{OM:FrQFT:Vakuum}{Vakuums}, in dreierlei Hinsicht etwas besonderes dar.'."\n".
