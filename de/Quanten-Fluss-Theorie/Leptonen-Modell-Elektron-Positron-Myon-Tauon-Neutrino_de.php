@@ -90,7 +90,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • Zeit und Alterung:  >
+		    	<!  • Lösung des ›Problems der Zeit‹  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Zeit-und-Alterung',
               'Vereinheitlichung der Physik durch ein strukturelles Verständnis der Zeit', 'Sc_f_Paragraph',
@@ -466,11 +466,48 @@
                                     latex_if_visible => '{  \Leftrightarrow  r_{wq,rot}  =  \sqrt{ \frac{ 2 }{ n_{wel} } } \cdot r_{spin}  }',
                                                label_name => 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-wq-rot-aus-r-spin', label_text => '\\name{OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-wq-rot-aus-r-spin}', label_incr => true),
                       array( display => 'off', latex => '{  \Leftrightarrow  r_{wq,rot}  =  \sqrt{ \frac{ 2 }{ n_{wel} } } \cdot \sqrt{ \frac{ n_{wel} }{ 2 } } \cdot \frac{ \hbar }{ m_{ele} \cdot {_{\lowZero}c} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  r_{wq,rot}  =  \frac{ \hbar }{ m_{ele} \cdot {_{\lowZero}c} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  r_{wq,rot}  =  \frac{ \hbar }{ m_{ele} \cdot {_{\lowZero}c} }  }',
+                                               label_name => 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-wq-rot-aus-hbar-m-ele-c', label_text => '\\name{OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-wq-rot-aus-hbar-m-ele-c}', label_incr => true),
+                    ))),
+
+                  array( 'fade-in-area', array( Display => 'hideContent', Title =>
+                'Träge Masse und starke Wechselwirkung …', TitleVis =>
+                'Träge Masse und starke Wechselwirkung:', ParagraphList => array(
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:XXX', text =>
+                                           
+                'Träge Masse', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Die Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-wq-rot-aus-hbar-m-ele-c} lässt sich zur Masse eines Elementarteilchens \\term{m_{ele}} umformen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  m_{ele}  =  \frac{ \hbar }{ r_{wq,rot} \cdot {_{\lowZero}c} }  }'),
                     ))),
                   array( 'text', array( text => array(
+                    'Dieser Zusammenhang hat die Fähigkeit, die \\jump{OM:FrQFT:Lepton:Masse-Impuls-Energie}{träge Masse eines Elementarteilchens}'."\n".
+                    'zu erklären, wie Albrecht Giese zeigt.\\footnote{Vgl. \\cite{Giese:TheOriginOfMass2019}, Kap. 1 Summery, S. 1 — Kap. 2 The Fundamental Mechanism of Inertial Mass, S. 2-6.}'."\n".
+                    'Dies kann sie unter der Bedingung, dass eine \\jump{OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung}{Form von Sombrero-Potenzial eine Struktur des Elementarteilchens stabil hält}.'."\n",
+                      'In der fraktalen Quanten-Fluss-Theorie hält genau ein solches Potenzial die dynamische Struktur'."\n".
+                    'der \\jump{OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten}{Elementarteilchen-Strings in der Form}.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:XXX', text =>
+                                           
+                'Starke Wechselwirkung', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Um die träge Masse aus diesem Zusammenhang zu berechnen benutzt Albrecht Giese die Feldkonstante der'."\n".
+                    '\\jump{OM:FrQFT:Quantenchromodynamik}{starken Wechselwirkung}\\color{*Bearb}{(Verweis auf Wikipedia)}.'."\n".
+                    'Dies ist sehr bemerkenswert, weil die String-Spannung in der fraktalen Quanten-Fluss-Theorie'."\n".
+                    'für die starke Wechselwirkung steht.'."\n".
+                    'Das passt plausibel zusammen.'."\n".
+                    ''))),
+                    ))),
+
+                  array( 'text', array( text => array(
                     'Für den Wirkungsquanten-Spin um die Lichtbahn ergibt sich dann unter Zuhilfenahme der Formeln \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwRot} sowie \\jumpname{OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-wq-rot-aus-r-spin},'."\n".
-                    'dann \\jumpname{OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-LG-aus-Spin-Geschw} und gefolgt von \\jumpname{OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-Spin-Lep}:'."\n"))),
+                    'dann \\jumpname{OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-LG-aus-Spin-Geschw} und gefolgt von \\jumpname{OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-Spin-Lep}:'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  s_{lep,wq}  =  r_{wq,rot} \cdot m_{lep} \cdot v_{wq,rot}  }'),
@@ -485,7 +522,8 @@
                     ))),
                   array( 'text', array( text => array(
                     'Bemerkenswerterweise ist der Wirkungsquanten-Spin um die Licht-Bahn tatsächlich der von Photonen, nämlich \\latexmath{\hbar}.'."\n".
-                    'Wir haben es demnach also in ihrer Mechanik mit einer vom Funktionsprinzip her wirklichen Lichtuhr zu tun.'."\n"))),
+                    'Wir haben es demnach also in ihrer Mechanik mit einer vom Funktionsprinzip her wirklichen Lichtuhr zu tun.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:XXX', text =>
                                            
                 'Abschätzung der Richtigkeit der Näherung der Mittelwerte', subline =>
@@ -499,7 +537,8 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
-                    'XXX'."\n"))),
+                    'XXX'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  c_{licht,rot}  }'),
@@ -514,7 +553,8 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
-                    'XXX'."\n"))),
+                    'XXX'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:XXX', text =>
                                            
                 'Berechnung des magnetischen Moments', subline =>
@@ -528,7 +568,8 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
-                    'XXX'."\n"))),
+                    'XXX'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:XXX', text =>
                                            
                 'XXX', subline =>
@@ -542,7 +583,8 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
-                    'XXX'."\n"))),
+                    'XXX'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
@@ -552,7 +594,8 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
-                    'XXX'."\n"))),
+                    'XXX'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Lepton:Elektrische-Ladung'),

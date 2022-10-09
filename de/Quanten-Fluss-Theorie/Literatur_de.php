@@ -55,6 +55,7 @@
                                           'Giese:RelaContra2009',
                                           'Giese:TheAppMystOfElectron2012',
                                           'Giese:TheOrigOfGravity2011',
+                                          'Giese:TheOriginOfMass2019',
                                           'Giese:TheStructureOfMatter:2004',
                                           'Giese:WhyTimeSlowing2009',
                                           'Giesel:LoopQuantengravitation2011',

@@ -173,6 +173,7 @@
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '• \\term{E = m⋅c^{2}}:',
                     '– Die Proportionalität von Energie und Masse ist eine direkte Schlussfolgerung der FrQFT, die sich aus der Annahme (Postulat bzw. Axiom) ergibt, dass Wirkungsquanten sowohl Energieeinheiten als auch Masseneinheiten sind (absolut nur auf der untersten Strukturebene des analysierten Modells)! Dies setzt ein konstantes Verhältnis voraus, welches nach unseren Beobachtungen das Quadrat der Lichtgeschwindigkeit \\term{c^{2}} der bekannten Formel \\term{E = m⋅c^{2}} ist.(Verweis auf Wikipedia: ›Äquivalenz von Masse und Energie‹, Überblick und Beispiele, Vernichtungsstrahlung. Dies ist keine relativistisch interpretierte Beobachtung, sondern eine quantenphysikalisch interpretierte!) Siehe auch \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{Herleitung der Lichtverlangsamung} (falls dort nicht entbehrlich geworden …).',
+                    '– Albrecht Giese erklärt es: \\cite{Giese:TheOriginOfMass2019}, Kap. 5 Mass Energy Equivalence, S. 6-7.',
                     ))),
                   array( 'text', array( text => array(
                     'Nach dem \\jump{OM:FrQFT:FirstPrinciples:Vortext:Vereinfachungsprinzip}{Vereinfachungsprinzip} haben wir es bei extremer Auflösung, in der Fraktalebene unterhalb der Photonen – der Lichtteilchen –,'."\n".
