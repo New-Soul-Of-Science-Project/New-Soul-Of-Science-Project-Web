@@ -486,8 +486,9 @@
                     ))),
                   array( 'text', array( text => array(
                     'Dieser Zusammenhang hat die Fähigkeit, die \\jump{OM:FrQFT:Lepton:Masse-Impuls-Energie}{träge Masse eines Elementarteilchens}'."\n".
-                    'zu erklären, wie Albrecht Giese zeigt.\\footnote{Vgl. \\cite{Giese:TheOriginOfMass2019}, Kap. 1 Summery, S. 1 — Kap. 2 The Fundamental Mechanism of Inertial Mass, S. 2-6.}'."\n".
-                    'Dies kann sie unter der Bedingung, dass eine \\jump{OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung}{Form von Sombrero-Potenzial eine Struktur des Elementarteilchens stabil hält}.'."\n",
+                    'zu erklären, wie Albrecht Giese zeigt.\\footnote{Vgl. \\cite{Giese:TheOriginOfMass2019}, Kap. 1 Summery, S. 1 — Kap. 2 The Fundamental Mechanism of Inertial Mass — Kap. 3 Quantitative Determination of the Mass of an Elementary Particle, S. 2–6.}'."\n".
+                    'Dies kann sie unter der Bedingung, dass eine \\jump{OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung}{Form von Sombrero-Potenzial eine Struktur des Elementarteilchens stabil hält},'."\n".
+                    'was wiederum sehr an den \hidden{\\jump{OM:FrQFT:Elementarteilchen:Higgs-Feld-Mechanismus-traege-Masse}{Higgs-Mechanismus}}\\jump{OM:FrQFT:Vakuum:Higgs-Feld-und-Higgs-Mechanismus}{Higgs-Mechanismus}\\footnote{\\const{FrQFT_g_footnote_text_HiggsMech}} erinnert.'."\n",
                       'In der fraktalen Quanten-Fluss-Theorie hält genau ein solches Potenzial die dynamische Struktur'."\n".
                     'der \\jump{OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten}{Elementarteilchen-Strings in der Form}.'."\n".
                     ''))),
@@ -497,9 +498,9 @@
                   '')),
                   array( 'text', array( text => array(
                     'Um die träge Masse aus diesem Zusammenhang zu berechnen benutzt Albrecht Giese die Feldkonstante der'."\n".
-                    '\\jump{OM:FrQFT:Quantenchromodynamik}{starken Wechselwirkung}\\color{*Bearb}{(Verweis auf Wikipedia)}.'."\n".
-                    'Dies ist sehr bemerkenswert, weil die String-Spannung in der fraktalen Quanten-Fluss-Theorie'."\n".
-                    'für die starke Wechselwirkung steht.'."\n".
+                    '\\jump{OM:FrQFT:Quantenchromodynamik}{starken Wechselwirkung}\\footnote{\\const{FrQFT_g_footnote_text_StarkeWW}}.\\footnote{Vgl. \\cite{Giese:TheOriginOfMass2019}, Kap. 3 Quantitative Determination of the Mass of an Elementary Particle, S. 3–6, hier S. 3.}'."\n".
+                    'Dies ist sehr bemerkenswert, weil die String-Spannung beziehungsweise das sogenannte \\jump{OM:FrQFT:Quantenchromodynamik:Confinement}{Confinement der Quarks und Gluonen}\\footnote{\\const{FrQFT_g_footnote_text_Confinement}}'."\n".
+                    'in der fraktalen Quanten-Fluss-Theorie der starken Wechselwirkung entspricht.'."\n".
                     'Das passt plausibel zusammen.'."\n".
                     ''))),
                     ))),
