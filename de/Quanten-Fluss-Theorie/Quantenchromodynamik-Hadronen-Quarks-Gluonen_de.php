@@ -183,7 +183,7 @@
                   array( 'text', array( text => array(
                     'Einfache Regelprozesse, die eine Struktur in einer bestimmten Ausdehnung stabilisieren, laufen in einem Potential von Spieler und Gegenspieler,'."\n".
                     'das die Form einer Sombrero-Hutkrempe hat (siehe \\color{*Bearb}{(Animation einfügen!)}).'."\n".
-                    'Im Higgs-Mechanismus oder Higgs-Feld spielt ein solches Sombrero-Potential eine zentrale Rolle.'."\n",
+                    'Im Higgs-Mechanismus\\footnote{\\const{FrQFT_g_footnote_text_HiggsMech}} oder Higgs-Feld spielt ein solches Sombrero-Potential eine zentrale Rolle.'."\n",
                       '\\color{*Entwick}{Ich nehme stark an, dass an dieser Stelle das Verständnis von Elementarteilchen als strukturelle Regelprozesse Brücken zwischen der Gravitation,'."\n".
                     'der Masse eines Elementarteilchens, der elektroschwachen Wechselwirkung, der Quantenchromodynamik und der Ausdehnung eines Elementarteilchens schlägt.}'."\n".
                     'Dies wird sich in der Quanten-Fluss-Theorie im Laufe der Zeit immer weiter herauskristallisieren.'."\n".

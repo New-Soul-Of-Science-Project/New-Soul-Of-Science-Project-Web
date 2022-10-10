@@ -72,7 +72,7 @@
                     'Nach der neuen \\jump{OM:FrQFT:Quantengravitation}{Quantengravitation} und der \\jump{OM:FrQFT:Gravitation:Variable-Vakuumenergie-und-Higgs-Feld-Dichte}{variablen Vakuumeinergie}'."\n".
                     'verdichtet sich nun die Vakuumenergie im Umfeld des Strings.'."\n".
                     'Und dieser Effekt ist proportional zur Masse des Strings und umso stärker, je dichter der betrachtete Ort im Raum dem String liegt.'."\n".
-                    'Dieses Phänomen wird auch als Higgs-Mechanismus bezeichnet:'."\n"),
+                    'Dieses Phänomen wird auch als Higgs-Mechanismus\\footnote{\\const{FrQFT_g_footnote_text_HiggsMech}} bezeichnet:'."\n"),
                   array( 'conclusion',
                         'In der Quanten-Fluss-Theorie ergibt sich der Higgs-Mechanismus auf natürliche Weise aus der Quantengravitation.'."\n".
                         'Er erzeugt durch Verdichtung und Anhaftung von Wirkungsquanten des Vakuums eine zusätzliche Masse des Elementarteilchen-Strings, die auch gravitativ wirkt.'."\n".

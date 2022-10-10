@@ -1099,7 +1099,7 @@
     
     /*$footnote_str = To_f_replace_str_ary( $footnote_str, $Sc_g_Text_replace_ary);
 
-    // #: How to handle regular expressions is dicribed here: "http://www.regular-expressions.info/tutorial.html", "http://www.regular-expressions.info/email.html", "http://de1.php.net/manual/de/regexp.reference.meta.php".
+    // #: How to handle regular expressions is described here: "http://www.regular-expressions.info/tutorial.html", "http://www.regular-expressions.info/email.html", "http://de1.php.net/manual/de/regexp.reference.meta.php".
     $footnote_str = preg_replace_callback( '/[0-9]-[0-9]/', create_function( '$match', 'return $match[0] = substr_replace( $match[0], "&mdash;", 1, 1);'), $footnote_str);
     $footnote_str = preg_replace_callback( '/\\\\cite\{[a-zA-Z0-9:-]+\}/', create_function( '$match', '$match[0] = ltrim( $match[0], "\\cite\{"); $match[0] = rtrim( $match[0], "\}"); return Sc_f_litera_cite_html( $match[0]);'), $footnote_str);*/
     //print_r( $footnote_str);

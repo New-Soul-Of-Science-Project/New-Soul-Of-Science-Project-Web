@@ -195,7 +195,7 @@
                     'Die Energiedichte eines \\jump{OM:FrQFT:Elementarteilchen}{Elementarteilchen-Strings} ist höher, als die der \\jump{*Elapsonen-Vakuum-Herlei}{Elapsonen des Vakuums}.'."\n".
                     'Eine Folge dafon ist die \\jump{OM:FrQFT:Quantengravitation}{Quantengravitation der Quanten-Fluss-Theorie}.'."\n".
                     'Dabei verdichten sich die Wirkungsquanten\\color{*Bearb}{(Link)}, also die Energie des Vakuums, im Umfeld des Elementarteilchens umso mehr, je näher das Vakuum dem Teilchen ist.'."\n".
-                    'Dieser Effekt wird in der Teilchenphysik auch als \\jump{OM:FrQFT:Vakuum:Higgs-Feld-und-Higgs-Mechanismus}{Higgs-Mechanismus} bezeichnet.'."\n",
+                    'Dieser Effekt wird in der Teilchenphysik auch als \\jump{OM:FrQFT:Vakuum:Higgs-Feld-und-Higgs-Mechanismus}{Higgs-Mechanismus}\\footnote{\\const{FrQFT_g_footnote_text_HiggsMech}} bezeichnet.'."\n",
                       'An dieser Stelle kommt der Higgs-Mechanismus in leicht abgewandelter Variante zur Wirkung:'."\n".
                     'Wie beim Higgs-Mechanismus der Quanten-Fluss-Theorie bekannt, entfalten die verdichten Wirkungsquanten im Umfeld des Elementarteilchens als Zunahme der Vakuumenergie'."\n".
                     'selber eine gravitative Wirkung.'."\n".

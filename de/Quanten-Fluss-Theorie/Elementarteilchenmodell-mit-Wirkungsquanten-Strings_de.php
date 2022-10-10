@@ -56,7 +56,7 @@
                     'Wirkungsquanten verhalten sich wie kleine Wellen. Ein Wirkungsquanten-String erscheint wie eine Anhäufung von Wellen in einem „Wellenmeer“, da auch das'."\n".
                     'Vakuum aus Wirkungsquanten besteht.'."\n".
                     'Das Wellenmeer entspricht folglich dem \\jump{OM:FrQFT:Elementarteilchen:Higgs-Feld-Mechanismus-traege-Masse}{Higgs-Feld} und die Anhäufung von Wirkungsquanten'."\n".
-                    'in und um einen String herum dem \\jump{OM:FrQFT:Elementarteilchen:Higgs-Feld-Mechanismus-traege-Masse}{Higgs-Mechanismus}, welcher'."\n".
+                    'in und um einen String herum dem \\jump{OM:FrQFT:Elementarteilchen:Higgs-Feld-Mechanismus-traege-Masse}{Higgs-Mechanismus}\\footnote{\\const{FrQFT_g_footnote_text_HiggsMech}}, welcher'."\n".
                     'die \\jump{OM:FrQFT:Elementarteilchen:Higgs-Feld-Mechanismus-traege-Masse}{träge Masse} hervorbringt. \\\\'."\n".
                     'Die Wirkungsquanten eines Elementarteilchen-Strings üben einen beugenden oder ablenkenden Einfluss auf ihre Umgebung aus und'."\n".
                     'reduzieren aufgrund ihrer Anhäufung die Lichtgeschwindigkeit in ihrem Umfeld.'."\n".

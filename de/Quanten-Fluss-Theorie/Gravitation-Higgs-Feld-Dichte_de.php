@@ -177,7 +177,7 @@
                       'Als Gegenspieler dieser inneren Anziehung sehe ich die Neigung der Wirkungsquanten, geradeaus fliegen zu wollen.'."\n".
                       'Wenn diese Vortstellung stimmt, dann handelt es sich um eine Art von Kräftegleichgewicht, wenn man hier von Kräften sprechen kann.'."\n"),
                 array( 'normal',
-                      'Die gravitative Wirkung der Vakuumenergie tritt in Bezug auf die Elementarteilchen als Higgs-Mechanismus\\color{*Bearb}{(Link, Verweis)} in Erscheinung.'."\n"),
+                      'Die gravitative Wirkung der Vakuumenergie tritt in Bezug auf die Elementarteilchen als Higgs-Mechanismus\\footnote{\\const{FrQFT_g_footnote_text_HiggsMech}} in Erscheinung.'."\n"),
                 array( 'normal',
                       'Unter anderen Umständen tritt die Gravitation des Vakuums ebenfalls in Erscheinung und wird als'."\n".
                       '\\jump{OM:FrQFT:Gravitation:Phaenomen-der-Dunkle-Materie-oder-MOND}{Phänomen der Dunklen Materie oder als modifizierte newtonsche Dynamik (MOND)} bezeichent.'."\n".
@@ -395,7 +395,7 @@
               array(
                 array( 'normal',
                       'Die Dichteveränderung des Vakuums und seines Higgs-Felds hat auch die Änderung der trägen und schweren Masse von Elementarteilchen im Gravitationsfeld zur Folge … \\\\ Die Vermutung, dass das Vakuum etwas mit der Massenträgheit zu tun hat wurde schon von Mordehai Milgrom geäußert.\\footnote{Vgl. \\cite{Milgrom:DunkMat2002}, S. 41.}'."\n".
-                      'Die Verdichtung der Wirkungsquanten um einen Wirkungsquanten-String mit Masse ist an den String gekoppelt (siehe \\jump{OM:FrQFT:NeuePhysik:Quantengravitation:HM-AEP}{Einleitung}). Dies entspricht dem Higgs-Mechanismus.'."\n"),
+                      'Die Verdichtung der Wirkungsquanten um einen Wirkungsquanten-String mit Masse ist an den String gekoppelt (siehe \\jump{OM:FrQFT:NeuePhysik:Quantengravitation:HM-AEP}{Einleitung}). Dies entspricht dem Higgs-Mechanismus\\footnote{\\const{FrQFT_g_footnote_text_HiggsMech}}.'."\n"),
                 array( 'normal',
                       '\\color{*Bearb}{In Arbeit …}'."\n"),
                 array( 'jumplist',

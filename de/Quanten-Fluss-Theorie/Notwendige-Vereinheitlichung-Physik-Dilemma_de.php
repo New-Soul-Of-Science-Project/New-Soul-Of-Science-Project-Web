@@ -240,7 +240,7 @@
                   array( 'normal',
                     '\\color{*Bearb}{(Den nachfolgenden Teil vielleicht eher zur neuen Physik und dahin von hier aus verweisen:)}'."\n"),
                   array( 'normal',
-                    'Eine neue \\jump{OM:FrQFT:Gravitation:Variable-Vakuumenergie-und-Higgs-Feld-Dichte}{Energiedichtevariation des Vakuums} in Form der Wirkungsquanten-Dichte im Raum entspricht dem Higgs-Mechanismus\\color{*Bearb}{(Verweis)}.'."\n".
+                    'Eine neue \\jump{OM:FrQFT:Gravitation:Variable-Vakuumenergie-und-Higgs-Feld-Dichte}{Energiedichtevariation des Vakuums} in Form der Wirkungsquanten-Dichte im Raum entspricht dem Higgs-Mechanismus\\footnote{\\const{FrQFT_g_footnote_text_HiggsMech}}.'."\n".
                     'Diese Dichtevariation ist mit dem Gravitationsfeld äquivalent und verbindet so den Higgs-Mechanismus, welcher ursächlich für seine träge Masse ist,'."\n".
                     'mit der Gravitation eines Elementarteilchens. \\\\'."\n".
                     'Der neue Ansatz stellt so über die Struktur des Vakuums Beziehungen zwischen grundlegenden Eigenschaften der Elementarteilchen her.'."\n"),

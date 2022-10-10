@@ -1863,7 +1863,7 @@
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NeuePhysik:Quantengravitation',
-              'Ein der populärwissenschaftlichen Analogie des Higgs-Mechanismus erstaunlich ähnliches Phänomen ist Teil der neuen Quantengravitation', 'Sc_f_Paragraph',
+              'Ein der populärwissenschaftlichen Analogie des Higgs-Mechanismus\\footnote{\\const{FrQFT_g_footnote_text_HiggsMech}} erstaunlich ähnliches Phänomen ist Teil der neuen Quantengravitation', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:NeuePhysik:Relativitaet', type => 'back'),

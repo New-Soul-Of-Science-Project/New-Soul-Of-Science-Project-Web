@@ -755,7 +755,7 @@
                     'Die Wirkungsquanten senden bei ihrer Bewegung im Elementarteilchen virtuelle Wirkungsquanten in den Raum aus.'."\n".
                     'Diese fungieren für das Umdeld als Störungswellen und führen zu einer engeren helixförmigen Spiralbahn der dortigen Wirkungsquanten und somit zu einer'."\n".
                     '\\jump{OM:FrQFT:ZeitAlterungFrequenz}{gravitativen Blauverschiebung} und \\jump{OM:FrQFT:ZeitAlterungFrequenz}{Alterungsverlangsamung}\\color{*Bearb}{(Begriff einführen)} der Elementarteilchen und des Vakuums.'."\n".
-                    'Damit steht die \\jump{OM:FrQFT:Quantengravitation}{neue Quantengravitation} mit dem Higgs-Mechanismus des Standardmodells der Teilchenphysik in direkter Beziehung.'."\n".
+                    'Damit steht die \\jump{OM:FrQFT:Quantengravitation}{neue Quantengravitation} mit dem Higgs-Mechanismus\\footnote{\\const{FrQFT_g_footnote_text_HiggsMech}} des Standardmodells der Teilchenphysik in direkter Beziehung.'."\n".
                     'Die Vermittlung der Gravitation mittels des Vakuums ist mit verschiedenen Eigenschaften des Vakuums verbunden:'."\n".
                     'Die variable Zeit des Vakuums verändert sich mit Veränderung der wirkenden Gravitation.'."\n".
                     'Ebenso ändert sich die Wirkungsquanten- beziehungsweise Energiedichte des Vakuums und damit seine innere Frequenz, die der gravitativen Rot-Blau-Verschiebung entspricht.'."\n".
