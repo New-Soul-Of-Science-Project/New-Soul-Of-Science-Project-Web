@@ -28,6 +28,10 @@
                     '• Eine Pille, Impfung oder ähnliches heilt einen nicht komplett, sie kann „nur“ bei der Selbstheilung helfen. Das ist allerdings auch nicht zu unterschätzen und kann ganz entscheidend sein. Dies gilt ebenso natürlich auch für jedes Kraut und alle anderen von außen zugeführten Dinge.',
                     '• Ohne unsere Selbstheilung, die auf den zentralen Aspekten des ›Spannungsspiels des Lebens‹ basiert, gibt es keine Heilung. Heilung kann also nicht delegiert, sondern nützlicherweise unterstützt werden.',
                     '• Die Förderung des guten Funktionierens all unserer eigenen biophysikalischen Regelprozesse und besonders unserer psychischen sowie physischen Lebenssituation sind hier entscheidend, weil sonst die Grundlage jeder Heilung marode ist oder fast ganz fehlt.',
+                    '\\bold{Heilung und der Heilsbegriff der Religionen}',
+                    '• Heilung erfahren bedeutet nicht heil zu sein und in einem Heilungsprozess dem Heiligen – der Heilung – zu begegnen. Daher hat die Begegnung mit dem Heiligen auch immer etwas Erschreckendes und Euphorisches, Beglückendes zugleich, da wir aus dem Unheil, kommen und dem Heiligen auf dem Weg von dort ins Verheißungsvolle begegnen. Das Übernatürliche, das Numinose, die Begegnung mit dem Heiligen. Heil im Sinne von Ganz. Dämonisch im Sinne von trennend, auseinandergeworfen, bedrohlich. (Vgl. \\jump[https://www.youtube.com/watch?v=FzGNRDY5hdk&t=1s]{}{Charles Fleischhauer - Geheimnisvolle Geschichte — Metaphysik der Angst - Lovecraft, Horror & Dämonen: Im Gespräch mit Bernhard Reicher}, ab Sek. 0:04:21.)',
+                    '– Das ergreifende und erschreckende der Heilung ist das für die Erfahrung notwendige Unheil, würde ich zu dem Gespräch ergänzen.',
+                    '• Daher ist die Heilung auch eng mit dem \\jump{OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche}{›Phönix aus der Asche‹} verwand oder gar gleichbedeutend mit ihm.',
                     ))),
                       
                   array( 'text', array( text => array(
