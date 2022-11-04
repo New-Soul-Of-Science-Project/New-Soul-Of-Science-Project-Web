@@ -102,34 +102,56 @@
 		    	<!  • Lösung des ›Problems der Zeit‹  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Zeit-und-Alterung',
-              'Vereinheitlichung der Physik durch ein strukturelles Verständnis der Zeit', 'Sc_f_Paragraph',
+              'Vereinheitlichung der Physik durch ein neues Verständnis der Zeit', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Lepton', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'hideContent', text => array(
-                    '\\bold{Ansatz}',
-                    '• Lichtuhr ist im Zentrum',
-                    '• Scheinbarer Widerspruch des ›Problems der Zeit‹ wird gelöst',
-                    ))),
-                      
                   array( 'text', array( text => array(
-                    'Das Modell der Quanten-Fluss-Theorie basiert auf einem neuen Verständnis der Zeit, welches entscheidend dazu beiträgt, die Physik zu vereinheitlichen.'."\n".
-                    'Es löst das \\jump{OM:FrQFT:NeuePhysik:Problem-der-Zeit}{›Problem der Zeit‹}\\footnote{Vgl. \\cite{Kiefer:WegZurQG2012}, S. 37.}'."\n".
-                    'indem es jede Form der Zeit als Veränderung und damit als bestimmten Aspekt von Bewegung versteht.\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 3.1 Grundannahmen zur Raumzeit-Struktur der Elementarteilchen, S. 36-41, hier Alterungspostulat, S. 38.}'."\n".
-                    'Im einfachsten Fall wird die konstante Geschwindigkeit der rot gefärbten Wirkungsquanten (siehe \\jumpname{OM:FrQFT:Lepton:Vortext:Ani-Lepton}) als alles bestimmender Zeitgeber'."\n".
-                    'angesehen; als Normaluhr, die überall im Raum gleich läuft.\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 4.1.1 Zeit, Alterung und Licht-Raumzeit-Geometrie, S. 51-56, hier S. 51-52.}'."\n"))),
+                    'Das Modell der Quanten-Fluss-Theorie basiert auf einem neuen, auf einem strukturellen Verständnis der Zeit,'."\n".
+                    'welches entscheidend dazu beiträgt, die Physik zu vereinheitlichen.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Zeit-und-Alterung:XXX', text =>
+                                           
+                'Denn die Frage ist, wie kann es sein, dass ein Elementarteilchen schneller schwingt, wenn seine Gravitationsuhr langsamer läuft, es langsamer altert?', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                    'Die damit verglichen langsamere Geschwindigkeit der Wirkungsquanten entlang der grünen Lichtbahn des Leptonen-Modells wird hingegen abgrenzend als Alterung bezeichnet.'."\n".
-                    'Sie entspricht der Lichtgeschwindigkeit im 3-dimensionalen Raum und somit der Zeit der Allgemeinen Relativitätstheorie.\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 4.1.1 Zeit, Alterung und Licht-Raumzeit-Geometrie, S. 51-56, hier S. 52.} \\\\'."\n".
+                    'Berücksichtigen wir nicht die Strukturen in einem System, so erscheint es, als sollten auch alle Schwingungen'."\n".
+                    'langsamer ablaufen, wenn die ihnen zugrundeliegende Zeit langsamer läuft.'."\n".
+                    'Betrachten wir diesen Zusammenhang im Modell der Quanten-Fluss-Theorie, so stellen wir fest, dass hier die'."\n".
+                    'Zeit der Allgemeinen Relativitätstheorie\\footnote{\\const{FrQFT_g_footnote_text_ART}} nicht die ganz direkte Grundlage'."\n".
+                    'genau dieser Schwingungen der Elementarteilchen ist.'."\n",
+                      'Der scheinbare Widerspruch des \\jump{OM:FrQFT:NeuePhysik:Problem-der-Zeit}{›Problems der Zeit‹}\\footnote{Vgl. \\cite{Kiefer:WegZurQG2012}, S. 37.},'."\n".
+                    'wonach höhere Gravitation zu langsamer laufender Zeit und gleichzeitig zu einer höheren De-Broglie-Frequenz'."\n".
+                    '– also einer schnelleren Schwingung – der Elementarteilchen führt,'."\n".
+                    'wird gelöst, indem ein fraktales, hierarchisches Verständnis der Zeit eingeführt und jede dieser Zeit-Ebenen'."\n".
+                    'als Veränderung und damit als bestimmter Aspekt von struktureller Bewegung verstanden wird.\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 3.1 Grundannahmen zur Raumzeit-Struktur der Elementarteilchen, S. 36-41, hier Alterungspostulat, S. 38.}'."\n",
+                      'Am Beispiel des Leptonen-Modells (siehe \\jumpname{OM:FrQFT:Lepton:Vortext:Ani-Lepton}) veranschaulicht,'."\n".
+                    'ist die konstante Geschwindigkeit der rot gefärbten Wirkungsquanten des Leptonen-Strings der alles bestimmende Zeitgeber,'."\n".
+                    'der so im einfachsten Fall dargestellten unterliegenden Zeit-Ebene.'."\n".
+                    'Die in diesem Modell vereinfachend als feinste Strukturebene angenommene'."\n".
+                    '\\jump{OM:FrQFT:ZeitAlterungFrequenz:Wirkungsquanten-Geschwindigkeit}{Bewegung der Wirkungsquanten} fungiert'."\n".
+                    'damit als Normaluhr, die überall im Raum gleich läuft.\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 4.1.1 Zeit, Alterung und Licht-Raumzeit-Geometrie, S. 51-56, hier S. 51-52.}'."\n",
+                      'Nach Albert Einsteins Allgemeiner Relativitätstheorie\\footnote{\\const{FrQFT_g_footnote_text_ART}} ist hingegen'."\n".
+                    'das ›Prinzip der Lichtuhr‹ für die zeitlichen Abläufe in einem Elementarteilchen grundlegend.'."\n".
+                    'Im Leptonen-Modell ist das ›Prinzip der Lichtuhr‹ durch die Parallelbewegung der Wirkungsquanten zur \\color{*LichtbahnGruen}{grünen} Lichtbahn'."\n".
+                    'realisiert, durch den Gang ihrer Helixspiralbewegung.'."\n".
+                    'Dieser Bewegungsanteil entlang der grünen Lichtbahn entspricht der Lichtgeschwindigkeit der Allgemeinen Relativitätstheorie im 3-dimensionalen Raum.\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 4.1.1 Zeit, Alterung und Licht-Raumzeit-Geometrie, S. 51-56, hier S. 52.}'."\n".
+                    'Abgrenzend zur Zeit-Ebene der Normaluhr wird diese Zeit-Ebene in der Quanten-Fluss-Theorie als \\jump{*Alterung-Implem}{Alterung} bezeichnet.'."\n".
                     'Die Alterung ist folglich ein anderer Aspekt der Bewegung und eine andere Form der Zeit, der mit der Gangweite der Wicklungen der Wirkungsquanten-Bahn um die'."\n".
-                    'Lichtbahn variiert.'."\n".
-                    'Umso schneller sich das Lepton im Raum bewegt, desto langsamer ist die Geschwindigkeit der Wirkungsquanten entlang der Lichtbahn. Entsprechend ist die Alterung des'."\n".
-                    'Leptons geringer und entspricht seiner Bewegungsuhr. \\\\'."\n".
-                    'Ähnliches gilt, wenn sich ein Lepton einem Gestirn mit großer Masse nähert.'."\n".
+                    'Lichtbahn variiert.'."\n",
+                      'Umso schneller sich das Lepton im Raum bewegt, desto langsamer ist die Geschwindigkeit der Wirkungsquanten entlang der Lichtbahn.'."\n".
+                    'Entsprechend ist die Alterung des Leptons bei Bewegung langsamer, wie wir es aus der Speziellen Relativitätstheorie\\footnote{\\const{FrQFT_g_footnote_text_SRT}} kennen. \\\\'."\n",
+                      'Ähnliches gilt, wenn sich ein Lepton einem Gestirn mit großer Masse nähert.'."\n".
                     'Seine Alterung läuft langsamer und die Bewegung der Wirkungsquanten entlang der Lichtbahn entspricht seiner Gravitationsuhr.'."\n".
-                    'Diese geht umso langsamer, je größer der \\jump{Gravitation}{Gravitationseinfluss} ist, welche das Lepton ausgesetzt ist.'."\n"))),
+                    'Diese geht umso langsamer, je größer der \\jump{Gravitation}{Gravitationseinfluss} ist, in dem sich das Lepton befindet.'."\n".
+                    'so wie wir es aus der Allgemeinen Relativitätstheorie kennen.'."\n",
+                      'Die De-Broglie-Frequenz eines Leptons, die für seine Energie steht, entspricht nun der Rotationsfrequenz'."\n".
+                    'des Wirkungsquanten-Strings um die \\color{*LichtbahnGruen}{grüne} Lichtbahn.'."\n".
+                    'Aufgrund der konstanten Wirkungsquanten-Geschwindigkeit und bei gleich bleibendem Rotationsradius muss eine'."\n".
+                    'niedrigere Lichtgeschwindigkeit im 3-dimensionalen Raum zu einem engeren Gang der Helixspiralbahn der Wirkungsquanten'."\n".
+                    'und damit, wie bei Licht-Photonen, zu einer höheren Rotationsfrequenz führen.'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Lepton:Naturphilosophie-der-Mechanik'),
