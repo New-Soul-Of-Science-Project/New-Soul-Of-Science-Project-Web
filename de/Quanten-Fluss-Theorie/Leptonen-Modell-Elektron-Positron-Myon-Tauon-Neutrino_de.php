@@ -59,8 +59,10 @@
                     'das Myon und das Tauon. Die ungeladenen Leptonen sind die entsprechenden \\jump{OM:FrQFT:Lepton:Neutrinos}{Neutrinos}. \\\\'."\n".
                     'In der hier beschriebenen Quanten-Fluss-Theorie bestehen alle Leptonen aus einem'."\n".
                     '\\jump{OM:FrQFT:Elementarteilchen}{Wirkungsquanten-String}\\footnote{\\const{FrQFT_g_footnote_text_WQString}},'."\n".
-                    'der in asymmetrischer Form mit drei Spins rotiert. Die folgende \\jumpname{OM:FrQFT:Lepton:Vortext:Ani-Lepton} und die \\jumpname{OM:FrQFT:Lepton:Elektrisch-geladenes-Lepton} veranschaulichen ein geladenes Lepton mit hypothetischen sechs'."\n".
-                    'wellenförmigen Phasen.'."\n"))),
+                    'der in asymmetrischer Form mit drei Spins rotiert. Die folgende \\jumpname{OM:FrQFT:Lepton:Vortext:Ani-Lepton}'."\n".
+                    'und die \\jumpname{OM:FrQFT:Lepton:Elektrisch-geladenes-Lepton} veranschaulichen ein geladenes Lepton mit hypothetischen acht'."\n".
+                    'wellenförmigen Phasen.'."\n".
+                    ''))),
 
                       // array( 'youtube',
                   //   array_merge( $FrQFT_g_youtube_ary_Lepton, array( name => 'OM:FrQFT:Lepton:Vortext:Ani-Lepton'))),
@@ -68,18 +70,25 @@
                     array_merge( $FrQFT_g_figure_ary_Lepton_highRes, array( name => 'OM:FrQFT:Lepton:Vortext:Ani-Lepton'))),
                       
                   array( 'text', array( text => array(
-                    'Wieviele Phasen das Lepton wirklich besitzt ist noch nicht geklärt.\\footnote[*Entwick]{\\color{*Entwick}{Eine genaue Herleitung der Phasenzahl wird gesucht. Hinweise darauf sind erbeten.}}'."\n".
+                    'Wieviele Phasen das Lepton wirklich besitzt ist noch nicht geklärt.\\footnote[*Entwick]{Acht Phasen oder Sternzacken werden erst einmal hypothetisch angenommen, weil dies die kleinste Anzahl ist, bei der sich im entfalteten Zustand der String innen nicht überschneidet. Neun Phasen sind naheliegend, weil sich dann die Anzahl durch drei teilen lässt, was zu den Drittelladungen des \\jump{OM:FrQFT:Quantenchromodynamik:Quarks}{Quarkmodells} passt, weil die Quarks als Eindrittel- oder Zweidrittel-Leptonen-Strings modelliert sind. \\color{*Entwick}{Eine genaue Herleitung der Phasenzahl wird gesucht. Hinweise darauf sind erbeten.}}'."\n".
                     'Wie man aus den in der Natur beobachteten'."\n".
                     '\\jump{OM:FrQFT:ElektroschwacheWW:Teilchenumwandlungen}{Teilchenumwandlungen durch die elektroschwache Wechselwirkung}'."\n".
                     'erkennen kann, besitzen alle Leptonen und \\jump{OM:FrQFT:ElektroschwacheWW:Quarks}{Quarks} die gleiche Phasenzahl. Diese ist mit einem neuen,'."\n".
-                    'inneren \\jump{OM:FrQFT:Lepton:Spins}{Spin} verknüpft, der einer globalen Erhaltung unterliegt.'."\n"))),
+                    'inneren \\jump{OM:FrQFT:Lepton:Spins}{Spin} verknüpft, der offenbar einer globalen Erhaltung unterliegt.'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                     'Die String-Struktur und deren Bewegung gibt alle Teilcheneigenschaften, wie \\jump{OM:FrQFT:Lepton:Elektrische-Ladung}{elektrische} sowie \\jump{OM:FrQFT:Lepton:Schwache-Ladung}{schwache Ladung}'."\n".
                     'und \\jump{OM:FrQFT:Lepton:Masse-Impuls-Energie}{Masse/Energie}, wider und ist sogar in der Lage die Einsteinschen Formeln der \\jump{OM:FrQFT:Gravitation}{Gravitation} durch die'."\n".
-                    'Einführung einer \\jump{OM:FrQFT:Lepton:Quantengravitation}{Quantengravitation} herzuleiten. \\\\'."\n".
-                    'Die Gestalt einer helixförmigen Doppelspirale für die String-Bewegung ergibt sich aus der Lösung des \\jump{OM:FrQFT:NeuePhysik:Problem-der-Zeit}{›Problems der Zeit‹}\\footnote{Vgl. \\cite{Kiefer:WegZurQG2012}, S. 37.}'."\n".
+                    'Einführung einer \\jump{OM:FrQFT:Lepton:Quantengravitation}{Quantengravitation} herzuleiten.'."\n",
+                      'Wie bei den \\jump{*Photonen-Herlei}{Photonen} besteht der String aus Wirkungsquanten, die mittels ihrer Wechselwirkungskegel – ein sich ausbreitendes Sombrero-Potenzial – miteinander'."\n".
+                    'verbunden sind.'."\n".
+                    'Die String-Spannung ist durch die \\jump{OM:FrQFT:Lepton:Berechnung-der-Mechanik:StarkeWechselwirkung}{starke Wechselwirkung} (\\jump{OM:FrQFT:Quantenchromodynamik}{Quantenchromodynamik})'."\n".
+                    'oder anders gesagt durch die starke Feldkonstante\\color{*Bearb}{(Verweise)} bestimmt.'."\n".
+                    'Auf diese Weise sind alle Grundkräfte der Physik involviert.'."\n",
+                      'Die Gestalt einer helixförmigen Doppelspirale für die String-Bewegung ergibt sich aus der Lösung des \\jump{OM:FrQFT:NeuePhysik:Problem-der-Zeit}{›Problems der Zeit‹}\\footnote{Vgl. \\cite{Kiefer:WegZurQG2012}, S. 37.}'."\n".
                     'in der Quanten-Fluss-Theorie durch die Differenzierung des heutigen Zeitbegriffs in die Begriffe \\jump{OM:FrQFT:Lepton:Zeit-und-Alterung}{Zeit und Alterung} sowie'."\n".
-                    'durch die experimentellen Beobachtungen, die einst in das heutige Standardmodell der Teilchenphysik mündeten.'."\n"))),
+                    'durch die experimentellen Beobachtungen, die einst in das heutige Standardmodell der Teilchenphysik mündeten.'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Lepton:Zeit-und-Alterung'),
@@ -240,24 +249,43 @@
                       
                   array( 'text', array( text => array(
                     'Die folgenden Formeln werden bei der Berechnung des Leptonen-Modells als grundsätzlich gültig angenommen:'."\n"))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Die allgemeine Wellenformel ist gegeben durch die Geschwindigkeit \\term{c},'."\n".
+                      'die Frequenz \\term{f} und die Wellenlänge \\term{λ} mit'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  c  =  f \cdot \lambda  }',
+                      array( display => 'on',  latex => '{  c  =  f \cdot \lambda  \;\;  .  }',
                                                label_name => 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-LG-aus-Frequenz-Lambda', label_text => '\\name{OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-LG-aus-Frequenz-Lambda}', label_incr => true),
-                      array( display => 'on',  latex => '{  E_{ele}  =  h \cdot f_{ele}  }',
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Die Energie \\term{E_{ele}} eines Elementarteilchens ist durch seine De-Broglie-'."\n".
+                      'Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}} \\term{f_{ele}} gegeben mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E_{ele}  =  h \cdot f_{ele}  \;\;  .  }',
                                                label_name => 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-EinsteinEnergieLichtQuant', label_text => '\\jump{OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant}{\\name{OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-EinsteinEnergieLichtQuant}}', label_incr => false),
-                      array( display => 'on',  latex => '{  E  =  m \cdot {_{\lowZero}c^{2}}  }',
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Die Energie-Masse-Äquivalenz\\footnote{\\const{FrQFT_g_footnote_text_AequivalMasseEnergie}} ist gegeben mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  E  =  m \cdot {_{\lowZero}c^{2}}  \;\;  .  }',
                                                label_name => 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-E-ele-aequi-zu-Masse', label_text => '\\jump{OM:FrQFT:FirstPrinciples:Vortext:Equ-E-ele-aequi-zu-Masse}{\\name{OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-E-ele-aequi-zu-Masse}}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Generell gehe ich davon aus, dass die De-Broglie-Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}} \\term{f} oder \\term{f_{ele}} eines Elementarteilchens'."\n".
+                    'Generell gehe ich davon aus, dass die De-Broglie-Frequenz \\term{f_{ele}} eines Elementarteilchens'."\n".
                     'eine Rotation oder Schwingung von einem bestimmten Zustand zum nächsten von diesem ununterscheidbaren ist.'."\n".
-                    'Das bedeutet, dass sich bei einem Schwingungsdurchgang mit der Spin-Rotationsgeschwindigkeit \\term{c} nicht unbedingt der gesamte String einmal in der Ebene des Haupt-Spins'."\n".
-                    'gedreht haben muss; die Wellenlänge \\term{λ} also nur einem Teil des Spin-Umfangs entspricht.'."\n",
-                      'In der \\jumpname{OM:FrQFT:Lepton:Vortext:Ani-Lepton} ist dementsprechend eine Schwingung auch nur'."\n".
-                    'eine Teildrehung des Strings in Haupt-Spin-Richtung, also um das Zentrum entlang der blauen Bahn.'."\n".
-                    'Dies ermöglicht eine komplexere Struktur der String-Schwingung,'."\n".
-                    'durch die der bei Leptonen, oder genereller bei Fermionen, beobachtete Spin von \\latexmath{ ½ \hbar } erklärbar wird.'."\n".
+                    'Das bedeutet, dass bei einem Schwingungsdurchgang mit der Spin-Rotationsgeschwindigkeit \\term{c} nicht unbedingt'."\n".
+                    'der gesamte String einmal in der Ebene des Haupt-Spins'."\n".
+                    'um den Teilchenschwerpunkt rotiert; die Wellenlänge \\term{λ} also nur einem Teil des Spin-Umfangs entspricht.'."\n",
+                      'In der \\jumpname{OM:FrQFT:Lepton:Vortext:Ani-Lepton} ist dementsprechend eine Teilchen-Schwingung auch nur'."\n".
+                    'eine Teilrotation des Strings in Haupt-Spin-Richtung, also um das Zentrum entlang der blauen Bahn.'."\n".
+                    'Dies ermöglicht eine komplexe Struktur der String-Schwingung,'."\n".
+                    'durch die der bei Leptonen – oder genereller bei Fermionen – beobachtete Spin von \\latexmath{ ½ \hbar } erklärbar wird.'."\n".
                     'Auch wird durch die im Modell enthaltene Kombination verschachtelter Helixspiralbewegungen die Schwingung einer \\jump{OM:FrQFT:Lepton:Elektrische-Ladung}{im Mittel elektrisch negativen oder positiven Polarisation} verständlich.'."\n".
                     'Dies entspricht der negativen elektrischen Ladung des Elektrons oder seines Antiteilchens Positron, sowie deren schwereren Schwester- und Bruderteilchen: Myon, Tauon und so weiter.'."\n".
                     ''))),
@@ -267,10 +295,10 @@
                   '')),
                   array( 'text', array( text => array(
                     'Um die Struktur formal zu beschreiben brauchen wir verschiedene Kennzahlen, die einen Leptonen-String auszeichnen:'."\n",
-                      'Wir beginnen mit der Anzahl der elektrischen Ladungspole \\term{n_{pol}} im String,'."\n".
-                    'die Wechsel zwischen dichter und weniger dicht mit Wirkungsquanten besetzten Stellen des Strings,'."\n".
-                    'die multipliziert mit den Wicklungen der \\color{*LichtbahnGruen}{grünen} Lichtbahn pro Polwechsel \\term{n_{polwel}}'."\n".
-                    'die Lichtbahn-Wicklungsanzahl \\term{n_{wel}} bestimmen:'."\n".
+                      'Wir beginnen mit der Anzahl der elektrischen Feldstärkenpole \\term{n_{pol}} im String.'."\n".
+                    'Diese entsprechen den Wechseln zwischen dichter und weniger dicht mit Wirkungsquanten besetzten Stellen des Strings.'."\n".
+                    'Multipliziert mit den Wicklungen der \\color{*LichtbahnGruen}{grünen} Lichtbahn je Polwechsel \\term{n_{polwel}}'."\n".
+                    'bestimmen sie die Lichtbahn-Wicklungsanzahl \\term{n_{wel}}:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -278,22 +306,31 @@
                     ))),
                   array( 'text', array( text => array(
                     'Wenn sich, wie gesagt, der Wirkungsquanten-String entlang der \\color{*LichtbahnGruen}{grünen} Lichtbahn mit Lichtgeschwindigkeit \\term{_{0}c} bewegt,'."\n".
-                    'dann bewegt er sich projiziert auf den \\color{*SpinBahnBlau}{blauen Kreis} der Spin-Bahn im Mittelwert mit der Spin-Geschwindigkeit, wobei \\term{c_{spin} < _{0}c}.'."\n",
-                      'Nach Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-LG-aus-Frequenz-Lambda} ergibt sich dann für \\term{c_{spin}}:'."\n".
+                    'dann bewegt er sich, projiziert auf den \\color{*SpinBahnBlau}{blauen Kreis} der Spin-Bahn, im Mittelwert mit der Spin-Geschwindigkeit \\term{c_{spin}}, wobei \\term{c_{spin} < _{0}c} gilt.'."\n".
+                    ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Sei \\term{f_{ele}} die Frequenz der String-Schwingungen und \\term{λ_{welseg}} die'."\n".
+                      'Lichtbahn-Länge einer Lichtbahn-Wicklung, dann ergibt sich nach'."\n".
+                      'Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-LG-aus-Frequenz-Lambda} für'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  c_{spin}  =  f_{wel} \cdot \lambda_{welseg}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{wel}  =  \frac{ c_{spin} }{ \lambda_{welseg} }  }'),
+                      array( display => 'on',  latex => '{  c_{spin}  =  f_{ele} \cdot \lambda_{welseg}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f_{ele}  =  \frac{ c_{spin} }{ \lambda_{welseg} }  \;\;  .  }'),
                     ))),
-                  array( 'text', array( text => array(
-                    'Wenn \\term{f_{wel}} die Frequenz der String-Schwingungen und \\term{λ_{welseg}} die Lichtbahn-Länge eines Polsegments ist,'."\n".
-                    'einer Wirkungsquanten-Dichtewelle entlang des Strings.'."\n",
-                      'Aus dem Radius \\term{r_{spin}} und der Anzahl der Wellensegmente \\term{n_{wel}} über den gesamten String können wir die Länge eines Wellensegmentes \\term{λ_{welseg}} berechnen:'."\n"))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Weiterhin können wir aus dem Radius \\term{r_{spin}} und der Anzahl der'."\n".
+                      'Wellensegmente \\term{n_{wel}} über den gesamten String die Länge eines'."\n".
+                      'Wellensegmentes zu'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \lambda_{welseg}  =  \frac{ 2 \pi \cdot r_{spin} }{ n_{wel} }  }'),
                     ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'berechnen.'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                     'So berechnet sich durch Einsetzen die Frequenz \\term{f_{wel}} der String-Schwingungen zu:'."\n"))),
                   array( 'equations',
@@ -492,7 +529,7 @@
                       'In der fraktalen Quanten-Fluss-Theorie hält genau ein solches Potenzial die dynamische Struktur'."\n".
                     'der \\jump{OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten}{Elementarteilchen-Strings in der Form}.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:StarkeWechselwirkung', text =>
                                            
                 'Starke Wechselwirkung', subline =>
                   '')),
