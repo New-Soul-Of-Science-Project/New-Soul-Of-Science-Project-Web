@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 07.08.2022, 18:00h
+  // #: Stand: 04.11.2022, 18:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20221104:  >:  "To_f_Paragraph", 'text': New 'Shape' 'derivation':  Added class: 'tools-class-text-derivation'.
   //           20220807:  +:  "To_f_Paragraph", "fade-in-area":  Fix mix-up in comparison to the other cases of 'hideContent' and 'showContent' in 'fade-in-area' and 'notice'.
   //           20220702:  +:  "$To_g_Text_replace_ary":  '∘' -> '&#8728;' entry new.
   // v01.005:  20130713:  +:  "To_f_Paragraph":  Type "quote" is new.
@@ -1604,6 +1605,9 @@
         if ($shape_is)
           switch ($text[Shape])
           {
+            case 'derivation':
+              $class_Additional = 'tools-class-text-derivation';
+              break;
             case 'conclusion':
               $class_Additional = 'tools-class-text-conclusion';
               break;
@@ -1626,6 +1630,9 @@
         if ($shape_is)
           switch ($text[Shape])
           {
+            case 'derivation':
+              echo $offset.'  <span>'."\n";
+              break;
             case 'conclusion':
               echo $offset.'  <span style="color: #'.(To_f_Color( '*Conclusion')).'">'."\n";  // #: ??? Color could be set now via CSS, since 'tools-class-text-conclusion' is implemented.
               break;
@@ -1723,6 +1730,7 @@
                 if ((gettype( $text) == 'array') && array_key_exists( Shape, $text))
                   switch ($text[Shape])
                   {
+                    case 'derivation':
                     case 'conclusion':
                       echo $offset.'  </span>'."\n";
                       break;
@@ -1747,6 +1755,9 @@
                 if ((gettype( $text) == 'array') && array_key_exists( Shape, $text))
                   switch ($text[Shape])
                   {
+                    case 'derivation':
+                      echo $offset.'  <span>'."\n";
+                      break;
                     case 'conclusion':
                       echo $offset.'  <span style="color: #'.(To_f_Color( '*Conclusion')).'">'."\n";
                       break;
@@ -1765,6 +1776,7 @@
               if ((gettype( $text) == 'array') && array_key_exists( Shape, $text))
                 switch ($text[Shape])
                 {
+                  case 'derivation':
                   case 'conclusion':
                     break;
                   case 'italic':
@@ -2177,6 +2189,7 @@
         if ((gettype( $text) == 'array') && array_key_exists( Shape, $text))
           switch ($text[Shape])
           {
+            case 'derivation':
             case 'conclusion':
               echo $offset.'  </span>'."\n";
               break;

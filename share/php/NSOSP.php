@@ -57,7 +57,7 @@
   
   
   $Glo_g_TextAlign = 'block';
-  $Glo_g_Intent = '2em';
+  $Glo_g_Intent = '32px';
   $Glo_g_FigAlign = 'center';
   
   
@@ -1239,6 +1239,7 @@
                     'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-spin-aus-Masse-LG' => array( headline_text => 'Lep.Mod.39'),
                     'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-wq-rot-aus-r-spin' => array( headline_text => 'Lep.Mod.56'),
                     'OM:FrQFT:Lepton:Berechnung-der-Mechanik:Equ-r-wq-rot-aus-hbar-m-ele-c' => array( headline_text => 'Lep.Mod.58'),
+                    'OM:FrQFT:Lepton:Berechnung-der-Mechanik:StarkeWechselwirkung' => array( headline_text => 'Starke Wechselwirkung'/*, headline_text_short => ''*/),
                   'OM:FrQFT:Lepton:Elektrische-Ladung' => array( headline_text => 'Elektrische Ladung', headline_text_short => 'Elektrische Ladung'),
                     'OM:FrQFT:Lepton:Elektrisch-geladenes-Lepton' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                   'OM:FrQFT:Lepton:Schwache-Ladung' => array( headline_text => 'Schwache Ladung', headline_text_short => 'Schwache Ladung'),
