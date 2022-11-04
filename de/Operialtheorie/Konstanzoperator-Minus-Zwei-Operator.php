@@ -72,7 +72,7 @@
                     ''))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                      'Ist der Minus-Zwei-Operator ist völlig neutral.'."\n".
+                      'Der Minus-Zwei-Operator ist völlig neutral.'."\n".
                       'Damit sind alle noch kleineren Operatoren auch neutral.'."\n".
                     ''))),
                       
