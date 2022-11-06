@@ -820,6 +820,21 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:XXX', text =>
                                            
+                'Berechnung des Neutrino-Modells', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'Das Neutrino-Modell hat die Besonderheit, dass sich ein Polwechsel des elektrischen Feldes auf zwei Sternzacken'."\n".
+                    'verteilt.'."\n".
+                    'Daher sind zwei Schwingungsdurchgänge notwendig, um das Modell wieder in einen komplett ununterscheidbaren Zustand'."\n".
+                    'zu überführen.'."\n".
+                    'Aus der Ferne reicht allerdings ein Durchgang, um diesen Eindruck zu erzeugen, weil die Pole der elektrischen Feldstärke dort ausgleichen.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-Mechanik:XXX', text =>
+                                           
                 'Berechnung des magnetischen Moments', subline =>
                   '')),
                   array( 'text', array( text => array(
