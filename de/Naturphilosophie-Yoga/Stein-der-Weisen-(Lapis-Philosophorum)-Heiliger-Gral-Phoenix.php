@@ -641,6 +641,12 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
+                      
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
+                    array_merge( $NPYo_g_figure_ary_PhoenixAusDerAsche, array( name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-PhoenixAusDerAscheYinYang',
+                                                         /* text => '' */)),
+                      )),
+                      
                   array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
                       
                 'Metamorphose in der Persönlichkeitsentwicklung', subline =>

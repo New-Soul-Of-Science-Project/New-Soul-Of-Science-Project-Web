@@ -557,6 +557,10 @@
                                                          text => 'Das transzendente Symbol für das Naturphilosophie-Yoga: Yin und Yang der Körper-Seele-Existenz'."\n".
                                                                   'als Dualismus von Djet und Neheh.');
   
+  $NPYo_g_figure_ary_PhoenixAusDerAsche
+                                                 = array( fig_file_name => 'Naturphilosophie-Yoga/Phoenix-aus-der-Asche-fuer-Tom-20220705-v01', figPDF_is => false, fig_alt_description => 'Phönix aus der Asche – Bewusstsein und Unterbewusstsein', width => '284px', height => '389px', name => 'set local!',
+                                                         text => 'Der Phönix aus der Asche des Naturphilosophie-Yoga: Die Hoffnung im Yin und Yang als fraktaler Dualismus von Bewusstsein und Unterbewusstsein.');
+  
   $NPYo_g_figure_ary_YinYang                     = array( fig_file_name => 'Naturphilosophie-Yoga/Yin-Yang-Taijitu-v01', fig_alt_description => 'Das Yin und Yang oder Taijitu', width => '380px', height => '500px', name => 'set local!',
                                                          text => 'Das Taijitu oder Yin-Yang-Symbol veranschaulicht, dass das Dao eine Einheit hervorbringt, die aus dynamischen Gegensätzen besteht.'."\n".
                                                                   'Durch die dynamischen Gegensätze entsteht die Welt und ihre Natur, die uns Menschen beinhaltet.');
@@ -2084,6 +2088,7 @@
                   'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche' => array( headline_text => 'Phönix aus der Asche'/*, headline_text_short => ''*/),
                     'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-DunkelheitZuLicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                     'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-LebenDesHorusHermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                    'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-PhoenixAusDerAscheYinYang' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
                 ),
          ),
   'OM:NPYo:Vorwort' =>
