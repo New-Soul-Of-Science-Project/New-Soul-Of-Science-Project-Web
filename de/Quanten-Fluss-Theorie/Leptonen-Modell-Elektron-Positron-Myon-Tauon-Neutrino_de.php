@@ -198,7 +198,7 @@
                         '\\color{*Bearb}{Abzählprinzip}',
                         'Bewegungsprinzip',
                         'Existenzprinzip',
-                        'Lichtuhr',
+                        '›Prinzip der Lichtuhr‹',
                         '\\jump{OM:FrQFT:FirstPrinciples:Vortext:Fraktalitaetsprinzip}{rückgekoppelte fraktale Struktur}',
                         'Regelprozess-Prinzip',
                     ))),
@@ -208,7 +208,7 @@
                   array( 'bulletlist', array( bullet_ary => array(
                         '\\condb{Spin (Drehimpuls)} \\\\'."\n".
                           'Zwei Eigenschaften der Leptonen, die mit so etwas wie Rotation in Verbindung stehen können sind ihr Spin und dessen magnetisches Moment.'."\n".
-                          'Zu diesen passen die First-Principles des Bewegungsprinzips, des Eigenschaftsprinzips, des Existenzprinzips, der Lichtuhr, die rückgekoppelte fraktale Struktur und das Regelprozess-Prinzip.',
+                          'Zu diesen passen die First-Principles des Bewegungsprinzips, des Eigenschaftsprinzips, des Existenzprinzips, ›Prinzip der Lichtuhr‹, die rückgekoppelte fraktale Struktur und das Regelprozess-Prinzip.',
                         '\\condb{Keine starke Ladung} \\\\'."\n".
                           'Dazu, dass Leptonen keine starke Ladung besitzen, passt das Strukturprinzip, das Eigenschaftsprinzip und das String-Prinzip.'."\n".
                           'Denn bei einem rotierenden geschlossenen String von Wirkungsquanten existiert keine \\jump{OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung}{Farbladung}.',
@@ -581,7 +581,7 @@
                 'Der neue, \\italic{innere Spin} steht vermutlich für die Leptonenzahlerhaltung …', TitleVis =>
                 'Der neue, innere Spin steht vermutlich für die Leptonenzahlerhaltung:', ParagraphList => array(
                   array( 'text', array( text => array(
-                    'Der mittlere Spin entlang der Lichtbahn um die Spin-Bahn \\term{s_{lep,licht,rot}}, denn ich'."\n".
+                    'Der mittlere Spin entlang der Lichtbahn um die Spin-Bahn \\term{s_{lep,licht,rot}}, den ich'."\n".
                     '\\italic{innerer Spin} des Leptons nenne, hat nach meiner Vermutung eine ganz besondere Bedeutung.'."\n",
                       'Entsprechend meinen Vermutungen, dass die Wellenanzahl oder Sternzackenzahl des Leptonen-Strings zur Vermeidung'."\n".
                     'innerer Überschneidungen größer gleich \\term{8}, wegen der neutralen'."\n".
