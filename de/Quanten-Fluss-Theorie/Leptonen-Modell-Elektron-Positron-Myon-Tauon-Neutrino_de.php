@@ -138,7 +138,7 @@
                     'realisiert, durch den Gang ihrer Helixspiralbewegung.'."\n".
                     'Dieser Bewegungsanteil entlang der grünen Lichtbahn entspricht der Lichtgeschwindigkeit der Allgemeinen Relativitätstheorie im 3-dimensionalen Raum.\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 4.1.1 Zeit, Alterung und Licht-Raumzeit-Geometrie, S. 51-56, hier S. 52.}'."\n".
                     'Abgrenzend zur Zeit-Ebene der Normaluhr wird diese Zeit-Ebene in der Quanten-Fluss-Theorie als \\jump{*Alterung-Implem}{Alterung} bezeichnet.'."\n".
-                    'Die Alterung ist folglich ein anderer Aspekt der Bewegung und eine andere Form der Zeit, der mit der Gangweite der Wicklungen der Wirkungsquanten-Bahn um die'."\n".
+                    'Die Alterung ist folglich ein anderer Aspekt der Bewegung und eine andere Form der Zeit, der mit der Gangweite der Wellen der Wirkungsquanten-Bahn um die'."\n".
                     'Lichtbahn variiert.'."\n",
                       'Umso schneller sich das Lepton im Raum bewegt, desto langsamer ist die Geschwindigkeit der Wirkungsquanten entlang der Lichtbahn.'."\n".
                     'Entsprechend ist die Alterung des Leptons bei Bewegung langsamer, wie wir es aus der Speziellen Relativitätstheorie\\footnote{\\const{FrQFT_g_footnote_text_SRT}} kennen. \\\\'."\n",
@@ -317,10 +317,16 @@
                   '')),
                   array( 'text', array( text => array(
                     'Um die Struktur formal zu beschreiben brauchen wir verschiedene Kennzahlen, die einen Leptonen-String auszeichnen:'."\n",
-                      'Wir beginnen mit der Anzahl der elektrischen Feldstärkenpole \\term{n_{pol}} im String.'."\n".
+                      'Wir beginnen mit der Anzahl der elektrischen Feldstärken-Pole \\term{n_{pol}} im String.'."\n".
                     'Diese entsprechen den Wechseln zwischen dichter und weniger dicht mit Wirkungsquanten besetzten Stellen des Strings.'."\n".
-                    'Multipliziert mit den Wicklungen der \\color{*LichtbahnGruen}{grünen} Lichtbahn je Feldstärkenpolwechsel \\term{n_{polwel}}'."\n".
-                    'bestimmen sie die Lichtbahn-Wicklungsanzahl \\term{n_{wel}}:'."\n".
+                    'Bei geladenen Leptonen-Strings kommt ein Feldstärken-Polwechsel auf eine Lichtbahn-Welle,'."\n".
+                    'sodass immer die gleichen Feldstärken-Pole nach außen und die anderen nach innen präsentiert werden (\\term{n_{polwel} = 1}),'."\n".
+                    'wodurch die Teilchen im zeitlichen Mittel elektrisch geladen erscheinen.'."\n".
+                    'Bei neutralen Leptonen-Strings verteilt sich ein Feldstärken-Polwechsel auf zwei Lichtbahn-Wellen,'."\n".
+                    'sodass gleichzeitig die beiden unterschiedlichen Feldstärken-Pole nach innen \\color{*Bearb}{(außen?)} präsentiert werden (\\term{n_{polwel} = 2}),'."\n".
+                    'was die neutralen Leptonen-Strings bei zunehmender Distanz sehr schnell völlig elektrisch neutral erscheinen lässt.'."\n".
+                    'Multipliziert mit der Wellenanzahl der \\color{*LichtbahnGruen}{grünen} Lichtbahn je Feldstärken-Polwechsel \\term{n_{polwel}}'."\n".
+                    'bestimmen sie die gesamte Lichtbahn-Wellenanzahl \\term{n_{wel}}:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -333,7 +339,7 @@
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Sei \\term{f_{ele}} die Frequenz der String-Schwingungen und \\term{λ_{welseg}} die'."\n".
-                      'Lichtbahn-Länge einer Lichtbahn-Wicklung, dann ergibt sich nach'."\n".
+                      'Lichtbahn-Länge einer Lichtbahn-Welle, dann ergibt sich nach'."\n".
                       'Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-LG-aus-Frequenz-Lambda} für'."\n".
                     ''))),
                   array( 'equations',
