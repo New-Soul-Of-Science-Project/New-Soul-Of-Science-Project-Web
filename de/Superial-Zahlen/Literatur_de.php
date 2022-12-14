@@ -11,7 +11,8 @@
       <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Home'); ?>
 
 	
-          <?php Sc_g_litera_make( array(  'Freistetter:DieFreiheitDerImaginaerenZahlen:2016',
+          <?php Sc_g_litera_make( array(  'Bischoff:NeubauDerMathematik:2023',
+                                          'Freistetter:DieFreiheitDerImaginaerenZahlen:2016',
                                           'Freistetter:DieFreiheitDerMathematik:2016',
                                           'Plichta:GottesGeheimeFormel:1995',
                                           'wiki:Allklasse:2020',
