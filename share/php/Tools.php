@@ -1235,7 +1235,7 @@
             do
             {
               // #!: The search must be expanded by "[" or "{". Otherwise two commands can not start with the same chars as "\jump" and "\jumpname"!
-              // #!: The search must find the first in the text at first. Otherwise if multiple is it finds "\footnote[" or "\footnote{" at first. Than the ones before can not be found anymore and multi as well will not work correctly if both variants are used in one multi collection.
+              // #!: The search must find the first in the text at first. Otherwise if multiple is it finds "\footnote[" or "\footnote{" at first. Then the ones before can not be found anymore and multi as well will not work correctly if both variants are used in one multi collection.
               {
                 // #: Old code that does not work correctly anymore with multi collection.
                 /*$expand_char = '[';
@@ -1279,15 +1279,15 @@
                     }
                     else
                       $parts = array();
-            }
+              }
               
               // #?: There are two parts?
               if (count( $parts) == 2)
               {
                 $result = To_f_replace_latexcommand_parameters( $expand_char.$parts[1], $value[param_dim], $value[param_optional_max], $replace_ary, $replace_preg_ary, (array_key_exists( replace_internal, $value)) ? $value[replace_internal] : true);
-                     // #: If "$value[replace_internal]" does not exist or it es true, than every latex parameter is already replaced internaly in this function.
+                     // #: If "$value[replace_internal]" does not exist or it is true, then every latex parameter is already replaced internally in this function.
                      //      This is important for multiple chained commands like "\\footnote{}\\footnote{}".
-                     // #Velo: So "To_f_replace_str_ary" is used several times to often. Because it's called at the beginning of the present function and every time if the function here is called.
+                     // #Velo: So "To_f_replace_str_ary" is used several times too often. Because it's called at the beginning of the present function and every time if the function here is called.
                 
                 // #?: No error occured?
                 if (isset($result))
@@ -1302,10 +1302,10 @@
                       $direct_output_is = false;
                     else
                       if ($multi_testing && ($multi_testing_count < $multi_testing_dim))
-                        print_r( 'Nächten nicht eingesammelt! "'.($value[search]).'" '/*, "'.($parts[0]).'" '*/);
+                        print_r( 'Nächsten nicht eingesammelt! "'.($value[search]).'" '/*, "'.($parts[0]).'" '*/);
                   }
                   
-                  // #!: This has to be inbetween the two "isset( $multi_ary)" and "!isset( $multi_ary)" structures! Because the new command can be multi as well as the one bevore!
+                  // #!: This has to be in-between the two "isset( $multi_ary)" and "!isset( $multi_ary)" structures! Because the new command can be multi as well as the one before!
                   // #?: Is "$direct_output_is" and "$multi_ary" activ?
                   if ($direct_output_is && isset( $multi_ary))
                   {

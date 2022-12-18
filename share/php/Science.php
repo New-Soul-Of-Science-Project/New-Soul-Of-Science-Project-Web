@@ -483,12 +483,12 @@
   $Sc_g_Text_replace_preg_ary = array_merge(
                                     array(
                                       'hidden' =>
-                                        $To_g_Text_replace_preg_ary['hidden'],     // #!: "hidden" must be the first element. Was removed from the array in the lines obove.
+                                        $To_g_Text_replace_preg_ary['hidden'],     // #!: "hidden" must be the first element. Was removed from the array in the lines above.
                                       'const' =>
-                                        $To_g_Text_replace_preg_ary['const'],     // #!: "const" must be the second element. Was removed from the array in the lines obove.
+                                        $To_g_Text_replace_preg_ary['const'],     // #!: "const" must be the second element. Was removed from the array in the lines above.
                                       'color' =>
-                                        $To_g_Text_replace_preg_ary['color'],     // #!: "color" must be the third element, because in "latexmath" there is "\color{formcolor}" used for color setting which not should be replaced. Was removed from the array in the lines obove.
-                                      'term' => // #!: "term" must be before its possible internal commands, because if it's content is already replaced by HTML it's small dash replacement destroys negative numbers.
+                                        $To_g_Text_replace_preg_ary['color'],     // #!: "color" must be the third element, because in "latexmath" there is "\color{formcolor}" used for color setting which not should be replaced. Was removed from the array in the lines above.
+                                      'term' => // #!: "term" must be before it's possible internal commands, because if it's content is already replaced by HTML it's small dash replacement destroys negative numbers.
                                         array( type => 'latexcommand',
                                                search => '\\term',
                                                param_dim => 1,
