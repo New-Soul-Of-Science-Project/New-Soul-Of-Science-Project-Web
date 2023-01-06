@@ -95,8 +95,8 @@
                         'Polarisation erzeugen, welche sich in Schwingung befindet.'."\n".
                         'Je weiter diese Stellen unterschiedlicher Dichte auseinander liegen, je größer ist die Polarisation.'."\n"),
                   array( 'normal',
-                    'Man sieht, dass dieses Lepton während einer Schwingunsphase dann zwischen einem leichter und einem stärker, aber umgekehrt elektrisch polarisierten Zustand schwingt.'."\n".
-                    'Der stärker polarisierte Zustand, wo der Druchmesser oder besser gesagt der \\jump{OM:FrQFT:Lepton:Radius}{innere Radius}'."\n".
+                    'Man sieht, dass dieses Lepton während einer Schwingungsphase dann zwischen einem leichter und einem stärker, aber umgekehrt elektrisch polarisierten Zustand schwingt.'."\n".
+                    'Der stärker polarisierte Zustand, wo der Durchmesser oder besser gesagt der \\jump{OM:FrQFT:Lepton:Radius}{innere Radius}'."\n".
                     'des Strings größer ist, dominiert die durchschnittliche Polarisation.'."\n".
                     'Dieses Lepton ist also insgesamt mit der dichteren Stelle nach außen polarisiert.'."\n".
                     'Ob dies einem negativ oder einem positiv geladenen Lepton entspricht ist noch ungeklärt.\\footnote[*Entwick]{\\color{*Entwick}{Eine genaue Herleitung, ob die mit Wirkungsquanten dichter gepackten Stellen des Strings einer positiven oder negativen elektrischen Polarisationen des elektrischen Feldes entsprechen, wird gesucht. Die Asymmetrie der }\\jump{OM:FrQFT:ElektroschwacheWW:Schwache-WW}{schwachen Wechselwirkung}\\color{*Entwick}{ könnte hier weiter helfen. Hinweise darauf sind erbeten.}}'."\n".
@@ -122,8 +122,8 @@
               'Der schwache Isospin und die kurze Wirkungsdistanz ergeben sich anschaulich aus der Asymmetrie der dynamischen Polarisation', 'Sc_f_Paragraph',
                 array(
                   array( 'normal',
-                    'Schaut man sich die Struktur des Leptons im \\jump{OM:FrQFT:ElektroschwacheWW:Vortext:Ani-Lepton}{\\name{OM:FrQFT:ElektroschwacheWW:Vortext:Ani-Lepton}}'."\n".
-                    'an so fällt auf, dass die \\jump{OM:FrQFT:Lepton:Elektrische-Ladung}{elektrischen Pole} während ihrer Bewegung asymmetrisch verteilt sind.'."\n".
+                    'Schaut man sich die Struktur des Leptons in \\jump{OM:FrQFT:ElektroschwacheWW:Vortext:Ani-Lepton}{\\name{OM:FrQFT:ElektroschwacheWW:Vortext:Ani-Lepton}}'."\n".
+                    'an, so fällt auf, dass die \\jump{OM:FrQFT:Lepton:Elektrische-Ladung}{elektrischen Pole} während ihrer Bewegung asymmetrisch verteilt sind.'."\n".
                     'Diese asymmetrische und dynamische Polverteilung ist für die schwache Wechselwirkung\\footnote{Vgl. \\cite{wiki:SchwacheWechselwirkung2013}.}'."\n".
                     'verantwortlich und hat nur in unmittelbarer Nähe des Leptons oder \\jump{OM:FrQFT:ElektroschwacheWW:Quarks}{Quarks} eine Auswirkung:'."\n"),
                   array( 'conclusion',

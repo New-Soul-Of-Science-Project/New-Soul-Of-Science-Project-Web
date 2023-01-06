@@ -24,7 +24,8 @@
                       
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Vortext:XXX', text =>
                                            
-                'Anliegen dieser Arbeit und ihrer Theorie einer neuen Physik')),
+                'Anliegen dieser Arbeit und ihrer Theorie einer neuen Physik', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     'Wir streben mit der nachfolgend entwickelten Theorie an, die in der modernen Physik gesuchte Theorie von Allem – Theory of Everything (TOE) –'."\n".
                     'naturphilosophisch zu begründen und analytisch zu entwickeln, also die Physik durch eine „neue“ Physik zu vereinheitlichen.'."\n",
@@ -32,14 +33,16 @@
                     'ihre offenen Fragen zu beantworten.\\footnote{\\const{FrQFT_g_footnote_text_NotNeuePhysik}}'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Vortext:XXX', text =>
                                            
-                'Wie kann die Physik vereinheitlicht werden?')),
+                'Wie kann die Physik vereinheitlicht werden?', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     'Um die Physik zu vereinheitlichen, müssen wir uns mit den grundlegensten Fragen der Physik befassen …'."\n"))),
                   array( 'text', array( text => array(
-                    'Die grundlegenste Frage der heutigen Physik ist vermutlich:'."\n"))),
+                    'Die grundlegendste Frage der heutigen Physik ist vermutlich:'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Vortext:XXX', text =>
                                            
-                'Was ist Zeit?')),
+                'Was ist Zeit?', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     'Der anregend kritische Physiker Lee Smolin stellt sich bezüglich seiner Forschung zu den Grundlagen der Physik seit vielen Jahren diese tiefgreifende Frage'."\n".
                     'und begründet ihre Wichtigkeit folgendermaßen:'."\n"))),
@@ -68,9 +71,10 @@
                     'und damit die Vereinheitlichung der modernen Physik – ihrer beiden Haupttheorien, der Quantenfeldtheorie und der Allgemeinen Relativitätstheorie – zu ermöglichen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Vortext:XXX', text =>
                                            
-                'Vorgehensweise')),
+                'Vorgehensweise', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                    'Zur Vereinheitlichung der beiden Haupttheorien, beschäftigen wir uns mit der detailierten Beschreibung und Analyse der neuen naturphilosophischen Prinzipien der Physik – \\jump{OM:FrQFT:FirstPrinciples}{First-Principles} oder Naturprinzipien –,'."\n".
+                    'Zur Vereinheitlichung der beiden Haupttheorien, beschäftigen wir uns mit der detaillierten Beschreibung und Analyse der neuen naturphilosophischen Prinzipien der Physik – \\jump{OM:FrQFT:FirstPrinciples}{First-Principles} oder Naturprinzipien –,'."\n".
                     'mit ihrer physikalischen Realisierung und deren Mechanismen.'."\n".
                     'Wir setzen unsere hierauf basierenden Einsichten und Erkenntnisse mit den Begriffen und Bildern der modernen Physik in Beziehung.'."\n",
                       'So leiten wir den neuen Formalismus her, beschäftigen uns aber natürlich auch intensiv damit, wie sich aus all dem die heute gültigen Formeln und Erklärungen ergeben.'."\n"))),
@@ -83,7 +87,7 @@
                     'Auf diese Weise entsteht eine zusätzliche Perspektive auf die neue Physik, die zum einen verdeutlicht, wie grundlegend die neue Physik angelegt ist,'."\n".
                     'und zum anderen naturphilosophische Begrifflichkeiten und Bilder erschafft,'."\n".
                     'mit deren Hilfe uns ein noch tieferes analytisches sowie auch emotionales Verständnis der neuen Physik möglich wird.'."\n",
-                      'Auf den darauf folgenden Seiten wird diese Entwicklung auf all dem aufbauend detailierter nachvollzogen sowie feiner und konkreter ausformuliert,'."\n".
+                      'Auf den darauf folgenden Seiten wird diese Entwicklung auf all dem aufbauend detaillierter nachvollzogen sowie feiner und konkreter ausformuliert,'."\n".
                     'wo uns dies möglich ist.'."\n".
                     'Zum Schluss wird eine Zusammenfassung, ein Fazit und ein Ausblick formuliert.'."\n".
                     'Ergänzend werden verschiedene Ideen, die so nicht in die Arbeit passen und teilweise sehr spekulativ sind, diskutiert sowie Vergleiche mit anderen Theorien angestellt.'."\n"))),
