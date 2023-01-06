@@ -94,6 +94,7 @@
                                           'Maldacena:Schwerkraft-EineIllusion2006',
                                           'Marinoni:AGeometricMeasureOfDarkEnergyWithPairsOfGalaxies2010',
                                           'Maudlin:QuantumNon-LocalityAndRelativity2011',
+                                          'MaxPlanckInstituteForGravitationalPhysics:Ruhemasse:2022',
                                           'MaxPlanckInstituteForGravitationalPhysics:KosmischeZeit:2015',
                                           'MaxPlanckInstituteForGravitationalPhysics:Relativitaetsprinzip2014',
                                           'MaxPlanckInstituteForGravitationalPhysics:RelativitaetUndQuanten2013',

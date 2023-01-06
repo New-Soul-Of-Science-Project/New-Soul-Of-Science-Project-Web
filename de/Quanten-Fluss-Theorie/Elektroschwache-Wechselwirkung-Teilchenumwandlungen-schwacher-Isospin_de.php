@@ -268,7 +268,7 @@
               'Kategorisierung der Elementarteilchen', 'Sc_f_Paragraph',
                 array(
                   array( 'normal',
-                    'In den Teilchen des \\jump{OM:FrQFT:Elementarteilchen}{Elementarteilchenmodells} der Quanten-Fluss-Theorie, welche Ruhemasse besitzen, steht der \\jump{OM:FrQFT:Lepton:Spins}{innere Spin}'."\n".
+                    'In den Teilchen des \\jump{OM:FrQFT:Elementarteilchen}{Elementarteilchenmodells} der Quanten-Fluss-Theorie, welche Ruhemasse\\footnote{\\const{FrQFT_g_footnote_text_Ruhemasse}} besitzen, steht der \\jump{OM:FrQFT:Lepton:Spins}{innere Spin}'."\n".
                     'in einer festen, relativen Orientierung zum normalen \\jump{OM:FrQFT:Lepton:Spins}{äußeren Spin} des Teilchens.'."\n".
                     'Beim entsprechenden \\jump{OM:FrQFT:Lepton:Antiteilchen}{Antiteilchen} ist die relative Orientierung des inneren Spins entgegengesetzt.'."\n".
                     'Ebenso trägt die \\jump{OM:FrQFT:ElektroschwacheWW:Elektromagnetische-WW}{elektrische Ladung} das umgekehrte Vorzeichen.'."\n"),

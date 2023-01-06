@@ -187,7 +187,7 @@
                   array( 'text', array( text => array(
                     'Aufgrund der \\jump{OM:FrQFT:Dunkle-Materie:Gravitative-Wirkung-des-Vakuums}{Grundstruktur des Vakuums} wird klar, dass die Gravitation des „leeren“ Vakuums'."\n".
                     'eine seiner inneren Wechselwirkungen ist und so seine Struktur prägend bestimmt.'."\n".
-                    'Da ein Vakuum mit einigermaßen gleichmäßiger Energiedichteverteilung in seinem Einfluss auf Elementarteilchen mit Ruhemasse nicht über den'."\n".
+                    'Da ein Vakuum mit einigermaßen gleichmäßiger Energiedichteverteilung in seinem Einfluss auf Elementarteilchen mit Ruhemasse\\footnote{\\const{FrQFT_g_footnote_text_Ruhemasse}} nicht über den'."\n".
                     'selben strukturbildenden Effekt hinaus geht,\\color{*Bearb}{(begründen)} tritt die gravitative Wirkung des Vakuums zunächst nicht weiter in Erscheinung. \\\\'."\n".
                     'Auffallend verhält sich der Einfluss erst, wenn sich Elementarteilchen massiv zu großen und sehr großen Ansammlungen zusammen finden,'."\n".
                     'denn dann ist die Energiedichte nicht mehr nahezu gleichmäßig im Vakuum verteilt.'."\n",

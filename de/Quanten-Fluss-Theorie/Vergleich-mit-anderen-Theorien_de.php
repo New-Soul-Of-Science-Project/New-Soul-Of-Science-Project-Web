@@ -87,7 +87,7 @@
                     'Da der Zickzackweg zwischen den Spiegeln länger ist, als wenn der Weg genau senkrecht zu den Spiegeln verläuft, geht der Tackt der bewegten Uhr für den'."\n".
                     'Beobachter langsamer.'."\n".
                     'Dies gilt für jeden Beobachter, für den sich das Licht in jede Richtung zu ihm gleich schnell bewegt.'."\n".
-                    'Und genau wie eine Lichtuhr verhalten sich auch Elementarteilchen mit Ruhemasse\\color{*Bearb}{(Verweis)}.'."\n"),
+                    'Und genau wie eine Lichtuhr verhalten sich auch Elementarteilchen mit Ruhemasse\\footnote{\\const{FrQFT_g_footnote_text_Ruhemasse}}.'."\n"),
                   array( 'normal',
                     '\\color{*Bearb}{• Die Schwäche der Speziellen Relativitätstheorie – scheinbarer Widerspruch von Zeit und innerer Frequenz.}'."\n"),
                   array( 'normal',
@@ -419,7 +419,7 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '(• XXX)',
+                    '(• Ruhemasse\\footnote{\\const{FrQFT_g_footnote_text_Ruhemasse}})',
                     ))),
                       
                   array( 'text', array( text => array(

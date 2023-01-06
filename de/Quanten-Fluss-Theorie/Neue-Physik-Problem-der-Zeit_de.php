@@ -1318,12 +1318,12 @@
                     ))),
                   array( 'text', array( text => array(
                     'Wie aus dem \\jump{OM:FrQFT:NeuePhysik:Loesungsansatz}{Lösungsansatz} und dem \\jump{OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip}{Existenzprinzip} ersichtlich ist,'."\n".
-                    'handelt es sich bei Wirkungsquanten um lichtähnliche Teilchen ohne sogenannte Ruhemasse\\footnote{Vgl. \\cite{wiki:Masse2013}, Spezielle Relativitätstheorie, Ruhemasse.}, im Prinzip wie Photonen.\\footnote{Um dies zu untermauern möchte ich einmal vorgreifen: Die nachfolgenden Überlegungen zum fraktalen Universum – einem Universum mit einer Struktur, die sich in sich selber wiederholt, wenn man ins Detail geht – zeigen, dass Wirkungsquanten auf ihrer Struktur-Ebene in diesem Modell tatsächlich lichtähnliche Teilchen sein müssen. Wirkungsquanten sind dort Ringe aus Mikro-Wirkungsquanten.}'."\n".
+                    'handelt es sich bei Wirkungsquanten um lichtähnliche Teilchen ohne sogenannte Ruhemasse\\footnote{\\const{FrQFT_g_footnote_text_Ruhemasse}} (ohne Materieinhalt), im Prinzip wie Photonen.\\footnote{Um dies zu untermauern möchte ich einmal vorgreifen: Die nachfolgenden Überlegungen zum fraktalen Universum – einem Universum mit einer Struktur, die sich in sich selber wiederholt, wenn man ins Detail geht – zeigen, dass Wirkungsquanten auf ihrer Struktur-Ebene in diesem Modell tatsächlich lichtähnliche Teilchen sein müssen. Wirkungsquanten sind dort Ringe aus Mikro-Wirkungsquanten.}'."\n".
                     'Lichtähnlich meint hier, dass die von Wirkungsquanten ausgehende Wechselwirkung sich ebenso schnell ausbreitet, wie sich die Wirkungsquanten auf ihrer Helixspiralbahn durch den Raum bewegen.'."\n".
                     'Die Wirkungsquanten sind sogar schneller als das Licht, denn sie bewegen sich mit \\jump{*LG-erhoete-LoesAnsatz}{erhöhter Lichtgeschwindigkeit}.'."\n".
                     'Dies wird nur nicht sichtbar, weil ihre Bahn zu einer Helixspirale aufgewickelt und dadurch entlang ihrer Translation'."\n".
                     'auf die Lichtgeschwindigkeit reduziert ist (siehe \\jumpname{OM:FrQFT:NeuePhysik:Fig-Elapson-Existenzprinzip}).'."\n",
-                      'Teilchen, die sich dem Prinzip nach mit „Lichtgeschwingikeit“ bewegen, haben die Eigenschaft, dass sich die von ihnen ausgehenden Wechselwirkungen auch nur mit'."\n".
+                      'Teilchen, die sich dem Prinzip nach mit „Lichtgeschwingigkeit“ bewegen, haben die Eigenschaft, dass sich die von ihnen ausgehenden Wechselwirkungen auch nur mit'."\n".
                     'der gleichen „Lichtgeschwindigkeit“ um sie herum ausbreiten können.'."\n".
                     'Die Folge ist eine Wechselwirkung in Form eines Rings, der sich senkrecht um die Bahn jedes Wirkungsquants ausbreitet.'."\n".
                     'In zeitlicher Abfolge betrachtet ergeben die Ringe die Form einer Kegeloberfläche\\color{*Bearb}{(Link auf eine Site zur Längenkontraktion durch Bewegung mit Kapitel zu Lichtteilchen)}, die die Wirkungsquanten hinter sich herziehen wie eine Schleppe (siehe \\jumpname{OM:FrQFT:NeuePhysik:Fig-Wq-String-Unmoeg-Konstella}).'."\n".
@@ -1666,7 +1666,7 @@
                 'Symmetriebrechung der elektroschwachen Wechselwirkung')),
                   array( 'text', array( text => array(
                     'Eine dieser Symmetriebrechungen entsteht durch die Aufwicklung des Strings eines ehemaligen Wirkungsquants in einer zusätzlichen Spiralbahn (siehe \\jumpname{OM:FrQFT:NeuePhysik:Elementarteilchen-der-Materie:Ani-Lepton}, hier am Beispiel eines hypothetischen Leptons).'."\n".
-                    'Es ist die Symmetriebrechung der \\jump{OM:FrQFT:NeuePhysik:Quantenfeldtheorie:ESW}{elektroschwachen Wechselwirkung}, die im Prinzip allen Elementarteilchen mit Ruhemasse\\color{*Bearb}{(Begriff?)} innewohnt.'."\n".
+                    'Es ist die Symmetriebrechung der \\jump{OM:FrQFT:NeuePhysik:Quantenfeldtheorie:ESW}{elektroschwachen Wechselwirkung}, die im Prinzip allen Elementarteilchen mit Ruhemasse innewohnt.'."\n".
                     'Sie setzt sich zusammen aus einer weiteren Symmetriebrechung der \\jump{*Farbpolarisation-Herlei}{Farbpolarisation} und einer gleichzeitigen Symmetriebrechung des elektromagnetischen Polarisation der \\jump{*Photonen-Herlei}{Photonen}.'."\n".
                     'Sie führt dazu, dass die Wirkungsquanten des Strings sich nicht mehr, wie beim \\jump{*Elapsonen-Vakuum-Herlei}{Vakuum-Elapson} und Photon, in einer Ebene umkreisen und vorwärts bewegen.'."\n".
                     'Sondern sie wandern jetzt im Kreis hintereinander her.'."\n".
@@ -1681,7 +1681,7 @@
                 'Masse und freie Geschwindigkeit')),
                   array( 'text', array( text => array(
                     'Die Symmetriebrechung der elektroschwachen Wechselwirkung bringt zentrale Folgen mit sich:'."\n".
-                    'Bei allen Elementarteilchen mit Ruhemasse\\color{*Bearb}{(Begriff?)} ist die Lichtgeschwindigkeit der variablen \\jump{OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:Exist}{Djet-Zeit} für die normale Spin-Rotation verantwortlich.'."\n".
+                    'Bei allen Elementarteilchen mit Ruhemasse (mit Materieinhalt) ist die Lichtgeschwindigkeit der variablen \\jump{OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:Exist}{Djet-Zeit} für die normale Spin-Rotation verantwortlich.'."\n".
                     'Im Vergleich zu den Vakuum-Elapsonen und Photonen ist die Einsteinsche Lichtgeschwindigkeit sozusagen nach innen gekehrt; im Teilchen eingeschlossen.'."\n".
                     'Und zwar indem sie zu einem Ring rückgekoppelt ist (siehe \\jumpname{OM:FrQFT:NeuePhysik:Elementarteilchen-der-Materie:Ani-Lepton}, Spin entlang des im Verlauf eingeblendeten blauen Rings).'."\n".
                     'Aus diesem Grund erscheinen solche Teilchen tatsächlich wie die Lichtuhren\\color{*Bearb}{(Verweis)} aus Einsteins Gedankenexperimenten, in denen die Lichtbewegung des variablen Djet zu einem Ring quasi rückgekoppelt ist.'."\n",
@@ -1895,7 +1895,7 @@
                     'Dieses Phänomen ist der populärwissenschaftlichen Analogie des \\jump{OM:FrQFT:NeuePhysik:Quantenfeldtheorie:V-HM}{Higgs-Mechanismus}\\footnote{\\const{FrQFT_g_footnote_text_HiggsMech}} sehr ähnlich, denn die verdichteten Wirkungsquanten des umgebenden Vakuums sind entsprechend an den String des Elementarteilchens gekoppelt.'."\n".
                     'Die Analogie bezieht sich auf die Vorstellung, dass eine Prominenz – ein Elementarteilchen – einen Raum mit zu einer Party geladenen Gästen – das Vakuum – betritt.\\footnote{\\const{FrQFT_g_footnote_text_HiggsMechAnalog}}'."\n".
                     'Die Gäste bilden eine Traube um die Prominenz und sorgen so dafür, das die Prominenz nicht so schnell vorankommt, wie sie eigentlich könnte.'."\n",
-                      'Durch die Kopplung der Verdichtung der Wirkunsgquanten das Vakuums an einen Elementarteilchen-String mit Ruhemasse\\color{*Bearb}{(Begriff?)} ist dieser Effekt sowohl für die gravitative als auch für die träge Masse eines Elementarteilchens ursächlich.'."\n".
+                      'Durch die Kopplung der Verdichtung der Wirkungsquanten das Vakuums an einen Elementarteilchen-String mit Ruhemasse (mit Materieinhalt) ist dieser Effekt sowohl für die gravitative als auch für die träge Masse eines Elementarteilchens ursächlich.'."\n".
                     'Dies ist der Grund für das \\jump{OM:FrQFT:NeuePhysik:Relativitaet:ART-MP}{Äquivalenzprinzip von träger und schwerer Masse} in der Quanten-Fluss-Theorie.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Quantengravitation:PDM', text =>
                                            

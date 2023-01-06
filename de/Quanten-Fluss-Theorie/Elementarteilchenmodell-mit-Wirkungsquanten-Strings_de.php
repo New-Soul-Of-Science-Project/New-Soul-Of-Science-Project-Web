@@ -37,7 +37,7 @@
                     'eingeführten \\jump{*Wirkungsquanten-Herlei}{Wirkungsquanten}.'."\n".
                     'Die Wirkungsquanten formieren sich in „Schwärmen“ zu schwingenden Strings, welche die Elementarteilchen darstellen.'."\n".
                     'Dies gilt für Lichtteilchen – \\jump{OM:FrQFT:Elementarteilchen:Photonen}{Photonen} – ebenso wie für alle'."\n".
-                    '\\jump{OM:FrQFT:Elementarteilchen:Elementarteilchen-mit-Ruhemasse}{Teilchen mit Ruhemasse} – zum Beispiel \\jump{OM:FrQFT:Lepton}{Leptonen} und \\jump{OM:FrQFT:ElektroschwacheWW:Quarks}{Quarks}. \\\\'."\n".
+                    '\\jump{OM:FrQFT:Elementarteilchen:Elementarteilchen-mit-Ruhemasse}{Teilchen mit Ruhemasse}\\footnote{\\const{FrQFT_g_footnote_text_Ruhemasse}} (mit Materieinhalt) – zum Beispiel \\jump{OM:FrQFT:Lepton}{Leptonen} und \\jump{OM:FrQFT:ElektroschwacheWW:Quarks}{Quarks}. \\\\'."\n".
                     'Bei Teilchenkollisionen oder -reaktionen formieren sich Wirkungsquanten dieser Wirkungsquanten-Strings nach den Regeln der Erhaltungssätze um; die Schwärme gruppieren sich neu.'."\n".
                     'Dies kann einfach eine Bewegungsänderung\\color{*Bearb}{(Link)} bedeuten oder auch eine \\jump{OM:FrQFT:ElektroschwacheWW:Teilchenumwandlungen}{Teilchenumwandlung}.'."\n".
                     'Da alle Eigenschaften der Elementarteilchen der Struktur ihrer Wirkungsquanten-Strings entspringt bedeutet jede Umformierung der Wirkungsquanten deren Veränderung. \\\\'."\n".
@@ -105,7 +105,7 @@
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '(• Film vom Lepton und seine Spins.)',
-                    '(• Ruhemasse\\footnote[0000D0]{Vgl. \\cite{wiki:Masse2013}, Spezielle Relativitätstheorie, Ruhemasse.)',
+                    '(• Ruhemasse\\footnote{\\const{FrQFT_g_footnote_text_Ruhemasse}})',
                     ))),
                       
                   array( 'text', array( text => array(

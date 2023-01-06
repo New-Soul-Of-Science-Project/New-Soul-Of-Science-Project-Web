@@ -128,7 +128,7 @@
                       'In Regelprozessen gibt es Kräfte oder Wechselwirkungen, die etwas regeln; etwas auf einer Bahn oder in einem Gleichgewicht – in einer Balance – halten, können wir auch sagen.'."\n".
                     'Spieler und Gegenspieler also.'."\n".
                     'Dies erinnert zum Beispiel an ein wichtiges Grundprinzip der newtonschen Physik, nämlich an Actio gleich Reactio,'."\n".
-                    'auch wenn dieses Prinzip in der Relativitätstheorie in Bezug auf das „gleich“ keine Allgemeingültigkeit besitzt.\\footnote{Internet: \\\\ Vgl. \\cite{wiki:ActioUndReactio:2018}.}'."\n",
+                    'auch wenn dieses Prinzip in der Relativitätstheorie in Bezug auf das „gleich“ keine Allgemeingültigkeit besitzt.\\footnote{\\const{FrQFT_g_footnote_text_ActioUndReactio}}'."\n",
                       'Regelprozesse müssen in ihrer Symmetrie immer gebrochen sein:'."\n".
                     'Denn aus struktureller Perspektive wird etwas auf einer Kreisbahn gehalten.'."\n".
                     'Die Wechselwirkung, die etwas, dass sich um den Kreismittelpunkt bewegt, immer wieder zu ihm hin dirigiert, muss in Bezug auf den Kreis eine andere Geometrie haben,'."\n".
@@ -229,7 +229,7 @@
                     'Der größte Erfolg bisher ist ganz sicher die realistische Beschreibung der Quantengravitation der Elementarteilchen.'."\n".
                     'Sie ergibt sich aus der Wirkung der dynamischen Feinstruktur eines Elementarteilchens auf andere Elementarteilchen in seiner Umgebung.'."\n",
                       'Die daraus berechneten Formeln für die Lichtablenkung entsprechen genau denen, die sich aus der Schwarzschild-Lösung der Allgemeinen Relativitätstheorie ergeben.'."\n".
-                    'Daraus ergibt sich die entsprechende gravitative Wirkung der Schwarzschild-Lösung auf Elementarteilchen mit Ruhemasse in diesem Modell.'."\n"))),
+                    'Daraus ergibt sich die entsprechende gravitative Wirkung der Schwarzschild-Lösung auf Elementarteilchen mit Ruhemasse (mit Materieinhalt) in diesem Modell.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Elektromagnetismus} \\\\'."\n".
                     'Der Elektromagnetismus wird bisher nur qualitativ beschrieben.'."\n",

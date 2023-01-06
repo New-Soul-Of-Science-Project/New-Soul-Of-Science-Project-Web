@@ -181,7 +181,7 @@
                         'elektrisch positiv oder negativ geladen sowie ungeladen',
                         'schwache Ladung',
                         'keine starke Ladung',
-                        'Ruhemasse',
+                        'Ruhemasse (Materieinhalt)',
                         'Spin',
                         'magnetisches Moment des Spins',
                     ))),
@@ -222,7 +222,7 @@
                         '\\condb{Schwache Ladung} \\\\'."\n".
                           'Während die schwache Ladung durch eine Asymmetrie der räumlichen und zeitlichen Verteilung der elektrischen Ladung zu erklären ist.',
                         '\\condb{Ruhemasse} \\\\'."\n".
-                          'Die Ruhemasse wird durch die Anzahl der Wirkungsquanten im String verständlich, die jedes eine Masseneinheit sind.'."\n".
+                          'Die Ruhemasse\\footnote{\\const{FrQFT_g_footnote_text_Ruhemasse}} (Materieinhalt) wird durch die Anzahl der Wirkungsquanten \\color{*Bearb}{(dies ist die Masse und nicht die Ruhemasse!)} im String verständlich, die jedes eine Masseneinheit sind.'."\n".
                           'Aus energetischer Perspektive wird sie durch die gebundene, einheitliche Bewegungsenergie jedes Wirkungsquants im String erzeugt.',
                     ))),
                   array( 'text', array( text => array(

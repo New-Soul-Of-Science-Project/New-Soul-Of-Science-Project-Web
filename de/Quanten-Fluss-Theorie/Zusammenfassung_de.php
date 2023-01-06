@@ -108,7 +108,7 @@
                         '\\jump[][000AC4]{OM:FrQFT:Lepton}{Leptonen} und Hadronen\\color{*Bearb}{(Verweis)} durch die Bewegungsebenen bestimmt sind.'."\n".
                         'Hier bekommt der simple Elapsonen-String\\color{*Bearb}{(Verweis)}'."\n".
                         'zusätzliche innere Spiralwicklungen, die sich quasi als Pseudoebenen oben auf die höchste Ebene der Elementarteilchen legen.'."\n".
-                        'Diese zusätzlichen Strukturen erzeugen dann ganz neue Eigenschaften, wie elektromagnetisches Feld, schwaches Feld und Ruhemasse.'."\n".
+                        'Diese zusätzlichen Strukturen erzeugen dann ganz neue Eigenschaften, wie elektromagnetisches Feld, schwaches Feld und Ruhemasse\\footnote{\\const{FrQFT_g_footnote_text_Ruhemasse}}.'."\n".
                         'Das starke Feld ist schon Bestandteil der Strings und offenbart sich zusätzlich auf neue Weise.\\color{*Bearb}{(Link, Verweis auf Giese)}'."\n"),
                   array( 'normal',
                     'Die Helixspirale bestimmt so als Kombination aus Translation und Rotation die gesamte Physik.'."\n"),

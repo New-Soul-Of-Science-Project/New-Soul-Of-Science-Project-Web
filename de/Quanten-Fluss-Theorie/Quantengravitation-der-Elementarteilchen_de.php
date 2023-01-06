@@ -1696,7 +1696,7 @@
                       
                   array( 'text', array( text => array(
                     'Die uns im Alltag begegnende Gravitation, also der Grund, warum der Apfel von Baum fällt oder die Planeten um die Sonne kreisen, beruht in der Quanten-Fluss-Theorie,'."\n".
-                    'sehr ähnlich wie in Gieses Basisteilchenmodell, auf der dynamischen Struktur der Materie-Elementarteilchen-Strings (Teilchen mit Ruhemasse).'."\n"))),
+                    'sehr ähnlich wie in Gieses Basisteilchenmodell, auf der dynamischen Struktur der Materie-Elementarteilchen-Strings (Teilchen mit Ruhemasse beziehungsweise Materieinhalt).'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Mechanismus-der-Gravitation:XXX', text =>
                                            
                 'Berechnung der Gravitation', subline =>
