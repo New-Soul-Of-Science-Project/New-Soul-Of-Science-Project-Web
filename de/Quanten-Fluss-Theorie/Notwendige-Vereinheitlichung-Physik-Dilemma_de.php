@@ -297,15 +297,17 @@
               'Punktförmige Elementarteilchen, Schwarze Löcher, der Urknall und Co. \\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '(• Singularität sind unphysikalisch, da es zu unendlichen Werten auf endlichem Raum kommt.\\footnote{Unnatürliche Unendlichkeiten: \\\\ \\const{FrQFT_g_footnote_text_Unendlichkeiten}}\\footnote{Unvollständigkeit der Allgemeinen Relativitätstheorie: \\\\ \\const{FrQFT_g_footnote_text_ARTUnvollstaendig}}\\footnote{Unvollständigkeit der Quantenphysik: \\\\ \\const{FrQFT_g_footnote_text_QuantenphysikUnvollst}})',
-                    '(• Beim Urknall soll das Universum angeblich aus dem Nichts entstanden sein. Dies ist aber unlogisch und unphysikalisch: Wie etwas aus Nichts entstehen soll wird nicht erklärt. Nach logischem Verständnis ist ein solches Wunder auch nicht möglich. Darüberhinaus ist jede Form einer Urknallsingularität unphysikalisch.)',
-                    '(Fachdiskussion:)',
-                    '(• Quantenmechanik hilft wohl nicht bei der Beseitigung der Urknallsingularität.\\footnote[*Bearb]{Sekundärliteratur: \\\\ Vgl. \\cite{Fischer:KeinAuswegAusUrknall-Unendlichkeit:2017}.})',
-                    '(• Dies ist auch ein Ansatzpunkt der Erkenntnistheorie des Plausibilismus.)',
+                    '• Singularitäten sind unphysikalisch, da sie zu unendlichen Werten auf endlichem Raum führen.\\footnote{Unnatürliche Unendlichkeiten: \\\\ \\const{FrQFT_g_footnote_text_Unendlichkeiten}}\\footnote{Unvollständigkeit der Allgemeinen Relativitätstheorie: \\\\ \\const{FrQFT_g_footnote_text_ARTUnvollstaendig}}\\footnote{Unvollständigkeit der Quantenphysik: \\\\ \\const{FrQFT_g_footnote_text_QuantenphysikUnvollst}}',
+                    '• Beim Urknall soll das Universum angeblich aus dem Nichts entstanden sein. Dies ist aber unlogisch und unphysikalisch: Wie etwas aus Nichts entstehen soll wird nicht erklärt. Nach logischem Verständnis ist ein solches Wunder auch nicht möglich. Darüberhinaus ist jede Form einer Urknallsingularität unphysikalisch.',
+                    '\\bold{Fachdiskussion}',
+                    '• Quantenmechanik hilft wohl nicht bei der Beseitigung der Urknallsingularität.\\footnote[*Bearb]{Sekundärliteratur: \\\\ Vgl. \\cite{Fischer:KeinAuswegAusUrknall-Unendlichkeit:2017}.}',
+                    '• Dies ist auch ein Ansatzpunkt der Erkenntnistheorie des Plausibilismus.',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Vgl. \\cite{Lesch:Kosmologie2006}, Kap. III. Dunkle Energie, Gleichungen – Lösungen, S. 93-98, hier S. 96-98.'."\n"))),
+                    'Vgl. \\cite{Lesch:Kosmologie2006}, Kap. III. Dunkle Energie, Gleichungen – Lösungen, S. 93-98, hier S. 96-98.'."\n",
+                      'Vgl. das Zitat von Lee Smolin im Kapitel \\jumpname{OM:FrQFT:Einleitung:Ausgangssituation:GesuchteVereinheitlichung}.'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n"))),
                       
@@ -346,12 +348,12 @@
               'Die Werte der Naturkonstanten erscheinen recht willkürlich', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '(Fachdiskussion:)',
-                    '(• Siehe: Hossenfelder, Sabine. \\jump[http://backreaction.blogspot.com/2017/06/if-tensions-in-cosmological-data-are.html]{}{If tensions in cosmological data are not measurement problems, they probably mean dark energy changes}.)',
+                    '\\bold{Fachdiskussion}',
+                    '• Siehe: Hossenfelder, Sabine. \\jump[http://backreaction.blogspot.com/2017/06/if-tensions-in-cosmological-data-are.html]{}{If tensions in cosmological data are not measurement problems, they probably mean dark energy changes}.',
                     ))),
                       
                   array( 'normal',
-                    '… es ist erstrebenswert, dass sich die Werte der Naturkonstanten aus strukturellen Zusammenhängen ergeben.'."\n".
+                    '… es ist erstrebenswert, dass sich die Werte der Naturkonstanten aus strukturellen Zusammenhängen ergeben.\\footnote{\\const{FrQFT_g_footnote_text_ProblemDerNaturkonstanten}}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -361,6 +363,7 @@
                     'XXX'."\n".
                     'XXX'."\n"),
                   array( 'normal',
+                    'Natürlichkeitsproblem\\footnote{\\const{FrQFT_g_footnote_text_Natuerlichkeit}}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
