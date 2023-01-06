@@ -220,6 +220,7 @@
                                           'wiki:Schwarzschild-Metrik:2020',
                                           'wiki:SingularitaetAstronomie:2022',
                                           'wiki:SpezielleRelativitaetstheorie2013',
+                                          'wiki:Spin:2022',
                                           'wiki:SpontaneSymmetriebrechung2014',
                                           'wiki:Standardabweichung2013',
                                           'wiki:StarkeWechselwirkung:2019',
