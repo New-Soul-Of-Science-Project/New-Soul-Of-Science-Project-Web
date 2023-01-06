@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 04.11.2022, 18:00h
+  // #: Stand: 23.12.2022, 12:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20221223:  !:  "$To_g_Text_replace_ary":  move '-Quantenfeldtheorie-' to website file.
   //           20221104:  >:  "To_f_Paragraph", 'text': New 'Shape' 'derivation':  Added class: 'tools-class-text-derivation'.
   //           20220807:  +:  "To_f_Paragraph", "fade-in-area":  Fix mix-up in comparison to the other cases of 'hideContent' and 'showContent' in 'fade-in-area' and 'notice'.
   //           20220702:  +:  "$To_g_Text_replace_ary":  '∘' -> '&#8728;' entry new.
@@ -157,8 +158,8 @@
   //                      +:  "$Glo_g_Color_list":  '*SiteUndertitleH2' is new.
   //                      >:  "To_f_Color":  Add parameter '$removeNumberSign = true'.
   //           20200621:  +:  "To_f_Paragraph", 'headline':  'subline' supports now "To_f_Text_replace_html".
-  //           20200901:  +:  "$To_g_Text_replace_ary":  '↔︎' -> 'Quan&shy;ten&shy;feld&shy;the&shy;o&shy;rie' is new.
-  //           20210216:  +:  "$To_g_Text_replace_ary":  '-Quantenfeldtheorie-' -> '&harr;' is new.
+  //           20200901:  +:  "$To_g_Text_replace_ary":  '↔︎' -> '&harr;' is new.
+  //           20210216:  +:  "$To_g_Text_replace_ary":  '-Quantenfeldtheorie-' -> 'Quan&shy;ten&shy;feld&shy;the&shy;o&shy;rie' is new.
   //           20210304:  >:  "To_f_Paragraph":  'Figure': Changed table to 'margin-left: 30px; margin-right: 40px' by using the standard from 'main.css'. Then changed to 'width: 660px'.
   //           20210410:  +:  "$To_g_Text_replace_ary":  '𓇳' -> '&#78323;', '☉' -> '&#9737;' new.
   //           20210417:  !:  "$To_g_Text_replace_preg_ary":  '\\brintent' and 'callcode =>' removed.
@@ -389,66 +390,64 @@
   // #: The order of entries may be important: As example XXX.
   // !: Change name to "$To_g_HTML_replace_ary"!
   $To_g_Text_replace_ary = array(
-                                    //array( "\r\n", '<br>'),     // #!: Makes problems in the contact form.
-                                    //array( "\n", '<br>'),     // #!: Makes problems in the contact form.
-                                    //array( "\r", '<br>'),     // #!: Makes problems in the contact form.
-                                    array( ' \\\\ ', '<br>'),
-                                    array( ' \\\\', '<br>'),
-                                    array( '\\\\ ', '<br>'),
-                                    array( '\\\\', '<br>'),
-                                    array( ' ', '&thinsp;'),  // #: Siehe http://unicode-suche.de/unicode-namesearch.pl?term=SPACE
-                                    array( ' ', '&nbsp;'),
-                                    array( '&&', '&amp;'),
-                                    array( 'Ä', '&Auml;'),
-                                    array( 'É', '&Eacute;'),
-                                    array( 'Ö', '&Ouml;'),
-                                    array( 'Ü', '&Uuml;'),
-                                    array( 'ä', '&auml;'),
-                                    array( 'é', '&eacute;'),
-                                    array( 'ö', '&ouml;'),
-                                    array( 'ü', '&uuml;'),
-                                    array( 'ß', '&szlig;'),
-                                    //array( '– ', '&ndash;&nbsp;'),  // !!!: As general as here makes sometime not so nice effects. Lets do it directly in the notices …
-                                    array( '–', '&ndash;'),
-                                    array( '—', '&mdash;'),
-                                    array( '·', '&middot;'),
-                                    array( '•', '&bull;'),
-                                    array( '…', '&hellip;'),
-                                    array( '„', '&bdquo;'),
-                                    array( '“', '&ldquo;'),
-                                    array( '›', '&rsaquo;'),
-                                    array( '‹', '&lsaquo;'),
-                                    array( '»', '&raquo;'),
-                                    array( '«', '&laquo;'),
-                                    array( '−', '&minus;'),
-                                    array( '±', '&plusmn;'),
-                                    array( '½', '&frac12;'),
-                                    array( '⅓', '&frac13;'),
-                                    array( '⅔', '&frac23;'),
-                                    array( 'Ⅰ', '&#x2160;'),  // #: https://www.sql-und-xml.de/unicode-database/number-forms.html
-                                    array( 'Ⅱ', '&#x2161;'),  // #: https://www.sql-und-xml.de/unicode-database/number-forms.html
-                                    array( 'Ⅲ', '&#x2162;'),  // #: https://www.sql-und-xml.de/unicode-database/number-forms.html
-                                    array( '°', '&deg;'),
-                                    array( '©', '&copy;'),
-                                    array( '®', '&reg;'),
-                                    array( '∘', '&#8728;'),  // #: https://de.wikipedia.org/wiki/Verkettungszeichen
-                                    array( '𓇳', '&#78323;'),  // #: https://unicode-table.com/en/131F3/
-                                    array( '☉', '&#9737;'),  // #: https://unicode-table.com/en/131F3/
-                                    array( '↓', '&darr;'),
-                                    array( '↑', '&uarr;'),
-                                    array( '←', '&larr;'),
-                                    array( '→', '&rarr;'),
-                                    array( '↔︎', '&harr;'),
-                                    // #: hyphenations with &shy; — ??? this may be better added in the specific website file?
-                                    array( '-Quantenfeldtheorie-', 'Quan&shy;ten&shy;feld&shy;the&shy;o&shy;rie'),
-                                  );
+    //array( "\r\n", '<br>'),     // #!: Makes problems in the contact form.
+    //array( "\n", '<br>'),     // #!: Makes problems in the contact form.
+    //array( "\r", '<br>'),     // #!: Makes problems in the contact form.
+    array( ' \\\\ ', '<br>'),
+    array( ' \\\\', '<br>'),
+    array( '\\\\ ', '<br>'),
+    array( '\\\\', '<br>'),
+    array( ' ', '&thinsp;'),  // #: Siehe http://unicode-suche.de/unicode-namesearch.pl?term=SPACE
+    array( ' ', '&nbsp;'),
+    array( '&&', '&amp;'),
+    array( 'Ä', '&Auml;'),
+    array( 'É', '&Eacute;'),
+    array( 'Ö', '&Ouml;'),
+    array( 'Ü', '&Uuml;'),
+    array( 'ä', '&auml;'),
+    array( 'é', '&eacute;'),
+    array( 'ö', '&ouml;'),
+    array( 'ü', '&uuml;'),
+    array( 'ß', '&szlig;'),
+    //array( '– ', '&ndash;&nbsp;'),  // !!!: As general as here makes sometime not so nice effects. Lets do it directly in the notices …
+    array( '–', '&ndash;'),
+    array( '—', '&mdash;'),
+    array( '·', '&middot;'),
+    array( '•', '&bull;'),
+    array( '…', '&hellip;'),
+    array( '„', '&bdquo;'),
+    array( '“', '&ldquo;'),
+    array( '›', '&rsaquo;'),
+    array( '‹', '&lsaquo;'),
+    array( '»', '&raquo;'),
+    array( '«', '&laquo;'),
+    array( '−', '&minus;'),
+    array( '±', '&plusmn;'),
+    array( '½', '&frac12;'),
+    array( '⅓', '&frac13;'),
+    array( '⅔', '&frac23;'),
+    array( 'Ⅰ', '&#x2160;'),  // #: https://www.sql-und-xml.de/unicode-database/number-forms.html
+    array( 'Ⅱ', '&#x2161;'),  // #: https://www.sql-und-xml.de/unicode-database/number-forms.html
+    array( 'Ⅲ', '&#x2162;'),  // #: https://www.sql-und-xml.de/unicode-database/number-forms.html
+    array( '°', '&deg;'),
+    array( '©', '&copy;'),
+    array( '®', '&reg;'),
+    array( '∘', '&#8728;'),  // #: https://de.wikipedia.org/wiki/Verkettungszeichen
+    array( '𓇳', '&#78323;'),  // #: https://unicode-table.com/en/131F3/
+    array( '☉', '&#9737;'),  // #: https://unicode-table.com/en/131F3/
+    array( '↓', '&darr;'),
+    array( '↑', '&uarr;'),
+    array( '←', '&larr;'),
+    array( '→', '&rarr;'),
+    array( '↔︎', '&harr;'),
+  );
 
 
   function To_f_replace_str_ary( $the_str, $replace_str_ary)
   {
     $ret_str = $the_str;
     
-    // #: "str_replace()" may be a quicker solution but works different, because it starts not everytime from the string begin when replaces!
+    // #: "str_replace()" may be a quicker solution but works different, because it starts not every time from the string begin when replaces!
     
     //print_r( $replace_str_ary);
     foreach ($replace_str_ary as $value)

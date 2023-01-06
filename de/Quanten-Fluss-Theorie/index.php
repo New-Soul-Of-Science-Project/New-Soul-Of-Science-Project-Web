@@ -153,8 +153,8 @@
                   array( 'text', array( text => array(
                   '\\condb{Naturphilosophische Einsichten – First Principles} \\\\'."\n".
                     'Im Zentrum der neuen Physik stehen neue naturphilosophische Einsichten, mit deren Hilfe die moderne Physik analysiert und neu interpretiert wird.'."\n".
-                    'So wird ein Weg deutlich, wie die heute unverträglich erscheinenden Interpretationen der Quantenphysik und der Allgemeinen Relativitätstheorie'."\n".
-                    'verändert werden können, um deren Vereinheitlichung nicht weiter zu behindern.'."\n",
+                    'So wird ein Weg erkennbar, wie die heute unverträglich erscheinenden Interpretationen der Quantenphysik und der Allgemeinen Relativitätstheorie'."\n".
+                    'modifiziert werden können, ohne deren für die Physik wesentlichen Kern zu verlieren, um ihre Vereinheitlichung nicht weiter zu behindern.'."\n",
                       'Das jeder Existenz zugrunde liegende fraktale naturphilosophische Prinzip beschreibt wie die Bewegungsstruktur der Bestandteile der Dinge mit deren'."\n".
                     'Stabilität und deren Fortentwicklung – deren Entstehung, deren Transformation und deren Zerfall oder Zerstörung – verbunden ist.'."\n".
                     'Dieses Prinzip beschreibt die Organisation der Balance zwischen Ordnung und Chaos.'."\n"))),
@@ -162,11 +162,11 @@
                   '\\condb{Mit der Relativitätstheorie verträgliche Überlichtgeschwindigkeit} \\\\'."\n".
                     'Ausgehend von diesem Prinzip zeigt sich, dass ein differenziertes Verständnis der Zeit, einen Ausweg aus der heutigen Sackgasse der theoretischen Physik bietet.'."\n".
                     'Dieses differenzierte Verständnis der Zeit basiert auf der Analyse von Veränderungsprozessen strukturiert gedachter Elementarteilchen.'."\n",
-                      'Die Veränderung der hypothetischen Feinstruktur der Elementarteilchen vollzieht sich demnach mit Überlichtgeschwindigkeit.'."\n".
-                    'Die Analyse macht jedoch erkennbar, dass diese Form der Überlichtgeschwindigkeit nicht dem Grundgedanken der Relativitätstheorie widerspricht.'."\n".
+                      'Die innere Veränderung der hypothetischen Feinstruktur der Elementarteilchen vollzieht sich demnach mit Überlichtgeschwindigkeit.'."\n".
+                    'Die Analyse macht jedoch deutlich, dass diese Form der Überlichtgeschwindigkeit nicht dem Grundgedanken der Relativitätstheorie widerspricht.'."\n".
                     'Dies kommt, weil hierbei die strukturelle Alterung eines Elementarteilchens, im Sinne seines zeitlichen Reifeprozesses, auf die Lichtgeschwindigkeit begrenzt bleibt.'."\n",
-                      'Nur eine der Quantenphysik entspringende, rotierende Schwingungsbewegung der Elementarteilchen-Struktur geht über die Lichtgeschwindigkeit hinaus.'."\n".
-                    'Sie hat aber für deren Alterung – deren nachhaltige Veränderung – keine Bedeutung, sondern nur für deren Stabilität,'."\n".
+                      'Nur eine neue, der Quantenphysik entspringende Schwingungsbewegung der Elementarteilchen-Struktur geht über die Lichtgeschwindigkeit hinaus.'."\n".
+                    'Sie hat aber für deren Alterung – deren aus der Allgemeinen Relativitätstheorie bekannte zeitliche Veränderung – keine Bedeutung, sondern nur für deren Stabilität,'."\n".
                     'weil sie deren Struktur nach einem bestimmten Zeitinterval in den ununterscheidbaren Ausgangszustand zurückführt.'."\n".
                     'Diese Schwingung entspricht dem Informationsgehalt der Struktur.'."\n"))),
                   array( 'text', array( text => array(
@@ -181,7 +181,7 @@
                     'unterschiedlicher Struktur und Komplexität erscheinen.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Beschreibung der Quantengravitation \\\\ Verständnis des Phänomens der Dunklen Materie \\\\ Einblicke in Schwarze Löcher und Verständnis des Urknalls} \\\\'."\n".
-                    'Die dynamisch-strukturelle Perspektive der neuen Physik erklärt alle bekannten Wechselwirkungen mit geometrischen Symmetriebrüchen.'."\n".
+                    'Die dynamisch-strukturelle Perspektive der neuen Physik erklärt alle bekannten Wechselwirkungen mit dynamisch-strukturellen und geometrischen Symmetriebrüchen.'."\n".
                     'Die so gefundene Quantengravitation beinhaltet ein Verständnis des Phänomens der Dunklen Materie, gibt einen tiefen Einblick in das Innere Schwarzer Löcher,'."\n".
                     'in die Ursache und den Ablauf des Urknalls unseres Kosmos und in die fraktale Struktur des Universums, seines Vakuums und seiner Elementarteilchen.'."\n"))),
                   array( 'text', array( text => array(

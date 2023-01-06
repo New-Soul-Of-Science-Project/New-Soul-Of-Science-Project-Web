@@ -297,29 +297,31 @@
   
   // #: The order of entries may be important: As example XXX.
   // !: Change name to "$Sc_g_HTML_replace_ary"!
-  $Sc_g_Text_replace_ary = array_merge( $To_g_Text_replace_ary,
-                                  array(
-                                    array( 'ℏ', '&#x210F;'),
-                                    array( '⍺', '&#9082;'),     // #: Apl functional symbol alpha: "&alpha;" looks to close to "a"!
-                                    //array( '⍺', '&alpha;'),     // #: "&alpha;" looks to close to "a"!
-                                    array( 'π', '&pi;'),
-                                    array( 'λ', '&lambda;'),
-                                    array( 'γ', '&gamma;'),
-                                    array( '𝝂', '&#120642;'),
-                                    //array( 'ν', '&nu;'),     // #: "&nu;" looks to close to "v"!
-                                    array( 'ρ', '&rho;'),
-                                    array( 'φ', '&phi;'),
-                                    array( '⍵', '&omega;'),
-                                    array( 'Δ', '&Delta;'),
-                                    array( '≈', '&asymp;'),
-                                    array( '⋅', '&sdot;'),
-                                    array( '√', '&radic;'),
-                                    array( '\M(N)', '&#8469;'),  // #: Double-struck capital n: http://unicode-table.com/de/2115/
-                                    array( '\M(P)', '&#8473;'),  // #: Double-struck capital p: http://unicode-table.com/de/2119/
-                                    array( '\M(S)', '&#120138;'),  // #: Mathematical Double-Struck Capital S: http://unicode-table.com/de/1D54A/
-                                    array( '\M(T)', '&#120139;'),  // #: Mathematical Double-Struck Capital T: http://unicode-table.com/de/1D54B/
-                                    array( '\M(U)', '&#120140;'),  // #: Mathematical Double-Struck Capital U: http://unicode-table.com/de/1D54C/
-                                  ));
+  $Sc_g_Text_replace_ary = array_merge(
+    $To_g_Text_replace_ary,
+    array(
+      array( 'ℏ', '&#x210F;'),
+      array( '⍺', '&#9082;'),     // #: Apl functional symbol alpha: "&alpha;" looks to close to "a"!
+      //array( '⍺', '&alpha;'),     // #: "&alpha;" looks to close to "a"!
+      array( 'π', '&pi;'),
+      array( 'λ', '&lambda;'),
+      array( 'γ', '&gamma;'),
+      array( '𝝂', '&#120642;'),
+      //array( 'ν', '&nu;'),     // #: "&nu;" looks to close to "v"!
+      array( 'ρ', '&rho;'),
+      array( 'φ', '&phi;'),
+      array( '⍵', '&omega;'),
+      array( 'Δ', '&Delta;'),
+      array( '≈', '&asymp;'),
+      array( '⋅', '&sdot;'),
+      array( '√', '&radic;'),
+      array( '\M(N)', '&#8469;'),  // #: Double-struck capital n: http://unicode-table.com/de/2115/
+      array( '\M(P)', '&#8473;'),  // #: Double-struck capital p: http://unicode-table.com/de/2119/
+      array( '\M(S)', '&#120138;'),  // #: Mathematical Double-Struck Capital S: http://unicode-table.com/de/1D54A/
+      array( '\M(T)', '&#120139;'),  // #: Mathematical Double-Struck Capital T: http://unicode-table.com/de/1D54B/
+      array( '\M(U)', '&#120140;'),  // #: Mathematical Double-Struck Capital U: http://unicode-table.com/de/1D54C/
+    )
+  );
 
   // #: Replaces all simple LaTeX character notations with the usual chars.
   // #: The order of entries may be important: As example XXX.

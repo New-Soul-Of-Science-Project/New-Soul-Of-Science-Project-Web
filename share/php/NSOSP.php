@@ -3,7 +3,7 @@
   // #: Name:  "NSOSP.php"
   
   
-  // #: Stand: 15.08.2021
+  // #: Stand: 29.12.2022
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
@@ -36,6 +36,20 @@
   
   
   include $Glo_PathRel_back.'../share/php/Science.php';
+  
+  $nSOSp_g_addOn_Text_replace_ary = array(
+    // #: hyphenations with "&shy;":
+    //      – is necessary if a word is followed by a footnote as examples: "Quan­ten­feld­the­o­rie19" or "Re­la­ti­vi­täts­the­o­rie20"
+    array( '-Quantenfeldtheorie-', 'Quan&shy;ten&shy;feld&shy;the&shy;o&shy;rie'),
+    array( '-Relativitätstheorie-', 'Re&shy;la&shy;ti&shy;vi&shy;täts&shy;the&shy;o&shy;rie'),
+  );
+
+  // #: "$nSOSp_g_addOn_Text_replace_ary" must be merge to the beginning of "$To_g_Text_replace_ary", because it includes "ä" which must be replaced later in the order.
+  $To_g_Text_replace_ary = array_merge( $nSOSp_g_addOn_Text_replace_ary, $To_g_Text_replace_ary);
+
+  // #: "$nSOSp_g_addOn_Text_replace_ary" must be merge to the beginning of "$Sc_g_Text_replace_ary", because it includes "ä" which must be replaced later in the order.
+  $Sc_g_Text_replace_ary = array_merge( $nSOSp_g_addOn_Text_replace_ary, $Sc_g_Text_replace_ary);
+
 
   
   $nSOSp_g_info_wolfgangHuss = array(
@@ -143,6 +157,7 @@
   
   $NSOSP_g_footnote_text_PeanoAxiome            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:PeanoAxiome:2021}, Axiome, Ursprüngliche Formalisierung.';
 
+  $FrQFT_g_footnote_text_ActioUndReactio        = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:ActioUndReactio:2018}.';
   $FrQFT_g_footnote_text_AequivalPrinzTraeSchMasse = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, S. 2-6. \\\\ Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290, hier S. 253-260. \\\\ Vgl. \\cite{Born:RTEinsteins1969}, Kap. VII. Die allgemeine Relativitätstheorie Einsteins, S. 266-324, hier S. 269-273. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, S. 58-61. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Aequivalenzprinzip2014}.';
   $FrQFT_g_footnote_text_AequivalMasseEnergie   = 'Vgl. \\cite{Einstein:IstDieTraegheitSeinEnergieInhalt1905}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:AequivalenzVonMasseUndEnergie2013}.';
   $FrQFT_g_footnote_text_Annihilation           = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Annihilation:2015}.';
@@ -160,9 +175,9 @@
   $FrQFT_g_footnote_text_ComptonFrequenz        = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 17 Die kosmischen Zahlen, S. 516-542, hier S. 518-523. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Compton-Effekt:2015}, Compton-Wellenlänge. Die Compton-Frequenz lässt sich aus der Compton-Wellenlänge berechnen.';
   $FrQFT_g_footnote_text_ComptonFrequenzGravi   = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, S. 12-14. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, 63-64.\\hidden{ \\\\ Internet: \\\\ \\color{*Bearb}{XXX}}';
   $FrQFT_g_footnote_text_Confinement            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Ent:DerKlebstoffDerWelt:2015}, S. 60, 61. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Confinement2013}. \\\\ Vgl. \\cite{Alkofer:QuarkConfinementOnline2006}, S. 1.';
-  $FrQFT_g_footnote_text_DeBroglieBohmTheorie   = '\\color{*Bearb}{(Weitere Fachliteratur einfügen!)} \\\\ Vgl. \\cite{Schaal:InwieweitIstEineRelativistischeFormulierungDerBohmschenMechanikMoeglich:2014}. \\\\ Populärwissenschaftliche Literatur: \\\\ Vgl. \\cite{Ananthaswamy:KeinAuswegAusDerUnwirklichkeit:2018}, S. 17, 19. \\\\ Internet: \\\\ Vgl. \\cite{wiki:De-Broglie-Bohm-Theorie:2018}.';
-  $FrQFT_g_footnote_text_DeBroglieBohmTheorieKonsQM  = '\\color{*Bearb}{(Weitere Fachliteratur einfügen!)} \\\\ Vgl. \\cite{Schaal:InwieweitIstEineRelativistischeFormulierungDerBohmschenMechanikMoeglich:2014}, Kap. 2. Grundkonzepte der Bohmschen Mechanik, 2.1. Realitätsbezug, S. 2-5, hier S. 5. \\\\ Populärwissenschaftliche Literatur: \\\\ Vgl. \\cite{Ananthaswamy:KeinAuswegAusDerUnwirklichkeit:2018}, S. 17, 19. \\\\ Internet: \\\\ Vgl. \\cite{wiki:De-Broglie-Bohm-Theorie:2018}.';
-  $FrQFT_g_footnote_text_DeBroglieFrequenzWellen = '\\color{*Bearb}{(Weitere Fachliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Materiewelle:2020}.';
+  $FrQFT_g_footnote_text_DeBroglieBohmTheorie   = '\\color{*Bearb}{(Weitere Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Schaal:InwieweitIstEineRelativistischeFormulierungDerBohmschenMechanikMoeglich:2014}. \\\\ Populärwissenschaftliche Literatur: \\\\ Vgl. \\cite{Ananthaswamy:KeinAuswegAusDerUnwirklichkeit:2018}, S. 17, 19. \\\\ Internet: \\\\ Vgl. \\cite{wiki:De-Broglie-Bohm-Theorie:2018}.';
+  $FrQFT_g_footnote_text_DeBroglieBohmTheorieKonsQM  = '\\color{*Bearb}{(Weitere Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Schaal:InwieweitIstEineRelativistischeFormulierungDerBohmschenMechanikMoeglich:2014}, Kap. 2. Grundkonzepte der Bohmschen Mechanik, 2.1. Realitätsbezug, S. 2-5, hier S. 5. \\\\ Populärwissenschaftliche Literatur: \\\\ Vgl. \\cite{Ananthaswamy:KeinAuswegAusDerUnwirklichkeit:2018}, S. 17, 19. \\\\ Internet: \\\\ Vgl. \\cite{wiki:De-Broglie-Bohm-Theorie:2018}.';
+  $FrQFT_g_footnote_text_DeBroglieFrequenzWellen = '\\color{*Bearb}{(Weitere Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Materiewelle:2020}.';
   $FrQFT_g_footnote_text_DoppelSpaltExp         = 'Vgl. \\cite{Feynman:Quantenmechanik2009}, Kap. 1 Quantenverhalten, S. 3-15. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Doppelspaltexp2013}.';
   $FrQFT_g_footnote_text_Dualismus              = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Dualismus:2015}.';
   $FrQFT_g_footnote_text_DunkleEnergie          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur \\\\ Vgl. \\cite{Frieman:DasDunkelsteGeheimnis:2016}.';
@@ -194,7 +209,7 @@
   $FrQFT_g_footnote_text_InertSys               = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Inertialsystem2014}.';
   $FrQFT_g_footnote_text_Neutrinos              = 'Vgl. \\cite{Fritzsch:Mikrokosmos2012}, 7. Kap. Oszillierende Neutrinos, S. 119-127. \\\\ Vgl. \\cite{wiki:Neutrino2013}.';
   $FrQFT_g_footnote_text_Natuerlichkeit         = '\\color{*Bearb}{(Primärliteratur einfügen!!!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Gast:AmEndeDerNatuerlichkeit:2018}. \\\\ Internet: \\\\ \\cite{wiki:Natuerlichkeitsproblem:2022}.';
-  $FrQFT_g_footnote_text_NotNeuePhysik          = '\\color{*Bearb}{(Fachliteratur einfügen!!!)} \\\\ Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 1 Die fünf großen Probleme der theoretischen Physik, S. 31-48. \\\\ Populärwissenschaftliche Literatur: \\\\ Vgl. \\cite{Kiefer:WegZurQG2012}, S. 34-35, 38. \\\\ Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 30-31. \\\\ Vgl. \\cite{Nicolai:AufPhysWeg21j2008}, S. 31. \\\\ Vgl. \\cite{Boerner:DunkEnergie2008}, S. 43. \\\\ Vgl. \\cite{Nicolai:GrossVereinig2005}, S. 84-85. \\\\ Vgl. \\cite{Smolin:QuantRaum2004}, S. 56. \\\\ Video: \\\\ Vgl. \\cite{SpektrumDerWissenschaft:WieFunktioniertDieSchwerkraftAufQuantenebene:2017}';
+  $FrQFT_g_footnote_text_NotNeuePhysik          = '\\color{*Bearb}{(Primärliteratur einfügen!!!)} \\\\ Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 1 Die fünf großen Probleme der theoretischen Physik, S. 31-48. \\\\ Populärwissenschaftliche Literatur: \\\\ Vgl. \\cite{Kiefer:WegZurQG2012}, S. 34-35, 38. \\\\ Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 30-31. \\\\ Vgl. \\cite{Nicolai:AufPhysWeg21j2008}, S. 31. \\\\ Vgl. \\cite{Boerner:DunkEnergie2008}, S. 43. \\\\ Vgl. \\cite{Nicolai:GrossVereinig2005}, S. 84-85. \\\\ Vgl. \\cite{Smolin:QuantRaum2004}, S. 56. \\\\ Video: \\\\ Vgl. \\cite{SpektrumDerWissenschaft:WieFunktioniertDieSchwerkraftAufQuantenebene:2017}';
   $FrQFT_g_footnote_text_MachPrinz              = 'Vgl. \\cite{Fliessbach:ART1998}, Teil IX Dynamische Sternmodelle, Kap. 44 Isotrope zeitabhängige Metrik und Birkhoff-Theorem, Machsches Prinzip, S. 253-254. \\\\ Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290, hier S. 278-282. \\\\ Vgl. \\cite{Born:RTEinsteins1969}, Kap. VII. Die allgemeine Relativitätstheorie Einsteins, S. 266-324, hier S. 311-321, besonders 268, 311, 318. \\\\ Internet: \\\\ Vgl. \\cite{wiki:MachschesPrinzip2014}.';
   // #: Siehe auch für Veränderungen "FrQFT_g_footnote_text_LGEinZweiWeg".
   $FrQFT_g_footnote_text_MediumMessenLGEinZweiWeg = 'Das wir unsere Relativgeschwindigkeit im Medium nicht messen können, dass liegt daran, dass wir nur in der Lage sind die Zweiweg-Lichtgeschwindigkeit zu messen, nicht aber die Einweg-Lichtgeschwindigkeit: \\\\ \\const{FrQFT_g_footnote_text_LGEinZweiWeg}';
@@ -241,6 +256,8 @@
   $FrQFT_g_footnote_text_Quantengravi           = 'Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 6 Quantengravitation: Am Scheideweg, S. 126-149. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Kiefer:WegZurQG2012}. \\\\ Vgl. \\cite{Nicolai:AufPhysWeg21j2008}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Quantengravitation2013}. \\\\ Vgl. \\cite{MaxPlanckInstituteForGravitationalPhysics:RelativitaetUndQuanten2013}. \\\\ Vgl. \\cite{Smolin:SchauspielVeraeBuehne2005}.';
   $FrQFT_g_footnote_text_Quantenphysik          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Quantenphysik2013}.';
   $FrQFT_g_footnote_text_QuantenphysikUnvollst  = 'Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 1 Die fünf großen Probleme der theoretischen Physik, S. 31-48, hier S. 33.';
+  // #: Siehe auch für Veränderungen "$SpaLeb_g_footnote_text_BiologischeRegelung".
+  $FrQFT_g_footnote_text_Regelung               = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:BiologischeRegelung:2021}. \\\\ Vgl. \\cite{SpektrumAkademischerVerlag:Regelung:1999}.';
   $FrQFT_g_footnote_text_RelatPrinzip           = 'Vgl. \\cite{Selleri:EinsteinLorentz1998}, Kap. 3. Das Relativitätsprinzip und die Natur der Zeit, S. 38-74. \\\\ Vgl. \\cite{Born:RTEinsteins1969}, Kap. VI. Das spezielle Einsteinsche Relativitätsprinzip, 194-266, hier S. 200-205. \\\\ Internet: \\\\ Vgl. \\cite{MaxPlanckInstituteForGravitationalPhysics:Relativitaetsprinzip2014}. \\\\ Vgl. \\cite{wiki:Relativitaetsprinzip2014}.';
   $FrQFT_g_footnote_text_Renormierung           = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, S. 17, 19 und Kasten S. 21. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Renormierung:2018}.';
   $FrQFT_g_footnote_text_RTKeinGleichzeit       = 'Vgl. \\cite{Kaku:EinsteinsWuerfel2010}, S. 59. \\\\ Vgl. \\cite{Weiss:AltToSpeedOfLight2006}, hier S. 8. \\\\ Vgl. \\cite{Selleri:EinsteinLorentz1998}, Kap. 3. Das Relativitätsprinzip und die Natur der Zeit, S. 38-74, hier S. 49-70. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Callender:ZeitIllusion2010}, hier S. 34. \\\\ Vgl. \\cite{Albert:VerschraenkungEinstein2009}, hier S. 36. \\\\ Internet: \\\\ Vgl. \\cite{wiki:RelativitaetDerGleichzeitigkeit:2017}. \\\\ Vgl. \\cite{wiki:LorentzscheAethertheorie2014}, Prinzipien und Konventionen, Die Rolle des Äthers. \\\\ Vgl. \\cite{wiki:SpezielleRelativitaetstheorie2013}, Lorentztransformationen, Gleichzeitigkeit.';
@@ -259,7 +276,7 @@
   // #: Siehe auch für Veränderungen "$FrQFT_g_footnote_text_QCD".
   $FrQFT_g_footnote_text_StarkeWW               = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Ent:DerKlebstoffDerWelt:2015}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:StarkeWechselwirkung:2019}.';
   $FrQFT_g_footnote_text_StarkeWWRestWW         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:StarkeWechselwirkung:2019}, Bindung zwischen Nukleonen, Erklärung der Restwechselwirkung.';
-  $FrQFT_g_footnote_text_SUSY                   = '\\color{*Bearb}{(Fachliteratur einfügen!)} \\\\ Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 5 Von der Vereinheitlichung zur Supervereinheitlichung, S. 107-125.';
+  $FrQFT_g_footnote_text_SUSY                   = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 5 Von der Vereinheitlichung zur Supervereinheitlichung, S. 107-125.';
   $FrQFT_g_footnote_text_SWW                    = 'Vgl. \\cite{wiki:SchwacheWechselwirkung2013}. \\\\ \\color{*Entwick}{Weitere Verweise.}';
   $FrQFT_g_footnote_text_Thermodynamik          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Thermodynamik:2015}.';
   $FrQFT_g_footnote_text_Trimurti               = '\\const{NPYo_g_footnote_text_Trimurti}';
@@ -297,6 +314,8 @@
   $SpaLeb_g_footnote_text_Bewusstsein           = 'Internet: \\\\ Vgl. \\cite{wiki:Bewusstsein:2018}.';
   $SpaLeb_g_footnote_text_Biochemie             = 'Internet: \\\\ Vgl. \\cite{wiki:Biochemie:2015}.';
   $SpaLeb_g_footnote_text_Biologie              = 'Internet: \\\\ Vgl. \\cite{wiki:Biologie:2015}.';
+  // #: Siehe auch für Veränderungen "$FrQFT_g_footnote_text_Regelung".
+  $SpaLeb_g_footnote_text_BiologischeRegelung   = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:BiologischeRegelung:2021}. \\\\ Vgl. \\cite{SpektrumAkademischerVerlag:Regelung:1999}.';
   $SpaLeb_g_footnote_text_Biomechanik           = 'Internet: \\\\ Vgl. \\cite{wiki:Biomechanik:2015}.';
   $SpaLeb_g_footnote_text_ErkenneDichSelbst     = 'Vgl. \\cite{Galke:PhilosophieDesYoga:2017}, 1 Philosophie und Yoga, S. 4-6, hier S. 5. \\\\ Vgl. \\cite{Kitzler:PhilosophieToGo:2015}, Selbsterkenntnis, S. 23-30. \\\\ Internet: \\\\ Vgl. \\cite{wiki:GnothiSeauton:2015}.';
   $SpaLeb_g_footnote_text_GehirnLateralisation  = 'Internet: \\\\ Vgl. \\cite{wiki:LateralisationDesGehirns:2016}.';
@@ -1104,9 +1123,11 @@
                              
                     'OM:FrQFT:Einleitung:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
                              
-                  'OM:FrQFT:Einleitung:Ausgangssituation' => array( headline_text => 'Ausgangssituation der modernen Physik', headline_text_short => 'Ausgangssituation der modernen Physik'),
+                  'OM:FrQFT:Einleitung:Ausgangssituation' => array( headline_text => 'Ausgangssituation der modernen Physik'/* , headline_text_short => '' */),
+                    'OM:FrQFT:Einleitung:Ausgangssituation:GesuchteVereinheitlichung' => array( headline_text => 'Die gesuchte Vereinheitlichung der Physik bleibt bisher aus'/* , headline_text_short => '' */),
                   'OM:FrQFT:Einleitung:Fundierung' => array( headline_text => 'Fundierung der neuen Physik', headline_text_short => 'Fundierung der neuen Physik'),
                     'OM:FrQFT:Einleitung:Fundierung:Ani-VakuumElapson' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
+                    'OM:FrQFT:Einleitung:Fundierung:Ansatz-Unterscheidung-Zeit-Alterung' => array( headline_text => 'Ansatz: Unterscheidung von Zeit und Alterung', /* headline_text_short => 'XXX' */),
                     'OM:FrQFT:Einleitung:Fundierung:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
                     'OM:FrQFT:Einleitung:Fundierung:Folge-LichtUhr-Mat' => array( headline_text => 'Folge: Die Lichtuhr ist realer Bestandteil der Materie', headline_text_short => 'Folge: Die Lichtuhr ist realer Bestandteil der Materie'),
                     'OM:FrQFT:Einleitung:Fundierung:Fig-GravitationspotMulti' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),

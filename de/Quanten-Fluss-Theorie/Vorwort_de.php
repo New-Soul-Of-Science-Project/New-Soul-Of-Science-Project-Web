@@ -25,10 +25,10 @@
                     'Viele – wenn nicht gar alle – der Entdeckungen haben mich weiter gebracht, selbst dann, wenn ich später bei etlichen auch feststellte, dass sie so nicht ganz stimmen können.'."\n".
                     'Egal ob sie mich selber, meine Beziehungen, die Gesellschaft, Politik, Mathematik, Physik oder andere Themen betrafen, ich konnte immer etwas daraus lernen.'."\n".
                     'Für mich ist es wichtig, immer neugierig auf die Dinge zu schauen, die mir begegnen,'."\n".
-                    'in der Hoffnung, sie zu begreifen und vor allem, um mich dabei selber besser kennen zu lernen.'."\n"))),
+                    'in der Hoffnung, sie zu begreifen und vor allem, um mich dabei selber besser kennen zu lernen und mich weiter zu entwickeln.'."\n"))),
                   array( 'text', array( text => array(
                     'So habe ich auch Aufgrund einer Intuition mit den klassischen Formeln der kinetischen Energie und der potenziellen Energie des Gravitationsfelds herumgespielt.'."\n".
-                    'Ich empfand in den recht unterschiedlichen mathematischen Beschreibungen und strukturellen Ideen beider Energieformen einen Bruch und wollte herausfinden, wie er zu heilen sein könnte.'."\n".
+                    'Ich empfand in den recht unterschiedlichen mathematischen Beschreibungen und strukturellen Ideen beider Energieformen einen Bruch und wollte herausfinden, wie dieser vielleicht zu heilen sei.'."\n".
                     'Mein Harmoniegefühl war gestört.'."\n".
                     'Bei jeder Energieform sollte es sich doch im Grunde immer um das selbe Prinzip handeln, dachte ich.'."\n".
                     'Denn Energie ist gleich Energie, egal in welcher Form.'."\n".
@@ -41,7 +41,7 @@
                     'Doch es muss in meinen Augen eine Verbindung zwischen kinetischer und potenzieller Energie geben.'."\n",
                       'Nun wusste ich natürlich, dass die klassische Sicht der Newtonschen Physik nicht der Weisheit letzter Schluss ist.'."\n".
                     'Denn die Allgemeine Relativitätstheorie Einsteins schafft noch einmal ganz neue Perspektiven auf diese Zusammenhänge.'."\n".
-                    'Und auch die Quantentheorie bietet viele weitere Einsichten an, die das Verständnis der Physik tiefgreifend verändern.'."\n".
+                    'Und auch die Quantenphysik bietet viele weitere Einsichten an, die das Verständnis der Physik tiefgreifend verändern.'."\n".
                     'Doch mich interessierte zunächst, was die simple Physik Newtons zu diesem Thema zu sagen hatte.'."\n",
                       'Ich setzte die beiden Energieformeln für die kinetische und die potenzielle Energie also in einem naiven Ansatz mathematisch gleich, denn es musste gleiches dahinter stecken.'."\n".
                     'Nachdem ich über die sich ergebenden Formeln eine Zeit lang gebrütet hatte, kam ich zu dem Schluss, dass es sich bei der potenziellen Energie um eine winzig kleine, kreisende Bewegung'."\n".
@@ -49,18 +49,18 @@
                     'Potenzielle Energie sollte demnach also genau so auf Bewegung beruhen, wie kinetische.'."\n".
                     'Der Radius dieser zusätzlichen, kreisförmigen Bewegung war eher in der Größenordnung der Atome angesiedelt, als in einer, die man mit bloßem Auge hätte wahrnehmen können.'."\n".
                     'Dies passte gut dazu, dass man keinem Körper, der einer gravitativen Anziehung ausgesetzt ist, diese zusätzliche Bewegung direkt ansieht.'."\n".
-                    'Die Kreisbewegung erinnerte mich an die Schwingungen der Elementarteilchen, welche von der Quantentheorie her bekannt sind.'."\n".
+                    'Die Kreisbewegung erinnerte mich an die Schwingungen der Elementarteilchen, welche von der Quantenphysik her bekannt sind.'."\n".
                     '\\hidden{\\color{*Bearb}{Dabei ist die Frequenz dieser Schwingungen der Gesamtenergie eines Teilchens im Gravitationsfeld proportional. (Ist das so wirklich korrekt?)}'."\n".
                     'Womit ihre potentielle und kinetische Energie gemeinsam mit ihrer Ruheenergie gemeint sind.}'."\n".
-                    'So kam mir der Gedanke, dies könnte ein Weg sein, die Gravitation der Allgemeinen Relativitätstheorie mit der Quantentheorie zusammen zu führen – zu vereinheitlichen.'."\n".
-                    'Denn ich wusste, dies war der Gemeinde der Physiker bis dahin nicht gelungen und das ist es auch bis heute nicht.'."\n".
+                    'So kam mir der Gedanke, dies könnte ein Weg sein, die Gravitation der Allgemeinen Relativitätstheorie mit der Quantenphysik zusammen zu führen; zu vereinheitlichen.'."\n".
+                    'Denn ich wusste, die Vereinheitlichung der Physik war der Gemeinde der Physiker bis dahin nicht gelungen und sie ist es auch bis heute nicht.'."\n".
                     'Und wie viele andere denke auch ich, eine Vereinheitlichung der Physik ist in der Lage, viele ihrer heutigen Unstimmigkeiten und Probleme zu beseitigen und ihre offenen Fragestellungen zu beantworten.'."\n",
                       'Jahre später gelang es mir, die Spezielle Relativitätstheorie mit meinem neuen Ansatz in Verbindung zu bringen.'."\n".
                     'Dadurch gewann ich die Einsicht, warum sich die Elementarteilchen der Materie wie die Lichtuhren aus Einsteins Gedankenexperiment verhalten.'."\n".
-                    'Die oben genannten Schwingungen erinnerten eben auch an das Funktionsprinzip seiner Lichtuhr.'."\n".
+                    'Die oben genannten Schwingungen erinnerten eben auch an das Funktionsprinzip von Einsteins Lichtuhr.'."\n".
                     'Und mir wurde klar, dass mit der Übertragung der strukturellen Eigenschaften einer Lichtuhr auf Materie-Elementarteilchen auch ein Hinweis auf deren grundlegende innere Struktur gegeben wird.'."\n".
                     'Und dies nicht nur bei ihrer Bewegung im Raum, sondern auch wenn sie der Gravitation ausgesetzt sind.'."\n".
-                    'Mir viel auf, dass das Pound-Rebka-Snider-Experiment die Schwingungen von Photonen – den Lichtteilchen – mit der Gravitation der Allgemeinen Relativitätstheorie verbindet.'."\n".
+                    'Mir viel auf, dass das Pound-Rebka-Snider-Experiment die Schwingungen von Photonen, den Lichtteilchen, mit der Gravitation der Allgemeinen Relativitätstheorie verbindet.'."\n".
                     'Die Ergebnisse dieses Experiments halfen mir, noch mehr konkrete Information über die Bewegung einer von mir vermuteten Feinstruktur innerhalb aller Elementarteilchen und des Vakuums herauszufinden, welche sich nach diesen Schwingungen bewegt.'."\n",
                       'So lernte ich im Laufe der Jahre – seit etwa 1990 – immer mehr über diese faszinierende, neue Physik.'."\n".
                     'Ich war in der Lage, mehr und mehr bekannte Beobachtungen mit meinem Ansatz qualitativ und teilweise auch quantitativ zu verstehen.'."\n".
@@ -72,10 +72,10 @@
                     'Diese Einsichten und die daraus gewonnen Begriffe erstrecken sich mittlerweile auch hin bis zu einem \\jump{OM:SpaLeb:Home}{neuen Verständnis des Lebens}.'."\n"))),
                   array( 'text', array( text => array(
                     'Die Intuitionen, die einen leiten, wenn man eine neue Theorie entwickelt, sind anderen Menschen oft nicht gut zugänglich.'."\n".
-                    'So habe ich im Laufe der Entwicklung der Quanten-Fluss-Theorie mehrmals den Erklärungsansatz geändert, um den Zugang anderer zu erleichtern.'."\n".
+                    'So habe ich im Laufe der Entwicklung der Quanten-Fluss-Theorie mehrmals den Erklärungsansatz geändert, um den Zugang anderen Menschen zu erleichtern.'."\n".
                     'Die diesen Änderungen vorausgehenden Einsichten waren sehr wichtige Momente.'."\n".
                     'Oft war es ein heftiges Ringen.'."\n".
-                    'Denn es hatte immer zur Folge, alles noch einmal neu oder zumindestens erheblich umzuschreiben, was naturgemäß mit viel Arbeit verbunden war.'."\n".
+                    'Denn es hatte immer zur Folge, alles noch einmal neu oder zumindestens erheblich umzuschreiben, was naturgemäß mit viel Arbeit verbunden ist.'."\n".
                     'Der Lohn war hingegen mehr Klarheit und bessere Denkmuster.'."\n".
                     'Dies ist der Grund dafür, dass der oben beschriebene Ansatz auf der vorliegenden Seite im Grunde keine Rolle zu spielen scheint.'."\n",
                       'Neuen Prinzipien liegen immer auch neue Bilder und Begriffe zu Grunde.'."\n".
@@ -85,9 +85,9 @@
                     'Es besteht also die Gefahr, den Leser ungewollt zu irritieren, wenn alte Begriffe für Dinge verwendet werden, die sich dann doch etwas anders darstellen.'."\n".
                     'Führe ich aber einen neuen Begriff für recht bekanntes ein, was sich in seiner Bedeutung nun doch etwas wandelt, so ist dies für den Leser anstrengend.'."\n".
                     'Denn ihm wird der Unterschied und dessen Wichtigkeit erst im Laufe der Entwicklung klar.'."\n".
-                    'Diesem Dilemma kann sich leider kein Autor entziehen, der Bekanntes aus neuer Sicht zu erklären sucht.'."\n".
+                    'Diesem Dilemma kann sich kein Autor entziehen, der Bekanntes aus neuer Sicht zu erklären sucht.'."\n".
                     'Ich habe diesbezüglich bereits Korrekturen vorgenommen, um mehr Klarheit zu schaffen, und hoffe ein glückliches Händchen mit der Wahl der Begriffe und Bilder zu haben.'."\n",
-                      'Der Ansatz der fraktalen Quanten-Fluss-Theorie ist anders als alles, was ich bisher kennengelernt habe, auch wenn sich hier und da starke Ähnlichkeiten zu anderen bekannten Ansätzen ergeben.'."\n".
+                      'Der Ansatz der fraktalen Quanten-Fluss-Theorie ist anders als alles, was ich bisher kennengelernt habe, auch wenn sich hier und da Ähnlichkeiten zu anderen bekannten Ansätzen ergeben.'."\n".
                     'Ich musste im Laufe der Zeit lernen umzudenken und stellte fest, dass die neuen Perspektiven diese Mühe wert sind.'."\n".
                     'Ich lade Sie nun dazu ein, meine Perspektive auf die Welt der Physik mit mir gemeinsam zu entdecken.'."\n".
                     'Kommen Sie auf den Geschmack, selber weiter zu denken.'."\n"))),
@@ -144,16 +144,19 @@
                 'Mein Hut ist im Ring', subline =>
                   'Es gibt Alternativen')),
                   array( 'text', array( text => array(
-                    'Mit dieser Arbeit werfe ich meinen Hut – meinen Vorschlag – in den Ring, für eine neue Physik, von der ich hoffe, dass sie uns aus der Krise herausführt.'."\n".
-                    'Ich habe keine Angst mehr vor der Prüfung meiner Ideen an der Realität – verstehe aber, wenn Menschen diese haben –, leide nicht an Fantasielosigkeit, Ungeduld und Risikomangel.'."\n",
-                      'Und ich fordere auch möglichst viele MitbewerberInnen dazu auf, neue Ideen zu entwickeln und ihre Vorschläge zur Lösung der Krise,'."\n".
+                    'Mit dieser Arbeit werfe ich meinen Hut, meinen Vorschlag, in den Ring, für eine neue Physik, von der ich hoffe, dass sie uns aus der Krise herausführt.'."\n".
+                    'Ich habe keine Angst mehr vor der Prüfung meiner Ideen an der Realität.'."\n".
+                    'Ich verstehe aber, wenn andere Menschen diese haben.'."\n".
+                    'Auch an Fantasielosigkeit, Ungeduld und Risikomangel leide ich nicht.'."\n",
+                      'Hiermit fordere ich auch möglichst viele Mitbewerberinnen und Mitbewerber dazu auf, neue Ideen zu entwickeln und ihre Vorschläge zur Lösung der Krise,'."\n".
                     'wie ungewöhnlich diese auch sein mögen, mutig mit in den Ring zu werfen.'."\n".
                     'Ich bin überzeugt, dass wir mit gemeinsamer Kraft diese Krise bewältigen und die Menscheit so voranbringen, weil ich viel Willen und Potenzial erkenne, dies zu erreichen.'."\n",
-                      'Möge die Idee, die am besten der Prüfung an der Realität stand hält und am meisten Erkenntnisse zu unserer Existenz bereit hält, gewinnen! \\\\'."\n".
+                      'Möge die Idee, die am besten der Prüfung an der Realität stand hält und am meisten Erkenntnisse zu unserer Existenz bereit hält, gewinnen!'."\n".
+                    'Lasst uns aber auch erkennen, dass mehrere Perspektiven auf die Realität gleichzeitig nützlich sein können, so dass es eventuell nicht einfach diesen einen Gewinner geben muss. \\\\'."\n".
                     '\\\\'."\n".
                     //'\\italic{Wolfgang Huß} alias \\\\'."\n".
                     //'\\italic{Lucius Damian \\hidden{Cosmas }Stardust}, \\\\ im Mai 2015 \\\\ \\\\'."\n"))),
-                    '\\italic{Wolfgang Huß} \\\\ \\small{im November 2019} \\\\ \\\\'."\n"))),
+                    '\\italic{Wolfgang Huß} \\\\ \\small{im Dezember 2022} \\\\ \\\\'."\n"))),
                     
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Einleitung'),

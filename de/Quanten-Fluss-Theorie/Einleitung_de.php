@@ -14,12 +14,9 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '(\\bold{Facetten des ›Problems der Zeit‹:})',
-                    '(• Die Relativitätstheorie und die Teilchenphysik tragen in ihrer heutigen Interpretation einen fundamentalen Widerspruch in sich: Wie kann es sein, dass ein Photon, das sich doch mit Lichtgeschwindigkeit bewegt und in dem daher angeblich die Zeit stillstehen muss, ein sich schwingend veränderndes elektromagnetisches Feld „in sich“ trägt? Besonders dann, wenn wir analysieren, dass die Teilchen zwar theoretisch punktförmig, aber in der Realität eine Ausdehnung haben sollten, bemerke das Natürlichkeitsprinzip, dass auch zu der Erkenntnis führt, dass unendlich große Werte nicht vorkommen sollten, die bei Punktteilchen nicht zu vermeiden sind. Vgl. \\cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, S. 14.)',
-                    '(• Zeit muss differenzierter betrachtet und interpretiert werden, wenn wir diesen Widerspruch loswerden wollen. Tun wir dies, stellen wir fest, dass es nur ein scheinbarer Widerspruch ist. Denn die Schwingung des elektromagnetischen Feldes benötigt zwar Zeit, im Sinne einer generellen Veränderung, aber sie trägt nichts zur Alterung des Photons bei, nämlich zu seiner grundsätzlichen Veränderung. Und zwar altert das Photon durch seine Schwingung nicht, weil es sich nach einer bestimmten Zeit, seinem Schwingungsdurchgang, wieder genau in dem gleichen Zustand befindet, wie zuvor.)',
-                    '(\\bold{Physik auf Basis von bio-ähnlichen Regelprozessen:})',
-                    '(• Physik: Regelprozesse zeigen sich in Newtons Actio gleich Reactio. Denn hierin kommt das grundlegende Konzept von Spieler und Gegenspieler, Agonist und Antagonist, zum Ausdruck. In Bezug auf das Beispiel unseres Sonnensystems und die stabile Bahn der Erde um die Sonne gibt es auch Actio und Reactio. Die Gravitation spielt gegen die Fliehkraft, also gegen die Trägheit, wie alle Wechselwirkungen, die eine Bewegung ändern. Aus Sicht eines Regelprozesses ist die noch einmal gründlich zu analysieren. Hier spielt irgendwie die Kraft gegen die Zeit, die es braucht, eine Wirkung zu entfalten. Was wiederum mit der Zeit die es braucht zusammenhängt, um, aus Sicht der FrQFT, die Wirkungsquanten-Struktur der Erde durch das Gravitationspotenzial der Sonne so umzubauen, dass die Erde ihre Bewegungsrichtung ändert.)',
-                    '(• Physik: Die Schlussfolgerungen münden in die Einsicht, dass es für jedes Ding, jede Existenz, der Physik genau einen einzigen grundlegenden Regelprozess geben muss. Dieser Regelprozess organisiert die Stabilität und die Entwicklung seiner Existenz.)',
+                    // '\\bold{Facetten des ›Problems der Zeit‹:}',
+                    // '• Die Relativitätstheorie und die Teilchenphysik tragen in ihrer heutigen Interpretation einen fundamentalen Widerspruch in sich: Wie kann es sein, dass ein Photon, das sich doch mit Lichtgeschwindigkeit bewegt und in dem daher angeblich die Zeit stillstehen muss, ein sich schwingend veränderndes elektromagnetisches Feld „in sich“ trägt? Besonders dann, wenn wir analysieren, dass die Teilchen zwar theoretisch punktförmig, aber in der Realität eine Ausdehnung haben sollten, bemerke das Natürlichkeitsprinzip, dass auch zu der Erkenntnis führt, dass unendlich große Werte nicht vorkommen sollten, die bei Punktteilchen nicht zu vermeiden sind. Vgl. \\cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, S. 14.',
+                    // '• Zeit muss differenzierter betrachtet und interpretiert werden, wenn wir diesen Widerspruch loswerden wollen. Tun wir dies, stellen wir fest, dass es nur ein scheinbarer Widerspruch ist. Denn die Schwingung des elektromagnetischen Feldes benötigt zwar Zeit, im Sinne einer generellen Veränderung, aber sie trägt nichts zur Alterung des Photons bei, nämlich zu seiner grundsätzlichen Veränderung. Und zwar altert das Photon durch seine Schwingung nicht, weil es sich nach einer bestimmten Zeit, seinem Schwingungsdurchgang, wieder genau in dem gleichen Zustand befindet, wie zuvor.',
                     ))),
                       
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Vortext:XXX', text =>
@@ -81,7 +78,7 @@
                   array( 'text', array( text => array(
                     'Nachfolgend werfen wir erst einmal einen Blick auf die Ausgangssituation der modernen Physik.'."\n".
                     'Anschließend werden wir die Herleitung der neuen Physik beschreiten, in der Ansätze, Hypothesen und Analysen mit Schlussfolgerungen abwechseln und'."\n".
-                    'für uns so die wesentlichen Eckpunkte der Entwicklung der neuen Physik erkennbar werden.'."\n",
+                    'für uns so die wesentlichen Eckpunkte der Entwicklung der neuen Physik erkennbar machen.'."\n",
                       'Auf der folgenden Seite \\italic{\\jumpname{OM:FrQFT:WasIstPhysik}} werden wir die Grundlagen der neuen Physik abermals entwickeln, allerdings dieses Mal aus'."\n".
                     'wissenschaftsphilosophischen, erkenntnistheoretischen und naturphilosophischen Überlegungen heraus.'."\n".
                     'Auf diese Weise entsteht eine zusätzliche Perspektive auf die neue Physik, die zum einen verdeutlicht, wie grundlegend die neue Physik angelegt ist,'."\n".
@@ -198,21 +195,24 @@
                       array(  jump_name => 'OM:FrQFT:Einleitung', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'showContent', text => array(
-                    '(Aktuelle Fachdiskussion:)',
-                    '(• Lernen von Robotern und Kleinkindern: Roboter lernen am Besten, wenn sie die Vorhersagefehler minimieren. Theorie der prädiktiven Informationsverarbeitung (predictive proccessing). Ein rückgekoppeltes neuronales Netzwerk, wo die Differenz zwischen Vorhersage und deren realen Überprüfung als Fehlerdiffereznz wieder in die Verarbeitung der Informationsschichten eingespeist wird. Durch das Nachbilden des Lernens von Kleinkindern mit Robotern verstehen wir besser, wie Kleinkinder lernen, welche Probleme dabei auftreten können und wie wir diese vermeiden können.\\footnote{Vgl. \\cite{Kwon:SelbststaendigLernendeRoboter:2018}.})',
-                    '(– Der Achtsamkeitsprozess scheint universal zu sein: Solche Roboter sind Kleinkindern scheinbar so ähnlich, dass für sie die gleichen Voraussetzungen gelten, wenn sie so wie Kleinkinder werden sollen. »›Wenn mich jemand fragt, ob ein Roboter wirklich Menschenähnlich werden kann, dann frage ich zurück, ob sich jemand um ihn, wie um ein echtes Kind kümmern würde. Wenn ja, dann ist das vielleicht realisierbar; wenn nein, dann kann sich ein Roboter unmöglich wie ein richtiges menschliches Kind entwickeln.‹«, S. 72.)',
-                    '(– Feynman sagt dazu: »›Was ich nicht erschaffen kann, verstehe ich nicht.‹« Jun Tani sagt dazu: »›Ich kann verstehen, was ich erschaffen kann.‹«, S. 72.)',
-                    ))),*/
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    '\\bold{Korrekturen}',
+                    '• Sollte „Quantenfeldtheorie“ vielleicht doch durch „Standardmodell der Teilchenphysik“ ersetzt werden? Auch oben?',
+                    // '\\bold{Anmerkungen}',
+                    // '• Die Relativitätstheorie und die Teilchenphysik tragen in ihrer heutigen Interpretation einen fundamentalen Widerspruch in sich: Wie kann es sein, dass ein Photon, das sich doch mit Lichtgeschwindigkeit bewegt und in dem daher angeblich die Zeit stillstehen muss, ein sich schwingend veränderndes elektromagnetisches Feld „in sich“ trägt? Besonders dann, wenn wir analysieren, dass die Teilchen zwar theoretisch punktförmig, aber in der Realität eine Ausdehnung haben sollten, bemerke das Natürlichkeitsprinzip, dass auch zu der Erkenntnis führt, dass unendlich große Werte nicht vorkommen sollten, die bei Punktteilchen nicht zu vermeiden sind. Vgl. \\cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, S. 14.',
+                    ))),
                       
                   array( 'text', array( text => array(
                     'Die theoretische Physik befindet sich offenbar in einer zunehmenden Krise, die sich in den letzten Jahren immer weiter zuspitzt.\\footnote{\\const{FrQFT_g_footnote_text_PhysikKrise}}'."\n".
                     'Trotz dessen wir zwei experimentell extrem gut bestätigte Haupttheorien haben\\footnote{Bezüglich der QFT: \\\\ \\const{FrQFT_g_footnote_text_QFTPruef}}\\footnote{Bezüglich der ART: \\\\ \\const{FrQFT_g_footnote_text_ARTPruef}}'."\n".
-                    '– für die Teilchenphysik die -Quantenfeldtheorie-\\footnote{\\const{FrQFT_g_footnote_text_QFT}} und für die Gravitation'."\n".
-                    'sowie für die Kosmologie die Allgemeine Relativitätstheorie\\footnote{\\const{FrQFT_g_footnote_text_ART}} –,'."\n".
+                    '– für das ›Standardmodell der Teilchenphysik‹\\footnote{\\const{FrQFT_g_footnote_text_SMT}} die -Quantenfeldtheorie-\\footnote{\\const{FrQFT_g_footnote_text_QFT}} und für die Gravitation'."\n".
+                    'sowie für das restliche ›Standardmodell der Kosmologie‹\\footnote{\\const{FrQFT_g_footnote_text_SMK}} die Allgemeine -Relativitätstheorie-\\footnote{\\const{FrQFT_g_footnote_text_ART}} –,'."\n".
                     'wird es auch immer deutlicher, dass wir Beobachtungen machen, die durch die Haupttheorien nicht erklärt werden können.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Ausgangssituation:XXX', text =>
+                                           
+                'Unerklärliche Beobachtungen und theoretisch aufgeworfene Fragen', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Unerklärliche Beobachtungen und theoretisch aufgeworfene Fragen} \\\\'."\n".
                     'Zu diesen Beobachtungen gehört das Phänomen der Dunklen Materie\\footnote[*Bearb]{\\const{FrQFT_g_footnote_text_DunkleMat}} und das Phänomen der Dunklen Energie\\footnote{\\const{FrQFT_g_footnote_text_DunkleEnergie}}, die für die Entstehung unseres Kosmos und'."\n".
                     'für seine Entwicklung von entscheidender Bedeutung sind.'."\n".
                     'Auch sind Fragen offen wie:'."\n"))),
@@ -231,10 +231,13 @@
                     ))),
                   array( 'text', array( text => array(
                     'Und viele Fragen mehr …'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Ausgangssituation:XXX', text =>
+                                           
+                'Hoffnungsträger fallen aus', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Hoffnungsträger fallen aus} \\\\'."\n".
                     'Antworten auf das Phänomen der Dunklen Materie wurden von der theoretischen Physik seit einiger Zeit im Bereich der Teilchenphysik vermutet.'."\n".
-                    'Dazu wurden neue Theorien entwickelt, in die die Physiker große Hoffnungen gesetzt haben.'."\n".
+                    'So wurden neue Theorien entwickelt, in die die Physiker große Hoffnungen gesetzt haben.'."\n".
                     'Zu diesen großen Hoffnungsträgern gehören die Stringtheorie\\footnote{\\const{FrQFT_g_footnote_text_ST}} und die Supersymmetrie\\footnote{\\const{FrQFT_g_footnote_text_SUSY}}.'."\n",
                       'Aber wir kommen offenbar in eine Situation, in der wir vielleicht schon bald sagen müssen, diese Theorien gehörten zu den Hoffnungsträgern.'."\n",
                       'In Bezug auf die Stringtheorie ist bisher nicht klar geworden, was sie vorhersagt, das wir experimentell bestätigen oder widerlegen, also falsifizieren, könnten.\\color{*Bearb}{(Verweis)}'."\n".
@@ -243,23 +246,29 @@
                     'Von denen könnten einzelne mit dem Phänomen der Dunklen Materie in Verbindung stehen, die allerdings bisher nicht entdeckt wurden.\\color{*Bearb}{(Verweis)}'."\n",
                       'Auch ist die Supersymmetrie in Form der Superstringtheorie zu einem wesentlichen und scheinbar unverzichtbaren Bestandteil der Stringtheorie geworden, ohne die sie kaum zu den Beobachtungen passt.\\color{*Bearb}{(Verweis)}'."\n".
                     'Ein Umstand, der die Möglichkeit einer Bestätigung der Gültigkeit der Stringtheorie doppelt bedroht.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Ausgangssituation:XXX', text =>
+                                           
+                'Althergebrachtes bestätigt sich aufs Neue', subline =>
+                  '… obwohl wir wissen, dass es so alleine nicht sein kann')),
                   array( 'text', array( text => array(
-                  '\\condb{Althergebrachtes bestätigt sich aufs Neue … \\\\ … obwohl wir wissen, dass es so alleine nicht sein kann} \\\\'."\n".
-                    'Nun ist es gleichzeitig so, dass das Standardmodell der Teilchenphysik in seiner althergebrachten Form, durch die Entdeckung des Higgs-Teilchens'."\n".
+                    'Nun ist es gleichzeitig so, dass das ›Standardmodell der Teilchenphysik‹ in seiner althergebrachten Form, durch die Entdeckung des Higgs-Teilchens'."\n".
                     'am LHC abermals grandios bestätigt wurde.\\color{*Bearb}{(Verweis)}'."\n".
                     'Und die Allgemeine Relativitätstheorie erlebte jüngst einen erneuten Triumph durch den Nachweis der von ihr schon lange vorhergesagten Gravitationswellen.\\color{*Bearb}{(Verweis)}'."\n",
                       'Das alt hergebrachte triumphiert, obwohl wir wissen, dass es nicht der Weisheit letzter Schluss sein kann.\\color{*Bearb}{(Verweis)}'."\n".
                     'Und die neuen populären Ideen der theoretischen Physik entpuppen sich scheinbar zusehends als Hirngespinste.'."\n".
                     'So driftet die theoretische Physik immer weiter in ein Dilemma, denn mögliche neue Theorien müssen die althergebrachten extrem genau wiedergeben.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Ausgangssituation:GesuchteVereinheitlichung', text =>
+                                           
+                'Die gesuchte Vereinheitlichung der Physik bleibt bisher aus', subline =>
+                  '… bleibt aber notwendig')),
                   array( 'text', array( text => array(
-                  '\\condb{Die gesuchte Vereinheitlichung der Physik bleibt bisher aus … \\\\ … ist aber nach wie vor notwendig} \\\\'."\n".
                     'Noch vertrackter wird die Situation der theoretischen Physik dadurch, dass wir durch die beiden Haupttheorien'."\n".
                     'eine in zwei unverträgliche Teile separierte Physik haben.'."\n".
                     'Denn generell ist es erstaunlicherweise nicht klar, wie die beiden Haupttheorien zusammengeführt werden können.'."\n".
                     'Auch wenn sie viele gemeinsame physikalische Begrifflichkeiten teilen, so erscheinen sie in ihren mathematisch strukturellen Grundfesten doch unvereinbar.\\footnote{\\const{FrQFT_g_footnote_text_VereinhQMuARTProbl}}'."\n",
                       'Eine physikalisch wirklich zweigeteilte Welt ist jedoch schlechterdings nicht vorstellbar.'."\n".
-                    'Wo genau sollte diese Trennlinie in unserer Welt denn auch verlaufen?'."\n",
-                      'Lee Smolin sagt dazu:'."\n"))),
+                    'Wo genau sollte diese Trennlinie in unserer Welt denn auch verlaufen?'."\n".
+                    'Lee Smolin sagt dazu:'."\n"))),
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Neben dem Argument, das sich auf die Einheit der Natur gründet, hat jede [dieser beiden] Theorie[n] noch ihre eigenen Probleme, die eine Vereinheitlichung mit der jeweils'."\n".
                         'anderen geboten erscheinen lassen.'."\n".
@@ -268,16 +277,19 @@
                         'Auf diese Weise straft die Natur vermutlich unverschämte Theoretiker, die ihre Einheit zu brechen wagen.'."\n"),
                         addtext => '\\footnote{\\cite{Smolin:ZukunftPhysik2009}, Kap. 1 Die fünf großen Probleme der theoretischen Physik, S. 31-48, hier S. 33.}')),
                   array( 'text', array( text => array(
-                    'Ich würde ergänzen:'."\n"))),
+                    'Ich würde ergänzend sagen:'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                      '\\quote{ Auf diese Weise straft die Natur […] unverschämte Theoretiker, die ihre Einheit zu brechen wagen}, indem sie die Natur – aus guten Gründen – sehr vereinfachen,'."\n".
-                      'dies aber schließlich im Laufe der Zeit vergessen.'."\n"))),
+                      '\\quote{ Auf diese Weise straft die Natur […] unverschämte Theoretiker,} die im Laufe der Zeit sträflicher Weise vergessen haben,'."\n".
+                      'dass sie \\quote{ihre Einheit zu brechen wag[t]en}, indem sie die Natur aus sehr guten Gründen erheblich vereinfachten.'."\n"))),
  
                   /*array( 'text', array( text => array(
                     'Auf die Details der Vereinfachungen und deren Folgen komme ich im Verlauf der Arbeit natürlich noch zu sprechen.'."\n"))),*/
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Ausgangssituation:XXX', text =>
+                                           
+                'Die neue Physik braucht neue Konzepte, neue Ideenwelten, Prinzipien der Zusammenhänge', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Die neue Physik braucht neue Konzepte, neue Ideenwelten, Prinzipien der Zusammenhänge} \\\\'."\n".
                     'Es werden nicht nur neue Vorstellungen davon benötigt, welche Bestandteile unsere Natur ausmachen.'."\n".
                     'Für eine neue Physik sind vor allem Ideen der Prinzipien der Zusammenhänge der Bestandteile und deren Veränderung von Nöten, also wie sich die Dinge aus ihren Bestandteilen selbst organisieren,'."\n".
                     'ihre Organisation transformieren und diese wieder auflösen.'."\n",
@@ -314,9 +326,10 @@
                     'dann macht es auch Sinn, den Weg zur Vereinheitlichung in einer neuen Physik damit zu beginnen,'."\n".
                     'unsere heutige Schwierigkeit mit der Zeit auf einen Punkt zu bringen und zu schauen, wie wir diesem Problem entkommen können.'."\n",
                       'Das ist allerdings gar nicht so einfach, weil unsere heutigen physikalischen Denk- und Erklärungsmuster diese Schwierigkeit verschleiern.'."\n".
-                    'Denn gewisse, heute in meinen Augen zu dogmatisch behandelte Erkenntnisse, die sich sicherlich auch aufgrund historischer Auseinandersetzungen so verfestigt haben,'."\n".
-                    'sind durch Differenzierung und Konkretisierung der Lehrmeinung zu lockern, um damit eine Lösung dieser Schwierigkeit zu ermöglichen.'."\n",
-                      'Jedoch genau die sich aus den etwas zu dogmatisch interpretierten Erkenntnisse ergebenden „Denktabus“ verhindern in solchen Fällen oft, die richtigen Fragen zu stellen.'."\n"))),
+                    'Denn gewisse, heute in meinen Augen zu dogmatisch interpretierte Erkenntnisse, die sich sicherlich auch aufgrund historischer Auseinandersetzungen so verfestigt haben,'."\n".
+                    'sind durch Differenzierung und Konkretisierung der Lehrmeinung zu lockern, um damit eine Lösung unserer Schwierigkeit zu ermöglichen.'."\n",
+                      'Jedoch verhindern in solchen Fällen oft die etwas zu dogmatischen Interpretationen unserer Erkenntnisse und die so'."\n".
+                    'verfestigten „Denktabus“, die richtigen Fragen zu stellen, deren Beantwortung uns weiter bringt.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Ansatz: Lösung des ›Problems der Zeit‹')),
@@ -324,7 +337,7 @@
                     'Der grundlegende Ansatz der neuen Physik ergibt sich aus der hier vorgeschlagenen Lösung des sogenannten ›Problems der Zeit‹\\footnote{\\const{FrQFT_g_footnote_text_ProblemDerZeit}},'."\n".
                     'welches heute die Vereinheitlichung der Quantenphysik und der Allgemeinen Relativitätstheorie verhindert.'."\n".
                     'Denn die bei dieser Art von Problem aufgezeigten (scheinbaren) Widersprüche ergeben sich im Rahmen der Kombination von Beobachtungen aus der Quantenphysik und der Relativitätstheorie und deren heute üblichen Interpretationen.'."\n",
-                      'In einer einfachen Form steckt hinter dem ›Problem der Zeit‹ die Frage:'."\n"))),
+                      'In einer kondensierten Form steckt hinter dem ›Problem der Zeit‹ aus meiner Sicht die einfache, aber grundlegende, physikalische Frage:'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                       'Wie kann es sein, dass es in einem Photon – einem Lichtteilchen – aufgrund seiner Lichtgeschwindigkeit, nach heutiger Interpretation der Relativitätstheorie,'."\n".
@@ -332,13 +345,13 @@
  
                   array( 'text', array( text => array(
                     'Auch dieser Frage liegen unausgesprochene Annahmen zugrunde, wie das eigentlich immer der Fall ist.'."\n".
-                    'Und mit diesen insgeheimen Annahmen werden dann auch bestimmte „Denktabus“ der heutigen Physik berührt …'."\n"))),
+                    'Und mit diesen insgeheimen Annahmen, die wir nachfolgend näher beleuchten, werden dann auch bestimmte „Denktabus“ der heutigen Physik berührt.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Hypothese: Eigenschaften der Dinge entspringen ihrer Struktur')),
                   array( 'text', array( text => array(
                     'Eine Annahme dieser Frage ist, dass die Ursache seines schwingenden elektromagnetischen Feldes in einer vermuteten sich ändernden Struktur des Photons zu finden sei.'."\n".
-                    'Dahinter steckt im Grunde die generelle Hypothese, jede Eigenschaft eines Dings ergäbe sich aus seiner (dynamischen) Struktur.'."\n",
+                    'Dahinter steckt im Grunde die generelle Hypothese, jede Eigenschaft eines Dings ergäbe sich aus seiner dynamischen Struktur.'."\n",
                       'Diese Annahme entspringt unserer Alltagserfahrung und auch der Erwartungshaltung jeder „mikroskopierenden“ Wissenschaft, also jeder Naturwissenschaft:'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
@@ -350,7 +363,7 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 //'Naturphilosophische Betrachtung: Vereinfachungen und deren Probleme')),
-                'Vereinfachungen und deren Probleme')),
+                'Vereinfachungen und deren Problematik')),
                   array( 'text', array( text => array(
                     'Physiker mögen argumentieren, das Photon sei nur punktförmig, habe daher keine Struktur und könne nicht rotieren,'."\n".
                     'wobei sie allerdings verschweigen, dass seine Punktform eine mathematische Vereinfachung darstellt, um die seine Eigenschaften'."\n".
@@ -360,16 +373,16 @@
                     //  'Nutzen wir Photonen, um zu mikroskopieren – mit modernen Röntgenlasern zum Beispiel –, dann legt ihr frequenzabhängiges Auflösungsvermögen geradezu nahe,'."\n".
                     //'es hätte mit einer ihnen innewohnenden Struktur zu tun.'."\n",
                       'Und die Punktform der Elementarteilchen macht durchaus auch größere Schwierigkeiten in der theoretischen Physik, wie \\jump{OM:FrQFT:Einleitung:Ausgangssituation}{oben} von Lee Smolin angesprochen:'."\n".
-                    'Sie kann beispielsweise zu „unnatürlichen“\\color{*Bearb}{(Verweis)} Unendlichkeiten in ihren Wechselwirkungen führen, wenn sich zwei dieser Punktteilchen beliebig nahe kommen können.\\footnote{\\const{FrQFT_g_footnote_text_Unendlichkeiten}}'."\n".
+                    'Sie kann beispielsweise zu „unnatürlichen“ beziehungsweise unphysikalischen Unendlichkeiten durch Felder ihrer Wechselwirkungen, die \\jump{OM:FrQFT:NotwenVereinheit:Problem-der-Singularitaeten}{Singularitäten}\\footnote{\\const{FrQFT_g_footnote_text_Singularitaet}} besitzen, führen, wenn sich zwei dieser Punktteilchen beliebig nahe kommen können.\\footnote{\\const{FrQFT_g_footnote_text_Unendlichkeiten}}'."\n".
                     'Diese Schwierigkeiten müssen dann durch mathematische Kniffe umgangen werden.\\footnote{Hierfür wird eine Renormierung durchgeführt, die bei manchen Theorien leider nicht möglich scheint: \\\\ \\const{FrQFT_g_footnote_text_Renormierung}}'."\n".
-                    'Die Beseitigung der Vereinfachung führt zu einer fraktalen Struktur, wie wir sehen werden, die geeignet sein könnte, die Unendlichkeitsprobleme zu beseitigen.\\footnote{Fraktale Strukturen sorgen für Skaleninvarianz: \\\\ \\const{FrQFT_g_footnote_text_FraktalLoestUnendlichk}}'."\n",
+                    'Die im Folgenden entwickelte Beseitigung der Vereinfachung der Punktförmigkeit des Photons sowie der übrigen Elementarteilchen führt zu einer fraktalen Struktur, wie wir sehen werden, die aus meiner Sicht geeignet ist, die Unendlichkeitsprobleme zu beseitigen.\\footnote{Fraktale Strukturen sorgen für Skaleninvarianz: \\\\ \\const{FrQFT_g_footnote_text_FraktalLoestUnendlichk}}'."\n",
                       'Bezüglich der Relativitätstheorie werden wir noch feststellen, dass die Vereinfachung der Materie auf die Punktform die Genialität von Einsteins naturphilosophischem Ansatz'."\n".
-                    'dieser Theorie, durch sein \\jump{OM:FrQFT:NeuePhysik:Philosophie-der-Lichtuhr}{Gedankenexperiment der Lichtuhr}\\footnote{\\const{FrQFT_g_footnote_text_Lichtuhr}}, ausmacht und sie gleichzeitig strukturell aushöhlt.'."\n".
+                    'dieser Theorie, durch sein \\jump{OM:FrQFT:NeuePhysik:Philosophie-der-Lichtuhr}{Gedankenexperiment der Lichtuhr}\\footnote{\\const{FrQFT_g_footnote_text_Lichtuhr}}, ausmacht und die Physik damit gleichzeitig strukturell aushöhlt.'."\n".
                     'Um dieses wichtige Argument zu verstehen und sich mit der Lösung dieses Problems aus Perspektive der Relativitätstheorie näher zu beschäftigen,'."\n".
-                    'wird innerhalb der neuen Physik die \\jump{OM:VRT:Home}{Vereinheitlichte Relativitätstheorie} geschaffen und auf einer eigenen Theorieseite entwickelt.'."\n",
-                      'Denn diese Aushöhlung zeigt sich als einer der Gründe dafür, dass die Verbindung der Relativitätstheorie mit der Quantenphysik verborgen bleibt und so die Vereinheitlichung behindert wird.'."\n",
+                    'wird innerhalb der neuen Physik der Quanten-Fluss-Theorie die \\jump{OM:VRT:Home}{Vereinheitlichte Relativitätstheorie} geschaffen und auf einer eigenen Theorieseite entwickelt.'."\n",
+                      'Die angesprochene Aushöhlung zeigt sich als einer der Gründe dafür, dass die Verbindung der Relativitätstheorie mit der Quantenphysik verborgen bleibt und so die Vereinheitlichung behindert wird.'."\n",
                     'Die Einführung der mathematisch genialen Idee der vierdimensionalen Raumzeit kompensiert die Aushöhlung zu einem Teil und führt gleichzeitig dazu,'."\n".
-                    'dass die verbleibende strukturelle Aushöhlung noch mehr verborgen wird, geradezu in einem zusammengezogenen Knoten versteckt ist.'."\n",
+                    'dass die verbleibende strukturelle Aushöhlung noch mehr verborgen wird, geradezu in einem fest zusammengezogenen mathematischen Knoten versteckt ist.'."\n",
                       'Mit dem gerade Ausgeführten möchte ich einführend ein erstes Mal anreißen, welche Folgen es haben kann, wenn wir uns der sehr hilfreichen, vor langer Zeit vorgenommenen Vereinfachungen'."\n".
                     'nicht mehr bewusst sind und sie teils unreflektiert, und damit völlig unhinterfragt, als quasi naturgegeben hinnehmen.'."\n".
                     'Später komme ich noch auf die Folgen von unbewussten Vereinfachungen zurück.'."\n"))),
@@ -380,14 +393,16 @@
                     'Was wäre also, wenn wir die Struktur der Elementarteilchen auf sinnvolle und mit den heutigen Beobachtungen verträgliche Weise herausfinden und deren Zusammenhang definieren könnten?'."\n"))),
                     
                   array( 'text', array( Shape  => 'italic', text => array(
-                      'Ich behaupte, es lässt sich eine sinnvolle und mit den heutigen Beobachtungen verträgliche Struktur der Elementarteilchen finden,'."\n".
+                      'Ich sage, es lässt sich eine sinnvolle und mit den heutigen Beobachtungen verträgliche Struktur der Elementarteilchen finden,'."\n".
                       'wenn wir die hierfür wichtigen Prinzipien – \\jump{OM:FrQFT:FirstPrinciples}{First-Principles} – des grundsätzlichen Zusammenhangs in den dynamischen Strukturen der Dinge erkennen.'."\n"))),
  
                   array( 'text', array( text => array(
                     'Das hierfür entscheidende naturphilosophische Prinzip ist der von mir entdeckte und so genannte fraktale Djet-Neheh-Dualismus, aus dem sich'."\n".
                     'das Existenzprinzip der Elementarteilchen und schließlich das fraktale Existenzprinzip ergeben.'."\n",
-                      'Das Existenzprinzip der Elementarteilchen, bezogen auf Photonen und ihre Bedeutung im Gedankenexperiment der Lichtuhr Einsteins, ermöglicht einen'."\n".
-                    'Einblick in zwei verschiedene Aspekte der Zeit, die eine neue Interpretation der Relativitätstheorie und der modernen Physik insgesamt ermöglichen.'."\n"))),
+                      'Das Existenzprinzip der Elementarteilchen und die Erkenntnis, dass sich Elementarteilchen mit Ruhemasse\\footnote{\\const{FrQFT_g_footnote_text_Ruhemasse}} (mit Materieinhalt) im Grunde wie die Lichtuhr Einsteins verhalten,'."\n".
+                    'verbunden mit der strukturellen Bedeutung von Photonen im Gedankenexperiment der Lichtuhr,'."\n".
+                    'ermöglichen uns eine Idee von der Struktur der Elementarteilchen mit und ohne Ruhemasse.'."\n".
+                    'Wir bekommen so einen Einblick in zwei verschiedene Aspekte der Zeit, die sich in fraktalen Strukturebenen widerspiegeln und eine neue Interpretation der Relativitätstheorie und der Quantenphysik, und damit der modernen Physik insgesamt, ermöglichen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Neuinterpretation benötigt Relativierung von Denktabus')),
@@ -396,7 +411,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Um dies abschließend zu erreichen, kommen wir nicht umhin, uns die ein oder andere Einsicht und Neuinterpretation zu erarbeiten und so liebgewonnene Denktabus zu relativieren.'."\n".
-                    'Und hierbei müssen wir uns auch noch – mühevollerweise – von mehreren voneinander abhängigen Denktabus nacheinander lösen.'."\n",
+                    'Und hierbei müssen wir uns auch noch – mühevoller Weise – von mehreren voneinander abhängigen Denktabus nacheinander lösen.'."\n",
                       'Die Mühe diesen Weg zu gehen lohnt sich und wird mit etlichen interessanten neuen Perspektiven und Erkenntnissen versüßt.'."\n"))),
                       
                   // array( 'youtube',
@@ -409,17 +424,22 @@
                                                                  'Die Gesamtbewegung der Fundamentalteilchen steht für die „neue“ Zeit, die jeder Veränderung zugrunde liegt.'."\n".
                                                                  'Diese Struktur kann als unpolarisiertes Vakuum-Photon verstanden werden.'))),
                       
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:Ansatz-Unterscheidung-Zeit-Alterung', text =>
                                            
                 'Ansatz: Unterscheidung von Zeit und Alterung')),
                   array( 'text', array( text => array(
                     'Der Ansatz zur Lösung des ›Problems der Zeit‹ liegt in einem neuen, differenzierten Verständnis der Zeit begründet:'."\n",
-                      'Seine Grundlage ist die naturphilosophische Erkenntnis, dass hinter jeder Veränderung der Struktur eines Dings eine Bewegung steckt, und damit eine Dynamik in Raum und Zeit.'."\n".
-                    'Aber differenziert durch die weitere Erkenntnis, dass jeder sich exakt gleich wiederholende Anteil dieser Veränderung – jede sich exakt gleich wiederholende rotierende Schwingung –,'."\n".
-                    'die nach einem bestimmten Zeitinterval die Struktur eines Dings ununterscheidbar wieder in ihren'."\n".
-                    'Ausgangszustand zurückführt, keinen Beitrag zur Alterung des Dings leistet, zu dessen Reifeprozess.'."\n",
-                      'Mit der Alterung eines Dings ist gemeint, dass sich seine Struktur quasi unwiederbringlich verändert:'."\n".
-                    'Unser Kosmos altert, wenn sich ein Photon in ihm frei durch den Raum bewegt.'."\n".
+                      'Die Grundlage des neuen, differenzierten Verständnisses der Zeit ist die naturphilosophische Erkenntnis,'."\n".
+                    'dass hinter der Zeit die Veränderung der Struktur eines Dings steckt und damit die Bewegung seiner Bestandteile in Raum und Zeit;'."\n".
+                    'womit schon eine gewisse Selbstbezüglichkeit dieser Definition der Zeit sichtbar wird, die wir noch überwinden müssen.'."\n".
+                    'Differenziert wird dies durch die weitere Erkenntnis, dass die Veränderung eines Dings durch die Bewegung seiner Bestandteile'."\n".
+                    'in zwei Aspekte zerfällt oder anders gesagt, in zwei Anteile aufgeteilt werden kann:'."\n",
+                      'Ein schwingender, exakt gleich wiederholend rotierender Anteil dieser Veränderung führt die Struktur der Bestandteile des Dings'."\n".
+                    'nach einem bestimmten Zeitinterval ununterscheidbar wieder in seinen Ausgangszustand zurück.'."\n".
+                    'Dieser Anteil seiner zeitlichen Veränderung leistet keinen Beitrag zur \\italic{Alterung} des Dings, zu dessen Reifeprozess.'."\n",
+                      'Denn mit der Alterung eines Dings ist gemeint, dass sich seine Struktur quasi unwiederbringlich verändert.'."\n".
+                    'Und genau diese Alterung ist der andere Anteil der Veränderung eines Dings.'."\n",
+                      'Unser Kosmos altert, wenn sich ein Photon in ihm frei durch den Raum bewegt.'."\n".
                     'Das Photon selber – seine innere Struktur – altert nicht, weil seine Bestandteile, die Fundamentalteilchen in ihm, nur schwingende Bewegungen ausführen, die sein'."\n".
                     'elektromagnetisches Feld, nach einem bestimmten Zeitinterval, wieder in den selben Zustand zurückführen wie zuvor.'."\n",
                       'Die absolute Bewegung der Fundamentalteilchen, aus denen das Photon besteht, trägt also zwei Bewegungskomponenten in sich:'."\n".
@@ -428,7 +448,12 @@
                       'Die Alterung ist so gesehen der Zeitbegriff der Relativitätstheorie.'."\n".
                     'Beide Bewegungskomponenten kombiniert ergeben mehr als die Alterung.'."\n".
                     'Zusammen stehen beide Bewegungskomponenten nämlich für die Zeit, die jeder Art von Veränderung zugrunde liegt, von der die Alterung nur ein Teil ist.'."\n".
-                    'Die „neue“ Zeit, die für die Veränderung aller Dinge steht, ist demnach eine Erweiterung des Zeitbegriffs der Relativitätstheorie, die die Schwingungen der Quantenphysik umfasst.'."\n"))),
+                    'Diese Perspektive nenne ich die \\italic{Alterungsinterpretation}.'."\n".
+                    'Die „neue“ Zeit, die für die Veränderung aller Dinge steht, ist demnach eine Erweiterung des Zeitbegriffs der Relativitätstheorie,'."\n".
+                    'die auf diese Weise nun die Schwingungen der Quantenphysik umfasst.'."\n".
+                    'Wie wir noch sehen werden, wird durch diese neue Perspektive dann das innere von „Schwarzen Löchern“ transparent.'."\n",
+                      'Uns sollte klar sein, dass diese neue Perspektive bedeutende Grundsätze des heutigen Physikverständnisses berührt,'."\n".
+                    'die wir im Folgenden Stück für Stück plausibel machen müssen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Taburelativierung: Überlichtgeschwindigkeit')),
@@ -450,30 +475,39 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Ansatz: Existenz beruht auf der Stabilität von Regelprozessen')),
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    '\\bold{Physik auf Basis von bio-ähnlichen Regelprozessen:}',
+                    '• Physik: Regelprozesse zeigen sich in Newtons Actio gleich Reactio. Denn hierin kommt das grundlegende Konzept von Spieler und Gegenspieler, von Agonist und Antagonist, zum Ausdruck. In Bezug auf das Beispiel unseres Sonnensystems und die stabile Bahn der Erde um die Sonne gibt es auch Actio und Reactio. Die Gravitation spielt gegen die Fliehkraft, also gegen die Trägheit, wie alle Wechselwirkungen, die eine Bewegung ändern. Aus Sicht eines Regelprozesses ist die noch einmal gründlich zu analysieren. Hier spielt irgendwie die Kraft gegen die Zeit, die es braucht, eine Wirkung zu entfalten. Was wiederum mit der Zeit die es braucht zusammenhängt, um, aus Sicht der FrQFT, die Wirkungsquanten-Struktur der Erde durch das Gravitationspotenzial der Sonne so umzubauen, dass die Erde ihre Bewegungsrichtung ändert.',
+                    '• Physik: Die Schlussfolgerungen münden in die Einsicht, dass es für jedes Ding, jede Existenz, der Physik genau einen einzigen grundlegenden Regelprozess geben muss. Dieser Regelprozess organisiert die Stabilität und die Entwicklung seiner Existenz.',
+                    ))),
                   array( 'text', array( text => array(
-                    'Im Laufe der Entwicklung der Theorie hat sich herausgestellt, dass die sich ergebenden Strukturen des zugehörigen Modells als bio-ähnliche, selbstorganisierte Regelprozesse zu verstehen sind:'."\n",
-                      'Jedem Ding, also jeder Entität, in diesem Modell liegt ein Elementarprozess zu grunde, ein struktureller Regelprozess, der seine Stabilität und Fortentwicklung organisiert.'."\n".
-                    'Der Elementarprozess regelt seine Entstehung, seine Stabilität, seine Transformation und seinen Zerfall oder seine Zerstörung; seine Balance zwischen Ordnung und Chaos.'."\n".
+                    'Im Laufe der Entwicklung der Theorie hat sich herausgestellt, dass die sich ergebenden Strukturen des zugehörigen Modells als bio-ähnliche, selbstorganisierte Regelprozesse\\footnote{\\const{FrQFT_g_footnote_text_Regelung}} zu verstehen sind:'."\n",
+                      'Jedem Ding, also jeder Entität, so auch jedem Elementarteilchen, in diesem Modell liegt ein Elementarprozess zugrunde, ein struktureller Regelprozess, der seine Stabilität und Fortentwicklung organisiert.'."\n".
+                    'Unter Berücksichtigung der Einflüsse von außen regelt der Elementarprozess die Entstehung des Dings, seine Stabilität, seine Transformation und seinen Zerfall oder seine Zerstörung; seine Balance zwischen Ordnung und Chaos.'."\n".
                     'Dies gilt für jedes Elementarteilchen, für das Vakuum und seine Bestandteile, für Atome, Moleküle, Lebewesen, Steine, Planeten, Sonnen, Galaxien, den gesamten Kosmos genauso,'."\n".
-                    'wie sogar für deren zugrunde liegenden Fundamentalteilchen selber.'."\n",
+                    'wie auch für deren zugrunde liegenden Fundamentalteilchen selber.'."\n",
                       'Es stellte sich im Laufe der Zeit heraus, dass manche Eigenschaften von Elementarprozessen, und Regelprozessen ganz allgemein,'."\n".
-                    'tiefgreifend mit bekannten Eigenschaften und Erkenntnissen der modernen Physik zusammenhängen:'."\n"))),
+                    'tiefgreifend mit bekannten Eigenschaften und Erkenntnissen der modernen Physik zusammenhängen:'."\n".
+                    ''))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Elementarprozesse, und Regelprozesse allgemein, basieren immer auf einem System von Spielern und Gegenspielern, die den Prozess stabil halten.',
+                        'Elementarprozesse, und Regelprozesse allgemein, basieren immer auf einem System von Spielern und Gegenspielern, Agonisten und Antagonisten, Actio und Reactio\\footnote{\\const{FrQFT_g_footnote_text_ActioUndReactio}} (aus einer bestimmten Perspektive), die den Prozess stabil halten.',
                         'Ihre strukturelle Grundlage sind daher Symmetriebrüche, auf denen die Wechselwirkungen ihrer Spieler und Gegenspieler beruhen.',
-                        'Es handelt sich bei Elementarprozessen immer um eine ausgedehnte Struktur, die in ihrer Dimension, wenn vielleicht auch zyklisch, stabilisiert wird.',
+                        'Es handelt sich bei Elementarprozessen immer um eine ausgedehnte Struktur, die in ihrer Ausdehnung (Dimension), wenn vielleicht auch zyklisch, stabilisiert wird.',
                         'Jeder Regelprozess beinhaltet einen Kreislauf, der sich bei einem Elementarprozess in Form einer Rotation oder Schwingung zeigt.'))),
+                  array( 'text', array( text => array(
+                    'So erklärt sich auch, wie es dazu kommt, dass in unserer Welt, ob belebt, scheinbar tot oder transzendent – zum Beispiel das Licht oder Vakuum –, Schwingungen allgegenwärtig sind.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
-                'Folge: Alle Eigenschaften der Elementarteilchen entspringen ihrer Struktur')),
+                'Folge: Die Spins der Elementarteilchen entspringen ihrer Struktur')),
                   array( 'text', array( text => array(
-                    'Die Spins der Elementarteilchen beispielsweise sind nicht mehr länger Label – Etiketten –, die einem Punkt in Raum und Zeit zugeordnet werden,'."\n".
-                    'wie im heutigen Standardmodell der Teilchenphysik\\color{*Bearb}{(Verweis)}.'."\n".
+                    'Die Spins der Elementarteilchen beispielsweise sind nicht mehr länger einfach „nur“ Zuordnungen – Label beziehungsweise Etiketten –, die einem Punkt in Raum und Zeit angeheftet werden,'."\n".
+                    'wie im heutigen Standardmodell der Teilchenphysik.'."\n".
                     'Die hier vorgeschlagene Struktur der Elementarteilchen rotiert tatsächlich mit ihren Spins entsprechenden Drehimpulsen'."\n".
                     'um ihre Achse und um bestimmte Kurven ihrer Struktur.'."\n",
-                      'Bisher wurde diese im Grundsatz nicht ganz neue Idee immer mit dem Hinweis abgelehnt, dass sich dann die „Oberfläche“ des Elementarteilchens'."\n".
+                      'Bisher wurde diese im Grundsatz nicht neue Idee immer mit dem Hinweis abgelehnt, dass sich dann die „Oberfläche“ des Elementarteilchens'."\n".
                     'ja mit Überlichtgeschwindigkeit bewegen würde, was nach der Relativitätstheorie nicht möglich sei.'."\n".
-                    'Nach der neu eingeführten \\italic{Alterungsinterpretation} der Relativitätstheorie trägt der Rotationsanteil ihrer Struktur auf der Fundamentalteilchenebene allerdings nichts'."\n".
+                    'Nach der neu eingeführten \\jump{OM:FrQFT:Einleitung:Fundierung:Ansatz-Unterscheidung-Zeit-Alterung}{Alterungsinterpretation} der Relativitätstheorie trägt der Rotationsanteil ihrer Struktur auf der Fundamentalteilchenebene allerdings nichts'."\n".
                     'zu ihrer Alterung bei, die sich im Zerfall oder einer anderen Transformation oder Reaktion eines Elementarteilchens ausdrücken würde.'."\n",
                       'Nehmen wir diesen Rotationsanteil aus der Bewegung der Feinstruktur der Elementarteilchen heraus, verbleibt ein Anteil, der sich entlang seiner Bahn'."\n".
                     'mit Lichtgeschwindigkeit bewegt und damit der Relativitätstheorie nicht widerspricht, sondern ihrer eigenen und/oder der Alterung des Kosmos entspricht.'."\n",
@@ -492,7 +526,7 @@
                       
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:Folge-LichtUhr-Mat', text =>
                                            
-                'Folge: Die Lichtuhr ist realer Bestandteil der Materie')),
+                'Feststellung: Die Lichtuhr ist realer Bestandteil der Materie und mit dem Elementarteilchen-Spin verbunden')),
                   array( 'text', array( text => array(
                     'Einsteins Idee, die zeitlichen Eigenschaften der Materie mit Hilfe seines Gedankenexperiments der Lichtuhr zu veranschaulichen,'."\n".
                     'entpuppt sich als reale Eigenschaft der Struktur der Materie.'."\n".
@@ -503,8 +537,11 @@
                       'So ist das naturphilosophische Prinzip von Einsteins Lichtuhr ein wirklicher Bestandteil der Struktur der Materie.'."\n"))),
  
                   array( 'text', array( text => array(
-                    'Damit kann Einsteins genialer Ansatz seine strukturellen Bezüge zur Quantenphysik voll entfallten und seine herausragende Bedeutung bleibt nicht unbedingt'."\n".
-                    'weiter in der Punktform der Materie verborgen.'."\n"))),
+                    'Damit kann Einsteins genialer Ansatz seine strukturellen Bezüge zur Quantenphysik voll entfalten und seine herausragende Bedeutung bleibt nicht unbedingt'."\n".
+                    'weiter in der Punktform der Materie verborgen.'."\n".
+                    'Ebenso XXX Spin XXX'."\n".
+                    'XXX weiter in der Punktform der Materie verborgen.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Folge: Die neue Physik ist von fraktal verschachtelter Struktur')),
@@ -512,8 +549,15 @@
                     'Wenn jede Existenz eines Dings auf einer Struktur von Bestandteilen beruht, dann sind diese Bestandteile auch wieder Dinge.'."\n".
                     'Die Bestandteile müssen demnach also auch wieder aus kleineren Bestandteilen aufgebaut sein und so fort.'."\n",
                       'In dieser Erkenntnis spiegelt sich das oben erwähnte, naturphilosophische Existenzprinzip und seine fraktale Struktur wider.'."\n".
-                    'Die Dynamik der Bestandteile der Existenzen drückt sich im fraktalen Djet-Neheh-Dualismus aus.'."\n",
-                      'Demnach bestehen die Fundamentalteilchen wiederum aus noch kleineren dynamischen Bestandteilchen, die auf sehr sehr kleinen Helixspiralbahnen rotieren und so fort.'."\n"))),
+                    'Die Dynamik der Bestandteile der Existenzen drückt sich im fraktalen Djet-Neheh-Dualismus aus.'."\n".
+                    'Demnach bestehen die Fundamentalteilchen wiederum aus noch kleineren dynamischen Bestandteilchen, die auf sehr sehr kleinen Helixspiralbahnen rotieren und so fort.'."\n",
+                      'Wir haben oben eine Selbstbezüglichkeit der Definition der Zeit erkannt.'."\n".
+                    'Durch die fraktale Struktur bezieht sich nun eine Zeitebene der Struktur eines Dings immer wieder auf die darunter liegende Zeitebene.'."\n".
+                    'Dies löst die Selbstbezüglichkeit durch die Einführung einer theoretisch unendlich tief geschachtelten Struktur auf.'."\n",
+                      'In einem praktisch angewandten Modell können wir mit einer unendlich tief geschachtelten Struktur wenig anfangen.'."\n".
+                    'Dafür gibt es die vereinfachende Möglichkeit, in einer bestimmten Zeitebene die Bestandteile der Dinge als punktförmig anzunehmen.'."\n".
+                    'Dadurch wird die Bewegung der Punkte zur Zeitdefinition selbst und an diesen Punkten endet ihre Selbstbezüglichkeit dann.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Taburelativierung: Medium des Lichts')),
