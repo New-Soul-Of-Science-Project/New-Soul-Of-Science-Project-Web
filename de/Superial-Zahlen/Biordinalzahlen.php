@@ -110,14 +110,37 @@
                     'Zahl, sondern die Null selber.'."\n",
                       'Ontologisch betrachtet sind negative Zahlen also nicht die inklusive der Zählrichtung an der Null gespiegelten positiven Zahlen, inklusive der Null.'."\n".
                     'Sondern es handelt sich um eine Verschiebung, die die Zählrichtung beibehält.'."\n".
-                    'Und dazu macht eine Doppelung der Null keinen Sinn.'."\n"))),
+                    'Und dazu macht eine Doppelung der Null keinen Sinn.'."\n",
+                      'Auf diese Weise ergibt sich innerhalb der endlichen ganzen Zahlen eine fundamentale Asymmetrie,'."\n".
+                    'die sich in der Summe über alle endlichen ganzen Zahlen zeigt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  -0,5  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'In Worten ausgedrückt bedeutet dies:'."\n".
+                    ''))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                      'Der Mittelwert aller endlichen ganzen Zahlen ist demnach \\term{–0,5}.'."\n"))),
+                      'Der Mittelwert aller endlichen ganzen Zahlen ist demnach \\term{–0,5} und nicht \\term{0} (Null), wie wir im Allgemeinen eher annehmen.'."\n".
+                      ''))),
                       
                   array( 'text', array( text => array(
                     'Das ist möglicherweise für den einen oder anderen eine überraschende Erkenntnis.'."\n".
-                    'Ich finde sie hochspannend.'."\n"))),
+                    'Ich finde sie hochspannend.'."\n".
+                    ''))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Biordinalzahlen:Vortext:XXX',
+                Title => 'Möglicher Bezug zur analytischen Fortsetzung der \\term{Gamma}-Funktion …',
+                TitleVis => 'Möglicher Bezug zur analytischen Fortsetzung von \\term{Gamma}-Funktion:', ParagraphList => array(
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                    ))),
+                      
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
                       
                 'Biordinalzahlen als Erweiterung der Ordinalzahlen ins Negative', subline =>
@@ -216,7 +239,7 @@
                     'Sondern es ändern sich wirklich nur die Mengenkombinationen in der obersten Ebene der größten Limeszahl.'."\n".
                     'Alle tieferen Ebenen bleiben unberührt.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SpaLeb:Psychosomatik:Vortext:MehrGeschDetails',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Biordinalzahlen:Vortext:XXX',
                 Title => 'Verworfene Möglichkeit …',
                 TitleVis => 'Verworfene Möglichkeit:', ParagraphList => array(
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
