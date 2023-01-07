@@ -51,7 +51,7 @@
                       array( display => 'on',  latex => '{  3  :=  *\{ 0, 1, 2 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\}, *\{ *\{ *\}, *\{ *\{ *\} *\} *\} *\}  }'),
                       array( display => 'on',  latex => '{  n  :=  *\{ 0, 1, 2, …, n - 1 *\}  }'),
                       array( display => 'on',  latex => '{  n + 1  :=  *\{ 0, 1, 2, …, n *\}  =  n \cup *\{ n *\}  }',
-                                               label_name => 'OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins', label_text => '\\name{OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins}', label_incr => true),
+                                          label_name => 'OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins', label_text => '\\name{OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Im Folgenden soll gelten, dass die Null ein Element der natürlichen Zahlen ist, wie in den Peano-Axiomen\\footnote{\\const{NSOSP_g_footnote_text_PeanoAxiome}} zur Definition von \\term{\M(N)} gefordert:'."\n"))),
@@ -176,7 +176,8 @@
                     'wenn \\term{λ} die größte Limeszahl in der Summe ist und \\term{β} die restlichen Summanden zusammenfasst:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \lambda - \beta  :=  \lambda \setminus \beta  }'),
+                      array( display => 'on', latex => '{  \lambda - \beta  :=  \lambda \setminus \beta  }',
+                                         label_name => 'OM:SupNum:Biordinalzahlen:Vortext:Equ-Lambda-minus-Beta', label_text => '\\name{OM:SupNum:Biordinalzahlen:Vortext:Equ-Lambda-minus-Beta}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Dann wäre das Beispiel so definiert:'."\n"))),
@@ -215,14 +216,22 @@
                     'Sondern es ändern sich wirklich nur die Mengenkombinationen in der obersten Ebene der größten Limeszahl.'."\n".
                     'Alle tieferen Ebenen bleiben unberührt.'."\n"))),
                       
-                  array( 'fade-in-area', array( Display => 'showContent', jumpName => 'OM:SpaLeb:Psychosomatik:Vortext:MehrGeschDetails',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SpaLeb:Psychosomatik:Vortext:MehrGeschDetails',
                 Title => 'Verworfene Möglichkeit …',
                 TitleVis => 'Verworfene Möglichkeit:', ParagraphList => array(
-                  array( 'notice', array( Display => 'showContent', text => array(
+                  array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
+                      
+                'Umgekehrte Klammerung', subline =>
+                  '')),
+                  // funktioniert nicht, wegen verschachteltem Aufklappen
+                  /* array( 'notice', array( Display => 'showContent', text => array(
                      '\\bold{Überprüfen}',
                      '• Warum sollte die Addition von \\term{n} in \\term{(ω^{2} – ω) + n} anders laufen als oben?',
+                    ))), */
+                  array( 'text', array( text => array(
+                     '\\color{*Bearb}{\\bold{Überprüfen} \\\\ '."\n".
+                     '• Warum sollte die Addition von \\term{n} in \\term{(ω^{2} – ω) + n} anders laufen als oben?}'."\n",
                     ))),
-                      
                   array( 'text', array( text => array(
                     'Die andere Möglichkeit ist, wir klammern von vorne:'."\n"))),
                   array( 'equations',
@@ -243,6 +252,28 @@
                     'So ergibt sich in dieser Möglichkeit ein heilloses Durcheinander.'."\n",
                       'Deshalb ist für mich diese Möglichkeit zu verwerfen, wenn wir oben eine wunderbar einfache Möglichkeit gefunden haben,'."\n".
                     'dasselbe sehr übersichtlich und plausibel zu leisten.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
+                      
+                'Entfernen der (nur einer) Menge mit den Zahlen vom Mengenuniversum', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Eine noch ganz andere Möglichkeit, die ich in meiner Abhandlung über Biordinalzahlen gewählt hatte und jetzt verworfen habe,'."\n".
+                    'ist, wir entfernen nicht den Mengeninhalt einer zu subtrahierenden Zahl vom Mengenuniversum \\term{\M(U)} (siehe \\jumpname{OM:SupNum:Biordinalzahlen:Vortext:Equ-Lambda-minus-Beta}),'."\n".
+                    'sondern die Zahl selber:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \lambda - \beta  :=  \lambda \setminus *\{ \beta *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Diese Variante hat das Verhalten, dass sich die Anzahl der Mengen in einer Limeszahl oder im Mengenuniversum nicht verändert,'."\n".
+                    'weil immer nur eine Menge entfernt wird.'."\n".
+                    'Im Gegensatz dazu werden in der Variante oben, für die wir uns entschieden haben, immer so viele Mengen entfernt,'."\n".
+                    'wie die Größe (Anzahl) der zu subtrahierenden Zahl ist.'."\n".
+                    'Die Anzahl der verbleibenden Mengen entspricht also der Zahl, die dargestellt werden soll.'."\n",
+                      'Die obere Variante erfüllt unser Ziel, jede Zahl durch eine Menge darzustellen, die die Anzahl von Mengen enthält, die der Zahl selber gleich ist.'."\n".
+                    'Daher haben wir uns für die obige Variante entschieden und nicht für die hier erläuterte.'."\n".
+                    ''))),
                     ))),
                       
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:NeueEinsichten', text =>
