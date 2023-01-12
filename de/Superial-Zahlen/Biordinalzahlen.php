@@ -240,8 +240,8 @@
                     'Alle tieferen Ebenen bleiben unberührt.'."\n"))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Biordinalzahlen:Vortext:XXX',
-                Title => 'Verworfene Möglichkeit …',
-                TitleVis => 'Verworfene Möglichkeit:', ParagraphList => array(
+                Title => 'Verworfene Möglichkeiten …',
+                TitleVis => 'Verworfene Möglichkeiten:', ParagraphList => array(
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
                       
                 'Umgekehrte Klammerung', subline =>
