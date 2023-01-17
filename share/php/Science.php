@@ -3,10 +3,12 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 24.08.2021, 18:00h
+  // #: Stand: 14.02.2023, 22:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20230114:  +:  "MathJax":  New LaTeX macros "lSelSet", "rSelSet".
+  //                      +:  "$Sc_g_equation_replace_ary":  '*\{>' -> '\lSelSet' and '*<\}' -> '\rSelSet}' are new.
   //           20220815:  >:  "MathJax":  New LaTeX macro "mod".
   //           20220716:  >:  "MathJax":  Substitute LaTeX macros "rROpera" with "rOpera", "lLOpera" with "lOpera".
   //                      >:  "MathJax":  Replace in LaTeX macros "lROpera": "langle" with "lfloor", "rLOpera": "rangle" with "rfloor".
@@ -204,6 +206,8 @@
     echo '            rROpera: "\\\\rOpera",'."\n";
     echo '            lLOpera: "\\\\lOpera",'."\n";
     echo '            rLOpera: "\\\\mspace{-0.4mu} \\\\rfloor \\\\mspace{2.0mu}",'."\n";
+    echo '            lSelSet: "\\\\left\\\\{ \\\\mspace{-4.0mu} \\\\rangle \\\\mspace{2.0mu}",'."\n"; // left selection set, linke Auswahlmenge
+    echo '            rSelSet: "\\\\mspace{2.0mu} \\\\langle \\\\mspace{-4.0mu} \\\\right\\\\}",'."\n"; // left selection set, rechte Auswahlmenge
     echo '            mod: "\\\\; mod \\\\;",'."\n";
     echo '            lowZero: "\\\\raise -.3ex 0",'."\n";
     echo '            updownarrows: "\\\\uparrow\\\\!\\\\downarrow",'."\n";
@@ -376,6 +380,7 @@
     {
       
       //-- return Sc_f_equation_latex_html( $value[0][0], ($value[1] == null) ? "" : (($value[1][0] == null) ? "" : $value[1][0]), ($value[1] == null) ? "Google" : (($value[1][1] == null) ? "Google" : $value[1][1]), "inline");
+      // print_r( Sc_f_equation_latex_html( $value[0][0], ($value[1] == null) ? "" : (($value[1][0] == null) ? "" : $value[1][0]), ($value[1] == null) ? "MathJax" : (($value[1][1] == null) ? "MathJax" : $value[1][1]), "inline"));
       return Sc_f_equation_latex_html( $value[0][0], ($value[1] == null) ? "" : (($value[1][0] == null) ? "" : $value[1][0]), ($value[1] == null) ? "MathJax" : (($value[1][1] == null) ? "MathJax" : $value[1][1]), "inline");
       
     }
@@ -517,6 +522,7 @@
                                                param_dim => 1,
                                                param_optional_max => 2,
                                                callback_f => 'Sc_f_replace_callback__latexcommand__latexmath',
+                                               replace_internal => false,     // #!: XXX This is important for velocity and if "\\footnote" is hidden it shall not be counted and registered!
                                              ),
                                       'cite' =>
                                         array( type => 'latexcommand',
@@ -628,6 +634,8 @@
                                     array( '*r)', '\rROpera}'),
                                     array( '*l(', '^{\lLOpera'),
                                     array( '*l)', '\rLOpera}'),
+                                    array( '*\{>', '\lSelSet'),
+                                    array( '*<\}', '\rSelSet'),
                                     array( '〈', '\langle '),
                                     array( '〉', '\rangle '),
                                     array( '*(', '\left('),

@@ -36,7 +36,7 @@
   //                      !:  "$To_g_Text_replace_ary":  '&minus;' entrie new.
   //           20130901:  !:  "$To_g_Text_replace_preg_ary":  'jump':  Changed to "type => 'latexcommand'".
   //           20130902:  !:  "$To_g_Text_replace_preg_ary":  'color':  Changed to "type => 'latexcommand'".
-  //                      *:  "$To_f_replace_latexcommand_parameters":  There was a problem if the last latex command bracket was the last char of the string. Fixed now.
+  //                      *:  "To_f_replace_latexcommand_parameters":  There was a problem if the last latex command bracket was the last char of the string. Fixed now.
   //           20130903:  !:  "To_f_Paragraph":  'contentlist' is new and error message for unknown types implemented.
   //           20130904:  !:  "To_f_Paragraph":  'contentlist':  Element 'jumpurl' is new.
   //           20130906:  *:  "To_f_replace_latexcommand_parameters":  There was a problem if the last command parameter was followed directly by a close bracket "]" or "}" which encloses this command.
