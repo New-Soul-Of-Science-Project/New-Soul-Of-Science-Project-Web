@@ -303,7 +303,7 @@
                     'eine Rotation oder Schwingung von einem bestimmten Zustand zum nächsten von diesem ununterscheidbaren ist.'."\n".
                     'Das bedeutet, dass bei einem Schwingungsdurchgang mit der Spin-Rotationsgeschwindigkeit \\term{c} nicht unbedingt'."\n".
                     'der gesamte String einmal in der Ebene des Haupt-Spins'."\n".
-                    'um den Teilchenschwerpunkt rotiert; die Wellenlänge \\term{λ} also nur einem Teil des Spin-Umfangs entspricht.'."\n",
+                    'um den Teilchenschwerpunkt rotiert; die Wellenlänge \\latexmath{ \lambda } also nur einem Teil des Spin-Umfangs entspricht.'."\n",
                       'In der \\jumpname{OM:FrQFT:Lepton:Vortext:Ani-Lepton} ist dementsprechend eine Teilchen-Schwingung auch nur'."\n".
                     'eine Teilrotation des Strings in Haupt-Spin-Richtung, also um das Zentrum entlang der blauen Bahn.'."\n".
                     'Dies ermöglicht eine komplexe Struktur der String-Schwingung,'."\n".
@@ -326,6 +326,7 @@
                     'wodurch die Teilchen im zeitlichen Mittel elektrisch geladen erscheinen.'."\n".
                     'Bei neutralen Leptonen-Strings verteilt sich ein Feldstärken-Polwechsel auf zwei Lichtbahn-Wellen,'."\n".
                     'sodass gleichzeitig die beiden unterschiedlichen Feldstärken-Pole nach innen \\color{*Bearb}{(außen?)} präsentiert werden (\\term{n_{polwel} = 2}),'."\n".
+                    // 'sodass gleichzeitig die beiden unterschiedlichen Feldstärken-Pole nach innen \\color{*Bearb}{(außen?)} präsentiert werden (\\latexmath{ n_{polwel} = 2 }),'."\n".
                     'was die neutralen Leptonen-Strings bei zunehmender Distanz von deren Schwerpunkt sehr schnell völlig elektrisch neutral erscheinen lässt.'."\n".
                     'Multipliziert mit der Wellenanzahl der \\color{*LichtbahnGruen}{grünen} Lichtbahn je Feldstärken-Polwechsel \\term{n_{polwel}}'."\n".
                     'bestimmen sie die gesamte Lichtbahn-Wellenanzahl \\term{n_{wel}}:'."\n".
