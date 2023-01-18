@@ -92,21 +92,149 @@
                     'Auch hier wird konsequenterweise das Prinzip aufrecht erhalten, dass die Menge, die eine Zahl repräsentiert in Richtung des Negativen'."\n".
                     'in ihrer Anzahl sinkt.'."\n".
                     'An einer gegebenen Anzahl fehlen entsprechend viele Zahlen.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
+                      
+                'Die ontologische Deutung', subline =>
+                  'Was wir wohl nicht sehen')),
                   array( 'text', array( text => array(
-                  '\\condb{Die ontologische Deutung — Was wir möglicherweise nicht sehen} \\\\ '."\n".
-                    'Was geht hier vor sich, was wir möglicherweise nicht sehen?'."\n",
+                    'Was geht beim Arbeiten mit Mengen implizit vor sich, was wir wohl nicht sehen, was uns nicht bewusst ist?'."\n",
                       'Die vorgestellte Methode zur Darstellung negativer Zahlen durch Mengen – oder später dann bestimmte Klassen, die Antimengen genannt werden –'."\n".
-                    'macht deutlich, dass eine Menge – oder Klasse – eine Auswahl aus der Möglichkeiten darstellt.'."\n".
+                    'macht deutlich, dass eine Menge – oder Klasse – eine Auswahl aus den Möglichkeiten darstellt.'."\n".
                     'Symbolisch wird durch die Klammer, die etwas enthält, eine Auswahl getroffen, die diese vom Rest der'."\n".
                     'Auswahlmöglichkeiten abgrenzt, die Auswahl umhüllt.'."\n",
                       'Implizit haben wir es oben also immer mit der Menge der natürliche Zahlen \\term{\M(N)} zu tun.'."\n".
-                    'Die Auswahl befindet sich in der Auswahl-Klammer oder Auswahl-Hülle und der Rest unsichtbar außerhalb dieser.'."\n".
+                    'Die Auswahl befindet sich in der Menge- oder Auswahl-Klammer oder Auswahl-Hülle und der Rest unsichtbar außerhalb dieser.'."\n".
                     'Unsere Betrachtung behandelt also immer die Menge \\term{\M(N)}, die in zwei Teile zerlegt ist:'."\n".
                     'Einen Teil, auf den wir fokussierten – der bewusste Teil – und einen Teil, den wir ausblenden – der unbewusste Teil.'."\n".
                     'Naturphilosophisch gesehen, haben wir es mit einem Dualismus beziehungsweise einer Polarität zu tun,'."\n".
                     'den \\italic{Auswahldualismus} oder \\italic{Bewusstseinsdualismus}.'."\n",
                       'Noch näher betrachtet handelt es sich beim Auswahl- oder Bewusstseinsdualismus um einen fraktalen Dualismus.'."\n".
-                    'Denn jeder dieser beiden Teile kann durch einen Perspektivwechsel, durch einen neuen Fokus, wieder in zwei solche Teile zerfallen.'."\n".
+                    'Denn zunächst wählen wir die Menge \\term{\M(N)}, nehmen sie in unseren Fokus und blenden damit alles andere'."\n".
+                    'was existiert aus.'."\n".
+                    'Anschließend gehen wir in diese Menge und wählen in ihr wieder einen Teil aus, den wir nun in den näheren Fokus nehmen'."\n".
+                    'und damit alle anderen Elemente in \\term{\M(N)} ausblenden.'."\n".
+                    'Wir haben dann also schon vier Fraktalebenen:'."\n".
+                    'Alles was existiert, darin die Menge \\term{\M(N)}, darin alle Elemente in dieser Menge und dann darin'."\n".
+                    'die Teilmenge der Elemente, die wir letztendlich aus den Elementen in \\term{\M(N)} ausgewählt haben.'."\n",
+                      'Eine Invertierung oder Vertauschung der beiden tiefsten Ebenen nutzen wir nun zur Darstellung negativer Zahlen:'."\n".
+                    ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Wählen wir eine einzige Ordinalzahl, beispielsweise die \\term{2}, in Bezug zum von uns zuvor zuletzt geschilderten, tiefsten Fokus:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  2  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Dann haben wir eigentlich eine Auswahl-Menge, die die ausgewählte Zahl enthält,'."\n".
+                      'hier durch zwei neue Klammern mit Pfeilen nach innen symbolisiert:'."\n".
+                      // 'Die ausgewählte Zahl ist selber eine Menge mit all den Mengendarstellungen ihrer Vorgänger.'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  *\{> 2 *<\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Um die Menge mit unserer Auswahl aus \\term{\M(N)} herum befinden sich ja implizit alle Zahlen, die wir nicht aus \\term{\M(N)}'."\n".
+                      'ausgewählt haben, denn wir haben ja zum Ausdruck gebracht, dass wir uns mit den Elementen in \\term{\M(N)} beschäftigen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  *\{> 0, 1, *\{> 2 *<\} , 3, 4, 5, \cdots *<\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Wenn wir unseren Fokus von der \\term{2} zu allen anderen wechseln, dann sieht dies'."\n".
+                      'folgendermaßen aus:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  *\{> 2, *\{> 0, 1, 3, 4, 5, \cdots *<\} *<\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n",
+                        '\\\\ '."\n".
+                      ''))),
+                  array( 'text', array( text => array(
+                    'Dies ist unserer Konstruktion der Darstellung negativer Zahlen durch Mengen oben schon sehr ähnlich,'."\n".
+                    'aber nicht gleich.'."\n",
+                      'Was vor allem nicht erfüllt ist, ist die Idee, dass die Darstellung des Wertes einer Zahl mit'."\n".
+                    'der Anzahl an Mengen in Beziehung steht.'."\n".
+                    'Denn im oberen Beispiel fehlt im inneren Fokus nur eine Zahl an \\term{\M(N)} und nicht zwei,'."\n".
+                    'wie es oben bei einer Anzahl von \\term{-2} eigentlich gefordert ist.'."\n".
+                    'Auch ist im Fokus nicht eine einzige Menge ausgewählt, sondern viele.'."\n".
+                    ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Wir wollen nun die \\term{-2} auswählen und in den Fokus nehmen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  -2  =  *\{> \!-\!2 *<\}  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  *\{> \!-\!2 *<\}  =  *\{> \mathbb{N} \setminus 2 *<\}  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  *\{> \!-\!2 *<\}  =  *\{> \mathbb{N} \setminus *\{ 0, 1 *\} *<\}  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  *\{> \!-\!2 *<\}  =  *\{> *\{ 2, 3, 4, 5, \cdots *\} *<\}  }'),
+                      // array( display => 'on', latex => '{  *\{> \cdots, -3, *\{> \!-\!2 *<\}, -1, 0, 1, 2, 3, \cdots *<\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  *\{> 2, *\{> \!-\!2 *<\} *<\}  =  *\{> 2, *\{> \mathbb{N} \setminus 2 *<\} *<\}  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  *\{> 2, *\{> \!-\!2 *<\} *<\}  =  *\{> 2, *\{> \mathbb{N} \setminus *\{ 0, 1 *\} *<\} *<\}  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  *\{> 2, *\{> \!-\!2 *<\} *<\}  =  *\{> 2, *\{> *\{ 2, 3, 4, 5, \cdots *\} *<\} *<\}  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  *\{> 2, *\{> \!-\!2 *<\} *<\}  =  *\{> *\{ 0, 1 *\}, *\{> \mathbb{N} \setminus *\{ 0, 1 *\} *<\} *<\}  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  *\{> 2, *\{> \!-\!2 *<\} *<\}  =  *\{> *\{ 0, 1 *\}, *\{> *\{ 2, 3, 4, 5, \cdots *\} *<\} *<\}  }'),
+                      array( display => 'on', latex => '{  *\{> 0, 1, *\{> 2, 3, 4, 5, \cdots *<\} *<\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Die \\term{2} ist nun ihrerseits eine Menge, die ihre Vorgänger enthält:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  *\{> 0, 1, *\{> *\{ 0, 1 *\} *<\}, 3, 4, 5, \cdots *<\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  *\{> 2, *\{> *\{ 2, 3, 4, 5, \cdots *\} *<\} *<\}  }'),
+                      array( display => 'on', latex => '{  *\{> *\{ 0, 1 *\} , *\{> *\{ 2, 3, 4, 5, \cdots *\} *<\} *<\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n",
+                        '\\\\ '."\n".
+                      ''))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      'XXX Denn jeder dieser beiden Teile kann durch einen Perspektivwechsel, durch einen neuen Fokus, wieder in zwei solche Teile zerfallen.'."\n".
                     'Oder wir teilen beide Teile anders in zwei Teile auf.'."\n".
                     'Betrachten wir beide Teile gemeinsam, dann lassen wir natürlich wieder implizit den Rest der Welt, des Universums, weg.'."\n",
                       'Die Menge \\term{\M(N)} selber kann in der Darstellung der endlichen Zahlen keine Rolle spielen,'."\n".
@@ -131,32 +259,44 @@
                     'Während der verschobene Nullpunkt der negativen Seite eine negative Zahl repräsentiert, repräsentiert der originale Nullpunkt keine positive'."\n".
                     'Zahl, sondern die Null selber.'."\n",
                       'Ontologisch betrachtet sind negative Zahlen also nicht die inklusive der Zählrichtung an der Null gespiegelten positiven Zahlen, inklusive der Null.'."\n".
-                    'Sondern es handelt sich um eine Verschiebung, die die Zählrichtung beibehält.'."\n".
-                    'Und dazu macht eine Doppelung der Null keinen Sinn.'."\n",
-                      'Auf diese Weise ergibt sich innerhalb der endlichen ganzen Zahlen eine fundamentale Asymmetrie,'."\n".
-                    'die sich in der Summe über alle endlichen, ganzen Zahlen zeigt:'."\n".
+                    'Sondern es handelt sich strukturell um eine Verschiebung, die die Zählrichtung beibehält und nicht spiegelt, wohingegen die Werte an der Null gespiegelt sind'."\n".
+                    '\\color{*Bearb}{(eine Abbildung diesbezüglich einfügen, die zeigt, dass der Ausgangs- oder Ankerpunkt einer Zahl immer an ihrem Punkt auf der Geraden liegt und ihre \\italic{Zählentwicklung} die Lücke zur nachfolgenden Zahl abdeckt, was natürlich ebenso für die negativen Zahlen gilt)}.'."\n".
+                    'Strukturell macht eine Doppelung der Null keinen Sinn.'."\n",
+                      'Auf diese Weise ergibt sich innerhalb der endlichen, ganzen Zahlen eine fundamentale Asymmetrie,'."\n".
+                    'die sich in der Summe über alle endlichen, ganzen Zahlen zeigt,'."\n".
+                    'weil am negativen „Ende“ ein Ausgangs- oder Ankerpunkt „überhängt“, der einen sehr großen Wert trägt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  -1  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Der Mittelwert aller endlichen, ganzen Zahlen ergibt sich dann zu:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 }  =  -0,5  }'),
+                      array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} *( n + 1 *)  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} 1  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - \sum_{ \forall n \in \mathbb{N}} 1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - \omega  }'),
                     ))),
                   array( 'text', array( text => array(
                     'In Worten ausgedrückt bedeutet dies:'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                      'Die Summe aller endlichen, ganzen Zahlen ist demnach \\term{–1} und nicht \\term{0} (Null), wie wir im Allgemeinen eher annehmen.'."\n".
+                      'Die Summe aller endlichen, ganzen Zahlen ist demnach der actual unendliche Wert \\term{–ω}'."\n".
+                      'und nicht ein endlicher Wert oder gar \\term{0} (Null), wie wir im Allgemeinen eher annehmen.'."\n".
                       ''))),
                       
+                  array( 'text', array( text => array(
+                    'Der Mittelwert aller endlichen, ganzen Zahlen ergibt sich dann, wenn wir, wie üblich,'."\n".
+                    'die Summe durch die Anzahl ihrer Summanden teilen, zu:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot \omega }  =  \frac{ - \omega }{ 2 \cdot \omega }  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot \omega }  =  - \frac{ 1 }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'In Worten ausgedrückt bedeutet dies:'."\n".
+                    ''))),
+                      
                   array( 'text', array( Shape  => 'italic', text => array(
-                      'Der Mittelwert aller endlichen, ganzen Zahlen ist demnach \\term{–0,5} und nicht \\term{0} (Null), wie wir im Allgemeinen eher annehmen.'."\n".
+                      'Der Mittelwert aller endlichen, ganzen Zahlen ist demnach \\term{–½} und nicht \\term{0} (Null), wie wir im Allgemeinen eher annehmen.'."\n".
                       ''))),
                       
                   array( 'text', array( text => array(
@@ -168,8 +308,8 @@
                 Title => 'Möglicher Bezug zur analytischen Fortsetzung der Riemannschen Zeta-Funktion …',
                 TitleVis => 'Möglicher Bezug zur analytischen Fortsetzung der Riemannschen Zeta-Funktion:', ParagraphList => array(
                   array( 'text', array( text => array(
-                    'Die oben erzielte Erkenntnis, dass die Summe aller endlichen, ganzen Zahlen \\term{-1} und damit'."\n".
-                    'ein negativer Wert ist, erinnert ein Stück weit an ein in gewisser Hinsicht erstaunliches Ergebnis'."\n".
+                    'Die oben erzielte Erkenntnis, dass der Mittelwert aller endlichen, ganzen Zahlen \\term{-½} und damit'."\n".
+                    'ein endlicher, negativer Wert ist, erinnert ein Stück weit an ein in gewisser Hinsicht erstaunliches Ergebnis'."\n".
                     'in Bezug auf die Riemannsche Zeta-Funktion\\footnote{Vgl. \\cite{wiki:RiemannscheZetaFunktion:2022}.}'."\n".
                     'beim Funktionswert \\term{-1}:'."\n".
                     ''))),
@@ -183,16 +323,20 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \zeta(s)  :=  \sum_{ \forall n \in \mathbb{N} \setminus \{ 0 \} } \frac{ 1 }{ n^{s} }  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  \zeta(-1)  ?=  \sum_{ \forall n \in \mathbb{N} \setminus \{ 0 \} } n  ?=  - \frac{ 1 }{ 12 }  }'),
+                      array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} *) *( Re(s) > 1 *) *[  \zeta(s)  :=  \sum_{ n = 1 }^{\infty} \frac{ 1 }{ n^{s} }  *]  }'),
+                      array( display => 'on',  latex => '{  \zeta(s)  :=  \frac{ 1 }{ 1^{s} } + \frac{ 1 }{ 2^{s} } + \frac{ 1 }{ 3^{s} } + \frac{ 1 }{ 4^{s} } + \frac{ 1 }{ 5^{s} } + \cdots  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \zeta(-1)  :=  \frac{ 1 }{ 1^{-1} } + \frac{ 1 }{ 2^{-1} } + \frac{ 1 }{ 3^{-1} } + \frac{ 1 }{ 4^{-1} } + \frac{ 1 }{ 5^{-1} } + \cdots  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \zeta(-1)  :=  \frac{ 1 }{ \frac{ 1 }{ 1 } } + \frac{ 1 }{ \frac{ 1 }{ 2 } } + \frac{ 1 }{ \frac{ 1 }{ 3 } } + \frac{ 1 }{ \frac{ 1 }{ 4 } } + \frac{ 1 }{ \frac{ 1 }{ 5 } } + \cdots  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \zeta(-1)  :=  1 + 2 + 3 + 4 + 5 + \cdots  }'),
+                      array( display => 'on',  latex => '{  \zeta(-1)  ?=  \sum_{ n = 1 }^{\infty} n  ?=  - \frac{ 1 }{ 12 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Allerdings gilt diese Definition der Zeta-Funktion nur für komplexe Funktionswerte, dessen Realteil größer als \\term{1} ist.'."\n",
-                      'Dennoch betrachten wir einmal, was das Ergebnis wäre:'."\n".
+                      'Dennoch betrachten wir einmal, was das Ergebnis wäre:\\footnote{Vgl. \\cite{wiki:RiemannscheZetaFunktion:2022}, Geschichte, Anfang des 20. Jahrhunderts, Ramanujans Arbeit zur Zeta-Funktion.}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \sum_{ \forall n \in \mathbb{N} \setminus \{ 0 \} } n  =  1 + 2 + 3 + 4 + \cdots  ?=  - \frac{ 1 }{ 12 }  }'),
+                      array( display => 'on', latex => '{  \sum_{ n = 1 }^{\infty} n  =  1 + 2 + 3 + 4 + \cdots  ?=  - \frac{ 1 }{ 12 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -209,6 +353,20 @@
                     'Insofern passt dies.'."\n".
                     'Es ist noch nicht geklärt, wie dies durch Mengen im hier entwickelten Sinn dargestellt werden kann.'."\n".
                     ''))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'Was wäre wenn:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} \setminus *\{ 1 *\} *) *[  \zeta(s)  :=  \sum_{ n = 0 }^{\infty} \frac{ 1 }{ n^{s} }  *]  }'),
+                      array( display => 'on',  latex => '{  \zeta(s)  :=  \frac{ 1 }{ 0^{s} } + \frac{ 1 }{ 1^{s} } + \frac{ 1 }{ 2^{s} } + \frac{ 1 }{ 3^{s} } + \frac{ 1 }{ 4^{s} } + \frac{ 1 }{ 5^{s} } + \cdots  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \zeta(-1)  :=  \frac{ 1 }{ 0^{-1} } + \frac{ 1 }{ 1^{-1} } + \frac{ 1 }{ 2^{-1} } + \frac{ 1 }{ 3^{-1} } + \frac{ 1 }{ 4^{-1} } + \frac{ 1 }{ 5^{-1} } + \cdots  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \zeta(-1)  :=  \frac{ 1 }{ \frac{ 1 }{ 0 } } + \frac{ 1 }{ \frac{ 1 }{ 1 } } + \frac{ 1 }{ \frac{ 1 }{ 2 } } + \frac{ 1 }{ \frac{ 1 }{ 3 } } + \frac{ 1 }{ \frac{ 1 }{ 4 } } + \frac{ 1 }{ \frac{ 1 }{ 5 } } + \cdots  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \zeta(-1)  :=  0 + 1 + 2 + 3 + 4 + 5 + \cdots  }'),
+                      array( display => 'on',  latex => '{  \zeta(-1)  ?=  \sum_{ n = 1 }^{\infty} n  ?=  - \frac{ 1 }{ 12 }  }'),
+                    ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
