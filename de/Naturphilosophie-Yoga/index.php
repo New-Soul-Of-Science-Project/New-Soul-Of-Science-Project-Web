@@ -131,6 +131,7 @@
                       array( title => 'Atmung – Lösen und Verbinden, Neuordnen \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => 'Die Atmung ist die Grundlage der Persönlichkeitsentwicklung. Wir lösen mit jeder Einatmung und verbinden neu mit jeder Ausatmung. Löse und verbinde, ›Solve et Coagula‹, die Weisheit des Hermes Trismegistos (Thot-Hermes)'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Spiritualitaet-Psychologie'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Energie-Esoterik-Spiritualitaet'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:WieVeraendereIchMeineVergangenheit'),
                     ))),
                     

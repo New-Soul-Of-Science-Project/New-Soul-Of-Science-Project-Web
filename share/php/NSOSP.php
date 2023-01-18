@@ -67,6 +67,7 @@
     author_image_height => '192px',
   );
                            
+  include $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/NPYo-Data.php';
   include $Glo_PathRel_back.'../de/Operialtheorie/OT-Data.php';
   include $Glo_PathRel_back.'../de/Superial-Zahlen/SupNum-Data.php';
   
@@ -800,6 +801,7 @@
   
   $Glo_g_Site_ary = array_merge(
 
+    $NPYo_g_Site_ary,
     $OT_g_Site_ary,
     $SupNum_g_Site_ary,
     array(
@@ -1856,55 +1858,7 @@
                 ),
          ),
 
-  'OM:NPYo:' =>
-    array_merge( $nSOSp_g_info_wolfgangHuss,
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/',
-           url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/',
-           favicons_url_rel_opt => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/favicon/',
-           //header_pict_name => 'Organical-Matters_Logo_De.jpg',
-           //header_pict_alt => 'Organical Matters Website, Ideen neuer Wissenschaft',
-           name_short => 'NaPhil-Yoga',
-           font_ary => array(
-                              '<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
-                              '<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
-                            ),
-           header_bgcolor => '#FFFFFF',
-           header_pict_name => 'Naturphilosophie-Yoga/NaPhil-Yoga_header_v01_1_1860x354_72dpi_De.jpg',
-           header_pict_width => '930px',
-           header_pict_height => '177px',
-           header_pict_bgcolor => '#FFFFFF',
-           header_pict_alt => 'Naturphilosophie-Yoga, Spannungsspiel des Lebens',
-           header_links_marginLeft => '254px',
-           copy_right => 'Naturphilosophie-Yoga (NaPhil-Yoga) \\\\'."\n".
-                          '© 2014–2022 by \\\\'."\n".
-                          'Wolfgang Huß und \\\\'."\n".
-                          'Media Line Digital e.K. \\\\'."\n".
-                          'is licensed under \\\\'."\n".
-                          '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
-           litera_url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Literatur_de.php',
-           litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
-         )),
-  'OM:NPYo:Home' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/index.php',
-           url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/index.php',
-           titel => 'Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
-           // description => '›Liebe zur Weisheit‹ Yoga – die Natur des Lebens verstehen und dieses Wissen anwenden. Körper und Seele als Einheit sehen, die Gedanken zur Ruhe kommen lassen … – Yoga nach der Naturphilosophie des ›Spannungsspiels des Lebens‹.',
-           // description => 'Yoga der Brücken der Zuversicht. Yoga der Neugier des Spielens. Yoga der Liebe meiner Natur. Yoga des In-der-Schwebe-Lassens. Nach der Naturphilosophie des ›Spannungsspiels des Lebens.',
-           description => '\\name[undertitle]{OM:NPYo:Home}. — \\name[description]{OM:NPYo:Home}.',
-           // description => 'Yoga des Werdens. — Nach der Naturphilosophie des ›Spannungsspiels des Lebens‹.',
-           keywords => '',
-           text_titel_h1 => 'Naturphilosophie-Yoga \\color{*TitleAdd}{\\small{(NaPhil-Yoga)}}',
-           text_titel_short => 'NaPhil-Yoga',
-           // text_undertitel_h2 => '\\color{*FigDescr}{›Liebe zur Weisheit‹ Yoga} – die Natur des Lebens verstehen und dieses Wissen anwenden. Körper und Seele als Einheit sehen, die Gedanken zur Ruhe kommen lassen …',
-           // text_undertitel_h2 => 'Yoga der Brücken der Zuversicht \\\\ \\small{\\color{*Light}{Yoga der Neugier des Spielens \\\\ Yoga der Liebe meiner Natur \\\\ Yoga des In-der-Schwebe-Lassens}}',
-           text_undertitel_h2 => 'Yoga des Werdens 𓇳',
-           text_titel_discr_h3 => 'Nach der Naturphilosophie des ›Spannungsspiels des Lebens‹',
-           jump_ary => array(
-                  'OM:NPYo:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
-                  'OM:NPYo:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
-                  'OM:NPYo:Home:Haftungsausschluss' => array( headline_text => 'Haftungsausschluss', headline_text_short => 'Haftungsausschluss'),
-                ),
-         ),
+  // 'OM:NPYo:' is in separate file in theme folder and included here.
   'OM:NPYo:Angebote-Veranstaltungen' =>
     array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Angebote-Veranstaltungen_de.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Angebote-Veranstaltungen_de.php',
@@ -2071,24 +2025,6 @@
            text_titel_discr_h3 => '',
            jump_ary => array(
                   'OM:NPYo:Meetup-LGBT-Spiritual-Hamburg:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
-                ),
-         ),
-  'OM:NPYo:Spiritualitaet-Psychologie' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Spiritualitaet-und-Psychologie.php',
-           url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Spiritualitaet-und-Psychologie.php',
-           titel => 'Spiritualität und Psychologie - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
-           description => 'Was haben Spiritualität und Psychologie miteinander zu tun? Unser innerer Dialog, unser Selbstmitgefühl, unsere Selbstheilung.',
-           keywords => '',
-           text_titel_h1 => 'Spiritualität und Psychologie',
-           text_titel_short => 'Spiritualität und Psychologie',
-           text_undertitel_h2 => 'Was haben Spiritualität und Psychologie miteinander zu tun?',
-           text_titel_discr_h3 => 'Unser innerer Dialog, unser Selbstmitgefühl, unsere Selbstheilung',
-           jump_ary => array(
-                  'OM:NPYo:Spiritualitaet-Psychologie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-                             
-                    'OM:NPYo:Spiritualitaet-Psychologie:Vortext:BinIchSpirituell' => array( headline_text => 'Bin ich spirituell? Glaube und vertraue ich?', headline_text_short => 'Bin ich spirituell?'),
-                             
-                  'OM:NPYo:Spiritualitaet-Psychologie:Wissen-Unwissen' => array( headline_text => 'Wissen und Unwissen'/*, headline_text_short => 'XXX'*/),
                 ),
          ),
   'OM:NPYo:Stein-der-Weisen' =>
@@ -3018,6 +2954,8 @@
                   'OM:SpaLeb:Was-ist-Leben:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
                 ),
          ),
+
+  // 'OM:SupNum:' is in separate file in theme folder and included here.
 
   'OM:VRT:' =>
     array_merge( $nSOSp_g_info_wolfgangHuss,
