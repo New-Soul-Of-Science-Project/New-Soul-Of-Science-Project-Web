@@ -28,7 +28,8 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
-                    'XXX'."\n"))),
+                    'XXX'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:NPYo:XXX:Vortext:XXX', text =>
                       
                 'XXX', subline =>
@@ -43,7 +44,8 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
-                    'XXX'."\n"))),
+                    'XXX'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       //array(  jump_name => 'OM:NPYo:XXX'),
@@ -78,7 +80,8 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
-                    'XXX'."\n"))),
+                    'XXX'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:NPYo:XXX:XXX:XXX', text =>
                       
                 'XXX', subline =>
@@ -93,7 +96,8 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
-                    'XXX'."\n"))),
+                    'XXX'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       //array(  jump_name => 'OM:NPYo:XXX'),

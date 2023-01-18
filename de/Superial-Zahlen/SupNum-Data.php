@@ -8,9 +8,9 @@
       favicons_url_rel_opt => $Glo_PathRel_back.'../de/Superial-Zahlen/favicon/',
       name_short => 'SupZahl',
       font_ary => array(
-                        '<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
-                        '<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
-                      ),
+        '<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
+        '<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
+      ),
       header_bgcolor => '#FFFFFF',
       header_pict_name => 'SN/SN_header_v02-01.jpg',
       header_pict_width => '930px',
@@ -18,12 +18,13 @@
       header_pict_bgcolor => '#FFFFFF',
       header_pict_alt => 'Superial-Zahlen, mit Primzahlen ins Unendliche',
       header_links_marginLeft => '398px',
-      copy_right => 'Superial-Zahlen (SN) \\\\'."\n".
-                    '© 1988–2022 by \\\\'."\n".
-                    'Wolfgang Huß und \\\\'."\n".
-                    'Media Line Digital e.K. \\\\'."\n".
-                    'is licensed under \\\\'."\n".
-                    '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
+      copy_right =>
+        'Superial-Zahlen (SN) \\\\'."\n".
+        '© 1988–2022 by \\\\'."\n".
+        'Wolfgang Huß und \\\\'."\n".
+        'Media Line Digital e.K. \\\\'."\n".
+        'is licensed under \\\\'."\n".
+        '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
       litera_url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Literatur_de.php',
       litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
     )),
