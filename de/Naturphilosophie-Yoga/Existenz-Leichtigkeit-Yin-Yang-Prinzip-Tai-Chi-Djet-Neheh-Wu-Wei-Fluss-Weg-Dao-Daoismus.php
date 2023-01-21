@@ -161,10 +161,10 @@
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\\bold{XXX}',
-                    '• Das Circumpunct-Symbol, das altägyptische Zeichen für „Sonne“ oder „Ra“ 𓇳, sehr ähnlich dem heutigem astronomischen und astrologischen Symbol der Sonne ☉, (siehe \\jump[https://de.wikipedia.org/wiki/Sonnensymbol]{}{Wikipedia: Sonnensymbol, Kreis-Symmetrie, Kreis mit einem Punkt in der Mitte}) kann mit den Wirkungsquanten-Kegeln der Quanten-Fluss-Theorie und hierin letztlich auch mit der dynamischen Geometrie der Photonen des Lichts und der dunklen Photonen des Vakuums in Verbindung gebracht werden (siehe in \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Ani-VakuumElapson} die einzelnen Hütchen und die gesamte Struktur).',
-                    '⋅ Das Zeichen symbolisiert so Existenz und (elementares) Bewusstsein; im Achtsamkeitsprozess auch höheres Bewusstsein.',
-                    '⋅ Das altägyptische Zeichen 𓇳, das zwei Kreise ineinander zeigt, könnte sogar so gedeutet werden, dass es auf die fraktale Struktur der Quanten-Fluss-Theorie hinweist.',
-                    '⋅ Auch könnten wir es als Hinweis auf die generelle Existenz durch Ausdehnung, wie nachfolgend beschrieben, verstehen, als flächige Richtungspolarisation oder Farbpolarisation.',
+                    '• Das Circumpunct-Symbol, das altägyptische Zeichen für „Sonne“ oder „Ra“ 𓇳, sehr ähnlich dem heutigen astronomischen und astrologischen Symbol der Sonne ☉, (siehe \\jump[https://de.wikipedia.org/wiki/Sonnensymbol]{}{Wikipedia: Sonnensymbol, Kreis-Symmetrie, Kreis mit einem Punkt in der Mitte}) kann mit den Wirkungsquanten-Kegeln der Quanten-Fluss-Theorie und hierin letztlich auch mit der dynamischen Geometrie der Photonen des Lichts und der dunklen Photonen des Vakuums in Verbindung gebracht werden (siehe in \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Ani-VakuumElapson} die einzelnen Hütchen und die gesamte Struktur).',
+                    '– Das Zeichen symbolisiert so Existenz und (elementares) Bewusstsein; im Achtsamkeitsprozess auch höheres Bewusstsein.',
+                    '– Das altägyptische Zeichen 𓇳, das zwei Kreise ineinander zeigt, könnte sogar so gedeutet werden, dass es auf die fraktale Struktur der Quanten-Fluss-Theorie hinweist.',
+                    '– Auch könnten wir es als Hinweis auf die generelle Existenz durch Ausdehnung, wie nachfolgend beschrieben, verstehen, als flächige Richtungspolarisation oder Farbpolarisation.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -174,13 +174,14 @@
                     'Daher kommen wir hier mit drei Grundfarben aus, denen nach dem Yin-Yang-Prinzip jeweils eine inverse Antifarbe zugeordnet ist.'."\n".
                     'So ergibt sich letztendlich ein farbiges Sechseck\\color{*Bearb}{(Verweis)}.'."\n",
                       'Räumlich sind es allerdings vier Farben mit jeweiligen Antifarben, also acht Farbflächen, um gleichwertiges zu erreichen, und dies formt einen Kuboktaeder\\color{*Bearb}{(Verweis)}.'."\n".
-                    'Der Kuboktaeder enthält die isotrope Vektor-Matrix\\color{*Bearb}{(Verweis)}, die das räumliche Vektor-Gleichgewicht\\color{*Bearb}{(Verweis)} darstellt.'."\n"))),
+                    'Der Kuboktaeder enthält die isotrope Vektor-Matrix\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. Video: \\jump[https://www.youtube.com/watch?v=BGGvwkrDZNA]{}{The Isotropic Vector Matrix - Nassim Haramein ( Abstract from Cognos 2010 conference)}}, wie von Nassim Haramein\\color{*Bearb}{(Verweis)} vorgestellt,\\footnote{Video: \\jump[https://www.youtube.com/watch?v=BGGvwkrDZNA]{}{The Isotropic Vector Matrix - Nassim Haramein ( Abstract from Cognos 2010 conference)}} die das räumliche Vektor-Gleichgewicht\\color{*Bearb}{(Verweis)} darstellt.'."\n"))),
                       
                   $FrQFT_g_zitat_BuckminsterFuller_StartingPoint,
+                  $FrQFT_g_zitat_BuckminsterFuller_StartingPoint_TranslatedTo_German,
                       
                   array( 'text', array( text => array(
                     'Das Vakuum stellt nach Richard Buckminster Fuller die stabile Bühne für alles dar, was möglich ist.'."\n".
-                    'In der neuen Physik der Quanten-Fluss-Theorie besteht diese aus Myriaden von rotierenden, kreisförmigen, farbpolarisierten Ringen von Wirkungsquanten, die in sich das flächige Vektor-Gleichgewicht tragen'."\n".
+                    'In der neuen Physik der Quanten-Fluss-Theorie besteht diese aus Myriaden von rotierenden, kreisförmigen, farbpolarisierten Ringen von unpolarisierten und damit dunklen Photonen aus Wirkungsquanten, die in sich das flächige Vektor-Gleichgewicht tragen'."\n".
                     'und zusammen das räumliche Vektor-Gleichgewicht in Form der isotropen Vektor-Matrix erzeugen.'."\n",
                       'Dadurch, dass Elementarteilchen im Grunde immer einen Spin tragen, gibt es in ihnen immer eine Hauptebene der Rotation, die der hexagonalen Farbpolarisation entspricht.'."\n"))),
                       
@@ -197,38 +198,42 @@
                   'Dynamik hält die Gegensatzpole stabil auseinander')),
                   array( 'text', array( text => array(
                     'Das Kräftegleichgewicht in den Bestandteilen des Vakuums, und schließlich in allen stabilen Elementarteilchen, wird durch sich selbstorganisierende,'."\n".
-                    'strukturelle Regelprozesse erzeugt, die deren innere Struktur organisieren.'."\n".
-                    'Daher nenne ich die neue Physik auch organische Physik.'."\n",
-                      'Stabile strukturelle Regelprozesse haben die Eigenschaft, über die Wechselwirkungen von Spielern und Gegenspielern aufrechterhalten und räumlich'."\n".
-                    'in ihrer Dimension gehalten zu werden.'."\n".
-                    'Genau das, was die Farbpolarisation ausdrückt.'."\n",
-                      'Auf diese Art und Weise ist auch automatisch elementares Bewusstsein in der neuen Physik verankert.'."\n".
-                    'Denn die Wechselwirkungen der Spieler und Gegenspieler der Regelprozesse der Vakuum-Bestandteile und Elementarteilchen reichen bis in die tiefen des'."\n".
-                    'Raumes und beeinflussen dort alle anderen Regelprozesse und werden auch von diesen beeinflusst, sodass alles aufeinander reagiert und sich.'."\n".
-                    'dadurch des anderen bewusst ist.'."\n",
-                      'Genau dies ist in meinen Augen unter anderem auch im Taijitu, im Yin-Yang-Symbol, dargestellt.'."\n".
-                    'Regelprozesse lassen etwas in ihnen, eine Struktur oder einen Wert, auf einem bestimmten Pfad schwingend laufen, auf dem die Wirkung optimiert ist.'."\n"))),
+                    'strukturelle Regelprozesse erzeugt, die ihre eigene innere Struktur stabilisieren.'."\n".
+                    'Daher nenne ich die neue Physik auch \\italic{organische Physik}.'."\n",
+                      'Diese Regelprozesse stabilisieren sich selbst durch ihre inneren Wechselwirkungen zwischen Spielern und Gegenspielern,'."\n".
+                    'deren Gleichgewicht zur Aufrechterhaltung ihrer räumlichen Dimension führt.'."\n".
+                    'Genau das, was die Farbpolarisation und das ebene sowie das räumliche Vektor-Gleichgewicht ausdrückt.'."\n",
+                      'Auf diese Art und Weise ist auch automatisch \\jump{OM:SpaLeb:Bewusstsein:Vortext:ElementarBewusstsein}{elementares Bewusstsein} in der neuen Physik verankert.'."\n".
+                    'Denn die Wechselwirkungen der Spieler und Gegenspieler der Vakuum-Bestandteile und Elementarteilchen reichen bis in die tiefen des'."\n".
+                    'Raumes.'."\n".
+                    'Sie beeinflussen dort alle anderen Regelprozesse ihrer Art und werden auch von diesen beeinflusst, sodass alles aufeinander reagiert und sich'."\n".
+                    'dadurch des anderen elementar „bewusst“ ist.'."\n",
+                      'Unter anderem dieses Gleichgewicht dieser natürlichen Regelprozesse ist in meinen Augen im Taijitu, im Yin-Yang-Symbol, dargestellt.'."\n".
+                    // 'Regelprozesse lassen etwas in ihnen, eine Struktur oder einen Wert, auf einem bestimmten Pfad schwingend laufen, auf dem die Wirkung optimiert ist.'."\n".
+                    ''))),
                       
                   array( 'figure',
                     array_merge( $SpaLeb_g_figure_ary_Achtsamkeitsprozess, array( name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Achtsamkeitsprozess'))),
                       
                   array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
                       
-                'Unser Leben und sein Achtsamkeitsprozess', subline =>
+                'Unser Leben und sein Care-Prozess/Achtsamkeitsprozess', subline =>
                   'Eine Balance aus Stabilität und Fortentwicklung bestimmt unser Leben')),
                   array( 'text', array( text => array(
-                    'Der \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}, der zentrale Regelprozess unseres Lebens nach dem ›Spannungsspiel des Lebens‹ (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Achtsamkeitsprozess}),'."\n".
+                    'Der \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Care-Prozess} beziehungsweise \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}, der zentrale Regelprozess unseres Lebens nach dem ›Spannungsspiel des Lebens‹ (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Achtsamkeitsprozess}),'."\n".
                     'spiegelt, vereinfacht gesehen, eine sehr ähnliche Struktur wider, wie die ringförmigen Bestandteile des Vakuums, siehe oben:'."\n".
-                    'Unser Gedeihen, unsere Psyche, unser Lernen und auch unsere Persönlichkeitsentwicklung sind unter anderem Bestandteile von diesem Prozess.'."\n",
+                    'Unser Gedeihen, unsere Psyche, unser Lernen und auch unsere Persönlichkeitsentwicklung sind unter anderem Bestandteile dieses Prozesses.'."\n",
                       'Unser Leben wird durch ihn, durch seine Regelung in einem Zirkel, auf einem bestimmten Pfad gehalten.'."\n".
-                    'Unsere Lebenssituation bestimmt darin unsere Gefühle zu ihr, die Antriebe erzeugt, die zu Handlungen führen, die wiederum unsere Lebenssituation verändern.'."\n".
+                    'Unsere Lebenssituation bestimmt darin unsere Gefühle zu ihr, die Antriebe erzeugt, die zu intentionalen Handlungen führen, die wiederum unsere Lebenssituation verändern.'."\n".
                     'Zu unserer neue Lebenssituation haben wir dann andere Gefühle, und so beginnt der Zirkel wieder von vorne.'."\n",
-                      'Der Pfad, dem wir, geleitet durch unseren Achtsamkeitsprozess, folgen, auf dem wir gehalten werden, ist der Pfad unseres Lebens.'."\n".
+                      'Der Pfad, dem wir, geleitet durch unseren Care-Prozess, folgen, auf dem wir gehalten werden, ist der Pfad unseres Lebens.'."\n".
                     'Der Zirkel und der Pfad ergeben zusammen eine Helixspirale, in der unser Leben, vereinfacht gesehen, abläuft.'."\n".
                     'Der Pfad steht für unsere Entwicklung, für unser Lernen, unser Gedeihen und vieles mehr.'."\n".
                     'Wir folgen unserem Gefühl und lernen, dies im Großen und Ganzen positiv zu beeinflussen.'."\n",
-                      'Angenehmer wird es, wenn unser Leben mehr Leichtigkeit bekommt, wir weniger Widerstand empfinden, wir eine gute Balance zwischen Stabilität und Fortentwicklung haben.'."\n".
-                    'Darum geht es im Folgenden bei Wu Wei.'."\n"))),
+                      'Angenehmer wird es, wenn unser Leben mehr Leichtigkeit bekommt, wir weniger Widerstand empfinden,'."\n".
+                      'wir eine gute Balance zwischen Stabilität und Fortentwicklung haben, die sich in unserem gut funktionierenden Achtsamkeitsprozess ausdrückt.'."\n".
+                    'Darum geht es im Folgenden bei Wu Wei.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
                       
                 'Wu Wei', subline =>
@@ -237,8 +242,10 @@
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Prioritäten und Entscheidungen}',
                      '• Wu Wei hat etwas damit zu tun, gute Prioritäten zu setzen und gute Entscheidungen zu fällen, siehe \\italic{\\jumpname{OM:SpaLeb:Psychosomatik-Entscheidungen}}.',
-                     '⋅ Unser Leben bekommt mehr Leichtigkeit, wenn wir die Interpretation unserer Vergangenheit durch für uns leichtere Neuinterpretationen ergänzen. Wir verändern dadurch tatsächlich unsere Vergangenheit (siehe \\italic{\\jumpname{OM:NPYo:WieVeraendereIchMeineVergangenheit}}).',
-                     '• Wu Wei heißt: Solange warten, bis ich weiß, was ich tue.',
+                     '– Unser Leben bekommt mehr Leichtigkeit, wenn wir die Interpretation unserer Vergangenheit durch für uns leichtere Neuinterpretationen ergänzen. Wir verändern dadurch tatsächlich unsere Vergangenheit (siehe \\italic{\\jumpname{OM:NPYo:WieVeraendereIchMeineVergangenheit}}).',
+                     '• Wu Wei heißt:',
+                     '– Solange warten, bis ich weiß, was ich tue.',
+                     '– Abwarten, bis ich einschätzen kann, welche intentionale Handlung die Lage mit Leichtigkeit in meinem (in einem guten) Sinne beeinflussen kann und bis dieser Zeitpunkt gekommen ist.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -264,7 +271,7 @@
                   'Wie diese Geduld aufbringen? Wie unseren Fähigkeiten vertrauen?')),
                   array( 'text', array( text => array(
                     'Da es eben stark darum geht, unseren eigenen Gefühlen und unseren Fähigkeiten zu vertrauen, sind wir darauf angewiesen zu lernen, unsere eigenen Gefühle wahrzunehmen'."\n".
-                    'und sie auch im Wechselspiel mit unseren Handlungen zu sehen und zu üben.'."\n".
+                    'und sie auch im Wechselspiel mit unseren intentionalen Handlungen zu sehen und zu üben.'."\n".
                     'Achtsamkeit meint genau dies.'."\n",
                       'Um dies gut erlernen zu können, ist es sinnvoll uns die Zeit zu nehmen uns in Ruhe mit uns selber zu beschäftigen.'."\n".
                     'Die intensive Wahrnehmung unserer Gefühle und Handlungen im Hier und Jetzt ist nur möglich, wenn wir lernen, nicht immer in unseren Sorgen unterwegs zu sein.'."\n".
