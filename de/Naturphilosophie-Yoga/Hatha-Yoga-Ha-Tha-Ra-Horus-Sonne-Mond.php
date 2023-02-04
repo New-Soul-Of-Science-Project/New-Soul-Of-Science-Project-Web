@@ -106,7 +106,7 @@
                       'Dabei unterstelle ich, dass die Bestandteile der Dinge im extrem Kleinen immer in Bewegung sind.'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                      '\\quote{Panta rhei} — \\jump{OM:FrQFT:WasIstPhysik}{Alles fließt}!'."\n"))),
+                      '\\quote{Panta rhei} — \\jump{OM:FrQFT:WasIstPhysik:Vortext:WarumDynamStrukt}{Alles fließt}!'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Im heutigen kulturellen Kontext entspricht Djet-Zeit einem geraden Zeitstrahl und Neheh-Zeit finden wir in den rotierenden Zeigern einer Uhr wieder.'."\n".
