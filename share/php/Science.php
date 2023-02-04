@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 14.02.2023, 22:00h
+  // #: Stand: 29.01.2023, 22:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20230129:  +:  "$Sc_g_Text_replace_ary":  Elements "\M(C)" as "&#8450;" (Double-struck capital c) is new.
   //           20230114:  +:  "MathJax":  New LaTeX macros "lSelSet", "rSelSet".
   //                      +:  "$Sc_g_equation_replace_ary":  '*\{>' -> '\lSelSet' and '*<\}' -> '\rSelSet}' are new.
   //           20220815:  >:  "MathJax":  New LaTeX macro "mod".
@@ -319,6 +320,7 @@
       array( '≈', '&asymp;'),
       array( '⋅', '&sdot;'),
       array( '√', '&radic;'),
+      array( '\M(C)', '&#8450;'),  // #: Double-struck capital n: https://unicode-table.com/de/2102/
       array( '\M(N)', '&#8469;'),  // #: Double-struck capital n: http://unicode-table.com/de/2115/
       array( '\M(P)', '&#8473;'),  // #: Double-struck capital p: http://unicode-table.com/de/2119/
       array( '\M(S)', '&#120138;'),  // #: Mathematical Double-Struck Capital S: http://unicode-table.com/de/1D54A/

@@ -58,9 +58,11 @@
                    
           'OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins' => array( headline_text => 'SN.Biord.6'),
           'OM:SupNum:Biordinalzahlen:Vortext:FundamentaleAsymmetrie' => array( headline_text => 'Eine fundamentale Asymmetrie'/*, headline_text_short => 'XXX'*/),
-          'OM:SupNum:Biordinalzahlen:Vortext:Equ-Lambda-minus-Beta' => array( headline_text => 'SN.Biord.36'),
+          'OM:SupNum:Biordinalzahlen:Vortext:Equ-Lambda-minus-Beta' => array( headline_text => 'SN.Biord.28'),
           'OM:SupNum:Biordinalzahlen:Vortext:NeueEinsichten' => array( headline_text => 'Neue Einsichten zu positiven aktual unendlichen Zahlen'/*, headline_text_short => 'XXX'*/),
-        'OM:SupNum:Biordinalzahlen:XXX' => array( headline_text => 'XXX'/*, headline_text_short => 'XXX'*/),
+        'OM:SupNum:Biordinalzahlen:OntologischeDeutung' => array( headline_text => 'Ontologische Deutung'/*, headline_text_short => 'XXX'*/),
+        'OM:SupNum:Biordinalzahlen:EineFundamentaleAsymmetrie' => array( headline_text => 'Eine fundamentale Asymmetrie'/*, headline_text_short => 'XXX'*/),
+          'OM:SupNum:Biordinalzahlen:Vortext:Equ-Sum-z' => array( headline_text => 'SN.Biord.FA.4'),
       ),
     ),
     'OM:SupNum:Eigenschaften' => array(
