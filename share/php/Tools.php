@@ -2204,7 +2204,7 @@
                 break;
               }
               if ((gettype( $text) == 'array') && (array_key_exists( addtext, $text)))
-                echo '&thinsp;'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text[addtext]))."\n";
+                echo ' '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text[addtext]))."\n";
               else
                 echo "\n";
               break;
