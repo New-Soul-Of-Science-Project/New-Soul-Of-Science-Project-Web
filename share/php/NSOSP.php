@@ -3436,23 +3436,6 @@
     echo '            </img>'."\n";
     echo '          </div>'."\n";
     echo '        </div>'."\n";
-    echo '        <p>'."\n";
-    echo '<div id="google_translate_element" class="main-google-translate" style="padding-left: 10px !important; white-space: normal!important;"></div><script type="text/javascript">'."\n";
-    echo 'function googleTranslateElementInit() {'."\n";
-    echo '  new google.translate.TranslateElement({pageLanguage: \'de\', gaTrack: true, gaId: \'UA-5051897-3\'}, \'google_translate_element\');'."\n";
-    // correct Google navigator right overflow
-    echo '  To_f_googleTranslateCorrect();'."\n";
-    echo '}'."\n";
-    echo '</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>'."\n";
-    echo '        </p>'."\n";
-    echo '        <p style="margin-top: -8px;">'."\n";
-    echo '				  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="padding-left: 10px; padding-top: 10px;">'."\n";
-    echo '					  <sup>Crowdfunding:</sup> '."\n";
-    //%!echo '				  <input type="hidden" name="cmd" value="_s-xclick">'."\n";
-    //%!echo '				  <input type="hidden" name="hosted_button_id" value="R8468ZLUN4UPL">'."\n";
-    //%!echo '				  <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">'."\n";
-    echo '				    <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Spenden"> <img src="'.$Glo_PathRel_back.'../share/images/btn_donate_SM.gif" width="86px" height="21px" alt="Spenden"> </a>'."\n";
-    echo '				  </form>'."\n";
     echo '        </p>'."\n";
     echo '				<h3 align="left" style="padding-top: 12px;"><a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_rel]).'">'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_short])).'</a></h3>'."\n";
                   To_f_headline_make();
@@ -3496,6 +3479,28 @@
                     // #: Siehe oben.
     echo '					<small>* Einstein zugeschrieben</small>'."\n";
     echo '				</p>'."\n";
+    echo '				<br>'."\n";
+    echo '				<br>'."\n";
+    echo '        <p>'."\n";
+    echo '<div id="google_translate_element" class="main-google-translate" style="padding-left: 10px !important; white-space: normal!important;"></div><script type="text/javascript">'."\n";
+    echo 'function googleTranslateElementInit() {'."\n";
+    echo '  new google.translate.TranslateElement({pageLanguage: \'de\', gaTrack: true, gaId: \'UA-5051897-3\'}, \'google_translate_element\');'."\n";
+    // correct Google navigator right overflow
+    echo '  To_f_googleTranslateCorrect();'."\n";
+    echo '}'."\n";
+    echo '</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>'."\n";
+    echo '        </p>'."\n";
+    // echo '				<br>'."\n";
+    echo '        <p style="margin-top: 0px;">'."\n";
+    echo '				  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="padding-left: 10px; padding-top: 10px;">'."\n";
+    echo '					  <sup>Crowdfunding:</sup> '."\n";
+    //%!echo '				  <input type="hidden" name="cmd" value="_s-xclick">'."\n";
+    //%!echo '				  <input type="hidden" name="hosted_button_id" value="R8468ZLUN4UPL">'."\n";
+    //%!echo '				  <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">'."\n";
+    echo '				    <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Spenden"> <img src="'.$Glo_PathRel_back.'../share/images/btn_donate_SM.gif" width="86px" height="21px" alt="Spenden"> </a>'."\n";
+    echo '				  </form>'."\n";
+    echo '				<br>'."\n";
+    echo '				<br>'."\n";
     echo '			</div>'."\n";
     echo ''."\n";
     echo '			<div id="footer" class="footer main-shadow-0-5-30 main-layer-3">'."\n";
@@ -3585,7 +3590,7 @@
     echo $offset.'          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php">Impressum</a> &nbsp; &nbsp;'."\n";
     //echo $offset.'          <!a href="'.$Glo_PathRel_back.'../eng/XXX.html"><img src="'.$Glo_PathRel_back.'../share/images/flag_en_disable.gif" width="25" height="14" border="0" alt="English"><!/a> &nbsp; &nbsp;'."\n";
     //echo $offset.'          <a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_rel]).'"><img src="'.$Glo_PathRel_back.'../share/images/flag_de.gif" width="25" height="14" border="0" alt="Deutsch"></a>'."\n";
-    echo $offset.'          <a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_rel]).'"><img src="'.$Glo_PathRel_back.'../share/images/flag_de.gif" width="25" height="14" border="0" alt="Deutsch" valign="middle"></a>'."\n";
+    // echo $offset.'          <a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_rel]).'"><img src="'.$Glo_PathRel_back.'../share/images/flag_de.gif" width="25" height="14" border="0" alt="Deutsch" valign="middle"></a>'."\n";
     echo $offset.'        </p>'."\n";
     echo $offset.'      </td>'."\n";
     echo $offset.'    </tr>'."\n";
