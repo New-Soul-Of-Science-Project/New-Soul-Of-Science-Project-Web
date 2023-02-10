@@ -19,9 +19,9 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    '›The New Soul Of Science Project‹ ist ein Projekt, in dem der Nutzen unseres Bewusstseins, Wissens – der Wissenschaft – und Könnens'."\n".
-                    'für jeden einzelnen Menschen und die ganze Menschheit im Mittelpunkt steht.'."\n",
-                      'Es soll mehr Bewusstsein und Achtsamkeit für uns und unsere Lebenssituation, Gefühle, Antriebe und Handlungen geschaffen und in die Welt getragen werden.'."\n".
+                    'Das ›New Soul Of Science Project‹ ist ein Projekt, in dem der Nutzen unseres Bewusstseins, Wissens – der Wissenschaft – und Könnens'."\n".
+                    'für jeden einzelnen Menschen und die ganze Menschheit im Mittelpunkt stehen.'."\n",
+                      'Es soll mehr Bewusstsein und Achtsamkeit für uns und unsere Lebenssituation, unsere Gefühle, Antriebe und intentionale Handlungen geschaffen und in die Welt getragen werden.'."\n".
                     'Es soll Wissen über die grundlegenden naturphilosophischen Zusammenhänge in unserem Leben, in der Biologie, in der alternativen und der klassischen Medizin,'."\n".
                     'in der Physik, in der Mathematik und anderen Bereichen der Naturwissenschaften zusammengetragen und neues entdeckt werden.'."\n".
                     'Mit diesem Bewusstsein und Wissen soll unser Können gefördert und beflügelt werden, für unser gutes Leben und für eine positive Zukunft unserer Menschheitsfamilie zu sorgen.'."\n",
@@ -72,7 +72,7 @@
                     'dass wir Menschen eine Abzweigung am Scheideweg nehmen, die unsere Menschheitsfamilie überleben lässt.'."\n".
                     'Lassen wir diese Prinzipien zur Wirkung kommen, dann werden sie uns auf längere Sicht eine bessere Zukunft bringen.'."\n"))),
                   array( 'text', array( text => array(
-                    '\\jump{OM:FrQFT:Impressum:Spenden}{Unterstütze ›The New Soul Of Science Project‹} und helfe mit, unser Leben interessanter und das Leben auf unserem Planeten Erde lebenswerter zu machen.'."\n"))),
+                    '\\jump{OM:FrQFT:Impressum:Spenden}{Unterstütze das ›New Soul Of Science Project‹} und helfe mit, unser Leben interessanter und das Leben auf unserem Planeten Erde lebenswerter zu machen.'."\n"))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:nSOSp:Home:Forschungsstand'),
@@ -695,6 +695,25 @@
                     
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:nSOSp:Projekt'),
+                    )),
+              )
+          ); ?>
+
+
+		    	<!  • New Soul Of Science Academy (NSOSP)  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:nSOSp:Home:nSOSa',
+              '\\name[undertitle]{OM:nSOSa:Home}', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                    )),
+                      
+                  array( 'text', array( text => array(
+                    '\\name[description]{OM:nSOSa:Home}'."\n"))),
+                    
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:nSOSa:Home'),
                     )),
               )
           ); ?>

@@ -68,6 +68,7 @@
   );
                            
   include $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/NPYo-Data.php';
+  include $Glo_PathRel_back.'../de/New-Soul-Of-Science-Academy/NSOSA-Data.php';
   include $Glo_PathRel_back.'../de/Operialtheorie/OT-Data.php';
   include $Glo_PathRel_back.'../de/Superial-Zahlen/SupNum-Data.php';
   
@@ -806,6 +807,7 @@
   $Glo_g_Site_ary = array_merge(
 
     $NPYo_g_Site_ary,
+    $nSOSa_g_Site_ary,
     $OT_g_Site_ary,
     $SupNum_g_Site_ary,
     array(
@@ -2209,6 +2211,7 @@
                     'OM:nSOSp:Home:Forschungsstand:Fig-Photon' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                              
                   'OM:nSOSp:Home:nSOSp' => array( headline_text => '\\name[title]{OM:nSOSp:Home}', headline_text_short => '\\name[shorttitle]{OM:nSOSp:Home}'),
+                  'OM:nSOSp:Home:nSOSa' => array( headline_text => '\\name[title]{OM:nSOSa:Home}', headline_text_short => '\\name[shorttitle]{OM:nSOSa:Home}'),
                              
                   'OM:nSOSp:Home:Wolfgang-Huss' => array( headline_text => 'Wolfgang Huß', headline_text_short => 'Wolfgang Huß'),
                     'OM:nSOSp:Home:Wolfgang-Huss:Fig-WolfgangHuss' => array( headline_text => 'Wolfgang Huß', headline_text_short => 'Wolfgang Huß'),
