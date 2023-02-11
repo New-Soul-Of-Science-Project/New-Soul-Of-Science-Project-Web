@@ -26,7 +26,7 @@
                   array( 'text', array( text => array(
                     'Erstaunlicherweise finden wir eine sehr moderne Perspektive auf unsere Psyche'."\n".
                     'weltweit in Religionen, alten Symbolen und Mythologien wieder.'."\n",
-                      'In dieser modernen Perspektive wird unser Leben – unsere Psyche –'."\n".
+                      'In dieser modernen Perspektive wird unser Leben – unsere Psyche oder Psychosomatik –'."\n".
                     'als ausbalancierter biologischer Regelprozess beschrieben.'."\n".
                     'Er organisiert eine Balance zwischen unserer Stabilität und unserer Persönlichkeitsentwicklung.'."\n",
                       'Beschäftigen wir uns mit diesem Regelprozess, erkennen wir'."\n".
@@ -34,6 +34,16 @@
                       'Dies hängt mit einem tiefsinnigen naturphilosophischen Prinzip zusammen,'."\n".
                     'dass wir näher beleuchten wollen; mit dem Djet-Neheh-Dualismus.'."\n".
                     ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Trimurti: Brahma, Vishnu, Shiva',
+                        'Hermesstab von Hermes-Trismegistos (Trimurti?), Hermes-Thot',
+                        'Kundalini Yoga und Kundalini-Prozess',
+                        'Hatha Yoga',
+                        'Hexagram',
+                        'XXX',
+                        'XXX',
+                        'XXX',
+                    ))),
                   array( 'headline', array( jump_name => 'OM:nSOSa:Home:Vortext:XXX', text =>
                       
                 'Das weibliche und das männliche Prinzip unserer Psyche', subline =>
@@ -54,12 +64,25 @@
                   array( 'headline', array( jump_name => 'OM:nSOSa:Home:Vortext:XXX', text =>
                       
                 'Die Grundlagenphysik aus Sicht von Regelprozessen', subline =>
-                  'XXX')),
+                  'Angenommen jeder Existenz liegt ein sich selbst erhaltender Regelprozess zugrunde')),
                   array( 'text', array( text => array(
+                    'Diese Sicht der Physik geht davon aus, dass jedem Elementarteilchen, jedem Atom,'."\n".
+                    'Molekül, jeder Zelle, sogar jedem Lebewesen und auch jedem Himmelskörper oder System'."\n".
+                    'ein zentraler Regelprozess zugrunde liegt, der diese stabilisiert und ihre Fortentwicklung'."\n".
+                    'organisiert.'."\n",
+                      'Regelprozesse tragen die grundlegenden Prinzipien der Physik in sich:'."\n".
+                    'XXX Symmetriebrüche'."\n".
+                    'XXX Spin und Schwingungen'."\n".
+                    'XXX Uhren oder Zeit'."\n".
+                    'XXX Stabilität und Zerfall oder Umwandlung'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      'Dies hängt mit einem tiefsinnigen naturphilosophischen Prinzip zusammen,'."\n".
+                    'dass wir näher beleuchten wollen; mit dem Djet-Neheh-Dualismus, der in der Physik als (fraktales) Existenzprinzip erscheint.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
