@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 29.01.2023, 22:00h
+  // #: Stand: 14.02.2023, 19:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20230214:  +:  "$Sc_g_equation_replace_ary":  '*|*' -> '~\middle|~', '  ~\middle|~  ' -> '\;~\middle|~\;'.
   //           20230129:  +:  "$Sc_g_Text_replace_ary":  Elements "\M(C)" as "&#8450;" (Double-struck capital c) is new.
   //           20230114:  +:  "MathJax":  New LaTeX macros "lSelSet", "rSelSet".
   //                      +:  "$Sc_g_equation_replace_ary":  '*\{>' -> '\lSelSet' and '*<\}' -> '\rSelSet}' are new.
@@ -646,6 +647,7 @@
                                     array( '*]', '\right]'),
                                     array( '*\{', '\left\{'),
                                     array( '*\}', '\right\}'),
+                                    array( '*|*', '~\middle|~'),
                                     array( '*|', '\left|'),
                                     array( '|*', '\right|'),
                                     array( '*\langle', '\left\langle'),
@@ -664,6 +666,7 @@
                                     array( '  \right\}', ' \;\right\}'),
                                     array( '\left|  ', '\left|\; '),
                                     array( '  \right|', ' \;\right|'),
+                                    array( '  ~\middle|~  ', '\;~\middle|~\;'),
                                     array( '․', '.\\!'),  // #: Unicode Character 'ONE DOT LEADER' (U+2024)  -->  dot without a little following space
                                  );
 

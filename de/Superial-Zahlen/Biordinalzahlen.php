@@ -221,10 +221,10 @@
                     'Das scheint auch schlüssig zu sein, weil möglich, denn die weggelassenen Mengen existieren in \\term{ω^{2}} beziehungsweise in \\term{ω}, als auch eineindeutig,'."\n".
                     'denn es gibt keine andere Möglichkeit, die selbe Darstellung des Wertes durch eine solche Konstruktion zu erreichen.'."\n",
                       'Und diese Darstellung erfüllt auch die wichtige Eigenschaft, dass die durch Mengen dargestellte Zahl die Anzahl an Mengen enthält,'."\n".
-                    'wie ihr Wert groß ist.'."\n".
+                    'wie ihr Wert groß ist, oder diese Anzahl aus der Klasse aller Mengen entfernt wird.'."\n".
                     'Am vorstehenden Beispiel veranschaulicht bedeutet dies:'."\n".
                     'Beim Wert \\term{ω^{2} –  ω + n} haben wir als Basis die Menge \\term{ω^{2}} aus der wir die Mengen in \\term{ω} herausnehmen,'."\n".
-                    'die Mengen in \\term{n} jedoch drinne lassen beziehungsweise wieder hinzufügen:'."\n".
+                    'die Mengen in \\term{n} jedoch drinnen belassen beziehungsweise wieder hinzufügen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -340,7 +340,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Biordinalzahlen:OntologischeDeutung'),
+                      array(  jump_name => 'OM:SupNum:Biordinalzahlen:IntegrierteMengenlehre'),
                     )),
                 )
           ); ?>
@@ -348,14 +348,134 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
+          <!  • Integrierte Mengenlehre  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Biordinalzahlen:IntegrierteMengenlehre',
+              'Erweiterung der Mengenlehre durch Antimengen auf das integrierte Mengenuniversums', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Biordinalzahlen', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\\bold{XXX}',
+                    // '• XXX',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Um wohldefiniert mit Biordinalzahlen mit der uns bekannten Mengenlehre arbeiten zu können'."\n".
+                    'bedarf es einer Definition, mit was für Objekten wir es hier zu tun haben und einer'."\n".
+                    'Erweiterung der Mengenlehre auf all diese Objekte.'."\n",
+                      'Wenn wir negative Zahlen oben durch das Fehlen von Mengen an der Klasse des Mengenuniversums \\latexmath{ \mathbb{U} }'."\n".
+                    'definieren, dann bedeutet dies, dass wir das Universum der normalen Mengen verlassen.'."\n".
+                    'Denn die Klasse des Mengenuniversums, an der unterschiedliche Kombinationen an Mengen fehlen, sind selber keine Mengen sondern auch Klassen.'."\n",
+                      'Wir können allerdings sagen, dass es sich hierbei um eine besondere Klasse von Klassen handelt:'."\n".
+                    'Wir nennen eine Klasse, bei der am Mengenuniversums Mengen fehlen, eine Antimenge.'."\n".
+                    'Ebenso nennen wir die Klasse, die alle Antimengen enthält, das Antimengenuniversum \\term{\M(U)^{&thinsp;–}}'."\n".
+                    'Zuletzt nennen wir die Klasse, die alle Mengen sowie alle Antimengen enthält als integriertes Mengenuniversums \\term{\M(U)^{ i}}.'."\n".
+                    ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Sei, abgeleitet von Formel \\jumpname{OM:SupNum:Biordinalzahlen:Vortext:Equ-Lambda-minus-Beta},'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  *( \forall a \in \mathbb{U} \setminus *\{ *\{ *\} *\} *) *[  a^{-}  :=  \mathbb{U} \setminus a  *]  }',
+                                         label_name => 'OM:SupNum:Biordinalzahlen:IntegrierteMengenlehre:Equ-Antimenge', label_text => '\\name{OM:SupNum:Biordinalzahlen:IntegrierteMengenlehre:Equ-Antimenge}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'die Definition der Antimenge zu jeder Menge \\latexmath{ a }, die nicht die leere Menge ist.'."\n".
+                      'Es existiert dabei keine Definition einer Antimenge für die leere Menge:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  *( \nexists a^{-} *) *[  a  =  *\{ *\}  *]  \;\;.  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die leere Menge ist hier ausgeschlossen, weil ihre Antimenge das Mengenuniversum \\term{\M(U)} selber wäre,'."\n".
+                    'was zu einem Widerspruch führen würde, den wir gleich noch herausarbeiten.'."\n".
+                    'Für die leere Menge ist also keine Antimenge definiert.'."\n".
+                    ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'So ergibt sich'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \mathbb{U}^{-}  :=  *\{  x  *|*  *( \forall a \in \mathbb{U} \setminus *\{*\{ *\}*\} *) *[  x = a^{-}  *]  *\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'als Definition des Antimengenuniversums.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Das Mengenuniversum und das Antimengenuniversum überschneiden sich nicht'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \mathbb{U} \cap \mathbb{U}^{-}  =  *\{ *\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'und beide zusammen'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \mathbb{U}^{i}  :=  \mathbb{U} \cup \mathbb{U}^{-}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'ergeben das integrierte Mengenuniversum.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+                  array( 'text', array( text => array(
+                    'Hier sehen wir auch, dass, ohne Ausschluss der leeren Menge bei der Definition der Antimengen (siehe Formel \\jumpname{OM:SupNum:Biordinalzahlen:IntegrierteMengenlehre:Equ-Antimenge}),'."\n".
+                    'das Antimengenuniversum \\term{\M(U)^{&thinsp;–}} widersprüchlicher Weise das Mengenuniversum \\term{\M(U)} enthalten würde,'."\n".
+                    'obwohl sich beide zum integrierten Mengenuniversum \\term{\M(U)^{ i}} ergänzen sollen.'."\n",
+                      'So können wir jetzt eine allgemeine Definition der Negierung von integrierten Mengen angeben.'."\n".
+                    ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Für die Negation einer integrierten Mengen gilt also:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'off', latex => '{  *( \\forall a \in \mathbb{U}^{i} *) *[ -a  =  \begin{cases}  a^{-}  &  \text{ falls } a \in \mathbb{U} \setminus *\{ *\{ *\} *\}  \\\\  a  &  \text{ falls } a = *\{ *\}  \\\\  \mathbb{U} \setminus a  &  \text{ falls } a \in \mathbb{U}^{-}  \end{cases} *]  }'),
+                      array( display => 'on',  latex => '{  *( \\forall a \in \mathbb{U}^{i} *) *[ -a  =  \begin{cases}  a  &  \text{ falls } a = *\{ *\} \\\\ \mathbb{U} \setminus a  &  \text{ falls } a \in \mathbb{U}^{i} \setminus *\{ *\{ *\} *\}  \end{cases} *]  }',
+                                    latex_if_visible => '{  *( \\forall a \in \mathbb{U}^{i} *) *[ -a  =  \begin{cases}  a  &  \text{ falls } a = *\{ *\} \\\\ \mathbb{U} \setminus a  &  \text{ falls } a \in \mathbb{U}^{i} \setminus *\{ *\{ *\} *\}  \end{cases} *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Alle negierten integrierten Mengen sind wieder integrierte Mengen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  *( \forall a \in \mathbb{U}^{i} *) *[  -a  \in \mathbb{U}^{i}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Biordinalzahlen:OntologischeDeutung'),
+                    )),
+              )
+          ); ?>
+
+
 		    	<!  • Ontologische Deutung  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Biordinalzahlen:OntologischeDeutung',
               'Was wir wohl nicht sehen', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Biordinalzahlen', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Biordinalzahlen:IntegrierteMengenlehre', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -511,20 +631,19 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SupNum:XXX'),
+                      array(  jump_name => 'OM:SupNum:Biordinalzahlen:EineFundamentaleAsymmetrie'),
                     )),
               )
           ); ?>
 
 
 		    	<!  • Eine fundamentale Asymmetrie  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Biordinalzahlen:EineFundamentaleAsymmetrie',
               'Die ontologische Struktur beinhaltet die Zählrichtung', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Biordinalzahlen', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Biordinalzahlen:OntologischeDeutung', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -792,7 +911,6 @@
                     'XXX'."\n".
                     ''))),
                     ))),
-                      
                       
                   array( 'jumplist', array(
                       //array(  jump_name => 'OM:SupNum:XXX'),
