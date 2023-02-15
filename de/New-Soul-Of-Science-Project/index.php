@@ -1264,28 +1264,46 @@
                   array( 'text', array( Shape  => 'italic', text => array(
                         '\\\\'."\n"))),
                       
+                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
+                  // #!: Auch auf der nSOSa-Startseite! (OM:nSOSa:Home)
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Der beste Weg, die Zukunft vorherzusagen, ist, sie zu erschaffen.'."\n".
+                        ''),
+                        addtext => '\\small{\\color{*TitleAdd}{\\\\ ~Abraham Lincoln}}')),
+                      
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                        '\\small{\\color{*TitleAdd}{Im englischen Original:}}'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'The best way to predict the future is to create it.'."\n".
+                        ''),
+                        addtext => '\\small{\\color{*TitleAdd}{~Abraham Lincoln}}')),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        '\\\\'."\n"))),
+                      
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Liebe ist …'."\n",
                           '… wenn sich Wege finden. \\\\'."\n".
                         'Es ist Liebe …'."\n",
                           '… wenn Wege sich finden.'."\n".
-                  ''))),
+                        ''))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         '\\\\'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                        'Das ganze Leben ist ein sich Finden …'."\n".
-                  ''))),
+                        'Das ganze Leben ist ein Sich-Finden …'."\n".
+                        ''))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         '\\\\'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape  => 'quote', text => array(
                         'Wer etwas will, findet Wege. \\\\'."\n".
                         'Wer etwas nicht will, findet Gründe.'."\n".
-                  ''),
-                    addtext => '\\small{\\color{*TitleAdd}{ ~Autor unbekannt}}')),
+                        ''),
+                        addtext => '\\small{\\color{*TitleAdd}{~Autor unbekannt}}')),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         '\\\\'."\n"))),
@@ -1297,7 +1315,7 @@
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
                         'der hat die Magie, Dinge zum Schweben zu bringen.'."\n".
-                  ''))),
+                        ''))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         '\\\\'."\n"))),
@@ -1306,7 +1324,7 @@
                   // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Spiritualitaet-Psychologie)
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Make your life a celebration!'."\n"),
-                        addtext => '\\small{\\color{*TitleAdd}{ ~Mike Love\\footnote{\\jump[https://www.youtube.com/watch?v=NKx_kxR9hWU]{}{"I Love You & Permanent Holiday" Live at Woodstock Poland 2016}, Sek. 13:57.}}}')),
+                        addtext => '\\small{\\color{*TitleAdd}{~Mike Love\\footnote{\\jump[https://www.youtube.com/watch?v=NKx_kxR9hWU]{}{"I Love You & Permanent Holiday" Live at Woodstock Poland 2016}, Sek. 13:57.}}}')),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         '\\\\'."\n"))),
@@ -1325,7 +1343,8 @@
                         'leiten dich durch deine Abenteuer.'."\n",
                           'Also lerne dein Handwerk des Abenteurers, \\\\'."\n".
                         'lerne deine Gefühle in Ruhe kennen und nutze sie, \\\\'."\n".
-                        'denn Leben ist niemals ohne Gefahr.'."\n"),
+                        'denn Leben ist niemals ohne Gefahr.'."\n".
+                        ''),
                         addtext => '')),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
@@ -1337,7 +1356,8 @@
                         'Wir leben und betreiben Persönlichkeitsentwicklung, \\\\'."\n".
                         'damit wir unser Schicksal, unsere Traumata, \\\\'."\n".
                         'die uns wie Mühlsteine um den Hals hängen, so klein schleifen, \\\\'."\n".
-                        'dass wir sie als Schmuck tragen können, der unser Leben ziert.'."\n"),
+                        'dass wir sie als Schmuck tragen können, der unser Leben ziert.'."\n".
+                        ''),
                         addtext => '')),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
@@ -1348,7 +1368,8 @@
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Nur der innere Stein der Weisen kann \\\\'."\n".
                         'den äußeren Stein der Weisen zum Leuchten bringen, \\\\'."\n".
-                        'ihn ›beleuchten‹. \\small{\\color{*TitleAdd}{Nicht umgekehrt.}}'."\n"),
+                        'ihn ›beleuchten‹. \\small{\\color{*TitleAdd}{Nicht umgekehrt.}}'."\n".
+                        ''),
                         addtext => '')),
                     
                   array( 'text', array( Shape  => 'italic', text => array(
@@ -1357,7 +1378,8 @@
                   // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Einleitung:Ehrgeiz)
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Deine Erkenntnis liegt auf deinem Weg, \\\\'."\n".
-                        'nicht im Ziel.'."\n"),
+                        'nicht im Ziel.'."\n".
+                        ''),
                         addtext => '')),
                     
                   array( 'text', array( Shape  => 'italic', text => array(
@@ -1365,7 +1387,8 @@
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Denken und Fühlen sind wie Körper und Seele, \\\\'."\n".
-                        'zwei Seiten der selben Medaille.'."\n"),
+                        'zwei Seiten der selben Medaille.'."\n".
+                        ''),
                         addtext => '')),
                     
                   array( 'text', array( Shape  => 'italic', text => array(
@@ -1373,7 +1396,8 @@
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         'Wer bereit ist, den Schleier des Offensichtlichen hinter sich zu lassen, \\\\'."\n".
-                        'wird das Verborgene entdecken, das immer direkt vor ihm lag.'."\n"),
+                        'wird das Verborgene entdecken, das immer direkt vor ihm lag.'."\n".
+                        ''),
                         addtext => '')),
                     
                   array( 'text', array( Shape  => 'italic', text => array(
@@ -1386,7 +1410,8 @@
                         'die wir assoziativ miteinander verbinden. \\\\ '."\n".
                         'In der physikalischen Realität entspringen die Eigenschaften direkt dem strukturellen Abbild eines Symbols – jedem Ding. \\\\ '."\n".
                         '\\small{\\color{*TitleAdd}{Daher sind Personen die stärksten Symbole, denn ihr Aussehen und ihre Eigenschaften fallen zusammen. \\\\ '."\n".
-                        'Ihre Körper und ihre Seelen sind individuell und eins.}}'."\n"),
+                        'Ihre Körper und ihre Seelen sind individuell und eins.}}'."\n".
+                        ''),
                         addtext => '')),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
@@ -1396,9 +1421,9 @@
                   //    Auch auf jeder Seite im Natigationsbalken.
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Wenn ich \\small{\\color{*TitleAdd}{[immer]}} wüsste, was ich tue, \\\\'."\n".
-                        'dann würde man es nicht Forschung nennen, oder?'."\n"),
-                        //addtext => '\\small{\\color{*TitleAdd}{(Einstein zugeschrieben)}}')),
-                        addtext => '\\small{\\color{*TitleAdd}{ ~Einstein zugeschrieben}}')),
+                        'dann würde man es nicht Forschung nennen, oder?'."\n".
+                        ''),
+                        addtext => '\\small{\\color{*TitleAdd}{~Einstein zugeschrieben}}')),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         '\\\\'."\n"))),
@@ -1413,8 +1438,9 @@
                         'wie willst du dann andere Wunder finden? \\\\'."\n".
                         'In dir verbirgt sich der Schatz der Schätze. \\\\'."\n".
                         'Erkenne dich selbst, \\\\'."\n".
-                        'und du wirst das Universum und die Götter kennen.'."\n"),
-                        addtext => '\\small{\\color{*TitleAdd}{ ~Das Orakel von Delphi}}')),
+                        'und du wirst das Universum und die Götter kennen.'."\n".
+                        ''),
+                        addtext => '\\small{\\color{*TitleAdd}{~Das Orakel von Delphi}}')),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
                         '\\\\'."\n"))),
