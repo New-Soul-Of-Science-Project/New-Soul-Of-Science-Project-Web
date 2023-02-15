@@ -39,7 +39,7 @@
       text_titel_h1 => 'New Soul Of Science Academy \\color{*TitleAdd}{\\small{(NSOSA)}}',
       text_titel_short => 'New Soul Of Science Academy',
       text_undertitel_h2 => 'Knowledge And Care Helps',
-      text_titel_discr_h3 => 'Bewusstsein, Wissen, Fürsorge und Können helfen gegen Hilflosigkeit in der Not, in dem sie uns Werkzeuge zur Verbesserung unserer Lebenssituation und Lebensqualität an die Hand geben',
+      text_titel_discr_h3 => 'Gemeinsam neues Wissen finden\\hidden{ schöpfen}, \\\\ es mit unserem alten Wissen verbinden, \\\\ unser Wissen teilen, anwenden und es bewahren',
       jump_ary => array(
         'OM:nSOSa:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
         'OM:nSOSa:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),

@@ -14,10 +14,25 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Mit dieser Seite möchte ich dazu einladen unser Wissen und unsere Ideen zu teilen.'."\n".
+                    'Online oder gerne auch persönlich, wenn es sich anbietet.'."\n",
+                      'Wo möglich, freue ich mich, wenn wir unser Wissen auch in die Anwendung bringen können'."\n".
+                    'und unser Leben und unsere Welt verbessern.'."\n"))),
+
+                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
+                  // #!: Auch auf der nSOSa-Startseite! (OM:nSOSa:Home)
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Der beste Weg, die Zukunft vorherzusagen, ist, sie zu erschaffen.'."\n".
+                        ''),
+                        addtext => '\\small{\\color{*TitleAdd}{\\\\ ~Abraham Lincoln}}')),
+                      
+                  array( 'text', array( text => array(
+                    'Der ›Phönix aus der Asche‹ in unserem Logo soll symbolisieren, dass wir uns und unser Wissen stetig'."\n".
+                    'aktualisieren und erneuern müssen.'."\n".
+                    'Es ist an der Zeit unser modernes Wissen um einen Schritt zu erweitern und es mit dem alten'."\n".
+                    'und erstaunlichen Wissen unserer Ahnen zu ergänzen.'."\n"))),
+                  array( 'text', array( text => array(
+                    'Nachfolgend erste Ideen zu Themen, zu denen ich beitragen kann:'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:nSOSa:Home:Vortext:XXX', text =>
                       
@@ -32,34 +47,42 @@
                       'Beschäftigen wir uns mit diesem Regelprozess, erkennen wir'."\n".
                     'tiefe Zusammenhänge mit den strukturellen Grundlagen der Physik.'."\n",
                       'Dies hängt mit einem tiefsinnigen naturphilosophischen Prinzip zusammen,'."\n".
-                    'dass wir näher beleuchten wollen; mit dem Djet-Neheh-Dualismus.'."\n".
+                    'dass wir näher beleuchten wollen; mit dem Djet-Neheh-Dualismus.'."\n",
+                      'Schlagworte:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
+                        'Neue Sicht auf die Psychosomatik',
+                        'Yin und Yang',
                         'Trimurti: Brahma, Vishnu, Shiva',
                         'Hermesstab von Hermes-Trismegistos (Trimurti?), Hermes-Thot',
+                        'Stein der Weisen, Herz-Chakra',
                         'Kundalini Yoga und Kundalini-Prozess',
                         'Hatha Yoga',
                         'Hexagram',
-                        'XXX',
-                        'XXX',
-                        'XXX',
+                        'Jesus und die Dreifaltigkeit (Vater, Mutter, Kind)',
+                        'Mithraismus oder Mithraskult (Mithras, Cautes und Cautopates)',
+                        '›Phönix aus der Asche‹',
                     ))),
                   array( 'headline', array( jump_name => 'OM:nSOSa:Home:Vortext:XXX', text =>
                       
-                'Das weibliche und das männliche Prinzip unserer Psyche', subline =>
-                  'Spiritualität im Lichte der Kommunikation zwischen unserem Bewusstsein und unserem Unterbewusstsein')),
+                'Spiritualität, Glauben, Träumen, Schlafen, Intuition …', subline =>
+                  'Die Kommunikation zwischen unserem Bewusstsein und unserem Unterbewusstsein')),
                   array( 'text', array( text => array(
-                    'Wie können wir verstehen, welche Bedeutung Glauben, Träumen, Schlafen, Intuition'."\n".
-                    'und ähnliche Dinge für uns haben?'."\n",
-                      'Warum ist all dies wichtig für uns?'."\n",
-                      'Wie funktioniert es?'."\n",
-                      'Warum ist es für uns gut zu wissen, worum es dabei geht?'."\n",
-                      'Was bedeutet Spiritualität diesbezüglich?'."\n",
-                      'Unsere Ahnen kannten das weibliche und das männliche Prinzip unserer Psychosomatik in mehrfachen Schattierungen.'."\n".
+                    'Unsere Ahnen kannten das weibliche und das männliche Prinzip unserer Psychosomatik in mehrfachen Schattierungen.'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Wie können wir verstehen, welche Bedeutung Glauben, Träumen, Schlafen, Intuition'."\n".
+                          'und ähnliche Dinge für uns haben?',
+                        'Warum ist all dies wichtig für uns?',
+                        'Wie funktioniert es?',
+                        'Warum ist es für uns gut zu wissen, worum es dabei geht?',
+                        'Was bedeutet Spiritualität diesbezüglich?',
+                    ))),
+                  array( 'text', array( text => array(
                     'Eine große Rolle beim Verständnis dieser Dinge spielt unser Fokus'."\n".
                     'und die Kommunikation zwischen unserem Bewusstsein und unserem Unterbewusstsein.'."\n",
                       'Um diese zu verbessern hilft es, in einen transzendenten Modus zu kommen,'."\n".
-                    'zum Beispiel durch Meditation oder ähnliche Techniken.'."\n".
+                    'zum Beispiel durch guten Schlaf sowie durch Meditation und ähnliche Techniken.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:nSOSa:Home:Vortext:XXX', text =>
                       
@@ -71,17 +94,16 @@
                     'ein zentraler Regelprozess zugrunde liegt, der diese stabilisiert und ihre Fortentwicklung'."\n".
                     'organisiert.'."\n",
                       'Regelprozesse tragen die grundlegenden Prinzipien der Physik in sich:'."\n".
-                    'XXX Symmetriebrüche'."\n".
-                    'XXX Spin und Schwingungen'."\n".
-                    'XXX Uhren oder Zeit'."\n".
-                    'XXX Stabilität und Zerfall oder Umwandlung'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'Dies hängt mit einem tiefsinnigen naturphilosophischen Prinzip zusammen,'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Regelprozesse haben Spieler und Gegenspieler: Actio und Reactio',
+                        'Sie enthalten Symmetriebrüche aus denen die Kräfte hervorgehen',
+                        'Jeder Regelprozess läuft im Regelkreis dreht sich so (Spin) und schwingt',
+                        'Diese Drehungen fungieren als Uhren und schaffen so Zeit',
+                        'Regelprozesse organisieren Stabilität und Zerfall oder Umwandlung',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dies hängt mit einem tiefsinnigen naturphilosophischen Prinzip zusammen,'."\n".
                     'dass wir näher beleuchten wollen; mit dem Djet-Neheh-Dualismus, der in der Physik als (fraktales) Existenzprinzip erscheint.'."\n".
                     ''))),
                       
