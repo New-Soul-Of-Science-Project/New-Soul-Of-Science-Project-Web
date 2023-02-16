@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 14.02.2023, 19:00h
+  // #: Stand: 16.02.2023, 19:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20230216:  >:  "MathJax":  Change LaTeX macros "lSelSet", "rSelSet" by using '|' instead of '{' and '}'.
   //           20230214:  +:  "$Sc_g_equation_replace_ary":  '*|*' -> '~\middle|~', '  ~\middle|~  ' -> '\;~\middle|~\;'.
   //           20230129:  +:  "$Sc_g_Text_replace_ary":  Elements "\M(C)" as "&#8450;" (Double-struck capital c) is new.
   //           20230114:  +:  "MathJax":  New LaTeX macros "lSelSet", "rSelSet".
@@ -208,8 +209,10 @@
     echo '            rROpera: "\\\\rOpera",'."\n";
     echo '            lLOpera: "\\\\lOpera",'."\n";
     echo '            rLOpera: "\\\\mspace{-0.4mu} \\\\rfloor \\\\mspace{2.0mu}",'."\n";
-    echo '            lSelSet: "\\\\left\\\\{ \\\\mspace{-4.0mu} \\\\rangle \\\\mspace{2.0mu}",'."\n"; // left selection set, linke Auswahlmenge
-    echo '            rSelSet: "\\\\mspace{2.0mu} \\\\langle \\\\mspace{-4.0mu} \\\\right\\\\}",'."\n"; // left selection set, rechte Auswahlmenge
+    // echo '            lSelSet: "\\\\left\\\\{ \\\\mspace{-4.4mu} \\\\rangle \\\\mspace{2.0mu}",'."\n"; // left selection set, linke Auswahlmenge
+    // echo '            rSelSet: "\\\\mspace{2.0mu} \\\\langle \\\\mspace{-4.4mu} \\\\right\\\\}",'."\n"; // left selection set, rechte Auswahlmenge
+    echo '            lSelSet: "\\\\left| \\\\mspace{-3.6mu} \\\\rangle \\\\mspace{2.0mu}",'."\n"; // left selection set, linke Auswahlmenge
+    echo '            rSelSet: "\\\\mspace{2.0mu} \\\\langle \\\\mspace{-3.6mu} \\\\right|",'."\n"; // left selection set, rechte Auswahlmenge
     echo '            mod: "\\\\; mod \\\\;",'."\n";
     echo '            lowZero: "\\\\raise -.3ex 0",'."\n";
     echo '            updownarrows: "\\\\uparrow\\\\!\\\\downarrow",'."\n";
