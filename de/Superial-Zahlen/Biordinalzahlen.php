@@ -380,16 +380,16 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  *( \forall a \in \mathbb{U} \setminus *\{ *\{ *\} *\} *) *[  a^{-}  :=  \mathbb{U} \setminus a  *]  }',
+                      array( display => 'on', latex => '{  *( \forall a \in \mathbb{U} \setminus *\{ \varnothing *\} *) *[  a^{-}  :=  \mathbb{U} \setminus a  *]  }',
                                          label_name => 'OM:SupNum:Biordinalzahlen:IntegrierteMengenlehre:Equ-Antimenge', label_text => '\\name{OM:SupNum:Biordinalzahlen:IntegrierteMengenlehre:Equ-Antimenge}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'die Definition der Antimenge zu jeder Menge \\latexmath{ a }, die nicht die leere Menge ist.'."\n".
-                      'Es existiert dabei keine Definition einer Antimenge für die leere Menge:'."\n".
+                      'Es existiert dabei keine Definition der Antimenge zur leeren Menge:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  *( \nexists a^{-} *) *[  a  =  *\{ *\}  *]  \;\;.  }'),
+                      array( display => 'on', latex => '{  *( a = \varnothing *) *[  \nexists a^{-}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die leere Menge ist hier ausgeschlossen, weil ihre Antimenge das Mengenuniversum \\term{\M(U)} selber wäre,'."\n".
@@ -402,7 +402,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \mathbb{U}^{-}  :=  *\{  x  *|*  *( \forall a \in \mathbb{U} \setminus *\{*\{ *\}*\} *) *[  x = a^{-}  *]  *\}  }'),
+                      array( display => 'on', latex => '{  \mathbb{U}^{-}  :=  *\{  x  *|*  *( \forall a \in \mathbb{U} \setminus *\{ \varnothing *\} *) *[  x = a^{-}  *]  *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'als Definition des Antimengenuniversums.'."\n".
@@ -437,9 +437,9 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  *( \\forall a \in \mathbb{U}^{i} *) *[ -a  =  \begin{cases}  a^{-}  &  \text{ falls } a \in \mathbb{U} \setminus *\{ *\{ *\} *\}  \\\\  a  &  \text{ falls } a = *\{ *\}  \\\\  \mathbb{U} \setminus a  &  \text{ falls } a \in \mathbb{U}^{-}  \end{cases} *]  }'),
-                      array( display => 'on',  latex => '{  *( \\forall a \in \mathbb{U}^{i} *) *[ -a  =  \begin{cases}  a  &  \text{ falls } a = *\{ *\} \\\\ \mathbb{U} \setminus a  &  \text{ falls } a \in \mathbb{U}^{i} \setminus *\{ *\{ *\} *\}  \end{cases} *]  }',
-                                    latex_if_visible => '{  *( \\forall a \in \mathbb{U}^{i} *) *[ -a  =  \begin{cases}  a  &  \text{ falls } a = *\{ *\} \\\\ \mathbb{U} \setminus a  &  \text{ falls } a \in \mathbb{U}^{i} \setminus *\{ *\{ *\} *\}  \end{cases} *]  }'),
+                      array( display => 'off', latex => '{  *( \\forall a \in \mathbb{U}^{i} *) *[ -a  =  \begin{cases}  a^{-}  &  \text{ falls } a \in \mathbb{U} \setminus *\{ \varnothing *\}  \\\\  a  &  \text{ falls } a = \varnothing  \\\\  \mathbb{U} \setminus a  &  \text{ falls } a \in \mathbb{U}^{-}  \end{cases} *]  }'),
+                      array( display => 'on',  latex => '{  *( \\forall a \in \mathbb{U}^{i} *) *[ -a  =  \begin{cases}  a  &  \text{ falls } a = \varnothing \\\\ \mathbb{U} \setminus a  &  \text{ falls } a \in \mathbb{U}^{i} \setminus *\{ \varnothing *\}  \end{cases} *]  }',
+                                    latex_if_visible => '{  *( \\forall a \in \mathbb{U}^{i} *) *[ -a  =  \begin{cases}  a  &  \text{ falls } a = \varnothing \\\\ \mathbb{U} \setminus a  &  \text{ falls } a \in \mathbb{U}^{i} \setminus *\{ \varnothing *\}  \end{cases} *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Alle negierten integrierten Mengen sind wieder integrierte Mengen:'."\n".
