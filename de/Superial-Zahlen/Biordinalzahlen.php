@@ -469,7 +469,7 @@
           ); ?>
 
 
-		    	<!  • Ontologische Deutung  >
+          <!  • Ontologische Deutung  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Biordinalzahlen:OntologischeDeutung',
               'Was wir wohl nicht sehen', 'Sc_f_Paragraph',
@@ -485,8 +485,17 @@
                       
                   array( 'text', array( text => array(
                     'Was geht beim Arbeiten mit Mengen implizit vor sich, was wir wohl nicht sehen, was uns nicht bewusst ist?'."\n",
-                      'Die vorgestellte Methode zur Darstellung negativer Zahlen durch Mengen – oder später dann bestimmte Klassen, die Antimengen genannt werden –'."\n".
-                    'macht deutlich, dass eine Menge – oder Klasse – eine Auswahl aus den Möglichkeiten darstellt.'."\n".
+                      'Wir wollen dies hier vor allem ontologisch betrachten, also die Lehre von Seienden betreffend.\\color{*Bearb}{(Verweis)}'."\n".
+                    'Seiend auch besonders im Sinne von Struktur und hier von verborgener Struktur.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:OntologischeDeutung:XXX', text =>
+                      
+                'Ontologische Funktion unseres Fokus', subline =>
+                  'Der Auswahldualismus oder Bewusstseinsdualismus')),
+                  array( 'text', array( text => array(
+                    'Die vorgestellte Methode zur Darstellung negativer Zahlen durch Mengen oder besser gesagt durch \\jump{OM:SupNum:Biordinalzahlen:IntegrierteMengenlehre}{Antimengen}'."\n".
+                    'macht deutlich, dass eine Menge eine Auswahl aus den Möglichkeiten und eine Antimenge beziehungsweise negative Menge'."\n".
+                    'die Nichtauswahl aus den Möglichkeiten darstellt.'."\n".
+                    'Bei der Nichtauswahl aus den Möglichkeiten bleiben dann alle anderen Möglichkeiten ausgewählt.'."\n".
                     'Symbolisch wird durch die Klammer, die etwas enthält, eine Auswahl getroffen, die diese vom Rest der'."\n".
                     'Auswahlmöglichkeiten abgrenzt, die Auswahl umhüllt.'."\n",
                       'Implizit haben wir es oben also immer mit der Menge der natürliche Zahlen \\term{\M(N)} zu tun.'."\n".
@@ -494,7 +503,7 @@
                     'Unsere Betrachtung behandelt also immer die Menge \\term{\M(N)}, die in zwei Teile zerlegt ist:'."\n".
                     'Einen Teil, auf den wir fokussierten – der bewusste Teil – und einen Teil, den wir ausblenden – der unbewusste Teil.'."\n".
                     'Naturphilosophisch gesehen, haben wir es mit einem Dualismus beziehungsweise einer Polarität zu tun,'."\n".
-                    'den \\italic{Auswahldualismus} oder \\italic{Bewusstseinsdualismus}.'."\n",
+                    'dem \\italic{Auswahldualismus} oder \\italic{Bewusstseinsdualismus}.'."\n",
                       'Noch näher betrachtet handelt es sich beim Auswahl- oder Bewusstseinsdualismus um einen fraktalen Dualismus.'."\n".
                     'Denn zunächst wählen wir die Menge \\term{\M(N)}, nehmen sie in unseren Fokus und blenden damit alles andere'."\n".
                     'was existiert aus.'."\n".
@@ -503,24 +512,26 @@
                     'Wir haben dann also schon vier Fraktalebenen:'."\n".
                     'Alles was existiert, darin die Menge \\term{\M(N)}, darin alle Elemente in dieser Menge und dann darin'."\n".
                     'die Teilmenge der Elemente, die wir letztendlich aus den Elementen in \\term{\M(N)} ausgewählt haben.'."\n",
-                      'Eine Invertierung oder Vertauschung der beiden tiefsten Ebenen nutzen wir nun zur Darstellung negativer Zahlen:'."\n".
+                      'Eine Invertierung oder Vertauschung des Fokus auf die bewussten und unbewussten Elemente aller beteiligten Ebenen nutzen wir nun zur Darstellung negativer Zahlen.'."\n".
                     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Wählen wir eine einzige Ordinalzahl, beispielsweise die \\term{2}, in Bezug zum von uns zuvor zuletzt geschilderten, tiefsten Fokus:'."\n".
+                      'Wählen wir eine einzige Ordinalzahl, beispielsweise die \\term{2}, dann läuft dies in folgenden Schritten auf diesen Ebenen ab:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord.OD', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  2  }'),
+                      array( display => 'on', latex => '{  \text{1.}  \qquad  \mathbb{U}  =  \text{Mengenuniversum}  }'),
+                      array( display => 'on', latex => '{  \text{2.}  \qquad  \mathbb{N}  =  *\{ 0, 1, 2, 3, \cdots *\}  }'),
+                      array( display => 'on', latex => '{  \text{3.}  \qquad  2  =  *\{ 0, 1 *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Dann haben wir eigentlich eine Auswahl-Menge, die die ausgewählte Zahl enthält,'."\n".
+                      'Dann fokussieren wir uns eigentlich auf eine Auswahl-Menge, die die ausgewählte Zahl enthält,'."\n".
                       'hier durch zwei neue Klammern mit Pfeilen nach innen symbolisiert:'."\n".
                       // 'Die ausgewählte Zahl ist selber eine Menge mit all den Mengendarstellungen ihrer Vorgänger.'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  *\{> 2 *<\}  }'),
+                      array( display => 'on', latex => '{  *\{> 2 *<\}  =  *\{> *\{ 0, 1 *\} *<\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Um die Menge mit unserer Auswahl aus \\term{\M(N)} herum befinden sich ja implizit alle Zahlen, die wir nicht aus \\term{\M(N)}'."\n".
@@ -528,106 +539,76 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  *\{> 0, 1, *\{> 2 *<\} , 3, 4, 5, \cdots *<\}  }'),
+                      array( display => 'on', latex => '{  *\{> 2 *<\}  =  *\{> *\{ *\{> 0, 1 *<\} , 2, 3, 4, 5, \cdots *\} *<\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wenn wir unseren Fokus von der \\term{2} zu allen anderen wechseln, dann sieht dies'."\n".
-                      'folgendermaßen aus:'."\n".
+                      'Und dort existieren natürlich auch alle restlichen Mengen, die es in \\term{\M(U)} noch gibt:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  *\{> 2, *\{> 0, 1, 3, 4, 5, \cdots *<\} *<\}  }'),
+                      array( display => 'on', latex => '{  *\{> 2 *<\}  =  *\{> *\{> *\{ *\{> 0, 1 *<\} , 2, 3, 4, 5, \cdots *\} *<\} \cup *( \mathbb{U} \setminus \mathbb{N} *) *<\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'Wenn wir unseren Fokus von der \\term{2} zu allen anderen wechseln, dann sollte dies \\term{-2} ergeben,'."\n".
+                      'denn die \\term{2} fehlt ja nun, und sieht folgendermaßen aus'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *\{> \! - \! 2 *<\}  =  *\{> *\{> *\{ *<\} 0, 1, *\{> 2, 3, 4, 5, \cdots *\} *<\} \cup *( \mathbb{U} \setminus \mathbb{N} *) *<\}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *\{> \! - \! 2 *<\}  =  *\{> *\{> *\{ 2, 3, 4, 5, \cdots *\} *<\} \cup *( \mathbb{U} \setminus \mathbb{N} *) *<\}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *\{> \! - \! 2 *<\}  =  *\{> \mathbb{U} \setminus *\{ 0, 1 *\} *<\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *\{> \! - \! 2 *<\}  =  *\{> \mathbb{U} \setminus 2 *<\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'was zu zeigen war.'."\n",
                         '\\\\ '."\n".
                       ''))),
                   array( 'text', array( text => array(
-                    'Dies ist unserer Konstruktion der Darstellung negativer Zahlen durch Mengen oben schon sehr ähnlich,'."\n".
-                    'aber nicht gleich.'."\n",
-                      'Was vor allem nicht erfüllt ist, ist die Idee, dass die Darstellung des Wertes einer Zahl mit'."\n".
-                    'der Anzahl an Mengen in Beziehung steht.'."\n".
-                    'Denn im oberen Beispiel fehlt im inneren Fokus nur eine Zahl an \\term{\M(N)} und nicht zwei,'."\n".
-                    'wie es oben bei einer Anzahl von \\term{-2} eigentlich gefordert ist.'."\n".
-                    'Auch ist im Fokus nicht eine einzige Menge ausgewählt, sondern viele.'."\n".
+                    'Wir sehen hieran, dass die Berücksichtigung des impliziten beziehungsweise unbewussten Vorgehens'."\n".
+                    'beim Fokussierungsprozess verdeutlicht, was eigentlich im „Verborgenen“ vor sich geht.'."\n".
+                    'Der fraktale Auswahl- oder Bewusstseinsdualismus hilft uns, dies zu verstehen, und zeigt,'."\n".
+                    'dass die gewählte Darstellung der negativen Zahlen durch Antimengen eine bedeutende Beziehung zum'."\n".
+                    'Realen hat, also zu realen Vorgängen im Verborgenen.'."\n",
+                      'Die Zuordnung der Werte zur ontologischen Struktur führt zu einer naturphilosophisch sehr interessanten '."\n".
+                    '\\jump{OM:SupNum:Biordinalzahlen:EineFundamentaleAsymmetrie}{Asymmetrie}, die wir später näher betrachten werden.'."\n".
                     ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      '\\\\'."\n".
-                      'Wir wollen nun die \\term{-2} auswählen und in den Fokus nehmen:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Biord.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  -2  =  *\{> \!-\!2 *<\}  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  *\{> \!-\!2 *<\}  =  *\{> \mathbb{N} \setminus 2 *<\}  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  *\{> \!-\!2 *<\}  =  *\{> \mathbb{N} \setminus *\{ 0, 1 *\} *<\}  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  *\{> \!-\!2 *<\}  =  *\{> *\{ 2, 3, 4, 5, \cdots *\} *<\}  }'),
-                      // array( display => 'on', latex => '{  *\{> \cdots, -3, *\{> \!-\!2 *<\}, -1, 0, 1, 2, 3, \cdots *<\}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Biord.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  *\{> 2, *\{> \!-\!2 *<\} *<\}  =  *\{> 2, *\{> \mathbb{N} \setminus 2 *<\} *<\}  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  *\{> 2, *\{> \!-\!2 *<\} *<\}  =  *\{> 2, *\{> \mathbb{N} \setminus *\{ 0, 1 *\} *<\} *<\}  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  *\{> 2, *\{> \!-\!2 *<\} *<\}  =  *\{> 2, *\{> *\{ 2, 3, 4, 5, \cdots *\} *<\} *<\}  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  *\{> 2, *\{> \!-\!2 *<\} *<\}  =  *\{> *\{ 0, 1 *\}, *\{> \mathbb{N} \setminus *\{ 0, 1 *\} *<\} *<\}  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  *\{> 2, *\{> \!-\!2 *<\} *<\}  =  *\{> *\{ 0, 1 *\}, *\{> *\{ 2, 3, 4, 5, \cdots *\} *<\} *<\}  }'),
-                      array( display => 'on', latex => '{  *\{> 0, 1, *\{> 2, 3, 4, 5, \cdots *<\} *<\}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'Die \\term{2} ist nun ihrerseits eine Menge, die ihre Vorgänger enthält:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Biord.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  *\{> 0, 1, *\{> *\{ 0, 1 *\} *<\}, 3, 4, 5, \cdots *<\}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Biord.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  *\{> 2, *\{> *\{ 2, 3, 4, 5, \cdots *\} *<\} *<\}  }'),
-                      array( display => 'on', latex => '{  *\{> *\{ 0, 1 *\} , *\{> *\{ 2, 3, 4, 5, \cdots *\} *<\} *<\}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n",
-                        '\\\\ '."\n".
+                  array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:OntologischeDeutung:XXX', text =>
+                      
+                'Ontologische Aussagenlogik', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'In Bezug auf negative Zahlen führt die Vorstellung generell zur Verwirrung, dass die Null ja das Nichts'."\n".
+                    'repräsentiert, und negative Zahlen dann ja noch weniger als das Nichts wären.'."\n".
+                    'So etwas könne es doch nicht geben, denken wir spontan, und ich meine auch begründet.'."\n".
+                    'Ontologisch, also vom Seienden aus, betrachtet kann es nicht weniger geben, als das es nichts gibt.'."\n",
+                      'Was wir nicht so einfach bemerken, salopp formuliert, nicht auf der Reihe haben, ist,'."\n".
+                    'dass es immer implizit um das Meer der Möglichkeiten geht, aus denen wir etwas auswählen.'."\n".
+                    'Auf Aussagenlogik bezogen und am Beispiel von Mengen ausgedrückt, sind die leere Menge und alle Möglichkeiten'."\n".
+                    'sehr nahe beieinander liegend.'."\n",
+                      'Denn haben wir alle Möglichkeiten gleichwertig, dann können wir uns nicht für eine entscheiden,'."\n".
+                    'weil keine zur Auswahl heraussticht.'."\n".
+                    'Das erscheint so gesehen sehr ähnlich, als hätten wir keine Möglichkeit.'."\n",
+                      'Vergleichbar ist auch die folgende Aussage:'."\n".
+                    ''))),
+                  array( 'text', array( Shape  => 'italic', text => array(
+                      'Wem gehört das Wissen der Welt? \\\\'."\n".
+                      'Allen und damit keinem.'."\n".
                       ''))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'XXX Denn jeder dieser beiden Teile kann durch einen Perspektivwechsel, durch einen neuen Fokus, wieder in zwei solche Teile zerfallen.'."\n".
-                    'Oder wir teilen beide Teile anders in zwei Teile auf.'."\n".
-                    'Betrachten wir beide Teile gemeinsam, dann lassen wir natürlich wieder implizit den Rest der Welt, des Universums, weg.'."\n",
-                      'Die Menge \\term{\M(N)} selber kann in der Darstellung der endlichen Zahlen keine Rolle spielen,'."\n".
-                    'weil sie bereits eine höhere Größenordnung darstellt, auch Mächtigkeit oder Kardinalität genannt.'."\n",
-                      'Die Zuordnung der Werte zur ontologischen Struktur führt deshalb zu einer naturphilosophisch sehr interessanten '."\n".
-                    'Asymmetrie, die wir im Folgenden näher betrachten werden.'."\n".
+                    'Aus dieser Perspektive ist ›allen‹ und ›keinem‹ im Grunde identisch,'."\n".
+                    'weil es um die Differenz der Besitzenden untereinander geht, die in beiden Fällen gleich ist.'."\n",
+                      'In beiden Fällen geht es quasi um ein „Kräftegleichgewicht“, dass zu einer Entscheidung führen kann.'."\n".
+                    'Alle Möglichkeiten zu haben, ist vollständige Harmonie und ein Ausgleich der „Kräfte“, ebenso wie'."\n".
+                    'keine Möglichkeiten zu haben.'."\n",
+                      'In der Konstruktion der Zahlen gibt es aber einen Unterschied, denn wir wollen Eindeutigkeit.'."\n".
+                    'Und alle Möglichkeiten nutzen wir schon dazu, den Rahmen der Dinge zu bestimmen, von denen wir ausgehen,'."\n".
+                    'dass sie möglich sind.'."\n".
+                    'So bleibt nur die leere Menge, um auszudrücken, dass die Auswahlmöglichkeiten ausgeglichen sind.'."\n",
+                      'Aber wir haben, ausgehen von beiden gleichwertigen Gleichgewichten, auf diese Weise zwei Möglichkeiten eine Auswahl zu bestimmen:'."\n".
+                    'Ein Mal, indem wir aus allen Möglichkeiten „wenige“ auswählen, und ein Mal,'."\n".
+                    'indem wir aus allen Möglichkeiten „wenige“ weglassen und damit den Rest auswählen.'."\n".
+                    'Beides macht einen erheblichen Unterschied und versetzt uns in die Lage, plausibel und logisch sinnvoll'."\n".
+                    'Gewähltes als Positives und Weggelassenes als Negatives zu differenzieren.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -637,7 +618,7 @@
           ); ?>
 
 
-		    	<!  • Eine fundamentale Asymmetrie  >
+          <!  • Eine fundamentale Asymmetrie  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Biordinalzahlen:EineFundamentaleAsymmetrie',
               'Die ontologische Struktur beinhaltet die Zählrichtung', 'Sc_f_Paragraph',
