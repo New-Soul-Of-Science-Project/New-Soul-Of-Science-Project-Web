@@ -25,7 +25,10 @@
                     'Das bedeutet, dass das Rückwärtszählen und die Subtraktion innerhalb der Biordinalzahlen vollständig definiert sind,'."\n".
                     'was innerhalb der Ordinalzahlen nicht der Fall ist.'."\n",
                       'Die Biordinalzahlen definieren so nicht nur die Anzahl, die vorhanden ist,'."\n".
-                      'sondern auch die Anzahl, die an etwas vollständigem Fehlt, wie wir sehen werden.'."\n".
+                    'sondern auch die Anzahl, die an etwas vollständigem Fehlt, wie wir sehen werden.'."\n".
+                    'Durch die Erweiterung werden die Ordinalzahlen als Biordinalzahlen zu einem Ring\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ring-Algebra:2023}.}.'."\n".
+                    'Denn nun sind in den Biordinalzahlen die Addition und vollständige Subtraktion und ihr neutrales Element „Null“'."\n".
+                    'sowie auch die Multiplikation und ihr neutrales Element „Eins“ definiert.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:Vortext:XXX', text =>
                       
@@ -59,12 +62,13 @@
                       array( display => 'on',  latex => '{  1  :=  *\{ 0 *\}  =  *\{ *\{ *\} *\}  }'),
                       array( display => 'on',  latex => '{  2  :=  *\{ 0, 1 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
                       array( display => 'on',  latex => '{  3  :=  *\{ 0, 1, 2 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\}, *\{ *\{ *\}, *\{ *\{ *\} *\} *\} *\}  }'),
-                      array( display => 'on',  latex => '{  n  :=  *\{ 0, 1, 2, …, n - 1 *\}  }'),
-                      array( display => 'on',  latex => '{  n + 1  :=  *\{ 0, 1, 2, …, n *\}  =  n \cup *\{ n *\}  }',
+                      array( display => 'on',  latex => '{  n  :=  *\{ 0, 1, 2, \cdots , n - 1 *\}  }'),
+                      array( display => 'on',  latex => '{  n + 1  :=  *\{ 0, 1, 2, \cdots , n *\}  =  n \cup *\{ n *\}  }',
                                           label_name => 'OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins', label_text => '\\name{OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins}', label_incr => true),
+                      array( display => 'on',  latex => '{  \mathbb{N}  =  *\{ 0, 1, 2, 3, 4, 5, \cdots *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Im Folgenden soll auch gelten, dass die Null ein Element der natürlichen Zahlen ist, wie in den Peano-Axiomen\\footnote{\\const{NSOSP_g_footnote_text_PeanoAxiome}} zur Definition von \\term{\M(N)} gefordert:'."\n".
+                    'Deshalb soll gelten, dass die Null ein Element der natürlichen Zahlen ist, wie in den Peano-Axiomen\\footnote{\\const{NSOSP_g_footnote_text_PeanoAxiome}} zur Definition von \\term{\M(N)} gefordert:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -77,8 +81,9 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       // array( display => 'on', latex => '{  \mathbb{N}  :=  ??? *\{  n ~\middle|~ \left( n \in \mathbb{N} \right) \left( \forall x \in \mathbb{N} \right) \left[  x < n  \right]  *\}  }'),
-                      array( display => 'on', latex => '{  \omega  :=  \mathbb{N}  }'),
-                      array( display => 'on', latex => '{  \omega + 1  :=  \mathbb{N} \cup *\{ \mathbb{N} *\}  =  *\{ 0, 1, 2, 3, …, \mathbb{N} *\}  }'),
+                      array( display => 'on', latex => '{  \omega  :=  \mathbb{N}  =  *\{ 0, 1, 2, 3, 4, 5, \cdots *\}  }'),
+                      array( display => 'on', latex => '{  \omega + 1  :=  \mathbb{N} \cup *\{ \mathbb{N} *\}  =  *\{ 0, 1, 2, 3, \cdots , \mathbb{N} *\}  }'),
+                      array( display => 'on', latex => '{  \omega + 2  :=  *( \omega + 1 *) \cup *\{ \omega + 1 *\} \\\ \qquad\;  =  *\{ 0, 1, 2, 3, \cdots , \mathbb{N}, *\{ 0, 1, 2, 3, \cdots , \mathbb{N} *\} *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Insgesamt sehen wir, dass jede definierte Zahl der Anzahl der Elemente in einer eineindeutig bestimmten geordnete Menge entspricht.'."\n",
@@ -102,7 +107,7 @@
                       array( display => 'on', latex => '{  0  :=  *\{ *\}  }'),
                       array( display => 'on', latex => '{  -1  :=  \mathbb{N} \setminus 1  =  \mathbb{N} \setminus *\{ 0 *\}  =  \mathbb{N} \setminus *\{ *\{ *\} *\}  }'),
                       array( display => 'on', latex => '{  -2  :=  \mathbb{N} \setminus 2  =  \mathbb{N} \setminus *\{ 0, 1 *\}  =  \mathbb{N} \setminus *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
-                      array( display => 'on', latex => '{  -n  :=  \mathbb{N} \setminus n  =  \mathbb{N} \setminus *\{ 0, 1, …, n - 1 *\}  }'),
+                      array( display => 'on', latex => '{  -n  :=  \mathbb{N} \setminus n  =  \mathbb{N} \setminus *\{ 0, 1, \cdots , n - 1 *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Auch hier wird konsequenterweise das Prinzip aufrecht erhalten, dass die Menge, die eine Zahl repräsentiert in Richtung des Negativen'."\n".
@@ -154,9 +159,9 @@
                       array( display => 'on', latex => '{  0  :=  *\{ *\}  }'),
                       array( display => 'on', latex => '{  -1  :=  \mathbb{U} \setminus 1  =  \mathbb{U} \setminus *\{ 0 *\}  =  \mathbb{U} \setminus *\{ *\{ *\} *\}  }'),
                       array( display => 'on', latex => '{  -2  :=  \mathbb{U} \setminus 2  =  \mathbb{U} \setminus *\{ 0, 1 *\}  =  \mathbb{U} \setminus *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
-                      array( display => 'on', latex => '{  -n  :=  \mathbb{U} \setminus n  =  \mathbb{U} \setminus *\{ 0, 1, …, n - 1 *\}  }'),
-                      array( display => 'on', latex => '{  -\omega  :=  \mathbb{U} \setminus \omega  =  \mathbb{U} \setminus \mathbb{N} \\\ \qquad\qquad\qquad\;  =  \mathbb{U} \setminus *\{ 0, 1, 2, 3, … *\}  }'),
-                      array( display => 'on', latex => '{  - *(\omega + 1 *)  :=  \mathbb{U} \setminus *( \omega + 1 *)  =  \mathbb{U} \setminus *( \mathbb{N} \cup *\{ \mathbb{N} *\} *) \\\ \qquad\qquad\qquad\qquad\qquad  =  \mathbb{U} \setminus *\{ 0, 1, 2, 3, …, \mathbb{N} *\}  }'),
+                      array( display => 'on', latex => '{  -n  :=  \mathbb{U} \setminus n  =  \mathbb{U} \setminus *\{ 0, 1, \cdots , n - 1 *\}  }'),
+                      array( display => 'on', latex => '{  -\omega  :=  \mathbb{U} \setminus \omega  =  \mathbb{U} \setminus \mathbb{N} \\\ \qquad\qquad\qquad\;  =  \mathbb{U} \setminus *\{ 0, 1, 2, 3, \cdots *\}  }'),
+                      array( display => 'on', latex => '{  - *(\omega + 1 *)  :=  \mathbb{U} \setminus *( \omega + 1 *) \\\ \qquad\quad\;\;  =  \mathbb{U} \setminus *( \mathbb{N} \cup *\{ \mathbb{N} *\} *) \\\ \qquad\quad\;\;  =  \mathbb{U} \setminus *\{ 0, 1, 2, 3, \cdots , \mathbb{N} *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Auch in diesem Fall wird konsequenterweise das Prinzip aufrecht erhalten, dass die Klasse – das Mengenuniversum ist auch ein Container, aber definitionsgemäß keine Menge –, die eine Zahl repräsentiert zum Negativen hin'."\n".
@@ -174,13 +179,13 @@
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega - 1  :=  \mathbb{N} \setminus 1  =  \mathbb{N} \setminus *\{ 0 *\} \\\ \qquad\qquad\qquad\quad  =  \mathbb{N} \setminus *\{ *\{ *\} *\}  }'),
                       array( display => 'on', latex => '{  \omega - 2  :=  \mathbb{N} \setminus 2  =  \mathbb{N} \setminus *\{ 0, 1 *\} \\\ \qquad\qquad\qquad\quad  =  \mathbb{N} \setminus *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
-                      array( display => 'on', latex => '{  \omega - n  :=  \mathbb{N} \setminus n  =  \mathbb{N} \setminus *\{ 0, 1, …, n - 1 *\}  }'),
+                      array( display => 'on', latex => '{  \omega - n  :=  \mathbb{N} \setminus n  =  \mathbb{N} \setminus *\{ 0, 1, \cdots , n - 1 *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Diese Definition, basierend auf \\term{\M(N)}, wurde eingangs für die Definition der absolut negativen Zahlen in Erwägung gezogen, dafür jedoch wieder verworfen, und bekommt hiermit ihre passende Rolle.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Analyse der allgemeinen Subtraktion} \\\\'."\n".
+                  '\\condb{Herleitung des Ansatzes der allgemeinen Subtraktion} \\\\'."\n".
                     'Aber wie steht es mit der Eindeutigkeit, der Praktikabilität und der generellen Plausibilität in komplizierteren Fällen?'."\n".
                     'An folgendem Beispiel können wir einmal sehen, worum es geht:'."\n".
                     ''))),
@@ -215,7 +220,7 @@
                       array( display => 'on', latex => '{  \omega^2 - \omega + n  =  \omega^2 - *( \omega - n *)  }'),
                       array( display => 'on', latex => '{  \omega^2 - *( \omega - n *)  :=  \omega^2 \setminus *( \omega - n *)  }'),
                       array( display => 'on', latex => '{  \omega - n  :=  \omega \setminus n  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  \omega^2 - *( \omega - n *)  :=  \omega^2 \setminus *( \omega \setminus n *) \\\ \qquad\qquad\qquad\quad\;\;  =  \omega^2 \setminus *( \omega \setminus *\{ 0, 1, …, n - 1 *\} *) \\\ \qquad\qquad\qquad\quad\;\;  =  \omega^2 \setminus *\{ n, n + 1, n + 2, n + 3, … *\} \\\ \qquad\qquad\qquad\quad\;\;  =  *\{ 0, 1, …, n - 1, \omega, \omega + 1, …, \omega^2 *\}  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  \omega^2 - *( \omega - n *)  :=  \omega^2 \setminus *( \omega \setminus n *) \\\ \qquad\qquad\qquad\quad\;\;  =  \omega^2 \setminus *( \omega \setminus *\{ 0, 1, \cdots , n - 1 *\} *) \\\ \qquad\qquad\qquad\quad\;\;  =  \omega^2 \setminus *\{ n, n + 1, n + 2, n + 3, \cdots *\} \\\ \qquad\qquad\qquad\quad\;\;  =  *\{ 0, 1, \cdots , n - 1, \omega, \omega + 1, \cdots , \omega^2 *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Das scheint auch schlüssig zu sein, weil möglich, denn die weggelassenen Mengen existieren in \\term{ω^{2}} beziehungsweise in \\term{ω}, als auch eineindeutig,'."\n".
@@ -604,11 +609,21 @@
                     'Und alle Möglichkeiten nutzen wir schon dazu, den Rahmen der Dinge zu bestimmen, von denen wir ausgehen,'."\n".
                     'dass sie möglich sind.'."\n".
                     'So bleibt nur die leere Menge, um auszudrücken, dass die Auswahlmöglichkeiten ausgeglichen sind.'."\n",
-                      'Aber wir haben, ausgehen von beiden gleichwertigen Gleichgewichten, auf diese Weise zwei Möglichkeiten eine Auswahl zu bestimmen:'."\n".
+                      'Aber wir haben, ausgehend von beiden gleichwertigen Gleichgewichten, auf diese Weise zwei Möglichkeiten eine Auswahl zu bestimmen:'."\n".
                     'Ein Mal, indem wir aus allen Möglichkeiten „wenige“ auswählen, und ein Mal,'."\n".
                     'indem wir aus allen Möglichkeiten „wenige“ weglassen und damit den Rest auswählen.'."\n".
                     'Beides macht einen erheblichen Unterschied und versetzt uns in die Lage, plausibel und logisch sinnvoll'."\n".
                     'Gewähltes als Positives und Weggelassenes als Negatives zu differenzieren.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Biordinalzahlen:OntologischeDeutung:XXX', text =>
+                      
+                'Ontologie der Polarität', subline =>
+                  'Polarität bringt etwas zur Existenz und zur Wirkung')),
+                  array( 'text', array( text => array(
+                    'Durch die Auswahl oder das Weglassen von Dingen aus allen Möglichkeiten entsteht eine Polarität,'."\n".
+                    'die etwas zur stabilen Existenz bringt.'."\n".
+                    'Es ist ein Symmetriebruch, der die neutrale Harmonie zerstört, der zu „Kräften“ führt,'."\n".
+                    'ganz wie in der Physik, und die so erschaffenen Dinge in Prozessen begreifbar, greifbar und handhabbar macht.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
