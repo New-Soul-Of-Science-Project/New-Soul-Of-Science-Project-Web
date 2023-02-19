@@ -110,39 +110,80 @@
                 array(
                   array( 'text', array( text => array(
                     //'Die Quanten-Fluss-Theorie wird bisher ohne öffentliche Unterstützung entwickelt.'."\n".
-                    'The New Soul Of Science Project wird bisher ohne öffentliche Unterstützung entwickelt.'."\n".
-                    'Da das Gesamtprojekt immer umfangreicher wird und in den letzten Jahren sehr konkrete Formen angenommen hat, habe ich mich entschlossen für die kommenden Projekte um Unterstützung durch Crowdfunding zu werben.'."\n".
-                    'Teilprojekte sind:'."\n"))),
+                    'Das ›New Soul Of Science Project‹ wird bisher ohne öffentliche Unterstützung entwickelt.'."\n".
+                    'Da das Gesamtprojekt immer umfangreicher wird und in den letzten Jahren sehr konkrete Formen angenommen hat,'."\n".
+                    'habe ich mich entschlossen für die Projektarbeit um Unterstützung durch Crowdfunding zu werben.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Teilprojekte sind:'."\n".
+                    ''))),
                       
                   array( 'text', array( text => array(
-                    '›Spannungsspiel des Lebens‹:'."\n"))),
+                    '\\jump{OM:nSOSa:Home}{›New Soul Of Science Academy‹}:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Vorlesung entwickeln',
-                        'Internetseite fortentwickeln',
-                        'Video-Projekt: Lucius Damian Stardust erklärt das Leben',
-                        'YouTube Lehrvideos erstellen',
+                        'Lehrpläne und Vorlesungen entwickeln',
+                        'Lehrvideos erstellen',
                         //'Buch: Licht des Wohlgefühls – Sei Hoheit deines Lebens, dein Schicksalswellenreiter (in Vorbereitung)',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Naturphilosophie-Yoga:'."\n"))),
+                    '\\jump{OM:SpaLeb:Home}{›Spannungsspiel des Lebens‹}:'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Vorlesung entwickeln',
+                        'Internetseite fortentwickeln',
+                        // 'Video-Projekt: Lucius Damian Stardust erklärt das Leben',
+                        'YouTube Lehrvideos erstellen',
+                        // 'Buch: Licht des Wohlgefühls – Sei Hoheit deines Lebens, dein Schicksalswellenreiter (in Vorbereitung)',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    '\\jump{OM:NPYo:Home}{Naturphilosophie-Yoga}:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Stundeninhalte entwickeln',
                         'Workshops entwickeln',
                         'Seminare entwickeln',
                         'Internetseite fortentwickeln',
-                        'Video-Projekt: Lucius Damian Stardust erklärt das Naturphilosophie-Yoga',
+                        // 'Video-Projekt: Lucius Damian Stardust erklärt das Naturphilosophie-Yoga',
                         'YouTube Lehrvideos erstellen',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Quanten-Fluss-Theorie:'."\n"))),
+                    '\\jump{OM:FrQFT:Home}{Fraktale Quanten-Fluss-Theorie}:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Erforschung des \\jump{OM:FrQFT:NeuePhysik:Quantengravitation:PDM}{Phänomens der Dunklen Materie}: \\\\ Welchen Gravitationseinfluss hat die erhöhte Energie des Vakuums in und um Galaxien herum?',
                         'Internetseite fortentwickeln',
-                        'Video-Projekt: Lucius Damian Stardust erklärt die Quanten-Fluss-Theorie',
+                        // 'Video-Projekt: Lucius Damian Stardust erklärt die Quanten-Fluss-Theorie',
                         'Animationsfilme erstellen',
                         'Musik: Animationsfilme vertonen',
+                        'Facharbeit',
+                        'Vortrag',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    '\\jump{OM:SupNum:Home}{Superial-Zahlen}:'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Internetseite fortentwickeln',
+                        // 'Video-Projekt: Lucius Damian Stardust erklärt die Quanten-Fluss-Theorie',
+                        'Animationsfilme erstellen',
+                        'Facharbeit',
+                        'Vortrag',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    '\\jump{OM:BiOrd:Home}{Biordinalzahlen}:'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Internetseite fortentwickeln',
+                        // 'Video-Projekt: Lucius Damian Stardust erklärt die Quanten-Fluss-Theorie',
+                        'Animationsfilme erstellen',
+                        'Facharbeit',
+                        'Vortrag',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    '\\jump{OM:OT:Home}{Operialtheorie}:'."\n"))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Internetseite fortentwickeln',
+                        // 'Video-Projekt: Lucius Damian Stardust erklärt die Quanten-Fluss-Theorie',
                         'Facharbeit',
                         'Vortrag',
                     ))),
@@ -152,21 +193,20 @@
                     'Ende 2012 habe ich die direkte Veröffentlichung der Theorie im Internet in Angriff genommen.'."\n".
                     'Im Jahr 2014 ist das auch sehr umfangreiche ›Spannungsspiel des Lebens‹ hinzugekommen.'."\n".
                     'Und im Jahr 2017, mit dem Absolvieren meines Yoga-Lehrers, verbinde ich nun das Yoga mit dem ›Spannungsspiel des Lebens‹.'."\n".
-                    'Auch Sie sind herzlich eingeladen, sich an der Entwicklung vom The New Soul Of Science Project zu \\jump{OM:FrQFT:Impressum:Beteiligung}{beteiligen}. \\\\'."\n".
+                    'Auch Sie sind herzlich eingeladen, sich an der Entwicklung des ›New Soul Of Science Project‹ zu \\jump{OM:FrQFT:Impressum:Beteiligung}{beteiligen}. \\\\'."\n".
                     'Eine kleine Entstehungsgeschichte finden Sie im \\jump{OM:FrQFT:Vorwort}{Vorwort}.'."\n"))),
                   array( 'text', array( text => array(
                     'Vielen Dank für Ihre Hilfe und Unterstützung!'."\n".
                     'Jeder kleine Betrag ist herzlich willkommen: \\\\'."\n".
-                    '<small>(Auf Wunsch können Sie sich in die Liste der \\jump{OM:FrQFT:Impressum:Supporter}{Spender und Unterstützer} eintragen lassen.)</small>'."\n"))),
+                    '\\small{(Auf Wunsch können Sie sich in die Liste der \\jump{OM:FrQFT:Impressum:Supporter}{Spender und Unterstützer} eintragen lassen.)}'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Impressum:Spenden:XXX', text =>
                       'Überweisung')),
                   array( 'text', array( text => array(
                     'Kontoinhaber: Wolfgang Huß \\\\'."\n".
-                    'Keditinstitut: Hamburger Volksbank \\\\'."\n".
+                    'Bank: Hamburger Volksbank \\\\'."\n".
                     'BIC: GENODEF1HH2 \\\\'."\n".
                     'IBAN: DE34 2019 0003 0025 0993 02 \\\\'."\n".
-                    //'Verwendungszweck: Spende Quanten-Fluss-Theorie'."\n"))),
-                    'Verwendungszweck: Spende The New Soul Of Science Project'."\n"))),
+                    'Verwendungszweck: Spende für \\italic{New Soul Of Science Project}'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Impressum:Spenden:XXX', text =>
                       'PayPal')),
                   array( 'text', array( text => array(
