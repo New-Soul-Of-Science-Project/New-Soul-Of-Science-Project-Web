@@ -12,7 +12,7 @@
         '<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
       ),
       header_bgcolor => '#FFFFFF',
-      header_pict_name => 'BO/BO_header_v01-01-3720x708.jpg',
+      header_pict_name => 'BO/BO_header_v01-02-3720x708.jpg',
       header_pict_width => '930px',
       header_pict_height => '177px',
       header_pict_bgcolor => '#FFFFFF',
