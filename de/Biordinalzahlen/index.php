@@ -14,12 +14,28 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'text', array( text => array(
-                    'XXX'."\n",
-                      'XXX Vom Endlichen bis ins Aktual-Unendliche mit ganzen Zahlen zählen, ist eine faszinierende Sache.'."\n".
-                    'XXX Welche Primfaktorenzerlegung haben diese aktual unendlichen ganzen Zahlen?'."\n".
-                    'XXX Wie sind die Primzahlen im Aktual-Unendlichen verteilt?'."\n".
-                    'XXX'."\n",
-                      'Viele spannende Fragen, deren Antworten sich in dieser Arbeit ergeben.'."\n"))),
+                    'Die Entsprechung von Zahlen und bestimmten Mengen, die durch einen induktiven Zählvorgang,'."\n".
+                    'der diese Mengen konstruiert, erzeugt werden, ermöglicht faszinierende Einblicke in das Aktual-Unendliche.'."\n".
+                    'Diese bekannten und Ordinalzahlen genannten Entsprechungen von Zahlen und Mengen erlauben uns über das Endliche'."\n".
+                    'hinaus zu zählen.'."\n",
+                      'Allerdings ist es bisher nicht möglich, von der Null aus oder nach dem Sprung ins Aktual-Unendliche \\term{ω} oder ins nächste Unendliche \\term{2ω},'."\n".
+                    'von diesen Landungspunkten aus, den Limeszahlen, rückwärts zu zählen.'."\n".
+                    'Wir beschäftigen uns im Folgenden damit, wie wir die Vorgänger der positiven Limeszahlen durch Mengen beschreiben'."\n".
+                    'und durch die Erweiterung des Mengenbegriffs auf Antimengen, mit Hilfe des Antimengenuniversums und integrierten Mengenuniversums,'."\n".
+                    'auch die Vorgänger der Null, also die negativen Zahlen, konstruieren können.'."\n",
+                      'Dadurch erschaffen wir mit den Biordinalzahlen eine Erweiterung der Ordinalzahlen, die die Eigenschaft eines'."\n".
+                    'algebraischen Rings besitzt.'."\n".
+                    'Die erneute Erweiterung der Biordinalzahlen führt uns schließlich zu den \\jump{OM:SupNum:Home}{Superial-Zahlen},'."\n".
+                    'die dann die Eigenschaften eines algebraischen Körpers besitzen.'."\n",
+                      'Durch die Konstruktion der Superial-Zahlen aus Primzahlen und deren Verbindung zu den Biordinalzahlen'."\n".
+                    'stellt sich schließlich auch die Frage, ob es eine Primfaktorenzerlegung von \\term{ω} gibt.'."\n".
+                    'So entsteht meine \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}.'."\n",
+                      'Unsere ontologische Deutung der Beschreibung der negativen Biordinalzahlen gewährt uns Einblicke darein,'."\n".
+                    'wie wir unseren Wahrnehmungsfokus setzen und damit eine Auswahl treffen und wie die negativen Biordinalzahlen'."\n".
+                    'aus der Invertierung dieses Fokus entstehen, die demnach ein Weglassen einer Auswahl aus ihrer Ganzheit bedeutet.'."\n",
+                      'Dies gewährt uns auch Aufschluss über den Zusammenhang des Bewussten, das wir im Fokus haben,'."\n".
+                    'mit dem Unbewussten oder Unterbewussten, also den Rest, den wir ausblenden, nicht wahrnehmen oder gar nicht wahrnehmen können.'."\n".
+                    ''))),
                       //'Verstehen, was eine negative Menge ist, gibt einen besseren Einblick in die Realität unserer Welt.'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -67,7 +83,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Superial-Zahlen <small>– Zählen und Primzahlen im Unendlichen</small>}</h3>'."\n"),
+                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Biordinalzahlen <small>– Vorwärtszählen und Rückwärtszählen im Unendlichen</small>}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:BiOrd:Einleitung'),
