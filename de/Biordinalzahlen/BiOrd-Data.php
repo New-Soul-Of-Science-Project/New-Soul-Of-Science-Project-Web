@@ -1,0 +1,87 @@
+<?php
+  $BiOrd_g_Site_ary = array(
+    'OM:BiOrd:' =>
+      array_merge(
+        $nSOSp_g_info_wolfgangHuss,
+        array( url_abs => 'http://www.nsosp.org/de/Biordinalzahlen/',
+      url_rel => $Glo_PathRel_back.'../de/Biordinalzahlen/',
+      favicons_url_rel_opt => $Glo_PathRel_back.'../de/Biordinalzahlen/favicon/',
+      name_short => 'BiOrd',
+      font_ary => array(
+        '<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
+        '<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
+      ),
+      header_bgcolor => '#FFFFFF',
+      header_pict_name => 'BO/BO_header_v01-01-3720x708.jpg',
+      header_pict_width => '930px',
+      header_pict_height => '177px',
+      header_pict_bgcolor => '#FFFFFF',
+      header_pict_alt => 'Biordinalzahlen, die Vorgänger der Limeszahlen',
+      header_links_marginLeft => '359px',
+      copy_right =>
+        'Biordinalzahlen (BO) \\\\'."\n".
+        '© 2003–2022 by \\\\'."\n".
+        'Wolfgang Huß und \\\\'."\n".
+        'Media Line Digital e.K. \\\\'."\n".
+        'is licensed under \\\\'."\n".
+        '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
+      litera_url_rel => $Glo_PathRel_back.'../de/Biordinalzahlen/Literatur.php',
+      litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
+    )),
+    'OM:BiOrd:Home' => array(
+      url_abs => 'http://www.nsosp.org/de/Biordinalzahlen/index.php',
+      url_rel => $Glo_PathRel_back.'../de/Biordinalzahlen/index.php',
+      titel => 'Biordinalzahlen (BO) - Deutsch',
+      description => '\\name[undertitle]{OM:BiOrd:Home}. — \\name[description]{OM:BiOrd:Home}.',
+      keywords => '',
+      text_titel_h1 => 'Biordinalzahlen \\color{*TitleAdd}{\\small{(BO)}}',
+      text_titel_short => 'Biordinalzahlen',
+      text_undertitel_h2 => 'Die Vorgänger der Limeszahlen',
+      text_titel_discr_h3 => 'Die Erweiterung der Ordinalzahlen zu einem Ring – neue Ideen elementarer Mathematik',
+      jump_ary => array(
+        'OM:BiOrd:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
+        'OM:BiOrd:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
+      ),
+    ),
+    'OM:BiOrd:Einleitung' => array(
+      url_abs => 'http://www.nsosp.org/de/Biordinalzahlen/Einleitung.php',
+      url_rel => $Glo_PathRel_back.'../de/Biordinalzahlen/Einleitung.php',
+      titel => 'Biordinalzahlen - Einleitung (BO) - Deutsch',
+      description => '\\name[undertitle]{OM:BiOrd:Einleitung}. — \\name[description]{OM:BiOrd:Einleitung}.',
+      keywords => '',
+      text_titel_h1 => 'Einleitung',
+      text_titel_short => 'Einleitung',
+      text_undertitel_h2 => 'Die Erweiterung der Ordinalzahlen zu einem Ring',
+      text_titel_discr_h3 => 'Negative Ordinalzahlen und Vorgänger aller Limeszahlen\\hidden{ (\\term{ω, 2ω, ⋯ , ω^{2}, ⋯})}',
+      jump_ary => array(
+        'OM:BiOrd:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          'OM:BiOrd:Einleitung:Vortext:Equ-n-plus-Eins' => array( headline_text => 'SN.Biord.6'),
+          'OM:BiOrd:Einleitung:Vortext:FundamentaleAsymmetrie' => array( headline_text => 'Eine fundamentale Asymmetrie'/*, headline_text_short => 'XXX'*/),
+          'OM:BiOrd:Einleitung:Vortext:Equ-Lambda-minus-Beta' => array( headline_text => 'SN.Biord.30'),
+          'OM:BiOrd:Einleitung:Vortext:NeueEinsichten' => array( headline_text => 'Neue Einsichten zu positiven aktual unendlichen Zahlen'/*, headline_text_short => 'XXX'*/),
+                        
+        'OM:BiOrd:Einleitung:IntegrierteMengenlehre' => array( headline_text => 'Integrierte Mengenlehre'/*, headline_text_short => 'XXX'*/),
+          'OM:BiOrd:Einleitung:IntegrierteMengenlehre:Equ-Antimenge' => array( headline_text => 'SN.Biord.IM.1'),
+                        
+        'OM:BiOrd:Einleitung:OntologischeDeutung' => array( headline_text => 'Ontologische Deutung'/*, headline_text_short => 'XXX'*/),
+                        
+        'OM:BiOrd:Einleitung:EineFundamentaleAsymmetrie' => array( headline_text => 'Eine fundamentale Asymmetrie'/*, headline_text_short => 'XXX'*/),
+          'OM:BiOrd:Einleitung:Vortext:Equ-Sum-z' => array( headline_text => 'SN.Biord.FA.4'),
+      ),
+    ),
+    'OM:BiOrd:Literatur' => array(
+      url_abs => 'http://www.nsosp.org/de/Biordinalzahlen/Literatur.php',
+      url_rel => $Glo_PathRel_back.'../de/Biordinalzahlen/Literatur.php',
+      titel => 'Literatur - Biordinalzahlen (SN) - Deutsch',
+      description => 'Literatur zu den Biordinalzahlen.',
+      keywords => '',
+      text_titel_h1 => 'Literatur',
+      text_titel_short => 'Literatur',
+      text_undertitel_h2 => 'und Informationen',
+      //text_titel_discr_h3 => 'Vereinheitlichte Physik auf Basis eines selbstorganisierten, fraktalen Systems von lichtähnlichen, zu Strings verbundenen Wirkungsquanten.',
+      jump_ary => array(
+      ),
+    ),
+  );
+?>

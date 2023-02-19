@@ -161,8 +161,8 @@
                 'Diese Frage stellte sich uns schon bei der Erforschung der Biordinalzahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Bei einer tiefen Beschäftigung mit dem Zählen im Zusammenhang mit der Erweiterung der Ordinalzahlen ins Negative durch \\jump{OM:SupNum:Biordinalzahlen}{die Biordinalzahlen}'."\n".
-                    'begegnen wir einer \\jump{OM:SupNum:Biordinalzahlen:Vortext:FundamentaleAsymmetrie}{fundamentalen Asymmetrie}.'."\n".
+                    'Bei einer tiefen Beschäftigung mit dem Zählen im Zusammenhang mit der Erweiterung der Ordinalzahlen ins Negative durch die \\jump{OM:BiOrd:Einleitung}{Biordinalzahlen}'."\n".
+                    'begegnen wir einer \\jump{OM:BiOrd:Einleitung:Vortext:FundamentaleAsymmetrie}{fundamentalen Asymmetrie}.'."\n".
                     'Diese wird eben genau dadurch gut Verständlich, wenn wir uns das Zählen als Schwingungsprozess vorstellen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:NPT:Einleitung:Arithmetik:XXX', text =>
                       

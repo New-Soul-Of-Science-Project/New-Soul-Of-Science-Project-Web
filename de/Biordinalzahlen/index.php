@@ -2,7 +2,7 @@
         include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
 
 
-<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:SupNum:Home'); ?>
+<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:BiOrd:Home'); ?>
 
 
       <?php FrQFT_f_Div_Header( '      '); ?>
@@ -14,18 +14,18 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'text', array( text => array(
-                    'Mit den Superial-Zahlen die fraktale Struktur des Unendlichen entdecken …'."\n",
-                      'Vom Endlichen bis ins Aktual-Unendliche mit ganzen Zahlen zählen, ist eine faszinierende Sache.'."\n".
-                    'Welche Primfaktorenzerlegung haben diese aktual unendlichen ganzen Zahlen?'."\n".
-                    'Wie sind die Primzahlen im Aktual-Unendlichen verteilt?'."\n".
-                    'Wie sind Ableitungen und Integrale im Endlichen definiert, wenn wir die Superial-Zahlen dafür benutzen?'."\n",
+                    'XXX'."\n",
+                      'XXX Vom Endlichen bis ins Aktual-Unendliche mit ganzen Zahlen zählen, ist eine faszinierende Sache.'."\n".
+                    'XXX Welche Primfaktorenzerlegung haben diese aktual unendlichen ganzen Zahlen?'."\n".
+                    'XXX Wie sind die Primzahlen im Aktual-Unendlichen verteilt?'."\n".
+                    'XXX'."\n",
                       'Viele spannende Fragen, deren Antworten sich in dieser Arbeit ergeben.'."\n"))),
                       //'Verstehen, was eine negative Menge ist, gibt einen besseren Einblick in die Realität unserer Welt.'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Dies ist die Startseite der kompletten Arbeit.'."\n".
-                    'Bitte wählen sie den direkten Zugang zu den einzelnen Themen über das nachfolgende \\jump{OM:SupNum:Home:Inhalt}{Inhaltsverzeichnis}.'."\n".
-                    'Die \\jump{OM:SupNum:Einleitung}{Einleitung} zu den Superial-Zahlen bietet einen Überblick über die grundlegende Herleitung.'."\n".
+                    'Bitte wählen sie den direkten Zugang zu den einzelnen Themen über das nachfolgende \\jump{OM:BiOrd:Home:Inhalt}{Inhaltsverzeichnis}.'."\n".
+                    'Die \\jump{OM:BiOrd:Einleitung}{Einleitung} zu den Superial-Zahlen bietet einen Überblick über die grundlegende Herleitung.'."\n".
                     'Bei Nachfragen und Interesse an einer Diskussion, Kritik oder Beteiligung sind Sie herzlich eingeladen \\jump{OM:FrQFT:Impressum:Inhaberdaten}{Kontakt} aufzunehmen.'."\n".
                     'Auch eine Unterstützung durch \\jump{OM:FrQFT:Impressum:Spenden}{Spenden} ist herzlich willkommen.'."\n"))),
                       
@@ -37,9 +37,9 @@
                         addtext => '')),
                     
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Home:Inhalt'),
+                      array(  jump_name => 'OM:BiOrd:Home:Inhalt'),
                       //array(  jump_name => 'OM:SpaLeb:Vorwort'),
-                      array(  jump_name => 'OM:SupNum:Einleitung'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung'),
                     )),
                     
                   array( 'jumplist', array(
@@ -53,7 +53,7 @@
 
 		    	<!  • Inhalt:  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Home:Inhalt',
+            'OM:BiOrd:Home:Inhalt',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'normal',
@@ -70,17 +70,14 @@
                     '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Superial-Zahlen <small>– Zählen und Primzahlen im Unendlichen</small>}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
-                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Einleitung'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Formale-Entwicklung'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Eigenschaften'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Primzahlprodukt-Vermutung'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:BiOrd:Einleitung'),
                     ))),
-                      
+                    
                   array( 'normal',
                     '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Lesestoff und Verweise \\small{– Informationen}}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
-                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Literatur'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:BiOrd:Literatur'),
                     ))),
                       
                   $NPYo_g_index_KurseVortraegeWorkshops_Head,

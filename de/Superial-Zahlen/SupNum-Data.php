@@ -43,33 +43,6 @@
         'OM:SupNum:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
       ),
     ),
-    'OM:SupNum:Biordinalzahlen' => array(
-      url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Biordinalzahlen.php',
-      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Biordinalzahlen.php',
-      titel => 'Biordinalzahlen - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\\name[undertitle]{OM:SupNum:Biordinalzahlen}.\\hidden{ — \\name[description]{OM:SupNum:Biordinalzahlen}.}',
-      keywords => '',
-      text_titel_h1 => 'Biordinalzahlen',
-      text_titel_short => 'Biordinalzahlen',
-      text_undertitel_h2 => 'Die Erweiterung der Ordinalzahlen zu einem Ring',
-      text_titel_discr_h3 => 'Negative Ordinalzahlen und Vorgänger aller Limeszahlen\\hidden{ (\\term{ω, 2ω, ⋯ , ω^{2}, ⋯})}',
-      jump_ary => array(
-        'OM:SupNum:Biordinalzahlen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-                   
-          'OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins' => array( headline_text => 'SN.Biord.6'),
-          'OM:SupNum:Biordinalzahlen:Vortext:FundamentaleAsymmetrie' => array( headline_text => 'Eine fundamentale Asymmetrie'/*, headline_text_short => 'XXX'*/),
-          'OM:SupNum:Biordinalzahlen:Vortext:Equ-Lambda-minus-Beta' => array( headline_text => 'SN.Biord.30'),
-          'OM:SupNum:Biordinalzahlen:Vortext:NeueEinsichten' => array( headline_text => 'Neue Einsichten zu positiven aktual unendlichen Zahlen'/*, headline_text_short => 'XXX'*/),
-                        
-        'OM:SupNum:Biordinalzahlen:IntegrierteMengenlehre' => array( headline_text => 'Integrierte Mengenlehre'/*, headline_text_short => 'XXX'*/),
-          'OM:SupNum:Biordinalzahlen:IntegrierteMengenlehre:Equ-Antimenge' => array( headline_text => 'SN.Biord.IM.1'),
-                        
-        'OM:SupNum:Biordinalzahlen:OntologischeDeutung' => array( headline_text => 'Ontologische Deutung'/*, headline_text_short => 'XXX'*/),
-                        
-        'OM:SupNum:Biordinalzahlen:EineFundamentaleAsymmetrie' => array( headline_text => 'Eine fundamentale Asymmetrie'/*, headline_text_short => 'XXX'*/),
-          'OM:SupNum:Biordinalzahlen:Vortext:Equ-Sum-z' => array( headline_text => 'SN.Biord.FA.4'),
-      ),
-    ),
     'OM:SupNum:Eigenschaften' => array(
       url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Eigenschaften.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Eigenschaften.php',

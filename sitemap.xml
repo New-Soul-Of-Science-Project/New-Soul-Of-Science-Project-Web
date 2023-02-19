@@ -34,6 +34,25 @@
         <priority>1.0</priority>
       </url>
 
+
+	<url>
+		<loc>http://www.nsosp.org/de/Biordinalzahlen/index.php</loc>
+		<lastmod>2022-08-28</lastmod>
+		<priority>1.0</priority>
+	</url>
+
+	<url>
+		<loc>http://www.nsosp.org/de/Biordinalzahlen/Einleitung.php</loc>
+		<lastmod>2022-08-28</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.nsosp.org/de/Biordinalzahlen/Literatur.php</loc>
+		<lastmod>2022-08-28</lastmod>
+		<priority>1.0</priority>
+	</url>
+
+
 	<url>
 		<loc>http://www.nsosp.org/de/Naturphilosophie-der-Zeit/index.php</loc>
 		<lastmod>2022-08-28</lastmod>
@@ -681,11 +700,6 @@
 		<priority>1.0</priority>
 	</url>
   
-	<url>
-		<loc>http://www.nsosp.org/de/Superial-Zahlen/Biordinalzahlen.php</loc>
-		<lastmod>2022-08-28</lastmod>
-		<priority>1.0</priority>
-	</url>
 	<url>
 		<loc>http://www.nsosp.org/de/Superial-Zahlen/Eigenschaften.php</loc>
 		<lastmod>2022-08-28</lastmod>

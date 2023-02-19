@@ -67,6 +67,7 @@
     author_image_height => '192px',
   );
                            
+  include $Glo_PathRel_back.'../de/Biordinalzahlen/BiOrd-Data.php';
   include $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/NPYo-Data.php';
   include $Glo_PathRel_back.'../de/New-Soul-Of-Science-Academy/NSOSA-Data.php';
   include $Glo_PathRel_back.'../de/Operialtheorie/OT-Data.php';
@@ -806,6 +807,7 @@
   
   $Glo_g_Site_ary = array_merge(
 
+    $BiOrd_g_Site_ary,
     $NPYo_g_Site_ary,
     $nSOSa_g_Site_ary,
     $OT_g_Site_ary,
@@ -2230,7 +2232,7 @@
                   'OM:nSOSp:Home:Naturphilosophie-der-Zeit' => array( headline_text => '\\name[title]{OM:NPT:Home}', headline_text_short => '\\name[shorttitle]{OM:NPT:Home}'),
                   'OM:nSOSp:Home:Naturphilosophie-der-Gegensaetze' => array( headline_text => 'Naturphilosophie der Gegensätze', headline_text_short => 'Naturphilosophie der Gegensätze'),
                   'OM:nSOSp:Home:Superial-Zahlen' => array( headline_text => '\\name[title]{OM:SupNum:Home}', headline_text_short => '\\name[shorttitle]{OM:SupNum:Home}'),
-                  'OM:nSOSp:Home:Biordinalzahlen' => array( headline_text => 'Biordinalzahlen und integrierte Mengenlehre', headline_text_short => 'Biordinalzahlen und integrierte Mengenlehre'),
+                  'OM:nSOSp:Home:Biordinalzahlen' => array( headline_text => '\\name[title]{OM:BiOrd:Home}', headline_text_short => '\\name[shorttitle]{OM:BiOrd:Home}'),
                   'OM:nSOSp:Home:Operialtheorie' => array( headline_text => '\\name[title]{OM:OT:Home}', headline_text_short => '\\name[shorttitle]{OM:OT:Home}'),
                   'OM:nSOSp:Home:Zahlensemantik' => array( headline_text => '\\name[title]{OM:ZS:Home}', headline_text_short => '\\name[shorttitle]{OM:ZS:Home}'),
                   'OM:nSOSp:Home:Inspiration' => array( headline_text => 'Inspiration', headline_text_short => 'Inspiration'),

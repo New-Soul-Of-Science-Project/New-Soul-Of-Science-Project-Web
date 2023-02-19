@@ -1164,15 +1164,15 @@
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:nSOSp:Home:Superial-Zahlen',
-              'Der Unendlichkeit Struktur geben – neue Ideen elementarer Mathematik', 'Sc_f_Paragraph',
+              '\\name[undertitle]{OM:SupNum:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
                     )),
                       
-                  array( 'bulletlist', array( bullet_ary => array(
-                        'Mit Primzahlen ins Unendliche.',
-                    ))),
+                  array( 'text', array( text => array(
+                    '\\name[description]{OM:SupNum:Home}'."\n".
+                    ''))),
                     
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Home'),
@@ -1181,26 +1181,23 @@
           ); ?>
 
 
-		    	<!  • Biordinalzahlen und integrierte Mengenlehre  >
+		    	<!  • Biordinalzahlen  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:nSOSp:Home:Biordinalzahlen',
-              'Überall vorwärts- und rückwärtszählen in erweiterten Ordinalzahlen', 'Sc_f_Paragraph',
+              '\\name[undertitle]{OM:BiOrd:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
                     )),
                       
-                  array( 'bulletlist', array( bullet_ary => array(
-                        'Erweiterung der Ordinalzahlen um negative Zahlen.',
-                        'Und Erweiterung der ordinalen Limeszahlen um Vorgängerzahlen.',
-                        'Dazu eine Erweiterung der Mengenlehre um Antimengen zur Integrierten Mengenlehre.',
-                    ))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{Eigene Seite in Planung …}'."\n"))),
+                    '\\name[description]{OM:BiOrd:Home}. \\\\'."\n".
+                    'Eine Erweiterung der Mengenlehre um Antimengen zur \\jump{OM:BiOrd:Einleitung:IntegrierteMengenlehre}{integrierten Mengenlehre}.'."\n".
+                    ''))),
 
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Biordinalzahlen'),
+                      array(  jump_name => 'OM:BiOrd:Home'),
                     )),
               )
           ); ?>

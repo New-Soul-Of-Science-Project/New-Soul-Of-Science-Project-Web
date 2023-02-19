@@ -8,4 +8,3 @@
   // #: Zur Sicherheit ein exit-Aufruf, falls Probleme aufgetreten sind.
   exit;
   ?>
-
