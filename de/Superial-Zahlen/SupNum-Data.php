@@ -32,12 +32,12 @@
       url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/index.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/index.php',
       titel => 'Superial-Zahlen (SN) - Deutsch',
-      description => 'Mit Primzahlen ins Unendliche. Der Unendlichkeit eine fundamentale und fraktale Struktur geben.',
+      description => '\\name[undertitle]{OM:SupNum:Home}. — \\name[description]{OM:SupNum:Home}.',
       keywords => '',
       text_titel_h1 => 'Superial-Zahlen \\color{*TitleAdd}{\\small{(SN)}}',
       text_titel_short => 'Superial-Zahlen',
       text_undertitel_h2 => 'Mit Primzahlen ins Unendliche',
-      text_titel_discr_h3 => 'Der Unendlichkeit eine fundamentale und fraktale Struktur geben',
+      text_titel_discr_h3 => 'Der Unendlichkeit eine fundamentale, fraktale Struktur geben – neue Ideen elementarer Mathematik',
       jump_ary => array(
         'OM:SupNum:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
         'OM:SupNum:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
@@ -51,14 +51,14 @@
       keywords => '',
       text_titel_h1 => 'Biordinalzahlen',
       text_titel_short => 'Biordinalzahlen',
-      text_undertitel_h2 => 'Positive und negative Ordinalzahlen',
-      text_titel_discr_h3 => '',
+      text_undertitel_h2 => 'Die Erweiterung der Ordinalzahlen zu einem Ring',
+      text_titel_discr_h3 => 'Negative Ordinalzahlen und Vorgänger aller Limeszahlen\\hidden{ (\\term{ω, 2ω, ⋯ , ω^{2}, ⋯})}',
       jump_ary => array(
         'OM:SupNum:Biordinalzahlen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
           'OM:SupNum:Biordinalzahlen:Vortext:Equ-n-plus-Eins' => array( headline_text => 'SN.Biord.6'),
           'OM:SupNum:Biordinalzahlen:Vortext:FundamentaleAsymmetrie' => array( headline_text => 'Eine fundamentale Asymmetrie'/*, headline_text_short => 'XXX'*/),
-          'OM:SupNum:Biordinalzahlen:Vortext:Equ-Lambda-minus-Beta' => array( headline_text => 'SN.Biord.28'),
+          'OM:SupNum:Biordinalzahlen:Vortext:Equ-Lambda-minus-Beta' => array( headline_text => 'SN.Biord.30'),
           'OM:SupNum:Biordinalzahlen:Vortext:NeueEinsichten' => array( headline_text => 'Neue Einsichten zu positiven aktual unendlichen Zahlen'/*, headline_text_short => 'XXX'*/),
                         
         'OM:SupNum:Biordinalzahlen:IntegrierteMengenlehre' => array( headline_text => 'Integrierte Mengenlehre'/*, headline_text_short => 'XXX'*/),
@@ -145,8 +145,8 @@
       text_undertitel_h2 => 'und Informationen',
       //text_titel_discr_h3 => 'Vereinheitlichte Physik auf Basis eines selbstorganisierten, fraktalen Systems von lichtähnlichen, zu Strings verbundenen Wirkungsquanten.',
       jump_ary => array(
-        ),
       ),
+    ),
     'OM:SupNum:Primzahlprodukt-Vermutung' => array(
       url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Primzahlprodukt-Vermutung.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Primzahlprodukt-Vermutung.php',

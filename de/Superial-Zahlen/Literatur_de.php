@@ -21,6 +21,7 @@
                                           'wiki:Primorial:2015',
                                           'wiki:Primzahl:2021',
                                           'wiki:RiemannscheZetaFunktion:2022',
+                                          'wiki:Ring-Algebra:2023',
                                           'wiki:Unendlichkeitsaxiom:2021',
                                         )); ?>
 
