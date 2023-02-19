@@ -13,12 +13,12 @@
         '<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
       ),
       header_bgcolor => '#FFFFFF',
-      header_pict_name => 'SN/SN_header_v02-01.jpg',
+      header_pict_name => 'OT/OT_header_v01-01-3720x708.jpg',
       header_pict_width => '930px',
       header_pict_height => '177px',
       header_pict_bgcolor => '#FFFFFF',
-      header_pict_alt => 'Operialtheorie, Zählen und dann weiter … ?',
-      header_links_marginLeft => '398px',
+      header_pict_alt => 'Operialtheorie, Zählen und dann weiter …',
+      header_links_marginLeft => '355px',
       copy_right =>
         'Operialtheorie (OT) \\\\'."\n".
         '© 1986–2022 by \\\\'."\n".
@@ -34,12 +34,12 @@
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/index.php',
       pdfArchiveFolder => 'http://www.nsosp.org/download/PDF-Archiv/de/Operialtheorie/index/',
       titel => 'Operialtheorie (OT) – Deutsch',
-      description => 'Zählen und dann weiter … ?',
+      description => 'Zählen und dann weiter …',
       description => '\\name[undertitle]{OM:OT:Home}. — \\name[description]{OM:OT:Home}.',
       keywords => '',
       text_titel_h1 => 'Operialtheorie \\color{*TitleAdd}{\\small{(OT)}}',
       text_titel_short => 'Operialtheorie',
-      text_undertitel_h2 => 'Zählen und dann weiter … ?',
+      text_undertitel_h2 => 'Zählen und dann weiter …',
       text_titel_discr_h3 => 'Das Zählen, Addieren, Multiplizieren und den Exponenten durch Zählen verbinden. Der Zusammenhang zwischen dem Zählen, den Grundrechenarten und deren Erweiterung',
       jump_ary => array(
         'OM:OT:Home:Inhalt' => array( headline_text => 'Inhalt'/* , headline_text_short => 'XXX' */),
