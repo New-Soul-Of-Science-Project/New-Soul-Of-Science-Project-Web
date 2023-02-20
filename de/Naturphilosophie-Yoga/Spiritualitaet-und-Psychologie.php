@@ -105,7 +105,7 @@
                   array( 'text', array( text => array(
                     'Das ist, was ich als spirituell bezeichne.'."\n".
                     '\\jump{OM:NPYo:WasIstYoga}{Das ist Yoga.}'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Spiritualitaet-Psychologie:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Spiritualitaet-Psychologie:Vortext:DialogBewusstseinUnterbewusstsein', text =>
                       
                 'Wenn mein Bewusstsein mit meinem Unterbewusstsein in einen Dialog tritt', subline =>
                   '')),
@@ -138,7 +138,8 @@
                       'Auch in der akademischen Wissenschaft gibt es Dinge, die wir nicht erklären können.'."\n".
                     'Das ist eine Binsenweisheit, sonst hätten wir ja nichts, wofür wir nach Erklärungen suchen.'."\n".
                     'Und wir werden schon Beobachtungen gemacht haben, die wir dann versuchen zu erklären.'."\n".
-                    'Wir können sogar aus dem Gesamtzusammenhang plausible Erklärungen herleiten, die in das Unbekannte hineinreichen (müssen), es aber nicht vollständig erklären.'."\n",
+                    'Wir können sogar aus dem Gesamtzusammenhang plausible Erklärungen herleiten, die in das Unbekannte hineinreichen (müssen), es aber nicht vollständig erklären.'."\n".
+                    'Es gibt sogar eine \\jump{OM:BiOrd:Einleitung:OntologischeDeutung}{Mathematik vom Fokus} und seinem Zusammenhang mit dem Bewusstsein und Unterbewusstsein.'."\n",
                       'So kann ich also die von mir oben geschilderte Erfahrung machen, dass mein Unterbewusstsein in der Lage ist, sich durch mein bewusstes Zulassen,'."\n".
                     'durch meinen Glauben daran, sich um meine Verspannungen zu kümmern und diese selbsttätig durch Zittern zu behandeln;'."\n".
                     'zumindestens bis zu einem gewissen Grad.'."\n".
@@ -148,7 +149,8 @@
                     'Bewusstsein und Unterbewusstsein real ist.'."\n".
                     'Ich kann sagen, dass beides Pole in mir sind, die miteinander im Dialog stehen, und wenn ich daran glaube, dies zulasse und nutze, auf diese Weise wunderbare Dinge vollbringen können.'."\n",
                       'Aber ich kann trotzdem nicht in jedem Detail erklären, wie dies genau funktioniert.'."\n".
-                    'Was aber eben ganz sicher nicht bedeutet, dass es dies nicht gibt oder nicht geben kann, auch aus streng wissenschaftlicher Perspektive.'."\n"))),
+                    'Was aber eben ganz sicher nicht bedeutet, dass es dies nicht gibt oder nicht geben kann, auch aus streng wissenschaftlicher Perspektive.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:NPYo:Spiritualitaet-Psychologie:Vortext:XXX', text =>
                       
                 'Wie kann ich wissen, dass mein Unterbewusstsein weitreichende Selbstheilungskräfte Besitzt?', subline =>

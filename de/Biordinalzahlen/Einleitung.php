@@ -314,7 +314,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Wir können nun zu Aussagen kommen, die etwas über die Größe von \\term{ω} verraten.'."\n".
-                    'Ziehen wir eine beliebige endliche natürliche Zahl \\term{n} von \\term{ω} ab, ergibt sich niemals eine Zahl, die zur Menge'."\n".
+                    'Subtrahieren wir eine beliebige endliche natürliche Zahl \\term{n} von \\term{ω}, ergibt sich niemals eine Zahl, die zur Menge'."\n".
                     'der endlichen natürlichen Zahlen gehört:'."\n".
                     ''))),
                   array( 'equations',
@@ -622,8 +622,25 @@
                   array( 'text', array( text => array(
                     'Durch die Auswahl oder das Weglassen von Dingen aus allen Möglichkeiten entsteht eine Polarität,'."\n".
                     'die etwas zur stabilen Existenz bringt.'."\n".
-                    'Es ist ein Symmetriebruch, der die neutrale Harmonie zerstört, der zu „Kräften“ führt,'."\n".
-                    'ganz wie in der Physik, und die so erschaffenen Dinge in Prozessen begreifbar, greifbar und handhabbar macht.'."\n".
+                    'Es ist ein \\jump{OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen:WWSymBruch}{Symmetriebruch}, der die neutrale Harmonie stört, der zu „Kräften“ führt,'."\n".
+                    'ganz wie in der \\jump{OM:FrQFT:Home}{Physik}, und die so erschaffenen Dinge in Prozessen begreifbar, greifbar und handhabbar macht.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:XXX', text =>
+                      
+                'Unsere Existenz durch eine stabile und sich entwickelnde Psychosomatik', subline =>
+                  'Wir sind in einen Dialog zwischen unserem Bewusstsein und unserem Unterbewusstsein verwickelt')),
+                  array( 'text', array( text => array(
+                    'Unsere Überlegungen haben durchaus eine tiefe Verbindung zu unserem Leben.'."\n".
+                    'Auch, wenn es einem als Mensch der heutigen „modernen“ Zeit erstaunlich erscheinen kann, dass wir aus dieser'."\n".
+                    'bedeutenden mathematisch-naturphilosophischen Sicht an die Wurzeln des Lebens gelangen.'."\n",
+                      'Denn aus meinem Verständnis heraus basiert unser Leben, unsere Psyche und Psychosomatik,'."\n".
+                    'auch auf unserem \\jump{OM:NPYo:Spiritualitaet-Psychologie:Vortext:DialogBewusstseinUnterbewusstsein}{inneren Dialog zwischen Bewusstsein und Unterbewusstsein}.'."\n".
+                    'Dieser Dialog ist unter anderem durch unseren Fokus bestimmt und dadurch ob gerade unser Bewusstsein, im Wachzustand,'."\n".
+                    'oder unser Unterbewusstsein, im Schlaf, im Vordergrund ist.'."\n",
+                      'Durch die vorangegangenen Überlegungen lernen wir mehr darüber, wie unser Fokus funktioniert'."\n".
+                    'und welche Aspekte und Ebenen er hat.'."\n".
+                    'Und darüber, wie unser Fokus mit Antimengen und negativen Zahlen verbunden ist, lernen wir unser'."\n".
+                    'Bewusstsein und Unterbewusstsein besser zu verstehen.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(

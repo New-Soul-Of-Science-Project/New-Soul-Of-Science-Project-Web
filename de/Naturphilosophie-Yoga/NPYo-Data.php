@@ -80,11 +80,12 @@
       text_titel_h1 => 'Spiritualität und Psychologie',
       text_titel_short => 'Spiritualität und Psychologie',
       text_undertitel_h2 => 'Was haben Spiritualität und Psychologie miteinander zu tun?',
-      text_titel_discr_h3 => 'Unser innerer Dialog, unser Selbstmitgefühl, unsere Selbstheilung',
+      text_titel_discr_h3 => 'Unsere inneren Dialoge, unser Selbstmitgefühl, unsere Selbstheilung – die Kommunikation zwischen unserem Bewusstsein und Unterbewusstsein',
       jump_ary => array(
         'OM:NPYo:Spiritualitaet-Psychologie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
           'OM:NPYo:Spiritualitaet-Psychologie:Vortext:BinIchSpirituell' => array( headline_text => 'Bin ich spirituell? Glaube und vertraue ich?', headline_text_short => 'Bin ich spirituell?'),
+          'OM:NPYo:Spiritualitaet-Psychologie:Vortext:DialogBewusstseinUnterbewusstsein' => array( headline_text => 'Wenn mein Bewusstsein mit meinem Unterbewusstsein in einen Dialog tritt', headline_text_short => 'Mein Dialog zwischen Bewusstsein und Unterbewusstsein'),
                    
         'OM:NPYo:Spiritualitaet-Psychologie:Wissen-Unwissen' => array( headline_text => 'Wissen und Unwissen'/*, headline_text_short => 'XXX'*/),
       ),
