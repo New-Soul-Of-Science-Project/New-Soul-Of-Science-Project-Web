@@ -8,8 +8,6 @@
       url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/',
       url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/',
       favicons_url_rel_opt => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/favicon/',
-      //header_pict_name => 'Organical-Matters_Logo_De.jpg',
-      //header_pict_alt => 'Organical Matters Website, Ideen neuer Wissenschaft',
       name_short => 'NaPhil-Yoga',
       font_ary => array(
         '<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
