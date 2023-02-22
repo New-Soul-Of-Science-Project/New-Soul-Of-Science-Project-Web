@@ -332,7 +332,7 @@
                       'So kann sich unsere Achtsamkeit entwickeln und zur Klugheit führen.'."\n".
                     'Darum hab ich diesen grundlegenden Regelprozess unseres Lebens Achtsamkeitsprozess genannt.'."\n".
                     'Was noch alles zur Klugheit gehört, dazu komme ich jetzt.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:Perspektiven', text =>
                       
                 'Das kluge Spiel mit unseren Perspektiven', subline =>
                   '')),
@@ -555,14 +555,14 @@
                     'Eine solche Imbalance kann in einer \\jump{OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung}{Gesichtsspiegelung} sichtbar gemacht werden.'."\n"))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent',
-                    Title => 'Detailierter …', TitleVis => 'Detailierter:', ParagraphList => array(
+                    Title => 'Detaillierter …', TitleVis => 'Detaillierter:', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Übermäßiger negativer Stress und Angst oder gar Not und Hilflosigkeit zeigen sich in unserer Psyche und so, nach den aufgezeigten Zusammenhängen, auch in unserem Körper.'."\n".
                     'Auf Dauer, wenn sie chronisch sind, zeichnen sie uns.'."\n",
-                      'Unsere Psyche verpannt sich und gerät in Unruhe und chronische Kreisgedanken.'."\n".
-                    'In unserrem Körper verpannen sich unsere Muskeln und Faszien auf Dauer chronisch.'."\n".
+                      'Unsere Psyche verspannt sich und gerät in Unruhe und chronische Kreisgedanken.'."\n".
+                    'In unserem Körper verspannen sich unsere Muskeln und Faszien auf Dauer chronisch.'."\n".
                     'Beides erscheint mir im chronischen Zustand entzündlichen Prozessen ähnlich.'."\n",
-                      'Das Immunsystem ist Teils hyperaktiv und neigt zu autoimmunreaktionen.'."\n".
+                      'Das Immunsystem ist Teils hyperaktiv und neigt zu Autoimmunreaktionen.'."\n".
                     'Andererseits funktioniert es oft an anderer Stelle nicht gut, zum Beispiel gegenüber Erkältungen und anderen Infektionen.'."\n".
                     'Es gerät aus der Balance.'."\n",
                       'Dabei kommunizieren wir meist erstaunlich genau nach außen, wie es uns geht, unsere Stimmung:'."\n"))),
@@ -649,7 +649,7 @@
 //                    'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Psychosomatik:Betaeubt-Gelaehmt'),
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik:Stolze-Brust'),
                     )),
                 )
           ); ?>
@@ -657,14 +657,121 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
+		    	<! Stolze Brust >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SpaLeb:Psychosomatik:Stolze-Brust',
+              'Die Bedeutung unserer geschwelten Brust und unserer Brustwarzen', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\\bold{XXX:}',
+                    // '• XXX',
+                    ))),
+                      
+                   array( 'text', array( text => array(
+                    'Eine Sache, für die ich etwas länger gebraucht habe, sie besser zu verstehen, ist,'."\n".
+                    'unsere Stolz geschwelte Brust und welche Rolle unsere Brustwarzen, unsere Nippel, dabei spielen:'."\n",
+                      'Ich argumentiere oben für den \\jump{OM:SpaLeb:Psychosomatik:Vortext:Achtsamkeitsgradient}{aufrechten Gang}'."\n".
+                    'des Menschen einen wichtigen Grund, nämlich, dass wir'."\n".
+                    '\\jump{OM:SpaLeb:Psychosomatik:Vortext:GutFunktionierendemAchtsamkeitsprozess}{unsere sensible Seite nach vorne in die Welt richten}'."\n".
+                    'und auf diese Weise natürlich auch durch unsere frei werdenden Hände'."\n".
+                    'vielfältig und sensibel ins Fühlen und in die intentionale Handlung kommen,'."\n".
+                    '\\jump{OM:SpaLeb:Psychosomatik:Vortext:Care}{in die Fürsorge und in das Uns-Kümmern}.'."\n",
+                      'Wir gehen so selbstsicher und mit stolzer Brust durch die Welt.'."\n".
+                    'Wobei unsere sensible Seite und damit letztlich auch unsere selbstbewusste Körperhaltung, für mich'."\n".
+                    'unterschätzter Weise, wesentlich durch unser Bewusstsein unserer sensiblen Nippel bestimmt wird.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Stolze-Brust:XXX', text =>
+                      
+                'Die persönliche und gesellschaftliche Rolle unserer Brust', subline =>
+                  '… und unser Bewusstsein darüber, welche Rolle sie wirklich spielt')),
+                   array( 'text', array( text => array(
+                    'Aufgrund der ganz existenziellen Rolle der weiblichen Brust und ihrer Brustwarzen beim Säugen unserer Kinder,'."\n".
+                    'nimmt die weibliche Brust und die weiblichen Brustwarzen in unserem Leben und unserer Kultur heute immer noch'."\n".
+                    'eine ganz besondere Rolle ein.'."\n".
+                    'Das Säugen ist so das Urbild der Mutter, ihrer Fürsorge und der Geborgenheit, die sie spendet.'."\n",
+                    ''))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent',
+                    Title => 'Männer, die ihre Brust geben …', TitleVis => 'Männer, die ihre Brust geben:', ParagraphList => array(
+                  array( 'text', array( text => array(
+                    'Ich möchte dabei nicht unerwähnt lassen, dass auch in sehr sehr seltenen Fällen Männer Laktation haben,'."\n".
+                    'also Milch geben, die dann von der Menge her in der Regel nicht zur Versorgung der Kinder reicht.'."\n".
+                    'Wobei sich dieser theoretischen Möglichkeit auch die allerwenigsten Männer – und Frauen – bewusst sind und'."\n".
+                    'sich darauf einlassen, oder einlassen würden, dies überhaupt in Erwägung zu ziehen.'."\n".
+                    'So gut wie kein Mann stellt sich also schon während der Schwangerschaft seiner Partnerin Mental'."\n".
+                    'darauf ein, selber zu stillen, und setzt dann das Anlegen seines Kindes an seine Brust in die Tat um.'."\n",
+                      'Aber es gibt diese Männer und es ist interessant zu überlegen, wie dies seine Bindung an sein Kind'."\n".
+                    'und die Bindung des Kindes an ihn verändert.'."\n".
+                    'Ebenso wird es ja mit Sicherheit seine Frau entlasten und so eine Veränderung und hoffentlich auch'."\n".
+                    'eine Verbesserung ihrer Lebenssituation und ihrer gemeinsamen Beziehung bedeuten können.'."\n",
+                      'Ich habe in Chats hierzu aber auch gelesen, dass etliche Frauen dies ablehnen, weil nach deren Meinung'."\n".
+                    'das Stillen ihre originäre Aufgabe ist, dieses Verhalten des Mannes ihnen sogar etwas nimmt.'."\n".
+                    'Andere Frauen begrüßen eine solche Idee natürlich auch, eben, weil es sie entlasten könnte.'."\n",
+                      'Ich habe es hier unter anderem erwähnt, um uns bewusst zu machen, dass wir nicht genau wissen,'."\n".
+                    'was wirklich möglich wäre, wenn sich eine Kultur entwickelte, die das Anlagen der Kinder auch an'."\n".
+                    'Männerbrüste, konsequent von Beginn an leben würde; sprich, wozu der Mensch oder hier die Natur des Mannes'."\n".
+                    'wirklich fähig wäre, wenn auch nur partiell.'."\n".
+                    ''))),
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Ich bin sicher und erlebe, dass Frauen sich ihrer sensiblen Seite, die sie in die Welt richten, eher bewusst sind,'."\n".
+                    'weil sie sich eher der Rolle ihrer Brüste und ihrer sensiblen Nippel bewusster sind, als das bei Männern der Fall ist.'."\n",
+                      'Aber für viele schwule oder bisexuelle Männer spielen ihre eigenen Brustwarzen in der Sexualität eine'."\n".
+                    'große Rolle, so, wie das auch bei Frauen der Fall ist.'."\n".
+                    'Nach meinem Eindruck ist dies bei heterosexuellen Männern viel seltener der Fall.'."\n".
+                    'Und auch Frauen integrieren die männlichen Nippel oft nicht in ihr gemeinsames sexuelles Spiel.'."\n",
+                      'Ich vernehme mittlerweile allerdings etliche Hinweise darauf, dass sich das beginnt zu ändert,'."\n".
+                    'vermutlich, weil sich die sexuelle Freiheit auf unterschiedliche Weise immer mehr Wege bahnt'."\n".
+                    'und weil Männer ihr Selbstbild ändern und sich mehr zugestehen, ihre weiche und somit'."\n".
+                    '„weibliche“ Seite zu erkennen, zuzulassen und auszuleben.'."\n",
+                      'Die Sensibilität meiner Brust und meiner Nippel wurde mir selber erst im Laufe meines Lebens zugänglich und'."\n".
+                    'ich begann mich dafür zu interessieren, was das besondere an unseren Brustwarzen ist;'."\n".
+                    'eben an beiden, an weiblichen und an männlichen.'."\n",
+                      'Im öffentlichen Leben spielt die männliche Brust eher eine martialische Rolle, indem sie für'."\n".
+                    'Kraft oder Tatkraft steht.'."\n".
+                    'Ich würde wagen zu sagen, die sensible Rolle der männlichen Brust, Brustwarzen und Nippel,'."\n".
+                    'existiert im Öffentlichen einfach gar nicht.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Stolze-Brust:XXX', text =>
+                      
+                'Die psychosomatische Bedeutung unseres Bewusstsein über unsere sensible Brust', subline =>
+                  '')),
+                   array( 'text', array( text => array(
+                    'Meine These ist, dass unser Bewusstsein über unsere sensible Brust, und besonders'."\n".
+                    'über unsere sensiblen Brustwarten, einen starken Einfluss auf unsere Körperhaltung und'."\n".
+                    'schließlich auch auf unsere gesamte Gesundheit haben kann.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik:Betaeubt-Gelaehmt'),
+                    )),
+              )
+          ); ?>
+
+
 		    	<! Betäubt und Gelähmt >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Psychosomatik:Betaeubt-Gelaehmt',
               'Psychosomatische Probleme', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Psychosomatik', type => 'back'),
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik:Stolze-Brust', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(

@@ -84,6 +84,7 @@
           'OM:SpaLeb:Psychosomatik:Vortext:Fig-Hermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SpaLeb:Psychosomatik:Vortext:Fig-Gefuehls-Handlungspol-Waage' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SpaLeb:Psychosomatik:Vortext:Perspektiven' => array( headline_text => 'Das kluge Spiel mit unseren Perspektiven'/*, headline_text_short => ''*/),
+          'OM:SpaLeb:Psychosomatik:Vortext:GutFunktionierendemAchtsamkeitsprozess' => array( headline_text => 'Die Psychosomatik bei gut funktionierendem Achtsamkeitsprozess'/*, headline_text_short => ''*/),
                    
         'OM:SpaLeb:Psychosomatik:Stolze-Brust' => array( headline_text => 'Stolze Brust'/*, headline_text_short => ''*/),
                    
