@@ -738,63 +738,69 @@
   const jump_name = 'jump_name';
 
   $Glo_g_Theme_list = array(
-                             // #: FrQFT
-                             '*Alterung-Herlei'                      => array( jump_name => 'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:Exist'),
-                             '*Alterung-Implem'                      => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Alterung'),
-                             '*Anzahlerhaltung-Implem'               => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:ErhaltBruech'),
-                             '*BeobNotation-Einfuehr'                => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:Nota'),
-                             '*Bewegungsraum-Herlei'                 => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:BewegRaum'),
-                             '*Elapsonen-Herlei'                     => array( jump_name => 'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:Ausblick'),
-                             '*Elapsonen-Vakuum-Herlei'              => array( jump_name => 'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten:WQS-VE'),
-                             '*Elektromagnetische-Polar-Herlei'      => array( jump_name => 'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation'),
-                             '*Elementarteilchen-Materie-Herlei'     => array( jump_name => 'OM:FrQFT:NeuePhysik:Elementarteilchen-der-Materie'),
-                             '*Elementarteilchen-String-Anzahlerhaltung-Einfuehr' => array( jump_name => '*Wirkungsquanten-String-Anzahlerhaltung-Einfuehr'),
-                             '*Energieeinheiten-Masse-Impuls-Herlei' => array( jump_name => 'OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation:EE'),
-                             '*Energieerhaltung-Einfuehr'            => array( jump_name => '*Wirkungsquanten-Anzahlerhaltung-Einfuehr'),
-                             '*Energieerhaltung-Implem'              => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:ErhaltBruech'),
-                             '*Energieerhaltung-Verallgem-Einfuehr'  => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:VerSchwLoeKos'),
-                             '*Energieerhaltung-Verallgem-Implem'    => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:ErhaltBruech'),
-                             '*Farbpolarisation-Herlei'              => array( jump_name => 'OM:FrQFT:NeuePhysik:Symmetriebrechung:FarbPol'),
-                             '*FrQFT:Feinstruk-Photon-Einf'          => array( jump_name => 'OM:FrQFT:NeuePhysik:Loesungsansatz:HelixfSpiralb'),
-                             '*Fraktales-Existenzprinzip-Herlei'     => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:FrakExistUFrakStr'),
-                             '*FrQFT:Fundamentalteilchen-Herlei'     => array( jump_name => 'OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen:WWSymBruch'),
-                             '*Graviradiation-Einfuehr'              => array( jump_name => 'OM:FrQFT:Quantengravitation:Vortext:Graviradiation'),
-                             '*Heisenb-Unschaerferelat-Interpret-Herlei' => array( jump_name => 'OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation'),
-                             '*Helixfoermige-Spiralbahn-LoesAnsatz'  => array( jump_name => 'OM:FrQFT:NeuePhysik:Loesungsansatz:HelixfSpiralb'),
-                             '*Kosmos-Herlei'                        => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:VerSchwLoeKos'),
-                             '*KosmBeob-Herlei'                      => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:KosBeob'),
-                             '*Licht-Mat-Medium-Einfuer'             => array( jump_name => 'OM:FrQFT:NeuePhysik:Relativitaet:SRT'),
-                             '*FrQFT:Lichtuhr-Philosophie-Einfuer'   => array( jump_name => 'OM:FrQFT:NeuePhysik:Philosophie-der-Lichtuhr'),
-                             '*Lichtuhr-Prinzip-Einfuer'             => array( jump_name => 'OM:FrQFT:NeuePhysik:Philosophie-der-Lichtuhr:PrinzLichtuhr'),
-                             '*LG-erhoete-LoesAnsatz'                => array( jump_name => 'OM:FrQFT:NeuePhysik:Loesungsansatz:NeuLGDrilling'),
-                             '*LG-Rotation-LoesAnsatz'               => array( jump_name => 'OM:FrQFT:NeuePhysik:Loesungsansatz:NeuLGDrilling'),
-                             '*LG-Translat-LoesAnsatz'               => array( jump_name => 'OM:FrQFT:NeuePhysik:Loesungsansatz:NeuLGDrilling'),
-                             '*Mikro-Wirkungsquanten-Herlei'         => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:FrakExistUFrakStr'),
-                             '*Mikro-Wirkungsquanten-Strings-Herlei' => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:FrakExistUFrakStr'),
-                             '*Photonen-Herlei'                      => array( jump_name => 'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation:Photonen'),
-                             '*Realt-Wq-Ep-Dichteverteilung-Analy'   => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Dichtestruktur'),
-                             '*Schwarze-Loech-Herlei'                => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:VerSchwLoeKos'),
-                             '*Schwarze-Loech-Zusamm'                => array( jump_name => 'OM:FrQFT:Zusammenfassung:Urknall-und-Schwarze-Loecher'),
-                             '*FrQFT:Teilchen-Modell-RelatPrinz'     => array( jump_name => 'OM:FrQFT:NeuePhysik:Philosophie-der-Lichtuhr:TeilModRelatPrinzip'),
-                             '*Uebergangshorizont-Herlei'            => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Dichtestruktur:RelatWQSundEBDicht'),
-                             '*Universum-fraktales-Herlei'           => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum'),
-                             '*Urknall-Herlei'                       => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:VerSchwLoeKos'),
-                             '*Urknall-Zusamm'                       => array( jump_name => 'OM:FrQFT:Zusammenfassung:Urknall-und-Schwarze-Loecher'),
-                             '*FrQFT:Vakuum-Energ-Dichte-Herlei'     => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Dichtestruktur:RelatVakEnergDichte'),
-                             '*Wirkungsquanten-GeschwKonst-Einfuehr' => array( jump_name => 'OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation:EE'),
-                             '*Wirkungsquanten-Herlei'               => array( jump_name => 'OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation:WQ'),
-                             '*Wirkungsquanten-Anzahlerhaltung-Einfuehr' => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:VerSchwLoeKos'),
-                             '*Wirkungsquanten-Strings-Herlei'       => array( jump_name => 'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten:WQS-VE'),
-                             '*Wirkungsquanten-String-Anzahlerhaltung-Einfuehr' => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:VerSchwLoeKos'),
-                             '*Wirkungsquanten-virtuelle-Einfuehr'   => array( jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:VereinfString'),
-                             '*Wirkungsquanten-Impulskegel-Herlei' => array( jump_name => 'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten:WQ-WW'),
-                            
-                             // #: SpaLeb
-                             '*SpaLeb:Achtsamkeitsprozess-Implem'    => array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess'),
-                             '*SpaLeb:Disharmonieprinzip'            => array( jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz:OrganischesExistenzprinzip:DisharmPrinz'),
-                             '*SpaLeb:Selbstschutz'                  => array( jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Selbstmitgefuehl'),
-                             '*SpaLeb:Spannungsprinzip'              => array( jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz:OrganischesExistenzprinzip:SpanPrinz'),
-                           );
+    // #: FrQFT
+    '*Alterung-Herlei'                      => array( jump_name => 'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:Exist'),
+    '*Alterung-Implem'                      => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Alterung'),
+    '*Anzahlerhaltung-Implem'               => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:ErhaltBruech'),
+    '*BeobNotation-Einfuehr'                => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:Nota'),
+    '*Bewegungsraum-Herlei'                 => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:BewegRaum'),
+    '*Elapsonen-Herlei'                     => array( jump_name => 'OM:FrQFT:NeuePhysik:Raum-Zeit-und-Existenzprinzip:Ausblick'),
+    '*Elapsonen-Vakuum-Herlei'              => array( jump_name => 'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten:WQS-VE'),
+    '*Elektromagnetische-Polar-Herlei'      => array( jump_name => 'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation'),
+    '*Elementarteilchen-Materie-Herlei'     => array( jump_name => 'OM:FrQFT:NeuePhysik:Elementarteilchen-der-Materie'),
+    '*Elementarteilchen-String-Anzahlerhaltung-Einfuehr' => array( jump_name => '*Wirkungsquanten-String-Anzahlerhaltung-Einfuehr'),
+    '*Energieeinheiten-Masse-Impuls-Herlei' => array( jump_name => 'OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation:EE'),
+    '*Energieerhaltung-Einfuehr'            => array( jump_name => '*Wirkungsquanten-Anzahlerhaltung-Einfuehr'),
+    '*Energieerhaltung-Implem'              => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:ErhaltBruech'),
+    '*Energieerhaltung-Verallgem-Einfuehr'  => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:VerSchwLoeKos'),
+    '*Energieerhaltung-Verallgem-Implem'    => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:ErhaltBruech'),
+    '*Farbpolarisation-Herlei'              => array( jump_name => 'OM:FrQFT:NeuePhysik:Symmetriebrechung:FarbPol'),
+    '*FrQFT:Feinstruk-Photon-Einf'          => array( jump_name => 'OM:FrQFT:NeuePhysik:Loesungsansatz:HelixfSpiralb'),
+    '*Fraktales-Existenzprinzip-Herlei'     => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:FrakExistUFrakStr'),
+    '*FrQFT:Fundamentalteilchen-Herlei'     => array( jump_name => 'OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen:WWSymBruch'),
+    '*Graviradiation-Einfuehr'              => array( jump_name => 'OM:FrQFT:Quantengravitation:Vortext:Graviradiation'),
+    '*Heisenb-Unschaerferelat-Interpret-Herlei' => array( jump_name => 'OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation'),
+    '*Helixfoermige-Spiralbahn-LoesAnsatz'  => array( jump_name => 'OM:FrQFT:NeuePhysik:Loesungsansatz:HelixfSpiralb'),
+    '*Kosmos-Herlei'                        => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:VerSchwLoeKos'),
+    '*KosmBeob-Herlei'                      => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:KosBeob'),
+    '*Licht-Mat-Medium-Einfuer'             => array( jump_name => 'OM:FrQFT:NeuePhysik:Relativitaet:SRT'),
+    '*FrQFT:Lichtuhr-Philosophie-Einfuer'   => array( jump_name => 'OM:FrQFT:NeuePhysik:Philosophie-der-Lichtuhr'),
+    '*Lichtuhr-Prinzip-Einfuer'             => array( jump_name => 'OM:FrQFT:NeuePhysik:Philosophie-der-Lichtuhr:PrinzLichtuhr'),
+    '*LG-erhoete-LoesAnsatz'                => array( jump_name => 'OM:FrQFT:NeuePhysik:Loesungsansatz:NeuLGDrilling'),
+    '*LG-Rotation-LoesAnsatz'               => array( jump_name => 'OM:FrQFT:NeuePhysik:Loesungsansatz:NeuLGDrilling'),
+    '*LG-Translat-LoesAnsatz'               => array( jump_name => 'OM:FrQFT:NeuePhysik:Loesungsansatz:NeuLGDrilling'),
+    '*Mikro-Wirkungsquanten-Herlei'         => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:FrakExistUFrakStr'),
+    '*Mikro-Wirkungsquanten-Strings-Herlei' => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:FrakExistUFrakStr'),
+    '*Photonen-Herlei'                      => array( jump_name => 'OM:FrQFT:NeuePhysik:Elektromagnetische-Polarisation:Photonen'),
+    '*Realt-Wq-Ep-Dichteverteilung-Analy'   => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Dichtestruktur'),
+    '*Schwarze-Loech-Herlei'                => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:VerSchwLoeKos'),
+    '*Schwarze-Loech-Zusamm'                => array( jump_name => 'OM:FrQFT:Zusammenfassung:Urknall-und-Schwarze-Loecher'),
+    '*FrQFT:Teilchen-Modell-RelatPrinz'     => array( jump_name => 'OM:FrQFT:NeuePhysik:Philosophie-der-Lichtuhr:TeilModRelatPrinzip'),
+    '*Uebergangshorizont-Herlei'            => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Dichtestruktur:RelatWQSundEBDicht'),
+    '*Universum-fraktales-Herlei'           => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum'),
+    '*Urknall-Herlei'                       => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:VerSchwLoeKos'),
+    '*Urknall-Zusamm'                       => array( jump_name => 'OM:FrQFT:Zusammenfassung:Urknall-und-Schwarze-Loecher'),
+    '*FrQFT:Vakuum-Energ-Dichte-Herlei'     => array( jump_name => 'OM:FrQFT:ZeitAlterungFrequenz:Dichtestruktur:RelatVakEnergDichte'),
+    '*Wirkungsquanten-GeschwKonst-Einfuehr' => array( jump_name => 'OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation:EE'),
+    '*Wirkungsquanten-Herlei'               => array( jump_name => 'OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation:WQ'),
+    '*Wirkungsquanten-Anzahlerhaltung-Einfuehr' => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:VerSchwLoeKos'),
+    '*Wirkungsquanten-Strings-Herlei'       => array( jump_name => 'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten:WQS-VE'),
+    '*Wirkungsquanten-String-Anzahlerhaltung-Einfuehr' => array( jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum:VerSchwLoeKos'),
+    '*Wirkungsquanten-virtuelle-Einfuehr'   => array( jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:VereinfString'),
+    '*Wirkungsquanten-Impulskegel-Herlei' => array( jump_name => 'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten:WQ-WW'),
+
+    // #: SpaLeb
+    '*SpaLeb:Achtsamkeitsprozess-Implem'    => array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess'),
+    '*SpaLeb:Disharmonieprinzip'            => array( jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz:OrganischesExistenzprinzip:DisharmPrinz'),
+    '*SpaLeb:Selbstschutz'                  => array( jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Selbstmitgefuehl'),
+    '*SpaLeb:Spannungsprinzip'              => array( jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz:OrganischesExistenzprinzip:SpanPrinz'),
+  );
+  
+  $Glo_g_Redirect_list = array(
+    // #: SpaLeb
+    'OM:SpaLeb:Achtsamkeitsprozess'         => array( jump_name => 'OM:SpaLeb:Care-Prozess'),
+    'OM:SpaLeb:Achtsamkeitsprozess:'        => array( jump_name => 'OM:SpaLeb:Care-Prozess:'),
+  );
   
   
   
@@ -2286,34 +2292,6 @@
   // 'OM:OT:' is in separate file in theme folder and included here.
 
   // 'OM:SpaLeb:' parts are in separate file in theme folder and included here.
-  'OM:SpaLeb:Achtsamkeitsprozess' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Achtsamkeitsprozess-Definition-des-Lebens.php',
-           url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Achtsamkeitsprozess-Definition-des-Lebens.php',
-           titel => 'Der Achtsamkeitsprozess (Definition des Lebens) - Spannungsspiel des Lebens - Deutsch',
-           description => 'Zentraler Regelprozess der Lebewesen. Er organisiert unser Gedeihen, unsere Gesundheit, unsere Balance zwischen Stabilität und Entwicklung – lebenslanges Leben lernen, uns selber erforschen und kennenlernen.',
-           keywords => '',
-           text_titel_h1 => 'Der Achtsamkeitsprozess \\\\ \\color{*TitleAdd}{\\small{(Definition des Lebens)}}',
-           text_titel_short => 'Achtsamkeitsprozess',
-           text_undertitel_h2 => 'Zentraler Regelprozess der Lebewesen',
-           text_titel_discr_h3 => 'Er organisiert unser Gedeihen, unsere Gesundheit, unsere Balance zwischen Stabilität und Entwicklung – lebenslanges Leben lernen, uns selber erforschen und kennenlernen\\hidden{, denn ein gutes Leben ist kein Zufall}',
-           jump_ary => array(
-                  'OM:SpaLeb:Achtsamkeitsprozess:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-                             
-                    'OM:SpaLeb:Achtsamkeitsprozess:Vortext:Fig-Achtsamkeitsprozess' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:SpaLeb:Achtsamkeitsprozess:Vortext:Fig-AchtsamkeitsprozessBewWiss' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:SpaLeb:Achtsamkeitsprozess:Vortext:Klaerung' => array( headline_text => 'Klärungen durch den Achtsamkeitsprozess', headline_text_short => 'Klärungen durch den Achtsamkeitsprozess'),
-                             
-                  'OM:SpaLeb:Achtsamkeitsprozess:Achtsamkeit' => array( headline_text => 'Achtsamkeit', headline_text_short => 'Achtsamkeit'),
-                  'OM:SpaLeb:Achtsamkeitsprozess:NaehereBetracht' => array( headline_text => 'Nähere Betrachtung', headline_text_short => 'Nähere Betrachtung'),
-                  'OM:SpaLeb:Achtsamkeitsprozess:BeobachtHinweise' => array( headline_text => 'Beobachtbare Hinweise', headline_text_short => 'Beobachtbare Hinweise'),
-                  'OM:SpaLeb:Achtsamkeitsprozess:ErweiSicht' => array( headline_text => 'Erweiterte Sicht', headline_text_short => 'Erweiterte Sicht'),
-                  'OM:SpaLeb:Achtsamkeitsprozess:PhysAchtsa' => array( headline_text => 'Die Physik der Achtsamkeit\\hidden{Titelidee von Olli}', headline_text_short => 'Die Physik der Achtsamkeit'),
-                  'OM:SpaLeb:Achtsamkeitsprozess:AchtsamkeitsprozesGrundlLeben' => array( headline_text => 'Zentraler Regelprozess des Lebens', headline_text_short => 'Zentraler Regelprozess des Lebens'),
-                  'OM:SpaLeb:Achtsamkeitsprozess:NeueAnthropologie' => array( headline_text => 'Neue Anthropologie'/*, headline_text_short => ''*/),
-                  'OM:SpaLeb:Achtsamkeitsprozess:KIundRobotik' => array( headline_text => 'Künstliche Intelligenz und Robotik', headline_text_short => 'Künstliche Intelligenz und Robotik'),
-                  'OM:SpaLeb:Achtsamkeitsprozess:MystischeBedeutung' => array( headline_text => 'Mystische Bedeutung'/*, headline_text_short => 'XXX'*/),
-                ),
-         ),
   'OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet' =>
     array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Atmung-Bauch-Zwerchfell-Koerperstabilitaet-Bewegungsstabilitaet_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Atmung-Bauch-Zwerchfell-Koerperstabilitaet-Bewegungsstabilitaet_de.php',
@@ -3266,7 +3244,9 @@
     echo ''."\n";
     // #: Next two meta tags  and title see: https://wiki.selfhtml.org/wiki/HTML/Dokumentstruktur_und_Aufbau
     echo '    <meta charset="utf-8" />'."\n";  // #?: doppled to 'content="text/html; charset=UTF-8"', see below?
-    echo '    <meta name="viewport" content="width=device-width, initial-scale=1.0" />'."\n";
+    //%! echo '    <meta name="viewport" content="width=device-width, initial-scale=1.0" />'."\n";
+    // #!: 'content="width=device-width"' is not working correctly on Safari iOS, see https://stackoverflow.com/a/37136777
+    echo '    <meta name="viewport" content="initial-scale=1.0" />'."\n";
     echo ''."\n";
     echo '    <title>'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][titel])).'</title>'."\n";
     echo ''."\n";
