@@ -2,7 +2,7 @@
         include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
 
 
-<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:SpaLeb:Achtsamkeitsprozess'); ?>
+<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:SpaLeb:Care-Prozess'); ?>
 
 
       <?php FrQFT_f_Div_Header( '      '); ?>
@@ -46,28 +46,28 @@
                     ))),
                       
                   array( 'figure',
-                    array_merge( $SpaLeb_g_figure_ary_Achtsamkeitsprozess, array( name => 'OM:SpaLeb:Achtsamkeitsprozess:Vortext:Fig-Achtsamkeitsprozess'))),
+                    array_merge( $SpaLeb_g_figure_ary_Achtsamkeitsprozess, array( name => 'OM:SpaLeb:Care-Prozess:Vortext:Fig-Achtsamkeitsprozess'))),
                       
                   array( 'text', array( text => array(
-                    'Der von mir entdeckte und nachfolgend definierte \\italic{Achtsamkeitsprozess} ist in meinen Augen die Basis unseres Lebens.'."\n".
-                    'Er verknüpft und koordiniert alle unsere biologischen Regelprozesse und ermöglicht uns so die Erlangung von Wohlgefühl und mehr Wohlbefinden.'."\n".
+                    'Der von mir entdeckte und nachfolgend definierte \\italic{Care-Prozess} und sein \\italic{Achtsamkeitsprozess} sind in meinen Augen die Basis unseres Lebens.'."\n".
+                    'Der Care-Prozess verknüpft und koordiniert alle unsere biologischen Regelprozesse und ermöglicht uns so die Erlangung von Wohlgefühl und mehr Wohlbefinden.'."\n".
                     'Er organisiert unsere stabile Existenz, unser Leben und Überleben.'."\n".
                     'Um ihn dreht sich unser Leben, im wahrsten Sinne des Wortes:'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                      'Unser Achtsamkeitsprozess ist vereinfacht gesprochen der Zirkel aus unserer Lebenssituation, unseren Gefühlen zu ihr, unseren Antrieben durch diese und unseren sich aus ihnen'."\n".
-                      'ergebenden Handlungen, die dann in unsere neue Lebenssituation münden.'."\n"))),
+                      'Unser Care-Prozess ist vereinfacht gesprochen der Zirkel aus unserer Lebenssituation, unseren Gefühlen zu ihr, unseren Antrieben durch diese und unseren sich aus ihnen'."\n".
+                      'ergebenden intentionalen Handlungen, die dann in unsere neue Lebenssituation münden.'."\n"))),
                                                                           
                   array( 'text', array( text => array(
-                    'Dann beginnt der Zirkel dieses Prozesses von Neuem (siehe \\jumpname{OM:SpaLeb:Achtsamkeitsprozess:Vortext:Fig-Achtsamkeitsprozess}).'."\n",
+                    'Dann beginnt der Zirkel dieses Prozesses von Neuem (siehe \\jumpname{OM:SpaLeb:Care-Prozess:Vortext:Fig-Achtsamkeitsprozess}).'."\n",
                       'Ich sorge für mich:'."\n".
                     'Ich habe zum Beispiel Hunger, also besorge ich mir etwas zu Essen.'."\n".
                     'Hab ich gegessen und bin satt, dann höre ich auf zu essen.'."\n".
                     'Ich habe Sehnsucht nach Geborgenheit und menschlicher Wärme?'."\n".
                     'Dann versuche ich dafür zu sorgen, dass ich Geborgenheit und menschliche Wärme bekomme.'."\n".
-                    'Spätestens ab unserer \\jump{OM:SpaLeb:Psyche-und-Stimmung:Geburt}{Geburt} wird der Achtsamkeitsprozess in Gang gesetzt.'."\n".
+                    'Spätestens ab unserer \\jump{OM:SpaLeb:Psyche-und-Stimmung:Geburt}{Geburt} wird der Care-Prozess in Gang gesetzt.'."\n".
                     'Aber sicherlich spielt er schon im Mutterleib eine Rolle.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
                                            
                 'Eine Entwicklung in Helixspiralform', subline =>
                   '')),
@@ -88,7 +88,7 @@
                   array( 'text', array( Shape  => 'italic', text => array(
                       'Wir lernen leben.'."\n"))),
                       
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
                                            
                 'Der Prozess unseres Lebens – unser Gedeihen', subline =>
                   'Die Verflechtung der bekannten biologischen Regelprozesse unseres Lebens mit unserem Achtsamkeitsprozess')),
@@ -118,7 +118,7 @@
                       'Dadurch ist diese Definition auch dynamisch funktional, materiell sowie transzendent, folglich also sehr weitgehend.'."\n".
                     'Sie muss nicht unbedingt auf der Biochemie basieren, ist damit im engen Sinne nicht auf die uns bekannte Genetik beschränkt.'."\n".
                     'Es sind nur die Zustände Lebenssituation und Antriebsdruck, die funktionalen Elemente Gefühl (Zustandsfeststellung und -bewertung) und Handlung sowie Entwicklungs- und Lernmechanismen nötig.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
                                            
                 'Unsere Balance zwischen Stabilität und Fortentwicklung', subline =>
                   '')),
@@ -136,14 +136,14 @@
                     'Unser Achtsamkeitsprozess dreht sich also um die selbstorganisation unserer Stabilität und die ihm innewohnende \\italic{konstruktive Instabilität}.'."\n"))),
                       
                   array( 'figure',
-                    array_merge( $SpaLeb_g_figure_ary_AchtsamkeitsprozessBewWiss, array( name => 'OM:SpaLeb:Achtsamkeitsprozess:Vortext:Fig-AchtsamkeitsprozessBewWiss'))),
+                    array_merge( $SpaLeb_g_figure_ary_AchtsamkeitsprozessBewWiss, array( name => 'OM:SpaLeb:Care-Prozess:Vortext:Fig-AchtsamkeitsprozessBewWiss'))),
                       
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
                                            
                 'Unser Lernen – Bewusstsein, Wissen und Können', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Der Übergang von einer Etappe unseres Achtsamkeitsprozesses zur nächsten ist nicht völlig unmittelbar (siehe \\jumpname{OM:SpaLeb:Achtsamkeitsprozess:Vortext:Fig-AchtsamkeitsprozessBewWiss}).'."\n".
+                    'Der Übergang von einer Etappe unseres Achtsamkeitsprozesses zur nächsten ist nicht völlig unmittelbar (siehe \\jumpname{OM:SpaLeb:Care-Prozess:Vortext:Fig-AchtsamkeitsprozessBewWiss}).'."\n".
                     'Wie wir unsere Lebenssituation empfinden, welches Gefühl sich in uns zu ihr einstellt, hängt von unserem \\jump{OM:SpaLeb:Bewusstsein}{Bewusstsein}\\footnote{\\const{SpaLeb_g_footnote_text_Bewusstsein}} ab.'."\n".
                     'Das Gleiche gilt auch für die Entstehung unserer Antriebe und Handlungen.\\footnote[*Bearb]{\\color{*Bearb}{Verweis auf das Buch von Bruder, Klaus-Jürgen. Psychologie ohne Bewusstsein. Die Geburt der behavioristischen Sozialtechnologie.}}'."\n",
                       'Unser Bewusstsein ist eng mit unserem Wissen und Können verknüpft und die drei Begriffe treten hier quasi als Synonyme auf.'."\n".
@@ -159,7 +159,7 @@
                   array( 'text', array( text => array(
                     'Unser Lernprozess läuft während des mehrmaligen Durchlaufens der Zirkel in einer Spirale ab,'."\n".
                     'wenn wir unsere Gefühle, inklusiv dazugehöriger Lebenssituationen, Antriebe und Handlungen, vom aktuellen Zirkel mit denen der vorherigen Zirkel vergleichen.'."\n".
-                    // 'Wie in \\jumpname{OM:SpaLeb:Achtsamkeitsprozess:Vortext:Fig-AchtsamkeitsprozessBewWiss} dargestellt, ist die Beeinflussung dadurch gegenseitig.'."\n".
+                    // 'Wie in \\jumpname{OM:SpaLeb:Care-Prozess:Vortext:Fig-AchtsamkeitsprozessBewWiss} dargestellt, ist die Beeinflussung dadurch gegenseitig.'."\n".
                     'Durch den Vergleich verändert sich dann die Funktion unseres Bewusstseins, unser Wissen und Können.'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
@@ -171,7 +171,7 @@
                   array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Bewusstsein im Achtsamkeitsprozess …',
                     TitleVis => 'Bewusstsein im Achtsamkeitsprozess:', ParagraphList => array(
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
                                            
                 'Elementares, rudimentäres und kognitives Bewusstsein', subline =>
                   '')),
@@ -204,7 +204,7 @@
                       'Rudimentäres Bewusstsein ist ein notwendiger Bestandteil des kognitiven Bewusstseins.'."\n".
                     'Da der Lernprozess und die Persönlichkeitsentwicklung als Beispiele notwendigerweise zum kognitiven Bewusstsein gehören muss, damit es sich überhaupt in einem Lebewesen entwickeln kann,'."\n".
                     'ist kognitives Bewusstsein und der kognitive Achtsamkeitsprozess möglicherweise das Gleiche.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
                                            
                 'Unser Körper gehört zu unserem Bewusstsein, Wissen und Können', subline =>
                   '')),
@@ -219,7 +219,7 @@
                     'Unser Achtsamkeitsprozess formt unser gesamtes Bewusstsein, Wissen und Können, inklusive unseres Körpers.'."\n"))),
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
                                            
                 'Unterprozesse des führenden Achtsamkeitsprozesses', subline =>
                   '')),
@@ -236,7 +236,7 @@
                           'In unseren Gedanken können wir Probehandlungen ausführen, die dann zu Probegefühlen führen (über Probelebenssituationen und Probeantriebe).',
                     ))),
                   array( 'text', array( text => array(
-                    'Unser Achtsamkeitsprozess ist also ein \\jump{OM:SpaLeb:Achtsamkeitsprozess:NaehereBetracht}{komplexes Gebilde}, stellen wir fest, wenn wir ihn näher beleuchten.'."\n".
+                    'Unser Achtsamkeitsprozess ist also ein \\jump{OM:SpaLeb:Care-Prozess:NaehereBetracht}{komplexes Gebilde}, stellen wir fest, wenn wir ihn näher beleuchten.'."\n".
                     'Der ›Achtsamkeitsprozess unserer Selbstbeobachtung‹ kann eine Kaskade von Achtsamkeitsprozessen hervorbringen und macht sichtbar,'."\n".
                     'dass es sich in gewisser Weise um eine selbstähnliche, also fraktale, Struktur handelt.'."\n".
                     'Ähnliches ist auch beim ›Achtsamkeitsprozess des Inhalts unseres Verstandes‹ zu beobachten:'."\n".
@@ -244,7 +244,7 @@
                       'All diese Unterprozesse stehen miteinander in Konkurrenz um unseren Fokus der Aufmerksamkeit.'."\n".
                     'Die Priorität und Balance in unserer Aufmerksamkeit, die diesen Unterprozessen zu teil wird, spielt in der Psychotherapie und auch im Yoga eine wichtige Rolle.'."\n".
                     'In beiden Fällen geht es darum, besser leben zu lernen oder im Extremfall wieder zu lernen besser leben zu lernen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
                                            
                 'Im Achtsamkeitsprozess enthaltene bekannte Begriffe und Bilder', subline =>
                   '')),
@@ -261,7 +261,7 @@
                         'Achtsamkeit (care)\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AchtsamkeitCare:2019}.} gegenüber anderen Menschen',
                         'Regelprozess unseres Wohlbefindens und Überlebens durch Handlung (Was muss ich tun, damit es mir gut geht und ich nicht sterbe?)',
                     ))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
                                            
                 'Wann führen wir ein gutes Leben?', subline =>
                   '')),
@@ -279,7 +279,7 @@
                     'Die meisten von uns Menschen wollen sicherlich gut leben lernen.'."\n".
                     'Und dafür sind wir darauf angewiesen zu wissen oder zu lernen, wie wir gut leben lernen können; zu verstehen, wie das funktioniert.'."\n".
                     'Unsere Geschicklichkeit im Achtsamkeitsprozess und die Rahmenbedingungen unseres Lebens entscheiden darüber, ob wir ein gutes Leben führen können und letztendlich führen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
                                            
                 'Lernen gut zu leben', subline =>
                   'Viele Menschen wissen nicht, dass sie darauf angewiesen sind, gut leben zu lernen')),
@@ -305,23 +305,23 @@
                   array( 'text', array( text => array(
                     'Uns selber kennenlernen und erforschen.'."\n".
                     'Erkennen und verstehen, wer wir sind …'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
                                            
                 'Warum ist die Achtsamkeit im Namen dieses Prozesses?', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Der Achtsamkeitsprozess führt in meinen Augen dann auf Sicht zu einem zufriedenen Leben, wenn wir unsere primären Gefühle und Handlungen besonders achtsam wahrnehmen.'."\n".
-                    'Die \\jump{OM:SpaLeb:Achtsamkeitsprozess:Achtsamkeit}{besondere oder rechte Achtsamkeit} ist in diesem Sinne etwas, dem man sich im Laufe der Persönlichkeitsentwicklung durch den Achtsamkeitsprozess annähern kann.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:XXX', text =>
+                    'Die \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeit}{besondere oder rechte Achtsamkeit} ist in diesem Sinne etwas, dem man sich im Laufe der Persönlichkeitsentwicklung durch den Achtsamkeitsprozess annähern kann.'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
                                            
                 'Achtsamkeit und ihre Vielschichtigkeit', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Beschäftigen wir uns ausgiebiger mit \\jump{OM:SpaLeb:Achtsamkeitsprozess:Achtsamkeit}{Achtsamkeit}, ihren Definitionen und den auf ihr basierenden Trainings-, Coachings-, und Therapieformen,'."\n".
+                    'Beschäftigen wir uns ausgiebiger mit \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeit}{Achtsamkeit}, ihren Definitionen und den auf ihr basierenden Trainings-, Coachings-, und Therapieformen,'."\n".
                     'dann stellen wir fest, dass es sich bei der Achtsamkeit und ihren möglichen Facetten um eine komplexere Struktur handelt, als viele im ersten Moment erwarten.'."\n".
                     'Die Achtsamkeit kann mehrere parallele Wahrnehmungs- und Aufmerksamkeitsebenen haben, die wir betrachten können.'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{(Das Nachfolgende wohl kurz angedeutet in den vorstehenden Text und den Rest zu \\jumpname{OM:SpaLeb:Achtsamkeitsprozess:NaehereBetracht}?)}'."\n"))),
+                    '\\color{*Bearb}{(Das Nachfolgende wohl kurz angedeutet in den vorstehenden Text und den Rest zu \\jumpname{OM:SpaLeb:Care-Prozess:NaehereBetracht}?)}'."\n"))),
                   array( 'text', array( text => array(
                   '\\bold{Die Imbalance unseres Fokus der Aufmerksamkeit weg vom Hier und Jetzt \\\\ \\color{*TitleAdd}{– das Zur-Ruhe-Bringen der Gedankenbewegung des Yoga}} \\\\'."\n".
                     'Nehmen wir die Perspektive des Achtsamkeitsprozesses ein, so können wir feststellen, dass das Denken – der Verstand – als besonderer Achtsamkeitsprozess verstanden werden kann.'."\n".
@@ -358,7 +358,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:Vortext:Klaerung', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:Vortext:Klaerung', text =>
                                            
                 'Klärungen durch den Achtsamkeitsprozess', subline =>
                   '')),
@@ -388,7 +388,7 @@
                     'Wir trennen gerne zwischen Verstand und Gefühl.'."\n".
                     'Nach dem Achtsamkeitsprozess sind unsere Gefühle zu unseren Gedanken aber ein Teil unseres Verstands, nämlich die andere Seite der Medaille.'."\n".
                     'Unser Denken und unsere Gefühle dazu bilden den Achtsamkeitsprozess des Inhalts unseres Verstands, wie oben beschrieben.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
                                            
                 'Die Tücken des Achtsamkeitsprozesses', subline =>
                   '')),
@@ -405,7 +405,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
                                            
                 'Der Achtsamkeitsprozess ist tief mit dem Leben und mit Physik verbunden', subline =>
                   '')),
@@ -419,7 +419,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Nachfolgend werden XXX'."\n".
-                    '\\jump{OM:SpaLeb:Achtsamkeitsprozess:AchtsamkeitsprozesGrundlLeben}{allen Lebens} XXX'."\n".
+                    '\\jump{OM:SpaLeb:Care-Prozess:AchtsamkeitsprozesGrundlLeben}{allen Lebens} XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -436,7 +436,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:Achtsamkeit'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:Achtsamkeit'),
                     )),
                 )
           ); ?>
@@ -447,11 +447,11 @@
 		    	<!  • Achtsamkeit  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SpaLeb:Achtsamkeitsprozess:Achtsamkeit',
+            'OM:SpaLeb:Care-Prozess:Achtsamkeit',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess', type => 'back'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -484,7 +484,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:NaehereBetracht'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:NaehereBetracht'),
                     )),
               )
           ); ?>
@@ -493,11 +493,11 @@
 		    	<!  • Nähere Betrachtung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SpaLeb:Achtsamkeitsprozess:NaehereBetracht',
+            'OM:SpaLeb:Care-Prozess:NaehereBetracht',
               'Die Facetten des Achtsamkeitsprozesses', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:Achtsamkeit', type => 'back'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:Achtsamkeit', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
@@ -509,7 +509,7 @@
                     '– Wie gerät unser Fokus zu sehr auf unseren Verstand? Durch zu viel Selbstschutz? Ist dies eine kompensatorische Sache?',
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:NaehereBetracht:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:NaehereBetracht:XXX', text =>
                                            
                 'Der Dialog in uns')),
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -527,7 +527,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:NaehereBetracht:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:NaehereBetracht:XXX', text =>
                                            
                 'Wie können wir uns eine Balance aus Stabilität und Fortschritt vorstellen?')),
                   array( 'text', array( text => array(
@@ -568,7 +568,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:BeobachtHinweise'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:BeobachtHinweise'),
                     )),
               )
           ); ?>
@@ -577,11 +577,11 @@
 		    	<!  • Beobachtbare Hinweise  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SpaLeb:Achtsamkeitsprozess:BeobachtHinweise',
+            'OM:SpaLeb:Care-Prozess:BeobachtHinweise',
               'Die Facetten des Achtsamkeitsprozesses', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:NaehereBetracht', type => 'back'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:NaehereBetracht', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -646,7 +646,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:ErweiSicht'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:ErweiSicht'),
                     )),
               )
           ); ?>
@@ -655,11 +655,11 @@
 		    	<!  • Erweiterte Sicht  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SpaLeb:Achtsamkeitsprozess:ErweiSicht',
+            'OM:SpaLeb:Care-Prozess:ErweiSicht',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:BeobachtHinweise', type => 'back'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:BeobachtHinweise', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -709,7 +709,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:PhysAchtsa'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:PhysAchtsa'),
                     )),
               )
           ); ?>
@@ -718,11 +718,11 @@
 		    	<!  • Die Physik der Achtsamkeit  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SpaLeb:Achtsamkeitsprozess:PhysAchtsa',
+            'OM:SpaLeb:Care-Prozess:PhysAchtsa',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:ErweiSicht', type => 'back'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:ErweiSicht', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -757,7 +757,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:AchtsamkeitsprozesGrundlLeben'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:AchtsamkeitsprozesGrundlLeben'),
                     )),
               )
           ); ?>
@@ -766,11 +766,11 @@
 		    	<!  • Zentraler Regelprozess des Lebens  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SpaLeb:Achtsamkeitsprozess:AchtsamkeitsprozesGrundlLeben',
+            'OM:SpaLeb:Care-Prozess:AchtsamkeitsprozesGrundlLeben',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:PhysAchtsa', type => 'back'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:PhysAchtsa', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -811,7 +811,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:NeueAnthropologie'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:NeueAnthropologie'),
                     )),
               )
           ); ?>
@@ -820,11 +820,11 @@
 		    	<!  • Neue Anthropologie  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SpaLeb:Achtsamkeitsprozess:NeueAnthropologie',
+            'OM:SpaLeb:Care-Prozess:NeueAnthropologie',
               'Der Achtsamkeitsprozess ermöglicht eine neue Anthropologie', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:AchtsamkeitsprozesGrundlLeben', type => 'back'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:AchtsamkeitsprozesGrundlLeben', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -855,7 +855,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:KIundRobotik'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:KIundRobotik'),
                     )),
               )
           ); ?>
@@ -864,11 +864,11 @@
 		    	<!  • Künstliche Intelligenz und Robotik  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SpaLeb:Achtsamkeitsprozess:KIundRobotik',
+            'OM:SpaLeb:Care-Prozess:KIundRobotik',
               '\\name[undertitle]{OM:SpaLeb:KIundRobotik}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:NeueAnthropologie', type => 'back'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:NeueAnthropologie', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
@@ -883,7 +883,7 @@
                       'Darüber hinaus hat die Künstliche Intelligenz und die Robotik ein \\jump{OM:SpaLeb:KIundRobotik}{Vertrauensproblem}, was mit der Unmöglichkeit der exakten Nachbildung des Achtsamkeitsprozesses zu tun hat, wie ich auf der dazugehörigen Seite erläutere.'."\n"))),
             
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:MystischeBedeutung'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:MystischeBedeutung'),
                     )),
               )
           ); ?>
@@ -892,11 +892,11 @@
 		    	<!  • Mystische Bedeutung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SpaLeb:Achtsamkeitsprozess:MystischeBedeutung',
+            'OM:SpaLeb:Care-Prozess:MystischeBedeutung',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:KIundRobotik', type => 'back'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:KIundRobotik', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(

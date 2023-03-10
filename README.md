@@ -39,7 +39,7 @@ On the web: [Tension Game Of Life](http://www.nsosp.org/spannung)
 
 - fully based on regulation processes (Regelprozessen)
 - based on a definition of consciousness in the setting of [Fractal Quantum Flow Theory](#-fractal-quantum-flow-theory)
-- has a top level regulation process for each individual life ([Mindfulness Process](http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Achtsamkeitsprozess-Definition-des-Lebens.php), [Achtsamkeitsprozess](http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Achtsamkeitsprozess-Definition-des-Lebens.php))
+- has a top level regulation process for each individual life ([Care Process, Care-Prozess](http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Care-Prozess-Achtsamkeitsprozess-Definition-des-Lebens.php), [Mindfulness Process, Achtsamkeitsprozess](http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Care-Prozess-Achtsamkeitsprozess-Definition-des-Lebens.php))
   - clarifies the implications of psychosomatics, the inner relations between our psyche and our body
   - allows deep insights in psychological problems 
   - allows a new definition of our soul and therefore solves the soul-body-problem
