@@ -185,7 +185,7 @@
                     'Diese Definition, basierend auf \\term{\M(N)}, wurde eingangs für die Definition der absolut negativen Zahlen in Erwägung gezogen, dafür jedoch wieder verworfen, und bekommt hiermit ihre passende Rolle.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Herleitung des Ansatzes der allgemeinen Subtraktion} \\\\'."\n".
+                  '\\condb{Herleitung des Ansatzes der allgemeinen Subtraktion mit positivem Ergebnis} \\\\'."\n".
                     'Aber wie steht es mit der Eindeutigkeit, der Praktikabilität und der generellen Plausibilität in komplizierteren Fällen?'."\n".
                     'An folgendem Beispiel können wir einmal sehen, worum es geht:'."\n".
                     ''))),
@@ -197,7 +197,7 @@
                     'Diese beiden Darstellungen sind aus Sicht der an \\term{ω^{2}} fehlenden Mengen im ersten Moment nicht identisch.'."\n".
                     'Dabei müssen wir uns zuerst klar machen, dass an \\term{ω^{2}} auch nur die Mengen fehlen können, die enthalten sind.'."\n",
                       'So taucht die Frage auf, ob es nicht generell möglich ist, immer die folgende Definition zu benutzen,'."\n".
-                    'wenn \\term{λ} die größte Limeszahl in der Summe ist und \\term{β} die restlichen Summanden zusammenfasst:'."\n".
+                    'wenn \\term{λ} die größte Limeszahl in der Summe ist und \\term{β} die restlichen Summanden kleinerer Limeszahlen zusammenfasst:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -356,7 +356,7 @@
           <!  • Integrierte Mengenlehre  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:BiOrd:Einleitung:IntegrierteMengenlehre',
-              'Erweiterung der Mengenlehre durch Antimengen auf das integrierte Mengenuniversums', 'Sc_f_Paragraph',
+              'Erweiterung der Mengenlehre durch Antimengen auf das integrierte Mengenuniversum', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:BiOrd:Einleitung', type => 'back'),
@@ -371,13 +371,14 @@
                     'Um wohldefiniert mit Biordinalzahlen mit der uns bekannten Mengenlehre arbeiten zu können'."\n".
                     'bedarf es einer Definition, mit was für Objekten wir es hier zu tun haben und einer'."\n".
                     'Erweiterung der Mengenlehre auf all diese Objekte.'."\n",
-                      'Wenn wir negative Zahlen oben durch das Fehlen von Mengen an der Klasse des Mengenuniversums \\latexmath{ \mathbb{U} }'."\n".
-                    'definieren, dann bedeutet dies, dass wir das Universum der normalen Mengen verlassen.'."\n".
-                    'Denn die Klasse des Mengenuniversums, an der unterschiedliche Kombinationen an Mengen fehlen, sind selber keine Mengen sondern auch Klassen.'."\n",
+                      'Wenn wir negative Zahlen, wie oben, durch das Fehlen von Mengen an der Klasse des Mengenuniversums \\latexmath{ \mathbb{U} }'."\n".
+                    'definieren, dann bedeutet dies, dass wir das Universum der „normalen“ Mengen verlassen.'."\n".
+                    'Denn die Klasse des Mengenuniversums, an der unterschiedliche Kombinationen an Mengen fehlen,'."\n".
+                    'sind selber keine Mengen, sondern auch Klassen.'."\n",
                       'Wir können allerdings sagen, dass es sich hierbei um eine besondere Klasse von Klassen handelt:'."\n".
-                    'Wir nennen eine Klasse, bei der am Mengenuniversums Mengen fehlen, eine Antimenge.'."\n".
-                    'Ebenso nennen wir die Klasse, die alle Antimengen enthält, das Antimengenuniversum \\term{\M(U)^{&thinsp;–}}'."\n".
-                    'Zuletzt nennen wir die Klasse, die alle Mengen sowie alle Antimengen enthält als integriertes Mengenuniversums \\term{\M(U)^{ i}}.'."\n".
+                    'Wir nennen nun eine Klasse, bei der am Mengenuniversum die Mengen der nicht leeren Menge \\term{a} fehlen, eine \\italic{Antimenge} \\term{a^{&thinsp;–}}.'."\n".
+                    'Ebenso nennen wir die Klasse, die alle Antimengen enthält, das \\italic{Antimengenuniversum} \\term{\M(U)^{&thinsp;–}}.'."\n".
+                    'Zuletzt nennen wir die Klasse, die alle Mengen sowie alle Antimengen enthält das integrierte Mengenuniversum \\term{\M(U)^{ i}}.'."\n".
                     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
@@ -444,7 +445,7 @@
                     array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{  *( \\forall a \in \mathbb{U}^{i} *) *[ -a  =  \begin{cases}  a^{-}  &  \text{ falls } a \in \mathbb{U} \setminus *\{ \varnothing *\}  \\\\  a  &  \text{ falls } a = \varnothing  \\\\  \mathbb{U} \setminus a  &  \text{ falls } a \in \mathbb{U}^{-}  \end{cases} *]  }'),
                       array( display => 'on',  latex => '{  *( \\forall a \in \mathbb{U}^{i} *) *[ -a  =  \begin{cases}  a  &  \text{ falls } a = \varnothing \\\\ \mathbb{U} \setminus a  &  \text{ falls } a \in \mathbb{U}^{i} \setminus *\{ \varnothing *\}  \end{cases} *]  }',
-                                    latex_if_visible => '{  *( \\forall a \in \mathbb{U}^{i} *) *[ -a  =  \begin{cases}  a  &  \text{ falls } a = \varnothing \\\\ \mathbb{U} \setminus a  &  \text{ falls } a \in \mathbb{U}^{i} \setminus *\{ \varnothing *\}  \end{cases} *]  }'),
+                                    latex_if_visible => '{  \Leftrightarrow  *( \\forall a \in \mathbb{U}^{i} *) *[ -a  =  \begin{cases}  a  &  \text{ falls } a = \varnothing \\\\ \mathbb{U} \setminus a  &  \text{ falls } a \in \mathbb{U}^{i} \setminus *\{ \varnothing *\}  \end{cases} *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Alle negierten integrierten Mengen sind wieder integrierte Mengen:'."\n".
