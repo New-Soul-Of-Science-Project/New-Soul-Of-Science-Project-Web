@@ -8,7 +8,7 @@
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SpaLeb:Achtsamkeitsprozess:KIundRobotik'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SpaLeb:Care-Prozess:KIundRobotik'); ?>
 
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
@@ -17,7 +17,7 @@
                     '(\\bold{Vertrauensproblem:})',
                     '(• Ein sehr großes Problem, was wir mit KI vermutlich erleben werden ist ein Vertrauensproblem.)',
                     '(• Dies gilt ganz besonders für Roboter. Der Mensch ist so evolutionär konstruiert, dass er durch seine Körpersprache, seine Stimme und ganz besonders über sein Gesicht etwas über sich selbst verrät, was er nicht bewusst und schon gar nicht kurzfristig steuern kann. Dies hat die Evolution nicht zufällig eingefädelt!)',
-                    '(• Unsere Stimmung, unsere Psyche, unsere Lebensführung, unsere Qualitäten, wie unsere Vertrauenswürdigkeit, sind über unseren \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess} und seine \\jump{OM:SpaLeb:Psychosomatik-Stress}{Psychosomatik} tief in den \\jump{OM:SpaLeb:Gesichtsausdruck}{Ausdruck unseres Gesichts}, in unsere Körpersprache und in unsere \\jump{OM:SpaLeb:Gesangstechnik}{Stimme} eingeprägt.)',
+                    '(• Unsere Stimmung, unsere Psyche, unsere Lebensführung, unsere Qualitäten, wie unsere Vertrauenswürdigkeit, sind über unseren \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess} – auch den \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozess} – und seine \\jump{OM:SpaLeb:Psychosomatik-Stress}{Psychosomatik} tief in den \\jump{OM:SpaLeb:Gesichtsausdruck}{Ausdruck unseres Gesichts}, in unsere Körpersprache und in unsere \\jump{OM:SpaLeb:Gesangstechnik}{Stimme} eingeprägt.)',
                     '(• Wir sind als soziale Wesen im sozialen Miteinander davon abhängig, möglichst gut und rechtzeitig zu erkennen, was das Gegenüber im Schilde führt; wer er, sie oder es ist.)',
                     '(• Und genau diese zwangsweise Verbindung gibt es bei Robotern und KI nicht! Wir können niemals sicher sein, was im nächsten Moment passieren wird. Erleben wir ein völlig unvorhergesehenes, vielleicht sogar lebensbedrohendes Verhalten gegenüber anderen oder gar gegenüber uns selber, werden wir kaum je wieder vertrauen fassen können.)',
                     '(• Selbst, wenn die Roboter und die KI gut funktionieren, können sie unbemerkt von dritter Seite gehackt werden. Dies ist mit Menschen nur sehr schwer möglich, ohne dass wir mitbekommen, dass etwas komisch ist. Aber natürlich schaffen auch Menschen es, uns zu täuschen. Aber wir haben eine gute Chance es zu merken und vor allem daraus etwas zu lernen! Und genau dies geht bei Robotern und KI vermutlich nur sehr schwer.)',
@@ -54,7 +54,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:Achtsamkeit'),
+                      //array(  jump_name => 'OM:SpaLeb:Care-Prozess:Achtsamkeit'),
                     )),
                 )
           ); ?>
@@ -65,11 +65,11 @@
 		    	<!  • XXX  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SpaLeb:Achtsamkeitsprozess:KIundRobotik',
+            'OM:SpaLeb:KIundRobotik:XXX',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess:AchtsamkeitsprozesGrundlLeben', type => 'back'),
+                      array(  jump_name => 'OM:SpaLeb:KIundRobotik:AchtsamkeitsprozesGrundlLeben', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(

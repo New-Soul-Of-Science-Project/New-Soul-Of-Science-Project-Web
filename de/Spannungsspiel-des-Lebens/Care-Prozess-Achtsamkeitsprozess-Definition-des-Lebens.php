@@ -436,7 +436,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:Achtsamkeit'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess'),
                     )),
                 )
           ); ?>
@@ -447,11 +447,55 @@
 		    	<!  • Achtsamkeit  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SpaLeb:Care-Prozess:Achtsamkeit',
+            'OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    '• Spezielle Teile des Achtsamkeitsprozesses vom Vortext nach hier.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:Achtsamkeit'),
+                    )),
+              )
+          ); ?>
+
+
+		    	<!  • Achtsamkeit  >
+          <?php $Sc_g_equation_auto_num = 0; ?>
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SpaLeb:Care-Prozess:Achtsamkeit',
+              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(

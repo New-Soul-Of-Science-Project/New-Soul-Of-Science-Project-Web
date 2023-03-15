@@ -80,7 +80,7 @@
                       'Ich möchte aufgrund meiner Erfahrung darauf hinweisen, dass es nicht unser Unterbewusstsein alleine ist, was dies und vermutlich auch noch ganz anderes leisten kann.'."\n".
                     'Ich meine, es kommt auf einen guten, liebevollen und offenen Dialog zwischen unserem Bewusstsein und unserem Unterbewusstsein an.'."\n".
                     'Dabei leitet uns unser Gefühl, begleitet von unserem entsprechenden Handeln.'."\n",
-                      'Unser Bewusstsein und unser Unterbewusstsein sind zwei Pole in uns, die mit den Polen unseres \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozesses} verbunden sind.'."\n".
+                      'Unser Bewusstsein und unser Unterbewusstsein sind zwei Pole in uns, die mit den Polen unseres \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess} verbunden sind.'."\n".
                     'Sind wir \\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{wach}, dann steht unser Bewusstsein im Vordergrund und damit unser Handeln, unser \\jump{OM:SpaLeb:Psychosomatik}{Handlungspol}.'."\n".
                     '\\jump{OM:SpaLeb:Schlaf-und-Aktivsein}{Schlafen} wir, dann steht unser Unterbewusstsein im Vordergrund, unser \\jump{OM:SpaLeb:Psychosomatik}{Gefühlspol}, und wir sind mehr in unseren Gefühlen unterwegs.'."\n",
                       'Der gute, liebevolle und offene Dialog zwischen den Polen in uns, über ihre Gefühle und Bedürfnisse, ist ein wichtiger Schlüssel für unsere Gesundheit und ein gutes Leben.'."\n".

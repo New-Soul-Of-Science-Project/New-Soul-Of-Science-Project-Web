@@ -8,13 +8,13 @@
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SpaLeb:Achtsamkeitsprozess'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SpaLeb:Care-Prozess'); ?>
 
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '• Diese Seite in \\italic{(neue) Anthropologie} umbenennen? Verweis von \\italic{\\jumpname{OM:SpaLeb:Achtsamkeitsprozess:NeueAnthropologie}} hierher?',
+                    '• Diese Seite in \\italic{(neue) Anthropologie} umbenennen? Verweis von \\italic{\\jumpname{OM:SpaLeb:Care-Prozess:NeueAnthropologie}} hierher?',
                     '• Seele ist Interaktion!',
                     '– Spannungsspiel des Lebens (und FrQFT): Das Seelenverständnis des ›Spannungsspiels des Lebens‹, die Seele als das Verhalten der Dinge miteinander oder untereinander zu erkennen, als den Zusammenhang zwischen den Dingen, ist sehr dazu geeignet Geist und Seele sowie deren Beziehung zur Materie wieder besser zu verstehen und neu in die Gesellschaft und Wissenschaft zurück zu integrieren.',
                     '⋅ Die Materie kann hier auch als Rückgrat, als auskristallisierte Knochen – auskristallisiertes Bewusstsein –, im Zusammenspiel zwischen Seele und Materie gesehen werden. Durch die auskristallisierte Materie ist erst ein intensives Wechselspiel möglich. Siehe auch \\jumpname{OM:SpaLeb:Bewusstsein}.',
@@ -379,7 +379,7 @@
                       
                 'Künstliche Intelligenz und Robotik')),
                   array( 'text', array( text => array(
-                    'Weil die \\jump{OM:SpaLeb:Achtsamkeitsprozess:KIundRobotik}{Künstliche Intelligenz}\\color{*Bearb}{(Verweis)} (AI, KI) und die \\jump{OM:SpaLeb:Achtsamkeitsprozess:KIundRobotik}{Robotik}\\color{*Bearb}{(Verweis)} das Leben nachbilden möchten, müssen auch sie nach dem Prinzip des ›Spannungsspiels des Lebens‹ funktionieren.'."\n".
+                    'Weil die \\jump{OM:SpaLeb:Care-Prozess:KIundRobotik}{Künstliche Intelligenz}\\color{*Bearb}{(Verweis)} (AI, KI) und die \\jump{OM:SpaLeb:Care-Prozess:KIundRobotik}{Robotik}\\color{*Bearb}{(Verweis)} das Leben nachbilden möchten, müssen auch sie nach dem Prinzip des ›Spannungsspiels des Lebens‹ funktionieren.'."\n".
                     'Auch sie basieren deshalb auf stabilisierenden, disharmonischen Regelsystemen.'."\n",
                       '\\color{*Entwick}{Interessant ist es zu untersuchen, inwieweit diese Regelsysteme gebrochen, also aus der Balance, sein müssen.'."\n".
                     'Denn anders als beim Menschen kann man einen Roboter aus- und jederzeit wieder anschalten.'."\n".

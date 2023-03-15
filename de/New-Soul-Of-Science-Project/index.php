@@ -451,11 +451,11 @@
                       'Ja!'."\n".
                     'Denn habe ich ein schwer auszuhaltendes Gefühl, dann versuche ich durch meine Handlung das Gefühl zu verbessern, in dem ich meine Lebenssituation verändere.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Der Achtsamkeitsprozess} \\\\'."\n".
+                  '\\condb{Der Care-Prozess} \\\\'."\n".
                     'Der zentrale Regelprozess unseres Lebens dreht sich um unser Bewusstsein, in Form unseres Wissens, Wollens und Könnens zum Beispiel.'."\n".
                     'Unser Bewusstsein regelt unsere Lebenssituation – unser Überleben – über unser Gefühl zu ihr, über den Antrieb, den es erzeugt, und der zu einer bestimmten Handlung führt,'."\n".
                     'die in unsere neue Lebenssituation mündet.'."\n".
-                    'Und so beginnt der Zirkel unseres zentralen Regelprozesses wieder von vorn, den ich \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess} nenne.'."\n",
+                    'Und so beginnt der Zirkel unseres zentralen Regelprozesses wieder von vorn, den ich \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess} nenne.'."\n",
                       'Er ist das wesentliche Element in meiner Natur- und Lebensphilosophie vom \\jump{OM:SpaLeb:Home}{›Spannungsspiel des Lebens‹}'."\n",
                       'Unser Achtsamkeitsprozess stellt sich als Helixspirale dar, wenn wir ihn als uns verändernden Lernprozess, als unsere Persönlichkeitsentwicklung und unser Gedeihen'."\n".
                     'im seelischen und körperlichen Sinn verstehen.'."\n".
@@ -897,7 +897,7 @@
                     '⸰ Es geht dabei auch um die Transparenz der Wissenschaft, um die Veröffentlichung von Messergebnissen, die es anderen Wissenschaftlern ermöglichen deren Interpretation zu überprüfen, vgl. \\jump[http://backreaction.blogspot.com/2020/03/how-good-is-evidence-for-dark-energy.html]{}{How good is the evidence for Dark Energy?} \\\\'."\n".
                     '⋅ In Bezug auf die Medizin regt das Buch \\jump[https://www.torstenengelbrecht.com/de/buch_viruswahn.html]{}{›Virus-Wahn‹} von Torsten Engelbrecht und Claus Köhnlein zum kritischen Denken an und das KenFM Gespräch mit \\jump[https://kenfm.de/lothar-hirneise/]{}{Lothar Hirneise („Chemotherapie heilt Krebs und die Erde ist eine Scheibe“)} lässt uns noch einmal anders über Krebs nachdenken. \\\\'."\n".
                     '• \\bold{Eine Kultur der Balance aus Stabilität und Veränderung:} \\\\'."\n".
-                    '– Unser \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}, der zentrale Regelprozess unseres Lebens, organisiert eine möglichst angenehme Balance von Stabilität und Veränderung. \\\\'."\n".
+                    '– Unser \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess}, der zentrale Regelprozess unseres Lebens, organisiert eine möglichst angenehme Balance von Stabilität und Veränderung. \\\\'."\n".
                     '– Mein Anliegen ist eine Kultur in unserer Gesellschaft zu schaffen, die sich der Notwendigkeit beider Facetten des Lebens, der Stabilität und der Veränderung, und ihrer Austarierung bewusst ist. Ich möchte eine solche Kultur in unserer Gesellschaft etablieren und kultivieren. \\\\'."\n".
                     '– Es ist eine Kultur der Pflege unserer Riten und lieb gewonnenen Gewohnheiten, zu deren grundlegenden Gewohnheit es auch gehört, diese auch neugierig zu hinterfragen und gegebenenfalls zu verändern, wenn es plausibel oder viabel (nützlich), also sinnvoll, erscheint. Die Neugier und der Spaß daran, auch mal Neues auszuprobieren, dass ja auch nicht beibehalten werden muss, sind positiv belegt und werden gesellschaftlich anerkannt und gefördert. Mit dem Fokus darauf zu schauen, wie sich das Neue für uns anfühlt und was es zum Positiven und zum Negativen verändert. \\\\'."\n".
                     '– Es ist eine Kultur des sowohl als auch, in der Altes, Bewährtes und Liebgewonnenes nicht gleich über Bord geworfen wird, wenn Neues auftaucht, gesucht und gefunden wird. Evolutionäre Dinge entwickeln sich oft parallel zum Alten. \\\\'."\n".

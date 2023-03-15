@@ -24,7 +24,7 @@
                     '• Unser Bewusstsein scheint mir mit unserem Handlungspol verbunden und unser Unterbewusstsein mit unserem Gefühlspol (siehe \\italic{\\jumpname{OM:NPYo:Spiritualitaet-Psychologie}}).',
                     '– Unsere Intuition entsteht aus dem Dialog unseres Bewusstseins mit unserem Unterbewusstsein, wenn das Bewusstsein im Vordergrund steht.',
                     '– Unsere Träume sind unser Dialog unseres Bewusstseins mit unserem Unterbewusstsein, wenn unser Unterbewusstsein im Vordergrund steht.',
-                    '• Die Verbindung unserer körperlichen Gefühlsseite, unseres Gefühlspols, mit unserem Unterbewussten und unserer körperlichen Handlungsseite, unseres Handlungspols, mit unserem Bewusstsein zeigt sich in Folgendem (siehe auch \\italic{\\jumpname{OM:SpaLeb:Achtsamkeitsprozess:BeobachtHinweise}}):',
+                    '• Die Verbindung unserer körperlichen Gefühlsseite, unseres Gefühlspols, mit unserem Unterbewussten und unserer körperlichen Handlungsseite, unseres Handlungspols, mit unserem Bewusstsein zeigt sich in Folgendem (siehe auch \\italic{\\jumpname{OM:SpaLeb:Care-Prozess:BeobachtHinweise}}):',
                     '– Unser Herz, dessen Schlag wir nicht bewusst steuern können, liegt auf unserer körperlichen Gefühlsseite des Unterbewussten, dafür ist auf dieser Seite unsere Lunge verkleinert. Wir können also sagen, dass unsere Atmung sowohl auf unserer unterbewussten Seite, als auch auf unserer bewussten Seite, mit dem leichten Schwerpunkt in Richtung Bewusstsein, verortet ist. So in etwa beobachten wir auch unsere Verbindung zu unserer Atmung.',
                     '• Hierin lässt sich das hierarchisch fraktale, selbstähnliche Wesen unseres Achtsamkeitsprozesses erkennen:',
                     '– Bezeichne ich unsere weibliche Gefühlsseite als unsere passive Seite, dann können wir sagen: Wenn wir ganz in Ruhe und beständig unsere passive Seite aktivieren (in Ruhe → aktivieren → passive Seite), dann kommen wir zur Ruhe, bis in unseren Schlaf. Unser Schlaf ist also mit einer fraktal wechselnden Hierarchie von passiv, aktiv, passiv, und so fort, verbunden.',
@@ -55,10 +55,10 @@
                       
                   array( 'text', array( text => array(
                     'Unser Leben vollzieht sich in einer dem Tag- und Nachtrhythmus folgenden Schwingung zwischen Wachsein sowie Aktivsein und Schlaf.'."\n".
-                    'Es ist eine Tag-Nacht-Schwingung zwischen den Polen unseres \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozesses},'."\n".
+                    'Es ist eine Tag-Nacht-Schwingung zwischen den Polen unseres \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozesses},'."\n".
                     'die Tagsüber meist unseren Handlungspol in den Vordergrund bringt und des Nachts unseren Gefühlspol;'."\n".
                     'eine Schwingen zwischen unserem Bewusstsein und unserem Unterbewusstsein, Unbewusstsein oder Nichtbewusstsein.'."\n",
-                      'Die Realität dieser Schwingung zwischen den Polen unseres Achtsamkeitsprozesses ist ein weiterer deutlicher Hinweis auf \\jump{OM:SpaLeb:Achtsamkeitsprozess:BeobachtHinweise}{seinen Realitätsbezug}'."\n".
+                      'Die Realität dieser Schwingung zwischen den Polen unseres Care-Prozesses ist ein weiterer deutlicher Hinweis auf \\jump{OM:SpaLeb:Care-Prozess:BeobachtHinweise}{seinen Realitätsbezug}'."\n".
                     'und seine Bedeutung für unser Leben.'."\n".
                     'Unsere dauerhafte Ignoranz dieses Rhythmus ist mit unserem Leben nicht vereinbar.'."\n".
                     'Sie ist tödlich.'."\n",

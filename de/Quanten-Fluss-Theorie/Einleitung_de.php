@@ -969,7 +969,7 @@
                       'Die spannende Frage wird so aufgeworfen, welcher Elementarprozess die Stabilität und Entwicklung der Lebewesen regelt.'."\n"))),
                       
                   array( 'text', array( Shape  => 'italic', text => array(
-                      'Ich nenne den zentralen Regelprozess der Lebewesen den \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}.'."\n".
+                      'Ich nenne den zentralen Regelprozess der Lebewesen den \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess}.'."\n".
                       'Er steht mit im Zentrum meiner Natur- und Lebensphilosophie vom \\jump{OM:SpaLeb:Home}{›Spannungsspiel des Lebens‹}.'."\n"))),
  
                   /*array( 'text', array( text => array(

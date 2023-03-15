@@ -68,6 +68,7 @@
           'OM:SpaLeb:Care-Prozess:Vortext:Fig-AchtsamkeitsprozessBewWiss' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
           'OM:SpaLeb:Care-Prozess:Vortext:Klaerung' => array( headline_text => 'Klärungen durch den Achtsamkeitsprozess', headline_text_short => 'Klärungen durch den Achtsamkeitsprozess'),
                    
+        'OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess' => array( headline_text => 'Achtsamkeitsprozess', headline_text_short => 'Achtsamkeitsprozess'),
         'OM:SpaLeb:Care-Prozess:Achtsamkeit' => array( headline_text => 'Achtsamkeit', headline_text_short => 'Achtsamkeit'),
         'OM:SpaLeb:Care-Prozess:NaehereBetracht' => array( headline_text => 'Nähere Betrachtung', headline_text_short => 'Nähere Betrachtung'),
         'OM:SpaLeb:Care-Prozess:BeobachtHinweise' => array( headline_text => 'Beobachtbare Hinweise', headline_text_short => 'Beobachtbare Hinweise'),

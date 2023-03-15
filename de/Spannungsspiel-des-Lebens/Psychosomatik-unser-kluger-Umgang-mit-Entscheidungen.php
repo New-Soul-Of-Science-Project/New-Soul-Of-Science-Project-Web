@@ -30,8 +30,8 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Seit dem ich im \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess} den zentralen Regelprozess unseres Lebens denke erkannt zu haben, versuche ich zu verstehen,'."\n".
-                    'wie häufig beobachtete pschosomatische Probleme mit ihm verbunden sein mögen.'."\n",
+                    'Seit dem ich im \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess} und seinem \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozess} den zentralen Regelprozess unseres Lebens denke erkannt zu haben, versuche ich zu verstehen,'."\n".
+                    'wie häufig beobachtete psychosomatische Probleme mit ihm verbunden sein mögen.'."\n",
                       'Psychosomatische Probleme, mit denen ich mich seit langem befasse sind Kreisgedanken und Verspannungen.'."\n".
                     'Dabei handelt es sich um psychische und körperliche Spannungen in Form von Blockaden, die offenbar in gewissem Zusammenhang miteinander stehen können und für gewöhnlich auch gemiensam auftreten.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik-Entscheidungen:Vortext:XXX', text =>

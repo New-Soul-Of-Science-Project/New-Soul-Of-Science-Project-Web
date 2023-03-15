@@ -329,8 +329,8 @@
                   array( 'text', array( text => array(
                     'Unsere Emotionen entspringen auf komplexe Weise unserer Selbstwahrnehmung – einer inneren Sensorik –, die sozusagen in uns hineinhorcht, wie es es ist, wie es uns geht.'."\n".
                     'Dabei kommen leicht Bewertungen unserer Lebenssituation ins Spiel, die uns zu Handlungen antrieben können.'."\n".
-                    'Diese Handlungen können eine Änderung unserer Lebenssituation bewriken, die schließlich unsere Emotionen und Gefühle beeinflussen.'."\n",
-                      'Diese etwas vereinfachte Darstellung der Bedeutung unserer Emotionen und Gefühle führt bei detaillierter Betrachtung zum Modell des \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozesses}.'."\n"))),
+                    'Diese Handlungen können eine Änderung unserer Lebenssituation bewirken, die schließlich unsere Emotionen und Gefühle beeinflussen.'."\n",
+                      'Diese etwas vereinfachte Darstellung der Bedeutung unserer Emotionen und Gefühle führt bei detaillierter Betrachtung zum Modell des \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozesses}, der Teil des \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozesses} ist.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
                       
                 'Die Veränderung unserer Emotionen und Gefühle')),
@@ -364,7 +364,7 @@
                       
                 'Unser Achtsamkeitsprozess – Lebenlernen und Persönlichkeitsentwicklung')),
                   array( 'text', array( text => array(
-                    'Der \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}, den ich durch die neue Naturphilosophie entdeckt habe, ist in meinen Augen einer unserer zentralen Lebensprozesse:'."\n".
+                    'Der \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozess}, den ich durch die neue Naturphilosophie entdeckt habe, ist in meinen Augen einer unserer zentralen Lebensprozesse:'."\n".
                     'Er stellt unsere Gefüle und unsere Handlungen in den Zusammenhang eines Kreislaufs, der am Ende unser lebenslanges Lebenlernen und unsere Persönlichkeitsentwicklung bedeutet.'."\n".
                     'Wir stellen bei intensiver Beschäftigung mit dem Achtsamkeitsprozess fest, dass er der Prozess unserer \\jump{OM:SpaLeb:Psyche-und-Stimmung}{Psyche} ist, er ist der Lernprozess in Bezug auf unser Befinden und unser Handeln.'."\n",
                       'Yoga schult unseren Achtsamkeitsprozess: Es justiert oder tuned unsere Selbstwahrnehmung und Umweltwahrnehmung, die die ausgelösten und wahrgenommen Gefühle'."\n".

@@ -23,7 +23,7 @@
                     '• Im Extremfall schlafen wir oder sind hoch aktiv. Wachen und aktiv sein und schlafen entspringen also der Mond-Seite (Tha) und der Sonnenseite (Ha) unseres Körpers, unserem Achtsamkeitsprozess.',
                     '– Das Hexagram steht also nicht nur für männlich und weiblich. Es steht für aktiv und aufgerichtet sein, sowie für ruhig sein und liegen, für ruhen.',
                     '• Wenn wir verliebt sind, sind wir schlafwandlerisch.',
-                    '• Auch auf der Seite \\italic{\\jumpname{OM:SpaLeb:Psychosomatik}} und im Abschnitt \\italic{\\jumpname{OM:SpaLeb:Achtsamkeitsprozess:BeobachtHinweise}} berücksichtigen.',
+                    '• Auch auf der Seite \\italic{\\jumpname{OM:SpaLeb:Psychosomatik}} und im Abschnitt \\italic{\\jumpname{OM:SpaLeb:Care-Prozess:BeobachtHinweise}} berücksichtigen.',
                     '\\bold{Detailliert erweiterte Sicht}',
                     '• Der Achtsamkeitsprozess spiegelt sich in Polen und Verläufen – Gradienten – in unserem Körper wider, siehe Notizen \\jumpname{OM:SpaLeb:Psychosomatik}.',
                     '• Die hier dargestellte Polarisation unserer Körperhälften in Bezug auf die Frage, was unser Leben ist oder ausmacht, ist in meinen Augen nur ein Teil der Facetten, in denen sich unser Leben in unserem Körper widerspiegelt. Im Sinne des Kundalini-Prozesses zeigt sich ein Verlauf der Persönlichkeitsentwicklung, ein Gradient. Seine Basis liegt in unserem Anus/Beckenboden, und verläuft bis in unser Drittes Auge und ins Kronen-Chakra. \\\\ Betrachten wir diesen Gradienten etwas detailierter, so setzt er sich in meinen Augen eigentlich aus zwei Gradienten zusammen, in denen sich tatsächlich die Pole unserer Körperhälften widerspiegeln: \\\\ Von unten nach oben – Beckenboden bis ins Kronen-Chakra oder sogar beginnend von den Füßen, auch in die Hände gehend – verläuft unser Handlungsgradient. Von hinten nach vorne verläuft unser emotionaler Gradient, vom Rücken bis zur Vorderseite unseres Rumpfes. Gleiches auch in den Gliedmaßen. \\\\ Demnach haben wir zwei Basen in unserem Körper, den Beckenboden und den Rücken. Beide vereinigen sich im Anus/Beckenboden. Dieser Umstand lässt sich durch folgende Bilder verdeutlichen: \\\\ Unser Handlungsgradient beginnt im Beckenboden, erweitert sich in die Füße, und richtet unseren Körper stolz auf, so das wir gut handeln können. \\\\ Unser Emotionsgradient ist unsere Basis, wenn wir auf dem Rücken liegen. Er beginnt am Rücken, erweiterter gesehen auch an den Rückseiten unserer Gliedmaßen, und steigert sich zu unserer Körpervorderseite hin. Dort sitzen all die sehr wahrnehmungssensiblen und emotionalen Bereiche unseres Körpers, wie das Gesicht, die Kehle, die Brustwarzen, der Solarplexus, der Bauch und Vagina/Penis. \\\\ Gemeinsam ergeben der Handlungs- und der Emotionsgradient den Persönlichkeitsentwicklungs-, Lern- und Wachstumsgradienten des Kundalini- oder Achtsamkeitsprozesses, der im Dritten Auge, dem dialonalen Maximum beider Gradienten, endet. Interessant dann auch ist die Frage, wo die jeweiligen Maxima der einzelnen Gradienten im Körper liegen. Ich würde mutmaßen, das Handlungsmaximum liegt in unserem Gehirn. Das Emotionsmaximum dürfte in unseren Keimdrüsen in den Genitalien liegen.',
@@ -185,8 +185,8 @@
                   'Djet und Neheh im Achtsamkeitsprozess')),
                   array( 'text', array( text => array(
                     'Unser Fühlen und Handeln bestimmt ganz wesentlich unser Leben, unser Schicksal.'."\n".
-                    'Nach dem \\jump{OM:SpaLeb:Home}{›Spannungsspiel des Lebens‹} steht unser Fühlen und Handeln durch den \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess} miteinander und mit unserem Gedeihen, also unserer Reife,'."\n".
-                    'unserer Persönlichkeitsentwicklung und unserem Lernprozess, im Zusammenhang.'."\n",
+                    'Nach dem \\jump{OM:SpaLeb:Home}{›Spannungsspiel des Lebens‹} steht unser Fühlen und Handeln durch den \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess} miteinander und mit unserem Gedeihen, also unserer Reife,'."\n".
+                    'unserer Persönlichkeitsentwicklung – dem \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozess} – und unserem Lernprozess, im Zusammenhang.'."\n",
                       'Unser Achtsamkeitsprozess regelt unsere Fortentwicklung, auf Basis unserer Stabilität und unsere Stabilität auf Basis unserer Fortentwicklung.'."\n".
                     'Er balanciert unsere Veränderung und unsere Stabilität aus und bringt damit die Djet- und Neheh-Zeit in unser Leben.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
@@ -351,7 +351,7 @@
                   array( 'text', array( text => array(
                     'Auch unsere momentane kulturelle Überbetohnung des Rationalen in Form unseres Verstandes als angeblicher Gegensatz zum Emotionalen, zum Gefühl, kann im Licht des Modells des Achtsamkeitsprozesses'."\n".
                     'differenzierter verstanden und zurechtgerückt werden.'."\n",
-                      'Es gibt demnach \\jump{OM:SpaLeb:Achtsamkeitsprozess:Vortext:Klaerung}{kein Verstand ohne Gefühl}:'."\n".
+                      'Es gibt demnach \\jump{OM:SpaLeb:Care-Prozess:Vortext:Klaerung}{kein Verstand ohne Gefühl}:'."\n".
                     'Denn nach dem Achtsamkeitsprozess besteht unser Verstand aus unserem Denken als Handlung und den Gefühlen, die wir zu unseren Gedanken haben.'."\n",
                       'Dem:'."\n"))),
 

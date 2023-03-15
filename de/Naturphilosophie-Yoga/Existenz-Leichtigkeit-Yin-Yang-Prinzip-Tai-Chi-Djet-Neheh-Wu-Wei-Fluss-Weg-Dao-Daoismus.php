@@ -220,7 +220,7 @@
                 'Unser Leben und sein Care-Prozess/Achtsamkeitsprozess', subline =>
                   'Eine Balance aus Stabilität und Fortentwicklung bestimmt unser Leben')),
                   array( 'text', array( text => array(
-                    'Der \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Care-Prozess} beziehungsweise \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}, der zentrale Regelprozess unseres Lebens nach dem ›Spannungsspiel des Lebens‹ (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Achtsamkeitsprozess}),'."\n".
+                    'Der \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess} beziehungsweise \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozess}, der zentrale Regelprozess unseres Lebens nach dem ›Spannungsspiel des Lebens‹ (siehe \\jumpname{OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Achtsamkeitsprozess}),'."\n".
                     'spiegelt, vereinfacht gesehen, eine sehr ähnliche Struktur wider, wie die ringförmigen Bestandteile des Vakuums, siehe oben:'."\n".
                     'Unser Gedeihen, unsere Psyche, unser Lernen und auch unsere Persönlichkeitsentwicklung sind unter anderem Bestandteile dieses Prozesses.'."\n",
                       'Unser Leben wird durch ihn, durch seine Regelung in einem Zirkel, auf einem bestimmten Pfad gehalten.'."\n".

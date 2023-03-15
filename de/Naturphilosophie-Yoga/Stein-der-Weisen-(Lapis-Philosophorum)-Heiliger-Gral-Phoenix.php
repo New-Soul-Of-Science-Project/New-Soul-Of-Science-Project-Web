@@ -148,7 +148,7 @@
                   array( 'text', array( text => array(
                     'Dies ist eine rätselhafte Umschreibung des, in meinen Augen inneren, Steins der Weisen.'."\n".
                     'Jedenfalls passt sie für mich nicht auf einen materiellen Gegenstand.'."\n",
-                      'Des Rätsels Lösung ist der \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess} oder \\jump{OM:SpaLeb:Psychosomatik:Vortext:KundaliniProzess}{Kundalini-Prozess},'."\n".
+                      'Des Rätsels Lösung ist der \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess}, sein \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozess} oder \\jump{OM:SpaLeb:Psychosomatik:Vortext:KundaliniProzess}{Kundalini-Prozess},'."\n".
                     'wie am Hermesstab\\footnote{\\const{NPYo_g_footnote_text_Hermesstab}} und'."\n".
                     'seinen Kundalini-Schlangen zu erkennen (siehe \\jumpname{OM:NPYo:Stein-der-Weisen:Stein-der-Weisen:Fig-Hermesstab}).'."\n".
                     'Die Darstellung dieses Entwicklungsprozesses durch aufsteigende Schlangen gab es entsprechend auch im alten Ägypten.'."\n".
@@ -573,9 +573,10 @@
                       )),
                       
                   array( 'text', array( text => array(
-                    'In unserem Leben bezieht sich dies auf die kleinsten Schritte des \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozesses}, wie ich habe Hunger und esse etwas leckeres –'."\n".
+                    'In unserem Leben bezieht sich dies auf die kleinsten Schritte des \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozesses}, wie ich habe Hunger und esse etwas leckeres –'."\n".
                     'ich verwandle den Mangel in Befriedigung und Genuss.'."\n".
-                    'Oder in Bezug auf größere Schritte unserer Persönlichkeitsentwicklung, in denen wir wichtige Dinge lernen und tiefere Probleme unseres Lebens lösen,'."\n".
+                    'Oder in Bezug auf größere Schritte unserer Persönlichkeitsentwicklung – in Form des \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozesses} –,'."\n".
+                    'in denen wir wichtige Dinge lernen und tiefere Probleme unseres Lebens lösen,'."\n".
                     'was auch aus dem Dunklen, Unwissenden, Unfähigen ins Licht führt.'."\n".
                     'Und beim Erwerb von Wissen aus dem dunklen Unbewussten ins helle Bewusste, dann abgespeichert im Unbewussten, wo es leicht wieder abgerufen werden kann.'."\n",
                       'Es beschreibt ebenso auch die Wintersonnenwende, also das Julfest oder Lichterfest, das wir auch Weihnachten oder Neujahr nennen,'."\n".

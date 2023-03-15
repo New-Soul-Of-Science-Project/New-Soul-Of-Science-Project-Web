@@ -78,7 +78,7 @@
                                            
                 'Justierung unserer Selbstwahrnehmung und der Achtsamkeitsprozess')),
                   array( 'text', array( text => array(
-                    'Der Zirkel aus unseren Handlungen und Gefühlen, den ich \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess} nenne,'."\n".
+                    'Der Zirkel aus unseren Handlungen und Gefühlen, den ich \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess} nenne,'."\n".
                     'justiert auf diese Weise beständig die Möglichkeiten unseres Fokus, des Filters unseres Bewusstseins, unserer bewussten Selbstwahrnehmung.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Philosophie:Vortext:XXX', text =>
                                            

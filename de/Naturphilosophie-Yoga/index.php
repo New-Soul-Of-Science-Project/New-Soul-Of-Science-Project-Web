@@ -57,7 +57,7 @@
                     'Dies ist der Gegenpol zur absoluten Stabilität, die nämlich absolute Hoffnungslosigkeit bedeuten würde.'."\n",
                       'Im Leben, wie in der ganzen Natur, geht es also auch um eine Balance zwischen der sicheren Stabilität und der Fortentwicklung.'."\n".
                     'Und die Fortentwicklung ist nicht ohne latente Zerstörung und damit nicht ganz ohne Risiko zu haben.'."\n".
-                    'Unser \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}, in meinen Augen der zentrale Regelprozess unseres Lebens, balanciert unsere Stabilität und Fortentwicklung aus.'."\n".
+                    'Unser \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess}, und sein \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozess}, in meinen Augen der zentrale Regelprozess unseres Lebens, balanciert unsere Stabilität und Fortentwicklung aus.'."\n".
                     'Diese Balance lernen wir durch Neugier und Herumspielen – und wagen dabei natürlich auch immer etwas.'."\n",
                       'Yoga, im Besonderen seine im Zentrum stehende Atmung und seine körperlichen Übungen, die Asanas, schulen und justieren unseren Achtsamkeitsprozess.'."\n".
                     'Dadurch können unsere Stabilität, unser seelisches und körperliches Gedeihen, unsere Selbstheilungskräfte, unser Lernen und unsere Persönlichkeitsentwicklung gefördert werden.'."\n"))),

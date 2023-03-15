@@ -23,7 +23,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Der \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess} ist kein nur theoretisches Konstrukt.'."\n".
+                    'Der \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess}, und auch sein \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozess}, ist kein nur theoretisches Konstrukt.'."\n".
                     'Wir beobachten ihn, repräsentiert durch seine Pole, in bestimmten Aspekten der Geometrie unseres Körpers.'."\n".
                     'So wird deutlich, wie unsere Psyche, unser individuelles Erleben und Verhalten, mit unserem Körper und seinen Spannungen verwoben ist.'."\n",
                       'Psychosomatik ist genau diese Verwobenheit der Spannungen unserer Psyche und unseres Körpers.'."\n"))),

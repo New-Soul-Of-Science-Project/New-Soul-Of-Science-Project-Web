@@ -865,7 +865,7 @@
                   array( 'text', array( text => array(
                     'Erstaunlicherweise lässt sich im Rahmen der Physik der Quanten-Fluss-Theorie, die grundsätzlich auf Regelprozessen beruht,'."\n".
                     'definieren, wie wir uns \\jump{OM:SpaLeb:Bewusstsein}{Bewusstsein} ganz grundsätzlich vorstellen können.'."\n",
-                      'Wird die Perspektive auf Bewusstsein um den Lernprozess und die Erinnerung erweitert, dann gelangen wir zum zentralen Regelprozess des Lebens, zum \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}.'."\n".
+                      'Wird die Perspektive auf Bewusstsein um den Lernprozess und die Erinnerung erweitert, dann gelangen wir zum zentralen Regelprozess des Lebens, zum \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess}, der auch den \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozess} beinhaltet.'."\n".
                     'Dies ist auch nicht ganz verwunderlich, basiert das Verständnis des Lebens aus Sicht der Biologie ja ebenfalls weitestgehend auf der Betrachtung der Regelprozesse der Lebewesen.'."\n",
                       'In der Quanten-Fluss-Theorie wird die Stabilität jeder Existenz von ihrem Elementarprozess geregelt.'."\n".
                     'Der Achtsamkeitsprozess ist demnach der Elementarprozess jedes Lebewesens.'."\n"))),
@@ -891,7 +891,7 @@
                       '(• Die FrQFT ist außschließlich über ein fraktales Prinzip und System von Regelprozessen definiert:)',
                       '(– Jede Existenz in der FrQFT hat einen zentralen Regelprozess, der seine Existenz stabilisiert.)',
                       '(– Damit liegt auch jedem Lebewesen ein zentraler Regelprozess seiner Existenz, deines Lebens, zugrunde.)',
-                      '(– Dies ist der \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}, der der Dreh- und Angelpunkt der natur- und Lebensphilosophie des \\jump{OM:SpaLeb:Home}{›Spannungsspiels des Lebens‹} ist.)',
+                      '(– Dies ist der \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess}, der der Dreh- und Angelpunkt der natur- und Lebensphilosophie des \\jump{OM:SpaLeb:Home}{›Spannungsspiels des Lebens‹} ist.)',
                     ))),
                       
                   array( 'headline', array( jump_name => 'OM:FrQFT:Diskussion:LebenFrQFT:XXX', text =>
@@ -925,7 +925,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess'),
                     )),
               )
           ); ?>

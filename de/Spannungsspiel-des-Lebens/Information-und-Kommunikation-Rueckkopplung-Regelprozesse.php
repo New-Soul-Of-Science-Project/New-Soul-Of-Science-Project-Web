@@ -141,7 +141,7 @@
                     'Ich kann dies selber immer wieder intensiv erfahren.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Information-Kommunikation:Vortext:XXX', text =>
                                            
-                'Information, Wissen, Bewusstsein und Achtsamkeit', subline =>
+                'Information, Wissen, Bewusstsein und der Care-Prozess', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Information kann so eine Veränderung hervorbringen, die wir Wissen nennen und auch Bewusstsein und Achtsamkeit.'."\n",
@@ -150,7 +150,7 @@
                       
                   array( 'text', array( text => array(
                     'Auf den nächsten Seiten möchte ich mich näher damit befassen, dass jeder physikalische Regelprozess ein gewisses \\jump{OM:SpaLeb:Bewusstsein}{Bewusstsein} in sich trägt,'."\n".
-                    'wie der \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess} als zentraler Regelprozess des Lebens funktioniert und'."\n".
+                    'wie der \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess} als zentraler Regelprozess des Lebens funktioniert und'."\n".
                     'wie wir darüber zu den Grundlagen der \\jump{OM:SpaLeb:Psychosomatik}{Psychosomatik} kommen.'."\n"))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent',

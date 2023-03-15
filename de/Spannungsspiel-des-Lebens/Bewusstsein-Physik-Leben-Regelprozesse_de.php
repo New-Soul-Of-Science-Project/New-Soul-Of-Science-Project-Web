@@ -18,7 +18,7 @@
                     '• Die Materie kann hier auch als Rückgrat, als auskristallisierte Knochen – auskristallisiertes Bewusstsein –, im Zusammenspiel zwischen Seele und Materie gesehen werden. Durch die auskristallisierte Materie ist erst ein intensives Wechselspiel möglich. Siehe auch \\jumpname{OM:SpaLeb:Koerperliche-und-seelische-Existenz}.',
                     '• Hier wird der ›Dualismus vom Teil und vom Ganzen‹ deutlich sichtbar, siehe Ordner. Ein fraktaler Dualismus, der dem Djet-Neheh-Dualismus ähnelt oder gleicht.',
                     '\\bold{Bewusstsein und Wissen im Achtsamkeitsprozess:}',
-                    '• Auf der Seite \\italic{\\jumpname{OM:SpaLeb:Achtsamkeitsprozess}} führe ich das Bewusstsein inspiriiert durch seine Synonyme, wie Wissen, Information und Klarheit, ein. Es vermittelt die Übergänge zwischen den Etappen des Achtsamkeitsprozesses.',
+                    '• Auf der Seite \\italic{\\jumpname{OM:SpaLeb:Care-Prozess}} führe ich das Bewusstsein inspiriert durch seine Synonyme, wie Wissen, Information und Klarheit, ein. Es vermittelt die Übergänge zwischen den Etappen des Care-Prozesses.',
                     '\\bold{Bewusstsein und Resonanz:}',
                     '• Auf der Seite \\italic{\\jumpname{OM:FrQFT:De-Broglie-Bohm-Theorie}} wird vermutet, dass alle Elementarprozesse und wohl auch alle untergeordneten Regelprozesse des Lebens mit den entsprechenden Schwingungsfrequenzen des Vakuums in Wechselwirkung stehen. Dadurch sind alle Regelprozesse gleicher Frequenz miteinander verbunden.',
                     '\\bold{Bewusstsein und Physik:}',
@@ -92,7 +92,7 @@
                     'sind solche Regelprozesse.'."\n".
                     'Regelprozesse sind rückgekoppelte Systeme, die durch ihre Rückkopplung geregelt werden.'."\n".
                     'Durch ihre Rückkopplung geregelt werden bedeutet nichts anderes, als durch ihre Selbstwahrnehmung stabilisiert werden, existent bleiben.'."\n",
-                      'Beim Elementarprozess der Lebewesen handelt es sich hierbei um den von mir sogenannten \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}.'."\n".
+                      'Beim Elementarprozess der Lebewesen handelt es sich hierbei um den von mir sogenannten \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozess}.'."\n".
                     'Auf diesen komme ich später noch zu sprechen.'."\n"))), */
                   /* array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:Vortext:XXX', text =>
                       
@@ -217,12 +217,12 @@
                   'Der kognitive Achtsamkeitsprozess des Lebens')),
                   array( 'text', array( text => array(
                     'Hierzu gehören unsere kognitive Wahrnehmung, unser kognitiver Lernprozess und unsere kognitive Erinnerung, unser aktives und proaktives Verhalten.'."\n".
-                    'Unsere Meme sind gemeint – ein Begriff verstanden als Synonym zu unseren Genen –, unser kognitives Gedächtnis des Girns und Nervensystems allgemein.'."\n",
-                      'Dieser \\jump{OM:SpaLeb:Achtsamkeitsprozess}{kognitive Achtsamkeitsprozess} ist mit unseren Wahrnehmungsfiltern, also mit unserer unbewussten und bewussten Steuerung unseres Fokus, unserer Intuition und unserem Denkprozess sowie mit mehreren Reflexionsebenen verbunden.'."\n"))),
+                    'Unsere Meme sind gemeint – ein Begriff verstanden als Synonym zu unseren Genen –, unser kognitives Gedächtnis des Gehirns und Nervensystems allgemein.'."\n",
+                      'Dieser \\jump{OM:SpaLeb:Care-Prozess}{kognitive Care- oder Achtsamkeitsprozess} ist mit unseren Wahrnehmungsfiltern, also mit unserer unbewussten und bewussten Steuerung unseres Fokus, unserer Intuition und unserem Denkprozess sowie mit mehreren Reflexionsebenen verbunden.'."\n"))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess'),
-                      // array(  jump_name => 'OM:SpaLeb:Bewusstsein:InformationIstWirkung'),
+                      // array(  jump_name => 'OM:SpaLeb:Care-Prozess'),
+                      array(  jump_name => 'OM:SpaLeb:Bewusstsein:InformationIstWirkung'),
                     )),
                 )
           ); ?>
@@ -357,7 +357,7 @@
                     ))),
             
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess'),
                     )),
               )
           ); */ ?>

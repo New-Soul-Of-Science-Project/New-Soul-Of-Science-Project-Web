@@ -39,7 +39,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Denn ohne meine Entdeckung des \\jump{*SpaLeb:Achtsamkeitsprozess-Implem}{Achtsamkeitsprozesses} als \\jump{OM:SpaLeb:Was-ist-Leben}{physikalische Grundlage des Lebens},'."\n".
+                    'Denn ohne meine Entdeckung des \\jump{*SpaLeb:Care-Prozess-Implem}{Care-Prozesses} als \\jump{OM:SpaLeb:Was-ist-Leben}{physikalische Grundlage des Lebens},'."\n".
                     'die erst anschließend kam, ist es nicht so einfach zu verstehen, wie der Ausdruck unseres Gesichts und seiner Gesichtshälften mit'."\n".
                     'unserer \\jump{OM:SpaLeb:Psychosomatik}{Psychosomatik} verbunden ist.'."\n".
                     'Erst, wenn wir verstehen, worauf die Aufgabenteilung unserer Gehirnhälften beruht, auf dem Gefühlspol und dem Handlungspol unseres Achtsamkeitsprozesses,'."\n".
@@ -108,7 +108,7 @@
                     'Dies ist maßgeblich mit unserer \\jump{OM:SpaLeb:Gesundheit-Heilung}{Gesundheit und Heilung} und mit unserer \\jump{OM:SpaLeb:Psychosomatik}{Psychosomatik} verbunden.'."\n",
                       'Der Achtsamkeitsprozess verknüpft unsere Lebenssituation mit unseren Gefühlen zu dieser.'."\n".
                     'Diese Gefühle können in Antrieben münden, die schließlich zu Handlungen führen können, zu denen auch das Denken zählt.'."\n".
-                    'Aus unseren Handlungen resultiert unsere neue Lebenssituation und der Kreislauf unseres \\jump{*SpaLeb:Achtsamkeitsprozess-Implem}{Achtsamkeitsprozesses} beginnt erneut.'."\n"))),
+                    'Aus unseren Handlungen resultiert unsere neue Lebenssituation und der Kreislauf unseres \\jump{*SpaLeb:Care-Prozess-Implem}{Care-Prozesses} beginnt erneut.'."\n"))),
                     
                   // #!: Wird leider nicht automatisch aufgeklappt, wenn ein Link zu den Abbildungen angeklickt wird !!!
                   /*array( 'fade-in-area', array( Display => 'hideContent',
@@ -129,7 +129,7 @@
                       'Damit spielt unser Achtsamkeitsprozess die Hauptrolle in unserem Leben und ist die Grundlage unserer Biologie oder Biophysik.'."\n"))),
  
                   array( 'text', array( text => array(
-                    'Er regelt letztlich auch unser Überleben und spielt sogar eine wichtige Rolle in unserer \\jump{OM:SpaLeb:Achtsamkeitsprozess:AchtsamkeitsprozesGrundlLeben}{Evolution},'."\n".
+                    'Er regelt letztlich auch unser Überleben und spielt sogar eine wichtige Rolle in unserer \\jump{OM:SpaLeb:Care-Prozess:AchtsamkeitsprozesGrundlLeben}{Evolution},'."\n".
                     'was eine neue und in diesem Gesamtzusammenhang revolutionäre Erkenntnis ist.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       
@@ -160,7 +160,7 @@
                         '\\condb{Ha (Sonne) ↔︎ Tha (Mond)} \\\\ \\italic{nach dem \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Tantra} und \\jump{OM:SpaLeb:Gesichtsausdruck:YogaTantra}{Hatha Yoga}}',
                         '\\condb{Ra (Sonne) ↔︎ Horus (Mond)} \\\\ \\italic{nach der \\jump{OM:NPYo:HaTha}{altägyptischen Mythologie}}',
                         '\\condb{Yang (männlich) ↔︎ Yin (weiblich)} \\\\ \\italic{daoistisch-tantrische, systematische Zuordnung, nicht wörtlich}',
-                        '\\condb{Handlung ↔︎ Gefühl} \\\\ \\italic{Pole unseres \\jump{*SpaLeb:Achtsamkeitsprozess-Implem}{Achtsamkeitsprozesses}}',
+                        '\\condb{Handlung ↔︎ Gefühl} \\\\ \\italic{Pole unseres \\jump{*SpaLeb:Care-Prozess-Implem}{Care-Prozesses}}',
                         '\\condb{linke Gehirnhälfte ↔︎ rechte Gehirnhälfte} \\\\ \\italic{Lateralisation unseres Gehirns}',
                         '\\condb{rechte Gesichtshälfte ↔︎ linke Gesichtshälfte} \\\\ \\italic{diagonale Verbindung mit dem Gehirn}',
                         '\\condb{rechte Körperhälfte ↔︎ linke Körperhälfte} \\\\ \\italic{diagonale Verbindung mit dem Gehirn}',
@@ -429,7 +429,7 @@
                       
                 'Unser Achtsamkeitsprozess spiegelt sich in unserem Gesicht')),
                   array( 'text', array( text => array(
-                    'Der \\jump{*SpaLeb:Achtsamkeitsprozess-Implem}{Achtsamkeitsprozess} ist im ›Spannungsspiel des Lebens‹ der zentrale Regelprozess jedes Lebewesens, sein \\jump{OM:SpaLeb:Bewusstsein:Vortext:Elementarprozess}{Elementarprozess}.'."\n".
+                    'Der \\jump{*SpaLeb:Care-Prozess-Implem}{Care-Prozess} ist im ›Spannungsspiel des Lebens‹ der zentrale Regelprozess jedes Lebewesens, sein \\jump{OM:SpaLeb:Bewusstsein:Vortext:Elementarprozess}{Elementarprozess}.'."\n".
                     'Ein Zirkel aus unserer Lebenssituation, unserem Gefühl dazu, unseren Antrieben durch diese, unseren Handlungen aufgrund dieser, mündet schließlich wieder in einer neuen Lebenssituation.'."\n",
                       'Dieser Zirkel ist mit unserem Lernprozess verbunden:'."\n".
                     'Wir lernen leben!'."\n".
@@ -438,7 +438,7 @@
                     'Unsere tendenzielle Neigung hin zu besseren Gefühlen erweitert den Zirkel zu einer Helixspirale, die für unsere Persönlichkeitsentwicklung steht.'."\n",
                       'Unser Achtsamkeitsprozess ist demnach der Regelprozess unserer Psyche, der alle anderen Regelprozesse unserer Biologie regelt und koordiniert.'."\n".
                     'Er organisiert unser Leben, unser Überleben, und ist daher so zentral, dass er sich sogar in unseren Gesichtshälften widerspiegelt.'."\n".
-                    'Denn eine bevorzugte Zuständigkeit für unsere Gefühle und unsere Handlungen, um den Zirkel etwas zu vereinfachen, ist in unseren \\jump{OM:SpaLeb:Achtsamkeitsprozess:BeobachtHinweise}{Gehirnhälften} wiederzufinden,'."\n".
+                    'Denn eine bevorzugte Zuständigkeit für unsere Gefühle und unsere Handlungen, um den Zirkel etwas zu vereinfachen, ist in unseren \\jump{OM:SpaLeb:Care-Prozess:BeobachtHinweise}{Gehirnhälften} wiederzufinden,'."\n".
                     'im linken und rechten Pol unseres Gehirns, von denen jeder die gegenüberliegende Hälfte unseres Gesichts und unseres Körpers steuert.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Gesichtsausdruck:XXX', text =>
                       

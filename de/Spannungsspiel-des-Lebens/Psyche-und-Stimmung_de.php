@@ -43,7 +43,7 @@
                     '(– Der \\jump{OM:NPYo:Einleitung:ErkenneDichSelbst:Achtsamkeitsprozess}{Achtsamkeitsprozess} ist der zentrale Prozess unserer Persönlichkeitsentwicklung und mit \\jump[][*Bearb]{OM:SpaLeb:Koerperliche-und-seelische-Existenz:RitualFortentwicklung}{Djet und Neheh} verknüpft. Mit Neheh ist er verknüpft, weil er ein immerwährendes, stabilisierendes Ritual ist. Mit Djet, weil er unsere Persönlichkeitsentwicklung bestimmt. Neben unserer körperlichen Alterung ist der Achtsamkeitsprozess unser persönlicher Reifeprozess und Lernprozess.)',
                     '(– Der \\jump{OM:NPYo:Einleitung:ErkenneDichSelbst:Achtsamkeitsprozess}{Achtsamkeitsprozess} beginnt spätestens direkt nach der Geburt, weil ab dem Zeitpunkt die eigenen Handlungen zutiefst mit dem eigenen Wohlgefühl verbunden sind.)',
                     '(– Unser Stress ist unter anderem mit der Kausalität zwischen unseren Erwartungen und der dann geschehenden Realität verbunden.\\footnote[*Bearb]{Vgl. \\cite{Huether:RausAusDerDemenzFalle:2017}, Kap. Neue Erklärungen ändern die Sicht auf die eigene Lebensgestaltung. S. 43-51, hier S. 46-51. Und Kap. Wir wollen das Richtige, aber es gelingt uns nicht richtig, S. 53-77.} Läuft beides Inkohärent, also stimmt nur wenig miteinander überein, dann stresst uns dies meistens nachhaltig. Unsere Erwartungen haben viel mit unseren Sortierungen im Licht des Wohlgefühls zu tun. Was wir erwarten, was uns vorwiegend gut tut, tun wir ins Licht. Was wir denken, was uns nicht so gut tut, kommt in seine dunkle Korona.)',
-                    '(• Stress sollte hier thematisiert werden: Link vom Einleitungstext der Seite \\jumpname{OM:SpaLeb:Achtsamkeitsprozess} dort hin und von hier auch auf die Seite \\jumpname[*Bearb]{OM:SpaLeb:Psychosomatik-Stress}.)',
+                    '(• Stress sollte hier thematisiert werden: Link vom Einleitungstext der Seite \\jumpname{OM:SpaLeb:Care-Prozess} dort hin und von hier auch auf die Seite \\jumpname[*Bearb]{OM:SpaLeb:Psychosomatik-Stress}.)',
                     '(• Die Überwindung der Hilflosigkeit und Not als Grundanliegen der dauerhaften und gesunden Existenz einarbeiten. Vgl. auch Assel, Birgit. Die Uuntertanenfabrik. In: Rubikon (2018). URL: \\jump[https://www.rubikon.news/artikel/die-untertanenfabrik]{}{https://www.rubikon.news/artikel/die-untertanenfabrik}. Sowie: Vgl. auch \\cite{Fromm:DieFurchtVorDerFreiheit:1941}. Bezug auf \\jumpname{OM:SpaLeb:Koerperliche-und-seelische-Existenz} nehmen.)',
                     ))),
                       
@@ -86,7 +86,7 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '(• Von hier aus auf die Hauptseite verweisen: \\jumpname[*Bearb]{OM:SpaLeb:Achtsamkeitsprozess})',
+                    '(• Von hier aus auf die Hauptseite verweisen: \\jumpname[*Bearb]{OM:SpaLeb:Care-Prozess})',
                     ))),
                       
                   array( 'text', array( text => array(

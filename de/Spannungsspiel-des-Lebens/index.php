@@ -64,7 +64,7 @@
                     'unseres Stoffwechsels über unsere Anatomie und Psyche, beruht auf schwingenden Regelprozessen, die alle komplex miteinander verzahnt sind.'."\n".
                     'Diese Regelprozesse sind immer Spannungsbalancen zwischen Gegenspielern, die den Prozess in einer bestimmten Spur halten und ihn so stabilisieren.'."\n".
                     'Die Prozesse in uns sind immer im Fluss und in einer Balance zwischen Stabilität und Fortentwicklung, Harmonie und Disharmonie, bis hin zum Achtsamkeitsprozess.'."\n",
-                      'Der \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess} reguliert unser Wohlbefinden durch unsere bewussten Handlungen.'."\n".
+                      'Der \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess} reguliert unser Wohlbefinden durch unsere bewussten Handlungen.'."\n".
                     'Er ist der zentrale Regelprozess unseres Lebens, unser Elementarprozess, weil er alle unsere biologischen Regelprozesse organisiert und koordiniert.'."\n".
                     'Selbst unsere gesellschaftlichen Prozesse werden durch die Achtsamkeitsprozesse von uns allen gesteuert.'."\n",
                       'Es klingt vielleicht wie eine simple Mechanik, doch das ist weit gefehlt.'."\n".
@@ -151,7 +151,7 @@
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Einleitung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Was-ist-Leben'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Achtsamkeitsprozess'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Care-Prozess'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Koerperliche-und-seelische-Existenz'),
                       array( title => 'Unser Fokus \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => 'Wohin wir fokussieren, was wir „sehen“ und uns bewusst wird, das können wir verändern'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),

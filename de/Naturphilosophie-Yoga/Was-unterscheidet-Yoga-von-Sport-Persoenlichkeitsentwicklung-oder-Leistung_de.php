@@ -62,7 +62,7 @@
                         'Dieser Regelprozess verbindet unsere Lebenssituation mit unseren Gefühlen, unseren Antrieben und unseren Handlungen in einen Kreislauf:'."\n".
                           'Wir lernen, Wie unsere Lebenssituation mit unseren Gefühlen zu ihr, mit unseren Antrieben, die aus diesen entstehen, und mit unseren Handlungen – inklusive unseres Denkens –,'."\n".
                           'die zu einer neuen Lebenssituation führen, im Zusammenhang stehen.',
-                        'Ich nenne diesen Regelprozess den \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}.',
+                        'Ich nenne diesen Regelprozess den \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess}, der auch den \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozess} beinhaltet.',
                     ))),
                   array( 'text', array( text => array(
                     'Yoga tunt und justiert in besonderem Maß unseren Achtsamkeitsprozess und ermöglicht uns so eine angenehmere, gesündere Existenz.'."\n"))),

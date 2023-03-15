@@ -790,7 +790,8 @@
     '*Wirkungsquanten-Impulskegel-Herlei' => array( jump_name => 'OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten:WQ-WW'),
 
     // #: SpaLeb
-    '*SpaLeb:Achtsamkeitsprozess-Implem'    => array( jump_name => 'OM:SpaLeb:Achtsamkeitsprozess'),
+    '*SpaLeb:Achtsamkeitsprozess-Implem'    => array( jump_name => 'OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess'),
+    '*SpaLeb:Care-Prozess-Implem'           => array( jump_name => 'OM:SpaLeb:Care-Prozess'),
     '*SpaLeb:Disharmonieprinzip'            => array( jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz:OrganischesExistenzprinzip:DisharmPrinz'),
     '*SpaLeb:Selbstschutz'                  => array( jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Selbstmitgefuehl'),
     '*SpaLeb:Spannungsprinzip'              => array( jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz:OrganischesExistenzprinzip:SpanPrinz'),

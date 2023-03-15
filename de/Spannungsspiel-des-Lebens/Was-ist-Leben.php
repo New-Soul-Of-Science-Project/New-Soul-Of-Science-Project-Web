@@ -99,8 +99,8 @@
                 'Der Achtsamkeitsprozess', subline =>
                   '(Definition des Lebens)')),
                   array( 'text', array( text => array(
-                    'Diesen Zirkel und seine Erweiterung zu einer Helixspirale nenne ich den \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}.'."\n",
-                      'Die Erweiterung zur Helixspirale kommt durch unseren Lernprozess, unsere Persönlichkeitsentwicklung und unser körperliches und psychisches Gedeihen zustande,'."\n".
+                    'Diesen Zirkel und seine Erweiterung zu einer Helixspirale nenne ich den \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess}.'."\n",
+                      'Die Erweiterung zur Helixspirale kommt durch unseren Lernprozess, unsere Persönlichkeitsentwicklung – den \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozess} – und unser körperliches und psychisches Gedeihen zustande,'."\n".
                     'die dem Zirkel eine Entwicklung hinzufügen (siehe \\jumpname{OM:SpaLeb:Was-ist-Leben:Vortext:Fig-Achtsamkeitsprozess}).'."\n"))),
  
                   array( 'figure',
@@ -109,7 +109,7 @@
                   array( 'text', array( text => array(
                     'Der Achtsamkeitsprozess beinhaltet Aspekte des Lebens, die bisher in diesem Umfang nicht zusammengebracht werden.'."\n".
                     'Dazu gehören unter vielem anderen die körperliche und psychische Gesundheit und damit die Medizin, die Psychologie und so fort.'."\n".
-                    'Natürlich gehören dazu auch meist als eher esoterisch eingeordnete Aspekte, wie \\jump{OM:SpaLeb:Bewusstsein}{Bewusstsein} und \\jump{OM:SpaLeb:Achtsamkeitsprozess:Achtsamkeit}{Achtsamkeit}, und damit das Yoga und Aspekte alternativer Medizin.'."\n",
+                    'Natürlich gehören dazu auch meist als eher esoterisch eingeordnete Aspekte, wie \\jump{OM:SpaLeb:Bewusstsein}{Bewusstsein} und \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeit}{Achtsamkeit}, und damit das Yoga und Aspekte alternativer Medizin.'."\n",
                       'Da der Achtsamkeitsprozess alle unsere biologischen Regelprozesse koordiniert, reicht sein Einfluss bis in die Regulation der Zellfunktionen und damit bis hinunter auf'."\n".
                     'die Ebene der Gene.'."\n".
                     'Auf diese Weise bekommen wir eine Idee davon, warum beispielsweise psychische Probleme einen Einfluss auf die Entstehung von Krebs und viele andere Krankheiten haben.'."\n"))),
@@ -192,7 +192,7 @@
                   array( 'jumplist', array(
                       // array(  jump_name => 'OM:SpaLeb:Information-Kommunikation'),
                       // array(  jump_name => 'OM:SpaLeb:Bewusstsein'),
-                      array(  jump_name => 'OM:SpaLeb:Achtsamkeitsprozess', title_site => '\\name{OM:SpaLeb:Achtsamkeitsprozess} \\color{*TitleAdd}{\\small{(Definition des Lebens)}}'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess', title_site => '\\name{OM:SpaLeb:Care-Prozess} \\color{*TitleAdd}{\\small{(Definition des Lebens)}}'),
                     )),
                 )
           ); ?>

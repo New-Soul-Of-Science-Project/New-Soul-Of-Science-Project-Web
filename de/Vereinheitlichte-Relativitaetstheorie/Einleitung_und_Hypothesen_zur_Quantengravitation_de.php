@@ -205,7 +205,7 @@
                     'in Form von Regelprozessen organisiert.'."\n".
                     'Diese Regelprozesse sind letztlich fraktale Strukturen.'."\n".
                     'Hier sind alle Regelprozesse eingeschlossen, egal ob sie biologischer Natur sind oder ob sie die Stabilität der Elementarteilchen und damit deren Existenz organisieren oder das Vakuum, sprich das Medium.'."\n".
-                    'Sogar ein neuer, zentraler Prozess der Lebewesen stellt sich in dieser Perspektive heraus, der \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess}.'."\n".
+                    'Sogar ein neuer, zentraler Prozess der Lebewesen stellt sich in dieser Perspektive heraus, der \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess}.'."\n".
                     'Damit ist das Leben ein von vornherein dazugehörender Teil dieser neuen Physik'."\n"))),
                     ))),
                       
@@ -558,7 +558,7 @@
                     'Sie integriert sogar ein grundsätzliches Verständnis des Lebens in die Physik, wie ich im \\jump{OM:SpaLeb:Home}{›Spannungsspiel des Lebens‹} darlege.'."\n",
                       'In der neuen Physik der fraktalen Quanten-Fluss-Theorie basieren alle physikalischen Dinge oder Objekte aufgrund von sie stabilisierenden Regelprozessen.'."\n".
                     'Jedem Elementarteilchen, jedem Ding, liegt damit ein es zur Existenz bringender Elementarprozess zu grunde.'."\n".
-                    'So hat auch jedes Lebewesen einen seine Existenz stabilisierenden Elementarprozess, den ich \\jump{OM:SpaLeb:Achtsamkeitsprozess}{Achtsamkeitsprozess} nenne.'."\n"))),
+                    'So hat auch jedes Lebewesen einen seine Existenz stabilisierenden Elementarprozess, den ich \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess} nenne.'."\n"))),
                   /*array( 'headline', array( jump_name => 'OM:VRT:Einleitung:XXX', text =>
                       
                 'Idee zur Messung der Ruhelage des Mediums mittels eines Verschränkungsexperiments')),
