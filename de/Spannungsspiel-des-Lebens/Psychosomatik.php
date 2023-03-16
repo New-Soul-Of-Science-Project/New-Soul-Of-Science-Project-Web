@@ -675,14 +675,17 @@
                     'Eine Sache, für die ich etwas länger gebraucht habe, sie besser zu verstehen, ist,'."\n".
                     'unsere Stolz geschwelte Brust und welche Rolle unsere Brustwarzen, unsere Nippel, dabei spielen:'."\n",
                       'Ich argumentiere oben für den \\jump{OM:SpaLeb:Psychosomatik:Vortext:Achtsamkeitsgradient}{aufrechten Gang}'."\n".
-                    'des Menschen einen wichtigen Grund, nämlich, dass wir'."\n".
+                    'des Menschen, dass wir'."\n".
                     '\\jump{OM:SpaLeb:Psychosomatik:Vortext:GutFunktionierendemAchtsamkeitsprozess}{unsere sensible Seite nach vorne in die Welt richten}'."\n".
-                    'und auf diese Weise natürlich auch durch unsere frei werdenden Hände'."\n".
-                    'vielfältig und sensibel ins Fühlen und in die intentionale Handlung kommen,'."\n".
-                    '\\jump{OM:SpaLeb:Psychosomatik:Vortext:Care}{in die Fürsorge und in das Uns-Kümmern}.'."\n",
-                      'Wir gehen so selbstsicher und mit stolzer Brust durch die Welt.'."\n".
-                    'Wobei unsere sensible Seite und damit letztlich auch unsere selbstbewusste Körperhaltung, für mich'."\n".
-                    'unterschätzter Weise, wesentlich durch unser Bewusstsein unserer sensiblen Nippel bestimmt wird.'."\n".
+                    'und auf diese Weise in die feine Wahrnehmung und das sensible Fühlen unserer Umwelt, als auch'."\n".
+                    'in die intentionale Handlung gegenüber unserer Umwelt und unserer Mitmenschen kommen,'."\n".
+                    '\\jump{OM:SpaLeb:Psychosomatik:Vortext:Care}{in die Fürsorge und in das Uns-Kümmern}.'."\n".
+                    'Durch den aufrechten Gang werden natürlich unsere Hände frei, was sehr wichtig ist.'."\n".
+                    'Aber diese Begründung geht über das Frei-Werden unserer Hände weit hinaus.'."\n",
+                      'Richten wir uns sehr aktiviert auf, dann gehen wir selbstsicher und mit stolzer Brust durch die Welt.'."\n".
+                    'Wobei unsere sensible Seite und damit letztlich auch unsere selbstbewusste Körperhaltung'."\n".
+                    'wesentlich durch unser Bewusstsein unserer Brust und, für mich unterschätzter Weise, ganz besonders'."\n".
+                    'durch unser Bewusstsein unserer sensiblen Brustnippel bestimmt wird.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Stolze-Brust:XXX', text =>
                       
@@ -690,9 +693,9 @@
                   '… und unser Bewusstsein darüber, welche Rolle sie wirklich spielt')),
                    array( 'text', array( text => array(
                     'Aufgrund der ganz existenziellen Rolle der weiblichen Brust und ihrer Brustwarzen beim Säugen unserer Kinder,'."\n".
-                    'nimmt die weibliche Brust und die weiblichen Brustwarzen in unserem Leben und unserer Kultur heute immer noch'."\n".
+                    'nehmen die weibliche Brust und die weiblichen Brustwarzen in unserem Leben und unserer Kultur'."\n".
                     'eine ganz besondere Rolle ein.'."\n".
-                    'Das Säugen ist so das Urbild der Mutter, ihrer Fürsorge und der Geborgenheit, die sie spendet.'."\n",
+                    'Das Säugen ist das Urbild der Mutter, ihrer Fürsorge und der Geborgenheit, die sie spendet.'."\n",
                     ''))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent',
@@ -708,18 +711,18 @@
                     'und die Bindung des Kindes an ihn verändert.'."\n".
                     'Ebenso wird es ja mit Sicherheit seine Frau entlasten und so eine Veränderung und hoffentlich auch'."\n".
                     'eine Verbesserung ihrer Lebenssituation und ihrer gemeinsamen Beziehung bedeuten können.'."\n",
-                      'Ich habe in Chats hierzu aber auch gelesen, dass etliche Frauen dies ablehnen, weil nach deren Meinung'."\n".
+                      'Ich habe in Chats hierzu aber auch gelesen, dass etliche Frauen dies ablehnen, weil nach ihrer Meinung'."\n".
                     'das Stillen ihre originäre Aufgabe ist, dieses Verhalten des Mannes ihnen sogar etwas nimmt.'."\n".
                     'Andere Frauen begrüßen eine solche Idee natürlich auch, eben, weil es sie entlasten könnte.'."\n",
-                      'Ich habe es hier unter anderem erwähnt, um uns bewusst zu machen, dass wir nicht genau wissen,'."\n".
-                    'was wirklich möglich wäre, wenn sich eine Kultur entwickelte, die das Anlagen der Kinder auch an'."\n".
+                      'Ich erwähne die ihre Kinder säugenden Männer, um uns bewusst zu machen, dass wir nicht genau wissen,'."\n".
+                    'was wirklich möglich wäre, wenn sich eine Kultur entwickelte, die das Anlegen der Kinder auch an'."\n".
                     'Männerbrüste, konsequent von Beginn an leben würde; sprich, wozu der Mensch oder hier die Natur des Mannes'."\n".
                     'wirklich fähig wäre, wenn auch nur partiell.'."\n".
                     ''))),
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Ich bin sicher und erlebe, dass Frauen sich ihrer sensiblen Seite, die sie in die Welt richten, eher bewusst sind,'."\n".
+                    'Ich bin sicher und erlebe, dass Frauen sich ihrer sensiblen Seite, die sie mit ihrer Brust in die Welt richten, eher bewusst sind,'."\n".
                     'weil sie sich eher der Rolle ihrer Brüste und ihrer sensiblen Nippel bewusster sind, als das bei Männern der Fall ist.'."\n",
                       'Aber für viele schwule oder bisexuelle Männer spielen ihre eigenen Brustwarzen in der Sexualität eine'."\n".
                     'große Rolle, so, wie das auch bei Frauen der Fall ist.'."\n".
@@ -728,8 +731,8 @@
                       'Ich vernehme mittlerweile allerdings etliche Hinweise darauf, dass sich das beginnt zu ändert,'."\n".
                     'vermutlich, weil sich die sexuelle Freiheit auf unterschiedliche Weise immer mehr Wege bahnt'."\n".
                     'und weil Männer ihr Selbstbild ändern und sich mehr zugestehen, ihre weiche und somit'."\n".
-                    '„weibliche“ Seite zu erkennen, zuzulassen und auszuleben.'."\n",
-                      'Die Sensibilität meiner Brust und meiner Nippel wurde mir selber erst im Laufe meines Lebens zugänglich und'."\n".
+                    'sensible „weibliche“ Seite zu erkennen, zuzulassen und auszuleben.'."\n",
+                      'Die Sensibilität meiner Brust und meiner eigenen Nippel wurde mir selber erst im Laufe meines Lebens zugänglich und'."\n".
                     'ich begann mich dafür zu interessieren, was das besondere an unseren Brustwarzen ist;'."\n".
                     'eben an beiden, an weiblichen und an männlichen.'."\n",
                       'Im öffentlichen Leben spielt die männliche Brust eher eine martialische Rolle, indem sie für'."\n".
