@@ -41,7 +41,7 @@
                   array( 'text', array( text => array(
                     'Die folgende Einsicht zur Spiritualität hat auch in der akademischen Wissenschaft eine feste Grundlage:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Spiritualität hat etwas mit dem Verstehen, der Anerkenntnis und des Lebens in unserem Fühlen und Handeln zu tun,'."\n".
                         'dass unsere Existenz auf mehr als unserem uns bewussten Bewusstsein beruht.'."\n"))),
                       
@@ -57,7 +57,7 @@
                     'Als auch stark wissenschaftlich orientierter, sozialisierter und die Wissenschaft sehr hoch schätzender Mensch, hat es mich etliche Zeit gekostet,'."\n".
                     'eine nachhaltige Idee davon zu bekommen, was Spiritualität eigentlich für mich bedeutet; was sie für uns auch im wissenschaftlichen Kontext sinn­vol­ler­wei­se bedeuten kann:'."\n"))),
                                        
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Unser Umgang mit dem Unbewussten und unser Verstehenwollen und Reflektieren des Unbewussten als auch unseres Umgangs mit ihm, sehe ich als dafür ausschlaggebend an,'."\n".
                         'mich und andere als spirituelle Menschen zu bezeichnen.'."\n"))),
                       
@@ -86,7 +86,7 @@
                       'Der gute, liebevolle und offene Dialog zwischen den Polen in uns, über ihre Gefühle und Bedürfnisse, ist ein wichtiger Schlüssel für unsere Gesundheit und ein gutes Leben.'."\n".
                     'Darauf komme ich noch zurück.'."\n"))),
                                        
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Nur, wenn ich daran glaube, dass mir mein Dialog zwischen meinen inneren Polen hilft, kann er mir auch helfen.'."\n".
                         'Aber das alleine reicht nicht, denn ich bin auch darauf angewiesen dies geduldig zu erforschen und zu erlernen, um es immer besser in Gang zu setzen.'."\n",
                           'Wenn ich es dann immer intensiver und öfter erlebe, wird mein Glaube daran zu meiner Überzeugung, dass und wie genau dies funktioniert.'."\n".
@@ -98,7 +98,7 @@
                     'Ihr Glaube daran ist der Grund, aus dem sie ihre Hypothese verfolgen und überprüfen.'."\n".
                     'Wenn ihre Hypothese einen Realitätsbezug hat, dann führt ihre Überprüfung zu ihrer Überzeugung.'."\n"))),
                                        
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Ich verbinde mich Klug durch Selbstmitgefühl, anfänglichen Glauben, Erfahrung und möglicherweise Verständnis mit meiner Natur, meinem Unterbewusstsein, durch Kommunikation,'."\n".
                         'und durch Mitgefühl auch mit anderen Menschen, anderen Wesen und mit der Natur generell.'."\n"))),
                       

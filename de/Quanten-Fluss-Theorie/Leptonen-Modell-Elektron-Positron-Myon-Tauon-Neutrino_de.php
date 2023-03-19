@@ -640,7 +640,7 @@
                       'Trotzdem:'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Ich vermute, dass, und es ist aus meiner Sicht zu untersuchen, ob und inwieweit, der innere Spin'."\n".
                       'mit der Leptonenzahlerhaltung im Zusammenhang steht.\\color{*Bearb}{(Verweis: \\jump[https://de.wikipedia.org/wiki/Leptonenzahl]{}{Wikipedia: Leptonenzahl})}'."\n".
                     ''))),
@@ -1192,7 +1192,7 @@
                     'XXX Betazerfall?'."\n".
                     'XXX'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Ich stelle fest:'."\n".
                       'Nach meinem eigenen Schema – siehe \\jumpname{OM:FrQFT:ElektroschwacheWW:Symbolismus} – kann ein \\term{u}-Quark nicht quasi \\term{⅔} eines Positrons sein!!!!'."\n",
                         'Daraus folgt aber auch, dass es in meinem Modell im Grunde auch ein positiv geladenenes Elektron geben könnte!!!'."\n"))),*/

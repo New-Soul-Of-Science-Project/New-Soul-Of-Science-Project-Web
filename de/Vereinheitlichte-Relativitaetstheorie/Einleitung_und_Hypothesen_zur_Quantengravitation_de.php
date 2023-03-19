@@ -158,7 +158,7 @@
                       '(• Warum diese Konkretisierung hier?)',
                       '(– Um zu zeigen welche Bezüge sich daraus automatisch zur Quantenphysik und damit zu Vereinheitlichung der Physik ergeben?!)',
                     ))),*/
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Die nachfolgende, erste Entwicklungsstufe des Teilchenmodells der Vereinheitlichten Relativitätstheorie ist noch nicht vollständig realistisch'."\n".
                         'in Bezug auf die Beobachtungen der Quantenphysik.'."\n".
                         'Ein den Beobachtungen entsprechendes Teilchenmodell ist etwas komplexer und ergibt sich erst im späteren Verlauf der Entwicklung in der \\jump{OM:FrQFT:Home}{fraktalen Quanten-Fluss-Theorie}.'."\n".

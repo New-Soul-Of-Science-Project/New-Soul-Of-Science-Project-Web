@@ -30,7 +30,7 @@
                     'Darüber war ich dann schon etwas erstaunt und es machte mich sehr neugierig.'."\n".
                     'Neugierig zu verstehen, warum das so war.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                     'Yoga ist Körper- und Seelenpflege von innen. \\\\'."\n".
                     //'\\small{\\color{*TitleAdd}{Uns von außen zu Pflegen, halten wir für selbstverständlich. \\\\'."\n".
                     //'Die Pflege von innen haben wir meist nicht auf dem Schirm.}}'."\n"))),
@@ -75,7 +75,7 @@
                     'Diese Bilder sollen es uns erleichtern, uns selber zu erkennen und uns eine Orientierung geben, um Handlungsmöglichkeiten zur Verbesserung unserer Lebenssituation'."\n".
                     'und Lebensqualität zu finden; unsere mögliche Hilflosigkeit zu überwinden und damit unsere Not zu lindern.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                     'Viele Menschen wünschen sich eine bessere Zukunft … \\\\'."\n".
                     //'\\small{\\color{*TitleAdd}{Ich glaube, sie sollten an ihrer Gegenwart arbeiten. \\\\'."\n".
                     //'Dann ist deine Zukunft schon da.}}'."\n"))),

@@ -82,7 +82,7 @@
                     'Wenn wir beschreiben, wofür diese Formel steht, dann können wir sagen:'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Der jeweils höhere Operator \\term{x + 1} beschreibt,'."\n".
                       'wie häufig – ausgedrückt durch \\term{b} – der niedrigere Operator \\term{x} einen identischen Wert \\term{a} verkettet.'."\n".
                     ''))),
@@ -664,7 +664,7 @@
                     'Die nachfolgende Zahl, die rechts stehende, hat darauf keinen Einfluss.'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Der Null-Operator ist ein Inkrement- oder Zähl-Operator.'."\n".
                     ''))),
                       
@@ -708,7 +708,7 @@
                     'Die nachfolgende Zahl, die rechts stehende, hat darauf dann natürlich auch keinen Einfluss.'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Der Minus-Eins-Operator ist nur als Vorzeichen ein Inkrement- oder Zähl-Operator.'."\n".
                       'Als Operator zwischen zwei Zahlen ist er neutral.'."\n".
                     ''))),
@@ -750,7 +750,7 @@
                     'Wir sehen:'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Der Minus-Zwei-Operator ist völlig neutral.'."\n".
                       'Damit sind alle noch kleineren Operatoren auch neutral.'."\n".
                     ''))),

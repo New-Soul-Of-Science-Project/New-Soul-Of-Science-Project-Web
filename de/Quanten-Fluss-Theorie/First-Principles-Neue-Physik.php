@@ -204,7 +204,7 @@
                     'Denn in der \\jump{OM:FrQFT:HeisenbergUnschaerfe}{Abzählinterpretation der Heisenbergschen Unschärferelation} spiegelt sich die prinzipielle Unschärfe einer solchen Abzählung wider,'."\n".
                     'wenn wir davon ausgehen, dass es bei der Energie um die Zählung von einheitlichen Wirkungen \\term{h} (Plancksches Wirkungsquantum) pro Zeit und beim Impuls um \\term{h} pro Strecke geht.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Die in der Abzählinterpretation der Heisenbergschen Unschärferelation gezählten diskreten Wirkungen \\term{h} entsprechen den genannten einheitlichen Fundamentalteilchen'."\n".
                       'der Elementarteilchen, weshalb ich diese \\bold{Wirkungsquanten (wq)} nenne.'."\n"))),
                                                       

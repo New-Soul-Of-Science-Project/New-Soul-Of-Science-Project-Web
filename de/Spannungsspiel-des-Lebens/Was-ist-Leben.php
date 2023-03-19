@@ -44,7 +44,7 @@
                     '(• Information kann nicht unabhängig vom Sender und besonders nicht unabhängig vom Empfänger definiert werden. Mit manchen „Informationen“ können wir etwas anfangen und mit anderen nicht. Was bedeutet etwas damit anfangen können? Es kann nur bedeuten, dass es den Empfänger verändert, er die Informationen in diesem Sinne aufnehmen kann. Information, mit der wir etwas anfangen können verändert uns, selbst dann, wenn wir das nicht wollen. Information hat also etwas mit der Einwirkung zu tun. Daher ist in der \\jump{OM:FrQFT:Home}{›fraktalen Quanten-Fluss-Theorie‹} das Wirkungsquantum und seine Realisierung im Wirkungsquant die grundlegende Informationseinheit (Energieeinheit). Die grundlegenste Wirkung der Wirkungsquanten einer Struktur, wie Materie, ist dann auch die Gravitation (\\jump{OM:FrQFT:Quantengravitation}{Quantengravitation}), der sich niemand entziehen kann.)',
                     ))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Leben ist eine beständige Stabilität in der Entwicklung. \\\\'."\n".
                       'Leben ist eine beständige Entwicklung in der Stabilität.'."\n"))),
                       
@@ -70,7 +70,7 @@
                   array( 'text', array( text => array(
                     'Was der Regelprozess unseres Lebens leisten sollte, würde ich so beschreiben:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Der zentrale Regelprozess unseres Lebens muss nach meiner Meinung beispielsweise dafür sorgen, dass wir essen, wenn wir hunger haben, und schlafen, wenn wir müde sind.'."\n",
                         'Er muss auch alle untergeordneten Regelprozesse, die uns schon aus der Biologie bekannt sind, koordinieren.'."\n".
                       'Wenn wir schnell laufen, muss der zentrale Regelprozess die Pumpleistung unseres Herzens, unseren Blutdruck und unseren Blutzuckerspiegel entsprechend regulieren.'."\n"))),
@@ -79,7 +79,7 @@
                     'Es klingt kompliziert und ist ganz sicher auch sehr komplex.'."\n".
                     'Doch wie unser zentraler Regelprozess funktioniert, ist im Grunde erstaunlich einfach:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Unsere Lebenssituation macht uns Gefühle.'."\n".
                       'Unsere Gefühle erzeugen Antriebe.'."\n".
                       'Unsere Antriebe führen zu Handlungen.'."\n".
@@ -146,7 +146,7 @@
                     'Die Existenz eines Lebewesens bassiert auf seinem individuellen, zentralen Regelprozess.'."\n".
                     'Dann sollte doch \\italic{jede} Existenz der Physik auf seinem zentralen Regelprozess beruhen.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Jedes Ding in der Physik, also jedes Elementarteilchen, jedes Atom und so fort bis zu jedem Lebewesen, jedem Stern oder Planeten und so weiter, existieren aufgrund ihres individuellen, zentralen Regelprozesses, der ihre Stabilität und Entwicklung organisiert.'."\n"))),
                       
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Was-ist-Leben:XXX', text =>

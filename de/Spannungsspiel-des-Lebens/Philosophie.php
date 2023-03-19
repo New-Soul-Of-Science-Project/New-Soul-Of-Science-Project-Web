@@ -26,7 +26,7 @@
                   array( 'text', array( text => array(
                     'Die Philosophie ist in meinen Augen ein nicht zu unterschätzender Helfer, wohl sogar der zentrale, wenn es darum geht, ein gesünderes, glücklicheres und zufriedeneres Leben zu finden und unserem Leben mehr Sinn zu geben.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Paradoxerweise hat unser Leben mehr Sinn, wenn wir nach unserem Sinn suchen.'."\n",
                         'Oder andersherum und etwas absoluter formuliert:'."\n".
                       'Ohne unsere Suche nach dem Sinn unseres Lebens macht unser Leben keinen Sinn.'."\n"))),
@@ -164,7 +164,7 @@
                     'dass die Philosophie dazu keine wirklich praktisch nützlichen Anregungen und darauf keine sinnvollen Antworten liefern kann.'."\n",
                       'Dies wäre in meinen Augen ein völlig verkehrter Eindruck!'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Die Philosophie ermöglicht sinnvolle Antworten auf die Frage nach unserem Glück und nach unserem Sinn des Lebens.'."\n"))),
                       
                   array( 'text', array( text => array(

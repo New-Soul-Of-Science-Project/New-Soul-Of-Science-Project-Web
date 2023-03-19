@@ -105,7 +105,7 @@
                     'Der in unserer historischen Geschichte schon lange vorhandene, sich entwickelnde Konflikt zwischen innerer und äußerer Alchemie'."\n".
                     'findet sich interessanter Weise, und vermutlich in hohem Grad zugespitzt, in unserer heutigen Gesellschaft wieder:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Suchen wir unser Heil und unsere Glückseligkeit vornehmlich in unserer Persönlichkeitsentwicklung,'."\n".
                         'unserer inneren Seelen- und Körperpflege, als auch im offenen Kontakt mit anderen Menschen?'."\n",
                           'Oder suchen wir danach vornehmlich im Konsum und Materialismus?'."\n"))),
@@ -128,7 +128,7 @@
                     'In ihr gespiegelt nehmen wir die uns umgebende Welt wahr.'."\n"))),
                       
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Nur der innere Stein der Weisen kann \\\\'."\n".
                         'den äußeren Stein der Weisen zum Leuchten bringen, \\\\'."\n".
                         'ihn ›beleuchten‹. \\small{\\color{*TitleAdd}{Nicht umgekehrt.}}'."\n"))),
@@ -154,20 +154,20 @@
                     'Die Darstellung dieses Entwicklungsprozesses durch aufsteigende Schlangen gab es entsprechend auch im alten Ägypten.'."\n".
                     'Ich würde die vier Zeilen demnach so deuten:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\quote{Dieser Stein, der kein Stein ist.} \\\\'."\n".
                         'Hermes kommt wohl von Herma, Stein, und war der Gott der Händler und Reisenden.'."\n".
                         'Es wird angenommen, dass es um Landmarken aus Stein oder Steinen geht, die den Reisenden leiten; ihm Orientierung geben.'."\n".
                         'Orientierung brauchen wir im Leben, in der Persönlichkeitsentwicklung, im Achtsamkeitsprozess, im Kundalini-Prozess.'."\n".
                         'Es ist ein Stein, der kein Stein ist.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\quote{Dieses kostbare Ding, das ohne Wert ist.} \\\\'."\n".
                         'Diese Orientierung oder diese Persönlichkeitsentwicklung ist nichts, was wir kaufen können.'."\n".
                         'Wir müssen sie selber durchleben.'."\n".
                         'Aber kostbar ist sie.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\quote{Dieses mehrgestaltige Ding, das keine Form besitzt.} \\\\'."\n".
                         'Der Achtsamkeits- oder Kundalini-Prozess ist mehrgestaltig:'."\n".
                         'Er ist unser Leben.'."\n".
@@ -179,7 +179,7 @@
                         'Er ist unser Zusammenhang und Zusammenhalt in der Gesellschaft.'."\n".
                         'So besitz er aber keine Form im materiellen Sinn.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\quote{Dieses unbekannte Ding, das jeder kennt.} \\\\'."\n".
                         'Wir sind uns selber unbekannt und deshalb auf der Suche nach uns.'."\n".
                         'Doch kennen wir nichts besser, als uns selber.'."\n"))),
@@ -203,7 +203,7 @@
                     'Diese Eigenschaften interpretiere ich, in Bezug auf meine Annahme, dass es sich beim Stein der Weisen vordergründig um'."\n".
                     'Persönlichkeitsentwicklung, den Achtsamkeitsprozess beziehungsweise den Kundalini-Prozess handelt, so:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\bold{erschaffen durch alchemische Transmutation} \\\\'."\n".
                         'Die sehr alten Bedeutungen und Synonyme von „alchemisch“ (Alchemie) sind auch: \\\\'."\n".
                         '→ „kêmi“, „schwarz[e Erden]“, „Lehre des Gießens“\\color{*Bearb}{(Verweis)} \\\\'."\n".
@@ -213,7 +213,7 @@
                         'Transmutation bedeutet Verwandlung.'."\n".
                         'In meinen Augen hier Verwandlung durch ›löse und verbinde‹, also durch Atmung und Persönlichkeitsentwicklung.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\bold{smaragdgrüne Farbe} \\\\'."\n".
                         'Warum smaragdgrün?'."\n".
                         'Ich vermute, dass es hierbei um die Bedeutung der Farbe Grün im Sinne der restlichen Erklärung geht.'."\n".
@@ -226,21 +226,21 @@
                         '→ Produktivität \\\\'."\n".
                         'Diese Bedeutungen würden erstaunlich gut zur Persönlichkeitsentwicklung und zum Achtsamkeitsprozess passen.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\bold{unvergänglich} \\\\'."\n".
                         'Der Achtsamkeitsprozess ist unvergänglich, weil er die Grundlage des Lebens ist.'."\n".
                         'Er beinhaltet so auch die Fortpflanzung, wie wir noch beim ›Phönix aus der Asche‹ sehen werden.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\bold{widerstandsfähig gegen alle Elemente und Substanzen} \\\\'."\n".
                         'Der Achtsamkeitsprozess ist ja unvergänglich, weil er das Leben selbst ist, und verleiht durch Klugheit Widerstandsfähigkeit gegen alle Elemente und Substanzen.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\bold{enthält uralte Weisheiten und Mysterien} \\\\'."\n".
                         'Das Leben ist ein Mysterium und das Überleben gründet auf Weisheiten jeder Art, die schon vor langer Zeit uralt waren.'."\n".
                         'Offenbar war das Leben, seine Persönlichkeitsentwicklung und sein Achtsamkeitsprozess immer schon ein Mysterium, schon vor Äonen.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\bold{reagiert auf Gedankenwellen} \\\\'."\n".
                         'Gedankenwellen, auch Gedankenbewegung, ist ein Ausdruck, den es schon im Sanskrit\\color{*Bearb}{(Verweis)} des Yoga Sutra\\color{*Bearb}{(Verweis)} gab.\\color{*Bearb}{(Verweis)}'."\n".
                         'Heute würden wir einfach Gedanken oder Fluss der Gedanken sagen.'."\n".
@@ -248,11 +248,11 @@
                         'Was wir denken meint hier im Besonderen, was wir darüber denken, also wie wir uns und unser Leben bewerten:'."\n".
                         '\\quote{Du bist, was du denkst.}'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\bold{erzeugt mentale Schwingungen im Bewusstsein des Nutzers} \\\\'."\n".
                         'Unsere Persönlichkeitsentwicklung erzeugt gedankliche Schwingungen in unserem Bewusstsein, das unser Achtsamkeitsprozess selber ist.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\bold{steigert die Weisheit des Nutzers um das Hundertfache} \\\\'."\n".
                         'Unsere Persönlichkeitsentwicklung steigert unsere Weisheit.'."\n".
                         'Über den Faktor können wir uns sicherlich streiten … 😉'."\n"))),
@@ -261,7 +261,7 @@
                     'Die rätselhaften Gleichnisse, Schilderungen und Eigenschaften umschreiben so etwas, dass ich für den inneren Stein der Weisen halte.'."\n".
                     'Diese Eigenschaften lassen sich aber auf verschiedene Art und Weisen auch im Sinne des äußeren Steins der Weisen interpretieren.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Ich bin davon überzeugt, dass der äußere Stein der Weisen, das Materielle, nicht ohne den inneren Stein der Weisen,'."\n".
                         'das Spirituelle, von uns als das gesehen und erkannt werden kann, was er ist.'."\n",
                           'Gehen wir nicht durch eine intensive Persönlichkeitsentwicklung, dann überschätzen wir unseren materiellen Besitz gegenüber unserem spirituellen,'."\n".
@@ -355,7 +355,7 @@
                     'Weiblichkeit verurteilt zu haben, sie zu negieren und zu unterdrücken.'."\n",
                       'Meine These ist also:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Die Weiblichkeit ist das Verlorene.'."\n",
                           'Dieser Verlust steht für eine gesellschaftlich-religiöse Imbalance der Pole des Weiblichen und des Männlichen.'."\n"))),
                       
@@ -377,7 +377,7 @@
                       'Die Schlangen, oder eine der Schlangen, wurden in unserer Historie immer wieder auch als Feuerdrachen identifiziert und symbolisiert.'."\n".
                     'Es gab die Naturbeobachtung, dass Drachen oder Feuerdrachen gerne in den tiefen von Bergen und Erdspalten wohnen, in Vulkanen, in ihren Drachenhorten.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Das Weibliche, Schwache wurde allzuoft mit dem Bösen, Sündigen identifiziert und ist demnach in der Hölle anzutreffen.'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -429,7 +429,7 @@
                       'Sehr ähnliches geschieht in und mit unserer Gesellschaft.'."\n".
                     'Das Prinzip:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Spalte und Herrsche. \\\\'."\n".
                         'Besser bekannt als: \\quote{Teile und Herrsche.}\\color{*Bearb}{(Verweis)})'."\n"))),
                       
@@ -479,7 +479,7 @@
                   array( 'text', array( text => array(
                     'Dieses scheinbare Paradox lässt sich mit dem Ausgangspunkt in uns selber lösen:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Nur wer in sich selber Frieden findet, \\\\'."\n".
                         'kann Frieden auch anderen Menschen geben.'."\n"))),
                       
@@ -491,7 +491,7 @@
                       'Damit sehen wir, dass es individuelle und gesellschaftlich eine Rückkopplung von innen und außen gibt.'."\n".
                     'Haben wir das bei der Lösung der Friedensfrage nicht im Blick, landen wir schnell in falschen Schlüssen.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Frieden beinhaltet eine Rückkopplung zwischen unserem Innen und Außen. \\\\'."\n".
                         'Zeigen wir in Friedensfragen auf andere Menschen, zeigt deshalb unser eigener Finger immer auch auf uns selber zurück. \\\\'."\n".
                         'Frieden kann so nur in einem dauerhaften Prozess stabilisiert werden. \\\\'."\n".

@@ -81,7 +81,7 @@
                     'Die nachfolgende Zahl, die rechts stehende, hat darauf keinen Einfluss.'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Der Null-Operator ist ein Inkrement- oder Zähl-Operator.'."\n".
                     ''))),
                       
@@ -355,7 +355,7 @@
                     'dann können wir unser festgehaltenes oder festgelegtes \\term{a} als die Gegenwart verstehen:'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Diese Gegenwart unserer Zahl \\term{a} hat eine Historie in die sie eingebettet ist, aus der sie folgt.'."\n".
                       'Aber sie hat noch keine Zukunft.'."\n".
                       'Ihre Zukunft wird erst durch den Prozess des Zählens, durch das Anhängen eines weiteren Zähloperators'."\n".
@@ -369,7 +369,7 @@
                     'Denn das Hier-und-Jetzt unterscheidet sich von seiner Historie dadurch, dass seine Zukunft noch nicht existiert.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Die Welt ist eine Erzählung und sozusagen eine historisch geschichtete Geschichte.\\footnote{Mit Raimund Welsch erschaffen.}'."\n".
                     ''))),
 
@@ -377,7 +377,7 @@
                     'Wir können auch sagen:'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'In jeder Zahl steckt eine Historie.\\footnote{Von Raimund Welsch.}'."\n",
                         'Die Historie ist ein Pfad und sie entspricht der Seele.\\footnote{Von Raimund Welsch.}'."\n".
                     ''))),
@@ -391,7 +391,7 @@
                     'Wir finden das auch in unserem Sprachgebrauch:'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Nur Dinge, die es gibt, die relevant sind, die einen Unterschied machen, zählen.'."\n",
                         'Dinge, die zählen, sind relevant, machen einen Unterschied, gibt es.\\footnote{Mit Raimund Welsch erschaffen.}'."\n".
                     ''))),

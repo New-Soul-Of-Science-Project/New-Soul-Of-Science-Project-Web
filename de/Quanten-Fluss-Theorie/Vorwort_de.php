@@ -120,7 +120,7 @@
                     'Apfelsinenkisten so zusammengeschraubt hat, dass es dem Plan sehr ähnelt.'."\n".
                     'Ob es wirklich fliegt, also ein echtes Flugzeug ist, seine Prüfung an der Realität, wäre dann egal, weil ja keiner einen besseren Plan hätte.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Liebe Leute, ein Flugzeug wird immernoch dadurch zu einem Flugzeug, dass es wirklich fliegt, und nicht dadurch, dass es so aussieht wie ein Flugzeug,'."\n".
                       'wer das auch immer bestimmt, und vielleicht fliegen könnte, wenn man möglicherweise irgendwann einen Weg findet, dies auszuprobieren!'."\n"))),
  

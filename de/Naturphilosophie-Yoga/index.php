@@ -33,7 +33,7 @@
                   // #!: Auch auf der NaPhil-Yoga-Startseite! (OM:NPYo:Home)
                   // #!: Auch auf der NaPhil-Yoga-Einleitungsseite! (OM:NPYo:Einleitung)
                   // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
                         'der hat die Magie, Dinge zum Schweben zu bringen.'."\n"))),
                       
@@ -79,7 +79,7 @@
                   array( 'headline', array( jump_name => 'OM:NPYo:Home:Vortext:XXX', text =>
                       
                 'Information')),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         // #: Text so auch auf der Seite "OM:SpaLeb:Home". Durch eine Konstante ersetzen, in der der Hinweis auf den Haftungsausschluss durch eine Wild-Card der aktuellen Seite ersetzt ist. Z.B. "!:Haftungsausschluss".
                         'Bitte beachte, dass diese Seiten im Aufbau befindlich sind. Es sind weder alle entwickelten Ideen eingepflegt, noch sind alle Texte vollständig.'."\n".
                         'Sollte letzteres der Fall sein, so sind \\color{*Bearb}{violette} Markierungen angebracht.'."\n".

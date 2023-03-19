@@ -42,7 +42,7 @@
                                                          /* text => '' */)),
                       )),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Der nachfolgend hergestellte Zusammenhang soll nicht die historische Deutung der altägyptischen Mythologie in Frage stellen.'."\n".
                       'Es geht mir vielmehr darum, auf erstaunliche Ähnlichkeiten zwischen der altägyptischen Mythologie und den philosophischen Grundlagen des Yoga'."\n".
                       'sowie der naturphilosophie des ›Spannungsspiels des Lebens‹ als auch der fraktalen Quanten-Fluss-Theorie aufmerksam zu machen.'."\n",
@@ -105,7 +105,7 @@
                     'Die Nehen-Zeit steht dann für die kreisförmige Bewegung der Bestandteile in den Dingen, für deren Rotation.'."\n",
                       'Dabei unterstelle ich, dass die Bestandteile der Dinge im extrem Kleinen immer in Bewegung sind.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '\\quote{Panta rhei} — \\jump{OM:FrQFT:WasIstPhysik:Vortext:WarumDynamStrukt}{Alles fließt}!'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -362,7 +362,7 @@
                   array( 'text', array( text => array(
                     '… von René Descartes wird also ein:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Ich fühle und handle, also bin ich.'."\n"))),
                       
                   array( 'text', array( text => array(

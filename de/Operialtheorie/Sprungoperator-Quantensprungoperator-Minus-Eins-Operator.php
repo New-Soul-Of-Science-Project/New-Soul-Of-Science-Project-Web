@@ -61,7 +61,7 @@
                     'Die nachfolgende Zahl, die rechts stehende, hat darauf dann natürlich auch keinen Einfluss.'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Der Minus-Eins-Operator ist nur als Vorzeichen ein Inkrement- oder Zähl-Operator.'."\n".
                       'Als Operator zwischen zwei Zahlen ist er neutral.'."\n".
                     ''))),
@@ -248,7 +248,7 @@
                     'dann können wir unser festgehaltenes oder festgelegtes \\term{a} auch als die direkt vor uns liegende Vergangenheit verstehen:'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Existiert in der Gegenwart auf den zeitlichen Schritt vorher \\term{a} noch nichts, dann erzeugt der'."\n".
                       'an das Nicht-Existente angehängte \\term{a} den nächsten Schritt \\term{a + 1}.'."\n".
                       'Nimmt dann im selben, nun existierenden Schritt noch ein beliebiger Operand mit dem Operator Minus-Eins Einfluss,'."\n".
@@ -265,7 +265,7 @@
                     'Denn:'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Nur als Vorzeichen vor dem Nichts existiert, wird aus dem Nichts die eigene Veränderung von \\term{a} kreiert.'."\n".
                       'Die Vergangenheit oder Historie \\term{a} kreiert also seine noch nicht existierende Zukunft zu \\term{a + 1}.'."\n".
                     ''))),

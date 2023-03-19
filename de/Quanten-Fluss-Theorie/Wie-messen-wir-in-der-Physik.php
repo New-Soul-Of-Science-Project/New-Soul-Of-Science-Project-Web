@@ -168,14 +168,14 @@
                     'ergänzend zur Allgemeinen Relativitätstheorie, wie oben geschildert, eingeführt ist.'."\n".
                     'Von daher kann zu recht gesagt werden:'."\n"))),
 
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Die geschilderte Quantengravitation ist nicht voll mit der Allgemeinen Relativitätstheorie identisch oder äquivalent.'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Wenn die Allgemeine Relativitätstheorie jedoch im Standardmodell der Kosmologie um ein absolutes Bezugssystem ergänzt werden muss, um mit den Beobachtungen übereinzustimmen,'."\n".
                     'dann kann über ein Modell, das dieses Bezugssystem von vornherein enthält aber auch folgendes gesagt werden:'."\n"))),
 
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Die geschilderte Quantengravitation ist umfassender als die Allgemeine Relativitätstheorie, weil sie das Kosmologische Prinzip enthält.'."\n"))),
                       
                     ))),

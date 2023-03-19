@@ -48,7 +48,7 @@
                   array( 'text', array( text => array(
                     'Und nach einigem Hin und Her sagte mein Freund so etwas ähnliches wie:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Seinem Leben einen Sinn geben heißt doch, alle Dinge, die wir im Leben machen, miteinander zu verbinden.'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -57,7 +57,7 @@
                     'Mir kam der Gedanke, was verbindet denn die Dinge, die in meinem Leben sind?'."\n".
                     'Und da ist die Antwort nicht so schwer:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Alle Dinge, in meinem Leben sind über mich verbunden.'."\n"))),
                       
                   array( 'text', array( text => array(

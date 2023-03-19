@@ -40,7 +40,7 @@
                     '• Jan Hattenbach. Dunkle Materie in der Milchstraße gefunden – oder doch nicht? In: SdW 06/2015, S. 10-12. Fazit: Die neuste Untersuchung zum Thema Dunkle Materie bestätig nur was schon bekannt ist und beweist nicht deren Existenz: Es gibt in der Milchstraße mehr Gravitation, als man nach der ART annehmen darf.',
                     ))),
                     
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Wer die Quantengravitation und die Struktur des Vakuums versteht, löst das Problem der Dunklen Materie.'."\n"))),
                       
                   array( 'text', array( text => array(

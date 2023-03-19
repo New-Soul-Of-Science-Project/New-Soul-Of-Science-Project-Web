@@ -58,7 +58,7 @@
                   array( 'text', array( text => array(
                     'Genau dies werden wir tun.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Wir werden die Zeit aus ihrer Erstarrung lösen und ihr Wesen ergründen, ohne sie sogleich unbedingt in Raum zu verwandeln,'."\n".
                       'indem wir ihre Aspekte differenzieren und diese als unterschiedliche Facetten des Zusammenhangs und der Veränderung von Strukturen begreifen.'."\n"))),
  
@@ -279,7 +279,7 @@
                   array( 'text', array( text => array(
                     'Ich würde ergänzend sagen:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '\\quote{ Auf diese Weise straft die Natur […] unverschämte Theoretiker,} die im Laufe der Zeit sträflicher Weise vergessen haben,'."\n".
                       'dass sie \\quote{ihre Einheit zu brechen wag[t]en}, indem sie die Natur aus sehr guten Gründen erheblich vereinfachten.'."\n"))),
  
@@ -339,7 +339,7 @@
                     'Denn die bei dieser Art von Problem aufgezeigten (scheinbaren) Widersprüche ergeben sich im Rahmen der Kombination von Beobachtungen aus der Quantenphysik und der Relativitätstheorie und deren heute üblichen Interpretationen.'."\n",
                       'In einer kondensierten Form steckt hinter dem ›Problem der Zeit‹ aus meiner Sicht die einfache, aber grundlegende, physikalische Frage:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Wie kann es sein, dass es in einem Photon – einem Lichtteilchen – aufgrund seiner Lichtgeschwindigkeit, nach heutiger Interpretation der Relativitätstheorie,'."\n".
                       'keinen Fortgang der Zeit gibt, die Zeit also still steht, aber sich sein elektromagnetisches Feld dennoch schwingend ändert?'."\n"))),
  
@@ -354,7 +354,7 @@
                     'Dahinter steckt im Grunde die generelle Hypothese, jede Eigenschaft eines Dings ergäbe sich aus seiner dynamischen Struktur.'."\n",
                       'Diese Annahme entspringt unserer Alltagserfahrung und auch der Erwartungshaltung jeder „mikroskopierenden“ Wissenschaft, also jeder Naturwissenschaft:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Wir untersuchen das Ding genauer, das wir verstehen möchten, mikroskopieren es oder wir zerlegen es notfalls sogar und konzentrieren uns auf seine Bestandteile.'."\n".
                       'Und dann werden wir schon herausfinden, woher seine Eigenschaften kommen.'."\n"))),
  
@@ -392,7 +392,7 @@
                   array( 'text', array( text => array(
                     'Was wäre also, wenn wir die Struktur der Elementarteilchen auf sinnvolle und mit den heutigen Beobachtungen verträgliche Weise herausfinden und deren Zusammenhang definieren könnten?'."\n"))),
                     
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Ich sage, es lässt sich eine sinnvolle und mit den heutigen Beobachtungen verträgliche Struktur der Elementarteilchen finden,'."\n".
                       'wenn wir die hierfür wichtigen Prinzipien – \\jump{OM:FrQFT:FirstPrinciples}{First-Principles} – des grundsätzlichen Zusammenhangs in den dynamischen Strukturen der Dinge erkennen.'."\n"))),
  
@@ -461,7 +461,7 @@
                     'Jetzt werfen wir eines der grundsätzlichen Tabus der modernen Physik über den Haufen und bewahren dabei sein wichtiges,'."\n".
                     'dem Ansatz der Relativitätstheorie entspringendes Anliegen durch eine differenzierte Betrachtung des Zusammenhangs:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Nach dem gerade formulierten Ansatz bewegt sich die Feinstruktur der Elementarteilchen mit Überlichtgeschwindigkeit.'."\n".
                       'Und dies widerspricht nicht(!) der Relativitätstheorie, nach der hier aufgestellten Interpretation, wenn die Alterungskomponente'."\n".
                       'der Bewegung der Fundamentalteilchen auf die Lichtgeschwindigkeit begrenzt bleibt.'."\n"))),
@@ -533,7 +533,7 @@
                     'Denn in der Struktur der Elementarteilchen der Materie ist die lichtschnelle Komponente der Alterungsbewegung in einer Rotation um ihre zentrale Achse,'."\n".
                     'parallel zu einer spiralförmigen Lichtbahn, gefangen und bestimmt ihren Haupt-Spin (siehe \\jumpname{OM:FrQFT:Einleitung:Fundierung:Ani-Lepton}).'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'So ist das naturphilosophische Prinzip von Einsteins Lichtuhr ein wirklicher Bestandteil der Struktur der Materie.'."\n"))),
  
                   array( 'text', array( text => array(
@@ -580,7 +580,7 @@
                     'Bei näherer Analyse der Relativitätstheorie stellt sich heraus, dass ihr Grundgedanke nicht bedeuten muss, dass es kein Medium gibt.'."\n".
                     'Glücklicherweise können wir sie auch so interpretieren, dass wir nicht um ein Medium des Lichts wissen müssen, um in ihrem Rahmen Physik zu betreiben.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Und glücklicherweise gibt es eine mit der Speziellen Relativitätstheorie\\footnote{\\const{FrQFT_g_footnote_text_SRT}} mathematisch äquivalente Theorie, die von einem Medium ausgeht.\\footnote{\\const{FrQFT_g_footnote_text_SRTlorenzInter}}'."\n".
                       'Die Lorentzsche Äthertheorie\\footnote{\\const{FrQFT_g_footnote_text_LorentzAetherTh}} zeigt uns, dass es ein Medium des Lichts geben kann,'."\n".
                       'ohne das Relativitätsprinzip grundsätzlich aufgeben zu müssen.'."\n"))),
@@ -642,7 +642,7 @@
                       'Die abgestrahlten Impulse wirken auf die umgebenden Strukturen „störend“, sie erzeugen in diesen eine Undulation.'."\n".
                     'Wenn wir den Einfluss der Undulation berechnen, so kommt eine Beugung der Bewegung der umgebenden Strukturen heraus, insbesondere eine Beugung des Lichts, der Bahnen der Photonen.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Für Licht, oder dem Licht ähnliche Strukturen, ergibt sich exakt die \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{Lichtablenkung} der Schwarzschildlösung\\color{*Bearb}{(Verweis)} der Allgemeinen Relativitätstheorie.\\footnote{\\const{FrQFT_g_footnote_text_ARTLgFormel}}',
                         'Die Beugung der rotierenden, lichtähnlichen Strukturen der Elementarteilchen der Materie (siehe \\jumpname{OM:FrQFT:Einleitung:Fundierung:Ani-Lepton}) erscheint dann als'."\n".
                       '\\jump{OM:FrQFT:Quantengravitation:Mechanismus-der-Gravitation}{Beschleunigung} in Richtung der Quelle der Störung, als gravitative Anziehung.'."\n".
@@ -702,7 +702,7 @@
                     'So haben sie die Form von Teilkreisen des Strings eines unpolarisierten Vakuum-Photons (siehe \\jumpname{OM:FrQFT:Einleitung:Fundierung:Ani-VakuumElapson}).'."\n",
                       'Quarks und Gluonen erscheinen quasi als Organellen der Hadronen-Strings.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Dass Quarks nicht einfach aus dem String eines Hadrons herausgelöst werden können – das sogenannte Confinement\\footnote{\\const{FrQFT_g_footnote_text_Confinement}}, ihre Eingeschlossenheit –,'."\n".
                       'erscheint deshalb ganz natürlich.'."\n"))),
                       
@@ -729,7 +729,7 @@
                       'Dies ist der Grund dafür, dass die Protonen und Neutronen in den Atomkernen aneinander gebunden sind,'."\n".
                     'obwohl die Protonen sich durch ihre positive elektrische Ladung elektromagnetisch abstoßen.'."\n"))),
             
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Aufgrund dieser lokalen Asymmetrien der starken Farbpolarisation eines Hadronen-Strings, wirkt zwischen Hadronen-Strings die Restwechselwirkung der starken Wechselwirkung.\\footnote{\\const{FrQFT_g_footnote_text_StarkeWWRestWW}}'."\n",
                         'Deren Reichweite ist sehr begrenzt, weil die Pole der Farbpolarisation nahe beieinander liegen und sich so auf größere Distanz rasch neutralisieren.'."\n"))),
             
@@ -839,7 +839,7 @@
                       'In Bezug auf die Wechselwirkungen der Quantenmechanik, genauer des Standardmodells der Teilchenphysik, funktioniert die neue Physik nach dem Prinzip'."\n".
                     'der \\jump{OM:FrQFT:De-Broglie-Bohm-Theorie}{De-Broglie-Bohm-Theorie}\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieBohmTheorie}} – der Bohmschen Mechanik oder Pilotwellentheorie.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Die De-Broglie-Bohm-Theorie ist nicht, wie teilweise immer noch geglaubt wird, von von Neumann wiederlegt worden.'."\n".
                       'Dies hat Grete Hermann 1935 gezeigt.\\color{*Bearb}{(Verweis)}'."\n",
                         'Die De-Broglie-Bohm-Theorie entspringt einer deterministischen Interpretation der Quantenmechanik.'."\n".
@@ -855,7 +855,7 @@
                     'Denn die De-Broglie-Bohm-Theorie ergibt die gleiche Wahrscheinlichkeitsstatistik.'."\n".
                     'Es ändert sich die Interpretation der Quantenmechanik, auch, damit diese zur Struktur unserer neuen Physik passt und wir die Quantengravitation formulieren können.'."\n"))),
                     
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Die neue Physik verschafft der Wellenfunktion beziehungsweise dem Quantenpotenzial eine physikalische Realisierung.'."\n".
                       'Und sie verleiht der De-Broglie-Bohm-Theorie relativistische Eigenschaften, durch die Perspektive der \\jump{OM:VRT:Home}{Vereinheitlichten Relativitätstheorie}.'."\n"))),
                       
@@ -868,7 +868,7 @@
                                            
                 'Folge: Elementarteilchen können entstehen und vergehen')),
                     
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'In der so gewonnenen Quantenmechanik der neuen Physik ist es nun möglich, dass Elementarteilchen entstehen, transformiert werden und vergehen können.'."\n".
                       'Dies war in der Quantenmechanik der bisherigen modernen Physik nicht möglich.\\color{*Bearb}{(Verweis auf Joseph Gaßner)}'."\n"))),
                       
@@ -879,7 +879,7 @@
                     'In der neuen Physik stellen sich die kegelförmigen Störungsimpulse der Fundamentalteilchen der Feinstruktur der Elementarteilchen als'."\n".
                     'Ursache der starken Wechselwirkung (Quantenchromodynamik) – also der Elementarteilchen-String-Stabilität –, der Heisenbergschen Unschärferelation, der elektroschwachen Wechselwirkung und der Quantengravitation heraus.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Die Quantenphysik und die Allgemeine Relativitätstheorie, als Haupttheorien der modernen Physik, sind demnach qualitativ in der neuen Physik der'."\n".
                       'fraktalen Quanten-Fluss-Theorie vereinheitlicht.'."\n",
                         'In Bezug auf die Heisenbergsche Unschärferelation und die Quantengravitation können wir schon quantitativ zeigen, dass sie sich aus dem String-Ansatz'."\n".
@@ -912,7 +912,7 @@
                     'die Rolle von dortigen, sehr viel kleineren Elementarteilchen-Strings.'."\n".
                     'Es ist bei der Entstehung des Schwarzen Lochs in ihm ein neuer Kosmos in seinem Urknall entstanden.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Das Universum besteht demnach aus fraktal verschachtelten Kosmoi, von denen jeder in einem Schwarzen Loch steckt.'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -968,7 +968,7 @@
                     'und komplexer verarbeiten.'."\n",
                       'Die spannende Frage wird so aufgeworfen, welcher Elementarprozess die Stabilität und Entwicklung der Lebewesen regelt.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Ich nenne den zentralen Regelprozess der Lebewesen den \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess}.'."\n".
                       'Er steht mit im Zentrum meiner Natur- und Lebensphilosophie vom \\jump{OM:SpaLeb:Home}{›Spannungsspiel des Lebens‹}.'."\n"))),
  

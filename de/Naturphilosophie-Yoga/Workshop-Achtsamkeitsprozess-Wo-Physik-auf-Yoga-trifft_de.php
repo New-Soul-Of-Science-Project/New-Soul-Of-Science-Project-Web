@@ -276,7 +276,7 @@
                     'Wir nutzen unsere tiefe Atmung in dieser Position bewusst und leuchten mit ihr in uns hinein, beleuchten wie wir gerade sind, das was wir haben, und registrieren es.'."\n".
                     'Wir machen eine Art Inventur.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Die Weisheit liegt nun darin zu dem Wissen zu gelangen – es zu erfahren oder gar zu verstehen –, dass das bewusste Registrieren schon einen Prozess anstoßen kann, der im Laufe der'."\n".
                       'Zeit zu einer Verbesserung unserer Situation führt.'."\n".
                       'Besonders gut funktioniert dies, wenn wir unsere jetzige Situation bewusst unvoreingenommen wahrnehmen und registrieren, also ohne das, was wir wahrnehmen, mit alzu bewertenden Gefühlen belegen.'."\n"))),
@@ -285,7 +285,7 @@
                     'An dieser Stelle ist unsere differenzierte Aufmerksamkeit geboten!'."\n".
                     'Weil uns sonst leicht ein Irrtum, ein Missverständnis, unterlaufen kann:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Wir haben es mit zwei unterschiedlichen Gefühlen zu tun, die zu zwei verschiedenen Achtsamkeitszirkeln gehören:'."\n",
                         'Der primäre Achtsamkeitszirkel ist hier der mit der Handlung unserer Atmung und all den Gefühlen, die unsere Atmung in uns hervorruft.'."\n".
                       'Dazu gehört zum Beispiel auch ein Ziehen in der Muskulatur oder den Faszien, welches die Atmung in uns hervorruft.'."\n",

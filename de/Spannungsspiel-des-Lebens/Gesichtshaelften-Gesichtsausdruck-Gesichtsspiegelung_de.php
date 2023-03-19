@@ -45,7 +45,7 @@
                     'Erst, wenn wir verstehen, worauf die Aufgabenteilung unserer Gehirnhälften beruht, auf dem Gefühlspol und dem Handlungspol unseres Achtsamkeitsprozesses,'."\n".
                     'eröffnet sich uns ein Tor, durch das wir in unserer Erkenntnis gehen können.'."\n"))),
             
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Die Muskel- und Faszienspannung deines Gesichts ist diagonal mit deinen Gehirnhälften verbunden, dem rechten und linken Pol deines Gehirns,'."\n".
                         'der eher fühlenden und der eher denkenden/handelnden (rationalen) Seite.'."\n"))),
                       
@@ -125,7 +125,7 @@
                       'Unser Achtsamkeitsprozess wird durch all unsere biologischen Regelprozesse erzeugt und kümmert sich in einer Rückkopplung mit unserer biologischen Feinstruktur darum,'."\n".
                     'dass es all diesen Regelprozessen gut geht, sie gut und stabil ablaufen können und in ihrer uns angenehmen Spur bleiben.'."\n"))),
                     
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Damit spielt unser Achtsamkeitsprozess die Hauptrolle in unserem Leben und ist die Grundlage unserer Biologie oder Biophysik.'."\n"))),
  
                   array( 'text', array( text => array(
@@ -140,7 +140,7 @@
                     'auf unsere Gefühle sowie auf unser Denken und Handeln.'."\n".
                     'Dies nennen wir die Lateralisation unseres Gehirns.\\footnote{\\const{NPYo_g_footnote_text_GehirnLateralisation}}'."\n"))),
                     
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Dass die Spezialisierung unserer Gehirnhälften mit zwei wichtigen Polen unseres zentralen Regelprozesses übereinstimmt, ist sicherlich kein Zufall.'."\n".
                       'Der Achtsamkeitsprozess spiegelt sich ganz konkret in unserer physischen Existenz wider.'."\n".
                       'Er ist sehr real.'."\n"))),
@@ -234,7 +234,7 @@
                     'Die beiden wichtigsten Pole werden oft in unseren Körperhälften erkannt,'."\n".
                     'zu denen unsere Gesichtshälften gehören, die unsere Gefühlswelt und unsere Handlungswelt, die beiden Pole unserer Achtsamkeit, ausdrücken.'."\n"))),
                     
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Es gibt nur eine Sache, die darüber entscheidet, ob wir ein gutes, angenehmes Leben führen:'."\n".
                       'Unsere Gefühle.'."\n"))),
  
@@ -315,7 +315,7 @@
                     'Vorstehende Attribut-Pärchen kitzeln weitere Facetten unserer auf unsere Körperhälften bezogenen, polaren Persönlichkeitseigenschaften heraus.'."\n".
                     'Diese müssen nicht übertrieben gedeutet, sondern können als interessant betrachtet werden.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Du wirst vielleicht Dinge entdecken, die dich überraschen, bei dir oder bei anderen.'."\n",
                         'Nimm was du siehst erst einmal so an, wie du es siehst, ohne zu erschrecken, dich zu ärgern oder gar vorschnell zu werten oder zu urteilen.'."\n".
                       'Lass es auf dich wirken, dich von diesen Facetten unseres, deines Selbst faszinieren und inspirieren und gewöhne dich an sie.'."\n".
@@ -353,7 +353,7 @@
                   array( 'text', array( text => array(
                     'Auch hier gilt:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Spiele damit herum.'."\n",
                         'Fälle keine vorschnellen Urteile, sondern lass dich von diesen Facetten unseres, deines Selbst faszinieren und inspirieren.'."\n".
                       'Nehme dich und andere in jedem Fall erst einmal so an wie du bist, wie sie sind!'."\n"))),
@@ -392,7 +392,7 @@
                     'Du bekommst so am besten ein Gefühl dafür, wie das funktioniert und wie es möglicherweise zu deuten ist.'."\n".
                     'Und du, ihr bekommt so einen Querschnitt von Eindrücken des Gesichtsausdrucks deines, eures Selbst.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Und vielleicht siehst du, ihr sogar eine positive Entwicklung … 😉'."\n"))),
  
                   array( 'text', array( text => array(

@@ -183,7 +183,7 @@
                       'Die aus der Allgemeinen Relativitätstheorie bekannte und als Shapiro-Verzögerung auch beobachtete Änderung der Lichtgeschwindigkeit'."\n".
                     'im dreidimensionalen Raum, wird im Rahmen der Quanten-Fluss-Theorie nach dem prinzipiellen Ansatz von Giese sogar ganz exakt hergeleitet (siehe \\italic{\\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung}}).'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Für seine Idee zum prinzipiellen Ansatz der Herleitung der Lichtverlangsamung bin ich Albrecht Giese sehr dankbar!'."\n".
                         'Ich hatte schon einige Jahre darüber nachgedacht, wie diese Herleitung wohl aussehen müsste, war dabei aber nicht sehr weit gekommen.'."\n".
                         'Durch ihn vielen mir die Groschen und in Kombination mit der Struktur der Quanten-Fluss-Theorie wurde sogar eine ganz korrekte Herleitung im Sinne der akademischen Physik möglich. '."\n"))),

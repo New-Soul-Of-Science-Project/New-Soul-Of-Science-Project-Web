@@ -217,13 +217,13 @@
                     'Bezug auf die (materielle) Chemie, sondern auch gerade in der Psychosomatik auf der psychischen wie auf der körperlichen Ebene.'."\n",
                       'Unsere Redewendung:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Meine Verspannung hat sich gelöst.'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Oder:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Meine Probleme haben sich aufgelöst.'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -318,7 +318,7 @@
                     'Und auch nur dann können wir klug handeln, weil wir wahrnehmen und fein fühlen, was wir tun und was wir möglicherweise bewirken können und bewirken werden.'."\n",
                       'Denn:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Leben ist die Kunst des Wirkens.'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -341,7 +341,7 @@
                     'aber nicht immer uns gut fühlen lassen sollten oder gar müssen, natürlich der Ausgangspunkt.'."\n".
                     'Beim finden von neuen Perspektiven spielt folgende Erkenntnis eine besondere Rolle:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Wir können jeder Sache \\bold{auch} etwas Gutes abgewinnen …'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -378,7 +378,7 @@
                     'Dies geht nur mit einer Kommunikation, die im System selber stattfindet.'."\n",
                       'Hinter der wohl zentralsten Frage unseres Lebens steht ein innerer Dialog:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Wie geht es uns? Geht es uns \\bold{gut}?'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -456,7 +456,7 @@
                   array( 'text', array( text => array(
                     'Mit den folgenden Aussagen lohnt es sich zu beschäftigen:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Jede \\hidden{\\small{(freiwillige)}} Heilung ist eine Selbstheilung.'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -469,7 +469,7 @@
                       'Selbst nach einer Operation muss unser Körper die entstandenen Wunden heilen und mit den Narben umgehen.'."\n".
                     'Auch die möglichen psychischen Folgen müssen wir selber verarbeiten, ob mit oder ohne Rat.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Vollkommene Heilung gibt es nicht.'."\n".
                       'Es wird nie wieder so, wie es war.'."\n"))),
             

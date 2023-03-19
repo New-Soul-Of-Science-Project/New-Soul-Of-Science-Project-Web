@@ -169,7 +169,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Um unsere Emotionen dreht sich unser Leben.'."\n"))),
                       
                   array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
@@ -251,7 +251,7 @@
                     'Gutes Wissen und ein Verständnis davon, wie unsere Emotionen mit unserer Lebenssituation und unseren Handlungen verwoben sind, ermöglicht uns leichter zu erkennen,'."\n".
                     'welche Entscheidungen unsere Situation verbessern, denn:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Um unsere Emotionen dreht sich unser Leben.'."\n"))),
                       
                   array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
@@ -283,7 +283,7 @@
                     'So kommen wir in meinen Augen zu einem Yoga, dass wir so auch guten Gewissens als modern bezeichnen können.'."\n".
                     'In einem Sinne modern, dass es fortschrittlich und zukunftsweisend für unsere persönliche Entwicklung und auch für die Entwicklung unserer Gesellschaft sein kann.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Ich nenne diese neue Ausrichtung \\bold{Naturphilosophie-Yoga} oder kurz \\bold{NaPhil-Yoga}.'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -575,7 +575,7 @@
                     '(• Das Licht „wiegt“ mehr als sein Tunnel. Dieses (leichte) Ungleichgewicht, diese Disharmonie, dieser Bruch, ist unser Lebensoptimismus, unser Antrieb.)',
                     ))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '\\small{\\color{*TitleAdd}{Der Unterschied zwischen dem Licht und dem Schatten ist …}} \\\\'."\n".
                       'Die Sonne ist immer da. \\\\'."\n".
                       'Die Wolken jedoch ziehen vorbei.'."\n"))),
@@ -626,7 +626,7 @@
                     '(• XXX)',
                     ))),*/
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Die Erkenntnis liegt auf dem Weg, nicht im Ziel.'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -692,10 +692,10 @@
                     '(• Was hat der Achtsamkeitsprozess mit dem Unterschied zwischen meinem Selbst (Beobachter, Seher) und meinem Ich (Inhalt meines Lebens, Denkens, Handelns) zu tun. (siehe Unterlagen Yoga-Lehrer-Seminar))',
                     ))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Achtsamkeit ist Aufmerksamkeit und das Wahrgenommene (in Ruhe) wirken lassen.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Mein Achtsamkeitsprozess bedeutet, aufmerksam auf mein inneres Wechselspiel zwischen meinem Gefühl zu der Situation, in der ich mich befinde, und meine, diese Situation verändernde Handlung, die diesem Gefühl entspringen, zu blicken und das, was ich wahrnehme, (in Ruhe) auf mich wirken zu lassen.'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -877,7 +877,7 @@
                   array( 'text', array( text => array(
                     '\\bold{Die permanente Atemspannung als Grundlage der Oberkörperstabilität, der Standfestigkeit und koordinierter Bewegung sowie von einem gesunden Körper und gesunder Psyche.}'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Die Atmung ist die Brücke deines Lebens. \\\\'."\n".
                         '\\small{\\color{*TitleAdd}{Halb bewusst, halb unbewusst gespannt ist sie \\\\'."\n".
                         'und verbindet so transzendent beide Welten deines Seins.}}'."\n"),
@@ -895,7 +895,7 @@
                     'XXX'."\n"))),
                       
                   // #!: Auch bei "Praxis: Atmung und Stimmung".
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Die Atmung ist die Basis deiner Handlung – ihre Gleitfläche und Führung. \\\\'."\n".
                         'Atme für deine Handlung! Diese schließt das Denken ein. \\\\'."\n".
                         '\\small{\\color{*TitleAdd}{Handle nicht zuerst und stelle dann fest, dass du ja auch atmen musst.}}'."\n"),
@@ -952,7 +952,7 @@
                       
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
                   // #!: Auch auf der NaPhil-Yoga-Einleitungsseite! (OM:NPYo:Einleitung)
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Deine Erkenntnis liegt auf deinem Weg, \\\\'."\n".
                         'nicht im Ziel.'."\n"),
                         addtext => '')),
@@ -986,7 +986,7 @@
                   // #!: Auch auf der NaPhil-Yoga-Startseite! (OM:NPYo:Home)
                   // #!: Auch auf der NaPhil-Yoga-Einleitungsseite! (OM:NPYo:Einleitung)
                   // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
                         'der hat die Magie, Dinge zum Schweben zu bringen.'."\n"))),
                       
@@ -1299,7 +1299,7 @@
                     ))),
                       
                   // #!: Auch bei "Atmung und Stimmung".
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Die Atmung ist die Basis deiner Handlung – ihre Gleitfläche und Führung. \\\\'."\n".
                         'Atme für deine Handlung! Diese schließt das Denken ein. \\\\'."\n".
                         '\\small{\\color{*TitleAdd}{Handle nicht zuerst und stelle dann fest, dass du ja auch atmen musst.}}'."\n"),
@@ -1356,13 +1356,13 @@
                     '(– Aufdrehende Katze (Bezeichnung?): Bei der Einatmung läuft das Licht aus der Hüfte bis in den Kopf und wenn man den Arm ganz nach oben aufgedreht hat, dann strahlt es über den Arm gen Himmel.)',
                     ))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         // #: Den ersten Satz hat Mathias Galke so ähnlich in der Yoga-Stunde gesagt. (28.03.2017)
                         'Man kann Asanas nicht können. \\\\'."\n".
                         '\\small{\\color{*TitleAdd}{Man kann sie immer noch besser kennenlernen oder etwas anders machen.}}'."\n"),
                         addtext => '')),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Wenn du Asanas praktizierst, übst du an deinem Wohlbefinden. \\\\'."\n".
                         '\\small{\\color{*TitleAdd}{Alles andere schöne und vielleicht erstrebenswerte, \\\\'."\n".
                         'wie besseres Aussehen, mehr Kraft und Flexibilität \\\\'."\n".

@@ -91,7 +91,7 @@
                     'des Bauchraums ausüben und und so indirekt gegeneinander drücken.'."\n".
                     'Ich würde das Zitat mit den folgenden Einsichten verfeinern:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Anders als im Zitat beschrieben kann sich das Volumen des Bauchraums beim Einatmen nicht verändern.'."\n".
                       'Die Füllung des Bauchraums sind die Organe im Bauch.'."\n".
                       'Ihr Volumen ist für den Moment der Atmung als konstant anzusehen, egal wie die Atemmuskulatur sich bewegt.'."\n",

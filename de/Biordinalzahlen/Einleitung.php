@@ -560,7 +560,7 @@
                     'Das erscheint so gesehen sehr ähnlich, als hätten wir keine Möglichkeit.'."\n",
                       'Vergleichbar ist auch die folgende Aussage:'."\n".
                     ''))),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Wem gehört das Wissen der Welt? \\\\'."\n".
                       'Allen und damit keinem.'."\n".
                       ''))),
@@ -676,7 +676,7 @@
                     'In Worten ausgedrückt bedeutet dies:'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Die Summe aller endlichen, ganzen Zahlen ist demnach der actual unendliche Wert \\term{–ω}'."\n".
                       'und nicht ein endlicher Wert oder gar \\term{0} (Null), wie wir im Allgemeinen eher annehmen.'."\n".
                       ''))),
@@ -695,7 +695,7 @@
                     'In Worten ausgedrückt bedeutet dies:'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Der Mittelwert aller endlichen, ganzen Zahlen ist demnach \\term{–½} und nicht \\term{0} (Null), wie wir im Allgemeinen eher annehmen.'."\n".
                       ''))),
                       

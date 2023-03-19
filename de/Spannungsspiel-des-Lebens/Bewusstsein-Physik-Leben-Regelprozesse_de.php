@@ -155,7 +155,7 @@
                     'Die Wahrnehmung des Bewusstseins bedeutet, dass der Elementarprozess, das Ding oder Objekt, welches etwas wahrnimmt, sich dabei verändert.'."\n".
                     'Denn nach der hier entwickelten Naturphilosophie ist \\jump{OM:SpaLeb:Information-Kommunikation}{Information immer mit Wirkung verbunden}.'."\n"))),
                                            
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Jeder Elementarprozess muss folglich in beständiger Veränderung sein.'."\n"))),
                       
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:Vortext:XXX', text =>
@@ -267,7 +267,7 @@
                     'Was Information ist oder wie wir den Begriff Information am besten definieren können, ist eine nicht ganz einfache Frage, die sehr von der jeweiligen Perspektive abhängt.'."\n".
                     'Einen Ansatz, der zum vorstehenden Verständnis von Bewusstsein und Achtsamkeit sehr gut passt, können wir mit folgender Frage einleiten:'."\n"))),
 
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Wenn wir etwas nicht verstehen, können wir dann von Information sprechen?'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -283,7 +283,7 @@
                       'Wir können das Paradox auflösen, wenn wir folgende Perspektive einnehmen.'."\n".
                     'Dabei bleiben wir beim Empfänger, denn nur dieser kann als einziger sagen, ob er etwas verstanden hat.'."\n"))),
 
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Gesendete Information ist immer \\bold{potenzielle Information}.'."\n".
                         'Nur der Anteil an potenzieller Information kann als \\bold{Information} bezeichnet werden, der beim Empfänger etwas bewirkt.'."\n"))),
             
@@ -313,7 +313,7 @@
                     'Demnach enthalten Elementarprozesse sehr viel Information.'."\n",
                       'Da wir Lebewesen nach diesem Modell alle Elementarprozesse sind, gilt:'."\n"))),
 
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Schauen und horchen wir in uns selber hinein, finden wir die Welt in uns;'."\n".
                         'viel mehr Information und Erkenntnis, als wir es uns je zu träumen gewagt haben.'."\n",
                           'Schauen und horchen wir dann in die Welt, ist diese so facettenreich, wie wir selber, weil sie sich in uns spiegelt.'."\n"))),
@@ -327,7 +327,7 @@
                   array( 'text', array( text => array(
                     'In der Definition der Rhetorik wird dies aufgegriffen:'."\n"))),
 
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Rhetorik ist die Kunst der wirkungsvollen Rede oder Kommunikation.\\color{*Bearb}{(Verweis Wikipedia und Tom Tastisch)}'."\n"))),
             
                   array( 'text', array( text => array(

@@ -67,7 +67,7 @@
                     'schon lange Zeit aus einheitlichen Fundamentalteilchen.'."\n".
                     'Ich konnte meine Fundamentalteilchen jetzt noch viel besser mit der Quantenphysik in Zusammenhang bringen und benenne diese entsprechend als Wirkungsquanten (wq).'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Nach der Abzählinterpretation der Heisenbergschen Unschärferelation haben wir es in der Quantenphysik mit einer doppelten Quantisierung zu tun:'."\n",
                       'Einstein zeigte 1905 in seiner Arbeit zur Quantisierung des Lichts, dass Lichtwellen aus Lichtquanten der Energie'."\n".
                       '\\latexmath{E = f \cdot h} (siehe \\jumpname{OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant}) bestehen müssen.'."\n".

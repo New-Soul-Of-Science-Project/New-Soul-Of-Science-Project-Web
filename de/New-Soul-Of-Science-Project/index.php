@@ -35,7 +35,7 @@
                     'Dabei ist eben auch die Artenvielfalt des Ökosystems entscheidend.'."\n".
                     'Deshalb möchte ich, dass wir verstehen und in unser Leben einbeziehen:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Wir sind ein Teil der Natur.'."\n"))),
  
                   array( 'text', array( text => array(
@@ -149,7 +149,7 @@
                     'Die Zeit der Relativitätstheorie ist in diesem Sinne jedoch als reine Alterung zu verstehen.'."\n"))),
                     //'Das bedeutet, dass es zusätzlich zur zeitlichen Alterung in der Relativitätstheorie strukturelle Veränderungen geben kann, die einen zirkulären Charakter haben.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Das bedeutet, dass es zusätzlich zur zeitlichen Alterung in der Relativitätstheorie strukturelle Veränderungen geben kann, die einen zirkulären Charakter haben!'."\n"))),
  
                   array( 'text', array( text => array(
@@ -209,7 +209,7 @@
                     'Im Fall der Leptonen und der Quarks handelt es sich um eine doppelt verschachtelte Helixspiralbahn der Wirkungsquanten der Feinstruktur.'."\n".
                     'Diese beinhaltet das Prinzip von Einsteins Lichtuhr als Bewegung des Wirkungsquanten-Strings parallel zur in der Abbildung grün eingezeichneten Lichtbahn.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Dass sich die Wirkungsquanten des Strings mit Überlichtgeschwindigkeit bewegen, widerspricht nicht der Relativitätstheorie.'."\n",
                         'Alle Bewegungskomponenten der Wirkungsquanten-Strings, die einen Beitrag zur nachhaltigen Veränderung des Elementarteilchens, also zu seiner Alterung im Sinne seines Zerfalls und ähnlichem,'."\n".
                       'oder zur Alterung der Welt an seinem Ort beitragen können, sind auf die Lichtgeschwindigkeit begrenzt!'."\n"))),
@@ -239,7 +239,7 @@
                       'Die Rotationskomponente der Spiralbahn, die den Wirkungsquanten eine Überlichtgeschwindigkeit verleiht, ändert die Photon-Struktur nicht nachhaltig, trägt also nichts zur Alterung'."\n".
                     'der Welt an diesem Ort im Raum bei, weil das Photon nach einem Augenblick immer wieder im gleichen inneren Zustand seiner Schwingung ankommt.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Dadurch steht die Überlichtgeschwindigkeit der Feinstruktur des Photons nicht mit der Relativitätstheorie im Widerspruch!'."\n"))),
  
                   array( 'text', array( text => array(
@@ -260,7 +260,7 @@
                       'Die qualitative Beschreibung der schwingenden schwachen Wechselwirkung ergibt sich durch eine, durch die Helixspiralbahn bedingte, Winkelung der Teilabschnitte des elektrischen Feldes.'."\n".
                     'Dieser Winkel hat vermutlich etwas mit dem Weinberg-Winkel, dem elektroschwachen Mischungswinkel, zu tun.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Dass sich die Feinstruktur mit Überlichtgeschwindigkeit bewegt, widerspricht aus den gleichen Gründen wie beim Photon nicht der Relativitätstheorie.'."\n",
                         'Alle Bewegungen seiner Feinstruktur, die einen Beitrag zur nachhaltigen Veränderung des Leptons, also zu seiner Alterung im Sinne seines Zerfalls und ähnlichem,'."\n".
                       'beitragen können, sind auf die Lichtgeschwindigkeit begrenzt!'."\n"))),
@@ -434,7 +434,7 @@
                     'Was bestimmt, ob wir ein gutes Leben führen?'."\n".
                     'Was leitet uns durch unser Leben?'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       //'Es ist unser Gefühl.'."\n"))),
                       'Gefühle leiten uns durch unser Leben. \\\\ '."\n".
                       'Sie bestimmen, ob es sich gut und angenehm anfühlt.'."\n"))),
@@ -442,7 +442,7 @@
                   array( 'text', array( text => array(
                     'Wie verändern wir unsere Lebenssituation?'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       //'Durch unsere Handlungen.'."\n"))),
                       'Handlungen verändern unsere Lebenssituation.'."\n"))),
  
@@ -1258,7 +1258,7 @@
                       //array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
                     )),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
@@ -1276,24 +1276,24 @@
                         ''),
                         addtext => '\\small{\\color{*TitleAdd}{~Abraham Lincoln}}')),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Liebe ist …'."\n",
                           '… wenn sich Wege finden. \\\\'."\n".
                         'Es ist Liebe …'."\n",
                           '… wenn Wege sich finden.'."\n".
                         ''))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Das ganze Leben ist ein Sich-Finden …'."\n".
                         ''))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
                   array( 'text', array( Shape  => 'quote', text => array(
@@ -1302,19 +1302,19 @@
                         ''),
                         addtext => '\\small{\\color{*TitleAdd}{~Autor unbekannt}}')),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
                   // #!: Auch auf der NaPhil-Yoga-Startseite! (OM:NPYo:Home)
                   // #!: Auch auf der NaPhil-Yoga-Einleitungsseite! (OM:NPYo:Einleitung)
                   // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
                         'der hat die Magie, Dinge zum Schweben zu bringen.'."\n".
                         ''))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
@@ -1323,10 +1323,10 @@
                         'Make your life a celebration!'."\n"),
                         addtext => '\\small{\\color{*TitleAdd}{~Mike Love\\footnote{\\jump[https://www.youtube.com/watch?v=NKx_kxR9hWU]{}{"I Love You & Permanent Holiday" Live at Woodstock Poland 2016}, Sek. 13:57.}}}')),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Die Angst vor deinem Tod \\\\'."\n".
                         'ist eigentlich die Angst vor deinem Leben. \\\\'."\n".
                         'Die Angst vor deinem Fehler und Misserfolg \\\\'."\n".
@@ -1344,12 +1344,12 @@
                         ''),
                         addtext => '')),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
                   // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Wir leben und betreiben Persönlichkeitsentwicklung, \\\\'."\n".
                         'damit wir unser Schicksal, unsere Traumata, \\\\'."\n".
                         'die uns wie Mühlsteine um den Hals hängen, so klein schleifen, \\\\'."\n".
@@ -1357,50 +1357,50 @@
                         ''),
                         addtext => '')),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
                   // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Stein-der-Weisen)
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Nur der innere Stein der Weisen kann \\\\'."\n".
                         'den äußeren Stein der Weisen zum Leuchten bringen, \\\\'."\n".
                         'ihn ›beleuchten‹. \\small{\\color{*TitleAdd}{Nicht umgekehrt.}}'."\n".
                         ''),
                         addtext => '')),
                     
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
                   // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Einleitung:Ehrgeiz)
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Deine Erkenntnis liegt auf deinem Weg, \\\\'."\n".
                         'nicht im Ziel.'."\n".
                         ''),
                         addtext => '')),
                     
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Denken und Fühlen sind wie Körper und Seele, \\\\'."\n".
                         'zwei Seiten der selben Medaille.'."\n".
                         ''),
                         addtext => '')),
                     
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Wer bereit ist, den Schleier des Offensichtlichen hinter sich zu lassen, \\\\'."\n".
                         'wird das Verborgene entdecken, das immer direkt vor ihm lag.'."\n".
                         ''),
                         addtext => '')),
                     
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\small{\\color{*TitleAdd}{Mathematik und physikalische Realität können niemals das Gleiche sein:}} \\\\ '."\n".
                         'In der Mathematik sind das strukturelle Abbild eines Symbols und seine Eigenschaften getrennte Dinge,'."\n".
                         //'die wir per Assoziation einander zuordnen. \\\\ '."\n".
@@ -1411,7 +1411,7 @@
                         ''),
                         addtext => '')),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
                   // #: Siehe "http://www.youtube.com/watch?feature=player_embedded&v=HkBEKU-E38k", Sek. 7:05, gespeichert als "Don Lincoln Welches sind die kleinsten Bausteine des Universums.mp4", und "http://en.wikiquote.org/wiki/Talk:Albert_Einstein". Zitat ähnlich siehe URL: http://www.liss-kompendium.de/zitate/einstein-zitate.htm
@@ -1422,7 +1422,7 @@
                         ''),
                         addtext => '\\small{\\color{*TitleAdd}{~Einstein zugeschrieben}}')),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
@@ -1439,7 +1439,7 @@
                         ''),
                         addtext => '\\small{\\color{*TitleAdd}{~Das Orakel von Delphi}}')),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
                   array( 'jumplist', array(

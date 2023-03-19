@@ -121,19 +121,19 @@
                     'In meinem Vortrag und der anschließenden Diskussion sollen meine folgenden Thesen eine Perspektive schaffen, aus der eine Verbindung zwischen'."\n".
                     'der Physik, der Achtsamkeit und dem Yoga sichtbar wird.'."\n".
                     'Auch möchte ich den sich ergebenden Mehrwert dieser Perspektive verdeutlichen.'."\n"))),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '1. In der Physik wie auch im Leben haben alle Veränderungen zwei Aspekte:'."\n".
                       'Stabilität und Entwicklung.'."\n"))),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '2. Eine Analyse dieser gemeinsamen Perspektive auf die Physik und das Leben zeigt:'."\n".
                       'Jedes physikalische „Ding“ existiert durch einen einzigen „obersten“ Regelprozess, so auch jedes Lebewesen durch seinen Achtsamkeitsprozess.'."\n"))),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '3. Unser zufriedenes Leben hängt von einer angenehmen Balance zwischen unserer Stabilität und unserer Entwicklung ab, die ganz individuell ist.'."\n".
                       'Dies verbindet unseren Achtsamkeitsprozess mit Achtsamkeit und Yoga.'."\n"))),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '4. Anders ausgedrückt: Unser Wohlbefinden hängt entscheidend von der Balance zwischen unserem Achtsamkeitsprozess im Hier und Jetzt und unserem'."\n".
                       'Achtsamkeitsprozess des Inhalts unseres (Nach-)Denkens ab, und darum dreht sich das Yoga.'."\n"))),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '5. Das Wissen um diese Balancen und deren Zusammenhänge kann uns Bewältigungsstrategien sichtbar und verständlich machen,'."\n".
                       'ohne deren Wissen wir unserer Not leicht hilflos ausgeliefert sind.'."\n"))),
                   array( 'text', array( text => array(
@@ -178,7 +178,7 @@
                       'Wenn unsere Denkmuster über unser Leben nicht zu unseren tieferen Einichten zu unserem Leben passen, dann bekommen wir übrigens leicht Schwierigkeiten.'."\n".
                     'Dies kommt, weil wir Schlüsse ziehen, die manchesmal so nicht stimmen.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', TextColor => '*CloserDesc', text => array(
+                  array( 'text', array( Shape => 'italic', TextColor => '*CloserDesc', text => array(
                       'Es ist übrigens äußerst interessant sich darüber Gedanken zu machen, was wohl genau passiert, wenn wir die Dinge zerlegen.'."\n".
                       'Wie schon gesagt:'."\n".
                       'Es geht dabei etwas verloren, nämlich ein Stück Zusammenhang und Individualität.'."\n".
@@ -293,7 +293,7 @@
                     'Was schließlich auch nicht sehr verwunderlich ist, bestehen wir doch aus Atomen und diese aus Elementarteilchen.'."\n".
                     '\\color{*Bearb}{(Da muss etwas mehr kommen warum!!!)}'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', TextColor => '*CloserDesc', text => array(
+                  array( 'text', array( Shape => 'italic', TextColor => '*CloserDesc', text => array(
                         'Auffällig ist, dass sich sowohl das Verhalten von Elementarteilchen als auch das der Lebewesen nur statistisch erfassen lässt.'."\n".
                         'Dies kommt in beiden Fällen, weil sich hier keine individuellen Voraussagen machen lassen, denn wir durchschauen die Zusammenhänge nicht in jedem Detail.'."\n",
                           'Steine und andere unbelebte Dinge verhalten sich da ganz anders.'."\n".
@@ -321,13 +321,13 @@
                     'dass man gemeinsam gut als Artengemeinschaft überleben kann.'."\n".
                     'Diesen Regelprozess nennen wir Evolution der Arten\\color{*Bearb}{(Verweis)} und er bestimmt das Ökosystem der Erde.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', TextColor => '*CloserDesc', text => array(
+                  array( 'text', array( Shape => 'italic', TextColor => '*CloserDesc', text => array(
                         'Solche übergeordneten Regelprozesse enthalten die Achtsamkeitsprozesse der einzelnen Lebewesen als Unterprozesse.'."\n".
                         'Die Evolution der Arten ist wiederum ein Bestandteil des Regelprozesses, der unsere Erde als ganzes existieren lässt.'."\n".
                         'Zu ihm gehört ganz zentral der Regelprozess, der der Erdgravitation zugrunde liegt.'."\n".
                         'Die Evolution der Arten ist aber so stark von der Energiezufuhr der Strahlung unserer Sonne abhängig, dass wir die Evolution eigentlich im Sonnensystem denken müssen.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', TextColor => '*CloserDesc', text => array(
+                  array( 'text', array( Shape => 'italic', TextColor => '*CloserDesc', text => array(
                         'Die neue Perspektive und die durch sie sichtbar werdende Verbindung zwischen der Physik und dem Leben ermöglicht nicht'."\n".
                         'nur die Übertragung von Prinzipien des Lebens, wie den Regelprozess und seine Eigenschaften, auf die grundlagen der Physik, sondern auch in umgekehrter Richtung.'."\n",
                           'So lässt sich beispielsweise das Prinzips des Symmetriebruchs\\color{*Bearb}{(Link, Verweis)} der Physik mit seinen sich aus ihm ergebenden Polen und Wechselwirkungen im Leben'."\n".
@@ -518,7 +518,7 @@
                     'Bestandsaufnahme unserer Lebenszusammenhänge zu machen.'."\n"))),
                   array( 'text', array( text => array(
                      'Das Geschirrspülmaschinenbeispiel:'."\n"))),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Auf der Leinwand räume ich die Geschirrspülmaschine aus und ärgere mich darüber, dass ich dies viel öfter tue, als mein Partner.'."\n",
                         'Im Kinosessel sitzend beobachte ich, was mir immer wieder geschieht, und bin traurig darüber, dass ich mich so oft ärgern muss.'."\n"))),
                   array( 'text', array( text => array(

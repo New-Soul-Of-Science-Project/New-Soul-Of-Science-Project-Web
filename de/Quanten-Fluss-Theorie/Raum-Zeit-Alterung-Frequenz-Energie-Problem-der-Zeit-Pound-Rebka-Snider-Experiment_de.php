@@ -241,7 +241,7 @@
                     'an einem Ort immer in allen Richtungen isotrop ist.'."\n".
                     'Dies wird dadurch erreicht, dass der Raum so gekrümmt wird, dass dies gewährleistet ist.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Da die Korrektur der Raumdehnung in Richtung einer isotropen, variablen Lichtgeschwindigkeit auf verschiedene Arten möglich ist, definiere ich hier,'."\n".
                         'dass die Dehnung oder Stauchung des Raums in radialer Richtung zu einer Zentralmasse geschieht.'."\n".
                         'Die Raumdehnung und die variable Lichtgeschwindigkeit in tangentialer Richtung bleibt davon unberührt.'."\n"),

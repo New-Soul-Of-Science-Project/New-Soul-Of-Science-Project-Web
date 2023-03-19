@@ -46,14 +46,14 @@
                   array( 'text', array( text => array(
                     'Im gerade verwendeten Wort \\italic{wirklich} steckt eine mögliche Antwort:'."\n"))),
                                            
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Nur, wenn wir beim Empfänger eine entsprechende Veränderung \\bold{bewirken}, also feststellen, können wir auch davon ausgehen, dass Information übertragen wurde.'."\n"))),
 
                   array( 'text', array( text => array(
                     'Die Übetragung hat etwas beim Empfänger bewirkt, war also eine \\italic{Informationsübertragung}.'."\n".
                     'Dahinter steht die Frage:'."\n"))),
                                            
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Wenn wir als Empfänger etwas nicht „verstehen“, können wir dann von Informationsübertragung sprechen?'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -65,7 +65,7 @@
                     'Er weiß nicht einmal mit Sicherheit, ob er die Information selber verstünde, wäre er der noch uninformierte Empfänger.'."\n".
                     'Von der Senderseite aus lässt sich der Begriff der Information also nur sehr schwer definieren.'."\n"))),
 
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Gesendete Information ist immer \\bold{potenzielle Information}.'."\n".
                         'Nur der Anteil an potenzieller Information kann als \\bold{Information} bezeichnet werden, der beim Empfänger etwas bewirkt.'."\n"))),
             
@@ -101,13 +101,13 @@
                   array( 'text', array( text => array(
                     'Ich stelle fest:'."\n"))),
 
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Erst was wirkt macht einen Unterschied.'."\n"))),
             
                   array( 'text', array( text => array(
                     'In der Definition der Rhetorik wird dies aufgegriffen:'."\n"))),
 
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Rhetorik ist die Kunst der wirkungsvollen Rede oder Kommunikation.\\color{*Bearb}{(Verweis Wikipedia und Tom Tastisch)}'."\n"))),
             
                   array( 'text', array( text => array(
@@ -117,7 +117,7 @@
                 'Wirkung ist Resonanz', subline =>
                   '')),
 
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Information ist Anstoß, im Leben, in der Physik.'."\n"))),
             
                   array( 'text', array( text => array(
@@ -132,7 +132,7 @@
                     'so stark, dass unser aller Existenz dadurch in jedem Detail erzeugt ist und stabil gehalten wird.'."\n".
                     'Lebewesen sind demnach \\jump{OM:SpaLeb:Bewusstsein:Vortext:Elementarprozess}{Elementarprozesse} und enthalten sehr viel Information:'."\n"))),
 
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Schauen und horchen wir in uns selber hinein, finden wir die Welt in uns;'."\n".
                         'viel mehr Information und Erkenntnis, als wir es uns je zu träumen gewagt haben.'."\n",
                           'Schauen und horchen wir dann in die Welt, ist diese so facettenreich, wie wir selber, weil sie sich in uns spiegelt.'."\n"))),

@@ -55,7 +55,7 @@
                     'Zunächst:'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '\\quote{Panta rhei} — \\jump{OM:FrQFT:WasIstPhysik:Vortext:WarumDynamStrukt}{Alles fließt}!'."\n"))),
                       
                   array( 'text', array( text => array(

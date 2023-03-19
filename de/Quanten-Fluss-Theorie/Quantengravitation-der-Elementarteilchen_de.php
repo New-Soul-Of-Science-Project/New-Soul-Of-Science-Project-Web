@@ -118,7 +118,7 @@
                     'Bisher gehen wir in der akademischen Physik davon aus, dass wir keine Phänomene beobachten, die einen direkten Rückschluss auf die Quanten der Gravitation zulassen.'."\n".
                     'Ich bin mittlerweile durch die neue Physik der Quanten-Fluss-Theorie zu dem Schluss gekommen, dass dies nicht stimmt.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Die zuvor eingeführte \\jump{OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation}{›Abzählinterpretation der Heisenbergschen Unschärferelation‹}'."\n".
                       'bedeutet in meinen Augen,'."\n".
                       'dass die Elementarteilchen Wirkungsimpulse \\bold{\\term{h}} (Plancksches Wirkungsquantum) als Impulskegel abstrahlen'."\n".
@@ -143,7 +143,7 @@
                   'Die Vereinheitlichung der Physik durch eine neue, fundamentale Wechselwirkung')),
                         
                   // #: Ref: *Graviradiation-Einfuehr
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Alle uns bekannten Wechselwirkungen sind im mikroskopisch Kleinen auf die neue Wechselwirkung der von mir sogenannten \\bold{Graviradiation}\\hidden{Ref: *Graviradiation-Einfuehr} zurückzuführen.'."\n"))),
 
                   array( 'text', array( text => array(
@@ -247,7 +247,7 @@
                     'dann werden effektiv nur noch Wechselwirkungsteilchen senkrecht zur Bewegungsrichtung ausgesandt.\\footnote[*Entwick]{\\color{*Entwick}{Dies muss an anderer Stelle noch explizit aus Gieses Überlegungen hergeleitet werden. Auch Oliver Heaviside soll dazu gearbeitet haben (siehe \\jump[https://en.wikisource.org/w/index.php?title=Motion_of_Electrification_through_a_Dielectric&oldid=4808645]{}{Motion of Electrification through a Dielectric}).}}'."\n".
                     'Deutlich wird dies auch an folgender Überlegung:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Flacht sich die Struktur eines Elementarteilchens immer weiter ab, dann bewegen sich die Wechselwirkungspole, die für den Zusammenhalt seiner Struktur sorgen,'."\n".
                       'immer weiter in die zentrale Ebene senkrecht zu seiner Bewegungsrichtung.'."\n".
                       'Sind diese Pole nun so gut wie auf dieser Ebene angekommen, dann können sich die Wechselwirkungsteilchen zwischen ihnen auch nur in dieser Ebene'."\n".
@@ -257,7 +257,7 @@
                   array( 'text', array( text => array(
                     'So ergibt sich dann die Form eines Impulskegels für die Abstrahlung der Wirkungsquanten:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Eine senkrechte Ringform der Abstrahlung der virtuellen Wirkungsquanten je Zeitpunkt heißt eine kegeloberflächenförmige Struktur ihrer Ausbreitung'."\n".
                       'um die Bahn des Strings in der Zeit.'."\n".
                       'Und dieser Kegel hat einen Öffnungswinkel von 90°, denn das abstrahlende Teilchen hat die gleiche Geschwindigkeit, wie seine Abstrahlung.'."\n"))),
@@ -277,7 +277,7 @@
                   array( 'text', array( text => array(
                     'Die Abnahme ihrer Impulsintensität im Raum hat bei Wirkungsquanten-Impulsen eine Besonderheit:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Eine ringförmige Ausbreitung bedeutet, eine Abnahme der Impulsintensität zum String mit \\term{1/r}.'."\n".
                       'Das kommt, weil die Dichte der Wechselwirkungsteilchen im Ring  mit \\term{1/r} zum String abnimmt, denn der Umfang des Rings nimmt mit \\term{r} zu,'."\n".
                       'während die Anzahl der Wechselwirkungsteilchen im Ring gleich bleibt.'."\n"))),
@@ -364,7 +364,7 @@
                       'Wie wir später noch sehen werden, hat dies auch die bekannte \\jump{OM:FrQFT:Quantengravitation:Lichtbeugung}{Lichtbeugung} der Gravitation zur Folge.'."\n",
                       'Aus Sicht der Quanten-Fluss-Theorie möchte ich hier kurz eine eingeschobene Bemerkung machen, was in einer detaillierten Betrachtung, ohne Simplifizierung, passiert:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Der durch die Störung welligere, stärker ondulierte Pfad des Lichts, des hier erörterten Bassisteilchenmodells Gieses, stellt sich in der Quanten-Fluss-Theorie'."\n".
                       'bei mehr Detail als engere Wicklung der \\jump{OM:FrQFT:ZeitAlterungFrequenz:Fig-Elapson}{Helixspiralbahn der Wirkungsquanten} des Photons dar (siehe \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson}).'."\n"))),
                       
@@ -641,7 +641,7 @@
                     'Die Frequenz der Wirkungsquanten ist also tatsächlich unabhängig von der Ausbreitungsgeschwindigkeit der Wirkungsquanten am Ort der beobachtet wird.'."\n",
                       'Dies ist eine wichtige Erkenntnis:'."\n"))),
                                                                                                      
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Durch die Unabhängigkeit der virtuellen Wirkungsquanten-Frequenz von der Veränderung ihrer Ausbreitungsgeschwindigkeit und der nachfolgend gezeigten Berechnung der Gravitation'."\n".
                       'über die statistische Standardabweichung, lässt sich die Quantengravitation vieler Teilchen, also größerer Massen, beliebig kombinieren.'."\n"))),
                       
@@ -882,7 +882,7 @@
                     'Dies ist eine wichtige Erkenntnis:'."\n"))),
                     ))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Durch die Unabhängigkeit der Störungsfrequenz von der Veränderung ihrer Ausbreitungsgeschwindigkeit und der nachfolgend gezeigten Berechnung der Gravitation'."\n".
                       'über die statistische Standardabweichung, lässt sich die Quantengravitation vieler Teilchen, also größerer Massen, beliebig kombinieren.'."\n"))),
                       
@@ -1211,7 +1211,7 @@
                   array( 'text', array( text => array(
                     'Es gibt einen wesentlichen Unterschied zu Gieses Basisteilchenmodell:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Der Fortschritt im \\jump{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:LichtgeschwGravi}{Vergleich zu Gieses Formulierung der Lichtverlangsamung} besteht darin, dass sich so ein nachvollziehbarer Zusammenhang mit der Masse'."\n".
                       'des anziehenden, kugelförmigen Objekts ergibt und nicht „nur“ mit der Anzahl an Elementarteilchen in diesem Objekt.\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, Speed Reduction in Detail, S. 20-22, hier Formel C.7, S. 22. \\term{N} steht darin nicht für die Masse einer kugelförmigen Ansammlung von Elementarteilchen, sondern \\term{N} steht für die Anzahl der Basisteichen, also für die doppelte Anzahl der Elementarteilchen.}'."\n"))),
                       
@@ -1225,7 +1225,7 @@
                     'Die Quanten-Fluss-Theorie ist in der Lage, eine wichtige Eigenschaft des Gravitationsfelds entsprechend der Allgemeinen Relativitätstheorie aus der hier'."\n".
                     'beschriebenen Struktur der Elementarteilchen und Grundformeln der Quantenphysik herzuleiten:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Mit einer Simplifizierung des Leptonen-Strings erhalten wir im Rahmen der Quanten-Fluss-Theorie die korrekte Veränderung der Lichtgeschwindigkeit'."\n".
                         'im Gravitationsfeld einer homogenen Massenkugel.'."\n".
                         'Dies kann als deutlicher Hinweis auf eine Vereinheitlichung von Quantenphysik und Allgemeiner Relativitätstheorie'."\n".
@@ -1262,7 +1262,7 @@
                       'Der Wert der Gravitationskonstanten kann leider noch nicht hergeleitet werden, aber wir sind hiermit diesem Ziel einen Schritt näher gekommen.'."\n".
                     'Und zwar dadurch, mehr Einblick in die Strukturen zu gewinnen, die Grundlage ihrer Entstehung sind.'))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'In der Allgemeinen Relativitätstheorie existiert keinerlei Ansatz zum Verständnis der Gravitationskonstanten.'."\n".
                         'Sie wird dort, und auch in jeder anderen mir bekannten Theorie, schlicht als gemessener Wert eingesetzt.'."\n"))),
                       
@@ -1740,7 +1740,7 @@
                       'Dies bedeutet nicht, dass die in Näherung hergeleiteten Formeln kein Problem mit Singularitäten haben.'."\n".
                     'Denn es sind ja offensichtlich die Formeln der Allgemeinen Relativitätstheorie, die bekannte Probleme mit Singularitäten beinhalten.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'In der Quanten-Fluss-Theorie lassen sich Probleme mit Singularitäten durch genauere Näherungen reduzieren, was in der Allgemeinen Relativitätstheorie'."\n".
                       'zum Beispiel nicht möglich ist.'."\n"))),
                       
@@ -1824,7 +1824,7 @@
                       'Jedoch wirken die Wirkungsquanten des Vakuums durch die Graviradiation ihrer Impulskegel so aufeinander, dass sich ihre Geschwindigkeit auf die Lichtgeschwindigkeit reduziert.'."\n".
                     'Auf diese Weise entsteht eine innere Bindung des Vakuums.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Dieser symmetrische Fall bedeutet also Graviradiation ohne Gravitation.'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -1843,7 +1843,7 @@
                     'Im Fall von Massenansammlungen verschiebt sich aber auch die Verteilung der Vakuum-Energiedichte derart, dass um große Massen herum und'."\n".
                     'im weiträumigen Vakuum innerhalb großer Massenansammlungen die Energiedichte im Verhältnis zum Vakuum zwischen diesen Ansammlungen erhöht ist.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Diese erhöhte Energiedichte führt zu zusätzlicher Gravitation, die wir als \\jump{OM:FrQFT:Dunkle-Materie}{Phänomen der Dunklen Materie} beobachten,'."\n".
                       'wie das Sandkastenmodell der \\jumpname{OM:FrQFT:Quantengravitation:PhaenoDunkMat:Fig-GravitationspotMulti} verdeutlicht.'."\n",
                         'In ihm werden sogar die negativen Pole der Gravitation sichtbar, die sich im Vakuum zwischen den großen Massen befinden.'."\n"))),

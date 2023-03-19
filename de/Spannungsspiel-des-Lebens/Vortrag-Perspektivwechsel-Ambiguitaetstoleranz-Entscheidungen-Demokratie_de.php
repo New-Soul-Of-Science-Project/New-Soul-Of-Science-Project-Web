@@ -59,20 +59,20 @@
                 'Meine Thesen')),
                   array( 'text', array( text => array(
                     'Meine folgenden Thesen sollen Denkanstöße geben und eine Diskussion anregen:'."\n"))),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '1. Es gibt keine Perspektive der absoluten Wahrheit in unserer Welt, die wir kennen oder gar beweisen könnten.'."\n".
                       'Denn jede Perspektive hängt von ihrem Standpunkt ab; von ihren ausgesprochenen, unausgesprochenen oder bewussten und unbewussten Annahmen, die unseren Wahrnemungen sowie deren Schlussfolgerungen und Interpretationen zugrunde liegen.'."\n"))),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '2. Unser Leben besteht sowohl darin Widersprüchlichkeiten oder Mehrdeutigjeiten aushalten sowie sie auch auflösen zu können.'."\n".
                       'Dies ist die Grundlage für all unsere Entscheidungen.'."\n".
                       'Und die Balance zwischen beidem ist grundlegend für unser Wohlbefinden.'."\n"))),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '3. Demokratie ist nicht ohne Ambiguitätstolereanz zu haben.'."\n".
                       'Deshalb ist Meinungsfreiheit auch im Grundgesetzt, Artikel 5,\\color{*Bearb}{(Verweis GG, Auszug ins Handout)} geschützt.'."\n"))),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '4. Die aktuelle Auseinandersetzung und Diskussion in Bezug auf missliebige Meinungen, Fake-News und Verschwörungstheorien ist wichtig.'."\n".
                       'Die Art und Weise, wie sie von mächtigen Stellen, wie der Politik, der Presse und auch in Netzwerken, wie Facebook und Wikipedia, geführt wird, bedroht allerdings unsere Demokratie.'."\n"))),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '5. Es kann niemanden geben, der uns sagt, welche Perspektive wirklich richtig oder falsch ist.'."\n".
                       'Wir sind alle darauf angewiesen selber zu fühlen und zu denken, um herauszubekommen, was für uns, ganz individuell, richtig und wichtig ist.'."\n"))),
                   array( 'text', array( text => array(
@@ -400,7 +400,7 @@
                     'die je auf der Welt hergestellt wurde; also mit anderen Worten, dass keine ältere Flöte je gefunden werden kann.'."\n",
                       'Daher würde ich einen etwas veränderten Titel vorschlagen:'."\n"))),
             
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Tübinger Forscher entdecken die älteste bekannte Flöte der Welt'."\n"))),
             
                   array( 'text', array( text => array(
@@ -438,20 +438,20 @@
                 'Meine Thesen')),
                   array( 'text', array( text => array(
                     'Meine folgenden Thesen sollen Denkanstöße geben und eine Diskussion anregen:'."\n"))),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '1. Es gibt keine Perspektive der absoluten Wahrheit in unserer Welt, die wir kennen oder gar beweisen könnten.'."\n".
                       'Denn jede Perspektive hängt von ihrem Standpunkt ab; von ihren ausgesprochenen, unausgesprochenen oder bewussten und unbewussten Annahmen, die unseren Wahrnemungen sowie deren Schlussfolgerungen und Interpretationen zugrunde liegen.'."\n"))),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '2. Unser Leben besteht sowohl darin Widersprüchlichkeiten oder Mehrdeutigjeiten aushalten sowie sie auch auflösen zu können.'."\n".
                       'Dies ist die Grundlage für all unsere Entscheidungen.'."\n".
                       'Und die Balance zwischen beidem ist grundlegend für unser Wohlbefinden.'."\n"))),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '3. Demokratie ist nicht ohne Ambiguitätstolereanz zu haben.'."\n".
                       'Deshalb ist Meinungsfreiheit auch im Grundgesetzt, Artikel 5,\\color{*Bearb}{(Verweis GG, Auszug ins Handout)} geschützt.'."\n"))),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '4. Die aktuelle Auseinandersetzung und Diskussion in Bezug auf missliebige Meinungen, Fake-News und Verschwörungstheorien ist wichtig.'."\n".
                       'Die Art und Weise, wie sie von mächtigen Stellen, wie der Politik, der Presse und auch in Netzwerken, wie Facebook und Wikipedia, geführt wird, bedroht allerdings unsere Demokratie.'."\n"))),
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '5. Es kann niemanden geben, der uns sagt, welche Perspektive wirklich richtig oder falsch ist.'."\n".
                       'Wir sind alle darauf angewiesen selber zu fühlen und zu denken, um herauszubekommen, was für uns, ganz individuell, richtig und wichtig ist.'."\n"))),
                   array( 'text', array( text => array(

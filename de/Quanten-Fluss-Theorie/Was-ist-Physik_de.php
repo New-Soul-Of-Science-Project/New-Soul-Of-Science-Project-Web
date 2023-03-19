@@ -70,7 +70,7 @@
                   array( 'text', array( text => array(
                     'Ich möchte noch ergänzen, …'."\n"))),
                                                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       '… dass es nicht nur räumliche, sondern auch zeitliche, also dynamische, Beziehungen ihrer Bestandteile sind,'."\n".
                       'die den aus ihnen zusammengesetzten Dingen Eigenschaften verleihen.'."\n".
                       'Dies meint die Bewegung ihrer Bestandteile und deren Änderung, also insbesondere auch deren Rotation.'."\n"))),
@@ -89,7 +89,7 @@
                   array( 'text', array( text => array(
                     'Dem füge ich folgende allgemeine naturphilosophische Aussagen hinzu:'."\n"))),
             
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Wenn wir Naturwissenschaft betreiben, so auch in der Physik, beschäftigen wir uns immer mit der Stabilität und (Fort-)Entwicklung der realen Dinge,'."\n".
                       'also realer Systeme.'."\n",
                         'Wir untersuchen den Zusammenhang – den Zusammenhalt – der Bestandteile oder die Transformation der Strukturen dieser Systeme, also deren inneren und äußeren Wechselwirkungen,'."\n".
@@ -103,7 +103,7 @@
                   array( 'text', array( text => array(
                     'Wie wir noch sehen werden, ist aus der folgenden naturphilosophischen Perspektive der aus der Quantenphysik bekannte \\jump{OM:FrQFT:WasIstPhysik:Vortext:Djet-Neheh-Dualismus}{Welle-Teilchen-Dualismus} sozusagen in die Wiege der Physik gelegt.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Selbstorganisierte dynamische Strukturen werden immer durch Regelprozesse stabilisiert, durch innere Wechselwirkungen, die die Bestandteile der Systeme einigermaßen in ihrer „Bahn“ halten.'."\n".
                       'Diese Wechselwirkungen müssen daher Anteile in sich tragen, die als Gegenspieler diese „Bahn“ erzeugen.'."\n".
                       'Und diese Regelprozesse laufen offensichtlich niemals ganz perfekt; im Besonderen, wenn von außen auf sie eingewirkt wird, was wohl immer der Fall ist.'."\n",
@@ -224,7 +224,7 @@
                       'Der Djet-Aspekt der grundlegenden Veränderung ist die Gesamtbewegung der Feinstruktur der Dinge und entspricht einer grundlegenderen Zeit, als die Alterung.'."\n"))),
             
                   // #: Siehe weiter unten ……
-                  /*array( 'text', array( Shape  => 'italic', text => array(
+                  /*array( 'text', array( Shape => 'italic', text => array(
                       'Die Alterung der Dinge, das Voranschrauben oder die Translation der Spiralbahn in \\jumpname{OM:FrQFT:WasIstPhysik:Vortext:Fig-Elapson-Existenzprinzip} – in diesem Fall die Alterung des Vakuums oder Kosmos –, entspricht der Lichtgeschwindigkeit und somit der Zeit der Relativitätstheorie.'."\n",
                         'Die konstante Überlichtgeschwindigkeit der Bestandteile, die ja noch eine zusätzliche Rotation ausführen, steht nicht im Widerspruch zur Relativitätstheorie.'."\n".
                       'Denn die Rotation der Bestandteile hat keinen bleibenden Einfluss auf die Alterung der Dinge im Sinne ihres Reifeprozesses, ihre nachhaltige, dauerhafte Veränderung.'."\n".

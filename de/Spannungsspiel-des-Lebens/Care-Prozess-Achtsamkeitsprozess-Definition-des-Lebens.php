@@ -54,7 +54,7 @@
                     'Er organisiert unsere stabile Existenz, unser Leben und Überleben.'."\n".
                     'Um ihn dreht sich unser Leben, im wahrsten Sinne des Wortes:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Unser Care-Prozess ist vereinfacht gesprochen der Zirkel aus unserer Lebenssituation, unseren Gefühlen zu ihr, unseren Antrieben durch diese und unseren sich aus ihnen'."\n".
                       'ergebenden intentionalen Handlungen, die dann in unsere neue Lebenssituation münden.'."\n"))),
                                                                           
@@ -74,7 +74,7 @@
                   array( 'text', array( text => array(
                     'Diesem Zirkel wohnt eine Entwicklung inne:'."\n"))),
                                                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Die aufmerksame und bewusste Wahrnehmung der Zusammenhänge dieses Zirkels, in unterschiedlichen Lebenssituationen, lässt uns in einem dynamischen Prozess lernen, '."\n".
                       'wie diese in unserem Leben miteinander verknüpft sind.'."\n".
                       'So wird der Zirkel zur Spirale.'."\n".
@@ -85,7 +85,7 @@
                     'Unsere Tendenz zu positiven Gefühlen gibt uns, durch das Gelernte, die Möglichkeit, für ein gutes Wohlgefühl zu sorgen und unser allgemeines Wohlbefinden zu verbessern.'."\n".
                     'So beinhaltet der Achtsamkeitsprozess den Prozess unserer \\jump{OM:SpaLeb:Psyche-und-Stimmung}{Psyche}\\footnote{\\const{SpaLeb_g_footnote_text_Psyche}} und ermöglicht unsere Persönlichkeitsentwicklung.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Wir lernen leben.'."\n"))),
                       
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
@@ -95,7 +95,7 @@
                   array( 'text', array( text => array(
                     'Unser Achtsamkeitsprozess steht in einer Rückkopplung mit unseren aus der Biologie schon bekannten körperlichen und psychischen Regelprozessen:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Die bekannten biologischen Regelprozesse sind die feinstrukturelle Basis unserer Existenz und damit auch unseres Achtsamkeitsprozesses.'."\n",
                         'Unser Achtsamkeitsprozess regelt unser Leben wiederum so, dass die bekannten biologischen Regelprozesse stabil weiterlaufen können.'."\n".
                       'Denn laufen unsere biologischen Regelprozesse nicht gut, dann lassen sie uns das spüren.'."\n"))),
@@ -107,7 +107,7 @@
                     'Der Achtsamkeitsprozess ist auf diese Weise von absolut fundamentaler Bedeutung für unser Leben.'."\n".
                     'Ich denke:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Unser Achtsamkeitsprozess ist unser Leben:'."\n",
                         'Denn in seiner ganzen Komplexität enthält unser Achtsamkeitsprozess all unsere biologischen Regelprozesse.'."\n"))),
                       
@@ -128,7 +128,7 @@
                       'Der Zirkel in diesem Modell steht für die Stabilität, für den \\jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{Neheh-Aspekt} des Prozesses unseres Lebens.'."\n".
                     'Das Voranschreiten der Helixspirale, ihr Gang, steht für die Fortentwicklung des Prozesses, seinen \\jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{Djet-Aspekt}.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Im Zentrum unseres Lebens steht die Balance zwischen Stabilität und Fortentwicklung.'."\n".
                       'Und unser Leben fühlt sich besonders gut an, wenn diese Balance gut austariert ist.'."\n"))),
 
@@ -153,7 +153,7 @@
                     'Denn \\jump{OM:SpaLeb:Information-Kommunikation}{Infomation wirkt}, sonst ist es keine.'."\n".
                     'Und:'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Jede Veränderung in konstruktiver Instabilität bedeutet, das wir lernen.'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -162,7 +162,7 @@
                     // 'Wie in \\jumpname{OM:SpaLeb:Care-Prozess:Vortext:Fig-AchtsamkeitsprozessBewWiss} dargestellt, ist die Beeinflussung dadurch gegenseitig.'."\n".
                     'Durch den Vergleich verändert sich dann die Funktion unseres Bewusstseins, unser Wissen und Können.'."\n"))),
                       
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Wir lernen etwas.'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -272,7 +272,7 @@
                       'Ein gutes Leben fällt einem für gewöhnlich nicht einfach so zu:'."\n".
                     'Jeder ist darauf angewiesen, für sich ganz individuell zu lernen, wie \\italic{sein} gutes Leben funktioniert.'."\n"))),
                         
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Ein gutes Leben ist kein Zufall.'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -299,7 +299,7 @@
                     'würde sich selber und die Welt bereits genug kennen, dann kann der Achtsamkeitsprozess auch nicht mehr mit dem eigentlich gewünschten Erfolg funktionieren.'."\n",
                       'Leben heißt, leben lernen bis zum Schluss – bis zum Tod:'."\n"))),
                         
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                       'Lebenslanges leben lernen.'."\n"))),
 
                   array( 'text', array( text => array(

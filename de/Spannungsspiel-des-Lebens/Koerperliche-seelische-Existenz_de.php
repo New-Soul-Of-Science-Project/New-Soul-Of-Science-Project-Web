@@ -403,9 +403,9 @@
                       array(  jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz:Spannungsbiologie', type => 'back'),
                     )),
                       
-                  /*array( 'text', array( Shape  => 'italic', text => array(
+                  /*array( 'text', array( Shape => 'italic', text => array(
                         'Älter werden fühlt sich nur dann nicht gut an, wenn man nichts dazu lernt.'."\n"))),*/
-                  array( 'text', array( Shape  => 'italic', text => array(
+                  array( 'text', array( Shape => 'italic', text => array(
                         'Älter werden fühlt sich gut an, wenn man immer wieder etwas dazulernt.'."\n"),
                         //'\\small{\\color{*TitleAdd}{Dann zahlt man gerne den Preis und erhält ein Geschenk.}}'."\n"),
                         //'\\small{\\color{*TitleAdd}{Denn man erhält ein Geschenk.}}'."\n"),
