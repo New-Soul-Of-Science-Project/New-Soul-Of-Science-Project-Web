@@ -308,42 +308,6 @@
                     ''))),
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:NeueEinsichten', text =>
-                      
-                'Neue Einsichten zu positiven aktual unendlichen Zahlen', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'Wir können nun zu Aussagen kommen, die etwas über die Größe von \\term{ω} verraten.'."\n".
-                    'Subtrahieren wir eine beliebige endliche natürliche Zahl \\term{n} von \\term{ω}, ergibt sich niemals eine Zahl, die zur Menge'."\n".
-                    'der endlichen natürlichen Zahlen gehört:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  *( \forall n \in \mathbb{N} *)  *[  \omega - n  \notin  \mathbb{N}  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    '\\term{ω – n} ist nicht in den natürlichen Zahlen \\term{\M(N)}, weil eine unendlich große Zahl \\term{ω} minus einer endlichen Zahl \\term{n} eine unendlich große Zahl bleibt.'."\n".
-                    'Und eine unendlich große Zahl ist kein Element von \\term{\M(N)}.'."\n",
-                      'Es zeigt sich also eine riesige mit unendlich großen natürlichen Zahlen gefüllte Lücke zwischen den endlichen natürlichen Zahlen und \\term{ω}.'."\n".
-                    'Diese Lücke ist ein Grund dafür, dass die \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} wahr sein könnte.'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
-                      
-                'XXX', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                      
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:BiOrd:Einleitung:IntegrierteMengenlehre'),
                     )),
@@ -576,7 +540,7 @@
                     'dass die gewählte Darstellung der negativen Zahlen durch Antimengen eine bedeutende Beziehung zum'."\n".
                     'Realen hat, also zu realen Vorgängen im Verborgenen.'."\n",
                       'Die Zuordnung der Werte zur ontologischen Struktur führt zu einer naturphilosophisch sehr interessanten '."\n".
-                    '\\jump{OM:BiOrd:Einleitung:EineFundamentaleAsymmetrie}{Asymmetrie}, die wir später näher betrachten werden.'."\n".
+                    '\\jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{Asymmetrie}, die wir später näher betrachten werden.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:XXX', text =>
                       
@@ -645,27 +609,41 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:BiOrd:Einleitung:EineFundamentaleAsymmetrie'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten'),
                     )),
               )
           ); ?>
 
 
-          <!  • Eine fundamentale Asymmetrie  >
+          <!  • Neue Einsichten  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:BiOrd:Einleitung:EineFundamentaleAsymmetrie',
+            'OM:BiOrd:Einleitung:NeueEinsichten',
               'Die ontologische Struktur beinhaltet die Zählrichtung', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung', type => 'back'),
                     )),
+
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie', text =>
+                      
+                'Eine fundamentale Asymmetrie', subline =>
+                  'Die ontologische Struktur der Zahlen beinhaltet die Zählrichtung')),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '\\bold{Dieses Kapitel stimmt so nicht !!!}',
-                    '• Ich muss mich noch korrigieren, weil ich oben herausgefunden habe, dass es zur leeren Menge \\latexmath{ \varnothing } keine Antimenge gibt. Daher existieren zur Darstellung der negativen Zahlen eine Menge weniger als zur Darstellung der natürlichen Zahlen. Genauer gesagt existieren für die Darstellung der ganzen Zahlen kleiner als Null genau so viele Zahlen wie für die Darstellung der natürlichen Zahlen größer als Null. Deshalb ist die Summer aller ganzen Zahlen Null, genau wie ihr Durchschnitt auch Null ist.',
-                    '• Es bleibt eine fundamentale strukturelle Asymmetrie zwischen den natürlichen Zahlen und den negativen ganzen Zahlen.',
+                    // '\\bold{Dieses Kapitel stimmt so nicht !!!}',
+                    // '• Ich muss mich noch korrigieren, weil ich oben herausgefunden habe, dass es zur leeren Menge \\latexmath{ \varnothing } keine Antimenge gibt. Daher existieren zur Darstellung der negativen Zahlen eine Menge weniger als zur Darstellung der natürlichen Zahlen. Genauer gesagt existieren für die Darstellung der ganzen Zahlen kleiner als Null genau so viele Zahlen wie für die Darstellung der natürlichen Zahlen größer als Null. Deshalb ist die Summer aller ganzen Zahlen Null, genau wie ihr Durchschnitt auch Null ist.',
+                    // '• Es bleibt eine fundamentale strukturelle Asymmetrie zwischen den natürlichen Zahlen und den negativen ganzen Zahlen.',
                     ))),
                       
+                  array( 'fade-in-area', array( Display => 'hideContent',
+                    Title => 'Alter Text …', TitleVis => 'Alter Text:', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Interessanterweise ergibt sich auf diese Weise, dass es eine negative Zahl mehr gibt als positive Zahlen.'."\n".
                     'Wie kann das sein?'."\n",
@@ -687,12 +665,12 @@
                     'weil am negativen „Ende“ ein Ausgangs- oder Ankerpunkt „überhängt“, der einen sehr großen Wert trägt:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.FA', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} *( n + 1 *)  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} 1  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - \sum_{ \forall n \in \mathbb{N}} 1  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} 1  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - \sum_{ \forall n \in \mathbb{N}} 1  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - \omega  }',
-                                          label_name => 'OM:BiOrd:Einleitung:Vortext:Equ-Sum-z', label_text => '\\name{OM:BiOrd:Einleitung:Vortext:Equ-Sum-z}', label_incr => true),
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z', label_text => '\\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'In Worten ausgedrückt bedeutet dies:'."\n".
@@ -708,7 +686,7 @@
                     'die Summe durch die Anzahl ihrer Summanden teilen, zu:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot \omega }  =  \frac{ - \omega }{ 2 \cdot \omega }  }'),
                       array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 \cdot \omega }  =  \frac{ - \omega }{ 2 \cdot \omega }  }'),
                       array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 \cdot \omega }  =  - \frac{ 1 }{ 2 }  }'),
@@ -725,10 +703,65 @@
                     'Das ist möglicherweise für den einen oder anderen eine überraschende Erkenntnis.'."\n".
                     'Ich finde sie hochspannend.'."\n".
                     ''))),
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Interessanterweise können wir so erkennen, dass aus ontologischer Sicht die Null – die leere Menge –,'."\n".
+                    'aufgrund des Ausgangs vom Zählen, zu den positiven Zahlen gehört, und dadurch'."\n".
+                    'die natürlichen Zahlen \\latexmath{ \mathbb{N} }, einschließlich der Null, bildet.'."\n",
+                      'Da es zur Null keine Antimenge und damit auch ontologisch kein negatives Komplementär gibt,'."\n".
+                    'was perfekt zur Eindeutigkeit und gewünschten Bidirektionalität in Bezug auf die Zahlenwerte passt,'."\n".
+                    'gibt es tatsächlich genauso viele negative wie positive Zahlen,'."\n".
+                    'eben beides ohne die Null.'."\n",
+                      'Es gibt also eine fundamentale Asymmetrie zwischen der ontologischen Struktur der Ordinalzahlen'."\n".
+                    'und der ontologischen Struktur der aus ihnen abgeleiteten negativen Zahlen.'."\n".
+                    'Dies gilt also auch für alle endlichen ganzen positiven Zahlen mit der Null und'."\n".
+                    'für die endlichen ganzen negativen Zahlen, ohne die Null:'."\n".
+                    ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Sei \\term{#} das Symbol für den Operator, der die Anzahl der Elemente einer Menge liefert,'."\n".
+                      'so gilt, auch wegen der oben definierten Gleichsetzung von Anzahlen und deren entsprechenden Mengen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \# \mathbb{N}  =  \# \mathbb{Z}^{+}_{0}  =  \omega  =  \mathbb{N}  }'),
+                      array( display => 'on',  latex => '{  \# \mathbb{Z}^{+}  =  \# \mathbb{Z}^{-}  =  \omega - 1  }'),
+                      array( display => 'on',  latex => '{  \# \mathbb{Z}  =  \# \mathbb{N} + \# \mathbb{Z}^{-}  =  2 \cdot \omega - 1  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Summe aller endlichen ganzen Zahlen ist demnach Null:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N} } n \; + \sum_{ \forall n \in \mathbb{Z}^{-} } \! n  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N} } n \; - \!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ \varnothing *\} } \!\!\! n  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  0 \; + \!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ \varnothing *\} } \!\!\! n \; - \!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ \varnothing *\} } \!\!\! n  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ n = 1 }^{ \omega - 1 } n \; - \; \sum_{ n = 1 }^{ \omega - 1 } n  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  *( *( \omega - 1 *)^{2} + *( \omega - 1 *) *) \cdot 0  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  *( *( \omega^{2} - 2 \cdot \omega + 1 *) + *( \omega - 1 *) *) \cdot 0  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  *( \omega^{2} - \omega *) \cdot 0  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  0  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der Durchschnitt aller endlichen ganzen Zahlen ist demnach Null:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot \omega - 1 }  =  \frac{ 0 }{ 2 \cdot \omega - 1 }  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot \omega - 1 }  =  0  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 \cdot \omega - 1 }  =  0  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:BiOrd:Einleitung:Vortext:XXX',
-                Title => 'Möglicher Bezug zur analytischen Fortsetzung der Riemannschen Zeta-Funktion …',
-                TitleVis => 'Möglicher Bezug zur analytischen Fortsetzung der Riemannschen Zeta-Funktion:', ParagraphList => array(
+                Title => '(Alter Text) Möglicher Bezug zur analytischen Fortsetzung der Riemannschen Zeta-Funktion …',
+                TitleVis => '(Alter Text) Möglicher Bezug zur analytischen Fortsetzung der Riemannschen Zeta-Funktion:', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Die oben erzielte Erkenntnis, dass der Mittelwert aller endlichen, ganzen Zahlen \\term{-½} und damit'."\n".
                     'ein endlicher, negativer Wert ist, erinnert stark an ein in gewisser Hinsicht erstaunliches Ergebnis'."\n".
@@ -736,7 +769,7 @@
                     '\\latexmath{\zeta(s)} beim Funktionswert \\term{0}:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \zeta(0)  =  - \frac{ 1 }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -746,7 +779,7 @@
                     'liegt beim Funktionswert \\term{-1} der Zeta-Funktion:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \zeta(-1)  =  - \frac{ 1 }{ 12 }  }'),
                     ))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
@@ -757,7 +790,7 @@
                     'Allerdings gilt die simple Definition der Zeta-Funktion nur für komplexe Funktionswerte, dessen Realteil größer als \\term{1} ist:'."\n",
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} *) *( Re(s) > 1 *) *[  \zeta(s)  :=  \sum_{ n = 1 }^{\infty} \frac{ 1 }{ n^{s} }  *]  }'),
                       array( display => 'on',  latex => '{  \zeta(s)  :=  \frac{ 1 }{ 1^{s} } + \frac{ 1 }{ 2^{s} } + \frac{ 1 }{ 3^{s} } + \frac{ 1 }{ 4^{s} } + \frac{ 1 }{ 5^{s} } + \cdots  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \zeta(0)  :=  \frac{ 1 }{ 1^{0} } + \frac{ 1 }{ 2^{0} } + \frac{ 1 }{ 3^{0} } + \frac{ 1 }{ 4^{0} } + \frac{ 1 }{ 5^{0} } + \cdots  }'),
@@ -775,7 +808,7 @@
                     '\\latexmath{\eta(s)} ihre sogenannte analytische Fortsetzung findet, dann erhalten wir für die Definition von \\latexmath{\zeta(s)}:\\footnote{Vgl. \\cite{wiki:RiemannscheZetaFunktion:2022}, Definition und Darstellungsformen, Methoden zur analytischen Fortsetzung, Umformungen der Dirichlet-Reihe und die Eulersche Reihentransformation.}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} *) *( s \neq 1 *) *[  \zeta(s)  :=  \frac{ \eta(s) }{ 1 - 2^{1 - s} }  *]  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -783,7 +816,7 @@
                       'Wir beginnen einmal mit der einfachsten Definition der Dirichletschen Eta-Funktion:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} *)  *( Re(s) > 0 *) *[  \eta(s)  :=  \sum_{ n = 1 }^{\infty} \frac{ *( -1 *)^{n - 1} }{ n^{s} }  *]  }'),
                       array( display => 'on',  latex => '{  \eta(s)  :=  \frac{ 1 }{ 1^{s} } - \frac{ 1 }{ 2^{s} } + \frac{ 1 }{ 3^{s} } - \frac{ 1 }{ 4^{s} } + \frac{ 1 }{ 5^{s} } + \cdots  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \eta(0)  :=  \frac{ 1 }{ 1^{0} } - \frac{ 1 }{ 2^{0} } + \frac{ 1 }{ 3^{0} } - \frac{ 1 }{ 4^{0} } + \frac{ 1 }{ 5^{0} } + \cdots  }'),
@@ -795,14 +828,14 @@
                       array( display => 'on',  latex => '{  \eta(-1)  ?=  \sum_{ n = 1 }^{\infty} \frac{ *( -1 *)^{n - 1} }{ n^{-1} }  ?=  \frac{ 1 }{ 4 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Hier erkennen wir schon eine gewisse Ähnlichkeit mit unserer Formel \\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Sum-z},'."\n".
+                    'Hier erkennen wir schon eine gewisse Ähnlichkeit mit unserer Formel \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z},'."\n".
                     'auch, wenn diese Definition eigentlich nicht für die Funktionswerte \\term{0} und \\term{-1} gilt.'."\n",
                       'Addieren wir doch trotzdem mal die positiven und negativen Einsen und schauen, wann wir vielleicht \\term{½} erhalten.'."\n".
                     'Aus dem Mathologer Video wissen wir, dass die Summe über die Ramanujan Summation als eine Art Mittelwert definiert ist.'."\n".
                     'Benutzen wir die Formel von oben, dann ergibt sich:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \eta(0)  ?=  \sum_{ n = 1 }^{\infty} *( -1 *)^{n - 1}  ?=  \frac{ 1 }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \eta(0)  :=  \overline{ 1 - 1 + 1 - 1 + 1 + \cdots }  }'),
                       array( display => 'on',  latex => '{  \eta(0)  :=  \overline{ \sum_{ n = 1 }^{\infty} *( -1 *)^{n - 1} }  }'),
@@ -819,7 +852,7 @@
                       'Addieren wir doch auch mal die positiven und negativen Zahlen und schauen, wann wir vielleicht \\term{¼} erhalten:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \eta(-1)  :=  1 - 2 + 3 - 4 + 5 + \cdots  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! *( 2 \cdot n - 1 *) \; - \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 2 \cdot n  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \\\ \qquad\qquad \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 2 \cdot n \; - \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 1 \; - \; 2 \cdot \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! n  }'),
@@ -830,7 +863,7 @@
                     'Für die Summe aller natürlicher Zahlen können wir die Gaußsche Summenformel\\color{*Bearb}{(Verweise: \\jump[https://de.wikipedia.org/wiki/Gaußsche_Summenformel]{}{Gaußsche Summenformel})} benutzen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } i  =  0 + 1 + 2 + 3 + \cdots + n  =  \frac{ n^{2} + n }{ 2 }  }'),
                       array( display => 'on', latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  0 + 1 + 2 + 3 + \cdots  =  \frac{ \omega^{2} + \omega }{ 2 }  }'),
                       array( display => 'on', latex => '{  \sum_{ \forall i \in \mathbb{N} } i  =  \sum_{ \forall i \in \mathbb{N} \setminus *\{ 0 *\} } i  }'),
@@ -856,7 +889,7 @@
                     'die Summe aller endlichen, natürlichen Zahlen hätte ein negatives Ergebnis:\\footnote{Vgl. \\cite{wiki:RiemannscheZetaFunktion:2022}, Definition und Darstellungsformen, Dirichlet-Reihe.}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} *) *( Re(s) > 1 *) *[  \zeta(s)  :=  \sum_{ n = 1 }^{\infty} \frac{ 1 }{ n^{s} }  *]  }'),
                       array( display => 'on',  latex => '{  \zeta(s)  :=  \frac{ 1 }{ 1^{s} } + \frac{ 1 }{ 2^{s} } + \frac{ 1 }{ 3^{s} } + \frac{ 1 }{ 4^{s} } + \frac{ 1 }{ 5^{s} } + \cdots  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \zeta(-1)  :=  \frac{ 1 }{ 1^{-1} } + \frac{ 1 }{ 2^{-1} } + \frac{ 1 }{ 3^{-1} } + \frac{ 1 }{ 4^{-1} } + \frac{ 1 }{ 5^{-1} } + \cdots  }'),
@@ -869,7 +902,7 @@
                       'Dennoch betrachten wir einmal, was das Ergebnis wäre:\\footnote{Vgl. \\cite{wiki:RiemannscheZetaFunktion:2022}, Geschichte, Anfang des 20. Jahrhunderts, Ramanujans Arbeit zur Zeta-Funktion.}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \sum_{ n = 1 }^{\infty} n  =  1 + 2 + 3 + 4 + \cdots  ?=  - \frac{ 1 }{ 12 }  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -878,7 +911,7 @@
                     'XXX Siehe \\jump[https://de.wikipedia.org/wiki/Gaußsche_Summenformel]{}{Gaußsche Summenformel}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } i  =  0 + 1 + 2 + 3 + \cdots + n  =  \frac{ n^{2} + n }{ 2 }  }'),
                       array( display => 'on', latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  0 + 1 + 2 + 3 + \cdots  =  \frac{ \omega^{2} + \omega }{ 2 }  }'),
                     ))),
@@ -897,7 +930,7 @@
                     'Was wäre wenn:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.FA', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} \setminus *\{ 1 *\} *) *[  \zeta(s)  :=  \sum_{ n = 0 }^{\infty} \frac{ 1 }{ n^{s} }  *]  }'),
                       array( display => 'on',  latex => '{  \zeta(s)  :=  \frac{ 1 }{ 0^{s} } + \frac{ 1 }{ 1^{s} } + \frac{ 1 }{ 2^{s} } + \frac{ 1 }{ 3^{s} } + \frac{ 1 }{ 4^{s} } + \frac{ 1 }{ 5^{s} } + \cdots  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \zeta(-1)  :=  \frac{ 1 }{ 0^{-1} } + \frac{ 1 }{ 1^{-1} } + \frac{ 1 }{ 2^{-1} } + \frac{ 1 }{ 3^{-1} } + \frac{ 1 }{ 4^{-1} } + \frac{ 1 }{ 5^{-1} } + \cdots  }'),
@@ -926,6 +959,53 @@
                     'XXX'."\n".
                     ''))),
                     ))),
+                      
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl', text =>
+                      
+                'XXX Neue Einsichten zu positiven aktual unendlichen Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wir können nun zu Aussagen kommen, die etwas über die Größe von \\term{ω} verraten:'."\n",
+                      'Subtrahieren wir eine beliebige endliche natürliche Zahl \\term{n} von \\term{ω}, ergibt sich niemals eine Zahl, die zur Menge'."\n".
+                    'der endlichen natürlichen Zahlen gehört:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  *( \forall n \in \mathbb{N} *)  *[  \omega - n  \notin  \mathbb{N}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\\term{ω – n} ist nicht in den natürlichen Zahlen \\term{\M(N)}, weil eine unendlich große Zahl \\term{ω}'."\n".
+                    'minus einer endlichen Zahl \\term{n} eine unendlich große Zahl bleibt.'."\n".
+                    'Dies ist offensichtlich und plausibel.'."\n".
+                    'Und eine unendlich große Zahl ist eben per Definition kein Element von \\term{\M(N)}.'."\n",
+                      'Es zeigt sich also eine riesige mit unendlich großen ganzen Zahlen gefüllte Lücke zwischen den endlichen natürlichen Zahlen und \\term{ω}.'."\n".
+                    'Diese Lücke ist ein Grund dafür, dass die \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} wahr sein könnte.'."\n".
+                      'XXX'."\n".
+                    'XXX Ordinalzahl Definition'."\n".
+                    'XXX Superial-Zahlen'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
+                      
+                'XXX', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       //array(  jump_name => 'OM:BiOrd:XXX'),
