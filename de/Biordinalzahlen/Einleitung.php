@@ -560,10 +560,12 @@
                     'Das erscheint so gesehen sehr ähnlich, als hätten wir keine Möglichkeit.'."\n",
                       'Vergleichbar ist auch die folgende Aussage:'."\n".
                     ''))),
+                      
                   array( 'text', array( Shape => 'italic', text => array(
                       'Wem gehört das Wissen der Welt? \\\\'."\n".
                       'Allen und damit keinem.'."\n".
                       ''))),
+                      
                   array( 'text', array( text => array(
                     'Aus dieser Perspektive ist ›allen‹ und ›keinem‹ im Grunde identisch,'."\n".
                     'weil es um die Differenz der Besitzenden untereinander geht, die in beiden Fällen gleich ist.'."\n",
@@ -718,6 +720,7 @@
                     'Dies gilt also auch für alle endlichen ganzen positiven Zahlen mit der Null und'."\n".
                     'für die endlichen ganzen negativen Zahlen, ohne die Null:'."\n".
                     ''))),
+                      
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Sei \\term{#} das Symbol für den Operator, der die Anzahl der Elemente einer Menge liefert,'."\n".
@@ -860,7 +863,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \\\ \qquad\qquad - \; *( \omega - 1 *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Für die Summe aller natürlicher Zahlen können wir die Gaußsche Summenformel\\color{*Bearb}{(Verweise: \\jump[https://de.wikipedia.org/wiki/Gaußsche_Summenformel]{}{Gaußsche Summenformel})} benutzen:'."\n".
+                    'Für die Summe aller natürlicher Zahlen können wir die Gaußsche Summenformel\\footnote{\\const{BiOrd_g_footnote_text_GaussscheSummenformel}} benutzen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -908,7 +911,7 @@
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
-                    'XXX Siehe \\jump[https://de.wikipedia.org/wiki/Gaußsche_Summenformel]{}{Gaußsche Summenformel}'."\n".
+                    'XXX Siehe Gaußsche Summenformel\\footnote{\\const{BiOrd_g_footnote_text_GaussscheSummenformel}}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -962,27 +965,136 @@
                       
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl', text =>
                       
-                'XXX Neue Einsichten zu positiven aktual unendlichen Zahlen', subline =>
+                'XXX Neue Einsichten zu positiven aktual-unendlichen Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Wir können nun zu Aussagen kommen, die etwas über die Größe von \\term{ω} verraten:'."\n",
-                      'Subtrahieren wir eine beliebige endliche natürliche Zahl \\term{n} von \\term{ω}, ergibt sich niemals eine Zahl, die zur Menge'."\n".
-                    'der endlichen natürlichen Zahlen gehört:'."\n".
+                      'Subtrahieren wir eine beliebige endliche positive ganze Zahl \\term{n} von \\term{ω}, ergibt sich niemals eine Zahl, die zur Menge'."\n".
+                    'der endlichen Zahlen gehört:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  *( \forall n \in \mathbb{N} *)  *[  \omega - n  \notin  \mathbb{N}  *]  }'),
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  *( \forall n \in \mathbb{N}^{+} *)  *[  \omega - n  \notin  \mathbb{N}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\\term{ω – n} ist nicht in den natürlichen Zahlen \\term{\M(N)}, weil eine unendlich große Zahl \\term{ω}'."\n".
                     'minus einer endlichen Zahl \\term{n} eine unendlich große Zahl bleibt.'."\n".
                     'Dies ist offensichtlich und plausibel.'."\n".
                     'Und eine unendlich große Zahl ist eben per Definition kein Element von \\term{\M(N)}.'."\n",
-                      'Es zeigt sich also eine riesige mit unendlich großen ganzen Zahlen gefüllte Lücke zwischen den endlichen natürlichen Zahlen und \\term{ω}.'."\n".
-                    'Diese Lücke ist ein Grund dafür, dass die \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} wahr sein könnte.'."\n".
+                      'In den Biordinalzahlen zeigt sich also eine riesige mit unendlich großen ganzen Zahlen gefüllte Lücke zwischen den endlichen natürlichen Zahlen und \\term{ω}.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape => 'italic', text => array(
+                      'Hier sei gesagt, dass diese Lücke auch ein wesentlicher Grund dafür ist, dass die \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} wahr sein könnte.'."\n".
+                      '\\color{*Bearb}{(Ist das wirklich eine Begründung? Die Lücke ist so groß nun auch wieder nicht, siehe unten. Außerdem geht es ja um den Wert von \\term{ω}, der sich aus dem Produkt aller endlichen Primzahlen ergeben soll, und nicht darum, wieviele ganze Zahlen vor \\term{ω} kommen.)}'."\n".
+                    ''))),
+                      
+                  array( 'text', array( text => array(
+                    'Diese Lücke hat eine wichtige Bedeutung.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:XXX', text =>
+                      
+                'Es gibt mehr ganze Zahlen von Null bis zu \\term{ω}, als der Wert von \\term{ω} ausdrückt', subline =>
+                  'Eine Paradox erscheinende Situation')),
+                  array( 'text', array( text => array(
+                    'Doch was ist geschehen?'."\n".
+                    'Und was bedeutet das?'."\n",
+                      'Gehen wir noch einmal zurück zur Definition der Ordinalzahlen:'."\n",
+                      'Die Ordinalzahlen sind so definiert, dass nach den endlichen natürlichen Zahlen gleich \\term{ω} folgt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  *\{ 0, 1, 2, 3, 4, 5, \cdots , \omega *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Allerdings existiert ein Bereich, der nur analytisch durchleuchtet werden kann, weil er für die'."\n".
+                    'vollständige Induktion des Zählens steht.'."\n".
+                    'Dieser Bereich wird durch die Ellipse (Dreipunkte-Symbol) „\\latexmath{ \cdots }“ ausgedrückt.'."\n",
+                      'Nach der Definition der Ordinalzahlen kommen vor \\term{ω} also genau so viele ganze Zahlen,'."\n".
+                    'wie die Anzahl \\term{ω}.'."\n".
+                    'Denn das ist explizit so definiert.'."\n",
+                      'Erweitern wir die Ordinalzahlen nun in Form der Biordinalzahlen zu einem Ring und führen damit die Subtraktion endlicher natürlicher'."\n".
+                    'Zahlen von \\term{ω} ein, dann entstehen zwangsweise noch einmal so viele ganze Zahlen zwischen'."\n".
+                    'der Ellipse und \\term{ω}, wie es endliche positive ganze Zahlen gibt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *\{ 0, 1, 2, 3, \cdots , \cdots , \omega - 3, \omega - 2, \omega - 1, \omega *\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *\{ 0, 1, 2, 3, \cdots , \cdots , \omega - 3, \omega - 2, \omega - 1, \omega - 0 *\}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \# *\{ 0, 1, 2, \cdots , \cdots , \omega - 2, \omega - 1, \omega - 0 *\}  =  2 \cdot \omega  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# *\{ 0, 1, 2, \cdots , \cdots , \omega - 2, \omega - 1 *\}  =  2 \cdot \omega - 1  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega', label_text => '\\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wie wir erkennen können liegen nun vor \\term{ω}, von der Null an, folglich \\term{2 ⋅ ω – 1} ganze endlich und unendlich große Zahlen.'."\n".
+                    'Das erscheint ein wenig paradox.'."\n",
+                      'Trotzdem erscheint die Erweiterung ontologisch erkenntnisreich, plausibel und sinnvoll.'."\n".
+                    'Denn wie vorstehend in Formel \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega}'."\n".
+                    'können wir so die Anzahl der Zahlen vor \\term{ω} ausdrücken.'."\n".
+                    'Und wir kommen mit den neuen Zahlen beispielsweise auch in die Lage, die Summe aller natürlichen Zahlen zu berechnen.'."\n",
+                      'Für die Summe aller natürlicher Zahlen können wir die Gaußsche Summenformel\\footnote{\\const{BiOrd_g_footnote_text_GaussscheSummenformel}}'."\n".
+                      'benutzen, wen wir sie entsprechend anpassen:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Wandeln wir die Gaußsche Summenformel nun so ab, dass wir uns nicht auf das größte Element der Summe beziehen,'."\n".
+                      'sondern auf die Anzahl der kleinsten Elemente, die zu summieren sind:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } \!\!\!\! i  =  0 + 1 + 2 + 3 + \cdots + n  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } \!\!\!\! i  =  \frac{ n^{2} + n }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ ( \forall i \in \mathbb{N} )[i < n] } \!\!\!\! i  =  \frac{ *( n - 1 *)^{2} + *( n - 1 *) }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ ( \forall i \in \mathbb{N} )[i < n] } \!\!\!\! i  =  \frac{ *( n^{2} - 2 \cdot n + 1 *) + *( n - 1 *) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ ( \forall i \in \mathbb{N} )[i < n] } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Sei nun \\term{#_{n}\M(T)}&nbsp; ein Operator, der die \\term{n} kleinsten Elemente einer Menge \\term{\M(T)}&nbsp; liefert:'."\n".
+                      '\\color{*Bearb}{(Eine Möglichkeit wäre ja auch, die oben definierte Mengendarstellung von \\term{n} zu nutzen, die ja alle Vorgänger von \\term{n} enthält.)}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ ( \forall i \in \mathbb{N} )[i < n] } \!\!\!\! i  =  \sum_{ \forall i \in \#_{n} \mathbb{N} } \! i  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall i \in \#_{n} \mathbb{N} } \! i  =  \frac{ n^{2} - n }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in \#_{\omega} \mathbb{N} } \! i  =  \frac{ \omega^{2} - \omega }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Die Menge über die summiert wird ist jetzt, wenn wir \\term{n} zu \\term{ω} setzen, die Menge der natürlichen Zahlen \\term{\M(N)}:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall i \in \#_{\omega} \mathbb{N} } \! i  =  0 + 1 + 2 + 3 + 4 + 5 \cdots  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in \#_{\omega} \mathbb{N} } \! i  =  \sum_{ \forall i \in \mathbb{N} } i  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  \frac{ \omega^{2} - \omega }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Was wir errechnen wollten.'."\n",
+                        '\\\\ '."\n".
+                      ''))),
+                      
+                  array( 'text', array( text => array(
+                    'Auch diese Summe lässt sich nur mit den Biordinalzahlen ausdrücken.'."\n",
+                      'Und sie setzt voraus, dass \\term{ω^{2} – ω} gerade ist, also ganzzahlig durch Zwei geteilt werden kann.'."\n".
+                    'Das bedeutet, dass die Zwei als Faktor in beiden Summanden stecken muss.'."\n".
+                    '\\term{ω} hat den Primfaktor Zwei.\\footnote[*Entwick]{\\color{*Entwick}{Dies ist ein erster ganz kleiner Schritt in Richtung der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}. Lässt sich auf diese Weise Schritt für Schritt mehr in diese Richtung zeigen?}}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:XXX', text =>
+                      
+                'Weiterentwicklung zu den Superial-Zahlen', subline =>
+                  'XXX Hier sollte \\term{s} dann wieder genau von der Anzahl her \\term{s} natürliche Superial-Zahlen als Vorgänger haben')),
+                  array( 'text', array( text => array(
+                    'Die \\jump{OM:SupNum:Home}{Superial-Zahlen} können in gewisser Hinsicht als Weiterentwicklung der Biordinalzahlen zu einer'."\n".
+                    'abelschen Gruppe\\footnote{\\const{NSOSP_g_footnote_text_AbelscheGruppe}} verstanden werden.'."\n".
+                    'Dies gilt in einem noch engeren Sinn, wenn sich die \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} '."\n".
+                    'als wahr herausstellen sollte.'."\n",
+                      'Auch, wenn mir noch keine explizite Mengendarstellung der Superial-Zahlen bekannt ist, die der der Biordinalzahlen'."\n".
+                    'entspricht, so waren für mich die Superial-Zahlen und ihre Eigenschaft, dass die Subtraktion vollständig definiert ist,'."\n".
+                    'der Anlass zur Entwicklung der Biordinalzahlen aus den Ordinalzahlen, um die ontologische Struktur'."\n".
+                    'von aktual-unendlichen Zahlen besser zu verstehen.'."\n".
+                    'Daher liegt es auf der Hand, deren Eigenschaften in Bezug auf ihre Vorgänger zu vergleichen.'."\n",
                       'XXX'."\n".
-                    'XXX Ordinalzahl Definition'."\n".
-                    'XXX Superial-Zahlen'."\n".
+                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -990,7 +1102,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:XXX', text =>
                       
                 'XXX', subline =>
                   '')),
