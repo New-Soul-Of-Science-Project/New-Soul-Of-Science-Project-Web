@@ -2643,6 +2643,11 @@
       if (array_key_exists( $anchor_name, $Glo_g_Site_ary[$site_name][jump_ary]))
         //%!$hint_title = ((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$anchor_name]))) ? To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$anchor_name][headline_text_short]) : To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$anchor_name][headline_text]);
         $hint_title = ((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$anchor_name]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$anchor_name][headline_text_short]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$anchor_name][headline_text]);
+    // !!!: Jump-Link: "mehr Vorgänger als ihr Wert" (OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega) enthält HTML-Tags im Hint, wenn wir "headline_text_short" auskommentieren. Ich bekomme das aber irgendwie nicht zu fassen.
+    //        "Es gibt mehr ganze Zahlen von Null bis zu <i>ω</i>, als der Wert von <i>ω</i> ausdrückt"
+    // print_r( $hint_title);
+    // echo 'Ups: "'.$hint_title.'" ___ ';
+    // $hint_title = strip_tags( $hint_title);
 
     $text = To_f_Text_replace_html( $To_g_Text_replace_ary, null, $text);
 

@@ -19,14 +19,14 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Ausgangspunkt der Biordinalzahlen sind die Ordinalzahlen\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ordinalzahl:2021}.}.'."\n".
+                    'Ausgangspunkt der Biordinalzahlen sind die Ordinalzahlen\\footnote{\\const{NSOSP_g_footnote_text_Ordinalzahl}}.'."\n".
                     'Bei den Ordinalzahlen handelt es sich um die Fortsetzung des Zählens oder der uns allgemein bekannten Anzahl von Dingen ins Aktual-Unendliche.'."\n",
                       'Die nachfolgend eingeführten Biordinalzahlen erweitern das Zählen (Vorwärtszählen) um das Rückwärtszählen von jeder Zahl aus bis in den negativen Bereich.'."\n".
                     'Das bedeutet, dass das Rückwärtszählen und die Subtraktion innerhalb der Biordinalzahlen vollständig definiert sind,'."\n".
                     'was innerhalb der Ordinalzahlen nicht der Fall ist.'."\n",
                       'Die Biordinalzahlen definieren so nicht nur die Anzahl, die vorhanden ist,'."\n".
                     'sondern auch die Anzahl, die an etwas vollständigem Fehlt, wie wir sehen werden.'."\n".
-                    'Durch die Erweiterung werden die Ordinalzahlen als Biordinalzahlen zu einem Ring\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ring-Algebra:2023}.}.'."\n".
+                    'Durch die Erweiterung werden die Ordinalzahlen als Biordinalzahlen zu einem algebraischen Ring\\footnote{\\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n".
                     'Denn nun sind in den Biordinalzahlen die Addition und vollständige Subtraktion und ihr neutrales Element „Null“'."\n".
                     'sowie auch die Multiplikation und ihr neutrales Element „Eins“ definiert.'."\n".
                     ''))),
@@ -965,7 +965,7 @@
                       
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl', text =>
                       
-                'XXX Neue Einsichten zu positiven aktual-unendlichen Zahlen', subline =>
+                'XXX Neue Einsichten zu positiven aktual unendlichen Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Wir können nun zu Aussagen kommen, die etwas über die Größe von \\term{ω} verraten:'."\n",
@@ -992,10 +992,10 @@
                   array( 'text', array( text => array(
                     'Diese Lücke hat eine wichtige Bedeutung.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega', text =>
                       
                 'Es gibt mehr ganze Zahlen von Null bis zu \\term{ω}, als der Wert von \\term{ω} ausdrückt', subline =>
-                  'Eine Paradox erscheinende Situation')),
+                  'Eine Paradox erscheinende, bizarre Situation')),
                   array( 'text', array( text => array(
                     'Doch was ist geschehen?'."\n".
                     'Und was bedeutet das?'."\n",
@@ -1082,7 +1082,7 @@
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:XXX', text =>
                       
                 'Weiterentwicklung zu den Superial-Zahlen', subline =>
-                  'XXX Hier sollte \\term{s} dann wieder genau von der Anzahl her \\term{s} natürliche Superial-Zahlen als Vorgänger haben')),
+                  'Die superiale Basis \\term{s} hat \\term{s} natürliche Superial-Zahlen als Vorgänger')),
                   array( 'text', array( text => array(
                     'Die \\jump{OM:SupNum:Home}{Superial-Zahlen} können in gewisser Hinsicht als Weiterentwicklung der Biordinalzahlen zu einer'."\n".
                     'abelschen Gruppe\\footnote{\\const{NSOSP_g_footnote_text_AbelscheGruppe}} verstanden werden.'."\n".
@@ -1091,9 +1091,18 @@
                       'Auch, wenn mir noch keine explizite Mengendarstellung der Superial-Zahlen bekannt ist, die der der Biordinalzahlen'."\n".
                     'entspricht, so waren für mich die Superial-Zahlen und ihre Eigenschaft, dass die Subtraktion vollständig definiert ist,'."\n".
                     'der Anlass zur Entwicklung der Biordinalzahlen aus den Ordinalzahlen, um die ontologische Struktur'."\n".
-                    'von aktual-unendlichen Zahlen besser zu verstehen.'."\n".
+                    'von aktual unendlichen Zahlen besser zu verstehen.'."\n".
                     'Daher liegt es auf der Hand, deren Eigenschaften in Bezug auf ihre Vorgänger zu vergleichen.'."\n",
-                      'XXX'."\n".
+                      'Mit den Ordinalzahlen und den Biordinalzahlen befinden wir uns strukturell sozusagen am Sockel'."\n".
+                    'der Fraktalität des aktual unendlichen.'."\n".
+                    'Dies erscheint mir ein Grund dafür, dass wir in bizarre und auch interessante, scheinbar paradoxe Situationen kommen.'."\n",
+                      'Mit den Superial-Zahlen kommen wir dann quasi in die höheren Sphären der Fraktalität,'."\n".
+                    'was zur Folge hat, dass uns die Dinge wieder harmonischer erscheinen.'."\n".
+                    'Denn in den Superial-Zahlen haben wir wieder so viele Vorgänger an \\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen},'."\n".
+                    'wie der Wert der bestimmten natürlichen Superial-Zahl groß ist.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".

@@ -19,10 +19,27 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Die Definition der Superial-Zahlen kann auf verschiedene Weise erfolgen.'."\n".
-                    'Ich habe mich dafür entschieden dies auf eine Weise zu tun, die sicher stellt, dass möglichst große Teilmengen von ihnen als'."\n".
-                    '\\jump{OM:SupNum:Formale-Entwicklung:GanzeSN}{ganze Superial-Zahlen}, als \\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSN}{natürliche Superial-Zahlen}'."\n".
-                    'und als \\jump{OM:SupNum:Formale-Entwicklung:XXX}{superiale Primzahlen} definiert werden können.'."\n"))),
+                    'Die Definition der Superial-Zahlen kann auf unterschiedliche Weisen erfolgen.'."\n".
+                    'Ich habe mich dafür entschieden dies auf eine Weise zu tun, die sicher stellt, dass möglichst viele'."\n".
+                    'Eigenschaften der endlichen natürlichen Zahlen sowie auch der ganzen Zahlen, der Primzahlen und der rationalen Zahlen'."\n".
+                    'ins Aktual-Unendliche fortgesetzt werden.'."\n",
+                      'Bei den Superial-Zahlen handelt es sich um eine abelsche Gruppe\\footnote{\\const{NSOSP_g_footnote_text_AbelscheGruppe}},'."\n".
+                    'die die rationalen Zahlen \\term{\M(Q)} ins aktual unendliche erweitert.'."\n".
+                    'Dabei erweitern sich auch ihre Teilmengen der natürlichen Zahlen \\term{\M(N)}, der ganzen Zahlen \\term{\M(Z)} und der Primzahlen \\term{\M(P)} zu den'."\n".
+                    'den \\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} \\term{\M(S)_{N}},'."\n".
+                    'den \\jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen} \\term{\M(S)_{Z}}'."\n".
+                    'und sogar zu den \\jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{superialen Primzahlen} \\term{\M(S)_{P}}.'."\n",
+                      'So kommen wir zum Beispiel nicht nur in die Lage \\jump{OM:SupNum:Einleitung}{Ableitungen mit Superial-Zahlen}, ganz ohne Limes, zu definieren,'."\n".
+                    'sondern auch in die Lage, bis ins Aktual-Unendliche zu zählen und dadurch Integrale'."\n".
+                    'als Summen unendlich vieler, unendlich schmaler Flächenstreifen zu berechnen.'."\n",
+                      'Jede natürliche Superial-Zahl hat dabei so viele Vorgänger in \\term{\M(S)_{N}}, wie sie selber groß ist.'."\n".
+                    'Dies ist anders, als bei den von mir erforschten auch ins Aktual-Unendliche gehenden'."\n".
+                    '\\jump{OM:BiOrd:Home}{Biordinalzahlen}:'."\n".
+                    'Aktual unendliche Biordinalzahlen haben bizarrer Weise \\jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{mehr Vorgänger als ihr Wert} groß ist.'."\n".
+                    'In mancherlei anderen Punkten können wir erkennen, dass sie die noch nicht so perfekten Vorläufer der Superial-Zahlen sind.'."\n".
+                    'Mathematisch gesehen sind die Biordinalzahlen eine Erweiterung der Ordinalzahlen\\footnote{\\const{NSOSP_g_footnote_text_Ordinalzahl}} zu einem algebraischen Ring\\footnote{\\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n",
+                      'Die Menge der Superial-Zahlen ist in vielerlei Hinsicht etwas ganz besonderes.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Vortext:DefinitionSuperialeEinheit', text =>
                       
                 'Definition der superialen Einheit \\term{s}', subline =>
@@ -83,7 +100,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Um zu gewährleisten, dass die ganzen und die natürlichen Superial-Zahlen möglichst große Teilmengen im Verhältnis zur Menge \term{S} aller Superial-Zahlen sind,'."\n".
-                    'können die Koeffizienten der Potenzen der superialen Basis \\term{s} als rationale Zahlen aus \\term{Q} definiert werden:'."\n"))),
+                    'können die Koeffizienten der Potenzen der superialen Basis \\term{s} als rationale Zahlen aus \\term{\M(Q)} definiert werden:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \mathbb{S}  :=  \left\{ x ~\middle|~ \left( \forall d \in \mathbb{Z} \right) \left( \forall q_{d} \in \mathbb{Q} \setminus \{0\} \right) \left( \forall q_{i} \in \mathbb{Q} \right) \\\ \qquad\qquad\qquad\qquad\qquad\quad \left[ q_{d} s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i]} q_{i} s^{i} \right] \right\}  }'),
@@ -126,7 +143,7 @@
 
 		    	<!  • Ganze Superial-Zahlen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Formale-Entwicklung:GanzeSN',
+            'OM:SupNum:Formale-Entwicklung:GanzeSZ',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
@@ -178,7 +195,7 @@
 
 		    	<!  • Natürliche Superial-Zahlen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Formale-Entwicklung:NatuerlicheSN',
+            'OM:SupNum:Formale-Entwicklung:NatuerlicheSZ',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
@@ -245,9 +262,9 @@
           ); ?>
           
 
-		    	<!  • XXX  >
+		    	<!  • Superiale Primzahlen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Formale-Entwicklung:XXX',
+            'OM:SupNum:Formale-Entwicklung:PrimSZ',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(

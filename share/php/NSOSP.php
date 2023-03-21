@@ -164,7 +164,9 @@
 
   
   $NSOSP_g_footnote_text_AbelscheGruppe         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AbelscheGruppe:2022}.';
+  $NSOSP_g_footnote_text_Ordinalzahl            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ordinalzahl:2021}.';
   $NSOSP_g_footnote_text_PeanoAxiome            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:PeanoAxiome:2021}, Axiome, Ursprüngliche Formalisierung.';
+  $NSOSP_g_footnote_text_RingAlgebra            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ring-Algebra:2023}.';
 
   $BiOrd_g_footnote_text_GaussscheSummenformel  = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:GaussscheSummenformel:2023}.';
 

@@ -448,7 +448,7 @@
                   array( 'text', array( text => array(
                     'Das vorletzte letzte Beispiel ist übrigens eine negative ganze Superial-Zahl und das letzte eine positive nicht ganze Superial-Zahl,'."\n".
                     'weil die größte Stelle dominant ist.'."\n".
-                    'Eine genaue Definition der \\jump{OM:SupNum:Formale-Entwicklung:GanzeSN}{ganzen Superial-Zahlen} findet sich in der formalen Entwicklung.'."\n",
+                    'Eine genaue Definition der \\jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen} findet sich in der formalen Entwicklung.'."\n",
                       'Ganze Superial-Zahlen lassen sich also sinnvoll definieren und bei näherer Betrachtung, die wir später vollziehen,'."\n".
                     'haben diese sehr interessante Eigenschaften und lassen uns Zahlen besser verstehen.'."\n"))),
                   array( 'text', array( text => array(
@@ -471,7 +471,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 - \frac{4}{25} *〉*〈 \frac{3}{2} *〉〈5〉  \notin  \mathbb{S}_{N}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSN}{Natürliche Superial-Zahlen} lassen sich in den Superial-Zahlen also definieren.'."\n"))),
+                    '\\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{Natürliche Superial-Zahlen} lassen sich in den Superial-Zahlen also definieren.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Grundlagen:XXX', text =>
                 'Superiale Primzahlen', subline =>
                   '')),

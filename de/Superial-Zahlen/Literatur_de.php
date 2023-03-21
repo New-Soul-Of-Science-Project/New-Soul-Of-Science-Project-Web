@@ -15,6 +15,7 @@
                                           'Freistetter:DieFreiheitDerImaginaerenZahlen:2016',
                                           'Freistetter:DieFreiheitDerMathematik:2016',
                                           'Plichta:GottesGeheimeFormel:1995',
+                                          'wiki:AbelscheGruppe:2022',
                                           'wiki:Allklasse:2020',
                                           'wiki:Ordinalzahl:2021',
                                           'wiki:PeanoAxiome:2021',
