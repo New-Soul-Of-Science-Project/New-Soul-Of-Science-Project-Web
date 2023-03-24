@@ -344,6 +344,7 @@
                     'Ebenso nennen wir die Klasse, die alle Antimengen enthält, das \\italic{Antimengenuniversum} \\term{\M(U)^{&thinsp;–}}.'."\n".
                     'Zuletzt nennen wir die Klasse, die alle Mengen sowie alle Antimengen enthält das integrierte Mengenuniversum \\term{\M(U)^{ i}}.'."\n".
                     ''))),
+                      
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Sei, abgeleitet von Formel \\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Lambda-minus-Beta},'."\n".
@@ -395,6 +396,7 @@
                       'ergeben das integrierte Mengenuniversum.'."\n",
                         '\\\\'."\n".
                       ''))),
+                      
                   array( 'text', array( text => array(
                     'Hier sehen wir auch, dass, ohne Ausschluss der leeren Menge bei der Definition der Antimengen (siehe Formel \\jumpname{OM:BiOrd:Einleitung:IntegrierteMengenlehre:Equ-Antimenge}),'."\n".
                     'das Antimengenuniversum \\term{\M(U)^{&thinsp;–}} widersprüchlicher Weise das Mengenuniversum \\term{\M(U)} enthalten würde,'."\n".
@@ -669,8 +671,8 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} *( n + 1 *)  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} 1  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - \sum_{ \forall n \in \mathbb{N}} 1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} 1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - \sum_{ \forall n \in \mathbb{N}} 1  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - \omega  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z', label_text => '\\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => true),
                     ))),
