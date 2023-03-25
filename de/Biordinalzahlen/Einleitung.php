@@ -1087,7 +1087,8 @@
                   'Die superiale Basis \\term{s} hat \\term{s} natürliche Superial-Zahlen als Vorgänger')),
                   array( 'text', array( text => array(
                     'Die \\jump{OM:SupNum:Home}{Superial-Zahlen} können in gewisser Hinsicht als Weiterentwicklung der Biordinalzahlen zu einer'."\n".
-                    'abelschen Gruppe\\footnote{\\const{NSOSP_g_footnote_text_AbelscheGruppe}} verstanden werden.'."\n".
+                    'abelschen Gruppe\\footnote{\\const{NSOSP_g_footnote_text_AbelscheGruppe}} bezüglich der Addition und Multiplikation'."\n".
+                    'verstanden werden und sie sind sogar ein angeordneter algebraischer Körper\\footnote{\\const{NSOSP_g_footnote_text_KoerperAlgebra}}.'."\n".
                     'Dies gilt in einem noch engeren Sinn, wenn sich die \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} '."\n".
                     'als wahr herausstellen sollte.'."\n",
                       'Auch, wenn mir noch keine explizite Mengendarstellung der Superial-Zahlen bekannt ist, die der der Biordinalzahlen'."\n".

@@ -37,10 +37,24 @@
       text_titel_h1 => 'Superial-Zahlen \\color{*TitleAdd}{\\small{(SN)}}',
       text_titel_short => 'Superial-Zahlen',
       text_undertitel_h2 => 'Mit Primzahlen ins Unendliche',
-      text_titel_discr_h3 => 'Eine aktual unendliche abelsche Gruppe, als Erweiterung der rationalen Zahlen, die der Unendlichkeit eine fundamentale, fraktale Struktur gibt – neue Ideen elementarer Mathematik',
+      text_titel_discr_h3 => 'Ein aktual unendlicher angeordneter algebraischer Körper, als Erweiterung der rationalen Zahlen, der der Unendlichkeit eine fundamentale, fraktale Struktur gibt – neue Ideen elementarer Mathematik',
       jump_ary => array(
         'OM:SupNum:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
         'OM:SupNum:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
+      ),
+    ),
+    'OM:SupNum:Ableitung-Integral' => array(
+      url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Ableitung-und-Integral-aktuale-Unendlichkeit-ersetzt-Limes.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Ableitung-und-Integral-aktuale-Unendlichkeit-ersetzt-Limes.php',
+      titel => 'Ableitung und Integral - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\\name[undertitle]{OM:SupNum:Ableitung-Integral}.\\hidden{ — \\name[description]{OM:SupNum:Ableitung-Integral}.}',
+      keywords => '',
+      text_titel_h1 => 'Ableitung und Integral',
+      text_titel_short => 'Ableitung und Integral',
+      text_undertitel_h2 => 'Aktuale Unendlichkeit ersetzt den Limes',
+      text_titel_discr_h3 => '',
+      jump_ary => array(
+        'OM:SupNum:Ableitung-Integral:XXX' => array( headline_text => 'XXX' , headline_text_short => 'XXX'),
       ),
     ),
     'OM:SupNum:Eigenschaften' => array(

@@ -17,6 +17,7 @@
                                           'Plichta:GottesGeheimeFormel:1995',
                                           'wiki:AbelscheGruppe:2022',
                                           'wiki:Allklasse:2020',
+                                          'wiki:KoerperAlgebra:2023',
                                           'wiki:Ordinalzahl:2021',
                                           'wiki:PeanoAxiome:2021',
                                           'wiki:Primorial:2015',
