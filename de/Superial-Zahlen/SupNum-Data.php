@@ -65,10 +65,10 @@
       keywords => '',
       text_titel_h1 => 'Eigenschaften',
       text_titel_short => 'Eigenschaften',
-      text_undertitel_h2 => 'Welche Erkenntnisse können wir aus den Superial-Zahlen lernen',
+      text_undertitel_h2 => 'Welche Erkenntnisse können wir aus den Superial-Zahlen lernen?',
       text_titel_discr_h3 => '',
       jump_ary => array(
-        'OM:SupNum:Eigenschaften:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+        'OM:SupNum:Eigenschaften:StrukturVonS' => array( headline_text => 'Die Struktur von \\term{s}' , headline_text_short => 'Die Struktur von s'),
       ),
     ),
     'OM:SupNum:Einleitung' => array(
@@ -142,7 +142,7 @@
       keywords => '',
       text_titel_h1 => 'Primzahlprodukt-Vermutung',
       text_titel_short => 'Primzahlprodukt-Vermutung',
-      text_undertitel_h2 => 'Entspricht das Primzahlprodukt aller endlicher Primzahlen, also die Primfakultät über alle Primzahlen in der Menge der natürlichen Zahlen, der Anzahl der natürlichen Zahlen',
+      text_undertitel_h2 => 'Entspricht das Primzahlprodukt aller endlicher Primzahlen, also die Primfakultät über alle Primzahlen in der Menge der natürlichen Zahlen, der Anzahl der natürlichen Zahlen?',
       text_titel_discr_h3 => '',
       jump_ary => array(
         'OM:SupNum:Primzahlprodukt-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
