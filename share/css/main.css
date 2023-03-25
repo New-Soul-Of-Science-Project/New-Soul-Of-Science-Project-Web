@@ -412,6 +412,16 @@ svg {
 
 /* Tools Classes */
 
+.tools-class-contentlist-header {
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.tools-class-contentlist-table {
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+
 .tools-class-fig, .tools-class-vid {
   /* shadow */
   -webkit-box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 0.5);  /* #: Safari */

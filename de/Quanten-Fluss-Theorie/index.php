@@ -453,7 +453,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Ansatz \\small{– Einführung und Entwicklung}}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Ansatz \\\\ \\small{Einführung und Entwicklung}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       array( title => '\\name{OM:FrQFT:Einleitung}', jumpname => 'OM:FrQFT:Einleitung', startsign => '',
@@ -472,7 +472,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Quantenphysik \\small{– Standardmodell der Teilchenphysik}}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Quantenphysik \\\\ \\small{Standardmodell der Teilchenphysik}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       array( title => '\\name{OM:FrQFT:Elementarteilchen}', jumpname => 'OM:FrQFT:Elementarteilchen', startsign => '',
@@ -495,7 +495,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Gravitation \\small{– Quantengravitation offenbart mehr}}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Gravitation \\\\ \\small{Quantengravitation offenbart mehr}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       array( title => '\\name{OM:FrQFT:Quantengravitation}', jumpname => 'OM:FrQFT:Quantengravitation', startsign => '',
@@ -507,7 +507,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Vereinheitlichte Relativitätstheorie \\small{– gemeinsam ist man stärker}}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Vereinheitlichte Relativitätstheorie \\\\ \\small{gemeinsam ist man stärker}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       array( title => '\\name{OM:VRT:Home}', jumpname => 'OM:VRT:Home', startsign => '', //jumpurl => $Glo_PathRel_back.'../de/Vereinheitlichte-Relativitaetstheorie/index.php',
@@ -523,7 +523,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Universum, Kosmos und Urknall}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Universum, Kosmos und Urknall</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:FrQFT:Universum-SchwarzeLoecher-Kosmos-Urknall'),
@@ -531,7 +531,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Resümee}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Resümee</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       array( title => '\\name{OM:FrQFT:Zusammenfassung}', jumpname => 'OM:FrQFT:Zusammenfassung', startsign => '',
@@ -544,7 +544,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Diskussion}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Diskussion</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       array( title => '\\name{OM:FrQFT:Diskussion}', jumpname => 'OM:FrQFT:Diskussion', startsign => '',
@@ -556,7 +556,7 @@
                     ))),
                     
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Lesestoff und Verweise \\small{– Informationen}}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Lesestoff und Verweise \\\\ \\small{Informationen}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       array( title => 'Manuskript \\\\ \\color{*ContentItemDisabled}{(veraltete Version von 2012)}', jumpurl => $Glo_PathRel_back.'../de/Fraktale-Quanten-Fluss-Theorie_Manuskript_de.html', startsign => '', //jumpname => 'XXX',

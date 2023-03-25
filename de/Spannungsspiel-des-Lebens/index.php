@@ -146,7 +146,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Ansatz <small>– Einführung und Entwicklung</small>}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Ansatz \\\\ \\small{Einführung und Entwicklung}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Einleitung'),
@@ -159,7 +159,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Fortentwicklung durch Beobachtungen und Intuitionen <small>– Bedeutung fürs Leben</small>}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Fortentwicklung durch Beobachtungen und Intuitionen \\\\ \\small{Bedeutung fürs Leben}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Psychosomatik'),
@@ -172,7 +172,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Anwendung <small>– Praxis und Wissensvermittlung</small>}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Anwendung \\\\ \\small{Praxis und Wissensvermittlung}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       // Vgl.: Ordner "Kai Marchal - Chinesische Philosophie - oder die Kunst, das Nichts - zu denken - 3sat-Mediathek - 20190630-0906"
@@ -199,7 +199,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Das größere Bild \\small{– Gruppen von Lebewesen, Evolution etc.}}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Das größere Bild \\\\ \\small{Gruppen von Lebewesen, Evolution etc.}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       array( title => 'Der Achtsamkeitsprozess in und von Gruppen \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
@@ -209,7 +209,7 @@
                     ))),
                     
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Neue Biophysik \\small{– Physikalische Grundlagen, Biologie, Technik und Mechanik}}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Neue Biophysik \\\\ \\small{Physikalische Grundlagen, Biologie, Technik und Mechanik}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Information-Kommunikation'),
@@ -220,7 +220,7 @@
                     ))),
                     
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Lesestoff und Verweise \\small{– Informationen}}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Lesestoff und Verweise \\\\ \\small{Informationen}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Diskussion'),

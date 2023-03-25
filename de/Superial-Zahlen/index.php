@@ -67,7 +67,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Superial-Zahlen <small>– Zählen und Primzahlen im Unendlichen</small>}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Superial-Zahlen \\\\ \\small{Zählen und Primzahlen im Unendlichen}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Einleitung'),
@@ -77,7 +77,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Lesestoff und Verweise \\small{– Informationen}}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Lesestoff und Verweise \\\\ \\small{Informationen}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Literatur'),

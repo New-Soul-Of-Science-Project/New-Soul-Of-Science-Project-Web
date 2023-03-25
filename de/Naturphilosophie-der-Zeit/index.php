@@ -43,7 +43,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Naturphilosophie der Zeit <small>– Zeit aus struktureller Perspektive</small>}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Naturphilosophie der Zeit \\\\ \\small{Zeit aus struktureller Perspektive}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       array( title => '\\name{OM:NPT:Einleitung}', jumpname => 'OM:NPT:Einleitung', startsign => '',
@@ -51,7 +51,7 @@
                     ))),
                     
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Lesestoff und Verweise \\small{– Informationen}}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Lesestoff und Verweise \\\\ \\small{Informationen}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPT:Literatur'),

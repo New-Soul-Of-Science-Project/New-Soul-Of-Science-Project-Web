@@ -118,7 +118,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Ausrichtung \\small{– Motivation und Beschreibung}}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Ausrichtung \\\\ \\small{Motivation und Beschreibung}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Einleitung'),
@@ -136,7 +136,7 @@
                     ))),
                     
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Historisches und mythologisches Wissen \\small{– Zusammenhang und Interpretation}}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Historisches und mythologisches Wissen \\\\ \\small{Zusammenhang und Interpretation}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:HaTha'),
@@ -146,7 +146,7 @@
                     ))),
                     
                  array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Coaching \\small{– Wie kann ich dir helfen?}}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Coaching \\\\ \\small{Wie kann ich dir helfen?}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       array( title => 'Wer bin ich? \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
@@ -200,7 +200,7 @@
                     ))),
                     
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Lesestoff und Verweise \\small{– Informationen}}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Lesestoff und Verweise \\\\ \\small{Informationen}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       //nSOSp_f_tableOfContents_elementAry( 'OM:SpaLeb:Diskussion'),

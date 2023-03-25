@@ -3665,7 +3665,7 @@
 
   $NPYo_g_index_KurseVortraegeWorkshops_Head      =
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Kurse, Vorträge, Workshops\\hidden{, Seminare} \\small{– Erfahrungs- und Wissensvermittlung}}</h3>'."\n");
+                    '<h3 class="tools-class-contentlist-header">Kurse, Vorträge, Workshops\\hidden{, Seminare} \\small{ \\\\ Erfahrungs- und Wissensvermittlung}</h3>'."\n");
   $NPYo_g_index_KurseVortraegeWorkshops_ContentList      =
                   array( 'contentlist',
                     array( content_ary => array(
@@ -3679,7 +3679,7 @@
                     )));
   $NPYo_g_index_SozialeNetzwerkeForenSpenden_Head      =
                   array( 'normal',
-                    '<h3 style="margin-top: 25px;">\\color{*ContentPart}{Soziale Netzwerke, Foren, Spenden \\small{– Öffentlichkeitsarbeit}}</h3>'."\n");
+                    '<h3 class="tools-class-contentlist-header">Soziale Netzwerke, Foren, Spenden \\small{ \\\\ Öffentlichkeitsarbeit}</h3>'."\n");
   $NPYo_g_index_SozialeNetzwerkeForenSpenden_ContentList      =
                   array( 'contentlist',
                     array( content_ary => array(

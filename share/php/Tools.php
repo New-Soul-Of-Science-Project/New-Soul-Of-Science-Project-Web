@@ -1658,7 +1658,7 @@
         echo $offset.'  <span style="color: #'.(To_f_Color( '*Conclusion')).'">'."\n";
         break;
       case 'contentlist':
-        echo $offset.'<table border="0"> <colgroup> <col width="22"> <col width="300"> <col width="16"> <col width="362"> </colgroup>'."\n";
+        echo $offset.'<table class="tools-class-contentlist-table" border="0"> <colgroup> <col width="22"> <col width="300"> <col width="16"> <col width="362"> </colgroup>'."\n";
         break;
       case 'quote':
         //%!echo $offset.'<p style="margin-left: 30px; margin-right: 100px;">'."\n";
@@ -1809,8 +1809,8 @@
           echo $offset.'    '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '')).'</td> <td valign="top" style="color: #'.($Glo_g_Color_list['*ContListDescr'][color]).'">'."\n";
           echo $offset.'      '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value[description])).'</td> </tr>'."\n";
           
-          if ($key + 1 < count( $text[content_ary]))
-            echo $offset.'  <tr><td height="5px"></td></tr>'."\n";
+          // if ($key + 1 < count( $text[content_ary]))
+            // echo $offset.'  <tr><td height="20px"></td></tr>'."\n";
         }
         
         break;
