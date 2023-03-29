@@ -43,18 +43,18 @@
         'OM:SupNum:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
       ),
     ),
-    'OM:SupNum:Ableitung-Integral' => array(
-      url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Ableitung-und-Integral-aktuale-Unendlichkeit-ersetzt-Limes.php',
-      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Ableitung-und-Integral-aktuale-Unendlichkeit-ersetzt-Limes.php',
-      titel => 'Ableitung und Integral - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\\name[undertitle]{OM:SupNum:Ableitung-Integral}.\\hidden{ — \\name[description]{OM:SupNum:Ableitung-Integral}.}',
+    'OM:SupNum:Ableitungen-Integrale' => array(
+      url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Ableitungen-und-Integrale-aktuale-Unendlichkeit-ersetzt-Limes.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Ableitungen-und-Integrale-aktuale-Unendlichkeit-ersetzt-Limes.php',
+      titel => 'Ableitungen und Integrale - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\\name[undertitle]{OM:SupNum:Ableitungen-Integrale}.\\hidden{ — \\name[description]{OM:SupNum:Ableitungen-Integrale}.}',
       keywords => '',
-      text_titel_h1 => 'Ableitung und Integral',
-      text_titel_short => 'Ableitung und Integral',
+      text_titel_h1 => 'Ableitungen und Integrale',
+      text_titel_short => 'Ableitungen und Integrale',
       text_undertitel_h2 => 'Aktuale Unendlichkeit ersetzt den Limes',
       text_titel_discr_h3 => '',
       jump_ary => array(
-        'OM:SupNum:Ableitung-Integral:XXX' => array( headline_text => 'XXX' , headline_text_short => 'XXX'),
+        'OM:SupNum:Ableitungen-Integrale:XXX' => array( headline_text => 'XXX' , headline_text_short => 'XXX'),
       ),
     ),
     'OM:SupNum:Eigenschaften' => array(
