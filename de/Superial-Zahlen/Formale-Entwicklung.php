@@ -134,7 +134,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SupNum:XXX'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:GanzeSZ'),
                     )),
                 )
           ); ?>
@@ -145,10 +145,10 @@
 		    	<!  • Ganze Superial-Zahlen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Formale-Entwicklung:GanzeSZ',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SupNum:XXX', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -188,7 +188,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SupNum:XXX'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:NatuerlicheSZ'),
                     )),
               )
           ); ?>
@@ -197,10 +197,10 @@
 		    	<!  • Natürliche Superial-Zahlen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Formale-Entwicklung:NatuerlicheSZ',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SupNum:XXX', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:GanzeSZ', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
@@ -257,7 +257,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SupNum:XXX'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:PrimSZ'),
                     )),
               )
           ); ?>
@@ -266,10 +266,10 @@
 		    	<!  • Superiale Primzahlen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Formale-Entwicklung:PrimSZ',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SupNum:XXX', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:NatuerlicheSZ', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
@@ -305,7 +305,68 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SupNum:XXX'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien'),
+                    )),
+              )
+          ); ?>
+
+
+		    	<!  • Formalien  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Formale-Entwicklung:Formalien',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:PrimSZ', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\\bold{XXX}',
+                    // '• XXX',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Nachfolgend ein paar nützliche Definitionen:'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Intervall', text =>
+                      
+                'Intervall', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Eine etwas allgemeinere Definition eines Intervalls\\footnote{Internet: \\\\ Vgl. \\cite{wiki:IntervallMathematik:2023}.} aus einer angeordneten Zahlenmenge:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Seien \\latexmath{ \lbrack a, b \rbrack_\mathbb{T} }, \\latexmath{ \lbrack a, b \lbrack_\mathbb{T} }, \\latexmath{ \rbrack a, b \rbrack_\mathbb{T} } und \\latexmath{ \rbrack a, b \lbrack_\mathbb{T} } die Mengen der folgenden Intervalle von \\latexmath{ a } bis \\latexmath{ b } aus der Menge \\latexmath{ \mathbb{T} }'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [ a, b ]_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a \leq x \leq b *]  *\}  }'),
+                      array( display => 'on',  latex => '{  [ a, b [_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a \leq x < b *]  *\}  }'),
+                      array( display => 'on',  latex => '{  ] a, b ]_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a < x \leq b *]  *\}  }'),
+                      array( display => 'on',  latex => '{  ] a, b [_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a < x < b *]  *\}  \;\;  ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'so können wir nachfolgend flexibel Intervalle definieren.'."\n",
+                        '\\\\'.
+                      ''))),
+
+                  /* array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))), */
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale'),
                     )),
               )
           ); ?>

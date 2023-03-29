@@ -93,14 +93,7 @@
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Seien \\latexmath{ \rbrack a, b \lbrack_\mathbb{T} } und \\latexmath{ \lbrack a, b \lbrack_\mathbb{T} } die Mengen der folgenden Intervale von \\latexmath{ a } bis \\term{b} aus der Menge \\latexmath{ \mathbb{T} }'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ] a, b [_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a < x < b *]  *\}  }'),
-                      array( display => 'on',  latex => '{  [ a, b [_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a \leq x < b *]  *\}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Seien \\latexmath{ \rbrack a, b \lbrack_\mathbb{Q} } und \\latexmath{ \lbrack a, b \lbrack_\mathbb{Q} } \\jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall}{Intervall-Mengen} aus \\latexmath{ \mathbb{Q} },'."\n".
                       'dann ergibt sich \\latexmath{ s }, nach vorstehendem Gedanken, zu'."\n".
                       ''))),
                   array( 'equations',

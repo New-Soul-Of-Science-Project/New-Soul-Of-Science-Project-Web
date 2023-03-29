@@ -119,6 +119,8 @@
         'OM:SupNum:Formale-Entwicklung:GanzeSZ' => array( headline_text => 'Ganze Superial-Zahlen'/* , headline_text_short => 'XXX' */),
         'OM:SupNum:Formale-Entwicklung:NatuerlicheSZ' => array( headline_text => 'Natürliche Superial-Zahlen'/* , headline_text_short => 'XXX' */),
         'OM:SupNum:Formale-Entwicklung:PrimSZ' => array( headline_text => 'Superiale Primzahlen'/* , headline_text_short => 'XXX' */),
+        'OM:SupNum:Formale-Entwicklung:Formalien' => array( headline_text => 'Formalien'/* , headline_text_short => 'XXX' */),
+          'OM:SupNum:Formale-Entwicklung:Formalien:Intervall' => array( headline_text => 'Intervall'/* , headline_text_short => 'XXX' */),
       ),
     ),
     'OM:SupNum:Literatur' => array(
