@@ -59,7 +59,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0}{ \frac{ f(x + \Delta x) - f(x) }{ \Delta x } }  }'),
-                      array( display => 'on',  latex => '{  \Delta x  :=  s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \lim\limits_{\Delta x \rightarrow +0}{ \Delta x }  :=  s^{-1}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  :=  \frac{ f(x + s^{-1}) - f(x) }{ s^{-1} }  }',
                                           label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Def-Ableitung-mit-s-hoch-minus-Eins', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-Def-Ableitung-mit-s-hoch-minus-Eins}', label_incr => true),
                     ))),
@@ -384,6 +384,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Wir können hieran erkennen, dass keine rationale Zahl \\term{k} existiert, die im Produkt mit \\term{s^{-1}} ins Endliche kommen kann.'."\n"))),
+                  // #Ref: *SupNum:Stellenwertsystem-Schreibweise
                   array( 'text', array( text => array(
                   '\\condb{Ein besonderes Zahlenwertsystem und seine Kurznotation} \\\\'."\n".
                     'Das ist sehr bemerkenswert und ermöglicht ein neues und besonderes Zahlenwertsystem auf Basis der superialen Basis \\latexmath{ s }:'."\n",
@@ -508,7 +509,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n",
-                      'Beim Beweis der Primzahlproduktvermutung und der unendlich großen Primzahl-Zwillinge ist die Frage, ob die tendenzielle Lücke'."\n".
+                      'Beim Beweis der Primzahlprodukt-Vermutung und der unendlich großen Primzahl-Zwillinge ist die Frage, ob die tendenzielle Lücke'."\n".
                     'zwischen einer gegebenen Primzahl \\term{p} und \\term{p# - 1} eine Frage des Gitters ist oder eine Frage der prinzipiellen Möglichkeit aufgrund'."\n".
                     'der Lage und Größe der Lücke.'."\n",
                       'Angenommen es ist eine Frage der prinzipiellen Möglichkeit aufgrund der Lage und Größe der Lücke.'."\n",
