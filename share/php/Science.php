@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 21.03.2023, 19:00h
+  // #: Stand: 02.04.2023, 01:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20230402:  +:  "$Sc_g_equation_replace_ary":  '  ?:=  ' -> '\;\;\;\overset{?}{≔}\;\;\;' is new.
   //           20230321:  +:  "$Sc_g_Text_replace_ary":  Element "\M(Q)" as "&#8474;" (Double-struck capital Q) is new.
   //                      +:  "$Sc_g_Text_replace_ary":  Element "\M(Z)" as "&#8484;" (Double-struck capital Z) is new.
   //           20230216:  >:  "MathJax":  Change LaTeX macros "lSelSet", "rSelSet" by using '|' instead of '{' and '}'.
@@ -625,6 +626,7 @@
                                     array( '  \approx  ', '\;\;\;\approx\;\;\;'),
                                     array( '  \sim  ', '\;\;\;\sim\;\;\;'),
                                     array( '  \ll  ', '\;\;\;\ll\;\;\;'),
+                                    array( '  ?:=  ', '\;\;\;\overset{?}{≔}\;\;\;'),
                                     array( ':=', '≔'),
                                     array( '  ≔  ', '\;\;\;≔\;\;\;'),
                                     array( '  ?=  ', '\;\;\;\overset{?}{=}\;\;\;'),
