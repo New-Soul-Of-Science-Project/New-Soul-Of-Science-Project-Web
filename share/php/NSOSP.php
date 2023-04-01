@@ -801,6 +801,10 @@
     '*SpaLeb:Disharmonieprinzip'            => array( jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz:OrganischesExistenzprinzip:DisharmPrinz'),
     '*SpaLeb:Selbstschutz'                  => array( jump_name => 'OM:SpaLeb:Psyche-und-Stimmung:Selbstmitgefuehl'),
     '*SpaLeb:Spannungsprinzip'              => array( jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz:OrganischesExistenzprinzip:SpanPrinz'),
+    
+    // #: SupNum
+                            
+    '*SupNum:Stellenwertsystem-Schreibweise'  => array( jump_name => 'OM:SupNum:Einleitung:Grundlagen'),
   );
   
   $Glo_g_Redirect_list = array(
