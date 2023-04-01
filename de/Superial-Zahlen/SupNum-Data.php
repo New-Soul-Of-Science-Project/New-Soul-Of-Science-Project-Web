@@ -51,10 +51,10 @@
       keywords => '',
       text_titel_h1 => 'Ableitungen und Integrale',
       text_titel_short => 'Ableitungen und Integrale',
-      text_undertitel_h2 => 'Aktuale Unendlichkeit ersetzt den Limes',
+      text_undertitel_h2 => 'Aktuale Unendlichkeit ersetzt den Limes oder das Differential',
       text_titel_discr_h3 => '',
       jump_ary => array(
-        'OM:SupNum:Ableitungen-Integrale:XXX' => array( headline_text => 'XXX' , headline_text_short => 'XXX'),
+        'OM:SupNum:Ableitungen-Integrale:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
       ),
     ),
     'OM:SupNum:Eigenschaften' => array(
