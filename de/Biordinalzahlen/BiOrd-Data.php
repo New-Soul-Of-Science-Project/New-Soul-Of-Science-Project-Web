@@ -57,7 +57,8 @@
         'OM:BiOrd:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
           'OM:BiOrd:Einleitung:Vortext:Equ-n-plus-Eins' => array( headline_text => 'SN.Biord.6'),
-          'OM:BiOrd:Einleitung:Vortext:FundamentaleAsymmetrie' => array( headline_text => 'Eine fundamentale Asymmetrie'/*, headline_text_short => 'XXX'*/),
+          'OM:BiOrd:Einleitung:Vortext:Equ-minus-n' => array( headline_text => 'SN.Biord.23'),
+          'OM:BiOrd:Einleitung:Vortext:Equ-minus-Omega' => array( headline_text => 'SN.Biord.24'),
           'OM:BiOrd:Einleitung:Vortext:Equ-Lambda-minus-Beta' => array( headline_text => 'SN.Biord.30'),
                         
         'OM:BiOrd:Einleitung:IntegrierteMengenlehre' => array( headline_text => 'Integrierte Mengenlehre'/*, headline_text_short => 'XXX'*/),
@@ -68,9 +69,9 @@
         'OM:BiOrd:Einleitung:NeueEinsichten' => array( headline_text => 'Neue Einsichten'/*, headline_text_short => 'XXX'*/),
           'OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie' => array( headline_text => 'Eine fundamentale Asymmetrie'/*, headline_text_short => 'XXX'*/),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z' => array( headline_text => 'SN.Biord.NE.4'),
-          'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl' => array( headline_text => 'Neue Einsichten zu positiven aktual unendlichen Zahlen'/*, headline_text_short => 'XXX'*/),
+          'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl' => array( headline_text => 'Neue Einsichten zu positiven aktual unendlichen Biordinalzahlen'/*, headline_text_short => 'XXX'*/),
           'OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega' => array( headline_text => 'Es gibt mehr ganze Zahlen von Null bis zu \\term{ω}, als der Wert von \\term{ω} ausdrückt', headline_text_short => 'Es gibt mehr ganze Zahlen von Null bis zu ω, als der Wert von ω ausdrückt'),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega' => array( headline_text => 'SN.Biord.NE.66'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega' => array( headline_text => 'SN.Biord.NE.63'),
       ),
     ),
     'OM:BiOrd:Literatur' => array(
