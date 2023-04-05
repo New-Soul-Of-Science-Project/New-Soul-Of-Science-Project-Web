@@ -105,7 +105,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [ 0, s [_{\mathbb{S}_{N}}  =  \\\ \quad *\{  x  ~\middle|~  *( \forall q \in [ 0, 1 ]_{\mathbb{Q}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } q = 0  \\\\  q \cdot s + z  &  \text{ falls } 0 < q < 1  \\\\  s + z^{-}  &  \text{ falls } q = 1  \end{cases}  *]  *\}  \;\;  ,  }'),
+                      array( display => 'on',  latex => '{  [ 0, s [_{\mathbb{S}_{N}}  =  \\\ \quad *\{  x  *|*  *( \forall q \in [ 0, 1 ]_{\mathbb{Q}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } q = 0  \\\\  q \cdot s + z  &  \text{ falls } 0 < q < 1  \\\\  s + z^{-}  &  \text{ falls } q = 1  \end{cases}  *]  *\}  \;\;  ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'unter Berücksichtigung der unterschiedlichen Fälle.'."\n",
@@ -136,7 +136,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{Q}  =  \\\ \qquad *\{  x  ~\middle|~  *( \forall z \in \mathbb{Z} *) *( \forall u \in [ 0, 1 [_\mathbb{Q} *)  *[  x = z + u  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{Q}  =  \\\ \qquad *\{  x  *|*  *( \forall z \in \mathbb{Z} *) *( \forall u \in [ 0, 1 [_\mathbb{Q} *)  *[  x = z + u  *]  *\}  }',
+                                          label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z', label_text => '\\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'sind alle rationalen Zahlen, ohne Redundanzen – also Doppelungen – und Lücken, definiert und es folgt daraus'."\n".
@@ -152,7 +153,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \# *( [ 0, 1 [_\mathbb{Q} *)  =  \frac{ s }{ 2 \cdot \omega }  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \# *( [ 0, 1 [_\mathbb{Q} *)  =  \frac{ s }{ 2 \cdot \omega }  \;\; ,  }',
+                                          label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-reatio-Intervall-Null-Eins', label_text => '\\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-reatio-Intervall-Null-Eins}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'durch Umformung.'."\n",
@@ -162,6 +164,24 @@
                   array( 'text', array( text => array(
                     'Dies sollte eine ganze Zahl sein und wäre'."\n".
                     'mit meiner \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} im Einklang.'."\n",
+                      'Und wir können sogar noch weiter gehen und feststellen, dass \\latexmath{ \omega } seine Primfaktoren mit'."\n".
+                    '\\latexmath{ s } teilen muss, wenn die Anzahl der rationalen Zahlen in \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} }'."\n".
+                    'in Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-reatio-Intervall-Null-Eins} eine ganze Zahl sein soll.'."\n".
+                    'Weiter ist klar, dass \\latexmath{ \omega } aktual unendlich groß ist.'."\n".
+                    'Es kann also nur ein Produkt aus unendlich vielen endlichen Primzahlen sein.'."\n",
+                      'Doch welches Teilprodukt aus \\latexmath{ s } ist es, wenn klar ist, dass \\latexmath{ s } unendlich viel größer ist'."\n".
+                    'als \\latexmath{ \omega }.'."\n".
+                    'Der Turm der kleinsten Primzahl \\latexmath{ 2^\omega } ist definitiv sehr viel größer als \\latexmath{ \omega }.'."\n".
+                    'Was naheliegender Weise bleibt ist, dass \\latexmath{ \omega = 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots } ist.'."\n".
+                    'Aber auch dieses Produkt erscheint auf den ersten Blick viel größer als \\latexmath{ \omega } zu sein.'."\n",
+                      'Es sei denn, die Anzahl der Primzahl unter den natürlichen Zahlen erfüllt weit draußen unter den sehr sehr großen Zahlen'."\n".
+                    'eine bestimmte Bedingung:'."\n".
+                    'Es gibt unter den sehr sehr großen natürlichen Zahlen im Grunde nur noch Primzahlzwillinge?'."\n",
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
                       'Können wir die Anzahl der rationalen Zahlen quantifizieren?'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -169,10 +189,60 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen', text =>
+                      
+                'Erklärung der Anzahl der endlichen ganzen Zahlen durch ihren ontologischen Ursprung in den Biordinalzahlen', subline =>
+                  'Formulierung der Entstehung der negativen ganzen Zahlen durch Rückwärtszählen, ohne Umkehrung der Zählrichtung')),
+                  array( 'text', array( text => array(
+                    'Die vorstehend gemachten Aussagen sind entscheidend davon abhängig, wieviele endliche ganze Zahlen es gibt.'."\n".
+                    'Dies bestimmt zum einen, ob es wirklich eine ganze Anzahl an rationalen Zahlen in \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} } gibt.'."\n".
+                    'Und es bestimmt damit, ob \\latexmath{ \omega } gemeinsame Teiler mit \\latexmath{ s } hat.'."\n",
+                      'Dies ist einer der Gründe, aus denen ich mich mit den Ordinalzahlen\\footnote{\\const{NSOSP_g_footnote_text_Ordinalzahl}}'."\n".
+                    'beschäftigt und diese auf die \\jump{OM:BiOrd:Home}{Biordinalzahlen} erweitert und ein Stück weit erforscht habe.'."\n".
+                    'So habe ich auch eine \\jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{fundamentale Asymmetrie}'."\n".
+                    'herausgearbeitet, die der von mir gefundenen und oben verwendeten Anzahl der endlichen ganzen Zahlen'."\n".
+                    '\\latexmath{ 2 \cdot \omega } zugrunde liegt.'."\n",
+                      'Wegen der auch im Negativen vorhandenen Zählrichtung, die auch dort in Richtung der positiven Zahl gerichtet ist,'."\n".
+                    'weil alle Zahlen letztendlich aus dem Zählen hervorgehen, siehe auch \\jump{OM:OT:Home}{Operialtheorie}.'."\n",
+                      'Um auszudrücken, wie jedes negative rationale, an einer ganze Zahl hängende Zahlenintervall jeweils aus einem Zahlenintervall'."\n".
+                    'an einer natürlichen Zahl entsteht, berücksichtigen wir'."\n".
+                    'im Ansatz die ontologische Vorstellung, dass es sich bei Zahlen quasi um Wellen – oder Sägezähne – von einer Zahl zur nächsten handelt.'."\n".
+                    'Diese Wellen hängen in Zählrichtung an den Zahlen.'."\n".
+                    ''))),
+                      
+                  array( 'figure',
+                    array_merge( $BiOrd_g_figure_ary_GanzeZahlenGerade, array( name => 'OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen'))),
+                                            
+                  array( 'text', array( text => array(
+                    'Die negativen Zahlen entstehen also eigentlich nicht durch eine Spiegelung dieser Wellen, sondern durch deren Verschiebung.'."\n".
+                    'Und dies soll sich in der ersten Struktur der Formulierung ausdrücken, die wir auf Basis der Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z} ansetzen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{Q}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_\mathbb{Q} *)  \\\ \qquad\qquad\qquad\;\,  *[  x = *( n - *( 2 \cdot n + 1 *) *) + u  *]  *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Intervalle \\latexmath{ u }, die zwischen den Zahlen liegen, hängen an der vorstehenden ganzen Zahl und werden auf diese Weise mit verschoben.'."\n".
+                    'Daher steht quasi am „Beginn“ der endlichen negativen ganzen Zahlen auch der Punkt einer ganzen Zahl,'."\n".
+                    'was eben der Grund dafür ist, dass es eine endliche negative ganze Zahl mehr geben muss, als positive, ohne die Null (siehe \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen}).'."\n".
+                    'Denn das Zählen ist die Grundlage aller Zahlen.'."\n",
+                      'Wenn wir die Verschiebung vereinfachend umformen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Q}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_\mathbb{Q} *)  \\\ \qquad\qquad\qquad\qquad\quad\;\;\,  *[  x = *( n - 2 \cdot n - 1 *) + u  *]  *\}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Q}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_\mathbb{Q} *)  \\\ \qquad\qquad\qquad\qquad\quad\;\;\,  *[  x = *( - n - 1 *) + u  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{Q}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_\mathbb{Q} *)  \\\ \qquad\qquad\qquad\qquad\quad\,  *[  x = - *( n + 1 *) + u  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Q}^{-}  =  \frac{ s }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'So kann der Eindruck einer Spiegelung entstehen, wenn wir das Intervall nicht explizit dranhängen würden.'."\n",
+                      'Demnach sind wir sicher, dass die Anzahl der endlichen ganzen Zahlen wirklich \\latexmath{ 2 \cdot \omega } ist.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:XXX', text =>
                       
                 'Rationale Koeffizienten von \\term{s} und Biordinalzahlen', subline =>
-                  'Die Biordinalzahlen erlauben uns die Potenzen der Primzahlen-Türme zu beschreiben ')),
+                  'Die Biordinalzahlen erlauben uns die Potenzen der Primzahlen-Türme zu beschreiben')),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".

@@ -68,7 +68,13 @@
       text_undertitel_h2 => 'Welche Erkenntnisse können wir aus den Superial-Zahlen lernen?',
       text_titel_discr_h3 => '',
       jump_ary => array(
+        'OM:SupNum:Eigenschaften:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
         'OM:SupNum:Eigenschaften:StrukturVonS' => array( headline_text => 'Die Struktur von \\term{s}' , headline_text_short => 'Die Struktur von s'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z' => array( headline_text => 'SN.Eig.SVS.8'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-reatio-Intervall-Null-Eins' => array( headline_text => 'SN.Eig.SVS.10'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen' => array( headline_text => 'Erklärung der Anzahl der endlichen ganzen Zahlen durch ihren ontologischen Ursprung in den Biordinalzahlen'/* , headline_text_short => 'Die Struktur von s' */),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
       ),
     ),
     'OM:SupNum:Einleitung' => array(
