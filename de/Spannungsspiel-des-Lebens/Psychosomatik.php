@@ -420,7 +420,7 @@
                     'Nehmen wir sie an, dann verringert sich unser innerer Stress und das ist oft schon ein großes Stück des Wegs zu einer möglichen Lösung.'."\n".
                     'Denn wir lösen eine Blockade auf.'."\n".
                     'Und Bewusstwerdung ist der Anfang jeder Veränderung.'."\n",
-                      'Die Psychotherapeutin Maria Sanchez (›Neue Psychologie‹, ›Sehnsucht und Hunger‹, ›EssentialCore‹) bringt das in einem Gespräch im folgenden Video wunderbar auf den Punkt, indem sie aufzeigt, dass unsere biographischen Wunden nur verheilen können, wenn wir „das ungeliebte Kind“ in uns in Liebe annehmen: \\jump[https://www.youtube.com/watch?v=A5G7vSgyez4]{}{Selbstliebe ist kein Zufall: Die revolutionäre Kraft des Fühlens}'."\n"))),
+                      'Die Traumatherapeutin und Heilpraktikerin für Psychotherapie Maria Sanchez (›Neue Psychologie‹, ›Sehnsucht und Hunger‹, ›EssentialCore‹) bringt das in einem Gespräch im folgenden Video wunderbar auf den Punkt, indem sie aufzeigt, dass unsere biographischen Wunden nur verheilen können, wenn wir „das ungeliebte Kind“ in uns in Liebe annehmen: \\jump[https://www.youtube.com/watch?v=A5G7vSgyez4]{}{Selbstliebe ist kein Zufall: Die revolutionäre Kraft des Fühlens}'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
                       
                 'Wer ständig mit sich selber kämpft, wird verlieren', subline =>
