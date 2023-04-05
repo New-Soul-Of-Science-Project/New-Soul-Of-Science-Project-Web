@@ -354,6 +354,14 @@
   const border = 'border';
   const source = 'source';
 
+  $BiOrd_g_figure_ary_GanzeZahlenGerade         = array( fig_file_name => 'BO/ontologie-ganze-zahlen-v01', fig_alt_description => 'Ontologie der ganzen Zahlen', width => '600px', height => '290px', name => 'set local!',
+                                                         text => 'XXX'."\n".
+                                                                 'XXX'."\n".
+                                                                 'XXX'."\n".
+                                                                 'XXX'."\n".
+                                                                 'XXX');
+
+
   $FrQFT_g_figure_ary_Elapson                   = array( fig_file_name => 'Elapson_v05', fig_alt_description => 'Elapson (ep)', width => '514px', height => '327px', name => 'set local!',
                                                          text => 'Der Wirkunsquanten-String eines idealisierter Weise kreisförmigen Elapsons ist als elektromagnetisch unpolarisierter Prototyp des Photons zu verstehen.'."\n".
                                                                   'Als solcher ist das kreisförmige Elapson als Grundbaustein des Vakuums zu sehen und wird Vakuum-Elapson genannt.'."\n".

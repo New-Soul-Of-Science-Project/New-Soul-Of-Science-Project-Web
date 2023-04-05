@@ -711,19 +711,33 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Ontologische Begründung} \\\\'."\n".
-                    'Die ontologische Begründung dafür, also die Begründung aus Sicht der Struktur des Seins oder die Realität betreffend, hat mir mein Freund Raimund Welsch nahegelegt:'."\n".
+                    'Aus ontologischer Sicht, also aus Sicht der Struktur des Seins oder die Realität betreffend, hat mir mein Freund Raimund Welsch nahegelegt:'."\n".
                     'Begreifen wir jede nach oben gezählten Abstand Eins als Welle – oder alternativ als Sägezahn, wie ich es selber schon früher gedacht hab – dann fängt jede dieser Wellen bei einer ganzen'."\n".
                     'Zahl an.'."\n".
                     'Die darauf folgende nächste ganze Zahl ist schon der Beginn der nächsten Welle und gehört nicht mehr zu der, die wir gerade gezählt haben.'."\n",
-                      'Die nullte Welle beginnt also bei der Null.'."\n",
-                      'Duplizieren wir die positiven Wellen, beginnend bei der der Null, indem wir die gleiche Anzahl ins Negative verschieben,'."\n".
-                    'dann ist der Nullpunkt auf der negativen Seite zusätzlich dupliziert.'."\n".
-                    'Während der verschobene Nullpunkt der negativen Seite eine negative Zahl repräsentiert, repräsentiert der originale Nullpunkt keine positive'."\n".
-                    'Zahl, sondern die Null selber.'."\n",
-                      'Ontologisch betrachtet sind negative Zahlen also nicht die inklusive der Zählrichtung an der Null gespiegelten positiven Zahlen, inklusive der Null.'."\n".
-                    'Sondern es handelt sich strukturell um eine Verschiebung, die die Zählrichtung beibehält und nicht spiegelt, wohingegen die Werte an der Null gespiegelt sind'."\n".
-                    '\\color{*Bearb}{(eine Abbildung diesbezüglich einfügen, die zeigt, dass der Ausgangs- oder Ankerpunkt einer Zahl immer an ihrem Punkt auf der Geraden liegt und ihre \\italic{Zählentwicklung} die Lücke zur nachfolgenden Zahl abdeckt, was natürlich ebenso für die negativen Zahlen gilt)}.'."\n".
-                    'Strukturell macht eine Doppelung der Null keinen Sinn.'."\n",
+                      'Die nullte Welle oder der nullte Zahn beginnt also bei der Null und endet vor der Eins.'."\n".
+                    ''))),
+                      
+                  array( 'figure',
+                    array_merge( $BiOrd_g_figure_ary_GanzeZahlenGerade, array( name => 'OM:BiOrd:Einleitung:NeueEinsichten:Fig-OntologieGanzeZahlen'))),
+                                            
+                  array( 'text', array( text => array(
+                    'Würden wir die natürlichen Zahlen einfach an der Null spiegeln, um die negativen ganzen Zahlen zu erhalten,'."\n".
+                    'dann hätten wir die Null doppelt in der Struktur; eine gehörte zu den positiven und eine zu den negativen Zahlen, was nicht eindeutig wäre.'."\n".
+                    'Auch würde sich in den negativen ganzen Zahlen die Zählrichtung umkehren und dadurch könnten wir die negativen Zahlen'."\n".
+                    'nicht mehr in ihrer Struktur von den positiven Zahlen unterscheiden.'."\n".
+                    'Denn das scheinbare Rückwärtszählen wäre ja doch in Wirklichkeit so auch ein Vorwärtszählen.'."\n".
+                    'Beide Zahlentypen wären identisch, was ontologisch keinen Sinn ergibt.'."\n",
+                      'Sinn erhalten wir, wenn wir erkennen, dass die negativen ganzen Zahlen aus verschobenen positiven ganzen Zahlen entstehen, unter Erhalt der Zählrichtung,'."\n".
+                    'durch Welle oder Zahn verdeutlicht (siehe \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Fig-OntologieGanzeZahlen}).'."\n".
+                    'Während also der auf die negative Seite verschobene Nullpunkt eine negative Zahl repräsentiert, nämlich die minus Eins,'."\n".
+                    'repräsentiert der originale Nullpunkt keine positive Zahl, sondern die Null selber.'."\n".
+                    'Die Vollständigkeit der negativen und damit aller ganzen Zahlen entsteht dadurch,'."\n".
+                    'dass wir durch vollständige Induktion alle natürlichen Zahlen ins negative verschieben.'."\n",
+                      'Ontologisch betrachtet sind negative Zahlen also nicht die inklusive der Zählrichtung an der Null'."\n".
+                    'gespiegelten natürlichen oder alternativ nur positiven Zahlen.'."\n".
+                    'Sondern es handelt sich strukturell um eine Verschiebung, die die Zählrichtung beibehält und nicht spiegelt,'."\n".
+                    'wohingegen die repräsentierten Werte an der Null gespiegelt sind.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Kombinatorische Begründung} \\\\'."\n".
@@ -740,13 +754,44 @@
                     'Wir können am Übergang von \\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-minus-n} zu \\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-minus-Omega}'."\n".
                     'sehen, dass wir so viele endliche Zahlen am Mengenuniversum weglassen können, wie es von ihnen gibt:'."\n".
                     'derer in der Anzahl \\term{ω} existieren, nämlich ein Mal die vollständige Induktion der natürlichen Zahlen.'."\n".
-                    'Jede dieser weglassbaren endlichen Zahlen steht für eine negative ganze Zahl.'."\n".
-                    'Demnach gibt es also genau so viele negative ganze Zahlen, wie positive ganze Zahlen mit der Null existieren.'."\n".
+                    'Jede dieser zusätzlich weggelassenen endlichen Zahlen steht für jeweils eine negative ganze Zahl.'."\n",
+                      'Demnach gibt es also genau so viele negative ganze Zahlen, wie positive ganze Zahlen mit der Null existieren.'."\n".
+                    'Und diese kombinatorische Anzahl wird in \\term{-ω} ausgedrückt und ihr absoluter Wert ist eben \\term{ω}.'."\n".
                     'Also gibt es auch aus dieser Perspektive eine negative ganze Zahl mehr, als es positive ohne die Null gibt.'."\n".
                     ''))),
                   array( 'text', array( text => array(
+                  '\\condb{Formulierung der Entstehung der negativen ganzen Zahlen durch Rückwärtszählen, ohne Umkehrung der Zählrichtung} \\\\'."\n".
+                    'Um auszudrücken, wie jede negative ganze Zahl jeweils aus einer natürlichen Zahl entsteht, berücksichtigen wir'."\n".
+                    'im Ansatz die oben entwickelte, ontologische Vorstellung, dass es sich bei Zahlen quasi um Wellen – oder Sägezähne – von einer Zahl zur nächsten handelt.'."\n".
+                    'Diese Wellen hängen in Zählrichtung an den Zahlen.'."\n",
+                      'Die negativen Zahlen entstehen also nicht durch eine Spiegelung dieser Wellen, sondern durch deren Verschiebung.'."\n".
+                    'Und dies soll sich in der ersten Struktur der Formulierung ausdrücken:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = n - *( 2 \cdot n + 1 *)  *]  *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Intervalle, die zwischen den Zahlen liegen, hängen an der vorstehenden ganzen Zahl und werden auf diese Weise mit verschoben,'."\n".
+                    'was wir bei den \\jump{OM:SupNum:Home}{Superial-Zahl} noch \\jump{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen}{expliziter erkennen} können.'."\n".
+                    'Daher steht quasi am „Beginn“ der endlichen negativen ganzen Zahlen auch der Punkt einer ganzen Zahl,'."\n".
+                    'was eben der Grund dafür ist, dass es eine endliche negative ganze Zahl mehr geben muss, als positive, ohne die Null.'."\n".
+                    'Denn das Zählen ist die Grundlage aller Zahlen.'."\n",
+                      'Wenn wir die Verschiebung vereinfachend umformen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = n - 2 \cdot n - 1  *]  *\}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = - n - 1  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = - *( n + 1 *)  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Z}^{-}  =  \omega  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dann entsteht der Eindruck einer Spiegelung.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
                   '\\condb{Anzahl der endlichen ganzen Zahlen} \\\\'."\n".
-                    'So kommen wir zu Aussagen über die Anzahle der ganzen endlichen Zahlen:'."\n".
+                    'So kommen wir zu Aussagen über die Anzahl der ganzen endlichen Zahlen:'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
