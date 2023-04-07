@@ -3384,8 +3384,8 @@
     echo '				<p class="navigation-extra-text" align="left">'."\n";
                   // #: Siehe "http://www.youtube.com/watch?feature=player_embedded&v=HkBEKU-E38k", Sek. 7:05, gespeichert als "Don Lincoln Welches sind die kleinsten Bausteine des Universums.mp4", und "http://en.wikiquote.org/wiki/Talk:Albert_Einstein". Zitat ähnlich siehe URL: http://www.liss-kompendium.de/zitate/einstein-zitate.htm
                   //    Auch auf der Home-Seite von NSOSP.
-    echo '					&raquo;<i>Wenn ich <small>[</small>immer<small>]</small> w&uuml;sste, was ich tue,'."\n";
-    echo '					dann w&uuml;rde man es nicht Forschung nennen, oder?</i>&laquo; *<br>'."\n";
+    echo '					&raquo;<i>Wenn ich [immer] wüsste, was ich tue,'."\n";
+    echo '					dann würde man es nicht Forschung nennen, oder?</i>&laquo; <small>~Einstein zugeschrieben</small><br>'."\n";
     echo '				</p>'."\n";
     echo '				<br>'."\n";
     echo '				<br>'."\n";
@@ -3394,10 +3394,6 @@
     echo '				</p>'."\n";
     echo '				<br>'."\n";
     echo '				<br>'."\n";
-    echo '				<p class="navigation-extra-text" align="left">'."\n";
-                    // #: Siehe oben.
-    echo '					<small>* Einstein zugeschrieben</small>'."\n";
-    echo '				</p>'."\n";
     echo '				<br>'."\n";
     echo '				<br>'."\n";
     echo '        <p>'."\n";
