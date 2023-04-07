@@ -355,11 +355,12 @@
   const source = 'source';
 
   $BiOrd_g_figure_ary_GanzeZahlenGerade         = array( fig_file_name => 'BO/ontologie-ganze-zahlen-v01', fig_alt_description => 'Ontologie der ganzen Zahlen', width => '600px', height => '290px', name => 'set local!',
-                                                         text => 'XXX'."\n".
-                                                                 'XXX'."\n".
-                                                                 'XXX'."\n".
-                                                                 'XXX'."\n".
-                                                                 'XXX');
+                                                         text => 'Es erscheint zunächst erstaunlich, dass die Symmetrie der Existenz der endlichen ganzen Zahlen bei \\term{-½} liegt.'."\n".
+                                                                 'Wenn wir etwas über die Struktur der Zahlen und damit des Zählens, auch mit Hilfe der Biordinalzahlen, nachdenken,'."\n".
+                                                                 'was ich in der Grafik verbildlicht habe, dann erscheint dies doch in sich plausibel.'."\n".
+                                                                 'Denn die Null gehört strukturell zu den positiven Zahlen und aus denen entstehen dann die negativen durch Verschiebung.'."\n".
+                                                                 'Diese Asymmetrie spielt vermutlich unter anderem in der Riemannschen Vermutung eine Rolle, wie ich noch ergründen werde.'."\n".
+                                                                 '');
 
 
   $FrQFT_g_figure_ary_Elapson                   = array( fig_file_name => 'Elapson_v05', fig_alt_description => 'Elapson (ep)', width => '514px', height => '327px', name => 'set local!',

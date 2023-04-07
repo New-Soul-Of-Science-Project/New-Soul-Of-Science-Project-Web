@@ -745,7 +745,12 @@
                       'Ontologisch betrachtet sind negative Zahlen also nicht die inklusive der Zählrichtung an der Null'."\n".
                     'gespiegelten natürlichen oder alternativ nur positiven Zahlen.'."\n".
                     'Sondern es handelt sich strukturell um eine Verschiebung, die die Zählrichtung beibehält und nicht spiegelt,'."\n".
-                    'wohingegen die repräsentierten Werte an der Null gespiegelt sind.'."\n".
+                    'wohingegen die repräsentierten Werte an der Null gespiegelt sind.'."\n",
+                      'Wir erkennen:'."\n".
+                    'Auch, wenn wir nur auf die \\jump{OM:BiOrd:Einleitung:OntologischeDeutung}{endlichen ganzen Zahlen fokussieren}, schwingt das ontologisch implizite Vorhandensein, die Existenz,'."\n".
+                    'der Zwischenräume zwischen den ganzen Zahlen und wie diese mit ihnen verbunden sind, mit.'."\n".
+                    'Denn die Intervalle der Zwischenräume, die an den ganzen Zahlen in Zählrichtung hängen, sind der Grund für'."\n".
+                    'die Zahlenwert-Symmetrie, die sich an der Null spiegelt.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Kombinatorische Begründung} \\\\'."\n".
