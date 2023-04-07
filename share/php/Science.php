@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 02.04.2023, 01:00h
+  // #: Stand: 07.04.2023, 19:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20230407:  -:  "$Sc_g_Text_replace_preg_ary": Move entry "quote" to "Tools.php".
   //           20230402:  +:  "$Sc_g_equation_replace_ary":  '  ?:=  ' -> '\;\;\;\overset{?}{≔}\;\;\;' is new.
   //           20230321:  +:  "$Sc_g_Text_replace_ary":  Element "\M(Q)" as "&#8474;" (Double-struck capital Q) is new.
   //                      +:  "$Sc_g_Text_replace_ary":  Element "\M(Z)" as "&#8484;" (Double-struck capital Z) is new.
@@ -442,21 +443,6 @@
   }
 
   
-  function Sc_f_replace_callback__preg_replace_callback__quote( $match)
-  {
-    $value = To_f_replace_preg_latexstyle_parameters( $match[0], "\\quote", 1, 0);
-
-    //%! if ($value[0] != null)
-    if (0 < count( $value))  // !!!: Change this to "To_f_replace_callback__latexcommand__parameterCheck" see above.
-    {
-      
-      return "<i>&raquo;{$value[0][0]}&laquo;</i>";
-    }
-    
-    else {return "Error: \\quote: Parameter amount is not 1 and 0 optional! $match[0]";}
-  }
-
-  
   function Sc_f_replace_callback__latexcommand__footnote( $value_ary, $replace_ary=null, $replace_preg_ary=null)
   {
     global $Sc_g_footnote_style;
@@ -546,10 +532,7 @@
                                     $Sc_g_Text_replace_preg_ary,     // #!: "hidden", "const", "color" was removed from the array in the lines above.
                                     array(
                                       'quote' =>
-                                        array( type => 'preg_replace_callback',
-                                               search => '/\\\\quote\{[^\}]+\}/',
-                                               callback_f => 'Sc_f_replace_callback__preg_replace_callback__quote',
-                                             ),
+                                        $To_g_Text_replace_preg_ary['quote'],
                                       'footnote' =>
                                         array( type => 'latexcommand',
                                                search => '\\footnote',
