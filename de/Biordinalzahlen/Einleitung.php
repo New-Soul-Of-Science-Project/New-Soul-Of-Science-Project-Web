@@ -20,12 +20,12 @@
                       
                   array( 'text', array( text => array(
                     'Ausgangspunkt der Biordinalzahlen sind die Ordinalzahlen\\footnote{\\const{NSOSP_g_footnote_text_Ordinalzahl}}.'."\n".
-                    'Bei den Ordinalzahlen handelt es sich um die Fortsetzung des Zählens oder der uns allgemein bekannten Anzahl von Dingen ins Aktual-Unendliche.'."\n",
+                    'Bei den Elementen der Menge der Ordinalzahlen \\latexmath{ \mathbb{On} } handelt es sich um die Fortsetzung des Zählens oder der uns allgemein bekannten Anzahl von Dingen ins Aktual-Unendliche.'."\n",
                       'Die nachfolgend eingeführten Biordinalzahlen erweitern das Zählen (Vorwärtszählen) um das Rückwärtszählen von jeder Zahl aus bis in den negativen Bereich.'."\n".
                     'Das bedeutet, dass das Rückwärtszählen und die Subtraktion innerhalb der Biordinalzahlen vollständig definiert sind,'."\n".
                     'was innerhalb der Ordinalzahlen nicht der Fall ist.'."\n",
-                      'Die Biordinalzahlen definieren so nicht nur die Anzahl, die vorhanden ist,'."\n".
-                    'sondern auch die Anzahl, die an etwas vollständigem Fehlt, wie wir sehen werden.'."\n".
+                      'Die Elemente der Menge der Biordinalzahlen \\latexmath{ \mathbb{Bn} } definieren so nicht nur die Anzahlen, die vorhanden sind,'."\n".
+                    'sondern auch die Anzahlen, die an etwas vollständigem Fehlen, wie wir sehen werden.'."\n".
                     'Durch die Erweiterung werden die Ordinalzahlen als Biordinalzahlen zu einem algebraischen Ring\\footnote{\\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n".
                     'Denn nun sind in den Biordinalzahlen die Addition und vollständige Subtraktion und ihr neutrales Element „Null“'."\n".
                     'sowie auch die Multiplikation und ihr neutrales Element „Eins“ definiert.'."\n".
@@ -245,6 +245,14 @@
                     'Es entstehen hierdurch innerhalb der Menge der Basis-Limeszahl keine Mengen, die von ganz neuer Struktur sind.'."\n".
                     'Sondern es ändern sich wirklich nur die Mengenkombinationen in der obersten Ebene der größten Limeszahl.'."\n".
                     'Alle tieferen Ebenen bleiben unberührt.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
+                      
+                'Die Menge der Biordinalzahlen \\latexmath{ \mathbb{Bn} }', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Die Menge der Ordinalzahlen, erweitert, um die neuen subtraktiven Möglichkeiten, ergeben die neue Menge'."\n".
+                    'der Biordinalzahlen \\latexmath{ \mathbb{Bn} }.'."\n".
                     ''))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:BiOrd:Einleitung:Vortext:XXX',
@@ -817,13 +825,13 @@
                   '\\condb{Daraus folgende Asymmetrie} \\\\'."\n".
                     'Auf diese Weise ergibt sich innerhalb der endlichen, ganzen Zahlen eine fundamentale Asymmetrie,'."\n".
                     'die sich in der Summe über alle endlichen, ganzen Zahlen zeigt,'."\n".
-                    'weil am negativen „Ende“ ein Ausgangs- oder Ankerpunkt „überhängt“, der einen sehr großen Wert trägt:'."\n".
+                    'weil jede negative ganze Zahl um minus Eins kleiner ist, als die natürlich Zahl, aus deren Verschiebung sie gebildet wird (siehe \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Fig-OntologieGanzeZahlen}):'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} *( n + 1 *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} 1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - \sum_{ \forall n \in \mathbb{N}} 1  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} 1  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - \sum_{ \forall n \in \mathbb{N}} 1  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - \omega  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z', label_text => '\\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => true),
                     ))),
@@ -833,11 +841,12 @@
                       
                   array( 'text', array( Shape => 'italic', text => array(
                       'Die Summe aller endlichen, ganzen Zahlen ist demnach der aktual unendliche Wert \\term{–ω}'."\n".
-                      'und nicht ein endlicher Wert oder gar \\term{0} (Null), wie wir im Allgemeinen eher annehmen.'."\n".
+                      'und nicht \\term{0} (Null), wie wir im Allgemeinen eher annehmen.'."\n".
                       ''))),
                       
                   array( 'text', array( text => array(
-                    'Der Mittelwert aller endlichen, ganzen Zahlen ergibt sich dann, wenn wir, wie üblich,'."\n".
+                    'Dieser Wert \\term{–ω} ist nur mit Biordinalzahlen ausdrückbar.'."\n",
+                      'Der Mittelwert aller endlichen, ganzen Zahlen ergibt sich dann, wenn wir, wie üblich,'."\n".
                     'die Summe durch die Anzahl ihrer Summanden teilen, zu:'."\n".
                     ''))),
                   array( 'equations',
@@ -1164,38 +1173,30 @@
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Wandeln wir die Gaußsche Summenformel nun so ab, dass wir uns nicht auf das größte Element der Summe beziehen,'."\n".
-                      'sondern auf die Anzahl der kleinsten Elemente, die zu summieren sind:'."\n".
+                      'Wandeln wir die Gaußsche Summenformel mit Hilfe der obigen Mengendefinitionen von Zahlen'."\n".
+                      'nun so ab, dass wir uns nicht auf das größte Element der Summe beziehen,'."\n".
+                      'sondern auf die Elemente, die zu summieren sind:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } \!\!\!\! i  =  0 + 1 + 2 + 3 + \cdots + n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } \!\!\!\! i  =  \frac{ n^{2} + n }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ ( \forall i \in \mathbb{N} )[i < n] } \!\!\!\! i  =  \frac{ *( n - 1 *)^{2} + *( n - 1 *) }{ 2 }  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ ( \forall i \in \mathbb{N} )[i < n] } \!\!\!\! i  =  \frac{ *( n^{2} - 2 \cdot n + 1 *) + *( n - 1 *) }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ ( \forall i \in \mathbb{N} )[i < n] } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *)  *[  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } \!\!\!\! i  =  0 + 1 + 2 + 3 + \cdots + n  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } \! i  =  \frac{ n^{2} + n }{ 2 }  *]  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n + 1 } \! i  =  \frac{ n^{2} + n }{ 2 }  *]  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ *( n - 1 *)^{2} + *( n - 1 *) }{ 2 }  *]  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ *( n^{2} - 2 \cdot n + 1 *) + *( n - 1 *) }{ 2 }  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ n^{2} - n }{ 2 }  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Sei nun \\term{#_{n}\M(T)}&nbsp; ein Operator, der die \\term{n} kleinsten Elemente einer Menge \\term{\M(T)}&nbsp; liefert:'."\n".
-                      '\\color{*Bearb}{(Eine Möglichkeit wäre ja auch, die oben definierte Mengendarstellung von \\term{n} zu nutzen, die ja alle Vorgänger von \\term{n} enthält.)}'."\n".
+                      'So können wir nun zur Summe aller endlichen natürlichen Zahlen übergehen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ ( \forall i \in \mathbb{N} )[i < n] } \!\!\!\! i  =  \sum_{ \forall i \in \#_{n} \mathbb{N} } \! i  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall i \in \#_{n} \mathbb{N} } \! i  =  \frac{ n^{2} - n }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in \#_{\omega} \mathbb{N} } \! i  =  \frac{ \omega^{2} - \omega }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall i \in \omega } i  =  \frac{ \omega^{2} - \omega }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  \frac{ \omega^{2} - \omega }{ 2 }  \;\;  ,  }',
+                                    latex_if_visible => '{  \Leftrightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  \frac{ \omega^{2} - \omega }{ 2 }  \;\;  ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Die Menge über die summiert wird ist jetzt, wenn wir \\term{n} zu \\term{ω} setzen, die Menge der natürlichen Zahlen \\term{\M(N)}:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall i \in \#_{\omega} \mathbb{N} } \! i  =  0 + 1 + 2 + 3 + 4 + 5 \cdots  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in \#_{\omega} \mathbb{N} } \! i  =  \sum_{ \forall i \in \mathbb{N} } i  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  \frac{ \omega^{2} - \omega }{ 2 }  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'Was wir errechnen wollten.'."\n",
+                      'die wir ja errechnen wollten.'."\n",
                         '\\\\ '."\n".
                       ''))),
                       
@@ -1203,7 +1204,7 @@
                     'Auch diese Summe lässt sich nur mit den Biordinalzahlen ausdrücken.'."\n",
                       'Und sie setzt voraus, dass \\term{ω^{2} – ω} gerade ist, also ganzzahlig durch Zwei geteilt werden kann.'."\n".
                     'Das bedeutet, dass die Zwei als Faktor in beiden Summanden stecken muss.'."\n".
-                    '\\term{ω} hat den Primfaktor Zwei.\\footnote[*Entwick]{\\color{*Entwick}{Dies ist ein erster ganz kleiner Schritt in Richtung der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}. Lässt sich auf diese Weise Schritt für Schritt mehr in diese Richtung zeigen?}}'."\n".
+                    'Folglich trägt \\term{ω} den Primfaktor \\term{2} in sich.\\footnote[*Entwick]{\\color{*Entwick}{Dies ist ein erster ganz kleiner Schritt in Richtung der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}. Lässt sich auf diese Weise Schritt für Schritt mehr in diese Richtung zeigen?}}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:XXX', text =>
                       
@@ -1221,42 +1222,16 @@
                     'von aktual unendlichen Zahlen besser zu verstehen.'."\n".
                     'Daher liegt es auf der Hand, deren Eigenschaften in Bezug auf ihre Vorgänger zu vergleichen.'."\n",
                       'Mit den Ordinalzahlen und den Biordinalzahlen befinden wir uns strukturell sozusagen am Sockel'."\n".
-                    'der Fraktalität des aktual unendlichen.'."\n".
+                    'der Fraktalität des Aktual-Unendlichen.'."\n".
                     'Dies erscheint mir ein Grund dafür, dass wir in bizarre und auch interessante, scheinbar paradoxe Situationen kommen.'."\n",
                       'Mit den Superial-Zahlen kommen wir dann quasi in die höheren Sphären der Fraktalität,'."\n".
                     'was zur Folge hat, dass uns die Dinge wieder harmonischer erscheinen.'."\n".
-                    'Denn in den Superial-Zahlen haben wir wieder so viele Vorgänger an \\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen},'."\n".
-                    'wie der Wert der bestimmten natürlichen Superial-Zahl groß ist.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:XXX', text =>
-                      
-                'XXX', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Denn in den \\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} haben wir wieder so viele Vorgänger,'."\n".
+                    'wie der Wert einer bestimmten natürlichen Superial-Zahl groß ist.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:BiOrd:XXX'),
+                      array(  jump_name => 'OM:SupNum:Home'),
                     )),
               )
           ); ?>
