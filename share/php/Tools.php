@@ -9,6 +9,7 @@
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
   //           20230407:  +:  "$To_g_Text_replace_preg_ary": Move entry "quote" from "Science.php" to here.
+  //                      >:  "$To_g_Text_replace_preg_ary", "quote": Change from "preg_replace_callback" to "latexcommand".
   //           20221223:  !:  "$To_g_Text_replace_ary":  move '-Quantenfeldtheorie-' to website file.
   //           20221104:  >:  "To_f_Paragraph", 'text': New 'Shape' 'derivation':  Added class: 'tools-class-text-derivation'.
   //           20220807:  +:  "To_f_Paragraph", "fade-in-area":  Fix mix-up in comparison to the other cases of 'hideContent' and 'showContent' in 'fade-in-area' and 'notice'.
@@ -1100,18 +1101,17 @@
   }
 
 
-  function To_f_replace_callback__preg_replace_callback__quote( $match)
+  function To_f_replace_callback__latexcommand__quote( $value, $replace_ary=null, $replace_preg_ary=null)
   {
-    $value = To_f_replace_preg_latexstyle_parameters( $match[0], "\\quote", 1, 0);
-
-    //%! if ($value[0] != null)
-    if (0 < count( $value))  // !!!: Change this to "To_f_replace_callback__latexcommand__parameterCheck" see above.
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 0))
     {
       
       return "<i>&raquo;{$value[0][0]}&laquo;</i>";
     }
     
-    else {return "Error: \\quote: Parameter amount is not 1 and 0 optional! $match[0]";}
+    else
+    
+      return "Error: \\quote: Parameter amount is not 1 and 0 optional! $match[0]";
   }
 
   
@@ -1213,10 +1213,12 @@
                                              callback_f => 'To_f_replace_callback__latexcommand__small',
                                           ),
                                     'quote' =>
-                                      array( type => 'preg_replace_callback',
-                                             search => '/\\\\quote\{[^\}]+\}/',
-                                             callback_f => 'To_f_replace_callback__preg_replace_callback__quote',
-                                           ),
+                                      array( type => 'latexcommand',
+                                             search => '\\quote',
+                                             param_dim => 1,
+                                             param_optional_max => 0,
+                                             callback_f => 'To_f_replace_callback__latexcommand__quote',
+                                          ),
                                   );
 
 
