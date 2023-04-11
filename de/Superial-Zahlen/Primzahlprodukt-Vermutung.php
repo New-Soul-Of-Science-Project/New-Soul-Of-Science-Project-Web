@@ -260,7 +260,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SupNum:XXX'),
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Folgen'),
                     )),
                 )
           ); ?>
@@ -268,13 +268,13 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • XXX  >
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Primzahlprodukt-Vermutung:XXX',
+		    	<!  • Folgen, wenn wahr  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Primzahlprodukt-Vermutung:Folgen',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SupNum:XXX', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -313,7 +313,7 @@
                       //array(  jump_name => 'OM:SupNum:XXX'),
                     )),
               )
-          ); */ ?>
+          ); ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>
