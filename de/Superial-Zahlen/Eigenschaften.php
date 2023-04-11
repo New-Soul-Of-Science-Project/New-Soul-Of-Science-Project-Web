@@ -109,7 +109,7 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'unter Berücksichtigung der unterschiedlichen Fälle.'."\n",
-                      '\\\\'."\n".
+                        '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
@@ -166,7 +166,7 @@
                     'mit meiner \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} im Einklang.'."\n",
                       '\\color{*Entwick}{(Können wir die Anzahl der rationalen Zahlen quantifizieren? Zum Beispiel über den Calkin-Wilf-Baum\\color{*Bearb}{(Verweis)}?)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm', text =>
                       
                 'Ausgangspunkt der Primzahlprodukt-Vermutung', subline =>
                   '')),
@@ -180,7 +180,7 @@
                     'als \\latexmath{ \omega }.'."\n".
                     'Schon der Turm der kleinsten Primzahl \\latexmath{ 2^\omega } ist definitiv sehr viel größer als \\latexmath{ \omega }.'."\n".
                     'Die einzelnen und kombinierten Türme aller Primzahlen \\latexmath{ p^\omega } sind also ausgeschlossen.'."\n",
-                      'Welches unendliches Primzahlprodukt noch bleibt ist, dass \\latexmath{ \omega = 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots } ist.'."\n".
+                      'Das offensichtliche, unendliche Primzahlprodukt, dass noch bleibt bedeutet, dass \\latexmath{ \omega = 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots } ist.'."\n".
                     'Aber auch dieses Produkt erscheint auf den ersten Blick viel größer als \\latexmath{ \omega } zu sein.'."\n",
                       'Es sei denn, die Anzahl der Primzahl unter den natürlichen Zahlen erfüllt weit draußen unter den sehr sehr großen Zahlen'."\n".
                     'eine bestimmte Bedingung:'."\n".

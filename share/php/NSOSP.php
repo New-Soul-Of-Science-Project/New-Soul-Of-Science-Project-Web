@@ -341,6 +341,9 @@
   $SpaLeb_g_footnote_text_RueckenBauchmuskeln   = 'Internet: \\\\ Vgl. \\cite{Schumann:DieRueckenmuskulatur:2016}.';
   $SpaLeb_g_footnote_text_Zwerchfell            = 'Internet: \\\\ Vgl. \\cite{Schumann:DasZwerchfellIstDerAtemmuskelSchlechthin:2011}.';
 
+  $SupNum_g_footnote_text_Primorial             = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Primorial:2015}.';
+  $SupNum_g_footnote_text_PrimorialWikiWerte    = 'Vgl. \\cite{wiki:Primorial:2015}, Eigenschaften, Grafik und Tabelle mit Beispielwerten.';
+
   
   const fig_file_name = 'fig_file_name';
   const fig_alt_description = 'fig_alt_description';
