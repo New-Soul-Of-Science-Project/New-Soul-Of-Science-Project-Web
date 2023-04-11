@@ -75,6 +75,7 @@
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Ableitungen-Integrale'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Eigenschaften'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Primzahlprodukt-Vermutung'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Ueberrationalitaetsvermutung'),
                     ))),
                       
                   array( 'normal',

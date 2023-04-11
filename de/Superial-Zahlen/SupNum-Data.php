@@ -156,7 +156,23 @@
         'OM:SupNum:Primzahlprodukt-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX' => array( headline_text => 'XXX',/* headline_text_short => 'XXX'*/),
-        'OM:SupNum:Primzahlprodukt-Vermutung:XXX' => array( headline_text => 'XXX',/* headline_text_short => 'XXX'*/),
+      ),
+    ),
+    'OM:SupNum:Ueberrationalitaetsvermutung' => array(
+      url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Ueberrationalitaetsvermutung.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Ueberrationalitaetsvermutung.php',
+      titel => 'Überrationalitätsvermutung - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\\name[undertitle]{OM:SupNum:Primzahlprodukt-Vermutung}. — \\name[description]{OM:SupNum:Primzahlprodukt-Vermutung}.',
+      keywords => '',
+      text_titel_h1 => 'Überrationalitätsvermutung',
+      text_titel_short => 'Überrationalitätsvermutung',
+      text_undertitel_h2 => 'Lässt sich die Wurzel aus Zwei als Bruch mit unendlich vielen endlichen Primzahlen endlicher Potenz ausdrücken?',
+      text_titel_discr_h3 => 'Wenn ja, so gilt dies vermutlich für die Koordinaten aller irrationalen algebraischen Zahlen',
+      jump_ary => array(
+        'OM:SupNum:Ueberrationalitaetsvermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX' => array( headline_text => 'XXX'/* , headline_text_short => 'XXX'*/),
+        'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung' => array( headline_text => 'Untersuchung'/* , headline_text_short => 'XXX'*/),
       ),
     ),
   );
