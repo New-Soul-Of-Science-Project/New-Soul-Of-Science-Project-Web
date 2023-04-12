@@ -876,6 +876,15 @@
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:BiOrd:Einleitung:Vortext:XXX',
                 Title => 'Möglicher Bezug zur analytischen Fortsetzung der Riemannschen Zeta-Funktion …',
                 TitleVis => 'Möglicher Bezug zur analytischen Fortsetzung der Riemannschen Zeta-Funktion:', ParagraphList => array(
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
+                      
+                '\\color{*Bearb}{Notiz}', subline =>
+                  '')),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\\color{*Bearb}{\\bold{Bezüge zur Riemannschen Zeta-Funktion} \\\\'."\n".
+                        '– Teilerfremdheit: Die Teilerfremdheit hat eine Verbindung zur Riemannschen Zeta-Funktion: Vgl. \\cite{wiki:Teilerfremdheit:2022}, Eigenschaften.}',
+                    ))),
+                      
                   array( 'text', array( text => array(
                     'Die oben erzielte Erkenntnis, dass der Mittelwert aller endlichen, ganzen Zahlen \\term{-½} und damit'."\n".
                     'ein endlicher, negativer Wert ist, erinnert stark an ein in gewisser Hinsicht erstaunliches Ergebnis'."\n".
