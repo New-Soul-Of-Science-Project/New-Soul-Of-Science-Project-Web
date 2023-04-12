@@ -757,12 +757,16 @@
                     'Die Menge aller überrationalen Brüche wäre dann \\latexmath{ \mathbb{Qr} }.'."\n".
                     'Die Vermutung bezieht sich darauf, dass solche überrationalen Brüche definierbar sind.'."\n".
                     'Zu untersuchen ist zum Beispiel, ob die Werte von Wurzeln aus rationalen Zahlen durch solche überrationalen Brüche darstellbar sind.'."\n",
-                      'Als Beispiel stellt sich die Frage, ist die Wurzel aus Zwei als überrationaler Bruch darstellbar:'."\n"))),
+                      'Als Beispiel stellt sich die Frage, ist die Wurzel aus Zwei als überrationaler Bruch darstellbar:'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sqrt{2}  ?\in  \mathbb{Qr}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \sqrt{2} \cdot s  ?\in  \mathbb{S}_{N}  }'),
                     ))),
+                  array( 'text', array( text => array(
+                    'Mehr dazu auf der Seite \\italic{\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}}.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung', text =>
                                            
                 'Primzahlenprodukt-Vermutung')),
@@ -777,7 +781,8 @@
                   array( 'text', array( text => array(
                     'Meine langjährigen Spielereien haben in mir die Vermutung geweckt, dass der unendlich große Wert des Produkts aller endlichen Primzahlen ebenfalls'."\n".
                     'die Größe von \\term{⍵} hat.'."\n".
-                    'Dies würde auf folgende Formeln hinauslaufen:'."\n"))),
+                    'Dies würde auf folgende Formeln hinauslaufen:'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \displaystyle \left( \prod_{\forall p \in \mathbb{P}}  p \right)  =  \omega_{p}  }'),
@@ -801,7 +806,8 @@
                     'Die Primfakultät, bezogen auf die Anzahl der natürlichen Zahlen, \\term{n#-n} oder auch \\term{n#/n} kann im Endlichen kein Maximum haben.'."\n".
                     'Denn immer, wenn wieder eine Primzahl auftaucht, wird es „übermächtig“ groß, und die Primzahlen hören nicht auf aufzutauchen.'."\n".
                     'Die Vermutung muss also mit der Lücke zwischen allen endlichen natürlichen Zahlen \\term{\M(N)} und \\term{⍵} zu tun haben.'."\n".
-                    'Wie man dies zumindestens mal eingrenzen oder abschätzen kann, zeige ich auf der Seite \\italic{\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}}.'."\n"))),
+                    'Wie man dies zumindestens mal eingrenzen oder abschätzen kann, zeige ich auf der Seite \\italic{\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}}.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung', text =>
                                            
                 'Genauere Differenzierung der Zahlensorten, wie rationale, algebraische, irrationale, transzendente usw.')),
@@ -825,7 +831,8 @@
                     'Das bedeutet, es lassen sich immer neue Zahlen definieren, die zwischen den bisher feinsten Zahlen liegen.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
-                    'XXX'."\n"))),
+                    'XXX'."\n".
+                    ''))),
                   /* array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
