@@ -801,7 +801,7 @@
                     'Die Primfakultät, bezogen auf die Anzahl der natürlichen Zahlen, \\term{n#-n} oder auch \\term{n#/n} kann im Endlichen kein Maximum haben.'."\n".
                     'Denn immer, wenn wieder eine Primzahl auftaucht, wird es „übermächtig“ groß, und die Primzahlen hören nicht auf aufzutauchen.'."\n".
                     'Die Vermutung muss also mit der Lücke zwischen allen endlichen natürlichen Zahlen \\term{\M(N)} und \\term{⍵} zu tun haben.'."\n".
-                    'Wie man dies zumindestens mal eingrenzen oder abschätzen kann, zeige ich im Verlauf dieser Arbeit.'."\n"))),
+                    'Wie man dies zumindestens mal eingrenzen oder abschätzen kann, zeige ich auf der Seite \\italic{\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}}.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung', text =>
                                            
                 'Genauere Differenzierung der Zahlensorten, wie rationale, algebraische, irrationale, transzendente usw.')),
