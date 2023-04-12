@@ -752,15 +752,15 @@
                     'die durch überrationale Brüche dargestellt werden.\\footnote[*Entwick]{\\color{*Entwick}{Sind überrationale Brüche algebraische Zahlen, deren imaginärer Anteil gleich Null ist?}}'."\n".
                     'Und dies, ohne dass sich die Existenz der natürlichen Superial-Zahlen und der superialen Primzahlen verändern würde.'."\n".
                     'Es wird die Existenz der \\italic{überrationalen Superial-Zahlen} auf Basis von \\term{s} vermutet.'."\n".
-                    'Ein überrationaler Bruch soll ein Bruch sein, der sowohl im Nenner als auch im Zähler eine Zahl aus unendlich vielen verschiedenen Primfaktoren endlicher Potenz enthält.'."\n".
-                    'Ein Produkt eines überrationalen Bruchs \\term{u} mit \\term{s} ergibt dann die unendliche, natürliche Superial-Zahl \\term{u⋅s}.'."\n".
-                    'Die Menge aller überrationalen Brüche wäre dann \\term{\M(U)}.'."\n".
+                    'Ein überrationaler Bruch soll ein Bruch sein, der sowohl im Nenner als auch im Zähler eine Zahl aus unendlich vielen verschiedenen endlichen Primfaktoren endlicher Potenz enthält.'."\n".
+                    'Ein Produkt eines überrationalen Bruchs \\latexmath{ q_r } mit \\latexmath{ s } ergibt dann die unendliche, natürliche Superial-Zahl \\latexmath{  q_r \cdot s}.'."\n".
+                    'Die Menge aller überrationalen Brüche wäre dann \\latexmath{ \mathbb{Qr} }.'."\n".
                     'Die Vermutung bezieht sich darauf, dass solche überrationalen Brüche definierbar sind.'."\n".
                     'Zu untersuchen ist zum Beispiel, ob die Werte von Wurzeln aus rationalen Zahlen durch solche überrationalen Brüche darstellbar sind.'."\n",
                       'Als Beispiel stellt sich die Frage, ist die Wurzel aus Zwei als überrationaler Bruch darstellbar:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \exists  \,\,  \sqrt{2}  ?\in  \mathbb{U}  }'),
+                      array( display => 'on',  latex => '{  \sqrt{2}  ?\in  \mathbb{Qr}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \sqrt{2} \cdot s  ?\in  \mathbb{S}_{N}  }'),
                     ))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung', text =>
