@@ -44,7 +44,7 @@
                       'Und nicht zuletzt können wir im Zusammenhang mit geometrischen Überlegungen etwas über die ontologische Struktur des Zählens lernen,'."\n".
                     'deren Erweiterung auf das Negative eine grundlegende Asymmetrie in den ganzen Zahlen erkennen lässt.'."\n".
                     'Meine Intuition sagt mir, dass diese Asymmetrie gemeinsam mit der Primzahlprodukt-Vermutung in der Lage sein könnte'."\n".
-                    'entscheidendes zur Klärung der Riemannschen Vermutung\\color{*Bearb}{(Verweis)} beizutragen.'."\n".
+                    'entscheidendes zur Klärung der Riemannschen Vermutung\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:RiemannscheVermutung:2023}.} beizutragen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
                       
@@ -342,17 +342,17 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Um wohldefiniert mit Biordinalzahlen mit der uns bekannten Mengenlehre arbeiten zu können'."\n".
+                    'Um wohldefiniert mit Biordinalzahlen mit der uns bekannten Mengenlehre\\color{*Bearb}{(Verweis)} arbeiten zu können'."\n".
                     'bedarf es einer Definition, mit was für Objekten wir es hier zu tun haben und einer'."\n".
                     'Erweiterung der Mengenlehre auf all diese Objekte.'."\n",
-                      'Wenn wir negative Zahlen, wie oben, durch das Fehlen von Mengen an der Klasse des Mengenuniversums \\latexmath{ \mathbb{U} }'."\n".
+                      'Wenn wir negative Zahlen, wie oben, durch das Fehlen von Mengen an der Klasse\\color{*Bearb}{(Verweis)} des Mengenuniversums \\latexmath{ \mathbb{U} }'."\n".
                     'definieren, dann bedeutet dies, dass wir das Universum der „normalen“ Mengen verlassen.'."\n".
                     'Denn die Klasse des Mengenuniversums, an der unterschiedliche Kombinationen an Mengen fehlen,'."\n".
-                    'sind selber keine Mengen, sondern auch Klassen.'."\n",
+                    'sind selber auch keine Mengen, sondern ebenfalls Klassen.'."\n",
                       'Wir können allerdings sagen, dass es sich hierbei um eine besondere Klasse von Klassen handelt:'."\n".
-                    'Wir nennen nun eine Klasse, bei der am Mengenuniversum die Mengen der nicht leeren Menge \\term{a} fehlen, eine \\italic{Antimenge} \\term{a^{&thinsp;–}}.'."\n".
-                    'Ebenso nennen wir die Klasse, die alle Antimengen enthält, das \\italic{Antimengenuniversum} \\term{\M(U)^{&thinsp;–}}.'."\n".
-                    'Zuletzt nennen wir die Klasse, die alle Mengen sowie alle Antimengen enthält das integrierte Mengenuniversum \\term{\M(U)^{ i}}.'."\n".
+                    'Wir nennen nun eine Klasse, bei der am Mengenuniversum alle Mengen in einer nicht leeren Menge \\latexmath{ a } fehlen, ihre \\italic{Antimenge} \\latexmath{ a^– }.'."\n".
+                    'Ebenso nennen wir die Klasse, die alle Antimengen enthält, das \\italic{Antimengenuniversum} \\latexmath{ \mathbb{U}^- }.'."\n".
+                    'Zuletzt nennen wir die Klasse, die alle Mengen sowie alle Antimengen enthält das integrierte Mengenuniversum \\latexmath{ \mathbb{U}^i }.'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -365,7 +365,7 @@
                                          label_name => 'OM:BiOrd:Einleitung:IntegrierteMengenlehre:Equ-Antimenge', label_text => '\\name{OM:BiOrd:Einleitung:IntegrierteMengenlehre:Equ-Antimenge}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'die Definition der Antimenge zu jeder Menge \\latexmath{ a }, die nicht die leere Menge ist.'."\n".
+                      'die Definition der Antimenge zu jeder Menge \\latexmath{ a }, die nicht leer ist.'."\n".
                       'Es existiert dabei keine Definition der Antimenge zur leeren Menge:'."\n".
                       ''))),
                   array( 'equations',
@@ -373,7 +373,7 @@
                       array( display => 'on', latex => '{  *( a = \varnothing *) *[  \nexists a^{-}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die leere Menge ist hier ausgeschlossen, weil ihre Antimenge das Mengenuniversum \\term{\M(U)} selber wäre,'."\n".
+                    'Die leere Menge ist hier ausgeschlossen, weil ihre Antimenge das Mengenuniversum \\latexmath{ \mathbb{U} } selber wäre,'."\n".
                     'was zu einem Widerspruch führen würde, den wir gleich noch herausarbeiten.'."\n".
                     'Für die leere Menge ist also keine Antimenge definiert.'."\n".
                     ''))),
