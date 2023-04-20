@@ -77,18 +77,7 @@
                     'Aktual unendliche Biordinalzahlen haben bizarrer Weise \\jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{mehr Vorgänger als ihr Wert} groß ist.'."\n".
                     'In mancherlei anderen Punkten können wir erkennen, dass sie die noch nicht so perfekten Vorläufer der Superial-Zahlen sind.'."\n".
                     'Mathematisch gesehen sind die Biordinalzahlen eine Erweiterung der Ordinalzahlen\\footnote{\\const{NSOSP_g_footnote_text_Ordinalzahl}} zu einem algebraischen Ring\\footnote{\\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n",
-                      'Demnach hat \\term{s} also so viele Vorgänger, wie das Primzahl-Flächenprodukt groß ist.'."\n",
-                    ''))),
-                      
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:BiOrd:Einleitung:Vortext:XXX',
-                Title => 'Fragen die offen sind …',
-                TitleVis => 'Fragen die offen sind:', ParagraphList => array(
-                  array( 'bulletlist', array( bullet_ary => array(
-                        'Gehören die denkbaren \\jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}{überrationalen Zahlen}, als vermutlich algebraische Zahlen, wie \\latexmath{ \sqrt{ 2 } }, auch zu den möglichen Koeffizienten der Definition der (natürlichen) Superial-Zahlen?',
-                    ))),
-                    ))),
-                      
-                  array( 'text', array( text => array(
+                      'Demnach hat \\term{s} also so viele Vorgänger, wie das Primzahl-Flächenprodukt groß ist.'."\n".
                     'Die Anzahl der Vorgänger von \\latexmath{ s }, als das vollständige Primzahl-Flächenprodukt, wären dann:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
@@ -184,8 +173,8 @@
                     'Aber auch dieses Produkt erscheint auf den ersten Blick viel größer als \\latexmath{ \omega } zu sein.'."\n",
                       'Es sei denn, die Anzahl der Primzahl unter den natürlichen Zahlen erfüllt weit draußen unter den sehr sehr großen Zahlen'."\n".
                     'eine bestimmte Bedingung:'."\n".
-                    'Es gibt unter den sehr sehr großen natürlichen Zahlen im Grunde nur noch Primzahlzwillinge?'."\n",
-                      'Ob diese Bedingung hinreicht, beleuchten wir in der Primzahlprodukt-Vermutung.'."\n".
+                    'Es gibt unter den wirklich extrem großen natürlichen Zahlen im Grunde nur noch Primzahlzwillinge?'."\n",
+                      'Ob diese Bedingung hinreicht, beleuchten wir in der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}.'."\n".
                     'Auch sollten wir Überlegungen zur Primzahlzwillingsvermutung\\color{*Bearb}{(Verweis)} anstellen und bekommen hiermit schon einen Hinweis,'."\n".
                     'dass sie stimmen sollte.'."\n".
                     ''))),

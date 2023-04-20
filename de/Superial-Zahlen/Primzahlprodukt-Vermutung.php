@@ -44,32 +44,38 @@
                     ))),
                   array( 'text', array( text => array(
                     'Die Ganzzahligkeit bedingt, dass alle Primfaktoren von \\latexmath{ 2 \cdot \omega } auch in \\latexmath{ s } vorkommen müssen.'."\n",
-                      'Und wir wissen auch, dass \\latexmath{ s } unendlich viel größer als \\latexmath{ ω } ist,'."\n".
+                    ''))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX',
+                Title => 'Fragen die offen sind …',
+                TitleVis => 'Fragen die offen sind:', ParagraphList => array(
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Gehören die denkbaren \\jump{OM:SupNum:Ueberrationalitaetsvermutung}{überrationalen Zahlen} (auch in der \\jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}{Einleitung})'."\n".
+                          '– vermutlich die Koordinaten von algebraischen Zahlen\\footnote{\\const{SupNum_g_footnote_text_AlgebraischeZahl}}, wie \\latexmath{ \sqrt{ 2 } } –'."\n".
+                          'auch zu den möglichen Koeffizienten der Definition der (natürlichen) Superial-Zahlen? \\\\'."\n".
+                          'Falls dem so sein sollte, dann steht \\latexmath{ \frac{ s }{ 2 \cdot \omega } } nicht alleine für die rationalen Zahlen \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} },'."\n".
+                          'sondern für die überrationalen Zahlen \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Qr} }. \\\\'."\n".
+                          'Dies würde allerdings nichts an der Primzahlprodukt-Vermutung ändern',
+                    ))),
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Und wir wissen auch, dass \\latexmath{ s } unendlich viel größer als \\latexmath{ ω } ist,'."\n".
                     'denn nach unseren Erkenntnissen aus dem Kapitel \\italic{\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}} steht'."\n".
                     '\\latexmath{ s } für die Anzahl der rationalen Zahlen und \\latexmath{ ω } für die Anzahl der natürlichen Zahlen.'."\n".
                     'Ich vergleiche hier aber nicht die Mächtigkeit\\color{*Bearb}{(Verweis)} der Menge der rationalen Zahlen und die Mächtigkeit der natürlichen Zahlen,'."\n".
                     'wobei es darum geht, ob sich zwei Mengen bidirektional aufeinander abbilden lassen.'."\n".
                     'Sondern ich meine die kombinatorische Erzeugung von Elementen einer unendlich großen Menge'."\n".
                     'im Verhältnis zur vollständigen Induktion bei der Erzeugung der Menge der natürlichen Zahlen.'."\n",
-                      'Die unendlich viel größere Kombinatorik drücken wir mit dem Symbol \\latexmath{ \overset{\infty}{\ggg} } aus:'."\n".
+                      'Die unendlich viel größere Erzeugungskombinatorik drücken wir mit dem Symbol \\latexmath{ \overset{\infty}{\ggg} } aus:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  s  \;\;\;\overset{\infty}{\ggg}\;\;\;  \omega  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'Dann ist \\latexmath{ s } in Formel \\jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}'."\n".
+                    'Im Folgenden können wir dies klar erkennen.'."\n",
+                      'Denn \\latexmath{ s } ist in Formel \\jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}'."\n".
                     'durch folgendes Primzahl-Flächenprodukt definiert:'."\n".
                     ''))),
                   array( 'equations',
@@ -81,26 +87,30 @@
                     'Da, wie oben geschildert, alle Primfaktoren von \\latexmath{ 2 \cdot \omega } auch in \\latexmath{ s } vorkommen müssen,'."\n".
                     'muss \\latexmath{ 2 \cdot \omega }, und somit auch \\latexmath{ \omega }, ein Teil des Primzahl-Flächenprodukts sein,'."\n".
                     'der einen unendlich großen Wert hat.'."\n",
-                      'Die unendlich große Primzahl-Potenz mit der kleinsten Basis ist \\term{2^{ω}} ungleich und sogar sehr viel größer als \\term{ω}:'."\n".
+                      'Die unendlich große Primzahl-Potenz mit der kleinsten Basis ist \\latexmath{ 2^ω }.'."\n".
+                    'Wenn wir berücksichtigen, dass ja durch \\latexmath{ 2 \cdot \omega } geteilt werden soll und den Faktor \\latexmath{ 2 } schon mal aus'."\n".
+                    'der Potenz entfernen ergibt sie sich zu \\term{2^{ω-1}}, wobei \\term{ω-1} durch die'."\n".
+                    '\\jump{OM:BiOrd:Home}{Biordinalzahlen} definiert ist.'."\n",
+                      'Nun ist es offensichtlich, dass \\term{2^{ω-1}} ungleich und sogar sehr viel größer als \\term{ω} ist:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{ω}  \neq  \omega  }'),
-                      array( display => 'on',  latex => '{  2^{ω}  \;\;\;\ggg\;\;\;  \omega  }'),
+                      array( display => 'on',  latex => '{  2^{ω - 1}  \neq  \omega  }'),
+                      array( display => 'on',  latex => '{  2^{ω - 1}  \;\;\;\ggg\;\;\;  \omega  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *)  *[  p^{ω}  \;\;\;\ggg\;\;\;  \omega  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Somit kommt kein Potenz-Turm einer der Primzahlen \\term{p^{ω}} als unendlich großer Primfaktorenprodukt-Anteil von \\latexmath{ s },'."\n".
+                    'Somit kommt keine Potenz \\latexmath{ p^ω } einer der Primzahlen, eine Spalte, aus dem Primzahl-Flächenprodukt als unendlich großer Primfaktorenprodukt-Anteil von \\latexmath{ s },'."\n".
                     'der \\latexmath{ \omega } gleich ist, in Frage.'."\n",
-                      'Eine naheliegende Möglichkeit, die noch bleibt, ist, dass \\latexmath{ \omega } dem unendlichen Produkt aller'."\n".
-                    'endlichen Primzahlen gleich ist:'."\n".
+                      'Eine Möglichkeit, die noch bleibt, ist, dass \\latexmath{ \omega } dem unendlichen Produkt aller'."\n".
+                    'endlichen Primzahlen gleich ist, also einer Zeile des Primzahl-Flächenprodukts:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \omega  ?=  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \omega  ?=  \omega_{p}  :=  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Errechnen wir das Produkt aller endlichen Primzahlen von den kleinsten Primfaktoren her mit der Primfakultät\\footnote{\\const{SupNum_g_footnote_text_Primorial}} \\term{p#}, dann wird es sehr schnell'."\n".
+                    'Errechnen wir das Produkt aller endlichen Primzahlen von den kleinsten Primfaktoren her mit der Primfakultät\\footnote{\\const{SupNum_g_footnote_text_Primorial}} \\latexmath{ p\# }, dann wird es sehr schnell'."\n".
                     'viel größer, als die größte in ihm vorkommende Primzahl:\\footnote{\\const{SupNum_g_footnote_text_PrimorialWikiWerte}}'."\n".
                     ''))),
                   array( 'equations',
@@ -117,26 +127,142 @@
                     ))),
                   array( 'text', array( text => array(
                     'So wäre es ein sehr großes Rätsel, wie dieses Produkt irgendwann nicht weiter wächst, so, dass'."\n".
-                    'die natürlichen Zahlen es wieder einhohlen und letztendlich gleich groß sein können.'."\n",
-                      'Ich würde aus meiner heutigen Sicht sagen, dass dies ein oder sogar das wesentliche Geheimnis der'."\n".
-                    'Primzahlen ist.'."\n".
-                    'Unter welcher Bedingung könnte denn dies überhaupt der Fall sein?'."\n",
+                    'die natürlichen Zahlen es wieder einhohlen und letztendlich gleich groß sein können.'."\n".
+                    'Ich würde aus meiner heutigen Sicht sagen, dass dies ein oder sogar das wesentliche Geheimnis der'."\n".
+                    'Primzahlen ist.'."\n",
+                      'Unter welcher Bedingung könnte denn dies überhaupt der Fall sein?'."\n",
                       'Aus meiner Sicht könnte dies nur dann der Fall sein, wenn die Anzahl der Primzahlen'."\n".
-                    'unter den extrem großen natürlichen Zahl minimal wird.'."\n".
-                    'Und mit Hilfe des Beweises, dass es unendlich viele Primzahlen gibt, können wir erkennen, was das bedeuten sollte.'."\n".
-                    'Eine Minimierung des Anteils an Primzahlen heißt, dass es unter den sehr sehr extrem großen natürlichen Zahlen'."\n".
-                    'im wesentlichen nur noch Primzahlzwillinge gibt.'."\n".
+                    'unter den extrem großen natürlichen Zahlen minimal wird. \\color{*Bearb}{(Ist ›minimal‹ die korrekte Formulierung? Und ist diese Annahme notwendig?)}'."\n".
+                    'Und mit Hilfe des \\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid}{Satz des Euklid},'."\n".
+                    'eines Beweises, dass es unendlich viele Primzahlen gibt, können wir erkennen, was das bedeuten sollte.'."\n".
+                    'Eine Minimierung des Anteils an Primzahlen heißt, dass es unter den ganz extrem großen natürlichen Zahlen im wesentlichen nur noch Primzahlzwillinge gibt.'."\n".
                     'Die Lücken zwischen den Primzahlen würden im Schnitt maximal werden.'."\n".
                     'Diese Aussage ist also eng mit der Primzahlzwillingsvermutung\\color{*Bearb}{(Verweis)} gekoppelt.'."\n",
                       'Wir können plausibel machen, wie wir noch zeigen, dass unter der Annahme, es gäbe im extrem Großen im wesentlichen nur noch Primzahlzwillinge,'."\n".
                     'und, dass dann ein solches Primzahlzwillingspaar die nächsten Primzahlen erzeugt, ohne, dass dazwischen noch welche wären,'."\n".
                     'eine so große Lücke zwischen den Primzahlzwillingen und den nächsten Primzahlzwillingen entsteht, dass das Zählen der natürlichen'."\n".
                     'Zahlen aufholen kann.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid', text =>
+                      
+                'Satz des Euklid', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Der Satz des Euklid\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:SatzDesEuklid:2023}.}'."\n".
+                    'beweist, dass die Primzahlen endlicher größe nicht enden.'."\n",
+                      'Ich gebe diesen Beweis nachfolgend in Kurzform wieder.'."\n".
+                    'Dabei werde ich ihn etwas modifizieren, damit er zu den von uns gesuchten Eigenschaften am besten passt und'."\n".
+                    'wir ihn gut weiterverwenden können:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Beweis, dass es unendlich viele Primzahlen im Endlichen gibt} \\\\'."\n".
+                    'Definition der Primzahlen im Endlichen:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Primzahl:2021}.}'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Die Primzahlen sind innerhalb der Menge \\latexmath{ \mathbb{N} } der natürlichen Zahlen dadurch charakterisiert, dass jede von ihnen genau zwei natürliche Zahlen als Teiler hat.'."\n"),
+                        addtext => '\\footnote{Internet: \\\\ \\cite{wiki:Primzahl:2021}, Eigenschaften von Primzahlen.}')),
+                      
+                  array( 'text', array( text => array(
+                    'Nach dieser Definition ist die Eins keine Primzahl.'."\n",
+                      'Dass es unendlich viele Primzahlen im Endlichen gibt, können wir durch die Schlussfolgerungskette des folgenden Beweises erkennen:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Primzahl:2021}, Größte bekannte Primzahl.}'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Bilde die Primfakultät\\footnote{\\const{SupNum_g_footnote_text_Primorial}} einer bekannten Primzahl, das Produkt aller Primzahlen kleiner und einschließlich dieser Primzahl: \\latexmath{ p\# }',
+                        'Addiere Eins dazu oder ziehe Eins ab: \\latexmath{ p\# \pm 1 }',
+                        '\\latexmath{ p\# \pm 1} ist nicht durch eine der Primzahlen in \\latexmath{ p\# } ganzzahlig teilbar.',
+                        '\\latexmath{ p\# \pm 1} kann daher entweder nur selber eine Primzahl sein, die dann größer als \latexmath{ p } ist, oder ihr Primzahlprodukt enthält ausschließlich Primzahlen – mindestens zwei Stück – die nicht in \latexmath{ p\# } enthalten sind und damit größer als \latexmath{ p } sein müssen. ',
+                        'Alle Primzahlen, durch die \\latexmath{ p\# \pm 1} teilbar ist, sind damit größer als \\latexmath{ p }.',
+                        'Es gibt also immer eine Primzahl, die größer ist als jede gegebene Primzahl \\latexmath{ p }, womit die Menge der endlichen Primzahlen nicht endet.',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Es gibt in den endlichen natürlichen Zahlen demnach bewiesenermaßen unendlich viele Primzahlen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Besondere Rolle der Primfakultät} \\\\'."\n".
+                    'Die Primfakultät spielt im Satz des Euklid die zentrale Rolle.'."\n",
+                      'Zum einen sammelt sie alle Primzahlen bis einschließlich \\latexmath{ p } lückenlos in ihrem Produkt \\latexmath{ p\# } auf.'."\n".
+                    'Zum anderen erlaubt sie über ihre doppelte Variation um plus-minus Einen \\latexmath{ p\# \pm 1 } Aussagen über weitere Primzahlen,'."\n".
+                    'die noch nicht in ihrem Produkt enthalten sind und fungiert so quasi auch als Konstrukteur:'."\n",
+                      'Entweder sind \\latexmath{ p\# - 1 } und/oder \\latexmath{ p\# + 1 } selber schon größere Primzahlen'."\n".
+                    'oder es gibt zwischen \\latexmath{ p } und \\latexmath{ p\# - 1 } – also in \\latexmath{ \rbrack p, p\# - 1 \lbrack_\mathbb{N} } –'."\n".
+                    'mindestens zwei oder vier oder gar mehr weitere Primzahlen,'."\n".
+                    'die in der Primfaktorenzerlegung von \\latexmath{ p\# - 1 } und/oder \\latexmath{ p\# + 1 } stecken.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                      
+                'Szenario, in dem als nächst größere und übernächst größere Primzahlen nur die Primzahlzwillingspaar-Variationen existieren', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Ein besonderes Szenario, das wir recht gut analysieren können, ist, wenn'."\n".
+                    '\\latexmath{ p\# - 1 } und \\latexmath{ p\# + 1 } beide die nächsten Primzahlen nach \\latexmath{ p } sind und'."\n".
+                    'auch nach ihnen wiederum \\latexmath{ (p\# + 1)\# - 1 } und \\latexmath{ (p\# + 1)\# + 1 } wieder die nächsten'."\n".
+                    'Primzahlen sind.'."\n".
+                    'Es gibt also zwischen ihnen allen keine Primzahlen mehr,'."\n".
+                    'sondern Primzahlen sind nur noch die Primzahlzwillingspaar-Variationen:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Aus der letzen uns bekannten extrem großen Primzahl \\latexmath{ p_i } ergeben sich die beiden nächsten Primzahlen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i}\# \pm 1  \in  \mathbb{P}  }'),
+                      array( display => 'on',  latex => '{  p_{i + 1}  =  p_{i}\# - 1  }'),
+                      array( display => 'on',  latex => '{  p_{i + 2}  =  p_{i}\# + 1  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Dann gibt es also zwischen unserer letzen extrem großen Primzahl \\latexmath{ p_i }'."\n".
+                      'und den beiden nächsten keine Primzahl mehr:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists n \in \; ] p_{i}, p_{i + 1} [_\mathbb{N} *)  *[  n  \in  \mathbb{P}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \nexists n \in \; ] p_{i}, p_{i}\# - 1 [_\mathbb{N} *)  *[  n  \in  \mathbb{P}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Dann ist die nächste Primfakultät \\term{p_{i+1}#} mit zwei neuen Varianten:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i + 1}\# \pm 1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{i}\# \cdot p_{i + 1} \pm 1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{i}\# \cdot *( p_{i}\# - 1 *) \pm 1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( p_{i}\# *)^{2} - p_{i}\# *) \pm 1  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Nun müssen wir untersuchen, ob der Sprung groß genug ist, damit das Zählen die Primfakultät einholen kann.'."\n".
+                      'Das können wir mit dem Verhältnis zum Zählen herausfinden:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ *( p_{i}\# *)^{2} - p_{i}\# }{ n }  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  p_{i + 1}\# \pm 1  \in  \mathbb{P}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  (p_{i}\# - 1)\# \pm 1  \in  \mathbb{P}  }'),
+                      array( display => 'on',  latex => '{  ( ( p\# - 1 ) \cdot ( p\# + 1 ) )\# \pm 1  \in  \mathbb{P}  }'),
+                      array( display => 'on',  latex => '{  ( ( p\# - 1 ) \cdot ( p\# + 1 ) )\# \pm 1  \in  \mathbb{P}  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \; ] p\# + 1, ( ( p\# - 1 ) \cdot ( p\# + 1 ) )\# - 1 [_\mathbb{N} *)  *[  n  \notin  \mathbb{P}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -149,11 +275,7 @@
                 'XXX Freie Gedanken', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'Die Argumentation könnte grob und sicher noch streitbarer Weise so laufen:'."\n".
+                    'Die Argumentation könnte grob und sicher noch streitbarer Weise so laufen:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Jede zweite natürliche Zahl ist durch die Primzahl Zwei teilbar, daher sollte die Anzahl der natürlichen Zahlen \\term{ω} ebenso durch Zwei teilbar sein.',
@@ -278,8 +400,10 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '\\bold{XXX}',
-                    '• XXX',
+                    '\\bold{Parität}',
+                    '• Nicht nur gleiche Mächtigkeit von geraden und ungeraden Zahlen, sondern hier sogar gleiche kombinatorische Anzahl von geraden und ungeraden Zahlen.\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:ParitaetMathematik:2021}.}',
+                    '\\bold{Logisches}',
+                    '• \\latexmath{ \omega } ist dann durch jede endliche Primzahl und durch deren Produkte mit jeweiliger Potenz von Eins ganzzahlig teilbar.',
                     ))),
                       
                   array( 'text', array( text => array(

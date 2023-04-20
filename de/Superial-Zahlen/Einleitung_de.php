@@ -22,7 +22,7 @@
                     '• Das heißt, dass die Ordinalzahlen kein Ring sind, weil es nicht zu jedem Element ein additives Inverses gibt. Und kein Körper, weil es kein multiplikatives Inverses gibt.',
                     '• Die Biordinalzahlen wären dann aber ein Ring, aber immer noch kein Körper.',
                     '• Die Superial-Zahlen sind, weil mit rationalen Koeffizienten gebildet, ein Körper. Denn es gibt beide inverse Elemente.',
-                    '• Sollte sich herausstellen, dass die Wurzeln natürlicher Zahlen mit hyperrationalen Zahlen (meine Benennung) dargestellt werden können, dann wären Superial-Zahlen mit hyperrationalen Koeffizienten ein algebraischer Körper!?',
+                    '• Sollte sich herausstellen, dass die Wurzeln natürlicher Zahlen mit hyperrationalen Zahlen (meine Benennung) dargestellt werden können, dann wären Superial-Zahlen mit überrationalen Koeffizienten ein algebraischer Körper!?',
                     '– Als hyperrationale Zahlen bezeichne ich Brüche, die im Zähler und Nenner unendlich große Primzahlprodukte haben können. Und, wenn vollständig teilerfremd und damit nicht zu kürzen, Dezimalzahlen ergeben, die nicht periodisch sind, wie vielleicht \\term{√2}. Die Exponenten der Primzahlen in Nenner und Zähler sollten endlich sein, denke ich. Möglicherweise sogar immer Eins?',
                     '\\bold{Aktuelle Forschung}',
                     '• Der Fields-Medaillenträger 2018, Peter Scholze, bringt neue Zusammenhänge zwischen der Arithmetik und der Geometrie ins Spiel.',
@@ -388,7 +388,7 @@
                   array( 'text', array( text => array(
                   '\\condb{Ein besonderes Zahlenwertsystem und seine Kurznotation} \\\\'."\n".
                     'Das ist sehr bemerkenswert und ermöglicht ein neues und besonderes Zahlenwertsystem auf Basis der superialen Basis \\latexmath{ s }:'."\n",
-                      'Jede Ziffer dieses Zahlenwertsystems auf Basis \\latexmath{ s } kann eine Zahl sein; in jedem Fall eine rationale, möglicherweise auch eine algebraische (siehe \\jumpname{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}).'."\n".
+                      'Jede Ziffer dieses Zahlenwertsystems auf Basis \\latexmath{ s } kann eine Zahl sein; in jedem Fall eine rationale, möglicherweise auch eine überrationale (siehe \\jumpname{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}).'."\n".
                     'Sehr fraglich ist für mich, ob es sinnvollerweise wirklich auch jede reelle Zahl sein kann,'."\n".
                     'denn ich vermute, dass transzendente Zahlen, wie die Eulersche Zahl \\latexmath{ e } oder die Kreiszahl \\latexmath{ π },'."\n".
                     'als Koeffizienten in jedem Fall aus dem sinnvollen Rahmen fallen.'."\n",
@@ -491,7 +491,8 @@
                       
                   array( 'text', array( text => array(
                     'Nach dieser Definition ist die Eins keine Primzahl.'."\n",
-                      'Dass es unendlich viele Primzahlen im Endlichen gibt, können wir durch die Schlussfolgerungskette des folgenden Beweises erkennen:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Primzahl:2021}, Größte bekannte Primzahl.}'."\n"))),
+                      'Dass es unendlich viele Primzahlen im Endlichen gibt, können wir durch die Schlussfolgerungskette des folgenden Beweises erkennen:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Primzahl:2021}, Größte bekannte Primzahl.}'."\n".
+                    ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Bilde die Primfakultät\\footnote{\\const{SupNum_g_footnote_text_Primorial}} einer Primzahl, das Produkt aller Primzahlen kleiner und einschließlich dieser Primzahl: \\term{p#}',
                         'Addiere Eins dazu oder ziehe Eins ab: \\term{p# ± 1}',
@@ -501,7 +502,8 @@
                         'Es gibt also immer eine Primzahl, die größer ist als jede gegebene Primzahl \\term{p}, womit die Menge der endlichen Primzahlen nicht endet.',
                     ))),
                   array( 'text', array( text => array(
-                    'Es gibt im Endlichen demnach bewiesenermaßen unendlich viele Primzahlen.'."\n"))),
+                    'Es gibt im Endlichen demnach bewiesenermaßen unendlich viele Primzahlen.'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                   '\\condb{Mit Primzahlen ins Unendliche} \\\\'."\n".
                     'Der vorstehend geführte Beweis zeigt, dass die Primfakultät eine besondere Rolle im Zusammenhang mit Primzahlen und dem Unendlichen spielt.'."\n",
