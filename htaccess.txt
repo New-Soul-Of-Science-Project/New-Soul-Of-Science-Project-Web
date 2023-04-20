@@ -1,12 +1,13 @@
 RewriteEngine On
 
 # Redirects all "nsosp.org" to "www.nsosp.org"
-RewriteCond %{HTTP_HOST} !^www\.nsosp\.org$ [NC]
-RewriteRule ^(.*)$ http://www.nsosp.org/$1 [L,R=301]
+#RewriteCond %{HTTP_HOST} !^www\.nsosp\.org$ [NC]
+#RewriteRule ^(.*)$ https://www.nsosp.org/$1 [L,R=301]
 
 # Redirects all "www.nsosp.org" to "nsosp.org"
-#RewriteCond %{HTTP_HOST} ^www\.nsosp\.org$ [NC]
-#RewriteRule ^(.*)$ http://nsosp.org/$1 [L,R=301]
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.nsosp\.org$ [NC]
+RewriteRule ^(.*)$ https://nsosp.org/$1 [L,R=301]
 
 RedirectPermanent /index.html /de/New-Soul-Of-Science-Project/index.php
 
