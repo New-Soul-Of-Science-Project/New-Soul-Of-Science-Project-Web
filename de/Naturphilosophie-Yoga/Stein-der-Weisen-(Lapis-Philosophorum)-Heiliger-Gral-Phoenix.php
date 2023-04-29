@@ -540,7 +540,21 @@
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
+                    '\\bold{Christentum und ältere Glauben}',
+                    '\\condb{Ostern und die Göttin Ostara, Eostrae oder Eastre}',
+                    '• In der katholischen Enzyklopädie von 1967 wird anerkannt, dass der Name Ostern (\\jump[https://de.wikipedia.org/wiki/Ostara]{}{Ostara}) von dem angelsächsischen Namen „Eastre“ der germanischen Frühlingsgötting „Eostrae“ herrührt und auf den Kirchenhistoriker Bede (\\jump[https://de.wikipedia.org/wiki/Beda_Venerabilis]{}{Beda Venerabilis}) verwiesen: Siehe Video \\jump[https://www.youtube.com/watch?v=s6tTWO2Vh60]{}{167. Ostern - Wahre Bedeutung - Jesus vs. Horus - Augenöffner}, Sek. 0:04:08.',
+                    '• In diesem Video wird auch darauf hingewiesen, dass Eostrae der Sage nach im Frühling aus einem Ei entschlüpft (Sek. 0:02:26).',
+                    '• Das Osterfest ist im Christentum der Wiederauferstehung Christi, mit Blick auf seine Himmelfahrt, gewidmet. Dies erinnert markant an den ›Phönix aus der Asche‹, was meines Erachtens nach kein Zufall ist. Denn sowohl der Weg und das Leben Jesu, genau wie auch das Leben Horus, sind für mich dem Care, dem Sich-Kümmern und dem (Selbst-)Mitgefühl, und damit der Persönlichkeitsentwicklung, der Klugheitserlangung und in diesem Sinne der Erleuchtung geweiht.',
+                    '• Der Weg Christus, des Gesalbten, entspricht damit dem \\jump{OM:NPYo:Stein-der-Weisen:Stein-der-Weisen}{›Stein der Weisen‹}, dem grünen Kristall, dem unverrückbaren Berg als unverrückbare Ordnung, nach der unser aller Leben funktioniert. Es ist das grüne Herz-Chakra.',
+                    '• Die Suche nach dem \\jump{OM:NPYo:Stein-der-Weisen:Heiliger-Gral}{›Heiligen Gral‹} würde ich in diesem Sinne als die Suche nach der verloren gegangenen Ordnung sehen, die bei der Kreuzigung Christi in Form seines Blutes in den Kelch geflossen ist.',
+                    '– Der Kelch symbolisiert unter anderem das verlorene weibliche, in Form des (Selbst-)Mitgefühls und der fürsorgenden und schützenden Handlung, das verteufelt und in der Erde verscharrt – also als Dämon beerdigt – wurde; die weibliche Schlange des Hermesstabs, der nun als Asklepios-Stab, mit nur einer Schlange, weiter existiert.',
+                    '\\condb{Jesu}',
+                    '• Interessanterweise ist die Geburt Jesu, genau wie die von Mithras und anders als die von Eastre, zu Weihnachten (Wintersonnenwende), im tiefsten Dunkel des Winters, und nicht im Frühling, wie seine Wiederauferstehung.',
+                    '\\bold{Mithras-Kult}',
+                    '• Die Geburt Mithras ist, wie die von Jesus, zu Weihnachten (Wintersonnenwende). Er wird von Cautes und Cautopates, den Trägern von heller und dunkler Fakel, begleitet.',
+                    '\\bold{Altägyptische Mythologie}',
                     '• Den Phönix aus der Asche finden wir im \\jump{OM:NPYo:HaTha:Vortext:Fig-LebenDesHorusHermesstab}{Leben des Horus} wieder. Das Ei des Phönix ist das Ei der Metamorphose. Nach dem das Leben gelebt ist kommen wir idealer Weise im Dritten Auge an, der Sonne, die uns verbrennt und das neue Ei gebiert. So wird der Phönix wieder geboren. Der Phönix wird hier im Gott \\jump[https://de.wikipedia.org/wiki/Benu]{}{Benu} versinnbildlicht, wobei sein Feuer im Sonnenuntergang, sein feuriger Untergang als Falke, und in der Glut der Morgenröte, seiner Auferstehung als Reiher aus Aschenglut, zu finden ist.',
+                    '\\bold{Indische Mythologie}',
                     '• Der Phönix findet sich auch im \\jump[https://de.wikipedia.org/wiki/Garuda]{}{Garuda} der indischen Mythologie des Hinduismus: Garuda ist das halb mensch-, halb adlergestaltige Reittier des Vishnu, des Gottes der Erhaltung. Garuda kann damit als Symbol für den Zirkel der Wiedergeburt, der Erneuerung, verstanden werden. Dies drückt den Neheh-Aspekt des Lebens in einem Lebewesen und zwischen den Generationen aus.',
                     '\\bold{Gog und Magog}',
                     '• Der Phönix ist in der City of London auf dem Schild von Gog und Magog zu finden: \\jump[https://nuoflix.de/city-of-london--das-herz-des-drachen-2]{}{City of London - Das Herz des Drachen 2/2}, Sek. 01:00:08.',
@@ -560,7 +574,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))), */
                   array( 'text', array( text => array(
-                    'Der ›Phönix aus der Asche‹ steht für die Neuentstehung, die Wiedergeburt (Geburt), durch Vergänglichkeit, aus Zerstörung und Tod.'."\n".
+                    'Der ›Phönix aus der Asche‹ steht für die Neuentstehung, die Wiedergeburt (Geburt) und Frühling, durch Vergänglichkeit aus Zerstörung und Tod.'."\n".
                     'In milderer Form steht er für die Verwandlung, die Transformation, für die Metamorphose.'."\n",
                       'Im Laufe der Jahre sind mir nach und nach einige weitere sehr tiefe Bezüge zu unserem Leben, unserer Kultur und Mythologie, zu altem Wissen, aufgegangen,'."\n".
                     'durch von mir neu erworbenes Wissen und besonders durch meine eigenen Erlebnisse und darin entstandenen Reflexionen in meinem intensiven Leben mit Lerngeschenken zur Persönlichkeitsentwicklung.'."\n",
@@ -587,6 +601,12 @@
                       
                 'Mythologien und Rituale', subline =>
                   'Wintersonnenwende, altes Ägypten')),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    '\\bold{Altägyptische Mythologie}',
+                    '• Horus Geburtstag scheint der gleiche wie der von Mithras und Jesus zu sein, die Wintersonnenwende zu Weihnachten.',
+                    ))),
+                      
                   array( 'text', array( text => array(
                     'Mittwinter beziehungsweise die Mittwinternacht oder Wintersonnenwende, das Lichterfest, ist ein Fest, bei dem wir das Kommen'."\n".
                     'des nächsten Frühjahrs und Sommers feiern.'."\n",
