@@ -1,44 +1,54 @@
+# The New Soul Of Science Project – Website
+
 ![CC](/share/images/NSOSP/NSOSP_header_v01_9.jpg)
 
+## A New Approach to Physics, Nature Philosophy, Life, Psychosomatics, Society, and Mathematics – as Website
 
-# The New Soul Of Science Project Website
-**A New Approach To Physics, Nature Philosophy, Life, Psychosomatics, Society, And Mathematics – As Website**
+The New Soul Of Science Project Website is the most visible part of an initiative to find new foundations on several themes in science. Our goal is a new nature philosophy or philosophies and new views on mathematics that leads to:
 
-The New Soul Of Science Project Website is the most visible part of an initiative to find new foundations on several themes in science. Our goal is a new nature philosophy (philosophies) and new views on mathematics that leads to:
-
-- a new foundation of physics ([Fractal Quantum Flow Theory](#-fractal-quantum-flow-theory))
-- a new foundation of life ([Tension Game Of Life](#-tension-game-of-life))
-- the foundation of [Nature Philosophy Yoga](#-nature-philosophy-yoga-naphil-yoga)
-- actual endless extensions of mathematics ([Superial Numbers](#-superial-numbers))
+- a new foundation of our perspective on physics: [Fractal Quantum Flow Theory](#fractal-quantum-flow-theory)
+- a new foundation of our perspective on life: [Tension Game Of Life](#tension-game-of-life)
+- the foundation of [Nature Philosophy Yoga](#nature-philosophy-yoga-naphil-yoga)
+- actual endless extensions of mathematics:
+  - [Superial Numbers](#superial-numbers)
 - and more …
-  
 
-## ![The New Soul Of Science Project - Favicon](/de/New-Soul-Of-Science-Project/favicon/favicon-32.png) &nbsp;&nbsp; On The Web
+----
+
+![The New Soul Of Science Project - Favicon](/de/New-Soul-Of-Science-Project/favicon/favicon-32.png)
+
+## Page On the Web
 
 The New Soul Of Science Project: [http://www.nsosp.org](http://www.nsosp.org)
 
+----
 
-## ![Fractal Quantum Flow Theory - Favicon](/de/Quanten-Fluss-Theorie/favicon/favicon-32.png) &nbsp;&nbsp; Fractal Quantum Flow Theory
+![Fractal Quantum Flow Theory - Favicon](/de/Quanten-Fluss-Theorie/favicon/favicon-32.png)
 
-**(fraktale Quanten-Fluss-Theorie)**
+## Fractal Quantum Flow Theory
+
+### (fraktale Quanten-Fluss-Theorie)
 
 On the web: [Fractal Quantum Flow Theory](http://www.nsosp.org/FrQFT)
 
-- based on dynamic structural regulation processes (Regelprozessen) to create, stabilise, and develop all existences
-- includes a new foundation of life ([Tension Game Of Life](#-tension-game-of-life))
+- based on dynamic structural regulation processes (Regelprozessen) to create, stabilize, and develop all existences
+- includes a new foundation of life ([Tension Game Of Life](#tension-game-of-life))
   - based on a definition of consciousness in this setting
 - fulfils the unification of physics
   - including [Quantum Gravity](http://www.nsosp.org/de/Quanten-Fluss-Theorie/Quantengravitation-der-Elementarteilchen_de.php)
 
+----
 
-## ![Tension Game Of Life - Favicon](/de/Spannungsspiel-des-Lebens/favicon/favicon-32.png) &nbsp;&nbsp; Tension Game Of Life
+![Tension Game Of Life - Favicon](/de/Spannungsspiel-des-Lebens/favicon/favicon-32.png)
 
-**(Spannungsspiel des Lebens)**
+## Tension Game Of Life
+
+### (Spannungsspiel des Lebens)
 
 On the web: [Tension Game Of Life](http://www.nsosp.org/spannung)
 
 - fully based on regulation processes (Regelprozessen)
-- based on a definition of consciousness in the setting of [Fractal Quantum Flow Theory](#-fractal-quantum-flow-theory)
+- based on a definition of consciousness in the setting of [Fractal Quantum Flow Theory](#fractal-quantum-flow-theory)
 - has a top level regulation process for each individual life ([Care Process, Care-Prozess](http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Care-Prozess-Achtsamkeitsprozess-Definition-des-Lebens.php), [Mindfulness Process, Achtsamkeitsprozess](http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Care-Prozess-Achtsamkeitsprozess-Definition-des-Lebens.php))
   - clarifies the implications of psychosomatics, the inner relations between our psyche and our body
   - allows deep insights in psychological problems 
@@ -48,19 +58,25 @@ On the web: [Tension Game Of Life](http://www.nsosp.org/spannung)
   - let us see bridges between modern medicine, modern life science, and alternative medicine and alternative life science
 - let us see even regulation processes in the interactions in societies
 
+----
 
-## ![Nature Philosophy Yoga - Favicon](/de/Naturphilosophie-Yoga/favicon/favicon-32.png) &nbsp;&nbsp; Nature Philosophy Yoga (NaPhil-Yoga)
+![Nature Philosophy Yoga - Favicon](/de/Naturphilosophie-Yoga/favicon/favicon-32.png)
 
-**(Naturphilosophie-Yoga)**
+## Nature Philosophy Yoga (NaPhil-Yoga)
+
+### (Naturphilosophie-Yoga)
 
 On the web: [Nature Philosophy Yoga](http://www.NaPhil-Yoga.org)
 
-- based on the insights of the [Tension Game Of Life](#-tension-game-of-life) and the [Fractal Quantum Flow Theory](#-fractal-quantum-flow-theory)
+- based on the insights of the [Tension Game Of Life](#tension-game-of-life) and the [Fractal Quantum Flow Theory](#fractal-quantum-flow-theory)
 
+----
 
-## ![Superial Numbers - Favicon](/de/Superial-Zahlen/favicon/favicon-32.png) &nbsp;&nbsp; Superial Numbers
+![Superial Numbers - Favicon](/de/Superial-Zahlen/favicon/favicon-32.png)
 
-**(Superial-Zahlen)**
+## Superial Numbers
+
+### (Superial-Zahlen)
 
 On the web: [Superial Numbers](http://www.nsosp.org/de/Superial-Zahlen)
 
@@ -68,9 +84,10 @@ On the web: [Superial Numbers](http://www.nsosp.org/de/Superial-Zahlen)
 - defining analysis with actual endless numbers 
 - representing negative numbers by sets 
 
+----
 
 ## License
 
-© Copyright 1986–2022 of the [New Science Of Soul Project](http://www.nsosp.org) website by [Wolfgang Huß and Media Line Digital e.K.](http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten) is licensed under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0). ![CC](/share/images/Copyright/cc.7a093a7d-smal-for-GitHub.png) ![iconby](/share/images/Copyright/by.f6aa22c4-smal-for-GitHub.png) ![iconnd](/share/images/Copyright/nd.64831b7b-smal-for-GitHub.png)
+© Copyright 1986–2023 of the [New Science Of Soul Project](http://www.nsosp.org) website by [Wolfgang Huß and Media Line Digital e.K.](http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten) is licensed under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0). ![CC](/share/images/Copyright/cc.7a093a7d-smal-for-GitHub.png) ![iconby](/share/images/Copyright/by.f6aa22c4-smal-for-GitHub.png) ![iconnd](/share/images/Copyright/nd.64831b7b-smal-for-GitHub.png)
 
 Unless required by applicable law or agreed to in writing, the content of this repository is published under the above license is distributed on an "AS IS" basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
