@@ -119,6 +119,8 @@ The predecessors of the limit ordinals. The extension of ordinal numbers to an a
 
 *On the web: [https://nsosp.org/de/Operialtheorie](https://nsosp.org/de/Operialtheorie)*
 
+### Enlighten the arithmetic
+
 The relationship between counting, the basic arithmetic operations and their expansion. Connect counting, addition, multiplication and the exponent by counting.
 
 ----
