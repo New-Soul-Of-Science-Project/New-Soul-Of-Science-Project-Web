@@ -37,7 +37,7 @@
       text_titel_h1 => 'Biordinalzahlen \\color{*TitleAdd}{\\small{(BO)}}',
       text_titel_short => 'Biordinalzahlen',
       text_undertitel_h2 => 'Die Vorgänger der Limeszahlen',
-      text_titel_discr_h3 => 'Die Erweiterung der Ordinalzahlen zu einem Ring – neue Ideen elementarer Mathematik',
+      text_titel_discr_h3 => 'Die Erweiterung der Ordinalzahlen zu einem algebraischen Ring – neue Ideen elementarer Mathematik',
       jump_ary => array(
         'OM:BiOrd:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
         'OM:BiOrd:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
