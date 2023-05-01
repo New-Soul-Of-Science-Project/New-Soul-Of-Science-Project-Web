@@ -20,7 +20,7 @@
       header_links_marginLeft => '398px',
       copy_right =>
         'Superial-Zahlen (SN) \\\\'."\n".
-        '© 1988–2022 by \\\\'."\n".
+        '© 1988–2023 by \\\\'."\n".
         'Wolfgang Huß und \\\\'."\n".
         'Media Line Digital e.K. \\\\'."\n".
         'is licensed under \\\\'."\n".

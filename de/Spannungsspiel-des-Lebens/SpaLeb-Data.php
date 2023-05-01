@@ -22,7 +22,7 @@
     header_links_marginLeft => '182px',
     copy_right =>
       'Spannungsspiel des Lebens (Neue Biophysik, NB) \\\\'."\n".
-      '© 2014–2022 by \\\\'."\n".
+      '© 2014–2023 by \\\\'."\n".
       'Wolfgang Huß und \\\\'."\n".
       'Media Line Digital e.K. \\\\'."\n".
       'is licensed under \\\\'."\n".
