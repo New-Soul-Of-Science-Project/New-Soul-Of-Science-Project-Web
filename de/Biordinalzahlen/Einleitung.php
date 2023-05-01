@@ -649,10 +649,9 @@
                 'Eine fundamentale Asymmetrie', subline =>
                   'Die ontologische Struktur der Zahlen beinhaltet die Zählrichtung')),
                       
-                  array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{Dieses Kapitel stimmt so nicht !!!}',
-                    // '• Ich muss mich noch korrigieren, weil ich oben herausgefunden habe, dass es zur leeren Menge \\latexmath{ \varnothing } keine Antimenge gibt. Daher existieren zur Darstellung der negativen Zahlen eine Menge weniger als zur Darstellung der natürlichen Zahlen. Genauer gesagt existieren für die Darstellung der ganzen Zahlen kleiner als Null genau so viele Zahlen wie für die Darstellung der natürlichen Zahlen größer als Null. Deshalb ist die Summer aller ganzen Zahlen Null, genau wie ihr Durchschnitt auch Null ist.',
-                    // '• Es bleibt eine fundamentale strukturelle Asymmetrie zwischen den natürlichen Zahlen und den negativen ganzen Zahlen.',
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    '\\bold{Eine Asymmetrie zwischen Existenz und ihrer Assoziation}',
+                    '• Hier wird ebenso eine Asymmetrie zwischen einer ontologischen Existenz und ihrem assoziierten „Wert“ aufgezeigt.',
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent',
