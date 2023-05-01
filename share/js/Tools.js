@@ -172,6 +172,44 @@ function To_f_hash_changed( hash)
 
 
 
+function To_f_hash_to_cookie( hash, cookieName = 'hashName')
+{
+  if (hash) {
+    var hashName = hash.substring( 1); // Puts hash in variable, and removes the # character
+
+    // #: https://www.geeksforgeeks.org/how-to-pass-javascript-variables-to-php/
+    // Creating a cookie after the document is ready
+    /* $(document).ready( function () {
+      createCookie( "hashName", hashName, "1");
+    }); */
+       
+    // Function to create the cookie
+    /* function createCookie( name, value, days) { */
+      const name = cookieName;
+      const value = hashName;
+      const days = "1";
+      var expires;
+        
+      if (days) {
+        var date = new Date();
+        date.setTime( date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toGMTString();
+      }
+      else {
+        expires = "";
+      }
+        
+      document.cookie = escape( name) + "=" +
+        escape( value) + expires + "; path=/";
+    /* } */
+    
+    // console.log( 'hashName: ', hashName);
+    // alert (hashName);
+  }
+}
+
+
+
 var To_g_rememberOldStatus_elements_hides_ary = null;
 
 
@@ -608,8 +646,11 @@ function To_f_googleTranslateCorrect()
 
 function To_f_manage_site_end( autoResize = false)
 {
+  const hash = window.location.hash;
+  
   // #: Open hidden areas for the hash of first site call.
-  To_f_hash_changed( window.location.hash);
+  To_f_hash_changed( hash);
+  // To_f_hash_to_cookie( window.location.hash);
   
   if (autoResize)
   {
