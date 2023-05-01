@@ -5,11 +5,13 @@
   
   
   // #: Stand: 07.04.2023, 19:00h
-  
+
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
   //           20230407:  +:  "$To_g_Text_replace_preg_ary": Move entry "quote" from "Science.php" to here.
   //                      >:  "$To_g_Text_replace_preg_ary", "quote": Change from "preg_replace_callback" to "latexcommand".
+  //           20230227:  >:  "To_f_JumpName_StarReplace":  Rename to "To_f_JumpName_Redirect".
+  //                      +:  "To_f_JumpName_StarReplace":  New "$Glo_g_Redirect_list" and default as empty array.
   //           20221223:  !:  "$To_g_Text_replace_ary":  move '-Quantenfeldtheorie-' to website file.
   //           20221104:  >:  "To_f_Paragraph", 'text': New 'Shape' 'derivation':  Added class: 'tools-class-text-derivation'.
   //           20220807:  +:  "To_f_Paragraph", "fade-in-area":  Fix mix-up in comparison to the other cases of 'hideContent' and 'showContent' in 'fade-in-area' and 'notice'.
@@ -224,6 +226,7 @@
   $Glo_g_Site_activ_GenInfo_idx = null;
   
   $Glo_g_Theme_list = array();
+  $Glo_g_Redirect_list = array();
 
   const color = 'color';
   
@@ -271,21 +274,91 @@
   
   
   
-  function To_f_JumpName_StarReplace( &$jump_name)
+  function To_f_JumpName_Redirect( &$jump_name)
   {
-    global $Glo_g_Theme_list;
-    
-    // #?: Is "$jump_name" a theme?
-    while (substr( $jump_name, 0, 1) == '*')
+    global $Glo_g_Theme_list, $Glo_g_Redirect_list;
+
+    $redirect_is = true;
+
+    // #?: Is "$redirect_is"?
+    while ($redirect_is)
     {
-      //print_r( $jump_name);
+      // print_r( $jump_name);
 
-      if (array_key_exists( $jump_name, $Glo_g_Theme_list))
-        $jump_name = $Glo_g_Theme_list[$jump_name][jump_name];
+      // #?: Is "$jump_name" a theme?
+      if (substr( $jump_name, 0, 1) == '*')
+      {
+        if (array_key_exists( $jump_name, $Glo_g_Theme_list))
+          $jump_name = $Glo_g_Theme_list[$jump_name][jump_name];
+        else
+          $redirect_is = false;
+      }
       else
-        exit;
+      // #: No theme, then look for a redirection
+      {
+        // #: Redirect docu for $Glo_g_Redirect_list:
+        //   'OM:SpaLeb:Achtsamkeitsprozess' => 'OM:SpaLeb:Care-Prozess'
+        //        #: redirects only 'OM:SpaLeb:Achtsamkeitsprozess' to 'OM:SpaLeb:Care-Prozess'
+        //        #: if 'OM:SpaLeb' => 'OM:SupNum' is defined as well then
+        //              'OM:SpaLeb:Achtsamkeitsprozess' => 'OM:SpaLeb:Care-Prozess' still will be redirected first and afterwards 'OM:SpaLeb' to 'OM:SupNum'
+        //   'OM:SpaLeb:Achtsamkeitsprozess:' => 'OM:SpaLeb:Care-Prozess:'
+        //        #: redirects all sub names of 'OM:SpaLeb:Achtsamkeitsprozess:Y' to the same sub names of 'OM:SpaLeb:Care-Prozess:Y'
+        //   'OM:SpaLeb:Achtsamkeitsprozess:' => 'OM:SpaLeb:Care-Prozess'
+        //        #: redirects all sub names of 'OM:SpaLeb:Achtsamkeitsprozess:Y' to 'OM:SpaLeb:Care-Prozess'
+        $search = true;
+        $jump_name_concat = $jump_name;
+        
+        while ($search && 0 < strlen( $jump_name_concat))
+        {
+          // #?: Is "$jump_name_concat" minimal "<name>:"?
+          if (1 < strlen( $jump_name_concat) && $jump_name_concat[strlen( $jump_name_concat) - 1] == ':')
+          {
+            // print_r( '>>>jump_name_concat → '); print_r( $jump_name_concat.'<br>');
+            // #: remove last ":"
+            $jump_name_concat = substr( $jump_name_concat, 0, strlen( $jump_name_concat) - 1);
+            // #?: Is "<name>:" in redirections list?
+            if (array_key_exists( $jump_name_concat.':', $Glo_g_Redirect_list))
+            {
+              // print_r( '***found with "(search name):"'); print_r( '<br>');
+              $new_jump_name = $Glo_g_Redirect_list[$jump_name_concat.':'][jump_name];
+              // #?: Is "$new_jump_name" ending with ":"?
+              if ($new_jump_name[strlen( $new_jump_name) - 1] == ':')
+              {
+                // print_r( '***found with "(result name):"'); print_r( '<br>');
+                // #: Add to "$new_jump_name" what is already cut at the end of "$jump_name_concat.':'" in comparison to "$jump_name"
+                $jump_name = ($new_jump_name).(substr( $jump_name, strlen( $jump_name_concat.':'), strlen( $jump_name) - strlen( $jump_name_concat.':')));
+                $search = false;
+              }
+              else
+              {
+                // print_r( '***found with "(result name)"'); print_r( '<br>');
+                $jump_name = $new_jump_name;
+                $search = false;
+              }
+            }
+          }
+          else
+          {
+            // print_r( '>>>jump_name_concat → '); print_r( $jump_name_concat.'<br>');
+            
+            // #?: Is "$jump_name_concat" in redirections list?
+            if (array_key_exists( $jump_name_concat, $Glo_g_Redirect_list))
+            {
+              // print_r( '***found with "(search name)"'); print_r( '<br>');
+              $jump_name = $Glo_g_Redirect_list[$jump_name_concat][jump_name];
+              $search = false;
+            }
 
-      //print_r( $jump_name);
+            // #: Remove last part of "$jump_name_concat", but leave ":" in case.
+            $parts = explode( ':', $jump_name_concat);
+            $jump_name_concat = substr( $jump_name_concat, 0, strlen( $jump_name_concat) - strlen( $parts[count( $parts) - 1]));
+          }
+        }
+        
+        if ($search)
+          $redirect_is = false;
+      }
+      // print_r( '>>>jump_name found → '); print_r( $jump_name.'<br><br>');
     }
     
   }
@@ -296,7 +369,7 @@
     global $Glo_g_Theme_list;
     
     // #?: Is "$jump_name" a theme?
-    To_f_JumpName_StarReplace( $jump_name);
+    To_f_JumpName_Redirect( $jump_name);
 
     // #: Generate the site name from the "$value[0][0]".
     $parts = explode( ':', $jump_name);
@@ -318,7 +391,7 @@
     $site_is = true;
     
     // #: Replace star '*' notation.
-    To_f_JumpName_StarReplace( $jump_name);
+    To_f_JumpName_Redirect( $jump_name);
     
     // #: Generate the site name from the "$value[0][0]".
     $parts = explode( ':', $jump_name);
@@ -908,6 +981,8 @@
         
         // #: Generate the site name from the "$value[0][0]".
         //%!$parts = explode( ':', $value[0][0]);
+        
+        To_f_JumpName_Redirect( $value[0][0]);
 
         // #: If global notation?
         //%!if (3 <= count( $parts))
@@ -2742,10 +2817,9 @@
   
   
   
-  function To_f_bot_is()
-  
   // #: Found at "http://www.weedit.de/lernen/referenzen/php/Pruefen-ob-Bot-Google-Bing--oder-normaler-Besucher-Website-aufruft---HTTP_USER_AGENT-uoUirbodjpywDdk2pZY.php"
-  
+
+  function To_f_bot_is()
   {
     $botlist = array("Teoma", "alexa", "froogle", "Gigabot", "inktomi",
                      "looksmart", "URL_Spider_SQL", "Firefly", "NationalDirectory",
@@ -2765,10 +2839,16 @@
   }
   
   
+  function To_f_get_page_URL()
+  {
+    // #!: Editor's note: using this code has security implications. The client can set HTTP_HOST and REQUEST_URI to any arbitrary value it wants. See: https://stackoverflow.com/questions/6768793/get-the-full-url-in-php
+    return (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  }
+  
+  
   // #: Initializing.
   
-  // #!: Editor's note: using this code has security implications. The client can set HTTP_HOST and REQUEST_URI to any arbitrary value it wants. See: https://stackoverflow.com/questions/6768793/get-the-full-url-in-php
-  $To_g_pageUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  $To_g_pageUrl = To_f_get_page_URL();
   $To_g_query = parse_url($To_g_pageUrl, PHP_URL_QUERY);
   $To_g_openAll = ($To_g_query === 'openAll');
   
