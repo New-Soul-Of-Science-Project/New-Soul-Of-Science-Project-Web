@@ -736,7 +736,7 @@
                     'nicht mehr in ihrer Struktur von den positiven Zahlen unterscheiden.'."\n".
                     'Denn das scheinbare Rückwärtszählen wäre ja doch in Wirklichkeit so auch ein Vorwärtszählen.'."\n".
                     'Beide Zahlentypen wären identisch, was ontologisch keinen Sinn ergibt.'."\n",
-                      'Sinn erhalten wir, wenn wir erkennen, dass die negativen ganzen Zahlen aus verschobenen positiven ganzen Zahlen entstehen, unter Erhalt der Zählrichtung,'."\n".
+                      'Sinn erhalten wir, wenn wir erkennen, dass die negativen ganzen Zahlen aus den verschobenen natürlichen Zahlen entstehen, unter Erhalt der Zählrichtung,'."\n".
                     'durch Welle oder Zahn verdeutlicht (siehe \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Fig-OntologieGanzeZahlen}).'."\n".
                     'Während also der auf die negative Seite verschobene Nullpunkt eine negative Zahl repräsentiert, nämlich die minus Eins,'."\n".
                     'repräsentiert der originale Nullpunkt keine positive Zahl, sondern die Null selber.'."\n".
