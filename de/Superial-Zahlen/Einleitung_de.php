@@ -58,10 +58,12 @@
                     'Ich setzte den gegen Null gehenden Summanden \\term{Δx ≔ s^{-1}}.'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0}{ \frac{ f(x + \Delta x) - f(x) }{ \Delta x } }  }'),
-                      array( display => 'on',  latex => '{  \lim\limits_{\Delta x \rightarrow +0}{ \Delta x }  :=  s^{-1}  }'),
+                      array( display => 'on',  latex => '{  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0}{ \frac{ f(x + \Delta x) - f(x) }{ \Delta x } }  }',
+                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-mit-Limes}', label_incr => false),
+                      array( display => 'on',  latex => '{  \lim\limits_{\Delta x \rightarrow +0}{ \Delta x }  :=  s^{-1}  }',
+                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Def-Ableitung-mit-Limes-ist-s-hoch-minus-Eins}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  :=  \frac{ f(x + s^{-1}) - f(x) }{ s^{-1} }  }',
-                                          label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Def-Ableitung-mit-s-hoch-minus-Eins', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-Def-Ableitung-mit-s-hoch-minus-Eins}', label_incr => true),
+                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Def-Ableitung-mit-s-hoch-minus-Eins', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Def-Ableitung-mit-s-hoch-minus-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Dabei war \\term{s^{-1}} ein neues Symbol, über das ich zunächst nur annahm, dass es kleiner als jede positive Zahl war und doch größer als Null.'."\n".
@@ -74,24 +76,28 @@
                       'So ergibt sich als Beispiel für die Funktion \\term{f(x) = x^{2}}:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      //%! array( display => 'off', latex => '{  f\'(x)  =  \frac{ f(x + s^{-1}) - f(x) }{ s^{-1} }  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  \frac{ \left(x + s^{-1}\right)^{2} - x^{2} }{ s^{-1} }  }',
-                                               latex_if_visible => '{  \Leftrightarrow  f\'(x)  =  \frac{ \left(x + s^{-1}\right)^{2} - x^{2} }{ s^{-1} }  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ \left(x^{2} + 2 x \cdot s^{-1} + s^{-2}\right) - x^{2} }{ s^{-1} }  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ 2 x \cdot s^{-1} + s^{-2} }{ s^{-1} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  2 x + s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  \frac{ *( x + s^{-1} *)^{2} - x^{2} }{ s^{-1} }  }',
+                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x2-basis}', label_incr => false),
+                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ *( x^{2} + 2 x \cdot s^{-1} + s^{-2} *) - x^{2} }{ s^{-1} }  }',
+                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x2-ausmultipliziert}', label_incr => false),
+                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ 2 x \cdot s^{-1} + s^{-2} }{ s^{-1} }  }',
+                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x2-subtrahiert}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  2 x + s^{-1}  }',
+                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x2-Ergebnis}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Wenn man also \\term{s^{-1}} zu Null setzt, dann kommt das übliche Ergebnis \\term{f\'(x) = 2x} heraus.'."\n",
                       'Für \\term{f(x) = x^{3}} ergibt sich'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      //%! array( display => 'off', latex => '{  f\'(x)  =  \frac{ f(x + s^{-1}) - f(x) }{ s^{-1} }  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  \frac{ \left(x + s^{-1}\right)^{3} - x^{3} }{ s^{-1} }  }',
-                                               latex_if_visible => '{  \Leftrightarrow  f\'(x)  =  \frac{ \left(x + s^{-1}\right)^{3} - x^{3} }{ s^{-1} }  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ \left(x^{3} + 3 x^{2} \cdot s^{-1} + 3 x \cdot s^{-2} + s^{-3}\right) - x^{3} }{ s^{-1} }  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ 3 x^{2} \cdot s^{-1} + 3 x \cdot s^{-2} + s^{-3} }{ s^{-1} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  3 x^{2} + 3 x \cdot s^{-1} + s^{-2}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  \frac{ *( x + s^{-1} *)^{3} - x^{3} }{ s^{-1} }  }',
+                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x3-basis}', label_incr => false),
+                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ *( x^{3} + 3 x^{2} \cdot s^{-1} + 3 x \cdot s^{-2} + s^{-3} *) - x^{3} }{ s^{-1} }  }',
+                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x3-ausmultipliziert}', label_incr => false),
+                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ 3 x^{2} \cdot s^{-1} + 3 x \cdot s^{-2} + s^{-3} }{ s^{-1} }  }',
+                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x3-subtrahiert}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  3 x^{2} + 3 x \cdot s^{-1} + s^{-2}  }',
+                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x3-Ergebnis}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Wenn man also \\term{s^{-1}} zu Null setzt, dann kommt das übliche Ergebnis \\term{f\'(x) = 3x^{2}} heraus.'."\n"))),
@@ -156,7 +162,7 @@
                       'Folgendes Primzahlprodukt sollte das kleinste Produkt aus unendlich vielen Primfaktoren sein, dass diese Bedingung erfüllt, dabei ist \\term{\M(P)} die Menge aller endlicher Primzahlen:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  \left( \prod_{\forall p \in \mathbb{P}}  p \right)  }',
+                      array( display => 'on',  latex => '{  s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  *( \prod_{\forall p \in \mathbb{P}}  p *)  }',
                                                label_name => 'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -171,7 +177,7 @@
                                                label_name => 'OM:SupNum:Einleitung:Vortext:Equ-N-ist-mit-Null', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-N-ist-mit-Null}', label_incr => true),
                       array( display => 'on',  latex => '{  \omega   :=  \#\mathbb{N}  }',
                                                label_name => 'OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  s  :=  \displaystyle \left( \prod_{\forall p \in \mathbb{P}}  p \right)^{\omega}  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{\omega}  }',
                                                label_name => 'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -269,7 +275,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \mathbb{N}  :=  \mathbb{N}_{0}  }'),
-                      array( display => 'on', latex => '{  \mathbb{T}_{n}  :=  \left\{  x ~\middle|~ \left( n \in \mathbb{N} \right) \left( \forall x \in \mathbb{N} \right) \left[  x < n  \right]  \right\}  }'),
+                      array( display => 'on', latex => '{  \mathbb{T}_{n}  :=  \left\{  x ~\middle|~ *( n \in \mathbb{N} *) *( \forall x \in \mathbb{N} *) \left[  x < n  \right]  \right\}  }'),
                     ))),
                   array( 'text', array( Shape => 'italic', text => array(
                       'Die Teilmengen \\term{\M(T)_{n}} der ersten \\term{n} Elemente wird definiert als die Menge der Elemente x für die Gilt:'."\n".
@@ -317,11 +323,11 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega  :=  \#\mathbb{N}  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  \left( \forall n \in \mathbb{N} \right)  \left[  n < \omega  \right]  }'),
-                      array( display => 'on', latex => '{  \left( \forall r \in \mathbb{R} \right)  \left( \exists n \in \mathbb{N} \right)  \left[  r < n  \right]  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  \left( \forall r \in \mathbb{R} \right)  \left[  -\omega < r < \omega  \right]  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  \left( \forall r \in \mathbb{R^{+}} \right)  \left[  0 < \omega^{-1} < r  \right]  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  \left( k \in \mathbb{R} \right)  \left( \forall r \in \mathbb{R^{+}} \right)  \\\ \qquad\qquad  \left[  k - r < k - \omega^{-1} < k < k + \omega^{-1} < k + r  \right]  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  \left[  n < \omega  \right]  }'),
+                      array( display => 'on', latex => '{  *( \forall r \in \mathbb{R} *)  *( \exists n \in \mathbb{N} *)  \left[  r < n  \right]  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  *( \forall r \in \mathbb{R} *)  \left[  -\omega < r < \omega  \right]  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  *( \forall r \in \mathbb{R^{+}} *)  \left[  0 < \omega^{-1} < r  \right]  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  *( k \in \mathbb{R} *)  *( \forall r \in \mathbb{R^{+}} *)  \\\ \qquad\qquad  \left[  k - r < k - \omega^{-1} < k < k + \omega^{-1} < k + r  \right]  }'),
                     ))),
                       
                   array( 'text', array( text => array(
@@ -333,13 +339,13 @@
                       
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \Rightarrow  \left( \forall n \in \mathbb{N} \right)  \left[  n < s  \right]  }',
+                      array( display => 'on', latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  \left[  n < s  \right]  }',
                                                label_name => 'OM:SupNum:Einleitung:Grundlagen:Equ-alle-n-kleiner-s', label_text => '\\name{OM:SupNum:Einleitung:Grundlagen:Equ-alle-n-kleiner-s}', label_incr => true),
-                      array( display => 'on', latex => '{  \left( \forall r \in \mathbb{R} \right)  \left( \exists n \in \mathbb{N} \right)  \left[  r < n  \right]  }',
+                      array( display => 'on', latex => '{  *( \forall r \in \mathbb{R} *)  *( \exists n \in \mathbb{N} *)  \left[  r < n  \right]  }',
                                                label_name => 'OM:SupNum:Einleitung:Grundlagen:Equ-exist-n-mit-r-kleiner-n', label_text => '\\name{OM:SupNum:Einleitung:Grundlagen:Equ-exist-n-mit-r-kleiner-n}', label_incr => true),
-                      array( display => 'on', latex => '{  \Rightarrow  \left( \forall r \in \mathbb{R} \right)  \left[  - s < r < s  \right]  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  \left( \forall r \in \mathbb{R^{+}} \right)  \left[  0 < s^{-1} < r  \right]  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  \left( k \in \mathbb{R} \right)  \left( \forall r \in \mathbb{R^{+}} \right)  \\\ \qquad\qquad  \left[  k - r < k - s^{-1} < k < k + s^{-1} < k + r  \right]  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  *( \forall r \in \mathbb{R} *)  \left[  - s < r < s  \right]  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  *( \forall r \in \mathbb{R^{+}} *)  \left[  0 < s^{-1} < r  \right]  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  *( k \in \mathbb{R} *)  *( \forall r \in \mathbb{R^{+}} *)  \\\ \qquad\qquad  \left[  k - r < k - s^{-1} < k < k + s^{-1} < k + r  \right]  }'),
                     ))),
                       
                   array( 'text', array( text => array(
@@ -411,10 +417,11 @@
                       'Bei der Integration addieren wir nämlich all die unendlich vielen und superial kleinen Differenzen des Abstands \\term{s^{-1}} der Ableitung als'."\n".
                     'superial kleine, feine oder schmale Streifen einer Fläche auf.'."\n".
                     'Diese Streifen müssen wir dann in einer unendlichen Summe durchzählen und aufsummieren.'."\n",
-                      'Zum Einstieg die Formel \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Def-Ableitung-mit-s-hoch-minus-Eins} vorab in der neuen Notation:'."\n"))),
+                      'Zum Einstieg die Formel \\jumpname{OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Def-Ableitung-mit-s-hoch-minus-Eins} vorab in der neuen Notation:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }'),
+                      array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }',
+                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Wenn im Folgenden \\term{n} Element der Menge aller ganzen Superial-Zahlen \\term{\M(S)_{Z}} einschließlich Null und ausschließlich \\term{x⋅s^{1}} ist,'."\n".
@@ -468,7 +475,7 @@
                     'wie in einigen der Beispiele:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{Q} *) \left( \forall z \in \mathbb{Z} *) *[  0  \leq  〈a〉〈b〉〈z〉․  \in  \mathbb{S}_{N}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{Q} *) *( \forall z \in \mathbb{Z} *) *[  0  \leq  〈a〉〈b〉〈z〉․  \in  \mathbb{S}_{N}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  〈5〉․  \in  \mathbb{S}_{N}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 \frac{4}{25} *〉*〈 - \frac{3}{2} *〉〈-5〉․  \in  \mathbb{S}_{N}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 - \frac{4}{25} *〉*〈 \frac{3}{2} *〉〈5〉  \notin  \mathbb{S}_{N}  }'),
@@ -602,7 +609,7 @@
                     'XXX'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}  :=  \left\{ x ~\middle|~ \left( \forall d \in \mathbb{Z} \right) \left( \forall q_{d} \in \mathbb{Q} \setminus \{0\} \right) \left( \forall q_{i} \in \mathbb{Q} \right) \\\ \qquad\qquad\qquad\qquad\qquad\quad \left[ q_{d} s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i]} q_{i} s^{i} \right] \right\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{S}  :=  \left\{ x ~\middle|~ *( \forall d \in \mathbb{Z} *) *( \forall q_{d} \in \mathbb{Q} \setminus \{0\} *) *( \forall q_{i} \in \mathbb{Q} *) \\\ \qquad\qquad\qquad\qquad\qquad\quad \left[ q_{d} s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i]} q_{i} s^{i} \right] \right\}  }'),
                       array( display => 'on',  latex => '{  p_{x}\# \pm 1  =  XXX  }'),
                       array( display => 'on',  latex => '{  p  =  〈a〉〈b〉〈\pm 1〉․〈0〉  }'),
                     ))),
@@ -787,7 +794,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \displaystyle \left( \prod_{\forall p \in \mathbb{P}}  p \right)  =  \omega_{p}  }'),
+                      array( display => 'on',  latex => '{  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)  =  \omega_{p}  }'),
                       array( display => 'on',  latex => '{  \omega_{p}  ?=  \omega  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  s  =  \omega_{p}^{\omega}  ?=  \omega^{\omega}  }'),
                     ))),
