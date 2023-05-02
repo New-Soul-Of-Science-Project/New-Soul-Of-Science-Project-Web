@@ -953,7 +953,7 @@
                     'Hier erkennen wir schon eine gewisse Ähnlichkeit mit unserer Formel \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z},'."\n".
                     'auch, wenn diese Definition eigentlich nicht für die Funktionswerte \\term{0} und \\term{-1} gilt.'."\n",
                       'Addieren wir doch trotzdem mal die positiven und negativen Einsen und schauen, wann wir vielleicht \\term{½} erhalten.'."\n".
-                    'Aus dem Mathologer Video wissen wir, dass die Summe über die Ramanujan Summation als eine Art Mittelwert definiert ist.'."\n".
+                    'Aus dem Mathologer Video \\italic{\\jump[https://www.youtube.com/watch?v=YuIIjLr6vUA]{}{Numberphile v. Math: the truth about 1+2+3+...=-1/12}} wissen wir, dass die Summe über die Ramanujan Summation als eine Art Mittelwert definiert ist.'."\n".
                     'Benutzen wir die Formel von oben, dann ergibt sich:'."\n".
                     ''))),
                   array( 'equations',
