@@ -91,8 +91,8 @@
       ),
     ),
     'OM:SupNum:Einleitung' => array(
-      url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Einleitung_de.php',
-      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Einleitung_de.php',
+      url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Einleitung.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Einleitung.php',
       titel => 'Einleitung - Die Superial-Zahlen (SN) - Deutsch',
       description => 'Mit den Superial-Zahlen die fraktale Struktur des Unendlichen entdecken.',
       keywords => '',
