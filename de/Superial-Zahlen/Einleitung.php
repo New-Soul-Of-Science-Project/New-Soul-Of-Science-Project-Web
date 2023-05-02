@@ -23,7 +23,7 @@
                     '• Die Biordinalzahlen wären dann aber ein Ring, aber immer noch kein Körper.',
                     '• Die Superial-Zahlen sind, weil mit rationalen Koeffizienten gebildet, ein Körper. Denn es gibt beide inverse Elemente.',
                     '• Sollte sich herausstellen, dass die Wurzeln natürlicher Zahlen mit hyperrationalen Zahlen (meine Benennung) dargestellt werden können, dann wären Superial-Zahlen mit überrationalen Koeffizienten ein algebraischer Körper!?',
-                    '– Als hyperrationale Zahlen bezeichne ich Brüche, die im Zähler und Nenner unendlich große Primzahlprodukte haben können. Und, wenn vollständig teilerfremd und damit nicht zu kürzen, Dezimalzahlen ergeben, die nicht periodisch sind, wie vielleicht \\term{√2}. Die Exponenten der Primzahlen in Nenner und Zähler sollten endlich sein, denke ich. Möglicherweise sogar immer Eins?',
+                    '– Als überrationale Zahlen bezeichne ich Brüche, die im Zähler und Nenner unendlich große Primzahlprodukte haben können. Und, wenn vollständig teilerfremd und damit nicht zu kürzen, Dezimalzahlen ergeben, die nicht periodisch sind, wie vielleicht \\term{√2}. Die Exponenten der Primzahlen in Nenner und Zähler sollten endlich sein, denke ich. Möglicherweise sogar immer Eins?',
                     '\\bold{Aktuelle Forschung}',
                     '• Der Fields-Medaillenträger 2018, Peter Scholze, bringt neue Zusammenhänge zwischen der Arithmetik und der Geometrie ins Spiel.',
                     '\\bold{\\italic{Diskretisierung der Topologie durch verdichtete Mengen}}',
@@ -33,9 +33,9 @@
                     '• Einflechten, dass die Arithmetik aus dem Zählen geboren wird. Dies ist eine Definition durch einen Prozess. Hierdurch kommt Zeit ins Spiel. Die Betrachtung der Primfaktorenzerlegung der natürlichen Zahlen zeigt auf, dass an diesem Prozess Regelsystemen ähnliche rhythmische Strukturen beteiligt sind.',
                     '\\bold{Korrekturen}',
                     '• Der Text ist schwer verständlich und manchmal etwas komisch formuliert. Alles noch einmal überarbeiten !!!',
-                    '• Fehler: Das Äquivalenzzeichen vor den konkreten Ableitungsbeispielen ist verkehrt, wenn die davor stehende Formel eingeblendet ist!',
+                    '• Die Kapitel der Seiten erneut durcharbeiten.',
                     '\\bold{Forschungsideen}',
-                    '• Das Pascal-Sierpinski-Dreieck ist eine Geometrie, in der Primzahlen ein außergewöhnliche Rolle spielen.\\footnote{Vgl. \\cite{Plichta:GottesGeheimeFormel:1995}, S. 263ff., 271ff. 306ff.. \\\\ Internet: \\\\ Vgl. \\jump[https://de.wikipedia.org/w/index.php?title=Sierpinski-Dreieck&oldid=179105092#Zusammenhang_mit_dem_Pascalschen_Dreieck]{}{Wikipedia, Sierpinski-Dreieck, Zusammenhang mit dem Pascalschen Dreieck}.}',
+                    '• Das Pascal-Sierpinski-Dreieck ist eine Geometrie, in der Primzahlen eine außergewöhnliche Rolle spielen.\\footnote{Vgl. \\cite{Plichta:GottesGeheimeFormel:1995}, S. 263ff., 271ff. 306ff.. \\\\ Internet: \\\\ Vgl. \\jump[https://de.wikipedia.org/w/index.php?title=Sierpinski-Dreieck&oldid=179105092#Zusammenhang_mit_dem_Pascalschen_Dreieck]{}{Wikipedia, Sierpinski-Dreieck, Zusammenhang mit dem Pascalschen Dreieck}.}',
                     ))),
                       
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
@@ -52,10 +52,10 @@
                     'Irgendwie war ja auch klar, dass beim Integrieren die versunkene Welt schließlich wieder auftauchen musste.'."\n".
                     'Wie könnte sie da unwiederbringlich „vernichtet“ worden sein?'."\n".
                     'Durch das Herumspielen begriff ich:'."\n".
-                    'Man konnte auch ins Unendliche gehen, ohne den Limes zu benutzen!'."\n".
-                    'Ohne die versinkenden Summanden wirklich zu Null werden zu lassen, indem man sie als Null definiert.'."\n".
-                    'Dies funktionierte, wenn man die beim Ableiten gegen Null gehenden Summanden selber als unendlich klein, aber nicht als verschwindend betrachtete.'."\n".
-                    'Ich setzte den gegen Null gehenden Summanden \\term{Δx ≔ s^{-1}}.'."\n"))),
+                    'Wir können auch ins Unendliche gehen, ohne den Limes zu benutzen!'."\n".
+                    'Ohne, dass man die versinkenden Summanden wirklich zu Null werden lässt, indem man sie als Null definiert.'."\n".
+                    'Dies funktioniert, wenn wir die beim Ableiten gegen Null gehenden Summanden selber als unendlich klein, aber nicht als verschwindend betrachten.'."\n".
+                    'Wir setzten den gegen Null gehenden Summanden zu \\term{Δx ≔ s^{-1}}.'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0}{ \frac{ f(x + \Delta x) - f(x) }{ \Delta x } }  }',
@@ -66,8 +66,9 @@
                                           /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Def-Ableitung-mit-s-hoch-minus-Eins', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Def-Ableitung-mit-s-hoch-minus-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Dabei war \\term{s^{-1}} ein neues Symbol, über das ich zunächst nur annahm, dass es kleiner als jede positive Zahl war und doch größer als Null.'."\n".
-                    'Ähnlich wie bei den komplexen Zahlen die imaginäre Einheit \\term{i} war auch mein \\term{s^{-1}} eine neue Einheit, die ich als \\italic{superial kleine Einheit} bezeichnete.'."\n".
+                    'Dies vertiefen wir auf der Seite \\italic{\\jumpname{OM:SupNum:Ableitungen-Integrale}}.'."\n",
+                      'Dabei ist \\term{s^{-1}} ein neues Symbol, über das ich zunächst nur annahm, dass es kleiner als jede positive Zahl war und doch größer als Null.'."\n".
+                    'Ähnlich wie bei den komplexen Zahlen die imaginäre Einheit \\term{i} war auch \\term{s^{-1}} eine neue Einheit, die ich als \\italic{superial kleine Einheit} bezeichne.'."\n".
                     'In der Mathematik ist es kein Problem ein neues Symbol zu kreieren und zu definieren, solange sich dadurch keine Widersprüche ergeben.\\footnote{Sekundärliteratur \\\\ Vgl. \\cite{Freistetter:DieFreiheitDerImaginaerenZahlen:2016}. \\\\ Internet: \\\\ Vgl. \\cite{Freistetter:DieFreiheitDerMathematik:2016}.}'."\n",
                       'Die superial kleine Einheit \\term{s^{-1}} führte dazu, dass die sonst bei der Ableitung verschwindenden Summanden \\term{a_{k}} nicht verloren gehen, sondern in unendlich kleinen'."\n".
                     'Dimensionen \\term{q_{-1}⋅s^{-1} + q_{-2}⋅s^{-2} + q_{-3}⋅s^{-3} + …} erhalten blieben, also in einer \\italic{superial} kleinen Welt.'."\n".
@@ -87,7 +88,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Wenn man also \\term{s^{-1}} zu Null setzt, dann kommt das übliche Ergebnis \\term{f\'(x) = 2x} heraus.'."\n",
-                      'Für \\term{f(x) = x^{3}} ergibt sich'."\n"))),
+                      'Für \\term{f(x) = x^{3}} ergibt sich dann:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  \frac{ *( x + s^{-1} *)^{3} - x^{3} }{ s^{-1} }  }',
