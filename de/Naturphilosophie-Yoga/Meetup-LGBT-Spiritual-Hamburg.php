@@ -36,7 +36,7 @@
                 'Events')),
                   array( 'bulletlist', array( bullet_ary => array(
                         '\\bold{09.03.2020}: Meetup – \\jump[https://www.meetup.com/de-DE/LGBT-Spiritual-Hamburg/events/268690934]{}{Spiritualität und Psychologie} \\\\'."\n".
-                          'Handout zum Meetup: \\jump[http://www.nsosp.org/download/Meetup-LGBT-Spiritual-Hamburg/20200309-Spiritualitaet-und-Psychologie-Handout.pdf]{}{Spiritualität und Psychologie} \\\\'."\n".
+                          'Handout zum Meetup: \\jump[https://nsosp.org/download/Meetup-LGBT-Spiritual-Hamburg/20200309-Spiritualitaet-und-Psychologie-Handout.pdf]{}{Spiritualität und Psychologie} \\\\'."\n".
                           'Video mit Interview zum Meetup: \\jump[https://www.youtube.com/watch?v=A5G7vSgyez4]{}{Selbstliebe ist kein Zufall: Die revolutionäre Kraft des Fühlens - Maria Sanchez}',
                     ))),
 

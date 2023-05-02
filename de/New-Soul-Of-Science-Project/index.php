@@ -1011,7 +1011,7 @@
                     '\\color{*Bearb}{'."\n".
                     '\\bold{Internetarchiv auf IPFS Basis – im Interplanetary File System:} \\\\'."\n".
                     '• Datierte Versionen von Internetseiten im Interplanetary File System (IPFS) speichern. \\\\'."\n".
-                    '– Ähnlich wie \\jump[http://web.archive.org/web/20200213213708/http://www.nsosp.org/de/New-Soul-Of-Science-Project/index.php]{}{WayBackMachine} und \\jump[http://archive.ph/www.nsosp.org]{}{archive today}.'."\n".
+                    '– Ähnlich wie \\jump[http://web.archive.org/web/20200213213708/https://nsosp.org/de/New-Soul-Of-Science-Project/index.php]{}{WayBackMachine} und \\jump[http://archive.ph/www.nsosp.org]{}{archive today}.'."\n".
                     '}'."\n"))),
                                                                                         
                   array( 'text', array( text => array(

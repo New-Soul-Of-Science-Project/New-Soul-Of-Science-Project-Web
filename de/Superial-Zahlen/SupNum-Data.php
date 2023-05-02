@@ -3,7 +3,7 @@
     'OM:SupNum:' =>
       array_merge(
         $nSOSp_g_info_wolfgangHuss,
-        array( url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/',
+        array( url_abs => 'https://nsosp.org/de/Superial-Zahlen/',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/',
       favicons_url_rel_opt => $Glo_PathRel_back.'../de/Superial-Zahlen/favicon/',
       name_short => 'SupZahl',
@@ -29,7 +29,7 @@
       litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
     )),
     'OM:SupNum:Home' => array(
-      url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/index.php',
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/index.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/index.php',
       titel => 'Superial-Zahlen (SN) - Deutsch',
       description => '\\name[undertitle]{OM:SupNum:Home}. — \\name[description]{OM:SupNum:Home}.',
@@ -44,7 +44,7 @@
       ),
     ),
     'OM:SupNum:Ableitungen-Integrale' => array(
-      url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Ableitungen-und-Integrale-aktuale-Unendlichkeit-ersetzt-Limes.php',
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Ableitungen-und-Integrale-aktuale-Unendlichkeit-ersetzt-Limes.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Ableitungen-und-Integrale-aktuale-Unendlichkeit-ersetzt-Limes.php',
       titel => 'Ableitungen und Integrale - Die Superial-Zahlen (SN) - Deutsch',
       description => '\\name[undertitle]{OM:SupNum:Ableitungen-Integrale}.\\hidden{ — \\name[description]{OM:SupNum:Ableitungen-Integrale}.}',
@@ -70,7 +70,7 @@
       ),
     ),
     'OM:SupNum:Eigenschaften' => array(
-      url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Eigenschaften.php',
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Eigenschaften.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Eigenschaften.php',
       titel => 'Eigenschaften - Die Superial-Zahlen (SN) - Deutsch',
       description => '\\name[undertitle]{OM:SupNum:Eigenschaften}. — \\name[description]{OM:SupNum:Eigenschaften}.',
@@ -91,7 +91,7 @@
       ),
     ),
     'OM:SupNum:Einleitung' => array(
-      url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Einleitung.php',
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Einleitung.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Einleitung.php',
       titel => 'Einleitung - Die Superial-Zahlen (SN) - Deutsch',
       description => 'Mit den Superial-Zahlen die fraktale Struktur des Unendlichen entdecken.',
@@ -119,7 +119,7 @@
       ),
     ),
     'OM:SupNum:Formale-Entwicklung' => array(
-      url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Formale-Entwicklung.php',
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Formale-Entwicklung.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Formale-Entwicklung.php',
       titel => 'Formale Entwicklung - Die Superial-Zahlen (SN) - Deutsch',
       description => '\\name[undertitle]{OM:SupNum:Formale-Entwicklung}.\\hidden{ — \\name[description]{OM:SupNum:Formale-Entwicklung}.}',
@@ -143,7 +143,7 @@
       ),
     ),
     'OM:SupNum:Literatur' => array(
-      url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Literatur_de.php',
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Literatur_de.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Literatur_de.php',
       titel => 'Literatur - Die Superial-Zahlen (SN) - Deutsch',
       description => 'Literatur zu den Superial-Zahlen.',
@@ -156,7 +156,7 @@
       ),
     ),
     'OM:SupNum:Primzahlprodukt-Vermutung' => array(
-      url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Primzahlprodukt-Vermutung.php',
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Primzahlprodukt-Vermutung.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Primzahlprodukt-Vermutung.php',
       titel => 'Primzahlprodukt-Vermutung - Die Superial-Zahlen (SN) - Deutsch',
       description => '\\name[undertitle]{OM:SupNum:Primzahlprodukt-Vermutung}. — \\name[description]{OM:SupNum:Primzahlprodukt-Vermutung}.',
@@ -173,7 +173,7 @@
       ),
     ),
     'OM:SupNum:Ueberrationalitaetsvermutung' => array(
-      url_abs => 'http://www.nsosp.org/de/Superial-Zahlen/Ueberrationalitaetsvermutung.php',
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Ueberrationalitaetsvermutung.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Ueberrationalitaetsvermutung.php',
       titel => 'Überrationalitätsvermutung - Die Superial-Zahlen (SN) - Deutsch',
       description => '\\name[undertitle]{OM:SupNum:Primzahlprodukt-Vermutung}. — \\name[description]{OM:SupNum:Primzahlprodukt-Vermutung}.',

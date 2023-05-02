@@ -3,7 +3,7 @@
     'OM:BiOrd:' =>
       array_merge(
         $nSOSp_g_info_wolfgangHuss,
-        array( url_abs => 'http://www.nsosp.org/de/Biordinalzahlen/',
+        array( url_abs => 'https://nsosp.org/de/Biordinalzahlen/',
       url_rel => $Glo_PathRel_back.'../de/Biordinalzahlen/',
       favicons_url_rel_opt => $Glo_PathRel_back.'../de/Biordinalzahlen/favicon/',
       name_short => 'BiOrd',
@@ -29,7 +29,7 @@
       litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
     )),
     'OM:BiOrd:Home' => array(
-      url_abs => 'http://www.nsosp.org/de/Biordinalzahlen/index.php',
+      url_abs => 'https://nsosp.org/de/Biordinalzahlen/index.php',
       url_rel => $Glo_PathRel_back.'../de/Biordinalzahlen/index.php',
       titel => 'Biordinalzahlen (BO) - Deutsch',
       description => '\\name[undertitle]{OM:BiOrd:Home}. — \\name[description]{OM:BiOrd:Home}.',
@@ -44,7 +44,7 @@
       ),
     ),
     'OM:BiOrd:Einleitung' => array(
-      url_abs => 'http://www.nsosp.org/de/Biordinalzahlen/Einleitung.php',
+      url_abs => 'https://nsosp.org/de/Biordinalzahlen/Einleitung.php',
       url_rel => $Glo_PathRel_back.'../de/Biordinalzahlen/Einleitung.php',
       titel => 'Biordinalzahlen - Einleitung (BO) - Deutsch',
       description => '\\name[undertitle]{OM:BiOrd:Einleitung}. — \\name[description]{OM:BiOrd:Einleitung}.',
@@ -76,7 +76,7 @@
       ),
     ),
     'OM:BiOrd:Literatur' => array(
-      url_abs => 'http://www.nsosp.org/de/Biordinalzahlen/Literatur.php',
+      url_abs => 'https://nsosp.org/de/Biordinalzahlen/Literatur.php',
       url_rel => $Glo_PathRel_back.'../de/Biordinalzahlen/Literatur.php',
       titel => 'Literatur - Biordinalzahlen (SN) - Deutsch',
       description => 'Literatur zu den Biordinalzahlen.',

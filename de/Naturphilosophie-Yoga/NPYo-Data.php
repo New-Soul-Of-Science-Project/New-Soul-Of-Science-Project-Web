@@ -5,7 +5,7 @@
       array_merge(
         $nSOSp_g_info_wolfgangHuss,
         array(
-      url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/',
+      url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/',
       url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/',
       favicons_url_rel_opt => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/favicon/',
       name_short => 'NaPhil-Yoga',
@@ -31,7 +31,7 @@
       litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
     )),
     'OM:NPYo:Home' => array(
-      url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/index.php',
+      url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/index.php',
       url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/index.php',
       titel => 'Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
       // description => '›Liebe zur Weisheit‹ Yoga – die Natur des Lebens verstehen und dieses Wissen anwenden. Körper und Seele als Einheit sehen, die Gedanken zur Ruhe kommen lassen … – Yoga nach der Naturphilosophie des ›Spannungsspiels des Lebens‹.',
@@ -52,7 +52,7 @@
       ),
     ),
     'OM:NPYo:Energie-Esoterik-Spiritualitaet' => array(
-      url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Energie-Esoterik-Spiritualitaet-Physik.php',
+      url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Energie-Esoterik-Spiritualitaet-Physik.php',
       url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Energie-Esoterik-Spiritualitaet-Physik.php',
       titel => 'Esoterisch spirituelle Energie und die Physik - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
       description => '\\name[undertitle]{OM:NPYo:Energie-Esoterik-Spiritualitaet}. — \\name[description]{OM:NPYo:Energie-Esoterik-Spiritualitaet}.',
@@ -70,7 +70,7 @@
       ),
     ),
     'OM:NPYo:Spiritualitaet-Psychologie' => array(
-      url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Spiritualitaet-und-Psychologie.php',
+      url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Spiritualitaet-und-Psychologie.php',
       url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Spiritualitaet-und-Psychologie.php',
       titel => 'Spiritualität und Psychologie - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
       description => 'Was haben Spiritualität und Psychologie miteinander zu tun? Unser innerer Dialog, unser Selbstmitgefühl, unsere Selbstheilung.',

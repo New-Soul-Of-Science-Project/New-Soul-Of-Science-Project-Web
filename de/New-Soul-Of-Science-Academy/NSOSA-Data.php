@@ -5,7 +5,7 @@
       array_merge(
         $nSOSp_g_info_wolfgangHuss,
         array(
-      url_abs => 'http://www.nsosp.org/de/New-Soul-Of-Science-Academy/',
+      url_abs => 'https://nsosp.org/de/New-Soul-Of-Science-Academy/',
       url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Academy/',
       favicons_url_rel_opt => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Academy/favicon/',
       name_short => 'NSOSA',
@@ -31,7 +31,7 @@
       litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
     )),
     'OM:nSOSa:Home' => array(
-      url_abs => 'http://www.nsosp.org/de/New-Soul-Of-Science-Academy/index.php',
+      url_abs => 'https://nsosp.org/de/New-Soul-Of-Science-Academy/index.php',
       url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Academy/index.php',
       titel => 'New Soul Of Science Academy (NSOSA) - Deutsch',
       description => '\\name[undertitle]{OM:nSOSa:Home}. — \\name[description]{OM:nSOSa:Home}.',
