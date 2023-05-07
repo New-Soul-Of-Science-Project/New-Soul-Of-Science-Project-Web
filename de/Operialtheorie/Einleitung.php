@@ -120,17 +120,19 @@
                     ))),
                   array( 'text', array( text => array(
                     'So können wir anschließend einfacher definieren.'."\n",
-                      'Den eben geschilderten Zusammenhang drücken wir nun als umgekehrte oder niedere Verkettung ›𓇳‹ aus, weil bei dieser Verkettung'."\n".
-                    'die Funktionsschachtelung genau anders herum ist als die übliche ›∘‹.\\color{*Bearb}{(Link zu Wikipedia\\footnote{https://de.wikipedia.org/wiki/Komposition_(Mathematik), https://de.wikipedia.org/wiki/Verkettungszeichen})}'."\n".
+                      'Den eben geschilderten Zusammenhang drücken wir nun als umgekehrte oder niedere Verkettung ›\\latexmath{ \circledcirc }‹ aus,'."\n".
+                    'weil bei der üblichen Verkettung ›\\latexmath{ \circ }‹'."\n".
+                    'die Funktionsschachtelung genau anders herum ist, als bei der hier beschriebenen.\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:KompositionMathematik:2022}, Definition.}'."\n".
                     'Die Klammerung erfolgt vom Beginn an, also im sogenannten niederen Bereich.'."\n".
-                    'Das nachfolgende Glied der niederen Verkettung wird auf das Ergebnis aller vorherigen Glieder angewandt:'."\n".
+                    'Das nachfolgende Glied der niederen Verkettung wird auf das Ergebnis aller vorherigen Glieder angewandt.'."\n".
+                    'Da die Reihenfolge entscheidend ist, wird die Indizierung unter dem ›\\latexmath{ \circledcirc }‹, durch den ›\\latexmath{ \forall }‹ Operator, generell implizit vom kleinsten zum größten Element der Indexmenge vorgenommen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  x \mapsto (f \circledcirc g)(x)  :=  g( f(x) )  }'),
-                      array( display => 'on',  latex => '{  \underset{\forall n \in [1,2,3]}{\huge{\circledcirc}} \;\; f_{n}  :=  f_{1} \circledcirc f_{2} \circledcirc f_{3}  =  f_{3}( f_{2}( f_{1}(x) ) )  }',
+                      array( display => 'on',  latex => '{  x \; \mapsto \; (f \circledcirc g)(x)  :=  g( f(x) )  }'),
+                      array( display => 'on',  latex => '{  x \; \mapsto \;\; \underset{ \forall n \in \{ 1, 2, 3 \} }{ \huge{\circledcirc} } f_{n}  :=  x \; \mapsto \; (f_{1} \circledcirc f_{2} \circledcirc f_{3})(x)  \\\ \qquad\qquad\qquad\;\;  =  f_{3}( f_{2}( f_{1}(x) ) )  }',
                                                label_name => 'OM:OT:Einleitung:Vortext:Equ-niedere-Verkettung', label_text => '\\name{OM:OT:Einleitung:Vortext:Equ-niedere-Verkettung}', label_incr => true),
-                      array( display => 'on',  latex => '{  a *o( x + 1 *o) b  :=  \underset{(\forall n \in \mathbb{N})[0 \le n < b]}{\huge{\circledcirc}} \;\; *o( x *o) a  }',
+                      array( display => 'on',  latex => '{  a *o( x + 1 *o) b  :=  \underset{ (\forall n \in \mathbb{N})[0 \le n < b] }{ \huge{\circledcirc} } \;\; *o( x *o) a  }',
                                                label_name => 'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut', label_text => '\\name{OM:OT:Einleitung:Vortext:Equ-Operial-Absolut}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(

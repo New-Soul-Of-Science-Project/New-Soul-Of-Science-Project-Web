@@ -11,8 +11,12 @@
       <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:OT:Home'); ?>
 
 	
-          <?php Sc_g_litera_make( array(  /* 'XXX', */
-                                        )); ?>
+          <?php
+            Sc_g_litera_make( array(
+              'wiki:KompositionMathematik:2022',
+              'wiki:PeanoAxiome:2021',
+            ));
+          ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>
