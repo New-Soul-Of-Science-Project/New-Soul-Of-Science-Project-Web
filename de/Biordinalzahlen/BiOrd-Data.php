@@ -73,6 +73,8 @@
           'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl' => array( headline_text => 'Neue Einsichten zu positiven aktual unendlichen Biordinalzahlen'/*, headline_text_short => 'XXX'*/),
           'OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega' => array( headline_text => 'Es gibt mehr ganze Zahlen von Null bis zu \\term{ω}, als der Wert von \\term{ω} ausdrückt', headline_text_short => 'Es gibt mehr ganze Zahlen von Null bis zu ω, als der Wert von ω ausdrückt'),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega' => array( headline_text => 'SN.Biord.NE.68'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega' => array( headline_text => 'SN.Biord.NE.75'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N' => array( headline_text => 'SN.Biord.NE.76'),
       ),
     ),
     'OM:BiOrd:Literatur' => array(

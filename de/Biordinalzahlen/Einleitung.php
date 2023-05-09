@@ -1204,9 +1204,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \Rightarrow  \sum_{ \forall i \in \omega } i  =  \frac{ \omega^{2} - \omega }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  \frac{ \omega^{2} - \omega }{ 2 }  \;\;  ,  }',
-                                    latex_if_visible => '{  \Leftrightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  \frac{ \omega^{2} - \omega }{ 2 }  \;\;  ,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in \omega } i  =  \frac{ \omega^{2} - \omega }{ 2 }  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega', label_text => '\\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  \frac{ \omega^{2} - \omega }{ 2 }  \;\;  ,  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N', label_text => '\\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'die wir ja errechnen wollten.'."\n",

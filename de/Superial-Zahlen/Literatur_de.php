@@ -17,6 +17,7 @@
                                           'Plichta:GottesGeheimeFormel:1995',
                                           'wiki:AbelscheGruppe:2022',
                                           'wiki:Allklasse:2020',
+                                          'wiki:GaussscheSummenformel:2023',
                                           'wiki:IntervallMathematik:2023',
                                           'wiki:KoerperAlgebra:2023',
                                           'wiki:Ordinalzahl:2021',

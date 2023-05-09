@@ -107,7 +107,7 @@
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Für die Funktion \\term{f(x) = x^{2}} ergibt sich:'."\n".
-                    ''))),
+                      ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  \frac{ *( x + s^{-1} *)^{2} - x^{2} }{ s^{-1} }  }',
@@ -121,10 +121,10 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Wenn wir also \\term{s^{-1}} zu Null setzen, dann kommt das übliche Ergebnis \\term{f\'(x) = 2x} heraus.'."\n".
-                    ''))),
+                      ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Für \\term{f(x) = x^{3}} ergibt sich:'."\n".
-                    ''))),
+                      ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  \frac{ *( x + s^{-1} *)^{3} - x^{3} }{ s^{-1} }  }',

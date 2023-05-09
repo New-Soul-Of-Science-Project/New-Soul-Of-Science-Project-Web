@@ -38,6 +38,14 @@
                     '• Das Pascal-Sierpinski-Dreieck ist eine Geometrie, in der Primzahlen eine außergewöhnliche Rolle spielen.\\footnote{Vgl. \\cite{Plichta:GottesGeheimeFormel:1995}, S. 263ff., 271ff. 306ff.. \\\\ Internet: \\\\ Vgl. \\jump[https://de.wikipedia.org/w/index.php?title=Sierpinski-Dreieck&oldid=179105092#Zusammenhang_mit_dem_Pascalschen_Dreieck]{}{Wikipedia, Sierpinski-Dreieck, Zusammenhang mit dem Pascalschen Dreieck}.}',
                     ))),
                       
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
                 'Motivation')),
@@ -54,8 +62,24 @@
                     'Durch das Herumspielen begriff ich:'."\n".
                     'Wir können auch ins Unendliche gehen, ohne den Limes zu benutzen!'."\n".
                     'Ohne, dass man die versinkenden Summanden wirklich zu Null werden lässt, indem man sie als Null definiert.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                                           
+                'Formale Einschränkung')),
+                  array( 'text', array( text => array(
+                    'Um nachfolgend exakt zu arbeiten, möchte ich an dieser Stelle vorab darauf aufmerksam machen,'."\n".
+                    'dass die Funktionsparameter – meistens \\latexmath{ x } – vorerst auf rationale Zahlen der Menge \\latexmath{ \mathbb{Q} } beschränkt sind.'."\n".
+                    'Wir machen diese Einschränkung, um zum einen nicht zu viele noch offenen Fragen zu berühren und'."\n".
+                    'zum anderen eine überbordende Komplexität zu vermeiden.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                                           
+                'Ableitung genau verstehen')),
+                  array( 'text', array( text => array(
                     'Dies funktioniert, wenn wir die beim Ableiten gegen Null gehenden Summanden selber als unendlich klein, aber nicht als verschwindend betrachten.'."\n".
-                    'Wir setzten den gegen Null gehenden Summanden zu \\term{Δx ≔ s^{-1}}.'."\n"))),
+                    'Wir setzten den gegen Null gehenden Summanden zu \\term{Δx ≔ s^{-1}}, zum Kehrwert der \\italic{superialen Basis} \\term{s},'."\n".
+                    'die wir im Verlauf genauer ergründen werden:'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0}{ \frac{ f(x + \Delta x) - f(x) }{ \Delta x } }  }',
@@ -74,7 +98,16 @@
                     'Dimensionen \\term{q_{-1}⋅s^{-1} + q_{-2}⋅s^{-2} + q_{-3}⋅s^{-3} + …} erhalten blieben, also in einer \\italic{superial} kleinen Welt.'."\n".
                     'Von hier können sie auch beim Integrieren wieder auftauchen.'."\n".
                     'Die Dimension \\term{q_{0}⋅s^{0} = q_{0}} stellt dann die uns bekannten, endlichen Zahlen dar, weil \\term{s^{0} = 1} ist, wie gewohnt.'."\n",
-                      'So ergibt sich als Beispiel für die Funktion \\term{f(x) = x^{2}}:'."\n"))),
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Konkrete Ableitungen} \\\\'."\n".
+                    'Nun zwei Beispiele, um anschaulich zu verstehen, was vor sich geht:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'So ergibt sich als Beispiel für die Funktion \\term{f(x) = x^{2}}:'."\n".
+                      ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  \frac{ *( x + s^{-1} *)^{2} - x^{2} }{ s^{-1} }  }',
@@ -86,9 +119,12 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  2 x + s^{-1}  }',
                                           /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x2-Ergebnis}', label_incr => false),
                     ))),
-                  array( 'text', array( text => array(
-                    'Wenn man also \\term{s^{-1}} zu Null setzt, dann kommt das übliche Ergebnis \\term{f\'(x) = 2x} heraus.'."\n",
-                      'Für \\term{f(x) = x^{3}} ergibt sich dann:'."\n"))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Wenn wir also \\term{s^{-1}} zu Null setzen, dann kommt das übliche Ergebnis \\term{f\'(x) = 2x} heraus.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Für \\term{f(x) = x^{3}} ergibt sich dann:'."\n".
+                      ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  \frac{ *( x + s^{-1} *)^{3} - x^{3} }{ s^{-1} }  }',
@@ -100,8 +136,184 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  3 x^{2} + 3 x \cdot s^{-1} + s^{-2}  }',
                                           /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x3-Ergebnis}', label_incr => false),
                     ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Wenn wir also \\term{s^{-1}} zu Null setzen, dann kommt das übliche Ergebnis \\term{f\'(x) = 3x^{2}} heraus.'."\n",
+                        '\\\\ '."\n".
+                      ''))),
+
                   array( 'text', array( text => array(
-                    'Wenn man also \\term{s^{-1}} zu Null setzt, dann kommt das übliche Ergebnis \\term{f\'(x) = 3x^{2}} heraus.'."\n"))),
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                                           
+                'Integral genau verstehen')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Ganze Superial-Zahlen} \\\\'."\n".
+                    'Interessanter wird es noch, wenn wir uns nun mit der Umkehrung der Ableitung unter der neuen Perspektive beschäftigen,'."\n".
+                    'mit der Integration:'."\n",
+                      'Beim Flächenintegral, von wir hier dann sprechen, handelt es sich ja um eine Summe'."\n".
+                    'aus unendlich schmalen und endlich hohen Flächen.'."\n".
+                    'In ihm werden all die unendlich kleinen Differenzen aufsummiert, aus der sich die Ableitung ergibt'."\n".
+                    'und die gemeinsam zurück zum Verlauf der Ausgangsfunktion führen.'."\n",
+                      'Wie groß die Schritte der Summation sind, erkennen wir an der Ableitung.'."\n".
+                    'Die aufsummierten Flächen gleichen den Ergebnis-Differenzen der Ableitung \\term{f\'(x)} in unendlich kleinen Einheiten und'."\n".
+                    'haben damit deren Höhe.'."\n".
+                    'Ihre Streifenbreite ist \\term{Δx ≔ s^{-1}}, wie die Funktionsparameter-Differenz der Ableitung.'."\n".
+                    'Wir können dabei \\term{s^{-1}} als eine unendlich kleine Einheit \\term{1⋅s^{-1}} verstehen.'."\n".
+                    'Eine \\italic{unendlich kleine Eins}.'."\n",
+                      'Auf der anderen Seite müssen wir eine unendlich große und ganze Anzahl der Streifen summieren.'."\n".
+                    'Es müssen genau \\term{s} Streifen sein, damit sich die \\term{s^{-1}} breiten Streifen zu einer endlich großen'."\n".
+                    'Zahl aufsummieren und wir das Integral erhalten.'."\n".
+                    'Damit ist eindeutig klar, dass \\term{s} eine unendlich große, ganze und positive Zahl ist.'."\n".
+                    'Es muss also formal möglich sein, alle positiven ganzen Zahlen von den endlichen bis \\term{s} zu zählen,'."\n".
+                    'um die Summe für das Integral zu beschreiben:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Sei \\latexmath{ \mathbb{S}_Z } die Menge der \\italic{ganzen Superial-Zahlen}, eine Teilmenge der \\italic{Superial-Zahlen} \\latexmath{ \mathbb{S} }.'."\n".
+                      'Seien \\latexmath{ \lbrack a, b \lbrack_\mathbb{T} }, wenn \\latexmath{ \mathbb{T} = \mathbb{S}_Z } ist, die ganzen Superial-Zahlen'."\n".
+                      'in der \\jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall}{Intervall-Menge} von \\latexmath{ a } bis \\latexmath{ b }, ohne \\latexmath{ b }, aus \\latexmath{ \mathbb{S}_Z }:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [0, x \cdot s[_{\mathbb{S}_{Z}}  \subset  \mathbb{S}_{Z}  }'),
+                      array( display => 'on',  latex => '{  f(x)  =  f(0) + \sum_{ n \in [0, x s[_{\mathbb{S}_{Z}} }  f\'(n) \cdot s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \int_{0}^{x} f\'(n) \,dn  :=  \sum_{ n \in [0, x s[_{\mathbb{S}_{Z}} }  f\'(n) \cdot s^{-1}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'So bekommen wir einen neuen Ausdruck für das Integral in Form einer originären Summe.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+                      
+                  array( 'text', array( text => array(
+                    'Wir versenken die Funktionswerte der Ableitung also im unendlich Kleinen und lassen die'."\n".
+                    'ursprüngliche Funktion aus der Versenkung endlos aufsummiert wieder im Endlichen erscheinen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Konkretes Integral} \\\\'."\n".
+                    'Nun zwei Beispiele, um anschaulich zu verstehen, was vor sich geht:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Wir nehmen als Beispiel das erste obige Ableitungsergebnis \\term{f\'(x) = 2⋅x + 1}:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f(x)  =  f(0) \; + \!\!\! \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\! *( 2 n + s^{-1} *) \cdot s^{-1}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  f(x)  =  f(0) + \!\!\! \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\! *( 2 n \cdot s^{-1} + s^{-2} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(0) \; + \; 2 \cdot s^{-1} \cdot \!\!\!\! \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\!\!\! n \; + \; s^{-2} \cdot \!\!\!\! \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\!\!\! 1  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Die hintere Summe addiert \\term{x⋅s} mal die Eins auf, was natürlich \\term{x⋅s} ergibt:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'off', latex => '{  \Leftrightarrow  f(x)  =  f(0) \; + \; 2 \cdot s^{-1} \cdot \!\!\!\! \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\!\!\! n \; + \; s^{-2} \cdot x \cdot s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(0) \; + \; 2 \cdot s^{-1} \cdot \!\!\!\! \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\!\!\! n \; + \; x \cdot s^{-1}  }',
+                                          label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Integriere-zu-x2-vor-Einsatz-GaussscheSummenformel', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-Integriere-zu-x2-vor-Einsatz-GaussscheSummenformel}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Um die übrige Summe zu berechnen, müssen wir ein tieferes Verständnis der \\jump{OM:BiOrd:Home}{Biordinalzahlen}'."\n".
+                      'anwenden und wir müssen auch nachfolgend ein tieferes Verständnis der hier entwickelten Superial-Zahlen erlangen.'."\n",
+                        'Wir können aber an dieser Stelle diese letzte Unbekannte schon mal durch Umstellung berechnen,'."\n".
+                      'denn das Ergebnis \\latexmath{ f(x) = x^2 } ist uns ja eigentlich schon durch das erste Ableitungsbeispiel oben bekannt:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  x^{2}  =  0^{2} \; + \; 2 \cdot s^{-1} \cdot \!\!\!\! \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\!\!\! n \; + \; x \cdot s^{-1}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  2 \cdot s^{-1} \cdot \!\!\!\! \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\!\!\! n  =  x^{2} - x \cdot s^{-1}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\!\!\! n  =  \frac{ x^{2} - x \cdot s^{-1} }{ 2 \cdot s^{-1} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot s - x }{ 2 }  }',
+                                          label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Summe-natuerliche-SuperialZahlen-bisOhne-xs', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-Summe-natuerliche-SuperialZahlen-bisOhne-xs}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Dies eingesetzt in Formel \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Integriere-zu-x2-vor-Einsatz-GaussscheSummenformel}'."\n".
+                      'ergibt'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  f(0) \; + \; 2 \cdot s^{-1} \cdot \frac{ x^{2} \cdot s - x }{ 2 } \; + \; x \cdot s^{-1}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  f(x)  =  f(0) \; + \; x^{2} - x \cdot s^{-1} \; + \; x \cdot s^{-1}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  f(x)  =  f(0) \; + \; x^{2}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  f(x)  =  0^{2} \; + \; x^{2}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  x^{2}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'und ist natürlich das erwartete Ergebnis.'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Die eben errechnete Summe \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Summe-natuerliche-SuperialZahlen-bisOhne-xs},'."\n".
+                    'aller \\italic{natürlichen Superial-Zahlen} bis ins Unendliche, inklusiv der Null, aus der Menge \\latexmath{ \mathbb{S}_N }, bis und ohne \\latexmath{ x \cdot s },'."\n".
+                    'ähnelt nicht zufällig sehr der angepassten Gaußschen Summenformel\\footnote{\\const{BiOrd_g_footnote_text_GaussscheSummenformel}},'."\n".
+                    'wie bei den \\jump{OM:BiOrd:Home}{Biordinalzahlen} im Abschnitt \\italic{›\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}‹} nach Formel'."\n".
+                    '\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega} angegeben.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Die nachfolgende Anpassung der Gaußschen Summenformel bezieht sich darauf, dass alle Vorgänger einer Zahl'."\n".
+                      'von der Null an aufsummiert werden, also die letzte Zahl nicht enthalten ist:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall i \in \mathbb{N} } i  =  \frac{ \omega^{2} - \omega }{ 2 }  }',
+                                          /* label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N', */label_text => '\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N}', label_incr => false),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Im späteren Abschnitt \\italic{›\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}‹}'."\n".
+                    'Wird die Struktur der superialen Basis \\latexmath{ s } in Bezug auf ihre Vorgänger für unseren Einblick geeignet aufgedröselt.'."\n".
+                    'Angelehnt an Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s} können wir für die'."\n".
+                    'natürlichen Vorgänger von \\latexmath{ x \cdot s } – wie immer mit \\latexmath{ x \in \mathbb{Q} } –'."\n".
+                    'folgende Definition aufstellen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'off', latex => '{  [ 0, s [_{\mathbb{S}_{N}}  =  \\\ \quad *\{  a  *|*  *( \forall q \in [ 0, 1 ]_{\mathbb{Q}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  a  =  \begin{cases} n  &  \text{ falls } q = 0  \\\\  q \cdot s + z  &  \text{ falls } 0 < q < 1  \\\\  s + z^{-}  &  \text{ falls } q = 1  \end{cases}  *]  *\}  }',
+                                          /* label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s', */label_text => '\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s}', label_incr => false),
+                      array( display => 'on',  latex => '{  [ 0, x \cdot s [_{\mathbb{S}_{N}}  =  \\\ \quad *\{  a  *|*  *( \forall q \in [ 0, x ]_{\mathbb{Q}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  a  =  \begin{cases} n  &  \text{ falls } q = 0  \\\\  q \cdot s + z  &  \text{ falls } 0 < q < x  \\\\  x \cdot s + z^{-}  &  \text{ falls } q = x  \end{cases}  *]  *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Es handelt sich also um folgende natürliche Superial-Zahlen, die auszugsweise so aussehen, wobei Beginn und Ende stimmen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \qquad\, 0,\; 1,\; 2,\; \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{1}{2} x s - 3 \;,\; \frac{1}{2} x s - 2 \;,\; \frac{1}{2} x s - 1 \;,\; \frac{1}{2} x s \;,\; \frac{1}{2} x s + 1 \;,\; \frac{1}{2} x s + 2 \;, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{2}{3} x s - 3 \;,\; \frac{2}{3} x s - 2 \;,\; \frac{2}{3} x s - 1 \;,\; \frac{2}{3} x s \;,\; \frac{2}{3} x s + 1 \;,\; \frac{2}{3} x s + 2 \;, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots x s - 3 \;,\; x s - 2 \;,\; x s - 1  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{XXX} \\\\'."\n".
+                    'Auf diese Weise ergibt sich für uns ein zunehmend konkretes Bild davon, was die superiale Basis \\term{s} eigentlich ist'."\n".
+                    'und was wir mit \\term{s} alles anfangen können.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
                 'Eine fraktale Struktur', subline =>
@@ -117,7 +329,8 @@
                     'Erstaunlicherweise kennt die Mathematik demnach nicht nur ortogonale Dimensionen\\color{*Bearb}{(Verweis)}, die senkrecht zueinander stehen, sondern auch unendlich kleine, lineare Dimensionen,'."\n".
                     'die sich in fraktaler Weise zwischen unseren endlichen Zahlen verstecken.\\footnote[*Entwick]{\\color{*Entwick}{Ich frage mich, welchen (fraktalen) Zusammenhang gibt es zwischen den ortogonalen und den \\italic{superialen Dimensionen}?}}'."\n".
                     'Auf Basis der \\italic{superialen Einheit} \\term{s} lassen sich folglich sogar unendlich große, lineare Dimensionen \\term{… + q_{3}⋅s^{3} + q_{2}⋅s^{2} + q_{1}⋅s^{1}} beschreiben.'."\n".
-                    'Zwischen denen liegen dann unsere endlichen Zahlen und die superial kleinen Zahlen.'."\n"))),
+                    'Zwischen denen liegen dann unsere endlichen Zahlen und die superial kleinen Zahlen.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Frage-und-zweite-Erkenntnis', text =>
                                            
                 'Was ist \\term{s}?', subline =>
@@ -131,7 +344,8 @@
                     'Beim Integrieren mit Superial-Zahlen wurde eine wohldefinierte aktual unendliche Summe mit \\term{s} Summanden von Flächenstreifen der Breite \\term{s^{-1}} aufsummiert.'."\n",
                       'Darüber ließ sich die Menge der ganzen Superial-Zahlen \\term{\M(S)_{Z}} oder der natürlichen Superial-Zahlen \\term{\M(S)_{N}} definieren.'."\n".
                     'Wobei es einen Übergang ins Unendliche gab, der im Dunkeln lag, jedoch kam man nach belieben irgendwo im unendlich großen heraus.'."\n".
-                    'Man zählt:'."\n"))),
+                    'Man zählt:'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \qquad\, 0,\; 1,\; 2,\; 3,\; \cdots \\\ \quad \cdots s - 3,\; s - 2,\; s - 1,\; s,\; s + 1,\; s + 2,\; s + 3,\; \cdots \\\ \quad \cdots s^{2} - 3,\; s^{2} - 2,\; s^{2} - 1,\; s^{2},\; s^{2} + 1,\; s^{2} + 2,\; s^{2} + 3,\; \cdots \\\ \quad\quad\; \vdots  }'),
@@ -141,7 +355,8 @@
                       '\\term{s} müsste dann eine natürliche, unendlich große Zahl sein.'."\n".
                     'Interessanterweise kamen dabei ganze, endlich große, negative Summanden ins Spiel, die man bei natürlichen Zahlen erst einmal nicht vermuten würde.'."\n".
                     'Man kann von \\term{s} eine beliebig große, endliche, natürliche Zahl abziehen, ohne dass man in der Summe ins Negative kommen kann.'."\n",
-                      'Und man kann auch folgendermaßen zählen, ohne unbedingt in Widersprüche zu geraten:'."\n"))),
+                      'Und man kann auch folgendermaßen zählen, ohne unbedingt in Widersprüche zu geraten:'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \qquad\; 0,\; 1,\; 2,\; 3,\; \cdots \\\ \quad \cdots \frac{1}{2} \cdot s - 2,\; \frac{1}{2} \cdot s - 1,\; \frac{1}{2} \cdot s,\; \frac{1}{2} \cdot s + 1,\; \frac{1}{2} \cdot s + 2, \cdots \\\ \quad \cdots \frac{1}{2} \cdot s^{2} - 2,\; \frac{1}{2} \cdot s^{2} - 1,\; \frac{1}{2} \cdot s^{2},\; \frac{1}{2} \cdot s^{2} + 1,\; \frac{1}{2} \cdot s^{2} + 2,\; \cdots \\\ \quad\quad\; \vdots  }'),
@@ -160,7 +375,8 @@
                     'unendliche, natürliche Zahl \\term{q⋅s}, dann muss sie selber eine Primfaktorenzerlegung haben in der jede Primfaktorenzerlegung einer endlichen, natürlichen Zahl steckt.'."\n".
                     'Da auch \\term{q⋅1/2⋅s}, also allgemein \\term{q_{0}⋅q_{1}⋅q_{2}⋅q_{3}⋅ … ⋅s}, immer eine unendliche, natürliche Zahl sein sollte,'."\n".
                     'muss die Primfaktorenzerlegung von \\term{s} sogar endlich beliebig oft die Primfaktorenzerlegung jeder endlichen, natürlichen Zahl enthalten.'."\n",
-                      'Folgendes Primzahlprodukt sollte das kleinste Produkt aus unendlich vielen Primfaktoren sein, dass diese Bedingung erfüllt, dabei ist \\term{\M(P)} die Menge aller endlicher Primzahlen:'."\n"))),
+                      'Folgendes Primzahlprodukt sollte das kleinste Produkt aus unendlich vielen Primfaktoren sein, dass diese Bedingung erfüllt, dabei ist \\term{\M(P)} die Menge aller endlicher Primzahlen:'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  *( \prod_{\forall p \in \mathbb{P}}  p *)  }',
@@ -171,7 +387,8 @@
                     '\\term{2⋅3⋅5⋅7⋅11⋅13⋅…}'."\n".
                     'Anschließend wird es so oft mit sich selber mal genommen, wie groß die Anzahl der endlichen, natürlichen Zahlen ist.'."\n".
                     'Diese Anzahl wird in der Mengenlehre mit \\term{⍵} bezeichnet.'."\n".
-                    'So können wir über das Symbol \\term{#} der Anzahl der Elemente einer Menge auch definieren, dass ich hier auf unendlich große, abzählbare Mengen erweitere:\\color{*Bearb}{(Verweis auf Wikipedia \\jump[https://de.wikipedia.org/w/index.php?title=Mächtigkeit_(Mathematik)&oldid=200036198]{}{Mächtigkeit (Mathematik), Mächtigkeit bei endlichen Mengen})}'."\n"))),
+                    'So können wir über das Symbol \\term{#} der Anzahl der Elemente einer Menge auch definieren, dass ich hier auf unendlich große, abzählbare Mengen erweitere:\\color{*Bearb}{(Verweis auf Wikipedia \\jump[https://de.wikipedia.org/w/index.php?title=Mächtigkeit_(Mathematik)&oldid=200036198]{}{Mächtigkeit (Mathematik), Mächtigkeit bei endlichen Mengen})}'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{N}   :=  \mathbb{N}_{0}  }',
