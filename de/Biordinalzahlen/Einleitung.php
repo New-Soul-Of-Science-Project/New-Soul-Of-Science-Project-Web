@@ -57,7 +57,7 @@
                       'Die Ordinalzahlen sind so über ihre Definition durch geordnete Mengen folgendermaßen bestimmt:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ordinalzahl:2021}, Die natürlichen Zahlen als geordnete Mengen.}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  0  :=  *\{ *\}  }'),
                       array( display => 'on',  latex => '{  1  :=  *\{ 0 *\}  =  *\{ *\{ *\} *\}  }'),
                       array( display => 'on',  latex => '{  2  :=  *\{ 0, 1 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
@@ -71,7 +71,7 @@
                     'Deshalb soll gelten, dass die Null ein Element der natürlichen Zahlen ist, wie in den Peano-Axiomen\\footnote{\\const{NSOSP_g_footnote_text_PeanoAxiome}} zur Definition von \\term{\M(N)} gefordert:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \mathbb{N}  :=  \mathbb{N}_{0}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -79,7 +79,7 @@
                     'und nach Formel \\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-n-plus-Eins} so dann auch \\term{ω+1} und folgende:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       // array( display => 'on', latex => '{  \mathbb{N}  :=  ??? *\{  n ~\middle|~ \left( n \in \mathbb{N} \right) \left( \forall x \in \mathbb{N} \right) \left[  x < n  \right]  *\}  }'),
                       array( display => 'on', latex => '{  \omega  :=  \mathbb{N}  =  *\{ 0, 1, 2, 3, 4, 5, \cdots *\}  }'),
                       array( display => 'on', latex => '{  \omega + 1  :=  \mathbb{N} \cup *\{ \mathbb{N} *\}  =  *\{ 0, 1, 2, 3, \cdots , \mathbb{N} *\}  }'),
@@ -101,7 +101,7 @@
                     'Schließlich kam ich darauf, dass negative Zahlen zum Beispiel über das Fehlen von bestimmten Mengen an der Menge der natürlichen Zahlen'."\n".
                     'dargestellt werden können:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  2  :=  *\{ 0, 1 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
                       array( display => 'on', latex => '{  1  :=  *\{ 0 *\}  =  *\{ *\{ *\} *\}  }'),
                       array( display => 'on', latex => '{  0  :=  *\{ *\}  }'),
@@ -153,7 +153,7 @@
                     'Wir ersetzen also die Menge der natürlichen Zahlen \\latexmath{ \mathbb{N} } in unserer oben geschilderten Idee durch das Mengenuniversum \\latexmath{ \mathbb{U} }:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  2  :=  *\{ 0, 1 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
                       array( display => 'on',  latex => '{  1  :=  *\{ 0 *\}  =  *\{ *\{ *\} *\}  }'),
                       array( display => 'on',  latex => '{  0  :=  *\{ *\}  }'),
@@ -178,7 +178,7 @@
                       'Die Vorgänger der Limeszahlen lassen sich nun entsprechend der absolut negativen Zahlen definieren:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega - 1  :=  \mathbb{N} \setminus 1  =  \mathbb{N} \setminus *\{ 0 *\} \\\ \qquad\qquad\qquad\quad  =  \mathbb{N} \setminus *\{ *\{ *\} *\}  }'),
                       array( display => 'on', latex => '{  \omega - 2  :=  \mathbb{N} \setminus 2  =  \mathbb{N} \setminus *\{ 0, 1 *\} \\\ \qquad\qquad\qquad\quad  =  \mathbb{N} \setminus *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
                       array( display => 'on', latex => '{  \omega - n  :=  \mathbb{N} \setminus n  =  \mathbb{N} \setminus *\{ 0, 1, \cdots , n - 1 *\}  }'),
@@ -192,7 +192,7 @@
                     'An folgendem Beispiel können wir einmal sehen, worum es geht:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega^2 - \omega - n  =  \omega^2 - *( \omega + n *)  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -202,7 +202,7 @@
                     'wenn \\term{λ} die größte Limeszahl in der Summe ist und \\term{β} die restlichen Summanden kleinerer Limeszahlen zusammenfasst:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \lambda - \beta  :=  \lambda \setminus \beta  }',
                                          label_name => 'OM:BiOrd:Einleitung:Vortext:Equ-Lambda-minus-Beta', label_text => '\\name{OM:BiOrd:Einleitung:Vortext:Equ-Lambda-minus-Beta}', label_incr => true),
                     ))),
@@ -210,7 +210,7 @@
                     'Dann wäre das Beispiel so definiert:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega^2 - *( \omega + n *)  :=  \omega^2 \setminus *( \omega + n *)  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -218,7 +218,7 @@
                       'Doch was wäre, wenn sich Vorzeichen der hinteren Summanden ändern:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega^2 - \omega + n  =  \omega^2 - *( \omega - n *)  }'),
                       array( display => 'on', latex => '{  \omega^2 - *( \omega - n *)  :=  \omega^2 \setminus *( \omega - n *)  }'),
                       array( display => 'on', latex => '{  \omega - n  :=  \omega \setminus n  }'),
@@ -234,7 +234,7 @@
                     'die Mengen in \\term{n} jedoch drinnen belassen beziehungsweise wieder hinzufügen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \Leftrightarrow  \omega^2 \setminus *( \omega \setminus n *)  =  *( \omega^2 \setminus \omega *) \cup n  }'),
                       array( display => 'on', latex => '{  \Leftrightarrow  \omega^2 - *( \omega - n *)  =  *( \omega^2 - \omega *) + n  }'),
                     ))),
@@ -275,7 +275,7 @@
                     'Die andere Möglichkeit ist, wir klammern von vorne:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega^2 - \omega + n  =  *( \omega^2 - \omega *) + n  }'),
                       array( display => 'on', latex => '{  \Rightarrow  \omega^2 - \omega + n  :=  *( \omega^2 \setminus \omega *) + n  }'),
                     ))),
@@ -286,7 +286,7 @@
                       'Noch komplexer wird es dann im folgenden Beispiel:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \omega^3 - *( \omega^2 - *( \omega - n *) *)  =  *( *( \omega^3 - \omega^2 *) + \omega *) - n  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -304,7 +304,7 @@
                     'sondern die Zahl selber:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \lambda - \beta  :=  \lambda \setminus *\{ \beta *\}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -360,7 +360,7 @@
                       'Sei, abgeleitet von Formel \\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Lambda-minus-Beta},'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.IM', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  *( \forall a \in \mathbb{U} \setminus *\{ \varnothing *\} *) *[  a^{-}  :=  \mathbb{U} \setminus a  *]  }',
                                          label_name => 'OM:BiOrd:Einleitung:IntegrierteMengenlehre:Equ-Antimenge', label_text => '\\name{OM:BiOrd:Einleitung:IntegrierteMengenlehre:Equ-Antimenge}', label_incr => true),
                     ))),
@@ -369,7 +369,7 @@
                       'Es existiert dabei keine Definition der Antimenge zur leeren Menge:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  *( a = \varnothing *) *[  \nexists a^{-}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -382,7 +382,7 @@
                       'So ergibt sich'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \mathbb{U}^{-}  :=  *\{  x  *|*  *( \forall a \in \mathbb{U} \setminus *\{ \varnothing *\} *) *[  x = a^{-}  *]  *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -392,14 +392,14 @@
                       'Das Mengenuniversum und das Antimengenuniversum überschneiden sich nicht'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \mathbb{U} \cap \mathbb{U}^{-}  =  *\{ *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'und beide zusammen'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \mathbb{U}^{i}  :=  \mathbb{U} \cup \mathbb{U}^{-}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -418,7 +418,7 @@
                       'Für die Negation einer integrierten Menge gilt also:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{  *( \\forall a \in \mathbb{U}^{i} *) *[ -a  =  \begin{cases}  a^{-}  &  \text{ falls } a \in \mathbb{U} \setminus *\{ \varnothing *\}  \\\\  a  &  \text{ falls } a = \varnothing  \\\\  \mathbb{U} \setminus a  &  \text{ falls } a \in \mathbb{U}^{-}  \end{cases} *]  }'),
                       array( display => 'on',  latex => '{  *( \\forall a \in \mathbb{U}^{i} *) *[ -a  =  \begin{cases}  a  &  \text{ falls } a = \varnothing \\\\ \mathbb{U} \setminus a  &  \text{ falls } a \in \mathbb{U}^{i} \setminus *\{ \varnothing *\}  \end{cases} *]  }',
                                     latex_if_visible => '{  \Leftrightarrow  *( \\forall a \in \mathbb{U}^{i} *) *[ -a  =  \begin{cases}  a  &  \text{ falls } a = \varnothing \\\\ \mathbb{U} \setminus a  &  \text{ falls } a \in \mathbb{U}^{i} \setminus *\{ \varnothing *\}  \end{cases} *]  }'),
@@ -427,7 +427,7 @@
                       'Alle negierten integrierten Mengen sind wieder integrierte Mengen:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.IM', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  *( \forall a \in \mathbb{U}^{i} *) *[  -a  \in \mathbb{U}^{i}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -501,7 +501,7 @@
                       'Wählen wir eine einzige Ordinalzahl, beispielsweise die \\term{2}, dann läuft dies in folgenden Schritten auf diesen Ebenen ab:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.OD', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.OD', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \text{1.}  \qquad  \mathbb{U}  =  \text{Mengenuniversum}  }'),
                       array( display => 'on', latex => '{  \text{2.}  \qquad  \mathbb{N}  =  *\{ 0, 1, 2, 3, \cdots *\}  }'),
                       array( display => 'on', latex => '{  \text{3.}  \qquad  2  =  *\{ 0, 1 *\}  }'),
@@ -512,7 +512,7 @@
                       // 'Die ausgewählte Zahl ist selber eine Menge mit all den Mengendarstellungen ihrer Vorgänger.'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  *\{> 2 *<\}  =  *\{> *\{ 0, 1 *\} *<\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -520,14 +520,14 @@
                       'ausgewählt haben, denn wir haben ja zum Ausdruck gebracht, dass wir uns mit den Elementen in \\term{\M(N)} beschäftigen:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  *\{> 2 *<\}  =  *\{> *\{ *\{> 0, 1 *<\} , 2, 3, 4, 5, \cdots *\} *<\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Und dort existieren natürlich auch alle restlichen Mengen, die es in \\term{\M(U)} noch gibt:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  *\{> 2 *<\}  =  *\{> *\{> *\{ *\{> 0, 1 *<\} , 2, 3, 4, 5, \cdots *\} *<\} \cup *( \mathbb{U} \setminus \mathbb{N} *) *<\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -535,7 +535,7 @@
                       'denn die \\term{2} fehlt ja nun, und sieht folgendermaßen aus'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *\{> \! - \! 2 *<\}  =  *\{> *\{> *\{ *<\} 0, 1, *\{> 2, 3, 4, 5, \cdots *\} *<\} \cup *( \mathbb{U} \setminus \mathbb{N} *) *<\}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  *\{> \! - \! 2 *<\}  =  *\{> *\{> *\{ 2, 3, 4, 5, \cdots *\} *<\} \cup *( \mathbb{U} \setminus \mathbb{N} *) *<\}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  *\{> \! - \! 2 *<\}  =  *\{> \mathbb{U} \setminus *\{ 0, 1 *\} *<\}  }'),
@@ -676,7 +676,7 @@
                       'so gilt, auch wegen der oben definierten Gleichsetzung von Anzahlen und deren entsprechenden Mengen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \# \mathbb{N}  =  \# \mathbb{Z}^{+}_{0}  =  \omega  =  \mathbb{N}  }'),
                       array( display => 'on',  latex => '{  \# \mathbb{Z}^{+}  =  \# \mathbb{Z}^{-}  =  \omega - 1  }'),
                       array( display => 'on',  latex => '{  \# \mathbb{Z}  =  \# \mathbb{N} + \# \mathbb{Z}^{-}  =  2 \cdot \omega - 1  }'),
@@ -685,7 +685,7 @@
                     'Die Summe aller endlichen ganzen Zahlen ist demnach Null:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N} } n \; + \sum_{ \forall n \in \mathbb{Z}^{-} } \! n  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N} } n \; - \!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ \varnothing *\} } \!\!\! n  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  0 \; + \!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ \varnothing *\} } \!\!\! n \; - \!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ \varnothing *\} } \!\!\! n  }'),
@@ -699,7 +699,7 @@
                     'Der Durchschnitt aller endlichen ganzen Zahlen ist demnach Null:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot \omega - 1 }  =  \frac{ 0 }{ 2 \cdot \omega - 1 }  }'),
                       array( display => 'on', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot \omega - 1 }  =  0  }'),
                       array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 \cdot \omega - 1 }  =  0  }'),
@@ -756,7 +756,7 @@
                     'Schauen wir uns hier noch einmal die oben stehenden Formeln \\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-minus-n} und \\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-minus-Omega} an:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  -n  :=  \mathbb{U} \setminus n  =  \mathbb{U} \setminus *\{ 0, 1, \cdots , n - 1 *\}  }',
                                           /* label_name => 'OM:BiOrd:Einleitung:Vortext:Equ-ninus-n', */label_text => '\\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-minus-n}', label_incr => false),
                       array( display => 'on',  latex => '{  -\omega  :=  \mathbb{U} \setminus \omega  =  \mathbb{U} \setminus \mathbb{N} \\\ \qquad\qquad\qquad\;  =  \mathbb{U} \setminus *\{ 0, 1, 2, 3, \cdots *\}  }',
@@ -780,7 +780,7 @@
                     'Und dies soll sich in der ersten Struktur der Formulierung ausdrücken:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = n - *( 2 \cdot n + 1 *)  *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -792,7 +792,7 @@
                       'Wenn wir die Verschiebung vereinfachend umformen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = n - 2 \cdot n - 1  *]  *\}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = - n - 1  *]  *\}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = - *( n + 1 *)  *]  *\}  }'),
@@ -812,7 +812,7 @@
                       'so gilt, auch wegen der oben definierten Gleichsetzung von Anzahlen und deren entsprechenden Mengen'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \# \mathbb{Z}^{-}  =  \# \mathbb{N}  =  \omega  =  \mathbb{N}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Z}  =  \# \mathbb{N} + \# \mathbb{Z}^{-}  =  2 \cdot \omega  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Z}^{+}  =  \# *( \mathbb{N} \setminus *\{ 0 *\} *)  =  \omega - 1  \;\;  ,  }'),
@@ -832,7 +832,7 @@
                     'weil jede negative ganze Zahl um minus Eins kleiner ist, als die natürlich Zahl, aus deren Verschiebung sie gebildet wird (siehe \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Fig-OntologieGanzeZahlen}):'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} *( n + 1 *)  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} 1  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - \sum_{ \forall n \in \mathbb{N}} 1  }'),
@@ -854,7 +854,7 @@
                     'die Summe durch die Anzahl ihrer Summanden teilen, zu:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot \omega }  =  \frac{ - \omega }{ 2 \cdot \omega }  }'),
                       array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 \cdot \omega }  =  \frac{ - \omega }{ 2 \cdot \omega }  }'),
                       array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 \cdot \omega }  =  - \frac{ 1 }{ 2 }  }'),
@@ -891,7 +891,7 @@
                     '\\latexmath{\zeta(s)} beim Funktionswert \\term{0}:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \zeta(0)  =  - \frac{ 1 }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -901,7 +901,7 @@
                     'liegt beim Funktionswert \\term{-1} der Zeta-Funktion:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \zeta(-1)  =  - \frac{ 1 }{ 12 }  }'),
                     ))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
@@ -912,7 +912,7 @@
                     'Allerdings gilt die simple Definition der Zeta-Funktion nur für komplexe Funktionswerte, dessen Realteil größer als \\term{1} ist:'."\n",
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} *) *( Re(s) > 1 *) *[  \zeta(s)  :=  \sum_{ n = 1 }^{\infty} \frac{ 1 }{ n^{s} }  *]  }'),
                       array( display => 'on',  latex => '{  \zeta(s)  :=  \frac{ 1 }{ 1^{s} } + \frac{ 1 }{ 2^{s} } + \frac{ 1 }{ 3^{s} } + \frac{ 1 }{ 4^{s} } + \frac{ 1 }{ 5^{s} } + \cdots  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \zeta(0)  :=  \frac{ 1 }{ 1^{0} } + \frac{ 1 }{ 2^{0} } + \frac{ 1 }{ 3^{0} } + \frac{ 1 }{ 4^{0} } + \frac{ 1 }{ 5^{0} } + \cdots  }'),
@@ -930,7 +930,7 @@
                     '\\latexmath{\eta(s)} ihre sogenannte analytische Fortsetzung findet, dann erhalten wir für die Definition von \\latexmath{\zeta(s)}:\\footnote{Vgl. \\cite{wiki:RiemannscheZetaFunktion:2022}, Definition und Darstellungsformen, Methoden zur analytischen Fortsetzung, Umformungen der Dirichlet-Reihe und die Eulersche Reihentransformation.}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} *) *( s \neq 1 *) *[  \zeta(s)  :=  \frac{ \eta(s) }{ 1 - 2^{1 - s} }  *]  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -938,7 +938,7 @@
                       'Wir beginnen einmal mit der einfachsten Definition der Dirichletschen Eta-Funktion:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} *)  *( Re(s) > 0 *) *[  \eta(s)  :=  \sum_{ n = 1 }^{\infty} \frac{ *( -1 *)^{n - 1} }{ n^{s} }  *]  }'),
                       array( display => 'on',  latex => '{  \eta(s)  :=  \frac{ 1 }{ 1^{s} } - \frac{ 1 }{ 2^{s} } + \frac{ 1 }{ 3^{s} } - \frac{ 1 }{ 4^{s} } + \frac{ 1 }{ 5^{s} } + \cdots  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \eta(0)  :=  \frac{ 1 }{ 1^{0} } - \frac{ 1 }{ 2^{0} } + \frac{ 1 }{ 3^{0} } - \frac{ 1 }{ 4^{0} } + \frac{ 1 }{ 5^{0} } + \cdots  }'),
@@ -957,7 +957,7 @@
                     'Benutzen wir die Formel von oben, dann ergibt sich:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \eta(0)  ?=  \sum_{ n = 1 }^{\infty} *( -1 *)^{n - 1}  ?=  \frac{ 1 }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \eta(0)  :=  \overline{ 1 - 1 + 1 - 1 + 1 + \cdots }  }'),
                       array( display => 'on',  latex => '{  \eta(0)  :=  \overline{ \sum_{ n = 1 }^{\infty} *( -1 *)^{n - 1} }  }'),
@@ -974,7 +974,7 @@
                       'Addieren wir doch auch mal die positiven und negativen Zahlen und schauen, wann wir vielleicht \\term{¼} erhalten:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \eta(-1)  :=  1 - 2 + 3 - 4 + 5 + \cdots  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! *( 2 \cdot n - 1 *) \; - \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 2 \cdot n  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \\\ \qquad\qquad \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 2 \cdot n \; - \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 1 \; - \; 2 \cdot \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! n  }'),
@@ -985,7 +985,7 @@
                     'Für die Summe aller natürlicher Zahlen können wir die Gaußsche Summenformel\\footnote{\\const{BiOrd_g_footnote_text_GaussscheSummenformel}} benutzen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } i  =  0 + 1 + 2 + 3 + \cdots + n  =  \frac{ n^{2} + n }{ 2 }  }'),
                       array( display => 'on', latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  0 + 1 + 2 + 3 + \cdots  =  \frac{ \omega^{2} + \omega }{ 2 }  }'),
                       array( display => 'on', latex => '{  \sum_{ \forall i \in \mathbb{N} } i  =  \sum_{ \forall i \in \mathbb{N} \setminus *\{ 0 *\} } i  }'),
@@ -1011,7 +1011,7 @@
                     'die Summe aller endlichen, natürlichen Zahlen hätte ein negatives Ergebnis:\\footnote{Vgl. \\cite{wiki:RiemannscheZetaFunktion:2022}, Definition und Darstellungsformen, Dirichlet-Reihe.}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} *) *( Re(s) > 1 *) *[  \zeta(s)  :=  \sum_{ n = 1 }^{\infty} \frac{ 1 }{ n^{s} }  *]  }'),
                       array( display => 'on',  latex => '{  \zeta(s)  :=  \frac{ 1 }{ 1^{s} } + \frac{ 1 }{ 2^{s} } + \frac{ 1 }{ 3^{s} } + \frac{ 1 }{ 4^{s} } + \frac{ 1 }{ 5^{s} } + \cdots  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \zeta(-1)  :=  \frac{ 1 }{ 1^{-1} } + \frac{ 1 }{ 2^{-1} } + \frac{ 1 }{ 3^{-1} } + \frac{ 1 }{ 4^{-1} } + \frac{ 1 }{ 5^{-1} } + \cdots  }'),
@@ -1024,7 +1024,7 @@
                       'Dennoch betrachten wir einmal, was das Ergebnis wäre:\\footnote{Vgl. \\cite{wiki:RiemannscheZetaFunktion:2022}, Geschichte, Anfang des 20. Jahrhunderts, Ramanujans Arbeit zur Zeta-Funktion.}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \sum_{ n = 1 }^{\infty} n  =  1 + 2 + 3 + 4 + \cdots  ?=  - \frac{ 1 }{ 12 }  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1033,7 +1033,7 @@
                     'XXX Siehe Gaußsche Summenformel\\footnote{\\const{BiOrd_g_footnote_text_GaussscheSummenformel}}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } i  =  0 + 1 + 2 + 3 + \cdots + n  =  \frac{ n^{2} + n }{ 2 }  }'),
                       array( display => 'on', latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  0 + 1 + 2 + 3 + \cdots  =  \frac{ \omega^{2} + \omega }{ 2 }  }'),
                     ))),
@@ -1052,7 +1052,7 @@
                     'Was wäre wenn:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} \setminus *\{ 1 *\} *) *[  \zeta(s)  :=  \sum_{ n = 0 }^{\infty} \frac{ 1 }{ n^{s} }  *]  }'),
                       array( display => 'on',  latex => '{  \zeta(s)  :=  \frac{ 1 }{ 0^{s} } + \frac{ 1 }{ 1^{s} } + \frac{ 1 }{ 2^{s} } + \frac{ 1 }{ 3^{s} } + \frac{ 1 }{ 4^{s} } + \frac{ 1 }{ 5^{s} } + \cdots  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \zeta(-1)  :=  \frac{ 1 }{ 0^{-1} } + \frac{ 1 }{ 1^{-1} } + \frac{ 1 }{ 2^{-1} } + \frac{ 1 }{ 3^{-1} } + \frac{ 1 }{ 4^{-1} } + \frac{ 1 }{ 5^{-1} } + \cdots  }'),
@@ -1092,7 +1092,7 @@
                     'der endlichen Zahlen gehört:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  *( \forall n \in \mathbb{N}^{+} *)  *[  \omega - n  \notin  \mathbb{N}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1122,7 +1122,7 @@
                       'Die Ordinalzahlen sind so definiert, dass nach den endlichen natürlichen Zahlen gleich \\term{ω} folgt:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  *\{ 0, 1, 2, 3, 4, 5, \cdots , \omega *\}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1137,7 +1137,7 @@
                     'der Ellipse und \\term{ω}:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *\{ 0, 1, 2, 3, \cdots , \cdots , \omega - 3, \omega - 2, \omega - 1, \omega *\}  }'),
                       //%! array( display => 'on',  latex => '{  \Leftrightarrow  *\{ 0, 1, 2, 3, \cdots , \cdots , \omega - 3, \omega - 2, \omega - 1, \omega - 0 *\}  }'),
                     ))),
@@ -1149,7 +1149,7 @@
                     'Es kommen \\term{ω} weitere Zahlen hinzu:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       //%! array( display => 'on',  latex => '{  \Rightarrow  \# *\{ 0, 1, 2, \cdots , \cdots , \omega - 2, \omega - 1, \omega - 0 *\} \\\ \qquad\qquad\qquad\qquad\qquad\qquad  =  2 \cdot \omega + 1  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# *\{ 0, 1, 2, \cdots , \cdots , \omega - 2, \omega - 1 *\}  =  2 \cdot \omega  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega', label_text => '\\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega}', label_incr => true),
@@ -1191,7 +1191,7 @@
                       'sondern auf die Elemente, die zu summieren sind:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *)  *[  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } \!\!\!\! i  =  0 + 1 + 2 + 3 + \cdots + n  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } \! i  =  \frac{ n^{2} + n }{ 2 }  *]  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n + 1 } \! i  =  \frac{ n^{2} + n }{ 2 }  *]  }'),
@@ -1203,7 +1203,7 @@
                       'So können wir nun zur Summe aller endlichen natürlichen Zahlen übergehen'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in \omega } i  =  \frac{ \omega^{2} - \omega }{ 2 }  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega', label_text => '\\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega}', label_incr => true),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  \frac{ \omega^{2} - \omega }{ 2 }  \;\;  ,  }',
