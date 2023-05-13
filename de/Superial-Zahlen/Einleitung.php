@@ -181,11 +181,47 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  [0, x \cdot s[_{\mathbb{S}_{Z}}  \subset  \mathbb{S}_{Z}  }'),
-                      array( display => 'on',  latex => '{  f(x)  =  f(0) + \sum_{ n \in [0, x s[_{\mathbb{S}_{Z}} }  f\'(n) \cdot s^{-1}  }'),
-                      array( display => 'on',  latex => '{  \int_{0}^{x} f\'(n) \,dn  :=  \sum_{ n \in [0, x s[_{\mathbb{S}_{Z}} }  f\'(n) \cdot s^{-1}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'So bekommen wir einen neuen Ausdruck für das Integral in Form einer originären Summe.'."\n",
+                      'Jetzt haben wir zwar die richtige Anzahl an Schritten, aber sie sind nicht fein genug,'."\n".
+                      'sollen sie doch eigentlich von Null bis \\latexmath{ x } in \\term{s^{-1}} kleinen Schritten laufen.'."\n".
+                      'So müssen wir die Zahlen dieses Intervals der ganzen Superial-Zahlen also mit \\term{s^{-1}} multiplizieren.'."\n",
+                        'Alternativ können wir auch eine Menge definieren, in der alle Zahlen schon mit \\term{s^{-1}} multipliziert sind:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}_{Z}(y)  :=  *\{  a  *|*  *( \forall z \in \mathbb{S}_{Z} *) *[ a = z \cdot s^{y} *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{S}_{Z}(-1)  =  *\{  a  *|*  *( \forall z \in \mathbb{S}_{Z} *) *[ a = z \cdot s^{-1} *]  *\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Um die Schreibweise in der nachfolgenden Summe kurz und lesbar zu halten,'."\n".
+                      'definieren wir eine Ergänzung der Intervall-Schreibweise:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [0, x[^{y}_{\mathbb{S}_{Z}}  :=  [0, x[_{\mathbb{S}_{Z}(y)}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  [0, x[^{-1}_{\mathbb{S}_{Z}}  =  [0, x[_{\mathbb{S}_{Z}(-1)}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'In diesem Mengen-Intervall laufen also die Zahlen in \\latexmath{ x \cdot s } unendlich kleinen Schritten'."\n".
+                      'der Größe \\term{s^{-1}} durch.'."\n",
+                        'Auszugweise sehen diese unendlich feinschrittigen ganzen Superial-Zahlen so aus, wobei Beginn und Ende exakt stimmen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \qquad\; 0 s^{-1}, 1 s^{-1}, 2 s^{-1}, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{1}{2} x - 2 s^{-1},\; \frac{1}{2} x - s^{-1},\; \frac{1}{2} x,\; \frac{1}{2} x + s^{-1},\; \frac{1}{2} x + 2 s^{-1}, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{2}{3} x - 2 s^{-1},\; \frac{2}{3} x - s^{-1},\; \frac{2}{3} x,\; \frac{2}{3} x + s^{-1},\; \frac{2}{3} x + 2 s^{-1}, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \, x - 3 s^{-1}, x - 2 s^{-1}, x - s^{-1}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Nun können wir das allgemeine Integral recht einfach definieren:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \int_{0}^{x} f\'(n) \,dn  :=  \sum_{ \forall n \in [0, x[^{-1}_{\mathbb{S}_{Z}} }  f\'(n) \cdot s^{-1}  }'),
+                      array( display => 'on',  latex => '{  f(x)  =  f(0) + \sum_{ \forall n \in [0, x[^{-1}_{\mathbb{S}_{Z}} }  f\'(n) \cdot s^{-1}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Diese Summe ist so definiert, dass sie im Falle von \\latexmath{ x < 0 } negativ wird.'."\n",
+                        'So bekommen wir einen neuen Ausdruck für das Integral in Form einer originären Summe.'."\n",
                         '\\\\'."\n".
                       ''))),
                       
@@ -204,31 +240,31 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f(x)  =  f(0) \; + \!\!\! \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\! *( 2 n + s^{-1} *) \cdot s^{-1}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  f(x)  =  f(0) + \!\!\! \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\! *( 2 n \cdot s^{-1} + s^{-2} *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(0) \; + \; 2 \cdot s^{-1} \cdot \!\!\!\! \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\!\!\! n \; + \; s^{-2} \cdot \!\!\!\! \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\!\!\! 1  }'),
+                      array( display => 'on',  latex => '{  f(x)  =  f(0) \; + \!\!\! \sum_{ \forall n \in [0, x[^{-1}_{\mathbb{S}_{Z}} }  \!\! *( 2 n + s^{-1} *) \cdot s^{-1}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  f(x)  =  f(0) + \!\!\! \sum_{ \forall n \in [0, x[^{-1}_{\mathbb{S}_{Z}} }  \!\! *( 2 n \cdot s^{-1} + s^{-2} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(0) \; + \; 2 \cdot s^{-1} \cdot \!\!\!\! \sum_{ \forall n \in [0, x[^{-1}_{\mathbb{S}_{Z}} }  \!\!\!\! n \; + \; s^{-2} \cdot \!\!\!\! \sum_{ \forall n \in [0, x[^{-1}_{\mathbb{S}_{Z}} }  \!\!\!\! 1  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Die hintere Summe addiert \\term{x⋅s} mal die Eins auf, was natürlich \\term{x⋅s} ergibt:'."\n".
+                      'Die hintere Summe addiert \\term{x⋅s} mal die Eins auf, weil die Schrittgröße hierbei ja keine Rolle spielt, was natürlich \\term{x⋅s} ergibt:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \Leftrightarrow  f(x)  =  f(0) \; + \; 2 \cdot s^{-1} \cdot \!\!\!\! \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\!\!\! n \; + \; s^{-2} \cdot x \cdot s  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(0) \; + \; 2 \cdot s^{-1} \cdot \!\!\!\! \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\!\!\! n \; + \; x \cdot s^{-1}  }',
+                      array( display => 'off', latex => '{  \Leftrightarrow  f(x)  =  f(0) \; + \; 2 \cdot s^{-1} \cdot \!\!\!\! \sum_{ \forall n \in [0, x[^{-1}_{\mathbb{S}_{Z}} }  \!\!\!\! n \; + \; s^{-2} \cdot x \cdot s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(0) \; + \; 2 \cdot s^{-1} \cdot \!\!\!\! \sum_{ \forall n \in [0, x[^{-1}_{\mathbb{S}_{Z}} }  \!\!\!\! n \; + \; x \cdot s^{-1}  }',
                                           label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Integriere-zu-x2-vor-Einsatz-GaussscheSummenformel', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-Integriere-zu-x2-vor-Einsatz-GaussscheSummenformel}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Um die übrige Summe zu berechnen, müssen wir ein tieferes Verständnis der \\jump{OM:BiOrd:Home}{Biordinalzahlen}'."\n".
-                      'anwenden und wir müssen auch nachfolgend ein tieferes Verständnis der hier entwickelten Superial-Zahlen erlangen.'."\n",
+                      'Um die übrige Summe zu berechnen, ist ein tieferes Verständnis der \\jump{OM:BiOrd:Home}{Biordinalzahlen}'."\n".
+                      'anzuwenden und wir kommen auch nicht drum herum nachfolgend ein tieferes Verständnis der hier entwickelten Superial-Zahlen zu erlangen.'."\n",
                         'Wir können aber an dieser Stelle diese letzte Unbekannte schon mal durch Umstellung berechnen,'."\n".
-                      'denn das Ergebnis \\latexmath{ f(x) = x^2 } ist uns ja eigentlich schon durch das erste Ableitungsbeispiel oben bekannt:'."\n".
+                      'denn das Ergebnis \\latexmath{ f(x) = x^2 } ist uns ja nun schon durch das erste Ableitungsbeispiel oben bekannt:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  x^{2}  =  0^{2} \; + \; 2 \cdot s^{-1} \cdot \!\!\!\! \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\!\!\! n \; + \; x \cdot s^{-1}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  2 \cdot s^{-1} \cdot \!\!\!\! \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\!\!\! n  =  x^{2} - x \cdot s^{-1}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\!\!\! n  =  \frac{ x^{2} - x \cdot s^{-1} }{ 2 \cdot s^{-1} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x s[_{\mathbb{S}_{Z}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot s - x }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  x^{2}  =  0^{2} \; + \; 2 \cdot s^{-1} \cdot \!\!\!\! \sum_{ \forall n \in [0, x[^{-1}_{\mathbb{S}_{Z}} }  \!\!\!\! n \; + \; x \cdot s^{-1}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  2 \cdot s^{-1} \cdot \!\!\!\! \sum_{ \forall n \in [0, x[^{-1}_{\mathbb{S}_{Z}} }  \!\!\!\! n  =  x^{2} - x \cdot s^{-1}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[^{-1}_{\mathbb{S}_{Z}} }  \!\!\!\! n  =  \frac{ x^{2} - x \cdot s^{-1} }{ 2 \cdot s^{-1} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[^{-1}_{\mathbb{S}_{Z}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot s - x }{ 2 }  }',
                                           label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Summe-natuerliche-SuperialZahlen-bisOhne-xs', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-Summe-natuerliche-SuperialZahlen-bisOhne-xs}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -249,7 +285,7 @@
 
                   array( 'text', array( text => array(
                     'Die eben errechnete Summe \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Summe-natuerliche-SuperialZahlen-bisOhne-xs},'."\n".
-                    'aller \\italic{natürlichen Superial-Zahlen} bis ins Unendliche, inklusiv der Null, aus der Menge \\latexmath{ \mathbb{S}_N }, bis und ohne \\latexmath{ x \cdot s },'."\n".
+                    'aller unendlich kleinen ganzen Superial-Zahlen \\latexmath{ \mathbb{S}_Z(-1) } von Null bis ausschließlich \\latexmath{ x },'."\n".
                     'ähnelt nicht zufällig sehr der angepassten Gaußschen Summenformel\\footnote{\\const{BiOrd_g_footnote_text_GaussscheSummenformel}},'."\n".
                     'wie bei den \\jump{OM:BiOrd:Home}{Biordinalzahlen} im Abschnitt \\italic{›\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}‹} nach Formel'."\n".
                     '\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega} angegeben.'."\n".
@@ -276,13 +312,13 @@
 
                   array( 'text', array( text => array(
                     'Im späteren Abschnitt \\italic{›\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}‹}'."\n".
-                    'Wird die Struktur der superialen Basis \\latexmath{ s } in Bezug auf ihre Vorgänger für unseren Einblick geeignet aufgedröselt.'."\n".
+                    'wird die Struktur der superialen Basis \\latexmath{ s } in Bezug auf ihre Vorgänger für unseren Einblick geeignet aufgedröselt.'."\n".
                     'Angelehnt an Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s} können wir für die'."\n".
                     'natürlichen Vorgänger von \\latexmath{ x \cdot s } – wie immer mit \\latexmath{ x \in \mathbb{Q} } –'."\n".
-                    'folgende Definition aufstellen:'."\n".
+                    'folgende Formel aufstellen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{  [ 0, s [_{\mathbb{S}_{N}}  =  \\\ \quad *\{  a  *|*  *( \forall q \in [ 0, 1 ]_{\mathbb{Q}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  a  =  \begin{cases} n  &  \text{ falls } q = 0  \\\\  q \cdot s + z  &  \text{ falls } 0 < q < 1  \\\\  s + z^{-}  &  \text{ falls } q = 1  \end{cases}  *]  *\}  }',
                                           /* label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s', */label_text => '\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s}', label_incr => false),
                       array( display => 'on',  latex => '{  [ 0, x \cdot s [_{\mathbb{S}_{N}}  =  \\\ \quad *\{  a  *|*  *( \forall q \in [ 0, x ]_{\mathbb{Q}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  a  =  \begin{cases} n  &  \text{ falls } q = 0  \\\\  q \cdot s + z  &  \text{ falls } 0 < q < x  \\\\  x \cdot s + z^{-}  &  \text{ falls } q = x  \end{cases}  *]  *\}  }'),
@@ -292,9 +328,57 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \qquad\, 0,\; 1,\; 2,\; \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{1}{2} x s - 3 \;,\; \frac{1}{2} x s - 2 \;,\; \frac{1}{2} x s - 1 \;,\; \frac{1}{2} x s \;,\; \frac{1}{2} x s + 1 \;,\; \frac{1}{2} x s + 2 \;, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{2}{3} x s - 3 \;,\; \frac{2}{3} x s - 2 \;,\; \frac{2}{3} x s - 1 \;,\; \frac{2}{3} x s \;,\; \frac{2}{3} x s + 1 \;,\; \frac{2}{3} x s + 2 \;, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots x s - 3 \;,\; x s - 2 \;,\; x s - 1  }'),
+                      array( display => 'on',  latex => '{  \qquad\; 0, 1, 2, \cdots n, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{1}{2} x s + z^{-}, \cdots \frac{1}{2} x s - 2,\; \frac{1}{2} x s - 1,\; \frac{1}{2} x s,\; \frac{1}{2} x s + 1, \cdots \frac{1}{2} x s + n, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{2}{3} x s + z^{-}, \cdots \frac{2}{3} x s - 2,\; \frac{2}{3} x s - 1,\; \frac{2}{3} x s,\; \frac{2}{3} x s + 1, \cdots \frac{2}{3} x s + n, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \, x s + z^{-}, \cdots x s - 2, x s - 1  }'),
                     ))),
                   array( 'text', array( text => array(
+                    'Die Summe, die diesen natürlichen Superial-Zahlen zugrunde liegt, besteht aus zwei Summanden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  q \cdot s + z  \in  \mathbb{S}_{N}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der zweite Summand \\latexmath{ z } läuft für alle \\latexmath{ q \cdot s } Summanden, von Null bis einschließlich'."\n".
+                    '\\latexmath{ q \cdot s } komplett im negativen und im positiven durch, bis auf am Beginn und am Ende.'."\n".
+                    'Am Beginn laufen nur die natürlichen Zahlen durch, mit der Null.'."\n".
+                    'Am Ende laufen nur die rein negativen durch.'."\n",
+                    /*  'Die Anzahl der natürlichen Superial-Zahlen von Null bis einschließlich \\latexmath{ q \cdot s }'."\n".
+                    'ist \\latexmath{ q \cdot s + 1 }.'."\n".
+                    'Da für Null und \\latexmath{ q \cdot s } gemeinsam nur ein ganzer Durchlauf stattfindet ist die Anzahl der'."\n".
+                    'ganzen Durchläufe allerdings nur \\latexmath{ q \cdot s }.'."\n", */
+                      'In jedem Durchlauf werden einmal alle endlichen ganzen Zahlen addiert.'."\n".
+                    'Von den Biordinalzahlen her wissen wir den Wert der Summe aller endlichen ganzen Zahlen aus Formel'."\n".
+                    '\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  - \omega  }',
+                                          /* label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z', */label_text => '\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Anzahl der rationalen Koeffizienten \\latexmath{ q } von Null bis ausschließlich Eins ist nach'."\n".
+                    'ist nach Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-reatio-Intervall-Null-Eins}:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \# *( [ 0, 1 [_\mathbb{Q} *)  =  \frac{ s }{ 2 \cdot \omega }  }',
+                                          /* label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-reatio-Intervall-Null-Eins', */label_text => '\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-reatio-Intervall-Null-Eins}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# *( [ 0, q \, [_\mathbb{Q} *)  =  \frac{ q \cdot s }{ 2 \cdot \omega }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da für Null und \\latexmath{ q \cdot s } gemeinsam nur ein ganzer Durchlauf von \\latexmath{ z } stattfindet ist letzteres die Anzahl der'."\n".
+                    'ganzen Durchläufe von \\latexmath{ z }.'."\n",
+                      'So oft addiert sich jetzt \\latexmath{ - \omega } auf:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  XXX  =  - \omega \cdot \frac{ q \cdot s }{ 2 \cdot \omega }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  XXX  =  - \frac{ q \cdot s }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
