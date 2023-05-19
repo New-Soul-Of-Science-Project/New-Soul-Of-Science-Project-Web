@@ -221,7 +221,9 @@
                       
                   array( 'text', array( text => array(
                     'Wir versenken die Funktionswerte der Ableitung also im unendlich Kleinen, als unendlich dünne Streifen, und lassen die'."\n".
-                    'ursprüngliche Funktion aus der Versenkung, durch endlos feines Aufsummieren, wieder im Endlichen erscheinen.'."\n".
+                    'ursprüngliche Funktion aus der Versenkung, durch endlos feines Aufsummieren, wieder im Endlichen erscheinen.'."\n",
+                      'Hierzu benötigen wir ganze Superial-Zahlen, im endlichen, aber auch in den anderen Potenzebenen von \\latexmath{ s }.'."\n".
+                    'Diese werden wir im folgenden Beispiel besser praktisch kennenlernen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Konkretes Integral} \\\\'."\n".
@@ -231,7 +233,7 @@
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Wir nehmen das erste obige Ableitungsbeispiel \\latexmath{ f(x) = x^2 } mit '."\n".
-                      'dem Ableitungsergebnis \\latexmath{ f\'(x) = 2 \cdot x + 1} und setzen dies in unsere Integralformel ein:'."\n".
+                      'dem Ableitungsergebnis \\term{ f\'(x) = 2 x + s^{-1} } und setzen dies in unsere Integralformel ein:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -309,11 +311,14 @@
                   array( 'text', array( text => array(
                     'Wie wir sehen, ist es tatsächlich mit den Superial-Zahlen möglich, ein Integral eines Polynoms'."\n".
                     'explizit auszurechnen.'."\n".
-                    'Dies geht nicht einfach mit jedem Integral, den die Koeffizienten sind zunächst auf rationale Zahlen festgelegt.'."\n".
+                    'Dies geht nicht einfach so mit jedem Integral, den die Koeffizienten sind zunächst auf rationale Zahlen festgelegt.'."\n".
                     'Es ist aber offensichtlich, dass wir so recht einfach verstehen und auch genau wissen, was wir bei'."\n".
                     'der Berechnung des Integrals tun.'."\n",
                       'Und das ist ja eines meiner Ziele, beim Ableiten und besonders beim Integrieren nicht so eine Black-Box vor uns zu haben.'."\n".
-                    'Und wir werden im Folgenden noch sehen, dass dieses Vorgehen weitere neue Erkenntnishorizonte eröffnet.'."\n",
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Kleiner Ausblick} \\\\'."\n".
+                    'Wir werden im Folgenden noch sehen, dass dieses Vorgehen weitere neue Erkenntnishorizonte eröffnet.'."\n",
                       'Nur zum Appetit machen kann ich hier schon mal kurz sagen, dass die zuletzt errechnete Summe \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x}'."\n".
                     'sich auch folgendermaßen beschreiben lässt, wenn wir ihren Bruch in zwei Teile zerlegen:'."\n".
                     ''))),
@@ -335,7 +340,7 @@
                     'zwischen der ontologischen Struktur der endlichen ganzen Zahlen und der Verteilung ihrer Werte (siehe \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen}, im Abschnitt \\italic{›\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}‹}).'."\n".
                     'Dadurch ergibt die Summe aller endlichen ganzen Zahlen die aktual unendlich große und negative Zahl \\latexmath{ -\omega }.'."\n",
                       'In Worten ausgedrückt:'."\n".
-                    'Wir können im Abschnitt XXX zeigen, dass die Summe aller superial kleinen ganzen Zahlen, von Null bis ohne \\latexmath{ x },'."\n".
+                    'Wir können später im Abschnitt XXX zeigen, dass die Summe aller superial kleinen ganzen Zahlen, von Null bis ohne \\latexmath{ x },'."\n".
                     'der Summe aller endlichen rationalen Zahlen, von Null bis ohne \\latexmath{ x }, und der Anzahl aller rationalen Zahlen, von Null bis ohne \\latexmath{ x },'."\n".
                     'mal der Summe aller endlichen ganzen Zahlen, in superial klein, entspricht.'."\n",
                       'Hierin kommen interessante Dinge vor:'."\n".
@@ -538,24 +543,30 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{XXX} \\\\'."\n".
-                    'Auf diese Weise ergibt sich für uns ein zunehmend konkretes Bild davon, was die superiale Basis \\term{s} eigentlich ist'."\n".
+                    'Auf diese Weise ergibt sich für uns ein zunehmend konkretes Bild davon, was die superiale Basis \\latexmath{ s } eigentlich ist'."\n".
                     'und was wir mit \\term{s} alles anfangen können.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Aus diesem besser werdendem Bild, und besonders über die nähere Beleuchtung der Frage der ganzen Superial-Zahlen,'."\n".
+                    'kommen wir gleich zu einer ganz bemerkenswerten Definition unserer superialen Basis \\latexmath{ s }.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
                 'Eine fraktale Struktur', subline =>
                   '… erste Erkenntnis')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
                       
                   array( 'figure',
                     array_merge( $SupNum_g_figure_ary_GeradeSuperialZahlen, array( name => 'OM:SupNum:Einleitung:Vortext:Fig-GeradeSuperialZahlen'))),
                                             
                   array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     'Dieses Vorgehen gab dem unendlich Kleinen eine interessante fraktale Struktur.'."\n".
                     'Ihre Selbstähnlichkeit bezieht sich darauf, dass die Gerade der endlichen Zahlen, um die unendlich kleinen, superialen Zahlen erweitert, auf diese Weise zwischen'."\n".
                     'bestimmten, noch zu definierenden endlichen Zahlen noch unendlich viele, unendlich kleine Zahlengeraden verschiedenster Dimensionsgrößen hat.'."\n".
