@@ -321,9 +321,9 @@
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot s }{ 2 } - \frac{ x }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot s }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \# *( [ 0, x \, [_\mathbb{Q} *) \cdot *( \sum_{ \forall z \in \mathbb{Q} }  z \cdot s^{-1} *)  =  - \frac{ x }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# *( [ 0, x \, [_\mathbb{Q} *) \cdot *( - \omega \cdot s^{-1} *)  =  - \frac{ x }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \!\!\!\! \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q \;+\; \# *( [ 0, x \, [_\mathbb{Q} *) \cdot *( - \omega \cdot s^{-1} *)  }'),
+                      array( display => 'on',  latex => '{  \# [ 0, x \, [_\mathbb{Q} \; \cdot \sum_{ \forall z \in \mathbb{Q} }  z \cdot s^{-1}  =  - \frac{ x }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, x \, [_\mathbb{Q} \, \cdot *( -\omega *) \cdot s^{-1}  =  - \frac{ x }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \!\!\!\! \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q \;-\; \# [ 0, x \, [_\mathbb{Q} \, \cdot \, \omega \cdot s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dabei steht das Symbol \\latexmath{ \omega } für die Anzahl der endlichen natürlichen Zahlen, mit der Null, in der Menge \\latexmath{ \mathbb{N} };'."\n".
@@ -332,13 +332,8 @@
                     'in der Theorie der Biordinalzahlen deutlich wird, dass genauso viele endliche und rein negative ganze Zahlen existieren,'."\n".
                     'wie es endliche natürliche Zahlen gibt, also endliche positive ganze Zahlen, mit der Null.'."\n".
                     'Demnach finden wir, bei genauer Untersuchung, eine \\jump{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen}{fundamentale Asymmetrie}'."\n".
-                    'zwischen der ontologischen Struktur der endlichen ganzen Zahlen und der Verteilung ihrer Werte (siehe \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen}, auf im Abschnitt \\italic{›\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}‹}).'."\n".
+                    'zwischen der ontologischen Struktur der endlichen ganzen Zahlen und der Verteilung ihrer Werte (siehe \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen}, im Abschnitt \\italic{›\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}‹}).'."\n".
                     'Dadurch ergibt die Summe aller endlichen ganzen Zahlen die aktual unendlich große und negative Zahl \\latexmath{ -\omega }.'."\n",
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
                       'In Worten ausgedrückt:'."\n".
                     'Wir können im Abschnitt XXX zeigen, dass die Summe aller superial kleinen ganzen Zahlen, von Null bis ohne \\latexmath{ x },'."\n".
                     'der Summe aller endlichen rationalen Zahlen, von Null bis ohne \\latexmath{ x }, und der Anzahl aller rationalen Zahlen, von Null bis ohne \\latexmath{ x },'."\n".
@@ -348,8 +343,8 @@
                     'Diese Summe ließ sich vorher nicht explizit in einer aktual unendlichen Zahl ausdrücken, soweit mir bekannt.'."\n".
                     'Auch die Anzahl aller endlichen rationalen Zahlen insgesamt und in einem Intervall konnte nach meinem Wissen zuvor'."\n".
                     'nicht durch eine aktual unendliche Zahl angegeben werden.'."\n",
-                      'Auch, dass die Summe der endlichen ganzen Zahlen negativ ist und \\latexmath{ -\omega } entspricht, war mir nicht bekannt.'."\n".
-                    'XXX'."\n".
+                      'Auch, dass die Summe der endlichen ganzen Zahlen negativ ist und \\latexmath{ -\omega } entspricht, wie eben gesagt, war mir nicht bekannt.'."\n",
+                      'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
