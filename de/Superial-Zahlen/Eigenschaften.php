@@ -144,7 +144,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \# *( [ 0, 1 [_\mathbb{Q} *)  =  \frac{ s }{ 2 \cdot \omega }  \;\; ,  }',
-                                          label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-reatio-Intervall-Null-Eins', label_text => '\\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-reatio-Intervall-Null-Eins}', label_incr => true),
+                                          label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins', label_text => '\\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'durch Umformung.'."\n",
@@ -163,7 +163,7 @@
                   array( 'text', array( text => array(
                     'Und wir können sogar noch weiter gehen und feststellen, dass \\latexmath{ \omega } seine Primfaktoren mit'."\n".
                     '\\latexmath{ s } teilen muss, wenn die Anzahl der rationalen Zahlen in \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} }'."\n".
-                    'in Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-reatio-Intervall-Null-Eins} eine ganze Zahl sein soll.'."\n".
+                    'in Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins} eine ganze Zahl sein soll.'."\n".
                     'Weiter ist klar, dass \\latexmath{ \omega } aktual unendlich groß ist.'."\n".
                     'Es kann also nur ein Produkt aus unendlich vielen endlichen Primzahlen sein.'."\n",
                       'Doch welches Teilprodukt aus \\latexmath{ s } ist es, wenn klar ist, dass \\latexmath{ s } unendlich viel größer ist'."\n".

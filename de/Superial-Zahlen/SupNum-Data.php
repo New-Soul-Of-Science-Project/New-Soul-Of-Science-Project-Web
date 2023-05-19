@@ -86,7 +86,7 @@
           'OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS' => array( headline_text => 'Was lernen wir über die Größe von \\term{ω} und die Struktur von \\term{s} über die Frage der Vorgänger?', headline_text_short => 'Was lernen wir über die Größe von ω und die Struktur von s über die Frage der Vorgänger?'),
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s' => array( headline_text => 'SN.Eig.SVS.1'),
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z' => array( headline_text => 'SN.Eig.SVS.8'),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-reatio-Intervall-Null-Eins' => array( headline_text => 'SN.Eig.SVS.10'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins' => array( headline_text => 'SN.Eig.SVS.10'),
           'OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm' => array( headline_text => 'Ausgangspunkt der Primzahlprodukt-Vermutung'/* , headline_text_short => 'XXX' */),
           'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen' => array( headline_text => 'Erklärung der Anzahl der endlichen ganzen Zahlen durch ihren ontologischen Ursprung in den Biordinalzahlen'/* , headline_text_short => 'XXX' */),
@@ -105,8 +105,11 @@
       jump_ary => array(
         'OM:SupNum:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
-          'OM:SupNum:Einleitung:Vortext:Equ-Integriere-zu-x2-vor-Einsatz-GaussscheSummenformel' => array( headline_text => 'SN.Ein.13'),
-          'OM:SupNum:Einleitung:Vortext:Equ-Summe-natuerliche-SuperialZahlen-bisOhne-xs' => array( headline_text => 'SN.Ein.17'),
+          'OM:SupNum:Einleitung:Vortext:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen' => array( headline_text => 'SN.Ein.4'),
+          'OM:SupNum:Einleitung:Vortext:Equ-Integriere-zu-x2-bis-auf-letzte-Summe' => array( headline_text => 'SN.Ein.11'),
+          'OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x' => array( headline_text => 'SN.Ein.13'),
+          'OM:SupNum:Einleitung:Vortext:Equ-Menge-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x' => array( headline_text => 'SN.Ein.22'),
+          'OM:SupNum:Einleitung:Vortext:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-x' => array( headline_text => 'SN.Ein.24'),
           'OM:SupNum:Einleitung:Vortext:Frage-und-zweite-Erkenntnis' => array( headline_text => 'Was ist \\term{s}?'/*, headline_text_short => 'XXX'*/),
           'OM:SupNum:Einleitung:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N' => array( headline_text => 'SN.Ein.6'),

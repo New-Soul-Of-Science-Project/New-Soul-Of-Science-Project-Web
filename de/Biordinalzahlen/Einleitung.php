@@ -88,7 +88,7 @@
                   array( 'text', array( text => array(
                     'Insgesamt sehen wir, dass jede definierte Zahl der Anzahl der Elemente in einer eineindeutig bestimmten geordnete Menge entspricht.'."\n",
                       'Die Anzahl \\latexmath{ \omega } symbolisiert mathematisch gesehen die aktual unendliche Anzahl,'."\n".
-                    'die der Schritte einer vollständigen Induktion\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Unendlichkeitsaxiom:2021}, Formulierung; Bedeutung für die Mathematik, Natürliche Zahlen.} entsprechen, um alle endlichen Zahlen von der Null an'."\n".
+                    'die der Schritte einer vollständigen Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} entsprechen, um alle endlichen Zahlen von der Null an'."\n".
                     'vollständig durchzuzählen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
@@ -1197,10 +1197,19 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n + 1 } \! i  =  \frac{ n^{2} + n }{ 2 }  *]  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ *( n - 1 *)^{2} + *( n - 1 *) }{ 2 }  *]  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ *( n^{2} - 2 \cdot n + 1 *) + *( n - 1 *) }{ 2 }  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ n^{2} - n }{ 2 }  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ n^{2} - n }{ 2 }  *]  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n', label_text => '\\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'So können wir nun zur Summe aller endlichen natürlichen Zahlen übergehen'."\n".
+                      'Ich gehe davon aus, dass dieser Zusammenhang ganz allgemein für alle endlichen und aktual unendlichen „natürlichen“ Zahlen gilt, die ich hier mal \\latexmath{ \mathbb{N}_\infty } nenne:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in [ 0, n [_{\mathbb{N}_{\infty}} } i  =  \frac{ n^{2} - n }{ 2 }  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich', label_text => '\\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'So können wir von dort zur Summe aller endlichen natürlichen Zahlen übergehen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(

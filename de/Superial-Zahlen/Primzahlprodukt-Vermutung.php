@@ -32,14 +32,14 @@
                     'dass die Anzahl der endlichen natürlichen Zahlen dem Produkt aller endlichen Primzahlen entspricht.'."\n",
                       'Den Ansatz zu dieser Vermutung finden wir im Abschnitt \\italic{\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm}},'."\n".
                     'wo wir uns schon mit der Struktur von \\term{s} beschäftigt haben.'."\n",
-                      'Dabei fanden wir, dass die Anzahl der rationalen Zahlen \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} }, von einschließlich der Null bis zur Eins, ohne die Eins, in Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-reatio-Intervall-Null-Eins}'."\n".
+                      'Dabei fanden wir, dass die Anzahl der rationalen Zahlen \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} }, von einschließlich der Null bis zur Eins, ohne die Eins, in Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}'."\n".
                     'eine ganze Zahl sein muss.'."\n".
                     'Das können wir mit Hilfe der Abrundung durch die Gaußklammer\\color{*Bearb}{(Verweis)} \\latexmath{ \lfloor x \rfloor } zum Ausdruck bringen, die eine Zahl \\latexmath{ x } auf die nächst kleinere ganze Zahl abrundet, wenn sie noch keine ganze Zahl ist:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \# *( [ 0, 1 [_\mathbb{Q} *)  =  \frac{ s }{ 2 \cdot \omega }  }',
-                                          /* label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-reatio-Intervall-Null-Eins', */label_text => '\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-reatio-Intervall-Null-Eins}', label_incr => false),
+                                          /* label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins', */label_text => '\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  \frac{ s }{ 2 \cdot \omega } - \left\lfloor \frac{ s }{ 2 \cdot \omega } \right\rfloor  =  0  }'),
                     ))),
                   array( 'text', array( text => array(
