@@ -72,7 +72,7 @@
                     'Wir machen diese Einschränkung, um zum einen nicht zu viele noch offenen Fragen zu berühren und'."\n".
                     'zum anderen eine überbordende Komplexität zu vermeiden.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen', text =>
                                            
                 'Ableitung genau verstehen')),
                   array( 'text', array( text => array(
@@ -152,9 +152,9 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Ganze Superial-Zahlen} \\\\'."\n".
-                    'Interessanter wird es noch, wenn wir uns nun mit der Umkehrung der Ableitung unter der neuen Perspektive beschäftigen,'."\n".
+                    'Interessanter wird es noch, wenn wir uns nun mit der Umkehrung der Ableitung aus der neuen Perspektive beschäftigen,'."\n".
                     'mit der Integration:'."\n",
-                      'Beim Flächenintegral, von wir hier dann sprechen, handelt es sich ja um eine Summe'."\n".
+                      'Beim Flächenintegral, von dem wir hier sprechen, handelt es sich um eine Summe'."\n".
                     'aus unendlich schmalen und endlich hohen Flächen.'."\n".
                     'In ihm werden all die unendlich kleinen Differenzen aufsummiert, aus der sich die Ableitung ergibt'."\n".
                     'und die gemeinsam zurück zum Verlauf der Ausgangsfunktion führen.'."\n",
@@ -182,6 +182,41 @@
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  [0, x \cdot s[_{\mathbb{S}_{Z}}  \subset  \mathbb{S}_{Z}  }'),
                     ))),
+
+                  array( 'text', array( text => array(
+                    'Die ganzen Superial-Zahlen können grundsätzlich Summanden aller natürlichen Potenzen von \\latexmath{ s }, also Null und größer, enthalten;'."\n".
+                    'in der nullten Potenz, im endlichen Summanden, eben nur endliche ganze Zahlen;'."\n".
+                    'in den höheren Potenzen nur rationale Zahlen als Koeffizienten.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Prinzipiell haben ganze Superial-Zahlen mit der maximalen Potenz Eins – \\latexmath{ s^1 = s } –,'."\n".
+                      'die wir in unseren Beispielen zum Integrieren als Grundlage benötigen, also die Form:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} *) *( \forall z \in \mathbb{Z} *)  *[  q \cdot s + z  \in  \mathbb{S}_{Z}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Für die genaue Menge können wir, angelehnt an die später gefundene Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s},'."\n".
+                      'folgende Beschreibung geben – wie immer mit \\latexmath{ x \in \mathbb{Q} }:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'off', latex => '{  [ 0, s [_{\mathbb{S}_{N}}  =  \\\ \quad *\{  a  *|*  *( \forall q \in [ 0, 1 ]_{\mathbb{Q}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  a  =  \begin{cases} n  &  \text{ falls } q = 0  \\\\  q \cdot s + z  &  \text{ falls } 0 < q < 1  \\\\  s + z^{-}  &  \text{ falls } q = 1  \end{cases}  *]  *\}  }',
+                                          /* label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s', */label_text => '\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s}', label_incr => false),
+                      array( display => 'on',  latex => '{  [ 0, x \cdot s [_{\mathbb{S}_{Z}}  =  \\\ \quad *\{  a  *|*  *( \forall q \in [ 0, 1 ]_{\mathbb{Q}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  a  =  \begin{cases} n  &  \text{ falls } q = 0  \\\\  q \cdot s + z  &  \text{ falls } 0 < q < x  \\\\  x \cdot s + z^{-}  &  \text{ falls } q = x  \end{cases}  *]  *\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Es handelt sich also konkret um folgende ganze Superial-Zahlen, die auszugsweise so aussehen, wobei Beginn und Ende exakt stimmen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [0, x \cdot s [_{\mathbb{S}_{Z}}  =  \\\  \quad *\{  \quad\,  0, 1, 2, \cdots n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{1}{2} x s + z^{-}, \cdots \frac{1}{2} x s - 2,\; \frac{1}{2} x s - 1,\; \frac{1}{2} x s,\; \frac{1}{2} x s + 1, \cdots \frac{1}{2} x s + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{2}{3} x s + z^{-}, \cdots \frac{2}{3} x s - 2,\; \frac{2}{3} x s - 1,\; \frac{2}{3} x s,\; \frac{2}{3} x s + 1, \cdots \frac{2}{3} x s + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, x s + z^{-}, \cdots x s - 2, x s - 1   \quad *\}  }'),
+                    ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Jetzt haben wir zwar die richtige Anzahl an Schritten, aber sie sind nicht fein genug,'."\n".
                       'sollen sie doch eigentlich von Null bis \\latexmath{ x } in \\term{s^{-1}} kleinen Schritten laufen.'."\n".
@@ -202,7 +237,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \quad\; [0, x[_{\mathbb{S}^{-1}_{Z}}  =  \\\  \quad *\{  \quad\,  0 s^{-1}, 1 s^{-1}, 2 s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{1}{2} x - 2 s^{-1},\; \frac{1}{2} x - s^{-1},\; \frac{1}{2} x,\; \frac{1}{2} x + s^{-1},\; \frac{1}{2} x + 2 s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{2}{3} x - 2 s^{-1},\; \frac{2}{3} x - s^{-1},\; \frac{2}{3} x,\; \frac{2}{3} x + s^{-1},\; \frac{2}{3} x + 2 s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, x - 3 s^{-1}, x - 2 s^{-1}, x - s^{-1}   \quad *\}  }',
+                      array( display => 'on',  latex => '{  [0, x[_{\mathbb{S}^{-1}_{Z}}  =  \\\  \quad *\{  \quad\,  0 s^{-1}, 1 s^{-1}, 2 s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{1}{2} x - 2 s^{-1},\; \frac{1}{2} x - s^{-1},\; \frac{1}{2} x,\; \frac{1}{2} x + s^{-1},\; \frac{1}{2} x + 2 s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{2}{3} x - 2 s^{-1},\; \frac{2}{3} x - s^{-1},\; \frac{2}{3} x,\; \frac{2}{3} x + s^{-1},\; \frac{2}{3} x + 2 s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, x - 3 s^{-1}, x - 2 s^{-1}, x - s^{-1}   \quad *\}  }',
                                           label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -221,8 +256,8 @@
                       
                   array( 'text', array( text => array(
                     'Wir versenken die Funktionswerte der Ableitung also im unendlich Kleinen, als unendlich dünne Streifen, und lassen die'."\n".
-                    'ursprüngliche Funktion aus der Versenkung, durch endlos feines Aufsummieren, wieder im Endlichen erscheinen.'."\n",
-                      'Hierzu benötigen wir ganze Superial-Zahlen, im endlichen, aber auch in den anderen Potenzebenen von \\latexmath{ s }.'."\n".
+                    'ursprüngliche Funktion aus der Versenkung wieder im Endlichen erscheinen, durch endlos feines Aufsummieren.'."\n",
+                      'Hierzu benötigen wir ganze Superial-Zahlen, skaliert ins superial kleine.'."\n".
                     'Diese werden wir im folgenden Beispiel besser praktisch kennenlernen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -232,7 +267,7 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Wir nehmen das erste obige Ableitungsbeispiel \\latexmath{ f(x) = x^2 } mit '."\n".
+                      'Wir nehmen das erste obige \\jump{OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen}{Ableitungsbeispiel} \\latexmath{ f(x) = x^2 } mit '."\n".
                       'dem Ableitungsergebnis \\term{ f\'(x) = 2 x + s^{-1} } und setzen dies in unsere Integralformel ein:'."\n".
                       ''))),
                   array( 'equations',
@@ -243,8 +278,8 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Anschließend haben wir die innere und äußere Summe in zwei getrennte Summen umgeformt.'."\n",
-                        'Die hintere Summe addiert \\latexmath{ x \cdot s } mal die Eins auf, weil die Schrittgröße hierbei ja keine Rolle spielt,'."\n".
-                      'sondern nur die Schrittanzahl, was natürlich \\latexmath{ x \cdot s } ergibt:'."\n".
+                        'Die hintere Summe addiert die Eins \\latexmath{ x \cdot s } mal, weil die Schrittgröße hierbei ja keine Rolle spielt,'."\n".
+                      'sondern nur die Schrittanzahl, und das ergibt natürlich auch \\latexmath{ x \cdot s }:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -264,9 +299,12 @@
                                            /* label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich', */label_text => '\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wir müssen nur berücksichtigen, dass die Werte der gesuchten Summe in superial kleinen Schritten daher kommen:'."\n".
+                      'Diese Summe ist extra darauf angepasst, dass sie auch für aktual unendlich große Werte von \\latexmath{ n },'."\n".
+                      'also für aktual unendlich große natürliche Zahlen, gilt.'."\n".
+                      'Dies wird durch das Mengensymbol \\latexmath{ \mathbb{N}_\infty } ausgedrückt.'."\n",
+                        'Wir müssen nur berücksichtigen, dass die Werte der gesuchten Summe in superial kleinen Schritten daher kommen:'."\n".
                       'Das bedeutet, dass wir es mit \\latexmath{ x \cdot s } Elementen zu tun haben – anstatt mit \\latexmath{ x } –,'."\n".
-                      'was in der oben stehenden Formel auf der Ergebnisseite mit dem Faktor \\latexmath{ s } in \\latexmath{ n } eingeht.'."\n".
+                      'was in der oben stehenden Formel auf der Ergebnisseite als \\latexmath{ x \cdot s } für \\latexmath{ n } eingeht.'."\n".
                       'Jedoch ist die Größe der einzelnen Summanden auf Ebene der ganzen Zahlen superial klein, sodass wir das Ergebnis um eine superiale Potenz \\latexmath{ s }'."\n".
                       'verringern müssen:'."\n".
                       ''))),
@@ -317,7 +355,18 @@
                       'Und das ist ja eines meiner Ziele, beim Ableiten und besonders beim Integrieren nicht so eine Black-Box vor uns zu haben.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Kleiner Ausblick} \\\\'."\n".
+                    'Auf diese Weise ergibt sich für uns ein zunehmend konkretes Bild davon, was die superiale Basis \\latexmath{ s } eigentlich ist'."\n".
+                    'und was wir mit \\latexmath{ s } alles anfangen können.'."\n".
+                    'Aus diesem besser werdendem Bild, und besonders über die nähere Beleuchtung der Frage der ganzen Superial-Zahlen,'."\n".
+                    'kommen wir gleich zu einer ganz bemerkenswerten Definition unserer superialen Basis \\latexmath{ s }.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                                           
+                'Kleiner Ausblick zwischendurch')),
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    '• Die Formeln sollten Links zu denen des Abschnitts haben, in dem sie entwickelt werden.',
+                    ))),
+                  array( 'text', array( text => array(
                     'Wir werden im Folgenden noch sehen, dass dieses Vorgehen weitere neue Erkenntnishorizonte eröffnet.'."\n",
                       'Nur zum Appetit machen kann ich hier schon mal kurz sagen, dass die zuletzt errechnete Summe \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x}'."\n".
                     'sich auch folgendermaßen beschreiben lässt, wenn wir ihren Bruch in zwei Teile zerlegen:'."\n".
@@ -325,38 +374,71 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot s }{ 2 } - \frac{ x }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot s }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \# [ 0, x \, [_\mathbb{Q} \; \cdot \sum_{ \forall z \in \mathbb{Q} }  z \cdot s^{-1}  =  - \frac{ x }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, x \, [_\mathbb{Q} \, \cdot *( -\omega *) \cdot s^{-1}  =  - \frac{ x }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \!\!\!\! \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q \;-\; \# [ 0, x \, [_\mathbb{Q} \, \cdot \, \omega \cdot s^{-1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der erste Summand kann später im Abschnitt \\color{*Bearb}{XXX} aus der Struktur der ganzen Superial-Zahlen'."\n".
+                    'und unseren Erkenntnissen in der Theorie der Biordinalzahlen berechnet werden zu:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ x^{2} \cdot s }{ 2 }  =  *( \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in ] 0, x ]_\mathbb{Q}}  \!\! q *) \cdot \omega  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ x^{2} \cdot s }{ 2 }  =  \# [ 0, x [_\mathbb{Q} \; \cdot \; x \cdot \omega  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dabei steht das Symbol \\latexmath{ \omega } für die Anzahl der endlichen natürlichen Zahlen, mit der Null, in der Menge \\latexmath{ \mathbb{N} };'."\n".
-                    'für die vollständige Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n",
-                      'Zunächst ist es vermutlich für den ein oder anderen erstaunlich, dass ganz unabhängig von den hier entwickelten Superial-Zahlen'."\n".
-                    'in der Theorie der Biordinalzahlen deutlich wird, dass genauso viele endliche und rein negative ganze Zahlen existieren,'."\n".
+                    'für die vollständige Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n".
+                    'Und das Symbol \\latexmath{ \# } gibt die Anzahl der Elemente der nachfolgenden Menge.'."\n",
+                      'Gleiches gilt auch für den zweiten Summanden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  - \frac{ x }{ 2 }  =  \# [ 0, x \, [_\mathbb{Q} \; \cdot \sum_{ \forall z \in \mathbb{Q} }  z \cdot s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  - \frac{ x }{ 2 }  =  \# [ 0, x \, [_\mathbb{Q} \, \cdot *( -\omega *) \cdot s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  - \frac{ x }{ 2 }  =  - \; \# [ 0, x \, [_\mathbb{Q} \, \cdot \; \omega \cdot s^{-1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hierbei ist es vermutlich für den ein oder anderen erstaunlich, dass ganz unabhängig von den hier entwickelten Superial-Zahlen'."\n".
+                    'in der Theorie der Biordinalzahlen deutlich wird, dass genauso viele endliche rein negative ganze Zahlen existieren,'."\n".
                     'wie es endliche natürliche Zahlen gibt, also endliche positive ganze Zahlen, mit der Null.'."\n".
                     'Demnach finden wir, bei genauer Untersuchung, eine \\jump{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen}{fundamentale Asymmetrie}'."\n".
                     'zwischen der ontologischen Struktur der endlichen ganzen Zahlen und der Verteilung ihrer Werte (siehe \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen}, im Abschnitt \\italic{›\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}‹}).'."\n".
-                    'Dadurch ergibt die Summe aller endlichen ganzen Zahlen die aktual unendlich große und negative Zahl \\latexmath{ -\omega }.'."\n",
-                      'In Worten ausgedrückt:'."\n".
-                    'Wir können später im Abschnitt XXX zeigen, dass die Summe aller superial kleinen ganzen Zahlen, von Null bis ohne \\latexmath{ x },'."\n".
-                    'der Summe aller endlichen rationalen Zahlen, von Null bis ohne \\latexmath{ x }, und der Anzahl aller rationalen Zahlen, von Null bis ohne \\latexmath{ x },'."\n".
-                    'mal der Summe aller endlichen ganzen Zahlen, in superial klein, entspricht.'."\n",
-                      'Hierin kommen interessante Dinge vor:'."\n".
-                    'Die Summe aller endlichen rationalen Zahlen, von Null bis ohne \\latexmath{ x }.'."\n".
-                    'Diese Summe ließ sich vorher nicht explizit in einer aktual unendlichen Zahl ausdrücken, soweit mir bekannt.'."\n".
+                    'Dadurch ergibt die Summe aller endlichen ganzen Zahlen die aktual unendlich große negative Zahl \\latexmath{ -\omega } (siehe Formel \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}).'."\n",
+                      'Addieren wir nun beide Summanden, so erhalten wir:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \# [ 0, x [_\mathbb{Q} \; \cdot \; x \cdot \omega \;-\; \# [ 0, x \, [_\mathbb{Q} \, \cdot \, \omega \cdot s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \# [ 0, x [_\mathbb{Q} \; \cdot \; \omega \cdot *( x - s^{-1} *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Ein mir bisher unbekanntes und bemerkenswertes Ergebnis aus unendlichen Summen und aktual unendlichen Anzahlen.'."\n",
+                      'Ebenso für die Summe aller endlichen rationalen Zahlen von Null bis ausschließlich – oder einschließlich – \\latexmath{ x } können wir ein'."\n".
+                    'Ergebnis finden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot s }{ 4 \cdot \omega } - \frac{ x }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall q \in [ 0, x ]_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot s }{ 4 \cdot \omega } - \frac{ x }{ 2 } + x  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall q \in [ 0, x ]_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot s }{ 4 \cdot \omega } + \frac{ x }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Diese Summe ließ sich vorher nicht explizit in einer aktual unendlichen Zahl ausdrücken, soweit mir bekannt.'."\n",
+                      'In alldem kommen einige interessante Dinge vor, wie wir sehen, die zuvor wohl nicht zu fassen waren:'."\n".
                     'Auch die Anzahl aller endlichen rationalen Zahlen insgesamt und in einem Intervall konnte nach meinem Wissen zuvor'."\n".
-                    'nicht durch eine aktual unendliche Zahl angegeben werden.'."\n",
-                      'Auch, dass die Summe der endlichen ganzen Zahlen negativ ist und \\latexmath{ -\omega } entspricht, wie eben gesagt, war mir nicht bekannt.'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'nicht durch eine aktual unendliche Zahl ausgedrückt werden.'."\n".
+                    'Und auch, wie eben gesagt, dass die Summe der endlichen ganzen Zahlen negativ ist und \\latexmath{ -\omega } entspricht'."\n".
+                    'war mir nicht bekannt.'."\n",
+                      'Ich denke, all dies ist schon etwas ziemlich besonderes und kann Appetit auf mehr machen.'."\n".
+                    'Da ist im Folgenden noch einiges faszinierendes zu Entdecken.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'XXX Nun kennen wir zwar das Ergebnis der Summe \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x},'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      'Nun kennen wir zwar das Ergebnis der Summe \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x},'."\n".
                     'aller unendlich kleinen ganzen Superial-Zahlen'."\n".
                     // '\\hidden{\\latexmath{ \mathbb{S}^{-1}_Z }'."\n".
                     'von Null bis ausschließlich \\latexmath{ x }.'."\n".
@@ -461,9 +543,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \# *( [ 0, 1 [_\mathbb{Q} *)  =  \frac{ s }{ 2 \cdot \omega }  }',
+                      array( display => 'on',  latex => '{  \# [ 0, 1 [_\mathbb{Q}  =  \frac{ s }{ 2 \cdot \omega }  }',
                                           /* label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins', */label_text => '\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# *( [ 0, x \, [_\mathbb{Q} *)  =  \frac{ x \cdot s }{ 2 \cdot \omega }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, x [_\mathbb{Q}  =  \frac{ x \cdot s }{ 2 \cdot \omega }  }',
                                           label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-x', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-x}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -475,8 +557,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \# *( [ 0, x \, [_\mathbb{Q} *) \cdot *( - \omega \cdot s^{-1} *)  =  \frac{ x \cdot s }{ 2 \cdot \omega } \cdot *( - \omega \cdot s^{-1} *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# *( [ 0, x \, [_\mathbb{Q} *) \cdot *( - \omega \cdot s^{-1} *)  =  - \frac{ x }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \# [ 0, x \, [_\mathbb{Q} \, \cdot *( - \omega \cdot s^{-1} *)  =  \frac{ x \cdot s }{ 2 \cdot \omega } \cdot *( - \omega \cdot s^{-1} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, x \, [_\mathbb{Q} \, \cdot *( -\omega *) \cdot s^{-1}  =  - \frac{ x }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dies entspricht tatsächlich, wie gedacht, dem zweiten Teil unserer gesuchten'."\n".
@@ -487,11 +569,91 @@
                       'Der erste Teil der gesuchten Summe \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x}'."\n".
                     'ist nach unseren Analysen die Summe des ersten Teils der feinschrittigen superial kleinen ganzen Zahlen von Null bis ausschließlich \\latexmath{ x }'."\n".
                     'in Formel \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Menge-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x},'."\n".
-                    'also aller rationalen Zahlen von Null bis ausschließlich \\latexmath{ x }:'."\n".
+                    'also aller rationalen Zahlen von Null bis ausschließlich \\latexmath{ x }.'."\n".
+                    'Diese Summe muss allerdings für jede superial kleine Zahl gebildet werden, die in unserer Menge \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen}'."\n".
+                    'enthalten ist.'."\n".
+                    'Für die rationale Zahl Null im ersten Teil gibt es nur die natürlichen Zahlen, mit der Null, als superial kleine Schritte im zweiten Teil:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  *( \sum_{ \forall q \in [ 0 ]_\mathbb{Q}}  \!\! q *) \cdot \omega  =  0 \cdot \omega  =  0  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Für die rationalen Zahlen \\latexmath{ q } mit \\latexmath{ 0 < q < x } im ersten Teil gibt es wirklich alle superial kleinen ganzzahligen Schritte im zweiten Teil.'."\n".
+                    'Dabei ist es gleich, ob die Null in der Indexmenge der Summe dabei ist oder fehlt.'."\n".
+                    'Da wir diese Summe noch nicht kennen, wollen wir sie berechnen und setzen sie gleich unserer neuen Variable \\latexmath{ y }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \sum_{ \forall q \in ] 0, x [_\mathbb{Q}}  \!\! q *) \cdot 2 \cdot \omega  =  y  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q *) \cdot 2 \cdot \omega  =  y  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Für die rationale Zahl \\latexmath{ x } im ersten Teil gibt es nur alle rein negativen ganzen Zahlen als superial kleine Schritte im zweiten Teil:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \sum_{ \forall q \in [ x ]_\mathbb{Q}}  \!\! q *) \cdot \omega  =  x \cdot \omega  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Alle drei Summen gemeinsam ergeben den unseren bekannten Ausdruck, für den wir eine neue Formel finden wollen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \sum_{ \forall q \in [ 0 ]_\mathbb{Q}}  \!\! q *) \cdot \omega  +  *( \sum_{ \forall q \in ] 0, x [_\mathbb{Q}}  \!\! q *) \cdot 2 \cdot \omega  +  *( \sum_{ \forall q \in [ x ]_\mathbb{Q}}  \!\! q *) \cdot \omega  =  \frac{ x^{2} \cdot s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  0 \cdot \omega  +  *( \sum_{ \forall q \in ] 0, x [_\mathbb{Q}}  \!\! q *) \cdot 2 \cdot \omega  +  x \cdot \omega  =  \frac{ x^{2} \cdot s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \sum_{ \forall q \in ] 0, x [_\mathbb{Q}}  \!\! q *) \cdot 2 \cdot \omega  =  \frac{ x^{2} \cdot s }{ 2 }  -  x \cdot \omega  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \sum_{ \forall q \in ] 0, x [_\mathbb{Q}}  \!\! q *) \cdot 2 \cdot \omega  =  \frac{ x^{2} \cdot s }{ 2 }  -  \frac{ 2 \cdot x \cdot \omega }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \sum_{ \forall q \in ] 0, x [_\mathbb{Q}}  \!\! q *) \cdot 2 \cdot \omega  =  \frac{ x^{2} \cdot s - 2 \cdot x \cdot \omega }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall q \in ] 0, x [_\mathbb{Q}}  \!\! q  =  \frac{ \frac{ x^{2} \cdot s - 2 \cdot x \cdot \omega }{ 2 } }{ 2 \cdot \omega }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall q \in ] 0, x [_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot s - 2 \cdot x \cdot \omega }{ 4 \cdot \omega }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall q \in ] 0, x [_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot s }{ 4 \cdot \omega } - \frac{ 2 \cdot x \cdot \omega }{ 4 \cdot \omega }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall q \in ] 0, x [_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot s }{ 4 \cdot \omega } - \frac{ x }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot s }{ 4 \cdot \omega } - \frac{ x }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Alle drei gemeinsam ergeben den gesuchten Summanden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \sum_{ \forall q \in [ 0 ]_\mathbb{Q}}  \!\! q *) \cdot \omega  +  *( \sum_{ \forall q \in ] 0, x [_\mathbb{Q}}  \!\! q *) \cdot 2 \cdot \omega  +  *( \sum_{ \forall q \in [ x ]_\mathbb{Q}}  \!\! q *) \cdot \omega  =  \frac{ x^{2} \cdot s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  0 \cdot \omega  +  *( \sum_{ \forall q \in ] 0, x [_\mathbb{Q}}  \!\! q *) \cdot 2 \cdot \omega  +  x \cdot \omega  =  \frac{ x^{2} \cdot s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \sum_{ \forall q \in ] 0, x [_\mathbb{Q}}  \!\! q *) \cdot 2 \cdot \omega  +  x \cdot \omega  =  \frac{ x^{2} \cdot s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q *) \cdot 2 \cdot \omega  +  x \cdot \omega  =  \frac{ x^{2} \cdot s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q *) \cdot 2  +  x *) \cdot \omega  =  \frac{ x^{2} \cdot s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  +  x *) \cdot \omega  =  \frac{ x^{2} \cdot s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in [ 0, x ]_\mathbb{Q}}  \!\! q *) \cdot \omega  =  \frac{ x^{2} \cdot s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in ] 0, x ]_\mathbb{Q}}  \!\! q *) \cdot \omega  =  \frac{ x^{2} \cdot s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in ] 0, x ]_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot s }{ 2 \cdot \omega }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in ] 0, x ]_\mathbb{Q}}  \!\! q  =  \frac{ x \cdot s }{ 2 \cdot \omega } \cdot x  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in ] 0, x ]_\mathbb{Q}}  \!\! q  =  \# [ 0, x [_\mathbb{Q} \; \cdot \; x  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in ] 0, x ]_\mathbb{Q}}  \!\! q *) \cdot \omega  =  \# [ 0, x [_\mathbb{Q} \; \cdot \; x \cdot \omega  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ x^{2} \cdot s }{ 2 }  =  \# [ 0, x [_\mathbb{Q} \; \cdot \; x \cdot \omega  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot s }{ 2 } - \frac{ x }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \# [ 0, x [_\mathbb{Q} \; \cdot \; x \cdot \omega  -  \frac{ x }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \# [ 0, x [_\mathbb{Q} \; \cdot \; x \cdot \omega  \; + \;  \# [ 0, x \, [_\mathbb{Q} \, \cdot *( -\omega *) \cdot s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \# [ 0, x [_\mathbb{Q} \; \cdot \; x \cdot \omega  \; - \;  \# [ 0, x \, [_\mathbb{Q} \, \cdot \, \omega \cdot s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \# [ 0, x [_\mathbb{Q} \; \cdot \; \omega \cdot *( x - s^{-1} *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  XXX  \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot s }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Im Grunde genommen haben wir damit schon den Beweis für die Richtigkeit dieser Gleichung erbracht.'."\n".
@@ -540,13 +702,6 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\\condb{XXX} \\\\'."\n".
-                    'Auf diese Weise ergibt sich für uns ein zunehmend konkretes Bild davon, was die superiale Basis \\latexmath{ s } eigentlich ist'."\n".
-                    'und was wir mit \\term{s} alles anfangen können.'."\n".
-                    'Aus diesem besser werdendem Bild, und besonders über die nähere Beleuchtung der Frage der ganzen Superial-Zahlen,'."\n".
-                    'kommen wir gleich zu einer ganz bemerkenswerten Definition unserer superialen Basis \\latexmath{ s }.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
