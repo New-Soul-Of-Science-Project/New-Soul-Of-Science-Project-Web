@@ -39,18 +39,36 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Wie wir sehen werden erhalten wir mit den hier entwickelten Superial-Zahlen etwas ganz besonderes:'."\n".
+                    'Formal gesprochen sind sie eine abelsche Gruppe\\footnote{\\const{NSOSP_g_footnote_text_AbelscheGruppe}} und'."\n".
+                    'bezüglich der Addition und Multiplikation ein aktual unendlicher angeordneter algebraischer Körper\\footnote{\\const{NSOSP_g_footnote_text_KoerperAlgebra}}.'."\n".
+                    'Mit ihnen erweitern wir die rationalen Zahlen auf fraktale Weise ins Aktual-Unendliche und'."\n".
+                    'geben so der Unendlichkeit eine fundamentale, fraktale Struktur.'."\n",
+                      'Mit den Superial-Zahlen kommen wir in die Lage aktual unendlich kleine Differenzen zu bilden,'."\n".
+                    'mit denen wir sehr präzise Ableitungen beschreiben und berechnen können, ohne den Limes benutzen zu müssen.'."\n",
+                      'Auch können wir endliche Zahlen in aktual unendlich kleinen, aber ganzen, Schritten zählen,'."\n".
+                    'deren Anzahl dann aktual unendlich groß sind.'."\n".
+                    'Mit Hilfe dieser feinsten Schritte können wir auf neue Art gewöhnliche, aber aktual unendliche, Summen beschreiben,'."\n".
+                    'die so neuartige und sehr präzise Integrale sind.'."\n",
+                      'Nutzen wir auch die Theorie der \\jump{OM:BiOrd:Home}{Biordinalzahlen} so können wir Summen ausrechnen,'."\n".
+                    'die nach meinem Wissen bisher nicht durch aktual unendliche Zahlen ausgedrückt werden konnten:'."\n".
+                    'Die Summe aller endlichen ganzen Zahlen oder die Summe aller endlichen rationalen Zahlen beispielsweise.'."\n",
+                      'Über die Struktur, die dabei sichtbar wird, eröffnet sich in meinen Augen ein ganz neuer Kosmos der Zahlentheorie.'."\n".
+                    'Denn wir können die endlichen Primzahlen mit unserer dadurch entdeckten, neuen aktual unendlichen Basis \\latexmath{ s }'."\n".
+                    'in Zusammenhang bringen, indem wir diese durch Primzahlen definieren.'."\n",
+                      'Wir erhalten zum Beispiel auch natürliche Superial-Zahlen, ganze Superial-Zahlen und superiale Primzahlen;'."\n".
+                    'aktual unendlich kleine Einsen und aktual unendlich große Einsen.'."\n".
+                    'Auch können die ganzen Superial-Zahlen gerade oder ungerade sein und so weiter und so fort.'."\n".
+                    'Erstaunlich viele der uns bekannten wichtigen Eigenschaften der endlichen Zahlen erweitern sich ins aktual unendlich'."\n".
+                    'Kleine und Große.'."\n",
+                      'Wie sagen wir im Englischen so schön:'."\n".
+                    '\\quote{Lets go for it!}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
                 'Motivation')),
                   array( 'text', array( text => array(
-                    'In der Schule fand ich Ableitungen und Integrale immer sehr faszinieren.'."\n".
+                    'In der Schule fand ich Ableitungen und Integrale immer sehr faszinierend.'."\n".
                     'Es war für mich erstaunlich, wie man über die Unendlichkeit ganz neue Erkenntnisse und Formeln gewinnen konnte.'."\n".
                     'Daraus hat sich damals ein tiefes Bedürfnis entwickelt zu verstehen, was dabei genau passiert.'."\n".
                     'Ich spielte viel mit dem Ansatz der Ableitung herum, was schließlich dazu führte, dass ich begriff, dass der dort verwendete Limes nicht nur dazu führt,'."\n".
@@ -69,14 +87,14 @@
                   array( 'text', array( text => array(
                     'Um nachfolgend exakt zu arbeiten, möchte ich an dieser Stelle vorab darauf aufmerksam machen,'."\n".
                     'dass die Funktionsparameter – meistens \\latexmath{ x } – vorerst auf rationale Zahlen der Menge \\latexmath{ \mathbb{Q} } beschränkt sind.'."\n".
-                    'Wir machen diese Einschränkung, um zum einen nicht zu viele noch offenen Fragen zu berühren und'."\n".
-                    'zum anderen eine überbordende Komplexität zu vermeiden.'."\n".
+                    'Wir machen diese Einschränkung auch, um zum einen nicht zu viele noch offene Fragen zu berühren, und'."\n".
+                    'zum anderen, um eine überbordende Komplexität zu vermeiden.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen', text =>
                                            
                 'Ableitung genau verstehen')),
                   array( 'text', array( text => array(
-                    'Dies funktioniert, wenn wir die beim Ableiten gegen Null gehenden Summanden selber als unendlich klein, aber nicht als verschwindend betrachten.'."\n".
+                    'Das Nicht-Verschwinden aller Summanden funktioniert dann, wenn wir die beim Ableiten gegen Null gehenden Summanden selber als unendlich klein, aber nicht als verschwindend betrachten.'."\n".
                     'Wir setzten den gegen Null gehenden Summanden zu \\term{Δx ≔ s^{-1}}, zum Kehrwert der \\italic{superialen Basis} \\term{s},'."\n".
                     'die wir im Verlauf genauer ergründen werden:'."\n".
                     ''))),
@@ -142,13 +160,14 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'XXX'."\n".
+                    'So können wir sehr genau verfolgen, was vor sich geht, und nichts verschwindet.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
                 'Integral genau verstehen')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
+                    'Beim Integral müssen wir nun den Prozess des Differenzierens wieder Rückgängig machen und'."\n".
+                    'lernen viel Interessantes dabei, wenn wir herausfinden, wie das geht.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Ganze Superial-Zahlen} \\\\'."\n".
@@ -291,7 +310,7 @@
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Die übrige Summe der superial kleinen ganzen Zahlen der ersten \\latexmath{ x \cdot s } Elemente dieser Menge, mit der Null,'."\n".
                       'ergibt sich aus der angepassten Gaußschen Summenformel\\footnote{\\const{BiOrd_g_footnote_text_GaussscheSummenformel}},'."\n".
-                      'wie bei den \\jump{OM:BiOrd:Home}{Biordinalzahlen} im Abschnitt \\italic{›\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}‹} nach Formel'."\n".
+                      'wie bei den Biordinalzahlen im Abschnitt \\italic{›\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}‹} nach Formel'."\n".
                       '\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich} angegeben:'."\n".
                       ''))),
                   array( 'equations',
