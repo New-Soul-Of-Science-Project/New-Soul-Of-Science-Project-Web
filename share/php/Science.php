@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 07.04.2023, 19:00h
+  // #: Stand: 28.05.2023, 17:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20230528:  -:  "Sc_f_equation_list": Move equation anchor from equation number to equation itself.
   //           20230407:  -:  "$Sc_g_Text_replace_preg_ary": Move entry "quote" to "Tools.php".
   //           20230402:  +:  "$Sc_g_equation_replace_ary":  '  ?:=  ' -> '\;\;\;\overset{?}{≔}\;\;\;' is new.
   //           20230321:  +:  "$Sc_g_Text_replace_ary":  Element "\M(Q)" as "&#8474;" (Double-struck capital Q) is new.
@@ -956,6 +957,7 @@
         if ($display_is || !array_key_exists( latex_if_visible, $value))
         {
           echo $offset.'    <td align="center">'."\n";
+          echo $offset.'      <a name="'.$To_g_anchor_ary[label_name][$To_g_anchor_ary_dim - 1].'"></a>'."\n";
           echo $offset.'      '.(Sc_f_equation_latex( $value[latex], $latex_color, $latex_tech)).' </td>'."\n";
         } else
         {     // #: "$value[latex]" is array.
@@ -973,7 +975,7 @@
         }
         //%! echo $offset.'    <td> <span style="color: #A0A0A0">'."\n";
         echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'">'."\n";
-        echo $offset.'      <a name="'.$To_g_anchor_ary[label_name][$To_g_anchor_ary_dim - 1].'"></a>'."\n";
+        //%! echo $offset.'      <a name="'.$To_g_anchor_ary[label_name][$To_g_anchor_ary_dim - 1].'"></a>'."\n";
              // #: This anchor position is not ideal, because the whole equation is not shown if someone jumps to here. But the better seaming position
              //      right after "<tr>" shows the beginning of the whole list and the position in "<td>" of the equation does not work because of possible name dubbing.
         {
@@ -1039,10 +1041,11 @@
         $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
         $local_elements_hides_ele_num++;
         echo $offset.'    <td align="center">'."\n";
+        echo $offset.'      <a name="'.$To_g_anchor_ary[label_name][$To_g_anchor_ary_dim - 1].'"></a>'."\n";
         echo $offset.'      '.(Sc_f_equation_latex( $value[latex], $latex_color, $latex_tech)).' </td>'."\n";
         //%! echo $offset.'    <td> <span style="color: #A0A0A0">'."\n";
         echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'">'."\n";
-        echo $offset.'      <a name="'.$To_g_anchor_ary[label_name][$To_g_anchor_ary_dim - 1].'"></a>'."\n";
+        //%! echo $offset.'      <a name="'.$To_g_anchor_ary[label_name][$To_g_anchor_ary_dim - 1].'"></a>'."\n";
              // #: This anchor position is no ideal, because the whole equation is not shown if someone jumps to here. But the better seaming position
              //      right after "<tr>" shows the beginning of the whole list and the position in "<td>" of the equation does not work because of possible name dubbing.
         {
