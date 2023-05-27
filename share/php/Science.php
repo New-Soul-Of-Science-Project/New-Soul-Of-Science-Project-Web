@@ -975,9 +975,6 @@
         }
         //%! echo $offset.'    <td> <span style="color: #A0A0A0">'."\n";
         echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'">'."\n";
-        //%! echo $offset.'      <a name="'.$To_g_anchor_ary[label_name][$To_g_anchor_ary_dim - 1].'"></a>'."\n";
-             // #: This anchor position is not ideal, because the whole equation is not shown if someone jumps to here. But the better seaming position
-             //      right after "<tr>" shows the beginning of the whole list and the position in "<td>" of the equation does not work because of possible name dubbing.
         {
           echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
           if (array_key_exists( footnote, $value))
@@ -1045,9 +1042,6 @@
         echo $offset.'      '.(Sc_f_equation_latex( $value[latex], $latex_color, $latex_tech)).' </td>'."\n";
         //%! echo $offset.'    <td> <span style="color: #A0A0A0">'."\n";
         echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'">'."\n";
-        //%! echo $offset.'      <a name="'.$To_g_anchor_ary[label_name][$To_g_anchor_ary_dim - 1].'"></a>'."\n";
-             // #: This anchor position is no ideal, because the whole equation is not shown if someone jumps to here. But the better seaming position
-             //      right after "<tr>" shows the beginning of the whole list and the position in "<td>" of the equation does not work because of possible name dubbing.
         {
           echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
           if (array_key_exists( footnote, $value))
