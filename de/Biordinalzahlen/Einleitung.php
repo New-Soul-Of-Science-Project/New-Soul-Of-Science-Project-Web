@@ -849,7 +849,15 @@
                       ''))),
                       
                   array( 'text', array( text => array(
-                    'Dieser Wert \\term{–ω} ist nur mit Biordinalzahlen ausdrückbar.'."\n",
+                    'Der Wert \\term{–ω} dieser Summe ist nur mit Biordinalzahlen ausdrückbar.'."\n",
+                      'Das die Summe aller endlichen ganzen Zahlen negativ ist, dürfte den einen oder anderen erstaunen.'."\n".
+                    'Denn naiv neigen wir wohl zumeist dazu anzunehmen, dass sich alle endlichen ganzen Zahlen zu Null summieren,'."\n".
+                    'weil wir von einer Werte- und Zahlensymmetrie bei Null ausgehen.'."\n".
+                    'Das wirklich \\term{–ω} die Summe aller endlichen ganzen Zahlen ist und ebenso auch \\term{2ω} die Anzahl'."\n".
+                    'aller endlichen ganzen Zahlen, bestätigt sich durch die plausible Herleitung'."\n".
+                    'der \\jump{OM:SupNum:Ableitungen-Integrale:Vortext:Integration}{Integration} auf Basis der'."\n".
+                    '\\jump{OM:SupNum:Home}{Superial-Zahlen},'."\n".
+                    'wenn wir die \\jump{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins}{dabei auftretenden aktual unendlichen Summen genauer untersuchen}.'."\n",
                       'Der Mittelwert aller endlichen, ganzen Zahlen ergibt sich dann, wenn wir, wie üblich,'."\n".
                     'die Summe durch die Anzahl ihrer Summanden teilen, zu:'."\n".
                     ''))),
