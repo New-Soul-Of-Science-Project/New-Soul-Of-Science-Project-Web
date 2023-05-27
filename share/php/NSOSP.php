@@ -345,6 +345,9 @@
   $SupNum_g_footnote_text_AlgebraischeZahl      = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AlgebraischeZahl:2022}.';
   $SupNum_g_footnote_text_Primorial             = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Primorial:2015}.';
   $SupNum_g_footnote_text_PrimorialWikiWerte    = 'Vgl. \\cite{wiki:Primorial:2015}, Eigenschaften, Grafik und Tabelle mit Beispielwerten.';
+  $SupNum_g_footnote_text_LexikographischeOrdnung = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:LexikographischeOrdnung:2023}. \\\\ Vgl. \\cite{wiki:Stellenwertsystem:2023}, Lexikographische Ordnung.';
+  $SupNum_g_footnote_text_Maechtigkeit          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:MaechtigkeitMathematik:2023}.';
+  $SupNum_g_footnote_text_Stellenwertsystem     = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Stellenwertsystem:2023}.';
 
   
   const fig_file_name = 'fig_file_name';
@@ -713,7 +716,7 @@
                                                                  'Untereinander dargestellt sind die verschachtelten Zahlengeraden, die jeweils darunter die unendlich kleine Umgebung'."\n".
                                                                  'um eine Zahl der darüber liegenden Ebene herum zeigt.'."\n".
                                                                  'Auf der unendlich kleinen, umgebenden Zahlengeraden ist jeweils eine bestimmte Zahl angegeben, die wieder eine solche Umgebung hat.'."\n".
-                                                                 'Die hier dargestellte Zahl ist:  \\term{2,6⋅s^{2} + 0,5⋅s^{1} – 1,4⋅s^{0} + 3,5⋅s^{-1}  = 〈2,6〉〈0,5〉〈–1,4〉_{0}〈3,5〉}');
+                                                                 'Die hier dargestellte Zahl ist in der Stellenwertsystem-Schreibweise: \\hidden{\\term{2,6⋅s^{2} + 0,5⋅s^{1} – 1,4⋅s^{0} + 3,5⋅s^{-1}  = 〈2,6〉〈0,5〉〈–1,4〉.〈3,5〉}}\\latexmath{ 〈2,6〉〈0,5〉〈–1,4〉.〈3,5〉 }');
   
   $SupNum_g_figure_ary_sGeomKonstruktTeilung   = array( fig_file_name => 'SN/s-geom-Konstrukt-Teilung-v02', fig_alt_description => 'Rhythmische Zerlegung der Eins durch natürliche Zahlen', width => '600px', height => '290px', name => 'set local!',
                                                          text => 'Die Grafik zeigt, wie durch die Projektion der Begrenzungspunkte aller regelmäßigen natürlichzahligen Teilstrecken auf die Einheitsstrecke,'."\n".
@@ -818,7 +821,7 @@
     
     // #: SupNum
                             
-    '*SupNum:Stellenwertsystem-Schreibweise'  => array( jump_name => 'OM:SupNum:Einleitung:Grundlagen'),
+    '*SupNum:Stellenwertsystem-Schreibweise'  => array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem'),
   );
   
   $Glo_g_Redirect_list = array(

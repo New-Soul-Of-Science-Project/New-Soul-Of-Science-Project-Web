@@ -108,7 +108,7 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Seien \\latexmath{ \rbrack a, b \lbrack_\mathbb{Q} } und \\latexmath{ \lbrack a, b \lbrack_\mathbb{Q} } \\jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall}{Intervall-Mengen} aus \\latexmath{ \mathbb{Q} },'."\n".
+                      'Seien \\latexmath{ \rbrack a, b \lbrack_\mathbb{Q} } und \\latexmath{ \lbrack a, b \lbrack_\mathbb{Q} } \\jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Mengen} aus \\latexmath{ \mathbb{Q} },'."\n".
                       'dann ergibt sich \\latexmath{ s }, nach vorstehendem Gedanken, zu'."\n".
                       ''))),
                   array( 'equations',

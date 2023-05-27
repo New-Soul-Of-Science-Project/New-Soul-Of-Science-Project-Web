@@ -351,12 +351,79 @@
                   array( 'text', array( text => array(
                     'Nachfolgend ein paar nützliche Definitionen:'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Intervall', text =>
+                  // #Ref: *SupNum:Stellenwertsystem-Schreibweise
+                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem', text =>
                       
-                'Intervall', subline =>
+                'Stellenwertsystem', subline =>
+                  '')),
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\\bold{XXX}',
+                    '• Übertragen von ›OM:SupNum:Einleitung:Grundlagen‹.',
+                    ))),
+                  array( 'text', array( text => array(
+                  '\\condb{Ein besonderes Zahlenwertsystem und seine Kurznotation} \\\\'."\n".
+                    'Das ist sehr bemerkenswert und ermöglicht ein neues und besonderes Zahlenwertsystem auf Basis der superialen Basis \\latexmath{ s }:'."\n",
+                      'Jede Ziffer dieses Zahlenwertsystems auf Basis \\latexmath{ s } kann eine Zahl sein; in jedem Fall eine rationale, möglicherweise auch eine überrationale (siehe \\jumpname{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}).'."\n".
+                    'Sehr fraglich ist für mich, ob es sinnvollerweise wirklich auch jede reelle Zahl sein kann,'."\n".
+                    'denn ich vermute, dass transzendente Zahlen, wie die Eulersche Zahl \\latexmath{ e } oder die Kreiszahl \\latexmath{ π },'."\n".
+                    'als Koeffizienten in jedem Fall aus dem sinnvollen Rahmen fallen.'."\n",
+                      'Nachfolgend ein paar Beispiele in einer neuen Notation, die jede Ziffer dieses Zahlensystems in spitzen Klammern notiert:'."\n"))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a, b, c, d \in \mathbb{Q} *) *[  〈a〉〈b〉〈c〉․〈d〉 \\\ \qquad\qquad\qquad  :=  a \cdot s^{2} + b \cdot s^{1} + c \cdot s^{0} + d \cdot s^{-1} \\\ \qquad\qquad\qquad  \in  \mathbb{S}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  s^{1}  =  〈1〉〈0〉․  =  〈1〉〈0〉_{0}  =  〈1〉_{1}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  s^{0}  =  〈1〉․  =  〈1〉_{0}  =  1  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  s^{-1}  =  ․〈1〉  =  _{0}〈1〉  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  - \frac{3}{5} \cdot s^{2} + 25 \cdot s^{1} + 3,5 \cdot s^{0} - 7,2 \cdot s^{-1} \\\ \qquad\qquad\qquad\quad  =  *〈 - \frac{3}{5} *〉〈25〉〈3,5〉․〈-7,2〉 \\\ \qquad\qquad\qquad\quad  =  *〈- \frac{3}{5} *〉〈25〉〈3,5〉_{0}〈-7,2〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Ich denke an diesen einfachen Beispielen wird klar, wie das superiale Zahlenwertsystem funktioniert und wie es notiert wird.'."\n".
+                    'Der Punkt hinter der nullten Potenz von \\term{s} markiert quasi das Komma, ähnlich unseren reellen Zahlen im Zehnersystem notiert.'."\n".
+                    'Alternativ kann hinter einer spitzen Klammer auch die Potenz der superialen Basis \\term{s} als ganze Zahl angegeben werden.'."\n"))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen', text =>
+                      
+                'Skalierung der superialen Ebene einer Teilmenge der Superial-Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Eine etwas allgemeinere Definition eines Intervalls\\footnote{Internet: \\\\ Vgl. \\cite{wiki:IntervallMathematik:2023}.} aus einer angeordneten Zahlenmenge:'."\n".
+                    'An einigen Stellen dieser Arbeit'."\n".
+                    'benötigen wir die Skalierung der superialen Potenzebene einer Teilmenge \\latexmath{ \mathbb{S}_T } der Superial-Zahlen \\latexmath{ \mathbb{S} }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}^{y}_{T}  :=  *\{  a  *|*  *( \forall t \in \mathbb{S}_{T} *) *[ a = t \cdot s^{y} *]  *\}  }',
+                                          label_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren', label_text => '\\name{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Zum Beispiel ist es im Besonderen bei der \\jump{OM:SupNum:Ableitungen-Integrale:Vortext:Integration}{Integration}'."\n".
+                    'notwendig die ganzen Superial-Zahlen \\latexmath{ \mathbb{S}_Z } eine Potenzebene ins superial kleine zu skalieren:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{S}^{-1}_{Z}  =  *\{  a  *|*  *( \forall z \in \mathbb{S}_{Z} *) *[ a = z \cdot s^{-1} *]  *\}  }',
+                                          label_text => '\\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Menge-superial-kleine-ganze-Zahlen}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hierdurch wird eine Menge erzeugt, die es ermöglicht, eine Summe zu definieren, in der superial kleine ganze Zahlen'."\n".
+                    'durchgezählt werden, um superial kleine Flächen zu summieren, die das Integral ergeben.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge', text =>
+                      
+                'Intervall-Menge', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Eine etwas allgemeinere Definition der Intervall-Menge eines Intervalls\\footnote{Internet: \\\\ Vgl. \\cite{wiki:IntervallMathematik:2023}.} aus einer angeordneten Zahlenmenge:'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -364,29 +431,21 @@
                       'Seien \\latexmath{ \lbrack a, b \rbrack_\mathbb{T} }, \\latexmath{ \lbrack a, b \lbrack_\mathbb{T} }, \\latexmath{ \rbrack a, b \rbrack_\mathbb{T} } und \\latexmath{ \rbrack a, b \lbrack_\mathbb{T} } die Mengen der folgenden Intervalle von \\latexmath{ a } bis \\latexmath{ b } aus der Menge \\latexmath{ \mathbb{T} }'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  [ a, b ]_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a \leq x \leq b *]  *\}  }'),
                       array( display => 'on',  latex => '{  [ a, b [_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a \leq x < b *]  *\}  }'),
                       array( display => 'on',  latex => '{  ] a, b ]_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a < x \leq b *]  *\}  }'),
                       array( display => 'on',  latex => '{  ] a, b [_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a < x < b *]  *\}  \;\;  ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'so können wir nachfolgend flexibel Intervalle definieren.'."\n",
+                      'so können wir flexibel Intervall-Mengen definieren.'."\n",
                         '\\\\'.
                       ''))),
 
-                  /* array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))), */
+                  array( 'text', array( text => array(
+                    'Aufgrund der Komplexität der Superial-Zahlen ist es sehr hilfreich, wenn wir die Menge \\latexmath{ \mathbb{T} } angeben können,'."\n".
+                    'auf der die Intervall-Menge basieren soll.'."\n".
+                    ''))),
 
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Ableitungen-Integrale'),

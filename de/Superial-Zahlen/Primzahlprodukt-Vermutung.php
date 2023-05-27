@@ -63,7 +63,7 @@
                     'Und wir wissen auch, dass \\latexmath{ s } unendlich viel größer als \\latexmath{ ω } ist,'."\n".
                     'denn nach unseren Erkenntnissen aus dem Kapitel \\italic{\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}} steht'."\n".
                     '\\latexmath{ s } für die Anzahl der rationalen Zahlen und \\latexmath{ ω } für die Anzahl der natürlichen Zahlen.'."\n".
-                    'Ich vergleiche hier aber nicht die Mächtigkeit\\color{*Bearb}{(Verweis)} der Menge der rationalen Zahlen und die Mächtigkeit der natürlichen Zahlen,'."\n".
+                    'Ich vergleiche hier aber nicht die Mächtigkeit\\footnote{\\const{SupNum_g_footnote_text_Maechtigkeit}} der Menge der rationalen Zahlen und die Mächtigkeit der natürlichen Zahlen,'."\n".
                     'wobei es darum geht, ob sich zwei Mengen bidirektional aufeinander abbilden lassen.'."\n".
                     'Sondern ich meine die kombinatorische Erzeugung von Elementen einer unendlich großen Menge'."\n".
                     'im Verhältnis zur vollständigen Induktion bei der Erzeugung der Menge der natürlichen Zahlen.'."\n",

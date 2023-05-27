@@ -23,6 +23,7 @@
               'wiki:IntervallMathematik:2023',
               'wiki:KoerperAlgebra:2023',
               'wiki:LexikographischeOrdnung:2023',
+              'wiki:MaechtigkeitMathematik:2023',
               'wiki:Ordinalzahl:2021',
               'wiki:ParitaetMathematik:2021',
               'wiki:PeanoAxiome:2021',
@@ -31,6 +32,7 @@
               'wiki:RiemannscheZetaFunktion:2022',
               'wiki:Ring-Algebra:2023',
               'wiki:SatzDesEuklid:2023',
+              'wiki:Stellenwertsystem:2023',
               'wiki:Teilerfremdheit:2022',
               'wiki:Unendlichkeitsaxiom:2021',
             ));
