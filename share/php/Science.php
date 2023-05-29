@@ -7,7 +7,8 @@
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
-  //           20230528:  -:  "Sc_f_equation_list": Move equation anchor from equation number to equation itself.
+  //           20230529:  +:  "$Glo_g_Text_replace_ary": New.
+  //           20230528:  *:  "Sc_f_equation_list": Move equation anchor from equation number to equation itself.
   //           20230407:  -:  "$Sc_g_Text_replace_preg_ary": Move entry "quote" to "Tools.php".
   //           20230402:  +:  "$Sc_g_equation_replace_ary":  '  ?:=  ' -> '\;\;\;\overset{?}{≔}\;\;\;' is new.
   //           20230321:  +:  "$Sc_g_Text_replace_ary":  Element "\M(Q)" as "&#8474;" (Double-struck capital Q) is new.
@@ -340,6 +341,9 @@
     )
   );
 
+  $Glo_g_Text_replace_ary = $Sc_g_Text_replace_ary;
+
+
   // #: Replaces all simple LaTeX character notations with the usual chars.
   // #: The order of entries may be important: As example XXX.
   $Sc_g_LaTeX_replace_ary =       array(
@@ -544,6 +548,8 @@
                                              ),
                                           )
                                     );
+
+  $Glo_g_Text_replace_preg_ary = $Sc_g_Text_replace_preg_ary;
   
   
 
@@ -856,21 +862,6 @@
   $Sc_g_equation_list_SpaceAfter = '20px';
   $Sc_g_equation_list_LineDistance = '10';
   
-  
-            /* <!-- ?php Sc_f_equation_list( 'XXX', '          ', array(
-                                      array( display => 'on',  latex => 'XXX',
-                                                               label_name => 'Equ-XXX', label_text => 'XXX', label_incr => true,
-                                                               footnote => 'XXX'),
-                                      array( display => 'on',  latex => 'XXX',
-                                                               label_name => 'Equ-XXX', label_text => 'XXX', label_incr => true,
-                                                               footnote => 'XXX'),
-                                      array( display => 'on',  latex => 'XXX',
-                                                               label_name => 'Equ-XXX', label_text => 'XXX', label_incr => true,
-                                                               footnote => 'XXX'),
-                                      array( display => 'on',  latex => 'XXX',
-                                                               label_name => 'Equ-XXX', label_text => 'XXX', label_incr => true,
-                                                               footnote => 'XXX'))); ? -->*/
-
   
   const display = 'display';
   const latex = 'latex';
