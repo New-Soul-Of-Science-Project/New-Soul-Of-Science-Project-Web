@@ -166,7 +166,7 @@
                   array( 'text', array( text => array(
                     'So können wir sehr genau verfolgen, was vor sich geht, und nichts verschwindet.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen', text =>
                                            
                 'Integral genau verstehen')),
                   array( 'text', array( text => array(
@@ -287,13 +287,13 @@
                     'Diese werden wir im folgenden Beispiel besser praktisch kennenlernen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Konkretes Integral} \\\\'."\n".
+                  '\\condb{\\anchor{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen:Konkretes-Integral}{Konkretes Integral}} \\\\'."\n".
                     'Nun ein Beispiel, um anschaulich zu verstehen, was vor sich geht:'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Wir nehmen das erste obige \\jump{OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen}{Ableitungsbeispiel} \\latexmath{ f(x) = x^2 } mit '."\n".
+                      'Wir nehmen das erste obige \\jump{OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen}{Ableitungsbeispiel} \\latexmath{ f(x) = x^2 } mit'."\n".
                       'dem Ableitungsergebnis \\term{ f\'(x) = 2 x + s^{-1} } und setzen dies in unsere Integralformel ein:'."\n".
                       ''))),
                   array( 'equations',
@@ -369,7 +369,8 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  x^{2}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'und ist auch das erwartete Ergebnis.'."\n".
+                      'und ist auch das erwartete Ergebnis.'."\n",
+                        '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
