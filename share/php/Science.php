@@ -874,6 +874,13 @@
   {
     global $Glo_g_Color_list, $To_g_anchor_ary_dim, $To_g_anchor_ary, $To_g_elements_hides_ary_dim, $To_g_elements_hides_ary, $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Sc_g_equation_auto_num,
             $Sc_g_equation_list_SpaceBefore, $Sc_g_equation_list_SpaceAfter, $Sc_g_equation_list_LineDistance;
+       
+    // #!: error
+    if (0 < count($list) && $list[count($list) - 1][display] == 'off') {
+      // print_r( '>>> error: In "Sc_f_equation_list" last equation is not shown! Means "display => \'off\'"');
+      echo '<p style="color: red;">>>> error: In "Sc_f_equation_list" last equation is not shown! Means "display => \'off\'"</p>';
+      return null;
+    }
 
     // #: Start with visibility, than it is visible, if JavaScript is not aviable. Than Google will see the text.
     $start_display = 'showContent';
@@ -964,7 +971,6 @@
           $local_elements_hides_ele_num++;
           echo $offset.'      '.(Sc_f_equation_latex( $value[latex_if_visible], $latex_color, $latex_tech)).' </td>'."\n";
         }
-        //%! echo $offset.'    <td> <span style="color: #A0A0A0">'."\n";
         echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'">'."\n";
         {
           echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
@@ -974,7 +980,6 @@
             {$footnote_num_color = To_f_Color( $value[footnote_num_color]);}
             else
               $footnote_num_color = '';
-            //%!echo Sc_f_footnote_add( $value[footnote]);
             echo Sc_f_footnote_add( $value[footnote], $footnote_num_color);
           }
           echo $offset.'  </span> </td> </tr>'."\n";
