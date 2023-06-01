@@ -632,30 +632,39 @@
                 'Summe aller rationalen Zahlen von Null bis ausschließlich \\latexmath{ x }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX:'."\n".
+                    'Interessant ist auch die Berechnung der Summe der endlichen rationalen Zahlen'."\n".
+                    'von Null bis ausschließlich der Zahl \\latexmath{ x }:'."\n".
                     ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Sei Formel \\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-y-mal-2-plus-x-zus-mal-omega-ist-erster-Summand}'."\n".
+                      'gegeben, und wir formen um und ersetzen dann auch wieder den Substituenten \\latexmath{ y }'."\n".
+                      ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \sum_{ \forall q \in [ 0 ]_\mathbb{Q}}  \!\! q *) \cdot \omega  \\\ \qquad\quad\quad +  *( \sum_{ \forall q \in ] 0, x [_\mathbb{Q}}  \!\! q *) \cdot 2 \cdot \omega  \\\ \qquad\quad\quad\quad\quad +  *( \sum_{ \forall q \in [ x ]_\mathbb{Q}}  \!\! q *) \cdot \omega  =  \frac{ x^{2} \cdot s }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  0 \cdot \omega  +  y \cdot 2 \cdot \omega  +  x \cdot \omega  =  \frac{ x^{2} \cdot s }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  y \cdot 2 \cdot \omega  =  \frac{ x^{2} \cdot s }{ 2 }  -  x \cdot \omega  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  y \cdot 2 \cdot \omega  =  \frac{ x^{2} \cdot s }{ 2 }  -  \frac{ 2 \cdot x \cdot \omega }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  y \cdot 2 \cdot \omega  =  \frac{ x^{2} \cdot s - 2 \cdot x \cdot \omega }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  \frac{ \frac{ x^{2} \cdot s - 2 \cdot x \cdot \omega }{ 2 } }{ 2 \cdot \omega }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  \frac{ x^{2} \cdot s - 2 \cdot x \cdot \omega }{ 4 \cdot \omega }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  \frac{ x^{2} \cdot s }{ 4 \cdot \omega } - \frac{ 2 \cdot x \cdot \omega }{ 4 \cdot \omega }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  \frac{ x^{2} \cdot s }{ 4 \cdot \omega } - \frac{ x }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot s }{ 4 \cdot \omega } - \frac{ x }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  *( y \cdot 2  +  x *) \cdot \omega  =  \frac{ x^{2} \cdot s }{ 2 }  }',
+                                          label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-y-mal-2-plus-x-zus-mal-omega-ist-erster-Summand}', label_incr => false),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y \cdot 2  +  x  =  \frac{ x^{2} \cdot s }{ 2 \cdot \omega }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  y \cdot 2  =  \frac{ x^{2} \cdot s }{ 2 \cdot \omega }  -  x  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  \frac{ x^{2} \cdot s }{ 4 \cdot \omega }  -  \frac{ x }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot s }{ 4 \cdot \omega } - \frac{ x }{ 2 } \;\;  ,  }'),
                     ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'so erhalten wir einen Ausdruck für die gesuchte Summe.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Ich habe einen Ausdruck für diese Summe bisher noch nicht gesehen und'."\n".
+                    'konnte bis heute auch noch nichts vergleichbares finden.'."\n",
+                      'Unsere Biordinalzahlen und Superial-Zahlen sind etwas ganz besonderes,'."\n".
+                    'weil sie uns in die Lage versetzen, eine Idee davon zu bekommen, wie wir solche Summen'."\n".
+                    'ausdrücken können.'."\n".
                     ''))),
                   array( 'text', array( text => array(
+                  '\\condb{Ein weiterer Ansatz diese Summe zu berechnen} \\\\'."\n".
+                    'XXX'."\n".
                     'Im Grunde genommen haben wir damit schon den Beweis für die Richtigkeit dieser Gleichung erbracht.'."\n".
                     'Aber vielleicht können wir ja noch besser verstehen, warum dies so ist?'."\n",
                       'Wie oben schon erwähnt, wissen wir mit Hilfe der Biordinalzahlen aus dem späteren Abschnitt \\italic{›\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}‹}'."\n".
