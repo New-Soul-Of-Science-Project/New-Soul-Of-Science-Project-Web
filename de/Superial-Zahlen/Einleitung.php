@@ -390,9 +390,6 @@
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
                 'Kleiner Ausblick zwischendurch')),
-                  array( 'notice', array( Display => 'showContent', text => array(
-                    '• Die Formeln sollten Links zu denen des Abschnitts haben, in dem sie entwickelt werden.',
-                    ))),
                   array( 'text', array( text => array(
                     'Wir werden im Folgenden noch sehen, dass dieses Vorgehen weitere neue Erkenntnishorizonte eröffnet.'."\n",
                       'Nur zum Appetit machen kann ich hier schon mal kurz sagen, dass die zuletzt errechnete Summe \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x}'."\n".
