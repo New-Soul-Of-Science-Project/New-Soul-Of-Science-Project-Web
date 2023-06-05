@@ -207,7 +207,7 @@
                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ E }{ h } \pm \Delta f  =  f \pm \Delta f  }'),
                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ E }{ h }  =  f  }'),
                      //array( display => 'on',  latex => '{  \Leftrightarrow  \fbox{E  =  f \cdot h}  }',  // #: For 'Google'.
-                     array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{E  =  f \cdot h}  }',
+                     array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{ E  =  f \cdot h }  }',
                                               footnote => 'Internet: \\\\ Vgl. \\cite{wiki:PlanckschesWirkungsquantum2013}.',
                                               label_name => 'OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant'),
                     ))),
