@@ -161,23 +161,23 @@
                 'Ausgangspunkt der Primzahlprodukt-Vermutung', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Und wir können sogar noch weiter gehen und feststellen, dass \\latexmath{ \omega } seine Primfaktoren mit'."\n".
-                    '\\latexmath{ s } teilen muss, wenn die Anzahl der rationalen Zahlen in \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} }'."\n".
-                    'in Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins} eine ganze Zahl sein soll.'."\n".
+                    'Und wir können sogar noch weiter gehen und feststellen, dass \\latexmath{ \omega } seine Primfaktoren'."\n".
+                    'mit \\latexmath{ s }, siehe Formel \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}, teilen muss, wenn die Anzahl der rationalen Zahlen in \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} }'."\n".
+                    'aus Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins} eine ganze Zahl sein soll.'."\n".
                     'Weiter ist klar, dass \\latexmath{ \omega } aktual unendlich groß ist.'."\n".
                     'Es kann also nur ein Produkt aus unendlich vielen endlichen Primzahlen sein.'."\n",
                       'Doch welches Teilprodukt aus \\latexmath{ s } ist es, wenn klar ist, dass \\latexmath{ s } unendlich viel größer ist'."\n".
                     'als \\latexmath{ \omega }.'."\n".
                     'Schon der Turm der kleinsten Primzahl \\latexmath{ 2^\omega } ist definitiv sehr viel größer als \\latexmath{ \omega }.'."\n".
                     'Die einzelnen und kombinierten Türme aller Primzahlen \\latexmath{ p^\omega } sind also ausgeschlossen.'."\n",
-                      'Das offensichtliche, unendliche Primzahlprodukt, dass noch bleibt bedeutet, dass \\latexmath{ \omega = 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots } ist.'."\n".
-                    'Aber auch dieses Produkt erscheint auf den ersten Blick viel größer als \\latexmath{ \omega } zu sein.'."\n",
-                      'Es sei denn, die Anzahl der Primzahl unter den natürlichen Zahlen erfüllt weit draußen unter den sehr sehr großen Zahlen'."\n".
+                      'Das offensichtlich simple, unendliche Primzahlprodukt, dass bleibt, lässt vermuten, dass: \\latexmath{ \omega ?= 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots }.'."\n".
+                    'Aber auch dieses Produkt erscheint auf den ersten Blick viel größer als \\latexmath{ \omega } zu sein.'."\n".
+                    'Es sei denn, die Anzahl der Primzahl unter den natürlichen Zahlen erfüllt weit draußen unter den sehr sehr großen Zahlen'."\n".
                     'eine bestimmte Bedingung:'."\n".
                     'Es gibt unter den wirklich extrem großen natürlichen Zahlen im Grunde nur noch Primzahlzwillinge?'."\n",
                       'Ob diese Bedingung hinreicht, beleuchten wir in der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}.'."\n".
                     'Auch sollten wir Überlegungen zur Primzahlzwillingsvermutung\\color{*Bearb}{(Verweis)} anstellen und bekommen hiermit schon einen Hinweis,'."\n".
-                    'dass sie stimmen sollte.'."\n".
+                    'dass unsere Vermutung stimmen könnte.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen', text =>
                       

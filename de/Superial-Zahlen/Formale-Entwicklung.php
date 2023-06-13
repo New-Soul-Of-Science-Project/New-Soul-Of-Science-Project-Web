@@ -80,7 +80,7 @@
                     'der hinzukommenden natürlichen Zahl in einem gleichmäßigen Rhythmus zu integrieren, falls er noch nicht vorhanden ist (siehe \\jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktTeilung}).'."\n",
                       'Dies ist, als wenn ein Regen von natürlichen Zahlen auf der Strecke der Eins hernieder gehen würde.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Explizite Anschauung des Primzahlprodukts von \\term{s}} \\\\'."\n".
+                  '\\condb{XXX Explizite Anschauung des Primzahlprodukts von \\term{s}} \\\\'."\n".
                     'Für das Primzahlprodukt von \\term{s} ergibt sich in beiden Fällen eine mit unendlich mal unendlich vielen Primzahlen gefüllte Fläche der folgenden Art:'."\n".
                     ''))),
                   array( 'equations',
@@ -91,7 +91,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{\omega}  }'),
                     ))),
                   array( 'text', array( text => array(
-                  '\\condb{Die Veränderung der Primfaktorenzerlegung von \\term{s} durch rationale Koeffizienten} \\\\'."\n".
+                  '\\condb{XXX Die Veränderung der Primfaktorenzerlegung von \\term{s} durch rationale Koeffizienten} \\\\'."\n".
                     'Mit Hilfe von \\jump{OM:BiOrd:Home}{Biordinalzahlen} können wir die Veränderung des Primzahl-Flächenprodukts'."\n".
                     'durch rationale Koeffizienten darstellen:'."\n".
                     ''))),

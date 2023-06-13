@@ -802,7 +802,7 @@
                     'Dann entsteht der Eindruck einer Spiegelung.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Anzahl der endlichen ganzen Zahlen} \\\\'."\n".
+                  '\\condb{\\anchor{OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen}{Anzahl der endlichen ganzen Zahlen}} \\\\'."\n".
                     'So kommen wir zu Aussagen über die Anzahl der ganzen endlichen Zahlen:'."\n".
                     ''))),
                       
@@ -1096,12 +1096,12 @@
                   '')),
                   array( 'text', array( text => array(
                     'Wir können nun zu Aussagen kommen, die etwas über die Größe von \\term{ω} verraten:'."\n",
-                      'Subtrahieren wir eine beliebige endliche positive ganze Zahl \\term{n} von \\term{ω}, ergibt sich niemals eine Zahl, die zur Menge'."\n".
+                      'Subtrahieren wir eine beliebige endliche natürliche Zahl \\term{n} von \\term{ω}, ergibt sich niemals eine Zahl, die zur Menge'."\n".
                     'der endlichen Zahlen gehört:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  *( \forall n \in \mathbb{N}^{+} *)  *[  \omega - n  \notin  \mathbb{N}  *]  }'),
+                      array( display => 'on', latex => '{  *( \forall n \in \mathbb{N} *)  *[  \omega - n  \notin  \mathbb{N}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\\term{ω – n} ist nicht in den natürlichen Zahlen \\term{\M(N)}, weil eine unendlich große Zahl \\term{ω}'."\n".

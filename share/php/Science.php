@@ -3,10 +3,12 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 28.05.2023, 17:00h
+  // #: Stand: 13.06.2023, 12:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20230613:  *:  "Sc_f_replace_callback__latexcommand__latexmath":  Use 'To_f_replace_callback__latexcommand__parameterCheck' for parameter checking.
+  //           20230612:  +:  "$Sc_g_equation_replace_ary":  '  >  ' -> '\;\;\;>\;\;\;', '  \geq  ' -> '\;\;\;\geq\;\;\;' is new.
   //           20230529:  +:  "$Glo_g_Text_replace_ary": New.
   //           20230528:  *:  "Sc_f_equation_list": Move equation anchor from equation number to equation itself.
   //           20230407:  -:  "$Sc_g_Text_replace_preg_ary": Move entry "quote" to "Tools.php".
@@ -393,7 +395,8 @@
   function Sc_f_replace_callback__latexcommand__latexmath( $value, $replace_ary=null, $replace_preg_ary=null)
   {
     //%! if ($value[0] != null)
-    if (0 < count( $value))  // !!!: Change this to "To_f_replace_callback__latexcommand__parameterCheck" see above.
+    //%! if (0 < count( $value))  // !!!: Change this to "To_f_replace_callback__latexcommand__parameterCheck" see above.
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 0))
     {
       
       //-- return Sc_f_equation_latex_html( $value[0][0], ($value[1] == null) ? "" : (($value[1][0] == null) ? "" : $value[1][0]), ($value[1] == null) ? "Google" : (($value[1][1] == null) ? "Google" : $value[1][1]), "inline");
@@ -613,13 +616,16 @@
                                     array( '  \neq  ', '\;\;\;\neq\;\;\;'),
                                     array( '  <  ', '\;\;\;<\;\;\;'),
                                     array( '  \leq  ', '\;\;\;\leq\;\;\;'),
+                                    array( '  >  ', '\;\;\;>\;\;\;'),
+                                    array( '  \geq  ', '\;\;\;\geq\;\;\;'),
                                     array( '  \approx  ', '\;\;\;\approx\;\;\;'),
                                     array( '  \sim  ', '\;\;\;\sim\;\;\;'),
                                     array( '  \ll  ', '\;\;\;\ll\;\;\;'),
                                     array( '  ?:=  ', '\;\;\;\overset{?}{≔}\;\;\;'),
                                     array( ':=', '≔'),
                                     array( '  ≔  ', '\;\;\;≔\;\;\;'),
-                                    array( '  ?=  ', '\;\;\;\overset{?}{=}\;\;\;'),
+                                    array( '  ?=  ', '\;\;\;?=\;\;\;'),
+                                    array( '?=', '\overset{?}{=}'),
                                     array( '  \mapsto  ', '\;\;\;\mapsto\;\;\;'),
                                     array( '  \in  ', '\;\;\;\in\;\;\;'),
                                     array( '  ?\in  ', '\;\;\;\overset{?}{\in}\;\;\;'),
@@ -731,7 +737,7 @@
   
   function Sc_f_equation_latex_str_html( $latex_str='', $latex_color='505050', $latex_tech='Google', $style='displayed')
   {
-    global /*$Sc_g_equation_replace_ary, */$Sc_g_equation_replace_Google_ary, $Sc_g_equation_replace_MathJax_ary;
+    global $Sc_g_equation_replace_Google_ary, $Sc_g_equation_replace_MathJax_ary;
     
     //$latex_str = To_f_replace_str_ary( $latex_str, $Sc_g_equation_replace_ary);  // #: Moved to case.
     
