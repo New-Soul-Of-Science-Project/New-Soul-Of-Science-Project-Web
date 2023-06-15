@@ -15,6 +15,7 @@
             Sc_g_litera_make( array(
               'wiki:AbelscheGruppe:2022',
               'wiki:Allklasse:2020',
+              'wiki:Arithmetik:2015',
               'wiki:GaussscheSummenformel:2023',
               'wiki:KoerperAlgebra:2023',
               'wiki:Ordinalzahl:2021',

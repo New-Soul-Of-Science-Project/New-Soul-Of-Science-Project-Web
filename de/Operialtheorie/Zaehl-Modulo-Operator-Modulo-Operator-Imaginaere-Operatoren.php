@@ -29,7 +29,7 @@
                     'In ihm finden wir ein dualistisch orthogonales, dynamisches Naturprinzip, dass uns im Grunde überall begegnet, egal ob'."\n".
                     'Mathematik, Physik, Biologie, Medizin/Heilkunde und so weiter.'."\n".
                     'Seine beiden orthogonalen, zeitähnlichen Struktur-Aspekte sind ihre historische Gradlinigkeit und ihre Wiederholung.'."\n".
-                    'In Bezug auf die Arithmetik steckt ihre Gradlinigkeit im immerwährenden Zählen, während ihre Wiederholung'."\n".
+                    'In Bezug auf die Arithmetik\\footnote{\\const{NSOSP_g_footnote_text_Arithmetik}} steckt ihre Gradlinigkeit im immerwährenden Zählen, während ihre Wiederholung'."\n".
                     'in der Teilbarkeit in beliebig große gleiche Teile und dem übrig bleibenden Rest als eine Art von Schwingung zu erkennen ist.'."\n",
                       'In Bezug auf das Zählen, als die Basis aller hier betrachteten Operatoren, erschien mir eine'."\n".
                     'Helixspiralform allerdings als nicht ganz passend.'."\n".

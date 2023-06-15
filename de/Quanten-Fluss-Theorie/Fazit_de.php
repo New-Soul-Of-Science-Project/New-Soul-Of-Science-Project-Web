@@ -77,7 +77,7 @@
                     'Seine fraktalen Ebenen sind ins Große wie ins Kleine prinzipiell unendlich weit fortgesetzt.'."\n".
                     'Um ein handhabbares Modell der Quanten-Fluss-Theorie zu erschaffen, kann sie aber in beiden Richtungen begrenzt werden.'."\n".
                     'Je weiter man sie fast, das heißt je mehr Fraktalebenen man einbezieht, umso mehr Details der Physik kann man erklären.'."\n",
-                      'Ähnlich der mathematischen Arithmetik ist das Zählen einer der Grundbausteine der Quanten-Fluss-Theorie.'."\n".
+                      'Ähnlich der mathematischen Arithmetik\\footnote{\\const{NSOSP_g_footnote_text_Arithmetik}} ist das Zählen einer der Grundbausteine der Quanten-Fluss-Theorie.'."\n".
                     'Anders als in der Arithmetik besitzt die neue Form der Physik eben einen zeitlichen Aspekt; sogar mehrere zeitliche Aspekte findet man, wenn man sich mit ihr eingehend beschäftigt.'."\n".
                     'Ihre Fundamentalzeit hat im wahrsten Sinne des Wortes einen ewig fließenden Charakter.'."\n".
                     'Darauf aufbauend finden sich variable und schwingende Aspekte der Zeit.'."\n",
