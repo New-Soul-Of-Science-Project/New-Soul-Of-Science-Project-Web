@@ -47,7 +47,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Es lassen sich mindestens zwei geometrische Konstruktionen finden, die der folgenden Definition von \\term{s} über das unendliche Primzahlprodukt aus der'."\n".
-                    '\\jump{OM:SupNum:Einleitung:Vortext:Frage-und-zweite-Erkenntnis}{Einleitung} äquivalent sind:'."\n"))),
+                    '\\jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{Einleitung} äquivalent sind:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  \left( \prod_{\forall p \in \mathbb{P}}  p \right)  }',

@@ -42,7 +42,7 @@
                     'Wie wir sehen werden erhalten wir mit den hier entwickelten Superial-Zahlen etwas ganz besonderes:'."\n".
                     'Formal gesprochen sind sie eine abelsche Gruppe\\footnote{\\const{NSOSP_g_footnote_text_AbelscheGruppe}} und'."\n".
                     'bezüglich der Addition und Multiplikation ein aktual unendlicher angeordneter algebraischer Körper\\footnote{\\const{NSOSP_g_footnote_text_KoerperAlgebra}}.'."\n".
-                    'Mit ihnen erweitern wir die rationalen Zahlen auf fraktale Weise ins Aktual-Unendliche und'."\n".
+                    'Mit ihnen erweitern wir die rationalen Zahlen\\footnote{\\const{SupNum_g_footnote_text_RationaleZahl}} auf fraktale Weise ins Aktual-Unendliche und'."\n".
                     'geben so der Unendlichkeit eine fundamentale, fraktale Struktur.'."\n",
                       'Mit den Superial-Zahlen kommen wir in die Lage aktual unendlich kleine Differenzen zu bilden,'."\n".
                     'mit denen wir sehr präzise Ableitungen beschreiben und berechnen können, ohne den Limes benutzen zu müssen.'."\n",
@@ -518,7 +518,7 @@
                     'eben auch unendlich große, lineare Dimensionen beschreiben.'."\n".
                     'Zwischen denen liegen dann unsere endlichen Zahlen und so fort.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Frage-und-zweite-Erkenntnis', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s', text =>
                                            
                 'Was ist unsere neue superiale Basis \\latexmath{ s }?', subline =>
                   'Primzahlen sind grundlegend für die Antwort')),
@@ -745,45 +745,72 @@
                     'womit dann beispielsweise \\latexmath{ \sqrt{2} \cdot s } ganzzahlig wäre.'."\n",
                       'Sollte die \\jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} sich als wahr'."\n".
                     'erweisen, dann wäre dies ebenfalls eine sehr bemerkenswerte Eigenschaft der Superial-Zahlen,'."\n".
-                    'die uns neue Informationen über algebraische Zahlen geben würde und so ein wichtiger Beitrag zur die Zahlentheorie wäre.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'die uns neue Informationen über algebraische Zahlen geben würde und so ein wichtiger Beitrag zur Zahlentheorie wäre.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                                           
+                'Die Erweiterung der Arithmetik ins Unendliche', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Die Superial-Zahlen erweitern die uns bekannte Arithmetik\\footnote{\\const{NSOSP_g_footnote_text_Arithmetik}}'."\n".
+                    'ins Aktual-Unendliche, wobei sehr viele ihrer Regeln nicht nur für ihre endlichen Zahlen gelten,'."\n".
+                    'sondern auch in der Erweiterung:'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX sind damit die gesuchte Eigenschaften von \\latexmath{ s } XXX ganze Zahl, endlich beliebig oft'."\n".
-                    'mit einer rationalen Zahl multiplizierbar, erfüllt. XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                  '\\condb{Unendliche Untermengen der Zahlen} \\\\'."\n".
+                    'Es werden auch die Untermengen der Zahlen erweitert.'."\n".
+                    'So gibt es zum Beispiel natürliche, ganze, gerade und ungerade Superial-Zahlen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'XXX Über diese Definition von \\term{s} kommt man also wirklich zu einer Erweiterung der natürlichen Zahlen ins Unendliche, in der man'."\n".
-                    'beliebig vorwärts und rückwärts zählen kann.'."\n".
-                    'Wie ich noch zeigen werde lässt sich eine entsprechende Erweiterung der ganzen Zahlen definieren.'."\n".
-                    'Auch eine Erweiterung der Primzahlen kann auf diese Weise definiert werden und man erhält die Menge \\term{\M(S)_{P}} der \\italic{superialen Primzahlen}.'."\n".
-                    'Zum Beispiel sind die Zahlen \\term{s-1} und \\term{s+1} unendlich große Primzahlen, weil sie durch keine endliche Primzahl ganzzahlig teilbar sind'."\n".
+                  '\\condb{Unendliche Primzahlen} \\\\'."\n".
+                    'Auch eine Erweiterung der Primzahlen kann auf diese Weise definiert werden und man erhält die Menge \\latexmath{ \mathbb{S}_P } der \\italic{superialen Primzahlen}.'."\n".
+                    'Zum Beispiel sind die Zahlen \\latexmath{ s - 1 } und \\latexmath{ s + 1 } unendlich große Primzahlen, weil sie durch keine endliche Primzahl ganzzahlig teilbar sind'."\n".
                     'und auch keine andere Zahl in diesem System gefunden werden kann, die diese Zahlen ganzzahlig teilt.'."\n".
-                    'Die Zahlen \\term{s±2} sind hingegen beide durch \\term{2} teilbar, also keine Primzahlen.'."\n".
-                    'Diese Erweiterung der Primzahlen ins Unendliche ist interessant, weil sie die Verteilung der Primzahlen im Unendlichen beleuchtet und so auch neue Einsichten für die endlichen Primzahlen verschaffen kann.'."\n",
-                      'Dadurch, dass die Superial-Zahlen, durch diese sinnvolle Definition natürlicher Superial-Zahlen, dann zunächst mit rationalen Koeffizienten definiert sind, kommt man in die Lage, dass die rationalen Zahlen als Koeffizienten von \\term{s},'."\n".
-                    'wie oben beschrieben, in der Reihenfolge ihrer Größe quasi mitgezählt werden.'."\n".
-                    'Man zählt:'."\n"))),
+                    'Die Zahlen \\latexmath{ s \pm 2 } sind hingegen beide durch \\latexmath{ 2 } teilbar, also keine Primzahlen.'."\n",
+                      'Diese Erweiterung der Primzahlen ins Unendliche ist interessant, weil sie die Verteilung der Primzahlen'."\n".
+                    'im Unendlichen beleuchtet und so auch neue Einsichten für die endlichen Primzahlen verspricht.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Rechnen im Unendlichen} \\\\'."\n".
+                    'Auch das beliebige vorwärts und rückwärts Zählen, die Addition, die Multiplikation und deren Umkehrrechenarten,'."\n".
+                    'die Subtraktion und die Division, werden ins Unendliche erweitert.'."\n".
+                    'Ebenso gibt es weiter den Betrag einer Zahl, das Modulo und den Rest einer Teilung.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Gesetze im Unendlichen} \\\\'."\n".
+                    'Auch bleiben das Kommutativgesetz, das Assoziativgesetz und das Distributivgesetz erhalten.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Anordnung im Unendlichen} \\\\'."\n".
+                    'Und die Superial-Zahlen sind, wie gesagt, nach ihrer Größe lexikografisch angeordnet,'."\n".
+                    'unter Berücksichtigung ihrer Potenzen von \\latexmath{ s }.\\footnote{\\const{SupNum_g_footnote_text_LexikographischeOrdnung}}'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Eine unerwartete Verbindung der rationalen Zahlen mit dem Zählen} \\\\'."\n".
+                    'Das natürliche Zählen spiegelt sich in den \\italic{natürlichen Superial-Zahlen} \\latexmath{ \mathbb{S}_N } wieder.'."\n".
+                    'Diese enthalten alle endlichen rationalen Zahlen in ihren Koeffizienten der Potenzen von \\latexmath{ s }.'."\n",
+                      'Nun wissen wir, dass wir rationale Zahlen nicht ihrer Größe nach aufzählen können,'."\n".
+                    'weil sie von ihrer Anordnung her dicht sind.\\footnote{\\const{SupNum_g_footnote_text_RationaleZahlDichtheit}}'."\n".
+                    'Interessanter Weise zählen wir in den natürlichen Superial-Zahlen die rationalen Zahlen ihrer Größe nach,'."\n".
+                    'als Koeffizienten der Potenzen von \\latexmath{ s }, implizit mit.'."\n",
+                      'Denn wir zählen:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \qquad\; 0,\; 1,\; 2,\; 3,\; \cdots \\\ \quad \cdots \frac{1}{3} \cdot s - 2,\; \frac{1}{3} \cdot s - 1,\; \frac{1}{3} \cdot s,\; \frac{1}{3} \cdot s + 1,\; \frac{1}{3} \cdot s + 2, \cdots \\\ \quad \cdots \frac{1}{2} \cdot s - 2,\; \frac{1}{2} \cdot s - 1,\; \frac{1}{2} \cdot s,\; \frac{1}{2} \cdot s + 1,\; \frac{1}{2} \cdot s + 2, \cdots \\\ \quad \cdots \frac{3}{2} \cdot s - 2,\; \frac{3}{2} \cdot s - 1,\; \frac{3}{2} \cdot s,\; \frac{3}{2} \cdot s + 1,\; \frac{3}{2} \cdot s + 2, \cdots \\\ \quad\quad\; \vdots  }'),
+                      array( display => 'on',  latex => '{  \qquad\; 0,\; 1,\; 2,\; 3,\; \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{1}{3} \cdot s - 2,\; \frac{1}{3} \cdot s - 1,\; \frac{1}{3} \cdot s,\; \frac{1}{3} \cdot s + 1,\; \frac{1}{3} \cdot s + 2, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{1}{2} \cdot s - 2,\; \frac{1}{2} \cdot s - 1,\; \frac{1}{2} \cdot s,\; \frac{1}{2} \cdot s + 1,\; \frac{1}{2} \cdot s + 2, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{3}{2} \cdot s - 2,\; \frac{3}{2} \cdot s - 1,\; \frac{3}{2} \cdot s,\; \frac{3}{2} \cdot s + 1,\; \frac{3}{2} \cdot s + 2, \cdots \\\ \quad\quad\; \vdots  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Und so fort.'."\n",
-                      'Dort wo die drei Punkte »…« stehen werden alle von der Größe her dazwischen liegenden rationalen Koeffizienten mitgezählt.'."\n".
+                      'Dort wo drei vertikale Punkte ›⋮‹ stehen werden alle von der Größe her dazwischen liegenden rationalen Koeffizienten mitgezählt.'."\n".
                     'Die Superial-Zahlen bringen so die rationalen Zahlen mit dem Zählen von natürlichen und ganzen Zahlen in Verbindung.'."\n",
+                      'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
                       'Insgesamt steht so zu erwarten, dass die aus diesen Zahlen zu ziehenden Erkenntnisse weitreichend sein könnten.'."\n".
                     'Eine wichtige Vermutungen ist die \\jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}{\\italic{Überrationalitätsvermutung}}, die besagt, dass die Superial-Zahlen auch mit \\italic{überrationalen Brüchen} als'."\n".
                     'Koeffizienten funktionieren würden.'."\n".

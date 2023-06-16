@@ -130,7 +130,7 @@
           'OM:SupNum:Einleitung:Vortext:Equ-Integriere-zu-x2-bis-auf-letzte-Summe' => array( headline_text => 'SN.Ein.13'),
           'OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x' => array( headline_text => 'SN.Ein.15'),
 
-          'OM:SupNum:Einleitung:Vortext:Frage-und-zweite-Erkenntnis' => array( headline_text => 'Was ist unsere neue superiale Basis \\latexmath{ s }?'/*, headline_text_short => 'XXX'*/),
+          'OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s' => array( headline_text => 'Was ist unsere neue superiale Basis \\latexmath{ s }?'/*, headline_text_short => 'XXX'*/),
           'OM:SupNum:Einleitung:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N' => array( headline_text => 'SN.Ein.31'),
           'OM:SupNum:Einleitung:Vortext:Equ-N-ist-mit-Null' => array( headline_text => 'SN.Ein.32'),
