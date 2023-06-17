@@ -793,7 +793,8 @@
                     'weil sie von ihrer Anordnung her dicht sind.\\footnote{\\const{SupNum_g_footnote_text_RationaleZahlDichtheit}}'."\n".
                     'Interessanter Weise zählen wir in den natürlichen Superial-Zahlen die rationalen Zahlen ihrer Größe nach,'."\n".
                     'als Koeffizienten der Potenzen von \\latexmath{ s }, implizit mit.'."\n",
-                      'Denn wir zählen:'."\n"))),
+                      'Denn wir zählen:'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \qquad\; 0,\; 1,\; 2,\; 3,\; \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{1}{3} \cdot s - 2,\; \frac{1}{3} \cdot s - 1,\; \frac{1}{3} \cdot s,\; \frac{1}{3} \cdot s + 1,\; \frac{1}{3} \cdot s + 2, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{1}{2} \cdot s - 2,\; \frac{1}{2} \cdot s - 1,\; \frac{1}{2} \cdot s,\; \frac{1}{2} \cdot s + 1,\; \frac{1}{2} \cdot s + 2, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{3}{2} \cdot s - 2,\; \frac{3}{2} \cdot s - 1,\; \frac{3}{2} \cdot s,\; \frac{3}{2} \cdot s + 1,\; \frac{3}{2} \cdot s + 2, \cdots \\\ \quad\quad\; \vdots  }'),
@@ -802,7 +803,12 @@
                     'Und so fort.'."\n",
                       'Dort wo drei vertikale Punkte ›⋮‹ stehen werden alle von der Größe her dazwischen liegenden rationalen Koeffizienten mitgezählt.'."\n".
                     'Die Superial-Zahlen bringen so die rationalen Zahlen mit dem Zählen von natürlichen und ganzen Zahlen in Verbindung.'."\n",
-                      'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                                           
+                'Unsere Perspektive')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -816,14 +822,15 @@
                     'Koeffizienten funktionieren würden.'."\n".
                     'Oder noch genauer ausgedrückt stellt sich die Frage, ob es solche überrationalen Brüche wirklich gibt und welche bedeutenden Zahlenwerte sie darstellen können.'."\n".
                     'Eine der sehr interessanten Vermutungen, die sich aus den Superial-Zahlen ergeben, ist die \\jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung}{\\italic{Primzahlenprodukt-Vermutung}}.'."\n".
-                    'Wäre sie richtig, würde sie wichtige Aussagen über die Verteilung der endlichen Primzahlen unter den extrem großen natürlichen Zahlen erlauben.'."\n"))),
+                    'Wäre sie richtig, würde sie wichtige Aussagen über die Verteilung der endlichen Primzahlen unter den extrem großen natürlichen Zahlen erlauben.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
                 'Feine Differenzierung des aktualen Unendlichen')),
                   array( 'text', array( text => array(
                     'Durch die Definition der superialen Einheit \\term{s} als unendliches Primzahlprodukt erhalten die Superial-Zahlen den Mehrwert, dass sich das Aktual-Unendliche nach den gewohnten Regeln'."\n".
-                    'der Arithmetrik behandeln und differenzieren lässt.'."\n".
-                    'Wichtige Elemente der Arithmetrik, wie beispeilsweise natürliche, ganze, gerade und ungerade Zahlen sowie Primzahlen, lassen sich so im Unendlichen untersuchen.'."\n".
+                    'der Arithmetik behandeln und differenzieren lässt.'."\n".
+                    'Wichtige Elemente der Arithmetik, wie beispeilsweise natürliche, ganze, gerade und ungerade Zahlen sowie Primzahlen, lassen sich so im Unendlichen untersuchen.'."\n".
                     'Dies hat auch Rückwirkung auf die Betrachtung des Endlichen.'."\n".
                     'Denn so ergeben sich unter anderem neue Möglichkeiten die Verteilung der Primzahlen unter den großen endlichen natürlichen Zahlen besser zu verstehen.'."\n".
                     'Auch die Primfaktorenzerlegung und die Ordnung der rationalen Zahlen sind so noch einmal neu zu betrachten.'."\n",
