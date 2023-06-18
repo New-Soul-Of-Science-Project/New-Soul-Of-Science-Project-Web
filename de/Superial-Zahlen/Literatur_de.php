@@ -28,6 +28,7 @@
               'wiki:Ordinalzahl:2021',
               'wiki:ParitaetMathematik:2021',
               'wiki:PeanoAxiome:2021',
+              'wiki:Primfaktorzerlegung:2022',
               'wiki:Primorial:2015',
               'wiki:Primzahl:2021',
               'wiki:RationaleZahl:2022',

@@ -113,45 +113,49 @@
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega', label_text => '\\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Errechnen wir das Produkt aller endlichen Primzahlen von den kleinsten Primfaktoren her mit der Primfakultät\\footnote{\\const{SupNum_g_footnote_text_Primorial}} \\latexmath{ p\# }, dann wird es sehr schnell'."\n".
-                    'viel größer, als die größte in ihm vorkommende Primzahl:\\footnote{\\const{SupNum_g_footnote_text_PrimorialWikiWerte}}'."\n".
+                    'Jedoch woher wissen wir, dass alle endlichen Primzahlen genau ein Mal im Produkt vorkommen sollten?'."\n",
+                      'Dies können wir plausibel machen, wenn wir erkennen, dass es in jedem Fall zwei Möglichkeiten gibt,'."\n".
+                    'die Unendlichkeit der endlichen natürlichen Zahlen zu zeigen.'."\n".
                     ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2\#  =  2  }'),
-                      array( display => 'on',  latex => '{  3\#  =  6  }'),
-                      array( display => 'on',  latex => '{  5\#  =  30  }'),
-                      array( display => 'on',  latex => '{  7\#  =  210  }'),
-                      array( display => 'on',  latex => '{  11\#  =  2310  }'),
-                      array( display => 'on',  latex => '{  13\#  =  30030  }'),
-                      array( display => 'on',  latex => '{  17\#  =  510510  }'),
-                      array( display => 'on',  latex => '{  19\#  =  9699690  }'),
-                      array( display => 'on',  latex => '{  23\#  =  223092870  }'),
-                    ))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                      
+                'Zwei Arten die Unendlichkeit der endlichen natürlichen Zahlen zu beweisen', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                    'So wäre es ein sehr großes Rätsel, wie dieses Produkt irgendwann nicht weiter wächst, so, dass'."\n".
-                    'die natürlichen Zahlen es wieder einhohlen und letztendlich gleich groß sein können.'."\n".
-                    'Ich würde aus meiner heutigen Sicht sagen, dass dies ein oder sogar das wesentliche Geheimnis der'."\n".
-                    'Primzahlen ist.'."\n",
-                      'Unter welcher Bedingung könnte denn dies überhaupt der Fall sein?'."\n",
-                      'Aus meiner Sicht könnte dies nur dann der Fall sein, wenn die Anzahl der Primzahlen'."\n".
-                    'unter den extrem großen natürlichen Zahlen minimal wird. \\color{*Bearb}{(Ist ›minimal‹ die korrekte Formulierung? Und ist diese Annahme notwendig?)}'."\n".
-                    'Und mit Hilfe des \\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid}{Satz des Euklid},'."\n".
-                    'eines Beweises, dass es unendlich viele Primzahlen gibt, können wir erkennen, was das bedeuten sollte.'."\n".
-                    'Eine Minimierung des Anteils an Primzahlen heißt, dass es unter den ganz extrem großen natürlichen Zahlen im wesentlichen nur noch Primzahlzwillinge gibt.'."\n".
-                    'Die Lücken zwischen den Primzahlen würden im Schnitt maximal werden.'."\n".
-                    'Diese Aussage ist also eng mit der Primzahlzwillingsvermutung\\color{*Bearb}{(Verweis)} gekoppelt.'."\n",
-                      'Wir können plausibel machen, wie wir noch zeigen, dass unter der Annahme, es gäbe im extrem Großen im wesentlichen nur noch Primzahlzwillinge,'."\n".
-                    'und, dass dann ein solches Primzahlzwillingspaar die nächsten Primzahlen erzeugt, ohne, dass dazwischen noch welche wären,'."\n".
-                    'eine so große Lücke zwischen den Primzahlzwillingen und den nächsten Primzahlzwillingen entsteht, dass das Zählen der natürlichen'."\n".
-                    'Zahlen aufholen kann.'."\n".
+                    'Wenn wir verstehen, dass auch der \\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid}{›Satz des Euklid‹}\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:SatzDesEuklid:2023}.}'."\n".
+                    'beweist, dass die endlichen natürlichen Zahlen nicht enden, dann können wir erkennen,'."\n".
+                    'welche Bedeutung dieser Satz und das Zentrum seines Beweises für die natürlichen Zahlen hat.'."\n",
+                      'Es gibt also mindestens zwei Arten die Unendlichkeit der endlichen natürlichen Zahlen zu beweisen:'."\n",
+                      'Ein Mal durch das Zählen, mittels der vollständigen Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}},'."\n".
+                    'auf Basis des Zählatoms Eins, ausgehend von der Null.'."\n",
+                      'Und ein weiteres Mal mittels der Multiplikation und des Zählens, auf Basis der Multiplikationsatome,'."\n".
+                    'der Primzahlen, und des Zählatoms Eins, ausgehend von der Eins.'."\n".
+                    'So, wie es nachfolgend im ›Satz des Euklid‹ beschrieben ist.'."\n".
+                    'Sein Beweis basiert auf der Primfakultät, also auf dem Primordial\\footnote{\\const{SupNum_g_footnote_text_Primorial}},'."\n".
+                    'welche immer weiter potenziell ins Unendliche vorangetrieben wird, und damit immer genauer'."\n".
+                    'dem Produkt aus Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen}'."\n".
+                    'entspricht.'."\n",
+                      'In der Primfakultät sind alle endlichen Primzahlen, von der Zwei bis zu einer größten, enthalten.'."\n".
+                    'Die größte wird dann im Beweis immer größer, bis ins Unendliche.'."\n".
+                    'Ausschließlich mit diesem Produkt funktioniert der Beweis und nicht, wenn irgendeine Primzahl'."\n".
+                    'im Produkt fehlt.'."\n",
+                      'Da aufgrund des ›Fundamentalsatz der Arithmetik‹\\footnote{\\const{SupNum_g_footnote_text_FundamentalsatzDerArithmetik}}'."\n".
+                    'alle natürlichen Zahlen größer als Eins entweder selber Primzahlen sind oder sich in Primfaktoren zerlegen lassen,'."\n".
+                    'erzeugt darüber die immer größer werdende Primfakultät indirekt alle natürlichen Zahlen größer als Eins,'."\n".
+                    'bis ins Unendliche.'."\n",
+                      'Es liegt also sehr nahe, dass das Produkt aller endlichen Primzahlen das Teilprodukt von'."\n".
+                    '\\latexmath{ s } ist, dass \\latexmath{ \omega } entspricht.'."\n".
+                    'Es gibt keinen Hinweis darauf, dass eine endliche Primzahl in dem Produkt mehrfach vorkommen müsste.'."\n".
+                    'Dies also zu behaupten, wäre willkürlich.'."\n".
+                    'Womit wir keinen Beweis für die Primzahlprodukt-Vermutung haben, diese aber sehr plausibel'."\n".
+                    'erscheint.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid', text =>
                       
                 'Satz des Euklid', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Der Satz des Euklid\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:SatzDesEuklid:2023}.}'."\n".
+                    'Der ›Satz des Euklid‹'."\n".
                     'beweist, dass die Primzahlen endlicher größe nicht enden.'."\n",
                       'Ich gebe diesen Beweis nachfolgend in Kurzform wieder.'."\n".
                     'Dabei werde ich ihn etwas modifizieren, damit er zu den von uns gesuchten Eigenschaften am besten passt und'."\n".
@@ -190,6 +194,44 @@
                     'oder es gibt zwischen \\latexmath{ p } und \\latexmath{ p\# - 1 } – also in \\latexmath{ \rbrack p, p\# - 1 \lbrack_\mathbb{N} } –'."\n".
                     'mindestens zwei oder vier oder gar mehr weitere Primzahlen,'."\n".
                     'die in der Primfaktorenzerlegung von \\latexmath{ p\# - 1 } und/oder \\latexmath{ p\# + 1 } stecken.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                      
+                'Die Größenordnung des Produkts aller endlichen Primzahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Errechnen wir das Produkt aller endlichen Primzahlen von den kleinsten Primfaktoren her mit der Primfakultät\\footnote{\\const{SupNum_g_footnote_text_Primorial}} \\latexmath{ p\# }, dann wird es sehr schnell'."\n".
+                    'viel größer, als die größte in ihm vorkommende Primzahl:\\footnote{\\const{SupNum_g_footnote_text_PrimorialWikiWerte}}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2\#  =  2  }'),
+                      array( display => 'on',  latex => '{  3\#  =  6  }'),
+                      array( display => 'on',  latex => '{  5\#  =  30  }'),
+                      array( display => 'on',  latex => '{  7\#  =  210  }'),
+                      array( display => 'on',  latex => '{  11\#  =  2310  }'),
+                      array( display => 'on',  latex => '{  13\#  =  30030  }'),
+                      array( display => 'on',  latex => '{  17\#  =  510510  }'),
+                      array( display => 'on',  latex => '{  19\#  =  9699690  }'),
+                      array( display => 'on',  latex => '{  23\#  =  223092870  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'So wäre es ein sehr großes Rätsel, wie dieses Produkt irgendwann nicht weiter wächst, so, dass'."\n".
+                    'die natürlichen Zahlen es wieder einhohlen und letztendlich gleich groß sein können.'."\n".
+                    'Ich würde aus meiner heutigen Sicht sagen, dass dies ein oder sogar das wesentliche Geheimnis der'."\n".
+                    'Primzahlen ist.'."\n",
+                      'Unter welcher Bedingung könnte denn dies überhaupt der Fall sein?'."\n",
+                      'Aus meiner Sicht könnte dies nur dann der Fall sein, wenn die Anzahl der Primzahlen'."\n".
+                    'unter den extrem großen natürlichen Zahlen minimal wird. \\color{*Bearb}{(Ist ›minimal‹ die korrekte Formulierung? Und ist diese Annahme notwendig?)}'."\n".
+                    'Und mit Hilfe des \\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid}{Satz des Euklid},'."\n".
+                    'eines Beweises, dass es unendlich viele Primzahlen gibt, können wir erkennen, was das bedeuten sollte.'."\n".
+                    'Eine Minimierung des Anteils an Primzahlen heißt, dass es unter den ganz extrem großen natürlichen Zahlen im wesentlichen nur noch Primzahlzwillinge gibt.'."\n".
+                    'Die Lücken zwischen den Primzahlen würden im Schnitt maximal werden.'."\n".
+                    'Diese Aussage ist also eng mit der Primzahlzwillingsvermutung\\color{*Bearb}{(Verweis)} gekoppelt.'."\n",
+                      'Wir können plausibel machen, wie wir noch zeigen, dass unter der Annahme, es gäbe im extrem Großen im wesentlichen nur noch Primzahlzwillinge,'."\n".
+                    'und, dass dann ein solches Primzahlzwillingspaar die nächsten Primzahlen erzeugt, ohne, dass dazwischen noch welche wären,'."\n".
+                    'eine so große Lücke zwischen den Primzahlzwillingen und den nächsten Primzahlzwillingen entsteht, dass das Zählen der natürlichen'."\n".
+                    'Zahlen aufholen kann.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
                       
