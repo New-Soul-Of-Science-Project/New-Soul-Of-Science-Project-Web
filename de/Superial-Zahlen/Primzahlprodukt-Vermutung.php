@@ -125,10 +125,16 @@
                     'Wenn wir verstehen, dass auch der \\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid}{›Satz des Euklid‹}\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:SatzDesEuklid:2023}.}'."\n".
                     'beweist, dass die endlichen natürlichen Zahlen nicht enden, dann können wir erkennen,'."\n".
                     'welche Bedeutung dieser Satz und das Zentrum seines Beweises für die natürlichen Zahlen hat.'."\n",
-                      'Es gibt also mindestens zwei Arten die Unendlichkeit der endlichen natürlichen Zahlen zu beweisen:'."\n",
-                      'Ein Mal durch das Zählen, mittels der vollständigen Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}},'."\n".
-                    'auf Basis des Zählatoms Eins, ausgehend von der Null.'."\n",
-                      'Und ein weiteres Mal mittels der Multiplikation und des Zählens, auf Basis der Multiplikationsatome,'."\n".
+                      'Es gibt also mindestens zwei Arten die Unendlichkeit der endlichen natürlichen Zahlen zu beweisen:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Beweis durch Zählen} \\\\'."\n".
+                    'Ein Mal durch das Zählen, mittels der vollständigen Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}},'."\n".
+                    'auf Basis des Zählatoms Eins, ausgehend von der Null.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Beweis durch Multiplikation und Zählen} \\\\'."\n".
+                    'Und ein weiteres Mal mittels der Multiplikation und des Zählens, auf Basis der Multiplikationsatome,'."\n".
                     'der Primzahlen, und des Zählatoms Eins, ausgehend von der Eins.'."\n".
                     'So, wie es nachfolgend im ›Satz des Euklid‹ beschrieben ist.'."\n".
                     'Sein Beweis basiert auf der Primfakultät, also auf dem Primordial\\footnote{\\const{SupNum_g_footnote_text_Primorial}},'."\n".
@@ -142,8 +148,11 @@
                       'Da aufgrund des ›Fundamentalsatz der Arithmetik‹\\footnote{\\const{SupNum_g_footnote_text_FundamentalsatzDerArithmetik}}'."\n".
                     'alle natürlichen Zahlen größer als Eins entweder selber Primzahlen sind oder sich in Primfaktoren zerlegen lassen,'."\n".
                     'erzeugt darüber die immer größer werdende Primfakultät indirekt alle natürlichen Zahlen größer als Eins,'."\n".
-                    'bis ins Unendliche.'."\n",
-                      'Es liegt also sehr nahe, dass das Produkt aller endlichen Primzahlen das Teilprodukt von'."\n".
+                    'bis ins Unendliche.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Hohe Plausibilität der Primzahlprodukt-Vermutung} \\\\'."\n".
+                    'Es liegt also sehr nahe, dass das Produkt aller endlichen Primzahlen das Teilprodukt von'."\n".
                     '\\latexmath{ s } ist, dass \\latexmath{ \omega } entspricht.'."\n".
                     'Es gibt keinen Hinweis darauf, dass eine endliche Primzahl in dem Produkt mehrfach vorkommen müsste.'."\n".
                     'Dies also zu behaupten, wäre willkürlich.'."\n".
