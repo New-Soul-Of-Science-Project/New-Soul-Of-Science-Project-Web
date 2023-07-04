@@ -275,9 +275,9 @@
                   array( 'text', array( text => array(
                   '\\condb{Das Primpotenzraster einer Menge aufeinanderfolgender natürlichen Zahlen} \\\\'."\n".
                     'Wie können wir alternativ die natürlichen Zahlen in solchen Mengen beschreiben?'."\n",
-                      'Das Primpotenzraster bietet eine weitere Möglichkeit die natürlichen Zahlen dieser Mengen'."\n".
-                    'zu beschreiben.'."\n".
-                    'Und dies funktioniert über eine etwas abgewandelte Primfakultät.'."\n".
+                      'Das Primpotenzraster übernimmt die Idee des Beweises des ›Satz des Euklid‹ mit Hilfe der Primfakultät und'."\n".
+                    'bietet eine weitere Möglichkeit die natürlichen Zahlen dieser Mengen zu beschreiben.'."\n".
+                    'Dies geht über ein tieferes Verständnis, wie der Beweis funktioniert, und über eine zu diesem Zweck etwas abgewandelte Primfakultät.'."\n".
                     ''))),
                 //  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
                       
@@ -286,21 +286,24 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Sei die \italic{Mengen-Primfakultät} \\latexmath{ \mathbb{T}\overline{\#} }, der Mengen-Primorial-Operator,'."\n".
-                      'der alle Primzahlen in der Menge \\latexmath{ \mathbb{T} } multipliziert:'."\n".
+                      'Sei der \italic{Mengen-Primorial-Operator} \\latexmath{ \mathbb{T}\overline{\#} }, auch \italic{Mengen-Primfakultät} genannt,'."\n".
+                      'der Operator der alle Primzahlen in der Menge \\latexmath{ \mathbb{T} } in einem Produkt multipliziert:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{T}\overline{\#}  :=  \!\! \prod_{ *( \forall p \in \mathbb{T} *) *[ p \in \mathbb{P} *] }  \!\!\!\! p  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{N}\overline{\#}  =   \!\! \prod_{ *( \forall p \in \mathbb{N} *) *[ p \in \mathbb{P} *] }  \!\!\!\! p  }'),
-                      array( display => 'on',  latex => '{  \omega  :=  \mathbb{N}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \omega\overline{\#}  =  \mathbb{N}\overline{\#}  }'),
-                      array( display => 'on',  latex => '{  \omega\overline{\#}  ?=  \omega  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'So erhalten wir eine Definition der Primfakultät, die sich auf die Elemente von Mengen'."\n".
-                      'bezieht.'."\n",
-                        'Wie in den Ordinalzahlen definiert, können endliche und unendliche Zahlen einer Repräsentation als Mengen entsprechen.'."\n".
+                      'So erhalten wir eine Definition der Primfakultät, die sich auf die Elemente von Mengen bezieht.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Wie in den Ordinalzahlen beziehungsweise Biordinalzahlen definiert, können endliche und unendliche Zahlen einer Repräsentation als Mengen entsprechen.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
                       'Dann ergibt sich für die folgenden Zahlen Beispiele:'."\n".
                       ''))),
                   array( 'equations',
@@ -321,35 +324,99 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Die vorm Operator stehende Zahl ist nicht Teil des Produkts, da die Menge,'."\n".
-                      'die eine Ordinalzahl repräsentiert, nicht selber in der Menge enthalten ist.'."\n",
-                        'Setzen wir diese Reihe fort, so landen wir für alle natürlichen Zahlen unter bestimmten Bedingungen bei:'."\n".
+                      'die eine Ordinalzahl repräsentiert, nicht selber in der Menge enthalten ist.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Setzen wir diese Reihe für alle natürlichen Zahlen bis ins Unendliche fort, so ergibt sich:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \omega\overline{\#}  =  \omega_{\forall p}  ?=  \omega  }'),
+                      array( display => 'on',  latex => '{  \omega\overline{\#}  =  \mathbb{N}\overline{\#}  =  \!\! \prod_{ *( \forall p \in \mathbb{N} *) *[ p \in \mathbb{P} *] }  \!\!\!\! p  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \omega\overline{\#}  =  \omega_{\forall p}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wie eingangs vermutet.'."\n",
+                      'Denn hier liefert uns \\latexmath{ \omega\overline{\#} }'."\n".
+                      'ein Produkt aller Primzahlen in \\latexmath{ \mathbb{N} }, also ein Produkt aller endlichen Primzahlen.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Und so gesehen stellt sich unsere Vermutung als'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \omega\overline{\#}  ?=  \omega  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'dar.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
+                    'Doch was bedeutet das Produkt aller Primzahlen in Mengen natürlicher Zahlen generell?'."\n".
                     'Was sind die Bedingungen, unter denen das fragliche Gleichheitszeichen erfüllt ist?'."\n".
                     'Wie können wir sie formulieren?'."\n",
-                      'In den Beispielen handelt es sich in jedem Fall um Mengen \\latexmath{ \mathbb{T} } endlicher natürlicher Zahlen'."\n".
-                    'von der Null bis zu einer endlichen größten.'."\n".
-                    'In der fraglichen letzen Formel handelt es sich dann schließlich um die Menge \\latexmath{ \mathbb{N} } aller endlichen natürlichen Zahlen'."\n".
-                    'von der Null an.'."\n",
-                      'Wir können in jedem Fall sagen, \\latexmath{ \mathbb{T}\overline{\#} } liefert uns ein Produkt'."\n".
-                    'aller Primzahlen, die die Primfaktoren aller Elemente von \\latexmath{ \mathbb{T} } sind.'."\n".
-                    'Das muss so sein, denn in dem Moment, wo \\latexmath{ \mathbb{T} = p_i + 1 } ist, kommt ins Produkt'."\n".
+                      'In den endlichen Beispielen handelt es sich ja um Mengen \\latexmath{ \mathbb{T} = n }, mit \\latexmath{ n \in \mathbb{N} },'."\n".
+                    'endlicher natürlicher Zahlen von der Null bis zu einer endlichen größten \\latexmath{ n - 1 }.'."\n",
+                      'Wir stellen fest, dass \\latexmath{ n\overline{\#} } uns ein Produkt'."\n".
+                    'aller Primzahlen liefert, die die Primfaktoren aller Elemente der Menge \\latexmath{ n } sind.'."\n".
+                    'Das muss so sein, denn in dem Moment, wo \\latexmath{ n = p_i + 1 } ist, mit \\latexmath{ p_i \in \mathbb{P} }, kommt zum Produkt'."\n".
                     'die Primzahl \\latexmath{ p_i } hinzu, die nicht Teil der Primfaktorenzerlegung einer der kleineren'."\n".
                     'Zahlen \\latexmath{ n < p_i } sein kann.'."\n".
-                    'Diese bestehen alle aus kleineren Primzahlen \\term{ p_{i–k} } mit \\latexmath{ 1 \leq k < i }'."\n".
-                    'oder sind selber eine solche.'."\n",
-                      'In der letzten fraglichen Formel liefert uns \\latexmath{ \mathbb{N}\overline{\#} }'."\n".
-                    'ein Produkt aller Primzahlen in \\latexmath{ \mathbb{N} }, also ein Produkt aller endlichen Primzahlen.'."\n",
-                      'Doch was bedeutet das Produkt aller Primzahlen in Mengen natürlicher Zahlen?'."\n".
+                    'Denn diese haben als Primfaktoren nur kleinere Primzahlen \\term{ p_{i–l} }, mit \\latexmath{ 1 \leq l < i },'."\n".
+                    'oder sind selber eine Primzahl.'."\n",
+                      'Was passiert nun beim Übergang, wenn eine neue Primzahl in die Menge hinzukommt?'."\n",
+                      'Wir können sagen, das \\italic{Primpotenzraster} weist nun eine Lücke auf und die neue Primzahl \\latexmath{ p_i }'."\n".
+                    'füllt diese Lücke und auch alle zukünftigen Lücken ihrer Potenzen, zusammen also die Lücken \\latexmath{ p_i^k }, mit \\latexmath{ k \in \mathbb{N} \setminus \{ 0 \} }.'."\n".
+                    'Deshalb auch der Name Primpotenzraster, denn, wie wir gleich noch näher erklären,'."\n".
+                    'sind diese Lücken aufgrund des Distributivgesetzes logischerweise bei allen reinen positiven Potenzen einer Primzahl zu finden,'."\n".
+                    'oder wenn diese Teil der Primfaktorenzerlegung einer anderen natürlichen Zahl sind.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Die Mengen-Primfakultät einer Primzahl definiert das lückenlose Primpotenzraster aller natürlichen Zahlen kleiner als sie selber} \\\\'."\n".
+                    'Wie wir an den obigen endlichen Beispielen erkennen können und wie gerade erklärt,'."\n".
+                    'ist die Mengen-Primfakultät einer Primzahl die letzte, bevor eine neue Primzahl'."\n".
+                    'zu diesem Produkt hinzukommt.'."\n".
+                    'Die Mengen-Primfakultät \\latexmath{ p_i\overline{\#} } der Menge einer Primzahl \\latexmath{ p_i } ist also die größte Menge mit natürlichen Zahlen \\latexmath{ 0 \leq n < p_i },'."\n".
+                    'die durch ihr Primpotenzraster aller kleineren Primzahlen \\latexmath{ p < p_i } in dieser Menge lückenlos dargestellt wird.'."\n".
+                    'Dieses \\italic{lückenlose Primpotenzraster} wird also auch durch eben diese Mengen-Primfakultät beschrieben.'."\n",
+                      '\\latexmath{ p_i\overline{\#} } ist also eine eineindeutige und vollständige Definition der Menge \\latexmath{ p_i }'."\n".
+                    'durch ihr lückenloses Primpotenzraster.'."\n".
+                    'Denn die erste Lücke befindet sich gleich bei \\latexmath{ p_i } selber, der natürlichen Zahl, die die nächst größere als die größte in der Menge ist.'."\n".
+                    'Damit ist die Lückenlosigkeit des lückenlosen Primpotenzrasters wirklich ganz genau auf die Menge \\latexmath{ p_i = \lbrack 0, p_i - 1 \rbrack_\mathbb{N} } begrenzt'."\n".
+                    'und definiert diese Zahlenmenge exakt.'."\n",
+                      'Die Mengen-Primfakultät \\latexmath{ p_i\overline{\#} } ist allerdings eine natürliche Zahl, die, wie oben schon gesagt,'."\n".
+                    'bei zunehmender Größe von \\latexmath{ p_i } rasant wächst und weit außerhalb der Menge'."\n".
+                    'an natürlichen Zahlen liegt, deren Primpotenzraster sie lückenlos definiert.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Größere Mengen-Primfakultäten von Primzahlen sind selber eine Kombination der Mengen-Primfakultäten aller kleineren Primzahlen} \\\\'."\n".
+                    'Die Mengen-Primfakultäten einer Primzahl \\latexmath{ p_i } ist das Produkt aller Primzahlen in ihrer Mengendarstellung.'."\n".
+                    'Dieses Produkt kombiniert damit alle lückenlosen Primpotenzrasters der in ihm enthaltenen Primzahlen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Übergang ins Unendliche zu allen endlichen natürlichen Zahlen der Menge \\latexmath{ \omega }} \\\\'."\n".
+                    'Möchte ich nun ein lückenloses Primpotenzraster, dass mir die Menge \\latexmath{ \mathbb{N} = \omega }'."\n".
+                    'aller endlichen natürlichen Zahlen beschreibt, dann muss ich das Produkt aller endlichen Primzahlen bilden,'."\n".
+                    'also \\latexmath{ \omega\overline{\#} }.'."\n",
+                      'Im Falle von \\latexmath{ \omega } gibt es allerdings nicht mehr zwei Möglichkeiten ein lückenloses'."\n".
+                    'Mengen-Intervall von natürlichen Zahlen, von Null an zu beschreiben, weil es keine größte Zahl in \\latexmath{ \mathbb{N} }'."\n".
+                    'gibt, die wir dann einen hoch zählen können, um die Anzahl an Elementen in der Menge zu beschreiben.'."\n",
+                      'Es bleibt nur die Mengen-Primfakultäten der Menge, die alle endlichen natürlichen Zahlen enthält, eben \\latexmath{ \omega\overline{\#} }.'."\n".
+                    'Und das mit ihm berechnete lückenlose Primpotenzrasters aller endlichen natürlichen Zahlen ist auch das'."\n".
+                    'Raster des Zählens.'."\n",
+                      'Damit haben wir die Primzahlprodukt-Vermutung bewiesen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{XXX} \\\\'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Das Raster einer Menge von aufeinanderfolgenden natürlichen Zahlen, beginnend mit der Null} \\\\'."\n".
