@@ -62,7 +62,8 @@
                       array( display => 'on',  latex => '{  1  :=  *\{ 0 *\}  =  *\{ *\{ *\} *\}  }'),
                       array( display => 'on',  latex => '{  2  :=  *\{ 0, 1 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
                       array( display => 'on',  latex => '{  3  :=  *\{ 0, 1, 2 *\}  =  *\{ *\{ *\}, *\{ *\{ *\} *\}, *\{ *\{ *\}, *\{ *\{ *\} *\} *\} *\}  }'),
-                      array( display => 'on',  latex => '{  n  :=  *\{ 0, 1, 2, \cdots , n - 1 *\}  }'),
+                      array( display => 'on',  latex => '{  n  :=  *\{ 0, 1, 2, \cdots , n - 1 *\}  }',
+                                          label_name => 'OM:BiOrd:Einleitung:Vortext:Equ-n-gleich-Menge-Null-bis-n-minus-Eins', label_text => '\\name{OM:BiOrd:Einleitung:Vortext:Equ-n-gleich-Menge-Null-bis-n-minus-Eins}', label_incr => true),
                       array( display => 'on',  latex => '{  n + 1  :=  *\{ 0, 1, 2, \cdots , n *\}  =  n \cup *\{ n *\}  }',
                                           label_name => 'OM:BiOrd:Einleitung:Vortext:Equ-n-plus-Eins', label_text => '\\name{OM:BiOrd:Einleitung:Vortext:Equ-n-plus-Eins}', label_incr => true),
                       array( display => 'on',  latex => '{  \mathbb{N}  =  *\{ 0, 1, 2, 3, 4, 5, \cdots *\}  }'),
@@ -72,7 +73,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \mathbb{N}  :=  \mathbb{N}_{0}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{N}  :=  \mathbb{N}_{0}  }',
+                                          label_name => 'OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null', label_text => '\\name{OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Der Übergang vom Endlichen ins Aktual-Unendliche geschieht durch die Feststellung, dass dann auch die Anzahl der Elemente der Menge der natürlichen Zahlen \\term{\M(N)} durch ein Symbol dargestellt werden kann, nämlich \\term{ω};'."\n".
@@ -81,14 +83,15 @@
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       // array( display => 'on', latex => '{  \mathbb{N}  :=  ??? *\{  n ~\middle|~ \left( n \in \mathbb{N} \right) \left( \forall x \in \mathbb{N} \right) \left[  x < n  \right]  *\}  }'),
-                      array( display => 'on', latex => '{  \omega  :=  \mathbb{N}  =  *\{ 0, 1, 2, 3, 4, 5, \cdots *\}  }'),
+                      array( display => 'on', latex => '{  \omega  :=  \mathbb{N}  =  *\{ 0, 1, 2, 3, 4, 5, \cdots *\}  }',
+                                          label_name => 'OM:BiOrd:Einleitung:Vortext:Equ-Def-omega-gleich-N', label_text => '\\name{OM:BiOrd:Einleitung:Vortext:Equ-Def-omega-gleich-N}', label_incr => true),
                       array( display => 'on', latex => '{  \omega + 1  :=  \mathbb{N} \cup *\{ \mathbb{N} *\}  =  *\{ 0, 1, 2, 3, \cdots , \mathbb{N} *\}  }'),
                       array( display => 'on', latex => '{  \omega + 2  :=  *( \omega + 1 *) \cup *\{ \omega + 1 *\} \\\ \qquad\;  =  *\{ 0, 1, 2, 3, \cdots , \mathbb{N}, *\{ 0, 1, 2, 3, \cdots , \mathbb{N} *\} *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Insgesamt sehen wir, dass jede definierte Zahl der Anzahl der Elemente in einer eineindeutig bestimmten geordnete Menge entspricht.'."\n",
                       'Die Anzahl \\latexmath{ \omega } symbolisiert mathematisch gesehen die aktual unendliche Anzahl,'."\n".
-                    'die der Schritte einer vollständigen Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} entsprechen, um alle endlichen Zahlen von der Null an'."\n".
+                    'die den Schritten einer vollständigen Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} entspricht, um alle endlichen Zahlen von der Null an'."\n".
                     'vollständig durchzuzählen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
@@ -740,7 +743,7 @@
                     'Während also der auf die negative Seite verschobene Nullpunkt eine negative Zahl repräsentiert, nämlich die minus Eins,'."\n".
                     'repräsentiert der originale Nullpunkt keine positive Zahl, sondern die Null selber.'."\n".
                     'Die Vollständigkeit der negativen und damit aller ganzen Zahlen entsteht dadurch,'."\n".
-                    'dass wir durch vollständige Induktion alle natürlichen Zahlen ins negative verschieben.'."\n",
+                    'dass wir durch vollständige Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} alle natürlichen Zahlen ins negative verschieben.'."\n",
                       'Ontologisch betrachtet sind negative Zahlen also nicht die inklusive der Zählrichtung an der Null'."\n".
                     'gespiegelten natürlichen oder alternativ nur positiven Zahlen.'."\n".
                     'Sondern es handelt sich strukturell um eine Verschiebung, die die Zählrichtung beibehält und nicht spiegelt,'."\n".
