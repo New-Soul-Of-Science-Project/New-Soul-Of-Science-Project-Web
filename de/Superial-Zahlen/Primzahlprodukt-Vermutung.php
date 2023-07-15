@@ -422,6 +422,177 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Primpotenzraster} \\\\'."\n".
+                    'Zur Definition der Menge des Primpotenzrasters und der Berechnung der lückenlosen Intervall-Menge'."\n".
+                    'natürlicher Zahlen an seinem Beginn, von der Null an, brauchen wir auch noch die Menge der Primfaktoren'."\n".
+                    'einer natürlichen Zahl.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Sei \\latexmath{ pf(n) } die Menge der Primfaktoren der natürlichen Zahl \\latexmath{ n }:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  pf(n)  =  *\{  x  *|*  *( \forall p \in \mathbb{P} *) *( n, \frac{ n }{ p } \in \mathbb{N} *) *[  x = p  *]  *\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Dann ist diese Menge also die Menge der Primzahlen, die \\latexmath{ n } ganzzahlig teilen.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Sei \\latexmath{ ppr(n) } das Primpotenzraster beziehungsweise die unendliche Primpotenzraster-Menge,'."\n".
+                      'erzeugt aus ihrem natürlichen Parameter \\latexmath{ n },'."\n".
+                      'eine Menge die alle Kombinationen der natürlichen Potenzen seiner Primfaktoren enthält,'."\n".
+                      'wobei die Null und die Eins zu den Primfaktoren dazu genommen werden, um bei Null und Eins keine Lücke zu haben:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ppr(n)  =  *\{  x  *|*  *( \forall i \in \mathbb{N} *) \\\ \qquad\qquad\qquad\quad\;\; *( i \in \{ 0, 1 \} \lor pf(i) \cap pf(n) \neq \varnothing *) \\\ \qquad\qquad\qquad\quad\;\; *[  x = i  *]  *\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Die Menge wird hier erzeugt, indem alle natürlichen Zahlen \\latexmath{ i } darauf geprüft werden, ob sie entweder'."\n".
+                      'Null oder Eins sind oder mindestens einen Primfaktoren mit \\latexmath{ n } teilen.'."\n",
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Sei \\latexmath{ lppr(n) } die maximale lückenlose Intervall-Menge natürlicher Zahlen, von der Null an, im Primpotenzraster \\latexmath{ ppr(n) }:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  lppr(n)  =  *\{  x  *|*  *( \forall i \in \mathbb{N} *) *( i \subset ppr(n) *) *[  x = i  *]  *\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Diese Intervall-Menge erhalten wir, indem wir alle natürlichen Zahlen \\latexmath{ i } in einer Menge sammeln, die echte Teilmenge\\color{*Bearb}{(Verweis)}'."\n".
+                      'des Primpotenzrasters sind.'."\n",
+                        '\\color{*Bearb}{(Diese Funktion könnten wir auch durch Mengennegation und das Herauskristallisieren'."\n".
+                      'der kleinsten Zahl in der Antimenge realisieren.)}'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Nachdem wir nun die Formalien definiert haben, möchte ich die Zusammenhänge an Zahlenbeispielen'."\n".
+                    'verdeutlichen und erlebbar machen.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Für die Primzahl \\latexmath{ 7 } haben wir:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ppr( 7\overline{\#} )  =  ppr( 2 \cdot 3 \cdot 5 )  =  ppr( 30 )  }'),
+                      array( display => 'on',  latex => '{  ppr( 7\overline{\#} )  =  *\{ 0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, \cdots *\}  }'),
+                      array( display => 'on',  latex => '{  lppr( 7\overline{\#} )  =  7  =  *\{ 0, 1, 2, 3, 4, 5, 6 *\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n".
+                      'XXX'."\n",
+                        '\\\\'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Für die Zahl \\latexmath{ 6 } haben wir:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ppr( 6\overline{\#} )  =  ppr( 2 \cdot 3 \cdot 5 )  =  ppr( 30 )  }'),
+                      array( display => 'on',  latex => '{  ppr( 6\overline{\#} )  =  *\{ 0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, \cdots *\}  }'),
+                      array( display => 'on',  latex => '{  lppr( 6\overline{\#} )  =  7  =  *\{ 0, 1, 2, 3, 4, 5, 6 *\}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  lppr( 6\overline{\#} )  =  lppr( 7\overline{\#} )  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n".
+                      'XXX'."\n",
+                        '\\\\'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Für die Zahl \\latexmath{ 5 } haben wir:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ppr( 5\overline{\#} )  =  ppr( 2 \cdot 3 )  =  ppr( 6 )  }'),
+                      array( display => 'on',  latex => '{  ppr( 5\overline{\#} )  =  *\{ 0, 1, 2, 3, 4, 6, 8, 9, 12, 16, 18, \cdots *\}  }'),
+                      array( display => 'on',  latex => '{  lppr( 5\overline{\#} )  =  5  =  *\{ 0, 1, 2, 3, 4 *\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n".
+                      'XXX'."\n",
+                        '\\\\'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Für die Zahl \\latexmath{ 4 } haben wir:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ppr( 4\overline{\#} )  =  ppr( 2 \cdot 3 )  =  ppr( 6 )  }'),
+                      array( display => 'on',  latex => '{  ppr( 4\overline{\#} )  =  *\{ 0, 1, 2, 3, 4, 6, 8, 9, 12, 16, 18, \cdots *\}  }'),
+                      array( display => 'on',  latex => '{  lppr( 4\overline{\#} )  =  5  =  *\{ 0, 1, 2, 3, 4 *\}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  lppr( 4\overline{\#} )  =  lppr( 5\overline{\#} )  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n".
+                      'XXX'."\n",
+                        '\\\\'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Für die Zahl \\latexmath{ 8 } haben wir:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ppr( 8\overline{\#} )  =  ppr( 2 \cdot 3 \cdot 5 \cdot 7 )  =  ppr( 210 )  }'),
+                      array( display => 'on',  latex => '{  ppr( 8\overline{\#} )  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 15, 16, 18, 20, \cdots *\}  }'),
+                      array( display => 'on',  latex => '{  lppr( 8\overline{\#} )  =  11  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 *\}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  lppr( 8\overline{\#} )  =  lppr( 9\overline{\#} )  =  lppr( 10\overline{\#} )  =  lppr( 11\overline{\#} )  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n".
+                      'XXX'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Die Mengen-Primfakultät \\latexmath{ n\overline{\#} } beschreibt ein Primpotenzraster minimalistisch.'."\n",
+                      'Im Besonderen ist jedes Primpotenzraster eine Beschreibung der nächsten Primzahl, die größer als'."\n".
+                    'oder gleich \\latexmath{ n } ist und auf seiner ersten Rasterlücke sitzt.'."\n".
+                    'Diese Primzahl erhalten wir dann durch \\latexmath{ lppr( n\overline{\#} ) }.'."\n",
+                      'Die Zahl beziehungsweise Menge \\latexmath{ lppr( \omega\overline{\#} ) } ist die Menge aller'."\n".
+                    'natürlichen Zahlen \\latexmath{ \mathbb{N} }.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  lppr( \omega\overline{\#} )  =  \mathbb{N}  =  \omega  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \omega\overline{\#}  ?=  \omega  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Berechnung der nächsten Primzahl per Mengenlehre} \\\\'."\n".
+                  '\\cond{Besonderheit der Kombination von Mengen-Primfakultät und maximale lückenlose Intervall-Menge des Primpotenzrasters} \\\\'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -435,67 +606,7 @@
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      '\\\\'."\n".
-                      'Sei das Primpotenzraster \\latexmath{ ppr(\mathbb{T}) } – als endlose Menge – einer Anzahl von der Null an aufeinanderfolgender'."\n".
-                      'natürlicher Zahlen über den Wert der Mengen-Primfakultät dieser Menge bestimmt, wobei XXX:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  pr(p)  =  *\{  x  *|*  *( \forall k \in \mathbb{N} *) *[  x = p^{k}  *]  *\}  }'),
-                      array( display => 'on',  latex => '{  ppr(\mathbb{T})  =  *\{  x  *|*  *( \forall p_{i} \in \mathbb{T} \cap \mathbb{P} *) *[  x = XXX pr(p_{i})  *]  *\}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n",
-                        'Die Menge der Primfaktoren \\latexmath{ pf(n) } enthält alle Primzahlen durch die \\latexmath{ n }'."\n".
-                      'ganzzahlig teilbar ist:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  pf(n)  =  *\{  x  *|*  *( \forall p \in \mathbb{P} *) *( n, \frac{ n }{ p } \in \mathbb{N} *) *[  x = p  *]  *\}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n",
-                        'Das Primpotenzraster \\latexmath{ ppr(n) } erzeugt aus ihrem natürlichen Parameter \\latexmath{ n }'."\n".
-                      'eine Menge die alle Kombinationen der natürlichen Potenzen seiner Primfaktoren enthält,'."\n".
-                      'wobei die Null und die Eins zu den Primfaktoren dazu genommen werden, um bei Null und Eins keine Lücke zu haben:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ppr(n)  =  *\{  x  *|*  *( \forall i \in \mathbb{N} *) \\\ \qquad\qquad\qquad\quad\;\; *( i \in \{ 0, 1 \} \lor pf(i) \cap pf(n) \neq \varnothing *) \\\ \qquad\qquad\qquad\quad\;\; *[  x = i  *]  *\}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'Die Menge wird hier erzeugt, indem alle natürlichen Zahlen \\latexmath{ i } darauf geprüft werden, ob sie entweder'."\n".
-                      'Null oder Eins sind oder mindestens einen Primfaktoren mit \\latexmath{ n } teilen.'."\n",
-                        'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n",
-                        'Maximale lückenlose Intervall-Menge natürlicher Zahlen \\latexmath{ lppr(n) }, von der Null an, im Primpotenzraster \\latexmath{ ppr(n) }:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  lppr(n)  =  *\{  x  *|*  *( \forall i \in \mathbb{N} *) *( i \subset ppr(n) *) *[  x = i  *]  *\}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'Diese Intervall-Menge erhalten wir, indem wir alle natürlichen Zahlen \\latexmath{ i } in einer Menge sammeln, die echte Teilmenge\\color{*Bearb}{(Verweis)}'."\n".
-                      'des Primpotenzrasters sind.'."\n",
-                        'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n",
-                        'Die Mengen-Primfakultät \\latexmath{ n\overline{\#} } einer natürlichen Zahl \\latexmath{ n } liefert'."\n".
+                      'Die Mengen-Primfakultät \\latexmath{ n\overline{\#} } einer natürlichen Zahl \\latexmath{ n } liefert'."\n".
                       'als Parameter der maximalen lückenlosen Intervall-Menge des Primpotenzrasters \\latexmath{ lppr( n\overline{\#} ) }'."\n".
                       'die nächste Primzahl:'."\n".
                       ''))),
@@ -505,21 +616,22 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall p_{i}, p_{i + 1} \in \mathbb{P} *) *[  lppr( *( p_{i} + 1 *)\overline{\#} )  =  p_{i + 1}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  XXX  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n",
                         '\\\\'."\n".
                       ''))),
 
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                   '\\condb{XXX} \\\\'."\n".
                     'XXX'."\n".
