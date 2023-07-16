@@ -30,7 +30,7 @@
                     '• Neubau der Mathematik: Das Fach neu aufrollen: Nichts Geringeres haben sich Peter Scholze und Dustin Clausen vorgenommen. Mit einem revo­lutionären neuen Ansatz begeistern sie die Fachwelt.\\footnote{\\cite{Bischoff:NeubauDerMathematik:2023}}',
                     '– Dies unterstützt in meinen Augen auch die Erkenntnis, dass die Geometrie eigentlich fraktal ist, siehe oben.',
                     '\\bold{Zeit in der Mathematik}',
-                    '• Einflechten, dass die Arithmetik aus dem Zählen geboren wird. Dies ist eine Definition durch einen Prozess. Hierdurch kommt Zeit ins Spiel. Die Betrachtung der Primfaktorenzerlegung der natürlichen Zahlen zeigt auf, dass an diesem Prozess Regelsystemen ähnliche rhythmische Strukturen beteiligt sind.',
+                    '• Einflechten, dass die Arithmetik aus dem Zählen geboren wird. Dies ist eine Definition durch einen Prozess. Hierdurch kommt Zeit ins Spiel. Die Betrachtung der Primfaktorzerlegung der natürlichen Zahlen zeigt auf, dass an diesem Prozess Regelsystemen ähnliche rhythmische Strukturen beteiligt sind.',
                     '\\bold{Korrekturen}',
                     '• Der Text ist schwer verständlich und manchmal etwas komisch formuliert. Alles noch einmal überarbeiten !!!',
                     '• Die Kapitel der Seiten erneut durcharbeiten.',
@@ -560,10 +560,10 @@
                     'mit jeder rationalen Zahl eine ganze Zahl ergibt, auch wenn diese unendlich groß ist?'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Rationale Zahlen und ihre Primfaktorenzerlegung} \\\\'."\n".
-                    'Ebenso, wie jede natürliche Zahl größer Eins eine Primfaktorenzerlegung hat,'."\n".
+                  '\\condb{Rationale Zahlen und ihre Primfaktorzerlegung} \\\\'."\n".
+                    'Ebenso, wie jede natürliche Zahl größer Eins eine Primfaktorzerlegung hat,'."\n".
                     'so hat im Grunde auch jede rationale Zahl größer Null und ungleich Eins eine'."\n".
-                    'Primfaktorenzerlegung, wenn wir negative Potenzen der Primzahlen zulassen, wie beispielsweise:'."\n".
+                    'Primfaktorzerlegung, wenn wir negative Potenzen der Primzahlen zulassen, wie beispielsweise:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -614,21 +614,21 @@
                     'Die Zahl \\term{s} kann allenfalls endlich werden, wenn sie unendlich oft durch endliche, natürliche Zahlen geteilt wird.'."\n".
                     'Soll \\term{s} eine unendliche, natürliche Zahl sein, dann müsste sie demnach ein Produkt unendlich vieler endlicher, natürlicher Zahlen sein.'."\n".
                     'Wenn \\term{s} tatsächlich durch jede beliebige endliche, natürliche Zahl teilbar sein soll, ihr Produkt mit jeder rationalen Zahl \\term{q} wäre dann wieder eine'."\n".
-                    'unendliche, natürliche Zahl \\term{q⋅s}, dann muss sie selber eine Primfaktorenzerlegung haben in der jede Primfaktorenzerlegung einer endlichen, natürlichen Zahl steckt.'."\n".
+                    'unendliche, natürliche Zahl \\term{q⋅s}, dann muss sie selber eine Primfaktorzerlegung haben in der jede Primfaktorzerlegung einer endlichen, natürlichen Zahl steckt.'."\n".
                     'Da auch \\term{q⋅1/2⋅s}, also allgemein \\term{q_{0}⋅q_{1}⋅q_{2}⋅q_{3}⋅ … ⋅s}, immer eine unendliche, natürliche Zahl sein sollte,'."\n".
-                    'muss die Primfaktorenzerlegung von \\term{s} sogar endlich beliebig oft die Primfaktorenzerlegung jeder endlichen, natürlichen Zahl enthalten.'."\n".
+                    'muss die Primfaktorzerlegung von \\term{s} sogar endlich beliebig oft die Primfaktorzerlegung jeder endlichen, natürlichen Zahl enthalten.'."\n".
                     ''))),
                     ))), */
                       
                   array( 'text', array( text => array(
                   '\\condb{Die Definition von \\latexmath{ s }} \\\\'."\n".
-                    'Nach meinem Verständnis muss \\latexmath{ s } eine Primfaktorenzerlegung haben,'."\n".
+                    'Nach meinem Verständnis muss \\latexmath{ s } eine Primfaktorzerlegung haben,'."\n".
                     'die eine unendlich große Potenz aller endlichen Primzahlen ist.'."\n".
                     'Nur so ist gewährleistet, dass keine Potenz im Produkt einer rationalen Zahl mit \\latexmath{ s }'."\n".
                     'negativ und dadurch das Produkt eine gebrochene Zahl wird.'."\n".
                     'Und nur dadurch ist gewährleistet, dass wir ein solches Produkt beliebig endlich oft machen können,'."\n".
                     'ohne, dass das Ergebnis endlich werden kann, sondern unendlich groß bleibt.'."\n",
-                      'In \\latexmath{ s } muss also jede Primfaktorenzerlegung einer endlichen ganzen Zahl'."\n".
+                      'In \\latexmath{ s } muss also jede Primfaktorzerlegung einer endlichen ganzen Zahl'."\n".
                     'beliebig endlich oft stecken.'."\n".
                     'Eine Definition von \\latexmath{ s }, die dies explizit umsetzt finden wir auf der Seite'."\n".
                     '\\italic{\\jumpname{OM:SupNum:Formale-Entwicklung}}'."\n".
@@ -676,7 +676,7 @@
                                           label_name => 'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                  '\\condb{Die Veränderung der Primfaktorenzerlegung von \\latexmath{ s } durch rationale Koeffizienten} \\\\'."\n".
+                  '\\condb{Die Veränderung der Primfaktorzerlegung von \\latexmath{ s } durch rationale Koeffizienten} \\\\'."\n".
                     'Mit Hilfe der neuen Theorie der \\jump{OM:BiOrd:Home}{Biordinalzahlen} können wir auch Zahlen wie'."\n".
                     '\\latexmath{ \omega - n }, mit \\latexmath{ n \in \mathbb{N} }, darstellen und damit die Veränderung der Primzahlpotenzen'."\n".
                     'des \\italic{unendlichen Primzahl-Flächenprodukts} durch rationale Koeffizienten mit biordinalen Potenzen angeben:'."\n".
@@ -688,7 +688,7 @@
                   array( 'text', array( text => array(
                     'Hier können wir sehen, dass \\latexmath{ s } durch Multiplikation mit endlich beliebig vielen'."\n".
                     'rationalen Zahlen immer unendlich groß bleibt, also seine superiale Dimension nicht verändert.'."\n".
-                    'Denn dadurch werden, aufgrund der Primfaktorenzerlegung endlicher ganzer Zahlen, immer'."\n".
+                    'Denn dadurch werden, aufgrund der Primfaktorzerlegung endlicher ganzer Zahlen, immer'."\n".
                     'nur natürliche Zahlen auf die jeweiligen Potenzen addiert oder von ihnen abgezogen.'."\n".
                     'Da für jede natürliche Zahl \\latexmath{ n } die \\jump{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}{Differenz \\latexmath{ \omega - n } immer'."\n".
                     'unendlich groß bleibt}, kann kein rationaler Koeffizient \\latexmath{ q } einer endlich ganzzahligen Potenz \\latexmath{ z } von'."\n".
@@ -710,7 +710,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Primzahlen haben eine Verbindung ins Unendliche} \\\\'."\n".
-                    'Die neu entdeckten, unendlich großen Primfaktorenzerlegungen offenbaren einen tiefen Zusammenhang'."\n".
+                    'Die neu entdeckten, unendlich großen Primfaktorzerlegungen offenbaren einen tiefen Zusammenhang'."\n".
                     'der endlichen Primzahlen mit dem Unendlichen über die rationalen Zahlen.'."\n",
                     ''))),
                   array( 'text', array( text => array(
@@ -737,11 +737,11 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Überrationalitätsvermutung} \\\\'."\n".
-                    'Eine weitere Vermutung, die der Primfaktorenzerlegungen von \\latexmath{ s } entspringt,'."\n".
+                    'Eine weitere Vermutung, die der Primfaktorzerlegungen von \\latexmath{ s } entspringt,'."\n".
                     'dreht sich um die Frage, ob der positive reelle Anteil von algebraischen Zahlen\\color{*Bearb}{(Verweis)}'."\n".
                     'durch einen von mir so genannten \\italic{überrationalen Bruch} dargestellt werden kann.'."\n",
                       'Ein überrationaler Bruch ist ein Bruch, der im Nenner und im Zähler unendlich große, teilerfremde Zahlen hat,'."\n".
-                    'deren Primfaktorenzerlegung aus unendlich vielen endlichen Primzahlen endlich ganzzahliger Potenzen besteht.'."\n".
+                    'deren Primfaktorzerlegung aus unendlich vielen endlichen Primzahlen endlich ganzzahliger Potenzen besteht.'."\n".
                     'Dann wäre ein Produkt eines überrationalen Bruchs mit \\latexmath{ s } ebenfalls unendlich groß und ganzzahlig.'."\n",
                       'Zu den algebraischen Zahlen gehören auch ganzzahlige Wurzeln natürlicher Zahlen, wie \\latexmath{ \sqrt{2} },'."\n".
                     'womit dann beispielsweise \\latexmath{ \sqrt{2} \cdot s } ganzzahlig wäre.'."\n",
@@ -835,7 +835,7 @@
                     'Wichtige Elemente der Arithmetik, wie beispeilsweise natürliche, ganze, gerade und ungerade Zahlen sowie Primzahlen, lassen sich so im Unendlichen untersuchen.'."\n".
                     'Dies hat auch Rückwirkung auf die Betrachtung des Endlichen.'."\n".
                     'Denn so ergeben sich unter anderem neue Möglichkeiten die Verteilung der Primzahlen unter den großen endlichen natürlichen Zahlen besser zu verstehen.'."\n".
-                    'Auch die Primfaktorenzerlegung und die Ordnung der rationalen Zahlen sind so noch einmal neu zu betrachten.'."\n",
+                    'Auch die Primfaktorzerlegung und die Ordnung der rationalen Zahlen sind so noch einmal neu zu betrachten.'."\n",
                       'Und auch die mögliche Definition der Wurzeln aus rationalen Zahlen als überrationale Brüche ist interessant.'."\n".
                     'Sie ermöglichte noch einmal eine Differenzierung bezüglich der irrationalen und transzendenten Zahlen.'."\n",
                       'Darüber hinaus ist eine einfache und anschauliche Definition von Ableitungen und Integralen möglich.'."\n".

@@ -216,7 +216,7 @@
                       'Entweder sind \\latexmath{ p\# - 1 } und/oder \\latexmath{ p\# + 1 } selber schon größere Primzahlen als \\latexmath{ p }'."\n".
                     'oder es gibt zwischen \\latexmath{ p } und \\latexmath{ p\# - 1 }, also in der \\jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge}'."\n".
                     '\\latexmath{ \rbrack p, p\# - 1 \lbrack_\mathbb{N} }, mindestens zwei oder vier oder gar mehr weitere Primzahlen,'."\n".
-                    'die in der Primfaktorenzerlegung von \\latexmath{ p\# - 1 } und/oder \\latexmath{ p\# + 1 } stecken.'."\n".
+                    'die in der Primfaktorzerlegung von \\latexmath{ p\# - 1 } und/oder \\latexmath{ p\# + 1 } stecken.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
                       
@@ -361,7 +361,7 @@
                       'Wir stellen fest, dass \\latexmath{ n\overline{\#} } uns ein Produkt'."\n".
                     'aller Primzahlen liefert, die die Primfaktoren aller Elemente der Menge \\latexmath{ n } sind.'."\n".
                     'Das muss so sein, denn in dem Moment, wo \\latexmath{ n = p_i + 1 } ist, mit \\latexmath{ p_i \in \mathbb{P} }, kommt zum Produkt'."\n".
-                    'die Primzahl \\latexmath{ p_i } hinzu, die nicht Teil der Primfaktorenzerlegung einer der kleineren'."\n".
+                    'die Primzahl \\latexmath{ p_i } hinzu, die nicht Teil der Primfaktorzerlegung einer der kleineren'."\n".
                     'Zahlen \\latexmath{ n < p_i } sein kann.'."\n".
                     'Denn diese haben als Primfaktoren nur kleinere Primzahlen \\term{ p_{i–l} }, mit \\latexmath{ 1 \leq l < i },'."\n".
                     'oder sind selber eine Primzahl.'."\n",
@@ -370,7 +370,7 @@
                     'füllt diese Lücke und auch alle zukünftigen Lücken ihrer Potenzen, zusammen also die Lücken \\latexmath{ p_i^k }, mit \\latexmath{ k \in \mathbb{N} \setminus \{ 0 \} }.'."\n".
                     'Deshalb auch der Name Primpotenzraster, denn, wie wir gleich noch näher erklären,'."\n".
                     'sind diese Lücken aufgrund des Distributivgesetzes logischerweise bei allen reinen positiven Potenzen einer Primzahl zu finden,'."\n".
-                    'oder wenn diese Teil der Primfaktorenzerlegung einer anderen natürlichen Zahl sind.'."\n".
+                    'oder wenn diese Teil der Primfaktorzerlegung einer anderen natürlichen Zahl sind.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Die Mengen-Primfakultät einer Primzahl definiert das lückenlose Primpotenzraster aller natürlichen Zahlen kleiner als sie selber} \\\\'."\n".
@@ -959,9 +959,9 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Die Primfakultät einer Menge an natürlichen Zahlen beschreibt ihr Raster} \\\\'."\n".
-                    'Weil das Raster, was eine Primzahl oder eine Zahl, durch ihre Primfaktorenzerlegung, vorgibt,'."\n".
+                    'Weil das Raster, was eine Primzahl oder eine Zahl, durch ihre Primfaktorzerlegung, vorgibt,'."\n".
                     'damit nicht von der Potenz ihrer Primzahlen abhängt, reicht ein Produkt der einfachen Potenz'."\n".
-                    'ihrer Primfaktorenzerlegung aus, um ihr Raster zu beschreiben.'."\n".
+                    'ihrer Primfaktorzerlegung aus, um ihr Raster zu beschreiben.'."\n".
                     'Das Raster einer natürlichen Zahl umfasst also alle Potenzen ihrer Primfaktoren.'."\n".
                     'Daher können wir das Raster auch \\italic{Primpotenzraster} einer natürlichen Zahl nennen.'."\n",
                       'Die Mengen-Primfakultät einer Menge der ersten \\latexmath{ n } natürlichen Zahlen,'."\n".
@@ -1176,7 +1176,7 @@
                                                label_text => '\\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Analysieren wir naiv die maximale Häufigkeit der einzelnen Primzahlen in der Primfaktorenzerlegung'."\n".
+                    'Analysieren wir naiv die maximale Häufigkeit der einzelnen Primzahlen in der Primfaktorzerlegung'."\n".
                     'der natürlichen Zahlen kommen wir schnell auf den Gedanken, dass wir nicht die volle höhe \\term{ω}'."\n".
                     'jedes einzelnen Primzahlturms benötigen, um \\term{s} mit den Eigenschaften auszustatten'."\n".
                     'die für uns interessant sind, nämlich mit jedem rationalen Koeffizienten eine ganze Zahl zu bleiben.'."\n",
