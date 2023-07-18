@@ -421,7 +421,8 @@
                     'XXX'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Primfaktoranteil-Potenzraster} \\\\'."\n".
+                  '\\condb{Das Primfaktoranteil-Potenzraster} \\\\'."\n".
+                  '\\cond{Die nächste reine Primzahl} \\\\'."\n".
                     'Das Primfaktoranteil-Potenzraster stellt die unterscheidbaren Primfaktoranteile einer natürlichen Zahl'."\n".
                     'als Raster oder, in einem ergänzenden Bild, als Schwingungen dar.'."\n",
                       'Beim Primfaktoranteil-Potenzraster geht es darum zu analysieren, wie sich mit den in einer natürlichen Zahl'."\n".
@@ -492,7 +493,7 @@
                     'Das Primfaktoranteil-Potenzraster ist eine eineindeutige Abbildung jeder natürlichen Zahl.'."\n".
                     'Dies kommt daher, weil jede natürliche Zahl bekanntermaßen ihre einzigartige Primfaktorzerlegung hat,'."\n".
                     'aufgrund derer sich das Primfaktoranteil-Potenzraster ebenso einzigartige berechnet.'."\n".
-                    'XXX'."\n".
+                    'Jede natürliche Zahl beschreibt und charakterisiert also ihre eigenes Primfaktoranteil-Potenzraster.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -667,8 +668,13 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX',
+                Title => 'Alter, doppeldeutiger Ansatz mit dem Primpotenzraster …',
+                TitleVis => 'Alter, doppeldeutiger Ansatz mit dem Primpotenzraster:', ParagraphList => array(
                   array( 'text', array( text => array(
-                  '\\condb{alt – Primpotenzraster – Die nächste Primzahl} \\\\'."\n".
+                  '\\condb{Das Primpotenzraster} \\\\'."\n".
+                  '\\cond{Die nächste Primzahl} \\\\'."\n".
                     'Zur Definition der Menge des Primpotenzrasters und der Berechnung der lückenlosen Intervall-Menge'."\n".
                     'natürlicher Zahlen an seinem Beginn, von der Null an, brauchen wir auch noch die Menge der Primfaktoren'."\n".
                     'einer natürlichen Zahl.'."\n".
@@ -837,6 +843,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
+                    ))),
                   array( 'text', array( text => array(
                   '\\condb{Berechnung der nächsten Primzahl per Mengenlehre} \\\\'."\n".
                   '\\cond{Besonderheit der Kombination von Mengen-Primfakultät und maximale lückenlose Intervall-Menge des Primpotenzrasters} \\\\'."\n".
@@ -854,13 +861,13 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Die Mengen-Primfakultät \\latexmath{ n\overline{\#} } einer natürlichen Zahl \\latexmath{ n } liefert'."\n".
-                      'als Parameter der maximalen lückenlosen Intervall-Menge des Primpotenzrasters \\latexmath{ lppr( n\overline{\#} ) }'."\n".
+                      'als Parameter der maximalen lückenlosen Intervall-Menge des Primfaktoranteil-Potenzrasters \\latexmath{ lpapr( n\overline{\#} ) }'."\n".
                       'die nächste Primzahl:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *( p_{i}, p_{i + 1} \in \mathbb{P} *) *( p_{i} < n \leq p_{i + 1} *) \\\ \qquad\qquad\qquad\qquad\qquad\quad *[  lppr( n\overline{\#} )  =  p_{i + 1}  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p_{i}, p_{i + 1} \in \mathbb{P} *) *[  lppr( *( p_{i} + 1 *)\overline{\#} )  =  p_{i + 1}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *( p_{i}, p_{i + 1} \in \mathbb{P} *) *( p_{i} < n \leq p_{i + 1} *) \\\ \qquad\qquad\qquad\qquad\qquad\quad *[  lpapr( n\overline{\#} )  =  p_{i + 1}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p_{i}, p_{i + 1} \in \mathbb{P} *) *[  lpapr( *( p_{i} + 1 *)\overline{\#} )  =  p_{i + 1}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n",
