@@ -493,12 +493,30 @@
                     'Das Primfaktoranteil-Potenzraster ist eine eineindeutige Abbildung jeder natürlichen Zahl.'."\n".
                     'Dies kommt daher, weil jede natürliche Zahl bekanntermaßen ihre einzigartige Primfaktorzerlegung hat,'."\n".
                     'aufgrund derer sich das Primfaktoranteil-Potenzraster ebenso einzigartige berechnet.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Entspreche also jede natürliche Zahl ihrem Primfaktoranteil-Potenzraster'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *[  n  \widehat{=}  papr( n )  *]  \;\;,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'was keine Gleichheit bedeutet.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
                     'Jede natürliche Zahl beschreibt und charakterisiert also ihre eigenes Primfaktoranteil-Potenzraster.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'Nachdem wir nun die Formalien definiert haben, möchte ich die Zusammenhänge an Zahlenbeispielen'."\n".
+                    ''))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX',
+                Title => 'Beispiele zum Primfaktoranteil-Potenzraster …',
+                TitleVis => 'Beispiele zum Primfaktoranteil-Potenzraster:', ParagraphList => array(
+                  array( 'text', array( text => array(
+                    'Nachdem wir nun die Formalien definiert haben, möchte ich die Zusammenhänge an Zahlenbeispielen'."\n".
                     'verdeutlichen und erlebbar machen.'."\n".
                     ''))),
 
@@ -654,12 +672,22 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Die Mengen-Primfakultät \\latexmath{ n\overline{\#} } beschreibt ein Primfaktoranteil-Potenzraster,'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Die Mengen-Primfakultät \\latexmath{ n\overline{\#} } beschreibt nun ein Primfaktoranteil-Potenzraster,'."\n".
                     'in dem alle Primfaktoranteile reine Primzahlen sind und auch keine Primzahlen bis zu einer größten fehlen.'."\n",
                       'Im Besonderen ist ein jedes derartiges Primfaktoranteil-Potenzraster \\latexmath{ papr( n\overline{\#} ) } eine Beschreibung der nächsten fehlenden reinen Primzahl, die größer als'."\n".
                     'oder gleich \\latexmath{ n } ist und auf seiner ersten Rasterlücke sitzt.'."\n".
                     'Diese Primzahl erhalten wir dann durch \\latexmath{ lpapr( n\overline{\#} ) }.'."\n",
-                      'Die Zahl beziehungsweise Menge \\latexmath{ lpapr( \omega\overline{\#} ) } ist die Menge aller'."\n".
+                      'XXX XXX Die Zahl beziehungsweise Menge \\latexmath{ lpapr( \omega\overline{\#} ) } ist die Menge aller'."\n".
                     'natürlichen Zahlen \\latexmath{ \mathbb{N} }.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -861,9 +889,10 @@
                     'XXX'."\n".
                     ''))),
                     ))),
+
                   array( 'text', array( text => array(
                   '\\condb{Berechnung der nächsten Primzahl per Mengenlehre} \\\\'."\n".
-                  '\\cond{Besonderheit der Kombination von Mengen-Primfakultät und maximale lückenlose Intervall-Menge des Primpotenzrasters} \\\\'."\n".
+                  '\\cond{Besonderheit der Kombination der Mengen-Primfakultät und mit der maximalen lückenlosen Intervall-Menge des Primfaktoranteil-Potenzrasters} \\\\'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -886,6 +915,9 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *( p_{i}, p_{i + 1} \in \mathbb{P} *) *( p_{i} < n \leq p_{i + 1} *) \\\ \qquad\qquad\qquad\qquad\qquad\quad *[  lpapr( n\overline{\#} )  =  p_{i + 1}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall p_{i}, p_{i + 1} \in \mathbb{P} *) *[  lpapr( *( p_{i} + 1 *)\overline{\#} )  =  p_{i + 1}  *]  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  *( \forall p_{i + 1} \in \mathbb{P} *) *[  lpapr( *( p_{i + 1} *)\overline{\#} )  =  p_{i + 1}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p_{i} \in \mathbb{P} *) *[  lpapr( *( p_{i} *)\overline{\#} )  =  p_{i}  *]  }',
+                                    latex_if_visible => '{  \Leftrightarrow  *( \forall p_{i} \in \mathbb{P} *) *[  lpapr( *( p_{i} *)\overline{\#} )  =  p_{i}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n",
@@ -893,7 +925,12 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'XXX'."\n".
+                    'Wir können jetzt eine neue Primzahl'."\n".
+                    'aus den uns bekannten vorangegangenen Primzahlen erzeugen.'."\n".
+                    'Die darauf folgende Primzahl können wir dann erst durch'."\n".
+                    'Hochzählen um Einen erzeugen, um die neue Primzahl dadurch mit in die Mengen-Primfakultät'."\n".
+                    'zu bekommen.'."\n",
+                      'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -905,8 +942,8 @@
                     'XXX'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Das Zählen der natürlichen Zahlen in Primzahl-Intervallen} \\\\'."\n".
-                  '\\cond{Die zählende Konstruktion der Primzahlen und der natürlichen Zahlen gleichzeitig} \\\\'."\n".
+                  '\\condb{Das Zählen der natürlichen Zahlen in Primzahlen} \\\\'."\n".
+                  '\\cond{Die zählende Konstruktion der Primzahlen und damit der natürlichen Zahlen gleichzeitig} \\\\'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -921,29 +958,30 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Sei der Beginn der Primzahl-Intervalle in den natürlichen Zahlen'."\n".
+                      'Sei der Beginn der Primzahlen in den natürlichen Zahlen'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  p_{0}  =  0  }'),
+                      // array( display => 'on',  latex => '{  p_{0}  =  \boxed{  0  }  }'),
+                      array( display => 'on',  latex => '{  p_{1}  =  \boxed{  2  }  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'und sei das jeweils nächste Primzahl-Intervall'."\n".
+                      'und sei die jeweils nächste Primzahl nach Formel XXX gegeben,'."\n".
+                  //     ''))),
+                  // array( 'equations',
+                  //   array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                  //     array( display => 'on',  latex => '{  *( \forall p_{i}, p_{i + 1} \in \mathbb{P} *) *[  lpapr( *( p_{i} + 1 *)\overline{\#} )  =  p_{i + 1}  *]  \;\;,  }'),
+                  //   ))),
+                  // array( 'text', array( Shape  => 'derivation', text => array(
+                      'dann lautet der Beginn der nachfolgenden Primzahlen, sich in angeordneter Reihenfolge ergebend,'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p_{i}, p_{i + 1} \in \mathbb{P} *) *[  lpapr( *( p_{i} + 1 *)\overline{\#} )  =  p_{i + 1}  *]  \;\;,  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'dann ergeben sich die ersten Primzahl-Intervalle zu'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  p_{0}  =  \varnothing  =  \boxed{  0  }  }'),
-                      array( display => 'on',  latex => '{  p_{1}  =  lpapr( *( p_{0} + 1 *)\overline{\#} )  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{1}  =  lpapr( 1\overline{\#} )  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{1}  =  lpapr( 1 )  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{1}  =  *\{ 0, 1 *\}  =  \boxed{  2  }  }'),
+                      // array( display => 'on',  latex => '{  p_{0}  =  \varnothing  =  \boxed{  0  }  }'),
+                      // array( display => 'on',  latex => '{  p_{1}  =  lpapr( *( p_{0} + 1 *)\overline{\#} )  }'),
+                      // array( display => 'on',  latex => '{  \Leftrightarrow  p_{1}  =  lpapr( 1\overline{\#} )  }'),
+                      // array( display => 'on',  latex => '{  \Leftrightarrow  p_{1}  =  lpapr( 1 )  }'),
+                      // array( display => 'on',  latex => '{  \Leftrightarrow  p_{1}  =  *\{ 0, 1 *\}  =  \boxed{  2  }  }'),
                       array( display => 'on',  latex => '{  p_{2}  =  lpapr( *( p_{1} + 1 *)\overline{\#} )  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{2}  =  lpapr( 3\overline{\#} )  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{2}  =  lpapr( 2 )  }'),
@@ -962,29 +1000,67 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{5}  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 *\}  =  \boxed{  11  }  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'und sind allesamt Primzahlen, in angeordneter Reihenfolge bis ins Unendliche.'."\n",
+                      'bis ins Unendliche.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Dies ist nur mit der Mengen-Primfakultät möglich, die uns so gesehen die Menge der'."\n".
+                    'Dies ist in dieser Anordnung nur mit der Mengen-Primfakultät möglich, die uns so gesehen die Menge der'."\n".
                     'natürlichen Zahlen über die Menge der Primzahlen konstruiert.'."\n".
                     'Dabei wird immer die nächste Primzahl berechnet, die dann wieder mit all ihren'."\n".
-                    'vorangegangenen Primzahlen, die nächste berechnet.'."\n",
+                    'vorangegangenen Primzahlen, die darauf folgende berechnet.'."\n",
                       '\\color{*Bearb}{(Beispiele um zu zeigen, was passiert, wenn die Primfakultät Primzahllücken hat oder eine Primzahl in höherer Potenz vorkommt.)}'."\n",
-                      'Es scheint, als wenn wir ein neues Primzahl-Intervall und damit eine neue Primzahl'."\n".
-                    'aus uns bekannten vorangegangenen Primzahlen erzeugen können.'."\n".
-                    'Das nächste Primzahl-Intervall und damit eine weitere nächste Primzahl können wir erst durch'."\n".
-                    'Hochzählen um Einen erzeugen, um die vormals neue Primzahl dadurch mit in der Mengen-Primfakultät'."\n".
-                    'zu haben.'."\n",
-                      'Kennen wir aber alle natürlichen Zahlen durch \\latexmath{ \omega } schon,'."\n".
+                      'Die oben angegebene Entsprechung von natürlichen Zahlen und ihren jeweiligen Primfaktoranteil-Potenzrastern'."\n".
+                    'Können wir für Primzahlen erweitern.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Aus Formel XXX folgt zunächst einmal für Primzahlen die Entsprechnung:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  p  \widehat{=}  papr( p )  *]  \;\;.  }'),
+                      // array( display => 'on',  latex => '{  *( XXX \forall p \in \mathbb{P} *) *[  p  \widehat{=}  XXX papr( p\overline{\#} )  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Da aber nach Formel XXX auch'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  lpapr( p\overline{\#} )  =  p  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'gilt, folgt auch die Entsprechung'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *[  p\overline{\#}  \widehat{=}  p  *]  \;\;,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'die im Endlichen eben keine Gleichheit ist.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Kennen wir aber alle natürlichen Zahlen durch \\latexmath{ \omega } schon,'."\n".
                     'dann können wir dieses unendliche „Primzahl-Intervall“ ebenso durch die'."\n".
                     'Mengen-Primfakultät von \\latexmath{ \omega } beschreiben.'."\n".
-                    'Das bedeutet: \\latexmath{ \omega\overline{\#} \widehat{=} lpapr( \omega\overline{\#} ) = \omega }.'."\n",
-                      'Nur ist \\latexmath{ \omega } aber diesmal keine Primzahl, weil es keine größte Primzahl gibt.'."\n",
+                    'Das bedeutet: \\latexmath{ \omega\overline{\#} \widehat{=} papr( \omega\overline{\#} ) = lpapr( \omega\overline{\#} ) = \omega }.'."\n",
+                      'Nur ist \\latexmath{ \omega } diesmal keine Primzahl, weil es keine größte Primzahl gibt.'."\n",
                       'Aber \\latexmath{ n\overline{\#} } war doch immer viel größer als \\latexmath{ lpapr( n\overline{\#} ) },'."\n".
                     'für alle natürlichen Zahlen \\latexmath{ n }.'."\n".
-                    'Wie kann dann \\latexmath{ \omega\overline{\#} ?= lpapr( \omega\overline{\#} ) = \omega } sein?'."\n",
+                    'Wie kann dann \\latexmath{ \omega\overline{\#} ?= papr( \omega\overline{\#} ) = lpapr( \omega\overline{\#} ) = \omega } sein?'."\n",
                       'Im Endlichen ist die Anzahl der Elemente einer Menge natürlicher Zahlen, geordnet und von der Null an,'."\n".
                     'immer Eins größer als das letzte Element in der Menge.'."\n".
                     'Bei einer unendlich großen Anzahl an Elementen einer solchen Menge, wie \\latexmath{ \omega },'."\n".
@@ -1002,6 +1078,15 @@
                     'Und der Wert von \\latexmath{ \omega\overline{\#} } hat nun auch die gleiche Größenordnung, wie der von \\latexmath{ \omega }.'."\n".
                     ''))),
 
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Aus Formel XXX folgt zunächst einmal im Endlichen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  p  \widehat{=}  papr( p )  *]  \;\;,  }'),
+                      array( display => 'on',  latex => '{  *( XXX \forall p \in \mathbb{P} *) *[  p  \widehat{=}  XXX papr( p\overline{\#} )  *]  }'),
+                    ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Die endliche Entsprechung'."\n".
