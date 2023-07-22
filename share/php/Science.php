@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 13.06.2023, 12:00h
+  // #: Stand: 22.07.2023, 13:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20230722:  +:  "$Sc_g_equation_replace_ary":  '  \widehat{=}  ' -> '\;\;\;\widehat{=}\;\;\;', ' \widehat{=} ' -> '\;\widehat{=}\;' are new.
   //           20230613:  *:  "Sc_f_replace_callback__latexcommand__latexmath":  Use 'To_f_replace_callback__latexcommand__parameterCheck' for parameter checking.
   //           20230612:  +:  "$Sc_g_equation_replace_ary":  '  >  ' -> '\;\;\;>\;\;\;', '  \geq  ' -> '\;\;\;\geq\;\;\;' is new.
   //           20230529:  +:  "$Glo_g_Text_replace_ary": New.
@@ -622,6 +623,8 @@
                                     array( '  \sim  ', '\;\;\;\sim\;\;\;'),
                                     array( '  \ll  ', '\;\;\;\ll\;\;\;'),
                                     array( '  ?:=  ', '\;\;\;\overset{?}{≔}\;\;\;'),
+                                    array( '  \widehat{=}  ', '\;\;\;\widehat{=}\;\;\;'),
+                                    array( ' \widehat{=} ', '\;\widehat{=}\;'),
                                     array( ':=', '≔'),
                                     array( '  ≔  ', '\;\;\;≔\;\;\;'),
                                     array( '  ?=  ', '\;\;\;?=\;\;\;'),
@@ -679,8 +682,8 @@
   $Sc_g_equation_replace_Google_ary = array_merge(
                                   array(
                                     // #: Simplify commands and save chars.
-                                    array( '\Rightarrow ', '\Rightarrow\hspace{20mm}'),
-                                    array( '\Leftrightarrow ', '\Leftrightarrow\hspace{20mm}'),
+                                    array( '\Rightarrow  ', '\Rightarrow\hspace{20mm}'),
+                                    array( '\Leftrightarrow  ', '\Leftrightarrow\hspace{20mm}'),
                                   ),
                                   $Sc_g_equation_replace_ary,
                                   array(
@@ -708,8 +711,8 @@
   $Sc_g_equation_replace_MathJax_ary = array_merge(
                                   array(
                                     // #: Simplify commands and save chars.
-                                    array( '\Rightarrow ', '\Rightarrow\hspace{10mm}'),
-                                    array( '\Leftrightarrow ', '\Leftrightarrow\hspace{10mm}'),
+                                    array( '\Rightarrow  ', '\Rightarrow\hspace{10mm}'),
+                                    array( '\Leftrightarrow  ', '\Leftrightarrow\hspace{10mm}'),
                                   ),
                                   $Sc_g_equation_replace_ary,
                                   array(
