@@ -1144,7 +1144,9 @@
                     'seines Primzahl-Flächenprodukts zu finden ist, untermauert den Beweis.'."\n",
                       'Der vorstehende Beweis zeigt, dass es sich bei dem unendlich großen Teil der Primfaktorzerlegung von \\latexmath{ s }'."\n".
                     'nur um eine vollständige Zeile der Primfakultät des Primzahl-Flächenprodukts handeln kann;'."\n".
-                    'also nur um die Primfakultät, die alle endlichen Primzahlen mit der einfachen Potenz enthält.'."\n".
+                    'also nur um die Primfakultät, die alle endlichen Primzahlen mit der einfachen Potenz enthält.'."\n",
+                      'Damit erhalten wir eine Primfaktorzerlegung für \\latexmath{ \omega }.'."\n".
+                    'Eine mir bisher unbekannte Eigenschaft der unendlichen Größe der vollständigen Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Betrachtung des Beweises} \\\\'."\n".
