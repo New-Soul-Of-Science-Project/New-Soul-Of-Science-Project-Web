@@ -109,7 +109,7 @@
                     'als unendlich großer Primfaktoren-Anteil von \\latexmath{ s } für \\latexmath{ \omega } in Frage.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Wir vermuten, dass \\latexmath{ \omega } die vollständige Primfakultät aller endlichen Primzahlen ist} \\\\'."\n".
+                  '\\condb{\\anchor{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen}{Wir vermuten, dass \\latexmath{ \omega } die vollständige Primfakultät aller endlichen Primzahlen ist}} \\\\'."\n".
                     'Eine Möglichkeit, die noch bleibt, ist, dass \\latexmath{ \omega } dem unendlichen Produkt aller'."\n".
                     'endlichen Primzahlen gleich ist, also einer Zeile des Primzahl-Flächenprodukts:'."\n".
                     ''))),
@@ -1110,17 +1110,22 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  p  \widehat{=}  papr( p )  *]  }'),
                       array( display => 'on',  latex => '{  \omega  \widehat{=}  papr( \omega )  }'),
-                      array( display => 'on',  latex => '{  lpapr( \omega\overline{\#} )  =  \omega  }'),
-                      array( display => 'on',  latex => '{  lpapr( \omega\overline{\#} )  =  papr( \omega\overline{\#} )  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  papr( \omega\overline{\#} )  =  \omega  }'),
+                      array( display => 'on',  latex => '{  \omega  =  papr( \omega\overline{\#} )  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Dann geht die Entsprechung in Formel XXX ebenfalls in die vorstehende Gleichheit über.'."\n".
+                      'Diese Entsprechung und diese Gleichheit zeigt, dass die sich unterscheidenden Teile mindesten'."\n".
+                      'ebenfalls einander entsprechen müssen:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  p\overline{\#}  \widehat{=}  p  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{\;\;  \omega\overline{\#}  =  \omega  \;\;}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \omega\overline{\#}  \widehat{=}  \omega  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Eine Entsprechung ohne Variable kann nur eine Gleichheit bedeuten:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \boxed{\;\;  \omega\overline{\#}  =  \omega  \;\;}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Was zu zeigen war.'."\n",
@@ -1128,11 +1133,19 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Dies ist in ein hinreichender Beweis unserer Primzahlprodukt-Vermutung.'."\n",
-                      'So wird die oben getroffene Feststellung, dass die Primfaktorzerlegung von \\latexmath{ \omega }'."\n".
-                    'ein Teil derer von \\latexmath{ s } sein muss und dieser Teil in der Zeile der Primfakultät'."\n".
-                    'seines Primzahl-Flächenprodukts zu finden ist, hiermit konkret und aus anderer Perspektive bestätigt.'."\n",
+                    'Hiermit haben wir den Beweis unserer Primzahlprodukt-Vermutung.'."\n",
+                      'Mit der \\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen}{oben getroffenen Feststellung},'."\n".
+                    'dass die Primfaktorzerlegung von \\latexmath{ \omega }'."\n".
+                    'ein unendlich großer Teil derer von \\latexmath{ s } sein muss und dieser Teil in der Zeile der Primfakultät'."\n".
+                    'seines Primzahl-Flächenprodukts zu finden ist, untermauert den Beweis.'."\n",
                       'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
