@@ -1113,16 +1113,20 @@
                       array( display => 'on',  latex => '{  \omega  =  papr( \omega\overline{\#} )  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Diese Entsprechung und diese Gleichheit zeigt, dass die sich unterscheidenden Teile mindesten'."\n".
-                      'ebenfalls einander entsprechen müssen:'."\n".
+                      'Diese Entsprechung – diese Bijektion – und diese Gleichheit, wo bei beiden eine Seite identisch ist, zeigen,'."\n".
+                      'dass ihre sich unterscheidenden Teile gleich sein müssen:'."\n".
                       ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \omega\overline{\#}  \widehat{=}  \omega  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'Eine Entsprechung ohne Variable kann nur eine Gleichheit bedeuten:'."\n".
-                      ''))),
+                  // array( 'text', array( Shape  => 'derivation', text => array(
+                  //     'Diese Entsprechung – diese Bijektion – und diese Gleichheit, wo bei beiden eine Seite identisch ist, zeigen,'."\n".
+                  //     'dass sich ihre unterscheidenden Teile mindestens ebenfalls einander entsprechen oder gar gleich sein müssen:'."\n".
+                  //     ''))),
+                  // array( 'equations',
+                  //   array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                  //     array( display => 'on',  latex => '{  \Rightarrow  \omega\overline{\#}  \widehat{=}  \omega  }'),
+                  //   ))),
+                  // array( 'text', array( Shape  => 'derivation', text => array(
+                  //     'Eine Entsprechung ohne Variable, wo beiden Seiten ein Wert zugeordnet ist, kann nur eine Gleichheit bedeuten:'."\n".
+                  //     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \boxed{\;\;  \omega\overline{\#}  =  \omega  \;\;}  }'),
@@ -1134,25 +1138,30 @@
 
                   array( 'text', array( text => array(
                     'Hiermit haben wir den Beweis unserer Primzahlprodukt-Vermutung.'."\n",
-                      'Mit der \\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen}{oben getroffenen Feststellung},'."\n".
+                      'Die \\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen}{oben getroffenen Feststellung},'."\n".
                     'dass die Primfaktorzerlegung von \\latexmath{ \omega }'."\n".
-                    'ein unendlich großer Teil derer von \\latexmath{ s } sein muss und dieser Teil in der Zeile der Primfakultät'."\n".
+                    'ein unendlich großer Teil derer von \\latexmath{ s } sein muss und dieser Teil in der Zeile oder den Zeilen der Primfakultät'."\n".
                     'seines Primzahl-Flächenprodukts zu finden ist, untermauert den Beweis.'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                      'Der vorstehende Beweis zeigt, dass es sich bei dem unendlich großen Teil der Primfaktorzerlegung von \\latexmath{ s }'."\n".
+                    'nur um eine vollständige Zeile der Primfakultät des Primzahl-Flächenprodukts handeln kann;'."\n".
+                    'also nur um die Primfakultät, die alle endlichen Primzahlen mit der einfachen Potenz enthält.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Kennen wir aber alle natürlichen Zahlen durch \\latexmath{ \omega } schon,'."\n".
+                  '\\condb{Betrachtung des Beweises} \\\\'."\n".
+                  '\\cond{Das Verständnis des Übergangs der Mengen-Primfakultät und des Primfaktoranteil-Potenzrasters ins Unendliche zu \\latexmath{ \omega }} \\\\'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      'Kennen wir aber alle natürlichen Zahlen durch \\latexmath{ \omega } schon,'."\n".
                     'dann können wir dieses unendliche „Primzahl-Intervall“ ebenso durch die'."\n".
                     'Mengen-Primfakultät von \\latexmath{ \omega } beschreiben.'."\n".
                     'Das bedeutet: \\latexmath{ \omega\overline{\#} \widehat{=} papr( \omega\overline{\#} ) = lpapr( \omega\overline{\#} ) = \omega }.'."\n",
