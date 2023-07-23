@@ -1005,9 +1005,12 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Dies ist in dieser Anordnung nur mit der Mengen-Primfakultät möglich, die uns so gesehen die Menge der'."\n".
-                    'natürlichen Zahlen über die Menge der Primzahlen konstruiert.'."\n".
-                    'Dabei wird immer die nächste Primzahl berechnet, die dann wieder mit all ihren'."\n".
+                    'Dies ist in dieser Anordnung nur mit der Mengen-Primfakultät möglich, die uns,'."\n".
+                    'mit Hilfe des lückenlosen Primfaktoranteil-Potenzrasters,'."\n".
+                    'die Menge der natürlichen Zahlen über die Menge der Primzahlen konstruiert.'."\n".
+                    'Wobei an der Mengen-Primfakultät entscheidend ist, dass sie uns die Primfaktoren vom Beginn an lückenlos'."\n".
+                    'in der ersten Potenz liefert.'."\n",
+                      'Dadurch wird immer die nächste Primzahl berechnet, die dann wieder mit all ihren'."\n".
                     'vorangegangenen Primzahlen, die darauf folgende berechnet.'."\n",
                       '\\color{*Bearb}{(Beispiele um zu zeigen, was passiert, wenn die Primfakultät Primzahllücken hat oder eine Primzahl in höherer Potenz vorkommt.)}'."\n",
                       'Die oben angegebene Entsprechung von natürlichen Zahlen und ihren jeweiligen Primfaktoranteil-Potenzrastern'."\n".
@@ -1016,11 +1019,13 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Aus Formel XXX folgt zunächst einmal für Primzahlen die Entsprechnung:'."\n".
+                      'Aus Formel XXX folgt zunächst einmal für Primzahlen die Entsprechung:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  p  \widehat{=}  papr( p )  *]  \;\;.  }'),
+                      array( display => 'off', latex => '{  *( \forall n \in \mathbb{N} *) *[  n  \widehat{=}  papr( n )  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  p  \widehat{=}  papr( p )  *]  \;\;.  }',
+                                    latex_if_visible => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *[  p  \widehat{=}  papr( p )  *]  \;\;.  }'),
                       // array( display => 'on',  latex => '{  *( XXX \forall p \in \mathbb{P} *) *[  p  \widehat{=}  XXX papr( p\overline{\#} )  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -1031,14 +1036,14 @@
                       array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  lpapr( p\overline{\#} )  =  p  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'gilt, folgt auch die Entsprechung'."\n".
+                      'gilt, folgt ebenso die Entsprechung'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *[  p\overline{\#}  \widehat{=}  p  *]  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'die im Endlichen eben keine Gleichheit ist.'."\n",
+                      'die im Endlichen noch keine Gleichheit ist.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -1047,6 +1052,84 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Der Beweis der Primzahlprodukt-Vermutung} \\\\'."\n".
+                  '\\cond{Wenn das Zählen der natürlichen Zahlen in Primzahlen ins Unendliche zu \\latexmath{ \omega } übergeht} \\\\'."\n".
+                    'Im Unendlichen bei \\latexmath{ \omega } gibt es nun einen Übergang:'."\n",
+                      'Da \\latexmath{ \omega } die Menge der natürlichen Zahlen \\latexmath{ \mathbb{N} } repräsentiert'."\n".
+                    'enthält diese natürlich auch alle endlichen Primzahlen.'."\n".
+                    'Die Mengen-Primfakultät \\latexmath{ \omega\overline{\#} } ist also das Produkt'."\n".
+                    'aller endlichen Primzahlen.'."\n",
+                      'Das Primfaktoranteil-Potenzraster \\latexmath{ papr( \omega\overline{\#} ) } aller endlichen Primfaktoren'."\n".
+                    'in \\latexmath{ \omega\overline{\#} } geht zur Menge der natürlichen Zahlen \\latexmath{ \mathbb{N} },'."\n".
+                    'also zu \\latexmath{ \omega }, über.'."\n".
+                    'Das ist so, weil aus der Kombination aller endlichen Primzahlen in einem Produkt'."\n".
+                    'alle natürlichen Zahlen gebildet werden können:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  papr( \omega\overline{\#} )  =  \mathbb{N}  =  \omega  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Weil dieses Primfaktoranteil-Potenzraster \\latexmath{ papr( \omega\overline{\#} ) }'."\n".
+                    'nun komplett lückenlos ist gilt aber auch:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  lpapr( \omega\overline{\#} )  =  \mathbb{N}  =  \omega  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  lpapr( \omega\overline{\#} )  =  papr( \omega\overline{\#} )  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Was passiert nun mit den Zusammenhängen in den Formeln XXX?'."\n",
+                      'Abgesehen davon, dass es sich bei \\latexmath{ \omega } offensichtlich nicht mehr um eine Primzahl handelt'."\n".
+                    'können wir sagen:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Da das lückenlose Primfaktoranteil-Potenzraster der Mengen-Primfakultät einer endlichen Primzahl in Formel XXX gleich dieser Primzahl ist'."\n".
+                      'und entsprechend in der Formel XXX das selbe für \\latexmath{ \omega } gilt:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  lpapr( p\overline{\#} )  =  p  *]  }'),
+                      array( display => 'on',  latex => '{  lpapr( \omega\overline{\#} )  =  \omega  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Und da nun für die Entsprechung in Formel XXX schon in Formel XXX festgestellt wurde,'."\n".
+                      'dass wir nun eine etwas abgewandelte Gleichheit für sie gefunden haben:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  p  \widehat{=}  papr( p )  *]  }'),
+                      array( display => 'on',  latex => '{  \omega  \widehat{=}  papr( \omega )  }'),
+                      array( display => 'on',  latex => '{  lpapr( \omega\overline{\#} )  =  \omega  }'),
+                      array( display => 'on',  latex => '{  lpapr( \omega\overline{\#} )  =  papr( \omega\overline{\#} )  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  papr( \omega\overline{\#} )  =  \omega  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Dann geht die Entsprechung in Formel XXX ebenfalls in die vorstehende Gleichheit über.'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  p\overline{\#}  \widehat{=}  p  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{\;\;  \omega\overline{\#}  =  \omega  \;\;}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Was zu zeigen war.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Dies ist in ein hinreichender Beweis unserer Primzahlprodukt-Vermutung.'."\n",
+                      'So wird die oben getroffene Feststellung, dass die Primfaktorzerlegung von \\latexmath{ \omega }'."\n".
+                    'ein Teil derer von \\latexmath{ s } sein muss und dieser Teil in der Zeile der Primfakultät'."\n".
+                    'seines Primzahl-Flächenprodukts zu finden ist, hiermit konkret und aus anderer Perspektive bestätigt.'."\n",
+                      'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
