@@ -30,7 +30,7 @@
                     'mitgezählt, wenn die endlichen ganzen Zahlen als endliche Koeffizienten immer wieder durchlaufen.'."\n".
                     'Betrachten wir im Folgenden mit Hilfe von \\latexmath{ s } das Verhältnis der Anzahl der endlichen rationalen Zahlen'."\n".
                     'und der endlichen ganzen Zahlen, dann scheint die Anzahl der endlichen natürlichen Zahlen dem Produkt'."\n".
-                    'aller endlichen Primzahlen zu entsprechen.'."\n",
+                    'aller endlichen Primzahlen gleich zu sein.'."\n",
                       'Den Ansatz zu dieser Vermutung finden wir im Abschnitt \\italic{\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm}},'."\n".
                     'wo wir uns schon mit der Struktur von \\latexmath{ s } beschäftigt haben.'."\n",
                       'Dabei fanden wir, dass die Anzahl der rationalen Zahlen \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} }, von der Null bis ausschließlich der Eins, in Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}'."\n".
@@ -111,7 +111,7 @@
                   array( 'text', array( text => array(
                   '\\condb{Wir vermuten, dass \\latexmath{ \omega } die vollständige Primfakultät aller endlichen Primzahlen ist} \\\\'."\n".
                     'Eine Möglichkeit, die noch bleibt, ist, dass \\latexmath{ \omega } dem unendlichen Produkt aller'."\n".
-                    'endlichen Primzahlen gleich ist, also einer Zeile des Primzahl-Flächenprodukts entspricht:'."\n".
+                    'endlichen Primzahlen gleich ist, also einer Zeile des Primzahl-Flächenprodukts:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -152,8 +152,8 @@
                     'So, wie es nachfolgend im ›Satz des Euklid‹ beschrieben ist.'."\n".
                     'Sein Beweis basiert auf der Primfakultät, also auf dem Primorial\\footnote{\\const{SupNum_g_footnote_text_Primorial}},'."\n".
                     'welche immer weiter potenziell ins Unendliche vorangetrieben wird, und damit immer genauer'."\n".
-                    'dem Produkt aus Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen}'."\n".
-                    'entspricht.'."\n",
+                    'das Produkt aus Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen}'."\n".
+                    'wird.'."\n",
                       'In der Primfakultät \\latexmath{ p\# } sind alle endlichen Primzahlen, von der Zwei bis zu einer größten \\latexmath{ p }, enthalten.'."\n".
                     'Die größte wird dann im Beweis immer größer, bis ins Unendliche.'."\n".
                     'Ausschließlich mit diesem Produkt funktioniert der Beweis und nicht, wenn irgendeine Primzahl'."\n".
@@ -166,7 +166,7 @@
                   array( 'text', array( text => array(
                   '\\condb{Hohe Plausibilität der Primzahlprodukt-Vermutung} \\\\'."\n".
                     'Es liegt also sehr nahe, dass das Produkt aller endlichen Primzahlen das Teilprodukt von'."\n".
-                    '\\latexmath{ s } ist, dass \\latexmath{ \omega } entspricht.'."\n".
+                    '\\latexmath{ s } ist, dass \\latexmath{ \omega } gleicht.'."\n".
                     'Es gibt keinen Grund, warum eine der Primzahlen in dem Produkt mehrfach vorkommen sollte oder gar müsste.'."\n".
                     'Womit wir noch keinen Beweis für die Primzahlprodukt-Vermutung haben, sie aber schon mal'."\n".
                     'sehr plausibel erscheint.'."\n".
@@ -300,6 +300,7 @@
 
                   array( 'text', array( text => array(
                     'Wie in den Ordinalzahlen beziehungsweise Biordinalzahlen definiert, können endliche und unendliche Zahlen einer Repräsentation als Mengen entsprechen.'."\n".
+                    'In beiden Theorien wird diese Entsprechung als Gleichheit definiert.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -504,12 +505,14 @@
                       array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *[  n  \widehat{=}  papr( n )  *]  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'was keine Gleichheit bedeutet.'."\n",
+                      'was eben keine Gleichheit bedeutet. \\\\'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Jede natürliche Zahl beschreibt und charakterisiert also ihre eigenes Primfaktoranteil-Potenzraster.'."\n".
+                    'Mit Entsprechung ist hier und nachfolgend – generell in dieser Arbeit – gemeint, dass eine bijektive Funktion\\color{*Bearb}{(Verweis)}'."\n".
+                    'existiert, die beide Dinge eineindeutig aufeinander abbildet.'."\n",
+                      'Jede natürliche Zahl beschreibt und charakterisiert also ihre eigenes Primfaktoranteil-Potenzraster.'."\n".
                     ''))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX',
@@ -1100,7 +1103,7 @@
                       array( display => 'on',  latex => '{  lpapr( \omega\overline{\#} )  =  \omega  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Und da nun für die Entsprechung in Formel XXX schon in Formel XXX festgestellt wurde,'."\n".
+                      'Und da wir jetzt für die Entsprechung in Formel XXX schon in Formel XXX festgestellt wurde,'."\n".
                       'dass wir nun eine etwas abgewandelte Gleichheit für sie gefunden haben:'."\n".
                       ''))),
                   array( 'equations',
