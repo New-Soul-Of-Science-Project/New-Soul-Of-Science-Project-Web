@@ -925,18 +925,6 @@
                                     latex_if_visible => '{  \Leftrightarrow  *( \forall p_{i} \in \mathbb{P} *) *[  lpapr( p_{i}\overline{\#} )  =  p_{i}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  XXX \exists \mathbb{A}: *( 2 \in \mathbb{A} \lor \forall x: *( x \in \mathbb{A} \Rightarrow lpapr( *( p_{i} + 1 *)\overline{\#} ) \in \mathbb{A} *) *)  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -948,6 +936,33 @@
                     'Hochzählen um Einen erzeugen, um die neue Primzahl dadurch mit in die Mengen-Primfakultät'."\n".
                     'zu bekommen.'."\n",
                       'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX Die Menge der Primzahlen \\latexmath{ \mathbb{P} } können wir nun durch vollständige Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} erzeugen.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \exists \mathbb{P}: *( 2 \in \mathbb{P} \land \forall x: *( x \in \mathbb{P} \Rightarrow lpapr( *( x + 1 *)\overline{\#} ) \in \mathbb{P} *) *)  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -1158,123 +1173,69 @@
                   //     'Eine Entsprechung ohne Variable, wo beiden Seiten ein Wert zugeordnet ist, kann nur eine Gleichheit bedeuten:'."\n".
                   //     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Die Menge des Primfaktoranteil-Potenzrasters der Mengen-Primfakultät \\latexmath{ papr( p\overline{\#} ) }'."\n".
-                      'der endlichen Primzahlen \\latexmath{ p }, die einander entsprechen – \\latexmath{ p \widehat{=} papr( p\overline{\#} ) } –,'."\n".
-                      'also einander eineindeutig zugeordnet werden können, und im Fall des lückenlosen Primfaktoranteil-Potenzrasters'."\n".
-                      'sogar gleich sind – \\latexmath{ p = lpapr( p\overline{\#} ) } –, zeigen, dass die Primzahlen in'."\n".
-                      'der Menge \\latexmath{ p } all deren Elemente, die natürlichen Zahlen von Null bis \\latexmath{ p - 1 }, lückenlos als Primfaktoren'."\n".
-                      'erzeugen.'."\n",
-                        'Die Menge der ersten \\latexmath{ p } natürlichen Zahlen, die Zahlen von Null bis \\latexmath{ p - 1 },'."\n".
-                      'stellt auch den Wert deren Anzahl \\latexmath{ p } dar.'."\n",
-                        'So hat die Menge \\latexmath{ p }, der \\latexmath{ p } ersten natürliche Zahlen, zum einen deren Anzahl-Wert'."\n".
-                      'als Beschreibung, der auch \\latexmath{ lpapr( p\overline{\#} ) } gleich ist.'."\n".
-                      'Zum anderen wird die Menge \\latexmath{ p } also auch durch \\latexmath{ papr( p\overline{\#} ) }'."\n".
-                      'beschrieben und im Besonderen, wie gesagt, durch deren lückenlosen Beginn \\latexmath{ lpapr( p\overline{\#} ) }'."\n".
-                      'abgebildet.'."\n",
-                        'Beim Übergang von immer größer werdenden Primzahlen \\latexmath{ p } zum unendlichen \\latexmath{ \omega }'."\n".
-                      'geht letztere Beschreibung der ersten \\latexmath{ p } natürlichen Zahlen zu den ersten \\latexmath{ \omega }'."\n".
-                      'natürlichen Zahlen über.'."\n".
-                      '\\latexmath{ \omega } steht, laut seiner Definition, dann für alle endlichen natürlichen Zahlen.'."\n",
-                        'Die größte Zahl in der Menge des endlichen \\latexmath{ p }, also \\latexmath{ p - 1 }, existiert in \\latexmath{ \omega }'."\n".
-                      'nach dem Übergang aber nicht mehr.'."\n".
-                      'Wir können also die Anzahl der Elemente in \\latexmath{ \omega } nicht mit \\latexmath{ \omega - 1 } beschreiben.'."\n".
-                      'Und die Zahl \\latexmath{ \omega - 1 } ist zwar in der Theorie der Biordinalzahlen definiert, aber auch hier kein Element'."\n".
-                      'von \\latexmath{ \omega }.'."\n",
-                        'Einzig die zweite Beschreibung der Menge \\latexmath{ \omega } bleibt und zwar durch \\latexmath{ papr( \omega\overline{\#} ) }'."\n".
-                      'und im Besonderen durch \\latexmath{ lpapr( \omega\overline{\#} ) }, was genau \\latexmath{ \omega } gleich sein muss, also \\latexmath{ \omega = lpapr( \omega\overline{\#} ) }.'."\n",
-                        'Nach dem Übergang gilt aber wegen \\latexmath{ lpapr( \omega\overline{\#} ) = papr( \omega\overline{\#} ) } auch \\latexmath{ \omega = papr( \omega\overline{\#} ) }.'."\n".
-                      'Das bedeutet beim Übergang wird aus der Entsprechung \\latexmath{ p \widehat{=} papr( p\overline{\#} ) } die Gleichheit'."\n".
-                      '\\latexmath{ \omega = papr( \omega\overline{\#} ) }.'."\n",
-                        'Dies lässt wiederum vermuten, dass aus der Entsprechung \\latexmath{ p \widehat{=} p\overline{\#} } ebenfalls eine Gleichheit wird, also'."\n".
-                      '\\latexmath{ \omega\overline{\#} ?= \omega }.'."\n".
-                      'Und genau diese Gleichheit wird mit der \\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen}{oben getroffenen Feststellung},'."\n".
-                      'die Primfaktorzerlegung von \\latexmath{ \omega } ist'."\n".
-                      'ein unendlich großer Teil derer von \\latexmath{ s }, der in der Zeile oder den Zeilen der Primfakultät'."\n".
-                      'seines Primzahl-Flächenprodukts zu finden ist, bestätigt.'."\n",
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'Die Primfaktorzerlegung \\latexmath{ \omega } ist laut \\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen}{oben getroffener Feststellung}'."\n".
-                      'ein unendlich großer Teil derer von \\latexmath{ s }, der in der Zeile oder den Zeilen der Primfakultät'."\n".
-                      'seines Primzahl-Flächenprodukts zu finden ist.'."\n",
-                      'Sie ist also der von \\latexmath{ \omega\overline{\#} ) } gleich oder zumindest sehr sehr ähnlich.'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n",
-                        'Die Gleichheit im Endlichen von \\latexmath{ lpapr( p\overline{\#} ) = p } ist daraus geboren,'."\n".
-                      'das die Mengen-Primfakultät bei der kleinsten Primzahl \\latexmath{ 2 } beginnt und'."\n".
-                      'ohne Unterbrechung ist.'."\n",
-                        'Im Falle der endlichen Primzahlen ist das Primfaktoranteil–Potenzraster etwas besonderes:'."\n".
-                      '\\latexmath{ p \widehat{=} papr( p ) = \{ 0, 1, p, p^2, p^3, \cdots \} }'."\n",
-                        'Wenn \\latexmath{ \omega \widehat{=} papr( \omega ) } also bijektiv einem individuellen Primfaktoranteil–Potenzraster'."\n".
-                      'entspricht, dann muss \\latexmath{ \omega } eine einzigartige Primfaktorzerlegung besitzen.'."\n",
-                        'Da \\latexmath{ \omega } selber keine Primzahl ist, sondern aus unendlich vielen endlichen Primzahlen bestehen muss,'."\n".
-                      'kann sein Primfaktoranteil–Potenzraster \\latexmath{ papr( \omega ) } nur sehr viele natürliche Zahlen enthalten.'."\n".
-                      'Es ist also anders gestrickt, als das Primfaktoranteil–Potenzraster einer Primzahl.'."\n".
-                      '\\latexmath{ \omega } verhält sich bezüglich des Primfaktoranteil–Potenzraster eher wie \\latexmath{ lpapr( p\overline{\#} ) = p }'."\n".
-                      'oder \\latexmath{ papr( p\overline{\#} ) = p }.'."\n",
-                        'XXX \\latexmath{ lpapr( p\overline{\#} ) \widehat{=}  papr( p\overline{\#} ) }'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n",
-                        'XXX Bei dem entsprechenden Übergang von den Mengen der endlichen Primzahlen zur Menge \\latexmath{ \omega }'."\n".
-                      'muss deren Menge von XXX'."\n",
-                        'XXX Weil es in der Menge \\latexmath{ \omega } keine größte Primzahl gibt, wird aus der Entsprechung'."\n".
-                      'im Endlichen \\latexmath{ p\overline{\#} \widehat{=} p } beim unendlichen \\latexmath{ \omega } die Gleichheit'."\n".
-                      '\\latexmath{ \omega\overline{\#} = \omega }, denn XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n",
-                        'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Aus \\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen}{oben getroffener Feststellung}'."\n".
-                    'wissen wir, dass die Primfaktorzerlegung von \\latexmath{ \omega }'."\n".
-                    'ein unendlich großer Teil derer von \\latexmath{ s } sein muss und dass dieser Teil in der Zeile oder den Zeilen der Primfakultät'."\n".
-                    'seines Primzahl-Flächenprodukts zu finden ist.'."\n",
-                      'Wir wissen also, dass die Primfaktorzerlegung von \\latexmath{ \omega } mindestens einem unendlichen Teil'."\n".
-                    'der von \\latexmath{ \omega\overline{\#} } gleicht.'."\n".
-                    'Dies ist aber nur möglich, wenn es genau der Primfaktorzerlegung von \\latexmath{ \omega\overline{\#} } gleicht,'."\n".
-                    'weil XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'Der vorstehende Beweis zeigt, dass es sich bei dem unendlich großen Teil der Primfaktorzerlegung von \\latexmath{ s }'."\n".
-                    'nur um eine vollständige Zeile der Primfakultät des Primzahl-Flächenprodukts handeln kann;'."\n".
-                    'also nur um die Primfakultät, die alle endlichen Primzahlen mit der einfachen Potenz enthält.'."\n",
-                      'Damit erhalten wir eine Primfaktorzerlegung für \\latexmath{ \omega }.'."\n".
-                    'Eine mir bisher unbekannte Eigenschaft der unendlichen Größe der vollständigen Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n".
+                    'Die Menge des Primfaktoranteil-Potenzrasters der Mengen-Primfakultät \\latexmath{ papr( p\overline{\#} ) }'."\n".
+                    'der endlichen Primzahlen \\latexmath{ p }, die beide einander entsprechen – \\latexmath{ p \widehat{=} papr( p\overline{\#} ) } –,'."\n".
+                    'also einander eineindeutig zugeordnet werden können, aber nicht gleich sind, jedoch im Fall des lückenlosen Primfaktoranteil-Potenzrasters'."\n".
+                    'sogar gleich sind – \\latexmath{ p = lpapr( p\overline{\#} ) } –, zeigen, dass die Primzahlen in'."\n".
+                    'der Menge der Zahl \\latexmath{ p } all deren Elemente, die natürlichen Zahlen von Null bis \\latexmath{ p - 1 }, lückenlos als Primfaktoren'."\n".
+                    'erzeugen.'."\n",
+                      'Die Menge \\latexmath{ p } dieser ersten \\latexmath{ p } natürlichen Zahlen, eben die Zahlen von Null bis \\latexmath{ p - 1 },'."\n".
+                    'stellt auch den Wert deren Anzahl \\latexmath{ p } dar.'."\n",
+                      'So hat die Menge \\latexmath{ p }, der \\latexmath{ p } ersten natürliche Zahlen, zum einen deren Anzahl-Wert'."\n".
+                    'als Beschreibung, der auch \\latexmath{ lpapr( p\overline{\#} ) } gleich ist.'."\n".
+                    'Zum anderen wird die Menge \\latexmath{ p } also auch durch das Primfaktoranteil-Potenzraster \\latexmath{ papr( p\overline{\#} ) }'."\n".
+                    'beschrieben und im Besonderen, wie gesagt, durch deren lückenlosen Beginn \\latexmath{ lpapr( p\overline{\#} ) }'."\n".
+                    'dargestellt.'."\n".
+                    'Dies ist ausschließlich bei Primzahlen der Fall.'."\n",
+                      'Beim Übergang von immer größer werdenden Primzahlen \\latexmath{ p } zum unendlichen \\latexmath{ \omega }'."\n".
+                    'geht letztere Beschreibung der ersten \\latexmath{ p } natürlichen Zahlen zu den ersten \\latexmath{ \omega }'."\n".
+                    'natürlichen Zahlen über.'."\n".
+                    '\\latexmath{ \omega } steht, laut seiner Definition, denn auch für alle endlichen natürlichen Zahlen.'."\n",
+                      'Die größte Zahl in der Menge des endlichen \\latexmath{ p }, also \\latexmath{ p - 1 }, existiert in \\latexmath{ \omega }'."\n".
+                    'nach dem Übergang aber nicht mehr.'."\n".
+                    'Mit anderen Worten: Die Anzahl der Elemente der Menge \\latexmath{ \omega = \mathbb{N} } kann nicht mehr mit dem Wert des größten'."\n".
+                    'Elements der Menge plus Eins beschrieben werden.'."\n".
+                    'Wir können also die Anzahl der Elemente in \\latexmath{ \omega } nicht mit \\latexmath{ *( \omega - 1 *) + 1 } beschreiben.'."\n".
+                    'Denn die Zahl \\latexmath{ \omega - 1 } ist zwar in der Theorie der Biordinalzahlen definiert, aber ist hierin kein Element'."\n".
+                    'von \\latexmath{ \omega }.'."\n",
+                      'Einzig die zweite Art der Beschreibung der Menge \\latexmath{ \omega } bleibt erhalten und zwar durch \\latexmath{ papr( \omega\overline{\#} ) }'."\n".
+                    'und im Besonderen durch \\latexmath{ lpapr( \omega\overline{\#} ) }, wobei letzteres genau \\latexmath{ \omega } gleich sein muss, also \\latexmath{ \omega = lpapr( \omega\overline{\#} ) }.'."\n",
+                      'Nach dem Übergang gilt aber wegen \\latexmath{ lpapr( \omega\overline{\#} ) = papr( \omega\overline{\#} ) } auch \\latexmath{ \omega = papr( \omega\overline{\#} ) }.'."\n".
+                    'Denn in der Menge \\latexmath{ papr( \omega\overline{\#} ) } sind alle Rasterlücken gefüllt, weil alle endlichen natürlichen Zahlen, bis auf die Null,'."\n".
+                    'durch die Kombination aller endlichen Primzahlen in \\latexmath{ \omega\overline{\#} } und ihren Potenzen beschrieben werden.'."\n".
+                    'Was bedeutet, beim Übergang wird aus der Entsprechung \\latexmath{ p \widehat{=} papr( p\overline{\#} ) } die Gleichheit'."\n".
+                    '\\latexmath{ \omega = papr( \omega\overline{\#} ) }.'."\n",
+                      'Dies lässt wiederum vermuten, dass aus der Entsprechung \\latexmath{ p \widehat{=} p\overline{\#} } ebenfalls eine Gleichheit wird, also'."\n".
+                    '\\latexmath{ \omega\overline{\#} ?= \omega }.'."\n",
+                      'Und genau diese Gleichheit wird mit der \\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen}{oben getroffenen Feststellung},'."\n".
+                    'die Primfaktorzerlegung von \\latexmath{ \omega } ist'."\n".
+                    'ein unendlich großer Teil derer von \\latexmath{ s }, der in der Zeile oder den Zeilen der Primfakultät'."\n".
+                    'seines Primzahl-Flächenprodukts zu finden ist, bestätigt.'."\n",
+                      '\\latexmath{ lpapr( p\overline{\#} ) } führt uns durch die Mengen-Primfakultät über'."\n".
+                    'das Zählen aller Primzahlen mit Hilfe von \\latexmath{ lpapr( p\overline{\#} + 1 ) } mittels'."\n".
+                    'vollständiger Induktion zur Menge aller endlichen natürlichen Zahlen \\latexmath{ \omega }.'."\n".
+                    'Und dies gelingt nur mit der Mengen-Primfakultät, in der alle Primzahlen von Beginn an'."\n".
+                    'und in der ersten Potenz, enthalten sein müssen.'."\n".
+                    'Beim Übergang zu \\latexmath{ \omega } geht dieses Produkt zum Produkt aller endlichen Primzahlen'."\n".
+                    'über, dessen Wert dann ebenfalls \\latexmath{ \omega } sein muss.'."\n",
+                    //   'Weil es in der Menge \\latexmath{ \omega } keine größte Primzahl gibt, wird aus der Entsprechung'."\n".
+                    // 'im Endlichen \\latexmath{ p\overline{\#} \widehat{=} p } beim unendlichen \\latexmath{ \omega } die Gleichheit'."\n".
+                    // '\\latexmath{ \omega\overline{\#} = \omega }."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Da das lückenlose Primfaktoranteil-Potenzraster der Mengen-Primfakultät einer endlichen Primzahl in Formel XXX gleich dieser Primzahl ist'."\n".
-                      'und entsprechend in der Formel XXX das selbe für \\latexmath{ \omega } gilt:'."\n".
+                      'Deshalb kann \\latexmath{ \omega } nur der Teil des Primzahl-Flächenprodukts von \\latexmath{ s } sein,'."\n".
+                      'der lückenlos genau eine Zeile aller endlichen Primzahlen enthält:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \boxed{\;\;  \omega\overline{\#}  =  \omega  \;\;}  }'),
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \omega\overline{\#}  =  \omega  \;\;}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Was zu zeigen war.'."\n",
@@ -1282,7 +1243,9 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Hiermit haben wir den Beweis unserer Primzahlprodukt-Vermutung.'."\n",
+                    'Damit erhalten wir eine Primfaktorzerlegung für \\latexmath{ \omega }.'."\n".
+                    'Eine mir bisher unbekannte Eigenschaft der unendlichen Größe der vollständigen Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n",
+                      'Hiermit haben wir den Beweis unserer Primzahlprodukt-Vermutung.'."\n",
                       'Die \\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen}{oben getroffenen Feststellung},'."\n".
                     'dass die Primfaktorzerlegung von \\latexmath{ \omega }'."\n".
                     'ein unendlich großer Teil derer von \\latexmath{ s } sein muss und dieser Teil in der Zeile oder den Zeilen der Primfakultät'."\n".
