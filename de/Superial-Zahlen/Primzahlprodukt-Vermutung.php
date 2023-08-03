@@ -442,18 +442,17 @@
                     'die eine vollständige und damit differenzierte Beschreibung der möglichen Raster von Schwingungen unmöglich machen.'."\n".
                     'So gesehen ist die Variation von Primfaktoranteilen keine Willkür, sondern zwingend.'."\n",
                       'Zur Definition der Menge des Primfaktoranteil-Potenzrasters und der Berechnung der lückenlosen Intervall-Menge'."\n".
-                    'natürlicher Zahlen an seinem Beginn, von der Null an, brauchen wir im Folgenden also die Menge der Primfaktoranteile'."\n".
-                    'einer natürlichen Zahl.'."\n".
+                    'endlicher und aktual unendlicher natürlicher Zahlen an seinem Beginn, von der Null an, brauchen wir im Folgenden also die Menge der Primfaktoranteile'."\n".
+                    'einer solchen Zahl.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Sei \\latexmath{ pa(n) } die Menge der Primfaktoranteile der natürlichen Zahl \\latexmath{ n }:'."\n".
-                      '\\color{*Bearb}{(Die Funktion muss noch an \\latexmath{ \omega } als Parameter angepasst werden.)}'."\n".
+                      'Sei \\latexmath{ pa(n) } die Menge der Primfaktoranteile der \\jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{endlichen und aktual unendlichen natürlichen Zahl \\latexmath{ n \in \mathbb{N}_\infty }}:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  pa(n)  =  *\{  x  *|*  *( \forall p \in \mathbb{P} *) *( \forall k \in \mathbb{N} *) \\\ \qquad\qquad\qquad\quad\; *( \frac{ n }{ p^{k} } \in \mathbb{N} \land \frac{ n }{ p^{k + 1} } \notin \mathbb{N} *) *[  x = p^{k}  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  pa(n)  :=  *\{  x  *|*  *( \forall p \in \mathbb{P} *) *( \forall k \in \mathbb{N} *) \\\ \qquad\qquad\qquad\quad\; *( \frac{ n }{ p^{k} } \in \mathbb{N}_{\infty} \land \frac{ n }{ p^{k + 1} } \notin \mathbb{N}_{\infty} *) *[  x = p^{k}  *]  *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Dann ist diese Menge also die Menge der Primzahlen in der maximalen Potenz, die \\latexmath{ n } noch ganzzahlig teilt.'."\n".
@@ -463,11 +462,10 @@
                       'erzeugt aus ihrem natürlichen Parameter \\latexmath{ n },'."\n".
                       'eine Menge die alle Kombinationen der natürlichen Potenzen seiner Primfaktoranteile enthält,'."\n".
                       'wobei die Null und die Eins zu den Primfaktoranteilen dazu genommen werden, um bei Null und Eins keine Lücke zu haben:'."\n".
-                      '\\color{*Bearb}{(Die Funktion muss noch an \\latexmath{ \omega } als Parameter angepasst werden.)}'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  papr(n)  =  *\{  x  *|*  *( \forall i \in \mathbb{N} *) *( \forall j \in pa(n) *) *( \forall k \in \mathbb{N}^{+} *) \\\ \qquad\qquad\qquad\quad\;\; *( i \in \{ 0, 1 \} \lor \frac{ i }{ j^{k} } \in \mathbb{N} *) \\\ \qquad\qquad\qquad\quad\;\;\; *[  x = i  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  papr(n)  :=  *\{  x  *|*  *( \forall i \in \mathbb{N} *) *( \forall j \in pa(n) *) *( \forall k \in \mathbb{N}^{+} *) \\\ \qquad\qquad\qquad\qquad\; *( i \in \{ 0, 1 \} \lor \frac{ i }{ j^{k} } \in \mathbb{N} *) \\\ \qquad\qquad\qquad\qquad\;\; *[  x = i  *]  *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Die Menge wird hier erzeugt, indem alle natürlichen Zahlen \\latexmath{ i } darauf geprüft werden, ob sie entweder'."\n".
@@ -482,7 +480,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  lpapr(n)  =  *\{  x  *|*  *( \forall i \in \mathbb{N} *) *( i \subset papr(n) *) *[  x = i  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  lpapr(n)  :=  *\{  x  *|*  *( \forall i \in \mathbb{N} *) *( i \subset papr(n) *) *[  x = i  *]  *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Diese Intervall-Menge erhalten wir, indem wir alle natürlichen Zahlen \\latexmath{ i } in einer Menge sammeln, die echte Teilmenge\\color{*Bearb}{(Verweis)}'."\n".
