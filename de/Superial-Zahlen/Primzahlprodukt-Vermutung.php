@@ -32,8 +32,8 @@
                     'und der endlichen ganzen Zahlen, dann scheint die Anzahl der endlichen natürlichen Zahlen dem Produkt'."\n".
                     'aller endlichen Primzahlen gleich zu sein.'."\n",
                       'Den Ansatz zu dieser Vermutung finden wir im Abschnitt \\italic{\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm}},'."\n".
-                    'wo wir uns schon mit der Struktur von \\latexmath{ s } beschäftigt haben.'."\n",
-                      'Dabei fanden wir, dass die Anzahl der rationalen Zahlen \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} }, von der Null bis ausschließlich der Eins, in Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}'."\n".
+                    'wo wir uns schon mit der Struktur von \\latexmath{ s } beschäftigt haben.'."\n".
+                    'Dabei fanden wir, dass die Anzahl der rationalen Zahlen \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} }, von der Null bis ausschließlich der Eins, in Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}'."\n".
                     'eine ganze Zahl sein muss.'."\n".
                     'Das können wir mit Hilfe der Abrundung durch die Gaußklammer\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AbrundungsfunktionUndAufrundungsfunktion:2022}.} \\latexmath{ \lfloor x \rfloor } zum Ausdruck bringen, die eine Zahl \\latexmath{ x } auf die nächst kleinere ganze Zahl abrundet, wenn sie noch keine ganze Zahl ist:'."\n".
                     ''))),
@@ -666,9 +666,9 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  pa( \omega\overline{\#} )  =  *\{ 2, 3, 5, 7, 11, 13 \cdots *\}  }'),
-                      array( display => 'on',  latex => '{  papr( \omega\overline{\#} )  =  papr( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  papr( \omega\overline{\#} )  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \cdots *\}  }'),
-                      array( display => 'on',  latex => '{  lpapr( \omega\overline{\#} )  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots *\} \\\ \qquad\qquad\qquad\qquad\qquad\qquad  =  \mathbb{N}  =  \omega  }'),
+                      array( display => 'on',  latex => '{  papr\!*( \omega\overline{\#} *)  =  papr( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  papr\!*( \omega\overline{\#} *)  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \cdots *\}  }'),
+                      array( display => 'on',  latex => '{  lpapr\!*( \omega\overline{\#} *)  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots *\} \\\ \qquad\qquad\qquad\qquad\qquad\qquad  =  \mathbb{N}  =  \omega  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n".
@@ -689,10 +689,10 @@
                   array( 'text', array( text => array(
                     'Die Mengen-Primfakultät \\latexmath{ n\overline{\#} } beschreibt nun ein Primfaktoranteil-Potenzraster,'."\n".
                     'in dem alle Primfaktoranteile reine Primzahlen sind und auch keine Primzahlen bis zu einer größten fehlen.'."\n",
-                      'Im Besonderen ist ein jedes derartiges Primfaktoranteil-Potenzraster \\latexmath{ papr( n\overline{\#} ) } eine Beschreibung der nächsten fehlenden reinen Primzahl, die größer als'."\n".
+                      'Im Besonderen ist ein jedes derartiges Primfaktoranteil-Potenzraster \\latexmath{ papr*( n\overline{\#} *) } eine Beschreibung der nächsten fehlenden reinen Primzahl, die größer als'."\n".
                     'oder gleich \\latexmath{ n } ist und auf seiner ersten Rasterlücke sitzt.'."\n".
-                    'Diese Primzahl erhalten wir dann durch \\latexmath{ lpapr( n\overline{\#} ) }.'."\n",
-                      'XXX XXX Die Zahl beziehungsweise Menge \\latexmath{ lpapr( \omega\overline{\#} ) } ist die Menge aller'."\n".
+                    'Diese Primzahl erhalten wir dann durch \\latexmath{ lpapr\!*( n\overline{\#} *) }.'."\n",
+                      'XXX XXX Die Zahl beziehungsweise Menge \\latexmath{ lpapr\!*( \omega\overline{\#} *) } ist die Menge aller'."\n".
                     'natürlichen Zahlen \\latexmath{ \mathbb{N} }.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -705,7 +705,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  lpapr( \omega\overline{\#} )  =  \mathbb{N}  =  \omega  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  lpapr\!*( \omega\overline{\#} *)  =  \mathbb{N}  =  \omega  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \omega\overline{\#}  ?=  \omega  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -913,16 +913,16 @@
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Die Mengen-Primfakultät \\latexmath{ n\overline{\#} } einer natürlichen Zahl \\latexmath{ n } liefert'."\n".
-                      'als Parameter der maximalen lückenlosen Intervall-Menge des Primfaktoranteil-Potenzrasters \\latexmath{ lpapr( n\overline{\#} ) }'."\n".
+                      'als Parameter der maximalen lückenlosen Intervall-Menge des Primfaktoranteil-Potenzrasters \\latexmath{ lpapr\!*( n\overline{\#} *) }'."\n".
                       'die nächste Primzahl:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *( p_{i}, p_{i + 1} \in \mathbb{P} *) *( p_{i} < n \leq p_{i + 1} *) \\\ \qquad\qquad\qquad\qquad\qquad\quad *[  p_{i + 1}  =  lpapr( n\overline{\#} )  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p_{i}, p_{i + 1} \in \mathbb{P} *) *[  p_{i + 1}  =  lpapr( *( p_{i} + 1 *)\overline{\#} )  *]  }'),
-                      array( display => 'off', latex => '{  \Rightarrow  *( \forall p_{i + 1} \in \mathbb{P} *) *[  p_{i + 1}  =  lpapr( *( p_{i + 1} *)\overline{\#} )  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p_{i} \in \mathbb{P} *) *[  p_{i}  =  lpapr( p_{i}\overline{\#} )  *]  }',
-                                    latex_if_visible => '{  \Leftrightarrow  *( \forall p_{i} \in \mathbb{P} *) *[  p_{i}  =  lpapr( p_{i}\overline{\#} )  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *( p_{i}, p_{i + 1} \in \mathbb{P} *) *( p_{i} < n \leq p_{i + 1} *) \\\ \qquad\qquad\qquad\qquad\qquad\quad *[  p_{i + 1}  =  lpapr\!*( n\overline{\#} *)  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p_{i}, p_{i + 1} \in \mathbb{P} *) *[  p_{i + 1}  =  lpapr\!*( *( p_{i} + 1 *)\overline{\#} *)  *]  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  *( \forall p_{i + 1} \in \mathbb{P} *) *[  p_{i + 1}  =  lpapr\!*( p_{i + 1}\overline{\#} *)  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p_{i} \in \mathbb{P} *) *[  p_{i}  =  lpapr\!*( p_{i}\overline{\#} *)  *]  }',
+                                    latex_if_visible => '{  \Leftrightarrow  *( \forall p_{i} \in \mathbb{P} *) *[  p_{i}  =  lpapr\!*( p_{i}\overline{\#} *)  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n",
@@ -968,7 +968,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \exists \mathbb{P}\!: *( 2 \in \mathbb{P} \land \forall x\!: *( x \in \mathbb{P} \Rightarrow lpapr( *( x + 1 *)\overline{\#} ) \in \mathbb{P} *) *)  }'),
+                      array( display => 'on',  latex => '{  \exists \mathbb{P}\!: *( 2 \in \mathbb{P} \land \forall x\!: *( x \in \mathbb{P} \Rightarrow lpapr\!*( *( x + 1 *)\overline{\#} *) \in \mathbb{P} *) *)  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n",
@@ -1015,41 +1015,35 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'und sei die jeweils nächste Primzahl nach Formel XXX gegeben,'."\n".
-                  //     ''))),
-                  // array( 'equations',
-                  //   array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                  //     array( display => 'on',  latex => '{  *( \forall p_{i}, p_{i + 1} \in \mathbb{P} *) *[  lpapr( *( p_{i} + 1 *)\overline{\#} )  =  p_{i + 1}  *]  \;\;,  }'),
-                  //   ))),
-                  // array( 'text', array( Shape  => 'derivation', text => array(
                       'dann lautet der Beginn der nachfolgenden Primzahlen, sich in angeordneter Reihenfolge ergebend,'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       // array( display => 'on',  latex => '{  p_{0}  =  \varnothing  =  \boxed{  0  }  }'),
-                      // array( display => 'on',  latex => '{  p_{1}  =  lpapr( *( p_{0} + 1 *)\overline{\#} )  }'),
-                      // array( display => 'on',  latex => '{  \Leftrightarrow  p_{1}  =  lpapr( 1\overline{\#} )  }'),
+                      // array( display => 'on',  latex => '{  p_{1}  =  lpapr\!*( *( p_{0} + 1 *)\overline{\#} *)  }'),
+                      // array( display => 'on',  latex => '{  \Leftrightarrow  p_{1}  =  lpapr\!*( 1\overline{\#} *)  }'),
                       // array( display => 'on',  latex => '{  \Leftrightarrow  p_{1}  =  lpapr( 1 )  }'),
                       // array( display => 'on',  latex => '{  \Leftrightarrow  p_{1}  =  *\{ 0, 1 *\}  =  \boxed{  2  }  }'),
-                      array( display => 'on',  latex => '{  p_{2}  =  lpapr( *( p_{1} + 1 *)\overline{\#} )  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{2}  =  lpapr( 3\overline{\#} )  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{2}  =  lpapr( *\{ 0, 1, 2 *\}\overline{\#} )  }'),
+                      array( display => 'on',  latex => '{  p_{2}  =  lpapr\!*( *( p_{1} + 1 *)\overline{\#} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{2}  =  lpapr\!*( 3\overline{\#} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{2}  =  lpapr\!*( *\{ 0, 1, 2 *\}\overline{\#} *)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{2}  =  lpapr( 2 )  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{2}  =  *\{ 0, 1, 2 *\}  =  \boxed{  3  }  }'),
-                      array( display => 'on',  latex => '{  p_{3}  =  lpapr( *( p_{2} + 1 *)\overline{\#} )  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{3}  =  lpapr( 4\overline{\#} )  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{3}  =  lpapr( *\{ 0, 1, 2, 3 *\}\overline{\#} )  }'),
+                      array( display => 'on',  latex => '{  p_{3}  =  lpapr\!*( *( p_{2} + 1 *)\overline{\#} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{3}  =  lpapr\!*( 4\overline{\#} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{3}  =  lpapr\!*( *\{ 0, 1, 2, 3 *\}\overline{\#} *)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{3}  =  lpapr( 2 \cdot 3 )  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{3}  =  lpapr( 6 )  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{3}  =  *\{ 0, 1, 2, 3, 4 *\}  =  \boxed{  5  }  }'),
-                      array( display => 'on',  latex => '{  p_{4}  =  lpapr( *( p_{3} + 1 *)\overline{\#} )  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{4}  =  lpapr( 6\overline{\#} )  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{4}  =  lpapr( *\{ 0, 1, 2, 3, 4, 5 *\}\overline{\#} )  }'),
+                      array( display => 'on',  latex => '{  p_{4}  =  lpapr\!*( *( p_{3} + 1 *)\overline{\#} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{4}  =  lpapr\!*( 6\overline{\#} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{4}  =  lpapr\!*( *\{ 0, 1, 2, 3, 4, 5 *\}\overline{\#} *)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{4}  =  lpapr( 2 \cdot 3 \cdot 5 )  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{4}  =  lpapr( 30 )  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{4}  =  *\{ 0, 1, 2, 3, 4, 5, 6 *\}  =  \boxed{  7  }  }'),
-                      array( display => 'on',  latex => '{  p_{5}  =  lpapr( *( p_{4} + 1 *)\overline{\#} )  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{5}  =  lpapr( 8\overline{\#} )  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{5}  =  lpapr( *\{ 0, 1, 2, 3, 4, 5, 6, 7 *\}\overline{\#} )  }'),
+                      array( display => 'on',  latex => '{  p_{5}  =  lpapr\!*( *( p_{4} + 1 *)\overline{\#} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{5}  =  lpapr\!*( 8\overline{\#} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{5}  =  lpapr\!*( *\{ 0, 1, 2, 3, 4, 5, 6, 7 *\}\overline{\#} *)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{5}  =  lpapr( 2 \cdot 3 \cdot 5 \cdot 7 )  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{5}  =  lpapr( 210 )  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  p_{5}  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 *\}  =  \boxed{  11  }  }'),
@@ -1095,21 +1089,21 @@
                       array( display => 'off', latex => '{  *( \forall n \in \mathbb{N} *) *[  n  \widehat{=}  papr( n )  *]  }'),
                       array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  p  \widehat{=}  papr( p )  *]  \;\;.  }',
                                     latex_if_visible => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *[  p  \widehat{=}  papr( p )  *]  \;\;.  }'),
-                      // array( display => 'on',  latex => '{  *( XXX \forall p \in \mathbb{P} *) *[  p  \widehat{=}  XXX papr( p\overline{\#} )  *]  }'),
+                      // array( display => 'on',  latex => '{  *( XXX \forall p \in \mathbb{P} *) *[  p  \widehat{=}  XXX papr\!*( p\overline{\#} *)  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Da aber nach Formel XXX auch'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  p  =  lpapr( p\overline{\#} )  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  p  =  lpapr\!*( p\overline{\#} *)  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'gilt, folgen ebenso die Entsprechungen'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *[  lpapr( p\overline{\#} )  \widehat{=}  papr( p )  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *[  lpapr\!*( p\overline{\#} *)  \widehat{=}  papr( p )  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'und'."\n".
@@ -1140,7 +1134,7 @@
                     'enthält es natürlich auch alle endlichen Primzahlen.'."\n".
                     'Die Mengen-Primfakultät \\latexmath{ \omega\overline{\#} } ist also das Produkt'."\n".
                     'aller endlichen Primzahlen.'."\n",
-                      'Das Primfaktoranteil-Potenzraster \\latexmath{ papr( \omega\overline{\#} ) } aller endlichen Primfaktoren'."\n".
+                      'Das Primfaktoranteil-Potenzraster \\latexmath{ papr\!*( \omega\overline{\#} *) } aller endlichen Primfaktoren'."\n".
                     'in \\latexmath{ \omega\overline{\#} } geht zur Menge der natürlichen Zahlen \\latexmath{ \mathbb{N} },'."\n".
                     'also zu \\latexmath{ \omega }, über.'."\n".
                     'Das ist so, weil aus der Kombination aller endlichen Primzahlen in beliebiger, endlicher Potenz in einem Produkt'."\n".
@@ -1148,16 +1142,16 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  papr( \omega\overline{\#} )  =  \mathbb{N}  =  \omega  }'),
+                      array( display => 'on',  latex => '{  papr\!*( \omega\overline{\#} *)  =  \mathbb{N}  =  \omega  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Weil dieses Primfaktoranteil-Potenzraster \\latexmath{ papr( \omega\overline{\#} ) }'."\n".
+                    'Weil dieses Primfaktoranteil-Potenzraster \\latexmath{ papr\!*( \omega\overline{\#} *) }'."\n".
                     'nun komplett lückenlos ist gilt aber auch:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  lpapr( \omega\overline{\#} )  =  \mathbb{N}  =  \omega  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  lpapr( \omega\overline{\#} )  =  papr( \omega\overline{\#} )  }'),
+                      array( display => 'on',  latex => '{  lpapr\!*( \omega\overline{\#} *)  =  \mathbb{N}  =  \omega  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  lpapr\!*( \omega\overline{\#} *)  =  papr\!*( \omega\overline{\#} *)  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Was passiert nun mit den Zusammenhängen in den Formeln XXX?'."\n",
@@ -1172,8 +1166,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  p  =  lpapr( p\overline{\#} )  *]  }'),
-                      array( display => 'on',  latex => '{  lpapr( \omega  =  \omega\overline{\#} )  }'),
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  p  =  lpapr\!*( p\overline{\#} *)  *]  }'),
+                      array( display => 'on',  latex => '{  \omega  =  lpapr\!*( \omega\overline{\#} *)  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Und da wir jetzt für die Entsprechung in Formel XXX schon in Formel XXX festgestellt wurde,'."\n".
@@ -1184,12 +1178,12 @@
                       array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  p  \widehat{=}  papr( p )  *]  }'),
                       array( display => 'on',  latex => '{  \omega  \widehat{=}  papr( \omega )  }'),
                       // array( display => 'on',  latex => '{  \omega  \widehat{=}  papr( \omega )  ?=   \omega  }'),
-                      array( display => 'on',  latex => '{  \omega  =  papr( \omega\overline{\#} )  }'),
+                      array( display => 'on',  latex => '{  \omega  =  papr\!*( \omega\overline{\#} *)  }'),
                       // Gegenbeispiel zu zwangsweisen Gleichheit:
                       // array( display => 'on',  latex => '{  x  \widehat{=}  2 \cdot (x)  }'),
                       // array( display => 'on',  latex => '{  x  =  2 \cdot (\frac{1}{2} \cdot x)  }'),
-                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  lpapr( p\overline{\#} )  \widehat{=}  papr( p )  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  lpapr( \omega\overline{\#} )  \widehat{=}  papr( \omega )  }'),
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  lpapr\!*( p\overline{\#} *)  \widehat{=}  papr( p )  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  lpapr\!*( \omega\overline{\#} *)  \widehat{=}  papr( \omega )  }'),
                       array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  p  \widehat{=}  p\overline{\#}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \omega  \widehat{=}  \omega\overline{\#}  }'),
                     ))),
@@ -1219,15 +1213,15 @@
                       'Zum einen beschreiben wir die Anzahl der ersten \\latexmath{ p } natürlichen Zahlen mit der Menge \\latexmath{ p } selber,'."\n".
                     'die genau diese Zahlen mittels des Zählens enthält.'."\n",
                       'Zum anderen beschreiben wir die ersten \\latexmath{ p } natürlichen Zahlen mit der Mengen-Primfakultät'."\n".
-                    '\\latexmath{ p\overline{\#} } dieser Menge, die uns ein Zahlenraster in Form einer Menge \\latexmath{ papr( p\overline{\#} ) } liefert,'."\n".
+                    '\\latexmath{ p\overline{\#} } dieser Menge, die uns ein Zahlenraster in Form einer Menge \\latexmath{ papr\!*( p\overline{\#} *) } liefert,'."\n".
                     'das genau die Menge \\latexmath{ p } lückenlos enthält und aus der wir diese mittels'."\n".
-                    '\\latexmath{ lpapr( p\overline{\#} ) } extrahieren können.'."\n".
+                    '\\latexmath{ lpapr\!*( p\overline{\#} *) } extrahieren können.'."\n".
                     'Beide Beschreibungen entsprechen einander, sind im Endlichen vom Wert her aber im Allgemeinen nicht gleich: \\latexmath{ p \widehat{=} p\overline{\#} }.'."\n",
                       'Nun passiert beim Übergang ins Unendliche zu \\latexmath{ \omega } etwas besonderes:'."\n",
                       'Die Anzahl der Zahlen der Menge der ersten \\latexmath{ \omega } natürlichen Zahlen bleibt \\latexmath{ \omega } selbst.'."\n",
                       'Die Mengen-Primfakultät \\latexmath{ \omega\overline{\#} } dieser Menge wird nun zum Produkt aller endlichen Primzahlen.'."\n".
                     'Die Mengen des von diesem unendlich großen Produkt gelieferten Zahlenrasters endlicher natürlicher Zahlen wird damit vollständig lückenlos und'."\n".
-                    'damit ebenfalls zu: \\latexmath{ \omega = papr( \omega\overline{\#} ) }.'."\n",
+                    'damit ebenfalls zu: \\latexmath{ \omega = papr\!*( \omega\overline{\#} *) }.'."\n",
                       'Aus der Entsprechung wird beim Übergang also eine Gleichheit, weil aus der einfachen Potenz einer jeden endlichen Primzahl'."\n".
                     'des Produkts \\latexmath{ \omega\overline{\#} } durch die Kombinatorik jeder dieser Primzahlen in jeder endlichen Potenz'."\n".
                     'jede endliche natürliche Zahl entsteht.'."\n".
@@ -1257,10 +1251,10 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n",
-                    'Die Menge des Primfaktoranteil-Potenzrasters der Mengen-Primfakultät \\latexmath{ papr( p\overline{\#} ) }'."\n".
-                    'der endlichen Primzahlen \\latexmath{ p }, die beide einander entsprechen — \\latexmath{ p \widehat{=} papr( p\overline{\#} ) } —,'."\n".
+                    'Die Menge des Primfaktoranteil-Potenzrasters der Mengen-Primfakultät \\latexmath{ papr\!*( p\overline{\#} *) }'."\n".
+                    'der endlichen Primzahlen \\latexmath{ p }, die beide einander entsprechen — \\latexmath{ p \widehat{=} papr\!*( p\overline{\#} *) } —,'."\n".
                     'also einander eineindeutig zugeordnet werden können, aber nicht gleich sind, jedoch im Fall des lückenlosen Primfaktoranteil-Potenzrasters'."\n".
-                    'sogar gleich sind — \\latexmath{ p = lpapr( p\overline{\#} ) } —, zeigen, dass die Primzahlen in'."\n".
+                    'sogar gleich sind — \\latexmath{ p = lpapr\!*( p\overline{\#} *) } —, zeigen, dass die Primzahlen in'."\n".
                     'der Menge der Zahl \\latexmath{ p } all deren Elemente, die natürlichen Zahlen von Null bis \\latexmath{ p - 1 }, lückenlos als Primfaktoren'."\n".
                     'erzeugen.'."\n",
                       'Die Menge \\latexmath{ p } dieser ersten \\latexmath{ p } natürlichen Zahlen, eben die Zahlen von Null bis \\latexmath{ p - 1 },'."\n".
@@ -1270,7 +1264,7 @@
                       'So hat die Menge \\latexmath{ p }, der \\latexmath{ p } ersten natürliche Zahlen, zum einen deren Anzahl-Wert'."\n".
                     'als Beschreibung.'."\n".
                     'Zum anderen wird die Menge \\latexmath{ p } durch ihren Struktur-Wert \\latexmath{ p\overline{\#} } dargestellt,'."\n".
-                    'der ausschließlich bei Primzahlen gleich \\latexmath{ lpapr( p\overline{\#} ) } ist.'."\n",
+                    'der ausschließlich bei Primzahlen gleich \\latexmath{ lpapr\!*( p\overline{\#} *) } ist.'."\n",
                       'Beim Übergang von immer größer werdenden Primzahlen \\latexmath{ p } zum unendlichen \\latexmath{ \omega }'."\n".
                     'geht letztere Beschreibung der ersten \\latexmath{ p } natürlichen Zahlen zu den ersten \\latexmath{ \omega }'."\n".
                     'natürlichen Zahlen über.'."\n".
@@ -1284,25 +1278,25 @@
                     'Denn die Zahl \\latexmath{ \omega - 1 } ist zwar in der Theorie der Biordinalzahlen definiert, aber ist hierin kein Element'."\n".
                     'von \\latexmath{ \omega }.'."\n",
                       'Einzig die zweite Art der Beschreibung der Menge \\latexmath{ \omega } bleibt erhalten und zwar durch \\latexmath{ \omega\overline{\#} }.'."\n".
-                    'XXX \\latexmath{ papr( \omega\overline{\#} ) }'."\n".
-                    'und im Besonderen durch \\latexmath{ lpapr( \omega\overline{\#} ) }, wobei letzteres genau \\latexmath{ \omega } gleich sein muss, also \\latexmath{ \omega = lpapr( \omega\overline{\#} ) }.'."\n",
-                      'Nach dem Übergang gilt aber wegen \\latexmath{ lpapr( \omega\overline{\#} ) = papr( \omega\overline{\#} ) } auch \\latexmath{ \omega = papr( \omega\overline{\#} ) }.'."\n".
-                    'Denn in der Menge \\latexmath{ papr( \omega\overline{\#} ) } sind alle Rasterlücken gefüllt, weil alle endlichen natürlichen Zahlen, bis auf die Null,'."\n".
+                    'XXX \\latexmath{ papr\!*( \omega\overline{\#} *) }'."\n".
+                    'und im Besonderen durch \\latexmath{ lpapr\!*( \omega\overline{\#} *) }, wobei letzteres genau \\latexmath{ \omega } gleich sein muss, also \\latexmath{ \omega = lpapr\!*( \omega\overline{\#} *) }.'."\n",
+                      'Nach dem Übergang gilt aber wegen \\latexmath{ lpapr\!*( \omega\overline{\#} *) = papr\!*( \omega\overline{\#} *) } auch \\latexmath{ \omega = papr\!*( \omega\overline{\#} *) }.'."\n".
+                    'Denn in der Menge \\latexmath{ papr\!*( \omega\overline{\#} *) } sind alle Rasterlücken gefüllt, weil alle endlichen natürlichen Zahlen, bis auf die Null,'."\n".
                     'durch die Kombination aller endlichen Primzahlen in \\latexmath{ \omega\overline{\#} } und ihren Potenzen beschrieben werden.'."\n".
-                    'Was bedeutet, beim Übergang wird aus der Entsprechung \\latexmath{ p \widehat{=} papr( p\overline{\#} ) } die Gleichheit'."\n".
-                    '\\latexmath{ \omega = papr( \omega\overline{\#} ) }.'."\n",
+                    'Was bedeutet, beim Übergang wird aus der Entsprechung \\latexmath{ p \widehat{=} papr\!*( p\overline{\#} *) } die Gleichheit'."\n".
+                    '\\latexmath{ \omega = papr\!*( \omega\overline{\#} *) }.'."\n",
                       'Dies lässt wiederum vermuten, dass aus der Entsprechung \\latexmath{ p \widehat{=} p\overline{\#} } ebenfalls eine Gleichheit wird, also'."\n".
                     '\\latexmath{ \omega ?= \omega\overline{\#} }.'."\n",
                       'Und genau diese Gleichheit wird mit der \\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen}{oben getroffenen Feststellung},'."\n".
                     'die Primfaktorzerlegung von \\latexmath{ \omega } ist'."\n".
                     'ein unendlich großer Teil derer von \\latexmath{ s }, der in der Zeile oder den Zeilen der Primfakultät'."\n".
                     'seines Primzahl-Flächenprodukts zu finden ist, bestätigt.'."\n",
-                      '\\latexmath{ lpapr( p\overline{\#} ) } führt uns, mit der Mengen-Primfakultät \\latexmath{ p\overline{\#} } im Parameter, über'."\n".
-                    'das Zählen aller Primzahlen mit Hilfe von \\latexmath{ lpapr( p\overline{\#} + 1 ) } mittels'."\n".
+                      '\\latexmath{ lpapr\!*( p\overline{\#} *) } führt uns, mit der Mengen-Primfakultät \\latexmath{ p\overline{\#} } im Parameter, über'."\n".
+                    'das Zählen aller Primzahlen mit Hilfe von \\latexmath{ lpapr\!*( p\overline{\#} + 1 *) } mittels'."\n".
                     'vollständiger Induktion zur Menge aller endlichen natürlichen Zahlen \\latexmath{ \omega }.'."\n".
-                    'Dabei gibt \\latexmath{ p } immer die Anzahl der Zahlen an, die in der Menge \\latexmath{ lpapr( p\overline{\#} ) }'."\n".
+                    'Dabei gibt \\latexmath{ p } immer die Anzahl der Zahlen an, die in der Menge \\latexmath{ lpapr\!*( p\overline{\#} *) }'."\n".
                     'enthalten sind.'."\n".
-                    'Und beim Übergang ist diese Anzahl dann \\latexmath{ \omega } mit in der Menge \\latexmath{ lpapr( \omega\overline{\#} ) }.'."\n".
+                    'Und beim Übergang ist diese Anzahl dann \\latexmath{ \omega } mit in der Menge \\latexmath{ lpapr\!*( \omega\overline{\#} *) }.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -1376,7 +1370,7 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'XXX jeder der Zählschritte der natürlichen Zahlen in Primzahlenschritten \\latexmath{ p = lpapr( p\overline{\#} ) }'."\n".
+                      'XXX jeder der Zählschritte der natürlichen Zahlen in Primzahlenschritten \\latexmath{ p = lpapr\!*( p\overline{\#} *) }'."\n".
                       'teilt die Anzahl aller natürlichen Zahlen \\latexmath{ \omega } ganzzahlig:'."\n".
                       ''))),
                   array( 'equations',
@@ -1415,11 +1409,11 @@
                       'Kennen wir aber alle natürlichen Zahlen durch \\latexmath{ \omega } schon,'."\n".
                     'dann können wir dieses unendliche „Primzahl-Intervall“ ebenso durch die'."\n".
                     'Mengen-Primfakultät von \\latexmath{ \omega } beschreiben.'."\n".
-                    'Das bedeutet: \\latexmath{ \omega\overline{\#} \widehat{=} papr( \omega\overline{\#} ) = lpapr( \omega\overline{\#} ) = \omega }.'."\n",
+                    'Das bedeutet: \\latexmath{ \omega\overline{\#} \widehat{=} papr\!*( \omega\overline{\#} *) = lpapr\!*( \omega\overline{\#} *) = \omega }.'."\n",
                       'Nur ist \\latexmath{ \omega } diesmal keine Primzahl, weil es keine größte Primzahl gibt.'."\n",
-                      'Aber \\latexmath{ n\overline{\#} } war doch immer viel größer als \\latexmath{ lpapr( n\overline{\#} ) },'."\n".
+                      'Aber \\latexmath{ n\overline{\#} } war doch immer viel größer als \\latexmath{ lpapr\!*( n\overline{\#} *) },'."\n".
                     'für alle natürlichen Zahlen \\latexmath{ n }.'."\n".
-                    'Wie kann dann \\latexmath{ \omega\overline{\#} ?= papr( \omega\overline{\#} ) = lpapr( \omega\overline{\#} ) = \omega } sein?'."\n",
+                    'Wie kann dann \\latexmath{ \omega\overline{\#} ?= papr\!*( \omega\overline{\#} *) = lpapr\!*( \omega\overline{\#} *) = \omega } sein?'."\n",
                       'Im Endlichen ist die Anzahl der Elemente einer Menge natürlicher Zahlen, geordnet und von der Null an,'."\n".
                     'immer Eins größer als das letzte Element in der Menge.'."\n".
                     'Bei einer unendlich großen Anzahl an Elementen einer solchen Menge, wie \\latexmath{ \omega },'."\n".
@@ -1433,7 +1427,7 @@
                     'und nicht das Produkt auch unendlich großer Primzahlen in den ganzen Zahlen bis \\latexmath{ \omega },'."\n".
                     'die es auch noch gibt.'."\n",
                       'Der unendlich große Wert von \\latexmath{ \omega\overline{\#} } beschreibt also das Primfaktoranteil-Potenzraster,'."\n".
-                    'das auch die Menge \\latexmath{ lpapr( \omega\overline{\#} ) = \omega } darstellt.'."\n".
+                    'das auch die Menge \\latexmath{ lpapr\!*( \omega\overline{\#} *) = \omega } darstellt.'."\n".
                     'Und der Wert von \\latexmath{ \omega\overline{\#} } hat nun auch die gleiche Größenordnung, wie der von \\latexmath{ \omega }.'."\n".
                     ''))),
                   array( 'text', array( text => array(
