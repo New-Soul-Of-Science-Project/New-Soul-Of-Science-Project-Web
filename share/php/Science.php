@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 02.08.2023, 20:00h
+  // #: Stand: 03.08.2023, 10:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20230803:  +:  "$Sc_g_equation_replace_ary":  '  \land  ' -> '\;\;\;\land\;\;\;' is new.
   //           20230802:  +:  "$Sc_g_equation_replace_ary":  '  \lor  ' -> '\;\;\;\lor\;\;\;', '  \Leftrightarrow  ' -> '\;\;\;\Leftrightarrow\;\;\;', '  \Rightarrow  ' -> '\;\;\;\Rightarrow\;\;\;' are new.
   //                      >:  "$Sc_g_equation_replace_MathJax_ary":  '{  \Leftrightarrow  ' -> '{  \Leftrightarrow\hspace{10mm}', '{  \Rightarrow  ' -> '{  \Rightarrow\hspace{10mm}' are new.
   //           20230722:  +:  "$Sc_g_equation_replace_ary":  '  \widehat{=}  ' -> '\;\;\;\widehat{=}\;\;\;', ' \widehat{=} ' -> '\;\widehat{=}\;' are new.
@@ -617,6 +618,7 @@
                                     // #: Arrange space around symbols and save chars.
                                     array( '  \Rightarrow  ', '\;\;\;\Rightarrow\;\;\;'),
                                     array( '  \Leftrightarrow  ', '\;\;\;\Leftrightarrow\;\;\;'),
+                                    array( '  \land  ', '\;\;\;\land\;\;\;'),
                                     array( '  \lor  ', '\;\;\;\lor\;\;\;'),
                                     array( '  =  ', '\;\;\;=\;\;\;'),
                                     array( '  \neq  ', '\;\;\;\neq\;\;\;'),

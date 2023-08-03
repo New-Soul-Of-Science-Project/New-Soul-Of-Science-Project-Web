@@ -80,9 +80,10 @@
           'OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega' => array( headline_text => 'Es gibt mehr ganze Zahlen von Null bis zu \\term{ω}, als der Wert von \\term{ω} ausdrückt', headline_text_short => 'Es gibt mehr ganze Zahlen von Null bis zu ω, als der Wert von ω ausdrückt'),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega' => array( headline_text => 'BO.Ein.NE.68'),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n' => array( headline_text => 'BO.Ein.NE.74'),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich' => array( headline_text => 'BO.Ein.NE.75'),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega' => array( headline_text => 'BO.Ein.NE.76'),
-          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N' => array( headline_text => 'BO.Ein.NE.77'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich' => array( headline_text => 'BO.Ein.NE.75'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich' => array( headline_text => 'BO.Ein.NE.76'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega' => array( headline_text => 'BO.Ein.NE.77'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N' => array( headline_text => 'BO.Ein.NE.78'),
       ),
     ),
     'OM:BiOrd:Literatur' => array(

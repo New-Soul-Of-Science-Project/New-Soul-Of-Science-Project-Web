@@ -14,6 +14,7 @@
           <?php
             Sc_g_litera_make( array(
               'wiki:AbelscheGruppe:2022',
+              'wiki:AbrundungsfunktionUndAufrundungsfunktion:2022',
               'wiki:Allklasse:2020',
               'wiki:Arithmetik:2015',
               'wiki:GaussscheSummenformel:2023',

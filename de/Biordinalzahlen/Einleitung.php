@@ -1212,10 +1212,14 @@
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n', label_text => '\\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Ich gehe davon aus, dass dieser Zusammenhang ganz allgemein für alle endlichen und aktual unendlichen „natürlichen“ Zahlen gilt, die ich hier mal \\latexmath{ \mathbb{N}_\infty } nenne:'."\n".
+                      'Ich gehe davon aus, dass dieser Zusammenhang ganz allgemein für alle endlichen und aktual unendlichen „natürlichen“ Zahlen gilt, die ich \\latexmath{ \mathbb{N}_\infty } nenne.'."\n".
+                      'Diese Menge können wir mit Hilfe der Abrundung durch die Gaußklammer\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AbrundungsfunktionUndAufrundungsfunktion:2022}.}'."\n".
+                      '\\latexmath{ \lfloor x \rfloor } zum Ausdruck bringen, die eine Zahl \\latexmath{ x } auf die nächst kleinere ganze Zahl abrundet, wenn sie noch keine ganze Zahl ist:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \exists \mathbb{N}_{\infty}\!: \, *( \forall x\!: \, *( x \geq 0 \;\land\; x - \left\lfloor x \right\rfloor = 0  \Leftrightarrow  x \in \mathbb{N}_{\infty} *) *)  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich', label_text => '\\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in [ 0, n [_{\mathbb{N}_{\infty}} } i  =  \frac{ n^{2} - n }{ 2 }  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich', label_text => '\\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => true),
                     ))),
