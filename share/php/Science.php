@@ -8,6 +8,7 @@
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
   //           20230802:  +:  "$Sc_g_equation_replace_ary":  '  \lor  ' -> '\;\;\;\lor\;\;\;', '  \Leftrightarrow  ' -> '\;\;\;\Leftrightarrow\;\;\;', '  \Rightarrow  ' -> '\;\;\;\Rightarrow\;\;\;' are new.
+  //                      >:  "$Sc_g_equation_replace_MathJax_ary":  '{  \Leftrightarrow  ' -> '{  \Leftrightarrow\hspace{10mm}', '{  \Rightarrow  ' -> '{  \Rightarrow\hspace{10mm}' are new.
   //           20230722:  +:  "$Sc_g_equation_replace_ary":  '  \widehat{=}  ' -> '\;\;\;\widehat{=}\;\;\;', ' \widehat{=} ' -> '\;\widehat{=}\;' are new.
   //           20230613:  *:  "Sc_f_replace_callback__latexcommand__latexmath":  Use 'To_f_replace_callback__latexcommand__parameterCheck' for parameter checking.
   //           20230612:  +:  "$Sc_g_equation_replace_ary":  '  >  ' -> '\;\;\;>\;\;\;', '  \geq  ' -> '\;\;\;\geq\;\;\;' is new.
@@ -715,8 +716,8 @@
   $Sc_g_equation_replace_MathJax_ary = array_merge(
                                   array(
                                     // #: Simplify commands and save chars.
-                                    array( '\Rightarrow  ', '\Rightarrow\hspace{10mm}'),
-                                    array( '\Leftrightarrow  ', '\Leftrightarrow\hspace{10mm}'),
+                                    array( '{  \Rightarrow  ', '{  \Rightarrow\hspace{10mm}'),
+                                    array( '{  \Leftrightarrow  ', '{  \Leftrightarrow\hspace{10mm}'),
                                   ),
                                   $Sc_g_equation_replace_ary,
                                   array(
