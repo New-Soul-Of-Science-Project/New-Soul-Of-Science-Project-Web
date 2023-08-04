@@ -35,13 +35,13 @@
                     'wo wir uns schon mit der Struktur von \\latexmath{ s } beschäftigt haben.'."\n".
                     'Dabei fanden wir, dass die Anzahl der rationalen Zahlen \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} }, von der Null bis ausschließlich der Eins, in Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}'."\n".
                     'eine ganze Zahl sein muss.'."\n".
-                    'Das können wir mit Hilfe der Abrundung durch die Gaußklammer\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AbrundungsfunktionUndAufrundungsfunktion:2022}.} \\latexmath{ \lfloor x \rfloor } zum Ausdruck bringen, die eine Zahl \\latexmath{ x } auf die nächst kleinere ganze Zahl abrundet, wenn sie noch keine ganze Zahl ist:'."\n".
+                    'Das können wir mit Hilfe der \\jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{Menge \\latexmath{ \mathbb{N}_\infty }} feststellen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \# [ 0, 1 [_\mathbb{Q}  =  \frac{ s }{ 2 \cdot \omega }  }',
                                           label_text => '\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ s }{ 2 \cdot \omega } - \left\lfloor \frac{ s }{ 2 \cdot \omega } \right\rfloor  =  0  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ s }{ 2 \cdot \omega }  \in  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Ganzzahligkeit bedingt, dass alle Primfaktoren von \\latexmath{ 2 \cdot \omega } auch in \\latexmath{ s } vorkommen müssen.'."\n",
@@ -220,8 +220,8 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
                       
-                'Das passende Verständnis unserer Frage – eine Perspektivenfindung', subline =>
-                  '')),
+                'Das passende Verständnis zum Beweis unserer Vermutung', subline =>
+                  'Eine Perspektivenfindung')),
                   array( 'text', array( text => array(
                     'Berechnen wir Beispielhaft das Produkt der endlichen Primzahlen von den kleinsten Primfaktoren her mit der Primfakultät\\footnote{\\const{SupNum_g_footnote_text_Primorial}} \\latexmath{ p\# },'."\n".
                     'dann wird deutlich, dass es schnell sehr viel größer wird, als die größte in ihm vorkommende Primzahl:\\footnote{\\const{SupNum_g_footnote_text_PrimorialWikiWerte}}'."\n".
@@ -273,9 +273,9 @@
                       'Wie können wir dies Interpretieren und passend betrachten?'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Das Primpotenzraster einer Menge aufeinanderfolgender natürlichen Zahlen} \\\\'."\n".
+                  '\\condb{Das Primfaktoranteil-Potenzraster einer Menge aufeinanderfolgender natürlichen Zahlen} \\\\'."\n".
                     'Wie können wir alternativ die natürlichen Zahlen in solchen Mengen beschreiben?'."\n",
-                      'Das Primpotenzraster übernimmt die Idee des Beweises des ›Satz des Euklid‹ mit Hilfe der Primfakultät und'."\n".
+                      'Das Primfaktoranteil-Potenzraster übernimmt die Idee des Beweises des ›Satz des Euklid‹ mit Hilfe der Primfakultät und'."\n".
                     'bietet eine weitere Möglichkeit die natürlichen Zahlen dieser Mengen zu beschreiben.'."\n".
                     'Dies geht über ein tieferes Verständnis, wie der Beweis funktioniert, und über eine zu diesem Zweck etwas abgewandelte Primfakultät.'."\n".
                     ''))),
@@ -367,46 +367,46 @@
                     'Denn diese haben als Primfaktoren nur kleinere Primzahlen \\term{ p_{i–l} }, mit \\latexmath{ 1 \leq l < i },'."\n".
                     'oder sind selber eine Primzahl.'."\n",
                       'Was passiert nun beim Übergang, wenn eine neue Primzahl in die Menge hinzukommt?'."\n",
-                      'Wir können sagen, das \\italic{Primpotenzraster} weist nun eine Lücke auf und die neue Primzahl \\latexmath{ p_i }'."\n".
+                      'Wir können sagen, das \\italic{Primfaktoranteil-Potenzraster} weist nun eine Lücke auf und die neue Primzahl \\latexmath{ p_i }'."\n".
                     'füllt diese Lücke und auch alle zukünftigen Lücken ihrer Potenzen, zusammen also die Lücken \\latexmath{ p_i^k }, mit \\latexmath{ k \in \mathbb{N} \setminus \{ 0 \} }.'."\n".
-                    'Deshalb auch der Name Primpotenzraster, denn, wie wir gleich noch näher erklären,'."\n".
+                    'Deshalb auch der Name Primfaktoranteil-Potenzraster, denn, wie wir gleich noch näher erklären,'."\n".
                     'sind diese Lücken aufgrund des Distributivgesetzes logischerweise bei allen reinen positiven Potenzen einer Primzahl zu finden,'."\n".
                     'oder wenn diese Teil der Primfaktorzerlegung einer anderen natürlichen Zahl sind.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Die Mengen-Primfakultät einer Primzahl definiert das lückenlose Primpotenzraster aller natürlichen Zahlen kleiner als sie selber} \\\\'."\n".
+                  '\\condb{Die Mengen-Primfakultät einer Primzahl definiert das lückenlose Primfaktoranteil-Potenzraster aller natürlichen Zahlen kleiner als sie selber} \\\\'."\n".
                     'Wie wir an den obigen endlichen Beispielen erkennen können und wie gerade erklärt,'."\n".
                     'ist die Mengen-Primfakultät einer Primzahl die letzte, bevor eine neue Primzahl'."\n".
                     'zu diesem Produkt hinzukommt.'."\n".
                     'Die Mengen-Primfakultät \\latexmath{ p_i\overline{\#} } der Menge einer Primzahl \\latexmath{ p_i } ist also die größte Menge mit natürlichen Zahlen \\latexmath{ 0 \leq n < p_i },'."\n".
-                    'die durch ihr Primpotenzraster aller kleineren Primzahlen \\latexmath{ p < p_i } in dieser Menge lückenlos dargestellt wird.'."\n".
-                    'Dieses \\italic{lückenlose Primpotenzraster} wird also auch durch eben diese Mengen-Primfakultät beschrieben.'."\n",
+                    'die durch ihr Primfaktoranteil-Potenzraster aller kleineren Primzahlen \\latexmath{ p < p_i } in dieser Menge lückenlos dargestellt wird.'."\n".
+                    'Dieses \\italic{lückenlose Primfaktoranteil-Potenzraster} wird also auch durch eben diese Mengen-Primfakultät beschrieben.'."\n",
                       '\\latexmath{ p_i\overline{\#} } ist also eine eineindeutige und vollständige Definition der Menge \\latexmath{ p_i }'."\n".
-                    'durch ihr lückenloses Primpotenzraster.'."\n".
+                    'durch ihr lückenloses Primfaktoranteil-Potenzraster.'."\n".
                     'Denn die erste Lücke befindet sich gleich bei \\latexmath{ p_i } selber, der natürlichen Zahl, die die nächst größere als die größte in der Menge ist.'."\n".
-                    'Damit ist die Lückenlosigkeit des lückenlosen Primpotenzrasters wirklich ganz genau auf die Menge \\latexmath{ p_i = \lbrack 0, p_i - 1 \rbrack_\mathbb{N} } begrenzt'."\n".
+                    'Damit ist die Lückenlosigkeit des lückenlosen Primfaktoranteil-Potenzrasters wirklich ganz genau auf die Menge \\latexmath{ p_i = \lbrack 0, p_i - 1 \rbrack_\mathbb{N} } begrenzt'."\n".
                     'und definiert diese Zahlenmenge exakt.'."\n",
                       'Die Mengen-Primfakultät \\latexmath{ p_i\overline{\#} } ist allerdings eine natürliche Zahl, die, wie oben schon gesagt,'."\n".
                     'bei zunehmender Größe von \\latexmath{ p_i } rasant wächst und weit außerhalb der Menge'."\n".
-                    'an natürlichen Zahlen liegt, deren Primpotenzraster sie lückenlos definiert.'."\n".
+                    'an natürlichen Zahlen liegt, deren Primfaktoranteil-Potenzraster sie lückenlos definiert.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Größere Mengen-Primfakultäten von Primzahlen sind selber eine Kombination der Mengen-Primfakultäten aller kleineren Primzahlen} \\\\'."\n".
                     'Die Mengen-Primfakultäten einer Primzahl \\latexmath{ p_i } ist das Produkt aller Primzahlen in ihrer Mengendarstellung.'."\n".
-                    'Dieses Produkt kombiniert damit alle lückenlosen Primpotenzrasters der in ihm enthaltenen Primzahlen.'."\n".
+                    'Dieses Produkt kombiniert damit alle lückenlosen Primfaktoranteil-Potenzrasters der in ihm enthaltenen Primzahlen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Übergang ins Unendliche zu allen endlichen natürlichen Zahlen der Menge \\latexmath{ \omega }} \\\\'."\n".
-                    'Möchte ich nun ein lückenloses Primpotenzraster, dass mir die Menge \\latexmath{ \mathbb{N} = \omega }'."\n".
+                  '\\condb{XXX Übergang ins Unendliche zu allen endlichen natürlichen Zahlen der Menge \\latexmath{ \omega }} \\\\'."\n".
+                    'Möchte ich nun ein lückenloses Primfaktoranteil-Potenzraster, dass mir die Menge \\latexmath{ \mathbb{N} = \omega }'."\n".
                     'aller endlichen natürlichen Zahlen beschreibt, dann muss ich das Produkt aller endlichen Primzahlen bilden,'."\n".
                     'also \\latexmath{ \omega\overline{\#} }.'."\n",
                       'Im Falle von \\latexmath{ \omega } gibt es allerdings nicht mehr zwei Möglichkeiten ein lückenloses'."\n".
                     'Mengen-Intervall von natürlichen Zahlen, von Null an zu beschreiben, weil es keine größte Zahl in \\latexmath{ \mathbb{N} }'."\n".
                     'gibt, die wir dann einen hoch zählen können, um die Anzahl an Elementen in der Menge zu beschreiben.'."\n",
                       'Es bleibt nur die Mengen-Primfakultäten der Menge, die alle endlichen natürlichen Zahlen enthält, eben \\latexmath{ \omega\overline{\#} }.'."\n".
-                    'Und das mit ihm berechnete lückenlose Primpotenzrasters aller endlichen natürlichen Zahlen ist auch das'."\n".
+                    'Und das mit ihm berechnete lückenlose Primfaktoranteil-Potenzrasters aller endlichen natürlichen Zahlen ist auch das'."\n".
                     'Raster des Zählens.'."\n",
-                      'Damit haben wir die Primzahlprodukt-Vermutung bewiesen.'."\n".
+                      'XXX Damit haben wir die Primzahlprodukt-Vermutung bewiesen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{XXX} \\\\'."\n".
@@ -421,9 +421,11 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                      
+                'Definition des Primfaktoranteil-Potenzraster', subline =>
+                  'Finde die nächste Primzahl')),
                   array( 'text', array( text => array(
-                  '\\condb{Das Primfaktoranteil-Potenzraster} \\\\'."\n".
-                  '\\cond{Die nächste reine Primzahl} \\\\'."\n".
                     'Das Primfaktoranteil-Potenzraster stellt die unterscheidbaren Primfaktoranteile einer natürlichen Zahl'."\n".
                     'als Raster oder, in einem ergänzenden Bild, als Schwingungen dar.'."\n",
                       'Beim Primfaktoranteil-Potenzraster geht es darum zu analysieren, wie sich mit den in einer natürlichen Zahl'."\n".
@@ -458,7 +460,7 @@
                       'Dann ist diese Menge also die Menge der Primzahlen in der maximalen Potenz, die \\latexmath{ n } noch ganzzahlig teilt.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Sei \\latexmath{ papr(n) } das Primfaktoranteil-Potenzraster beziehungsweise die unendliche Primpotenzraster-Menge,'."\n".
+                      'Sei \\latexmath{ papr(n) } das Primfaktoranteil-Potenzraster beziehungsweise die unendliche Primfaktoranteil-Potenzraster-Menge,'."\n".
                       'erzeugt aus ihrem natürlichen Parameter \\latexmath{ n },'."\n".
                       'eine Menge die alle Kombinationen der natürlichen Potenzen seiner Primfaktoranteile enthält,'."\n".
                       'wobei die Null und die Eins zu den Primfaktoranteilen dazu genommen werden, um bei Null und Eins keine Lücke zu haben:'."\n".
@@ -893,9 +895,11 @@
                     ''))),
                     ))),
 
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                      
+                'Berechnung der nächsten Primzahl per Mengenlehre', subline =>
+                  'Die Kombination der Mengen-Primfakultät von Primzahlen mit dem lückenlosen Primfaktoranteil-Potenzraster')),
                   array( 'text', array( text => array(
-                  '\\condb{Berechnung der nächsten Primzahl per Mengenlehre} \\\\'."\n".
-                  '\\cond{Besonderheit der Kombination der Mengen-Primfakultät und mit der maximalen lückenlosen Intervall-Menge des Primfaktoranteil-Potenzrasters} \\\\'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -939,9 +943,11 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                      
+                'Das Zählen der natürlichen Zahlen in Primzahlen', subline =>
+                  'Die zählende Konstruktion der Primzahlen und damit der natürlichen Zahlen gleichzeitig')),
                   array( 'text', array( text => array(
-                  '\\condb{Das Zählen der natürlichen Zahlen in Primzahlen} \\\\'."\n".
-                  '\\cond{Die zählende Konstruktion der Primzahlen und damit der natürlichen Zahlen gleichzeitig} \\\\'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -1124,9 +1130,11 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                      
+                'Der Beweis der Primzahlprodukt-Vermutung', subline =>
+                  'Wenn das Zählen der natürlichen Zahlen in Primzahlen ins Unendliche zu \\latexmath{ \omega } übergeht')),
                   array( 'text', array( text => array(
-                  '\\condb{Der Beweis der Primzahlprodukt-Vermutung} \\\\'."\n".
-                  '\\cond{Wenn das Zählen der natürlichen Zahlen in Primzahlen ins Unendliche zu \\latexmath{ \omega } übergeht} \\\\'."\n".
                     'Im Unendlichen bei \\latexmath{ \omega } gibt es nun einen Übergang:'."\n",
                       'Da \\latexmath{ \omega } die Menge der natürlichen Zahlen \\latexmath{ \mathbb{N} } repräsentiert,'."\n".
                     'enthält es natürlich auch alle endlichen Primzahlen.'."\n".
@@ -1350,9 +1358,11 @@
                       'Und sie erweitert die endlichen Primzahlen zu aktual unendlichen Primzahlen.'."\n".
                     'Dies vertieft unser Verständnis der Primzahlen weiter.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                      
+                'Betrachtung des Beweises', subline =>
+                  'Das Verständnis des Übergangs der Mengen-Primfakultät und des Primfaktoranteil-Potenzrasters ins Unendliche zu \\latexmath{ \omega }')),
                   array( 'text', array( text => array(
-                  '\\condb{Betrachtung des Beweises} \\\\'."\n".
-                  '\\cond{Das Verständnis des Übergangs der Mengen-Primfakultät und des Primfaktoranteil-Potenzrasters ins Unendliche zu \\latexmath{ \omega }} \\\\'."\n".
                     'Zunächst können wir feststellen, dass es uns nur über die Erzeugung jeder endlichen Primzahl'."\n".
                     'und mit der anschließenden Erweiterung der dazu genutzten Mengen-Primfakultät, durch ihre Multiplikation mit dieser,'."\n".
                     'gelungen ist, die natürlichen Zahlen durch eine vollständige Induktion mittels des dann vollständigen Produkts aller'."\n".
@@ -1443,11 +1453,11 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{XXX} \\\\'."\n".
-                    'Umfasst das durch \\latexmath{ p_i\overline{\#} } definierte Menge bzw. das lückenlose Primpotenzraster'."\n".
+                    'Umfasst das durch \\latexmath{ p_i\overline{\#} } definierte Menge bzw. das lückenlose Primfaktoranteil-Potenzraster'."\n".
                     'auch die Null und die Eins.'."\n",
                       'XXX'."\n",
                       'Haben wir eine Potenz einer Primzahl \\latexmath{ p_i } größer als Eins, wie \\latexmath{ p_i^k }, mit \\latexmath{ k > 1 },'."\n".
-                    'dann ist das Primpotenzraster nicht mehr sicher lückenlos (niemals?), wie bei der Neun: \\latexmath{ 3^2 = 9 }.'."\n".
+                    'dann ist das Primfaktoranteil-Potenzraster nicht mehr sicher lückenlos (niemals?), wie bei der Neun: \\latexmath{ 3^2 = 9 }.'."\n".
                     'Denn die \\latexmath{ 5 } und \\latexmath{ 7 } bleiben Lücken.'."\n",
                       'XXX'."\n",
                       'XXX'."\n".
@@ -1512,17 +1522,17 @@
                     'damit nicht von der Potenz ihrer Primzahlen abhängt, reicht ein Produkt der einfachen Potenz'."\n".
                     'ihrer Primfaktorzerlegung aus, um ihr Raster zu beschreiben.'."\n".
                     'Das Raster einer natürlichen Zahl umfasst also alle Potenzen ihrer Primfaktoren.'."\n".
-                    'Daher können wir das Raster auch \\italic{Primpotenzraster} einer natürlichen Zahl nennen.'."\n",
+                    'Daher können wir das Raster auch \\italic{Primfaktoranteil-Potenzraster} einer natürlichen Zahl nennen.'."\n",
                       'Die Mengen-Primfakultät einer Menge der ersten \\latexmath{ n } natürlichen Zahlen,'."\n".
-                    'von der Null an, liefert also das \\italic{gemeinsame Primpotenzraster} aller Zahlen dieser Menge.'."\n".
+                    'von der Null an, liefert also das \\italic{gemeinsame Primfaktoranteil-Potenzraster} aller Zahlen dieser Menge.'."\n".
                     'Bei endlichen natürlichen Zahlen, als Mengen ihrer Vorgänger gesehen, fällt die Mengen-Primfakultät'."\n".
                     'nur bei der Eins mit der gleichen Zahl zusammen, siehe oben, denn: \\latexmath{ 1\overline{\#} = 1 }'."\n",
                       'Bei allen \\latexmath{ n \in \{ 2, 3 \} } ist \\latexmath{ n\overline{\#} < n }.'."\n",
                       'Und bei \\latexmath{ n = 0 } und allen \\latexmath{ n > 3 } ist \\latexmath{ n\overline{\#} > n }.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Das gemeinsame Primpotenzraster aller endlichen natürlichen Zahlen} \\\\'."\n".
-                    'Wie wir oben schon beschrieben haben, erhalten wir das gemeinsame Primpotenzraster aller endlichen natürlichen Zahlen'."\n".
+                  '\\condb{Das gemeinsame Primfaktoranteil-Potenzraster aller endlichen natürlichen Zahlen} \\\\'."\n".
+                    'Wie wir oben schon beschrieben haben, erhalten wir das gemeinsame Primfaktoranteil-Potenzraster aller endlichen natürlichen Zahlen'."\n".
                     'durch:'."\n".
                     ''))),
                   array( 'equations',
@@ -1532,7 +1542,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Es ist also das Produkt aller endlichen Primzahlen.'."\n",
-                      'Weil das gemeinsame Primpotenzraster aller endlichen natürlichen Zahlen aber auch dem'."\n".
+                      'Weil das gemeinsame Primfaktoranteil-Potenzraster aller endlichen natürlichen Zahlen aber auch dem'."\n".
                     'Basisraster der Eins, also dem Zählen, der vollständigen Induktion und damit allen natürlichen Zahlen gleich ist,'."\n".
                     'ist auch die Primzahlprodukt-Vermutung wahr, also die Gleichheit des Produkts aller endlichen Primzahlen'."\n".
                     'mit der Anzahl der Elemente in der Menge der natürlichen Zahlen:'."\n".
