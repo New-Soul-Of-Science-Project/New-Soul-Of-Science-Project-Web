@@ -277,7 +277,7 @@
                       'Nach Formel \\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-n-gleich-Menge-Null-bis-n-minus-Eins} finden wir dort für die Anzahl \\latexmath{ n } der Elemente in einer endlichen Menge aufeinanderfolgender natürlicher Zahlen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  :=  *\{ 0, 1, 2, \cdots , n - 1 *\}  }',
                                           label_text => '\\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-n-gleich-Menge-Null-bis-n-minus-Eins}', label_incr => false),
                     ))),
@@ -307,20 +307,24 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Das Primfaktoranteil-Potenzraster einer Menge aufeinanderfolgender natürlichen Zahlen} \\\\'."\n".
-                    'Weil das Primfaktor-Spektrum oder -Raster jeder natürlichen Zahl unverwechselbar sein soll'."\n".
+                    'Weil das Primfaktor-Spektrum oder -Raster jeder natürlichen Zahl unverwechselbar sein muss,'."\n".
+                    'denn es soll ja eine andere Darstellung dieser Zahl sein,'."\n".
                     'muss es auf den Primzahltürmen des darzustellenden Wertes beruhen und nicht nur auf seinen einzelnen Primfaktoren.'."\n".
-                    'Daher soll es auch Primturm-Potenzraster'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                    'Wie können wir alternativ die natürlichen Zahlen in solchen Mengen beschreiben?'."\n",
-                      'Das hier entwickelte und dann definierte Primfaktoranteil-Potenzraster übernimmt die Idee des Beweises des ›Satz des Euklid‹ und'."\n".
-                    'bietet eine weitere Möglichkeit, mit Hilfe der Primfakultät, die natürlichen Zahlen dieser Mengen zu beschreiben.'."\n".
-                    'Dies geht über ein tieferes Verständnis, wie der Beweis funktioniert, und über eine zu diesem Zweck etwas abgewandelte Primfakultät.'."\n".
+                    'Denn die Primzahlen sind in der Primfaktorzerlegung vieler Zahlen gleich,'."\n".
+                    'aber die Primzahltürme, also inklusive ihrer Potenzen, eben nicht.'."\n".
+                    'Sie sind in ihrer Kombination für jede natürliche Zahl einzigartig.'."\n".
+                    'Daher soll diese Menge das \\italic{Primturm-Potenzraster} einer natürlichen Zahl heißen.'."\n",
+                      'Zum unendlich umfangreichen Raster wird es, weil es alle möglichen Kombinationen aller endlichen Potenzen der Primzahltürme'."\n".
+                    'der natürlichen Zahl, der es entspricht, beinhalten soll.'."\n".
+                    'Dies konstruieren wir so, weil wir nur auf diese Weise einen Bezug dazu herstellen können, wie die Primzahlen letztendlich das Raster'."\n".
+                    'aller natürlichen Zahlen erzeugen.'."\n",
+                      'Das hier entwickelte und danach definierte Primturm-Potenzraster ist vom Ansatz des Beweises des ›Satz des Euklid‹ inspiriert und'."\n".
+                    'bietet dann eine weitere Möglichkeit, mit Hilfe der Primfakultät, die natürlichen Zahlen zu beschreiben.'."\n".
+                    'Ergänzen wir es unter anderem durch die Primfakultät, dann gelingt es uns schließlich, die endlichen Primzahlen zu erzeugen'."\n".
+                    'und mit ihnen die natürlichen Zahlen erneut zu konstruieren.'."\n".
+                    'Dies führt uns dann auch zum Beweis unserer Vermutung.'."\n",
+                      'Dies alles geht über ein tieferes Verständnis, wie der Beweis des ›Satz des Euklid‹ funktioniert,'."\n".
+                    'und über eine zu diesem Zweck etwas abgewandelte Primfakultät, mit der wir nun beginnen.'."\n".
                     ''))),
                 //  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
                       
@@ -348,7 +352,7 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Dann ergibt sich für die folgenden Zahlen Beispiele:'."\n".
+                      'Dann ergibt sich für die folgenden Zahlenbeispiele, wenn wir sie dementsprechend als Mengen betrachten:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -367,7 +371,7 @@
                       array( display => 'on',  latex => '{  12\overline{\#}  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11  =  2310  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Die vorm Operator stehende Zahl ist nicht Teil des Produkts, da die Menge,'."\n".
+                      'Die vorm Operator stehende Zahl ist niemals Teil des Produkts, da die Menge,'."\n".
                       'die eine Ordinalzahl repräsentiert, nicht selber in der Menge enthalten ist.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -407,7 +411,7 @@
                     'Das muss so sein, denn in dem Moment, wo \\latexmath{ n = p_i + 1 } ist, mit \\latexmath{ p_i \in \mathbb{P} }, kommt zum Produkt'."\n".
                     'die Primzahl \\latexmath{ p_i } hinzu, die nicht Teil der Primfaktorzerlegung einer der kleineren'."\n".
                     'Zahlen \\latexmath{ n < p_i } sein kann.'."\n".
-                    'Denn diese haben als Primfaktoren nur kleinere Primzahlen \\term{ p_{i–l} }, mit \\latexmath{ 1 \leq l < i },'."\n".
+                    'Denn diese haben als Primfaktoren nur kleinere Primzahlen \\term{ p_{i–d} }, mit \\latexmath{ 1 \leq d < i },'."\n".
                     'oder sind selber eine Primzahl.'."\n",
                       'Was passiert nun beim Übergang, wenn eine neue Primzahl in die Menge hinzukommt?'."\n",
                       'XXX Wir können sagen, das \\italic{Primfaktoranteil-Potenzraster} wies eine Lücke auf und die neue Primzahl \\latexmath{ p_i }'."\n".
