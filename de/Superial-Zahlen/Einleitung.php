@@ -287,7 +287,7 @@
                     'Diese werden wir im folgenden Beispiel besser praktisch kennenlernen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{\\anchor{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen:Konkretes-Integral}{Konkretes Integral}} \\\\'."\n".
+                  '\\condb{\\anchor{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen:Konkretes-Integral}{}Konkretes Integral} \\\\'."\n".
                     'Nun ein Beispiel, um anschaulich zu verstehen, was vor sich geht:'."\n".
                     ''))),
 

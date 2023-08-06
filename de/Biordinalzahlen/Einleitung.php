@@ -805,7 +805,7 @@
                     'Dann entsteht der Eindruck einer Spiegelung.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{\\anchor{OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen}{Anzahl der endlichen ganzen Zahlen}} \\\\'."\n".
+                  '\\condb{\\anchor{OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen}{}Anzahl der endlichen ganzen Zahlen} \\\\'."\n".
                     'So kommen wir zu Aussagen über die Anzahl der ganzen endlichen Zahlen:'."\n".
                     ''))),
                       
