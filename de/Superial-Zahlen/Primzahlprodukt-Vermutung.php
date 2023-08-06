@@ -16,26 +16,31 @@
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Warum könnte die Primzahlprodukt-Vermutung stimmen?}',
                     '• Die Primzahlen werden unter den sehr großen natürlichen Zahlen extrem selten.',
-                    '• Es klafft eine riesige Lücke zwischen den endlichen natürlichen Zahlen und \\term{ω}, siehe \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}. Ist diese Lücke wirklich so groß? Meine Analyse sagt: \\term{ω - 1} zahlen sind vom Typ \\term{ω - n} in den Biordinalzahlen. Stimmt allerdings die Primzahlprodukt-Vermutung, dann liegen auch alle \\term{p⋅ω - n}, mit \\term{p} ist ein Primzahlprodukt einfacher Potenz aus endlich vielen Primzahlen. Ob es dann eine Einschränkung für die Größe von \\term{n} gibt, ist mir unklar.',
+                    '• Es klafft eine riesige Lücke zwischen den endlichen natürlichen Zahlen und \\term{ω}, siehe \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}. Ist diese Lücke wirklich so groß?',
+                    '– Meine Analyse sagt: Eine Anzahl von \\term{ω} Zahlen sind vom Typ \\term{ω - n} in den Biordinalzahlen.',
+                    '– Stimmt allerdings die Primzahlprodukt-Vermutung, dann liegen auch alle \\term{p^{-1}⋅ω ± n}, mit \\term{p} ist ein Primzahlprodukt einfacher Potenz aus endlich vielen Primzahlen.',
+                    '⋅ Ob es dann eine Einschränkung für die Größe von \\term{n} gibt, ist mir nicht ganz unklar, aber unwahrscheinlich. Wenn nicht, sind es je \\term{p^{-1}} dann \\term{2⋅ω} Zahlen.',
                     '\\bold{Interessante Erkenntnisse zu Primzahlen}',
                     '• Der \\jump[https://de.wikipedia.org/w/index.php?title=Stern-Brocot-Folge&oldid=224277569]{Calkin-Wilf-Baum}{Calkin-Wilf-Baum} muss etwas mit der Primzahlstruktur zu tun haben, weil alle seine Brüche teilerfremde Zähler und Nenner haben.',
                     '• Mit dem \\jump[https://de.wikipedia.org/w/index.php?title=Satz_von_Wilson&oldid=229853875]{}{Satz von Wilson} können wir herausfinden, ob eine Zahl eine Primzahl ist, wenn ich es richtig verstehe, siehe Primzahl-Produkt-Definition von \\term{s} in meinem Ordner „4. Variante“, Dokument „Sup-Zahl (52).pdf“, S. 5.',
+                    '\\bold{Verbesserungen der Seite}',
+                    '• Den Ausdruck ›Erzeugungskombinatorik‹ auch im oder nach dem Beweis wieder aufgreifen.',
                     ))),
                       
                   array( 'text', array( text => array(
                     'Auf die Primzahlprodukt-Vermutung bin ich durch das Herumspielen mit der'."\n".
                     '\\jump{OM:SupNum:Eigenschaften:StrukturVonS}{Struktur der Superial-Zahlen} gestoßen.'."\n",
                       'Schauen wir uns das Zählen der \\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} an:'."\n".
-                    'Beim Zählen von natürlichen Superial-Zahlen werden endliche rationale Zahlen als unendliche Koeffizienten'."\n".
-                    'mitgezählt, wenn die endlichen ganzen Zahlen als endliche Koeffizienten immer wieder durchlaufen.'."\n".
+                    'Beim Zählen von natürlichen Superial-Zahlen werden endliche rationale Zahlen als Koeffizienten des Unendlichen \\latexmath{ q_k \cdot s^k + \cdots }'."\n".
+                    'mitgezählt, wenn die endlichen ganzen Zahlen \\latexmath{ z } als endlicher Summand \\latexmath{ \cdots + z \cdot s^0 } immer wieder durchlaufen.'."\n".
                     'Betrachten wir im Folgenden mit Hilfe von \\latexmath{ s } das Verhältnis der Anzahl der endlichen rationalen Zahlen'."\n".
-                    'und der endlichen ganzen Zahlen, dann scheint die Anzahl der endlichen natürlichen Zahlen dem Produkt'."\n".
+                    'und der endlichen ganzen Zahlen, dann scheint intuitiv die Anzahl der endlichen natürlichen Zahlen dem Produkt'."\n".
                     'aller endlichen Primzahlen gleich zu sein.'."\n",
                       'Den Ansatz zu dieser Vermutung finden wir im Abschnitt \\italic{\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm}},'."\n".
                     'wo wir uns schon mit der Struktur von \\latexmath{ s } beschäftigt haben.'."\n".
                     'Dabei fanden wir, dass die Anzahl der rationalen Zahlen \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} }, von der Null bis ausschließlich der Eins, in Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}'."\n".
                     'eine ganze Zahl sein muss.'."\n".
-                    'Das können wir mit Hilfe der \\jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{Menge \\latexmath{ \mathbb{N}_\infty }} feststellen:'."\n".
+                    'Das können wir mit Hilfe der \\jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{Menge \\latexmath{ \mathbb{N}_\infty }} zum Ausdruck bringen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -63,10 +68,11 @@
                   array( 'text', array( text => array(
                     'Und wir wissen auch, dass \\latexmath{ s } unendlich viel größer als \\latexmath{ ω } ist,'."\n".
                     'denn nach unseren Erkenntnissen aus dem Kapitel \\italic{\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}} steht'."\n".
-                    '\\latexmath{ s } für die Anzahl der rationalen Zahlen und \\latexmath{ ω } für die Anzahl der natürlichen Zahlen.'."\n".
-                    'Ich vergleiche hier aber nicht die Mächtigkeit\\footnote{\\const{SupNum_g_footnote_text_Maechtigkeit}} der Menge der rationalen Zahlen und die Mächtigkeit der natürlichen Zahlen,'."\n".
+                    '\\latexmath{ s } für die Anzahl der rationalen Zahlen und \\latexmath{ ω } für die Anzahl der natürlichen Zahlen.'."\n",
+                      'Ich vergleiche hierbei aber nicht die Mächtigkeit\\footnote{\\const{SupNum_g_footnote_text_Maechtigkeit}}'."\n".
+                    'der Menge der rationalen Zahlen und die Mächtigkeit der natürlichen Zahlen,'."\n".
                     'wobei es darum geht, ob sich zwei Mengen bidirektional aufeinander abbilden lassen.'."\n".
-                    'Sondern ich meine die kombinatorische Erzeugung von Elementen einer unendlich großen Menge'."\n".
+                    'Sondern ich meine die kombinatorische Erzeugung von Elementen der unendlich großen Menge der rationalen Zahlen'."\n".
                     'im Verhältnis zur vollständigen Induktion bei der Erzeugung der Menge der natürlichen Zahlen.'."\n",
                       'Die unendlich viel größere Erzeugungskombinatorik drücken wir mit dem Symbol \\latexmath{ \overset{\infty}{\ggg} } aus:'."\n".
                     ''))),
@@ -89,29 +95,45 @@
                     'muss \\latexmath{ 2 \cdot \omega }, und somit auch \\latexmath{ \omega }, ein Teil des Primzahl-Flächenprodukts sein.'."\n".
                     'Und dieses Teilprodukt muss einen unendlich großen Wert haben.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                      
+                '\\latexmath{ \omega } kann nicht einer der unendlich großen Primzahltürme des Primzahl-Flächenprodukts sein', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Unser \\latexmath{ \omega } kann nicht einer der Primzahltürme sein} \\\\'."\n".
                     'Nun können wir als erstes überlegen, ob es sich um einen der Primzahltürme handeln könnte:'."\n".
-                    'Die unendlich große Primzahl-Potenz mit der kleinsten Basis in \\latexmath{ s } ist \\latexmath{ 2^ω }.'."\n".
-                    'Wenn wir berücksichtigen, dass ja durch \\latexmath{ 2 \cdot \omega } geteilt wird und wir den Faktor \\latexmath{ 2 } schon mal aus'."\n".
-                    'dem Primzahlturm entfernen, ergibt er sich immer noch zu \\term{2^{ω-1}}, wobei \\term{ω-1} durch die'."\n".
-                    '\\jump{OM:BiOrd:Home}{Biordinalzahlen} definiert ist.'."\n",
-                      'Nun ist es offensichtlich, dass \\term{2^{ω-1}} ungleich und sogar sehr viel größer als \\term{ω} ist:'."\n".
+                    'Die unendlich große Primzahl-Potenz mit der kleinsten Basis in \\latexmath{ s } ist \\latexmath{ 2^\omega }.'."\n".
+                    'Wenn wir berücksichtigen, dass ja oben \\latexmath{ s } durch \\latexmath{ 2 \cdot \omega } geteilt wird und wir den Faktor \\latexmath{ 2 } schon mal aus'."\n".
+                    'der unendlichen Potenz von \\latexmath{ 2 } entfernen, ergibt sich immer noch \\term{2^{ω-1}}, wobei \\latexmath{ \omega - 1 } in den'."\n".
+                    '\\jump{OM:BiOrd:Home}{Biordinalzahlen} definiert ist.'."\n".
                     ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Nun ist es offensichtlich, dass \\term{2^{ω-1}} ungleich und sogar sehr viel größer als \\latexmath{ \omega } ist: \\\\'."\n".
+                      '\\color{*Bearb}{(Hier auch \\latexmath{ \overset{\infty}{\ggg} } nutzen?)}'."\n".
+                      ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  2^{ω - 1}  \neq  \omega  }'),
                       array( display => 'on',  latex => '{  2^{ω - 1}  \;\;\;\ggg\;\;\;  \omega  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *)  *[  p^{ω}  \;\;\;\ggg\;\;\;  \omega  *]  }'),
                     ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Dies gilt dann auch für alle Potenzen dieser Größenordnung endlicher Primzahlen.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
                   array( 'text', array( text => array(
-                    'Somit kommt kein Primzahlturm \\latexmath{ p^ω }, also eine Spalte des Primzahl-Flächenprodukts,'."\n".
+                    'Somit kommt keine Primzahl der Potenz \\latexmath{ p^ω }, also eine Spalte des Primzahl-Flächenprodukts,'."\n".
                     'als unendlich großer Primfaktoranteil von \\latexmath{ s } für \\latexmath{ \omega } in Frage.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen', text =>
+                      
+                'Wir vermuten, \\latexmath{ \omega } ist die vollständige Primfakultät aller endlichen Primzahlen', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{\\anchor{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen}{Wir vermuten, dass \\latexmath{ \omega } die vollständige Primfakultät aller endlichen Primzahlen ist}} \\\\'."\n".
                     'Eine Möglichkeit, die noch bleibt, ist, dass \\latexmath{ \omega } dem unendlichen Produkt aller'."\n".
-                    'endlichen Primzahlen gleich ist, also einer Zeile des Primzahl-Flächenprodukts:'."\n".
+                    'endlichen Primzahlen gleich ist, also eine Zeile des Primzahl-Flächenprodukts:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -121,11 +143,16 @@
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega', label_text => '\\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Stimmt unsere Vermutung, dann ist \\latexmath{ s } das selbe wir \\latexmath{ \omega } hoch \\latexmath{ \omega }.'."\n",
-                      'Woher können wir aber wissen, dass alle endlichen Primzahlen genau ein Mal im Produkt vorkommen müssen?'."\n",
-                      'Unsere Vermutung können wir plausibel machen und damit Beweisen, wenn wir erkennen, dass sowohl das vollständige Zählen'."\n".
-                    'als auch das vollständige Produkt aller endliche Primzahlen das Raster der endlichen natürlichen Zahlen beschreibt.'."\n".
-                    'Wir beginnen damit, beide Möglichkeiten zu beleuchten,'."\n".
+                    'Stimmt unsere Vermutung, dann ist \\latexmath{ s } das Gleiche wie \\latexmath{ \omega } hoch \\latexmath{ \omega }.'."\n",
+                      'An dieser Stelle sind wird nicht ganz sicher, ob wirklich alle endlichen Primzahlen in \\latexmath{ \omega } stecken oder'."\n".
+                    'auch welche endlich oft mehrfach vorkommen!'."\n".
+                    'Auch, wenn dies der einfachste Fall scheint, weil wir keinen Hinweis haben, warum eine der Primzahlen fehlen oder mehrfach sein sollte.'."\n".
+                    'Außer, dass vielleicht die \\latexmath{ 2 } an \\latexmath{ \omega } fehlen könnte, weil sie in \\latexmath{ 2 \cdot \omega } wieder separat hinzu kommt.'."\n".
+                    'Die Eigenschaft von \\latexmath{ \omega } allerdings, mit gutem Recht, soweit wir wissen, genau so viele gerade wie ungerade Zahlen zu enthalten, steht dem gegenüber.'."\n",
+                      'Wie können wir nun das Wissen schöpfen, dass alle endlichen Primzahlen genau ein Mal im Produkt vorkommen müssen?'."\n",
+                      'Unsere Vermutung können wir plausibel machen, und schließlich auch beweisen, wenn wir erkennen, dass sowohl das vollständige Zählen'."\n".
+                    'als auch das vollständige Produkt aller endlichen Primzahlen das Raster der endlichen natürlichen Zahlen beschreibt.'."\n".
+                    'Wir beginnen damit, zwei Möglichkeiten zu beleuchten,'."\n".
                     'die Unendlichkeit der endlichen natürlichen Zahlen zu zeigen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
@@ -142,7 +169,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Beweis durch Zählen} \\\\'."\n".
-                    'Ein Mal können wir die Unendlichkeit der endlichen natürlichen Zahlen durch das Zählen beweisen, mittels der vollständigen Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}},'."\n".
+                    'Einmal können wir die Unendlichkeit der endlichen natürlichen Zahlen durch das Zählen beweisen, mittels der vollständigen Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}},'."\n".
                     'auf Basis des Zählatoms Eins, ausgehend von der Null.'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -200,7 +227,7 @@
                         'Bilde die Primfakultät einer bekannten Primzahl, das Produkt aller Primzahlen kleiner und einschließlich dieser Primzahl: \\latexmath{ p\# }',
                         'Addiere Eins dazu oder ziehe Eins ab: \\latexmath{ p\# \pm 1 }',
                         '\\latexmath{ p\# \pm 1} ist nicht durch eine der Primzahlen in \\latexmath{ p\# } ganzzahlig teilbar.',
-                        '\\latexmath{ p\# \pm 1} kann daher entweder nur selber eine Primzahl sein, die dann größer als \latexmath{ p } ist, oder ihr Primzahlprodukt enthält ausschließlich Primzahlen – mindestens zwei Stück – die nicht in \latexmath{ p\# } enthalten sind und damit größer als \latexmath{ p } sein müssen. ',
+                        '\\latexmath{ p\# \pm 1} kann daher entweder nur selber eine Primzahl sein, die dann größer als \latexmath{ p } ist, oder ihr Primzahlprodukt enthält ausschließlich Primzahlen – mindestens zwei Stück –, die nicht in \latexmath{ p\# } enthalten sind und damit größer als \latexmath{ p } sein müssen. ',
                         'Alle Primzahlen, durch die \\latexmath{ p\# \pm 1} teilbar ist, sind damit größer als \\latexmath{ p }.',
                         'Es gibt also immer eine Primzahl, die größer ist als jede gegebene Primzahl \\latexmath{ p }, womit die Menge der endlichen Primzahlen nicht endet.',
                     ))),
@@ -255,7 +282,10 @@
                                           label_text => '\\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-n-gleich-Menge-Null-bis-n-minus-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Anzahl der Elemente einer Menge wird hier mit dem nächst größeren Element \\latexmath{ n } als das größte Element der Menge \\latexmath{ n - 1 } gleichgesetzt.'."\n",
+                    'Jede natürliche Zahl \\latexmath{ n } steht also für eine lückenlose Menge, von der Null an.'."\n",
+                      'Die Anzahl der Elemente einer Menge scheint hier mit dem nächst größeren Element \\latexmath{ n } als das größte Element der Menge \\latexmath{ n - 1 } gleichgesetzt.'."\n".
+                    'Bei näherer Betrachtung müssen wir aber feststellen, dass diese Perspektive nicht weit trägt.'."\n".
+                    'Denn schon bei der Null, der leeren Menge, funktioniert sie nicht, weil es kein größtes Element in der leeren Menge gibt.'."\n",
                       'Die aktual unendliche Anzahl aller Elemente der Menge \\latexmath{ \mathbb{N} } der endlichen natürlichen Zahlen wird als die'."\n".
                     'Anzahl der Schritte einer vollständigen Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} verstand'."\n".
                     'und wie folgt als \\latexmath{ \omega } definiert:'."\n".
@@ -268,15 +298,28 @@
                   array( 'text', array( text => array(
                     'In der Menge \\latexmath{ \mathbb{N} } ist nun keine größte Zahl mehr definiert und \\latexmath{ \omega }'."\n".
                     'ist somit auch nicht die größte Zahl in \\latexmath{ \mathbb{N} } plus Eins.'."\n".
-                    'Sogar finden wir in den Biordinalzahlen im Abschnitt \\italic{\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}},'."\n".
+                    'Sogar finden wir in den Biordinalzahlen im Abschnitt \\italic{›\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}‹},'."\n".
                     'dass sich noch ganze Zahlen zwischen jeder natürlichen Zahl in \\latexmath{ \mathbb{N} } und \\latexmath{ \omega } definieren lassen.'."\n",
-                      'Wie können wir dies Interpretieren und passend betrachten?'."\n".
+                      'Wie können wir dies Interpretieren und aus welcher Perspektive passend betrachten?'."\n",
+                      'Ich denke, es sollte noch eine weitere Art und Weise geben, Werte, die eine Anzahl natürlicher Zahlen'."\n".
+                    'von der Null an angeben, mit einer Menge zu beschreiben.'."\n".
+                    'Und zwar mit einer Menge von Zahlen, die das Primfaktor-Spektrum oder Primfaktor-Raster des Werts widerspiegeln.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Das Primfaktoranteil-Potenzraster einer Menge aufeinanderfolgender natürlichen Zahlen} \\\\'."\n".
+                    'Weil das Primfaktor-Spektrum oder -Raster jeder natürlichen Zahl unverwechselbar sein soll'."\n".
+                    'muss es auf den Primzahltürmen des darzustellenden Wertes beruhen und nicht nur auf seinen einzelnen Primfaktoren.'."\n".
+                    'Daher soll es auch Primturm-Potenzraster'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
                     'Wie können wir alternativ die natürlichen Zahlen in solchen Mengen beschreiben?'."\n",
-                      'Das Primfaktoranteil-Potenzraster übernimmt die Idee des Beweises des ›Satz des Euklid‹ mit Hilfe der Primfakultät und'."\n".
-                    'bietet eine weitere Möglichkeit die natürlichen Zahlen dieser Mengen zu beschreiben.'."\n".
+                      'Das hier entwickelte und dann definierte Primfaktoranteil-Potenzraster übernimmt die Idee des Beweises des ›Satz des Euklid‹ und'."\n".
+                    'bietet eine weitere Möglichkeit, mit Hilfe der Primfakultät, die natürlichen Zahlen dieser Mengen zu beschreiben.'."\n".
                     'Dies geht über ein tieferes Verständnis, wie der Beweis funktioniert, und über eine zu diesem Zweck etwas abgewandelte Primfakultät.'."\n".
                     ''))),
                 //  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
@@ -287,7 +330,7 @@
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Sei der \italic{Mengen-Primorial-Operator} \\latexmath{ \mathbb{T}\overline{\#} }, auch \italic{Mengen-Primfakultät} genannt,'."\n".
-                      'der Operator der alle Primzahlen in der Menge \\latexmath{ \mathbb{T} } in einem Produkt multipliziert:'."\n".
+                      'der Operator, der alle Primzahlen in der Menge \\latexmath{ \mathbb{T} } in einem Produkt multipliziert:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -300,7 +343,7 @@
 
                   array( 'text', array( text => array(
                     'Wie in den Ordinalzahlen beziehungsweise Biordinalzahlen definiert, können endliche und unendliche Zahlen einer Repräsentation als Mengen entsprechen.'."\n".
-                    'In beiden Theorien wird diese Entsprechung als Gleichheit definiert.'."\n".
+                    'In beiden Theorien wird diese Entsprechung als Gleichheit definiert, wie oben beispielhaft gezeigt.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -358,7 +401,7 @@
                     'Was sind die Bedingungen, unter denen das fragliche Gleichheitszeichen erfüllt ist?'."\n".
                     'Wie können wir sie formulieren?'."\n",
                       'In den endlichen Beispielen handelt es sich ja um Mengen \\latexmath{ \mathbb{T} = n }, mit \\latexmath{ n \in \mathbb{N} },'."\n".
-                    'endlicher natürlicher Zahlen von der Null bis zu einer endlichen größten \\latexmath{ n - 1 }.'."\n",
+                    'deren Elemente endliche natürliche Zahlen sind, von der Null bis zu einer endlichen größten \\latexmath{ n - 1 }.'."\n",
                       'Wir stellen fest, dass \\latexmath{ n\overline{\#} } uns ein Produkt'."\n".
                     'aller Primzahlen liefert, die die Primfaktoren aller Elemente der Menge \\latexmath{ n } sind.'."\n".
                     'Das muss so sein, denn in dem Moment, wo \\latexmath{ n = p_i + 1 } ist, mit \\latexmath{ p_i \in \mathbb{P} }, kommt zum Produkt'."\n".
@@ -367,8 +410,8 @@
                     'Denn diese haben als Primfaktoren nur kleinere Primzahlen \\term{ p_{i–l} }, mit \\latexmath{ 1 \leq l < i },'."\n".
                     'oder sind selber eine Primzahl.'."\n",
                       'Was passiert nun beim Übergang, wenn eine neue Primzahl in die Menge hinzukommt?'."\n",
-                      'Wir können sagen, das \\italic{Primfaktoranteil-Potenzraster} weist nun eine Lücke auf und die neue Primzahl \\latexmath{ p_i }'."\n".
-                    'füllt diese Lücke und auch alle zukünftigen Lücken ihrer Potenzen, zusammen also die Lücken \\latexmath{ p_i^k }, mit \\latexmath{ k \in \mathbb{N} \setminus \{ 0 \} }.'."\n".
+                      'XXX Wir können sagen, das \\italic{Primfaktoranteil-Potenzraster} wies eine Lücke auf und die neue Primzahl \\latexmath{ p_i }'."\n".
+                    'füllt diese Lücke nun und auch alle zukünftigen Lücken ihrer Potenzen, zusammen also die Lücken \\latexmath{ p_i^k }, mit \\latexmath{ k \in \mathbb{N} \setminus \{ 0 \} }.'."\n".
                     'Deshalb auch der Name Primfaktoranteil-Potenzraster, denn, wie wir gleich noch näher erklären,'."\n".
                     'sind diese Lücken aufgrund des Distributivgesetzes logischerweise bei allen reinen positiven Potenzen einer Primzahl zu finden,'."\n".
                     'oder wenn diese Teil der Primfaktorzerlegung einer anderen natürlichen Zahl sind.'."\n".
@@ -454,7 +497,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  pa(n)  :=  *\{  x  *|*  *( \forall p \in \mathbb{P} *) *( \forall k \in \mathbb{N} *) \\\ \qquad\qquad\qquad\quad\; *( \frac{ n }{ p^{k} } \in \mathbb{N}_{\infty} \land \frac{ n }{ p^{k + 1} } \notin \mathbb{N}_{\infty} *) *[  x = p^{k}  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  pa(n)  :=  *\{  x  *|*  *( \forall p \in \mathbb{P} *) *( \forall k \in \mathbb{N} *) \\\ \qquad\qquad\qquad\quad\; *( \frac{ n }{ p^{k} } \in \mathbb{N}_{\infty} \land \frac{ n }{ p^{k + 1} } \notin \mathbb{N}_{\infty} *) \\\ \qquad\qquad\qquad\quad\;\; *[  x = p^{k}  *]  *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Dann ist diese Menge also die Menge der Primzahlen in der maximalen Potenz, die \\latexmath{ n } noch ganzzahlig teilt.'."\n".
@@ -689,7 +732,7 @@
                   array( 'text', array( text => array(
                     'Die Mengen-Primfakultät \\latexmath{ n\overline{\#} } beschreibt nun ein Primfaktoranteil-Potenzraster,'."\n".
                     'in dem alle Primfaktoranteile reine Primzahlen sind und auch keine Primzahlen bis zu einer größten fehlen.'."\n",
-                      'Im Besonderen ist ein jedes derartiges Primfaktoranteil-Potenzraster \\latexmath{ papr*( n\overline{\#} *) } eine Beschreibung der nächsten fehlenden reinen Primzahl, die größer als'."\n".
+                      'Im Besonderen ist ein jedes derartiges Primfaktoranteil-Potenzraster \\latexmath{ papr\!*( n\overline{\#} *) } eine Beschreibung der nächsten fehlenden reinen Primzahl, die größer als'."\n".
                     'oder gleich \\latexmath{ n } ist und auf seiner ersten Rasterlücke sitzt.'."\n".
                     'Diese Primzahl erhalten wir dann durch \\latexmath{ lpapr\!*( n\overline{\#} *) }.'."\n",
                       'XXX XXX Die Zahl beziehungsweise Menge \\latexmath{ lpapr\!*( \omega\overline{\#} *) } ist die Menge aller'."\n".
@@ -1134,6 +1177,12 @@
                       
                 'Der Beweis der Primzahlprodukt-Vermutung', subline =>
                   'Wenn das Zählen der natürlichen Zahlen in Primzahlen ins Unendliche zu \\latexmath{ \omega } übergeht')),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    '• Den Ausdruck ›Erzeugungskombinatorik‹ auch im oder nach dem Beweis wieder aufgreifen:',
+                    '– Dieser steht im Zusammenhang mit der Beschreibung der endlichen und aktual unendlichen natürlichen Zahlen durch das Primfaktoranteil-Potenzraster.',
+                    ))),
+
                   array( 'text', array( text => array(
                     'Im Unendlichen bei \\latexmath{ \omega } gibt es nun einen Übergang:'."\n",
                       'Da \\latexmath{ \omega } die Menge der natürlichen Zahlen \\latexmath{ \mathbb{N} } repräsentiert,'."\n".
