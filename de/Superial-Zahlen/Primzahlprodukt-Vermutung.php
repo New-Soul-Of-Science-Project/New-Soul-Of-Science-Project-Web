@@ -140,7 +140,7 @@
                       array( display => 'on',  latex => '{  \omega  ?=  \omega_{\forall p}  :=  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen', label_text => '\\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{\omega}  \\\ \qquad\quad\;  =  *( \omega_{\forall p} *)^{\omega}  ?=  \omega^{\omega}  }',
-                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega', label_text => '\\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => true),
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-Fragezeichen-ist-omega-hoch-omega', label_text => '\\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-Fragezeichen-ist-omega-hoch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Stimmt unsere Vermutung, dann ist \\latexmath{ s } das Gleiche wie \\latexmath{ \omega } hoch \\latexmath{ \omega }.'."\n",
@@ -1550,11 +1550,11 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  \omega \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ \omega, \\\ \qquad\qquad\qquad\quad\; 2 \cdot \omega, \\\ \qquad\qquad\qquad\quad\; 3 \cdot \omega, \\\ \qquad\qquad\qquad\quad\; 2^{2} \cdot \omega, \\\ \qquad\qquad\qquad\quad\; 5 \cdot \omega, \\\ \qquad\qquad\qquad\quad\; 2 \cdot 3 \cdot \omega, \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Detaillierter sieht diese so aus:'."\n".
+                      'Erweitert sieht diese so aus:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  \omega \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ \omega, 2 \omega, 3 \omega, 4 \omega, 5 \omega, 6 \omega, \cdots \\\ \qquad\qquad\qquad\quad\; \omega^{2}, 2 \omega^{2}, 3 \omega^{2}, 4 \omega^{2}, 5 \omega^{2}, 6 \omega^{2}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; \\\ \qquad\qquad\qquad\quad\;\, \omega^{\omega}, 2 \omega^{\omega}, 3 \omega^{\omega}, 4 \omega^{\omega}, 5 \omega^{\omega}, 6 \omega^{\omega}, \cdots \\\ \qquad\qquad\qquad\quad\; \omega^{2 \omega}, 2 \omega^{2 \omega}, 3 \omega^{2 \omega}, 4 \omega^{2 \omega}, 5 \omega^{2 \omega}, 6 \omega^{2 \omega}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  \omega \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ \omega, 2 \omega, 3 \omega, 4 \omega, 5 \omega, 6 \omega, \cdots \\\ \qquad\qquad\qquad\quad\; \omega^{2}, 2 \omega^{2}, 3 \omega^{2}, 4 \omega^{2}, 5 \omega^{2}, 6 \omega^{2}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; \\\ \qquad\qquad\qquad\quad\;\, \omega^{\omega}, 2 \omega^{\omega}, 3 \omega^{\omega}, 4 \omega^{\omega}, 5 \omega^{\omega}, 6 \omega^{\omega}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; \\\ \qquad\qquad\qquad\quad\; \omega^{2 \omega}, 2 \omega^{2 \omega}, 3 \omega^{2 \omega}, 4 \omega^{2 \omega}, 5 \omega^{2 \omega}, 6 \omega^{2 \omega}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Dies erscheint mir als Menge aller endlichen Ordinalzahlen und danach aller ordinalen Limeszahlen\\footnote{Vgl. \\cite{wiki:Ordinalzahl:2021}, 3 Motivation und Definition, 3.2 Limes- und Nachfolgerzahlen.}.'."\n".
