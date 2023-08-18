@@ -488,7 +488,7 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  pt( 2 )  =  *\{ 2 *\}  }'),
                       array( display => 'on',  latex => '{  pr( 2 )  =  pr( 0^{0} \cdot 1^{0} \cdot 2^{1} )  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  pr( 2 )  =  *\{ 0, 1, 2^{2}, 2^{2}, 2^{3}, 2^{4}, 2^{5}, \cdots *\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  pr( 2 )  =  *\{ 0, 1, 2, 2^{2}, 2^{3}, 2^{4}, 2^{5}, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 2 )  =  *\{ 0, 1, 2, 8, 16, 32, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 2 )  =  3  =  *\{ 0, 1, 2 *\}  }'),
                     ))),
@@ -556,7 +556,7 @@
                       array( display => 'on',  latex => '{  pt( 10 )  =  *\{ 2, 5 *\}  }'),
                       array( display => 'on',  latex => '{  pr( 10 )  =  pr( 2 \cdot 5 )  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 10 )  =  *\{ 0, 1, 2, 2^{2}, 5, 2^{3}, 2 \cdot 5, 2^{4}, 2^{2} \cdot 5, \\\ \qquad\qquad\qquad\qquad\qquad\qquad 5^{2}, 2^{5}, 2^{3} \cdot 5, 2 \cdot 5^{2}, 2^{6}, \cdots *\}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  pr( 10 )  =  *\{ 0, 1, 2, 4, 5, 8, 10, 16, 20, 25, 32, 40, 50, 64, \cdots *\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  pr( 10 )  =  *\{ 0, 1, 2, 4, 5, 8, 10, 16, 20, \\\ \qquad\qquad\qquad\qquad\qquad\qquad 25, 32, 40, 50, 64, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 10 )  =  3  =  *\{ 0, 1, 2 *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -583,13 +583,14 @@
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Für die Primzahl \\latexmath{ 30 = 7\overline{\#} = 6\overline{\#} } haben wir:'."\n".
+                      'Für die Zahl \\latexmath{ 30 = 7\overline{\#} = 6\overline{\#} } haben wir:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  pt( 30 )  =  *\{ 2, 3, 5 *\}  }'),
                       array( display => 'on',  latex => '{  pr( 30 )  =  pr( 2 \cdot 3 \cdot 5 )  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  pr( 30 )  =  *\{ 0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, \cdots *\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  pr( 30 )  =  *\{ 0, 1, 2, 3, 2^{2}, 5, 2 \cdot 3, 2^{3}, 3^{2}, 2 \cdot 5, \\\ \qquad\qquad\qquad\qquad\qquad 2^{2} \cdot 3, 3 \cdot 5, 2^{4}, 2 \cdot 3^{2}, 2^{2} \cdot 5, \cdots *\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  pr( 30 )  =  *\{ 0, 1, 2, 3, 4, 5, 6, 8, 9, 10, \\\ \qquad\qquad\qquad\qquad\qquad 12, 15, 16, 18, 20, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 30 )  =  7  =  *\{ 0, 1, 2, 3, 4, 5, 6 *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -622,7 +623,8 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  pt( \omega\overline{\#} )  =  *\{ 2, 3, 5, 7, 11, 13 \cdots *\}  }'),
                       array( display => 'on',  latex => '{  pr\!*( \omega\overline{\#} *)  =  pr( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega\overline{\#} *)  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \cdots *\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega\overline{\#} *)  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots \\\ \qquad\qquad\qquad\qquad\quad\;\, 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\quad\;\, 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\quad\;\, 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\quad\;\, 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\quad\;\, 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\quad\;\, 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\quad\;\, \vdots \; *\}  }',
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega', label_text => '\\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega}', label_incr => true),
                       array( display => 'on',  latex => '{  lpr\!*( \omega\overline{\#} *)  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots *\} \\\ \qquad\qquad\qquad\qquad\qquad\qquad  =  \mathbb{N}  =  \omega  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -1171,8 +1173,8 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  pt\!*( \omega\overline{\#} *)  =  *\{ 2, 3, 5, 7, 11, 13 \cdots *\}  }'),
                       array( display => 'on',  latex => '{  pr\!*( \omega\overline{\#} *)  =  pr( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega\overline{\#} *)  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; \vdots \; *\}  }',
-                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega', label_text => '\\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega\overline{\#} *)  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots \\\ \qquad\qquad\qquad\qquad\;\;\; 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\qquad\;\;\; \vdots \; *\}  }',
+                                          label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Wo die aktual unendlichen Elemente in der Menge beginnen, sind diese nicht mehr lückenlos, da es in den'."\n".
@@ -1390,7 +1392,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \boxed{\;\;  \omega  =  \omega\overline{\#}  \;\;}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \boxed{\;\;  \omega  =  \omega\overline{\#}  \;\;}  }',
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega', label_text => '\\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'muss also wahr sein, was wir zeigen wollten.'."\n",
@@ -1410,7 +1413,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \boxed{\;\;  s  =  \omega^{\omega}  \;\;}  \;\;,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \boxed{\;\;  s  =  \omega^{\omega}  \;\;}  \;\;,  }',
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega', label_text => '\\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'wodurch wir auch ein genaueres Bild von \\latexmath{ s } bekommen.'."\n",
@@ -1499,7 +1503,7 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Aufgrund unserer Beweises folgt:'."\n".
+                      'Aufgrund unseres Beweises und seines Ergebnisses aus Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega} folgt:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1511,20 +1515,20 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  pr\!*( \omega *)  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, \vdots \; *\}  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  pr\!*( \omega *)  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots \\\ \qquad\qquad\qquad\quad\;\;\;\, 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, \vdots \; *\}  }',
                                           label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  *\{ 0, 1, 2, 3, 2^{2}, 5, 2 \cdot 3, 7, 2^{3}, 3^{2}, 2 \cdot 5, \cdots \\\ \qquad\qquad\qquad\quad\;\;\;\, 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, \vdots \; *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Aufgrund unseres Beweises können wir nun das Raster auch wie folgt schreiben:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  *\{ 0, 1, 2, 3, 2^{2}, 5, 2 \cdot 3, 7, 2^{3}, 3^{2}, 2 \cdot 5, \cdots \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, \vdots \; *\}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  \omega \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  \omega \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Auf diese Weise erhalten wir ein Muster.'."\n",
+                      'Auf diese Weise erhalten wir ein interessantes Muster.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -1535,6 +1539,47 @@
                       'Das Gleiche gilt auch für die Entstehung der ersten Zeile selber:'."\n".
                     'Sie kommt durch die Variation der Potenzen aller endlichen Primzahlen zustande, die, größtenteils als Produkte,'."\n".
                     'alle endlichen natürlichen Zahlen ergeben, bis auf die Null.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Eine weitere Schreibweise ist:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  \omega \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ \omega, \\\ \qquad\qquad\qquad\quad\; 2 \cdot \omega, \\\ \qquad\qquad\qquad\quad\; 3 \cdot \omega, \\\ \qquad\qquad\qquad\quad\; 2^{2} \cdot \omega, \\\ \qquad\qquad\qquad\quad\; 5 \cdot \omega, \\\ \qquad\qquad\qquad\quad\; 2 \cdot 3 \cdot \omega, \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Detaillierter sieht diese so aus:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  \omega \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ \omega, 2 \omega, 3 \omega, 4 \omega, 5 \omega, 6 \omega, \cdots \\\ \qquad\qquad\qquad\quad\; \omega^{2}, 2 \omega^{2}, 3 \omega^{2}, 4 \omega^{2}, 5 \omega^{2}, 6 \omega^{2}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; \\\ \qquad\qquad\qquad\quad\;\, \omega^{\omega}, 2 \omega^{\omega}, 3 \omega^{\omega}, 4 \omega^{\omega}, 5 \omega^{\omega}, 6 \omega^{\omega}, \cdots \\\ \qquad\qquad\qquad\quad\; \omega^{2 \omega}, 2 \omega^{2 \omega}, 3 \omega^{2 \omega}, 4 \omega^{2 \omega}, 5 \omega^{2 \omega}, 6 \omega^{2 \omega}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Dies erscheint mir als Menge aller endlichen Ordinalzahlen und danach aller ordinalen Limeszahlen\\footnote{Vgl. \\cite{wiki:Ordinalzahl:2021}, 3 Motivation und Definition, 3.2 Limes- und Nachfolgerzahlen.}.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Teile davon können wir nun wegen unseres Beweises durch Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}'."\n".
+                      'auch mit \\latexmath{ s } ausdrücken:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  \omega \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ \omega, 2 \omega, 3 \omega, 4 \omega, 5 \omega, 6 \omega, \cdots \\\ \qquad\qquad\qquad\quad\; \omega^{2}, 2 \omega^{2}, 3 \omega^{2}, 4 \omega^{2}, 5 \omega^{2}, 6 \omega^{2}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; \\\ \qquad\qquad\qquad\quad\;\, s, 2 s, 3 s, 4 s, 5 s, 6 s, \cdots \\\ \qquad\qquad\qquad\quad\; s^{2}, 2 s^{2}, 3 s^{2}, 4 s^{2}, 5 s^{2}, 6 s^{2}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Das ist abermals ein bemerkenswertes Muster.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Auf die lückenlosen endlichen natürlichen Zahlen folgen die von Lücken umgebenen'."\n".
+                    'aktual unendlichen ordinalen Limeszahlen.'."\n".
+                    'Denn in der Theorie der Biordinalzahlen können von all den aktual unendlichen ordinalen Limeszahlen'."\n".
+                    'endliche natürliche Zahlen abgezogen und aufaddiert werden, die nicht in dieser Menge vorhanden sind'."\n".
+                    'und daher in den Lücken liegen.'."\n",
+                      'Diese Erkenntnis mit der obigen Darstellung durch \\latexmath{ s } führt uns dann wieder zurück zu'."\n".
+                    'den Superial-Zahlen und bringt sie erneut mit den Ordinalzahlen in Verbindung.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Die Größenordnung von \\latexmath{ \omega } und \\latexmath{ \omega\overline{\#} }} \\\\'."\n".
