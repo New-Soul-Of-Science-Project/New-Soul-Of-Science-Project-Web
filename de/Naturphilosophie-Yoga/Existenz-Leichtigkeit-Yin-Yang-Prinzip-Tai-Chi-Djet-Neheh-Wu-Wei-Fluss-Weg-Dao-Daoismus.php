@@ -332,18 +332,19 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • XXX  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:NPYo:ExistenzLeichtigkeit:XXX',
+		    	<!  • Pleroma, Plenum und Vakuum  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:NPYo:ExistenzLeichtigkeit:Pleroma-Plenum-Vakuum',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:FrQFT:XXX', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '• XXX',
+                    '\\bold{Musivisches Pflaster}',
+                    '• Siehe \\jump[https://www.youtube.com/watch?v=gHVYGWqDZyM]{}{Charles Fleischhauer – Geheimnisvolle Geschichte — Heilige Spiele - Vom Schach bis zum I Ging}',
+                    '• Siehe \\jump[https://www.freimaurer-wiki.de/index.php/Musivisches_Pflaster]{}{Freimaurer Wiki — Musivisches Pflaster}',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -374,10 +375,10 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:XXX'),
+                      // array(  jump_name => 'OM:FrQFT:XXX'),
                     )),
               )
-          ); */ ?>
+          ); ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

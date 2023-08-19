@@ -1997,32 +1997,6 @@
                   'OM:NPYo:Einleitung:Veranstaltungen' => array( headline_text => 'Veranstaltungen', headline_text_short => 'Veranstaltungen'),
                 ),
          ),
-  'OM:NPYo:ExistenzLeichtigkeit' =>
-    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Existenz-Leichtigkeit-Yin-Yang-Prinzip-Tai-Chi-Djet-Neheh-Wu-Wei-Fluss-Weg-Dao-Daoismus.php',
-           url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Existenz-Leichtigkeit-Yin-Yang-Prinzip-Tai-Chi-Djet-Neheh-Wu-Wei-Fluss-Weg-Dao-Daoismus.php',
-           titel => 'Existenz und Leichtigkeit - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
-           description => 'Dao, Qi, Yin und Yang sowie Wu Wei. Die Naturphilosophie der Physik des Achtsamkeitsprozesses findet sich in den Grundkonzepten des Daoismus.',
-           keywords => '',
-           text_titel_h1 => 'Existenz und Leichtigkeit',
-           text_titel_short => 'Existenz und Leichtigkeit',
-           text_undertitel_h2 => 'Dao, Qi, Yin und Yang sowie Wu Wei und I Ging',
-           text_titel_discr_h3 => 'Die Naturphilosophie der Physik des Achtsamkeitsprozesses findet sich in den Grundkonzepten des Daoismus',
-           jump_ary => array(
-                  'OM:NPYo:ExistenzLeichtigkeit:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-                             
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-YinYangTaijitu' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-SymbolYinYangKoerperSeeleExistenz' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-IGingXiantian' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-UnpolPhotFarbpol8pol' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Elapson' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:Ani-VakuumElapson' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-UnpolPhotFarbpol6pol' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Achtsamkeitsprozess' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                             
-                  'OM:NPYo:ExistenzLeichtigkeit:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
-                ),
-         ),
   'OM:NPYo:HaTha' =>
     array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php',
