@@ -77,7 +77,7 @@ A new natural philosophical perspective on our existence and the relationship be
 
 ----
 
-![Superial Numbers](/share/images/SN/SN_header_v02-01.jpg)
+![Superial Numbers](/share/images/SN/SN_header_v03-01.jpg)
 
 ## Superial Numbers
 
