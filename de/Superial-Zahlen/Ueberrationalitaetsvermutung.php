@@ -14,8 +14,10 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{XXX}',
-                    // '• XXX',
+                    '\\bold{Fragen}',
+                    '• Falls die algebraischen reellen Zahlen Faktoren von \\latexmath{ s } sind, die ganze Zahlen ergeben:',
+                    '– Werden diese dann beim Zählen der ganzen Superial-Zahlen mitgezählt oder nur die rationalen Koeffizienten?',
+                    '– Anders gefragt: gibt es dann immer noch \\latexmath{ \frac{ s }{ 2 \cdot \omega } } rationale Zahlen im Intervall zwischen Null und ausschließlich Eins, oder müssen wir das korrigieren?',
                     ))),
                       
                   array( 'text', array( text => array(

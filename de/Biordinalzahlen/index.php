@@ -28,7 +28,7 @@
                     'Die erneute Erweiterung der Biordinalzahlen führt uns schließlich zu den \\jump{OM:SupNum:Home}{Superial-Zahlen},'."\n".
                     'die dann die Eigenschaften eines algebraischen Körpers besitzen.'."\n",
                       'Durch die Konstruktion der Superial-Zahlen aus Primzahlen und deren Verbindung zu den Biordinalzahlen'."\n".
-                    'stellt sich schließlich auch die Frage, ob es eine Primfaktorenzerlegung von \\term{ω} gibt.'."\n".
+                    'stellt sich schließlich auch die Frage, ob es eine Primfaktorzerlegung von \\term{ω} gibt.'."\n".
                     'So entsteht meine \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}.'."\n",
                       'Unsere ontologische Deutung der Beschreibung der negativen Biordinalzahlen gewährt uns Einblicke darein,'."\n".
                     'wie wir unseren Wahrnehmungsfokus setzen und damit eine Auswahl treffen und wie die negativen Biordinalzahlen'."\n".

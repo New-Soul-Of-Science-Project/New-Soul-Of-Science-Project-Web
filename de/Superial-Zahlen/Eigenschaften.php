@@ -65,7 +65,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS', text =>
                       
                 'Was lernen wir über die Größe von \\term{ω} und die Struktur von \\term{s} über die Frage der Vorgänger?', subline =>
                   '')),
@@ -94,7 +94,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [ 0, s [_{\mathbb{S}_{N}}  =  \\\ \quad *\{  x  *|*  *( \forall q \in [ 0, 1 ]_{\mathbb{Q}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } q = 0  \\\\  q \cdot s + z  &  \text{ falls } 0 < q < 1  \\\\  s + z^{-}  &  \text{ falls } q = 1  \end{cases}  *]  *\}  \;\;  ,  }'),
+                      array( display => 'on',  latex => '{  [ 0, s [_{\mathbb{S}_{N}}  =  \\\ \quad *\{  x  *|*  *( \forall q \in [ 0, 1 ]_{\mathbb{Q}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } q = 0  \\\\  q \cdot s + z  &  \text{ falls } 0 < q < 1  \\\\  s + z^{-}  &  \text{ falls } q = 1  \end{cases}  *]  *\}  \;\;  ,  }',
+                                          label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s', label_text => '\\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'unter Berücksichtigung der unterschiedlichen Fälle.'."\n",
@@ -107,7 +108,7 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Seien \\latexmath{ \rbrack a, b \lbrack_\mathbb{Q} } und \\latexmath{ \lbrack a, b \lbrack_\mathbb{Q} } \\jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall}{Intervall-Mengen} aus \\latexmath{ \mathbb{Q} },'."\n".
+                      'Seien \\latexmath{ \rbrack a, b \lbrack_\mathbb{Q} } und \\latexmath{ \lbrack a, b \lbrack_\mathbb{Q} } \\jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Mengen} aus \\latexmath{ \mathbb{Q} },'."\n".
                       'dann ergibt sich \\latexmath{ s }, nach vorstehendem Gedanken, zu'."\n".
                       ''))),
                   array( 'equations',
@@ -142,8 +143,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \# *( [ 0, 1 [_\mathbb{Q} *)  =  \frac{ s }{ 2 \cdot \omega }  \;\; ,  }',
-                                          label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-reatio-Intervall-Null-Eins', label_text => '\\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-reatio-Intervall-Null-Eins}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  \# [ 0, 1 [_\mathbb{Q}  =  \frac{ s }{ 2 \cdot \omega }  \;\; ,  }',
+                                          label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins', label_text => '\\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'durch Umformung.'."\n",
@@ -160,23 +161,23 @@
                 'Ausgangspunkt der Primzahlprodukt-Vermutung', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Und wir können sogar noch weiter gehen und feststellen, dass \\latexmath{ \omega } seine Primfaktoren mit'."\n".
-                    '\\latexmath{ s } teilen muss, wenn die Anzahl der rationalen Zahlen in \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} }'."\n".
-                    'in Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-reatio-Intervall-Null-Eins} eine ganze Zahl sein soll.'."\n".
+                    'Und wir können sogar noch weiter gehen und feststellen, dass \\latexmath{ \omega } seine Primfaktoren'."\n".
+                    'mit \\latexmath{ s }, siehe Formel \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}, teilen muss, wenn die Anzahl der rationalen Zahlen in \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} }'."\n".
+                    'aus Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins} eine ganze Zahl sein soll.'."\n".
                     'Weiter ist klar, dass \\latexmath{ \omega } aktual unendlich groß ist.'."\n".
                     'Es kann also nur ein Produkt aus unendlich vielen endlichen Primzahlen sein.'."\n",
                       'Doch welches Teilprodukt aus \\latexmath{ s } ist es, wenn klar ist, dass \\latexmath{ s } unendlich viel größer ist'."\n".
                     'als \\latexmath{ \omega }.'."\n".
                     'Schon der Turm der kleinsten Primzahl \\latexmath{ 2^\omega } ist definitiv sehr viel größer als \\latexmath{ \omega }.'."\n".
                     'Die einzelnen und kombinierten Türme aller Primzahlen \\latexmath{ p^\omega } sind also ausgeschlossen.'."\n",
-                      'Das offensichtliche, unendliche Primzahlprodukt, dass noch bleibt bedeutet, dass \\latexmath{ \omega = 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots } ist.'."\n".
-                    'Aber auch dieses Produkt erscheint auf den ersten Blick viel größer als \\latexmath{ \omega } zu sein.'."\n",
-                      'Es sei denn, die Anzahl der Primzahl unter den natürlichen Zahlen erfüllt weit draußen unter den sehr sehr großen Zahlen'."\n".
+                      'Das offensichtlich simple, unendliche Primzahlprodukt, dass bleibt, lässt vermuten, dass: \\latexmath{ \omega ?= 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots }.'."\n".
+                    'Aber auch dieses Produkt erscheint auf den ersten Blick viel größer als \\latexmath{ \omega } zu sein.'."\n".
+                    'Es sei denn, die Anzahl der Primzahl unter den natürlichen Zahlen erfüllt weit draußen unter den sehr sehr großen Zahlen'."\n".
                     'eine bestimmte Bedingung:'."\n".
                     'Es gibt unter den wirklich extrem großen natürlichen Zahlen im Grunde nur noch Primzahlzwillinge?'."\n",
                       'Ob diese Bedingung hinreicht, beleuchten wir in der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}.'."\n".
                     'Auch sollten wir Überlegungen zur Primzahlzwillingsvermutung\\color{*Bearb}{(Verweis)} anstellen und bekommen hiermit schon einen Hinweis,'."\n".
-                    'dass sie stimmen sollte.'."\n".
+                    'dass unsere Vermutung stimmen könnte.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen', text =>
                       
@@ -207,7 +208,7 @@
                     'Und dies soll sich in der ersten Struktur der Formulierung ausdrücken, die wir auf Basis der Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z} ansetzen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{Q}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_\mathbb{Q} *)  \\\ \qquad\qquad\qquad\;\,  *[  x = *( n - *( 2 \cdot n + 1 *) *) + u  *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -218,7 +219,7 @@
                       'Wenn wir die Verschiebung vereinfachend umformen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Biord.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Q}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_\mathbb{Q} *)  \\\ \qquad\qquad\qquad\qquad\quad\;\;\,  *[  x = *( n - 2 \cdot n - 1 *) + u  *]  *\}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Q}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_\mathbb{Q} *)  \\\ \qquad\qquad\qquad\qquad\quad\;\;\,  *[  x = *( - n - 1 *) + u  *]  *\}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{Q}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_\mathbb{Q} *)  \\\ \qquad\qquad\qquad\qquad\quad\,  *[  x = - *( n + 1 *) + u  *]  *\}  }'),

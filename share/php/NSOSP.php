@@ -164,12 +164,14 @@
 
   
   $NSOSP_g_footnote_text_AbelscheGruppe         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AbelscheGruppe:2022}.';
+  $NSOSP_g_footnote_text_Arithmetik             = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Arithmetik:2015}.';
   $NSOSP_g_footnote_text_Ordinalzahl            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ordinalzahl:2021}.';
   $NSOSP_g_footnote_text_KoerperAlgebra         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:KoerperAlgebra:2023}.';
   $NSOSP_g_footnote_text_PeanoAxiome            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:PeanoAxiome:2021}, Axiome, Ursprüngliche Formalisierung.';
   $NSOSP_g_footnote_text_RingAlgebra            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ring-Algebra:2023}.';
 
   $BiOrd_g_footnote_text_GaussscheSummenformel  = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:GaussscheSummenformel:2023}.';
+  $BiOrd_g_footnote_text_VollstaendigeInduktion  = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Unendlichkeitsaxiom:2021}, Formulierung; Bedeutung für die Mathematik, Natürliche Zahlen.';
 
   $FrQFT_g_footnote_text_ActioUndReactio        = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:ActioUndReactio:2018}.';
   $FrQFT_g_footnote_text_AequivalPrinzTraeSchMasse = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, S. 2-6. \\\\ Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290, hier S. 253-260. \\\\ Vgl. \\cite{Born:RTEinsteins1969}, Kap. VII. Die allgemeine Relativitätstheorie Einsteins, S. 266-324, hier S. 269-273. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, S. 58-61. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Aequivalenzprinzip2014}.';
@@ -342,8 +344,14 @@
   $SpaLeb_g_footnote_text_Zwerchfell            = 'Internet: \\\\ Vgl. \\cite{Schumann:DasZwerchfellIstDerAtemmuskelSchlechthin:2011}.';
 
   $SupNum_g_footnote_text_AlgebraischeZahl      = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AlgebraischeZahl:2022}.';
+  $SupNum_g_footnote_text_FundamentalsatzDerArithmetik = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Primfaktorzerlegung:2022}, Fundamentalsatz der Arithmetik.';
   $SupNum_g_footnote_text_Primorial             = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Primorial:2015}.';
   $SupNum_g_footnote_text_PrimorialWikiWerte    = 'Vgl. \\cite{wiki:Primorial:2015}, Eigenschaften, Grafik und Tabelle mit Beispielwerten.';
+  $SupNum_g_footnote_text_LexikographischeOrdnung = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:LexikographischeOrdnung:2023}. \\\\ Vgl. \\cite{wiki:Stellenwertsystem:2023}, Lexikographische Ordnung.';
+  $SupNum_g_footnote_text_Maechtigkeit          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:MaechtigkeitMathematik:2023}.';
+  $SupNum_g_footnote_text_RationaleZahl         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:RationaleZahl:2022}.';
+  $SupNum_g_footnote_text_RationaleZahlDichtheit = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:RationaleZahl:2022}, Eigenschaften.';
+  $SupNum_g_footnote_text_Stellenwertsystem     = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Stellenwertsystem:2023}.';
 
   
   const fig_file_name = 'fig_file_name';
@@ -712,7 +720,7 @@
                                                                  'Untereinander dargestellt sind die verschachtelten Zahlengeraden, die jeweils darunter die unendlich kleine Umgebung'."\n".
                                                                  'um eine Zahl der darüber liegenden Ebene herum zeigt.'."\n".
                                                                  'Auf der unendlich kleinen, umgebenden Zahlengeraden ist jeweils eine bestimmte Zahl angegeben, die wieder eine solche Umgebung hat.'."\n".
-                                                                 'Die hier dargestellte Zahl ist:  \\term{2,6⋅s^{2} + 0,5⋅s^{1} – 1,4⋅s^{0} + 3,5⋅s^{-1}  = 〈2,6〉〈0,5〉〈–1,4〉_{0}〈3,5〉}');
+                                                                 'Die hier dargestellte Zahl ist in der Stellenwertsystem-Schreibweise: \\hidden{\\term{2,6⋅s^{2} + 0,5⋅s^{1} – 1,4⋅s^{0} + 3,5⋅s^{-1}  = 〈2,6〉〈0,5〉〈–1,4〉.〈3,5〉}}\\latexmath{ 〈2,6〉〈0,5〉〈–1,4〉.〈3,5〉 }');
   
   $SupNum_g_figure_ary_sGeomKonstruktTeilung   = array( fig_file_name => 'SN/s-geom-Konstrukt-Teilung-v02', fig_alt_description => 'Rhythmische Zerlegung der Eins durch natürliche Zahlen', width => '600px', height => '290px', name => 'set local!',
                                                          text => 'Die Grafik zeigt, wie durch die Projektion der Begrenzungspunkte aller regelmäßigen natürlichzahligen Teilstrecken auf die Einheitsstrecke,'."\n".
@@ -817,7 +825,7 @@
     
     // #: SupNum
                             
-    '*SupNum:Stellenwertsystem-Schreibweise'  => array( jump_name => 'OM:SupNum:Einleitung:Grundlagen'),
+    '*SupNum:Stellenwertsystem-Schreibweise'  => array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem'),
   );
   
   $Glo_g_Redirect_list = array(
@@ -847,7 +855,7 @@
     array(
                           
   'OM:FrQFT:Impressum' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php',
            titel => 'Impressum - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Impressum von The New Soul Of Science Project; Kontaktdaten des Inhabers.',
@@ -879,7 +887,7 @@
          ),
 
   /*'OM:FrQFT:XXX' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/XXX',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/XXX',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/XXX',
            titel => 'XXX - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'XXX',
@@ -895,7 +903,7 @@
 
   'OM:FrQFT:' =>
     array_merge( $nSOSp_g_info_wolfgangHuss,
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/',
            favicons_url_rel_opt => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/favicon/',
            //header_pict_name => 'Fractal-Quantum-Flow-Theory_En.jpg',
@@ -922,7 +930,7 @@
            litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
          )),
    'OM:FrQFT:Home' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/index.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/index.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/index.php',
            titel => 'Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            //description => 'Vereinheitlichte Physik auf Basis eines selbstorganisierten, fraktalen Systems von lichtähnlichen, zu Strings verbundenen Wirkungsquanten.',
@@ -944,7 +952,7 @@
                 ),
          ),
   'OM:FrQFT:Atommodell' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Atommodell_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Atommodell_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Atommodell_de.php',
            titel => 'Atommodell - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'XXX',
@@ -958,7 +966,7 @@
                 ),
          ),
   'OM:FrQFT:Ausblick' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Ausblick_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Ausblick_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Ausblick_de.php',
            titel => 'Ausblick - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Wie kann es mit der Fraktalen Quanten-Fluss-Theorie weiter gehen?',
@@ -973,7 +981,7 @@
                 ),
          ),
   'OM:FrQFT:Basisteilchenmodell' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Basisteilchenmodell-im-Vergleich_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Basisteilchenmodell-im-Vergleich_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Basisteilchenmodell-im-Vergleich_de.php',
            titel => 'Basisteilchenmodell im Vergleich - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Das wunderbar einfache Basisteilchenmodell von Albrecht Giese beschriebt viele grundlegende Eigenschaften der Elementarteilchen, aber die Quanten-Fluss-Theorie dringt weiter in die Tiefe und merzt Probleme aus, welche Gieses Modell noch hat.',
@@ -997,7 +1005,7 @@
                 ),
          ),
   'OM:FrQFT:De-Broglie-Bohm-Theorie' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Quantenmechanik-De-Broglie-Bohm-Theorie-Pilotwellentheorie-Bohmsche-Mechanik_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Quantenmechanik-De-Broglie-Bohm-Theorie-Pilotwellentheorie-Bohmsche-Mechanik_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Quantenmechanik-De-Broglie-Bohm-Theorie-Pilotwellentheorie-Bohmsche-Mechanik_de.php',
            titel => 'Die Realisierung der De-Broglie-Bohm-Theorie (Bohmsche Mechanik, Pilotwellentheorie, Führungswellentheorie) - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Der Quantenmechanik äquivalente und deterministische Alternative.',
@@ -1014,7 +1022,7 @@
                 ),
          ),
   'OM:FrQFT:Diskussion' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Diskussion_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Diskussion_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Diskussion_de.php',
            titel => 'Diskussion - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Die Erörterung wichtiger und kritischer Aspekte.',
@@ -1045,7 +1053,7 @@
                 ),
          ),
   'OM:FrQFT:Dunkle-Energie' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Dunkle-Energie_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Dunkle-Energie_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Dunkle-Energie_de.php',
            titel => 'Dunkle Energie - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Die Dynamik oder Energiedichte der Feinstruktur des Vakuums und der Elementarteilchen.',
@@ -1061,7 +1069,7 @@
                 ),
          ),
   'OM:FrQFT:Dunkle-Materie' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Dunkle-Materie-modifizierte-newtonsche-Dynamik-MOND_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Dunkle-Materie-modifizierte-newtonsche-Dynamik-MOND_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Dunkle-Materie-modifizierte-newtonsche-Dynamik-MOND_de.php',
            titel => 'Phänomen der Dunklen Materie: Emergente Gravitation begründet die modifizierte newtonsche Dynamik (MOND) - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            //description => 'Eine zusätzliche Gavitation in der Quanten-Fluss-Theorie wirkt wie die modifizierte newtonsche Dynamik (MOND) und ähnelt heißer Dunkler Materie (HDM).',
@@ -1089,7 +1097,7 @@
                 ),
          ),
   'OM:FrQFT:ElektroschwacheWW' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Elektroschwache-Wechselwirkung-Teilchenumwandlungen-schwacher-Isospin_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Elektroschwache-Wechselwirkung-Teilchenumwandlungen-schwacher-Isospin_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Elektroschwache-Wechselwirkung-Teilchenumwandlungen-schwacher-Isospin_de.php',
            titel => 'Elektroschwache Wechselwirkung, Teilchenumwandlungen und innerer Spin (schwacher Isospin) - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Das neue Teilchenmodell gibt der elektroschwachen Kraft und ihrem schwachen Isospin eine reale Ursache. Der neue, innere Spin ergibt sich aus der Vereinheitlichung von Quantenmechanik und Allgemeiner Relativitätstheorie.',
@@ -1117,7 +1125,7 @@
                 ),
          ),
   'OM:FrQFT:Elementarteilchen' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Elementarteilchenmodell-mit-Wirkungsquanten-Strings_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Elementarteilchenmodell-mit-Wirkungsquanten-Strings_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Elementarteilchenmodell-mit-Wirkungsquanten-Strings_de.php',
            titel => 'Elementarteilchenmodell mit Wirkungsquanten-Strings - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Eine neues, fraktales Elementarteilchenmodell basiert auf Strings aus Wirkungsquanten.',
@@ -1149,7 +1157,7 @@
                 ),
          ),
   'OM:FrQFT:Einleitung' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Einleitung_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Einleitung_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Einleitung_de.php',
            titel => 'Einleitung - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Ein tiefgreifendes Verständnis von Raum und Zeit ist notwendig, um die grundlegenden Probleme der heutigen Physik zu lösen – die Physik zu vereinheitlichen.',
@@ -1178,7 +1186,7 @@
                 ),
          ),
   'OM:FrQFT:Fazit' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Fazit_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Fazit_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Fazit_de.php',
            titel => 'Fazit - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'XXX',
@@ -1198,7 +1206,7 @@
                 ),
          ),
   'OM:FrQFT:FirstPrinciples' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/First-Principles-Neue-Physik.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/First-Principles-Neue-Physik.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/First-Principles-Neue-Physik.php',
            titel => 'First-Principles der neuen Physik - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Die Formulierung allgemeiner Naturprinzipien',
@@ -1223,7 +1231,7 @@
                 ),
          ),
   'OM:FrQFT:Gravitation' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Gravitation-Higgs-Feld-Dichte_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Gravitation-Higgs-Feld-Dichte_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Gravitation-Higgs-Feld-Dichte_de.php',
            titel => 'Emergente Gravitation - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            //description => 'Der Eindruck der gekrümmten Raumzeit der Allgemeinen Relativitätstheorie entsteht in der Quanten-Fluss-Theorie durch eine variable Dichte- und Bewegungsverteilung der Elapsonen und Wirkungsquanten.',
@@ -1249,7 +1257,7 @@
                 ),
          ),
   'OM:FrQFT:HeisenbergUnschaerfe' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Heisenbergsche-Unschaerferelation-Plancksches-Wirkungsquantum_de.php',
            titel => 'Heisenbergsche Unschärferelation und Plancksches Wirkungsquantum - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Die Formeln der Heisenbergsche Unschärferelation und das Plancksches Wirkungsquantum ergeben sich in der Quanten-Fluss-Theorie aus einem prinzipiellen Abzählproblem von fundamentalen Wirkungsquanten.',
@@ -1280,7 +1288,7 @@
                 ),
          ),
   'OM:FrQFT:Lepton' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Leptonen-Modell-Elektron-Positron-Myon-Tauon-Neutrino_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Leptonen-Modell-Elektron-Positron-Myon-Tauon-Neutrino_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Leptonen-Modell-Elektron-Positron-Myon-Tauon-Neutrino_de.php',
            titel => 'Leptonen-Modell, Elektron/Positron, Myon, Tauon, Neutrino - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            // description => 'Das neue Leptonen-Modell beschreibt, wie die elektroschwache Ladung die Gravitation sowie die Massen von Elektron/Positron, Myon, Tauon und Neutrino entstehen.',
@@ -1330,7 +1338,7 @@
                 ),
          ),
    'OM:FrQFT:Literatur' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Literatur_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Literatur_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Literatur_de.php',
            titel => 'Literatur - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Literatur zur fraktalen Quanten-Fluss-Theorie.',
@@ -1343,7 +1351,7 @@
                 ),
          ),
   'OM:FrQFT:NeuePhysik' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Neue-Physik-Problem-der-Zeit_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Neue-Physik-Problem-der-Zeit_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Neue-Physik-Problem-der-Zeit_de.php',
            titel => 'Neue Physik - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Das ›Problem der Zeit‹ – Problembeschreibung, Lösungshypothese und Entwicklung eines allgemeinen Prinzips der Physik.',
@@ -1453,7 +1461,7 @@
                 ),
          ),
   'OM:FrQFT:NotwenVereinheit' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Notwendige-Vereinheitlichung-Physik-Dilemma_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Notwendige-Vereinheitlichung-Physik-Dilemma_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Notwendige-Vereinheitlichung-Physik-Dilemma_de.php',
            titel => 'Notwendige Vereinheitlichung der Physik - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Ungelöste Probleme treiben die Suche nach einer Vereinheitlichung in einer neuen Physik voran.',
@@ -1476,7 +1484,7 @@
                 ),
          ),
   'OM:FrQFT:Meetup-Physik-Neu-Sehen-Ergruenden' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Meetup-Physik-Neu-Sehen-Ergruenden.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Meetup-Physik-Neu-Sehen-Ergruenden.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Meetup-Physik-Neu-Sehen-Ergruenden.php',
            titel => 'Meetup: Physik Neu Sehen und Ergründen - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Neue Perspektiven auf die Grundlagen der Physik.',
@@ -1490,7 +1498,7 @@
                 ),
          ),
   'OM:FrQFT:Quantenchromodynamik' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Quantenchromodynamik-Hadronen-Quarks-Gluonen_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Quantenchromodynamik-Hadronen-Quarks-Gluonen_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Quantenchromodynamik-Hadronen-Quarks-Gluonen_de.php',
            titel => 'Quantenchromodynamik, starke Wechselwirkung, Hadronen, Quarks, Gluonen - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Die Quantenchromodynamik in der Quanten-Fluss-Theorie basiert auf einer Symmetriebrechung der Farbpolarisation.',
@@ -1517,7 +1525,7 @@
                 ),
          ),
   'OM:FrQFT:Quantengravitation' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Quantengravitation-der-Elementarteilchen_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Quantengravitation-der-Elementarteilchen_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Quantengravitation-der-Elementarteilchen_de.php',
            titel => 'Quantengravitation der Elementarteilchen - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            //description => 'Das Teilchenmodell der Quanten-Fluss-Theorie beschreibt die Ursache der Quantengravitation und vereinheitlicht so die Quantenmechanik mit der Relativitätstheorie.',
@@ -1588,7 +1596,7 @@
                 ),
          ),
   'OM:FrQFT:Universum-SchwarzeLoecher-Kosmos-Urknall' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Universum-Schwarze-Loecher-Kosmos-Urknall_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Universum-Schwarze-Loecher-Kosmos-Urknall_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Universum-Schwarze-Loecher-Kosmos-Urknall_de.php',
            titel => 'Universum, Schwarze Löcher, Kosmos und Urknall - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Die fraktale Struktur des Universums, in der der Urknall eines Kosmos die Innensicht der Entstehung eines Schwarzen Lochs ist.',
@@ -1602,7 +1610,7 @@
                 ),
          ),
   'OM:FrQFT:Vakuum' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Vakuum-Higgs-Mechanismus-und-Gravitation_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Vakuum-Higgs-Mechanismus-und-Gravitation_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Vakuum-Higgs-Mechanismus-und-Gravitation_de.php',
            titel => 'Vakuum, Higgs-Mechanismus und Gravitation - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Die Grundstruktur des Vakuums entsteht aus der inneren Gravitation der Vakuumenergie.',
@@ -1624,7 +1632,7 @@
                 ),
          ),
   'OM:FrQFT:Vergleich' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Vergleich-mit-anderen-Theorien_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Vergleich-mit-anderen-Theorien_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Vergleich-mit-anderen-Theorien_de.php',
            titel => 'Vergleich mit anderen Theorien - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Was verbindet die Quanten-Fluss-Theorie mit und was unterscheidet sie von anderen Theorien?',
@@ -1644,7 +1652,7 @@
                 ),
          ),
   'OM:FrQFT:Vorwort' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Vorwort_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Vorwort_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Vorwort_de.php',
            titel => 'Vorwort - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Begreifen, welche Philosophie hinter unserer physischen Existenz steckt.',
@@ -1657,7 +1665,7 @@
                 ),
          ),
   'OM:FrQFT:WasIstPhysik' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Was-ist-Physik_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Was-ist-Physik_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Was-ist-Physik_de.php',
            titel => 'Was ist Physik? (Ⅰ) - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Was wir tun, wenn wir Naturwissenschaft betreiben – Wissenschaftsphilosophische, erkenntnistheoretische und naturphilosophische Überlegungen und Hypothesen zur Grundstruktur der realen Dinge führen zu ›Neuer Physik‹.',
@@ -1683,7 +1691,7 @@
                 ),
          ),
   'OM:FrQFT:WieMessenWirInDerPhysik' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Wie-messen-wir-in-der-Physik.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Wie-messen-wir-in-der-Physik.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Wie-messen-wir-in-der-Physik.php',
            titel => 'Wie messen wir in der Physik? - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Was ist Physik? (Ⅱ) – Wie funktioniert Beobachtung in Quantensystemen? — Die Verzauberung unseres Verständnisses der Quantensysteme durch deren Entzauberung. — Die Zusammenhänge zwischen Erhaltung, Verschränkung, Quantisierung, Unschärferelation, Symmetriebruch und Wechselwirkung sowie Quantengravitation anhand eines vereinfachten Modells.',
@@ -1700,7 +1708,7 @@
                 ),
          ),
   'OM:FrQFT:ZeitAlterungFrequenz' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Raum-Zeit-Alterung-Frequenz-Energie-Problem-der-Zeit-Pound-Rebka-Snider-Experiment_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Raum-Zeit-Alterung-Frequenz-Energie-Problem-der-Zeit-Pound-Rebka-Snider-Experiment_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Raum-Zeit-Alterung-Frequenz-Energie-Problem-der-Zeit-Pound-Rebka-Snider-Experiment_de.php',
            titel => 'Raum, Zeit, Alterung, Frequenz und Energie - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Die Auflösung des scheinbaren Widerspruchs zwischen der absoluten Zeit der Quantentheorie und der relativen Zeit der Allgemeinen Relativitätstheorie; zwischen der Alterung und der inneren Frequenz der Elementarteilchen im Gravitationsfeld – das Pound-Rebka-Snider-Experiment.',
@@ -1792,7 +1800,7 @@
                 ),
          ),
   'OM:FrQFT:Zusammenfassung' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/Zusammenfassung_de.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Zusammenfassung_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Zusammenfassung_de.php',
            titel => 'Zusammenfassung - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Was erreicht wurde.',
@@ -1809,7 +1817,7 @@
                 ),
          ),
   'OM:FrQFT:XXX-Notizen' =>
-    array( url_abs => 'http://www.nsosp.org/de/Quanten-Fluss-Theorie/XXX_Notizen.php',
+    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/XXX_Notizen.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/XXX_Notizen.php',
            titel => 'XXX-Notizen',
            description => 'Diese Seite sollte von Google nicht angezeigt werden!',
@@ -1836,7 +1844,7 @@
 
   'OM:NPT:' =>
     array_merge( $nSOSp_g_info_wolfgangHuss,
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-der-Zeit/',
+    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-der-Zeit/',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/',
            name_short => 'NaturZeit',
            font_ary => array(
@@ -1855,7 +1863,7 @@
            litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
          )),
   'OM:NPT:Home' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-der-Zeit/index.php',
+    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-der-Zeit/index.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/index.php',
            titel => 'Naturphilosophie der Zeit (NPT) - Deutsch',
            // description => 'Naturphilosophie der Zeit (NPT) – der Djet-Neheh-Dualismus bringt die Begriffe Zeit, Existenz, Struktur, Veränderung oder Bewegung, Wechselwirkung, Symmetriebruch und Spannung in einen allgemeinen Zusammenhang.',
@@ -1871,7 +1879,7 @@
                 ),
          ),
   'OM:NPT:Einleitung' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-der-Zeit/Einleitung_de.php',
+    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-der-Zeit/Einleitung_de.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/Einleitung_de.php',
            titel => 'Einleitung - Naturphilosophie der Zeit (NPT) - Deutsch',
            description => 'Ein strukturelles Verständnis der Zeit.',
@@ -1885,7 +1893,7 @@
                 ),
          ),
    'OM:NPT:Literatur' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-der-Zeit/Literatur_de.php',
+    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-der-Zeit/Literatur_de.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/Literatur_de.php',
            titel => 'Literatur - Naturphilosophie der Zeit (NPT) - Deutsch',
            description => 'Literatur zur strukturellen Naturphilosophie der Zeit.',
@@ -1900,7 +1908,7 @@
 
   // 'OM:NPYo:' is in separate file in theme folder and included here.
   'OM:NPYo:Angebote-Veranstaltungen' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Angebote-Veranstaltungen_de.php',
+    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Angebote-Veranstaltungen_de.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Angebote-Veranstaltungen_de.php',
            titel => 'Angebote und Veranstaltungen - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
            description => 'Was kannst du bei mir bekommen oder buchen?',
@@ -1920,7 +1928,7 @@
                 ),
          ),
   'OM:NPYo:Chakras-Kabbala-Tarot' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Chakras-Kabbala-Tarot.php',
+    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Chakras-Kabbala-Tarot.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Chakras-Kabbala-Tarot.php',
            titel => 'Chakras, Kabbala und Tarot - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
            description => 'XXX.',
@@ -1938,7 +1946,7 @@
                 ),
          ),
   'OM:NPYo:Einleitung' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Einleitung.php',
+    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Einleitung.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Einleitung.php',
            titel => 'Einleitung - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
            //description => 'Die Naturphilosophie des Yoga.',
@@ -1989,34 +1997,8 @@
                   'OM:NPYo:Einleitung:Veranstaltungen' => array( headline_text => 'Veranstaltungen', headline_text_short => 'Veranstaltungen'),
                 ),
          ),
-  'OM:NPYo:ExistenzLeichtigkeit' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Existenz-Leichtigkeit-Yin-Yang-Prinzip-Tai-Chi-Djet-Neheh-Wu-Wei-Fluss-Weg-Dao-Daoismus.php',
-           url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Existenz-Leichtigkeit-Yin-Yang-Prinzip-Tai-Chi-Djet-Neheh-Wu-Wei-Fluss-Weg-Dao-Daoismus.php',
-           titel => 'Existenz und Leichtigkeit - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
-           description => 'Dao, Qi, Yin und Yang sowie Wu Wei. Die Naturphilosophie der Physik des Achtsamkeitsprozesses findet sich in den Grundkonzepten des Daoismus.',
-           keywords => '',
-           text_titel_h1 => 'Existenz und Leichtigkeit',
-           text_titel_short => 'Existenz und Leichtigkeit',
-           text_undertitel_h2 => 'Dao, Qi, Yin und Yang sowie Wu Wei und I Ging',
-           text_titel_discr_h3 => 'Die Naturphilosophie der Physik des Achtsamkeitsprozesses findet sich in den Grundkonzepten des Daoismus',
-           jump_ary => array(
-                  'OM:NPYo:ExistenzLeichtigkeit:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-                             
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-YinYangTaijitu' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-SymbolYinYangKoerperSeeleExistenz' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-IGingXiantian' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-UnpolPhotFarbpol8pol' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Elapson' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:Ani-VakuumElapson' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-UnpolPhotFarbpol6pol' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:ExistenzLeichtigkeit:Vortext:Fig-Achtsamkeitsprozess' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                             
-                  'OM:NPYo:ExistenzLeichtigkeit:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
-                ),
-         ),
   'OM:NPYo:HaTha' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php',
+    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php',
            titel => 'Hatha Yoga – Ha und Tha, Ra und Horus, Sonne und Mond - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
            description => 'Unsere Balance der Körperhälften, unser Schicksal. Der Zusammenhang zwischen Yoga, Tantra, altägyptischer und hinduistischer Mythologie, unsem Achtsamkeitsprozess und der Gesichtsspiegelung.',
@@ -2041,7 +2023,7 @@
                 ),
          ),
    'OM:NPYo:Literatur' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Literatur_de.php',
+    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Literatur_de.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Literatur_de.php',
            titel => 'Literatur - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
            description => 'Literatur zum Naturphilosophie-Yoga.',
@@ -2054,7 +2036,7 @@
                 ),
          ),
   'OM:NPYo:Meetup-LGBT-Spiritual-Hamburg' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Meetup-LGBT-Spiritual-Hamburg.php',
+    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Meetup-LGBT-Spiritual-Hamburg.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Meetup-LGBT-Spiritual-Hamburg.php',
            titel => 'Meetup: LGBT Spiritual Hamburg - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
            description => 'Diese Gruppe ist für lesbische, bisexuelle, schwule und alle* Menschen, die Freunde suchen, mit denen sie sich über spirituelle Erfahrungen austauschen können.',
@@ -2068,7 +2050,7 @@
                 ),
          ),
   'OM:NPYo:Stein-der-Weisen' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Stein-der-Weisen-(Lapis-Philosophorum)-Heiliger-Gral-Phoenix.php',
+    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Stein-der-Weisen-(Lapis-Philosophorum)-Heiliger-Gral-Phoenix.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Stein-der-Weisen-(Lapis-Philosophorum)-Heiliger-Gral-Phoenix.php',
            titel => 'Stein der Weisen (Lapis Philosophorum), Heiliger Gral und Phönix aus der Asche - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
            description => 'Naturphilosophische Hintergründe und Verbindungen der Mythen und Sagen, ihrer Weisheiten, mit unserem Leben.',
@@ -2095,7 +2077,7 @@
                 ),
          ),
   'OM:NPYo:Vorwort' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Vorwort.php',
+    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Vorwort.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Vorwort.php',
            titel => 'Vorwort - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
            description => 'XXX',
@@ -2119,7 +2101,7 @@
                 ),
          ),
   'OM:NPYo:WasIstYoga' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Was-ist-Yoga_de.php',
+    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Was-ist-Yoga_de.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Was-ist-Yoga_de.php',
            titel => 'Was ist Yoga? - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
            description => 'Yoga ist an sich selber und an der Welt zu wachsen, Achtsamkeit und Zufriedenheit zu lernen. Körper- und Seelenpflege von innen.',
@@ -2135,7 +2117,7 @@
                 ),
          ),
   'OM:NPYo:WasUnterschiedYogaSport' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Was-unterscheidet-Yoga-von-Sport-Persoenlichkeitsentwicklung-oder-Leistung_de.php',
+    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Was-unterscheidet-Yoga-von-Sport-Persoenlichkeitsentwicklung-oder-Leistung_de.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Was-unterscheidet-Yoga-von-Sport-Persoenlichkeitsentwicklung-oder-Leistung_de.php',
            titel => 'Was unterscheidet Yoga von Sport? - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
            description => 'Hast du deine Persönlichkeitsentwicklung oder direkt deine Leistung im Fokus?',
@@ -2151,7 +2133,7 @@
                 ),
          ),
   'OM:NPYo:WieVeraendereIchMeineVergangenheit' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Wie-veraendere-ich-meine-Vergangenheit.php',
+    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Wie-veraendere-ich-meine-Vergangenheit.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Wie-veraendere-ich-meine-Vergangenheit.php',
            titel => 'Wie verändere ich meine Vergangenheit - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
            description => 'Unsere Vergangenheit ist für uns, was sie uns bedeutet.',
@@ -2169,7 +2151,7 @@
                 ),
          ),
   'OM:NPYo:WS-Achtsamkeitsprozess-WoPhysikAufYogaTrifft' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/Workshop-Achtsamkeitsprozess-Wo-Physik-auf-Yoga-trifft_de.php',
+    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Workshop-Achtsamkeitsprozess-Wo-Physik-auf-Yoga-trifft_de.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Workshop-Achtsamkeitsprozess-Wo-Physik-auf-Yoga-trifft_de.php',
            titel => 'Workshop: Der Achtsamkeitsprozess, Wo Physik auf Yoga trifft … - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
            description => 'Fundamentale Einsichten zur Achtsamkeit, ihrer Verknüpfung mit den Prozessen des Lebens und den Grundlagen der Physik.',
@@ -2184,7 +2166,7 @@
                 ),
          ),
   'OM:NPYo:XXX-Notizen' =>
-    array( url_abs => 'http://www.nsosp.org/de/Naturphilosophie-Yoga/XXX_Notizen.php',
+    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/XXX_Notizen.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/XXX_Notizen.php',
            titel => 'XXX-Notizen',
            description => 'Diese Seite sollte von Google nicht angezeigt werden!',
@@ -2203,7 +2185,7 @@
 
   'OM:nSOSp:' =>
     array_merge( $nSOSp_g_info_wolfgangHuss,
-    array( url_abs => 'http://www.nsosp.org/de/New-Soul-Of-Science-Project/',
+    array( url_abs => 'https://nsosp.org/de/New-Soul-Of-Science-Project/',
            url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/',
            favicons_url_rel_opt => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/favicon/',
            name_short => 'NSOSP',
@@ -2228,7 +2210,7 @@
            litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
          )),
   'OM:nSOSp:Home' =>
-    array( url_abs => 'http://www.nsosp.org/de/New-Soul-Of-Science-Project/index.php',
+    array( url_abs => 'https://nsosp.org/de/New-Soul-Of-Science-Project/index.php',
            url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/index.php',
            titel => 'New Soul Of Science Project (NSOSP) – Deutsch',
            description => 'Knowledge And Care Helps – Bewusstsein, Wissen, Fürsorge und Können helfen gegen Hilflosigkeit in der Not, in dem sie uns Werkzeuge zur Verbesserung unserer Lebenssituation und Lebensqualität an die Hand geben.',
@@ -2271,7 +2253,7 @@
                 ),
          ),
    'OM:nSOSp:Buchprojekt' =>
-    array( url_abs => 'http://www.nsosp.org/de/New-Soul-Of-Science-Project/Buchprojekt.php',
+    array( url_abs => 'https://nsosp.org/de/New-Soul-Of-Science-Project/Buchprojekt.php',
            url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/Buchprojekt.php',
            titel => 'Buchprojekt - New Soul Of Science Project (NSOSP) - Deutsch',
            description => 'Buchprojekt des New Soul Of Science Projects.',
@@ -2285,7 +2267,7 @@
                 ),
          ),
    'OM:nSOSp:Literatur' =>
-    array( url_abs => 'http://www.nsosp.org/de/New-Soul-Of-Science-Project/Literatur.php',
+    array( url_abs => 'https://nsosp.org/de/New-Soul-Of-Science-Project/Literatur.php',
            url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/Literatur.php',
            titel => 'Literatur - New Soul Of Science Project (NSOSP) - Deutsch',
            description => 'Literatur zum New Soul Of Science Project.',
@@ -2298,7 +2280,7 @@
                 ),
          ),
    'OM:nSOSp:Projekt' =>
-    array( url_abs => 'http://www.nsosp.org/de/New-Soul-Of-Science-Project/Projekt.php',
+    array( url_abs => 'https://nsosp.org/de/New-Soul-Of-Science-Project/Projekt.php',
            url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/Projekt.php',
            titel => 'Das Projekt - New Soul Of Science Project (NSOSP) - Deutsch',
            description => 'Inhalt des New Soul Of Science Project.',
@@ -2317,7 +2299,7 @@
 
   // 'OM:SpaLeb:' parts are in separate file in theme folder and included here.
   'OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Atmung-Bauch-Zwerchfell-Koerperstabilitaet-Bewegungsstabilitaet_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Atmung-Bauch-Zwerchfell-Koerperstabilitaet-Bewegungsstabilitaet_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Atmung-Bauch-Zwerchfell-Koerperstabilitaet-Bewegungsstabilitaet_de.php',
            titel => 'Atmung, Bauch, Zwerchfell, Körperstabilität und Bewegungsstabilität - Spannungsspiel des Lebens - Deutsch',
            description => 'Die bisher unbekannte Rolle des Zwerchfells. Wie die Atmung über die Spannung des Bauchs und des Zwerchfells dem Körper Stabilität gibt.',
@@ -2349,7 +2331,7 @@
                 ),
          ),
   'OM:SpaLeb:Bewusstsein' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Bewusstsein-Physik-Leben-Regelprozesse_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Bewusstsein-Physik-Leben-Regelprozesse_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Bewusstsein-Physik-Leben-Regelprozesse_de.php',
            titel => 'Das Bewusstsein – Physik und Leben auf Basis von Regelprozessen - Spannungsspiel des Lebens - Deutsch',
            description => 'Physik und Leben auf Basis von Regelprozessen. Eine Überlegung, wie wir uns Bewusstsein ganz grundsätzlich physikalisch vorstellen können und wie Leben zu verstehen ist.',
@@ -2371,7 +2353,7 @@
                 ),
          ),
   'OM:SpaLeb:Demenz' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Demenz-Konzentrationsstoerungen-Alzheimer-Parkinson_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Demenz-Konzentrationsstoerungen-Alzheimer-Parkinson_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Demenz-Konzentrationsstoerungen-Alzheimer-Parkinson_de.php',
            titel => 'Demenz wie Konzentrationsstörungen, Alzheimer und Parkinson - Spannungsspiel des Lebens - Deutsch',
            description => 'Demenz wie Konzentrationsstörungen, Alzheimer und Parkinson im Licht des Prinzips des Lebens.',
@@ -2388,7 +2370,7 @@
                 ),
          ),
   'OM:SpaLeb:Diskussion' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Diskussion_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Diskussion_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Diskussion_de.php',
            titel => 'Diskussion - Spannungsspiel des Lebens - Deutsch',
            description => 'Diskussionen von Themen und Begriffen zum ›Spannungsspiel des Lebens‹.',
@@ -2404,7 +2386,7 @@
                 ),
          ),
   'OM:SpaLeb:Einleitung' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Einleitung_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Einleitung_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Einleitung_de.php',
            titel => 'Einleitung - Spannungsspiel des Lebens - Deutsch',
            description => 'Was ist Leben? (Ⅰ)',
@@ -2418,7 +2400,7 @@
                 ),
          ),
   'OM:SpaLeb:Ernaehrung-Spannung-und-Gewicht' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Ernaehrung-innere-Spannung-und-Gewicht_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Ernaehrung-innere-Spannung-und-Gewicht_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Ernaehrung-innere-Spannung-und-Gewicht_de.php',
            titel => 'Ernährung, innere Spannung und Körpergewicht/Übergewicht - Spannungsspiel des Lebens - Deutsch',
            description => 'Ernährung, innere Spannung und Körpergewicht/Übergewicht im Licht des Prinzips des Lebens.',
@@ -2436,7 +2418,7 @@
                 ),
          ),
   'OM:SpaLeb:Gesangstechnik' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Gesangstechnik_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Gesangstechnik_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Gesangstechnik_de.php',
            titel => 'Gesangstechnik - Spannungsspiel des Lebens - Deutsch',
            description => 'Singen nach dem ›Spannungsspiel des Lebens‹. Mit Wissen über die Funktion der Atemspannung, Oberkörperbalance und Standstabilität, mit tieferem Verständnis des Achtsamkeitsprozesses und mit pubertärer Experimentierfreude besser singen lernen.',
@@ -2450,7 +2432,7 @@
                 ),
          ),
   'OM:SpaLeb:Gesichtsausdruck' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Gesichtshaelften-Gesichtsausdruck-Gesichtsspiegelung_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Gesichtshaelften-Gesichtsausdruck-Gesichtsspiegelung_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Gesichtshaelften-Gesichtsausdruck-Gesichtsspiegelung_de.php',
            titel => 'Gesichtshälften, Gesichtsspannung und Gesichtsspiegelung - Spannungsspiel des Lebens - Deutsch',
            // -> Gesichtssymmetrie wg Google?
@@ -2504,7 +2486,7 @@
                 ),
          ),
   'OM:SpaLeb:Gesundheit-Heilung' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Gesundheit-Heilung.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Gesundheit-Heilung.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Gesundheit-Heilung.php',
            titel => 'Gesundheit und Heilung - Spannungsspiel des Lebens - Deutsch',
            // -> Gesichtssymmetrie wg Google?
@@ -2523,7 +2505,7 @@
                 ),
          ),
   'OM:SpaLeb:Glueck' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Glueck-Sinn-Spannend-Leben.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Glueck-Sinn-Spannend-Leben.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Glueck-Sinn-Spannend-Leben.php',
            titel => 'Glück, Sinn und angenehme Spannung im Leben - Spannungsspiel des Lebens - Deutsch',
            description => 'Stellen wir die Frage nach dem Sinn des Lebens auch, wenn wir glücklich sind? Das Leben und seinen Sinn verstehen – geht das?',
@@ -2540,7 +2522,7 @@
                 ),
          ),
   'OM:SpaLeb:Information-Kommunikation' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Information-und-Kommunikation-Rueckkopplung-Regelprozesse.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Information-und-Kommunikation-Rueckkopplung-Regelprozesse.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Information-und-Kommunikation-Rueckkopplung-Regelprozesse.php',
            titel => 'Information und Kommunikation - Spannungsspiel des Lebens - Deutsch',
            description => 'Information gewinnt erst in einem rückgekoppelten System nachhaltigen Sinn und wird so zur Kommunikation.',
@@ -2556,7 +2538,7 @@
                 ),
          ),
   'OM:SpaLeb:Koerperliche-und-seelische-Existenz' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Koerperliche-seelische-Existenz_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Koerperliche-seelische-Existenz_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Koerperliche-seelische-Existenz_de.php',
            titel => 'Körperliche und seelische Existenz - Spannungsspiel des Lebens - Deutsch',
            description => 'Körperliche und seelische Existenz im Licht des Prinzips des Lebens.',
@@ -2586,7 +2568,7 @@
                 ),
          ),
   'OM:SpaLeb:Koerperspannung' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Koerperspannung_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Koerperspannung_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Koerperspannung_de.php',
            titel => 'Körperspannung - Spannungsspiel des Lebens - Deutsch',
            description => 'Körperspannung, Körper, Seele und Psychosomatik, im Licht des Prinzips des Lebens.',
@@ -2621,7 +2603,7 @@
                 ),
          ),
   'OM:SpaLeb:KIundRobotik' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Kuenstliche-Inteligenz-Robotik_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Kuenstliche-Inteligenz-Robotik_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Kuenstliche-Inteligenz-Robotik_de.php',
            titel => 'Künstliche Intelligenz und Robotik - Spannungsspiel des Lebens - Deutsch',
            description => 'Menschenähnliche Künstliche Intelligenz und Robotik sind nur über einen zentralen Regelprozess des (körperlichen) Lernens möglich. Die Nachbildung des Achtsamkeitsprozesses des Lebens.',
@@ -2635,7 +2617,7 @@
                 ),
          ),
    'OM:SpaLeb:Literatur' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Literatur_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Literatur_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Literatur_de.php',
            titel => 'Literatur - Spannungsspiel des Lebens - Deutsch',
            description => 'Literatur zum ›Spannungsspiel des Lebens‹.',
@@ -2648,7 +2630,7 @@
                 ),
          ),
   'OM:SpaLeb:Meditation-Selbstakupressur' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Meditation-Selbstakupressur_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Meditation-Selbstakupressur_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Meditation-Selbstakupressur_de.php',
            titel => 'Meditation mit Selbstakupressur - Spannungsspiel des Lebens - Deutsch',
            description => 'Achtsamkeitsmeditation und der magische Selbstschutz – Durch sanfte Akupressur versteckte psychosomatische Schmerzen aufspüren und in achtsamer Meditation einen Prozess der Veränderung und Verarbeitung anstoßen.',
@@ -2662,7 +2644,7 @@
                 ),
          ),
   'OM:SpaLeb:Meetup-Yoga-Meets-Wissenschaft' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Meetup-Yoga-Alternativmedizin-meets-Wissenschaft-Medizin-Physik.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Meetup-Yoga-Alternativmedizin-meets-Wissenschaft-Medizin-Physik.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Meetup-Yoga-Alternativmedizin-meets-Wissenschaft-Medizin-Physik.php',
            titel => 'Meetup: Yoga, Alternativmedizin meets Wissenschaft, Medizin, Physik - Spannungsspiel des Lebens - Deutsch',
            description => 'Medizin, Psychologie, alternative Medizin (Heilpraktik) und Yoga können mit Hilfe des Modells des Achtsamkeitsprozesses im Zusammenhang verstanden werden. Unser Achtsamkeitsprozess, als zentraler Regelprozess des Lebens, ist die Grundlage unseres Gedeihens und unserer Heilung.',
@@ -2676,7 +2658,7 @@
                 ),
          ),
   'OM:SpaLeb:Philosophie' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Philosophie.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Philosophie.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Philosophie.php',
            titel => 'Philosophie - Spannungsspiel des Lebens - Deutsch',
            description => 'Die Wichtigkeit des Philosophierens für unsere Persönlichkeitsentwicklung, unser Wohlbefinden und unsere Gesundheit neu verstehen. — Philosophieren trägt nicht nur analytische, sondern auch starke psychotherapeutische und körpertherapeutische Anteile in sich.',
@@ -2690,7 +2672,7 @@
                 ),
          ),
   'OM:SpaLeb:Psyche-und-Stimmung' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Psyche-und-Stimmung_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Psyche-und-Stimmung_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Psyche-und-Stimmung_de.php',
            titel => 'Psyche, Stimmung, Emotionalität und Geist - Spannungsspiel des Lebens - Deutsch',
            //description => 'Psyche, Stimmung, Emotionalität und Geist im Licht des Prinzips des Lebens.',
@@ -2733,7 +2715,7 @@
                 ),
          ),
   'OM:SpaLeb:Psychosomatik-Entscheidungen' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Psychosomatik-unser-kluger-Umgang-mit-Entscheidungen.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Psychosomatik-unser-kluger-Umgang-mit-Entscheidungen.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Psychosomatik-unser-kluger-Umgang-mit-Entscheidungen.php',
            titel => 'Psychosomatik — unser kluger Umgang mit Entscheidungen - Spannungsspiel des Lebens - Deutsch',
            description => 'Das Spiel mit der Tolleranz von Ambiguitäten und deren Auflösungen. Vorschnelle Entscheidungen führen zur Hektik. Unaufgelöste Widersprüche in unseren Gefühlen und Handlungen erzeugen psychische und körperliche Blockaden – Verspannungen –, oder führen dazu, dass wir letargisch werden.',
@@ -2751,7 +2733,7 @@
                 ),
          ),
   'OM:SpaLeb:Psychosomatik-Stress' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Psychosomatische-Verspannungen-durch-Stress_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Psychosomatische-Verspannungen-durch-Stress_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Psychosomatische-Verspannungen-durch-Stress_de.php',
            titel => 'Psychosomatische Verspannungen durch Stress - Spannungsspiel des Lebens - Deutsch',
            description => 'Auswirkungen von Stress auf den Körper durch psychosomatische Urreflexe. Chronischer Stress durch Sorgen und Ängste triggert über ursprüngliche Selbstschutzreflexe Muskeln und Faszien, die so chronisch und entzündlich Verspannen können, und kann Körperfunktionen unterdrücken.',
@@ -2783,7 +2765,7 @@
                 ),
          ),
   'OM:SpaLeb:Rueckenschmerzen-Atmung-Zwerchfell' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Rueckenschmerzen-Bandscheibenvorfall-Atmung-Zwerchfell_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Rueckenschmerzen-Bandscheibenvorfall-Atmung-Zwerchfell_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Rueckenschmerzen-Bandscheibenvorfall-Atmung-Zwerchfell_de.php',
            titel => 'Rückenschmerzen, Bandscheibenvorfall, Atmung und Zwerchfell - Spannungsspiel des Lebens - Deutsch',
            description => 'Die bisher unbekannte Rolle des Zwerchfells. Die Störung der Atemspannung kann massive gesundheitliche Probleme mit sich bringen.',
@@ -2799,7 +2781,7 @@
                 ),
          ),
   'OM:SpaLeb:Schlaf-und-Aktivsein' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Schlaf-und-Aktivsein-Unterbewustsein-und-Bewusstsein.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Schlaf-und-Aktivsein-Unterbewustsein-und-Bewusstsein.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Schlaf-und-Aktivsein-Unterbewustsein-und-Bewusstsein.php',
            titel => 'Schlaf und Aktivsein, Unterbewusstsein und Bewusstsein - Spannungsspiel des Lebens - Deutsch',
            description => 'Unser Schlaf entspringt dem Gefühlspol unseres Achtsamkeitsprozesses, unser Aktivsein unserem Handlungspol. Ebenso ist unser Unterbewusstsein mit unserem Schlaf und Gefühl verbunden, wie unser Bewusstsein mit unserem Aktivsein und unseren Handlungen.',
@@ -2813,7 +2795,7 @@
                 ),
          ),
   'OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Vortrag-Physik-Achtsamkeit-und-Yoga_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Vortrag-Physik-Achtsamkeit-und-Yoga_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Vortrag-Physik-Achtsamkeit-und-Yoga_de.php',
            titel => 'Vortrag: Physik, Achtsamkeit und Yoga - Spannungsspiel des Lebens - Deutsch',
            description => 'Was hat Physik mit Leben und Yoga zu tun? Und welche Rolle spielt dabei der Achtsamkeitsprozess?',
@@ -2831,7 +2813,7 @@
                 ),
          ),
   'OM:SpaLeb:Vor-PerspektivW-AmbiguitaetsT-Entscheid-Demokra' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Vortrag-Perspektivwechsel-Ambiguitaetstoleranz-Entscheidungen-Demokratie_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Vortrag-Perspektivwechsel-Ambiguitaetstoleranz-Entscheidungen-Demokratie_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Vortrag-Perspektivwechsel-Ambiguitaetstoleranz-Entscheidungen-Demokratie_de.php',
            titel => 'Vortrag: Perspektivwechsel, Ambiguitätstoleranz und Entscheidungen - Spannungsspiel des Lebens - Deutsch',
            description => 'Wie Standpunkte und ihre Wahrheiten meine Gefühle bestimmen können. Wann Widersprüche bleiben, wann sie aufgelöste werden sollten und was dies für unsere Entscheidungen bedeutet.',
@@ -2847,7 +2829,7 @@
                 ),
          ),
   'OM:SpaLeb:Vorwort' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Vorwort_de.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Vorwort_de.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Vorwort_de.php',
            titel => 'Vorwort - Spannungsspiel des Lebens - Deutsch',
            description => 'Sich auf den Weg zu machen zu versuchen zu verstehen, wie das Leben und wie am Ende vielleicht die Welt funktioniert, ist ein faszinierendes Abendteuer.',
@@ -2862,7 +2844,7 @@
                 ),
          ),
   'OM:SpaLeb:Was-ist-Leben' =>
-    array( url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Was-ist-Leben.php',
+    array( url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Was-ist-Leben.php',
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Was-ist-Leben.php',
            titel => 'Was ist Leben? - Spannungsspiel des Lebens - Deutsch',
            description => 'Neue Biophysik – alles existiert durch Regelprozesse. Das Prinzip des Lebens aus einer physikalisch-psychologischen Perspektive sehen.',
@@ -2887,7 +2869,7 @@
 
   'OM:VRT:' =>
     array_merge( $nSOSp_g_info_wolfgangHuss,
-    array( url_abs => 'http://www.nsosp.org/de/Vereinheitlichte-Relativitaetstheorie/',
+    array( url_abs => 'https://nsosp.org/de/Vereinheitlichte-Relativitaetstheorie/',
            url_rel => $Glo_PathRel_back.'../de/Vereinheitlichte-Relativitaetstheorie/',
            favicons_url_rel_opt => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/favicon/',
            //header_pict_name => 'Fractal-Quantum-Flow-Theory_En.jpg',
@@ -2914,7 +2896,7 @@
            litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
          )),
    'OM:VRT:Home' =>
-    array( url_abs => 'http://www.nsosp.org/de/Vereinheitlichte-Relativitaetstheorie/index.php',
+    array( url_abs => 'https://nsosp.org/de/Vereinheitlichte-Relativitaetstheorie/index.php',
            url_rel => $Glo_PathRel_back.'../de/Vereinheitlichte-Relativitaetstheorie/index.php',
            titel => 'Vereinheitlichte Relativitätstheorie (VRT) - Deutsch',
            description => 'Die strukturelle Vereinheitlichung der Speziellen und Allgemeinen Relativitätstheorie mit der Lorentzschen Äthertheorie. Ein Schritt zu Vereinheitlichung der Physik im Rahmen der Quanten-Fluss-Theorie. — Eine Vereinfachung Einsteins bei der Formulierung der Relativitätstheorie steht der Quantengravitation und der Vereinheitlichung der Physik im Weg.',
@@ -2930,7 +2912,7 @@
                 ),
          ),
    'OM:VRT:Einleitung' =>
-    array( url_abs => 'http://www.nsosp.org/de/Vereinheitlichte-Relativitaetstheorie/Einleitung_und_Hypothesen_zur_Quantengravitation_de.php',
+    array( url_abs => 'https://nsosp.org/de/Vereinheitlichte-Relativitaetstheorie/Einleitung_und_Hypothesen_zur_Quantengravitation_de.php',
            url_rel => $Glo_PathRel_back.'../de/Vereinheitlichte-Relativitaetstheorie/Einleitung_und_Hypothesen_zur_Quantengravitation_de.php',
            titel => 'Einleitung und Hypothesen zur Quantengravitation - Vereinheitlichte Relativitätstheorie (VRT) - Deutsch',
            description => 'Die Vereinheitlichung der Speziellen und Allgemeinen Relativitätstheorie mit der Lorentzschen Äthertheorie. Ein Schritt zu Vereinheitlichung der Physik im Rahmen der Quanten-Fluss-Theorie. – Die Quantengravitation ergibt sich aus einer Mediumtheorie der Gravitation.',
@@ -2950,7 +2932,7 @@
                 ),
          ),
    'OM:VRT:Laengenkontraktion-Bewegung' =>
-    array( url_abs => 'http://www.nsosp.org/de/Vereinheitlichte-Relativitaetstheorie/Laengenkontraktion-Materie-Bewegung_de.php',
+    array( url_abs => 'https://nsosp.org/de/Vereinheitlichte-Relativitaetstheorie/Laengenkontraktion-Materie-Bewegung_de.php',
            url_rel => $Glo_PathRel_back.'../de/Vereinheitlichte-Relativitaetstheorie/Laengenkontraktion-Materie-Bewegung_de.php',
            titel => 'Längenkontraktion der Materie bei Bewegung  - Vereinheitlichte Relativitätstheorie (VRT) - Deutsch',
            description => 'Längenkontraktion der Materie bei Bewegung durch Kontraktion der Wechselwirkungsfelder in Bewegungsrichtung.',
@@ -2964,7 +2946,7 @@
                 ),
          ),
    'OM:VRT:Literatur' =>
-    array( url_abs => 'http://www.nsosp.org/de/Vereinheitlichte-Relativitaetstheorie/Literatur_de.php',
+    array( url_abs => 'https://nsosp.org/de/Vereinheitlichte-Relativitaetstheorie/Literatur_de.php',
            url_rel => $Glo_PathRel_back.'../de/Vereinheitlichte-Relativitaetstheorie/Literatur_de.php',
            titel => 'Literatur - Vereinheitlichte Relativitätstheorie (VRT) - Deutsch',
            description => 'Literatur zur Vereinheitlichten Relativitätstheorie.',
@@ -2977,7 +2959,7 @@
                 ),
          ),
    'OM:VRT:Vereinheitlichung-RT-LET' =>
-    array( url_abs => 'http://www.nsosp.org/de/Vereinheitlichte-Relativitaetstheorie/Vereinheitlichung-Relativitaetstheorie-Lorentzsche-Aethertheorie_de.php',
+    array( url_abs => 'https://nsosp.org/de/Vereinheitlichte-Relativitaetstheorie/Vereinheitlichung-Relativitaetstheorie-Lorentzsche-Aethertheorie_de.php',
            url_rel => $Glo_PathRel_back.'../de/Vereinheitlichte-Relativitaetstheorie/Vereinheitlichung-Relativitaetstheorie-Lorentzsche-Aethertheorie_de.php',
            titel => 'Vereinheitlichung der Relativitaetstheorie und der Lorentzschen Äthertheorie - Vereinheitlichte Relativitätstheorie (VRT) - Deutsch',
            description => 'Die Vereinheitlichung der Speziellen und Allgemeinen Relativitätstheorie mit der Lorentzschen Äthertheorie. Ein Schritt zu Vereinheitlichung der Physik im Rahmen der Quanten-Fluss-Theorie – Vereinheitlichung.',
@@ -3014,7 +2996,7 @@
                 ),
          ),
   'OM:ZS:' =>
-    array( url_abs => 'http://www.nsosp.org/de/Zahlensemantik/',
+    array( url_abs => 'https://nsosp.org/de/Zahlensemantik/',
            url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/',
            favicons_url_rel_opt => $Glo_PathRel_back.'../de/Zahlensemantik/favicon/',
            //header_pict_name => 'Fractal-Quantum-Flow-Theory_En.jpg',
@@ -3048,7 +3030,7 @@
          ),
 
    'OM:ZS:Home' =>
-    array( url_abs => 'http://www.nsosp.org/de/Zahlensemantik/index.php',
+    array( url_abs => 'https://nsosp.org/de/Zahlensemantik/index.php',
            url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/index.php',
            titel => 'Zahlensemantik (ZS) - Deutsch',
            description => '\\name[undertitle]{OM:ZS:Home}. — \\name[description]{OM:ZS:Home}.',
@@ -3063,7 +3045,7 @@
                 ),
          ),
    'OM:ZS:Einleitung' =>
-    array( url_abs => 'http://www.nsosp.org/de/Zahlensemantik/Einleitung.php',
+    array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Einleitung.php',
            url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Einleitung.php',
            titel => 'Einleitung zur Zahlensemantik - Zahlensemantik (ZS) - Deutsch',
            description => '\\name[undertitle]{OM:ZS:Einleitung}. — \\name[description]{OM:ZS:Einleitung}.',
@@ -3081,7 +3063,7 @@
                 ),
          ),
    'OM:ZS:Literatur' =>
-    array( url_abs => 'http://www.nsosp.org/de/Zahlensemantik/Literatur.php',
+    array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Literatur.php',
            url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Literatur.php',
            titel => 'Literatur - Zahlensemantik (ZS) - Deutsch',
            description => 'Literatur zur Zahlensemantik.',
@@ -3279,7 +3261,7 @@
     echo '    <meta name="keywords"           content="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][keywords])).'">'."\n";
     echo '    <meta name="author"             content="Wolfgang Huss, info@nsosp.org">'."\n";
     echo '    <meta name="DC.Publisher"       content="MEDIA LINE DIGITAL e.K., info@media-line-digital.de">'."\n";
-    echo '    <meta name="DC.Date"            content="2023-05-01T08:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
+    echo '    <meta name="DC.Date"            content="2023-08-19T09:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
     echo '    <meta name="DC.Identifier"      content="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" scheme="DCTERMS.URI">'."\n";
     echo '    <meta rel="canonical"           href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" />'."\n";
     echo '    <meta name="DC.Language"        content="de">'."\n";
@@ -3459,7 +3441,7 @@
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
     echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Kontakt</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
-    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.30-d20230501-t0800" target="_blank">v9.30</a>'."\n";
+    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.31-d20230819-t0900" target="_blank">v9.31</a>'."\n";
     echo '        </p>'."\n";
     echo '			</div>'."\n";
     echo ''."\n";
@@ -3596,7 +3578,7 @@
     echo $offset.'    <br>'."\n";
     //%!echo $offset.'    <p style="color: #505050">'."\n";
     echo $offset.'    <p>'."\n";
-    echo $offset.'      Stand 01. Mai 2023, 08:00 CET.'."\n";
+    echo $offset.'      Stand 19. August 2023, 09:00 CET.'."\n";
     echo $offset.'    </p>'."\n";
     echo $offset.'    <br>'."\n";
     //%!echo $offset.'    <p style="font-size: 13px; line-height: 0.7em;">'."\n";

@@ -86,7 +86,7 @@
                     ''))),
                       
                   array( 'text', array( text => array(
-                    'Das Zählen ist in der Arithmetik, ja in der ganzen Mathematik, von zentraler Bedeutung.'."\n".
+                    'Das Zählen ist in der Arithmetik\\footnote{\\const{NSOSP_g_footnote_text_Arithmetik}}, ja in der ganzen Mathematik, von zentraler Bedeutung.'."\n".
                     'Auf die philosophische und auch physikalische Bedeutung, im Rahmen der Zeit, kommen wir im weiteren Verlauf'."\n".
                     'noch zu sprechen.'."\n",
                       'So lässt sich Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv} konsequenterweise nun wie folgt darstellen:'."\n".

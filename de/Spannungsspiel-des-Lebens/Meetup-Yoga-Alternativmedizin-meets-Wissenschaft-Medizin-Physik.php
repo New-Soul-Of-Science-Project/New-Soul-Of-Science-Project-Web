@@ -36,7 +36,7 @@
                 'Events')),
                   array( 'bulletlist', array( bullet_ary => array(
                         '\\bold{06.01.2020}: Meetup – \\jump[https://www.meetup.com/de-DE/Yoga-Alternativmedizin-meets-Wissenschaft-Medizin-Physik/events/265306791/?_xtd=gatlbWFpbF9jbGlja9oAJGJkNzc5NmU3LTY2YzMtNGQzNC1iYWM3LWM2YmExOTcxNTMzYQ&_af=event&_af_eid=265306791]{}{Gefühl und Psychologie in der Naturwissenschaft ?!} \\\\'."\n".
-                          'Handout zum Meetup: \\jump[http://www.nsosp.org/download/Meetup-Yoga-Altmed-meets-Wissensch-Med-Physik/20200106-Gefuehl-und-Psychologie-in-der-Naturwissenschaft-Handout.pdf]{}{Gefühl und Psychologie in der Naturwissenschaft ?!}',
+                          'Handout zum Meetup: \\jump[https://nsosp.org/download/Meetup-Yoga-Altmed-meets-Wissensch-Med-Physik/20200106-Gefuehl-und-Psychologie-in-der-Naturwissenschaft-Handout.pdf]{}{Gefühl und Psychologie in der Naturwissenschaft ?!}',
                     ))),
                       
                   array( 'jumplist', array(

@@ -26,7 +26,7 @@
                 'Motivation')),
                   array( 'text', array( text => array(
                     'Ein tiefgehendes naturphilosophisches Verständnis der Zeit scheint mir wichtig und wird allgemein gesucht, um grundlegende Probleme der Wissenschaft und im Besondern in der Physik anzugehen.'."\n".
-                    'Auch in der Mathematik spielt mit dem Zählen der Arithmetrik\\footnote{Internet: \\\\ Vgl. \\cite{wiki:Arithmetik:2015}.} ein zeitähnlicher Begriff eine zentrale Rolle.'."\n".
+                    'Auch in der Mathematik spielt mit dem Zählen der Arithmetik\\footnote{\\const{NSOSP_g_footnote_text_Arithmetik}} ein zeitähnlicher Begriff eine zentrale Rolle.'."\n".
                     'So ist es auch in der Musik beispielsweise.'."\n",
                       'Es gibt in mir schon länger das Gefühl, die Natur der Zeit zu durchdringen würde uns auch ein besseres Verständnis vom Leben und der eigenen Existenz ermöglichen.'."\n",
                       'Durch all dies angeregt und besonders durch meine langjährige Beschäftigung mit der Physik ausgelöst, wo die Zeit ganz offensichtlich fundamental ist,'."\n".

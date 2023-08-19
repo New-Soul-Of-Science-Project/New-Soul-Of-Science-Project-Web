@@ -5,7 +5,7 @@
     array_merge(
       $nSOSp_g_info_wolfgangHuss,
       array(
-    url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/index.php',
+    url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/index.php',
     url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/index.php',
     favicons_url_rel_opt => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/favicon/',
     name_short => 'SpaLeb',
@@ -32,7 +32,7 @@
   )),
   'OM:SpaLeb:Home' =>
     array(
-      url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/index.php',
+      url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/index.php',
       url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/index.php',
       titel => 'Spannungsspiel des Lebens (Neue Biophysik, NB) – Deutsch',
       description => '\\name[undertitle]{OM:SpaLeb:Home}. — \\name[description]{OM:SpaLeb:Home}.',
@@ -52,7 +52,7 @@
     ),
   'OM:SpaLeb:Care-Prozess' =>
     array(
-      url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Care-Prozess-Achtsamkeitsprozess-Definition-des-Lebens.php',
+      url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Care-Prozess-Achtsamkeitsprozess-Definition-des-Lebens.php',
       url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Care-Prozess-Achtsamkeitsprozess-Definition-des-Lebens.php',
       titel => 'Der Care-Prozess und Achtsamkeitsprozess (Definition des Lebens) - Spannungsspiel des Lebens - Deutsch',
       description => '\\name[undertitle]{OM:SpaLeb:Care-Prozess}. — \\name[description]{OM:SpaLeb:Care-Prozess}.',
@@ -82,7 +82,7 @@
     ),
   'OM:SpaLeb:Psychosomatik' =>
     array(
-      url_abs => 'http://www.nsosp.org/de/Spannungsspiel-des-Lebens/Psychosomatik.php',
+      url_abs => 'https://nsosp.org/de/Spannungsspiel-des-Lebens/Psychosomatik.php',
       url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Psychosomatik.php',
       titel => 'Die Psychosomatik - Spannungsspiel des Lebens - Deutsch',
       description => '\\name[undertitle]{OM:SpaLeb:Psychosomatik}. — \\name[description]{OM:SpaLeb:Psychosomatik}.',

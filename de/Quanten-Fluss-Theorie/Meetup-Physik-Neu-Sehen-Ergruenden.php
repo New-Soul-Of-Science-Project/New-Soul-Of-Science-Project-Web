@@ -40,7 +40,7 @@
                 'Events')),
                   array( 'bulletlist', array( bullet_ary => array(
                         '\\bold{13.01.2020}: Meetup – \\jump[https://www.meetup.com/de-DE/Physik-Neu-Sehen-Ergruenden-Hamburg/events/267393083/]{}{Einsteins Gedankenexperiment der Lichtuhr} \\\\'."\n".
-                          'Handout zum Meetup: \\jump[http://www.nsosp.org/download/Meetup-Physik-Neu-Sehen-Ergruenden/20200113-Einsteins-Gedankenexperiment-der-Lichtuhr-Handout.pdf]{}{Einsteins Gedankenexperiment der Lichtuhr}',
+                          'Handout zum Meetup: \\jump[https://nsosp.org/download/Meetup-Physik-Neu-Sehen-Ergruenden/20200113-Einsteins-Gedankenexperiment-der-Lichtuhr-Handout.pdf]{}{Einsteins Gedankenexperiment der Lichtuhr}',
                     ))),
                       
                   array( 'jumplist', array(

@@ -4,7 +4,7 @@
       array_merge(
         $nSOSp_g_info_wolfgangHuss,
         array(
-      url_abs => 'http://www.nsosp.org/de/Operialtheorie/',
+      url_abs => 'https://nsosp.org/de/Operialtheorie/',
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/',
       favicons_url_rel_opt => $Glo_PathRel_back.'../de/Operialtheorie/favicon/',
       name_short => 'OT',
@@ -30,9 +30,9 @@
       litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
     )),
     'OM:OT:Home' => array(
-      url_abs => 'http://www.nsosp.org/de/Operialtheorie/index.php',
+      url_abs => 'https://nsosp.org/de/Operialtheorie/index.php',
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/index.php',
-      pdfArchiveFolder => 'http://www.nsosp.org/download/PDF-Archiv/de/Operialtheorie/index/',
+      pdfArchiveFolder => 'https://nsosp.org/download/PDF-Archiv/de/Operialtheorie/index/',
       titel => 'Operialtheorie (OT) – Deutsch',
       description => 'Zählen und dann weiter …',
       description => '\\name[undertitle]{OM:OT:Home}. — \\name[description]{OM:OT:Home}.',
@@ -47,9 +47,9 @@
       ),
     ),
     'OM:OT:Einleitung' => array(
-      url_abs => 'http://www.nsosp.org/de/Operialtheorie/Einleitung.php',
+      url_abs => 'https://nsosp.org/de/Operialtheorie/Einleitung.php',
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Einleitung.php',
-      pdfArchiveFolder => 'http://www.nsosp.org/download/PDF-Archiv/de/Operialtheorie/Einleitung/',
+      pdfArchiveFolder => 'https://nsosp.org/download/PDF-Archiv/de/Operialtheorie/Einleitung/',
       titel => 'Einleitung - Operialtheorie - Deutsch',
       description => 'Einleitung zur ›Operialtheorie‹.',
       keywords => '',
@@ -81,7 +81,7 @@
       ),
     ),
     'OM:OT:Konstanzoperator' => array(
-      url_abs => 'http://www.nsosp.org/de/Operialtheorie/Konstanzoperator-Minus-Zwei-Operator.php',
+      url_abs => 'https://nsosp.org/de/Operialtheorie/Konstanzoperator-Minus-Zwei-Operator.php',
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Konstanzoperator-Minus-Zwei-Operator.php',
       titel => 'Konstanzoperator – Minus-Zwei-Operator - Operialtheorie - Deutsch',
       description => '\\name[undertitle]{OM:OT:Konstanzoperator}.\\hidden{ – \\name[description]{OM:OT:Konstanzoperator}.}',
@@ -98,7 +98,7 @@
       ),
     ),
     'OM:OT:Literatur' => array(
-      url_abs => 'http://www.nsosp.org/de/Operialtheorie/Literatur.php',
+      url_abs => 'https://nsosp.org/de/Operialtheorie/Literatur.php',
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Literatur.php',
       titel => 'Literatur - Operialtheorie - Deutsch',
       description => 'Literatur zur ›Operialtheorie‹.',
@@ -111,9 +111,9 @@
       ),
     ),
     'OM:OT:Modulo-Operatoren' => array(
-      url_abs => 'http://www.nsosp.org/de/Operialtheorie/Zaehl-Modulo-Operator-Modulo-Operator-Imaginaere-Operatoren.php',
+      url_abs => 'https://nsosp.org/de/Operialtheorie/Zaehl-Modulo-Operator-Modulo-Operator-Imaginaere-Operatoren.php',
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Zaehl-Modulo-Operator-Modulo-Operator-Imaginaere-Operatoren.php',
-      pdfArchiveFolder => 'http://www.nsosp.org/download/PDF-Archiv/de/Operialtheorie/Zaehl-Modulo-Operator-Modulo-Operator-Imaginaere-Operatoren/',
+      pdfArchiveFolder => 'https://nsosp.org/download/PDF-Archiv/de/Operialtheorie/Zaehl-Modulo-Operator-Modulo-Operator-Imaginaere-Operatoren/',
       titel => 'Modulo-Operatoren – Zähl-Modulo-Operator, Modulo-Operator, Imaginäre-Operatoren - Operialtheorie - Deutsch',
       description => '\\name[undertitle]{OM:OT:Modulo-Operatoren}. – \\name[description]{OM:OT:Modulo-Operatoren}.',
       keywords => '',
@@ -132,7 +132,7 @@
       ),
     ),
     'OM:OT:Sprungoperator' => array(
-      url_abs => 'http://www.nsosp.org/de/Operialtheorie/Sprungoperator-Quantensprungoperator-Minus-Eins-Operator.php',
+      url_abs => 'https://nsosp.org/de/Operialtheorie/Sprungoperator-Quantensprungoperator-Minus-Eins-Operator.php',
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Sprungoperator-Quantensprungoperator-Minus-Eins-Operator.php',
       titel => 'Sprungoperator – Quantensprungoperator \\\\ oder Minus-Eins-Operator - Operialtheorie - Deutsch',
       description => '\\name[undertitle]{OM:OT:Sprungoperator}.\\hidden{ – \\name[description]{OM:OT:Sprungoperator}.}',
@@ -150,9 +150,9 @@
       ),
     ),
     'OM:OT:Zaehloperator' => array(
-      url_abs => 'http://www.nsosp.org/de/Operialtheorie/Zaehloperator-Inkrement-Operator-Null-Operator.php',
+      url_abs => 'https://nsosp.org/de/Operialtheorie/Zaehloperator-Inkrement-Operator-Null-Operator.php',
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Zaehloperator-Inkrement-Operator-Null-Operator.php',
-      pdfArchiveFolder => 'http://www.nsosp.org/download/PDF-Archiv/de/Operialtheorie/Zaehloperator-Inkrement-Operator-Null-Operator/',
+      pdfArchiveFolder => 'https://nsosp.org/download/PDF-Archiv/de/Operialtheorie/Zaehloperator-Inkrement-Operator-Null-Operator/',
       titel => 'Zähloperator – Inkrement-Operator oder Null-Operator - Operialtheorie - Deutsch',
       description => '\\name[undertitle]{OM:OT:Zaehloperator}.\\hidden{ – \\name[description]{OM:OT:Zaehloperator}.}',
       keywords => '',
@@ -172,7 +172,7 @@
       ),
     ),
     'OM:OT:Vorwort' => array(
-      url_abs => 'http://www.nsosp.org/de/Operialtheorie/Vorwort.php',
+      url_abs => 'https://nsosp.org/de/Operialtheorie/Vorwort.php',
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Vorwort.php',
       titel => 'Vorwort - Operialtheorie - Deutsch',
       description => 'Vorwort zur ›Operialtheorie‹.',

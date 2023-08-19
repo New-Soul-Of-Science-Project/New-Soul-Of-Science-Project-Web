@@ -4,10 +4,12 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 07.04.2023, 19:00h
+  // #: Stand: 29.05.2023, 10:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20230529:  +:  "To_f_replace_callback__latexcommand__anchor", "To_f_replace_callback__latexcommand__anchorname": New.
+  //                      +:  "$Glo_g_Text_replace_ary": New.
   //           20230407:  +:  "$To_g_Text_replace_preg_ary": Move entry "quote" from "Science.php" to here.
   //                      >:  "$To_g_Text_replace_preg_ary", "quote": Change from "preg_replace_callback" to "latexcommand".
   //           20221223:  !:  "$To_g_Text_replace_ary":  move '-Quantenfeldtheorie-' to website file.
@@ -188,11 +190,6 @@
   // v01.001:  20130515:  +:  History started.
   
   
-  // #: In Mind:
-
-  // -!!! "$To_g_Text_replace_preg_ary":  "const":  Do not use "Sc_XXX" in Tools! This have to find an other solution! A global variable in Tools inited with the Tools variant that can be set different by Science.
-  
-  
   
   // echo "Hello, world!";
   // phpinfo();
@@ -248,6 +245,8 @@
   $Glo_g_Intent_InFirstLine = false;
   $Glo_g_FigAlign = 'left';
   
+  $Glo_g_Text_replace_ary = null; // #: is set later!
+  $Glo_g_Text_replace_preg_ary = null; // #: is set later!
   $Glo_g_Paragraph_fn = 'To_f_Paragraph';
   
   
@@ -443,6 +442,8 @@
     array( '→', '&rarr;'),
     array( '↔︎', '&harr;'),
   );
+
+  $Glo_g_Text_replace_ary = $To_g_Text_replace_ary;
 
 
   function To_f_replace_str_ary( $the_str, $replace_str_ary)
@@ -728,10 +729,48 @@
   }
 
 
+  function To_f_replace_callback__latexcommand__anchor( $value, $replace_ary=null, $replace_preg_ary=null)
+  {
+    global $To_g_anchor_ary_dim, $To_g_anchor_ary;
+
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 2, 0))
+    {
+      $To_g_anchor_ary[label_name][] = $value[0][0];
+      $To_g_anchor_ary[label_text][] = To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value[0][1]);
+      $To_g_anchor_ary_dim += 1;
+
+      return '<a name="'.($To_g_anchor_ary[label_name][$To_g_anchor_ary_dim - 1]).'">'.($To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1]).'</a>';
+    
+    }
+    else
+    
+      return 'Error: \\anchor: Parameter amount is not 2 and 0 optional! Value: $value';
+      
+  }
+
+
+  function To_f_replace_callback__latexcommand__anchorname( $value, $replace_ary=null, $replace_preg_ary=null)
+  {
+    global $To_g_anchor_ary_dim, $To_g_anchor_ary;
+
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 0))
+    {
+      $To_g_anchor_ary[label_name][] = $value[0][0];
+      $To_g_anchor_ary[label_text][] = To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '\\name{'.($value[0][0]).'}');
+      $To_g_anchor_ary_dim += 1;
+
+      return '<a name="'.($To_g_anchor_ary[label_name][$To_g_anchor_ary_dim - 1]).'">'.($To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1]).'</a>';
+    
+    }
+    else
+    
+      return 'Error: \\anchorname: Parameter amount is not 1 and 0 optional! Value: $value';
+      
+  }
+
+
   function To_f_replace_callback__latexcommand__const( $value, $replace_ary=null, $replace_preg_ary=null)
   {
-    //%! if ($value[0] != null)
-    // if (0 < count( $value))
     if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 0))
     {
       $varname = $value[0][0];
@@ -1142,6 +1181,20 @@
                                              param_optional_max => 0,
                                              callback_f => 'To_f_replace_callback__latexcommand__const',
                                           ),
+                                    'anchor' =>
+                                      array( type => 'latexcommand',
+                                             search => '\\anchor',
+                                             param_dim => 2,
+                                             param_optional_max => 0,
+                                             callback_f => 'To_f_replace_callback__latexcommand__anchor',
+                                          ),
+                                    'anchorname' =>
+                                      array( type => 'latexcommand',
+                                             search => '\\anchorname',
+                                             param_dim => 1,
+                                             param_optional_max => 0,
+                                             callback_f => 'To_f_replace_callback__latexcommand__anchorname',
+                                          ),
                                     'color' =>
                                       array( type => 'latexcommand',
                                              search => '\\color',
@@ -1220,6 +1273,9 @@
                                              callback_f => 'To_f_replace_callback__latexcommand__quote',
                                           ),
                                   );
+
+  $Glo_g_Text_replace_preg_ary = $To_g_Text_replace_preg_ary;
+
 
 
   function To_f_Text_replace_html( $replace_ary=null, $replace_preg_ary=null, $text)

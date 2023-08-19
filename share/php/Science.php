@@ -3,10 +3,18 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 07.04.2023, 19:00h
+  // #: Stand: 03.08.2023, 10:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20230803:  +:  "$Sc_g_equation_replace_ary":  '  \land  ' -> '\;\;\;\land\;\;\;' is new.
+  //           20230802:  +:  "$Sc_g_equation_replace_ary":  '  \lor  ' -> '\;\;\;\lor\;\;\;', '  \Leftrightarrow  ' -> '\;\;\;\Leftrightarrow\;\;\;', '  \Rightarrow  ' -> '\;\;\;\Rightarrow\;\;\;' are new.
+  //                      >:  "$Sc_g_equation_replace_MathJax_ary":  '{  \Leftrightarrow  ' -> '{  \Leftrightarrow\hspace{10mm}', '{  \Rightarrow  ' -> '{  \Rightarrow\hspace{10mm}' are new.
+  //           20230722:  +:  "$Sc_g_equation_replace_ary":  '  \widehat{=}  ' -> '\;\;\;\widehat{=}\;\;\;', ' \widehat{=} ' -> '\;\widehat{=}\;' are new.
+  //           20230613:  *:  "Sc_f_replace_callback__latexcommand__latexmath":  Use 'To_f_replace_callback__latexcommand__parameterCheck' for parameter checking.
+  //           20230612:  +:  "$Sc_g_equation_replace_ary":  '  >  ' -> '\;\;\;>\;\;\;', '  \geq  ' -> '\;\;\;\geq\;\;\;' is new.
+  //           20230529:  +:  "$Glo_g_Text_replace_ary": New.
+  //           20230528:  *:  "Sc_f_equation_list": Move equation anchor from equation number to equation itself.
   //           20230407:  -:  "$Sc_g_Text_replace_preg_ary": Move entry "quote" to "Tools.php".
   //           20230402:  +:  "$Sc_g_equation_replace_ary":  '  ?:=  ' -> '\;\;\;\overset{?}{≔}\;\;\;' is new.
   //           20230321:  +:  "$Sc_g_Text_replace_ary":  Element "\M(Q)" as "&#8474;" (Double-struck capital Q) is new.
@@ -339,6 +347,9 @@
     )
   );
 
+  $Glo_g_Text_replace_ary = $Sc_g_Text_replace_ary;
+
+
   // #: Replaces all simple LaTeX character notations with the usual chars.
   // #: The order of entries may be important: As example XXX.
   $Sc_g_LaTeX_replace_ary =       array(
@@ -388,7 +399,8 @@
   function Sc_f_replace_callback__latexcommand__latexmath( $value, $replace_ary=null, $replace_preg_ary=null)
   {
     //%! if ($value[0] != null)
-    if (0 < count( $value))  // !!!: Change this to "To_f_replace_callback__latexcommand__parameterCheck" see above.
+    //%! if (0 < count( $value))  // !!!: Change this to "To_f_replace_callback__latexcommand__parameterCheck" see above.
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 0))
     {
       
       //-- return Sc_f_equation_latex_html( $value[0][0], ($value[1] == null) ? "" : (($value[1][0] == null) ? "" : $value[1][0]), ($value[1] == null) ? "Google" : (($value[1][1] == null) ? "Google" : $value[1][1]), "inline");
@@ -543,6 +555,8 @@
                                              ),
                                           )
                                     );
+
+  $Glo_g_Text_replace_preg_ary = $Sc_g_Text_replace_preg_ary;
   
   
 
@@ -602,17 +616,26 @@
   // #: The order of entries may be important: As example see first ' + '-> ' \;+\; ' and than '+' -> '%2B'.
   $Sc_g_equation_replace_ary = array(
                                     // #: Arrange space around symbols and save chars.
+                                    array( '  \Rightarrow  ', '\;\;\;\Rightarrow\;\;\;'),
+                                    array( '  \Leftrightarrow  ', '\;\;\;\Leftrightarrow\;\;\;'),
+                                    array( '  \land  ', '\;\;\;\land\;\;\;'),
+                                    array( '  \lor  ', '\;\;\;\lor\;\;\;'),
                                     array( '  =  ', '\;\;\;=\;\;\;'),
                                     array( '  \neq  ', '\;\;\;\neq\;\;\;'),
                                     array( '  <  ', '\;\;\;<\;\;\;'),
                                     array( '  \leq  ', '\;\;\;\leq\;\;\;'),
+                                    array( '  >  ', '\;\;\;>\;\;\;'),
+                                    array( '  \geq  ', '\;\;\;\geq\;\;\;'),
                                     array( '  \approx  ', '\;\;\;\approx\;\;\;'),
                                     array( '  \sim  ', '\;\;\;\sim\;\;\;'),
                                     array( '  \ll  ', '\;\;\;\ll\;\;\;'),
                                     array( '  ?:=  ', '\;\;\;\overset{?}{≔}\;\;\;'),
+                                    array( '  \widehat{=}  ', '\;\;\;\widehat{=}\;\;\;'),
+                                    array( ' \widehat{=} ', '\;\widehat{=}\;'),
                                     array( ':=', '≔'),
                                     array( '  ≔  ', '\;\;\;≔\;\;\;'),
-                                    array( '  ?=  ', '\;\;\;\overset{?}{=}\;\;\;'),
+                                    array( '  ?=  ', '\;\;\;?=\;\;\;'),
+                                    array( '?=', '\overset{?}{=}'),
                                     array( '  \mapsto  ', '\;\;\;\mapsto\;\;\;'),
                                     array( '  \in  ', '\;\;\;\in\;\;\;'),
                                     array( '  ?\in  ', '\;\;\;\overset{?}{\in}\;\;\;'),
@@ -666,8 +689,8 @@
   $Sc_g_equation_replace_Google_ary = array_merge(
                                   array(
                                     // #: Simplify commands and save chars.
-                                    array( '\Rightarrow ', '\Rightarrow\hspace{20mm}'),
-                                    array( '\Leftrightarrow ', '\Leftrightarrow\hspace{20mm}'),
+                                    array( '\Rightarrow  ', '\Rightarrow\hspace{20mm}'),
+                                    array( '\Leftrightarrow  ', '\Leftrightarrow\hspace{20mm}'),
                                   ),
                                   $Sc_g_equation_replace_ary,
                                   array(
@@ -695,8 +718,8 @@
   $Sc_g_equation_replace_MathJax_ary = array_merge(
                                   array(
                                     // #: Simplify commands and save chars.
-                                    array( '\Rightarrow ', '\Rightarrow\hspace{10mm}'),
-                                    array( '\Leftrightarrow ', '\Leftrightarrow\hspace{10mm}'),
+                                    array( '{  \Rightarrow  ', '{  \Rightarrow\hspace{10mm}'),
+                                    array( '{  \Leftrightarrow  ', '{  \Leftrightarrow\hspace{10mm}'),
                                   ),
                                   $Sc_g_equation_replace_ary,
                                   array(
@@ -724,7 +747,7 @@
   
   function Sc_f_equation_latex_str_html( $latex_str='', $latex_color='505050', $latex_tech='Google', $style='displayed')
   {
-    global /*$Sc_g_equation_replace_ary, */$Sc_g_equation_replace_Google_ary, $Sc_g_equation_replace_MathJax_ary;
+    global $Sc_g_equation_replace_Google_ary, $Sc_g_equation_replace_MathJax_ary;
     
     //$latex_str = To_f_replace_str_ary( $latex_str, $Sc_g_equation_replace_ary);  // #: Moved to case.
     
@@ -856,21 +879,6 @@
   $Sc_g_equation_list_LineDistance = '10';
   
   
-            /* <!-- ?php Sc_f_equation_list( 'XXX', '          ', array(
-                                      array( display => 'on',  latex => 'XXX',
-                                                               label_name => 'Equ-XXX', label_text => 'XXX', label_incr => true,
-                                                               footnote => 'XXX'),
-                                      array( display => 'on',  latex => 'XXX',
-                                                               label_name => 'Equ-XXX', label_text => 'XXX', label_incr => true,
-                                                               footnote => 'XXX'),
-                                      array( display => 'on',  latex => 'XXX',
-                                                               label_name => 'Equ-XXX', label_text => 'XXX', label_incr => true,
-                                                               footnote => 'XXX'),
-                                      array( display => 'on',  latex => 'XXX',
-                                                               label_name => 'Equ-XXX', label_text => 'XXX', label_incr => true,
-                                                               footnote => 'XXX'))); ? -->*/
-
-  
   const display = 'display';
   const latex = 'latex';
   const label_incr = 'label_incr';
@@ -882,6 +890,13 @@
   {
     global $Glo_g_Color_list, $To_g_anchor_ary_dim, $To_g_anchor_ary, $To_g_elements_hides_ary_dim, $To_g_elements_hides_ary, $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Sc_g_equation_auto_num,
             $Sc_g_equation_list_SpaceBefore, $Sc_g_equation_list_SpaceAfter, $Sc_g_equation_list_LineDistance;
+       
+    // #!: error
+    if (0 < count($list) && $list[count($list) - 1][display] == 'off') {
+      // print_r( '>>> error: In "Sc_f_equation_list" last equation is not shown! Means "display => \'off\'"');
+      echo '<p style="color: red;">>>> error: In "Sc_f_equation_list" last equation is not shown! Means "display => \'off\'"</p>';
+      return null;
+    }
 
     // #: Start with visibility, than it is visible, if JavaScript is not aviable. Than Google will see the text.
     $start_display = 'showContent';
@@ -956,6 +971,7 @@
         if ($display_is || !array_key_exists( latex_if_visible, $value))
         {
           echo $offset.'    <td align="center">'."\n";
+          echo $offset.'      <a name="'.$To_g_anchor_ary[label_name][$To_g_anchor_ary_dim - 1].'"></a>'."\n";
           echo $offset.'      '.(Sc_f_equation_latex( $value[latex], $latex_color, $latex_tech)).' </td>'."\n";
         } else
         {     // #: "$value[latex]" is array.
@@ -971,11 +987,7 @@
           $local_elements_hides_ele_num++;
           echo $offset.'      '.(Sc_f_equation_latex( $value[latex_if_visible], $latex_color, $latex_tech)).' </td>'."\n";
         }
-        //%! echo $offset.'    <td> <span style="color: #A0A0A0">'."\n";
         echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'">'."\n";
-        echo $offset.'      <a name="'.$To_g_anchor_ary[label_name][$To_g_anchor_ary_dim - 1].'"></a>'."\n";
-             // #: This anchor position is not ideal, because the whole equation is not shown if someone jumps to here. But the better seaming position
-             //      right after "<tr>" shows the beginning of the whole list and the position in "<td>" of the equation does not work because of possible name dubbing.
         {
           echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
           if (array_key_exists( footnote, $value))
@@ -984,7 +996,6 @@
             {$footnote_num_color = To_f_Color( $value[footnote_num_color]);}
             else
               $footnote_num_color = '';
-            //%!echo Sc_f_footnote_add( $value[footnote]);
             echo Sc_f_footnote_add( $value[footnote], $footnote_num_color);
           }
           echo $offset.'  </span> </td> </tr>'."\n";
@@ -1039,12 +1050,10 @@
         $To_g_elements_hides_ary[contentAry][$To_g_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
         $local_elements_hides_ele_num++;
         echo $offset.'    <td align="center">'."\n";
+        echo $offset.'      <a name="'.$To_g_anchor_ary[label_name][$To_g_anchor_ary_dim - 1].'"></a>'."\n";
         echo $offset.'      '.(Sc_f_equation_latex( $value[latex], $latex_color, $latex_tech)).' </td>'."\n";
         //%! echo $offset.'    <td> <span style="color: #A0A0A0">'."\n";
         echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'">'."\n";
-        echo $offset.'      <a name="'.$To_g_anchor_ary[label_name][$To_g_anchor_ary_dim - 1].'"></a>'."\n";
-             // #: This anchor position is no ideal, because the whole equation is not shown if someone jumps to here. But the better seaming position
-             //      right after "<tr>" shows the beginning of the whole list and the position in "<td>" of the equation does not work because of possible name dubbing.
         {
           echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
           if (array_key_exists( footnote, $value))
