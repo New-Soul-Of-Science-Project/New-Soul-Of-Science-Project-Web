@@ -529,4 +529,11 @@ td.tools-class-text-figure {
     display: none;
   }
 
+  .content {
+    height: 100%;
+  }
+
+  .footer-extra-table {
+    display: block;
+  }
 }

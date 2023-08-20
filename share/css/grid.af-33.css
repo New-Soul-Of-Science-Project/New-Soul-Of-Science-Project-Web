@@ -33,6 +33,11 @@
 
   #container {
     max-width: 730px;
+    height: 100%;
+  }
+
+  #content {
+    max-width: 100%;
   }
 
 }
