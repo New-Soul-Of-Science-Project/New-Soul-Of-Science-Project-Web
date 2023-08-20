@@ -2,10 +2,11 @@
 // #: Name:  "Tools.js"
 
 
-// #: Stand: 07.08.2022, 18:00h
+// #: Stand: 20.08.2023, 17:00h
 
 // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+//          20230820:  +:  "To_f_showMenu" for mobile mode.
 //          20220807:  +:  "To_f_manage_site_end", "To_f_manage_beforePrint", "To_f_manage_afterPrint":  Implement event handlers for printing.
 //v01.001:  20130515:  +:  History started.
 //          20170129:  +:  "To_f_manage_site_end":  "autoResize = false" is new.
@@ -173,6 +174,7 @@ function To_f_hash_changed( hash)
 
 
 var To_g_rememberOldStatus_elements_hides_ary = null;
+var To_g_showMenu = false;
 
 
 function To_f_openAll( rememberOldStatus = false)
@@ -589,6 +591,33 @@ function To_f_expand()
       To_f_closeAll( true);
     }
     To_f_setExpandIcons();
+  }
+}
+
+
+
+function To_f_showMenu()
+{
+  if (document.getElementById)
+  {
+    if (!To_g_showMenu)
+    {
+      console.log('Show Menu');
+      console.log('Set Menu Icons');
+      
+      document.getElementById( 'MenuUnviewed').style.display = '';
+      document.getElementById( 'MenuViewed').style.display = 'none';
+      
+      To_g_showMenu = true;
+    } else {
+      console.log('Hide Menu');
+      console.log('Set Menu Icons');
+
+      document.getElementById( 'MenuUnviewed').style.display = 'none';
+      document.getElementById( 'MenuViewed').style.display = '';
+      
+      To_g_showMenu = false;
+    }
   }
 }
 

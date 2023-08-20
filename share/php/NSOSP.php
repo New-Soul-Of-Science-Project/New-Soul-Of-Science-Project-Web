@@ -3478,32 +3478,53 @@
   $NSOSP_g_expandSVG = file_get_contents(
       $Glo_PathRel_back.'../share/images/_icons/svg/expand.svg'
   );
-  
+  $NSOSP_g_barsSVG = file_get_contents(
+      $Glo_PathRel_back.'../share/images/_icons/svg/bars.svg'
+  );
+
   function FrQFT_f_Div_WrapperBegin( $offset, $backward_link='')
   {
     global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ;
     global $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary;
-    global $NSOSP_g_printSVG, $NSOSP_g_expandSVG;
+    global $NSOSP_g_barsSVG, $NSOSP_g_printSVG, $NSOSP_g_expandSVG;
 
     echo         '<div id="wrapper" class="wrapper">'."\n";
+    
+    echo $offset.'  <div class="main-function-buttons-sticky">'."\n";
+    echo $offset.'    <div class="main-function-buttons-div">'."\n";
+    echo $offset.'      <div id="Menu" class="main-function-button-menu">'."\n";
+    echo $offset.'        <div id="MenuUnviewed" class="main-function-button--inaktiv" style="display: ;" onclick="To_f_showMenu()">'."\n";
+    echo $offset.'          <img class="main-function-button">'."\n";
+    echo $offset.'            '.($NSOSP_g_barsSVG)."\n";
+    echo $offset.'          </img>'."\n";
+    echo $offset.'        </div>'."\n";
+    echo $offset.'        <div id="MenuViewed" class="main-function-button--aktiv" style="display: none;" onclick="To_f_showMenu()">'."\n";
+    echo $offset.'          <img class="main-function-button">'."\n";
+    echo $offset.'            '.($NSOSP_g_barsSVG)."\n";
+    echo $offset.'          </img>'."\n";
+    echo $offset.'        </div>'."\n";
+    echo $offset.'      </div>'."\n";
+    echo $offset.'      <div class="main-function-button--inaktiv" onclick="To_f_print()">'."\n";
+    echo $offset.'        <img class="main-function-button">'."\n";
+    echo $offset.'          '.($NSOSP_g_printSVG)."\n";
+    echo $offset.'        </img>'."\n";
+    echo $offset.'      </div>'."\n";
+    echo $offset.'      <div id="Expand">'."\n";
+    echo $offset.'        <div id="isUnexpanded" class="main-function-button--inaktiv" style="display: ;" onclick="To_f_expand()">'."\n";
+    echo $offset.'          <img class="main-function-button">'."\n";
+    echo $offset.'            '.($NSOSP_g_expandSVG)."\n";
+    echo $offset.'          </img>'."\n";
+    echo $offset.'        </div>'."\n";
+    echo $offset.'        <div id="isExpanded" class="main-function-button--aktiv" style="display: none;" onclick="To_f_expand()">'."\n";
+    echo $offset.'          <img class="main-function-button">'."\n";
+    echo $offset.'          '.($NSOSP_g_expandSVG)."\n";
+    echo $offset.'          </img>'."\n";
+    echo $offset.'        </div>'."\n";
+    echo $offset.'      </div>'."\n";
+    echo $offset.'    </div>'."\n";
+    echo $offset.'  </div>'."\n";
+    
     echo $offset.'  <div id="content" class="content main-shadow-0-5-30" style="">'."\n";
-    echo '            <div class="main-print-expand-div">'."\n";
-    echo '              <div class="main-print-div" onclick="To_f_print()">'."\n";
-    echo '                <img class="main-print-expand">'."\n";
-    echo '                  '.($NSOSP_g_printSVG)."\n";
-    echo '                </img>'."\n";
-    echo '              </div>'."\n";
-    echo '              <div id="isUnexpanded" class="main-unexpanded-div" style="display: ;" onclick="To_f_expand()">'."\n";
-    echo '                <img class="main-print-expand">'."\n";
-    echo '                  '.($NSOSP_g_expandSVG)."\n";
-    echo '                </img>'."\n";
-    echo '              </div>'."\n";
-    echo '              <div id="isExpanded" class="main-expanded-div" style="display: none;" onclick="To_f_expand()">'."\n";
-    echo '                <img class="main-print-expand">'."\n";
-    echo '                  '.($NSOSP_g_expandSVG)."\n";
-    echo '                </img>'."\n";
-    echo '              </div>'."\n";
-    echo '            </div>'."\n";
     echo $offset.''."\n";
     echo $offset.''."\n";
     echo $offset.'    <br>'."\n";

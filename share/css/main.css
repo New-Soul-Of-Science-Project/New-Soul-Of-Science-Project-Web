@@ -316,7 +316,7 @@ a:hover {
   font-weight: normal;
 }
 
-.main-function-buttons-div {
+.main-function-buttons-sticky {
   /* position: absolut;
   top: 0px;
   left: -20px; */
@@ -325,46 +325,35 @@ a:hover {
   top: 0px;
 }
 
-svg {
-  fill: currentColor;
-}
-
-.main-print-div {
+.main-function-buttons-div {
   position: absolute;
   top: 10px;
   right: 2px;
+}
+
+.main-function-button {
+  width: 100%;
+  height: auto;
+}
+
+.main-function-button--inaktiv {
   color: rgba(0, 0, 0, 0.2);
 }
 
-.main-print-div:hover {
+.main-function-button--inaktiv:hover {
   color: rgba(0, 0, 0, 1.0);
 }
 
-.main-unexpanded-div {
-  position: absolute;
-  top: 60px;
-  right: 2px;
-  color: rgba(0, 0, 0, 0.2);
-}
-
-.main-unexpanded-div:hover {
-  color: rgba(0, 0, 0, 1.0);
-}
-
-.main-expanded-div {
-  position: absolute;
-  top: 60px;
-  right: 2px;
+.main-function-button--aktiv {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.main-expanded-div:hover {
+.main-function-button--aktiv:hover {
   color: rgba(0, 0, 0, 1.0);
 }
 
-.main-print-expand {
-  width: 100%;
-  height: auto;
+svg {
+  fill: currentColor;
 }
 
 
@@ -506,6 +495,10 @@ td.tools-class-text-figure {
 /* pad and mobile */
 
 
+.main-function-button-menu {
+  display: none;
+}
+
 @media only screen and (max-width: 929px) {
 
   .print-header-image {
@@ -517,6 +510,10 @@ td.tools-class-text-figure {
   .navigation,
   .extra {
     display: none;
+  }
+  
+  .main-function-button-menu {
+    display: block;
   }
 
   .wrapper, .content {
