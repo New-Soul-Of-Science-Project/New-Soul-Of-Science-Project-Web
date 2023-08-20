@@ -20,7 +20,7 @@ h1, h2, h3, h4, p, table, td, tr, ul {
 	margin: 0 10px 10px;
 }
 
-/* #: Schriftstï¿½rke der ï¿½berschriften und starker Schrift. */
+/* #: SchriftstŠrke der †berschriften und starker Schrift. */
 h1, h2, h3, h4 {
   /*font-weight: bold;*/
   font-weight: 600;
@@ -31,7 +31,7 @@ strong {
   font-weight: 600;
 }
 
-/* #: Allgemeine Schriftgrï¿½ï¿½e. */
+/* #: Allgemeine Schriftgrš§e. */
 body, div, p, table, td, tr, ul {
 	font-size: 13px;
 }
@@ -160,10 +160,10 @@ a:hover {
 	  /*background:url(../images/Punkte_dunkler_vblauheller.jpg) top left repeat;*/
 		background: #FFFFFF;
 
-    /*height: 100%; / #: Richtet die Website-Grï¿½ï¿½e nach dem Inhalt. */
+    /*height: 100%; / #: Richtet die Website-Größe nach dem Inhalt. */
 		/* @note scrollbars for content-area */
     /*height: 933px;*/
-    /*height: auto; / #: Richtet die Website-Grï¿½ï¿½e nach dem Inhalt. */
+    /*height: auto; / #: Richtet die Website-Größe nach dem Inhalt. */
     height: 933px;
     overflow: auto;
 	}
@@ -509,4 +509,24 @@ td.tools-class-text-figure {
 .tools-class-fade-in-area-div-hide-content {
   margin-top: 20px;
   color: #000AC4;
+}
+
+
+
+/* pad and mobile */
+
+
+@media only screen and (max-width: 929px) {
+
+  .print-header-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .header-links,
+  .navigation,
+  .extra {
+    display: none;
+  }
+
 }

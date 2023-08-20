@@ -23,3 +23,25 @@
 	clear: both;
 	width: 100%
 }
+
+
+
+/* pad and mobile */
+
+
+@media only screen and (max-width: 929px) {
+
+  #container {
+    max-width: 730px;
+  }
+
+}
+
+
+@media only screen and (max-width: 729px) {
+
+  #container {
+    max-width: 100%;
+  }
+
+}
