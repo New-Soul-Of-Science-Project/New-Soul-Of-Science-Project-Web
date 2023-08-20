@@ -20,7 +20,7 @@ h1, h2, h3, h4, p, table, td, tr, ul {
 	margin: 0 10px 10px;
 }
 
-/* #: SchriftstŠrke der †berschriften und starker Schrift. */
+/* #: Schriftstï¿½rke der ï¿½berschriften und starker Schrift. */
 h1, h2, h3, h4 {
   /*font-weight: bold;*/
   font-weight: 600;
@@ -31,7 +31,7 @@ strong {
   font-weight: 600;
 }
 
-/* #: Allgemeine Schriftgrš§e. */
+/* #: Allgemeine Schriftgrï¿½ï¿½e. */
 body, div, p, table, td, tr, ul {
 	font-size: 13px;
 }
@@ -160,10 +160,10 @@ a:hover {
 	  /*background:url(../images/Punkte_dunkler_vblauheller.jpg) top left repeat;*/
 		background: #FFFFFF;
 
-    /*height: 100%; / #: Richtet die Website-Größe nach dem Inhalt. */
+    /*height: 100%; / #: Richtet die Website-Grï¿½ï¿½e nach dem Inhalt. */
 		/* @note scrollbars for content-area */
     /*height: 933px;*/
-    /*height: auto; / #: Richtet die Website-Größe nach dem Inhalt. */
+    /*height: auto; / #: Richtet die Website-Grï¿½ï¿½e nach dem Inhalt. */
     height: 933px;
     overflow: auto;
 	}
@@ -331,7 +331,7 @@ svg {
 
 .main-print-expand-inner-div {
   position: absolute;
-  left: -37px;
+  right: 2px;
   color: #808080;
 }
 
@@ -342,7 +342,7 @@ svg {
 .main-print-div {
   position: absolute;
   top: 10px;
-  left: -37px;
+  right: 2px;
   color: rgba(0, 0, 0, 0.2);
 }
 
@@ -353,7 +353,7 @@ svg {
 .main-unexpanded-div {
   position: absolute;
   top: 60px;
-  left: -37px;
+  right: 2px;
   color: rgba(0, 0, 0, 0.2);
 }
 
@@ -364,7 +364,7 @@ svg {
 .main-expanded-div {
   position: absolute;
   top: 60px;
-  left: -37px;
+  right: 2px;
   color: rgba(0, 0, 0, 0.5);
 }
 

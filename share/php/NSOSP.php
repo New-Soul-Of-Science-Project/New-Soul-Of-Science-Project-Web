@@ -3310,36 +3310,11 @@
 
   
   
-  $NSOSP_g_printSVG = file_get_contents(
-      $Glo_PathRel_back.'../share/images/_icons/svg/print.svg'
-  );
-  $NSOSP_g_expandSVG = file_get_contents(
-      $Glo_PathRel_back.'../share/images/_icons/svg/expand.svg'
-  );
-  
   function FrQFT_f_HTML_EndDivsNavExtrFootContainerBody()
   {
     global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ, $Glo_g_Site_activ_GenInfo_idx, $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary;
-    global $NSOSP_g_printSVG, $NSOSP_g_expandSVG;
 
     echo '			<div id="navigation" class="navigation main-shadow-0-5-30 main-layer-2">'."\n";
-    echo '        <div class="main-print-expand-div">'."\n";
-    echo '          <div class="main-print-div" onclick="To_f_print()">'."\n";
-    echo '            <img class="main-print-expand">'."\n";
-    echo '              '.($NSOSP_g_printSVG)."\n";
-    echo '            </img>'."\n";
-    echo '          </div>'."\n";
-    echo '          <div id="isUnexpanded" class="main-unexpanded-div" style="display: ;" onclick="To_f_expand()">'."\n";
-    echo '            <img class="main-print-expand">'."\n";
-    echo '              '.($NSOSP_g_expandSVG)."\n";
-    echo '            </img>'."\n";
-    echo '          </div>'."\n";
-    echo '          <div id="isExpanded" class="main-expanded-div" style="display: none;" onclick="To_f_expand()">'."\n";
-    echo '            <img class="main-print-expand">'."\n";
-    echo '              '.($NSOSP_g_expandSVG)."\n";
-    echo '            </img>'."\n";
-    echo '          </div>'."\n";
-    echo '        </div>'."\n";
     echo '        <h3 align="left" style="padding-top: 40px;"><a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_rel]).'">'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_short])).'</a></h3>'."\n";
                   To_f_headline_make();
     /* At the moment extra "div" is not used, because of the shadow. */
@@ -3497,51 +3472,60 @@
   }
 
   
-  const margin = 'margin';
+  $NSOSP_g_printSVG = file_get_contents(
+      $Glo_PathRel_back.'../share/images/_icons/svg/print.svg'
+  );
+  $NSOSP_g_expandSVG = file_get_contents(
+      $Glo_PathRel_back.'../share/images/_icons/svg/expand.svg'
+  );
   
   function FrQFT_f_Div_WrapperBegin( $offset, $backward_link='')
   {
     global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ;
     global $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary;
+    global $NSOSP_g_printSVG, $NSOSP_g_expandSVG;
 
     echo         '<div id="wrapper" class="wrapper">'."\n";
     echo $offset.'  <div id="content" class="content main-shadow-0-5-30" style="">'."\n";
-    //%!echo $offset.'    <img src="'.$Glo_PathRel_back.'../share/images/Header_zu_Navi_FFFFFF.jpg" width="730" height="10" border="0" alt="" style="position: absolute; top: 158px; filter:alpha(opacity=75); -moz-opacity: 0.75; opacity: 0.75;">'."\n";
-    //%!echo $offset.'      <! #: Bei Safari eigentlich "top: -2px;". FireFox Mac+Win und IE sind mit "top: -3px;" ok. >'."\n";
+    echo '            <div class="main-print-expand-div">'."\n";
+    echo '              <div class="main-print-div" onclick="To_f_print()">'."\n";
+    echo '                <img class="main-print-expand">'."\n";
+    echo '                  '.($NSOSP_g_printSVG)."\n";
+    echo '                </img>'."\n";
+    echo '              </div>'."\n";
+    echo '              <div id="isUnexpanded" class="main-unexpanded-div" style="display: ;" onclick="To_f_expand()">'."\n";
+    echo '                <img class="main-print-expand">'."\n";
+    echo '                  '.($NSOSP_g_expandSVG)."\n";
+    echo '                </img>'."\n";
+    echo '              </div>'."\n";
+    echo '              <div id="isExpanded" class="main-expanded-div" style="display: none;" onclick="To_f_expand()">'."\n";
+    echo '                <img class="main-print-expand">'."\n";
+    echo '                  '.($NSOSP_g_expandSVG)."\n";
+    echo '                </img>'."\n";
+    echo '              </div>'."\n";
+    echo '            </div>'."\n";
     echo $offset.''."\n";
     echo $offset.''."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.''."\n";
-    //%!echo $offset.'      <small> <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/index.php" style="color: #505050; font-weight: normal;">'."\n";
     if ($Glo_g_Site_activ == 'OM:FrQFT:Home')
     {
       echo $offset.'    <p>'."\n";
-      //%!echo $offset.'        Selbstorganisierte Physik<!/a> &nbsp; &nbsp; &mdash; &nbsp; &nbsp;'."\n";
-      //%!echo $offset.'        Zur Einstimmung etwas Musik: &nbsp;'."\n";
       echo $offset.'        <small style="color: #505050; font-weight: normal;">Zur Einstimmung etwas Musik: &nbsp;'."\n";
       echo $offset.'        <a target="_blank" href="http://www.youtube.com/watch?v=buqtdpuZxvk&feature=fvw">Monty Python - The Galaxy Song</a></small>'."\n";
       echo $offset.'    </p>'."\n";
     }
     else
-      //%!echo $offset.'        Selbstorganisierte Physik &nbsp;&gt;&gt;&nbsp; Fraktale Quanten-Fluss-Theorie (FrQFT)</a></small>'."\n";
       if (0 < strlen( $backward_link))
       {
         To_f_Paragraph( 'jumplist', $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '        ', array( array( jump_name => $backward_link, type => 'back', margin => 'margin_small')));
-        //echo $offset.'        XXX'."\n";
       }
-      /*else
-      {
-        echo $offset.'    <p>'."\n";
-        echo $offset.'        <small> <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/index.php" style="color: #505050; font-weight: normal;">Fraktale Quanten-Fluss-Theorie (FrQFT)</a></small>'."\n";
-        echo $offset.'    </p>'."\n";
-      }*/
     echo $offset.'    <br>'."\n";
     echo $offset.''."\n";
     echo $offset.''."\n";
     echo $offset.'    <p>'."\n";
     echo $offset.'      <h1>'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_h1])).'</h1>'."\n";
     if (array_key_exists( text_undertitel_h2, $Glo_g_Site_ary[$Glo_g_Site_activ]) && (0 < strlen( $Glo_g_Site_ary[$Glo_g_Site_activ][text_undertitel_h2])))
-      //%! echo $offset.'      <h2 style="color: #505050">'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_undertitel_h2])).'</h2>'."\n";
       echo $offset.'      <h2 style="color: '.(To_f_Color('*SiteUndertitleH2', false)).'">'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_undertitel_h2])).'</h2>'."\n";
     echo $offset.'    </p>'."\n";
     echo $offset.'    <br>'."\n";
