@@ -3324,7 +3324,6 @@
 
     echo '			<div id="navigation" class="navigation main-shadow-0-5-30 main-layer-2">'."\n";
     echo '        <div class="main-print-expand-div">'."\n";
-    echo '          <br>'."\n";
     echo '          <div class="main-print-div" onclick="To_f_print()">'."\n";
     echo '            <img class="main-print-expand">'."\n";
     echo '              '.($NSOSP_g_printSVG)."\n";
@@ -3341,8 +3340,7 @@
     echo '            </img>'."\n";
     echo '          </div>'."\n";
     echo '        </div>'."\n";
-    echo '        </p>'."\n";
-    echo '				<h3 align="left" style="padding-top: 12px;"><a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_rel]).'">'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_short])).'</a></h3>'."\n";
+    echo '        <h3 align="left" style="padding-top: 40px;"><a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_rel]).'">'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_short])).'</a></h3>'."\n";
                   To_f_headline_make();
     /* At the moment extra "div" is not used, because of the shadow. */
     //--echo '			</div>'."\n";
