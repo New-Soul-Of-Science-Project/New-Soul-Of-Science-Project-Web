@@ -316,7 +316,7 @@ a:hover {
   font-weight: normal;
 }
 
-.main-print-expand-div {
+.main-function-buttons-div {
   /* position: absolut;
   top: 0px;
   left: -20px; */
@@ -327,16 +327,6 @@ a:hover {
 
 svg {
   fill: currentColor;
-}
-
-.main-print-expand-inner-div {
-  position: absolute;
-  right: 2px;
-  color: #808080;
-}
-
-.main-print-expand-inner-div:hover {
-  color: black;
 }
 
 .main-print-div {
@@ -529,7 +519,7 @@ td.tools-class-text-figure {
     display: none;
   }
 
-  .content {
+  .wrapper, .content {
     height: 100%;
   }
 
