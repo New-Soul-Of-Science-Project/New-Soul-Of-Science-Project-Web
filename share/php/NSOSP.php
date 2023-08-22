@@ -2349,7 +2349,9 @@
                     'OM:SpaLeb:Bewusstsein:Vortext:RudimentaeresBewusstsein' => array( headline_text => 'Rudimentäres Bewusstsein, Lernen und Erinnern', headline_text_short => 'Rudimentäres Bewusstsein'),
                     'OM:SpaLeb:Bewusstsein:Vortext:KognitivesBewusstsein' => array( headline_text => 'Kognitives Bewusstsein, Lernen und Erinnern', headline_text_short => 'Kognitives Bewusstsein'),
 
-                  // 'OM:SpaLeb:Bewusstsein:InformationIstWirkung' => array( headline_text => 'Information ist Wirkung', headline_text_short => 'Information ist Wirkung'),
+                  'OM:SpaLeb:Bewusstsein:InformationIstWirkung' => array( headline_text => 'Information ist Wirkung'/* , headline_text_short => 'XXX' */),
+
+                  'OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik' => array( headline_text => 'Bewusstsein und Mathematik'/* , headline_text_short => 'XXX' */),
                 ),
          ),
   'OM:SpaLeb:Demenz' =>
