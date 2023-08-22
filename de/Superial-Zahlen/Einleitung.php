@@ -733,7 +733,14 @@
                     'dass die \\jump{OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen}{Anzahl aller endlichen ganzen Zahlen \\latexmath{ 2 \cdot \omega }}'."\n".
                     'ein ganzzahliger Teiler von \\latexmath{ s } sein muss.'."\n".
                     'Daher muss \\latexmath{ \omega } ein ganzzahliger Teiler von \\latexmath{ \frac{ s }{ 2 } } sein,'."\n".
-                    'also ein ganzzahliges Teilprodukt.'."\n".
+                    'also ein ganzzahliges Teilprodukt.'."\n",
+                      'Damit muss \\latexmath{ \omega } ein unendlich großer Teil des Primzahlprodukts von \\latexmath{ s } sein.'."\n".
+                    'Und bei näherer Analyse stellen wir auch fest, dass es ein unendlich großer Teil des Primzahlprodukts'."\n".
+                    'im horizontalen Bereich aller unterschiedlichen Primzahlen sein.'."\n",
+                      'In unserem Beweis der Primzahlprodukt-Vermutung zeigen wir zusätzlich, dass es nur sein kann,'."\n".
+                    'dass die Primfaktorzerlegung von \\latexmath{ \omega } endliche Primzahlen von Beginn an und'."\n".
+                    'ohne Lücke enthalten muss.'."\n".
+                    'Und von diesen dann unendlich viele, was zusammengefasst bedeutet, einfach alle endlichen Primzahlen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Überrationalitätsvermutung} \\\\'."\n".
@@ -748,6 +755,7 @@
                       'Sollte die \\jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} sich als wahr'."\n".
                     'erweisen, dann wäre dies ebenfalls eine sehr bemerkenswerte Eigenschaft der Superial-Zahlen,'."\n".
                     'die uns neue Informationen über algebraische Zahlen geben würde und so ein wichtiger Beitrag zur Zahlentheorie wäre.'."\n".
+                    'Denn so würde auch eine bessere Differenzierung zwischen den irrationalen und den transzendenten Zahlen ermöglicht.'."\n",
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
@@ -789,7 +797,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Eine unerwartete Verbindung der rationalen Zahlen mit dem Zählen} \\\\'."\n".
-                    'Das natürliche Zählen spiegelt sich in den \\italic{natürlichen Superial-Zahlen} \\latexmath{ \mathbb{S}_N } wieder.'."\n".
+                    'Das natürliche Zählen spiegelt sich in den \\italic{natürlichen Superial-Zahlen} \\latexmath{ \mathbb{S}_N } wider.'."\n".
                     'Diese enthalten alle endlichen rationalen Zahlen in ihren Koeffizienten der Potenzen von \\latexmath{ s }.'."\n",
                       'Nun wissen wir, dass wir rationale Zahlen nicht ihrer Größe nach aufzählen können,'."\n".
                     'weil sie von ihrer Anordnung her dicht sind.\\footnote{\\const{SupNum_g_footnote_text_RationaleZahlDichtheit}}'."\n".
@@ -803,55 +811,36 @@
                     ))),
                   array( 'text', array( text => array(
                     'Und so fort.'."\n",
-                      'Dort wo drei vertikale Punkte ›⋮‹ stehen werden alle von der Größe her dazwischen liegenden rationalen Koeffizienten mitgezählt.'."\n".
+                      'Dort wo drei vertikale Punkte ›⋮‹ stehen, werden alle von der Größe her dazwischen liegenden rationalen Koeffizienten mitgezählt.'."\n".
                     'Die Superial-Zahlen bringen so die rationalen Zahlen mit dem Zählen von natürlichen und ganzen Zahlen in Verbindung.'."\n",
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
-                'Unsere Perspektive')),
+                'Weitreichender Erkenntnisgewinn')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'Insgesamt steht so zu erwarten, dass die aus diesen Zahlen zu ziehenden Erkenntnisse weitreichend sein könnten.'."\n".
-                    'Eine wichtige Vermutungen ist die \\jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}{\\italic{Überrationalitätsvermutung}}, die besagt, dass die Superial-Zahlen auch mit \\italic{überrationalen Brüchen} als'."\n".
-                    'Koeffizienten funktionieren würden.'."\n".
-                    'Oder noch genauer ausgedrückt stellt sich die Frage, ob es solche überrationalen Brüche wirklich gibt und welche bedeutenden Zahlenwerte sie darstellen können.'."\n".
-                    'Eine der sehr interessanten Vermutungen, die sich aus den Superial-Zahlen ergeben, ist die \\jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung}{\\italic{Primzahlenprodukt-Vermutung}}.'."\n".
-                    'Wäre sie richtig, würde sie wichtige Aussagen über die Verteilung der endlichen Primzahlen unter den extrem großen natürlichen Zahlen erlauben.'."\n".
+                    'Die Erkenntnisse, die wir mit den Superial-Zahlen und ihren systematischen Vorgängern, den Biordinalzahlen,'."\n".
+                    'jetzt schon erhalten, sind also weitreichend.'."\n".
+                    'Und wir dürfen erwarten, dass noch ein ganzes Reich an interessanten und erstaunlichen Erkenntnissen'."\n".
+                    'zu erforschen und zu schöpfen ist.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
-                                           
-                'Feine Differenzierung des aktualen Unendlichen')),
                   array( 'text', array( text => array(
+                  '\\condb{Eine direkte Verbindung von Analysis und Zahlentheorie} \\\\'."\n".
+                    'Über die Definition der \\jump{OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen}{Ableitung} und'."\n".
+                    'der \\jump{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen}{Integration} durch die aktual unendlichen Superial-Zahlen'."\n".
+                    'wird die Analysis nun ganz direkt mit der Zahlentheorie verbunden.'."\n".
+                    'Dies hat weitreichende Konsequenzen, die beispielsweise zum Beweis der Riemannschen Vermutung einen Beitrag'."\n".
+                    'leisten könnte.'."\n",
+                      'Darüber hinaus wird eine einfache und anschauliche Definition von Ableitungen und Integralen möglich.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Feine Differenzierung des Aktual-Unendlichen} \\\\'."\n".
                     'Durch die Definition der superialen Einheit \\term{s} als unendliches Primzahlprodukt erhalten die Superial-Zahlen den Mehrwert, dass sich das Aktual-Unendliche nach den gewohnten Regeln'."\n".
                     'der Arithmetik behandeln und differenzieren lässt.'."\n".
                     'Wichtige Elemente der Arithmetik, wie beispeilsweise natürliche, ganze, gerade und ungerade Zahlen sowie Primzahlen, lassen sich so im Unendlichen untersuchen.'."\n".
                     'Dies hat auch Rückwirkung auf die Betrachtung des Endlichen.'."\n".
                     'Denn so ergeben sich unter anderem neue Möglichkeiten die Verteilung der Primzahlen unter den großen endlichen natürlichen Zahlen besser zu verstehen.'."\n".
-                    'Auch die Primfaktorzerlegung und die Ordnung der rationalen Zahlen sind so noch einmal neu zu betrachten.'."\n",
-                      'Und auch die mögliche Definition der Wurzeln aus rationalen Zahlen als überrationale Brüche ist interessant.'."\n".
-                    'Sie ermöglichte noch einmal eine Differenzierung bezüglich der irrationalen und transzendenten Zahlen.'."\n",
-                      'Darüber hinaus ist eine einfache und anschauliche Definition von Ableitungen und Integralen möglich.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Auch die Primfaktorzerlegung und die Ordnung der rationalen Zahlen sind so noch einmal neu zu betrachten.'."\n".
+                    ''))),
                     
                   array( 'jumplist',
                     array(
