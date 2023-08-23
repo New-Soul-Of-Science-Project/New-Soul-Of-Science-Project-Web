@@ -33,6 +33,7 @@
               'wiki:Primorial:2015',
               'wiki:Primzahl:2021',
               'wiki:RationaleZahl:2022',
+              'wiki:RiemannscheVermutung:2023',
               'wiki:RiemannscheZetaFunktion:2022',
               'wiki:Ring-Algebra:2023',
               'wiki:SatzDesEuklid:2023',

@@ -44,7 +44,7 @@
                       'Und nicht zuletzt können wir im Zusammenhang mit geometrischen Überlegungen etwas über die ontologische Struktur des Zählens lernen,'."\n".
                     'deren Erweiterung auf das Negative eine grundlegende Asymmetrie in den ganzen Zahlen erkennen lässt.'."\n".
                     'Meine Intuition sagt mir, dass diese Asymmetrie gemeinsam mit der Primzahlprodukt-Vermutung in der Lage sein könnte'."\n".
-                    'entscheidendes zur Klärung der Riemannschen Vermutung\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:RiemannscheVermutung:2023}.} beizutragen.'."\n".
+                    'entscheidendes zur Klärung der Riemannschen Vermutung\\footnote{\\const{SupNum_g_footnote_text_RiemannschenVermutung}} beizutragen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
                       

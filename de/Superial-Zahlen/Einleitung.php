@@ -828,8 +828,12 @@
                     'Über die Definition der \\jump{OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen}{Ableitung} und'."\n".
                     'der \\jump{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen}{Integration} durch die aktual unendlichen Superial-Zahlen'."\n".
                     'wird die Analysis nun ganz direkt mit der Zahlentheorie verbunden.'."\n".
-                    'Dies hat weitreichende Konsequenzen, die beispielsweise zum Beweis der Riemannschen Vermutung einen Beitrag'."\n".
-                    'leisten könnte.'."\n",
+                    'Denn hierdurch werden nicht „nur“ die Primzahlen mit analytischen Methoden untersucht,'."\n".
+                    'sondern die analytischen Methoden werden auf Basis eines unendlichen Produkts von Primzahlen definiert.'."\n",
+                      'So spielen jetzt die Primzahlen auf beiden Seiten eine Rolle:'."\n".
+                    'Zur Analyse wie auch als Objekte der Analyse.'."\n".
+                    'Dies hat weitreichende Konsequenzen, die beispielsweise zum Beweis der Riemannschen Vermutung\\footnote{\\const{SupNum_g_footnote_text_RiemannschenVermutung}}'."\n".
+                    'einen Beitrag leisten könnten.'."\n",
                       'Darüber hinaus wird eine einfache und anschauliche Definition von Ableitungen und Integralen möglich.'."\n".
                     ''))),
                   array( 'text', array( text => array(

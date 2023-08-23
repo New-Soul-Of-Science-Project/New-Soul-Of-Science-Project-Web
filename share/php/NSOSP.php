@@ -351,6 +351,7 @@
   $SupNum_g_footnote_text_Maechtigkeit          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:MaechtigkeitMathematik:2023}.';
   $SupNum_g_footnote_text_RationaleZahl         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:RationaleZahl:2022}.';
   $SupNum_g_footnote_text_RationaleZahlDichtheit = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:RationaleZahl:2022}, Eigenschaften.';
+  $SupNum_g_footnote_text_RiemannschenVermutung = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:RiemannscheVermutung:2023}.';
   $SupNum_g_footnote_text_Stellenwertsystem     = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Stellenwertsystem:2023}.';
 
   
