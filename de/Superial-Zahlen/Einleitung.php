@@ -17,12 +17,13 @@
                     '• Das Problem der Geometrie, eine Linie aus Punkten aufzubauen (Verwandt mit der Kontinuumshypothese): Die nullte, die erste und die zweite Dimension haben keine Ausdehnung, kein Volumen, – also Punkt, Linie und Fläche – und in gewisser Weise existieren sie so nicht. Aber mit ihnen sollen wir die dritte Dimension aus Punkten (Ecken) und Flächen konstruieren, die dann eine Ausdehnung hat und plötzlich existiert. Das scheint komisch und merkwürdig. Siehe Nassim Haramein, Die Entschlüsselung des Universums, S. 11-14, hier S. 12-13.',
                     '– Es geht einfach darum, wie man aus Punkten eine Linie exakt konstruieren kann: Handelt es sich wirklich um einen absolut unendlich kleinen Punkt, dann bekommen wir ein Problem. Es scheint mir, dass ein strukturierter Punkt, mit aktual unendlich kleiner Ausdehnung hier Abhilfe schaffen kann. Ich kann nämlich in Form von aktual unendlich großen Zahlen beschreiben, wie oft ich diesen superialen Punkt aneinander legen muss. Dies kann ich bei absolut unendlich kleinen Punkten nicht tun.',
                     '– Bietet hier die aktual unendlich kleine Hülle der superial-kleinen Zahlen um einen Punkt einen logischen Lösungsansatz für die Geometrie? Denn bei einem absolut unendlich kleinen Punkt können wir nicht sicher und exakt definieren, wie oft wir ihn aneinander legen müssen, um eine Gerade einer bestimmten Länge zu erzeugen. Bei einem Punkt mit superial-kleiner Hülle ist dies wohldefiniert.',
+                    '⋅ In Bezug auf die Ordinalzahlen und Biordinalzahlen ist die „Umgebung“ übrigens das „Fähnchen“ zwischen der Null und Ein bzw. zwischen jeder ganzen Zahl, mit dieser, und der nächst größeren, ohne diese, obwohl die Zahlen dazwischen in den ganzen Zahlen gar nicht definiert sind. Sie sind aber implizit mit gemeint. Siehe \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen}.',
                     '– Ist die Geometrie also eigentlich fraktal? Was durch die Analysis, mit ihren Ableitungen und Integralen, schließlich sichtbar wird?',
                     '\\bold{Analyse}',
                     '• Das heißt, dass die Ordinalzahlen kein Ring sind, weil es nicht zu jedem Element ein additives Inverses gibt. Und kein Körper, weil es kein multiplikatives Inverses gibt.',
                     '• Die Biordinalzahlen wären dann aber ein Ring, aber immer noch kein Körper.',
                     '• Die Superial-Zahlen sind, weil mit rationalen Koeffizienten gebildet, ein Körper. Denn es gibt beide inverse Elemente.',
-                    '• Sollte sich herausstellen, dass die Wurzeln natürlicher Zahlen mit hyperrationalen Zahlen (meine Benennung) dargestellt werden können, dann wären Superial-Zahlen mit überrationalen Koeffizienten ein algebraischer Körper!?',
+                    '• Sollte sich herausstellen, dass die Wurzeln natürlicher Zahlen mit überrationalen Zahlen (meine Benennung) dargestellt werden können, dann wären Superial-Zahlen mit überrationalen Koeffizienten ein algebraischer Körper!?',
                     '– Als überrationale Zahlen bezeichne ich Brüche, die im Zähler und Nenner unendlich große Primzahlprodukte haben können. Und, wenn vollständig teilerfremd und damit nicht zu kürzen, Dezimalzahlen ergeben, die nicht periodisch sind, wie vielleicht \\term{√2}. Die Exponenten der Primzahlen in Nenner und Zähler sollten endlich sein, denke ich. Möglicherweise sogar immer Eins?',
                     '\\bold{Aktuelle Forschung}',
                     '• Der Fields-Medaillenträger 2018, Peter Scholze, bringt neue Zusammenhänge zwischen der Arithmetik und der Geometrie ins Spiel.',
@@ -32,7 +33,7 @@
                     '\\bold{Zeit in der Mathematik}',
                     '• Einflechten, dass die Arithmetik aus dem Zählen geboren wird. Dies ist eine Definition durch einen Prozess. Hierdurch kommt Zeit ins Spiel. Die Betrachtung der Primfaktorzerlegung der natürlichen Zahlen zeigt auf, dass an diesem Prozess Regelsystemen ähnliche rhythmische Strukturen beteiligt sind.',
                     '\\bold{Korrekturen}',
-                    '• Der Text ist schwer verständlich und manchmal etwas komisch formuliert. Alles noch einmal überarbeiten !!!',
+                    '• (gerade weitreichend auf dem Weg) Der Text ist schwer verständlich und manchmal etwas komisch formuliert. Alles noch einmal überarbeiten !!!',
                     '• Die Kapitel der Seiten erneut durcharbeiten.',
                     '\\bold{Forschungsideen}',
                     '• Das Pascal-Sierpinski-Dreieck ist eine Geometrie, in der Primzahlen eine außergewöhnliche Rolle spielen.\\footnote{Vgl. \\cite{Plichta:GottesGeheimeFormel:1995}, S. 263ff., 271ff. 306ff.. \\\\ Internet: \\\\ Vgl. \\jump[https://de.wikipedia.org/w/index.php?title=Sierpinski-Dreieck&oldid=179105092#Zusammenhang_mit_dem_Pascalschen_Dreieck]{}{Wikipedia, Sierpinski-Dreieck, Zusammenhang mit dem Pascalschen Dreieck}.}',
@@ -55,7 +56,7 @@
                     'Die Summe aller endlichen ganzen Zahlen oder die Summe aller endlichen rationalen Zahlen beispielsweise.'."\n",
                       'Über die Struktur, die dabei sichtbar wird, eröffnet sich in meinen Augen ein ganz neuer Kosmos der Zahlentheorie.'."\n".
                     'Denn wir können die endlichen Primzahlen mit unserer dadurch entdeckten, neuen aktual unendlichen Basis \\latexmath{ s }'."\n".
-                    'in Zusammenhang bringen, indem wir diese durch Primzahlen definieren.'."\n",
+                    'in Zusammenhang bringen, indem wir diese durch Primzahlen definieren, wie wir noch sehen werden.'."\n",
                       'Wir erhalten zum Beispiel auch natürliche Superial-Zahlen, ganze Superial-Zahlen und superiale Primzahlen;'."\n".
                     'aktual unendlich kleine Einsen und aktual unendlich große Einsen.'."\n".
                     'Auch können die ganzen Superial-Zahlen gerade oder ungerade sein und so weiter und so fort.'."\n".
@@ -327,7 +328,7 @@
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Diese Summe ist extra darauf angepasst, dass sie auch für aktual unendlich große Werte von \\latexmath{ n },'."\n".
                       'also für aktual unendlich große natürliche Zahlen, gilt.'."\n".
-                      'Dies wird durch das Mengensymbol \\latexmath{ \mathbb{N}_\infty } ausgedrückt.'."\n",
+                      'Dies wird durch das \\jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{Mengensymbol \\latexmath{ \mathbb{N}_\infty }} ausgedrückt.'."\n",
                         'Wir müssen nur berücksichtigen, dass die Werte der gesuchten Summe in superial kleinen Schritten daher kommen:'."\n".
                       'Das bedeutet, dass wir es mit \\latexmath{ x \cdot s } Elementen zu tun haben – anstatt mit \\latexmath{ x } –,'."\n".
                       'was in der oben stehenden Formel auf der Ergebnisseite als \\latexmath{ x \cdot s } für \\latexmath{ n } eingeht.'."\n".
@@ -341,7 +342,7 @@
                                           label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x', label_text => '\\name{OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Das ist genau das gesuchte Ergebnis, was wir sofort durch Überprüfung sehen werden.'."\n".
+                      'Das ist genau das gesuchte Ergebnis, was wir sofort durch Überprüfung sehen.'."\n".
                       /*  'XXX Um die übrige Summe zu berechnen, ist ein tieferes Verständnis der \\jump{OM:BiOrd:Home}{Biordinalzahlen}'."\n".
                       'anzuwenden und wir kommen auch nicht drum herum nachfolgend ein tieferes Verständnis der hier entwickelten Superial-Zahlen zu erlangen.'."\n",
                         'Wir können an dieser Stelle diese noch unbekannte Summe durch Umstellung berechnen,'."\n".
@@ -392,7 +393,7 @@
                 'Kleiner Ausblick zwischendurch')),
                   array( 'text', array( text => array(
                     'Wir werden im Folgenden noch sehen, dass dieses Vorgehen weitere neue Erkenntnishorizonte eröffnet.'."\n",
-                      'Nur zum Appetit machen kann ich hier schon mal kurz sagen, dass die zuletzt errechnete Summe \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x}'."\n".
+                      'Nur zum Appetit machen können wir hier schon mal kurz zeigen, dass die zuletzt errechnete Summe \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x}'."\n".
                     'sich auch folgendermaßen beschreiben lässt, wenn wir ihren Bruch in zwei Teile zerlegen:'."\n".
                     ''))),
                   array( 'equations',
@@ -472,7 +473,7 @@
                     'Bei etwas intensiverem Herumspielen fällt einem auf, dass die Superial-Zahlen sich wie ein'."\n".
                     '\\jump{OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem}{Stellenwertsystem} verhalten.'."\n".
                     'Die Ziffern der Stellen können alle rationalen Zahlen sein, sogar negative.'."\n".
-                    'Durch diese Erkenntnis finden wir die Möglichkeit die Darstellung gegebenenfalls zu verkürzen, wie beispielsweise die folgende:'."\n".
+                    'Durch diese Erkenntnis finden wir die Möglichkeit, die Darstellung gegebenenfalls zu verkürzen, wie beispielsweise die folgende:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -571,7 +572,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 250 }{ 567 }  =  2 \cdot 3^{-4} \cdot 5^{3} \cdot 7^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dies kommt daher, weil bekannter maßen jede rationale Zahl ein Bruch zweier ganzer Zahlen ist.'."\n".
+                    'Dies kommt daher, weil bekanntermaßen jede rationale Zahl ein Bruch zweier ganzer Zahlen ist.'."\n".
                     'Ausgeschlossen ist natürlich durch Null zu teilen.'."\n",
                       'Welche Eigenschaft muss die Zahl \\latexmath{ s } haben, sodass sie multipliziert mit jeder'."\n".
                     'rationalen Zahl immer noch eine ganze Zahl ergibt?'."\n".
@@ -824,14 +825,15 @@
                     'zu erforschen und zu schöpfen ist.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Eine direkte Verbindung von Analysis und Zahlentheorie} \\\\'."\n".
+                  '\\condb{Zahlentheorie der Analysis} \\\\'."\n".
+                  '\\cond{Eine direkte Verbindung von Analysis und Zahlentheorie} \\\\'."\n".
                     'Über die Definition der \\jump{OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen}{Ableitung} und'."\n".
                     'der \\jump{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen}{Integration} durch die aktual unendlichen Superial-Zahlen'."\n".
                     'wird die Analysis nun ganz direkt mit der Zahlentheorie verbunden.'."\n".
                     'Denn hierdurch werden nicht „nur“ die Primzahlen mit analytischen Methoden untersucht,'."\n".
                     'sondern die analytischen Methoden werden auf Basis eines unendlichen Produkts von Primzahlen definiert.'."\n",
                       'So spielen jetzt die Primzahlen auf beiden Seiten eine Rolle:'."\n".
-                    'Zur Analyse wie auch als Objekte der Analyse.'."\n".
+                    'Zur Analyse, als neue \\italic{Zahlentheorie der Analysis}, wie auch als Objekte der Analyse in der bekannten analytischen Zahlentheorie\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AnalytischeZahlentheorie:2022}.}.'."\n".
                     'Dies hat weitreichende Konsequenzen, die beispielsweise zum Beweis der Riemannschen Vermutung\\footnote{\\const{SupNum_g_footnote_text_RiemannschenVermutung}}'."\n".
                     'einen Beitrag leisten könnten.'."\n",
                       'Darüber hinaus wird eine einfache und anschauliche Definition von Ableitungen und Integralen möglich.'."\n".

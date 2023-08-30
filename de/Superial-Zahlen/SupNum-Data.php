@@ -117,8 +117,8 @@
       keywords => '',
       text_titel_h1 => 'Einleitung',
       text_titel_short => 'Einleitung',
-      text_undertitel_h2 => 'Mit den Superial-Zahlen die fraktale Struktur des Unendlichen entdecken',
-      text_titel_discr_h3 => '',
+      text_undertitel_h2 => 'Die Zahlentheorie der Analysis',
+      text_titel_discr_h3 => 'Mit den Superial-Zahlen die fraktale Struktur des Aktual-Unendlichen entdecken',
       jump_ary => array(
         'OM:SupNum:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    

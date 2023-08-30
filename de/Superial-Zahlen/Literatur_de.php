@@ -20,6 +20,7 @@
               'wiki:AbelscheGruppe:2022',
               'wiki:AbrundungsfunktionUndAufrundungsfunktion:2022',
               'wiki:Allklasse:2020',
+              'wiki:AnalytischeZahlentheorie:2022',
               'wiki:Arithmetik:2015',
               'wiki:GaussscheSummenformel:2023',
               'wiki:IntervallMathematik:2023',
