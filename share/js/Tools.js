@@ -2,10 +2,11 @@
 // #: Name:  "Tools.js"
 
 
-// #: Stand: 20.08.2023, 17:00h
+// #: Stand: 31.08.2023, 17:00h
 
 // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+//          20230831:  +:  "To_f_showMenuCloneMenu", "To_f_showMenuSet": to use navigation menu for mobile menu as well and split up functionality.
 //          20230820:  +:  "To_f_showMenu" for mobile mode.
 //          20220807:  +:  "To_f_manage_site_end", "To_f_manage_beforePrint", "To_f_manage_afterPrint":  Implement event handlers for printing.
 //v01.001:  20130515:  +:  History started.
@@ -342,6 +343,8 @@ function To_f_manage_resize() {
   // Called when the browser is first opened.
   // Values of clientHeight and scrollHeight have settled by this point.
   
+  To_f_showMenu( false);
+  
   // #: For mobile only call once! For desktop call always!
   // #?: Is not mobile or is the first call?
   if (!To_g_detectDevice_mobile_is || !To_g_resizeCalled) {
@@ -596,28 +599,64 @@ function To_f_expand()
 
 
 
-function To_f_showMenu()
+function To_f_showMenuCloneMenu()
 {
   if (document.getElementById)
   {
-    if (!To_g_showMenu)
-    {
-      console.log('Show Menu');
-      console.log('Set Menu Icons');
-      
-      document.getElementById( 'MenuUnviewed').style.display = '';
-      document.getElementById( 'MenuViewed').style.display = 'none';
-      
-      To_g_showMenu = true;
-    } else {
-      console.log('Hide Menu');
-      console.log('Set Menu Icons');
+    console.log( 'Clone Menu');
 
+    const navigationMenu = document.getElementById( 'NavigationMenu'); // side navigation
+    const navigationMenuClone = navigationMenu.cloneNode( true); // the true is for deep cloning
+    const mainMenu = document.getElementById( 'Menu'); // mobile
+
+    mainMenu.appendChild( navigationMenuClone);
+  }
+}
+
+
+function To_f_showMenuSet()
+{
+  if (document.getElementById)
+  {
+    console.log('Set Menu Icons and Menu');
+
+    if (To_g_showMenu)
+    {
       document.getElementById( 'MenuUnviewed').style.display = 'none';
       document.getElementById( 'MenuViewed').style.display = '';
-      
-      To_g_showMenu = false;
+      document.getElementById( 'Menu').style.display = '';
+    } else {
+      document.getElementById( 'MenuUnviewed').style.display = '';
+      document.getElementById( 'MenuViewed').style.display = 'none';
+      document.getElementById( 'Menu').style.display = 'none';
     }
+  }
+}
+
+
+function To_f_showMenu( switchOrForceShowMenu=null)
+{
+  if (document.getElementById)
+  {
+    console.log('Enter function: To_f_showMenu');
+
+    if (switchOrForceShowMenu === null) {
+      To_g_showMenu = !To_g_showMenu;
+    } else {
+      if (switchOrForceShowMenu === true) {
+        To_g_showMenu = true;
+      } else {
+        To_g_showMenu = false;
+      }
+    }
+    
+    if (To_g_showMenu)
+    {
+      console.log('Show Menu');
+    } else {
+      console.log('Hide Menu');
+    }
+    To_f_showMenuSet();
   }
 }
 
@@ -650,6 +689,8 @@ function To_f_manage_site_end( autoResize = false)
 
   window.onbeforeprint = To_f_manage_beforePrint;
   window.window.onafterprint = To_f_manage_afterPrint;
+  
+  To_f_showMenuCloneMenu();
   
   To_f_setExpandIcons();
 }

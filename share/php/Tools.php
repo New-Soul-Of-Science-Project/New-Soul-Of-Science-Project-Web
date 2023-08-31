@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 29.05.2023, 10:00h
+  // #: Stand: 31.08.2023, 17:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20230831:  +:  "To_f_menuList_header_create", "To_f_menuList_table_create": New.
   //           20230529:  +:  "To_f_replace_callback__latexcommand__anchor", "To_f_replace_callback__latexcommand__anchorname": New.
   //                      +:  "$Glo_g_Text_replace_ary": New.
   //           20230407:  +:  "$To_g_Text_replace_preg_ary": Move entry "quote" from "Science.php" to here.
@@ -2500,6 +2501,52 @@
     else     // #err: Index out of range!
       echo 'Error! Function "To_f_elements_hides_WriteJavaScript_ary_idx": Index parameter "$a_elements_hides_ary_idx = '.$a_elements_hides_ary_idx.'" is out of range 0..'.($To_g_elements_hides_ary_dim - 1).'!'."\n";
   }
+
+
+
+  function To_f_menuList_header_create( $offset, $menuList, $marginLeft=null)
+  {
+    echo $offset.'<p '.(gettype( $marginLeft) === 'string' ? 'style="margin-left: '.($marginLeft).'; margin-bottom: 5px;"' : 'align="center" style="margin-bottom: 5px;"').'>'."\n";
+
+    for ($i = 0; $i < count( $menuList); $i++) {
+      if (array_key_exists( 'aTag', $menuList[$i]))
+        echo $offset.'  '.($menuList[$i]['aTag'])."\n";
+      else
+        echo $offset.'  <a href="'.($menuList[$i]['href']).'">'.($menuList[$i]['text']).'</a>'."\n";
+        
+      if ($i < count( $menuList) - 1)
+        echo $offset.'  &nbsp; &nbsp;'."\n";
+    }
+    
+    echo $offset.'</p>'."\n";
+  }
+  
+  
+  function To_f_menuList_table_create( $offset, $menuList)
+  {
+    echo $offset.'<table border="0" style="padding-left: 0px; margin: 10px;" cellspacing="0" cellpadding="0">'."\n";
+
+    for ($i = 0; $i < count( $menuList); $i++) {
+      echo $offset.'  <tr>'."\n";
+      // echo $offset.'    <td valign="top"> <p style="padding-left: 0px; margin: 0 0px 0px; color: #505050;">&bull;</p> </td>'."\n";
+      echo $offset.'    <td valign="top">'."\n";
+      // echo $offset.'      <p style="padding-left: 0px; margin: 0 5px 0px;">'."\n";
+      echo $offset.'      <p style="padding-left: 0px; margin: 0 0px 0px;">'."\n";
+      if (array_key_exists( 'aTag', $menuList[$i]))
+        echo $offset.'        '.($menuList[$i]['aTag'])."\n";
+      else
+        echo $offset.'        <a href="'.($menuList[$i]['href']).'">'.($menuList[$i]['text']).'</a>'."\n";
+      echo $offset.'      </p>'."\n";
+      echo $offset.'    </td>'."\n";
+      echo $offset.'  </tr>'."\n";
+      
+      if ($i < count( $menuList) - 1)
+        // echo $offset.'  <tr><td height="3px"></td></tr>'."\n";
+        echo $offset.'  <tr><td height="8px"></td></tr>'."\n";
+    }
+    
+    echo $offset.'</table>'."\n";
+  }
   
   
   
@@ -2678,24 +2725,15 @@
   {
     global $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $To_g_headline_ary_dim, $To_g_headline_ary;
     
-    echo '						<table border="0" style="padding-left: 0px; margin-left: 10px;" cellspacing="0" cellpadding="0">'."\n";
+    $menuList = array();
     
     for ($i = 0; $i < $To_g_headline_ary_dim; $i++) {
-      //echo '							<tr> <td valign="top"> <p style="padding-left: 0px; margin: 0 0px 0px; line-height: 0.9em; color: #505050;">&bull;</p> </td>'."\n";
-      echo '							<tr> <td valign="top"> <p style="padding-left: 0px; margin: 0 0px 0px; color: #505050;">&bull;</p> </td>'."\n";
-      //echo '								<td valign="top"> <p style="padding-left: 0px; margin: 0 5px 0px; line-height: 0.9em;"> <small>'."\n";
-      echo '								<td valign="top"> <p style="padding-left: 0px; margin: 0 5px 0px;"> <!small>'."\n";
-      //echo '									<a href="#'.$To_g_headline_ary[name][$i].'" style="color: #505050;">'."\n";
-      //echo '									<a href="javascript:To_f_anchor_JumpToBy_hash( \'#'.$To_g_headline_ary[name][$i].'\')" style="color: #505050;">'."\n";
-      //echo '                  '.$To_g_headline_ary[text_short][$i].'</a> </small> </p> </td> </tr>'."\n";
-      //echo '									'.(To_f_anchor_Jump_html( $To_g_headline_ary[text_short][$i], $To_g_headline_ary[name][$i], '505050', $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, '', true)).' </small> </p> </td> </tr>'."\n";
-      echo '									'.(To_f_anchor_Jump_html( $To_g_headline_ary[text_short][$i], $To_g_headline_ary[name][$i], '505050', $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, '', true)).' <!/small> </p> </td> </tr>'."\n";
-      
-      if ($i < $To_g_headline_ary_dim - 1)
-        echo '						<tr><td height="3px"></td></tr>'."\n";
+      array_push( $menuList, array(
+        'aTag' => To_f_anchor_Jump_html( $To_g_headline_ary[text_short][$i], $To_g_headline_ary[name][$i], '505050', $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, '', true)
+      ));
     }
-    
-    echo '						</table>'."\n";
+
+    To_f_menuList_table_create( '            ', $menuList);
   }
   
   

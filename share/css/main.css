@@ -499,7 +499,29 @@ td.tools-class-text-figure {
   display: none;
 }
 
+.main-menu {
+/*  display: none;*/
+  position: absolute;
+/*  top: 10px;*/
+/*  left: 2px;*/
+  top: 20px;
+  right: 50px;
+  background-color: #EEEEEE;
+}
+.main-menu-shadow {
+  /* shadow */
+  -webkit-box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 1.0);  /* #: Safari */
+  -moz-box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 1.0);  /* #: Mozilla */
+  -o-box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 1.0);  /* #: Opera */
+  -ms-box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 1.0);  /* #: Internet Explorer */
+  box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 1.0);  /* #: Standard */
+}
+
 @media only screen and (max-width: 929px) {
+
+  .wrapper, .content {
+    height: 100%;
+  }
 
   .print-header-image {
     max-width: 100%;
@@ -512,14 +534,7 @@ td.tools-class-text-figure {
     display: none;
   }
   
-  .main-function-button-menu {
-    display: block;
-  }
-
-  .wrapper, .content {
-    height: 100%;
-  }
-
+  .main-function-button-menu,
   .footer-extra-table {
     display: block;
   }

@@ -3104,6 +3104,35 @@
                                  
                                  
                                  
+  function NSOSP_f_header_menuList()
+  {
+    global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ, $Glo_g_Site_activ_GenInfo_idx;
+
+    $header_menuList = array();
+    array_push( $header_menuList, array(
+      'text' => 'NSOSP-Home',
+      'href' => $Glo_g_Site_ary['OM:nSOSp:'][url_rel],
+    ));
+    // #?: Not the global homepage? Then show link to theory homepage.
+    if ($Glo_g_Site_activ_GenInfo_idx != 'OM:nSOSp:')
+      array_push( $header_menuList, array(
+        'text' => ((array_key_exists( name_short, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][name_short] : 'Theorie').'-Home',
+        'href' => $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][url_rel],
+      ));
+    array_push( $header_menuList, array(
+      'text' => 'Kontakt',
+      'href' => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten',
+    ));
+    array_push( $header_menuList, array(
+      'text' => 'Impressum',
+      'href' => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php',
+    ));
+    
+    return $header_menuList;
+  }
+
+
+
   const title = 'title';
   const jumpname = 'jumpname';
   const startsign = 'startsign';
@@ -3122,7 +3151,6 @@
   }
   
 
-  
   function nSOSp_f_tableOfContents_descriptionString( $site_activ, $descriptionManual='')
   {
     global $Glo_g_Site_ary;
@@ -3318,8 +3346,12 @@
     global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ, $Glo_g_Site_activ_GenInfo_idx, $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary;
 
     echo '			<div id="navigation" class="navigation main-shadow-0-5-30 main-layer-2">'."\n";
-    echo '        <h3 align="left" style="padding-top: 40px;"><a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_rel]).'">'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_short])).'</a></h3>'."\n";
-                  To_f_headline_make();
+    echo '        <br>'."\n";
+    echo '        <br>'."\n";
+    echo '        <div id="NavigationMenu">'."\n";
+    echo '          <h3 align="left" style="padding-top: 16px; margin-bottom: 16px;"><a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_rel]).'">'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_short])).'</a></h3>'."\n";
+    To_f_headline_make();
+    echo '        </div>'."\n";
     /* At the moment extra "div" is not used, because of the shadow. */
     //--echo '			</div>'."\n";
     //--echo ''."\n";
@@ -3449,25 +3481,12 @@
     echo $offset.'    </colgroup>'."\n";
     echo $offset.'    <tr'.((array_key_exists( header_pict_bgcolor, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? ' bgcolor="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_bgcolor]).'"' : '').'>'."\n";
     echo $offset.'      <td align="center" valign="middle">'."\n";
-    //%!echo $offset.'        <img src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_name]).'" width="930" height="134" border="0" alt="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_alt])).'"><br>'."\n";
     echo $offset.'        <img class="print-header-image" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_name]).'" width="'.((array_key_exists( header_pict_width, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_width] : '930').'" height="'.((array_key_exists( header_pict_height, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_height] : '134').'" border="0" alt="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_alt])).'"><br>'."\n";
     echo $offset.'      </td>'."\n";
     echo $offset.'    </tr>'."\n";
     echo $offset.'    <tr class="header-links">'."\n";
     echo $offset.'      <td>'."\n";
-    //%!echo $offset.'        <p align="center" style="margin-bottom: 5px;">'."\n";
-    echo $offset.'        <p '.((array_key_exists( header_links_marginLeft, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? 'style="margin-left: '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_links_marginLeft]).'; margin-bottom: 5px;"' : 'align="center" style="margin-bottom: 5px;"').'>'."\n";
-    //%1echo $offset.'          <a href="'.$Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/index.php">NSOSP-Home</a> &nbsp; &nbsp;'."\n";
-    echo $offset.'          <a href="'.($Glo_g_Site_ary['OM:nSOSp:'][url_rel]).'">NSOSP-Home</a> &nbsp; &nbsp;'."\n";
-    // #?: Not the global homepage? Then show link to theory homepage.
-    if ($Glo_g_Site_activ_GenInfo_idx != 'OM:nSOSp:')
-      echo $offset.'          <a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][url_rel]).'">'.((array_key_exists( name_short, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][name_short] : 'Theorie').'-Home</a> &nbsp; &nbsp;'."\n";
-    echo $offset.'          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Kontakt</a> &nbsp; &nbsp;'."\n";
-    echo $offset.'          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php">Impressum</a> &nbsp; &nbsp;'."\n";
-    //echo $offset.'          <!a href="'.$Glo_PathRel_back.'../eng/XXX.html"><img src="'.$Glo_PathRel_back.'../share/images/flag_en_disable.gif" width="25" height="14" border="0" alt="English"><!/a> &nbsp; &nbsp;'."\n";
-    //echo $offset.'          <a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_rel]).'"><img src="'.$Glo_PathRel_back.'../share/images/flag_de.gif" width="25" height="14" border="0" alt="Deutsch"></a>'."\n";
-    // echo $offset.'          <a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_rel]).'"><img src="'.$Glo_PathRel_back.'../share/images/flag_de.gif" width="25" height="14" border="0" alt="Deutsch" valign="middle"></a>'."\n";
-    echo $offset.'        </p>'."\n";
+    To_f_menuList_header_create( '        ', NSOSP_f_header_menuList(), (array_key_exists( header_links_marginLeft, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_links_marginLeft] : null);
     echo $offset.'      </td>'."\n";
     echo $offset.'    </tr>'."\n";
     echo $offset.'  </table>'."\n";
@@ -3494,8 +3513,11 @@
     echo         '<div id="wrapper" class="wrapper">'."\n";
     
     echo $offset.'  <div class="main-function-buttons-sticky">'."\n";
+    echo $offset.'    <div id="Menu" class="main-menu main-menu-shadow" style="display: none;">'."\n";
+    To_f_menuList_table_create( '              ', NSOSP_f_header_menuList());
+    echo $offset.'    </div>'."\n";
     echo $offset.'    <div class="main-function-buttons-div">'."\n";
-    echo $offset.'      <div id="Menu" class="main-function-button-menu">'."\n";
+    echo $offset.'      <div id="MenuButton" class="main-function-button-menu">'."\n";
     echo $offset.'        <div id="MenuUnviewed" class="main-function-button--inaktiv" style="display: ;" onclick="To_f_showMenu()">'."\n";
     echo $offset.'          <img class="main-function-button">'."\n";
     echo $offset.'            '.($NSOSP_g_barsSVG)."\n";
@@ -3622,7 +3644,7 @@
     
     
 // #: Vue.js
-// #: Testing und showing that its working at all.
+// #: Testing und showing that it's working at all.
     
     // #: Text ersetzen
     /*echo $offset.'    <div id="app">'."\n";
