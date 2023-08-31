@@ -905,7 +905,7 @@
     $local_elements_hides_ele_num = 1;
     
     // #: No offset, because it is before the PHP command.
-    echo '<table border="0" style="margin-top: '.$Sc_g_equation_list_SpaceBefore.'; margin-bottom: '.$Sc_g_equation_list_SpaceAfter.';"> <colgroup> <col width="500"> <col width="100"> </colgroup>'."\n";
+    echo '<table class="content-equations" border="0" style="margin-top: '.$Sc_g_equation_list_SpaceBefore.'; margin-bottom: '.$Sc_g_equation_list_SpaceAfter.';"> <colgroup> <col width="500"> <col width="100"> </colgroup>'."\n";
     echo "\n";
 
     // #: Go through all equations.
@@ -987,7 +987,7 @@
           $local_elements_hides_ele_num++;
           echo $offset.'      '.(Sc_f_equation_latex( $value[latex_if_visible], $latex_color, $latex_tech)).' </td>'."\n";
         }
-        echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'">'."\n";
+        echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'; margin-left: 20px;">'."\n";
         {
           echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
           if (array_key_exists( footnote, $value))
@@ -1053,7 +1053,7 @@
         echo $offset.'      <a name="'.$To_g_anchor_ary[label_name][$To_g_anchor_ary_dim - 1].'"></a>'."\n";
         echo $offset.'      '.(Sc_f_equation_latex( $value[latex], $latex_color, $latex_tech)).' </td>'."\n";
         //%! echo $offset.'    <td> <span style="color: #A0A0A0">'."\n";
-        echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'">'."\n";
+        echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'; margin-left: 20px;">'."\n";
         {
           echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
           if (array_key_exists( footnote, $value))

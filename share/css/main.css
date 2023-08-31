@@ -209,6 +209,12 @@ a:hover {
     font-size: 18px;
 	}
 
+  .content-equations {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
   /* #: Indifferent line height: Nothing helped! */
 	/*.content sub, sup {     / #: Info source: "http://webdesignandsuch.com/how-to-fix-sup-sub-line-height-problem-with-css/"
     font-size: 75%;
