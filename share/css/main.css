@@ -387,6 +387,10 @@ svg {
   position: relative;
   z-index: 3;
 }
+.main-layer-4 {
+/*  position: relative;*/
+  z-index: 4;
+}
 
 
 /* Tools Classes */

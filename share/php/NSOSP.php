@@ -3512,7 +3512,7 @@
 
     echo         '<div id="wrapper" class="wrapper">'."\n";
     
-    echo $offset.'  <div class="main-function-buttons-sticky">'."\n";
+    echo $offset.'  <div class="main-function-buttons-sticky main-layer-4">'."\n";
     echo $offset.'    <div id="Menu" class="main-menu main-menu-shadow" style="display: none;">'."\n";
     To_f_menuList_table_create( '              ', NSOSP_f_header_menuList());
     echo $offset.'    </div>'."\n";
