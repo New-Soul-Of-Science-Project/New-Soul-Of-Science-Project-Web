@@ -512,6 +512,12 @@ td.tools-class-text-figure {
   right: 50px;
   background-color: #EEEEEE;
 }
+.main-menu h3 {
+  font-size: 20px;
+}
+.main-menu p {
+  font-size: 16px;
+}
 .main-menu-shadow {
   /* shadow */
   -webkit-box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 1.0);  /* #: Safari */
