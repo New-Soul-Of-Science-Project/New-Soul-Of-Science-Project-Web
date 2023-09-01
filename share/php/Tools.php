@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 31.08.2023, 17:00h
+  // #: Stand: 01.09.2023, 00:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20230901:  +:  "To_f_Paragraph", 'figure', 'youtube':  Add horizontal scrollable with class 'content-horizontal-scrollable'.
   //           20230831:  +:  "To_f_menuList_header_create", "To_f_menuList_table_create": New.
   //           20230529:  +:  "To_f_replace_callback__latexcommand__anchor", "To_f_replace_callback__latexcommand__anchorname": New.
   //                      +:  "$Glo_g_Text_replace_ary": New.
@@ -1991,7 +1992,8 @@
           //%!echo '          <table border="0px" width="700px" style="margin-top: 20px; margin-bottom: 20px;">'."\n";
           //%!echo '          <table border="0px" width="700px" style="margin-left: 10px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of centering in the midddle of the content and enable widths up to "700px".
           // echo '          <table border="0px" width="700px" style="margin-left: 10px; margin-right: 20px; margin-top: 30px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of centering in the midddle of the content and enable widths up to "700px".
-          echo '          <table border="0px" width="660px" style="margin-top: 30px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of centering in the midddle of the content and enable widths up to "700px".
+          echo '          <div class="content-horizontal-scrollable">'."\n";
+          echo '          <table class="" border="0px" width="660px" style="margin-left: 0px; margin-right: 0px; margin-top: 30px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of centering in the midddle of the content and enable widths up to "700px". compensate margins of "content-horizontal-scrollable".
           echo '            <tr>'."\n";
           
           // #: Margin left as column.
@@ -2111,6 +2113,7 @@
           
           echo '            </tr>'."\n";
           echo '          </table>'."\n";
+          echo '          </div>'."\n";
           //echo '          <br>'."\n";
         }
 

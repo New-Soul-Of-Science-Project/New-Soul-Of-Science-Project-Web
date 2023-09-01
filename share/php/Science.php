@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 03.08.2023, 10:00h
+  // #: Stand: 01.09.2023, 00:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20230901:  +:  "Sc_f_equation_list":  Add horizontal scrollable equations with class 'content-horizontal-scrollable'.
   //           20230803:  +:  "$Sc_g_equation_replace_ary":  '  \land  ' -> '\;\;\;\land\;\;\;' is new.
   //           20230802:  +:  "$Sc_g_equation_replace_ary":  '  \lor  ' -> '\;\;\;\lor\;\;\;', '  \Leftrightarrow  ' -> '\;\;\;\Leftrightarrow\;\;\;', '  \Rightarrow  ' -> '\;\;\;\Rightarrow\;\;\;' are new.
   //                      >:  "$Sc_g_equation_replace_MathJax_ary":  '{  \Leftrightarrow  ' -> '{  \Leftrightarrow\hspace{10mm}', '{  \Rightarrow  ' -> '{  \Rightarrow\hspace{10mm}' are new.
@@ -905,7 +906,7 @@
     $local_elements_hides_ele_num = 1;
     
     // #: No offset, because it is before the PHP command.
-    echo '<table class="content-equations" border="0" style="margin-top: '.$Sc_g_equation_list_SpaceBefore.'; margin-bottom: '.$Sc_g_equation_list_SpaceAfter.';"> <colgroup> <col width="500"> <col width="100"> </colgroup>'."\n";
+    echo '<table class="content-horizontal-scrollable" border="0" style="margin-top: '.$Sc_g_equation_list_SpaceBefore.'; margin-bottom: '.$Sc_g_equation_list_SpaceAfter.';"> <colgroup> <col width="500"> <col width="100"> </colgroup>'."\n";
     echo "\n";
 
     // #: Go through all equations.
