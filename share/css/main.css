@@ -218,6 +218,19 @@ a:hover {
 /*    white-space: nowrap;*/
   }
 
+  .content-archive-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0;
+  }
+  .content-archive-list li:not(:last-child) {
+    margin-right: 60px;
+    margin-bottom: 0px;
+  }
+
   /* #: Indifferent line height: Nothing helped! */
 	/*.content sub, sup {     / #: Info source: "http://webdesignandsuch.com/how-to-fix-sup-sub-line-height-problem-with-css/"
     font-size: 75%;
@@ -536,6 +549,21 @@ td.tools-class-text-figure {
   box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 1.0);  /* #: Standard */
 }
 
+@media only screen and (max-width: 559px) {
+
+  .content-archive-list {
+    flex-direction: column;
+/*    width: 100%;*/
+    justify-content: left;
+    align-items: left;
+  }
+  .content-archive-list li:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+}
+
 @media only screen and (max-width: 929px) {
 
   .wrapper, .content {
@@ -557,4 +585,5 @@ td.tools-class-text-figure {
   .footer-extra-table {
     display: block;
   }
+
 }
