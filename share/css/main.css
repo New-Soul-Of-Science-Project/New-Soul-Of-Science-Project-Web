@@ -578,7 +578,7 @@ td.tools-class-text-figure {
   box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 1.0);  /* #: Standard */
 }
 
-@media only screen and (max-width: 559px) {
+@media only screen and (max-width: 599px) {
 
   .content-archive-list {
     flex-direction: column;
