@@ -230,9 +230,8 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • Information ist Wirkung  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+          <!  • Information ist Wirkung  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Bewusstsein:InformationIstWirkung',
               'Nur was wirkt wurde verstanden und ist daher Information', 'Sc_f_Paragraph',
                 array(
@@ -241,26 +240,26 @@
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '(• Eigene Seite?)',
-                    '(• \\quote{Information muss erkannt sein, sonst wär es keine Information.} Warnke, Ulrich in \\jump[https://www.youtube.com/watch?time_continue=409&v=lVhFhR_lSdw]{}{Wie das Bewusstsein „Wirklichkeit schaltet" | Dr. Ulrich Warnke im Gespräch}, Sek. 9:50.)',
-                    '(\\bold{Bewusstsein und Regelprozesse:})',
-                    '(• Information ist Wirkung:)',
-                    '(– Im Spannungsspiel und seiner FrQFT ist für den Empfänger das Information, was potenzielle Information, die Abstrahlungen anderer Regelprozesse, bewirkt, also beim Empfänger verändert.)',
-                    '(– Eine Veränderung tritt auf, wenn ein sendender Regelprozess in einem empfangenden Regelprozess eine Resonanz auslöst.)',
-                    '(– Was ein sendender Regelprozess abstrahlt ist also nur potenzielle Information. Erst durch den Empfang und seine Resonanz wird sie zur echten, wirkenden Information.)',
-                    '(– In der Definition der Rhetorik wird dies aufgegriffen: Rhetorik ist die Kunst der wirkungsvollen Kommunikation oder Rede.(Verweis Tom Tastisch und Wikipedia))',
-                    '(– Wir sind in uns selber extrem resonant! So stark, dass unsere Existenz dadurch in jedem Detail erzeugt ist. Die Informationen in uns erzeugen eine fast maximale Wirkung. Daher sind wir die wichtigsten für uns, unsere Basis.)',
-                    '(– Bewusstsein ist Information empfangen, also wirkendes, und es ggf. speichern.)',
-                    '(– Achtsamkeit ist das Bewusste dann noch sehr bewusst anwenden.)',
-                    '(• \\jump[https://en.wikipedia.org/w/index.php?title=Integrated_information_theory&oldid=893290624]{}{Integrated Information Theory (IIT)}:)',
-                    '(– Im Spannungsspiel und seiner FrQFT haben wir einen etwas anderen Ansatz als in der IIT.)',
-                    '(– Die Spannungsspiel/FrQFT Axiome sind:)',
-                    '(⋅ Alles ist dynamische Struktur. (Abgeleitet aus \\italic{\\jumpname{OM:FrQFT:WasIstPhysik}}.))',
-                    '(⋅ Dann ergibt sich deren Entstehung, Stabilität und Zerstörung, kombiniert zur Transformation, aus dem fraktalen Djet-Neheh-Dualismus und Existenzprinzip.)',
-                    '(⋅ Die strukturelle Stabilität und Transformation wird zwangsläufig durch sich selber organisierende Regelprozesse hergestellt.)',
-                    '(⋅ Diese Regelprozesse sind zwangsläufig miteinander verbunden und tragen so (elementares) Bewusstsein in Form von gegenseitiger Wahrnehmung und Reaktion aufeinander in sich.)',
-                    '(– Bewusstsein wird, anders als in der IIT nicht vorausgesetzt, sondern ergibt sich aus dem Existenzprinzip dynamischer Strukturen und dem ihm zugrunde liegenden Djet-Neheh-Dualismus.)',
-                    '(– Information: Im Spannungsspiel und in der FrQFT sind die von einer Struktur abgestrahlten Schwingungen zusammen mit der Interpretation des Empfängers Information. Auf Ebene der Wirkungsquanten wird jedes Wirkungsquant zu einer Informationseinheit, weil sowohl die Abstrahlung als auch der Empfang und die Interpretation nicht klarer definierbar sind. Siehe \\jumpname{OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation}.)',
+                    '• Eigene Seite?',
+                    '• \\quote{Information muss erkannt sein, sonst wär es keine Information.} Warnke, Ulrich in \\jump[https://www.youtube.com/watch?time_continue=409&v=lVhFhR_lSdw]{}{Wie das Bewusstsein „Wirklichkeit schaltet" | Dr. Ulrich Warnke im Gespräch}, Sek. 9:50.',
+                    '\\bold{Bewusstsein und Regelprozesse:}',
+                    '• Information ist Wirkung:',
+                    '– Im Spannungsspiel und seiner FrQFT ist für den Empfänger das Information, was potenzielle Information, die Abstrahlungen anderer Regelprozesse, bewirkt, also beim Empfänger verändert.',
+                    '– Eine Veränderung tritt auf, wenn ein sendender Regelprozess in einem empfangenden Regelprozess eine Resonanz auslöst.',
+                    '– Was ein sendender Regelprozess abstrahlt ist also nur potenzielle Information. Erst durch den Empfang und seine Resonanz wird sie zur echten, wirkenden Information.',
+                    '– In der Definition der Rhetorik wird dies aufgegriffen: Rhetorik ist die Kunst der wirkungsvollen Kommunikation oder Rede.(Verweis Tom Tastisch und Wikipedia)',
+                    '– Wir sind in uns selber extrem resonant! So stark, dass unsere Existenz dadurch in jedem Detail erzeugt ist. Die Informationen in uns erzeugen eine fast maximale Wirkung. Daher sind wir die wichtigsten für uns, unsere Basis.',
+                    '– Bewusstsein ist Information empfangen, also wirkendes, und es ggf. speichern.',
+                    '– Achtsamkeit ist das Bewusste dann noch sehr bewusst anwenden.',
+                    '• \\jump[https://en.wikipedia.org/w/index.php?title=Integrated_information_theory&oldid=893290624]{}{Integrated Information Theory (IIT)}:',
+                    '– Im Spannungsspiel und seiner FrQFT haben wir einen etwas anderen Ansatz als in der IIT.',
+                    '– Die Spannungsspiel/FrQFT Axiome sind:',
+                    '⋅ Alles ist dynamische Struktur. (Abgeleitet aus \\italic{\\jumpname{OM:FrQFT:WasIstPhysik}}.)',
+                    '⋅ Dann ergibt sich deren Entstehung, Stabilität und Zerstörung, kombiniert zur Transformation, aus dem fraktalen Djet-Neheh-Dualismus und Existenzprinzip.',
+                    '⋅ Die strukturelle Stabilität und Transformation wird zwangsläufig durch sich selber organisierende Regelprozesse hergestellt.',
+                    '⋅ Diese Regelprozesse sind zwangsläufig miteinander verbunden und tragen so (elementares) Bewusstsein in Form von gegenseitiger Wahrnehmung und Reaktion aufeinander in sich.',
+                    '– Bewusstsein wird, anders als in der IIT nicht vorausgesetzt, sondern ergibt sich aus dem Existenzprinzip dynamischer Strukturen und dem ihm zugrunde liegenden Djet-Neheh-Dualismus.',
+                    '– Information: Im Spannungsspiel und in der FrQFT sind die von einer Struktur abgestrahlten Schwingungen zusammen mit der Interpretation des Empfängers Information. Auf Ebene der Wirkungsquanten wird jedes Wirkungsquant zu einer Informationseinheit, weil sowohl die Abstrahlung als auch der Empfang und die Interpretation nicht klarer definierbar sind. Siehe \\jumpname{OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation}.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -357,10 +356,44 @@
                     ))),
             
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Bewusstsein und Mathematik  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik',
+              'Zählen bedeutet, das eine vom anderen unterscheiden zu können', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SpaLeb:Bewusstsein:InformationIstWirkung', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    '• Zählen bedeutet, das eine vom anderen unterscheiden zu können, sich also der Abgrenzung zwischen den Dingen bewusst zu sein.',
+                    '– Getrennt Äpfel und Birnen zählen zu können bedeutet, dass wir Kategorien unterscheiden zu können.',
+                    '– Unterscheiden zu können bedeutet, den Fokus auf Dinge setzen zu können.',
+                    '• Regelprozesse sind Systeme in Eigenresonanz.',
+                    '– Eigenresonanz führt zu stehenden Wellen und erzeugt dadurch Ganzzahligkeit.',
+                    '– Mit Informationen die Empfangen werden In Resonanz zu gehen bedeutet, sich implizit über die Schwingungsverhältnisse bewusst zu sein.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+            
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess'),
                     )),
               )
-          ); */ ?>
+          ); ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

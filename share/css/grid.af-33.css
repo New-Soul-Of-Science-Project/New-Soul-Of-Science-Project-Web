@@ -3,9 +3,13 @@
 	margin: 0 auto
 }
 
+#wrapper {
+  float: left;
+  width: 730px;
+}
+
 #content {
-	float: left;
-	width: 730px
+	width: 100%;
 }
 
 #navigation {
@@ -22,4 +26,31 @@
 #footer {
 	clear: both;
 	width: 100%
+}
+
+
+
+/* pad and mobile */
+
+
+@media only screen and (max-width: 929px) {
+
+  #container {
+    max-width: 730px;
+    height: 100%;
+  }
+
+  #wrapper {
+    max-width: 100%;
+  }
+
+}
+
+
+@media only screen and (max-width: 729px) {
+
+  #container {
+    max-width: 100%;
+  }
+
 }

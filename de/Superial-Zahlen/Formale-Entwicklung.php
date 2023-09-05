@@ -395,7 +395,7 @@
                       
                   array( 'text', array( text => array(
                     'Nun gehen wir ins Unendliche über.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Grundlagen:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen', text =>
                 'Zahlen und Mengen im Unendlichen', subline =>
                   '')),
                   array( 'text', array( text => array(

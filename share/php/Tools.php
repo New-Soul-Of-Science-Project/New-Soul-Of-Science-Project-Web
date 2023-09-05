@@ -4,10 +4,12 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 29.05.2023, 10:00h
+  // #: Stand: 01.09.2023, 00:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20230901:  +:  "To_f_Paragraph", 'figure', 'youtube':  Add horizontal scrollable with class 'content-horizontal-scrollable'.
+  //           20230831:  +:  "To_f_menuList_header_create", "To_f_menuList_table_create": New.
   //           20230529:  +:  "To_f_replace_callback__latexcommand__anchor", "To_f_replace_callback__latexcommand__anchorname": New.
   //                      +:  "$Glo_g_Text_replace_ary": New.
   //           20230407:  +:  "$To_g_Text_replace_preg_ary": Move entry "quote" from "Science.php" to here.
@@ -258,6 +260,7 @@
     echo ''."\n";
     echo '    <script src="'.$Glo_PathRel_back.'../share/js/nospam.js" type="text/javascript" language="JavaScript"></script>'."\n";
     echo '    <script src="'.$Glo_PathRel_back.'../share/js/Tools.js" type="text/javascript" language="JavaScript"></script>'."\n";
+    echo '    <script src="'.$Glo_PathRel_back.'../share/js/NSOSP.js" type="text/javascript" language="JavaScript"></script>'."\n";
     echo '    <script type="text/javascript">'."\n";
     echo '          <!--'."\n";
     // #: Call JavaScript start sequence.
@@ -1988,9 +1991,10 @@
         if (0 < count( $textAry)) {
           // #: "margin" can intersect, "padding" can not intersect and it will allways add.
           //%!echo '          <table border="0px" width="700px" style="margin-top: 20px; margin-bottom: 20px;">'."\n";
-          //%!echo '          <table border="0px" width="700px" style="margin-left: 10px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of centering in the midddle of the content and enable widths up to "700px".
-          // echo '          <table border="0px" width="700px" style="margin-left: 10px; margin-right: 20px; margin-top: 30px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of centering in the midddle of the content and enable widths up to "700px".
-          echo '          <table border="0px" width="660px" style="margin-top: 30px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of centering in the midddle of the content and enable widths up to "700px".
+          //%!echo '          <table border="0px" width="700px" style="margin-left: 10px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of center in the middle of the content and enable widths up to "700px".
+          // echo '          <table border="0px" width="700px" style="margin-left: 10px; margin-right: 20px; margin-top: 30px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of center in the middle of the content and enable widths up to "700px".
+          echo '          <div class="content-horizontal-scrollable">'."\n";
+          echo '          <table class="" border="0px" width="660px" style="margin-left: 0px; margin-right: 0px; margin-top: 30px; margin-bottom: 20px;">'."\n";  // #: "margin-left: 10px; margin-right: 20px;" set here to prevent from setting by CSS, because of center in the middle of the content and enable widths up to "700px". compensate margins of "content-horizontal-scrollable".
           echo '            <tr>'."\n";
           
           // #: Margin left as column.
@@ -2110,6 +2114,7 @@
           
           echo '            </tr>'."\n";
           echo '          </table>'."\n";
+          echo '          </div>'."\n";
           //echo '          <br>'."\n";
         }
 
@@ -2500,6 +2505,52 @@
     else     // #err: Index out of range!
       echo 'Error! Function "To_f_elements_hides_WriteJavaScript_ary_idx": Index parameter "$a_elements_hides_ary_idx = '.$a_elements_hides_ary_idx.'" is out of range 0..'.($To_g_elements_hides_ary_dim - 1).'!'."\n";
   }
+
+
+
+  function To_f_menuList_header_create( $offset, $menuList, $marginLeft=null)
+  {
+    echo $offset.'<p '.(gettype( $marginLeft) === 'string' ? 'style="margin-left: '.($marginLeft).'; margin-bottom: 5px;"' : 'align="center" style="margin-bottom: 5px;"').'>'."\n";
+
+    for ($i = 0; $i < count( $menuList); $i++) {
+      if (array_key_exists( 'aTag', $menuList[$i]))
+        echo $offset.'  '.($menuList[$i]['aTag'])."\n";
+      else
+        echo $offset.'  <a href="'.($menuList[$i]['href']).'">'.($menuList[$i]['text']).'</a>'."\n";
+        
+      if ($i < count( $menuList) - 1)
+        echo $offset.'  &nbsp; &nbsp;'."\n";
+    }
+    
+    echo $offset.'</p>'."\n";
+  }
+  
+  
+  function To_f_menuList_table_create( $offset, $menuList)
+  {
+    echo $offset.'<table border="0" style="padding-left: 0px; margin: 10px;" cellspacing="0" cellpadding="0">'."\n";
+
+    for ($i = 0; $i < count( $menuList); $i++) {
+      echo $offset.'  <tr>'."\n";
+      // echo $offset.'    <td valign="top"> <p style="padding-left: 0px; margin: 0 0px 0px; color: #505050;">&bull;</p> </td>'."\n";
+      echo $offset.'    <td valign="top">'."\n";
+      // echo $offset.'      <p style="padding-left: 0px; margin: 0 5px 0px;">'."\n";
+      echo $offset.'      <p style="padding-left: 0px; margin: 0 0px 0px;">'."\n";
+      if (array_key_exists( 'aTag', $menuList[$i]))
+        echo $offset.'        '.($menuList[$i]['aTag'])."\n";
+      else
+        echo $offset.'        <a href="'.($menuList[$i]['href']).'">'.($menuList[$i]['text']).'</a>'."\n";
+      echo $offset.'      </p>'."\n";
+      echo $offset.'    </td>'."\n";
+      echo $offset.'  </tr>'."\n";
+      
+      if ($i < count( $menuList) - 1)
+        // echo $offset.'  <tr><td height="3px"></td></tr>'."\n";
+        echo $offset.'  <tr><td height="8px"></td></tr>'."\n";
+    }
+    
+    echo $offset.'</table>'."\n";
+  }
   
   
   
@@ -2670,7 +2721,7 @@
   function To_f_headline_add_hides_end_line( $offset='          ')
   {
     //echo '<hr noshade width="700" size="1" align="left" style="border: 1px; border-color: #C0C0C0; margin-left: 10px;">'."\n";
-    echo $offset.'<div style="border: none; border-bottom: 1px solid #FFFFFF; border-top: 1px solid #dcdcdc; clear: both; height: 0; width: 700px; margin-left: 10px;"></div>'."\n";
+    echo $offset.'<div style="border: none; border-bottom: 1px solid #FFFFFF; border-top: 1px solid #dcdcdc; clear: both; height: 0; margin-left: 10px; margin-right: 20px;"></div>'."\n";
   }
   
   
@@ -2678,24 +2729,15 @@
   {
     global $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $To_g_headline_ary_dim, $To_g_headline_ary;
     
-    echo '						<table border="0" style="padding-left: 0px; margin-left: 10px;" cellspacing="0" cellpadding="0">'."\n";
+    $menuList = array();
     
     for ($i = 0; $i < $To_g_headline_ary_dim; $i++) {
-      //echo '							<tr> <td valign="top"> <p style="padding-left: 0px; margin: 0 0px 0px; line-height: 0.9em; color: #505050;">&bull;</p> </td>'."\n";
-      echo '							<tr> <td valign="top"> <p style="padding-left: 0px; margin: 0 0px 0px; color: #505050;">&bull;</p> </td>'."\n";
-      //echo '								<td valign="top"> <p style="padding-left: 0px; margin: 0 5px 0px; line-height: 0.9em;"> <small>'."\n";
-      echo '								<td valign="top"> <p style="padding-left: 0px; margin: 0 5px 0px;"> <!small>'."\n";
-      //echo '									<a href="#'.$To_g_headline_ary[name][$i].'" style="color: #505050;">'."\n";
-      //echo '									<a href="javascript:To_f_anchor_JumpToBy_hash( \'#'.$To_g_headline_ary[name][$i].'\')" style="color: #505050;">'."\n";
-      //echo '                  '.$To_g_headline_ary[text_short][$i].'</a> </small> </p> </td> </tr>'."\n";
-      //echo '									'.(To_f_anchor_Jump_html( $To_g_headline_ary[text_short][$i], $To_g_headline_ary[name][$i], '505050', $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, '', true)).' </small> </p> </td> </tr>'."\n";
-      echo '									'.(To_f_anchor_Jump_html( $To_g_headline_ary[text_short][$i], $To_g_headline_ary[name][$i], '505050', $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, '', true)).' <!/small> </p> </td> </tr>'."\n";
-      
-      if ($i < $To_g_headline_ary_dim - 1)
-        echo '						<tr><td height="3px"></td></tr>'."\n";
+      array_push( $menuList, array(
+        'aTag' => To_f_anchor_Jump_html( $To_g_headline_ary[text_short][$i], $To_g_headline_ary[name][$i], '505050', $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, '', true)
+      ));
     }
-    
-    echo '						</table>'."\n";
+
+    To_f_menuList_table_create( '            ', $menuList);
   }
   
   

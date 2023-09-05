@@ -2,10 +2,13 @@
 // #: Name:  "Tools.js"
 
 
-// #: Stand: 07.08.2022, 18:00h
+// #: Stand: 05.09.2023, 12:00h
 
 // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+//          20230905:  +:  "To_f_manage_site_end": Implement "customResizeCallback".
+//          20230831:  +:  "To_f_showMenuCloneMenu", "To_f_showMenuSet": to use navigation menu for mobile menu as well and split up functionality.
+//          20230820:  +:  "To_f_showMenu" for mobile mode.
 //          20220807:  +:  "To_f_manage_site_end", "To_f_manage_beforePrint", "To_f_manage_afterPrint":  Implement event handlers for printing.
 //v01.001:  20130515:  +:  History started.
 //          20170129:  +:  "To_f_manage_site_end":  "autoResize = false" is new.
@@ -15,6 +18,10 @@
 
 
 // Comment:  20170226:  "To_f_manage_resize":  There seems to be no difference at the moment between mobiles windows outer height and mobiles windows inner height. Not on Safari nor FireFox nor Chrome.
+
+
+
+var To_g_callbackOnResize = null;
 
 
 
@@ -173,6 +180,7 @@ function To_f_hash_changed( hash)
 
 
 var To_g_rememberOldStatus_elements_hides_ary = null;
+var To_g_showMenu = false;
 
 
 function To_f_openAll( rememberOldStatus = false)
@@ -334,11 +342,16 @@ var To_g_extraOrigHeight = null;
 var To_g_navigationOrigHeight = null;
 
 
-// Comment:  20170226:  "To_f_manage_resize":  There semes to be no difference at the moment between mobils windows outer heigt and mobils windows inner height. Not on Safari nor FireFox nor Chrome.
+// Comment:  20170226:  "To_f_manage_resize":  There seems to be no difference at the moment between mobile windows outer height and mobile windows inner height. Not on Safari nor FireFox nor Chrome.
 
 function To_f_manage_resize() {
-  // Called when the browser is first opened.
+  // Called if the browser is first opened and on resize of screen.
   // Values of clientHeight and scrollHeight have settled by this point.
+  
+  To_f_showMenu( false);
+  if (To_g_callbackOnResize) {
+    To_g_callbackOnResize();
+  }
   
   // #: For mobile only call once! For desktop call always!
   // #?: Is not mobile or is the first call?
@@ -594,6 +607,69 @@ function To_f_expand()
 
 
 
+function To_f_showMenuCloneMenu()
+{
+  if (document.getElementById)
+  {
+    console.log( 'Clone Menu');
+
+    const navigationMenu = document.getElementById( 'NavigationMenu'); // side navigation
+    const navigationMenuClone = navigationMenu.cloneNode( true); // the true is for deep cloning
+    const mainMenu = document.getElementById( 'Menu'); // mobile
+
+    mainMenu.appendChild( navigationMenuClone);
+  }
+}
+
+
+function To_f_showMenuSet()
+{
+  if (document.getElementById)
+  {
+    console.log('Set Menu Icons and Menu');
+
+    if (To_g_showMenu)
+    {
+      document.getElementById( 'MenuUnviewed').style.display = 'none';
+      document.getElementById( 'MenuViewed').style.display = '';
+      document.getElementById( 'Menu').style.display = '';
+    } else {
+      document.getElementById( 'MenuUnviewed').style.display = '';
+      document.getElementById( 'MenuViewed').style.display = 'none';
+      document.getElementById( 'Menu').style.display = 'none';
+    }
+  }
+}
+
+
+function To_f_showMenu( switchOrForceShowMenu=null)
+{
+  if (document.getElementById)
+  {
+    console.log('Enter function: To_f_showMenu');
+
+    if (switchOrForceShowMenu === null) {
+      To_g_showMenu = !To_g_showMenu;
+    } else {
+      if (switchOrForceShowMenu === true) {
+        To_g_showMenu = true;
+      } else {
+        To_g_showMenu = false;
+      }
+    }
+    
+    if (To_g_showMenu)
+    {
+      console.log('Show Menu');
+    } else {
+      console.log('Hide Menu');
+    }
+    To_f_showMenuSet();
+  }
+}
+
+
+
 function To_f_googleTranslateCorrect()
 {
   // correct Google navigator right overflow
@@ -606,10 +682,12 @@ function To_f_googleTranslateCorrect()
 
 
 
-function To_f_manage_site_end( autoResize = false)
+function To_f_manage_site_end( autoResize = false, customResizeCallback = null)
 {
   // #: Open hidden areas for the hash of first site call.
   To_f_hash_changed( window.location.hash);
+  
+  To_g_callbackOnResize = customResizeCallback;
   
   if (autoResize)
   {
@@ -621,6 +699,8 @@ function To_f_manage_site_end( autoResize = false)
 
   window.onbeforeprint = To_f_manage_beforePrint;
   window.window.onafterprint = To_f_manage_afterPrint;
+  
+  To_f_showMenuCloneMenu();
   
   To_f_setExpandIcons();
 }

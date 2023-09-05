@@ -53,6 +53,10 @@
 
   
   $nSOSp_g_info_wolfgangHuss = array(
+    /* author_adress => 'Wolfgang Huß \\\\'."\n".
+                   'und Media Line Digital e.K. \\\\'."\n".
+                   'Steinburger Straße 38 \\\\'."\n".
+                   '22527 Hamburg, Germany, EU', */
     author_adress => 'Wolfgang Huß \\\\'."\n".
                    'und Media Line Digital e.K. \\\\'."\n".
                    'Steinburger Straße 38 \\\\'."\n".
@@ -351,6 +355,7 @@
   $SupNum_g_footnote_text_Maechtigkeit          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:MaechtigkeitMathematik:2023}.';
   $SupNum_g_footnote_text_RationaleZahl         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:RationaleZahl:2022}.';
   $SupNum_g_footnote_text_RationaleZahlDichtheit = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:RationaleZahl:2022}, Eigenschaften.';
+  $SupNum_g_footnote_text_RiemannschenVermutung = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:RiemannscheVermutung:2023}.';
   $SupNum_g_footnote_text_Stellenwertsystem     = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Stellenwertsystem:2023}.';
 
   
@@ -2349,7 +2354,9 @@
                     'OM:SpaLeb:Bewusstsein:Vortext:RudimentaeresBewusstsein' => array( headline_text => 'Rudimentäres Bewusstsein, Lernen und Erinnern', headline_text_short => 'Rudimentäres Bewusstsein'),
                     'OM:SpaLeb:Bewusstsein:Vortext:KognitivesBewusstsein' => array( headline_text => 'Kognitives Bewusstsein, Lernen und Erinnern', headline_text_short => 'Kognitives Bewusstsein'),
 
-                  // 'OM:SpaLeb:Bewusstsein:InformationIstWirkung' => array( headline_text => 'Information ist Wirkung', headline_text_short => 'Information ist Wirkung'),
+                  'OM:SpaLeb:Bewusstsein:InformationIstWirkung' => array( headline_text => 'Information ist Wirkung'/* , headline_text_short => 'XXX' */),
+
+                  'OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik' => array( headline_text => 'Bewusstsein und Mathematik'/* , headline_text_short => 'XXX' */),
                 ),
          ),
   'OM:SpaLeb:Demenz' =>
@@ -3101,6 +3108,35 @@
                                  
                                  
                                  
+  function NSOSP_f_header_menuList()
+  {
+    global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ, $Glo_g_Site_activ_GenInfo_idx;
+
+    $header_menuList = array();
+    array_push( $header_menuList, array(
+      'text' => 'NSOSP-Home',
+      'href' => $Glo_g_Site_ary['OM:nSOSp:'][url_rel],
+    ));
+    // #?: Not the global homepage? Then show link to theory homepage.
+    if ($Glo_g_Site_activ_GenInfo_idx != 'OM:nSOSp:')
+      array_push( $header_menuList, array(
+        'text' => ((array_key_exists( name_short, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][name_short] : 'Theorie').'-Home',
+        'href' => $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][url_rel],
+      ));
+    array_push( $header_menuList, array(
+      'text' => 'Kontakt',
+      'href' => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten',
+    ));
+    array_push( $header_menuList, array(
+      'text' => 'Impressum',
+      'href' => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php',
+    ));
+    
+    return $header_menuList;
+  }
+
+
+
   const title = 'title';
   const jumpname = 'jumpname';
   const startsign = 'startsign';
@@ -3119,7 +3155,6 @@
   }
   
 
-  
   function nSOSp_f_tableOfContents_descriptionString( $site_activ, $descriptionManual='')
   {
     global $Glo_g_Site_ary;
@@ -3261,7 +3296,7 @@
     echo '    <meta name="keywords"           content="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][keywords])).'">'."\n";
     echo '    <meta name="author"             content="Wolfgang Huss, info@nsosp.org">'."\n";
     echo '    <meta name="DC.Publisher"       content="MEDIA LINE DIGITAL e.K., info@media-line-digital.de">'."\n";
-    echo '    <meta name="DC.Date"            content="2023-08-19T09:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
+    echo '    <meta name="DC.Date"            content="2023-09-05T17:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
     echo '    <meta name="DC.Identifier"      content="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" scheme="DCTERMS.URI">'."\n";
     echo '    <meta rel="canonical"           href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" />'."\n";
     echo '    <meta name="DC.Language"        content="de">'."\n";
@@ -3310,40 +3345,17 @@
 
   
   
-  $NSOSP_g_printSVG = file_get_contents(
-      $Glo_PathRel_back.'../share/images/_icons/svg/print.svg'
-  );
-  $NSOSP_g_expandSVG = file_get_contents(
-      $Glo_PathRel_back.'../share/images/_icons/svg/expand.svg'
-  );
-  
   function FrQFT_f_HTML_EndDivsNavExtrFootContainerBody()
   {
     global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ, $Glo_g_Site_activ_GenInfo_idx, $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary;
-    global $NSOSP_g_printSVG, $NSOSP_g_expandSVG;
 
     echo '			<div id="navigation" class="navigation main-shadow-0-5-30 main-layer-2">'."\n";
-    echo '        <div class="main-print-expand-div">'."\n";
-    echo '          <br>'."\n";
-    echo '          <div class="main-print-div" onclick="To_f_print()">'."\n";
-    echo '            <img class="main-print-expand">'."\n";
-    echo '              '.($NSOSP_g_printSVG)."\n";
-    echo '            </img>'."\n";
-    echo '          </div>'."\n";
-    echo '          <div id="isUnexpanded" class="main-unexpanded-div" style="display: ;" onclick="To_f_expand()">'."\n";
-    echo '            <img class="main-print-expand">'."\n";
-    echo '              '.($NSOSP_g_expandSVG)."\n";
-    echo '            </img>'."\n";
-    echo '          </div>'."\n";
-    echo '          <div id="isExpanded" class="main-expanded-div" style="display: none;" onclick="To_f_expand()">'."\n";
-    echo '            <img class="main-print-expand">'."\n";
-    echo '              '.($NSOSP_g_expandSVG)."\n";
-    echo '            </img>'."\n";
-    echo '          </div>'."\n";
+    echo '        <br>'."\n";
+    echo '        <br>'."\n";
+    echo '        <div id="NavigationMenu">'."\n";
+    echo '          <h3 align="left" style="padding-top: 16px; margin-bottom: 16px;"><a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_rel]).'">'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_short])).'</a></h3>'."\n";
+    To_f_headline_make();
     echo '        </div>'."\n";
-    echo '        </p>'."\n";
-    echo '				<h3 align="left" style="padding-top: 12px;"><a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_rel]).'">'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_short])).'</a></h3>'."\n";
-                  To_f_headline_make();
     /* At the moment extra "div" is not used, because of the shadow. */
     //--echo '			</div>'."\n";
     //--echo ''."\n";
@@ -3381,30 +3393,44 @@
     echo '				<br>'."\n";
     echo '				<br>'."\n";
     echo '				<br>'."\n";
-    echo '        <p>'."\n";
-    echo '<div id="google_translate_element" class="main-google-translate" style="padding-left: 10px !important; white-space: normal!important;"></div><script type="text/javascript">'."\n";
+    
+    // is moved to navigation and back here in file "NSOSP.js"
+    echo '<div id="GoogleTranslateNavigation" class="main-google-translate">'."\n";
+    echo '  <div id="google_translate_element" class="" style="white-space: normal!important;"></div>'."\n";
+    echo '  <script type="text/javascript">'."\n";
     echo 'function googleTranslateElementInit() {'."\n";
     echo '  new google.translate.TranslateElement({pageLanguage: \'de\', gaTrack: true, gaId: \'UA-5051897-3\'}, \'google_translate_element\');'."\n";
     // correct Google navigator right overflow
     echo '  To_f_googleTranslateCorrect();'."\n";
     echo '}'."\n";
-    echo '</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>'."\n";
-    echo '        </p>'."\n";
-    // echo '				<br>'."\n";
-    echo '        <p style="margin-top: 0px;">'."\n";
-    echo '				  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="padding-left: 10px; padding-top: 10px;">'."\n";
-    echo '					  <sup>Crowdfunding:</sup> '."\n";
+    echo '  </script>'."\n";
+    echo '  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>'."\n";
+    echo '</div>'."\n";
+    // patched solution, see: "GoogleTranlatePatch.js"
+      // for the second instance of the code see end of content
+    // echo '<div class="main-google-translate">'."\n";
+    // echo '  <div id="google_translate_element" class="" style="white-space: normal!important;"></div>'."\n";
+    // echo '</div>'."\n";
+    // echo '<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>'."\n";
+    // echo '<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>'."\n"; // see: https://stackoverflow.com/questions/22268881/referenceerror-is-not-defined
+    // echo '<script src="'.$Glo_PathRel_back.'../share/js/GoogleTranlatePatch.js" type="text/javascript" language="JavaScript"></script>'."\n";
+
+    echo '<div class="main-paypal">'."\n";
+    echo '        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="">'."\n";
+    echo '          <sup>Crowdfunding:</sup> '."\n";
     //%!echo '				  <input type="hidden" name="cmd" value="_s-xclick">'."\n";
     //%!echo '				  <input type="hidden" name="hosted_button_id" value="R8468ZLUN4UPL">'."\n";
     //%!echo '				  <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">'."\n";
-    echo '				    <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Spenden"> <img src="'.$Glo_PathRel_back.'../share/images/btn_donate_SM.gif" width="86px" height="21px" alt="Spenden"> </a>'."\n";
-    echo '				  </form>'."\n";
+    echo '				  <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Spenden"> <img src="'.$Glo_PathRel_back.'../share/images/btn_donate_SM.gif" width="86px" height="21px" alt="Spenden"> </a>'."\n";
+    echo '				</form>'."\n";
+    echo '</div>'."\n";
+
     echo '				<br>'."\n";
     echo '				<br>'."\n";
     echo '			</div>'."\n";
     echo ''."\n";
     echo '			<div id="footer" class="footer main-shadow-0-5-30 main-layer-3">'."\n";
-    echo '        <table class="footer-extra-table" width="700px" align="center" style="padding-top: 16px;">'."\n";
+    /* echo '        <table class="footer-extra-table" width="700px" align="center" style="padding-top: 16px;">'."\n";
     echo '          <colgroup>'."\n";
     echo '            <col width="150">'."\n";
     echo '            <col width="150">'."\n";
@@ -3418,30 +3444,55 @@
       echo '              <p align="left" style="margin-top: 16px; margin-bottom: -4px;">'."\n";
       echo '                <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt]).'"> </a>'."\n";
       echo '              </p>'."\n";
-      echo '              <p class="footer-extra-text" align="left">'."\n";
+      echo '              <p class="footer-extra-text">'."\n";
       echo '                '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_name])."\n";
       echo '              </p>'."\n";
     }
     echo '            </td>'."\n";
     echo '            <td>'."\n";
-    echo '              <p class="footer-extra-text" align="left">'."\n";
+    echo '              <p class="footer-extra-text">'."\n";
     echo '                '.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][copy_right]))."\n";
     echo '              </p>'."\n";
-    echo '              <p class="footer-extra-text" align="left">'."\n";
+    echo '              <p class="footer-extra-text">'."\n";
     echo '                '.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_adress]))."\n";
     echo '              </p>'."\n";
-    echo '              <p class="footer-extra-text" align="left">'."\n";
+    echo '              <p class="footer-extra-text">'."\n";
     echo '                '.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_contact]))."\n";
     echo '              </p>'."\n";
     echo '            </td>'."\n";
     echo '          </tr>'."\n";
-    echo '        </table>'."\n";
+    echo '        </table>'."\n"; */
+    echo '        <div align="center">'."\n";
+    echo '        <ul class="footer-extra-table footer-extra-author">'."\n";
+    echo '          <li>'."\n";
+    if (array_key_exists( author_image_URL, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) {
+      echo '              <p class="footer-extra-text" style="margin-top: 16px; margin-bottom: -4px;">'."\n";
+      echo '                <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt]).'"> </a>'."\n";
+      echo '              </p>'."\n";
+      echo '              <p class="footer-extra-text">'."\n";
+      echo '                '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_name])."\n";
+      echo '              </p>'."\n";
+    }
+    echo '          </li>'."\n";
+    echo '          <li>'."\n";
+    echo '              <p class="footer-extra-text">'."\n";
+    echo '                '.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][copy_right]))."\n";
+    echo '              </p>'."\n";
+    echo '              <p class="footer-extra-text">'."\n";
+    echo '                '.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_adress]))."\n";
+    echo '              </p>'."\n";
+    echo '              <p class="footer-extra-text">'."\n";
+    echo '                '.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_contact]))."\n";
+    echo '              </p>'."\n";
+    echo '          </li>'."\n";
+    echo '        </ul>'."\n";
+    echo '        </div>'."\n";
     echo '        <p align="center">'."\n";
     echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2023 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
-    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Kontakt</a>'."\n";
+    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Impressum</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
-    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.31-d20230819-t0900" target="_blank">v9.31</a>'."\n";
+    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.32-d20230905-t1700" target="_blank">v9.32</a>'."\n";
     echo '        </p>'."\n";
     echo '			</div>'."\n";
     echo ''."\n";
@@ -3449,7 +3500,7 @@
     echo ''."\n";
     echo '		<script type="text/javascript"> <!--'."\n";
     echo '        // #: Open hidden areas for the hash of first site call.'."\n";
-    echo '        To_f_manage_site_end( true);'."\n";
+    echo '        To_f_manage_site_end( true, NSOSP_f_manage_resize);'."\n";
     echo '    --> </script>'."\n";
     //echo '    '.$To_g_pageUrl."<br>\n";
     //echo '    '.$To_g_query."<br>\n";
@@ -3473,25 +3524,12 @@
     echo $offset.'    </colgroup>'."\n";
     echo $offset.'    <tr'.((array_key_exists( header_pict_bgcolor, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? ' bgcolor="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_bgcolor]).'"' : '').'>'."\n";
     echo $offset.'      <td align="center" valign="middle">'."\n";
-    //%!echo $offset.'        <img src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_name]).'" width="930" height="134" border="0" alt="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_alt])).'"><br>'."\n";
     echo $offset.'        <img class="print-header-image" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_name]).'" width="'.((array_key_exists( header_pict_width, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_width] : '930').'" height="'.((array_key_exists( header_pict_height, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_height] : '134').'" border="0" alt="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_pict_alt])).'"><br>'."\n";
     echo $offset.'      </td>'."\n";
     echo $offset.'    </tr>'."\n";
     echo $offset.'    <tr class="header-links">'."\n";
     echo $offset.'      <td>'."\n";
-    //%!echo $offset.'        <p align="center" style="margin-bottom: 5px;">'."\n";
-    echo $offset.'        <p '.((array_key_exists( header_links_marginLeft, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? 'style="margin-left: '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_links_marginLeft]).'; margin-bottom: 5px;"' : 'align="center" style="margin-bottom: 5px;"').'>'."\n";
-    //%1echo $offset.'          <a href="'.$Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/index.php">NSOSP-Home</a> &nbsp; &nbsp;'."\n";
-    echo $offset.'          <a href="'.($Glo_g_Site_ary['OM:nSOSp:'][url_rel]).'">NSOSP-Home</a> &nbsp; &nbsp;'."\n";
-    // #?: Not the global homepage? Then show link to theory homepage.
-    if ($Glo_g_Site_activ_GenInfo_idx != 'OM:nSOSp:')
-      echo $offset.'          <a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][url_rel]).'">'.((array_key_exists( name_short, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][name_short] : 'Theorie').'-Home</a> &nbsp; &nbsp;'."\n";
-    echo $offset.'          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Kontakt</a> &nbsp; &nbsp;'."\n";
-    echo $offset.'          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php">Impressum</a> &nbsp; &nbsp;'."\n";
-    //echo $offset.'          <!a href="'.$Glo_PathRel_back.'../eng/XXX.html"><img src="'.$Glo_PathRel_back.'../share/images/flag_en_disable.gif" width="25" height="14" border="0" alt="English"><!/a> &nbsp; &nbsp;'."\n";
-    //echo $offset.'          <a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_rel]).'"><img src="'.$Glo_PathRel_back.'../share/images/flag_de.gif" width="25" height="14" border="0" alt="Deutsch"></a>'."\n";
-    // echo $offset.'          <a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_rel]).'"><img src="'.$Glo_PathRel_back.'../share/images/flag_de.gif" width="25" height="14" border="0" alt="Deutsch" valign="middle"></a>'."\n";
-    echo $offset.'        </p>'."\n";
+    To_f_menuList_header_create( '        ', NSOSP_f_header_menuList(), (array_key_exists( header_links_marginLeft, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) ? $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][header_links_marginLeft] : null);
     echo $offset.'      </td>'."\n";
     echo $offset.'    </tr>'."\n";
     echo $offset.'  </table>'."\n";
@@ -3499,51 +3537,84 @@
   }
 
   
-  const margin = 'margin';
-  
+  $NSOSP_g_printSVG = file_get_contents(
+      $Glo_PathRel_back.'../share/images/_icons/svg/print.svg'
+  );
+  $NSOSP_g_expandSVG = file_get_contents(
+      $Glo_PathRel_back.'../share/images/_icons/svg/expand.svg'
+  );
+  $NSOSP_g_barsSVG = file_get_contents(
+      $Glo_PathRel_back.'../share/images/_icons/svg/bars.svg'
+  );
+
   function FrQFT_f_Div_WrapperBegin( $offset, $backward_link='')
   {
     global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ;
     global $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary;
+    global $NSOSP_g_barsSVG, $NSOSP_g_printSVG, $NSOSP_g_expandSVG;
 
     echo         '<div id="wrapper" class="wrapper">'."\n";
+    
+    echo $offset.'  <div class="main-function-buttons-sticky main-layer-4">'."\n";
+    echo $offset.'    <div id="Menu" class="main-menu main-menu-shadow" style="display: none;">'."\n";
+    To_f_menuList_table_create( '              ', NSOSP_f_header_menuList());
+    echo $offset.'    </div>'."\n";
+    echo $offset.'    <div class="main-function-buttons-div">'."\n";
+    echo $offset.'      <div id="MenuButton" class="main-function-button-menu">'."\n";
+    echo $offset.'        <div id="MenuUnviewed" class="main-function-button--inaktiv" style="display: ;" onclick="To_f_showMenu()">'."\n";
+    echo $offset.'          <img class="main-function-button">'."\n";
+    echo $offset.'            '.($NSOSP_g_barsSVG)."\n";
+    echo $offset.'          </img>'."\n";
+    echo $offset.'        </div>'."\n";
+    echo $offset.'        <div id="MenuViewed" class="main-function-button--aktiv" style="display: none;" onclick="To_f_showMenu()">'."\n";
+    echo $offset.'          <img class="main-function-button">'."\n";
+    echo $offset.'            '.($NSOSP_g_barsSVG)."\n";
+    echo $offset.'          </img>'."\n";
+    echo $offset.'        </div>'."\n";
+    echo $offset.'      </div>'."\n";
+    echo $offset.'      <div class="main-function-button--inaktiv" onclick="To_f_print()">'."\n";
+    echo $offset.'        <img class="main-function-button">'."\n";
+    echo $offset.'          '.($NSOSP_g_printSVG)."\n";
+    echo $offset.'        </img>'."\n";
+    echo $offset.'      </div>'."\n";
+    echo $offset.'      <div id="Expand">'."\n";
+    echo $offset.'        <div id="isUnexpanded" class="main-function-button--inaktiv" style="display: ;" onclick="To_f_expand()">'."\n";
+    echo $offset.'          <img class="main-function-button">'."\n";
+    echo $offset.'            '.($NSOSP_g_expandSVG)."\n";
+    echo $offset.'          </img>'."\n";
+    echo $offset.'        </div>'."\n";
+    echo $offset.'        <div id="isExpanded" class="main-function-button--aktiv" style="display: none;" onclick="To_f_expand()">'."\n";
+    echo $offset.'          <img class="main-function-button">'."\n";
+    echo $offset.'          '.($NSOSP_g_expandSVG)."\n";
+    echo $offset.'          </img>'."\n";
+    echo $offset.'        </div>'."\n";
+    echo $offset.'      </div>'."\n";
+    echo $offset.'    </div>'."\n";
+    echo $offset.'  </div>'."\n";
+    
     echo $offset.'  <div id="content" class="content main-shadow-0-5-30" style="">'."\n";
-    //%!echo $offset.'    <img src="'.$Glo_PathRel_back.'../share/images/Header_zu_Navi_FFFFFF.jpg" width="730" height="10" border="0" alt="" style="position: absolute; top: 158px; filter:alpha(opacity=75); -moz-opacity: 0.75; opacity: 0.75;">'."\n";
-    //%!echo $offset.'      <! #: Bei Safari eigentlich "top: -2px;". FireFox Mac+Win und IE sind mit "top: -3px;" ok. >'."\n";
     echo $offset.''."\n";
     echo $offset.''."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.''."\n";
-    //%!echo $offset.'      <small> <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/index.php" style="color: #505050; font-weight: normal;">'."\n";
     if ($Glo_g_Site_activ == 'OM:FrQFT:Home')
     {
       echo $offset.'    <p>'."\n";
-      //%!echo $offset.'        Selbstorganisierte Physik<!/a> &nbsp; &nbsp; &mdash; &nbsp; &nbsp;'."\n";
-      //%!echo $offset.'        Zur Einstimmung etwas Musik: &nbsp;'."\n";
       echo $offset.'        <small style="color: #505050; font-weight: normal;">Zur Einstimmung etwas Musik: &nbsp;'."\n";
       echo $offset.'        <a target="_blank" href="http://www.youtube.com/watch?v=buqtdpuZxvk&feature=fvw">Monty Python - The Galaxy Song</a></small>'."\n";
       echo $offset.'    </p>'."\n";
     }
     else
-      //%!echo $offset.'        Selbstorganisierte Physik &nbsp;&gt;&gt;&nbsp; Fraktale Quanten-Fluss-Theorie (FrQFT)</a></small>'."\n";
       if (0 < strlen( $backward_link))
       {
         To_f_Paragraph( 'jumplist', $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '        ', array( array( jump_name => $backward_link, type => 'back', margin => 'margin_small')));
-        //echo $offset.'        XXX'."\n";
       }
-      /*else
-      {
-        echo $offset.'    <p>'."\n";
-        echo $offset.'        <small> <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/index.php" style="color: #505050; font-weight: normal;">Fraktale Quanten-Fluss-Theorie (FrQFT)</a></small>'."\n";
-        echo $offset.'    </p>'."\n";
-      }*/
     echo $offset.'    <br>'."\n";
     echo $offset.''."\n";
     echo $offset.''."\n";
     echo $offset.'    <p>'."\n";
     echo $offset.'      <h1>'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_h1])).'</h1>'."\n";
     if (array_key_exists( text_undertitel_h2, $Glo_g_Site_ary[$Glo_g_Site_activ]) && (0 < strlen( $Glo_g_Site_ary[$Glo_g_Site_activ][text_undertitel_h2])))
-      //%! echo $offset.'      <h2 style="color: #505050">'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_undertitel_h2])).'</h2>'."\n";
       echo $offset.'      <h2 style="color: '.(To_f_Color('*SiteUndertitleH2', false)).'">'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_undertitel_h2])).'</h2>'."\n";
     echo $offset.'    </p>'."\n";
     echo $offset.'    <br>'."\n";
@@ -3576,47 +3647,56 @@
     echo $offset.''."\n";
     echo $offset.''."\n";
     echo $offset.'    <br>'."\n";
-    //%!echo $offset.'    <p style="color: #505050">'."\n";
     echo $offset.'    <p>'."\n";
-    echo $offset.'      Stand 19. August 2023, 09:00 CET.'."\n";
+    echo $offset.'      Stand 05. September 2023, 17:00 CET.'."\n";
     echo $offset.'    </p>'."\n";
     echo $offset.'    <br>'."\n";
-    //%!echo $offset.'    <p style="font-size: 13px; line-height: 0.7em;">'."\n";
-    //%!echo $offset.'      Permanente Links:<br>'."\n";
-    //%!echo $offset.'      <span style="color: #A0A0A0">(Klicke auf die Archivlogos zum Abruf und Ansehen der Archive dieser Seite)</span>'."\n";
-    //%!echo $offset.'    </p>'."\n";
-    echo $offset.'    <table>'."\n";
-    echo $offset.'      <tr>'."\n";
-    echo $offset.'        <td style="padding-right: 30px;">'."\n";
-    echo $offset.'          <p style="font-size: 13px; line-height: 1.2em; margin-left: 0px;">'."\n";
-    echo $offset.'            Permanente Links:<br>'."\n";
-    echo $offset.'            <span style="font-size: 11px; color: #A0A0A0">(Klicke auf die Archivlogos<br />zum Abruf und Ansehen<br />der Archive dieser Seite.)</span>'."\n";
-    echo $offset.'          </p>'."\n";
-    echo $offset.'        </td>'."\n";
-    echo $offset.'        <td style="padding-right: 20px;">'."\n";
-    echo $offset.'          <a target="_blank" href="http://web.archive.org/save/'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" title="WayBack Machine – permanenten Link auf Webseiten-Kopie erstellen">'."\n";
-    echo $offset.'            <img src="'.$Glo_PathRel_back.'../share/images/Archive/logo_wayback_210x77.png" width="120" height="44" border="0" alt="Logo Wayback Machine">'."\n";
-    echo $offset.'          </a>'."\n";
-    echo $offset.'        </td>'."\n";
-    echo $offset.'        <td>'."\n";
-    echo $offset.'          <a target="_blank" href="http://archive.today/?run=1&url='.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'?openAll" title="archive.today – permanenten Link auf Webseiten-Kopie erstellen">'."\n";
-    echo $offset.'            <div>'."\n";
-    echo $offset.'				      <table>'."\n";
-    echo $offset.'                <tr><td><div class="main-archive-today" style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 1.1em;">archive.today</div></td></tr>'."\n";
-    echo $offset.'                <tr><td><div class="main-archive-today" style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 9px;">webpage capture</div></td></tr>'."\n";
-    echo $offset.'              </table>'."\n";
-    echo $offset.'            </div>'."\n";
-    echo $offset.'          </a>'."\n";
-    echo $offset.'        </td>'."\n";
-    echo $offset.'      </tr>'."\n";
-    echo $offset.'    </table>'."\n";
-    echo $offset.'    <br>'."\n";
+    echo $offset.'    <ul class="content-archive-list">'."\n";
+    echo $offset.'      <li>'."\n";
+    echo $offset.'        <p style="font-size: 13px; line-height: 1.2em; margin: 0px; display: inline-block;">'."\n";
+    echo $offset.'          Permanente Links:<br>'."\n";
+    echo $offset.'          <span style="font-size: 11px; color: #A0A0A0">(Klicke auf die Archivlogos<br />zum Abruf und Ansehen<br />der Archive dieser Seite.)</span>'."\n";
+    echo $offset.'        </p>'."\n";
+    echo $offset.'      </li>'."\n";
+    echo $offset.'      <li>'."\n";
+    echo $offset.'        <a target="_blank" href="http://web.archive.org/save/'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" title="WayBack Machine – permanenten Link auf Webseiten-Kopie erstellen" style="display: inline-block;">'."\n";
+    echo $offset.'          <img src="'.$Glo_PathRel_back.'../share/images/Archive/logo_wayback_210x77.png" width="120" height="44" border="0" alt="Logo Wayback Machine">'."\n";
+    echo $offset.'        </a>'."\n";
+    echo $offset.'      </li>'."\n";
+    echo $offset.'      <li>'."\n";
+    echo $offset.'        <a target="_blank" href="http://archive.today/?run=1&url='.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'?openAll" title="archive.today – permanenten Link auf Webseiten-Kopie erstellen" style="display: inline-block;">'."\n";
+    echo $offset.'          <div>'."\n";
+    echo $offset.'            <table style="margin: 0;">'."\n";
+    echo $offset.'              <tr><td><div class="main-archive-today" style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 1.1em;">archive.today</div></td></tr>'."\n";
+    echo $offset.'              <tr><td><div class="main-archive-today" style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 9px;">webpage capture</div></td></tr>'."\n";
+    echo $offset.'            </table>'."\n";
+    echo $offset.'          </div>'."\n";
+    echo $offset.'        </a>'."\n";
+    echo $offset.'      </li>'."\n";
+    echo $offset.'    </ul>'."\n";
+    echo $offset.'    <ul class="content-google-translate-paypal-list">'."\n";
+    echo $offset.'      <li>'."\n";
+    // is moved here and back to navigation in file "NSOSP.js"
+    echo '<div id="GoogleTranslateContent" class="main-google-translate-content" style="display: inline; white-space: normal!important;"></div>'."\n";
+    // echo '<div id="google_translate_element_content" class="main-google-translate-content" style="display: inline; white-space: normal!important;"></div>'."\n";
+      // for the remainders of the code see navigation
+    echo $offset.'      </li>'."\n";
+    echo $offset.'      <li>'."\n";
+    echo '        <form class="main-paypal-content" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="display: inline;">'."\n";
+    echo '          <sup>Crowdfunding:</sup> '."\n";
+    //%!echo '          <input type="hidden" name="cmd" value="_s-xclick">'."\n";
+    //%!echo '          <input type="hidden" name="hosted_button_id" value="R8468ZLUN4UPL">'."\n";
+    //%!echo '          <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">'."\n";
+    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Spenden"> <img src="'.$Glo_PathRel_back.'../share/images/btn_donate_SM.gif" width="86px" height="21px" alt="Spenden"> </a>'."\n";
+    echo '        </form>'."\n";
+    echo $offset.'      </li>'."\n";
+    echo $offset.'    </ul>'."\n";
     echo $offset.''."\n";
     echo $offset.''."\n";
     
     
 // #: Vue.js
-// #: Testing und showing that its working at all.
+// #: Testing und showing that it's working at all.
     
     // #: Text ersetzen
     /*echo $offset.'    <div id="app">'."\n";

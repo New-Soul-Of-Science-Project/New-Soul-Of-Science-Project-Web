@@ -178,7 +178,8 @@ a:hover {
 	.content td,
 	.content tr,
 	.content ul {
-    margin-left: 30px; margin-right: 40px;
+    margin-left: 30px;
+    margin-right: 40px;
     /*line-height: 1.4em;*/
     line-height: 1.3em;
 	}
@@ -208,6 +209,41 @@ a:hover {
     /*font-size: 16px;*/
     font-size: 18px;
 	}
+
+  .content-horizontal-scrollable {
+    display: block;
+    overflow-x: auto;
+    margin-left: 30px;
+    margin-right: 40px;
+/*    white-space: nowrap;*/
+  }
+
+  .content-archive-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0;
+  }
+  .content-archive-list li:not(:last-child) {
+    margin-right: 60px;
+    margin-bottom: 0px;
+  }
+
+  .content-google-translate-paypal-list {
+/*    display: flex;*/
+    display: none;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0;
+  }
+  .content-google-translate-paypal-list li:not(:last-child) {
+    margin-right: 60px;
+    margin-bottom: 0px;
+  }
 
   /* #: Indifferent line height: Nothing helped! */
 	/*.content sub, sup {     / #: Info source: "http://webdesignandsuch.com/how-to-fix-sup-sub-line-height-problem-with-css/"
@@ -298,7 +334,31 @@ a:hover {
     display: none;
   }
   .footer-extra-text {
+    text-align: left;
     line-height: 1.4em;
+  }
+
+  .footer-extra-author {
+/*    display: flex;*/
+    flex-direction: row;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .footer-extra-author li {
+    display: inline-block;
+  }
+  .footer-extra-author li:not(:last-child) {
+    margin-right: 60px;
+    margin-bottom: 0px;
+  }
+  .footer-extra-author p {
+/*    display: inline-block;*/
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
 
@@ -309,6 +369,21 @@ a:hover {
   padding-right: 10px !important;
   max-width: 100px !important;
 }
+.main-google-translate-content {
+  font-size: 8px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  max-width: 100px !important;
+}
+
+.main-paypal {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.main-paypal-content {
+  margin-left: 0px !important;
+  margin-top: 0px !important;
+}
 
 .main-archive-today a:link {
   /*color: green;*/
@@ -316,7 +391,7 @@ a:hover {
   font-weight: normal;
 }
 
-.main-print-expand-div {
+.main-function-buttons-sticky {
   /* position: absolut;
   top: 0px;
   left: -20px; */
@@ -325,56 +400,35 @@ a:hover {
   top: 0px;
 }
 
-svg {
-  fill: currentColor;
-}
-
-.main-print-expand-inner-div {
-  position: absolute;
-  left: -37px;
-  color: #808080;
-}
-
-.main-print-expand-inner-div:hover {
-  color: black;
-}
-
-.main-print-div {
+.main-function-buttons-div {
   position: absolute;
   top: 10px;
-  left: -37px;
+  right: 2px;
+}
+
+.main-function-button {
+  width: 100%;
+  height: auto;
+}
+
+.main-function-button--inaktiv {
   color: rgba(0, 0, 0, 0.2);
 }
 
-.main-print-div:hover {
+.main-function-button--inaktiv:hover {
   color: rgba(0, 0, 0, 1.0);
 }
 
-.main-unexpanded-div {
-  position: absolute;
-  top: 60px;
-  left: -37px;
-  color: rgba(0, 0, 0, 0.2);
-}
-
-.main-unexpanded-div:hover {
-  color: rgba(0, 0, 0, 1.0);
-}
-
-.main-expanded-div {
-  position: absolute;
-  top: 60px;
-  left: -37px;
+.main-function-button--aktiv {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.main-expanded-div:hover {
+.main-function-button--aktiv:hover {
   color: rgba(0, 0, 0, 1.0);
 }
 
-.main-print-expand {
-  width: 100%;
-  height: auto;
+svg {
+  fill: currentColor;
 }
 
 
@@ -407,6 +461,10 @@ svg {
 .main-layer-3 {
   position: relative;
   z-index: 3;
+}
+.main-layer-4 {
+/*  position: relative;*/
+  z-index: 4;
 }
 
 
@@ -509,4 +567,114 @@ td.tools-class-text-figure {
 .tools-class-fade-in-area-div-hide-content {
   margin-top: 20px;
   color: #000AC4;
+}
+
+
+
+/* pad and mobile */
+
+
+.main-function-button-menu {
+  display: none;
+}
+
+.main-menu {
+/*  display: none;*/
+  position: absolute;
+/*  top: 10px;*/
+/*  left: 2px;*/
+  top: 20px;
+  right: 50px;
+  background-color: #EEEEEE;
+}
+.main-menu h3 {
+  font-size: 20px;
+}
+.main-menu p {
+  font-size: 16px;
+}
+.main-menu-shadow {
+  /* shadow */
+  -webkit-box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 1.0);  /* #: Safari */
+  -moz-box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 1.0);  /* #: Mozilla */
+  -o-box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 1.0);  /* #: Opera */
+  -ms-box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 1.0);  /* #: Internet Explorer */
+  box-shadow: 5px 5px 20px rgba(50%, 50%, 50%, 1.0);  /* #: Standard */
+}
+
+@media only screen and (max-width: 599px) {
+
+  .content-archive-list {
+    flex-direction: column;
+/*    width: 100%;*/
+    justify-content: left;
+    align-items: left;
+    margin-top: 32px;
+  }
+  .content-archive-list li:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .content-google-translate-paypal-list {
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-top: 54px;
+  }
+  .content-google-translate-paypal-list li:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .footer-extra-author {
+/*    display: flex;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-extra-author li {
+    display: inline-block;
+  }
+  .footer-extra-author li:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  .footer-extra-text {
+    text-align: center;
+  }
+
+}
+
+/* size is used in "NSOSP.js" as well */
+/*   there the position of Google Translation is managed */
+@media only screen and (max-width: 929px) {
+
+  .wrapper, .content {
+    height: 100%;
+  }
+
+  .print-header-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .header-links,
+  .navigation,
+  .extra {
+    display: none;
+  }
+  
+  .main-function-button-menu {
+    display: block;
+  }
+
+  .content-google-translate-paypal-list {
+    display: flex;
+  }
+
+  .footer-extra-table {
+    display: inline-block;
+  }
+
 }

@@ -20,6 +20,7 @@
   const url_rel = 'url_rel';
   const url_abs = 'url_abs';
   const titel = 'titel';
+  const margin = 'margin';
   const name_short = 'name_short';
   const font_ary = 'font_ary';
   const header_bgcolor = 'header_bgcolor';

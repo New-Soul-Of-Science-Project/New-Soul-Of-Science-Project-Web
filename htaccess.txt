@@ -9,6 +9,12 @@ RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\.nsosp\.org$ [NC]
 RewriteRule ^(.*)$ https://nsosp.org/$1 [L,R=301]
 
+# Look for index.html then index.php in the directory being requested
+DirectoryIndex index.php index.html
+
+# Prevent mod_dir appending the trailing slash
+DirectorySlash Off
+
 RedirectPermanent /index.html /de/New-Soul-Of-Science-Project/index.php
 
 # !!! Not working with "(http://)www.nsosp.org/de/index.html", but with "(http://)nsosp.org/de/index.html"! Don't know why!
