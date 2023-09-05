@@ -231,6 +231,20 @@ a:hover {
     margin-bottom: 0px;
   }
 
+  .content-google-translate-paypal-list {
+/*    display: flex;*/
+    display: none;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0;
+  }
+  .content-google-translate-paypal-list li:not(:last-child) {
+    margin-right: 60px;
+    margin-bottom: 0px;
+  }
+
   /* #: Indifferent line height: Nothing helped! */
 	/*.content sub, sup {     / #: Info source: "http://webdesignandsuch.com/how-to-fix-sup-sub-line-height-problem-with-css/"
     font-size: 75%;
@@ -330,6 +344,21 @@ a:hover {
   padding-left: 10px !important;
   padding-right: 10px !important;
   max-width: 100px !important;
+}
+.main-google-translate-content {
+  font-size: 8px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  max-width: 100px !important;
+}
+
+.main-paypal {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.main-paypal-content {
+  margin-left: 0px !important;
+  margin-top: 0px !important;
 }
 
 .main-archive-today a:link {
@@ -556,8 +585,18 @@ td.tools-class-text-figure {
 /*    width: 100%;*/
     justify-content: left;
     align-items: left;
+    margin-top: 32px;
   }
   .content-archive-list li:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .content-google-translate-paypal-list {
+    flex-direction: column;
+    margin-top: 54px;
+  }
+  .content-google-translate-paypal-list li:not(:last-child) {
     margin-right: 0px;
     margin-bottom: 30px;
   }
@@ -584,6 +623,10 @@ td.tools-class-text-figure {
   .main-function-button-menu,
   .footer-extra-table {
     display: block;
+  }
+
+  .content-google-translate-paypal-list {
+    display: flex;
   }
 
 }

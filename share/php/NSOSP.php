@@ -3389,24 +3389,33 @@
     echo '				<br>'."\n";
     echo '				<br>'."\n";
     echo '				<br>'."\n";
-    echo '        <p>'."\n";
-    echo '<div id="google_translate_element" class="main-google-translate" style="padding-left: 10px !important; white-space: normal!important;"></div><script type="text/javascript">'."\n";
-    echo 'function googleTranslateElementInit() {'."\n";
-    echo '  new google.translate.TranslateElement({pageLanguage: \'de\', gaTrack: true, gaId: \'UA-5051897-3\'}, \'google_translate_element\');'."\n";
-    // correct Google navigator right overflow
-    echo '  To_f_googleTranslateCorrect();'."\n";
-    echo '}'."\n";
-    echo '</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>'."\n";
-    echo '        </p>'."\n";
-    // echo '				<br>'."\n";
-    echo '        <p style="margin-top: 0px;">'."\n";
-    echo '				  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="padding-left: 10px; padding-top: 10px;">'."\n";
-    echo '					  <sup>Crowdfunding:</sup> '."\n";
+    
+    // echo '<div id="google_translate_element" class="main-google-translate" style="padding-left: 10px !important; white-space: normal!important;"></div><script type="text/javascript">'."\n";
+    // echo 'function googleTranslateElementInit() {'."\n";
+    // echo '  new google.translate.TranslateElement({pageLanguage: \'de\', gaTrack: true, gaId: \'UA-5051897-3\'}, \'google_translate_element\');'."\n";
+    // // correct Google navigator right overflow
+    // echo '  To_f_googleTranslateCorrect();'."\n";
+    // echo '}'."\n";
+    // echo '</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>'."\n";
+    // patched solution, see: "GoogleTranlatePatch.js"
+      // for the second instance of the code see end of content
+    echo '<div class="main-google-translate">'."\n";
+    echo '  <div id="google_translate_element" class="" style="white-space: normal!important;"></div>'."\n";
+    echo '</div>'."\n";
+    echo '<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>'."\n";
+    echo '<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>'."\n"; // see: https://stackoverflow.com/questions/22268881/referenceerror-is-not-defined
+    echo '<script src="'.$Glo_PathRel_back.'../share/js/GoogleTranlatePatch.js" type="text/javascript" language="JavaScript"></script>'."\n";
+
+    echo '<div class="main-paypal">'."\n";
+    echo '        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="">'."\n";
+    echo '          <sup>Crowdfunding:</sup> '."\n";
     //%!echo '				  <input type="hidden" name="cmd" value="_s-xclick">'."\n";
     //%!echo '				  <input type="hidden" name="hosted_button_id" value="R8468ZLUN4UPL">'."\n";
     //%!echo '				  <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">'."\n";
-    echo '				    <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Spenden"> <img src="'.$Glo_PathRel_back.'../share/images/btn_donate_SM.gif" width="86px" height="21px" alt="Spenden"> </a>'."\n";
-    echo '				  </form>'."\n";
+    echo '				  <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Spenden"> <img src="'.$Glo_PathRel_back.'../share/images/btn_donate_SM.gif" width="86px" height="21px" alt="Spenden"> </a>'."\n";
+    echo '				</form>'."\n";
+    echo '</div>'."\n";
+
     echo '				<br>'."\n";
     echo '				<br>'."\n";
     echo '			</div>'."\n";
@@ -3629,6 +3638,21 @@
     echo $offset.'            </table>'."\n";
     echo $offset.'          </div>'."\n";
     echo $offset.'        </a>'."\n";
+    echo $offset.'      </li>'."\n";
+    echo $offset.'    </ul>'."\n";
+    echo $offset.'    <ul class="content-google-translate-paypal-list">'."\n";
+    echo $offset.'      <li>'."\n";
+    echo '<div id="google_translate_element_content" class="main-google-translate-content" style="display: inline; white-space: normal!important;"></div>'."\n";
+      // for the remainders of the code see navigation
+    echo $offset.'      </li>'."\n";
+    echo $offset.'      <li>'."\n";
+    echo '        <form class="main-paypal-content" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="display: inline;">'."\n";
+    echo '          <sup>Crowdfunding:</sup> '."\n";
+    //%!echo '          <input type="hidden" name="cmd" value="_s-xclick">'."\n";
+    //%!echo '          <input type="hidden" name="hosted_button_id" value="R8468ZLUN4UPL">'."\n";
+    //%!echo '          <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">'."\n";
+    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Spenden"> <img src="'.$Glo_PathRel_back.'../share/images/btn_donate_SM.gif" width="86px" height="21px" alt="Spenden"> </a>'."\n";
+    echo '        </form>'."\n";
     echo $offset.'      </li>'."\n";
     echo $offset.'    </ul>'."\n";
     echo $offset.''."\n";
