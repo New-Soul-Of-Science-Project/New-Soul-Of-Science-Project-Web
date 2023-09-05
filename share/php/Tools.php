@@ -2721,7 +2721,7 @@
   function To_f_headline_add_hides_end_line( $offset='          ')
   {
     //echo '<hr noshade width="700" size="1" align="left" style="border: 1px; border-color: #C0C0C0; margin-left: 10px;">'."\n";
-    echo $offset.'<div style="border: none; border-bottom: 1px solid #FFFFFF; border-top: 1px solid #dcdcdc; clear: both; height: 0; width: 700px; margin-left: 10px;"></div>'."\n";
+    echo $offset.'<div style="border: none; border-bottom: 1px solid #FFFFFF; border-top: 1px solid #dcdcdc; clear: both; height: 0; margin-left: 10px; margin-right: 20px;"></div>'."\n";
   }
   
   

@@ -3490,7 +3490,7 @@
     echo '        <p align="center">'."\n";
     echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2023 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
-    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Kontakt</a>'."\n";
+    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Impressum</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
     echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.31-d20230819-t0900" target="_blank">v9.31</a>'."\n";
     echo '        </p>'."\n";
