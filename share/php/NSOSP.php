@@ -53,6 +53,10 @@
 
   
   $nSOSp_g_info_wolfgangHuss = array(
+    /* author_adress => 'Wolfgang Huß \\\\'."\n".
+                   'und Media Line Digital e.K. \\\\'."\n".
+                   'Steinburger Straße 38 \\\\'."\n".
+                   '22527 Hamburg, Germany, EU', */
     author_adress => 'Wolfgang Huß \\\\'."\n".
                    'und Media Line Digital e.K. \\\\'."\n".
                    'Steinburger Straße 38 \\\\'."\n".
@@ -3426,7 +3430,7 @@
     echo '			</div>'."\n";
     echo ''."\n";
     echo '			<div id="footer" class="footer main-shadow-0-5-30 main-layer-3">'."\n";
-    echo '        <table class="footer-extra-table" width="700px" align="center" style="padding-top: 16px;">'."\n";
+    /* echo '        <table class="footer-extra-table" width="700px" align="center" style="padding-top: 16px;">'."\n";
     echo '          <colgroup>'."\n";
     echo '            <col width="150">'."\n";
     echo '            <col width="150">'."\n";
@@ -3440,24 +3444,49 @@
       echo '              <p align="left" style="margin-top: 16px; margin-bottom: -4px;">'."\n";
       echo '                <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt]).'"> </a>'."\n";
       echo '              </p>'."\n";
-      echo '              <p class="footer-extra-text" align="left">'."\n";
+      echo '              <p class="footer-extra-text">'."\n";
       echo '                '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_name])."\n";
       echo '              </p>'."\n";
     }
     echo '            </td>'."\n";
     echo '            <td>'."\n";
-    echo '              <p class="footer-extra-text" align="left">'."\n";
+    echo '              <p class="footer-extra-text">'."\n";
     echo '                '.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][copy_right]))."\n";
     echo '              </p>'."\n";
-    echo '              <p class="footer-extra-text" align="left">'."\n";
+    echo '              <p class="footer-extra-text">'."\n";
     echo '                '.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_adress]))."\n";
     echo '              </p>'."\n";
-    echo '              <p class="footer-extra-text" align="left">'."\n";
+    echo '              <p class="footer-extra-text">'."\n";
     echo '                '.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_contact]))."\n";
     echo '              </p>'."\n";
     echo '            </td>'."\n";
     echo '          </tr>'."\n";
-    echo '        </table>'."\n";
+    echo '        </table>'."\n"; */
+    echo '        <div align="center">'."\n";
+    echo '        <ul class="footer-extra-table footer-extra-author">'."\n";
+    echo '          <li>'."\n";
+    if (array_key_exists( author_image_URL, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) {
+      echo '              <p class="footer-extra-text" style="margin-top: 16px; margin-bottom: -4px;">'."\n";
+      echo '                <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt]).'"> </a>'."\n";
+      echo '              </p>'."\n";
+      echo '              <p class="footer-extra-text">'."\n";
+      echo '                '.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_name])."\n";
+      echo '              </p>'."\n";
+    }
+    echo '          </li>'."\n";
+    echo '          <li>'."\n";
+    echo '              <p class="footer-extra-text">'."\n";
+    echo '                '.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][copy_right]))."\n";
+    echo '              </p>'."\n";
+    echo '              <p class="footer-extra-text">'."\n";
+    echo '                '.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_adress]))."\n";
+    echo '              </p>'."\n";
+    echo '              <p class="footer-extra-text">'."\n";
+    echo '                '.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_contact]))."\n";
+    echo '              </p>'."\n";
+    echo '          </li>'."\n";
+    echo '        </ul>'."\n";
+    echo '        </div>'."\n";
     echo '        <p align="center">'."\n";
     echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2023 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
