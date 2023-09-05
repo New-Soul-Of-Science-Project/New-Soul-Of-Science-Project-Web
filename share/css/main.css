@@ -603,6 +603,8 @@ td.tools-class-text-figure {
 
 }
 
+/* size is used in "NSOSP.js" as well */
+/*   there the position of Google Translation is managed */
 @media only screen and (max-width: 929px) {
 
   .wrapper, .content {

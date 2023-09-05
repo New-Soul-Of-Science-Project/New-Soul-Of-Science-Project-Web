@@ -2,10 +2,11 @@
 // #: Name:  "Tools.js"
 
 
-// #: Stand: 31.08.2023, 17:00h
+// #: Stand: 05.09.2023, 12:00h
 
 // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
 
+//          20230905:  +:  "To_f_manage_site_end": Implement "customResizeCallback".
 //          20230831:  +:  "To_f_showMenuCloneMenu", "To_f_showMenuSet": to use navigation menu for mobile menu as well and split up functionality.
 //          20230820:  +:  "To_f_showMenu" for mobile mode.
 //          20220807:  +:  "To_f_manage_site_end", "To_f_manage_beforePrint", "To_f_manage_afterPrint":  Implement event handlers for printing.
@@ -17,6 +18,10 @@
 
 
 // Comment:  20170226:  "To_f_manage_resize":  There seems to be no difference at the moment between mobiles windows outer height and mobiles windows inner height. Not on Safari nor FireFox nor Chrome.
+
+
+
+var To_g_callbackOnResize = null;
 
 
 
@@ -337,13 +342,16 @@ var To_g_extraOrigHeight = null;
 var To_g_navigationOrigHeight = null;
 
 
-// Comment:  20170226:  "To_f_manage_resize":  There semes to be no difference at the moment between mobils windows outer heigt and mobils windows inner height. Not on Safari nor FireFox nor Chrome.
+// Comment:  20170226:  "To_f_manage_resize":  There seems to be no difference at the moment between mobile windows outer height and mobile windows inner height. Not on Safari nor FireFox nor Chrome.
 
 function To_f_manage_resize() {
-  // Called when the browser is first opened.
+  // Called if the browser is first opened and on resize of screen.
   // Values of clientHeight and scrollHeight have settled by this point.
   
   To_f_showMenu( false);
+  if (To_g_callbackOnResize) {
+    To_g_callbackOnResize();
+  }
   
   // #: For mobile only call once! For desktop call always!
   // #?: Is not mobile or is the first call?
@@ -674,10 +682,12 @@ function To_f_googleTranslateCorrect()
 
 
 
-function To_f_manage_site_end( autoResize = false)
+function To_f_manage_site_end( autoResize = false, customResizeCallback = null)
 {
   // #: Open hidden areas for the hash of first site call.
   To_f_hash_changed( window.location.hash);
+  
+  To_g_callbackOnResize = customResizeCallback;
   
   if (autoResize)
   {

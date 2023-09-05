@@ -3390,21 +3390,26 @@
     echo '				<br>'."\n";
     echo '				<br>'."\n";
     
-    // echo '<div id="google_translate_element" class="main-google-translate" style="padding-left: 10px !important; white-space: normal!important;"></div><script type="text/javascript">'."\n";
-    // echo 'function googleTranslateElementInit() {'."\n";
-    // echo '  new google.translate.TranslateElement({pageLanguage: \'de\', gaTrack: true, gaId: \'UA-5051897-3\'}, \'google_translate_element\');'."\n";
-    // // correct Google navigator right overflow
-    // echo '  To_f_googleTranslateCorrect();'."\n";
-    // echo '}'."\n";
-    // echo '</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>'."\n";
+    // is moved to navigation and back here in file "NSOSP.js"
+    echo '<div id="GoogleTranslateNavigation" class="main-google-translate">'."\n";
+    echo '  <div id="google_translate_element" class="" style="white-space: normal!important;"></div>'."\n";
+    echo '  <script type="text/javascript">'."\n";
+    echo 'function googleTranslateElementInit() {'."\n";
+    echo '  new google.translate.TranslateElement({pageLanguage: \'de\', gaTrack: true, gaId: \'UA-5051897-3\'}, \'google_translate_element\');'."\n";
+    // correct Google navigator right overflow
+    echo '  To_f_googleTranslateCorrect();'."\n";
+    echo '}'."\n";
+    echo '  </script>'."\n";
+    echo '  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>'."\n";
+    echo '</div>'."\n";
     // patched solution, see: "GoogleTranlatePatch.js"
       // for the second instance of the code see end of content
-    echo '<div class="main-google-translate">'."\n";
-    echo '  <div id="google_translate_element" class="" style="white-space: normal!important;"></div>'."\n";
-    echo '</div>'."\n";
-    echo '<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>'."\n";
-    echo '<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>'."\n"; // see: https://stackoverflow.com/questions/22268881/referenceerror-is-not-defined
-    echo '<script src="'.$Glo_PathRel_back.'../share/js/GoogleTranlatePatch.js" type="text/javascript" language="JavaScript"></script>'."\n";
+    // echo '<div class="main-google-translate">'."\n";
+    // echo '  <div id="google_translate_element" class="" style="white-space: normal!important;"></div>'."\n";
+    // echo '</div>'."\n";
+    // echo '<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>'."\n";
+    // echo '<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>'."\n"; // see: https://stackoverflow.com/questions/22268881/referenceerror-is-not-defined
+    // echo '<script src="'.$Glo_PathRel_back.'../share/js/GoogleTranlatePatch.js" type="text/javascript" language="JavaScript"></script>'."\n";
 
     echo '<div class="main-paypal">'."\n";
     echo '        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="">'."\n";
@@ -3466,7 +3471,7 @@
     echo ''."\n";
     echo '		<script type="text/javascript"> <!--'."\n";
     echo '        // #: Open hidden areas for the hash of first site call.'."\n";
-    echo '        To_f_manage_site_end( true);'."\n";
+    echo '        To_f_manage_site_end( true, NSOSP_f_manage_resize);'."\n";
     echo '    --> </script>'."\n";
     //echo '    '.$To_g_pageUrl."<br>\n";
     //echo '    '.$To_g_query."<br>\n";
@@ -3642,7 +3647,9 @@
     echo $offset.'    </ul>'."\n";
     echo $offset.'    <ul class="content-google-translate-paypal-list">'."\n";
     echo $offset.'      <li>'."\n";
-    echo '<div id="google_translate_element_content" class="main-google-translate-content" style="display: inline; white-space: normal!important;"></div>'."\n";
+    // is moved here and back to navigation in file "NSOSP.js"
+    echo '<div id="GoogleTranslateContent" class="main-google-translate-content" style="display: inline; white-space: normal!important;"></div>'."\n";
+    // echo '<div id="google_translate_element_content" class="main-google-translate-content" style="display: inline; white-space: normal!important;"></div>'."\n";
       // for the remainders of the code see navigation
     echo $offset.'      </li>'."\n";
     echo $offset.'      <li>'."\n";
