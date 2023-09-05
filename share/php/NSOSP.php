@@ -53,10 +53,6 @@
 
   
   $nSOSp_g_info_wolfgangHuss = array(
-    /* author_adress => 'Wolfgang Huß \\\\'."\n".
-                   'und Media Line Digital e.K. \\\\'."\n".
-                   'Steinburger Straße 38 \\\\'."\n".
-                   '22527 Hamburg, Germany, EU', */
     author_adress => 'Wolfgang Huß \\\\'."\n".
                    'und Media Line Digital e.K. \\\\'."\n".
                    'Steinburger Straße 38 \\\\'."\n".
