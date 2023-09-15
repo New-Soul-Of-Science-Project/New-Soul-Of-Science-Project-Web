@@ -22,6 +22,7 @@
               'wiki:Allklasse:2020',
               'wiki:AnalytischeZahlentheorie:2022',
               'wiki:Arithmetik:2015',
+              'wiki:BijektiveFunktion:2023',
               'wiki:GaussscheSummenformel:2023',
               'wiki:IntervallMathematik:2023',
               'wiki:KoerperAlgebra:2023',
@@ -40,6 +41,7 @@
               'wiki:SatzDesEuklid:2023',
               'wiki:Stellenwertsystem:2023',
               'wiki:Teilerfremdheit:2022',
+              'wiki:Teilmenge:2023',
               'wiki:Unendlichkeitsaxiom:2021',
             ));
           ?>

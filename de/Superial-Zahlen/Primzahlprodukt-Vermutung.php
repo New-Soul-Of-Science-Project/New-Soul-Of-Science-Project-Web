@@ -31,15 +31,15 @@
                     'Auf die Primzahlprodukt-Vermutung bin ich durch das Herumspielen mit der'."\n".
                     '\\jump{OM:SupNum:Eigenschaften:StrukturVonS}{Struktur der Superial-Zahlen} gestoßen.'."\n",
                       'Schauen wir uns das Zählen der \\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} an:'."\n".
-                    'Beim Zählen von natürlichen Superial-Zahlen werden endliche rationale Zahlen als Koeffizienten des Unendlichen \\latexmath{ q_k \cdot s^k + \cdots }'."\n".
-                    'mitgezählt, wenn die endlichen ganzen Zahlen \\latexmath{ z } als endlicher Summand \\latexmath{ \cdots + z \cdot s^0 } immer wieder durchlaufen.'."\n".
+                    'Beim Zählen von natürlichen Superial-Zahlen werden endliche rationale Zahlen \\latexmath{ q_1 } als Koeffizienten des Unendlichen \\latexmath{ q_1 \cdot s + z }'."\n".
+                    'mitgezählt, wenn die endlichen ganzen Zahlen \\latexmath{ z } als endlicher Summand immer wieder durchlaufen.'."\n".
                     'Betrachten wir im Folgenden mit Hilfe von \\latexmath{ s } das Verhältnis der Anzahl der endlichen rationalen Zahlen'."\n".
                     'und der endlichen ganzen Zahlen, dann scheint intuitiv die Anzahl der endlichen natürlichen Zahlen dem Produkt'."\n".
                     'aller endlichen Primzahlen gleich zu sein.'."\n",
                       'Den Ansatz zu dieser Vermutung finden wir im Abschnitt \\italic{\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm}},'."\n".
                     'wo wir uns schon mit der Struktur von \\latexmath{ s } beschäftigt haben.'."\n".
                     'Dabei fanden wir, dass die Anzahl der rationalen Zahlen \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} }, von der Null bis ausschließlich der Eins, in Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}'."\n".
-                    'eine ganze Zahl sein muss.'."\n".
+                    'eine aktual unendliche positive ganze Zahl sein muss.'."\n".
                     'Das können wir mit Hilfe der \\jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{Menge \\latexmath{ \mathbb{N}_\infty }} zum Ausdruck bringen:'."\n".
                     ''))),
                   array( 'equations',
@@ -103,13 +103,13 @@
                     'Nun können wir als erstes überlegen, ob es sich um einen der Primzahltürme handeln könnte:'."\n".
                     'Die unendlich große Primzahl-Potenz mit der kleinsten Basis in \\latexmath{ s } ist \\latexmath{ 2^\omega }.'."\n".
                     'Wenn wir berücksichtigen, dass ja oben \\latexmath{ s } durch \\latexmath{ 2 \cdot \omega } geteilt wird und wir den Faktor \\latexmath{ 2 } schon mal aus'."\n".
-                    'der unendlichen Potenz von \\latexmath{ 2 } entfernen, ergibt sich immer noch \\term{2^{ω-1}}, wobei \\latexmath{ \omega - 1 } in den'."\n".
-                    '\\jump{OM:BiOrd:Home}{Biordinalzahlen} definiert ist.'."\n".
+                    'der unendlichen Potenz von \\latexmath{ 2 } entfernen, ergibt sich immer noch \\term{2^{ω-1}}, wobei \\latexmath{ \omega - 1 } als'."\n".
+                    '\\jump{OM:BiOrd:Home}{Biordinalzahl} definiert ist.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Nun ist es offensichtlich, dass \\term{2^{ω-1}} ungleich und sogar sehr viel größer als \\latexmath{ \omega } ist: \\\\'."\n".
+                      'Nun ist es offensichtlich, dass \\term{2^{ω-1}} ungleich und sogar sehr viel größer als \\latexmath{ \omega } ist:'."\n".
                       '\\color{*Bearb}{(Hier auch \\latexmath{ \overset{\infty}{\ggg} } nutzen?)}'."\n".
                       ''))),
                   array( 'equations',
@@ -125,7 +125,7 @@
 
                   array( 'text', array( text => array(
                     'Somit kommt keine Primzahl der Potenz \\latexmath{ p^ω }, also eine Spalte des Primzahl-Flächenprodukts,'."\n".
-                    'als unendlich großer Primfaktoranteil von \\latexmath{ s } für \\latexmath{ \omega } in Frage.'."\n".
+                    'als unendlich großer Primfaktoranteil von \\latexmath{ s }, der \\latexmath{ \omega } gleicht, in Frage.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen', text =>
                       
@@ -145,14 +145,15 @@
                   array( 'text', array( text => array(
                     'Stimmt unsere Vermutung, dann ist \\latexmath{ s } das Gleiche wie \\latexmath{ \omega } hoch \\latexmath{ \omega }.'."\n",
                       'An dieser Stelle sind wird nicht ganz sicher, ob wirklich alle endlichen Primzahlen in \\latexmath{ \omega } stecken oder'."\n".
-                    'auch welche endlich oft mehrfach vorkommen!'."\n".
-                    'Auch, wenn dies der einfachste Fall scheint, weil wir keinen Hinweis haben, warum eine der Primzahlen fehlen oder mehrfach sein sollte.'."\n".
-                    'Außer, dass vielleicht die \\latexmath{ 2 } an \\latexmath{ \omega } fehlen könnte, weil sie in \\latexmath{ 2 \cdot \omega } wieder separat hinzu kommt.'."\n".
-                    'Die Eigenschaft von \\latexmath{ \omega } allerdings, mit gutem Recht, soweit wir wissen, genau so viele gerade wie ungerade Zahlen zu enthalten, steht dem gegenüber.'."\n",
+                    'auch welche endlich oft mehrfach vorkommen.'."\n".
+                    'Auch, wenn dies der einfachste Fall scheint, haben wir keinen Hinweis, warum eine der Primzahlen nicht fehlen oder doch mehrfach sein könnte.'."\n".
+                    'Außer, dass vielleicht die \\latexmath{ 2 } an \\latexmath{ \omega } fehlen könnte, weil sie in \\latexmath{ 2 \cdot \omega } wieder separat hinzu kommt.'."\n",
+                      'Die Eigenschaft von \\latexmath{ \omega } allerdings, mit gutem Recht, soweit wir wissen, genau so viele gerade wie ungerade Zahlen zu enthalten, steht dem gegenüber.'."\n".
+                    'Sie liefert einen Grund, dass \\latexmath{ \omega } durch \\latexmath{ 2 } teilbar sein sollte.'."\n",
                       'Wie können wir nun das Wissen schöpfen, dass alle endlichen Primzahlen genau ein Mal im Produkt vorkommen müssen?'."\n",
-                      'Unsere Vermutung können wir plausibel machen, und schließlich auch beweisen, wenn wir erkennen, dass sowohl das vollständige Zählen'."\n".
-                    'als auch das vollständige Produkt aller endlichen Primzahlen das Raster der endlichen natürlichen Zahlen beschreibt.'."\n".
-                    'Wir beginnen damit, zwei Möglichkeiten zu beleuchten,'."\n".
+                      'Wir können unsere Vermutung plausibel machen, und schließlich auch beweisen, wenn wir erkennen, dass sowohl das vollständige Zählen'."\n".
+                    'als auch das vollständige Produkt aller endlichen Primzahlen das Raster der endlichen natürlichen Zahlen beschreiben.'."\n",
+                      'Wir beginnen damit, zwei Möglichkeiten zu beleuchten,'."\n".
                     'die Unendlichkeit der endlichen natürlichen Zahlen zu zeigen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
@@ -175,12 +176,12 @@
                   array( 'text', array( text => array(
                   '\\condb{Beweis durch die Primfakultät und die Phasenverschiebung um \\latexmath{ \pm 1 }} \\\\'."\n".
                     'Und ein weiteres Mal können wir die Unendlichkeit der endlichen natürlichen Zahlen mittels der Primfakultät und der Phasenverschiebung'."\n".
-                    'um \\latexmath{ \pm 1 } beweisen, auf Basis der Multiplikationsatome, der Primzahlen, und des Zählatoms Eins, ausgehend von der Eins.'."\n".
+                    'um \\latexmath{ \pm 1 } beweisen, auf Basis der Multiplikationsatome der Primzahlen und des Zählatoms Eins, ausgehend von der Eins.'."\n".
                     'So, wie es nachfolgend im ›Satz des Euklid‹ beschrieben ist.'."\n".
-                    'Sein Beweis basiert auf der Primfakultät, also auf dem Primorial\\footnote{\\const{SupNum_g_footnote_text_Primorial}},'."\n".
-                    'welche immer weiter potenziell ins Unendliche vorangetrieben wird, und damit immer genauer'."\n".
-                    'das Produkt aus Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen}'."\n".
-                    'wird.'."\n",
+                    'Denn sein Beweis basiert auf der Primfakultät, also auf dem Primorial\\footnote{\\const{SupNum_g_footnote_text_Primorial}},'."\n".
+                    'welche immer weiter potenziell ins Unendliche vorangetrieben wird und sich damit immer weiter'."\n".
+                    'dem Produkt aller Primzahlen aus Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen}'."\n".
+                    'nähert.'."\n",
                       'In der Primfakultät \\latexmath{ p\# } sind alle endlichen Primzahlen, von der Zwei bis zu einer größten \\latexmath{ p }, enthalten.'."\n".
                     'Die größte wird dann im Beweis immer größer, bis ins Unendliche.'."\n".
                     'Ausschließlich mit diesem Produkt funktioniert der Beweis und nicht, wenn irgendeine Primzahl'."\n".
@@ -197,7 +198,7 @@
                     'Es gibt keinen Grund, warum eine der Primzahlen in dem Produkt mehrfach vorkommen sollte oder gar müsste.'."\n".
                     'Womit wir noch keinen Beweis für die Primzahlprodukt-Vermutung haben, sie aber schon mal'."\n".
                     'sehr plausibel erscheint.'."\n".
-                    'Genau dies zeigen wir nachfolgend.'."\n".
+                    'Genau dies zeigen wir nachfolgend und nutzen dazu die vorstehende Einsicht für den Beweis.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid', text =>
                       
@@ -306,9 +307,9 @@
                     'Und zwar mit einer Menge von Zahlen, die auf seiner Primfaktorzerlegung basieren und das Primfaktor-Spektrum oder Primfaktor-Raster des Werts widerspiegeln.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Die Primzahlturmzerlegung} \\\\'."\n".
+                  '\\condb{Die Primturmzerlegung} \\\\'."\n".
                     'Wie können wir die Primfaktorzerlegung jeder natürlichen Zahl eindeutig in einer Menge darstellen?'."\n",
-                      'Das ist nur durch eine Menge der Primzahltürme einer natürlichen Zahl möglich, die wir \\italic{Primzahlturmzerlegung} nennen.'."\n".
+                      'Das ist nur durch eine Menge der Primzahltürme einer natürlichen Zahl möglich, die wir \\italic{Primturmzerlegung} nennen.'."\n".
                     'Denn eine Menge der reinen Primfaktoren wäre nicht eindeutig, weil dies nicht die'."\n".
                     'Potenzen der Primzahlen berücksichtigt.'."\n".
                     ''))),
@@ -325,8 +326,28 @@
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Dann ist diese Menge also die Menge der Primzahlen in der maximalen Potenz, die \\latexmath{ n } noch ganzzahlig teilt,'."\n".
                       'oder sie enthält im Falle von Null nur die Null oder im Falle von Eins nur die Eins.'."\n".
-                      'Die Null und die Eins werden hier berücksichtigt, weil wir die natürlichen Zahlen komplett abbilden wollen.'."\n",
-                        'Der Parameter \\latexmath{ n } und sein Funktionswert, seine Primzahlturmzerlegung, entsprechen einander.'."\n",
+                      'Die Null und die Eins werden hier berücksichtigt, weil wir die natürlichen Zahlen komplett abbilden wollen.'."\n".
+                      'Der Parameter \\latexmath{ n } und sein Funktionswert, seine Primturmzerlegung, entsprechen einander. \\\\'."\n".
+                      'Die ersten Werte dieser Funktion sind'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  pt(0)  =  *\{ 0 *\}  }'),
+                      array( display => 'on',  latex => '{  pt(1)  =  *\{ 1 *\}  }'),
+                      array( display => 'on',  latex => '{  pt(2)  =  *\{ 2 *\}  }'),
+                      array( display => 'on',  latex => '{  pt(3)  =  *\{ 3 *\}  }'),
+                      array( display => 'on',  latex => '{  pt(4)  =  *\{ 4 *\}  }'),
+                      array( display => 'on',  latex => '{  pt(5)  =  *\{ 5 *\}  }'),
+                      array( display => 'on',  latex => '{  pt(6)  =  *\{ 2, 3 *\}  }'),
+                      array( display => 'on',  latex => '{  pt(7)  =  *\{ 7 *\}  }'),
+                      array( display => 'on',  latex => '{  pt(8)  =  *\{ 8 *\}  }'),
+                      array( display => 'on',  latex => '{  pt(9)  =  *\{ 9 *\}  }'),
+                      array( display => 'on',  latex => '{  pt(10)  =  *\{ 2, 5 *\}  }'),
+                      array( display => 'on',  latex => '{  pt(11)  =  *\{ 11 *\}  }'),
+                      array( display => 'on',  latex => '{  pt(12)  =  *\{ 4, 3 *\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'und so fort.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -338,11 +359,11 @@
                   '\\condb{Definition des Primturm-Potenzrasters} \\\\'."\n".
                     'Die Menge der Anzahl der ersten \\latexmath{ n } natürlichen Zahlen, von der Null an,'."\n".
                     'stellt den Zählaspekt der Zahl \\latexmath{ n } dar, also die Menge an Zahlen, die bis zu ihr erzeugt werden.'."\n",
-                      'Die Primzahlturmzerlegung ist eine Menge, die den multiplikativen Aspekt einer solchen Zahl'."\n".
+                      'Die Primturmzerlegung ist eine Menge, die den multiplikativen Aspekt einer solchen Zahl'."\n".
                     'darstellt.'."\n".
                     'Sie bezieht sich aber nicht direkt auf die Erzeugung einer Menge – ein Spektrum oder Raster – natürlicher Zahlen, die mit ihrer'."\n".
-                    'Primzahlturmzerlegung in Verbindung stehen, also die durch die in ihr enthaltenen Primzahltürme erzeugt werden.'."\n",
-                      'Diese Menge möchte ich nun vorstellen und nenne sie \\italic{Primturm-Potenzraster}.'."\n",
+                    'Primturmzerlegung in Verbindung stehen, also die durch die in ihr enthaltenen Primzahltürme erzeugt werden.'."\n",
+                      'Diese Menge möchte ich nun vorstellen und nenne sie das \\italic{Primturm-Potenzraster}.'."\n",
                       'Beim Primturm-Potenzraster geht es darum zu analysieren, welche anderen natürliche Zahlen sich mit'."\n".
                     'den in einer natürlichen Zahl vorhandenen Primzahltürmen durch Variation ihrer Potenzen darstellen lassen.'."\n".
                     'Denn es geht im Besonderen in einem zweiten Schritt darum, mit einer natürlichen Zahl ein Raster zu beschreiben, das zeigt,'."\n".
@@ -352,12 +373,13 @@
                     'nicht untereinander unterscheiden.'."\n".
                     'Denn all diese Zweien sind ja gleich.'."\n".
                     'Unterscheiden können wir zwischen ihnen nur, wenn wir auch die Potenz der Primzahl sehen und im Primzahlturm belassen.'."\n".
-                    'Reduzieren wir also einen Primzahlturm auf seine Primzahl, dann eliminieren wir einen essenziellen Teil'."\n".
+                    'Reduzieren wir also einen Primzahlturm auf seine Primzahlbasis, dann eliminieren wir einen essenziellen Teil'."\n".
                     'seiner Eigenschaften, seines Charakters.'."\n",
-                      'Würden wir dabei also nur die einzelnen Primfaktoren berücksichtigen und in ihrer Potenz variieren,'."\n".
+                      'Würden wir in dem Fall also nur die einzelnen Primfaktoren berücksichtigen und in ihrer Potenz variieren,'."\n".
                     'dann erhielten wir aufgrund der Reduktion der Primzahlpotenzen auf ihre Primzahlbasis Doppeldeutigkeiten,'."\n".
                     'die eine vollständige und damit differenzierte Beschreibung der möglichen Spektren oder Raster unmöglich machen.'."\n".
-                    'So gesehen ist die Variation von Primzahltürmen keine Willkür, sondern zwingend.'."\n",
+                    'So gesehen ist die Variation von Primzahltürmen keine Willkür, sondern zwingend, um Eineindeutigkeit zwischen'."\n".
+                    'der Menge des jeweiligen Primturm-Potenzrasters und der natürlichen Zahl, die es beschreibt, zu gewährleisten.'."\n",
                       'Zur Definition der Menge des Primturm-Potenzrasters und der Berechnung der lückenlosen Intervall-Menge'."\n".
                     'endlicher und aktual unendlicher natürlicher Zahlen an seinem Beginn, von der Null an, brauchen wir im Folgenden also die Menge der Primfaktoranteile'."\n".
                     'einer solchen Zahl.'."\n".
@@ -366,7 +388,7 @@
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Sei \\latexmath{ pr(n) } das Primturm-Potenzraster beziehungsweise die unendliche Primturm-Potenzraster-Menge,'."\n".
-                      'erzeugt aus ihrem endlichen oder aktual unendlichen natürlichen Parameter \\latexmath{ n },'."\n".
+                      'erzeugt aus ihrem \\jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{endlichen oder aktual unendlichen natürlichen Parameter \\latexmath{ n \in \mathbb{N}_\infty }},'."\n".
                       'eine Menge die alle Kombinationen der natürlichen Potenzen seiner Primzahltürme enthält,'."\n".
                       'wobei die Null und die Eins dazu genommen werden:'."\n".
                       ''))),
@@ -384,7 +406,7 @@
                       // 'Null oder Eins sind oder mindestens ein Primfaktoranteil von \\latexmath{ n } die Zahl \\latexmath{ i } ganzzahlig teilt.'."\n",
                       'Die Menge wird hier erzeugt, indem alle Elemente in \\latexmath{ pt(n) }, geordnet nach ihrem Index \\latexmath{ i }, in jeder natürlichen Potenz'."\n".
                       'miteinander kombiniert werden.'."\n",
-                        'Im zweiten Fall sind die Null und Eins in der Menge immer dabei, weil sie in diesem Fall immer Teil der Primzahlturmzerlegung sind.'."\n".
+                        'Im zweiten Fall sind die Null und Eins in der Menge immer dabei, weil sie in diesem Fall immer Teil der Primturmzerlegung sind.'."\n".
                       'Und durch die jeweiligen Potenzen von Null und Eins, wie \\latexmath{ 0 = 0^1 \cdot 1^0 \cdot j_i^0 \cdots }'."\n".
                       'und \\latexmath{ 1 = 0^0 \cdot 1^1 \cdot j_i^0 \cdots } kommen beide dann ins Primturm-Potenzraster.'."\n",
                         '\\\\'."\n".
@@ -392,7 +414,7 @@
 
                   array( 'text', array( text => array(
                     'Das Primturm-Potenzraster ist eine eineindeutige Abbildung jeder natürlichen Zahl.'."\n".
-                    'Dies kommt daher, weil jede natürliche Zahl, wie oben gezeigt, ihre einzigartige Primzahlturmzerlegung hat,'."\n".
+                    'Dies kommt daher, weil jede natürliche Zahl, wie oben gezeigt, ihre einzigartige Primturmzerlegung hat,'."\n".
                     'aufgrund derer sich das Primturm-Potenzraster ebenso einzigartige berechnet.'."\n".
                     ''))),
 
@@ -411,9 +433,10 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Mit Entsprechung ist hier und nachfolgend – generell in dieser Arbeit – gemeint, dass eine bijektive Funktion\\color{*Bearb}{(Verweis)}'."\n".
+                    'Mit Entsprechung ist hier und nachfolgend – generell in dieser Arbeit – gemeint, dass eine'."\n".
+                    'bijektive Funktion\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:BijektiveFunktion:2023}.}'."\n".
                     'existiert, die beide Dinge eineindeutig aufeinander abbildet.'."\n".
-                    'Jede natürliche Zahl beschreibt und charakterisiert also ihre eigenes Primturm-Potenzraster.'."\n",
+                    'Jede natürliche Zahl beschreibt und charakterisiert also ihr eigenes Primturm-Potenzraster und umgekehrt.'."\n",
                       'Das Primturm-Potenzraster nutzen wir nun, um seinen lückenlosen Anteil an seinem Beginn'."\n".
                     'zu berechnen.'."\n".
                     ''))),
@@ -425,14 +448,15 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  lpr(n)  :=  *\{  x  *|*  *( \forall i \in \mathbb{N} *) *( i \subset pr(n) *) *[  x = i  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  lpr(n)  :=  *\{  x  *|*  *( \forall i \in \mathbb{N} *) *( i \subseteq pr(n) *) *[  x = i  *]  *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\color{*Bearb}{(\\latexmath{ \mathbb{N} } sollte hier auf aktual unendliche natürliche Zahlen erweitert werden. Allerdings wäre \\latexmath{ \mathbb{N}_\infty } hier nicht ganz richtig, weil es im Sinne der Biordinalzahlen nur um die Ordinalzahlen geht, also um Limeszahlen \\latexmath{ \lambda + n } und nicht um solche wie \\latexmath{ \lambda - n }, also z.B. \\latexmath{ \omega - 1 }.)} \\\\'."\n".
+                      '\\color{*Bearb}{(Diese Funktion könnten wir vielleicht auch durch Mengennegation und das Herauskristallisieren'."\n".
+                      'der kleinsten Zahl in der Antimenge realisieren.)} \\\\'."\n".
                       'Diese Menge erhalten wir, indem wir alle natürlichen Zahlen \\latexmath{ i } in einer Menge sammeln,'."\n".
-                      'die echte Teilmenge\\color{*Bearb}{(Verweis)}'."\n".
+                      'die echte Teilmenge\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Teilmenge:2023}.}'."\n".
                       'des Primturm-Potenzrasters sind.'."\n",
-                        '\\color{*Bearb}{(Diese Funktion könnten wir auch durch Mengennegation und das Herauskristallisieren'."\n".
-                      'der kleinsten Zahl in der Antimenge realisieren.)}'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -440,9 +464,9 @@
                     'Damit haben wir etwas besonderes geschaffen, wie wir noch sehen werden.'."\n".
                     ''))),
                       
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beispiele-Primzahlturmzerlegung-PrimturmPotenzraster+lueckenloses',
-                Title => 'Beispiele zur Primzahlturmzerlegung, zum Primturm-Potenzraster und zum lückenlosen Primturm-Potenzraster …',
-                TitleVis => 'Beispiele zur Primzahlturmzerlegung, zum Primturm-Potenzraster und zum lückenlosen Primturm-Potenzraster:', ParagraphList => array(
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beispiele-Primturmzerlegung-PrimturmPotenzraster+lueckenloses',
+                Title => 'Beispiele zur Primturmzerlegung, zum Primturm-Potenzraster und zum lückenlosen Primturm-Potenzraster …',
+                TitleVis => 'Beispiele zur Primturmzerlegung, zum Primturm-Potenzraster und zum lückenlosen Primturm-Potenzraster:', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Nachdem wir nun die Formalien definiert haben, möchte ich die Zusammenhänge an Zahlenbeispielen'."\n".
                     'verdeutlichen und erlebbar machen.'."\n".
@@ -459,11 +483,11 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 0 )  =  \varnothing  }'),
                       array( display => 'on',  latex => '{  lpr( 0 )  =  0  =  \varnothing  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n".
                       'XXX'."\n",
                         '\\\\'."\n".
-                      ''))),
+                      ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \\latexmath{ 1 } haben wir:'."\n".
@@ -475,11 +499,11 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 1 )  =  *\{ 0 *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 1 )  =  1  =  *\{ 0 *\}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n".
                       'XXX'."\n",
                         '\\\\'."\n".
-                      ''))),
+                      ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \\latexmath{ 2 } haben wir:'."\n".
@@ -492,11 +516,11 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 2 )  =  *\{ 0, 1, 2, 8, 16, 32, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 2 )  =  3  =  *\{ 0, 1, 2 *\}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n".
                       'XXX'."\n",
                         '\\\\'."\n".
-                      ''))),
+                      ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \\latexmath{ 4 } haben wir:'."\n".
@@ -509,11 +533,11 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 4 )  =  *\{ 0, 1, 4, 16, 64, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 4 )  =  2  =  *\{ 0, 1 *\}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n".
                       'XXX'."\n",
                         '\\\\'."\n".
-                      ''))),
+                      ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \\latexmath{ 6 = 5\overline{\#} = 4\overline{\#} } haben wir:'."\n".
@@ -525,11 +549,11 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 6 )  =  *\{ 0, 1, 2, 3, 4, 6, 8, 9, 12, 16, 18, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 6 )  =  5  =  *\{ 0, 1, 2, 3, 4 *\}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n".
                       'XXX'."\n",
                         '\\\\'."\n".
-                      ''))),
+                      ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \\latexmath{ 9 } haben wir:'."\n".
@@ -542,11 +566,11 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 9 )  =  *\{ 0, 1, 9, 81, 729, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 9 )  =  2  =  *\{ 0, 1 *\}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n".
                       'XXX'."\n",
                         '\\\\'."\n".
-                      ''))),
+                      ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \\latexmath{ 10 } haben wir:'."\n".
@@ -559,11 +583,11 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 10 )  =  *\{ 0, 1, 2, 4, 5, 8, 10, 16, 20, \\\ \qquad\qquad\qquad\qquad\qquad\qquad 25, 32, 40, 50, 64, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 10 )  =  3  =  *\{ 0, 1, 2 *\}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n".
                       'XXX'."\n",
                         '\\\\'."\n".
-                      ''))),
+                      ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \\latexmath{ 20 } haben wir:'."\n".
@@ -576,11 +600,11 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 20 )  =  *\{ 0, 1, 4, 5, 16, 20, 25, 64, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 20 )  =  2  =  *\{ 0, 1 *\}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n".
                       'XXX'."\n",
                         '\\\\'."\n".
-                      ''))),
+                      ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \\latexmath{ 30 = 7\overline{\#} = 6\overline{\#} } haben wir:'."\n".
@@ -593,11 +617,11 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 30 )  =  *\{ 0, 1, 2, 3, 4, 5, 6, 8, 9, 10, \\\ \qquad\qquad\qquad\qquad\qquad 12, 15, 16, 18, 20, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 30 )  =  7  =  *\{ 0, 1, 2, 3, 4, 5, 6 *\}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n".
                       'XXX'."\n",
                         '\\\\'."\n".
-                      ''))),
+                      ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \\latexmath{ 210 = 11\overline{\#} = 10\overline{\#} = 9\overline{\#} = 8\overline{\#} } haben wir:'."\n".
@@ -609,11 +633,11 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 210 )  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \\\ \qquad\qquad\qquad\qquad\qquad\qquad 12, 14, 15, 16, 18, 20, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 210 )  =  11  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 *\}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n".
                       'XXX'."\n",
                         '\\\\'."\n".
-                      ''))),
+                      ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Wenn die Primzahlprodukt-Vermutung stimmt, dann gilt:'."\n",
@@ -627,19 +651,14 @@
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega', label_text => '\\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega}', label_incr => true),
                       array( display => 'on',  latex => '{  lpr\!*( \omega\overline{\#} *)  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots *\} \\\ \qquad\qquad\qquad\qquad\qquad\qquad  =  \mathbb{N}  =  \omega  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n".
                       'XXX'."\n",
                         '\\\\'."\n".
-                      ''))),
+                      ''))), */
 
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'So können wir vielleicht schon ein wenig erkennen, wohin die Reise geht.'."\n".
                     ''))),
                     ))),
 
@@ -717,11 +736,11 @@
                       array( display => 'on',  latex => '{  ppr( 7\overline{\#} )  =  *\{ 0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lppr( 7\overline{\#} )  =  7  =  *\{ 0, 1, 2, 3, 4, 5, 6 *\}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n".
                       'XXX'."\n",
                         '\\\\'."\n".
-                      ''))),
+                      ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \\latexmath{ 6 } haben wir:'."\n".
@@ -733,11 +752,11 @@
                       array( display => 'on',  latex => '{  lppr( 6\overline{\#} )  =  7  =  *\{ 0, 1, 2, 3, 4, 5, 6 *\}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  lppr( 6\overline{\#} )  =  lppr( 7\overline{\#} )  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n".
                       'XXX'."\n",
                         '\\\\'."\n".
-                      ''))),
+                      ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \\latexmath{ 5 } haben wir:'."\n".
@@ -748,11 +767,11 @@
                       array( display => 'on',  latex => '{  ppr( 5\overline{\#} )  =  *\{ 0, 1, 2, 3, 4, 6, 8, 9, 12, 16, 18, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lppr( 5\overline{\#} )  =  5  =  *\{ 0, 1, 2, 3, 4 *\}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n".
                       'XXX'."\n",
                         '\\\\'."\n".
-                      ''))),
+                      ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \\latexmath{ 4 } haben wir:'."\n".
@@ -764,11 +783,11 @@
                       array( display => 'on',  latex => '{  lppr( 4\overline{\#} )  =  5  =  *\{ 0, 1, 2, 3, 4 *\}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  lppr( 4\overline{\#} )  =  lppr( 5\overline{\#} )  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n".
                       'XXX'."\n",
                         '\\\\'."\n".
-                      ''))),
+                      ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \\latexmath{ 8 } haben wir:'."\n".
@@ -780,11 +799,11 @@
                       array( display => 'on',  latex => '{  lppr( 8\overline{\#} )  =  11  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 *\}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  lppr( 8\overline{\#} )  =  lppr( 9\overline{\#} )  =  lppr( 10\overline{\#} )  =  lppr( 11\overline{\#} )  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n".
                       'XXX'."\n",
                         '\\\\'."\n".
-                      ''))),
+                      ''))), */
 
                   array( 'text', array( text => array(
                     'Die Mengen-Primfakultät \\latexmath{ n\overline{\#} } beschreibt ein Primpotenzraster minimalistisch.'."\n",
@@ -1070,7 +1089,7 @@
                   array( 'text', array( text => array(
                     'Nachfolgend beispielhaft die Berechnung der ersten Primzahlen der Menge \\latexmath{ \mathbb{P} }.'."\n",
                       'Die jeweiligen Primturm-Potenzraster Mengen finden wir in den'."\n".
-                    '\\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beispiele-Primzahlturmzerlegung-PrimturmPotenzraster+lueckenloses}{entsprechenden Beispielen} oben.'."\n".
+                    '\\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beispiele-Primturmzerlegung-PrimturmPotenzraster+lueckenloses}{entsprechenden Beispielen} oben.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -1603,7 +1622,75 @@
                     'Und der Wert von \\latexmath{ \omega\overline{\#} } hat nun auch die gleiche Größenordnung, wie der von \\latexmath{ \omega }.'."\n".
                     ''))),
                   array( 'text', array( text => array(
+                  '\\condb{Die Größenordnung und Struktur von \\term{ s } und \\term{ s^{-1} }} \\\\'."\n".
+                    'Der Beweis unserer Primzahlprodukt-Vermutung, und damit unserer Logo Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega},'."\n".
+                    'offenbart einen tiefen Zusammenhang zwischen \\latexmath{ s } und \\latexmath{ \omega }.'."\n".
+                    'Auch der Kehrwert von \\latexmath{ s } lässt sich so einfach mit \\latexmath{ \omega }'."\n".
+                    'ausdrücken:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Wenn nach Beweis'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  s  =  \omega^{\omega}  }',
+                                          label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'ist, dann ist die Körnung der von uns definierten \\jump{OM:SupNum:Ableitungen-Integrale}{Ableitung}'."\n".
+                      'mittels \\latexmath{ s }'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 1 }{ s }  =  \frac{ 1 }{ \omega^{\omega} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  s^{-1}  =  \omega^{-\omega}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'und so natürlich auch die des \\jump{OM:SupNum:Ableitungen-Integrale}{Integrals}.'."\n".
+                      'Also können wir jedes \\latexmath{ s^x } als'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  s^{x}  =  *( \omega^{\omega} *)^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  s^{x}  =  \omega^{\omega \cdot x}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'durch \\latexmath{ \omega } ausdrücken.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Unsere superiale Basis \\latexmath{ s } und ihre Potenzen stehen'."\n".
+                    'interessanter Weise so mit der aktualen Unendlichkeit der'."\n".
+                    'vollständigen Induktion der natürlichen Zahlen in direkter Verbindung.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
                   '\\condb{XXX} \\\\'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  *( \prod_{\forall p \in \mathbb{P}}  p *)  }',
+                                          label_text => '\\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \omega^{\omega}  =  \omega \cdot \omega^{\omega - 1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \omega^{\omega}  =  2^{\omega} \cdot 3^{\omega} \cdot 5^{\omega} \cdot 7^{\omega} \cdot 11^{\omega} \cdot 13^{\omega} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \omega^{\omega}  =  2^{ 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots } \cdot 3^{\omega} \cdot 5^{\omega} \cdot 7^{\omega} \cdot 11^{\omega} \cdot 13^{\omega} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \omega^{\omega}  =  *( *( *( *( *( *( 2^{ 2 } *)^{ 3 } *)^{ 5 } *)^{ 7 } *)^{ 11 } *)^{ 13 } *)^{ \cdots } \cdot 3^{\omega} \cdot 5^{\omega} \cdot 7^{\omega} \cdot 11^{\omega} \cdot 13^{\omega} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  z  =  \prod_{\forall p \in \mathbb{P}}  p^{ *( \prod_{\forall p \in \mathbb{P}}  p^{ *( \prod_{\forall p \in \mathbb{P}}  p^{ \cdots } *) } *) }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  z  =  \omega^{ \omega^{ \omega^{ \cdots } } }  =  \omega^{ *( \omega^{ *( \omega^{ \cdots } *) } *) }  }'),
+                    ))),
+                  array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
