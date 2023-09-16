@@ -669,9 +669,35 @@ function To_f_showMenu( switchOrForceShowMenu = null)
 }
 
 
-function To_f_showMenuHideOnOutsideClick( event) {
+function To_f_showMenuHideOnATagItemClick( event, parent) {
+  var hidden = false;
+  const children = parent.children;
+
+  for ( var i = 0; i < children.length; i++) {
+    const child = children[i];
+    
+    if (child.contains( event.target)) {
+      // console.log('Child click found on tag: ', child.tagName);
+
+      if (child.tagName === 'A') {
+        console.log('Hide on click menu items A tag');
+        
+        To_f_showMenu( false);
+        hidden = true;
+      } else {
+        hidden = To_f_showMenuHideOnATagItemClick( event, child)
+      }
+      
+      if (hidden) i = children.length;
+    }
+  }
+  
+  return hidden;
+}
+
+function To_f_showMenuHideOnOutsideOrItemClick( event) {
   if (document.getElementById) {
-    console.log('Enter function: To_f_showMenuHideOnOutsideClick');
+    console.log('Enter function: To_f_showMenuHideOnOutsideOrItemClick');
 
     const mainMenuUnviewedIcon = document.getElementById( 'MenuUnviewed');
 
@@ -683,6 +709,12 @@ function To_f_showMenuHideOnOutsideClick( event) {
           console.log('Hide on click outside menu');
           
           To_f_showMenu( false);
+        } else {
+          const hidden = To_f_showMenuHideOnATagItemClick( event, mainMenu);
+          
+          if (!hidden) {
+            console.log('No click outside menu or on menu item');
+          }
         }
       }
     }
@@ -718,7 +750,7 @@ function To_f_manage_site_end( autoResize = false, customResizeCallback = null)
     window.addEventListener('resize', To_f_manage_resize);
   }
 
-  document.addEventListener('click', To_f_showMenuHideOnOutsideClick);
+  document.addEventListener('click', To_f_showMenuHideOnOutsideOrItemClick);
 
   window.onbeforeprint = To_f_manage_beforePrint;
   window.window.onafterprint = To_f_manage_afterPrint;
