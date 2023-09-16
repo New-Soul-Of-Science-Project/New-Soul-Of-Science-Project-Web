@@ -348,7 +348,7 @@ function To_f_manage_resize() {
   // Called if the browser is first opened and on resize of screen.
   // Values of clientHeight and scrollHeight have settled by this point.
   
-  To_f_showMenu( false);
+  To_f_showMenuHideOnResizeCondition();
   if (To_g_callbackOnResize) {
     To_g_callbackOnResize();
   }
@@ -646,7 +646,7 @@ function To_f_showMenu( switchOrForceShowMenu = null)
 {
   if (document.getElementById)
   {
-    console.log('Enter function: To_f_showMenu');
+    console.log('Enter: To_f_showMenu');
 
     if (switchOrForceShowMenu === null) {
       To_g_showMenu = !To_g_showMenu;
@@ -665,6 +665,23 @@ function To_f_showMenu( switchOrForceShowMenu = null)
       console.log('Hide Menu');
     }
     To_f_showMenuSet();
+  }
+}
+
+
+function To_f_showMenuHideOnResizeCondition() {
+  // Called if the browser is first opened and on resize of screen.
+  // Values of clientHeight and scrollHeight have settled by this point.
+  
+  console.log( 'Enter: To_f_showMenuHideOnResizeCondition');
+  
+  if (document.getElementById) {
+    console.log( 'window.innerWidth: ', window.innerWidth);
+    
+    // size is used in "main.css" as well
+    if (!(window.innerWidth <= 929)) {
+      To_f_showMenu( false);
+    }
   }
 }
 
@@ -697,7 +714,7 @@ function To_f_showMenuHideOnATagItemClick( event, parent) {
 
 function To_f_showMenuHideOnOutsideOrItemClick( event) {
   if (document.getElementById) {
-    console.log('Enter function: To_f_showMenuHideOnOutsideOrItemClick');
+    console.log('Enter: To_f_showMenuHideOnOutsideOrItemClick');
 
     const mainMenuUnviewedIcon = document.getElementById( 'MenuUnviewed');
 
