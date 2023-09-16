@@ -642,7 +642,7 @@ function To_f_showMenuSet()
 }
 
 
-function To_f_showMenu( switchOrForceShowMenu=null)
+function To_f_showMenu( switchOrForceShowMenu = null)
 {
   if (document.getElementById)
   {
@@ -665,6 +665,27 @@ function To_f_showMenu( switchOrForceShowMenu=null)
       console.log('Hide Menu');
     }
     To_f_showMenuSet();
+  }
+}
+
+
+function To_f_showMenuHideOnOutsideClick( event) {
+  if (document.getElementById) {
+    console.log('Enter function: To_f_showMenuHideOnOutsideClick');
+
+    const mainMenuUnviewedIcon = document.getElementById( 'MenuUnviewed');
+
+    if (!mainMenuUnviewedIcon.contains( event.target)) {
+      if (To_g_showMenu) {
+        const mainMenu = document.getElementById( 'Menu'); // mobile
+
+        if (!mainMenu.contains( event.target)) {
+          console.log('Hide on click outside menu');
+          
+          To_f_showMenu( false);
+        }
+      }
+    }
   }
 }
 
@@ -696,6 +717,8 @@ function To_f_manage_site_end( autoResize = false, customResizeCallback = null)
     window.addEventListener('pageshow', To_f_manage_pageshow);
     window.addEventListener('resize', To_f_manage_resize);
   }
+
+  document.addEventListener('click', To_f_showMenuHideOnOutsideClick);
 
   window.onbeforeprint = To_f_manage_beforePrint;
   window.window.onafterprint = To_f_manage_afterPrint;
