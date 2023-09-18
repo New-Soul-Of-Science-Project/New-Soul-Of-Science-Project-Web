@@ -45,9 +45,11 @@
                     'Im Folgenden arbeite ich die Funktion der Atmung heraus und ihre Rolle bei der Aufrichtung sowie der Stabilität des Oberkörpers.'."\n".
                     'Aus dem Blickwinkel des ›Spannungsspiels des Lebens‹ ergeben sich dabei hier und da noch einmal neue Einsichten.'."\n".
                     'Zum Beispiel zu den genauen psychosomatischen Sachverhalten bei Rückenschmerzen und Bandscheibenvorfällen.'."\n"))),
-                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '100px',
                     array_merge( $SpaLeb_g_figure_ary_AnatomieRingfoermigeBauchmuskulatur, array( name => 'OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet:Fig-AnatomieRingfoermigeBauchmuskulatur',
                                                          /* text => '' */)),
+                      )),
+                  array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '36px',
                     array_merge( $SpaLeb_g_figure_ary_AnatomieZwerchfellAlleine, array( name => 'OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet:Fig-AnatomieZwerchfellAlleine',
                                                          /* text => '' */)),
                     array_merge( $SpaLeb_g_figure_ary_AnatomieZwerchfellKombi, array( name => 'OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet:Fig-AnatomieZwerchfellKombi',

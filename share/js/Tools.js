@@ -348,7 +348,7 @@ function To_f_manage_resize() {
   // Called if the browser is first opened and on resize of screen.
   // Values of clientHeight and scrollHeight have settled by this point.
   
-  To_f_showMenu( false);
+  To_f_showMenuHideOnResizeCondition();
   if (To_g_callbackOnResize) {
     To_g_callbackOnResize();
   }
@@ -642,11 +642,11 @@ function To_f_showMenuSet()
 }
 
 
-function To_f_showMenu( switchOrForceShowMenu=null)
+function To_f_showMenu( switchOrForceShowMenu = null)
 {
   if (document.getElementById)
   {
-    console.log('Enter function: To_f_showMenu');
+    console.log('Enter: To_f_showMenu');
 
     if (switchOrForceShowMenu === null) {
       To_g_showMenu = !To_g_showMenu;
@@ -665,6 +665,76 @@ function To_f_showMenu( switchOrForceShowMenu=null)
       console.log('Hide Menu');
     }
     To_f_showMenuSet();
+  }
+}
+
+
+function To_f_showMenuHideOnResizeCondition() {
+  // Called if the browser is first opened and on resize of screen.
+  // Values of clientHeight and scrollHeight have settled by this point.
+  
+  console.log( 'Enter: To_f_showMenuHideOnResizeCondition');
+  
+  if (document.getElementById) {
+    console.log( 'window.innerWidth: ', window.innerWidth);
+    
+    // size is used in "main.css" as well
+    if (!(window.innerWidth <= 929)) {
+      To_f_showMenu( false);
+    }
+  }
+}
+
+
+function To_f_showMenuHideOnATagItemClick( event, parent) {
+  var hidden = false;
+  const children = parent.children;
+
+  for ( var i = 0; i < children.length; i++) {
+    const child = children[i];
+    
+    if (child.contains( event.target)) {
+      // console.log('Child click found on tag: ', child.tagName);
+
+      if (child.tagName === 'A') {
+        console.log('Hide on click menu items A tag');
+        
+        To_f_showMenu( false);
+        hidden = true;
+      } else {
+        hidden = To_f_showMenuHideOnATagItemClick( event, child)
+      }
+      
+      if (hidden) i = children.length;
+    }
+  }
+  
+  return hidden;
+}
+
+function To_f_showMenuHideOnOutsideOrItemClick( event) {
+  if (document.getElementById) {
+    console.log('Enter: To_f_showMenuHideOnOutsideOrItemClick');
+
+    const mainMenuUnviewedIcon = document.getElementById( 'MenuUnviewed');
+
+    if (!mainMenuUnviewedIcon.contains( event.target)) {
+      if (To_g_showMenu) {
+        const mainMenu = document.getElementById( 'Menu'); // mobile
+
+        if (!mainMenu.contains( event.target)) {
+          console.log('Hide on click outside menu');
+          
+          To_f_showMenu( false);
+        } else {
+          const hidden = To_f_showMenuHideOnATagItemClick( event, mainMenu);
+          
+          if (!hidden) {
+            console.log('No click outside menu or on menu item');
+          }
+        }
+      }
+    }
   }
 }
 
@@ -696,6 +766,8 @@ function To_f_manage_site_end( autoResize = false, customResizeCallback = null)
     window.addEventListener('pageshow', To_f_manage_pageshow);
     window.addEventListener('resize', To_f_manage_resize);
   }
+
+  document.addEventListener('click', To_f_showMenuHideOnOutsideOrItemClick);
 
   window.onbeforeprint = To_f_manage_beforePrint;
   window.window.onafterprint = To_f_manage_afterPrint;

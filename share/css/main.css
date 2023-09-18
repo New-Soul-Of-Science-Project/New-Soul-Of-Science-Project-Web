@@ -497,9 +497,9 @@ svg {
   /* word-break: break-all; */
   
   /* Non standard for webkit */
-  /* word-break: break-word; */
+  word-break: break-word;
   
-  overflow-wrap: break-all;
+  overflow-wrap: break-word;
   
   -webkit-hyphens: auto;  /* #: Safari */
   -moz-hyphens: auto;  /* #: Mozilla */

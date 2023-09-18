@@ -829,8 +829,8 @@
                     'Diese Aussagen sind durchaus bemerkenswert und führen uns zu einer fundamentalen und sehr spannenden Asymmetrie.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Daraus folgende Asymmetrie} \\\\'."\n".
-                    'Auf diese Weise ergibt sich innerhalb der endlichen, ganzen Zahlen eine fundamentale Asymmetrie,'."\n".
+                  '\\condb{Daraus folgt eine prinzipielle Asymmetrie} \\\\'."\n".
+                    'Auf diese Weise ergibt sich innerhalb der endlichen, ganzen Zahlen eine prinzipielle und fundamentale Asymmetrie,'."\n".
                     'die sich in der Summe über alle endlichen, ganzen Zahlen zeigt,'."\n".
                     'weil jede negative ganze Zahl um minus Eins kleiner ist, als die natürlich Zahl, aus deren Verschiebung sie gebildet wird (siehe \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Fig-OntologieGanzeZahlen}):'."\n".
                     ''))),

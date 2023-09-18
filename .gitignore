@@ -1,5 +1,6 @@
 # Apple macOS folder attribute file
 .DS_Store
+
 .htaccess
 
 /_NSOSP Web.xcodeproj/
@@ -8,5 +9,5 @@
 /Archivieren/
 
 /Aufgaben - NSOSP Web.txt
-/google70561a8ac6150b0f.html.txt
+/google*.html
 /hello.php

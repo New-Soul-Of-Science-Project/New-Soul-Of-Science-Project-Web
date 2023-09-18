@@ -17,10 +17,11 @@ function NSOSP_f_manage_resize() {
   // Called if the browser is first opened and on resize of screen.
   // Values of clientHeight and scrollHeight have settled by this point.
   
-  console.log('Called: NSOSP_f_manage_resize');
+  console.log( 'Enter: NSOSP_f_manage_resize');
   
   if (document.getElementById) {
-    console.log('window.innerWidth: ', window.innerWidth);
+    console.log( 'window.innerWidth: ', window.innerWidth);
+    
     // size is used in "main.css" as well
     if (window.innerWidth <= 929) {
       if (NSOSP_g_googleTranslatePosition !== 'content') {
@@ -39,6 +40,6 @@ function NSOSP_f_manage_resize() {
         NSOSP_g_googleTranslatePosition = 'navigation';
       }
     }
-    console.log('"googleTranslateElement" position is now:', NSOSP_g_googleTranslatePosition);
+    console.log( '"googleTranslateElement" position is now:', NSOSP_g_googleTranslatePosition);
   }
 }
