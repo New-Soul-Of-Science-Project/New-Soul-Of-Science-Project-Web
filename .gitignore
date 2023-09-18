@@ -1,5 +1,6 @@
 # Apple macOS folder attribute file
 .DS_Store
+
 .htaccess
 
 /_NSOSP Web.xcodeproj/
