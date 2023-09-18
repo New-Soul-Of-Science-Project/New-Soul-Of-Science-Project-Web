@@ -896,7 +896,7 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Die vorm Operator stehende Zahl ist niemals Teil des Produkts, da die Menge,'."\n".
-                      'die eine Ordinalzahl repräsentiert, nicht selber in der Menge enthalten ist.'."\n".
+                      'die eine Ordinalzahl repräsentiert, nicht selber in ihrer Menge enthalten ist.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Setzen wir diese Reihe für alle natürlichen Zahlen bis ins Unendliche zu \\latexmath{ \omega } fort, so ergibt sich:'."\n".
@@ -934,10 +934,10 @@
                     'In den obigen endlichen Beispielen zur Mengen-Primfakultät handelt es sich ja um Mengen \\latexmath{ \mathbb{T} = n }, mit \\latexmath{ n \in \mathbb{N} },'."\n".
                     'deren Elemente endliche natürliche Zahlen sind, von der Null bis zu einer endlichen größten \\latexmath{ n - 1 }.'."\n",
                       'Aus einer neuen Perspektive auf den ›Satz des Euklid‹ stellen wir fest, dass \\latexmath{ n\overline{\#} } uns ein Produkt'."\n".
-                    'aller Primzahlen liefert, das die Primfaktoren der Primfaktorzerlegungen aller Elemente der Menge \\latexmath{ n } enthält.'."\n".
-                    'Das muss so sein, denn in dem Moment, wo \\latexmath{ n = p_i + 1 } ist, mit \\latexmath{ p_i \in \mathbb{P} }, kommt zur Menge \\latexmath{ n },'."\n".
+                    'aller Primzahlen liefert, das die Primfaktoren der Primfaktorzerlegungen aller Elemente \\latexmath{ x } der Menge \\latexmath{ n } enthält.'."\n".
+                    'Das muss so sein, denn in dem Moment, wo \\latexmath{ n = p_i + 1 } ist, mit \\latexmath{ p_i \in \mathbb{P} }, kommt zur Menge \\latexmath{ n }'."\n".
                     'die Primzahl \\latexmath{ p_i } hinzu und damit auch zu ihrer Mengen-Primfakultät \\latexmath{ n\overline{\#} }.'."\n".
-                    'Die hinzu gekommene Primzahl kann nicht Teil der Primfaktorzerlegung einer der kleineren Zahlen \\latexmath{ n < p_i } sein.'."\n".
+                    'Die hinzu gekommene Primzahl kann aber nicht Teil der Primfaktorzerlegung einer der kleineren Zahlen \\latexmath{ x < p_i } sein.'."\n".
                     'Denn diese haben als Primfaktoren nur kleinere Primzahlen \\term{ p_{i–d} }, mit \\latexmath{ 1 \leq d < i },'."\n".
                     'oder sind selber eine Primzahl.'."\n".
                     ''))),
@@ -949,9 +949,19 @@
                     'dann basiert das Raster auf allen Primzahlen, die Elemente der Mengenrepräsentation dieser natürlichen Zahl \\latexmath{ x } sind.'."\n".
                     'In diesem Fall sind die Primzahltürme in \\latexmath{ x\overline{\#} } aber von minimaler Potenz, also so klein, wie möglich.'."\n".
                     'Damit wird das erzeugte Raster dann so fein wie möglich.'."\n",
+                      'Und hierin spiegelt sich auch noch eine Erkenntnis des ›Satz des Euklid‹ wider, die auf den ersten Blick kaum auffällt:'."\n".
+                    'Es ist in der dortigen Primfakultät nämlich egal, in welcher Potenz eine Primzahl vorliegt.'."\n".
+                    'Addieren wir Eins oder ziehen Eins ab, ist das Ergebnis nicht durch alle enthaltenen Primzahlen teilbar,'."\n".
+                    'auch, wenn die Potenz der Primzahl größer ist.'."\n".
+                    'Es kann nämlich nicht zwischen den gleichen Primzahlen im Produkt unterschieden werden.'."\n".
+                    'Einzig dann funktioniert der Beweis nicht, wenn eine Primzahl fehlt.'."\n".
+                    'Das bedeutet, die minimale Potenz von Eins jeder Primzahl reicht aus, um die Endlosigkeit'."\n".
+                    'der Primzahlen und damit aller natürlichen Zahlen zu beweisen.'."\n".
+                    'Diese Erkenntnis ist für das Verständnis des Beweises wichtig und macht deutlich,'."\n".
+                    'warum das oben fragliche Gleichheitszeichen nachfolgend mit einem Ausrufezeichen zu versehen ist.'."\n",
                       'Die Funktion \\latexmath{ pr\!*( x\overline{\#} *) } liefert also ein lückenloses Primturm-Potenzraster \\latexmath{ lpr\!*( x\overline{\#} *) }'."\n".
-                    'bis ausschließlich der Primzahl, die größer als die letzte Zahl der Menge \\latexmath{ x } ist.'."\n",
-                      'Zusammen mit der vorhergehenden Analyse lässt sich daraus eine Anleitung erkennen, wie wir aus einer'."\n".
+                    'bis ausschließlich der Primzahl, die größer als die letzte Zahl der Menge \\latexmath{ x } ist.'."\n".
+                    'Zusammen mit der vorhergehenden Analyse lässt sich daraus eine Anleitung erkennen, wie wir aus einer'."\n".
                     'endlichen natürlichen Zahl, die keine Primzahl ist, die nächst größere Primzahl, mittels Algebra und Mengenlehre, berechnen können.'."\n",
                       'Und damit erhalten wir auch eine Anleitung, aus einer gegebenen Primzahl dann immer wieder die nächste zu berechnen.'."\n".
                     'Denn das Primturm-Potenzraster der Mengen-Primfakultäten einer Primzahl \\latexmath{ pr\!*( p_i\overline{\#} *) }'."\n".
