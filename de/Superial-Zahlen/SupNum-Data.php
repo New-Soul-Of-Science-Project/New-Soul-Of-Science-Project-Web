@@ -212,14 +212,15 @@
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid' => array( headline_text => 'Satz des Euklid'/* , headline_text_short => 'XXX'*/),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n' => array( headline_text => 'SN.PP.34'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.84'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.127'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-ist-lpr-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.131'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-MengenPrimfakultaet-omega-ist-omega' => array( headline_text => 'SN.PP.159'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.166'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega' => array( headline_text => 'SN.PP.167'),
-
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beispiele-Primturmzerlegung-PrimturmPotenzraster+lueckenloses' => array( headline_text => 'Beispiele zur Primturmzerlegung, zum Primturm-Potenzraster und zum lückenlosen Primturm-Potenzraster'/* , headline_text_short => 'XXX'*/),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.89'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-gleich-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.131'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.132'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-ist-lpr-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.136'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Definition-der-Menge-P-durch-p-Zaehlen' => array( headline_text => 'SN.PP.137'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-MengenPrimfakultaet-omega-ist-omega' => array( headline_text => 'SN.PP.164'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.171'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega' => array( headline_text => 'SN.PP.172'),
 
         'OM:SupNum:Primzahlprodukt-Vermutung:Folgen' => array( headline_text => 'Folgen, wenn wahr'/* , headline_text_short => 'XXX'*/),
       ),
