@@ -2380,8 +2380,7 @@
     To_f_headline_add_hides_begin( $headline_text, $headline_text_short, $headline_name, $offset, $display);
     
     if (0 < strlen( $headline_addon))
-      //%! echo $offset.'  <h3><span style="line-height: 1.4em; color: #A0A0A0;">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $headline_addon)).'</span></h3>'."\n";
-      echo $offset.'  <h3><span style="line-height: 1.4em; color: '.(To_f_Color('*SectionHeadlineAddon', false)).';">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $headline_addon)).'</span></h3>'."\n";
+      echo $offset.'  <h3 class="tools-class-text"><span style="line-height: 1.4em; color: '.(To_f_Color('*SectionHeadlineAddon', false)).';">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $headline_addon)).'</span></h3>'."\n";
       
     if (isset( $Paragraph_fn, $paragraph_list))
     {
@@ -2397,8 +2396,7 @@
   {
     To_f_headline_add_hides_begin( $headline_text, $headline_text_short, $headline_name, $offset, $display);
     
-    //%! echo $offset.'  <h3><span style="line-height: 1.4em; color: #A0A0A0;">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $headline_addon)).'</span></h3>'."\n";
-    echo $offset.'  <h3><span style="line-height: 1.4em; color: '.(To_f_Color('*SectionHeadlineAddon', false)).';">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $headline_addon)).'</span></h3>'."\n";
+    echo $offset.'  <h3 class="tools-class-text"><span style="line-height: 1.4em; color: '.(To_f_Color('*SectionHeadlineAddon', false)).';">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $headline_addon)).'</span></h3>'."\n";
     To_f_Paragraph_list( $replace_ary, $replace_preg_ary, '  '.$offset, $paragraph_list);
     
     To_f_headline_add_hides_end( $offset, $display);
@@ -2584,8 +2582,7 @@
     if (0 < strlen( $headline_text))
     {
       echo '      <p>'."\n";
-      //%!echo '        <h2><a name="'.$headline_name.'"></a>'.$headline_text.'</h2>'."\n";
-      echo '        <a name="'.$headline_name.'"></a><h2>'.$headline_text.'</h2>'."\n";
+      echo '        <a name="'.$headline_name.'"></a><h2 class="tools-class-text">'.$headline_text.'</h2>'."\n";
       echo '      </p>'."\n";
     }
     else
@@ -2637,8 +2634,7 @@
       echo ';">'."\n";
       $To_g_elements_hides_ary[noContentAry][$To_g_headline_last_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
       $local_elements_hides_ele_num++;
-      //%!echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <h2 style="margin: 0; margin-left: 0px; padding: 0;"><a href="javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="einblenden">'.$headline_text.'</a></h2> </td>'."\n";
-      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="einblenden"><h2 style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
+      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="einblenden"><h2 class="tools-class-text" style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
       echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Down.jpg" width="32" height="12" border="0" alt="einblenden" title="einblenden" align="right" style="margin: 0; padding: 0;"> </a> </td>'."\n";
       echo $offset.'  </tr>'."\n";
       
@@ -2652,9 +2648,7 @@
       $To_g_elements_hides_ary[contentAry][$To_g_headline_last_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
       $local_elements_hides_ele_num++;
       // #!: The anchor was moved into 'hideContent' "h2" to make the headline hide visible if jumped to.
-      //%!echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <h2 style="margin: 0; margin-left: 0px; padding: 0;"><a name="'.$headline_name.'"></a><a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="ausblenden">'.$headline_text.'</a></h2> </td>'."\n";
-      //%!echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a name="'.$headline_name.'"></a><a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="ausblenden"><h2 style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
-      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a name="'.$headline_name.'" href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="ausblenden"><h2 style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
+      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a name="'.$headline_name.'" href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="ausblenden"><h2 class="tools-class-text" style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
       echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Up.jpg" width="32" height="12" border="0" alt="ausblenden" title="ausblenden" align="right" style="margin-top: 0; padding: 0;"> </a> </td>'."\n";
       echo $offset.'  </tr>'."\n";
       

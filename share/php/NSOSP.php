@@ -3609,9 +3609,9 @@
     echo $offset.''."\n";
     echo $offset.''."\n";
     echo $offset.'    <p>'."\n";
-    echo $offset.'      <h1>'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_h1])).'</h1>'."\n";
+    echo $offset.'      <h1 class="tools-class-text">'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_h1])).'</h1>'."\n";
     if (array_key_exists( text_undertitel_h2, $Glo_g_Site_ary[$Glo_g_Site_activ]) && (0 < strlen( $Glo_g_Site_ary[$Glo_g_Site_activ][text_undertitel_h2])))
-      echo $offset.'      <h2 style="color: '.(To_f_Color('*SiteUndertitleH2', false)).'">'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_undertitel_h2])).'</h2>'."\n";
+      echo $offset.'      <h2 class="tools-class-text" style="color: '.(To_f_Color('*SiteUndertitleH2', false)).'">'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_undertitel_h2])).'</h2>'."\n";
     echo $offset.'    </p>'."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.''."\n";
@@ -3619,7 +3619,7 @@
     if (array_key_exists( text_titel_discr_h3, $Glo_g_Site_ary[$Glo_g_Site_activ]) && (0 < strlen( $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_discr_h3])))
     {
       echo $offset.'    <p>'."\n";
-      echo $offset.'      <h3 style="line-height: 1.4em;">'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_discr_h3])).'</h3>'."\n";
+      echo $offset.'      <h3 class="tools-class-text" style="line-height: 1.4em;">'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_discr_h3])).'</h3>'."\n";
       echo $offset.'    </p>'."\n";
       echo $offset.'    <br>'."\n";
       echo $offset.''."\n";
