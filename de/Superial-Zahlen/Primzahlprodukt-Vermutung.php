@@ -1846,7 +1846,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:ExperimentelleGedankenZuAnderenBeweiswegen'),
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen'),
                     )),
               )
           ); ?>
