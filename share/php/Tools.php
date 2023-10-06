@@ -1025,7 +1025,7 @@
     // #?: one required and 1 optional parameter defined?
     if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 1)) {
       
-      return '\\jump['.($value[0][0]).']'.(((1 < count( $value[1])) && (0 < strlen( $value[1][0]))) ? '['.($value[1][0]).']' : '').'{}{\\class{tools-class-url}{'.($value[0][0]).'}}';
+      return To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '\\jump['.($value[0][0]).']'.(((1 < count( $value[1])) && (0 < strlen( $value[1][0]))) ? '['.($value[1][0]).']' : '').'{}{\\class{tools-class-url}{'.($value[0][0]).'}}');
       
     } else {
       
