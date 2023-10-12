@@ -1401,6 +1401,16 @@
                         '\\\\'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
+                        'Mathematik beginnt dort, \\\\ '."\n".
+                        'wo wir das Eine vom Anderen unterscheiden können. \\\\ '."\n".
+                        '\\small{\\color{*TitleAdd}{Ab da zählt alles.}}'."\n".
+                        ''),
+                        addtext => '')),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                        '\\\\'."\n"))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
                         '\\small{\\color{*TitleAdd}{Mathematik und physikalische Realität können niemals das Gleiche sein:}} \\\\ '."\n".
                         'In der Mathematik sind das strukturelle Abbild eines Symbols und seine Eigenschaften getrennte Dinge,'."\n".
                         //'die wir per Assoziation einander zuordnen. \\\\ '."\n".
