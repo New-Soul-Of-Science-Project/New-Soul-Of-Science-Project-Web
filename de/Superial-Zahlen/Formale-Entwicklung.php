@@ -498,7 +498,7 @@
                                           label_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren', label_text => '\\name{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Zum Beispiel ist es im Besonderen bei der \\jump{OM:SupNum:Ableitungen-Integrale:Vortext:Integration}{Integration}'."\n".
+                    'Zum Beispiel ist es im Besonderen bei der \\jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integration}'."\n".
                     'notwendig die ganzen Superial-Zahlen \\latexmath{ \mathbb{S}_Z } eine Potenzebene ins superial kleine zu skalieren:'."\n".
                     ''))),
                   array( 'equations',
