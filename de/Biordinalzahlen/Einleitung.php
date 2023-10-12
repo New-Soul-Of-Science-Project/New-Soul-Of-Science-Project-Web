@@ -69,7 +69,8 @@
                       array( display => 'on',  latex => '{  \mathbb{N}  =  *\{ 0, 1, 2, 3, 4, 5, \cdots *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Deshalb soll gelten, dass die Null ein Element der natürlichen Zahlen ist, wie in den Peano-Axiomen\\footnote{\\const{NSOSP_g_footnote_text_PeanoAxiome}} zur Definition von \\term{\M(N)} gefordert:'."\n".
+                    'Deshalb soll gelten, dass die Null ein Element der natürlichen Zahlen ist, wie in den Peano-Axiomen\\footnote{\\const{NSOSP_g_footnote_text_PeanoAxiome}}'."\n".
+                    'zur Definition von \\latexmath{ \mathbb{N} } gefordert und wie für angeordnete Körper definiert\\footnote{\\const{NSOSP_g_footnote_text_NullIstTeilVonPositiv}}:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -858,7 +859,7 @@
                     'weil wir von einer Werte- und Zahlensymmetrie bei Null ausgehen.'."\n".
                     'Das wirklich \\term{–ω} die Summe aller endlichen ganzen Zahlen ist und ebenso auch \\term{2ω} die Anzahl'."\n".
                     'aller endlichen ganzen Zahlen, bestätigt sich durch die plausible Herleitung'."\n".
-                    'der \\jump{OM:SupNum:Ableitungen-Integrale:Vortext:Integration}{Integration} auf Basis der'."\n".
+                    'der \\jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integration} auf Basis der'."\n".
                     '\\jump{OM:SupNum:Home}{Superial-Zahlen},'."\n".
                     'wenn wir die \\jump{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins}{dabei auftretenden aktual unendlichen Summen genauer untersuchen}.'."\n",
                       'Der Mittelwert aller endlichen, ganzen Zahlen ergibt sich dann, wenn wir, wie üblich,'."\n".

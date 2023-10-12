@@ -18,6 +18,7 @@
               'wiki:Allklasse:2020',
               'wiki:Arithmetik:2015',
               'wiki:GaussscheSummenformel:2023',
+              'wiki:GeordneterKoerper:2022',
               'wiki:KoerperAlgebra:2023',
               'wiki:Ordinalzahl:2021',
               'wiki:PeanoAxiome:2021',
