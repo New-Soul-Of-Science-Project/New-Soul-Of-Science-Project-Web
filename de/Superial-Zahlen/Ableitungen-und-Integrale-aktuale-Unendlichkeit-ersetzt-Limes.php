@@ -114,8 +114,11 @@
                     'Die Definition der Ableitung muss folglich nicht zwingend als Division formuliert werden.'."\n",
                       'Durch die detaillierte Betrachtung mit aktual unendlichen Zahlen erschließt sich ein genaueres Verständnis.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:XXX', text =>
+                      
+                'Beispiele für Ableitungen', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Beispiele für Ableitungen} \\\\'."\n".
                     'Um besser zu verstehen, was genau vor sich geht, wollen wir uns zwei Beispiele betrachten:'."\n".
                     ''))),
 
@@ -159,8 +162,11 @@
                   array( 'text', array( text => array(
                     'Wir können hieran erkennen, dass die Vorgehensweise mit dem Limes Details der Vorgänge verbirgt.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:XXX', text =>
+                      
+                'Welche Funktion ist nach dieser Definition ihre eigene Ableitung?', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Welche Funktion ist nach dieser Definition ihre eigene Ableitung?} \\\\'."\n".
                     'Wir können tatsächlich recht einfach erkennen, welche Funktion ihrer eigenen Ableitung gleich ist.'."\n".
                     'Die Superial-Zahlen führen uns hier zu einer erstaunlichen Entdeckung.'."\n".
                     ''))),
@@ -235,9 +241,11 @@
                     'Dieses Ergebnis ist in meinen Augen ein ganz bemerkenswertes:'."\n".
                     'Denn wir erhalten eine weitere Definition der natürlichen Exponentialfunktion \\latexmath{ e^x }.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:XXX', text =>
+                      
+                'Eine neue Definition der \\latexmath{ e }-Funktion', subline =>
+                  'Zusammenhänge zwischen der \\latexmath{ e }-Funktion und dem Pascalschen Dreieck')),
                   array( 'text', array( text => array(
-                  '\\condb{Eine neue Definition der \\latexmath{ e }-Funktion} \\\\'."\n".
-                  '\\cond{Zusammenhänge zwischen der \\latexmath{ e }-Funktion und dem Pascalschen Dreieck} \\\\'."\n".
                     'Wir wissen aus der Mathematik der Differentialrechnung, dass die \\latexmath{ e }-Funktion'."\n".
                     'oder die Exponentialfunktion zur Basis \\latexmath{ e }, der Eulerschen Zahl\\color{*Bearb}{(Verweis)},'."\n".
                     'ihre eigene Ableitung ist.\\color{*Bearb}{(Verweis)}'."\n",
@@ -464,8 +472,11 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:XXX', text =>
+                      
+                'Integration und ganze Superial-Zahlen', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Integration und ganze Superial-Zahlen} \\\\'."\n".
                     'Den ganzen Superial-Zahlen begegnen wir, wenn wir uns mit der Umkehrung der oben definierten Ableitung beschäftigen, der Integration:'."\n",
                       'Bei der Integration addieren wir nämlich all die unendlich vielen und superial kleinen Differenzen des Abstands \\term{s^{-1}} der Ableitung als'."\n".
                     'superial kleine, feine oder schmale Streifen einer Fläche auf.'."\n".
