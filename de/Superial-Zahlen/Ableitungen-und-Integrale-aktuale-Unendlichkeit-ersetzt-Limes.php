@@ -383,10 +383,10 @@
                     'Dieses Ergebnis ist in meinen Augen ein ganz bemerkenswertes:'."\n".
                     'Denn wir erhalten eine weitere Definition der natürlichen Exponentialfunktion \\latexmath{ e^x }.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:XXX', text =>
                       
                 'Eine neue Definition der \\latexmath{ e }-Funktion', subline =>
-                  'Zusammenhänge zwischen der \\latexmath{ e }-Funktion und dem Pascalschen Dreieck')),
+                  '')),
                   array( 'text', array( text => array(
                     'Wir wissen aus der Mathematik der Differentialrechnung, dass die \\latexmath{ e }-Funktion'."\n".
                     'oder die Exponentialfunktion zur Basis \\latexmath{ e }, der Eulerschen Zahl\\color{*Bearb}{(Verweis)},'."\n".
@@ -529,6 +529,10 @@
                     ''))),
                     ))),
 
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:XXX', text =>
+                      
+                'Die \\latexmath{ e }-Funktion und das Pascalsche Dreieck', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     'Berechnen wir nun spaßeshalber die Funktionswerte im infinitesimalen Bereich, dann erkennen wir das Pascalsche Dreieck:'."\n".
                     ''))),
@@ -548,14 +552,162 @@
                     'So bekommen wir einen vom Aussehen her vielleicht etwas unerwarteten Einblick in die'."\n".
                     'infinitesimale Feinstruktur der \\latexmath{ e }-Funktion und ihren Zusammenhang mit den Binomischen Formeln'."\n".
                     'und dem Pascalschen Dreieck.'."\n",
-                      'Beim Übergang zum endlichen Exponenten Eins finden offensichtlich Überträge auf höhere Stellen'."\n".
-                    'des superialen Stellenwertsystems statt:'."\n".
+                      'Die Koeffizienten des Pascalschen Dreiecks sind die Binomialkoeffizienten\\color{*Bearb}{(Verweis)},'."\n".
+                    'die wir einmal beispielhaft einsetzen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  e_{s}^{0}  =  *( \begin{array}{llll} 0 \\\ 0 \end{array} *)  }'),
+                      array( display => 'on',  latex => '{  e_{s}^{․\,〈1〉}  =  *〈 *( \begin{array}{llll} 1 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 1 \\\ 1 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  e_{s}^{․\,〈2〉}  =  *〈 *( \begin{array}{llll} 2 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 2 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 2 \\\ 2 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  e_{s}^{․\,〈3〉}  =  *〈 *( \begin{array}{llll} 3 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 3 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 3 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  e_{s}^{․\,〈4〉}  =  *〈 *( \begin{array}{llll} 4 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 4 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 3 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 4 \end{array} *) *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wir können dies allgemeiner mit einer Formel für Binomialkoeffizienten mit dem \\italic{über}-Operator\\color{*Bearb}{(Verweis)}'."\n".
+                    'beschreiben:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  e_{s}^{․\,〈n〉}  =  \sum_{ \forall k \in [0, n]_{\mathbb{N}} } *( \begin{array}{llll} n \\\ k \end{array} *) \cdot s^{-k}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Nachfolgend beleuchten wir die Berechnung der \\jump{OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:SumBinominalkoe}{Summen der einzelnen Spalten der Binominalkoeffizienten}'."\n".
+                    'in einer Nebenrechnung.'."\n".
+                    ''))),
+
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:SumBinominalkoe',
+                Title => 'Die Summen der einzelnen Spalten der Binominalkoeffizienten …',
+                TitleVis => 'Die Summen der einzelnen Spalten der Binominalkoeffizienten:', ParagraphList => array(
+                  /* array( 'text', array( text => array(
+                    '!!! Hier fehlt noch der Fall für die Nullergebnisse, siehe alte Vorlage !!!'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \begin{array}{llll} n \\\ k \end{array} *)  ?=  \frac{ 1 }{ k! } \cdot \sum_{ \forall c \in [0, k]_{\mathbb{N}} } *( n - c *)  }'),
+                      array( display => 'on',  latex => '{  *( \begin{array}{llll} 0 \\\ 0 \end{array} *)  =  1  =  1 ( ! )  }'),
+                      array( display => 'on',  latex => '{  *( \begin{array}{llll} 1 \\\ 0 \end{array} *)  =  1  =  1 ( ! )  }'),
+                      array( display => 'on',  latex => '{  *( \begin{array}{llll} 1 \\\ 1 \end{array} *)  =  1  =  \frac{ 1 }{ 1! } \cdot ( (1 - 0) + (1 - 1) )  }'),
+                      array( display => 'on',  latex => '{  *( \begin{array}{llll} 2 \\\ 0 \end{array} *)  =  1  =  1 ( ! )  }'),
+                      array( display => 'on',  latex => '{  *( \begin{array}{llll} 2 \\\ 1 \end{array} *)  =  1  =  \frac{ 1 }{ 2! } \cdot ( (2 - 0) + (2 - 1) )  }'),
+                    ))), */
+                  array( 'text', array( text => array(
+                    'In dieser Rechnung wollen wir die Summen der Spalten der Binomialkoeffizienten des Pascalschen Dreiecks'."\n".
+                    'berechnen.'."\n".
+                    'Dazu schauen wir uns an, wie sich die Werte der Binomialkoeffizienten aus der vorherigen Spalte ergeben.'."\n",
+                      'Als Ansatz formulieren wir die altbekannte Regel etwas um, wie sich ein Binomialkoeffizient aus'."\n".
+                    'der über ihm gelegenen Zeile als Summe ergibt:\\color{*Bearb}{(Verweis)}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \begin{array}{llll} n + 1 \\\ k + 1 \end{array} *)  =  *( \begin{array}{llll} n \\\ k \end{array} *) + *( \begin{array}{llll} n \\\ k + 1 \end{array} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n + 1 \\\ k \end{array} *)  =  *( \begin{array}{llll} n \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n \\\ k \end{array} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ k \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 1 \\\ k \end{array} *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Diese Formel können wir durch Rekursion weiter entwickeln'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ k \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ k - 1 \end{array} *) + *( *( \begin{array}{llll} n - 2 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ k \end{array} *) *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ k \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ k \end{array} *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und entdecken, dass wir dies so lange fortführen können, bis wir bei einer Zeile \\latexmath{ n } landen,'."\n".
+                    'in der der letzte Summand zu Null wird und ab da verschwindet.'."\n",
+                      'Der erste Summand der Null ist, liegt dann bei Zeile \\latexmath{ k - 1 } und Spalte \\latexmath{ k }, wie wir sehen,'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ k \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ k - 1 \end{array} *) + \cdots  + *( \begin{array}{llll} k - 1 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} k - 1 \\\ k \end{array} *)  \;\;,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'was wir beispielhaft überprüfen mit'."\n".
+                    'in der der letzte Summand zu Null wird und ab da verschwindet.'."\n",
+                      'Der erste Summand der Null ist, liegt dann bei Zeile \\latexmath{ k - 1 } und Spalte \\latexmath{ k }, wie wir sehen,'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 2 \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ 1 \end{array} *) + \cdots  + *( \begin{array}{llll} 1 \\\ 1 \end{array} *) + *( \begin{array}{llll} 1 \\\ 2 \end{array} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ 2 \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ 1 \end{array} *) + \cdots  + *( \begin{array}{llll} 1 \\\ 1 \end{array} *) + 0  \;\;,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und daher bricht die Summe dann ab, sodass wir sie folgendermaßen ganz allgemein mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ k \end{array} *)  =  \sum_{ \forall m \in [k - 1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ k - 1 \end{array} *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ausdrücken können.'."\n",
+                      'Die Summe der \\latexmath{ 0 }-ten Spalte ist schlichtweg:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 0 \end{array} *)  =  1  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{(Hier können wir Ähnlichkeiten mit dem \\latexmath{ -1 }-Operator der Operialtheorie erahnen.)} \\\\'."\n".
+                    'Dies ist die Konstante \\latexmath{ 1 }.'."\n",
+                      'Die Summe der \\latexmath{ 1 }-ten Spalte ist dann das Zählen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 1 \end{array} *)  =  \sum_{ \forall m \in [0, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 0 \end{array} *)  }'),
+                      array( display => 'on',  latex => '{  \sum_{ \forall m \in [0, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 0 \end{array} *)  =  1 + 1 + 1 + 1 + 1 + \cdots + (n - 1)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [0, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 0 \end{array} *)  =  n  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{(Hier können wir Ähnlichkeiten mit dem \\latexmath{ 0 }-Operator, dem Zähloperator, der Operialtheorie sehen.)} \\\\'."\n".
+                    'Dies ist das Zählen bis zur Zeilennummer.'."\n",
+                      'Die Summe der \\latexmath{ 2 }-ten Spalte entspricht also der Gaußschen Summenformel\\footnote{\\const{BiOrd_g_footnote_text_GaussscheSummenformel}}'."\n".
+                    'und diese können wir geschlossen ausdrücken mit:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 2 \end{array} *)  =  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  }'),
+                      array( display => 'on',  latex => '{  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  1 + 2 + 3 + 4 + 5 + \cdots + (n - 1)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  \frac{ (m - 1)^{2} + (m - 1) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  \frac{ (m^{2} - 2 \cdot m + 1) + (m - 1) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  \frac{ m^{2} - m }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dies entspricht der modifizierten Gaußschen Summenformel, die wir schon aus Formel \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n}.'."\n",
+                      'Die Summe der \\latexmath{ 3 }-ten Spalte entspricht also der Summe der ersten XXX Quadratzahlen'."\n".
+                    'und diese können wir geschlossen ausdrücken mit:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 3 \end{array} *)  =  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  }'),
+                      array( display => 'on',  latex => '{  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  1 + 3 + 6 + 10 + 15 + \cdots + (n - 2)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  \frac{ (m - 1)^{2} + (m - 1) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  \frac{ (m^{2} - 2 \cdot m + 1) + (m - 1) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  \frac{ m^{2} - m }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dies entspricht der modifizierten Gaußschen Summenformel, die wir schon aus Formel \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n}.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                    ))),
+
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:XXX', text =>
+                      
+                'Wie berechnet sich daraus \\latexmath{ e_s }', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Beim Übergang zum endlichen Exponenten Eins finden offensichtlich Überträge auf höhere Stellen'."\n".
+                    'des \\jump{*SupNum:Stellenwertsystem-Schreibweise}{superialen Stellenwertsystems} statt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  e_{s}  =  e_{s}^{1}  =  e_{s}^{․\,〈s〉}  =  〈1〉․〈1〉^{s}  }'),
-                      array( display => 'on',  latex => '{  e_{s}  =  〈e〉․〈s + X〉〈X〉〈X〉\cdots〈X〉〈s〉〈1〉_{-s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  e_{s}  =  〈1 + 1 + X〉․〈0 + X〉〈X〉〈X〉\cdots〈X + 1〉〈0〉〈1〉_{-s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  e_{s}  =  *〈 *( \begin{array}{llll} s \\\ 0 \end{array} *) *〉․*〈 *( \begin{array}{llll} s \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} s \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} s \\\ 3 \end{array} *) *〉\cdots *〈 *( \begin{array}{llll} s \\\ s - 2 \end{array} *) *〉*〈 *( \begin{array}{llll} s \\\ s - 1 \end{array} *) *〉*〈 *( \begin{array}{llll} s \\\ s \end{array} *) *〉_{-s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  e_{s}  =  *〈 1 *〉․*〈 s *〉*〈 \frac{ s^{2} - s }{ 2 } *〉*〈 \cdots *〉\cdots *〈 \frac{ s^{2} - s }{ 2 } *〉*〈 s *〉*〈 1 *〉_{-s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  e_{s}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \cdots *〉․\;*〈 \frac{ 1 }{ 2 } + \cdots *〉*〈 \cdots *〉*〈 \cdots *〉\cdots *〈 \cdots + \frac{ 1^{2} }{ 2 } *〉*〈 \cdots + \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-s}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -567,8 +719,11 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:XXX', text =>
+                      
+                'Zusammenhang mit \\latexmath{ \pi }', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Zusammenhang mit \\latexmath{ \pi }} \\\\'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
