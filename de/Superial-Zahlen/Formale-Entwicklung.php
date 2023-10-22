@@ -458,7 +458,7 @@
                     'Das ist sehr bemerkenswert und ermöglicht ein neues und besonderes Zahlenwertsystem auf Basis der superialen Basis \\latexmath{ s }:'."\n",
                       'Jede Ziffer dieses Zahlenwertsystems auf Basis \\latexmath{ s } kann eine Zahl sein; in jedem Fall eine rationale, möglicherweise auch eine überrationale (siehe \\jumpname{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}).'."\n".
                     'Sehr fraglich ist für mich, ob es sinnvollerweise wirklich auch jede reelle Zahl sein kann,'."\n".
-                    'denn ich vermute, dass transzendente Zahlen, wie die Eulersche Zahl \\latexmath{ e } oder die Kreiszahl \\latexmath{ π },'."\n".
+                    'denn ich vermute, dass transzendente Zahlen, wie die Eulersche Zahl \\latexmath{ \mathrm{e} } oder die Kreiszahl \\latexmath{ π },'."\n".
                     'als Koeffizienten in jedem Fall aus dem sinnvollen Rahmen fallen.'."\n",
                       'Nachfolgend ein paar Beispiele in einer neuen Notation, die jede Ziffer dieses Zahlensystems in spitzen Klammern notiert:'."\n"))),
                   array( 'equations',
