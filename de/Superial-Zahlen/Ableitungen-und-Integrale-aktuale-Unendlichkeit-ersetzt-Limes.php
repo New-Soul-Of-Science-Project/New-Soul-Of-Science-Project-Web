@@ -302,16 +302,6 @@
                     'Wir können tatsächlich recht einfach erkennen, welche Funktion ihrer eigenen Ableitung gleich ist.'."\n".
                     'Die Superial-Zahlen führen uns hier zu einer erstaunlichen Entdeckung.'."\n".
                     ''))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
@@ -425,9 +415,11 @@
                     'Wir sehen, dass wir die \\latexmath{ \mathrm{e} }-Funktion ganz fundamental mit \\latexmath{ \mathrm{\omega} } durch die vollständige Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
                     'definieren können.'."\n",
                       'Und im Hinblick auf den Beweis der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung},'."\n".
-                    'der die vollständige Induktion auf Grundlage des unendlichen Produkts aller endlichen Primzahlen definiert,'."\n".
+                    'der die vollständige Induktion auf Grundlage des unendlichen Produkts aller endlichen Primzahlen ausdrückt,'."\n".
                     'führen wir die \\latexmath{ \mathrm{e} }-Funktion auf die Primzahlen zurück.'."\n",
-                      'Dies ist in meinen Augen etwas sehr besonderes und wesentlich konkreter und damit mehr als Limes-Definition.'."\n".
+                      'Dies ist in meinen Augen etwas sehr besonderes und wesentlich konkreter und hat damit einen gewissen Mehrwert'."\n".
+                    'gegenüber der Limes-Definition, wie wir gleich sehen werden.'."\n".
+                    'Dadurch wird transparent, wie sich die \\latexmath{ \mathrm{e} }-Funktion und damit die Zahl \\latexmath{ \mathrm{e} } im und aus dem Unendlichen ergibt.'."\n".
                     ''))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielhafteRechnungMit-s-2',
