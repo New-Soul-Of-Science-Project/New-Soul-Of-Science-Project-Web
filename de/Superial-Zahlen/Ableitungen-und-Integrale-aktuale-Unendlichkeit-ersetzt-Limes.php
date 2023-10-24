@@ -404,15 +404,15 @@
                     'Symbolen beschreiben.'."\n".
                     'Und werden dies gleich nutzen, um die Zahl \\latexmath{ \e } auch im unendlich Kleinen genau zu berechnen.'."\n",
                       'Drücken wir die \\latexmath{ \e }-Funktion explizit mit \\latexmath{ \s } oder noch differenzierter mit'."\n".
-                    '\\latexmath{ \mathrm{\omega} } aus, erhalten wir:'."\n".
+                    '\\latexmath{ \omega } aus, erhalten wir:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  *( 1 + \s^{-1} *)^{x \cdot \s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  *( 1 + \mathrm{\omega}^{-\mathrm{\omega}} *)^{x \cdot \mathrm{\omega}^{\mathrm{\omega}}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  *( 1 + \frac{ 1 }{ \s } *)^{x \cdot \s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  *( 1 + \frac{ 1 }{ \omega^{\omega} } *)^{x \cdot \omega^{\omega}}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir sehen, dass wir die \\latexmath{ \e }-Funktion ganz fundamental mit \\latexmath{ \mathrm{\omega} } durch die vollständige Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    'Wir sehen, dass wir die \\latexmath{ \e }-Funktion ganz fundamental mit \\latexmath{ \omega } durch die vollständige Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
                     'definieren können.'."\n",
                       'Und im Hinblick auf den Beweis der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung},'."\n".
                     'der die vollständige Induktion auf Grundlage des unendlichen Produkts aller endlichen Primzahlen ausdrückt,'."\n".
@@ -424,10 +424,10 @@
                                           label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \omega  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
                                           label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \\\ \qquad\;\, *( 1 + (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{- 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots} *)^{x \cdot (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \\\ \qquad\;\, *( 1 + \frac{ 1 }{ (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots} } *)^{x \cdot (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots}}  }'),
                     ))),
                   array( 'text', array( text => array(
-                      'Dies ist in meinen Augen etwas sehr besonderes und ganz konkret und hat damit einen großen Mehrwert'."\n".
+                    'Dies ist in meinen Augen etwas sehr besonderes und ganz konkret und hat damit einen großen Mehrwert'."\n".
                     'gegenüber der Limes-Definition, zusätzlich zum Perspektivwechsel, wie wir gleich sehen werden.'."\n".
                     'Dadurch wird transparent, wie sich die \\latexmath{ \e }-Funktion und damit die Zahl \\latexmath{ \e } im und aus dem Unendlichen ergibt.'."\n",
                     ''))),
