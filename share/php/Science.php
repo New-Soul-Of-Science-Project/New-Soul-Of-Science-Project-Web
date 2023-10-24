@@ -3,11 +3,12 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 24.10.2023, 08:00h
+  // #: Stand: 24.10.2023, 17:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
   //           20231024:  +:  "MathJax":  Add Macro "e" for "\e" generates a non italic "e" in formulas for the Euler number.
+  //                      +:  "MathJax":  Add Macro "s" for "\s" generates a non italic "s" in formulas for the superial unit.
   //           20230901:  +:  "Sc_f_equation_list":  Add horizontal scrollable equations with class 'content-horizontal-scrollable'.
   //           20230803:  +:  "$Sc_g_equation_replace_ary":  '  \land  ' -> '\;\;\;\land\;\;\;' is new.
   //           20230802:  +:  "$Sc_g_equation_replace_ary":  '  \lor  ' -> '\;\;\;\lor\;\;\;', '  \Leftrightarrow  ' -> '\;\;\;\Leftrightarrow\;\;\;', '  \Rightarrow  ' -> '\;\;\;\Rightarrow\;\;\;' are new.
@@ -216,6 +217,7 @@
     echo '          extensions: ["color.js"],'."\n";
     echo '          Macros: {'."\n";
     echo '            e: "\\\\mathrm{e}",'."\n"; // Euler number
+    echo '            s: "\\\\mathrm{s}",'."\n"; // superial unit
     echo '            llangle: "\\\\langle \\\\mspace{-3.5mu} \\\\langle",'."\n";
     echo '            rrangle: "\\\\rangle \\\\mspace{-3.5mu} \\\\rangle",'."\n";
     echo '            lOpera: "\\\\langle \\\\mspace{-2.2mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-1.0mu}",'."\n";
