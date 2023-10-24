@@ -431,131 +431,6 @@
                     'gegenüber der Limes-Definition, zusätzlich zum Perspektivwechsel, wie wir gleich sehen werden.'."\n".
                     'Dadurch wird transparent, wie sich die \\latexmath{ \e }-Funktion und damit die Zahl \\latexmath{ \e } im und aus dem Unendlichen ergibt.'."\n",
                     ''))),
-
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielhafteRechnungMit-s-2',
-                Title => 'Beispielhafte Rechnung mit \\latexmath{ s^2 } …',
-                TitleVis => 'Beispielhafte Rechnung mit \\latexmath{ s^2 }:', ParagraphList => array(
-                  array( 'text', array( text => array(
-                    'Exemplarisch möchte ich einmal die \\latexmath{ \e }-Funktion anhand einer etwas variierten Ableitung'."\n".
-                    'definieren, um zu sehen, wie sich dies eventuell auf die Basis der sich so ergebenden \\latexmath{ \e }-Funktion'."\n".
-                    'auswirkt.'."\n".
-                    ''))),
-
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      '\\\\'."\n".
-                      'Die Definition unserer ursprünglichen Ableitung finden wir in Formel \\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}'."\n".
-                      'und ändern die dortige Differenz von \\latexmath{ s } auf \\latexmath{ s^2 }:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(〈x〉․〈0〉〈1〉) - f(x) }{ ․〈0〉〈1〉 }  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'Soll eine Funktion nun ihre eigene Ableitung sein, dann gilt:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f\'(x)  =  f(x)  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  \frac{ f(〈x〉․〈0〉〈1〉) - f(x) }{ ․〈0〉〈1〉 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot {․〈0〉〈1〉}  =  f(〈x〉․〈0〉〈1〉) - f(x)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot {․〈0〉〈1〉} + f(x)  =  f(〈x〉․〈0〉〈1〉)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot *( {․〈0〉〈1〉} + 1 *)  =  f(〈x〉․〈0〉〈1〉)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot 〈1〉․〈0〉〈1〉  =  f(〈x〉․〈0〉〈1〉)  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'Nach kurzer Überlegung können wir erraten, dass die Bedingung für unsere Funktion von einer'."\n".
-                      'Exponentialfunktion der Basis \\latexmath{ 〈1〉․〈0〉〈1〉 } erfüllt werden kann,'."\n".
-                      'denn der Parameter der Funktion soll sich um eine superial kleine Einheit erhöhen, wenn mit'."\n".
-                      '\\latexmath{ 〈1〉․〈0〉〈1〉 } multipliziert wird.'."\n".
-                      'Wir erraten also'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f(x)  =  〈1〉․〈0〉〈1〉^{〈x〉_{2}}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'und zeigen durch Einsetzen der letzten in die vorletzte Formel, dass unsere Vermutung'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  〈1〉․〈0〉〈1〉^{〈x〉_{2}} \cdot 〈1〉․〈0〉〈1〉  =  〈1〉․〈0〉〈1〉^{〈〈x〉․\,〈0〉〈1〉〉_{2}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈0〉〈1〉^{〈x〉_{2} + 1}  =  〈1〉․〈0〉〈1〉^{〈〈x〉․\,〈0〉〈1〉〉_{2}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈0〉〈1〉^{〈x〉〈0〉〈1〉.}  =  〈1〉․〈0〉〈1〉^{〈x〉〈0〉〈1〉․}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'richtig ist.'."\n".
-                      ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'Bei näherer Betrachtung können wir nun aber auch leicht sehen, dass es noch weitere Funktionen ähnlicher'."\n".
-                      'Art gibt, die dies auch erfüllen, nämlich für alle \\latexmath{ y }:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f_{y}(x)  =  〈1〉․〈0〉〈1〉^{〈x〉〈0〉〈y〉.}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'Daher legen wir zusätzlich fest, dass'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f_{y}(0)  =  1  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  y  =  0  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  〈1〉․〈0〉〈1〉^{〈x〉_{2}}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'sein soll und legen uns damit auf die zuerst gefundene Funktion fest, so wie es auch sonst üblich ist.'."\n",
-                        '\\\\ '."\n".
-                      ''))),
-
-                  array( 'text', array( text => array(
-                    'Auf die Weise ergibt sich für die \\latexmath{ \e }-Funktion:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{s^{2}}^{x}  =  〈1〉․〈0〉〈1〉^{〈x〉_{2}}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Nun stellt sich die Frage, ob die Basis unserer sich hierdurch ergebenden \\latexmath{ \e }-Funktion auch \\latexmath{ \e_s } ist,'."\n".
-                    'oder ein davon abweichendes \\latexmath{ \e_2 }.'."\n",
-                      'Berechnen wir nun spaßeshalber die Funktionswerte im infinitesimalen Bereich, dann erkennen wir das Pascalsche Dreieck:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈x〉_{-2}}  =  〈1〉․〈0〉〈1〉^{〈〈x〉_{-2}〉_{2}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s^{2}}^{〈x〉_{-2}}  =  〈1〉․〈0〉〈1〉^{x}  }'),
-                      array( display => 'on',  latex => '{  \e_{s^{2}}^{0}  =  1  }'),
-                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈1〉_{-2}}  =  〈1〉․〈0〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈2〉_{-2}}  =  〈1〉․〈0〉〈2〉〈0〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈3〉_{-2}}  =  〈1〉․〈0〉〈3〉〈0〉〈3〉〈0〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈4〉_{-2}}  =  〈1〉․〈0〉〈4〉〈0〉〈6〉〈0〉〈4〉〈0〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈5〉_{-2}}  =  〈1〉․〈0〉〈5〉〈0〉〈10〉〈0〉〈10〉〈0〉〈5〉〈0〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈6〉_{-2}}  =  〈1〉․〈0〉〈6〉〈0〉〈15〉〈0〉〈20〉〈0〉〈15〉〈0〉〈6〉〈0〉〈1〉  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'So bekommen wir einen vom Aussehen her vielleicht etwas unerwarteten Einblick in die'."\n".
-                    'infinitesimale Feinstruktur der \\latexmath{ \e }-Funktion und ihren Zusammenhang mit den Binomischen Formeln'."\n".
-                    'und dem Pascalschen Dreieck.'."\n",
-                      'Beim Übergang zum endlichen Exponenten Eins finden offensichtlich Überträge auf höhere Stellen'."\n".
-                    'des superialen Stellenwertsystems statt:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{s^{2}}  =  \e_{s^{2}}^{1}  =  \e_{s^{2}}^{〈s^{2}〉_{-2}}  =  〈1〉․〈0〉〈1〉^{s^{2}}  }'),
-                      array( display => 'on',  latex => '{  \e_{s^{2}}  =  〈e〉․〈0〉〈s^{2} + X〉〈0〉〈X〉〈0〉〈X〉\cdots〈X〉〈0〉〈s^{2}〉〈0〉〈1〉_{-s^{2}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s^{2}}  =  〈1 + 1 + X〉․〈0〉〈0 + X〉〈0〉〈X〉〈0〉〈X〉\cdots〈X + 1〉〈0〉〈0〉〈0〉〈1〉_{-s^{2}}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                    ))),
-
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:XXX', text =>
                       
                 'Die \\latexmath{ \e }-Funktion und das Pascalsche Dreieck', subline =>
@@ -781,6 +656,127 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
+
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielhafteRechnungMit-s-2',
+                Title => 'Beispielhafte Rechnung mit \\latexmath{ s^2 } …',
+                TitleVis => 'Beispielhafte Rechnung mit \\latexmath{ s^2 }:', ParagraphList => array(
+                  array( 'text', array( text => array(
+                    'Exemplarisch möchte ich einmal die \\latexmath{ \e }-Funktion anhand einer etwas variierten Ableitung'."\n".
+                    'definieren, um zu sehen, wie sich dies eventuell auf die Basis der sich so ergebenden \\latexmath{ \e }-Funktion'."\n".
+                    'auswirkt.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Die Definition unserer ursprünglichen Ableitung finden wir in Formel \\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}'."\n".
+                      'und ändern die dortige Differenz von \\latexmath{ s } auf \\latexmath{ s^2 }:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(〈x〉․〈0〉〈1〉) - f(x) }{ ․〈0〉〈1〉 }  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Soll eine Funktion nun ihre eigene Ableitung sein, dann gilt:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f\'(x)  =  f(x)  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  \frac{ f(〈x〉․〈0〉〈1〉) - f(x) }{ ․〈0〉〈1〉 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot {․〈0〉〈1〉}  =  f(〈x〉․〈0〉〈1〉) - f(x)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot {․〈0〉〈1〉} + f(x)  =  f(〈x〉․〈0〉〈1〉)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot *( {․〈0〉〈1〉} + 1 *)  =  f(〈x〉․〈0〉〈1〉)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot 〈1〉․〈0〉〈1〉  =  f(〈x〉․〈0〉〈1〉)  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Nach kurzer Überlegung können wir erraten, dass die Bedingung für unsere Funktion von einer'."\n".
+                      'Exponentialfunktion der Basis \\latexmath{ 〈1〉․〈0〉〈1〉 } erfüllt werden kann,'."\n".
+                      'denn der Parameter der Funktion soll sich um eine superial kleine Einheit erhöhen, wenn mit'."\n".
+                      '\\latexmath{ 〈1〉․〈0〉〈1〉 } multipliziert wird.'."\n".
+                      'Wir erraten also'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f(x)  =  〈1〉․〈0〉〈1〉^{〈x〉_{2}}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'und zeigen durch Einsetzen der letzten in die vorletzte Formel, dass unsere Vermutung'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  〈1〉․〈0〉〈1〉^{〈x〉_{2}} \cdot 〈1〉․〈0〉〈1〉  =  〈1〉․〈0〉〈1〉^{〈〈x〉․\,〈0〉〈1〉〉_{2}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈0〉〈1〉^{〈x〉_{2} + 1}  =  〈1〉․〈0〉〈1〉^{〈〈x〉․\,〈0〉〈1〉〉_{2}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈0〉〈1〉^{〈x〉〈0〉〈1〉.}  =  〈1〉․〈0〉〈1〉^{〈x〉〈0〉〈1〉․}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'richtig ist.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Bei näherer Betrachtung können wir nun aber auch leicht sehen, dass es noch weitere Funktionen ähnlicher'."\n".
+                      'Art gibt, die dies auch erfüllen, nämlich für alle \\latexmath{ y }:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f_{y}(x)  =  〈1〉․〈0〉〈1〉^{〈x〉〈0〉〈y〉.}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Daher legen wir zusätzlich fest, dass'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f_{y}(0)  =  1  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  y  =  0  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  〈1〉․〈0〉〈1〉^{〈x〉_{2}}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'sein soll und legen uns damit auf die zuerst gefundene Funktion fest, so wie es auch sonst üblich ist.'."\n",
+                        '\\\\ '."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Auf die Weise ergibt sich für die \\latexmath{ \e }-Funktion:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{s^{2}}^{x}  =  〈1〉․〈0〉〈1〉^{〈x〉_{2}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Nun stellt sich die Frage, ob die Basis unserer sich hierdurch ergebenden \\latexmath{ \e }-Funktion auch \\latexmath{ \e_s } ist,'."\n".
+                    'oder ein davon abweichendes \\latexmath{ \e_2 }.'."\n",
+                      'Berechnen wir nun spaßeshalber die Funktionswerte im infinitesimalen Bereich, dann erkennen wir das Pascalsche Dreieck:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈x〉_{-2}}  =  〈1〉․〈0〉〈1〉^{〈〈x〉_{-2}〉_{2}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s^{2}}^{〈x〉_{-2}}  =  〈1〉․〈0〉〈1〉^{x}  }'),
+                      array( display => 'on',  latex => '{  \e_{s^{2}}^{0}  =  1  }'),
+                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈1〉_{-2}}  =  〈1〉․〈0〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈2〉_{-2}}  =  〈1〉․〈0〉〈2〉〈0〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈3〉_{-2}}  =  〈1〉․〈0〉〈3〉〈0〉〈3〉〈0〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈4〉_{-2}}  =  〈1〉․〈0〉〈4〉〈0〉〈6〉〈0〉〈4〉〈0〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈5〉_{-2}}  =  〈1〉․〈0〉〈5〉〈0〉〈10〉〈0〉〈10〉〈0〉〈5〉〈0〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈6〉_{-2}}  =  〈1〉․〈0〉〈6〉〈0〉〈15〉〈0〉〈20〉〈0〉〈15〉〈0〉〈6〉〈0〉〈1〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'So bekommen wir einen vom Aussehen her vielleicht etwas unerwarteten Einblick in die'."\n".
+                    'infinitesimale Feinstruktur der \\latexmath{ \e }-Funktion und ihren Zusammenhang mit den Binomischen Formeln'."\n".
+                    'und dem Pascalschen Dreieck.'."\n",
+                      'Beim Übergang zum endlichen Exponenten Eins finden offensichtlich Überträge auf höhere Stellen'."\n".
+                    'des superialen Stellenwertsystems statt:'."\n".
+                    '\\\\ \\color{*Bearb}{(\\latexmath{ \e } noch nach dem weiter unten gerechneten Ergebnis hier korrigieren! Diesen Beispielrechnung ggf. weiter nach unter verschieben.)}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{s^{2}}  =  \e_{s^{2}}^{1}  =  \e_{s^{2}}^{〈s^{2}〉_{-2}}  =  〈1〉․〈0〉〈1〉^{s^{2}}  }'),
+                      array( display => 'on',  latex => '{  \e_{s^{2}}  =  〈1〉․〈0〉〈s^{2} + X〉〈0〉〈X〉〈0〉〈X〉\cdots〈X〉〈0〉〈s^{2}〉〈0〉〈1〉_{-s^{2}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s^{2}}  =  〈1 + 1 + X〉․〈0〉〈0 + X〉〈0〉〈X〉〈0〉〈X〉\cdots〈X + 1〉〈0〉〈0〉〈0〉〈1〉_{-s^{2}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wir können hier erkennen, dass wir, trotz der feineren Auflösung der Ableitung keinen Informationsgewinn erzielen.'."\n".
+                    'In den ungeraden Potenzen von \\latexmath{ \s } reißen einfach Lücken auf, die nichts zusätzliches enthalten.'."\n".
+                    'Daran können wir erkennen, dass die superiale Einheit \\latexmath{ \s } gerade die optimale Auflösung für Differentiation in diesem Kontext ist.'."\n".
+                    ''))),
+                    ))),
+
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:XXX', text =>
                       
                 'Zusammenhang mit \\latexmath{ \pi }', subline =>
