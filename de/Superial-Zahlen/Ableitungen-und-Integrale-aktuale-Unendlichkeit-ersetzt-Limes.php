@@ -397,7 +397,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e^{x}  =  \lim\limits_{x \rightarrow +\infty}{ *( 1 + \frac{ 1 }{ x } *)^{x} }  }'),
+                      array( display => 'off', latex => '{  \e  :=  \lim\limits_{n \rightarrow +\infty}{ *( 1 + \frac{ 1 }{ n } *)^{n} }  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  \e^{x}  =  *( \lim\limits_{n \rightarrow +\infty}{ *( 1 + \frac{ 1 }{ n } *)^{n} } *)^{x}  }'),
+                      array( display => 'on',  latex => '{  \e^{x}  =  \lim\limits_{n \rightarrow +\infty}{ *( 1 + \frac{ 1 }{ n } *)^{x \cdot n} }  }',
+                                    latex_if_visible => '{  \Leftrightarrow  \e^{x}  =  \lim\limits_{n \rightarrow +\infty}{ *( 1 + \frac{ 1 }{ n } *)^{x \cdot n} }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Diese im Unendlichen schwer durchschaubare Formulierung haben wir gerade vorstehend in einer Schreibweise mit fundamentalen'."\n".
