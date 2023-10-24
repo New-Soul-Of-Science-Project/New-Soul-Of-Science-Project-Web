@@ -393,7 +393,7 @@
                     'Denn die Basis hängt von der Definition der Ableitung ab, bei der wir \\latexmath{ \mathrm{s} } benutzt haben.'."\n".
                     'Würden wir beispielsweise \\latexmath{ \mathrm{s}^2 } benutzen, wie \\jump{OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielhafteRechnungMit-s-2}{hier gezeigt}, würde sich unsere Basis im Prinzip sehr ähnlich,'."\n".
                     'aber doch anders ergeben.'."\n",
-                      'Wenig verwunderlich, ist diese Formel in der Limes-Definition bekannt:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Exponentialfunktion:2022}, Definition. \\\\ Vgl. \\cite{wiki:EulerscheZahl:2023}, Definition.}'."\n".
+                      'Wenig verwunderlich ist diese Formel in Form der Limes-Definition bekannt:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Exponentialfunktion:2022}, Definition. \\\\ Vgl. \\cite{wiki:EulerscheZahl:2023}, Definition.}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -416,10 +416,20 @@
                     'definieren können.'."\n",
                       'Und im Hinblick auf den Beweis der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung},'."\n".
                     'der die vollständige Induktion auf Grundlage des unendlichen Produkts aller endlichen Primzahlen ausdrückt,'."\n".
-                    'führen wir die \\latexmath{ \e }-Funktion auf die Primzahlen zurück.'."\n",
-                      'Dies ist in meinen Augen etwas sehr besonderes und wesentlich konkreter und hat damit einen gewissen Mehrwert'."\n".
-                    'gegenüber der Limes-Definition, wie wir gleich sehen werden.'."\n".
-                    'Dadurch wird transparent, wie sich die \\latexmath{ \e }-Funktion und damit die Zahl \\latexmath{ \e } im und aus dem Unendlichen ergibt.'."\n".
+                    'führen wir die \\latexmath{ \e }-Funktion auf die Primzahlen zurück:'."\n",
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \omega  =  \prod_{\forall p \in \mathbb{P}}  p  }',
+                                          label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \omega  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
+                                          label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\mathrm{s}}^{x}  =  \\\ \qquad\;\, *( 1 + (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{- 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots} *)^{x \cdot (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                      'Dies ist in meinen Augen etwas sehr besonderes und ganz konkret und hat damit einen großen Mehrwert'."\n".
+                    'gegenüber der Limes-Definition, zusätzlich zum Perspektivwechsel, wie wir gleich sehen werden.'."\n".
+                    'Dadurch wird transparent, wie sich die \\latexmath{ \e }-Funktion und damit die Zahl \\latexmath{ \e } im und aus dem Unendlichen ergibt.'."\n",
                     ''))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielhafteRechnungMit-s-2',
