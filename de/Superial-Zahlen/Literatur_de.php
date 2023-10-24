@@ -25,6 +25,7 @@
               'wiki:Arithmetik:2015',
               'wiki:BijektiveFunktion:2023',
               'wiki:EulerscheZahl:2023',
+              'wiki:Exponentialfunktion:2022',
               'wiki:GaussscheSummenformel:2023',
               'wiki:GeordneterKoerper:2022',
               'wiki:IntervallMathematik:2023',
