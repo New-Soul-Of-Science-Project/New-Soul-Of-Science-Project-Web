@@ -484,18 +484,6 @@
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:SumBinominalkoe',
                 Title => 'Die Summen der einzelnen Spalten der Binomialkoeffizienten …',
                 TitleVis => 'Die Summen der einzelnen Spalten der Binomialkoeffizienten:', ParagraphList => array(
-                  /* array( 'text', array( text => array(
-                    '!!! Hier fehlt noch der Fall für die Nullergebnisse, siehe alte Vorlage !!!'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \begin{array}{llll} n \\\ k \end{array} *)  ?=  \frac{ 1 }{ k! } \cdot \sum_{ \forall c \in [0, k]_{\mathbb{N}} } *( n - c *)  }'),
-                      array( display => 'on',  latex => '{  *( \begin{array}{llll} 0 \\\ 0 \end{array} *)  =  1  =  1 ( ! )  }'),
-                      array( display => 'on',  latex => '{  *( \begin{array}{llll} 1 \\\ 0 \end{array} *)  =  1  =  1 ( ! )  }'),
-                      array( display => 'on',  latex => '{  *( \begin{array}{llll} 1 \\\ 1 \end{array} *)  =  1  =  \frac{ 1 }{ 1! } \cdot ( (1 - 0) + (1 - 1) )  }'),
-                      array( display => 'on',  latex => '{  *( \begin{array}{llll} 2 \\\ 0 \end{array} *)  =  1  =  1 ( ! )  }'),
-                      array( display => 'on',  latex => '{  *( \begin{array}{llll} 2 \\\ 1 \end{array} *)  =  1  =  \frac{ 1 }{ 2! } \cdot ( (2 - 0) + (2 - 1) )  }'),
-                    ))), */
                   array( 'text', array( text => array(
                     'In dieser Rechnung wollen wir die Summen der Spalten der Binomialkoeffizienten des Pascalschen Dreiecks'."\n".
                     'berechnen.'."\n".
@@ -515,7 +503,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ k \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ k - 1 \end{array} *) + *( *( \begin{array}{llll} n - 2 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ k \end{array} *) *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ k \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ k \end{array} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ k \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ k - 1 \end{array} *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\;\;\, + *( \begin{array}{llll} n - 3 \\\ k \end{array} *)  }'),
                     ))),
                   array( 'text', array( text => array(
                     'und entdecken, dass wir dies so lange fortführen können, bis wir bei einer Zeile \\latexmath{ n } landen,'."\n".
@@ -524,7 +512,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ k \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ k - 1 \end{array} *) + \cdots  + *( \begin{array}{llll} k - 1 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} k - 1 \\\ k \end{array} *)  \;\;,  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ k \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ k - 1 \end{array} *) + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\;\; \cdots + *( \begin{array}{llll} k - 1 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} k - 1 \\\ k \end{array} *)  \;\;,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'was wir beispielhaft überprüfen mit'."\n".
@@ -533,8 +521,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 2 \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ 1 \end{array} *) + \cdots  + *( \begin{array}{llll} 1 \\\ 1 \end{array} *) + *( \begin{array}{llll} 1 \\\ 2 \end{array} *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ 2 \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ 1 \end{array} *) + \cdots  + *( \begin{array}{llll} 1 \\\ 1 \end{array} *) + 0  \;\;,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 2 \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ 1 \end{array} *) + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\; \cdots + *( \begin{array}{llll} 1 \\\ 1 \end{array} *) + *( \begin{array}{llll} 1 \\\ 2 \end{array} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ 2 \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ 1 \end{array} *) + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\; \cdots + *( \begin{array}{llll} 1 \\\ 1 \end{array} *) + 0  \;\;,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'und daher bricht die Summe dann ab, sodass wir sie folgendermaßen ganz allgemein mit'."\n".
@@ -574,7 +562,7 @@
                       array( display => 'on',  latex => '{  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  [ 0_{0} \,+ \,]\, 1_{1} + 2_{2} + 3_{3} + 4_{4} + 5_{5} + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\;\; \cdots + m_{n - 1}  }'),
                       array( display => 'on',  latex => '{  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  [ 0_{0} \,+ \,]\, 1_{1} + 2_{2} + 3_{3} + 4_{4} + 5_{5} + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad \cdots + (n - 1)_{n - 1}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  \frac{ (n - 1)^{2} + (n - 1) }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  \frac{ (n^{2} - 2 \cdot n + 1) + (n - 1) }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  \frac{ (n^{2} - 2 n + 1) + (n - 1) }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  \frac{ n^{2} - n }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -596,19 +584,19 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  1^{2}_{1} + 2^{2}_{2} + 3^{2}_{3} + 4^{2}_{4} + 5^{2}_{5} + 6^{2}_{6} + \cdots x^{2}_{x}  =  \\\ \qquad\qquad\qquad\qquad\qquad\qquad \frac{ x \cdot (x + 1) \cdot (2 \cdot x + 1) }{ 6 }  }'),
-                      array( display => 'on',  latex => '{  \frac{ x \cdot (x + 1) \cdot (2 \cdot x + 1) }{ 6 }  =  \frac{ (x^{2} + x) \cdot (2 \cdot x + 1) }{ 6 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ x \cdot (x + 1) \cdot (2 \cdot x + 1) }{ 6 }  =  \frac{ 2 \cdot x^{3} + x^{2} + 2 \cdot x^{2} + x }{ 6 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ x \cdot (x + 1) \cdot (2 \cdot x + 1) }{ 6 }  =  \frac{ 2 \cdot x^{3} + 3 \cdot x^{2} + x }{ 6 }  }'),
+                      array( display => 'on',  latex => '{  1^{2}_{1} + 2^{2}_{2} + 3^{2}_{3} + 4^{2}_{4} + 5^{2}_{5} + 6^{2}_{6} + \cdots x^{2}_{x}  =  \\\ \qquad\qquad\qquad\qquad\qquad\qquad \frac{ x \cdot (x + 1) \cdot (2 x + 1) }{ 6 }  }'),
+                      array( display => 'on',  latex => '{  \frac{ x \cdot (x + 1) \cdot (2 x + 1) }{ 6 }  =  \frac{ (x^{2} + x) \cdot (2 x + 1) }{ 6 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ x \cdot (x + 1) \cdot (2 x + 1) }{ 6 }  =  \frac{ 2 x^{3} + x^{2} + 2 x^{2} + x }{ 6 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ x \cdot (x + 1) \cdot (2 x + 1) }{ 6 }  =  \frac{ 2 x^{3} + 3 x^{2} + x }{ 6 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Hierin können wir nun \\latexmath{ x } durch \\latexmath{ n - 1 } ersetzen, um das Ergebnis weiter zu nutzen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ 2 \cdot x^{3} + 3 \cdot x^{2} + x }{ 6 }  =  \frac{ 2 \cdot (n - 1)^{3} + 3 \cdot (n - 1)^{2} + (n - 1) }{ 6 }  }'),
-                      array( display => 'on',  latex => '{  =  \frac{ 2 \cdot (n^{3} - 3 \cdot n^{2} + 3 \cdot n - 1) + 3 \cdot (n - 1)^{2} + (n - 1) }{ 6 }  }'),
-                      array( display => 'on',  latex => '{  =  \frac{ 2 \cdot (n^{3} - 3 \cdot n^{2} + 3 \cdot n - 1) + 3 \cdot (n^{2} - 2 \cdot n + 1) + (n - 1) }{ 6 }  }'),
+                      array( display => 'on',  latex => '{  \frac{ 2 x^{3} + 3 x^{2} + x }{ 6 }  =  \frac{ 2 \cdot (n - 1)^{3} + 3 \cdot (n - 1)^{2} + (n - 1) }{ 6 }  }'),
+                      array( display => 'on',  latex => '{  =  \frac{ 2 \cdot (n^{3} - 3 n^{2} + 3 n - 1) + 3 \cdot (n - 1)^{2} + (n - 1) }{ 6 }  }'),
+                      array( display => 'on',  latex => '{  =  \frac{ 2 \cdot (n^{3} - 3 n^{2} + 3 n - 1) + 3 \cdot (n^{2} - 2 n + 1) + (n - 1) }{ 6 }  }'),
                       array( display => 'on',  latex => '{  =  \frac{ 2 n^{3} - 6 n^{2} + 6 n - 2 + 3 n^{2} - 6 n + 3 + n - 1 }{ 6 }  }'),
                       array( display => 'on',  latex => '{  =  \frac{ 2 n^{3} - 3 n^{2} + n }{ 6 }  }'),
                     ))),
@@ -636,18 +624,22 @@
 
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:XXX', text =>
                       
-                'Wie berechnet sich daraus \\latexmath{ \e_s }', subline =>
+                'Wie berechnet sich daraus \\latexmath{ \e_\s }', subline =>
                   '')),
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\\bold{XXX}',
+                    '• Können wir hieraus über die Definition des Über-Operators der Binomialkoeffizienten durch Fakultäten etwas über die Fakultät von \\latexmath{ \s } lernen?',
+                    ))),
                   array( 'text', array( text => array(
                     'Beim Übergang zum endlichen Exponenten Eins finden offensichtlich Überträge auf höhere Stellen'."\n".
                     'des \\jump{*SupNum:Stellenwertsystem-Schreibweise}{superialen Stellenwertsystems} statt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{s}  =  \e_{s}^{1}  =  \e_{s}^{․\,〈s〉}  =  〈1〉․〈1〉^{s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s}  =  *〈 *( \begin{array}{llll} s \\\ 0 \end{array} *) *〉․\,*〈 *( \begin{array}{llll} s \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} s \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} s \\\ 3 \end{array} *) *〉\cdots *〈 *( \begin{array}{llll} s \\\ s - 2 \end{array} *) *〉*〈 *( \begin{array}{llll} s \\\ s - 1 \end{array} *) *〉*〈 *( \begin{array}{llll} s \\\ s \end{array} *) *〉_{-s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s}  =  *〈 1 *〉․\,*〈 s *〉*〈 \frac{ s^{2} - s }{ 2 } *〉*〈 \frac{ s^{3} - 3 s^{2} + 2 s }{ 6 } *〉*〈 \cdots *〉\cdots *〈 \cdots *〉*〈 \frac{ s^{3} - 3 s^{2} + 2 s }{ 6 } *〉*〈 \frac{ s^{2} - s }{ 2 } *〉*〈 s *〉*〈 1 *〉_{-s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․\,*〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉*〈 \cdots *〉\cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉*〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-s}  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}  =  \e_{\s}^{1}  =  \e_{\s}^{․\,〈\s〉}  =  〈1〉․〈1〉^{\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 *( \begin{array}{llll} \s \\\ 0 \end{array} *) *〉․\,*〈 *( \begin{array}{llll} \s \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 3 \end{array} *) *〉\cdots *〈 *( \begin{array}{llll} \s \\\ \s - 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s - 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s \end{array} *) *〉_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 *〉․\,*〈 \s *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉*〈 \cdots *〉\cdots *〈 \cdots *〉*〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \s *〉*〈 1 *〉_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․\,*〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉*〈 \cdots *〉\cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉*〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
