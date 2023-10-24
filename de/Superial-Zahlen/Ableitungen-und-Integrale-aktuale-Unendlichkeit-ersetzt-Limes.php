@@ -584,17 +584,19 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  1^{2}_{1} + 2^{2}_{2} + 3^{2}_{3} + 4^{2}_{4} + 5^{2}_{5} + 6^{2}_{6} + \cdots x^{2}_{x}  =  \\\ \qquad\qquad\qquad\qquad\qquad\qquad \frac{ x \cdot (x + 1) \cdot (2 x + 1) }{ 6 }  }'),
-                      array( display => 'on',  latex => '{  \frac{ x \cdot (x + 1) \cdot (2 x + 1) }{ 6 }  =  \frac{ (x^{2} + x) \cdot (2 x + 1) }{ 6 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ x \cdot (x + 1) \cdot (2 x + 1) }{ 6 }  =  \frac{ 2 x^{3} + x^{2} + 2 x^{2} + x }{ 6 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ x \cdot (x + 1) \cdot (2 x + 1) }{ 6 }  =  \frac{ 2 x^{3} + 3 x^{2} + x }{ 6 }  }'),
+                      array( display => 'on',  latex => '{  1^{2}_{1} + 2^{2}_{2} + 3^{2}_{3} + 4^{2}_{4} + 5^{2}_{5} + 6^{2}_{6} + \cdots x^{2}_{x}  }'),
+                      array( display => 'on',  latex => '{  =  \frac{ x \cdot (x + 1) \cdot (2 x + 1) }{ 6 }  }'),
+                      array( display => 'on',  latex => '{  =  \frac{ (x^{2} + x) \cdot (2 x + 1) }{ 6 }  }'),
+                      array( display => 'on',  latex => '{  =  \frac{ 2 x^{3} + x^{2} + 2 x^{2} + x }{ 6 }  }'),
+                      array( display => 'on',  latex => '{  =  \frac{ 2 x^{3} + 3 x^{2} + x }{ 6 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Hierin können wir nun \\latexmath{ x } durch \\latexmath{ n - 1 } ersetzen, um das Ergebnis weiter zu nutzen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ 2 x^{3} + 3 x^{2} + x }{ 6 }  =  \frac{ 2 \cdot (n - 1)^{3} + 3 \cdot (n - 1)^{2} + (n - 1) }{ 6 }  }'),
+                      array( display => 'on',  latex => '{  \frac{ 2 x^{3} + 3 x^{2} + x }{ 6 }  }'),
+                      array( display => 'on',  latex => '{  =  \frac{ 2 \cdot (n - 1)^{3} + 3 \cdot (n - 1)^{2} + (n - 1) }{ 6 }  }'),
                       array( display => 'on',  latex => '{  =  \frac{ 2 \cdot (n^{3} - 3 n^{2} + 3 n - 1) + 3 \cdot (n - 1)^{2} + (n - 1) }{ 6 }  }'),
                       array( display => 'on',  latex => '{  =  \frac{ 2 \cdot (n^{3} - 3 n^{2} + 3 n - 1) + 3 \cdot (n^{2} - 2 n + 1) + (n - 1) }{ 6 }  }'),
                       array( display => 'on',  latex => '{  =  \frac{ 2 n^{3} - 6 n^{2} + 6 n - 2 + 3 n^{2} - 6 n + 3 + n - 1 }{ 6 }  }'),
@@ -606,19 +608,17 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \\\ \qquad\qquad \frac{ 1 }{ 2 } \cdot *( *( \frac{ 2 n^{3} - 3 n^{2} + n }{ 6 } *) \\\ \qquad\qquad\;\;\, - *( \frac{ (n - 1)^{2} + (n - 1) }{ 2 } *) *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \\\ \qquad\qquad \frac{ 1 }{ 2 } \cdot *( *( \frac{ 2 n^{3} - 3 n^{2} + n }{ 6 } *) \\\ \qquad\qquad\qquad\quad\;\, - *( \frac{ n^{2} - n }{ 2 } *) *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \\\ \qquad\qquad \frac{ 1 }{ 2 } \cdot *( *( \frac{ 2 n^{3} - 3 n^{2} + n }{ 6 } *) \\\ \qquad\qquad\qquad\quad\;\, - *( \frac{ 3 n^{2} - 3 n }{ 6 } *) *)  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ 1 }{ 2 } \cdot *( *( \frac{ 2 n^{3} - 3 n^{2} + n }{ 6 } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\;\; - *( \frac{ (n - 1)^{2} + (n - 1) }{ 2 } *) *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ 1 }{ 2 } \cdot *( *( \frac{ 2 n^{3} - 3 n^{2} + n }{ 6 } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\, - *( \frac{ n^{2} - n }{ 2 } *) *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ 1 }{ 2 } \cdot *( *( \frac{ 2 n^{3} - 3 n^{2} + n }{ 6 } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\;\, - *( \frac{ 3 n^{2} - 3 n }{ 6 } *) *)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ 1 }{ 2 } \cdot \frac{ 2 n^{3} - 6 n^{2} + 4 n }{ 6 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ n^{3} - 3 n^{2} + 2 n }{ 6 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Die Berechnung weiterer Anteile erspare ich mir für den Moment.'."\n",
+                      'Aber wir können erahnen und logischerweise sogar absolut sicher sein, dass sich für den Summanden mit der höchsten'."\n".
+                    'Potenz nach und nach die Glieder der Taylorreihe\\color{*Bearb}{(Verweis)} ergeben,'."\n".
+                    'die summiert zur Eulerschen Zahl \\latexmath{ \e } führen.'."\n".
                     ''))),
                     ))),
 
@@ -629,6 +629,7 @@
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\\bold{XXX}',
                     '• Können wir hieraus über die Definition des Über-Operators der Binomialkoeffizienten durch Fakultäten etwas über die Fakultät von \\latexmath{ \s } lernen?',
+                    '• \\bold{Das kann so nicht stimmen, oder?} Wir können genau sagen, wieviele Summanden die Summe oder Reihe hat, die den endlichen Anteil von \\latexmath{ \e_\s } darstellt. Es sind genau \\latexmath{ \frac{1}{2} \s + 1 }, weil \\latexmath{ \s } eine gerade Zahl ist und damit der größte Wert im Pascalschen Dreieck bei dieser Potenz liegt. Danach werden die Werte im Pascalschen Dreieck kleiner, so, dass ihre inneren Potenzen nicht mehr bis zum Endlichen reichen, denke ich.',
                     ))),
                   array( 'text', array( text => array(
                     'Beim Übergang zum endlichen Exponenten Eins finden offensichtlich Überträge auf höhere Stellen'."\n".
@@ -637,19 +638,50 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{\s}  =  \e_{\s}^{1}  =  \e_{\s}^{․\,〈\s〉}  =  〈1〉․〈1〉^{\s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 *( \begin{array}{llll} \s \\\ 0 \end{array} *) *〉․\,*〈 *( \begin{array}{llll} \s \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 3 \end{array} *) *〉\cdots *〈 *( \begin{array}{llll} \s \\\ \s - 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s - 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s \end{array} *) *〉_{-\s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 *〉․\,*〈 \s *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉*〈 \cdots *〉\cdots *〈 \cdots *〉*〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \s *〉*〈 1 *〉_{-\s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․\,*〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉*〈 \cdots *〉\cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉*〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 *( \begin{array}{llll} \s \\\ 0 \end{array} *) *〉․\,*〈 *( \begin{array}{llll} \s \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 3 \end{array} *) *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 *( \begin{array}{llll} \s \\\ \s - 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s - 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s \end{array} *) *〉_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 *〉․\,*〈 \s *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \s *〉*〈 1 *〉_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Hier können wir nun erkennen und logischerweise sogar absolut sicher sein, dass sich im Endlichen die Taylorreihe\\color{*Bearb}{(Verweis)}'."\n".
+                    'zur Eulerschen Zahl \\latexmath{ \e } ergibt.'."\n",
+                      'Wir sehen nun auch, dass die Eulersche Zahl \\latexmath{ \e } aktual unendlich viele aktual unendlich kleine Anteile hat,'."\n".
+                      'die nicht Null sind und damit eben nicht verschwinden.'."\n".
+                    'Denn es ist schlichtweg unmöglich die Ableitung mit einer Differenz zu definieren, die wirklich Null ist!'."\n".
+                    'Denn die Differenz muss positiv und kann nicht Null sein, damit sie Sinn macht und nicht undefiniert wird.'."\n",
+                      'Was passiert, wenn wir die Differenz kleiner machen, sehen wir in der nachfolgenden \\jump{OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielhafteRechnungMit-s-2}{Beispielrechnung}'."\n".
+                    'mit \\latexmath{ \s^2 } anstatt mit \\latexmath{ \s }, wie oben definiert.'."\n".
+                    'Die aktual unendliche Anzahl an aktual unendlich kleinen Summanden bleibt gleich, auch, wenn die Werte der'."\n".
+                    'Summanden kleiner werden.'."\n",
+                      'Strukturell gewinnen wir nichts, wenn wir die Differenz kleiner machen.'."\n".
+                    'Es ergeben sich nur Lücken, deren Werte Null sind.'."\n".
+                    'Die Summanden ungleich Null bleiben, solange unsere Differenz größer als Null ist.'."\n".
+                    'Und das muss sie ja.'."\n".
+                    'Das ist Fakt.'."\n",
+                      'Nur durch eine Differenz, die unendlich klein ist, können wir erreichen,'."\n".
+                    'dass die Potenzanteile der Differenz in sich nicht überlappende unendliche Größenskalen'."\n".
+                    'zerfallen und so das richtige Ergebnis der Rechnung im Endlichen erreicht wird.'."\n",
+                      'Der Ansatz mit dem Limes hat den Charm, dass wir uns scheinbar nicht oder wenig mit den'."\n".
+                    'unendlich kleinen Details der Rechnung auseinander setzen müssen.'."\n",
+                      'Aber ich glaube, der Limes-Ansatz hat auf der einen Seite seine Berechtigung, weil er Vorteile in sich trägt,'."\n".
+                    'und ist auf der anderen Seite auch ein Trugschluss.'."\n".
+                    'Denn gerade diese Details sind sehr interessant sowie erkenntnisreich und lassen erahnen und auch sichtbar werden,'."\n".
+                    'was vor sich geht; wie das Räderwerk des Endlichen mit dem unendlich Kleinen und dem unendlich Großen ineinander greift.'."\n",
+                      'Ohne die Erkenntnis dieses Räderwerks wäre ich wohl nie auf die \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}'."\n".
+                    'gestoßen und schließlich auf ihren Beweis gekommen, der uns neue tiefe arithmetische Einblicke ins Unendliche,'."\n".
+                    'in die vollständige Induktion, die Primzahlen und die Primzahlverteilung, gewährt.'."\n",
+                      'In meinen Augen offenbart dieses Räderwerk, dass die Eulersche Zahl \\latexmath{ \e } keine rein endliche'."\n".
+                    'Zahl sein kann.'."\n".
+                    'Sie ist nicht einmal eine Superial-Zahl der hier entwickelten 1. Ordnung, also ein Element von \\latexmath{ \mathbb{S} },'."\n".
+                    'weil sie Summanden mit aktual unendlich kleiner Potenz von \\latexmath{ \s } in sich trägt.'."\n".
+                    'Es ist schlichtweg unmöglich, sie so zu definieren, dass sie die Ableitungsbedingung erfüllt,'."\n".
+                    'und keine unendlich kleinen Summanden enthält.'."\n".
+                    'Desto kleiner wir die Differenz, die ihr zu Grunde liegt, machen, umso höher wird irgendwann die unendliche Ordnung,'."\n".
+                    'die wir benötigen, die Eulersche Zahl zu definieren, ohne, dass wir einen Informationsgewinn haben.'."\n",
+                      'Rein endlich werden kann das Ergebnis, bei genauer Betrachtung, hingegen nicht wirklich.'."\n".
+                    'Der Limes macht es uns halt einfacher, die tieferen Details nicht zu sehen.'."\n",
+                      'Die „transzendente“ Zahl \\latexmath{ \e } gehört nicht zu den rein endlichen Zahlen.'."\n".
+                    'Ich rege also an, dass wir den Begriff der Transzendenz in diesem Sinne tiefer überdenken.'."\n".
                     ''))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielhafteRechnungMit-s-2',
