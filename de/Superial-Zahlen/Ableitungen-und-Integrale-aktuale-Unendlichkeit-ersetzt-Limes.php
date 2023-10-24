@@ -386,12 +386,12 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  \e_{\mathrm{s}}^{x}  =  〈1〉․〈1〉^{〈x〉_{1}}  \;\;}  }'),
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \e_{\s}^{x}  =  〈1〉․〈1〉^{〈x〉_{1}}  \;\;}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Ich nenne ihre Basis \\latexmath{ \e_\mathrm{s} }, weil ich hier ganz genau abgrenzen möchte.'."\n".
-                    'Denn die Basis hängt von der Definition der Ableitung ab, bei der wir \\latexmath{ \mathrm{s} } benutzt haben.'."\n".
-                    'Würden wir beispielsweise \\latexmath{ \mathrm{s}^2 } benutzen, wie \\jump{OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielhafteRechnungMit-s-2}{hier gezeigt}, würde sich unsere Basis im Prinzip sehr ähnlich,'."\n".
+                    'Ich nenne ihre Basis \\latexmath{ \e_\s }, weil ich hier ganz genau abgrenzen möchte.'."\n".
+                    'Denn die Basis hängt von der Definition der Ableitung ab, bei der wir \\latexmath{ \s } benutzt haben.'."\n".
+                    'Würden wir beispielsweise \\latexmath{ \s^2 } benutzen, wie \\jump{OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielhafteRechnungMit-s-2}{hier gezeigt}, würde sich unsere Basis im Prinzip sehr ähnlich,'."\n".
                     'aber doch anders ergeben.'."\n",
                       'Wenig verwunderlich ist diese Formel in Form der Limes-Definition bekannt:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Exponentialfunktion:2022}, Definition. \\\\ Vgl. \\cite{wiki:EulerscheZahl:2023}, Definition.}'."\n".
                     ''))),
@@ -403,13 +403,13 @@
                     'Diese im Unendlichen schwer durchschaubare Formulierung haben wir gerade vorstehend in einer Schreibweise mit fundamentalen'."\n".
                     'Symbolen beschreiben.'."\n".
                     'Und werden dies gleich nutzen, um die Zahl \\latexmath{ \e } auch im unendlich Kleinen genau zu berechnen.'."\n",
-                      'Drücken wir die \\latexmath{ \e }-Funktion explizit mit \\latexmath{ \mathrm{s} } oder noch differenzierter mit'."\n".
+                      'Drücken wir die \\latexmath{ \e }-Funktion explizit mit \\latexmath{ \s } oder noch differenzierter mit'."\n".
                     '\\latexmath{ \mathrm{\omega} } aus, erhalten wir:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\mathrm{s}}^{x}  =  *( 1 + \mathrm{s}^{-1} *)^{x \cdot \mathrm{s}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\mathrm{s}}^{x}  =  *( 1 + \mathrm{\omega}^{-\mathrm{\omega}} *)^{x \cdot \mathrm{\omega}^{\mathrm{\omega}}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  *( 1 + \s^{-1} *)^{x \cdot \s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  *( 1 + \mathrm{\omega}^{-\mathrm{\omega}} *)^{x \cdot \mathrm{\omega}^{\mathrm{\omega}}}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wir sehen, dass wir die \\latexmath{ \e }-Funktion ganz fundamental mit \\latexmath{ \mathrm{\omega} } durch die vollständige Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
@@ -424,7 +424,7 @@
                                           label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \omega  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
                                           label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\mathrm{s}}^{x}  =  \\\ \qquad\;\, *( 1 + (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{- 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots} *)^{x \cdot (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \\\ \qquad\;\, *( 1 + (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{- 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots} *)^{x \cdot (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots}}  }'),
                     ))),
                   array( 'text', array( text => array(
                       'Dies ist in meinen Augen etwas sehr besonderes und ganz konkret und hat damit einen großen Mehrwert'."\n".
