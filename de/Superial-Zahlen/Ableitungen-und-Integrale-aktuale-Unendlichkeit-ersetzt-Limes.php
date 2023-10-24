@@ -457,7 +457,7 @@
                     'So bekommen wir einen vom Aussehen her vielleicht etwas unerwarteten Einblick in die'."\n".
                     'infinitesimale Feinstruktur der \\latexmath{ \e }-Funktion und ihren Zusammenhang mit den Binomischen Formeln'."\n".
                     'und dem Pascalschen Dreieck.'."\n",
-                      'Die Koeffizienten des Pascalschen Dreiecks sind die Binomialkoeffizienten\\color{*Bearb}{(Verweis)},'."\n".
+                      'Die Koeffizienten des Pascalschen Dreiecks sind die Binomialkoeffizienten\\footnote{\\const{SupNum_g_footnote_text_Binomialkoeffizient}},'."\n".
                     'die wir einmal beispielhaft einsetzen:'."\n".
                     ''))),
                   array( 'equations',
@@ -469,7 +469,7 @@
                       array( display => 'on',  latex => '{  \e_{s}^{․\,〈4〉}  =  *〈 *( \begin{array}{llll} 4 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 4 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 3 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 4 \end{array} *) *〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir können dies allgemeiner mit einer Formel für Binomialkoeffizienten mit dem \\italic{über}-Operator\\color{*Bearb}{(Verweis)}'."\n".
+                    'Wir können dies allgemeiner mit einer Formel für Binomialkoeffizienten mit dem \\italic{über}-Operator\\footnote{\\const{SupNum_g_footnote_text_Binomialkoeffizient}}'."\n".
                     'beschreiben:'."\n".
                     ''))),
                   array( 'equations',
@@ -501,7 +501,7 @@
                     'berechnen.'."\n".
                     'Dazu schauen wir uns an, wie sich die Werte der Binomialkoeffizienten aus der vorherigen Spalte ergeben.'."\n",
                       'Als Ansatz formulieren wir die altbekannte Regel etwas um, wie sich ein Binomialkoeffizient aus'."\n".
-                    'der über ihm gelegenen Zeile als Summe ergibt:\\color{*Bearb}{(Verweis)}'."\n".
+                    'der über ihm gelegenen Zeile als Summe ergibt:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Binomialkoeffizient:2023}, Rekursive Darstellung und Pascalsches Dreieck.}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -645,9 +645,9 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{s}  =  \e_{s}^{1}  =  \e_{s}^{․\,〈s〉}  =  〈1〉․〈1〉^{s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s}  =  *〈 *( \begin{array}{llll} s \\\ 0 \end{array} *) *〉․*〈 *( \begin{array}{llll} s \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} s \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} s \\\ 3 \end{array} *) *〉\cdots *〈 *( \begin{array}{llll} s \\\ s - 2 \end{array} *) *〉*〈 *( \begin{array}{llll} s \\\ s - 1 \end{array} *) *〉*〈 *( \begin{array}{llll} s \\\ s \end{array} *) *〉_{-s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s}  =  *〈 1 *〉․*〈 s *〉*〈 \frac{ s^{2} - s }{ 2 } *〉*〈 \frac{ s^{3} - 3 s^{2} + 2 s }{ 6 } *〉*〈 \cdots *〉\cdots *〈 \cdots *〉*〈 \frac{ s^{3} - 3 s^{2} + 2 s }{ 6 } *〉*〈 \frac{ s^{2} - s }{ 2 } *〉*〈 s *〉*〈 1 *〉_{-s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․\;*〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉*〈 \cdots *〉\cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉*〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s}  =  *〈 *( \begin{array}{llll} s \\\ 0 \end{array} *) *〉․\,*〈 *( \begin{array}{llll} s \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} s \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} s \\\ 3 \end{array} *) *〉\cdots *〈 *( \begin{array}{llll} s \\\ s - 2 \end{array} *) *〉*〈 *( \begin{array}{llll} s \\\ s - 1 \end{array} *) *〉*〈 *( \begin{array}{llll} s \\\ s \end{array} *) *〉_{-s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s}  =  *〈 1 *〉․\,*〈 s *〉*〈 \frac{ s^{2} - s }{ 2 } *〉*〈 \frac{ s^{3} - 3 s^{2} + 2 s }{ 6 } *〉*〈 \cdots *〉\cdots *〈 \cdots *〉*〈 \frac{ s^{3} - 3 s^{2} + 2 s }{ 6 } *〉*〈 \frac{ s^{2} - s }{ 2 } *〉*〈 s *〉*〈 1 *〉_{-s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․\,*〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉*〈 \cdots *〉\cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉*〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-s}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
