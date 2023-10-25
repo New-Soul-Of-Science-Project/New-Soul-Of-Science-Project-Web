@@ -391,7 +391,7 @@
                   array( 'text', array( text => array(
                     'Ich nenne ihre Basis \\latexmath{ \e_\s }, weil ich hier ganz genau abgrenzen möchte.'."\n".
                     'Denn die Basis hängt von der Definition der Ableitung ab, bei der wir \\latexmath{ \s } benutzt haben.'."\n".
-                    'Würden wir beispielsweise \\latexmath{ \s^2 } benutzen, wie \\jump{OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielhafteRechnungMit-s-2}{hier gezeigt}, würde sich unsere Basis im Prinzip sehr ähnlich,'."\n".
+                    'Würden wir beispielsweise \\latexmath{ \s^2 } benutzen, wie \\jump{OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielrechnungAbleitungMit-s-2}{hier gezeigt}, würde sich unsere Basis im Prinzip sehr ähnlich,'."\n".
                     'aber doch anders ergeben.'."\n",
                       'Wenig verwunderlich ist diese Formel in Form der Limes-Definition bekannt:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Exponentialfunktion:2022}, Definition. \\\\ Vgl. \\cite{wiki:EulerscheZahl:2023}, Definition.}'."\n".
                     ''))),
@@ -649,7 +649,7 @@
                       'die nicht Null sind und damit eben nicht verschwinden.'."\n".
                     'Denn es ist schlichtweg unmöglich die Ableitung mit einer Differenz zu definieren, die wirklich Null ist!'."\n".
                     'Denn die Differenz muss positiv und kann nicht Null sein, damit sie Sinn macht und nicht undefiniert wird.'."\n",
-                      'Was passiert, wenn wir die Differenz kleiner machen, sehen wir in der nachfolgenden \\jump{OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielhafteRechnungMit-s-2}{Beispielrechnung}'."\n".
+                      'Was passiert, wenn wir die Differenz kleiner machen, sehen wir in der nachfolgenden \\jump{OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielrechnungAbleitungMit-s-2}{Beispielrechnung zur Ableitung}'."\n".
                     'mit \\latexmath{ \s^2 } anstatt mit \\latexmath{ \s }, wie oben definiert.'."\n".
                     'Die aktual unendliche Anzahl an aktual unendlich kleinen Summanden bleibt gleich, auch, wenn die Werte der'."\n".
                     'Summanden kleiner werden.'."\n",
@@ -678,15 +678,19 @@
                     'und keine unendlich kleinen Summanden enthält.'."\n".
                     'Desto kleiner wir die Differenz, die ihr zu Grunde liegt, machen, umso höher wird irgendwann die unendliche Ordnung,'."\n".
                     'die wir benötigen, die Eulersche Zahl zu definieren, ohne, dass wir einen Informationsgewinn haben.'."\n",
-                      'Rein endlich werden kann das Ergebnis, bei genauer Betrachtung, hingegen nicht wirklich.'."\n".
+                      'Rein endlich werden kann das Ergebnis, bei genauer Betrachtung, hingegen nicht.'."\n".
                     'Der Limes macht es uns halt einfacher, die tieferen Details nicht zu sehen.'."\n",
-                      'Die „transzendente“ Zahl \\latexmath{ \e } gehört nicht zu den rein endlichen Zahlen.'."\n".
-                    'Ich rege also an, dass wir den Begriff der Transzendenz in diesem Sinne tiefer überdenken.'."\n".
+                      'Die „transzendente“ Zahl \\latexmath{ \e } gehört dementsprechend nicht zu den rein endlichen Zahlen.'."\n".
+                    'Sie ist keine irrationale Zahl in dem Sinne, dass sie nicht durch einen Bruch darstellbar ist,'."\n".
+                    'aber ausschließlich endliche Summanden enthält.'."\n",
+                      'Ich rege also an, dass wir den Begriff der Transzendenz, und sicherheitshalber auch den der Irrationalität,'."\n".
+                    'wobei ich auf die \\jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} hinweisen möchte,'."\n".
+                    'in diesem Sinne tiefer überdenken.'."\n".
                     ''))),
 
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielhafteRechnungMit-s-2',
-                Title => 'Beispielhafte Rechnung mit \\latexmath{ s^2 } …',
-                TitleVis => 'Beispielhafte Rechnung mit \\latexmath{ s^2 }:', ParagraphList => array(
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielrechnungAbleitungMit-s-2',
+                Title => 'Beispielrechnung zur Ableitung mit \\latexmath{ s^2 } …',
+                TitleVis => 'Beispielrechnung zur Ableitung mit \\latexmath{ s^2 }:', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Exemplarisch möchte ich einmal die \\latexmath{ \e }-Funktion anhand einer etwas variierten Ableitung'."\n".
                     'definieren, um zu sehen, wie sich dies eventuell auf die Basis der sich so ergebenden \\latexmath{ \e }-Funktion'."\n".
