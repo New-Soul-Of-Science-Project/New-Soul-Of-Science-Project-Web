@@ -443,7 +443,7 @@
 		    	<!  • Untersuchungen zur Kontinuumshypothese  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese',
-              'Es gibt keine Menge, deren Mächtigkeit zwischen der Mächtigkeit der natürlichen Zahlen und der Mächtigkeit der reellen Zahlen liegt', 'Sc_f_Paragraph',
+              'Die Mächtigkeit der reellen Zahlen', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eigenschaften:VergleichMitHyperreellenZahlen', type => 'back'),
@@ -464,14 +464,14 @@
                     array( equ_text_std => 'SN.Eig.UK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \aleph_{1}  =  2^{\aleph_{0}}  }'),
                       array( display => 'on',  latex => '{  \aleph_{0}  =  \omega  =  \#\mathbb{N}  =  \vert \mathbb{N} \vert  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \aleph_{1}  =  2^{\omega}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \aleph_{1}  =  2^{\omega}  =  \vert \mathcal{P}(\mathbb{N}) \vert  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Idee, dass die Mächtigkeit, oder sagen wir, aus etwas differenzierterer Sicht, die Dichte oder Körnung,'."\n".
-                    'der reellen Zahlen mit der hier dargestellten Potenz \\latexmath{ 2^\omega } beschrieben wird, ergibt sich daraus,'."\n".
-                    'dass die Anzahl der Elemente der reellen Zahlen der Potenzmenge der Menge \\latexmath{ \mathbb{N} } entspricht.'."\n",
-                      'Dies möchte ich nicht bezüglich der Mächtigkeit bestreiten, sondern in Bezug auf die'."\n".
-                    'mit den Superial-Zahlen gefundene Beschreibung des Unendlichen, vielleicht eher mit der Dichte oder Körnung bezeichnet,'."\n".
+                    'Die Idee ist, dass die Mächtigkeit der reellen Zahlen der Mächtigkeit der Potenzmenge der Menge \\latexmath{ \mathbb{N} }'."\n".
+                    'der natürlichen Zahlen, also \\latexmath{ \vert \mathcal{P}(\mathbb{N}) \vert }, mit \\latexmath{ 2^\omega } entspricht.'."\n".
+                    'Die Mächtigkeit einer Menge ist dabei nicht unbedingt der Anzahl der Elemente dieser Menge gleich.'."\n",
+                      'Dies möchte ich nun nicht bezüglich der Mächtigkeit grundsätzlich in Frage stellen, sondern in Bezug auf die'."\n".
+                    'mit den Superial-Zahlen gefundene Beschreibung des Unendlichen, vielleicht eher mit der Dichte oder Körnung oder auch Arithmetik bezeichnet,'."\n".
                     'erneut beleuchten, um weitere Erkenntnisse zu gewinnen.'."\n",
                       'Mit der Kontinuumshypothese\\color{*Bearb}{(Verweis)} wird angenommen:'."\n".
                     ''))),
@@ -498,16 +498,16 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.UK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  s  =  \omega^{\omega}  }',
-                                          label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \omega  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
                                           label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{\omega}  }',
+                      array( display => 'on',  latex => '{  \s  =  \omega^{\omega}  }',
+                                          label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{\omega}  }',
                                           label_text => '\\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  s  =  2^{\omega} \cdot 3^{\omega} \cdot 5^{\omega} \cdot 7^{\omega} \cdot 11^{\omega} \cdot 13^{\omega} \cdot 17^{\omega} \cdot 19^{\omega} \cdot 23^{\omega} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  2^{\omega} \cdot 3^{\omega} \cdot 5^{\omega} \cdot 7^{\omega} \cdot 11^{\omega} \cdot 13^{\omega} \cdot 17^{\omega} \cdot 19^{\omega} \cdot 23^{\omega} \cdot \cdots  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir sehen die Potenz \\latexmath{ 2^\omega } als ersten Primzahlturm im Produkt von \\latexmath{ s }.'."\n",
+                    'Wir sehen die Potenz \\latexmath{ 2^\omega } als ersten Primzahlturm im Produkt von \\latexmath{ \s }.'."\n",
                       'Weiterhin ergibt sich die neue Erkenntnis, dass \\latexmath{ \aleph_1 } in seiner Potenz von \\latexmath{ 2 } im Exponenten das'."\n".
                     'Produkt aller Primzahlen enthält:'."\n".
                     ''))),
@@ -521,18 +521,18 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:XXX', text =>
                       
-                'Die Konstruktion und der Sinn von \\latexmath{ s } wirft Fragen bezüglich der Struktur der reellen Zahlen auf', subline =>
+                'Die Konstruktion und der Sinn von \\latexmath{ \s } wirft Fragen bezüglich der Struktur der reellen Zahlen auf', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Nun geht es bei der Kontinuumshypothese um die Mächtigkeit der reellen Zahlen und um die der natürlichen Zahlen.'."\n".
-                    'Schließlich ja um die Frage, ob es noch eine Mächtigkeit zwischen der dieser beiden Mengen gibt.'."\n",
-                      'Die superiale Basis \\latexmath{ s } ist nun so konstruiert, dass ein Produkt mit ihr und jeder rationalen Zahl'."\n".
+                    'Nun geht es bei der Kontinuumshypothese um die Mächtigkeit der reellen Zahlen und um die der natürlichen Zahlen;'."\n".
+                    'schließlich ja um die Frage, ob es noch eine Mächtigkeit zwischen denen dieser beiden Mengen gibt.'."\n",
+                      'Die superiale Basis \\latexmath{ \s } ist nun so konstruiert, dass ein Produkt mit ihr und jeder rationalen Zahl'."\n".
                     'eine ganze Zahl ergibt.'."\n",
                       'Wir können daran erkennen, dass schon die Struktur der rationalen Zahlen es erfordert, nicht nur'."\n".
                     '\\latexmath{ 2^\omega }, sondern auch \\latexmath{ 3^\omega } und ebenso alle'."\n".
-                    'anderen gleichartigen unendlichen Potenzen endlicher Primzahlen, einzubeziehen.'."\n".
-                    'Da verwundert es mich dann schon, wenn \\latexmath{ 2^\omega } ausreichen soll,'."\n".
-                    'die Struktur aller reellen Zahlen darzustellen.'."\n".
+                    'anderen gleichartigen unendlichen Potenzen endlicher Primzahlen bis ins Unendliche, einzubeziehen.'."\n".
+                    'Da verwundert es, wenn \\latexmath{ 2^\omega } ausreichen soll,'."\n".
+                    'die Komplexität oder Feinheit der Struktur aller reellen Zahlen darzustellen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:XXX', text =>
                       
@@ -540,40 +540,43 @@
                   '')),
                   array( 'text', array( text => array(
                     'Desweiteren steht die \\jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}'."\n".
-                    'im Raum, die feststellt, dass auch Produkte von \\latexmath{ s } und überrationalen Zahlen,'."\n".
+                    'im Raum, die feststellt, dass auch Produkte von \\latexmath{ \s } mit überrationalen Zahlen,'."\n".
                     'also solchen Brüchen, die in Zähler und Nenner auf unendlich vielen Primzahlen endlicher Potenz beruhen,'."\n".
                     'die einen Bruch endlicher Größe mit nichtperiodischer Dezimaldarstellung verkörpern.'."\n",
                       'Die Vermutung bezieht sich nun darauf, dass solche Brüche endliche reelle Anteile algebraischer Zahlen\\color{*Bearb}{(Verweis)} sind,'."\n".
                     'wie beispielsweise \\latexmath{ \sqrt{ 2 } }.'."\n",
-                      'Wenn dem so wäre, dann würden nur noch die transzendenten Zahlen an den reellen Zahlen fehlen.'."\n".
+                      'Wenn dem so wäre, dann würden nur noch die transzendenten Zahlen, hinsichtlich eines Produktes mit \\latexmath{ \s },'."\n".
+                    'das eine ganze Zahl ergibt, an den reellen Zahlen fehlen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:XXX', text =>
                       
                 'Transzendente Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Bei den Transzendenten Zahlen möchte ich am Beispiel der Eulerschen Zahl \\latexmath{ e_s } zeigen,'."\n".
+                    'Hinsichtlich der transzendenten Zahlen möchte ich am Beispiel der Eulerschen Zahl \\latexmath{ \e_\s } zeigen,'."\n".
                     'dass sich hier weitere Fragezeichen ergeben:'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'Schließlich kommen wir hier zu dem Schluss, dass \\latexmath{ e_s } Summanden bis herunter zur Potenz \\latexmath{ -s } von \\latexmath{ s } hat,'."\n".
-                    'und daher nicht einmal eine einfache Superial-Zahl ist.'."\n".
-                    'Wie soll sie da eine rein endliche reelle Zahl sein, die nur aus Summanden endlicher Größe besteht?'."\n",
-                      'An dieser stelle würde ich sagen, dass zumindestens \\latexmath{ e_s } keine reelle Zahl ist'."\n".
-                    'und die Frage im Raum steht, ob nicht auch alle anderen transzendenten Zahl gar keine reellen Zahlen sind.'."\n",
+                      'Im Abschnitt \\italic{\\jumpname{OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion}}'."\n".
+                    'kommen wir zu dem Schluss, dass die Eulersche Zahl keine irrationale Zahl ist, nicht einmal eine'."\n".
+                    'Superial-Zahl der auf dieser Seite definierten 1. Ordnung, weil sie unweigerlich'."\n".
+                    'aktual unendlich kleine Summanden enthält, die nicht Null werden können.'."\n",
+                      'Schließlich kommen wir hier zu dem Schluss, dass \\latexmath{ \e_\s } Summanden '."\n".
+                    'bis herunter zur Potenz \\latexmath{ -\s } zur Basis \\latexmath{ \s } hat,'."\n".
+                    'wodurch sie, wie gesagt, selbst aus der Menge \\latexmath{ \mathbb{S} } der Superial-Zahlen fällt.'."\n".
+                    'Sie ist demnach keine rein endliche reelle Zahl, die nur aus Summanden endlicher Größe besteht.'."\n",
+                      'An dieser stelle würde ich sagen, dass zumindestens \\latexmath{ \e_\s } keine reelle Zahl ist'."\n".
+                    'und die Frage im Raum steht, ob nicht auch alle anderen transzendenten Zahlen gar keine reellen Zahlen sind.'."\n",
                       'Sondern, wir lassen uns vielleicht dadurch täuschen, dass wir glauben, transzendente Zahlen wären durch Dezimalzahlen'."\n".
                     'mit unendlich vielen Nachkommastellen darstellbar, ohne zu beantworten,'."\n".
-                    'wie groß diese Unendlichkeit denn eigentlich ist.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'wie groß diese minimale Unendlichkeit denn eigentlich ist.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:XXX', text =>
+                      
+                'Schlussfolgerung zur Untersuchung der Kontinuumshypothese', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Ich denke, wir sollten die Struktur der reellen Zahlen und ihre Aufteilung in Untermengen'."\n".
+                    'mit Hilfe der Primzahlen, und somit mit Hilfe der Superial-Zahlen, tiefer untersuchen und verstehen,'."\n".
+                    'damit wir die Kontinuumshypothese verstehen und vielleicht beantworten können.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
