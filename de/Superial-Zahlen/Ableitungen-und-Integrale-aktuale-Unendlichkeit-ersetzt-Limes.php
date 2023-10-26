@@ -298,6 +298,11 @@
                       array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration', type => 'back'),
                     )),
 
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\\bold{XXX}',
+                    '• Meine Herleitung der \\latexmath{ \e }-Funktion mit Hilfe von Superial-Zahlen stammt aus dem Jahr 2001: siehe Datei "superial zahlen (26).pdf".',
+                    ))),
+
                   array( 'text', array( text => array(
                     'Wir können tatsächlich recht einfach erkennen, welche Funktion ihrer eigenen Ableitung gleich ist.'."\n".
                     'Die Superial-Zahlen führen uns hier zu einer erstaunlichen Entdeckung.'."\n".
