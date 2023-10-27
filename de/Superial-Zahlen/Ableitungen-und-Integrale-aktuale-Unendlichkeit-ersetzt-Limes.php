@@ -647,51 +647,6 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 *〉․\,*〈 \s *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \s *〉*〈 1 *〉_{-\s}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }'),
                     ))),
-                  array( 'text', array( text => array(
-                    'Hier können wir nun erkennen und logischerweise sogar absolut sicher sein, dass sich im Endlichen die Taylorreihe\\color{*Bearb}{(Verweis)}'."\n".
-                    'zur Eulerschen Zahl \\latexmath{ \e } ergibt.'."\n",
-                      'Wir sehen nun auch, dass die Eulersche Zahl \\latexmath{ \e } aktual unendlich viele aktual unendlich kleine Anteile hat,'."\n".
-                      'die nicht Null sind und damit eben nicht verschwinden.'."\n".
-                    'Denn es ist schlichtweg unmöglich die Ableitung mit einer Differenz zu definieren, die wirklich Null ist!'."\n".
-                    'Denn die Differenz muss positiv und kann nicht Null sein, damit sie Sinn macht und nicht undefiniert wird.'."\n",
-                      'Was passiert, wenn wir die Differenz kleiner machen, sehen wir in der nachfolgenden \\jump{OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielrechnungAbleitungMit-s-2}{Beispielrechnung zur Ableitung}'."\n".
-                    'mit \\latexmath{ \s^2 } anstatt mit \\latexmath{ \s }, wie oben definiert.'."\n".
-                    'Die aktual unendliche Anzahl an aktual unendlich kleinen Summanden bleibt gleich, auch, wenn die Werte der'."\n".
-                    'Summanden kleiner werden.'."\n",
-                      'Strukturell gewinnen wir nichts, wenn wir die Differenz kleiner machen.'."\n".
-                    'Es ergeben sich nur Lücken, deren Werte Null sind.'."\n".
-                    'Die Summanden ungleich Null bleiben, solange unsere Differenz größer als Null ist.'."\n".
-                    'Und das muss sie ja.'."\n".
-                    'Das ist Fakt.'."\n",
-                      'Nur durch eine Differenz, die unendlich klein ist, können wir erreichen,'."\n".
-                    'dass die Potenzanteile der Differenz in sich nicht überlappende unendliche Größenskalen'."\n".
-                    'zerfallen und so das richtige Ergebnis der Rechnung im Endlichen erreicht wird.'."\n",
-                      'Der Ansatz mit dem Limes hat den Charm, dass wir uns scheinbar nicht oder wenig mit den'."\n".
-                    'unendlich kleinen Details der Rechnung auseinander setzen müssen.'."\n",
-                      'Aber ich glaube, der Limes-Ansatz hat auf der einen Seite seine Berechtigung, weil er Vorteile in sich trägt,'."\n".
-                    'und ist auf der anderen Seite auch ein Trugschluss.'."\n".
-                    'Denn gerade diese Details sind sehr interessant sowie erkenntnisreich und lassen erahnen und auch sichtbar werden,'."\n".
-                    'was vor sich geht; wie das Räderwerk des Endlichen mit dem unendlich Kleinen und dem unendlich Großen ineinander greift.'."\n",
-                      'Ohne die Erkenntnis dieses Räderwerks wäre ich wohl nie auf die \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}'."\n".
-                    'gestoßen und schließlich auf ihren Beweis gekommen, der uns neue tiefe arithmetische Einblicke ins Unendliche,'."\n".
-                    'in die vollständige Induktion, die Primzahlen und die Primzahlverteilung, gewährt.'."\n",
-                      'In meinen Augen offenbart dieses Räderwerk, dass die Eulersche Zahl \\latexmath{ \e } keine rein endliche'."\n".
-                    'Zahl sein kann.'."\n".
-                    'Sie ist nicht einmal eine Superial-Zahl der hier entwickelten 1. Ordnung, also ein Element von \\latexmath{ \mathbb{S} },'."\n".
-                    'weil sie Summanden mit aktual unendlich kleiner Potenz von \\latexmath{ \s } in sich trägt.'."\n".
-                    'Es ist schlichtweg unmöglich, sie so zu definieren, dass sie die Ableitungsbedingung erfüllt,'."\n".
-                    'und keine unendlich kleinen Summanden enthält.'."\n".
-                    'Desto kleiner wir die Differenz, die ihr zu Grunde liegt, machen, umso höher wird irgendwann die unendliche Ordnung,'."\n".
-                    'die wir benötigen, die Eulersche Zahl zu definieren, ohne, dass wir einen Informationsgewinn haben.'."\n",
-                      'Rein endlich werden kann das Ergebnis, bei genauer Betrachtung, hingegen nicht.'."\n".
-                    'Der Limes macht es uns halt einfacher, die tieferen Details nicht zu sehen.'."\n",
-                      'Die „transzendente“ Zahl \\latexmath{ \e } gehört dementsprechend nicht zu den rein endlichen Zahlen.'."\n".
-                    'Sie ist keine irrationale Zahl in dem Sinne, dass sie nicht durch einen Bruch darstellbar ist,'."\n".
-                    'aber ausschließlich endliche Summanden enthält.'."\n",
-                      'Ich rege also an, dass wir den Begriff der Transzendenz, und sicherheitshalber auch den der Irrationalität,'."\n".
-                    'wobei ich auf die \\jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} hinweisen möchte,'."\n".
-                    'in diesem Sinne tiefer überdenken.'."\n".
-                    ''))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielrechnungAbleitungMit-s-2',
                 Title => 'Beispielrechnung zur Ableitung mit \\latexmath{ s^2 } …',
@@ -813,6 +768,51 @@
                     ''))),
                     ))),
 
+                  array( 'text', array( text => array(
+                    'Hier können wir nun erkennen und logischerweise sogar absolut sicher sein, dass sich im Endlichen die Taylorreihe\\color{*Bearb}{(Verweis)}'."\n".
+                    'zur Eulerschen Zahl \\latexmath{ \e } ergibt.'."\n",
+                      'Wir sehen nun auch, dass die Eulersche Zahl \\latexmath{ \e } aktual unendlich viele aktual unendlich kleine Anteile hat,'."\n".
+                      'die nicht Null sind und damit eben nicht verschwinden.'."\n".
+                    'Denn es ist schlichtweg unmöglich die Ableitung mit einer Differenz zu definieren, die wirklich Null ist!'."\n".
+                    'Denn die Differenz muss positiv und kann nicht Null sein, damit sie Sinn macht und nicht undefiniert wird.'."\n",
+                      'Was passiert, wenn wir die Differenz kleiner machen, sehen wir in der nachfolgenden \\jump{OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielrechnungAbleitungMit-s-2}{Beispielrechnung zur Ableitung}'."\n".
+                    'mit \\latexmath{ \s^2 } anstatt mit \\latexmath{ \s }, wie oben definiert.'."\n".
+                    'Die aktual unendliche Anzahl an aktual unendlich kleinen Summanden bleibt gleich, auch, wenn die Werte der'."\n".
+                    'Summanden kleiner werden.'."\n",
+                      'Strukturell gewinnen wir nichts, wenn wir die Differenz kleiner machen.'."\n".
+                    'Es ergeben sich nur Lücken, deren Werte Null sind.'."\n".
+                    'Die Summanden ungleich Null bleiben, solange unsere Differenz größer als Null ist.'."\n".
+                    'Und das muss sie ja.'."\n".
+                    'Das ist Fakt.'."\n",
+                      'Nur durch eine Differenz, die unendlich klein ist, können wir erreichen,'."\n".
+                    'dass die Potenzanteile der Differenz in sich nicht überlappende unendliche Größenskalen'."\n".
+                    'zerfallen und so das richtige Ergebnis der Rechnung im Endlichen erreicht wird.'."\n",
+                      'Der Ansatz mit dem Limes hat den Charm, dass wir uns scheinbar nicht oder wenig mit den'."\n".
+                    'unendlich kleinen Details der Rechnung auseinander setzen müssen.'."\n",
+                      'Aber ich glaube, der Limes-Ansatz hat auf der einen Seite seine Berechtigung, weil er Vorteile in sich trägt,'."\n".
+                    'und ist auf der anderen Seite auch ein Trugschluss.'."\n".
+                    'Denn gerade diese Details sind sehr interessant sowie erkenntnisreich und lassen erahnen und auch sichtbar werden,'."\n".
+                    'was vor sich geht; wie das Räderwerk des Endlichen mit dem unendlich Kleinen und dem unendlich Großen ineinander greift.'."\n",
+                      'Ohne die Erkenntnis dieses Räderwerks wäre ich wohl nie auf die \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}'."\n".
+                    'gestoßen und schließlich auf ihren Beweis gekommen, der uns neue tiefe arithmetische Einblicke ins Unendliche,'."\n".
+                    'in die vollständige Induktion, die Primzahlen und die Primzahlverteilung, gewährt.'."\n",
+                      'In meinen Augen offenbart dieses Räderwerk, dass die Eulersche Zahl \\latexmath{ \e } keine rein endliche'."\n".
+                    'Zahl sein kann.'."\n".
+                    'Sie ist nicht einmal eine Superial-Zahl der hier entwickelten 1. Ordnung, also ein Element von \\latexmath{ \mathbb{S} },'."\n".
+                    'weil sie Summanden mit aktual unendlich kleiner Potenz von \\latexmath{ \s } in sich trägt.'."\n".
+                    'Es ist schlichtweg unmöglich, sie so zu definieren, dass sie die Ableitungsbedingung erfüllt,'."\n".
+                    'und keine unendlich kleinen Summanden enthält.'."\n".
+                    'Desto kleiner wir die Differenz, die ihr zu Grunde liegt, machen, umso höher wird irgendwann die unendliche Ordnung,'."\n".
+                    'die wir benötigen, die Eulersche Zahl zu definieren, ohne, dass wir einen Informationsgewinn haben.'."\n",
+                      'Rein endlich werden kann das Ergebnis, bei genauer Betrachtung, hingegen nicht.'."\n".
+                    'Der Limes macht es uns halt einfacher, die tieferen Details nicht zu sehen.'."\n",
+                      'Die „transzendente“ Zahl \\latexmath{ \e } gehört dementsprechend nicht zu den rein endlichen Zahlen.'."\n".
+                    'Sie ist keine irrationale Zahl in dem Sinne, dass sie nicht durch einen Bruch darstellbar ist,'."\n".
+                    'aber ausschließlich endliche Summanden enthält.'."\n",
+                      'Ich rege also an, dass wir den Begriff der Transzendenz, und sicherheitshalber auch den der Irrationalität,'."\n".
+                    'wobei ich auf die \\jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} hinweisen möchte,'."\n".
+                    'in diesem Sinne tiefer überdenken.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:XXX', text =>
                       
                 'Zusammenhang mit \\latexmath{ \pi }', subline =>
