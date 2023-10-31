@@ -7,6 +7,7 @@
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20231030:  +:  "MathJax":  Add Macro "i" for "\i" generates a non italic "i" in formulas for the imaginary unit.
   //           20231024:  +:  "MathJax":  Add Macro "e" for "\e" generates a non italic "e" in formulas for the Euler number.
   //                      +:  "MathJax":  Add Macro "s" for "\s" generates a non italic "s" in formulas for the superial unit.
   //           20230901:  +:  "Sc_f_equation_list":  Add horizontal scrollable equations with class 'content-horizontal-scrollable'.
@@ -216,8 +217,9 @@
     echo '        TeX: {'."\n";
     echo '          extensions: ["color.js"],'."\n";
     echo '          Macros: {'."\n";
-    echo '            e: "\\\\mathrm{e}",'."\n"; // Euler number
+    echo '            i: "\\\\mathrm{i}",'."\n"; // imaginary unit
     echo '            s: "\\\\mathrm{s}",'."\n"; // superial unit
+    echo '            e: "\\\\mathrm{e}",'."\n"; // Euler number
     echo '            llangle: "\\\\langle \\\\mspace{-3.5mu} \\\\langle",'."\n";
     echo '            rrangle: "\\\\rangle \\\\mspace{-3.5mu} \\\\rangle",'."\n";
     echo '            lOpera: "\\\\langle \\\\mspace{-2.2mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-1.0mu}",'."\n";
