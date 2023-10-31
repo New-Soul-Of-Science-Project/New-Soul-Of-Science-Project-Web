@@ -76,6 +76,8 @@
           'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:SumBinominalkoe' => array( headline_text => 'Die Summen der einzelnen Spalten der Binomialkoeffizienten'/* , headline_text_short => 'XXX'*/),
           'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:BeispielrechnungAbleitungMit-s-2' => array( headline_text => 'Beispielrechnung zur Ableitung mit \\latexmath{ s^2 }'/* , headline_text_short => 'XXX'*/),
 
+        'OM:SupNum:Ableitungen-Integrale:Die-Quadratur-des-Kreises' => array( headline_text => 'Die Quadratur des Kreises – von der eulerschen Zahl \\latexmath{ \e } zu \\latexmath{ \pi }' , headline_text_short => 'Die Quadratur des Kreises – von der eulerschen Zahl e zu π'),
+
         'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen' => array( headline_text => 'Nähere Untersuchung bestimmter Summen'/* , headline_text_short => 'XXX'*/),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins' => array( headline_text => 'Summen zur Integration von \\latexmath{ 〈2 x〉․〈1〉 }'/* , headline_text_short => 'XXX' */),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt' => array( headline_text => 'SN.AbIn.NU.1'),

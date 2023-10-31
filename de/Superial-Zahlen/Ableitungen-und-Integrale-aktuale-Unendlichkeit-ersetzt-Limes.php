@@ -40,7 +40,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • Die Ableitungen  >
+          <!  • Die Ableitungen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Ableitungen-Integrale:Ableitung',
               '', 'Sc_f_Paragraph',
@@ -178,7 +178,7 @@
           ); ?>
 
 
-		    	<!  • Die Integration  >
+          <!  • Die Integration  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Ableitungen-Integrale:Integration',
               '', 'Sc_f_Paragraph',
@@ -289,7 +289,7 @@
           ); ?>
 
 
-		    	<!  • Die eulersche Zahl e und ihre e-Funktion in der Differentialrechnung  >
+          <!  • Die eulersche Zahl e und ihre e-Funktion in der Differentialrechnung  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion',
               '', 'Sc_f_Paragraph',
@@ -813,6 +813,49 @@
                     'wobei ich auf die \\jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} hinweisen möchte,'."\n".
                     'in diesem Sinne tiefer überdenken.'."\n".
                     ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:Die-Quadratur-des-Kreises'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Die Quadratur des Kreises – von der eulerschen Zahl e zu π  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Ableitungen-Integrale:Die-Quadratur-des-Kreises',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion', type => 'back'),
+                    )),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\\bold{XXX}',
+                    // '• Meine Herleitung der \\latexmath{ \e }-Funktion mit Hilfe von Superial-Zahlen stammt aus dem Jahr 2001: siehe Datei "superial zahlen (26).pdf".',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.QK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot x}  =  〈1〉․〈1〉^{〈\i \cdot x〉_{1}}  }'),
+                      array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot x}  :=  \mathrm{cos}_{\s}(x) + \i \cdot \mathrm{sin}_{\s}(x)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:XXX', text =>
                       
                 'Zusammenhang mit \\latexmath{ \pi }', subline =>
@@ -828,46 +871,47 @@
                     'XXX'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{s}^{i \cdot \pi_{s}}  =  -1  =  〈1〉․〈1〉^{〈i \cdot \pi_{s}〉_{1}}  }'),
+                    array( equ_text_std => 'SN.AbIn.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot \pi_{\s}}  =  -1  =  〈1〉․〈1〉^{〈\i \cdot \pi_{\s}〉_{1}}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{〈i \cdot \pi_{s}〉_{1}}  =  -1  }'),
+                    array( equ_text_std => 'SN.AbIn.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{〈\i \cdot \pi_{\s}〉_{1}}  =  -1  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉  =  \sqrt[ 〈i \cdot \pi_{s}〉_{1} ]{ -1 }  }'),
+                    array( equ_text_std => 'SN.AbIn.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉  =  \sqrt[ 〈\i \cdot \pi_{\s}〉_{1} ]{ -1 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈i \cdot \pi_{s}〉_{1}  =  \log_{〈1〉․\,〈1〉} -1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  i \cdot \pi_{s}  =  〈 \log_{〈1〉․\,〈1〉} -1〉_{-1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{s}  =  \frac{ 〈 \log_{〈1〉․\,〈1〉} -1〉_{-1} }{ i }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{s}  =  \frac{ *( \log_{〈1〉․\,〈1〉} -1 *) \cdot s^{-1} }{ i }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{s}  =  \frac{ \log_{〈1〉․\,〈1〉} -1 }{ i \cdot s }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{s}  =  -i \cdot s^{-1} \cdot \log_{〈1〉․\,〈1〉} -1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{s}  =  〈 -i \cdot \log_{〈1〉․\,〈1〉} -1 〉_{-1}  }'),
+                    array( equ_text_std => 'SN.AbIn.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  〈\i \cdot \pi_{\s}〉_{1}  =  \log_{〈1〉․\,〈1〉} -1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \i \cdot \pi_{\s}  =  〈 \log_{〈1〉․\,〈1〉} -1〉_{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  \frac{ 〈 \log_{〈1〉․\,〈1〉} -1〉_{-1} }{ \i }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  \frac{ *( \log_{〈1〉․\,〈1〉} -1 *) \cdot \s^{-1} }{ \i }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  \frac{ \log_{〈1〉․\,〈1〉} -1 }{ \i \cdot \s }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  \i^{-1} \cdot \s^{-1} \cdot \log_{〈1〉․\,〈1〉} -1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  -\i \cdot \s^{-1} \cdot \log_{〈1〉․\,〈1〉} -1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  〈 -\i \cdot \log_{〈1〉․\,〈1〉} -1 〉_{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  a^{x}  =  b^{x \cdot \log_{b} a}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \e_{s}^{x}  =  〈1〉․〈1〉^{x \cdot \log_{〈1〉․\,〈1〉} \e_{s}}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  x \cdot \log_{〈1〉․\,〈1〉} \e_{s}  =  〈 x 〉_{1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  x \cdot \log_{〈1〉․\,〈1〉} \e_{s}  =   x \cdot s  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \log_{〈1〉․\,〈1〉} \e_{s}  =   s  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  〈1〉․〈1〉^{x \cdot \log_{〈1〉․\,〈1〉} \e_{\s}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  x \cdot \log_{〈1〉․\,〈1〉} \e_{\s}  =  〈 x 〉_{1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  x \cdot \log_{〈1〉․\,〈1〉} \e_{\s}  =   x \cdot \s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \log_{〈1〉․\,〈1〉} \e_{\s}  =   \s  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -887,13 +931,13 @@
           ); ?>
 
 
-		    	<!  • Nähere Untersuchung bestimmter Summen  >
+          <!  • Nähere Untersuchung bestimmter Summen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:Die-Quadratur-des-Kreises', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -1381,7 +1425,7 @@
           ); ?>
 
 
-			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>
+      <?php FrQFT_f_Div_WrapperEnd( '      '); ?>
 
 	
 <?php FrQFT_f_HTML_EndDivsNavExtrFootContainerBody(); ?>
