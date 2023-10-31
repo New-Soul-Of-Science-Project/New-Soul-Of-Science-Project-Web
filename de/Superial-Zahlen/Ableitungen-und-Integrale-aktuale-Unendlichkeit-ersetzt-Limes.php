@@ -384,7 +384,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Wir wissen aus der Mathematik der Differentialrechnung, dass die \\latexmath{ \e }-Funktion'."\n".
-                    'oder die Exponentialfunktion zur Basis \\latexmath{ \e }, der Eulerschen Zahl\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:EulerscheZahl:2023}.},'."\n".
+                    'oder die Exponentialfunktion zur Basis \\latexmath{ \e }, der Eulerschen Zahl\\footnote{\\const{SupNum_g_footnote_text_EulerscheZahl}},'."\n".
                     'ihre eigene Ableitung ist.\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Exponentialfunktion:2022}, Ableitung. \\\\ Vgl. \\cite{wiki:EulerscheZahl:2023}, Bedeutung in der Mathematik.}'."\n",
                       'Mit diesem Wissen ist klar, dass wir eine neue Definition der \\latexmath{ \e }-Funktion gefunden'."\n".
                     'haben, die sich aus der neuen Definition der Ableitung unmittelbar ergibt:'."\n".

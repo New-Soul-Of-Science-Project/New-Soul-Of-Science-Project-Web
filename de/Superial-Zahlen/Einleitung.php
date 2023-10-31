@@ -1227,7 +1227,7 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung', text =>
                                            
-                'Primzahlenprodukt-Vermutung')),
+                'Primzahlprodukt-Vermutung')),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Eigene Überlegungen}',
@@ -1268,75 +1268,45 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung', text =>
                                            
-                'Genauere Differenzierung der Zahlensorten, wie rationale, algebraische, irrationale, transzendente usw.')),
-                      
+                'Genauere Differenzierung der Zahlenarten', subline =>
+                  'Rationale, irrationale, algebraische und transzendente Zahlen')),
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '\\bold{XXX}',
-                    '• XXX',
+                    // '\\bold{XXX}',
+                    // '• XXX',
                     ))),
-                      
+                  array( 'text', array( text => array(
+                    'Die Definition des Aktual-Unendlichen durch alle endlichen Primzahlen,'."\n".
+                    'genauer die Definition der vollständigen Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    'in Form des Symbols \\latexmath{ \omega } durch das \\jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung}{Produkt aller endlichen Primzahlen} und'."\n".
+                    'darauf basierend die Definition der superialen Basis oder Einheit \\latexmath{ \s }'."\n".
+                    'in dieser Arbeit, erlaubt uns noch einmal differenziert über die Zahlenarten nachzudenken.'."\n",
+                      'Wie oben schon beschrieben gibt es die Vermutung, die Koeffizienten der algebraischen Zahlen'."\n".
+                    'könnten ein Teil des Primzahl-Flächenprodukts von \\latexmath{ \s } sein – \\jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} –,'."\n".
+                    'dass einem Bruch unendlich vieler endlicher Primzahlen mit jeweils endlicher Potenz entspricht.'."\n".
+                    'Dies würde folglich dazu führen, dass wir die Koeffizienten der Superial-Zahlen um die Koeffizienten'."\n".
+                    'der algebraischen Zahlen erweitern könnten.'."\n".
+                    'Diese dann von uns überrationale Zahlen genannten irrationalen Zahlen würden nur aus endlichen Zahlen'."\n".
+                    'definiert werden können.'."\n",
+                      'Bezüglich der transzendenten Zahlen zeigen wir allerdings exemplarisch, dass die \\jump{OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion}{Eulersche Zahl}\\footnote{\\const{SupNum_g_footnote_text_EulerscheZahl}}'."\n".
+                    '\\latexmath{ \e } unendlich kleine aktual unendliche Summanden enthält, die nicht verschwinden können.'."\n".
+                    'Dies gelingt uns mit der hier eingangs formulierten Definition der Ableitung durch die Superial-Zahlen.'."\n".
+                    'Demnach ist \\latexmath{ \e } nicht einmal eine Superial-Zahl der hier vorgestellten 1. Ordnung,'."\n".
+                    'sondern noch höherer Ordnung, die noch genau zu definieren ist.'."\n",
+                      'Es stellen sich in meinen Augen die Fragen:'."\n",
+                      'Gehört die transzendente Zahl \\latexmath{ \e } nach der neuen Erkenntnis zu den reellen Zahlen,'."\n".
+                    'wenn sie doch nicht verschwindende unendlich kleine aktual unendliche Summanden enthält?'."\n",
+                      'Gehören gegebenenfalls auch noch andere transzendente Zahlen, \\jump{OM:SupNum:Ableitungen-Integrale:Die-Quadratur-des-Kreises}{wie \\latexmath{ \pi }},'."\n".
+                    'dann nicht zu den reellen Zahlen?'."\n",
+                      'Diese und noch weitere Überlegungen führen uns schließlich zur Kontinuumshypothese.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
-                'Nichtexistenz(?) des Kontinuums')),
-                  array( 'text', array( text => array(
-                    'Der Gewinn, den man durch die Superial-Zahlen erhält besteht auch darin, dass die Möglichkeit besteht, die irrationalen Zahlen mit Hilfe der Primzahlen'."\n".
-                    'sicher zu differenzieren.'."\n".
-                    'Wenn man die Infinitesimalrechung über \\term{s} definiert, stellt sich zum Beispiel heraus, dass die Funktion, die ihre eigene Ableitung ist,'."\n".
-                    'von \\term{s} abhängt.'."\n".
-                    'Deren exponentiale Basis, die eulersche Zahl \\term{e}, wird dann zu \\term{e_{s}} und \\color{*Bearb}{ist keine Superial-Zahl nach der oben beschriebenen Definition,'."\n".
-                    'weil ihre Nachkommastellen bis ins superial kleine gehen (In Datei "superial zahlen (26).pdf" nachgucken!)}.'."\n",
-                      'Die Superial-Zahlen lassen sich in immer feinere Dimensionen erweitern.'."\n".
-                    'Das bedeutet, es lassen sich immer neue Zahlen definieren, die zwischen den bisher feinsten Zahlen liegen.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  /* array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Grundlagen:XXX', text =>
-                'XXX', subline =>
+                'Einsichten und Fragen zur Kontinuumshypothese', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))), */
+                    'Die vorstehenden Fragen und weitere Einsichten, die sich durch die Superial-Zahlen ergeben,'."\n".
+                    'führen uns zu einer neuen \\jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Untersuchung der Kontinuumshypothese}.'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung'),
