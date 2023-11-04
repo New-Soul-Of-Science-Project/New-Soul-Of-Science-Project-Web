@@ -413,17 +413,6 @@
                     'Um dies abschließend zu erreichen, kommen wir nicht umhin, uns die ein oder andere Einsicht und Neuinterpretation zu erarbeiten und so liebgewonnene Denktabus zu relativieren.'."\n".
                     'Und hierbei müssen wir uns auch noch – mühevoller Weise – von mehreren voneinander abhängigen Denktabus nacheinander lösen.'."\n",
                       'Die Mühe diesen Weg zu gehen lohnt sich und wird mit etlichen interessanten neuen Perspektiven und Erkenntnissen versüßt.'."\n"))),
-                      
-                  // array( 'youtube',
-                  //   array_merge( $FrQFT_g_youtube_ary_VakuumElapson, array( name => 'OM:FrQFT:Einleitung:Fundierung:Ani-VakuumElapson'))),
-                  array( 'figure',
-                    array_merge( $FrQFT_g_figure_ary_VakuumElapson, array( name => 'OM:FrQFT:Einleitung:Fundierung:Ani-VakuumElapson',
-                                                         text => 'Die Animation zeigt eine wesentliche Grundstruktur der Elementarteilchen und des Vakuums.'."\n".
-                                                                 'Die roten Punkte stehen hier für die Fundamentalteilchen.'."\n".
-                                                                 'Das Nach-Vorne-Schrauben – der Gang oder die Translation der Helixspirale – steht für die Lichtgeschwindigkeit, die Alterung als Zeitbegriff der Relativitätstheorie.'."\n".
-                                                                 'Die Gesamtbewegung der Fundamentalteilchen steht für die „neue“ Zeit, die jeder Veränderung zugrunde liegt.'."\n".
-                                                                 'Diese Struktur kann als unpolarisiertes Vakuum-Photon verstanden werden.'))),
-                      
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:Ansatz-Unterscheidung-Zeit-Alterung', text =>
                                            
                 'Ansatz: Unterscheidung von Zeit und Alterung')),
@@ -435,9 +424,22 @@
                     'Differenziert wird dies durch die weitere Erkenntnis, dass die Veränderung eines Dings durch die Bewegung seiner Bestandteile'."\n".
                     'in zwei Aspekte zerfällt oder anders gesagt, in zwei Anteile aufgeteilt werden kann:'."\n",
                       'Ein schwingender, exakt gleich wiederholend rotierender Anteil dieser Veränderung führt die Struktur der Bestandteile des Dings'."\n".
-                    'nach einem bestimmten Zeitinterval ununterscheidbar wieder in seinen Ausgangszustand zurück.'."\n".
+                    'nach einem bestimmten Zeitinterval ununterscheidbar wieder in seinen inneren Ausgangszustand zurück.'."\n".
+                    ''))),
+                      
+                  // array( 'youtube',
+                  //   array_merge( $FrQFT_g_youtube_ary_VakuumElapson, array( name => 'OM:FrQFT:Einleitung:Fundierung:Ani-VakuumElapson'))),
+                  array( 'figure',
+                    array_merge( $FrQFT_g_figure_ary_VakuumElapson, array( name => 'OM:FrQFT:Einleitung:Fundierung:Ani-VakuumElapson',
+                                                         text => 'Die Animation zeigt eine wesentliche Grundstruktur der Elementarteilchen und des Vakuums.'."\n".
+                                                                 'Die roten Punkte stehen hier für die Fundamentalteilchen.'."\n".
+                                                                 'Das Nach-Vorne-Schrauben – der Gang oder die Translation der Helixspirale – steht für die Lichtgeschwindigkeit, die Alterung als Zeitbegriff der Relativitätstheorie.'."\n".
+                                                                 'Die Gesamtbewegung der Fundamentalteilchen steht für die „neue“ Zeit, die jeder Veränderung zugrunde liegt.'."\n".
+                                                                 'Diese Struktur kann als unpolarisiertes Vakuum-Photon verstanden werden.'))),
+                      
+                  array( 'text', array( text => array(
                     'Dieser Anteil seiner zeitlichen Veränderung leistet keinen Beitrag zur \\italic{Alterung} des Dings, zu dessen Reifeprozess.'."\n",
-                      'Denn mit der Alterung eines Dings ist gemeint, dass sich seine Struktur quasi unwiederbringlich verändert.'."\n".
+                      'Denn mit der Alterung eines Dings ist gemeint, dass sich seine innere Struktur quasi unwiederbringlich verändert.'."\n".
                     'Und genau diese Alterung ist der andere Anteil der Veränderung eines Dings.'."\n",
                       'Unser Kosmos altert, wenn sich ein Photon in ihm frei durch den Raum bewegt.'."\n".
                     'Das Photon selber – seine innere Struktur – altert nicht, weil seine Bestandteile, die Fundamentalteilchen in ihm, nur schwingende Bewegungen ausführen, die sein'."\n".
@@ -453,7 +455,8 @@
                     'die auf diese Weise nun die Schwingungen der Quantenphysik umfasst.'."\n".
                     'Wie wir noch sehen werden, wird durch diese neue Perspektive dann das innere von „Schwarzen Löchern“ transparent.'."\n",
                       'Uns sollte klar sein, dass diese neue Perspektive bedeutende Grundsätze des heutigen Physikverständnisses berührt,'."\n".
-                    'die wir im Folgenden Stück für Stück plausibel machen müssen.'."\n"))),
+                    'die wir im Folgenden Stück für Stück plausibel machen müssen.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Taburelativierung: Überlichtgeschwindigkeit')),
@@ -511,7 +514,27 @@
                     'zu ihrer Alterung bei, die sich im Zerfall oder einer anderen Transformation oder Reaktion eines Elementarteilchens ausdrücken würde.'."\n",
                       'Nehmen wir diesen Rotationsanteil aus der Bewegung der Feinstruktur der Elementarteilchen heraus, verbleibt ein Anteil, der sich entlang seiner Bahn'."\n".
                     'mit Lichtgeschwindigkeit bewegt und damit der Relativitätstheorie nicht widerspricht, sondern ihrer eigenen und/oder der Alterung des Kosmos entspricht.'."\n",
-                      'So wird es möglich, dass wirklich alle Eigenschaften der Elementarteilchen ihrer dynamischen Struktur entspringen.'."\n"))),
+                      'So wird es möglich, dass wirklich alle Eigenschaften der Elementarteilchen ihrer dynamischen Struktur entspringen.'."\n",
+                      'Mahesh Shenoy stellt in einem Video auf seinem Youtube Kanal fest, dass sich Elektronen in jeder bekannten Hinsicht so verhalten, als haben'."\n".
+                    'sie eine innere Struktur, die einen Drehimpuls erzeugt, die dem eines realen, klassischen Dings extrem nahe kommt.'."\n".
+                    'Elektronen verhalten sich demnach in einem starken Magnetfeld genau wie rotierende Stabmagneten.'."\n".
+                    'Nur sagt er, dass sie ja keinen „echten“ Drehimpuls haben können, weil sie ja die fundamentalsten Teilchen und damit strukturlos wären.'."\n".
+                    'Aus Perspektive der Quanten-Fluss-Theorie sehe ich seinen Vortrag als Nachweis dafür,'."\n".
+                    'dass der Spin oder Drehimpuls der Elektronen ihrer ausgedehnten Struktur entspringt.'."\n".
+                    'Philosophisch gesprochen:'."\n",
+                      'Ist etwas ununterscheidbar von einem Elefanten, weil es so aussieht, sich so verhält und so riecht, dann dürfen wir auch davon'."\n".
+                    'ausgehen, dass es ein Elefant ist, wenn es kein gutes Gegenargument gibt.'."\n".
+                    'Und der Ausgangspunkt der Quanten-Fluss-Theorie ist ja, dass Elektronen und alle anderen Elementarteilchen eine innere Struktur haben.'."\n".
+                    'Danke Mahesh Shenoy!'."\n",
+                      'Video-Link: \\jump{https://www.youtube.com/watch?v=PdN1mweN2ds}{The surprising reason behind electron ‘spin’! (They don’t REALLY spin)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:Folge-LichtUhr-Mat', text =>
+                                           
+                'Feststellung: Die Lichtuhr ist realer Bestandteil der Materie und mit dem Elementarteilchen-Spin verbunden')),
+                  array( 'text', array( text => array(
+                    'Einsteins Idee, die zeitlichen Eigenschaften der Materie mit Hilfe seines Gedankenexperiments der Lichtuhr zu veranschaulichen,'."\n".
+                    'entpuppt sich als reale Eigenschaft der Struktur der Materie.'."\n".
+                    ''))),
                       
                   // array( 'youtube',
                   //   array_merge( $FrQFT_g_youtube_ary_Lepton, array( name => 'OM:nSOSp:Home:Forschungsstand:Ani-Lepton'))),
@@ -524,23 +547,21 @@
                                                                  'Der Spin des Teilchens entspricht der Rotation um das Zentrum der Struktur.'."\n".
                                                                  'Diese Struktur kann als hypothetischer Leptonen-Wirkungsquantenstring mit Ladung verstanden werden.'))),
                       
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:Folge-LichtUhr-Mat', text =>
-                                           
-                'Feststellung: Die Lichtuhr ist realer Bestandteil der Materie und mit dem Elementarteilchen-Spin verbunden')),
                   array( 'text', array( text => array(
-                    'Einsteins Idee, die zeitlichen Eigenschaften der Materie mit Hilfe seines Gedankenexperiments der Lichtuhr zu veranschaulichen,'."\n".
-                    'entpuppt sich als reale Eigenschaft der Struktur der Materie.'."\n".
                     'Denn in der Struktur der Elementarteilchen der Materie ist die lichtschnelle Komponente der Alterungsbewegung in einer Rotation um ihre zentrale Achse,'."\n".
-                    'parallel zu einer spiralförmigen Lichtbahn, gefangen und bestimmt ihren Haupt-Spin (siehe \\jumpname{OM:FrQFT:Einleitung:Fundierung:Ani-Lepton}).'."\n"))),
+                    'parallel zu einer spiralförmigen Lichtbahn, gefangen und bestimmt ihren Haupt-Spin (siehe \\jumpname{OM:FrQFT:Einleitung:Fundierung:Ani-Lepton}).'."\n".
+                    ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'So ist das naturphilosophische Prinzip von Einsteins Lichtuhr ein wirklicher Bestandteil der Struktur der Materie.'."\n"))),
+                      'So ist das naturphilosophische Prinzip von Einsteins Lichtuhr ein wirklicher Bestandteil der Struktur der Materie.'."\n".
+                      ''))),
  
                   array( 'text', array( text => array(
-                    'Damit kann Einsteins genialer Ansatz seine strukturellen Bezüge zur Quantenphysik voll entfalten und seine herausragende Bedeutung bleibt nicht unbedingt'."\n".
-                    'weiter in der Punktform der Materie verborgen.'."\n".
-                    'Ebenso XXX Spin XXX'."\n".
-                    'XXX weiter in der Punktform der Materie verborgen.'."\n".
+                    'Damit kann sich Einsteins genialer Ansatz, die Materie als Lichtuhr zu begreifen, voll entfalten und seine herausragende Bedeutung bleibt nicht länger'."\n".
+                    'in der Punktform der Materie verborgen.'."\n".
+                    'Ganz im Gegenteil, kann sich seine Idee noch weiter entfalten und gewinnt über den Spin der Elementarteilchen auch in'."\n".
+                    'der Quantenphysik große Bedeutung.'."\n",
+                      'Ebenso entspringen so auch die übrigen Spins der Quantenphysik der neuen Struktur und entkommen der Punktform der Materie.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
@@ -562,7 +583,7 @@
                                            
                 'Taburelativierung: Medium des Lichts')),
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '(• Ohne Medium gibt es keine Gleichzeitigkeit. Eine Definition der Gleichzeitigkeit ist in der Quantenphysik unabdingbar, denn entweder muss die Auflösung von Verschränkungen Gleichzeitig an zwei unterschiedlichen Orten passieren (Kopenhagener Deutung der QM) und/oder die Wellenfunktion bzw. das Quantenpotenzial benötigt eine Definition der Gleichzeitigkeit. Ohne Gleichzeitigkeit gibt es demnach keine Vereinheitlichung der Physik.)',
+                    '• Ohne Medium gibt es keine Gleichzeitigkeit. Eine Definition der Gleichzeitigkeit ist in der Quantenphysik unabdingbar, denn entweder muss die Auflösung von Verschränkungen Gleichzeitig an zwei unterschiedlichen Orten passieren (Kopenhagener Deutung der QM) und/oder die Wellenfunktion bzw. das Quantenpotenzial benötigt eine Definition der Gleichzeitigkeit. Ohne Gleichzeitigkeit gibt es demnach keine Vereinheitlichung der Physik.',
                     ))),
                   array( 'text', array( text => array(
                     'Hier müssen wir uns abermals von einem Tabu der modernen Physik lösen:'."\n",
