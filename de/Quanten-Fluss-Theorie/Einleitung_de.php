@@ -765,7 +765,7 @@
                     'Welche Struktur der Elementarteilchen-Strings ist für den Elektromagnetismus oder allgemeiner für die elektroschwache Wechselwirkung verantwortlich?'."\n",
                       'Die elektroschwache Wechselwirkung soll nun durch unterschiedlich dicht mit Fundamentalteilchen'."\n".
                     'besetzte Abschnitte im Elementarteilchen-String zustande kommen, die mit dem String rotieren und so in ihm schwingen (siehe \\jumpname{OM:FrQFT:Einleitung:Fundierung:Ani-Lepton} und \\jumpname{OM:FrQFT:Einleitung:Fundierung:Fig-Photon}).'."\n".
-                    'Die unterschiedlich dicht besetzten Stellen im Elementarteilchen-String senden unterschliedliche Frequenzen der Impulse der Fundamentalteilchen aus.'."\n".
+                    'Die unterschiedlich dicht besetzten Stellen im Elementarteilchen-String senden unterschiedliche Frequenzen der Impulse der Fundamentalteilchen aus.'."\n".
                     'Diese schwingenden Dichteunterschiede der Fundamentalteilchen auf den Elementarteilchen-Strings induzieren ebensolche Dichteunterschiede in den Strings des Vakuums,'."\n".
                     'auf die ich im Anschluss zu sprechen komme, und verbreiten so das Feld der elektroschwachen Wechselwirkung im Raum.'."\n",
                       'Die elektroschwache Wechselwirkung kommt nun dadurch zustande, dass die im Vakuum induzierten dynamischen Dichteunterschiede, sogenannte virtuelle Wechselwirkungsteilchen,'."\n".
@@ -776,6 +776,14 @@
                     'ist ein senkrecht zu seiner Bewegungsrichtung rotierender elliptischer Ring.'."\n".
                     'Auf seinem String sind die Fundamentalteilchen ungleichmäßig dicht verteilt.'."\n",
                       'Dieser Dichteunterschied rotiert entgegengesetzt zu den Fundamentalteilchen durch den String und entspricht seiner elektromagnetischen Polarisation.'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Magnetischer Anteil der Polarisation …} \\\\'."\n".
+                    'Die Quanten-Fluss-Theorie ist eine Theorie mit relativistischen Eigenschaften.'."\n".
+                    'Aus diesem Grund ergeben sich ihre magnetischen Eigenschaften nach Einstein, wie bekannt,'."\n".
+                    'aus den relativistischen Eigenschaften bewegter elektrischer Ladungen.\\color{*Bearb}{(Verweis)}'."\n",
+                      'Mahesh Shenoy erklärt dies wunderbar in einem Video.'."\n".
+                    'Video-Link: \\jump[https://www.youtube.com/watch?v=sDlZ-aY9GN4]{}{Why moving charges produce magnetic field?}'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                   '\\condb{Schwache Polarisation …} \\\\'."\n".
                     'Die schwache Polarisation scheint mir von der elektromagnetischen im Moment nicht zu trennen zu sein.'."\n".
