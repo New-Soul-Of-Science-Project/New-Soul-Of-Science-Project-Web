@@ -526,7 +526,7 @@
                     'ausgehen, dass es ein Elefant ist, wenn es kein gutes Gegenargument gibt.'."\n".
                     'Und der Ausgangspunkt der Quanten-Fluss-Theorie ist ja, dass Elektronen und alle anderen Elementarteilchen eine innere Struktur haben.'."\n".
                     'Danke Mahesh Shenoy!'."\n",
-                      'Video-Link: \\jump{https://www.youtube.com/watch?v=PdN1mweN2ds}{The surprising reason behind electron ‘spin’! (They don’t REALLY spin)}'."\n".
+                      'Video-Link: \\jump[https://www.youtube.com/watch?v=PdN1mweN2ds]{}{The surprising reason behind electron ‘spin’! (They don’t REALLY spin)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:Folge-LichtUhr-Mat', text =>
                                            
