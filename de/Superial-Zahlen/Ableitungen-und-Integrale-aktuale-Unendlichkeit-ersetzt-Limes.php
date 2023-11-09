@@ -771,7 +771,13 @@
                   array( 'text', array( text => array(
                     'Hier können wir nun erkennen und logischerweise sogar absolut sicher sein, dass sich im Endlichen die Taylorreihe\\color{*Bearb}{(Verweis)}'."\n".
                     'zur Eulerschen Zahl \\latexmath{ \e } ergibt.'."\n",
-                      'Wir sehen nun auch, dass die Eulersche Zahl \\latexmath{ \e } aktual unendlich viele aktual unendlich kleine Anteile hat,'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 \sum_{ \forall k \in \mathbb{N} } \frac{ 1^{k} }{ k! } *〉․ \\\ \qquad\qquad\qquad\qquad *〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wir sehen nun auch, dass die Eulersche Zahl \\latexmath{ \e } aktual unendlich viele aktual unendlich kleine Anteile hat,'."\n".
                       'die nicht Null sind und damit eben nicht verschwinden.'."\n".
                     'Denn es ist schlichtweg unmöglich die Ableitung mit einer Differenz zu definieren, die wirklich Null ist!'."\n".
                     'Denn die Differenz muss positiv und kann nicht Null sein, damit sie Sinn macht und nicht undefiniert wird.'."\n",
@@ -847,6 +853,101 @@
                     array( equ_text_std => 'SN.AbIn.QK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot x}  =  〈1〉․〈1〉^{〈\i \cdot x〉_{1}}  }'),
                       array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot x}  :=  \mathrm{cos}_{\s}(x) + \i \cdot \mathrm{sin}_{\s}(x)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈\i \cdot x〉}  =  〈1〉․〈1〉^{〈․\,〈\i \cdot x〉〉_{1}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s}^{․\,〈\i \cdot x〉}  =  〈1〉․〈1〉^{\i \cdot x}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( x + y *)^{\alpha}  =  \sum_{ \forall k \in \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) x^{\alpha - k} y^{k}  }'),
+                      // array( display => 'on',  latex => '{  \Leftrightarrow  x^{\alpha} \cdot *( 1 + \frac{ y }{ x } *)^{\alpha}  =  x^{\alpha} \cdot \sum_{ \forall k \in \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) *( \frac{ y }{ x } *)^{k}  }'),
+                      array( display => 'on',  latex => '{  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ \alpha *( \alpha - 1 *) *( \alpha - 2 *) \cdots *( \alpha - k + 1 *) }{ k! }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  x  =  1  }'),
+                      array( display => 'on',  latex => '{  y  =  ․〈1〉  }'),
+                      array( display => 'on',  latex => '{  \alpha  =  \i \cdot x  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( 1 + ․〈1〉 *)^{\alpha}  =  \sum_{ \forall k \in XXX \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) 1^{\alpha - k} 〈1〉_{-1}^{k}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{\alpha}  =  \sum_{ \forall k \in XXX \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) 〈1〉_{-k}  }'),
+                      array( display => 'on',  latex => '{  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ \alpha *( \alpha - 1 *) *( \alpha - 2 *) \cdots *( \alpha - k + 1 *) }{ k! }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{s}^{0}  =  1  }'),
+                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈\i〉}  =  〈1〉․〈\i〉  }'),
+                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈2 \i〉}  =  〈1〉․〈2 \i〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈3 \i〉}  =  〈1〉․〈3 \i〉〈3〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈4 \i〉}  =  〈1〉․〈4 \i〉〈6〉〈4〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈5 \i〉}  =  〈1〉․〈5 \i〉〈10〉〈10〉〈5〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈6 \i〉}  =  〈1〉․〈6 \i〉〈15〉〈20〉〈15〉〈6〉〈1〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{s}^{0}  =  *( \begin{array}{llll} 0 \\\ 0 \end{array} *)  }'),
+                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈1〉}  =  *〈 *( \begin{array}{llll} 1 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 1 \\\ 1 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈2〉}  =  *〈 *( \begin{array}{llll} 2 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 2 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 2 \\\ 2 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈3〉}  =  *〈 *( \begin{array}{llll} 3 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 3 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 3 \\\ 3 \end{array} *) *〉  }'),
+                      array( display => 'on',  latex => '{  \e_{s}^{․\,〈4〉}  =  *〈 *( \begin{array}{llll} 4 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 4 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 3 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 4 \end{array} *) *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{\s}  =  \e_{\s}^{1}  =  \e_{\s}^{․\,〈\s〉}  =  〈1〉․〈1〉^{\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 *( \begin{array}{llll} \s \\\ 0 \end{array} *) *〉․\,*〈 *( \begin{array}{llll} \s \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 3 \end{array} *) *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 *( \begin{array}{llll} \s \\\ \s - 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s - 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s \end{array} *) *〉_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 *〉․\,*〈 \s *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \s *〉*〈 1 *〉_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i}  =  *〈 1 + \i - \frac{ 1^{2} }{ 2 } - \i \frac{ 1^{3} }{ 6 } + \frac{ 1^{4} }{ 24 } - \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 X - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 X \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 X \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 X \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 X \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 X - \frac{ 1 }{ 2 } *〉*〈 X 1 *〉*〈 X 0 *〉*〈 X 1 *〉_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i \cdot x}  =  *〈 1 + \i x - \frac{ x^{2} }{ 2! } - \frac{ *( \i x *)^{3} }{ 3! } + \frac{ x^{4} }{ 4! } - \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 X - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 X \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 X \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 X \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 X \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 X - \frac{ 1 }{ 2 } *〉*〈 X 1 *〉*〈 X 0 *〉*〈 X 1 *〉_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i \cdot x}  =  *〈 \sum_{ \forall k \in \mathbb{N} } \frac{ *( \i \cdot x *)^{k} }{ k! } *〉․ \\\ \qquad\qquad\qquad\qquad *〈 \cdots *〉*〈 \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots *〉*〈 \cdots *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots *〉*〈 \cdots *〉*〈 \cdots *〉*〈 \cdots *〉*〈 \cdots *〉_{-\s}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
