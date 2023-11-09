@@ -1189,7 +1189,8 @@
                     'OM:FrQFT:Einleitung:Fundierung:Folge-LichtUhr-Mat' => array( headline_text => 'Folge: Die Lichtuhr ist realer Bestandteil der Materie', headline_text_short => 'Folge: Die Lichtuhr ist realer Bestandteil der Materie'),
                     'OM:FrQFT:Einleitung:Fundierung:Fig-GravitationspotMulti' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:FrQFT:Einleitung:Fundierung:Fig-Photon' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:Einleitung:Fundierung:Vakuum' => array( headline_text => 'Hypothese: Das Vakuum und wie es die Wechselwirkungen vermittelt', headline_text_short => 'Hypothese: Das Vakuum und wie es die Wechselwirkungen vermittelt'),
+                    'OM:FrQFT:Einleitung:Fundierung:Vakuum' => array( headline_text => 'Hypothese: Das Vakuum und wie es die Wechselwirkungen vermittelt'/*, headline_text_short => 'XXX'*/),
+                  'OM:FrQFT:Einleitung:PhysikNeuVerstehen' => array( headline_text => 'Physik neu verstehen'/*, headline_text_short => 'XXX'*/),
                 ),
          ),
   'OM:FrQFT:Fazit' =>

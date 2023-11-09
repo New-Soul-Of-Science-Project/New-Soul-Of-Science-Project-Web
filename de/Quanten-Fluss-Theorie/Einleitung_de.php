@@ -213,13 +213,14 @@
                 'Unerklärliche Beobachtungen und theoretisch aufgeworfene Fragen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Zu diesen Beobachtungen gehört das Phänomen der Dunklen Materie\\footnote[*Bearb]{\\const{FrQFT_g_footnote_text_DunkleMat}} und das Phänomen der Dunklen Energie\\footnote{\\const{FrQFT_g_footnote_text_DunkleEnergie}}, die für die Entstehung unseres Kosmos und'."\n".
-                    'für seine Entwicklung von entscheidender Bedeutung sind.'."\n".
+                    'Zu \\jump{OM:FrQFT:NotwenVereinheit}{diesen Beobachtungen} gehört das \\jump{OM:FrQFT:NotwenVereinheit:Problem-der-Dunklen-Materie}{Phänomen der Dunklen Materie}\\footnote[*Bearb]{\\const{FrQFT_g_footnote_text_DunkleMat}}'."\n".
+                    'und das \\jump{OM:FrQFT:NotwenVereinheit:Problem-der-Dunklen-Energie}{Phänomen der Dunklen Energie}\\footnote{\\const{FrQFT_g_footnote_text_DunkleEnergie}},'."\n".
+                    'die für die Entstehung unseres Kosmos und für seine Entwicklung von entscheidender Bedeutung sind.'."\n".
                     'Auch sind Fragen offen wie:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Was geschah ganz direkt nach dem Urknall?\\color{*Bearb}{(Verweis)}',
-                        'Oder wie kommt die Hubble-Konstante auf ihren gemessenen Wert?\\color{*Bearb}{(Verweis)}',
-                        'Was passiert an der Oberfläche Schwarzer Löcher?\\color{*Bearb}{(Verweis)}',
+                        'Was geschah ganz direkt nach dem \\jump{OM:FrQFT:NotwenVereinheit:Problem-der-Singularitaeten}{Urknall}?\\color{*Bearb}{(Verweis)}',
+                        'Oder wie kommt die \\jump{OM:FrQFT:NotwenVereinheit:Problem-der-kosmologischen-Konstanten}{Hubble-Konstante} auf ihren gemessenen Wert?\\color{*Bearb}{(Verweis)}',
+                        'Was passiert an der \\jump{OM:FrQFT:NotwenVereinheit:Problem-der-Feuerwand}{Oberfläche Schwarzer Löcher}?\\color{*Bearb}{(Verweis)}',
                     ))),
                   array( 'text', array( text => array(
                     'Und so fort …'."\n",
@@ -628,7 +629,8 @@
                       'Diese abgestrahlten Impulse sind in der neuen Physik für alle grundsätzlichen Beobachtungen in Bezug auf die Quantenphysik und die Allgemeine Relativitätstheorie verantwortlich.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
-                'Folge: Bildung von geschlossenen Strings aus Fundamentalteilchen \\\\ \\color{*TitleAdd}{– die starke Farbpolarisation und die Stringspannung}')),
+                'Folge: Bildung von geschlossenen Strings aus Fundamentalteilchen', subline =>
+                  'Die starke Farbpolarisation und die String-Spannung')),
                   array( 'text', array( text => array(
                     'Diese kegelförmigen Impulse sorgen für die Verkettung der Fundamentalteilchen zu den immer geschlossenen Strings der Elementarteilchen der neuen Physik,'."\n".
                     'siehe \\jumpname{OM:FrQFT:Einleitung:Fundierung:Ani-VakuumElapson} und auch die Fundamentalteilchen der \\jumpname{OM:FrQFT:Einleitung:Fundierung:Ani-Lepton} sind auf diese Weise verkettet.'."\n".
@@ -641,6 +643,44 @@
                     'dass die Fundamentalteilchen auf Rotationsbahnen gezwungen werden.'."\n",
                       'Das aus ihrer geradlinigen Bahn auf kreis- oder ellipsenförmige Bahnen zwingen ist ein Bruch ihrer Bewegungssymmetrie.'."\n".
                     'Diese hat eine Polarisation zur Folge, die ich \\italic{starke Farbpolarisation} nenne, in Anlehnung an die Farbladung der Quantenchromodynamik.'."\n"))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Einleitung:PhysikNeuVerstehen'),
+                    )),
+              )
+          ); ?>
+
+
+		    	<!  • Physik neu verstehen  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:FrQFT:Einleitung:PhysikNeuVerstehen',
+              'XXX', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Einleitung:Fundierung', type => 'back'),
+                    )),
+                      
+                  /*array( 'notice', array( Display => 'showContent', text => array(
+                    '(Aktuelle Fachdiskussion:)',
+                    '(• Lernen von Robotern und Kleinkindern: Roboter lernen am Besten, wenn sie die Vorhersagefehler minimieren. Theorie der prädiktiven Informationsverarbeitung (predictive proccessing). Ein rückgekoppeltes neuronales Netzwerk, wo die Differenz zwischen Vorhersage und deren realen Überprüfung als Fehlerdiffereznz wieder in die Verarbeitung der Informationsschichten eingespeist wird. Durch das Nachbilden des Lernens von Kleinkindern mit Robotern verstehen wir besser, wie Kleinkinder lernen, welche Probleme dabei auftreten können und wie wir diese vermeiden können.\\footnote{Vgl. \\cite{Kwon:SelbststaendigLernendeRoboter:2018}.})',
+                    '(– Der Achtsamkeitsprozess scheint universal zu sein: Solche Roboter sind Kleinkindern scheinbar so ähnlich, dass für sie die gleichen Voraussetzungen gelten, wenn sie so wie Kleinkinder werden sollen. »›Wenn mich jemand fragt, ob ein Roboter wirklich Menschenähnlich werden kann, dann frage ich zurück, ob sich jemand um ihn, wie um ein echtes Kind kümmern würde. Wenn ja, dann ist das vielleicht realisierbar; wenn nein, dann kann sich ein Roboter unmöglich wie ein richtiges menschliches Kind entwickeln.‹«, S. 72.)',
+                    '(– Feynman sagt dazu: »›Was ich nicht erschaffen kann, verstehe ich nicht.‹« Jun Tani sagt dazu: »›Ich kann verstehen, was ich erschaffen kann.‹«, S. 72.)',
+                    ))),*/
+                      
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Folge: Die Abzählinterpretation der Heisenbergschen Unschärferelation')),
