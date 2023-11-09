@@ -159,7 +159,7 @@
                     )),
                       
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{"Die etwas andere Zeit" auf: \\jump[http://www.einstein-online.info/resolveuid/e3098c06f9049a24096943e5e1ec29be]{}{http://www.einstein-online.info/resolveuid/e3098c06f9049a24096943e5e1ec29be}}'."\n"))),
+                    '\\color{*Bearb}{"Die etwas andere Zeit" auf: \\url{http://www.einstein-online.info/resolveuid/e3098c06f9049a24096943e5e1ec29be}}'."\n"))),
                       
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{Bewegung generiert Zeit.}'."\n"))),
@@ -195,7 +195,7 @@
                     'Und die Quanten-Fluss-Theorie enthält aufgrund ihrer fraktalen Struktur sogar verschiedene Kausalitätskegel auf den jeweiligen Fraktal-Ebenen, was es noch komlexer macht.'."\n",
                       'Stülpten sich die Kausalitätskegel bei rückwärts laufender Zeit nicht um, so würden sich Ursache und Wirkung vertauschen, was physikalisch unsinnig ist.'."\n",
                     'Verlässt man die Newtonsche Physik und betrachtet die ART oder eine Quantenfeldtheorie, so gibt es diese Causalitätskelgel bei jeder sich bewegenden Masse oder Ladung dadurch, dass sich die Wechselwirkung, ggf. die RZ-Krümmung, mit LG ausbreitet.'."\n",
-                      'Sekundärliteratur: \\jump[http://www.spektrum.de/news/suche-nach-dem-ursprung-der-zeit/1330152]{}{http://www.spektrum.de/news/suche-nach-dem-ursprung-der-zeit/1330152}'."\n",
+                      'Sekundärliteratur: \\url{http://www.spektrum.de/news/suche-nach-dem-ursprung-der-zeit/1330152}'."\n",
                       'Mein Leserbrief dazu:'."\n",
                       'Kausalitätskegel – Ursache und Wirkung:'."\n",
                       'Betrachtet man Elementarteilchen, so hat jedes Teilchen eine Art Kausalitätssphäre, wenn man davon ausgeht, dass die Wechselwirkungen zwischen den Teilchen mit Lichtgeschwindigkeit ausgetauscht werden. Diese Art von Sphäre beschreibt die Geometrie, mit der sich die Wechselwirkung des Teilchens in den Raum ausbreitet.'."\n".

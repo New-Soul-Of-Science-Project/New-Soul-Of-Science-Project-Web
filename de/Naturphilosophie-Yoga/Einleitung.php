@@ -887,7 +887,7 @@
                     'Die Atemübungen (Pranayama) sind seit jeher ein zentraler Bestandteil des Yoga.\\footnote{Internet: \\\\ Vgl. \\cite{wiki:Yoga:2016}.}'."\n".
                     'Dabei gilt der Atem (Prana) im Yoga als zentrale Lebenskraft und dient im Raja Yoga der Zusammenführung von Körper und Geist.\\footnote{Internet: \\\\ Vgl. \\cite{wiki:Prana:2016}, Prana im Yoga und im Hinduismus.}'."\n".
                     'Die Atemübungen werden zum Beispiel genutzt, um im Rahmen des \\jump{OM:NPYo:Einleitung:ErkenneDichSelbst}{Achtsamkeitsprozesses}'."\n".
-                    'die „Aufmerksamkeitsenergie“ durch den Körper zu lenken und so das beobachtende, fühlende Bewusstsein auf bestimmte Bereiche des Körpers zu konzentrieren.\\footnote{Internet: \\\\ Vgl. Video \\jump[http://de.ashtangayoga.info/ashtangayoga/grundlagen/energie-bandha/][*Bearb]{}{http://de.ashtangayoga.info/ashtangayoga/grundlagen/energie-bandha/}.}'."\n".
+                    'die „Aufmerksamkeitsenergie“ durch den Körper zu lenken und so das beobachtende, fühlende Bewusstsein auf bestimmte Bereiche des Körpers zu konzentrieren.\\footnote{Internet: \\\\ Vgl. Video \\url{http://de.ashtangayoga.info/ashtangayoga/grundlagen/energie-bandha/}.}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".

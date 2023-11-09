@@ -19,7 +19,7 @@
                     '• Die Dimension des Vakuums wird durch seinen Ausdehnungsdruck – Chaos der Vakuum-Elapsonen (Djet) – und seine innere Anziehung – Graviradiation (Neheh) – hergestellt.',
                     '\\bold{Weitere Notizen:}',
                     '• Lesen: Bezug zwischen der kosmischen Konstante und dem Higgs-Feld. Siehe \\jump[http://books.google.de/books?id=7qKCvtUZgiIC&printsec=frontcover&hl=de#v=onepage&q&f=false]{}{Raum, Zeit, Fortschritt: Kategorien des Handelns und der Globalisierung}, S. 70-71. Den Verweisen nachgehen. Dieses Buch ins Literaturverzeichnis aufnehmen? Gibt viele Verweise und Anregungen.',
-                    '• Einen dem Vakuum sehr ähnlichen Begriff gibt es in der Systemtheorie mit dem ›unmarked space‹. Der ›marked space‹ beinhaltet dann die unterscheidbaren, benennbaren Dinge des im ›unmarked space‹ enthaltenen ›marked space‹. (Vgl. \\jump[https://homepages.fhv.at/wf/Ansatz/Sys.htm]{}{https://homepages.fhv.at/wf/Ansatz/Sys.htm}, gespeichert im Ordner „marked space - unmarked space“.)',
+                    '• Einen dem Vakuum sehr ähnlichen Begriff gibt es in der Systemtheorie mit dem ›unmarked space‹. Der ›marked space‹ beinhaltet dann die unterscheidbaren, benennbaren Dinge des im ›unmarked space‹ enthaltenen ›marked space‹. (Vgl. \\url{https://homepages.fhv.at/wf/Ansatz/Sys.htm}, gespeichert im Ordner „marked space - unmarked space“.)',
                     ))),
                       
                   array( 'normal',

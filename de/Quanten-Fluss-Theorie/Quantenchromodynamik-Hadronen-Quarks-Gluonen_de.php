@@ -380,7 +380,7 @@
                       
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{'."\n".
-                    '(• Im Gegensatz zu Elapsonen gibt es eine WW zwischen Gluonen, die auch in der FrQFT ersichtlich ist, da Gluonen String-Ausschnitte der Elapsonen sind. Gucken, ob sich hierzu etwas in \\cite{Ent:DerKlebstoffDerWelt:2015}, findet. Sonst im Artikel auf Spektrum.de, Dirk Eidemüller, Ein Teilchen aus elementarer Kraft?, URL: \\jump[http://www.spektrum.de/news/ein-teilchen-aus-elementarer-kraft/1372085][*Bearb]{}{http://www.spektrum.de/news/ein-teilchen-aus-elementarer-kraft/1372085}) \\\\'."\n".
+                    '(• Im Gegensatz zu Elapsonen gibt es eine WW zwischen Gluonen, die auch in der FrQFT ersichtlich ist, da Gluonen String-Ausschnitte der Elapsonen sind. Gucken, ob sich hierzu etwas in \\cite{Ent:DerKlebstoffDerWelt:2015}, findet. Sonst im Artikel auf Spektrum.de, Dirk Eidemüller, Ein Teilchen aus elementarer Kraft?, URL: \\url{http://www.spektrum.de/news/ein-teilchen-aus-elementarer-kraft/1372085}) \\\\'."\n".
                     '}'."\n"))),
                       
                   array( 'text', array( text => array(

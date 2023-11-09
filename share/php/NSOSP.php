@@ -126,11 +126,11 @@
   $FrQFT_g_zitat_BuckminsterFuller_StartingPoint =
                   array( 'text', array( Shape  => 'quote', text => array(
                         'The vector equilibrium is the zero starting point for happenings or nonhappenings: it is the empty theater and empty circus and empty Universe ready to accommodate any act and any audience.'."\n"),
-                        addtext => '~Richard Buckminster Fuller\\footnote{Buckminster Fuller, Richard, \\jump[http://www.rwgrayprojects.com/SynergeticsDictionary/SD.html]{}{SYNERGETICS} (2nd. Ed.) at Sec. 503.03; 11 Dec\'75. \\\\ Internet: \\\\ Cosmometry, Vector Equilibrium & Isotropic Vector Matrix. URL: \\jump[https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix]{}{https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix}.}'));
+                        addtext => '~Richard Buckminster Fuller\\footnote{Buckminster Fuller, Richard, \\jump[http://www.rwgrayprojects.com/SynergeticsDictionary/SD.html]{}{SYNERGETICS} (2nd. Ed.) at Sec. 503.03; 11 Dec\'75. \\\\ Internet: \\\\ Cosmometry, Vector Equilibrium & Isotropic Vector Matrix. URL: \\url{https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix}.}'));
   $FrQFT_g_zitat_BuckminsterFuller_StartingPoint_TranslatedTo_German =
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Das vektorielle Gleichgewicht ist der Nullpunkt für Ereignisse oder Nicht-Ereignisse: Es ist das leere Theater, der leere Zirkus und das leere Universum, das bereit ist, jede Handlung und jedes Publikum aufzunehmen.'."\n"),
-                        addtext => '~Richard Buckminster Fuller\\footnote{Buckminster Fuller, Richard, \\jump[http://www.rwgrayprojects.com/SynergeticsDictionary/SD.html]{}{SYNERGETICS} (2nd. Ed.) at Sec. 503.03; 11 Dec\'75. \\\\ Internet: \\\\ Cosmometry, Vector Equilibrium & Isotropic Vector Matrix. URL: \\jump[https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix]{}{https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix}.} \\small{\\italic{Übersetzt ins Deutsche mit \\jump[https://www.deepl.com/translator]{}{DeepL Übersetzer}}}'));
+                        addtext => '~Richard Buckminster Fuller\\footnote{Buckminster Fuller, Richard, \\jump[http://www.rwgrayprojects.com/SynergeticsDictionary/SD.html]{}{SYNERGETICS} (2nd. Ed.) at Sec. 503.03; 11 Dec\'75. \\\\ Internet: \\\\ Cosmometry, Vector Equilibrium & Isotropic Vector Matrix. URL: \\url{https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix}.} \\small{\\italic{Übersetzt ins Deutsche mit \\jump[https://www.deepl.com/translator]{}{DeepL Übersetzer}}}'));
   
   $NPYo_g_angebot_IchGebeDirNaPhilYoga =
                   array( 'text', array( Shape => 'italic', text => array(
@@ -150,7 +150,7 @@
                         'Als wir ZIST aufbauten galten 18°C als eine angenehme Wohnzimmertemperatur.'."\n".
                         'Heute sind wir bei 23.'."\n".
                         'Das heißt, wir verbrauchen alle Energie, im uns Zusammenreißen, halten, irgendwie halten, uns hoch halten und so weiter, statt im Lustvollen Leben.'."\n"),
-                        addtext => '\\footnote{\\cite{KenFM:ImGespraechMitWolfBuentig:2017}, \\quote{Ich nenne das Normopathie. Das Leben nach den Normen, unter Vernachlässigung des Wissens, worum es bei mir jetzt geht. …}, ab Sek. 1:12:20. \\\\ Die ZIST gemeinnützige GmbH (Zentrum für Individual- und Sozialtherapie) finden sie unter: \\jump[https://www.zist.de][]{}{https://www.zist.de}.}'));
+                        addtext => '\\footnote{\\cite{KenFM:ImGespraechMitWolfBuentig:2017}, \\quote{Ich nenne das Normopathie. Das Leben nach den Normen, unter Vernachlässigung des Wissens, worum es bei mir jetzt geht. …}, ab Sek. 1:12:20. \\\\ Die ZIST gemeinnützige GmbH (Zentrum für Individual- und Sozialtherapie) finden sie unter: \\url{https://www.zist.de}.}'));
   
   $SpaLeb_g_zitat_Fliessbach_ART1998_BestaetigMachprinzip =
                     array( 'text', array( Shape  => 'quote', text => array(

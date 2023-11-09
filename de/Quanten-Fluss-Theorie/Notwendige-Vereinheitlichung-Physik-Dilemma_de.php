@@ -212,7 +212,7 @@
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '(Aktueller fachlicher Diskurs:)',
-                    '(• Schwarz, Dominik J. - Streit um Hubbles Erbe - 20180620 - Spektrum der Wissenschaft: \\jump[https://www.spektrum.de/magazin/streit-um-hubbles-erbe/1567830]{}{https://www.spektrum.de/magazin/streit-um-hubbles-erbe/1567830})',
+                    '(• Schwarz, Dominik J. - Streit um Hubbles Erbe - 20180620 - Spektrum der Wissenschaft: \\url{https://www.spektrum.de/magazin/streit-um-hubbles-erbe/1567830})',
                     ))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{(Diese Aussage muss entschärft und verfeinert werden.)}'."\n"))),

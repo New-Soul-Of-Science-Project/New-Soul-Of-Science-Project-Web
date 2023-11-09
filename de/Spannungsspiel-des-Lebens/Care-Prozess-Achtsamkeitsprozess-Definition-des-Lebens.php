@@ -916,7 +916,7 @@
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '• Kybernetik einführen, siehe \\jump[https://de.wikipedia.org/w/index.php?title=Kybernetik&oldid=217706680]{}{https://de.wikipedia.org/w/index.php?title=Kybernetik&oldid=217706680}.',
+                    '• Kybernetik einführen, siehe \\url{https://de.wikipedia.org/w/index.php?title=Kybernetik&oldid=217706680}.',
                     ))),
                       
                   array( 'text', array( text => array(

@@ -77,7 +77,7 @@
                     'Der Inhalt und Programm-Code dieser Internetseite ist auf GitHub unter der \\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{Lizenz (folge diesem Link)}'."\n".
                     'zur Verwendung und Beteiligung zur Verfügung gestellt:'."\n"))),
                   array( 'text', array( text => array(
-                    '\\jump[https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web]{}{https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web}'."\n"))),
+                    '\\url{https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web}'."\n"))),
                   array( 'text', array( text => array(
                     'Dort gibt es auch die Möglichkeit über Issues und Pullrequests konstruktive Änderungsvorschläge einzureichen oder eine inhaltliche Diskussion zu führen.'."\n".
                     'Ich helfe dir gerne dabei herauszufinden, wie das funktioniert.'."\n"))),
@@ -311,7 +311,7 @@
                   array( 'text', array( text => array(
                     'Copyright 2010 Steve Matteson'."\n"))),
                   array( 'text', array( text => array(
-                    '    \\jump[http://www.apache.org/licenses/LICENSE-2.0]{}{http://www.apache.org/licenses/LICENSE-2.0}'."\n"))),
+                    '    \\url{http://www.apache.org/licenses/LICENSE-2.0}'."\n"))),
                   array( 'text', array( text => array(
                     'Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.'."\n"))),
                       
@@ -322,7 +322,7 @@
                     'Die wunderschöne schwarz-weß Grafik von Jeff Dahl habe ich aus WikiPedia.'."\n".
                     'Für das ›Auge des Ra‹ habe ich sie einfach gespiegelt.'."\n"))),
                   array( 'text', array( text => array(
-                    'Wikipedia-Seite: \\jump[https://de.wikipedia.org/wiki/Datei:Eye_of_Horus_bw.svg]{}{https://de.wikipedia.org/wiki/Datei:Eye_of_Horus_bw.svg}'."\n"))),
+                    'Wikipedia-Seite: \\url{https://de.wikipedia.org/wiki/Datei:Eye_of_Horus_bw.svg}'."\n"))),
                   array( 'text', array( text => array(
                     '\\bold{Lizenz:}'."\n"))),
                   array( 'text', array( text => array(
@@ -340,7 +340,7 @@
                   array( 'text', array( text => array(
                     'Danke liebe Bilbo, dass ich deine wunderschönen Bilder verwenden darf!'."\n"))),
                   array( 'text', array( text => array(
-                    'Originale auf der Seite der Ausstellung „Publik – Privat“ von Bilbo Calvez: \\jump[https://www.bilbo.calvez.info/publik-privat]{}{https://www.bilbo.calvez.info/publik-privat}'."\n"))),
+                    'Originale auf der Seite der Ausstellung „Publik – Privat“ von Bilbo Calvez: \\url{https://www.bilbo.calvez.info/publik-privat}'."\n"))),
                   array( 'text', array( text => array(
                     '\\bold{Lizenz:}'."\n"))),
                   array( 'text', array( text => array(
