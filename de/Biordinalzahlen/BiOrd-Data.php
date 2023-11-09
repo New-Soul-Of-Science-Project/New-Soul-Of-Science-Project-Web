@@ -52,7 +52,7 @@
       text_titel_h1 => 'Einleitung',
       text_titel_short => 'Einleitung',
       text_undertitel_h2 => 'Die Erweiterung der Ordinalzahlen zu einem Ring',
-      text_titel_discr_h3 => 'Negative Ordinalzahlen und Vorgänger aller Limeszahlen\\hidden{ (\\term{ω, 2ω, ⋯ , ω^{2}, ⋯})}',
+      text_titel_discr_h3 => 'Negative Ordinalzahlen und Vorgänger aller Limeszahlen\\hidden{ (\\term{ω, 2ω, ⋯ , ω^^{2}, ⋯})}',
       jump_ary => array(
         'OM:BiOrd:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    

@@ -105,7 +105,7 @@
                 'Ableitung genau verstehen')),
                   array( 'text', array( text => array(
                     'Das Nicht-Verschwinden aller Summanden funktioniert dann, wenn wir die beim Ableiten gegen Null gehenden Summanden selber als unendlich klein, aber nicht als verschwindend betrachten.'."\n".
-                    'Wir setzten den gegen Null gehenden Summanden zu \\term{Δx ≔ s^{-1}}, zum Kehrwert der \\italic{superialen Basis} \\term{s},'."\n".
+                    'Wir setzten den gegen Null gehenden Summanden zu \\term{Δx ≔ s^^{-1}}, zum Kehrwert der \\italic{superialen Basis} \\term{s},'."\n".
                     'die wir im Verlauf genauer ergründen werden:'."\n".
                     ''))),
                   array( 'equations',
@@ -119,13 +119,13 @@
                     ))),
                   array( 'text', array( text => array(
                     'Dies vertiefen wir auf der Seite \\italic{\\jumpname{OM:SupNum:Ableitungen-Integrale}}.'."\n",
-                      'Dabei ist \\term{s^{-1}} ein neues Symbol, über das ich zunächst nur annahm, dass es kleiner als jede positive Zahl war und doch größer als Null.'."\n".
-                    'Ähnlich wie bei den komplexen Zahlen die imaginäre Einheit \\term{i} war auch \\term{s^{-1}} eine neue Einheit, die ich als \\italic{superial kleine Einheit} bezeichne.'."\n".
+                      'Dabei ist \\term{s^^{-1}} ein neues Symbol, über das ich zunächst nur annahm, dass es kleiner als jede positive Zahl war und doch größer als Null.'."\n".
+                    'Ähnlich wie bei den komplexen Zahlen die imaginäre Einheit \\term{i} war auch \\term{s^^{-1}} eine neue Einheit, die ich als \\italic{superial kleine Einheit} bezeichne.'."\n".
                     'In der Mathematik ist es kein Problem ein neues Symbol zu kreieren und zu definieren, solange sich dadurch keine Widersprüche ergeben.\\footnote{Sekundärliteratur \\\\ Vgl. \\cite{Freistetter:DieFreiheitDerImaginaerenZahlen:2016}. \\\\ Internet: \\\\ Vgl. \\cite{Freistetter:DieFreiheitDerMathematik:2016}.}'."\n",
-                      'Die superial kleine Einheit \\term{s^{-1}} führte dazu, dass die sonst bei der Ableitung verschwindenden Summanden \\term{a_{k}} nicht verloren gehen, sondern in unendlich kleinen'."\n".
-                    'Dimensionen \\term{q_{-1}⋅s^{-1} + q_{-2}⋅s^{-2} + q_{-3}⋅s^{-3} + …} erhalten blieben, also in einer \\italic{superial} kleinen Welt.'."\n".
+                      'Die superial kleine Einheit \\term{s^^{-1}} führte dazu, dass die sonst bei der Ableitung verschwindenden Summanden \\term{a_{k}} nicht verloren gehen, sondern in unendlich kleinen'."\n".
+                    'Dimensionen \\term{q_{-1}⋅s^^{-1} + q_{-2}⋅s^^{-2} + q_{-3}⋅s^^{-3} + …} erhalten blieben, also in einer \\italic{superial} kleinen Welt.'."\n".
                     'Von hier können sie auch beim Integrieren wieder auftauchen.'."\n".
-                    'Die Dimension \\term{q_{0}⋅s^{0} = q_{0}} stellt dann die uns bekannten, endlichen Zahlen dar, weil \\term{s^{0} = 1} ist, wie gewohnt.'."\n",
+                    'Die Dimension \\term{q_{0}⋅s^^{0} = q_{0}} stellt dann die uns bekannten, endlichen Zahlen dar, weil \\term{s^^{0} = 1} ist, wie gewohnt.'."\n",
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Konkrete Ableitungen} \\\\'."\n".
@@ -134,7 +134,7 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'So ergibt sich als Beispiel für die Funktion \\term{f(x) = x^{2}}:'."\n".
+                      'So ergibt sich als Beispiel für die Funktion \\term{f(x) = x^^{2}}:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -148,10 +148,10 @@
                                           /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-Ergebnis}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wenn wir also \\term{s^{-1}} zu Null setzen, dann kommt das übliche Ergebnis \\term{f\'(x) = 2x} heraus.'."\n".
+                      'Wenn wir also \\term{s^^{-1}} zu Null setzen, dann kommt das übliche Ergebnis \\term{f\'(x) = 2x} heraus.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Für \\term{f(x) = x^{3}} ergibt sich dann:'."\n".
+                      'Für \\term{f(x) = x^^{3}} ergibt sich dann:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -165,7 +165,7 @@
                                           /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-Ergebnis}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wenn wir also \\term{s^{-1}} zu Null setzen, dann kommt das übliche Ergebnis \\term{f\'(x) = 3x^{2}} heraus.'."\n",
+                      'Wenn wir also \\term{s^^{-1}} zu Null setzen, dann kommt das übliche Ergebnis \\term{f\'(x) = 3x^^{2}} heraus.'."\n",
                         '\\\\ '."\n".
                       ''))),
 
@@ -190,11 +190,11 @@
                       'Wie groß die Schritte der Summation sind, erkennen wir an der Ableitung.'."\n".
                     'Die aufsummierten Flächen gleichen den Ergebnis-Differenzen der Ableitung \\term{f\'(x)} in unendlich kleinen Einheiten und'."\n".
                     'haben damit deren Höhe.'."\n".
-                    'Ihre Streifenbreite ist \\term{Δx ≔ s^{-1}}, wie die Funktionsparameter-Differenz der Ableitung.'."\n".
-                    'Wir können dabei \\term{s^{-1}} als eine unendlich kleine Einheit \\term{1⋅s^{-1}} verstehen.'."\n".
+                    'Ihre Streifenbreite ist \\term{Δx ≔ s^^{-1}}, wie die Funktionsparameter-Differenz der Ableitung.'."\n".
+                    'Wir können dabei \\term{s^^{-1}} als eine unendlich kleine Einheit \\term{1⋅s^^{-1}} verstehen.'."\n".
                     'Eine \\italic{unendlich kleine Eins}.'."\n",
                       'Auf der anderen Seite müssen wir eine unendlich große und ganze Anzahl der Streifen summieren.'."\n".
-                    'Es müssen genau \\term{s} Streifen sein, damit sich die \\term{s^{-1}} breiten Streifen zu einer endlich großen'."\n".
+                    'Es müssen genau \\term{s} Streifen sein, damit sich die \\term{s^^{-1}} breiten Streifen zu einer endlich großen'."\n".
                     'Zahl aufsummieren und wir das Integral erhalten.'."\n".
                     'Damit ist eindeutig klar, dass \\term{s} eine unendlich große, ganze und positive Zahl ist.'."\n".
                     'Es muss also formal möglich sein, alle positiven ganzen Zahlen von den endlichen bis \\term{s} zu zählen,'."\n".
@@ -248,10 +248,10 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Jetzt haben wir zwar die richtige Anzahl an Schritten, aber sie sind nicht fein genug,'."\n".
-                      'sollen sie doch eigentlich von Null bis \\latexmath{ x } in \\term{s^{-1}} kleinen Schritten laufen.'."\n".
-                      'So müssen wir die Zahlen dieses Intervals der ganzen Superial-Zahlen also mit \\term{s^{-1}} multiplizieren'."\n".
+                      'sollen sie doch eigentlich von Null bis \\latexmath{ x } in \\term{s^^{-1}} kleinen Schritten laufen.'."\n".
+                      'So müssen wir die Zahlen dieses Intervals der ganzen Superial-Zahlen also mit \\term{s^^{-1}} multiplizieren'."\n".
                       'und auf diese Weise auf eine \\jump{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen}{superial kleine Größenordnung skalieren}.'."\n",
-                        'Alternativ können wir auch eine Menge definieren, in der alle Zahlen schon mit \\term{s^{-1}} multipliziert sind:'."\n".
+                        'Alternativ können wir auch eine Menge definieren, in der alle Zahlen schon mit \\term{s^^{-1}} multipliziert sind:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -262,7 +262,7 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Im benötigten Mengen-Intervall laufen die Zahlen in \\latexmath{ x \cdot s } unendlich kleinen Schritten'."\n".
-                      'der Größe \\term{s^{-1}} durch.'."\n".
+                      'der Größe \\term{s^^{-1}} durch.'."\n".
                       'Auszugweise sieht diese Intervall-Menge von unendlich feinschrittigen superial kleinen ganzen Superial-Zahlen folgendermaßen aus,'."\n".
                       'wobei Beginn und Ende exakt stimmen und sich ihre Größensortierung nach der lexikografischen Ordnung\\footnote{\\const{SupNum_g_footnote_text_LexikographischeOrdnung}},'."\n".
                       'unter Berücksichtigung der Potenz von \\latexmath{ s }, richtet:'."\n".
@@ -300,7 +300,7 @@
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Wir nehmen das erste obige \\jump{OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen}{Ableitungsbeispiel} \\latexmath{ f(x) = x^2 } mit'."\n".
-                      'dem Ableitungsergebnis \\term{ f\'(x) = 2 x + s^{-1} } und setzen dies in unsere Integralformel ein:'."\n".
+                      'dem Ableitungsergebnis \\term{ f\'(x) = 2 x + s^^{-1} } und setzen dies in unsere Integralformel ein:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -489,7 +489,7 @@
                     'einen Punkt gesetzt, wie das im Angelsächsischen hinter der nullten Stelle einer Dezimalzahl üblich ist.'."\n",
                       'Diese Darstellung verdeutlicht auch, dass es sich bei \\term{s} im Grunde um'."\n".
                     'eine unendlich große Eins oder genauer um eine superial große Eins handelt;'."\n".
-                    'und bei \\term{s^{-1}} um eine unendlich kleine Eins oder genauer um eine superial kleine Eins:'."\n".
+                    'und bei \\term{s^^{-1}} um eine unendlich kleine Eins oder genauer um eine superial kleine Eins:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -556,7 +556,7 @@
                     'Wie groß sind diese Schritte und wieviele Schritte sind notwendig, um die ursprüngliche'."\n".
                     'Funktion \\latexmath{ f(x) } aus der abgeleiteten \\latexmath{ f\'(x) } wieder herzustellen.'."\n",
                       'Als wir uns damit beschäftigten, kam die Erkenntnis, wir müssten \\latexmath{ x \cdot s }'."\n".
-                    'Schritte in den Funktionswerten von \\latexmath{ f\'(x) } der Größe \\term{s^{-1}}'."\n".
+                    'Schritte in den Funktionswerten von \\latexmath{ f\'(x) } der Größe \\term{s^^{-1}}'."\n".
                     'von Null bis ausschließlich \\latexmath{ x } addieren.'."\n",
                       'Diese Schritte konnten wir durch Skalierung von ganzen Zahlen von Null bis ausschließlich'."\n".
                     '\\latexmath{ x \cdot s } erzeugen.'."\n".
@@ -589,7 +589,7 @@
                   array( 'text', array( text => array(
                     'Bei Überlegung zu dieser Frage viel mir nach und nach auf, dass sich das Zählen von natürlichen Zahlen mit den \\italic{Superial-Zahlen} \\term{\M(S)} ins unendlich Große'."\n".
                     'vorsetzen ließ und dies nach meiner vorhergehenden Forschung mit der Umkehrung der Ableitung, mit dem \\jump{OM:SupNum:Einleitung:Grundlagen:Ganze-Natuerl-Sup-Zahl-und-Integration}{Integral}, verbunden war.'."\n".
-                    'Beim Integrieren mit Superial-Zahlen wurde eine wohldefinierte aktual unendliche Summe mit \\term{s} Summanden von Flächenstreifen der Breite \\term{s^{-1}} aufsummiert.'."\n",
+                    'Beim Integrieren mit Superial-Zahlen wurde eine wohldefinierte aktual unendliche Summe mit \\term{s} Summanden von Flächenstreifen der Breite \\term{s^^{-1}} aufsummiert.'."\n",
                       'Darüber ließ sich die Menge der ganzen Superial-Zahlen \\term{\M(S)_{Z}} oder der natürlichen Superial-Zahlen \\term{\M(S)_{N}} definieren.'."\n".
                     'Wobei es einen Übergang ins Unendliche gab, der im Dunkeln lag, jedoch kam man nach belieben irgendwo im unendlich großen heraus.'."\n".
                     'Man zählt:'."\n".
@@ -909,7 +909,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  (\forall q \in \mathbb{Q}^{+}) (\forall k \in \mathbb{Q}^{+}) *[  0 < k \cdot s^{-1} <  q  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir können hieran erkennen, dass keine rationale Zahl \\term{k} existiert, die im Produkt mit \\term{s^{-1}} ins Endliche kommen kann.'."\n"))),
+                    'Wir können hieran erkennen, dass keine rationale Zahl \\term{k} existiert, die im Produkt mit \\term{s^^{-1}} ins Endliche kommen kann.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Natürliche Superial-Zahlen} \\\\'."\n".
                     'Wenn wir nun mitten in der Zahlentheorie sind, dann stellt sich auch die Frage, ob es ebenso natürliche Superial-Zahlen \\term{\M(S)_{N}} gibt.'."\n",

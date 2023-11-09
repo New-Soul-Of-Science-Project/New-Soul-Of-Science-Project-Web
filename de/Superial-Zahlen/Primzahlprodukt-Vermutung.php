@@ -18,8 +18,8 @@
                     '• Die Primzahlen werden unter den sehr großen natürlichen Zahlen extrem selten.',
                     '• Es klafft eine riesige Lücke zwischen den endlichen natürlichen Zahlen und \\term{ω}, siehe \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}. Ist diese Lücke wirklich so groß?',
                     '– Meine Analyse sagt: Eine Anzahl von \\term{ω} Zahlen sind vom Typ \\term{ω - n} in den Biordinalzahlen.',
-                    '– Stimmt allerdings die Primzahlprodukt-Vermutung, dann liegen auch alle \\term{p^{-1}⋅ω ± n}, mit \\term{p} ist ein Primzahlprodukt einfacher Potenz aus endlich vielen Primzahlen.',
-                    '⋅ Ob es dann eine Einschränkung für die Größe von \\term{n} gibt, ist mir nicht ganz unklar, aber unwahrscheinlich. Wenn nicht, sind es je \\term{p^{-1}} dann \\term{2⋅ω} Zahlen.',
+                    '– Stimmt allerdings die Primzahlprodukt-Vermutung, dann liegen auch alle \\term{p^^{-1}⋅ω ± n}, mit \\term{p} ist ein Primzahlprodukt einfacher Potenz aus endlich vielen Primzahlen.',
+                    '⋅ Ob es dann eine Einschränkung für die Größe von \\term{n} gibt, ist mir nicht ganz unklar, aber unwahrscheinlich. Wenn nicht, sind es je \\term{p^^{-1}} dann \\term{2⋅ω} Zahlen.',
                     '\\bold{Interessante Erkenntnisse zu Primzahlen}',
                     '• Der \\jump[https://de.wikipedia.org/w/index.php?title=Stern-Brocot-Folge&oldid=224277569]{Calkin-Wilf-Baum}{Calkin-Wilf-Baum} muss etwas mit der Primzahlstruktur zu tun haben, weil alle seine Brüche teilerfremde Zähler und Nenner haben.',
                     '• Mit dem \\jump[https://de.wikipedia.org/w/index.php?title=Satz_von_Wilson&oldid=229853875]{}{Satz von Wilson} können wir herausfinden, ob eine Zahl eine Primzahl ist, wenn ich es richtig verstehe, siehe Primzahl-Produkt-Definition von \\term{s} in meinem Ordner „4. Variante“, Dokument „Sup-Zahl (52).pdf“, S. 5.',
@@ -103,13 +103,13 @@
                     'Nun können wir als erstes überlegen, ob es sich um einen der Primzahltürme handeln könnte:'."\n".
                     'Die unendlich große Primzahl-Potenz mit der kleinsten Basis in \\latexmath{ s } ist \\latexmath{ 2^\omega }.'."\n".
                     'Wenn wir berücksichtigen, dass ja oben \\latexmath{ s } durch \\latexmath{ 2 \cdot \omega } geteilt wird und wir den Faktor \\latexmath{ 2 } schon mal aus'."\n".
-                    'der unendlichen Potenz von \\latexmath{ 2 } entfernen, ergibt sich immer noch \\term{2^{ω-1}}, wobei \\latexmath{ \omega - 1 } als'."\n".
+                    'der unendlichen Potenz von \\latexmath{ 2 } entfernen, ergibt sich immer noch \\term{2^^{ω-1}}, wobei \\latexmath{ \omega - 1 } als'."\n".
                     '\\jump{OM:BiOrd:Home}{Biordinalzahl} definiert ist.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Nun ist es offensichtlich, dass \\term{2^{ω-1}} ungleich und sogar sehr viel größer als \\latexmath{ \omega } ist:'."\n".
+                      'Nun ist es offensichtlich, dass \\term{2^^{ω-1}} ungleich und sogar sehr viel größer als \\latexmath{ \omega } ist:'."\n".
                       '\\color{*Bearb}{(Hier auch \\latexmath{ \overset{\infty}{\ggg} } nutzen?)}'."\n".
                       ''))),
                   array( 'equations',
@@ -1762,7 +1762,7 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
                       
-                'Die Größenordnung und Struktur von \\term{ s } und \\term{ s^{-1} }', subline =>
+                'Die Größenordnung und Struktur von \\term{ s } und \\term{ s^^{-1} }', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Der Beweis unserer Primzahlprodukt-Vermutung, und damit unserer Logo Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega},'."\n".

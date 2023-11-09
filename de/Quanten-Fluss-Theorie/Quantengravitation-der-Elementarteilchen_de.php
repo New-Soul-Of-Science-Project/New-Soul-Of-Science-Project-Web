@@ -286,10 +286,10 @@
                     'Damit verhält sich die Graviradiation anders als alle anderen Wechselwirkungen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:XXX', text =>
                                            
-                'Unterschied von Wechselwirkungen mit der Intensitätsabnahme von \\term{1/r^{2}} zu \\term{1/r}', subline =>
+                'Unterschied von Wechselwirkungen mit der Intensitätsabnahme von \\term{1/r^^{2}} zu \\term{1/r}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Bei einer Wechselwirkung, deren Stärke mit \\term{1/r^{2}} mit dem Abstand \\term{r} abnimmt, werden die Wechselwirkungsteilchen zu jedem Zeitpunkt'."\n".
+                    'Bei einer Wechselwirkung, deren Stärke mit \\term{1/r^^{2}} mit dem Abstand \\term{r} abnimmt, werden die Wechselwirkungsteilchen zu jedem Zeitpunkt'."\n".
                     'in Form von Kugeloberflächen – sphärisch – in den Raum abgestrahlt.'."\n".
                     'In der laufenden Zeit ergibt sich eine kugelförmige Abstrahlung.'."\n",
                       'Da dies auch bedeutet, die Abstrahlung erfolgt in alle Richtungen im Raum, wird ein in der Nähe befindliches Objekt quasi zu jedem Zeitpunkt'."\n".
@@ -322,10 +322,10 @@
                     '\\bold{Grundlage dieser Berechnung}',
                     '• Darauf hinweisen, dass diese Berechnungen im Rahmen des Wirkungsquanten-Bewegungsraums erfolgen und nicht im Rahmen des Licht-Bewegungsraums. Daher ergibt sich die gravitative Rotverschiebung und Zeitdilatation erst korrekt, wenn das Verhältnis von tangentialer und radialer Lichtgeschwindigkeit im hier verwendeten Wirkungsquanten-Bewegungsraum im Verhältnis zur \\jump{OM:FrQFT:Quantengravitation:Laengenkontraktion}{gravitativen Längenkontraktion} berücksichtigt wird. Im Licht-Bewegungsraum ist dann in Bezug auf die LG generell \\term{p = 0} und in Bezug auf die Rotverschiebung für den tangentialen Fall \\term{p = 0} und im radialen Fall \\term{p = 1/2} zu setzen, so dass sich die korrekte Rotverschiebungsformel\\footnote[*Bearb]{\\const{FrQFT_g_footnote_text_PhotonFrequenzGravi}} ergibt.',
                     '• Der Berechnung liegen die Formeln \\term{E_{ele} = h⋅f_{ele}} und \\term{E_{ele} = ħ⋅ω_{ele}} der Quantenphysik für die Energie eines Elementarteilchens zugrunde.',
-                    '• Aus der Relativitätstheorie wird allerdings die Allgemeingültigkeit der Formel \\term{E = m⋅c^{2}} vorausgesetzt und findet dann natürlich auch Anwendung.',
-                    '– Die Proportionalität von Energie und Masse ist eine direkte Schlussfolgerung der FrQFT, die sich aus der Annahme (\\jump{OM:FrQFT:FirstPrinciples}{Postulat} bzw. Axiom) ergibt, dass Wirkungsquanten sowohl Energieeinheiten als auch Masseneinheiten sind (absolut nur auf der untersten Strukturebene des analysierten Modells)! Dies setzt ein konstantes Verhältnis voraus, welches nach unseren Beobachtungen das Quadrat der Lichtgeschwindigkeit \\term{c^{2}} der bekannten Formel \\term{E = m⋅c^{2}} ist.(Verweis auf Wikipedia: ›Äquivalenz von Masse und Energie‹, Überblick und Beispiele, Vernichtungsstrahlung. Dies ist keine relativistisch interpretierte Beobachtung, sondern eine quantenphysikalisch interpretierte!)',
-                    '– Ergibt sich die Formel \\term{E = m⋅c^{2}} auch aus der Quantenphysik? Ja, wie gerade bemerkt, bei der Paarvernichtung.',
-                    '– Könnte Formel \\term{E = m⋅c^{2}} auch vermieden werden?',
+                    '• Aus der Relativitätstheorie wird allerdings die Allgemeingültigkeit der Formel \\term{E = m⋅c^^{2}} vorausgesetzt und findet dann natürlich auch Anwendung.',
+                    '– Die Proportionalität von Energie und Masse ist eine direkte Schlussfolgerung der FrQFT, die sich aus der Annahme (\\jump{OM:FrQFT:FirstPrinciples}{Postulat} bzw. Axiom) ergibt, dass Wirkungsquanten sowohl Energieeinheiten als auch Masseneinheiten sind (absolut nur auf der untersten Strukturebene des analysierten Modells)! Dies setzt ein konstantes Verhältnis voraus, welches nach unseren Beobachtungen das Quadrat der Lichtgeschwindigkeit \\term{c^^{2}} der bekannten Formel \\term{E = m⋅c^^{2}} ist.(Verweis auf Wikipedia: ›Äquivalenz von Masse und Energie‹, Überblick und Beispiele, Vernichtungsstrahlung. Dies ist keine relativistisch interpretierte Beobachtung, sondern eine quantenphysikalisch interpretierte!)',
+                    '– Ergibt sich die Formel \\term{E = m⋅c^^{2}} auch aus der Quantenphysik? Ja, wie gerade bemerkt, bei der Paarvernichtung.',
+                    '– Könnte Formel \\term{E = m⋅c^^{2}} auch vermieden werden?',
                     '• Diese drei Formeln reichen aus, zusammen mit der Struktur des Elementarteilchen-Modells der FrQFT und gewisser Vereinfachungen dieses Modells zuzüglich einer simplen Näherung für größere Abstände sowie einer statistischen Näherung für größere Massen, um die gravitative Lichtablenkung (Gravitation) eines einzelnen Elementarteilchens und die gravitative Lichtablenkung (Gravitation) einer Zentralmasse aus Elementarteilchen korrekt so herzuleiten, wie diese in der Schwarzschild-Metrik der Allgemeinen Relativitätstheorie beschrieben ist.',
                     '\\bold{Mit Raimund Welsch zu klärende Fragen}',
                     '• Ist die Standardabweichung wirklich das, was hier im Moment angewendet wird?',

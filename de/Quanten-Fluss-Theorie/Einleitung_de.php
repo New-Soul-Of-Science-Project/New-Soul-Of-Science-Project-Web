@@ -887,17 +887,17 @@
                   array( 'text', array( text => array(
                   '\\condb{Schwache Wechselwirkung …} \\\\'."\n".
                     'Ganz ähnlich verhält es sich bei der schwachen Wechselwirkung und seiner Wechselwirkungsteilchen, die allerdings eine komplexere Struktur haben, als virtuelle Photonen.'."\n".
-                    'In den \\term{W^{±}}- und \\term{Z^{0}}-Bosonen rotieren die Dichteunterschiede der Fundamentalteilchen sehr wahrscheinlich auf zwei geschachtelten Spiralen, ähnlich den Leptonen (siehe \\jumpname{OM:FrQFT:Einleitung:Fundierung:Ani-Lepton}).'."\n".
+                    'In den \\term{W^^{±}}- und \\term{Z^^{0}}-Bosonen rotieren die Dichteunterschiede der Fundamentalteilchen sehr wahrscheinlich auf zwei geschachtelten Spiralen, ähnlich den Leptonen (siehe \\jumpname{OM:FrQFT:Einleitung:Fundierung:Ani-Lepton}).'."\n".
                     '\\color{*Entwick}{Ihre genaue Struktur ist noch herauszufinden.}'."\n",
                       'Wir können uns dies vereinfacht vermutlich so vorstellen, dass die unpolarisierten Photonen des Vakuums sich vorübergehend in einem Muster polarisieren,'."\n".
-                    'das die dynamische Polarisationsstruktur der \\term{W^{±}}- und \\term{Z^{0}}-Bosonen nachempfindet.'."\n"))),
+                    'das die dynamische Polarisationsstruktur der \\term{W^^{±}}- und \\term{Z^^{0}}-Bosonen nachempfindet.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Vakuumfluktuation …} \\\\'."\n".
                     'Die vorhergehende Idealisierung des Vakuums als unpolarisiertes Medium wird durch das Chaos der kreuz und quer sich mit Lichtgeschwindigkeit durchdringeden'."\n".
                     'im Grunde unpolarisierten Photonen gestört.'."\n".
                     'Dieses beständige Durcheinander erzeugt Fluktuationen – Schwankungen – der räumlichen Fundamentalteilchen-Dichte, die auch zu vorübergehenden Dichteveränderungen'."\n".
                     'der im Grunde unpolarisierten Photonen führen.'."\n",
-                      'Da die Fundamentalteilchen Energieeinheiten sind, kommt es so zu vorrübergehenden Energiedichten, die kurzzeitig Teilchen-Antiteilchen-Paare\\color{*Bearb}{(Verweis)} entstehen lassen.'."\n"))),
+                      'Da die Fundamentalteilchen Energieeinheiten sind, kommt es so zu vorübergehenden Energiedichten, die kurzzeitig Teilchen-Antiteilchen-Paare\\color{*Bearb}{(Verweis)} entstehen lassen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Analyse: Die quantenmechanische Wellenfunktion bekommt eine reale Grundlage')),

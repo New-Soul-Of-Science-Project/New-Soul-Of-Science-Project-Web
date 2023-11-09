@@ -178,7 +178,7 @@
                     'Wir möchten ja erreichen, dass wir innerhalb der Biordinalzahlen generell von jeder Zahl aus nicht nur in die positive Richtung,'."\n".
                     'sondern auch in die negative Richtung zählen, also die Vorgänger benennen, können.'."\n".
                     'Die sogenannten Limeszahlen\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ordinalzahl:2021}, Motivation und Definition, Limes- und Nachfolgerzahlen.},'."\n".
-                    'wie \\term{ω}, \\term{2⋅ω} oder \\term{ω^{2}}, haben in unserer Konstruktion immer noch keine Vorgänger.'."\n",
+                    'wie \\term{ω}, \\term{2⋅ω} oder \\term{ω^^{2}}, haben in unserer Konstruktion immer noch keine Vorgänger.'."\n",
                       'Die Vorgänger der Limeszahlen lassen sich nun entsprechend der absolut negativen Zahlen definieren:'."\n".
                     ''))),
                   array( 'equations',
@@ -200,8 +200,8 @@
                       array( display => 'on', latex => '{  \omega^2 - \omega - n  =  \omega^2 - *( \omega + n *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Diese beiden Darstellungen sind aus Sicht der an \\term{ω^{2}} fehlenden Mengen im ersten Moment nicht identisch.'."\n".
-                    'Dabei müssen wir uns zuerst klar machen, dass an \\term{ω^{2}} auch nur die Mengen fehlen können, die enthalten sind.'."\n",
+                    'Diese beiden Darstellungen sind aus Sicht der an \\term{ω^^{2}} fehlenden Mengen im ersten Moment nicht identisch.'."\n".
+                    'Dabei müssen wir uns zuerst klar machen, dass an \\term{ω^^{2}} auch nur die Mengen fehlen können, die enthalten sind.'."\n",
                       'So taucht die Frage auf, ob es nicht generell möglich ist, immer die folgende Definition zu benutzen,'."\n".
                     'wenn \\term{λ} die größte Limeszahl in der Summe ist und \\term{β} die restlichen Summanden kleinerer Limeszahlen zusammenfasst:'."\n".
                     ''))),
@@ -218,7 +218,7 @@
                       array( display => 'on', latex => '{  \omega^2 - *( \omega + n *)  :=  \omega^2 \setminus *( \omega + n *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Und das erscheint schlüssig, weil alle Zahlen, die aus \\term{ω^{2}} entfernt werden auch darin enthalten sind.'."\n",
+                    'Und das erscheint schlüssig, weil alle Zahlen, die aus \\term{ω^^{2}} entfernt werden auch darin enthalten sind.'."\n",
                       'Doch was wäre, wenn sich Vorzeichen der hinteren Summanden ändern:'."\n".
                     ''))),
                   array( 'equations',
@@ -229,12 +229,12 @@
                       array( display => 'on', latex => '{  \Rightarrow  \omega^2 - *( \omega - n *)  :=  \omega^2 \setminus *( \omega \setminus n *) \\\ \qquad\qquad\qquad\quad\;\;  =  \omega^2 \setminus *( \omega \setminus *\{ 0, 1, \cdots , n - 1 *\} *) \\\ \qquad\qquad\qquad\quad\;\;  =  \omega^2 \setminus *\{ n, n + 1, n + 2, n + 3, \cdots *\} \\\ \qquad\qquad\qquad\quad\;\;  =  *\{ 0, 1, \cdots , n - 1, \omega, \omega + 1, \cdots , \omega^2 *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Das scheint auch schlüssig zu sein, weil möglich, denn die weggelassenen Mengen existieren in \\term{ω^{2}} beziehungsweise in \\term{ω}, als auch eineindeutig,'."\n".
+                    'Das scheint auch schlüssig zu sein, weil möglich, denn die weggelassenen Mengen existieren in \\term{ω^^{2}} beziehungsweise in \\term{ω}, als auch eineindeutig,'."\n".
                     'denn es gibt keine andere Möglichkeit, die selbe Darstellung des Wertes durch eine solche Konstruktion zu erreichen.'."\n",
                       'Und diese Darstellung erfüllt auch die wichtige Eigenschaft, dass die durch Mengen dargestellte Zahl die Anzahl an Mengen enthält,'."\n".
                     'wie ihr Wert groß ist, oder diese Anzahl aus der Klasse aller Mengen entfernt wird.'."\n".
                     'Am vorstehenden Beispiel veranschaulicht bedeutet dies:'."\n".
-                    'Beim Wert \\term{ω^{2} –  ω + n} haben wir als Basis die Menge \\term{ω^{2}} aus der wir die Mengen in \\term{ω} herausnehmen,'."\n".
+                    'Beim Wert \\term{ω^^{2} –  ω + n} haben wir als Basis die Menge \\term{ω^^{2}} aus der wir die Mengen in \\term{ω} herausnehmen,'."\n".
                     'die Mengen in \\term{n} jedoch drinnen belassen beziehungsweise wieder hinzufügen:'."\n".
                     ''))),
                   array( 'equations',
@@ -269,11 +269,11 @@
                   // funktioniert nicht, wegen verschachteltem Aufklappen
                   /* array( 'notice', array( Display => 'showContent', text => array(
                      '\\bold{Überprüfen}',
-                     '• Warum sollte die Addition von \\term{n} in \\term{(ω^{2} – ω) + n} anders laufen als oben?',
+                     '• Warum sollte die Addition von \\term{n} in \\term{(ω^^{2} – ω) + n} anders laufen als oben?',
                     ))), */
                   array( 'text', array( text => array(
                      '\\color{*Bearb}{\\bold{Überprüfen} \\\\ '."\n".
-                     '• Warum sollte die Addition von \\term{n} in \\term{(ω^{2} – ω) + n} anders laufen als oben?}'."\n",
+                     '• Warum sollte die Addition von \\term{n} in \\term{(ω^^{2} – ω) + n} anders laufen als oben?}'."\n",
                     ))),
                   array( 'text', array( text => array(
                     'Die andere Möglichkeit ist, wir klammern von vorne:'."\n".
@@ -284,7 +284,7 @@
                       array( display => 'on', latex => '{  \Rightarrow  \omega^2 - \omega + n  :=  *( \omega^2 \setminus \omega *) + n  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dann würden wir von \\term{ω^{2} – ω} um \\term{n} Schritte neu loszählen und erhielten so bisher nicht da gewesene Mengen, die diese Zahlen darstellten.'."\n".
+                    'Dann würden wir von \\term{ω^^{2} – ω} um \\term{n} Schritte neu loszählen und erhielten so bisher nicht da gewesene Mengen, die diese Zahlen darstellten.'."\n".
                     'Das finde ich viel weniger intuitiv, weil sich die Strukturen der Mengen dann nicht nur in der obersten Verschachtelungsebene der größten Limeszahl ändern,'."\n".
                     'sondern auch in tieferen Ebenen.'."\n",
                       'Noch komplexer wird es dann im folgenden Beispiel:'."\n".
@@ -413,8 +413,8 @@
                       
                   array( 'text', array( text => array(
                     'Hier sehen wir auch, dass, ohne Ausschluss der leeren Menge bei der Definition der Antimengen (siehe Formel \\jumpname{OM:BiOrd:Einleitung:IntegrierteMengenlehre:Equ-Antimenge}),'."\n".
-                    'das Antimengenuniversum \\term{\M(U)^{&thinsp;–}} widersprüchlicher Weise das Mengenuniversum \\term{\M(U)} enthalten würde,'."\n".
-                    'obwohl sich beide zum integrierten Mengenuniversum \\term{\M(U)^{ i}} ergänzen sollen.'."\n",
+                    'das Antimengenuniversum \\term{\M(U)^^{&thinsp;–}} widersprüchlicher Weise das Mengenuniversum \\term{\M(U)} enthalten würde,'."\n".
+                    'obwohl sich beide zum integrierten Mengenuniversum \\term{\M(U)^^{ i}} ergänzen sollen.'."\n",
                       'So können wir jetzt eine allgemeine Definition der Negierung von integrierten Mengen angeben.'."\n".
                     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -1241,7 +1241,7 @@
                       
                   array( 'text', array( text => array(
                     'Auch diese Summe lässt sich nur mit den Biordinalzahlen ausdrücken.'."\n",
-                      'Und sie setzt voraus, dass \\term{ω^{2} – ω} gerade ist, also ganzzahlig durch Zwei geteilt werden kann.'."\n".
+                      'Und sie setzt voraus, dass \\term{ω^^{2} – ω} gerade ist, also ganzzahlig durch Zwei geteilt werden kann.'."\n".
                     'Das bedeutet, dass die Zwei als Faktor in beiden Summanden stecken muss.'."\n".
                     'Folglich trägt \\term{ω} den Primfaktor \\term{2} in sich.\\footnote[*Entwick]{\\color{*Entwick}{Dies ist ein erster ganz kleiner Schritt in Richtung der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}. Lässt sich auf diese Weise Schritt für Schritt mehr in diese Richtung zeigen?}}'."\n".
                     ''))),

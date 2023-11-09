@@ -176,8 +176,8 @@
                 'Abzählprinzip', subline =>
                   'Äquivalenz von Masse und Energie')),
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '• \\term{E = m⋅c^{2}}:',
-                    '– Die Proportionalität von Energie und Masse ist eine direkte Schlussfolgerung der FrQFT, die sich aus der Annahme (Postulat bzw. Axiom) ergibt, dass Wirkungsquanten sowohl Energieeinheiten als auch Masseneinheiten sind (absolut nur auf der untersten Strukturebene des analysierten Modells)! Dies setzt ein konstantes Verhältnis voraus, welches nach unseren Beobachtungen das Quadrat der Lichtgeschwindigkeit \\term{c^{2}} der bekannten Formel \\term{E = m⋅c^{2}} ist.(Verweis auf Wikipedia: ›Äquivalenz von Masse und Energie‹, Überblick und Beispiele, Vernichtungsstrahlung. Dies ist keine relativistisch interpretierte Beobachtung, sondern eine quantenphysikalisch interpretierte!) Siehe auch \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{Herleitung der Lichtverlangsamung} (falls dort nicht entbehrlich geworden …).',
+                    '• \\term{E = m⋅c^^{2}}:',
+                    '– Die Proportionalität von Energie und Masse ist eine direkte Schlussfolgerung der FrQFT, die sich aus der Annahme (Postulat bzw. Axiom) ergibt, dass Wirkungsquanten sowohl Energieeinheiten als auch Masseneinheiten sind (absolut nur auf der untersten Strukturebene des analysierten Modells)! Dies setzt ein konstantes Verhältnis voraus, welches nach unseren Beobachtungen das Quadrat der Lichtgeschwindigkeit \\term{c^^{2}} der bekannten Formel \\term{E = m⋅c^^{2}} ist.(Verweis auf Wikipedia: ›Äquivalenz von Masse und Energie‹, Überblick und Beispiele, Vernichtungsstrahlung. Dies ist keine relativistisch interpretierte Beobachtung, sondern eine quantenphysikalisch interpretierte!) Siehe auch \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{Herleitung der Lichtverlangsamung} (falls dort nicht entbehrlich geworden …).',
                     '– Albrecht Giese erklärt es: \\cite{Giese:TheOriginOfMass2019}, Kap. 5 Mass Energy Equivalence, S. 6-7.',
                     ))),
                   array( 'text', array( text => array(
@@ -220,7 +220,7 @@
                   array( 'text', array( text => array(
                     'Aus den Formeln \\jumpname{OM:FrQFT:FirstPrinciples:Vortext:Equ-EnergieSumWQEnergie} und \\jumpname{OM:FrQFT:FirstPrinciples:Vortext:Equ-EMasseSumWQEnergie} ist auch ersichtlich,'."\n".
                     'dass es sich bei der Masse und der Energie eines Dings im Grunde um das gleiche handelt, was zur Äquivalenz von Masse und Energie führt.'."\n".
-                    'Einsteins berühmte Formel ergibt sich hieraus also selbstredend, weil die Proportionalitätskonstante offensichtlich \\hidden{\\latexmath{ {_{\lowZero}c^{2}} }}\\term{_{0}c^{2}} ist,'."\n".
+                    'Einsteins berühmte Formel ergibt sich hieraus also selbstredend, weil die Proportionalitätskonstante offensichtlich \\hidden{\\latexmath{ {_{\lowZero}c^{2}} }}\\term{_{0}c^^{2}} ist,'."\n".
                     'wie wir aus vielen experimentellen Beobachtungen wissen.\\footnote{Die Äquivalenz von Masse und Energie ist keine reine Erkenntnis der Relativitätstheorie und eben auch in vielen verschiedenen Experimenten aus der Quantenphysik bestätigt: \\\\ \\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AequivalenzVonMasseUndEnergie2013}.}'."\n".
                     'Ich sehe keinen Grund eine andere Proportionalität anzunehmen:'."\n"))),
                   array( 'equations',
@@ -326,13 +326,13 @@
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n"))),
                   array( 'text', array( text => array(
-                    'Warum ist die Proportionalitätskonstante in der Äquivalenz von Energie und Masse immer \\term{_{0}c^{2}}?'."\n"))),
+                    'Warum ist die Proportionalitätskonstante in der Äquivalenz von Energie und Masse immer \\term{_{0}c^^{2}}?'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Test', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E  =  m \cdot {_{\lowZero}c^{2}}  }'),
                     ))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        '\\color{*Bearb}{Dazu passen würde, dass die Mantelflächen der Impulskegel der Wirkungsquanten in der Zeit mit der Flächengeschwindigkeit \\term{_{0}c^{2}} wachsen.}',
+                        '\\color{*Bearb}{Dazu passen würde, dass die Mantelflächen der Impulskegel der Wirkungsquanten in der Zeit mit der Flächengeschwindigkeit \\term{_{0}c^^{2}} wachsen.}',
                         'XXX',
                         'XXX',
                         'XXX',

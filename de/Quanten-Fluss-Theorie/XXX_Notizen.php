@@ -104,7 +104,7 @@
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{(Diese Aussage muss entschärft und verfeinert werden.)}'."\n"))),
                   array( 'normal',
-                    'Nach dem Relativitätsprinzip entspricht jede Energie einer Masse, nach Albert Einsteins weltberühmter Formel im Verhältnis \\term{E = m⋅c^{2}}\\color{*Bearb}{(Link)}.\\footnote{\\const{FrQFT_g_footnote_text_AequivalMasseEnergie}}'."\n".
+                    'Nach dem Relativitätsprinzip entspricht jede Energie einer Masse, nach Albert Einsteins weltberühmter Formel im Verhältnis \\term{E = m⋅c^^{2}}\\color{*Bearb}{(Link)}.\\footnote{\\const{FrQFT_g_footnote_text_AequivalMasseEnergie}}'."\n".
                     'In der Quantenmechanik wird das Vakuum als recht energiereich beschrieben.\\footnote{Vgl. \\cite{wiki:Vakuumenergie2013}.}'."\n".
                     'Aufgrund des Relativitätsprinzips sollte es daher Masse besitzen und gravitativ wirken.'."\n".
                     'In der heutigen Physik wird hingegen ohne zwingenden Grund angenommen, die Vakuumenergie hätte keine Gravitationseffekte.\\footnote[*Bearb]{\\color{*Bearb}{(Weitere Verweise)}}'."\n".

@@ -317,7 +317,7 @@
                       'Die Wirkungsquanten stellen sich als einheitliche Bestandteile der Elementarteilchen dar, die sich nur in ihrer Bewegungsrichtung unterscheiden können.'."\n".
                     'Die Heisenbergsche Unschärferelation verrät uns, dass es sich bei den Wirkungsquanten in der Zeit gezählt, also  \\term{h}\'s pro Zeit, um Energieeinheiten'."\n".
                     'handelt.'."\n".
-                    'Nach der Formel \\term{E = m⋅c^{2}}, Einsteins Äquivalenz von Masse und Energie,\\footnote{\\const{FrQFT_g_footnote_text_EinsteinAequiMasEner}} mit deren Hilfe wir die Energie in Masse umrechnen können,'."\n".
+                    'Nach der Formel \\term{E = m⋅c^^{2}}, Einsteins Äquivalenz von Masse und Energie,\\footnote{\\const{FrQFT_g_footnote_text_EinsteinAequiMasEner}} mit deren Hilfe wir die Energie in Masse umrechnen können,'."\n".
                     'sind Wirkungsquanten auch als Masseneinheiten zu verstehen.'."\n".
                     'Demnach ist die Anzahl der in einem Elementarteilchen enthaltenen Wirkungsquanten proportional zu dessen Energie und Masse.'."\n",
                       'Wir haben oben schon festgestellt, dass die Struktur der Materie-Elementarteilchen in gewisser Hinsicht rotieren muss.'."\n".
