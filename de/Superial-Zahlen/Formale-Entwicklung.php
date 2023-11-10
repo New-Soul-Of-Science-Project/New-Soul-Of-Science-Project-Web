@@ -27,13 +27,13 @@
                     'bezüglich der Addition und Multiplikation und sie sind sogar ein angeordneter algebraischer Körper\\footnote{\\const{NSOSP_g_footnote_text_KoerperAlgebra}},'."\n".
                     'die die rationalen Zahlen \\term{\M(Q)} ins aktual unendliche erweitert.'."\n".
                     'Dabei erweitern sich auch ihre Teilmengen der natürlichen Zahlen \\term{\M(N)}, der ganzen Zahlen \\term{\M(Z)} und der Primzahlen \\term{\M(P)} zu den'."\n".
-                    'den \\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} \\term{\M(S)_{N}},'."\n".
-                    'den \\jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen} \\term{\M(S)_{Z}}'."\n".
-                    'und sogar zu den \\jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{superialen Primzahlen} \\term{\M(S)_{P}}.'."\n",
+                    'den \\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} \\term{\M(S)__{N}},'."\n".
+                    'den \\jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen} \\term{\M(S)__{Z}}'."\n".
+                    'und sogar zu den \\jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{superialen Primzahlen} \\term{\M(S)__{P}}.'."\n",
                       'So kommen wir zum Beispiel nicht nur in die Lage \\jump{OM:SupNum:Einleitung}{Ableitungen mit Superial-Zahlen}, ganz ohne Limes, zu definieren,'."\n".
                     'sondern auch in die Lage, bis ins Aktual-Unendliche zu zählen und dadurch Integrale'."\n".
                     'als Summen unendlich vieler, unendlich schmaler Flächenstreifen zu berechnen.'."\n",
-                      'Jede natürliche Superial-Zahl hat dabei so viele Vorgänger in \\term{\M(S)_{N}}, wie sie selber groß ist.'."\n".
+                      'Jede natürliche Superial-Zahl hat dabei so viele Vorgänger in \\term{\M(S)__{N}}, wie sie selber groß ist.'."\n".
                     'Dies ist anders, als bei den von mir erforschten auch ins Aktual-Unendliche gehenden'."\n".
                     '\\jump{OM:BiOrd:Home}{Biordinalzahlen}:'."\n".
                     'Aktual unendliche Biordinalzahlen haben bizarrer Weise \\jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{mehr Vorgänger als ihr Wert} groß ist.'."\n".
@@ -116,7 +116,7 @@
                 'Polynom-Definition der Menge der Superial-Zahlen \\term{S}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Um zu gewährleisten, dass die ganzen und die natürlichen Superial-Zahlen möglichst große Teilmengen im Verhältnis zur Menge \term{S} aller Superial-Zahlen sind,'."\n".
+                    'Um zu gewährleisten, dass die ganzen und die natürlichen Superial-Zahlen möglichst große Teilmengen im Verhältnis zur Menge \\term{S} aller Superial-Zahlen sind,'."\n".
                     'können die Koeffizienten der Potenzen der superialen Basis \\term{s} als rationale Zahlen aus \\term{\M(Q)} definiert werden:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -249,7 +249,7 @@
                   array( 'text', array( text => array(
                     'Für den Fall, dass \\term{d = 0} ist, es sich also um endliche Zahlen handelt, bleiben nur endliche natürliche Zahlen über.'."\n",
                       'Für \\term{d > 0}, den Fall, dass es sich um aktual unendlich große natürliche Zahlen handelt, entspricht die Definition der von positiven ganzen Superial-Zahlen.'."\n".
-                    'Dies ist dadurch bestimmt, dass der Koeffizient \\term{q_{d}} der größten Potenz \\term{s^^{d}} positiv sein muss.'."\n".
+                    'Dies ist dadurch bestimmt, dass der Koeffizient \\term{q__{d}} der größten Potenz \\term{s^^{d}} positiv sein muss.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -355,7 +355,7 @@
                     'Mir erscheint die nachfolgende Perspektive natürlich am besten zum Erkenntnisgewinn geeignet und in diesem Sinne als am besten zu den Superial-Zahlen passend.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Die Teilmengen vom Beginn der natürlichen Zahlen} \\\\'."\n".
-                    'Betrachten wird die Teilmengen \\term{\M(T)_{n}}, die wir vom Beginn der natürlichen Zahlen bilden können und deren Größe, also die Anzahl ihrer Elemente \\term{n}.'."\n",
+                    'Betrachten wird die Teilmengen \\term{\M(T)__{n}}, die wir vom Beginn der natürlichen Zahlen bilden können und deren Größe, also die Anzahl ihrer Elemente \\term{n}.'."\n",
                       'Exemplarisch vereinfacht definieren wir diese Mengen wie folgt:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -370,11 +370,11 @@
                       array( display => 'on',  latex => '{  \mathbb{T}_{n}  :=  \left\{  x ~\middle|~ *( n \in \mathbb{N} *) *( \forall x \in \mathbb{N} *) \left[  x < n  \right]  \right\}  }'),
                     ))),
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Die Teilmengen \\term{\M(T)_{n}} der ersten \\term{n} Elemente wird definiert als die Menge der Elemente x für die Gilt:'."\n".
+                      'Die Teilmengen \\term{\M(T)__{n}} der ersten \\term{n} Elemente wird definiert als die Menge der Elemente x für die Gilt:'."\n".
                       'Ich nehme das Element \\term{n} aus der Menge der natürlichen Zahlen \\term{\M(N)} und alle \\term{x}, die kleiner als \\term{n} sind.'."\n"))),
                       
                   array( 'text', array( text => array(
-                    'Wir sehen schon an der Definition, dass die Anzahl der Elemente in \\term{\M(T)_{n}} größer als alle Elemente dieser Menge ist.'."\n"))),
+                    'Wir sehen schon an der Definition, dass die Anzahl der Elemente in \\term{\M(T)__{n}} größer als alle Elemente dieser Menge ist.'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                       'Mein Freund Raimund Welsch machte mich in diesem Zusammenhang ganz zurecht darauf aufmerksam, dass dies eben nur gilt, wenn die natürlichen Zahlen vorstehend einschließlich der Null definiert sind.'."\n",
@@ -383,7 +383,7 @@
                       
                   array( 'text', array( text => array(
                   '\\condb{Das größte Element einer Menge} \\\\'."\n".
-                    'Im Fall der Mengen mit endlich vielen Elementen, hier repräsentiert durch die Mengen \\term{\M(T)_{n}}, existiert ein größtes Element in der Menge.'."\n".
+                    'Im Fall der Mengen mit endlich vielen Elementen, hier repräsentiert durch die Mengen \\term{\M(T)__{n}}, existiert ein größtes Element in der Menge.'."\n".
                     'Es gilt:'."\n"))),
                       
                   array( 'equations',
@@ -400,7 +400,7 @@
                 'Zahlen und Mengen im Unendlichen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Anders als im Endlichen der Mengen \\term{\M(T)_{n}} verhält es sich, wenn wir zur Menge aller natürlich Zahlen übergehen, die unendlich viele Elemente endlicher Größe in sich hat.'."\n".
+                    'Anders als im Endlichen der Mengen \\term{\M(T)__{n}} verhält es sich, wenn wir zur Menge aller natürlich Zahlen übergehen, die unendlich viele Elemente endlicher Größe in sich hat.'."\n".
                     'Auch sie beginnt mit der Null, aber in ihr gibt es per Definition kein größtes Element,'."\n".
                     'weil es zu jedem Element einen Nachfolger gibt:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Unendlichkeitsaxiom:2021}, Bedeutung für die Mathematik, Natürliche Zahlen.}'."\n"))),
                       

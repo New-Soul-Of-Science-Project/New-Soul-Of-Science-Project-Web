@@ -83,7 +83,7 @@
   
   $FrQFT_g_text_HinwKosBeob                    = '\\italic{Die nachfolgenden Erklärungen werden aus Sicht eines \\jump{*KosmBeob-Herlei}{kosmischen Beobachters} beschrieben.}';
   $FrQFT_g_text_Ereignishori                   = '\\color{*Entwick}{Es handelt sich im Fall der Quanten-Fluss-Theorie nicht wirklich um einen Eregnishorizont im Sinne der Allgemeinen Relativitätstheorie. Wie genau sich die Dinge dort Verhalten, wo sich die Elapsonen stauen, ist zu untersuchen. Klar scheint, dass in dieser Theorie von außen betrachtet kein Elementarteilchen unzerstört durch den Übergangshorizont gehen kann. Dann ist dies auch aus Sicht des Elementarteilchens nicht möglich. \\color{*Bearb}{(Literatur: Artikel GEO 10/2014, "Wie schwarz ist Schwarz?", S. 130–144.) (Thema auf die Diskussionsseite aufnehmen.)}}';
-  $FrQFT_g_text_PoundRebkaSnider_Steigung      = '\\color{*Entwick}{Dies ist mit Sicherheit richtig. Ich meine ich hatte dies vor Jahren irgendwo gelesen und daher übernommen. Leider konnte ich es bisher nicht wieder finden oder ersehen, woher ich es abgeleitet hatte. Dies ist also heraus zu finden. \\color{*Bearb}{Alternativ zeigen, dass die Steigung der Formel \\term{g⋅h/c^^{2}} aus dem Pound-Rebka-Snider-Experiment entsprechend passt. Beziehungsweise \\term{Δ𝝂/𝝂_{0} = – Δφ_{g}/c^^{2}} , vgl. \\cite{Pound:PoundSniderExper1965}, S. B 788.}}';
+  $FrQFT_g_text_PoundRebkaSnider_Steigung      = '\\color{*Entwick}{Dies ist mit Sicherheit richtig. Ich meine ich hatte dies vor Jahren irgendwo gelesen und daher übernommen. Leider konnte ich es bisher nicht wieder finden oder ersehen, woher ich es abgeleitet hatte. Dies ist also heraus zu finden. \\color{*Bearb}{Alternativ zeigen, dass die Steigung der Formel \\term{g⋅h/c^^{2}} aus dem Pound-Rebka-Snider-Experiment entsprechend passt. Beziehungsweise \\term{Δ𝝂/𝝂__{0} = – Δφ_{g}/c^^{2}} , vgl. \\cite{Pound:PoundSniderExper1965}, S. B 788.}}';
   $FrQFT_g_text_SymmetrieBruchFarbpol          = 'Der kreisrunde Vakuum-Elapsonen-String ist der symmetrischste denkbare Wirkungsquanten-String.'."\n".
                                                    'Durch einen Symmetriebruch, ausgelöst durch ihre Wechselwirkung innerhalb des Strings, sind die sich eigentlich gradlinig bewegenden Wirkungsquanten auf eine Helixspiralbahn ausgelenkt.'."\n".
                                                    'Sie laufen nun auf dem tiefsten Ring des Sombrero-Potentials eines Felds, dass dem Higgs-Feld sehr ähnelt.'."\n".
@@ -189,7 +189,7 @@
   $FrQFT_g_footnote_text_ARTVarZeit             = 'Vgl. \\cite{Kiefer:DoesTimeExistInQuantumGravity2009}, S. 2.\\hidden{Er hat dazu auch ein Buch: C. Kiefer, Quantum Gravity, second edition (Oxford University Press, Oxford, 2007).} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Kiefer:WegZurQG2012}, S. 37.';
   $FrQFT_g_footnote_text_Aeskulapstab           = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Aeskulapstab:2019}.';
   $FrQFT_g_footnote_text_BasTModDeBroglieFreq   = 'Vgl. \\cite{Giese:TheStructureOfMatter:2004}, 1 Introduction, S. 1.';
-  $FrQFT_g_footnote_text_BasisteilchenMGravityLKFormel = 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, Speed Reduction in Detail, S. 20-22, hier Formel C.8, S. 22. Die erste Variable rechts neben dem Gleichheitszeichen \\term{w_{0}} ist dort mit \\term{r} benannt. Diese Benennung ist fehlerhaft, weil es eine weitere Variable \\term{r} unter dem Bruch gibt, die von der ersten unabhängig ist. Beide müssen also unterschieden werden, weil die erste neben dem Gleichheitszeichen eine generelle geometrische Ausdehnung von Strukturen meint, während die zweite den Abstand vom Zentrum einer Zentralmasse bedeutet. Folgerichtig habe ich dann die Variable \\term{r_{red}} bei Giese in \\term{d_{red}} umbenannt, weil diese die Reduktion der Ausdehnung einer generellen Struktur meint. Die Konstante \\term{c} habe ich wegen der Eindeutigkeit in \\term{c_{0}} umbenannt.';
+  $FrQFT_g_footnote_text_BasisteilchenMGravityLKFormel = 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, Speed Reduction in Detail, S. 20-22, hier Formel C.8, S. 22. Die erste Variable rechts neben dem Gleichheitszeichen \\term{w__{0}} ist dort mit \\term{r} benannt. Diese Benennung ist fehlerhaft, weil es eine weitere Variable \\term{r} unter dem Bruch gibt, die von der ersten unabhängig ist. Beide müssen also unterschieden werden, weil die erste neben dem Gleichheitszeichen eine generelle geometrische Ausdehnung von Strukturen meint, während die zweite den Abstand vom Zentrum einer Zentralmasse bedeutet. Folgerichtig habe ich dann die Variable \\term{r__{red}} bei Giese in \\term{d__{red}} umbenannt, weil diese die Reduktion der Ausdehnung einer generellen Struktur meint. Die Konstante \\term{c} habe ich wegen der Eindeutigkeit in \\term{c__{0}} umbenannt.';
   $FrQFT_g_footnote_text_BasisteilchenMGravityLKMechanis = 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, Speed Reduction in Detail, S. 20-22, hier in der Entwicklung der Formel C.8, S. 22.';
   $FrQFT_g_footnote_text_BasisteilchenMGravity  = 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, 3 Relationship between Gravity and the Basic Particle Model, S. 4-6, hier S. 5-6.';
   $FrQFT_g_footnote_text_ComptonFrequenz        = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 17 Die kosmischen Zahlen, S. 516-542, hier S. 518-523. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Compton-Effekt:2015}, Compton-Wellenlänge. Die Compton-Frequenz lässt sich aus der Compton-Wellenlänge berechnen.';
@@ -415,8 +415,8 @@
                                                                  'Jedes einzelne Wirkungsquant des Strings erzeugt ständig neue, virtuelle Wirkungsquanten, die ringförmig um den und'."\n".
                                                                  'senkrecht zum String abgestrahlt werden.'."\n".
                                                                  'Ihre Wirkung nimmt beim Abstand \\term{r} zum String nur mit \\term{1/r} ab.'."\n".
-                                                                 'Bei doppelter Energie und Masse \\term{m_{ele}} des Strings halbiert sich sein Radius \\term{r_{ele}} und vervierfacht sich seine Wirkungsquanten-Dichte.'."\n".
-                                                                 'Seine Graviradiation verdoppelt sich aber nur, weil die Länge \\term{Δt_{vwq}} seiner abgestrahlten Impulse sich durch die doppelte Winkelgeschwindigkeit \\term{ω_{ele}}'."\n".
+                                                                 'Bei doppelter Energie und Masse \\term{m__{ele}} des Strings halbiert sich sein Radius \\term{r__{ele}} und vervierfacht sich seine Wirkungsquanten-Dichte.'."\n".
+                                                                 'Seine Graviradiation verdoppelt sich aber nur, weil die Länge \\term{Δt__{vwq}} seiner abgestrahlten Impulse sich durch die doppelte Winkelgeschwindigkeit \\term{ω__{ele}}'."\n".
                                                                  'halbiert.');
   
   //$FrQFT_g_figure_ary_GraviLeptonLichtbahn      = array( fig_file_name => 'Gravi_Lepton-Lichtbahn_v08', fig_alt_description => 'Störung der Lichtbahn durch virtuelle Wirkungsquanten', width => '700px', height => '234px', name => 'set local',
@@ -437,8 +437,8 @@
                                                          text => 'Die von der Masse ausgesandten virtuellen Wirkungsquanten (Wirkungsquanten-Impulskegel als Störungswellen) verringern'."\n".
                                                                  'die Geschwindigkeit der Wirkungsquanten eines vorbeifliegenden Photons umso stärker,'."\n".
                                                                  'je näher sie der Masse sind. Dadurch verringert sich die Wellenlänge'."\n".
-                                                                 '\\term{λ_{innen}} des Photons auf der der Masse zugewandten Seite stärker'."\n".
-                                                                 'als \\term{λ_{außen}} auf der abgewandten Seite.'."\n".
+                                                                 '\\term{λ__{innen}} des Photons auf der der Masse zugewandten Seite stärker'."\n".
+                                                                 'als \\term{λ__{außen}} auf der abgewandten Seite.'."\n".
                                                                  'Das Photon wird zur Masse hin gebeugt.');
   
   $FrQFT_g_figure_ary_GravitationspotMulti      = array( fig_file_name => 'FrQFT/Gravi-Potenzial-Multipol_v05', fig_alt_description => 'Mutlipoles, weiträumiges Gravitationspotenzial', width => '489px', height => '367px', name => 'set local!',
@@ -469,24 +469,24 @@
                                                                   '\\const{FrQFT_g_text_WQSWQMenge}');
   
   $FrQFT_g_figure_ary_LeptonELadung             = array( fig_file_name => 'Lepton_geladen_v09', fig_alt_description => 'Elektrisch geladenes Lepton', width => '700px', height => '374px', name => 'set local!',
-                                                         text => '\\color{*Bearb}{(Die Grafik enthält einen Rechenfehler und muss korrigiert werden! \\term{r_{gr}} muss in \\term{r_{wq}} umbenannt werden.)} Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n_{phase} = n_{wel} / n_{polwel} = 6/1 = 6}.'."\n".
+                                                         text => '\\color{*Bearb}{(Die Grafik enthält einen Rechenfehler und muss korrigiert werden! \\term{r__{gr}} muss in \\term{r__{wq}} umbenannt werden.)} Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n__{phase} = n__{wel} / n__{polwel} = 6/1 = 6}.'."\n".
                                                                  'Die Wirkungsquanten eines Wirkungsquanten-Strings mit wechselnder Wirkungsquanten-Dichte bewegen sich auf einer doppelt geschachtelten, helixförmigen'."\n".
                                                                  'Spiralbahn um ein gemeinsames Rotationszentrum.'."\n".
                                                                  'In der gezeigten Struktur blinkt das Lepton mit der De-Broglie-Frequenz in einem Wechsel zwischen einer leicht positiven'."\n".
                                                                  'und einer stärker negativen Polarisation und damit elektrischen Ladung.'."\n".
                                                                  'Aus weitem Blickwinkel erscheint das Lepton im Mittel vornehmlich elektrisch negativ geladen, während von nahem die differenzierte'."\n".
                                                                  'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
-                                                                 'Der Normradius \\term{r_{0}} ist dabei die Bezugseinheit mit \\term{r_{0} = ℏ / (m_{lep} ⋅ c_{0})}.');
+                                                                 'Der Normradius \\term{r__{0}} ist dabei die Bezugseinheit mit \\term{r__{0} = ℏ / (m__{lep} ⋅ c__{0})}.');
   
   $FrQFT_g_figure_ary_LeptonENeutral            = array( fig_file_name => 'Lepton_neutral_v09', fig_alt_description => 'Elektrisch neutrales Lepton', width => '700px', height => '292px', name => 'set local!',
-                                                         text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n_{phase} = n_{wel} / n_{polwel} = 12/2 = 6}.'."\n".
+                                                         text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n__{phase} = n__{wel} / n__{polwel} = 12/2 = 6}.'."\n".
                                                                  'Die Wirkungsquanten eines Wirkungsquanten-Strings mit wechselnder Wirkungsquanten-Dichte bewegen sich auf einer doppelt geschachtelten, helixförmigen'."\n".
                                                                  'Spiralbahn um ein gemeinsames Rotationszentrum.'."\n".
                                                                  'In der gezeigten Struktur blinkt das Lepton mit der De-Broglie-Frequenz in einem Wechsel zwischen einer positiven'."\n".
                                                                  'und einer gleich großen negativen Polarisation und ist damit ohne elektrische Ladung.'."\n".
                                                                  'Aus weitem Blickwinkel erscheint das Lepton im Mittel vornehmlich elektrisch neutral, während von nahem die differenzierte'."\n".
                                                                  'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
-                                                                 'Der Normradius \\term{r_{0}} ist dabei die Bezugseinheit mit \\term{r_{0} = ℏ / (m_{lep} ⋅ c_{0})}.');
+                                                                 'Der Normradius \\term{r__{0}} ist dabei die Bezugseinheit mit \\term{r__{0} = ℏ / (m__{lep} ⋅ c__{0})}.');
   
   $FrQFT_g_figure_ary_LeptonQuarkSpinAnti       = array( fig_file_name => 'FrQFT/Lepton-Quark-Spins-Anti-v09', fig_alt_description => 'Leptonen und Quarks - Verhältnis von Spins und Antiteilchen', width => '660px', height => '221px', name => 'set local',
                                                          text => 'Die Darstellung zeigt die räumlichen Verhältnisse des inneren Spins in Relation zum normalen, äußeren Spin in Bezug auf Teilchen und ihre Antiteilchen.'."\n".
@@ -515,7 +515,7 @@
                                                                   'Die elektromagnetische Polarisation rotiert entgegengesetzt zu den Fundamentalteilchen.');
   
   $FrQFT_g_figure_ary_PoundRebkaSnider          = array( fig_file_name => 'Pound-Repka-Snider_Exp_v03', fig_alt_description => 'Pound-Repka-Snider-Experiment', width => '514px', height => '187px', name => 'set local!',
-                                                         text => '\\color{*Bearb}{(Grafik: Vermerken, das \\term{v_{wq}} konstant ist und der erhöhten LG entspricht! \\term{v_{wq} =} Pythagoras hinschreiben.)} Die Darstellung zeigt, unter welchen Bedingungen das Pound-Rebka-Snider-Experiment mit der Quanten-Fluss-Theorie zusammenfällt.'."\n".
+                                                         text => '\\color{*Bearb}{(Grafik: Vermerken, das \\term{v__{wq}} konstant ist und der erhöhten LG entspricht! \\term{v__{wq} =} Pythagoras hinschreiben.)} Die Darstellung zeigt, unter welchen Bedingungen das Pound-Rebka-Snider-Experiment mit der Quanten-Fluss-Theorie zusammenfällt.'."\n".
                                                                   'Der Wirkungsquanten-Geschwindigkeitsvektor – am Kreismittelpunkt ansetzend – stellt die Geschwindigkeitseigenschaft der drei Lichtgeschwindigkeiten – Einsteinsche Lichtgeschwindigkeit, Rotations-Lichtgeschwindigkeit und erhöhte Lichtgeschwindigkeit – dar.');
   
   $FrQFT_g_figure_ary_QuarkProton               = array( fig_file_name => 'FrQFT/Quark-Protron-v01', fig_alt_description => 'XXX - XXX', width => '660px', height => '221px', name => 'set local',
@@ -525,7 +525,7 @@
   
   $FrQFT_g_figure_ary_RelatDichte               = array( fig_file_name => 'Elapson-Graviton-Dicht_v04', fig_alt_description => 'Relation der Wirkungsquanten-String- zur Elapsonen-bahn-Dichte', width => '700px', height => '237px', name => 'set local!',
                                                          text => '\\color{*Bearb}{(Die y-Achse entspricht dem Alterungsfaktor Alpha. Mit Gleichheitszeichen eintragen? • Ist die Bezeichnung Ereignishorizont wirklich zutreffend? Es ist nicht so einer wie in der ART. Übergangshorizont wäre vielleicht besser. (Siehe Artikel GEO 10/2014, "Wie schwarz ist Schwarz?", S. 130–144.) Die Bilddatei sollte nicht mehr den Namen Graviton tragen.)} Das Diagramm stellt auf der Horizontal-Achse den Kehrwert der relativen Wirkungsquanten-String-Dichte dar; je kleiner der Horizontal-Achswert, desto höher die Wirkungsquanten-Dichte.'."\n".
-                                                                 'Die Vertikal-Achse hingegen stellt die entsprechende relative Elapsonen-Bahn-Dichte auch als Kehrwert dar, der nach Formel \\jumpname[*FigDescr]{OM:FrQFT:ZeitAlterungFrequenz:Equ-RelatEpBDicht} dem absoluten Alterungsfaktor \\term{_{x}⍺} entspricht; je kleiner der Vertikal-Achswert, desto höher die Elapsonen-Bahn-Dichte.'."\n".
+                                                                 'Die Vertikal-Achse hingegen stellt die entsprechende relative Elapsonen-Bahn-Dichte auch als Kehrwert dar, der nach Formel \\jumpname[*FigDescr]{OM:FrQFT:ZeitAlterungFrequenz:Equ-RelatEpBDicht} dem absoluten Alterungsfaktor \\term{__{x}⍺} entspricht; je kleiner der Vertikal-Achswert, desto höher die Elapsonen-Bahn-Dichte.'."\n".
                                                                  'Eine Zentrale Masse kann sich mit ihrem Mittelpunkt im Nullpunkt gedacht werden, wobei ein Schwarzes Loch am eingezeichneten Ereignishorizont seinen Schwarzschild-Radius hat.');
   
   $FrQFT_g_figure_ary_UnpolPhotFarb6Pol         = array( fig_file_name => 'FrQFT/Unpolarisiertes-Photon-Farbpolarisation-6polig-v01', fig_alt_description => 'Unpolarisiertes Photon, Farbpolarisation (6-polig)', width => '380px', height => '500px', name => 'set local!',
@@ -745,8 +745,8 @@
                                                                  'Jedes einzelne Wirkungsquant des Strings erzeugt ständig neue, virtuelle Wirkungsquanten, die ringförmig um den und'."\n".
                                                                  'senkrecht zum String abgestrahlt werden.'."\n".
                                                                  'Ihre Wirkung nimmt beim Abstand \\term{r} zum String nur mit \\term{1/r} ab.'."\n".
-                                                                 'Bei doppelter Energie und Masse \\term{m_{ele}} des Strings halbiert sich sein Radius \\term{r_{ele}} und vervierfacht sich seine Wirkungsquanten-Dichte.'."\n".
-                                                                 'Seine Graviradiation verdoppelt sich aber nur, weil die Länge \\term{Δt_{vwq}} seiner abgestrahlten Impulse sich durch die doppelte Winkelgeschwindigkeit \\term{ω_{ele}}'."\n".
+                                                                 'Bei doppelter Energie und Masse \\term{m__{ele}} des Strings halbiert sich sein Radius \\term{r__{ele}} und vervierfacht sich seine Wirkungsquanten-Dichte.'."\n".
+                                                                 'Seine Graviradiation verdoppelt sich aber nur, weil die Länge \\term{Δt__{vwq}} seiner abgestrahlten Impulse sich durch die doppelte Winkelgeschwindigkeit \\term{ω__{ele}}'."\n".
                                                                  'halbiert.');
   
   

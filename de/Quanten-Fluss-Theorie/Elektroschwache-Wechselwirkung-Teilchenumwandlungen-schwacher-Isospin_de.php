@@ -192,14 +192,14 @@
                       
                   array( 'figure',
                     array( fig_file_name => 'Lepton_neutral_v09', fig_alt_description => 'Elektrisch neutrales Lepton', width => '700px', height => '292px', name => 'OM:FrQFT:ElektroschwacheWW:Elektrisch-neutrales-Lepton',
-                           text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n_{phase} = n_{wel} / n_{polwel} = 12/2 = 6}.'."\n".
+                           text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n__{phase} = n__{wel} / n__{polwel} = 12/2 = 6}.'."\n".
                                    'Die Wirkungsquanten eines Wirkungsquanten-Strings mit wechselnder Wirkungsquanten-Dichte bewegen sich auf einer doppelt geschachtelten, helixförmigen'."\n".
                                    'Spiralbahn um ein gemeinsames Rotationszentrum.'."\n".
                                    'In der gezeigten Struktur blinkt das Lepton mit der De-Broglie-Frequenz in einem Wechsel zwischen einer positiven'."\n".
                                    'und einer gleich großen negativen Polarisation und ist damit ohne elektrische Ladung.'."\n".
                                    'Aus weitem Blickwinkel erscheint das Lepton im Mittel vornehmlich elektrisch neutral, während von nahem die differenzierte'."\n".
                                    'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
-                                   'Der Normradius \\term{r_{0}} ist dabei die Bezugseinheit mit \\term{r_{0} = ℏ / (m_{lep} ⋅ c_{0})}.')),
+                                   'Der Normradius \\term{r__{0}} ist dabei die Bezugseinheit mit \\term{r__{0} = ℏ / (m__{lep} ⋅ c__{0})}.')),
                       
                   array( 'normal',
                     '\\color{*Bearb}{Einen Film erstellen …}'."\n"),
@@ -377,7 +377,7 @@
                   array( 'normal',
                     'Hierbei ist allerdings folgende Festlegung der Quanten-Fluss-Theorie zu beachten:'."\n"),
                   array( 'conclusion',
-                        'Alle Fermionen, wie Leptonen, Quarks und Hadronen, besitzen vom Betrag her den gleichen inneren Spin \\term{s_{fer,innen}}.'."\n".
+                        'Alle Fermionen, wie Leptonen, Quarks und Hadronen, besitzen vom Betrag her den gleichen inneren Spin \\term{s__{fer,innen}}.'."\n".
                         'Sein Betrag ist nach der folgenden Formel von der bisher nicht bekannten \\jump[][000AC4]{OM:FrQFT:Lepton}{Leptonen-Phasenzahl} abhängig \\color{*Bearb}{(Diese Formel gibt aus schon auf der Leptonen-Seite. Deren Nummer hier benutzen und mit einem Link versehen.)}:'."\n"),
                   array( 'equations',
                     array( equ_text_std => 'Esw', equ_list => array(

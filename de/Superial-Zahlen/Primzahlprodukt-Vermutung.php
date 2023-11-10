@@ -956,7 +956,7 @@
                     'Das muss so sein, denn in dem Moment, wo \\latexmath{ n = p_i + 1 } ist, mit \\latexmath{ p_i \in \mathbb{P} }, kommt zur Menge \\latexmath{ n }'."\n".
                     'die Primzahl \\latexmath{ p_i } hinzu und damit auch zu ihrer Mengen-Primfakultät \\latexmath{ n\overline{\#} }.'."\n".
                     'Die hinzu gekommene Primzahl kann aber nicht Teil der Primfaktorzerlegung einer der kleineren Zahlen \\latexmath{ x < p_i } sein.'."\n".
-                    'Denn diese haben als Primfaktoren nur kleinere Primzahlen \\term{ p_{i–d} }, mit \\latexmath{ 1 \leq d < i },'."\n".
+                    'Denn diese haben als Primfaktoren nur kleinere Primzahlen \\term{ p__{i–d} }, mit \\latexmath{ 1 \leq d < i },'."\n".
                     'oder sind selber eine Primzahl.'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -1943,7 +1943,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \nexists n \in \; ] p_{i}, p_{i}\# - 1 [_\mathbb{N} *)  *[  n  \in  \mathbb{P}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Dann ist die nächste Primfakultät \\term{p_{i+1}#} die Zahl zwischen dem nächsten Primzahlwilling:'."\n".
+                      'Dann ist die nächste Primfakultät \\term{p__{i+1}#} die Zahl zwischen dem nächsten Primzahlzwilling:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(

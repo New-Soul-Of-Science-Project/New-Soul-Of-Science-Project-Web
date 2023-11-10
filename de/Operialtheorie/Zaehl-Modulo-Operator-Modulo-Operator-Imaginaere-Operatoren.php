@@ -188,7 +188,7 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'setzen für \term{x} den Operator \\term{i} ein'."\n".
+                      'setzen für \\term{x} den Operator \\term{i} ein'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(

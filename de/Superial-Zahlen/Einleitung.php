@@ -122,10 +122,10 @@
                       'Dabei ist \\term{s^^{-1}} ein neues Symbol, über das ich zunächst nur annahm, dass es kleiner als jede positive Zahl war und doch größer als Null.'."\n".
                     'Ähnlich wie bei den komplexen Zahlen die imaginäre Einheit \\term{i} war auch \\term{s^^{-1}} eine neue Einheit, die ich als \\italic{superial kleine Einheit} bezeichne.'."\n".
                     'In der Mathematik ist es kein Problem ein neues Symbol zu kreieren und zu definieren, solange sich dadurch keine Widersprüche ergeben.\\footnote{Sekundärliteratur \\\\ Vgl. \\cite{Freistetter:DieFreiheitDerImaginaerenZahlen:2016}. \\\\ Internet: \\\\ Vgl. \\cite{Freistetter:DieFreiheitDerMathematik:2016}.}'."\n",
-                      'Die superial kleine Einheit \\term{s^^{-1}} führte dazu, dass die sonst bei der Ableitung verschwindenden Summanden \\term{a_{k}} nicht verloren gehen, sondern in unendlich kleinen'."\n".
-                    'Dimensionen \\term{q_{-1}⋅s^^{-1} + q_{-2}⋅s^^{-2} + q_{-3}⋅s^^{-3} + …} erhalten blieben, also in einer \\italic{superial} kleinen Welt.'."\n".
+                      'Die superial kleine Einheit \\term{s^^{-1}} führte dazu, dass die sonst bei der Ableitung verschwindenden Summanden \\term{a__{k}} nicht verloren gehen, sondern in unendlich kleinen'."\n".
+                    'Dimensionen \\term{q__{-1}⋅s^^{-1} + q__{-2}⋅s^^{-2} + q__{-3}⋅s^^{-3} + …} erhalten blieben, also in einer \\italic{superial} kleinen Welt.'."\n".
                     'Von hier können sie auch beim Integrieren wieder auftauchen.'."\n".
-                    'Die Dimension \\term{q_{0}⋅s^^{0} = q_{0}} stellt dann die uns bekannten, endlichen Zahlen dar, weil \\term{s^^{0} = 1} ist, wie gewohnt.'."\n",
+                    'Die Dimension \\term{q__{0}⋅s^^{0} = q__{0}} stellt dann die uns bekannten, endlichen Zahlen dar, weil \\term{s^^{0} = 1} ist, wie gewohnt.'."\n",
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Konkrete Ableitungen} \\\\'."\n".
@@ -590,7 +590,7 @@
                     'Bei Überlegung zu dieser Frage viel mir nach und nach auf, dass sich das Zählen von natürlichen Zahlen mit den \\italic{Superial-Zahlen} \\term{\M(S)} ins unendlich Große'."\n".
                     'vorsetzen ließ und dies nach meiner vorhergehenden Forschung mit der Umkehrung der Ableitung, mit dem \\jump{OM:SupNum:Einleitung:Grundlagen:Ganze-Natuerl-Sup-Zahl-und-Integration}{Integral}, verbunden war.'."\n".
                     'Beim Integrieren mit Superial-Zahlen wurde eine wohldefinierte aktual unendliche Summe mit \\term{s} Summanden von Flächenstreifen der Breite \\term{s^^{-1}} aufsummiert.'."\n",
-                      'Darüber ließ sich die Menge der ganzen Superial-Zahlen \\term{\M(S)_{Z}} oder der natürlichen Superial-Zahlen \\term{\M(S)_{N}} definieren.'."\n".
+                      'Darüber ließ sich die Menge der ganzen Superial-Zahlen \\term{\M(S)__{Z}} oder der natürlichen Superial-Zahlen \\term{\M(S)__{N}} definieren.'."\n".
                     'Wobei es einen Übergang ins Unendliche gab, der im Dunkeln lag, jedoch kam man nach belieben irgendwo im unendlich großen heraus.'."\n".
                     'Man zählt:'."\n".
                     ''))),
@@ -611,7 +611,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Und so fort.'."\n",
-                      'Da stellt sich die Frage, unter welchen Umständen \\term{a_{1}⋅s} eine unendlich große, natürliche, also eine ganze Zahl sein kann?'."\n".
+                      'Da stellt sich die Frage, unter welchen Umständen \\term{a__{1}⋅s} eine unendlich große, natürliche, also eine ganze Zahl sein kann?'."\n".
                     'Das Beispiel \\term{1/2⋅s} müsste dann, wie \\term{s}, eine unendlich große, natürliche Zahl sein.'."\n".
                     '\\term{s} müsste also ganzzahlig durch Zwei teilbar sein.'."\n".
                     'Im mathematischen Sinn sind folglich die Primfaktoren von \\term{s} interessant.'."\n".
@@ -621,7 +621,7 @@
                     'Soll \\term{s} eine unendliche, natürliche Zahl sein, dann müsste sie demnach ein Produkt unendlich vieler endlicher, natürlicher Zahlen sein.'."\n".
                     'Wenn \\term{s} tatsächlich durch jede beliebige endliche, natürliche Zahl teilbar sein soll, ihr Produkt mit jeder rationalen Zahl \\term{q} wäre dann wieder eine'."\n".
                     'unendliche, natürliche Zahl \\term{q⋅s}, dann muss sie selber eine Primfaktorzerlegung haben in der jede Primfaktorzerlegung einer endlichen, natürlichen Zahl steckt.'."\n".
-                    'Da auch \\term{q⋅1/2⋅s}, also allgemein \\term{q_{0}⋅q_{1}⋅q_{2}⋅q_{3}⋅ … ⋅s}, immer eine unendliche, natürliche Zahl sein sollte,'."\n".
+                    'Da auch \\term{q⋅1/2⋅s}, also allgemein \\term{q__{0}⋅q__{1}⋅q__{2}⋅q__{3}⋅ … ⋅s}, immer eine unendliche, natürliche Zahl sein sollte,'."\n".
                     'muss die Primfaktorzerlegung von \\term{s} sogar endlich beliebig oft die Primfaktorzerlegung jeder endlichen, natürlichen Zahl enthalten.'."\n".
                     ''))),
                     ))), */
@@ -912,7 +912,7 @@
                     'Wir können hieran erkennen, dass keine rationale Zahl \\term{k} existiert, die im Produkt mit \\term{s^^{-1}} ins Endliche kommen kann.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Natürliche Superial-Zahlen} \\\\'."\n".
-                    'Wenn wir nun mitten in der Zahlentheorie sind, dann stellt sich auch die Frage, ob es ebenso natürliche Superial-Zahlen \\term{\M(S)_{N}} gibt.'."\n",
+                    'Wenn wir nun mitten in der Zahlentheorie sind, dann stellt sich auch die Frage, ob es ebenso natürliche Superial-Zahlen \\term{\M(S)__{N}} gibt.'."\n",
                       'Das ist im Grunde ziemlich leicht zu beantworten, denn natürliche Zahlen sind generell alle positiven ganzen Superial-Zahlen,'."\n".
                     'hier per obiger Definition einschließlich der Null.'."\n".
                     'Um dies zu beurteilen müssen wir sagen können, welche ganzen Superial-Zahlen größer als Null sind.'."\n",
@@ -953,7 +953,7 @@
                         'Bilde die Primfakultät\\footnote{\\const{SupNum_g_footnote_text_Primorial}} einer Primzahl, das Produkt aller Primzahlen kleiner und einschließlich dieser Primzahl: \\term{p#}',
                         'Addiere Eins dazu oder ziehe Eins ab: \\term{p# ± 1}',
                         '\\term{p# ± 1} ist nicht durch eine der Primzahlen in \\term{p#} ganzzahlig teilbar.',
-                        '\\term{p# ± 1} kann daher entweder nur selber eine Primzahl sein, die dann größer als \term{p} ist, oder ihr Primzahlprodukt enthält ausschließlich Primzahlen – mindestens zwei Stück – die nicht in \term{p#} enthalten sind und damit größer als \term{p} sein müssen. ',
+                        '\\term{p# ± 1} kann daher entweder nur selber eine Primzahl sein, die dann größer als \\term{p} ist, oder ihr Primzahlprodukt enthält ausschließlich Primzahlen – mindestens zwei Stück – die nicht in \\term{p#} enthalten sind und damit größer als \\term{p} sein müssen. ',
                         'Alle Primzahlen, durch die \\term{p# ± 1} teilbar ist, sind damit größer als \\term{p}.',
                         'Es gibt also immer eine Primzahl, die größer ist als jede gegebene Primzahl \\term{p}, womit die Menge der endlichen Primzahlen nicht endet.',
                     ))),
@@ -1003,8 +1003,8 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Nähern sich die Lücken in den Primzahlen \term{Δ  =  (p# - 1) - p}?',
-                        'Dann sind tendenziell alle \term{p# ± 1} Primzahlen.',
+                        'Nähern sich die Lücken in den Primzahlen \\term{Δ  =  (p# - 1) - p}?',
+                        'Dann sind tendenziell alle \\term{p# ± 1} Primzahlen.',
                         'XXX',
                         'XXX',
                         'XXX',
@@ -1023,8 +1023,8 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        '\term{Δp_{i}# = p_{i+1}# - p_{i}#}',
-                        'Annahme \term{Δp_{i}# < Δp_{i+1}#}',
+                        '\\term{Δp__{i}# = p__{i+1}# - p__{i}#}',
+                        'Annahme \\term{Δp__{i}# < Δp__{i+1}#}',
                         'XXX',
                         'XXX',
                     ))),

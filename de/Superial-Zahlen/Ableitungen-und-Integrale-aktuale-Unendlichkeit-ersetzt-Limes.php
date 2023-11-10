@@ -233,7 +233,7 @@
                                           /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Wenn im Folgenden \\term{n} Element der Menge aller ganzen Superial-Zahlen \\term{\M(S)_{Z}} einschließlich Null und ausschließlich \\term{x⋅s^^{1}} ist,'."\n".
+                    'Wenn im Folgenden \\term{n} Element der Menge aller ganzen Superial-Zahlen \\term{\M(S)__{Z}} einschließlich Null und ausschließlich \\term{x⋅s^^{1}} ist,'."\n".
                     'können wir die Integration über folgende Summe ausdrücken:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -242,7 +242,7 @@
                       array( display => 'on',  latex => '{  \int_{0}^{x} f\'(n) \,dn  :=  \sum_{ n \in [0;〈x〉_{1}[ }  ․*〈f\'(n)*〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Damit haben wir die vorherige Ableitung wieder rückgängig gemacht, wenn wir eine schlüssige Definition der ganzen Superial-Zahlen \\term{\M(S)_{Z}} finden.'."\n",
+                    'Damit haben wir die vorherige Ableitung wieder rückgängig gemacht, wenn wir eine schlüssige Definition der ganzen Superial-Zahlen \\term{\M(S)__{Z}} finden.'."\n",
                       'Wie könnten ganze Superial-Zahlen nun aussehen?'."\n".
                     'Wir haben es zuvor ja schon angedeutet:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(

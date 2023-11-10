@@ -429,7 +429,7 @@
                 'Wirkungsquanten-Bewegungsraum \\color{*TitleAdd}{– dreidimensional, euklidisch flach}')),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Der dreidimensionale, \\jump{OM:VRT:Vereinheitlichung-RT-LET:Kosmologisches-Prinzip-und-flacher-Kosmos}{euklidisch flache} \\italic{Wirkungsquanten-Bewegungsraum} ist die Perspektive auf das Medium,'."\n".
-                          'von der aus die erhöhte Lichtgeschwindigkeit\\footnote{\\const{FrQFT_g_footnote_text_LGUeberLG}}, \\term{√2⋅c_{0}} (\\term{c_{0}}: Lichtgeschwindigkeitskonstante), der Wirkungsquanten im Medium in allen Richtungen gleich groß und konstant ist.',
+                          'von der aus die erhöhte Lichtgeschwindigkeit\\footnote{\\const{FrQFT_g_footnote_text_LGUeberLG}}, \\term{√2⋅c__{0}} (\\term{c__{0}}: Lichtgeschwindigkeitskonstante), der Wirkungsquanten im Medium in allen Richtungen gleich groß und konstant ist.',
                         'Diese konstante und in alle Richtungen gleiche, also isotrope, Bewegung der Wirkungsquanten gibt ein absolutes Bezugssystem vor.',
                         'Eine in Bezug auf diese Perspektive absolute Zeit ist dadurch in Form der überall konstanten Bewegung der Wirkungsquanten im Bewegungsraum enthalten.',
                         'Die Wirkungsquanten bewegen sich, wie oben erläutert, auf Helixspiralbahnen und bilden so die sogenannten \\jump{*Elapsonen-Herlei}{Elapsonen} des Vakuums und die Photonen.'."\n".
@@ -439,7 +439,7 @@
                           'In der jeweils entgegengesetzen Richtung ist die Einweg-Lichtgeschwindigkeit am selben Ort jedoch gleich groß.',
                         'Je größer die Wirkungsquanten-Dichte in einer Raumrichtung ist, desto geringer fällt die Einweg-Lichtgeschwindigkeit in dieser Richtung aus.',
                         'Objekte im Gravitationsfeld erscheinen im absoluten Bezugssystem des Mediums Verzerrt.',
-                        'Es gibt ausgezeichnete Orte des von mir so genannten \\jump{*KosmBeob-Herlei}{kosmischen Beobachters}, an denen die variable Einweg-Lichtgeschwindikeit \\term{c_{0}} entspricht. \\color{*Bearb}{(Ist an diesen Orten die Einweg-LG in allen Richtungen gleich groß?)}'."\n".
+                        'Es gibt ausgezeichnete Orte des von mir so genannten \\jump{*KosmBeob-Herlei}{kosmischen Beobachters}, an denen die variable Einweg-Lichtgeschwindikeit \\term{c__{0}} entspricht. \\color{*Bearb}{(Ist an diesen Orten die Einweg-LG in allen Richtungen gleich groß?)}'."\n".
                           'Dies sind Orte durchschnittlicher Wirkungsquanten-Dichte, gemssen an der Wirkungsquanten-Dichte des gesamten Kosmos.'."\n".
                           'Aus Sicht eines kosmischen Beobachters ist die Beschreibung der Zusammenhänge im Wirkungsquanten-Bewegungsraum am Einfachsten.',
                     ))),

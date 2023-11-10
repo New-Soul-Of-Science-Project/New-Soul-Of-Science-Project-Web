@@ -76,7 +76,7 @@
                     'Die andere Komponente ist eine zusätzliche Rotation, eine Schwingung, die nichts mit der Alterung der Elementarteilchen zu tun hat, sondern mit der Stabilität'."\n".
                     'der Elementarteilchen, auf deren Basis die Alterungsprozesse ablaufen.'."\n".
                     'Beide Bewegungskomponenten zusammen ergeben, aus einer bestimmten Perspektive gesehen, eine konstante Bewegung der Feinstruktur der Elementarteilchen,'."\n".
-                    'die Basis jeder Veränderung ist, also einer neuen und grundlegenderen Zeit entspricht, und deren Betrag sich als \\term{√2c_{0}} – Wurzel von Zwei mal der Lichtgeschwindigkeit – herausstellt.'."\n".
+                    'die Basis jeder Veränderung ist, also einer neuen und grundlegenderen Zeit entspricht, und deren Betrag sich als \\term{√2c__{0}} – Wurzel von Zwei mal der Lichtgeschwindigkeit – herausstellt.'."\n".
                     'Es handelt sich also um eine Überlichtgeschwindigkeit der Feinstruktur der Elementarteilchen.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Eine bestimmte Form der Überlichtgeschwindigkeit ist mit der Relativitätstheorie vereinbar …} \\\\'."\n".

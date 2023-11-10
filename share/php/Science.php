@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 09.11.2023, 22:00h
+  // #: Stand: 10.11.2023, 17:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20231110:  !:  "$Sc_g_Text_replace_preg_ary": Change entry "_{}" to "__{}".
   //           20231109:  !:  "$Sc_g_Text_replace_preg_ary": Change entry "^{}" to "^^{}".
   //           20231030:  +:  "MathJax":  Add Macro "i" for "\i" generates a non italic "i" in formulas for the imaginary unit.
   //           20231024:  +:  "MathJax":  Add Macro "e" for "\e" generates a non italic "e" in formulas for the Euler number.
@@ -399,7 +400,7 @@
     }
     else
     
-      return 'Error: "_{}": Parameter amount is not 1 and 0 optional! $value[0]';
+      return 'Error: "__{}": Parameter amount is not 1 and 0 optional! $value[0]';
 
   }
 
@@ -526,9 +527,9 @@
                                                param_optional_max => 0,
                                                callback_f => 'Sc_f_replace_callback__latexcommand__zirkumflex',
                                              ),
-                                      '_' =>
+                                      '__' =>
                                         array( type => 'latexcommand',
-                                               search => '_',
+                                               search => '__',
                                                param_dim => 1,
                                                param_optional_max => 0,
                                                callback_f => 'Sc_f_replace_callback__latexcommand__underscore',

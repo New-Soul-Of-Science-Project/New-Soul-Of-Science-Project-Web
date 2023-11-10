@@ -35,8 +35,8 @@
                     '• Welche Rolle soll die Herleitung Heisenbergs\\footnote[*Bearb]{\\cite{Heisenberg:UeberQuantKinMech1927Scan}.} hier spielen? Noch einmal lesen und entscheiden!',
                     '\\bold{Erkenntnisse und Ideen zu dieser Herleitung}',
                     '• \\bold{\\italic{Fraktalität der Quantenmechanik:}} Die Heisenbergsche Unschärferelation enthält aus Sicht der Abzählinterpretation bereits eine doppelte Quantisierung: Es werden erstens einzelne Elementarteilchen (Quanten des Lichts z.B.) betrachtet und zweitens deren Wirkungsquanten gezählt. Der Ansatz der fraktalen Struktur wird hier also schon sichtbar.',
-                    '• Es gilt auch, dass die Energie proportional zur Winkelgeschwindigkeit der Rotation eines Simplifizierten Leptonen-Strings ist: \\term{E_{ele} = ℏ ⋅ ω_{ele}} (vgl. Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-aus-omega} und \\cite{wiki:PlanckschesWirkungsquantum2013}, Definition.).',
-                    '• Es wäre schön, die Materiewellengleichung hier herzuleiten: \\term{p_{ele} = ℏ / λ_{ele}}. Diese könnte dann auch in den First-Principles im Abzählprinzip angegeben werden.',
+                    '• Es gilt auch, dass die Energie proportional zur Winkelgeschwindigkeit der Rotation eines Simplifizierten Leptonen-Strings ist: \\term{E__{ele} = ℏ ⋅ ω__{ele}} (vgl. Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-aus-omega} und \\cite{wiki:PlanckschesWirkungsquantum2013}, Definition.).',
+                    '• Es wäre schön, die Materiewellengleichung hier herzuleiten: \\term{p__{ele} = ℏ / λ__{ele}}. Diese könnte dann auch in den First-Principles im Abzählprinzip angegeben werden.',
                     '\\bold{Dunkle Photonen des Vakuums}',
                     '• Da die dunklen Photonen des Vakuums, die unpolarisierten Photonen, eben keine Polarisation tragen sind ihre Frequenzen, ihre Rotationen oder Schwingungen, nicht im Frequenzbereich von polarisierten Photonen wahrnehmbar! Nur ihre Impulskegel vermitteln ihre Gravitation oder Graviradiation. Dies geschieht aber in einem anderen Frequenzband auf viel höheren Frequenzen.',
                     '\\bold{Fachliche Diskussion}',
@@ -275,8 +275,8 @@
                       
                   array( 'text', array( text => array(
                     'Der Zähler \\term{n} meint die Anzahl der Rotationen eines Elementarteilchens.'."\n".
-                    'Während \\term{n_{ele,wq}} für die Anzahl der Wirkungsquanten des Substruktur steht:'."\n".
-                    'Das bedeutet, dass bei jeder Rotation \\term{n_{ele,wq}} Wirkungsquanten mit ihren Impulskegeln durch rotieren.'."\n",
+                    'Während \\term{n__{ele,wq}} für die Anzahl der Wirkungsquanten des Substruktur steht:'."\n".
+                    'Das bedeutet, dass bei jeder Rotation \\term{n__{ele,wq}} Wirkungsquanten mit ihren Impulskegeln durch rotieren.'."\n",
                       'In der \\italic{\\jumpname{OM:FrQFT:Quantengravitation}} sollte also jeder Impulskegel \\term{h} nicht, wie bisher gedacht, für einen Wirkungsquanten-Impulskegel stehen,'."\n".
                     'sondern für einen Impuls, der einer einzelnen Rotation des Elementarteilchens entspricht.'."\n".
                     'Das würde bedeuten, dass ein Impulskegel, der \\term{h} entspricht, einem Graviton entsprechen sollte.'."\n",

@@ -282,8 +282,8 @@
                                                label_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-LG-aus-Frequenz-Lambda', label_text => '\\name{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-LG-aus-Frequenz-Lambda}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Die Energie \\term{E_{ele}} eines Elementarteilchens ist durch seine De-Broglie-'."\n".
-                      'Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}} \\term{f_{ele}} gegeben mit'."\n".
+                      'Die Energie \\term{E__{ele}} eines Elementarteilchens ist durch seine De-Broglie-'."\n".
+                      'Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}} \\term{f__{ele}} gegeben mit'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -299,7 +299,7 @@
                                                label_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-E-ele-aequi-zu-Masse', label_text => '\\jump{OM:FrQFT:FirstPrinciples:Vortext:Equ-E-ele-aequi-zu-Masse}{\\name{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-E-ele-aequi-zu-Masse}}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Generell gehen wir davon aus, dass die De-Broglie-Frequenz \\term{f_{ele}} eines Elementarteilchens'."\n".
+                    'Generell gehen wir davon aus, dass die De-Broglie-Frequenz \\term{f__{ele}} eines Elementarteilchens'."\n".
                     'eine Rotation oder Schwingung von einem bestimmten Zustand zum nächsten von diesem ununterscheidbaren ist.'."\n".
                     'Das bedeutet, dass bei einem Schwingungsdurchgang mit der Spin-Rotationsgeschwindigkeit \\term{c} nicht unbedingt'."\n".
                     'der gesamte String einmal in der Ebene des Haupt-Spins'."\n".
@@ -319,17 +319,17 @@
                   '')),
                   array( 'text', array( text => array(
                     'Um die Struktur formal zu beschreiben brauchen wir verschiedene Kennzahlen, die einen Leptonen-String auszeichnen:'."\n",
-                      'Wir beginnen mit der Anzahl der elektrischen Feldstärken-Pole \\term{n_{pol}} im String.'."\n".
+                      'Wir beginnen mit der Anzahl der elektrischen Feldstärken-Pole \\term{n__{pol}} im String.'."\n".
                     'Diese entsprechen den Wechseln zwischen dichter und weniger dicht mit Wirkungsquanten besetzten Stellen des Strings.'."\n".
                     'Bei geladenen Leptonen-Strings kommt ein Feldstärken-Polwechsel auf eine Lichtbahn-Welle,'."\n".
-                    'sodass immer die gleichen Feldstärken-Pole nach außen und die anderen nach innen präsentiert werden (\\term{n_{polwel} = 1}),'."\n".
+                    'sodass immer die gleichen Feldstärken-Pole nach außen und die anderen nach innen präsentiert werden (\\term{n__{polwel} = 1}),'."\n".
                     'wodurch die Teilchen im zeitlichen Mittel elektrisch geladen erscheinen.'."\n".
                     'Bei neutralen Leptonen-Strings verteilt sich ein Feldstärken-Polwechsel auf zwei Lichtbahn-Wellen,'."\n".
-                    'sodass gleichzeitig die beiden unterschiedlichen Feldstärken-Pole nach innen \\color{*Bearb}{(außen?)} präsentiert werden (\\term{n_{polwel} = 2}),'."\n".
+                    'sodass gleichzeitig die beiden unterschiedlichen Feldstärken-Pole nach innen \\color{*Bearb}{(außen?)} präsentiert werden (\\term{n__{polwel} = 2}),'."\n".
                     // 'sodass gleichzeitig die beiden unterschiedlichen Feldstärken-Pole nach innen \\color{*Bearb}{(außen?)} präsentiert werden (\\latexmath{ n_{polwel} = 2 }),'."\n".
                     'was die neutralen Leptonen-Strings bei zunehmender Distanz von deren Schwerpunkt sehr schnell völlig elektrisch neutral erscheinen lässt.'."\n".
-                    'Multipliziert mit der Wellenanzahl der \\color{*LichtbahnGruen}{grünen} Lichtbahn je Feldstärken-Polwechsel \\term{n_{polwel}}'."\n".
-                    'bestimmen sie die gesamte Lichtbahn-Wellenanzahl \\term{n_{wel}}:'."\n".
+                    'Multipliziert mit der Wellenanzahl der \\color{*LichtbahnGruen}{grünen} Lichtbahn je Feldstärken-Polwechsel \\term{n__{polwel}}'."\n".
+                    'bestimmen sie die gesamte Lichtbahn-Wellenanzahl \\term{n__{wel}}:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -338,25 +338,25 @@
 
                   array( 'notice', array( Display => 'showContent', text => array(
                     '\\bold{Fragestellungen zur Entwicklung des Modells}',
-                    '\\bold{\\italic{Wie stehen \\term{n_{wel}}, \\term{n_{pol}} und \\term{n_{polwel}} mit dem Unterschied zwischen den Neutrinos und den geladenen Leptonen im Zusammenhang?}}',
+                    '\\bold{\\italic{Wie stehen \\term{n__{wel}}, \\term{n__{pol}} und \\term{n__{polwel}} mit dem Unterschied zwischen den Neutrinos und den geladenen Leptonen im Zusammenhang?}}',
                     '\\condb{Ladung}',
-                    '• geladen: \\term{n_{polwel} = 1}',
-                    '• neutral: \\term{n_{polwel} = 2}',
+                    '• geladen: \\term{n__{polwel} = 1}',
+                    '• neutral: \\term{n__{polwel} = 2}',
                     '• neutral: Ladungspole nach innen oder nach außen, Teilchen und Antiteilchen(?), starker Strukturunterschied(!), CP-Verletzung(?), bestimmte Reaktionen gibt es nicht mit links- oder rechtshändigen Neutrinos(?)',
                     '\\condb{Frequenz}',
-                    '• \\quote{Generell gehen wir davon aus, dass die De-Broglie-Frequenz \\term{f_{ele}} eines Elementarteilchens eine Rotation oder Schwingung von einem bestimmten Zustand zum nächsten von diesem ununterscheidbaren ist.}',
-                    '• \\term{n_{polwel} = 2} führt dazu, dass ein wirklich ununterscheidbarer Zustand erst nach zwei Durchgängen von \\term{f_{ele}} erreicht wird.',
+                    '• \\quote{Generell gehen wir davon aus, dass die De-Broglie-Frequenz \\term{f__{ele}} eines Elementarteilchens eine Rotation oder Schwingung von einem bestimmten Zustand zum nächsten von diesem ununterscheidbaren ist.}',
+                    '• \\term{n__{polwel} = 2} führt dazu, dass ein wirklich ununterscheidbarer Zustand erst nach zwei Durchgängen von \\term{f__{ele}} erreicht wird.',
                     '• Beide Zustände sind aber nahezu ununterscheidbar.',
                     '• Was bedeutet dies für das Modell?',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Wenn sich, wie gesagt, der Wirkungsquanten-String entlang der \\color{*LichtbahnGruen}{grünen} Lichtbahn mit Lichtgeschwindigkeit \\term{_{0}c} bewegt,'."\n".
-                    'dann bewegt er sich, projiziert auf den \\color{*SpinBahnBlau}{blauen} Kreis der Spin-Bahn, im Mittelwert mit der Spin-Geschwindigkeit \\term{c_{spin}}, wobei \\term{c_{spin} < _{0}c} gilt.'."\n".
+                    'Wenn sich, wie gesagt, der Wirkungsquanten-String entlang der \\color{*LichtbahnGruen}{grünen} Lichtbahn mit Lichtgeschwindigkeit \\term{__{0}c} bewegt,'."\n".
+                    'dann bewegt er sich, projiziert auf den \\color{*SpinBahnBlau}{blauen} Kreis der Spin-Bahn, im Mittelwert mit der Spin-Geschwindigkeit \\term{c__{spin}}, wobei \\term{c__{spin} < __{0}c} gilt.'."\n".
                     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Sei \\term{f_{ele}} die Frequenz der String-Schwingungen und \\term{λ_{wel}} die'."\n".
+                      'Sei \\term{f__{ele}} die Frequenz der String-Schwingungen und \\term{λ__{wel}} die'."\n".
                       'Lichtbahn-Länge einer Lichtbahn-Welle, dann ergibt sich nach'."\n".
                       'Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-LG-aus-Frequenz-Lambda} für'."\n".
                     ''))),
@@ -366,8 +366,8 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  f_{ele}  =  \frac{ c_{spin} }{ \lambda_{wel} }  \;\;  .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Weiterhin können wir aus dem Radius \\term{r_{spin}} der \\color{*SpinBahnBlau}{blauen} Spin-Bahn und der Anzahl der'."\n".
-                      'Wellensegmente \\term{n_{wel}} über den gesamten String die Länge eines'."\n".
+                      'Weiterhin können wir aus dem Radius \\term{r__{spin}} der \\color{*SpinBahnBlau}{blauen} Spin-Bahn und der Anzahl der'."\n".
+                      'Wellensegmente \\term{n__{wel}} über den gesamten String die Länge eines'."\n".
                       'Wellensegmentes zu'."\n".
                     ''))),
                   array( 'equations',
@@ -409,10 +409,10 @@
                                                label_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Masse-Radius', label_text => '\\name{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Masse-Radius}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Weil der Spin-Radius \\term{r_{spin}} entlang des Strings variiert und hier gemittelt ist,'."\n".
-                    'ist zu beachten, dass auch die Geschwindigkeit \\term{c_{spin}}'."\n".
+                    'Weil der Spin-Radius \\term{r__{spin}} entlang des Strings variiert und hier gemittelt ist,'."\n".
+                    'ist zu beachten, dass auch die Geschwindigkeit \\term{c__{spin}}'."\n".
                     'entlang der Spin-Bahn variiert und ebenfalls vereinfachend gemittelt ist.'."\n".
-                    'Dass \\term{r_{spin}} und \\term{c_{spin}} Mittelungen sind, spielt keine große Rolle,'."\n".
+                    'Dass \\term{r__{spin}} und \\term{c__{spin}} Mittelungen sind, spielt keine große Rolle,'."\n".
                     'denn die mit ihnen verbundenen gemessenen Größen sind statistischer Natur.'."\n",
                       'Entscheidend für ein Modell, dass die Physik vereinheitlicht, ist die Realisierung der wesentlichen'."\n".
                     'Eigenschaften der zu vereinheitlichenden Theorien: der Allgemeinen Relativitätstheorie und der Quantenphysik\\footnote{\\const{FrQFT_g_footnote_text_Quantenphysik}}.'."\n".
@@ -440,8 +440,8 @@
                     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Im entwickelten Modell wird der Leptonen-Spin \\term{s_{lep}} als realer Drehimpuls verstanden, der sich aus der Masse \\term{m_{lep}} seines Strings'."\n".
-                      'in Bezug auf dessen mittleren Rotationsradius \\term{r_{spin}} und seine mittlere Geschwindigkeit \\term{c_{spin}} zu'."\n".
+                      'Im entwickelten Modell wird der Leptonen-Spin \\term{s__{lep}} als realer Drehimpuls verstanden, der sich aus der Masse \\term{m__{lep}} seines Strings'."\n".
+                      'in Bezug auf dessen mittleren Rotationsradius \\term{r__{spin}} und seine mittlere Geschwindigkeit \\term{c__{spin}} zu'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -452,7 +452,7 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'berechnet. \\\\ '."\n".
-                      'Ersetzen wir hierin das Produkt aus Spin-Radius und Masse \\term{r_{spin} ⋅ m_{lep}} mit Hilfe von Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Masse-Radius}, dann erhalten wir:'."\n".
+                      'Ersetzen wir hierin das Produkt aus Spin-Radius und Masse \\term{r__{spin} ⋅ m__{lep}} mit Hilfe von Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Masse-Radius}, dann erhalten wir:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -466,16 +466,16 @@
                                                label_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-LG-aus-Spin-Geschw', label_text => '\\name{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-LG-aus-Spin-Geschw}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Demnach ist die mittlere Spin-Geschwindigkeit \\term{c_{spin}} ausschließlich von der Wellenzahl \\term{n_{wel}} abhängig.'."\n",
-                      'Zur mittleren Rotationsgeschwindigkeit \\term{c_{licht,rot}} des Strings projiziert auf die'."\n".
+                    'Demnach ist die mittlere Spin-Geschwindigkeit \\term{c__{spin}} ausschließlich von der Wellenzahl \\term{n__{wel}} abhängig.'."\n",
+                      'Zur mittleren Rotationsgeschwindigkeit \\term{c__{licht,rot}} des Strings projiziert auf die'."\n".
                     '\\color{*LichtbahnGruen}{grüne} Lichtbahn, also entlang der beziehungsweise parallel zur \\color{*LichtbahnGruen}{grünen} Spirale'."\n".
                     'um die \\color{*SpinBahnBlau}{blaue} Spin-Bahn, gelangen wir aufgrund der senkrechten'."\n".
-                    'Orientierung des Lichtbahn-Radius \\term{r_{licht,rot}} zur Spin-Bahn über den Pythagoras:'."\n".
+                    'Orientierung des Lichtbahn-Radius \\term{r__{licht,rot}} zur Spin-Bahn über den Pythagoras:'."\n".
                     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\ '."\n".
                       'Die Geschwindigkeit des Strings parallel zur Lichtbahn ist, wie oben geschildert,'."\n".
-                      'per Definition die Lichtgeschwindigkeit \\term{_{0}c}:'."\n".
+                      'per Definition die Lichtgeschwindigkeit \\term{__{0}c}:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -483,9 +483,9 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  c_{licht,rot}  =  \sqrt{ {_{\lowZero}c^{2}} - c_{spin}^{2} }  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wir setzen für \\term{c_{spin}} Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Spin-Geschw-aus-LG}'."\n".
+                      'Wir setzen für \\term{c__{spin}} Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Spin-Geschw-aus-LG}'."\n".
                       'und anschließend für die Lichtgeschwindigkeit'."\n".
-                      '\\term{_{0}c} Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-LG-aus-Spin-Geschw} ein und erhalten'."\n".
+                      '\\term{__{0}c} Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-LG-aus-Spin-Geschw} ein und erhalten'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -506,8 +506,8 @@
                   array( 'text', array( text => array(
                     'Mit Hilfe der allgemeinen Wellengleichung können wir jetzt formulieren,'."\n".
                     'wie die auf die \\color{*LichtbahnGruen}{grüne} Lichtbahn projizierte Rotationsgeschwindigkeit'."\n".
-                    '\\term{c_{licht,rot}} um die \\color{*SpinBahnBlau}{blaue} Spin-Bahn und ihr Rotationsradius \\term{r_{licht,rot}}'."\n".
-                    'mit der De-Broglie-Frequenz \\term{f_{ele}} des Leptons in Zusammenhang stehen.'."\n".
+                    '\\term{c__{licht,rot}} um die \\color{*SpinBahnBlau}{blaue} Spin-Bahn und ihr Rotationsradius \\term{r__{licht,rot}}'."\n".
+                    'mit der De-Broglie-Frequenz \\term{f__{ele}} des Leptons in Zusammenhang stehen.'."\n".
                     'Denn wie in der \\jumpname{OM:FrQFT:Lepton:Vortext:Ani-Lepton} zu erkennen ist,'."\n".
                     'rotiert der Leptonen-String ein Mal um die Lichtbahn, während er auch ein Mal um die Spin-Bahn rotiert.'."\n".
                     'Beide Rotationsfrequenzen sind identisch:\\footnote{Dies ist eine Korrektur gegenüber meiner Arbeit von 2012, wo die Annahme war, dass der Wirkungsquanten-String, dort noch Gravitonen-String genannt, zwei Mal um die Licht-Bahn rotiert, während er ein Mal um die Spin-Bahn rotiert: \\\\ Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 5 Qualitative Physik der QM und ART, 5.2 Elementarteilchen und ihre Wechselwirkungen, 5.2.1 Leptonen, S. 89-100, hier S. 95.}'."\n".
@@ -530,8 +530,8 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  c_{licht,rot}  =  f_{ele} \cdot 2 \pi \cdot r_{licht,rot}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Durch ersetzen der Rotationsfrequenz \\term{f_{ele}} mittels Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Frequenz-aus-Spin-Geschw-Radius}'."\n".
-                      'und von \\term{c_{licht,rot}} mittels der vorstehenden Formel kommen wir zu'."\n".
+                      'Durch ersetzen der Rotationsfrequenz \\term{f__{ele}} mittels Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Frequenz-aus-Spin-Geschw-Radius}'."\n".
+                      'und von \\term{c__{licht,rot}} mittels der vorstehenden Formel kommen wir zu'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -549,7 +549,7 @@
                     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Aus Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Masse-Radius} können wir durch einsetzen von Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Spin-Geschw-aus-LG}'."\n".
-                      'für den mittleren Spin-Radius \\term{r_{spin}} folgende Formel herleiten:'."\n".
+                      'für den mittleren Spin-Radius \\term{r__{spin}} folgende Formel herleiten:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -563,7 +563,7 @@
                                           label_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-r-spin-aus-Masse-LG', label_text => '\\name{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-r-spin-aus-Masse-LG}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Unser Ergebnis für \\term{r_{spin}} in die zuvor entwickelte Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-r-licht-rot-aus-r-spin}'."\n".
+                      'Unser Ergebnis für \\term{r__{spin}} in die zuvor entwickelte Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-r-licht-rot-aus-r-spin}'."\n".
                       'eingesetzt liefert uns für den mittleren Rotationsradius der Lichtspirale'."\n".
                     ''))),
                   array( 'equations',
@@ -605,7 +605,7 @@
                 'Der neue, \\italic{innere Spin} steht vermutlich für die Leptonenzahlerhaltung …', TitleVis =>
                 'Der neue, innere Spin steht vermutlich für die Leptonenzahlerhaltung:', ParagraphList => array(
                   array( 'text', array( text => array(
-                    'Der mittlere Spin entlang der Lichtbahn um die Spin-Bahn \\term{s_{lep,licht,rot}}, den ich'."\n".
+                    'Der mittlere Spin entlang der Lichtbahn um die Spin-Bahn \\term{s__{lep,licht,rot}}, den ich'."\n".
                     '\\italic{innerer Spin} des Leptons nenne, hat nach meiner Vermutung eine ganz besondere Bedeutung.'."\n",
                       'Entsprechend meinen Vermutungen, dass die Wellenanzahl oder Sternzackenzahl des Leptonen-Strings zur Vermeidung'."\n".
                     'innerer Überschneidungen größer gleich \\term{8}, wegen der neutralen'."\n".
@@ -617,7 +617,7 @@
                     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\ '."\n".
-                      'Für \\term{n_{wel} = 8}:'."\n".
+                      'Für \\term{n__{wel} = 8}:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -625,7 +625,7 @@
                       array( display => 'on', latex => '{  \Leftrightarrow  s_{lep,licht,rot}  =  \frac{ 15 }{ 16 } \cdot \hbar  =  0{,}9375 \hbar  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Für \\term{n_{wel} = 12}:'."\n".
+                      'Für \\term{n__{wel} = 12}:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -670,15 +670,15 @@
 
                   array( 'text', array( text => array(
                     'Nachfolgen berechnen wir jetzt den \\italic{Wirkungsquanten-String-Spin} um '."\n".
-                    'die \\color{*LichtbahnGruen}{grüne} Lichtbahn \\term{s_{lep,wq}}, also den Spin'."\n".
+                    'die \\color{*LichtbahnGruen}{grüne} Lichtbahn \\term{s__{lep,wq}}, also den Spin'."\n".
                     'des Strings innerhalb des spiralförmigen Torus, der die Lichtbahn zentral umhüllt.'."\n",
                       'Dafür stellen wir wieder mit Hilfe der allgemeinen Wellengleichung die angepasste Wellengleichung'."\n".
-                    'der Rotationsgeschwindigkeit \\term{v_{wq,rot}} der Wirkungsquanten um'."\n".
-                    'die \\color{*LichtbahnGruen}{grüne} Lichtbahn in Abhängigkeit der De-Broglie-Frequenz \\term{f_{ele}}'."\n".
-                    'des Leptons und seiner Wellenlänge um die Lichtbahn \\term{λ_{wq,rot}} auf.'."\n",
-                    //   'Die Wirkungsquanten-Rotationsgeschwindigkeit, also die Rotationsgeschwindigkeit des Strings, um die \\color{*LichtbahnGruen}{grüne} Lichtbahn sollte wie bei Photonen beim \\jump{*KosmBeob-Herlei}{kosmischen Beobachter} \\term{B_{0}}'."\n".
-                    // 'gleich der Lichtgeschwindigkeit \\term{_{0}c} sein (siehe Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwRot}).'."\n".
-                      'Für die De-Broglie-Frequenz \\term{f_{ele}} nutzen wir, wie gehabt, Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Frequenz-aus-Spin-Geschw-Radius}:'."\n".
+                    'der Rotationsgeschwindigkeit \\term{v__{wq,rot}} der Wirkungsquanten um'."\n".
+                    'die \\color{*LichtbahnGruen}{grüne} Lichtbahn in Abhängigkeit der De-Broglie-Frequenz \\term{f__{ele}}'."\n".
+                    'des Leptons und seiner Wellenlänge um die Lichtbahn \\term{λ__{wq,rot}} auf.'."\n",
+                    //   'Die Wirkungsquanten-Rotationsgeschwindigkeit, also die Rotationsgeschwindigkeit des Strings, um die \\color{*LichtbahnGruen}{grüne} Lichtbahn sollte wie bei Photonen beim \\jump{*KosmBeob-Herlei}{kosmischen Beobachter} \\term{B__{0}}'."\n".
+                    // 'gleich der Lichtgeschwindigkeit \\term{__{0}c} sein (siehe Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwRot}).'."\n".
+                      'Für die De-Broglie-Frequenz \\term{f__{ele}} nutzen wir, wie gehabt, Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Frequenz-aus-Spin-Geschw-Radius}:'."\n".
                     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\ '."\n".
@@ -698,10 +698,10 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  v_{wq,rot}  =  f_{ele} \cdot 2 \pi \cdot r_{wq,rot}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Durch ersetzen der Rotationsfrequenz \\term{f_{ele}} mittels Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Frequenz-aus-Spin-Geschw-Radius}'."\n".
+                      'Durch ersetzen der Rotationsfrequenz \\term{f__{ele}} mittels Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Frequenz-aus-Spin-Geschw-Radius}'."\n".
                       'und unsere \\jump{OM:FrQFT:ZeitAlterungFrequenz:Wirkungsquanten-Geschwindigkeit}{Interpretation des Pound-Rebka-Snider-Experiments}\\footnote{\\const{FrQFT_g_footnote_text_PoundRebka}}'."\n".
                       'im Rahmen der Quanten-Fluss-Theorie, die zu dem Ergebnis führt, dass die Wirkungsquanten-Rotationsgeschwindigkeit beim'."\n".
-                      '\\jump{*KosmBeob-Herlei}{kosmischen Beobachter} \\term{B_{0}} gleich der Lichtgeschwindigkeit \\term{_{0}c} ist (siehe Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwRot}),'."\n".
+                      '\\jump{*KosmBeob-Herlei}{kosmischen Beobachter} \\term{B__{0}} gleich der Lichtgeschwindigkeit \\term{__{0}c} ist (siehe Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwRot}),'."\n".
                       'kommen wir zu'."\n".
                     ''))),
                   array( 'equations',
@@ -713,8 +713,8 @@
                                     latex_if_visible => '{  \Leftrightarrow  r_{wq,rot}  =  \frac{ r_{spin} }{ n_{wel} \cdot c_{spin} } \cdot {_{\lowZero}c}  \;\;  .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Hier können wir jetzt die mittle Spin-Geschwindigkeit \\term{c_{spin}} mit Hilfe von Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Spin-Geschw-aus-LG}'."\n".
-                      'und den mittleren Spin-Radius \\term{r_{spin}} mit Hilfe von Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-r-spin-aus-Masse-LG} ersetzen'."\n".
+                      'Hier können wir jetzt die mittle Spin-Geschwindigkeit \\term{c__{spin}} mit Hilfe von Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Spin-Geschw-aus-LG}'."\n".
+                      'und den mittleren Spin-Radius \\term{r__{spin}} mit Hilfe von Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-r-spin-aus-Masse-LG} ersetzen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -745,7 +745,7 @@
                 'Träge Masse', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-r-wq-rot-aus-hbar-m-ele-c} lässt sich zur Masse eines Elementarteilchens \\term{m_{ele}} umformen:'."\n".
+                    'Die Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-r-wq-rot-aus-hbar-m-ele-c} lässt sich zur Masse eines Elementarteilchens \\term{m__{ele}} umformen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -778,7 +778,7 @@
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\ '."\n".
                       'Entsprechend zum Leptonen-Spin in Formel \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Spin-Lep}'."\n".
-                      'stellen wir die Formel für den Wirkungsquanten-String-Spin um die Lichtbahn \\term{s_{lep,wq}} auf, als Summe des Drehimpulses des Wirkungsquanten-Strings'."\n".
+                      'stellen wir die Formel für den Wirkungsquanten-String-Spin um die Lichtbahn \\term{s__{lep,wq}} auf, als Summe des Drehimpulses des Wirkungsquanten-Strings'."\n".
                       'um die Lichtbahn, innerhalb des durch die Wirkungsquanten-String-Schwingung geformten helixförmigen Torus:'."\n".
                     ''))),
                   array( 'equations',
@@ -787,8 +787,8 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Für den Wirkungsquanten-String-Spin um die Lichtbahn ergibt sich dann, unter Zuhilfenahme'."\n".
-                      'der Formeln \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwRot}, für \\term{v_{wq,rot}}, sowie \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-r-wq-rot-aus-r-spin}, für \\term{r_{wq,rot}},'."\n".
-                      'gefolgt von \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-LG-aus-Spin-Geschw}, für \\term{_{0}c},'."\n".
+                      'der Formeln \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwRot}, für \\term{v__{wq,rot}}, sowie \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-r-wq-rot-aus-r-spin}, für \\term{r__{wq,rot}},'."\n".
+                      'gefolgt von \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-LG-aus-Spin-Geschw}, für \\term{__{0}c},'."\n".
                       'und dem Vergleich mit \\jumpname{OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:Equ-Spin-Lep}'."\n".
                     ''))),
                   array( 'equations',
@@ -816,10 +816,10 @@
                 'Abschätzung der Richtigkeit der Näherung der Mittelwerte', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Sowohl bei der Spin-Geschwindigkeit \\term{c_{spin}}, als auch beim Spin-Radius \\term{r_{spin}} handelt es sich um eine Näherung durch Mittelwerte:'."\n",
-                      'Trotz der Schwankung der Spin-Geschwindigkeit ist klar, dass der String nach einem Schwingungsdurchgang ein \\term{n_{wel}}-tel des Spin-Bahnumfangs zurückgelegt hat.'."\n".
+                    'Sowohl bei der Spin-Geschwindigkeit \\term{c__{spin}}, als auch beim Spin-Radius \\term{r__{spin}} handelt es sich um eine Näherung durch Mittelwerte:'."\n",
+                      'Trotz der Schwankung der Spin-Geschwindigkeit ist klar, dass der String nach einem Schwingungsdurchgang ein \\term{n__{wel}}-tel des Spin-Bahnumfangs zurückgelegt hat.'."\n".
                     'Daher stimmt die Spin-Geschwindigkeit nach einer Schwingung mit ihrem Mittel überein.'."\n",
-                      'Da der String schwingend mal weiter entfernt mal näher dran um die Spin-Bahn rotiert muss sein mittlerer Spin-Radius dem Radius \\term{r_{spin}} dieser Bahn entsprechen.'."\n",
+                      'Da der String schwingend mal weiter entfernt mal näher dran um die Spin-Bahn rotiert muss sein mittlerer Spin-Radius dem Radius \\term{r__{spin}} dieser Bahn entsprechen.'."\n",
                       'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -917,14 +917,14 @@
                                             
                   /*array( 'figure',
                     array( fig_file_name => 'Lepton_geladen_v09', fig_alt_description => 'Elektrisch geladenes Lepton', width => '700px', height => '374px', name => 'OM:FrQFT:Lepton:Elektrisch-geladenes-Lepton',
-                           text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n_{phase} = n_{wel} / n_{polwel} = 6/1 = 6}.'."\n".
+                           text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n__{phase} = n__{wel} / n__{polwel} = 6/1 = 6}.'."\n".
                                    'Die Wirkungsquanten eines Wirkungsquanten-Strings mit wechselnder Wirkungsquanten-Dichte bewegen sich auf einer doppelt geschachtelten, helixförmigen'."\n".
                                    'Spiralbahn um ein gemeinsames Rotationszentrum.'."\n".
                                    'In der gezeigten Struktur blinkt das Lepton mit der De-Broglie-Frequenz in einem Wechsel zwischen einer leicht positiven'."\n".
                                    'und einer stärker negativen Polarisation und damit elektrischen Ladung.'."\n".
                                    'Aus weitem Blickwinkel erscheint das Lepton im Mittel vornehmlich elektrisch negativ geladen, während von nahem die differenzierte'."\n".
                                    'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
-                                   'Der Normradius \\term{r_{0}} ist dabei die Bezugseinheit mit \\term{r_{0} = ℏ / (m_{lep} ⋅ c_{0})}.')),*/
+                                   'Der Normradius \\term{r__{0}} ist dabei die Bezugseinheit mit \\term{r__{0} = ℏ / (m__{lep} ⋅ c__{0})}.')),*/
                   array( 'figure',
                     array_merge( $FrQFT_g_figure_ary_LeptonELadung, array( name => 'OM:FrQFT:Lepton:Elektrisch-geladenes-Lepton'))),
                       
@@ -1235,14 +1235,14 @@
                       
                   /*array( 'figure',
                     array( fig_file_name => 'Lepton_neutral_v09', fig_alt_description => 'Elektrisch neutrales Lepton', width => '700px', height => '292px', name => 'OM:FrQFT:Lepton:Elektrisch-neutrales-Lepton',
-                           text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n_{phase} = n_{wel} / n_{polwel} = 12/2 = 6}.'."\n".
+                           text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n__{phase} = n__{wel} / n__{polwel} = 12/2 = 6}.'."\n".
                                    'Die Wirkungsquanten eines Wirkungsquanten-Strings mit wechselnder Wirkungsquanten-Dichte bewegen sich auf einer doppelt geschachtelten, helixförmigen'."\n".
                                    'Spiralbahn um ein gemeinsames Rotationszentrum.'."\n".
                                    'In der gezeigten Struktur blinkt das Lepton mit der De-Broglie-Frequenz in einem Wechsel zwischen einer positiven'."\n".
                                    'und einer gleich großen negativen Polarisation und ist damit ohne elektrische Ladung.'."\n".
                                    'Aus weitem Blickwinkel erscheint das Lepton im Mittel vornehmlich elektrisch neutral, während von nahem die differenzierte'."\n".
                                    'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
-                                   'Der Normradius \\term{r_{0}} ist dabei die Bezugseinheit mit \\term{r_{0} = ℏ / (m_{lep} ⋅ c_{0})}.')),*/
+                                   'Der Normradius \\term{r__{0}} ist dabei die Bezugseinheit mit \\term{r__{0} = ℏ / (m__{lep} ⋅ c__{0})}.')),*/
                   array( 'figure',
                     array_merge( $FrQFT_g_figure_ary_LeptonENeutral, array( name => 'OM:FrQFT:Lepton:Elektrisch-neutrales-Lepton'))),
                       

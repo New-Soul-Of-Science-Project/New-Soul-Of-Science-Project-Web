@@ -135,8 +135,8 @@
                     'Wie die Quanten-Fluss-Theorie geht das Basisteilchenmodell bei der Einwirkung von Gravitation auch von einer Verzerrung der Struktur eines Elementarteilchens aus'."\n".
                     'und geht auch davon aus, dass die Krümmung der Raumzeit der Allgemeinen Relativitätstheorie\\footnote{\\const{FrQFT_g_footnote_text_ART}} auf dieser Grundlage als solche erscheint.'."\n",
                       'Möchten wir die Änderung der De-Broglie-Frequenz der Elementarteilchen im Gravitationsfeld berechnen, ist sowohl die Änderung der Basisteilchen-Geschwindigkeit,'."\n".
-                    'der im Gravitationsfeld verzögerten Lichtgeschwindigkeit \\term{_{r}c_{eff}} – Shapiro-Verzögerung\\footnote{\\const{FrQFT_g_footnote_text_ShapiroVerzoegerung}} –,'."\n".
-                    'als auch die Änderung der Geometrie, die Länge des Umfangs \\term{_{r}u_{red}} ihrer Bahn, zu berücksichtigen:'."\n"))),
+                    'der im Gravitationsfeld verzögerten Lichtgeschwindigkeit \\term{__{r}c__{eff}} – Shapiro-Verzögerung\\footnote{\\const{FrQFT_g_footnote_text_ShapiroVerzoegerung}} –,'."\n".
+                    'als auch die Änderung der Geometrie, die Länge des Umfangs \\term{__{r}u__{red}} ihrer Bahn, zu berücksichtigen:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas.EleGra', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  _{r}c_{eff}  =  \frac{_{r}u_{red}}{t}  }'),
@@ -146,7 +146,7 @@
                     'Allerdings verändert sich auch die Geometrie der Kreisbahn entsprechend, so dass wir sehen werden, dass sich beide Effekte so aufheben, als wenn es eine Kreisbahn bliebe.'."\n".
                     'Die Länge der elliptischen Bahn einer Rotation, die in beide Richtungen unterschiedliche Halbachsen besitzt, wäre nur näherungsweise zu berechnen.'."\n",
                       'Um zu zeigen, dass sich beide Effekte aufheben, möchte ich hilfsweise zunächst die reine Bewegung entlang der beiden Halbachsen betrachten, auf ihrem'."\n".
-                    'Weg \\term{_{r,p}w_{red}} mit der Geschwindigkeit \\term{_{r,p}c_{eff}}:'."\n"))),
+                    'Weg \\term{__{r,p}w__{red}} mit der Geschwindigkeit \\term{__{r,p}c__{eff}}:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas.EleGra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  _{r,p}c_{eff}  =  \frac{ _{r,p}w_{red} }{ t }  }'),
@@ -154,7 +154,7 @@
                   array( 'text', array( text => array(
                     'Dabei ist \\term{r} der Abstand vom Zentrum einer Zentralmasse.'."\n".
                     'Die Variable \\term{p} besitzt im Fall tangentialer Bewegungsrichtung des Basisteilchens zur Zentralmasse den Wert \\term{p = ½} und im Fall radialer Richtung den Wert \\term{p = 1}.'."\n",
-                      'Die beiden unterschiedlichen Halbachsen führen zu zwei möglichen De-Broglie-Frequenzen \\term{_{r,p}f_{spin,H}}; eine je Richtung \\term{p}.'."\n".
+                      'Die beiden unterschiedlichen Halbachsen führen zu zwei möglichen De-Broglie-Frequenzen \\term{__{r,p}f__{spin,H}}; eine je Richtung \\term{p}.'."\n".
                     'Für die Frequenz \\term{f} gilt in Bezug auf die Zeit \\term{t} erst einmal ganz allgemein:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas.EleGra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -168,12 +168,12 @@
                   array( 'text', array( text => array(
                     'Nach dem Basisteilchenmodell reduziert sich die Lichtgeschwindigkeit im dreidimensionalen Raum im Gravitationsfeld'."\n".
                     'durch von den Basisteilchen ausgesandte Störungswellen'."\n".
-                    'von der Lichtgeschwindigkeitskonstanten \\term{c_{0}} auf die variable Lichtgeschwindigkeit \\term{_{r,p}c_{eff}} wie folgt:\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}.}'."\n"))),
+                    'von der Lichtgeschwindigkeitskonstanten \\term{c__{0}} auf die variable Lichtgeschwindigkeit \\term{__{r,p}c__{eff}} wie folgt:\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}.}'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas.EleGra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  _{r,p}c_{eff}  =  c_{\lowZero} \cdot \left( 1-\frac{g \cdot N}{c_{0}^{2} \cdot r} \right)^{p}  }',
                                                label_name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:Equ-BasGraLGEinstein', label_text => '\\name{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:Equ-BasGraLGEinstein}', label_incr => true,
-                                               footnote => 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, Speed Reduction in Detail, S. 20-22, hier Formel C.7, S. 22. Die Konstante \\term{c} habe ich wegen der Eindeutigkeit in \\term{c_{0}} umbenannt.'),
+                                               footnote => 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, Speed Reduction in Detail, S. 20-22, hier Formel C.7, S. 22. Die Konstante \\term{c} habe ich wegen der Eindeutigkeit in \\term{c__{0}} umbenannt.'),
                     ))),
                   array( 'text', array( text => array(
                     'Das Basisteilchenmodell kommt der \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein}{Beschreibung der beobachteten Verzögerung} des Lichts strukturell immerhin sehr nahe,'."\n".
@@ -199,7 +199,7 @@
                     ))), */
                   array( 'text', array( text => array(
                     'Die strukturelle Geometrie von Elementarteilchen verändert sich nach Giese in ihrer Ausdehnung in einem Gravitationsfeld in tangentialer und radialer Richtung zur Zentralmasse,'."\n".
-                    'wenn \\term{w_{0}} ohne Verzerrung ist:'."\n"))),
+                    'wenn \\term{w__{0}} ohne Verzerrung ist:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas.EleGra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  _{r,p}w_{red}  =  w_{\lowZero} \cdot \left( 1-\frac{g \cdot N}{c_{0}^{2} \cdot r} \right)^{p - \frac{1}{2}}  }',
@@ -210,7 +210,7 @@
                     'der Lichtgeschwindigkeit auch die Ausbreitungsgeschwindigkeit der Wechselwirkungsteilchen ändert, die die beiden Basisteilchen aneinander binden.'."\n".
                     'Dieser der Lorentzkontraktion äquivalente Effekt im Zusammenhang mit Bindungsfeldern ist auch als Heaviside-Ellipsoid bekannt.\\footnote{\\const{FrQFT_g_footnote_text_LorentzKontrFelder}}'."\n",
                       'Für jede der beiden Hauptachsen \\term{H} des Ellipsoiden könnte sich theoretisch eine andere Frequenz ergeben, wie schon gesagt.'."\n".
-                    'Daher berechnen wir die beiden Frequenzen jeweils nach der Richtung \\term{p} wie folgt, wenn \\term{_{r}S} zur Substitution genutzt wird:'."\n"))),
+                    'Daher berechnen wir die beiden Frequenzen jeweils nach der Richtung \\term{p} wie folgt, wenn \\term{__{r}S} zur Substitution genutzt wird:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas.EleGra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  _{r}S  =  \left( 1-\frac{g \cdot N}{c_{0}^{2} \cdot r} \right)  }'),
@@ -239,7 +239,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Wie verhält sich die so von Giese definierte De-Broglie-Frequenz nun bei steigender Gravitation?'."\n".
-                    'Um dies deutlich zu machen, ergänze ich sowohl die Entfernung zur Zentralmasse als auch die Frequenz mit den Differenzen \\term{Δr} und \\term{Δ_{r}f}:'."\n"))),
+                    'Um dies deutlich zu machen, ergänze ich sowohl die Entfernung zur Zentralmasse als auch die Frequenz mit den Differenzen \\term{Δr} und \\term{Δ__{r}f}:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas.EleGra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  _{r}f + \Delta {_{r}f}  =  \frac{ c_{\lowZero} }{ u_{\lowZero} } \cdot \sqrt{1-\frac{ g \cdot N }{ c_{0}^{2} \cdot \left( r + \Delta r \right) }}  }'),
@@ -249,16 +249,16 @@
                     'Der Nenner des Bruchs, indem sich die Distanz \\term{r + Δr} befindet wird sodann ebenfalls kleiner, was den Bruch vergrößert.'."\n".
                     'Die Differenz unter der Wurzel wird nun kleiner, weil mehr von der Eins abgezogen wird.'."\n".
                     'Eine Wurzel von etwas kleinerem ist ebenfalls kleiner, was den gesamten rechten Term der Gleichung verkleinert.'."\n".
-                    'Bei festem \\term{_{r}f} muss \\term{Δ_{r}f} dann negativ sein:'."\n"))),
+                    'Bei festem \\term{__{r}f} muss \\term{Δ__{r}f} dann negativ sein:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Bas.EleGra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Delta r  <  0  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \Delta {_{r}f}  <  0  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die gesamte Frequenz \\term{_{r}f} in Formel \\jumpname{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:Equ-FrequnezGravi}'."\n".
+                    'Die gesamte Frequenz \\term{__{r}f} in Formel \\jumpname{OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:Equ-FrequnezGravi}'."\n".
                     'wird bei zunehmender Gravitation, also bei kleiner werdendem Abstand zur Zentralmasse \\term{r}, auch kleiner.'."\n".
-                    'Die De-Broglie-Frequenz \\term{_{r}f} eines Elementarteilchens in Gieses Basisteilchenmodell nimmt also bei zunehmender Gravitation ab.'."\n"))),
+                    'Die De-Broglie-Frequenz \\term{__{r}f} eines Elementarteilchens in Gieses Basisteilchenmodell nimmt also bei zunehmender Gravitation ab.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:XXX', text =>
                                            
                 'Widerspruch des Basisteilchenmodells zur experimentellen Beobachtung', subline =>
@@ -267,7 +267,7 @@
                     'Qualitativ können wir sagen, dass im Pound-Rebka-Snider-Experiment\\footnote[*Bearb]{\\const{FrQFT_g_footnote_text_PoundRebka}}'."\n".
                     'bei Zunahme der Gravitation, im Gegensatz zum Basisteilchenmodell, eine Zunahme der De-Broglie-Frequenz beobachtet wird.'."\n",
                       'Das Basisteilchenmodell widerspricht in diesem Punkt also den experimentellen Beobachtungen.'."\n"))),
-                    // 'Denn nach ihm entspricht die De-Broglie-Frequenz der vorstehend berechneten Spin-Rotation \\term{_{r}f},'."\n".
+                    // 'Denn nach ihm entspricht die De-Broglie-Frequenz der vorstehend berechneten Spin-Rotation \\term{__{r}f},'."\n".
                     // 'die bei steigender Gravitation, wie gerade gezeigt, abnimmt und nicht wie experimentell beobachtet zunimmt.\\footnote{\\const{FrQFT_g_footnote_text_BasTModDeBroglieFreq}}'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Basisteilchenmodell:Elementarteilchen-im-Gravitationsfeld:XXX', text =>
                                            

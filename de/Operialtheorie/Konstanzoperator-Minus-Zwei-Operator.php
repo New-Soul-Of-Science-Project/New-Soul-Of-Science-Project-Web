@@ -178,7 +178,7 @@
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{R}  *) *[  n_{links}  =  a  *]  .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir sehen, dass das linksseitig neutrale Element \\term{n_{links}} identisch mit'."\n".
+                    'Wir sehen, dass das linksseitig neutrale Element \\term{n__{links}} identisch mit'."\n".
                     'dem ursprünglichen Element \\term{a} ist, genau, wie beim Minus-Eins-Operator.'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -212,8 +212,8 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall n_{rechts} *) *( \forall a \in \mathbb{R}  *) *[  a  =  a  *]  .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir können erkennen, dass alle Elemente \\term{n_{rechts}} rechtsseitig neutrale Elemente des Minus-Zwei-Operators sind,'."\n".
-                    'weil alle \\term{n_{rechts}} unser \\term{a} unverändert lassen, genau, wie beim Minus-Eins-Operator.'."\n".
+                    'Wir können erkennen, dass alle Elemente \\term{n__{rechts}} rechtsseitig neutrale Elemente des Minus-Zwei-Operators sind,'."\n".
+                    'weil alle \\term{n__{rechts}} unser \\term{a} unverändert lassen, genau, wie beim Minus-Eins-Operator.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Einbettung in neutrale Elemente} \\\\'."\n".

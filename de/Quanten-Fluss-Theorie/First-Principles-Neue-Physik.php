@@ -185,10 +185,10 @@
                     'mit ziemlich einheitlichen Bestandteilen unserer Natur zu tun.'."\n".
                     'Die Einheitlichkeit der Bestandteile resultiert demnach auch in ihrer konstanten Geschwindigkeit, ihrer konstanten Energie und ihrer konstanten Masse.'."\n".
                     'Das \\jump{OM:FrQFT:FirstPrinciples:Vortext:Eigenschaftsprinzip}{Eigenschaftsprinzip} wiederum besagt, das alle Eigenschaften der Dinge aus ihrer Struktur entstehen.'."\n",
-                      'Das Abzählprinzip erkennt, dass die Energie und die Masse eines Dings einfach auf der Anzahl \\term{n_{wq}}'."\n".
+                      'Das Abzählprinzip erkennt, dass die Energie und die Masse eines Dings einfach auf der Anzahl \\term{n__{wq}}'."\n".
                     'der einheitlichen Bestandteile beruhen, die zu ihm gehören, deren Zusammenhang das Ding formen.'."\n".
-                    'Jedes im Grunde einheitliche Bestandteil, jedes Fundamentalteilchen, eines Dings ist also eine konstante Energieeinheit \\term{E_{wq}}'."\n".
-                    'oder eine konstante Masseneinheit \\term{m_{wq}} (allgemeiner in Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-EnergieSumWQEnergie} beschrieben):'."\n"))),
+                    'Jedes im Grunde einheitliche Bestandteil, jedes Fundamentalteilchen, eines Dings ist also eine konstante Energieeinheit \\term{E__{wq}}'."\n".
+                    'oder eine konstante Masseneinheit \\term{m__{wq}} (allgemeiner in Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-EnergieSumWQEnergie} beschrieben):'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'FP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E  =  n_{wq} \cdot E_{wq}  }',
@@ -200,7 +200,7 @@
                     'Die Energieeinheit passt auch sehr plausibel zu deren konstanten Geschwindigkeit.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Abgeleitete fundamentale Zusammhänge} \\\\'."\n".
-                    'Ist das Ding ein Elementarteilchen, dann zeigt sich die Abzählbarkeit seiner einheitlichen Bestandteile bei der Messung seiner Energie \\term{E_{ele}} oder seines Impulses \\term{p_{ele}} in der Heisenbergschen Unschärferelation.'."\n".
+                    'Ist das Ding ein Elementarteilchen, dann zeigt sich die Abzählbarkeit seiner einheitlichen Bestandteile bei der Messung seiner Energie \\term{E__{ele}} oder seines Impulses \\term{p__{ele}} in der Heisenbergschen Unschärferelation.'."\n".
                     'Denn in der \\jump{OM:FrQFT:HeisenbergUnschaerfe}{Abzählinterpretation der Heisenbergschen Unschärferelation} spiegelt sich die prinzipielle Unschärfe einer solchen Abzählung wider,'."\n".
                     'wenn wir davon ausgehen, dass es bei der Energie um die Zählung von einheitlichen Wirkungen \\term{h} (Plancksches Wirkungsquantum) pro Zeit und beim Impuls um \\term{h} pro Strecke geht.'."\n"))),
                       
@@ -220,7 +220,7 @@
                   array( 'text', array( text => array(
                     'Aus den Formeln \\jumpname{OM:FrQFT:FirstPrinciples:Vortext:Equ-EnergieSumWQEnergie} und \\jumpname{OM:FrQFT:FirstPrinciples:Vortext:Equ-EMasseSumWQEnergie} ist auch ersichtlich,'."\n".
                     'dass es sich bei der Masse und der Energie eines Dings im Grunde um das gleiche handelt, was zur Äquivalenz von Masse und Energie führt.'."\n".
-                    'Einsteins berühmte Formel ergibt sich hieraus also selbstredend, weil die Proportionalitätskonstante offensichtlich \\hidden{\\latexmath{ {_{\lowZero}c^{2}} }}\\term{_{0}c^^{2}} ist,'."\n".
+                    'Einsteins berühmte Formel ergibt sich hieraus also selbstredend, weil die Proportionalitätskonstante offensichtlich \\hidden{\\latexmath{ {_{\lowZero}c^{2}} }}\\term{__{0}c^^{2}} ist,'."\n".
                     'wie wir aus vielen experimentellen Beobachtungen wissen.\\footnote{Die Äquivalenz von Masse und Energie ist keine reine Erkenntnis der Relativitätstheorie und eben auch in vielen verschiedenen Experimenten aus der Quantenphysik bestätigt: \\\\ \\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AequivalenzVonMasseUndEnergie2013}.}'."\n".
                     'Ich sehe keinen Grund eine andere Proportionalität anzunehmen:'."\n"))),
                   array( 'equations',
@@ -326,13 +326,13 @@
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n"))),
                   array( 'text', array( text => array(
-                    'Warum ist die Proportionalitätskonstante in der Äquivalenz von Energie und Masse immer \\term{_{0}c^^{2}}?'."\n"))),
+                    'Warum ist die Proportionalitätskonstante in der Äquivalenz von Energie und Masse immer \\term{__{0}c^^{2}}?'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Test', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E  =  m \cdot {_{\lowZero}c^{2}}  }'),
                     ))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        '\\color{*Bearb}{Dazu passen würde, dass die Mantelflächen der Impulskegel der Wirkungsquanten in der Zeit mit der Flächengeschwindigkeit \\term{_{0}c^^{2}} wachsen.}',
+                        '\\color{*Bearb}{Dazu passen würde, dass die Mantelflächen der Impulskegel der Wirkungsquanten in der Zeit mit der Flächengeschwindigkeit \\term{__{0}c^^{2}} wachsen.}',
                         'XXX',
                         'XXX',
                         'XXX',
