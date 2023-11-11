@@ -13,8 +13,8 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                      '(• Physik: Regelprozesse zeigen sich in Newtons Actio gleich Reactio. Denn hierin kommt das grundlegende Konzept von Spieler und Gegenspieler, Agonist und Antagonist, zum Ausdruck. In Bezug auf das Beispiel unseres Sonnensystems und die stabile Bahn der Erde um die Sonne gibt es auch Actio und Reactio. Die Gravitation spielt gegen die Fliehkraft, also gegen die Trägheit, wie alle Wechselwirkungen, die eine Bewegung ändern. Aus Sicht eines Regelprozesses ist die noch einmal gründlich zu analysieren. Hier spielt irgendwie die Kraft gegen die Zeit, die es braucht, eine Wirkung zu entfalten. Was wiederum mit der Zeit die es braucht zusammenhängt, um, aus Sicht der FrQFT, die Wirkungsquanten-Struktur der Erde durch das Gravitationspotenzial der Sonne so umzubauen, dass die Erde ihre Bewegungsrichtung ändert.)',
-                      '(• Physik: Die Schlussfolgerungen münden in die Einsicht, dass es für jedes Ding, jede Existenz, der Physik genau einen einzigen grundlegenden Regelprozess geben muss. Dieser Regelprozess organisiert die Stabilität und die Entwicklung seiner Existenz.)',
+                      '• Physik: Regelprozesse zeigen sich in Newtons Actio gleich Reactio. Denn hierin kommt das grundlegende Konzept von Spieler und Gegenspieler, Agonist und Antagonist, zum Ausdruck. In Bezug auf das Beispiel unseres Sonnensystems und die stabile Bahn der Erde um die Sonne gibt es auch Actio und Reactio. Die Gravitation spielt gegen die Fliehkraft, also gegen die Trägheit, wie alle Wechselwirkungen, die eine Bewegung ändern. Aus Sicht eines Regelprozesses ist die noch einmal gründlich zu analysieren. Hier spielt irgendwie die Kraft gegen die Zeit, die es braucht, eine Wirkung zu entfalten. Was wiederum mit der Zeit die es braucht zusammenhängt, um, aus Sicht der FrQFT, die Wirkungsquanten-Struktur der Erde durch das Gravitationspotenzial der Sonne so umzubauen, dass die Erde ihre Bewegungsrichtung ändert.',
+                      '• Physik: Die Schlussfolgerungen münden in die Einsicht, dass es für jedes Ding, jede Existenz, der Physik genau einen einzigen grundlegenden Regelprozess geben muss. Dieser Regelprozess organisiert die Stabilität und die Entwicklung seiner Existenz.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -136,7 +136,7 @@
                         addtext => '\\footnote{\\cite{Ellis:FrontalangriffAufDieWissenschaftlicheMethode:2015}, S. 25.}')),
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Wir können uns nur der theoretischen Physikerin Sabine Hossenfelder anschließen:'."\n".
-                        'Postempirische Wissenschaft ist ein Oxymoron (siehe \\jump[http://go.nature.com/p3upwp]{}{go.nature.com/p3upwp} und \\jump[http://go.nature.com/68rijj]{}{go.nature.com/68rijj}).'."\n".
+                        'Postempirische Wissenschaft ist ein Oxymoron (siehe \\url{http://go.nature.com/p3upwp}^^{&#91;}\\footnote{Direkter Link: \\url{http://backreaction.blogspot.com/2014/07/post-empirical-science-is-oxymoron.html}.}^^{&#93;} und \\url{http://go.nature.com/68rijj}^^{&#91;}\\footnote{Direkter Link: \\url{https://scientiasalon.wordpress.com/2014/07/10/string-theory-and-the-no-alternatives-argument/}.}^^{&#93;}).'."\n".
                         'Theorien wie die Quantenmechanik und Relativitätstheorie haben sich bewährt, weil ihre Vorhersagen viele Tests erfolgreich bestanden haben.'."\n"),
                         addtext => '\\footnote{\\cite{Ellis:FrontalangriffAufDieWissenschaftlicheMethode:2015}, S. 29.}')),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Vorwort:Vortext:XXX', text =>
