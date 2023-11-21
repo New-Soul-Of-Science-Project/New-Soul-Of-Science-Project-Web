@@ -654,7 +654,7 @@
 		    	<!  • Physik neu verstehen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Einleitung:PhysikNeuVerstehen',
-              'XXX', 'Sc_f_Paragraph',
+              'Wie ergeben sich aus dem neuen Fundament die bekannten physikalischen Beobachtungen?', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Einleitung:Fundierung', type => 'back'),
