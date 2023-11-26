@@ -851,6 +851,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.QK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot x}  =  〈1〉․〈1〉^{\i \cdot x \cdot \s}  }'),
                       array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot x}  =  〈1〉․〈1〉^{〈\i \cdot x〉_{1}}  }'),
                       array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot x}  :=  \mathrm{cos}_{\s}(x) + \i \cdot \mathrm{sin}_{\s}(x)  }'),
                     ))),
@@ -892,11 +893,35 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  x  =  1  }'),
-                      array( display => 'on',  latex => '{  y  =  ․〈1〉  }'),
+                      array( display => 'on',  latex => '{  y  =  ․〈1〉  =  \s^{-1}  }'),
                       array( display => 'on',  latex => '{  \alpha  =  \i \cdot x  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( 1 + ․〈1〉 *)^{\alpha}  =  \sum_{ \forall k \in XXX \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) 1^{\alpha - k} 〈1〉_{-1}^{k}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{\alpha}  =  \sum_{ \forall k \in XXX \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) 〈1〉_{-k}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{\alpha}  =  \sum_{ \forall k \in XXX \mathbb{N}_{\infty} } *〈 *( \begin{array}{llll} \alpha \\\ k \end{array} *) *〉_{-k}  }'),
                       array( display => 'on',  latex => '{  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ \alpha *( \alpha - 1 *) *( \alpha - 2 *) \cdots *( \alpha - k + 1 *) }{ k! }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ *( \alpha - 0 *) *( \alpha - 1 *) *( \alpha - 2 *) \cdots *( \alpha - *( k - 1 *) *) }{ k! }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ \prod_{ \forall j \in [0, k - 1]_{\mathbb{N}_{\infty}} }  *( \alpha - j *) }{ k! }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \alpha - 0 *)  =  \alpha  }'),
+                      array( display => 'on',  latex => '{  *( \alpha - 0 *) *( \alpha - 1 *)  =  *( \alpha *) *( \alpha - 1 *)  }'),
+                      array( display => 'on',  latex => '{  =  *( \alpha *) *( \alpha - 1 *)  }'),
+                      array( display => 'on',  latex => '{  =  \alpha^{2} - \alpha  }'),
+                      array( display => 'on',  latex => '{  *( \alpha^{2} - \alpha *) *( \alpha - 2 *)  =  \alpha^{3} - \alpha^{2} - 2 \alpha^{2} + 2 \alpha  }'),
+                      array( display => 'on',  latex => '{  =  \alpha^{3} - 3 \alpha^{2} + 2 \alpha  }'),
+                      array( display => 'on',  latex => '{  *( \alpha^{3} - 3 \alpha^{2} + 2 \alpha *) *( \alpha - 3 *)  =  \alpha^{4} - 3 \alpha^{3} + 2 \alpha^{2} \\\ \qquad\qquad\qquad\qquad\qquad\qquad\;\; - 3 \alpha^{3} + 9 \alpha^{2} - 6 \alpha  }'),
+                      array( display => 'on',  latex => '{  =  \alpha^{4} - 6 \alpha^{3} + 11 \alpha^{2} - 6 \alpha  }'),
+                      array( display => 'on',  latex => '{  *( \alpha^{4} - 6 \alpha^{3} + 11 \alpha^{2} - 6 \alpha *) *( \alpha - 4 *)  =  \\\ \qquad \alpha^{5} - 6 \alpha^{4} + 11 \alpha^{3} - 6 \alpha^{2} - 4 \alpha^{4} + 24 \alpha^{3} - 44 \alpha^{2} + 24 \alpha  }'),
+                      array( display => 'on',  latex => '{  =  \alpha^{5} - 10 \alpha^{4} + 35 \alpha^{3} - 50 \alpha^{2} + 24 \alpha  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
