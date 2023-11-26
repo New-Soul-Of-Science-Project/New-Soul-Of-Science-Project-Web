@@ -8,7 +8,7 @@
   <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:FrQFT:Elementarteilchen:Elementarteilchen-mit-Ruhemasse'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:FrQFT:Elementarteilchen'); ?>
 
 	
 		    	<!Ideen:>

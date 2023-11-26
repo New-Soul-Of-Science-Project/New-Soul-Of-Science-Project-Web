@@ -32,45 +32,54 @@
                     '• Nach dem Standardmodell der Teilchenphysik soll die Geschwindigkeit von Elektronen an ihrer Oberfläche nach ihrem magnetischen Drehmoment größer als die LG sein. (Vgl. YouTube. \\jump[https://www.youtube.com/watch?v=7TUIvg-1VuE][*Bearb]{}{Lesch & Gaßner - Spins, Nichts und das Higgsfeld} oder \\jump[https://www.youtube.com/watch?v=cbjqjFoa01Q][*Bearb]{}{Stringtheorien und Schleifenquantengravitation | Harald Lesch & Josef M. Gaßner})',
                     ))),
                       
-                  array( 'normal',
+                  array( 'text', array( text => array(
                     'In der Quanten-Fluss-Theorie bestehen alle Elementarteilchen und auch das \\jump{OM:FrQFT:Vakuum}{Vakuum} aus den neu'."\n".
                     'eingeführten \\jump{*Wirkungsquanten-Herlei}{Wirkungsquanten}.'."\n".
                     'Die Wirkungsquanten formieren sich in „Schwärmen“ zu schwingenden Strings, welche die Elementarteilchen darstellen.'."\n".
                     'Dies gilt für Lichtteilchen – \\jump{OM:FrQFT:Elementarteilchen:Photonen}{Photonen} – ebenso wie für alle'."\n".
-                    '\\jump{OM:FrQFT:Elementarteilchen:Elementarteilchen-mit-Ruhemasse}{Teilchen mit Ruhemasse}\\footnote{\\const{FrQFT_g_footnote_text_Ruhemasse}} (mit Materieinhalt) – zum Beispiel \\jump{OM:FrQFT:Lepton}{Leptonen} und \\jump{OM:FrQFT:ElektroschwacheWW:Quarks}{Quarks}. \\\\'."\n".
-                    'Bei Teilchenkollisionen oder -reaktionen formieren sich Wirkungsquanten dieser Wirkungsquanten-Strings nach den Regeln der Erhaltungssätze um; die Schwärme gruppieren sich neu.'."\n".
+                    '\\jump{OM:FrQFT:Elementarteilchen:Elementarteilchen-mit-Ruhemasse}{Teilchen mit Ruhemasse}\\footnote{\\const{FrQFT_g_footnote_text_Ruhemasse}} (mit Materieinhalt) – zum Beispiel \\jump{OM:FrQFT:Lepton}{Leptonen} und \\jump{OM:FrQFT:ElektroschwacheWW:Quarks}{Quarks}.'."\n",
+                      'Bei Teilchenkollisionen oder -reaktionen formieren sich Wirkungsquanten dieser Wirkungsquanten-Strings nach den Regeln der Erhaltungssätze um; die Schwärme gruppieren sich neu.'."\n".
                     'Dies kann einfach eine Bewegungsänderung\\color{*Bearb}{(Link)} bedeuten oder auch eine \\jump{OM:FrQFT:ElektroschwacheWW:Teilchenumwandlungen}{Teilchenumwandlung}.'."\n".
-                    'Da alle Eigenschaften der Elementarteilchen der Struktur ihrer Wirkungsquanten-Strings entspringt bedeutet jede Umformierung der Wirkungsquanten deren Veränderung. \\\\'."\n".
-                    'Die Änderung der Anzahl der Wirkungsquanten in einem String bedeutet dabei zum Beispiel die Veränderung seiner Energie, da jedes Wirkungsquant einer'."\n".
+                    'Da alle Eigenschaften der Elementarteilchen der Struktur ihrer Wirkungsquanten-Strings entspringt bedeutet jede Umformierung der Wirkungsquanten deren Veränderung.'."\n",
+                      'Die Änderung der Anzahl der Wirkungsquanten in einem String bedeutet dabei zum Beispiel die Veränderung seiner Energie, da jedes Wirkungsquant einer'."\n".
                     '\\jump{*Energieeinheiten-Masse-Impuls-Herlei}{Energieeinheit} entspricht.'."\n".
                     'Eine Änderung der Dichte der Wirkungsquanten in einem String-Abschnitt verändert seine elektrisches Feld\\color{*Bearb}{(Link)}'."\n".
                     'oder seine \\jump{OM:FrQFT:Elementarteilchen:Elektrische-Ladung}{elektrische Ladung}.'."\n".
-                    'Exemplarisch ist hier zur Verdeutlichung die Animation eines Leptons dargestellt (siehe \\color{*Bearb}{Film 1}).'."\n"),
-                  array( 'normal',
-                    'Die Wirkung eines einzelnen Wirkungsquants auf sein Umfeld entspricht dabei dem Planckschen Wirkungsquantum \\term{h}.'."\n".
+                    'Exemplarisch ist hier zur Verdeutlichung die Animation eines Leptons dargestellt (siehe \\color{*Bearb}{Film 1}).'."\n",
+                      'Die Wirkung eines einzelnen Wirkungsquants auf sein Umfeld entspricht dabei dem Planckschen Wirkungsquantum \\term{h}.'."\n".
                     'Interessanter Weise ergibt sich die \\jump{OM:FrQFT:Elementarteilchen:Quantenmechanik}{Heisenbergsche Unschärferelation}'."\n".
                     'dann aus einem \\jump{OM:FrQFT:Elementarteilchen:Quantenmechanik}{prinzipiellen Abzählproblem}'."\n".
                     'als statistisches Phänomen, wenn die Wirkungsquanten eines Elementarteilchens bei einem Messvorgang in einer bestimmten Zeit oder in einem bestimmten'."\n".
-                    'Ortsintervall gezählt werden. \\\\'."\n"),
-                  array( 'normal',
-                    'Wirkungsquanten verhalten sich wie kleine Wellen. Ein Wirkungsquanten-String erscheint wie eine Anhäufung von Wellen in einem „Wellenmeer“, da auch das'."\n".
+                    'Ortsintervall gezählt werden. \\\\'."\n",
+                      'Wirkungsquanten verhalten sich wie kleine Wellen. Ein Wirkungsquanten-String erscheint wie eine Anhäufung von Wellen in einem „Wellenmeer“, da auch das'."\n".
                     'Vakuum aus Wirkungsquanten besteht.'."\n".
                     'Das Wellenmeer entspricht folglich dem \\jump{OM:FrQFT:Elementarteilchen:Higgs-Feld-Mechanismus-traege-Masse}{Higgs-Feld} und die Anhäufung von Wirkungsquanten'."\n".
                     'in und um einen String herum dem \\jump{OM:FrQFT:Elementarteilchen:Higgs-Feld-Mechanismus-traege-Masse}{Higgs-Mechanismus}\\footnote{\\const{FrQFT_g_footnote_text_HiggsMech}}, welcher'."\n".
-                    'die \\jump{OM:FrQFT:Elementarteilchen:Higgs-Feld-Mechanismus-traege-Masse}{träge Masse} hervorbringt. \\\\'."\n".
-                    'Die Wirkungsquanten eines Elementarteilchen-Strings üben einen beugenden oder ablenkenden Einfluss auf ihre Umgebung aus und'."\n".
+                    'die \\jump{OM:FrQFT:Elementarteilchen:Higgs-Feld-Mechanismus-traege-Masse}{träge Masse} hervorbringt.'."\n",
+                      'Die Wirkungsquanten eines Elementarteilchen-Strings üben einen beugenden oder ablenkenden Einfluss auf ihre Umgebung aus und'."\n".
                     'reduzieren aufgrund ihrer Anhäufung die Lichtgeschwindigkeit in ihrem Umfeld.'."\n".
                     'Es ergibt sich die Formel der Allgemeinen Relativitätstheorie für die \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{Lichtgeschwindigkeit im Gravitationsfeld} einer homogenen Massenkugel,'."\n".
                     'bezogen auf den 3-dimensionalen Raum.'."\n".
                     'Dieser Lichtgeschwindigkeitsgradient, der ein Elementarteilchen umgibt, übt eine anziehende Wirkung'."\n".
-                    'auf Elementarteilchen-Strings in seiner Umgebung aus, die sehr klein ist und der \\jump{OM:FrQFT:Elementarteilchen:Gravitation}{Gravitation} der Allgemeinen Relativitätstheorie entspricht.'."\n"),
+                    'auf Elementarteilchen-Strings in seiner Umgebung aus, die sehr klein ist und der \\jump{OM:FrQFT:Elementarteilchen:Gravitation}{Gravitation} der Allgemeinen Relativitätstheorie entspricht.'."\n".
+                    ''))),
+                      
+                  array( 'figure',
+                    array_merge( $FrQFT_g_figure_ary_VakuumElapson, array( name => 'OM:FrQFT:Elementarteilchen:Vortext:Ani-VakuumElapson',
+                                                         text => '\\const{FrQFT_g_text_VakuumElapson}'))),
+                      
+                  // array( 'youtube',
+                  //   array_merge( $FrQFT_g_youtube_ary_Lepton, array( name => 'OM:FrQFT:Elementarteilchen:Vortext:Ani-Lepton'))),
+                  array( 'figure',
+                    array_merge( $FrQFT_g_figure_ary_Lepton_highRes, array( name => 'OM:FrQFT:Elementarteilchen:Vortext:Ani-Lepton'))),
+                      
                   array( 'normal',
-                    'Im \\jump{OM:FrQFT:Elementarteilchen:Vortext:Ani-Lepton}{\\name{OM:FrQFT:Elementarteilchen:Vortext:Ani-Lepton}} und im \\color{*Bearb}{Film 2 (Photon)} ist nachfolgend'."\n".
+                    'In der \\jumpname{OM:FrQFT:Elementarteilchen:Vortext:Ani-VakuumElapson} und der \\jumpname{OM:FrQFT:Elementarteilchen:Vortext:Ani-Lepton} ist nachfolgend'."\n".
                     'dargestellt, wie die Struktur der verschiedenen Elementarteilchen im Prinzip aussehen.'."\n".
-                    '\\color{*Entwick}{Die Darstelltung eines \\jump[][*Entwick]{OM:FrQFT:Elementarteilchen:Hadronen}{Hadrons oder Mesons mit mehreren Quanrks} fehlt noch und muss erstellt werden.'."\n".
+                    '\\color{*Entwick}{Die Darstellung eines \\jump{OM:FrQFT:Elementarteilchen:Hadronen}{Hadrons oder Mesons mit mehreren Quarks} fehlt noch und muss erstellt werden.'."\n".
                     'Dazu existieren aber schon recht weitgehende Vorstellungen.}'."\n"),
                       
-                  array( 'jumplist',
+                  /*%! array( 'jumplist',
                     array(
                       array(  jump_name => 'OM:FrQFT:Vakuum'),
                       array(  jump_name => 'OM:FrQFT:ElektroschwacheWW:Teilchenumwandlungen'),
@@ -78,15 +87,10 @@
                       array(  jump_name => 'OM:FrQFT:HeisenbergUnschaerfe'),
                       array(  jump_name => 'OM:FrQFT:Vakuum:Higgs-Feld-und-Higgs-Mechanismus'),
                       array(  jump_name => 'OM:FrQFT:Quantengravitation'),
-                    )),
-                      
-                  // array( 'youtube',
-                  //   array_merge( $FrQFT_g_youtube_ary_Lepton, array( name => 'OM:FrQFT:Elementarteilchen:Vortext:Ani-Lepton'))),
-                  array( 'figure',
-                    array_merge( $FrQFT_g_figure_ary_Lepton_highRes, array( name => 'OM:FrQFT:Elementarteilchen:Vortext:Ani-Lepton'))),
+                    )), */
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:FrQFT:Elementarteilchen:Elementarteilchen-mit-Ruhemasse', type => 'back'),
+                      array(  jump_name => 'OM:FrQFT:Elementarteilchen:Elementarteilchen-mit-Ruhemasse'),
                     )),
                 )
           ); ?>
@@ -94,7 +98,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-		    	<!  • Elementarteilchen mit Ruhemasse:  >
+		    	<!  • Elementarteilchen mit Ruhemasse  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Elementarteilchen:Elementarteilchen-mit-Ruhemasse',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
@@ -138,7 +142,7 @@
           ); ?>
 
           
-		    	<!  • Photonen:  >
+		    	<!  • Photonen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Elementarteilchen:Photonen',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
@@ -147,8 +151,10 @@
                       array(  jump_name => 'OM:FrQFT:Elementarteilchen:Elementarteilchen-mit-Ruhemasse', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'hideContent', text => array(
-                    '(• XXX)',
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    '\bold{Können Photonen keine Ruhemasse haben?}',
+                    '• Photonen können eine Ruhemasse haben, wenn diese sehr klein ist:',
+                    '– Siehe Video: \\jump[https://www.youtube.com/watch?v=c5BPZy2_7U8&t=299s]{}{Arvin Ash: Why No One Knows If Photons Really Are Massless: What if they Aren\'t?}',
                     ))),
                       
                   array( 'text', array( text => array(

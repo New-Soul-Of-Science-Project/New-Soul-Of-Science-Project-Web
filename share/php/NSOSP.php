@@ -1140,11 +1140,12 @@
            text_titel_h1 => 'Elementarteilchenmodell mit Wirkungsquanten-Strings',
            text_titel_short => 'Elementarteilchenmodell',
            text_undertitel_h2 => 'Schwärme von Wirkungsquanten fügen sich zu Wirkungsquanten-Strings zusammen',
-           text_titel_discr_h3 => 'Eingebettet in einem Vakuum aus Wirkungsquanten sind die Wirkungsquanten-Strings der Elementarteilchen von einer Wolke aus virtuellen Teilchen umgeben. Die Geometrie ihres String verleiht ihnen ihre Eigenscchaften.',
+           text_titel_discr_h3 => 'Eingebettet in einem Vakuum aus Wirkungsquanten sind die Wirkungsquanten-Strings der Elementarteilchen von einer Wolke aus virtuellen Teilchen umgeben. Die geometrische Struktur ihres Strings verleiht ihnen ihre Eigenschaften.',
            jump_ary => array(
                   'OM:FrQFT:Elementarteilchen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
                              
+                    'OM:FrQFT:Elementarteilchen:Vortext:Ani-VakuumElapson' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
                     'OM:FrQFT:Elementarteilchen:Vortext:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
                              
                   'OM:FrQFT:Elementarteilchen:Elementarteilchen-mit-Ruhemasse' => array( headline_text => 'Elementarteilchen mit Ruhemasse', headline_text_short => 'Elementarteilchen mit Ruhemasse'),
