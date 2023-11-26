@@ -1400,6 +1400,7 @@
                   array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
+                  // #!: Auch auf der Naturphilosophie-der-Zeit-Seite! (OM:NPT:Home)
                   array( 'text', array( Shape => 'italic', text => array(
                         'Mathematik beginnt dort, \\\\ '."\n".
                         'wo wir das Eine vom Anderen unterscheiden können. \\\\ '."\n".
