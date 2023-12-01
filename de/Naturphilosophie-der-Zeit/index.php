@@ -132,21 +132,40 @@
                   '')),
                   array( 'text', array( text => array(
                     'Entwickeln wir aus diesen Erkenntnissen die Theorie einer neuen Physik, verstehen wir'."\n".
-                    'recht leicht, dass diese Form der Bewegung den Bestandteilchen der Lichts und des Vakuums'."\n".
+                    'recht leicht, dass diese Form der Bewegung den Bestandteilchen des Lichts und des Vakuums'."\n".
                     'zugeordnet werden kann.'."\n",
-                      'Alle weiteren Teilchen ergeben sich als Verschachtelungen des Djet-Neheh-Dualismus'."\n".
-                    'oder des Existenzprinzips.'."\n".
+                      'Alle weiteren Teilchen und ihre „Organellen“ ergeben sich als Verschachtelungen des Djet-Neheh-Dualismus'."\n".
+                    'oder des Existenzprinzips.'."\n",
+                      'Dabei finden wir in der hieraus entwickelten \\jump{OM:FrQFT:Home}{fraktalen Quanten-Fluss-Theorie} heraus,'."\n".
+                    'dass sich die Bestandteilchen des Vakuums, des Lichts und aller anderen Elementarteilchen, die Fundamentalteilchen,'."\n".
+                    'zu geschlossenen Fäden, sogenannten Strings, verbinden.'."\n".
+                    'Diese sind aber nicht mit den Strings der Stringtheorie identisch.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:XXX', text =>
                       
-                'Biologische und physikalische Regelprozesse', subline =>
+                'Physikalisch räumliche Regelprozesse', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Stabilisiert werden die Strings der Elementarteilchen dieser neuen Physik durch räumliche Regelprozesse.'."\n".
+                    'Die Eigenschaften von Regelprozessen sind tief mit dem Djet-Neheh-Dualismus verbunden:'."\n",
+                      'Zum einen haben Regelprozesse einen sich immer wiederholenden, schwingenden Anteilen, der sich aus'."\n".
+                    'der stabilisierenden Regelung ergibt.'."\n".
+                    'Zum anderen gibt es keine Regelprozesse, die wirklich endlos stabil laufen, was einem historischen'."\n".
+                    'Anteil entspricht.'."\n".
+                    'Bei räumlichen Regelprozessen schwingen Strukturen, die, wenn sie sich durch den Raum bewegen,'."\n".
+                    'eine Helixspiralbahn beschreiben, die auch Schleifen haben kann.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:XXX', text =>
+                      
+                'Biologische Regelprozesse', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Im Grunde gilt selbiges auch für biologische Regelprozesse, wodurch der'."\n".
+                    'Djet-Neheh-Dualismus und das Existenzprinzip die Biologie, also das Leben,'."\n".
+                    'mit der Physik verbindet.'."\n",
+                      'Im besonderen können wir bei näherer Untersuchung den \\jump{OM:SpaLeb:Care-Prozess}{zentralen Regelprozess des Lebens}'."\n".
+                    'ausmachen, der unserer Psyche, also genauer unserer Psychosomatik, Persönlichkeitsentwicklung und so weiter,'."\n".
+                    'entspricht.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
