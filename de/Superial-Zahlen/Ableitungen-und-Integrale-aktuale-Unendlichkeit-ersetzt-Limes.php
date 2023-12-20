@@ -836,9 +836,9 @@
                       array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion', type => 'back'),
                     )),
 
-                  array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\\bold{XXX}',
-                    // '• Meine Herleitung der \\latexmath{ \e }-Funktion mit Hilfe von Superial-Zahlen stammt aus dem Jahr 2001: siehe Datei "superial zahlen (26).pdf".',
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    '\\bold{Wo Pi noch vorkommt}',
+                    '• Pi ergibt sich über Integration aus dem Pascalschen Dreieck sehr ähnlich wie die Berechnung von \\latexmath{ \e^{\i \cdot \pi \cdot x} } im Zusammenhang mit Sinus und Cosinus: Siehe \\jump[https://www.spektrum.de/kolumne/newtons-methode-um-pi-mit-dem-pascalschen-dreieck-zu-berechnen/2200009?utm_source=sdwv_daily&utm_medium=nl&utm_content=heute]{}{Manon Bischoff – Sir Isaac Newton fand Pi im pascalschen Dreieck}.',
                     ))),
 
                   array( 'text', array( text => array(
