@@ -32,7 +32,7 @@
       text_titel_h1 => 'Naturphilosophie der Zeit \\color{*TitleAdd}{\\small{(NPT)}}',
       text_titel_short => 'Naturphilosophie der Zeit',
       text_undertitel_h2 => 'Ein strukturelles Verständnis der dynamischen Existenz und ihrer zeitlichen Aspekte',
-      text_titel_discr_h3 => 'Der Djet-Neheh-Dualismus bringt die Begriffe Struktur, Bewegung als deren Veränderung, Existenz, Zählen, Zeit, Prozess, Wechselwirkung, Symmetriebruch und Spannung in einen allgemeinen Zusammenhang',
+      text_titel_discr_h3 => 'Der Djet-Neheh-Dualismus bringt die Begriffe Struktur, Bewegung als deren Veränderung, Existenz, Zählen, Zeit, Prozess, Wechselwirkung, Symmetriebruch und Spannung in einen allgemeinen Zusammenhang. Auf diese Weise verbindet er im Grunde alle Bereiche der Wissenschaft und des Lebens miteinander, weil der Djet-Neheh-Dualismus in Allem zu erkennen ist',
       jump_ary => array(
         'OM:NPT:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
         'OM:NPT:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
