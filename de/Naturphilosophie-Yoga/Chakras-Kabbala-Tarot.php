@@ -30,6 +30,11 @@
                     '• XXX',
                     '\\bold{Minor Arcana}',
                     '• XXX',
+                    '\\bold{Wochentage sind nach Planeten und Göttern benannt, die den Chakras entsprechen}',
+                    '• Siehe \\jump[https://de.wikipedia.org/w/index.php?title=Wochentag&oldid=232562969]{}{Wikipedia: Wochentag}.',
+                    '\\bold{Chakras}',
+                    '• Siehe Bild, was über Hannes Heine kam: „Chakrensystem-screenshot-2023-11-27-at-165906.png“.',
+                    '– Vielleicht bei „@wingedshoespublishing“ um Genehmigung der Benutzung fragen?',
                     ))),
                       
                   array( 'text', array( text => array(
