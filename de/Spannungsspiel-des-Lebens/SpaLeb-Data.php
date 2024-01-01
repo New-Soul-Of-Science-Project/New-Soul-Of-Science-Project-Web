@@ -123,6 +123,8 @@
         'OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler' => array( headline_text => 'Innerer Marionettenspieler'/*, headline_text_short => ''*/),
                    
         'OM:SpaLeb:Psychosomatik:Aeusserer-Marionettenspieler' => array( headline_text => 'Äußerer Marionettenspieler'/*, headline_text_short => ''*/),
+                   
+        'OM:SpaLeb:Psychosomatik:Sterntetraeder-Stabil+Dynamik-Koerper' => array( headline_text => 'Die Sterntetraeder der Stabilität und Dynamik in unserem Körper'/*, headline_text_short => ''*/),
       ),
     ),
   );
