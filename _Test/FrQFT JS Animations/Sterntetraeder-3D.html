@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sterntetraeder-3D – Spannungsspiel des Lebens</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link type="text/css" rel="stylesheet" href="animation.css">
+  </head>
+  <body>
+    <div id="container"></div>
+    <div id="info">
+      <h1>Sterntetraeder</h1>
+      <h2 id="headline"></h2>
+    </div>
+
+    <!-- *** Imports *** -->
+
+    <!-- Import maps polyfill -->
+    <!-- Remove this when import maps will be widely supported -->
+    <!-- old version <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script> -->
+    <!-- versions see: https://unpkg.com/browse/es-module-shims@1.5.4/ -->
+    <script async src="https://unpkg.com/es-module-shims@1.5.4/dist/es-module-shims.js"></script>
+
+    <!-- versions see: https://unpkg.com/browse/three@0.140.2/ -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.140.2/build/three.module.js",
+          "const": "./js/const.js",
+          "utilities": "./js/utilities.js",
+          "render": "./js/render.js",
+          "MME-consts": "./js/Michelson-Morley-Experiment-3D/MME-consts.js"
+        }
+      }
+    </script>
+    <!-- as local module file, like I would prefer -->
+    <!-- !!! SyntaxError: Importing binding name 'TOUCH' is not found. -->
+    <!-- <script type="importmap">
+      {
+        "imports": {
+          "three": "./js/three.js/r140-0.140.2/three.module.js",
+          "const": "./js/const.js",
+          "utilities": "./js/utilities.js",
+          "render": "./js/render.js",
+          "MME-consts": "./js/Michelson-Morley-Experiment-3D/MME-consts.js"
+        }
+      }
+    </script> -->
+
+    <script type="module">
+
+      import * as THREE from 'three' // is needed as module with this name in deeper three.js structures
+
+      import { GUI } from 'https://unpkg.com/three@0.140.2/examples/jsm/libs/lil-gui.module.min.js'
+
+      import {
+        pi2,
+        eleWidth,
+        eleHeight,
+      } from 'const' // with 'es-module-shims.js' using the relative local path './js/const.js' gives an error: TypeError: Module name, './js/const.js' does not resolve to a valid URL.
+      import { objectValuesToArray } from 'utilities' // with 'es-module-shims.js' using the relative local path './js/utilities.js' gives an error: TypeError: Module name, './js/utilities.js' does not resolve to a valid URL.
+      import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render.js' gives an error: TypeError: Module name, './js/render.js' does not resolve to a valid URL.
+
+      // !!! does not work in a way that it makes all more easy and have lesser lines !!!
+      // import * from 'MME-consts' // with 'es-module-shims.js' using the relative local path './js/Michelson-Morley-Experiment-3D/MME-consts.js' gives an error: TypeError: Module name, './js/Michelson-Morley-Experiment-3D/MME-consts.js' does not resolve to a valid URL.
+      
+      
+      // Ideas:
+      //   Colouring of laser interference could be like animated image "Doubleslit3Dspectrum.gif", see: https://www.spektrum.de/news/eine-weltformel-ohne-quantengravitation/2201277?utm_source=sdwv_daily&utm_medium=nl&utm_content=heute
+
+
+      /*--------------------
+      Clock
+      Renderer
+      Scene
+      Camera
+      Light
+      Controls
+      --------------------*/
+      const render = new Render(eleWidth, eleHeight)
+
+      const container = document.getElementById( 'container' )
+      container.style.width = render.dimensions.width + 'px'
+      container.style.height = render.dimensions.height + 'px'
+      container.appendChild( render.renderer.domElement )
+
+      const info = document.getElementById( 'info' )
+      info.style.width = render.dimensions.width + 'px'
+      info.style.height = render.dimensions.height + 'px'
+
+      const headline = document.getElementById( 'headline' )
+      headline.innerText = 'XXX'
+
+
+      /*--------------------
+      Position of
+      Camera
+      Light
+      --------------------*/
+      // controls.update() must be called after any manual changes to the camera's transform
+      render.camera.position.set( 3, 2, 7 )
+      render.controls.update()
+                                                 
+      // render.spotLight.position.set( 4, 6, 10 )
+      render.spotLight.position.set( 4, 2, 0 )
+                                                 
+      /*--------------------
+      Consts Local
+      --------------------*/
+
+      /*--------
+      Light, additional */
+      const spotLightSecondParamsObj = {
+        color: 0xffffff,
+        intensity: 0.5,
+        // distance: Float,
+        // angle: Radians,
+        // penumbra: Float,
+        // decay: Float,
+      }
+      const spotLightSecondParams = objectValuesToArray(spotLightSecondParamsObj)
+
+      /*--------
+      Dimension Bowls */
+      // const bowlGeometryFactor = 1 / 16
+      // const bowlRadius = 1 * bowlGeometryFactor
+      // const bowlColor = 0xff0000
+      // const bowlMeshPhysicalMaterialParams = {
+      //   color: bowlColor,
+      //   // opacity: 0.5,
+      //   // transparent: true,
+      //   emissive: 0x000000,
+      //   metalness: 0.7,
+      //   // metalness: 0.2,
+      //   flatShading: false,
+      //   roughness: 0.7,
+      //   // roughness: 0.9,
+      //   // envMap: textureCube,
+      //   reflectivity: 1,
+      //   // reflectivity: 0.5,
+      //   side: THREE.DoubleSide,
+      // }
+      // const bowlMaterial = new THREE.MeshPhysicalMaterial( bowlMeshPhysicalMaterialParams )
+      // const bowlSphereGeometryParamsObj = {
+      //   radius: bowlRadius,
+      //   widthSegments: 20,
+      //   heightSegments: 20,
+      //   // phiStart: Float,
+      //   // phiLength: Float,
+      //   // thetaStart: Float,
+      //   // thetaLength: Float,
+      // }
+      // const bowlSphereGeometryParams = objectValuesToArray(bowlSphereGeometryParamsObj)
+      // const bowlSphereGeometry = new THREE.SphereGeometry( ...bowlSphereGeometryParams )
+
+      /*--------
+      Plates */
+      const plateThickness = 0.025
+      const plateWidth = 0.5
+      const plateHeight = 0.25
+      const plateBoxGeometryParamsObj = {
+        width: plateWidth,
+        height: plateHeight,
+        dept: plateThickness,
+        // widthSegments: Integer,
+        // heightSegments: Integer,
+        // depthSegments: Integer,
+      }
+      const plateBoxGeometryParams = objectValuesToArray( plateBoxGeometryParamsObj )
+
+      /*--------
+      Mirrors */
+      const mirrorHalfColor = 0xe0e0e0
+      // const mirrorBoxColor = 0xe0e0e0
+      const mirrorBoxColor = 0x808080
+      const mirrorBoxGeometry = new THREE.BoxGeometry( ...plateBoxGeometryParams )
+      const mirrorBoxMeshLambertMaterialParams = { color: mirrorBoxColor, side: THREE.DoubleSide }
+      const mirrorMaterial = new THREE.MeshLambertMaterial( mirrorBoxMeshLambertMaterialParams )
+      const mirrorHalfGeometryParamsObj = {
+        ...plateBoxGeometryParamsObj,
+        dept: plateBoxGeometryParamsObj.dept / 2,
+      }
+      const mirrorHalfGeometryParams = objectValuesToArray( mirrorHalfGeometryParamsObj )
+      const mirrorHalfGeometry = new THREE.BoxGeometry( ...mirrorHalfGeometryParams )
+      // const mirrorHalfMaterial = new THREE.MeshLambertMaterial({
+      //   ...mirrorBoxMeshLambertMaterialParams,
+      //   opacity: 0.5,
+      //   transparent: true,
+      // })
+      const mirrorHalfMeshPhysicalMaterialParams = {
+        color: mirrorBoxColor,
+        // opacity: 0.5,
+        // transparent: true,
+        emissive: 0x000000,
+        metalness: 0.7,
+        flatShading: false,
+        roughness: 0.5,
+        // envMap: textureCube,
+        reflectivity: 1,
+        side: THREE.DoubleSide,
+      }
+      const mirrorHalfMaterial = new THREE.MeshPhysicalMaterial({
+        ...mirrorHalfMeshPhysicalMaterialParams,
+        color: mirrorHalfColor,
+        opacity: 0.5,
+        transparent: true,
+      })
+      const mirrorPlaneGeometryParams = objectValuesToArray({
+        width: plateWidth,
+        height: plateHeight,
+        // widthSegments: Integer,
+        // heightSegments: Integer,
+      })
+      const mirrorPlaneGeometry = new THREE.PlaneGeometry( ...mirrorPlaneGeometryParams )
+      // const mirrorPlaneMaterial = new THREE.MeshLambertMaterial({ color: 0xff0000, side: THREE.DoubleSide })
+      const mirrorPlaneMeshPhysicalMaterialParams = {
+        ...mirrorHalfMeshPhysicalMaterialParams,
+        // color: 0xffd700,
+        color: 0xffff00,
+        side: THREE.FrontSide,
+      }
+      const mirrorPlaneMaterial = new THREE.MeshPhysicalMaterial( mirrorPlaneMeshPhysicalMaterialParams )
+
+      /*--------
+      Screen */
+      const screenColor = 0xffffff
+      const screenGeometry = new THREE.BoxGeometry( ...plateBoxGeometryParams )
+      const screenParamsMeshLambertMaterial = { color: screenColor, side: THREE.DoubleSide }
+      const screenMaterial = new THREE.MeshLambertMaterial( screenParamsMeshLambertMaterial )
+
+      /*--------
+      Sender */
+      const senderGeometryFactor = 0.25
+      const senderColor = 0x2050ff
+      const senderCorpusSize = 0.5
+      // const senderMeshLambertMaterialParams = { color: senderColor, side: THREE.DoubleSide }
+      // const senderMaterial = new THREE.MeshLambertMaterial( senderMeshLambertMaterialParams )
+      const senderMeshPhysicalMaterialParams = {
+        color: senderColor,
+        // opacity: 0.5,
+        // transparent: true,
+        emissive: 0x000000,
+        metalness: 0.7,
+        flatShading: false,
+        roughness: 0.7,
+        // envMap: textureCube,
+        reflectivity: 1,
+        side: THREE.DoubleSide,
+      }
+      const senderMaterial = new THREE.MeshPhysicalMaterial( senderMeshPhysicalMaterialParams )
+      const senderCorpusBoxGeometryParamsObj = {
+        width: senderCorpusSize * senderGeometryFactor,
+        height: senderCorpusSize * senderGeometryFactor,
+        dept: senderCorpusSize * senderGeometryFactor,
+        // widthSegments: Integer,
+        // heightSegments: Integer,
+        // depthSegments: Integer,
+      }
+      const senderCorpusBoxGeometryParams = objectValuesToArray(senderCorpusBoxGeometryParamsObj)
+      const senderCorpusGeometry = new THREE.BoxGeometry( ...senderCorpusBoxGeometryParams )
+      const senderPyramidCylinderGeometryParamsObj = {
+        radiusTop: 0.25 * senderGeometryFactor,
+        radiusBottom: 0.5 * senderGeometryFactor,
+        height: 1 * senderGeometryFactor,
+        radialSegments: 4,
+        heightSegments: 30,
+        openEnded: true,
+        // thetaStart: Float,
+        // thetaLength: Float,
+      }
+      const senderPyramidCylinderGeometryParams = objectValuesToArray(senderPyramidCylinderGeometryParamsObj)
+      const senderPyramidGeometry = new THREE.CylinderGeometry( ...senderPyramidCylinderGeometryParams )
+
+      /*--------
+      Laser */
+      // const laserColor = 0xffff00
+      // const laserColor = 0xff0000
+      const laserColor = 0x00ff00
+      const laserOpacity = 0.5
+      const laserDiscsInside = false
+      // const laserPartsCount = 41
+      const laserPartsCount = 21
+      const laserGeometryFactor = 0.125 * 0.1
+      const laserBeamLengthUnits = 8
+      const laserBeamLength = laserBeamLengthUnits * laserGeometryFactor
+      const laserPartLength = laserBeamLength / laserPartsCount
+      const laserCylinderGeometryParamsObj = {
+        radiusTop: 1 * laserGeometryFactor,
+        radiusBottom: 1 * laserGeometryFactor,
+        height: laserPartLength,
+        radialSegments: 40,
+        heightSegments: 1,
+        // openEnded: true,
+        // thetaStart: Float,
+        // thetaLength: Float,
+      }
+      const laserCylinderGeometryParams = objectValuesToArray(laserCylinderGeometryParamsObj)
+      const laserGeometry = new THREE.CylinderGeometry( ...laserCylinderGeometryParams )
+      // const laserMeshLambertMaterialParams = {
+      //   color: laserColor,
+      //   opacity: laserOpacity,
+      //   transparent: true,
+      //   side: THREE.DoubleSide,
+      // }
+      // const laserClearMeshLambertMaterialParams = {
+      //   ...laserMeshLambertMaterialParams,
+      //   opacity: !laserDiscsInside ? 0.0 : laserOpacity,
+      //   transparent: true,
+      // }
+      const laserMeshPhysicalMaterialParams = {
+        color: laserColor,
+        opacity: laserOpacity,
+        transparent: true,
+        // emissive: 0x000000,
+        emissive: laserColor,
+        metalness: 0.0,
+        flatShading: false,
+        roughness: 0.0,
+        // envMap: textureCube,
+        reflectivity: 0,
+        side: THREE.DoubleSide,
+      }
+      const laserClearMeshPhysicalMaterialParams = {
+        ...laserMeshPhysicalMaterialParams,
+        opacity: !laserDiscsInside ? 0.0 : laserOpacity,
+        transparent: true,
+      }
+      const laserClosedTopMaterialsParams = [
+        // laserMeshLambertMaterialParams,
+        // laserClearMeshLambertMaterialParams,
+        // laserMeshLambertMaterialParams,
+        laserMeshPhysicalMaterialParams,
+        laserClearMeshPhysicalMaterialParams,
+        laserMeshPhysicalMaterialParams,
+      ]
+      const laserOpenEndedMaterialsParams = [
+        // laserMeshLambertMaterialParams,
+        // laserClearMeshLambertMaterialParams,
+        // laserClearMeshLambertMaterialParams,
+        laserMeshPhysicalMaterialParams,
+        laserClearMeshPhysicalMaterialParams,
+        laserClearMeshPhysicalMaterialParams,
+      ]
+      const laserClosedBottomMaterialsParams = [
+        // laserMeshLambertMaterialParams,
+        // laserMeshLambertMaterialParams,
+        // laserClearMeshLambertMaterialParams,
+        laserMeshPhysicalMaterialParams,
+        laserMeshPhysicalMaterialParams,
+        laserClearMeshPhysicalMaterialParams,
+      ]
+      const laserPartsPositionCenterCorrection =
+        // half of the total length of the laser beam
+        - laserCylinderGeometryParamsObj.height * laserPartsCount / 2
+          // subtract a half of length of a part to be in the center of a laser beam part
+          + laserCylinderGeometryParamsObj.height / 2
+      const laserSplitsEnums = {
+        sourceToMainMirrorToSource: 'sourceToMainMirrorToSource',
+        sourceToMainMirrorToScreen: 'sourceToMainMirrorToScreen',
+        sourceToSideMirrorToSource: 'sourceToSideMirrorToSource',
+        sourceToSideMirrorToScreen: 'sourceToSideMirrorToScreen',
+      }
+      const laserSplitsNames = [
+        laserSplitsEnums.sourceToMainMirrorToSource,
+        laserSplitsEnums.sourceToMainMirrorToScreen,
+        laserSplitsEnums.sourceToSideMirrorToSource,
+        laserSplitsEnums.sourceToSideMirrorToScreen,
+      ]
+      const laserSplitsCount = laserSplitsNames.length
+      const laserSlpitsSeparationDistance = laserCylinderGeometryParamsObj.radiusTop
+      const laserSlpitsPositionCenterCorrection =
+        // half of the total height
+        - (
+            laserCylinderGeometryParamsObj.radiusTop * 2 * laserSplitsCount
+            + laserSlpitsSeparationDistance *  (laserSplitsCount - 1)
+        ) / 2
+          // add a radius to be in the center of the bottom split
+          + laserCylinderGeometryParamsObj.radiusTop
+      const laserSlpitsPositionDistance = 
+        laserCylinderGeometryParamsObj.radiusTop * 2
+          + laserSlpitsSeparationDistance
+
+      /*--------
+      Arms Ways */
+      const armStarWaysEnums = {
+        beforeSourceToBeamOutOfSight: 'beforeSourceToBeamOutOfSight',
+        beforeSource: 'beforeSource',
+        sourceToHalfMirror: 'sourceToHalfMirror',
+        halfMirrorToMainMirror: 'halfMirrorToMainMirror',
+        halfMirrorToSideMirror: 'halfMirrorToSideMirror',
+        halfMirrorToScreen: 'halfMirrorToScreen',
+        halfMirrorToSource: 'halfMirrorToSource',
+        mainMirrorToHalfMirror: 'mainMirrorToHalfMirror',
+        sideMirrorToHalfMirror: 'sideMirrorToHalfMirror',
+        behindSource: 'behindSource',
+        behindSourceToBeamOutOfSight: 'behindSourceToBeamOutOfSight',
+        inScreen: 'inScreen',
+      }
+      const armStarWaysNames = [
+        armStarWaysEnums.beforeSourceToBeamOutOfSight,
+        armStarWaysEnums.beforeSource,
+        armStarWaysEnums.sourceToHalfMirror,
+        armStarWaysEnums.halfMirrorToMainMirror,
+        armStarWaysEnums.halfMirrorToSideMirror,
+        armStarWaysEnums.halfMirrorToScreen,
+        armStarWaysEnums.halfMirrorToSource,
+        armStarWaysEnums.mainMirrorToHalfMirror,
+        armStarWaysEnums.sideMirrorToHalfMirror,
+        armStarWaysEnums.behindSource,
+        armStarWaysEnums.behindSourceToBeamOutOfSight,
+        armStarWaysEnums.inScreen,
+      ]
+      const endlessTimeLength = -1.0
+      
+      /*--------
+      Merkaba */
+      const merkabaGeometryFactor = 0.25
+      const merkabaColor = 0x2050ff
+      const merkabaDiceSize = 0.5
+      // const merkabaMeshLambertMaterialParams = { color: merkabaColor, side: THREE.DoubleSide }
+      // const merkabaMaterial = new THREE.MeshLambertMaterial( merkabaMeshLambertMaterialParams )
+      const merkabaMeshPhysicalMaterialParams = {
+        color: merkabaColor,
+        // opacity: 0.5,
+        // transparent: true,
+        emissive: 0x000000,
+        metalness: 0.7,
+        flatShading: false,
+        roughness: 0.7,
+        // envMap: textureCube,
+        reflectivity: 1,
+        side: THREE.DoubleSide,
+      }
+      const merkabaMaterial = new THREE.MeshPhysicalMaterial( merkabaMeshPhysicalMaterialParams )
+      const merkabaDiceBoxGeometryParamsObj = {
+        width: merkabaDiceSize * merkabaGeometryFactor,
+        height: merkabaDiceSize * merkabaGeometryFactor,
+        dept: merkabaDiceSize * merkabaGeometryFactor,
+        // widthSegments: Integer,
+        // heightSegments: Integer,
+        // depthSegments: Integer,
+      }
+      const merkabaDiceBoxGeometryParams = objectValuesToArray(merkabaDiceBoxGeometryParamsObj)
+      const merkabaDiceGeometry = new THREE.BoxGeometry( ...merkabaDiceBoxGeometryParams )
+      const merkabaPyramidCylinderGeometryParamsObj = {
+        radiusTop: 0.25 * merkabaGeometryFactor,
+        radiusBottom: 0.5 * merkabaGeometryFactor,
+        height: 1 * merkabaGeometryFactor,
+        radialSegments: 4,
+        heightSegments: 30,
+        openEnded: true,
+        // thetaStart: Float,
+        // thetaLength: Float,
+      }
+      const merkabaPyramidCylinderGeometryParams = objectValuesToArray(merkabaPyramidCylinderGeometryParamsObj)
+      const merkabaPyramidGeometry = new THREE.CylinderGeometry( ...merkabaPyramidCylinderGeometryParams )
+
+      /*--------
+      Scene Basics */
+
+      const laserAnimated = true
+      const laserSlpitsSeparated = true
+      const logArmStarData = false
+
+      const centerHeightPosition = plateHeight / 2
+
+      let theoryModel_enum_FrQFT = 'FrQFT'
+      let theoryModel_enum_SRT = 'SRT'
+      let theoryModel = theoryModel_enum_SRT
+      let timeFactor = 1.0
+      let timeReset = 0.0
+      let experimentVelocity = 0.0
+      let inversGammaZ = 1.0
+
+      let centerDistance = null
+      let velocity = null
+      let armStarWays = null
+      let armWays = null
+      let longestTime = null
+
+
+
+      /*--------------------
+      Functions Local
+      --------------------*/
+
+
+      function calcArms() {
+
+        centerDistance = {
+          // from inside
+          ins: {
+            x: 1.0,
+            z: 1.0,
+          },
+          // seen by observer
+          obs: {
+            x: 1.0,
+            z: inversGammaZ,
+          },
+        }
+        velocity = {
+          // seen by observer
+          obs: {
+            // calcOrigin: 'Math.pow(1.0, 2) = 1.0 = Math.pow(x, 2) + Math.pow(z, 2)',
+            // calcX:                           'x = Math.sqrt(1.0 - Math.pow(z, 2))',
+            // calcZ:                           'z = Math.sqrt(1.0 - Math.pow(x, 2))',
+            // Wolle: x: Math.sqrt(1.0 - Math.pow(1.0 - experimentVelocity, 2)),
+            // z: 1.0 - experimentVelocity,
+            x: 1.0,
+            z: 1.0,
+          },
+        }
+        if (logArmStarData) {
+          console.log('velocity: ', velocity)
+        }
+        const x = 'x'
+        const z = 'z'
+        const forward = 1.0
+        const backward = -1.0
+        const stop = 0.0
+        const end = {
+          x: centerDistance.obs.x,
+          z: centerDistance.obs.z,
+        }
+        const middle = 0.0
+        armStarWays = {
+          [armStarWaysEnums.beforeSourceToBeamOutOfSight]: {
+            // name: added below for all
+            arm: z,
+            directionToCoord: backward,
+            startPos: end[z] + laserBeamLength / 2 + laserPartLength,
+            wayLength: laserPartLength, // Wolle
+            // velocity: 0.0, // Wolle
+            velocity: velocity.obs.z, // Wolle
+            // timeLength: added below for all
+          },
+          // starts half a beam before source to show no beam at the very start
+          [armStarWaysEnums.beforeSource]: {
+            arm: z,
+            directionToCoord: backward,
+            startPos: end[z] + laserPartLength,
+            wayLength: laserPartLength,
+            velocity: velocity.obs.z,
+          },
+          [armStarWaysEnums.sourceToHalfMirror]: {
+            arm: z,
+            directionToCoord: backward,
+            startPos: end[z],
+            wayLength: centerDistance.obs.z,
+            velocity: velocity.obs.z,
+          },
+          [armStarWaysEnums.halfMirrorToMainMirror]: {
+            arm: z,
+            directionToCoord: backward,
+            startPos: middle,
+            wayLength: centerDistance.obs.z,
+            velocity: velocity.obs.z,
+          },
+          [armStarWaysEnums.halfMirrorToSideMirror]: {
+            arm: x,
+            directionToCoord: forward,
+            startPos: middle,
+            wayLength: centerDistance.obs.x,
+            velocity: velocity.obs.x,
+          },
+          [armStarWaysEnums.halfMirrorToScreen]: {
+            arm: x,
+            directionToCoord: backward,
+            startPos: middle,
+            wayLength: centerDistance.obs.x,
+            velocity: velocity.obs.x,
+          },
+          [armStarWaysEnums.halfMirrorToSource]: {
+            arm: z,
+            directionToCoord: forward,
+            startPos: middle,
+            wayLength: centerDistance.obs.z,
+            velocity: velocity.obs.z,
+          },
+          [armStarWaysEnums.mainMirrorToHalfMirror]: {
+            arm: z,
+            directionToCoord: forward,
+            startPos: -end[z],
+            wayLength: centerDistance.obs.z,
+            velocity: velocity.obs.z,
+          },
+          [armStarWaysEnums.sideMirrorToHalfMirror]: {
+            arm: x,
+            directionToCoord: backward,
+            startPos: end[x],
+            wayLength: centerDistance.obs.x,
+            velocity: velocity.obs.x,
+          },
+          // end half a beam behind source to show no beam at the very end
+          [armStarWaysEnums.behindSource]: {
+            arm: z,
+            directionToCoord: forward,
+            startPos: end[z],
+            // wayLength: laserBeamLength / 2,
+            wayLength: laserPartLength,
+            velocity: velocity.obs.z,
+          },
+          [armStarWaysEnums.behindSourceToBeamOutOfSight]: {
+            arm: z,
+            directionToCoord: forward,
+            startPos: end[z] + laserBeamLength / 2,
+            wayLength: laserPartLength, // Wolle
+            velocity: 0.0, // Wolle
+          },
+          // end half in screen to show no beam at the very end
+          [armStarWaysEnums.inScreen]: {
+            arm: x,
+            directionToCoord: backward,
+            startPos: -end[x],
+            wayLength: laserPartLength, // Wolle
+            velocity: 0.0, // Wolle
+          },
+        }
+
+        // calc time length and set name
+        armStarWaysNames.forEach(name => {
+          armStarWays[name].name = name
+          if (logArmStarData) {
+            console.log('name: ', name)
+          }
+          if (armStarWays[name].velocity === 0.0) {
+            if (logArmStarData) {
+              console.log('armStarWays[name].velocity: ', armStarWays[name].velocity)
+              console.log('velocity.obs.x: ', velocity.obs.x)
+            }
+            armStarWays[name].timeLength = endlessTimeLength
+          } else {
+            armStarWays[name].timeLength = armStarWays[name].wayLength / armStarWays[name].velocity
+          }
+        })
+
+        armWays = {
+          [laserSplitsEnums.sourceToMainMirrorToSource]: [
+            armStarWays.beforeSourceToBeamOutOfSight,
+            armStarWays.beforeSource,
+
+            armStarWays.sourceToHalfMirror,
+            armStarWays.halfMirrorToMainMirror,
+            armStarWays.mainMirrorToHalfMirror,
+            armStarWays.halfMirrorToSource,
+
+            armStarWays.behindSource,
+            armStarWays.behindSourceToBeamOutOfSight,
+          ],
+          [laserSplitsEnums.sourceToMainMirrorToScreen]: [
+            armStarWays.beforeSourceToBeamOutOfSight,
+            armStarWays.beforeSource,
+
+            armStarWays.sourceToHalfMirror,
+            armStarWays.halfMirrorToMainMirror,
+            armStarWays.mainMirrorToHalfMirror,
+            armStarWays.halfMirrorToScreen,
+
+            armStarWays.inScreen,
+          ],
+          [laserSplitsEnums.sourceToSideMirrorToSource]: [
+            armStarWays.beforeSourceToBeamOutOfSight,
+            armStarWays.beforeSource,
+
+            armStarWays.sourceToHalfMirror,
+            armStarWays.halfMirrorToSideMirror,
+            armStarWays.sideMirrorToHalfMirror,
+            armStarWays.halfMirrorToSource,
+
+            armStarWays.behindSource,
+            armStarWays.behindSourceToBeamOutOfSight,
+          ],
+          [laserSplitsEnums.sourceToSideMirrorToScreen]: [
+            armStarWays.beforeSourceToBeamOutOfSight,
+            armStarWays.beforeSource,
+
+            armStarWays.sourceToHalfMirror,
+            armStarWays.halfMirrorToSideMirror,
+            armStarWays.sideMirrorToHalfMirror,
+            armStarWays.halfMirrorToScreen,
+
+            armStarWays.inScreen,
+          ],
+        }
+
+        // calc longest time
+        longestTime = 0
+        laserSplitsNames.forEach(wayName => {
+          let timeLength = 0
+          let timeStopped = false
+          armWays[wayName].forEach(armStarWay => {
+            timeStopped = armStarWay.timeLength === endlessTimeLength
+            if (!timeStopped) {
+              timeLength += armStarWay.timeLength
+            }
+          })
+          if (longestTime < timeLength) {
+            longestTime = timeLength
+          }
+        })
+
+      }
+
+
+      // drawGrid will determine blocksize based on the 
+      // amount of horizontal gridlines to draw
+      function drawGrid({
+        width,
+        height,
+        widthNumGridLines,
+        heightNumGridLines,
+        widthOffset,
+        heightOffset,
+        color = 0x000000,
+        opacity = 1.0,
+      }) {
+
+        // Determine the size of a grid block (square)
+        const widthGridBlockSize = width / widthNumGridLines
+        const heightGridBlockSize = height / heightNumGridLines
+
+        // correct negative offsets
+        widthOffset = widthOffset < 0 ? widthGridBlockSize - ((-widthOffset) % widthGridBlockSize) : widthOffset % widthGridBlockSize
+        heightOffset = heightOffset < 0 ? heightGridBlockSize - ((-heightOffset) % heightGridBlockSize) : heightOffset % heightGridBlockSize
+
+        const widthHalf = width / 2
+        const heightHalf = height / 2
+
+        var material = new THREE.LineBasicMaterial({
+          color,
+          opacity,
+          transparent: (opacity < 1),
+        })
+
+        const gridGroup = new THREE.Group()
+
+        for (var x = 0; x <= widthNumGridLines; x++) {
+          let xPos
+          if (widthOffset % widthGridBlockSize === 0) {
+            xPos = -widthHalf + (widthOffset + widthGridBlockSize * x)
+          } else {
+            xPos = -widthHalf + ((widthOffset + widthGridBlockSize * x) % width)
+          }
+
+          const points = []
+          points.push(new THREE.Vector3(xPos, -heightHalf, 0))
+          points.push(new THREE.Vector3(xPos, heightHalf, 0))
+
+          const geometry = new THREE.BufferGeometry().setFromPoints(points)
+          const line = new THREE.Line(geometry, material)
+          gridGroup.add(line)
+        }
+
+        for (var y = 0; y <= heightNumGridLines; y++) {
+          let yPos
+          if (heightOffset % heightGridBlockSize === 0) {
+            yPos = -heightHalf + (heightOffset + heightGridBlockSize * y)
+          } else {
+            yPos = -heightHalf + ((heightOffset + heightGridBlockSize * y) % height)
+          }
+
+          const points = []
+          points.push(new THREE.Vector3(-widthHalf, yPos, 0))
+          points.push(new THREE.Vector3(widthHalf, yPos, 0))
+
+          const geometry = new THREE.BufferGeometry().setFromPoints(points)
+          const line = new THREE.Line(geometry, material)
+          gridGroup.add(line)
+        }
+
+        return gridGroup
+      }
+
+
+      const mirrorCreate = (params) => {
+        // params: {
+        //   withMirrorPlane: Boolean, required
+        //   mirrorBoxMaterial: Object, required
+        //   mirrorPlaneMaterial: Object, required
+        // }
+        let mirror = null
+        const mirrorBox = new THREE.Mesh( mirrorBoxGeometry, params.mirrorBoxMaterial )
+        if (params.withMirrorPlane) {
+          mirror = new THREE.Group()
+          mirror.add( mirrorBox )
+          const mirrorPlate = new THREE.Mesh( mirrorPlaneGeometry, params.mirrorPlaneMaterial )
+          mirrorPlate.rotation.set( 0, pi2 / 2, 0)
+          mirrorPlate.position.set( 0, 0, - (plateThickness / 2 + 0.001) )
+          mirror.add( mirrorPlate )
+        } else {
+          mirror = mirrorBox
+        }
+        return mirror
+      }
+
+
+      function laserPartPositionSet(laserPart, indexLaserPart, indexLaserSplit, move) {
+        if (!laserAnimated) {
+          // stand still position
+          // move = centerDistance.obs.z / 2
+          move =
+            armStarWays.beforeSourceToBeamOutOfSight.timeLength
+            + armStarWays.beforeSource.timeLength
+            // // + armStarWays.sourceToHalfMirror.timeLength / 2
+            + armStarWays.sourceToHalfMirror.timeLength
+            + armStarWays.halfMirrorToMainMirror.timeLength
+            // + laserBeamLength
+            + armStarWays.mainMirrorToHalfMirror.timeLength
+            + armStarWays.halfMirrorToSource.timeLength
+            // // - 0.01
+            // + laserPartLength // Wolle
+            // // + armStarWays.XXX.timeLength
+            + armStarWays.halfMirrorToSource.timeLength
+            + armStarWays.behindSource.timeLength
+            + armStarWays.behindSourceToBeamOutOfSight.timeLength
+            + laserBeamLength
+        }
+        const partPos =
+          laserPartsPositionCenterCorrection
+            // shift to the next part
+            + laserCylinderGeometryParamsObj.height * indexLaserPart
+        move += partPos
+        const x = 'x'
+        const z = 'z'
+        let armStarIndex = null
+        let arm = null
+        let armDirection = null
+        let armStart = null
+        let moveConsumed = 0
+        // let scale = 1
+        const usedArmWays = armWays[laserSplitsNames[indexLaserSplit]]
+        let localMoveConsumed = 0
+        let indexArmStar = 0
+        for (let isCalc = true; isCalc;) {
+          if (indexArmStar < usedArmWays.length) {
+            // Wolle: isCalc = 0 < move - (localMoveConsumed + usedArmWays[indexArmStar].wayLength)
+            isCalc = (usedArmWays[indexArmStar].timeLength !== endlessTimeLength) && (0 < move - (localMoveConsumed + usedArmWays[indexArmStar].timeLength))
+          } else {
+            isCalc = false
+            indexArmStar = usedArmWays.length - 1
+          }
+
+          if (isCalc) {
+            // Wolle: localMoveConsumed += usedArmWays[indexArmStar].wayLength
+            localMoveConsumed += usedArmWays[indexArmStar].timeLength
+            indexArmStar++
+          } else {
+            ({ arm, directionToCoord: armDirection, startPos: armStart }
+              = usedArmWays[indexArmStar])
+            moveConsumed = localMoveConsumed
+            if (logArmStarData && indexLaserSplit === 2 && indexLaserPart === 10) {
+              console.log('indexLaserSplit: ', indexLaserSplit)
+              console.log('indexLaserPart: ', indexLaserPart)
+              console.log('indexArmStar: ', indexArmStar)
+              console.log('name: ', usedArmWays[indexArmStar].name)
+              console.log('arm: ', arm)
+              console.log('wayLength: ', usedArmWays[indexArmStar].wayLength)
+              console.log('velocity: ', usedArmWays[indexArmStar].velocity)
+              console.log('timeLength: ', usedArmWays[indexArmStar].timeLength)
+              console.log('armDirection: ', armDirection)
+              console.log('armStart: ', armStart)
+              console.log('moveConsumed: ', moveConsumed)
+            }
+          }
+        }
+        let armPos
+        if (usedArmWays[indexArmStar].timeLength !== endlessTimeLength) {
+          armPos = armStart + armDirection * (move - moveConsumed)
+        } else {
+          armPos = armStart + armDirection * moveConsumed
+        }
+        if (logArmStarData && indexLaserSplit === 2 && indexLaserPart === 10) {
+          console.log('move: ', move)
+          console.log('armPos: ', armPos)
+        }
+        laserPart.rotation.set(
+          arm === z ? (pi2 / 4) * armDirection : 0,
+          0,
+          arm === x ? (pi2 / 4) * armDirection : 0)
+        // // ? screen position: on or after
+        // if (arm === x && armDirection === -1
+        //   && (indexLaserSplit === 1
+        //     // Main Mirror to Screen
+        //     ? centerDistance.obs.z + centerDistance.obs.z
+        //     // Side Mirror to Screen
+        //     : centerDistance.obs.z + centerDistance.obs.x)
+        //       <= move - moveConsumed) {
+        //   armPos = -centerDistance.obs.x
+        //   // armPos = -centerDistance + (laserBeamLength / 2)
+        //   // scale = ((move - moveConsumed) / (laserBeamLength / 2)) / 2
+        //   // scale = 2
+        // } else {
+        //   // scale = 1
+        // }
+        // // laserPart.scale.set(scale, 1, scale)
+        laserPart.position.set(
+          arm === x ? armPos : 0,
+          0,
+          arm === z ? armPos : 0,
+        )
+      }
+
+
+      const laserSplitCreate = (indexLaserSplit, splitsCount) => {
+        /*--------
+        Group */
+        const laserWaveGroup = new THREE.Group()
+        render.scene.add( laserWaveGroup )
+        /*--------
+        Parts */
+        const laserPartsOpacity = (partIndex, partsCount) => {
+          // ???: use Gauß'sche Normalverteilung?
+          // return 1 // for full cylinder
+          return Math.sin(Math.PI * (partIndex / (partsCount - 1)))
+        }
+        const laserPushMaterialByOpacityAry = (laserMaterials, materialParams, indexPart) => {
+          // laserMaterials.push( new THREE.MeshLambertMaterial(
+          laserMaterials.push( new THREE.MeshPhysicalMaterial(
+            { ...materialParams, opacity: materialParams.opacity * laserPartsOpacity( indexPart, laserPartsCount ) / laserSplitsCount }
+          ))
+        }
+        const laserParts = []
+        for (let index = 0; index < laserPartsCount; index++) {
+          let laserMaterials = []
+          switch (index === 0 ? 'first' : index < laserPartsCount - 1 ? 'middle' : 'last') {
+            case 'first':
+              laserClosedTopMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
+              break
+            case 'middle':
+              laserOpenEndedMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
+              break
+            case 'last':
+              laserClosedBottomMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
+              break
+          }
+          const laserPart = new THREE.Mesh( laserGeometry, laserMaterials )
+          laserParts.push( laserPart )
+          laserWaveGroup.add( laserPart )
+          laserPartPositionSet(laserPart, index, indexLaserSplit, 0)
+        }
+        return { laserWaveGroup, laserParts }
+      }
+
+      const laserSplitedAddDistance = (index) => 
+        laserSlpitsSeparated ?
+          laserSlpitsPositionCenterCorrection
+            // shift to the next split
+            + laserSlpitsPositionDistance * index
+          : 0
+
+      const laserSplitPositionSet = (laserSplit, index) => 
+        laserSplit.position.set(
+          0,
+          centerHeightPosition + (laserSlpitsSeparated ? laserSplitedAddDistance( index ) : 0),
+          0
+        )
+
+
+      let settings = null
+      let folderTheory = null
+      let buttonFrQFT = null
+      const buttonFrQFTName = 'FrQFT / Medium Theorie'
+      let buttonSRT = null
+      const buttonSRTName = 'SRT'
+      let folderVelocity = null
+      let sliderTimeFactor = null
+      const sliderTimeFactorName = 'Zeitskala (%)'
+      let sliderExperimentVelocity = null
+      const sliderExperimentVelocityName = 'Zum Beobachter (% der LG)'
+
+      function createPanel() {
+
+        const panel = new GUI({ width: 310 })
+        // container.appendChild( panel.domElement )
+
+        const folderTheory = panel.addFolder( 'Theorie / Model' )
+        const folderVelocity = panel.addFolder( 'Geschwindigkeit' );
+
+        settings = {
+          [buttonFrQFTName]: function () {
+            setTheory(theoryModel_enum_FrQFT)
+          },
+          [buttonSRTName]: function () {
+            setTheory(theoryModel_enum_SRT)
+          },
+          [sliderTimeFactorName]: timeFactor * 100,
+          [sliderExperimentVelocityName]: experimentVelocity * 100,
+        }
+
+        buttonFrQFT = folderTheory.add(settings, buttonFrQFTName)
+        buttonSRT = folderTheory.add(settings, buttonSRTName)
+        setTheory()
+        sliderTimeFactor = folderVelocity.add(settings, sliderTimeFactorName, 0.0, 200.0).onChange(function (newTimeFactorPercent) {
+          setTimeFactor(newTimeFactorPercent / 100)
+        })
+        sliderExperimentVelocity = folderVelocity.add(settings, sliderExperimentVelocityName, -99.9995, 99.9995).onChange(function (newExperimentVelocityPercent) {
+          setExperimentVelocity(newExperimentVelocityPercent / 100)
+        })
+
+        // folder1.open()
+
+      }
+
+      function setTheory(newTheoryModel = null) {
+        if (newTheoryModel) theoryModel = newTheoryModel
+        switch (theoryModel) {
+          case theoryModel_enum_FrQFT:
+            //%! headline.innerText = 'Fraktale Quanten-Fluss-Theorie (FrQFT) / Medium Theorie'
+            buttonFrQFT.disable()
+            buttonSRT.enable()
+            break
+          case theoryModel_enum_SRT:
+            //%! headline.innerText = 'Spezielle Relativitätstheorie (SRT)'
+            buttonFrQFT.enable()
+            buttonSRT.disable()
+            break
+          default:
+            break
+        }
+      }
+
+      function setTimeFactor(newTimeFactor) {
+        timeFactor = newTimeFactor
+        timeReset = render.clock.getElapsedTime()
+      }
+
+      function setExperimentVelocity(newExperimentVelocity) {
+        experimentVelocity = newExperimentVelocity
+
+        // Lorentz contraction
+        const c0Pow2 = 1
+        inversGammaZ = Math.sqrt(1 - Math.pow(experimentVelocity, 2) / c0Pow2)
+
+        calcArms()
+
+        experimentGroup.scale.set(1.0, 1.0, inversGammaZ)
+
+        timeReset = render.clock.getElapsedTime()
+      }
+
+
+      /*--------------------
+      Scene Objects
+      --------------------
+      --------------------*/
+
+      /*--------------------
+      Light, additional
+      --------------------*/
+      const spotLightSecond = new THREE.SpotLight( ...spotLightSecondParams )
+      spotLightSecond.castShadow = true
+      render.scene.add( spotLightSecond )
+      // spotLightSecond.position.set( -4, -2, 10 )
+      spotLightSecond.position.set( -4, -1, 2 )
+      // const spotLightSecondHelper = new THREE.SpotLightHelper( spotLightSecond )
+      // render.scene.add( spotLightSecondHelper )
+      // const spotLightHelper = new THREE.SpotLightHelper( render.spotLight )
+      // render.scene.add( spotLightHelper )
+
+      /*--------------------
+      Grid
+      --------------------*/
+      // const size = 4
+      // const divisions = 4
+      // const colorCenterLine = 0x009000
+      // const gridHelper = new THREE.GridHelper( size, divisions, colorCenterLine )
+      // render.scene.add(gridHelper)
+
+      // const gridSize = 4
+      // const gridDivisions = 4
+      // const gridColor = 0x009000
+      // const gridOpacity = 0.4
+      // let gridParameters = {
+      //   width: gridSize,
+      //   height: gridSize,
+      //   widthNumGridLines: gridDivisions,
+      //   heightNumGridLines: gridDivisions,
+      //   widthOffset: 0.0,
+      //   heightOffset: 0.0,
+      //   color: gridColor,
+      //   opacity: gridOpacity,
+      // }
+      // let gridGroup = drawGrid(gridParameters)
+      // render.scene.add(gridGroup)
+      // gridGroup.rotation.set( pi2 / 4, 0, 0)
+
+
+      /*--------------------
+      Experiment Objects
+      --------------------
+      --------------------*/
+
+      /*--------------------
+      Experiment Group
+      --------------------*/
+
+      const experimentGroup = new THREE.Group()
+      render.scene.add(experimentGroup)
+      setExperimentVelocity(experimentVelocity)
+
+      /*--------------------
+      Dimension Bowls
+      --------------------*/
+      /*--------
+      Group */
+      // const bowlsGroup = new THREE.Group()
+      // experimentGroup.add( bowlsGroup )
+      // bowlsGroup.position.set( 0, bowlRadius, 0 )
+      /*--------
+      Bowls */
+      // const bowls = [
+      //   new THREE.Mesh( bowlSphereGeometry, bowlMaterial ),
+      //   new THREE.Mesh( bowlSphereGeometry, bowlMaterial ),
+      //   new THREE.Mesh( bowlSphereGeometry, bowlMaterial ),
+      //   new THREE.Mesh( bowlSphereGeometry, bowlMaterial ),
+      // ]
+      // bowls.forEach((bowl, index) => {
+      //   bowlsGroup.add( bowl )
+      //   switch (index) {
+      //     case 0:            
+      //       bowl.position.set(centerDistance.ins.x, 0, centerDistance.ins.z)
+      //       break
+      //     case 1:            
+      //       bowl.position.set(centerDistance.ins.x, 0, -centerDistance.ins.z)
+      //       break
+      //     case 2:            
+      //       bowl.position.set(-centerDistance.ins.x, 0, centerDistance.ins.z)
+      //       break
+      //     case 3:            
+      //       bowl.position.set(-centerDistance.ins.x, 0, -centerDistance.ins.z)
+      //       break
+      //   }
+      // })
+
+      /*--------------------
+      Main Mirror
+      --------------------*/
+      const mirrorMain = mirrorCreate({
+        withMirrorPlane: true,
+        mirrorBoxMaterial: mirrorMaterial,
+        mirrorPlaneMaterial: mirrorPlaneMaterial,
+      })
+      experimentGroup.add( mirrorMain )
+      mirrorMain.rotation.set( 0, pi2 / 2, 0)
+      mirrorMain.position.set( 0, centerHeightPosition, -centerDistance.ins.z )
+
+      /*--------------------
+      Side Mirror
+      --------------------*/
+      const mirrorSide = mirrorCreate({
+        withMirrorPlane: true,
+        mirrorBoxMaterial: mirrorMaterial,
+        mirrorPlaneMaterial: mirrorPlaneMaterial,
+      })
+      experimentGroup.add( mirrorSide )
+      mirrorSide.rotation.set( 0, pi2 / 4, 0)
+      mirrorSide.position.set( centerDistance.ins.x, centerHeightPosition, 0 )
+
+      /*--------------------
+      Half Mirror
+      --------------------*/
+      // const mirrorCenter = new THREE.Mesh( mirrorHalfGeometry, mirrorHalfMaterial )
+      // experimentGroup.add( mirrorCenter )
+      // mirrorCenter.rotation.set( 0, pi2 / 8, 0)
+      // mirrorCenter.position.set( 0, centerHeightPosition, 0 )
+
+      /*--------------------
+      Screen For Interference
+      --------------------*/
+      const screenInterference = new THREE.Mesh( screenGeometry, screenMaterial )
+      experimentGroup.add( screenInterference )
+      screenInterference.rotation.set( 0, - (pi2 / 4), 0)
+      screenInterference.position.set( -centerDistance.ins.x, centerHeightPosition, 0 )
+
+      /*--------------------
+      Sender
+      --------------------*/
+      /*--------
+      Group */
+      // const senderGroup = new THREE.Group()
+      // experimentGroup.add( senderGroup )
+      // senderGroup.position.set( 0, centerHeightPosition, centerDistance.ins.z + senderCorpusBoxGeometryParamsObj.dept / 2 )
+      /*--------
+      Corpus */
+      // const senderCorpus = new THREE.Mesh( senderCorpusGeometry, senderMaterial )
+      // senderGroup.add( senderCorpus )
+      /*--------
+      Pyramid */
+      // const senderPyramid = new THREE.Mesh( senderPyramidGeometry, senderMaterial )
+      // senderPyramid.rotation.set( pi2 / 4, pi2 / 8, 0)
+      // senderPyramid.position.set( 0, 0, - (senderPyramidCylinderGeometryParamsObj.height / 2) )
+      // senderGroup.add( senderPyramid )
+
+      /*--------------------
+      Laser
+      --------------------*/
+      // const laserSplits = []
+      // for (let indexLaserSplit = 0; indexLaserSplit < laserSplitsCount; indexLaserSplit++) {
+      //   const laserSplit = laserSplitCreate( indexLaserSplit, laserSplitsCount )
+      //   laserSplits.push(laserSplit)
+      //   laserSplitPositionSet(laserSplit.laserWaveGroup, indexLaserSplit)
+      // }
+
+      /*--------------------
+      Panel
+      --------------------*/
+      createPanel()
+      setTheory()
+
+
+      /*--------------------
+      Merkaba Objects
+      --------------------
+      --------------------*/
+
+      /*--------------------
+      Merkaba Group
+      --------------------*/
+
+      const merkabaGroup = new THREE.Group()
+      render.scene.add(merkabaGroup)
+      /*--------
+      Corpus */
+      const merkabaDice = new THREE.Mesh( merkabaDiceGeometry, merkabaMaterial )
+      merkabaGroup.add( merkabaDice )
+
+
+      /*--------------------
+      Animation
+      --------------------*/
+
+      // var time = 0
+      // var move = 0
+
+      render.renderer.setAnimationLoop(() => {
+
+      //   // means longest way of all possible
+      //   const completeWay = longestTime // Wolle
+
+      //   time = render.clock.getElapsedTime() - timeReset
+      //   // move = -(laserBeamLength / 2) + ((time * timeFactor) % completeWay) // Wolle
+      //   move = ((time * timeFactor) % completeWay) // Wolle
+
+      //   // performance: maybe move the grid lines instead of creating a new group every time?
+      //   if (experimentVelocity !== 0 || gridParameters.heightOffset !== 0) {
+      //     render.scene.remove(gridGroup)
+      //     gridGroup = null
+      //     gridParameters = {
+      //       ...gridParameters,
+      //       // widthOffset: 0.0,
+      //       heightOffset: experimentVelocity === 0 ? 0 : (time * timeFactor) * experimentVelocity,
+      //     }
+      //     gridGroup = drawGrid(gridParameters)
+      //     render.scene.add(gridGroup)
+      //     gridGroup.rotation.set( pi2 / 4, 0, 0)
+      //   }
+
+      //   if (laserAnimated) {
+      //     laserSplits.forEach(
+      //       (laserSplit, indexLaserSplit) => {
+      //         laserSplit.laserParts.forEach(
+      //           (laserPart, indexLaserPart) =>
+      //             laserPartPositionSet( laserPart, indexLaserPart, indexLaserSplit, move)
+      //         )
+      //       }
+      //     )
+      //   }
+
+        render.renderer.render( render.scene, render.camera )
+      })
+
+    </script>
+  </body>
+</html>
