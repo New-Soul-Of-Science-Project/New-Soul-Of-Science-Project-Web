@@ -168,7 +168,7 @@
                     'ergebenden Ring nicht wiederholen sollen (siehe \\jumpname{OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung:Fig-UnpolPhotFarbpol6pol}).'."\n".
                     'Inklusive ihrer Komplementärfarben ergeben sich so sechs Farben, die auf einem Ring ein Sechseck abbilden.'."\n".
                     'Diese Struktur entspricht interessanterweise genau einem der vier sechseckigen Schnitte durch einen Kuboktaeder des Vektor-Gleichgewichts.'."\n",
-                      'Auch andere, wie Nassim Haramein, haben erkannt, dass damit die isotrope Vektor-Matrix der Stabilität des Vakuums zugrunde liegt.'."\n".
+                      'Auch andere, wie Nassim Haramein, haben erkannt, dass damit die isotrope Vektor-Matrix der Stabilität des Vakuums zugrunde liegt.\\color{*Bearb}{(Verweis)}'."\n".
                     'Dieser Zusammenhang mit der Farbpolarisation und darüber mit der Grundstruktur der Elementarteilchen-Strings der Quanten-Fluss-Theorie unterstricht diese Sichtweise'."\n".
                     'und begründet sie noch tiefgehender durch beobachtete Eigenschaften der Quantenchromodynamik.'."\n",
                       'XXX'."\n".
