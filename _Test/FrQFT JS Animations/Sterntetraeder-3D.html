@@ -22,14 +22,14 @@
     <!-- versions see: https://unpkg.com/browse/es-module-shims@1.5.4/ -->
     <script async src="https://unpkg.com/es-module-shims@1.5.4/dist/es-module-shims.js"></script>
 
-    <!-- versions see: https://unpkg.com/browse/three@0.155.0/ -->
+    <!-- versions see: https://unpkg.com/browse/three@0.160.0/ -->
     <script type="importmap">
       {
         "imports": {
-          "three": "https://unpkg.com/three@0.155.0/build/three.module.js",
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
           "const": "./js/const.js",
           "utilities": "./js/utilities.js",
-          "render": "./js/render-v0.155.0.js",
+          "render": "./js/render-v0.160.0.js",
           "MME-consts": "./js/Michelson-Morley-Experiment-3D/MME-consts.js"
         }
       }
@@ -39,10 +39,10 @@
     <!-- <script type="importmap">
       {
         "imports": {
-          "three": "./js/three.js/r140-0.155.0/three.module.js",
+          "three": "./js/three.js/r140-0.160.0/three.module.js",
           "const": "./js/const.js",
           "utilities": "./js/utilities.js",
-          "render": "./js/render-v0.155.0.js",
+          "render": "./js/render-v0.160.0.js",
           "MME-consts": "./js/Michelson-Morley-Experiment-3D/MME-consts.js"
         }
       }
@@ -52,7 +52,7 @@
 
       import * as THREE from 'three' // is needed as module with this name in deeper three.js structures
 
-      import { GUI } from 'https://unpkg.com/three@0.155.0/examples/jsm/libs/lil-gui.module.min.js'
+      import { GUI } from 'https://unpkg.com/three@0.160.0/examples/jsm/libs/lil-gui.module.min.js'
 
       import {
         pi2,
@@ -61,7 +61,7 @@
         intensityLightScaling,
       } from 'const' // with 'es-module-shims.js' using the relative local path './js/const.js' gives an error: TypeError: Module name, './js/const.js' does not resolve to a valid URL.
       import { objectValuesToArray } from 'utilities' // with 'es-module-shims.js' using the relative local path './js/utilities.js' gives an error: TypeError: Module name, './js/utilities.js' does not resolve to a valid URL.
-      import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render-0.155.0.js' gives an error: TypeError: Module name, './js/render-0.155.0.js' does not resolve to a valid URL.
+      import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render-0.160.0.js' gives an error: TypeError: Module name, './js/render-0.160.0.js' does not resolve to a valid URL.
 
       // !!! does not work in a way that it makes all more easy and have lesser lines !!!
       // import * from 'MME-consts' // with 'es-module-shims.js' using the relative local path './js/Michelson-Morley-Experiment-3D/MME-consts.js' gives an error: TypeError: Module name, './js/Michelson-Morley-Experiment-3D/MME-consts.js' does not resolve to a valid URL.

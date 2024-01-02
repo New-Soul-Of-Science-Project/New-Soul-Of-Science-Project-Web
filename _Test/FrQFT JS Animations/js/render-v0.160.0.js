@@ -1,8 +1,8 @@
 import * as THREE from 'three' // is needed as module with this name in deeper three.js structures
-import { OrbitControls } from 'https://unpkg.com/three@0.155.0/examples/jsm/controls/OrbitControls.js'
+import { OrbitControls } from 'https://unpkg.com/three@0.160.0/examples/jsm/controls/OrbitControls.js'
 // as local module file, like I would prefer
 // !!! SyntaxError: Importing binding name 'TOUCH' is not found.
-// import { OrbitControls } from './js/three.js/r140-0.155.0/examples/jsm/controls/OrbitControls.js'
+// import { OrbitControls } from './js/three.js/r140-0.160.0/examples/jsm/controls/OrbitControls.js'
 
 import {
   backgroundColor,
