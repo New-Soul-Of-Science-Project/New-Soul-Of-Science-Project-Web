@@ -415,15 +415,15 @@
       
       /*--------
       Merkaba */
-      const merkabaGeometryFactor = 0.25
+      const merkabaGeometryFactor = 0.5
       const merkabaColor = 0x2050ff
-      const merkabaDiceSize = 0.5
+      const merkabaDiceSize = 1.0
       // const merkabaMeshLambertMaterialParams = { color: merkabaColor, side: THREE.DoubleSide }
       // const merkabaMaterial = new THREE.MeshLambertMaterial( merkabaMeshLambertMaterialParams )
       const merkabaMeshPhysicalMaterialParams = {
         color: merkabaColor,
-        // opacity: 0.5,
-        // transparent: true,
+        opacity: 0.10,
+        transparent: true,
         emissive: 0x000000,
         metalness: 0.7,
         flatShading: false,
@@ -1222,9 +1222,17 @@
       const merkabaGroup = new THREE.Group()
       render.scene.add(merkabaGroup)
       /*--------
-      Corpus */
-      const merkabaDice = new THREE.Mesh( merkabaDiceGeometry, merkabaMaterial )
-      merkabaGroup.add( merkabaDice )
+      Merkaba Dice */
+      const merkabaDice = new THREE.Mesh(merkabaDiceGeometry, merkabaMaterial)
+      const merkabaDiceEdges = new THREE.EdgesGeometry(merkabaDiceGeometry)
+      const merkabaDiceEdgesLine = new THREE.LineSegments(merkabaDiceEdges, new THREE.LineBasicMaterial({
+        color: 0x888888,
+        linewidth: 500.0,
+        linecap: 'round', //ignored by WebGLRenderer
+        linejoin: 'round', //ignored by WebGLRenderer
+      }))
+      merkabaGroup.add(merkabaDice)
+      merkabaGroup.add(merkabaDiceEdgesLine)
 
 
       /*--------------------
