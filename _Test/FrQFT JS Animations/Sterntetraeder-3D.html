@@ -1228,12 +1228,60 @@
       const merkabaDiceEdges = new THREE.EdgesGeometry(merkabaDiceGeometry)
       const merkabaDiceEdgesLine = new THREE.LineSegments(merkabaDiceEdges, new THREE.LineBasicMaterial({
         color: 0x888888,
-        linewidth: 500.0,
+        linewidth: 1.0,
         linecap: 'round', //ignored by WebGLRenderer
         linejoin: 'round', //ignored by WebGLRenderer
       }))
-      merkabaGroup.add(merkabaDice)
+      // merkabaGroup.add(merkabaDice)
       merkabaGroup.add(merkabaDiceEdgesLine)
+      /*--------
+      Merkaba */
+      const merkabaGeometry = new THREE.BufferGeometry()
+      // create a simple square shape. We duplicate the top left and bottom right
+      // vertices because each vertex needs to appear once per triangle.
+      const side = merkabaDiceSize * merkabaGeometryFactor / 2.0
+      const vertices = new Float32Array([
+        -side, -side, side, // v0
+        side, -side, -side, // v1
+        side, side, side, // v2
+        
+        side, -side, -side, // v3
+        -side, -side, side, // v4
+        -side, side, -side, // v5
+        
+        -side, side, -side, // v6
+        -side, -side, side, // v7
+        side, side, side, // v8
+        
+        -side, side, -side, // v9
+        side, -side, -side, // v10
+        side, side, side, // v11
+      ])
+      // itemSize = 3 because there are 3 values (components) per vertex
+      merkabaGeometry.setAttribute('position', new THREE.BufferAttribute(vertices, 3))
+      const material = new THREE.MeshBasicMaterial({
+        // color: 0xff0000,
+        color: 0xffa0a0,
+        // opacity: 0.3,
+        // transparent: true,
+        // emissive: 0x000000,
+        // metalness: 0.7,
+        // flatShading: false,
+        // roughness: 0.7,
+        // envMap: textureCube,
+        reflectivity: 1,
+        side: THREE.DoubleSide,
+      })
+      const mesh = new THREE.Mesh(merkabaGeometry, material)
+      const merkabaEdges = new THREE.EdgesGeometry(merkabaGeometry)
+      const merkabaEdgesLine = new THREE.LineSegments(merkabaEdges, new THREE.LineBasicMaterial({
+        color: 0x888888,
+        linewidth: 1.0,
+        linecap: 'round', //ignored by WebGLRenderer
+        linejoin: 'round', //ignored by WebGLRenderer
+      }))
+      merkabaGroup.add(mesh)
+      merkabaGroup.add(merkabaEdgesLine)
 
 
       /*--------------------
