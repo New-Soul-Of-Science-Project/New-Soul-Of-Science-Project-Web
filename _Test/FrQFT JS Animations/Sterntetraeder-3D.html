@@ -231,49 +231,6 @@
       const screenMaterial = new THREE.MeshLambertMaterial( screenParamsMeshLambertMaterial )
 
       /*--------
-      Sender */
-      const senderGeometryFactor = 0.25
-      const senderColor = 0x2050ff
-      const senderCorpusSize = 0.5
-      // const senderMeshLambertMaterialParams = { color: senderColor, side: THREE.DoubleSide }
-      // const senderMaterial = new THREE.MeshLambertMaterial( senderMeshLambertMaterialParams )
-      const senderMeshPhysicalMaterialParams = {
-        color: senderColor,
-        // opacity: 0.5,
-        // transparent: true,
-        emissive: 0x000000,
-        metalness: 0.7,
-        flatShading: false,
-        roughness: 0.7,
-        // envMap: textureCube,
-        reflectivity: 1,
-        side: THREE.DoubleSide,
-      }
-      const senderMaterial = new THREE.MeshPhysicalMaterial( senderMeshPhysicalMaterialParams )
-      const senderCorpusBoxGeometryParamsObj = {
-        width: senderCorpusSize * senderGeometryFactor,
-        height: senderCorpusSize * senderGeometryFactor,
-        dept: senderCorpusSize * senderGeometryFactor,
-        // widthSegments: Integer,
-        // heightSegments: Integer,
-        // depthSegments: Integer,
-      }
-      const senderCorpusBoxGeometryParams = objectValuesToArray(senderCorpusBoxGeometryParamsObj)
-      const senderCorpusGeometry = new THREE.BoxGeometry( ...senderCorpusBoxGeometryParams )
-      const senderPyramidCylinderGeometryParamsObj = {
-        radiusTop: 0.25 * senderGeometryFactor,
-        radiusBottom: 0.5 * senderGeometryFactor,
-        height: 1 * senderGeometryFactor,
-        radialSegments: 4,
-        heightSegments: 30,
-        openEnded: true,
-        // thetaStart: Float,
-        // thetaLength: Float,
-      }
-      const senderPyramidCylinderGeometryParams = objectValuesToArray(senderPyramidCylinderGeometryParamsObj)
-      const senderPyramidGeometry = new THREE.CylinderGeometry( ...senderPyramidCylinderGeometryParams )
-
-      /*--------
       Laser */
       // const laserColor = 0xffff00
       // const laserColor = 0xff0000
@@ -444,18 +401,6 @@
       }
       const merkabaDiceBoxGeometryParams = objectValuesToArray(merkabaDiceBoxGeometryParamsObj)
       const merkabaDiceGeometry = new THREE.BoxGeometry( ...merkabaDiceBoxGeometryParams )
-      const merkabaPyramidCylinderGeometryParamsObj = {
-        radiusTop: 0.25 * merkabaGeometryFactor,
-        radiusBottom: 0.5 * merkabaGeometryFactor,
-        height: 1 * merkabaGeometryFactor,
-        radialSegments: 4,
-        heightSegments: 30,
-        openEnded: true,
-        // thetaStart: Float,
-        // thetaLength: Float,
-      }
-      const merkabaPyramidCylinderGeometryParams = objectValuesToArray(merkabaPyramidCylinderGeometryParamsObj)
-      const merkabaPyramidGeometry = new THREE.CylinderGeometry( ...merkabaPyramidCylinderGeometryParams )
 
       /*--------
       Scene Basics */
@@ -904,59 +849,12 @@
       }
 
 
-      const laserSplitCreate = (indexLaserSplit, splitsCount) => {
-        /*--------
-        Group */
-        const laserWaveGroup = new THREE.Group()
-        render.scene.add( laserWaveGroup )
-        /*--------
-        Parts */
-        const laserPartsOpacity = (partIndex, partsCount) => {
-          // ???: use Gauß'sche Normalverteilung?
-          // return 1 // for full cylinder
-          return Math.sin(Math.PI * (partIndex / (partsCount - 1)))
-        }
-        const laserPushMaterialByOpacityAry = (laserMaterials, materialParams, indexPart) => {
-          // laserMaterials.push( new THREE.MeshLambertMaterial(
-          laserMaterials.push( new THREE.MeshPhysicalMaterial(
-            { ...materialParams, opacity: materialParams.opacity * laserPartsOpacity( indexPart, laserPartsCount ) / laserSplitsCount }
-          ))
-        }
-        const laserParts = []
-        for (let index = 0; index < laserPartsCount; index++) {
-          let laserMaterials = []
-          switch (index === 0 ? 'first' : index < laserPartsCount - 1 ? 'middle' : 'last') {
-            case 'first':
-              laserClosedTopMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
-              break
-            case 'middle':
-              laserOpenEndedMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
-              break
-            case 'last':
-              laserClosedBottomMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
-              break
-          }
-          const laserPart = new THREE.Mesh( laserGeometry, laserMaterials )
-          laserParts.push( laserPart )
-          laserWaveGroup.add( laserPart )
-          laserPartPositionSet(laserPart, index, indexLaserSplit, 0)
-        }
-        return { laserWaveGroup, laserParts }
-      }
-
       const laserSplitedAddDistance = (index) => 
         laserSlpitsSeparated ?
           laserSlpitsPositionCenterCorrection
             // shift to the next split
             + laserSlpitsPositionDistance * index
           : 0
-
-      const laserSplitPositionSet = (laserSplit, index) => 
-        laserSplit.position.set(
-          0,
-          centerHeightPosition + (laserSlpitsSeparated ? laserSplitedAddDistance( index ) : 0),
-          0
-        )
 
 
       let settings = null
@@ -1176,35 +1074,6 @@
       screenInterference.position.set( -centerDistance.ins.x, centerHeightPosition, 0 )
 
       /*--------------------
-      Sender
-      --------------------*/
-      /*--------
-      Group */
-      // const senderGroup = new THREE.Group()
-      // experimentGroup.add( senderGroup )
-      // senderGroup.position.set( 0, centerHeightPosition, centerDistance.ins.z + senderCorpusBoxGeometryParamsObj.dept / 2 )
-      /*--------
-      Corpus */
-      // const senderCorpus = new THREE.Mesh( senderCorpusGeometry, senderMaterial )
-      // senderGroup.add( senderCorpus )
-      /*--------
-      Pyramid */
-      // const senderPyramid = new THREE.Mesh( senderPyramidGeometry, senderMaterial )
-      // senderPyramid.rotation.set( pi2 / 4, pi2 / 8, 0)
-      // senderPyramid.position.set( 0, 0, - (senderPyramidCylinderGeometryParamsObj.height / 2) )
-      // senderGroup.add( senderPyramid )
-
-      /*--------------------
-      Laser
-      --------------------*/
-      // const laserSplits = []
-      // for (let indexLaserSplit = 0; indexLaserSplit < laserSplitsCount; indexLaserSplit++) {
-      //   const laserSplit = laserSplitCreate( indexLaserSplit, laserSplitsCount )
-      //   laserSplits.push(laserSplit)
-      //   laserSplitPositionSet(laserSplit.laserWaveGroup, indexLaserSplit)
-      // }
-
-      /*--------------------
       Panel
       --------------------*/
       createPanel()
@@ -1259,7 +1128,7 @@
       ])
       // itemSize = 3 because there are 3 values (components) per vertex
       merkabaGeometry.setAttribute('position', new THREE.BufferAttribute(vertices, 3))
-      const material = new THREE.MeshBasicMaterial({
+      const merkabaEdgesLineMaterial = new THREE.MeshBasicMaterial({
         // color: 0xff0000,
         color: 0xffa0a0,
         // opacity: 0.3,
@@ -1272,7 +1141,7 @@
         reflectivity: 1,
         side: THREE.DoubleSide,
       })
-      const mesh = new THREE.Mesh(merkabaGeometry, material)
+      const merkabaEdgesLineMesh = new THREE.Mesh(merkabaGeometry, merkabaEdgesLineMaterial)
       const merkabaEdges = new THREE.EdgesGeometry(merkabaGeometry)
       const merkabaEdgesLine = new THREE.LineSegments(merkabaEdges, new THREE.LineBasicMaterial({
         color: 0x888888,
@@ -1280,7 +1149,7 @@
         linecap: 'round', //ignored by WebGLRenderer
         linejoin: 'round', //ignored by WebGLRenderer
       }))
-      merkabaGroup.add(mesh)
+      merkabaGroup.add(merkabaEdgesLineMesh)
       merkabaGroup.add(merkabaEdgesLine)
 
 
