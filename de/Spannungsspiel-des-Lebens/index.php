@@ -99,11 +99,14 @@
                     'dafür entwickelt, das ›Spannungsspiel des Lebens‹ anschaulich zu machen.'."\n".
                     'Sollte mir dies trotzdessen einmal nicht so gut oder gerade besonders gut gelungen sein, dann freue ich mich auf Ihr \\jump{OM:FrQFT:Impressum:Inhaberdaten}{Feedback}.'."\n"*/))),
                       
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Home:Vortext:XXX', text =>
+                                           
+                'Information')),
                   array( 'text', array( text => array(
                     'Dies ist die Startseite der kompletten Arbeit.'."\n".
-                    'Bitte wählen sie den direkten Zugang zu den einzelnen Themen über das nachfolgende \\jump{OM:SpaLeb:Home:Inhalt}{Inhaltsverzeichnis}.'."\n".
+                    'Bitte wähle den direkten Zugang zu den einzelnen Themen über das nachfolgende \\jump{OM:SpaLeb:Home:Inhalt}{Inhaltsverzeichnis}.'."\n".
                     'Die \\jump{OM:SpaLeb:Einleitung}{Einleitung} zum ›Spannungsspiel des Lebens‹ bietet einen Überblick über die grundlegende Herleitung.'."\n".
-                    'Bei Nachfragen und Interesse an einer Diskussion, Kritik oder Beteiligung sind Sie herzlich eingeladen \\jump{OM:FrQFT:Impressum:Inhaberdaten}{Kontakt} aufzunehmen.'."\n".
+                    'Bei Nachfragen und Interesse an einer Diskussion, Kritik oder Beteiligung lade ich herzlich ein \\jump{OM:FrQFT:Impressum:Inhaberdaten}{Kontakt} aufzunehmen.'."\n".
                     'Auch eine Unterstützung durch \\jump{OM:FrQFT:Impressum:Spenden}{Spenden} ist herzlich willkommen.'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
