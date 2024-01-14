@@ -19,6 +19,7 @@
               'Plichta:GottesGeheimeFormel:1995',
               'wiki:AbelscheGruppe:2022',
               'wiki:AbrundungsfunktionUndAufrundungsfunktion:2022',
+              'wiki:AlgebraischerZahlkoerper:2020',
               'wiki:Allklasse:2020',
               'wiki:AnalytischeZahlentheorie:2022',
               'wiki:ArchimedischesAxiom:2023',
