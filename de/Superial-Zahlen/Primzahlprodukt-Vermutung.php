@@ -1220,8 +1220,8 @@
                                           label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wo die aktual unendlichen Elemente in der Menge beginnen, sind diese nicht mehr lückenlos, da es in den'."\n".
-                      'Biordinalzahlen sowohl natürliche Vorgänger als auch Nachfolger dieser Zahlen gibt, die nicht im Raster enthalten sind.'."\n".
+                      'Wo die aktual unendlichen Elemente in der Menge beginnen, sind diese nicht mehr lückenlos, da zum Beispiel'."\n".
+                      '\\latexmath{ 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots - 1 \in \mathbb{N}_\infty } nicht im Raster enthalten aber auch keine endliche Zahl ist.'."\n".
                       'Lückenlos, aber trotzdem unendlich viele, sind also nur die endlichen Zahlen der Menge'."\n".
                       ''))),
                   array( 'equations',
@@ -1325,7 +1325,7 @@
                   //     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'was darauf beruht, dass wir, wegen der Eineindeutigkeit des Primturm-Potenzrasters'."\n".
-                      'in Bezug auf die Primzahlen und ihren Übergang ins Unendliche zu \\latexmath{ \omega }, diese Funktion ebenso weglassen können.'."\n",
+                      'in Bezug auf die Primzahlen und ihren Übergang ins Unendliche zu \\latexmath{ \omega }, die Funktion \\latexmath{ pr } ebenso weglassen können.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -1592,7 +1592,7 @@
                     'Zunächst können wir sagen, was alle natürlichen Zahlen miteinander verbindet:'."\n".
                     'Alle natürlichen Zahlen liegen auf dem Zählraster, sind also durch die Eins ganzzahlig teilbar.'."\n".
                     'Poetischer ausgedrückt schwingen alle natürlichen Zahlen mit der Eins oder im Spektrum oder Raster der Eins.'."\n",
-                      'Bei den Konstruktionsschritten zur Erzeugen jeder endlichen Primzahl erhalten wir eine Sammlung'."\n".
+                      'Bei den Konstruktionsschritten zur Erzeugung jeder endlichen Primzahl erhalten wir eine Sammlung'."\n".
                     'der Primfaktoren der endlichen natürlichen Zahlen, die uns über das einschrittige Zählen hinaus sagen,'."\n".
                     'auf welchen größeren Spektren oder Rastern die natürlichen Zahlen auch noch liegen'."\n".
                     'oder in welchen Spektren oder Rastern sie auch noch schwingen.'."\n".
