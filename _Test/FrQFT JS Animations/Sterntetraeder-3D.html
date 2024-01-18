@@ -1026,26 +1026,26 @@
       /*--------------------
       Main Mirror
       --------------------*/
-      const mirrorMain = mirrorCreate({
-        withMirrorPlane: true,
-        mirrorBoxMaterial: mirrorMaterial,
-        mirrorPlaneMaterial: mirrorPlaneMaterial,
-      })
-      experimentGroup.add( mirrorMain )
-      mirrorMain.rotation.set( 0, pi2 / 2, 0)
-      mirrorMain.position.set( 0, centerHeightPosition, -centerDistance.ins.z )
+      // const mirrorMain = mirrorCreate({
+      //   withMirrorPlane: true,
+      //   mirrorBoxMaterial: mirrorMaterial,
+      //   mirrorPlaneMaterial: mirrorPlaneMaterial,
+      // })
+      // experimentGroup.add( mirrorMain )
+      // mirrorMain.rotation.set( 0, pi2 / 2, 0)
+      // mirrorMain.position.set( 0, centerHeightPosition, -centerDistance.ins.z )
 
       /*--------------------
       Side Mirror
       --------------------*/
-      const mirrorSide = mirrorCreate({
-        withMirrorPlane: true,
-        mirrorBoxMaterial: mirrorMaterial,
-        mirrorPlaneMaterial: mirrorPlaneMaterial,
-      })
-      experimentGroup.add( mirrorSide )
-      mirrorSide.rotation.set( 0, pi2 / 4, 0)
-      mirrorSide.position.set( centerDistance.ins.x, centerHeightPosition, 0 )
+      // const mirrorSide = mirrorCreate({
+      //   withMirrorPlane: true,
+      //   mirrorBoxMaterial: mirrorMaterial,
+      //   mirrorPlaneMaterial: mirrorPlaneMaterial,
+      // })
+      // experimentGroup.add( mirrorSide )
+      // mirrorSide.rotation.set( 0, pi2 / 4, 0)
+      // mirrorSide.position.set( centerDistance.ins.x, centerHeightPosition, 0 )
 
       /*--------------------
       Half Mirror
@@ -1058,10 +1058,10 @@
       /*--------------------
       Screen For Interference
       --------------------*/
-      const screenInterference = new THREE.Mesh( screenGeometry, screenMaterial )
-      experimentGroup.add( screenInterference )
-      screenInterference.rotation.set( 0, - (pi2 / 4), 0)
-      screenInterference.position.set( -centerDistance.ins.x, centerHeightPosition, 0 )
+      // const screenInterference = new THREE.Mesh( screenGeometry, screenMaterial )
+      // experimentGroup.add( screenInterference )
+      // screenInterference.rotation.set( 0, - (pi2 / 4), 0)
+      // screenInterference.position.set( -centerDistance.ins.x, centerHeightPosition, 0 )
 
       /*--------------------
       Panel
@@ -1131,18 +1131,39 @@
         reflectivity: 1,
         side: THREE.DoubleSide,
       })
+      const merkaba2Material = new THREE.MeshBasicMaterial({
+        // color: 0xff0000,
+        color: 0xa0ffa0,
+        // opacity: 0.3,
+        // transparent: true,
+        // emissive: 0x000000,
+        // metalness: 0.7,
+        // flatShading: false,
+        // roughness: 0.7,
+        // envMap: textureCube,
+        reflectivity: 1,
+        side: THREE.DoubleSide,
+      })
       const merkaba1Mesh = new THREE.Mesh(merkabaGeometry, merkaba1Material)
+      const merkaba2Mesh = new THREE.Mesh(merkabaGeometry, merkaba2Material)
+      
+      const merkabaEdges = new THREE.EdgesGeometry(merkabaGeometry)
       const merkabaEdgesMaterial = new THREE.LineBasicMaterial({
         color: 0x888888,
         linewidth: 1.0,
         linecap: 'round', //ignored by WebGLRenderer
         linejoin: 'round', //ignored by WebGLRenderer
       })
-      const merkabaEdges = new THREE.EdgesGeometry(merkabaGeometry)
       const merkaba1EdgesLine = new THREE.LineSegments(merkabaEdges, merkabaEdgesMaterial)
-      
+      const merkaba2EdgesLine = new THREE.LineSegments(merkabaEdges, merkabaEdgesMaterial)
+
       merkabaGroup.add(merkaba1Mesh)
       merkabaGroup.add(merkaba1EdgesLine)
+
+      merkabaGroup.add(merkaba2Mesh)
+      merkaba2Mesh.rotation.set(pi2 / 4.0, 0, 0)
+      merkabaGroup.add(merkaba2EdgesLine)
+      merkaba2EdgesLine.rotation.set(pi2 / 4.0, 0, 0)
 
 
       /*--------------------
