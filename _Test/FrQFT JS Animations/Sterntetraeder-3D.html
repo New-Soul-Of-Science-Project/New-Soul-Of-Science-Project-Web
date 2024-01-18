@@ -1118,7 +1118,7 @@
       ])
       // itemSize = 3 because there are 3 values (components) per vertex
       merkabaGeometry.setAttribute('position', new THREE.BufferAttribute(vertices, 3))
-      const merkabaEdgesLineMaterial = new THREE.MeshBasicMaterial({
+      const merkaba1Material = new THREE.MeshBasicMaterial({
         // color: 0xff0000,
         color: 0xffa0a0,
         // opacity: 0.3,
@@ -1131,16 +1131,18 @@
         reflectivity: 1,
         side: THREE.DoubleSide,
       })
-      const merkabaEdgesLineMesh = new THREE.Mesh(merkabaGeometry, merkabaEdgesLineMaterial)
-      const merkabaEdges = new THREE.EdgesGeometry(merkabaGeometry)
-      const merkabaEdgesLine = new THREE.LineSegments(merkabaEdges, new THREE.LineBasicMaterial({
+      const merkaba1Mesh = new THREE.Mesh(merkabaGeometry, merkaba1Material)
+      const merkabaEdgesMaterial = new THREE.LineBasicMaterial({
         color: 0x888888,
         linewidth: 1.0,
         linecap: 'round', //ignored by WebGLRenderer
         linejoin: 'round', //ignored by WebGLRenderer
-      }))
-      merkabaGroup.add(merkabaEdgesLineMesh)
-      merkabaGroup.add(merkabaEdgesLine)
+      })
+      const merkabaEdges = new THREE.EdgesGeometry(merkabaGeometry)
+      const merkaba1EdgesLine = new THREE.LineSegments(merkabaEdges, merkabaEdgesMaterial)
+      
+      merkabaGroup.add(merkaba1Mesh)
+      merkabaGroup.add(merkaba1EdgesLine)
 
 
       /*--------------------
