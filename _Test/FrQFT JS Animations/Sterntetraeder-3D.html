@@ -849,21 +849,11 @@
       }
 
 
-      const laserSplitedAddDistance = (index) => 
-        laserSlpitsSeparated ?
-          laserSlpitsPositionCenterCorrection
-            // shift to the next split
-            + laserSlpitsPositionDistance * index
-          : 0
-
-
       let settings = null
-      let folderTheory = null
       let buttonFrQFT = null
       const buttonFrQFTName = 'FrQFT / Medium Theorie'
       let buttonSRT = null
       const buttonSRTName = 'SRT'
-      let folderVelocity = null
       let sliderTimeFactor = null
       const sliderTimeFactorName = 'Zeitskala (%)'
       let sliderExperimentVelocity = null
