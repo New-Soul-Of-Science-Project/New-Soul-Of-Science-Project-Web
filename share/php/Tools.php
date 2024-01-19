@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 06.10.2023, 08:00h
+  // #: Stand: 19.01.2024, 22:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20240119:  +:  "To_f_Paragraph", 'iframe':  Add this type for 3d animations.
   //           20231006:  +:  "\\url[]{}", "To_f_replace_callback__latexcommand__url":  Is new. It sets automatically "\\class{tools-class-url}{}"
   //           20230901:  +:  "To_f_Paragraph", 'figure', 'youtube':  Add horizontal scrollable with class 'content-horizontal-scrollable'.
   //           20230831:  +:  "To_f_menuList_header_create", "To_f_menuList_table_create": New.
@@ -1772,6 +1773,7 @@
         break;
       case 'figure':
       case 'youtube':
+      case 'iframe':
         break;
       case 'fade-in-area':
         break;
@@ -1977,6 +1979,7 @@
 
       case 'figure':
       case 'youtube':
+      case 'iframe':
       
         $textAry = array();
         $arrayMarginLeftRight = '';
@@ -2086,15 +2089,24 @@
                   echo '              </tr>'."\n";
                   break;
                 case 'youtube':
+                case 'iframe':
                   echo '            <tr>'."\n";
                   echo '              <td>'."\n";
-                  // #: YouTube Parameter, see file "Eingebettetes Youtube-Video automatisch starten und wiederholen (loop).pdf" or internet "http://www.somethinkspecial.de/youtube-video-autoplay-loop.html".
-                  //    Parameter in the link: 'https://www.youtube.com/embed/<Video>?<Parameter1>&<Parameter2>'
-                  //    &: Write no '&' after '?'!
-                  //    Rel: '&rel=0' shows no recommended videos at the end of the video.
-                  //    Loop: '&loop=1' shoes an endless loop, but works only with parameter '&playlist=<Video>'. Makes big sense with Rel.
-                  //    Auto: '&autoplay=1' plays the film immediately.
-                  echo '                <iframe class="tools-class-vid" width="'.($value_ary[width]).'" height="'.($value_ary[height]).'" src="'.($value_ary[source]).'" frameborder="1" allowfullscreen></iframe>'."\n";
+                  switch ($type)
+                  {
+                    case 'youtube':
+                      // #: YouTube Parameter, see file "Eingebettetes Youtube-Video automatisch starten und wiederholen (loop).pdf" or internet "http://www.somethinkspecial.de/youtube-video-autoplay-loop.html".
+                      //    Parameter in the link: 'https://www.youtube.com/embed/<Video>?<Parameter1>&<Parameter2>'
+                      //    &: Write no '&' after '?'!
+                      //    Rel: '&rel=0' shows no recommended videos at the end of the video.
+                      //    Loop: '&loop=1' shoes an endless loop, but works only with parameter '&playlist=<Video>'. Makes big sense with Rel.
+                      //    Auto: '&autoplay=1' plays the film immediately.
+                      echo '            <iframe class="tools-class-vid" width="'.($value_ary[width]).'" height="'.($value_ary[height]).'" src="'.($value_ary[source]).'" frameborder="1" allowfullscreen></iframe>'."\n";
+                      break;
+                    case 'iframe':
+                      echo '            <iframe class="tools-class-vid" width="'.($value_ary[width]).'" height="'.($value_ary[height]).'" src="'.($value_ary[source]).'" frameborder="0"></iframe>'."\n";
+                      break;
+                  }
                   echo '              </td>'."\n";
                   echo '            </tr>'."\n";
                   echo '            <tr>'."\n";
@@ -2334,6 +2346,7 @@
         break;
       case 'figure':
       case 'youtube':
+      case 'iframe':
         break;
       case 'fade-in-area':
         break;

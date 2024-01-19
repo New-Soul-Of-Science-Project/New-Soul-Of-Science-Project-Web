@@ -80,6 +80,7 @@
       Controls
       --------------------*/
       const render = new Render(eleWidth, eleHeight)
+      // const render = new Render(window.innerWidth, window.innerHeight)
 
       const container = document.getElementById( 'container' )
       container.style.width = render.dimensions.width + 'px'
@@ -861,7 +862,7 @@
 
       function createPanel() {
 
-        const panel = new GUI({ width: 310 })
+        const panel = new GUI({ width: 150 })
         // container.appendChild( panel.domElement )
 
         const folderTheory = panel.addFolder( 'Theorie / Model' )

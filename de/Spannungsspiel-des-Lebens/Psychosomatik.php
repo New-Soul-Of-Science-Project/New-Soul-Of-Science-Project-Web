@@ -942,6 +942,9 @@
                     '• Die Merkaba, der sogenannte \\jump{OM:NPYo:ExistenzLeichtigkeit:Vortext:Vektor-Gleichgewicht}{Thronwagen Gottes}, steht mit dem 3-dimensionalen Vektor-Gleichgewicht, dem Kuboktaeder, in direktem Zusammenhang, der die Stabilität des Raumes oder räumlicher Strukturen darstellt. Der Sterntetraeder hat eine tiefe religiös-esoterische Bedeutung.',
                     ))),
                       
+                  array( 'iframe',
+                    array_merge( $SpaLeb_g_iframe_ary_Merkaba, array( name => 'OM:SpaLeb:Psychosomatik:Sterntetraeder-Stabil+Dynamik-Koerper:LiveAni-Merkaba'))),
+
                    array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".

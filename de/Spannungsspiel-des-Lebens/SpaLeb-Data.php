@@ -92,7 +92,7 @@
       text_undertitel_h2 => 'Psychosomatische Pole und Gradienten im Körper – unsere Selbstheilung',
       text_titel_discr_h3 => 'Der Achtsamkeitsprozess spiegelt sich in Polen und Verläufen – in Gradienten – unseres Körpers wider',
       jump_ary => array(
-        'OM:SpaLeb:Psychosomatik:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+        'OM:SpaLeb:Psychosomatik:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), LiveAni_init => ($FrQFT_g_LiveAni_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
           'OM:SpaLeb:Psychosomatik:Vortext:MehrGeschDetails' => array( headline_text => 'Mehr geschichtliche Details'/*, headline_text_short => ''*/),
           'OM:SpaLeb:Psychosomatik:Vortext:Fig-Gefuehls-Handlungspol' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
@@ -125,6 +125,7 @@
         'OM:SpaLeb:Psychosomatik:Aeusserer-Marionettenspieler' => array( headline_text => 'Äußerer Marionettenspieler'/*, headline_text_short => ''*/),
                    
         'OM:SpaLeb:Psychosomatik:Sterntetraeder-Stabil+Dynamik-Koerper' => array( headline_text => 'Die Sterntetraeder der Stabilität und Dynamik in unserem Körper'/*, headline_text_short => ''*/),
+          'OM:SpaLeb:Psychosomatik:Sterntetraeder-Stabil+Dynamik-Koerper:LiveAni-Merkaba' => array( headline_text => '3D-Animation '.(++$FrQFT_g_LiveAni_idx)),
       ),
     ),
   );
