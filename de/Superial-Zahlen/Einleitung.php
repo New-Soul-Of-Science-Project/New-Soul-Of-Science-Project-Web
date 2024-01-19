@@ -45,6 +45,126 @@
                     ))),
                       
                   array( 'text', array( text => array(
+                    'In der Geometrie stoßen wir schnell auf ein fundamentales Problem.'."\n".
+                    'Denn wollen beispielsweise eine Linie konstruieren und berechnen, so wird oft leicht dahin gesagt:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      'Nun setzen wir die Linie aus vielen Punkten zusammen; natürlich aus unendlich vielen, um wirklich eine Linie zu erhalten.'."\n".
+                      ''))),
+                      
+                  array( 'text', array( text => array(
+                    'Oder entsprechend für eine Fläche:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                      'Nun setzen wir die Fläche aus vielen Linien zusammen; natürlich aus unendlich vielen, um wirklich eine Fläche zu erhalten.'."\n".
+                      ''))),
+                      
+                  array( 'text', array( text => array(
+                    'Und Entsprechendes so fortgeführt für den Raum beziehungsweise das Volumen und jede nächst größere Dimension.'."\n",
+                      'Doch was ist eine Linie, um beim einfachsten Beispiel zu bleiben,'."\n".
+                    'und wie können wir eine Linie aus Punkten aufbauen?'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                                           
+                'Ein fundamentales Problem', subline =>
+                  'Hochstapelei')),
+                  array( 'text', array( text => array(
+                    'Der Versuch eine Linie aus Punkten quasi aufzustapeln ist zum Beispiel'."\n".
+                    'zum Scheitern verurteilt.'."\n",
+                      'Beim Stapeln wird ein Punkt so an den anderen platziert, dass alle gemeinsam'."\n".
+                    'die Linie füllen, dicht an dicht.'."\n".
+                    'Diese Dichte ist allerdings davon abhängig, welche Ausdehnung jeder einzelne Punkt hat.'."\n".
+                    'Daher das Wort stapeln.'."\n",
+                      'Ein Punkt besitzt aber per Definition keine Ausdehnung.'."\n".
+                    'Daher können wir Punkte nicht so stapeln, dass eine Linie gefüllt wird.'."\n".
+                    'Und gleiches gilt auch für all die anderen genannten Objekte:'."\n".
+                    'Wir können Linien ohne Breite nicht zu Flächen stapeln und so fort.'."\n".
+                    'Auf diese Weise ist also kein Konstruieren einer höheren Dimension aus niedrigeren Dimensionen möglich.'."\n",
+                      'Aber was funktioniert dann?'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                                           
+                'Ist die Geometrie im Grunde fraktal?', subline =>
+                  'Weben oder Netzwerken')),
+                  array( 'text', array( text => array(
+                    'Wir können uns zwei Punkte denken, die nicht aufeinander liegen und so eine Richtung vorgeben.'."\n".
+                    'Nun beginnen wir ein Netz von Punkten zu „weben“, indem wir zwischen beide'."\n".
+                    'Punkte, genau in der Mitte, einen weiteren Punkt legen und haben nun drei Punkte in der selben Richtung auf einer Linie.'."\n",
+                      'So fahren wir fort und legen jeweils zwischen zwei benachbarte Punkte einen weiteren'."\n".
+                    'in die Mitte.'."\n".
+                    'Hierdurch wird das Gewebe zwischen unseren Ausgangspunkten immer dichter gewebt und'."\n".
+                    'wir spannen ein Netz von Punkten auf, wodurch wir eine Strecke erhalten.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Selbstähnlichkeit} \\\\'."\n".
+                    'Weil wir immer wieder das gleiche tun, ergibt sich eine fraktale, also selbstähnliche, Netzstruktur.'."\n",
+                      'Nun können wir zwei solcher Strecken in der Richtung der Ausgangspunkte so aneinander'."\n".
+                    'legen, dass der Endpunkt der ersten Strecke auf dem Anfangspunkt der zweiten liegt.'."\n".
+                    'Nehmen wir diese doppelte Strecke und skalieren sie probehalber zwischen die erste Strecke,'."\n".
+                    'dann liegen alle Punkte aufeinander.'."\n".
+                    'Beide Punktmengen sind von der Struktur her gleich, weil durch das halbieren und verdoppeln'."\n".
+                    'in beiden die reinen Potenzen von Zwei stecken.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Erweiterung} \\\\'."\n".
+                    'Verlängern wir die doppelte Strecke weiter auf die dreifache und skalieren diese'."\n".
+                    'wieder probehalber auf die erste Strecke, dann liegen nur die Anfangs- und Endpunkte aufeinander.'."\n".
+                    'Die restlichen Punkte decken sich nicht.'."\n",
+                      'Wir haben die nächste Primzahl nach der Zwei entdeckt, die ein neues Netzwerk oder Raster erzeugt.'."\n".
+                    'Auch dieses ist wieder in Bezug auf die Potenzen der Drei selbstähnlich.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Das komplette Netzwerk aller Primzahlpotenzen aufspannen} \\\\'."\n".
+                    'Dieses Vorgehen können wir nun immer weiter treiben:'."\n".
+                    'Strecke wieder um Eins verlängern und durch skalieren überprüfen, ob wir eine neue Primzahl gefunden haben.'."\n".
+                    'Dann auch von der ersten Strecke an in die andere Richtung ins Negative immer weiter verlängern.'."\n",
+                      'In der negativen Richtung erhalten wir die selben Primzahlen.'."\n".
+                    'Die Struktur des Netzes verändert sich nicht mehr.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                                           
+                'Immer noch Lückenhaft', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Nehmen wir diese Teilungen der Strecken nur endlich oft vor,'."\n".
+                    'dann haben wir immer noch Lücken endlicher Größe.'."\n",
+                      'Wie können wir aber die Lücken schließen?'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                                           
+                'Übergang ins Unendliche', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Erst, wenn wir die Teilung der Strecken bis ins Unendliche treiben,'."\n".
+                    'bleiben keine endlichen Lücken übrig.'."\n",
+                      'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                                           
+                'Wie wir aus Punkten eine Linie konstruieren können', subline =>
+                  'Ein naturphilosophisches Problem')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                                           
+                'XXX', subline =>
+                  '')),
+                  array( 'text', array( text => array(
                     'Wie wir sehen werden erhalten wir mit den hier entwickelten Superial-Zahlen etwas ganz besonderes:'."\n".
                     'Formal gesprochen sind sie eine abelsche Gruppe\\footnote{\\const{NSOSP_g_footnote_text_AbelscheGruppe}} und'."\n".
                     'bezüglich der Addition und Multiplikation ein aktual unendlicher angeordneter algebraischer Körper\\footnote{\\const{NSOSP_g_footnote_text_KoerperAlgebra}}\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AlgebraischerZahlkoerper:2020}.}.'."\n".
@@ -76,7 +196,8 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
-                'Motivation')),
+                'Motivation', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     'In der Schule fand ich Ableitungen und Integrale immer sehr faszinierend.'."\n".
                     'Es war für mich erstaunlich, wie man über die Unendlichkeit ganz neue Erkenntnisse und Formeln gewinnen konnte.'."\n".
@@ -93,7 +214,8 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
-                'Formale Einschränkung')),
+                'Formale Einschränkung', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     'Um nachfolgend exakt zu arbeiten, möchte ich an dieser Stelle vorab darauf aufmerksam machen,'."\n".
                     'dass die Funktionsparameter – meistens \\latexmath{ x } – vorerst auf rationale Zahlen der Menge \\latexmath{ \mathbb{Q} } beschränkt sind.'."\n".
@@ -102,7 +224,8 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen', text =>
                                            
-                'Ableitung genau verstehen')),
+                'Ableitung genau verstehen', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     'Das Nicht-Verschwinden aller Summanden funktioniert dann, wenn wir die beim Ableiten gegen Null gehenden Summanden selber als unendlich klein, aber nicht als verschwindend betrachten.'."\n".
                     'Wir setzten den gegen Null gehenden Summanden zu \\term{Δx ≔ s^^{-1}}, zum Kehrwert der \\italic{superialen Basis} \\term{s},'."\n".
@@ -174,7 +297,8 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen', text =>
                                            
-                'Integral genau verstehen')),
+                'Integral genau verstehen', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     'Beim Integral müssen wir nun den Prozess des Differenzierens wieder Rückgängig machen und'."\n".
                     'lernen viel Interessantes dabei, wenn wir herausfinden, wie das geht.'."\n".
