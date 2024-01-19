@@ -10,7 +10,7 @@
   <body>
     <div id="container"></div>
     <div id="info">
-      <h1>Sterntetraeder</h1>
+      <h1>Der Sterntetraeder</h1>
       <h2 id="headline"></h2>
     </div>
 
@@ -80,7 +80,7 @@
       Controls
       --------------------*/
       const render = new Render(eleWidth, eleHeight)
-      // const render = new Render(window.innerWidth, window.innerHeight)
+      // calc dynamic size, see: https://stackoverflow.com/questions/29884485/threejs-canvas-size-based-on-container
 
       const container = document.getElementById( 'container' )
       container.style.width = render.dimensions.width + 'px'
@@ -92,7 +92,7 @@
       info.style.height = render.dimensions.height + 'px'
 
       const headline = document.getElementById( 'headline' )
-      headline.innerText = 'XXX'
+      headline.innerText = 'Das geometrische Muster stabiler Dynamik'
 
 
       /*--------------------
@@ -414,7 +414,7 @@
 
       let theoryModel_enum_FrQFT = 'FrQFT'
       let theoryModel_enum_SRT = 'SRT'
-      let theoryModel = theoryModel_enum_SRT
+      let showSecondTetrahedron = true
       let timeFactor = 1.0
       let timeReset = 0.0
       let experimentVelocity = 0.0
@@ -850,84 +850,24 @@
       }
 
 
-      let settings = null
-      let buttonFrQFT = null
-      const buttonFrQFTName = 'FrQFT / Medium Theorie'
-      let buttonSRT = null
-      const buttonSRTName = 'SRT'
-      let sliderTimeFactor = null
-      const sliderTimeFactorName = 'Zeitskala (%)'
-      let sliderExperimentVelocity = null
-      const sliderExperimentVelocityName = 'Zum Beobachter (% der LG)'
-
       function createPanel() {
-
+        const buttonShowSecondTetrahedronName = 'Zeige beide Tetraeder'
         const panel = new GUI({ width: 150 })
-        // container.appendChild( panel.domElement )
-
-        const folderTheory = panel.addFolder( 'Theorie / Model' )
-        const folderVelocity = panel.addFolder( 'Geschwindigkeit' );
-
-        settings = {
-          [buttonFrQFTName]: function () {
-            setTheory(theoryModel_enum_FrQFT)
-          },
-          [buttonSRTName]: function () {
-            setTheory(theoryModel_enum_SRT)
-          },
-          [sliderTimeFactorName]: timeFactor * 100,
-          [sliderExperimentVelocityName]: experimentVelocity * 100,
+        const settings = {
+          [buttonShowSecondTetrahedronName]: showSecondTetrahedron,
         }
-
-        buttonFrQFT = folderTheory.add(settings, buttonFrQFTName)
-        buttonSRT = folderTheory.add(settings, buttonSRTName)
-        setTheory()
-        sliderTimeFactor = folderVelocity.add(settings, sliderTimeFactorName, 0.0, 200.0).onChange(function (newTimeFactorPercent) {
-          setTimeFactor(newTimeFactorPercent / 100)
-        })
-        sliderExperimentVelocity = folderVelocity.add(settings, sliderExperimentVelocityName, -99.9995, 99.9995).onChange(function (newExperimentVelocityPercent) {
-          setExperimentVelocity(newExperimentVelocityPercent / 100)
-        })
-
-        // folder1.open()
-
+        const buttonShowSecondTetrahedron = panel.add(settings, buttonShowSecondTetrahedronName).onChange(toggleShowSecondTetrahedron)
       }
 
-      function setTheory(newTheoryModel = null) {
-        if (newTheoryModel) theoryModel = newTheoryModel
-        switch (theoryModel) {
-          case theoryModel_enum_FrQFT:
-            //%! headline.innerText = 'Fraktale Quanten-Fluss-Theorie (FrQFT) / Medium Theorie'
-            buttonFrQFT.disable()
-            buttonSRT.enable()
-            break
-          case theoryModel_enum_SRT:
-            //%! headline.innerText = 'Spezielle Relativitätstheorie (SRT)'
-            buttonFrQFT.enable()
-            buttonSRT.disable()
-            break
-          default:
-            break
+      function toggleShowSecondTetrahedron() {
+        showSecondTetrahedron = !showSecondTetrahedron
+        if (showSecondTetrahedron) {
+          merkaba2Mesh.visible = true
+          merkaba2EdgesLine.visible = true
+        } else {
+          merkaba2Mesh.visible = false
+          merkaba2EdgesLine.visible = false
         }
-      }
-
-      function setTimeFactor(newTimeFactor) {
-        timeFactor = newTimeFactor
-        timeReset = render.clock.getElapsedTime()
-      }
-
-      function setExperimentVelocity(newExperimentVelocity) {
-        experimentVelocity = newExperimentVelocity
-
-        // Lorentz contraction
-        const c0Pow2 = 1
-        inversGammaZ = Math.sqrt(1 - Math.pow(experimentVelocity, 2) / c0Pow2)
-
-        calcArms()
-
-        experimentGroup.scale.set(1.0, 1.0, inversGammaZ)
-
-        timeReset = render.clock.getElapsedTime()
       }
 
 
@@ -988,7 +928,6 @@
 
       const experimentGroup = new THREE.Group()
       render.scene.add(experimentGroup)
-      setExperimentVelocity(experimentVelocity)
 
       /*--------------------
       Dimension Bowls
@@ -1068,7 +1007,6 @@
       Panel
       --------------------*/
       createPanel()
-      setTheory()
 
 
       /*--------------------
@@ -1121,8 +1059,8 @@
       merkabaGeometry.setAttribute('position', new THREE.BufferAttribute(vertices, 3))
       const merkaba1Material = new THREE.MeshBasicMaterial({
         // color: 0xff0000,
-        // color: 0xffa0a0,
-        color: 0xff0000,
+        color: 0xff5050,
+        // color: 0xff0000,
         // opacity: 0.3,
         // transparent: true,
         // emissive: 0x000000,
@@ -1135,8 +1073,8 @@
       })
       const merkaba2Material = new THREE.MeshBasicMaterial({
         // color: 0xff0000,
-        // color: 0xa0a0ff,
-        color: 0x0000ff,
+        color: 0x5050ff,
+        // color: 0x0000ff,
         // opacity: 0.3,
         // transparent: true,
         // emissive: 0x000000,
@@ -1152,7 +1090,8 @@
       
       const merkabaEdges = new THREE.EdgesGeometry(merkabaGeometry)
       const merkabaEdgesMaterial = new THREE.LineBasicMaterial({
-        color: 0x888888,
+        // color: 0x888888,
+        color: 0x505050,
         linewidth: 1.0,
         linecap: 'round', //ignored by WebGLRenderer
         linejoin: 'round', //ignored by WebGLRenderer
