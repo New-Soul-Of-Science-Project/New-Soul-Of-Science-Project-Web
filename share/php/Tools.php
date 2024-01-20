@@ -1747,7 +1747,7 @@
         echo $offset.'  <span style="color: #'.(To_f_Color( '*Conclusion')).'">'."\n";
         break;
       case 'contentlist':
-        echo $offset.'<table class="tools-class-contentlist-table" border="0"> <colgroup> <col width="22"> <col width="300"> <col width="16"> <col width="362"> </colgroup>'."\n";
+        echo $offset.'<table class="tools-class-contentlist-table tools-class-text" border="0"> <colgroup> <col width="22"> <col width="300"> <col width="16"> <col width="362"> </colgroup>'."\n";
         break;
       case 'quote':
         //%!echo $offset.'<p style="margin-left: 30px; margin-right: 100px;">'."\n";
