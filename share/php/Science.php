@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 10.11.2023, 17:00h
+  // #: Stand: 21.01.2024, 19:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20240121:  !:  "$Sc_g_Text_replace_preg_ary": Add entry "\lm{}" as short of "\latexmath{}".
   //           20231110:  !:  "$Sc_g_Text_replace_preg_ary": Change entry "_{}" to "__{}".
   //           20231109:  !:  "$Sc_g_Text_replace_preg_ary": Change entry "^{}" to "^^{}".
   //           20231030:  +:  "MathJax":  Add Macro "i" for "\i" generates a non italic "i" in formulas for the imaginary unit.
@@ -537,6 +538,14 @@
                                       'latexmath' =>     // #: It is not working this way, because latex includes '{' and '}' as well. A method where only searching for '\latexmath' and then looking for the Balance of an array of '[]' and '{}' would be better and can handle recursion.
                                         array( type => 'latexcommand',
                                                search => '\\latexmath',
+                                               param_dim => 1,
+                                               param_optional_max => 2,
+                                               callback_f => 'Sc_f_replace_callback__latexcommand__latexmath',
+                                               replace_internal => false,     // #!: XXX This is important for velocity and if "\\footnote" is hidden it shall not be counted and registered!
+                                             ),
+                                      'lm' =>     // #: It is not working this way, because latex includes '{' and '}' as well. A method where only searching for '\latexmath' and then looking for the Balance of an array of '[]' and '{}' would be better and can handle recursion.
+                                        array( type => 'latexcommand',
+                                               search => '\\lm',
                                                param_dim => 1,
                                                param_optional_max => 2,
                                                callback_f => 'Sc_f_replace_callback__latexcommand__latexmath',
