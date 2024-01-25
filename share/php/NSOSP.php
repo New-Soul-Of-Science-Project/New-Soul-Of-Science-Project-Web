@@ -3220,7 +3220,7 @@
     echo '			<div id="navigation" class="navigation main-shadow-0-5-30 main-layer-2">'."\n";
     echo '        <br>'."\n";
     echo '        <br>'."\n";
-    echo '        <div id="NavigationMenu">'."\n";
+    echo '        <div id="NavigationMenu" class="tools-class-text">'."\n";
     echo '          <h3 align="left" style="padding-top: 16px; margin-bottom: 16px;"><a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_rel]).'">'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_short])).'</a></h3>'."\n";
     To_f_headline_make();
     echo '        </div>'."\n";
