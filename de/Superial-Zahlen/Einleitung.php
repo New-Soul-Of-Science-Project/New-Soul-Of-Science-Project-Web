@@ -44,6 +44,9 @@
                     '• Das Pascal-Sierpinski-Dreieck ist eine Geometrie, in der Primzahlen eine außergewöhnliche Rolle spielen.\\footnote{Vgl. \\cite{Plichta:GottesGeheimeFormel:1995}, S. 263ff., 271ff. 306ff.. \\\\ Internet: \\\\ Vgl. \\jump[https://de.wikipedia.org/w/index.php?title=Sierpinski-Dreieck&oldid=179105092#Zusammenhang_mit_dem_Pascalschen_Dreieck]{}{Wikipedia, Sierpinski-Dreieck, Zusammenhang mit dem Pascalschen Dreieck}.}',
                     ))),
                       
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielrechnungAbleitungMit-s-2',
+                Title => 'Entwurf des neuen Beginns der Einleitung …',
+                TitleVis => 'Entwurf des neuen Beginns der Einleitung:', ParagraphList => array(
                   array( 'text', array( text => array(
                     'In der Geometrie stoßen wir schnell auf ein fundamentales Problem.'."\n".
                     'Denn wollen beispielsweise eine Linie konstruieren und berechnen, so wird oft leicht dahin gesagt:'."\n".
@@ -95,11 +98,27 @@
                       'So fahren wir fort und legen jeweils zwischen zwei benachbarte Punkte einen weiteren'."\n".
                     'in die Mitte.'."\n".
                     'Hierdurch wird das Gewebe zwischen unseren Ausgangspunkten immer dichter gewebt und'."\n".
-                    'wir spannen ein Netz von Punkten auf, wodurch wir eine Strecke erhalten.'."\n".
+                    'wir spannen ein Netz von Punkten auf, wodurch wir immer mehr Punkte auf einer Strecke erhalten.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Selbstähnlichkeit} \\\\'."\n".
                     'Weil wir immer wieder das gleiche tun, ergibt sich eine fraktale, also selbstähnliche, Netzstruktur.'."\n",
+                      'Die Anzahl \\lm{ n }, die Dichte \\lm{ \rho } und der Abstand \\lm{ d } der Punkte auf Strecke berechnen sich mit der Fraktalebene \\latexmath{ x } zu:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EinEntw', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n  =  2^{x} + 1  }'),
+                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{x} }  =  2^{-x}  }'),
+                      array( display => 'on',  latex => '{  \rho  =  2^{x}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
                       'Nun können wir zwei solcher Strecken in der Richtung der Ausgangspunkte so aneinander'."\n".
                     'legen, dass der Endpunkt der ersten Strecke auf dem Anfangspunkt der zweiten liegt.'."\n".
                     'Nehmen wir diese doppelte Strecke und skalieren sie probehalber zwischen die erste Strecke,'."\n".
@@ -142,6 +161,14 @@
                       'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EinEntw', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n  =  2^{\omega} + 1  }'),
+                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{\omega} }  =  2^{-\omega}  }'),
+                      array( display => 'on',  latex => '{  \rho  =  2^{\omega}  }'),
+                    ))),
+                  array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -162,8 +189,31 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
+                'Irrationale algebraische Zahlen, wie die zweite Wurzel aus Zwei – \\lm{ \sqrt{2} }', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EinEntw', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n  =  2^{ \frac{ 1 }{ 2 } } + 1  }'),
+                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{ \frac{ 1 }{ 2 } } }  =  2^{ -\frac{ 1 }{ 2 } }   }'),
+                      array( display => 'on',  latex => '{  \rho  =  2^{ \frac{ 1 }{ 2 } }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                                           
                 'XXX', subline =>
                   '')),
+                    ))),
+
                   array( 'text', array( text => array(
                     'Wie wir sehen werden erhalten wir mit den hier entwickelten Superial-Zahlen etwas ganz besonderes:'."\n".
                     'Formal gesprochen sind sie eine abelsche Gruppe\\footnote{\\const{NSOSP_g_footnote_text_AbelscheGruppe}} und'."\n".
