@@ -13,15 +13,130 @@
 	
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
-                  array( 'notice', array( Display => 'showContent', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Seitenstruktur}',
-                    '• Als erstes feststellen, dass Produkte von \\latexmath{ s } mit Brüchen unendlich vieler Primzahlen endlicher Potenzen in Zähler und Nenner ganze Zahlen sind und erst dann die Frage stellen, ob diese reellen Anteilen algebraischer Zahlen, wie \\latexmath{ \sqrt{ 2 } }, entsprechen.',
+                    '• Als erstes feststellen, dass Produkte von \\lm{ \s } mit Brüchen unendlich vieler Primzahlen endlicher Potenzen in Zähler und Nenner ganze Zahlen sind und erst dann die Frage stellen, ob diese reellen Anteilen algebraischer Zahlen, wie \\lm{ \sqrt{ 2 } }, entsprechen.',
                     '\\bold{Fragen}',
-                    '• Falls die algebraischen reellen Zahlen Faktoren von \\latexmath{ s } sind, die ganze Zahlen ergeben:',
+                    '• Falls die algebraischen reellen Zahlen Faktoren von \\lm{ \s } sind, die ganze Zahlen ergeben:',
                     '– Werden diese dann beim Zählen der ganzen Superial-Zahlen mitgezählt oder nur die rationalen Koeffizienten?',
-                    '– Anders gefragt: gibt es dann immer noch \\latexmath{ \frac{ s }{ 2 \cdot \omega } } rationale Zahlen im Intervall zwischen Null und ausschließlich Eins, oder müssen wir das korrigieren?',
+                    '– Anders gefragt: gibt es dann immer noch \\lm{ \frac{ \s }{ 2 \cdot \omega } } rationale Zahlen im Intervall zwischen Null und ausschließlich Eins, oder müssen wir das korrigieren?',
                     ))),
                       
+                  array( 'text', array( text => array(
+                    'Nachdem wir in der \\jump{OM:SupNum:Einleitung}{Einleitung} und in der \\jump{OM:SupNum:Formale-Entwicklung}{formalen Entwicklung} geklärt haben,'."\n".
+                    'dass ein Produkt unserer superialen Basis \\lm{ \s } mit jeder endlichen rationalen Zahl\\footnote{\\const{SupNum_g_footnote_text_RationaleZahl}} \\lm{ q } eine \\jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{unendliche natürliche Zahl} ist;'."\n".
+                    'und im Besonderen eine natürliche Superial-Zahl:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} *)  *[  q \cdot \s  \in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} *)  *[  q \cdot \s  \in  \mathbb{S}_{N}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da stellt sich hier die Frage, ob auch bestimmte irrationale Zahlen diese Eigenschaft erfüllen.'."\n".
+                    'Und ich vermute, dass dies für die Realanteile der algebraischen Zahlen\\footnote{\\const{SupNum_g_footnote_text_AlgebraischeZahl}} \\lm{ \mathbb{A}_{R} } gilt.'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{R} *)  *[  a \cdot \s  ?\in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{R} *)  *[  a \cdot \s  ?\in  \mathbb{S}_{N}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dies wäre schon etwas sehr besonderes.'."\n",
+                      'Hier ist zu bemerken, dass algebraische Zahlen grundsätzlich komplexe Zahlen\\color{*Bearb}{(Verweis)}, also Zahlen auf der Gaußschen Zahlenebene mit imaginärem Anteil, sein können.'."\n".
+                    'Deshalb habe ich sie hier auf ihren realen Anteil begrenzt.'."\n",
+                      'Interessanterweise sind die algebraischen Zahlen, genau wie die rationalen Zahlen, abzählbar.\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.}'."\n".
+                    'Die realen Anteile der algebraischen Zahlen müssen demnach also Anteile des Flächenprodukts von \\lm{ \s } sein.'."\n".
+                    'Dies ist wiederum nur möglich, wenn die realen Anteile der algebraischen Zahlen durch Brüche unendlicher ganzer Zahlen dargestellt werden können.'."\n".
+                    'Hier beginnt nun die Crux und hier wird es nun sehr spannend.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX', text =>
+                      
+                'Beweis, dass die Wurzel aus Zwei \\lm{ \sqrt{2} } keine rationale Zahl ist', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sqrt{2}  =  \pm 2^{\frac{ 1 }{ 2 }}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *| \sqrt{2} |*  =  2^{\frac{ 1 }{ 2 }}  }'),
+                      array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land b \in \mathbb{N}^{+} *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ a }{ b }  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \exists a \in \mathbb{N} \land b \in \mathbb{N}^{+} *)  *[  \exists *( a \perp b *)  *]  }'),
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  \frac{ a }{ b }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2  =  \frac{ a^{2} }{ b^{2} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2 \cdot b^{2}  =  a^{2}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  a^{2}  =  gerade  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a  =  gerade  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  2 \mid a  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  4 \mid a^{2}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  2 \mid b^{2}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  2 \mid b  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  4 \mid b^{2}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  6 \mid a^{2}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \lnot *( a \perp b *)  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \lnot *( \frac{ a }{ 2 } \perp \frac{ b }{ 2 } *)  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \lnot *( \frac{ a }{ 4 } \perp \frac{ b }{ 4 } *)  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  \lnot *( \frac{ a }{ 2^{x} } \perp \frac{ b }{ 2^{x} } *)  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a, x \in \mathbb{N} *) *( \forall b \in \mathbb{N}^{+} *)  *[  \nexists *( \frac{ a }{ 2^{x} } \perp \frac{ b }{ 2^{x} } *)  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists a \in \mathbb{N} \land b \in \mathbb{N}^{+} *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ a }{ b }  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'So verstanden und allgemeiner ausgedrückt ergibt sich die Struktur der Problematik wie folgt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{N}_{\infty} *) *( \forall n \in \mathbb{N} *) *( n < x *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{x + \frac{ 1 }{ 2 }} }{ 2^{x} }  *]  }'),
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\omega + \frac{ 1 }{ 2 }} }{ 2^{\omega} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\omega} \cdot 2^{\frac{ 1 }{ 2 }} }{ 2^{\omega} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hier können wir nun beliebig endlich oft – und damit potenziell endlos – die Zwei im Bruch kürzen.'."\n",
+                      'Im Zähler hilft uns dies aber nicht wirklich weiter, da er in einen Anteil zerlegt werden kann,'."\n".
+                    'der dem Nenner entspricht und der übrige Anteil ist genau das gleich Problem, wofür wir eine Lösung suchen.'."\n",
+                      'Wir können aber sehen, dass der Nenner des Bruchs mit unserer superialen Basis multipliziert'."\n".
+                    'tatsächlich eine ganze unendlich große Zahl ergibt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ 1 }{ 2^{\omega} } \cdot \s  \in  \mathbb{S}_{N}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Eine zunächst unmöglich erscheinende Frage, die aber von Relevanz sein könnte, kommt mir:'."\n".
+                    'Könnte es sein, dass der Zähler ansich schon, wie der Nenner, eine ganze Zahl ist?'."\n",
+                      'Ich komme darauf, weil uns der obige Widerspruchsbeweis einen Hinweis darauf gibt,'."\n".
+                    'dass die Darstellung der Wurzel aus Zwei nur dann möglich ist, wenn beliebig endlich oft'."\n".
+                    '– und damit potenziell endlos – gekürzt werden kann.'."\n".
+                    'Die Lösung könnte also sein, dass eine aktual unendlich große natürliche Potenz von Zwei plus oder minus einer rationalen Zahl'."\n".
+                    'im Exponenten eine ganze unendlich große Zahl ergibt, anders als das bei endlichen rationalen Exponenten der Fall ist.'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2^{\omega + \frac{ 1 }{ 2 }}  ?\in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ 2^{\omega} \cdot 2^{\frac{ 1 }{ 2 }} }{ 2^{\omega} } \cdot \s  ?\in  \mathbb{S}_{N}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2  =  \frac{ 2^{2 \cdot \omega} \cdot 2^{2 \cdot \frac{ 1 }{ 2 }} }{ 2^{2 \cdot \omega} }  }'),
+                    ))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
@@ -53,8 +168,8 @@
                 'Überrationalitätsvermutung', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die Überrationalitätsvermutung geht davon aus, dass sich die Koordinaten (aus der Menge \\latexmath{ \mathbb{A}_R }) der algebraischen Zahlen\\color{*Bearb}{(Verweis)} immer durch rationale Zahlen'."\n".
-                    'aus der Menge \\latexmath{ \mathbb{A} } oder durch einen \\italic{überrationalen Bruch} von unendlich großen Primzahlenprodukten endlicher Primzahlen in Nenner und Zähler'."\n".
+                    'Die Überrationalitätsvermutung geht davon aus, dass sich die Koordinaten (aus der Menge \\latexmath{ \mathbb{A}_R }) der algebraischen Zahlen immer durch rationale Zahlen'."\n".
+                    'aus der Menge \\latexmath{ \mathbb{A} } oder durch einen \\italic{überrationalen Bruch} von unendlich großen Primzahlprodukten endlicher Primzahlen in Nenner und Zähler'."\n".
                     'ausdrücken lassen.'."\n".
                     'Die Wurzel aus Zwei \\latexmath{ \sqrt{2} } wäre demnach Beispielsweise auch ein überrationaler Bruch:'."\n".
                     ''))),
@@ -64,7 +179,7 @@
                       'Angenommen \\latexmath{ \sqrt{2} } sei ein Beispiel eines überrationalen Bruchs:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sqrt{2}  ?=  \frac{ a }{ b }  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -74,8 +189,8 @@
                       'wären damit teilerfremd\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Teilerfremdheit:2022}.}\\footnote[*Entwick]{\\color{*Entwick}{Die Teilerfremdheit hat eine Verbindung zur Riemannschen Zeta-Funktion: \\\\ Internet: \\\\ Vgl. \\cite{wiki:Teilerfremdheit:2022}, Eigenschaften.}}:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a  \perp  b  }'),
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a \perp b  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Diese Brüche können als die Menge \\latexmath{ \mathbb{Qr}^+ } mit folgender Formel minimalistisch beschrieben werden,'."\n".
@@ -85,7 +200,7 @@
                       'Auch müssen sie die Bedingung erfüllen, dass sie endlich groß sind:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{Qr}^{+}  :=  *\{  x  *|*  *( \exists x *) *( \exists n \in \mathbb{N} *) *( x < n *)  \\\ \qquad\qquad\qquad\quad\; *[  x  =  \prod_{ ( \forall p_{i} \in \mathbb{P} ) ( i = ord(p, \mathbb{P}) ) ( z_{i} \in \mathbb{Z} ) } \!\!\! p_{i}^{z_{i}}  *]  *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -93,7 +208,7 @@
                       'Daher benötigen wir den Bruch mit Vorzeichen, um die Menge \\latexmath{ \mathbb{Qr} } der überrationalen Zahlen zu definieren:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{Qr}  :=  *\{  x  *|*  *( q^{+} \in \mathbb{Qr}^{+} *) *( \forall v \in \{ -1, 0, 1 \} *)  \\\ \qquad\qquad\qquad\qquad\qquad\quad *[  x  =  v \cdot q^{+}  *]  *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -113,7 +228,7 @@
                     'Das bedeutet, dass wir unser Beispiel nun so in seiner Beschreibung verfeinern können:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sqrt{2}  ?\in  \mathbb{Qr}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -192,7 +307,7 @@
                     'Alte Inder:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.ÜV.U', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 577 }{ 408 }  =  \sqrt{2}  \approx  \frac{ 577 }{ 2^{3} \cdot 3 \cdot 17 }  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -209,7 +324,7 @@
                     'Babylonier:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.ÜV.U', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 30547 }{ 21600 }  =  \frac{ 11 \cdot 2777 }{ 2^{5} \cdot 3^{3} \cdot 5^{2} }  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -237,7 +352,7 @@
                     'XXX'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.ÜV.U', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sqrt{2}  \approx  1,414213562373095048801688724209698 \\\ \qquad\qquad\;\;\, 078569671875376948073176679737990 \\\ \qquad\qquad\;\;\, 73247846210703885038753432764157\!\dots  }',
                                             footnote => '\\color{*Bearb}{Vgl. \\jump[https://oeis.org/A002193/constant]{}{OEIS: A002193 as a constant (usually base 10)}}'),
                       array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 1 }{ 1 }  }'),
