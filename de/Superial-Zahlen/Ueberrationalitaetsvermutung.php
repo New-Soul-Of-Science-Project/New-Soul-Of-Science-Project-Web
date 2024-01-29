@@ -74,17 +74,22 @@
                       array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  \frac{ a }{ b }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  2  =  \frac{ a^{2} }{ b^{2} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  2 \cdot b^{2}  =  a^{2}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  a^{2}  =  gerade  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a  =  gerade  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  2 \mid a  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  4 \mid a^{2}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  2 \mid a^{2}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2 \mid a  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  4 \mid a^{2}  }'),
+                      array( display => 'on',  latex => '{  2 \cdot b^{2}  =  a^{2}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  2 \mid b^{2}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  2 \mid b  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  4 \mid b^{2}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  6 \mid a^{2}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2 \mid b  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  4 \mid b^{2}  }'),
+                      array( display => 'on',  latex => '{  2 \cdot b^{2}  =  a^{2}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  8 \mid a^{2}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  8 \mid a  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  16 \mid a^{2}  }'),
+                      array( display => 'on',  latex => '{  \vdots  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \lnot *( a \perp b *)  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \lnot *( \frac{ a }{ 2 } \perp \frac{ b }{ 2 } *)  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \lnot *( \frac{ a }{ 4 } \perp \frac{ b }{ 4 } *)  }'),
+                      array( display => 'on',  latex => '{  \vdots  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  \lnot *( \frac{ a }{ 2^{x} } \perp \frac{ b }{ 2^{x} } *)  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall a, x \in \mathbb{N} *) *( \forall b \in \mathbb{N}^{+} *)  *[  \nexists *( \frac{ a }{ 2^{x} } \perp \frac{ b }{ 2^{x} } *)  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \nexists a \in \mathbb{N} \land b \in \mathbb{N}^{+} *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ a }{ b }  *]  }'),
@@ -113,29 +118,32 @@
                     'Eine zunächst unmöglich erscheinende Frage, die aber von Relevanz sein könnte, kommt mir:'."\n".
                     'Könnte es sein, dass der Zähler ansich schon, wie der Nenner, eine ganze Zahl ist?'."\n",
                       'Ich komme darauf, weil uns der obige Widerspruchsbeweis einen Hinweis darauf gibt,'."\n".
-                    'dass die Darstellung der Wurzel aus Zwei nur dann möglich ist, wenn beliebig endlich oft'."\n".
+                    'dass die Darstellung der Wurzel aus Zwei mit einem Bruch aus zwei ganzen Zahlen nur dann möglich ist, wenn beliebig endlich oft'."\n".
                     '– und damit potenziell endlos – gekürzt werden kann.'."\n".
-                    'Die Lösung könnte also sein, dass eine aktual unendlich große natürliche Potenz von Zwei plus oder minus einer rationalen Zahl'."\n".
-                    'im Exponenten eine ganze unendlich große Zahl ergibt, anders als das bei endlichen rationalen Exponenten der Fall ist.'."\n".
+                    'Die Lösung könnte also sein, dass eine aktual unendlich große natürliche Potenz von Zwei plus einer rationalen Zahl'."\n".
+                    'im Exponenten eine ganze unendlich große Zahl ergibt, anders als das bei endlichen Exponenten, die rationale Anteile haben, der Fall ist.'."\n",
+                      'Der Widerspruchsbeweis enthält eine Vorschrift, wie die Lösung aussieht.'."\n".
+                    'Der so konstruierte Nenner des Bruchs muss eine unendlich große ganze Zahl, wie der Beweis zeigt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{\omega + \frac{ 1 }{ 2 }}  ?\in  \mathbb{N}_{\infty}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ 2^{\omega} \cdot 2^{\frac{ 1 }{ 2 }} }{ 2^{\omega} } \cdot \s  ?\in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  2^{\omega + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\omega} \cdot 2^{\frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ 2^{\omega} \cdot 2^{\frac{ 1 }{ 2 }} }{ 2^{\omega} } \cdot \s  \in  \mathbb{S}_{N}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Mit anderen Worten, der Faktor \\lm{ 2^{\omega} } vor \\lm{ 2^{\frac{ 1 }{ 2 }} } macht aus der Wurzel aus Zwei'."\n".
+                    'eine ganze unendlich große Zahl.'."\n",
+                      'Darüber hinaus müssen der Nenner \\lm{ b } und der Zähler \\lm{ a } die im Beweis abgeleitete Bedingung erfüllen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2  =  \frac{ 2^{2 \cdot \omega} \cdot 2^{2 \cdot \frac{ 1 }{ 2 }} }{ 2^{2 \cdot \omega} }  }'),
+                      array( display => 'on',  latex => '{  a  =  2^{\omega + \frac{ 1 }{ 2 }}  }'),
+                      array( display => 'on',  latex => '{  b  =  2^{\omega}  }'),
+                      array( display => 'on',  latex => '{  2 \cdot b^{2}  =  a^{2}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  2 \cdot *( 2^{\omega} *)^{2}  =  *( 2^{\omega + \frac{ 1 }{ 2 }} *)^{2}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2 \cdot 2^{2 \omega}  =  2^{2 \omega + 2 \frac{ 1 }{ 2 }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{2 \omega + 1}  =  2^{2 \omega + 1}  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n".
