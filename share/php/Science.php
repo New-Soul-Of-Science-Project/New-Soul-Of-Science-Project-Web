@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 21.01.2024, 19:00h
+  // #: Stand: 29.01.2024, 22:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20240129:  +:  "$Sc_g_equation_replace_ary":  '  :\in  ' -> '\;\;\;:\in\;\;\;' is new.
   //           20240121:  !:  "$Sc_g_Text_replace_preg_ary": Add entry "\lm{}" as short of "\latexmath{}".
   //           20231110:  !:  "$Sc_g_Text_replace_preg_ary": Change entry "_{}" to "__{}".
   //           20231109:  !:  "$Sc_g_Text_replace_preg_ary": Change entry "^{}" to "^^{}".
@@ -656,6 +657,7 @@
                                     array( '?=', '\overset{?}{=}'),
                                     array( '  \mapsto  ', '\;\;\;\mapsto\;\;\;'),
                                     array( '  \in  ', '\;\;\;\in\;\;\;'),
+                                    array( '  :\in  ', '\;\;\;:\in\;\;\;'),
                                     array( '  ?\in  ', '\;\;\;\overset{?}{\in}\;\;\;'),
                                     array( '  \notin  ', '\;\;\;\notin\;\;\;'),
                                     array( '  \subset  ', '\;\;\;\subset\;\;\;'),

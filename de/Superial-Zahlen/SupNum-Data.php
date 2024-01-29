@@ -213,7 +213,7 @@
       titel => 'Primzahlprodukt-Vermutung (Beweis) - Die Superial-Zahlen (SN) - Deutsch',
       description => '\\name[undertitle]{OM:SupNum:Primzahlprodukt-Vermutung}. — \\name[description]{OM:SupNum:Primzahlprodukt-Vermutung}.',
       keywords => '',
-      text_titel_h1 => 'Primzahlprodukt-Vermutung  \\color{*TitleAdd}{\\small{(Beweis)}}',
+      text_titel_h1 => 'Primzahlprodukt-Vermutung \\color{*TitleAdd}{\\small{(Beweis)}}',
       text_titel_short => 'Primzahlprodukt-Vermutung',
       text_undertitel_h2 => 'Ist das Produkt aller endlichen Primzahlen, also die Primfakultät über alle Primzahlen in der Menge der natürlichen Zahlen, der Anzahl der natürlichen Zahlen gleich?',
       text_titel_discr_h3 => 'Eine Vorstellung der Vermutung und ihr Beweis',
@@ -247,13 +247,13 @@
     'OM:SupNum:Ueberrationalitaetsvermutung' => array(
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Ueberrationalitaetsvermutung.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Ueberrationalitaetsvermutung.php',
-      titel => 'Überrationalitätsvermutung - Die Superial-Zahlen (SN) - Deutsch',
+      titel => 'Überrationalitätsvermutung (Beweis) - Die Superial-Zahlen (SN) - Deutsch',
       description => '\\name[undertitle]{OM:SupNum:Primzahlprodukt-Vermutung}. — \\name[description]{OM:SupNum:Primzahlprodukt-Vermutung}.',
       keywords => '',
-      text_titel_h1 => 'Überrationalitätsvermutung',
+      text_titel_h1 => 'Überrationalitätsvermutung \\color{*TitleAdd}{\\small{(Beweis)}}',
       text_titel_short => 'Überrationalitätsvermutung',
-      text_undertitel_h2 => 'Lässt sich die Wurzel aus Zwei als Bruch mit unendlich vielen endlichen Primzahlen endlicher Potenz ausdrücken?',
-      text_titel_discr_h3 => 'Wenn ja, so gilt dies vermutlich für die Koordinaten aller irrationalen algebraischen Zahlen',
+      text_undertitel_h2 => 'Lässt sich die Wurzel aus Zwei als Bruch mit aktual unendlich großen Quotienten ausdrücken?',
+      text_titel_discr_h3 => 'Die Antwort ist ja. Und dies gilt generell für die Koordinaten aller algebraischen Zahlen, von denen viele irrational sind und Wurzeln entsprechen',
       jump_ary => array(
         'OM:SupNum:Ueberrationalitaetsvermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
