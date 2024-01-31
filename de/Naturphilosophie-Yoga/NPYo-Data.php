@@ -22,7 +22,7 @@
       header_links_marginLeft => '254px',
       copy_right =>
         'Naturphilosophie-Yoga (NaPhil-Yoga) \\\\'."\n".
-        '© 2014–2023 by \\\\'."\n".
+        '© 2014–2024 by \\\\'."\n".
         'Wolfgang Huß und \\\\'."\n".
         'Media Line Digital e.K. \\\\'."\n".
         'is licensed under \\\\'."\n".
