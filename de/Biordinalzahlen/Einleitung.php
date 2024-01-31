@@ -46,7 +46,7 @@
                     'Meine Intuition sagt mir, dass diese Asymmetrie gemeinsam mit der Primzahlprodukt-Vermutung in der Lage sein könnte'."\n".
                     'entscheidendes zur Klärung der Riemannschen Vermutung\\footnote{\\const{SupNum_g_footnote_text_RiemannschenVermutung}} beizutragen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:Ordinalzahlen', text =>
                       
                 'Ordinalzahlen', subline =>
                   '')),

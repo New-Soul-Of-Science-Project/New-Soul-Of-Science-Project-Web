@@ -56,6 +56,7 @@
       jump_ary => array(
         'OM:BiOrd:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
+          'OM:BiOrd:Einleitung:Vortext:Ordinalzahlen' => array( headline_text => 'Ordinalzahlen'/*, headline_text_short => 'XXX'*/),
           'OM:BiOrd:Einleitung:Vortext:Equ-n-gleich-Menge-Null-bis-n-minus-Eins' => array( headline_text => 'BO.Ein.5'),
           'OM:BiOrd:Einleitung:Vortext:Equ-n-plus-Eins' => array( headline_text => 'BO.Ein.6'),
           'OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null' => array( headline_text => 'BO.Ein.8'),

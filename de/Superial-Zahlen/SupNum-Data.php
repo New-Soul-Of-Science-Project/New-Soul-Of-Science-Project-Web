@@ -258,6 +258,7 @@
         'OM:SupNum:Ueberrationalitaetsvermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX' => array( headline_text => 'XXX'/* , headline_text_short => 'XXX'*/),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz' => array( headline_text => 'SN.ÜV.50'),
         'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung' => array( headline_text => 'Untersuchung'/* , headline_text_short => 'XXX'*/),
       ),
     ),

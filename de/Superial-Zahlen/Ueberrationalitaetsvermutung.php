@@ -34,8 +34,8 @@
                       array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} *)  *[  q \cdot \s  \in  \mathbb{S}_{N}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Nun stellt sich die Frage, ob auch bestimmte irrationale Zahlen diese Eigenschaft erfüllen.'."\n".
-                    'Und ich vermute, dass dies für die Realanteile der algebraischen Zahlen\\footnote{\\const{SupNum_g_footnote_text_AlgebraischeZahl}} \\lm{ \mathbb{A}_{R} } gilt.'."\n".
+                    'Stellt sich nun die Frage, ob auch bestimmte irrationale Zahlen diese Eigenschaft erfüllen.'."\n",
+                      'Ich vermute, dass dies für die Realanteile der algebraischen Zahlen\\footnote{\\const{SupNum_g_footnote_text_AlgebraischeZahl}} \\lm{ \mathbb{A}_{R} } gilt.'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -44,26 +44,30 @@
                     ))),
                   array( 'text', array( text => array(
                     'Dies wäre schon etwas sehr besonderes.'."\n",
-                      'Hier ist zu bemerken, dass algebraische Zahlen grundsätzlich komplexe Zahlen\\footnote{\\const{SupNum_g_footnote_text_KomplexeZahl}}, also Zahlen auf der Gaußschen Zahlenebene mit imaginärem Anteil, sein können.'."\n".
-                    'Deshalb habe ich sie hier auf ihren realen Anteil begrenzt.'."\n",
+                      'Hier ist zu bemerken, dass algebraische Zahlen grundsätzlich komplexe Zahlen\\footnote{\\const{SupNum_g_footnote_text_KomplexeZahl}},'."\n".
+                    'also Zahlen auf der Gaußschen Zahlenebene mit imaginärem Anteil, sein können.'."\n".
+                    'Deshalb habe ich sie hier auf ihre realen Anteile – oder auf die Faktoren beziehungsweise Koeffizienten ihrer Koordinaten – begrenzt.'."\n",
+                      'Die realen Koeffizienten der algebraischen Zahlen müssen demnach also Anteile des Primzahl-Flächenprodukts von \\lm{ \s } sein.'."\n".
+                    'Oder sie müssen multipliziert mit Anteilen des Primzahl-Flächenprodukts von \\lm{ \s } ganze Zahlen ergeben.'."\n".
+                    'Beides ist allerdings nur möglich, wenn die realen Anteile der algebraischen Zahlen durch Brüche unendlicher ganzer Zahlen dargestellt werden können.'."\n".
+                    'Hier beginnt nun die Crux und hier wird es nachfolgend sehr spannend und erkenntnisreich.'."\n",
                       'Interessanterweise sind die algebraischen Zahlen, genau wie die rationalen Zahlen, abzählbar.\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.}'."\n".
-                    'Die realen Anteile der algebraischen Zahlen müssen demnach also Anteile des Flächenprodukts von \\lm{ \s } sein.'."\n".
-                    'Dies ist wiederum nur möglich, wenn die realen Anteile der algebraischen Zahlen durch Brüche unendlicher ganzer Zahlen dargestellt werden können.'."\n".
-                    'Hier beginnt nun die Crux und hier wird es nun sehr spannend.'."\n".
+                    'Dies gibt uns im Lichte der hier auch entwickelten \\jump{OM:SupNum:Ableitungen-Integrale}{Ableitungen und Integrale} mit Superial-Zahlen den Hinweis,'."\n".
+                    'dass die realen Koeffizienten der algebraischen Zahlen tatsächlich zu den Superial-Zahlen gehören.'."\n",
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX', text =>
                       
-                'Beweis, dass die Wurzel aus Zwei \\lm{ \sqrt{2} } keine rationale Zahl ist', subline =>
+                'Beweis, dass die Wurzel aus Zwei keine rationale Zahl ist', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Um in die Thematik einzusteigen und zu lernen, worum es geht und was die Eigenschaften der algebraischen Zahlen'."\n".
+                    'Um in die Thematik einzusteigen und zu lernen, worum es geht und was die Eigenschaften der Koeffizienten der algebraischen Zahlen'."\n".
                     'bezüglich ihrer Darstellung durch Brüche ganzer Zahlen sind, schauen wir uns hier einmal exemplarisch'."\n".
                     'den Widerspruchsbeweis an, der zeigt, dass die Wurzel aus Zwei \\lm{ \sqrt{2} } keine rationale Zahl ist.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Dazu stellen wir einmal fest, wie wir die Wurzel aus Zwei \\lm{ \sqrt{2} } durch eine Exponentialzahl'."\n".
+                      'Dazu stellen wir einmal fest, wie wir die Wurzel aus Zwei durch eine Potenz von \\lm{ 2 }'."\n".
                       'beschreiben können:'."\n".
                       ''))),
                   array( 'equations',
@@ -72,7 +76,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *| \sqrt{2} |*  =  2^{\frac{ 1 }{ 2 }}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Sei die Wurzel aus Zwei \\lm{ \sqrt{2} } beziehungsweise der halbe Exponent von Zwei als rationaler Bruch darstellbar:'."\n".
+                      'Sei die Wurzel aus Zwei beziehungsweise der halbe Potenz von Zwei als rationaler Bruch – aus endlichen natürlichen Zahlen – darstellbar:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -83,10 +87,10 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \exists a \in \mathbb{N} \land b \in \mathbb{N}^{+} *)  *[  \exists *( a \perp b *)  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \exists *( a \perp b  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Aus der Ausgangsbedingung ist nun äquivalent mit'."\n".
+                      'Die Ausgangsbedingung ist nun äquivalent mit'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -115,7 +119,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  4 \mid b^{2}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Dann, dass \\lm{ a^{2} } durch \\lm{ 2^{3} = 8 } und schließlich durch \\lm{ 2^{4} = 16 } teilbar sein muss:'."\n".
+                      'Dann erkennen wir weiterhin, dass \\lm{ a^{2} } durch \\lm{ 2^{3} = 8 } und schließlich durch \\lm{ 2^{4} = 16 } teilbar sein muss:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -144,30 +148,30 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall a, x \in \mathbb{N} *) *( \forall b \in \mathbb{N}^{+} *)  *[  \nexists *( \frac{ a }{ 2^{x} } \perp \frac{ b }{ 2^{x} } *)  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Dies seht im Widerspruch zu der Eingangsfeststellung, dass es für den gesuchten Bruch einen Nenner und einen Zähler geben muss, die teilerfremd sind.'."\n".
+                      'Dies seht im Widerspruch zu der Eingangsfeststellung, dass es für den gesuchten Bruch – aus endlichen natürlichen Zahlen – einen Nenner und einen Zähler geben muss, die teilerfremd sind.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Aufgrund des Widerspruchs also können wir schließen, dass es keinen rationalen Bruch mit endlichem Nenner und Zähler gibt, der die Wurzel aus Zwei darstellen kann:'."\n".
+                      'Aufgrund des Widerspruchs also können wir schließen, dass es keinen rationalen Bruch mit endlichem ganzen Nenner und Zähler gibt, der die Wurzel aus Zwei darstellen kann'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists a \in \mathbb{N} \land b \in \mathbb{N}^{+} *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ a }{ b }  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists a \in \mathbb{N} \land b \in \mathbb{N}^{+} *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ a }{ b }  *]  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Was wir zeigen wollten.'."\n",
+                      'was wir zeigen wollten.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Doch unser Beweis hilft uns glücklicherweise dabei zu verstehen, wie ein Bruch beschaffen sein muss, der die'."\n".
-                    'Wurzel aus Zwei mit ganzen Zahlen darstellen kann.'."\n".
+                    'Doch unser Beweis hilft uns glücklicherweise dabei zu verstehen, wie ein Bruch ganzer Zahlen beschaffen sein muss, der die'."\n".
+                    'Wurzel aus Zwei darstellen kann.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
                       
-                'Beweis der Überrationalitätsvermutung für die Wurzel aus Zwei \\lm{ \sqrt{2} }', subline =>
+                'Beweis der Überrationalitätsvermutung für die Wurzel aus Zwei', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'So verstanden und allgemeiner ausgedrückt ergibt sich die Struktur der Problematik wie folgt:'."\n".
+                    'So verstanden und allgemeiner ausgedrückt, ergibt sich die Struktur der Lösung wie folgt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -176,11 +180,11 @@
                   array( 'text', array( text => array(
                     'Der obige Widerspruchsbeweis erzeugt eine Lösung des Problems darüber, dass Nenner und Zähler immer wieder'."\n".
                     'durch \\lm{ 2 } teilbar sein müssen.'."\n".
-                    'Und dies entspricht der Aussage, dass die fortlaufende Teilbarkeit einer vollständigen Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
-                    'entspricht.'."\n",
-                      'Für die vollständige Induktion verwenden wir das Symbol \\lm{ \omega } mit dem ihr entsprechenden aktual'."\n".
+                    'Und dies entspricht der Aussage, dass die sich im Beweis zeigende, notwendig fortlaufende Teilbarkeit einer vollständigen Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    'der Teilbarkeit entspricht.'."\n",
+                      'Für die vollständige Induktion verwenden wir das \\jump{OM:BiOrd:Einleitung:Vortext:Ordinalzahlen}{Symbol \\lm{ \omega }} mit dem ihr entsprechenden aktual'."\n".
                     'unendlich großen Wert.'."\n".
-                    'Und dieses setzen wir nun in die vorstehende Formel ein, womit deren Bedingungen erfüllt sind:'."\n".
+                    'Und \\lm{ \omega } setzen wir nun in die vorstehende Formel ein, womit die Bedingung der fortlaufenden Teilbarkeit erfüllt ist:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -192,16 +196,17 @@
                       'Im Zähler hilft uns dies aber nicht wirklich weiter, da er, wie wir sehen, in einen Anteil zerlegt werden kann,'."\n".
                     'der dem Nenner entspricht und der übrige Faktor ist genau die Wurzel aus Zwei, die ein wesentlicher Teil unseres Problems ist, wofür wir eine Lösung suchen.'."\n",
                       'Führt das wirklich zur Lösung unseres Problems, wenn wir nicht mehr darauf bestehen, dass Nenner und Zähler endliche Zahlen sein müssen?'."\n",
-                      'Wir können nun schon einmal sehen, dass der Nenner des Bruchs alleine mit unserer superialen Basis multipliziert'."\n".
-                    'tatsächlich eine ganze unendlich große Zahl ergibt:'."\n".
+                      'Wir können nun schon einmal sehen, dass der Nenner des Bruchs tatsächlich eine unendlich große ganze Zahl ist,'."\n".
+                    'weil es sich um eine unendliche ganze Potenz einer endlichen ganzen Zahl handelt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ 1 }{ 2^{\omega} } \cdot \s  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  2^{\omega}  \in  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Eine auf den ersten Blick nicht gleich realistisch erscheinende Möglichkeit ist,'."\n".
-                    'das es ja sehr wohl sein Könnte, dass der Zähler ansich bereits so wie er ist, genau wie der Nenner, eine ganze Zahl darstellt.'."\n",
+                    'Aber ist der Zähler des Bruchs auch eine unendlich große ganze Zahl?'."\n",
+                      'Eine auf den ersten Blick nicht gleich realistisch erscheinende Möglichkeit ist,'."\n".
+                    'das es ja durchaus sein könnte, dass der Zähler ansich bereits so wie er ist, genau wie der Nenner, eine ganze Zahl darstellt.'."\n",
                       'Ich komme darauf, weil uns der obige Widerspruchsbeweis einen Hinweis darauf gibt,'."\n".
                     'dass die Darstellung der Wurzel aus Zwei mit einem Bruch aus zwei ganzen Zahlen nur dann möglich ist, wenn beliebig endlich oft'."\n".
                     '– und damit potenziell endlos – Zweien gekürzt werden können.'."\n".
@@ -210,8 +215,8 @@
                     'Denn so erhalten wir, in einem Exponenten zusammengefasst, einen unendlich großen ganzen Exponenten plus Einhalb.'."\n".
                     'Und anders als das bei endlichen Exponenten, die rationale Anteile in der Summe haben, der Fall ist, ergibt unser Exponent direkt eine ganze Zahl.'."\n",
                       'Der Widerspruchsbeweis enthält eine Vorschrift, wie die Lösung aussieht:'."\n".
-                    'Auch der so konstruierte Zähler des Bruchs muss eine unendlich große ganze Zahl sein, wie der Beweis zeigt, die beliebig endlich oft durch \\lm{ 2 } teilbar ist.'."\n".
-                    'Mit anderen Worten, der Faktor \\lm{ 2^{\omega} } vor \\lm{ 2^{\frac{ 1 }{ 2 }} } macht nach unserem Beweis aus der Wurzel aus Zwei'."\n".
+                    'Auch der so konstruierte Zähler des Bruchs muss eine unendlich große ganze Zahl sein, wie der Beweis zeigt, eben einfach schon dadurch, dass er beliebig endlich oft durch \\lm{ 2 } teilbar ist.'."\n".
+                    'Mit anderen Worten, der Faktor \\lm{ 2^{\omega} } vor \\lm{ 2^{\frac{ 1 }{ 2 }} } macht, nach unserem Beweis, aus der Wurzel aus Zwei'."\n".
                     'eine ganze unendlich große Zahl:'."\n".
                     ''))),
                   array( 'equations',
@@ -292,7 +297,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\omega + \frac{ 1 }{ x }} }{ n^{\omega} }  }'),
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\omega + \frac{ 1 }{ x }} }{ n^{\omega} }  }',
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz', label_text => '\\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz}', label_incr => true),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\omega} \cdot n^{\frac{ 1 }{ x }} }{ n^{\omega} }  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -358,34 +364,51 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  =  p_{1}^{j_{1}} \cdot p_{2}^{j_{2}} \cdot p_{3}^{j_{3}} \cdot p_{4}^{j_{4}} \cdots  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\omega}  =  p_{1}^{j_{1} \omega} \cdot p_{2}^{j_{2}\omega} \cdot p_{3}^{j_{3}\omega} \cdot p_{4}^{j_{4}\omega} \cdots  }'),
+                      array( display => 'on',  latex => '{  n  =  p_{1}^{j_{1}} \cdot p_{2}^{j_{2}} \cdot p_{3}^{j_{3}} \cdot p_{4}^{j_{4}} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\omega}  =  p_{1}^{j_{1} \omega} \cdot p_{2}^{j_{2}\omega} \cdot p_{3}^{j_{3}\omega} \cdot p_{4}^{j_{4}\omega} \cdot \cdots  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dann haben wir diese auch in unserer Formel XXX:'."\n".
+                    'Dann haben wir diese auch in unserer Formel \\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz}:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\omega + \frac{ 1 }{ x }} }{ n^{\omega} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{j_{1}} \cdot p_{2}^{j_{2}} \cdot p_{3}^{j_{3}} \cdot p_{4}^{j_{4}} \cdots *)^{\omega + \frac{ 1 }{ x }} }{ *( p_{1}^{j_{1}} \cdot p_{2}^{j_{2}} \cdot p_{3}^{j_{3}} \cdot p_{4}^{j_{4}} \cdots *)^{\omega} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{j_{1}} \cdot p_{2}^{j_{2}} \cdot p_{3}^{j_{3}} \cdot p_{4}^{j_{4}} \cdots *)^{\omega} \cdot n^{\frac{ 1 }{ x }} }{ *( p_{1}^{j_{1}} \cdot p_{2}^{j_{2}} \cdot p_{3}^{j_{3}} \cdot p_{4}^{j_{4}} \cdots *)^{\omega} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{j_{1} \omega} \cdot p_{2}^{j_{2} \omega} \cdot p_{3}^{j_{3} \omega} \cdot p_{4}^{j_{4} \omega} \cdots *) \cdot n^{\frac{ 1 }{ x }} }{ p_{1}^{j_{1} \omega} \cdot p_{2}^{j_{2} \omega} \cdot p_{3}^{j_{3} \omega} \cdot p_{4}^{j_{4} \omega} \cdots }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{j_{1}} \cdot p_{2}^{j_{2}} \cdot p_{3}^{j_{3}} \cdot p_{4}^{j_{4}} \cdot \cdots *)^{\omega + \frac{ 1 }{ x }} }{ *( p_{1}^{j_{1}} \cdot p_{2}^{j_{2}} \cdot p_{3}^{j_{3}} \cdot p_{4}^{j_{4}} \cdot \cdots *)^{\omega} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{j_{1}} \cdot p_{2}^{j_{2}} \cdot p_{3}^{j_{3}} \cdot p_{4}^{j_{4}} \cdot \cdots *)^{\omega} \cdot n^{\frac{ 1 }{ x }} }{ *( p_{1}^{j_{1}} \cdot p_{2}^{j_{2}} \cdot p_{3}^{j_{3}} \cdot p_{4}^{j_{4}} \cdot \cdots *)^{\omega} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{j_{1} \omega} \cdot p_{2}^{j_{2} \omega} \cdot p_{3}^{j_{3} \omega} \cdot p_{4}^{j_{4} \omega} \cdot \cdots *) \cdot n^{\frac{ 1 }{ x }} }{ p_{1}^{j_{1} \omega} \cdot p_{2}^{j_{2} \omega} \cdot p_{3}^{j_{3} \omega} \cdot p_{4}^{j_{4} \omega} \cdot \cdots }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dies können wir problemlos auf die unendlich großen Potenzen von Primzahlen kürzen, die alle in \\lm{ s }'."\n".
+                    'Weil \\lm{ n^{\frac{ 1 }{ x }} } bedeutet, dass aus jedem Primfaktor in \\lm{ n } die \\lm{ x }-te Wurzel gezogen wird'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }}  =  p_{1}^{j_{1} \frac{ 1 }{ x }} \cdot p_{2}^{j_{2} \frac{ 1 }{ x }} \cdot p_{3}^{j_{3} \frac{ 1 }{ x }} \cdot p_{4}^{j_{4} \frac{ 1 }{ x }} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }}  =  \prod_{ \forall [1, j_{1}]_{\mathbb{N}} } p_{1}^{\frac{ 1 }{ x }} \cdot \prod_{ \forall [1, j_{2}]_{\mathbb{N}} } p_{2}^{\frac{ 1 }{ x }} \cdot \prod_{ \forall [1, j_{3}]_{\mathbb{N}} } p_{3}^{\frac{ 1 }{ x }} \cdot \prod_{ \forall [1, j_{4}]_{\mathbb{N}} } p_{4}^{\frac{ 1 }{ x }} \cdot \cdots  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und so durch unseren um unendliche Faktoren erweiterten Bruch jeder dieser Wurzeln seinen unendlichen Faktor bekommt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{j_{1} \omega} \cdot p_{2}^{j_{2} \omega} \cdot \cdots *) \\\ \quad \cdot *( \prod_{ \forall [1, j_{1}]_{\mathbb{N}} } p_{1}^{\frac{ 1 }{ x }} \cdot \prod_{ \forall [1, j_{2}]_{\mathbb{N}} } p_{2}^{\frac{ 1 }{ x }} \cdot \cdots *) }{ p_{1}^{j_{1} \omega} \cdot p_{2}^{j_{2} \omega} \cdot p_{3}^{j_{3} \omega} \cdot p_{4}^{j_{4} \omega} \cdot \cdots }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{j_{1} \omega} \cdot \prod_{ \forall [1, j_{1}]_{\mathbb{N}} } p_{1}^{\frac{ 1 }{ x }} *) \cdot *( p_{2}^{j_{2} \omega} \cdot \prod_{ \forall [1, j_{2}]_{\mathbb{N}} } p_{2}^{\frac{ 1 }{ x }} *) \cdot \cdots }{ p_{1}^{j_{1} \omega} \cdot p_{2}^{j_{2} \omega} \cdot p_{3}^{j_{3} \omega} \cdot p_{4}^{j_{4} \omega} \cdot \cdots }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'reicht es zum Ganzmachen jeder einzelnen Wurzel einer reinen Primzahl aus, wenn für alle gleichen Primzahlen gemeinsam eine einzige unendliche Potenz der Primzahl vorhanden ist. '."\n",
+                      'Deswegen können wir problemlos bis auf die reinen unendlich großen \\lm{ \omega } Potenzen von Primzahlen kürzen, die alle in \\lm{ s }'."\n".
                     'enthalten sind:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{\omega} \cdot p_{2}^{\omega} \cdot p_{3}^{\omega} \cdot p_{4}^{\omega} \cdots *) \cdot n^{\frac{ 1 }{ x }} }{ p_{1}^{\omega} \cdot p_{2}^{\omega} \cdot p_{3}^{\omega} \cdot p_{4}^{\omega} \cdots }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdots *)^{\omega} \cdot n^{\frac{ 1 }{ x }} }{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdots *)^{\omega} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{\omega} \cdot p_{2}^{\omega} \cdot p_{3}^{\omega} \cdot p_{4}^{\omega} \cdot \cdots *) \cdot n^{\frac{ 1 }{ x }} }{ p_{1}^{\omega} \cdot p_{2}^{\omega} \cdot p_{3}^{\omega} \cdot p_{4}^{\omega} \cdot \cdots }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{\omega} \cdot n^{\frac{ 1 }{ x }} }{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{\omega} }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Der Nenner ist also, wie oben, wieder ein ganzer Teiler des Primzahl-Flächenprodukts von \\lm{ s }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ \s }{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdots *)^{\omega} }  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \frac{ \s }{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{\omega} }  \in  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'So macht es dann auch wieder Sinn, dass ein Produkt aus unserer superialen Basis \\lm{ s } mit der \\lm{ x }-ten Wurzel aus \\lm{ n }'."\n".
@@ -393,8 +416,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdots *)^{\omega} \cdot n^{\frac{ 1 }{ x }} \cdot \frac{ \s }{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdots *)^{\omega} }  :\in  \mathbb{S}_{N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdots *)^{\omega} \cdot n^{\frac{ 1 }{ x }} }{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdots *)^{\omega} } \cdot \s  :\in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{\omega} \cdot n^{\frac{ 1 }{ x }} \cdot \frac{ \s }{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{\omega} }  :\in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{\omega} \cdot n^{\frac{ 1 }{ x }} }{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{\omega} } \cdot \s  :\in  \mathbb{S}_{N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot \s  :\in  \mathbb{S}_{N}  }'),
                     ))),
                   array( 'text', array( text => array(
