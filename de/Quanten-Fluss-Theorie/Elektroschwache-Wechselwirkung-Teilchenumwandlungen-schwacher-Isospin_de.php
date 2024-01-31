@@ -192,14 +192,14 @@
                       
                   array( 'figure',
                     array( fig_file_name => 'Lepton_neutral_v09', fig_alt_description => 'Elektrisch neutrales Lepton', width => '700px', height => '292px', name => 'OM:FrQFT:ElektroschwacheWW:Elektrisch-neutrales-Lepton',
-                           text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n_{phase} = n_{wel} / n_{polwel} = 12/2 = 6}.'."\n".
+                           text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n__{phase} = n__{wel} / n__{polwel} = 12/2 = 6}.'."\n".
                                    'Die Wirkungsquanten eines Wirkungsquanten-Strings mit wechselnder Wirkungsquanten-Dichte bewegen sich auf einer doppelt geschachtelten, helixförmigen'."\n".
                                    'Spiralbahn um ein gemeinsames Rotationszentrum.'."\n".
                                    'In der gezeigten Struktur blinkt das Lepton mit der De-Broglie-Frequenz in einem Wechsel zwischen einer positiven'."\n".
                                    'und einer gleich großen negativen Polarisation und ist damit ohne elektrische Ladung.'."\n".
                                    'Aus weitem Blickwinkel erscheint das Lepton im Mittel vornehmlich elektrisch neutral, während von nahem die differenzierte'."\n".
                                    'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
-                                   'Der Normradius \\term{r_{0}} ist dabei die Bezugseinheit mit \\term{r_{0} = ℏ / (m_{lep} ⋅ c_{0})}.')),
+                                   'Der Normradius \\term{r__{0}} ist dabei die Bezugseinheit mit \\term{r__{0} = ℏ / (m__{lep} ⋅ c__{0})}.')),
                       
                   array( 'normal',
                     '\\color{*Bearb}{Einen Film erstellen …}'."\n"),
@@ -328,7 +328,7 @@
                     '\\color{*Bearb}{(• Hier auch den Myonen-Zerfall beschreiben?\\footnote[*Bearb]{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Myon:2015}, Zerfall.})}'."\n"))),
                       
                   array( 'normal',
-                    'Um die Teilchenumwandlungen darzustellen werden im Folgenden die Teilchenzusammensetzungen von Proton \\term{p^{+}} und Neutron \\term{n},'."\n".
+                    'Um die Teilchenumwandlungen darzustellen werden im Folgenden die Teilchenzusammensetzungen von Proton \\term{p^^{+}} und Neutron \\term{n},'."\n".
                     'nach den heute gültigen Erkenntnissen aus jeweils drei \\jump{OM:FrQFT:ElektroschwacheWW:Quarks}{Quarks}'."\n".
                     'bestehend, aufgelistet. Die hochgestellten Zahlen geben die \\jump{OM:FrQFT:ElektroschwacheWW:Elektromagnetische-WW}{elektrische Ladung}'."\n".
                     'an:\\footnote{Vgl. \\cite{wiki:Baryon2013}, Baryon-Multipletts, Das Baryon-Oktett.}'."\n"),
@@ -345,8 +345,8 @@
                     'Zusätzlich kann Energie in Form von Lichtteilchen (Photonen) vorhanden sein.'."\n"),
                   array( 'normal',
                     'Nur die schwache Wechselwirkung ist in der Lage Teilchenumwandlungen zu vermitteln.'."\n".
-                    'Der Beta-Zerfall eines Neutrons \\term{n} in ein Proton \\term{p^{+}} beispielsweise stellt sich dann, mit dem'."\n".
-                    'Zwischenprodukt eines elektrisch negativ geladenen \\term{W^{−}}-Bosons sowie der möglichen Erzeugung eines linear polarisierten Photons \\term{γ},'."\n".
+                    'Der Beta-Zerfall eines Neutrons \\term{n} in ein Proton \\term{p^^{+}} beispielsweise stellt sich dann, mit dem'."\n".
+                    'Zwischenprodukt eines elektrisch negativ geladenen \\term{W^^{−}}-Bosons sowie der möglichen Erzeugung eines linear polarisierten Photons \\term{γ},'."\n".
                     'wie folgt dar:\\footnote{Vgl. \\cite{wiki:WeakInteraction2013}, Interaction types, Charged current interaction.}'."\n"),
                   array( 'equations',
                     array( equ_text_std => 'Esw', equ_list => array(
@@ -365,7 +365,7 @@
                     'Dies gilt ebenso für die Summe der elektrischen Ladungen und die Summer der Energien.'."\n".
                     'Zu beachten ist weiterhin, dass Quarks nur in dreier oder zweier Verbünden, den Hadronen oder Mesonen, vorkommen.'."\n"),
                   array( 'normal',
-                    'Die Umwandlung eines Neutrons \\term{n} in ein Proton \\term{p^{+}} wird im Quark-Modell auch als die'."\n".
+                    'Die Umwandlung eines Neutrons \\term{n} in ein Proton \\term{p^^{+}} wird im Quark-Modell auch als die'."\n".
                     'Umwandlung eines Down-Quarks \\term{d} in ein Up-Quark \\term{u} verstanden:\\footnote{Vgl. \\cite{wiki:WeakInteraction2013}, Interaction types, Charged current interaction.}'."\n"),
                   array( 'equations',
                     array( equ_text_std => 'Esw', equ_list => array(
@@ -377,7 +377,7 @@
                   array( 'normal',
                     'Hierbei ist allerdings folgende Festlegung der Quanten-Fluss-Theorie zu beachten:'."\n"),
                   array( 'conclusion',
-                        'Alle Fermionen, wie Leptonen, Quarks und Hadronen, besitzen vom Betrag her den gleichen inneren Spin \\term{s_{fer,innen}}.'."\n".
+                        'Alle Fermionen, wie Leptonen, Quarks und Hadronen, besitzen vom Betrag her den gleichen inneren Spin \\term{s__{fer,innen}}.'."\n".
                         'Sein Betrag ist nach der folgenden Formel von der bisher nicht bekannten \\jump[][000AC4]{OM:FrQFT:Lepton}{Leptonen-Phasenzahl} abhängig \\color{*Bearb}{(Diese Formel gibt aus schon auf der Leptonen-Seite. Deren Nummer hier benutzen und mit einem Link versehen.)}:'."\n"),
                   array( 'equations',
                     array( equ_text_std => 'Esw', equ_list => array(
@@ -386,10 +386,10 @@
                   array( 'conclusion',
                         'Dieser Spin unterliegt einer globalen Erhaltung.'."\n"),
                   array( 'normal',
-                    'Interessant ist nun die Frage, ob das \\term{W^{−}}-Boson nach dem Teilchenmodell der Quanten-Fluss-Theorie noch in andere'."\n".
+                    'Interessant ist nun die Frage, ob das \\term{W^^{−}}-Boson nach dem Teilchenmodell der Quanten-Fluss-Theorie noch in andere'."\n".
                     'Varianten der gleichen Leptonen zerfallen kann.'."\n".
                     'Dies würde nicht mit den Beobachtungen in der Natur übereinstimmen.'."\n".
-                    'Fest steht, dass es kein Positron \\term{e^{+}} – also ein positiv geladenes Elektron-Antiteilchen – sein kann.'."\n".
+                    'Fest steht, dass es kein Positron \\term{e^^{+}} – also ein positiv geladenes Elektron-Antiteilchen – sein kann.'."\n".
                     'Dies würde die Ladungserhaltung verletzen.'."\n".
                     'Denkbar wäre ein \\jump{OM:FrQFT:ElektroschwacheWW:Symbolismus}{gedrehtes}'."\n".
                     'Elektron und dazu ein gedrehtes Anti-Neutrino, ein Neutrino oder gedrehtes Neutrino anstatt des Anti-Neutrinos:'."\n"),
@@ -413,9 +413,9 @@
                     ))),
                   array( 'normal',
                     'Es gibt allerdings nur noch eine weitere Spin-Kombination, welche zum Zerfall \\jump{OM:FrQFT:ElektroschwacheWW:Equ-W-minus-Boson-Zerfall}{\\name{OM:FrQFT:ElektroschwacheWW:Equ-W-minus-Boson-Zerfall}}'."\n".
-                    'eines \\term{W^{−}}-Bosons passt.'."\n".
+                    'eines \\term{W^^{−}}-Bosons passt.'."\n".
                     'Diese ist der Zerfall \\jump{OM:FrQFT:ElektroschwacheWW:Equ-W-minus-Boson-Zerfall-gespiegelt}{\\name{OM:FrQFT:ElektroschwacheWW:Equ-W-minus-Boson-Zerfall-gespiegelt}}'."\n".
-                    'eines um 180° gedrehten \\term{W^{−}}-Bosons.'."\n".
+                    'eines um 180° gedrehten \\term{W^^{−}}-Bosons.'."\n".
                     'Hier zerfällt das Boson in die gleichen, ebenfalls um 180° gedrehten Leptonen.'."\n".
                     'Es handelt sich folglich um die gleiche Zerfallsreaktion. \\\\'."\n".
                     'Als Zerfallsprodukte kommen ansonsten noch die anderen \\jump{OM:FrQFT:Lepton:Familien-und-Generationen}{Generationen}'."\n".
@@ -424,14 +424,14 @@
                     'Jedenfalls soweit dies energetisch möglich ist.'."\n"),
                   array( 'conclusion',
                         'Ich folgere, dass der Beta-Zerfall im Teilchenmodell der Quanten-Fluss-Theorie nur wie oben geschildert ablaufen kann.'."\n".
-                        'Dies kommt, weil sowohl der äußere und der innere Spin beim \\term{W^{−}}-Boson das gleiche Vorzweichen tragen.'."\n".
+                        'Dies kommt, weil sowohl der äußere und der innere Spin beim \\term{W^^{−}}-Boson das gleiche Vorzweichen tragen.'."\n".
                         'Insbesondere kann dieses Boson nicht in ein bezüglich der Ladung passendes Neutrino anstatt des Anti-Neutrinos zerfallen.'."\n"),
                   array( 'normal',
                     'Es zeigt sich also, dass das Elementarteilchenmodell der Quanten-Fluss-Theorie die Teilchenumwandlungen bemerkenswert gut darstellen kann.'."\n"),
                   array( 'normal',
-                    'Das einzige andere Boson, welches auch noch eine Teilchenumwandlung vermitteln kann ist das Antiteilchen von \\term{W^{−}}, das \\term{W^{+}}-Boson.'."\n".
+                    'Das einzige andere Boson, welches auch noch eine Teilchenumwandlung vermitteln kann ist das Antiteilchen von \\term{W^^{−}}, das \\term{W^^{+}}-Boson.'."\n".
                     'Bei diesem Boson ist entweder nur der äußere oder nur der innere Spin umgekehrt.'."\n".
-                    'Daher kann dieses nur in die Anti-Leptonen des \\term{W^{−}}-Zerfalls \\jump{OM:FrQFT:ElektroschwacheWW:Equ-W-minus-Boson-Zerfall}{\\name{OM:FrQFT:ElektroschwacheWW:Equ-W-minus-Boson-Zerfall}}'."\n".
+                    'Daher kann dieses nur in die Anti-Leptonen des \\term{W^^{−}}-Zerfalls \\jump{OM:FrQFT:ElektroschwacheWW:Equ-W-minus-Boson-Zerfall}{\\name{OM:FrQFT:ElektroschwacheWW:Equ-W-minus-Boson-Zerfall}}'."\n".
                     'oder deren 180° Drehungen zerfallen:'."\n"),
                   array( 'equations',
                     array( equ_text_std => 'Esw', equ_list => array(
@@ -439,8 +439,8 @@
                                                                '{  \mathrm{\downarrow}\overset{\rightarrow}{e}^{+1} + \mathrm{\downarrow}\overset{\rightarrow}{\nu}_{e}^{0}  }')),
                     ))),
                   array( 'normal',
-                    'Die beiden übrigen Bosonen der elektroschwachen Wechselwirkung, das Photon γ und das \\term{Z^{0}}-Boson, vermitteln keine Teilchenumwandlungen.'."\n".
-                    'Das Photon zerfällt gar nicht und das \\term{Z^{0}}-Boson zerfällt nur in Teilchen-Antitielchen-Paare.'."\n".
+                    'Die beiden übrigen Bosonen der elektroschwachen Wechselwirkung, das Photon γ und das \\term{Z^^{0}}-Boson, vermitteln keine Teilchenumwandlungen.'."\n".
+                    'Das Photon zerfällt gar nicht und das \\term{Z^^{0}}-Boson zerfällt nur in Teilchen-Antitielchen-Paare.'."\n".
                     'Das können sowohl elektrisch neutrale oder elektrisch geladene Teilchen sein, wie beispielsweise:\\footnote{Vgl. \\cite{Beringer:ParticlePhysicsBooklet2012}, Z, S.9-10, hier S. 9.}'."\n"),
                   array( 'equations',
                     array( equ_text_std => 'Esw', equ_list => array(
@@ -448,7 +448,7 @@
                                                                '{  \mathrm{\downarrow}\overset{\rightarrow}{e}^{+1} \;+\; \mathrm{\downarrow}\overset{\leftarrow}{e}^{-1} + \mathrm{\uparrow\downarrow}\gamma  }')),
                     ))),
                   array( 'normal',
-                    'Das \\term{Z^{0}}-Boson kann also nicht am Beta-Zerfall beteiligt sein.'."\n"),
+                    'Das \\term{Z^^{0}}-Boson kann also nicht am Beta-Zerfall beteiligt sein.'."\n"),
                   array( 'jumplist',
                     array(
                       array(  jump_name => 'OM:FrQFT:ElektroschwacheWW:Quarks'),

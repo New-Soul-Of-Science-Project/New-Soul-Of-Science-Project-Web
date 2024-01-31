@@ -4,10 +4,12 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 01.09.2023, 00:00h
+  // #: Stand: 19.01.2024, 22:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20240119:  +:  "To_f_Paragraph", 'iframe':  Add this type for 3d animations.
+  //           20231006:  +:  "\\url[]{}", "To_f_replace_callback__latexcommand__url":  Is new. It sets automatically "\\class{tools-class-url}{}"
   //           20230901:  +:  "To_f_Paragraph", 'figure', 'youtube':  Add horizontal scrollable with class 'content-horizontal-scrollable'.
   //           20230831:  +:  "To_f_menuList_header_create", "To_f_menuList_table_create": New.
   //           20230529:  +:  "To_f_replace_callback__latexcommand__anchor", "To_f_replace_callback__latexcommand__anchorname": New.
@@ -932,36 +934,23 @@
     // print_r( '$value: '); print_r( $value);
 
     // #?: Two required parameters defined?
-    //%! if ($value[0] != null)
-    //%! if ((1 <= count( $value)) && (2 <= count( $value[0])))
-    // if ((in_array(count( $value), [1, 2])) && (count( $value[0]) == 2) && ((count( $value) == 1) || ((count( $value) == 2) && (in_array(count( $value[1]), [0, 1, 2])))))
     if (To_f_replace_callback__latexcommand__parameterCheck( $value, 2, 2))
     {
       // print_r( 'Two required parameters defined !!!');
       // print_r( 'count( $value): '); print_r( count( $value));
       
       // #: There is no url parameter "$value[1][0]" or it has no length? Check "$value[0][0]" for "$Glo_g_Site_ary" meaning.
-      //%! if (($value[1] == null) || (strlen( $value[1][0]) == 0))
-      //%! if ((count( $value) == 1) || (((2 <= count( $value)) && (1 <= count( $value[1]))) && (strlen( $value[1][0]) == 0)))
-      // if ((count( $value) == 1) || ((count( $value) == 2) && ((count( $value[1]) == 0) || (strlen( $value[1][0]) == 0))))
       if (!To_f_replace_callback__latexcommand__parameterDef( $value, 1, 0))
       {
         // print_r( 'There is no url parameter "$value[1][0]" or it has no length? Check "$value[0][0]" for "$Glo_g_Site_ary" meaning.');
         
-        // #: Generate the site name from the "$value[0][0]".
-        //%!$parts = explode( ':', $value[0][0]);
-
         // #: If global notation?
-        //%!if (3 <= count( $parts))
         if (To_f_Site( $site_name, $value[0][0]))
         {
-          //%!$site_name = ($parts[0]).':'.($parts[1]).':'.($parts[2]);
-
           // #: If "$site_name" is not the same as activ site? Than set url.
           if ($site_name != $Glo_g_Site_activ)
           {
             // #: No url string? Generate url string.
-            //%! if ($value[1] == null)
             if (count( $value) == 1)
             {
               $value[1] = array();
@@ -982,26 +971,18 @@
       // print_r( '$Glo_g_Site_activ: '); print_r( $Glo_g_Site_activ);
 
       // #?: If site is not the active one or is URL defined?
-      //%! if ((isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || !(($value[1] == null) || (strlen( $value[1][0]) == 0)))
       if ((isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || ((2 <= count( $value)) && (1 <= count( $value[1])) && (0 < strlen( $value[1][0]))))
-
-        //%!{return "<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\" style=\"color: #".(((1 < count( $value[1])) && (strlen( $value[1][1]) == 6)) ? $value[1][1] : '000000')."\">{$value[0][1]}</a>";}
-        //%!{return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\" title=\"".((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")."\" style=\"color: #".(((1 < count( $value[1])) && (strlen( $value[1][1]) == 6)) ? $value[1][1] : '000000')."\">{$value[0][1]}</a>";}
-        //%!{return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\" title=\"".((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")."\"".(((1 < count( $value[1])) && (strlen( $value[1][1]) == 6)) ? " style=\"color: #".(To_f_Color( $value[1][1]))."\"" : '').">{$value[0][1]}</a>";}
-        {
-          
-          return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\" title=\"".((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")."\"".((1 < count( $value[1])) ? " style=\"color: #".(To_f_Color( $value[1][1]))."\"" : '').">{$value[0][1]}</a>";
-          
-        }
+      {
+        
+        return /* For testing $site_name.' - '.($value[0][0]).'; '.*/"<a href=\"{$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}\" title=\"".((isset( $site_name, $Glo_g_Site_activ)) ? ((0 < strlen( $value[0][0])) ? (((array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]]))) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text_short]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $Glo_g_Site_ary[$site_name][jump_ary][$value[0][0]][headline_text]))." &mdash; " : '').(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '»'.($Glo_g_Site_ary[$site_name][text_titel_short]).'«')) : "URL: {$value[1][0]}".((0 < strlen( $value[0][0])) ? '#' : '')."{$value[0][0]}")."\"".((1 < count( $value[1])) ? " style=\"color: #".(To_f_Color( $value[1][1]))."\"" : '').">{$value[0][1]}</a>";
+        
+      }
       else
-                                            
-        //%!{return To_f_anchor_Jump_html( $value[0][1], $value[0][0], (((1 < count( $value[1])) && (strlen( $value[1][1]) == 6)) ? $value[1][1] : '000000'));}
-        //%!{return To_f_anchor_Jump_html( $value[0][1], $value[0][0], (((1 < count( $value[1])) && (strlen( $value[1][1]) == 6)) ? $value[1][1] : ''));}
-        {
-          
-          return To_f_anchor_Jump_html( $value[0][1], $value[0][0], ((1 < count( $value[1])) ? $value[1][1] : ''), $replace_ary, $replace_preg_ary);
-          
-        }
+      {
+        
+        return To_f_anchor_Jump_html( $value[0][1], $value[0][0], ((1 < count( $value[1])) ? $value[1][1] : ''), $replace_ary, $replace_preg_ary);
+        
+      }
         
     }
     else
@@ -1033,6 +1014,25 @@
     
       return 'Error: \\jumpname: Parameter amount is not 1 and 2 optional! Value: $value';
 
+  }
+
+  
+  function To_f_replace_callback__latexcommand__url( $value, $replace_ary=null, $replace_preg_ary=null)
+  {
+    global $Glo_g_Site_ary, $Glo_g_Site_activ;
+
+    // print_r( '$value: '); print_r( $value);
+
+    // #?: one required and 1 optional parameter defined?
+    if (To_f_replace_callback__latexcommand__parameterCheck( $value, 1, 1)) {
+      
+      return To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '\\jump['.($value[0][0]).']'.(((1 < count( $value[1])) && (0 < strlen( $value[1][0]))) ? '['.($value[1][0]).']' : '').'{}{\\class{tools-class-url}{'.($value[0][0]).'}}');
+      
+    } else {
+      
+      return 'Error: \\jump: Parameter amount is not 1 and 1 optional! Value: $value';
+      
+    }
   }
 
   
@@ -1232,6 +1232,13 @@
                                              param_dim => 1,
                                              param_optional_max => 2,
                                              callback_f => 'To_f_replace_callback__latexcommand__jumpname',
+                                          ),
+                                    'url' =>
+                                      array( type => 'latexcommand',
+                                             search => '\\url',
+                                             param_dim => 1,
+                                             param_optional_max => 1,
+                                             callback_f => 'To_f_replace_callback__latexcommand__url',
                                           ),
                                     'italic' =>
                                       array( type => 'latexcommand',
@@ -1740,7 +1747,7 @@
         echo $offset.'  <span style="color: #'.(To_f_Color( '*Conclusion')).'">'."\n";
         break;
       case 'contentlist':
-        echo $offset.'<table class="tools-class-contentlist-table" border="0"> <colgroup> <col width="22"> <col width="300"> <col width="16"> <col width="362"> </colgroup>'."\n";
+        echo $offset.'<table class="tools-class-contentlist-table tools-class-text" border="0"> <colgroup> <col width="22"> <col width="300"> <col width="16"> <col width="362"> </colgroup>'."\n";
         break;
       case 'quote':
         //%!echo $offset.'<p style="margin-left: 30px; margin-right: 100px;">'."\n";
@@ -1766,6 +1773,7 @@
         break;
       case 'figure':
       case 'youtube':
+      case 'iframe':
         break;
       case 'fade-in-area':
         break;
@@ -1971,6 +1979,7 @@
 
       case 'figure':
       case 'youtube':
+      case 'iframe':
       
         $textAry = array();
         $arrayMarginLeftRight = '';
@@ -2080,15 +2089,24 @@
                   echo '              </tr>'."\n";
                   break;
                 case 'youtube':
+                case 'iframe':
                   echo '            <tr>'."\n";
                   echo '              <td>'."\n";
-                  // #: YouTube Parameter, see file "Eingebettetes Youtube-Video automatisch starten und wiederholen (loop).pdf" or internet "http://www.somethinkspecial.de/youtube-video-autoplay-loop.html".
-                  //    Parameter in the link: 'https://www.youtube.com/embed/<Video>?<Parameter1>&<Parameter2>'
-                  //    &: Write no '&' after '?'!
-                  //    Rel: '&rel=0' shows no recommended videos at the end of the video.
-                  //    Loop: '&loop=1' shoes an endless loop, but works only with parameter '&playlist=<Video>'. Makes big sense with Rel.
-                  //    Auto: '&autoplay=1' plays the film immediately.
-                  echo '                <iframe class="tools-class-vid" width="'.($value_ary[width]).'" height="'.($value_ary[height]).'" src="'.($value_ary[source]).'" frameborder="1" allowfullscreen></iframe>'."\n";
+                  switch ($type)
+                  {
+                    case 'youtube':
+                      // #: YouTube Parameter, see file "Eingebettetes Youtube-Video automatisch starten und wiederholen (loop).pdf" or internet "http://www.somethinkspecial.de/youtube-video-autoplay-loop.html".
+                      //    Parameter in the link: 'https://www.youtube.com/embed/<Video>?<Parameter1>&<Parameter2>'
+                      //    &: Write no '&' after '?'!
+                      //    Rel: '&rel=0' shows no recommended videos at the end of the video.
+                      //    Loop: '&loop=1' shoes an endless loop, but works only with parameter '&playlist=<Video>'. Makes big sense with Rel.
+                      //    Auto: '&autoplay=1' plays the film immediately.
+                      echo '            <iframe class="tools-class-vid" width="'.($value_ary[width]).'" height="'.($value_ary[height]).'" src="'.($value_ary[source]).'" frameborder="1" allowfullscreen></iframe>'."\n";
+                      break;
+                    case 'iframe':
+                      echo '            <iframe class="tools-class-vid" width="'.($value_ary[width]).'" height="'.($value_ary[height]).'" src="'.($value_ary[source]).'" frameborder="0"></iframe>'."\n";
+                      break;
+                  }
                   echo '              </td>'."\n";
                   echo '            </tr>'."\n";
                   echo '            <tr>'."\n";
@@ -2328,6 +2346,7 @@
         break;
       case 'figure':
       case 'youtube':
+      case 'iframe':
         break;
       case 'fade-in-area':
         break;
@@ -2380,8 +2399,7 @@
     To_f_headline_add_hides_begin( $headline_text, $headline_text_short, $headline_name, $offset, $display);
     
     if (0 < strlen( $headline_addon))
-      //%! echo $offset.'  <h3><span style="line-height: 1.4em; color: #A0A0A0;">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $headline_addon)).'</span></h3>'."\n";
-      echo $offset.'  <h3><span style="line-height: 1.4em; color: '.(To_f_Color('*SectionHeadlineAddon', false)).';">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $headline_addon)).'</span></h3>'."\n";
+      echo $offset.'  <h3 class="tools-class-text"><span style="line-height: 1.4em; color: '.(To_f_Color('*SectionHeadlineAddon', false)).';">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $headline_addon)).'</span></h3>'."\n";
       
     if (isset( $Paragraph_fn, $paragraph_list))
     {
@@ -2397,8 +2415,7 @@
   {
     To_f_headline_add_hides_begin( $headline_text, $headline_text_short, $headline_name, $offset, $display);
     
-    //%! echo $offset.'  <h3><span style="line-height: 1.4em; color: #A0A0A0;">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $headline_addon)).'</span></h3>'."\n";
-    echo $offset.'  <h3><span style="line-height: 1.4em; color: '.(To_f_Color('*SectionHeadlineAddon', false)).';">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $headline_addon)).'</span></h3>'."\n";
+    echo $offset.'  <h3 class="tools-class-text"><span style="line-height: 1.4em; color: '.(To_f_Color('*SectionHeadlineAddon', false)).';">'.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $headline_addon)).'</span></h3>'."\n";
     To_f_Paragraph_list( $replace_ary, $replace_preg_ary, '  '.$offset, $paragraph_list);
     
     To_f_headline_add_hides_end( $offset, $display);
@@ -2584,8 +2601,7 @@
     if (0 < strlen( $headline_text))
     {
       echo '      <p>'."\n";
-      //%!echo '        <h2><a name="'.$headline_name.'"></a>'.$headline_text.'</h2>'."\n";
-      echo '        <a name="'.$headline_name.'"></a><h2>'.$headline_text.'</h2>'."\n";
+      echo '        <a name="'.$headline_name.'"></a><h2 class="tools-class-text">'.$headline_text.'</h2>'."\n";
       echo '      </p>'."\n";
     }
     else
@@ -2637,8 +2653,7 @@
       echo ';">'."\n";
       $To_g_elements_hides_ary[noContentAry][$To_g_headline_last_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
       $local_elements_hides_ele_num++;
-      //%!echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <h2 style="margin: 0; margin-left: 0px; padding: 0;"><a href="javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="einblenden">'.$headline_text.'</a></h2> </td>'."\n";
-      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="einblenden"><h2 style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
+      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="einblenden"><h2 class="tools-class-text" style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
       echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'showContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Down.jpg" width="32" height="12" border="0" alt="einblenden" title="einblenden" align="right" style="margin: 0; padding: 0;"> </a> </td>'."\n";
       echo $offset.'  </tr>'."\n";
       
@@ -2652,9 +2667,7 @@
       $To_g_elements_hides_ary[contentAry][$To_g_headline_last_elements_hides_ary_dim - 1][] = $local_elements_hides_ele_num;
       $local_elements_hides_ele_num++;
       // #!: The anchor was moved into 'hideContent' "h2" to make the headline hide visible if jumped to.
-      //%!echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <h2 style="margin: 0; margin-left: 0px; padding: 0;"><a name="'.$headline_name.'"></a><a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="ausblenden">'.$headline_text.'</a></h2> </td>'."\n";
-      //%!echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a name="'.$headline_name.'"></a><a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="ausblenden"><h2 style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
-      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a name="'.$headline_name.'" href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="ausblenden"><h2 style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
+      echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a name="'.$headline_name.'" href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])" title="ausblenden"><h2 class="tools-class-text" style="margin: 0; margin-left: 0px; padding: 0;">'.$headline_text.'</h2></a> </td>'."\n";
       echo $offset.'    <td valign="baseline" style="margin: 0; padding: 0;"> <a href="javascript:To_f_elements_hides_switch( \'hideContent\', To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'base_name\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'noContentAry\'], To_g_elements_hides_ary['.($To_g_headline_last_elements_hides_ary_dim - 1).'][\'contentAry\'])"><img src="'.$Glo_PathRel_back.'../share/images/Arrow-Up.jpg" width="32" height="12" border="0" alt="ausblenden" title="ausblenden" align="right" style="margin-top: 0; padding: 0;"> </a> </td>'."\n";
       echo $offset.'  </tr>'."\n";
       

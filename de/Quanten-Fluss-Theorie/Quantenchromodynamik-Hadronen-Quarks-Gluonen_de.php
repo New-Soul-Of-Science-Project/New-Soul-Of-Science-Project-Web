@@ -168,7 +168,7 @@
                     'ergebenden Ring nicht wiederholen sollen (siehe \\jumpname{OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung:Fig-UnpolPhotFarbpol6pol}).'."\n".
                     'Inklusive ihrer Komplementärfarben ergeben sich so sechs Farben, die auf einem Ring ein Sechseck abbilden.'."\n".
                     'Diese Struktur entspricht interessanterweise genau einem der vier sechseckigen Schnitte durch einen Kuboktaeder des Vektor-Gleichgewichts.'."\n",
-                      'Auch andere, wie Nassim Haramein, haben erkannt, dass damit die isotrope Vektor-Matrix der Stabilität des Vakuums zugrunde liegt.'."\n".
+                      'Auch andere, wie Nassim Haramein, haben erkannt, dass damit die isotrope Vektor-Matrix der Stabilität des Vakuums zugrunde liegt.\\color{*Bearb}{(Verweis)}'."\n".
                     'Dieser Zusammenhang mit der Farbpolarisation und darüber mit der Grundstruktur der Elementarteilchen-Strings der Quanten-Fluss-Theorie unterstricht diese Sichtweise'."\n".
                     'und begründet sie noch tiefgehender durch beobachtete Eigenschaften der Quantenchromodynamik.'."\n",
                       'XXX'."\n".
@@ -278,14 +278,14 @@
                     ))),
                   array( 'text', array( text => array(
                   '\\condb{Quark und Leptonen Umwandlungen} \\\\'."\n".
-                    'In der Natur zerfallen Neutronen nach einer bestimmten Halbwertszeit jeweils in ein Proton, ein Elektron und ein Elektron-Anti-Neutrino, wobei noch Photonen entstehen können:\\footnote{Vgl. \\cite{Beringer:ParticlePhysicsBooklet2012}, S. 8-9, 144-145. \\\\ Vgl. \cite{Fritzsch:Mikrokosmos2012}, 6. Kap. Elektroschwache Wechselwirkungen, S. 105-118, hier S. 106. \\\\ Internet: \\\\ Vgl. \\cite{wiki:WeakInteraction2013}, Interaction types, Charged current interaction. \\\\ Spin und elektrische Ladung des \\term{W^{±}}-Bosons vgl. \\cite{wiki:W-Boson-Deu2012}. \\\\ Schwacher Isospin und schwache Ladung des \\term{W^{±}}-Bosons vgl. \\cite{wiki:SchwacheLadung2012}, Kopplungen der elektroschwachen WW im Standardmodell.}\\footnote[*Bearb]{\\color{*Bearb}{Dazu hab ich probeweise Auflistungen in meinem unveröffentlichten Manuskript v8.009 vom 18.07.2015.}}'."\n"))),
+                    'In der Natur zerfallen Neutronen nach einer bestimmten Halbwertszeit jeweils in ein Proton, ein Elektron und ein Elektron-Anti-Neutrino, wobei noch Photonen entstehen können:\\footnote{Vgl. \\cite{Beringer:ParticlePhysicsBooklet2012}, S. 8-9, 144-145. \\\\ Vgl. \cite{Fritzsch:Mikrokosmos2012}, 6. Kap. Elektroschwache Wechselwirkungen, S. 105-118, hier S. 106. \\\\ Internet: \\\\ Vgl. \\cite{wiki:WeakInteraction2013}, Interaction types, Charged current interaction. \\\\ Spin und elektrische Ladung des \\term{W^^{±}}-Bosons vgl. \\cite{wiki:W-Boson-Deu2012}. \\\\ Schwacher Isospin und schwache Ladung des \\term{W^^{±}}-Bosons vgl. \\cite{wiki:SchwacheLadung2012}, Kopplungen der elektroschwachen WW im Standardmodell.}\\footnote[*Bearb]{\\color{*Bearb}{Dazu hab ich probeweise Auflistungen in meinem unveröffentlichten Manuskript v8.009 vom 18.07.2015.}}'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QCD.Q', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \MDo{}\MLe{n}^{\,0}  \rightarrow  \MUp{}\MRi{p}^{+1} + \MDoDo{}\overset{\leftleftarrows}{W}^{\raise -1.2ex {-1}} + \MUpDo{}\gamma  \\\ \qquad\,  \rightarrow \;\;\; 	\MUp{}\MRi{p}^{+1} + \MDo{}\MLe{e}^{-1} + \MDo{}\MLe{\overline{\nu}}_{e}^{\raise -.9ex {\,0}} + \MUpDo{}\gamma  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die durch die Pfeile dargestellte und mit dem Leptonen-Modell zusammenhängende Spin-Symbolik erkläre ich im Abschnitt \\italic{\\jumpname{OM:FrQFT:ElektroschwacheWW:Symbolismus}} der Seite \\italic{\\jumpname{OM:FrQFT:ElektroschwacheWW}}.'."\n",
-                      'Im Grunde setzt hierbei die Umwandlung eines Down-Quarks des Neutrons in ein Up-Quark des dadurch entstehenden Protons ein \\term{W^{-1}} Boson der schwachen Wechselwirkung frei, das dann in ein Elektron und ein Elektron-Anti-Neutrino zerfällt:'."\n"))),
+                      'Im Grunde setzt hierbei die Umwandlung eines Down-Quarks des Neutrons in ein Up-Quark des dadurch entstehenden Protons ein \\term{W^^{-1}} Boson der schwachen Wechselwirkung frei, das dann in ein Elektron und ein Elektron-Anti-Neutrino zerfällt:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QCD.Q', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \PdDown  \rightarrow  \PuUp + \MDoDo{}\overset{\leftleftarrows}{W}^{\raise -1.2ex {-1}} + \MUpDo{}\gamma  }'),
@@ -380,7 +380,7 @@
                       
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{'."\n".
-                    '(• Im Gegensatz zu Elapsonen gibt es eine WW zwischen Gluonen, die auch in der FrQFT ersichtlich ist, da Gluonen String-Ausschnitte der Elapsonen sind. Gucken, ob sich hierzu etwas in \\cite{Ent:DerKlebstoffDerWelt:2015}, findet. Sonst im Artikel auf Spektrum.de, Dirk Eidemüller, Ein Teilchen aus elementarer Kraft?, URL: \\jump[http://www.spektrum.de/news/ein-teilchen-aus-elementarer-kraft/1372085][*Bearb]{}{http://www.spektrum.de/news/ein-teilchen-aus-elementarer-kraft/1372085}) \\\\'."\n".
+                    '(• Im Gegensatz zu Elapsonen gibt es eine WW zwischen Gluonen, die auch in der FrQFT ersichtlich ist, da Gluonen String-Ausschnitte der Elapsonen sind. Gucken, ob sich hierzu etwas in \\cite{Ent:DerKlebstoffDerWelt:2015}, findet. Sonst im Artikel auf Spektrum.de, Dirk Eidemüller, Ein Teilchen aus elementarer Kraft?, URL: \\url{http://www.spektrum.de/news/ein-teilchen-aus-elementarer-kraft/1372085}) \\\\'."\n".
                     '}'."\n"))),
                       
                   array( 'text', array( text => array(

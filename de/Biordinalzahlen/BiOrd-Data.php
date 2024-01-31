@@ -20,7 +20,7 @@
       header_links_marginLeft => '359px',
       copy_right =>
         'Biordinalzahlen (BO) \\\\'."\n".
-        '© 2003–2023 by \\\\'."\n".
+        '© 2003–2024 by \\\\'."\n".
         'Wolfgang Huß und \\\\'."\n".
         'Media Line Digital e.K. \\\\'."\n".
         'is licensed under \\\\'."\n".
@@ -52,10 +52,11 @@
       text_titel_h1 => 'Einleitung',
       text_titel_short => 'Einleitung',
       text_undertitel_h2 => 'Die Erweiterung der Ordinalzahlen zu einem Ring',
-      text_titel_discr_h3 => 'Negative Ordinalzahlen und Vorgänger aller Limeszahlen\\hidden{ (\\term{ω, 2ω, ⋯ , ω^{2}, ⋯})}',
+      text_titel_discr_h3 => 'Negative Ordinalzahlen und Vorgänger aller Limeszahlen\\hidden{ (\\term{ω, 2ω, ⋯ , ω^^{2}, ⋯})}',
       jump_ary => array(
         'OM:BiOrd:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
+          'OM:BiOrd:Einleitung:Vortext:Ordinalzahlen' => array( headline_text => 'Ordinalzahlen'/*, headline_text_short => 'XXX'*/),
           'OM:BiOrd:Einleitung:Vortext:Equ-n-gleich-Menge-Null-bis-n-minus-Eins' => array( headline_text => 'BO.Ein.5'),
           'OM:BiOrd:Einleitung:Vortext:Equ-n-plus-Eins' => array( headline_text => 'BO.Ein.6'),
           'OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null' => array( headline_text => 'BO.Ein.8'),

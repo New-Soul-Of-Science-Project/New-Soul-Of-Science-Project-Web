@@ -39,6 +39,10 @@ button {
   z-index: 1; /* TODO Solve this in HTML */
 }
 
+#headline {
+  font-weight: normal;
+}
+
 a, button, input, select {
   pointer-events: auto;
 }

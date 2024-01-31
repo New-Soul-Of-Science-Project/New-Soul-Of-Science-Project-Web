@@ -33,8 +33,8 @@
                     'durch verschiedene Bewegungen zu beschreiben, so macht man eine erstaunliche Entdeckung:'."\n".
                     'Es kommt eine grundlegende Zeit in Form der \\jump{OM:FrQFT:ZeitAlterungFrequenz:Wirkungsquanten-Geschwindigkeit}{neuen, konstanten Wirkungsquanten-Bewegung} zum Vorschein.'."\n".
                     'Diese ist grundlegender als die Bewegung des Lichts.'."\n".
-                    'Die Wirkungsquanten bewegen sich mit \\term{√2⋅c_{0}} auf einer helixförmigen Spiralbahn (siehe \\jump{OM:FrQFT:ZeitAlterungFrequenz:Fig-Elapson}{\\name{OM:FrQFT:ZeitAlterungFrequenz:Fig-Elapson}}), und dies unabhängig von der wirkenden Gravitation.'."\n".
-                    '\\term{c_{0}} steht dabei für die Lichtgeschwindigkeitskonstante\\footnote{\\const{FrQFT_g_footnote_text_LG}}.'."\n".
+                    'Die Wirkungsquanten bewegen sich mit \\term{√2⋅c__{0}} auf einer helixförmigen Spiralbahn (siehe \\jump{OM:FrQFT:ZeitAlterungFrequenz:Fig-Elapson}{\\name{OM:FrQFT:ZeitAlterungFrequenz:Fig-Elapson}}), und dies unabhängig von der wirkenden Gravitation.'."\n".
+                    '\\term{c__{0}} steht dabei für die Lichtgeschwindigkeitskonstante\\footnote{\\const{FrQFT_g_footnote_text_LG}}.'."\n".
                     'Ihre Rotationsbewegung entspricht der inneren Frequenz des Vakuums und seiner Elementarteilchen und ihr Vorwärtsschrauben – ihre Translation – entspricht der örtlichen, je nach Gravitation und Richtung variablen Lichtgeschwindigkeit im dreidimensionalen Raum, wie sie aus der Allgemeinen Relativitätstheorie bekannt ist.'."\n"))),
                   array( 'figure',
                     array_merge( $FrQFT_g_figure_ary_Elapson, array( name => 'OM:FrQFT:ZeitAlterungFrequenz:Fig-Elapson'))),
@@ -131,7 +131,7 @@
                 'Kosmische Beobachter')),
                   array( 'text', array( text => array(
                     'Um den Formalismus vom Beobachtungsstandpunkt her zu vereinfachen, kann das Geschehen aus der Sicht des Kosmos oder besser gesagt, aus der Sicht eines \\italic{kosmischen Beobachters} beschrieben werden.'."\n".
-                    'Die kosmischen Beobachter \\term{B_{0}} an den Orten \\term{0} zeichnet aus, dass an ihren Orten die \\jump{OM:FrQFT:ZeitAlterungFrequenz:Dichtestruktur}{Wirkungsquanten-String-Dichte und die Elapsonen-Bahn-Dichte} der durchschnittlichen Dichte im Kosmos entsprechen.'."\n".
+                    'Die kosmischen Beobachter \\term{B__{0}} an den Orten \\term{0} zeichnet aus, dass an ihren Orten die \\jump{OM:FrQFT:ZeitAlterungFrequenz:Dichtestruktur}{Wirkungsquanten-String-Dichte und die Elapsonen-Bahn-Dichte} der durchschnittlichen Dichte im Kosmos entsprechen.'."\n".
                     'Zum Beispiel ist die Lichtgeschwindigkeit im dreidimensionalen Raum an seinen Orten gleich der Lichtgeschwindigkeitskonstanten\\hidden{sieh vorne: \\footnote{\\const{FrQFT_g_footnote_text_LG}}} (siehe \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Fig-GravitationspotMulti}, gestrichelte Linien):'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'ZAF.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -148,7 +148,7 @@
                         'Man unterliegt leicht dem Irrtum, dass an diesen Orten keine Gravitation wirken würde.'."\n".
                         'Doch die Quanten-Fluss-Theorie unterscheidet sich an dieser Stelle leicht von der Allgemeinen Relativitätstheorie:'."\n",
                           'Bei Einstein führt jede Gravitation zur Reduzierung der Lichtgeschwindigkeit im dreidimensionalen Raum.'."\n".
-                        'Das bedeutet, dort wo Gravitation herrscht ist die ortsübliche Lichtgeschwindigkeit im dreidimensionalen Raum kleiner als \\term{c_{0}}.'."\n".
+                        'Das bedeutet, dort wo Gravitation herrscht ist die ortsübliche Lichtgeschwindigkeit im dreidimensionalen Raum kleiner als \\term{c__{0}}.'."\n".
                         'Die Orte ohne Gravitation sind die Orte, wo sich die Gravitation der größten Massenansammlungen im Kosmos aufhebt.'."\n",
                           'In der Quanten-Fluss-Theorie verhält es sich ein wenig anders:'."\n".
                         'Die Anzahl der Wirkungsquanten und Elementarteilchen unterliegt jeweils der \\jump[][*Concl]{*Anzahlerhaltung-Implem}{Anzahlerhaltung im Kosmos}.'."\n".
@@ -221,11 +221,11 @@
                   array( 'text', array( text => array(
                     'Die Variable \\term{p} in der Potenz besitzt dabei im Fall tangentialer Richtung der Lichtausbreitung zur zentralen Masse den Wert \\term{p = 1/2} und im Fall radialer Richtung den Wert \\term{p = 1}.'."\n".
                     'Hier steht \\term{r} für den Abstand zum Zentrum der Masse.'."\n".
-                    'Das vorangestellte \\term{r,p} vor der variablen Lichtgeschwindigkeit \\term{_{r,p}c_{mas}} drückt also ihren Orts- und Richtungsbezug aus.'."\n",
+                    'Das vorangestellte \\term{r,p} vor der variablen Lichtgeschwindigkeit \\term{__{r,p}c__{mas}} drückt also ihren Orts- und Richtungsbezug aus.'."\n",
                       'An Orten des kosmischen Beobachters selber stellt sich die variable Lichtgeschwindigkeit übrigens als isotrop dar.'."\n",
                       'Beim Wirkungsquanten-Bewegungsraum haben wir es mit einer Perspektive zu tun, die davon ausgeht, dass aus Sicht des'."\n".
                     'kosmischen Beobachters, am Standpunkt durchschnittlicher Energiedichte des Vakuums,'."\n".
-                    'der effektive Wert der Lichtgeschwindigkeit dem Wert der Lichtgeschwindigkeitskonstanten \\term{_{0}c} gleich ist:'."\n"))),
+                    'der effektive Wert der Lichtgeschwindigkeit dem Wert der Lichtgeschwindigkeitskonstanten \\term{__{0}c} gleich ist:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'ZAF.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  {_{\lowZero}c}  =  {c_{\lowZero}}  }',
@@ -303,7 +303,7 @@
                   array( 'text', array( text => array(
                     'Die räumlich absolute und jeder Veränderung entsprechende Zeit der relativistischen Quantenfeldtheorie entsteht aus der Bewegung der Wirkungsquanten (\\term{wq}),'."\n".
                     'die das Vakuum und alle Elementarteilchen bilden.'."\n".
-                    'Der Weg \\term{w_{wq}}, den ein Wirkungsquant zurück legt, ist proportional zur seit Beginn des Wegs verstrichenen Zeit \\term{t}:'."\n"))),
+                    'Der Weg \\term{w__{wq}}, den ein Wirkungsquant zurück legt, ist proportional zur seit Beginn des Wegs verstrichenen Zeit \\term{t}:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'ZAF.Zt', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \*part t  \sim  \*part {w_{wq}}  }'),
@@ -311,7 +311,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \*part t  =  \frac{ \*part {w_{wq}} }{ {v_{wq}} }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die eingeführte Proportionalitätskonstante ist die in der Hypothese zunächst als konstant angenommene Wirkungsquanten-Geschwindigkeit \\term{v_{wq}}.'."\n".
+                    'Die eingeführte Proportionalitätskonstante ist die in der Hypothese zunächst als konstant angenommene Wirkungsquanten-Geschwindigkeit \\term{v__{wq}}.'."\n".
                     'Die grundlegende Zeit, nachfolgend nur noch \\term{t} genannt, entspringt folglich der Positionsveränderung der Wirkungsquanten des \\jump{*Bewegungsraum-Herlei}{Bewegungsraums} (siehe \\jump{OM:FrQFT:ZeitAlterungFrequenz:Fig-Elapson}{\\name{OM:FrQFT:ZeitAlterungFrequenz:Fig-Elapson}}).'."\n",
                       'Diese Bewegung nimmt der kosmische Beobachter aus diesem Grund logischer Weise an jedem Ort im Kosmos gleich wahr:'."\n"))),
                   array( 'equations',
@@ -364,7 +364,7 @@
                   array( 'text', array( text => array(
                     'Anders als die räumlich absolute \\jump{OM:FrQFT:ZeitAlterungFrequenz:Zeit}{Zeit} der relativistischen Quantenfeldtheorie entsteht die Alterung – die Zeit der Allgemeinen Relativitätstheorie – aus der Bewegung des Lichts; der \\jump{*Photonen-Herlei}{Photonen (\\term{ph})}, der \\jump{*Elapsonen-Herlei}{Vakuum-Elapsonen (\\term{ep})} und vergleichbarer'."\n".
                     '\\jump{OM:FrQFT:NeuePhysik:Strings-aus-Wirkungsquanten}{Wirkungsquanten-String-Strukturen} der \\jump{OM:FrQFT:NeuePhysik:Elementarteilchen-der-Materie}{Elementarteilchen der Materie}.'."\n".
-                    'Allgemeiner ist zu sagen, der Weg \\term{w_{ph}}, den das Licht im Verhältnis zur Lichtstruktur des strukturierten Raums zurück legt, ist proportional zur seit Beginn dieses Wegs fortgeschrittenen Alterung \\term{a}.'."\n".
+                    'Allgemeiner ist zu sagen, der Weg \\term{w__{ph}}, den das Licht im Verhältnis zur Lichtstruktur des strukturierten Raums zurück legt, ist proportional zur seit Beginn dieses Wegs fortgeschrittenen Alterung \\term{a}.'."\n".
                     'In \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Fig-Elapson} und \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Ani-VakuumElapson} entspricht dieser Weg dem Vorwärtsschrauben der Helixspiralbahn – ihrer Translation:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'ZAF.Alt', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -391,10 +391,10 @@
                                                label_name => 'OM:FrQFT:ZeitAlterungFrequenz:Equ-AlphaPropLG', label_text => '\\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-AlphaPropLG}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Die hier berechnete Lichtgeschwindigkeit \\term{_{x}c} ist dabei um ihre Richtungsabhängigkeit vom strukturellen Kontext bereinigt.'."\n".
+                    'Die hier berechnete Lichtgeschwindigkeit \\term{__{x}c} ist dabei um ihre Richtungsabhängigkeit vom strukturellen Kontext bereinigt.'."\n".
                     'Sie ist proportional zur Alterung der Elementarteilchen am Ort \\term{x}.'."\n".
-                    'Wohingegen \\term{_{x,p}c} die richtungsabhängige Lichtgeschwindigkeit in Bezug auf die Wirkungsquanten-Struktur des Kosmos ist.'."\n",
-                      'Aus der Sicht des kosmischen Beobachters \\term{B_{0}} gleicht seine eigene Alterung seiner Zeit.'."\n".
+                    'Wohingegen \\term{__{x,p}c} die richtungsabhängige Lichtgeschwindigkeit in Bezug auf die Wirkungsquanten-Struktur des Kosmos ist.'."\n",
+                      'Aus der Sicht des kosmischen Beobachters \\term{B__{0}} gleicht seine eigene Alterung seiner Zeit.'."\n".
                     'Dabei läuft die Zeit \\term{t} an jedem Ort gleich:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'ZAF.Alt', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -406,7 +406,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Diese Orte des kosmischen Beobachters sind Orte \\jump{OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:KosBeob}{durchschnittlicher Wirkungsquanten- und Vakuum-Elapsonen-Dichte}.'."\n".
-                    'Aus diesem Grund bewegt sich das Licht an diesen Orten in Größe der Lichtgeschwindigkeitskonstanten \\term{c_{0}} in der Lichtstruktur des Raums:'."\n"))),
+                    'Aus diesem Grund bewegt sich das Licht an diesen Orten in Größe der Lichtgeschwindigkeitskonstanten \\term{c__{0}} in der Lichtstruktur des Raums:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'ZAF.Alt', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  {_{\lowZero}c}  =  {c_{\lowZero}}  }',
@@ -461,16 +461,16 @@
                   array( 'text', array( text => array(
                     '\\const{FrQFT_g_text_HinwKosBeob}'."\n"))),
                   array( 'text', array( text => array(
-                    'Als weitere Bewegungskomponente der helixförmigen Spiralbewegung der Wirkungsquanten findet man ihre Rotationsgeschwindigkeit, die über den mittleren Umfang des Photons \\term{u_{ph}}'."\n".
-                    'zur inneren Frequenz \\term{f_{ph}} führt (siehe \\jump{OM:FrQFT:ZeitAlterungFrequenz:Fig-Elapson}{\\name{OM:FrQFT:ZeitAlterungFrequenz:Fig-Elapson}}).'."\n"))),
+                    'Als weitere Bewegungskomponente der helixförmigen Spiralbewegung der Wirkungsquanten findet man ihre Rotationsgeschwindigkeit, die über den mittleren Umfang des Photons \\term{u__{ph}}'."\n".
+                    'zur inneren Frequenz \\term{f__{ph}} führt (siehe \\jump{OM:FrQFT:ZeitAlterungFrequenz:Fig-Elapson}{\\name{OM:FrQFT:ZeitAlterungFrequenz:Fig-Elapson}}).'."\n"))),
                   array( 'text', array( Shape  => 'conclusion', text => array(
                         'Dabei gehe ich von einer Frequenz aus, die von der Bewegungsrichtung des Lichts unabhängig ist.'."\n".
                         'Diese Annahme lässt sich zum einen damit begründen, dass die reine Richtungsänderung eines Photons, beispielsweise durch die Reflexion an einem Spiegel oder durch \\jump[][000AC4]{OM:FrQFT:Quantengravitation:Lichtbeugung}{gravitative Lichtbeugung}, keinen Einfluss auf seine Energie und damit auf seine Frequenz hat.'."\n".
                         'Zum anderen würde sich ein logischer Bruch innerhalb der Quanten-Fluss-Theorie ergeben, wenn dies nicht so wäre.'."\n".
                         'Denn der \\jump[][000AC4]{OM:FrQFT:NeuePhysik:Elementarteilchen-der-Materie}{String eines Materie-Elementarteilchens}, dessen Lichtbahn in ganz unterschiedlichen Raumrichtungen verläuft, muss an allen Stellen gleich schnell schwingen, sonst würde er zerreißen.'."\n"))),
                   array( 'text', array( text => array(
-                    'Über den Phytagoras stehen die örtliche, richtungsabhängige Rotations- und \\jump{OM:FrQFT:ZeitAlterungFrequenz:Alterung}{Lichtgeschwindigkeit}, \\term{v_{wq,rot}} und \\term{c}, mit der'."\n".
-                    '\\jump{OM:FrQFT:ZeitAlterungFrequenz:Zeit}{konstanten Wirkungsquanten-Geschwindigkeit} \\term{v_{wq}} im Zusammenhang:'."\n"))),
+                    'Über den Phytagoras stehen die örtliche, richtungsabhängige Rotations- und \\jump{OM:FrQFT:ZeitAlterungFrequenz:Alterung}{Lichtgeschwindigkeit}, \\term{v__{wq,rot}} und \\term{c}, mit der'."\n".
+                    '\\jump{OM:FrQFT:ZeitAlterungFrequenz:Zeit}{konstanten Wirkungsquanten-Geschwindigkeit} \\term{v__{wq}} im Zusammenhang:'."\n"))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{(Darauf eingehen – ggf. im extra Kapitel –, dass die Geometrie des Umfangs in bestimmten Situationen – an den Orten der kosmischen Beobachter und generell bei radialer Bewegungsrichtung in Bezug auf eine Zentralmasse – ein Kreis ist. Die begonnene Analyse zum Umfang dort einpflegen.)}'."\n"))),
                   array( 'equations',
@@ -493,7 +493,7 @@
                         'Die Helixbahnhypothese führt so zu einer nach meinem Wissen bisher unbekannten Abhängigkeit zwischen der inneren Frequenz und der Alterungszeit.'."\n"))),
                   array( 'text', array( text => array(
                     'Auf diese Weise löst sich sowohl der scheinbare Widerspruch zwischen innerer Frequenz und Zeit als auch das \\jump{OM:FrQFT:NeuePhysik:Problem-der-Zeit}{›Problem der Zeit‹} auf.'."\n",
-                      'Im nachfolgenden Kapitel wird die \\jump{OM:FrQFT:ZeitAlterungFrequenz:Wirkungsquanten-Geschwindigkeit}{Wirkungsquanten-Geschwindigkeit} \\term{v_{wq}} aus dem Pound-Rebka-Snider-Experiment berechnet.'."\n".
+                      'Im nachfolgenden Kapitel wird die \\jump{OM:FrQFT:ZeitAlterungFrequenz:Wirkungsquanten-Geschwindigkeit}{Wirkungsquanten-Geschwindigkeit} \\term{v__{wq}} aus dem Pound-Rebka-Snider-Experiment berechnet.'."\n".
                     'Setzt man diese hier ein, so ergibt sich, mit Hilfe der Formeln \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-LGKos-1} und \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-LGAenderungKos}, folgende Vereinfachung.'."\n".
                     'Um dabei die Formeln nicht zu kompliziert zu gestallten, wird mit um den \\jump{OM:FrQFT:ZeitAlterungFrequenz:Alterung}{strkturellen Kontext} bereinigten Größen gearbeitet:'."\n"))),
                   array( 'equations',
@@ -555,7 +555,7 @@
                     array_merge( $FrQFT_g_figure_ary_Wellenlaenge, array( name => 'OM:FrQFT:ZeitAlterungFrequenz:Fig-Wellenlaenge',
                                                           text => $FrQFT_g_figure_ary_Wellenlaenge_TextFrequenz))),
                   array( 'text', array( text => array(
-                    'Um die Größe der Wirkungsquanten-Geschwindigkeit \\term{v_{wq}} zu erhalten, ist es möglich die Rotationsgeschwindigkeit der Wirkungsquanten \\term{v_{wq,rot}} zu bestimmen'."\n".
+                    'Um die Größe der Wirkungsquanten-Geschwindigkeit \\term{v__{wq}} zu erhalten, ist es möglich die Rotationsgeschwindigkeit der Wirkungsquanten \\term{v__{wq,rot}} zu bestimmen'."\n".
                     'und erstere daraus zu berechnen, wie die \\jump{OM:FrQFT:ZeitAlterungFrequenz:Fig-Elapson}{\\name{OM:FrQFT:ZeitAlterungFrequenz:Fig-Elapson}} und die Formel'."\n".
                     '\\jump{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschw-2}{\\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschw-2}} verdeutlichen.'."\n".
                     'Denn die örtliche Lichtgeschwindikeit \\term{c} wird als gegeben angesehen, weil sie sich aus der \\jump{OM:FrQFT:Quantengravitation}{Quantengravitation der Elementarteilchen} ergibt:'."\n"))),
@@ -571,7 +571,7 @@
                 'Das Pound-Rebka-Snider-Experiment')),
                   array( 'text', array( text => array(
                     'Das Pound-Rebka-Snider-Experiment\\footnote{\\const{FrQFT_g_footnote_text_PoundRebka}} \\color{*Bearb}{(Erwähnen! Das Pound-Rebka-Snider-Experiment und Maser-Experimente messen die gravitative Rot- und Blauverschiebung einer Lichtwelle, also die Detektorfrequenz einer Lichtwelle und nicht die innere Frequenz eines Photons. Messen Atomuhren die innere Frequenz von Materie-Elementarteilchen? Bei geringer Gravitation fallen beide Messergebnisse zusammen, aber bei hoher Gravitation nicht! (Graph erstellen?) Zur Verifikation wird der Zusammenfall bei geringer Gravitation an der Erdoberfläche oder im Weltraum nahe der Erde benutzt.)} – und verwandte Experimente, zusammenfassend einfach Pound-Rebka-Snider-Experiment genannt – bringt die örtliche Lichtgeschwindigkeit mit der inneren Frequenz in Verbindung.'."\n".
-                    'Das Experiment untersucht diesbezüglich, wie sich die relative Frequenzänderung \\term{_{yx}𝝂_{ph}} bei der Bewegung im Gravitationsfeld vom Ort \\term{y} zum Ort \\term{x} verhält:'."\n"))),
+                    'Das Experiment untersucht diesbezüglich, wie sich die relative Frequenzänderung \\term{__{yx}𝝂__{ph}} bei der Bewegung im Gravitationsfeld vom Ort \\term{y} zum Ort \\term{x} verhält:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'ZAF.Wq', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  {_{\overline{yx}}\nu_{ph}}  =  \frac{ {_{x}f_{ph}} - {_{y}f_{ph}} }{ {_{y}f_{ph}} }  }',
@@ -588,7 +588,7 @@
                                                footnote => 'Vgl. \\cite{Pound:PoundSniderExper1965}, Intruduction, S. B 788.'),
                     ))),
                   array( 'text', array( text => array(
-                    'Aus Sicht der Allgemeinen Relativitätstheorie bestätigt das Pound-Rebka-Snider-Experiment, dass der relative Alterungsfaktor \\term{⍺} auf der Erdoberfläche hinreichend genau in der gleichen Größenordnung von Eins ausgehend kleiner wird, wie die relative Frequenzdifferenz \\term{_{yx}𝝂_{ph}} größer wird.\\footnote[*Entwick]{\\const{FrQFT_g_text_PoundRebkaSnider_Steigung}}'."\n".
+                    'Aus Sicht der Allgemeinen Relativitätstheorie bestätigt das Pound-Rebka-Snider-Experiment, dass der relative Alterungsfaktor \\term{⍺} auf der Erdoberfläche hinreichend genau in der gleichen Größenordnung von Eins ausgehend kleiner wird, wie die relative Frequenzdifferenz \\term{__{yx}𝝂__{ph}} größer wird.\\footnote[*Entwick]{\\const{FrQFT_g_text_PoundRebkaSnider_Steigung}}'."\n".
                     'Deshalb kann folgende Näherung angenommen werden. \\color{*Bearb}{(Besser herleiten! Diese Näherung ergibt sich daraus, dass die Detektorfrequenz einer Lichtwelle und die innere Frequenz eines Photons bei sehr geringer Gravitation, z. B. an der Erdoberfläche, zusammenfallen.)}'."\n".
                     'Die Bedeutung hochgestellter Orte wird in den Abschnitten \\jumpname{*BeobNotation-Einfuehr} und \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:FormBewegRaum:Bw} beschreiben:'."\n"))),
                   array( 'equations',
@@ -674,7 +674,7 @@
                     'Wegen des Postulats der \\jump{*Wirkungsquanten-GeschwKonst-Einfuehr}{konstanten Wirkungsquanten-Geschwindigkeit} gilt diese Formel im gesamten Kosmos.'."\n".
                     'Dabei steht die Wirkungsquanten-Geschwindigkeit für die neue, \\jump{*LG-erhoete-LoesAnsatz}{erhöhte Lichtgeschwindigkeit}.'."\n",
                       'An Orten, die nahezu dem kosmischen Beobachter gleichen – wie der Erdoberfläche –, ist damit die Rotationsgeschwindigkeit der Wirkungsquanten nahezu gleich der'."\n".
-                    'Lichtgeschwindigkeitskonstaten \\term{_{0}c} – der Translationsgeschwindigkeit der Elapsonen-Strings.'."\n".
+                    'Lichtgeschwindigkeitskonstaten \\term{__{0}c} – der Translationsgeschwindigkeit der Elapsonen-Strings.'."\n".
                     'Dies ergibt sich aus Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschw-3}:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'ZAF.Wq', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -738,7 +738,7 @@
                     'In einem Schwarzen Loch existiert ein Kosmos und dessen Urknall entspricht der Entstehung des Schwarzen Lochs.'."\n".
                     'Folglich leben wir in einem \\jump{*Universum-fraktales-Herlei}{fraktalen Universum}.'."\n",
                       'Mit relativer Dichte ist eine bestimmte Dichte im Verhältnis zur \\jump{OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:EuklFlachKos}{durchschnittlichen Dichte} im Kosmos gemeint.'."\n".
-                    'Diese durchschnittliche Dichte findet sich an allen Orten des \\jump{OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:KosBeob}{kosmischen Beobachters} \\term{B_{0}}.'."\n",
+                    'Diese durchschnittliche Dichte findet sich an allen Orten des \\jump{OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:KosBeob}{kosmischen Beobachters} \\term{B__{0}}.'."\n",
                       'Im Idealisierten Fall besteht der hier untersuchte Bewegungsraum des Vakuums des Kosmos aus kreisrunden, nicht \\jump{*Elektromagnetische-Polar-Herlei}{elektromagnetisch polarisierten} Wirkungsquanten-Strings, den \\jump{*Elapsonen-Vakuum-Herlei}{Vakuum-Elapsonen}.'."\n".
                     'Die im Vakuum eingebetteten elektromagnetisch polarisierten \\jump{*Photonen-Herlei}{Photonen} und \\jump{*Elementarteilchen-Materie-Herlei}{Elementarteilchen der Materie} sind zum einen in ihrer Anzahl gegenüber'."\n".
                     'den Vakuum-Elapsonen zu vernachlässigen und zum anderen tragen sie in Bezug auf die nachfolgend entwickelte Relation die gleichen entscheidenden Eigenschaften wie diese.'."\n".
@@ -747,8 +747,8 @@
                                            
                 'Relative Wirkungsquanten-String-Dichte oder -String-Energiedichte des Kosmos')),
                   array( 'text', array( text => array(
-                    'Die \\hidden{mittlere} Wirkungsquanten-Dichte \\term{ρ_{ep,wq}} eines Elapsonen-Strings, die Wirkungsquanten-String-Dichte, ergibt sich aus der Anzahl seiner Wirkungsquanten \\term{n_{ep,wq}} im Verhältnis zur \\hidden{effektiven} Stringlänge \\term{u_{ep}}:'."\n".
-                    'Die Anzahl an Wirkungsquanten eines Strings \\term{n_{ep,wq}} ergibt sich nach Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQAnzAusEnergieVerhaelt} aus dem Verhältnis seiner Energie \\term{E_{ep}} zur Energie eines einzelnen Wirkungsquants \\term{E_{wq}}.'."\n".
+                    'Die \\hidden{mittlere} Wirkungsquanten-Dichte \\term{ρ__{ep,wq}} eines Elapsonen-Strings, die Wirkungsquanten-String-Dichte, ergibt sich aus der Anzahl seiner Wirkungsquanten \\term{n__{ep,wq}} im Verhältnis zur \\hidden{effektiven} String-Länge \\term{u__{ep}}:'."\n".
+                    'Die Anzahl an Wirkungsquanten eines Strings \\term{n__{ep,wq}} ergibt sich nach Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQAnzAusEnergieVerhaelt} aus dem Verhältnis seiner Energie \\term{E__{ep}} zur Energie eines einzelnen Wirkungsquants \\term{E__{wq}}.'."\n".
                     'Das Ergebnis vereinfacht sich weiter, wenn man weiß, dass nach Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQEnergieOrtUnabh} die Energie jedes Wirkungsquants im Kosmos für einen bestimmten Beobachter überall gleich groß ist, weil Wirkungsquanten \\jump{*Energieeinheiten-Masse-Impuls-Herlei}{Energieeinheiten} sind.'."\n".
                     'Der Wechsel des Orts der Beaobachtung ergibt sich für die Energie nach Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-EnergOrtsWechsel}:'."\n"))),
                   array( 'equations',
@@ -798,9 +798,9 @@
                 'Relative Elapsonen-Bahn-Dichte oder Elementarteilchen-Liniendichte des Kosmos')),
                   array( 'text', array( text => array(
                     'Um die relative Elapsonen-Dichte entlang ihrer Bewegungsbahn, die Elapsonen-Bahn-Dichte, zu berechnen, beginnt man mit der Berechnung der absoluten Elapsonen-Dichte auf einer Wegstrecke.'."\n".
-                    'Die Dichte ergibt sich dabei aus der Anzahl der Elapsonen \\term{n_{ep}} pro Wegstrecke \\term{w_{ep}}.'."\n".
-                    'Die Elapsonen bewegen sich mit der ortsüblichen Lichtgeschwindigkeit \\term{_{x}c} im dreidimensionalen Raum, die sich nach Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-LGAenderungKos} proportional zum absoluten Alterungsfaktor \\term{⍺} verändert.'."\n".
-                    'Deshalb stauen sich die hintereinanderher laufenden Elapsonen bei Verlangsamung umgekehrt proportional zum abnehmenden Alterungsfaktor auf, weil ihre Detektorwellenlänger \\term{λ_{ep,d}} sich entsprechend verringert (siehe \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Fig-Wellenlaenge}).'."\n".
+                    'Die Dichte ergibt sich dabei aus der Anzahl der Elapsonen \\term{n__{ep}} pro Wegstrecke \\term{w__{ep}}.'."\n".
+                    'Die Elapsonen bewegen sich mit der ortsüblichen Lichtgeschwindigkeit \\term{__{x}c} im dreidimensionalen Raum, die sich nach Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-LGAenderungKos} proportional zum absoluten Alterungsfaktor \\term{⍺} verändert.'."\n".
+                    'Deshalb stauen sich die hintereinanderher laufenden Elapsonen bei Verlangsamung umgekehrt proportional zum abnehmenden Alterungsfaktor auf, weil ihre Detektorwellenlänger \\term{λ__{ep,d}} sich entsprechend verringert (siehe \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Fig-Wellenlaenge}).'."\n".
                     'Dadurch sind auf der Wegstrecke umgekehrt proportional zum absoluten Alterungsfaktor mehr Elapsonen zu finden, als beim kosmischen Beobachter: \\color{*Bearb}{(Die Detektorwellenlängenveränderung der Elapsonen nach \\jumpname[*Bearb]{OM:FrQFT:ZeitAlterungFrequenz:FormBewegRaum:WqStr}, verschieben und hier dort hin verweisen (siehe \\jumpname[*Bearb]{OM:FrQFT:ZeitAlterungFrequenz:Fig-Wellenlaenge}).)}'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'ZAF.RED', equ_autonum_reset => false, latex_tech => 'MathJax', equ_autonum_reset => true, equ_list => array(
@@ -811,7 +811,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'So lässt sich die absolute Dichte der Elapsonen auf ihrer Bewegungsbahn im Kosmos einfach ausdrücken.'."\n",
-                      'Auf die absolute Dichter der Elapsonen auf ihrer Bewegungsbahn im kosmischen Druchschnitt kommt man dann, wenn man am Ort des kosmichen Beobachters \\term{B_{0}} schaut:'."\n"))),
+                      'Auf die absolute Dichter der Elapsonen auf ihrer Bewegungsbahn im kosmischen Druchschnitt kommt man dann, wenn man am Ort des kosmichen Beobachters \\term{B__{0}} schaut:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'ZAF.RED', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{   {_{\lowZero}\alpha}  =  1  }',
@@ -875,7 +875,7 @@
                     'Die \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Fig-RelatDichte} stellt die Relation in Form der Kehrwerte der Dichten dar;'."\n".
                     'zum einen, damit sich die interessanten Zusammanhänge nicht im Unendlichen abspielen;'."\n".
                     'und zum anderen, weil die Verhältnisse auf diese Weise eher denen einer Zentralmasse entsprechen.'."\n".
-                    'Denn der Kehrwert der Elapsonen-Bahn-Dichte ist nach Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-RelatEpBDicht} dem absoluten Alterungsfaktor \\term{_{x}⍺} gleich, der zu einer Masse hin bei steigender Gravitation abnimmt, bis er am Ereignishorizont zu Null wird.'."\n".
+                    'Denn der Kehrwert der Elapsonen-Bahn-Dichte ist nach Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-RelatEpBDicht} dem absoluten Alterungsfaktor \\term{__{x}⍺} gleich, der zu einer Masse hin bei steigender Gravitation abnimmt, bis er am Ereignishorizont zu Null wird.'."\n".
                     'Eine gedachte Zentralmasse würde sich im Diagramm im Nullpunkt befinden.'."\n",
                       'Doch wie ist das Diagramm nun zu interpretieren?'."\n".
                     'Das Diagramm zeigt, dass zur Zentralmasse hin nicht nur die Elapsonen-Bahn-Dichte, sondern auch die Wirkungsquanten-String-Dichte im Bewegungsraum, also letztendlich im \\jump{OM:FrQFT:Vakuum}{Vakuum}, ansteigt.'."\n"))),
@@ -895,7 +895,7 @@
                         'Danach ist diese Stelle ein Übergangspunkt von einer Fraktal-Ebene des \\jump[][*Concl]{*Universum-fraktales-Herlei}{Universums} auf eine andere; ein Phasenübergang.'."\n".
                       'Da dieser Übergang für eine Annäherung aus jeder Richtung auf die Zentralmasse gilt handelt es sich in Wirklichkeit um eine kugelförmige Übergangsfläche.'."\n".
                       'Und diese Übergangsfläche hat etwas mit den Schwarzen Löchern der Allgemeinen Relativitätstheorie gemein:'."\n".
-                      'Weil der absolute Alterungsfaktor \\term{_{x}⍺} gegen Null geht, kommt dort die Lichtgeschwindigkeit im dreidimensionalen Raum im Prinzip zum Stehen,'."\n".
+                      'Weil der absolute Alterungsfaktor \\term{__{x}⍺} gegen Null geht, kommt dort die Lichtgeschwindigkeit im dreidimensionalen Raum im Prinzip zum Stehen,'."\n".
                       'genau so, als wenn man sich einem Ereignishorizont\\footnote[*Concl]{\\const{FrQFT_g_footnote_text_EreignHori}}\\footnote[*Entwick]{\\const{FrQFT_g_text_Ereignishori}} eines Schwarzen Lochs nähern würde.'."\n".
                       'Die Verletzung der Wirkungsquanten-String-Anzahlerhaltung wäre folglich nach außen hin durch eine Art \\italic{Übergangshorizont}\\hidden{Ref: *Uebergangshorizont-Herlei} abgeschirmt.'."\n",
                         'Ich schließe also, die Relation von Wirkungsquanten-String- und Elapsonen-Bahn-Dichte zeigt zusammen mit den Erhaltungssätzen des Bewegungsraums'."\n".
@@ -938,7 +938,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Weil es nun komplexer wird, wurde ein \\jump{*BeobNotation-Einfuehr}{vor- und hochgestelltes Symbol} für den Ort eingeführt, von dem aus beobachtet wird.'."\n".
-                    'In diesem Fall eine \\term{0} für eine Beobachtung aus Sicht des kosmischen Beobachters \\term{B_{0}}, der von Orten mit im Kosmos durchschnittlicher Wirkungsquanten- und Elapsonen-Dichte aus beobachtet. \\\\'."\n",
+                    'In diesem Fall eine \\term{0} für eine Beobachtung aus Sicht des kosmischen Beobachters \\term{B__{0}}, der von Orten mit im Kosmos durchschnittlicher Wirkungsquanten- und Elapsonen-Dichte aus beobachtet. \\\\'."\n",
                       'Für die Änderung der Alterung im dreidimensionalen Raum ergab sich dann die Formel \\jump{OM:FrQFT:ZeitAlterungFrequenz:Equ-AltAenderungKos-2}{\\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-AltAenderungKos-2}}:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'ZAF.Bw', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -974,7 +974,7 @@
                     'Etwas komplexer sieht es aus, wenn die Schwingungen von Elemeantarteilchen und die mit ihnen verknupften Eigenschaften, wie Frequenz, Energie, Impuls und Masse,'."\n".
                     'an unterschiedlichen Orten im Bewegungsraum beobachtet werden.'."\n".
                     'Alle genannten Größen ändern sich proportional mit der Frequenz (siehe Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-EinsteinEnergieLichtQuant-1} \\color{*Bearb}{(weitere Formeln)}).'."\n".
-                    'Wenn man berücksichtigt, dass der vom \\jump{OM:FrQFT:ZeitAlterungFrequenz:Alterung}{strkturellen Kontext} bereinigte Umfang \\term{u_{ph}} sich nicht verändert, kann man für das Verhältnis der Frequenzänderung sagen:'."\n"))),
+                    'Wenn man berücksichtigt, dass der vom \\jump{OM:FrQFT:ZeitAlterungFrequenz:Alterung}{strkturellen Kontext} bereinigte Umfang \\term{u__{ph}} sich nicht verändert, kann man für das Verhältnis der Frequenzänderung sagen:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'ZAF.Bw', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{  {_{x}f_{ph}}  =  \sqrt{ 2 - {_{x}\alpha}^{2} } \cdot \frac{ {_{\lowZero}c} }{ {_{x}u_{ph}} }  }',
@@ -998,7 +998,7 @@
                   array( 'text', array( text => array(
                     'Die Wahrnehmung eines beliebigen Beobachters eines jeden Veränderungsprozesses, egal ob Bewegung oder Schwingung, irgendwo im Kosmos ist von seiner eigenen Alterung abhängig.'."\n".
                     'Diese Prozesse erscheinen ihm umgekehrt proportional zu seinem eigenen Alterungsfaktor im Kosmos.'."\n".
-                    'Altert er am Ort \\term{y} mit \\term{⍺} langsamer, läuft jeder von ihm am Ort \\term{x} beobachtete Prozess \\term{a_{pc}} umso schneller ab:'."\n"))),
+                    'Altert er am Ort \\term{y} mit \\term{⍺} langsamer, läuft jeder von ihm am Ort \\term{x} beobachtete Prozess \\term{a__{pc}} umso schneller ab:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'ZAF.Bw', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  {^{y}_{x}a_{pc}}  =  \\frac{ {^{0}_{x}a_{pc}} }{ {^{0}_{y}\alpha} }  }'),
@@ -1022,8 +1022,8 @@
                                            
                 'Wirkungsquanten-Strings')),
                   array( 'text', array( text => array(
-                    'Für alle Wirkunsgquanten-Strings gilt, dass die Gesamtenergie eines Elementarteilchen-Strings \\term{E_{ele}} die Summe der Energie \\term{E_{wq}} all seiner \\term{n_{ele,wq}} Wirkungsquanten ist (siehe Formel \\jumpname{OM:FrQFT:FirstPrinciples:Vortext:Equ-EnergieSumWQEnergie}).'."\n".
-                    'Dabei ist die Energie jedes Wirkungsquants \\term{E_{wq}} für den selben Beaobachter überall gleich groß, weil es sich um \\jump{*Energieeinheiten-Masse-Impuls-Herlei}{Energieeinheiten} handelt.'."\n".
+                    'Für alle Wirkunsgquanten-Strings gilt, dass die Gesamtenergie eines Elementarteilchen-Strings \\term{E__{ele}} die Summe der Energie \\term{E__{wq}} all seiner \\term{n__{ele,wq}} Wirkungsquanten ist (siehe Formel \\jumpname{OM:FrQFT:FirstPrinciples:Vortext:Equ-EnergieSumWQEnergie}).'."\n".
+                    'Dabei ist die Energie jedes Wirkungsquants \\term{E__{wq}} für den selben Beaobachter überall gleich groß, weil es sich um \\jump{*Energieeinheiten-Masse-Impuls-Herlei}{Energieeinheiten} handelt.'."\n".
                     'Für unterschiedliche Beobachter können die Energieeinheiten allerdings unterschiedlich groß sein.'."\n".
                     'Deshlab nehmen alle Beobachter die gleiche Anzahl an Wirkungsquanten in einem Elementarteilchen wahr, dass sich am selben Ort befindet:'."\n"))),
                   array( 'equations',

@@ -160,7 +160,7 @@
                     'Es gibt interessanterweise eine Struktur in der Physik, die immer Information ist, weil sie immer wirkt:'."\n".
                     'Das ist die Gravitation!'."\n",
                       'Die Gravitation entspringt der Energie aller Dinge, die als \\jump{OM:FrQFT:HeisenbergUnschaerfe}{granulare Struktur des Planckschen Wirkungsquantums interpretiert} werden kann.'."\n".
-                    'Denn Energie ist Masse nach \\term{E = m⋅c^{2}}.'."\n",
+                    'Denn Energie ist Masse nach \\term{E = m⋅c^^{2}}.'."\n",
                       'Das Plancksche Wirkungsquantum gilt demnach manchen Physikern also nicht umsonst als die grundlegende Informationseinheit.'."\n".
                     'Diese Einsicht führt schließlich zur \\jump{OM:FrQFT:Quantengravitation}{Quantengravitation der Elementarteilchen} der \\jump{OM:FrQFT:Home}{neuen Physik}.'."\n"))),
                     ))),

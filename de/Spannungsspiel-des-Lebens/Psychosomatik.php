@@ -914,6 +914,61 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik:Sterntetraeder-Stabil+Dynamik-Koerper'),
+                    )),
+              )
+          ); ?>
+
+
+          <! Die Sterntetraeder der Stabilität und Dynamik in unserem Körper >
+          <?php $Sc_g_equation_auto_num = 0; ?>
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SpaLeb:Psychosomatik:Sterntetraeder-Stabil+Dynamik-Koerper',
+              'Die physischen Merkabas in uns', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik:Aeusserer-Marionettenspieler', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\\bold{XXX:}',
+                    '• In unserem Körper gibt es, etwas vereinfachend betrachtet, zwei Sterntetraeder, die unsere stabil-dynamische Struktur veranschaulichen.',
+                    '– Ein Sterntetraeder ist im Rumpf:',
+                    '⋅ Er steht nicht auf der Spitze, sondern auf einem seiner Kreuze so, dass zwei der Spitzen dieses unteren Kreuzes zur Hüfte zeigen. Die anderen beiden zeigen zum Schambein und zum Steiß.',
+                    '⋅ Die Spitzen des oberen Kreuzes zeigen zu den Schultern und dem Brustbein sowie dem ausgeprägten Nackenwirbel.',
+                    '– Der andere Sterntetraeder ist im Kopf, vom Nacken beginnend:',
+                    '⋅ Er sitzt mit seinem unteren Kreuz genau auf dem oberen Kreuz des Sterntetraeders des Rumpfes.',
+                    '⋅ Zwei der gegenüberliegenden Spitzen zeigen auf die große Kaumuskulatur über den Ohren. Und die anderen beiden Spitzen zeigen zum Dritten Auge und zur Fontanelle.',
+                    '• Die Merkaba, der sogenannte \\jump{OM:NPYo:ExistenzLeichtigkeit:Vortext:Vektor-Gleichgewicht}{Thronwagen Gottes}, steht mit dem 3-dimensionalen Vektor-Gleichgewicht, dem Kuboktaeder, in direktem Zusammenhang, der die Stabilität des Raumes oder räumlicher Strukturen darstellt. Der Sterntetraeder hat eine tiefe religiös-esoterische Bedeutung.',
+                    ))),
+                      
+                  array( 'iframe',
+                    array_merge( $SpaLeb_g_iframe_ary_Merkaba, array( name => 'OM:SpaLeb:Psychosomatik:Sterntetraeder-Stabil+Dynamik-Koerper:LiveAni-Merkaba'))),
+
+                   array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n"))),
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik-Entscheidungen'),
                     )),
               )

@@ -390,7 +390,7 @@
                       
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Tübinger Forscher entdecken die älteste Flöte der Welt'),
-                        addtext => '\\footnote{Titel eines Artikels in der Badischen Zeitung, online. Vom 25.06.2009. URL: \\jump[https://www.badische-zeitung.de/suedwest-1/tuebinger-forscher-entdecken-die-aelteste-floete-der-welt--16384935.html]{}{https://www.badische-zeitung.de/suedwest-1/tuebinger-forscher-entdecken-die-aelteste-floete-der-welt--16384935.html}. Besucht am 05.07.2018.}')),
+                        addtext => '\\footnote{Titel eines Artikels in der Badischen Zeitung, online. Vom 25.06.2009. URL: \\url{https://www.badische-zeitung.de/suedwest-1/tuebinger-forscher-entdecken-die-aelteste-floete-der-welt--16384935.html}. Besucht am 05.07.2018.}')),
                       
                   array( 'text', array( text => array(
                     'Jeder halbwegs intelligente Mensch braucht nur einmal darüber nachzudenken und erkennt hoffentlich sogleich, dass diese Formulierung'."\n".

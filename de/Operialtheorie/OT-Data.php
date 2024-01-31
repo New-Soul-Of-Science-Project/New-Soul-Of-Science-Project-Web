@@ -21,7 +21,7 @@
       header_links_marginLeft => '355px',
       copy_right =>
         'Operialtheorie (OT) \\\\'."\n".
-        '© 1986–2023 by \\\\'."\n".
+        '© 1986–2024 by \\\\'."\n".
         'Wolfgang Huß und \\\\'."\n".
         'Media Line Digital e.K. \\\\'."\n".
         'is licensed under \\\\'."\n".

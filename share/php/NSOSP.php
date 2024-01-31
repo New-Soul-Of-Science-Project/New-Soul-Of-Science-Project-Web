@@ -68,6 +68,8 @@
   );
                            
   include $Glo_PathRel_back.'../de/Biordinalzahlen/BiOrd-Data.php';
+  include $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/FrQFT-Data.php';
+  include $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/NPT-Data.php';
   include $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/NPYo-Data.php';
   include $Glo_PathRel_back.'../de/New-Soul-Of-Science-Academy/NSOSA-Data.php';
   include $Glo_PathRel_back.'../de/Operialtheorie/OT-Data.php';
@@ -83,7 +85,7 @@
   
   $FrQFT_g_text_HinwKosBeob                    = '\\italic{Die nachfolgenden Erklärungen werden aus Sicht eines \\jump{*KosmBeob-Herlei}{kosmischen Beobachters} beschrieben.}';
   $FrQFT_g_text_Ereignishori                   = '\\color{*Entwick}{Es handelt sich im Fall der Quanten-Fluss-Theorie nicht wirklich um einen Eregnishorizont im Sinne der Allgemeinen Relativitätstheorie. Wie genau sich die Dinge dort Verhalten, wo sich die Elapsonen stauen, ist zu untersuchen. Klar scheint, dass in dieser Theorie von außen betrachtet kein Elementarteilchen unzerstört durch den Übergangshorizont gehen kann. Dann ist dies auch aus Sicht des Elementarteilchens nicht möglich. \\color{*Bearb}{(Literatur: Artikel GEO 10/2014, "Wie schwarz ist Schwarz?", S. 130–144.) (Thema auf die Diskussionsseite aufnehmen.)}}';
-  $FrQFT_g_text_PoundRebkaSnider_Steigung      = '\\color{*Entwick}{Dies ist mit Sicherheit richtig. Ich meine ich hatte dies vor Jahren irgendwo gelesen und daher übernommen. Leider konnte ich es bisher nicht wieder finden oder ersehen, woher ich es abgeleitet hatte. Dies ist also heraus zu finden. \\color{*Bearb}{Alternativ zeigen, dass die Steigung der Formel \\term{g⋅h/c^{2}} aus dem Pound-Rebka-Snider-Experiment entsprechend passt. Beziehungsweise \\term{Δ𝝂/𝝂_{0} = – Δφ_{g}/c^{2}} , vgl. \\cite{Pound:PoundSniderExper1965}, S. B 788.}}';
+  $FrQFT_g_text_PoundRebkaSnider_Steigung      = '\\color{*Entwick}{Dies ist mit Sicherheit richtig. Ich meine ich hatte dies vor Jahren irgendwo gelesen und daher übernommen. Leider konnte ich es bisher nicht wieder finden oder ersehen, woher ich es abgeleitet hatte. Dies ist also heraus zu finden. \\color{*Bearb}{Alternativ zeigen, dass die Steigung der Formel \\term{g⋅h/c^^{2}} aus dem Pound-Rebka-Snider-Experiment entsprechend passt. Beziehungsweise \\term{Δ𝝂/𝝂__{0} = – Δφ_{g}/c^^{2}} , vgl. \\cite{Pound:PoundSniderExper1965}, S. B 788.}}';
   $FrQFT_g_text_SymmetrieBruchFarbpol          = 'Der kreisrunde Vakuum-Elapsonen-String ist der symmetrischste denkbare Wirkungsquanten-String.'."\n".
                                                    'Durch einen Symmetriebruch, ausgelöst durch ihre Wechselwirkung innerhalb des Strings, sind die sich eigentlich gradlinig bewegenden Wirkungsquanten auf eine Helixspiralbahn ausgelenkt.'."\n".
                                                    'Sie laufen nun auf dem tiefsten Ring des Sombrero-Potentials eines Felds, dass dem Higgs-Feld sehr ähnelt.'."\n".
@@ -126,11 +128,11 @@
   $FrQFT_g_zitat_BuckminsterFuller_StartingPoint =
                   array( 'text', array( Shape  => 'quote', text => array(
                         'The vector equilibrium is the zero starting point for happenings or nonhappenings: it is the empty theater and empty circus and empty Universe ready to accommodate any act and any audience.'."\n"),
-                        addtext => '~Richard Buckminster Fuller\\footnote{Buckminster Fuller, Richard, \\jump[http://www.rwgrayprojects.com/SynergeticsDictionary/SD.html]{}{SYNERGETICS} (2nd. Ed.) at Sec. 503.03; 11 Dec\'75. \\\\ Internet: \\\\ Cosmometry, Vector Equilibrium & Isotropic Vector Matrix. URL: \\jump[https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix]{}{https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix}.}'));
+                        addtext => '~Richard Buckminster Fuller\\footnote{Buckminster Fuller, Richard, \\jump[http://www.rwgrayprojects.com/SynergeticsDictionary/SD.html]{}{SYNERGETICS} (2nd. Ed.) at Sec. 503.03; 11 Dec\'75. \\\\ Internet: \\\\ Cosmometry, Vector Equilibrium & Isotropic Vector Matrix. URL: \\url{https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix}.}'));
   $FrQFT_g_zitat_BuckminsterFuller_StartingPoint_TranslatedTo_German =
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Das vektorielle Gleichgewicht ist der Nullpunkt für Ereignisse oder Nicht-Ereignisse: Es ist das leere Theater, der leere Zirkus und das leere Universum, das bereit ist, jede Handlung und jedes Publikum aufzunehmen.'."\n"),
-                        addtext => '~Richard Buckminster Fuller\\footnote{Buckminster Fuller, Richard, \\jump[http://www.rwgrayprojects.com/SynergeticsDictionary/SD.html]{}{SYNERGETICS} (2nd. Ed.) at Sec. 503.03; 11 Dec\'75. \\\\ Internet: \\\\ Cosmometry, Vector Equilibrium & Isotropic Vector Matrix. URL: \\jump[https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix]{}{https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix}.} \\small{\\italic{Übersetzt ins Deutsche mit \\jump[https://www.deepl.com/translator]{}{DeepL Übersetzer}}}'));
+                        addtext => '~Richard Buckminster Fuller\\footnote{Buckminster Fuller, Richard, \\jump[http://www.rwgrayprojects.com/SynergeticsDictionary/SD.html]{}{SYNERGETICS} (2nd. Ed.) at Sec. 503.03; 11 Dec\'75. \\\\ Internet: \\\\ Cosmometry, Vector Equilibrium & Isotropic Vector Matrix. URL: \\url{https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix}.} \\small{\\italic{Übersetzt ins Deutsche mit \\jump[https://www.deepl.com/translator]{}{DeepL Übersetzer}}}'));
   
   $NPYo_g_angebot_IchGebeDirNaPhilYoga =
                   array( 'text', array( Shape => 'italic', text => array(
@@ -150,7 +152,7 @@
                         'Als wir ZIST aufbauten galten 18°C als eine angenehme Wohnzimmertemperatur.'."\n".
                         'Heute sind wir bei 23.'."\n".
                         'Das heißt, wir verbrauchen alle Energie, im uns Zusammenreißen, halten, irgendwie halten, uns hoch halten und so weiter, statt im Lustvollen Leben.'."\n"),
-                        addtext => '\\footnote{\\cite{KenFM:ImGespraechMitWolfBuentig:2017}, \\quote{Ich nenne das Normopathie. Das Leben nach den Normen, unter Vernachlässigung des Wissens, worum es bei mir jetzt geht. …}, ab Sek. 1:12:20. \\\\ Die ZIST gemeinnützige GmbH (Zentrum für Individual- und Sozialtherapie) finden sie unter: \\jump[https://www.zist.de][]{}{https://www.zist.de}.}'));
+                        addtext => '\\footnote{\\cite{KenFM:ImGespraechMitWolfBuentig:2017}, \\quote{Ich nenne das Normopathie. Das Leben nach den Normen, unter Vernachlässigung des Wissens, worum es bei mir jetzt geht. …}, ab Sek. 1:12:20. \\\\ Die ZIST gemeinnützige GmbH (Zentrum für Individual- und Sozialtherapie) finden sie unter: \\url{https://www.zist.de}.}'));
   
   $SpaLeb_g_zitat_Fliessbach_ART1998_BestaetigMachprinzip =
                     array( 'text', array( Shape  => 'quote', text => array(
@@ -164,7 +166,11 @@
 
   
   $NSOSP_g_footnote_text_AbelscheGruppe         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AbelscheGruppe:2022}.';
+  $NSOSP_g_footnote_text_ArchimedischesAxiom    = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:ArchimedischesAxiom:2023}.';
+  $NSOSP_g_footnote_text_ArchimedischGeordneterKoerper = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:GeordneterKoerper:2022}, Strukturaussagen. \\\\ Vgl. \\cite{wiki:ArchimedischesAxiom:2023}.';
   $NSOSP_g_footnote_text_Arithmetik             = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Arithmetik:2015}.';
+  $NSOSP_g_footnote_text_GeordneterKoerper      = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:GeordneterKoerper:2022}.';
+  $NSOSP_g_footnote_text_NullIstTeilVonPositiv  = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:GeordneterKoerper:2022}, Definition.';
   $NSOSP_g_footnote_text_Ordinalzahl            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ordinalzahl:2021}.';
   $NSOSP_g_footnote_text_KoerperAlgebra         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:KoerperAlgebra:2023}.';
   $NSOSP_g_footnote_text_PeanoAxiome            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:PeanoAxiome:2021}, Axiome, Ursprüngliche Formalisierung.';
@@ -185,7 +191,7 @@
   $FrQFT_g_footnote_text_ARTVarZeit             = 'Vgl. \\cite{Kiefer:DoesTimeExistInQuantumGravity2009}, S. 2.\\hidden{Er hat dazu auch ein Buch: C. Kiefer, Quantum Gravity, second edition (Oxford University Press, Oxford, 2007).} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Kiefer:WegZurQG2012}, S. 37.';
   $FrQFT_g_footnote_text_Aeskulapstab           = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Aeskulapstab:2019}.';
   $FrQFT_g_footnote_text_BasTModDeBroglieFreq   = 'Vgl. \\cite{Giese:TheStructureOfMatter:2004}, 1 Introduction, S. 1.';
-  $FrQFT_g_footnote_text_BasisteilchenMGravityLKFormel = 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, Speed Reduction in Detail, S. 20-22, hier Formel C.8, S. 22. Die erste Variable rechts neben dem Gleichheitszeichen \\term{w_{0}} ist dort mit \\term{r} benannt. Diese Benennung ist fehlerhaft, weil es eine weitere Variable \\term{r} unter dem Bruch gibt, die von der ersten unabhängig ist. Beide müssen also unterschieden werden, weil die erste neben dem Gleichheitszeichen eine generelle geometrische Ausdehnung von Strukturen meint, während die zweite den Abstand vom Zentrum einer Zentralmasse bedeutet. Folgerichtig habe ich dann die Variable \\term{r_{red}} bei Giese in \\term{d_{red}} umbenannt, weil diese die Reduktion der Ausdehnung einer generellen Struktur meint. Die Konstante \\term{c} habe ich wegen der Eindeutigkeit in \\term{c_{0}} umbenannt.';
+  $FrQFT_g_footnote_text_BasisteilchenMGravityLKFormel = 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, Speed Reduction in Detail, S. 20-22, hier Formel C.8, S. 22. Die erste Variable rechts neben dem Gleichheitszeichen \\term{w__{0}} ist dort mit \\term{r} benannt. Diese Benennung ist fehlerhaft, weil es eine weitere Variable \\term{r} unter dem Bruch gibt, die von der ersten unabhängig ist. Beide müssen also unterschieden werden, weil die erste neben dem Gleichheitszeichen eine generelle geometrische Ausdehnung von Strukturen meint, während die zweite den Abstand vom Zentrum einer Zentralmasse bedeutet. Folgerichtig habe ich dann die Variable \\term{r__{red}} bei Giese in \\term{d__{red}} umbenannt, weil diese die Reduktion der Ausdehnung einer generellen Struktur meint. Die Konstante \\term{c} habe ich wegen der Eindeutigkeit in \\term{c__{0}} umbenannt.';
   $FrQFT_g_footnote_text_BasisteilchenMGravityLKMechanis = 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, Speed Reduction in Detail, S. 20-22, hier in der Entwicklung der Formel C.8, S. 22.';
   $FrQFT_g_footnote_text_BasisteilchenMGravity  = 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, 3 Relationship between Gravity and the Basic Particle Model, S. 4-6, hier S. 5-6.';
   $FrQFT_g_footnote_text_ComptonFrequenz        = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 17 Die kosmischen Zahlen, S. 516-542, hier S. 518-523. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Compton-Effekt:2015}, Compton-Wellenlänge. Die Compton-Frequenz lässt sich aus der Compton-Wellenlänge berechnen.';
@@ -344,9 +350,12 @@
   $SpaLeb_g_footnote_text_Zwerchfell            = 'Internet: \\\\ Vgl. \\cite{Schumann:DasZwerchfellIstDerAtemmuskelSchlechthin:2011}.';
 
   $SupNum_g_footnote_text_AlgebraischeZahl      = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AlgebraischeZahl:2022}.';
+  $SupNum_g_footnote_text_Binomialkoeffizient   = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Binomialkoeffizient:2023}.';
+  $SupNum_g_footnote_text_EulerscheZahl         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:EulerscheZahl:2023}.';
   $SupNum_g_footnote_text_FundamentalsatzDerArithmetik = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Primfaktorzerlegung:2022}, Fundamentalsatz der Arithmetik.';
   $SupNum_g_footnote_text_Primorial             = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Primorial:2015}.';
   $SupNum_g_footnote_text_PrimorialWikiWerte    = 'Vgl. \\cite{wiki:Primorial:2015}, Eigenschaften, Grafik und Tabelle mit Beispielwerten.';
+  $SupNum_g_footnote_text_KomplexeZahl          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:KomplexeZahl:2024}.';
   $SupNum_g_footnote_text_LexikographischeOrdnung = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:LexikographischeOrdnung:2023}. \\\\ Vgl. \\cite{wiki:Stellenwertsystem:2023}, Lexikographische Ordnung.';
   $SupNum_g_footnote_text_Maechtigkeit          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:MaechtigkeitMathematik:2023}.';
   $SupNum_g_footnote_text_RationaleZahl         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:RationaleZahl:2022}.';
@@ -409,8 +418,8 @@
                                                                  'Jedes einzelne Wirkungsquant des Strings erzeugt ständig neue, virtuelle Wirkungsquanten, die ringförmig um den und'."\n".
                                                                  'senkrecht zum String abgestrahlt werden.'."\n".
                                                                  'Ihre Wirkung nimmt beim Abstand \\term{r} zum String nur mit \\term{1/r} ab.'."\n".
-                                                                 'Bei doppelter Energie und Masse \\term{m_{ele}} des Strings halbiert sich sein Radius \\term{r_{ele}} und vervierfacht sich seine Wirkungsquanten-Dichte.'."\n".
-                                                                 'Seine Graviradiation verdoppelt sich aber nur, weil die Länge \\term{Δt_{vwq}} seiner abgestrahlten Impulse sich durch die doppelte Winkelgeschwindigkeit \\term{ω_{ele}}'."\n".
+                                                                 'Bei doppelter Energie und Masse \\term{m__{ele}} des Strings halbiert sich sein Radius \\term{r__{ele}} und vervierfacht sich seine Wirkungsquanten-Dichte.'."\n".
+                                                                 'Seine Graviradiation verdoppelt sich aber nur, weil die Länge \\term{Δt__{vwq}} seiner abgestrahlten Impulse sich durch die doppelte Winkelgeschwindigkeit \\term{ω__{ele}}'."\n".
                                                                  'halbiert.');
   
   //$FrQFT_g_figure_ary_GraviLeptonLichtbahn      = array( fig_file_name => 'Gravi_Lepton-Lichtbahn_v08', fig_alt_description => 'Störung der Lichtbahn durch virtuelle Wirkungsquanten', width => '700px', height => '234px', name => 'set local',
@@ -431,8 +440,8 @@
                                                          text => 'Die von der Masse ausgesandten virtuellen Wirkungsquanten (Wirkungsquanten-Impulskegel als Störungswellen) verringern'."\n".
                                                                  'die Geschwindigkeit der Wirkungsquanten eines vorbeifliegenden Photons umso stärker,'."\n".
                                                                  'je näher sie der Masse sind. Dadurch verringert sich die Wellenlänge'."\n".
-                                                                 '\\term{λ_{innen}} des Photons auf der der Masse zugewandten Seite stärker'."\n".
-                                                                 'als \\term{λ_{außen}} auf der abgewandten Seite.'."\n".
+                                                                 '\\term{λ__{innen}} des Photons auf der der Masse zugewandten Seite stärker'."\n".
+                                                                 'als \\term{λ__{außen}} auf der abgewandten Seite.'."\n".
                                                                  'Das Photon wird zur Masse hin gebeugt.');
   
   $FrQFT_g_figure_ary_GravitationspotMulti      = array( fig_file_name => 'FrQFT/Gravi-Potenzial-Multipol_v05', fig_alt_description => 'Mutlipoles, weiträumiges Gravitationspotenzial', width => '489px', height => '367px', name => 'set local!',
@@ -463,24 +472,24 @@
                                                                   '\\const{FrQFT_g_text_WQSWQMenge}');
   
   $FrQFT_g_figure_ary_LeptonELadung             = array( fig_file_name => 'Lepton_geladen_v09', fig_alt_description => 'Elektrisch geladenes Lepton', width => '700px', height => '374px', name => 'set local!',
-                                                         text => '\\color{*Bearb}{(Die Grafik enthält einen Rechenfehler und muss korrigiert werden! \\term{r_{gr}} muss in \\term{r_{wq}} umbenannt werden.)} Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n_{phase} = n_{wel} / n_{polwel} = 6/1 = 6}.'."\n".
+                                                         text => '\\color{*Bearb}{(Die Grafik enthält einen Rechenfehler und muss korrigiert werden! \\term{r__{gr}} muss in \\term{r__{wq}} umbenannt werden.)} Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n__{phase} = n__{wel} / n__{polwel} = 6/1 = 6}.'."\n".
                                                                  'Die Wirkungsquanten eines Wirkungsquanten-Strings mit wechselnder Wirkungsquanten-Dichte bewegen sich auf einer doppelt geschachtelten, helixförmigen'."\n".
                                                                  'Spiralbahn um ein gemeinsames Rotationszentrum.'."\n".
                                                                  'In der gezeigten Struktur blinkt das Lepton mit der De-Broglie-Frequenz in einem Wechsel zwischen einer leicht positiven'."\n".
                                                                  'und einer stärker negativen Polarisation und damit elektrischen Ladung.'."\n".
                                                                  'Aus weitem Blickwinkel erscheint das Lepton im Mittel vornehmlich elektrisch negativ geladen, während von nahem die differenzierte'."\n".
                                                                  'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
-                                                                 'Der Normradius \\term{r_{0}} ist dabei die Bezugseinheit mit \\term{r_{0} = ℏ / (m_{lep} ⋅ c_{0})}.');
+                                                                 'Der Normradius \\term{r__{0}} ist dabei die Bezugseinheit mit \\term{r__{0} = ℏ / (m__{lep} ⋅ c__{0})}.');
   
   $FrQFT_g_figure_ary_LeptonENeutral            = array( fig_file_name => 'Lepton_neutral_v09', fig_alt_description => 'Elektrisch neutrales Lepton', width => '700px', height => '292px', name => 'set local!',
-                                                         text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n_{phase} = n_{wel} / n_{polwel} = 12/2 = 6}.'."\n".
+                                                         text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n__{phase} = n__{wel} / n__{polwel} = 12/2 = 6}.'."\n".
                                                                  'Die Wirkungsquanten eines Wirkungsquanten-Strings mit wechselnder Wirkungsquanten-Dichte bewegen sich auf einer doppelt geschachtelten, helixförmigen'."\n".
                                                                  'Spiralbahn um ein gemeinsames Rotationszentrum.'."\n".
                                                                  'In der gezeigten Struktur blinkt das Lepton mit der De-Broglie-Frequenz in einem Wechsel zwischen einer positiven'."\n".
                                                                  'und einer gleich großen negativen Polarisation und ist damit ohne elektrische Ladung.'."\n".
                                                                  'Aus weitem Blickwinkel erscheint das Lepton im Mittel vornehmlich elektrisch neutral, während von nahem die differenzierte'."\n".
                                                                  'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
-                                                                 'Der Normradius \\term{r_{0}} ist dabei die Bezugseinheit mit \\term{r_{0} = ℏ / (m_{lep} ⋅ c_{0})}.');
+                                                                 'Der Normradius \\term{r__{0}} ist dabei die Bezugseinheit mit \\term{r__{0} = ℏ / (m__{lep} ⋅ c__{0})}.');
   
   $FrQFT_g_figure_ary_LeptonQuarkSpinAnti       = array( fig_file_name => 'FrQFT/Lepton-Quark-Spins-Anti-v09', fig_alt_description => 'Leptonen und Quarks - Verhältnis von Spins und Antiteilchen', width => '660px', height => '221px', name => 'set local',
                                                          text => 'Die Darstellung zeigt die räumlichen Verhältnisse des inneren Spins in Relation zum normalen, äußeren Spin in Bezug auf Teilchen und ihre Antiteilchen.'."\n".
@@ -509,7 +518,7 @@
                                                                   'Die elektromagnetische Polarisation rotiert entgegengesetzt zu den Fundamentalteilchen.');
   
   $FrQFT_g_figure_ary_PoundRebkaSnider          = array( fig_file_name => 'Pound-Repka-Snider_Exp_v03', fig_alt_description => 'Pound-Repka-Snider-Experiment', width => '514px', height => '187px', name => 'set local!',
-                                                         text => '\\color{*Bearb}{(Grafik: Vermerken, das \\term{v_{wq}} konstant ist und der erhöhten LG entspricht! \\term{v_{wq} =} Pythagoras hinschreiben.)} Die Darstellung zeigt, unter welchen Bedingungen das Pound-Rebka-Snider-Experiment mit der Quanten-Fluss-Theorie zusammenfällt.'."\n".
+                                                         text => '\\color{*Bearb}{(Grafik: Vermerken, das \\term{v__{wq}} konstant ist und der erhöhten LG entspricht! \\term{v__{wq} =} Pythagoras hinschreiben.)} Die Darstellung zeigt, unter welchen Bedingungen das Pound-Rebka-Snider-Experiment mit der Quanten-Fluss-Theorie zusammenfällt.'."\n".
                                                                   'Der Wirkungsquanten-Geschwindigkeitsvektor – am Kreismittelpunkt ansetzend – stellt die Geschwindigkeitseigenschaft der drei Lichtgeschwindigkeiten – Einsteinsche Lichtgeschwindigkeit, Rotations-Lichtgeschwindigkeit und erhöhte Lichtgeschwindigkeit – dar.');
   
   $FrQFT_g_figure_ary_QuarkProton               = array( fig_file_name => 'FrQFT/Quark-Protron-v01', fig_alt_description => 'XXX - XXX', width => '660px', height => '221px', name => 'set local',
@@ -519,7 +528,7 @@
   
   $FrQFT_g_figure_ary_RelatDichte               = array( fig_file_name => 'Elapson-Graviton-Dicht_v04', fig_alt_description => 'Relation der Wirkungsquanten-String- zur Elapsonen-bahn-Dichte', width => '700px', height => '237px', name => 'set local!',
                                                          text => '\\color{*Bearb}{(Die y-Achse entspricht dem Alterungsfaktor Alpha. Mit Gleichheitszeichen eintragen? • Ist die Bezeichnung Ereignishorizont wirklich zutreffend? Es ist nicht so einer wie in der ART. Übergangshorizont wäre vielleicht besser. (Siehe Artikel GEO 10/2014, "Wie schwarz ist Schwarz?", S. 130–144.) Die Bilddatei sollte nicht mehr den Namen Graviton tragen.)} Das Diagramm stellt auf der Horizontal-Achse den Kehrwert der relativen Wirkungsquanten-String-Dichte dar; je kleiner der Horizontal-Achswert, desto höher die Wirkungsquanten-Dichte.'."\n".
-                                                                 'Die Vertikal-Achse hingegen stellt die entsprechende relative Elapsonen-Bahn-Dichte auch als Kehrwert dar, der nach Formel \\jumpname[*FigDescr]{OM:FrQFT:ZeitAlterungFrequenz:Equ-RelatEpBDicht} dem absoluten Alterungsfaktor \\term{_{x}⍺} entspricht; je kleiner der Vertikal-Achswert, desto höher die Elapsonen-Bahn-Dichte.'."\n".
+                                                                 'Die Vertikal-Achse hingegen stellt die entsprechende relative Elapsonen-Bahn-Dichte auch als Kehrwert dar, der nach Formel \\jumpname[*FigDescr]{OM:FrQFT:ZeitAlterungFrequenz:Equ-RelatEpBDicht} dem absoluten Alterungsfaktor \\term{__{x}⍺} entspricht; je kleiner der Vertikal-Achswert, desto höher die Elapsonen-Bahn-Dichte.'."\n".
                                                                  'Eine Zentrale Masse kann sich mit ihrem Mittelpunkt im Nullpunkt gedacht werden, wobei ein Schwarzes Loch am eingezeichneten Ereignishorizont seinen Schwarzschild-Radius hat.');
   
   $FrQFT_g_figure_ary_UnpolPhotFarb6Pol         = array( fig_file_name => 'FrQFT/Unpolarisiertes-Photon-Farbpolarisation-6polig-v01', fig_alt_description => 'Unpolarisiertes Photon, Farbpolarisation (6-polig)', width => '380px', height => '500px', name => 'set local!',
@@ -705,6 +714,9 @@
                                                          text => 'Der Kundalini-Prozess kommt nach dem Yoga Vidja Kundalini Portal aus dem Tantra des Hinduismus und ist auch in den tibetanischen Buddhismus eingegangen.'."\n".
                                                                   'Die Darstellung bringt diesen Prozess mit dem Achtsamkeitsprozess in Zusammenhang, mit dem er, je nach Perspektive, identisch oder ein Teil von ihm ist.');
 
+  $SpaLeb_g_iframe_ary_Merkaba                 = array( source => $Glo_PathRel_back.'../_Test/FrQFT JS Animations/Sterntetraeder-3D.html', width => '600px', height => '500px', name => 'set local',
+                                                         text => 'XXX'."\n");
+
   $SpaLeb_g_figure_ary_TomOriginalGesicht      = array( fig_file_name => 'Spannungsspiel-des-Lebens/Tom_Original_20160930_v1_1(7)', figFileType => 'jpeg', figPDF_is => false, fig_alt_description => 'Toms originales Gesicht', width => '204px', height => '300px', border => '1px', name => 'set local!',
                                                          text => 'Toms originales Gesicht.');
   $SpaLeb_g_figure_ary_TomGespiegeltesGesicht  = array( fig_file_name => 'Spannungsspiel-des-Lebens/Tom_Mirror_20160930_v1_1(7)', figFileType => 'jpeg', figPDF_is => false, fig_alt_description => 'Toms gespiegeltes Gesicht', width => '204px', height => '300px', border => '1px', name => 'set local!',
@@ -721,12 +733,12 @@
                                                                  'Untereinander dargestellt sind die verschachtelten Zahlengeraden, die jeweils darunter die unendlich kleine Umgebung'."\n".
                                                                  'um eine Zahl der darüber liegenden Ebene herum zeigt.'."\n".
                                                                  'Auf der unendlich kleinen, umgebenden Zahlengeraden ist jeweils eine bestimmte Zahl angegeben, die wieder eine solche Umgebung hat.'."\n".
-                                                                 'Die hier dargestellte Zahl ist in der Stellenwertsystem-Schreibweise: \\hidden{\\term{2,6⋅s^{2} + 0,5⋅s^{1} – 1,4⋅s^{0} + 3,5⋅s^{-1}  = 〈2,6〉〈0,5〉〈–1,4〉.〈3,5〉}}\\latexmath{ 〈2,6〉〈0,5〉〈–1,4〉.〈3,5〉 }');
+                                                                 'Die hier dargestellte Zahl ist in der Stellenwertsystem-Schreibweise: \\hidden{\\term{2,6⋅s^^{2} + 0,5⋅s^^{1} – 1,4⋅s^^{0} + 3,5⋅s^^{-1}  = 〈2,6〉〈0,5〉〈–1,4〉.〈3,5〉}}\\latexmath{ 〈2,6〉〈0,5〉〈–1,4〉.〈3,5〉 }');
   
   $SupNum_g_figure_ary_sGeomKonstruktTeilung   = array( fig_file_name => 'SN/s-geom-Konstrukt-Teilung-v02', fig_alt_description => 'Rhythmische Zerlegung der Eins durch natürliche Zahlen', width => '600px', height => '290px', name => 'set local!',
                                                          text => 'Die Grafik zeigt, wie durch die Projektion der Begrenzungspunkte aller regelmäßigen natürlichzahligen Teilstrecken auf die Einheitsstrecke,'."\n".
                                                                  'von der Eins an bis ins Unendliche, und durch das Interpolieren ihrer Begrenzungspunkte zu einem gleichmäßigen Rhythmus,'."\n".
-                                                                 'nach und nach als Abstand zwischen den Punkten die superiale Zahl \\term{s^{−1}} konstruiert wird.'."\n".
+                                                                 'nach und nach als Abstand zwischen den Punkten die superiale Zahl \\term{s^^{−1}} konstruiert wird.'."\n".
                                                                  'Als Begrenzungspunktanzahl, ohne die Eins, oder als Anzahl der Teilstrecken ergibt sich die superiale Basis \\term{s}.');
   
   $SupNum_g_figure_ary_sGeomKonstruktWiederholung = array( fig_file_name => 'SN/s-geom-Konstrukt-Wiederholung-v02', fig_alt_description => 'Rhythmische Wiederholung auf Basis natürlicher Zahlen', width => '600px', height => '290px', name => 'set local!',
@@ -739,8 +751,8 @@
                                                                  'Jedes einzelne Wirkungsquant des Strings erzeugt ständig neue, virtuelle Wirkungsquanten, die ringförmig um den und'."\n".
                                                                  'senkrecht zum String abgestrahlt werden.'."\n".
                                                                  'Ihre Wirkung nimmt beim Abstand \\term{r} zum String nur mit \\term{1/r} ab.'."\n".
-                                                                 'Bei doppelter Energie und Masse \\term{m_{ele}} des Strings halbiert sich sein Radius \\term{r_{ele}} und vervierfacht sich seine Wirkungsquanten-Dichte.'."\n".
-                                                                 'Seine Graviradiation verdoppelt sich aber nur, weil die Länge \\term{Δt_{vwq}} seiner abgestrahlten Impulse sich durch die doppelte Winkelgeschwindigkeit \\term{ω_{ele}}'."\n".
+                                                                 'Bei doppelter Energie und Masse \\term{m__{ele}} des Strings halbiert sich sein Radius \\term{r__{ele}} und vervierfacht sich seine Wirkungsquanten-Dichte.'."\n".
+                                                                 'Seine Graviradiation verdoppelt sich aber nur, weil die Länge \\term{Δt__{vwq}} seiner abgestrahlten Impulse sich durch die doppelte Winkelgeschwindigkeit \\term{ω__{ele}}'."\n".
                                                                  'halbiert.');
   
   
@@ -848,6 +860,8 @@
   $Glo_g_Site_ary = array_merge(
 
     $BiOrd_g_Site_ary,
+    $FrQFT_g_Site_ary,
+    $NPT_g_Site_ary,
     $NPYo_g_Site_ary,
     $nSOSa_g_Site_ary,
     $OT_g_Site_ary,
@@ -887,85 +901,6 @@
                 ),
          ),
 
-  /*'OM:FrQFT:XXX' =>
-    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/XXX',
-           url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/XXX',
-           titel => 'XXX - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
-           description => 'XXX',
-           keywords => 'XXX',
-           text_titel_h1 => 'XXX',
-           text_titel_short => 'XXX',
-           text_undertitel_h2 => 'XXX',
-           text_titel_discr_h3 => 'XXX',
-           jump_ary => array(
-                  'OM:FrQFT:XXX:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
-                ),
-         ),*/
-
-  'OM:FrQFT:' =>
-    array_merge( $nSOSp_g_info_wolfgangHuss,
-    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/',
-           url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/',
-           favicons_url_rel_opt => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/favicon/',
-           //header_pict_name => 'Fractal-Quantum-Flow-Theory_En.jpg',
-           //header_pict_alt => 'Fractal Quantum Flow Theory, Ideas of new Science',
-           name_short => 'FrQFT',
-           font_ary => array(
-                              '<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
-                              '<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
-                            ),
-           header_bgcolor => '#FFFFFF',
-           header_pict_name => 'FrQFT/FrQFT_header_v01_3.jpg',
-           header_pict_width => '930px',
-           header_pict_height => '177px',
-           header_pict_bgcolor => '#FFFFFF',
-           header_pict_alt => 'Fraktale Quanten-Fluss-Theorie, Organische Physik',
-           header_links_marginLeft => '336px',
-           copy_right => 'Fraktale Quanten-Fluss-Theorie (FrQFT) \\\\'."\n".
-                          '© 1990–2023 by \\\\'."\n".
-                          'Wolfgang Huß und \\\\'."\n".
-                          'Media Line Digital e.K. \\\\'."\n".
-                          'is licensed under \\\\'."\n".
-                          '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
-           litera_url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Literatur_de.php',
-           litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
-         )),
-   'OM:FrQFT:Home' =>
-    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/index.php',
-           url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/index.php',
-           titel => 'Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
-           //description => 'Vereinheitlichte Physik auf Basis eines selbstorganisierten, fraktalen Systems von lichtähnlichen, zu Strings verbundenen Wirkungsquanten.',
-           description => 'Ein Vorschlag zur Vereinheitlichung der Quanten- und Gravitationsphysik sowie der Kosmologie. Neue Physik auf Basis von sich selbst organisierenden Regelprozessen. Systeme von lichtähnlichen, zu Strings verbundenen Fundamentalteilchen sind Grundlage einer ›organischen Physik‹.',
-           keywords => '',
-           text_titel_h1 => 'Fraktale Quanten-Fluss-Theorie \\color{*TitleAdd}{\\small{(FrQFT)}}',
-           text_titel_short => 'Quanten-Fluss-Theorie',
-           //text_undertitel_h2 => 'Ein Vorschlag zur Vereinheitlichung der Physik',
-           text_undertitel_h2 => 'Ein Vorschlag zur Vereinheitlichung der Quanten- und Gravitationsphysik sowie der Kosmologie',
-           //text_titel_discr_h3 => 'Eine neue Physik – eine „organische Physik“ – auf Basis eines selbstorganisierten, fraktalen Systems von lichtähnlichen, zu Strings verbundenen Wirkungsquanten.',
-           //text_titel_discr_h3 => 'Eine neue Physik auf Basis von Regelprozessen. Selbstorganisierte, fraktale Systeme aus lichtähnlichen, zu Strings verbundenen Wirkungsquanten sind Grundlage einer ›organischen Physik‹',
-           //text_titel_discr_h3 => 'Neue Physik auf Basis von bio-ähnlichen strukturellen Regelprozessen. Selbstorganisierte, fraktale Systeme aus lichtähnlichen, zu Strings verbundenen Fundamentalteilchen sind Grundlage einer ›organischen Physik‹',
-           //text_titel_discr_h3 => 'Neue Physik auf Basis von strukturellen und vollständig selbstorganisierten Regelprozessen — Fraktal verschachtelte Systeme von lichtähnlichen, zu Strings verbundenen Fundamentalteilchen sind Grundlage einer ›organischen Physik‹',
-           //text_titel_discr_h3 => 'Neue Physik auf Basis von selbstorganisierten Regelprozessen — Systeme von lichtähnlichen, zu Strings verbundenen Fundamentalteilchen sind Grundlage einer ›organischen Physik‹',
-           text_titel_discr_h3 => 'Neue Physik auf Basis von sich selbst organisierenden Regelprozessen. Systeme von lichtähnlichen, zu Strings verbundenen Fundamentalteilchen sind Grundlage einer ›organischen Physik‹',
-           jump_ary => array(
-                  'OM:FrQFT:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
-                  'OM:FrQFT:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
-                ),
-         ),
-  'OM:FrQFT:Atommodell' =>
-    array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Atommodell_de.php',
-           url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Atommodell_de.php',
-           titel => 'Atommodell - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
-           description => 'XXX',
-           keywords => '',
-           text_titel_h1 => 'Atommodell',
-           text_titel_short => 'Atommodell',
-           text_undertitel_h2 => 'Warum stürtzt das Elektron nicht in den Atomkern oder wie verhalten sich Elektronen im Atom?',
-           //text_titel_discr_h3 => 'XXX',
-           jump_ary => array(
-                  'OM:FrQFT:Atommodell:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
-                ),
-         ),
   'OM:FrQFT:Ausblick' =>
     array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Ausblick_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Ausblick_de.php',
@@ -1134,11 +1069,12 @@
            text_titel_h1 => 'Elementarteilchenmodell mit Wirkungsquanten-Strings',
            text_titel_short => 'Elementarteilchenmodell',
            text_undertitel_h2 => 'Schwärme von Wirkungsquanten fügen sich zu Wirkungsquanten-Strings zusammen',
-           text_titel_discr_h3 => 'Eingebettet in einem Vakuum aus Wirkungsquanten sind die Wirkungsquanten-Strings der Elementarteilchen von einer Wolke aus virtuellen Teilchen umgeben. Die Geometrie ihres String verleiht ihnen ihre Eigenscchaften.',
+           text_titel_discr_h3 => 'Eingebettet in einem Vakuum aus Wirkungsquanten sind die Wirkungsquanten-Strings der Elementarteilchen von einer Wolke aus virtuellen Teilchen umgeben. Die geometrische Struktur ihres Strings verleiht ihnen ihre Eigenschaften.',
            jump_ary => array(
                   'OM:FrQFT:Elementarteilchen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
                              
+                    'OM:FrQFT:Elementarteilchen:Vortext:Ani-VakuumElapson' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
                     'OM:FrQFT:Elementarteilchen:Vortext:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
                              
                   'OM:FrQFT:Elementarteilchen:Elementarteilchen-mit-Ruhemasse' => array( headline_text => 'Elementarteilchen mit Ruhemasse', headline_text_short => 'Elementarteilchen mit Ruhemasse'),
@@ -1183,7 +1119,8 @@
                     'OM:FrQFT:Einleitung:Fundierung:Folge-LichtUhr-Mat' => array( headline_text => 'Folge: Die Lichtuhr ist realer Bestandteil der Materie', headline_text_short => 'Folge: Die Lichtuhr ist realer Bestandteil der Materie'),
                     'OM:FrQFT:Einleitung:Fundierung:Fig-GravitationspotMulti' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:FrQFT:Einleitung:Fundierung:Fig-Photon' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:Einleitung:Fundierung:Vakuum' => array( headline_text => 'Hypothese: Das Vakuum und wie es die Wechselwirkungen vermittelt', headline_text_short => 'Hypothese: Das Vakuum und wie es die Wechselwirkungen vermittelt'),
+                    'OM:FrQFT:Einleitung:Fundierung:Vakuum' => array( headline_text => 'Hypothese: Das Vakuum und wie es die Wechselwirkungen vermittelt'/*, headline_text_short => 'XXX'*/),
+                  'OM:FrQFT:Einleitung:PhysikNeuVerstehen' => array( headline_text => 'Physik neu verstehen'/*, headline_text_short => 'XXX'*/),
                 ),
          ),
   'OM:FrQFT:Fazit' =>
@@ -1843,70 +1780,6 @@
                 ),
          ),
 
-  'OM:NPT:' =>
-    array_merge( $nSOSp_g_info_wolfgangHuss,
-    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-der-Zeit/',
-           url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/',
-           name_short => 'NaturZeit',
-           font_ary => array(
-                              '<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
-                              '<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
-                            ),
-           header_pict_name => 'Organical-Matters_Logo_De.jpg',
-           header_pict_alt => 'Organical Matters Website, Ideen neuer Wissenschaft',
-           copy_right => 'Naturphilosophie der Zeit (NPT) \\\\'."\n".
-                          '© 2014–2023 by \\\\'."\n".
-                          'Wolfgang Huß und \\\\'."\n".
-                          'Media Line Digital e.K. \\\\'."\n".
-                          'is licensed under \\\\'."\n".
-                          '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
-           litera_url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/Literatur_de.php',
-           litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
-         )),
-  'OM:NPT:Home' =>
-    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-der-Zeit/index.php',
-           url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/index.php',
-           titel => 'Naturphilosophie der Zeit (NPT) - Deutsch',
-           // description => 'Naturphilosophie der Zeit (NPT) – der Djet-Neheh-Dualismus bringt die Begriffe Zeit, Existenz, Struktur, Veränderung oder Bewegung, Wechselwirkung, Symmetriebruch und Spannung in einen allgemeinen Zusammenhang.',
-           description => '\\name[undertitle]{OM:NPT:Home}. — \\name[description]{OM:NPT:Home}.',
-           keywords => '',
-           text_titel_h1 => 'Naturphilosophie der Zeit \\color{*TitleAdd}{\\small{(NPT)}}',
-           text_titel_short => 'Naturphilosophie der Zeit',
-           text_undertitel_h2 => 'Ein strukturelles Verständnis der dynamischen Existenz und ihrer Zeit',
-           text_titel_discr_h3 => 'Der Djet-Neheh-Dualismus bringt die Begriffe Struktur, Bewegung als deren Veränderung, Existenz, Zeit, Prozess, Wechselwirkung, Symmetriebruch und Spannung in einen allgemeinen Zusammenhang',
-           jump_ary => array(
-                  'OM:NPT:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
-                  'OM:NPT:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
-                ),
-         ),
-  'OM:NPT:Einleitung' =>
-    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-der-Zeit/Einleitung_de.php',
-           url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/Einleitung_de.php',
-           titel => 'Einleitung - Naturphilosophie der Zeit (NPT) - Deutsch',
-           description => 'Ein strukturelles Verständnis der Zeit.',
-           keywords => '',
-           text_titel_h1 => 'Einleitung',
-           text_titel_short => 'Einleitung',
-           text_undertitel_h2 => 'Die Struktur der Zeit aus der Perspektive der zeitlichen Aspekte Djet und Neheh verknüpft die Begriffe Existenz, Struktur, Veränderung oder Bewegung, Wechselwirkung, Spannung und Symmetriebruch',
-           //text_titel_discr_h3 => 'Vereinheitlichte Physik auf Basis eines selbstorganisierten, fraktalen Systems von lichtähnlichen, zu Strings verbundenen Wirkungsquanten.',
-           jump_ary => array(
-                  'OM:NPT:Einleitung:Arithmetik' => array( headline_text => 'Arithmetik', headline_text_short => 'Arithmetik'),
-                ),
-         ),
-   'OM:NPT:Literatur' =>
-    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-der-Zeit/Literatur_de.php',
-           url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-der-Zeit/Literatur_de.php',
-           titel => 'Literatur - Naturphilosophie der Zeit (NPT) - Deutsch',
-           description => 'Literatur zur strukturellen Naturphilosophie der Zeit.',
-           keywords => '',
-           text_titel_h1 => 'Literatur',
-           text_titel_short => 'Literatur',
-           text_undertitel_h2 => 'und Informationen',
-           //text_titel_discr_h3 => 'Vereinheitlichte Physik auf Basis eines selbstorganisierten, fraktalen Systems von lichtähnlichen, zu Strings verbundenen Wirkungsquanten.',
-           jump_ary => array(
-                ),
-         ),
-
   // 'OM:NPYo:' is in separate file in theme folder and included here.
   'OM:NPYo:Angebote-Veranstaltungen' =>
     array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Angebote-Veranstaltungen_de.php',
@@ -2202,7 +2075,7 @@
            header_pict_alt => 'New Soul Of Science Project, Knowledge And Care Helps',
            header_links_marginLeft => '369px',
            copy_right => 'New Soul Of Science Project (NSOSP) \\\\'."\n".
-                          '© 1986–2023 by \\\\'."\n".
+                          '© 1986–2024 by \\\\'."\n".
                           'Wolfgang Huß und \\\\'."\n".
                           'Media Line Digital e.K. \\\\'."\n".
                           'is licensed under \\\\'."\n".
@@ -2890,7 +2763,7 @@
            header_pict_alt => 'Vereinheitlichte Relativitätstheorie, in der Quanten-Fluss-Theorie',
            header_links_marginLeft => '383px',
            copy_right => 'Vereinheitlichte Relativitätstheorie (VRT) \\\\'."\n".
-                          '© 1990–2023 by \\\\'."\n".
+                          '© 1990–2024 by \\\\'."\n".
                           'Wolfgang Huß und \\\\'."\n".
                           'Media Line Digital e.K. \\\\'."\n".
                           'is licensed under \\\\'."\n".
@@ -3024,7 +2897,7 @@
            // author_image_width => '',
            // author_image_height => '',
            copy_right => 'Zahlensemantik (ZS) \\\\'."\n".
-                          '© 2010–2023 by \\\\'."\n".
+                          '© 2010–2024 by \\\\'."\n".
                           'Raimund Welsch \\\\'."\n".
                           'is licensed under \\\\'."\n".
                           '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
@@ -3292,7 +3165,7 @@
     echo '    <meta name="keywords"           content="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][keywords])).'">'."\n";
     echo '    <meta name="author"             content="Wolfgang Huss, info@nsosp.org">'."\n";
     echo '    <meta name="DC.Publisher"       content="MEDIA LINE DIGITAL e.K., info@media-line-digital.de">'."\n";
-    echo '    <meta name="DC.Date"            content="2023-09-18T19:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
+    echo '    <meta name="DC.Date"            content="2024-01-31T21:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
     echo '    <meta name="DC.Identifier"      content="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" scheme="DCTERMS.URI">'."\n";
     echo '    <meta rel="canonical"           href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" />'."\n";
     echo '    <meta name="DC.Language"        content="de">'."\n";
@@ -3348,7 +3221,7 @@
     echo '			<div id="navigation" class="navigation main-shadow-0-5-30 main-layer-2">'."\n";
     echo '        <br>'."\n";
     echo '        <br>'."\n";
-    echo '        <div id="NavigationMenu">'."\n";
+    echo '        <div id="NavigationMenu" class="tools-class-text">'."\n";
     echo '          <h3 align="left" style="padding-top: 16px; margin-bottom: 16px;"><a href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_rel]).'">'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_short])).'</a></h3>'."\n";
     To_f_headline_make();
     echo '        </div>'."\n";
@@ -3484,11 +3357,11 @@
     echo '        </ul>'."\n";
     echo '        </div>'."\n";
     echo '        <p align="center">'."\n";
-    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2023 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
+    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2024 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
     echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Impressum</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
-    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.33-d20230918-t1900" target="_blank">v9.33</a>'."\n";
+    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.34-d20240131-t2100" target="_blank">v9.34</a>'."\n";
     echo '        </p>'."\n";
     echo '			</div>'."\n";
     echo ''."\n";
@@ -3609,9 +3482,9 @@
     echo $offset.''."\n";
     echo $offset.''."\n";
     echo $offset.'    <p>'."\n";
-    echo $offset.'      <h1>'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_h1])).'</h1>'."\n";
+    echo $offset.'      <h1 class="tools-class-text">'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_h1])).'</h1>'."\n";
     if (array_key_exists( text_undertitel_h2, $Glo_g_Site_ary[$Glo_g_Site_activ]) && (0 < strlen( $Glo_g_Site_ary[$Glo_g_Site_activ][text_undertitel_h2])))
-      echo $offset.'      <h2 style="color: '.(To_f_Color('*SiteUndertitleH2', false)).'">'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_undertitel_h2])).'</h2>'."\n";
+      echo $offset.'      <h2 class="tools-class-text" style="color: '.(To_f_Color('*SiteUndertitleH2', false)).'">'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_undertitel_h2])).'</h2>'."\n";
     echo $offset.'    </p>'."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.''."\n";
@@ -3619,7 +3492,7 @@
     if (array_key_exists( text_titel_discr_h3, $Glo_g_Site_ary[$Glo_g_Site_activ]) && (0 < strlen( $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_discr_h3])))
     {
       echo $offset.'    <p>'."\n";
-      echo $offset.'      <h3 style="line-height: 1.4em;">'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_discr_h3])).'</h3>'."\n";
+      echo $offset.'      <h3 class="tools-class-text" style="line-height: 1.4em;">'.(To_f_Text_replace_html( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][text_titel_discr_h3])).'</h3>'."\n";
       echo $offset.'    </p>'."\n";
       echo $offset.'    <br>'."\n";
       echo $offset.''."\n";
@@ -3644,7 +3517,7 @@
     echo $offset.''."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.'    <p>'."\n";
-    echo $offset.'      Stand 18. September 2023, 19:00 CET.'."\n";
+    echo $offset.'      Stand 31. Januar 2024, 21:00 CET.'."\n";
     echo $offset.'    </p>'."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.'    <ul class="content-archive-list">'."\n";

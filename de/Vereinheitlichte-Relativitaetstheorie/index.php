@@ -139,10 +139,13 @@
                       'Es ist an der Zeit die beiden äquivalenten Theorien zu vereinheitlichen.'."\n".
                     'Dabei wird die Relativitätstheorie um ein Medium erweitert, um die Lösung des \\jump{OM:FrQFT:NeuePhysik:Problem-der-Zeit}{›Problems der Zeit‹} und die Formulierung der \\jump{OM:FrQFT:NeuePhysik:Quantengravitation}{Quantengravitation} auf Basis der \\jump{OM:FrQFT:Home}{Quanten-Fluss-Theorie} vorzubereiten sowie auch um die Relativitätstheorie anschaulicher zu machen und ihre scheinbaren Paradoxa zu vermeiden.'."\n"))),*/
                       
+                  array( 'headline', array( jump_name => 'OM:VRT:Home:Vortext:XXX', text =>
+                                           
+                'Information')),
                   array( 'text', array( text => array(
                     'Dies ist die Startseite der kompletten Arbeit.'."\n".
-                    'Bitte wählen sie den direkten Zugang zu den einzelnen Themen über das nachfolgende \\jump{OM:VRT:Home:Inhalt}{Inhaltsverzeichnis}.'."\n",
-                      'Bei Nachfragen und Interesse an einer \\jump{OM:FrQFT:Impressum:Netzwerke}{Diskussion}, \\jump{OM:FrQFT:Impressum:Netzwerke}{Kritik} oder \\jump{OM:FrQFT:Impressum:Beteiligung}{Beteiligung} sind Sie herzlich eingeladen \\jump{OM:FrQFT:Impressum:Inhaberdaten}{Kontakt} aufzunehmen.'."\n".
+                    'Bitte wähle den direkten Zugang zu den einzelnen Themen über das nachfolgende \\jump{OM:VRT:Home:Inhalt}{Inhaltsverzeichnis}.'."\n",
+                      'Bei Nachfragen und Interesse an einer \\jump{OM:FrQFT:Impressum:Netzwerke}{Diskussion}, \\jump{OM:FrQFT:Impressum:Netzwerke}{Kritik} oder \\jump{OM:FrQFT:Impressum:Beteiligung}{Beteiligung} lade ich herzlich ein \\jump{OM:FrQFT:Impressum:Inhaberdaten}{Kontakt} aufzunehmen.'."\n".
                     'Auch eine Unterstützung durch \\jump{OM:FrQFT:Impressum:Spenden}{Spenden} ist herzlich willkommen.'."\n"))),
                   /*array( 'text', array( text => array(
                     '\\italic{Bitte beachte, dass diese Seiten im Aufbau befindlich sind. Es sind weder alle entwickelten Ideen eingepflegt, noch sind alle Texte vollständig.'."\n".

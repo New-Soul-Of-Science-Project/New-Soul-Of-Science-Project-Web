@@ -271,7 +271,7 @@
                   '')),
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '• Die gute Beschreibung, die an anderer Stelle entfernt wurde, hier einbauen:',
-                    '– Ungewöhnlicherweise nimmt die Impulsintensität \\term{_{r}ii} der störenden Wirkung der Wirkungsquanten-Impulskegel bei größerem Abstand umgekehrtproportional zum Abstand \\term{r} vom String ab. Dieses Phänomen entsteht, weil die Impulskegel der Wirkungsquanten ringförmig abgestrahlt werden und sich im Verlauf der Zeit zu einem Impulskegel formen (siehe \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson}).',
+                    '– Ungewöhnlicherweise nimmt die Impulsintensität \\term{__{r}ii} der störenden Wirkung der Wirkungsquanten-Impulskegel bei größerem Abstand umgekehrtproportional zum Abstand \\term{r} vom String ab. Dieses Phänomen entsteht, weil die Impulskegel der Wirkungsquanten ringförmig abgestrahlt werden und sich im Verlauf der Zeit zu einem Impulskegel formen (siehe \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-VakuumElapson}).',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -286,10 +286,10 @@
                     'Damit verhält sich die Graviradiation anders als alle anderen Wechselwirkungen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:XXX', text =>
                                            
-                'Unterschied von Wechselwirkungen mit der Intensitätsabnahme von \\term{1/r^{2}} zu \\term{1/r}', subline =>
+                'Unterschied von Wechselwirkungen mit der Intensitätsabnahme von \\term{1/r^^{2}} zu \\term{1/r}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Bei einer Wechselwirkung, deren Stärke mit \\term{1/r^{2}} mit dem Abstand \\term{r} abnimmt, werden die Wechselwirkungsteilchen zu jedem Zeitpunkt'."\n".
+                    'Bei einer Wechselwirkung, deren Stärke mit \\term{1/r^^{2}} mit dem Abstand \\term{r} abnimmt, werden die Wechselwirkungsteilchen zu jedem Zeitpunkt'."\n".
                     'in Form von Kugeloberflächen – sphärisch – in den Raum abgestrahlt.'."\n".
                     'In der laufenden Zeit ergibt sich eine kugelförmige Abstrahlung.'."\n",
                       'Da dies auch bedeutet, die Abstrahlung erfolgt in alle Richtungen im Raum, wird ein in der Nähe befindliches Objekt quasi zu jedem Zeitpunkt'."\n".
@@ -321,11 +321,11 @@
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Grundlage dieser Berechnung}',
                     '• Darauf hinweisen, dass diese Berechnungen im Rahmen des Wirkungsquanten-Bewegungsraums erfolgen und nicht im Rahmen des Licht-Bewegungsraums. Daher ergibt sich die gravitative Rotverschiebung und Zeitdilatation erst korrekt, wenn das Verhältnis von tangentialer und radialer Lichtgeschwindigkeit im hier verwendeten Wirkungsquanten-Bewegungsraum im Verhältnis zur \\jump{OM:FrQFT:Quantengravitation:Laengenkontraktion}{gravitativen Längenkontraktion} berücksichtigt wird. Im Licht-Bewegungsraum ist dann in Bezug auf die LG generell \\term{p = 0} und in Bezug auf die Rotverschiebung für den tangentialen Fall \\term{p = 0} und im radialen Fall \\term{p = 1/2} zu setzen, so dass sich die korrekte Rotverschiebungsformel\\footnote[*Bearb]{\\const{FrQFT_g_footnote_text_PhotonFrequenzGravi}} ergibt.',
-                    '• Der Berechnung liegen die Formeln \\term{E_{ele} = h⋅f_{ele}} und \\term{E_{ele} = ħ⋅ω_{ele}} der Quantenphysik für die Energie eines Elementarteilchens zugrunde.',
-                    '• Aus der Relativitätstheorie wird allerdings die Allgemeingültigkeit der Formel \\term{E = m⋅c^{2}} vorausgesetzt und findet dann natürlich auch Anwendung.',
-                    '– Die Proportionalität von Energie und Masse ist eine direkte Schlussfolgerung der FrQFT, die sich aus der Annahme (\\jump{OM:FrQFT:FirstPrinciples}{Postulat} bzw. Axiom) ergibt, dass Wirkungsquanten sowohl Energieeinheiten als auch Masseneinheiten sind (absolut nur auf der untersten Strukturebene des analysierten Modells)! Dies setzt ein konstantes Verhältnis voraus, welches nach unseren Beobachtungen das Quadrat der Lichtgeschwindigkeit \\term{c^{2}} der bekannten Formel \\term{E = m⋅c^{2}} ist.(Verweis auf Wikipedia: ›Äquivalenz von Masse und Energie‹, Überblick und Beispiele, Vernichtungsstrahlung. Dies ist keine relativistisch interpretierte Beobachtung, sondern eine quantenphysikalisch interpretierte!)',
-                    '– Ergibt sich die Formel \\term{E = m⋅c^{2}} auch aus der Quantenphysik? Ja, wie gerade bemerkt, bei der Paarvernichtung.',
-                    '– Könnte Formel \\term{E = m⋅c^{2}} auch vermieden werden?',
+                    '• Der Berechnung liegen die Formeln \\term{E__{ele} = h⋅f__{ele}} und \\term{E__{ele} = ħ⋅ω__{ele}} der Quantenphysik für die Energie eines Elementarteilchens zugrunde.',
+                    '• Aus der Relativitätstheorie wird allerdings die Allgemeingültigkeit der Formel \\term{E = m⋅c^^{2}} vorausgesetzt und findet dann natürlich auch Anwendung.',
+                    '– Die Proportionalität von Energie und Masse ist eine direkte Schlussfolgerung der FrQFT, die sich aus der Annahme (\\jump{OM:FrQFT:FirstPrinciples}{Postulat} bzw. Axiom) ergibt, dass Wirkungsquanten sowohl Energieeinheiten als auch Masseneinheiten sind (absolut nur auf der untersten Strukturebene des analysierten Modells)! Dies setzt ein konstantes Verhältnis voraus, welches nach unseren Beobachtungen das Quadrat der Lichtgeschwindigkeit \\term{c^^{2}} der bekannten Formel \\term{E = m⋅c^^{2}} ist.(Verweis auf Wikipedia: ›Äquivalenz von Masse und Energie‹, Überblick und Beispiele, Vernichtungsstrahlung. Dies ist keine relativistisch interpretierte Beobachtung, sondern eine quantenphysikalisch interpretierte!)',
+                    '– Ergibt sich die Formel \\term{E = m⋅c^^{2}} auch aus der Quantenphysik? Ja, wie gerade bemerkt, bei der Paarvernichtung.',
+                    '– Könnte Formel \\term{E = m⋅c^^{2}} auch vermieden werden?',
                     '• Diese drei Formeln reichen aus, zusammen mit der Struktur des Elementarteilchen-Modells der FrQFT und gewisser Vereinfachungen dieses Modells zuzüglich einer simplen Näherung für größere Abstände sowie einer statistischen Näherung für größere Massen, um die gravitative Lichtablenkung (Gravitation) eines einzelnen Elementarteilchens und die gravitative Lichtablenkung (Gravitation) einer Zentralmasse aus Elementarteilchen korrekt so herzuleiten, wie diese in der Schwarzschild-Metrik der Allgemeinen Relativitätstheorie beschrieben ist.',
                     '\\bold{Mit Raimund Welsch zu klärende Fragen}',
                     '• Ist die Standardabweichung wirklich das, was hier im Moment angewendet wird?',
@@ -341,7 +341,7 @@
                     'In der folgenden ersten Näherung bleibe ich im Denkschema von Giese:'."\n",
                       'Ich betrachte nur den Einfluss der \\jump{*Wirkungsquanten-Herlei}{Wirkungsquanten} eines simplifizierten Strings eines Materie-Elementarteilchens, eines Leptonen-Strings.'."\n".
                     'Dabei lasse ich also die Wirkungsquanten des umgebenden \\jump{OM:FrQFT:Vakuum}{Vakuums} außer Acht und gehe auch davon aus, dass sich die Wirkungsquanten der vorbeifliegenden \\jump{*Photonen-Herlei}{Photonen} bereits auf Spiralbahnen bewegen.'."\n".
-                    'Die Photonen werden also simplifiziert und quasi wie sich mit Lichtgeschwindigkeit \\term{_{0}c} bewegende einzelne Wirkungsquanten behandelt.'."\n"))),
+                    'Die Photonen werden also simplifiziert und quasi wie sich mit Lichtgeschwindigkeit \\term{__{0}c} bewegende einzelne Wirkungsquanten behandelt.'."\n"))),
                       
                   array( 'figure',
                     array_merge( $FrQFT_g_figure_ary_GraviLeptonLichtbahn, array( name => 'OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn'))),
@@ -354,7 +354,7 @@
                     'Die Störungswirkung der \\jump{*Wirkungsquanten-virtuelle-Einfuehr}{virtuellen Wirkungsquanten} können wir uns nach Giese aus zwei Komponenten bestehend vorstellen:'."\n",
                       'Zunächst wirkt die Störung immer in radialer Richtung, ausgehend von ihrem Entstehungsort auf dem String (siehe \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung}, Mitte, und \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn}, links).'."\n".
                     'Die Störungswellen sind Longitudinalwellen\\footnote{Internet: \\\\ Vgl. \\cite{wiki:Longitudinalwelle:2019}.}, breiten sich also ähnlich wie Schallwellen aus.\\footnote[*Entwick]{\\color{*Entwick}{Wäre also interessant, ob es in der Akustik einen ähnlichen Effekt gibt. Ich habe etwas in dieser Richtung mal im Spektrum der Wissenschaft gelesen. \\color{*Bearb}{(Artikel heraussuchen.)}}}'."\n".
-                    'Die Störung hat einen Aspekt, der sich auf die tangentiale Komponente \\term{_{r,tan}c}, und einen anderen, der sich auf die radiale Komponente \\term{_{r,rad}c} der verlangsamten effektiven Photonen-Geschwindigkeit \\term{_{r}c} auswirkt'."\n".
+                    'Die Störung hat einen Aspekt, der sich auf die tangentiale Komponente \\term{__{r,tan}c}, und einen anderen, der sich auf die radiale Komponente \\term{__{r,rad}c} der verlangsamten effektiven Photonen-Geschwindigkeit \\term{__{r}c} auswirkt'."\n".
                     '(siehe \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn}, Mitte und rechts).\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, S. 19-22, hier Abbildungen C2, C3, S. 21.}'."\n",
                       'Je nach Bewegungsrichtung oder -winkel des Photons relativ zur Verbindungslinie zwischen dem Zentrum des graviradiativ wirkenden Elementarteilchens und des Photons,'."\n".
                     'wird das Photon entsprechend seiner tangentialen und radialen Bewegungsanteile verlangsamt.'."\n".
@@ -387,8 +387,8 @@
                 'Tangentiale Komponente der Lichtgeschwindigkeit', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die zum Zentrum der Masse radiale Störung der tangentialen Komponente \\term{_{r,tan}c} der Lichtgeschwindigkeit beim Radius \\term{r} ergibt sich durch die so ausgelöste zusätzliche'."\n".
-                    'radiale Bewegung \\term{±v_{abl}} des Photons, die seine tangentiale Geschwindigkeit, aufgrund der eigentlichen Konstanz der Lichtgeschwindigkeit \\term{_{0}c}, verringert'."\n".
+                    'Die zum Zentrum der Masse radiale Störung der tangentialen Komponente \\term{__{r,tan}c} der Lichtgeschwindigkeit beim Radius \\term{r} ergibt sich durch die so ausgelöste zusätzliche'."\n".
+                    'radiale Bewegung \\term{±v__{abl}} des Photons, die seine tangentiale Geschwindigkeit, aufgrund der eigentlichen Konstanz der Lichtgeschwindigkeit \\term{__{0}c}, verringert'."\n".
                     '(siehe \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn}, Mitte).\\footnote{Hier wird in Polarkoordinaten gedacht: Die tangentiale Koordinate entspricht der Komponente der Lichtbewegung, welche sich nur im Kreis um die Quelle bewegt, die dann nur transversal beeinflusst wird.}'."\n",
                       'Hierdurch wird das Licht auf einen wellenförmigen, ondulierten Pfad gezwungen, der seinen Weg verlängert und so seine effektive Geschwindigkeit reduziert:'."\n"))),
                   array( 'equations',
@@ -401,30 +401,30 @@
                                                label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-c-eff-tan', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-c-eff-tan}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Bei einer zeitlichen Mittelung zwischen den beiden Fällen \\term{+v_{abl}} und \\term{–v_{abl}} verändert sich das Ergebnis von \\term{_{r,tan}c}'."\n".
-                    'gegenüber \\term{_{r,tan}c_{±}} nicht, weil das Vorzeichen von \\term{±v_{abl}} durch das Quadrat keine Bedeutung besitzt.'."\n"))),
+                    'Bei einer zeitlichen Mittelung zwischen den beiden Fällen \\term{+v__{abl}} und \\term{–v__{abl}} verändert sich das Ergebnis von \\term{__{r,tan}c}'."\n".
+                    'gegenüber \\term{__{r,tan}c__{±}} nicht, weil das Vorzeichen von \\term{±v__{abl}} durch das Quadrat keine Bedeutung besitzt.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:XXX', text =>
                                            
                 'Radiale Komponente der Lichtgeschwindigkeit', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Anders ist dies im Fall der radialen Komponente der Lichtgeschwindigkeit \\term{_{r,rad}c}:'."\n",
+                    'Anders ist dies im Fall der radialen Komponente der Lichtgeschwindigkeit \\term{__{r,rad}c}:'."\n",
                       'Die radiale Störung der radialen Komponente der Lichtgeschwindigkeit ergibt sich aus ihrer longitudinalen Stauchung und Streckung'."\n".
-                    '\\term{±v_{abl}} (siehe \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn}, links).'."\n".
+                    '\\term{±v__{abl}} (siehe \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn}, links).'."\n".
                     'Diese Stauchung und Streckung prägt dem Pfad eine wellenförmige, ondulierte Veränderung des Wegs in seiner Bewegungsrichtung auf:\\footnote{Hier wird in Polarkoordinaten gedacht: Die radiale Koordinate entspricht der Komponente der Lichtbewegung, welche sich nur in Richtung Quelle oder von ihr weg bewegt, welche dann nur longitudinal beeinflusst wird.}'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  {_{r,rad}c_{\pm}}  =  {_{\lowZero}c} \pm {_{r}v_{abl}}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Im zeitlichen Mittel der beiden Fälle \\term{+v_{abl}} und \\term{–v_{abl}} bedeutet dies eine Verringerung der radialen Komponente der Lichtgeschwindigkeit \\term{_{r,rad}c}, wie wir gleich sehen werden.'."\n",
+                    'Im zeitlichen Mittel der beiden Fälle \\term{+v__{abl}} und \\term{–v__{abl}} bedeutet dies eine Verringerung der radialen Komponente der Lichtgeschwindigkeit \\term{__{r,rad}c}, wie wir gleich sehen werden.'."\n",
                       'Zur Berechnung des zeitlichen Mittelwerts können wir das Geschehen als Prozess denken:'."\n".
-                    'Demnach ist der Fortgang des Prozesses, also seine \\jump{OM:FrQFT:ZeitAlterungFrequenz:Alterung}{Alterung} \\term{_{r,rad}a_{ph}},'."\n".
+                    'Demnach ist der Fortgang des Prozesses, also seine \\jump{OM:FrQFT:ZeitAlterungFrequenz:Alterung}{Alterung} \\term{__{r,rad}a__{ph}},'."\n".
                     'im Folgenden kurz als \\term{t} bezeichnet, dann gleich, wenn das Licht, egal wie schnell es sich auf seinem ondulierten Pfad im Raum bewegt, die gleiche Strecke'."\n".
-                    'auf seiner effektiven Bahn zurücklegt; in unserem Fall \\term{_{r,rad}s_{ph}} als konstant angenommene Hilfsstrecke, folgend kurz als \\term{s_{ph}} bezeichnet.'."\n",
+                    'auf seiner effektiven Bahn zurücklegt; in unserem Fall \\term{__{r,rad}s__{ph}} als konstant angenommene Hilfsstrecke, folgend kurz als \\term{s__{ph}} bezeichnet.'."\n",
                     //-- 'Die Verlängerung des Pfads durch die Störung wird hierbei als innere Veränderung des Photons verstanden.'."\n",
-                      'Wenn \\term{s_{ph}} also die Strecke ist, die das Licht für den kosmischen Beobachter zurücklegt,'."\n".
-                    'und \\term{t} das ortsabhängige Voranschreiten des Prozesses, dann ergibt sich für \\term{_{r,rad}c}:'."\n"))),
+                      'Wenn \\term{s__{ph}} also die Strecke ist, die das Licht für den kosmischen Beobachter zurücklegt,'."\n".
+                    'und \\term{t} das ortsabhängige Voranschreiten des Prozesses, dann ergibt sich für \\term{__{r,rad}c}:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  {_{r,rad}c}  =  \frac{ {s_{ph}} }{ t }  }'),
@@ -434,7 +434,7 @@
                                                latex_if_visible => '{  \Leftrightarrow  t_{\pm}  =  \frac{ {s_{ph}} }{ {_{\lowZero}c} \pm {_{r}v_{abl}} }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Hier ist das Vorzeichen von \\term{±v_{abl}} von entscheidender Bedeutung.'."\n",
+                    'Hier ist das Vorzeichen von \\term{±v__{abl}} von entscheidender Bedeutung.'."\n",
                       'Das zeitliche Mittel ist dann:\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, S. 19-22, hier S. 21.}'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -471,25 +471,25 @@
                 'Störende Wirkung der virtuellen Wirkungsquanten', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{(Der effektive Störimpuls)} Die effektiv störende Wirkung \\term{_{r}p_{abl}} des Stroms der eintreffenden virtuellen Wirkungsquanten in'."\n".
+                    '\\color{*Bearb}{(Der effektive Störimpuls)} Die effektiv störende Wirkung \\term{__{r}p__{abl}} des Stroms der eintreffenden virtuellen Wirkungsquanten in'."\n".
                     'den \\jump{OM:FrQFT:Quantengravitation:VereinfModellQGravitation:WarumImpulskegel}{Impulskegeln} hat, nach Analyse der \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung}, die nachfolgend beschriebenen Eigenschaften.'."\n".
                     'Wie wir im unteren Teil der Abbildung sehen, haben die Impulskegel eine Amplitude, die mit der Entfernung abfällt,'."\n".
                     'eine Frequenz und eine Breite:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Die Ausgangsamplitude soll die Wirkung \\term{h} eines Wirkungsquants sein.',
                         'Die Amplitude soll sich beim Abstand \\term{r} vom String \\jump{OM:FrQFT:Quantengravitation:VereinfModellQGravitation:WQIUmgekehrtProport}{umgekehrt proportional} mit \\term{1/r} verringern. Diese \\jump{OM:FrQFT:Quantengravitation:VereinfModellQGravitation}{ungewöhnliche Eigenschaft} wurde zuvor schon erklärt.',
-                        'Die Detektor-Frequenz der eintreffenden virtuellen Wirkungsquanten ist offensichtlich die gleiche, wie die Detektor-Frequenz der sie aussendenden Wirkungsquanten auf dem String, also gilt: \\term{f_{ele,vwq} = f_{wq}} .',
-                        '\\color{*Bearb}{(Die Einwirkungsdauer (Einwirkdauer?) \term{T_{kegel}} der sich drehenden Kegelwand eines Wirkungsquants.)} Der Breitenfaktor \term{T_{kegel}} der Impulse hängt davon ab, wie schnell die Impulskegel sich hin- und wegdrehen. Denn rotiert der String doppelt so schnell, dann haben die Impulskegel nur die halbe Zeit auf das vorbeifliegende Licht einzuwirken. Dafür kommen sie doppelt so häufig in der selben Zeit vorbei, was aber schon in der Detektor-Frequenz berücksichtigt ist. Die Drehung der Impulskegel entspricht ihrer Winkelgeschwindigkeit \\term{ω_{ele}}, die bei konstanter Lichtgeschwindigkeit \\term{_{0}c = ω_{ele} ⋅ r_{ele}} der Wirkungsquanten auf dem String bei geringerem Radius \\term{r_{ele}} umgekehrtproportional zunimmt.',
+                        'Die Detektor-Frequenz der eintreffenden virtuellen Wirkungsquanten ist offensichtlich die gleiche, wie die Detektor-Frequenz der sie aussendenden Wirkungsquanten auf dem String, also gilt: \\term{f__{ele,vwq} = f__{wq}} .',
+                        '\\color{*Bearb}{(Die Einwirkungsdauer (Einwirkdauer?) \\term{T__{kegel}} der sich drehenden Kegelwand eines Wirkungsquants.)} Der Breitenfaktor \\term{T__{kegel}} der Impulse hängt davon ab, wie schnell die Impulskegel sich hin- und wegdrehen. Denn rotiert der String doppelt so schnell, dann haben die Impulskegel nur die halbe Zeit auf das vorbeifliegende Licht einzuwirken. Dafür kommen sie doppelt so häufig in der selben Zeit vorbei, was aber schon in der Detektor-Frequenz berücksichtigt ist. Die Drehung der Impulskegel entspricht ihrer Winkelgeschwindigkeit \\term{ω__{ele}}, die bei konstanter Lichtgeschwindigkeit \\term{__{0}c = ω__{ele} ⋅ r__{ele}} der Wirkungsquanten auf dem String bei geringerem Radius \\term{r__{ele}} umgekehrtproportional zunimmt.',
                     ))),
                   array( 'text', array( text => array(
                     'Die effektiv störende Wirkung ist also dem folgenden Produkt proportional:'."\n"))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{(\\bold{Untersuchung – Perspektive Ele-Ebene:}'."\n".
-                    'Die Wirkungsquanten-Detektorfrequenz \\term{f_{ele,vwq}} sollte nun die Rotationsfrequenz \\term{f_{ele}} sein.'."\n".
-                    'Die Einwirkungsdauer (Einwirkdauer?) ist weiterhin nur von der Dauer einer Rotation abhängig, bleibt also \\term{T_{kegel}}.'."\n".
+                    'Die Wirkungsquanten-Detektorfrequenz \\term{f__{ele,vwq}} sollte nun die Rotationsfrequenz \\term{f__{ele}} sein.'."\n".
+                    'Die Einwirkungsdauer (Einwirkdauer?) ist weiterhin nur von der Dauer einer Rotation abhängig, bleibt also \\term{T__{kegel}}.'."\n".
                     'Die Amplitude ist nunmehr allerdings nicht einfach nur \\term{h}, sondern sein Vielfaches proportional zur Energie des Elementarteilchens,'."\n".
                     'entsprechend der Vorstellung, wenn es bei einem Wirkungsquantum mit konstanter Energie \\term{h} ist,'."\n".
-                    'dann muss es bei einem Elementarteilchen ein entsprechendes Vielfaches \\term{n_{ele,wq}} der Energie eines Wirkungsquants sein.'."\n".
+                    'dann muss es bei einem Elementarteilchen ein entsprechendes Vielfaches \\term{n__{ele,wq}} der Energie eines Wirkungsquants sein.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -499,18 +499,18 @@
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  h  \mapsto  n_{ele,wq} \cdot h  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.Ele-Eb', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Un.Ele-Eb', label_incr => false),
                       array( display => 'on',  latex => '{  {_{r}p_{abl}}  \sim  \frac{ n_{ele,wq} \cdot h \cdot T_{kegel} \cdot f_{ele} }{ r }  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.Ele-Eb', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Un.Ele-Eb', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ n_{ele,wq} \cdot h \cdot T_{kegel} \cdot f_{ele} }{ r }  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.Ele-Eb', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Un.Ele-Eb', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ h \cdot T_{kegel} \cdot f_{ele,vwq} }{ r }  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.Ele-Eb', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Un.Ele-Eb', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{(———)}'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{(\\bold{Untersuchung – Perspektive WQ_{2}-Ebene:}'."\n".
+                    '\\color{*Bearb}{(\\bold{Untersuchung – Perspektive WQ__{2}-Ebene:}'."\n".
                     'Hier wird nun unterstellt, dass sich die Wirkungsquanten ein Mal um sich selber drehen, wenn sie eine Wirkungsquanten-Position weiter rotieren.'."\n".
                     'Ist das realistisch möglich?'."\n".
                     'XXX'."\n".
@@ -520,26 +520,26 @@
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f_{ele,vwq}  \mapsto  f_{vwq_{2}}  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.WQ_{2}-Eb', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Un.WQ__{2}-Eb', label_incr => false),
                       array( display => 'on',  latex => '{  h  \mapsto  \frac{ h }{ n_{wq_{1},wq_{2}} }  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.WQ_{2}-Eb', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Un.WQ__{2}-Eb', label_incr => false),
                       array( display => 'on',  latex => '{  \frac{ f_{vwq_{2}} }{ f_{ele,vwq} }  =  n_{wq_{1},wq_{2}}  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.WQ_{2}-Eb', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Un.WQ__{2}-Eb', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f_{vwq_{2}}  =  n_{wq_{1},wq_{2}} \cdot f_{ele,vwq}  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.WQ_{2}-Eb', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Un.WQ__{2}-Eb', label_incr => false),
                       array( display => 'on',  latex => '{  {_{r}p_{abl}}  \sim  \frac{ \frac{ h }{ n_{wq_{1},wq_{2}} } \cdot T_{kegel} \cdot f_{vwq_{2}} }{ r }  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.WQ_{2}-Eb', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Un.WQ__{2}-Eb', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}p_{abl}}  \sim  \frac{ \frac{ h }{ n_{wq_{1},wq_{2}} } \cdot T_{kegel} \cdot n_{wq_{1},wq_{2}} \cdot f_{ele,vwq} }{ r }  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.WQ_{2}-Eb', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Un.WQ__{2}-Eb', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}p_{abl}}  \sim  \frac{ h \cdot T_{kegel} \cdot f_{ele,vwq} }{ r }  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.WQ_{2}-Eb', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Un.WQ__{2}-Eb', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ h \cdot T_{kegel} \cdot f_{ele,vwq} }{ r }  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.WQ_{2}-Eb', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Un.WQ__{2}-Eb', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{(———)}'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{(\\bold{Untersuchung – \\term{f_{ele,vwq} = f_{vwq}}:}'."\n".
+                    '\\color{*Bearb}{(\\bold{Untersuchung – \\term{f__{ele,vwq} = f__{vwq}}:}'."\n".
                     'Gibt es einen Unterschied zwischen der Abstrahlungsfrequenz der virtuellen Wirkungsquanten und deren innerer Frequenz?'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -547,7 +547,7 @@
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f_{ele,vwq}  ?=  f_{vwq}  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.f_{vwq}', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Un.f__{vwq}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{(———)}'."\n"))),
@@ -588,7 +588,7 @@
                     ))), */
                       
                   array( 'text', array( text => array(
-                    'Die Wirkungsquanten-Frequenz \\term{f_{ele,vwq}} auf dem String können wir aus seiner Rotationsfrequenz \\term{f_{ele}} und der Wirkungsquanten-Anzahl \\term{n_{ele,wq}} des Strings errechnen.'."\n".
+                    'Die Wirkungsquanten-Frequenz \\term{f__{ele,vwq}} auf dem String können wir aus seiner Rotationsfrequenz \\term{f__{ele}} und der Wirkungsquanten-Anzahl \\term{n__{ele,wq}} des Strings errechnen.'."\n".
                     'Wegen der offensichtlichen Gleichheit der Frequenz des abgestrahlten virtuellen Wirkungsquanten-Stroms und der Wirkungsquanten-Frequenz auf dem String (siehe \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn}) gilt:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -610,12 +610,12 @@
                 'Die Wirkungsquanten-Frequenzen sind unabhängig von der Veränderung ihrer Ausbreitungsgeschwindigkeit', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Wenn die beiden Frequenzen \\term{f_{ele,vwq}} und \\term{f_{wq}} die gleichen sind, dann ist die Veränderung der Dichte \\term{_{r}ρ_{vwq}} der virtuellen Wirkungsquanten-Impulse'."\n".
+                    'Wenn die beiden Frequenzen \\term{f__{ele,vwq}} und \\term{f__{wq}} die gleichen sind, dann ist die Veränderung der Dichte \\term{__{r}ρ__{vwq}} der virtuellen Wirkungsquanten-Impulse'."\n".
                     'ausschließlich von der Veränderung der Ausbreitungsgeschwindigkeit der Impulse abhängig.'."\n".
-                    'Genauso ist die Veränderung der Wirkungsquanten-Dichte \\term{_{r_{ele}}ρ_{ele,wq}} auf dem String ausschließlich durch die Veränderung der Geschwindigkeit von dessen Rotation bestimmt.'."\n",
-                      'Beide Geschwindigkeiten variieren von Ort zu Ort also mit der Verlangsamung der Ausbreitung des Lichts im Raum \\term{_{r,p}c},'."\n".
+                    'Genauso ist die Veränderung der Wirkungsquanten-Dichte \\term{__{r__{ele}}ρ__{ele,wq}} auf dem String ausschließlich durch die Veränderung der Geschwindigkeit von dessen Rotation bestimmt.'."\n",
+                      'Beide Geschwindigkeiten variieren von Ort zu Ort also mit der Verlangsamung der Ausbreitung des Lichts im Raum \\term{__{r,p}c},'."\n".
                     'die wir hier ja insgesamt berechnen wollen, mit dem Abstand \\term{r} und ihrer Bewegungsrichtung \\term{p}.'."\n",
-                      'Die Variation beider Dichten mit der Ausbreitungsgeschwindigkeit ihrer (virtuellen) Wirkungsquanten entspricht der der Detektorwellenlänge \\term{_{x}λ_{wq,d}}'."\n".
+                      'Die Variation beider Dichten mit der Ausbreitungsgeschwindigkeit ihrer (virtuellen) Wirkungsquanten entspricht der der Detektorwellenlänge \\term{__{x}λ__{wq,d}}'."\n".
                     'von Licht bei sich ändernder Lichtgeschwindigkeit aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-DetektWellenlaengeAlt}.'."\n".
                     'Hieraus können wir die Dichte bei einer bestimmten Ausbreitungsgeschwindigkeit ableiten:'."\n"))),
                   array( 'equations',
@@ -665,9 +665,9 @@
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ n_{ele,wq} \cdot h \cdot T_{kegel} \cdot f_{ele} }{ r }  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.Ele-Eb', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Un.Ele-Eb', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ h \cdot T_{kegel} \cdot n_{ele,wq} \cdot f_{ele} }{ r }  }',
-                                               /* label_name => '', */label_text => 'QGra.LV.Unter.Ele-Eb', label_incr => false),
+                                               /* label_name => '', */label_text => 'QGra.LV.Un.Ele-Eb', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{(———)}'."\n"))),
@@ -677,7 +677,7 @@
                                                label_name => 'OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-eff-aus-f-ele', label_text => '\\name{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-eff-aus-f-ele}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Es ist nun wünschenswert den Breitenfaktor \term{T_{kegel}} am Ende so zu formulieren, dass die uns generell noch unbekannte Wirkungsquanten-Anzahl \\term{n_{ele,wq}} sich weg kürzt.'."\n",
+                    'Es ist nun wünschenswert den Breitenfaktor \\term{T__{kegel}} am Ende so zu formulieren, dass die uns generell noch unbekannte Wirkungsquanten-Anzahl \\term{n__{ele,wq}} sich weg kürzt.'."\n",
                       'Für den Breitenfaktor gilt nach den obigen Eigenschaften:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -685,7 +685,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  T_{kegel}  =  g_{\omega} \cdot \frac{ 1 }{ \omega_{ele} }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir können nun die Winkelgeschwindigkeit \\term{ω_{ele}} so umformulieren, dass sie durch die Wirkungsquanten-Anzahl \\term{n_{ele,wq}} ausgedrückt wird.'."\n".
+                    'Wir können nun die Winkelgeschwindigkeit \\term{ω__{ele}} so umformulieren, dass sie durch die Wirkungsquanten-Anzahl \\term{n__{ele,wq}} ausgedrückt wird.'."\n".
                     'Dazu schauen wir nach ihrer Beziehung zur Energie des Elementarteilchen-Strings und drücken diese schließlich durch seine Masse aus:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -723,8 +723,8 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Weil jedes Wirkungsquant eine konstante Masseeinheit \\term{m_{wq}} ist, kann die Masse \\term{m_{ele}} eines Strings'."\n".
-                    'über seine Wirkungsquanten-Anzahl \\term{n_{ele,wq}} folgendermaßen beschrieben werden:'."\n"))),
+                    'Weil jedes Wirkungsquant eine konstante Masseeinheit \\term{m__{wq}} ist, kann die Masse \\term{m__{ele}} eines Strings'."\n".
+                    'über seine Wirkungsquanten-Anzahl \\term{n__{ele,wq}} folgendermaßen beschrieben werden:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  m_{ele}  =  n_{ele,wq} \cdot m_{wq}  }',
@@ -743,7 +743,7 @@
                   array( 'text', array( text => array(
                     'Über \\jump{OM:FrQFT:HeisenbergUnschaerfe:Energie-und-Zeit}{Plancks Proportionalität von Energie und Frequenz} aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-EinsteinEnergieLichtQuant-1}'."\n".
                     'und \\jump{OM:FrQFT:FirstPrinciples:Vortext:Abzaehlprinzip}{Einstens Energie-Masse-Äquivalenz} aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-E-ele-aequi-zu-Masse-1}'."\n".
-                    'können wir die effektiv störende Wirkung durch die Masse \\term{m_{ele}} ausdrücken.'."\n".
+                    'können wir die effektiv störende Wirkung durch die Masse \\term{m__{ele}} ausdrücken.'."\n".
                     'So formuliert benötigen wir diese im weiteren Verlauf:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -817,12 +817,12 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n",
-                      'Die effektiv störende Wirkung \\term{_{r}p_{abl}} des Stroms der eintreffenden virtuellen Wirkungsquanten muss nach Analyse der \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung}'."\n".
+                      'Die effektiv störende Wirkung \\term{__{r}p__{abl}} des Stroms der eintreffenden virtuellen Wirkungsquanten muss nach Analyse der \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung}'."\n".
                     'mehrere Proportionalitätsanforderungen gleichzeitig erfüllen:'."\n",
                       'Die Störung der eintreffenden Impulse ist proportional zu der Wirkung \\term{h} jedes Wirkungsquants des Strings, die die Ausgangsintensität der Impulse bestimmt.'."\n".
-                    'Sie ist proportional zur Frequenz ihres Eintreffens \\term{f_{ele,vwq}}, die die Anzahl der Impulse pro Zeit und damit die Energie und Masse des Elementarteilchens widerspiegelt,'."\n".
-                    'und zur Dauer ihrer Einwirkung, also zur Winkelgeschwindigkeit ihrer Abstrahlung \\term{ω_{ele}}.'."\n",
-                      'Und die Störung muss, wie \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung:WQIUmgekehrtProport}{oben <-XXX} gerade gezeigt, auch proportional zur Abnahme der Impulsintensität \\term{_{r}ii} mit dem Abstand \\term{r} vom Entstehungsort des Impulses auf dem String sein.'."\n"))),
+                    'Sie ist proportional zur Frequenz ihres Eintreffens \\term{f__{ele,vwq}}, die die Anzahl der Impulse pro Zeit und damit die Energie und Masse des Elementarteilchens widerspiegelt,'."\n".
+                    'und zur Dauer ihrer Einwirkung, also zur Winkelgeschwindigkeit ihrer Abstrahlung \\term{ω__{ele}}.'."\n",
+                      'Und die Störung muss, wie \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung:WQIUmgekehrtProport}{oben <-XXX} gerade gezeigt, auch proportional zur Abnahme der Impulsintensität \\term{__{r}ii} mit dem Abstand \\term{r} vom Entstehungsort des Impulses auf dem String sein.'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  {_{r}p_{abl}}  \sim  h  }'),
@@ -851,12 +851,12 @@
                 Title => 'Störungsfrequenz ist unabhängig von der Veränderung ihrer Ausbreitungsgeschwindigkeit …',
                 TitleVis => 'Störungsfrequenz ist unabhängig von der Veränderung ihrer Ausbreitungsgeschwindigkeit:', ParagraphList => array(
                   array( 'text', array( text => array(
-                    'Wenn die beiden Frequenzen \\term{f_{ele,vwq}} und \\term{f_{wq}} die gleichen sind, dann ist die Veränderung der Dichte \\term{_{r}ρ_{vwq}} der virtuellen Wirkungsquanten-Impulse'."\n".
+                    'Wenn die beiden Frequenzen \\term{f__{ele,vwq}} und \\term{f__{wq}} die gleichen sind, dann ist die Veränderung der Dichte \\term{__{r}ρ__{vwq}} der virtuellen Wirkungsquanten-Impulse'."\n".
                     'ausschließlich von der Veränderung der Ausbreitungsgeschwindigkeit der Impulse abhängig.'."\n".
-                    'Genauso ist die Veränderung der Wirkungsquanten-Dichte \\term{_{r_{ele}}ρ_{ele,wq}} auf dem String ausschließlich durch die Veränderung der Geschwindigkeit von dessen Rotation bestimmt.'."\n",
-                      'Beide Geschwindigkeiten variieren von Ort zu Ort also mit der Verlangsamung der Ausbreitung des Lichts im Raum \\term{_{r,p}c},'."\n".
+                    'Genauso ist die Veränderung der Wirkungsquanten-Dichte \\term{__{r__{ele}}ρ__{ele,wq}} auf dem String ausschließlich durch die Veränderung der Geschwindigkeit von dessen Rotation bestimmt.'."\n",
+                      'Beide Geschwindigkeiten variieren von Ort zu Ort also mit der Verlangsamung der Ausbreitung des Lichts im Raum \\term{__{r,p}c},'."\n".
                     'die wir hier ja insgesamt berechnen wollen, mit dem Abstand \\term{r} und ihrer Bewegungsrichtung \\term{p}.'."\n",
-                      'Die Variation beider Dichten mit der Ausbreitungsgeschwindigkeit ihrer (virtuellen) Wirkungsquanten entspricht der der Detektorwellenlänge \\term{_{x}λ_{wq,d}}'."\n".
+                      'Die Variation beider Dichten mit der Ausbreitungsgeschwindigkeit ihrer (virtuellen) Wirkungsquanten entspricht der der Detektorwellenlänge \\term{__{x}λ__{wq,d}}'."\n".
                     'von Licht bei sich ändernder Lichtgeschwindigkeit aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-DetektWellenlaengeAlt}.'."\n".
                     'Hieraus können wir die Dichte bei einer bestimmten Ausbreitungsgeschwindigkeit ableiten:'."\n"))),
                   array( 'equations',
@@ -912,7 +912,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  {h_{m}}  =  g_{m} \cdot m_{ele}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dabei steht \\term{n_{ele}} für die Anzahl der Rotationen des Elementarteilchens.'."\n",
+                    'Dabei steht \\term{n__{ele}} für die Anzahl der Rotationen des Elementarteilchens.'."\n",
                       'Die geforderte Proportionalität zur Intensitätsabnahme mit dem Abstand kommt nun separat hinzu:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -926,9 +926,9 @@
                   array( 'text', array( text => array(
                     'Wie in \\jumpname{OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn} dargestellt, entstehen die virtuellen Wirkungsquanten aus den Wirkungsquanten des Strings.'."\n".
                     'Die abgestrahlten virtuellen Wirkungsquanten-Impulse nehmen, wie schon gesagt, mit dem Abstand \\term{r} vom String ab.'."\n".
-                    'In der weiteren Herleitung sollen ausschließlich im Verhältnis zum Radius des Elementarteilchens \\term{r_{ele}} große Abstände \\term{r} eine Rolle spielen.'."\n",
-                      'In diesem Fall wird der Elementarteilchen-Radius \\term{r_{ele}} auf derartig große Distanzen irrelevant und nur der Abstand von deren Zentrum betrachtet,'."\n".
-                    'vorübergehend \\term{r_{c}} genannt; anschließend dann wieder \\term{r}, der Einfachheit halber:'."\n"))),
+                    'In der weiteren Herleitung sollen ausschließlich im Verhältnis zum Radius des Elementarteilchens \\term{r__{ele}} große Abstände \\term{r} eine Rolle spielen.'."\n",
+                      'In diesem Fall wird der Elementarteilchen-Radius \\term{r__{ele}} auf derartig große Distanzen irrelevant und nur der Abstand von deren Zentrum betrachtet,'."\n".
+                    'vorübergehend \\term{r__{c}} genannt; anschließend dann wieder \\term{r}, der Einfachheit halber:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{  r_{ele}  \ll  r  }'),
@@ -977,7 +977,7 @@
                 'Gravitative Wirkung eines einzelnen Elementarteilchens auf Licht', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die sich durch ein einzelnes Elementarteilchen aus der Störung \\term{_{r}p_{ele,abl}} ergebende Geschwindigkeit der Ablenkung \\term{_{r}v_{ele,abl}} ist dann proportional zu dieser Störung und berechnet sich durch Einsetzen zu:'."\n"))),
+                    'Die sich durch ein einzelnes Elementarteilchen aus der Störung \\term{__{r}p__{ele,abl}} ergebende Geschwindigkeit der Ablenkung \\term{__{r}v__{ele,abl}} ist dann proportional zu dieser Störung und berechnet sich durch Einsetzen zu:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  {_{r}v_{ele,abl}}  \sim  {_{r}p_{ele,abl}}  }'),
@@ -1096,20 +1096,20 @@
                 'Gravitative Wirkung einer zentralen Masse auf Licht', subline =>
                   'Die Zufallsstatistik kommt ins Spiel')),
                   array( 'text', array( text => array(
-                    'Im Fall einer zentralen Masse entsteht die insgesamt resultierende Störungsgeschwindigkeit \\term{_{r}v_{abl}} aus der Summe aller einzelnen Störungen durch die'."\n".
+                    'Im Fall einer zentralen Masse entsteht die insgesamt resultierende Störungsgeschwindigkeit \\term{__{r}v__{abl}} aus der Summe aller einzelnen Störungen durch die'."\n".
                     'virtuellen Wirkungsquanten.'."\n".
                     'Allerdings erreichen die einzelnen Störungen in diesem Fall die Bahn des Photons in zufälligen Zeitabständen.'."\n",
-                      'Zufällig deshalb, weil letztendlich nicht nur die Wirkungsquanten des einen Elementarteilchen-Strings \\term{m_{ele}} wirken, sondern auch die'."\n".
+                      'Zufällig deshalb, weil letztendlich nicht nur die Wirkungsquanten des einen Elementarteilchen-Strings \\term{m__{ele}} wirken, sondern auch die'."\n".
                     'aller weiteren Elementarteilchen einer zentralen Masse \\term{M}.'."\n".
                     // 'Diese sind an das Elementarteilchen gekoppelt, was nach der Quanten-Fluss-Theorie auch dem \\jump{OM:FrQFT:Vakuum:Higgs-Feld-und-Higgs-Mechanismus}{Higgs-Mechnismus} entspricht. \\\\'."\n".
                     'Aus diesem Grund müssen die Regeln der Zufallsstatistik in Form der Standardabweichung\\footnote{Vgl. \\cite{wiki:Standardabweichung2013}.} Anwendung finden.'."\n".
                     'Das bedeutet, dass sich die effektive Ablenkungsgeschwindigkeit zur Quadratwurzel der Summe der einzelnen'."\n".
                     'Störungen berechnet.\\footnote{Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, S. 19-22, hier S. 22.}'."\n".
-                    'Wir haben \\term{g_{v}} oben schon als Proportionalitätskonstante eingeführt.'."\n",
-                      'Zuerst führt Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-ele-eff} zur Definition der nicht statistischen effektiven Wirkung \\term{_{r}p_{mas,abl}} der Zentralmasse.'."\n".
+                    'Wir haben \\term{g__{v}} oben schon als Proportionalitätskonstante eingeführt.'."\n",
+                      'Zuerst führt Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-ele-eff} zur Definition der nicht statistischen effektiven Wirkung \\term{__{r}p__{mas,abl}} der Zentralmasse.'."\n".
                     'Bei der Berechnung der Standardabweichung bezieht sich das Ziehen der Quadratwurzel ausschließlich auf den Wert der Ablenkungsgeschwindigkeit ohne Standardabweichung und nicht auf seine Einheiten.'."\n".
                     'Daher ist der Wert getrennt von seinen Einheiten zu berechnen.'."\n".
-                    'Diese etwas umständliche Art der Darstellung ersetze ich durch die Einführung der Konstanten \\term{g_{s}}, die ausschließlich zur Beibehaltung der ursprünglichen Einheiten genutzt wird'."\n".
+                    'Diese etwas umständliche Art der Darstellung ersetze ich durch die Einführung der Konstanten \\term{g__{s}}, die ausschließlich zur Beibehaltung der ursprünglichen Einheiten genutzt wird'."\n".
                     'und damit keinen Trick zur Verschleierung verkehrter Einheiten darstellt:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1146,7 +1146,7 @@
                     'Ausdrücke in eckigen Klammern ([Term]) stehen für deren Einheiten oder geben diese explizit an ([Einheiten]).'."\n"))),
                   array( 'text', array( text => array(
                     'Die Standardabweichung, ihre Quadratwurzel, wird nur auf die Werte aber nicht auf die Einheiten angewendet.'."\n".
-                    'Um mathematisch äquivalentes in einfacher und gut lesbarer Form zu erreichen, wird hier die Konstante \\term{g_{s}} in der Berechnung der Standardabweichung eingeführt.'."\n"))),
+                    'Um mathematisch äquivalentes in einfacher und gut lesbarer Form zu erreichen, wird hier die Konstante \\term{g__{s}} in der Berechnung der Standardabweichung eingeführt.'."\n"))),
                     ))),
                       
                   array( 'text', array( text => array(
@@ -1287,8 +1287,8 @@
                                                label_name => 'OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante:Equ-GraviKonstAnhaeng', label_text => '\\name{OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante:Equ-GraviKonstAnhaeng}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Die zentrale Rolle der Gravitationskonstanten \\term{G} besteht offenbar darin, die Proportionalität des Produkts der Ablenkungsgeschwindigkeit \\term{_{r}v_{ele,abl}}'."\n".
-                    'mit dem Abstand \\term{r} zur Masse \\term{m_{ele}} eines Elementarteilchens auszudrücken:'."\n"))),
+                    'Die zentrale Rolle der Gravitationskonstanten \\term{G} besteht offenbar darin, die Proportionalität des Produkts der Ablenkungsgeschwindigkeit \\term{__{r}v__{ele,abl}}'."\n".
+                    'mit dem Abstand \\term{r} zur Masse \\term{m__{ele}} eines Elementarteilchens auszudrücken:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  2 \cdot \frac{ G }{ g_{s} }  =  \frac{ {_{r}v_{ele,abl}} \cdot r }{ m_{ele} }  }'),
@@ -1302,7 +1302,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r}v_{ele,abl}}  \sim  \frac{ m_{ele} }{ r }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Bei, für gewöhnlich, konstanter Masse \\term{m_{ele}} ergibt sich die vereinfachte Proportionalität:'."\n"))),
+                    'Bei, für gewöhnlich, konstanter Masse \\term{m__{ele}} ergibt sich die vereinfachte Proportionalität:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  m_{ele}  =  const.  }'),
@@ -1311,7 +1311,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Weil sowohl die Ablenkungsgeschwindigkeit \\term{_{r}v_{ele,abl}} als auch die Masse \\term{m_{ele}} proportional zur Anzahl \\term{n_{ele,wq}} der Wirkungsquanten'."\n".
+                    'Weil sowohl die Ablenkungsgeschwindigkeit \\term{__{r}v__{ele,abl}} als auch die Masse \\term{m__{ele}} proportional zur Anzahl \\term{n__{ele,wq}} der Wirkungsquanten'."\n".
                     'im Elementarteilchen sind (siehe Formeln \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-EMasseSumWQEnergie-1} und \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-v-ele-abl-aus-m-ele-r}),'."\n".
                     'ergibt sich, herunter gebrochen auf ein einzelnes Wirkungsquant, wenn wir berücksichtigen, dass dann nicht mehr beide gegenüberliegenden'."\n".
                     'Seiten des Elementarteilchen-Strings gleichzeitig wirken können (siehe Formeln \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-ele-eff} und \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-v-ele-abl}):'."\n"))),
@@ -1352,10 +1352,10 @@
                 'Irrelevanz der Einwirkdauer und des Wirkimpulses', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Bemerkenswert ist dabei, dass die Einwirkdauer \\term{T_{kegel}} der Impulskegelwand und des sich aus ihr ergebenden Wirkimpulses \\term{_{r}p_{ele,abl}}'."\n".
+                    'Bemerkenswert ist dabei, dass die Einwirkdauer \\term{T__{kegel}} der Impulskegelwand und des sich aus ihr ergebenden Wirkimpulses \\term{__{r}p__{ele,abl}}'."\n".
                     'keine Rolle für den Wert der Gravitationskonstanten spielen.'."\n".
                     'Dies kommt, weil sie sich gegenseitig wegkürzen, wenn wir die Gravitationskonstante aus ihren Einzelkonstanten berechnen.'."\n",
-                      'Die Konstante \\term{g_{h}} berechnet sich aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-eff-aus-f-ele} zu:'."\n"))),
+                      'Die Konstante \\term{g__{h}} berechnet sich aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-eff-aus-f-ele} zu:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{  {_{r}p_{abl}}  =  g_{h} \cdot \frac{ h \cdot T_{kegel} \cdot n_{ele,wq} \cdot f_{ele} }{ r }  }',
@@ -1372,7 +1372,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  \sim  \frac{ T_{kegel} \cdot n_{ele,wq} \cdot f_{ele} }{ r }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Bei, für gewöhnlich, konstanter Masse \\term{m_{ele}}, und damit \\term{T_{kegel}}, \\term{n_{ele,wq}} und \\term{f_{ele}}, ergibt sich die vereinfachte Proportionalität:'."\n"))),
+                    'Bei, für gewöhnlich, konstanter Masse \\term{m__{ele}}, und damit \\term{T__{kegel}}, \\term{n__{ele,wq}} und \\term{f__{ele}}, ergibt sich die vereinfachte Proportionalität:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  {_{r}p_{abl}}  \sim  \frac{ 1 }{ r }  }'),
@@ -1380,7 +1380,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Die Konstante \\term{g_{ω}} berechnet sich aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-T-kegel} zu:'."\n"))),
+                    'Die Konstante \\term{g__{ω}} berechnet sich aus Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-T-kegel} zu:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{  T_{kegel}  =  g_{\omega} \cdot \frac{ \hbar }{ n_{ele,wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}} }  }',
@@ -1400,7 +1400,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \hbar  =  \frac{ T_{kegel} \cdot E_{ele} }{ g_{\omega} }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'So wird ersichtlich, dass sich eine neue Konstante ergibt, die \\term{ħ} sowie \\term{g_{ω}} verbindet und die ich \\term{ħ_{ω}} nenne:'."\n"))),
+                    'So wird ersichtlich, dass sich eine neue Konstante ergibt, die \\term{ħ} sowie \\term{g__{ω}} verbindet und die ich \\term{ħ__{ω}} nenne:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \hbar_{\omega}  :=  T_{kegel} \cdot E_{ele}  =  const.  }'),
@@ -1409,7 +1409,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Die Konstante \\term{g_{v}} berechnet sich aus den Formeln \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-ele-eff} und'."\n".
+                    'Die Konstante \\term{g__{v}} berechnet sich aus den Formeln \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-h-ele-eff} und'."\n".
                     '\\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-v-ele-abl}  zu:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.SG', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1451,9 +1451,9 @@
                     ))),
                   array( 'text', array( text => array(
                     'Es ergibt sich die Formel \\jumpname{OM:FrQFT:Quantengravitation:Struktur-Gravitationskonstante:Equ-GraviKonstAnhaeng}, wie zu erwarten.'."\n",
-                      'Interessanterweise haben ausschließlich die Ablenkgeschwindigkeit \\term{_{r}v_{ele,abl}}, der Abstand \\term{r} vom Massenzentrum und'."\n".
-                    'die Masse \\term{m_{ele}} des Elementarteilchens einen Einfluss auf den Wert der Gravitationskonstanten.'."\n".
-                    'Die Einwirkdauer \\term{T_{kegel}} der Impulskegelwand, der Wirkimpuls \\term{_{r}p_{ele,abl}} und die anderen Variablen und Konstanten fallen durchs Kürzen alle weg.'."\n".
+                      'Interessanterweise haben ausschließlich die Ablenkgeschwindigkeit \\term{__{r}v__{ele,abl}}, der Abstand \\term{r} vom Massenzentrum und'."\n".
+                    'die Masse \\term{m__{ele}} des Elementarteilchens einen Einfluss auf den Wert der Gravitationskonstanten.'."\n".
+                    'Die Einwirkdauer \\term{T__{kegel}} der Impulskegelwand, der Wirkimpuls \\term{__{r}p__{ele,abl}} und die anderen Variablen und Konstanten fallen durchs Kürzen alle weg.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
@@ -1526,7 +1526,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Die strukturelle Geometrie von Elementarteilchen verändert sich nach Giese in ihrer Ausdehnung in einem Gravitationsfeld in tangentialer und radialer Richtung zur Zentralmasse,'."\n".
-                    'wenn \\term{w_{0}} ihre Ausdehnung ohne diese Verzerrung ist.\\footnote{\\const{FrQFT_g_footnote_text_BasisteilchenMGravityLKMechanis}}'."\n".
+                    'wenn \\term{w__{0}} ihre Ausdehnung ohne diese Verzerrung ist.\\footnote{\\const{FrQFT_g_footnote_text_BasisteilchenMGravityLKMechanis}}'."\n".
                     'Adaptiert auf Formel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung:Equ-GraLGEinstein} ergibt sich:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -1552,13 +1552,13 @@
                     'des \\jump{OM:FrQFT:Elementarteilchen}{Elementarteilchen-Modells} in Bezug auf jede Rotation in jeder denkbaren Raumrichtung mit der gleichen Frequenz rotieren (siehe \\jumpname{OM:FrQFT:Quantengravitation:Vortext:Ani-Lepton}).'."\n",
                       'Um zu zeigen, dass sich die anisotrope Lichtgeschwindigkeit und die anisotrope Strukturverzerrung bezüglich der Rotationsfrequenz des Spins aufheben, möchte ich die reine Bewegung'."\n".
                     'und deren Frequenz entlang der beiden Halbachsen des Heaviside-Ellipsoiden eines Elementarteilchens betrachten.'."\n".
-                    'Die Bewegung auf ihrem Weg \\term{_{r,p}w_{mas}} mit der Geschwindigkeit \\term{_{r,p}c_{mas}}:'."\n"))),
+                    'Die Bewegung auf ihrem Weg \\term{__{r,p}w__{mas}} mit der Geschwindigkeit \\term{__{r,p}c__{mas}}:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  _{r,p}c_{mas}  =  \frac{ _{r,p}w_{mas} }{ t }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die beiden unterschiedlichen Halbachsen führen möglicherweise zu zwei Spin-Halbachs-Frequenzen \\term{_{r,p}f_{spin,H}}; eine je Richtung \\term{p}.'."\n",
+                    'Die beiden unterschiedlichen Halbachsen führen möglicherweise zu zwei Spin-Halbachs-Frequenzen \\term{__{r,p}f__{spin,H}}; eine je Richtung \\term{p}.'."\n",
                       'Für die Frequenz \\term{f} gilt in Bezug auf die Zeit \\term{t} erst einmal ganz allgemein:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1566,7 +1566,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  _{r,p}f_{spin,H}  =  \frac{ _{r,p}c_{mas} }{ _{r,p}w_{mas} }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Für diese Frequenzen ergibt sich dann, wenn \\term{_{r}S} zur Substitution genutzt wird:'."\n"))),
+                    'Für diese Frequenzen ergibt sich dann, wenn \\term{__{r}S} zur Substitution genutzt wird:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  _{r}S  =  \left( 1 - 2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} \right)  }'),
@@ -1580,7 +1580,7 @@
                     'Wie wir sehen, fällt die Richtung \\term{p} weg.'."\n".
                     'Die beiden Effekte, die richtungsabhängige variable Lichtgeschwindigkeit und die richtungsabhängige Veränderung der Geometrie, heben sich auf,'."\n".
                     'wie oben schon vermutet.'."\n",
-                      'So können wir die Formel nun auf einen Umfang \\term{u_{0}} beziehen, also für die Spin-Frequenz übernehmen und entsprechend abwandeln:'."\n"))),
+                      'So können wir die Formel nun auf einen Umfang \\term{u__{0}} beziehen, also für die Spin-Frequenz übernehmen und entsprechend abwandeln:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'QGra.LK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  _{r}f_{spin}  =  \frac{ {_{\lowZero}c} }{ u_{\lowZero} } \cdot \sqrt{ 1 - 2 \cdot \frac{G \cdot M}{{_{\lowZero}c}^{2} \cdot r} }  }'),

@@ -99,11 +99,14 @@
                     'dafür entwickelt, das ›Spannungsspiel des Lebens‹ anschaulich zu machen.'."\n".
                     'Sollte mir dies trotzdessen einmal nicht so gut oder gerade besonders gut gelungen sein, dann freue ich mich auf Ihr \\jump{OM:FrQFT:Impressum:Inhaberdaten}{Feedback}.'."\n"*/))),
                       
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Home:Vortext:XXX', text =>
+                                           
+                'Information')),
                   array( 'text', array( text => array(
                     'Dies ist die Startseite der kompletten Arbeit.'."\n".
-                    'Bitte wählen sie den direkten Zugang zu den einzelnen Themen über das nachfolgende \\jump{OM:SpaLeb:Home:Inhalt}{Inhaltsverzeichnis}.'."\n".
+                    'Bitte wähle den direkten Zugang zu den einzelnen Themen über das nachfolgende \\jump{OM:SpaLeb:Home:Inhalt}{Inhaltsverzeichnis}.'."\n".
                     'Die \\jump{OM:SpaLeb:Einleitung}{Einleitung} zum ›Spannungsspiel des Lebens‹ bietet einen Überblick über die grundlegende Herleitung.'."\n".
-                    'Bei Nachfragen und Interesse an einer Diskussion, Kritik oder Beteiligung sind Sie herzlich eingeladen \\jump{OM:FrQFT:Impressum:Inhaberdaten}{Kontakt} aufzunehmen.'."\n".
+                    'Bei Nachfragen und Interesse an einer Diskussion, Kritik oder Beteiligung lade ich herzlich ein \\jump{OM:FrQFT:Impressum:Inhaberdaten}{Kontakt} aufzunehmen.'."\n".
                     'Auch eine Unterstützung durch \\jump{OM:FrQFT:Impressum:Spenden}{Spenden} ist herzlich willkommen.'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
@@ -205,7 +208,7 @@
                       array( title => 'Der Achtsamkeitsprozess in und von Gruppen \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => 'Gruppen von abhängigen Lebewesen bilden einen übergeordneten Achtsamkeitsprozess'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
                       array( title => 'Die Evolutionstheorie und ihr Zusammenhang mit dem Achtsamkeitsprozess \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
-                                description => 'Der Achtsamkeitsprozess steuert die Evolution auch ohne Selektion, denn der Stress der Lebensumstände beeinflusst die Epigenetik und die Epigenetik beeinflusst die Genetik – Die Evolutionstheorie muss ergänzt werden, weil die genetische Evolution unserer DNA nicht nur mit der Selektion, sondern auch mit dem Achtsamkeitsprozess gekoppelt ist. Die Mutationen unseres Genoms finden eben nicht nur rein zufällig statt (Wildermuth, Volkart. Domestizierung: Vom wilden Bankivahuhn zum zahmen Haushuhn. Deutsch. Deutschlandfunk. 13. Jul. 2018. Audio. URL: \\jump[https://www.deutschlandfunk.de/domestizierung-vom-wilden-bankivahuhn-zum-zahmen-haushuhn.676.de.html?dram:article_id=422859]{}{https://www.deutschlandfunk.de/domestizierung-vom-wilden-bankivahuhn-zum-zahmen-haushuhn.676.de.html?dram:article_id=422859})'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
+                                description => 'Der Achtsamkeitsprozess steuert die Evolution auch ohne Selektion, denn der Stress der Lebensumstände beeinflusst die Epigenetik und die Epigenetik beeinflusst die Genetik – Die Evolutionstheorie muss ergänzt werden, weil die genetische Evolution unserer DNA nicht nur mit der Selektion, sondern auch mit dem Achtsamkeitsprozess gekoppelt ist. Die Mutationen unseres Genoms finden eben nicht nur rein zufällig statt (Wildermuth, Volkart. Domestizierung: Vom wilden Bankivahuhn zum zahmen Haushuhn. Deutsch. Deutschlandfunk. 13. Jul. 2018. Audio. URL: \\url{https://www.deutschlandfunk.de/domestizierung-vom-wilden-bankivahuhn-zum-zahmen-haushuhn.676.de.html?dram:article_id=422859})'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
                     ))),
                     
                   array( 'normal',

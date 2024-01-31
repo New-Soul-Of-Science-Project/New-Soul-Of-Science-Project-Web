@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Michelson-Morley-Experiment-3D – FrQFT</title>
+    <title>Sterntetraeder-3D – Spannungsspiel des Lebens</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="main.css">
     <link type="text/css" rel="stylesheet" href="animation.css">
@@ -10,7 +10,7 @@
   <body>
     <div id="container"></div>
     <div id="info">
-      <h1>Michelson-Morley-Experiment</h1>
+      <h1>Der Sterntetraeder</h1>
       <h2 id="headline"></h2>
     </div>
 
@@ -22,14 +22,14 @@
     <!-- versions see: https://unpkg.com/browse/es-module-shims@1.5.4/ -->
     <script async src="https://unpkg.com/es-module-shims@1.5.4/dist/es-module-shims.js"></script>
 
-    <!-- versions see: https://unpkg.com/browse/three@0.140.2/ -->
+    <!-- versions see: https://unpkg.com/browse/three@0.160.0/ -->
     <script type="importmap">
       {
         "imports": {
-          "three": "https://unpkg.com/three@0.140.2/build/three.module.js",
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
           "const": "./js/const.js",
           "utilities": "./js/utilities.js",
-          "render": "./js/render.js",
+          "render": "./js/render-v0.160.0.js",
           "MME-consts": "./js/Michelson-Morley-Experiment-3D/MME-consts.js"
         }
       }
@@ -39,10 +39,10 @@
     <!-- <script type="importmap">
       {
         "imports": {
-          "three": "./js/three.js/r140-0.140.2/three.module.js",
+          "three": "./js/three.js/r140-0.160.0/three.module.js",
           "const": "./js/const.js",
           "utilities": "./js/utilities.js",
-          "render": "./js/render.js",
+          "render": "./js/render-v0.160.0.js",
           "MME-consts": "./js/Michelson-Morley-Experiment-3D/MME-consts.js"
         }
       }
@@ -52,15 +52,16 @@
 
       import * as THREE from 'three' // is needed as module with this name in deeper three.js structures
 
-      import { GUI } from 'https://unpkg.com/three@0.140.2/examples/jsm/libs/lil-gui.module.min.js'
+      import { GUI } from 'https://unpkg.com/three@0.160.0/examples/jsm/libs/lil-gui.module.min.js'
 
       import {
         pi2,
         eleWidth,
         eleHeight,
+        intensityLightScaling,
       } from 'const' // with 'es-module-shims.js' using the relative local path './js/const.js' gives an error: TypeError: Module name, './js/const.js' does not resolve to a valid URL.
       import { objectValuesToArray } from 'utilities' // with 'es-module-shims.js' using the relative local path './js/utilities.js' gives an error: TypeError: Module name, './js/utilities.js' does not resolve to a valid URL.
-      import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render.js' gives an error: TypeError: Module name, './js/render.js' does not resolve to a valid URL.
+      import { Render } from 'render' // with 'es-module-shims.js' using the relative local path './js/render-0.160.0.js' gives an error: TypeError: Module name, './js/render-0.160.0.js' does not resolve to a valid URL.
 
       // !!! does not work in a way that it makes all more easy and have lesser lines !!!
       // import * from 'MME-consts' // with 'es-module-shims.js' using the relative local path './js/Michelson-Morley-Experiment-3D/MME-consts.js' gives an error: TypeError: Module name, './js/Michelson-Morley-Experiment-3D/MME-consts.js' does not resolve to a valid URL.
@@ -79,6 +80,7 @@
       Controls
       --------------------*/
       const render = new Render(eleWidth, eleHeight)
+      // calc dynamic size, see: https://stackoverflow.com/questions/29884485/threejs-canvas-size-based-on-container
 
       const container = document.getElementById( 'container' )
       container.style.width = render.dimensions.width + 'px'
@@ -90,6 +92,7 @@
       info.style.height = render.dimensions.height + 'px'
 
       const headline = document.getElementById( 'headline' )
+      headline.innerText = 'Das geometrische Muster stabiler Dynamik'
 
 
       /*--------------------
@@ -112,7 +115,7 @@
       Light, additional */
       const spotLightSecondParamsObj = {
         color: 0xffffff,
-        intensity: 0.5,
+        intensity: 0.5 * Math.PI * intensityLightScaling,
         // distance: Float,
         // angle: Radians,
         // penumbra: Float,
@@ -122,36 +125,36 @@
 
       /*--------
       Dimension Bowls */
-      const bowlGeometryFactor = 1 / 16
-      const bowlRadius = 1 * bowlGeometryFactor
-      const bowlColor = 0xff0000
-      const bowlMeshPhysicalMaterialParams = {
-        color: bowlColor,
-        // opacity: 0.5,
-        // transparent: true,
-        emissive: 0x000000,
-        metalness: 0.7,
-        // metalness: 0.2,
-        flatShading: false,
-        roughness: 0.7,
-        // roughness: 0.9,
-        // envMap: textureCube,
-        reflectivity: 1,
-        // reflectivity: 0.5,
-        side: THREE.DoubleSide,
-      }
-      const bowlMaterial = new THREE.MeshPhysicalMaterial( bowlMeshPhysicalMaterialParams )
-      const bowlSphereGeometryParamsObj = {
-        radius: bowlRadius,
-        widthSegments: 20,
-        heightSegments: 20,
-        // phiStart: Float,
-        // phiLength: Float,
-        // thetaStart: Float,
-        // thetaLength: Float,
-      }
-      const bowlSphereGeometryParams = objectValuesToArray(bowlSphereGeometryParamsObj)
-      const bowlSphereGeometry = new THREE.SphereGeometry( ...bowlSphereGeometryParams )
+      // const bowlGeometryFactor = 1 / 16
+      // const bowlRadius = 1 * bowlGeometryFactor
+      // const bowlColor = 0xff0000
+      // const bowlMeshPhysicalMaterialParams = {
+      //   color: bowlColor,
+      //   // opacity: 0.5,
+      //   // transparent: true,
+      //   emissive: 0x000000,
+      //   metalness: 0.7,
+      //   // metalness: 0.2,
+      //   flatShading: false,
+      //   roughness: 0.7,
+      //   // roughness: 0.9,
+      //   // envMap: textureCube,
+      //   reflectivity: 1,
+      //   // reflectivity: 0.5,
+      //   side: THREE.DoubleSide,
+      // }
+      // const bowlMaterial = new THREE.MeshPhysicalMaterial( bowlMeshPhysicalMaterialParams )
+      // const bowlSphereGeometryParamsObj = {
+      //   radius: bowlRadius,
+      //   widthSegments: 20,
+      //   heightSegments: 20,
+      //   // phiStart: Float,
+      //   // phiLength: Float,
+      //   // thetaStart: Float,
+      //   // thetaLength: Float,
+      // }
+      // const bowlSphereGeometryParams = objectValuesToArray(bowlSphereGeometryParamsObj)
+      // const bowlSphereGeometry = new THREE.SphereGeometry( ...bowlSphereGeometryParams )
 
       /*--------
       Plates */
@@ -227,49 +230,6 @@
       const screenGeometry = new THREE.BoxGeometry( ...plateBoxGeometryParams )
       const screenParamsMeshLambertMaterial = { color: screenColor, side: THREE.DoubleSide }
       const screenMaterial = new THREE.MeshLambertMaterial( screenParamsMeshLambertMaterial )
-
-      /*--------
-      Sender */
-      const senderGeometryFactor = 0.25
-      const senderColor = 0x2050ff
-      const senderCorpusSize = 0.5
-      // const senderMeshLambertMaterialParams = { color: senderColor, side: THREE.DoubleSide }
-      // const senderMaterial = new THREE.MeshLambertMaterial( senderMeshLambertMaterialParams )
-      const senderMeshPhysicalMaterialParams = {
-        color: senderColor,
-        // opacity: 0.5,
-        // transparent: true,
-        emissive: 0x000000,
-        metalness: 0.7,
-        flatShading: false,
-        roughness: 0.7,
-        // envMap: textureCube,
-        reflectivity: 1,
-        side: THREE.DoubleSide,
-      }
-      const senderMaterial = new THREE.MeshPhysicalMaterial( senderMeshPhysicalMaterialParams )
-      const senderCorpusBoxGeometryParamsObj = {
-        width: senderCorpusSize * senderGeometryFactor,
-        height: senderCorpusSize * senderGeometryFactor,
-        dept: senderCorpusSize * senderGeometryFactor,
-        // widthSegments: Integer,
-        // heightSegments: Integer,
-        // depthSegments: Integer,
-      }
-      const senderCorpusBoxGeometryParams = objectValuesToArray(senderCorpusBoxGeometryParamsObj)
-      const senderCorpusGeometry = new THREE.BoxGeometry( ...senderCorpusBoxGeometryParams )
-      const senderPyramidCylinderGeometryParamsObj = {
-        radiusTop: 0.25 * senderGeometryFactor,
-        radiusBottom: 0.5 * senderGeometryFactor,
-        height: 1 * senderGeometryFactor,
-        radialSegments: 4,
-        heightSegments: 30,
-        openEnded: true,
-        // thetaStart: Float,
-        // thetaLength: Float,
-      }
-      const senderPyramidCylinderGeometryParams = objectValuesToArray(senderPyramidCylinderGeometryParamsObj)
-      const senderPyramidGeometry = new THREE.CylinderGeometry( ...senderPyramidCylinderGeometryParams )
 
       /*--------
       Laser */
@@ -413,6 +373,37 @@
       const endlessTimeLength = -1.0
       
       /*--------
+      Merkaba */
+      const merkabaGeometryFactor = 0.5
+      const merkabaColor = 0x2050ff
+      const merkabaDiceSize = 1.0
+      // const merkabaMeshLambertMaterialParams = { color: merkabaColor, side: THREE.DoubleSide }
+      // const merkabaMaterial = new THREE.MeshLambertMaterial( merkabaMeshLambertMaterialParams )
+      const merkabaMeshPhysicalMaterialParams = {
+        color: merkabaColor,
+        opacity: 0.10,
+        transparent: true,
+        emissive: 0x000000,
+        metalness: 0.7,
+        flatShading: false,
+        roughness: 0.7,
+        // envMap: textureCube,
+        reflectivity: 1,
+        side: THREE.DoubleSide,
+      }
+      const merkabaMaterial = new THREE.MeshPhysicalMaterial( merkabaMeshPhysicalMaterialParams )
+      const merkabaDiceBoxGeometryParamsObj = {
+        width: merkabaDiceSize * merkabaGeometryFactor,
+        height: merkabaDiceSize * merkabaGeometryFactor,
+        dept: merkabaDiceSize * merkabaGeometryFactor,
+        // widthSegments: Integer,
+        // heightSegments: Integer,
+        // depthSegments: Integer,
+      }
+      const merkabaDiceBoxGeometryParams = objectValuesToArray(merkabaDiceBoxGeometryParamsObj)
+      const merkabaDiceGeometry = new THREE.BoxGeometry( ...merkabaDiceBoxGeometryParams )
+
+      /*--------
       Scene Basics */
 
       const laserAnimated = true
@@ -423,7 +414,7 @@
 
       let theoryModel_enum_FrQFT = 'FrQFT'
       let theoryModel_enum_SRT = 'SRT'
-      let theoryModel = theoryModel_enum_SRT
+      let showSecondTetrahedron = true
       let timeFactor = 1.0
       let timeReset = 0.0
       let experimentVelocity = 0.0
@@ -859,141 +850,24 @@
       }
 
 
-      const laserSplitCreate = (indexLaserSplit, splitsCount) => {
-        /*--------
-        Group */
-        const laserWaveGroup = new THREE.Group()
-        render.scene.add( laserWaveGroup )
-        /*--------
-        Parts */
-        const laserPartsOpacity = (partIndex, partsCount) => {
-          // ???: use Gauß'sche Normalverteilung?
-          // return 1 // for full cylinder
-          return Math.sin(Math.PI * (partIndex / (partsCount - 1)))
-        }
-        const laserPushMaterialByOpacityAry = (laserMaterials, materialParams, indexPart) => {
-          // laserMaterials.push( new THREE.MeshLambertMaterial(
-          laserMaterials.push( new THREE.MeshPhysicalMaterial(
-            { ...materialParams, opacity: materialParams.opacity * laserPartsOpacity( indexPart, laserPartsCount ) / laserSplitsCount }
-          ))
-        }
-        const laserParts = []
-        for (let index = 0; index < laserPartsCount; index++) {
-          let laserMaterials = []
-          switch (index === 0 ? 'first' : index < laserPartsCount - 1 ? 'middle' : 'last') {
-            case 'first':
-              laserClosedTopMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
-              break
-            case 'middle':
-              laserOpenEndedMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
-              break
-            case 'last':
-              laserClosedBottomMaterialsParams.forEach( (materialParams) => laserPushMaterialByOpacityAry( laserMaterials, materialParams, index ))
-              break
-          }
-          const laserPart = new THREE.Mesh( laserGeometry, laserMaterials )
-          laserParts.push( laserPart )
-          laserWaveGroup.add( laserPart )
-          laserPartPositionSet(laserPart, index, indexLaserSplit, 0)
-        }
-        return { laserWaveGroup, laserParts }
-      }
-
-      const laserSplitedAddDistance = (index) => 
-        laserSlpitsSeparated ?
-          laserSlpitsPositionCenterCorrection
-            // shift to the next split
-            + laserSlpitsPositionDistance * index
-          : 0
-
-      const laserSplitPositionSet = (laserSplit, index) => 
-        laserSplit.position.set(
-          0,
-          centerHeightPosition + (laserSlpitsSeparated ? laserSplitedAddDistance( index ) : 0),
-          0
-        )
-
-
-      let settings = null
-      let folderTheory = null
-      let buttonFrQFT = null
-      const buttonFrQFTName = 'FrQFT / Medium Theorie'
-      let buttonSRT = null
-      const buttonSRTName = 'SRT'
-      let folderVelocity = null
-      let sliderTimeFactor = null
-      const sliderTimeFactorName = 'Zeitskala (%)'
-      let sliderExperimentVelocity = null
-      const sliderExperimentVelocityName = 'Zum Beobachter (% der LG)'
-
       function createPanel() {
-
-        const panel = new GUI({ width: 310 })
-        // container.appendChild( panel.domElement )
-
-        const folderTheory = panel.addFolder( 'Theorie / Model' )
-        const folderVelocity = panel.addFolder( 'Geschwindigkeit' );
-
-        settings = {
-          [buttonFrQFTName]: function () {
-            setTheory(theoryModel_enum_FrQFT)
-          },
-          [buttonSRTName]: function () {
-            setTheory(theoryModel_enum_SRT)
-          },
-          [sliderTimeFactorName]: timeFactor * 100,
-          [sliderExperimentVelocityName]: experimentVelocity * 100,
+        const buttonShowSecondTetrahedronName = 'Zeige beide Tetraeder'
+        const panel = new GUI({ width: 200 })
+        const settings = {
+          [buttonShowSecondTetrahedronName]: showSecondTetrahedron,
         }
-
-        buttonFrQFT = folderTheory.add(settings, buttonFrQFTName)
-        buttonSRT = folderTheory.add(settings, buttonSRTName)
-        setTheory()
-        sliderTimeFactor = folderVelocity.add(settings, sliderTimeFactorName, 0.0, 200.0).onChange(function (newTimeFactorPercent) {
-          setTimeFactor(newTimeFactorPercent / 100)
-        })
-        sliderExperimentVelocity = folderVelocity.add(settings, sliderExperimentVelocityName, -99.9995, 99.9995).onChange(function (newExperimentVelocityPercent) {
-          setExperimentVelocity(newExperimentVelocityPercent / 100)
-        })
-
-        // folder1.open()
-
+        const buttonShowSecondTetrahedron = panel.add(settings, buttonShowSecondTetrahedronName).onChange(toggleShowSecondTetrahedron)
       }
 
-      function setTheory(newTheoryModel = null) {
-        if (newTheoryModel) theoryModel = newTheoryModel
-        switch (theoryModel) {
-          case theoryModel_enum_FrQFT:
-            headline.innerText = 'Fraktale Quanten-Fluss-Theorie (FrQFT) / Medium Theorie'
-            buttonFrQFT.disable()
-            buttonSRT.enable()
-            break
-          case theoryModel_enum_SRT:
-            headline.innerText = 'Spezielle Relativitätstheorie (SRT)'
-            buttonFrQFT.enable()
-            buttonSRT.disable()
-            break
-          default:
-            break
+      function toggleShowSecondTetrahedron() {
+        showSecondTetrahedron = !showSecondTetrahedron
+        if (showSecondTetrahedron) {
+          merkaba2Mesh.visible = true
+          merkaba2EdgesLine.visible = true
+        } else {
+          merkaba2Mesh.visible = false
+          merkaba2EdgesLine.visible = false
         }
-      }
-
-      function setTimeFactor(newTimeFactor) {
-        timeFactor = newTimeFactor
-        timeReset = render.clock.getElapsedTime()
-      }
-
-      function setExperimentVelocity(newExperimentVelocity) {
-        experimentVelocity = newExperimentVelocity
-
-        // Lorentz contraction
-        const c0Pow2 = 1
-        inversGammaZ = Math.sqrt(1 - Math.pow(experimentVelocity, 2) / c0Pow2)
-
-        calcArms()
-
-        experimentGroup.scale.set(1.0, 1.0, inversGammaZ)
-
-        timeReset = render.clock.getElapsedTime()
       }
 
 
@@ -1024,27 +898,27 @@
       // const gridHelper = new THREE.GridHelper( size, divisions, colorCenterLine )
       // render.scene.add(gridHelper)
 
-      const gridSize = 4
-      const gridDivisions = 4
-      const gridColor = 0x009000
-      const gridOpacity = 0.4
-      let gridParameters = {
-        width: gridSize,
-        height: gridSize,
-        widthNumGridLines: gridDivisions,
-        heightNumGridLines: gridDivisions,
-        widthOffset: 0.0,
-        heightOffset: 0.0,
-        color: gridColor,
-        opacity: gridOpacity,
-      }
-      let gridGroup = drawGrid(gridParameters)
-      render.scene.add(gridGroup)
-      gridGroup.rotation.set( pi2 / 4, 0, 0)
+      // const gridSize = 4
+      // const gridDivisions = 4
+      // const gridColor = 0x009000
+      // const gridOpacity = 0.4
+      // let gridParameters = {
+      //   width: gridSize,
+      //   height: gridSize,
+      //   widthNumGridLines: gridDivisions,
+      //   heightNumGridLines: gridDivisions,
+      //   widthOffset: 0.0,
+      //   heightOffset: 0.0,
+      //   color: gridColor,
+      //   opacity: gridOpacity,
+      // }
+      // let gridGroup = drawGrid(gridParameters)
+      // render.scene.add(gridGroup)
+      // gridGroup.rotation.set( pi2 / 4, 0, 0)
 
 
       /*--------------------
-      Expermiment Objects
+      Experiment Objects
       --------------------
       --------------------*/
 
@@ -1054,158 +928,226 @@
 
       const experimentGroup = new THREE.Group()
       render.scene.add(experimentGroup)
-      setExperimentVelocity(experimentVelocity)
 
       /*--------------------
       Dimension Bowls
       --------------------*/
       /*--------
       Group */
-      const bowlsGroup = new THREE.Group()
-      experimentGroup.add( bowlsGroup )
-      bowlsGroup.position.set( 0, bowlRadius, 0 )
+      // const bowlsGroup = new THREE.Group()
+      // experimentGroup.add( bowlsGroup )
+      // bowlsGroup.position.set( 0, bowlRadius, 0 )
       /*--------
       Bowls */
-      const bowls = [
-        new THREE.Mesh( bowlSphereGeometry, bowlMaterial ),
-        new THREE.Mesh( bowlSphereGeometry, bowlMaterial ),
-        new THREE.Mesh( bowlSphereGeometry, bowlMaterial ),
-        new THREE.Mesh( bowlSphereGeometry, bowlMaterial ),
-      ]
-      bowls.forEach((bowl, index) => {
-        bowlsGroup.add( bowl )
-        switch (index) {
-          case 0:            
-            bowl.position.set(centerDistance.ins.x, 0, centerDistance.ins.z)
-            break
-          case 1:            
-            bowl.position.set(centerDistance.ins.x, 0, -centerDistance.ins.z)
-            break
-          case 2:            
-            bowl.position.set(-centerDistance.ins.x, 0, centerDistance.ins.z)
-            break
-          case 3:            
-            bowl.position.set(-centerDistance.ins.x, 0, -centerDistance.ins.z)
-            break
-        }
-      })
+      // const bowls = [
+      //   new THREE.Mesh( bowlSphereGeometry, bowlMaterial ),
+      //   new THREE.Mesh( bowlSphereGeometry, bowlMaterial ),
+      //   new THREE.Mesh( bowlSphereGeometry, bowlMaterial ),
+      //   new THREE.Mesh( bowlSphereGeometry, bowlMaterial ),
+      // ]
+      // bowls.forEach((bowl, index) => {
+      //   bowlsGroup.add( bowl )
+      //   switch (index) {
+      //     case 0:            
+      //       bowl.position.set(centerDistance.ins.x, 0, centerDistance.ins.z)
+      //       break
+      //     case 1:            
+      //       bowl.position.set(centerDistance.ins.x, 0, -centerDistance.ins.z)
+      //       break
+      //     case 2:            
+      //       bowl.position.set(-centerDistance.ins.x, 0, centerDistance.ins.z)
+      //       break
+      //     case 3:            
+      //       bowl.position.set(-centerDistance.ins.x, 0, -centerDistance.ins.z)
+      //       break
+      //   }
+      // })
 
       /*--------------------
-      Mian Mirror
+      Main Mirror
       --------------------*/
-      const mirrorMain = mirrorCreate({
-        withMirrorPlane: true,
-        mirrorBoxMaterial: mirrorMaterial,
-        mirrorPlaneMaterial: mirrorPlaneMaterial,
-      })
-      experimentGroup.add( mirrorMain )
-      mirrorMain.rotation.set( 0, pi2 / 2, 0)
-      mirrorMain.position.set( 0, centerHeightPosition, -centerDistance.ins.z )
+      // const mirrorMain = mirrorCreate({
+      //   withMirrorPlane: true,
+      //   mirrorBoxMaterial: mirrorMaterial,
+      //   mirrorPlaneMaterial: mirrorPlaneMaterial,
+      // })
+      // experimentGroup.add( mirrorMain )
+      // mirrorMain.rotation.set( 0, pi2 / 2, 0)
+      // mirrorMain.position.set( 0, centerHeightPosition, -centerDistance.ins.z )
 
       /*--------------------
       Side Mirror
       --------------------*/
-      const mirrorSide = mirrorCreate({
-        withMirrorPlane: true,
-        mirrorBoxMaterial: mirrorMaterial,
-        mirrorPlaneMaterial: mirrorPlaneMaterial,
-      })
-      experimentGroup.add( mirrorSide )
-      mirrorSide.rotation.set( 0, pi2 / 4, 0)
-      mirrorSide.position.set( centerDistance.ins.x, centerHeightPosition, 0 )
+      // const mirrorSide = mirrorCreate({
+      //   withMirrorPlane: true,
+      //   mirrorBoxMaterial: mirrorMaterial,
+      //   mirrorPlaneMaterial: mirrorPlaneMaterial,
+      // })
+      // experimentGroup.add( mirrorSide )
+      // mirrorSide.rotation.set( 0, pi2 / 4, 0)
+      // mirrorSide.position.set( centerDistance.ins.x, centerHeightPosition, 0 )
 
       /*--------------------
       Half Mirror
       --------------------*/
-      const mirrorCenter = new THREE.Mesh( mirrorHalfGeometry, mirrorHalfMaterial )
-      experimentGroup.add( mirrorCenter )
-      mirrorCenter.rotation.set( 0, pi2 / 8, 0)
-      mirrorCenter.position.set( 0, centerHeightPosition, 0 )
+      // const mirrorCenter = new THREE.Mesh( mirrorHalfGeometry, mirrorHalfMaterial )
+      // experimentGroup.add( mirrorCenter )
+      // mirrorCenter.rotation.set( 0, pi2 / 8, 0)
+      // mirrorCenter.position.set( 0, centerHeightPosition, 0 )
 
       /*--------------------
       Screen For Interference
       --------------------*/
-      const screenInterference = new THREE.Mesh( screenGeometry, screenMaterial )
-      experimentGroup.add( screenInterference )
-      screenInterference.rotation.set( 0, - (pi2 / 4), 0)
-      screenInterference.position.set( -centerDistance.ins.x, centerHeightPosition, 0 )
-
-      /*--------------------
-      Sender
-      --------------------*/
-      /*--------
-      Group */
-      const senderGroup = new THREE.Group()
-      experimentGroup.add( senderGroup )
-      senderGroup.position.set( 0, centerHeightPosition, centerDistance.ins.z + senderCorpusBoxGeometryParamsObj.dept / 2 )
-      /*--------
-      Corpus */
-      const senderCorpus = new THREE.Mesh( senderCorpusGeometry, senderMaterial )
-      senderGroup.add( senderCorpus )
-      /*--------
-      Pyramid */
-      const senderPyramid = new THREE.Mesh( senderPyramidGeometry, senderMaterial )
-      senderPyramid.rotation.set( pi2 / 4, pi2 / 8, 0)
-      senderPyramid.position.set( 0, 0, - (senderPyramidCylinderGeometryParamsObj.height / 2) )
-      senderGroup.add( senderPyramid )
-
-      /*--------------------
-      Laser
-      --------------------*/
-      const laserSplits = []
-      for (let indexLaserSplit = 0; indexLaserSplit < laserSplitsCount; indexLaserSplit++) {
-        const laserSplit = laserSplitCreate( indexLaserSplit, laserSplitsCount )
-        laserSplits.push(laserSplit)
-        laserSplitPositionSet(laserSplit.laserWaveGroup, indexLaserSplit)
-      }
+      // const screenInterference = new THREE.Mesh( screenGeometry, screenMaterial )
+      // experimentGroup.add( screenInterference )
+      // screenInterference.rotation.set( 0, - (pi2 / 4), 0)
+      // screenInterference.position.set( -centerDistance.ins.x, centerHeightPosition, 0 )
 
       /*--------------------
       Panel
       --------------------*/
       createPanel()
-      setTheory()
+
+
+      /*--------------------
+      Merkaba Objects
+      --------------------
+      --------------------*/
+
+      /*--------------------
+      Merkaba Group
+      --------------------*/
+
+      const merkabaGroup = new THREE.Group()
+      render.scene.add(merkabaGroup)
+      /*--------
+      Merkaba Dice */
+      const merkabaDice = new THREE.Mesh(merkabaDiceGeometry, merkabaMaterial)
+      const merkabaDiceEdges = new THREE.EdgesGeometry(merkabaDiceGeometry)
+      const merkabaDiceEdgesLine = new THREE.LineSegments(merkabaDiceEdges, new THREE.LineBasicMaterial({
+        color: 0x888888,
+        linewidth: 1.0,
+        linecap: 'round', //ignored by WebGLRenderer
+        linejoin: 'round', //ignored by WebGLRenderer
+      }))
+      // merkabaGroup.add(merkabaDice)
+      merkabaGroup.add(merkabaDiceEdgesLine)
+      /*--------
+      Merkaba */
+      const merkabaGeometry = new THREE.BufferGeometry()
+      // create a simple square shape. We duplicate the top left and bottom right
+      // vertices because each vertex needs to appear once per triangle.
+      const side = merkabaDiceSize * merkabaGeometryFactor / 2.0
+      const vertices = new Float32Array([
+        -side, -side, side, // v0
+        side, -side, -side, // v1
+        side, side, side, // v2
+        
+        side, -side, -side, // v3
+        -side, -side, side, // v4
+        -side, side, -side, // v5
+        
+        -side, side, -side, // v6
+        -side, -side, side, // v7
+        side, side, side, // v8
+        
+        -side, side, -side, // v9
+        side, -side, -side, // v10
+        side, side, side, // v11
+      ])
+      // itemSize = 3 because there are 3 values (components) per vertex
+      merkabaGeometry.setAttribute('position', new THREE.BufferAttribute(vertices, 3))
+      const merkaba1Material = new THREE.MeshBasicMaterial({
+        // color: 0xff0000,
+        color: 0xff5050,
+        // color: 0xff0000,
+        // opacity: 0.3,
+        // transparent: true,
+        // emissive: 0x000000,
+        // metalness: 0.7,
+        // flatShading: false,
+        // roughness: 0.7,
+        // envMap: textureCube,
+        reflectivity: 1,
+        side: THREE.DoubleSide,
+      })
+      const merkaba2Material = new THREE.MeshBasicMaterial({
+        // color: 0xff0000,
+        color: 0x5050ff,
+        // color: 0x0000ff,
+        // opacity: 0.3,
+        // transparent: true,
+        // emissive: 0x000000,
+        // metalness: 0.7,
+        // flatShading: false,
+        // roughness: 0.7,
+        // envMap: textureCube,
+        reflectivity: 1,
+        side: THREE.DoubleSide,
+      })
+      const merkaba1Mesh = new THREE.Mesh(merkabaGeometry, merkaba1Material)
+      const merkaba2Mesh = new THREE.Mesh(merkabaGeometry, merkaba2Material)
+      
+      const merkabaEdges = new THREE.EdgesGeometry(merkabaGeometry)
+      const merkabaEdgesMaterial = new THREE.LineBasicMaterial({
+        // color: 0x888888,
+        color: 0x505050,
+        linewidth: 1.0,
+        linecap: 'round', //ignored by WebGLRenderer
+        linejoin: 'round', //ignored by WebGLRenderer
+      })
+      const merkaba1EdgesLine = new THREE.LineSegments(merkabaEdges, merkabaEdgesMaterial)
+      const merkaba2EdgesLine = new THREE.LineSegments(merkabaEdges, merkabaEdgesMaterial)
+
+      merkabaGroup.add(merkaba1Mesh)
+      merkabaGroup.add(merkaba1EdgesLine)
+
+      merkabaGroup.add(merkaba2Mesh)
+      merkaba2Mesh.rotation.set(pi2 / 4.0, 0, 0)
+      merkabaGroup.add(merkaba2EdgesLine)
+      merkaba2EdgesLine.rotation.set(pi2 / 4.0, 0, 0)
 
 
       /*--------------------
       Animation
       --------------------*/
 
-      var time = 0
-      var move = 0
+      // var time = 0
+      // var move = 0
 
       render.renderer.setAnimationLoop(() => {
 
-        // means longest way of all possible
-        const completeWay = longestTime // Wolle
+      //   // means longest way of all possible
+      //   const completeWay = longestTime // Wolle
 
-        time = render.clock.getElapsedTime() - timeReset
-        // move = -(laserBeamLength / 2) + ((time * timeFactor) % completeWay) // Wolle
-        move = ((time * timeFactor) % completeWay) // Wolle
+      //   time = render.clock.getElapsedTime() - timeReset
+      //   // move = -(laserBeamLength / 2) + ((time * timeFactor) % completeWay) // Wolle
+      //   move = ((time * timeFactor) % completeWay) // Wolle
 
-        // performance: maybe move the grid lines instead of creating a new group every time?
-        if (experimentVelocity !== 0 || gridParameters.heightOffset !== 0) {
-          render.scene.remove(gridGroup)
-          gridGroup = null
-          gridParameters = {
-            ...gridParameters,
-            // widthOffset: 0.0,
-            heightOffset: experimentVelocity === 0 ? 0 : (time * timeFactor) * experimentVelocity,
-          }
-          gridGroup = drawGrid(gridParameters)
-          render.scene.add(gridGroup)
-          gridGroup.rotation.set( pi2 / 4, 0, 0)
-        }
+      //   // performance: maybe move the grid lines instead of creating a new group every time?
+      //   if (experimentVelocity !== 0 || gridParameters.heightOffset !== 0) {
+      //     render.scene.remove(gridGroup)
+      //     gridGroup = null
+      //     gridParameters = {
+      //       ...gridParameters,
+      //       // widthOffset: 0.0,
+      //       heightOffset: experimentVelocity === 0 ? 0 : (time * timeFactor) * experimentVelocity,
+      //     }
+      //     gridGroup = drawGrid(gridParameters)
+      //     render.scene.add(gridGroup)
+      //     gridGroup.rotation.set( pi2 / 4, 0, 0)
+      //   }
 
-        if (laserAnimated) {
-          laserSplits.forEach(
-            (laserSplit, indexLaserSplit) => {
-              laserSplit.laserParts.forEach(
-                (laserPart, indexLaserPart) =>
-                  laserPartPositionSet( laserPart, indexLaserPart, indexLaserSplit, move)
-              )
-            }
-          )
-        }
+      //   if (laserAnimated) {
+      //     laserSplits.forEach(
+      //       (laserSplit, indexLaserSplit) => {
+      //         laserSplit.laserParts.forEach(
+      //           (laserPart, indexLaserPart) =>
+      //             laserPartPositionSet( laserPart, indexLaserPart, indexLaserSplit, move)
+      //         )
+      //       }
+      //     )
+      //   }
 
         render.renderer.render( render.scene, render.camera )
       })

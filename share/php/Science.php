@@ -3,10 +3,17 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 01.09.2023, 00:00h
+  // #: Stand: 29.01.2024, 22:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20240129:  +:  "$Sc_g_equation_replace_ary":  '  :\in  ' -> '\;\;\;:\in\;\;\;' is new.
+  //           20240121:  !:  "$Sc_g_Text_replace_preg_ary": Add entry "\lm{}" as short of "\latexmath{}".
+  //           20231110:  !:  "$Sc_g_Text_replace_preg_ary": Change entry "_{}" to "__{}".
+  //           20231109:  !:  "$Sc_g_Text_replace_preg_ary": Change entry "^{}" to "^^{}".
+  //           20231030:  +:  "MathJax":  Add Macro "i" for "\i" generates a non italic "i" in formulas for the imaginary unit.
+  //           20231024:  +:  "MathJax":  Add Macro "e" for "\e" generates a non italic "e" in formulas for the Euler number.
+  //                      +:  "MathJax":  Add Macro "s" for "\s" generates a non italic "s" in formulas for the superial unit.
   //           20230901:  +:  "Sc_f_equation_list":  Add horizontal scrollable equations with class 'content-horizontal-scrollable'.
   //           20230803:  +:  "$Sc_g_equation_replace_ary":  '  \land  ' -> '\;\;\;\land\;\;\;' is new.
   //           20230802:  +:  "$Sc_g_equation_replace_ary":  '  \lor  ' -> '\;\;\;\lor\;\;\;', '  \Leftrightarrow  ' -> '\;\;\;\Leftrightarrow\;\;\;', '  \Rightarrow  ' -> '\;\;\;\Rightarrow\;\;\;' are new.
@@ -214,6 +221,9 @@
     echo '        TeX: {'."\n";
     echo '          extensions: ["color.js"],'."\n";
     echo '          Macros: {'."\n";
+    echo '            i: "\\\\mathrm{i}",'."\n"; // imaginary unit
+    echo '            s: "\\\\mathrm{s}",'."\n"; // superial unit
+    echo '            e: "\\\\mathrm{e}",'."\n"; // Euler number
     echo '            llangle: "\\\\langle \\\\mspace{-3.5mu} \\\\langle",'."\n";
     echo '            rrangle: "\\\\rangle \\\\mspace{-3.5mu} \\\\rangle",'."\n";
     echo '            lOpera: "\\\\langle \\\\mspace{-2.2mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-1.0mu}",'."\n";
@@ -374,7 +384,7 @@
     }
     else
     
-      return 'Error: "^{}": Parameter amount is not 1 and 0 optional! Value: $value';
+      return 'Error: "^^{}": Parameter amount is not 1 and 0 optional! Value: $value';
 
   }
 
@@ -392,7 +402,7 @@
     }
     else
     
-      return 'Error: "_{}": Parameter amount is not 1 and 0 optional! $value[0]';
+      return 'Error: "__{}": Parameter amount is not 1 and 0 optional! $value[0]';
 
   }
 
@@ -512,16 +522,16 @@
                                                param_optional_max => 0,
                                                callback_f => 'Sc_f_replace_callback__latexcommand__term',
                                              ),
-                                      '^' =>
+                                      '^^' =>
                                         array( type => 'latexcommand',
-                                               search => '^',
+                                               search => '^^',
                                                param_dim => 1,
                                                param_optional_max => 0,
                                                callback_f => 'Sc_f_replace_callback__latexcommand__zirkumflex',
                                              ),
-                                      '_' =>
+                                      '__' =>
                                         array( type => 'latexcommand',
-                                               search => '_',
+                                               search => '__',
                                                param_dim => 1,
                                                param_optional_max => 0,
                                                callback_f => 'Sc_f_replace_callback__latexcommand__underscore',
@@ -529,6 +539,14 @@
                                       'latexmath' =>     // #: It is not working this way, because latex includes '{' and '}' as well. A method where only searching for '\latexmath' and then looking for the Balance of an array of '[]' and '{}' would be better and can handle recursion.
                                         array( type => 'latexcommand',
                                                search => '\\latexmath',
+                                               param_dim => 1,
+                                               param_optional_max => 2,
+                                               callback_f => 'Sc_f_replace_callback__latexcommand__latexmath',
+                                               replace_internal => false,     // #!: XXX This is important for velocity and if "\\footnote" is hidden it shall not be counted and registered!
+                                             ),
+                                      'lm' =>     // #: It is not working this way, because latex includes '{' and '}' as well. A method where only searching for '\latexmath' and then looking for the Balance of an array of '[]' and '{}' would be better and can handle recursion.
+                                        array( type => 'latexcommand',
+                                               search => '\\lm',
                                                param_dim => 1,
                                                param_optional_max => 2,
                                                callback_f => 'Sc_f_replace_callback__latexcommand__latexmath',
@@ -639,6 +657,7 @@
                                     array( '?=', '\overset{?}{=}'),
                                     array( '  \mapsto  ', '\;\;\;\mapsto\;\;\;'),
                                     array( '  \in  ', '\;\;\;\in\;\;\;'),
+                                    array( '  :\in  ', '\;\;\;:\in\;\;\;'),
                                     array( '  ?\in  ', '\;\;\;\overset{?}{\in}\;\;\;'),
                                     array( '  \notin  ', '\;\;\;\notin\;\;\;'),
                                     array( '  \subset  ', '\;\;\;\subset\;\;\;'),

@@ -77,7 +77,7 @@
                     'Der Inhalt und Programm-Code dieser Internetseite ist auf GitHub unter der \\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{Lizenz (folge diesem Link)}'."\n".
                     'zur Verwendung und Beteiligung zur Verfügung gestellt:'."\n"))),
                   array( 'text', array( text => array(
-                    '\\jump[https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web]{}{https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web}'."\n"))),
+                    '\\url{https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web}'."\n"))),
                   array( 'text', array( text => array(
                     'Dort gibt es auch die Möglichkeit über Issues und Pullrequests konstruktive Änderungsvorschläge einzureichen oder eine inhaltliche Diskussion zu führen.'."\n".
                     'Ich helfe dir gerne dabei herauszufinden, wie das funktioniert.'."\n"))),
@@ -247,20 +247,28 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'text', array( text => array(
-                    '&Auml;nderungen am Inhalt dieser Website oder an den darin genannten Produkten oder Preisen etc. kann'."\n".
-                    '<strong>Wolfgang Huß</strong> jederzeit ohne vorherige Ank&uuml;ndigung vornehmen. Zur Aktualisierung des Inhalts dieser'."\n".
-                    'Website besteht keine Verpflichtung.  Eine Haftung oder Garantie f&uuml;r die Aktualit&auml;t, Richtigkeit und Vollst&auml;ndigkeit'."\n".
-                    'der zur Verf&uuml;gung gestellten Informationen und Daten ist ausgeschlossen. In keinem Fall wird f&uuml;r Sch&auml;den,'."\n".
+                    'Änderungen am Inhalt dieser Website oder an den darin genannten Produkten oder Preisen etc. kann'."\n".
+                    '<strong>Wolfgang Huß</strong>, auch als Inhaber von Media Line Digital e.K., jederzeit ohne vorherige Ankündigung vornehmen. Zur Aktualisierung des Inhalts dieser'."\n".
+                    'Website besteht keine Verpflichtung.  Eine Haftung oder Garantie für die Aktualität, Richtigkeit und Vollständigkeit'."\n".
+                    'der zur Verfügung gestellten Informationen und Daten ist ausgeschlossen. In keinem Fall wird für Schäden,'."\n".
                     'die sich aus der Verwendung der abgerufenen Informationen ergeben, eine Haftung &uuml;bernommen. \\\\'."\n".
                     '\\\\'."\n".
-                    'F&uuml;r alle auf andere Webseiten gesetzten Links gilt: \\\\'."\n".
-                    '<strong>Wolfgang Huß</strong> m&ouml;chte ausdr&uuml;cklich betonen, dass er keinerlei Einfluss auf die Gestaltung'."\n".
-                    'und die Inhalte der gelinkten Seiten hat. Deshalb distanziert er sich hiermit ausdr&uuml;cklich von allen Inhalten aller gelinkten'."\n".
-                    'Seiten dieser gesamten Website inklusive aller Unterseiten. Diese Erkl&auml;rung gilt f&uuml;r alle auf dieser Homepage ausgebrachten'."\n".
-                    'Links und f&uuml;r alle Inhalte der Seiten, zu denen Links oder Banner f&uuml;hren.<br>'."\n".
+                    'Für alle auf andere Webseiten gesetzten Links gilt: \\\\'."\n".
+                    '<strong>Wolfgang Huß</strong>, auch als Inhaber von Media Line Digital e.K., möchte ausdrücklich betonen, dass er keinerlei Einfluss auf die Gestaltung'."\n".
+                    'und die Inhalte der gelinkten Seiten hat. Deshalb distanziert er sich hiermit ausdrücklich von allen Inhalten aller gelinkten'."\n".
+                    'Seiten dieser gesamten Website inklusive aller Unterseiten. Diese Erklärung gilt für alle auf dieser Homepage veröffentlichten'."\n".
+                    'Links und für alle Inhalte der Seiten, zu denen Links oder Banner führen.<br>'."\n".
                     '\\\\'."\n".
                     'Vor der Erwägung einer Abmahnung, nehmen sie bitte Kontakt mit mir auf, um zu klären, wie mögliche Probleme auf dieser Website ohne großen Kostenaufwand behoben werden können. \\\\'."\n".
-                    'Es gilt ausschlie&szlig;lich das Recht der Bundesrepublik Deutschland. Gerichtsstand ist Hamburg.'."\n"))),
+                    'Es gilt ausschließlich das Recht der Bundesrepublik Deutschland. Gerichtsstand ist Hamburg.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Impressum:Haftungshinweis:XXX', text =>
+                      
+                'Alternative Streitbeilegung', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Die Europäische Kommission stellt eine Plattform für die außergerichtliche Online-Streitbeilegung (OS-Plattform) bereit, aufrufbar unter \\url{https://ec.europa.eu/odr}.'."\n".
+                    ''))),
               )
           ); ?>
 
@@ -282,7 +290,7 @@
                   array( 'text', array( text => array(
                     // #: Bilder gefunden hier, nach Eingabe der Lizenzbedingungen: https://chooser-beta.creativecommons.org
                     // HTML-Version (Fehlerhaft): <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text"><a rel="cc:attributionURL" href="https://nsosp.org"><span rel="dct:title">New Science Of Soul Project</span></a> by <a rel="cc:attributionURL" href="https://nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"><span rel="cc:attributionName">Wolfgang Huß</span></a>CC BY-ND 4.0<a href="https://creativecommons.org/licenses/by-nd/4.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg/?ref=chooser-v1" /><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg/?ref=chooser-v1" /><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg/?ref=chooser-v1" /></a></p>
-                    '© Copyright 1986–2023 of the \\jump[https://nsosp.org]{}{New Science Of Soul Project} Website by \\jump[https://nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten]{}{Wolfgang Huß und Media Line Digital e.K.} is licensed under \\jump[https://creativecommons.org/licenses/by-nd/4.0]{}{CC BY-ND 4.0 <img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" alt="CC icon" title="CC icon" src="'.$Glo_PathRel_back.'../share/images/Copyright/cc.7a093a7d.svg" /><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" alt="by icon" title="by icon" src="'.$Glo_PathRel_back.'../share/images/Copyright/by.f6aa22c4.svg" /><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" alt="nd icon" title="nd icon" src="'.$Glo_PathRel_back.'../share/images/Copyright/nd.64831b7b.svg" />}'."\n"))),
+                    '© Copyright 1986–2024 of the \\jump[https://nsosp.org]{}{New Science Of Soul Project} Website by \\jump[https://nsosp.org/de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten]{}{Wolfgang Huß und Media Line Digital e.K.} is licensed under \\jump[https://creativecommons.org/licenses/by-nd/4.0]{}{CC BY-ND 4.0 <img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" alt="CC icon" title="CC icon" src="'.$Glo_PathRel_back.'../share/images/Copyright/cc.7a093a7d.svg" /><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" alt="by icon" title="by icon" src="'.$Glo_PathRel_back.'../share/images/Copyright/by.f6aa22c4.svg" /><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" alt="nd icon" title="nd icon" src="'.$Glo_PathRel_back.'../share/images/Copyright/nd.64831b7b.svg" />}'."\n"))),
                   array( 'text', array( text => array(
                     'Unless required by applicable law or agreed to in writing, the content of this domain is published under the above license is distributed on an "AS IS" basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.'."\n"))),
                   array( 'text', array( text => array(
@@ -303,7 +311,7 @@
                   array( 'text', array( text => array(
                     'Copyright 2010 Steve Matteson'."\n"))),
                   array( 'text', array( text => array(
-                    '    \\jump[http://www.apache.org/licenses/LICENSE-2.0]{}{http://www.apache.org/licenses/LICENSE-2.0}'."\n"))),
+                    '    \\url{http://www.apache.org/licenses/LICENSE-2.0}'."\n"))),
                   array( 'text', array( text => array(
                     'Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.'."\n"))),
                       
@@ -314,7 +322,7 @@
                     'Die wunderschöne schwarz-weß Grafik von Jeff Dahl habe ich aus WikiPedia.'."\n".
                     'Für das ›Auge des Ra‹ habe ich sie einfach gespiegelt.'."\n"))),
                   array( 'text', array( text => array(
-                    'Wikipedia-Seite: \\jump[https://de.wikipedia.org/wiki/Datei:Eye_of_Horus_bw.svg]{}{https://de.wikipedia.org/wiki/Datei:Eye_of_Horus_bw.svg}'."\n"))),
+                    'Wikipedia-Seite: \\url{https://de.wikipedia.org/wiki/Datei:Eye_of_Horus_bw.svg}'."\n"))),
                   array( 'text', array( text => array(
                     '\\bold{Lizenz:}'."\n"))),
                   array( 'text', array( text => array(
@@ -332,7 +340,7 @@
                   array( 'text', array( text => array(
                     'Danke liebe Bilbo, dass ich deine wunderschönen Bilder verwenden darf!'."\n"))),
                   array( 'text', array( text => array(
-                    'Originale auf der Seite der Ausstellung „Publik – Privat“ von Bilbo Calvez: \\jump[https://www.bilbo.calvez.info/publik-privat]{}{https://www.bilbo.calvez.info/publik-privat}'."\n"))),
+                    'Originale auf der Seite der Ausstellung „Publik – Privat“ von Bilbo Calvez: \\url{https://www.bilbo.calvez.info/publik-privat}'."\n"))),
                   array( 'text', array( text => array(
                     '\\bold{Lizenz:}'."\n"))),
                   array( 'text', array( text => array(

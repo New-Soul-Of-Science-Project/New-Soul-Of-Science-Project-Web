@@ -18,8 +18,8 @@
                     '• Die Primzahlen werden unter den sehr großen natürlichen Zahlen extrem selten.',
                     '• Es klafft eine riesige Lücke zwischen den endlichen natürlichen Zahlen und \\term{ω}, siehe \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}. Ist diese Lücke wirklich so groß?',
                     '– Meine Analyse sagt: Eine Anzahl von \\term{ω} Zahlen sind vom Typ \\term{ω - n} in den Biordinalzahlen.',
-                    '– Stimmt allerdings die Primzahlprodukt-Vermutung, dann liegen auch alle \\term{p^{-1}⋅ω ± n}, mit \\term{p} ist ein Primzahlprodukt einfacher Potenz aus endlich vielen Primzahlen.',
-                    '⋅ Ob es dann eine Einschränkung für die Größe von \\term{n} gibt, ist mir nicht ganz unklar, aber unwahrscheinlich. Wenn nicht, sind es je \\term{p^{-1}} dann \\term{2⋅ω} Zahlen.',
+                    '– Stimmt allerdings die Primzahlprodukt-Vermutung, dann liegen auch alle \\term{p^^{-1}⋅ω ± n}, mit \\term{p} ist ein Primzahlprodukt einfacher Potenz aus endlich vielen Primzahlen.',
+                    '⋅ Ob es dann eine Einschränkung für die Größe von \\term{n} gibt, ist mir nicht ganz unklar, aber unwahrscheinlich. Wenn nicht, sind es je \\term{p^^{-1}} dann \\term{2⋅ω} Zahlen.',
                     '\\bold{Interessante Erkenntnisse zu Primzahlen}',
                     '• Der \\jump[https://de.wikipedia.org/w/index.php?title=Stern-Brocot-Folge&oldid=224277569]{Calkin-Wilf-Baum}{Calkin-Wilf-Baum} muss etwas mit der Primzahlstruktur zu tun haben, weil alle seine Brüche teilerfremde Zähler und Nenner haben.',
                     '• Mit dem \\jump[https://de.wikipedia.org/w/index.php?title=Satz_von_Wilson&oldid=229853875]{}{Satz von Wilson} können wir herausfinden, ob eine Zahl eine Primzahl ist, wenn ich es richtig verstehe, siehe Primzahl-Produkt-Definition von \\term{s} in meinem Ordner „4. Variante“, Dokument „Sup-Zahl (52).pdf“, S. 5.',
@@ -103,13 +103,13 @@
                     'Nun können wir als erstes überlegen, ob es sich um einen der Primzahltürme handeln könnte:'."\n".
                     'Die unendlich große Primzahl-Potenz mit der kleinsten Basis in \\latexmath{ s } ist \\latexmath{ 2^\omega }.'."\n".
                     'Wenn wir berücksichtigen, dass ja oben \\latexmath{ s } durch \\latexmath{ 2 \cdot \omega } geteilt wird und wir den Faktor \\latexmath{ 2 } schon mal aus'."\n".
-                    'der unendlichen Potenz von \\latexmath{ 2 } entfernen, ergibt sich immer noch \\term{2^{ω-1}}, wobei \\latexmath{ \omega - 1 } als'."\n".
+                    'der unendlichen Potenz von \\latexmath{ 2 } entfernen, ergibt sich immer noch \\term{2^^{ω-1}}, wobei \\latexmath{ \omega - 1 } als'."\n".
                     '\\jump{OM:BiOrd:Home}{Biordinalzahl} definiert ist.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Nun ist es offensichtlich, dass \\term{2^{ω-1}} ungleich und sogar sehr viel größer als \\latexmath{ \omega } ist:'."\n".
+                      'Nun ist es offensichtlich, dass \\term{2^^{ω-1}} ungleich und sogar sehr viel größer als \\latexmath{ \omega } ist:'."\n".
                       '\\color{*Bearb}{(Hier auch \\latexmath{ \overset{\infty}{\ggg} } nutzen?)}'."\n".
                       ''))),
                   array( 'equations',
@@ -590,6 +590,23 @@
                       ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
+                      'Für die Zahl \\latexmath{ 18 } haben wir:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  pt( 18 )  =  *\{ 2, 9 *\}  }'),
+                      array( display => 'on',  latex => '{  pr( 18 )  =  pr( 2, 3^{2} )  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  pr( 18 )  =  *\{ 0, 1, 2, 2^{2}, 2^{3}, *( 3^{2} *)^{1}, 2^{4}, 2 \cdot *( 3^{2} *)^{1}, 2^{5}, \\\ \qquad\qquad\qquad\qquad\qquad\qquad 2^{2} \cdot *( 3^{2} *)^{1}, 2^{6}, 2^{3} \cdot *( 3^{2} *)^{1}, *( 3^{2} *)^{2}, \cdots *\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  pr( 18 )  =  *\{ 0, 1, 2, 4, 8, 9, 16, 18, 32, \\\ \qquad\qquad\qquad\qquad\qquad\qquad 36, 64, 72, 81, \cdots *\}  }'),
+                      array( display => 'on',  latex => '{  lpr( 18 )  =  3  =  *\{ 0, 1, 2 *\}  }'),
+                    ))),
+                  /* array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n".
+                      'XXX'."\n",
+                        '\\\\'."\n".
+                      ''))), */
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
                       'Für die Zahl \\latexmath{ 20 } haben wir:'."\n".
                       ''))),
                   array( 'equations',
@@ -917,7 +934,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \omega  ?=  \omega\overline{\#}  }'),
+                      array( display => 'on',  latex => '{  \omega  ?=  \omega\overline{\#}  }',
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-gleich-MengenPrimfakultaet-omega', label_text => '\\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-gleich-MengenPrimfakultaet-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'dar.'."\n",
@@ -938,31 +956,32 @@
                     'Das muss so sein, denn in dem Moment, wo \\latexmath{ n = p_i + 1 } ist, mit \\latexmath{ p_i \in \mathbb{P} }, kommt zur Menge \\latexmath{ n }'."\n".
                     'die Primzahl \\latexmath{ p_i } hinzu und damit auch zu ihrer Mengen-Primfakultät \\latexmath{ n\overline{\#} }.'."\n".
                     'Die hinzu gekommene Primzahl kann aber nicht Teil der Primfaktorzerlegung einer der kleineren Zahlen \\latexmath{ x < p_i } sein.'."\n".
-                    'Denn diese haben als Primfaktoren nur kleinere Primzahlen \\term{ p_{i–d} }, mit \\latexmath{ 1 \leq d < i },'."\n".
+                    'Denn diese haben als Primfaktoren nur kleinere Primzahlen \\term{ p__{i–d} }, mit \\latexmath{ 1 \leq d < i },'."\n".
                     'oder sind selber eine Primzahl.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Für das Primturm-Potenzraster hat die Mengen-Primfakultät als Parameter eine besondere Bedeutung} \\\\'."\n".
-                    'Da das Primturm-Potenzraster \\latexmath{ pr\!*( n *) } ein Zahlenspektrum aufgrund der Primzahltürme seines Parameters liefert,'."\n".
-                    'ergibt die Mengen-Primfakultät einer Zahl als sein Parameter \\latexmath{ pr\!*( x\overline{\#} *) } ein besonderes Spektrum oder Raster:'."\n",
-                      'Wenn wir die Mengen-Primfakultät einer natürlichen Zahl \\latexmath{ x } als Parameter des Primturm-Potenzrasters benutzen,'."\n".
-                    'dann basiert das Raster auf allen Primzahlen, die Elemente der Mengenrepräsentation dieser natürlichen Zahl \\latexmath{ x } sind.'."\n".
-                    'In diesem Fall sind die Primzahltürme in \\latexmath{ x\overline{\#} } aber von minimaler Potenz, also so klein, wie möglich.'."\n".
+                    'Da das Primturm-Potenzraster ein Zahlenspektrum aufgrund der Primzahltürme seines Parameters liefert,'."\n".
+                    'ergibt die Mengen-Primfakultät einer Zahl als sein Parameter \\latexmath{ pr\!*( n\overline{\#} *) } ein besonderes Spektrum oder Raster:'."\n",
+                      'Wenn wir die Mengen-Primfakultät einer natürlichen Zahl \\latexmath{ n } als Parameter des Primturm-Potenzrasters benutzen,'."\n".
+                    'dann basiert das Raster auf allen Primzahlen, die Elemente der Mengenrepräsentation dieser natürlichen Zahl sind.'."\n".
+                    'In diesem Fall sind die Primzahltürme in \\latexmath{ n\overline{\#} } aber von minimaler Potenz, also so klein, wie möglich.'."\n".
                     'Damit wird das erzeugte Raster dann so fein wie möglich.'."\n",
                       'Und hierin spiegelt sich auch noch eine Erkenntnis des ›Satz des Euklid‹ wider, die auf den ersten Blick kaum auffällt:'."\n".
                     'Es ist in der dortigen Primfakultät nämlich egal, in welcher Potenz eine Primzahl vorliegt.'."\n".
                     'Addieren wir Eins oder ziehen Eins ab, ist das Ergebnis nicht durch alle enthaltenen Primzahlen teilbar,'."\n".
                     'auch, wenn die Potenz der Primzahl größer ist.'."\n".
-                    'Es kann nämlich nicht zwischen den gleichen Primzahlen im Produkt unterschieden werden.'."\n".
+                    'Es kann nämlich beim Unteilbar-Machen von Produkten in Bezug auf ihre Faktoren wie \\latexmath{ p = 5 \Rightarrow p\# = 2 \cdot 3 \cdot 5 } durch \\latexmath{ p\# \pm 1 } oder \\latexmath{ \Rightarrow p\# \cdot 2 = 2^2 \cdot 3 \cdot 5 } durch \\latexmath{ p\# \cdot 2 \pm 1 } nicht zwischen den gleichen Primzahlen im Produkt unterschieden werden.'."\n".
+                    'Beide Summen in den Beispielen sind nicht durch \\latexmath{ 2 } teilbar.'."\n".
                     'Einzig dann funktioniert der Beweis nicht, wenn eine Primzahl fehlt.'."\n".
                     'Das bedeutet, die minimale Potenz von Eins jeder Primzahl reicht aus, um die Endlosigkeit'."\n".
                     'der Primzahlen und damit aller natürlichen Zahlen zu beweisen.'."\n".
                     'Diese Erkenntnis ist für das Verständnis des Beweises wichtig und macht deutlich,'."\n".
                     'warum das oben fragliche Gleichheitszeichen nachfolgend mit einem Ausrufezeichen zu versehen ist.'."\n",
-                      'Die Funktion \\latexmath{ pr\!*( x\overline{\#} *) } liefert also ein lückenloses Primturm-Potenzraster \\latexmath{ lpr\!*( x\overline{\#} *) }'."\n".
-                    'bis ausschließlich der Primzahl, die größer als die letzte Zahl der Menge \\latexmath{ x } ist.'."\n".
+                      'Die Funktion \\latexmath{ pr\!*( n\overline{\#} *) } liefert also ein lückenloses Primturm-Potenzraster \\latexmath{ lpr\!*( n\overline{\#} *) }'."\n".
+                    'bis ausschließlich der Primzahl, die größer als die letzte Zahl \\latexmath{ x } der Menge \\latexmath{ lpr\!*( n\overline{\#} *) } ist.'."\n".
                     'Zusammen mit der vorhergehenden Analyse lässt sich daraus eine Anleitung erkennen, wie wir aus einer'."\n".
-                    'endlichen natürlichen Zahl, die keine Primzahl ist, die nächst größere Primzahl, mittels Algebra und Mengenlehre, berechnen können.'."\n",
+                    'endlichen natürlichen Zahl die nächst größere Primzahl, mittels Algebra und Mengenlehre, berechnen können.'."\n",
                       'Und damit erhalten wir auch eine Anleitung, aus einer gegebenen Primzahl dann immer wieder die nächste zu berechnen.'."\n".
                     'Denn das Primturm-Potenzraster der Mengen-Primfakultäten einer Primzahl \\latexmath{ pr\!*( p_i\overline{\#} *) }'."\n".
                     'kombiniert schließlich alle Primturm-Potenzraster der in ihm enthaltenen Primzahlen.'."\n",
@@ -970,11 +989,11 @@
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
                       
                 'Berechnung der nächsten Primzahl', subline =>
-                  '… per Algebra und Mengenlehre')),
+                  'Per Algebra und Mengenlehre')),
                   array( 'text', array( text => array(
                     'Wie wir an den obigen endlichen Beispielen erkennen können und wie gerade erklärt,'."\n".
-                    'ist das lückenlose Primturm-Potenzraster einer Mengen-Primfakultät einer Primzahl die letzte natürliche Zahl,'."\n".
-                    'bevor eine neue Primzahl zur Menge, und damit zu diesem Produkt, hinzukommt.'."\n".
+                    'enthält das lückenlose Primturm-Potenzraster der Mengen-Primfakultät einer Primzahl als größte Zahl die letzte natürliche Zahl,'."\n".
+                    'bevor in Bezug auf das Zählen diese Primzahl als  neue Zahl zur Menge, und damit zu diesem Produkt, hinzukommt.'."\n".
                     'Die Mengen-Primfakultät \\latexmath{ p_i\overline{\#} } der Menge einer Primzahl \\latexmath{ p_i }'."\n".
                     'ist also die größte Menge mit natürlichen Zahlen \\latexmath{ 0 \leq x < p_i },'."\n".
                     'die durch ihr Primturm-Potenzraster aller kleineren Primzahlen \\latexmath{ p < p_i } in dieser Menge lückenlos dargestellt wird.'."\n".
@@ -1051,12 +1070,16 @@
                     'eine Beschreibung der kleinsten fehlenden reinen Primzahl in seinen Primzahltürmen, die'."\n".
                     'auf seiner ersten Rasterlücke sitzt.'."\n".
                     'Diese Primzahl erhalten wir dann durch \\latexmath{ lpr\!*( n *) }.'."\n",
-                      '\\color{*Bearb}{(Beispiele um zu zeigen, was passiert, wenn die Primfakultät Primzahllücken hat oder eine Primzahl in höherer Potenz vorkommt.)}'."\n",
-                      'XXX'."\n",
                       'Haben wir eine Potenz einer Primzahl \\latexmath{ p_i } größer als Eins, wie \\latexmath{ p_i^k }, mit \\latexmath{ k > 1 },'."\n".
-                    'dann ist das Primturm-Potenzraster nicht mehr sicher lückenlos (niemals?), wie bei der Neun: \\latexmath{ 3^2 = 9 }.'."\n".
-                    'Denn die \\latexmath{ 5 } und \\latexmath{ 7 } bleiben Lücken.'."\n",
-                      'XXX'."\n".
+                    'dann ist das Primturm-Potenzraster niemals lückenlos für die kleineren Potenzen von \\latexmath{ p_i }.'."\n",
+                      'Sehen können wir das an den Beispielen für \\latexmath{ pr\!*( 4 *) }, \\latexmath{ pr\!*( 9 *) } und \\latexmath{ pr\!*( 18 *) }'."\n".
+                    'unter \\italic{›\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beispiele-Primturmzerlegung-PrimturmPotenzraster+lueckenloses}‹}.'."\n",
+                      'Denn die Menge \\latexmath{ pr\!*( 4 *) } hat die erste Lücke bei der \\latexmath{ 2 }, also ergibt sich: \\latexmath{ lpr\!*( 4 *) = 2 }.'."\n",
+                      'Die Menge \\latexmath{ pr\!*( 9 *) } hat auch die erste Lücke bei der \\latexmath{ 2 }, also ergibt sich: \\latexmath{ lpr\!*( 9 *) = 2 }.'."\n",
+                      'Hingegen hat die Menge \\latexmath{ pr\!*( 18 *) } die erste Lücke erst bei der \\latexmath{ 3 },'."\n".
+                    'weil die \\latexmath{ 2 } im Produkt steckt, aber nicht die \\latexmath{ 3 } als Primzahlturm, sondern der Primzahlturm ist \\latexmath{ 9 }.'."\n".
+                    'Also ergibt sich: \\latexmath{ lpr\!*( 18 *) = 3 }.'."\n",
+                      'Es ist also immer die kleinste Primzahl, mit Potenz Eins, die in den Primzahltürmen fehlt, die als Ergebnis kommt.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
                       
@@ -1073,12 +1096,12 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \exists \mathbb{P}\!: *( 2 \in \mathbb{P} \land \forall x\!: *( x \in \mathbb{P} \Rightarrow lpr\!*( *( x + 1 *)\overline{\#} *) \in \mathbb{P} *) *)  }'),
-                      // array( display => 'on',  latex => '{  \exists \mathbb{P}_{0}\!: *( 0 \in \mathbb{P}_{0} \land \forall x\!: *( x \in \mathbb{P}_{0} \Rightarrow lpr\!*( *( x + 1 *)\overline{\#} *) \in \mathbb{P}_{0} *) *)  }'),
+                      array( display => 'on',  latex => '{  \exists \mathbb{P}\!: *( 2 \in \mathbb{P} \land \forall x\!: *( x \in \mathbb{P} \Rightarrow lpr\!*( *( x + 1 *)\overline{\#} *) \in \mathbb{P} *) *)  }',
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Definition-der-Menge-P-durch-p-Zaehlen', label_text => '\\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Definition-der-Menge-P-durch-p-Zaehlen}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'aller endlichen Primzahlen.'."\n".
-                      'Hier in nach ihrer Anordnung auf Basis der jeweiligen Vorgänger konstruiert.'."\n",
+                      'Hier in ihrer Anordnung auf Basis der jeweiligen Vorgänger-Primzahlen konstruiert.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -1113,7 +1136,7 @@
                       array( display => 'on',  latex => '{  p_{1}  =  \boxed{  2  }  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'und sei die jeweils nächste Primzahl nach Formel XXX gegeben,'."\n".
+                      'und sei die jeweils nächste Primzahl nach Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Definition-der-Menge-P-durch-p-Zaehlen} gegeben,'."\n".
                       'dann lautet der Beginn der nachfolgenden Primzahlen, sich in angeordneter Reihenfolge ergebend,'."\n".
                       ''))),
                   array( 'equations',
@@ -1157,16 +1180,7 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Und so können wir dann alle endlichen Primzahlen fortwährend berechnen.'."\n".
                     ''))),
                     ))),
 
@@ -1182,8 +1196,8 @@
 
                   array( 'text', array( text => array(
                     'Das besondere Verhalten des Primturm-Potenzrasters mit der Mengen-Primfakultät einer Primzahl als Parameter,'."\n".
-                    'wie zuvor erklärt, können wir jetzt durch den Übergang ins Unendliche zu \\latexmath{ \omega }'."\n".
-                    'für den Beweis nutzen, weil wir so auch alle natürlichen Zahlen konstruieren:'."\n",
+                    'wie eben dargelegt, können wir jetzt durch den Übergang ins Unendliche zu \\latexmath{ \omega }'."\n".
+                    'für den Beweis nutzen, weil wir auf diese Weise, wie oben erklärt, auch alle natürlichen Zahlen konstruieren:'."\n",
                       'Da \\latexmath{ \omega } die Menge der natürlichen Zahlen \\latexmath{ \mathbb{N} } repräsentiert,'."\n".
                     'enthält es natürlich auch alle endlichen Primzahlen.'."\n".
                     'Die Mengen-Primfakultät \\latexmath{ \omega\overline{\#} } ist also das Produkt'."\n".
@@ -1206,8 +1220,8 @@
                                           label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wo die aktual unendlichen Elemente in der Menge beginnen, sind diese nicht mehr lückenlos, da es in den'."\n".
-                      'Biordinalzahlen sowohl natürliche Vorgänger als auch Nachfolger dieser Zahlen gibt, die nicht im Raster enthalten sind.'."\n".
+                      'Wo die aktual unendlichen Elemente in der Menge beginnen, sind diese nicht mehr lückenlos, da zum Beispiel'."\n".
+                      '\\latexmath{ 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots - 1 \in \mathbb{N}_\infty } nicht im Raster enthalten aber auch keine endliche Zahl ist.'."\n".
                       'Lückenlos, aber trotzdem unendlich viele, sind also nur die endlichen Zahlen der Menge'."\n".
                       ''))),
                   array( 'equations',
@@ -1240,8 +1254,8 @@
                                           label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-MengenPrimfakultaet-omega-ist-omega}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Die allgemeine Entsprechung \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n} ist von uns'."\n".
-                      'so konstruiert worden und gilt daher auch für alle Primzahlen:'."\n".
+                      'Die allgemeine Entsprechung \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n}'."\n".
+                      'für alle natürlichen Zahlen gilt daher logischer Weise auch für alle endlichen Primzahlen:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1250,13 +1264,20 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *[  p  \widehat{=}  pr( p )  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Sie gilt dann auch für \\latexmath{ \omega }, können wir an Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega}'."\n".
-                      'erkennen, wenn wir \\latexmath{ \mathbb{N} } auf \\latexmath{ \mathbb{N}_\infty } erweitern, da sich auch für \\latexmath{ \omega } ein einzigartiges Spektrum oder Raster ergibt:'."\n".
+                      'Diese Entsprechung gilt auch für \\latexmath{ \omega }, können wir an Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega}'."\n".
+                      'erkennen, da sich auch hier ein einzigartiges Spektrum oder Raster ergibt:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \omega  \widehat{=}  pr( \omega )  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Es ist also sehr stark zu vermuten, dass wir die allgemeine Entsprechung von \\latexmath{ \mathbb{N} } auf \\latexmath{ \mathbb{N}_\infty } erweitern können: \\\\'."\n".
+                      '\\color{*Bearb}{(Es bleibt hier aber noch zu zeigen, dass alle Biordinalzahlen, oder zumindest alle Ordinalzahlen, eine einzigartige Primfaktorzerlegung haben, die für sie alle ein einzigartiges Spektrum oder Raster erzeugt.)}'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}_{\infty} *) *[  n  \widehat{=}  pr( n )  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \omega  \widehat{=}  pr( \omega )  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Aus der Gleichheit in Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-ist-lpr-MengenPrimfakultaet-p-i} folgt für'."\n".
@@ -1269,6 +1290,13 @@
                       // array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *[  lpr\!*( p\overline{\#} *)  \widehat{=}  pr( p )  *]  }'),
                       // array( display => 'on',  latex => '{  \Rightarrow  lpr\!*( \omega\overline{\#} *)  \widehat{=}  pr( \omega )  }'),
                     ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Denn \\latexmath{ \omega } steht nicht nur für die vollständige Induktion des endlichen Zählens,'."\n".
+                      'sondern, wie oben gezeigt, gleichzeitig auch für die vollständige Erzeugung aller endlichen Primzahlen.'."\n".
+                      'Daher ist \\latexmath{ \omega } auch der Übergang der endlichen Primzahlerzeugung ins Unendliche.'."\n".
+                      'So wird die rechte Seite der Entsprechung dann zum Primturm-Potenzraster des Produkts aller endlichen'."\n".
+                      'Primzahlen.'."\n".
+                      ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'So geht dann auch die Entsprechung \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i}'."\n".
                       'zu \\latexmath{ \omega } über'."\n".
@@ -1296,18 +1324,23 @@
                   //     'Eine Entsprechung ohne Variable, wo beiden Seiten ein Wert zugeordnet ist, kann nur eine Gleichheit bedeuten:'."\n".
                   //     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'wo sich oben die Frage stellte, ob sie bei \\latexmath{ \omega } zur Gleichheit wird.'."\n",
+                      'was darauf beruht, dass wir, wegen der Eineindeutigkeit des Primturm-Potenzrasters'."\n".
+                      'in Bezug auf die Primzahlen und ihren Übergang ins Unendliche zu \\latexmath{ \omega }, die Funktion \\latexmath{ pr } ebenso weglassen können.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Die beiden letzten Entsprechungen und der Übergang zwischen ihnen basieren darauf, dass auf der'."\n".
+                    'Und in Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-gleich-MengenPrimfakultaet-omega}'."\n".
+                    'stellte sich zuvor die jetzt zu beweisende Frage,'."\n".
+                    'ob die letzte Entsprechung bei \\latexmath{ \omega } zur Gleichheit wird.'."\n",
+                      'Die beiden letzten Übergange der Entsprechungen zu \\latexmath{ \omega } basieren darauf, dass auf der'."\n".
                     'rechten Seite jeweils die Mengen-Primfakultät steht.'."\n".
-                    'Ebenso gilt dies für die letzte oben stehende Gleichheit.'."\n".
+                    'Ebenso gilt dies für den etwas höher stehenden Übergang der Gleichheit in Bezug auf das lückenlose Primturm-Potenzraster zu \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-MengenPrimfakultaet-omega-ist-omega}.'."\n",
+                      'Wir erkennen jetzt:'."\n".
                     'Würde das Primzahlprodukt nicht bei der kleinsten Primzahl beginnen oder eine Lücke aufweisen,'."\n".
                     'dann bräche alles zusammen.'."\n".
-                    'Die wird gleich ein zentraler Bestandteil unseres Beweises sein.'."\n",
-                      'Wir haben nun zwei wertmäßige Darstellungen der endlichen Primzahlen \\latexmath{ p }:'."\n".
+                    'Diese Erkenntnis ist ein zentraler Bestandteil unseres Beweises.'."\n",
+                      'Nun haben wir zwei wertmäßige Darstellungen der endlichen Primzahlen \\latexmath{ p }:'."\n".
                     'Zum einen beschreiben wir die Anzahl der ersten \\latexmath{ p } natürlichen Zahlen mit der Menge \\latexmath{ p } selber,'."\n".
                     'die genau diese Zahlen mittels des Zählens enthält.'."\n".
                     'Zum anderen beschreiben wir die ersten \\latexmath{ p } natürlichen Zahlen mit der Mengen-Primfakultät'."\n".
@@ -1335,7 +1368,7 @@
                     'die das Zahlenraster aller endlichen Primzahlen erzeugt, entsprechen also ebenfalls einander: \\latexmath{ \omega \widehat{=} \omega\overline{\#} }.'."\n",
                     //   'Was bedeutet das für die Entsprechung \\latexmath{ \omega \widehat{=} \omega\overline{\#} }?'."\n",
                     //   'Wird sie nun auch eine Gleichheit und es gilt sogar \\latexmath{ \omega = pr( \omega ) }?'."\n",
-                      'Wir wissen mit der \\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen}{oben getroffenen Feststellung}:'."\n".
+                      'Wir wussten ja schon mit der \\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen}{oben getroffenen Feststellung}:'."\n".
                     'Die Primfaktorzerlegung von \\latexmath{ \omega } ist'."\n".
                     'ein unendlich großer Teil derer von \\latexmath{ s }, der in der Zeile oder den Zeilen der Primfakultät'."\n".
                     'seines Primzahl-Flächenprodukts zu finden ist.'."\n",
@@ -1423,9 +1456,13 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \boxed{\;\;  \omega  =  \omega\overline{\#}  \;\;}  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega', label_text => '\\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{\;\;  \omega  =  \prod_{\forall p \in \mathbb{P}}  p  \;\;}  }',
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen', label_text => '\\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{\;\;  \omega  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  \;\;}  }',
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega', label_text => '\\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'muss also wahr sein, was wir zeigen wollten.'."\n",
+                      'muss folglich wahr sein, was wir zeigen wollten.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -1457,18 +1494,43 @@
                     'Und sie erweitert die endlichen Primzahlen zu aktual unendlichen Primzahlen.'."\n".
                     'Dies vertieft unser Verständnis der Primzahlen weiter.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
                       
-                'Betrachtung des Beweises', subline =>
-                  'Das Verständnis des Übergangs der Mengen-Primfakultät und des Primturm-Potenzrasters ins Unendliche zu \\latexmath{ \omega }')),
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion'),
+                    )),
+                )
+          ); ?>
+		    	<br>
+          <?php To_f_headline_add_hides_end_line(); ?>
+
+
+          <!  • Diskussion des Beweises  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion',
+              'Das Verständnis des Übergangs der Mengen-Primfakultät und des Primturm-Potenzrasters ins Unendliche zu \\latexmath{ \omega }', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    '\\bold{Parität}',
+                    '• Nicht nur gleiche Mächtigkeit von geraden und ungeraden Zahlen, sondern hier sogar gleiche kombinatorische Anzahl von geraden und ungeraden Zahlen.\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:ParitaetMathematik:2021}.}',
+                    '\\bold{Logisches}',
+                    '• \\latexmath{ \omega } ist dann durch jede endliche Primzahl und durch deren Produkte mit jeweiliger Potenz von Eins ganzzahlig teilbar.',
+                    ))),
+                      
                   array( 'text', array( text => array(
                     'Wir stellen fest, dass es uns über die Erzeugung jeder endlichen Primzahl gelungen ist,'."\n".
                     'die natürlichen Zahlen durch eine vollständige Induktion zu konstruieren.'."\n".
                     'Dazu wird per Mengen-Primfakultät ein Primzahlprodukt erzeugt, das sich von Schritt zu Schritt immer weiter,'."\n".
                     'zum Produkt aller endlichen Primzahlen vervollständigt.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                      
+                'Jeder Primzahl-Schritt teilt \\latexmath{ \omega }', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Jeder Primzahl-Schritt teilt \\latexmath{ \omega } …} \\\\'."\n".
                     'Jeder dieser Schritte, also jede erzeugte Primzahl, ist, nach dem Beweis, Teiler des vollständigen'."\n".
                     'aktual unendlichen Ergebnisses \\latexmath{ \omega }.'."\n".
                     ''))),
@@ -1479,7 +1541,7 @@
                       'teilt die Anzahl aller natürlichen Zahlen \\latexmath{ \omega } ganzzahlig'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.D', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *[  \frac{ \omega }{ p }  \in  \mathbb{N}_\infty  *]  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -1489,17 +1551,20 @@
 
                   array( 'text', array( text => array(
                     'Als wenn diese Zählschritte beim Übergang ins Unendliche zu \\latexmath{ \omega } ein Produkt aus all diesen Schritten bilden.'."\n".
-                    'Und in der Tat benötigen wir ja auch zur Konstruktion dieser Schritte das Produkt aller Primzahlen'."\n".
-                    'vor der noch unbekannten.'."\n".
+                    'Und in der Tat benötigen wir ja auch zur Konstruktion dieser Schritte aller endlichen Primzahlen das Produkt aller kleineren Primzahlen'."\n".
+                    'vor der gerade zu berechnenden Primzahl.'."\n".
                     'So können wir es so verstehen, dass dem Ergebnis beim Übergang zu \\latexmath{ \omega } dann logischerweise'."\n".
                     'das Produkt aller endlichen Primzahlen zugrunde liegt.'."\n",
                       '\\latexmath{ \omega } ist nun keine Primzahl mehr, weil ihr alle endlichen Primzahlen zugrunde liegen,'."\n".
                     'die nicht enden.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                      
+                'Jedoch ist jeder Primzahl-Schritt kein Teiler eines anderen Primzahl-Schritts', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{… obwohl jeder Primzahl-Schritt kein Teiler eines anderen Primzahl-Schritts ist} \\\\'."\n".
-                    'Aber jedes dieser Konstruktionsergebnisse ist nicht Teiler auch nur eines der anderen Ergebnisse,'."\n".
-                    'weil es ja alle Primzahlen sind.'."\n".
+                    'Aber jeder dieser Konstruktionsschritte ist nicht Teiler auch nur einer der anderen Schritte,'."\n".
+                    'weil sie ja alle Primzahlen sind.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -1507,7 +1572,7 @@
                       'Es existiert keine endliche Primzahl, die Teiler einer von ihr verschiedenen, anderen ist:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \nexists p_{0}, p_{1} \in \mathbb{P} *) *( p_{0} \neq p_{1} *) *[  \frac{ p_{0} }{ p_{1} } \in \mathbb{N}  \lor  \frac{ p_{1} }{ p_{0} } \in \mathbb{N}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -1519,8 +1584,67 @@
                     'Der Übergang ist also wirklich etwas besonderes, von Schritten, die alle keine Teiler voneinander sind,'."\n".
                     'zum Ergebnis bei \\latexmath{ \omega }, das alle Schritte in einem Produkt zusammenfasst.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                      
+                'Das Gesamtspektrum der natürlichen Zahlen', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Sichtbarmachung der Produktstruktur von \\latexmath{ \omega } im Kontext ihres Primturm-Potenzrasters} \\\\'."\n".
+                    'Zunächst können wir sagen, was alle natürlichen Zahlen miteinander verbindet:'."\n".
+                    'Alle natürlichen Zahlen liegen auf dem Zählraster, sind also durch die Eins ganzzahlig teilbar.'."\n".
+                    'Poetischer ausgedrückt schwingen alle natürlichen Zahlen mit der Eins oder im Spektrum oder Raster der Eins.'."\n",
+                      'Bei den Konstruktionsschritten zur Erzeugung jeder endlichen Primzahl erhalten wir eine Sammlung'."\n".
+                    'der Primfaktoren der endlichen natürlichen Zahlen, die uns über das einschrittige Zählen hinaus sagen,'."\n".
+                    'auf welchen größeren Spektren oder Rastern die natürlichen Zahlen auch noch liegen'."\n".
+                    'oder in welchen Spektren oder Rastern sie auch noch schwingen.'."\n".
+                    'Dabei ist eine höhere Potenz einer Primzahl irrelevant, weil jede Primzahl die kleinste Weite ihres Rasters beschreibt,'."\n".
+                    'auf der auch ihre höheren Potenzen liegen.'."\n".
+                    'Demnach gehören beispielsweise die \\latexmath{ 4 = 2^2 } oder die \\latexmath{ 8 = 2^3 } zum selben Raster, wie die \\latexmath{ 2 = 2^1 }.'."\n",
+                      'Die \\latexmath{ 3 = 3^1 } hingegen spannt ein anderes Raster auf und die beiden und alle weiteren Primzahl-Potenzraster überschneiden sich nicht'."\n".
+                    'und beschreiben kombiniert die natürlichen Zahlen ab der \\latexmath{ 2 }.'."\n",
+                      'Warum handelt es sich denn bei \\latexmath{ 2 = 2^1 }, \\latexmath{ 4 = 2^2 } oder \\latexmath{ 8 = 2^3 } und für'."\n".
+                    'alle weiteren Potenzen von Zwei, oder allgemeiner bei \\latexmath{ p_i^k }, mit \\latexmath{ p_i \in \mathbb{P} } und \\latexmath{ k \geq 1 }, um das gleiche Raster?'."\n".
+                    'Das ist nicht gleich offensichtlich, finde ich.'."\n",
+                      'Dies können wir am Distributivgesetz erkennen, denn \\latexmath{ p_i^k + 1 } ist nicht ganzzahlig'."\n".
+                    'durch \\latexmath{ p_i } teilbar, egal welche Potenz \\latexmath{ k \geq 1 } wir haben;'."\n".
+                    'also egal, wie häufig \\latexmath{ p_i } in einem Produkt steckt.'."\n",
+                      'Kombinieren wir dann aber zwei unterschiedliche Primzahlen in einem Produkt, wie beispielsweise'."\n".
+                    'in \\latexmath{ 6 = 2 \cdot 3 }, dann ist \\latexmath{ 7 = 6 + 1 = *( 2 \cdot 3 *) + 1 } durch beide'."\n".
+                    'Primzahlen nicht ganzzahlig teilbar.'."\n".
+                    'Wir erhalten also eine erweiterte Qualität bezüglich unterschiedlicher Primfaktoren einer natürlichen Zahl.'."\n",
+                      'In Bezug auf die Vervielfachung der selben Primzahl durch ihre steigende Potenz in einem'."\n".
+                    'Produkt, bleibt die Qualität dieser Teilungsaussage unverändert und damit unabhängig von ihrer Potenz.'."\n",
+                      'Auch das lässt uns tiefer verstehen, warum die Menge aller endlichen natürlichen Zahlen mit einem Produkt'."\n".
+                    'aller endlichen Primzahlen einfacher Potenz beschrieben wird.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                      
+                'Das Verlassen des Rasters einer Menge von aufeinanderfolgenden natürlichen Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Durch das addieren oder auch das Subtrahieren der Eins auf oder von einem Primzahlprodukt verlassen'."\n".
+                    'wir das Raster, auf dem das Produkt liegt oder schwingt.'."\n".
+                    'Und ein Produkt von Primzahlen schwingt mit allen Frequenzen seiner unterschiedlichen Primzahlen.'."\n".
+                    'Daher können wir mit der Methode des Verlassens des Rasters aller bisherigen Primzahlen im'."\n".
+                    '\\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid}{›Satz des Euklid‹}'."\n".
+                    'die Existenz immer weiterer und größerer Primzahlen beweisen.'."\n",
+                      'Und unsere schrittweise Konstruktion der Primzahlen in Definition \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Definition-der-Menge-P-durch-p-Zaehlen}'."\n".
+                    'funktioniert nach dem selben Prinzip.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                      
+                'Immer mehr Primzahlen machen das Raster in Bezug auf die folgenden natürlichen Zahlen immer feiner', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Der ›Satz des Euklid‹ macht deutlich, dass die neu hinzukommenden, immer größeren Primzahlen'."\n".
+                    'wieder und wieder außerhalb des bisherigen Rasters der kleineren Zahlen liegen.'."\n".
+                    'Dadurch wird das Raster durch immer mehr größere Primzahlen immer feiner.'."\n".
+                    'Und deshalb kommen dann auch immer seltener neue Primzahlen hinzu, ohne, dass die Reihe der Primzahlen enden würde.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                      
+                'Sichtbarmachung der Produktstruktur von \\latexmath{ \omega } im Kontext ihres Primturm-Potenzrasters', subline =>
+                  '')),
+                  array( 'text', array( text => array(
                     'Wie wir an Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega}'."\n".
                     'erkennen können, wird die Produktstruktur von \\latexmath{ \omega } schon vor dem Beweis im Primturm-Potenzraster'."\n".
                     '\\latexmath{ pr\!*( \omega\overline{\#} *) } der Mengen-Primfakultät von \\latexmath{ \omega } sichtbar.'."\n",
@@ -1535,7 +1659,7 @@
                       'Aufgrund unseres Beweises und seines Ergebnisses aus Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega} folgt:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  pr\!*( \omega *)  =  pr\!*( \omega\overline{\#} *)  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -1543,7 +1667,7 @@
                       'nun folgendermaßen dar:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  pr\!*( \omega *)  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots \\\ \qquad\qquad\qquad\quad\;\;\;\, 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, \vdots \; *\}  }',
                                           label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  *\{ 0, 1, 2, 3, 2^{2}, 5, 2 \cdot 3, 7, 2^{3}, 3^{2}, 2 \cdot 5, \cdots \\\ \qquad\qquad\qquad\quad\;\;\;\, 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\;\;\;\, \vdots \; *\}  }'),
@@ -1552,7 +1676,7 @@
                       'Aufgrund unseres Beweises können wir nun das Raster auch wie folgt schreiben:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  \omega \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2^{2} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2 \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2^{3} \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2 \cdot 3 \cdot 5^{2} \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; 2^{2} \cdot 3^{2} \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots, \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
                     ))),
@@ -1575,29 +1699,31 @@
                       'Eine weitere Schreibweise ist:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  \omega \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ \omega, \\\ \qquad\qquad\qquad\quad\; 2 \cdot \omega, \\\ \qquad\qquad\qquad\quad\; 3 \cdot \omega, \\\ \qquad\qquad\qquad\quad\; 2^{2} \cdot \omega, \\\ \qquad\qquad\qquad\quad\; 5 \cdot \omega, \\\ \qquad\qquad\qquad\quad\; 2 \cdot 3 \cdot \omega, \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Erweitert sieht diese so aus:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  \omega \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ \omega, 2 \omega, 3 \omega, 4 \omega, 5 \omega, 6 \omega, \cdots \\\ \qquad\qquad\qquad\quad\; \omega^{2}, 2 \omega^{2}, 3 \omega^{2}, 4 \omega^{2}, 5 \omega^{2}, 6 \omega^{2}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; \\\ \qquad\qquad\qquad\quad\;\, \omega^{\omega - 1}, 2 \omega^{\omega - 1}, 3 \omega^{\omega - 1}, 4 \omega^{\omega - 1}, 5 \omega^{\omega - 1}, 6 \omega^{\omega - 1}, \cdots \\\ \qquad\qquad\qquad\quad\; \omega^{\omega}, 2 \omega^{\omega}, 3 \omega^{\omega}, 4 \omega^{\omega}, 5 \omega^{\omega}, 6 \omega^{\omega}, \cdots \\\ \qquad\qquad\qquad\quad\; \omega^{\omega + 1}, 2 \omega^{\omega + 1}, 3 \omega^{\omega + 1}, 4 \omega^{\omega + 1}, 5 \omega^{\omega + 1}, 6 \omega^{\omega + 1}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; \\\ \qquad\qquad\qquad\quad\;\, \omega^{2 \omega - 1}, 2 \omega^{2 \omega - 1}, 3 \omega^{2 \omega - 1}, 4 \omega^{2 \omega - 1}, 5 \omega^{2 \omega - 1}, 6 \omega^{2 \omega - 1}, \cdots \\\ \qquad\qquad\qquad\quad\; \omega^{2 \omega}, 2 \omega^{2 \omega}, 3 \omega^{2 \omega}, 4 \omega^{2 \omega}, 5 \omega^{2 \omega}, 6 \omega^{2 \omega}, \cdots \\\ \qquad\qquad\qquad\quad\; \omega^{2 \omega + 1}, 2 \omega^{2 \omega + 1}, 3 \omega^{2 \omega + 1}, 4 \omega^{2 \omega + 1}, 5 \omega^{2 \omega + 1}, 6 \omega^{2 \omega + 1}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Dies erscheint mir als Menge aller endlichen Ordinalzahlen und danach aller ordinalen Limeszahlen\\footnote{Vgl. \\cite{wiki:Ordinalzahl:2021}, 3 Motivation und Definition, 3.2 Limes- und Nachfolgerzahlen.}.'."\n".
+                      '\\color{*Bearb}{(Nicht ganz sicher ist für mich, ob die Potenzen mit Differenzen wirklich dazu gehören. Gehören sie dazu, dann wären es nicht nur die ordinalen Limeszahlen, sondern wohl Zahlen die aus den Biordinalzahlen als Potenzen entspringen.)}'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Teile davon können wir nun wegen unseres Beweises durch Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}'."\n".
                       'auch mit \\latexmath{ s } ausdrücken:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr\!*( \omega *)  =  \omega \\\ \qquad\qquad\qquad\quad\;\;\; \cup \\\ \qquad\qquad\qquad\;\;\, *\{ \omega, 2 \omega, 3 \omega, 4 \omega, 5 \omega, 6 \omega, \cdots \\\ \qquad\qquad\qquad\quad\; \omega^{2}, 2 \omega^{2}, 3 \omega^{2}, 4 \omega^{2}, 5 \omega^{2}, 6 \omega^{2}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; \\\ \qquad\qquad\qquad\quad\;\, \omega^{\omega - 1}, 2 \omega^{\omega - 1}, 3 \omega^{\omega - 1}, 4 \omega^{\omega - 1}, 5 \omega^{\omega - 1}, 6 \omega^{\omega - 1}, \cdots \\\ \qquad\qquad\qquad\quad\; s, 2 s, 3 s, 4 s, 5 s, 6 s, \cdots \\\ \qquad\qquad\qquad\quad\; \omega^{\omega + 1}, 2 \omega^{\omega + 1}, 3 \omega^{\omega + 1}, 4 \omega^{\omega + 1}, 5 \omega^{\omega + 1}, 6 \omega^{\omega + 1}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; \\\ \qquad\qquad\qquad\quad\;\, \omega^{2 \omega - 1}, 2 \omega^{2 \omega - 1}, 3 \omega^{2 \omega - 1}, 4 \omega^{2 \omega - 1}, 5 \omega^{2 \omega - 1}, 6 \omega^{2 \omega - 1}, \cdots \\\ \qquad\qquad\qquad\quad\; s^{2}, 2 s^{2}, 3 s^{2}, 4 s^{2}, 5 s^{2}, 6 s^{2}, \cdots \\\ \qquad\qquad\qquad\quad\; \omega^{2 \omega + 1}, 2 \omega^{2 \omega + 1}, 3 \omega^{2 \omega + 1}, 4 \omega^{2 \omega + 1}, 5 \omega^{2 \omega + 1}, 6 \omega^{2 \omega + 1}, \cdots \\\ \qquad\qquad\qquad\quad\; \vdots \; *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Das ist abermals ein bemerkenswertes Muster.'."\n",
+                      'Das ist abermals ein bemerkenswertes Muster.'."\n".
+                      '\\color{*Bearb}{(Es ist möglich auch die Zeilen mit Differenzen und Summen in den Potenzen mit \\latexmath{ s } auszudrücken.)}'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -1610,10 +1736,13 @@
                       'Diese Erkenntnis mit der obigen Darstellung durch \\latexmath{ s } führt uns dann wieder zurück zu'."\n".
                     'den Superial-Zahlen und bringt sie erneut mit den Ordinalzahlen in Verbindung.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                      
+                'Die Größenordnung von \\latexmath{ \omega } und \\latexmath{ \omega\overline{\#} }', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Die Größenordnung von \\latexmath{ \omega } und \\latexmath{ \omega\overline{\#} }} \\\\'."\n".
                     'Nach dem Beweis wissen wir nun, dass \\latexmath{ \omega = \omega\overline{\#} }.'."\n",
-                      'Aber für alle größeren endlichen Primzahlen \\latexmath{ p } war doch die Mengen-Primfakultät \\latexmath{ p\overline{\#} } immer viel größer als \\latexmath{ lpr\!*( p *) }.'."\n".
+                      'Aber für alle größeren endlichen Primzahlen \\latexmath{ p } war doch die Mengen-Primfakultät \\latexmath{ p\overline{\#} } immer viel größer als \\latexmath{ p = lpr\!*( p\overline{\#} *) }.'."\n".
                     'Wie kann dann nach dem Übergang ins Unendliche \\latexmath{ \omega = \omega\overline{\#} } sein?'."\n",
                       'Im Endlichen ist die Anzahl der Elemente einer Menge natürlicher Zahlen, geordnet und von der Null an,'."\n".
                     'immer Eins größer als das letzte Element in der Menge.'."\n".
@@ -1631,8 +1760,11 @@
                     'das auch die Menge \\latexmath{ lpr\!*( \omega\overline{\#} *) = \omega } darstellt.'."\n".
                     'Und der Wert von \\latexmath{ \omega\overline{\#} } hat nun auch die gleiche Größenordnung, wie der von \\latexmath{ \omega }.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                      
+                'Die Größenordnung und Struktur von \\term{ s } und \\term{ s^^{-1} }', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Die Größenordnung und Struktur von \\term{ s } und \\term{ s^{-1} }} \\\\'."\n".
                     'Der Beweis unserer Primzahlprodukt-Vermutung, und damit unserer Logo Formel \\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega},'."\n".
                     'offenbart einen tiefen Zusammenhang zwischen \\latexmath{ s } und \\latexmath{ \omega }.'."\n".
                     'Auch der Kehrwert von \\latexmath{ s } lässt sich so einfach mit \\latexmath{ \omega }'."\n".
@@ -1644,7 +1776,7 @@
                       'Wenn nach Beweis'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  s  =  \omega^{\omega}  }',
                                           label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
@@ -1653,7 +1785,7 @@
                       'mittels \\latexmath{ s }'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 1 }{ s }  =  \frac{ 1 }{ \omega^{\omega} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  s^{-1}  =  \omega^{-\omega}  }'),
                     ))),
@@ -1662,7 +1794,7 @@
                       'Also können wir jedes \\latexmath{ s^x } als'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  s^{x}  =  *( \omega^{\omega} *)^{x}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  s^{x}  =  \omega^{\omega \cdot x}  }'),
                     ))),
@@ -1676,6 +1808,10 @@
                     'interessanter Weise so mit der aktualen Unendlichkeit der'."\n".
                     'vollständigen Induktion der natürlichen Zahlen in direkter Verbindung.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                      
+                'XXX Experimentell', subline =>
+                  '')),
                   array( 'text', array( text => array(
                   '\\condb{XXX} \\\\'."\n".
                     'XXX'."\n".
@@ -1690,7 +1826,7 @@
                     'XXX'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  *( \prod_{\forall p \in \mathbb{P}}  p *)  }',
                                           label_text => '\\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \omega^{\omega}  =  \omega \cdot \omega^{\omega - 1}  }'),
@@ -1712,98 +1848,33 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
-                  array( 'text', array( text => array(
-                  '\\condb{Das Raster einer Menge von aufeinanderfolgenden natürlichen Zahlen, beginnend mit der Null} \\\\'."\n".
-                    'Zunächst können wir sagen, was alle Zahlen einer dieser Mengen miteinander verbindet:'."\n".
-                    'Alle Zahlen dieser Mengen liegen auf dem Zählraster, sind also durch die Eins ganzzahlig teilbar.'."\n".
-                    'Poetischer ausgedrückt schwingen alle Zahlen mit der Eins oder im Raster der Eins.'."\n",
-                      'Die Sammlung der Primfaktoren der Zahlen dieser Mengen sagen nun darüber hinaus,'."\n".
-                    'auf welchen größeren Rastern ihre Zahlen auch noch liegen oder in welchen Rastern sie auch noch schwingen.'."\n".
-                    'Dabei ist eine höhere Potenz einer Primzahl irrelevant, weil es sich um die selbe Schwingungsbasis handelt,'."\n".
-                    'die zum selben Rasteranteil nur mit größerer Schrittweite gehört.'."\n".
-                    'Demnach spannen die \\latexmath{ 4 = 2^2 } oder die \\latexmath{ 8 = 2^3 } das selbe Raster auf, wie die \\latexmath{ 2 = 2^1 }.'."\n",
-                      'Die \\latexmath{ 3 = 3^1 } hingegen spannt ein anderes Raster auf und beide kombiniert können wir mit'."\n".
-                    '\\latexmath{ 6 = 2 \cdot 3 } beschreiben.'."\n",
-                      'Warum handelt es sich denn bei \\latexmath{ 2 = 2^1 }, \\latexmath{ 4 = 2^2 } oder \\latexmath{ 8 = 2^3 } und für'."\n".
-                    'alle weiteren Potenzen von Zwei, oder allgemeiner bei \\latexmath{ p_i^k } mit \\latexmath{ k \geq 1 } um das gleiche Raster?'."\n".
-                    'Das ist nicht gleich offensichtlich, finde ich.'."\n",
-                      'Dies können wir am Distributivgesetz erkennen, denn \\latexmath{ p_i^k + 1 } ist nicht ganzzahlig'."\n".
-                    'durch \\latexmath{ p_i^k } teilbar, egal welche Potenz \\latexmath{ k \geq 1 } wir haben;'."\n".
-                    'also egal, wie häufig \\latexmath{ p_i } in einem Produkt steckt.'."\n",
-                      'Kombinieren wir jedoch unterschiedliche Primzahlen in einem Produkt, wie beispielsweise'."\n".
-                    'in \\latexmath{ 6 = 2 \cdot 3 }, dann ist \\latexmath{ 7 = *( 2 \cdot 3 *) + 1 } durch beide'."\n".
-                    'Primzahlen nicht ganzzahlig teilbar.'."\n".
-                    'Wir erhalten also eine erweiterte Qualität bezüglich der unterschiedlichen Primfaktoren einer natürlichen Zahl.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\\condb{Das Verlassen des Rasters einer Menge von aufeinanderfolgenden natürlichen Zahlen} \\\\'."\n".
-                    'Durch das addieren oder auch das Subtrahieren der Eins auf oder von einem Primzahlprodukt verlassen'."\n".
-                    'wir das Raster, auf dem das Produkt liegt oder schwingt.'."\n".
-                    'Und ein Produkt von Primzahlen schwingt mit allen Frequenzen seiner unterschiedlichen Primzahlen.'."\n".
-                    'Daher können wir mit der Methode des Verlassens des Rasters aller bisherigen Primzahlen im'."\n".
-                    '\\jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid}{›Satz des Euklid‹}'."\n".
-                    'die Existenz immer weiterer und größerer Primzahlen beweisen.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\\condb{Immer mehr Primzahlen machen das Raster in Bezug auf die folgenden natürlichen Zahlen immer feiner} \\\\'."\n".
-                    'Der ›Satz des Euklid‹ macht deutlich, dass die neu hinzukommenden, immer größeren Primzahlen'."\n".
-                    'wieder und wieder außerhalb des bisherigen Rasters der kleineren Zahlen liegen.'."\n".
-                    'Dadurch wird das Raster durch immer mehr größere Primzahlen immer feiner.'."\n".
-                    'Und deshalb kommen dann auch immer seltener neue Primzahlen hinzu, ohne, dass die Reihe der Primzahlen enden würde.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\\condb{Die Primfakultät einer Menge an natürlichen Zahlen beschreibt ihr Raster} \\\\'."\n".
-                    'Weil das Raster, was eine Primzahl oder eine Zahl, durch ihre Primfaktorzerlegung, vorgibt,'."\n".
-                    'damit nicht von der Potenz ihrer Primzahlen abhängt, reicht ein Produkt der einfachen Potenz'."\n".
-                    'ihrer Primfaktorzerlegung aus, um ihr Raster zu beschreiben.'."\n".
-                    'Das Raster einer natürlichen Zahl umfasst also alle Potenzen ihrer Primfaktoren.'."\n".
-                    'Daher können wir das Raster auch Primturm-Potenzraster einer natürlichen Zahl nennen.'."\n",
-                      'Die Mengen-Primfakultät einer Menge der ersten \\latexmath{ n } natürlichen Zahlen,'."\n".
-                    'von der Null an, liefert also das \\italic{gemeinsame Primturm-Potenzraster} aller Zahlen dieser Menge.'."\n".
-                    'Bei endlichen natürlichen Zahlen, als Mengen ihrer Vorgänger gesehen, fällt die Mengen-Primfakultät'."\n".
-                    'nur bei der Eins mit der gleichen Zahl zusammen, siehe oben, denn: \\latexmath{ 1\overline{\#} = 1 }'."\n",
-                      'Bei allen \\latexmath{ n \in \{ 2, 3 \} } ist \\latexmath{ n\overline{\#} < n }.'."\n",
-                      'Und bei \\latexmath{ n = 0 } und allen \\latexmath{ n > 3 } ist \\latexmath{ n\overline{\#} > n }.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\\condb{Das gemeinsame Primturm-Potenzraster aller endlichen natürlichen Zahlen} \\\\'."\n".
-                    'Wie wir oben schon beschrieben haben, erhalten wir das gemeinsame Primturm-Potenzraster aller endlichen natürlichen Zahlen'."\n".
-                    'durch:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \omega\overline{\#}  =  \omega_{\forall p}  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdots  }'),
-                      array( display => 'on',  latex => '{  \omega\overline{\#}  ?=  \omega  }'),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Experimentelle Gedanken zu anderen Beweiswegen  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen',
+              'Das Verständnis des Übergangs der Mengen-Primfakultät und des Primturm-Potenzrasters ins Unendliche zu \\latexmath{ \omega }', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\\bold{Parität}',
+                    // '• Nicht nur gleiche Mächtigkeit von geraden und ungeraden Zahlen, sondern hier sogar gleiche kombinatorische Anzahl von geraden und ungeraden Zahlen.\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:ParitaetMathematik:2021}.}',
+                    // '\\bold{Logisches}',
+                    // '• \\latexmath{ \omega } ist dann durch jede endliche Primzahl und durch deren Produkte mit jeweiliger Potenz von Eins ganzzahlig teilbar.',
                     ))),
-                  array( 'text', array( text => array(
-                    'Es ist also das Produkt aller endlichen Primzahlen.'."\n",
-                      'Weil das gemeinsame Primturm-Potenzraster aller endlichen natürlichen Zahlen aber auch dem'."\n".
-                    'Basisraster der Eins, also dem Zählen, der vollständigen Induktion und damit allen natürlichen Zahlen gleich ist,'."\n".
-                    'ist auch die Primzahlprodukt-Vermutung wahr, also die Gleichheit des Produkts aller endlichen Primzahlen'."\n".
-                    'mit der Anzahl der Elemente in der Menge der natürlichen Zahlen:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \omega\overline{\#}  =  \omega  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \boxed{\;\;  \omega  =  \omega_{\forall p}  \;\;}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Was wir oben schon gut begründen konnten und daher unsere Vermutung war.'."\n",
-                      'So ist nun auch klar, dass gilt:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \boxed{\;\;  s  =  \omega^{\omega}  \;\;}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
+                      
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
                       
-                'Die Größenordnung des Produkts aller endlichen Primzahlen', subline =>
+                'XXX Die Größenordnung des Produkts aller endlichen Primzahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Berechnen wir das Produkt aller endlichen Primzahlen von den kleinsten Primfaktoren her mit der Primfakultät\\footnote{\\const{SupNum_g_footnote_text_Primorial}} \\latexmath{ p\# }, dann wird es sehr schnell'."\n".
@@ -1872,7 +1943,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \nexists n \in \; ] p_{i}, p_{i}\# - 1 [_\mathbb{N} *)  *[  n  \in  \mathbb{P}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Dann ist die nächste Primfakultät \\term{p_{i+1}#} die Zahl zwischen dem nächsten Primzahlwilling:'."\n".
+                      'Dann ist die nächste Primfakultät \\term{p__{i+1}#} die Zahl zwischen dem nächsten Primzahlzwilling:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2031,61 +2102,9 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
-                      
-                  array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Folgen'),
-                    )),
-                )
-          ); ?>
-		    	<br>
-          <?php To_f_headline_add_hides_end_line(); ?>
-          
 
-		    	<!  • Folgen, wenn wahr  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Primzahlprodukt-Vermutung:Folgen',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
-                array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung', type => 'back'),
-                    )),
-                      
-                  array( 'notice', array( Display => 'showContent', text => array(
-                    '\\bold{Parität}',
-                    '• Nicht nur gleiche Mächtigkeit von geraden und ungeraden Zahlen, sondern hier sogar gleiche kombinatorische Anzahl von geraden und ungeraden Zahlen.\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:ParitaetMathematik:2021}.}',
-                    '\\bold{Logisches}',
-                    '• \\latexmath{ \omega } ist dann durch jede endliche Primzahl und durch deren Produkte mit jeweiliger Potenz von Eins ganzzahlig teilbar.',
-                    ))),
-                      
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:XXX:XXX', text =>
-                      
-                'XXX', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                      
-                  array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SupNum:XXX'),
+                      array(  jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung'),
                     )),
               )
           ); ?>

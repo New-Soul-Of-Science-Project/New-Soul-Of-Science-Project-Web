@@ -36,4 +36,5 @@
   const Ani_init = 'Ani_init';
   const Fig_init = 'Fig_init';
   const Vid_init = 'Vid_init';
+  const LiveAni_init = 'LiveAni_init';
 ?>

@@ -269,7 +269,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Die allgemeine x-Wurzel einer Zahl \\term{a} aus oder von sich selbst'."\n".
-                    'ergibt also das linksseitige neutrale Element \\term{n_{links}}.'."\n",
+                    'ergibt also das linksseitige neutrale Element \\term{n__{links}}.'."\n",
                       'Das rechtsseitig neutrale Element kann wie folgt durch den'."\n".
                     '\\jump{OM:OT:Einleitung:Inverse-Operatoren}{allgemeinen inversen Logarithmusoperator} errechnet werden:'."\n".
                     ''))),
@@ -292,7 +292,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Die allgemeine x-Logarithmus einer Zahl \\term{a} zur seiner eigenen Basis oder von sich selbst'."\n".
-                    'ergibt also das linksseitige neutrale Element \\term{n_{rechts}}.'."\n",
+                    'ergibt also das linksseitige neutrale Element \\term{n__{rechts}}.'."\n",
                       'Dann schauen wir uns im Folgenden an, was sich für die konkreten Operatoren ergibt.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
@@ -493,14 +493,14 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'mit \\term{n_{links}} in Abhängigkeit von \\term{a}'."\n".
+                      'mit \\term{n__{links}} in Abhängigkeit von \\term{a}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{R}  *) *[  n_{links}(a)  =  \sqrt[a]{a}  *]  .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die linksseitig neutralen Elemente \\term{n_{links}(a)} der Potenz sind von \\term{a} abhängig'."\n".
+                    'Die linksseitig neutralen Elemente \\term{n__{links}(a)} der Potenz sind von \\term{a} abhängig'."\n".
                     'und unterscheiden sich so im Allgemeinen voneinander.'."\n",
                       'Dies gilt auch für alle linksseitig neutralen Element der Operatoren größer als Drei, wie noch zu zeigen ist.'."\n".
                     ''))),

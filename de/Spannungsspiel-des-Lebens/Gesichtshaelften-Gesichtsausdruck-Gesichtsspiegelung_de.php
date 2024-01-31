@@ -35,7 +35,7 @@
                       )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '• Weitere Beispiele von Bilbo einfügen. Originale auf der Seite der Ausstellung „Publik – Privat“ von Bilbo Calvez: \\jump[https://www.bilbo.calvez.info/publik-privat]{}{https://www.bilbo.calvez.info/publik-privat}',
+                    '• Weitere Beispiele von Bilbo einfügen. Originale auf der Seite der Ausstellung „Publik – Privat“ von Bilbo Calvez: \\url{https://www.bilbo.calvez.info/publik-privat}',
                     ))),
                       
                   array( 'text', array( text => array(

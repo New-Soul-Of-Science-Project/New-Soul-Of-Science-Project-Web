@@ -170,14 +170,14 @@
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",
-                      'mit \\term{n_{links}} in Abhängigkeit von \\term{a}'."\n".
+                      'mit \\term{n__{links}} in Abhängigkeit von \\term{a}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Zähl.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{R}  *) *[  n_{links}(a)  =  a - 1  *]  .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die linksseitig neutralen Elemente \\term{n_{links}(a)} des Null-Operators sind von \\term{a} abhängig'."\n".
+                    'Die linksseitig neutralen Elemente \\term{n__{links}(a)} des Null-Operators sind von \\term{a} abhängig'."\n".
                     'und unterscheiden sich so voneinander.'."\n",
                       'Wir sehen, dass das linksseitig neutrale Element aus dem Zählen geboren ist und'."\n".
                     'immer den Vorgänger unserer Zahl \\term{a} darstellt.'."\n".
@@ -214,8 +214,8 @@
                     ))),
                   array( 'text', array( text => array(
                     'Wir können erkennen, dass es kein rechtsseitig neutrales Element des Null-Operators gibt.'."\n".
-                    'Es existiert nicht, weil jede Zahl \\term{n_{rechts}} unser \\term{a} um einen hoch zählt.'."\n".
-                    'Es gibt keine Zahl \\term{n_{rechts}}, die unser \\term{a} nicht verändert.'."\n".
+                    'Es existiert nicht, weil jede Zahl \\term{n__{rechts}} unser \\term{a} um einen hoch zählt.'."\n".
+                    'Es gibt keine Zahl \\term{n__{rechts}}, die unser \\term{a} nicht verändert.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Einbettung in neutrale Elemente} \\\\'."\n".
@@ -237,8 +237,8 @@
                     ''))),
                   array( 'text', array( text => array(
                     'Für alle Operatoren \\term{x} soll gelten, dass der dem Operator als Nachzeichen'."\n".
-                    'virtuell folgende Operand dem rechtsneutralen Element \\term{n_{x,rechts}} des Operators entspricht.'."\n".
-                    'Sollte es kein rechtsneutrales Element geben, wie beim Null-Operator, dann ist dieser Operand \\term{n_{x,rechts}} eben nicht existent:'."\n".
+                    'virtuell folgende Operand dem rechtsneutralen Element \\term{n__{x,rechts}} des Operators entspricht.'."\n".
+                    'Sollte es kein rechtsneutrales Element geben, wie beim Null-Operator, dann ist dieser Operand \\term{n__{x,rechts}} eben nicht existent:'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     '\\\\'."\n",

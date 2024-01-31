@@ -22,7 +22,7 @@
       header_links_marginLeft => '341px',
       copy_right =>
         'New Soul Of Science Academy (NSOSA) \\\\'."\n".
-        '© 2023–2023 by \\\\'."\n".
+        '© 2023–2024 by \\\\'."\n".
         'Wolfgang Huß und \\\\'."\n".
         'Media Line Digital e.K. \\\\'."\n".
         'is licensed under \\\\'."\n".

@@ -20,7 +20,7 @@
       header_links_marginLeft => '398px',
       copy_right =>
         'Superial-Zahlen (SN) \\\\'."\n".
-        '© 1988–2023 by \\\\'."\n".
+        '© 1988–2024 by \\\\'."\n".
         'Wolfgang Huß und \\\\'."\n".
         'Media Line Digital e.K. \\\\'."\n".
         'is licensed under \\\\'."\n".
@@ -54,21 +54,29 @@
       text_undertitel_h2 => 'Aktuale Unendlichkeit ersetzt den Limes oder das Differential',
       text_titel_discr_h3 => '',
       jump_ary => array(
-          'OM:SupNum:Ableitungen-Integrale:Vortext:Ableitung' => array( headline_text => 'Die Ableitung'/* , headline_text_short => 'XXX'*/),
-          'OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-mit-Limes' => array( headline_text => 'SN.AbIn.1'),
-          'OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Def-Ableitung-mit-Limes-ist-s-hoch-minus-Eins' => array( headline_text => 'SN.AbIn.2'),
-          'OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Def-Ableitung-mit-s-hoch-minus-Eins' => array( headline_text => 'SN.AbIn.3'),
-          'OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation' => array( headline_text => 'SN.AbIn.4'),
-          'OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x2-basis' => array( headline_text => 'SN.AbIn.10'),
-          'OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x2-ausmultipliziert' => array( headline_text => 'SN.AbIn.11'),
-          'OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x2-subtrahiert' => array( headline_text => 'SN.AbIn.12'),
-          'OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x2-Ergebnis' => array( headline_text => 'SN.AbIn.13'),
-          'OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x3-basis' => array( headline_text => 'SN.AbIn.14'),
-          'OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x3-ausmultipliziert' => array( headline_text => 'SN.AbIn.15'),
-          'OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x3-subtrahiert' => array( headline_text => 'SN.AbIn.16'),
-          'OM:SupNum:Ableitungen-Integrale:Vortext:Equ-Ableitung-x3-Ergebnis' => array( headline_text => 'SN.AbIn.17'),
+          'OM:SupNum:Ableitungen-Integrale:Vortext:XXX' => array( headline_text => 'XXX'/* , headline_text_short => 'XXX'*/),
 
-          'OM:SupNum:Ableitungen-Integrale:Vortext:Integration' => array( headline_text => 'Die Integration'/* , headline_text_short => 'XXX'*/),
+        'OM:SupNum:Ableitungen-Integrale:Ableitung' => array( headline_text => 'Die Ableitung'/* , headline_text_short => 'XXX'*/),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-mit-Limes' => array( headline_text => 'SN.AbIn.1'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-Limes-ist-s-hoch-minus-Eins' => array( headline_text => 'SN.AbIn.2'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins' => array( headline_text => 'SN.AbIn.3'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation' => array( headline_text => 'SN.AbIn.4'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-basis' => array( headline_text => 'SN.AbIn.10'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-ausmultipliziert' => array( headline_text => 'SN.AbIn.11'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-subtrahiert' => array( headline_text => 'SN.AbIn.12'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-Ergebnis' => array( headline_text => 'SN.AbIn.13'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-basis' => array( headline_text => 'SN.AbIn.14'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-ausmultipliziert' => array( headline_text => 'SN.AbIn.15'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-subtrahiert' => array( headline_text => 'SN.AbIn.16'),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-Ergebnis' => array( headline_text => 'SN.AbIn.17'),
+
+        'OM:SupNum:Ableitungen-Integrale:Integration' => array( headline_text => 'Die Integration'/* , headline_text_short => 'XXX'*/),
+
+        'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion' => array( headline_text => 'Die eulersche Zahl \\latexmath{ \e } und ihre \\latexmath{ \e }-Funktion in der Differentialrechnung' , headline_text_short => 'Die eulersche Zahl e und ihre e-Funktion in der Differentialrechnung'),
+          'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:SumBinominalkoe' => array( headline_text => 'Die Summen der einzelnen Spalten der Binomialkoeffizienten'/* , headline_text_short => 'XXX'*/),
+          'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:BeispielrechnungAbleitungMit-s-2' => array( headline_text => 'Beispielrechnung zur Ableitung mit \\latexmath{ s^2 }'/* , headline_text_short => 'XXX'*/),
+
+        'OM:SupNum:Ableitungen-Integrale:Die-Quadratur-des-Kreises' => array( headline_text => 'Die Quadratur des Kreises – von der eulerschen Zahl \\latexmath{ \e } zu \\latexmath{ \pi }' , headline_text_short => 'Die Quadratur des Kreises – von der eulerschen Zahl e zu π'),
 
         'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen' => array( headline_text => 'Nähere Untersuchung bestimmter Summen'/* , headline_text_short => 'XXX'*/),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins' => array( headline_text => 'Summen zur Integration von \\latexmath{ 〈2 x〉․〈1〉 }'/* , headline_text_short => 'XXX' */),
@@ -99,7 +107,9 @@
       jump_ary => array(
         'OM:SupNum:Eigenschaften:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
-        'OM:SupNum:Eigenschaften:StrukturVonS' => array( headline_text => 'Die Struktur von \\term{s}' , headline_text_short => 'Die Struktur von s'),
+        'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper' => array( headline_text => '\\latexmath{ \mathbb{S} } ist ein angeordneter Körper', headline_text_short => 'S ist ein angeordneter Körper'),
+                   
+        'OM:SupNum:Eigenschaften:StrukturVonS' => array( headline_text => 'Die Struktur von \\term{s}', headline_text_short => 'Die Struktur von s'),
           'OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS' => array( headline_text => 'Was lernen wir über die Größe von \\term{ω} und die Struktur von \\term{s} über die Frage der Vorgänger?', headline_text_short => 'Was lernen wir über die Größe von ω und die Struktur von s über die Frage der Vorgänger?'),
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s' => array( headline_text => 'SN.Eig.SVS.1'),
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z' => array( headline_text => 'SN.Eig.SVS.8'),
@@ -107,6 +117,10 @@
           'OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm' => array( headline_text => 'Ausgangspunkt der Primzahlprodukt-Vermutung'/* , headline_text_short => 'XXX' */),
           'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen' => array( headline_text => 'Erklärung der Anzahl der endlichen ganzen Zahlen durch ihren ontologischen Ursprung in den Biordinalzahlen'/* , headline_text_short => 'XXX' */),
+                   
+        'OM:SupNum:Eigenschaften:VergleichMitHyperreellenZahlen' => array( headline_text => 'Vergleich mit hyperreellen Zahlen'/* , headline_text_short => 'XXX' */),
+                   
+        'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese' => array( headline_text => 'Untersuchungen zur Kontinuumshypothese'/* , headline_text_short => 'XXX' */),
       ),
     ),
     'OM:SupNum:Einleitung' => array(
@@ -164,6 +178,7 @@
           'OM:SupNum:Formale-Entwicklung:Vortext:DefinitionSuperialeEinheit' => array( headline_text => 'Definition der superialen Einheit \\term{s}',/* headline_text_short => 'XXX'*/),
           'OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktWiederholung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+          'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S' => array( headline_text => 'SN.Form.1'),
 
         'OM:SupNum:Formale-Entwicklung:GanzeSZ' => array( headline_text => 'Ganze Superial-Zahlen'/* , headline_text_short => 'XXX' */),
         'OM:SupNum:Formale-Entwicklung:NatuerlicheSZ' => array( headline_text => 'Natürliche Superial-Zahlen'/* , headline_text_short => 'XXX' */),
@@ -198,7 +213,7 @@
       titel => 'Primzahlprodukt-Vermutung (Beweis) - Die Superial-Zahlen (SN) - Deutsch',
       description => '\\name[undertitle]{OM:SupNum:Primzahlprodukt-Vermutung}. — \\name[description]{OM:SupNum:Primzahlprodukt-Vermutung}.',
       keywords => '',
-      text_titel_h1 => 'Primzahlprodukt-Vermutung  \\color{*TitleAdd}{\\small{(Beweis)}}',
+      text_titel_h1 => 'Primzahlprodukt-Vermutung \\color{*TitleAdd}{\\small{(Beweis)}}',
       text_titel_short => 'Primzahlprodukt-Vermutung',
       text_undertitel_h2 => 'Ist das Produkt aller endlichen Primzahlen, also die Primfakultät über alle Primzahlen in der Menge der natürlichen Zahlen, der Anzahl der natürlichen Zahlen gleich?',
       text_titel_discr_h3 => 'Eine Vorstellung der Vermutung und ihr Beweis',
@@ -212,32 +227,38 @@
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid' => array( headline_text => 'Satz des Euklid'/* , headline_text_short => 'XXX'*/),
 
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n' => array( headline_text => 'SN.PP.34'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.84'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.127'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-ist-lpr-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.131'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-MengenPrimfakultaet-omega-ist-omega' => array( headline_text => 'SN.PP.159'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.166'),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega' => array( headline_text => 'SN.PP.167'),
-
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Beispiele-Primturmzerlegung-PrimturmPotenzraster+lueckenloses' => array( headline_text => 'Beispiele zur Primturmzerlegung, zum Primturm-Potenzraster und zum lückenlosen Primturm-Potenzraster'/* , headline_text_short => 'XXX'*/),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.89'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-gleich-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.131'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-entspricht-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.132'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-p-i-ist-lpr-MengenPrimfakultaet-p-i' => array( headline_text => 'SN.PP.136'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Definition-der-Menge-P-durch-p-Zaehlen' => array( headline_text => 'SN.PP.137'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-lpr-MengenPrimfakultaet-omega-ist-omega' => array( headline_text => 'SN.PP.164'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-MengenPrimfakultaet-omega' => array( headline_text => 'SN.PP.171'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen' => array( headline_text => 'SN.PP.172'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega' => array( headline_text => 'SN.PP.173'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega' => array( headline_text => 'SN.PP.174'),
 
-        'OM:SupNum:Primzahlprodukt-Vermutung:Folgen' => array( headline_text => 'Folgen, wenn wahr'/* , headline_text_short => 'XXX'*/),
+        'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion' => array( headline_text => 'Diskussion des Beweises'/* , headline_text_short => 'XXX'*/),
+
+        'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen' => array( headline_text => 'Experimentelle Gedanken zu anderen Beweiswegen'/* , headline_text_short => 'XXX'*/),
       ),
     ),
     'OM:SupNum:Ueberrationalitaetsvermutung' => array(
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Ueberrationalitaetsvermutung.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Ueberrationalitaetsvermutung.php',
-      titel => 'Überrationalitätsvermutung - Die Superial-Zahlen (SN) - Deutsch',
+      titel => 'Überrationalitätsvermutung (Beweis) - Die Superial-Zahlen (SN) - Deutsch',
       description => '\\name[undertitle]{OM:SupNum:Primzahlprodukt-Vermutung}. — \\name[description]{OM:SupNum:Primzahlprodukt-Vermutung}.',
       keywords => '',
-      text_titel_h1 => 'Überrationalitätsvermutung',
+      text_titel_h1 => 'Überrationalitätsvermutung \\color{*TitleAdd}{\\small{(Beweis)}}',
       text_titel_short => 'Überrationalitätsvermutung',
-      text_undertitel_h2 => 'Lässt sich die Wurzel aus Zwei als Bruch mit unendlich vielen endlichen Primzahlen endlicher Potenz ausdrücken?',
-      text_titel_discr_h3 => 'Wenn ja, so gilt dies vermutlich für die Koordinaten aller irrationalen algebraischen Zahlen',
+      text_undertitel_h2 => 'Lässt sich die Wurzel aus Zwei als Bruch mit aktual unendlich großen Quotienten ausdrücken?',
+      text_titel_discr_h3 => 'Die Antwort ist ja. Und dies gilt generell für die Koordinaten aller algebraischen Zahlen, von denen viele irrational sind und Wurzeln entsprechen',
       jump_ary => array(
         'OM:SupNum:Ueberrationalitaetsvermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX' => array( headline_text => 'XXX'/* , headline_text_short => 'XXX'*/),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz' => array( headline_text => 'SN.ÜV.50'),
         'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung' => array( headline_text => 'Untersuchung'/* , headline_text_short => 'XXX'*/),
       ),
     ),

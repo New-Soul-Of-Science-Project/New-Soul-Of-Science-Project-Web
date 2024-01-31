@@ -213,13 +213,14 @@
                 'Unerklärliche Beobachtungen und theoretisch aufgeworfene Fragen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Zu diesen Beobachtungen gehört das Phänomen der Dunklen Materie\\footnote[*Bearb]{\\const{FrQFT_g_footnote_text_DunkleMat}} und das Phänomen der Dunklen Energie\\footnote{\\const{FrQFT_g_footnote_text_DunkleEnergie}}, die für die Entstehung unseres Kosmos und'."\n".
-                    'für seine Entwicklung von entscheidender Bedeutung sind.'."\n".
+                    'Zu \\jump{OM:FrQFT:NotwenVereinheit}{diesen Beobachtungen} gehört das \\jump{OM:FrQFT:NotwenVereinheit:Problem-der-Dunklen-Materie}{Phänomen der Dunklen Materie}\\footnote[*Bearb]{\\const{FrQFT_g_footnote_text_DunkleMat}}'."\n".
+                    'und das \\jump{OM:FrQFT:NotwenVereinheit:Problem-der-Dunklen-Energie}{Phänomen der Dunklen Energie}\\footnote{\\const{FrQFT_g_footnote_text_DunkleEnergie}},'."\n".
+                    'die für die Entstehung unseres Kosmos und für seine Entwicklung von entscheidender Bedeutung sind.'."\n".
                     'Auch sind Fragen offen wie:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Was geschah ganz direkt nach dem Urknall?\\color{*Bearb}{(Verweis)}',
-                        'Oder wie kommt die Hubble-Konstante auf ihren gemessenen Wert?\\color{*Bearb}{(Verweis)}',
-                        'Was passiert an der Oberfläche Schwarzer Löcher?\\color{*Bearb}{(Verweis)}',
+                        'Was geschah ganz direkt nach dem \\jump{OM:FrQFT:NotwenVereinheit:Problem-der-Singularitaeten}{Urknall}?\\color{*Bearb}{(Verweis)}',
+                        'Oder wie kommt die \\jump{OM:FrQFT:NotwenVereinheit:Problem-der-kosmologischen-Konstanten}{Hubble-Konstante} auf ihren gemessenen Wert?\\color{*Bearb}{(Verweis)}',
+                        'Was passiert an der \\jump{OM:FrQFT:NotwenVereinheit:Problem-der-Feuerwand}{Oberfläche Schwarzer Löcher}?\\color{*Bearb}{(Verweis)}',
                     ))),
                   array( 'text', array( text => array(
                     'Und so fort …'."\n",
@@ -413,17 +414,6 @@
                     'Um dies abschließend zu erreichen, kommen wir nicht umhin, uns die ein oder andere Einsicht und Neuinterpretation zu erarbeiten und so liebgewonnene Denktabus zu relativieren.'."\n".
                     'Und hierbei müssen wir uns auch noch – mühevoller Weise – von mehreren voneinander abhängigen Denktabus nacheinander lösen.'."\n",
                       'Die Mühe diesen Weg zu gehen lohnt sich und wird mit etlichen interessanten neuen Perspektiven und Erkenntnissen versüßt.'."\n"))),
-                      
-                  // array( 'youtube',
-                  //   array_merge( $FrQFT_g_youtube_ary_VakuumElapson, array( name => 'OM:FrQFT:Einleitung:Fundierung:Ani-VakuumElapson'))),
-                  array( 'figure',
-                    array_merge( $FrQFT_g_figure_ary_VakuumElapson, array( name => 'OM:FrQFT:Einleitung:Fundierung:Ani-VakuumElapson',
-                                                         text => 'Die Animation zeigt eine wesentliche Grundstruktur der Elementarteilchen und des Vakuums.'."\n".
-                                                                 'Die roten Punkte stehen hier für die Fundamentalteilchen.'."\n".
-                                                                 'Das Nach-Vorne-Schrauben – der Gang oder die Translation der Helixspirale – steht für die Lichtgeschwindigkeit, die Alterung als Zeitbegriff der Relativitätstheorie.'."\n".
-                                                                 'Die Gesamtbewegung der Fundamentalteilchen steht für die „neue“ Zeit, die jeder Veränderung zugrunde liegt.'."\n".
-                                                                 'Diese Struktur kann als unpolarisiertes Vakuum-Photon verstanden werden.'))),
-                      
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:Ansatz-Unterscheidung-Zeit-Alterung', text =>
                                            
                 'Ansatz: Unterscheidung von Zeit und Alterung')),
@@ -435,9 +425,22 @@
                     'Differenziert wird dies durch die weitere Erkenntnis, dass die Veränderung eines Dings durch die Bewegung seiner Bestandteile'."\n".
                     'in zwei Aspekte zerfällt oder anders gesagt, in zwei Anteile aufgeteilt werden kann:'."\n",
                       'Ein schwingender, exakt gleich wiederholend rotierender Anteil dieser Veränderung führt die Struktur der Bestandteile des Dings'."\n".
-                    'nach einem bestimmten Zeitinterval ununterscheidbar wieder in seinen Ausgangszustand zurück.'."\n".
+                    'nach einem bestimmten Zeitinterval ununterscheidbar wieder in seinen inneren Ausgangszustand zurück.'."\n".
+                    ''))),
+                      
+                  // array( 'youtube',
+                  //   array_merge( $FrQFT_g_youtube_ary_VakuumElapson, array( name => 'OM:FrQFT:Einleitung:Fundierung:Ani-VakuumElapson'))),
+                  array( 'figure',
+                    array_merge( $FrQFT_g_figure_ary_VakuumElapson, array( name => 'OM:FrQFT:Einleitung:Fundierung:Ani-VakuumElapson',
+                                                         text => 'Die Animation zeigt eine wesentliche Grundstruktur der Elementarteilchen und des Vakuums.'."\n".
+                                                                 'Die roten Punkte stehen hier für die Fundamentalteilchen.'."\n".
+                                                                 'Das Nach-Vorne-Schrauben – der Gang oder die Translation der Helixspirale – steht für die Lichtgeschwindigkeit, die Alterung als Zeitbegriff der Relativitätstheorie.'."\n".
+                                                                 'Die Gesamtbewegung der Fundamentalteilchen steht für die „neue“ Zeit, die jeder Veränderung zugrunde liegt.'."\n".
+                                                                 'Diese Struktur kann als unpolarisiertes Vakuum-Photon verstanden werden.'))),
+                      
+                  array( 'text', array( text => array(
                     'Dieser Anteil seiner zeitlichen Veränderung leistet keinen Beitrag zur \\italic{Alterung} des Dings, zu dessen Reifeprozess.'."\n",
-                      'Denn mit der Alterung eines Dings ist gemeint, dass sich seine Struktur quasi unwiederbringlich verändert.'."\n".
+                      'Denn mit der Alterung eines Dings ist gemeint, dass sich seine innere Struktur quasi unwiederbringlich verändert.'."\n".
                     'Und genau diese Alterung ist der andere Anteil der Veränderung eines Dings.'."\n",
                       'Unser Kosmos altert, wenn sich ein Photon in ihm frei durch den Raum bewegt.'."\n".
                     'Das Photon selber – seine innere Struktur – altert nicht, weil seine Bestandteile, die Fundamentalteilchen in ihm, nur schwingende Bewegungen ausführen, die sein'."\n".
@@ -453,7 +456,8 @@
                     'die auf diese Weise nun die Schwingungen der Quantenphysik umfasst.'."\n".
                     'Wie wir noch sehen werden, wird durch diese neue Perspektive dann das innere von „Schwarzen Löchern“ transparent.'."\n",
                       'Uns sollte klar sein, dass diese neue Perspektive bedeutende Grundsätze des heutigen Physikverständnisses berührt,'."\n".
-                    'die wir im Folgenden Stück für Stück plausibel machen müssen.'."\n"))),
+                    'die wir im Folgenden Stück für Stück plausibel machen müssen.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Taburelativierung: Überlichtgeschwindigkeit')),
@@ -511,7 +515,27 @@
                     'zu ihrer Alterung bei, die sich im Zerfall oder einer anderen Transformation oder Reaktion eines Elementarteilchens ausdrücken würde.'."\n",
                       'Nehmen wir diesen Rotationsanteil aus der Bewegung der Feinstruktur der Elementarteilchen heraus, verbleibt ein Anteil, der sich entlang seiner Bahn'."\n".
                     'mit Lichtgeschwindigkeit bewegt und damit der Relativitätstheorie nicht widerspricht, sondern ihrer eigenen und/oder der Alterung des Kosmos entspricht.'."\n",
-                      'So wird es möglich, dass wirklich alle Eigenschaften der Elementarteilchen ihrer dynamischen Struktur entspringen.'."\n"))),
+                      'So wird es möglich, dass wirklich alle Eigenschaften der Elementarteilchen ihrer dynamischen Struktur entspringen.'."\n",
+                      'Mahesh Shenoy stellt in einem Video auf seinem Youtube Kanal fest, dass sich Elektronen in jeder bekannten Hinsicht so verhalten, als haben'."\n".
+                    'sie eine innere Struktur, die einen Drehimpuls erzeugt, die dem eines realen, klassischen Dings extrem nahe kommt.'."\n".
+                    'Elektronen verhalten sich demnach in einem starken Magnetfeld genau wie rotierende Stabmagneten.'."\n".
+                    'Nur sagt er, dass sie ja keinen „echten“ Drehimpuls haben können, weil sie ja die fundamentalsten Teilchen und damit strukturlos wären.'."\n".
+                    'Aus Perspektive der Quanten-Fluss-Theorie sehe ich seinen Vortrag als Nachweis dafür,'."\n".
+                    'dass der Spin oder Drehimpuls der Elektronen ihrer ausgedehnten Struktur entspringt.'."\n".
+                    'Philosophisch gesprochen:'."\n",
+                      'Ist etwas ununterscheidbar von einem Elefanten, weil es so aussieht, sich so verhält und so riecht, dann dürfen wir auch davon'."\n".
+                    'ausgehen, dass es ein Elefant ist, wenn es kein gutes Gegenargument gibt.'."\n".
+                    'Und der Ausgangspunkt der Quanten-Fluss-Theorie ist ja, dass Elektronen und alle anderen Elementarteilchen eine innere Struktur haben.'."\n".
+                    'Danke Mahesh Shenoy!'."\n",
+                      'Video-Link: \\jump[https://www.youtube.com/watch?v=PdN1mweN2ds]{}{The surprising reason behind electron ‘spin’! (They don’t REALLY spin)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:Folge-LichtUhr-Mat', text =>
+                                           
+                'Feststellung: Die Lichtuhr ist realer Bestandteil der Materie und mit dem Elementarteilchen-Spin verbunden')),
+                  array( 'text', array( text => array(
+                    'Einsteins Idee, die zeitlichen Eigenschaften der Materie mit Hilfe seines Gedankenexperiments der Lichtuhr zu veranschaulichen,'."\n".
+                    'entpuppt sich als reale Eigenschaft der Struktur der Materie.'."\n".
+                    ''))),
                       
                   // array( 'youtube',
                   //   array_merge( $FrQFT_g_youtube_ary_Lepton, array( name => 'OM:nSOSp:Home:Forschungsstand:Ani-Lepton'))),
@@ -524,23 +548,21 @@
                                                                  'Der Spin des Teilchens entspricht der Rotation um das Zentrum der Struktur.'."\n".
                                                                  'Diese Struktur kann als hypothetischer Leptonen-Wirkungsquantenstring mit Ladung verstanden werden.'))),
                       
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:Folge-LichtUhr-Mat', text =>
-                                           
-                'Feststellung: Die Lichtuhr ist realer Bestandteil der Materie und mit dem Elementarteilchen-Spin verbunden')),
                   array( 'text', array( text => array(
-                    'Einsteins Idee, die zeitlichen Eigenschaften der Materie mit Hilfe seines Gedankenexperiments der Lichtuhr zu veranschaulichen,'."\n".
-                    'entpuppt sich als reale Eigenschaft der Struktur der Materie.'."\n".
                     'Denn in der Struktur der Elementarteilchen der Materie ist die lichtschnelle Komponente der Alterungsbewegung in einer Rotation um ihre zentrale Achse,'."\n".
-                    'parallel zu einer spiralförmigen Lichtbahn, gefangen und bestimmt ihren Haupt-Spin (siehe \\jumpname{OM:FrQFT:Einleitung:Fundierung:Ani-Lepton}).'."\n"))),
+                    'parallel zu einer spiralförmigen Lichtbahn, gefangen und bestimmt ihren Haupt-Spin (siehe \\jumpname{OM:FrQFT:Einleitung:Fundierung:Ani-Lepton}).'."\n".
+                    ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'So ist das naturphilosophische Prinzip von Einsteins Lichtuhr ein wirklicher Bestandteil der Struktur der Materie.'."\n"))),
+                      'So ist das naturphilosophische Prinzip von Einsteins Lichtuhr ein wirklicher Bestandteil der Struktur der Materie.'."\n".
+                      ''))),
  
                   array( 'text', array( text => array(
-                    'Damit kann Einsteins genialer Ansatz seine strukturellen Bezüge zur Quantenphysik voll entfalten und seine herausragende Bedeutung bleibt nicht unbedingt'."\n".
-                    'weiter in der Punktform der Materie verborgen.'."\n".
-                    'Ebenso XXX Spin XXX'."\n".
-                    'XXX weiter in der Punktform der Materie verborgen.'."\n".
+                    'Damit kann sich Einsteins genialer Ansatz, die Materie als Lichtuhr zu begreifen, voll entfalten und seine herausragende Bedeutung bleibt nicht länger'."\n".
+                    'in der Punktform der Materie verborgen.'."\n".
+                    'Ganz im Gegenteil, kann sich seine Idee noch weiter entfalten und gewinnt über den Spin der Elementarteilchen auch in'."\n".
+                    'der Quantenphysik große Bedeutung.'."\n",
+                      'Ebenso entspringen so auch die übrigen Spins der Quantenphysik der neuen Struktur und entkommen der Punktform der Materie.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
@@ -562,7 +584,7 @@
                                            
                 'Taburelativierung: Medium des Lichts')),
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '(• Ohne Medium gibt es keine Gleichzeitigkeit. Eine Definition der Gleichzeitigkeit ist in der Quantenphysik unabdingbar, denn entweder muss die Auflösung von Verschränkungen Gleichzeitig an zwei unterschiedlichen Orten passieren (Kopenhagener Deutung der QM) und/oder die Wellenfunktion bzw. das Quantenpotenzial benötigt eine Definition der Gleichzeitigkeit. Ohne Gleichzeitigkeit gibt es demnach keine Vereinheitlichung der Physik.)',
+                    '• Ohne Medium gibt es keine Gleichzeitigkeit. Eine Definition der Gleichzeitigkeit ist in der Quantenphysik unabdingbar, denn entweder muss die Auflösung von Verschränkungen Gleichzeitig an zwei unterschiedlichen Orten passieren (Kopenhagener Deutung der QM) und/oder die Wellenfunktion bzw. das Quantenpotenzial benötigt eine Definition der Gleichzeitigkeit. Ohne Gleichzeitigkeit gibt es demnach keine Vereinheitlichung der Physik.',
                     ))),
                   array( 'text', array( text => array(
                     'Hier müssen wir uns abermals von einem Tabu der modernen Physik lösen:'."\n",
@@ -607,7 +629,8 @@
                       'Diese abgestrahlten Impulse sind in der neuen Physik für alle grundsätzlichen Beobachtungen in Bezug auf die Quantenphysik und die Allgemeine Relativitätstheorie verantwortlich.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
-                'Folge: Bildung von geschlossenen Strings aus Fundamentalteilchen \\\\ \\color{*TitleAdd}{– die starke Farbpolarisation und die Stringspannung}')),
+                'Folge: Bildung von geschlossenen Strings aus Fundamentalteilchen', subline =>
+                  'Die starke Farbpolarisation und die String-Spannung')),
                   array( 'text', array( text => array(
                     'Diese kegelförmigen Impulse sorgen für die Verkettung der Fundamentalteilchen zu den immer geschlossenen Strings der Elementarteilchen der neuen Physik,'."\n".
                     'siehe \\jumpname{OM:FrQFT:Einleitung:Fundierung:Ani-VakuumElapson} und auch die Fundamentalteilchen der \\jumpname{OM:FrQFT:Einleitung:Fundierung:Ani-Lepton} sind auf diese Weise verkettet.'."\n".
@@ -620,6 +643,44 @@
                     'dass die Fundamentalteilchen auf Rotationsbahnen gezwungen werden.'."\n",
                       'Das aus ihrer geradlinigen Bahn auf kreis- oder ellipsenförmige Bahnen zwingen ist ein Bruch ihrer Bewegungssymmetrie.'."\n".
                     'Diese hat eine Polarisation zur Folge, die ich \\italic{starke Farbpolarisation} nenne, in Anlehnung an die Farbladung der Quantenchromodynamik.'."\n"))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Einleitung:PhysikNeuVerstehen'),
+                    )),
+              )
+          ); ?>
+
+
+		    	<!  • Physik neu verstehen  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:FrQFT:Einleitung:PhysikNeuVerstehen',
+              'Wie ergeben sich aus dem neuen Fundament die bekannten physikalischen Beobachtungen?', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:FrQFT:Einleitung:Fundierung', type => 'back'),
+                    )),
+                      
+                  /*array( 'notice', array( Display => 'showContent', text => array(
+                    '(Aktuelle Fachdiskussion:)',
+                    '(• Lernen von Robotern und Kleinkindern: Roboter lernen am Besten, wenn sie die Vorhersagefehler minimieren. Theorie der prädiktiven Informationsverarbeitung (predictive proccessing). Ein rückgekoppeltes neuronales Netzwerk, wo die Differenz zwischen Vorhersage und deren realen Überprüfung als Fehlerdiffereznz wieder in die Verarbeitung der Informationsschichten eingespeist wird. Durch das Nachbilden des Lernens von Kleinkindern mit Robotern verstehen wir besser, wie Kleinkinder lernen, welche Probleme dabei auftreten können und wie wir diese vermeiden können.\\footnote{Vgl. \\cite{Kwon:SelbststaendigLernendeRoboter:2018}.})',
+                    '(– Der Achtsamkeitsprozess scheint universal zu sein: Solche Roboter sind Kleinkindern scheinbar so ähnlich, dass für sie die gleichen Voraussetzungen gelten, wenn sie so wie Kleinkinder werden sollen. »›Wenn mich jemand fragt, ob ein Roboter wirklich Menschenähnlich werden kann, dann frage ich zurück, ob sich jemand um ihn, wie um ein echtes Kind kümmern würde. Wenn ja, dann ist das vielleicht realisierbar; wenn nein, dann kann sich ein Roboter unmöglich wie ein richtiges menschliches Kind entwickeln.‹«, S. 72.)',
+                    '(– Feynman sagt dazu: »›Was ich nicht erschaffen kann, verstehe ich nicht.‹« Jun Tani sagt dazu: »›Ich kann verstehen, was ich erschaffen kann.‹«, S. 72.)',
+                    ))),*/
+                      
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Folge: Die Abzählinterpretation der Heisenbergschen Unschärferelation')),
@@ -744,7 +805,7 @@
                     'Welche Struktur der Elementarteilchen-Strings ist für den Elektromagnetismus oder allgemeiner für die elektroschwache Wechselwirkung verantwortlich?'."\n",
                       'Die elektroschwache Wechselwirkung soll nun durch unterschiedlich dicht mit Fundamentalteilchen'."\n".
                     'besetzte Abschnitte im Elementarteilchen-String zustande kommen, die mit dem String rotieren und so in ihm schwingen (siehe \\jumpname{OM:FrQFT:Einleitung:Fundierung:Ani-Lepton} und \\jumpname{OM:FrQFT:Einleitung:Fundierung:Fig-Photon}).'."\n".
-                    'Die unterschiedlich dicht besetzten Stellen im Elementarteilchen-String senden unterschliedliche Frequenzen der Impulse der Fundamentalteilchen aus.'."\n".
+                    'Die unterschiedlich dicht besetzten Stellen im Elementarteilchen-String senden unterschiedliche Frequenzen der Impulse der Fundamentalteilchen aus.'."\n".
                     'Diese schwingenden Dichteunterschiede der Fundamentalteilchen auf den Elementarteilchen-Strings induzieren ebensolche Dichteunterschiede in den Strings des Vakuums,'."\n".
                     'auf die ich im Anschluss zu sprechen komme, und verbreiten so das Feld der elektroschwachen Wechselwirkung im Raum.'."\n",
                       'Die elektroschwache Wechselwirkung kommt nun dadurch zustande, dass die im Vakuum induzierten dynamischen Dichteunterschiede, sogenannte virtuelle Wechselwirkungsteilchen,'."\n".
@@ -755,6 +816,14 @@
                     'ist ein senkrecht zu seiner Bewegungsrichtung rotierender elliptischer Ring.'."\n".
                     'Auf seinem String sind die Fundamentalteilchen ungleichmäßig dicht verteilt.'."\n",
                       'Dieser Dichteunterschied rotiert entgegengesetzt zu den Fundamentalteilchen durch den String und entspricht seiner elektromagnetischen Polarisation.'."\n"))),
+                  array( 'text', array( text => array(
+                  '\\condb{Magnetischer Anteil der Polarisation …} \\\\'."\n".
+                    'Die Quanten-Fluss-Theorie ist eine Theorie mit relativistischen Eigenschaften.'."\n".
+                    'Aus diesem Grund ergeben sich ihre magnetischen Eigenschaften nach Einstein, wie bekannt,'."\n".
+                    'aus den relativistischen Eigenschaften bewegter elektrischer Ladungen.\\color{*Bearb}{(Verweis)}'."\n",
+                      'Mahesh Shenoy erklärt dies wunderbar in einem Video.'."\n".
+                    'Video-Link: \\jump[https://www.youtube.com/watch?v=sDlZ-aY9GN4]{}{Why moving charges produce magnetic field?}'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                   '\\condb{Schwache Polarisation …} \\\\'."\n".
                     'Die schwache Polarisation scheint mir von der elektromagnetischen im Moment nicht zu trennen zu sein.'."\n".
@@ -818,17 +887,17 @@
                   array( 'text', array( text => array(
                   '\\condb{Schwache Wechselwirkung …} \\\\'."\n".
                     'Ganz ähnlich verhält es sich bei der schwachen Wechselwirkung und seiner Wechselwirkungsteilchen, die allerdings eine komplexere Struktur haben, als virtuelle Photonen.'."\n".
-                    'In den \\term{W^{±}}- und \\term{Z^{0}}-Bosonen rotieren die Dichteunterschiede der Fundamentalteilchen sehr wahrscheinlich auf zwei geschachtelten Spiralen, ähnlich den Leptonen (siehe \\jumpname{OM:FrQFT:Einleitung:Fundierung:Ani-Lepton}).'."\n".
+                    'In den \\term{W^^{±}}- und \\term{Z^^{0}}-Bosonen rotieren die Dichteunterschiede der Fundamentalteilchen sehr wahrscheinlich auf zwei geschachtelten Spiralen, ähnlich den Leptonen (siehe \\jumpname{OM:FrQFT:Einleitung:Fundierung:Ani-Lepton}).'."\n".
                     '\\color{*Entwick}{Ihre genaue Struktur ist noch herauszufinden.}'."\n",
                       'Wir können uns dies vereinfacht vermutlich so vorstellen, dass die unpolarisierten Photonen des Vakuums sich vorübergehend in einem Muster polarisieren,'."\n".
-                    'das die dynamische Polarisationsstruktur der \\term{W^{±}}- und \\term{Z^{0}}-Bosonen nachempfindet.'."\n"))),
+                    'das die dynamische Polarisationsstruktur der \\term{W^^{±}}- und \\term{Z^^{0}}-Bosonen nachempfindet.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Vakuumfluktuation …} \\\\'."\n".
                     'Die vorhergehende Idealisierung des Vakuums als unpolarisiertes Medium wird durch das Chaos der kreuz und quer sich mit Lichtgeschwindigkeit durchdringeden'."\n".
                     'im Grunde unpolarisierten Photonen gestört.'."\n".
                     'Dieses beständige Durcheinander erzeugt Fluktuationen – Schwankungen – der räumlichen Fundamentalteilchen-Dichte, die auch zu vorübergehenden Dichteveränderungen'."\n".
                     'der im Grunde unpolarisierten Photonen führen.'."\n",
-                      'Da die Fundamentalteilchen Energieeinheiten sind, kommt es so zu vorrübergehenden Energiedichten, die kurzzeitig Teilchen-Antiteilchen-Paare\\color{*Bearb}{(Verweis)} entstehen lassen.'."\n"))),
+                      'Da die Fundamentalteilchen Energieeinheiten sind, kommt es so zu vorübergehenden Energiedichten, die kurzzeitig Teilchen-Antiteilchen-Paare\\color{*Bearb}{(Verweis)} entstehen lassen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Analyse: Die quantenmechanische Wellenfunktion bekommt eine reale Grundlage')),

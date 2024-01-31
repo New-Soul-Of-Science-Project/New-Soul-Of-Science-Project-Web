@@ -104,7 +104,7 @@
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{(Diese Aussage muss entschärft und verfeinert werden.)}'."\n"))),
                   array( 'normal',
-                    'Nach dem Relativitätsprinzip entspricht jede Energie einer Masse, nach Albert Einsteins weltberühmter Formel im Verhältnis \\term{E = m⋅c^{2}}\\color{*Bearb}{(Link)}.\\footnote{\\const{FrQFT_g_footnote_text_AequivalMasseEnergie}}'."\n".
+                    'Nach dem Relativitätsprinzip entspricht jede Energie einer Masse, nach Albert Einsteins weltberühmter Formel im Verhältnis \\term{E = m⋅c^^{2}}\\color{*Bearb}{(Link)}.\\footnote{\\const{FrQFT_g_footnote_text_AequivalMasseEnergie}}'."\n".
                     'In der Quantenmechanik wird das Vakuum als recht energiereich beschrieben.\\footnote{Vgl. \\cite{wiki:Vakuumenergie2013}.}'."\n".
                     'Aufgrund des Relativitätsprinzips sollte es daher Masse besitzen und gravitativ wirken.'."\n".
                     'In der heutigen Physik wird hingegen ohne zwingenden Grund angenommen, die Vakuumenergie hätte keine Gravitationseffekte.\\footnote[*Bearb]{\\color{*Bearb}{(Weitere Verweise)}}'."\n".
@@ -261,11 +261,11 @@
                   array( 'normal',
                     'Die \\jump{OM:FrQFT:XXX-Notizen:NeuePhysik-Elapson}{Abbildung 1} zeigt, dass die Geometrie der Bewegung aus drei Geschwindigkeitskompontenen besteht:\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, 4.1.2 Geometrie der spiralförmigen Graviton-Bewegung, S. 55-56. Wirkungsquanten werden dort noch als Gravitonen bezeichnet.}'."\n"),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Die Bahngeschwindigkeit der Wirkungsquanten \\term{v_{wq}} ist hier als die grundlegende Geschwindigkeit zu verstehen.'."\n".
+                        'Die Bahngeschwindigkeit der Wirkungsquanten \\term{v__{wq}} ist hier als die grundlegende Geschwindigkeit zu verstehen.'."\n".
                           'Sie kann zunächst als konstant betrachtet werden.',
                         'Die Lichtgeschwindigkeit \\term{c} bezieht sich, wie eben erklärt, auf den String des Elapsons als Gesamtsystem.'."\n".
-                          'Sie hängt von der Gangweite der Spiralwicklung ab, der Wellenlänge \\term{λ_{wq}}.',
-                        'Die dritte Geschwindigkeit \\term{v_{wq,rot}} bezieht sich auf die Rotation des Strings.',
+                          'Sie hängt von der Gangweite der Spiralwicklung ab, der Wellenlänge \\term{λ__{wq}}.',
+                        'Die dritte Geschwindigkeit \\term{v__{wq,rot}} bezieht sich auf die Rotation des Strings.',
                     ))),
                   array( 'normal',
                     'Zwei der Geschwindigkeiten, die Bahngeschwindigkeit der Wirkungsquanten und die Lichtgeschwindigkeit, spielen eine besondere Rolle.'."\n".
