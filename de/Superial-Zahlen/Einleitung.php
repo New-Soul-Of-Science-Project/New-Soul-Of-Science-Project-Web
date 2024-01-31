@@ -722,8 +722,8 @@
                     'die wir treffen, wenn wir oben mit Hilfe von \\latexmath{ s } \\jump{OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen}{Ableitungen}'."\n".
                     'und \\jump{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen}{Integrale} definieren.'."\n",
                       'Wir konnten bei der Herleitung des Integrals aus der Ableitung oben schon feststellen,'."\n".
-                    'dass wir bei der Ableitung schon stillschweigend oder unbewusst davon ausgegangen sind,'."\n".
-                    'es würde unendliche viele unendlich kleine ganze Zahlen geben.'."\n".
+                    'dass wir bezüglich der Ableitung schon stillschweigend oder unbewusst davon ausgegangen sind,'."\n".
+                    'es würde unendlich viele unendlich kleine ganze Zahlen geben.'."\n".
                     'Beim Integrieren kommen wir nämlich in die Verlegenheit, in ganzen Schritten all die Differenzen'."\n".
                     'der Ableitung wieder aufzusummieren.'."\n".
                     'Dabei stellt sich die Frage:'."\n".
@@ -810,7 +810,7 @@
                     'ohne, dass das Ergebnis endlich werden kann, sondern unendlich groß bleibt.'."\n",
                       'In \\latexmath{ s } muss also jede Primfaktorzerlegung einer endlichen ganzen Zahl'."\n".
                     'beliebig endlich oft stecken.'."\n".
-                    'Eine Definition von \\latexmath{ s }, die dies explizit umsetzt finden wir auf der Seite'."\n".
+                    'Eine Definition von \\latexmath{ s }, die dies explizit umsetzt, finden wir auf der Seite'."\n".
                     '\\italic{\\jumpname{OM:SupNum:Formale-Entwicklung}}'."\n".
                     'im Abschnitt \\italic{\\jumpname{OM:SupNum:Formale-Entwicklung:Vortext:DefinitionSuperialeEinheit}}.'."\n",
                       'Folgendes Primzahlprodukt sollte das einfachste kleinste Produkt aus unendlich vielen Primfaktoren sein,'."\n".
@@ -915,8 +915,8 @@
                     'Daher muss \\latexmath{ \omega } ein ganzzahliger Teiler von \\latexmath{ \frac{ s }{ 2 } } sein,'."\n".
                     'also ein ganzzahliges Teilprodukt.'."\n",
                       'Damit muss \\latexmath{ \omega } ein unendlich großer Teil des Primzahlprodukts von \\latexmath{ s } sein.'."\n".
-                    'Und bei näherer Analyse stellen wir auch fest, dass es ein unendlich großer Teil des Primzahlprodukts'."\n".
-                    'im horizontalen Bereich aller unterschiedlichen Primzahlen sein.'."\n",
+                    'Und bei näherer Analyse stellen wir auch fest, dass es sich um einen unendlich großen Teil des Primzahlprodukts'."\n".
+                    'im horizontalen Bereich aller unterschiedlichen Primzahlen handeln muss.'."\n",
                       'In unserem Beweis der Primzahlprodukt-Vermutung zeigen wir zusätzlich, dass es nur sein kann,'."\n".
                     'dass die Primfaktorzerlegung von \\latexmath{ \omega } endliche Primzahlen von Beginn an und'."\n".
                     'ohne Lücke enthalten muss.'."\n".
