@@ -32,18 +32,18 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
                       
-                'Erwartete Erkenntnisgewinne', subline =>
+                'Erreichte und erwartete Erkenntnisgewinne', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Aus der Perspektive der \\jump{OM:SupNum:Home}{Superial-Zahlen} bringt dies auch ein besseres Verständnis der positiven aktual unendlichen Zahlen,'."\n".
-                    'wie zum Beispiel \\term{s-1}, mit sich.'."\n".
-                    'Denn hier fehlt an \\term{s} etwas.'."\n",
-                      'Auch zur Klärung der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} kann die mengentheoretische Perspektive des Negativen'."\n".
-                    'tiefere Einsichten beitragen, indem festgestellt wird, dass \\term{ω-1} zu einer riesigen Lücke zwischen den endlichen natürlichen Zahlen'."\n".
-                    'und dem vermuteten Produkt aller endlichen Primzahlen \\term{ω} gehört.'."\n",
+                    'wie zum Beispiel \\lm{ \s - 1 }, mit sich.'."\n".
+                    'Denn hier fehlt an \\lm{ \s } etwas.'."\n",
+                      'Auch zum Beweis der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} trägt die mengentheoretische Perspektive des Negativen'."\n".
+                    'tiefe Einsichten bei, indem festgestellt wird, dass \\lm{ \omega - 1 } zu einer riesigen Lücke zwischen den endlichen natürlichen Zahlen'."\n".
+                    'und dem hier nachgewiesenen Produkt aller endlichen Primzahlen \\lm{ \omega } gehört.'."\n",
                       'Und nicht zuletzt können wir im Zusammenhang mit geometrischen Überlegungen etwas über die ontologische Struktur des Zählens lernen,'."\n".
                     'deren Erweiterung auf das Negative eine grundlegende Asymmetrie in den ganzen Zahlen erkennen lässt.'."\n".
-                    'Meine Intuition sagt mir, dass diese Asymmetrie gemeinsam mit der Primzahlprodukt-Vermutung in der Lage sein könnte'."\n".
+                    'Meine Intuition sagt mir, dass diese Asymmetrie gemeinsam mit der bewiesenen Primzahlprodukt-Vermutung in der Lage sein könnte'."\n".
                     'entscheidendes zur Klärung der Riemannschen Vermutung\\footnote{\\const{SupNum_g_footnote_text_RiemannschenVermutung}} beizutragen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:Ordinalzahlen', text =>
