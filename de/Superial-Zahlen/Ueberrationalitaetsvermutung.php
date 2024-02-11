@@ -337,7 +337,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land n, b, x \in \mathbb{N}^{+} *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ a }{ b }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land b, n, x \in \mathbb{N}^{+} \land n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ a }{ b }  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Für den Fall, dass die Wurzel eine rationale Lösung hat, muss der Radikand unter der Wurzel \\lm{ n }'."\n".
@@ -403,7 +403,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land n, b, x \in \mathbb{N}^{+} *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ a }{ b }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land b, n, x \in \mathbb{N}^{+} \land n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ a }{ b }  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Dann ist klar, dass es für diesen Bruch einen Nenner und einen Zähler geben muss, die teilerfremd sind:'."\n".
@@ -475,35 +475,67 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n \cdot b^{x}  =  a^{x}  }',
                                           label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  n \mid b^{x}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  n \mid b  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x} \mid b^{x}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wenn \\lm{ b^{x} } durch \\lm{ n^{x} } teilbar ist, dann folgt durch die Ausgangsbedingung, wegen der nicht Teilbarkeit von \\lm{ x + 1 } durch \\lm{ x }:'."\n".
+                      'und, weil ja schon ein \\lm{ n } auf der Seite von \\lm{ b^{x} } vorhanden ist, müssen wir bei der Teilbarkeit eines abziehen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{x - 1} \mid b^{x}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Wegen der Nichtteilbarkeit von \\lm{ x } durch \\lm{ x - 1 } ist die äquivalent mit:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x - 1} \mid b  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x - 1} *)^{x} \mid b^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{*( x - 1 *) \cdot x} \mid b^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{2} - x} \mid b^{x}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Wenn \\lm{ b^{x} } durch \\lm{ n^{x} } teilbar ist, dann folgt durch die Ausgangsbedingung'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n \cdot b^{x}  =  a^{x}  \;\;,  }',
+                                          label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'weil hier ja ein \\lm{ n } zum \\lm{ b^{x} } hinzukommt'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{x^{2} - x + 1} \mid a^{x}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'und wegen der nicht Teilbarkeit von \\lm{ x^{2} - x + 1 } durch \\lm{ x }:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{2} - x + 1} \mid a  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x^{2} - x + 1} *)^{x} \mid a^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{*( x^{2} - x + 1 *) \cdot x} \mid a^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{3} - x^{2} + x} \mid a^{x}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Und wieder weiter aus der Ausgangsbedingung'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n \cdot b^{x}  =  a^{x}  }',
                                           label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{x + 1} \mid a^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x + 1} \mid a  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x + 1} *)^{x} \mid a^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{ *( x + 1 *) \dot x} \mid a^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{2} + x} \mid a^{x}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Und wieder weiter:'."\n".
+                      'und, weil ja schon ein \\lm{ n } auf der Seite von \\lm{ b^{x} } vorhanden ist, folgt:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n \cdot b^{x}  =  a^{x}  }',
-                                          label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{x + 1} \mid b^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x + 1} \mid b  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x + 1} *)^{x} \mid b^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{ *( x + 1 *) \dot x} \mid b^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{2} + x} \mid b^{x}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{x^{3} - x^{2} + x - 1} \mid b^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{3} - x^{2} + x - 1} \mid b  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x^{3} - x^{2} + x - 1} *)^{x} \mid b^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{*( x^{3} - x^{2} + x - 1 *) \cdot x} \mid b^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{4} - x^{3} + x^{2} - x} \mid b^{x}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Und dann weiter:'."\n".
@@ -512,40 +544,49 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n \cdot b^{x}  =  a^{x}  }',
                                           label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{x^{2} + x} \mid a^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{2} + x + 1} \mid a  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x^{2} + x  + 1} *)^{x} \mid a^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{ *( x^{2} + x  + 1 *) \dot x} \mid a^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{3} + x^{2}  + x} \mid a^{x}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{x^{4} - x^{3} + x^{2} - x + 1} \mid a^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{4} - x^{3} + x^{2} - x + 1} \mid a  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x^{4} - x^{3} + x^{2} - x + 1} *)^{x} \mid a^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{ *( x^{4} - x^{3} + x^{2} - x + 1 *) \cdot x} \mid a^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{5} - x^{4} + x^{3} - x^{2} + x} \mid a^{x}  }'),
                       array( display => 'on',  latex => '{  \vdots  }'),
-                      array( display => 'on',  latex => '{  2 \cdot b^{2}  =  a^{2}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  2^{x} \mid a  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  2^{x} \mid b  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Und immer so fort, für alle ganzen endlichen Exponenten \\lm{ 2^{x} }.'."\n".
+                      'Und immer so fort.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Daraus folgt dann, dass für all diese endlichen Exponenten keine Teilerfremdheit existiert:'."\n".
+                      'An dieser Stelle ist es aber auch einsichtig, dass \\lm{ a } und \\lm{ b }, wenn sie durch die entwickelten'."\n".
+                      'Polynom-Potenzen von \\lm{ n } teilbar sind, ebenso durch jede kleinere positive ganzzahlige Potenz von \\lm{ n } teilbar sein müssen.'."\n".
+                      'Das bedeutet, aus unserer Ausgangsbedingung folgt die Teilbarkeit durch alle endlichen natürlichen Potenzen von \\lm{ n }'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n \cdot b^{x}  =  a^{x}  }',
+                                          label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  n^{x} \mid a  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  n^{x} \mid b  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Daraus folgt dann, dass für all diese endlichen Exponenten von \\lm{ n } keine Teilerfremdheit existiert:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \lnot *( a \perp b *)  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \lnot *( \frac{ a }{ 2 } \perp \frac{ b }{ 2 } *)  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \lnot *( \frac{ a }{ 4 } \perp \frac{ b }{ 4 } *)  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \lnot *( \frac{ a }{ n^{1} } \perp \frac{ b }{ n^{1} } *)  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \lnot *( \frac{ a }{ n^{2} } \perp \frac{ b }{ n^{2} } *)  }'),
                       array( display => 'on',  latex => '{  \vdots  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  \lnot *( \frac{ a }{ 2^{x} } \perp \frac{ b }{ 2^{x} } *)  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a, x \in \mathbb{N} *) *( \forall b \in \mathbb{N}^{+} *)  *[  \nexists *( \frac{ a }{ 2^{x} } \perp \frac{ b }{ 2^{x} } *)  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{N} *) *( \forall b, n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  \lnot *( \frac{ a }{ n^{x} } \perp \frac{ b }{ n^{x} } *)  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists a \in \mathbb{N} \land b, n, x \in \mathbb{N}^{+} \land n, x \geq 2 *)  *[  \frac{ a }{ n^{x} } \perp \frac{ b }{ n^{x} }  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Dies seht im Widerspruch zu der Eingangsfeststellung, dass es für den gesuchten Bruch – aus endlichen natürlichen Zahlen – einen Nenner und einen Zähler geben muss, die teilerfremd sind.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Aufgrund des Widerspruchs also können wir schließen, dass es keinen rationalen Bruch mit endlichem ganzen Nenner und Zähler gibt, der die Wurzel aus Zwei darstellen kann'."\n".
+                      'Aufgrund des Widerspruchs also können wir schließen, dass es für irrationale Wurzeln keinen rationalen Bruch mit endlichem ganzen Nenner und Zähler gibt'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists a \in \mathbb{N} \land b \in \mathbb{N}^{+} *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ a }{ b }  *]  \;\;,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists a \in \mathbb{N} \land b, n, x \in \mathbb{N}^{+} \land n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ a }{ b }  *]  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'was wir zeigen wollten.'."\n",
@@ -553,6 +594,40 @@
                       ''))),
 
                   array( 'text', array( text => array(
+                    'Hieraus können wir, entsprechend oben bei der Wurzel aus Zwei, eine Anweisung ableiten, wie der Nenner und Zähler'."\n".
+                    'eines Bruchs zu konstruieren sind, wenn wir nur die Bedingung stellen, dass sie ganz sein müssen,'."\n".
+                    'aber die Bedingung weglassen, dass sie nicht weiter zu kürzen und nicht endlich groß sein müssen.'."\n",
+                      'Die gerade gewonnene Einsicht ist, dass es sich um einen Bruch handeln muss, der beliebig endlich oft'."\n".
+                    '– also potenziell unendlich oft – um \\lm{ n^{x} } zu kürzen ist.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'XXX ??? Mit dem Argument oben, dass \\lm{ a } und \\lm{ b } durch alle \\lm{ n^{x} } teilbar sind folgt auch,'."\n".
+                    'dass sie ebenso durch jede beliebige Potenz \\lm{ x } jeder Primzahl \\lm{ p_{i} } der Primfaktorzerlegung von \\lm{ n }'."\n".
+                    'teilbar sein müssen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n \cdot b^{x}  =  a^{x}  }',
+                                          label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  p_{i}^{k_{i} x} \mid a  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall x \in \mathbb{N} *)  *[  p_{i}^{x} \mid a  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  p_{i}^{k_{i} x} \mid b  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall x \in \mathbb{N} *)  *[  p_{i}^{x} \mid b  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX ??? Ist das ein hinreichendes Argument dafür, dass auch schon:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n \cdot b^{x}  =  a^{x}  }',
+                                          label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  p_{i}^{\omega} \cdot p_{i}^{\frac{1}{x}}  ?\in  \mathbb{N}_{\infty}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
