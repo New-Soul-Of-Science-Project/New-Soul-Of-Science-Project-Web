@@ -375,7 +375,8 @@
                       array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P} *) *( \forall j_{i} \in \mathbb{N} *)  *[  m  =  p_{1}^{j_{1}} \cdot p_{2}^{j_{2}} \cdot p_{3}^{j_{3}} \cdot p_{4}^{j_{4}} \cdot \cdots  *]  }'),
                       array( display => 'on',  latex => '{  n  =  m^{x}  }',
                                           label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-von-m}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  n  =  p_{1}^{j_{1} x} \cdot p_{2}^{j_{2} x} \cdot p_{3}^{j_{3} x} \cdot p_{4}^{j_{4} x} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n  =  p_{1}^{j_{1} x} \cdot p_{2}^{j_{2} x} \cdot p_{3}^{j_{3} x} \cdot p_{4}^{j_{4} x} \cdot \cdots  }',
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-der-Primfak-von-m', label_text => '\\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-der-Primfak-von-m}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Diese Erkenntnis wird im nachfolgenden Widerspruchsbeweis eine Rolle spielen.'."\n".
@@ -426,7 +427,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  n \mid a^{x}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n \mid a^{x}  }',
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-teilt-a-hoch-x', label_text => '\\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-teilt-a-hoch-x}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Weil wir es hier mit algebraischen irrationalen Wurzeln zu tun haben, ist nach Formel \\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-von-m}'."\n".
@@ -437,7 +439,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \nexists m \in \mathbb{N}^{+} *)  *[  n  =  m^{x}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'und wegen Formel XXX sind die Potenzen der Primfaktoren \\lm{ k_{i} } von \\lm{ n } alle nicht ganzzahlig durch \\lm{ x } teilbar:'."\n".
+                      'und wegen Formel \\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-der-Primfak-von-m} sind die Potenzen der Primfaktoren \\lm{ k_{i} } von \\lm{ n } alle nicht ganzzahlig durch \\lm{ x } teilbar:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -446,7 +448,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \lnot *( x \mid k_{1} *) \lor \lnot *( x \mid k_{2} *) \lor \lnot *( x \mid k_{3} *) \lor \lnot *( x \mid k_{4} *) \lor \cdots  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wegen Formel XXX gilt nun auch'."\n".
+                      'Wegen Formel \\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-teilt-a-hoch-x} gilt nun auch'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -471,7 +473,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n \cdot b^{x}  =  a^{x}  }',
+                      array( display => 'on',  latex => '{  n \cdot b^{x}  =  a^{x}  }',
                                           label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  n \mid b^{x}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  n \mid b  }'),
@@ -482,11 +484,39 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n \cdot b^{x}  =  a^{x}  }',
+                      array( display => 'on',  latex => '{  n \cdot b^{x}  =  a^{x}  }',
                                           label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{x + 1} \mid a^{x}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x + 1} \mid a  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x + 1} *)^{x} \mid a^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{ *( x + 1 *) \dot x} \mid a^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{2} + x} \mid a^{x}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Und wieder weiter:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n \cdot b^{x}  =  a^{x}  }',
+                                          label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{x + 1} \mid b^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x + 1} \mid b  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x + 1} *)^{x} \mid b^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{ *( x + 1 *) \dot x} \mid b^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{2} + x} \mid b^{x}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Und dann weiter:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n \cdot b^{x}  =  a^{x}  }',
+                                          label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{x^{2} + x} \mid a^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{2} + x + 1} \mid a  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x^{2} + x  + 1} *)^{x} \mid a^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{ *( x^{2} + x  + 1 *) \dot x} \mid a^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{3} + x^{2}  + x} \mid a^{x}  }'),
                       array( display => 'on',  latex => '{  \vdots  }'),
                       array( display => 'on',  latex => '{  2 \cdot b^{2}  =  a^{2}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  2^{x} \mid a  *]  }'),
