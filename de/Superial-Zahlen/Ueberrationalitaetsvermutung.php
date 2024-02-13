@@ -298,11 +298,6 @@
                       
                 'Beweis der Überrationalitätsvermutung', subline =>
                   'Erweiterung des Beweises auf alle algebraischen Koeffizienten, die irrationale Zahlen sind')),
-
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Widerspruchsbeweis-fuer-alle-algebraischen-irrationalen-Koeffizienten',
-                Title => 'Widerspruchsbeweis für alle algebraischen irrationalen Koeffizienten …',
-                TitleVis => 'Widerspruchsbeweis für alle algebraischen irrationalen Koeffizienten:', ParagraphList => array(
-
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
@@ -374,7 +369,7 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P} *) *( \forall j_{i} \in \mathbb{N} *)  *[  m  =  p_{1}^{j_{1}} \cdot p_{2}^{j_{2}} \cdot p_{3}^{j_{3}} \cdot p_{4}^{j_{4}} \cdot \cdots  *]  }'),
                       array( display => 'on',  latex => '{  n  =  m^{x}  }',
-                                          label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-von-m}', label_incr => true),
+                                          label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-von-m}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  n  =  p_{1}^{j_{1} x} \cdot p_{2}^{j_{2} x} \cdot p_{3}^{j_{3} x} \cdot p_{4}^{j_{4} x} \cdot \cdots  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-der-Primfak-von-m', label_text => '\\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-der-Primfak-von-m}', label_incr => true),
                     ))),
@@ -383,8 +378,8 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Irrationale Wurzeln} \\cond{— Wenn es keine rationale Zahl als Lösung für eine Wurzel gibt} \\\\'."\n".
-                    'Für alle \\lm{ x }-ten Wurzeln aus \\lm{ n }, wo \\lm{ n } nicht die \\lm{ x }-te Potenz einer natürlichen'."\n".
-                    'Zahl \\lm{ m } sind, gilt der folgende Widerspruchsbeweis und zeigt, dass deren \\lm{ x }-ten Wurzeln'."\n".
+                    'Für alle \\lm{ x }-ten Wurzeln aus \\lm{ n }, bei denen \\lm{ n } nicht die \\lm{ x }-te Potenz einer natürlichen'."\n".
+                    'Zahl \\lm{ m } ist, gilt der folgende Widerspruchsbeweis und zeigt, dass deren \\lm{ x }-ten Wurzeln'."\n".
                     'algebraische irrationale Zahlen sind.'."\n".
                     ''))),
 
@@ -399,7 +394,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *| \sqrt[x]{n} |*  =  n^{\frac{ 1 }{ x }}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Sei die \\lm{ x }-te Wurzel aus \\lm{ n } als endlicher rationaler Bruch – aus endlichen natürlichen Zahlen – darstellbar:'."\n".
+                      'Sei die \\lm{ x }-te Wurzel aus \\lm{ n } als endlicher rationaler Bruch darstellbar – also als Bruch endlicher natürlicher Zahlen:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -423,7 +418,7 @@
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x', label_text => '\\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'woraus wir im Folgenden direkt erkennen können, dass \\lm{ a^{x} } durch \\lm{ n^{x} } teilbar sein muss:'."\n".
+                      'woraus wir im Folgenden direkt erkennen können, dass \\lm{ a^{x} } durch \\lm{ n } teilbar sein muss:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -439,7 +434,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \nexists m \in \mathbb{N}^{+} *)  *[  n  =  m^{x}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'und wegen Formel \\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-der-Primfak-von-m} sind die Potenzen der Primfaktoren \\lm{ k_{i} } von \\lm{ n } alle nicht ganzzahlig durch \\lm{ x } teilbar:'."\n".
+                      'und wegen Formel \\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-der-Primfak-von-m} ist mindestens eine Potenz \\lm{ k_{i} } der Primfaktoren von \\lm{ n } nicht ganzzahlig durch \\lm{ x } teilbar:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -463,6 +458,18 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  n \mid a  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x} \mid a^{x}  }'),
                     ))),
+
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
+                Title => 'Nebenrechnung …',
+                TitleVis => 'Nebenrechnung:', ParagraphList => array(
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  a^{x}  =  n^{x} \cdot c_{a,1}  }'),
+                    ))),
+
+                    ))),
+
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'folgt, weil ja, wie eben festgestellt, eines der \\lm{ k_{i} } nicht durch \\lm{ x } teilbar ist.'."\n".
                       ''))),
@@ -476,6 +483,19 @@
                       array( display => 'on',  latex => '{  n \cdot b^{x}  =  a^{x}  }',
                                           label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
                     ))),
+
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
+                Title => 'Nebenrechnung …',
+                TitleVis => 'Nebenrechnung:', ParagraphList => array(
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n \cdot b^{x}  =  n^{x} \cdot c_{a,1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  b^{x}  =  n^{x - 1} \cdot c_{a,1}  }'),
+                    ))),
+
+                    ))),
+
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'und, weil ja schon ein \\lm{ n } auf der Seite von \\lm{ b^{x} } vorhanden ist, müssen wir bei der Teilbarkeit eines abziehen:'."\n".
                       ''))),
@@ -484,7 +504,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  n^{x - 1} \mid b^{x}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wegen der Nichtteilbarkeit von \\lm{ x } durch \\lm{ x - 1 } ist die äquivalent mit:'."\n".
+                      'Wegen der Nichtteilbarkeit von \\lm{ x } durch \\lm{ x - 1 } ist dies äquivalent mit:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -493,14 +513,42 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{*( x - 1 *) \cdot x} \mid b^{x}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{2} - x} \mid b^{x}  }'),
                     ))),
+
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
+                Title => 'Nebenrechnung …',
+                TitleVis => 'Nebenrechnung:', ParagraphList => array(
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  b^{x}  =  n^{x^{2} - x} \cdot c_{b,1}  }'),
+                    ))),
+
+                    ))),
+
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Wenn \\lm{ b^{x} } durch \\lm{ n^{x} } teilbar ist, dann folgt durch die Ausgangsbedingung'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n \cdot b^{x}  =  a^{x}  \;\;,  }',
+                      array( display => 'on',  latex => '{  n \cdot b^{x}  =  a^{x}  }',
                                           label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
                     ))),
+
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
+                Title => 'Nebenrechnung …',
+                TitleVis => 'Nebenrechnung:', ParagraphList => array(
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n \cdot n^{x^{2} - x} \cdot c_{b,1}  =  a^{x}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n \cdot n^{x^{2} - x} \cdot c_{b,1}  =  n^{x} \cdot c_{a,1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n \cdot n^{x^{2} - 2x} \cdot c_{b,1}  =  c_{a,1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n \cdot n^{x^{2} - 2x}  =  \frac{ c_{a,1} }{ c_{b,1} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{2} - 2x + 1}  =  \frac{ c_{a,1} }{ c_{b,1} }  \;\;,  }'),
+                    ))),
+
+                    ))),
+
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'weil hier ja ein \\lm{ n } zum \\lm{ b^{x} } hinzukommt'."\n".
                       ''))),
@@ -634,8 +682,6 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
-
-                    ))),
                       
                   array( 'text', array( text => array(
                     'Der oben gezeigte Widerspruchsbeweis lässt sich direkt von der Wurzel aus Zwei auf die Wurzel'."\n".
