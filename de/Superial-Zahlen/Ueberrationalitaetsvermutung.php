@@ -426,20 +426,26 @@
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-teilt-a-hoch-x', label_text => '\\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-teilt-a-hoch-x}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Weil wir es hier mit algebraischen irrationalen Wurzeln zu tun haben, ist nach Formel \\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-von-m}'."\n".
-                      '\\lm{ n } nicht die \\lm{ x }-te Potenz einer natürlichen Zahl \\lm{ m }'."\n".
+                      'Weil wir es hier mit algebraischen irrationalen Wurzeln zu tun haben, ist nach den Formeln \\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-von-m} und \\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-der-Primfak-von-m}'."\n".
+                      '\\lm{ n } nicht die \\lm{ x }-te Potenz einer natürlichen Zahl \\lm{ m }:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \nexists m \in \mathbb{N}^{+} *)  *[  n  =  m^{x}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists n \in \mathbb{N}^{+} *) *( \forall p_{i} \in \mathbb{P} *) *( \forall j_{i} \in \mathbb{N} *) \\\ \qquad\qquad\qquad\;\;\;  *[  n  =  p_{1}^{j_{1} x} \cdot p_{2}^{j_{2} x} \cdot p_{3}^{j_{3} x} \cdot p_{4}^{j_{4} x} \cdot \cdots  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'und wegen Formel \\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-der-Primfak-von-m} ist mindestens eine Potenz \\lm{ k_{i} } der Primfaktoren von \\lm{ n } nicht ganzzahlig durch \\lm{ x } teilbar:'."\n".
+                      'Da für \\lm{ n } aber eine Primfaktorzerlegung existieren muss'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists n \in \mathbb{N}^{+} *) *( \forall p_{i} \in \mathbb{P} *) *( \forall j_{i} \in \mathbb{N} *) \\\ \qquad\qquad\qquad\;\;\;  *[  n  =  p_{1}^{j_{1} x} \cdot p_{2}^{j_{2} x} \cdot p_{3}^{j_{3} x} \cdot p_{4}^{j_{4} x} \cdot \cdots  *]  }'),
                       array( display => 'on',  latex => '{  *( n \in \mathbb{N}^{+} *) *( \forall p_{i} \in \mathbb{P} *) *( \forall k_{i} \in \mathbb{N} *) \\\ \qquad\quad\;\;  *[  n  =  p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'hat diese die Bedingung, dass mindestens eine der Potenzen \\lm{ k_{i} } ihrer Primfaktoren nicht durch \\lm{ x } teilbar sein darf:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \lnot *( x \mid k_{1} *) \lor \lnot *( x \mid k_{2} *) \lor \lnot *( x \mid k_{3} *) \lor \lnot *( x \mid k_{4} *) \lor \cdots  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -509,8 +515,8 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x - 1} \mid b  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x - 1} *)^{x} \mid b^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{*( x - 1 *) \cdot x} \mid b^{x}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( n^{x - 1} *)^{x} \mid b^{x}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{*( x - 1 *) \cdot x} \mid b^{x}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{2} - x} \mid b^{x}  }'),
                     ))),
 
@@ -541,9 +547,20 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  n \cdot n^{x^{2} - x} \cdot c_{b,1}  =  a^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n \cdot n^{x^{2} - x} \cdot c_{b,1}  =  n^{x} \cdot c_{a,1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n \cdot n^{x^{2} - 2x} \cdot c_{b,1}  =  c_{a,1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n \cdot n^{x^{2} - 2x}  =  \frac{ c_{a,1} }{ c_{b,1} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{2} - x + 1} \cdot c_{b,1}  =  a^{x}  }'),
+                    ))),
+
+                    ))),
+
+
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
+                Title => 'Experimentelle Rechnung …',
+                TitleVis => 'Experimentelle Rechnung:', ParagraphList => array(
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{2} - x + 1} \cdot c_{b,1}  =  n^{x} \cdot c_{a,1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{2} - 2x + 1} \cdot c_{b,1}  =  c_{a,1}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{2} - 2x + 1}  =  \frac{ c_{a,1} }{ c_{b,1} }  \;\;,  }'),
                     ))),
 
@@ -562,8 +579,8 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{2} - x + 1} \mid a  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x^{2} - x + 1} *)^{x} \mid a^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{*( x^{2} - x + 1 *) \cdot x} \mid a^{x}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( n^{x^{2} - x + 1} *)^{x} \mid a^{x}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{*( x^{2} - x + 1 *) \cdot x} \mid a^{x}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{3} - x^{2} + x} \mid a^{x}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -581,8 +598,8 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  n^{x^{3} - x^{2} + x - 1} \mid b^{x}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{3} - x^{2} + x - 1} \mid b  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x^{3} - x^{2} + x - 1} *)^{x} \mid b^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{*( x^{3} - x^{2} + x - 1 *) \cdot x} \mid b^{x}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( n^{x^{3} - x^{2} + x - 1} *)^{x} \mid b^{x}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{*( x^{3} - x^{2} + x - 1 *) \cdot x} \mid b^{x}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{4} - x^{3} + x^{2} - x} \mid b^{x}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -594,8 +611,8 @@
                                           label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{x^{4} - x^{3} + x^{2} - x + 1} \mid a^{x}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{4} - x^{3} + x^{2} - x + 1} \mid a  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x^{4} - x^{3} + x^{2} - x + 1} *)^{x} \mid a^{x}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{ *( x^{4} - x^{3} + x^{2} - x + 1 *) \cdot x} \mid a^{x}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( n^{x^{4} - x^{3} + x^{2} - x + 1} *)^{x} \mid a^{x}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{ *( x^{4} - x^{3} + x^{2} - x + 1 *) \cdot x} \mid a^{x}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{5} - x^{4} + x^{3} - x^{2} + x} \mid a^{x}  }'),
                       array( display => 'on',  latex => '{  \vdots  }'),
                     ))),
