@@ -603,7 +603,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{4} - x^{3} + x^{2} - x} \mid b^{x}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Und dann weiter:'."\n".
+                      'Und dann weiter'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -614,13 +614,22 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  *( n^{x^{4} - x^{3} + x^{2} - x + 1} *)^{x} \mid a^{x}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  n^{ *( x^{4} - x^{3} + x^{2} - x + 1 *) \cdot x} \mid a^{x}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{5} - x^{4} + x^{3} - x^{2} + x} \mid a^{x}  }'),
-                      array( display => 'on',  latex => '{  \vdots  }'),
+                      array( display => 'on',  latex => '{  \vdots  }',
+                                          label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Und immer so fort.'."\n".
+                      'und immer so fort, bis zum Beweisschritt \\lm{ r }, wobei ein Schritt immer für \\lm{ a } und \\lm{ b } gemeinsam gezählt wird:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall r \in \mathbb{N}^{+} *) *( t = 2 \cdot r - 1 *)  *[  n^{\sum_{ \forall i \in [ 1, t ]_{\mathbb{N}} } -1^{t - i} \cdot x^{i}} \mid a  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall r \in \mathbb{N}^{+} *) *( t = 2 \cdot r *)  *[  n^{\sum_{ \forall i \in [ 1, t ]_{\mathbb{N}} } -1^{t - i} \cdot x^{i}} \mid b  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Und immer so fort …'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'An dieser Stelle ist es aber auch einsichtig, dass \\lm{ a } und \\lm{ b }, wenn sie durch die entwickelten'."\n".
+                      'XXX An dieser Stelle ist es aber auch einsichtig, dass \\lm{ a } und \\lm{ b }, wenn sie durch die entwickelten'."\n".
                       'Polynom-Potenzen von \\lm{ n } teilbar sind, ebenso durch jede kleinere positive ganzzahlige Potenz von \\lm{ n } teilbar sein müssen.'."\n".
                       'Das bedeutet, aus unserer Ausgangsbedingung folgt die Teilbarkeit durch alle endlichen natürlichen Potenzen von \\lm{ n }'."\n".
                       ''))),
@@ -628,8 +637,8 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n \cdot b^{x}  =  a^{x}  }',
                                           label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  n^{x} \mid a  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  n^{x} \mid b  *]  }'),
+                      array( display => 'on',  latex => '{  XXX \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  n^{x} \mid a  *]  }'),
+                      array( display => 'on',  latex => '{  XXX \Rightarrow  *( \forall x \in \mathbb{N} *)  *[  n^{x} \mid b  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Daraus folgt dann, dass für all diese endlichen Exponenten von \\lm{ n } keine Teilerfremdheit existiert:'."\n".
@@ -659,6 +668,50 @@
                       ''))),
 
                   array( 'text', array( text => array(
+                    'Wir zeigen hiermit aber auch ganz klar, wie die Lösung aussehen kann.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Irrationale Wurzeln} \\cond{— Die Lösung} \\\\'."\n".
+                    'Verzichten wir darauf, dass der Zähler \\lm{ a } und der Nenner \\lm{ b } endlich sein müssen und wir akzeptieren,'."\n".
+                    'dass die beiden, also der Bruch, immer wieder zu kürzen ist, so oft, dass Nenner und Zähler nicht endlich werden,'."\n".
+                    'dann erhalten wir mögliche Lösungen eines Bruchs für die Wurzel, bei denen der Nenner als auch der Zähler ganze Zahlen sind.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Setzen wir die Entwicklung des Nenners XXX und des Zähler XXX des Bruchs oben fort bis zur vollständigen InduktionXXX,'."\n".
+                      'dann kommen wir zu folgendem Ausdruck:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sqrt[x]{n}  =  \pm n^{\frac{ 1 }{ x }}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *| \sqrt[x]{n} |*  =  n^{\frac{ 1 }{ x }}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Wir bauen im Grunde eine Leiter bis in den Himmel des Unendlichen und kommen je nach der XXX Wurzel aus XXX'."\n".
+                    'dort an einer bestimmten Stelle an oder heraus.'."\n".
+                    'Dies bedeutet aber nicht, dass nur die Ankunftsorte die jeweilige Lösung darstellen.'."\n",
+                      'Das ergibt sich schon daraus, dass unsere Bedingung unendlich viele Lösungen erlaubt:'."\n".
+                    'Wir können nämlich den Bruch beliebig oft kürzen, solange Nenner und Zähler nicht endlich werden;'."\n".
+                    'solange es nämlich keinen kleinsten Bruch geben kann, der nicht weiter zu kürzen ist.'."\n".
+                    'Bleiben wir nach unserer Konstruktion mit Nenner und Zähler so im Unendlichen, dass alle Primzahlen'."\n".
+                    'im Radikand \\lm{ n } unter der Wurzel unendlich große Potenzen behalten, dann ist diese Bedingung voll erfüllt.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
                     'Hieraus können wir, entsprechend oben bei der Wurzel aus Zwei, eine Anweisung ableiten, wie der Nenner und Zähler'."\n".
                     'eines Bruchs zu konstruieren sind, wenn wir nur die Bedingung stellen, dass sie ganz sein müssen,'."\n".
                     'aber die Bedingung weglassen, dass sie nicht weiter zu kürzen und nicht endlich groß sein müssen.'."\n",
