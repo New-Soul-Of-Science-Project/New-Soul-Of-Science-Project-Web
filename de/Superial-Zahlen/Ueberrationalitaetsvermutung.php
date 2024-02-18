@@ -332,7 +332,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land b, n, x \in \mathbb{N}^{+} \land n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ a }{ b }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land b, n, x \in \mathbb{N}^{+} \land n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ a }{ b }  *]  }',
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-te-Wurzel-x-ist-a-durch-b-im-Endlichen', label_text => '\\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-te-Wurzel-x-ist-a-durch-b-im-Endlichen}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Für den Fall, dass die Wurzel eine rationale Lösung hat, muss der Radikand unter der Wurzel \\lm{ n }'."\n".
@@ -398,7 +399,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land b, n, x \in \mathbb{N}^{+} \land n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ a }{ b }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land b, n, x \in \mathbb{N}^{+} \land n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ a }{ b }  *]  }',
+                                          label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-te-Wurzel-x-ist-a-durch-b-im-Endlichen}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Dann ist klar, dass es für diesen Bruch einen Nenner und einen Zähler geben muss, die teilerfremd sind:'."\n".
@@ -668,30 +670,119 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Wir zeigen hiermit aber auch ganz klar, wie die Lösung aussehen kann.'."\n".
+                    'Gleich zeitig zeigen wir mit dem Widerspruchsbeweis nun auch, wie die Lösung aussieht.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Irrationale Wurzeln} \\cond{— Die Lösung} \\\\'."\n".
-                    'Verzichten wir darauf, dass der Zähler \\lm{ a } und der Nenner \\lm{ b } endlich sein müssen und wir akzeptieren,'."\n".
-                    'dass die beiden, also der Bruch, immer wieder zu kürzen ist, so oft, dass Nenner und Zähler nicht endlich werden,'."\n".
-                    'dann erhalten wir mögliche Lösungen eines Bruchs für die Wurzel, bei denen der Nenner als auch der Zähler ganze Zahlen sind.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Wollen wir eine Lösung finden, wie wir die \\lm{ n }-te Wurzel aus \\lm{ x } als Bruch darstellen können,'."\n".
+                    'dann kommen wir durch den Widerspruchsbeweis zu dem Schluss:'."\n",
+                      'Verzichten wir darauf, dass der Zähler \\lm{ a } und der Nenner \\lm{ b } endlich sein müssen und wir akzeptieren,'."\n".
+                    'dass die beiden, also der Bruch, immer weiter zu kürzen sind, nur so häufig, dass Nenner und Zähler nicht endlich werden,'."\n".
+                    'dann erhalten wir mögliche Lösungen von Bruchen für die Wurzeln, bei denen sowohl der Nenner als auch der Zähler ganze Zahlen sind.'."\n",
+                      'Gehen wir ans Werk formulieren dies.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Setzen wir die Entwicklung des Nenners XXX und des Zähler XXX des Bruchs oben fort bis zur vollständigen InduktionXXX,'."\n".
-                      'dann kommen wir zu folgendem Ausdruck:'."\n".
+                      'Setzen wir die Entwicklung des Zählers \\lm{ a } und des Nenners \\lm{ b } des Bruchs oben fort, bis zur vollständigen Induktion,'."\n".
+                      'dann kommen wir zu folgendem Ausdruck'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sqrt[x]{n}  =  \pm n^{\frac{ 1 }{ x }}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *| \sqrt[x]{n} |*  =  n^{\frac{ 1 }{ x }}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( t = 2 \cdot \omega - 1 *)  *[  n^{\sum_{ \forall i \in [ 1, t ]_{\mathbb{N}} } -1^{t - i} \cdot x^{i}} \mid a  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( t = 2 \cdot \omega *)  *[  n^{\sum_{ \forall i \in [ 1, t ]_{\mathbb{N}} } -1^{t - i} \cdot x^{i}} \mid b  *]  \;\;,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'in dem wir nun die Entwicklungsschritte \\lm{ r } durch die vollständigen Induktion \\lm{ \omega } ersetzt haben.'."\n".
+                      'Direkt \\lm{ \omega } in die Summe eingesetzt, anstatt durch \\lm{ t } ausgedrückt, und die Summe beispielhaft'."\n".
+                      'ausgeschrieben erhalten wir'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{ x^{ 2 \omega - 1 } - x^{ 2 \omega - 2 } + x^{ 2 \omega - 3 } - \cdots + x } \mid a  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{ x^{ 2 \omega } - x^{ 2 \omega - 1 } + x^{ 2 \omega - 2 } - x^{ 2 \omega - 3 } + \cdots - x } \mid b  \;\;,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'von wo aus wir weiter vorangehen können.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Wir bauen im Grunde eine „Leiter bis in den Himmel“ des Unendlichen und kommen je nach der \\lm{ x }-ten Wurzel aus \\lm{ n }'."\n".
+                    'dort an einer bestimmten Stelle an oder heraus.'."\n".
+                    'Dies bedeutet aber nicht, dass nur die Ankunftsorte die jeweilige Lösung darstellen.'."\n".
+                    'Es bedeutet nur, dass diese Orte Ausstiegspunkte funktionierender Leitern sind.'."\n",
+                      'Denn schon unsere im Widerspruchsbeweis gefundene Bedingung fordert, dass es unendlich viele Lösungen gibt:'."\n".
+                    'Wir können nämlich den Bruch beliebig oft kürzen, solange Nenner und Zähler nicht endlich werden;'."\n".
+                    'solange es nämlich keinen kleinsten Bruch geben kann, der nicht weiter zu kürzen ist.'."\n".
+                    'Bleiben wir nach unserer Konstruktion mit Nenner und Zähler so im Unendlichen, dass alle Primzahlen'."\n".
+                    'der Primfaktorenzerlegung des Radikand \\lm{ n } unter der Wurzel unendlich große Potenzen behalten,'."\n".
+                    'dann ist diese Bedingung ja erfüllt.'."\n",
+                      'Was wissen wir also bisher denn sicher über \\lm{ a } und \\lm{ b }?'."\n",
+                      'Wir können im Moment sicher sagen, dass \\lm{ a } um den Faktor der \\lm{ x }-ten Wurzel aus \\lm{ n }'."\n".
+                    'größer ist als \\lm{ b }.'."\n".
+                    'Und wir können sagen, dass sowohl \\lm{ a } als auch \\lm{ b } aktual unendlich oft durch \\lm{ n }'."\n".
+                    'teilbar sein müssen.'."\n".
+                    'Nehmen wir probeweise einmal an, dies seien alle Eigenschaften, die nötig sind, und definieren damit'."\n".
+                    'unseren Zähler und Nenner unserer Ausgangsbedingung.'."\n",
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Sei \\lm{ g } ein aktual unendlich großer ganzer Exponent von \\lm{ n }, der der Potenz die Eigenschaft gibt,'."\n".
+                      'dass sie beliebig endlich oft durch \\lm{ n } teilbar ist, ohne eine endliche Potenz zu werden'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall i \in \mathbb{N} *) *( g \in \mathbb{N}_{\infty} *)  *[  i < g  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'dann definieren wir \\lm{ b } und \\lm{ a }nun, indem wir die Ausgangsbedingung \\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-te-Wurzel-x-ist-a-durch-b-im-Endlichen}'."\n".
+                      'wie gerade beschrieben abwandeln:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  n^{g} \cdot n^{\frac{ 1 }{ x }}  }'),
+                      array( display => 'on',  latex => '{  b  =  n^{g}  }'),
+                      array( display => 'on',  latex => '{  *( \exists a, b \in \mathbb{N}_{\infty} \land n, x \in \mathbb{N}^{+} \land n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ a }{ b }  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{g} \cdot n^{\frac{ 1 }{ x }} }{ n^{g} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  n^{\frac{ 1 }{ x }}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Hier erkennen wir jetzt, durch vollständiges Kürzen des Bruchs:'."\n".
+                      'Diese beiden Bedingungen beschreiben \\lm{ a } und \\lm{ b } vollständig.'."\n",
+                        'Sowohl der Nenner \\lm{ b } als auch der Zähler \\lm{ a } sind ganze Zahlen,'."\n".
+                      'wie wir ja schon im Widerspruchsbeweis vorausgesetzt haben, der uns dann zur „Himmelsleiter“ geführt hat:.'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{g}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{g} \cdot n^{\frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Eine aktual unendlich große ganze Zahl, mit der wir durch ein Produkt mit einer passenden ganzen Wurzel aus einer natürlichen Zahl'."\n".
+                      'immer noch eine ganze Zahl erhalten,'."\n".
+                      'ist sehr bemerkenswert und eine große Erkenntnis der Mathematik, die ich bisher noch nicht gesehen habe.'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n",
+                        'Es kann keine weiteren Faktoren im Nenner geben, die nicht auch im Zähler hinzukommen müssten'."\n".
+                      'und daher immer gekürzt werden können.'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n",
+                        'In der Wahl der aktual unendlichen Potenz \\lm{ g } sind wir frei,'."\n".
+                      'solange sie größer bleibt als jede endliche natürliche Zahl, also nicht endlich wird.'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\omega + \frac{ 1 }{ x }} }{ n^{\omega} }  }',
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz', label_text => '\\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\omega} \cdot n^{\frac{ 1 }{ x }} }{ n^{\omega} }  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n",
@@ -699,14 +790,10 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Wir bauen im Grunde eine Leiter bis in den Himmel des Unendlichen und kommen je nach der XXX Wurzel aus XXX'."\n".
-                    'dort an einer bestimmten Stelle an oder heraus.'."\n".
-                    'Dies bedeutet aber nicht, dass nur die Ankunftsorte die jeweilige Lösung darstellen.'."\n",
-                      'Das ergibt sich schon daraus, dass unsere Bedingung unendlich viele Lösungen erlaubt:'."\n".
-                    'Wir können nämlich den Bruch beliebig oft kürzen, solange Nenner und Zähler nicht endlich werden;'."\n".
-                    'solange es nämlich keinen kleinsten Bruch geben kann, der nicht weiter zu kürzen ist.'."\n".
-                    'Bleiben wir nach unserer Konstruktion mit Nenner und Zähler so im Unendlichen, dass alle Primzahlen'."\n".
-                    'im Radikand \\lm{ n } unter der Wurzel unendlich große Potenzen behalten, dann ist diese Bedingung voll erfüllt.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
