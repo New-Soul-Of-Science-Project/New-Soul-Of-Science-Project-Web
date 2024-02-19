@@ -441,7 +441,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( n \in \mathbb{N}^{+} *) *( \forall p_{i} \in \mathbb{P} *) *( \forall k_{i} \in \mathbb{N} *) \\\ \qquad\quad\;\;  *[  n  =  p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots  *]  }'),
+                      array( display => 'on',  latex => '{  *( n \in \mathbb{N}^{+} *) *( \forall p_{i} \in \mathbb{P} *) *( \forall k_{i} \in \mathbb{N} *) \\\ \qquad\quad\;\;  *[  n  =  p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots  *]  }',
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-Primfaktoren-k_i', label_text => '\\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-Primfaktoren-k_i}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'hat diese die Bedingung, dass mindestens eine der Potenzen \\lm{ k_{i} } ihrer Primfaktoren nicht durch \\lm{ x } teilbar sein darf:'."\n".
@@ -751,39 +752,49 @@
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Hier erkennen wir jetzt, durch vollständiges Kürzen des Bruchs:'."\n".
                       'Diese beiden Bedingungen beschreiben \\lm{ a } und \\lm{ b } vollständig.'."\n",
+                        'Es kann keine weiteren Faktoren im Nenner geben, die nicht auch im Zähler hinzukommen müssten'."\n".
+                      'und daher immer gekürzt werden können.'."\n",
                         'Sowohl der Nenner \\lm{ b } als auch der Zähler \\lm{ a } sind ganze Zahlen,'."\n".
-                      'wie wir ja schon im Widerspruchsbeweis vorausgesetzt haben, der uns dann zur „Himmelsleiter“ geführt hat:.'."\n".
+                      'wie wir ja schon im Widerspruchsbeweis vorausgesetzt haben,'."\n".
+                      'der uns ja gerade über diese Bedingung dann zur „Himmelsleiter“ geführt hat:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  n^{g}  \in  \mathbb{N}_{\infty}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{g} \cdot n^{\frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{g + \frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall z \in \mathbb{Z} *)  *[  n^{g + \frac{ z }{ x }}  \in  \mathbb{N}_{\infty}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Eine aktual unendlich große ganze Zahl, mit der wir durch ein Produkt mit einer passenden ganzen Wurzel aus einer natürlichen Zahl'."\n".
-                      'immer noch eine ganze Zahl erhalten,'."\n".
-                      'ist sehr bemerkenswert und eine große Erkenntnis der Mathematik, die ich bisher noch nicht gesehen habe.'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n",
-                        'Es kann keine weiteren Faktoren im Nenner geben, die nicht auch im Zähler hinzukommen müssten'."\n".
-                      'und daher immer gekürzt werden können.'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n",
-                        'In der Wahl der aktual unendlichen Potenz \\lm{ g } sind wir frei,'."\n".
+                      'Dass ein Produkt einer bestimmten riesigen Zahl mit einer dazu passenden irrationalen Wurzel'."\n".
+                      'immer noch eine ganze Zahl ergibt, ist etwas sehr bemerkenswertes.'."\n".
+                      'Wir erhalten eine aktualunendlich große Potenz, mit einem rationalen Summanden, die trotzdem eine ganze Zahl ergibt.'."\n",
+                        'Dies ist eine große Erkenntnis der Mathematik, die ich bisher noch nicht gesehen habe.'."\n".
+                      'Sie eröffnet eine neue Welt, in der ein großes Entdeckungspotenzial liegt.'."\n",
+                        'In der Wahl der aktual unendlichen großen ganzen Potenz \\lm{ g } sind wir frei,'."\n".
                       'solange sie größer bleibt als jede endliche natürliche Zahl, also nicht endlich wird.'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
+                      'Also können wir auch die vollständige Induktion \\lm{ \omega } für \\lm{ g } einsetzen:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\omega + \frac{ 1 }{ x }} }{ n^{\omega} }  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\omega} \cdot n^{\frac{ 1 }{ x }} }{ n^{\omega} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\omega + \frac{ 1 }{ x }} }{ n^{\omega} }  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz', label_text => '\\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\omega} \cdot n^{\frac{ 1 }{ x }} }{ n^{\omega} }  }'),
                     ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Wegen der Primfaktorzerlegung von \\lm{ n } in Formel \\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-Primfaktoren-k_i}'."\n".
+                      'gilt dann auch:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{\omega} \cdot n^{\frac{ 1 }{ x }} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{\omega} }  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'XXX'."\n",
                         '\\\\'."\n".
