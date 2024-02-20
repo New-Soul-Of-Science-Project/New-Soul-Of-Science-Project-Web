@@ -368,7 +368,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P} *) *( \forall j_{i} \in \mathbb{N} *)  *[  m  =  p_{1}^{j_{1}} \cdot p_{2}^{j_{2}} \cdot p_{3}^{j_{3}} \cdot p_{4}^{j_{4}} \cdot \cdots  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *) *( \forall j_{i} \in \mathbb{N} *)  *[  m  =  p_{1}^{j_{1}} \cdot p_{2}^{j_{2}} \cdot p_{3}^{j_{3}} \cdot p_{4}^{j_{4}} \cdot \cdots  *]  }'),
                       array( display => 'on',  latex => '{  n  =  m^{x}  }',
                                           label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-von-m}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  n  =  p_{1}^{j_{1} x} \cdot p_{2}^{j_{2} x} \cdot p_{3}^{j_{3} x} \cdot p_{4}^{j_{4} x} \cdot \cdots  }',
@@ -434,14 +434,14 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \nexists m \in \mathbb{N}^{+} *)  *[  n  =  m^{x}  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists n \in \mathbb{N}^{+} *) *( \forall p_{i} \in \mathbb{P} *) *( \forall j_{i} \in \mathbb{N} *) \\\ \qquad\qquad\qquad\;\;\;  *[  n  =  p_{1}^{j_{1} x} \cdot p_{2}^{j_{2} x} \cdot p_{3}^{j_{3} x} \cdot p_{4}^{j_{4} x} \cdot \cdots  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \nexists n \in \mathbb{N}^{+} *) *( \forall p_{i} \in \mathbb{P}(n) *) *( \forall j_{i} \in \mathbb{N} *) \\\ \qquad\qquad\qquad\;\;\;  *[  n  =  p_{1}^{j_{1} x} \cdot p_{2}^{j_{2} x} \cdot p_{3}^{j_{3} x} \cdot p_{4}^{j_{4} x} \cdot \cdots  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Da für \\lm{ n } aber eine Primfaktorzerlegung existieren muss'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( n \in \mathbb{N}^{+} *) *( \forall p_{i} \in \mathbb{P} *) *( \forall k_{i} \in \mathbb{N} *) \\\ \qquad\quad\;\;  *[  n  =  p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots  *]  }',
+                      array( display => 'on',  latex => '{  *( n \in \mathbb{N}^{+} *) *( \forall p_{i} \in \mathbb{P}(n) *) *( \forall k_{i} \in \mathbb{N} *) \\\ \qquad\quad\;\;  *[  n  =  p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots  *]  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-Primfaktoren-k_i', label_text => '\\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-Primfaktoren-k_i}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -763,21 +763,47 @@
                       array( display => 'on',  latex => '{  \Rightarrow  n^{g}  \in  \mathbb{N}_{\infty}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{g} \cdot n^{\frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{g + \frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall z \in \mathbb{Z} *)  *[  n^{g + \frac{ z }{ x }}  \in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall z \in \mathbb{Z} *)  *[  n^{g + z + \frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
+                      'So sind wir zur Lösungsmenge gekommen, die wir finden wollten.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Die algebraischen irrationalen Koeffizienten gehören zu den \\italic{überrationalen Zahlen}.'."\n",
                       'Dass ein Produkt einer bestimmten riesigen Zahl mit einer dazu passenden irrationalen Wurzel'."\n".
-                      'immer noch eine ganze Zahl ergibt, ist etwas sehr bemerkenswertes.'."\n".
-                      'Wir erhalten eine aktualunendlich große Potenz, mit einem rationalen Summanden, die trotzdem eine ganze Zahl ergibt.'."\n",
-                        'Dies ist eine große Erkenntnis der Mathematik, die ich bisher noch nicht gesehen habe.'."\n".
-                      'Sie eröffnet eine neue Welt, in der ein großes Entdeckungspotenzial liegt.'."\n",
-                        'In der Wahl der aktual unendlichen großen ganzen Potenz \\lm{ g } sind wir frei,'."\n".
-                      'solange sie größer bleibt als jede endliche natürliche Zahl, also nicht endlich wird.'."\n".
-                      'Also können wir auch die vollständige Induktion \\lm{ \omega } für \\lm{ g } einsetzen:'."\n".
+                    'immer noch eine ganze Zahl ergibt, ist etwas sehr bemerkenswertes.'."\n".
+                    'Wir erhalten eine aktual unendlich große Potenz, mit einem rationalen Summanden, die trotzdem eine ganze Zahl ergibt.'."\n",
+                      'Dies ist eine große Erkenntnis der Mathematik, die ich bisher noch nicht gesehen habe.'."\n".
+                    'Sie eröffnet eine neue Welt, in der ein großes Entdeckungspotenzial liegt.'."\n",
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX', text =>
+                      
+                'Überrationale Zahlen und die natürlichen Superial-Zahlen', subline =>
+                  'Die \\lm{ x }-ten Wurzeln aus \\lm{ n } sind Superial-Zahlen')),
+                  array( 'text', array( text => array(
+                    'Nun möchte ich herausarbeiten, dass die gerade gefundene Lösung der Darstellung \\lm{ x }-ter Wurzeln aus \\lm{ n }'."\n".
+                    'durch die gefundenen \\italic{überrationalen Brüche} genau zur Struktur der Superial-Zahlen passt.'."\n".
+                    'Wir werden gleich erkennen, dass die zunächst auf rationale Koeffizienten zugeschnitten erscheinenden Superial-Zahlen'."\n".
+                    'genauso gut auch zu den überrationalen Koeffizienten – also zu algebraischen irrationalen Koeffizienten – passen.'."\n",
+                      'So erweitern sich nachfolgend die Koeffizienten der Superial-Zahlen von rationalen Brüchen auch auf'."\n".
+                    'überrationale.'."\n",
+                      'Wie oben festgestellt, sind wir in der Wahl der aktual unendlichen großen ganzen Potenz \\lm{ g } von \\lm{ n } frei,'."\n".
+                    'um die überrationalen Brüche der \\lm{ x }-ten Wurzeln aus \\lm{ n } darzustellen,'."\n".
+                    'solange \\lm{ g } größer bleibt, als jede endliche natürliche Zahl – also solange \\lm{ g } nicht endlich wird.'."\n".
+                    'So können wir für \\lm{ g } auch die vollständige Induktion \\lm{ \omega } einsetzen'."\n".
+                    'und damit den Exponenten des Primzahl-Flächenprodukts unserer superialen Basis \\lm{ \s } verwenden:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Sei \\lm{ \omega } der Exponent von \\lm{ n }, um die \\lm{ x }-te Wurzel aus \\lm{ n } als'."\n".
+                      'überrationalen Bruch darzustellen:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\omega} \cdot n^{\frac{ 1 }{ x }} }{ n^{\omega} }  }'),
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\omega} \cdot n^{\frac{ 1 }{ x }} }{ n^{\omega} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\omega + \frac{ 1 }{ x }} }{ n^{\omega} }  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz', label_text => '\\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz}', label_incr => true),
                     ))),
@@ -787,37 +813,150 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{\omega} \cdot n^{\frac{ 1 }{ x }} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{\omega} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{\omega + \frac{ 1 }{ x }} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{\omega} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{\frac{ 1 }{ x }}  =  \\\ \qquad\qquad\qquad \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{\omega + \frac{ 1 }{ x }} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{\omega} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{1}^{k_{1} *( \frac{ 1 }{ x } *)} \cdot p_{2}^{k_{2} *( \frac{ 1 }{ x } *)} \cdot p_{3}^{k_{3} *( \frac{ 1 }{ x } *)} \cdot p_{4}^{k_{4} *( \frac{ 1 }{ x } *)} \cdot \cdots  =  \\\ \qquad\qquad\qquad \frac{ p_{1}^{k_{1} *( \omega + \frac{ 1 }{ x } *)} \cdot p_{2}^{k_{2} *( \omega + \frac{ 1 }{ x } *)} \cdot p_{3}^{k_{3} *( \omega + \frac{ 1 }{ x } *)} \cdot p_{4}^{k_{4} *( \omega + \frac{ 1 }{ x } *)} \cdot \cdots }{ p_{1}^{k_{1} \omega} \cdot p_{2}^{k_{2} \omega} \cdot p_{3}^{k_{3} \omega} \cdot p_{4}^{k_{4} \omega} \cdot \cdots }  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
+                      'Weil \\lm{ n } in unserem Ansatz \\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz}'."\n".
+                      'hier ja für jede beliebige positive natürliche Zahl gilt, so gilt sie logischerweise auch für jede Primzahl der Primfaktorzerlegung von \\lm{ n },'."\n".
+                      'wenn \\lm{ \mathbb{P}(n) } die Menge der Primfaktoren von \\lm{ n } ist,'."\n".
                       ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  p_{i}^{\frac{ 1 }{ x }}  =  \frac{ p_{i}^{\omega + \frac{ 1 }{ x }} }{ p_{i}^{\omega} }  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  p_{i}^{\frac{ 1 }{ x }}  =  \frac{ p_{i}^{\omega} \cdot p_{i}^{\frac{ 1 }{ x }} }{ p_{i}^{\omega} }  *]  \;\;,  }'),
+                    ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n",
+                      'womit wir jetzt bei den einzelnen Primzahltürmen des Primzahl-Flächenprodukts von \\lm{ \s } angekommen sind.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Wenn \\lm{ n } nur aus Primzahlen erster Potenz besteht, dann ergibt sich das Bild:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Sei probehalber \\lm{ n } eine positive natürliche Zahl, die nur aus Primzahlen erster Potenz besteht'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{\omega} \cdot n^{\frac{ 1 }{ x }} }{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{\omega} }  *]  \;\;,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'dann erhalten wir einen Nenner und diesen auch als Faktor im Zähler,'."\n".
+                      'der immer ein Teil des Primzahl-Flächenprodukts von \\lm{ \s } ist'."\n".
+                      'und der Zähler ist auch immer eine ganze Zahl:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{\omega} \cdot n^{\frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'In Bezug auf die Superial-Zahlen hat dies eine besondere Bedeutung.'."\n".
+                      'Denn nehmen wir die \\lm{ x }-te Wurzel aus unserem besonderen \\lm{ n }'."\n".
+                      'mit der superialen Basis \\lm{ \s } mal, dann erhalten wir ebenfalls eine ganze Zahl,'."\n".
+                      'weil der Faktor vor der Wurzel im Zähler ja ein Teilprodukt des Primzahl-Flächenprodukts ist:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{\omega}  \mid  \s  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot \s  \in  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Das führt uns unweigerlich zu der Frage, ob diese besonderen Wurzel nicht auch zu den Superial-Zahlen gehören'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{N}  \;\;,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'deren Beantwortung wir nachgehen sollten.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Wenn wir uns Gedanken darüber machen, was der Unterschied zwischen der vorstehend probehalber angenommenen'."\n".
+                    'Bedingung, \\lm{ n } besteht nur aus Primzahlen erster Potenz, und \\lm{ n } hat jede mögliche Primfaktorzerlegung,'."\n".
+                    'dann geht es nur darum, wie sich höhere Potenzen der Primzahlen in \\lm{ n } bezüglich des Produkts mit'."\n".
+                    'der superialen Basis \\lm{ \s } verhalten.'."\n",
+                      'Die Primzahltürme \\lm{ p_{i}^{\omega} }, die als Faktoren dazu führen, dass die \\lm{ x }-ten Wurzeln aus diesen Primzahlen'."\n".
+                    '\\lm{ p_{i}^{\frac{ 1 }{ x }} } zu ganzen Zahlen werden, werden in unserer bisher gefundenen Lösung entsprechend'."\n".
+                    'der Potenzen \\lm{ k_{i} } der jeweiligen Primzahlen in \\lm{ n } potenziert:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  =  \frac{ *( p_{i}^{k_{i}} *)^{\omega} \cdot *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} }{ *( p_{i}^{k_{i}} *)^{\omega} }  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Frage, die sich bezüglich der Superial-Zahlen also stellt, ist:'."\n".
+                    'Reicht der einfach aktual unendliche Potenzturm als Faktor der Wurzel aus, um auch'."\n".
+                    'die entsprechende Wurzel aus einer Potenz der Primzahl zu einer ganzen Zahl zu machen?'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  =  \frac{ p_{i}^{\omega} \cdot *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} }{ p_{i}^{\omega} }  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Frage, die sich bezüglich der Superial-Zahlen also stellt, ist:'."\n".
+                    'Reicht der einfach aktual unendliche Potenzturm als Faktor der Wurzel aus, um auch'."\n".
+                    'die entsprechende Wurzel aus einer Potenz der Primzahl zu einer ganzen Zahl zu machen?'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i}^{\omega} \cdot *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  ?\in  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Und ich denke, diese Frage können wir ruhigen Gewissens mit Ja beantworten.'."\n".
+                    'Der einfache aktual unendliche Potenzturm reicht aus.'."\n",
+                      'Zum einen ist dies so, weil auch der einfache Potenzturm die notwendige Bedingung erfüllt,'."\n".
+                    'aktual unendlich groß zu sein und in dem oben angegebenen überrationalen Bruch beliebig endlich oft gekürzt werden zu können.'."\n".
+                    'Zum anderen können wir uns dies über Raster-Überlegungen klar machen:'."\n",
+                      'Gemeinsam mit der Null und der Eins definieren die hier allgemein betrachteten \\lm{ x }-ten Wurzeln aus \\lm{ n }'."\n".
+                    'ein extrem feines Raster.'."\n".
+                    'Dieses feine Raster wird durch den aktual unendlich großen Faktor im Zahler so stark vergrößert, dass es auf das Raster'."\n".
+                    'der aktual unendlich großen ganzen Zahlen fällt.'."\n".
+                    'Eine ganze Potenz \\lm{ k_{i} } einer Primzahl \\lm{ p_{i} } definiert aber kein noch feineres Raster'."\n".
+                    'als ihre einfache Potenz.'."\n".
+                    'Im Gegenteil fällt die \\lm{ x }-te Potenz der \\lm{ x }-ten Wurzel aus \\lm{ n } per Definition'."\n".
+                    'sogar selber auf die ganze Zahl \\lm{ n }, sogar ohne die unendliche Vergrößerung des Rasters.'."\n",
+                      'Der einfache aktual unendliche Potenzturm \\lm{ p_{i}^{\omega} } vergrößert das Raster für alle dazu passenden'."\n".
+                    '\\lm{ x }-ten Wurzel aus \\lm{ p_{i} } so, dass auch ein Produkt dieser Wurzeln auf das Zählraster der ganzen Zahlen fällt.'."\n".
+                      'Es gilt also tatsächlich:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i}^{\omega} \cdot *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit sind alle Produkte der \lm{ x }-ten Wurzeln aus \lm{ n } mit der superialen Basis \\lm{ \s }'."\n".
+                    'aktual unendlich große ganze Zahlen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }} \cdot \s  \in  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit sind sie sinnvollerweise auch ganze Superial-Zahlen, denn es macht ja dann gar keinen Sinn,'."\n".
+                    'diese Zahlen aus den Superial-Zahlen auszuschließen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die \lm{ x }-ten Wurzeln aus \lm{ n } sind als Koeffizienten in den Superial-Zahlen also'."\n".
+                    'grundsätzlich zugelassen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
-                    'Hieraus können wir, entsprechend oben bei der Wurzel aus Zwei, eine Anweisung ableiten, wie der Nenner und Zähler'."\n".
-                    'eines Bruchs zu konstruieren sind, wenn wir nur die Bedingung stellen, dass sie ganz sein müssen,'."\n".
-                    'aber die Bedingung weglassen, dass sie nicht weiter zu kürzen und nicht endlich groß sein müssen.'."\n",
-                      'Die gerade gewonnene Einsicht ist, dass es sich um einen Bruch handeln muss, der beliebig endlich oft'."\n".
-                    '– also potenziell unendlich oft – um \\lm{ n^{x} } zu kürzen ist.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
+                      
                   array( 'text', array( text => array(
                     'XXX ??? Mit dem Argument oben, dass \\lm{ a } und \\lm{ b } durch alle \\lm{ n^{x} } teilbar sind folgt auch,'."\n".
                     'dass sie ebenso durch jede beliebige Potenz \\lm{ x } jeder Primzahl \\lm{ p_{i} } der Primfaktorzerlegung von \\lm{ n }'."\n".
@@ -900,7 +1039,7 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX', text =>
                       
-                'Überrationale Zahlen und die natürlichen Superial-Zahlen', subline =>
+                'XXX Überrationale Zahlen und die natürlichen Superial-Zahlen', subline =>
                   'Die \\lm{ x }-te Wurzel aus \\lm{ n } sind Superial-Zahlen')),
                   array( 'text', array( text => array(
                     'Das entscheidende beim ersten Beweis, für die Wurzel aus Zwei, ist der Übergang ins aktual Unendliche,'."\n".
