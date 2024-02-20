@@ -15,7 +15,7 @@
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Seitenstruktur}',
-                    '• Als erstes feststellen, dass Produkte von \\lm{ \s } mit Brüchen unendlich vieler Primzahlen endlicher Potenzen in Zähler und Nenner ganze Zahlen sind und erst dann die Frage stellen, ob diese reellen Anteilen algebraischer Zahlen, wie \\lm{ \sqrt{ 2 } }, entsprechen.',
+                    '• Als erstes feststellen, dass Produkte von \\lm{ \s } mit Brüchen unendlich vieler Primzahlen endlicher Potenzen in Zähler und Nenner ganze Zahlen sind und erst dann die Frage stellen, ob diese reellen Anteile algebraischer Zahlen, wie \\lm{ \sqrt{ 2 } }, entsprechen.',
                     '\\bold{Fragen}',
                     '• Falls die algebraischen reellen Zahlen Faktoren von \\lm{ \s } sind, die ganze Zahlen ergeben:',
                     '– Werden diese dann beim Zählen der ganzen Superial-Zahlen mitgezählt oder nur die rationalen Koeffizienten?',
@@ -897,15 +897,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  =  \frac{ p_{i}^{\omega} \cdot *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} }{ p_{i}^{\omega} }  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Die Frage, die sich bezüglich der Superial-Zahlen also stellt, ist:'."\n".
-                    'Reicht der einfach aktual unendliche Potenzturm als Faktor der Wurzel aus, um auch'."\n".
-                    'die entsprechende Wurzel aus einer Potenz der Primzahl zu einer ganzen Zahl zu machen?'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  p_{i}^{\omega} \cdot *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  ?\in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  p_{i}^{\omega} \cdot *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  ?\in  \mathbb{N}_{\infty}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Und ich denke, diese Frage können wir ruhigen Gewissens mit Ja beantworten.'."\n".
@@ -950,11 +942,41 @@
                     'grundsätzlich zugelassen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                  '\\condb{Die Kehrwerte der Wurzeln} \\\\'."\n".
+                    'Was uns nun noch fehlt, sind die Kehrwerte der Wurzeln, oder anders ausgedrückt,'."\n".
+                    'die negativen Wurzeln.'."\n".
+                    'Wir gucken uns das mal kurz an.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Sei es erlaubt, dass die \\lm{ x }-te Wurzel aus \\lm{ n } eine negative Zahl,'."\n".
+                      'aber nicht Null ist'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *) *( \forall p_{i} \in \mathbb{P}(n) *)  \\\ \qquad\qquad\qquad\qquad *[  n^{- \frac{ 1 }{ x }}  =  \frac{ p_{i}^{\omega} \cdot n^{- \frac{ 1 }{ x }} }{ p_{i}^{\omega} }  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *) *( \forall p_{i} \in \mathbb{P}(n) *)  \\\ \qquad\qquad\qquad\qquad\qquad\;\;\; *[  n^{- \frac{ 1 }{ x }}  =  \frac{ p_{i}^{\omega} }{ p_{i}^{\omega} \cdot n^{\frac{ 1 }{ x }} }  *]  \;\;,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'dann bleibt der Bruch trotzdem ein überrationaler Bruch, wie wir sehen.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Die \lm{ x }-te Wurzel aus \lm{ n } rutscht einfach in den unteren Teil des Bruchs, in den Nenner,'."\n".
+                    'zum anderen identischen Primzahlturm, wo das Produkt dann ebenso eine aktual unendliche ganze Zahl ergibt,'."\n".
+                    'wie zuvor im Zähler.'."\n",
+                      'Das ist alles in sich ganz plausibel.'."\n".
+                    'So können wir die Superial-Zahlen noch auf die Koeffizienten der Kehrwerte der Wurzeln verallgemeinern:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( z \in \mathbb{Z} \setminus *\{ 0 *\} *)  *[  n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{N}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das ist schon ziemlich abgefahren und erfreulich.'."\n".
+                    'Mal sehen, wo uns das hinführt.'."\n".
                     ''))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
