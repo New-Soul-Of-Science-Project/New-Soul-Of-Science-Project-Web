@@ -978,6 +978,56 @@
                     'Das ist schon ziemlich abgefahren und erfreulich.'."\n".
                     'Mal sehen, wo uns das hinführt.'."\n".
                     ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung'),
+                    )),
+                )
+          ); ?>
+          <br>
+          <?php To_f_headline_add_hides_end_line(); ?>
+          
+
+          <!  • Struktur der Wurzeln  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Ueberrationalitaetsvermutung:Struktur-der-Wurzeln',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\\bold{XXX}',
+                    // '• XXX',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Es ist uns gelungen den vorstehenden Beweis der Überrationalitätsvermutung zu führen,'."\n".
+                    'ohne uns explizit mit den gegebenenfalls irrationalen Werten der Wurzeln und deren genauer'."\n".
+                    'Entstehung auseinander zu setzen.'."\n",
+                      'Welche tieferen Einsichten haben wir vorstehend schon gewonnen und welche können wir noch weiter schöpfen?'."\n",
+                      'Einen ersten Ansatz dazu finden wir im Beweis in den Nebenrechnungen.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung:XXX', text =>
+                      
+                'XXX', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
                 Title => 'Alte Entwurf der Überrationalitätsvermutung …',
@@ -1097,19 +1147,17 @@
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung'),
                     )),
-                )
+              )
           ); ?>
-		    	<br>
-          <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • Untersuchung  >
+          <!  • Untersuchung  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Struktur-der-Wurzeln', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
