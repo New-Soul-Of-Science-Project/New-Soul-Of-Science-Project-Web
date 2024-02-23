@@ -33,7 +33,17 @@
                     ))),
                   array( 'text', array( text => array(
                     'Stellt sich nun die Frage, ob auch bestimmte irrationale Zahlen diese Eigenschaft erfüllen.'."\n",
-                      'Ich vermute, dass dies für die Realanteile der algebraischen Zahlen\\footnote{\\const{SupNum_g_footnote_text_AlgebraischeZahl}} \\lm{ \mathbb{A}_{R} } gilt.'."\n".
+                      'Ich vermute, dem ist so und die Realanteile der algebraischen Zahlen\\footnote{\\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    '\\lm{ \mathbb{A}_{R} }, die auch rationale Potenzen von natürlichen Zahlen sein können'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{Ir}  =  \\\ \qquad *\{  a  *|*  *( \forall n \in \mathbb{N} \setminus *\{ 0, 1 *\} *) *( \forall z \in \mathbb{Z} \setminus *\{ 0 *\} *)  *[  a = n^{\frac{ 1 }{ z }}  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{A}_{R}  =  \mathbb{Q} \cup \mathbb{A}_{Ir}  \;\;,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'von denen viele irrationalen \\lm{ x }-ten Wurzeln aus \\lm{ n } entsprechen,'."\n".
+                    'sind als Produkte mit der superialen Basis \\lm{ \s } aktual unendlich große ganze Zahlen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -43,15 +53,15 @@
                   array( 'text', array( text => array(
                     'Dies wäre schon etwas sehr besonderes.'."\n",
                       'Hier ist zu bemerken, dass algebraische Zahlen grundsätzlich komplexe Zahlen\\footnote{\\const{SupNum_g_footnote_text_KomplexeZahl}},'."\n".
-                    'also Zahlen auf der Gaußschen Zahlenebene mit imaginärem Anteil, sein können.'."\n".
+                    'also Zahlen auf der Gaußschen Zahlenebene sind und damit einen imaginären Anteil haben können.'."\n".
                     'Deshalb habe ich sie hier auf ihre realen Anteile – oder auf die Faktoren beziehungsweise Koeffizienten ihrer Koordinaten – begrenzt.'."\n",
-                      'Die realen Koeffizienten der algebraischen Zahlen müssen demnach also Anteile des Primzahl-Flächenprodukts von \\lm{ \s } sein.'."\n".
+                      'Die Koeffizienten der algebraischen Zahlen müssten demnach also Anteile des Primzahl-Flächenprodukts von \\lm{ \s } sein.'."\n".
                     'Oder sie müssen multipliziert mit Anteilen des Primzahl-Flächenprodukts von \\lm{ \s } ganze Zahlen ergeben.'."\n".
                     'Beides ist allerdings nur möglich, wenn die realen Anteile der algebraischen Zahlen durch Brüche unendlicher ganzer Zahlen dargestellt werden können.'."\n".
                     'Hier beginnt nun die Crux und hier wird es nachfolgend sehr spannend und erkenntnisreich.'."\n",
                       'Interessanterweise sind die algebraischen Zahlen, genau wie die rationalen Zahlen, abzählbar.\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.}'."\n".
                     'Dies gibt uns im Lichte der hier auch entwickelten \\jump{OM:SupNum:Ableitungen-Integrale}{Ableitungen und Integrale} mit Superial-Zahlen den Hinweis,'."\n".
-                    'dass die realen Koeffizienten der algebraischen Zahlen tatsächlich zu den Superial-Zahlen gehören.'."\n",
+                    'dass die Koeffizienten der algebraischen Zahlen tatsächlich zu den Superial-Zahlen gehören.'."\n",
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX', text =>
                       
@@ -976,15 +986,8 @@
                     'Wir stellen also fest, dass auch die irrationalen Koeffizienten algebraischer Zahlen als Produkt mit der superial Basis \lm{ \s } ganze Zahlen ergeben.'."\n".
                     'Das ist schon ziemlich erfreulich und cool.'."\n",
                       'Also können wir die eingangs aufgestellt Vermutung bestätigen.'."\n".
-                    'Alle Koeffizienten algebraischer Zahlen, die Zahlen der Menge \lm{ \mathbb{A}_{R} }'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{A}_{Ir}  =  \\\ \qquad *\{  a  *|*  *( \forall n \in \mathbb{N} \setminus *\{ 0, 1 *\} *) *( \forall z \in \mathbb{Z} \setminus *\{ 0 *\} *)  *[  a = n^{\frac{ 1 }{ z }}  *]  *\}  }'),
-                      array( display => 'on',  latex => '{  \mathbb{A}_{R}  =  \mathbb{Q} \cup \mathbb{A}_{Ir}  \;\;,  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'als Produkt mit der superialen Basis \lm{ \s } sind ganze Zahlen:'."\n".
+                    'Alle Koeffizienten algebraischer Zahlen, die Zahlen der Menge \lm{ \mathbb{A}_{R} },'."\n".
+                    'sind als Produkt mit der superialen Basis \lm{ \s } ganze Zahlen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
