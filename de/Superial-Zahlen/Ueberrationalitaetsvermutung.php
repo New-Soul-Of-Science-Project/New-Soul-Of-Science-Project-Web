@@ -14,10 +14,8 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '\\bold{Seitenstruktur}',
-                    '• Als erstes feststellen, dass Produkte von \\lm{ \s } mit Brüchen unendlich vieler Primzahlen endlicher Potenzen in Zähler und Nenner ganze Zahlen sind und erst dann die Frage stellen, ob diese reellen Anteile algebraischer Zahlen, wie \\lm{ \sqrt{ 2 } }, entsprechen.',
                     '\\bold{Fragen}',
-                    '• Falls die algebraischen reellen Zahlen Faktoren von \\lm{ \s } sind, die ganze Zahlen ergeben:',
+                    '• Wenn nun alle Koeffizienten der algebraischen Zahlen Faktoren von \\lm{ \s } sind, die ganze Zahlen ergeben:',
                     '– Werden diese dann beim Zählen der ganzen Superial-Zahlen mitgezählt oder nur die rationalen Koeffizienten?',
                     '– Anders gefragt: gibt es dann immer noch \\lm{ \frac{ \s }{ 2 \cdot \omega } } rationale Zahlen im Intervall zwischen Null und ausschließlich Eins, oder müssen wir das korrigieren?',
                     ))),
@@ -955,8 +953,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *) *( \forall p_{i} \in \mathbb{P}(n) *)  \\\ \qquad\qquad\qquad\qquad *[  n^{- \frac{ 1 }{ x }}  =  \frac{ p_{i}^{\omega} \cdot n^{- \frac{ 1 }{ x }} }{ p_{i}^{\omega} }  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *) *( \forall p_{i} \in \mathbb{P}(n) *)  \\\ \qquad\qquad\qquad\qquad\qquad\;\;\; *[  n^{- \frac{ 1 }{ x }}  =  \frac{ p_{i}^{\omega} }{ p_{i}^{\omega} \cdot n^{\frac{ 1 }{ x }} }  *]  \;\;,  }'),
+                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *) *( \forall p_{i} \in \mathbb{P}(n) *)  \\\ \qquad\qquad\qquad\qquad *[  n^{- \frac{ 1 }{ x }}  =  \frac{ p_{i}^{\omega} \cdot n^{- \frac{ 1 }{ x }} }{ p_{i}^{\omega} }  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *) *( \forall p_{i} \in \mathbb{P}(n) *)  \\\ \qquad\qquad\qquad\qquad\qquad\;\;\; *[  n^{- \frac{ 1 }{ x }}  =  \frac{ p_{i}^{\omega} }{ p_{i}^{\omega} \cdot n^{\frac{ 1 }{ x }} }  *]  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'dann bleibt der Bruch trotzdem ein überrationaler Bruch, wie wir sehen.'."\n",
@@ -972,11 +970,29 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( z \in \mathbb{Z} \setminus *\{ 0 *\} *)  *[  n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{N}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall z \in \mathbb{Z} \setminus *\{ 0 *\} *)  *[  n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{N}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Das ist schon ziemlich abgefahren und erfreulich.'."\n".
-                    'Mal sehen, wo uns das hinführt.'."\n".
+                    'Wir stellen also fest, dass auch die irrationalen Koeffizienten algebraischer Zahlen als Produkt mit der superial Basis \lm{ \s } ganze Zahlen ergeben.'."\n".
+                    'Das ist schon ziemlich erfreulich und cool.'."\n",
+                      'Also können wir die eingangs aufgestellt Vermutung bestätigen.'."\n".
+                    'Alle Koeffizienten algebraischer Zahlen, die Zahlen der Menge \lm{ \mathbb{A}_{R} }'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{Ir}  =  \\\ \qquad *\{  a  *|*  *( \forall n \in \mathbb{N} \setminus *\{ 0, 1 *\} *) *( \forall z \in \mathbb{Z} \setminus *\{ 0 *\} *)  *[  a = n^{\frac{ 1 }{ z }}  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{A}_{R}  =  \mathbb{Q} \cup \mathbb{A}_{Ir}  \;\;,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'als Produkt mit der superialen Basis \lm{ \s } sind ganze Zahlen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{R} *)  *[  a \cdot \s  \in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{R} *)  *[  a \cdot \s  \in  \mathbb{S}_{N}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Etwas wirklich besonderes.'."\n",
                     ''))),
                       
                   array( 'jumplist', array(
@@ -997,9 +1013,10 @@
                       array(  jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{XXX}',
-                    // '• XXX',
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    '\\bold{Fargen}',
+                    '• Können die irrationalen Wurzeln dann trotzdem Brüche unendlich vieler Primzahlen endlicher Potenzen in Zähler und Nenner sein?',
+                    '• Oder ist dies nach dem Beweis der Überrationalitätsvermutung ausgeschlossen?',
                     ))),
                       
                   array( 'text', array( text => array(

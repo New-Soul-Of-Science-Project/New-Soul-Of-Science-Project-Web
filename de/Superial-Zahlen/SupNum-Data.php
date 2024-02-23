@@ -252,8 +252,8 @@
       keywords => '',
       text_titel_h1 => 'Überrationalitätsvermutung \\color{*TitleAdd}{\\small{(Beweis)}}',
       text_titel_short => 'Überrationalitätsvermutung',
-      text_undertitel_h2 => 'Lässt sich die „x“-te Wurzel aus „n“ als Bruch mit aktual unendlich großem ganzen Nenner und Zähler ausdrücken?',
-      text_titel_discr_h3 => 'Die Antwort ist ja, wenn Nenner und Zähler aktual unendlich große ganze Zahlen sind. Und dies gilt generell für die Koordinaten aller algebraischen Zahlen, von denen viele irrational sind und Wurzeln entsprechen',
+      text_undertitel_h2 => 'Lässt sich die „x“-te Wurzel aus „n“, wenn sie irrational ist, immer als Bruch mit aktual unendlich großem ganzen Nenner und Zähler ausdrücken?',
+      text_titel_discr_h3 => 'Der folgende Beweis zeigt, die Antwort ist ja. Dann, wenn Nenner und Zähler aktual unendlich große ganze Zahlen sind, die wir beliebig endlich oft durch „n“ teilen können. Damit sind die Koeffizienten aller algebraischen Zahlen, viele davon irrationale Wurzeln, auch Koeffizienten der Superial-Zahlen',
       jump_ary => array(
         'OM:SupNum:Ueberrationalitaetsvermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
