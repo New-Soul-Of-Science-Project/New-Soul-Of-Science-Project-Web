@@ -70,12 +70,13 @@
                   array( 'text', array( text => array(
                     'Um in die Thematik einzusteigen und zu lernen, worum es geht und was die Eigenschaften der Koeffizienten der algebraischen Zahlen'."\n".
                     'bezüglich ihrer Darstellung durch Brüche ganzer Zahlen sind, schauen wir uns hier einmal exemplarisch'."\n".
-                    'den Widerspruchsbeweis an, der zeigt, dass die Wurzel aus Zwei \\lm{ \sqrt{2} } keine rationale Zahl ist.'."\n".
+                    'den Widerspruchsbeweis an, der zeigt, dass die Wurzel aus Zwei \\lm{ \sqrt{2} } keine rationale Zahl ist.'."\n",
+                      'Als Impuls gebende Einstimmung hier vorab ein Video dazu, wenn du Lust darauf hast: \\jump[https://www.youtube.com/watch?v=M5OeQ-l6a60][]{}{Daniel Jung — Beweis, dass Wurzel aus 2 nicht rational, sondern irrational ist, indirekte Beweisführung}.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Dazu stellen wir einmal fest, wie wir die Wurzel aus Zwei durch eine Potenz von \\lm{ 2 }'."\n".
+                      'Wir schauen uns einmal an, wie wir die Wurzel aus Zwei durch eine Potenz von \\lm{ 2 }'."\n".
                       'beschreiben können:'."\n".
                       ''))),
                   array( 'equations',
@@ -84,19 +85,24 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *| \sqrt{2} |*  =  2^{\frac{ 1 }{ 2 }}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Sei die Wurzel aus Zwei beziehungsweise der halbe Potenz von Zwei als rationaler Bruch – aus endlichen natürlichen Zahlen – darstellbar:'."\n".
+                      'Angenommen, die Wurzel aus Zwei, hier dargestellt als halbe Potenz von Zwei, sei als rationaler Bruch,'."\n".
+                      'also als Bruch aus endlichen natürlichen Zahlen, darstellbar:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \exists a \in \mathbb{N} \land b \in \mathbb{N}^{+} *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ a }{ b }  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Dann ist klar, dass es für diesen Bruch einen Nenner und einen Zähler geben muss, die teilerfremd sind:'."\n".
+                      'Dann ist klar, dass es für diesen Bruch einen Nenner als auch einen Zähler geben muss, die teilerfremd sind'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \exists *( a \perp b  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \exists *( a \perp b  *]  \;\;,  }'),
                     ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'denn ein rationaler Bruch lässt bis auf einen kleinsten Nenner und Zähler kürzen,'."\n".
+                      'bis sie keine gemeinsamen Primfaktoren mehr haben.'."\n".
+                      ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Die Ausgangsbedingung ist nun äquivalent mit'."\n".
                       ''))),
@@ -108,7 +114,8 @@
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Zwei-mal-b-Quadrat-gleich-a-Quadrat', label_text => '\\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Zwei-mal-b-Quadrat-gleich-a-Quadrat}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'woraus wir direkt erkennen, dass \\lm{ a^{2} } durch \\lm{ 2^{2} = 4 } teilbar sein muss:'."\n".
+                      'woraus wir direkt erkennen, dass \\lm{ a^{2} } durch \\lm{ 2^{2} = 4 } teilbar sein muss,'."\n".
+                      'denn ein Quadrat kann eine Primzahl nicht in einfacher Potenz enthalten:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
