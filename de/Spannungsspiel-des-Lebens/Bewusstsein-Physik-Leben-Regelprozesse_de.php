@@ -380,6 +380,16 @@
                     '– Mit Informationen die Empfangen werden In Resonanz zu gehen bedeutet, sich implizit über die Schwingungsverhältnisse bewusst zu sein.',
                     ))),
                       
+                  // #!: Auch auf der NSOSP-Seite! (OM:nSOSp:Home)
+                  // #!: Auch auf der Spannungsspiel des Lebens Seite! (OM:NPT:Home)
+                  // #!: Auch auf der Naturphilosophie-der-Zeit-Seite! (OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik)
+                  array( 'text', array( Shape => 'italic', text => array(
+                        'Mathematik beginnt dort, \\\\ '."\n".
+                        'wo wir das Eine vom Anderen unterscheiden können. \\\\ '."\n".
+                        '\\small{\\color{*TitleAdd}{Ab da zählt alles.}}'."\n".
+                        ''),
+                        addtext => '')),
+                      
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
