@@ -983,8 +983,8 @@
                     'zum anderen identischen Primzahlturm, wo das Produkt dann ebenso eine aktual unendlich große ganze Zahl ergibt,'."\n".
                     'wie zuvor im Zähler.'."\n".
                     'Das ist alles in sich ganz plausibel.'."\n",
-                      'Jedoch kommt nun die Frage:'."\n".
-                    'Ist das Produkt des Kehrwerts einer Wurzel mit der superiale Basis \lm{ \s } auch immer eine natürliche'."\n".
+                      'Jedoch kommt nun die Frage auf:'."\n".
+                    'Ist das Produkt des Kehrwerts einer Wurzel mit der superialen Basis \lm{ \s } auch immer eine natürliche'."\n".
                     'Superial-Zahl?'."\n".
                       'Dies ist nicht ganz so offensichtlich, weil es bedeutet, dass \lm{ \s } durch eine \lm{ x }-te Wurzel aus \lm{ n }'."\n".
                     'geteilt auch immer eine ganze positive Superial-Zahl sein muss:'."\n".
@@ -995,24 +995,30 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \s }{ n^{\frac{ 1 }{ x }} }  ?\in  \mathbb{S}_{N}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Das die Division durch eine möglicherweise irrationale positive Wurzel auch immer eine Zahl bleibt kann in der Tat'."\n".
-                    'leicht sehr fragwürdig erscheinen.'."\n",
-                      'Ich möchte er vorab den eingangs geschilderten Fall der Quadratwurzel, nun etas mehr verallgemeinert auf die'."\n".
-                    'Quadratwurzel aus \lm{ n } das Beispiel anführen, um zu zeigen, dass dies durchaus möglich ist.'."\n".
-                    'Den im Fall der Quadratwurzel können wir durch eine erlaubte Division ganz leicht zeigen, dass dies durchaus möglich ist:'."\n".
+                    'Das die Division durch eine möglicherweise irrationale positive Wurzel auch immer eine aktual unendlich große ganze Zahl bleibt,'."\n".
+                    'kann in der Tat fragwürdig erscheinen.'."\n",
+                      'Schauen wir uns einmal an, wie wir über eine einfache Division, die den Term als eine aktual unendliche ganze Zahl belässt, zu einer Gleichung kommen,'."\n".
+                    'die in einem Produkt den Kehrwert der \lm{ x }-ten Wurzel aus einer endlichen natürlichen Zahl, größer gleich Zwei,'."\n".
+                    'mit der superialen Basis \lm{ \s } enthält:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} *) *( n \geq 2 *)  *[  n^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ n }  \in  \mathbb{S}_{N}  *]  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ 2 } - 1} \cdot \s  \in  \mathbb{S}_{N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ 2 }} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }} \cdot \frac{ \s }{ n }  \in  \mathbb{S}_{N}  *]  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x } - 1} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x } - \frac{ x }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 - x }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{- \frac{ x - 1 }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x - 1} *)^{- \frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \s }{ *( n^{x - 1} *)^{\frac{ 1 }{ x }} }  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \s }{ n^{\frac{ x - 1 }{ x }} }  \in  \mathbb{S}_{N}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Eine einfache und ganz klar erlaubte Division durch \lm{ n } macht aus dem Faktor der Quadratwurzel aus \lm{ n }'."\n".
-                    'den Kehrwert der Quadratwurzel aus \lm{ n }.'."\n".
-                    'Wir können \lm{ \s } problemlos durch \lm{ n } teilen und der Quotient bleibt eine ganze Zahl, die als Faktor'."\n".
-                    'der Quadratwurzel aus \lm{ n } auch nach den gefundenen Regeln definitiv eine ganze Zahl ergibt.'."\n",
-                      'Entwicklen wir nun die Bedingung für den allgemeinen Fall der \lm{ x }-ten Wurzel aus \lm{ n }:'."\n".
+                    'Wir können also tatsächlich die gesuchte Gleichung herleiten.'."\n".
+                    'Auch jeder Kehrwert einer \lm{ x }-ten Wurzel aus \lm{ n } im Produkt mit der superialen Basis \lm{ \s } ist eine ganze Zahl.'."\n",
+                      'XXX auch eine ganze Zahl ergibt. den Kehrwert der Quadratwurzel aus \lm{ n }.'."\n".
+                    'Diesen Term können wir so umformen, dass er dem Kehrwert der Quadratwurzel aus \lm{ n } mal \lm{ \s }, also dem Gesuchten, entspricht.'."\n".
+                    'Der Kehrwert der Quadratwurzel aus \lm{ n } mit dem Faktor \lm{ \s } ist demnach definitiv eine aktual unendlich große ganze Zahl.'."\n",
+                      'XXX Entwicklen wir nun die Bedingung für den allgemeinen Fall der \lm{ x }-ten Wurzel aus \lm{ n }:'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
