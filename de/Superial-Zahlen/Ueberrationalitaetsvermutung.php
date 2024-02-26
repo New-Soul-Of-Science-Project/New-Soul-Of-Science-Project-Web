@@ -1048,9 +1048,8 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot *( n^{\frac{ 1 }{ x }} *)^{x - 2} \cdot \frac{ \s }{ n }  \in  \mathbb{S}_{N}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{\frac{ x - 2 }{ x }} \cdot \frac{ \s }{ n }  \in  \mathbb{S}_{N}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{\frac{ x - 2 }{ x }} \cdot \frac{ \s }{ n^{\frac{ x }{ x }} }  \in  \mathbb{S}_{N}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{- \frac{ x }{ x }} \cdot n^{\frac{ x - 2 }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{\frac{ x - 2 }{ x }} \cdot n^{- \frac{ x }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{\frac{ -x + *( x - 2 *) }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{- \frac{ 2 }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x } - \frac{ 2 }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
@@ -1064,7 +1063,7 @@
 
                   array( 'text', array( text => array(
                     'Über erlaubte Operationen, die die Ganzzahligkeit unseres Ansatzes erhalten, erreichen wir also'."\n".
-                    'die gesuchte Aussage, dass auch die Kehrwert der \lm{ x }-ten Wurzel aus \lm{ n } natürliche Superial-Zahlen sind.'."\n".
+                    'die gesuchte Aussage, dass auch die Kehrwerte der \lm{ x }-ten Wurzeln aus \lm{ n } natürliche Superial-Zahlen sind.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Zusammenfassung für alle entsprechenden Wurzeln} \\\\'."\n".
@@ -1075,11 +1074,11 @@
                       array( display => 'on',  latex => '{  *( \forall z \in \mathbb{Z} \setminus *\{ 0 *\} *)  *[  n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{N}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir stellen also fest, dass auch die irrationalen Koeffizienten algebraischer Zahlen als Produkt mit der superial Basis \lm{ \s } ganze Zahlen ergeben.'."\n".
+                    'Wir stellen also fest, dass auch die irrationalen Koeffizienten algebraischer Zahlen als Produkt mit der superialen Basis \lm{ \s } ganze Zahlen ergeben.'."\n".
                     'Das ist schon ziemlich erfreulich und cool.'."\n",
                       'Also können wir die eingangs aufgestellt Vermutung bestätigen.'."\n".
                     'Alle Koeffizienten algebraischer Zahlen, die Zahlen der Menge \lm{ \mathbb{A}_{R} },'."\n".
-                    'sind als Produkt mit der superialen Basis \lm{ \s } ganze Zahlen:'."\n".
+                    'sind als Produkt mit der superialen Basis \lm{ \s } ganze Zahlen und natürliche Superial-Zahlen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
