@@ -995,9 +995,98 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \s }{ n^{\frac{ 1 }{ x }} }  ?\in  \mathbb{S}_{N}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Das die Division durch eine möglicherweise irrationale positive Wurzel auch immer eine aktual unendlich große ganze Zahl bleibt,'."\n".
+                    'Dass die Division durch eine möglicherweise irrationale positive Wurzel auch immer eine aktual unendlich große ganze Zahl bleibt,'."\n".
                     'kann in der Tat fragwürdig erscheinen.'."\n",
-                      'Schauen wir uns einmal an, wie wir über eine einfache Division, die den Term als eine aktual unendliche ganze Zahl belässt, zu einer Gleichung kommen,'."\n".
+                      'Ich möchte damit ansetzen, dies an der Quadratwurzel aus aus \lm{ n } zu zeigen und von hier aus zu verallgemeinern.'."\n".
+                    'Denn im Fall der Quadratwurzel können wir durch eine erlaubte Division ganz leicht zeigen, dass unsere fragliche Aussage wahr ist:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Sei die uns bekannte wahre Aussage, dass die'."\n".
+                      'Quadratwurzel aus \lm{ n } im Produkt mit der superialen Basis \lm{ \s } eine ganze Zahl ist'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} *) *( n \geq 2 *)  *[  n^{\frac{ 1 }{ 2 }} \cdot \s  \in  \mathbb{S}_{N}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'unser Ansatz, so gelangen wir durch die erlaubte Division von \lm{ \s } durch \lm{ n },'."\n".
+                      'die den Wahrheitsgehalt der Aussage nicht verändert, und deren Umformung'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ n }  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ 2 } - 1} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ 2 }} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'zu der Aussage, dass auch der Kehrwert der Quadratwurzel aus \lm{ n } im Produkt mit der superialen Basis \lm{ \s } ist eine ganze Zahl sein muss,'."\n".
+                      'was wir zeigen wollten.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Nun verallgemeinern wir auf die generelle Aussage des Kehrwerts der \lm{ x }-ten Wurzel'."\n".
+                    'aus einer endlichen natürlichen Zahl \lm{ n } größer gleich Zwei.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Sei die uns bekannte wahre Aussage, dass die'."\n".
+                      '\lm{ x }-ten Wurzel aus \lm{ n } im Produkt mit der superialen Basis \lm{ \s } eine ganze Zahl ist'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{N}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'unser Ansatz, so gelangen wir durch die erlaubte Division von \lm{ \s } durch \lm{ n },'."\n".
+                      'die den Wahrheitsgehalt der Aussage nicht verändert, und deren Umformung'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot \frac{ \s }{ n }  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x } - 1} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- *( 1 - \frac{ 1 }{ x } *)} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- *( \frac{ x }{ x } - \frac{ 1 }{ x } *)} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- *( \frac{ x - 1 }{ x } *)} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x - 1} *)^{- *( \frac{ 1 }{ x } *)} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot *( n^{\frac{ 1 }{ x }} *)^{x - 2} \cdot \frac{ \s }{ n }  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{\frac{ x - 2 }{ x }} \cdot \frac{ \s }{ n }  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{\frac{ x - 2 }{ x }} \cdot \frac{ \s }{ n^{\frac{ x }{ x }} }  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{- \frac{ x }{ x }} \cdot n^{\frac{ x - 2 }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{- \frac{ 2 }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x } - \frac{ 2 }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'XXX'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot \frac{ \s }{ n^{\frac{ 2 }{ x }} }  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x } - \frac{ 2 }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'zu der Aussage, dass auch der Kehrwert der \lm{ x }-ten Wurzel aus \lm{ n } im Produkt mit der superialen Basis \lm{ \s } ist eine ganze Zahl sein muss,'."\n".
+                      'was wir zeigen wollten.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'XXX Eine einfache und ganz klar erlaubte Division durch \lm{ n } macht aus dem Faktor der Quadratwurzel aus \lm{ n }'."\n".
+                    'den Kehrwert der Quadratwurzel aus \lm{ n }.'."\n".
+                    'Wir können \lm{ \s } problemlos durch \lm{ n } teilen und der Quotient bleibt eine ganze Zahl, die als Faktor'."\n".
+                    'der Quadratwurzel aus \lm{ n } auch nach den gefundenen Regeln definitiv eine ganze Zahl ergibt.'."\n",
+                      'XXX Schauen wir uns einmal an, wie wir über eine einfache Division, die den Term als eine aktual unendliche ganze Zahl belässt, zu einer Gleichung kommen,'."\n".
                     'die in einem Produkt den Kehrwert der \lm{ x }-ten Wurzel aus einer endlichen natürlichen Zahl, größer gleich Zwei,'."\n".
                     'mit der superialen Basis \lm{ \s } enthält:'."\n".
                     ''))),
@@ -1011,6 +1100,30 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x - 1} *)^{- \frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \frac{ \s }{ *( n^{x - 1} *)^{\frac{ 1 }{ x }} }  \in  \mathbb{S}_{N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \s }{ n^{\frac{ x - 1 }{ x }} }  \in  \mathbb{S}_{N}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }} \cdot \frac{ n^{x - 1} \cdot \s }{ n }  \in  \mathbb{S}_{N}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x } - 1} \cdot n^{x - 1} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x } - \frac{ x }{ x }} \cdot n^{x - 1} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 - x }{ x }} \cdot n^{x - 1} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ x - 1 }{ x }} \cdot n^{x - 1} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{x - 1} *)^{- \frac{ 1 }{ x }} \cdot n^{x - 1} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ n^{x - 1} \cdot \s }{ *( n^{x - 1} *)^{\frac{ 1 }{ x }} }  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ n^{x - 1} \cdot \s }{ n^{\frac{ x - 1 }{ x }} }  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \s }{ n^{\frac{ 1 }{ x }} }  \in  \mathbb{S}_{N}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }} \cdot n^{x - 2} \cdot \s  \in  \mathbb{S}_{N}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ x - 2 }{ x }} \cdot \s  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \s }{ n^{\frac{ 1 }{ x }} }  \in  \mathbb{S}_{N}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wir können also tatsächlich die gesuchte Gleichung herleiten.'."\n".
