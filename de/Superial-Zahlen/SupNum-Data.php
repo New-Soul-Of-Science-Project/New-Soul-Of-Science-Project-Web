@@ -258,13 +258,13 @@
         'OM:SupNum:Ueberrationalitaetsvermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Zwei-mal-b-Quadrat-gleich-a-Quadrat' => array( headline_text => 'SN.ÜV.11'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-te-Wurzel-x-ist-a-durch-b-im-Endlichen' => array( headline_text => 'SN.ÜV.49'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-von-m' => array( headline_text => 'SN.ÜV.52'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-der-Primfak-von-m' => array( headline_text => 'SN.ÜV.58'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x' => array( headline_text => 'SN.ÜV.64'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-teilt-a-hoch-x' => array( headline_text => 'SN.ÜV.65'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-Primfaktoren-k_i' => array( headline_text => 'SN.ÜV.68'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz' => array( headline_text => 'SN.ÜV.129'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-te-Wurzel-x-ist-a-durch-b-im-Endlichen' => array( headline_text => 'SN.ÜV.51'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-von-m' => array( headline_text => 'SN.ÜV.54'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-der-Primfak-von-m' => array( headline_text => 'SN.ÜV.60'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x' => array( headline_text => 'SN.ÜV.66'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-teilt-a-hoch-x' => array( headline_text => 'SN.ÜV.67'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-Primfaktoren-k_i' => array( headline_text => 'SN.ÜV.70'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz' => array( headline_text => 'SN.ÜV.131'),
                         
         'OM:SupNum:Ueberrationalitaetsvermutung:Struktur-der-Wurzeln' => array( headline_text => 'Struktur der Wurzeln'/* , headline_text_short => 'XXX'*/),
                         
