@@ -1,0 +1,4 @@
+#!/sbin/openrc-run
+
+command=webhook
+command_args="-port 9001 -hooks $PROJECT_ROOT/deploy/hooks.json &"
