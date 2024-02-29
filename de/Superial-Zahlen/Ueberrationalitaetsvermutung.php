@@ -16,7 +16,7 @@
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Fragen}',
                     '• Wenn nun alle Koeffizienten der algebraischen Zahlen Faktoren von \\lm{ \s } sind, die ganze Zahlen ergeben:',
-                    '– Werden diese dann beim Zählen der ganzen Superial-Zahlen mitgezählt oder nur die rationalen Koeffizienten?',
+                    '– Werden diese dann beim Zählen der ganzen Superial-Zahlen mitgezählt oder nur die rationalen Koeffizienten? Ich denke, sie werden mitgezählt.',
                     '– Anders gefragt: gibt es dann immer noch \\lm{ \frac{ \s }{ 2 \cdot \omega } } rationale Zahlen im Intervall zwischen Null und ausschließlich Eins, oder müssen wir das korrigieren?',
                     ))),
                       
