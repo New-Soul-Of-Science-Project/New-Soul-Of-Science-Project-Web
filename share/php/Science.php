@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 29.01.2024, 22:00h
+  // #: Stand: 16.02.2024, 20:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20240216:  >:  "Sc_f_equation_list": Add possibility to have no label on a formula by setting "label_text => ''"
   //           20240129:  +:  "$Sc_g_equation_replace_ary":  '  :\in  ' -> '\;\;\;:\in\;\;\;' is new.
   //           20240121:  !:  "$Sc_g_Text_replace_preg_ary": Add entry "\lm{}" as short of "\latexmath{}".
   //           20231110:  !:  "$Sc_g_Text_replace_preg_ary": Change entry "_{}" to "__{}".
@@ -1009,7 +1010,8 @@
         }
         echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'; margin-left: 20px;">'."\n";
         {
-          echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
+          if ($To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1] != '')
+            echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
           if (array_key_exists( footnote, $value))
           {
             if (array_key_exists( footnote_num_color, $value))
@@ -1075,7 +1077,8 @@
         //%! echo $offset.'    <td> <span style="color: #A0A0A0">'."\n";
         echo $offset.'    <td> <span style="color: #'.$equationNumber_color.'; margin-left: 20px;">'."\n";
         {
-          echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
+          if ($To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1] != '')
+            echo $offset.'      ('.$To_g_anchor_ary[label_text][$To_g_anchor_ary_dim - 1].')';
           if (array_key_exists( footnote, $value))
           {
             if (array_key_exists( footnote_num_color, $value))

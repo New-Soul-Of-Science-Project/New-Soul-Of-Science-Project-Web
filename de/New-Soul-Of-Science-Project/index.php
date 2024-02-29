@@ -1400,7 +1400,9 @@
                   array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
-                  // #!: Auch auf der Naturphilosophie-der-Zeit-Seite! (OM:NPT:Home)
+                  // #!: Auch auf der NSOSP-Seite! (OM:nSOSp:Home)
+                  // #!: Auch auf der Spannungsspiel des Lebens Seite! (OM:NPT:Home)
+                  // #!: Auch auf der Naturphilosophie-der-Zeit-Seite! (OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik)
                   array( 'text', array( Shape => 'italic', text => array(
                         'Mathematik beginnt dort, \\\\ '."\n".
                         'wo wir das Eine vom Anderen unterscheiden können. \\\\ '."\n".
