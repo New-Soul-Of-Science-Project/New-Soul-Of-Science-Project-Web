@@ -45,8 +45,24 @@
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielrechnungAbleitungMit-s-2',
+                Title => 'Dem sehr kleinen, infinitesimalen, Epsilon eine Struktur aus Primzahlen geben …',
+                TitleVis => 'Dem sehr kleinen, infinitesimalen, Epsilon eine Struktur aus Primzahlen geben:', ParagraphList => array(
+
+                  array( 'text', array( text => array(
+                    'Dem sehr kleinen, infinitesimalen, Epsilon des Limes eine Struktur aus Primzahlen geben.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+
+                    ))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielrechnungAbleitungMit-s-2',
                 Title => 'Entwurf des neuen Beginns der Einleitung …',
                 TitleVis => 'Entwurf des neuen Beginns der Einleitung:', ParagraphList => array(
+
                   array( 'text', array( text => array(
                     'In der Geometrie stoßen wir schnell auf ein fundamentales Problem.'."\n".
                     'Denn wollen wir beispielsweise eine Linie konstruieren oder berechnen, so wird oft leicht dahin gesagt:'."\n".
@@ -217,6 +233,13 @@
                                            
                 'XXX', subline =>
                   '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+
                     ))),
 
                   array( 'text', array( text => array(
