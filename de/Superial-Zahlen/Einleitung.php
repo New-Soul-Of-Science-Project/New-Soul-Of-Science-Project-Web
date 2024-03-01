@@ -49,7 +49,7 @@
                 TitleVis => 'Entwurf des neuen Beginns der Einleitung:', ParagraphList => array(
                   array( 'text', array( text => array(
                     'In der Geometrie stoßen wir schnell auf ein fundamentales Problem.'."\n".
-                    'Denn wollen beispielsweise eine Linie konstruieren und berechnen, so wird oft leicht dahin gesagt:'."\n".
+                    'Denn wollen wir beispielsweise eine Linie konstruieren oder berechnen, so wird oft leicht dahin gesagt:'."\n".
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
@@ -82,8 +82,10 @@
                     'Daher das Wort stapeln.'."\n",
                       'Ein Punkt besitzt aber per Definition keine Ausdehnung.'."\n".
                     'Daher können wir Punkte nicht so stapeln, dass eine Linie gefüllt wird.'."\n".
-                    'Und gleiches gilt auch für all die anderen genannten Objekte:'."\n".
-                    'Wir können Linien ohne Breite nicht zu Flächen stapeln und so fort.'."\n".
+                    'Das gelingt auch dann nicht, wenn wir unendlich viele Punkte nehmen.'."\n".
+                    'Denn diese Art von Unendlichkeit, die Punkte ohne jede Ausdehnung raumgreifend stapeln kann, ist nicht wohldefiniert.'."\n",
+                      'Gleiches gilt auch für all die anderen genannten Objekte:'."\n".
+                    'Wir können Linien ohne jede Breite nicht zu Flächen stapeln und so fort.'."\n".
                     'Auf diese Weise ist also kein Konstruieren einer höheren Dimension aus niedrigeren Dimensionen möglich.'."\n",
                       'Aber was funktioniert dann?'."\n".
                     ''))),
@@ -92,7 +94,7 @@
                 'Ist die Geometrie im Grunde fraktal?', subline =>
                   'Weben oder Netzwerken')),
                   array( 'text', array( text => array(
-                    'Wir können uns zwei Punkte denken, die nicht aufeinander liegen und so eine Richtung vorgeben.'."\n".
+                    'Wir können uns zwei Punkte denken, die nicht aneinander – also nicht aufeinander – liegen und so eine Richtung vorgeben.'."\n".
                     'Nun beginnen wir ein Netz von Punkten zu „weben“, indem wir zwischen beide'."\n".
                     'Punkte, genau in der Mitte, einen weiteren Punkt legen und haben nun drei Punkte in der selben Richtung auf einer Linie.'."\n",
                       'So fahren wir fort und legen jeweils zwischen zwei benachbarte Punkte einen weiteren'."\n".
@@ -135,7 +137,7 @@
                     'Auch dieses ist wieder in Bezug auf die Potenzen der Drei selbstähnlich.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Das komplette Netzwerk aller Primzahlpotenzen aufspannen} \\\\'."\n".
+                  '\\condb{Das komplette Netzwerk aller ganzen Primzahlpotenzen aufspannen} \\\\'."\n".
                     'Dieses Vorgehen können wir nun immer weiter treiben:'."\n".
                     'Strecke wieder um Eins verlängern und durch skalieren überprüfen, ob wir eine neue Primzahl gefunden haben.'."\n".
                     'Dann auch von der ersten Strecke an in die andere Richtung ins Negative immer weiter verlängern.'."\n",
@@ -147,7 +149,10 @@
                 'Immer noch Lückenhaft', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Nehmen wir diese Teilungen der Strecken nur endlich oft vor,'."\n".
+                    'Das geometrische Netzgewebe besteht nun aus den Abständen der Punkte, wobei letzte die Knoten oder Stützen des Gewebes sind.'."\n".
+                    'Es ist also klar, dass dieses Gewebe im Hinblick auf seine Stützpunkte immer Lücken haben wird, selbst dann, wenn die Lücken aktual unendlich klein werden.'."\n".
+                    'Wir können aber vielleicht davon sprechen, dass ein solches Gewebe dann im Endlichen keine Lücken mehr hat.'."\n",
+                      'XXX Nehmen wir diese Teilungen der Strecken nur endlich oft vor,'."\n".
                     'dann haben wir immer noch Lücken endlicher Größe.'."\n",
                       'Wie können wir aber die Lücken schließen?'."\n".
                     ''))),
