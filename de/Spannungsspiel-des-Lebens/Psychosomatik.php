@@ -234,6 +234,18 @@
                       
                 'Care oder Fürsorge – fühlen, mitfühlen, sich kümmern und dabei lernen', subline =>
                   'Der Stein der Weisen')),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\\bold{XXX:}',
+                    '• Der ›Stein der Weisen‹ ist sehr mit dem \\jump[https://de.wikipedia.org/w/index.php?title=Thymos&oldid=229460544]{}{Thymos} verbunden:',
+                    '– Der Thymos, die Lebenskraft, ist ein altgriechisches Konzept und ein Ausdruck für die Gemütslage eines Menschen. Dieser wurde hauptsächlich mit dem \\jump{OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet}{Zwerchfell} (Link von dort hierher setzen ggf.) in Verbindung gebracht. Sehr interessant!',
+                    '– Die Lebenskraft ist ganz offenbar mit der Psychosomatik eng verbunden.',
+                    '– Da die Lebenskraft \\jump[https://de.wikipedia.org/w/index.php?title=Thymus&oldid=241891192]{}{Thymusdrüse}. Diese sitzt beim Menschen hinter dem Brustbein.',
+                    '– Über die Lebenskraft gibt es eine tiefe Verbindung zum Care-Prozess.',
+                    '– Die \\jump{OM:SpaLeb:Psychosomatik:Stolze-Brust}{stolze geschwellte Brust} ist ein Ausdruck der aktivierten Lebenskraft.',
+                    '– Nach Alexander Stier galt der Thymos, verortet im Zwerchfell, als Sitz der Götter in uns oder als körperlicher Ort, der mit den Göttern verbunden ist oder über den wir Kontakt zu den Göttern haben oder aufnehmen: \\jump[https://www.youtube.com/watch?v=ASuc7c7D58c]{}{Alexander Stier – Das geheime Wissen über das Immunsystem (Ein olympisches Mysterium)} (ich teile sicherlich nicht alle Meinungsäußerungen von Alexander Stier in diesem Video)',
+                    ))),
+                      
                   array( 'text', array( text => array(
                     'In meinen Augen ist der innere \\jump{OM:NPYo:Stein-der-Weisen:Stein-der-Weisen}{›Stein der Weisen‹} tief mit unserer Psychosomatik verbunden.'."\n".
                     'Er ist das Symbol für das Sich-Kümmern; für die innere und äußere Fürsorge, für die Liebe und Leidenschaft; für die emotionale und handelnde Verbundenheit'."\n".

@@ -602,7 +602,7 @@
                                                          text => '\\color{*Bearb}{(Die Kugel sollte entsprechend der Zirbeldrüse die Form einer Zirbelnuss, eines Pinienzapfens, des Zapfens der Zirbelkiefer, bekommen, siehe Ordner Zirbeldrüse.)} Der Hermesstab mit seinen Flügeln steht für Heilung, Weisheit, und wie ich vermute für Erleuchtung und die Beflügelung der Seele und des Geistes durch ein polares Yin-Yang-Prinzip. Im Hermes Trismegistos kommt durch die Verschmelzung des griechischen Gottes Hermes mit dem ägyptischen Gott Thot auch das Wissen und die Philosophie in seine Bedeutung.');
   
   $NPYo_g_figure_ary_HerzChakraHerzkreisAtmung   = array( fig_file_name => 'Naturphilosophie-Yoga/Herz-Chakra-Herzkreislauf-Atmung-v01', fig_alt_description => 'Herz-Chakra, Herzkreislauf, Atmung', width => '380px', height => '500px', name => 'set local!',
-                                                         text => 'Der Herzkreislauf ist das mehr unbewusste innere Care (weiblicher Aspekt) und die Atmung ist das mehr bewusste innere Care (männlicher Aspekt).');
+                                                         text => 'Der Herzkreislauf ist das mehr unbewusste innere Care, die innere Versorgung, (weiblicher Aspekt) und die Atmung ist das mehr bewusste innere Care, mit Versorgungsbrücke nach Außen, (männlicher Aspekt).');
   
   $NPYo_g_figure_ary_HerzChakraShivaShakti       = array( fig_file_name => 'Naturphilosophie-Yoga/Herz-Chakra-Shiva-Shakti-v01', fig_alt_description => 'Herz-Chakra, Shiva-Shakti', width => '380px', height => '500px', name => 'set local!',
                                                          text => 'XXX');
