@@ -1587,6 +1587,19 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
                       
+                'Erklärung und Verständnis durch das Primzahl-Spektrum der natürlichen Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wenn wir auf die Primzahlen innerhalb der natürlichen Zahlen gucken, dann ist nach Raimund Welschs'."\n".
+                    'Hinweis jede \lm{ 2 }-te Zahl ganzzahlig durch \lm{ 2 } teilbar und'."\n".
+                    'jede \lm{ 3 }-te Zahl ganzzahlig durch \lm{ 3 }, jede \lm{ 5 }-te durch \lm{ 5 } und'."\n".
+                    'schließlich jede \lm{ p }-te Zahl ganzzahlig durch \lm{ p }, für alle endlichen Primzahlen.'."\n",
+                      'Jede größere Potenz einer der Primzahlen, wie bei der \lm{ 2 } die \lm{ 4 } oder \lm{ 8 }, liegt im gleichen Spektrum,'."\n".
+                    'auf dem gleichen Raster, nur mit gröberer Frequenz oder Dichte; trägt also nichts feineres dazu bei.'."\n".
+                    'Daher ist es logisch, dass die Anzahl der natürlichen Zahlen nur durch jede einfache Potenz jeder endlichen Primzahl ganzzahlig teilbar ist.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                      
                 'Das Gesamtspektrum der natürlichen Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
