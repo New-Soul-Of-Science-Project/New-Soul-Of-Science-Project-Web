@@ -73,7 +73,11 @@
         'OM:SupNum:Ableitungen-Integrale:Integration' => array( headline_text => 'Die Integration'/* , headline_text_short => 'XXX'*/),
 
         'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion' => array( headline_text => 'Die eulersche Zahl \\latexmath{ \e } und ihre \\latexmath{ \e }-Funktion in der Differentialrechnung' , headline_text_short => 'Die eulersche Zahl e und ihre e-Funktion in der Differentialrechnung'),
+          'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem' => array( headline_text => 'SN.AbIn.EZ.15'),
+          'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:Equ-e_s-hoch-x-Def-durch-s' => array( headline_text => 'SN.AbIn.EZ.19'),
+          'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:Equ-e_s-hoch-x-Def-durch-omega' => array( headline_text => 'SN.AbIn.EZ.20'),
           'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:SumBinominalkoe' => array( headline_text => 'Die Summen der einzelnen Spalten der Binomialkoeffizienten'/* , headline_text_short => 'XXX'*/),
+          'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:Equ-e_s-gleich-Stellenwertsystem' => array( headline_text => 'SN.AbIn.EZ.81'),
           'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:BeispielrechnungAbleitungMit-s-2' => array( headline_text => 'Beispielrechnung zur Ableitung mit \\latexmath{ s^2 }'/* , headline_text_short => 'XXX'*/),
 
         'OM:SupNum:Ableitungen-Integrale:Die-Quadratur-des-Kreises' => array( headline_text => 'Die Quadratur des Kreises – von der eulerschen Zahl \\latexmath{ \e } zu \\latexmath{ \pi }' , headline_text_short => 'Die Quadratur des Kreises – von der eulerschen Zahl e zu π'),

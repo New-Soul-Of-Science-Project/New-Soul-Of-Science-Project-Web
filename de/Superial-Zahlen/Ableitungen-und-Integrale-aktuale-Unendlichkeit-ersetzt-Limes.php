@@ -299,8 +299,14 @@
                     )),
 
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\\bold{XXX}',
-                    '• Meine Herleitung der \\latexmath{ \e }-Funktion mit Hilfe von Superial-Zahlen stammt aus dem Jahr 2001: siehe Datei "superial zahlen (26).pdf".',
+                    '• Meine Herleitung der \\lm{ \e }-Funktion mit Hilfe von Superial-Zahlen stammt aus dem Jahr 2001: siehe Datei "superial zahlen (26).pdf".',
+                    '\\bold{Ideen}',
+                    '• Wie leiten wir \\lm{ \e } mit Integralen her?',
+                    '\\bold{Transzendenz von \\lm{ \e }}',
+                    '• Was zur Transzendenz von \\lm{ \e } im Text sagen.',
+                    '• Mit welchen Rechenoperationen kann man die Zahl \\lm{ \e } zu Null machen? Mit diesem Thema beschäftigt sich die Algebra, wie wir auch einem Video von Numberphile entnehmen können: \\jump[https://www.youtube.com/watch?v=seUU2bZtfgM&t=620s]{}{Transcendental Numbers - Numberphile}',
+                    '– Mit unserer Definition von \\lm{ \e } als \\lm{ \e_{\s}^{x} = *( 1 + \frac{ 1 }{ \s } *)^{x \cdot \s} } in Formel \\jumpname{OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:Equ-e_s-hoch-x-Def-durch-s} erhalten wir für \\lm{ \e_{\s} } den Ausdruck \\lm{ \e_{\s} = *( 1 + \frac{ 1 }{ \s } *)^{\s} }. Über diesen sehen wir leicht, wie wir \\lm{ \e } zu Null machen können. Laut Video soll so etwas bisher nicht bekannt sein.',
+                    '⋅ Allerdings bleibt es dabei, dass \\lm{ \e } transzendent ist, weil es nicht durch algebraische Operationen zu Null gemacht werden kann, ohne aktual unendliche Symbole zu nutzen, und weil es nicht einmal zu den Superial-Zahlen erster Ordnung gehört, wegen seiner Summanden bis herunter zu \\lm{ \s^{-\s} }, siehe Formel \\jumpname{OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:Equ-e_s-gleich-Stellenwertsystem}. Dies vielleicht auf der Seite \\italic{\\jumpname{OM:SupNum:Eigenschaften}} zeigen.',
                     ))),
 
                   array( 'text', array( text => array(
@@ -313,7 +319,7 @@
                       'Die Definition unserer Ableitung finden wir in Formel \\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }',
                                           label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
                     ))),
@@ -321,7 +327,7 @@
                       'Soll eine Funktion nun ihre eigene Ableitung sein, dann gilt:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f\'(x)  =  f(x)  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot {․〈1〉}  =  f(〈x〉․〈1〉) - f(x)  }'),
@@ -337,14 +343,14 @@
                       'Wir erraten also'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f(x)  =  〈1〉․〈1〉^{〈x〉_{1}}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'und zeigen durch Einsetzen der letzten in die vorletzte Formel, dass unsere Vermutung'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  〈1〉․〈1〉^{〈x〉_{1}} \cdot 〈1〉․〈1〉  =  〈1〉․〈1〉^{〈〈x〉․\,〈1〉〉_{1}}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{〈x〉_{1} + 1}  =  〈1〉․〈1〉^{〈〈x〉․\,〈1〉〉_{1}}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{〈x〉〈1〉.}  =  〈1〉․〈1〉^{〈x〉〈1〉․}  }'),
@@ -357,14 +363,14 @@
                       'Art gibt, die dies auch erfüllen, nämlich für alle \\latexmath{ y }:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f_{y}(x)  =  〈1〉․〈1〉^{〈x〉〈y〉.}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Daher legen wir zusätzlich fest, dass'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f_{y}(0)  =  1  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  y  =  0  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  〈1〉․〈1〉^{〈x〉_{1}}  }'),
@@ -390,8 +396,9 @@
                     'haben, die sich aus der neuen Definition der Ableitung unmittelbar ergibt:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  \e_{\s}^{x}  =  〈1〉․〈1〉^{〈x〉_{1}}  \;\;}  }'),
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \e_{\s}^{x}  =  〈1〉․〈1〉^{〈x〉_{1}}  \;\;}  }',
+                                          label_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem', label_text => '\\name{OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Ich nenne ihre Basis \\latexmath{ \e_\s }, weil ich hier ganz genau abgrenzen möchte.'."\n".
@@ -401,7 +408,7 @@
                       'Wenig verwunderlich ist diese Formel in Form der Limes-Definition bekannt:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Exponentialfunktion:2022}, Definition. \\\\ Vgl. \\cite{wiki:EulerscheZahl:2023}, Definition.}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{  \e  :=  \lim\limits_{n \rightarrow +\infty}{ *( 1 + \frac{ 1 }{ n } *)^{n} }  }'),
                       array( display => 'off', latex => '{  \Rightarrow  \e^{x}  =  *( \lim\limits_{n \rightarrow +\infty}{ *( 1 + \frac{ 1 }{ n } *)^{n} } *)^{x}  }'),
                       array( display => 'on',  latex => '{  \e^{x}  =  \lim\limits_{n \rightarrow +\infty}{ *( 1 + \frac{ 1 }{ n } *)^{x \cdot n} }  }',
@@ -415,9 +422,11 @@
                     '\\latexmath{ \omega } aus, erhalten wir:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  *( 1 + \frac{ 1 }{ \s } *)^{x \cdot \s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  *( 1 + \frac{ 1 }{ \omega^{\omega} } *)^{x \cdot \omega^{\omega}}  }'),
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  *( 1 + \frac{ 1 }{ \s } *)^{x \cdot \s}  }',
+                                          label_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:Equ-e_s-hoch-x-Def-durch-s', label_text => '\\name{OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:Equ-e_s-hoch-x-Def-durch-s}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  *( 1 + \frac{ 1 }{ \omega^{\omega} } *)^{x \cdot \omega^{\omega}}  }',
+                                          label_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:Equ-e_s-hoch-x-Def-durch-omega', label_text => '\\name{OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:Equ-e_s-hoch-x-Def-durch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Wir sehen, dass wir die \\latexmath{ \e }-Funktion ganz fundamental mit \\latexmath{ \omega } durch die vollständige Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
@@ -427,16 +436,16 @@
                     'führen wir die \\latexmath{ \e }-Funktion auf die Primzahlen zurück:'."\n",
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \omega  =  \prod_{\forall p \in \mathbb{P}}  p  }',
                                           label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \omega  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
                                           label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \\\ \qquad\;\, *( 1 + \frac{ 1 }{ (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots} } *)^{x \cdot (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \\\ \qquad *( 1 + \frac{ 1 }{ (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots} } *)^{x \cdot (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots}}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dies ist in meinen Augen etwas sehr besonderes und ganz konkret und hat damit einen großen Mehrwert'."\n".
-                    'gegenüber der Limes-Definition, zusätzlich zum Perspektivwechsel, wie wir gleich sehen werden.'."\n".
+                    'Dies ist in meinen Augen etwas sehr besonderes, ganz konkret und hat damit eine andere Qualität als'."\n".
+                    'und ergänzt so die Limes-Definition, zusätzlich zum Perspektivwechsel, wie wir gleich sehen werden.'."\n".
                     'Dadurch wird transparent, wie sich die \\latexmath{ \e }-Funktion und damit die Zahl \\latexmath{ \e } im und aus dem Unendlichen ergibt.'."\n",
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:XXX', text =>
@@ -447,7 +456,7 @@
                     'Berechnen wir nun spaßeshalber die Funktionswerte im infinitesimalen Bereich, dann erkennen wir das Pascalsche Dreieck:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{s}^{․\,〈x〉}  =  〈1〉․〈1〉^{〈․\,〈x〉〉_{1}}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s}^{․\,〈x〉}  =  〈1〉․〈1〉^{x}  }'),
                       array( display => 'on',  latex => '{  \e_{s}^{0}  =  1  }'),
@@ -466,7 +475,7 @@
                     'die wir einmal beispielhaft einsetzen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{s}^{0}  =  *( \begin{array}{llll} 0 \\\ 0 \end{array} *)  }'),
                       array( display => 'on',  latex => '{  \e_{s}^{․\,〈1〉}  =  *〈 *( \begin{array}{llll} 1 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 1 \\\ 1 \end{array} *) *〉  }'),
                       array( display => 'on',  latex => '{  \e_{s}^{․\,〈2〉}  =  *〈 *( \begin{array}{llll} 2 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 2 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 2 \\\ 2 \end{array} *) *〉  }'),
@@ -478,7 +487,7 @@
                     'beschreiben:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \e_{s}^{․\,〈n〉}  =  \sum_{ \forall k \in [0, n]_{\mathbb{N}} } *( \begin{array}{llll} n \\\ k \end{array} *) \cdot s^{-k}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -486,9 +495,14 @@
                     'in einer Nebenrechnung.'."\n".
                     ''))),
 
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    '• Nachfolgenden Einschub \\jumpname{OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:SumBinominalkoe} verschieben in den Abschnitt \\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen}?',
+                    ))),
+
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:SumBinominalkoe',
                 Title => 'Die Summen der einzelnen Spalten der Binomialkoeffizienten …',
                 TitleVis => 'Die Summen der einzelnen Spalten der Binomialkoeffizienten:', ParagraphList => array(
+
                   array( 'text', array( text => array(
                     'In dieser Rechnung wollen wir die Summen der Spalten der Binomialkoeffizienten des Pascalschen Dreiecks'."\n".
                     'berechnen.'."\n".
@@ -497,7 +511,7 @@
                     'der über ihm gelegenen Zeile als Summe ergibt:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Binomialkoeffizient:2023}, Rekursive Darstellung und Pascalsches Dreieck.}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \begin{array}{llll} n + 1 \\\ k + 1 \end{array} *)  =  *( \begin{array}{llll} n \\\ k \end{array} *) + *( \begin{array}{llll} n \\\ k + 1 \end{array} *)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n + 1 \\\ k \end{array} *)  =  *( \begin{array}{llll} n \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n \\\ k \end{array} *)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ k \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 1 \\\ k \end{array} *)  }'),
@@ -506,7 +520,7 @@
                     'Diese Formel können wir durch Rekursion weiter entwickeln'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ k \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ k - 1 \end{array} *) + *( *( \begin{array}{llll} n - 2 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ k \end{array} *) *)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ k \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ k - 1 \end{array} *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\;\;\, + *( \begin{array}{llll} n - 3 \\\ k \end{array} *)  }'),
                     ))),
@@ -516,7 +530,7 @@
                       'Der erste Summand der Null ist, liegt dann bei Zeile \\latexmath{ k - 1 } und Spalte \\latexmath{ k }, wie wir sehen,'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ k \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ k - 1 \end{array} *) + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\;\; \cdots + *( \begin{array}{llll} k - 1 \\\ k - 1 \end{array} *) + *( \begin{array}{llll} k - 1 \\\ k \end{array} *)  \;\;,  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -525,7 +539,7 @@
                       'Der erste Summand der Null ist, liegt dann bei Zeile \\latexmath{ k - 1 } und Spalte \\latexmath{ k }, wie wir sehen,'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 2 \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ 1 \end{array} *) + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\; \cdots + *( \begin{array}{llll} 1 \\\ 1 \end{array} *) + *( \begin{array}{llll} 1 \\\ 2 \end{array} *)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ 2 \end{array} *)  =  *( \begin{array}{llll} n - 1 \\\ 1 \end{array} *) + *( \begin{array}{llll} n - 2 \\\ 1 \end{array} *) + *( \begin{array}{llll} n - 3 \\\ 1 \end{array} *) + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\; \cdots + *( \begin{array}{llll} 1 \\\ 1 \end{array} *) + 0  \;\;,  }'),
                     ))),
@@ -533,7 +547,7 @@
                     'und daher bricht die Summe dann ab, sodass wir sie folgendermaßen ganz allgemein mit'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} n \\\ k \end{array} *)  =  \sum_{ \forall m \in [k - 1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ k - 1 \end{array} *)  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -541,7 +555,7 @@
                       'Die Summe der \\latexmath{ 0 }-ten Spalte ist schlichtweg:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 0 \end{array} *)  =  1  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -550,7 +564,7 @@
                       'Die Summe der \\latexmath{ 1 }-ten Spalte ist dann das Zählen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 1 \end{array} *)  =  \sum_{ \forall m \in [0, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 0 \end{array} *)  }'),
                       array( display => 'on',  latex => '{  \sum_{ \forall m \in [0, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 0 \end{array} *)  =  [ 0_{-1} \,+ \,]\, 1_{0} + 1_{1} + 1_{2} + 1_{3} + \cdots + 1_{n - 1}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [0, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 0 \end{array} *)  =  n  }'),
@@ -562,7 +576,7 @@
                     'und diese können wir geschlossen ausdrücken mit:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 2 \end{array} *)  =  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  }'),
                       array( display => 'on',  latex => '{  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  [ 0_{0} \,+ \,]\, 1_{1} + 2_{2} + 3_{3} + 4_{4} + 5_{5} + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\;\; \cdots + m_{n - 1}  }'),
                       array( display => 'on',  latex => '{  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  [ 0_{0} \,+ \,]\, 1_{1} + 2_{2} + 3_{3} + 4_{4} + 5_{5} + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad \cdots + (n - 1)_{n - 1}  }'),
@@ -576,7 +590,7 @@
                     'und diese können wir geschlossen ausdrücken mit:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 3 \end{array} *)  =  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  }'),
                       array( display => 'on',  latex => '{  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  [ 0_{1} \,+ \,]\, 1_{2} + 3_{3} + 6_{4} + 10_{5} + 15_{6} + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad \cdots + *( \frac{ m^{2} - m }{ 2 } *)_{n - 1}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  *[ *( \frac{ 1^{2} - 1 }{ 2 } *)_{1} \,+ \,*]\, *( \frac{ 2^{2} - 2 }{ 2 } *)_{2} \\\ \qquad\qquad\qquad\qquad\qquad\quad\; + *( \frac{ 3^{2} - 3 }{ 2 } *)_{3} + *( \frac{ 4^{2} - 4 }{ 2 } *)_{4} \\\ \qquad\qquad\qquad\qquad\qquad\quad\; + *( \frac{ 5^{2} - 5 }{ 2 } *)_{5} + *( \frac{ 6^{2} - 6 }{ 2 } *)_{6} + \cdots \\\ \qquad\qquad\qquad\qquad\qquad\quad\; \cdots + *( \frac{ m^{2} - m }{ 2 } *)_{n - 1}  }'),
@@ -588,7 +602,7 @@
                     'Die Summe der ersten \\latexmath{ x } Quadratzahlen können wir folgendermaßen ausdrücken:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:QuadratischePyramidalzahl:2021}. \\\\ Vgl. \\cite{wiki:GaussscheSummenformel:2023}, Verwandte Summen.}'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  1^{2}_{1} + 2^{2}_{2} + 3^{2}_{3} + 4^{2}_{4} + 5^{2}_{5} + 6^{2}_{6} + \cdots x^{2}_{x}  }'),
                       array( display => 'on',  latex => '{  =  \frac{ x \cdot (x + 1) \cdot (2 x + 1) }{ 6 }  }'),
                       array( display => 'on',  latex => '{  =  \frac{ (x^{2} + x) \cdot (2 x + 1) }{ 6 }  }'),
@@ -599,7 +613,7 @@
                     'Hierin können wir nun \\latexmath{ x } durch \\latexmath{ n - 1 } ersetzen, um das Ergebnis weiter zu nutzen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \frac{ 2 x^{3} + 3 x^{2} + x }{ 6 }  }'),
                       array( display => 'on',  latex => '{  =  \frac{ 2 \cdot (n - 1)^{3} + 3 \cdot (n - 1)^{2} + (n - 1) }{ 6 }  }'),
                       array( display => 'on',  latex => '{  =  \frac{ 2 \cdot (n^{3} - 3 n^{2} + 3 n - 1) + 3 \cdot (n - 1)^{2} + (n - 1) }{ 6 }  }'),
@@ -612,7 +626,7 @@
                     'und für die Reihe der natürlichen Zahlen die Gaußsche Summe:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ 1 }{ 2 } \cdot *( *( \frac{ 2 n^{3} - 3 n^{2} + n }{ 6 } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\;\; - *( \frac{ (n - 1)^{2} + (n - 1) }{ 2 } *) *)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ 1 }{ 2 } \cdot *( *( \frac{ 2 n^{3} - 3 n^{2} + n }{ 6 } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\, - *( \frac{ n^{2} - n }{ 2 } *) *)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \frac{ 1 }{ 2 } \cdot *( *( \frac{ 2 n^{3} - 3 n^{2} + n }{ 6 } *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\;\, - *( \frac{ 3 n^{2} - 3 n }{ 6 } *) *)  }'),
@@ -625,6 +639,7 @@
                     'Potenz nach und nach die Glieder der Taylorreihe\\color{*Bearb}{(Verweis)} ergeben,'."\n".
                     'die summiert zur Eulerschen Zahl \\latexmath{ \e } führen.'."\n".
                     ''))),
+
                     ))),
 
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:XXX', text =>
@@ -641,11 +656,12 @@
                     'des \\jump{*SupNum:Stellenwertsystem-Schreibweise}{superialen Stellenwertsystems} statt:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{\s}  =  \e_{\s}^{1}  =  \e_{\s}^{․\,〈\s〉}  =  〈1〉․〈1〉^{\s}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 *( \begin{array}{llll} \s \\\ 0 \end{array} *) *〉․\,*〈 *( \begin{array}{llll} \s \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 3 \end{array} *) *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 *( \begin{array}{llll} \s \\\ \s - 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s - 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s \end{array} *) *〉_{-\s}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 *〉․\,*〈 \s *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \s *〉*〈 1 *〉_{-\s}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }',
+                                          label_name => 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:Equ-e_s-gleich-Stellenwertsystem', label_text => '\\name{OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion:Equ-e_s-gleich-Stellenwertsystem}', label_incr => true),
                     ))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielrechnungAbleitungMit-s-2',
@@ -663,14 +679,14 @@
                       'und ändern die dortige Differenz von \\latexmath{ s } auf \\latexmath{ s^2 }:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(〈x〉․〈0〉〈1〉) - f(x) }{ ․〈0〉〈1〉 }  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Soll eine Funktion nun ihre eigene Ableitung sein, dann gilt:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f\'(x)  =  f(x)  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  \frac{ f(〈x〉․〈0〉〈1〉) - f(x) }{ ․〈0〉〈1〉 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x) \cdot {․〈0〉〈1〉}  =  f(〈x〉․〈0〉〈1〉) - f(x)  }'),
@@ -686,14 +702,14 @@
                       'Wir erraten also'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f(x)  =  〈1〉․〈0〉〈1〉^{〈x〉_{2}}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'und zeigen durch Einsetzen der letzten in die vorletzte Formel, dass unsere Vermutung'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  〈1〉․〈0〉〈1〉^{〈x〉_{2}} \cdot 〈1〉․〈0〉〈1〉  =  〈1〉․〈0〉〈1〉^{〈〈x〉․\,〈0〉〈1〉〉_{2}}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈0〉〈1〉^{〈x〉_{2} + 1}  =  〈1〉․〈0〉〈1〉^{〈〈x〉․\,〈0〉〈1〉〉_{2}}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈0〉〈1〉^{〈x〉〈0〉〈1〉.}  =  〈1〉․〈0〉〈1〉^{〈x〉〈0〉〈1〉․}  }'),
@@ -706,14 +722,14 @@
                       'Art gibt, die dies auch erfüllen, nämlich für alle \\latexmath{ y }:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f_{y}(x)  =  〈1〉․〈0〉〈1〉^{〈x〉〈0〉〈y〉.}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Daher legen wir zusätzlich fest, dass'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f_{y}(0)  =  1  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  y  =  0  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  〈1〉․〈0〉〈1〉^{〈x〉_{2}}  }'),
@@ -727,7 +743,7 @@
                     'Auf die Weise ergibt sich für die \\latexmath{ \e }-Funktion:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{s^{2}}^{x}  =  〈1〉․〈0〉〈1〉^{〈x〉_{2}}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -736,7 +752,7 @@
                       'Berechnen wir nun spaßeshalber die Funktionswerte im infinitesimalen Bereich, dann erkennen wir das Pascalsche Dreieck:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{s^{2}}^{〈x〉_{-2}}  =  〈1〉․〈0〉〈1〉^{〈〈x〉_{-2}〉_{2}}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s^{2}}^{〈x〉_{-2}}  =  〈1〉․〈0〉〈1〉^{x}  }'),
                       array( display => 'on',  latex => '{  \e_{s^{2}}^{0}  =  1  }'),
@@ -755,7 +771,7 @@
                     'des superialen Stellenwertsystems statt:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{s^{2}}  =  \e_{s^{2}}^{1}  =  \e_{s^{2}}^{〈s^{2}〉_{-2}}  =  〈1〉․〈0〉〈1〉^{s^{2}}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 *( \begin{array}{llll} \s^{2} \\\ 0 \end{array} *) *〉․\,*〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ 1 \end{array} *) *〉*〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ 2 \end{array} *) *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\; *〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ 3 \end{array} *) *〉\cdots \\\ \qquad\qquad\qquad\; \cdots *〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ \s^{2} - 2 \end{array} *) *〉*〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ \s^{2} - 1 \end{array} *) *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\; *〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ \s^{2} \end{array} *) *〉_{-\s^{2}}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 *〉․\,*〈 0 *〉*〈 \s^{2} *〉*〈 0 *〉 \\\ \qquad\qquad\qquad\qquad\;\;\, *〈 \frac{ \s^{4} - \s^{2} }{ 2 } *〉*〈 0 *〉*〈 \frac{ \s^{6} - 3 \s^{4} + 2 \s^{2} }{ 6 } *〉\cdots \\\ \qquad\qquad\qquad\quad\;\;\, \cdots *〈 \frac{ \s^{6} - 3 \s^{4} + 2 \s^{2} }{ 6 } *〉*〈 0 *〉*〈 \frac{ \s^{4} - \s^{2} }{ 2 } *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\; *〈 0 *〉*〈 \s^{2} *〉*〈 0 *〉*〈 1 *〉_{-\s^{2}}  }'),
@@ -773,7 +789,7 @@
                     'zur Eulerschen Zahl \\latexmath{ \e } ergibt.'."\n",
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.EZ', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 \sum_{ \forall k \in \mathbb{N} } \frac{ 1^{k} }{ k! } *〉․ \\\ \qquad\qquad\qquad\qquad *〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }'),
                     ))),
                   array( 'text', array( text => array(
