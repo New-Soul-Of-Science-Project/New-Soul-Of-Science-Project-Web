@@ -44,7 +44,7 @@
                     '• Das Pascal-Sierpinski-Dreieck ist eine Geometrie, in der Primzahlen eine außergewöhnliche Rolle spielen.\\footnote{Vgl. \\cite{Plichta:GottesGeheimeFormel:1995}, S. 263ff., 271ff. 306ff.. \\\\ Internet: \\\\ Vgl. \\jump[https://de.wikipedia.org/w/index.php?title=Sierpinski-Dreieck&oldid=179105092#Zusammenhang_mit_dem_Pascalschen_Dreieck]{}{Wikipedia, Sierpinski-Dreieck, Zusammenhang mit dem Pascalschen Dreieck}.}',
                     ))),
                       
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielrechnungAbleitungMit-s-2',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Einleitung:Vortext:XXX',
                 Title => 'Dem sehr kleinen, infinitesimalen, Epsilon eine Struktur aus Primzahlen geben …',
                 TitleVis => 'Dem sehr kleinen, infinitesimalen, Epsilon eine Struktur aus Primzahlen geben:', ParagraphList => array(
 
@@ -59,7 +59,7 @@
 
                     ))),
                       
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ableitungen-Integrale:Ableitung:BeispielrechnungAbleitungMit-s-2',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Einleitung:Vortext:XXX',
                 Title => 'Entwurf des neuen Beginns der Einleitung …',
                 TitleVis => 'Entwurf des neuen Beginns der Einleitung:', ParagraphList => array(
 
@@ -1489,7 +1489,7 @@
                     'der algebraischen Zahlen erweitern könnten.'."\n".
                     'Diese dann von uns überrationale Zahlen genannten irrationalen Zahlen würden nur aus endlichen Zahlen'."\n".
                     'definiert werden können.'."\n",
-                      'Bezüglich der transzendenten Zahlen zeigen wir allerdings exemplarisch, dass die \\jump{OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion}{Eulersche Zahl}\\footnote{\\const{SupNum_g_footnote_text_EulerscheZahl}}'."\n".
+                      'Bezüglich der transzendenten Zahlen zeigen wir allerdings exemplarisch, dass die \\jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Eulersche Zahl}\\footnote{\\const{SupNum_g_footnote_text_EulerscheZahl}}'."\n".
                     '\\latexmath{ \e } unendlich kleine aktual unendliche Summanden enthält, die nicht verschwinden können.'."\n".
                     'Dies gelingt uns mit der hier eingangs formulierten Definition der Ableitung durch die Superial-Zahlen.'."\n".
                     'Demnach ist \\latexmath{ \e } nicht einmal eine Superial-Zahl der hier vorgestellten 1. Ordnung,'."\n".
@@ -1497,7 +1497,7 @@
                       'Es stellen sich in meinen Augen die Fragen:'."\n",
                       'Gehört die transzendente Zahl \\latexmath{ \e } nach der neuen Erkenntnis zu den reellen Zahlen,'."\n".
                     'wenn sie doch nicht verschwindende unendlich kleine aktual unendliche Summanden enthält?'."\n",
-                      'Gehören gegebenenfalls auch noch andere transzendente Zahlen, \\jump{OM:SupNum:Ableitungen-Integrale:Die-Quadratur-des-Kreises}{wie \\latexmath{ \pi }},'."\n".
+                      'Gehören gegebenenfalls auch noch andere transzendente Zahlen, \\jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Quadratur-des-Kreises}{wie \\latexmath{ \pi }},'."\n".
                     'dann nicht zu den reellen Zahlen?'."\n",
                       'Diese und noch weitere Überlegungen führen uns schließlich zur Kontinuumshypothese.'."\n".
                     ''))),

@@ -8,7 +8,7 @@
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Ableitungen-Integrale'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Eulersche-Zahl-e-Funktion'); ?>
 
 	
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
@@ -555,7 +555,7 @@
                   array( 'text', array( text => array(
                     'Hinsichtlich der transzendenten Zahlen möchte ich am Beispiel der Eulerschen Zahl \\latexmath{ \e_\s } zeigen,'."\n".
                     'dass sich hier weitere Fragezeichen ergeben:'."\n",
-                      'Im Abschnitt \\italic{\\jumpname{OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion}}'."\n".
+                      'Im Abschnitt \\italic{\\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion}}'."\n".
                     'kommen wir zu dem Schluss, dass die Eulersche Zahl keine irrationale Zahl ist, nicht einmal eine'."\n".
                     'Superial-Zahl der auf dieser Seite definierten 1. Ordnung, weil sie unweigerlich'."\n".
                     'aktual unendlich kleine Summanden enthält, die nicht Null werden können.'."\n",
