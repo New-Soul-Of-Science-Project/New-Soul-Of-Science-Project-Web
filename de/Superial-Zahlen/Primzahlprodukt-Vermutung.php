@@ -15,7 +15,7 @@
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Verbesserungen der Seite}',
-                    '• Nach dem Beweis der \\italic{\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} die Menge der Koeffizienten der Superial-Zahlen von den rationalen Zahlen \\lm{ \mathbb{Q} } zu den algebraischen Koeffizienten \\lm{ \mathbb{A}_{R} } ändern.',
+                    '• Nach dem Beweis der \\italic{\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} die Menge der Koeffizienten der Superial-Zahlen von den rationalen Zahlen \\lm{ \mathbb{Q} } zu den algebraischen Koeffizienten \\lm{ \mathbb{A}_{\R} } ändern.',
                     '• Den Ausdruck ›Erzeugungskombinatorik‹ auch im oder nach dem Beweis wieder aufgreifen.',
                     '\\bold{Warum könnte die Primzahlprodukt-Vermutung stimmen?}',
                     '• Die Primzahlen werden unter den sehr großen natürlichen Zahlen extrem selten.',
