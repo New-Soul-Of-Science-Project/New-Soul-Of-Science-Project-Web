@@ -290,12 +290,38 @@
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '\\bold{XXX}',
-                    '• XXX',
+                    // '\\bold{XXX}',
+                    // '• XXX',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
+                    'Es lässt sich auch eine Menge \lm{ \mathbb{S}_{P} } der superialen Primzahlen definieren.'."\n",
+                      'Dies sind alle \\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen}, die'."\n".
+                    'nur durch Eins und durch sich selber ganzzahlig teilbar sind.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Es existiere also die Menge'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Form.P', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \exists \mathbb{S}_{P}\!: *( \forall x \in \mathbb{S}_{N}\!: *( \forall n \in \mathbb{S}_{N}^{+} \setminus *\{ 1, x *\} *) *[ \lnot *( x \perp n *) *] \\\ \qquad\qquad\qquad\qquad\qquad\qquad\quad  \Rightarrow  x \in \mathbb{S}_{P} *)  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'aller aktual unendlichen superialen Primzahlen.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Wenn \\jump{OM:SupNum:Ueberrationalitaetsvermutung}{\lm{ \mathbb{A}_{R} } die Menge der algebraischen Koeffizienten} ist,'."\n".
+                    'dann gehören dazu auch:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Form.P', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{R} *) *( \forall i \in \mathbb{N}^{+} *)  *[  a \cdot \s^{i} \pm 1  \in  \mathbb{S}_{P}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
