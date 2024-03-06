@@ -164,7 +164,7 @@
       keywords => '',
       text_titel_h1 => 'Die eulersche Zahl e und ihre Exponentialfunktion',
       text_titel_short => 'Die eulersche Zahl e und ihre Exponentialfunktion',
-      text_undertitel_h2 => 'Eine neue Definition von e und ihrer Funktion über aktual unendliche Zahlen',
+      text_undertitel_h2 => 'Eine neue Definition von e und ihrer Exponentialfunktion über aktual unendliche Zahlen',
       text_titel_discr_h3 => 'Die transzendente Zahl e stellt sich als Zahl heraus, die so aktual unendlich kleine Summanden hat, dass sie nicht einmal zu den Superial-Zahlen erster Ordnung gehört',
       jump_ary => array(
         'OM:SupNum:Eulersche-Zahl-e-Funktion:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),

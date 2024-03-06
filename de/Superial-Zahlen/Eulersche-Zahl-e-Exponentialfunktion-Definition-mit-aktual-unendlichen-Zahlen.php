@@ -38,7 +38,7 @@
                     ''))),
 
                   array( 'text', array( text => array(
-                    'Wir können tatsächlich recht einfach erkennen, welche Funktion ihrer eigenen Ableitung gleich ist.'."\n".
+                    'Wir können tatsächlich recht einfach erkennen, welche Funktion ihrer eigenen \\jump{OM:SupNum:Ableitungen-Integrale}{Ableitung} gleich ist.'."\n".
                     'Die Superial-Zahlen führen uns hier zu einer erstaunlichen Entdeckung.'."\n".
                     ''))),
 
