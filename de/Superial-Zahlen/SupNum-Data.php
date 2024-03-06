@@ -157,15 +157,15 @@
       ),
     ),
     'OM:SupNum:Eulersche-Zahl-e-Funktion' => array(
-      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Eulersche-Zahl-e-Funktion-Definition-mit-aktual-unendlichen-Zahlen.php',
-      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Eulersche-Zahl-e-Funktion-Definition-mit-aktual-unendlichen-Zahlen.php',
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Eulersche-Zahl-e-Exponentialfunktion-Definition-mit-aktual-unendlichen-Zahlen.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Eulersche-Zahl-e-Exponentialfunktion-Definition-mit-aktual-unendlichen-Zahlen.php',
       titel => 'Die eulersche Zahl e und die e-Funktion - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\\name[undertitle]{OM:SupNum:Eulersche-Zahl-e-Funktion}.\\hidden{ — \\name[description]{OM:SupNum:Eulersche-Zahl-e-Funktion}.}',
+      description => '\\name[undertitle]{OM:SupNum:Eulersche-Zahl-e-Funktion}. — \\name[description]{OM:SupNum:Eulersche-Zahl-e-Funktion}.',
       keywords => '',
-      text_titel_h1 => 'Die eulersche Zahl e und die e-Funktion',
-      text_titel_short => 'Die eulersche Zahl e und die e-Funktion',
-      text_undertitel_h2 => 'Definition von e und ihrer Funktion über aktual unendliche Zahlen',
-      text_titel_discr_h3 => '',
+      text_titel_h1 => 'Die eulersche Zahl e und ihre Exponentialfunktion',
+      text_titel_short => 'Die eulersche Zahl e und ihre Exponentialfunktion',
+      text_undertitel_h2 => 'Eine neue Definition von e und ihrer Funktion über aktual unendliche Zahlen',
+      text_titel_discr_h3 => 'Die transzendente Zahl e stellt sich als Zahl heraus, die so aktual unendlich kleine Summanden hat, dass sie nicht einmal zu den Superial-Zahlen erster Ordnung gehört',
       jump_ary => array(
         'OM:SupNum:Eulersche-Zahl-e-Funktion:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
