@@ -26,19 +26,12 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-
-                  array( 'text', array( text => array(
-                    'Wir können tatsächlich recht einfach erkennen, welche Funktion ihrer eigenen \\jump{OM:SupNum:Ableitungen-Integrale}{Ableitung} gleich ist.'."\n".
+                    'Beschäftigen wir uns mit \jump{OM:SupNum:Ableitungen-Integrale}{Ableitungen und Integralen}, mit der Differenzialrechnung,'."\n".
+                    'dann kommt irgendwann die Frage ins Spiel:'."\n",
+                      'Welche Funktion abgeleitet ergibt sich selbst?'."\n",
+                      'Wir stoßen auf diese Weise auf die Zahl \lm{ \e } und ihre Exponentialfunktion.'."\n",
+                      'Mit Hilfe unseres neuen Zahlensystems, der Zahlentheorie der Analysis, können wir tatsächlich recht einfach und konkret erkennen,'."\n".
+                    'welche Funktion ihrer eigenen Ableitung gleich ist.'."\n".
                     'Die Superial-Zahlen führen uns hier zu einer erstaunlichen Entdeckung.'."\n".
                     ''))),
 
