@@ -3628,7 +3628,7 @@
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:FrQFT:Impressum:Netzwerke', 'Informiert werden, unterstützen, beteiligen …'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:FrQFT:Impressum:Spenden', 'Ich freu mich über jede Unterstützung !!!'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:FrQFT:Impressum:Spenden', 'Ich freu mich über jede Unterstützung! 💚'),
                     )));
 
   
