@@ -46,7 +46,7 @@
     'OM:BiOrd:Einleitung' => array(
       url_abs => 'https://nsosp.org/de/Biordinalzahlen/Einleitung.php',
       url_rel => $Glo_PathRel_back.'../de/Biordinalzahlen/Einleitung.php',
-      titel => 'Biordinalzahlen - Einleitung (BO) - Deutsch',
+      titel => 'Einleitung - Biordinalzahlen (BO) - Deutsch',
       description => '\\name[undertitle]{OM:BiOrd:Einleitung}. — \\name[description]{OM:BiOrd:Einleitung}.',
       keywords => '',
       text_titel_h1 => 'Einleitung',
