@@ -18,11 +18,6 @@
                     '• Meine Herleitung der \lm{ \e }-Funktion mit Hilfe von Superial-Zahlen stammt aus dem Jahr 2001: siehe Datei "superial zahlen (26).pdf".',
                     '\\bold{Ideen}',
                     '• Wie leiten wir \lm{ \e } mit Integralen her?',
-                    '\\bold{Transzendenz von \lm{ \e }}',
-                    '• Was zur Transzendenz von \lm{ \e } im Text sagen.',
-                    '• Mit welchen Rechenoperationen kann man die Zahl \lm{ \e } zu Null machen? Mit diesem Thema beschäftigt sich die Algebra, wie wir auch einem Video von Numberphile entnehmen können: \\jump[https://www.youtube.com/watch?v=seUU2bZtfgM&t=620s]{}{Transcendental Numbers - Numberphile}',
-                    '– Mit unserer Definition von \lm{ \e } als \lm{ \e_{\s}^{x} = *( 1 + \frac{ 1 }{ \s } *)^{x \cdot \s} } in Formel \\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s} erhalten wir für \lm{ \e_{\s} } den Ausdruck \lm{ \e_{\s} = *( 1 + \frac{ 1 }{ \s } *)^{\s} }. Über diesen sehen wir leicht, wie wir \lm{ \e } zu Null machen können. Laut Video soll so etwas bisher nicht bekannt sein.',
-                    '⋅ Allerdings bleibt es dabei, dass \lm{ \e } transzendent ist, weil es nicht durch algebraische Operationen zu Null gemacht werden kann, ohne aktual unendliche Symbole zu nutzen, und weil es nicht einmal zu den Superial-Zahlen erster Ordnung gehört, wegen seiner Summanden bis herunter zu \lm{ \s^{-\s} }, siehe Formel \\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem}. Dies vielleicht auf der Seite \\italic{\\jumpname{OM:SupNum:Eigenschaften}} zeigen.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -576,8 +571,11 @@
                     )),
 
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{Wo Pi noch vorkommt}',
-                    // '• Pi ergibt sich über Integration aus dem Pascalschen Dreieck sehr ähnlich wie die Berechnung von \lm{ \e^{\i \cdot \pi \cdot x} } im Zusammenhang mit Sinus und Cosinus: Siehe \\jump[https://www.spektrum.de/kolumne/newtons-methode-um-pi-mit-dem-pascalschen-dreieck-zu-berechnen/2200009?utm_source=sdwv_daily&utm_medium=nl&utm_content=heute]{}{Manon Bischoff – Sir Isaac Newton fand Pi im pascalschen Dreieck}.',
+                    '\\bold{Transzendenz von \lm{ \e }}',
+                    '• Was zur Transzendenz von \lm{ \e } im Text sagen.',
+                    '• Mit welchen Rechenoperationen kann man die Zahl \lm{ \e } zu Null machen? Mit diesem Thema beschäftigt sich die Algebra, wie wir auch einem Video von Numberphile entnehmen können: \\jump[https://www.youtube.com/watch?v=seUU2bZtfgM&t=620s]{}{Transcendental Numbers - Numberphile}',
+                    '– Mit unserer Definition von \lm{ \e } als \lm{ \e_{\s}^{x} = *( 1 + \frac{ 1 }{ \s } *)^{x \cdot \s} } in Formel \\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s} erhalten wir für \lm{ \e_{\s} } den Ausdruck \lm{ \e_{\s} = *( 1 + \frac{ 1 }{ \s } *)^{\s} }. Über diesen sehen wir leicht, wie wir \lm{ \e } zu Null machen können. Laut Video soll so etwas bisher nicht bekannt sein.',
+                    '⋅ Allerdings bleibt es dabei, dass \lm{ \e } transzendent ist, weil es nicht durch algebraische Operationen zu Null gemacht werden kann, ohne aktual unendliche Symbole zu nutzen, und weil es nicht einmal zu den Superial-Zahlen erster Ordnung gehört, wegen seiner Summanden bis herunter zu \lm{ \s^{-\s} }, siehe Formel \\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem}. Dies vielleicht auf der Seite \\italic{\\jumpname{OM:SupNum:Eigenschaften}} zeigen.',
                     ))),
 
                   array( 'text', array( text => array(
