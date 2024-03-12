@@ -16,7 +16,7 @@
                   array( 'text', array( text => array(
                     'Es gibt einen systematischen Zusammenhang zwischen den arithmetischen Operatoren:'."\n".
                     'Die Addition, die Multiplikation und die Exponentialrechnung gehen auf gleiche Weise auseinander hervor;'."\n".
-                    'vom ersten Operator Plus (\lm{ + }) über den zweiten Operator Mal (\lm{ \cdot }) bis zum dritten Operator Hoch (\lm{ ↑ }).'."\n".
+                    'vom ersten Operator Plus „\lm{ + }“ über den zweiten Operator Mal „\lm{ \cdot }“ bis zum dritten Operator Hoch „\lm{ ↑ }“.'."\n".
                     'Dadurch werden diese Operator-Arten zählbar und wir können über diese Systematik weitere finden.'."\n",
                       'Es sich lohnt sich aus verschiedenen Gründen, uns hiermit zu beschäftigen.'."\n",
                       'Wir ermitteln so den Vorgänger-Operator der Addition und dieser ist tatsächlich das Zählen selber.'."\n".
@@ -30,9 +30,9 @@
                     'dann wird die rechte Zahl genommen und um einen erhöht.'."\n".
                     'Wir können mit seiner Hilfe aus Nicht-Existierendem mit einer Existenz eine Existenz generieren oder schöpfen.'."\n",
                       'Ähnliches gilt für den nächsten Vorgänger, den Konstanzoperator.'."\n",
-                      'Wir kommen also durch genaue Beobachtung der Zahl Operatoren und ihrer Vorgänger prinzipiell zum Existenzquantor\color{*Bearb}{(Verweis)} \lm{ \exists }.'."\n".
-                    'Und ich halte es für möglich, dass so auch prinzipiell der Allquantor\color{*Bearb}{(Verweis)} \lm{ \forall } auf Basis der Zahl Operatoren zu formulieren ist.'."\n".
-                    'Wir können so zunächst unvermutete Zusammenhänge mit der Prädikatenlogik\color{*Bearb}{(Verweis)} erkennen, die auf mehr neugierig machen.'."\n".
+                      'Wir kommen also durch genaue Beobachtung der Zahl Operatoren und ihrer Vorgänger prinzipiell zum Existenzquantor\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Quantor:2023}, Existenz- und Allquantor.} „\lm{ \exists }“.'."\n".
+                    'Und ich halte es für möglich, dass so auch prinzipiell der Allquantor\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Quantor:2023}, Existenz- und Allquantor.} „\lm{ \forall }“ auf Basis der Zahl Operatoren zu formulieren ist.'."\n".
+                    'Wir können also sogar zunächst unvermutete Zusammenhänge mit der Prädikatenlogik\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Praedikatenlogik:2023}.} erkennen, die auf mehr neugierig machen.'."\n".
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
