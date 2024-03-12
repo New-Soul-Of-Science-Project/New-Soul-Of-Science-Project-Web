@@ -579,8 +579,12 @@
                     ))),
 
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Eine zentrale Frage der Mathematik ist, ob eine Zahl \jump{OM:SupNum:Ueberrationalitaetsvermutung}{algebraisch} oder transzendent ist.'."\n",
+                      'Die Regel besagt, eine Zahl ist dann algebraisch, wenn sie sich durch endlich viele kombinierte mathematische'."\n".
+                    'Operationen der \jump{OM:OT:Home}{Operatoren} Plus „\lm{ + }“, Minus „\lm{ - }“, Mal „\lm{ \cdot }“, Geteilt „\lm{ \div }“ und Hoch „\lm{ ↑ }“,'."\n".
+                    'ausschließlich mit Hilfe von ganzen Zahlen auf der rechten Seite, zu Null machen lässt.'."\n",
+                      'Mit der eulerschen Zahl \lm{ \e } geht dies nicht und daher ist sie transzendent.'."\n",
+                      'Formulieren wir die eulersche Zahl, wie oben gezeigt, als \lm{ \e_{\s} }, dann ist dies sehr simpel zu zeigen:'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
