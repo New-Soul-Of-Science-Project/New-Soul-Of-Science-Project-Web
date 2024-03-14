@@ -582,27 +582,47 @@
                     'Eine zentrale Frage der Mathematik ist, ob eine Zahl \jump{OM:SupNum:Ueberrationalitaetsvermutung}{algebraisch} oder transzendent ist.'."\n",
                       'Die Regel besagt, eine Zahl ist dann algebraisch, wenn sie sich durch endlich viele kombinierte mathematische'."\n".
                     'Operationen der \jump{OM:OT:Home}{Operatoren} Plus „\lm{ + }“, Minus „\lm{ - }“, Mal „\lm{ \cdot }“, Geteilt „\lm{ \div }“ und Hoch „\lm{ ↑ }“,'."\n".
-                    'ausschließlich mit Hilfe von ganzen Zahlen auf der rechten Seite, zu Null machen lässt.'."\n",
-                      'Mit der eulerschen Zahl \lm{ \e } geht dies nicht und daher ist sie transzendent.'."\n",
-                      'Formulieren wir die eulersche Zahl, wie oben gezeigt, als \lm{ \e_{\s} }, dann ist dies sehr simpel zu zeigen:'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'ausschließlich mit Hilfe von endlichen ganzen Zahlen auf der rechten Seite, zu Null machen lässt.'."\n",
+                      'Mit der eulerschen Zahl \lm{ \e } geht dies nicht, wie wir gleich sehen werden, und daher ist sie transzendent.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Transzendenz-der-eulerschen-Zahl-e:XXX', text =>
                       
-                'XXX', subline =>
+                '\lm{ \e_{\s} } ist transzendent', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Formulieren wir die eulersche Zahl, wie oben gezeigt, als \lm{ \e_{\s} }, dann ist ihre Transzendenz recht einfach zu zeigen.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Sei der Wert der eulerschen Zahl nach der mit Hilfe der Superial-Zahlen gewonnenen Definition aus Formel \\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s}'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuTr', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{\s}^{x}  =  *( 1 + \frac{ 1 }{ \s } *)^{x \cdot \s}  }',
+                                          label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s}', label_incr => false),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \e_{\s}^{1}  =  *( 1 + \frac{ 1 }{ \s } *)^{1 \cdot \s}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *( 1 + \frac{ 1 }{ \s } *)^{\s}  \;\;,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'so können wir diesen nach den Regeln offensichtlich nur zu Null machen, wenn wir die \lm{ \s }-te Wurzel ziehen,'."\n".
+                      'was nicht erlaubt ist.'."\n".
+                      'Denn die \lm{ \s }-te Wurzel bedeutet \lm{ \e_{\s} } hoch \lm{ \frac{ 1 }{ \s } } nehmen'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuTr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{ \frac{ 1 }{ \s } }  =  *( *( 1 + \frac{ 1 }{ \s } *)^{\s} *)^{ \frac{ 1 }{ \s } }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{ \frac{ 1 }{ \s } }  =  *( 1 + \frac{ 1 }{ \s } *)  \;\;,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'mit einer gebrochenen Zahl im Exponenten, die auch noch unendlich klein ist.'."\n".
+                      'Was wir zeigen wollten.'."\n",
+                        '\\\\ '."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Die eulersche Zahl \lm{ \e_{\s} } ist transzendent, weil sie nicht mit den Regeln für algebraische Zahlen'."\n".
+                    'auf Null reduziert werden kann.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
