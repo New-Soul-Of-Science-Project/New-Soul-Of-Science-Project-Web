@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 05.03.2024, 19:00h
+  // #: Stand: 16.03.2024, 22:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20240316:  +:  "MathJax":  Add Macro "niphi" for "\niphi" to generate a non italic "\phi" for golden ratio.
   //           20240305:  +:  "MathJax":  Add Macro "Ir" for "\Ir" to generate a non italic "Ir" for irrational algebraic coefficients.
   //                      +:  "MathJax":  Add Macro "N" for "\N" to generate a non italic "N" for natural superial numbers.
   //                      +:  "MathJax":  Add Macro "P" for "\P" to generate a non italic "P" for prime superial numbers.
@@ -230,6 +231,7 @@
     echo '            i: "\\\\mathrm{i}",'."\n"; // imaginary unit
     echo '            s: "\\\\mathrm{s}",'."\n"; // superial unit
     echo '            e: "\\\\mathrm{e}",'."\n"; // Euler number
+    echo '            niphi: "\\\\mathrm{φ}",'."\n"; // golden ratio
     echo '            Ir: "\\\\mathrm{Ir}",'."\n"; // for irrational algebraic coefficients
     echo '            N: "\\\\mathrm{N}",'."\n"; // for natural superial numbers
     echo '            P: "\\\\mathrm{P}",'."\n"; // for prime superial numbers
