@@ -172,7 +172,7 @@
                     'nicht funktionieren würde, wie gerade erklärt und nachfolgend weiter verdeutlicht wird.'."\n".
                     'Damit wäre die Zuordnung der Bestandteile zu den Dingen nicht klar und der Welle-Teilchen-Dualismus käme nicht zustande.'."\n".
                     '\\hidden{Desweiteren handelt es sich offenbar bei den Teilchen dieses Zerlegungsprozesses um immer „reinere“ Wellen, die in einer Art von Medium laufen. Die Wellennatur ergibt sich eben aus der Bewegung im Djet- und Neheh-Anteil der Teilchen. Solche Wellen neigen zu konstanten Geschwindigkeiten in Bezug auf ihre Art von Medium, die von der Stärke der inneren Wechselwirkungen des Mediums bestimmt sind.}'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:WasIstPhysik:Vortext:Veraenderung-Strukturen-hat-zwei-zeitliche-Aspekte', text =>
                       
                 'Die Veränderung der Strukturen der Dinge hat zwei zeitliche Aspekte')),
                   /*array( 'notice', array( Display => 'hideContent', text => array(
