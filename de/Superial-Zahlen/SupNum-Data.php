@@ -285,6 +285,7 @@
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-teilt-a-hoch-x' => array( headline_text => 'SN.ÜV.67'),
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-Primfaktoren-k_i' => array( headline_text => 'SN.ÜV.70'),
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz' => array( headline_text => 'SN.ÜV.131'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Ganzzahlige-Potenzen-der-Wurzeln' => array( headline_text => 'Ganzzahlige Potenzen der Wurzeln'/* , headline_text_short => 'XXX'*/),
                         
         'OM:SupNum:Ueberrationalitaetsvermutung:Struktur-der-Wurzeln' => array( headline_text => 'Struktur der Wurzeln'/* , headline_text_short => 'XXX'*/),
                         
