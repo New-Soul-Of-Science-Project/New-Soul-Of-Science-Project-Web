@@ -16,7 +16,7 @@
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Fragen}',
                     '• Der Beweis scheint noch nicht vollständig!',
-                    '– Denn Zahlen wie der Goldene Schnitt mit \lm{ \niphi = \frac{ \sqrt{ 5 } + 1 }{ 2 } } gehören auch zu den algebraischen Zahlen.',
+                    '– Denn Zahlen wie der Goldene Schnitt mit \lm{ φ = \frac{ \sqrt{ 5 } + 1 }{ 2 } } gehören auch zu den algebraischen Zahlen.',
                     '– Für solche Zahlen ist noch zu beweisen, dass ihre Produkte mit \lm{ \s } auch ganze Zahlen sind, auch wenn dies adhoc einsichtig erscheint.',
                     '• Wenn nun alle Koeffizienten der algebraischen Zahlen Faktoren von \\lm{ \s } sind, die ganze Zahlen ergeben:',
                     '– Werden diese dann beim Zählen der ganzen Superial-Zahlen mitgezählt oder nur die rationalen Koeffizienten? Ich denke, sie werden mitgezählt.',
@@ -41,7 +41,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{A}_{\Ir}  =  \\\ \qquad *\{  a \notin \mathbb{Q}  *|*  *( \forall n \in \mathbb{N} \setminus *\{ 0, 1 *\} *) \\\ \qquad\qquad\qquad\quad\;\; *( \forall z \in \mathbb{Z} \setminus *\{ 0 *\} *)  *[  a = \pm n^{\frac{ 1 }{ z }}  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\Ir}  =  \\\ \qquad *\{  a \notin \mathbb{Q}  *|*  *( \forall q \in \mathbb{Q} *) *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) \\\ \qquad\qquad\qquad\;\;\, *( \forall y \in \mathbb{Z} \setminus *\{ 0 *\} *) *( \forall z \in \mathbb{Z} *)  *[  a = q \cdot n^{\frac{ 1 }{ y }} + z  *]  *\}  }'),
                       array( display => 'on',  latex => '{  \mathbb{A}_{\R}  =  \mathbb{Q} \cup \mathbb{A}_{\Ir}  \;\;,  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -481,7 +481,7 @@
                     ))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
-                Title => 'Nebenrechnung …',
+                Title => '\\small{Nebenrechnung …}',
                 TitleVis => 'Nebenrechnung:', ParagraphList => array(
 
                   array( 'equations',
@@ -506,7 +506,7 @@
                     ))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
-                Title => 'Nebenrechnung …',
+                Title => '\\small{Nebenrechnung …}',
                 TitleVis => 'Nebenrechnung:', ParagraphList => array(
 
                   array( 'equations',
@@ -536,7 +536,7 @@
                     ))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
-                Title => 'Nebenrechnung …',
+                Title => '\\small{Nebenrechnung …}',
                 TitleVis => 'Nebenrechnung:', ParagraphList => array(
 
                   array( 'equations',
@@ -556,7 +556,7 @@
                     ))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
-                Title => 'Nebenrechnung …',
+                Title => '\\small{Nebenrechnung …}',
                 TitleVis => 'Nebenrechnung:', ParagraphList => array(
 
                   array( 'equations',
@@ -569,7 +569,7 @@
 
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
-                Title => 'Experimentelle Rechnung …',
+                Title => '\\small{Experimentelle Rechnung …}',
                 TitleVis => 'Experimentelle Rechnung:', ParagraphList => array(
 
                   array( 'equations',
@@ -1063,12 +1063,110 @@
                     'die gesuchte Aussage, dass auch die Kehrwerte der \lm{ x }-ten Wurzeln aus \lm{ n } natürliche Superial-Zahlen sind.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{Zusammenfassung für alle entsprechenden Wurzeln} \\\\'."\n".
-                    'So können wir die Superial-Zahlen sinnvollerweise noch auf die Koeffizienten der Kehrwerte der irrationalen Wurzeln verallgemeinern:'."\n".
+                  '\\condb{Die endlichen ganzzahligen Summen der Wurzeln} \\\\'."\n".
+                    'Wir müssen nun noch untersuchen, ob auch Summen von irrationalen Wurzeln oder ihren Kehrwerten'."\n".
+                    'mit endlichen ganzen Zahlen, die auch zu den irrationalen algebraischen Koeffizienten gehören,'."\n".
+                    'als Produkt mit unserer superialen Basis \lm{ \s } ganze beziehungsweise natürliche Superial-Zahlen sind.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Nehmen wir an, dass die irrationale Wurzel oder ihr Kehrwerten in einer Summe mit der endlichen ganzen Zahl \lm{ z } und im Produkt dieser mit \lm{ \s }'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} *) *( n \geq 2 *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) *( \forall z \in \mathbb{Z} *)  \\\ \qquad\qquad *( n^{\frac{ 1 }{ y }} + z \ge 0 *)  *[  *( n^{\frac{ 1 }{ y }} + z *) \cdot \s  ?\in  \mathbb{S}_{N}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot \s + z \cdot \s  ?\in  \mathbb{S}_{N}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Da beide Summanden ganze Superial-Zahlen sind'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{Z}  }'),
+                      array( display => 'on',  latex => '{  z \cdot \s  \in  \mathbb{S}_{Z}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'und die Summe zweier ganzer Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }} \cdot \s + z \cdot \s  \in  \mathbb{S}_{N}  \;\;,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'unter den obigen Bedingungen, immer eine natürliche Superial-Zahl ist, was wir zeigen wollten.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'So sind dann auch algebraische Zahlen wie der Goldene Schnitt \lm{ φ }'."\n".
+                    'als Faktoren der superialen Basis \lm{ \s } natürliche Superial-Zahlen.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Nehmen wir an, dass der irrationale Goldene Schnitt \lm{ φ } im Produkt mit \lm{ \s }'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  φ \cdot \s  ?\in  \mathbb{S}_{N}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'mit dem Wert der Definition'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  φ  =  \frac{ \sqrt{ 5 } + 1 }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Einsetzen, Umstellen und Ausmultiplizieren:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sqrt{ 5 } + 1 }{ 2 } \cdot \s  ?\in  \mathbb{S}_{N}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( 5^{\frac{ 1 }{ 2 }} + 1 *) \cdot \frac{ \s }{ 2 }  ?\in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  ?\in  \mathbb{S}_{N}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Da beide Summanden natürliche Superial-Zahlen sind'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 }  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \frac{ \s }{ 2 }  \in  \mathbb{S}_{N}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'und die Summe zweier natürlicher Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 5^{\frac{ 1 }{ 2 }} \cdot \s + \s }{ 2 }  \in  \mathbb{S}_{N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  φ \cdot \s  \in  \mathbb{S}_{N}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'auch immer eine natürliche Superial-Zahl ist, was wir zeigen wollten.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Damit haben wir für alle irrationalen algebraischen Koeffizienten durch Beweis überprüft,'."\n".
+                    'dass ihre Produkte mit der superialen Basis \lm{ \s } zu den natürlichen Superial-Zahlen gehören.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Zusammenfassung für alle entsprechenden Wurzeln, Summen und Produkte} \\\\'."\n".
+                    'So können wir die Superial-Zahlen sinnvollerweise noch auf die Koeffizienten der Kehrwerte der irrationalen Wurzeln,'."\n".
+                    'deren Summen mit endlichen ganzen Zahlen und deren Produkte mit rationalen Zahlen verallgemeinern:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} \setminus *\{ 0, 1 *\} *) *( \forall z \in \mathbb{Z} \setminus *\{ -1, 0, 1 *\} *) \\\ \qquad\qquad\qquad\; *( n^{\frac{ 1 }{ z }} \notin \mathbb{Q} *)  *[  n^{\frac{ 1 }{ z }} \cdot \s  :\in  \mathbb{S}_{\N}  *]  }'),
+                      array( display => 'on',  latex => '{  *( q \in \mathbb{Q} *) *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) *( n^{\frac{ 1 }{ y }} \notin \mathbb{Q} *) \\\ \quad\;\; *( \forall z \in \mathbb{Z} *) *( q \cdot n^{\frac{ 1 }{ y }} + z > 0 *)  *[  *( q \cdot n^{\frac{ 1 }{ y }} + z *) \cdot \s  :\in  \mathbb{S}_{\N}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wir stellen also fest, dass auch die positiven irrationalen Koeffizienten algebraischer Zahlen'."\n".
