@@ -65,7 +65,7 @@
                     'Da sowohl Zähler als auch Nenner in der gleichen Größenordnung gegen Null streben,'."\n".
                     'sorgt der Bruch dafür, dass unser Ergebnis im Endlichen verbleibt.'."\n",
                       'Mit Hilfe der aktual unendlichen Superial-Zahlen kommen wir in die Lage, das gegen Null strebende \lm{ \Delta x }'."\n".
-                    'durch eine normierte unendlich kleine Zahl \\term{s^^{-1}} ersetzen zu können:'."\n".
+                    'durch eine normierte unendlich kleine Zahl \lm{ \s^{-1} } ersetzen zu können:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -125,7 +125,7 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Für die Funktion \\term{f(x) = x^^{2}} ergibt sich:'."\n".
+                      'Für die Funktion \lm{ f(x) = x^{2} } ergibt sich:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -139,10 +139,10 @@
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-Ergebnis', label_text => '\\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-Ergebnis}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wenn wir also \\term{s^^{-1}} zu Null setzen, dann kommt das übliche Ergebnis \\term{f\'(x) = 2x} heraus.'."\n".
+                      'Wenn wir also \lm{ \s^{-1} } zu Null setzen, dann kommt das übliche Ergebnis \lm{ f\'(x) = 2 x } heraus.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Für \\term{f(x) = x^^{3}} ergibt sich:'."\n".
+                      'Für \lm{ f(x) = x^{3} } ergibt sich:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -156,7 +156,7 @@
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-Ergebnis', label_text => '\\name{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-Ergebnis}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wenn wir also \\term{s^^{-1}} zu Null setzen, dann kommt das übliche Ergebnis \\term{f\'(x) = 3x^^{2}} heraus.'."\n",
+                      'Wenn wir also \lm{ \s^{-1} } zu Null setzen, dann kommt das übliche Ergebnis \lm{ f\'(x) = 3 x^{2} } heraus.'."\n",
                         '\\\\ '."\n".
                       ''))),
 
@@ -224,7 +224,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Den ganzen Superial-Zahlen begegnen wir, wenn wir uns mit der Umkehrung der oben definierten Ableitung beschäftigen, der Integration:'."\n",
-                      'Bei der Integration addieren wir nämlich all die unendlich vielen und superial kleinen Differenzen des Abstands \\term{s^^{-1}} der Ableitung als'."\n".
+                      'Bei der Integration addieren wir nämlich all die unendlich vielen und superial kleinen Differenzen des Abstands \lm{ \s^{-1} } der Ableitung als'."\n".
                     'superial kleine, feine oder schmale Streifen einer Fläche auf.'."\n".
                     'Diese Streifen müssen wir dann in einer unendlichen Summe durchzählen und aufsummieren.'."\n",
                       'Zum Einstieg die Formel \\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins} vorab in der neuen Notation:'."\n"))),
@@ -234,7 +234,7 @@
                                           /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Wenn im Folgenden \\term{n} Element der Menge aller ganzen Superial-Zahlen \\term{\M(S)__{Z}} einschließlich Null und ausschließlich \\term{x⋅s^^{1}} ist,'."\n".
+                    'Wenn im Folgenden \lm{ n } Element der Menge aller ganzen Superial-Zahlen \lm{ \mathbb{S}_{Z} } einschließlich Null und ausschließlich \lm{ x \s^{1} } ist,'."\n".
                     'können wir die Integration über folgende Summe ausdrücken:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -243,13 +243,13 @@
                       array( display => 'on',  latex => '{  \int_{0}^{x} f\'(n) \,dn  :=  \sum_{ n \in [0;〈x〉_{1}[ }  ․*〈f\'(n)*〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Damit haben wir die vorherige Ableitung wieder rückgängig gemacht, wenn wir eine schlüssige Definition der ganzen Superial-Zahlen \\term{\M(S)__{Z}} finden.'."\n",
+                    'Damit haben wir die vorherige Ableitung wieder rückgängig gemacht, wenn wir eine schlüssige Definition der ganzen Superial-Zahlen \lm{ \mathbb{S}_{Z} } finden.'."\n",
                       'Wie könnten ganze Superial-Zahlen nun aussehen?'."\n".
                     'Wir haben es zuvor ja schon angedeutet:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Die gebrochenen Summanden mit negativer Potenz von \\term{s} sollten Null sein.',
-                        'Im endlichen Summanden \\term{s^^{0}} sollten sie nur ganze Zahlen haben.',
-                        'Die Summanden mit Potenzen von \\term{s} größer Null sollten ganze Zahlen sein, was bedeutet, dass nur Koeffizienten als Faktoren der potenzierten \\jump{OM:SupNum:Formale-Entwicklung:Vortext:DefinitionSuperialeEinheit}{Primzahlprodukt-Fläche} in Frage kommen, die aus dem Produkt Primzahlen entfernen oder hinzufügen, ohne seine Größenordnung zu verändern.',
+                        'Die gebrochenen Summanden mit negativer Potenz von \lm{ \s } sollten Null sein.',
+                        'Im endlichen Summanden \lm{ \s^{0} } sollten sie nur ganze Zahlen haben.',
+                        'Die Summanden mit Potenzen von \lm{ \s } größer Null sollten ganze Zahlen sein, was bedeutet, dass nur Koeffizienten als Faktoren der potenzierten \\jump{OM:SupNum:Formale-Entwicklung:Vortext:DefinitionSuperialeEinheit}{Primzahlprodukt-Fläche} in Frage kommen, die aus dem Produkt Primzahlen entfernen oder hinzufügen, ohne seine Größenordnung zu verändern.',
                     ))),
                   array( 'text', array( text => array(
                     'Faktoren, die aus der Primzahlprodukt-Fläche in diesem Sinne nur Primfaktoren entfernen oder hinzufügen sind zunächst erst einmal ganz klar die rationalen Zahlen.'."\n".
