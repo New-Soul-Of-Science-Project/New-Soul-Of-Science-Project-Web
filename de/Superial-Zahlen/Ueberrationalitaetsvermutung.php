@@ -567,7 +567,6 @@
 
                     ))),
 
-
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
                 Title => '\\small{Experimentelle Rechnung …}',
                 TitleVis => 'Experimentelle Rechnung:', ParagraphList => array(

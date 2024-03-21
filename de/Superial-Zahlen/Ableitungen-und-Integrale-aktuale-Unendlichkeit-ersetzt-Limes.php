@@ -683,6 +683,7 @@
                   array( 'text', array( text => array(
                     'Interessant ist auch die Berechnung der Summe der endlichen rationalen Zahlen'."\n".
                     'von Null bis ausschließlich der Zahl \lm{ x }:'."\n".
+                    '\\\\ \color{*Bearb}{(durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss)}'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -726,6 +727,11 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
+
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
+                Title => '\\small{Ein weiterer Ansatz diese Summe zu berechnen …}',
+                TitleVis => 'Ein weiterer Ansatz diese Summe zu berechnen:', ParagraphList => array(
+
                   array( 'text', array( text => array(
                   '\condb{Ein weiterer Ansatz diese Summe zu berechnen} \\\\'."\n".
                     'XXX'."\n".
@@ -743,7 +749,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \rho_{Q}  =  \frac{ \frac{ x \cdot s }{ 2 \cdot \omega } }{ x }  }'),
+                      // array( display => 'off', latex => '{  \rho_{Q}  =  \frac{ \frac{ x \cdot s }{ 2 \cdot \omega } }{ x }  }'),
+                      array( display => 'on', latex => '{  \rho_{Q}  =  \frac{ \frac{ x \cdot s }{ 2 \cdot \omega } }{ x }  }'),
                       array( display => 'on',  latex => '{  \rho_{Q}  =  \frac{ s }{ 2 \cdot \omega }  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \Delta_{Q}  =  \frac{ 2 \cdot \omega }{ s }  }'),
                     ))),
@@ -776,6 +783,8 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     ''))),
+
+                    ))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion'),
