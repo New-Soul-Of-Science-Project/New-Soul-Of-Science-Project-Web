@@ -683,7 +683,7 @@
                   array( 'text', array( text => array(
                     'Interessant ist auch die Berechnung der Summe der endlichen rationalen Zahlen'."\n".
                     'von Null bis ausschließlich der Zahl \lm{ x }:'."\n".
-                    '\\\\ \color{*Bearb}{(durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss)}'."\n".
+                    '\\\\ \color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)}'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -729,7 +729,7 @@
                     ''))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
-                Title => '\\small{Ein weiterer Ansatz diese Summe zu berechnen …}',
+                Title => '\small{Ein weiterer Ansatz diese Summe zu berechnen …}',
                 TitleVis => 'Ein weiterer Ansatz diese Summe zu berechnen:', ParagraphList => array(
 
                   array( 'text', array( text => array(

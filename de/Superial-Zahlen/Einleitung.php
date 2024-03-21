@@ -1408,6 +1408,7 @@
                     '(• Jede rationale Zahl kann eindeutig durch einen endlichen regulären Kettenbruch dargestellt werden (der mit Hilfe des euklidischen Algorithmus berechnet werden kann).(https://de.wikipedia.org/w/index.php?title=Kettenbruch&oldid=158343364 )) \\\\'."\n".
                     '}'."\n"))),*/
                   array( 'text', array( text => array(
+                    '\color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)} \\\\'."\n".
                     'Diese Vermutung bezieht sich darauf, dass ich vermute, dass die rationalen Koeffizienten der \\italic{rationalen Superial-Zahlen} durch Koeffizienten ersetzt werden können,'."\n".
                     'die durch überrationale Brüche dargestellt werden.\\footnote[*Entwick]{\\color{*Entwick}{Sind überrationale Brüche algebraische Zahlen, deren imaginärer Anteil gleich Null ist?}}'."\n".
                     'Und dies, ohne dass sich die Existenz der natürlichen Superial-Zahlen und der superialen Primzahlen verändern würde.'."\n".
@@ -1439,6 +1440,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
+                    '\color{*Bearb}{(Der Beweis der \italic{\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}} muss noch berücksichtigt werden.)} \\\\'."\n".
                     'Meine langjährigen Spielereien haben in mir die Vermutung geweckt, dass der unendlich große Wert des Produkts aller endlichen Primzahlen ebenfalls'."\n".
                     'die Größe von \\term{⍵} hat.'."\n".
                     'Dies würde auf folgende Formeln hinauslaufen:'."\n".
