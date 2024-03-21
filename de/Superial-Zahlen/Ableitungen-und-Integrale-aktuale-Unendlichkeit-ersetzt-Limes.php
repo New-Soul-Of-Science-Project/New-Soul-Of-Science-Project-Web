@@ -64,7 +64,7 @@
                   array( 'text', array( text => array(
                     'Da sowohl Zähler als auch Nenner in der gleichen Größenordnung gegen Null streben,'."\n".
                     'sorgt der Bruch dafür, dass unser Ergebnis im Endlichen verbleibt.'."\n",
-                      'Mit Hilfe der aktual unendlichen Superial-Zahlen kommen wir in die Lage, das gegen Null strebende \\latexmath{ \Delta x }'."\n".
+                      'Mit Hilfe der aktual unendlichen Superial-Zahlen kommen wir in die Lage, das gegen Null strebende \lm{ \Delta x }'."\n".
                     'durch eine normierte unendlich kleine Zahl \\term{s^^{-1}} ersetzen zu können:'."\n".
                     ''))),
                   array( 'equations',
@@ -78,11 +78,11 @@
                     ))),
                   array( 'text', array( text => array(
                     'Die letzte Formel ist in der \\jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem-Schreibweise} der Superial-Zahlen ausgedrückt.'."\n",
-                      'Durch das Einsetzen einer normierten Unendlichkeit können wir nun erkennen, dass das \\latexmath{ \Delta x }'."\n".
-                    'gar nicht von \\latexmath{ x } abhängt, wie es scheinen könnte,'."\n".
-                    'sondern das \\latexmath{ x } in \\latexmath{ \Delta x } kennzeichnet „nur“ die Stelle, an der das \\latexmath{ \Delta x }'."\n".
+                      'Durch das Einsetzen einer normierten Unendlichkeit können wir nun erkennen, dass das \lm{ \Delta x }'."\n".
+                    'gar nicht von \lm{ x } abhängt, wie es scheinen könnte,'."\n".
+                    'sondern das \lm{ x } in \lm{ \Delta x } kennzeichnet „nur“ die Stelle, an der das \lm{ \Delta x }'."\n".
                     'eingesetzt wird.'."\n".
-                    'Der Parameter der Funktion \\latexmath{ f(x) } ist allerdings weiter von \\latexmath{ x } abhängig.'."\n",
+                    'Der Parameter der Funktion \lm{ f(x) } ist allerdings weiter von \lm{ x } abhängig.'."\n",
                       'Vergleichen wir dies mit der in der Mathematik üblichen und entsprechenden kürzeren Differential-Schreibweise'."\n".
                     ''))),
                   array( 'equations',
@@ -92,7 +92,7 @@
                   array( 'text', array( text => array(
                     'dann sehen wir, dass einiges an struktureller Information verborgen bleibt, wenn wir nicht genau schauen,'."\n".
                     'was hinter der Formulierung steckt.'."\n".
-                    'So glauben wir eben leicht, wie gesagt, der Nenner hätte etwas mit \\latexmath{ x } zu tun, was von der zugrunde liegenden Rechnung her'."\n".
+                    'So glauben wir eben leicht, wie gesagt, der Nenner hätte etwas mit \\lm{ x } zu tun, was von der zugrunde liegenden Rechnung her'."\n".
                     'durch das Einsetzen einer normierten aktualen Unendlichkeit nicht der Fall ist; es in Wahrheit also wenigstens nicht sein muss.'."\n",
                       'Denn in aktualer Unendlichkeit ausgedrückt entspricht:'."\n".
                     ''))),
@@ -102,9 +102,9 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \mathrm{d} x  \widehat{=}  ․〈1〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Division durch \\latexmath{ ․〈1〉 } holt uns schlicht die Differenz im Zähler aus dem unendlich Kleinen wieder'."\n".
+                    'Die Division durch \lm{ ․〈1〉 } holt uns schlicht die Differenz im Zähler aus dem unendlich Kleinen wieder'."\n".
                     'ins Endliche.'."\n".
-                    'Und das können wir auch durch den entsprechenden unendlich großen Faktor \\latexmath{ s } oder \\latexmath{ 〈1〉_1 \, } erreichen:'."\n".
+                    'Und das können wir auch durch den entsprechenden unendlich großen Faktor \lm{ s } oder \lm{ 〈1〉_1 \, } erreichen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -311,13 +311,13 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins', text =>
                       
-                'Summen zur Integration von \\latexmath{ 〈2 x〉․〈1〉 }', subline =>
+                'Summen zur Integration von \lm{ 〈2 x〉․〈1〉 }', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Wir kennen nun schon das Ergebnis der Summe \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x},'."\n".
                     'aller superial kleinen ganzen Superial-Zahlen'."\n".
-                    // '\\hidden{\\latexmath{ \mathbb{S}^{-1}_Z }'."\n".
-                    'von Null bis ausschließlich \\latexmath{ x }, die bei der \\jump{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen:Konkretes-Integral}{Integration von \\latexmath{ f\'(x) =〈2 x〉․〈1〉}} \\jump{*SupNum:Stellenwertsystem-Schreibweise}{(Stellenwertsystem-Schreibweise)} auftritt.'."\n".
+                    // '\\hidden{\lm{ \mathbb{S}^{-1}_Z }'."\n".
+                    'von Null bis ausschließlich \lm{ x }, die bei der \\jump{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen:Konkretes-Integral}{Integration von \lm{ f\'(x) =〈2 x〉․〈1〉}} \\jump{*SupNum:Stellenwertsystem-Schreibweise}{(Stellenwertsystem-Schreibweise)} auftritt.'."\n".
                     'Allerdings wissen wir nicht genau, wie sich diese Summe durch direkte Berechnung der Teilsummen, also ohne das Benutzen der'."\n".
                     'angepassten Gaußschen Summenformel\\footnote{\\const{BiOrd_g_footnote_text_GaussscheSummenformel}}, berechnet,'."\n".
                     'die wir aus der Theorie der \\jump{OM:BiOrd:Home}{Biordinalzahlen} im Abschnitt \\italic{›\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}‹} nach Formel'."\n".
@@ -338,8 +338,8 @@
                   /* array( 'text', array( text => array(
                     'Die eben errechnete Summe \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x},'."\n".
                     'aller unendlich kleinen ganzen Superial-Zahlen'."\n".
-                    // '\\hidden{\\latexmath{ \mathbb{S}^{-1}_Z }'."\n".
-                    'von Null bis ausschließlich \\latexmath{ x },'."\n".
+                    // '\\hidden{\lm{ \mathbb{S}^{-1}_Z }'."\n".
+                    'von Null bis ausschließlich \lm{ x },'."\n".
                     'ähnelt nicht zufällig sehr der angepassten Gaußschen Summenformel\\footnote{\\const{BiOrd_g_footnote_text_GaussscheSummenformel}},'."\n".
                     'wie bei den \\jump{OM:BiOrd:Home}{Biordinalzahlen} im Abschnitt \\italic{›\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}‹} nach Formel'."\n".
                     '\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega} angegeben.'."\n".
@@ -366,9 +366,9 @@
 
                   /* array( 'text', array( text => array(
                     'Im späteren Abschnitt \\italic{›\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}‹}'."\n".
-                    'wird die Struktur der superialen Basis \\latexmath{ s } in Bezug auf ihre Vorgänger für unseren Einblick geeignet aufgedröselt.'."\n".
+                    'wird die Struktur der superialen Basis \lm{ s } in Bezug auf ihre Vorgänger für unseren Einblick geeignet aufgedröselt.'."\n".
                     'Angelehnt an Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s} können wir für die'."\n".
-                    'superial kleinen Vorgänger von \\latexmath{ x } bis zur Null – wie immer mit \\latexmath{ x \in \mathbb{Q} } –'."\n".
+                    'superial kleinen Vorgänger von \lm{ x } bis zur Null – wie immer mit \lm{ x \in \mathbb{Q} } –'."\n".
                     'folgende Formel aufstellen:'."\n".
                     ''))), */
                   array( 'text', array( text => array(
@@ -389,7 +389,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Für die genaue Menge können wir, angelehnt an die später gefundene Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s},'."\n".
-                    'folgende Beschreibung geben – wie immer mit \\latexmath{ x \in \mathbb{Q} }:'."\n".
+                    'folgende Beschreibung geben – wie immer mit \lm{ x \in \mathbb{Q} }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -412,16 +412,16 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Die Summe des zweiten Summanden unserer Superial-Zahlen} \\\\'."\n".
-                    'Für alle Koeffizienten des ersten Summanden \\latexmath{ q }, von Null bis einschließlich'."\n".
-                    '\\latexmath{ x }, läuft der zweite Summand \\latexmath{ z } komplett im Negativen und im Positiven durch,'."\n".
+                    'Für alle Koeffizienten des ersten Summanden \lm{ q }, von Null bis einschließlich'."\n".
+                    '\lm{ x }, läuft der zweite Summand \lm{ z } komplett im Negativen und im Positiven durch,'."\n".
                     'bis auf am Beginn und am Ende, siehe Intervall-Menge \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen},'."\n".
-                    'wo \\latexmath{ q } als \\latexmath{ q \cdot x } benannt ist.'."\n".
-                    'Am Beginn laufen nur die natürlichen Koeffizienten \\latexmath{ n } des zweiten Summanden durch, mit der Null, und'."\n".
-                    'am Ende laufen nur die rein negativen Koeffizienten \\latexmath{ z^- } durch.'."\n",
-                      'Die Anzahl der superial kleinen ganzen Zahlen von Null bis einschließlich \\latexmath{ x }'."\n".
-                    'ist \\latexmath{ x \cdot s + 1 }.'."\n".
-                    'Da für Null und \\latexmath{ x } gemeinsam nur ein ganzer Durchlauf stattfindet, ist die Anzahl der'."\n".
-                    'ganzen Durchläufe allerdings nur \\latexmath{ x \cdot s }, also Einen weniger.'."\n",
+                    'wo \lm{ q } als \lm{ q \cdot x } benannt ist.'."\n".
+                    'Am Beginn laufen nur die natürlichen Koeffizienten \lm{ n } des zweiten Summanden durch, mit der Null, und'."\n".
+                    'am Ende laufen nur die rein negativen Koeffizienten \lm{ z^- } durch.'."\n",
+                      'Die Anzahl der superial kleinen ganzen Zahlen von Null bis einschließlich \lm{ x }'."\n".
+                    'ist \lm{ x \cdot s + 1 }.'."\n".
+                    'Da für Null und \lm{ x } gemeinsam nur ein ganzer Durchlauf stattfindet, ist die Anzahl der'."\n".
+                    'ganzen Durchläufe allerdings nur \lm{ x \cdot s }, also Einen weniger.'."\n",
                       'In jedem Durchlauf werden einmal alle superial kleinen ganzen Zahlen addiert.'."\n".
                     'Von den \\jump{OM:BiOrd:Home}{Biordinalzahlen} her wissen wir den Wert der Summe aller endlichen ganzen Zahlen aus Formel'."\n".
                     '\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}:'."\n".
@@ -439,14 +439,14 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}}  z \cdot s^{-1}  =  - \omega \cdot s^{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dabei steht das Symbol \\latexmath{ \omega } für die Anzahl der endlichen natürlichen Zahlen, mit der Null, in der Menge \\latexmath{ \mathbb{N} };'."\n".
+                    'Dabei steht das Symbol \lm{ \omega } für die Anzahl der endlichen natürlichen Zahlen, mit der Null, in der Menge \lm{ \mathbb{N} };'."\n".
                     'dies entspricht der Anzahl der Schritte der vollständigen Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n",
                       'An dieser Stelle ist es vermutlich für den ein oder anderen erstaunlich, dass ganz unabhängig von den hier entwickelten Superial-Zahlen'."\n".
                     'in der Theorie der Biordinalzahlen deutlich wird, dass genauso viele endliche und rein negative ganze Zahlen existieren,'."\n".
                     'wie es endliche natürliche Zahlen gibt, also endliche positive ganze Zahlen, mit der Null.'."\n".
                     'Demnach finden wir, bei genauer Untersuchung, eine \\jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{fundamentale Asymmetrie}'."\n".
                     'zwischen der ontologischen Struktur der endlichen ganzen Zahlen und der Verteilung ihrer Werte.'."\n".
-                    'Dadurch ergibt die Summe aller endlichen ganzen Zahlen die aktual unendlich große und negative Zahl \\latexmath{ -\omega }.'."\n",
+                    'Dadurch ergibt die Summe aller endlichen ganzen Zahlen die aktual unendlich große und negative Zahl \lm{ -\omega }.'."\n",
                       'Auf der anderen Seite ist die Anzahl der rationalen Koeffizienten von Null bis ausschließlich Eins,'."\n".
                     'nach Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}:'."\n".
                     ''))),
@@ -458,11 +458,11 @@
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-x', label_text => '\\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-x}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Anschließend haben wir die Formel für die Koeffizienten von Null bis ausschließlich \\latexmath{ x } äquivalent mit \\latexmath{ x } erweitert.'."\n",
+                    'Anschließend haben wir die Formel für die Koeffizienten von Null bis ausschließlich \lm{ x } äquivalent mit \lm{ x } erweitert.'."\n",
                     /*   'Da in der zu addierenden Intervall-Menge \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen}'."\n".
-                    'für Null und \\latexmath{ x } gemeinsam nur ein ganzer Durchlauf von \\latexmath{ z } stattfindet, wie gesagt, ist \\latexmath{ x \cdot s } die Anzahl der'."\n".
-                    'ganzen Durchläufe von \\latexmath{ z }.'."\n", */
-                      'So oft addiert sich jetzt das superial kleine \\latexmath{ \frac{ -\omega }{ s } } auf:'."\n".
+                    'für Null und \lm{ x } gemeinsam nur ein ganzer Durchlauf von \lm{ z } stattfindet, wie gesagt, ist \lm{ x \cdot s } die Anzahl der'."\n".
+                    'ganzen Durchläufe von \lm{ z }.'."\n", */
+                      'So oft addiert sich jetzt das superial kleine \lm{ \frac{ -\omega }{ s } } auf:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -480,15 +480,15 @@
                     'Dies entspricht tatsächlich, wie gedacht, der zweiten Teilsumme unserer bekannten'."\n".
                     'Summe \\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt}.'."\n",
                       'Und es zeigt, dass die in der Theorie der Biordinalzahlen gefundene fundamentale Asymmetrie zwischen der strukturellen Ontologie'."\n".
-                    'und den Werten der endlichen ganzen Zahlen, aufgrund derer sich die Summe aller endlichen ganzen Zahlen zu \\latexmath{ -\omega } und'."\n".
-                    'die Anzahl aller endlicher ganzen Zahlen zu \\latexmath{ 2 \omega } ergibt, wirklich korrekt ist.'."\n".
+                    'und den Werten der endlichen ganzen Zahlen, aufgrund derer sich die Summe aller endlichen ganzen Zahlen zu \lm{ -\omega } und'."\n".
+                    'die Anzahl aller endlicher ganzen Zahlen zu \lm{ 2 \omega } ergibt, wirklich korrekt ist.'."\n".
                     'Denn diese Asymmetrie ist ein essentieller und so auch plausibler Bestandteil der Integralrechnung, wie wir sehen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Die Summe des ersten Summanden unserer Superial-Zahlen} \\\\'."\n".
                     'Die erste Teilsumme unserer superial kleinen ganzen Superial-Zahlen \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen} soll nach unserer Vermutung dem'."\n".
                     'ersten Summanden des uns bekannten Ergebnisses der zu berechnenden Summe \\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt} ergeben.'."\n",
-                      'Die erste Teilsumme unserer zu summierenden Zahlen enthält alle rationalen Zahlen von Null bis einschließlich \\latexmath{ x }.'."\n".
+                      'Die erste Teilsumme unserer zu summierenden Zahlen enthält alle rationalen Zahlen von Null bis einschließlich \lm{ x }.'."\n".
                     'Diese Summe muss allerdings für jede superial kleine Zahl gebildet werden, die in unserer Menge \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen}'."\n".
                     'enthalten ist.'."\n",
                       'Für die rationale Zahl Null in der ersten Teilsumme gibt es nur die natürlichen Zahlen, mit der Null, als superial kleine Schritte in der zweiten Teilsumme:'."\n".
@@ -498,8 +498,8 @@
                       array( display => 'on',  latex => '{  *( \sum_{ \forall q \in [ 0 ]_\mathbb{Q}}  \!\! q *) \cdot \omega  =  0 \cdot \omega  =  0  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Für die rationalen Zahlen \\latexmath{ q } mit \\latexmath{ 0 < q < x } in der ersten Teilsumme gibt es wirklich alle superial kleinen ganzzahligen Schritte in der zweiten Teilsumme.'."\n".
-                    'Da wir die Summe dieser rationalen Zahlen noch nicht kennen, wollen wir sie berechnen und setzen sie gleich unserer neuen Variable \\latexmath{ y }:'."\n".
+                    'Für die rationalen Zahlen \lm{ q } mit \lm{ 0 < q < x } in der ersten Teilsumme gibt es wirklich alle superial kleinen ganzzahligen Schritte in der zweiten Teilsumme.'."\n".
+                    'Da wir die Summe dieser rationalen Zahlen noch nicht kennen, wollen wir sie berechnen und setzen sie gleich unserer neuen Variable \lm{ y }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -516,7 +516,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  =  y  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Für die rationale Zahl \\latexmath{ x } in der ersten Teilsumme gibt es nur alle rein negativen ganzen Zahlen als superial kleine Schritte in der zweiten Teilsumme:'."\n".
+                    'Für die rationale Zahl \lm{ x } in der ersten Teilsumme gibt es nur alle rein negativen ganzen Zahlen als superial kleine Schritte in der zweiten Teilsumme:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -551,7 +551,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  y \cdot 2  +  x  =  \# [ 0, x [_\mathbb{Q} \; \cdot \; x  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wir erweitern beide Seiten mit \\latexmath{ \omega } und vertauschen links und rechts:'."\n".
+                      'Wir erweitern beide Seiten mit \lm{ \omega } und vertauschen links und rechts:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -578,7 +578,7 @@
                   array( 'text', array( text => array(
                   '\\condb{Die Summe beider Summanden unserer Superial-Zahlen} \\\\'."\n".
                     'Jetzt können wir die Summe aller superial kleinen Zahlen'."\n".
-                    'von Null bis ausschließlich \\latexmath{ x } anders ausdrücken:'."\n".
+                    'von Null bis ausschließlich \lm{ x } anders ausdrücken:'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -611,7 +611,7 @@
                   array( 'text', array( text => array(
                   '\\condb{Eine interessante Zugabe zur ersten Summe} \\\\'."\n".
                     'Die Formel \\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-y-mal-2-plus-x-zus-mal-omega-ist-erster-Summand}'."\n".
-                    'können wir auch noch anders schreiben, wenn wir unseren Substituenten \\latexmath{ y } wieder durch'."\n".
+                    'können wir auch noch anders schreiben, wenn wir unseren Substituenten \lm{ y } wieder durch'."\n".
                     'die ihm gleiche Summe ersetzen.'."\n".
                     'Wir möchten dabei aus den drei Summanden oben zwei sehr anschauliche Summanden machen:'."\n".
                     ''))),
@@ -632,8 +632,8 @@
                       'Hier beachten wir, dass die Intervall-Mengen-Klammern in beiden Summen gleich ausgerichtet sind.'."\n".
                       'Durch eine unterschiedliche Ausrichtung der Klammern können wir die geklammerte Summe umschreiben,'."\n".
                       'weil wir auf der Seite der Null die Klammer einfach ohne Folgen umdrehen'."\n".
-                      'und weil wir durch das Umdrehen der Klammer auf der Seite des \\latexmath{ x } den nachfolgenden'."\n".
-                      'Summanden \\latexmath{ x } einfach in die Summe integrieren können:'."\n".
+                      'und weil wir durch das Umdrehen der Klammer auf der Seite des \lm{ x } den nachfolgenden'."\n".
+                      'Summanden \lm{ x } einfach in die Summe integrieren können:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -653,13 +653,13 @@
 
                   array( 'text', array( text => array(
                     'Den neuen Ausdruck für den ersten Summanden des uns bekannten Ergebnisses der superial kleinen ganzen Zahlen,'."\n".
-                    'von Null bis ausschließlich \\latexmath{ x }, können wir so interpretieren:'."\n",
+                    'von Null bis ausschließlich \lm{ x }, können wir so interpretieren:'."\n",
                       'Die erste Summe in der Klammer steht für alle superial kleinen ganzen Zahlen,'."\n".
                     'deren ganzer Zahlenanteil Null oder positiv sind.'."\n".
                     'Die zweite Summe in der Klammer steht für alle superial kleinen ganzen Zahlen,'."\n".
                     'deren ganzer Zahlenanteil rein negativ sind.'."\n".
-                    'Jede dieser beiden Summen von rationalen Zahlen gibt es daher \\latexmath{ \omega } mal,'."\n".
-                    'da es sowohl alle Null oder positiven ganzen Zahlen in der Anzahl \\latexmath{ \omega } gibt,'."\n".
+                    'Jede dieser beiden Summen von rationalen Zahlen gibt es daher \lm{ \omega } mal,'."\n".
+                    'da es sowohl alle Null oder positiven ganzen Zahlen in der Anzahl \lm{ \omega } gibt,'."\n".
                     'als dies auch für alle rein negativen der Fall ist.'."\n",
                       'Unsere bekannte Gesamtsumme wird dann zu:'."\n".
                     ''))),
@@ -672,23 +672,23 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  *( \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in ] 0, x ]_\mathbb{Q}}  \!\! q  \\\  \qquad\qquad\qquad\qquad\qquad\qquad - \;  \# [ 0, x \, [_\mathbb{Q} \; \cdot \; s^{-1} *) \cdot \omega  }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Ist in jedem Fall interessant, dass \\latexmath{ \omega } in allen Summanden vorhanden ist und generell'."\n".
+                    'Ist in jedem Fall interessant, dass \lm{ \omega } in allen Summanden vorhanden ist und generell'."\n".
                     'ausgeklammert werden kann.'."\n".
                     'Diese Summe lässt sich noch auf weitere Arten umformen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:XXX', text =>
                       
-                'Summe aller rationalen Zahlen von Null bis ausschließlich \\latexmath{ x }', subline =>
+                'Summe aller rationalen Zahlen von Null bis ausschließlich \lm{ x }', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Interessant ist auch die Berechnung der Summe der endlichen rationalen Zahlen'."\n".
-                    'von Null bis ausschließlich der Zahl \\latexmath{ x }:'."\n".
+                    'von Null bis ausschließlich der Zahl \lm{ x }:'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Sei Formel \\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-y-mal-2-plus-x-zus-mal-omega-ist-erster-Summand}'."\n".
-                      'gegeben, und wir formen um und ersetzen dann auch wieder den Substituenten \\latexmath{ y }'."\n".
+                      'gegeben, und wir formen um und ersetzen dann auch wieder den Substituenten \lm{ y }'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -712,7 +712,7 @@
                     'weil sie uns in die Lage versetzen, eine Idee davon zu bekommen, wie wir solche Summen'."\n".
                     'ausdrücken können.'."\n",
                       'Erstaunlich, wie ähnlich diese Summe der Summe aller superial kleinen Zahlen von Null'."\n".
-                    'bis ausschließlich \\latexmath{ x } ist:'."\n".
+                    'bis ausschließlich \lm{ x } ist:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -733,13 +733,13 @@
                     'Aber vielleicht können wir ja noch besser verstehen, warum dies so ist?'."\n",
                       'Wie oben schon erwähnt, wissen wir mit Hilfe der Biordinalzahlen aus dem späteren Abschnitt \\italic{›\\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}‹}'."\n".
                     'die Anzahl der rationalen Zahlen zwischen Null und ausschließlich der Eins aus Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s}.'."\n".
-                    'Diese haben wir in Formel \\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-x} auf ihre Anzahl zwischen Null und ausschließlich \\latexmath{ x } erweitert.'."\n",
-                      'Die Anzahl der rationalen Zahlen zwischen Null und ausschließlich \\latexmath{ x } beläuft sich demnach auf \\latexmath{ \frac{ x \cdot s }{ 2 \cdot \omega }  \;  . }'."\n".
-                    'Ihre Größenordnung \\latexmath{ s } zeigt uns, dass wir auch ein Ergebnis in der Größenordnung \\latexmath{ s } erwarten sollten,'."\n".
+                    'Diese haben wir in Formel \\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-x} auf ihre Anzahl zwischen Null und ausschließlich \lm{ x } erweitert.'."\n",
+                      'Die Anzahl der rationalen Zahlen zwischen Null und ausschließlich \lm{ x } beläuft sich demnach auf \lm{ \frac{ x \cdot s }{ 2 \cdot \omega }  \;  . }'."\n".
+                    'Ihre Größenordnung \lm{ s } zeigt uns, dass wir auch ein Ergebnis in der Größenordnung \lm{ s } erwarten sollten,'."\n".
                     'wenn wir so viele endliche Zahlen summieren.'."\n".
                     'Das passt schon mal zu unserer gesuchten Summe.'."\n",
                       'Da es sich bei den rationalen Zahlen um die Koeffizienten endlicher Größe von superial kleinen ganzen Zahlen handelt,'."\n".
-                    'müssen sie alle den gleichen Abstand zueinander haben, der sich aus ihrer Dichte \\latexmath{ \rho_Q } berechnet:'."\n".
+                    'müssen sie alle den gleichen Abstand zueinander haben, der sich aus ihrer Dichte \lm{ \rho_Q } berechnet:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -751,7 +751,7 @@
                     'Bei der gesuchten Summe handelt es sich um die Summe von positiven Werten, mit der Null, die sich auf einer Hauptdiagonalen'."\n".
                     'verteilen, wie es auch bei den natürlichen Zahlen der Fall ist.'."\n".
                     'Naiv gesprochen, können wir auch die Summe der natürlichen nehmen und diese auf die entsprechende Dichte skalieren.'."\n",
-                      'Die Summe der endlichen und aktual unendlichen natürlichen Zahlen der ersten \\latexmath{ n } Elemente einer solchen Menge, mit der Null,'."\n".
+                      'Die Summe der endlichen und aktual unendlichen natürlichen Zahlen der ersten \lm{ n } Elemente einer solchen Menge, mit der Null,'."\n".
                     'ergibt sich aus der angepassten Gaußschen Summenformel\\footnote{\\const{BiOrd_g_footnote_text_GaussscheSummenformel}},'."\n".
                     'wie bei den Biordinalzahlen im Abschnitt \\italic{›\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}‹} nach Formel'."\n".
                     '\\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich} angegeben.'."\n".
@@ -763,7 +763,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in [ 0, \frac{ x \cdot s }{ 2 \cdot \omega } [_{\mathbb{N}_{\infty}} }  \!\!\!\! i  =  \frac{ *( \frac{ x \cdot s }{ 2 \cdot \omega } *)^{2} - \frac{ x \cdot s }{ 2 \cdot \omega } }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Und das Ergebnis ist jetzt um \\latexmath{ \frac{ s }{ 2 \cdot \omega} } zu weit'."\n".
+                    'Und das Ergebnis ist jetzt um \lm{ \frac{ s }{ 2 \cdot \omega} } zu weit'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
