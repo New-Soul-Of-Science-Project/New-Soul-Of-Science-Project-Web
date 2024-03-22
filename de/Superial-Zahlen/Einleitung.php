@@ -729,8 +729,8 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s', text =>
                                            
-                'Was ist unsere neue superiale Basis \latexmath{ s }?', subline =>
-                  'Primzahlen sind grundlegend für die Antwort')),
+                'Mit Primzahlen ins Unendliche', subline =>
+                  'Was ist unsere neue superiale Basis \latexmath{ \s }?')),
                   array( 'text', array( text => array(
                     'Wir haben nun eine gute Idee, was wir mit der superialen Basis \latexmath{ s } anfangen können.'."\n".
                     'So stellt sich schließlich die Frage:'."\n",
@@ -746,7 +746,7 @@
                     'einer Erkenntnis geführt, deren Tragweite in meinen Augen nicht zu unterschätzen ist.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Mit Primzahlen ins Unendliche} \\\\'."\n".
+                  '\condb{Primzahlen sind grundlegend für die Antwort} \\\\'."\n".
                     'Mit diesen Fragen kommen wir weiter, wenn wir uns mit den stillschweigenden Annahmen beschäftigen,'."\n".
                     'die wir treffen, wenn wir oben mit Hilfe von \latexmath{ s } \jump{OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen}{Ableitungen}'."\n".
                     'und \jump{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen}{Integrale} definieren.'."\n",
