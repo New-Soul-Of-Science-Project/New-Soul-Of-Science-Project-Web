@@ -121,7 +121,7 @@
                   array( 'text', array( text => array(
                   '\condb{Selbstähnlichkeit} \\\\'."\n".
                     'Weil wir immer wieder das gleiche tun, ergibt sich eine fraktale, also selbstähnliche, Netzstruktur.'."\n",
-                      'Die Anzahl \lm{ n }, die Dichte \lm{ \rho } und der Abstand \lm{ d } der Punkte auf Strecke berechnen sich mit der Fraktalebene \latexmath{ x } zu:'."\n".
+                      'Die Anzahl \lm{ n }, die Dichte \lm{ \rho } und der Abstand \lm{ d } der Punkte auf Strecke berechnen sich mit der Fraktalebene \lm{ x } zu:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EinEntw', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -258,7 +258,7 @@
                     'die nach meinem Wissen bisher nicht durch aktual unendliche Zahlen ausgedrückt werden konnten:'."\n".
                     'Die Summe aller endlichen ganzen Zahlen oder die Summe aller endlichen rationalen Zahlen beispielsweise.'."\n",
                       'Über die Struktur, die dabei sichtbar wird, eröffnet sich in meinen Augen ein ganz neuer Kosmos der Zahlentheorie.'."\n".
-                    'Denn wir können die endlichen Primzahlen mit unserer dadurch entdeckten, neuen aktual unendlichen Basis \latexmath{ s }'."\n".
+                    'Denn wir können die endlichen Primzahlen mit unserer dadurch entdeckten, neuen aktual unendlichen Basis \lm{ s }'."\n".
                     'in Zusammenhang bringen, indem wir diese durch Primzahlen definieren, wie wir noch sehen werden.'."\n",
                       'Wir erhalten zum Beispiel auch natürliche Superial-Zahlen, ganze Superial-Zahlen und superiale Primzahlen;'."\n".
                     'aktual unendlich kleine Einsen und aktual unendlich große Einsen.'."\n".
@@ -267,7 +267,7 @@
                     'Kleine und Große.'."\n",
                       'Und nicht zuletzt sind die Superial-Zahlen ein'."\n".
                     '\jump{OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem}{Stellenwertsystem}\footnote{\const{SupNum_g_footnote_text_Stellenwertsystem}}'."\n".
-                    'zur Basis \latexmath{ s },'."\n".
+                    'zur Basis \lm{ s },'."\n".
                     'wo die Ziffern alle positiven wie auch negativen rationalen Zahlen sein können.'."\n",
                       'Wie sagen wir im Englischen so schön:'."\n".
                     '\quote{Lets go for it!}'."\n".
@@ -297,7 +297,7 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)} \\\\'."\n".
                     'Um nachfolgend exakt zu arbeiten, möchte ich an dieser Stelle vorab darauf aufmerksam machen,'."\n".
-                    'dass die Funktionsparameter – meistens \latexmath{ x } – vorerst auf rationale Zahlen der Menge \latexmath{ \mathbb{Q} } beschränkt sind.'."\n".
+                    'dass die Funktionsparameter – meistens \lm{ x } – vorerst auf rationale Zahlen der Menge \lm{ \mathbb{Q} } beschränkt sind.'."\n".
                     'Wir machen diese Einschränkung auch, um zum einen nicht zu viele noch offene Fragen zu berühren, und'."\n".
                     'zum anderen, um eine überbordende Komplexität zu vermeiden.'."\n".
                     ''))),
@@ -406,9 +406,9 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Sei \latexmath{ \mathbb{S}_Z } die Menge der \italic{ganzen Superial-Zahlen}, eine Teilmenge der \italic{Superial-Zahlen} \latexmath{ \mathbb{S} }.'."\n".
-                      'Seien \latexmath{ \lbrack a, b \lbrack_\mathbb{T} }, wenn \latexmath{ \mathbb{T} = \mathbb{S}_Z } ist, die ganzen Superial-Zahlen'."\n".
-                      'in der \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge} von \latexmath{ a } bis \latexmath{ b }, ohne \latexmath{ b }, aus \latexmath{ \mathbb{S}_Z }:'."\n".
+                      'Sei \lm{ \mathbb{S}_Z } die Menge der \italic{ganzen Superial-Zahlen}, eine Teilmenge der \italic{Superial-Zahlen} \lm{ \mathbb{S} }.'."\n".
+                      'Seien \lm{ \lbrack a, b \lbrack_\mathbb{T} }, wenn \lm{ \mathbb{T} = \mathbb{S}_Z } ist, die ganzen Superial-Zahlen'."\n".
+                      'in der \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge} von \lm{ a } bis \lm{ b }, ohne \lm{ b }, aus \lm{ \mathbb{S}_Z }:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -416,14 +416,14 @@
                     ))),
 
                   array( 'text', array( text => array(
-                    'Die ganzen Superial-Zahlen können grundsätzlich Summanden aller natürlichen Potenzen von \latexmath{ s }, also Null und größer, enthalten;'."\n".
+                    'Die ganzen Superial-Zahlen können grundsätzlich Summanden aller natürlichen Potenzen von \lm{ s }, also Null und größer, enthalten;'."\n".
                     'in der nullten Potenz, im endlichen Summanden, eben nur endliche ganze Zahlen;'."\n".
                     'in den höheren Potenzen nur rationale Zahlen als Koeffizienten.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Prinzipiell haben ganze Superial-Zahlen mit der maximalen Potenz Eins – \latexmath{ s^1 = s } –,'."\n".
+                      'Prinzipiell haben ganze Superial-Zahlen mit der maximalen Potenz Eins – \lm{ s^1 = s } –,'."\n".
                       'die wir in unseren Beispielen zum Integrieren als Grundlage benötigen, also die Form:'."\n".
                       ''))),
                   array( 'equations',
@@ -434,7 +434,7 @@
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Für die genaue Menge können wir, angelehnt an die später gefundene Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s},'."\n".
-                      'folgende Beschreibung geben – wie immer mit \latexmath{ x \in \mathbb{Q} }:'."\n".
+                      'folgende Beschreibung geben – wie immer mit \lm{ x \in \mathbb{Q} }:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -451,7 +451,7 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Jetzt haben wir zwar die richtige Anzahl an Schritten, aber sie sind nicht fein genug,'."\n".
-                      'sollen sie doch eigentlich von Null bis \latexmath{ x } in \term{s^^{-1}} kleinen Schritten laufen.'."\n".
+                      'sollen sie doch eigentlich von Null bis \lm{ x } in \term{s^^{-1}} kleinen Schritten laufen.'."\n".
                       'So müssen wir die Zahlen dieses Intervals der ganzen Superial-Zahlen also mit \term{s^^{-1}} multiplizieren'."\n".
                       'und auf diese Weise auf eine \jump{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen}{superial kleine Größenordnung skalieren}.'."\n",
                         'Alternativ können wir auch eine Menge definieren, in der alle Zahlen schon mit \term{s^^{-1}} multipliziert sind:'."\n".
@@ -464,11 +464,11 @@
                                           label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Menge-superial-kleine-ganze-Zahlen', label_text => '\name{OM:SupNum:Einleitung:Vortext:Equ-Menge-superial-kleine-ganze-Zahlen}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Im benötigten Mengen-Intervall laufen die Zahlen in \latexmath{ x \cdot s } unendlich kleinen Schritten'."\n".
+                      'Im benötigten Mengen-Intervall laufen die Zahlen in \lm{ x \cdot s } unendlich kleinen Schritten'."\n".
                       'der Größe \term{s^^{-1}} durch.'."\n".
                       'Auszugweise sieht diese Intervall-Menge von unendlich feinschrittigen superial kleinen ganzen Superial-Zahlen folgendermaßen aus,'."\n".
                       'wobei Beginn und Ende exakt stimmen und sich ihre Größensortierung nach der lexikografischen Ordnung\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}},'."\n".
-                      'unter Berücksichtigung der Potenz von \latexmath{ s }, richtet:'."\n".
+                      'unter Berücksichtigung der Potenz von \lm{ s }, richtet:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -484,7 +484,7 @@
                       array( display => 'on',  latex => '{  f(x)  :=  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) \cdot s^{-1}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Diese Summe ist so definiert, dass sie im Falle von \latexmath{ x < 0 } negativ wird.'."\n",
+                      'Diese Summe ist so definiert, dass sie im Falle von \lm{ x < 0 } negativ wird.'."\n",
                         'So bekommen wir einen neuen Ausdruck für das Integral in Form einer originären Summe.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -502,7 +502,7 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Wir nehmen das erste obige \jump{OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen}{Ableitungsbeispiel} \latexmath{ f(x) = x^2 } mit'."\n".
+                      'Wir nehmen das erste obige \jump{OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen}{Ableitungsbeispiel} \lm{ f(x) = x^2 } mit'."\n".
                       'dem Ableitungsergebnis \term{ f\'(x) = 2 x + s^^{-1} } und setzen dies in unsere Integralformel ein:'."\n".
                       ''))),
                   array( 'equations',
@@ -513,8 +513,8 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Anschließend haben wir die innere und äußere Summe in zwei getrennte Summen umgeformt.'."\n",
-                        'Die hintere Summe addiert die Eins \latexmath{ x \cdot s } mal, weil die Schrittgröße hierbei ja keine Rolle spielt,'."\n".
-                      'sondern nur die Schrittanzahl, und das ergibt natürlich auch \latexmath{ x \cdot s }:'."\n".
+                        'Die hintere Summe addiert die Eins \lm{ x \cdot s } mal, weil die Schrittgröße hierbei ja keine Rolle spielt,'."\n".
+                      'sondern nur die Schrittanzahl, und das ergibt natürlich auch \lm{ x \cdot s }:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -523,7 +523,7 @@
                                           label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Integriere-zu-x2-bis-auf-letzte-Summe', label_text => '\name{OM:SupNum:Einleitung:Vortext:Equ-Integriere-zu-x2-bis-auf-letzte-Summe}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Die übrige Summe der superial kleinen ganzen Zahlen der ersten \latexmath{ x \cdot s } Elemente dieser Menge, mit der Null,'."\n".
+                      'Die übrige Summe der superial kleinen ganzen Zahlen der ersten \lm{ x \cdot s } Elemente dieser Menge, mit der Null,'."\n".
                       'ergibt sich aus der angepassten Gaußschen Summenformel\footnote{\const{BiOrd_g_footnote_text_GaussscheSummenformel}},'."\n".
                       'wie bei den Biordinalzahlen im Abschnitt \italic{›\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}‹} nach Formel'."\n".
                       '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich} angegeben:'."\n".
@@ -534,13 +534,13 @@
                                            /* label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich', */label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Diese Summe ist extra darauf angepasst, dass sie auch für aktual unendlich große Werte von \latexmath{ n },'."\n".
+                      'Diese Summe ist extra darauf angepasst, dass sie auch für aktual unendlich große Werte von \lm{ n },'."\n".
                       'also für aktual unendlich große natürliche Zahlen, gilt.'."\n".
-                      'Dies wird durch das \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{Mengensymbol \latexmath{ \mathbb{N}_\infty }} ausgedrückt.'."\n",
+                      'Dies wird durch das \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{Mengensymbol \lm{ \mathbb{N}_\infty }} ausgedrückt.'."\n",
                         'Wir müssen nur berücksichtigen, dass die Werte der gesuchten Summe in superial kleinen Schritten daher kommen:'."\n".
-                      'Das bedeutet, dass wir es mit \latexmath{ x \cdot s } Elementen zu tun haben – anstatt mit \latexmath{ x } –,'."\n".
-                      'was in der oben stehenden Formel auf der Ergebnisseite als \latexmath{ x \cdot s } für \latexmath{ n } eingeht.'."\n".
-                      'Jedoch ist die Größe der einzelnen Summanden auf Ebene der ganzen Zahlen superial klein, sodass wir das Ergebnis um eine superiale Potenz \latexmath{ s }'."\n".
+                      'Das bedeutet, dass wir es mit \lm{ x \cdot s } Elementen zu tun haben – anstatt mit \lm{ x } –,'."\n".
+                      'was in der oben stehenden Formel auf der Ergebnisseite als \lm{ x \cdot s } für \lm{ n } eingeht.'."\n".
+                      'Jedoch ist die Größe der einzelnen Summanden auf Ebene der ganzen Zahlen superial klein, sodass wir das Ergebnis um eine superiale Potenz \lm{ s }'."\n".
                       'verringern müssen:'."\n".
                       ''))),
                   array( 'equations',
@@ -554,7 +554,7 @@
                       /*  'XXX Um die übrige Summe zu berechnen, ist ein tieferes Verständnis der \jump{OM:BiOrd:Home}{Biordinalzahlen}'."\n".
                       'anzuwenden und wir kommen auch nicht drum herum nachfolgend ein tieferes Verständnis der hier entwickelten Superial-Zahlen zu erlangen.'."\n",
                         'Wir können an dieser Stelle diese noch unbekannte Summe durch Umstellung berechnen,'."\n".
-                      'denn das Ergebnis \latexmath{ f(x) = x^2 } ist uns ja nun schon durch das erste Ableitungsbeispiel oben bekannt,'."\n".
+                      'denn das Ergebnis \lm{ f(x) = x^2 } ist uns ja nun schon durch das erste Ableitungsbeispiel oben bekannt,'."\n".
                       'und wir setzen es dazu ein:'."\n".
                       ''))),
                   array( 'equations',
@@ -591,10 +591,10 @@
                       'Und das ist ja eines meiner Ziele, beim Ableiten und besonders beim Integrieren nicht so eine Black-Box vor uns zu haben.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Auf diese Weise ergibt sich für uns ein zunehmend konkretes Bild davon, was die superiale Basis \latexmath{ s } eigentlich ist'."\n".
-                    'und was wir mit \latexmath{ s } alles anfangen können.'."\n".
+                    'Auf diese Weise ergibt sich für uns ein zunehmend konkretes Bild davon, was die superiale Basis \lm{ s } eigentlich ist'."\n".
+                    'und was wir mit \lm{ s } alles anfangen können.'."\n".
                     'Aus diesem besser werdendem Bild, und besonders über die nähere Beleuchtung der Frage der ganzen Superial-Zahlen,'."\n".
-                    'kommen wir gleich zu einer ganz bemerkenswerten Definition unserer superialen Basis \latexmath{ s }.'."\n".
+                    'kommen wir gleich zu einer ganz bemerkenswerten Definition unserer superialen Basis \lm{ s }.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
@@ -621,9 +621,9 @@
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-erster-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Dabei steht das Symbol \latexmath{ \omega } für die Anzahl der endlichen natürlichen Zahlen, mit der Null, in der Menge \latexmath{ \mathbb{N} };'."\n".
+                    'Dabei steht das Symbol \lm{ \omega } für die Anzahl der endlichen natürlichen Zahlen, mit der Null, in der Menge \lm{ \mathbb{N} };'."\n".
                     'also für die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n".
-                    'Und das Symbol \latexmath{ \# } gibt die Anzahl der Elemente der nachfolgenden Menge an.'."\n",
+                    'Und das Symbol \lm{ \# } gibt die Anzahl der Elemente der nachfolgenden Menge an.'."\n",
                       'Gleiches gilt auch für den zweiten Summanden:'."\n".
                     ''))),
                   array( 'equations',
@@ -641,7 +641,7 @@
                     'wie es endliche natürliche Zahlen gibt, also endliche positive ganze Zahlen, mit der Null.'."\n".
                     'Demnach finden wir, bei genauer Untersuchung, eine \jump{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen}{fundamentale Asymmetrie}'."\n".
                     'zwischen der ontologischen Struktur der endlichen ganzen Zahlen und der Verteilung ihrer Werte (siehe \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen}, im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}‹}).'."\n".
-                    'Dadurch ergibt die Summe aller endlichen ganzen Zahlen die aktual unendlich große negative Zahl \latexmath{ -\omega } (siehe Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}).'."\n",
+                    'Dadurch ergibt die Summe aller endlichen ganzen Zahlen die aktual unendlich große negative Zahl \lm{ -\omega } (siehe Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}).'."\n",
                       'Addieren wir nun beide Summanden, so erhalten wir:'."\n".
                     ''))),
                   array( 'equations',
@@ -653,7 +653,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Ein mir bisher unbekanntes und bemerkenswertes Ergebnis aus unendlichen Summen und aktual unendlichen Anzahlen.'."\n",
-                      'Ebenso für die Summe aller endlichen rationalen Zahlen von Null bis ausschließlich – oder einschließlich – \latexmath{ x } können wir ein'."\n".
+                      'Ebenso für die Summe aller endlichen rationalen Zahlen von Null bis ausschließlich – oder einschließlich – \lm{ x } können wir ein'."\n".
                     'Ergebnis finden:'."\n".
                     ''))),
                   array( 'equations',
@@ -668,7 +668,7 @@
                       'In alldem kommen einige interessante Dinge vor, wie wir sehen, die zuvor wohl nicht zu fassen waren:'."\n".
                     'Auch die Anzahl aller endlichen rationalen Zahlen insgesamt und in einem Intervall konnte nach meinem Wissen zuvor'."\n".
                     'nicht durch eine aktual unendliche Zahl ausgedrückt werden.'."\n".
-                    'Und auch, wie eben gesagt, dass die Summe der endlichen ganzen Zahlen negativ ist und \latexmath{ -\omega } entspricht'."\n".
+                    'Und auch, wie eben gesagt, dass die Summe der endlichen ganzen Zahlen negativ ist und \lm{ -\omega } entspricht'."\n".
                     'war mir nicht bekannt.'."\n",
                       'Ich denke, all dies ist schon etwas ziemlich besonderes und kann Appetit auf mehr machen.'."\n".
                     'Da ist im Folgenden noch einiges faszinierendes zu Entdecken.'."\n".
@@ -715,7 +715,7 @@
                                             
                   array( 'text', array( text => array(
                     'Die Stellenwertsystem-Darstellung verdeutlicht, dass die Superial-Zahlen eine fraktale Struktur besitzen,'."\n".
-                    'die sich in jeder Zahlenstelle beziehungsweise Potenzebene von \latexmath{ s } wiederholt'."\n".
+                    'die sich in jeder Zahlenstelle beziehungsweise Potenzebene von \lm{ s } wiederholt'."\n".
                     '(siehe \jumpname{OM:SupNum:Einleitung:Vortext:Fig-GeradeSuperialZahlen}).'."\n",
                       'Ihre Selbstähnlichkeit bezieht sich darauf, dass die Gerade der endlichen rationalen Zahlen'."\n".
                     'um die unendlich kleinen, superialen Zahlen erweitert wird und auf diese Weise zwischen'."\n".
@@ -730,11 +730,11 @@
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s', text =>
                                            
                 'Mit Primzahlen ins Unendliche', subline =>
-                  'Was ist unsere neue superiale Basis \latexmath{ \s }?')),
+                  'Was ist unsere neue superiale Basis \lm{ \s }?')),
                   array( 'text', array( text => array(
-                    'Wir haben nun eine gute Idee, was wir mit der superialen Basis \latexmath{ s } anfangen können.'."\n".
+                    'Wir haben nun eine gute Idee, was wir mit der superialen Basis \lm{ s } anfangen können.'."\n".
                     'So stellt sich schließlich die Frage:'."\n",
-                      'Können wir sagen, was \latexmath{ s } genau ist?'."\n".
+                      'Können wir sagen, was \lm{ s } genau ist?'."\n".
                     'Wie definieren wir unsere superiale Basis und stiften damit noch mehr Sinn; gewinnen noch mehr Erkenntnis?'."\n",
                       'Mit dieser wichtigen Frage konfrontierte mich einst ein Hamburger Universitätsprofessor,'."\n".
                     'den ich mit einer von ihm unverlangten E-Mail an ihn und einer darauf folgenden'."\n".
@@ -748,7 +748,7 @@
                   array( 'text', array( text => array(
                   '\condb{Primzahlen sind grundlegend für die Antwort} \\\\'."\n".
                     'Mit diesen Fragen kommen wir weiter, wenn wir uns mit den stillschweigenden Annahmen beschäftigen,'."\n".
-                    'die wir treffen, wenn wir oben mit Hilfe von \latexmath{ s } \jump{OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen}{Ableitungen}'."\n".
+                    'die wir treffen, wenn wir oben mit Hilfe von \lm{ s } \jump{OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen}{Ableitungen}'."\n".
                     'und \jump{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen}{Integrale} definieren.'."\n",
                       'Wir konnten bei der Herleitung des Integrals aus der Ableitung oben schon feststellen,'."\n".
                     'dass wir bezüglich der Ableitung schon stillschweigend oder unbewusst davon ausgegangen sind,'."\n".
@@ -757,15 +757,15 @@
                     'der Ableitung wieder aufzusummieren.'."\n".
                     'Dabei stellt sich die Frage:'."\n".
                     'Wie groß sind diese Schritte und wieviele Schritte sind notwendig, um die ursprüngliche'."\n".
-                    'Funktion \latexmath{ f(x) } aus der abgeleiteten \latexmath{ f\'(x) } wieder herzustellen.'."\n",
-                      'Als wir uns damit beschäftigten, kam die Erkenntnis, wir müssten \latexmath{ x \cdot s }'."\n".
-                    'Schritte in den Funktionswerten von \latexmath{ f\'(x) } der Größe \term{s^^{-1}}'."\n".
-                    'von Null bis ausschließlich \latexmath{ x } addieren.'."\n",
+                    'Funktion \lm{ f(x) } aus der abgeleiteten \lm{ f\'(x) } wieder herzustellen.'."\n",
+                      'Als wir uns damit beschäftigten, kam die Erkenntnis, wir müssten \lm{ x \cdot s }'."\n".
+                    'Schritte in den Funktionswerten von \lm{ f\'(x) } der Größe \term{s^^{-1}}'."\n".
+                    'von Null bis ausschließlich \lm{ x } addieren.'."\n",
                       'Diese Schritte konnten wir durch Skalierung von ganzen Zahlen von Null bis ausschließlich'."\n".
-                    '\latexmath{ x \cdot s } erzeugen.'."\n".
+                    '\lm{ x \cdot s } erzeugen.'."\n".
                     'Was zum einen die Existenz dieser unendlich großen ganzen Zahlen voraussetzt;'."\n".
                     'und zum anderen, dass sich diese Zahlen nach ihrer Größe ordnen lassen, also linear angeordnet sind.'."\n",
-                      'Welche Eigenschaften muss \latexmath{ s } demnach haben, damit ein Produkt von \latexmath{ s }'."\n".
+                      'Welche Eigenschaften muss \lm{ s } demnach haben, damit ein Produkt von \lm{ s }'."\n".
                     'mit jeder rationalen Zahl eine ganze Zahl ergibt, auch wenn diese unendlich groß ist?'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -783,7 +783,7 @@
                   array( 'text', array( text => array(
                     'Dies kommt daher, weil bekanntermaßen jede rationale Zahl ein Bruch zweier ganzer Zahlen ist.'."\n".
                     'Ausgeschlossen ist natürlich durch Null zu teilen.'."\n",
-                      'Welche Eigenschaft muss die Zahl \latexmath{ s } haben, sodass sie multipliziert mit jeder'."\n".
+                      'Welche Eigenschaft muss die Zahl \lm{ s } haben, sodass sie multipliziert mit jeder'."\n".
                     'rationalen Zahl immer noch eine ganze Zahl ergibt?'."\n".
                     ''))),
 
@@ -831,20 +831,20 @@
                     ))), */
                       
                   array( 'text', array( text => array(
-                  '\condb{Die Definition von \latexmath{ s }} \\\\'."\n".
-                    'Nach meinem Verständnis muss \latexmath{ s } eine Primfaktorzerlegung haben,'."\n".
+                  '\condb{Die Definition von \lm{ s }} \\\\'."\n".
+                    'Nach meinem Verständnis muss \lm{ s } eine Primfaktorzerlegung haben,'."\n".
                     'die eine unendlich große Potenz aller endlichen Primzahlen ist.'."\n".
-                    'Nur so ist gewährleistet, dass keine Potenz im Produkt einer rationalen Zahl mit \latexmath{ s }'."\n".
+                    'Nur so ist gewährleistet, dass keine Potenz im Produkt einer rationalen Zahl mit \lm{ s }'."\n".
                     'negativ und dadurch das Produkt eine gebrochene Zahl wird.'."\n".
                     'Und nur dadurch ist gewährleistet, dass wir ein solches Produkt beliebig endlich oft machen können,'."\n".
                     'ohne, dass das Ergebnis endlich werden kann, sondern unendlich groß bleibt.'."\n",
-                      'In \latexmath{ s } muss also jede Primfaktorzerlegung einer endlichen ganzen Zahl'."\n".
+                      'In \lm{ s } muss also jede Primfaktorzerlegung einer endlichen ganzen Zahl'."\n".
                     'beliebig endlich oft stecken.'."\n".
-                    'Eine Definition von \latexmath{ s }, die dies explizit umsetzt, finden wir auf der Seite'."\n".
+                    'Eine Definition von \lm{ s }, die dies explizit umsetzt, finden wir auf der Seite'."\n".
                     '\italic{\jumpname{OM:SupNum:Formale-Entwicklung}}'."\n".
                     'im Abschnitt \italic{\jumpname{OM:SupNum:Formale-Entwicklung:Vortext:DefinitionSuperialeEinheit}}.'."\n",
                       'Folgendes Primzahlprodukt sollte das einfachste kleinste Produkt aus unendlich vielen Primfaktoren sein,'."\n".
-                    'dass diese Bedingung erfüllt, dabei ist \latexmath{ \mathbb{P} } die Menge aller endlicher Primzahlen:'."\n".
+                    'dass diese Bedingung erfüllt, dabei ist \lm{ \mathbb{P} } die Menge aller endlicher Primzahlen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -853,12 +853,12 @@
                     ))),
                   array( 'text', array( text => array(
                     'In diesem Produkt wird erst einmal das Produkt aller endlichen Primzahlen'."\n".
-                    '\latexmath{ 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots } gebildet, um sie alle vorrätig zu haben.'."\n".
+                    '\lm{ 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots } gebildet, um sie alle vorrätig zu haben.'."\n".
                     'Anschließend wird es so oft mit sich selber mal genommen, wie groß die Anzahl der endlichen natürlichen Zahlen ist,'."\n".
                     'um alle Primzahlen auch in einer Potenz vorrätig zu haben, die für alle gleich groß ist, aber so klein wie möglich,'."\n".
                     'dass die Potenz durch keine in rationalen Zahlen mögliche, negative Potenz in einem Produkt mit ihr endlich groß werden kann.'."\n",
-                      'Die hier in der Potenz erzeugte Anzahl wird in der Mengenlehre mit \latexmath{ \omega } bezeichnet und steht so für die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n".
-                    'So können wir über das Symbol \latexmath{ \# } der Anzahl der Elemente einer Menge,\footnote{Vgl. \cite{wiki:MaechtigkeitMathematik:2023},'."\n".
+                      'Die hier in der Potenz erzeugte Anzahl wird in der Mengenlehre mit \lm{ \omega } bezeichnet und steht so für die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n".
+                    'So können wir über das Symbol \lm{ \# } der Anzahl der Elemente einer Menge,\footnote{Vgl. \cite{wiki:MaechtigkeitMathematik:2023},'."\n".
                     'Mächtigkeit bei endlichen Mengen.} das ich hier auf unendlich große, abzählbare Mengen erweitere, definieren:'."\n".
                     ''))),
                   array( 'equations',
@@ -873,7 +873,7 @@
                   array( 'text', array( text => array(
                     'Wie Formel \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null} definiert, setze ich voraus, dass die natürlichen Zahlen die Null enthalten.'."\n".
                     'Den Grund dafür verdeutliche ich im Abschnitt \italic{\jumpname{OM:SupNum:Einleitung:Grundlagen}}.'."\n",
-                      'Für das Primzahlprodukt von \latexmath{ s } ergibt sich also, wie eben beschrieben,'."\n".
+                      'Für das Primzahlprodukt von \lm{ s } ergibt sich also, wie eben beschrieben,'."\n".
                     'eine mit unendlich mal unendlich vielen Primzahlen gefüllte Fläche der folgenden Art:'."\n".
                     ''))),
                   array( 'equations',
@@ -886,9 +886,9 @@
                                           label_name => 'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega', label_text => '\name{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                  '\condb{Die Veränderung der Primfaktorzerlegung von \latexmath{ s } durch rationale Koeffizienten} \\\\'."\n".
+                  '\condb{Die Veränderung der Primfaktorzerlegung von \lm{ s } durch rationale Koeffizienten} \\\\'."\n".
                     'Mit Hilfe der neuen Theorie der \jump{OM:BiOrd:Home}{Biordinalzahlen} können wir auch Zahlen wie'."\n".
-                    '\latexmath{ \omega - n }, mit \latexmath{ n \in \mathbb{N} }, darstellen und damit die Veränderung der Primzahlpotenzen'."\n".
+                    '\lm{ \omega - n }, mit \lm{ n \in \mathbb{N} }, darstellen und damit die Veränderung der Primzahlpotenzen'."\n".
                     'des \italic{unendlichen Primzahl-Flächenprodukts} durch rationale Koeffizienten mit biordinalen Potenzen angeben:'."\n".
                     ''))),
                   array( 'equations',
@@ -896,13 +896,13 @@
                       array( display => 'on',  latex => '{  \frac{2}{9} \cdot s  =  2^{ \omega + 1} \cdot 3^{ \omega - 2} \cdot *( 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{\omega}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Hier können wir sehen, dass \latexmath{ s } durch Multiplikation mit endlich beliebig vielen'."\n".
+                    'Hier können wir sehen, dass \lm{ s } durch Multiplikation mit endlich beliebig vielen'."\n".
                     'rationalen Zahlen immer unendlich groß bleibt, also seine superiale Dimension nicht verändert.'."\n".
                     'Denn dadurch werden, aufgrund der Primfaktorzerlegung endlicher ganzer Zahlen, immer'."\n".
                     'nur natürliche Zahlen auf die jeweiligen Potenzen addiert oder von ihnen abgezogen.'."\n".
-                    'Da für jede natürliche Zahl \latexmath{ n } die \jump{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}{Differenz \latexmath{ \omega - n } immer'."\n".
-                    'unendlich groß bleibt}, kann kein rationaler Koeffizient \latexmath{ q } einer endlich ganzzahligen Potenz \latexmath{ z } von'."\n".
-                    '\latexmath{ s }, also unser folgendes \latexmath{ s^z }, in eine andere Potenzebene bringen:'."\n".
+                    'Da für jede natürliche Zahl \lm{ n } die \jump{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}{Differenz \lm{ \omega - n } immer'."\n".
+                    'unendlich groß bleibt}, kann kein rationaler Koeffizient \lm{ q } einer endlich ganzzahligen Potenz \lm{ z } von'."\n".
+                    '\lm{ s }, also unser folgendes \lm{ s^z }, in eine andere Potenzebene bringen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -911,12 +911,12 @@
                       array( display => 'on',  latex => '{  *( \nexists q_{z} \in \mathbb{Q}^{+} *) *( \forall z \in \mathbb{Z} *) *( \forall q_{z+1} \in \mathbb{Q}^{+} *)  \\\ \qquad\qquad\qquad *[  q_{z} \cdot s^{z}  >  q_{z+1} \cdot s^{z+1}  *]   }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Potenz \latexmath{ z } von \latexmath{ s } dominiert den Koeffizienten \latexmath{ q }'."\n".
+                    'Die Potenz \lm{ z } von \lm{ s } dominiert den Koeffizienten \lm{ q }'."\n".
                     'bezüglich der Größe in der Anordnung und ist der Grund für die lexikografische Ordnung\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}}'."\n".
                     'der Superial-Zahlen.'."\n",
                       'Diese Eigenschaft ist generell sehr bemerkenswert und tatsächlich auch durch die'."\n".
-                    'Definition von \latexmath{ s } über das unendliche Primzahl-Flächenprodukt gewährleistet.'."\n".
-                    'Weiteres zur Dominanz der Potenzen von \latexmath{ s } untersuchen wir im Abschnitt \italic{\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen}}.'."\n".
+                    'Definition von \lm{ s } über das unendliche Primzahl-Flächenprodukt gewährleistet.'."\n".
+                    'Weiteres zur Dominanz der Potenzen von \lm{ s } untersuchen wir im Abschnitt \italic{\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen}}.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Primzahlen haben eine Verbindung ins Unendliche} \\\\'."\n".
@@ -928,7 +928,7 @@
                     '\color{*Bearb}{(Der Beweis der \italic{\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}} muss noch berücksichtigt werden.)} \\\\'."\n".
                     'Im spielerischen Umgang und in tieferen Analysen der Zusammenhänge kommt die Vermutung auf, dass das Produkt'."\n".
                     'der einfachen Potenz aller endlichen Primzahlen, also eine Zeile des Primzahl-Flächenprodukts,'."\n".
-                    'der Anzahl der natürlichen Zahlen \latexmath{ \omega } entspricht:'."\n".
+                    'der Anzahl der natürlichen Zahlen \lm{ \omega } entspricht:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -941,29 +941,29 @@
                     'Die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} findet im Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm}}'."\n".
                     'eine nähere Begründung.'."\n".
                     'Dort wird aufgrund des unendlich ganzzahligen Zählens innerhalb der Superial-Zahlen unter anderem erkannt,'."\n".
-                    'dass die \jump{OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen}{Anzahl aller endlichen ganzen Zahlen \latexmath{ 2 \cdot \omega }}'."\n".
-                    'ein ganzzahliger Teiler von \latexmath{ s } sein muss.'."\n".
-                    'Daher muss \latexmath{ \omega } ein ganzzahliger Teiler von \latexmath{ \frac{ s }{ 2 } } sein,'."\n".
+                    'dass die \jump{OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen}{Anzahl aller endlichen ganzen Zahlen \lm{ 2 \cdot \omega }}'."\n".
+                    'ein ganzzahliger Teiler von \lm{ s } sein muss.'."\n".
+                    'Daher muss \lm{ \omega } ein ganzzahliger Teiler von \lm{ \frac{ s }{ 2 } } sein,'."\n".
                     'also ein ganzzahliges Teilprodukt.'."\n",
-                      'Damit muss \latexmath{ \omega } ein unendlich großer Teil des Primzahlprodukts von \latexmath{ s } sein.'."\n".
+                      'Damit muss \lm{ \omega } ein unendlich großer Teil des Primzahlprodukts von \lm{ s } sein.'."\n".
                     'Und bei näherer Analyse stellen wir auch fest, dass es sich um einen unendlich großen Teil des Primzahlprodukts'."\n".
                     'im horizontalen Bereich aller unterschiedlichen Primzahlen handeln muss.'."\n",
                       'In unserem Beweis der Primzahlprodukt-Vermutung zeigen wir zusätzlich, dass es nur sein kann,'."\n".
-                    'dass die Primfaktorzerlegung von \latexmath{ \omega } endliche Primzahlen von Beginn an und'."\n".
+                    'dass die Primfaktorzerlegung von \lm{ \omega } endliche Primzahlen von Beginn an und'."\n".
                     'ohne Lücke enthalten muss.'."\n".
                     'Und von diesen dann unendlich viele, was zusammengefasst bedeutet, einfach alle endlichen Primzahlen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Überrationalitätsvermutung} \\\\'."\n".
                     '\color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)} \\\\'."\n".
-                    'Eine weitere Vermutung, die der Primfaktorzerlegungen von \latexmath{ s } entspringt,'."\n".
+                    'Eine weitere Vermutung, die der Primfaktorzerlegungen von \lm{ s } entspringt,'."\n".
                     'dreht sich um die Frage, ob der positive reelle Anteil von algebraischen Zahlen\color{*Bearb}{(Verweis)}'."\n".
                     'durch einen von mir so genannten \italic{überrationalen Bruch} dargestellt werden kann.'."\n",
                       'Ein überrationaler Bruch ist ein Bruch, der im Nenner und im Zähler unendlich große, teilerfremde Zahlen hat,'."\n".
                     'deren Primfaktorzerlegung aus unendlich vielen endlichen Primzahlen endlich ganzzahliger Potenzen besteht.'."\n".
-                    'Dann wäre ein Produkt eines überrationalen Bruchs mit \latexmath{ s } ebenfalls unendlich groß und ganzzahlig.'."\n",
-                      'Zu den algebraischen Zahlen gehören auch ganzzahlige Wurzeln natürlicher Zahlen, wie \latexmath{ \sqrt{2} },'."\n".
-                    'womit dann beispielsweise \latexmath{ \sqrt{2} \cdot s } ganzzahlig wäre.'."\n",
+                    'Dann wäre ein Produkt eines überrationalen Bruchs mit \lm{ s } ebenfalls unendlich groß und ganzzahlig.'."\n",
+                      'Zu den algebraischen Zahlen gehören auch ganzzahlige Wurzeln natürlicher Zahlen, wie \lm{ \sqrt{2} },'."\n".
+                    'womit dann beispielsweise \lm{ \sqrt{2} \cdot s } ganzzahlig wäre.'."\n",
                       'Sollte die \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} sich als wahr'."\n".
                     'erweisen, dann wäre dies ebenfalls eine sehr bemerkenswerte Eigenschaft der Superial-Zahlen,'."\n".
                     'die uns neue Informationen über algebraische Zahlen geben würde und so ein wichtiger Beitrag zur Zahlentheorie wäre.'."\n".
@@ -986,10 +986,10 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Unendliche Primzahlen} \\\\'."\n".
-                    'Auch eine Erweiterung der Primzahlen kann auf diese Weise definiert werden und man erhält die Menge \latexmath{ \mathbb{S}_P } der \italic{superialen Primzahlen}.'."\n".
-                    'Zum Beispiel sind die Zahlen \latexmath{ s - 1 } und \latexmath{ s + 1 } unendlich große Primzahlen, weil sie durch keine endliche Primzahl ganzzahlig teilbar sind'."\n".
+                    'Auch eine Erweiterung der Primzahlen kann auf diese Weise definiert werden und man erhält die Menge \lm{ \mathbb{S}_P } der \italic{superialen Primzahlen}.'."\n".
+                    'Zum Beispiel sind die Zahlen \lm{ s - 1 } und \lm{ s + 1 } unendlich große Primzahlen, weil sie durch keine endliche Primzahl ganzzahlig teilbar sind'."\n".
                     'und auch keine andere Zahl in diesem System gefunden werden kann, die diese Zahlen ganzzahlig teilt.'."\n".
-                    'Die Zahlen \latexmath{ s \pm 2 } sind hingegen beide durch \latexmath{ 2 } teilbar, also keine Primzahlen.'."\n",
+                    'Die Zahlen \lm{ s \pm 2 } sind hingegen beide durch \lm{ 2 } teilbar, also keine Primzahlen.'."\n",
                       'Diese Erweiterung der Primzahlen ins Unendliche ist interessant, weil sie die Verteilung der Primzahlen'."\n".
                     'im Unendlichen beleuchtet und so auch neue Einsichten für die endlichen Primzahlen verspricht.'."\n".
                     ''))),
@@ -1006,16 +1006,16 @@
                   array( 'text', array( text => array(
                   '\condb{Anordnung im Unendlichen} \\\\'."\n".
                     'Und die Superial-Zahlen sind, wie gesagt, nach ihrer Größe lexikografisch angeordnet,'."\n".
-                    'unter Berücksichtigung ihrer Potenzen von \latexmath{ s }.\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}}'."\n".
+                    'unter Berücksichtigung ihrer Potenzen von \lm{ s }.\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}}'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Eine unerwartete Verbindung der rationalen Zahlen mit dem Zählen} \\\\'."\n".
-                    'Das natürliche Zählen spiegelt sich in den \italic{natürlichen Superial-Zahlen} \latexmath{ \mathbb{S}_N } wider.'."\n".
-                    'Diese enthalten alle endlichen rationalen Zahlen in ihren Koeffizienten der Potenzen von \latexmath{ s }.'."\n",
+                    'Das natürliche Zählen spiegelt sich in den \italic{natürlichen Superial-Zahlen} \lm{ \mathbb{S}_N } wider.'."\n".
+                    'Diese enthalten alle endlichen rationalen Zahlen in ihren Koeffizienten der Potenzen von \lm{ s }.'."\n",
                       'Nun wissen wir, dass wir rationale Zahlen nicht ihrer Größe nach aufzählen können,'."\n".
                     'weil sie von ihrer Anordnung her dicht sind.\footnote{\const{SupNum_g_footnote_text_RationaleZahlDichtheit}}'."\n".
                     'Interessanter Weise zählen wir in den natürlichen Superial-Zahlen die rationalen Zahlen ihrer Größe nach,'."\n".
-                    'als Koeffizienten der Potenzen von \latexmath{ s }, implizit mit.'."\n",
+                    'als Koeffizienten der Potenzen von \lm{ s }, implizit mit.'."\n",
                       'Denn wir zählen:'."\n".
                     ''))),
                   array( 'equations',
@@ -1419,8 +1419,8 @@
                     'Und dies, ohne dass sich die Existenz der natürlichen Superial-Zahlen und der superialen Primzahlen verändern würde.'."\n".
                     'Es wird die Existenz der \italic{überrationalen Superial-Zahlen} auf Basis von \term{s} vermutet.'."\n".
                     'Ein überrationaler Bruch soll ein Bruch sein, der sowohl im Nenner als auch im Zähler eine Zahl aus unendlich vielen verschiedenen endlichen Primfaktoren endlicher Potenz enthält.'."\n".
-                    'Ein Produkt eines überrationalen Bruchs \latexmath{ q_r } mit \latexmath{ s } ergibt dann die unendliche, natürliche Superial-Zahl \latexmath{  q_r \cdot s}.'."\n".
-                    'Die Menge aller überrationalen Brüche wäre dann \latexmath{ \mathbb{Qr} }.'."\n".
+                    'Ein Produkt eines überrationalen Bruchs \lm{ q_r } mit \lm{ s } ergibt dann die unendliche, natürliche Superial-Zahl \lm{  q_r \cdot s}.'."\n".
+                    'Die Menge aller überrationalen Brüche wäre dann \lm{ \mathbb{Qr} }.'."\n".
                     'Die Vermutung bezieht sich darauf, dass solche überrationalen Brüche definierbar sind.'."\n".
                     'Zu untersuchen ist zum Beispiel, ob die Werte von Wurzeln aus rationalen Zahlen durch solche überrationalen Brüche darstellbar sind.'."\n",
                       'Als Beispiel stellt sich die Frage, ist die Wurzel aus Zwei als überrationaler Bruch darstellbar:'."\n".
@@ -1486,25 +1486,25 @@
                   array( 'text', array( text => array(
                     'Die Definition des Aktual-Unendlichen durch alle endlichen Primzahlen,'."\n".
                     'genauer die Definition der vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
-                    'in Form des Symbols \latexmath{ \omega } durch das \jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung}{Produkt aller endlichen Primzahlen} und'."\n".
-                    'darauf basierend die Definition der superialen Basis oder Einheit \latexmath{ \s }'."\n".
+                    'in Form des Symbols \lm{ \omega } durch das \jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung}{Produkt aller endlichen Primzahlen} und'."\n".
+                    'darauf basierend die Definition der superialen Basis oder Einheit \lm{ \s }'."\n".
                     'in dieser Arbeit, erlaubt uns noch einmal differenziert über die Zahlenarten nachzudenken.'."\n",
                       'Wie oben schon beschrieben gibt es die Vermutung, die Koeffizienten der algebraischen Zahlen'."\n".
-                    'könnten ein Teil des Primzahl-Flächenprodukts von \latexmath{ \s } sein – \jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} –,'."\n".
+                    'könnten ein Teil des Primzahl-Flächenprodukts von \lm{ \s } sein – \jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} –,'."\n".
                     'dass einem Bruch unendlich vieler endlicher Primzahlen mit jeweils endlicher Potenz entspricht.'."\n".
                     'Dies würde folglich dazu führen, dass wir die Koeffizienten der Superial-Zahlen um die Koeffizienten'."\n".
                     'der algebraischen Zahlen erweitern könnten.'."\n".
                     'Diese dann von uns überrationale Zahlen genannten irrationalen Zahlen würden nur aus endlichen Zahlen'."\n".
                     'definiert werden können.'."\n",
                       'Bezüglich der transzendenten Zahlen zeigen wir allerdings exemplarisch, dass die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Eulersche Zahl}\footnote{\const{SupNum_g_footnote_text_EulerscheZahl}}'."\n".
-                    '\latexmath{ \e } unendlich kleine aktual unendliche Summanden enthält, die nicht verschwinden können.'."\n".
+                    '\lm{ \e } unendlich kleine aktual unendliche Summanden enthält, die nicht verschwinden können.'."\n".
                     'Dies gelingt uns mit der hier eingangs formulierten Definition der Ableitung durch die Superial-Zahlen.'."\n".
-                    'Demnach ist \latexmath{ \e } nicht einmal eine Superial-Zahl der hier vorgestellten 1. Ordnung,'."\n".
+                    'Demnach ist \lm{ \e } nicht einmal eine Superial-Zahl der hier vorgestellten 1. Ordnung,'."\n".
                     'sondern noch höherer Ordnung, die noch genau zu definieren ist.'."\n",
                       'Es stellen sich in meinen Augen die Fragen:'."\n",
-                      'Gehört die transzendente Zahl \latexmath{ \e } nach der neuen Erkenntnis zu den reellen Zahlen,'."\n".
+                      'Gehört die transzendente Zahl \lm{ \e } nach der neuen Erkenntnis zu den reellen Zahlen,'."\n".
                     'wenn sie doch nicht verschwindende unendlich kleine aktual unendliche Summanden enthält?'."\n",
-                      'Gehören gegebenenfalls auch noch andere transzendente Zahlen, \jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Quadratur-des-Kreises}{wie \latexmath{ \pi }},'."\n".
+                      'Gehören gegebenenfalls auch noch andere transzendente Zahlen, \jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Quadratur-des-Kreises}{wie \lm{ \pi }},'."\n".
                     'dann nicht zu den reellen Zahlen?'."\n",
                       'Diese und noch weitere Überlegungen führen uns schließlich zur Kontinuumshypothese.'."\n".
                     ''))),
