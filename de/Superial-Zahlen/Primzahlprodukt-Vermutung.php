@@ -14,17 +14,18 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
+                    '\\bold{Verbesserungen der Seite}',
+                    '• Nach dem Beweis der \\italic{\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} die Menge der Koeffizienten der Superial-Zahlen von den rationalen Zahlen \\lm{ \mathbb{Q} } zu den algebraischen Koeffizienten \\lm{ \mathbb{A}_{\R} } ändern.',
+                    '• Den Ausdruck ›Erzeugungskombinatorik‹ auch im oder nach dem Beweis wieder aufgreifen.',
                     '\\bold{Warum könnte die Primzahlprodukt-Vermutung stimmen?}',
                     '• Die Primzahlen werden unter den sehr großen natürlichen Zahlen extrem selten.',
                     '• Es klafft eine riesige Lücke zwischen den endlichen natürlichen Zahlen und \\term{ω}, siehe \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}. Ist diese Lücke wirklich so groß?',
-                    '– Meine Analyse sagt: Eine Anzahl von \\term{ω} Zahlen sind vom Typ \\term{ω - n} in den Biordinalzahlen.',
-                    '– Stimmt allerdings die Primzahlprodukt-Vermutung, dann liegen auch alle \\term{p^^{-1}⋅ω ± n}, mit \\term{p} ist ein Primzahlprodukt einfacher Potenz aus endlich vielen Primzahlen.',
-                    '⋅ Ob es dann eine Einschränkung für die Größe von \\term{n} gibt, ist mir nicht ganz unklar, aber unwahrscheinlich. Wenn nicht, sind es je \\term{p^^{-1}} dann \\term{2⋅ω} Zahlen.',
+                    '– Meine Analyse sagt: Eine Anzahl von \\lm{ \omega } Zahlen sind vom Typ \\lm{ \omega - n } in den Biordinalzahlen.',
+                    '– Da die Primzahlprodukt-Vermutung stimmt, liegen dann auch alle \\lm{ p^{-1} \cdot \omega \pm n}, mit \\lm{ p } ist ein Primzahlprodukt einfacher Potenz aus endlich vielen Primzahlen dort.',
+                    '⋅ Nach meiner Meinung gibt es keine Einschränkung für die Größe von \\lm{ n }. Dann sind es jeweils \\lm{ 2 \cdot \omega} pro jedem \\lm{ p^{-1} } Zahlen.',
                     '\\bold{Interessante Erkenntnisse zu Primzahlen}',
                     '• Der \\jump[https://de.wikipedia.org/w/index.php?title=Stern-Brocot-Folge&oldid=224277569]{Calkin-Wilf-Baum}{Calkin-Wilf-Baum} muss etwas mit der Primzahlstruktur zu tun haben, weil alle seine Brüche teilerfremde Zähler und Nenner haben.',
-                    '• Mit dem \\jump[https://de.wikipedia.org/w/index.php?title=Satz_von_Wilson&oldid=229853875]{}{Satz von Wilson} können wir herausfinden, ob eine Zahl eine Primzahl ist, wenn ich es richtig verstehe, siehe Primzahl-Produkt-Definition von \\term{s} in meinem Ordner „4. Variante“, Dokument „Sup-Zahl (52).pdf“, S. 5.',
-                    '\\bold{Verbesserungen der Seite}',
-                    '• Den Ausdruck ›Erzeugungskombinatorik‹ auch im oder nach dem Beweis wieder aufgreifen.',
+                    '• Mit dem \\jump[https://de.wikipedia.org/w/index.php?title=Satz_von_Wilson&oldid=229853875]{}{Satz von Wilson} können wir herausfinden, ob eine Zahl eine Primzahl ist, wenn ich es richtig verstehe, siehe Primzahl-Produkt-Definition von \\lm{ \s } in meinem Ordner „4. Variante“, Dokument „Sup-Zahl (52).pdf“, S. 5.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -1583,6 +1584,19 @@
                   array( 'text', array( text => array(
                     'Der Übergang ist also wirklich etwas besonderes, von Schritten, die alle keine Teiler voneinander sind,'."\n".
                     'zum Ergebnis bei \\latexmath{ \omega }, das alle Schritte in einem Produkt zusammenfasst.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                      
+                'Erklärung und Verständnis durch das Primzahl-Spektrum der natürlichen Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wenn wir auf die Primzahlen innerhalb der natürlichen Zahlen gucken, dann ist nach Raimund Welschs'."\n".
+                    'Hinweis jede \lm{ 2 }-te Zahl ganzzahlig durch \lm{ 2 } teilbar und'."\n".
+                    'jede \lm{ 3 }-te Zahl ganzzahlig durch \lm{ 3 }, jede \lm{ 5 }-te durch \lm{ 5 } und'."\n".
+                    'schließlich jede \lm{ p }-te Zahl ganzzahlig durch \lm{ p }, für alle endlichen Primzahlen.'."\n",
+                      'Jede größere Potenz einer der Primzahlen, wie bei der \lm{ 2 } die \lm{ 4 } oder \lm{ 8 }, liegt im gleichen Spektrum,'."\n".
+                    'auf dem gleichen Raster, nur mit gröberer Frequenz oder Dichte; trägt also nichts feineres dazu bei.'."\n".
+                    'Daher ist es logisch, dass die Anzahl der natürlichen Zahlen nur durch jede einfache Potenz jeder endlichen Primzahl ganzzahlig teilbar ist.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
                       

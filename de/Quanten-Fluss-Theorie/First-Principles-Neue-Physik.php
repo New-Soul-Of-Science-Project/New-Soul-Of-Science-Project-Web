@@ -177,6 +177,9 @@
                   'Äquivalenz von Masse und Energie')),
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '• \\term{E = m⋅c^^{2}}:',
+                    '– Erklärung:',
+                    '⋅ \\jump[https://www.youtube.com/watch?v=AdwN4t6NiII]{}{Mahesh Shenoy on FloatHeadPhysics — Why speed of light results in E = mc^2 ? [Einstein\'s original proof]}',
+                    '⋅ \\jump[https://www.youtube.com/watch?v=KZ8G4VKoSpQ]{}{Physics Explained — Deriving Einstein\'s most famous equation: Why does energy = mass x speed of light squared?}',
                     '– Die Proportionalität von Energie und Masse ist eine direkte Schlussfolgerung der FrQFT, die sich aus der Annahme (Postulat bzw. Axiom) ergibt, dass Wirkungsquanten sowohl Energieeinheiten als auch Masseneinheiten sind (absolut nur auf der untersten Strukturebene des analysierten Modells)! Dies setzt ein konstantes Verhältnis voraus, welches nach unseren Beobachtungen das Quadrat der Lichtgeschwindigkeit \\term{c^^{2}} der bekannten Formel \\term{E = m⋅c^^{2}} ist.(Verweis auf Wikipedia: ›Äquivalenz von Masse und Energie‹, Überblick und Beispiele, Vernichtungsstrahlung. Dies ist keine relativistisch interpretierte Beobachtung, sondern eine quantenphysikalisch interpretierte!) Siehe auch \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{Herleitung der Lichtverlangsamung} (falls dort nicht entbehrlich geworden …).',
                     '– Albrecht Giese erklärt es: \\cite{Giese:TheOriginOfMass2019}, Kap. 5 Mass Energy Equivalence, S. 6-7.',
                     ))),

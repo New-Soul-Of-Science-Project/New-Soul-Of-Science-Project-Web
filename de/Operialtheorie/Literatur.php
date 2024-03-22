@@ -15,6 +15,8 @@
             Sc_g_litera_make( array(
               'wiki:KompositionMathematik:2022',
               'wiki:PeanoAxiome:2021',
+              'wiki:Praedikatenlogik:2023',
+              'wiki:Quantor:2023',
             ));
           ?>
 

@@ -75,6 +75,7 @@
   include $Glo_PathRel_back.'../de/Operialtheorie/OT-Data.php';
   include $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/SpaLeb-Data.php';
   include $Glo_PathRel_back.'../de/Superial-Zahlen/SupNum-Data.php';
+  include $Glo_PathRel_back.'../de/Zahlensemantik/ZS-Data.php';
   
   
   $Glo_g_TextAlign = 'block';
@@ -84,7 +85,7 @@
   
   
   $FrQFT_g_text_HinwKosBeob                    = '\\italic{Die nachfolgenden Erklärungen werden aus Sicht eines \\jump{*KosmBeob-Herlei}{kosmischen Beobachters} beschrieben.}';
-  $FrQFT_g_text_Ereignishori                   = '\\color{*Entwick}{Es handelt sich im Fall der Quanten-Fluss-Theorie nicht wirklich um einen Eregnishorizont im Sinne der Allgemeinen Relativitätstheorie. Wie genau sich die Dinge dort Verhalten, wo sich die Elapsonen stauen, ist zu untersuchen. Klar scheint, dass in dieser Theorie von außen betrachtet kein Elementarteilchen unzerstört durch den Übergangshorizont gehen kann. Dann ist dies auch aus Sicht des Elementarteilchens nicht möglich. \\color{*Bearb}{(Literatur: Artikel GEO 10/2014, "Wie schwarz ist Schwarz?", S. 130–144.) (Thema auf die Diskussionsseite aufnehmen.)}}';
+  $FrQFT_g_text_Ereignishori                   = '\\color{*Entwick}{Es handelt sich im Fall der Quanten-Fluss-Theorie nicht wirklich um einen Ereignishorizont im Sinne der Allgemeinen Relativitätstheorie. Wie genau sich die Dinge dort Verhalten, wo sich die Elapsonen stauen, ist zu untersuchen. Klar scheint, dass in dieser Theorie von außen betrachtet kein Elementarteilchen unzerstört durch den Übergangshorizont gehen kann. Dann ist dies auch aus Sicht des Elementarteilchens nicht möglich. \\color{*Bearb}{(Literatur: Artikel GEO 10/2014, "Wie schwarz ist Schwarz?", S. 130–144.) (Thema auf die Diskussionsseite aufnehmen.)}}';
   $FrQFT_g_text_PoundRebkaSnider_Steigung      = '\\color{*Entwick}{Dies ist mit Sicherheit richtig. Ich meine ich hatte dies vor Jahren irgendwo gelesen und daher übernommen. Leider konnte ich es bisher nicht wieder finden oder ersehen, woher ich es abgeleitet hatte. Dies ist also heraus zu finden. \\color{*Bearb}{Alternativ zeigen, dass die Steigung der Formel \\term{g⋅h/c^^{2}} aus dem Pound-Rebka-Snider-Experiment entsprechend passt. Beziehungsweise \\term{Δ𝝂/𝝂__{0} = – Δφ_{g}/c^^{2}} , vgl. \\cite{Pound:PoundSniderExper1965}, S. B 788.}}';
   $FrQFT_g_text_SymmetrieBruchFarbpol          = 'Der kreisrunde Vakuum-Elapsonen-String ist der symmetrischste denkbare Wirkungsquanten-String.'."\n".
                                                    'Durch einen Symmetriebruch, ausgelöst durch ihre Wechselwirkung innerhalb des Strings, sind die sich eigentlich gradlinig bewegenden Wirkungsquanten auf eine Helixspiralbahn ausgelenkt.'."\n".
@@ -602,7 +603,7 @@
                                                          text => '\\color{*Bearb}{(Die Kugel sollte entsprechend der Zirbeldrüse die Form einer Zirbelnuss, eines Pinienzapfens, des Zapfens der Zirbelkiefer, bekommen, siehe Ordner Zirbeldrüse.)} Der Hermesstab mit seinen Flügeln steht für Heilung, Weisheit, und wie ich vermute für Erleuchtung und die Beflügelung der Seele und des Geistes durch ein polares Yin-Yang-Prinzip. Im Hermes Trismegistos kommt durch die Verschmelzung des griechischen Gottes Hermes mit dem ägyptischen Gott Thot auch das Wissen und die Philosophie in seine Bedeutung.');
   
   $NPYo_g_figure_ary_HerzChakraHerzkreisAtmung   = array( fig_file_name => 'Naturphilosophie-Yoga/Herz-Chakra-Herzkreislauf-Atmung-v01', fig_alt_description => 'Herz-Chakra, Herzkreislauf, Atmung', width => '380px', height => '500px', name => 'set local!',
-                                                         text => 'Der Herzkreislauf ist das mehr unbewusste innere Care (weiblicher Aspekt) und die Atmung ist das mehr bewusste innere Care (männlicher Aspekt).');
+                                                         text => 'Der Herzkreislauf ist das mehr unbewusste innere Care, die innere Versorgung, (weiblicher Aspekt) und die Atmung ist das mehr bewusste innere Care, mit Versorgungsbrücke nach Außen, (männlicher Aspekt).');
   
   $NPYo_g_figure_ary_HerzChakraShivaShakti       = array( fig_file_name => 'Naturphilosophie-Yoga/Herz-Chakra-Shiva-Shakti-v01', fig_alt_description => 'Herz-Chakra, Shiva-Shakti', width => '380px', height => '500px', name => 'set local!',
                                                          text => 'XXX');
@@ -867,6 +868,7 @@
     $OT_g_Site_ary,
     $SpaLeb_g_Site_ary,
     $SupNum_g_Site_ary,
+    $ZS_g_Site_ary,
     array(
                           
   'OM:FrQFT:Impressum' =>
@@ -1618,6 +1620,7 @@
                              
                     'OM:FrQFT:WasIstPhysik:Vortext:WarumDynamStrukt' => array( headline_text => 'Warum müssen es dynamische Strukturen sein?', headline_text_short => 'Warum müssen es dynamische Strukturen sein?'),
                     'OM:FrQFT:WasIstPhysik:Vortext:Bestandteile-Immer-Aehnlicher' => array( headline_text => 'Warum werden sich die Bestandteile immer ähnlicher, je weiter man die Dinge zerlegt?', headline_text_short => 'Warum werden sich die Bestandteile immer ähnlicher, je weiter man die Dinge zerlegt?'),
+                    'OM:FrQFT:WasIstPhysik:Vortext:Veraenderung-Strukturen-hat-zwei-zeitliche-Aspekte' => array( headline_text => 'Die Veränderung der Strukturen der Dinge hat zwei zeitliche Aspekte', /* headline_text_short => 'XXX' */),
                     'OM:FrQFT:WasIstPhysik:Vortext:Fig-ExistOhneZerf' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:FrQFT:WasIstPhysik:Vortext:Fig-ExistOhneStarr' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:FrQFT:WasIstPhysik:Vortext:Fig-Elapson-Existenzprinzip' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
@@ -2871,86 +2874,6 @@
                     //%!'OM:VRT:Vereinheitlichung-RT-LET:VereinheitART' => array( headline_text => 'Vereinheitlichung mit der Allgemeinen Relativitätstheorie', headline_text_short => 'Vereinheitlichung mit der Allgemeinen Relativitätstheorie'),
                 ),
          ),
-  'OM:ZS:' =>
-    array( url_abs => 'https://nsosp.org/de/Zahlensemantik/',
-           url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/',
-           favicons_url_rel_opt => $Glo_PathRel_back.'../de/Zahlensemantik/favicon/',
-           //header_pict_name => 'Fractal-Quantum-Flow-Theory_En.jpg',
-           //header_pict_alt => 'Fractal Quantum Flow Theory, Ideas of new Science',
-           name_short => 'ZS',
-           font_ary => array(
-                              '<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
-                              '<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
-                            ),
-           header_bgcolor => '#FFFFFF',
-           header_pict_name => 'ZS/ZS_header_v01_2_1860x354_72dpi_de.jpg',
-           header_pict_width => '930px',
-           header_pict_height => '177px',
-           header_pict_bgcolor => '#FFFFFF',
-           header_pict_alt => 'Zahlensemantik',
-           header_links_marginLeft => '383px',
-           author_adress => 'Raimund Welsch',
-           author_contact => '',
-           author_name => 'Raimund Welsch',
-           // author_image_URL => '',
-           // author_image_alt => 'Raimund Welsch',
-           // author_image_width => '',
-           // author_image_height => '',
-           copy_right => 'Zahlensemantik (ZS) \\\\'."\n".
-                          '© 2010–2024 by \\\\'."\n".
-                          'Raimund Welsch \\\\'."\n".
-                          'is licensed under \\\\'."\n".
-                          '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
-           litera_url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Literatur_de.php',
-           litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/zahlensemantik_bibliographie.bib',
-         ),
-
-   'OM:ZS:Home' =>
-    array( url_abs => 'https://nsosp.org/de/Zahlensemantik/index.php',
-           url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/index.php',
-           titel => 'Zahlensemantik (ZS) - Deutsch',
-           description => '\\name[undertitle]{OM:ZS:Home}. — \\name[description]{OM:ZS:Home}.',
-           keywords => '',
-           text_titel_h1 => 'Zahlensemantik \\color{*TitleAdd}{\\small{(ZS)}}',
-           text_titel_short => 'Zahlensemantik',
-           text_undertitel_h2 => 'XXX',
-           text_titel_discr_h3 => 'YYY',
-           jump_ary => array(
-                  'OM:ZS:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
-                  'OM:ZS:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
-                ),
-         ),
-   'OM:ZS:Einleitung' =>
-    array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Einleitung.php',
-           url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Einleitung.php',
-           titel => 'Einleitung zur Zahlensemantik - Zahlensemantik (ZS) - Deutsch',
-           description => '\\name[undertitle]{OM:ZS:Einleitung}. — \\name[description]{OM:ZS:Einleitung}.',
-           keywords => '',
-           text_titel_h1 => 'Einleitung',
-           text_titel_short => 'Einleitung',
-           text_undertitel_h2 => 'XXX',
-           text_titel_discr_h3 => 'YYY',
-           jump_ary => array(
-                  'OM:ZS:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-                             
-                    'OM:ZS:Einleitung:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                             
-                  'OM:ZS:Einleitung:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
-                ),
-         ),
-   'OM:ZS:Literatur' =>
-    array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Literatur.php',
-           url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Literatur.php',
-           titel => 'Literatur - Zahlensemantik (ZS) - Deutsch',
-           description => 'Literatur zur Zahlensemantik.',
-           keywords => '',
-           text_titel_h1 => 'Literatur',
-           text_titel_short => 'Literatur',
-           text_undertitel_h2 => 'und Informationen',
-           text_titel_discr_h3 => '',
-           jump_ary => array(
-                ),
-         ),
 
   ));
   
@@ -3628,7 +3551,7 @@
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:FrQFT:Impressum:Netzwerke', 'Informiert werden, unterstützen, beteiligen …'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:FrQFT:Impressum:Spenden', 'Ich freu mich über jede Unterstützung !!!'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:FrQFT:Impressum:Spenden', 'Ich freu mich über jede Unterstützung! 💚'),
                     )));
 
   

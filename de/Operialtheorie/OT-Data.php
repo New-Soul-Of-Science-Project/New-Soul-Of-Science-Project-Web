@@ -40,7 +40,7 @@
       text_titel_h1 => 'Operialtheorie \\color{*TitleAdd}{\\small{(OT)}}',
       text_titel_short => 'Operialtheorie',
       text_undertitel_h2 => 'Zählen und dann weiter …',
-      text_titel_discr_h3 => 'Das Zählen, Addieren, Multiplizieren und den Exponenten durch Zählen verbinden. Der Zusammenhang zwischen dem Zählen, den Grundrechenarten und deren Erweiterung',
+      text_titel_discr_h3 => 'Das Zählen, Addieren, Multiplizieren und den Exponenten durch Zählen verbinden. Der Zusammenhang zwischen dem Zählen, den Grundrechenarten und deren Erweiterungen, auch auf die Vorgänger des Zählens',
       jump_ary => array(
         'OM:OT:Home:Inhalt' => array( headline_text => 'Inhalt'/* , headline_text_short => 'XXX' */),
         'OM:OT:Home:Lexikon' => array( headline_text => 'Lexikon'/* , headline_text_short => 'XXX' */),

@@ -76,6 +76,7 @@
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Einleitung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Formale-Entwicklung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Ableitungen-Integrale'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Eulersche-Zahl-e-Funktion'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Eigenschaften'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Primzahlprodukt-Vermutung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Ueberrationalitaetsvermutung'),
