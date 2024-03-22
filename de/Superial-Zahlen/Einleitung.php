@@ -29,7 +29,7 @@
                     '• Die Biordinalzahlen wären dann aber ein Ring, aber immer noch kein Körper.',
                     '• Die Superial-Zahlen sind, weil mit rationalen Koeffizienten gebildet, ein Körper. Denn es gibt beide inverse Elemente.',
                     '• Sollte sich herausstellen, dass die Wurzeln natürlicher Zahlen mit überrationalen Zahlen (meine Benennung) dargestellt werden können, dann wären Superial-Zahlen mit überrationalen Koeffizienten ein algebraischer Körper!?',
-                    '– Als überrationale Zahlen bezeichne ich Brüche, die im Zähler und Nenner unendlich große Primzahlprodukte haben können. Und, wenn vollständig teilerfremd und damit nicht zu kürzen, Dezimalzahlen ergeben, die nicht periodisch sind, wie vielleicht \term{√2}. Die Exponenten der Primzahlen in Nenner und Zähler sollten endlich sein, denke ich. Möglicherweise sogar immer Eins?',
+                    '– Als überrationale Zahlen bezeichne ich Brüche, die im Zähler und Nenner unendlich große Primzahlprodukte haben können. Und, wenn vollständig teilerfremd und damit nicht zu kürzen, Dezimalzahlen ergeben, die nicht periodisch sind, wie vielleicht \lm{ \sqrt{ 2 } }. Die Exponenten der Primzahlen in Nenner und Zähler sollten endlich sein, denke ich. Möglicherweise sogar immer Eins?',
                     '\bold{Aktuelle Forschung}',
                     '• Der Fields-Medaillenträger 2018, Peter Scholze, bringt neue Zusammenhänge zwischen der Arithmetik und der Geometrie ins Spiel.',
                     '\bold{\italic{Diskretisierung der Topologie durch verdichtete Mengen}}',
@@ -307,7 +307,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Das Nicht-Verschwinden aller Summanden funktioniert dann, wenn wir die beim Ableiten gegen Null gehenden Summanden selber als unendlich klein, aber nicht als verschwindend betrachten.'."\n".
-                    'Wir setzten den gegen Null gehenden Summanden zu \term{Δx ≔ s^^{-1}}, zum Kehrwert der \italic{superialen Basis} \term{s},'."\n".
+                    'Wir setzten den gegen Null gehenden Summanden zu \lm{ \Delta x := \s^{-1} }, zum Kehrwert der \italic{superialen Basis} \lm{ \s },'."\n".
                     'die wir im Verlauf genauer ergründen werden:'."\n".
                     ''))),
                   array( 'equations',
@@ -321,13 +321,13 @@
                     ))),
                   array( 'text', array( text => array(
                     'Dies vertiefen wir auf der Seite \italic{\jumpname{OM:SupNum:Ableitungen-Integrale}}.'."\n",
-                      'Dabei ist \term{s^^{-1}} ein neues Symbol, über das ich zunächst nur annahm, dass es kleiner als jede positive Zahl war und doch größer als Null.'."\n".
-                    'Ähnlich wie bei den komplexen Zahlen die imaginäre Einheit \term{i} war auch \term{s^^{-1}} eine neue Einheit, die ich als \italic{superial kleine Einheit} bezeichne.'."\n".
+                      'Dabei ist \lm{ \s^{-1} } ein neues Symbol, über das ich zunächst nur annahm, dass es kleiner als jede positive Zahl war und doch größer als Null.'."\n".
+                    'Ähnlich wie bei den komplexen Zahlen die imaginäre Einheit \lm{ \i } war auch \lm{ \s^{-1} } eine neue Einheit, die ich als \italic{superial kleine Einheit} bezeichne.'."\n".
                     'In der Mathematik ist es kein Problem ein neues Symbol zu kreieren und zu definieren, solange sich dadurch keine Widersprüche ergeben.\footnote{Sekundärliteratur \\\\ Vgl. \cite{Freistetter:DieFreiheitDerImaginaerenZahlen:2016}. \\\\ Internet: \\\\ Vgl. \cite{Freistetter:DieFreiheitDerMathematik:2016}.}'."\n",
-                      'Die superial kleine Einheit \term{s^^{-1}} führte dazu, dass die sonst bei der Ableitung verschwindenden Summanden \term{a__{k}} nicht verloren gehen, sondern in unendlich kleinen'."\n".
-                    'Dimensionen \term{q__{-1}⋅s^^{-1} + q__{-2}⋅s^^{-2} + q__{-3}⋅s^^{-3} + …} erhalten blieben, also in einer \italic{superial} kleinen Welt.'."\n".
+                      'Die superial kleine Einheit \lm{ \s^{-1} } führte dazu, dass die sonst bei der Ableitung verschwindenden Summanden \lm{ a_{k} } nicht verloren gehen, sondern in unendlich kleinen'."\n".
+                    'Dimensionen \lm{ q_{-1} \s^{-1} + q_{-2} s^{-2} + q_{-3} s^{-3} + \cdots } erhalten blieben, also in einer \italic{superial} kleinen Welt.'."\n".
                     'Von hier können sie auch beim Integrieren wieder auftauchen.'."\n".
-                    'Die Dimension \term{q__{0}⋅s^^{0} = q__{0}} stellt dann die uns bekannten, endlichen Zahlen dar, weil \term{s^^{0} = 1} ist, wie gewohnt.'."\n",
+                    'Die Dimension \lm{ q_{0} \s^{0} = q_{0} } stellt dann die uns bekannten, endlichen Zahlen dar, weil \lm{ \s^{0} = 1 } ist, wie gewohnt.'."\n",
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Konkrete Ableitungen} \\\\'."\n".
@@ -336,7 +336,7 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'So ergibt sich als Beispiel für die Funktion \term{f(x) = x^^{2}}:'."\n".
+                      'So ergibt sich als Beispiel für die Funktion \lm{ f(x) = x^{2} }:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -350,10 +350,10 @@
                                           /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-Ergebnis}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wenn wir also \term{s^^{-1}} zu Null setzen, dann kommt das übliche Ergebnis \term{f\'(x) = 2x} heraus.'."\n".
+                      'Wenn wir also \lm{ \s^{-1} } zu Null setzen, dann kommt das übliche Ergebnis \lm{ f\'(x) = 2 x } heraus.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Für \term{f(x) = x^^{3}} ergibt sich dann:'."\n".
+                      'Für \lm{ f(x) = x^{3} } ergibt sich dann:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -367,7 +367,7 @@
                                           /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-Ergebnis}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wenn wir also \term{s^^{-1}} zu Null setzen, dann kommt das übliche Ergebnis \term{f\'(x) = 3x^^{2}} heraus.'."\n",
+                      'Wenn wir also \lm{ \s^{-1} } zu Null setzen, dann kommt das übliche Ergebnis \lm{ f\'(x) = 3 x^{2} } heraus.'."\n",
                         '\\\\ '."\n".
                       ''))),
 
@@ -391,16 +391,16 @@
                     'In ihm werden all die unendlich kleinen Differenzen aufsummiert, aus der sich die Ableitung ergibt'."\n".
                     'und die gemeinsam zurück zum Verlauf der Ausgangsfunktion führen.'."\n",
                       'Wie groß die Schritte der Summation sind, erkennen wir an der Ableitung.'."\n".
-                    'Die aufsummierten Flächen gleichen den Ergebnis-Differenzen der Ableitung \term{f\'(x)} in unendlich kleinen Einheiten und'."\n".
+                    'Die aufsummierten Flächen gleichen den Ergebnis-Differenzen der Ableitung \lm{ f\'(x) } in unendlich kleinen Einheiten und'."\n".
                     'haben damit deren Höhe.'."\n".
-                    'Ihre Streifenbreite ist \term{Δx ≔ s^^{-1}}, wie die Funktionsparameter-Differenz der Ableitung.'."\n".
-                    'Wir können dabei \term{s^^{-1}} als eine unendlich kleine Einheit \term{1⋅s^^{-1}} verstehen.'."\n".
+                    'Ihre Streifenbreite ist \lm{ \Delta x ≔ \s^{-1} }, wie die Funktionsparameter-Differenz der Ableitung.'."\n".
+                    'Wir können dabei \lm{ \s^{-1} } als eine unendlich kleine Einheit \lm{ 1 \s^{-1} } verstehen.'."\n".
                     'Eine \italic{unendlich kleine Eins}.'."\n",
                       'Auf der anderen Seite müssen wir eine unendlich große und ganze Anzahl der Streifen summieren.'."\n".
-                    'Es müssen genau \term{s} Streifen sein, damit sich die \term{s^^{-1}} breiten Streifen zu einer endlich großen'."\n".
+                    'Es müssen genau \lm{ \s } Streifen sein, damit sich die \lm{ \s^{-1} } breiten Streifen zu einer endlich großen'."\n".
                     'Zahl aufsummieren und wir das Integral erhalten.'."\n".
-                    'Damit ist eindeutig klar, dass \term{s} eine unendlich große, ganze und positive Zahl ist.'."\n".
-                    'Es muss also formal möglich sein, alle positiven ganzen Zahlen von den endlichen bis \term{s} zu zählen,'."\n".
+                    'Damit ist eindeutig klar, dass \lm{ \s } eine unendlich große, ganze und positive Zahl ist.'."\n".
+                    'Es muss also formal möglich sein, alle positiven ganzen Zahlen von den endlichen bis \lm{ \s } zu zählen,'."\n".
                     'um die Summe für das Integral zu beschreiben:'."\n".
                     ''))),
 
@@ -451,10 +451,10 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Jetzt haben wir zwar die richtige Anzahl an Schritten, aber sie sind nicht fein genug,'."\n".
-                      'sollen sie doch eigentlich von Null bis \lm{ x } in \term{s^^{-1}} kleinen Schritten laufen.'."\n".
-                      'So müssen wir die Zahlen dieses Intervals der ganzen Superial-Zahlen also mit \term{s^^{-1}} multiplizieren'."\n".
+                      'sollen sie doch eigentlich von Null bis \lm{ x } in \lm{ \s^{-1} } kleinen Schritten laufen.'."\n".
+                      'So müssen wir die Zahlen dieses Intervals der ganzen Superial-Zahlen also mit \lm{ \s^{-1} } multiplizieren'."\n".
                       'und auf diese Weise auf eine \jump{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen}{superial kleine Größenordnung skalieren}.'."\n",
-                        'Alternativ können wir auch eine Menge definieren, in der alle Zahlen schon mit \term{s^^{-1}} multipliziert sind:'."\n".
+                        'Alternativ können wir auch eine Menge definieren, in der alle Zahlen schon mit \lm{ \s^{-1} } multipliziert sind:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -465,7 +465,7 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Im benötigten Mengen-Intervall laufen die Zahlen in \lm{ x \cdot s } unendlich kleinen Schritten'."\n".
-                      'der Größe \term{s^^{-1}} durch.'."\n".
+                      'der Größe \lm{ \s^{-1} } durch.'."\n".
                       'Auszugweise sieht diese Intervall-Menge von unendlich feinschrittigen superial kleinen ganzen Superial-Zahlen folgendermaßen aus,'."\n".
                       'wobei Beginn und Ende exakt stimmen und sich ihre Größensortierung nach der lexikografischen Ordnung\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}},'."\n".
                       'unter Berücksichtigung der Potenz von \lm{ s }, richtet:'."\n".
@@ -503,7 +503,7 @@
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Wir nehmen das erste obige \jump{OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen}{Ableitungsbeispiel} \lm{ f(x) = x^2 } mit'."\n".
-                      'dem Ableitungsergebnis \term{ f\'(x) = 2 x + s^^{-1} } und setzen dies in unsere Integralformel ein:'."\n".
+                      'dem Ableitungsergebnis \lm{ f\'(x) = 2 x + s^{-1} } und setzen dies in unsere Integralformel ein:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -690,9 +690,9 @@
                   array( 'text', array( text => array(
                     'Zur Kennzeichnung der endlichen, nullten Stelle haben wir zwischen ihr und der minus ersten Stelle'."\n".
                     'einen Punkt gesetzt, wie das im Angelsächsischen hinter der nullten Stelle einer Dezimalzahl üblich ist.'."\n",
-                      'Diese Darstellung verdeutlicht auch, dass es sich bei \term{s} im Grunde um'."\n".
+                      'Diese Darstellung verdeutlicht auch, dass es sich bei \lm{ \s } im Grunde um'."\n".
                     'eine unendlich große Eins oder genauer um eine superial große Eins handelt;'."\n".
-                    'und bei \term{s^^{-1}} um eine unendlich kleine Eins oder genauer um eine superial kleine Eins:'."\n".
+                    'und bei \lm{ \s^{-1} } um eine unendlich kleine Eins oder genauer um eine superial kleine Eins:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -723,7 +723,7 @@
                     'Erstaunlicherweise kennt die Mathematik dadurch jetzt nicht nur orthogonale Dimensionen\color{*Bearb}{(Verweis)},'."\n".
                     'die senkrecht zueinander stehen, sondern auch unendlich kleine, lineare Dimensionen – \italic{superiale Dimensionen} –,'."\n".
                     'die sich in fraktaler Weise zwischen unseren endlichen Zahlen verstecken.\\footnote[*Entwick]{\color{*Entwick}{Ich frage mich, welchen (fraktalen) Zusammenhang gibt es zwischen den orthogonalen und den \italic{superialen Dimensionen}?}}'."\n".
-                    'Auf Basis der \italic{superialen Einheit} \term{s} lassen sich folglich'."\n".
+                    'Auf Basis der \italic{superialen Einheit} \lm{ \s } lassen sich folglich'."\n".
                     'eben auch unendlich große, lineare Dimensionen beschreiben.'."\n".
                     'Zwischen denen liegen dann unsere endlichen Zahlen und so fort.'."\n".
                     ''))),
@@ -759,7 +759,7 @@
                     'Wie groß sind diese Schritte und wieviele Schritte sind notwendig, um die ursprüngliche'."\n".
                     'Funktion \lm{ f(x) } aus der abgeleiteten \lm{ f\'(x) } wieder herzustellen.'."\n",
                       'Als wir uns damit beschäftigten, kam die Erkenntnis, wir müssten \lm{ x \cdot s }'."\n".
-                    'Schritte in den Funktionswerten von \lm{ f\'(x) } der Größe \term{s^^{-1}}'."\n".
+                    'Schritte in den Funktionswerten von \lm{ f\'(x) } der Größe \lm{ \s^{-1} }'."\n".
                     'von Null bis ausschließlich \lm{ x } addieren.'."\n",
                       'Diese Schritte konnten wir durch Skalierung von ganzen Zahlen von Null bis ausschließlich'."\n".
                     '\lm{ x \cdot s } erzeugen.'."\n".
@@ -942,10 +942,10 @@
                     'eine nähere Begründung.'."\n".
                     'Dort wird aufgrund des unendlich ganzzahligen Zählens innerhalb der Superial-Zahlen unter anderem erkannt,'."\n".
                     'dass die \jump{OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen}{Anzahl aller endlichen ganzen Zahlen \lm{ 2 \cdot \omega }}'."\n".
-                    'ein ganzzahliger Teiler von \lm{ s } sein muss.'."\n".
-                    'Daher muss \lm{ \omega } ein ganzzahliger Teiler von \lm{ \frac{ s }{ 2 } } sein,'."\n".
+                    'ein ganzzahliger Teiler von \lm{ \s } sein muss.'."\n".
+                    'Daher muss \lm{ \omega } ein ganzzahliger Teiler von \lm{ \frac{ \s }{ 2 } } sein,'."\n".
                     'also ein ganzzahliges Teilprodukt.'."\n",
-                      'Damit muss \lm{ \omega } ein unendlich großer Teil des Primzahlprodukts von \lm{ s } sein.'."\n".
+                      'Damit muss \lm{ \omega } ein unendlich großer Teil des Primzahlprodukts von \lm{ \s } sein.'."\n".
                     'Und bei näherer Analyse stellen wir auch fest, dass es sich um einen unendlich großen Teil des Primzahlprodukts'."\n".
                     'im horizontalen Bereich aller unterschiedlichen Primzahlen handeln muss.'."\n",
                       'In unserem Beweis der Primzahlprodukt-Vermutung zeigen wir zusätzlich, dass es nur sein kann,'."\n".
@@ -956,14 +956,14 @@
                   array( 'text', array( text => array(
                   '\condb{Überrationalitätsvermutung} \\\\'."\n".
                     '\color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)} \\\\'."\n".
-                    'Eine weitere Vermutung, die der Primfaktorzerlegungen von \lm{ s } entspringt,'."\n".
+                    'Eine weitere Vermutung, die der Primfaktorzerlegungen von \lm{ \s } entspringt,'."\n".
                     'dreht sich um die Frage, ob der positive reelle Anteil von algebraischen Zahlen\color{*Bearb}{(Verweis)}'."\n".
                     'durch einen von mir so genannten \italic{überrationalen Bruch} dargestellt werden kann.'."\n",
                       'Ein überrationaler Bruch ist ein Bruch, der im Nenner und im Zähler unendlich große, teilerfremde Zahlen hat,'."\n".
                     'deren Primfaktorzerlegung aus unendlich vielen endlichen Primzahlen endlich ganzzahliger Potenzen besteht.'."\n".
-                    'Dann wäre ein Produkt eines überrationalen Bruchs mit \lm{ s } ebenfalls unendlich groß und ganzzahlig.'."\n",
+                    'Dann wäre ein Produkt eines überrationalen Bruchs mit \lm{ \s } ebenfalls unendlich groß und ganzzahlig.'."\n",
                       'Zu den algebraischen Zahlen gehören auch ganzzahlige Wurzeln natürlicher Zahlen, wie \lm{ \sqrt{2} },'."\n".
-                    'womit dann beispielsweise \lm{ \sqrt{2} \cdot s } ganzzahlig wäre.'."\n",
+                    'womit dann beispielsweise \lm{ \sqrt{2} \cdot \s } ganzzahlig wäre.'."\n",
                       'Sollte die \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} sich als wahr'."\n".
                     'erweisen, dann wäre dies ebenfalls eine sehr bemerkenswerte Eigenschaft der Superial-Zahlen,'."\n".
                     'die uns neue Informationen über algebraische Zahlen geben würde und so ein wichtiger Beitrag zur Zahlentheorie wäre.'."\n".
@@ -1006,7 +1006,7 @@
                   array( 'text', array( text => array(
                   '\condb{Anordnung im Unendlichen} \\\\'."\n".
                     'Und die Superial-Zahlen sind, wie gesagt, nach ihrer Größe lexikografisch angeordnet,'."\n".
-                    'unter Berücksichtigung ihrer Potenzen von \lm{ s }.\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}}'."\n".
+                    'unter Berücksichtigung ihrer Potenzen von \lm{ \s }.\footnote{\const{SupNum_g_footnote_text_LexikographischeOrdnung}}'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Eine unerwartete Verbindung der rationalen Zahlen mit dem Zählen} \\\\'."\n".
@@ -1015,7 +1015,7 @@
                       'Nun wissen wir, dass wir rationale Zahlen nicht ihrer Größe nach aufzählen können,'."\n".
                     'weil sie von ihrer Anordnung her dicht sind.\footnote{\const{SupNum_g_footnote_text_RationaleZahlDichtheit}}'."\n".
                     'Interessanter Weise zählen wir in den natürlichen Superial-Zahlen die rationalen Zahlen ihrer Größe nach,'."\n".
-                    'als Koeffizienten der Potenzen von \lm{ s }, implizit mit.'."\n",
+                    'als Koeffizienten der Potenzen von \lm{ \s }, implizit mit.'."\n",
                       'Denn wir zählen:'."\n".
                     ''))),
                   array( 'equations',
@@ -1052,7 +1052,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Feine Differenzierung des Aktual-Unendlichen} \\\\'."\n".
-                    'Durch die Definition der superialen Einheit \term{s} als unendliches Primzahlprodukt erhalten die Superial-Zahlen den Mehrwert, dass sich das Aktual-Unendliche nach den gewohnten Regeln'."\n".
+                    'Durch die Definition der superialen Einheit \lm{ \s } als unendliches Primzahlprodukt erhalten die Superial-Zahlen den Mehrwert, dass sich das Aktual-Unendliche nach den gewohnten Regeln'."\n".
                     'der Arithmetik behandeln und differenzieren lässt.'."\n".
                     'Wichtige Elemente der Arithmetik, wie beispeilsweise natürliche, ganze, gerade und ungerade Zahlen sowie Primzahlen, lassen sich so im Unendlichen untersuchen.'."\n".
                     'Dies hat auch Rückwirkung auf die Betrachtung des Endlichen.'."\n".
@@ -1083,12 +1083,12 @@
                 'Definition ganzer und natürlicher Superial-Zahlen und die Integration', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Dadurch, dass \term{s} die \term{ω}-ste Potenz aller endlichen Primzahlen als Faktoren enthält, kommen wir zu besonderen arithmetischen Eigenschaften'."\n".
+                    'Dadurch, dass \lm{ \s } die \lm{ \omega }-ste Potenz aller endlichen Primzahlen als Faktoren enthält, kommen wir zu besonderen arithmetischen Eigenschaften'."\n".
                     'bezüglich ihrer Multiplikation mit rationalen Zahlen, Brüchen aus ganzen Zahlen.'."\n"))),
                   array( 'text', array( text => array(
                   '\condb{Die Größenordnung von rationalen Zahlen ist die gleiche, wie die der reellen Zahlen} \\\\'."\n".
                     'Um uns einer sinnvollen Definition von ganzen und natürlichen Superial-Zahlen zu nähern stellen wir fest, dass reelle Zahlen'."\n".
-                    'nicht grundsätzlich größer sind als rationale, aber nach den Formeln \jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Equ-alle-n-kleiner-s} und \jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Equ-exist-n-mit-r-kleiner-n} alle kleiner als \term{s}:'."\n"))),
+                    'nicht grundsätzlich größer sind als rationale, aber nach den Formeln \jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Equ-alle-n-kleiner-s} und \jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Equ-exist-n-mit-r-kleiner-n} alle kleiner als \lm{ \s }:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  (\forall q \in \mathbb{Q}) (\exists  r \in \mathbb{R}) *[  r < q < s  *]  }'),
@@ -1110,16 +1110,16 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  (\forall q \in \mathbb{Q}^{+}) (\forall k \in \mathbb{Q}^{+}) *[  0 < k \cdot s^{-1} <  k \cdot q  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Weil der letzte Term durch das frei wählbare \term{q} alle möglichen positiven Werte annehmen kann, ist dies auch äquivalent mit:'."\n"))),
+                    'Weil der letzte Term durch das frei wählbare \lm{ q } alle möglichen positiven Werte annehmen kann, ist dies auch äquivalent mit:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  (\forall q \in \mathbb{Q}^{+}) (\forall k \in \mathbb{Q}^{+}) *[  0 < k \cdot s^{-1} <  q  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir können hieran erkennen, dass keine rationale Zahl \term{k} existiert, die im Produkt mit \term{s^^{-1}} ins Endliche kommen kann.'."\n"))),
+                    'Wir können hieran erkennen, dass keine rationale Zahl \lm{ k } existiert, die im Produkt mit \lm{ \s^{-1} } ins Endliche kommen kann.'."\n"))),
                   array( 'text', array( text => array(
                   '\condb{Natürliche Superial-Zahlen} \\\\'."\n".
-                    'Wenn wir nun mitten in der Zahlentheorie sind, dann stellt sich auch die Frage, ob es ebenso natürliche Superial-Zahlen \term{\M(S)__{N}} gibt.'."\n",
+                    'Wenn wir nun mitten in der Zahlentheorie sind, dann stellt sich auch die Frage, ob es ebenso natürliche Superial-Zahlen \lm{ \mathbb{S}_{N} } gibt.'."\n",
                       'Das ist im Grunde ziemlich leicht zu beantworten, denn natürliche Zahlen sind generell alle positiven ganzen Superial-Zahlen,'."\n".
                     'hier per obiger Definition einschließlich der Null.'."\n".
                     'Um dies zu beurteilen müssen wir sagen können, welche ganzen Superial-Zahlen größer als Null sind.'."\n",
@@ -1149,7 +1149,7 @@
                     'Definition der Primzahlen im Endlichen:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primzahl:2021}.}'."\n"))),
                       
                   array( 'text', array( Shape  => 'quote', text => array(
-                        'Die Primzahlen sind innerhalb der Menge \term{\M(N)} der natürlichen Zahlen dadurch charakterisiert, dass jede von ihnen genau zwei natürliche Zahlen als Teiler hat.'."\n"),
+                        'Die Primzahlen sind innerhalb der Menge \lm{ \mathbb{N} } der natürlichen Zahlen dadurch charakterisiert, dass jede von ihnen genau zwei natürliche Zahlen als Teiler hat.'."\n"),
                         addtext => '\footnote{Internet: \\\\ \cite{wiki:Primzahl:2021}, Eigenschaften von Primzahlen.}')),
                       
                   array( 'text', array( text => array(
@@ -1157,12 +1157,12 @@
                       'Dass es unendlich viele Primzahlen im Endlichen gibt, können wir durch die Schlussfolgerungskette des folgenden Beweises erkennen:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primzahl:2021}, Größte bekannte Primzahl.}'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Bilde die Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} einer Primzahl, das Produkt aller Primzahlen kleiner und einschließlich dieser Primzahl: \term{p#}',
-                        'Addiere Eins dazu oder ziehe Eins ab: \term{p# ± 1}',
-                        '\term{p# ± 1} ist nicht durch eine der Primzahlen in \term{p#} ganzzahlig teilbar.',
-                        '\term{p# ± 1} kann daher entweder nur selber eine Primzahl sein, die dann größer als \term{p} ist, oder ihr Primzahlprodukt enthält ausschließlich Primzahlen – mindestens zwei Stück – die nicht in \term{p#} enthalten sind und damit größer als \term{p} sein müssen. ',
-                        'Alle Primzahlen, durch die \term{p# ± 1} teilbar ist, sind damit größer als \term{p}.',
-                        'Es gibt also immer eine Primzahl, die größer ist als jede gegebene Primzahl \term{p}, womit die Menge der endlichen Primzahlen nicht endet.',
+                        'Bilde die Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} einer Primzahl, das Produkt aller Primzahlen kleiner und einschließlich dieser Primzahl: \lm{ p\# }',
+                        'Addiere Eins dazu oder ziehe Eins ab: \lm{ p\# \pm 1 }',
+                        '\lm{ p\# \pm 1 } ist nicht durch eine der Primzahlen in \lm{ p\# } ganzzahlig teilbar.',
+                        '\lm{ p\# \pm 1 } kann daher entweder nur selber eine Primzahl sein, die dann größer als \lm{ p } ist, oder ihr Primzahlprodukt enthält ausschließlich Primzahlen – mindestens zwei Stück – die nicht in \lm{ p\# } enthalten sind und damit größer als \lm{ p } sein müssen. ',
+                        'Alle Primzahlen, durch die \lm{ p\# \pm 1 } teilbar ist, sind damit größer als \lm{ p }.',
+                        'Es gibt also immer eine Primzahl, die größer ist als jede gegebene Primzahl \lm{ p }, womit die Menge der endlichen Primzahlen nicht endet.',
                     ))),
                   array( 'text', array( text => array(
                     'Es gibt im Endlichen demnach bewiesenermaßen unendlich viele Primzahlen.'."\n".
@@ -1175,11 +1175,11 @@
                     'XXX'."\n".
                     'XXX'."\n",
                       'Beim Beweis der Primzahlprodukt-Vermutung und der unendlich großen Primzahl-Zwillinge ist die Frage, ob die tendenzielle Lücke'."\n".
-                    'zwischen einer gegebenen Primzahl \term{p} und \term{p# - 1} eine Frage des Gitters ist oder eine Frage der prinzipiellen Möglichkeit aufgrund'."\n".
+                    'zwischen einer gegebenen Primzahl \lm{ p } und \lm{ p\# - 1 } eine Frage des Gitters ist oder eine Frage der prinzipiellen Möglichkeit aufgrund'."\n".
                     'der Lage und Größe der Lücke.'."\n",
                       'Angenommen es ist eine Frage der prinzipiellen Möglichkeit aufgrund der Lage und Größe der Lücke.'."\n",
-                      'Angenommen die Primzahlen zwischen der gegebenen Primzahl \term{p} und \term{p# - 1} verschwinden allmählich gegen Unendlich:'."\n".
-                    'Dann blieben zunehmend die Primzahl-Zwillinge \term{p# ± 1} als nächstgrößere Primzahlen direkt nach \term{p} übrig.'."\n".
+                      'Angenommen die Primzahlen zwischen der gegebenen Primzahl \lm{ p } und \lm{ p\# - 1 } verschwinden allmählich gegen Unendlich:'."\n".
+                    'Dann blieben zunehmend die Primzahl-Zwillinge \lm{ p\# \pm 1 } als nächstgrößere Primzahlen direkt nach \lm{ p } übrig.'."\n".
                     'Die Möglichkeit, dass …'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -1201,7 +1201,7 @@
                     ))),
                   array( 'text', array( text => array(
                     '… könnte verschwinden!?'."\n".
-                    'Wenn diese Möglichkeit verschwindet, dann müssen beide \term{p# ± 1} selber Primzahlen sein.'."\n".
+                    'Wenn diese Möglichkeit verschwindet, dann müssen beide \lm{ p\# \pm 1 } selber Primzahlen sein.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -1210,8 +1210,8 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Nähern sich die Lücken in den Primzahlen \term{Δ  =  (p# - 1) - p}?',
-                        'Dann sind tendenziell alle \term{p# ± 1} Primzahlen.',
+                        'Nähern sich die Lücken in den Primzahlen \lm{ \Delta = ( p\# - 1) - p }?',
+                        'Dann sind tendenziell alle \lm{ p\# \pm 1 } Primzahlen.',
                         'XXX',
                         'XXX',
                         'XXX',
@@ -1230,8 +1230,8 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        '\term{Δp__{i}# = p__{i+1}# - p__{i}#}',
-                        'Annahme \term{Δp__{i}# < Δp__{i+1}#}',
+                        '\lm{ \Delta p_{i}\# = p_{i + 1}\# - p_{i}\#}',
+                        'Annahme \lm{ \Delta p_{i}\# < \Delta p_{i + 1}\#}',
                         'XXX',
                         'XXX',
                     ))),
@@ -1365,10 +1365,10 @@
                       array( display => 'on',  latex => '{  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  \frac{ 1 }{ p } *)  =  \frac{ 1 }{ 2 } \cdot \frac{ 1 }{ 3 } \cdot \frac{ 1 }{ 5 } \cdot \frac{ 1 }{ 7 } \cdot …  =  \frac{ 1 }{ \omega_{p} }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Hälfte aller natürlichen Zahlen enthält die \term{2}.'."\n".
-                    'Ein drittel aller natürlichen Zahlen enthält die \term{3} und so fort … ?'."\n",
+                    'Die Hälfte aller natürlichen Zahlen enthält die \lm{ 2 }.'."\n".
+                    'Ein drittel aller natürlichen Zahlen enthält die \lm{ 3 } und so fort … ?'."\n",
                       'Da würde die Null bei allen mit zu zählen.'."\n".
-                    'Es gibt aber sehr viele Zahlen, die sowohl die \term{2} als auch die \term{3} oder andere Primzahlen enthalten und diese müssen mitgezählt werden.'."\n".
+                    'Es gibt aber sehr viele Zahlen, die sowohl die \lm{ 2 } als auch die \lm{ 3 } oder andere Primzahlen enthalten und diese müssen mitgezählt werden.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
@@ -1417,7 +1417,7 @@
                     'Diese Vermutung bezieht sich darauf, dass ich vermute, dass die rationalen Koeffizienten der \italic{rationalen Superial-Zahlen} durch Koeffizienten ersetzt werden können,'."\n".
                     'die durch überrationale Brüche dargestellt werden.\\footnote[*Entwick]{\color{*Entwick}{Sind überrationale Brüche algebraische Zahlen, deren imaginärer Anteil gleich Null ist?}}'."\n".
                     'Und dies, ohne dass sich die Existenz der natürlichen Superial-Zahlen und der superialen Primzahlen verändern würde.'."\n".
-                    'Es wird die Existenz der \italic{überrationalen Superial-Zahlen} auf Basis von \term{s} vermutet.'."\n".
+                    'Es wird die Existenz der \italic{überrationalen Superial-Zahlen} auf Basis von \lm{ \s } vermutet.'."\n".
                     'Ein überrationaler Bruch soll ein Bruch sein, der sowohl im Nenner als auch im Zähler eine Zahl aus unendlich vielen verschiedenen endlichen Primfaktoren endlicher Potenz enthält.'."\n".
                     'Ein Produkt eines überrationalen Bruchs \lm{ q_r } mit \lm{ s } ergibt dann die unendliche, natürliche Superial-Zahl \lm{  q_r \cdot s}.'."\n".
                     'Die Menge aller überrationalen Brüche wäre dann \lm{ \mathbb{Qr} }.'."\n".
@@ -1439,7 +1439,7 @@
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Eigene Überlegungen}',
-                    '• Betrachten wir die Primzahlen als alle möglichen Grundschwingungen in den natürlichen Zahlen, dann ist ihr Produkt die Zahl, bei der all diese Grundschwingungen das erste Mal wieder zusammentreffen. Daher wiederholen sich die natürlichen Zahlen ab der Zahl \term{ω}. Nur folgt daraus, dass z.B. \term{ω-1} nicht zu den natürlichen Zahlen gehört. \term{ω-n} für \term{n ∈ \M(N)} ist diese Struktur gespiegelt, quasi rückwärts.',
+                    '• Betrachten wir die Primzahlen als alle möglichen Grundschwingungen in den natürlichen Zahlen, dann ist ihr Produkt die Zahl, bei der all diese Grundschwingungen das erste Mal wieder zusammentreffen. Daher wiederholen sich die natürlichen Zahlen ab der Zahl \lm{ \omega }. Nur folgt daraus, dass z.B. \lm{ \omega - 1} nicht zu den natürlichen Zahlen gehört. \lm{ \omega - n } für \lm{ n \in \mathbb{N} } ist diese Struktur gespiegelt, quasi rückwärts.',
                     '• Siehe Erklärung für Raimund: Ordner "20200904 - Wissenschaft mit Raimund - Superial-Zahlen"',
                     '• Siehe meine Latex-Abhandlungen.',
                     ))),
@@ -1447,7 +1447,7 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(Der Beweis der \italic{\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}} muss noch berücksichtigt werden.)} \\\\'."\n".
                     'Meine langjährigen Spielereien haben in mir die Vermutung geweckt, dass der unendlich große Wert des Produkts aller endlichen Primzahlen ebenfalls'."\n".
-                    'die Größe von \term{⍵} hat.'."\n".
+                    'die Größe von \lm{ \omega } hat.'."\n".
                     'Dies würde auf folgende Formeln hinauslaufen:'."\n".
                     ''))),
                   array( 'equations',
@@ -1461,18 +1461,18 @@
                     'allgemein wohl nicht erwartet wird.'."\n".
                     'Es wird letztendlich behauptet, dass das Produkt aller Primzahlen innerhalb der natürlichen Zahlen genau so groß ist, wie die Anzahl der natürlichen Zahlen selbst.'."\n".
                     'Dies kann nur sein, wenn unter den extrem großen natürlichen Zahlen nur noch sehr wenige Primzahlen vorkommen, sie dort also im Prinzip verschwinden und schließlich eigentlich nicht mehr vorkommen.'."\n".
-                    'Oder es gibt zwischen den endlichen, natürlichen Zahlen und ihrer Anzahl \term{⍵} eine riesige Lücke, wonach \term{⍵-1} dann keine endliche, natürliche Zahl wäre.'."\n".
-                    '\term{⍵-1} wäre demnach das Symbol für eine aktual unendliche Zahl.'."\n",
+                    'Oder es gibt zwischen den endlichen, natürlichen Zahlen und ihrer Anzahl \lm{ \omega } eine riesige Lücke, wonach \lm{ \omega - 1} dann keine endliche, natürliche Zahl wäre.'."\n".
+                    '\lm{ \omega - 1 } wäre demnach das Symbol für eine aktual unendliche Zahl.'."\n",
                       'Ich vermute genau letzteres, nicht mehr nur, weil es meiner logischen Intuition entspricht, sondern, weil die Konstruktion meiner \jump{OM:BiOrd:Einleitung}{Biordinalzahlen} genau diese \jump{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}{Lücke} erkennen lässt.'."\n".
                     'Denn die Primzahlen kommen innerhalb der natürlichen Zahlen nicht zu einem endlichen Ende, wie sich zeigen lässt.'."\n".
-                    'Es muss auch diese Lücke geben, weil die natürlichen Zahlen selber nicht im Endlichen zum Ende kommen und \term{⍵-1} damit nicht quasi die größte oder letzte natürliche Zahl symbolisieren kann.'."\n".
+                    'Es muss auch diese Lücke geben, weil die natürlichen Zahlen selber nicht im Endlichen zum Ende kommen und \lm{ \omega - 1 } damit nicht quasi die größte oder letzte natürliche Zahl symbolisieren kann.'."\n".
                     'Die Lücke könnte also tatsächlich so groß sein, dass das Produkt aller endlicher Primzahlen gleich der Anzahl der natürlichen Zahlen ist.'."\n".
                     'Auch wenn dies erst einmal überraschent erscheint.'."\n",
-                      'Schaut man sich den Grafen der Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} \term{n#} an, so steigt dieser anfangs sehr viel schneller, als der der Anzahl der natürlichen Zahlen.\footnote{\const{SupNum_g_footnote_text_PrimorialWikiWerte}}'."\n".
+                      'Schaut man sich den Grafen der Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} \lm{ n\# } an, so steigt dieser anfangs sehr viel schneller, als der der Anzahl der natürlichen Zahlen.\footnote{\const{SupNum_g_footnote_text_PrimorialWikiWerte}}'."\n".
                     'Der Graf der Primfakultät kann am „Ende“ der natürlichen Zahlen nur dann wieder gleich groß werden, wenn ab einem bestimmten Punkt im Prinzip, vielleicht quasi erst im Aktual-Unendlichen, keine Primzahlen mehr in das Produkt hinzu kommen.'."\n".
-                    'Die Primfakultät, bezogen auf die Anzahl der natürlichen Zahlen, \term{n#-n} oder auch \term{n#/n} kann im Endlichen kein Maximum haben.'."\n".
+                    'Die Primfakultät, bezogen auf die Anzahl der natürlichen Zahlen, \lm{ n\# - n } oder auch \lm{ \frac{ n\# }{ n } } kann im Endlichen kein Maximum haben.'."\n".
                     'Denn immer, wenn wieder eine Primzahl auftaucht, wird es „übermächtig“ groß, und die Primzahlen hören nicht auf aufzutauchen.'."\n".
-                    'Die Vermutung muss also mit der Lücke zwischen allen endlichen natürlichen Zahlen \term{\M(N)} und \term{⍵} zu tun haben.'."\n".
+                    'Die Vermutung muss also mit der Lücke zwischen allen endlichen natürlichen Zahlen \lm{ \mathbb{N} } und \lm{ \omega } zu tun haben.'."\n".
                     'Wie man dies zumindestens mal eingrenzen oder abschätzen kann, zeige ich auf der Seite \italic{\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}}.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung', text =>
