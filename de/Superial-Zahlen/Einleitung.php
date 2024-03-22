@@ -295,6 +295,7 @@
                 'Formale Einschränkung', subline =>
                   '')),
                   array( 'text', array( text => array(
+                    '\color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)} \\\\'."\n".
                     'Um nachfolgend exakt zu arbeiten, möchte ich an dieser Stelle vorab darauf aufmerksam machen,'."\n".
                     'dass die Funktionsparameter – meistens \latexmath{ x } – vorerst auf rationale Zahlen der Menge \latexmath{ \mathbb{Q} } beschränkt sind.'."\n".
                     'Wir machen diese Einschränkung auch, um zum einen nicht zu viele noch offene Fragen zu berühren, und'."\n".
@@ -375,7 +376,7 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen', text =>
                                            
-                'Integral genau verstehen', subline =>
+                'Integration genau verstehen', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Beim Integral müssen wir nun den Prozess des Differenzierens wieder Rückgängig machen und'."\n".
@@ -479,8 +480,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \int_{0}^{x} f\'(n) \,dn  :=  \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) \cdot s^{-1}  }'),
-                      array( display => 'on',  latex => '{  f(x)  =  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) \cdot s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \int_{0}^{x} f\'(n) \,dn  \widehat{=}  \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) \cdot s^{-1}  }'),
+                      array( display => 'on',  latex => '{  f(x)  :=  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) \cdot s^{-1}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Diese Summe ist so definiert, dass sie im Falle von \latexmath{ x < 0 } negativ wird.'."\n",
@@ -769,6 +770,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Rationale Zahlen und ihre Primfaktorzerlegung} \\\\'."\n".
+                    '\color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)} \\\\'."\n".
                     'Ebenso, wie jede natürliche Zahl größer Eins eine Primfaktorzerlegung hat,'."\n".
                     'so hat im Grunde auch jede rationale Zahl größer Null und ungleich Eins eine'."\n".
                     'Primfaktorzerlegung, wenn wir negative Potenzen der Primzahlen zulassen, wie beispielsweise:'."\n".
@@ -923,6 +925,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Primzahlprodukt-Vermutung} \\\\'."\n".
+                    '\color{*Bearb}{(Der Beweis der \italic{\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}} muss noch berücksichtigt werden.)} \\\\'."\n".
                     'Im spielerischen Umgang und in tieferen Analysen der Zusammenhänge kommt die Vermutung auf, dass das Produkt'."\n".
                     'der einfachen Potenz aller endlichen Primzahlen, also eine Zeile des Primzahl-Flächenprodukts,'."\n".
                     'der Anzahl der natürlichen Zahlen \latexmath{ \omega } entspricht:'."\n".
@@ -952,6 +955,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Überrationalitätsvermutung} \\\\'."\n".
+                    '\color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)} \\\\'."\n".
                     'Eine weitere Vermutung, die der Primfaktorzerlegungen von \latexmath{ s } entspringt,'."\n".
                     'dreht sich um die Frage, ob der positive reelle Anteil von algebraischen Zahlen\color{*Bearb}{(Verweis)}'."\n".
                     'durch einen von mir so genannten \italic{überrationalen Bruch} dargestellt werden kann.'."\n",
