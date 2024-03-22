@@ -42,8 +42,8 @@
              keywords => '',
              text_titel_h1 => 'Zahlensemantik \\color{*TitleAdd}{\\small{(ZS)}}',
              text_titel_short => 'Zahlensemantik',
-             text_undertitel_h2 => 'XXX',
-             text_titel_discr_h3 => 'YYY',
+             text_undertitel_h2 => '',
+             text_titel_discr_h3 => '',
              jump_ary => array(
                     'OM:ZS:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
                     'OM:ZS:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
@@ -57,15 +57,50 @@
              keywords => '',
              text_titel_h1 => 'Einleitung',
              text_titel_short => 'Einleitung',
-             text_undertitel_h2 => 'XXX',
-             text_titel_discr_h3 => 'YYY',
+             text_undertitel_h2 => '',
+             text_titel_discr_h3 => '',
              jump_ary => array(
                     'OM:ZS:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                
-                      'OM:ZS:Einleitung:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                      // 'OM:ZS:Einleitung:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                
-                    'OM:ZS:Einleitung:Pi-Vektor' => array( headline_text => '\lm{ \pi }-Vektor', headline_text_short => 'π-Vektor'),
                     'OM:ZS:Einleitung:Phi-Formel' => array( headline_text => '\lm{ \phi }-Formel', headline_text_short => 'Φ-Formel'),
+                  ),
+           ),
+     'OM:ZS:Phi-Formel' =>
+      array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Phi-Formel.php',
+             url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Phi-Formel.php',
+             titel => 'Phi-Formel - Zahlensemantik (ZS) - Deutsch',
+             description => '',// '\\name[undertitle]{OM:ZS:Einleitung}. — \\name[description]{OM:ZS:Einleitung}.',
+             keywords => '',
+             text_titel_h1 => '\lm{ \phi }-Formel',
+             text_titel_short => 'Φ-Formel',
+             text_undertitel_h2 => '',
+             text_titel_discr_h3 => '',
+             jump_ary => array(
+                    'OM:ZS:Phi-Formel:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                               
+                      // 'OM:ZS:Phi-Formel:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                               
+                    // 'OM:ZS:Phi-Formel:XXX' => array( headline_text => '\lm{ \phi }-Formel', headline_text_short => 'Φ-Formel'),
+                  ),
+           ),
+     'OM:ZS:Pi-Vektor' =>
+      array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Pi-Vektor.php',
+             url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Pi-Vektor.php',
+             titel => 'π-Vektor - Zahlensemantik (ZS) - Deutsch',
+             description => '',// '\\name[undertitle]{OM:ZS:Einleitung}. — \\name[description]{OM:ZS:Einleitung}.',
+             keywords => '',
+             text_titel_h1 => '\lm{ \pi }-Vektor',
+             text_titel_short => 'π-Vektor',
+             text_undertitel_h2 => '',
+             text_titel_discr_h3 => '',
+             jump_ary => array(
+                    'OM:ZS:Pi-Vektor:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                               
+                      // 'OM:ZS:Pi-Vektor:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                               
+                    // 'OM:ZS:Pi-Vektor:XXX' => array( headline_text => '\lm{ \pi }-Vektor', headline_text_short => 'π-Vektor'),
                   ),
            ),
      'OM:ZS:Literatur' =>

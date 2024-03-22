@@ -795,7 +795,35 @@
 	</url>
   
 
-	<url>
+  <url>
+		<loc>https://nsosp.org/de/Zahlensemantik/index.php</loc>
+		<lastmod>2024-02-29</lastmod>
+		<priority>1.0</priority>
+	</url>
+  
+  <url>
+		<loc>https://nsosp.org/de/Zahlensemantik/Einleitung.php</loc>
+		<lastmod>2024-02-29</lastmod>
+		<priority>1.0</priority>
+	</url>
+  <url>
+		<loc>https://nsosp.org/de/Zahlensemantik/Phi-Formel.php</loc>
+		<lastmod>2024-02-29</lastmod>
+		<priority>1.0</priority>
+	</url>
+  <url>
+    <loc>https://nsosp.org/de/Zahlensemantik/Pi-Vektor.php</loc>
+    <lastmod>2024-02-29</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+		<loc>https://nsosp.org/de/Zahlensemantik/Literatur.php</loc>
+		<lastmod>2024-02-29</lastmod>
+		<priority>1.0</priority>
+	</url>
+
+  
+  <url>
 		<loc>https://nsosp.org/eng/index.html</loc>
 		<lastmod>2024-02-29</lastmod>
 		<priority>0.5</priority>
