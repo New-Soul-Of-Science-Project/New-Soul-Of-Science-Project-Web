@@ -15,12 +15,43 @@
                 array(
                   array( 'text', array( text => array(
                     'Mit den Superial-Zahlen die fraktale Struktur des Unendlichen entdecken …'."\n",
-                      'Vom Endlichen bis ins Aktual-Unendliche mit ganzen Zahlen zählen, ist eine faszinierende Sache.'."\n".
-                    'Welche Primfaktorzerlegung haben diese aktual unendlichen ganzen Zahlen?'."\n".
-                    'Wie sind die Primzahlen im Aktual-Unendlichen verteilt?'."\n".
-                    'Wie sind Ableitungen und Integrale im Endlichen definiert, wenn wir die Superial-Zahlen dafür benutzen?'."\n",
-                      'Viele spannende Fragen, deren Antworten sich in dieser Arbeit ergeben.'."\n"))),
-                      //'Verstehen, was eine negative Menge ist, gibt einen besseren Einblick in die Realität unserer Welt.'."\n"))),
+                      'Vom Endlichen bis ins Aktual-Unendliche mit ganzen Zahlen zählen, an jeder Stelle vorwärts, wie rückwärts,'."\n".
+                    'ist faszinierend.'."\n".
+                    'Wir finden ein aktual unendliches Stellenwertsystem, basierend auf der neuen unendlichen Basis \lm{ \s }.'."\n".
+                    'Wir nennen sie die superiale Basis, welche ein Produkt aller endlichen Primzahlen in aktual unendlicher Potenz der Ordinalzahl \lm{ ω },'."\n".
+                    'der vollständigen Induktion, ist.'."\n",
+                      'Es ist offensichtlich, dass \lm{ \s } im Produkt mit jeder rationalen Zahl eine aktual unendlich große ganze Zahl ergibt.'."\n",
+                      'Wir werden Beweisen, dass dies nicht nur für die rationalen Zahlen gilt, sondern auch für das Produkt aller'."\n".
+                    'Realanteile algebraischer Zahlen mit \lm{ \s }, also auch für die irrationalen Realanteile algebraischer Zahlen.'."\n".
+                    'Das ist etwas Besonderes und Bedeutendes.'."\n".
+                    'Der Beweis zeigt uns, wie wir aus jeder \lm{ x }-ten irrationalen Wurzel aus einer endlichen natürlichen Zahl \lm{ n }'."\n".
+                    'durch ein Produkt mit allen Primzahlen in ihrem Radikanden \lm{ n } in \lm{ ω }-ter Potenz, eine aktual unendlich große ganze Zahl'."\n".
+                    'machen können.'."\n".
+                    'Wodurch alle irrationalen Wurzeln aus natürlichen Zahlen als Bruch aktual unendlich großer ganzzahliger Quotienten dargestellt werden können.'."\n".
+                    'Was ja mit rationalen Brüchen endlicher Quotienten nicht geht.'."\n",
+                      'Das aktual unendliche Stellenwertsystem der Superial-Zahlen, auf Basis von \lm{ \s }, erlaubt nun'."\n".
+                    'sinnvollerweise positive wie negative Werte seiner Stellen, die Realanteile algebraischer Zahlen sind.'."\n",
+                      'Wir definieren die Differentialrechnung mit Hilfe der Superial-Zahlen neu.'."\n".
+                    'So ersetzen wir die Näherungsrechnung des Limes durch Definitionen mit aktual unendlichen Zahlen und'."\n".
+                    'erhalten eine Zahlentheorie der Analysis, die auf Primzahlen aufbaut.'."\n",
+                      'Wenn wir uns auf Grundlagen der neuen Zahlentheorie der Analysis die Eulersche Zahl \lm{ \e } und'."\n".
+                    'die so erhaltene \lm{ \e }-Funktion anschauen, die ihrer eigenen Ableitung gleich ist,'."\n".
+                    'dann erhalten wir tiefe Einblicke in die transzendente'."\n".
+                    'Struktur von \lm{ \e_{\s} }, die Eulersche Zahl auf Basis von \lm{ \s }.'."\n".
+                    'Diese Zahl können wir bis in ihre aktual unendlich kleinen Summanden der Potenz \lm{ \s^{-\s} }'."\n".
+                    'verfolgen, wo sie endet.'."\n".
+                    'Die \lm{ \e }-Funktion ergibt sich durch diese Definition im Stellenwertsystem ausgedrückt zu \lm{ \e_{\s}^{x} = 〈1〉․〈1〉^{〈x〉〈0〉} }'."\n".
+                    'und dies entspricht \lm{ \e_{\s}^{x} = *( 1 + \frac{ 1 }{ \s } *)^{x \cdot \s} }.'."\n".
+                    'Damit erhalten wir für die Eulersche Zahl \lm{ \e_{\s} = 〈1〉․〈1〉^{〈1〉〈0〉} },'."\n".
+                    'was \lm{ \e_{\s} = *( 1 + \frac{ 1 }{ \s } *)^{\s} } entspricht.'."\n",
+                      'Weiterhin entwickeln wir mit Hilfe der neuen \jump{OM:BiOrd:Home}{Biordinalzahlen} einen Beweis, dass die vollständige Induktion \lm{ ω } eine Primfaktorzerlegung besitzt.'."\n".
+                    'Die Ordinalzahl \lm{ ω } ist das Produkt aller endlichen Primzahlen: \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots }.'."\n".
+                    'Eine im ersten Moment überraschende Entdeckung.'."\n".
+                    'Und eine weitere tiefe Einsicht in die fundamentalen Strukturen der Arithmetik, die eine neue Verbindung zwischen der Zahlentheorie und der Analysis zeigt.'."\n",
+                      'Welche Primfaktorzerlegung haben die natürlichen Superial-Zahlen?'."\n".
+                    'Wie sind die Primzahlen im Aktual-Unendlichen verteilt?'."\n",
+                      'Es eröffnet sich eine ganze Welt vieler spannender Fragen, von denen sich hier und dort Antworten in dieser Arbeit ergeben oder zu deren Nachforschung angeregt wird.'."\n".
+                    ''))),
                       
                   array( 'headline', array( jump_name => 'OM:SupNum:Home:Vortext:XXX', text =>
                                            
