@@ -1419,7 +1419,7 @@
                     'Und dies, ohne dass sich die Existenz der natürlichen Superial-Zahlen und der superialen Primzahlen verändern würde.'."\n".
                     'Es wird die Existenz der \italic{überrationalen Superial-Zahlen} auf Basis von \lm{ \s } vermutet.'."\n".
                     'Ein überrationaler Bruch soll ein Bruch sein, der sowohl im Nenner als auch im Zähler eine Zahl aus unendlich vielen verschiedenen endlichen Primfaktoren endlicher Potenz enthält.'."\n".
-                    'Ein Produkt eines überrationalen Bruchs \lm{ q_r } mit \lm{ s } ergibt dann die unendliche, natürliche Superial-Zahl \lm{  q_r \cdot s}.'."\n".
+                    'Ein Produkt eines überrationalen Bruchs \lm{ q_{r} } mit \lm{ \s } ergibt dann die unendliche, natürliche Superial-Zahl \lm{  q_{r} \cdot \s}.'."\n".
                     'Die Menge aller überrationalen Brüche wäre dann \lm{ \mathbb{Qr} }.'."\n".
                     'Die Vermutung bezieht sich darauf, dass solche überrationalen Brüche definierbar sind.'."\n".
                     'Zu untersuchen ist zum Beispiel, ob die Werte von Wurzeln aus rationalen Zahlen durch solche überrationalen Brüche darstellbar sind.'."\n",

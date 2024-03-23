@@ -383,6 +383,7 @@
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2',
                 Title => 'Beispielrechnung zur Ableitung mit \lm{ s^2 } …',
                 TitleVis => 'Beispielrechnung zur Ableitung mit \lm{ s^2 }:', ParagraphList => array(
+
                   array( 'text', array( text => array(
                     'Exemplarisch möchte ich einmal die \lm{ \e }-Funktion anhand einer etwas variierten Ableitung'."\n".
                     'definieren, um zu sehen, wie sich dies eventuell auf die Basis der sich so ergebenden \lm{ \e }-Funktion'."\n".
@@ -469,15 +470,15 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈x〉_{-2}}  =  〈1〉․〈0〉〈1〉^{〈〈x〉_{-2}〉_{2}}  }'),
+                      array( display => 'on',  latex => '{  \e_{\s^{2}}^{〈x〉_{-2}}  =  〈1〉․〈0〉〈1〉^{〈〈x〉_{-2}〉_{2}}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s^{2}}^{〈x〉_{-2}}  =  〈1〉․〈0〉〈1〉^{x}  }'),
-                      array( display => 'on',  latex => '{  \e_{s^{2}}^{0}  =  1  }'),
-                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈1〉_{-2}}  =  〈1〉․〈0〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈2〉_{-2}}  =  〈1〉․〈0〉〈2〉〈0〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈3〉_{-2}}  =  〈1〉․〈0〉〈3〉〈0〉〈3〉〈0〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈4〉_{-2}}  =  〈1〉․〈0〉〈4〉〈0〉〈6〉〈0〉〈4〉〈0〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈5〉_{-2}}  =  〈1〉․〈0〉〈5〉〈0〉〈10〉〈0〉〈10〉〈0〉〈5〉〈0〉〈1〉  }'),
-                      array( display => 'on',  latex => '{  \e_{s^{2}}^{〈6〉_{-2}}  =  〈1〉․〈0〉〈6〉〈0〉〈15〉〈0〉〈20〉〈0〉〈15〉〈0〉〈6〉〈0〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s^{2}}^{0}  =  1  }'),
+                      array( display => 'on',  latex => '{  \e_{\s^{2}}^{〈1〉_{-2}}  =  〈1〉․〈0〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s^{2}}^{〈2〉_{-2}}  =  〈1〉․〈0〉〈2〉〈0〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s^{2}}^{〈3〉_{-2}}  =  〈1〉․〈0〉〈3〉〈0〉〈3〉〈0〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s^{2}}^{〈4〉_{-2}}  =  〈1〉․〈0〉〈4〉〈0〉〈6〉〈0〉〈4〉〈0〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s^{2}}^{〈5〉_{-2}}  =  〈1〉․〈0〉〈5〉〈0〉〈10〉〈0〉〈10〉〈0〉〈5〉〈0〉〈1〉  }'),
+                      array( display => 'on',  latex => '{  \e_{\s^{2}}^{〈6〉_{-2}}  =  〈1〉․〈0〉〈6〉〈0〉〈15〉〈0〉〈20〉〈0〉〈15〉〈0〉〈6〉〈0〉〈1〉  }'),
                     ))),
                   array( 'text', array( text => array(
                     'So bekommen wir einen vom Aussehen her vielleicht etwas unerwarteten Einblick in die'."\n".
@@ -488,16 +489,17 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e_{s^{2}}  =  \e_{s^{2}}^{1}  =  \e_{s^{2}}^{〈s^{2}〉_{-2}}  =  〈1〉․〈0〉〈1〉^{s^{2}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 *( \begin{array}{llll} \s^{2} \\\ 0 \end{array} *) *〉․\,*〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ 1 \end{array} *) *〉*〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ 2 \end{array} *) *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\; *〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ 3 \end{array} *) *〉\cdots \\\ \qquad\qquad\qquad\; \cdots *〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ \s^{2} - 2 \end{array} *) *〉*〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ \s^{2} - 1 \end{array} *) *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\; *〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ \s^{2} \end{array} *) *〉_{-\s^{2}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 *〉․\,*〈 0 *〉*〈 \s^{2} *〉*〈 0 *〉 \\\ \qquad\qquad\qquad\qquad\;\;\, *〈 \frac{ \s^{4} - \s^{2} }{ 2 } *〉*〈 0 *〉*〈 \frac{ \s^{6} - 3 \s^{4} + 2 \s^{2} }{ 6 } *〉\cdots \\\ \qquad\qquad\qquad\quad\;\;\, \cdots *〈 \frac{ \s^{6} - 3 \s^{4} + 2 \s^{2} }{ 6 } *〉*〈 0 *〉*〈 \frac{ \s^{4} - \s^{2} }{ 2 } *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\; *〈 0 *〉*〈 \s^{2} *〉*〈 0 *〉*〈 1 *〉_{-\s^{2}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 0 *〉*〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 0 *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\;\;\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 0 *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉*〈 0 *〉 \\\ \qquad\qquad\qquad\qquad\quad *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 0 *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 0 *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad *〈 1 *〉*〈 0 *〉*〈 0 *〉*〈 0 *〉*〈 1 *〉_{-\s^{2}}  }'),
+                      array( display => 'on',  latex => '{  \e_{s^{2}}  =  \e_{\s^{2}}^{1}  =  \e_{s^{2}}^{〈s^{2}〉_{-2}}  =  〈1〉․〈0〉〈1〉^{s^{2}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s^{2}}  =  *〈 *( \begin{array}{llll} \s^{2} \\\ 0 \end{array} *) *〉․\,*〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ 1 \end{array} *) *〉*〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ 2 \end{array} *) *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\; *〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ 3 \end{array} *) *〉\cdots \\\ \qquad\qquad\qquad\; \cdots *〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ \s^{2} - 2 \end{array} *) *〉*〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ \s^{2} - 1 \end{array} *) *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\; *〈 0 *〉*〈 *( \begin{array}{llll} \s^{2} \\\ \s^{2} \end{array} *) *〉_{-\s^{2}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s^{2}}  =  *〈 1 *〉․\,*〈 0 *〉*〈 \s^{2} *〉*〈 0 *〉 \\\ \qquad\qquad\qquad\qquad\;\;\, *〈 \frac{ \s^{4} - \s^{2} }{ 2 } *〉*〈 0 *〉*〈 \frac{ \s^{6} - 3 \s^{4} + 2 \s^{2} }{ 6 } *〉\cdots \\\ \qquad\qquad\qquad\quad\;\;\, \cdots *〈 \frac{ \s^{6} - 3 \s^{4} + 2 \s^{2} }{ 6 } *〉*〈 0 *〉*〈 \frac{ \s^{4} - \s^{2} }{ 2 } *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\; *〈 0 *〉*〈 \s^{2} *〉*〈 0 *〉*〈 1 *〉_{-\s^{2}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s^{2}}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 0 *〉*〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 0 *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\;\;\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 0 *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉*〈 0 *〉 \\\ \qquad\qquad\qquad\qquad\quad *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 0 *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 0 *〉 \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad *〈 1 *〉*〈 0 *〉*〈 0 *〉*〈 0 *〉*〈 1 *〉_{-\s^{2}}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wir können hier erkennen, dass wir, trotz der feineren Auflösung der Ableitung keinen Informationsgewinn erzielen.'."\n".
                     'In den ungeraden Potenzen von \lm{ \s } reißen einfach Lücken auf, die nichts zusätzliches enthalten.'."\n".
                     'Daran können wir erkennen, dass die superiale Einheit \lm{ \s } gerade die optimale Auflösung für Differentiation in diesem Kontext ist.'."\n".
                     ''))),
+
                     ))),
 
                   array( 'text', array( text => array(
