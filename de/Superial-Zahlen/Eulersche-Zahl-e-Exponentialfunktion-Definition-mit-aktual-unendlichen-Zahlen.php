@@ -17,7 +17,9 @@
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '• Meine Herleitung der \lm{ \e }-Funktion mit Hilfe von Superial-Zahlen stammt aus dem Jahr 2001: siehe Datei "superial zahlen (26).pdf".',
                     '\\bold{Ideen}',
-                    '• Wie leiten wir \lm{ \e } mit Integralen her?',
+                    '• Wie leiten wir \lm{ \e_{\s} } mit Integralen her?',
+                    '\\bold{Verbesserungen}',
+                    '• Erwähnen, dass \lm{ \e_{\s} } keine einfache Superial-Zahl ist, sondern zu einer Superial-Zahlen Art gehört, bei der unter anderem auch aktual unendlich kleine Potenzen der superialen Basis wie \lm{ \s^{-\s} } erlaubt sind.',
                     ))),
                       
                   array( 'text', array( text => array(
