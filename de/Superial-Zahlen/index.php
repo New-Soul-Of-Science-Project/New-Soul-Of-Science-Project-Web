@@ -31,10 +31,15 @@
                     'Was ja mit rationalen Brüchen endlicher Quotienten nicht geht.'."\n",
                       'Das aktual unendliche Stellenwertsystem der Superial-Zahlen, auf Basis von \lm{ \s }, erlaubt nun'."\n".
                     'sinnvollerweise positive wie negative Werte seiner Stellen, die Realanteile algebraischer Zahlen sind.'."\n",
-                      'Wir definieren die Differentialrechnung mit Hilfe der Superial-Zahlen neu.'."\n".
+                      'Wir definieren die Differentialrechnung, die Ableitung und die Integralrechnung, mit Hilfe der Superial-Zahlen neu.'."\n".
                     'So ersetzen wir die Näherungsrechnung des Limes durch Definitionen mit aktual unendlichen Zahlen und'."\n".
-                    'erhalten eine Zahlentheorie der Analysis, die auf Primzahlen aufbaut.'."\n",
-                      'Wenn wir uns auf Grundlagen der neuen Zahlentheorie der Analysis die Eulersche Zahl \lm{ \e } und'."\n".
+                    'erhalten eine Zahlentheorie der Analysis, die auf Primzahlen beruht.'."\n",
+                      'Über die ganzen Superial-Zahlen können wir die Integrale als normale Summen über aktual unendlich kleine'."\n".
+                    'Summanden auf Grundlage des Zählens definieren.'."\n".
+                    'Die aktual unendlich kleinen Summanden summieren sich so durch aktual unendlich große Summen zu endlichen Zahlen auf.'."\n".
+                    'Auf diese Weise erhalten wir Einblicke in Summen, die wir bisher nicht kannten oder nicht im Detail'."\n".
+                    'durchdringen und verstehen konnten.'."\n",
+                      'Wenn wir uns auf Grundlage der neuen Zahlentheorie der Analysis die Eulersche Zahl \lm{ \e } und'."\n".
                     'die so erhaltene \lm{ \e }-Funktion anschauen, die ihrer eigenen Ableitung gleich ist,'."\n".
                     'dann erhalten wir tiefe Einblicke in die transzendente'."\n".
                     'Struktur von \lm{ \e_{\s} }, die Eulersche Zahl auf Basis von \lm{ \s }.'."\n".
