@@ -246,19 +246,20 @@
                     'Wie wir sehen werden erhalten wir mit den hier entwickelten Superial-Zahlen etwas ganz besonderes:'."\n".
                     'Formal gesprochen sind sie eine abelsche Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}} und'."\n".
                     'bezüglich der Addition und Multiplikation ein aktual unendlicher angeordneter algebraischer Körper\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischerZahlkoerper:2020}.}.'."\n".
-                    'Mit ihnen erweitern wir die rationalen Zahlen\footnote{\const{SupNum_g_footnote_text_RationaleZahl}} auf fraktale Weise ins Aktual-Unendliche und'."\n".
-                    'geben so der Unendlichkeit eine fundamentale, fraktale Struktur.'."\n",
+                    'Mit ihnen erweitern wir die rationalen Zahlen\footnote{\const{SupNum_g_footnote_text_RationaleZahl}}'."\n".
+                    'und durch den Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}'."\n".
+                    'sogar die Menge der Realanteile der algebraischen Zahlen\\footnote{\\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
+                    'inklusive ihrer irrationalen Zahlen, wie irrationale Wurzeln, auf fraktale Weise ins Aktual-Unendliche.'."\n".
+                    'So geben wir der aktualen Unendlichkeit eine facettenreiche fundamentale fraktale Struktur.'."\n",
                       'Mit den Superial-Zahlen kommen wir in die Lage aktual unendlich kleine Differenzen zu bilden,'."\n".
-                    'mit denen wir sehr präzise Ableitungen beschreiben und berechnen können, ohne den Limes benutzen zu müssen.'."\n",
-                      'Auch können wir endliche Zahlen in aktual unendlich kleinen, aber ganzen, Schritten zählen,'."\n".
-                    'deren Anzahl dann aktual unendlich groß sind.'."\n".
-                    'Mit Hilfe dieser feinsten Schritte können wir auf neue Art gewöhnliche, aber aktual unendliche, Summen beschreiben,'."\n".
-                    'die so neuartige und sehr präzise Integrale sind.'."\n",
+                    'mit denen wir, bis ins aktual unendlich kleine, präzise Ableitungen beschreiben und berechnen können, ohne den Limes zu benutzen.'."\n",
+                      'Auch können wir Integrale mit wohldefinierten aktual unendlich kleinen Zählschritten beschreiben,'."\n".
+                    'deren Anzahl dann aktual unendlich groß sind und sich so wieder zu endliche Zahlen aufsummieren.'."\n",
                       'Nutzen wir auch die Theorie der \jump{OM:BiOrd:Home}{Biordinalzahlen} so können wir Summen ausrechnen,'."\n".
                     'die nach meinem Wissen bisher nicht durch aktual unendliche Zahlen ausgedrückt werden konnten:'."\n".
-                    'Die Summe aller endlichen ganzen Zahlen oder die Summe aller endlichen rationalen Zahlen beispielsweise.'."\n",
+                    'Die Summe aller endlichen ganzen Zahlen oder die Summe der Realanteile aller algebraischen Zahlen beispielsweise.'."\n",
                       'Über die Struktur, die dabei sichtbar wird, eröffnet sich in meinen Augen ein ganz neuer Kosmos der Zahlentheorie.'."\n".
-                    'Denn wir können die endlichen Primzahlen mit unserer dadurch entdeckten, neuen aktual unendlichen Basis \lm{ s }'."\n".
+                    'Denn wir können die endlichen Primzahlen mit unserer dadurch entdeckten, neuen aktual unendlichen Basis \lm{ \s }'."\n".
                     'in Zusammenhang bringen, indem wir diese durch Primzahlen definieren, wie wir noch sehen werden.'."\n",
                       'Wir erhalten zum Beispiel auch natürliche Superial-Zahlen, ganze Superial-Zahlen und superiale Primzahlen;'."\n".
                     'aktual unendlich kleine Einsen und aktual unendlich große Einsen.'."\n".
@@ -267,8 +268,17 @@
                     'Kleine und Große.'."\n",
                       'Und nicht zuletzt sind die Superial-Zahlen ein'."\n".
                     '\jump{OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem}{Stellenwertsystem}\footnote{\const{SupNum_g_footnote_text_Stellenwertsystem}}'."\n".
-                    'zur Basis \lm{ s },'."\n".
-                    'wo die Ziffern alle positiven wie auch negativen rationalen Zahlen sein können.'."\n",
+                    'zur Basis \lm{ \s },'."\n".
+                    'wo die Ziffern alle positiven wie auch negativen Realanteile der algebraischen Zahlen sein können.'."\n",
+                      'Wir erschaffen so eine Zahlentheorie der Analysis, die auf Primzahlen basiert, die im unendlich großen Produkt'."\n".
+                    'aller endlichen Primzahlen zur \lm{ ω }-ten Potenz ihre Grundlage findet, der \italic{superialen Basis} \lm{ \s }.'."\n".
+                    'Dabei finden wir heraus, dass \lm{ ω } selbst – die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} –'."\n".
+                    'ein Primzahlprodukt ist.'."\n",
+                      'Die superiale Basis \lm{ \s } ist nicht einfach irgendeine aktual unendliche Zahl.'."\n".
+                    'Sie ist so auf die einfachste Weise symmetrisch strukturiert, dass sie genau zu den Eigenschaften der rationalen und algebraischen Zahlen passt,'."\n".
+                    'sodass diese als ihre Koeffizienten, mit ihr im Produkt, immer aktual unendlich große ganze Zahlen ergeben.'."\n".
+                    'Daher spielt die superiale Basis \lm{ \s } eine zwar andere, aber vergleichbare Rolle für das Aktual-Unendliche, wie die imaginäre Einheit \lm{ \i }'."\n".
+                    'für die komplexen Zahlen.'."\n",
                       'Wie sagen wir im Englischen so schön:'."\n".
                     '\quote{Lets go for it!}'."\n".
                     ''))),
@@ -279,7 +289,7 @@
                   array( 'text', array( text => array(
                     'In der Schule fand ich Ableitungen und Integrale immer sehr faszinierend.'."\n".
                     'Es war für mich erstaunlich, wie man über die Unendlichkeit ganz neue Erkenntnisse und Formeln gewinnen konnte.'."\n".
-                    'Daraus hat sich damals ein tiefes Bedürfnis entwickelt zu verstehen, was dabei genau passiert.'."\n".
+                    'Daraus hat sich damals ein tiefes Bedürfnis entwickelt zu verstehen, was dabei genau vor sich geht.'."\n".
                     'Ich spielte viel mit dem Ansatz der Ableitung herum, was schließlich dazu führte, dass ich begriff, dass der dort verwendete Limes nicht nur dazu führt,'."\n".
                     'dass ein bestimmtes Glied der sich ergebenen Summe dominant in den Vordergrund tritt und das Ergebnis bestimmt.'."\n".
                     'Mir wurde auch klar, dass all die anderen Summanden, die unendlich klein und damit scheinbar unbedeutend wurden, eine Welt darstellten, die so quasi im Nirvana versank.'."\n",
