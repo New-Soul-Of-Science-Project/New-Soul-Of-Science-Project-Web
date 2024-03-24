@@ -1587,35 +1587,32 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
                       
-                'Erklärung und Verständnis durch das Primzahl-Spektrum der natürlichen Zahlen', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'Wenn wir auf die Primzahlen innerhalb der natürlichen Zahlen gucken, dann ist nach Raimund Welschs'."\n".
-                    'Hinweis jede \lm{ 2 }-te Zahl ganzzahlig durch \lm{ 2 } teilbar und'."\n".
-                    'jede \lm{ 3 }-te Zahl ganzzahlig durch \lm{ 3 }, jede \lm{ 5 }-te durch \lm{ 5 } und'."\n".
-                    'schließlich jede \lm{ p }-te Zahl ganzzahlig durch \lm{ p }, für alle endlichen Primzahlen.'."\n",
-                      'Jede größere Potenz einer der Primzahlen, wie bei der \lm{ 2 } die \lm{ 4 } oder \lm{ 8 }, liegt im gleichen Spektrum,'."\n".
-                    'auf dem gleichen Raster, nur mit gröberer Frequenz oder Dichte; trägt also nichts feineres dazu bei.'."\n".
-                    'Daher ist es logisch, dass die Anzahl der natürlichen Zahlen nur durch jede einfache Potenz jeder endlichen Primzahl ganzzahlig teilbar ist.'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
-                      
-                'Das Gesamtspektrum der natürlichen Zahlen', subline =>
+                'Erklärung und Verständnis des Gesamtspektrums der natürlichen Zahlen durch ihr Primzahl-Spektrum', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Zunächst können wir sagen, was alle natürlichen Zahlen miteinander verbindet:'."\n".
                     'Alle natürlichen Zahlen liegen auf dem Zählraster, sind also durch die Eins ganzzahlig teilbar.'."\n".
                     'Poetischer ausgedrückt schwingen alle natürlichen Zahlen mit der Eins oder im Spektrum oder Raster der Eins.'."\n",
+                      'Wenn wir auf die natürlichen Zahlen durch die Brille ihrer Primzahlen gucken, dann ist nach Raimund Welschs'."\n".
+                    'Hinweis jede \lm{ 2 }-te Zahl ganzzahlig durch \lm{ 2 } teilbar und'."\n".
+                    'jede \lm{ 3 }-te Zahl ganzzahlig durch \lm{ 3 }, jede \lm{ 5 }-te durch \lm{ 5 } und'."\n".
+                    'schließlich jede \lm{ p }-te Zahl ganzzahlig durch \lm{ p }, für alle endlichen Primzahlen.'."\n",
                       'Bei den Konstruktionsschritten zur Erzeugung jeder endlichen Primzahl erhalten wir eine Sammlung'."\n".
-                    'der Primfaktoren der endlichen natürlichen Zahlen, die uns über das einschrittige Zählen hinaus sagen,'."\n".
-                    'auf welchen größeren Spektren oder Rastern die natürlichen Zahlen auch noch liegen'."\n".
+                    'der Primfaktoren der endlichen natürlichen Zahlen, die uns also über das einschrittige Zählen hinaus sagen,'."\n".
+                    'auf welchen größeren und gröberen Spektren oder Rastern bestimmte Gruppen natürlicher Zahlen auch noch liegen'."\n".
                     'oder in welchen Spektren oder Rastern sie auch noch schwingen.'."\n".
-                    'Dabei ist eine höhere Potenz einer Primzahl irrelevant, weil jede Primzahl die kleinste Weite ihres Rasters beschreibt,'."\n".
-                    'auf der auch ihre höheren Potenzen liegen.'."\n".
-                    'Demnach gehören beispielsweise die \\latexmath{ 4 = 2^2 } oder die \\latexmath{ 8 = 2^3 } zum selben Raster, wie die \\latexmath{ 2 = 2^1 }.'."\n",
-                      'Die \\latexmath{ 3 = 3^1 } hingegen spannt ein anderes Raster auf und die beiden und alle weiteren Primzahl-Potenzraster überschneiden sich nicht'."\n".
-                    'und beschreiben kombiniert die natürlichen Zahlen ab der \\latexmath{ 2 }.'."\n",
-                      'Warum handelt es sich denn bei \\latexmath{ 2 = 2^1 }, \\latexmath{ 4 = 2^2 } oder \\latexmath{ 8 = 2^3 } und für'."\n".
+                    'Bei der Beschreibung des gesamten Einser-Spektrums oder -Rasters ist eine höhere Potenz einer Primzahl allerdings irrelevant,'."\n".
+                    'weil jede Primzahl die kleinste Weite ihres Spektrums oder Rasters beschreibt, auf der auch ihre höheren Potenzen liegen.'."\n".
+                    'Demnach gehören beispielsweise die \\latexmath{ 4 = 2^2 } oder die \\latexmath{ 8 = 2^3 } zum selben Raster, wie die \\latexmath{ 2 = 2^1 }.'."\n".
+                    'Höhere Potenzen tragen also nichts feineres bei.'."\n",
+                      'Die \\latexmath{ 3 = 3^1 } hingegen spannt ein anderes Raster auf und die beiden und alle weiteren Primzahl-Potenzraster überschneiden sich im Inneren nicht'."\n".
+                    'und beschreiben kombiniert die natürlichen Zahlen ab der \\latexmath{ 2 }.'."\n".
+                    'Die Menge oder Zahl \lm{ ω } beschreibt alle natürlichen Zahlen und damit das Zählraster.'."\n",
+                      'Nur ein Produkt aller endlichen Primzahlen \lm{ ω } beschreibt darum das Zählraster arithmetisch so, dass alle natürlichen Zahlen der Menge \lm{ ω } erfasst werden.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Nähere Betrachtung der Spektren oder Raster} \\\\'."\n".
+                    'Warum handelt es sich denn bei \\latexmath{ 2 = 2^1 }, \\latexmath{ 4 = 2^2 } oder \\latexmath{ 8 = 2^3 } und für'."\n".
                     'alle weiteren Potenzen von Zwei, oder allgemeiner bei \\latexmath{ p_i^k }, mit \\latexmath{ p_i \in \mathbb{P} } und \\latexmath{ k \geq 1 }, um das gleiche Raster?'."\n".
                     'Das ist nicht gleich offensichtlich, finde ich.'."\n",
                       'Dies können wir am Distributivgesetz erkennen, denn \\latexmath{ p_i^k + 1 } ist nicht ganzzahlig'."\n".
@@ -1627,7 +1624,7 @@
                     'Wir erhalten also eine erweiterte Qualität bezüglich unterschiedlicher Primfaktoren einer natürlichen Zahl.'."\n",
                       'In Bezug auf die Vervielfachung der selben Primzahl durch ihre steigende Potenz in einem'."\n".
                     'Produkt, bleibt die Qualität dieser Teilungsaussage unverändert und damit unabhängig von ihrer Potenz.'."\n",
-                      'Auch das lässt uns tiefer verstehen, warum die Menge aller endlichen natürlichen Zahlen mit einem Produkt'."\n".
+                      'Auch das lässt uns tiefer verstehen, warum die Menge aller endlichen natürlichen Zahlen \lm{ ω } mit einem Produkt'."\n".
                     'aller endlichen Primzahlen einfacher Potenz beschrieben wird.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
