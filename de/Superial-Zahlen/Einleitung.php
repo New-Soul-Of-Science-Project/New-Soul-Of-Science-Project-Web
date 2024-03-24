@@ -278,7 +278,9 @@
                     'Sie ist so auf die einfachste Weise symmetrisch strukturiert, dass sie genau zu den Eigenschaften der rationalen und algebraischen Zahlen passt,'."\n".
                     'sodass diese als ihre Koeffizienten, mit ihr im Produkt, immer aktual unendlich große ganze Zahlen ergeben.'."\n".
                     'Daher spielt die superiale Basis \lm{ \s } eine zwar andere, aber vergleichbare Rolle für das Aktual-Unendliche, wie die imaginäre Einheit \lm{ \i }'."\n".
-                    'für die komplexen Zahlen.'."\n",
+                    'für die komplexen Zahlen.'."\n".
+                    'Ich habe mir Ableitungen und Integrale genau angeguckt und versucht zu verstehen, welche Eigenschaften \lm{ \s } hat.'."\n".
+                    'Darüber hab ich letztendlich die Definition von \lm{ \s } als aktual unendliches Primzahlprodukt in Kombination mit vollständiger Induktion gefunden.'."\n",
                       'Wie sagen wir im Englischen so schön:'."\n".
                     '\quote{Lets go for it!}'."\n".
                     ''))),
@@ -305,11 +307,9 @@
                 'Formale Einschränkung', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)} \\\\'."\n".
-                    'Um nachfolgend exakt zu arbeiten, möchte ich an dieser Stelle vorab darauf aufmerksam machen,'."\n".
-                    'dass die Funktionsparameter – meistens \lm{ x } – vorerst auf rationale Zahlen der Menge \lm{ \mathbb{Q} } beschränkt sind.'."\n".
-                    'Wir machen diese Einschränkung auch, um zum einen nicht zu viele noch offene Fragen zu berühren, und'."\n".
-                    'zum anderen, um eine überbordende Komplexität zu vermeiden.'."\n".
+                    'Um nachfolgend genau zu arbeiten, möchte ich an dieser Stelle vorab deutlich machen,'."\n".
+                    'dass im folgenden die Funktionsparameter – meistens \lm{ x } – \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Realanteile algebraischer Zahlen der Menge \lm{ \mathbb{A}_{R} }} sind.'."\n".
+                    'Transzendente Zahlen sind an dieser nicht zugelassen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen', text =>
                                            
@@ -324,9 +324,9 @@
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0}{ \frac{ f(x + \Delta x) - f(x) }{ \Delta x } }  }',
                                           /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-mit-Limes}', label_incr => false),
-                      array( display => 'on',  latex => '{  \lim\limits_{\Delta x \rightarrow +0}{ \Delta x }  :=  s^{-1}  }',
+                      array( display => 'on',  latex => '{  \lim\limits_{\Delta x \rightarrow +0}{ \Delta x }  \widehat{=}  \s^{-1}  }',
                                           /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-Limes-ist-s-hoch-minus-Eins}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  :=  \frac{ f(x + s^{-1}) - f(x) }{ s^{-1} }  }',
+                      array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(x + s^{-1}) - f(x) }{ s^{-1} }  }',
                                           /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Def-Ableitung-mit-s-hoch-minus-Eins', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
