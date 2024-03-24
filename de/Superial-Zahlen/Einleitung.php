@@ -308,7 +308,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Um nachfolgend genau zu arbeiten, möchte ich an dieser Stelle vorab deutlich machen,'."\n".
-                    'dass im folgenden die Funktionsparameter – meistens \lm{ x } – \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Realanteile algebraischer Zahlen der Menge \lm{ \mathbb{A}_{R} }} sind.'."\n".
+                    'dass im folgenden die Funktionsparameter – meistens \lm{ x } – \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Realanteile algebraischer Zahlen der Menge \lm{ \mathbb{A}_{\R} }} sind.'."\n".
                     'Transzendente Zahlen sind an dieser nicht zugelassen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen', text =>
@@ -326,7 +326,7 @@
                                           /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-mit-Limes}', label_incr => false),
                       array( display => 'on',  latex => '{  \lim\limits_{\Delta x \rightarrow +0}{ \Delta x }  \widehat{=}  \s^{-1}  }',
                                           /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-Limes-ist-s-hoch-minus-Eins}', label_incr => false),
-                      array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(x + \s^{-1}) - f(x) }{ s^{-1} }  }',
+                      array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} }  }',
                                           /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Def-Ableitung-mit-s-hoch-minus-Eins', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -335,9 +335,9 @@
                     'Ähnlich wie bei den komplexen Zahlen die imaginäre Einheit \lm{ \i } war auch \lm{ \s^{-1} } eine neue Einheit, die ich als \italic{superial kleine Einheit} bezeichne.'."\n".
                     'In der Mathematik ist es kein Problem ein neues Symbol zu kreieren und zu definieren, solange sich dadurch keine Widersprüche ergeben.\footnote{Sekundärliteratur \\\\ Vgl. \cite{Freistetter:DieFreiheitDerImaginaerenZahlen:2016}. \\\\ Internet: \\\\ Vgl. \cite{Freistetter:DieFreiheitDerMathematik:2016}.}'."\n",
                       'Die superial kleine Einheit \lm{ \s^{-1} } führte dazu, dass die sonst bei der Ableitung verschwindenden Summanden \lm{ a_{k} } nicht verloren gehen, sondern in unendlich kleinen'."\n".
-                    'Dimensionen \lm{ q_{-1} \s^{-1} + q_{-2} s^{-2} + q_{-3} s^{-3} + \cdots } erhalten blieben, also in einer \italic{superial} kleinen Welt.'."\n".
+                    'Dimensionen \lm{ a_{-1} \s^{-1} + a_{-2} \s^{-2} + a_{-3} \s^{-3} + \cdots } erhalten blieben, also in einer \italic{superial} kleinen Welt.'."\n".
                     'Von hier können sie auch beim Integrieren wieder auftauchen.'."\n".
-                    'Die Dimension \lm{ q_{0} \s^{0} = q_{0} } stellt dann die uns bekannten, endlichen Zahlen dar, weil \lm{ \s^{0} = 1 } ist, wie gewohnt.'."\n",
+                    'Die Dimension \lm{ a_{0} \s^{0} = a_{0} } stellt dann die uns bekannten, endlichen Zahlen dar, weil \lm{ \s^{0} = 1 } ist, wie gewohnt.'."\n",
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Konkrete Ableitungen} \\\\'."\n".
@@ -403,42 +403,42 @@
                       'Wie groß die Schritte der Summation sind, erkennen wir an der Ableitung.'."\n".
                     'Die aufsummierten Flächen gleichen den Ergebnis-Differenzen der Ableitung \lm{ f\'(x) } in unendlich kleinen Einheiten und'."\n".
                     'haben damit deren Höhe.'."\n".
-                    'Ihre Streifenbreite ist \lm{ \Delta x ≔ \s^{-1} }, wie die Funktionsparameter-Differenz der Ableitung.'."\n".
-                    'Wir können dabei \lm{ \s^{-1} } als eine unendlich kleine Einheit \lm{ 1 \s^{-1} } verstehen.'."\n".
-                    'Eine \italic{unendlich kleine Eins}.'."\n",
+                    'Ihre Streifenbreite ist \lm{ \Delta x = \s^{-1} }, wie die Funktionsparameter-Differenz der Ableitung.'."\n".
+                    'Dabei ist \lm{ \s^{-1} } eine unendlich kleine Einheit.'."\n".
+                    'Eine \italic{aktual unendlich kleine Eins} \lm{ 1 \s^{-1} }.'."\n",
                       'Auf der anderen Seite müssen wir eine unendlich große und ganze Anzahl der Streifen summieren.'."\n".
                     'Es müssen genau \lm{ \s } Streifen sein, damit sich die \lm{ \s^{-1} } breiten Streifen zu einer endlich großen'."\n".
                     'Zahl aufsummieren und wir das Integral erhalten.'."\n".
-                    'Damit ist eindeutig klar, dass \lm{ \s } eine unendlich große, ganze und positive Zahl ist.'."\n".
+                    'Damit ist klar, dass \lm{ \s } eine unendlich große, ganze und positive Zahl ist, eine \italic{aktual unendlich große Eins} \lm{ 1 \s }.'."\n".
                     'Es muss also formal möglich sein, alle positiven ganzen Zahlen von den endlichen bis \lm{ \s } zu zählen,'."\n".
                     'um die Summe für das Integral zu beschreiben:'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Sei \lm{ \mathbb{S}_Z } die Menge der \italic{ganzen Superial-Zahlen}, eine Teilmenge der \italic{Superial-Zahlen} \lm{ \mathbb{S} }.'."\n".
-                      'Seien \lm{ \lbrack a, b \lbrack_\mathbb{T} }, wenn \lm{ \mathbb{T} = \mathbb{S}_Z } ist, die ganzen Superial-Zahlen'."\n".
-                      'in der \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge} von \lm{ a } bis \lm{ b }, ohne \lm{ b }, aus \lm{ \mathbb{S}_Z }:'."\n".
+                      'Sei \lm{ \mathbb{S}_{\Z} } die Menge der \italic{ganzen Superial-Zahlen}, eine Teilmenge der \italic{Superial-Zahlen} \lm{ \mathbb{S} }.'."\n".
+                      'Seien \lm{ \lbrack a, b \lbrack_\mathbb{\mathbb{S}_{\Z}} } die ganzen Superial-Zahlen'."\n".
+                      'in der \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge} von \lm{ a } bis \lm{ b }, ohne \lm{ b }, aus \lm{ \mathbb{S}_{\Z} }:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [0, x \cdot s[_{\mathbb{S}_{\Z}}  \subset  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  [0, x \cdot \s[_{\mathbb{S}_{\Z}}  \subset  \mathbb{S}_{\Z}  }'),
                     ))),
 
                   array( 'text', array( text => array(
-                    'Die ganzen Superial-Zahlen können grundsätzlich Summanden aller natürlichen Potenzen von \lm{ s }, also Null und größer, enthalten;'."\n".
+                    'Die ganzen Superial-Zahlen können grundsätzlich Summanden aller natürlichen Potenzen von \lm{ \s }, also Null und größer, enthalten;'."\n".
                     'in der nullten Potenz, im endlichen Summanden, eben nur endliche ganze Zahlen;'."\n".
-                    'in den höheren Potenzen nur rationale Zahlen als Koeffizienten.'."\n".
+                    'in den höheren Potenzen dann alle Realanteile algebraischer Zahlen als Koeffizienten, also auch irrationale Zahlen, wie Wurzeln.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Prinzipiell haben ganze Superial-Zahlen mit der maximalen Potenz Eins – \lm{ s^1 = s } –,'."\n".
+                      'Prinzipiell haben ganze Superial-Zahlen mit der maximalen Potenz Eins – \lm{ \s^{1} = \s } –,'."\n".
                       'die wir in unseren Beispielen zum Integrieren als Grundlage benötigen, also die Form:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} *) *( \forall z \in \mathbb{Z} *)  *[  q \cdot \s + z  \in  \mathbb{S}_{\Z}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *) *( \forall z \in \mathbb{Z} *)  *[  a \cdot \s + z  \in  \mathbb{S}_{\Z}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       ''))),
@@ -448,9 +448,9 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  [ 0, \s [_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  a  *|*  *( \forall q \in [ 0, 1 ]_{\mathbb{Q}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  a  =  \begin{cases} n  &  \text{ falls } q = 0  \\\\  q \cdot s + z  &  \text{ falls } 0 < q < 1  \\\\  s + z^{-}  &  \text{ falls } q = 1  \end{cases}  *]  *\}  }',
+                      array( display => 'off', latex => '{  [ 0, \s [_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  a  *|*  *( \forall q \in [ 0, 1 ]_{\mathbb{Q}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  a  =  \begin{cases} n  &  \text{ falls } q = 0  \\\\  q \cdot \s + z  &  \text{ falls } 0 < q < 1  \\\\  \s + z^{-}  &  \text{ falls } q = 1  \end{cases}  *]  *\}  }',
                                           /* label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s', */label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s}', label_incr => false),
-                      array( display => 'on',  latex => '{  [ 0, x \cdot \s [_{\mathbb{S}_{\Z}}  =  \\\ \quad *\{  a  *|*  *( \forall q \in [ 0, 1 ]_{\mathbb{Q}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  a  =  \begin{cases} n  &  \text{ falls } q = 0  \\\\  q \cdot s + z  &  \text{ falls } 0 < q < x  \\\\  x \cdot s + z^{-}  &  \text{ falls } q = x  \end{cases}  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  [ 0, x \cdot \s [_{\mathbb{S}_{\Z}}  =  \\\ \quad *\{  a  *|*  *( \forall q \in [ 0, 1 ]_{\mathbb{Q}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  a  =  \begin{cases} n  &  \text{ falls } q = 0  \\\\  q \cdot \s + z  &  \text{ falls } 0 < q < x  \\\\  x \cdot \s + z^{-}  &  \text{ falls } q = x  \end{cases}  *]  *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Es handelt sich also konkret um folgende ganze Superial-Zahlen, die auszugsweise so aussehen, wobei Beginn und Ende exakt stimmen:'."\n".
