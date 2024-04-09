@@ -353,21 +353,26 @@
                     'differenzierter verstanden und zurechtgerückt werden.'."\n",
                       'Es gibt demnach \\jump{OM:SpaLeb:Care-Prozess:Vortext:Klaerung}{kein Verstand ohne Gefühl}:'."\n".
                     'Denn nach dem Achtsamkeitsprozess besteht unser Verstand aus unserem Denken als Handlung und den Gefühlen, die wir zu unseren Gedanken haben.'."\n",
-                      'Dem:'."\n"))),
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Dem'."\n".
+                    ''))),
 
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Ich denke, also bin ich.'."\n"),
                         addtext => '\\footnote{Internet: \\\\ \\cite{wiki:CogitoErgoSum:2019}.}')),
 
                   array( 'text', array( text => array(
-                    '… von René Descartes wird also ein:'."\n"))),
+                    'von René Descartes wird also ein'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                       'Ich fühle und handle, also bin ich.'."\n"))),
                       
                   array( 'text', array( text => array(
-                    '… vorangestellt und dadurch die Balance wieder hergestellt.'."\n",
-                      'Die Vedanta sagt \\color{*Entwick}{(angeblich)}, wie ich finde sehr passend, dazu:'."\n"))),
+                    'vorangestellt und dadurch die „Waage“ wieder feiner ausbalanciert.'."\n",
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Die Vedanta sagt \\color{*Entwick}{(angeblich)}, wie ich finde sehr passend, dazu:'."\n"))),
             
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Der Verstand ist ein guter Diener, aber ein schlechter Meister.'."\n"),
@@ -473,17 +478,18 @@
                     'XXX'."\n"))),
                   array( 'headline', array( jump_name => 'OM:NPYo:HaTha:HerstellungBalance:XXX', text =>
                                            
-                'Intensive Atemspannung löst Verspannungen der Gliedmaßen')),
+                'Intensive Aktivierung der muskulären körperlichen Grundspannung löst Verspannungen der Faszien, auch in den Gliedmaßen')),
                   array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
+                    'Aktivierung des \jump{OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler}{Inneren Marionettenspielers}'."\n".
                     'XXX'."\n".
+                    'Aktivierung des Beckenbodens, besonders \jump{OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler}{PC-Muskel}'."\n".
                     'XXX'."\n".
+                    'lockere Aktivierung der Atemspannung, mit viel Leichtigkeit und ohne Pressen,'."\n".
                     'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'lockere Aktivierung der Grundspannung in den Gliedmaßen, im Rücken und im Gesäß'."\n".
                     'XXX'."\n"))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n".

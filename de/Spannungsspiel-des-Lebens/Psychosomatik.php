@@ -853,6 +853,7 @@
                     '• Geht diese Grundspannung durch Sorgen und Ängste teils verloren, dann:',
                     '⋅ … gerät unser Körper in eine Spannungsimbalance,',
                     '⋅ … entwickeln sich Verspannungen, besonders im Hals- und Nackenbereich, aber auch im Rücken, an den Schulterblättern und so weiter, die versuchen die fehlende Grundspannung wieder auszugleichen. Diese Verspannungsketten laufen nach und nach durch den ganzen Körper bis in die Gliedmaßen.',
+                    '• Ein Gegenpart zum Kopf-Stimmungssystems ist auch der Anus-Beckenboden und hier im Besonderen der PC-Muskel\\footnote{Vgl. \\cite{wiki:MusculusPubococcygeus:2024}.}:',
                     ))),
                       
                    array( 'text', array( text => array(
