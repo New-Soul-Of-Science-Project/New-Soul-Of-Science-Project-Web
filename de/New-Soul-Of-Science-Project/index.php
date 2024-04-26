@@ -1262,6 +1262,33 @@
                         '\\\\'."\n"))),
                       
                   // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
+                  // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Spiritualitaet-Psychologie)
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Hört auf diese Worte, ihr, die ihr die Tiefen der Natur erforschen wollt: \\\\'."\n".
+                        'Wenn ihr das, was ihr sucht, nicht in euch selbst findet, \\\\'."\n".
+                        'werdet ihr es auch nicht außerhalb finden. \\\\'."\n".
+                        'Wenn du die Wunder deines Hauses ignorierst, \\\\'."\n".
+                        'wie willst du dann andere Wunder finden? \\\\'."\n".
+                        'In dir verbirgt sich der Schatz der Schätze. \\\\'."\n".
+                        'Erkenne dich selbst, \\\\'."\n".
+                        'und du wirst das Universum und die Götter kennen.'."\n".
+                        ''),
+                        addtext => '\\small{\\color{*TitleAdd}{~Das Orakel von Delphi}}')),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                        '\\\\'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'In Zeiten, in denen Niedergangskräfte dominieren, kommt es auf den ganzen Menschen an,'."\n".
+                        'auf den Entschluss nicht mit dem Strom und nicht gegen den Strom zu schwimmen,'."\n".
+                        'sondern Neuland zu schaffen, in sich selbst und in seinem Wirkenskreis.'."\n".
+                        ''),
+                        addtext => '\\small{\\color{*TitleAdd}{~Rudolf Steiner}}')),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                        '\\\\'."\n"))),
+                      
+                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
                   // #!: Auch auf der nSOSa-Startseite! (OM:nSOSa:Home)
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Der beste Weg, die Zukunft vorherzusagen, ist, sie zu erschaffen.'."\n".
@@ -1275,6 +1302,27 @@
                         'The best way to predict the future is to create it.'."\n".
                         ''),
                         addtext => '\\small{\\color{*TitleAdd}{~Abraham Lincoln}}')),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                        '\\\\'."\n"))),
+                      
+                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
+                  // #!: Auch auf der NaPhil-Yoga-Startseite! (OM:NPYo:Home)
+                  // #!: Auch auf der NaPhil-Yoga-Einleitungsseite! (OM:NPYo:Einleitung)
+                  // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
+                  array( 'text', array( Shape => 'italic', text => array(
+                        'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
+                        'die Magie, Dinge zum Schweben zu bringen.'."\n".
+                        ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                        '\\\\'."\n"))),
+                      
+                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
+                  // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Spiritualitaet-Psychologie)
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Make your life a celebration!'."\n"),
+                        addtext => '\\small{\\color{*TitleAdd}{~Mike Love\\footnote{\\jump[https://www.youtube.com/watch?v=NKx_kxR9hWU]{}{"I Love You & Permanent Holiday" Live at Woodstock Poland 2016}, Sek. 13:57.}}}')),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
@@ -1301,27 +1349,6 @@
                         'Wer etwas nicht will, findet Gründe.'."\n".
                         ''),
                         addtext => '\\small{\\color{*TitleAdd}{~Autor unbekannt}}')),
-                      
-                  array( 'text', array( Shape => 'italic', text => array(
-                        '\\\\'."\n"))),
-                      
-                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
-                  // #!: Auch auf der NaPhil-Yoga-Startseite! (OM:NPYo:Home)
-                  // #!: Auch auf der NaPhil-Yoga-Einleitungsseite! (OM:NPYo:Einleitung)
-                  // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
-                  array( 'text', array( Shape => 'italic', text => array(
-                        'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
-                        'der hat die Magie, Dinge zum Schweben zu bringen.'."\n".
-                        ''))),
-                      
-                  array( 'text', array( Shape => 'italic', text => array(
-                        '\\\\'."\n"))),
-                      
-                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
-                  // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Spiritualitaet-Psychologie)
-                  array( 'text', array( Shape  => 'quote', text => array(
-                        'Make your life a celebration!'."\n"),
-                        addtext => '\\small{\\color{*TitleAdd}{~Mike Love\\footnote{\\jump[https://www.youtube.com/watch?v=NKx_kxR9hWU]{}{"I Love You & Permanent Holiday" Live at Woodstock Poland 2016}, Sek. 13:57.}}}')),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
@@ -1434,23 +1461,6 @@
                         'dann würde man es nicht Forschung nennen, oder?'."\n".
                         ''),
                         addtext => '\\small{\\color{*TitleAdd}{~Einstein zugeschrieben}}')),
-                      
-                  array( 'text', array( Shape => 'italic', text => array(
-                        '\\\\'."\n"))),
-                      
-                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
-                  // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Spiritualitaet-Psychologie)
-                  array( 'text', array( Shape  => 'quote', text => array(
-                        'Hört auf diese Worte, ihr, die ihr die Tiefen der Natur erforschen wollt: \\\\'."\n".
-                        'Wenn ihr das, was ihr sucht, nicht in euch selbst findet, \\\\'."\n".
-                        'werdet ihr es auch nicht außerhalb finden. \\\\'."\n".
-                        'Wenn du die Wunder deines Hauses ignorierst, \\\\'."\n".
-                        'wie willst du dann andere Wunder finden? \\\\'."\n".
-                        'In dir verbirgt sich der Schatz der Schätze. \\\\'."\n".
-                        'Erkenne dich selbst, \\\\'."\n".
-                        'und du wirst das Universum und die Götter kennen.'."\n".
-                        ''),
-                        addtext => '\\small{\\color{*TitleAdd}{~Das Orakel von Delphi}}')),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
