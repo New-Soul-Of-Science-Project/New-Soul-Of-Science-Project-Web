@@ -1322,7 +1322,24 @@
                   // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Spiritualitaet-Psychologie)
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Make your life a celebration!'."\n"),
-                        addtext => '\\small{\\color{*TitleAdd}{~Mike Love\\footnote{\\jump[https://www.youtube.com/watch?v=NKx_kxR9hWU]{}{"I Love You & Permanent Holiday" Live at Woodstock Poland 2016}, Sek. 13:57.}}}')),
+                        addtext => '\small{\color{*TitleAdd}{~Mike Love\footnote{\jump[https://www.youtube.com/watch?v=NKx_kxR9hWU]{}{"I Love You & Permanent Holiday" Live at Woodstock Poland 2016}, Sek. 13:57.}}}')),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                        '\\\\'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        '\\small{\\color{*TitleAdd}{Ob es göttliches gibt?}} \\\\'."\n".
+                        'Du siehst es,'."\n",
+                          'wenn du deine Augen öffnest. \\\\'."\n".
+                        'Du fühlst es,'."\n",
+                          'wenn du dein Herz öffnest. \\\\'."\n".
+                        'Du berührst es,'."\n",
+                          'wenn du deine Hand ausstreckst. \\\\'."\n".
+                        'Du siehst es,'."\n",
+                          'wenn du deine Augen schließt. \\\\'."\n".
+                        'Und du hörst es,'."\n",
+                          'wenn du deine Gedanken loslässt. \\\\'."\n".
+                        ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
@@ -1348,7 +1365,7 @@
                         'Wer etwas will, findet Wege. \\\\'."\n".
                         'Wer etwas nicht will, findet Gründe.'."\n".
                         ''),
-                        addtext => '\\small{\\color{*TitleAdd}{~Autor unbekannt}}')),
+                        addtext => '\\small{\\color{*TitleAdd}{~Volksweisheit}}')),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
