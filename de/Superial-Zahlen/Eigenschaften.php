@@ -24,7 +24,7 @@
                     'Ihre Struktur ist dadurch tief mit den \\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Zahlen}, den \\jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Zahlen}'."\n".
                     'und den \\jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{Primzahlen} verbunden und erweitern diese ins Aktual-Unendliche.'."\n".
                     'Auch sind sie dadurch mit den Ordinalzahlen\\footnote{\\const{NSOSP_g_footnote_text_Ordinalzahl}} und im Besonderen mit den von mir entdeckten'."\n".
-                    '\\jump{OM:BiOrd:Home}{Biordinalzahlen} verwandt.'."\n",
+                    '\jump{OM:BiOrd:Home}{Biordinalzahlen} verwandt.'."\n",
                       'Ihre besonderen Eigenschaften versprechen uns deshalb neue Einblicke in die Struktur der Zahlen.'."\n".
                     ''))),
                       
@@ -47,6 +47,7 @@
                     )),
                       
                   array( 'text', array( text => array(
+                    '\color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)} \\\\'."\n".
                     'Die Menge der Superial-Zahlen \\latexmath{ \mathbb{S} } ist in vielerlei Hinsicht etwas Besonderes.'."\n",
                       'Wir können nämlich für zwei Superial-Zahlen, die nicht gleich sind, immer herausfinden, welche'."\n".
                     'größer als die andere ist, weil sie eine lexikografische Ordnung\\footnote{\\const{SupNum_g_footnote_text_LexikographischeOrdnung}} haben.'."\n".
@@ -216,30 +217,31 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Die Beschäftigung mit der Struktur von \\latexmath{ s } ist sehr ergiebig in Bezug auf weitere'."\n".
-                    'und tiefe Erkenntnisgewinne.'."\n".
+                    'Die Beschäftigung mit der Struktur von \lm{ \s } ist sehr ergiebig in Bezug auf weitere'."\n".
+                    'tiefe Erkenntnisse.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS', text =>
                       
-                'Was lernen wir über die Größe von \\term{ω} und die Struktur von \\term{s} über die Frage der Vorgänger?', subline =>
+                'Was lernen wir über die Größe von \lm{ ω } und die Struktur von \lm{ \s } über die Frage der Vorgänger?', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In der \\jumpname{OM:SupNum:Formale-Entwicklung} so formuliert:}'."\n",
-                      'Jede natürliche Superial-Zahl hat dabei so viele Vorgänger in \\term{\M(S)__{N}}, wie sie selber groß ist.'."\n".
+                    '\color{*Bearb}{In der \jumpname{OM:SupNum:Formale-Entwicklung} so formuliert:}'."\n",
+                      'Jede natürliche Superial-Zahl \lm{ n } hat so viele Vorgänger in \lm{ \mathbb{S}_{\N} }, wie sie selber groß ist,'."\n".
+                    'wie bei den endlichen natürlichen Zahlen.'."\n".
                     'Dies ist anders, als bei den von mir ebenfalls entdeckten und erforschten, auch ins Aktual-Unendliche gehenden'."\n".
-                    '\\jump{OM:BiOrd:Home}{Biordinalzahlen}:'."\n".
-                    'Aktual unendliche Biordinalzahlen haben bizarrer Weise \\jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{mehr Vorgänger als ihr Wert} groß ist.'."\n".
+                    '\jump{OM:BiOrd:Home}{Biordinalzahlen}:'."\n".
+                    'Aktual unendliche Biordinalzahlen haben interessanter Weise \jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{mehr Vorgänger als ihr Wert} groß ist.'."\n".
                     'In mancherlei anderen Punkten können wir erkennen, dass sie die noch nicht so perfekten Vorläufer der Superial-Zahlen sind.'."\n".
-                    'Mathematisch gesehen sind die Biordinalzahlen eine Erweiterung der Ordinalzahlen\\footnote{\\const{NSOSP_g_footnote_text_Ordinalzahl}} zu einem algebraischen Ring\\footnote{\\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n",
-                      'Demnach hat \\term{s} also so viele Vorgänger, wie das Primzahl-Flächenprodukt groß ist.'."\n".
-                    'Die Anzahl der Vorgänger von \\latexmath{ s }, als das vollständige Primzahl-Flächenprodukt, wären dann:'."\n".
+                    'Mathematisch gesehen sind die Biordinalzahlen eine Erweiterung der Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}} zu einem algebraischen Ring\footnote{\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n",
+                      'Demnach hat \lm{ \s } also so viele Vorgänger, wie das Primzahl-Flächenprodukt groß ist.'."\n".
+                    'Die Anzahl der Vorgänger von \lm{ \s } ist dann:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Die Anzahl aller rationalen Koeffizienten \\latexmath{ q } von \\latexmath{ s }, für die gilt: \\latexmath{ 0 \leq q < 1 }.',
-                        'Multipliziert mit \\latexmath{ 2 \cdot \omega } für die Anzahl der endlichen ganzen Zahlen, siehe \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}, die ja zu jedem Koeffizienten addiert – und im Falle der negativen natürlich dann abgezogen – werden. Wobei im Falle von \\latexmath{ q = 0 } nur natürliche Zahlen addiert und im Falle von \\latexmath{ q = 1 } nur negative ganze Zahlen addiert, also effektive abgezogen, werden.',
+                        'Die Anzahl aller realen algebraischen Koeffizienten \lm{ a } von \lm{ \s }, für die gilt: \lm{ 0 \leq a < 1 }.',
+                        'Multipliziert mit \lm{ 2 \cdot ω } für die Anzahl der endlichen ganzen Zahlen, siehe \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}, die ja zu jedem Koeffizienten addiert – und im Falle der negativen natürlich dann abgezogen – werden. Wobei im Falle von \lm{ a = 0 } nur natürliche Zahlen addiert und im Falle von \\latexmath{ a = 1 } nur negative ganze Zahlen addiert, also effektiv abgezogen, werden.',
                     ))),
                   array( 'text', array( text => array(
-                    'So formulieren wir die Vorgänger von \\latexmath{ s } folgendermaßen:'."\n".
+                    'So formulieren wir die Vorgänger von \lm{ \s } folgendermaßen:'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -248,7 +250,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [ 0, s [_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall q \in [ 0, 1 ]_{\mathbb{Q}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } q = 0  \\\\  q \cdot s + z  &  \text{ falls } 0 < q < 1  \\\\  s + z^{-}  &  \text{ falls } q = 1  \end{cases}  *]  *\}  \;\;  ,  }',
+                      array( display => 'on',  latex => '{  [ 0, s [_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < 1  \\\\  \s + z^{-}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  \;\;  ,  }',
                                           label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s', label_text => '\\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -257,81 +259,86 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Für die Anzahl der Vorgänger können wir dann finden:'."\n".
+                    'Für die Anzahl der Vorgänger finden wir dann:'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Seien \\latexmath{ \rbrack a, b \lbrack_\mathbb{Q} } und \\latexmath{ \lbrack a, b \lbrack_\mathbb{Q} } \\jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Mengen} aus \\latexmath{ \mathbb{Q} },'."\n".
-                      'dann ergibt sich \\latexmath{ s }, nach vorstehendem Gedanken, zu'."\n".
+                      'Seien \lm{ \rbrack a, b \lbrack_{\mathbb{A}_{\R}} } und \lm{ \lbrack a, b \lbrack_{\mathbb{A}_{\R}} } \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Mengen} aus \lm{ \mathbb{A}_{\R} },'."\n".
+                      'dann ergibt sich \lm{ \s }, nach vorstehendem Gedanken, zu'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  s  =  \# \mathbb{N} + \# *( ] 0, 1 [_\mathbb{Q} *) \cdot \# \mathbb{Z} + \# \mathbb{Z^{-}}  }'),
+                      array( display => 'on',  latex => '{  \s  =  \# \mathbb{N} + \# *( ] 0, 1 [_{\mathbb{A}_{\R}} *) \cdot \# \mathbb{Z} + \# \mathbb{Z^{-}}  }'),
                       array( display => 'off', latex => '{  \# \mathbb{Z}  =  \# \mathbb{N} + \# \mathbb{Z^{-}} }'),
-                      array( display => 'off', latex => '{  \Rightarrow  s  =  \# \mathbb{Z} + \# *( ] 0, 1 [_\mathbb{Q} *) \cdot \# \mathbb{Z}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  s  =  *( 1 + \# *( ] 0, 1 [_\mathbb{Q} *) *) \cdot \# \mathbb{Z}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  s  =  \# *( [ 0, 1 [_\mathbb{Q} *) \; \cdot \; \# \mathbb{Z}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  s  =  \# *( [ 0, 1 [_\mathbb{Q} *) \; \cdot \; *( 2 \cdot \omega *)  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  \s  =  \# \mathbb{Z} + \# *( ] 0, 1 [_{\mathbb{A}_{\R}} *) \cdot \# \mathbb{Z}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \s  =  *( 1 + \# *( ] 0, 1 [_{\mathbb{A}_{\R}} *) *) \cdot \# \mathbb{Z}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \# *( [ 0, 1 [_{\mathbb{A}_{\R}} *) \; \cdot \; \# \mathbb{Z}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \# *( [ 0, 1 [_{\mathbb{A}_{\R}} *) \; \cdot \; *( 2 \cdot ω *)  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'was der Anzahl aller rationalen Zahlen entspricht. \\\\'."\n".
+                      'was der Anzahl aller Realanteile der algebraischen Zahlen entspricht. \\\\'."\n".
                       'Denn mit'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{Q}  =  \\\ \qquad *\{  x  *|*  *( \forall z \in \mathbb{Z} *) *( \forall u \in [ 0, 1 [_\mathbb{Q} *)  *[  x = z + u  *]  *\}  }',
-                                          label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z', label_text => '\\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z}', label_incr => true),
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  =  \\\ \qquad *\{  x  *|*  *( \forall z \in \mathbb{Z} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}} *)  *[  x = z + u  *]  *\}  }',
+                                          label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'sind alle rationalen Zahlen, ohne Redundanzen – also Doppelungen – und Lücken, definiert und es folgt daraus'."\n".
+                      'sind alle Realanteile der algebraischen Zahlen, ohne Redundanzen – also Doppelungen – und Lücken, definiert und es folgt daraus'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  s  =  \# \mathbb{Q}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \s  =  \# \mathbb{A}_{\R}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'weil es in den rationalen Zahlen \\latexmath{ \mathbb{Q} } das Interval \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} }'."\n".
-                      'für jede ganze Zahl in \\latexmath{ \mathbb{Z} } gibt und sie damit vollständig beschrieben sind. \\\\'."\n".
+                      'weil es in den Realanteilen der algebraischen Zahlen \lm{ \mathbb{A}_{\R} } das Interval \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} }'."\n".
+                      'für jede ganze Zahl in \lm{ \mathbb{Z} } gibt und sie damit vollständig beschrieben sind.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
                       'So gilt dann auch'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \# [ 0, 1 [_\mathbb{Q}  =  \frac{ s }{ 2 \cdot \omega }  \;\; ,  }',
-                                          label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins', label_text => '\\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  \# [ 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ \s }{ 2 \cdot ω }  \;\; ,  }',
+                                          label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'durch Umformung.'."\n",
+                      'nach Umformung.'."\n",
                         '\\\\'."\n".
                       ''))),
                       
                   array( 'text', array( text => array(
-                    'Dies sollte eine ganze Zahl sein und wäre'."\n".
-                    'mit meiner \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} im Einklang.'."\n",
-                      '\\color{*Entwick}{(Können wir die Anzahl der rationalen Zahlen quantifizieren? Zum Beispiel über den Calkin-Wilf-Baum\\color{*Bearb}{(Verweis)}?)}'."\n".
+                    'Dies muss eine ganze Zahl sein und ist ein wichtiger Baustein der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}.'."\n",
+                      '\color{*Entwick}{(Können wir die Anzahl der rationalen Zahlen (oder der Realanteile der algebraischen Zahlen) quantifizieren? Zum Beispiel über den Calkin-Wilf-Baum\color{*Bearb}{(Verweis)}?)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm', text =>
                       
                 'Ausgangspunkt der Primzahlprodukt-Vermutung', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Und wir können sogar noch weiter gehen und feststellen, dass \\latexmath{ \omega } seine Primfaktoren'."\n".
-                    'mit \\latexmath{ s }, siehe Formel \\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}, teilen muss, wenn die Anzahl der rationalen Zahlen in \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} }'."\n".
-                    'aus Formel \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins} eine ganze Zahl sein soll.'."\n".
-                    'Weiter ist klar, dass \\latexmath{ \omega } aktual unendlich groß ist.'."\n".
+                    'Und wir können sogar noch weiter gehen und feststellen, dass \lm{ ω } seine Primfaktoren'."\n".
+                    'mit \lm{ \s }, siehe Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}, teilen muss, wenn die Anzahl der Realanteile der algebraischen Zahlen in \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} }'."\n".
+                    'aus Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins} eine ganze Zahl sein soll.'."\n".
+                    'Weiter ist klar, dass \lm{ ω } aktual unendlich groß ist.'."\n".
                     'Es kann also nur ein Produkt aus unendlich vielen endlichen Primzahlen sein.'."\n",
-                      'Doch welches Teilprodukt aus \\latexmath{ s } ist es, wenn klar ist, dass \\latexmath{ s } unendlich viel größer ist'."\n".
-                    'als \\latexmath{ \omega }.'."\n".
-                    'Schon der Turm der kleinsten Primzahl \\latexmath{ 2^\omega } ist definitiv sehr viel größer als \\latexmath{ \omega }.'."\n".
-                    'Die einzelnen und kombinierten Türme aller Primzahlen \\latexmath{ p^\omega } sind also ausgeschlossen.'."\n",
-                      'Das offensichtlich simple, unendliche Primzahlprodukt, dass bleibt, lässt vermuten, dass: \\latexmath{ \omega ?= 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots }.'."\n".
-                    'Aber auch dieses Produkt erscheint auf den ersten Blick viel größer als \\latexmath{ \omega } zu sein.'."\n".
-                    'Es sei denn, die Anzahl der Primzahl unter den natürlichen Zahlen erfüllt weit draußen unter den sehr sehr großen Zahlen'."\n".
-                    'eine bestimmte Bedingung:'."\n".
-                    'Es gibt unter den wirklich extrem großen natürlichen Zahlen im Grunde nur noch Primzahlzwillinge?'."\n",
-                      'Ob diese Bedingung hinreicht, beleuchten wir in der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}.'."\n".
-                    'Auch sollten wir Überlegungen zur Primzahlzwillingsvermutung\\color{*Bearb}{(Verweis)} anstellen und bekommen hiermit schon einen Hinweis,'."\n".
-                    'dass unsere Vermutung stimmen könnte.'."\n".
+                      'Doch welches Teilprodukt aus \lm{ \s } ist es, wenn klar ist, dass \lm{ \s } unendlich viel größer ist'."\n".
+                    'als \lm{ ω }.'."\n".
+                    'Schon der Turm der kleinsten Primzahl \lm{ 2^{ω} } ist definitiv sehr viel größer als \lm{ ω }.'."\n".
+                    'Die einzelnen und kombinierten Türme aller Primzahlen \lm{ p^{ω} }, mit \lm{ p \in \mathbb{P} }, sind also ausgeschlossen.'."\n",
+                      'Das unendliche Primzahlprodukt, dass auf den ersten Blick bleibt, ist schlicht die Zeile, die alle endlichen Primzahlen enthält, und lässt vermuten,'."\n".
+                    'dass \lm{ ω ?= 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots } ist.'."\n".
+                    'Aber auch dieses Produkt erscheint auf den ersten Blick viel größer als die vollständige Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    '\lm{ ω } zu sein.'."\n".
+                    // 'Es sei denn, die Anzahl der Primzahl unter den natürlichen Zahlen erfüllt weit draußen unter den sehr sehr großen Zahlen'."\n".
+                    // 'eine bestimmte Bedingung:'."\n".
+                    // 'Es gibt unter den wirklich extrem großen natürlichen Zahlen im Grunde nur noch Primzahlzwillinge?'."\n",
+                    //   'Ob diese Bedingung hinreicht, beleuchten wir in der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}.'."\n".
+                    // 'Auch sollten wir Überlegungen zur Primzahlzwillingsvermutung\color{*Bearb}{(Verweis)} anstellen und bekommen hiermit schon einen Hinweis,'."\n".
+                    // 'dass unsere Vermutung stimmen könnte.'."\n".
+                    'Im \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} gelingt es uns tatsächlich zu zeigen,'."\n".
+                    'dass wirklich \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots } gilt.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen', text =>
                       
@@ -339,16 +346,17 @@
                   'Formulierung der Entstehung der negativen ganzen Zahlen durch Rückwärtszählen, ohne Umkehrung der Zählrichtung')),
                   array( 'text', array( text => array(
                     'Die vorstehend gemachten Aussagen sind entscheidend davon abhängig, wieviele endliche ganze Zahlen es gibt.'."\n".
-                    'Dies bestimmt zum einen, ob es wirklich eine ganze Anzahl an rationalen Zahlen in \\latexmath{ \lbrack 0, 1 \lbrack_\mathbb{Q} } gibt.'."\n".
-                    'Und es bestimmt damit, ob \\latexmath{ \omega } gemeinsame Teiler mit \\latexmath{ s } hat.'."\n",
-                      'Dies ist einer der Gründe, aus denen ich mich mit den Ordinalzahlen\\footnote{\\const{NSOSP_g_footnote_text_Ordinalzahl}}'."\n".
-                    'beschäftigt und diese auf die \\jump{OM:BiOrd:Home}{Biordinalzahlen} erweitert und ein Stück weit erforscht habe.'."\n".
-                    'So habe ich auch eine \\jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{fundamentale Asymmetrie}'."\n".
-                    'herausgearbeitet, die der von mir gefundenen und oben verwendeten Anzahl der endlichen ganzen Zahlen'."\n".
-                    '\\latexmath{ 2 \cdot \omega } zugrunde liegt.'."\n",
-                      'Wegen der auch im Negativen vorhandenen Zählrichtung, die auch dort in Richtung der positiven Zahl gerichtet ist,'."\n".
-                    'weil alle Zahlen letztendlich aus dem Zählen hervorgehen, siehe auch \\jump{OM:OT:Home}{Operialtheorie}.'."\n",
-                      'Um auszudrücken, wie jedes negative rationale, an einer ganze Zahl hängende Zahlenintervall jeweils aus einem Zahlenintervall'."\n".
+                    'Dies bestimmt zum einen, ob es wirklich eine ganze Anzahl an Realanteilen der algebraischen Zahlen in \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\R}} } gibt.'."\n".
+                    'Und es bestimmt damit, ob \lm{ ω } gemeinsame Teiler mit \lm{ \s } hat.'."\n",
+                      'Dies ist einer der Gründe, aus denen ich mich mit den Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}}'."\n".
+                    'beschäftigt und diese auf die \jump{OM:BiOrd:Home}{Biordinalzahlen} erweitert und ein Stück weit erforscht habe.'."\n".
+                    'Darauf basierend haben wir eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{fundamentale Asymmetrie}'."\n".
+                    'herausgearbeitet, die der von uns gefundenen und oben verwendeten Anzahl der endlichen ganzen Zahlen'."\n".
+                    '\lm{ 2 \cdot ω } zugrunde liegt.'."\n",
+                      'Diese Anzahl der endlichen ganzen Zahlen ergibt sich wegen der auch im Negativen vorhandenen Zählrichtung, die auch dort in Richtung der größer werdenden, und schließlich positiven Zahlen, ausgerichtet bleibt,'."\n".
+                    'weil alle Zahlen letztendlich aus dem Zählen hervorgehen.'."\n".
+                    'Siehe dazu auch die \jump{OM:OT:Home}{Operialtheorie}.'."\n",
+                      'Um auszudrücken, dass jeder negative Realanteilen einer algebraischen Zahl Teil eines an einer ganzen Zahl hängenden Zahlenintervalls ist, der jeweils aus einem Zahlenintervall'."\n".
                     'an einer natürlichen Zahl entsteht, berücksichtigen wir'."\n".
                     'im Ansatz die ontologische Vorstellung, dass es sich bei Zahlen quasi um Wellen – oder Sägezähne – von einer Zahl zur nächsten handelt.'."\n".
                     'Diese Wellen hängen in Zählrichtung an den Zahlen.'."\n".
@@ -363,7 +371,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{Q}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_\mathbb{Q} *)  \\\ \qquad\qquad\qquad\;\,  *[  x = *( n - *( 2 \cdot n + 1 *) *) + u  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}} *)  \\\ \qquad\qquad\qquad\;\,  *[  x = *( n - *( 2 \cdot n + 1 *) *) + u  *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Intervalle \\latexmath{ u }, die zwischen den Zahlen liegen, hängen an der vorstehenden ganzen Zahl und werden auf diese Weise mit verschoben.'."\n".
@@ -374,10 +382,21 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Q}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_\mathbb{Q} *)  \\\ \qquad\qquad\qquad\qquad\quad\;\;\,  *[  x = *( n - 2 \cdot n - 1 *) + u  *]  *\}  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Q}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_\mathbb{Q} *)  \\\ \qquad\qquad\qquad\qquad\quad\;\;\,  *[  x = *( - n - 1 *) + u  *]  *\}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{Q}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_\mathbb{Q} *)  \\\ \qquad\qquad\qquad\qquad\quad\,  *[  x = - *( n + 1 *) + u  *]  *\}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Q}^{-}  =  \frac{ s }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{A}_{\R}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}} *)  \\\ \qquad\qquad\qquad\qquad\quad\;\;\,  *[  x = *( n - 2 \cdot n - 1 *) + u  *]  *\}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{A}_{\R}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}} *)  \\\ \qquad\qquad\qquad\qquad\quad\;\;\,  *[  x = *( - n - 1 *) + u  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{A}_{\R}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}} *)  \\\ \qquad\qquad\qquad\qquad\quad\,  *[  x = - *( n + 1 *) + u  *]  *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Mit Hilfe der Formeln \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}'."\n".
+                    'und \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N} folgt dann:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \# \mathbb{N}  =  ω  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{A}_{\R}^{-}  =  \# [ 0, 1 [_{\mathbb{A}_{\R}} \, \cdot \; ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\R}^{-}  =  \frac{ \s }{ 2 \cdot ω } \cdot ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\R}^{-}  =  \frac{ \s }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'So kann der Eindruck einer Spiegelung entstehen, wenn wir das Intervall nicht explizit dranhängen würden.'."\n",
@@ -404,7 +423,7 @@
                     // '\\bold{XXX}',
                     '• Die Null ist in den Superial-Zahlen viel simpler definiert, als in den hyperreellen Zahlen.',
                     '• In den Superial-Zahlen brauchen wir nicht eine Reihe von unendlich vielen Zahlen, um infinite und infinitesimale Zahlen zu definieren.',
-                    '– Wir können das Symbol \\latexmath{ s } für ein unendliches Flächenprodukt der Primzahlen nehmen, siehe oben, und dieses mit endlichen Symbolen, wie Brüchen, kombinieren.',
+                    '– Wir können das Symbol \lm{ \s } für ein unendliches Flächenprodukt der Primzahlen nehmen, siehe oben, und dieses mit endlichen Symbolen, wie Brüchen, kombinieren.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -457,115 +476,152 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Die Mächtigkeit\\footnote{\\const{SupNum_g_footnote_text_Maechtigkeit}}'."\n".
-                    'der reellen Zahlen wird mit Hilfe von \\latexmath{ \omega } als \\latexmath{ \aleph_1 } beschrieben:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:MaechtigkeitMathematik:2023}, Vergleich der Mächtigkeit.}'."\n".
+                    'Die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}'."\n".
+                    'der reellen Zahlen wird mit \lm{ \mathfrak{c} } bezeichnet:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Aussage, Einfache Kontinuumshypothese.}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.UK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \aleph_{1}  =  2^{\aleph_{0}}  }'),
-                      array( display => 'on',  latex => '{  \aleph_{0}  =  \omega  =  \#\mathbb{N}  =  \vert \mathbb{N} \vert  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \aleph_{1}  =  2^{\omega}  =  \vert \mathcal{P}(\mathbb{N}) \vert  }'),
+                      array( display => 'on',  latex => '{  \mathfrak{c}  =  \#\mathbb{R}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Idee ist, dass die Mächtigkeit der reellen Zahlen der Mächtigkeit der Potenzmenge der Menge \\latexmath{ \mathbb{N} }'."\n".
-                    'der natürlichen Zahlen, also \\latexmath{ \vert \mathcal{P}(\mathbb{N}) \vert }, mit \\latexmath{ 2^\omega } entspricht.'."\n".
+                    'Es soll gezeigt werden können, dass die Mächtigkeit des Kontinuums der Potenzmenge von \lm{ \mathbb{N} } entspricht.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Aussage, Einfache Kontinuumshypothese.}'."\n".
+                    'Warum dies so ist und wie es gezeigt wird, hab ich noch nicht verstanden.'."\n".
+                    'Die Mächtigkeit des Kontinuums wird dann mit Hilfe von \lm{ ω } als \lm{ \aleph_{1} } formuliert:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.UK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \aleph_{1}  =  2^{\aleph_{0}}  }'),
+                      array( display => 'on',  latex => '{  \aleph_{0}  =  ω  =  \#\mathbb{N}  =  \vert \mathbb{N} \vert  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \aleph_{1}  =  2^{ω}  =  \vert \mathcal{P}(\mathbb{N}) \vert  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Kontinuumshypothese\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.}'."\n".
+                    'vermutet dann offenbar, dass die reellen Zahlen die gleiche Mächtigkeit besitzen, wie das Kontinuum:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Aussage, Einfache Kontinuumshypothese.}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.UK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathfrak{c}  ?=  \aleph_{1}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Idee ist also, dass die Mächtigkeit der reellen Zahlen der Mächtigkeit der Potenzmenge der Menge \lm{ \mathbb{N} }'."\n".
+                    'der natürlichen Zahlen, also \lm{ \vert \mathcal{P}(\mathbb{N}) \vert }, mit \lm{ 2^{ω} } entspricht.'."\n".
                     'Die Mächtigkeit einer Menge ist dabei nicht unbedingt der Anzahl der Elemente dieser Menge gleich.'."\n",
-                      'Dies möchte ich nun nicht bezüglich der Mächtigkeit grundsätzlich in Frage stellen, sondern in Bezug auf die'."\n".
-                    'mit den Superial-Zahlen gefundene Beschreibung des Unendlichen, vielleicht eher mit der Dichte oder Körnung oder auch Arithmetik bezeichnet,'."\n".
-                    'erneut beleuchten, um weitere Erkenntnisse zu gewinnen.'."\n",
-                      'Mit der Kontinuumshypothese\\color{*Bearb}{(Verweis)} wird angenommen:'."\n".
+                      'Dies möchte ich nicht bezüglich der Mächtigkeit grundsätzlich in Frage stellen, sondern in Bezug auf die'."\n".
+                    'mit den Superial-Zahlen gefundene Struktur des Unendlichen, vielleicht eher als Dichte oder Raster und mit der Arithmetik beschreiben'."\n".
+                    'sowie erneut beleuchten, um weitere Erkenntnisse zu gewinnen.'."\n",
+                      'Mit der Kontinuumshypothese wird angenommen:'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Es gibt keine Menge, deren Mächtigkeit zwischen der Mächtigkeit der natürlichen Zahlen und der Mächtigkeit der reellen Zahlen liegt.'."\n".
                         ''),
-                        addtext => '\\footnote{Internet: \\\\ \\cite{wiki:Kontinuumshypothese:2023}, Aussage.}')),
+                        addtext => '\footnote{Internet: \\\\ \cite{wiki:Kontinuumshypothese:2023}, Aussage.}')),
 
                   array( 'text', array( text => array(
                     'Dies soll erst einmal so stehen bleiben, weil es hier nicht direkt um den Beweis oder die Widerlegung'."\n".
-                    'der Kontinuumshypothese gehen soll.'."\n",
+                    'der Kontinuumshypothese geht.'."\n",
                       'Es soll vorerst darum gehen, die Struktur der Zahlen, bestenfalls der reellen Zahlen,'."\n".
                     'tiefer zu beleuchten, um zu sehen, ob und, wenn ja, welche Erkenntnisse sich diesbezüglich ergeben.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:XXX', text =>
                       
-                'Die Potenz \\latexmath{ 2^\omega } ist uns aus dem Primzahl-Flächenprodukt bereits bekannt', subline =>
+                'Die Potenz \lm{ 2^{ω} } ist uns aus dem Primzahl-Flächenprodukt bereits bekannt', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die von uns mittlerweile bewiesene \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} zweigt,'."\n".
-                    'dass die Anzahl aller endlichen natürlichen Zahlen \\latexmath{ \omega } im Primzahl-Flächenprodukt zu finden ist,'."\n".
-                    'in der Zeile, die das Produkt aller endlichen Primzahlen darstellt:'."\n".
+                    'Die von uns bewiesene \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} zeigt,'."\n".
+                    'dass die Anzahl aller endlichen natürlichen Zahlen \lm{ ω } im Primzahl-Flächenprodukt zu finden ist.'."\n".
+                    'Und zwar in der Zeile, die das Produkt aller endlichen Primzahlen darstellt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.UK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \omega  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
-                                          label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \s  =  \omega^{\omega}  }',
-                                          label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{\omega}  }',
-                                          label_text => '\\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  2^{\omega} \cdot 3^{\omega} \cdot 5^{\omega} \cdot 7^{\omega} \cdot 11^{\omega} \cdot 13^{\omega} \cdot 17^{\omega} \cdot 19^{\omega} \cdot 23^{\omega} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  ω  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \s  =  ω^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir sehen die Potenz \\latexmath{ 2^\omega } als ersten Primzahlturm im Produkt von \\latexmath{ \s }.'."\n",
-                      'Weiterhin ergibt sich die neue Erkenntnis, dass \\latexmath{ \aleph_1 } in seiner Potenz von \\latexmath{ 2 } im Exponenten das'."\n".
+                    'Wir sehen die Potenz \lm{ 2^{ω} } als ersten Primzahlturm im Produkt von \lm{ \s }.'."\n",
+                      'Weiterhin ergibt sich die neue Erkenntnis, dass \lm{ \aleph_{1} } in seiner Potenz von \lm{ 2 } im Exponenten das'."\n".
                     'Produkt aller Primzahlen enthält:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.UK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \aleph_{1}  =  2^{\omega}  =  2^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \aleph_{1}  =  2^{ω}  =  2^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \aleph_{1}  =  *( *( *( *( *( *( 2^{ 2 } *)^{ 3 } *)^{ 5 } *)^{ 7 } *)^{ 11 } *)^{ 13 } *)^{ \cdots }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dies sind Formulierungen, die wohl neu sind, soweit ich dies beurteilen kann.'."\n".
+                    'Dies sind Formulierungen, die neu sind, soweit mir bekannt.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:XXX', text =>
                       
-                'Die Konstruktion und der Sinn von \\latexmath{ \s } wirft Fragen bezüglich der Struktur der reellen Zahlen auf', subline =>
+                'Die Konstruktion und der Sinn von \lm{ \s } wirft Fragen bezüglich der Struktur der reellen Zahlen auf', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Nun geht es bei der Kontinuumshypothese um die Mächtigkeit der reellen Zahlen und um die der natürlichen Zahlen;'."\n".
                     'schließlich ja um die Frage, ob es noch eine Mächtigkeit zwischen denen dieser beiden Mengen gibt.'."\n",
-                      'Die superiale Basis \\latexmath{ \s } ist nun so konstruiert, dass ein Produkt mit ihr und jeder rationalen Zahl'."\n".
-                    'eine ganze Zahl ergibt.'."\n",
-                      'Wir können daran erkennen, dass schon die Struktur der rationalen Zahlen es erfordert, nicht nur'."\n".
-                    '\\latexmath{ 2^\omega }, sondern auch \\latexmath{ 3^\omega } und ebenso alle'."\n".
-                    'anderen gleichartigen unendlichen Potenzen endlicher Primzahlen bis ins Unendliche, einzubeziehen.'."\n".
-                    'Da verwundert es, wenn \\latexmath{ 2^\omega } ausreichen soll,'."\n".
+                      'Die superiale Basis \lm{ \s } ist nun so konstruiert, dass ein Produkt mit ihr und jedem Realanteil einer algebraischen Zahl,'."\n".
+                    'eine ganze Zahl ergibt, wie wir durch den Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} wissen.'."\n",
+                    'Offensichtlich können wir dies sehen, wenn es sich dabei um eine rationale Zahl handelt.'."\n".
+                      'Wir können daran erkennen, dass schon die Struktur der Realanteile der algebraischen Zahlen es erfordert, nicht nur'."\n".
+                    '\lm{ 2^{ω} }, sondern auch \lm{ 3^{ω} } und ebenso alle'."\n".
+                    'anderen aktual unendlichen Potenzen endlicher Primzahlen bis ins Unendliche, einzubeziehen.'."\n".
+                    'Da scheint es offenbar, dass \lm{ 2^{ω} } nicht ausreichen kann,'."\n".
                     'die Komplexität oder Feinheit der Struktur aller reellen Zahlen darzustellen.'."\n".
+                    'Dazu kommt, dass die reellen Zahlen auch noch alle transzendenten Zahlen enthalten sollen, woran es Zweifel geben darf,'."\n".
+                    'siehe Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen}}.'."\n",
+                      'Während die Mächtigkeit der Realanteile der algebraischen Zahlen, der der natürlichen Zahlen entspricht,'."\n".
+                    'weil sie abzählbar sind,\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}}'."\n".
+                    'ist die Mächtigkeit der transzendenten Zahlen\footnote{\const{SupNum_g_footnote_text_TranszendenteZahl}} überabzählbar.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}, Überabzählbarkeit.}'."\n".
+                    'Durch die Superial-Zahlen sehen wir, dass die Anzahl der Realanteile der algebraischen Zahlen dem besagten'."\n".
+                    'aktual unendlichen Flächenprodukt \lm{ \s } geteilt durch die Anzahl der endlichen ganzen \lm{ 2 \cdot ω } entspricht,'."\n".
+                    'siehe Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}.'."\n",
+                      'Wenn wir dies alles betrachten, bekomme ich den Eindruck, dass hier etwas nicht zusammenpasst.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:XXX', text =>
-                      
-                'Algebraische Zahlen', subline =>
-                  '')),
                   array( 'text', array( text => array(
-                    'Desweiteren steht die \\jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}'."\n".
-                    'im Raum, die feststellt, dass auch Produkte von \\latexmath{ \s } mit überrationalen Zahlen,'."\n".
-                    'also solchen Brüchen, die in Zähler und Nenner auf unendlich vielen Primzahlen endlicher Potenz beruhen,'."\n".
-                    'die einen Bruch endlicher Größe mit nichtperiodischer Dezimaldarstellung verkörpern.'."\n",
-                      'Die Vermutung bezieht sich nun darauf, dass solche Brüche endliche reelle Anteile algebraischer Zahlen\\color{*Bearb}{(Verweis)} sind,'."\n".
-                    'wie beispielsweise \\latexmath{ \sqrt{ 2 } }.'."\n",
-                      'Wenn dem so wäre, dann würden nur noch die transzendenten Zahlen, hinsichtlich eines Produktes mit \\latexmath{ \s },'."\n".
-                    'das eine ganze Zahl ergibt, an den reellen Zahlen fehlen.'."\n".
+                  '\\condb{Unabhängigkeit von der Mengenlehre (ZFC)} \\\\'."\n".
+                    'An dieser Stelle möchte ich darauf aufmerksam machen, dass die Kontinuumshypothese von der'."\n".
+                    'Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC) insgesamt unabhängig ist.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Unabhängigkeit von ZFC.}'."\n".
+                    'Dass bedeutet, die Mengenlehre – genauer die ZFC-Mengenlehre – gibt uns nicht die Möglichkeit zu entscheiden, ob die Kontinuumshypothese wahr oder falsch ist.'."\n",
+                      'Hier kommen die auf diesen Seiten entwickelten Superial-Zahlen, und die mit ihnen verbundenen \jump{OM:BiOrd:Home}{Biordinalzahlen}, ins Spiel.'."\n".
+                    'Die Superial-Zahlen begründen das Aktual-Unendliche auf den endlichen Primzahlen und so auf der Arithmetik und bringen sie mit der Mengenlehre zusammen.'."\n".
+                    'Sie erweitern so die Realanteile der algebraischen Zahlen sogar auf einen'."\n".
+                    'aktual unendlichen angeordneten algebraischen Körper\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}\footnote{\const{SupNum_g_footnote_text_AlgebraischerZahlkoerper}}.'."\n".
+                    'Das heißt, wir haben durch die Superial-Zahlen nicht nur die Mengenlehre, sondern auch eine Arithmetik des Aktual-Unendlichen mit ausgezeichneten Eigenschaften'."\n".
+                    'zur Verfügung.'."\n",
+                      'Und dadurch konnten wir schon neue Erkenntnisse der Arithmetik des Aktual-Unendlichen gewinnen, wie eine neue Definition der Ableitung, des Integrals,'."\n".
+                    'also der Erweiterung des Zählens, und der Primzahlen, der Definition der vollständigen Induktion über endliche Primzahlen sowie'."\n".
+                    'der Definition von irrationalen Realanteilen der algebraischen Zahlen mit überratiionalen Brüchen, also Brüchen aus aktual unendlichen ganzen Zahlen, die irrationale Wurzeln und ähnliches beschreiben.'."\n",
+                      'All dies steht offensichtlich in Beziehung zur Kontinuumshypothese und kann so zu deren besseren Verständnis herangezogen werden.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen', text =>
                       
                 'Transzendente Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Hinsichtlich der transzendenten Zahlen möchte ich am Beispiel der Eulerschen Zahl \\latexmath{ \e_\s } zeigen,'."\n".
+                    'Hinsichtlich der transzendenten Zahlen möchte ich am Beispiel der Eulerschen Zahl \lm{ \e_\s } zeigen,'."\n".
                     'dass sich hier weitere Fragezeichen ergeben:'."\n",
-                      'Im Abschnitt \\italic{\\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion}}'."\n".
+                      'Auf der Seite \italic{\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion}}'."\n".
                     'kommen wir zu dem Schluss, dass die Eulersche Zahl keine irrationale Zahl ist, nicht einmal eine'."\n".
                     'Superial-Zahl der auf dieser Seite definierten 1. Ordnung, weil sie unweigerlich'."\n".
-                    'aktual unendlich kleine Summanden enthält, die nicht Null werden können.'."\n",
-                      'Schließlich kommen wir hier zu dem Schluss, dass \\latexmath{ \e_\s } Summanden '."\n".
-                    'bis herunter zur Potenz \\latexmath{ -\s } zur Basis \\latexmath{ \s } hat,'."\n".
-                    'wodurch sie, wie gesagt, selbst aus der Menge \\latexmath{ \mathbb{S} } der Superial-Zahlen fällt.'."\n".
-                    'Sie ist demnach keine rein endliche reelle Zahl, die nur aus Summanden endlicher Größe besteht.'."\n",
-                      'An dieser stelle würde ich sagen, dass zumindestens \\latexmath{ \e_\s } keine reelle Zahl ist'."\n".
-                    'und die Frage im Raum steht, ob nicht auch alle anderen transzendenten Zahlen gar keine reellen Zahlen sind.'."\n",
-                      'Sondern, wir lassen uns vielleicht dadurch täuschen, dass wir glauben, transzendente Zahlen wären durch Dezimalzahlen'."\n".
+                    'aktual unendlich kleine Summanden der Größenordnung \lm{ \s^{-\s} } enthält, die nicht Null werden können.'."\n".
+                    'Wie gesagt, fällt sie hierdurch selbst aus der Menge \lm{ \mathbb{S} } der Superial-Zahlenheraus.'."\n".
+                    'Sie ist also keine rein endliche reelle Zahl, die nur aus Summanden endlicher Größe besteht.'."\n",
+                      'An dieser Stelle würde ich sagen, dass zumindestens \\latexmath{ \e_\s } keine reelle Zahl ist'."\n".
+                    'und die Frage im Raum steht, ob nicht auch alle anderen transzendenten Zahlen gar keine reellen Zahlen sind.'."\n".
+                    'Sondern, wir lassen uns vielleicht dadurch täuschen, dass wir glauben, transzendente Zahlen wären durch Dezimalzahlen'."\n".
                     'mit unendlich vielen Nachkommastellen darstellbar, ohne zu beantworten,'."\n".
                     'wie groß diese minimale Unendlichkeit denn eigentlich ist.'."\n".
                     ''))),
@@ -576,7 +632,7 @@
                   array( 'text', array( text => array(
                     'Ich denke, wir sollten die Struktur der reellen Zahlen und ihre Aufteilung in Untermengen'."\n".
                     'mit Hilfe der Primzahlen, und somit mit Hilfe der Superial-Zahlen, tiefer untersuchen und verstehen,'."\n".
-                    'damit wir die Kontinuumshypothese verstehen und vielleicht beantworten können.'."\n".
+                    'damit wir in die Lage kommen, die Kontinuumshypothese im Detail zu verstehen und hoffentlich dann beantworten zu können.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(

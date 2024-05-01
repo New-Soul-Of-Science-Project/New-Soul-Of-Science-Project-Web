@@ -235,6 +235,7 @@
     echo '            P: "\\\\mathrm{P}",'."\n"; // for prime superial numbers
     echo '            R: "\\\\mathrm{R}",'."\n"; // for algebraic coefficients
     echo '            Z: "\\\\mathrm{Z}",'."\n"; // for whole superial numbers
+    echo '            rad: "\\\\mathrm{rad}",'."\n"; // for radikal of
     echo '            llangle: "\\\\langle \\\\mspace{-3.5mu} \\\\langle",'."\n";
     echo '            rrangle: "\\\\rangle \\\\mspace{-3.5mu} \\\\rangle",'."\n";
     echo '            lOpera: "\\\\langle \\\\mspace{-2.2mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-1.0mu}",'."\n";

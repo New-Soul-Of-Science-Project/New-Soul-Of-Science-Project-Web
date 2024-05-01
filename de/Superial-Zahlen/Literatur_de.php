@@ -29,6 +29,7 @@
               'wiki:Binomialkoeffizient:2023',
               'wiki:DifferentialMathematik:2024',
               'wiki:Differentialrechnung:2024',
+              'wiki:ElliptischeIntegrale:2024',
               'wiki:EulerscheZahl:2023',
               'wiki:Exponentialfunktion:2022',
               'wiki:GaussscheSummenformel:2023',
@@ -56,6 +57,7 @@
               'wiki:Stellenwertsystem:2023',
               'wiki:Teilerfremdheit:2022',
               'wiki:Teilmenge:2023',
+              'wiki:TranszendenteZahl:2023',
               'wiki:Unendlichkeitsaxiom:2021',
             ));
           ?>

@@ -203,11 +203,11 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Satz-des-Euklid', text =>
                       
-                'Satz des Euklid', subline =>
+                'Zum ›Satz des Euklid‹', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Der ›Satz des Euklid‹'."\n".
-                    'beweist, dass die Primzahlen endlicher größe nicht enden.'."\n",
+                    'Der Beweis des ›Satz des Euklid‹'."\n".
+                    'beweist, dass die Primzahlen endlicher Größe nicht enden.'."\n",
                       'Ich gebe diesen Beweis nachfolgend in Kurzform wieder.'."\n".
                     'Dabei werde ich ihn etwas modifizieren, damit er zu den von uns gesuchten Eigenschaften am besten passt und'."\n".
                     'wir ihn gut weiterverwenden können:'."\n".
