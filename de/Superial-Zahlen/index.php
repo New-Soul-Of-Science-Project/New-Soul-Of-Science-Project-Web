@@ -50,12 +50,17 @@
                     'Damit erhalten wir für die Eulersche Zahl \lm{ \e_{\s} = 〈1〉․〈1〉^{〈1〉〈0〉} },'."\n".
                     'was \lm{ \e_{\s} = *( 1 + \frac{ 1 }{ \s } *)^{\s} } entspricht.'."\n",
                       'Weiterhin entwickeln wir mit Hilfe der neuen \jump{OM:BiOrd:Home}{Biordinalzahlen} einen Beweis, dass die vollständige Induktion \lm{ ω } eine Primfaktorzerlegung besitzt.'."\n".
-                    'Die Ordinalzahl \lm{ ω } ist das Produkt aller endlichen Primzahlen: \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots }.'."\n".
+                    'Die Ordinalzahl \lm{ ω } ist demnach das Produkt aller endlichen Primzahlen: \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots }.'."\n".
                     'Eine im ersten Moment überraschende Entdeckung.'."\n".
-                    'Und eine weitere tiefe Einsicht in die fundamentalen Strukturen der Arithmetik, die eine neue Verbindung zwischen der Zahlentheorie und der Analysis zeigt.'."\n",
+                    'Und eine weitere tiefe Einsicht in die fundamentalen Strukturen der Arithmetik, die eine neue Verbindung zwischen der Zahlentheorie und der Analysis offenbart.'."\n",
+                      'Und so zeigt sich, es gilt \lm{ \s = ω^{ω} }, was sehr bemerkenswert ist, weil sich die neue superiale Basis \lm{ \s }'."\n".
+                    'auf diese Weise an exponierter Stelle in die Ordinalzahlen einreiht.'."\n".
+                    'Daher fand diese Formel auch Eingang in das Logo der Theorie der Superial-Zahlen.'."\n",
+                      'Es tauchen immer weitere bedeutende Fragen zu den neuen Zahlen auf:'."\n".
                       'Welche Primfaktorzerlegung haben die natürlichen Superial-Zahlen?'."\n".
                     'Wie sind die Primzahlen im Aktual-Unendlichen verteilt?'."\n",
-                      'Es eröffnet sich eine ganze Welt vieler spannender Fragen, von denen sich hier und dort Antworten in dieser Arbeit ergeben oder zu deren Nachforschung angeregt wird.'."\n".
+                      'Es eröffnet sich eine ganze Welt spannender Fragen, zu denen wir hier und dort Antworten in dieser Arbeit finden'."\n".
+                    'oder zu deren Erforschung hiermit angeregt werden soll.'."\n".
                     ''))),
                       
                   array( 'headline', array( jump_name => 'OM:SupNum:Home:Vortext:XXX', text =>
