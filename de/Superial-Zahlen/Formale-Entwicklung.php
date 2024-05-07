@@ -23,43 +23,48 @@
                     'Ich habe mich dafür entschieden dies auf eine Weise zu tun, die sicher stellt, dass möglichst viele'."\n".
                     'Eigenschaften der endlichen natürlichen Zahlen sowie auch der ganzen Zahlen, der Primzahlen und der rationalen Zahlen'."\n".
                     'ins Aktual-Unendliche fortgesetzt werden.'."\n",
-                      'Bei den Superial-Zahlen handelt es sich um eine abelsche Gruppe\\footnote{\\const{NSOSP_g_footnote_text_AbelscheGruppe}}'."\n".
-                    'bezüglich der Addition und Multiplikation und sie sind sogar ein angeordneter algebraischer Körper\\footnote{\\const{NSOSP_g_footnote_text_KoerperAlgebra}},'."\n".
-                    'die die rationalen Zahlen \\term{\M(Q)} ins aktual unendliche erweitert.'."\n".
-                    'Dabei erweitern sich auch ihre Teilmengen der natürlichen Zahlen \\term{\M(N)}, der ganzen Zahlen \\term{\M(Z)} und der Primzahlen \\term{\M(P)} zu den'."\n".
-                    'den \\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} \\term{\M(S)__{N}},'."\n".
-                    'den \\jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen} \\term{\M(S)__{Z}}'."\n".
-                    'und sogar zu den \\jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{superialen Primzahlen} \\term{\M(S)__{P}}.'."\n",
-                      'So kommen wir zum Beispiel nicht nur in die Lage \\jump{OM:SupNum:Einleitung}{Ableitungen mit Superial-Zahlen}, ganz ohne Limes, zu definieren,'."\n".
+                      'Bei den Superial-Zahlen handelt es sich um eine abelsche Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}}'."\n".
+                    'bezüglich der Addition und Multiplikation und sie sind sogar ein angeordneter algebraischer Körper\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}},'."\n".
+                    'der die rationalen Zahlen \lm{ \mathbb{Q} } und, wie wir mittlerweile zeigen können, auch die Radikale der algebraischen Zahlen\color{*Bearb}{(Verweis)} ins Aktual-Unendliche erweitert.'."\n",
+                      'Radikale der algebraischen Zahlen sind solche Zahlen, die durch endliche rationale Zahlen, mittels der vier Grundrechenarten'."\n".
+                    'sowie unter Verwendung von endlichen ganzen Wurzeln darstellbar sein müssen.\color{*Bearb}{(Verweis)}'."\n".
+                    'Ob die Superial-Zahlen auch eine sinnvolle Erweiterung der algebraischen Zahlen darstellen, die keine Radikale sind, ist Teil der aktuellen Forschung.'."\n",
+                      'Denn die Superial-Zahlen sollen auf diese Weise auch die wichtigen endlichen Teilmengen der radikalen algebraischen Zahlen erweitern,'."\n".
+                    'wie die der natürlichen Zahlen \lm{ \mathbb{N} }, der ganzen Zahlen \lm{ \mathbb{Z} } und der Primzahlen \lm{ \mathbb{P} } zu den'."\n".
+                    'den \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} \lm{ \mathbb{S}_{\N} },'."\n".
+                    'den \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen} \lm{ \mathbb{S}_{\Z} }'."\n".
+                    'und sogar zu den \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{superialen Primzahlen} \lm{ \mathbb{S}_{\P} }.'."\n",
+                      'So kommen wir zum Beispiel nicht nur in die Lage \jump{OM:SupNum:Einleitung}{Ableitungen mit Superial-Zahlen}, ganz ohne Limes, zu definieren,'."\n".
                     'sondern auch in die Lage, bis ins Aktual-Unendliche zu zählen und dadurch Integrale'."\n".
                     'als Summen unendlich vieler, unendlich schmaler Flächenstreifen zu berechnen.'."\n",
-                      'Jede natürliche Superial-Zahl hat dabei so viele Vorgänger in \\term{\M(S)__{N}}, wie sie selber groß ist.'."\n".
+                      'Jede natürliche Superial-Zahl hat dabei so viele Vorgänger in \lm{ \mathbb{S}_{\N} }, wie sie selber groß ist.'."\n".
                     'Dies ist anders, als bei den von mir erforschten auch ins Aktual-Unendliche gehenden'."\n".
-                    '\\jump{OM:BiOrd:Home}{Biordinalzahlen}:'."\n".
-                    'Aktual unendliche Biordinalzahlen haben bizarrer Weise \\jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{mehr Vorgänger als ihr Wert} groß ist.'."\n".
-                    'In mancherlei anderen Punkten können wir erkennen, dass sie die noch nicht so perfekten Vorläufer der Superial-Zahlen sind.'."\n".
-                    'Mathematisch gesehen sind die Biordinalzahlen eine Erweiterung der Ordinalzahlen\\footnote{\\const{NSOSP_g_footnote_text_Ordinalzahl}} zu einem algebraischen Ring\\footnote{\\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n",
-                      'Die Menge der Superial-Zahlen ist in vielerlei Hinsicht etwas ganz besonderes.'."\n".
+                    '\jump{OM:BiOrd:Home}{Biordinalzahlen}:'."\n".
+                    'Aktual unendliche Biordinalzahlen sind ganze Zahlen, die bizarrer Weise \jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{mehr Vorgänger als ihr Wert} haben, also als sie selber groß sind.'."\n".
+                    'In mancherlei anderen Punkten können wir erkennen, dass diese die noch nicht so „perfekten“ Vorläufer der Superial-Zahlen sind.'."\n".
+                    'Mathematisch gesehen sind die Biordinalzahlen eine Erweiterung der Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}} zu einem algebraischen Ring\footnote{\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n",
+                      'Die Menge der Superial-Zahlen ist also in vielerlei Hinsicht etwas ganz besonderes.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Vortext:DefinitionSuperialeEinheit', text =>
                       
-                'Definition der superialen Einheit \\term{s}', subline =>
+                'Definition der superialen Einheit \lm{ \s }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Es lassen sich mindestens zwei geometrische Konstruktionen finden, die der folgenden Definition von \\term{s} über das unendliche Primzahlprodukt aus der'."\n".
-                    '\\jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{Einleitung} äquivalent sind:'."\n"))),
+                    'Es lassen sich mindestens zwei geometrische Konstruktionen finden, die der folgenden Definition von \lm{ \s } über das unendliche Primzahlprodukt aus der'."\n".
+                    '\jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{Einleitung} äquivalent sind:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  \left( \prod_{\forall p \in \mathbb{P}}  p \right)  }',
-                                          label_text => '\\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  s  :=  \displaystyle \left( \prod_{\forall p \in \mathbb{P}}  p \right)^{\omega}  }',
-                                          label_text => '\\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  *( \prod_{\forall p \in \mathbb{P}}  p *)  }',
+                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Die erste der folgenden Konstruktionen geht ins aktual unendlich Große und die zweite ins aktual unendlich Kleine.'."\n".
-                    'Beide definieren \\term{s} jedoch auf etwas unterschiedliche Weise:'."\n"))),
+                    'Beide definieren \lm{ \s } jedoch auf etwas unterschiedliche Weise:'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Definition von \\term{s} über den Wiederholungsrhythmus der natürlichen Zahlen} \\\\'."\n"))),
+                    '\color{*Bearb}{Verschieben nach \jumpname{OM:SupNum:Struktur-Geometrie}} \\\\'."\n".
+                  '\condb{Definition von \lm{ \s } über den Wiederholungsrhythmus der natürlichen Zahlen} \\\\'."\n"))),
                       
                   array( 'figure',
                     array_merge( $SupNum_g_figure_ary_sGeomKonstruktWiederholung, array( name => 'OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktWiederholung'))),
@@ -67,9 +72,10 @@
                   array( 'text', array( text => array(
                     'In der geometrischen Konstruktion der rhythmischen Wiederholung bleiben die Begrenzungspunkte der Teilstrecken immer im selben Abstand von Eins.'."\n".
                     'Am jeweiligen Ende der Punktreihe werden stets die nötigen Punkte angehängt, um den Rhythmus der nächsten natürlichen Zahl zu integrieren,'."\n".
-                    'wenn er noch nicht enthalten sein sollte (siehe \\jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktWiederholung}).'."\n"))),
+                    'wenn er noch nicht enthalten sein sollte (siehe \jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktWiederholung}).'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Definition von \\term{s^^{-1}} über den Regen der natürlichen Zahlen} \\\\'."\n".
+                    '\color{*Bearb}{Verschieben nach \jumpname{OM:SupNum:Struktur-Geometrie}} \\\\'."\n".
+                  '\condb{Definition von \lm{ \s^{-1} } über den Regen der natürlichen Zahlen} \\\\'."\n".
                     ''))),
                       
                   array( 'figure',
@@ -77,7 +83,7 @@
                       
                   array( 'text', array( text => array(
                     'In der Konstruktion der rhythmischen Zerlegung werden zwischen den vorhandenen Begrenzungspunkte der Teilstrecken immer neue Punkte hinzugefügt, um den Rhythmus'."\n".
-                    'der hinzukommenden natürlichen Zahl in einem gleichmäßigen Rhythmus zu integrieren, falls er noch nicht vorhanden ist (siehe \\jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktTeilung}).'."\n",
+                    'der hinzukommenden natürlichen Zahl in einem gleichmäßigen Rhythmus zu integrieren, falls er noch nicht vorhanden ist (siehe \jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktTeilung}).'."\n",
                       'Dies ist, als wenn ein Regen von natürlichen Zahlen auf der Strecke der Eins hernieder gehen würde.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{XXX Explizite Anschauung des Primzahlprodukts von \\term{s}} \\\\'."\n".

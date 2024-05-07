@@ -13,12 +13,6 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '\bold{Ist die Geometrie fraktal?} – Sind ein Punkt, eine Linie, eine Fläche und der Raum fraktal?',
-                    '• Das Problem der Geometrie, eine Linie aus Punkten aufzubauen (Verwandt mit der Kontinuumshypothese): Die nullte, die erste und die zweite Dimension haben keine Ausdehnung, kein Volumen, – also Punkt, Linie und Fläche – und in gewisser Weise existieren sie so nicht. Aber mit ihnen sollen wir die dritte Dimension aus Punkten (Ecken) und Flächen konstruieren, die dann eine Ausdehnung hat und plötzlich existiert. Das scheint komisch und merkwürdig. Siehe Nassim Haramein, Die Entschlüsselung des Universums, S. 11-14, hier S. 12-13.',
-                    '– Es geht einfach darum, wie man aus Punkten eine Linie exakt konstruieren kann: Handelt es sich wirklich um einen absolut unendlich kleinen Punkt, dann bekommen wir ein Problem. Es scheint mir, dass ein strukturierter Punkt, mit aktual unendlich kleiner Ausdehnung hier Abhilfe schaffen kann. Ich kann nämlich in Form von aktual unendlich großen Zahlen beschreiben, wie oft ich diesen superialen Punkt aneinander legen muss. Dies kann ich bei absolut unendlich kleinen Punkten nicht tun.',
-                    '– Bietet hier die aktual unendlich kleine Hülle der superial-kleinen Zahlen um einen Punkt einen logischen Lösungsansatz für die Geometrie? Denn bei einem absolut unendlich kleinen Punkt können wir nicht sicher und exakt definieren, wie oft wir ihn aneinander legen müssen, um eine Gerade einer bestimmten Länge zu erzeugen. Bei einem Punkt mit superial-kleiner Hülle ist dies wohldefiniert.',
-                    '⋅ In Bezug auf die Ordinalzahlen und Biordinalzahlen ist die „Umgebung“ übrigens das „Fähnchen“ zwischen der Null und Ein bzw. zwischen jeder ganzen Zahl, mit dieser, und der nächst größeren, ohne diese, obwohl die Zahlen dazwischen in den ganzen Zahlen gar nicht definiert sind. Sie sind aber implizit mit gemeint. Siehe \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen}.',
-                    '– Ist die Geometrie also eigentlich fraktal? Was durch die Analysis, mit ihren Ableitungen und Integralen, schließlich sichtbar wird?',
                     '\bold{Der Ansatz mit aktual unendlichen Zahlen ist nicht neu}',
                     '• Sondern er ist historisch offenbar sogar älter, als der mit dem Grenzwert, siehe \url{https://de.wikipedia.org/w/index.php?title=Hyperreelle_Zahl&oldid=237554998} und \url{https://de.wikipedia.org/wiki/Differentialrechnung#Geschichte}.',
                     '• Dieser Ansatz machte Probleme, weil er in sich logisch inkonsistent und nicht klar definiert war.',
@@ -37,218 +31,22 @@
                     '– Dies unterstützt in meinen Augen auch die Erkenntnis, dass die Geometrie eigentlich fraktal ist, siehe oben.',
                     '\bold{Zeit in der Mathematik}',
                     '• Einflechten, dass die Arithmetik aus dem Zählen geboren wird. Dies ist eine Definition durch einen Prozess. Hierdurch kommt Zeit ins Spiel. Die Betrachtung der Primfaktorzerlegung der natürlichen Zahlen zeigt auf, dass an diesem Prozess Regelsystemen ähnliche rhythmische Strukturen beteiligt sind.',
+                    '\bold{Forschungsideen}',
+                    '• Das Pascal-Sierpinski-Dreieck ist eine Geometrie, in der Primzahlen eine außergewöhnliche Rolle spielen.\footnote{Vgl. \cite{Plichta:GottesGeheimeFormel:1995}, S. 263ff., 271ff. 306ff.. \\\\ Internet: \\\\ Vgl. \\jump[https://de.wikipedia.org/w/index.php?title=Sierpinski-Dreieck&oldid=179105092#Zusammenhang_mit_dem_Pascalschen_Dreieck]{}{Wikipedia, Sierpinski-Dreieck, Zusammenhang mit dem Pascalschen Dreieck}.}',
                     '\bold{Korrekturen}',
                     '• (gerade weitreichend auf dem Weg) Der Text ist schwer verständlich und manchmal etwas komisch formuliert. Alles noch einmal überarbeiten !!!',
                     '• Die Kapitel der Seiten erneut durcharbeiten.',
-                    '\bold{Forschungsideen}',
-                    '• Das Pascal-Sierpinski-Dreieck ist eine Geometrie, in der Primzahlen eine außergewöhnliche Rolle spielen.\footnote{Vgl. \cite{Plichta:GottesGeheimeFormel:1995}, S. 263ff., 271ff. 306ff.. \\\\ Internet: \\\\ Vgl. \\jump[https://de.wikipedia.org/w/index.php?title=Sierpinski-Dreieck&oldid=179105092#Zusammenhang_mit_dem_Pascalschen_Dreieck]{}{Wikipedia, Sierpinski-Dreieck, Zusammenhang mit dem Pascalschen Dreieck}.}',
+                    '\bold{Einpflegen}',
+                    '• Dem sehr kleinen, infinitesimalen Epsilon eine Struktur aus Primzahlen geben.',
                     ))),
                       
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Einleitung:Vortext:XXX',
-                Title => 'Dem sehr kleinen, infinitesimalen, Epsilon eine Struktur aus Primzahlen geben …',
-                TitleVis => 'Dem sehr kleinen, infinitesimalen, Epsilon eine Struktur aus Primzahlen geben:', ParagraphList => array(
-
-                  array( 'text', array( text => array(
-                    'Dem sehr kleinen, infinitesimalen, Epsilon des Limes eine Struktur aus Primzahlen geben.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-
-                    ))),
-                      
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Einleitung:Vortext:XXX',
-                Title => 'Entwurf des neuen Beginns der Einleitung …',
-                TitleVis => 'Entwurf des neuen Beginns der Einleitung:', ParagraphList => array(
-
-                  array( 'text', array( text => array(
-                    'In der Geometrie stoßen wir schnell auf ein fundamentales Problem.'."\n".
-                    'Denn wollen wir beispielsweise eine Linie konstruieren oder berechnen, so wird oft leicht dahin gesagt:'."\n".
-                    ''))),
-                      
-                  array( 'text', array( Shape => 'italic', text => array(
-                      'Nun setzen wir die Linie aus vielen Punkten zusammen; natürlich aus unendlich vielen, um wirklich eine Linie zu erhalten.'."\n".
-                      ''))),
-                      
-                  array( 'text', array( text => array(
-                    'Oder entsprechend für eine Fläche:'."\n".
-                    ''))),
-                      
-                  array( 'text', array( Shape => 'italic', text => array(
-                      'Nun setzen wir die Fläche aus vielen Linien zusammen; natürlich aus unendlich vielen, um wirklich eine Fläche zu erhalten.'."\n".
-                      ''))),
-                      
-                  array( 'text', array( text => array(
-                    'Und Entsprechendes so fortgeführt für den Raum beziehungsweise das Volumen und jede nächst größere Dimension.'."\n",
-                      'Doch was ist eine Linie, um beim einfachsten Beispiel zu bleiben,'."\n".
-                    'und wie können wir eine Linie aus Punkten aufbauen?'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
-                                           
-                'Ein fundamentales Problem', subline =>
-                  'Hochstapelei')),
-                  array( 'text', array( text => array(
-                    'Der Versuch eine Linie aus Punkten quasi aufzustapeln ist zum Beispiel'."\n".
-                    'zum Scheitern verurteilt.'."\n",
-                      'Beim Stapeln wird ein Punkt so an den anderen platziert, dass alle gemeinsam'."\n".
-                    'die Linie füllen, dicht an dicht.'."\n".
-                    'Diese Dichte ist allerdings davon abhängig, welche Ausdehnung jeder einzelne Punkt hat.'."\n".
-                    'Daher das Wort stapeln.'."\n",
-                      'Ein Punkt besitzt aber per Definition keine Ausdehnung.'."\n".
-                    'Daher können wir Punkte nicht so stapeln, dass eine Linie gefüllt wird.'."\n".
-                    'Das gelingt auch dann nicht, wenn wir unendlich viele Punkte nehmen.'."\n".
-                    'Denn diese Art von Unendlichkeit, die Punkte ohne jede Ausdehnung raumgreifend stapeln kann, ist nicht wohldefiniert.'."\n",
-                      'Gleiches gilt auch für all die anderen genannten Objekte:'."\n".
-                    'Wir können Linien ohne jede Breite nicht zu Flächen stapeln und so fort.'."\n".
-                    'Auf diese Weise ist also kein Konstruieren einer höheren Dimension aus niedrigeren Dimensionen möglich.'."\n",
-                      'Aber was funktioniert dann?'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
-                                           
-                'Ist die Geometrie im Grunde fraktal?', subline =>
-                  'Weben oder Netzwerken')),
-                  array( 'text', array( text => array(
-                    'Wir können uns zwei Punkte denken, die nicht aneinander – also nicht aufeinander – liegen und so eine Richtung vorgeben.'."\n".
-                    'Nun beginnen wir ein Netz von Punkten zu „weben“, indem wir zwischen beide'."\n".
-                    'Punkte, genau in der Mitte, einen weiteren Punkt legen und haben nun drei Punkte in der selben Richtung auf einer Linie.'."\n",
-                      'So fahren wir fort und legen jeweils zwischen zwei benachbarte Punkte einen weiteren'."\n".
-                    'in die Mitte.'."\n".
-                    'Hierdurch wird das Gewebe zwischen unseren Ausgangspunkten immer dichter gewebt und'."\n".
-                    'wir spannen ein Netz von Punkten auf, wodurch wir immer mehr Punkte auf einer Strecke erhalten.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\condb{Selbstähnlichkeit} \\\\'."\n".
-                    'Weil wir immer wieder das gleiche tun, ergibt sich eine fraktale, also selbstähnliche, Netzstruktur.'."\n",
-                      'Die Anzahl \lm{ n }, die Dichte \lm{ \rho } und der Abstand \lm{ d } der Punkte auf Strecke berechnen sich mit der Fraktalebene \lm{ x } zu:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.EinEntw', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  =  2^{x} + 1  }'),
-                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{x} }  =  2^{-x}  }'),
-                      array( display => 'on',  latex => '{  \rho  =  2^{x}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'Nun können wir zwei solcher Strecken in der Richtung der Ausgangspunkte so aneinander'."\n".
-                    'legen, dass der Endpunkt der ersten Strecke auf dem Anfangspunkt der zweiten liegt.'."\n".
-                    'Nehmen wir diese doppelte Strecke und skalieren sie probehalber zwischen die erste Strecke,'."\n".
-                    'dann liegen alle Punkte aufeinander.'."\n".
-                    'Beide Punktmengen sind von der Struktur her gleich, weil durch das halbieren und verdoppeln'."\n".
-                    'in beiden die reinen Potenzen von Zwei stecken.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\condb{Erweiterung} \\\\'."\n".
-                    'Verlängern wir die doppelte Strecke weiter auf die dreifache und skalieren diese'."\n".
-                    'wieder probehalber auf die erste Strecke, dann liegen nur die Anfangs- und Endpunkte aufeinander.'."\n".
-                    'Die restlichen Punkte decken sich nicht.'."\n",
-                      'Wir haben die nächste Primzahl nach der Zwei entdeckt, die ein neues Netzwerk oder Raster erzeugt.'."\n".
-                    'Auch dieses ist wieder in Bezug auf die Potenzen der Drei selbstähnlich.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\condb{Das komplette Netzwerk aller ganzen Primzahlpotenzen aufspannen} \\\\'."\n".
-                    'Dieses Vorgehen können wir nun immer weiter treiben:'."\n".
-                    'Strecke wieder um Eins verlängern und durch skalieren überprüfen, ob wir eine neue Primzahl gefunden haben.'."\n".
-                    'Dann auch von der ersten Strecke an in die andere Richtung ins Negative immer weiter verlängern.'."\n",
-                      'In der negativen Richtung erhalten wir die selben Primzahlen.'."\n".
-                    'Die Struktur des Netzes verändert sich nicht mehr.'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
-                                           
-                'Immer noch Lückenhaft', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'Das geometrische Netzgewebe besteht nun aus den Abständen der Punkte, wobei letzte die Knoten oder Stützen des Gewebes sind.'."\n".
-                    'Es ist also klar, dass dieses Gewebe im Hinblick auf seine Stützpunkte immer Lücken haben wird, selbst dann, wenn die Lücken aktual unendlich klein werden.'."\n".
-                    'Wir können aber vielleicht davon sprechen, dass ein solches Gewebe dann im Endlichen keine Lücken mehr hat.'."\n",
-                      'XXX Nehmen wir diese Teilungen der Strecken nur endlich oft vor,'."\n".
-                    'dann haben wir immer noch Lücken endlicher Größe.'."\n",
-                      'Wie können wir aber die Lücken schließen?'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
-                                           
-                'Übergang ins Unendliche', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'Erst, wenn wir die Teilung der Strecken bis ins Unendliche treiben,'."\n".
-                    'bleiben keine endlichen Lücken übrig.'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.EinEntw', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  =  2^{\omega} + 1  }'),
-                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{\omega} }  =  2^{-\omega}  }'),
-                      array( display => 'on',  latex => '{  \rho  =  2^{\omega}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
-                                           
-                'Wie wir aus Punkten eine Linie konstruieren können', subline =>
-                  'Ein naturphilosophisches Problem')),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
-                                           
-                'Irrationale algebraische Zahlen, wie die zweite Wurzel aus Zwei – \lm{ \sqrt{2} }', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.EinEntw', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  =  2^{ \frac{ 1 }{ 2 } } + 1  }'),
-                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{ \frac{ 1 }{ 2 } } }  =  2^{ -\frac{ 1 }{ 2 } }   }'),
-                      array( display => 'on',  latex => '{  \rho  =  2^{ \frac{ 1 }{ 2 } }  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
-                                           
-                'XXX', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-
-                    ))),
-
                   array( 'text', array( text => array(
                     'Wie wir sehen werden erhalten wir mit den hier entwickelten Superial-Zahlen etwas ganz besonderes:'."\n".
                     'Formal gesprochen sind sie eine abelsche Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}} und'."\n".
                     'bezüglich der Addition und Multiplikation ein aktual unendlicher angeordneter algebraischer Körper\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}\footnote{\const{SupNum_g_footnote_text_AlgebraischerZahlkoerper}}.'."\n".
                     'Mit ihnen erweitern wir die rationalen Zahlen\footnote{\const{SupNum_g_footnote_text_RationaleZahl}}'."\n".
                     'und durch den Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}'."\n".
-                    'sogar die Menge der Realanteile der algebraischen Zahlen\\footnote{\\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
+                    'sogar die Menge der Realanteile der algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
                     'inklusive ihrer irrationalen Zahlen, wie irrationale Wurzeln, auf fraktale Weise ins Aktual-Unendliche.'."\n".
                     'So geben wir der aktualen Unendlichkeit eine facettenreiche fundamentale fraktale Struktur.'."\n",
                       'Mit den Superial-Zahlen kommen wir in die Lage aktual unendlich kleine Differenzen zu bilden,'."\n".

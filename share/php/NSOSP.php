@@ -742,12 +742,12 @@
   $SupNum_g_figure_ary_sGeomKonstruktTeilung   = array( fig_file_name => 'SN/s-geom-Konstrukt-Teilung-v02', fig_alt_description => 'Rhythmische Zerlegung der Eins durch natürliche Zahlen', width => '600px', height => '290px', name => 'set local!',
                                                          text => 'Die Grafik zeigt, wie durch die Projektion der Begrenzungspunkte aller regelmäßigen natürlichzahligen Teilstrecken auf die Einheitsstrecke,'."\n".
                                                                  'von der Eins an bis ins Unendliche, und durch das Interpolieren ihrer Begrenzungspunkte zu einem gleichmäßigen Rhythmus,'."\n".
-                                                                 'nach und nach als Abstand zwischen den Punkten die superiale Zahl \\term{s^^{−1}} konstruiert wird.'."\n".
-                                                                 'Als Begrenzungspunktanzahl, ohne die Eins, oder als Anzahl der Teilstrecken ergibt sich die superiale Basis \\term{s}.');
+                                                                 'nach und nach als Abstand zwischen den Punkten die superiale Zahl \lm{ \s^{−1} } konstruiert wird.'."\n".
+                                                                 'Als Begrenzungspunktanzahl, ohne die Eins, oder als Anzahl der Teilstrecken ergibt sich die superiale Basis \lm{ \s }.');
   
   $SupNum_g_figure_ary_sGeomKonstruktWiederholung = array( fig_file_name => 'SN/s-geom-Konstrukt-Wiederholung-v02', fig_alt_description => 'Rhythmische Wiederholung auf Basis natürlicher Zahlen', width => '600px', height => '290px', name => 'set local!',
                                                          text => 'Die Grafik zeigt, wie durch den Zusammenfall aller Rhythmen der natürlichen Zahlen,'."\n".
-                                                                 'von der Eins an bis ins Unendliche, die superiale Basis s konstruiert wird.'."\n");
+                                                                 'von der Eins an bis ins Unendliche, die superiale Basis \lm{ \s } konstruiert wird.'."\n");
                                                                  
                                                                  
   $ZS_g_figure_ary_GraviLeptonWirkung        = array( fig_file_name => 'Zahlensemantik/Gravi_Lepton-Wirkung_v12', fig_alt_description => 'Graviradiation ei­nes sim­pli­fi­zier­ten Lep­to­nen-­Strings', width => '660px', height => '825px', name => 'set local',

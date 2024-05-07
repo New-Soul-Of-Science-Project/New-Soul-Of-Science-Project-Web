@@ -196,7 +196,7 @@
       jump_ary => array(
         'OM:SupNum:Formale-Entwicklung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
-          'OM:SupNum:Formale-Entwicklung:Vortext:DefinitionSuperialeEinheit' => array( headline_text => 'Definition der superialen Einheit \\term{s}',/* headline_text_short => 'XXX'*/),
+          'OM:SupNum:Formale-Entwicklung:Vortext:DefinitionSuperialeEinheit' => array( headline_text => 'Definition der superialen Einheit \lm{ \s }',/* headline_text_short => 'XXX'*/),
           'OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktWiederholung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S' => array( headline_text => 'SN.Form.1'),
@@ -263,6 +263,27 @@
         'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion' => array( headline_text => 'Diskussion des Beweises'/* , headline_text_short => 'XXX'*/),
 
         'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen' => array( headline_text => 'Experimentelle Gedanken zu anderen Beweiswegen'/* , headline_text_short => 'XXX'*/),
+      ),
+    ),
+    'OM:SupNum:Struktur-Geometrie' => array(
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Arithmetische-Struktur-der-Geometrie.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Arithmetische-Struktur-der-Geometrie.php',
+      titel => 'Die arithmetische Struktur der Geometrie - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\\name[undertitle]{OM:SupNum:Struktur-Geometrie}.\\hidden{ — \\name[description]{OM:SupNum:Struktur-Geometrie}.}',
+      keywords => '',
+      text_titel_h1 => 'Die arithmetische Struktur der Geometrie',
+      text_titel_short => 'Die arithmetische Struktur der Geometrie',
+      text_undertitel_h2 => 'Ein Fraktal aus Primzahlteilen',
+      text_titel_discr_h3 => '',
+      jump_ary => array(
+        'OM:SupNum:Struktur-Geometrie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          'OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit' => array( headline_text => 'Definition der superialen Einheit \lm{ \s }',/* headline_text_short => 'XXX'*/),
+          'OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+          'OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+          'OM:SupNum:Struktur-Geometrie:Vortext:Equ-Def-S' => array( headline_text => 'SN.Form.1'),
+
+        'OM:SupNum:Struktur-Geometrie:XXX' => array( headline_text => 'XXX'/* , headline_text_short => 'XXX' */),
       ),
     ),
     'OM:SupNum:Ueberrationalitaetsvermutung' => array(

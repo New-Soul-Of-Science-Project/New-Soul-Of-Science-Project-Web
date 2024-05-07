@@ -740,16 +740,6 @@
 		<lastmod>2024-02-29</lastmod>
 		<priority>1.0</priority>
 	</url>
-    <url>
-      <loc>https://nsosp.org/share/images/SN/s-geom-Konstrukt-Teilung-v02.pdf</loc>
-      <lastmod>2024-02-29</lastmod>
-      <priority>1.0</priority>
-    </url>
-    <url>
-      <loc>https://nsosp.org/share/images/SN/s-geom-Konstrukt-Wiederholung-v02.pdf</loc>
-      <lastmod>2024-02-29</lastmod>
-      <priority>1.0</priority>
-    </url>
 	<url>
 		<loc>https://nsosp.org/de/Superial-Zahlen/Literatur_de.php</loc>
 		<lastmod>2024-02-29</lastmod>
@@ -760,6 +750,21 @@
 		<lastmod>2024-02-29</lastmod>
 		<priority>1.0</priority>
 	</url>
+	<url>
+		<loc>https://nsosp.org/de/Superial-Zahlen/Arithmetische-Struktur-der-Geometrie.php</loc>
+		<lastmod>2024-02-29</lastmod>
+		<priority>1.0</priority>
+	</url>
+    <url>
+      <loc>https://nsosp.org/share/images/SN/s-geom-Konstrukt-Teilung-v02.pdf</loc>
+      <lastmod>2024-02-29</lastmod>
+      <priority>1.0</priority>
+    </url>
+    <url>
+      <loc>https://nsosp.org/share/images/SN/s-geom-Konstrukt-Wiederholung-v02.pdf</loc>
+      <lastmod>2024-02-29</lastmod>
+      <priority>1.0</priority>
+    </url>
 	<url>
 		<loc>https://nsosp.org/de/Superial-Zahlen/Ueberrationalitaetsvermutung.php</loc>
 		<lastmod>2024-02-29</lastmod>
