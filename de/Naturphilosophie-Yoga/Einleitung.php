@@ -864,14 +864,14 @@
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '(• Der Körper kann durch die Atmung gestimmt werden.)',
-                    '(• Wenn man das Gefühl hat, seinen Körper besser zu verstehen und ihn mit einem guten, sicheren Gefühl einsetzen zu können, dann geht das automatisch mit einer positiveren Psyche einher. Hieraus ergibt sich eine wichtige Verbindung zwischen der \\jump[][*Bearb]{OM:NPYo:Einleitung:ErkenneDichSelbst:Psyche}{Psyche} im vorherigen Kapitel und der Atmung.)',
-                    '(• Atmung ist Entwicklung, weil bei der Ausdehnung des Brustkorbs die Spiralbewegung drinne steckt.)',
-                    '(• Gesundheit und Immunsystem.)',
-                    '(• Verdauung: Die Atmung massiert die inneren Organe.)',
-                    '(• Inneres Bauchfett oder Schwellungen von Organen können die Atemspannung und die Oberkörperbalance stark behindern.)',
-                    '(• Was hat die Atmung und die Kopf-Stimmungsspannung mit dem Inneren Auge, dem Dritten Auge, zu tun?)',
-                    '(• Verbindung Bewusstsein und Unterbewusstsein.)',
+                    '• Der Körper kann durch die Atmung gestimmt werden.',
+                    '• Wenn man das Gefühl hat, seinen Körper besser zu verstehen und ihn mit einem guten, sicheren Gefühl einsetzen zu können, dann geht das automatisch mit einer positiveren Psyche einher. Hieraus ergibt sich eine wichtige Verbindung zwischen der \\jump[][*Bearb]{OM:NPYo:Einleitung:ErkenneDichSelbst:Psyche}{Psyche} im vorherigen Kapitel und der Atmung.',
+                    '• Atmung ist Entwicklung, weil bei der Ausdehnung des Brustkorbs die Spiralbewegung drinne steckt.',
+                    '• Gesundheit und Immunsystem.',
+                    '• Verdauung: Die Atmung massiert die inneren Organe.',
+                    '• Inneres Bauchfett oder Schwellungen von Organen können die Atemspannung und die Oberkörperbalance stark behindern.',
+                    '• Was hat die Atmung und die Kopf-Stimmungsspannung mit dem Inneren Auge, dem Dritten Auge, zu tun?',
+                    '• Verbindung Bewusstsein und Unterbewusstsein.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -887,12 +887,9 @@
                     'Die Atemübungen (Pranayama) sind seit jeher ein zentraler Bestandteil des Yoga.\\footnote{Internet: \\\\ Vgl. \\cite{wiki:Yoga:2016}.}'."\n".
                     'Dabei gilt der Atem (Prana) im Yoga als zentrale Lebenskraft und dient im Raja Yoga der Zusammenführung von Körper und Geist.\\footnote{Internet: \\\\ Vgl. \\cite{wiki:Prana:2016}, Prana im Yoga und im Hinduismus.}'."\n".
                     'Die Atemübungen werden zum Beispiel genutzt, um im Rahmen des \\jump{OM:NPYo:Einleitung:ErkenneDichSelbst}{Achtsamkeitsprozesses}'."\n".
-                    'die „Aufmerksamkeitsenergie“ durch den Körper zu lenken und so das beobachtende, fühlende Bewusstsein auf bestimmte Bereiche des Körpers zu konzentrieren.\\footnote{Internet: \\\\ Vgl. Video \\url{http://de.ashtangayoga.info/ashtangayoga/grundlagen/energie-bandha/}.}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'die „Aufmerksamkeitsenergie“ durch den Körper zu lenken und so das beobachtende, fühlende Bewusstsein auf bestimmte Bereiche des Körpers zu konzentrieren.\\footnote{Internet: \\\\ Vgl. Video \\url{http://de.ashtangayoga.info/ashtangayoga/grundlagen/energie-bandha/}.}'."\n",
+                      '\\color{*Bearb}{In Arbeit …}'."\n".
+                    ''))),
                       
                   // #!: Auch bei "Praxis: Atmung und Stimmung".
                   array( 'text', array( Shape => 'italic', text => array(
@@ -912,17 +909,9 @@
                     'Optimal ist, wenn diese sich gut gespannt und ausbalanciert anfühlt.'."\n".
                     'Über den Solarplexus und viele andere Nerven und physiologische Zusammenhänge ist die untere Innenfeder intensiv mit der'."\n".
                     '\\jump{OM:SpaLeb:Psyche-und-Stimmung}{Psyche und Stimmung} des Menschen verknüpft.'."\n".
-                    'Körperspannung und Psyche sind eine Art von \\jump{OM:SpaLeb:Koerperliche-und-seelische-Existenz:KoerperSpaPsycheSpiegelbilder}{Spiegelbilder} voneinander.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n"))),
+                    'Körperspannung und Psyche sind eine Art von \\jump{OM:SpaLeb:Koerperliche-und-seelische-Existenz:KoerperSpaPsycheSpiegelbilder}{Spiegelbilder} voneinander.'."\n",
+                      '\\color{*Bearb}{In Arbeit …}'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                     'Die gefundene Einsicht der Notwendigkeit der permanenten Atemspannung rechtfertigt es, die permanente Atemspannung mit nachhaltiger Übung und massivem Angang wieder herzustellen, sollte sie durch eine \\jump{OM:SpaLeb:Koerperspannung:Schonhaltung}{Bauch-Rücken-Schonhaltung} verlorengegangen sein.'."\n".
                     'Hierzu kommen aus meiner Sicht vor allem das \\jump{OM:NPYo:Einleitung:Atmung}{Yoga} oder die \\jump{OM:NPYo:Einleitung:Praxis-Atmung}{Praxis der Yoga-Atmung}, das Üben von Gesangstechniken\\color{*Bearb}{(Link)}, \\jump{OM:SpaLeb:Koerperspannung:AktivesSchlafen}{aktives Schlafen} und spezielle Sexpraktiken\\footnote{\\const{SpaLeb_g_footnote_text_AtemSpannungUndSex}} in Frage.'."\n".
@@ -1285,17 +1274,19 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '(• Ganz Ausatmen ist auch aus folgendem Grund wichtig: Wenn du einen Krug mit frischem Wasser füllen willst, dann würdest du doch auch nicht die Hälfte des alten Wassers drinne lassen.)',
-                    '(• Bei der Yoga-Atmung wird die Atemmuskulatur und damit die Oberkörperstabilität dadurch aktiviert, dass über eine bewusste völlige Ausatmung die ringförmige Bauchmuskulatur extrem angespannt sowie das Zwerchfell gedehnt wird und die Einatmung unbewusst über den Einatemreflex durch leichten Sauerstoffmangel von selbst kommen gelassen wird. Dies entspricht genau dem, was für die Behebung der \\jump[][*Bearb]{OM:SpaLeb:Psychosomatik-Stress:Problemloesungsansaetze}{psychosomatischen Probleme des Atmens} in meinen Augen Sinnvoll ist: Die Einatmung bewusst zu kontrollieren wäre hierbei kritisch, denn dies verführt dazu Magenschmerzen durch Stress mit der Lockerung der ringförmigen Bauchmuskulatur beim Einatmen zu beheben, anstatt durch die Dehnung und Entspannung des Zwerchfells, wie es bei bewusster extremer völliger Ausatmung geschieht.)',
-                    '(• Bei der Yoga-Atmung (und besonders bei der Gesangsatmung) scheint mir wichtig, das beim Einziehen des Bauchs nur die ringförmige Bauchmuskulatur an der Seite voll/stark angespannt ist und benutzt wird. Die glatte, senkrechte Bauchmuskulatur in der Mitte des Bauchs ist etwas locker aber federnd angespannt, um den Oberkörper zu balancieren oder beim Singen federnd zu schwingen. Damit das beim Einatmen so bleiben kann, und nicht die glatte auch angespannt wird, ist es wohl sehr Hilfreich, den Anus/Beckenboden (Mulabandha(Verweis)) leicht anzuziehen. Die ganze Einatmung bleibt der am stärksten eingezogene Punkt der Bauchnabel (Uddiyanabandha(Verweis)).)',
-                    '(• Wenn man beim Einatmen den Beckenboden (Anus etc.) leicht (auch mal stark) anzieht (Mulabandha(Verweis)) und den Bauch leicht einzieht (Uddiyanabandha(Verweis)), dann bekommt der Druck der Einatmung des Zwerchfells im Körper im Becken einen stabilen Sitz und kann sich nach oben hin abdrücken. Der angezogene Anus gibt dem Bauch mehr Lockerheit, weil man so den Druck im Körper besser kontrollieren und verteilen kann.)',
-                    '(• Einatmung von selber kommen lassen und so einen Wechsel zwischen bewusstem ganz Ausatmen und von unbewusster, Impuls gesteuerter Einatmung schaffen.)',
-                    '(• Oberkörperbalancespannung auf der Atemspannung erklären und so klar machen, dass der Sitz der Organe im Beckenboden zusammen mit der ringförmigen Bauchmuskulatur der Atemspannung im Stehen so stark sein muss, wie Bauch- und Rückenspannung und das Gewicht des Oberkörpers zusammen.)',
-                    '(• Diese dynamische Verteilung des Drucks im Oberkörber beim Einatmen hat Ähnlichkeit mit dem Gehen des Menschen. Ist die Atmung blockiert – im Widerstand – oder sie setzt aus, dann hat dies Ähnlichkeit mit dem Stehen des Menschen.)',
-                    '(• Der Bauchnabel bleibt permanent durch die ringförmige Bauchmuskulatur(Verweis) so weit eingezogen – und das kann gefühlt ziemlich weit sein, jenachdem in wie weit der Yogi-Anfänger seine Grundspannung im Bauch eingebüßt hat –, dass die Bauchspannung „einrastet“ und in einer angenehmen, fast lockeren Weise aufrechterhalten werden kann. Ist die Bauchspannung weitestgehend verloren gegangen, dann bedarf es einiger Zeit/Geduld und intensiver Übung, auch im Alltag, diese Grundspannung wieder zu aktivieren und zugägnglich zu machen. Beim Einatmen wird die permanente Bauchpannung weder gelockert noch massiv verstärkt. Sie wird wie eine gespannte, leicht flexible Feder benutzt, gegen die eingeatmet wird.)',
-                    '(• Würde man nur den Bauch einziehen, aber nicht den Anus anziehen, dann gibt es den Wurst-Einschnürungseffekt: In der Mitte wird die Wurst eingeschnürrt, aber an den beiden Enden bläht sie sich wabbelig auf. Das meint, der Anus kommt heraus und der Brustkorb dehnt sich. Erst, wenn man die eine Seite der Wurst in der Ausdehnung begrenzt, hier den Anus-Beckenboden mit Sitz in der Hüfte, dann bläht sich nur die andere Seite stabil auf, hier der Brustkorb.)',
-                    '(• Yoga-Atmung regelmäßig im Alltag!)',
-                    '(• Sich zu sehr im eigenen Widerstand spüren blockiert die Atmung!)',
+                    '• Mit Leichtigkeit atmen und sein:',
+                    '– Auch, wenn es eine gute Übung ist, mit rauschendem Geräusch zu atmen, mit der Ujjayi-Atmung – im leichten Widerstand –, so ist das Ziel am Ende doch die Leichtigkeit unserer Atmung und so auch unseres Seins. Dies ist auch beim Yoga praktizieren gut. Das bedeutet, im Leben, und so auch im Schlaf, öffnen wir den Kehlkopf weit mit aktivierter Muskulatur im Schulter-Nackenbereich. Dann kann unser Atem möglichst leicht und geräuschlos fließen, auch im Schlaf. Dabei sind die Räume im Kopf dann weit geöffnet – aktivierter \jump{OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler}{innerer Marionettenspieler} – und der \jump{OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler}{PC-Muskel} ist aktiviert. Dies hilf auch bei Schnarchen.',
+                    '• Ganz Ausatmen ist auch aus folgendem Grund wichtig: Wenn du einen Krug mit frischem Wasser füllen willst, dann würdest du doch auch nicht die Hälfte des alten Wassers drinne lassen.',
+                    '• Bei der Yoga-Atmung wird die Atemmuskulatur und damit die Oberkörperstabilität dadurch aktiviert, dass über eine bewusste völlige Ausatmung die ringförmige Bauchmuskulatur extrem angespannt sowie das Zwerchfell gedehnt wird und die Einatmung unbewusst über den Einatemreflex durch leichten Sauerstoffmangel von selbst kommen gelassen wird. Dies entspricht genau dem, was für die Behebung der \\jump[][*Bearb]{OM:SpaLeb:Psychosomatik-Stress:Problemloesungsansaetze}{psychosomatischen Probleme des Atmens} in meinen Augen Sinnvoll ist: Die Einatmung bewusst zu kontrollieren wäre hierbei kritisch, denn dies verführt dazu Magenschmerzen durch Stress mit der Lockerung der ringförmigen Bauchmuskulatur beim Einatmen zu beheben, anstatt durch die Dehnung und Entspannung des Zwerchfells, wie es bei bewusster extremer völliger Ausatmung geschieht.',
+                    '• Bei der Yoga-Atmung (und besonders bei der Gesangsatmung) scheint mir wichtig, das beim Einziehen des Bauchs nur die ringförmige Bauchmuskulatur an der Seite voll/stark angespannt ist und benutzt wird. Die glatte, senkrechte Bauchmuskulatur in der Mitte des Bauchs ist etwas locker aber federnd angespannt, um den Oberkörper zu balancieren oder beim Singen federnd zu schwingen. Damit das beim Einatmen so bleiben kann, und nicht die glatte auch angespannt wird, ist es wohl sehr Hilfreich, den Anus/Beckenboden (Mulabandha(Verweis)) leicht anzuziehen. Die ganze Einatmung bleibt der am stärksten eingezogene Punkt der Bauchnabel (Uddiyanabandha(Verweis)).',
+                    '• Wenn man beim Einatmen den Beckenboden (Anus etc.) leicht (auch mal stark) anzieht (Mulabandha(Verweis)) und den Bauch leicht einzieht (Uddiyanabandha(Verweis)), dann bekommt der Druck der Einatmung des Zwerchfells im Körper im Becken einen stabilen Sitz und kann sich nach oben hin abdrücken. Der angezogene Anus gibt dem Bauch mehr Lockerheit, weil man so den Druck im Körper besser kontrollieren und verteilen kann.',
+                    '• Einatmung von selber kommen lassen und so einen Wechsel zwischen bewusstem ganz Ausatmen und von unbewusster, Impuls gesteuerter Einatmung schaffen.',
+                    '• Oberkörperbalancespannung auf der Atemspannung erklären und so klar machen, dass der Sitz der Organe im Beckenboden zusammen mit der ringförmigen Bauchmuskulatur der Atemspannung im Stehen so stark sein muss, wie Bauch- und Rückenspannung und das Gewicht des Oberkörpers zusammen.',
+                    '• Diese dynamische Verteilung des Drucks im Oberkörber beim Einatmen hat Ähnlichkeit mit dem Gehen des Menschen. Ist die Atmung blockiert – im Widerstand – oder sie setzt aus, dann hat dies Ähnlichkeit mit dem Stehen des Menschen.',
+                    '• Der Bauchnabel bleibt permanent durch die ringförmige Bauchmuskulatur(Verweis) so weit eingezogen – und das kann gefühlt ziemlich weit sein, jenachdem in wie weit der Yogi-Anfänger seine Grundspannung im Bauch eingebüßt hat –, dass die Bauchspannung „einrastet“ und in einer angenehmen, fast lockeren Weise aufrechterhalten werden kann. Ist die Bauchspannung weitestgehend verloren gegangen, dann bedarf es einiger Zeit/Geduld und intensiver Übung, auch im Alltag, diese Grundspannung wieder zu aktivieren und zugägnglich zu machen. Beim Einatmen wird die permanente Bauchpannung weder gelockert noch massiv verstärkt. Sie wird wie eine gespannte, leicht flexible Feder benutzt, gegen die eingeatmet wird.',
+                    '• Würde man nur den Bauch einziehen, aber nicht den Anus anziehen, dann gibt es den Wurst-Einschnürungseffekt: In der Mitte wird die Wurst eingeschnürrt, aber an den beiden Enden bläht sie sich wabbelig auf. Das meint, der Anus kommt heraus und der Brustkorb dehnt sich. Erst, wenn man die eine Seite der Wurst in der Ausdehnung begrenzt, hier den Anus-Beckenboden mit Sitz in der Hüfte, dann bläht sich nur die andere Seite stabil auf, hier der Brustkorb.',
+                    '• Yoga-Atmung regelmäßig im Alltag!',
+                    '• Sich zu sehr im eigenen Widerstand spüren blockiert die Atmung!',
                     ))),
                       
                   // #!: Auch bei "Atmung und Stimmung".
