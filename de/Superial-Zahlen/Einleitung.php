@@ -44,10 +44,11 @@
                     'Formal gesprochen sind sie eine abelsche Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}} und'."\n".
                     'bezüglich der Addition und Multiplikation ein aktual unendlicher angeordneter algebraischer Körper\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}\footnote{\const{SupNum_g_footnote_text_AlgebraischerZahlkoerper}}.'."\n".
                     'Mit ihnen erweitern wir die rationalen Zahlen\footnote{\const{SupNum_g_footnote_text_RationaleZahl}}'."\n".
-                    'und durch den Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}'."\n".
-                    'sogar die Menge der Realanteile der algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
-                    'inklusive ihrer irrationalen Zahlen, wie irrationale Wurzeln, auf fraktale Weise ins Aktual-Unendliche.'."\n".
-                    'So geben wir der aktualen Unendlichkeit eine facettenreiche fundamentale fraktale Struktur.'."\n",
+                    'und durch den Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung},'."\n".
+                    'sowie durch auf ihm aufbauende Beweise,'."\n".
+                    'sogar die Menge der Radikale der algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
+                    'inklusive aller Ausdrücke der irrationalen Wurzeln, die durch die Grundrechenarten entstehen, auf fraktale Weise ins Aktual-Unendliche.'."\n".
+                    'So geben wir der aktualen Unendlichkeit eine facettenreiche und der \jump{OM:SupNum:Struktur-Geometrie}{Geometrie eine fundamentale arithmetische und fraktale Struktur}.'."\n",
                       'Mit den Superial-Zahlen kommen wir in die Lage aktual unendlich kleine Differenzen zu bilden,'."\n".
                     'mit denen wir, bis ins aktual unendlich kleine, präzise Ableitungen beschreiben und berechnen können, ohne den Limes zu benutzen.'."\n",
                       'Auch können wir Integrale mit wohldefinierten aktual unendlich kleinen Zählschritten beschreiben,'."\n".
