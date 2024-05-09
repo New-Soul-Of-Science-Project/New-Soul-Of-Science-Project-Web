@@ -153,7 +153,7 @@
                       array( display => 'on',  latex => '{  \rho  =  3^{x}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wenden wir die Dreiteilungen dann auch noch auf die Halbierungen an, dann schöpfen wir zwei weitere Punkte,'."\n".
+                    'Wenden wir die Dreiteilungen dann auch noch auf die Strecken der Halbierungen an, dann schöpfen wir zwei weitere Punkte,'."\n".
                     'die wir noch nicht erreicht hatten, nämlich \lm{ \frac{ 1 }{ 6 } } und \lm{ \frac{ 5 }{ 6 } },'."\n".
                     'die restlichen drei, \lm{ \frac{ 2 }{ 6 } = \frac{ 1 }{ 3 } }, \lm{ \frac{ 3 }{ 6 } = \frac{ 1 }{ 2 } } und \lm{ \frac{ 4 }{ 6 } = \frac{ 2 }{ 3 } }'."\n".
                     'hatten wir nämlich schon.'."\n".
@@ -167,30 +167,42 @@
                     ))),
                   array( 'text', array( text => array(
                     'Hierbei sind die Fraktalebenen \lm{ x_{i} } frei in ihrer Kombination.'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                      'Zählen wir nun, wie oben von der Zwei zur Drei, jetzt von der Drei zur Vier weiter und legen diese vier Teilstrecken'."\n".
+                    'wieder zwischen die Eins, dann erkennen wir, wie bei der Zwei, dass wir die Vierteilung, die 16-Teilung und so fort'."\n".
+                    'auch schon haben.'."\n",
+                      'Das Zählen zur Fünf führt uns dann zur Fünfteilung zwischen der Null und Eins, wodurch die Primzahl Fünf uns'."\n".
+                    'nun sämtlich neue Punkte zwischen der Null und der Eins bringt.'."\n".
+                    'Auch die Kombination der Fünf mit den vorherigen Primzahlen Zwei und Drei bringt uns teils neue Punkte:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n  =  2^{x_{2}} \cdot 3^{x_{3}} \cdot 5^{x_{5}} + 1  }'),
+                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{x_{2}} \cdot 3^{x_{3}} \cdot 5^{x_{5}} }  =  2^{-x_{2}} \cdot 3^{-x_{3}} \cdot 5^{-x_{5}}  }'),
+                      array( display => 'on',  latex => '{  \rho  =  2^{x_{2}} \cdot 3^{x_{3}} \cdot 5^{x_{5}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'So geht es nun immer weiter.'."\n",
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Das komplette Netzwerk aller ganzen Primzahlpotenzen aufspannen} \\\\'."\n".
+                  '\condb{Das komplette Raster oder Netzwerk aller ganzen negativen Primzahlpotenzen aufspannen} \\\\'."\n".
+                    'Die Sechs und ihre Sechsteilung haben wir schon komplett durch die Zwei-/Dreiteilung.'."\n".
+                    'Die Sieben ist wieder eine neue Primzahl, die auch wieder mit allen vorherigen kombiniert werden kann.'."\n".
+                    'Die Acht, die Neun und die Zehn haben wir schon durch die Zwei, Drei und Fünf.'."\n".
+                    'Die Elf ist dann wieder eine neue Primzahl.'."\n".
                     'Dieses Vorgehen können wir nun immer weiter treiben:'."\n".
-                    'Strecke wieder um Eins verlängern und durch skalieren überprüfen, ob wir eine neue Primzahl gefunden haben.'."\n".
-                    'Dann auch von der ersten Strecke an in die andere Richtung ins Negative immer weiter verlängern.'."\n",
-                      'In der negativen Richtung erhalten wir die selben Primzahlen.'."\n".
-                    'Die Struktur des Netzes verändert sich nicht mehr.'."\n".
+                    'Strecke wieder um Eins verlängern und durch skalieren überprüfen, ob wir eine neue Primzahl gefunden haben.'."\n",
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Alle Strecken der natürlich Zahlen und dann der ganzen Zahlen vernetzen} \\\\'."\n".
+                    'Diese feine Unterteilung können wir jetzt zwischen je zwei benachbarte Zahlen legen und das Ganze'."\n".
+                    'dann auch von der ersten Strecke an in die andere negative Richtung immer weiter verlängern.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
                 'Immer noch Lückenhaft', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Das geometrische Netzgewebe besteht nun aus den Abständen der Punkte, wobei letzte die Knoten oder Stützen des Gewebes sind.'."\n".
+                    'XXX Das geometrische Netzgewebe besteht nun aus den Abständen der Punkte, wobei letzte die Knoten oder Stützen des Gewebes sind.'."\n".
                     'Es ist also klar, dass dieses Gewebe im Hinblick auf seine Stützpunkte immer Lücken haben wird, selbst dann, wenn die Lücken aktual unendlich klein werden.'."\n".
                     'Wir können aber vielleicht davon sprechen, dass ein solches Gewebe dann im Endlichen keine Lücken mehr hat.'."\n",
                       'XXX Nehmen wir diese Teilungen der Strecken nur endlich oft vor,'."\n".
