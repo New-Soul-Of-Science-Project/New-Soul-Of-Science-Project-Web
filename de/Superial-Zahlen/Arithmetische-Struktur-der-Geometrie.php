@@ -147,7 +147,7 @@
                     'dann entstehen tiefere fraktale Dreiteilungen, die sich durch Formeln so ausdrücken lassen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  3^{x} + 1  }'),
                       array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 3^{x} }  =  3^{-x}  }'),
                       array( display => 'on',  latex => '{  \rho  =  3^{x}  }'),
@@ -160,7 +160,7 @@
                     'Es ergibt sich:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  2^{x_{2}} \cdot 3^{x_{3}} + 1  }'),
                       array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{x_{2}} \cdot 3^{x_{3}} }  =  2^{-x_{2}} \cdot 3^{-x_{3}}  }'),
                       array( display => 'on',  latex => '{  \rho  =  2^{x_{2}} \cdot 3^{x_{3}}  }'),
@@ -175,7 +175,7 @@
                     'Auch die Kombination der Fünf mit den vorherigen Primzahlen Zwei und Drei bringt uns teils neue Punkte:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  2^{x_{2}} \cdot 3^{x_{3}} \cdot 5^{x_{5}} + 1  }'),
                       array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{x_{2}} \cdot 3^{x_{3}} \cdot 5^{x_{5}} }  =  2^{-x_{2}} \cdot 3^{-x_{3}} \cdot 5^{-x_{5}}  }'),
                       array( display => 'on',  latex => '{  \rho  =  2^{x_{2}} \cdot 3^{x_{3}} \cdot 5^{x_{5}}  }'),
@@ -190,35 +190,55 @@
                     'Die Acht, die Neun und die Zehn haben wir schon durch die Zwei, Drei und Fünf.'."\n".
                     'Die Elf ist dann wieder eine neue Primzahl.'."\n".
                     'Dieses Vorgehen können wir nun immer weiter treiben:'."\n".
-                    'Strecke wieder um Eins verlängern und durch skalieren überprüfen, ob wir eine neue Primzahl gefunden haben.'."\n",
+                    'Strecke wieder um Eins verlängern und durch skalieren überprüfen, ob wir eine neue Primzahl gefunden haben:'."\n",
                     ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) + 1  *]  }'),
+                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} }  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}}  }'),
+                      array( display => 'on',  latex => '{  \rho  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}}  }'),
+                    ))),
                   array( 'text', array( text => array(
                   '\condb{Alle Strecken der natürlich Zahlen und dann der ganzen Zahlen vernetzen} \\\\'."\n".
-                    'Diese feine Unterteilung können wir jetzt zwischen je zwei benachbarte Zahlen legen und das Ganze'."\n".
-                    'dann auch von der ersten Strecke an in die andere negative Richtung immer weiter verlängern.'."\n".
+                    'Diese feine Unterteilung können wir jetzt zwischen je zwei benachbarte Zahlen legen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) \cdot ω  *]  }'),
+                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} }  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}}  }'),
+                      array( display => 'on',  latex => '{  \rho  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und das Ganze dann auch von der ersten Strecke an in die andere negative Richtung immer weiter verlängern'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) \cdot 2 ω  *]  \;\;  .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der Abschlusspunkt fällt auf diese Weise bei \lm{ n } weg, weil die Zahl der Teilstrecken nicht endet.'."\n".
+                    'Der Abstand \lm{ d } und die Dichte \lm{ \rho } verändern sich gar nicht dadurch.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
                 'Immer noch Lückenhaft', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX Das geometrische Netzgewebe besteht nun aus den Abständen der Punkte, wobei letzte die Knoten oder Stützen des Gewebes sind.'."\n".
-                    'Es ist also klar, dass dieses Gewebe im Hinblick auf seine Stützpunkte immer Lücken haben wird, selbst dann, wenn die Lücken aktual unendlich klein werden.'."\n".
-                    'Wir können aber vielleicht davon sprechen, dass ein solches Gewebe dann im Endlichen keine Lücken mehr hat.'."\n",
-                      'XXX Nehmen wir diese Teilungen der Strecken nur endlich oft vor,'."\n".
+                    'Das geometrische Netzgewebe besteht nun aus den Abständen der Punkte, wobei die Punkte die Knoten oder Stützen des Gewebes sind.'."\n",
+                      'Nehmen wir diese Teilungen der Strecken für jede der endlichen Primzahlen nur endlich oft vor,'."\n".
                     'dann haben wir immer noch Lücken endlicher Größe.'."\n",
-                      'Wie können wir aber die Lücken schließen?'."\n".
+                      'Wie können wir aber die Lücken so schließen, dass sie keine endliche Größe mehr haben?'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
                                            
                 'Übergang ins Unendliche', subline =>
-                  '')),
+                  'Die vollständige Induktion der Teilungen')),
                   array( 'text', array( text => array(
                     'Erst, wenn wir die Teilung der Strecken bis ins Unendliche treiben,'."\n".
                     'bleiben keine endlichen Lücken übrig.'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                      'Für das Beispiel der Zweiteilung beziehungsweise Halbierung erhalten wir folgende Formeln,'."\n".
+                    'wenn wir die Teilung bis in die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    '\lm{ ω } vorantreiben:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -227,6 +247,84 @@
                       array( display => 'on',  latex => '{  \rho  =  2^{ω}  }'),
                     ))),
                   array( 'text', array( text => array(
+                    'So erhalten wir zwar schon eine unendliche Dichte, aber wie wir oben gesehen haben'."\n".
+                    'sind hier ganz viele Teilungen noch nicht enthalten.'."\n".
+                    'Als Beispiele erreichen wir so die Punkte \lm{ \frac{ 1 }{ 3 } } und \lm{ \frac{ 2 }{ 3 } } nicht,'."\n".
+                    'die zu den rationalen Zahlen gehören.'."\n".
+                    'Ein aktual unendlich kleiner Abstand zwischen den Punkten reicht offenbar nicht aus,'."\n".
+                    'um alle endlich zu beschreibenden Punkte zu erreichen.'."\n",
+                      'Nehmen wir die Teilungen der Strecke zwischen Null und Eins für auch nur eine der endlichen Primzahlen'."\n".
+                    'gar nicht oder nur endlich oft vor, dann haben wir Lücken im Endlichen,'."\n".
+                    'die nur einen aktual unendlich kleinen Abstand aufweisen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Das aktual unendlich dichte Raster oder Netzwerk aller ganzen negativen Primzahlpotenzen aufspannen} \\\\'."\n".
+                    'So müssen wir also die Teilung mit allen endlichen Primzahlen bis in die vollständige Induktion'."\n".
+                    'vorantreiben:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω} + 1  }'),
+                      array( display => 'on',  latex => '{  d  =  *( \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} } *)^{ω}  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω}  }'),
+                      array( display => 'on',  latex => '{  \rho  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω}  \;\;  .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'So gibt es nun zwischen Null und Eins keine rationalen Zahlen mehr,'."\n".
+                    'die von dem sich ergebenden Raster oder Netzgewebe nicht geschöpft werden.'."\n",
+                      'Nun erweitern wir dieses Gewebe wieder auf alle ganzen Zahlen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω} \cdot 2 ω  \;\;  .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auch hier fällt der Abschlusspunkt \lm{ n } wieder weg, weil die Zahl der Teilstrecken nicht endet.'."\n".
+                    'Der Abstand \lm{ d } und die Dichte \lm{ \rho } verändern sich auch wieder gar nicht dadurch.'."\n",
+                      'Können wir nun davon sprechen, dass ein solches Gewebe dann im Endlichen keine Lücken mehr hat?'."\n",
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                                           
+                'Irrationale algebraische Zahlen', subline =>
+                  'Gibt es noch Lücken im Gewebe?')),
+                  array( 'text', array( text => array(
+                    'Wir kennen in der Arithmetik mit den vier Grundrechenarten und dem Ziehen ganzer Wurzeln,'."\n".
+                    'inklusive dem Integrieren, noch die irrationalen algebraischen Zahlen, die allesamt mögliche Lösungen'."\n".
+                    'der Nullstellen von Polynomen darstellen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Sind Zahlen, wie die zweite Wurzel aus Zwei \lm{ \sqrt{2} }, im Raster enthalten?} \\\\'."\n".
+                    'Unser Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} zeigt,'."\n".
+                    'das die Radikale der irrationalen algebraischen Zahlen bereits im Raster enthalten sind.'."\n",
+                      'Die Radikale der irrationalen algebraischen Zahlen sind alle irrationalen algebraischen Zahlen,'."\n".
+                    'die durch die vier Grundrechenarten und dem Ziehen ganzer Wurzeln ausgedrückt werden können.'."\n".
+                    'Nur für solche irrationalen algebraischen Zahlen, die dann noch durch Integration'."\n".
+                    'der Radikale der irrationalen algebraischen Zahlen entstehen, konnten wir noch nicht sicher Beweisen,'."\n".
+                    'dass sie auf dem Raster liegen, obwohl es naheliegend ist.'."\n",
+                      'Dies liegt daran, dass wir \jump{OM:SupNum:Ableitungen-Integrale}{die Ableitung und das Integral} mit Hilfe der Superial-Zahlen'."\n".
+                    'anders definieren, als bisher mit dem Limes üblich, und dadurch aktual unendlich kleine Summanden'."\n".
+                    'in die Integration bekommen, die sich an dieser Stelle dann zu Null summieren müssen,'."\n".
+                    'um rein endlich zu sein.'."\n".
+                    'Durch die aktual unendlich kleinen Summanden haben wir mehr Genauigkeit zu berücksichtigen,'."\n".
+                    'erreichen aber auch eine höhere Güte.'."\n",
+                      'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                                           
+                'XXX', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      'XXX Es ist also klar, dass dieses Gewebe im Hinblick auf seine Stützpunkte immer Lücken haben wird, selbst dann, wenn die Lücken aktual unendlich klein werden.'."\n".
+                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -240,37 +338,6 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
-                                           
-                'Irrationale algebraische Zahlen, wie die zweite Wurzel aus Zwei – \lm{ \sqrt{2} }', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  =  2^{ \frac{ 1 }{ 2 } } + 1  }'),
-                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{ \frac{ 1 }{ 2 } } }  =  2^{ -\frac{ 1 }{ 2 } }   }'),
-                      array( display => 'on',  latex => '{  \rho  =  2^{ \frac{ 1 }{ 2 } }  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
-                                           
-                'XXX', subline =>
-                  '')),
-                  array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
