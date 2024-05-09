@@ -69,47 +69,113 @@
                 'Ist die Geometrie im Grunde fraktal?', subline =>
                   'Weben oder Netzwerken')),
                   array( 'text', array( text => array(
-                    'Wir können uns zwei Punkte denken, die nicht aneinander – also nicht aufeinander – liegen und so eine Richtung vorgeben.'."\n".
-                    'Nun beginnen wir ein Netz von Punkten zu „weben“, indem wir zwischen beide'."\n".
-                    'Punkte, genau in der Mitte, einen weiteren Punkt legen und haben nun drei Punkte in der selben Richtung auf einer Linie.'."\n",
-                      'So fahren wir fort und legen jeweils zwischen zwei benachbarte Punkte einen weiteren'."\n".
+                    'Wir können uns zwei Punkte denken, die nicht aneinander – also nicht aufeinander – liegen,'."\n".
+                    'darum einen Abstand haben und so auch eine Richtung vorgeben, wenn wir sie mit Null und Eins bezeichnen.'."\n",
+                      'Nun beginnen wir ein Netz von Punkten zu „weben“, indem wir zwischen beide'."\n".
+                    'Punkte, genau in der Mitte, einen weiteren Punkt legen und haben nun drei Punkte in der selben Richtung auf einer Linie.'."\n".
+                    'So fahren wir fort und legen jeweils zwischen zwei benachbarte Punkte einen weiteren'."\n".
                     'in die Mitte.'."\n".
                     'Hierdurch wird das Gewebe zwischen unseren Ausgangspunkten immer dichter gewebt und'."\n".
-                    'wir spannen ein Netz von Punkten auf, wodurch wir immer mehr Punkte auf einer Strecke erhalten.'."\n".
+                    'wir spannen ein Netz von Punkten auf, wodurch wir immer mehr Punkte auf der Strecke zwischen Null und Eins erhalten.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Selbstähnlichkeit} \\\\'."\n".
+                  '\cond{Die Auflösung des Inneren} \\\\'."\n".
                     'Weil wir immer wieder das gleiche tun, ergibt sich eine fraktale, also selbstähnliche, Netzstruktur.'."\n",
-                      'Die Anzahl \lm{ n }, die Dichte \lm{ \rho } und der Abstand \lm{ d } der Punkte auf Strecke berechnen sich mit der Fraktalebene \lm{ x } zu:'."\n".
+                      'Die gesamte Anzahl der Punkte \lm{ n }, ihre Dichte, als auch die Anzahl der Teilstrecken, \lm{ \rho } und'."\n".
+                    'ihr Abstand \lm{ d } berechnen sich mit der Fraktalebene \lm{ x } zu:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.EinEntw', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  2^{x} + 1  }'),
                       array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{x} }  =  2^{-x}  }'),
                       array( display => 'on',  latex => '{  \rho  =  2^{x}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'Nun können wir zwei solcher Strecken in der Richtung der Ausgangspunkte so aneinander'."\n".
-                    'legen, dass der Endpunkt der ersten Strecke auf dem Anfangspunkt der zweiten liegt.'."\n".
-                    'Nehmen wir diese doppelte Strecke und skalieren sie probehalber zwischen die erste Strecke,'."\n".
-                    'dann liegen alle Punkte aufeinander.'."\n".
-                    'Beide Punktmengen sind von der Struktur her gleich, weil durch das halbieren und verdoppeln'."\n".
+                    'Die Punktanzahl \lm{ n } ist dabei immer einer mehr als die Anzahl der Teilstrecken,'."\n".
+                    'weil die Punkte ja die Teilstrecken begrenzen und daher ein zusätzlicher Punkt den Beginn oder den Abschluss'."\n".
+                    'bilden muss, jenachdem, wie wir drauf schauen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Das Zählen} \\\\'."\n".
+                  '\cond{Die Erweiterung nach außen, die nach innen zurück wirkt} \\\\'."\n".
+                    'Beginnen wir noch einmal von vorne mit den Punkten Null und Eins.'."\n",
+                      'Verdoppeln wir diese beiden Punkte und verschieben den Punkt Null so auf die Eins, dass sich'."\n".
+                    'die Länge und Richtung der Verbindungsstrecke der neuen Punkte nicht verändert, dann schöpfen wir so den Punkt Zwei.'."\n".
+                    'Dies kommt, weil nun der verschobene Punkt der vorherigen Eins jetzt die Zwei bildet.'."\n".
+                    'Wir zählen damit also einen Punkt weiter zum Großen hin.'."\n",
+                      'Wobei wir übrigens auch sehen, dass zwei aufeinander gelegte geometrische Punkte miteinander verschmelzen und zu einem werden,'."\n".
+                    'wie dies hier mit dem verdoppelten Nullpunkt geschieht, der nun auf der Eins liegt.'."\n".
+                    'Denn wir aber nun drei Punkte erhalten, die Null, die Eins und die Zwei, anstatt vier, wie naiv zu erwarten.'."\n".
+                    'Genau das war ja eingangs unser fundamentales Problem, das wir mit den Abständen und der fraktalen Befüllung der Lücken überwinden.'."\n".
+                    'Es zählen eben nur die Dinge, die wir unterscheiden können.'."\n".
+                    ''))),
+                      
+                  // #!: Auch auf der NSOSP-Seite! (OM:nSOSp:Home)
+                  // #!: Auch auf der ›Spannungsspiel des Lebens‹ Seite! (OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik)
+                  // #!: Auch auf der „Naturphilosophie der Zeit“ Seite! (OM:NPT:Home)
+                  // #!: Auch auf der „Die arithmetische Struktur der Geometrie“ Seite! (OM:SupNum:Struktur-Geometrie)
+                  array( 'text', array( Shape => 'italic', text => array(
+                        'Mathematik beginnt dort, \\\\ '."\n".
+                        'wo wir das Eine vom Anderen unterscheiden können. \\\\ '."\n".
+                        '\\small{\\color{*TitleAdd}{Ab da zählt alles.}}'."\n".
+                        ''),
+                        addtext => '')),
+                      
+                  array( 'text', array( text => array(
+                    'Nehmen wir die entstandene Struktur und verkleinern sie gleichmäßig so, dass sie zwischen die Null'."\n".
+                    'und die Eins passt, dann erkennen wir, dass der mittlere Punkt die Strecke zwischen der Null und der Eins'."\n".
+                    'genau so teilt, wie wir dies Eingangs schon hatten – sie wird halbiert.'."\n".
+                    'Wir erhalten auch bei wiederholter Anwendung mit weiterer Verkleinerung und damit, diese immer wieder'."\n".
+                    'zwischen die Teilstrecken zu legen, keine Punkte, die wir nicht oben bei der Halbierung schon hatten.'."\n".
+                    'Beide Punktmengen sind von ihrer fraktalen Struktur her gleich, weil durch das halbieren und verdoppeln'."\n".
                     'in beiden die reinen Potenzen von Zwei stecken.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Erweiterung} \\\\'."\n".
-                    'Verlängern wir die doppelte Strecke weiter auf die dreifache und skalieren diese'."\n".
-                    'wieder probehalber auf die erste Strecke, dann liegen nur die Anfangs- und Endpunkte aufeinander.'."\n".
-                    'Die restlichen Punkte decken sich nicht.'."\n",
-                      'Wir haben die nächste Primzahl nach der Zwei entdeckt, die ein neues Netzwerk oder Raster erzeugt.'."\n".
+                  '\condb{Neue Teilungen durch weitere Primzahlen} \\\\'."\n".
+                    'Machen wir nun bei der Strecke Null, Eins und Zwei weiter und verlängern diese um einen weiteren Punkt,'."\n".
+                    'wie zuvor, dann erhalten wir den Punkt Drei.'."\n",
+                      'Wenn wir nun diese neue Struktur aus vier Punkten verkleinern und zwischen die Null und die Eins legen,'."\n".
+                    'dann erhalten wir eine Teilung, die ganz neue Punkte enthält.'."\n".
+                    'Nur die auf der Null und der Eins fallen beide Punkte zusammen.'."\n".
+                    'Alle anderen Punkte zwischen Null und Eins sind nicht doppelt, weil sie nicht auf die Punkte fallen,'."\n".
+                    'die durch die Halbierung beziehungsweise durch die Verkleinerung der Zweierstruktur auf die Strecke'."\n".
+                    'von der Null bis zur Eins entstanden waren.'."\n",
+                      'Wir haben mit der Drei die nächste Primzahl nach der Zwei entdeckt, die ein neues Netzwerk oder Raster erzeugt.'."\n".
                     'Auch dieses ist wieder in Bezug auf die Potenzen der Drei selbstähnlich.'."\n".
+                    'Denn wenden wir das gleiche Vorgehen wieder auf die durch die Dreiteilung entstandenen Teilstrecken an,'."\n".
+                    'dann entstehen tiefere fraktale Dreiteilungen, die sich durch Formeln so ausdrücken lassen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n  =  3^{x} + 1  }'),
+                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 3^{x} }  =  3^{-x}  }'),
+                      array( display => 'on',  latex => '{  \rho  =  3^{x}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wenden wir die Dreiteilungen dann auch noch auf die Halbierungen an, dann schöpfen wir zwei weitere Punkte,'."\n".
+                    'die wir noch nicht erreicht hatten, nämlich \lm{ \frac{ 1 }{ 6 } } und \lm{ \frac{ 5 }{ 6 } },'."\n".
+                    'die restlichen drei, \lm{ \frac{ 2 }{ 6 } = \frac{ 1 }{ 3 } }, \lm{ \frac{ 3 }{ 6 } = \frac{ 1 }{ 2 } } und \lm{ \frac{ 4 }{ 6 } = \frac{ 2 }{ 3 } }'."\n".
+                    'hatten wir nämlich schon.'."\n".
+                    'Es ergibt sich:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n  =  2^{x_{2}} \cdot 3^{x_{3}} + 1  }'),
+                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{x_{2}} \cdot 3^{x_{3}} }  =  2^{-x_{2}} \cdot 3^{-x_{3}}  }'),
+                      array( display => 'on',  latex => '{  \rho  =  2^{x_{2}} \cdot 3^{x_{3}}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hierbei sind die Fraktalebenen \lm{ x_{i} } frei in ihrer Kombination.'."\n",
+                      'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Das komplette Netzwerk aller ganzen Primzahlpotenzen aufspannen} \\\\'."\n".
@@ -143,10 +209,10 @@
                     'XXX'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.EinEntw', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  =  2^{\omega} + 1  }'),
-                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{\omega} }  =  2^{-\omega}  }'),
-                      array( display => 'on',  latex => '{  \rho  =  2^{\omega}  }'),
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n  =  2^{ω} + 1  }'),
+                      array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{ω} }  =  2^{-ω}  }'),
+                      array( display => 'on',  latex => '{  \rho  =  2^{ω}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'XXX'."\n".
@@ -177,7 +243,7 @@
                     'XXX'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.EinEntw', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  2^{ \frac{ 1 }{ 2 } } + 1  }'),
                       array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{ \frac{ 1 }{ 2 } } }  =  2^{ -\frac{ 1 }{ 2 } }   }'),
                       array( display => 'on',  latex => '{  \rho  =  2^{ \frac{ 1 }{ 2 } }  }'),
