@@ -293,21 +293,53 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Sind Zahlen, wie die zweite Wurzel aus Zwei \lm{ \sqrt{2} }, im Raster enthalten?} \\\\'."\n".
-                    'Unser Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} zeigt,'."\n".
-                    'das die Radikale der irrationalen algebraischen Zahlen bereits im Raster enthalten sind.'."\n",
-                      'Die Radikale der irrationalen algebraischen Zahlen sind alle irrationalen algebraischen Zahlen,'."\n".
-                    'die durch die vier Grundrechenarten und dem Ziehen ganzer Wurzeln ausgedrückt werden können.'."\n".
-                    'Nur für solche irrationalen algebraischen Zahlen, die dann noch durch Integration'."\n".
-                    'der Radikale der irrationalen algebraischen Zahlen entstehen, konnten wir noch nicht sicher Beweisen,'."\n".
-                    'dass sie auf dem Raster liegen, obwohl es naheliegend ist.'."\n",
+                    'Unser Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}'."\n".
+                    'mit den auf ihm aufbauenden, nachfolgenden Beweisen\color{*Bearb}{(Link)} zeigt,'."\n".
+                    'dass die Radikale der irrationalen algebraischen Zahlen bereits im Raster enthalten sind.'."\n",
+                      'Die Radikale der irrationalen algebraischen Zahlen sind die irrationalen algebraischen Zahlen,'."\n".
+                    'die durch die vier Grundrechenarten und dem Ziehen ganzer Wurzeln ausgedrückt werden können.'."\n",
+                      'Nur für solche irrationalen algebraischen Zahlen, die dann noch durch Integration'."\n".
+                    'von Radikalen der irrationalen algebraischen Zahlen entstehen, konnten wir noch nicht Beweisen,'."\n".
+                    'dass sie auf dem Raster liegen, obwohl es naheliegend und daher zu vermuten ist.'."\n",
                       'Dies liegt daran, dass wir \jump{OM:SupNum:Ableitungen-Integrale}{die Ableitung und das Integral} mit Hilfe der Superial-Zahlen'."\n".
                     'anders definieren, als bisher mit dem Limes üblich, und dadurch aktual unendlich kleine Summanden'."\n".
                     'in die Integration bekommen, die sich an dieser Stelle dann zu Null summieren müssen,'."\n".
-                    'um rein endlich zu sein.'."\n".
-                    'Durch die aktual unendlich kleinen Summanden haben wir mehr Genauigkeit zu berücksichtigen,'."\n".
-                    'erreichen aber auch eine höhere Güte.'."\n",
+                    'um im Ergebnis rein endlich zu sein.'."\n".
+                    'Durch die aktual unendlich kleinen Summanden haben wir mehr Genauigkeit zu berücksichtigen und'."\n".
+                    'erreichen so auch eine höhere Güte.'."\n".
+                    'Dadurch wird der Beweis aber auch schwieriger zu führen, was ihn bisher verhindert.'."\n",
+                      'Warum ist nun zum Beispiel die zweite Wurzel aus Zwei \lm{ \sqrt{2} } schon ein Punkt des Rasters?'."\n",
+                      'Dies kommt nach dem Beweis durch den Übergang der Potenz ins ganzzahlige Aktual-Unendliche.'."\n".
+                    'Er zeigt, dass die Wurzel aus Zwei erst mit aktual unendlich großem Nenner und Zähler'."\n".
+                    'als Bruch aus ganzen Zahlen dargestellt werden kann:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sqrt{2}  =  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω} \cdot 2^{\frac{ 1 }{ 2 }} }{ 2^{ω} }  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-2-hoch-omega-mal-Wurzel-Zwei-durch-2-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dieser Zusammenhang erscheint auf den ersten Blick möglicherweise eher banal.'."\n".
+                    'Denn der Faktor \lm{ 2^{ω} } ist offensichtlich sowohl im Nenner als auch im Zähler des Bruchs vorhanden und'."\n".
+                    'könnte deshalb natürlich direkt gekürzt werden.'."\n".
+                    'Womit wir auch sofort erkennen, dass die Formel wahr ist.'."\n",
+                      'Was macht die Formel dann so besonders?'."\n",
+                      'Bei genauer Betrachtung ist das Besondere, dass nur in einer solchen Form auch der Zähler zu einer ganzen Zahl wird.'."\n".
+                    'Denn der dem Beweis zugrunde liegende Widerspruchsbeweis, der zeigt, dass kein Bruch aus endlichem Nenner und Zähler'."\n".
+                    'die Wurzel aus Zwei darstellen kann, offenbart eine Konstruktionsanweisung, wie ein Bruch aus ganzen Zahlen'."\n".
+                    'beschaffen sein muss, der diese Zahl darstellen kann:'."\n",
+                      'Der Bruch muss beliebig endlich häufig mit Zwei zu kürzen sein.'."\n".
+                    'Was bedeutet, dass sowohl der Nenner als auch der Zähler aktual unendlich groß sein müssen.'."\n".
+                    'Der gefundene Bruch hat einen aktual unendlich großen ganzzahligen Nenner und ist offensichtlich wahr.'."\n".
+                    'Und er ist beliebig endlich oft mit Zwei zu kürzen.'."\n".
+                    'Bleibt die Frage, ob auch der Zähler eine aktual unendlich große ganze Zahl sein kann.'."\n".
+                    'Und dies ist mit einem klaren Ja zu beantworten.'."\n",
+                      'Der Faktor \lm{ 2^{ω} } ist so groß – eben aktual unendlich groß –, ganzzahlig und so strukturiert,'."\n".
+                    'dass er aus jeder rational gebrochenen Potenz von Zwei eine ganze Zahl macht.'."\n".
+                    'Das ist die Besonderheit dieses Bruchs, die sofort unsichtbar wird, wenn wir einfach komplett kürzen.'."\n".
+                    'Sein Geheimnis wird erst offenbar, wenn wir seine Entstehungsgeschichte verstehen und'."\n".
+                    'damit seine Bedeutung entschlüsseln und so erkennen.'."\n",
                       'XXX'."\n".
-                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".

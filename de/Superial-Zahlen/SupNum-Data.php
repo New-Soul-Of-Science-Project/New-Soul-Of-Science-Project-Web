@@ -273,7 +273,7 @@
       keywords => '',
       text_titel_h1 => 'Die arithmetische Struktur der Geometrie',
       text_titel_short => 'Die arithmetische Struktur der Geometrie',
-      text_undertitel_h2 => 'Ein Fraktal aus Primzahlteilen',
+      text_undertitel_h2 => 'Ein aktual unendliches Fraktal aus Primzahlteilen führt uns zur superialen Basis \lm{ \s }',
       text_titel_discr_h3 => '',
       jump_ary => array(
         'OM:SupNum:Struktur-Geometrie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
@@ -300,6 +300,7 @@
         'OM:SupNum:Ueberrationalitaetsvermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Zwei-mal-b-Quadrat-gleich-a-Quadrat' => array( headline_text => 'SN.ÜV.11'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-2-hoch-omega-mal-Wurzel-Zwei-durch-2-hoch-omega' => array( headline_text => 'SN.ÜV.35'),
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-te-Wurzel-x-ist-a-durch-b-im-Endlichen' => array( headline_text => 'SN.ÜV.51'),
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-von-m' => array( headline_text => 'SN.ÜV.54'),
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-ist-x-te-Potenz-der-Primfak-von-m' => array( headline_text => 'SN.ÜV.60'),
