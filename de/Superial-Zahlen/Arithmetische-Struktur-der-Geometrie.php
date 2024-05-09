@@ -333,7 +333,9 @@
                     'Der gefundene Bruch hat einen aktual unendlich großen ganzzahligen Nenner und ist offensichtlich wahr.'."\n".
                     'Und er ist beliebig endlich oft mit Zwei zu kürzen.'."\n".
                     'Bleibt die Frage, ob auch der Zähler eine aktual unendlich große ganze Zahl sein kann.'."\n".
-                    'Und dies ist mit einem klaren Ja zu beantworten.'."\n",
+                    'Und dies ist mit einem klaren Ja zu beantworten.'."\n".
+                    'Denn der Widerspruchsbeweis ist so angesetzt,'."\n".
+                    'dass er einen ganzzahligen Zähler zur Bedingung macht und erst diese und weitere Annahmen die Konstruktionsanweisung hervorbringen.'."\n",
                       'Der Faktor \lm{ 2^{ω} } ist so groß – eben aktual unendlich groß –, ganzzahlig und so strukturiert,'."\n".
                     'dass er aus jeder rational gebrochenen Potenz von Zwei eine ganze Zahl macht.'."\n".
                     'Das ist die Besonderheit dieses Bruchs, die sofort unsichtbar wird, wenn wir einfach komplett kürzen.'."\n".
