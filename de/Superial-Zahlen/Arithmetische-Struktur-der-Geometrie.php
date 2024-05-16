@@ -483,8 +483,8 @@
                     '– Andererseits gibt es einschließlich der Null bis vor die Eins auch \lm{ \s } superial kleine ganze Zahlen in \lm{ \mathbb{S}^{-1}_{\Z} }, obwohl hier ja zum einen sowohl alle \lm{ \s^{-1} } einschließlich der Null bis vor die Eins durchlaufen werden, was schon \lm{ \s } an der Zahl sind, und dies noch jeweils in allen Schritten der endlichen ganzen Zahlen \lm{ \mathbb{Z} }, was \lm{ 2 \cdot ω } an der Zahl sind. Dies scheinen dann aber \lm{ 2 \cdot ω \cdot \s } Schritte zu sein.',
                     '• Wie ist das möglich?',
                     '– Die Lösung des Rätsels oder vermeintlichen Widerspruchs ist, dass die Koeffizienten \lm{ a_{\s} \in \mathbb{A}_{\S} } nicht alle möglichen Punkte bzw. ganzen Zahlen im Sinne von ganzzahligen Teilprodukten der Primfaktorzerlegung von \lm{ \s } adressieren können:',
-                    '– Ein mögliches Teilprodukt von \lm{ \s } ist zum Beispiel \lm{ 2^{ω} }. Dies ist aber keine sinnvolle Superial-Zahl und sie kann auch nicht durch einen endlichen Koeffizienten \lm{ a_{\s} } mit \lm{ a_{\s} \cdot \s } adressiert werden.',
-                    '– Es ist also zu vermuten, dass genau \lm{ 2 \cdot ω } Punkte in oder Teilprodukte von \lm{ \s } mit \lm{ a_{\s} } nicht adressierbar sind.',
+                    '– Ein mögliches Teilprodukt von \lm{ \s } ist zum Beispiel \lm{ 2^{ω} }, dass die Strecke Null bis Eins in \lm{ 2^{ω} } Teile teilt und Stützpunkte des Gewebes an den Teilungsgrenzen definiert. Viele dieser Punkte, wie \lm{ \frac{ k }{ 2^{ω} } } mit \lm{ k \in \mathbb{N} } oder \lm{ 2^{ω} } selber, sind aber keine sinnvollen Superial-Zahlen und sie können auch nicht durch endliche Koeffizienten \lm{ a_{\s} } mit \lm{ a_{\s} \cdot \s } adressiert werden.',
+                    '– Es ist also zu vermuten, dass genau \lm{ 2 \cdot ω } mal weniger Punkte in oder Teilprodukte von \lm{ \s } mit \lm{ a_{\s} } adressierbar sind, also eine große Teilmenge nicht adressierbar ist.',
                     '– Das bedeutet, die Anzahl der Elemente in \lm{ \mathbb{A}_{\S} } ist \lm{ \# \mathbb{A}_{\S} = \frac{ \s }{ 2 \cdot ω } }, was wir ja auch schon in Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins} festgestellt haben und was uns einen wichtigen Hinweis auf die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} gegeben hat.',
                     ))),
                   array( 'equations',
@@ -501,8 +501,8 @@
                     'zwischen Null und Eins, inklusive Null und Eins.'."\n".
                     '\lm{ n_{\s,\Z} } ist dann die Anzahl der feinsten Punkte auf der endlichen Zahlengeraden,'."\n".
                     'unter Berücksichtigung der Tatsache, dass es dann keinen Abschlusspunkt braucht.'."\n".
-                    '\lm{ d_{\s} } beschreibt den Abstand dieser feinsten Punkte und.'."\n".
-                    '\lm{ \rho_{\s} } ihre Dichte.'."\n".
+                    '\lm{ d_{\s} } beschreibt den Abstand dieser feinsten Punkte und \lm{ \rho_{\s} } ihre Dichte.'."\n".
+                    'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
