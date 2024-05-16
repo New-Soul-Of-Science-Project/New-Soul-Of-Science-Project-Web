@@ -485,6 +485,7 @@
                     '– Die Lösung des Rätsels oder vermeintlichen Widerspruchs ist, dass die Koeffizienten \lm{ a_{\s} \in \mathbb{A}_{\S} } nicht alle möglichen Punkte bzw. ganzen Zahlen im Sinne von ganzzahligen Teilprodukten der Primfaktorzerlegung von \lm{ \s } adressieren können:',
                     '– Ein mögliches Teilprodukt von \lm{ \s } ist zum Beispiel \lm{ 2^{ω} }. Dies ist aber keine sinnvolle Superial-Zahl und sie kann auch nicht durch einen endlichen Koeffizienten \lm{ a_{\s} } mit \lm{ a_{\s} \cdot \s } adressiert werden.',
                     '– Es ist also zu vermuten, dass genau \lm{ 2 \cdot ω } Punkte in oder Teilprodukte von \lm{ \s } mit \lm{ a_{\s} } nicht adressierbar sind.',
+                    '– Das bedeutet, die Anzahl der Elemente in \lm{ \mathbb{A}_{\S} } ist \lm{ \# \mathbb{A}_{\S} = \frac{ \s }{ 2 \cdot ω } }, was wir ja auch schon in Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins} festgestellt haben und was uns einen wichtigen Hinweis auf die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} gegeben hat.',
                     ))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -501,7 +502,7 @@
                     '\lm{ n_{\s,\Z} } ist dann die Anzahl der feinsten Punkte auf der endlichen Zahlengeraden,'."\n".
                     'unter Berücksichtigung der Tatsache, dass es dann keinen Abschlusspunkt braucht.'."\n".
                     '\lm{ d_{\s} } beschreibt den Abstand dieser feinsten Punkte und.'."\n".
-                    '\lm{ n_{\s,g} } ihre Dichte.'."\n".
+                    '\lm{ \rho_{\s} } ihre Dichte.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
