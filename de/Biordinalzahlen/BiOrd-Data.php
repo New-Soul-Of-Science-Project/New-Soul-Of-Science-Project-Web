@@ -76,6 +76,7 @@
           'OM:BiOrd:Einleitung:NeueEinsichten:Fig-OntologieGanzeZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen' => array( headline_text => 'Anzahl der endlichen ganzen Zahlen'/*, headline_text_short => 'XXX'*/),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N' => array( headline_text => 'BO.Ein.NE.6'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z' => array( headline_text => 'BO.Ein.NE.7'),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z' => array( headline_text => 'BO.Ein.NE.12'),
 
           'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl' => array( headline_text => 'Neue Einsichten zu positiven aktual unendlichen Biordinalzahlen'/*, headline_text_short => 'XXX'*/),

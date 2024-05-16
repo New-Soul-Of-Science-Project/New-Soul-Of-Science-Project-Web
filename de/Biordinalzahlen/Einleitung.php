@@ -819,7 +819,8 @@
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \# \mathbb{Z}^{-}  =  \# \mathbb{N}  =  ω  =  \mathbb{N}  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Z}  =  \# \mathbb{N} + \# \mathbb{Z}^{-}  =  2 \cdot ω  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Z}  =  \# \mathbb{N} + \# \mathbb{Z}^{-}  =  2 \cdot ω  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Z}^{+}  =  \# *( \mathbb{N} \setminus *\{ 0 *\} *)  =  ω - 1  \;\;  ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(

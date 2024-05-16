@@ -265,7 +265,8 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω} + 1  }'),
-                      array( display => 'on',  latex => '{  d  =  *( \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} } *)^{ω}  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω}  }'),
+                      array( display => 'on',  latex => '{  d  =  *( \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} } *)^{ω}  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω}  }',
+                                          label_name => 'OM:SupNum:Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega', label_text => '\name{OM:SupNum:Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega}', label_incr => true),
                       array( display => 'on',  latex => '{  \rho  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω}  \;\;  .  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -295,21 +296,26 @@
                   '\condb{Sind Zahlen, wie die zweite Wurzel aus Zwei \lm{ \sqrt{2} }, im Raster enthalten?} \\\\'."\n".
                     'Unser Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}'."\n".
                     'mit den auf ihm aufbauenden, nachfolgenden Beweisen\color{*Bearb}{(Link)} zeigt,'."\n".
-                    'dass die Radikale der irrationalen algebraischen Zahlen bereits im Raster enthalten sind.'."\n",
+                    'dass die Radikale der irrationalen algebraischen Zahlen bereits im Raster enthalten sind,'."\n".
+                    'wenn wir mit den Teilungen und damit auch mit den negativen Potenzen der Abstände ins Aktual-Unendliche übergehen.'."\n",
                       'Die Radikale der irrationalen algebraischen Zahlen sind die irrationalen algebraischen Zahlen,'."\n".
                     'die durch die vier Grundrechenarten und dem Ziehen ganzer Wurzeln ausgedrückt werden können.'."\n",
                       'Nur für solche irrationalen algebraischen Zahlen, die dann noch durch Integration'."\n".
                     'von Radikalen der irrationalen algebraischen Zahlen entstehen, konnten wir noch nicht Beweisen,'."\n".
-                    'dass sie auf dem Raster liegen, obwohl es naheliegend und daher zu vermuten ist.'."\n",
-                      'Dies liegt daran, dass wir \jump{OM:SupNum:Ableitungen-Integrale}{die Ableitung und das Integral} mit Hilfe der Superial-Zahlen'."\n".
+                    'dass sie auf dem Raster liegen.'."\n".
+                    'Das sie auf dem Raster liegen liegt nahe, weil es sich um Summen von Wurzelausdrücken handelt, und für eine endliche Anzahl von Summanden ist dies auch schon bewiesen.'."\n".
+                    'Daher ist es auch für eine aktual unendliche Anzahl von Summanden zu vermuten.'."\n",
+                      'Das es dennoch bisher unbewiesen ist, liegt daran, dass wir \jump{OM:SupNum:Ableitungen-Integrale}{die Ableitung und das Integral} mit Hilfe der Superial-Zahlen'."\n".
                     'anders definieren, als bisher mit dem Limes üblich, und dadurch aktual unendlich kleine Summanden'."\n".
                     'in die Integration bekommen, die sich an dieser Stelle dann zu Null summieren müssen,'."\n".
                     'um im Ergebnis rein endlich zu sein.'."\n".
                     'Durch die aktual unendlich kleinen Summanden haben wir mehr Genauigkeit zu berücksichtigen und'."\n".
                     'erreichen so auch eine höhere Güte.'."\n".
                     'Dadurch wird der Beweis aber auch schwieriger zu führen, was ihn bisher verhindert.'."\n",
-                      'Warum ist nun zum Beispiel die zweite Wurzel aus Zwei \lm{ \sqrt{2} } schon ein Punkt des Rasters?'."\n",
-                      'Dies kommt nach dem Beweis durch den Übergang der Potenz ins ganzzahlige Aktual-Unendliche.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Warum ist nun zum Beispiel die zweite Wurzel aus Zwei \lm{ \sqrt{2} } schon ein Punkt des Rasters?} \\\\'."\n".
+                    'Dies kommt nach dem Beweis durch den Übergang der Potenz ins ganzzahlige Aktual-Unendliche.'."\n".
                     'Er zeigt, dass die Wurzel aus Zwei erst mit aktual unendlich großem Nenner und Zähler'."\n".
                     'als Bruch aus ganzen Zahlen dargestellt werden kann:'."\n".
                     ''))),
@@ -341,8 +347,161 @@
                     'Das ist die Besonderheit dieses Bruchs, die sofort unsichtbar wird, wenn wir einfach komplett kürzen.'."\n".
                     'Sein Geheimnis wird erst offenbar, wenn wir seine Entstehungsgeschichte verstehen und'."\n".
                     'damit seine Bedeutung entschlüsseln und so erkennen.'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
+                      'Oben in Formel \jumpname{OM:SupNum:Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega}'."\n".
+                    'haben wir berechnet, in welchem Abstand die Punkte auf dem aktual unendlichen Zweiteilungsraster liegen,'."\n".
+                    'nämlich \lm{ d = 2^{-ω} }, wenn wir in die aktuale Unendlichkeit der vollständigen Induktion \lm{ ω } übergehen.'."\n".
+                    'Wir können diesen Abstand oder dieses Raster durch Skalierung, also durch Multiplikation, mit seinem Kehrwert \lm{ 2^{ω} },'."\n".
+                    'auf den Zählabstand von Eins bringen, also auf die Ganzzahligkeit:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  d  =  2^{-ω} \cdot 2^{ω}  =  1  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hier fällt nun auf, dass der Faktor exakt der gleiche ist, der aus der Wurzel aus Zwei vorstehend'."\n".
+                    'eine ganze Zahl macht; sie also auf dem Zählraster landet.'."\n".
+                    'Damit ist bestätigt, dass die Wurzel aus Zwei, also \lm{ 1,\!41421356237309\cdots }, wirklich auf dem aktual unendlichen Zweiteilungsraster liegt.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Dies gilt für alle Wurzeln aus Zwei und deren Potenzen \lm{ *( \sqrt[k]{2} *)^{m} }} \\\\'."\n".
+                    'Der Beweis zeigt, dies gilt für alle Wurzeln aus Zwei, die wir nachfolgend als Potenzen von Zwei schreiben:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall m \in \mathbb{Z} *) *( \forall k \in \mathbb{N}^{+} *) \\\  *[  *( \sqrt[k]{2} *)^{m}  =  2^{\frac{ m }{ k }}  =  \frac{ 2^{ω} \cdot 2^{\frac{ m }{ k }} }{ 2^{ω} }  =  \frac{ 2^{ω + \frac{ m }{ k }} }{ 2^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  q  :=  \frac{ m }{ k }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *)  *[  2^{q}  =  \frac{ 2^{ω} \cdot 2^{q} }{ 2^{ω} }  =  \frac{ 2^{ω + q} }{ 2^{ω} }  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der Abstand des Rasters bleibt hier der gleiche, wie zuvor, und so auch der Faktor \lm{ 2^{ω} }, um \lm{ 2^{q} } zu einer ganzen Zahl zu machen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *( \sqrt[k]{c} *)^{m} }} \\\\'."\n".
+                    'Der Beweis zeigt dies sogar für jede Wurzel aus jeder natürlichen Zahl \lm{ c } und deren Potenzen wie folgt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall m \in \mathbb{Z} *) *( \forall c, k \in \mathbb{N}^{+} *) \\\  *[  *( \sqrt[k]{c} *)^{m}  =  c^{\frac{ m }{ k }}  =  \frac{ c^{ω} \cdot c^{\frac{ m }{ k }} }{ c^{ω} }  =  \frac{ c^{ω + \frac{ m }{ k }} }{ c^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *) *( \forall c \in \mathbb{N}^{+} *)  *[  c^{q}  =  \frac{ c^{ω} \cdot c^{q} }{ c^{ω} }  =  \frac{ c^{ω + q} }{ c^{ω} }  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hier ist zu bemerken, dass die Potenzen der Primzahlen der Primfaktorzerlegung von \lm{ c } ja größer als Eins sein können.'."\n".
+                    'Wenn zum Beispiel \lm{ c = 4 = 2^{2} } ist, dann ist \lm{ c^{ω} = 4^{ω} = *( 2^{2} *)^{ω} = 2^{2 ω} }'."\n".
+                    'und damit eine aktual unendliche Größenordnung größer als \lm{ 2^{ω} }, wie oben zuvor.'."\n",
+                      'Da stellt sich die Frage:'."\n".
+                    'Ist es wirklich notwenig die Größenordnung derart zu vergrößern?'."\n".
+                    'Oder reicht auch die einfache aktual unendliche Größe \lm{ 2^{ω} } aus?'."\n".
+                    'Dies ist eine besonders interessante und wichtige Frage in Bezug auf die Superial-Zahlen, weil es entscheidet,'."\n".
+                    'ob Produkte zwischen der superialen Basis \lm{ \s } und den Wurzeln aus \lm{ c } auch schon ganze Zahlen ergeben,'."\n".
+                    'wenn \lm{ c } größere Potenzen von Primzahlen enthält.'."\n",
+                      'Dass die kleinere Größenordnung tatsächlich schon ausreichend ist, sehen wir an folgender Herleitung'."\n".
+                    'mit beliebigen natürlichen Potenzen \lm{ k } von Primzahlen \lm{ p }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall q \in \mathbb{Q} *)  *[  p^{ω} \cdot p^{q}  \in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall k \in \mathbb{N}^{+} *) *( \forall q \in \mathbb{Q} *)  *[  p^{ω} \cdot *( p^{k} *)^{q}  ?\in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p^{ω} \cdot p^{k \cdot q}  ?\in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  k \cdot q  \in  \mathbb{Q}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  p^{ω} \cdot p^{k \cdot q}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p^{ω} \cdot *( p^{k} *)^{q}  \in  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wir sehen:'."\n".
+                    'Wenn die Potenz \lm{ ω } einer Primzahl \lm{ p } mal \lm{ p } hoch jeder rationalen Zahl \lm{ q } eine aktual unendliche ganze Zahl ergibt,'."\n".
+                    'dann ist \lm{ k \cdot q } einfach eine andere rationale Zahl, die als Potenz von \lm{ p }'."\n".
+                    'ebenso eine ganze Zahl ergeben muss.'."\n".
+                    'Und dies gilt schließlich für alle endlichen Potenzen der Primzahlen der Primfaktorzerlegung jeder positiven natürlichen Zahl \lm{ c }.'."\n",
+                      'Wenn \lm{ \rad(c) } das Produkt der in \lm{ c } enthaltenen Primzahlen in einfacher Potenz ist, können wir also formulieren,'."\n".
+                    'dass schlussendlich jede endliche ganze Wurzel in natürlicher Potenz aus jeder natürlichen Zahl \lm{ c }'."\n".
+                    'durch ein Produkt aller unterschiedlichen Primzahlen in \lm{ c } zu einer aktual unendliche großen ganzen Zahl gemacht werden kann:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *) *( \forall c \in \mathbb{N}^{+} *)  *[  \rad(c)^{ω} \cdot c^{q}  \in  \mathbb{N}_{\infty}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Jede endliche ganze Wurzel in natürlicher Potenz aus jeder natürlichen Zahl \lm{ c } kann also'."\n".
+                    'entsprechend als überrationaler Bruch zweier aktual unendlich großer ganzer Zahlen dargestellt werden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      // array( display => 'on',  latex => '{  \Rightarrow  *( \forall m \in \mathbb{Z} *) *( \forall c, k \in \mathbb{N}^{+} *) \\\ \qquad\;\;  *[  *( \sqrt[k]{c} *)^{m}  =  c^{\frac{ m }{ k }}  =  \frac{ \rad(c)^{ω} \cdot c^{\frac{ m }{ k }} }{ \rad(c)^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c^{q}  =  \frac{ \rad(c)^{ω} \cdot c^{q} }{ \rad(c)^{ω} }  }'),
+                      // array( display => 'on',  latex => '{  \Leftrightarrow  c^{q}  =  \frac{ \rad(c)^{ω + q} \cdot *( \frac{ c }{ \rad(c) } *)^{q} }{ \rad(c)^{ω} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dies ist sehr bemerkenswert und lässt uns einige neue Erkenntnisse in der Zahlentheorie und'."\n".
+                    'bezüglich der arithmetischen Struktur der Geometrie gewinnen.'."\n".
+                    'Es zeigt uns, auf welche Weise die Wurzeln in das fraktale Teilungsgewebe der Geometrie eingewoben sind.'."\n",
+                      'Wie oben erwähnt, gilt dies für alle Radikale der irrationalen algebraischen Zahlen, was wir ja an anderer Stelle zeigen\color{*Bearb}{(Link)},'."\n".
+                    'also für deren Summen, Produkte, Brüche und endlichen ganzzahligen Potenzen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                                           
+                'Die besondere Rolle der normierten Einheit \lm{ ω }', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Die aktual unendliche Einheit der vollständigen Induktion \lm{ ω } nimmt hier eine ganz besondere Rolle ein.'."\n",
+                      'Mit Hilfe von \lm{ ω } können wir eine normierte aktual unendliche Potenz der Primzahlen ausdrücken,'."\n".
+                    'die es uns ermöglicht, das Fraktal der arithmetischen Teilung der Geometrie im Hinblick auf rein endliche Zahlen'."\n".
+                    'so zu vervollständigen, dass alle Radikale der irrationalen algebraischen Zahlen im geschöpften Raster enthalten sind;'."\n".
+                    'vermutlich sogar wirklich alle irrationalen algebraischen Zahlen.\color{*Bearb}{(Link)}'."\n",
+                      'Dabei ist es vermutlich so, dass die transzendenten Zahlen aktual unendlich kleine Summanden enthalten,'."\n".
+                    'die dafür sorgen, dass sie nicht zu den rein endlichen Zahlen dazugehören, wie wir bereits an der'."\n".
+                    '\jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{eulerschen Zahl \lm{ \e_{\s} }} zeigen konnten.'."\n",
+                      'Noch außergewöhnlicher wird die Rolle von \lm{ ω }, wenn wir im \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung}'."\n".
+                    'zeigen, dass sie – also die vollständigen Induktion selber – eine Primfaktorzerlegung besitzt'."\n".
+                    'und zwar in Form des Produkts aller endlichen Primzahlen.'."\n",
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                                           
+                'Die superiale Basis \lm{ \s } wird auf natürliche Weise sichtbar und definiert', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Das aktual unendliche Fraktal der arithmetischen Teilung der Geometrie basiert also auf'."\n".
+                    'einem Produkt der aktual unendlichen Potenz aller Primzahlen, der superialen Basis \lm{ \s },'."\n".
+                    'auf dem die vorliegende Arbeit gegründet ist:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  \left( \prod_{\forall p \in \mathbb{P}}  p \right)  }',
+                                          label_text => '\\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  s  :=  \displaystyle \left( \prod_{\forall p \in \mathbb{P}}  p \right)^{\omega}  }',
+                                          label_text => '\\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  ω^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Als Teilung der Eins ist es dann die Zahl \lm{ \s^{-1} }, die der Strecke zwischen Null und Eins'."\n".
+                    'unsere vorstehend gefundene arithmetische Struktur gibt, indem sie für die minimale endliche Distanz steht:'."\n".
+                    ''))),
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    '\bold{Muss noch einmal auf Konsistenz bzw. Richtigkeit überprüft werden!}',
+                    '• Es erscheint ein vermeintlicher Widerspruch:',
+                    '– Hier wird festgestellt, dass das feinste Teilungsgewebe einschließlich der Null bis vor die Eins \lm{ \s } Punkte hat.',
+                    '– Andererseits gibt es einschließlich der Null bis vor die Eins auch \lm{ \s } superial kleine ganze Zahlen in \lm{ \mathbb{S}^{-1}_{\Z} }, obwohl hier ja zum einen sowohl alle \lm{ \s^{-1} } einschließlich der Null bis vor die Eins durchlaufen werden, was schon \lm{ \s } an der Zahl sind, und dies noch jeweils in allen Schritten der endlichen ganzen Zahlen \lm{ \mathbb{Z} }, was \lm{ 2 \cdot ω } an der Zahl sind. Dies scheinen dann aber \lm{ 2 \cdot ω \cdot \s } Schritte zu sein.',
+                    '• Wie ist das möglich?',
+                    '– Die Lösung des Rätsels oder vermeintlichen Widerspruchs ist, dass die Koeffizienten \lm{ a_{\s} \in \mathbb{A}_{\S} } nicht alle möglichen Punkte bzw. ganzen Zahlen im Sinne von ganzzahligen Teilprodukten der Primfaktorzerlegung von \lm{ \s } adressieren können:',
+                    '– Ein mögliches Teilprodukt von \lm{ \s } ist zum Beispiel \lm{ 2^{ω} }. Dies ist aber keine sinnvolle Superial-Zahl und sie kann auch nicht durch einen endlichen Koeffizienten \lm{ a_{\s} } mit \lm{ a_{\s} \cdot \s } adressiert werden.',
+                    '– Es ist also zu vermuten, dass genau \lm{ 2 \cdot ω } Punkte in oder Teilprodukte von \lm{ \s } mit \lm{ a_{\s} } nicht adressierbar sind.',
+                    ))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n_{\s}  =  \s + 1  }'),
+                      array( display => 'on',  latex => '{  \# \mathbb{Z}  =  2 \cdot ω  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  n_{\s,\Z}  =  2 \cdot ω \cdot \s  }'),
+                      array( display => 'on',  latex => '{  d_{\s}  =  \frac{ 1 }{ \s }  =  \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \rho_{\s}  =  \s  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dabei bezeichnet \lm{ n_{\s} } die Anzahl aller Punkte des aktual unendlich feinen Gewebes'."\n".
+                    'zwischen Null und Eins, inklusive Null und Eins.'."\n".
+                    '\lm{ n_{\s,\Z} } ist dann die Anzahl der feinsten Punkte auf der endlichen Zahlengeraden,'."\n".
+                    'unter Berücksichtigung der Tatsache, dass es dann keinen Abschlusspunkt braucht.'."\n".
+                    '\lm{ d_{\s} } beschreibt den Abstand dieser feinsten Punkte und.'."\n".
+                    '\lm{ n_{\s,g} } ihre Dichte.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -472,7 +631,7 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:SupNum:Struktur-Geometrie:GanzeSZ'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung'),
                     )),
                 )
           ); ?>
