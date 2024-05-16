@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 17.03.2024, 16:00h
+  // #: Stand: 16.05.2024, 09:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20240516:  +:  "MathJax":  Add Macro "S" for "\S" to generate a non italic "S" for irrational algebraic coefficients useful for set S.
   //           20240305:  +:  "MathJax":  Add Macro "Ir" for "\Ir" to generate a non italic "Ir" for irrational algebraic coefficients.
   //                      +:  "MathJax":  Add Macro "N" for "\N" to generate a non italic "N" for natural superial numbers.
   //                      +:  "MathJax":  Add Macro "P" for "\P" to generate a non italic "P" for prime superial numbers.
@@ -227,13 +228,14 @@
     echo '        TeX: {'."\n";
     echo '          extensions: ["color.js"],'."\n";
     echo '          Macros: {'."\n";
-    echo '            i: "\\\\mathrm{i}",'."\n"; // imaginary unit
-    echo '            s: "\\\\mathrm{s}",'."\n"; // superial unit
     echo '            e: "\\\\mathrm{e}",'."\n"; // Euler number
+    echo '            i: "\\\\mathrm{i}",'."\n"; // imaginary unit
     echo '            Ir: "\\\\mathrm{Ir}",'."\n"; // for irrational algebraic coefficients
     echo '            N: "\\\\mathrm{N}",'."\n"; // for natural superial numbers
     echo '            P: "\\\\mathrm{P}",'."\n"; // for prime superial numbers
     echo '            R: "\\\\mathrm{R}",'."\n"; // for algebraic coefficients
+    echo '            s: "\\\\mathrm{s}",'."\n"; // superial unit
+    echo '            S: "\\\\mathrm{S}",'."\n"; // for algebraic coefficients useful for set S
     echo '            Z: "\\\\mathrm{Z}",'."\n"; // for whole superial numbers
     echo '            rad: "\\\\mathrm{rad}",'."\n"; // for radikal of
     echo '            llangle: "\\\\langle \\\\mspace{-3.5mu} \\\\langle",'."\n";
