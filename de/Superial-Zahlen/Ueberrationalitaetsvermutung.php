@@ -38,7 +38,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Stellt sich nun die Frage, ob auch bestimmte irrationale Zahlen diese Eigenschaft erfüllen.'."\n",
-                      'Ich vermute, dem ist so und die Realanteile der algebraischen Zahlen\\footnote{\\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                      'Ich vermute, dem ist so und die Realanteile der algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
                     '\\lm{ \mathbb{A}_{\R} }, die auch rationale Potenzen von natürlichen Zahlen sein können'."\n".
                     ''))),
                   array( 'equations',

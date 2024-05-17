@@ -446,7 +446,7 @@
                       'Mit Hilfe von \lm{ ω } können wir eine normierte aktual unendliche Potenz der Primzahlen ausdrücken,'."\n".
                     'die es uns ermöglicht, das Fraktal der arithmetischen Teilung der Geometrie im Hinblick auf rein endliche Zahlen'."\n".
                     'so zu vervollständigen, dass alle Radikale der irrationalen algebraischen Zahlen im geschöpften Raster enthalten sind;'."\n".
-                    'vermutlich sogar wirklich alle irrationalen algebraischen Zahlen.\color{*Bearb}{(Link)}'."\n",
+                    'vermutlich sogar wirklich alle irrationalen algebraischen Zahlen.\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n",
                       'Dabei ist es vermutlich so, dass die transzendenten Zahlen aktual unendlich kleine Summanden enthalten,'."\n".
                     'die dafür sorgen, dass sie nicht zu den rein endlichen Zahlen dazugehören, wie wir bereits an der'."\n".
                     '\jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{eulerschen Zahl \lm{ \e_{\s} }} zeigen konnten.'."\n",
@@ -505,8 +505,11 @@
                       'So erreichen wir das feinste Gewebe von Punkten, die selber noch im endlichen liegen,'."\n".
                     'also noch keine aktual unendlich kleinen Summanden in ihrem Ort – ihren Koordinaten – haben, aber schon aktual unendlich dicht beieinander liegen.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:XXX', text =>
+                      
+                'Das Kontinuum', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\\condb{Das Kontinuum} \\\\'."\n".
                     'Das Gewebe bildet so in gewisser Hinsicht einen Abschluss im Endlichen, denn es gibt keine endlichen Abstände mehr,'."\n".
                     'sondern nur noch aktual unendlich kleine Abstände.'."\n".
                     'Es ist also klar, dass dieses Gewebe im Hinblick auf seine Stützpunkte immer Lücken haben wird, hier nur keine endlichen mehr.'."\n",
@@ -553,11 +556,11 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  s  =  \prod_{\forall n \in \mathbb{N}} *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)  }',
+                      array( display => 'on',  latex => '{  \s  =  \prod_{\forall n \in \mathbb{N}} *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)  }',
                                           label_text => '\\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  s  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{1} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{2} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{3} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{n \in \mathbb{N}} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{1} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{2} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{3} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{n \in \mathbb{N}} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots  }',
                                           label_text => '\\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{\omega}  \;\;,  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{\omega}  \;\;,  }',
                                           label_text => '\\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
