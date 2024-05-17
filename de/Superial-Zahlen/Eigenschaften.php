@@ -477,14 +477,14 @@
                       
                   array( 'text', array( text => array(
                     'Die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}'."\n".
-                    'der reellen Zahlen wird mit \lm{ \mathfrak{c} } bezeichnet:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Aussage, Einfache Kontinuumshypothese.}'."\n".
+                    'der reellen Zahlen wird mit \lm{ \mathfrak{c} } bezeichnet:\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese_Einfache}}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.UK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathfrak{c}  =  \#\mathbb{R}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Es soll gezeigt werden können, dass die Mächtigkeit des Kontinuums der Potenzmenge von \lm{ \mathbb{N} } entspricht.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Aussage, Einfache Kontinuumshypothese.}'."\n".
+                    'Es soll gezeigt werden können, dass die Mächtigkeit des Kontinuums der Potenzmenge von \lm{ \mathbb{N} } entspricht.\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese_Einfache}}'."\n".
                     'Warum dies so ist und wie es gezeigt wird, hab ich noch nicht verstanden.'."\n".
                     'Die Mächtigkeit des Kontinuums wird dann mit Hilfe von \lm{ ω } als \lm{ \aleph_{1} } formuliert:'."\n".
                     ''))),
@@ -495,8 +495,8 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \aleph_{1}  =  2^{ω}  =  \vert \mathcal{P}(\mathbb{N}) \vert  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Kontinuumshypothese\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.}'."\n".
-                    'vermutet dann offenbar, dass die reellen Zahlen die gleiche Mächtigkeit besitzen, wie das Kontinuum:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Aussage, Einfache Kontinuumshypothese.}'."\n".
+                    'Die Kontinuumshypothese\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese}}'."\n".
+                    'vermutet dann offenbar, dass die reellen Zahlen die gleiche Mächtigkeit besitzen, wie das Kontinuum:\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese_Einfache}}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.UK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(

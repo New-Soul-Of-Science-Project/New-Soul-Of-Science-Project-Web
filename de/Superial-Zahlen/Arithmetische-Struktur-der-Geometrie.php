@@ -504,13 +504,16 @@
                     '\lm{ d_{\s} } beschreibt den Abstand dieser feinsten Punkte und \lm{ \rho_{\s} } ihre Dichte.'."\n",
                       'So erreichen wir das feinste Gewebe von Punkten, die selber noch im endlichen liegen,'."\n".
                     'also noch keine aktual unendlich kleinen Summanden in ihrem Ort – ihren Koordinaten – haben, aber schon aktual unendlich dicht beieinander liegen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Das Kontinuum} \\\\'."\n".
                     'Das Gewebe bildet so in gewisser Hinsicht einen Abschluss im Endlichen, denn es gibt keine endlichen Abstände mehr,'."\n".
                     'sondern nur noch aktual unendlich kleine Abstände.'."\n".
                     'Es ist also klar, dass dieses Gewebe im Hinblick auf seine Stützpunkte immer Lücken haben wird, hier nur keine endlichen mehr.'."\n",
                       'Da es keine endlichen Teiler mehr gibt, mit denen wir neue Punkte schöpfen oder erreichen können,'."\n".
                     'selbst dann, wenn wir sie durch irrationale Wurzeln und Summen dieser in die aktual unendlich kleinen Potenzen'."\n".
                     'der vollständigen Induktion treiben und sie so noch variieren,'."\n".
-                    'ist in diesem Sinne hier das \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Kontinuum}\color{*Bearb}{(Link)} erreicht.'."\n",
+                    'ist in diesem Sinne hier das \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Kontinuum}\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese}} erreicht.'."\n",
                       'Aber Kontinuum bedeutet eben nicht, dass es keinerlei Lücken mehr gibt; halt nur keine endlicher Größe.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:XXX', text =>
