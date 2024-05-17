@@ -468,9 +468,9 @@
                       array(  jump_name => 'OM:SupNum:Eigenschaften:VergleichMitHyperreellenZahlen', type => 'back'),
                     )),
                       
-                  array( 'notice', array( Display => 'showContent', text => array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     // '\\bold{XXX}',
-                    // '• XXX',
+                    '• Verweisen auf \jumpname{OM:SupNum:Struktur-Geometrie}.',
                     // '• XXX',
                     // '• XXX',
                     ))),
