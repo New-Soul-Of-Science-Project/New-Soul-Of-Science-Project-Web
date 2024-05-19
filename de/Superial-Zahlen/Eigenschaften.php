@@ -171,31 +171,31 @@
                 'Aber \\latexmath{ \mathbb{S} } ist bezüglich der natürlichen Superial-Zahlen \\latexmath{ \mathbb{S}_N } ein archimedisch angeordneter Körper', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{In Arbeit …}'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      '\\color{*Bearb}{In Arbeit …}'."\n".
+                      '\color{*Bearb}{In Arbeit …}'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \exists n \in \mathbb{S}_{\N} *) *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *[  x \cdot n > y  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      '\\color{*Bearb}{In Arbeit …}'."\n",
+                      '\color{*Bearb}{In Arbeit …}'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{In Arbeit …}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper:XXX', text =>
                       
-                '\\color{*Bearb}{In Arbeit …}', subline =>
+                '\color{*Bearb}{In Arbeit …}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{In Arbeit …}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
