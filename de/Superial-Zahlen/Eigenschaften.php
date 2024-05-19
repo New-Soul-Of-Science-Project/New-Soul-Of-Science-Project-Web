@@ -47,7 +47,44 @@
                     )),
                       
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    'Es sind im Grunde drei Bedingungen zu erfüllen, damit eine Zahl \lm{ a } ein sinnvoller Koeffizient der Superial-Zahlen sein kann.'."\n",
+                      'Ihr Produkt mit der superialen Basis \lm{ a \cdot \s } darf nicht dazu führen, dass sich die aktual unendliche Größenordnung verändert,'."\n".
+                    'weil die Koeffizienten sonst nicht wie sinnvolle Ziffern in einem \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem}'."\n".
+                    'fungieren können.'."\n".
+                    'Das bedeutet, dass \lm{ a } eine endliche Zahl sein muss.'."\n".
+                    'Es muss also immer eine endliche ganze Zahl \lm{ z_{k} } existieren, die kleiner als \lm{ a } ist,'."\n".
+                    'und es muss auch immer eine endliche ganze Zahl \lm{ z_{g} } existieren, die größer als \lm{ a } ist.'."\n",
+                      'Die größte mir bekannte Zahlenmenge, die diese Bedingung erfüllt ist die Menge der reellen Zahlen \lm{ \mathbb{R} }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \exists z_{k}, z_{g} \in \mathbb{Z} *) *( \forall a \in \mathbb{R} *)  *[  z_{k}  <  a  <  z_{g}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Weiterhin darf sich durch \lm{ a \cdot \s } keine endliche oder aktual unendliche Größenordnung des Stellenwertsystems verändern,'."\n".
+                    'außer die Stelle von \lm{ \s }.'."\n".
+                    'Das heißt, dass \lm{ a } keine aktual unendlich kleinen Summanden enthalten darf.'."\n",
+                      'Und \lm{ a \cdot \s } muss eine ganze Zahl sein.'."\n".
+                    'Sie muss gerundet also die gleiche Zahl bleiben.'."\n".
+                    'Denn nur dann lässt sich das Zählen bis ins aktual unendliche und darüber hinaus definieren.'."\n".
+                    'In unserem Fall ist die ganze Zahl \lm{ a \cdot \s } natürlich von der aktual unendlichen Größenordnung von \lm{ \s }.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Es existiere also die Menge'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \exists \mathbb{A}_{\S}\!: *( \forall a \in \mathbb{R}\!:  a \cdot \s \in \mathbb{N}_{\infty}  \Rightarrow  a \in \mathbb{A}_{\S} *)  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'der sinnvollen Koeffizienten der Superial-Zahlen.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -60,8 +97,8 @@
                 'XXX', subline =>
                   '')),
                   array( 'text', array( text => array(
-                  '\\condb{\\color{*Bearb}{In Arbeit …}} \\\\'."\n".
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                  '\condb{\color{*Bearb}{In Arbeit …}} \\\\'."\n".
+                    '\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
