@@ -651,7 +651,7 @@
                     'beliebig endlich oft stecken.'."\n".
                     'Eine Definition von \lm{ s }, die dies explizit umsetzt, finden wir auf der Seite'."\n".
                     '\italic{\jumpname{OM:SupNum:Formale-Entwicklung}}'."\n".
-                    'im Abschnitt \italic{\jumpname{OM:SupNum:Formale-Entwicklung:Vortext:DefinitionSuperialeEinheit}}.'."\n",
+                    'im Abschnitt \italic{\jumpname{OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}}.'."\n",
                       'Folgendes Primzahlprodukt sollte das einfachste kleinste Produkt aus unendlich vielen Primfaktoren sein,'."\n".
                     'dass diese Bedingung erfüllt, dabei ist \lm{ \mathbb{P} } die Menge aller endlicher Primzahlen:'."\n".
                     ''))),

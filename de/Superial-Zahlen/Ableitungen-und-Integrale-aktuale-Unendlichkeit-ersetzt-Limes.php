@@ -249,7 +249,7 @@
                   array( 'bulletlist', array( bullet_ary => array(
                         'Die gebrochenen Summanden mit negativer Potenz von \lm{ \s } sollten Null sein.',
                         'Im endlichen Summanden \lm{ \s^{0} } sollten sie nur ganze Zahlen haben.',
-                        'Die Summanden mit Potenzen von \lm{ \s } größer Null sollten ganze Zahlen sein, was bedeutet, dass nur Koeffizienten als Faktoren der potenzierten \jump{OM:SupNum:Formale-Entwicklung:Vortext:DefinitionSuperialeEinheit}{Primzahlprodukt-Fläche} in Frage kommen, die aus dem Produkt Primzahlen entfernen oder hinzufügen, ohne seine Größenordnung zu verändern.',
+                        'Die Summanden mit Potenzen von \lm{ \s } größer Null sollten ganze Zahlen sein, was bedeutet, dass nur Koeffizienten als Faktoren der potenzierten \jump{OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}{Primzahlprodukt-Fläche} in Frage kommen, die aus dem Produkt Primzahlen entfernen oder hinzufügen, ohne seine Größenordnung zu verändern.',
                     ))),
                   array( 'text', array( text => array(
                     'Faktoren, die aus der Primzahlprodukt-Fläche in diesem Sinne nur Primfaktoren entfernen oder hinzufügen sind zunächst erst einmal ganz klar die rationalen Zahlen.'."\n".

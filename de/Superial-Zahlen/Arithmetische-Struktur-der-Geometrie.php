@@ -454,7 +454,7 @@
                     'zeigen, dass sie – also die vollständigen Induktion selber – eine Primfaktorzerlegung besitzt'."\n".
                     'und zwar in Form des Produkts aller endlichen Primzahlen.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit', text =>
                                            
                 'Die superiale Basis \lm{ \s } wird auf natürliche Weise sichtbar und definiert', subline =>
                   '')),
@@ -524,7 +524,9 @@
                 'Die Zwei Konstruktionen von \lm{ \s }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die erste der folgenden Konstruktionen geht ins aktual unendlich Große und die zweite ins aktual unendlich Kleine.'."\n".
+                    'Es lassen sich mindestens zwei geometrische Konstruktionen finden, die der \jump{OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}{Definition von \lm{ \s }}'."\n".
+                    'über das unendliche Primzahlprodukt aus der \jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{Einleitung} äquivalent sind:'."\n",
+                      'Die erste der folgenden Konstruktionen geht ins aktual unendlich Große und die zweite ins aktual unendlich Kleine.'."\n".
                     'Beide definieren \\term{s} jedoch auf etwas unterschiedliche Weise:'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -536,7 +538,7 @@
                   array( 'text', array( text => array(
                     'In der geometrischen Konstruktion der rhythmischen Wiederholung bleiben die Begrenzungspunkte der Teilstrecken immer im selben Abstand von Eins.'."\n".
                     'Am jeweiligen Ende der Punktreihe werden stets die nötigen Punkte angehängt, um den Rhythmus der nächsten natürlichen Zahl zu integrieren,'."\n".
-                    'wenn er noch nicht enthalten sein sollte (siehe \jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktWiederholung}).'."\n".
+                    'wenn er noch nicht enthalten sein sollte (siehe \jumpname{OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung}).'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Definition von \lm{ \s^{-1} } über den Regen der natürlichen Zahlen} \\\\'."\n".
@@ -547,7 +549,7 @@
                       
                   array( 'text', array( text => array(
                     'In der Konstruktion der rhythmischen Zerlegung werden zwischen den vorhandenen Begrenzungspunkte der Teilstrecken immer neue Punkte hinzugefügt, um den Rhythmus'."\n".
-                    'der hinzukommenden natürlichen Zahl in einem gleichmäßigen Rhythmus zu integrieren, falls er noch nicht vorhanden ist (siehe \jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Fig-sGeomKonstruktTeilung}).'."\n",
+                    'der hinzukommenden natürlichen Zahl in einem gleichmäßigen Rhythmus zu integrieren, falls er noch nicht vorhanden ist (siehe \jumpname{OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung}).'."\n",
                       'Dies ist, als wenn ein Regen von natürlichen Zahlen auf der Strecke der Eins hernieder gehen würde.'."\n".
                     ''))),
                   array( 'text', array( text => array(
