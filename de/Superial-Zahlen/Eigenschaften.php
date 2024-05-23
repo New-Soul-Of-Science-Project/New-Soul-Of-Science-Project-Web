@@ -84,13 +84,42 @@
                       ''))),
 
                   array( 'text', array( text => array(
+                    'Stellt sich also die Frage:'."\n".
+                    'Welche uns bekannte Menge entspricht \lm{ \mathbb{A}_{\S} } dann?'."\n",
+                      'Wie wir sehen werden, ist diese Frage nicht so schnell ganz genau zu beantworten.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Sind die sinnvollen Koeffizienten alle reellen Zahlen, also \lm{ \mathbb{A}_{\S} = \mathbb{R} }?} \\\\'."\n".
+                  '\cond{Eine Frage der Transzendents} \\\\'."\n".
+                    'Das hängt davon ab, wie wir im Lichte der Superial-Zahlen beantworten, welche Zahlen wir zu den reellen Zahlen zählen.'."\n".
+                    'Wenn wir \jump{OM:SupNum:Ableitungen-Integrale}{die Ableitung und das Integral} über die Superial-Zahlen definieren'."\n".
+                    'und nicht, wie heute meistens üblich, über den Limes, und berechnen, welche Funktion abgeleitet sie selber ergibt,'."\n".
+                    'dann erhalten wir eine \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{\lm{ \e }-Funktion} und damit eine'."\n".
+                    '\jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{eulersche Zahl \lm{ \e_{\s} }}, die mehr Details ihrer Struktur offenbart,'."\n".
+                    'als die Zahl \lm{ \e }, die wir über den Limes erhalten.'."\n",
+                      'Die uns bekannte Zahl \lm{ \e } ist von der Zahl \lm{ \e_{\s} } nämlich nur der Summand endlicher größer.'."\n".
+                    '\lm{ \e_{\s} } enthält aber noch aktual unendlich viele, aktual unendlich kleine Summanden herunter bis zur Potenz \lm{ \s^{-\s} }.'."\n".
+                    'Damit wäre die Zahl \lm{ \e } zwar theoretisch eine reelle Zahl und damit möglicherweise als Koeffizient der Superial-Zahlen geeignet.'."\n".
+                    'Aber im Rahmen der Superial-Zahlen'."\n".
+                    'macht die \lm{ \e }-Funktion nur mit der Basis \lm{ \e_{\s} } Sinn.'."\n".
+                    '\lm{ \e_{\s} } ist allerdings nicht einmal eine Superial-Zahle der hier definierten 1. Ordnung, weil sie'."\n".
+                    'aktual unendlich kleine Potenzen von \lm{ \s } enthält und die Superial-Zahlen nur endlich Potenzen von \lm{ \s } erlauben.'."\n",
+                      'Damit würde ich \lm{ \e_{\s} } möglicherweise nicht zur Menge \lm{ \mathbb{R} } der reellen Zahlen zählen.'."\n".
+                    'In meinen Augen sind hier also noch Einigungen nötig, welche Zahlen wir sinnvollerweise zu \lm{ \mathbb{R} } hinzurechnen.'."\n".
+                    'Und wir müssen uns klar darüber werden, ob es Sinn macht \lm{ \e } weiterhin als eulersche Zahl anzusehen oder ob'."\n".
+                    'wir nur noch \lm{ \e_{\s} } als eulersche Zahl anerkennen sollten.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Sind die sinnvollen Koeffizienten alle algebraischen Zahlen, also \lm{ \mathbb{A}_{\S} = \mathbb{A} }?} \\\\'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X', text =>
                       
@@ -441,6 +470,82 @@
                   array( 'text', array( text => array(
                     'So kann der Eindruck einer Spiegelung entstehen, wenn wir das Intervall nicht explizit dranhängen würden.'."\n",
                       'Demnach sind wir sicher, dass die Anzahl der endlichen ganzen Zahlen wirklich \\latexmath{ 2 \cdot \omega } ist.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:X', text =>
+                      
+                'Die superiale Basis \lm{ \s } und die Menge \lm{ \mathbb{S} } haben einen ganz bemerkenswerten Zusammenhang', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Als wir die \jump{OM:SupNum:Struktur-Geometrie}{arithmetische Struktur der Geometrie} untersuchten,'."\n".
+                    'haben wir eine Definition der superial Basis \lm{ \s } durch die vollständige'."\n".
+                    'Teilung der Strecke von der Null bis zur Eins durch alle Primzahlen und deren Potenzen und Kombinationen gefunden.'."\n".
+                    'Vollständige Teilung soll hier bedeuten vollständig durch alle endlichen Primzahlen und'."\n".
+                    'vollständig induktiv durch alle ihre endlichen Potenzen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Eine sehr bemerkenswerte Doppelung in Bezug auf \lm{ \s }} \\\\'."\n".
+                    'Unsere superiale Basis \lm{ \s } kommt nun in zwei etwas unterschiedlichen und sich auf den allerersten Blick'."\n".
+                    'widersprechenden Zusammenhängen vor:'."\n",
+                      'Zum einen beschreibt sie die arithmetische Struktur der Geometrie.'."\n".
+                    'Dass bedeutet, die maximale Teilung eine Strecke zwischen Null und Eins im endlichen ist \lm{ \s }.'."\n".
+                    'Teilen wir mehr, bekommen wir aktual unendlich kleine Anteile und die entstehenden Teilungspunkte'."\n".
+                    'sind nicht rein endlicher Natur.'."\n",
+                      'Zum anderen können wir aktual unendlich kleine ganze Zahlen mit den Superial-Zahlen definieren,'."\n".
+                    'mit denen wir in \lm{ \s } Schritten, die eine Größe von \lm{ \s^{-1} } haben, von Null bis an, aber ausschließlich der Eins zählen können.'."\n".
+                    'Das bedeutet, dass jedes Teilstück, dass wir mit dem Koeffizienten \lm{ a_{-1} \in \mathbb{N} } von \lm{ \s^{-1} }, also mit \lm{ a_{-1} \cdot \s^{-1} },'."\n".
+                    'über \lm{ 2 \cdot ω } Schritte, schließlich im Endlichen Koeffizienten \lm{ a_{0} \in \mathbb{A}_{\S} }'."\n".
+                    'von Null bis ausschließlich Eins zählen.'."\n".
+                    'Dies wären dann aber \lm{ 2 \cdot ω \cdot \s } Schritte, wenn \lm{ a_{0} } jedes Teilstück von \lm{ \s }'."\n".
+                    'adressieren würde.'."\n",
+                      'Nun können es aber nur \lm{ \s } Zählschritte der Größe \lm{ \s^{-1} } von Null bis ohne Eins sein, wenn wir \jump{OM:SupNum:Ableitungen-Integrale}{die Ableitungen und das Integral},'."\n".
+                    'wie geschehen, über die Superial-Zahlen definieren.'."\n".
+                    'Und dazu passend ist es auch offensichtlich, dass \lm{ a_{0} } nicht alle \lm{ \s } dieser Teilstücke'."\n".
+                    '\jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{als Koeffizient adressieren} kann:'."\n",
+                      'So können zum Beispiel nicht die Punkte \lm{ \frac{ k }{ 2^{ω} } }, mit \lm{ k \in \mathbb{N}^{+} }, durch \lm{ a_{0} \in \mathbb{A}_{\S} } adressiert werden,'."\n".
+                    'weil \lm{ a_{0} } diese Werte nicht annehmen kann.'."\n".
+                    'Nach dem Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} ist zum Beispiel \lm{ a_{0} = \sqrt{2} = \frac{ 2^{\frac{1}{2}} \cdot 2^{ω} }{ 2^{ω} } }'."\n".
+                    'interessanterweise adressierbar.'."\n",
+                      'Welche Koeffizienten adressierbar sind, damit beschäftigen wir uns im ersten Abschnitt dieser Seite:'."\n".
+                    '\italic{\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}}.'."\n".
+                    'Wie wir oben in Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}'."\n".
+                    'schon festgestellt haben, müssen es genau \lm{ \frac{ \s }{ 2ω } } sein.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Woher wissen wir sicher, wieviele Teilstücke der Teilung durch \lm{ \s } wir mit unseren Koeffizienten adressieren können?} \\\\'."\n".
+                    'Wir wissen, dass die Adressierung von \lm{ \frac{ \s }{ 2ω } } Koeffizienten korrekt sein muss, weil wir gezeigt haben, dass wir eine Ableitung'."\n".
+                    'durch ein Integral genau dann Rückgängig machen können, wenn wir davon ausgehen, dass wir über \lm{ \s } Summanden der Größe \lm{ \s^{-1} }'."\n".
+                    'pro Einheit Eins in diesen Schritten zählend summieren.'."\n".
+                    'Hätten wir mehr oder weniger Schritte als \lm{ \s }, dann würde es nicht passen und'."\n".
+                    'die Integration wäre nicht die gesuchte Umkehrung der Ableitung.'."\n".
+                    'Und, dass wir \lm{ 2 \cdot ω } aktual unendlich kleine ganze Schritte pro adressierten Koeffizienten haben, scheint mir unstrittig.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Wie können wir diese bizarr anmutende Doppelung von \lm{ \s } interpretieren und deuten?} \\\\'."\n".
+                    'In beiden Fällen teilen wir die Strecke zwischen Null bis ohne Eins in \lm{ \s } Teile ein.'."\n".
+                    'Beide Male hat die Einteilung den einheitlichen Abstand von \lm{ \s^{-1} }.'."\n",
+                      'Im Falle der Teilung der Strecke durch alle endlichen Primzahlen in der vollständigen induktiven Potenz \lm{ ω }'."\n".
+                    'haben die sich ergebenden Punkte keine aktual unendlichen Summanden.'."\n".
+                    'Und es werden alle Punkte der Teilung gezählt.'."\n",
+                      'Im Falle der Zählschritte zählen wir im Stellenwertsystem der Superial-Zahlen in der ersten aktual unendlich kleinen'."\n".
+                    'Potenz \lm{ \s^{-1} } in ganzzahligen Schritten je adressiertem Koeffizienten alle ganzen Zahlen und'."\n".
+                    'nur bei der Null die natürlichen Zahlen und bei der Eins nur die negativen ganzen Zahlen.'."\n".
+                    'Wir haben also aktual kleine Summanden.'."\n".
+                    'Aber wir adressieren dafür nicht alle Punkte der Teilung in \lm{ \s } Teile.'."\n",
+                      'Die Teile des ersten entsprechen genau den Schritten des zweiten.'."\n".
+                    'Es ist, als wenn die theoretische Annäherung an die statische arithmetische Struktur der Geometrie'."\n".
+                    'genau der praktischen Umsetzung eines schrittweisen und damit dynamischen Prozesses (der Beschreibung)'."\n".
+                    'einer Berechnung entspricht.'."\n".
+                    'Und in der Berechnung wird auch noch der statische Wert der theoretischen Annäherung benutzt.'."\n",
+                      'Fragen die bleiben sind:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\color{*Entwick}{Können wir noch besser verstehen, warum das so ist oder sein muss?}',
+                        '\color{*Entwick}{Hat diese Doppelung eventuell eine Verbindung zur analytischen Fortsetzung von Funktionen und damit zur Riemannschen Vermutung?}',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Es ist, als wenn die prozesshafte Beschreibung eine gewisse kleine Imbalance braucht, die dem Zählen ja auch schon innewohnt.'."\n".
+                    'Die Struktur, die \lm{ \s } beschreibt, verrutscht dabei zum einen ins aktual unendlich Große und zum anderen dann wieder ins aktual'."\n".
+                    'unendlich Kleine; beide Male kombiniert mit dem Endlichen.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
