@@ -82,13 +82,14 @@
                   '\condb{Selbstähnlichkeit} \\\\'."\n".
                   '\cond{Die Auflösung des Inneren} \\\\'."\n".
                     'Weil wir immer wieder das gleiche tun, ergibt sich eine fraktale, also selbstähnliche, Netzstruktur.'."\n",
-                      'Die gesamte Anzahl der Punkte \lm{ n }, ihre Dichte, als auch die Anzahl der Teilstrecken, \lm{ \rho } und'."\n".
+                      'Die gesamte Anzahl der Punkte \lm{ n } sowie ihre Koordinaten \lm{ r }, ihre Dichte, als auch die Anzahl der Teilstrecken, \lm{ \rho } und'."\n".
                     'ihr Abstand \lm{ d } berechnen sich mit der Fraktalebene \lm{ x } zu:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  2^{x} + 1  }'),
                       array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{x} }  =  2^{-x}  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{N}} *)  *[  r  =  2^{-x} \cdot m  *]  }'),
                       array( display => 'on',  latex => '{  \rho  =  2^{x}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -150,6 +151,7 @@
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  3^{x} + 1  }'),
                       array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 3^{x} }  =  3^{-x}  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{N}} *)  *[  r  =  3^{-x} \cdot m  *]  }'),
                       array( display => 'on',  latex => '{  \rho  =  3^{x}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -163,6 +165,7 @@
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  2^{x_{2}} \cdot 3^{x_{3}} + 1  }'),
                       array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{x_{2}} \cdot 3^{x_{3}} }  =  2^{-x_{2}} \cdot 3^{-x_{3}}  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{N}} *)  *[  r  =  2^{-x_{2}} \cdot 3^{-x_{3}} \cdot m  *]  }'),
                       array( display => 'on',  latex => '{  \rho  =  2^{x_{2}} \cdot 3^{x_{3}}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -178,6 +181,7 @@
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  2^{x_{2}} \cdot 3^{x_{3}} \cdot 5^{x_{5}} + 1  }'),
                       array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{x_{2}} \cdot 3^{x_{3}} \cdot 5^{x_{5}} }  =  2^{-x_{2}} \cdot 3^{-x_{3}} \cdot 5^{-x_{5}}  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{N}} *)  *[  r  =  2^{-x_{2}} \cdot 3^{-x_{3}} \cdot 5^{-x_{5}} \cdot m  *]  }'),
                       array( display => 'on',  latex => '{  \rho  =  2^{x_{2}} \cdot 3^{x_{3}} \cdot 5^{x_{5}}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -196,6 +200,7 @@
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) + 1  *]  }'),
                       array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} }  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}}  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{N}} *)  *[  r  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} \cdot m  *]  }'),
                       array( display => 'on',  latex => '{  \rho  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -206,6 +211,7 @@
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) \cdot ω  *]  }'),
                       array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} }  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}}  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{N}} *)  *[  r  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} \cdot m  *]  }'),
                       array( display => 'on',  latex => '{  \rho  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -239,11 +245,13 @@
                       'Für das Beispiel der Zweiteilung beziehungsweise Halbierung erhalten wir folgende Formeln,'."\n".
                     'wenn wir die Teilung bis in die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
                     '\lm{ ω } vorantreiben:'."\n".
+                    '\\\\ \color{*Bearb}{(Welche Menge zum Adressieren aller Koordinaten der Punkte für \lm{ m } in dieser Formel sinnvollerweise zu verwenden ist, ist mir noch nicht ganz klar. Die Menge \lm{ [0, n]_{\mathbb{On}} } scheint mir nicht ganz richtig.)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  2^{ω} + 1  }'),
                       array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{ω} }  =  2^{-ω}  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{On}} *)  *[  r  =  2^{-ω} \cdot m  *]  }'),
                       array( display => 'on',  latex => '{  \rho  =  2^{ω}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -261,12 +269,14 @@
                   '\condb{Das aktual unendlich dichte Raster oder Netzwerk aller ganzen negativen Primzahlpotenzen aufspannen} \\\\'."\n".
                     'So müssen wir also die Teilung mit allen endlichen Primzahlen bis in die vollständige Induktion'."\n".
                     'vorantreiben:'."\n".
+                    '\\\\ \color{*Bearb}{(Welche Menge zum Adressieren aller Koordinaten der Punkte für \lm{ m } in dieser Formel sinnvollerweise zu verwenden ist, ist mir noch nicht ganz klar. Die Menge \lm{ [0, n]_{\mathbb{On}} } scheint mir nicht ganz richtig. Später lernen wir, dass \lm{ m } aus \lm{ [0, n_{\s}]_{\mathbb{S}_{\Z}} } sein muss, aber diese Menge ist an dieser Stelle hier von der Systematik her ja noch nicht bekannt.)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω} + 1  }'),
                       array( display => 'on',  latex => '{  d  =  *( \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} } *)^{ω}  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω}  }',
                                           label_name => 'OM:SupNum:Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega', label_text => '\name{OM:SupNum:Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega}', label_incr => true),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{On}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω} \cdot m  *]  }'),
                       array( display => 'on',  latex => '{  \rho  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω}  \;\;  .  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -494,6 +504,7 @@
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  n_{\s,\Z}  =  2 \cdot ω \cdot \s  }'),
                       array( display => 'on',  latex => '{  d_{\s}  =  \frac{ 1 }{ \s }  =  \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n_{\s}]_{\mathbb{S}_{\Z}} *)  *[  r_{\s}  =  \s^{-1} \cdot m  *]  }'),
                       array( display => 'on',  latex => '{  \rho_{\s}  =  \s  }'),
                     ))),
                   array( 'text', array( text => array(
