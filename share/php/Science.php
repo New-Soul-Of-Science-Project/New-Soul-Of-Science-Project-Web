@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 16.05.2024, 09:00h
+  // #: Stand: 04.06.2024, 21:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20240604:  +:  New in "$Sc_g_equation_replace_ary":  '.\langle' -> '.\!\langle',  '\rangle .' -> '\rangle\!.',  '.\left\langle' -> '.\!\left\langle',  '\right\rangle .' -> '\right\rangle\!.'
   //           20240516:  +:  "MathJax":  Add Macro "S" for "\S" to generate a non italic "S" for irrational algebraic coefficients useful for set S.
   //           20240305:  +:  "MathJax":  Add Macro "Ir" for "\Ir" to generate a non italic "Ir" for irrational algebraic coefficients.
   //                      +:  "MathJax":  Add Macro "N" for "\N" to generate a non italic "N" for natural superial numbers.
@@ -701,6 +702,10 @@
                                     array( '|*', '\right|'),
                                     array( '*\langle', '\left\langle'),
                                     array( '*\rangle', '\right\rangle'),
+                                    array( '.\langle', '.\!\langle'),
+                                    array( '\rangle .', '\rangle\!.'),
+                                    array( '.\left\langle', '.\!\left\langle'),
+                                    array( '\right\rangle .', '\right\rangle\!.'),
                                     array( '(  ', '(\; '),
                                     array( '  )', ' \;)'),
                                     array( '\left(  ', '\left(\; '),
