@@ -262,6 +262,7 @@
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:BiOrd:Einleitung:Vortext:XXX',
                 Title => 'Verworfene Möglichkeiten …',
                 TitleVis => 'Verworfene Möglichkeiten:', ParagraphList => array(
+
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
                       
                 'Umgekehrte Klammerung', subline =>
@@ -320,6 +321,7 @@
                       'Die obere Variante erfüllt unser Ziel, jede Zahl durch eine Menge darzustellen, die die Anzahl von Mengen enthält, die der Zahl selber gleich ist.'."\n".
                     'Daher haben wir uns für die obige Variante entschieden und nicht für die hier erläuterte.'."\n".
                     ''))),
+
                     ))),
                       
                   array( 'jumplist', array(
