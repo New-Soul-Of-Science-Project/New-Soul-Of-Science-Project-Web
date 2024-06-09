@@ -217,7 +217,7 @@
                       array( display => 'on',  latex => '{  \mathbb{S}_{A}  :=  *\{  x *|* *( \exists n \in \mathbb{N} *) *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *[ x \cdot n > y *]  *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'In Anlehnung an die Definition der Menge aller Superial-Zahlen in Formel \\jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S}'."\n".
+                      'In Anlehnung an die Definition der Menge aller Superial-Zahlen in Formel \\jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom}'."\n".
                       'können wir diese Menge auch so schreiben:'."\n".
                       ''))),
                   array( 'equations',
@@ -370,11 +370,12 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \# [ 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ \s }{ 2 \cdot ω }  \;\; ,  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \# [ 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ \s }{ 2 \cdot ω }  }',
                                           label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, 1 [_{\mathbb{A}_{\R}}  =  \frac{ ω^{ω - 1} }{ 2 }  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'nach Umformung.'."\n",
+                      'nach Umformung und mit Hilfe von Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}.'."\n",
                         '\\\\'."\n".
                       ''))),
                       
@@ -477,7 +478,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Als wir die \jump{OM:SupNum:Struktur-Geometrie}{arithmetische Struktur der Geometrie} untersuchten,'."\n".
-                    'haben wir eine Definition der superial Basis \lm{ \s } durch die vollständige'."\n".
+                    'haben wir eine Definition der superialen Basis \lm{ \s } durch die vollständige'."\n".
                     'Teilung der Strecke von der Null bis zur Eins durch alle Primzahlen und deren Potenzen und Kombinationen gefunden.'."\n".
                     'Vollständige Teilung soll hier bedeuten vollständig durch alle endlichen Primzahlen und'."\n".
                     'vollständig induktiv durch alle ihre endlichen Potenzen.'."\n".
@@ -485,47 +486,140 @@
                   array( 'text', array( text => array(
                   '\condb{Eine sehr bemerkenswerte Doppelung in Bezug auf \lm{ \s }} \\\\'."\n".
                     'Unsere superiale Basis \lm{ \s } kommt nun in zwei etwas unterschiedlichen und sich auf den allerersten Blick'."\n".
-                    'widersprechenden Zusammenhängen vor:'."\n",
-                      'Zum einen beschreibt sie die arithmetische Struktur der Geometrie.'."\n".
-                    'Dass bedeutet, die maximale Teilung eine Strecke zwischen Null und Eins im endlichen ist \lm{ \s }.'."\n".
-                    'Teilen wir mehr, bekommen wir aktual unendlich kleine Anteile und die entstehenden Teilungspunkte'."\n".
-                    'sind nicht rein endlicher Natur.'."\n",
+                    'auch etwas widersprechenden Zusammenhängen vor:'."\n",
+                      'Zum einen beschreibt \lm{ \s } die arithmetische Struktur der Geometrie.'."\n".
+                    'Das bedeutet, die maximale normierte Teilung einer Strecke zwischen Null und Eins mit natürlichen endlichen Teilern ist \lm{ \s }.'."\n".
+                    '\hidden{\color{*Bearb}{Teilen wir mehr, bekommen wir aktual unendlich kleine Anteile in die Koordinaten der entstehenden Teilungspunkte.'."\n".
+                    'Die Koordinaten sind also nicht mehr rein endlicher Natur. (Stimmt das wirklich so?)}}'."\n",
                       'Zum anderen können wir aktual unendlich kleine ganze Zahlen mit den Superial-Zahlen definieren,'."\n".
                     'mit denen wir in \lm{ \s } Schritten, die eine Größe von \lm{ \s^{-1} } haben, von Null bis an, aber ausschließlich der Eins zählen können.'."\n".
-                    'Das bedeutet, dass jedes Teilstück, dass wir mit dem Koeffizienten \lm{ a_{-1} \in \mathbb{N} } von \lm{ \s^{-1} }, also mit \lm{ a_{-1} \cdot \s^{-1} },'."\n".
-                    'über \lm{ 2 \cdot ω } Schritte, schließlich im Endlichen Koeffizienten \lm{ a_{0} \in \mathbb{A}_{\S} }'."\n".
+                    'Das bedeutet, dass mit jedem Punkt, den wir mit dem Koeffizienten \lm{ n }, \lm{ z } oder \lm{ z^{-} } von \lm{ \s^{-1} },'."\n".
+                    'also angelehnt an \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-natuerliche-Vorgaenger-s} mit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}^{-1}_{\Z}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n \cdot \s^{-1}  &  \text{ falls } a = 0  \\\\  a + z \cdot \s^{-1}  &  \text{ falls } 0 < a < 1  \\\\  1 + z^{-} \cdot \s^{-1}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  \;\;  ,  }'),
+                    ))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
+                Title => '\small{In Stellenwert-Notation …}',
+                TitleVis => 'In Stellenwert-Notation:', ParagraphList => array(
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}^{-1}_{\Z}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} .*〈 n *〉  &  \text{ falls } a = 0  \\\\  *〈 a *〉.*〈 z *〉  &  \text{ falls } 0 < a < 1  \\\\  *〈 1 *〉.*〈 z^{-} *〉  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
+                    ))),
+
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'über \lm{ 2 \cdot ω } Schritte je Koeffizient \lm{ a } im Endlichen'."\n".
                     'von Null bis ausschließlich Eins zählen.'."\n".
-                    'Dies wären dann aber \lm{ 2 \cdot ω \cdot \s } Schritte, wenn \lm{ a_{0} } jedes Teilstück von \lm{ \s }'."\n".
-                    'adressieren würde.'."\n",
-                      'Nun können es aber nur \lm{ \s } Zählschritte der Größe \lm{ \s^{-1} } von Null bis ohne Eins sein, wenn wir \jump{OM:SupNum:Ableitungen-Integrale}{die Ableitungen und das Integral},'."\n".
+                    'Dies wären dann aber \lm{ 2 \cdot ω \cdot \s } Schritte, wenn \lm{ a } jeden Punkt von \lm{ \s }'."\n".
+                    'adressieren würde.'."\n".
+                    'Angelehnt an Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen}'."\n".
+                    'können wir die Menge der Punktkoordinaten schreiben als:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}^{-1}_{\Z}}  =  \\\  \quad *\{  \quad\,  0, \s^{-1}, 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{1}{2} - 2 \s^{-1},\; \tfrac{1}{2} - \s^{-1},\; \tfrac{1}{2},\; \tfrac{1}{2} + \s^{-1},\; \tfrac{1}{2} + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{2}{3} - 2 \s^{-1},\; \tfrac{2}{3} - \s^{-1},\; \tfrac{2}{3},\; \tfrac{2}{3} + \s^{-1},\; \tfrac{2}{3} + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, 1 - 3 \s^{-1}, 1 - 2 \s^{-1}, 1 - \s^{-1}   \quad *\}  }'),
+                    ))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
+                Title => '\small{In Stellenwert-Notation …}',
+                TitleVis => 'In Stellenwert-Notation:', ParagraphList => array(
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}^{-1}_{\Z}}  =  \\\  \quad *\{  \;\;\;\,  .*〈 0 *〉,\; .*〈 1 *〉,\; .*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{1}{2} *〉.*〈 -2 *〉,\; *〈 \tfrac{1}{2} *〉.*〈 -1 *〉,\; \tfrac{1}{2},\; *〈 \tfrac{1}{2} *〉.*〈 1 *〉,\; *〈 \tfrac{1}{2} *〉.*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{2}{3} *〉.*〈 -2 *〉,\; *〈 \tfrac{2}{3} *〉.*〈 -1 *〉,\; \tfrac{2}{3},\; *〈 \tfrac{2}{3} *〉.*〈 1 *〉,\; *〈 \tfrac{2}{3} *〉.*〈2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, *〈 1 *〉.*〈 -3 *〉,\; *〈 1 *〉.*〈 -2 *〉,\; *〈 1 *〉.*〈 -1 *〉   \quad *\}  }'),
+                    ))),
+
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Nun können es aber nur \lm{ \s } Zählschritte der Größe \lm{ \s^{-1} } von Null bis ohne Eins sein, wenn wir \jump{OM:SupNum:Ableitungen-Integrale}{die Ableitungen und das Integral},'."\n".
                     'wie geschehen, über die Superial-Zahlen definieren.'."\n".
-                    'Und dazu passend ist es auch offensichtlich, dass \lm{ a_{0} } nicht alle \lm{ \s } dieser Teilstücke'."\n".
+                    'Und dazu passend ist es auch offensichtlich, dass \lm{ a } nicht alle \lm{ \s } der Punkte'."\n".
                     '\jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{als Koeffizient adressieren} kann:'."\n",
-                      'So können zum Beispiel nicht die Punkte \lm{ \frac{ k }{ 2^{ω} } }, mit \lm{ k \in \mathbb{N}^{+} }, durch \lm{ a_{0} \in \mathbb{A}_{\S} } adressiert werden,'."\n".
-                    'weil \lm{ a_{0} } diese Werte nicht annehmen kann.'."\n".
-                    'Nach dem Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} ist zum Beispiel \lm{ a_{0} = \sqrt{2} = \frac{ 2^{\frac{1}{2}} \cdot 2^{ω} }{ 2^{ω} } }'."\n".
+                      'So können zum Beispiel in der Menge der Superial-Zahlen nicht die Punkte \lm{ \frac{ k }{ 2^{ω} } }'."\n".
+                    'der arithmetischen Struktur der Geometrie adressiert werden,'."\n".
+                    'weil \lm{ x \in \lbrack0, 1\lbrack_{\mathbb{S}^{-1}_{\Z}} } diesen Wert wegen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} *) *( k \in \mathbb{N}^{+} *)  *[  x  \neq  \frac{ k }{ 2^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( a \in [0, 1[_{\mathbb{A}_{\S}} *) *( z \in \mathbb{Z} *)  *[  a + z \cdot \s^{-1}  \neq  \frac{ k }{ 2^{ω} }  *]  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  a + \frac{ z }{ \s }  \neq  \frac{ k }{ 2^{ω} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a + \frac{ z }{ 2^{ω} 3^{ω} 5^{ω} 7^{ω} 11^{ω} \cdots }  \neq  \frac{ k }{ 2^{ω} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'nicht annehmen kann.'."\n".
+                    'Es kann zwar \lm{ a = 0 } sein, aber \lm{ z } kann nicht die unendlichen Potenzen der Primzahlen, außer \lm{ 2^{ω} }, eliminieren.'."\n",
+                      'Nach dem Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} ist zum Beispiel \lm{ a = \sqrt{2} = \frac{ 2^{\frac{1}{2}} \cdot 2^{ω} }{ 2^{ω} } }'."\n".
                     'interessanterweise adressierbar.'."\n",
-                      'Welche Koeffizienten adressierbar sind, damit beschäftigen wir uns im ersten Abschnitt dieser Seite:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}^{-1}_{\Z}}  =  \\\  \quad *\{  \quad\,  0, \s^{-1}, 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{\sqrt{2}}{2} - 2 \s^{-1},\; \tfrac{\sqrt{2}}{2} - \s^{-1},\; \tfrac{\sqrt{2}}{2},\; \tfrac{\sqrt{2}}{2} + \s^{-1},\; \tfrac{\sqrt{2}}{2} + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{\sqrt{3}}{2} - 2 \s^{-1},\; \tfrac{\sqrt{3}}{2} - \s^{-1},\; \tfrac{\sqrt{3}}{2},\; \tfrac{\sqrt{3}}{2} + \s^{-1},\; \tfrac{\sqrt{3}}{2} + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, 1 - 3 \s^{-1}, 1 - 2 \s^{-1}, 1 - \s^{-1}   \quad *\}  }'),
+                    ))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
+                Title => '\small{In Stellenwert-Notation …}',
+                TitleVis => 'In Stellenwert-Notation:', ParagraphList => array(
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}^{-1}_{\Z}}  =  \\\  \quad *\{  \;\;\;\,  .*〈 0 *〉,\; .*〈 1 *〉,\; .*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{\sqrt{2}}{2} *〉.*〈 -2 *〉,\; *〈 \tfrac{\sqrt{2}}{2} *〉.*〈 -1 *〉,\; \tfrac{\sqrt{2}}{2},\; *〈 \tfrac{\sqrt{2}}{2} *〉.*〈 1 *〉,\; *〈 \tfrac{\sqrt{2}}{2} *〉.*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{\sqrt{3}}{2} *〉.*〈 -2 *〉,\; *〈 \tfrac{\sqrt{3}}{2} *〉.*〈 -1 *〉,\; \tfrac{\sqrt{3}}{2},\; *〈 \tfrac{\sqrt{3}}{2} *〉.*〈 1 *〉,\; *〈 \tfrac{\sqrt{3}}{2} *〉.*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, *〈 1 *〉.*〈 -3 *〉,\; *〈 1 *〉.*〈 -2 *〉,\; *〈 1 *〉.*〈 -1 *〉   \quad *\}  }'),
+                    ))),
+
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Welche Koeffizienten adressierbar sind, damit beschäftigen wir uns im ersten Abschnitt dieser Seite:'."\n".
                     '\italic{\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}}.'."\n".
                     'Wie wir oben in Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}'."\n".
-                    'schon festgestellt haben, müssen es genau \lm{ \frac{ \s }{ 2ω } } sein.'."\n".
+                    'schon festgestellt haben, müssen es genau \lm{ \frac{ \s }{ 2ω } } sein.'."\n",
+                      'Es ist für mich nicht so einfach, diese vermeintliche Doppelung in Worte zu fassen, merke ich, aber ich versuche es nachfolgend.'."\n".
+                    'Zunächst möchte ich aber Sicherheit schaffen, dass beides einender entsprechen muss.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Woher wissen wir sicher, wieviele Teilstücke der Teilung durch \lm{ \s } wir mit unseren Koeffizienten adressieren können?} \\\\'."\n".
-                    'Wir wissen, dass die Adressierung von \lm{ \frac{ \s }{ 2ω } } Koeffizienten korrekt sein muss, weil wir gezeigt haben, dass wir eine Ableitung'."\n".
+                  '\condb{Woher wissen wir so sicher, wieviele Punkte der Teilung durch \lm{ \s } wir mit unseren Koeffizienten adressieren können?} \\\\'."\n".
+                    'Wir wissen, dass die Adressierung von \lm{ \frac{ \s }{ 2ω } } rein endlichen Koeffizienten von Null bis Eins korrekt sein muss,'."\n".
+                    'weil wir gezeigt haben,\color{*Bearb}{(Link zum Abschnitt)} dass wir eine Ableitung'."\n".
                     'durch ein Integral genau dann Rückgängig machen können, wenn wir davon ausgehen, dass wir über \lm{ \s } Summanden der Größe \lm{ \s^{-1} }'."\n".
                     'pro Einheit Eins in diesen Schritten zählend summieren.'."\n".
                     'Hätten wir mehr oder weniger Schritte als \lm{ \s }, dann würde es nicht passen und'."\n".
-                    'die Integration wäre nicht die gesuchte Umkehrung der Ableitung.'."\n".
-                    'Und, dass wir \lm{ 2 \cdot ω } aktual unendlich kleine ganze Schritte pro adressierten Koeffizienten haben, scheint mir unstrittig.'."\n".
+                    'die Integration wäre nicht die gesuchte Umkehrung der Ableitung.'."\n",
+                      'Dass wir jedoch \lm{ 2 \cdot ω } aktual unendlich kleine ganze Schritte pro rein endlichem adressierten Koeffizienten haben, scheint mir unstrittig.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Wie können wir diese bizarr anmutende Doppelung von \lm{ \s } interpretieren und deuten?} \\\\'."\n".
                     'In beiden Fällen teilen wir die Strecke zwischen Null bis ohne Eins in \lm{ \s } Teile ein.'."\n".
                     'Beide Male hat die Einteilung den einheitlichen Abstand von \lm{ \s^{-1} }.'."\n",
-                      'Im Falle der Teilung der Strecke durch alle endlichen Primzahlen in der vollständigen induktiven Potenz \lm{ ω }'."\n".
+                      'Das bedeutet, dass in beiden Fällen die ersten von Null beginnenden Punkte der Teilung'."\n".
+                    'durch \lm{ n \cdot \s^{-1} }, mit \lm{ n \in \mathbb{N} }, zu adressieren sind.'."\n".
+                    'Nun gehen für \lm{ n } aber nach der ersten vollständigen Induktion die Elemente in \lm{ \mathbb{N} } aus,'."\n".
+                    'ohne, dass wir uns zu einem endlichen Koeffizienten vorgearbeitet hätten, der größer als Null wäre.'."\n".
+                    'Das Mysterium findet dann im Übergang der endlichen Koeffizienten zu den nächst höheren statt;'."\n".
+                    'aus der Sicht der unendlich kleinen Schritte dann im Übergang ins unendlich Große.'."\n",
+                      'Aus der Perspektive der Teilung ist das alles sehr symmetrisch und harmonisch.'."\n".
+                    'Aus der Perspektive der Schritte und der Adressierung bekommen wir einen bemerkenswerten Mix von'."\n".
+                    'Koeffizienten der Mengen \lm{ \mathbb{N} }, \lm{ \mathbb{Z} }, \lm{ \mathbb{Z}^{-} } sowie'."\n".
+                    '\lm{ \mathbb{A}_{\S} }, wobei letztere Menge teilweise oder sogar ganz für die realen Koeffizienten der'."\n".
+                    'algebraischen Zahlen steht.'."\n".
+                    'Durch Mengen lm{ \mathbb{N} } und \lm{ \mathbb{Z}^{-} }, die sich schließlich zu \lm{ \mathbb{Z} } vereinigen,'."\n".
+                    'ergibt sich dann noch eine Asymmetrie, die dem Zählen geschuldet ist.'."\n",
+                      'Der Teilung durch \lm{ \s } sind diese komplexen Zusammenhänge der Mengen und deren Asymmetrie'."\n".
+                    'sowie deren Mischung von aktual unendlichen und dann wieder endlichen Koeffizienten zunächst nicht anzusehen.'."\n".
+                    'Wir könnten glaube, diese Struktur ließe sich einfach so adressieren, wie endliche Strukturen oder Mengen von Punkten.'."\n",
+                      'Und dann stellt sich wieder heraus, dass sich dies alles im wesentlichen wie endliche Zahlen verhält,'."\n".
+                    'nur im aktual unendlich Kleinen und Großen gemischt.'."\n",
+                      'Es stellt sich auch die Frage im Sinne der Ordinalzahlen:'."\n".
+                    'Welche Zahlenmengen werden eigentlich zum Beispiel durch die Werte \lm{ 2^{ω} } und \lm{ \s } repräsentiert?'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      '\color{*Bearb}{Im Falle der Teilung der Strecke durch alle endlichen Primzahlen in der vollständigen induktiven Potenz \lm{ ω }'."\n".
                     'haben die sich ergebenden Punkte keine aktual unendlichen Summanden.'."\n".
-                    'Und es werden alle Punkte der Teilung gezählt.'."\n",
+                    'Und es werden alle Punkte der Teilung gezählt. (Das schein mit verkehrt!)}'."\n",
                       'Im Falle der Zählschritte zählen wir im Stellenwertsystem der Superial-Zahlen in der ersten aktual unendlich kleinen'."\n".
                     'Potenz \lm{ \s^{-1} } in ganzzahligen Schritten je adressiertem Koeffizienten alle ganzen Zahlen und'."\n".
                     'nur bei der Null die natürlichen Zahlen und bei der Eins nur die negativen ganzen Zahlen.'."\n".
@@ -545,7 +639,8 @@
                   array( 'text', array( text => array(
                     'Es ist, als wenn die prozesshafte Beschreibung eine gewisse kleine Imbalance braucht, die dem Zählen ja auch schon innewohnt.'."\n".
                     'Die Struktur, die \lm{ \s } beschreibt, verrutscht dabei zum einen ins aktual unendlich Große und zum anderen dann wieder ins aktual'."\n".
-                    'unendlich Kleine; beide Male kombiniert mit dem Endlichen.'."\n".
+                    'unendlich Kleine; beide Male kombiniert mit dem Endlichen.'."\n",
+                      'Es erscheint ein wenig wie ein Wunder, dass beides exakt einander entspricht, ja entsprechen muss.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
