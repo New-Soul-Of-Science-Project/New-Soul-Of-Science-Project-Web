@@ -71,6 +71,8 @@
           'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-Ergebnis' => array( headline_text => 'SN.AbIn.17'),
 
         'OM:SupNum:Ableitungen-Integrale:Integration' => array( headline_text => 'Die Integration'/* , headline_text_short => 'XXX'*/),
+          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Ableitung-mit-x-plus-s-tel-Kurznotation' => array( headline_text => 'SN.AbIn.IN.21'),
+          'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation' => array( headline_text => 'SN.AbIn.IN.22'),
 
         'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen' => array( headline_text => 'Nähere Untersuchung bestimmter Summen'/* , headline_text_short => 'XXX'*/),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins' => array( headline_text => 'Summen zur Integration von \\latexmath{ 〈2 x〉․〈1〉 }'/* , headline_text_short => 'XXX' */),

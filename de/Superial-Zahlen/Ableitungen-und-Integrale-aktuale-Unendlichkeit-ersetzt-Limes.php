@@ -190,17 +190,9 @@
 
                   array( 'text', array( text => array(
                     '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX Integralrechnung'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  [ 0, k \cdot s [_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  ~\middle|~  *( \forall q \in [ 0, k ]_\mathbb{Q} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } q = 0  \\\\  q \cdot s + z  &  \text{ falls } 0 < q < k  \\\\  k \cdot s + z^{-}  &  \text{ falls } q = k  \end{cases}  *]  *\}  }'),
                       array( display => 'on',  latex => '{  \sum^{ s - 1 }_{ i = 0 } s^{-1}  =  \sum_{ \forall [ 0, s [_{\mathbb{S}_{\N}} } s^{-1}  =  1  }'),
                       array( display => 'on',  latex => '{  \sum^{ k \cdot s - 1 }_{ i = 0 } s^{-1}  =  \sum_{ \forall [ 0, k \cdot s [_{\mathbb{S}_{\N}} } s^{-1}  =  k  }'),
@@ -209,14 +201,6 @@
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:XXX', text =>
                       
@@ -227,24 +211,37 @@
                       'Bei der Integration addieren wir nämlich all die unendlich vielen und superial kleinen Differenzen des Abstands \lm{ \s^{-1} } der Ableitung als'."\n".
                     'superial kleine, feine oder schmale Streifen einer Fläche auf.'."\n".
                     'Diese Streifen müssen wir dann in einer unendlichen Summe durchzählen und aufsummieren.'."\n",
-                      'Zum Einstieg die Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins} vorab in der neuen Notation:'."\n"))),
+                      'Zum Einstieg die Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins} vorab in der neuen Notation:'."\n".
+                    ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }',
-                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Wenn im Folgenden \lm{ n } Element der Menge aller ganzen Superial-Zahlen \lm{ \mathbb{S}_{Z} } einschließlich Null und ausschließlich \lm{ x \s^{1} } ist,'."\n".
                     'können wir die Integration über folgende Summe ausdrücken:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  \in  [0;〈x〉_{1}[  \subset  \mathbb{S}_{\Z}  }'),
                       array( display => 'on',  latex => '{  f(x)  =  f(0) + \sum_{ n \in [0;〈x〉_{1}[ }  ․*〈f\'(n)*〉  }'),
                       array( display => 'on',  latex => '{  \int_{0}^{x} f\'(n) \,dn  :=  \sum_{ n \in [0;〈x〉_{1}[ }  ․*〈f\'(n)*〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Damit haben wir die vorherige Ableitung wieder rückgängig gemacht, wenn wir eine schlüssige Definition der ganzen Superial-Zahlen \lm{ \mathbb{S}_{Z} } finden.'."\n",
-                      'Wie könnten ganze Superial-Zahlen nun aussehen?'."\n".
+                    'XXX SN.Ein → SN.AbIn.IN: Dort nach dem text \quote{Nun können wir das allgemeine Integral recht einfach definieren:}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \int_{0}^{x} f\'(n) \,dn  \widehat{=}  \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) \cdot s^{-1}  }'),
+                      array( display => 'on',  latex => '{  f(x)  :=  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) \cdot s^{-1}  }'),
+                      array( display => 'on',  latex => '{  f(x)  :=  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit haben wir die vorherige Ableitung wieder rückgängig gemacht, wenn wir eine schlüssige Definition der ganzen Superial-Zahlen \lm{ \mathbb{S}_{Z} } finden.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Ganze Superial-Zahlen \lm{ \mathbb{S}_{\Z} }} \\\\'."\n".
+                    'Wie könnten ganze Superial-Zahlen nun aussehen?'."\n".
                     'Wir haben es zuvor ja schon angedeutet:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Die gebrochenen Summanden mit negativer Potenz von \lm{ \s } sollten Null sein.',
@@ -258,7 +255,7 @@
                     'mit der wir uns hier erst später näher beschäftigen wollen.'."\n",
                       'Beispiele für ganze Superial-Zahlen sind:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{Q} *) *( \forall z \in \mathbb{Z} *) *[  〈a〉〈b〉〈z〉․  \in  \mathbb{S}_{\Z}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  〈-5〉․  \in  \mathbb{S}_{\Z}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 - \frac{4}{25} *〉*〈 \frac{3}{2} *〉〈-5〉․  \in  \mathbb{S}_{\Z}  }'),
@@ -273,14 +270,70 @@
                     'haben diese sehr interessante Eigenschaften und lassen uns Zahlen besser verstehen.'."\n"))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{In Arbeit …}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:XXX', text =>
+                      
+                'Integration als Umkehrung der Ableitung', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
+                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  *〈 f(〈x〉․〈1〉) - f(x) *〉_{1}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  *〈 f(〈x〉․〈1〉) *〉_{1} - *〈 f(x) *〉_{1}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 f(〈x〉․〈1〉) *〉_{1}  =  f\'(x) + *〈 f(x) *〉_{1}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 f(〈x〉․〈1〉) *〉_{1}  =  *〈 f(x) *〉*〈 f\'(x) *〉.  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(〈x〉․〈1〉)  =  *〈 f(x) *〉.*〈 f\'(x) *〉  }',
+                                          label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Ableitung-mit-x-plus-s-tel-Kurznotation', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Ableitung-mit-x-plus-s-tel-Kurznotation}', label_incr => true),
+                      array( display => 'on',  latex => '{  f(x)  :=  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉  }',
+                                          label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Ableitung-mit-x-plus-s-tel-Kurznotation}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  ?=  \\\ \qquad\;\; \frac{ \displaystyle{ *( f(0) + \!\!\! \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉 *) } - \displaystyle{ *( f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉 *) } }{ ․〈1〉 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \\\ \qquad\qquad\quad\;\; \frac{ \displaystyle{ *( \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉 *) } - \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉 *) } }{ ․〈1〉 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \\\ \qquad\qquad\quad\;\; \displaystyle{ *( \sum_{ \forall n \in [0, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) *) } - \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) *) }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \\\ \qquad\quad *( \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) *) } + \displaystyle{ *( \sum_{ \forall n \in [x, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) *) } *) - \displaystyle{ *( \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) *) }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  ?=  \sum_{ \forall n \in [x, 〈x〉․〈1〉[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  f\'(x)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  f(x)  ?=  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 \frac{ f(〈n〉․〈1〉) - f(n) }{ ․〈1〉 } *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! *( f(〈n〉․〈1〉) - f(n) *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Durch das Einsetzen von Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Ableitung-mit-x-plus-s-tel-Kurznotation}'."\n".
+                    'für \lm{ f(〈n〉․〈1〉) } können wir schreiben:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! *( *〈 f(n) *〉.*〈 f\'(n) *〉 - f(n) *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Womit wir wieder bei der Definition des Integrals in Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}'."\n".
+                    'sind, was zu zeigen war.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
