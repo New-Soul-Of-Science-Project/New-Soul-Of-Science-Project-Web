@@ -642,6 +642,30 @@
                     'unendlich Kleine; beide Male kombiniert mit dem Endlichen.'."\n",
                       'Es erscheint ein wenig wie ein Wunder, dass beides exakt einander entspricht, ja entsprechen muss.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:X', text =>
+                      
+                'Die superiale Basis \lm{ \s } und die Ordinalzahl \lm{ ω^{ω} } im Strukturvergleich', subline =>
+                  'Vom Wert her gleich und doch verscheieden')),
+                  array( 'text', array( text => array(
+                    'Betrachten wir die arithmetische Struktur der Geometrie \lm{ \s } und die Adressierbarkeit ihrer Punkte,'."\n".
+                    'die durch die Teilung durch \lm{ \s } entstehen, dann ist es interessant, dass wir durch'."\n".
+                    'den Beweis der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} auch in'."\n".
+                    'den Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}} eine Wertgleichheit zu \lm{ \s } finden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  s  =  ω^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'In der Menge der Ordinalzahlen \lm{ \mathbb{On} } hat \lm{ ω^{ω} } genau so viele Vorgänger, wie ihr Wert groß ist.'."\n".
+                    'Dies Gilt auch für \lm{ \s } in der Menge der natürlichen Superial-Zahlen \lm{ \mathbb{S_{\N}} }.'."\n",
+                      'Allerdings haben in \lm{ \mathbb{S_{\N}} } alle Zahlen einen direkten Vorgänger, außer die Null.'."\n".
+                    'Hingegen haben in \lm{ \mathbb{On} } nicht nur die Null, sondern alle sogenannten Limeszahlen, wie auch \lm{ ω } und selbst \lm{ ω^{ω} },'."\n".
+                    'keine Vorgänger.'."\n".
+                    'Dieser strukturelle Unterschied, trotz Wertgleichheit, ist sehr bemerkenswert und bedarf einer näheren Untersuchung.'."\n",
+                      '\color{*Bearb}{In Arbeit …}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eigenschaften:VergleichMitHyperreellenZahlen'),

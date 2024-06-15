@@ -287,7 +287,7 @@
           'OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
 
-        'OM:SupNum:Struktur-Geometrie:XXX' => array( headline_text => 'XXX'/* , headline_text_short => 'XXX' */),
+        // 'OM:SupNum:Struktur-Geometrie:Diskussion' => array( headline_text => 'Diskussion'/* , headline_text_short => 'XXX' */),
       ),
     ),
     'OM:SupNum:Ueberrationalitaetsvermutung' => array(
