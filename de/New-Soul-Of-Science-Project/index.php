@@ -1312,7 +1312,7 @@
                   // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
                   array( 'text', array( Shape => 'italic', text => array(
                         'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
-                        'die Magie, Dinge zum Schweben zu bringen.'."\n".
+                        'hat die Magie, Dinge zum Schweben zu bringen.'."\n".
                         ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
@@ -1464,8 +1464,9 @@
                         //'die wir per Assoziation einander zuordnen. \\\\ '."\n".
                         'die wir assoziativ miteinander verbinden. \\\\ '."\n".
                         'In der physikalischen Realität entspringen die Eigenschaften direkt dem strukturellen Abbild eines Symbols – jedem Ding. \\\\ '."\n".
-                        '\\small{\\color{*TitleAdd}{Daher sind Personen die stärksten Symbole, denn ihr Aussehen und ihre Eigenschaften fallen zusammen. \\\\ '."\n".
-                        'Ihre Körper und ihre Seelen sind individuell und eins.}}'."\n".
+                        '\\small{\\color{*TitleAdd}{Daher sind Lebewesen die stärksten Symbole. \\\\ '."\n".
+                        'Denn ihr Aussehen – ihre Struktur – und ihre Eigenschaften fallen zusammen. \\\\ '."\n".
+                        'Ihre Körper und ihre Seelen sind individuell und Eins.}}'."\n".
                         ''),
                         addtext => '')),
                       
