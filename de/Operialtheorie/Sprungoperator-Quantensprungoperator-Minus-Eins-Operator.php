@@ -13,19 +13,15 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '\\bold{Operator \\term{-1}}',
+                    '\\bold{Operator \lm{ -1 }}',
                     '• Nur als Vorzeichen zählt der einen hoch.',
                     '• Als Verbindungsoperator ändert er nichts.',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Sprungoperator:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Sprungoperator:Vortext:X', text =>
                                            
                 'Was ist der Minus-Eins-Operator?', subline =>
                   '')),
@@ -71,16 +67,11 @@
                     'Auf die philosophische und auch physikalische Bedeutung, kommen wir im weiteren Verlauf'."\n".
                     'noch zu sprechen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Sprungoperator:Vortext:XXX', text =>
+                  /* array( 'headline', array( jump_name => 'OM:OT:Sprungoperator:Vortext:XXX', text =>
                                            
-                'XXX')),
+                'XXX')), */
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                     
                   array( 'jumplist',
@@ -103,14 +94,10 @@
                     )),
                   
                   array( 'text', array( text => array(
-                    'Verweis auf das Hauptkapitel zu neutralen Elementen …'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Verweis auf das Hauptkapitel zu neutralen Elementen …'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
                                            
                 'Neutrale Elemente des Minus-Eins-Operators', subline =>
                   '')),
