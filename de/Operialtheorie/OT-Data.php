@@ -42,8 +42,8 @@
       text_undertitel_h2 => 'Zählen und dann weiter …',
       text_titel_discr_h3 => 'Das Zählen, Addieren, Multiplizieren und den Exponenten durch Zählen verbinden. Der Zusammenhang zwischen dem Zählen, den Grundrechenarten und deren Erweiterungen, auch auf die Vorgänger des Zählens',
       jump_ary => array(
-        'OM:OT:Home:Inhalt' => array( headline_text => 'Inhalt'/* , headline_text_short => 'XXX' */),
-        'OM:OT:Home:Lexikon' => array( headline_text => 'Lexikon'/* , headline_text_short => 'XXX' */),
+        'OM:OT:Home:Inhalt' => array( headline_text => 'Inhalt'/* , headline_text_short => 'X' */),
+        'OM:OT:Home:Lexikon' => array( headline_text => 'Lexikon'/* , headline_text_short => 'X' */),
       ),
     ),
     'OM:OT:Einleitung' => array(
@@ -58,26 +58,26 @@
       text_undertitel_h2 => 'Die Grundlagen der Arithmetik erhellen',
       text_titel_discr_h3 => '',
       jump_ary => array(
-          'OM:OT:Einleitung:Vortext:Equ-Operator-1-ist-Addition' => array( headline_text => 'OT.Ein.3'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Vortext:Equ-Operator-2-ist-Multiplikation' => array( headline_text => 'OT.Ein.4'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Vortext:Equ-Operator-3-ist-Potenz' => array( headline_text => 'OT.Ein.5'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv' => array( headline_text => 'OT.Ein.6'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Vortext:Equ-Tetration-Beispiel' => array( headline_text => 'OT.Ein.9'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Vortext:Equ-niedere-Verkettung' => array( headline_text => 'OT.Ein.14'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut' => array( headline_text => 'OT.Ein.15'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Einleitung:Vortext:Equ-Operator-1-ist-Addition' => array( headline_text => 'OT.Ein.3'),
+          'OM:OT:Einleitung:Vortext:Equ-Operator-2-ist-Multiplikation' => array( headline_text => 'OT.Ein.4'),
+          'OM:OT:Einleitung:Vortext:Equ-Operator-3-ist-Potenz' => array( headline_text => 'OT.Ein.5'),
+          'OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv' => array( headline_text => 'OT.Ein.6'),
+          'OM:OT:Einleitung:Vortext:Equ-Tetration-Beispiel' => array( headline_text => 'OT.Ein.9'),
+          'OM:OT:Einleitung:Vortext:Equ-niedere-Verkettung' => array( headline_text => 'OT.Ein.14'),
+          'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut' => array( headline_text => 'OT.Ein.15'),
                    
-        'OM:OT:Einleitung:Inverse-Operatoren' => array( headline_text => 'Inverse Operatoren'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Wurzel-Definition' => array( headline_text => 'OT.Ein.Inv.2'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Logarithmus-Definition' => array( headline_text => 'OT.Ein.Inv.3'/* , headline_text_short => 'XXX' */),
+        'OM:OT:Einleitung:Inverse-Operatoren' => array( headline_text => 'Inverse Operatoren'/* , headline_text_short => 'X' */),
+          'OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Wurzel-Definition' => array( headline_text => 'OT.Ein.Inv.2'),
+          'OM:OT:Einleitung:Inverse-Operatoren:Equ-x-Logarithmus-Definition' => array( headline_text => 'OT.Ein.Inv.3'),
                    
-        'OM:OT:Einleitung:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Neutrale-Elemente:Equ-x-linksneutrales-Element' => array( headline_text => 'OT.Ein.NE.2'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Neutrale-Elemente:Equ-x-rechtsneutrales-Element' => array( headline_text => 'OT.Ein.NE.4'/* , headline_text_short => 'XXX' */),
+        'OM:OT:Einleitung:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'X' */),
+          'OM:OT:Einleitung:Neutrale-Elemente:Equ-x-linksneutrales-Element' => array( headline_text => 'OT.Ein.NE.2'),
+          'OM:OT:Einleitung:Neutrale-Elemente:Equ-x-rechtsneutrales-Element' => array( headline_text => 'OT.Ein.NE.4'),
                    
-        'OM:OT:Einleitung:Eigenschaften' => array( headline_text => 'Eigenschaften'/* , headline_text_short => 'XXX' */),
+        'OM:OT:Einleitung:Eigenschaften' => array( headline_text => 'Eigenschaften'/* , headline_text_short => 'X' */),
                    
-        'OM:OT:Einleitung:Andere-Moeglichkeiten' => array( headline_text => 'Andere Möglichkeiten'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Einleitung:Andere-Moeglichkeiten:Equ-Operial-Rekursiv-mit-Vorzeichen' => array( headline_text => 'OT.Ein.AM.1'/* , headline_text_short => 'XXX' */),
+        'OM:OT:Einleitung:Andere-Moeglichkeiten' => array( headline_text => 'Andere Möglichkeiten'/* , headline_text_short => 'X' */),
+          'OM:OT:Einleitung:Andere-Moeglichkeiten:Equ-Operial-Rekursiv-mit-Vorzeichen' => array( headline_text => 'OT.Ein.AM.1'),
       ),
     ),
     'OM:OT:Konstanzoperator' => array(
@@ -91,10 +91,10 @@
       text_undertitel_h2 => 'Die Basis von Allem',
       text_titel_discr_h3 => '',
       jump_ary => array(
-          'OM:OT:Konstanzoperator:Vortext:Equ-Vorzeichen-Minus-Zwei-a' => array( headline_text => 'OT.KonO.6'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Konstanzoperator:Vortext:Equ-c-Minus-Zwei-a-ist-c' => array( headline_text => 'OT.KonO.7'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Konstanzoperator:Vortext:Equ-Vorzeichen-Minus-Zwei-a' => array( headline_text => 'OT.KonO.6'),
+          'OM:OT:Konstanzoperator:Vortext:Equ-c-Minus-Zwei-a-ist-c' => array( headline_text => 'OT.KonO.7'),
 
-        'OM:OT:Konstanzoperator:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'XXX' */),
+        'OM:OT:Konstanzoperator:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'X' */),
       ),
     ),
     'OM:OT:Literatur' => array(
@@ -122,13 +122,13 @@
       text_undertitel_h2 => 'Sind die imaginären Operatoren die Rotationsoperatoren?',
       text_titel_discr_h3 => 'Die imaginären Operatoren könnten, nach dem Prinzip des Djet-Neheh-Dualismus, das Zählen als Basis mit Modulo in Verbindung bringen',
       jump_ary => array(
-          'OM:OT:Modulo-Operatoren:Vortext:Equ-Operial-i-Absolut' => array( headline_text => 'OT.ModO.1'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen-Beispiel-1' => array( headline_text => 'OT.ModO.2'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen-Beispiel-3' => array( headline_text => 'OT.ModO.4'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo' => array( headline_text => 'OT.ModO.6'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen' => array( headline_text => 'OT.ModO.8'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Modulo-Operatoren:Vortext:Equ-Operial-i-Absolut' => array( headline_text => 'OT.ModO.1'),
+          'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen-Beispiel-1' => array( headline_text => 'OT.ModO.2'),
+          'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen-Beispiel-3' => array( headline_text => 'OT.ModO.4'),
+          'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo' => array( headline_text => 'OT.ModO.6'),
+          'OM:OT:Modulo-Operatoren:Vortext:Equ-Modulo-Zaehlen' => array( headline_text => 'OT.ModO.8'),
 
-        'OM:OT:Modulo-Operatoren:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'XXX' */),
+        'OM:OT:Modulo-Operatoren:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'X' */),
       ),
     ),
     'OM:OT:Sprungoperator' => array(
@@ -142,11 +142,11 @@
       text_undertitel_h2 => 'Die Basis des Zählens',
       text_titel_discr_h3 => '',
       jump_ary => array(
-          'OM:OT:Sprungoperator:Vortext:Equ-Vorzeichen-Minus-Eins-a' => array( headline_text => 'OT.SpruO.6'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Sprungoperator:Vortext:Equ-c-Minus-Eins-a-ist-c' => array( headline_text => 'OT.SpruO.7'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Sprungoperator:Vortext:Equ-Vorzeichen-Minus-Eins-a' => array( headline_text => 'OT.SpruO.6'),
+          'OM:OT:Sprungoperator:Vortext:Equ-c-Minus-Eins-a-ist-c' => array( headline_text => 'OT.SpruO.7'),
                    
-        'OM:OT:Sprungoperator:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Sprungoperator:Neutrale-Elemente:Equ-Minus-Eins-Einbettung' => array( headline_text => 'OT.SpruO.NE.8'/* , headline_text_short => 'XXX' */),
+        'OM:OT:Sprungoperator:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'X' */),
+          'OM:OT:Sprungoperator:Neutrale-Elemente:Equ-Minus-Eins-Einbettung' => array( headline_text => 'OT.SpruO.NE.8'),
       ),
     ),
     'OM:OT:Zaehloperator' => array(
@@ -161,14 +161,14 @@
       text_undertitel_h2 => 'Die Grundlage der hierarchischen Operatoren ist das Zählen',
       text_titel_discr_h3 => '',
       jump_ary => array(
-          'OM:OT:Zaehloperator:Vortext:Equ-Vorzeichen-Null-OP-ist-plus-Eins' => array( headline_text => 'OT.Zähl.4'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Zaehloperator:Vortext:Equ-Null-OP-ist-plus-Eins' => array( headline_text => 'OT.Zähl.5'/* , headline_text_short => 'XXX' */),
+          'OM:OT:Zaehloperator:Vortext:Equ-Vorzeichen-Null-OP-ist-plus-Eins' => array( headline_text => 'OT.Zähl.4'),
+          'OM:OT:Zaehloperator:Vortext:Equ-Null-OP-ist-plus-Eins' => array( headline_text => 'OT.Zähl.5'),
                    
-        'OM:OT:Zaehloperator:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Zaehloperator:Neutrale-Elemente:Null-Operator' => array( headline_text => 'Neutrale Elemente des Null-Operators'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Nachzeichen-Null-OP' => array( headline_text => 'OT.Zähl.NE.13'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht' => array( headline_text => 'OT.Zähl.NE.15'/* , headline_text_short => 'XXX' */),
-          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert' => array( headline_text => 'OT.Zähl.NE.18'/* , headline_text_short => 'XXX' */),
+        'OM:OT:Zaehloperator:Neutrale-Elemente' => array( headline_text => 'Neutrale Elemente'/* , headline_text_short => 'X' */),
+          'OM:OT:Zaehloperator:Neutrale-Elemente:Null-Operator' => array( headline_text => 'Neutrale Elemente des Null-Operators'/* , headline_text_short => 'X' */),
+          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Nachzeichen-Null-OP' => array( headline_text => 'OT.Zähl.NE.13'),
+          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht' => array( headline_text => 'OT.Zähl.NE.15'),
+          'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert' => array( headline_text => 'OT.Zähl.NE.18'),
       ),
     ),
     'OM:OT:Vorwort' => array(
@@ -182,7 +182,7 @@
       text_undertitel_h2 => 'Meine erste tief gehende eigene Entdeckung',
       text_titel_discr_h3 => '',
       jump_ary => array(
-        // 'OM:OT:Einleitung:Test-der-Notation' => array( headline_text => 'Test der Notation'/* , headline_text_short => 'XXX' */),
+        // 'OM:OT:Einleitung:Test-der-Notation' => array( headline_text => 'Test der Notation'/* , headline_text_short => 'X' */),
       ),
     ),
   );
