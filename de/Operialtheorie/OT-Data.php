@@ -179,7 +179,7 @@
       keywords => '',
       text_titel_h1 => 'Vorwort',
       text_titel_short => 'Vorwort',
-      text_undertitel_h2 => 'Meine erste tief gehende Entdeckung',
+      text_undertitel_h2 => 'Meine erste tief gehende eigene Entdeckung',
       text_titel_discr_h3 => '',
       jump_ary => array(
         // 'OM:OT:Einleitung:Test-der-Notation' => array( headline_text => 'Test der Notation'/* , headline_text_short => 'XXX' */),
