@@ -27,20 +27,9 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:X', text =>
                                            
                 'Herleitung der allgemeinen Operatoren Formeln', subline =>
                   '')),
@@ -138,7 +127,7 @@
                   array( 'text', array( text => array(
                     'Auf diese Weise gibt es eine klare absolute, weil explizite, Definition, die auch die Vorzeichen berücksichtigt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Vortext:X', text =>
                                            
                 'Genaue Betrachtung der niederen Tetration beziehungsweise des niederen Hyper-4-Operators', subline =>
                   '')),
@@ -192,12 +181,7 @@
                     )),
                   
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.Inv', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -209,13 +193,8 @@
                     ))),
                   array( 'text', array( text => array(
                     'Der neue x-Wurzeloperator ohne Häkchen links und mit zwei Häkchen rechts symbolisiert,'."\n".
-                    'dass der rechte Operand auf die andere Seite gebracht wurde.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'dass der rechte Operand auf die andere Seite gebracht wurde.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -235,12 +214,8 @@
                     )),
                   
                   array( 'text', array( text => array(
-                    'Verweis auf die Unterkapitel zu neutralen Elementen …'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Verweis auf die Unterkapitel zu neutralen Elementen …'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Grundsätzlich gibt es vom Prinzip her immer zwei neutrale Elemente,'."\n".
@@ -295,7 +270,7 @@
                     'ergibt also das linksseitige neutrale Element \\term{n__{rechts}}.'."\n",
                       'Dann schauen wir uns im Folgenden an, was sich für die konkreten Operatoren ergibt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
                                            
                 'Addition – neutrales Element', subline =>
                   '')),
@@ -374,7 +349,7 @@
                     'das zunächst neutral erscheint.'."\n".
                     'Diese „Neutralität“ ist der Grund, aus dem wir die Einbettung zunächst vereinfachend weglassen können.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
                                            
                 'Multiplikation – neutrales Element', subline =>
                   '')),
@@ -453,7 +428,7 @@
                     'das zunächst neutral erscheint.'."\n".
                     'Diese „Neutralität“ ist der Grund, aus dem wir die Einbettung zunächst vereinfachend weglassen können.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
                                            
                 'Potenz – neutrale Elemente', subline =>
                   '')),
@@ -576,12 +551,7 @@
                     )),
                   
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein.Eig', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -590,12 +560,7 @@
                       array( display => 'on',  latex => '{   *( \forall x \in \mathbb{N} \setminus \{0,1\} *) *[  *o( -x *o) 2 *o( -x *o) 2  =  2  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -615,12 +580,8 @@
                     )),
                   
                   array( 'text', array( text => array(
-                    'Hier wollen wir einmal experimentell andere Möglichkeiten untersuchen.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Hier wollen wir einmal experimentell andere Möglichkeiten untersuchen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Die rekursive Definition \\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Rekursiv}'."\n".
@@ -634,7 +595,7 @@
                   array( 'text', array( text => array(
                     'Dann sehen die kleineren Operatoren anders aus …'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:X', text =>
                                            
                 'Was ist dann der Null-Operator?', subline =>
                   '')),
@@ -676,7 +637,7 @@
                     'noch zu sprechen.'."\n",
                       'Dies ist also identisch mit der Version ohne zusätzlichem Vorzeichen in der rekursiven Definition.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:X', text =>
                                            
                 'Was ist dann der Minus-Eins-Operator?', subline =>
                   '')),
@@ -721,7 +682,7 @@
                     'noch zu sprechen.'."\n",
                       'Auch hier macht die Version mit zusätzlichem Vorzeichen keinen Unterschied.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:X', text =>
                                            
                 'Was ist dann der Minus-Zwei-Operator?', subline =>
                   '')),
@@ -763,7 +724,7 @@
                     'noch zu sprechen.'."\n",
                       'Ebenso hier macht die Version mit zusätzlichem Vorzeichen keinen Unterschied.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:X', text =>
                                            
                 'Die Versionen ohne und mit zusätzlichem Vorzeichen in der rekursiven Definition sind identisch', subline =>
                   '')),
@@ -779,24 +740,15 @@
                                                /* label_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:Equ-Operial-Rekursiv-mit-Vorzeichen', */label_text => '\\jumpname{OM:OT:Einleitung:Andere-Moeglichkeiten:Equ-Operial-Rekursiv-mit-Vorzeichen}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Dies gilt dann auch für die absolute Definition der Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Absolut}.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Dies gilt dann auch für die absolute Definition der Formel \\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Absolut}.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:XXX', text =>
+                  /* array( 'headline', array( jump_name => 'OM:OT:Einleitung:Andere-Moeglichkeiten:X', text =>
                                            
-                'XXX')),
+                '(In Arbeit …)')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))), */
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:OT:Zaehloperator'),

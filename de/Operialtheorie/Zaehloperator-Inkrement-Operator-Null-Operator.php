@@ -39,15 +39,10 @@
                     'und ist gleichzeitig selber einer der hierarchischen Operatoren.'."\n",
                       'Wir haben es also in der Operatoren-Hierarchie mit einer Selbstbezüglickeit zu tun.'."\n".
                     'Es handelt sich um eine selbstbezügliche und selbstähnliche, also um eine in sich rückgekoppelte, fraktale Struktur.'."\n".
-                    'Hier sehen wir eine große Strukturähnlichkeit mit der Physik der \\jump{OM:FrQFT:Home}{›fraktalen Quanten-Fluss-Theorie‹}.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:OT:Zaehloperator:Vortext:XXX', text =>
+                    'Hier sehen wir eine große Strukturähnlichkeit mit der Physik der \\jump{OM:FrQFT:Home}{›fraktalen Quanten-Fluss-Theorie‹}.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:OT:Zaehloperator:Vortext:X', text =>
                                            
                 'Herleitung des Zähloperators aus der Addition', subline =>
                   '')),
@@ -120,12 +115,8 @@
                     )),
                   
                   array( 'text', array( text => array(
-                    'Verweis auf das Hauptkapitel zu neutralen Elementen …'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Verweis auf das Hauptkapitel zu neutralen Elementen …'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:OT:Zaehloperator:Neutrale-Elemente:Null-Operator', text =>
                                            
