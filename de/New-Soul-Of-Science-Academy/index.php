@@ -34,7 +34,7 @@
                   array( 'text', array( text => array(
                     'Nachfolgend erste Ideen zu Themen, zu denen ich beitragen kann:'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:nSOSa:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSa:Home:Vortext:X', text =>
                       
                 'Die Welt unserer Gefühle und intentionalen Handlungen', subline =>
                   'Psychologie als sich selbst balancierender biologisch physikalischer Regelprozess \\\\ — unsere Ahnen verstanden so unser Leben, zeigen uns alte Symbole und Mythologien')),
@@ -54,6 +54,7 @@
                         'Neue Sicht auf die Psychosomatik',
                         'Yin und Yang',
                         'Trimurti: Brahma, Vishnu, Shiva',
+                        'Hekate, die Göttin in dreifacher Gestalt, jung, reif und alt',
                         'Hermesstab von Hermes-Trismegistos (Trimurti?), Hermes-Thot',
                         'Stein der Weisen, Herz-Chakra',
                         'Kundalini Yoga und Kundalini-Prozess',
@@ -63,7 +64,7 @@
                         'Mithraismus oder Mithraskult (Mithras, Cautes und Cautopates)',
                         '›Phönix aus der Asche‹',
                     ))),
-                  array( 'headline', array( jump_name => 'OM:nSOSa:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSa:Home:Vortext:X', text =>
                       
                 'Spiritualität, Glauben, Träumen, Schlafen, Intuition …', subline =>
                   'Die Kommunikation zwischen unserem Bewusstsein und unserem Unterbewusstsein')),
@@ -84,7 +85,7 @@
                       'Um diese zu verbessern hilft es, in einen transzendenten Modus zu kommen,'."\n".
                     'zum Beispiel durch guten Schlaf sowie durch Meditation und ähnliche Techniken.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:nSOSa:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSa:Home:Vortext:X', text =>
                       
                 'Die Grundlagenphysik aus Sicht von Regelprozessen', subline =>
                   'Angenommen jeder Existenz liegt ein sich selbst erhaltender Regelprozess zugrunde')),
@@ -105,6 +106,36 @@
                   array( 'text', array( text => array(
                     'Dies hängt mit einem tiefsinnigen naturphilosophischen Prinzip zusammen,'."\n".
                     'dass wir näher beleuchten wollen; mit dem Djet-Neheh-Dualismus, der in der Physik als (fraktales) Existenzprinzip erscheint.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:nSOSa:Home:Vortext:X', text =>
+                      
+                'Mit Primzahlen ins Unendliche', subline =>
+                  'Die Zahlentheorie der Analysis — Die arithmetische Struktur der Geometrie')),
+                  array( 'text', array( text => array(
+                    'Wir lernen aktual unendlich kleine und unendlich große Zahlen kennen,'."\n".
+                    'mit deren Hilfe wir auf intuitive Weise Ableitungen und Integrale definieren.'."\n".
+                    'Basis dieser Zahlen ist das neue Symbol \lm{ \s }, welches einen bestimmten genormten unendlich großen Wert hat,'."\n".
+                    'der über ein Produkt unendlich vieler Primzahlen definiert ist.'."\n",
+                      'Diese Zahlen sind in vielerlei Hinsicht bemerkenswert und verhalten sich im wesentlichen,'."\n".
+                    'wie algebraische Zahlen, die ins unendlich Kleine und Große erweitert sind.'."\n".
+                    'Darüber hinaus lernen wir einiges weitere und ebenso bemerkenswerte:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'es gibt ganze Zahlen bis ins unendlich Große',
+                        'es gibt unendlich kleine ganze Zahlen',
+                        'es gibt unendlich große Primzahlen',
+                        'jede rationale Zahl mal \lm{ \s } ist eine ganze Zahl',
+                        'sogar jede irrationale natürliche Wurzel mal \lm{ \s } ist eine ganze Zahl',
+                        'die genormte aktuale Unendlichkeit \lm{ ω } – die vollständige Induktion – ist das Produkt aller endlichen Primzahlen',
+                        '\lm{ \s } ist die genormte arithmetische Struktur der Geometrie',
+                        'wir erhalten einen tiefen und detaillierten Einblick in die Differenzialrechnung',
+                        'es eröffnet sich ein neuer Blick auf transzendente Zahlen',
+                        'in der Eulerschen Zahl im Gewand von \lm{ \e_{\s} } entdecken wir unendlich kleine Anteile',
+                        'die \lm{ \e }-Funktion auf Basis von \lm{ \e_{\s} } besitzt die unendlich feine Struktur des Pascalschen Dreiecks, der Binomialkoeffizienten',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Es tut sich eine fundamentale Struktur der Mathematik auf, die uns neu sehen lässt.'."\n".
+                    'Wir lernen, ganz intuitiv und natürlich mit aktualen Unendlichkeiten umzugehen und zu rechnen.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -127,7 +158,7 @@
                     '\\\\'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
-                      array( title => '\\color{*ContentItemDisabled}{Video Tour (geplant)}', startsign => '', //jumpname => 'XXX',
+                      array( title => '\\color{*ContentItemDisabled}{Video Tour (geplant)}', startsign => '', //jumpname => 'X',
                                 description => 'die YouTube-Vorträge'),
                       array( title => '\\color{*ContentItemDisabled}{Vorwort (geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => 'was mich bewegt – was ich bewegen möchte'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
@@ -162,10 +193,10 @@
             <br>
           
             <table border="0"> <colgroup> <col width="22"> <col width="300"> <col width="16"> <col width="362"> </colgroup>
-              <tr> <td valign="top">&rarr;</td> <td valign="top"><!a href="../de/XXX">
-              XXX<!/a> <span style="color: #A0A0A0">(geplant)</span></td> <td valign="top" style="color: #A0A0A0">
+              <tr> <td valign="top">&rarr;</td> <td valign="top"><!a href="../de/X">
+              (in Arbeit …)<!/a> <span style="color: #A0A0A0">(geplant)</span></td> <td valign="top" style="color: #A0A0A0">
                   &hellip;</td> <td valign="top" style="color: #A0A0A0">
-                  XXX</td> </tr>
+                    (in Arbeit …)</td> </tr>
             </table>
           <?php To_f_headline_add_hides_end( '          ', 'hideContent'); ?>
 
