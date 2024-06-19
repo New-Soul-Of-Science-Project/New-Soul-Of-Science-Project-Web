@@ -44,10 +44,10 @@
                       'Doch was ist eine Linie, um beim einfachsten Beispiel zu bleiben,'."\n".
                     'und wie können wir eine Linie aus Punkten aufbauen?'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Ein fundamentales Problem', subline =>
-                  'Hochstapelei')),
+                  'Keine Hochstapelei')),
                   array( 'text', array( text => array(
                     'Der Versuch eine Linie aus Punkten quasi aufzustapeln ist zum Beispiel'."\n".
                     'zum Scheitern verurteilt.'."\n",
@@ -64,7 +64,7 @@
                     'Auf diese Weise ist also kein Konstruieren einer höheren Dimension aus niedrigeren Dimensionen möglich.'."\n",
                       'Aber was funktioniert dann?'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Ist die Geometrie im Grunde fraktal?', subline =>
                   'Weben oder Netzwerken')),
@@ -225,7 +225,7 @@
                     'Der Abschlusspunkt fällt auf diese Weise bei \lm{ n } weg, weil die Zahl der Teilstrecken nicht endet.'."\n".
                     'Der Abstand \lm{ d } und die Dichte \lm{ \rho } verändern sich gar nicht dadurch.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Immer noch Lückenhaft', subline =>
                   '')),
@@ -235,7 +235,7 @@
                     'dann haben wir immer noch Lücken endlicher Größe.'."\n",
                       'Wie können wir aber die Lücken so schließen, dass sie keine endliche Größe mehr haben?'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Übergang ins Unendliche', subline =>
                   'Die vollständige Induktion der Teilungen')),
@@ -293,7 +293,7 @@
                     'Der Abstand \lm{ d } und die Dichte \lm{ \rho } verändern sich auch wieder gar nicht dadurch.'."\n",
                       'Können wir nun davon sprechen, dass ein solches Gewebe dann im Endlichen keine Lücken mehr hat?'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Irrationale algebraische Zahlen', subline =>
                   'Gibt es noch Lücken im Gewebe?')),
@@ -447,7 +447,7 @@
                       'Wie oben erwähnt, gilt dies für alle Radikale der irrationalen algebraischen Zahlen, was wir ja an anderer Stelle zeigen\color{*Bearb}{(Link)},'."\n".
                     'also für deren Summen, Produkte, Brüche und endlichen ganzzahligen Potenzen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Die besondere Rolle der normierten Einheit \lm{ ω }', subline =>
                   '')),
@@ -516,7 +516,7 @@
                       'So erreichen wir das feinste Gewebe von Punkten, die selber noch im endlichen liegen,'."\n".
                     'also noch keine aktual unendlich kleinen Summanden in ihrem Ort – ihren Koordinaten – haben, aber schon aktual unendlich dicht beieinander liegen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:X', text =>
                       
                 'Das Kontinuum', subline =>
                   '')),
@@ -530,7 +530,7 @@
                     'ist in diesem Sinne hier das \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Kontinuum}\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese}} erreicht.'."\n",
                       'Aber Kontinuum bedeutet eben nicht, dass es keinerlei Lücken mehr gibt; halt nur keine endlicher Größe.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:X', text =>
                       
                 'Die Zwei Konstruktionen von \lm{ \s }', subline =>
                   '')),
@@ -579,53 +579,12 @@
                   array( 'text', array( text => array(
                     'wie wir sie oben schon definiert haben.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Wie wir aus Punkten eine Linie konstruieren können', subline =>
                   'Ein naturphilosophisches Problem')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …} \\\\'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
-                                           
-                'XXX', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                      
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      '\color{*Bearb}{In Arbeit …} \\\\'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
