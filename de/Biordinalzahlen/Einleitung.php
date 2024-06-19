@@ -30,7 +30,7 @@
                     'Denn nun sind in den Biordinalzahlen die Addition und vollständige Subtraktion und ihr neutrales Element „Null“'."\n".
                     'sowie auch die Multiplikation und ihr neutrales Element „Eins“ definiert.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Erreichte und erwartete Erkenntnisgewinne', subline =>
                   '')),
@@ -95,7 +95,7 @@
                     'die den Schritten einer vollständigen Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} entspricht, um alle endlichen Zahlen von der Null an'."\n".
                     'vollständig durchzuzählen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Grundsätzliche Idee zur Erweiterung der Ordinalzahlen ins Negative', subline =>
                   'Der Ansatz vorerst beispielhaft mit der Menge der natürlichen Zahlen \\latexmath{ \mathbb{N} }, zum einfachen Einstieg und erweiterten Verständnis')),
@@ -117,7 +117,7 @@
                     'Auch hier wird konsequenterweise das Prinzip aufrecht erhalten, dass die Menge, die eine Zahl repräsentiert in Richtung des Negativen'."\n".
                     'in ihrer Anzahl sinkt.'."\n".
                     'An einer gegebenen Anzahl fehlen entsprechend viele Zahlen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Der Ansatz mit der Menge der natürlichen Zahlen \\latexmath{ \mathbb{N} } trägt nur bedingt', subline =>
                   '')),
@@ -137,7 +137,7 @@
                     'wenn wir endlos rückwärts ins Negative zählen, denn es bleiben alle anderen Mengen, die nicht den Ordinalzahlen entsprechen,'."\n".
                     'übrig.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Biordinalzahlen als Erweiterung der Ordinalzahlen', subline =>
                   'Der Ansatz mit dem Mengenuniversum \\latexmath{ \mathbb{U} } zur allgemeinen Definition der Subtraktion von Ordinalzahlen')),
@@ -250,7 +250,7 @@
                     'Sondern es ändern sich wirklich nur die Mengenkombinationen in der obersten Ebene der größten Limeszahl.'."\n".
                     'Alle tieferen Ebenen bleiben unberührt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Die Menge der Biordinalzahlen \\latexmath{ \mathbb{Bn} }', subline =>
                   '')),
@@ -259,11 +259,11 @@
                     'der Biordinalzahlen \\latexmath{ \mathbb{Bn} }.'."\n".
                     ''))),
                       
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:BiOrd:Einleitung:Vortext:XXX',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:BiOrd:Einleitung:Vortext:X',
                 Title => 'Verworfene Möglichkeiten …',
                 TitleVis => 'Verworfene Möglichkeiten:', ParagraphList => array(
 
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Umgekehrte Klammerung', subline =>
                   '')),
@@ -299,7 +299,7 @@
                       'Deshalb ist für mich diese Möglichkeit zu verwerfen, wenn wir oben eine wunderbar einfache Möglichkeit gefunden haben,'."\n".
                     'dasselbe sehr übersichtlich und plausibel zu leisten.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Entfernen der (nur einer) Menge mit den Zahlen vom Mengenuniversum', subline =>
                   '')),
@@ -343,8 +343,8 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{XXX}',
-                    // '• XXX',
+                    // '\\bold{X}',
+                    // '• X',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -437,17 +437,12 @@
                       array( display => 'on', latex => '{  *( \forall a \in \mathbb{U}^{i} *) *[  -a  \in \mathbb{U}^{i}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n",
                         '\\\\'."\n".
                       ''))),
+
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -467,15 +462,15 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{XXX}',
-                    // '• XXX',
+                    // '\\bold{X}',
+                    // '• X',
                     ))),
                       
                   array( 'text', array( text => array(
                     'Was geht beim Arbeiten mit Mengen implizit vor sich, was wir wohl nicht sehen, was uns nicht bewusst ist?'."\n",
                       'Wir wollen dies hier vor allem ontologisch betrachten, also die Lehre von Seienden betreffend.\\color{*Bearb}{(Verweis)}'."\n".
                     'Seiend auch besonders im Sinne von Struktur und hier von verborgener Struktur.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
                       
                 'Ontologische Funktion unseres Fokus', subline =>
                   'Der Auswahldualismus oder Bewusstseinsdualismus')),
@@ -560,7 +555,7 @@
                       'Die Zuordnung der Werte zur ontologischen Struktur führt zu einer naturphilosophisch sehr interessanten '."\n".
                     '\\jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{Asymmetrie}, die wir später näher betrachten werden.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
                       
                 'Ontologische Aussagenlogik', subline =>
                   '')),
@@ -600,7 +595,7 @@
                     'Beides macht einen erheblichen Unterschied und versetzt uns in die Lage, plausibel und logisch sinnvoll'."\n".
                     'Gewähltes als Positives und Weggelassenes als Negatives zu differenzieren.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
                       
                 'Ontologie der Polarität', subline =>
                   'Polarität bringt etwas zur Existenz und zur Wirkung')),
@@ -610,7 +605,7 @@
                     'Es ist ein \\jump{OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen:WWSymBruch}{Symmetriebruch}, der die neutrale Harmonie stört, der zu „Kräften“ führt,'."\n".
                     'ganz wie in der \\jump{OM:FrQFT:Home}{Physik}, und die so erschaffenen Dinge in Prozessen begreifbar, greifbar und handhabbar macht.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
                       
                 'Unsere Existenz durch eine stabile und sich entwickelnde Psychosomatik', subline =>
                   'Wir sind in einen Dialog zwischen unserem Bewusstsein und unserem Unterbewusstsein verwickelt')),
@@ -662,6 +657,7 @@
                       
                   array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Zwischenzeitlicher, wohl falscher Text …', TitleVis => 'Zwischenzeitlicher, wohl falscher Text:', ParagraphList => array(
+
                   array( 'text', array( text => array(
                     'Interessanterweise können wir so erkennen, dass aus ontologischer Sicht die Null – die leere Menge –,'."\n".
                     'aufgrund des Ausgangs vom Zählen, zu den positiven Zahlen gehört, und dadurch'."\n".
@@ -711,11 +707,9 @@
                       array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 \cdot \omega - 1 }  =  0  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
+
                     ))),
                       
                   array( 'text', array( text => array(
@@ -888,10 +882,11 @@
                     'Ich finde sie hochspannend.'."\n".
                     ''))),
                       
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:BiOrd:Einleitung:Vortext:XXX',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:BiOrd:Einleitung:Vortext:X',
                 Title => 'Möglicher Bezug zur analytischen Fortsetzung der Riemannschen Zeta-Funktion …',
                 TitleVis => 'Möglicher Bezug zur analytischen Fortsetzung der Riemannschen Zeta-Funktion:', ParagraphList => array(
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
+
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 '\\color{*Bearb}{Notiz}', subline =>
                   '')),
@@ -920,9 +915,9 @@
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \zeta(-1)  =  - \frac{ 1 }{ 12 }  }'),
                     ))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
-                'XXX Versuch nach Definition der Zeta-Funktion durch die Dirichletsche Eta-Funktion', subline =>
+                '\color{*Bearb}{(In Arbeit …)} Versuch nach Definition der Zeta-Funktion durch die Dirichletsche Eta-Funktion', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Allerdings gilt die simple Definition der Zeta-Funktion nur für komplexe Funktionswerte, dessen Realteil größer als \\term{1} ist:'."\n",
@@ -982,11 +977,8 @@
                     ))),
                   array( 'text', array( text => array(
                     'Hier erkennen wir, dass das Ergebnis ganz entscheidend von der Anzahl der Elemente in \\latexmath{ \mathbb{N} \setminus *\{ 0 *\} } abhängt.'."\n".
-                    'Ist die Anzahl gerade, dann erhalten wir \\latexmath{ 0 }.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
+                    'Ist die Anzahl gerade, dann erhalten wir \\latexmath{ 0 }.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n",
                       'Addieren wir doch auch mal die positiven und negativen Zahlen und schauen, wann wir vielleicht \\term{¼} erhalten:'."\n".
                     ''))),
                   array( 'equations',
@@ -1007,20 +999,11 @@
                       array( display => 'on', latex => '{  \sum_{ \forall i \in \mathbb{N} } i  =  \sum_{ \forall i \in \mathbb{N} \setminus *\{ 0 *\} } i  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
-                'XXX Versuch nach Definition der Zeta-Funktion durch die Dirichlet-Reihe', subline =>
+                '\color{*Bearb}{(In Arbeit …)} Versuch nach Definition der Zeta-Funktion durch die Dirichlet-Reihe', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Nach der Definition der Zeta-Funktion durch die Dirichlet-Reihe könnten wir naiver Weise annehmen,'."\n".
@@ -1044,18 +1027,16 @@
                       array( display => 'on', latex => '{  \sum_{ n = 1 }^{\infty} n  =  1 + 2 + 3 + 4 + \cdots  ?=  - \frac{ 1 }{ 12 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX Siehe Gaußsche Summenformel\\footnote{\\const{BiOrd_g_footnote_text_GaussscheSummenformel}}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)} Siehe Gaußsche Summenformel\\footnote{\\const{BiOrd_g_footnote_text_GaussscheSummenformel}}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } i  =  0 + 1 + 2 + 3 + \cdots + n  =  \frac{ n^{2} + n }{ 2 }  }'),
                       array( display => 'on', latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  0 + 1 + 2 + 3 + \cdots  =  \frac{ \omega^{2} + \omega }{ 2 }  }'),
                     ))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
-                'XXX Versuch nach Primzahlprodukt-Vermutung', subline =>
+                '\color{*Bearb}{(In Arbeit …)} Versuch nach Primzahlprodukt-Vermutung', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Nach der Primzahlprodukt-Vermutung ist \\term{ω} eine aktual unendliche, gerade Zahl und das Ergebnis damit eine aktual unendliche, ganze Zahl.'."\n".
@@ -1063,9 +1044,8 @@
                     'Es ist noch nicht geklärt, wie dies durch Mengen im hier entwickelten Sinn dargestellt werden kann.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'Was wäre wenn:'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Was wäre wenn:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1077,25 +1057,16 @@
                       array( display => 'on',  latex => '{  \zeta(-1)  ?=  \sum_{ n = 1 }^{\infty} n  ?=  - \frac{ 1 }{ 12 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Die Summe aller endlichen, natürlichen Zahlen, ohne die Null, hätte tatsächlich ein negatives Ergebnis.'."\n".
                     'Das ist aber eigentlich unmöglich.'."\n",
                       'Es stellen sich allerdings mehrere Fragen:'."\n".
-                    'Zum einen, was wäre nach der Ausgangsformel, wenn wir die Null doch berücksichtigen?'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Zum einen, was wäre nach der Ausgangsformel, wenn wir die Null doch berücksichtigen?'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
+
                     ))),
                       
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl', text =>
@@ -1250,7 +1221,7 @@
                     'Das bedeutet, dass die Zwei als Faktor in beiden Summanden stecken muss.'."\n".
                     'Folglich trägt \\term{ω} den Primfaktor \\term{2} in sich.\\footnote[*Entwick]{\\color{*Entwick}{Dies ist ein erster ganz kleiner Schritt in Richtung der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}. Lässt sich auf diese Weise Schritt für Schritt mehr in diese Richtung zeigen?}}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
                       
                 'Weiterentwicklung zu den Superial-Zahlen', subline =>
                   'Die superiale Basis \\term{s} hat \\term{s} natürliche Superial-Zahlen als Vorgänger')),
