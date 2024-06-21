@@ -48,7 +48,7 @@
                     'Es gibt ein esoterisches Sprichwort:'."\n"))),
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Alles ist Bewusstsein – Bewusstsein ist alles.'."\n"),
-                        addtext => '\\color{*Bearb}{(Verweis)}\\hidden{\\footnote{XXX}}')),
+                        addtext => '\\color{*Bearb}{(Verweis)}\\hidden{\\footnote{X}}')),
                   array( 'text', array( text => array(
                     'Doch wenn alles Bewusstsein\\footnote{\\const{SpaLeb_g_footnote_text_Bewusstsein}} ist, was ist Bewusstsein dann genau?'."\n"))),
                   array( 'text', array( text => array(
@@ -59,7 +59,7 @@
                     'Wenn Bewusstsein alleine Wahrnehmung sei, aber es auch gleichzeitig alles sei, woher kommen dann die Informationen, die wahrgenommen werden?'."\n".
                     'Mit anderen Worten, wer oder was sendet die Informationen?'."\n".
                     'Matthias erwiederte, dass das Senden und das Empfangen vielleicht das Gleiche sei?'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:Vortext:X', text =>
                       
                 'Regelprozesse sind immer Sender und Empfänger', subline =>
                   '… und nach der Quanten-Fluss-Theorie sind diese überall')),
@@ -70,7 +70,7 @@
                     'Das Gros des Vakuums besteht in dieser Theorie aus Teilchen, die dem Licht ähneln und die durch derartige Regelprozesse gebildet werden.'."\n",
                       'Regelprozesse sind demnach überall in der Physik vorhanden.'."\n".
                     'Jedes Lebewesen, jede Zelle, jedes Molekül oder Atom, jedes Elementarteilchen und selbst das Vakuum besteht aus ihnen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:Vortext:X', text =>
                       
                 'Warum sind Regelprozesse immer Sender und Empfänger?', subline =>
                   'Regelprozesse als Grundlage des Bewusstseins')),
@@ -81,9 +81,9 @@
                       'Die Regelprozesse nehmen sich also gegenseitig wahr und verändern sich dadurch.'."\n".
                     'Diese Wahrnehmung und Veränderung kann als elementares Bewusstsein bezeichnet werden.'."\n".
                     'Auf diese Weise ist alles Bewusstsein, denn Bewusstsein ist so nach der Quanten-Fluss-Theorie überall vorhanden, selbst im Vakuum.'."\n"))),
-                  /* array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:Vortext:XXX', text =>
+                  /* array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:Vortext:X', text =>
                       
-                'XXX Rückgekoppelte Systeme sind selbstwahrnehmend', subline =>
+                '\color{*Bearb}{(In Arbeit …)} Rückgekoppelte Systeme sind selbstwahrnehmend', subline =>
                   '')),
                   array( 'text', array( text => array(
                       'Regelprozesse enthalten immer Sender und Empfänger.'."\n".
@@ -94,7 +94,7 @@
                     'Durch ihre Rückkopplung geregelt werden bedeutet nichts anderes, als durch ihre Selbstwahrnehmung stabilisiert werden, existent bleiben.'."\n",
                       'Beim Elementarprozess der Lebewesen handelt es sich hierbei um den von mir sogenannten \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozess}.'."\n".
                     'Auf diesen komme ich später noch zu sprechen.'."\n"))), */
-                  /* array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:Vortext:XXX', text =>
+                  /* array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:Vortext:X', text =>
                       
                 'Regelprozesse als Grundlage des Bewusstseins', subline =>
                   'Selbst- und Fremdwahrnehmung')),
@@ -131,7 +131,7 @@
                     'diente ihm als Grundlage für seine Relativitätstheorie\\const{FrQFT_g_footnote_Kombi_RT}.'."\n".
                     'Die Relativitätstheorie enthält aus meiner philosophischen Sicht deshalb ein \\jump{OM:FrQFT:NeuePhysik:Philosophie-der-Lichtuhr}{implizites Teilchenmodell}, das den Charakter eines Regelprozesses hat,'."\n".
                     'also im gerade beschriebenen Sinn Bewusstsein besitzt.'."\n"))), */
-                  /* array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:Vortext:XXX', text =>
+                  /* array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:Vortext:X', text =>
                       
                 'Verbundenheit von Elementarprozessen', subline =>
                   'Verschränkung')),
@@ -147,7 +147,7 @@
                     'Die Elementarprozesse – zum Beispiel Elementarteilchen – „erinnern“ sich an ihren Entstehungsprozess und sind dadurch mit den Elementarprozessen verbunden,'."\n".
                     'die mit ihnen gemeinsam entstanden sind.'."\n".
                     'Sie sind miteinander verschränkt.'."\n"))), */
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:Vortext:X', text =>
                       
                 'Bewusstsein bedeutet Veränderung', subline =>
                   '')),
@@ -158,7 +158,7 @@
                   array( 'text', array( Shape => 'italic', text => array(
                         'Jeder Elementarprozess muss folglich in beständiger Veränderung sein.'."\n"))),
                       
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:Vortext:X', text =>
                       
                 'Die Seele als Ausdruck des Bewusstseins', subline =>
                   '')),
@@ -289,20 +289,20 @@
                   array( 'text', array( text => array(
                     'Damit bleibt natürlich die Möglichkeit, dass etwas verstanden wird, was nicht vom Empfänger gesagt werden wollte.'."\n".
                     'Doch das lässt sich in meinen Augen nicht vermeiden.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:InformationIstWirkung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:InformationIstWirkung:X', text =>
                                            
                 'Wirkung ist Resonanz', subline =>
                   'Information ist Anstoß – im Leben wie in der Physik')),
                   array( 'text', array( text => array(
                     'Eine Wirkung und die ihr zugrunde liegende Information haben im Leben wie in der Physik etwas mit Resonanz zu tun;'."\n".
                     'damit, ob das Gegenüber in Schwingung versetzt, also angestoßen wird.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:InformationIstWirkung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:InformationIstWirkung:X', text =>
                                            
                 'Information, Wissen und Bewusstsein', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Information kann so eine Veränderung hervorbringen, die wir Wissen nennen, und daher auch Bewusstsein.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:InformationIstWirkung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:InformationIstWirkung:X', text =>
                                            
                 'Elementarprozesse sind in Selbstresonanz', subline =>
                   '')),
@@ -319,7 +319,7 @@
             
                   array( 'text', array( text => array(
                     'Ich kann dies selber immer wieder ganz wunderbar erfahren.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:InformationIstWirkung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:InformationIstWirkung:X', text =>
                                            
                 'Kommunikation und Resonanz', subline =>
                   '')),
@@ -331,13 +331,13 @@
             
                   array( 'text', array( text => array(
                     'Und wie was wirkt, erkennen wir nach unserer Rede nur an der Resonanz des Publikums, des Gegenübers.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:InformationIstWirkung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:InformationIstWirkung:X', text =>
                                            
                 'Bewusstsein ist …', subline =>
                   '')),
                   array( 'text', array( text => array(
                     '… Information empfangen, also Wirkendes, etwas, dass wir verstehen, was wir verwerten, also auch als Veränderung behalten.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:InformationIstWirkung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Bewusstsein:InformationIstWirkung:X', text =>
                                            
                 'Achtsamkeit ist …', subline =>
                   '')),
@@ -392,12 +392,7 @@
                         addtext => '')),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
             
                   array( 'jumplist', array(
