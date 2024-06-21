@@ -93,7 +93,7 @@
                       array(  jump_name => 'OM:nSOSp:Home', type => 'back'),
                     )),
                       
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:X', text =>
                                            
                 'Neue Physik \\color{*TitleAdd}{– organische Physik}')),
                   array( 'text', array( text => array(
@@ -409,7 +409,7 @@
                     'Das Leben und seine Entstehung ist nun grundlegend in der organischen Physik verankert.'."\n"))),
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:X', text =>
                                            
                 'Neuer Blick auf die Chemie')),
                   array( 'text', array( text => array(
@@ -418,7 +418,7 @@
                     'Auch gilt es, wenn sich Atome über ihre entgegengesetzte Ladung zu Kristallen oder über ihre Elektronenhülle zu Molekülen organisieren.'."\n".
                     'Immer wieder erweitert sich die Struktur nach dem neuen, dynamischen Strukturprinzip.'."\n",
                       'Ich bin gespannt, welche Erkenntnisse diese Perspektive für uns in Bezug auf die Chemie bereit hält.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:X', text =>
                                            
                 'Neuer Blick auf unser Leben')),
                   array( 'text', array( text => array(
@@ -497,23 +497,14 @@
                       
                   array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Was kann das ›Spannungsspiel des Lebens‹ bisher erklären?', ParagraphList => array(
+
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{(To do …)}'."\n"
-                    /*'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"*/))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n"
+                    ''))),
+
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:X', text =>
                                            
                 'Zusammenhänge sind die Seelen der Dinge \\\\ \\color{*TitleAdd}{– Natur- und Wissenschaftsphilosophie}')),
                   array( 'text', array( text => array(
@@ -563,23 +554,14 @@
                       
                   array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Was kann der Zusammenhang zwischen dem Begriff Seele und dem Begriff Zusammenhang bisher erklären?', ParagraphList => array(
+
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{(To do …)}'."\n"
-                    /*'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"*/))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n"
+                    ''))),
+
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:X', text =>
                                            
                 'Die neue Perspektive macht neue Zusammenhänge sichtbar')),
                   array( 'notice', array( Display => 'hideContent', text => array(
@@ -645,33 +627,13 @@
                       'Das gilt übrigens auch für die wichtige Rolle der Hebammen.'."\n",
                       'Mit diesen Zusammenhängen verschwindet ein wichtiger Teil unserer gesellschaftlichen Seele.'."\n".
                     'Ein weiteres Fortschreiten der Vereinzelung, der Einsamkeit und der gesellschaftlichen Kälte ist die Folge.'."\n".
-                    'Und dies wird ganz sicher zu mehr Hilflosigkeit und Not, zu mehr Hoffnungslosigkeit, führen.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Und dies wird ganz sicher zu mehr Hilflosigkeit und Not, zu mehr Hoffnungslosigkeit, führen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    'Es hat sich bereits gezeigt, dass hierbei neu entdeckte naturphilosophische Zusammenhänge viele bisher eher getrennt betrachteten Fachgebiete der Lebenswissenschaften und Naturwissenschaften miteinander Verbinden:'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Es hat sich bereits gezeigt, dass hierbei neu entdeckte naturphilosophische Zusammenhänge viele bisher eher getrennt betrachteten Fachgebiete der Lebenswissenschaften und Naturwissenschaften miteinander Verbinden:'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                     
                   array( 'jumplist', array(
                       // array(  jump_name => 'OM:nSOSp:Home:Spannungsspiel-des-Lebens'),
@@ -687,7 +649,7 @@
               '\\name[undertitle]{OM:nSOSp:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -706,7 +668,7 @@
               '\\name[undertitle]{OM:nSOSa:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -726,7 +688,7 @@
               'Meine Forschungsarbeiten', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -737,11 +699,8 @@
                   array( 'text', array( text => array(
                     'Danke für das Interesse an meiner Arbeit.'."\n".
                     'Nachfolgend eine Liste der mir wichtigen Themen, mit denen ich mich beschäftige.'."\n".
-                    'Interessanterweise stehen alle miteinander in Verbindung und ergänzen sich beziehungsweise vertiefen Aspekte, die in anderen dieser Arbeiten eine wichtige Rolle spielen.'."\n"))),
-                    // 'XXX'."\n".
-                    // 'XXX'."\n".
-                    // 'XXX'."\n".
-                    // 'XXX'."\n"))),
+                    'Interessanterweise stehen alle miteinander in Verbindung und ergänzen sich beziehungsweise vertiefen Aspekte, die in anderen dieser Arbeiten eine wichtige Rolle spielen.'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                     '\\\\'."\n"))),
                   array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:SpaLeb', text =>
@@ -834,7 +793,7 @@
                       
                   array( 'text', array( text => array(
                     '\\\\'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:X', text =>
                                            
                 'Plus und Minus versa Existenz und Nichtexistenz', subline =>
                   '')),
@@ -1036,7 +995,7 @@
               '\\name[undertitle]{OM:SpaLeb:Home}'/*'Spannungen im Leben, deren Brüche und das finden neuer Balancen'*/, 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1056,7 +1015,7 @@
               '\\name[undertitle]{OM:NPYo:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1077,7 +1036,7 @@
               '\\name[undertitle]{OM:FrQFT:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   /*array( 'text', array( text => array(
@@ -1101,7 +1060,7 @@
               '\\name[undertitle]{OM:VRT:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1121,7 +1080,7 @@
               '\\name[undertitle]{OM:NPT:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1141,7 +1100,7 @@
               'Plus und Minus versa Existenz und Nichtexistenz', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'bulletlist', array( bullet_ary => array(
@@ -1167,7 +1126,7 @@
               '\\name[undertitle]{OM:SupNum:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1188,7 +1147,7 @@
               '\\name[undertitle]{OM:BiOrd:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1210,7 +1169,7 @@
               'Systematik der arithmetischen Operatoren', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'bulletlist', array( bullet_ary => array(
@@ -1233,7 +1192,7 @@
               '\\name[undertitle]{OM:ZS:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1255,7 +1214,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      //array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( Shape => 'italic', text => array(
