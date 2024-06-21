@@ -68,7 +68,7 @@
                     'Dies gibt uns im Lichte der hier auch entwickelten \\jump{OM:SupNum:Ableitungen-Integrale}{Ableitungen und Integrale} mit Superial-Zahlen den Hinweis,'."\n".
                     'dass die Koeffizienten der algebraischen Zahlen tatsächlich zu den Superial-Zahlen gehören.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
                       
                 'Beweis – Wurzel aus Zwei ist keine rationale Zahl, also irrational', subline =>
                   '')),
@@ -197,7 +197,7 @@
                     'Doch unser Beweis hilft uns glücklicherweise dabei zu verstehen, wie ein Bruch ganzer Zahlen beschaffen sein muss, der die'."\n".
                     'Wurzel aus Zwei dann doch darstellen kann.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Beweis der Überrationalitätsvermutung für die Wurzel aus Zwei', subline =>
                   '')),
@@ -289,7 +289,7 @@
                     'Damit haben wir bewiesen, dass unsere Lösung die Wurzel aus Zwei als Bruch aus ganzen Zahlen darstellt,'."\n".
                     'wenn der Nenner und der Zähler unendlich groß, im Bereich der vollständigen Induktion, sind.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
                       
                 'Die Wurzel aus Zwei und die natürlichen Superial-Zahlen', subline =>
                   '')),
@@ -316,7 +316,7 @@
                       'Denn wie wir im folgenden zeigen werden, können wir diese Erweiterung auf alle algebraischen Koeffizienten'."\n".
                     'ausdehnen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
                       
                 'Beweis der Überrationalitätsvermutung', subline =>
                   'Erweiterung des Beweises auf alle algebraischen Koeffizienten, die irrationale Zahlen sind')),
@@ -483,7 +483,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x} \mid a^{x}  }'),
                     ))),
 
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X',
                 Title => '\\small{Nebenrechnung …}',
                 TitleVis => 'Nebenrechnung:', ParagraphList => array(
 
@@ -508,7 +508,7 @@
                                           label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
                     ))),
 
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X',
                 Title => '\\small{Nebenrechnung …}',
                 TitleVis => 'Nebenrechnung:', ParagraphList => array(
 
@@ -538,7 +538,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{x^{2} - x} \mid b^{x}  }'),
                     ))),
 
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X',
                 Title => '\\small{Nebenrechnung …}',
                 TitleVis => 'Nebenrechnung:', ParagraphList => array(
 
@@ -558,7 +558,7 @@
                                           label_text => '\\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-mal-b-hoch-x-gleich-a-hoch-x}', label_incr => false),
                     ))),
 
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X',
                 Title => '\\small{Nebenrechnung …}',
                 TitleVis => 'Nebenrechnung:', ParagraphList => array(
 
@@ -570,7 +570,7 @@
 
                     ))),
 
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X',
                 Title => '\\small{Experimentelle Rechnung …}',
                 TitleVis => 'Experimentelle Rechnung:', ParagraphList => array(
 
@@ -797,7 +797,7 @@
                       'Dies ist eine große Erkenntnis der Mathematik, die ich bisher noch nicht gesehen habe.'."\n".
                     'Sie eröffnet eine neue Welt, in der ein großes Entdeckungspotenzial liegt.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
                       
                 'Überrationale Zahlen und die natürlichen Superial-Zahlen', subline =>
                   'Die \\lm{ x }-ten Wurzeln aus \\lm{ n } sind Superial-Zahlen')),
@@ -1403,7 +1403,7 @@
                       array( display => 'on',  latex => '{  *( *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) *)^{\frac{ 1 }{ -2 }} \cdot \s  \in  \mathbb{S}_{Z}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX und die Summe zweier ganzer Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
+                      '\color{*Bearb}{(In Arbeit …)} und die Summe zweier ganzer Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1415,14 +1415,7 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'XXX So sind dann auch algebraische Zahlen aus Summen zweier oder mehrerer Wurzeln, oder ihrer jeweiligen Kehrwerte,'."\n".
+                    '\color{*Bearb}{(In Arbeit …)} So sind dann auch algebraische Zahlen aus Summen zweier oder mehrerer Wurzeln, oder ihrer jeweiligen Kehrwerte,'."\n".
                     'als Faktoren der superialen Basis \lm{ \s } natürliche Superial-Zahlen möglich.'."\n",
                       '\color{*Bearb}{(In Arbeit …)} Damit haben wir für alle irrationalen algebraischen Koeffizienten durch Beweis überprüft,'."\n".
                     'dass ihre Produkte mit der superialen Basis \lm{ \s } zu den natürlichen Superial-Zahlen gehören.'."\n".
@@ -1492,7 +1485,7 @@
                     'Entstehung auseinander zu setzen.'."\n",
                       'Welche tieferen Einsichten haben wir vorstehend gewonnen und welche können wir noch weiter schöpfen?'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
                       
                 'Das feine Raster der irrationalen endlichen Wurzeln', subline =>
                   '')),
@@ -1545,7 +1538,7 @@
                     'Wir lernen darüber etwas Neues auf dem Gebiet der Zahlentheorie.'."\n".
                     'Es bliebe uns verborgen, wenn wir es einfach nur weg kürzten und es nicht zu deuten wüssten.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
                       
                 'Endliche Wurzeln – gebrochene Exponenten – können auch im Endlichen ganze Zahlen ergeben', subline =>
                   '')),
@@ -1579,15 +1572,12 @@
                     'Und das Produkt wird aufgrund der Größe des Faktors \lm{ 2^{g} } beziehungsweise \lm{ n^{g} } grundsätzlich zu'."\n".
                     'einer ganzen Zahl, aber von aktual unendlicher Größe.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
                       
                 'Nur die aktual unendlichen Potenzen des Zahlen-Radikals der Basis ergeben ein Raster, dass auch die gebrochenen Potenzen der Basis zu ganzen Zahlen macht', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV.DB', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1595,14 +1585,11 @@
                       array( display => 'on',  latex => '{  *( \forall n, m, x \in \mathbb{N} \setminus *\{ 0, 1 *\} *) *( \rad(n) \ne \rad(m) *) *( n^{\frac{ 1 }{ x }} = \mathrm{irrational} *) \\\ \qquad\qquad\qquad\qquad\;  *[  \rad(m)^{g} \cdot n^{\frac{ 1 }{ x }}  \notin  \mathbb{N}_{\infty}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
-                Title => 'Alte Entwurf der Überrationalitätsvermutung …',
+                Title => '\small{Alter Entwurf der Überrationalitätsvermutung …}',
                 TitleVis => 'Alter Entwurf der Überrationalitätsvermutung:', ParagraphList => array(
 
                   array( 'text', array( text => array(
@@ -1650,16 +1637,7 @@
                       array( display => 'on',  latex => '{  \mathbb{Qr}  :=  *\{  x  *|*  *( q^{+} \in \mathbb{Qr}^{+} *) *( \forall v \in \{ -1, 0, 1 \} *)  \\\ \qquad\qquad\qquad\qquad\qquad\quad *[  x  =  v \cdot q^{+}  *]  *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n",
-                        '\\\\'."\n".
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
@@ -1689,29 +1667,7 @@
                       'Im zweiten Fall können wir uns vielleicht überlegen, ob das grundsätzlich möglich ist,'."\n".
                     'denn die sich herauskristallisierenden Primzahl müssen wohl bestimmte Eigenschaften haben,'."\n".
                     'damit das Ergebnis konvergiert, also immer genauer wird, und nicht wieder zerstört wird:'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
                     ))),
@@ -1733,11 +1689,11 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{XXX}',
-                    // '• XXX',
+                    // '\\bold{X}',
+                    // '• X',
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Wikipedia: \\jump[https://de.wikipedia.org/w/index.php?title=Quadratwurzel_aus_2&oldid=229698584]{}{Quadratwurzel aus 2, Geschichte}', subline =>
                   '')),
@@ -1749,14 +1705,7 @@
                       array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 577 }{ 408 }  =  \sqrt{2}  \approx  \frac{ 577 }{ 2^{3} \cdot 3 \cdot 17 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     'Babylonier:'."\n".
@@ -1766,28 +1715,15 @@
                       array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 30547 }{ 21600 }  =  \frac{ 11 \cdot 2777 }{ 2^{5} \cdot 3^{3} \cdot 5^{2} }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Näherungsbrüche der Kettenbruchentwicklung von Wurzel aus Zwei', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'OEIS: \\jump[https://oeis.org/search?q=A001333+-id:A001333]{}{A002965 – Interleave denominators (A000129) and numerators (A001333) of convergents to sqrt(2).}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'OEIS: \\jump[https://oeis.org/search?q=A001333+-id:A001333]{}{A002965 – Interleave denominators (A000129) and numerators (A001333) of convergents to sqrt(2).}'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV.U', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1826,47 +1762,18 @@
                       array( display => 'off', latex => '{  \frac{ 114243 }{ 80782 }  =  1,4\overline{14213562|4272734024906538\!\dots^{546}}  }',
                                             footnote => '\\color{*Bearb}{Vgl. \\jump[https://www.wolframalpha.com/input?i=114243%2F80782]{}{WolframAlpha: 114243/80782}}'),
                       array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 195025 }{ 114243 }  =  \frac{ 5^{2} \cdot 29 \cdot 269 }{ 3 \cdot 113 \cdot 337 }  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ XXX }{ 275807 }  =  \frac{ XXX }{ 7 \cdot 31^{2} \cdot 41 }  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ XXX }{ 470832 }  =  \frac{ XXX }{ 2^{4} \cdot 3 \cdot 17 \cdot 577 }  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ XXX }{ XXX }  =  \frac{ XXX }{ XXX }  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ XXX }{ XXX }  =  \frac{ XXX }{ XXX }  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ XXX }{ XXX }  =  \frac{ XXX }{ XXX }  }'),
+                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ X }{ 275807 }  =  \frac{ X }{ 7 \cdot 31^{2} \cdot 41 }  }'),
+                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ X }{ 470832 }  =  \frac{ X }{ 2^{4} \cdot 3 \cdot 17 \cdot 577 }  }'),
+                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ X }{ X }  =  \frac{ X }{ X }  }'),
                       array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ 30547 }{ 21600 }  =  \frac{ 11 \cdot 2777 }{ 2^{5} \cdot 3^{3} \cdot 5^{2} }  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ XXX }{ XXX }  =  \frac{ XXX }{ XXX }  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ XXX }{ XXX }  =  \frac{ XXX }{ XXX }  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ XXX }{ XXX }  =  \frac{ XXX }{ XXX }  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ XXX }{ XXX }  =  \frac{ XXX }{ XXX }  }'),
-                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ XXX }{ XXX }  =  \frac{ XXX }{ XXX }  }'),
+                      array( display => 'on',  latex => '{  \sqrt{2}  \approx  \frac{ X }{ X }  =  \frac{ X }{ X }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung:XXX', text =>
-                      
-                'XXX', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung'),
+                      array(  jump_name => 'OM:SupNum:Home'),
                     )),
               )
           ); ?>
