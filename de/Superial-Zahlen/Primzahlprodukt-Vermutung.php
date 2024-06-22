@@ -19,7 +19,7 @@
                     '• Den Ausdruck ›Erzeugungskombinatorik‹ auch im oder nach dem Beweis wieder aufgreifen.',
                     '\bold{Warum könnte die Primzahlprodukt-Vermutung stimmen?}',
                     '• Die Primzahlen werden unter den sehr großen natürlichen Zahlen extrem selten.',
-                    '• Es klafft eine riesige Lücke zwischen den endlichen natürlichen Zahlen und \term{ω}, siehe \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}. Ist diese Lücke wirklich so groß?',
+                    '• Es klafft eine riesige Lücke zwischen den endlichen natürlichen Zahlen und \lm{ ω }, siehe \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}. Ist diese Lücke wirklich so groß?',
                     '– Meine Analyse sagt: Eine Anzahl von \lm{ ω } Zahlen sind vom Typ \lm{ ω - n } in den Biordinalzahlen.',
                     '– Da die Primzahlprodukt-Vermutung stimmt, liegen dann auch alle \lm{ p^{-1} \cdot ω \pm n}, mit \lm{ p } ist ein Primzahlprodukt einfacher Potenz aus endlich vielen Primzahlen dort.',
                     '⋅ Nach meiner Meinung gibt es keine Einschränkung für die Größe von \lm{ n }. Dann sind es jeweils \lm{ 2 \cdot ω} pro jedem \lm{ p^{-1} } Zahlen.',
@@ -106,13 +106,13 @@
                     'Nun können wir als erstes überlegen, ob es sich um einen der Primzahltürme handeln könnte:'."\n".
                     'Die unendlich große Primzahl-Potenz mit der kleinsten Basis in \lm{ s } ist \lm{ 2^ω }.'."\n".
                     'Wenn wir berücksichtigen, dass ja oben \lm{ s } durch \lm{ 2 \cdot ω } geteilt wird und wir den Faktor \lm{ 2 } schon mal aus'."\n".
-                    'der unendlichen Potenz von \lm{ 2 } entfernen, ergibt sich immer noch \term{2^^{ω-1}}, wobei \lm{ ω - 1 } als'."\n".
+                    'der unendlichen Potenz von \lm{ 2 } entfernen, ergibt sich immer noch \lm{ 2^{ω-1} }, wobei \lm{ ω - 1 } als'."\n".
                     '\jump{OM:BiOrd:Home}{Biordinalzahl} definiert ist.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Nun ist es offensichtlich, dass \term{2^^{ω-1}} ungleich und sogar sehr viel größer als \lm{ ω } ist:'."\n".
+                      'Nun ist es offensichtlich, dass \lm{ 2^{ω-1} } ungleich und sogar sehr viel größer als \lm{ ω } ist:'."\n".
                       '\color{*Bearb}{(Hier auch \lm{ \overset{\infty}{\ggg} } nutzen?)}'."\n".
                       ''))),
                   array( 'equations',
@@ -959,7 +959,7 @@
                     'Das muss so sein, denn in dem Moment, wo \lm{ n = p_i + 1 } ist, mit \lm{ p_i \in \mathbb{P} }, kommt zur Menge \lm{ n }'."\n".
                     'die Primzahl \lm{ p_i } hinzu und damit auch zu ihrer Mengen-Primfakultät \lm{ n\overline{\#} }.'."\n".
                     'Die hinzu gekommene Primzahl kann aber nicht Teil der Primfaktorzerlegung einer der kleineren Zahlen \lm{ x < p_i } sein.'."\n".
-                    'Denn diese haben als Primfaktoren nur kleinere Primzahlen \term{ p__{i–d} }, mit \lm{ 1 \leq d < i },'."\n".
+                    'Denn diese haben als Primfaktoren nur kleinere Primzahlen \lm{ p_{i–d} }, mit \lm{ 1 \leq d < i },'."\n".
                     'oder sind selber eine Primzahl.'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -1775,7 +1775,7 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
                       
-                'Die Größenordnung und Struktur von \term{ s } und \term{ s^^{-1} }', subline =>
+                'Die Größenordnung und Struktur von \lm{ \s } und \lm{ \s^{-1} }', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Der Beweis unserer Primzahlprodukt-Vermutung, und damit unserer Logo Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega},'."\n".
@@ -1956,7 +1956,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \nexists n \in \; ] p_{i}, p_{i}\# - 1 [_\mathbb{N} *)  *[  n  \in  \mathbb{P}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Dann ist die nächste Primfakultät \term{p__{i+1}#} die Zahl zwischen dem nächsten Primzahlzwilling:'."\n".
+                      'Dann ist die nächste Primfakultät \lm{ p_{i+1}# } die Zahl zwischen dem nächsten Primzahlzwilling:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2013,11 +2013,11 @@
                     'Die Argumentation könnte grob und sicher noch streitbarer Weise so laufen:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Jede zweite natürliche Zahl ist durch die Primzahl Zwei teilbar, daher sollte die Anzahl der natürlichen Zahlen \term{ω} ebenso durch Zwei teilbar sein.',
+                        'Jede zweite natürliche Zahl ist durch die Primzahl Zwei teilbar, daher sollte die Anzahl der natürlichen Zahlen \lm{ ω } ebenso durch Zwei teilbar sein.',
                         'Das gleiche Argument kann für jede weitere endliche Primzahl herangezogen werden.',
                         'Jede vierte natürliche Zahl ist natürlich ebenfalls durch die zweite Potenz von Zwei teilbar, aber, wenn auch die Anzahl der natürlichen Zahlen \lm{ ω } durch die Vier ganzzahlig teilbar wäre, dann sollte dies auch für jede andere endliche Primzahl endlicher Potenz gelten. Das kann aber aufgrund der Betrachtung der Struktur der Superial-Zahlen, siehe \jumpname{OM:SupNum:Eigenschaften:StrukturVonS}‹, nicht sein, denn dann wäre quasi \lm{ s = ω }.',
                         'Wenn \lm{ s = ω } wäre, dann würde es genau so viele rationale Zahlen, wie natürliche Zahlen geben, was zwar für die Mächtigkeit stimmt, aber in meinen Augen nicht für deren Anzahl.',
-                        'Denn die Kombinatorik zur Erzeugung der rationalen Zahlen aus Brüchen zeigt, dass es deutlich mehr rationale Zahlen von ihrer Anzahl her geben muss, als natürliche Zahlen, denn im Calkin-Wilf-Baum enthält schon der letzte Strang alle natürlichen Zahlen und der erste Strang all deren Kehrwerte. \\\\ Die direkte Kombinatorik von Zähler und Nenner wäre jeweils \term{ω} und ergäbe sich zu \lm{ ω^2 }, wenn nicht gekürzt werden könnte.',
+                        'Denn die Kombinatorik zur Erzeugung der rationalen Zahlen aus Brüchen zeigt, dass es deutlich mehr rationale Zahlen von ihrer Anzahl her geben muss, als natürliche Zahlen, denn im Calkin-Wilf-Baum enthält schon der letzte Strang alle natürlichen Zahlen und der erste Strang all deren Kehrwerte. \\\\ Die direkte Kombinatorik von Zähler und Nenner wäre jeweils \lm{ ω } und ergäbe sich zu \lm{ ω^2 }, wenn nicht gekürzt werden könnte.',
                         'Anders, als bei der Mächtigkeit, wird bei der von mir gemeinten Anzahl der Zahlen ihre kombinatorische Erzeugung mit der vollständigen Induktion der natürlichen Zahlen ins Verhältnis gesetzt.',
                         'Und die Definition von \lm{ s } über das Primzahlflächenprodukt beruht eben auch auf einem Verhältnis zur Eins.',
                         'XXX',
@@ -2041,10 +2041,10 @@
                     'XXX'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
                       
-                'Argumentation über die Primzahltürme der Definition von \term{s}', subline =>
+                'Argumentation über die Primzahltürme der Definition von \lm{ \s }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Betrachten wir das aktuell verwendete Produkt zur Definition von \term{s}:'."\n".
+                    'Betrachten wir das aktuell verwendete Produkt zur Definition von \lm{ \s }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2055,12 +2055,12 @@
                     ))),
                   array( 'text', array( text => array(
                     'Analysieren wir naiv die maximale Häufigkeit der einzelnen Primzahlen in der Primfaktorzerlegung'."\n".
-                    'der natürlichen Zahlen kommen wir schnell auf den Gedanken, dass wir nicht die volle höhe \term{ω}'."\n".
-                    'jedes einzelnen Primzahlturms benötigen, um \term{s} mit den Eigenschaften auszustatten'."\n".
+                    'der natürlichen Zahlen kommen wir schnell auf den Gedanken, dass wir nicht die volle höhe \lm{ ω }'."\n".
+                    'jedes einzelnen Primzahlturms benötigen, um \lm{ \s } mit den Eigenschaften auszustatten'."\n".
                     'die für uns interessant sind, nämlich mit jedem rationalen Koeffizienten eine ganze Zahl zu bleiben.'."\n",
-                      'Beginnend mit der kleinsten Primzahl \term{2} stellen wir fest, dass nur jede zweite natürliche Zahl'."\n".
-                    'durch \term{2} teilbar ist und dann erst wieder jede vierte durch \term{4} und jede achte durch \term{8} und so fort.'."\n",
-                      'Da wir mit der Potenz einer jeden Primzahl keine größere Zahl als \term{ω} erreichen müssen,'."\n".
+                      'Beginnend mit der kleinsten Primzahl \lm{ 2 } stellen wir fest, dass nur jede zweite natürliche Zahl'."\n".
+                    'durch \lm{ 2 } teilbar ist und dann erst wieder jede vierte durch \lm{ 4 } und jede achte durch \lm{ 8 } und so fort.'."\n",
+                      'Da wir mit der Potenz einer jeden Primzahl keine größere Zahl als \lm{ ω } erreichen müssen,'."\n".
                     'reicht folgende Potenz einer jeden Primzahl:'."\n".
                     ''))),
                   array( 'equations',
@@ -2069,7 +2069,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  x  =  \log_{p} ω  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Folgendes Primzahlprodukt für \term{s} würde also hinreichen:'."\n".
+                    'Folgendes Primzahlprodukt für \lm{ \s } würde also hinreichen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2080,7 +2080,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Das verwundert nach ein bisschen Überlegung nicht weiter, denn wir haben es erzwungen.'."\n".
-                    'Aber es scheint uns nicht weiter zu bringen, denn es zerstört die transparenz unserer Primfaktoren-Definition von \term{s}!'."\n",
+                    'Aber es scheint uns nicht weiter zu bringen, denn es zerstört die transparenz unserer Primfaktoren-Definition von \lm{ \s }!'."\n",
                       'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
