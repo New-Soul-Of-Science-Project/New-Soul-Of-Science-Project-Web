@@ -102,7 +102,7 @@
                     'Dieses Ergebnis ist in meinen Augen ein ganz bemerkenswertes:'."\n".
                     'Denn wir erhalten eine weitere Definition der natürlichen Exponentialfunktion \lm{ \e^x }.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:X', text =>
                       
                 'Eine neue Definition der \lm{ \e }-Funktion', subline =>
                   '')),
@@ -166,7 +166,7 @@
                     'und ergänzt so die Limes-Definition, zusätzlich zum Perspektivwechsel, wie wir gleich sehen werden.'."\n".
                     'Dadurch wird transparent, wie sich die \lm{ \e }-Funktion und damit die Zahl \lm{ \e } im und aus dem Unendlichen ergibt.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:X', text =>
                       
                 'Die \lm{ \e }-Funktion und das Pascalsche Dreieck', subline =>
                   '')),
@@ -304,7 +304,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Dies entspricht der modifizierten Gaußschen Summenformel, die wir schon aus Formel \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n}.'."\n",
-                      'Die Summe der \lm{ 3 }-ten Spalte entspricht also der Summe der ersten XXX Quadratzahlen'."\n".
+                      'Die Summe der \lm{ 3 }-ten Spalte entspricht also der Summe der ersten \color{*Bearb}{(X)} Quadratzahlen'."\n".
                     'und diese können wir geschlossen ausdrücken mit:'."\n".
                     ''))),
                   array( 'equations',
@@ -360,12 +360,12 @@
 
                     ))),
 
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:X', text =>
                       
                 'Wie berechnet sich daraus \lm{ \e_\s }', subline =>
                   '')),
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\\bold{XXX}',
+                    // '\\bold{X}',
                     '• Können wir hieraus über die Definition des Über-Operators der Binomialkoeffizienten durch Fakultäten etwas über die Fakultät von \lm{ \s } lernen?',
                     '• \\bold{Das kann so nicht stimmen, oder?} Wir können genau sagen, wieviele Summanden die Summe oder Reihe hat, die den endlichen Anteil von \lm{ \e_\s } darstellt. Es sind genau \lm{ \frac{1}{2} \s + 1 }, weil \lm{ \s } eine gerade Zahl ist und damit der größte Wert im Pascalschen Dreieck bei dieser Potenz liegt. Danach werden die Werte im Pascalschen Dreieck kleiner, so, dass ihre inneren Potenzen nicht mehr bis zum Endlichen reichen, denke ich.',
                     ))),
@@ -589,7 +589,7 @@
                     'ausschließlich mit Hilfe von endlichen ganzen Zahlen auf der rechten Seite, zu Null machen lässt.'."\n",
                       'Mit der eulerschen Zahl \lm{ \e } geht dies nicht, wie wir gleich sehen werden, und daher ist sie transzendent.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Transzendenz-der-eulerschen-Zahl-e:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Transzendenz-der-eulerschen-Zahl-e:X', text =>
                       
                 '\lm{ \e_{\s} } ist transzendent', subline =>
                   '')),
@@ -651,12 +651,7 @@
                     ))),
 
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -665,12 +660,7 @@
                       array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot x}  :=  \mathrm{cos}_{\s}(x) + \i \cdot \mathrm{sin}_{\s}(x)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -678,12 +668,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{s}^{․\,〈\i \cdot x〉}  =  〈1〉․〈1〉^{\i \cdot x}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -692,32 +677,22 @@
                       array( display => 'on',  latex => '{  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ \alpha *( \alpha - 1 *) *( \alpha - 2 *) \cdots *( \alpha - k + 1 *) }{ k! }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  x  =  1  }'),
                       array( display => 'on',  latex => '{  y  =  ․〈1〉  =  \s^{-1}  }'),
                       array( display => 'on',  latex => '{  \alpha  =  \i \cdot x  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( 1 + ․〈1〉 *)^{\alpha}  =  \sum_{ \forall k \in XXX \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) 1^{\alpha - k} 〈1〉_{-1}^{k}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{\alpha}  =  \sum_{ \forall k \in XXX \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) 〈1〉_{-k}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{\alpha}  =  \sum_{ \forall k \in XXX \mathbb{N}_{\infty} } *〈 *( \begin{array}{llll} \alpha \\\ k \end{array} *) *〉_{-k}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( 1 + ․〈1〉 *)^{\alpha}  =  \sum_{ \forall k \in XX \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) 1^{\alpha - k} 〈1〉_{-1}^{k}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{\alpha}  =  \sum_{ \forall k \in XX \mathbb{N}_{\infty} } *( \begin{array}{llll} \alpha \\\ k \end{array} *) 〈1〉_{-k}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{\alpha}  =  \sum_{ \forall k \in XX \mathbb{N}_{\infty} } *〈 *( \begin{array}{llll} \alpha \\\ k \end{array} *) *〉_{-k}  }'),
                       array( display => 'on',  latex => '{  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ \alpha *( \alpha - 1 *) *( \alpha - 2 *) \cdots *( \alpha - k + 1 *) }{ k! }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ *( \alpha - 0 *) *( \alpha - 1 *) *( \alpha - 2 *) \cdots *( \alpha - *( k - 1 *) *) }{ k! }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \begin{array}{llll} \alpha \\\ k \end{array} *)  =  \frac{ \prod_{ \forall j \in [0, k - 1]_{\mathbb{N}_{\infty}} }  *( \alpha - j *) }{ k! }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -733,12 +708,7 @@
                       array( display => 'on',  latex => '{  =  \alpha^{5} - 10 \alpha^{4} + 35 \alpha^{3} - 50 \alpha^{2} + 24 \alpha  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -751,12 +721,7 @@
                       array( display => 'on',  latex => '{  \e_{s}^{․\,〈6 \i〉}  =  〈1〉․〈6 \i〉〈15〉〈20〉〈15〉〈6〉〈1〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -767,12 +732,7 @@
                       array( display => 'on',  latex => '{  \e_{s}^{․\,〈4〉}  =  *〈 *( \begin{array}{llll} 4 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 4 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 3 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 4 \end{array} *) *〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -784,47 +744,35 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{\i \cdot x}  =  *〈 \sum_{ \forall k \in \mathbb{N} } \frac{ *( \i \cdot x *)^{k} }{ k! } *〉․ \\\ \qquad\qquad\qquad\qquad *〈 \cdots *〉*〈 \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots *〉*〈 \cdots *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots *〉*〈 \cdots *〉*〈 \cdots *〉*〈 \cdots *〉*〈 \cdots *〉_{-\s}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:X', text =>
                       
                 'Zusammenhang mit \lm{ \pi }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \e_{\s}^{\i \cdot \pi_{\s}}  =  -1  =  〈1〉․〈1〉^{〈\i \cdot \pi_{\s}〉_{1}}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉^{〈\i \cdot \pi_{\s}〉_{1}}  =  -1  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  〈1〉․〈1〉  =  \sqrt[ 〈\i \cdot \pi_{\s}〉_{1} ]{ -1 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -838,7 +786,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \pi_{\s}  =  〈 -\i \cdot \log_{〈1〉․\,〈1〉} -1 〉_{-1}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa.QK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -849,14 +797,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \log_{〈1〉․\,〈1〉} \e_{\s}  =   \s  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
