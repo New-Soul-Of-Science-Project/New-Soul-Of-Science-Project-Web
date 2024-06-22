@@ -53,7 +53,7 @@
                     'Die Ganzzahligkeit bedingt, dass alle Primfaktoren von \lm{ 2 \cdot ω } auch in \lm{ s } vorkommen müssen.'."\n",
                     ''))),
                       
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X',
                 Title => 'Fragen die offen sind …',
                 TitleVis => 'Fragen die offen sind:', ParagraphList => array(
 
@@ -98,7 +98,7 @@
                     'muss \lm{ 2 \cdot ω }, und somit auch \lm{ ω }, ein Teil des Primzahl-Flächenprodukts sein.'."\n".
                     'Und dieses Teilprodukt muss einen unendlich großen Wert haben.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 '\lm{ ω } kann nicht einer der unendlich großen Primzahltürme des Primzahl-Flächenprodukts sein', subline =>
                   '')),
@@ -159,7 +159,7 @@
                       'Wir beginnen damit, zwei Möglichkeiten zu beleuchten,'."\n".
                     'die Unendlichkeit der endlichen natürlichen Zahlen zu zeigen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Zwei Arten die Unendlichkeit der endlichen natürlichen Zahlen zu beweisen', subline =>
                   '')),
@@ -249,7 +249,7 @@
                     '\lm{ \rbrack p, p\# - 1 \lbrack_\mathbb{N} }, mindestens zwei oder vier oder gar mehr weitere Primzahlen,'."\n".
                     'die in der Primfaktorzerlegung von \lm{ p\# - 1 } und/oder \lm{ p\# + 1 } stecken.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Das passende Verständnis zum Beweis unserer Vermutung', subline =>
                   'Eine Perspektivenfindung')),
@@ -487,8 +487,8 @@
                       array( display => 'on',  latex => '{  lpr( 0 )  =  0  =  \varnothing  }'),
                     ))),
                   /* array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'X'."\n".
+                      'X'."\n",
                         '\\\\'."\n".
                       ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -503,8 +503,8 @@
                       array( display => 'on',  latex => '{  lpr( 1 )  =  1  =  *\{ 0 *\}  }'),
                     ))),
                   /* array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'X'."\n".
+                      'X'."\n",
                         '\\\\'."\n".
                       ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -520,8 +520,8 @@
                       array( display => 'on',  latex => '{  lpr( 2 )  =  3  =  *\{ 0, 1, 2 *\}  }'),
                     ))),
                   /* array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'X'."\n".
+                      'X'."\n",
                         '\\\\'."\n".
                       ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -537,8 +537,8 @@
                       array( display => 'on',  latex => '{  lpr( 4 )  =  2  =  *\{ 0, 1 *\}  }'),
                     ))),
                   /* array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'X'."\n".
+                      'X'."\n",
                         '\\\\'."\n".
                       ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -553,8 +553,8 @@
                       array( display => 'on',  latex => '{  lpr( 6 )  =  5  =  *\{ 0, 1, 2, 3, 4 *\}  }'),
                     ))),
                   /* array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'X'."\n".
+                      'X'."\n",
                         '\\\\'."\n".
                       ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -570,8 +570,8 @@
                       array( display => 'on',  latex => '{  lpr( 9 )  =  2  =  *\{ 0, 1 *\}  }'),
                     ))),
                   /* array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'X'."\n".
+                      'X'."\n",
                         '\\\\'."\n".
                       ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -587,8 +587,8 @@
                       array( display => 'on',  latex => '{  lpr( 10 )  =  3  =  *\{ 0, 1, 2 *\}  }'),
                     ))),
                   /* array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'X'."\n".
+                      'X'."\n",
                         '\\\\'."\n".
                       ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -604,8 +604,8 @@
                       array( display => 'on',  latex => '{  lpr( 18 )  =  3  =  *\{ 0, 1, 2 *\}  }'),
                     ))),
                   /* array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'X'."\n".
+                      'X'."\n",
                         '\\\\'."\n".
                       ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -621,8 +621,8 @@
                       array( display => 'on',  latex => '{  lpr( 20 )  =  2  =  *\{ 0, 1 *\}  }'),
                     ))),
                   /* array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'X'."\n".
+                      'X'."\n",
                         '\\\\'."\n".
                       ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -638,8 +638,8 @@
                       array( display => 'on',  latex => '{  lpr( 30 )  =  7  =  *\{ 0, 1, 2, 3, 4, 5, 6 *\}  }'),
                     ))),
                   /* array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'X'."\n".
+                      'X'."\n",
                         '\\\\'."\n".
                       ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -654,8 +654,8 @@
                       array( display => 'on',  latex => '{  lpr( 210 )  =  11  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 *\}  }'),
                     ))),
                   /* array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'X'."\n".
+                      'X'."\n",
                         '\\\\'."\n".
                       ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -672,8 +672,8 @@
                       array( display => 'on',  latex => '{  lpr\!*( ω\overline{\#} *)  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots *\} \\\ \qquad\qquad\qquad\qquad\qquad\qquad  =  \mathbb{N}  =  ω  }'),
                     ))),
                   /* array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'X'."\n".
+                      'X'."\n",
                         '\\\\'."\n".
                       ''))), */
 
@@ -682,9 +682,10 @@
                     ''))),
                     ))),
 
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X',
                 Title => 'Alter, doppeldeutiger Ansatz mit dem Primpotenzraster …',
                 TitleVis => 'Alter, doppeldeutiger Ansatz mit dem Primpotenzraster:', ParagraphList => array(
+
                   array( 'text', array( text => array(
                   '\condb{Das Primpotenzraster} \\\\'."\n".
                   '\cond{Die nächste Primzahl} \\\\'."\n".
@@ -735,15 +736,8 @@
 
                   array( 'text', array( text => array(
                     'Nachdem wir nun die Formalien definiert haben, möchte ich die Zusammenhänge an Zahlenbeispielen'."\n".
-                    'verdeutlichen und erlebbar machen.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'verdeutlichen und erlebbar machen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -757,8 +751,8 @@
                       array( display => 'on',  latex => '{  lppr( 7\overline{\#} )  =  7  =  *\{ 0, 1, 2, 3, 4, 5, 6 *\}  }'),
                     ))),
                   /* array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'X'."\n".
+                      'X'."\n",
                         '\\\\'."\n".
                       ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -773,8 +767,8 @@
                       array( display => 'on',  latex => '{  \Rightarrow  lppr( 6\overline{\#} )  =  lppr( 7\overline{\#} )  }'),
                     ))),
                   /* array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'X'."\n".
+                      'X'."\n",
                         '\\\\'."\n".
                       ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -788,8 +782,8 @@
                       array( display => 'on',  latex => '{  lppr( 5\overline{\#} )  =  5  =  *\{ 0, 1, 2, 3, 4 *\}  }'),
                     ))),
                   /* array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'X'."\n".
+                      'X'."\n",
                         '\\\\'."\n".
                       ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -804,8 +798,8 @@
                       array( display => 'on',  latex => '{  \Rightarrow  lppr( 4\overline{\#} )  =  lppr( 5\overline{\#} )  }'),
                     ))),
                   /* array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'X'."\n".
+                      'X'."\n",
                         '\\\\'."\n".
                       ''))), */
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -820,8 +814,8 @@
                       array( display => 'on',  latex => '{  \Rightarrow  lppr( 8\overline{\#} )  =  lppr( 9\overline{\#} )  =  lppr( 10\overline{\#} )  =  lppr( 11\overline{\#} )  }'),
                     ))),
                   /* array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      'X'."\n".
+                      'X'."\n",
                         '\\\\'."\n".
                       ''))), */
 
@@ -831,15 +825,8 @@
                     'oder gleich \lm{ n } ist und auf seiner ersten Rasterlücke sitzt.'."\n".
                     'Diese Primzahl erhalten wir dann durch \lm{ lppr( n\overline{\#} ) }.'."\n",
                       'Die Zahl beziehungsweise Menge \lm{ lppr( ω\overline{\#} ) } ist die Menge aller'."\n".
-                    'natürlichen Zahlen \lm{ \mathbb{N} }.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'natürlichen Zahlen \lm{ \mathbb{N} }.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -847,15 +834,9 @@
                       array( display => 'on',  latex => '{  \Rightarrow  ω\overline{\#}  ?=  ω  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
+
                     ))),
 
                   array( 'text', array( text => array(
@@ -870,7 +851,7 @@
                       'Dies alles erreichen wir über ein tieferes Verständnis, wie der Beweis des ›Satz des Euklid‹ funktioniert,'."\n".
                     'und über eine zu diesem Zweck etwas abgewandelte Primfakultät, mit der wir nun beginnen.'."\n".
                     ''))),
-                //  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                //  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 //'Die vollständige Primfakultät und die Anzahl von natürlichen Zahlen in einer Menge', subline =>
                 //  'Gibt es eine Beschreibung der Größe von Zahlenmengen aus natürlichen Zahlen, die auf der Primfakultät beruhen, die bei der Annäherung an die vollständige Primfakultät die Menge der natürlichen Zahlen beschreibt?')),
@@ -989,7 +970,7 @@
                     'Denn das Primturm-Potenzraster der Mengen-Primfakultäten einer Primzahl \lm{ pr\!*( p_i\overline{\#} *) }'."\n".
                     'kombiniert schließlich alle Primturm-Potenzraster der in ihm enthaltenen Primzahlen.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Berechnung der nächsten Primzahl', subline =>
                   'Per Algebra und Mengenlehre')),
@@ -1084,7 +1065,7 @@
                     'Also ergibt sich: \lm{ lpr\!*( 18 *) = 3 }.'."\n",
                       'Es ist also immer die kleinste Primzahl, mit Potenz Eins, die in den Primzahltürmen fehlt, die als Ergebnis kommt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Das Zählen der natürlichen Zahlen in Primzahlen', subline =>
                   'Die zählende Konstruktion der Primzahlen und damit der natürlichen Zahlen gleichzeitig')),
@@ -1119,9 +1100,10 @@
                     'vorangegangenen Primzahlen, die darauf folgende berechnet.'."\n".
                     ''))),
                       
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X',
                 Title => 'Beispiele zum Zählen der natürlichen Zahlen in Primzahlen …',
                 TitleVis => 'Beispiele zum Zählen der natürlichen Zahlen in Primzahlen:', ParagraphList => array(
+
                   array( 'text', array( text => array(
                     'Nachfolgend beispielhaft die Berechnung der ersten Primzahlen der Menge \lm{ \mathbb{P} }.'."\n",
                       'Die jeweiligen Primturm-Potenzraster Mengen finden wir in den'."\n".
@@ -1185,9 +1167,10 @@
                   array( 'text', array( text => array(
                     'Und so können wir dann alle endlichen Primzahlen fortwährend berechnen.'."\n".
                     ''))),
+
                     ))),
 
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Der Beweis der Primzahlprodukt-Vermutung', subline =>
                   'Wenn das Zählen der natürlichen Zahlen in Primzahlen ins Unendliche zu \lm{ ω } übergeht')),
@@ -1378,18 +1361,18 @@
                       'Die gerade gezeigten Entsprechungen beruhen auf Primfakultäten, lückenlos und bei der kleinsten'."\n".
                     'Primzahl beginnend.'."\n".
                     'Fehlt eine Primzahl mitten drinne oder es ist eine mehrfach im Produkt, so fällt die Entsprechung in sich zusammen.'."\n".
-                    // 'XXX'."\n".
-                    // 'XXX'."\n".
+                    // 'X'."\n".
+                    // 'X'."\n".
                     /* 'Aus diesem Grund ist \lm{ ω } dann auch keine Primzahl mehr'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n",
+                      'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n",
                     'Die Menge des Primfaktoranteil-Potenzrasters der Mengen-Primfakultät \lm{ pr\!*( p\overline{\#} *) }'."\n".
                     'der endlichen Primzahlen \lm{ p }, die beide einander entsprechen — \lm{ p \widehat{=} pr\!*( p\overline{\#} *) } —,'."\n".
                     'also einander eineindeutig zugeordnet werden können, aber nicht gleich sind, jedoch im Fall des lückenlosen Primfaktoranteil-Potenzrasters'."\n".
@@ -1417,7 +1400,7 @@
                     'Denn die Zahl \lm{ ω - 1 } ist zwar in der Theorie der Biordinalzahlen definiert, aber ist hierin kein Element'."\n".
                     'von \lm{ ω }.'."\n",
                       'Einzig die zweite Art der Beschreibung der Menge \lm{ ω } bleibt erhalten und zwar durch \lm{ ω\overline{\#} }.'."\n".
-                    'XXX \lm{ pr\!*( ω\overline{\#} *) }'."\n".
+                    'X \lm{ pr\!*( ω\overline{\#} *) }'."\n".
                     'und im Besonderen durch \lm{ lpr\!*( ω\overline{\#} *) }, wobei letzteres genau \lm{ ω } gleich sein muss, also \lm{ ω = lpr\!*( ω\overline{\#} *) }.'."\n",
                       'Nach dem Übergang gilt aber wegen \lm{ lpr\!*( ω\overline{\#} *) = pr\!*( ω\overline{\#} *) } auch \lm{ ω = pr\!*( ω\overline{\#} *) }.'."\n".
                     'Denn in der Menge \lm{ pr\!*( ω\overline{\#} *) } sind alle Rasterlücken gefüllt, weil alle endlichen natürlichen Zahlen, bis auf die Null,'."\n".
@@ -1436,10 +1419,10 @@
                     'Dabei gibt \lm{ p } immer die Anzahl der Zahlen an, die in der Menge \lm{ lpr\!*( p\overline{\#} *) }'."\n".
                     'enthalten sind.'."\n".
                     'Und beim Übergang ist diese Anzahl dann \lm{ ω } mit in der Menge \lm{ lpr\!*( ω\overline{\#} *) }.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n",
                       'Dies gelingt nur mit der Mengen-Primfakultät, in der alle Primzahlen von Beginn an'."\n".
                     'und in der ersten Potenz, enthalten sein müssen.'."\n".
                     'Beim Übergang zu \lm{ ω } geht dieses Produkt zum Produkt aller endlichen Primzahlen'."\n".
@@ -1529,7 +1512,7 @@
                     'Dazu wird per Mengen-Primfakultät ein Primzahlprodukt erzeugt, das sich von Schritt zu Schritt immer weiter,'."\n".
                     'zum Produkt aller endlichen Primzahlen vervollständigt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
                       
                 'Jeder Primzahl-Schritt teilt \lm{ ω }', subline =>
                   '')),
@@ -1561,7 +1544,7 @@
                       '\lm{ ω } ist nun keine Primzahl mehr, weil ihr alle endlichen Primzahlen zugrunde liegen,'."\n".
                     'die nicht enden.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
                       
                 'Jedoch ist jeder Primzahl-Schritt kein Teiler eines anderen Primzahl-Schritts', subline =>
                   '')),
@@ -1587,7 +1570,7 @@
                     'Der Übergang ist also wirklich etwas besonderes, von Schritten, die alle keine Teiler voneinander sind,'."\n".
                     'zum Ergebnis bei \lm{ ω }, das alle Schritte in einem Produkt zusammenfasst.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
                       
                 'Erklärung und Verständnis des Gesamtspektrums der natürlichen Zahlen durch ihr Primzahl-Spektrum', subline =>
                   '')),
@@ -1629,7 +1612,7 @@
                       'Auch das lässt uns tiefer verstehen, warum die Menge aller endlichen natürlichen Zahlen \lm{ ω } mit einem Produkt'."\n".
                     'aller endlichen Primzahlen einfacher Potenz beschrieben wird.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
                       
                 'Das Verlassen des Rasters einer Menge von aufeinanderfolgenden natürlichen Zahlen', subline =>
                   '')),
@@ -1643,7 +1626,7 @@
                       'Und unsere schrittweise Konstruktion der Primzahlen in Definition \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Definition-der-Menge-P-durch-p-Zaehlen}'."\n".
                     'funktioniert nach dem selben Prinzip.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
                       
                 'Immer mehr Primzahlen machen das Raster in Bezug auf die folgenden natürlichen Zahlen immer feiner', subline =>
                   '')),
@@ -1653,7 +1636,7 @@
                     'Dadurch wird das Raster durch immer mehr größere Primzahlen immer feiner.'."\n".
                     'Und deshalb kommen dann auch immer seltener neue Primzahlen hinzu, ohne, dass die Reihe der Primzahlen enden würde.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
                       
                 'Sichtbarmachung der Produktstruktur von \lm{ ω } im Kontext ihres Primturm-Potenzrasters', subline =>
                   '')),
@@ -1749,7 +1732,7 @@
                       'Diese Erkenntnis mit der obigen Darstellung durch \lm{ s } führt uns dann wieder zurück zu'."\n".
                     'den Superial-Zahlen und bringt sie erneut mit den Ordinalzahlen in Verbindung.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
                       
                 'Die Größenordnung von \lm{ ω } und \lm{ ω\overline{\#} }', subline =>
                   '')),
@@ -1773,7 +1756,7 @@
                     'das auch die Menge \lm{ lpr\!*( ω\overline{\#} *) = ω } darstellt.'."\n".
                     'Und der Wert von \lm{ ω\overline{\#} } hat nun auch die gleiche Größenordnung, wie der von \lm{ ω }.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
                       
                 'Die Größenordnung und Struktur von \lm{ \s } und \lm{ \s^{-1} }', subline =>
                   '')),
@@ -1821,22 +1804,13 @@
                     'interessanter Weise so mit der aktualen Unendlichkeit der'."\n".
                     'vollständigen Induktion der natürlichen Zahlen in direkter Verbindung.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
                       
-                'XXX Experimentell', subline =>
+                '\color{*Bearb}{(In Arbeit …)} Experimentell', subline =>
                   '')),
                   array( 'text', array( text => array(
-                  '\condb{XXX} \\\\'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                  // '\condb{X} \\\\'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.D', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1850,16 +1824,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  z  =  ω^{ ω^{ ω^{ \cdots } } }  =  ω^{ *( ω^{ *( ω^{ \cdots } *) } *) }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -1885,9 +1850,9 @@
                     // '• \lm{ ω } ist dann durch jede endliche Primzahl und durch deren Produkte mit jeweiliger Potenz von Eins ganzzahlig teilbar.',
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
-                'XXX Die Größenordnung des Produkts aller endlichen Primzahlen', subline =>
+                '\color{*Bearb}{(In Arbeit …)} Die Größenordnung des Produkts aller endlichen Primzahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Berechnen wir das Produkt aller endlichen Primzahlen von den kleinsten Primfaktoren her mit der Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} \lm{ p\# }, dann wird es sehr schnell'."\n".
@@ -1923,7 +1888,7 @@
                     'eine so große Lücke zwischen den Primzahlzwillingen und den nächsten Primzahlzwillingen entsteht, dass das Zählen der natürlichen'."\n".
                     'Zahlen aufholen kann.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Szenario, in dem hypothetisch als nächstgrößere und übernächstgrößere Primzahlen nur Primzahlzwillinge existieren', subline =>
                   '')),
@@ -1974,7 +1939,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \frac{ *( p_{i}\# *)^{2} - p_{i}\# }{ n }  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1985,29 +1950,16 @@
                       array( display => 'on',  latex => '{  *( \forall n \in \; ] p\# + 1, ( ( p\# - 1 ) \cdot ( p\# + 1 ) )\# - 1 [_\mathbb{N} *)  *[  n  \notin  \mathbb{P}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
-                'XXX Freie Gedanken', subline =>
+                '\color{*Bearb}{(In Arbeit …)} Freie Gedanken', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Die Argumentation könnte grob und sicher noch streitbarer Weise so laufen:'."\n".
@@ -2020,26 +1972,12 @@
                         'Denn die Kombinatorik zur Erzeugung der rationalen Zahlen aus Brüchen zeigt, dass es deutlich mehr rationale Zahlen von ihrer Anzahl her geben muss, als natürliche Zahlen, denn im Calkin-Wilf-Baum enthält schon der letzte Strang alle natürlichen Zahlen und der erste Strang all deren Kehrwerte. \\\\ Die direkte Kombinatorik von Zähler und Nenner wäre jeweils \lm{ ω } und ergäbe sich zu \lm{ ω^2 }, wenn nicht gekürzt werden könnte.',
                         'Anders, als bei der Mächtigkeit, wird bei der von mir gemeinten Anzahl der Zahlen ihre kombinatorische Erzeugung mit der vollständigen Induktion der natürlichen Zahlen ins Verhältnis gesetzt.',
                         'Und die Definition von \lm{ s } über das Primzahlflächenprodukt beruht eben auch auf einem Verhältnis zur Eins.',
-                        'XXX',
-                        'XXX',
-                        'XXX',
-                        'XXX',
-                        'XXX',
-                        'XXX',
-                        'XXX',
+                        '\color{*Bearb}{(In Arbeit …)}',
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Argumentation über die Primzahltürme der Definition von \lm{ \s }', subline =>
                   '')),
@@ -2081,10 +2019,7 @@
                   array( 'text', array( text => array(
                     'Das verwundert nach ein bisschen Überlegung nicht weiter, denn wir haben es erzwungen.'."\n".
                     'Aber es scheint uns nicht weiter zu bringen, denn es zerstört die transparenz unserer Primfaktoren-Definition von \lm{ \s }!'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2094,26 +2029,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  s  ?=  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{2} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{3} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{5} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{p \in \mathbb{P}} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:XXX', text =>
-                      
-                'XXX', subline =>
-                  '')),
-                  array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
                     ''))),
 
                   array( 'jumplist', array(
