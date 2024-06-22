@@ -54,7 +54,7 @@
                     'können die Koeffizienten der Potenzen der superialen Basis \term{s} als rationale Zahlen aus \lm{ \mathbb{Q} } definiert werden:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}  :=  *\{  x *|* *( \forall d \in \mathbb{Z} *) *( \forall q_{d} \in \mathbb{Q} \setminus \{0\} *) *( \forall q_{i} \in \mathbb{Q} *) \\\ \qquad\qquad\qquad\qquad\qquad\quad *[ q_{d} s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i]} q_{i} s^{i} *]  *\}  }',
+                      array( display => 'on',  latex => '{  \mathbb{S}  :=  *\{  x *|* *( \forall d \in \mathbb{Z} *) *( \forall q_{d} \in \mathbb{Q} \setminus \{0\} *) *( \forall q_{i} \in \mathbb{Q} *) \\\ \qquad\qquad\qquad\qquad\qquad\quad *[ q_{d} \s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i]} q_{i} \s^{i} *]  *\}  }',
                                           label_name => 'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom', label_text => '\name{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -128,7 +128,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.Z', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \mathbb{S}_{\Z}  :=  \left\{ x ~\middle|~ \left( \forall d \in \mathbb{N} \right) \left( \forall q_{d} \in \mathbb{Q} \setminus \{0\} \right) \left( \forall q_{i} \in \mathbb{Q} \right) \left( \forall z \in \mathbb{Z} \right) \\\ \qquad\qquad\quad \left[ \begin{cases} z  &  \text{ falls } d = 0  \\\\  q_{d} s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i > 0]} q_{i} s^{i} + z  &  \text{ falls } d > 0  \end{cases} \right] \right\}  }'),
+                      array( display => 'on', latex => '{  \mathbb{S}_{\Z}  :=  \left\{ x ~\middle|~ \left( \forall d \in \mathbb{N} \right) \left( \forall q_{d} \in \mathbb{Q} \setminus \{0\} \right) \left( \forall q_{i} \in \mathbb{Q} \right) \left( \forall z \in \mathbb{Z} \right) \\\ \qquad\qquad\quad \left[ \begin{cases} z  &  \text{ falls } d = 0  \\\\  q_{d} \s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i > 0]} q_{i} \s^{i} + z  &  \text{ falls } d > 0  \end{cases} \right] \right\}  }'),
                     ))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
                       
@@ -170,7 +170,7 @@
                     'Schreiben wir dies in einer ausführlicheren Definition, wie bei den ganzen Superial-Zahlen, dann wird es etwas transparenter:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.N', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \Leftrightarrow  \mathbb{S}_{\N}  :=  \left\{ x ~\middle|~ \left( \forall d \in \mathbb{N} \right) \left( \forall q_{d} \in \mathbb{Q} > 0 \right) \left( \forall q_{i} \in \mathbb{Q} \right) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad \left( \forall n \in \mathbb{N} \right) \left( \forall z \in \mathbb{Z} \right) \\\ \qquad\qquad\qquad \left[ \begin{cases} n  &  \text{ falls } d = 0  \\\\  q_{d} s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i > 0]} q_{i} s^{i} + z  &  \text{ falls } d > 0  \end{cases} \right] \right\}  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \mathbb{S}_{\N}  :=  \left\{ x ~\middle|~ \left( \forall d \in \mathbb{N} \right) \left( \forall q_{d} \in \mathbb{Q} > 0 \right) \left( \forall q_{i} \in \mathbb{Q} \right) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad \left( \forall n \in \mathbb{N} \right) \left( \forall z \in \mathbb{Z} \right) \\\ \qquad\qquad\qquad \left[ \begin{cases} n  &  \text{ falls } d = 0  \\\\  q_{d} \s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i > 0]} q_{i} \s^{i} + z  &  \text{ falls } d > 0  \end{cases} \right] \right\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Für den Fall, dass \term{d = 0} ist, es sich also um endliche Zahlen handelt, bleiben nur endliche natürliche Zahlen über.'."\n",
@@ -366,13 +366,13 @@
                       
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  \left[  n < s  \right]  }',
+                      array( display => 'on', latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  \left[  n < \s  \right]  }',
                                                label_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Equ-alle-n-kleiner-s', label_text => '\name{OM:SupNum:Formale-Entwicklung:Formalien:Equ-alle-n-kleiner-s}', label_incr => true),
                       array( display => 'on', latex => '{  *( \forall r \in \mathbb{R} *)  *( \exists n \in \mathbb{N} *)  \left[  r < n  \right]  }',
                                                label_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Equ-exist-n-mit-r-kleiner-n', label_text => '\name{OM:SupNum:Formale-Entwicklung:Formalien:Equ-exist-n-mit-r-kleiner-n}', label_incr => true),
-                      array( display => 'on', latex => '{  \Rightarrow  *( \forall r \in \mathbb{R} *)  \left[  - s < r < s  \right]  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  *( \forall r \in \mathbb{R^{+}} *)  \left[  0 < s^{-1} < r  \right]  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  *( k \in \mathbb{R} *)  *( \forall r \in \mathbb{R^{+}} *)  \\\ \qquad\qquad  \left[  k - r < k - s^{-1} < k < k + s^{-1} < k + r  \right]  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  *( \forall r \in \mathbb{R} *)  \left[  - \s < r < \s  \right]  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  *( \forall r \in \mathbb{R^{+}} *)  \left[  0 < \s^{-1} < r  \right]  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  *( k \in \mathbb{R} *)  *( \forall r \in \mathbb{R^{+}} *)  \\\ \qquad\qquad  \left[  k - r < k - \s^{-1} < k < k + \s^{-1} < k + r  \right]  }'),
                     ))),
                       
                   array( 'text', array( text => array(
@@ -390,19 +390,19 @@
                     ))),
                   array( 'text', array( text => array(
                   '\condb{Ein besonderes Zahlenwertsystem und seine Kurznotation} \\\\'."\n".
-                    'Das ist sehr bemerkenswert und ermöglicht ein neues und besonderes Zahlenwertsystem auf Basis der superialen Basis \latexmath{ s }:'."\n",
-                      'Jede Ziffer dieses Zahlenwertsystems auf Basis \latexmath{ s } kann eine Zahl sein; in jedem Fall eine rationale, möglicherweise auch eine überrationale (siehe \jumpname{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}).'."\n".
+                    'Das ist sehr bemerkenswert und ermöglicht ein neues und besonderes Zahlenwertsystem auf Basis der superialen Basis \latexmath{ \s }:'."\n",
+                      'Jede Ziffer dieses Zahlenwertsystems auf Basis \latexmath{ \s } kann eine Zahl sein; in jedem Fall eine rationale, möglicherweise auch eine überrationale (siehe \jumpname{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}).'."\n".
                     'Sehr fraglich ist für mich, ob es sinnvollerweise wirklich auch jede reelle Zahl sein kann,'."\n".
                     'denn ich vermute, dass transzendente Zahlen, wie die Eulersche Zahl \latexmath{ \e } oder die Kreiszahl \latexmath{ π },'."\n".
                     'als Koeffizienten in jedem Fall aus dem sinnvollen Rahmen fallen.'."\n",
                       'Nachfolgend ein paar Beispiele in einer neuen Notation, die jede Ziffer dieses Zahlensystems in spitzen Klammern notiert:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a, b, c, d \in \mathbb{Q} *) *[  〈a〉〈b〉〈c〉․〈d〉 \\\ \qquad\qquad\qquad  :=  a \cdot s^{2} + b \cdot s^{1} + c \cdot s^{0} + d \cdot s^{-1} \\\ \qquad\qquad\qquad  \in  \mathbb{S}  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  s^{1}  =  〈1〉〈0〉․  =  〈1〉〈0〉_{0}  =  〈1〉_{1}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  s^{0}  =  〈1〉․  =  〈1〉_{0}  =  1  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  s^{-1}  =  ․〈1〉  =  _{0}〈1〉  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  - \frac{3}{5} \cdot s^{2} + 25 \cdot s^{1} + 3,5 \cdot s^{0} - 7,2 \cdot s^{-1} \\\ \qquad\qquad\qquad\quad  =  *〈 - \frac{3}{5} *〉〈25〉〈3,5〉․〈-7,2〉 \\\ \qquad\qquad\qquad\quad  =  *〈- \frac{3}{5} *〉〈25〉〈3,5〉_{0}〈-7,2〉  }'),
+                      array( display => 'on',  latex => '{  *( \forall a, b, c, d \in \mathbb{Q} *) *[  〈a〉〈b〉〈c〉․〈d〉 \\\ \qquad\qquad\qquad  :=  a \cdot \s^{2} + b \cdot \s^{1} + c \cdot \s^{0} + d \cdot \s^{-1} \\\ \qquad\qquad\qquad  \in  \mathbb{S}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \s^{1}  =  〈1〉〈0〉․  =  〈1〉〈0〉_{0}  =  〈1〉_{1}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \s^{0}  =  〈1〉․  =  〈1〉_{0}  =  1  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \s^{-1}  =  ․〈1〉  =  _{0}〈1〉  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  - \frac{3}{5} \cdot \s^{2} + 25 \cdot \s^{1} + 3,5 \cdot \s^{0} - 7,2 \cdot \s^{-1} \\\ \qquad\qquad\qquad\quad  =  *〈 - \frac{3}{5} *〉〈25〉〈3,5〉․〈-7,2〉 \\\ \qquad\qquad\qquad\quad  =  *〈- \frac{3}{5} *〉〈25〉〈3,5〉_{0}〈-7,2〉  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Ich denke an diesen einfachen Beispielen wird klar, wie das superiale Zahlenwertsystem funktioniert und wie es notiert wird.'."\n".
@@ -421,7 +421,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}^{y}_{T}  :=  *\{  a  *|*  *( \forall t \in \mathbb{S}_{T} *) *[ a = t \cdot s^{y} *]  *\}  }',
+                      array( display => 'on',  latex => '{  \mathbb{S}^{y}_{T}  :=  *\{  a  *|*  *( \forall t \in \mathbb{S}_{T} *) *[ a = t \cdot \s^{y} *]  *\}  }',
                                           label_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren', label_text => '\name{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -430,7 +430,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{S}^{-1}_{Z}  =  *\{  a  *|*  *( \forall z \in \mathbb{S}_{\Z} *) *[ a = z \cdot s^{-1} *]  *\}  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{S}^{-1}_{Z}  =  *\{  a  *|*  *( \forall z \in \mathbb{S}_{\Z} *) *[ a = z \cdot \s^{-1} *]  *\}  }',
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Menge-superial-kleine-ganze-Zahlen}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
