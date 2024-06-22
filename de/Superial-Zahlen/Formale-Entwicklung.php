@@ -15,7 +15,7 @@
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',
-                    // '• Ist \term{\M(S)} bezüglich der Addition und Multiplikation ein \jump[https://de.wikipedia.org/wiki/Geordneter_Körper]{}{archimedisch angeordneter Körper}?',
+                    // '• Ist \lm{ \mathbb{S} } bezüglich der Addition und Multiplikation ein \jump[https://de.wikipedia.org/wiki/Geordneter_Körper]{}{archimedisch angeordneter Körper}?',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -51,7 +51,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Um zu gewährleisten, dass die ganzen und die natürlichen Superial-Zahlen möglichst große Teilmengen im Verhältnis zur Menge \lm{ \mathbb{S} } aller Superial-Zahlen sind,'."\n".
-                    'können die Koeffizienten der Potenzen der superialen Basis \term{s} als rationale Zahlen aus \lm{ \mathbb{Q} } definiert werden:'."\n"))),
+                    'können die Koeffizienten der Potenzen der superialen Basis \lm{ \s } als rationale Zahlen aus \lm{ \mathbb{Q} } definiert werden:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{S}  :=  *\{  x *|* *( \forall d \in \mathbb{Z} *) *( \forall q_{d} \in \mathbb{Q} \setminus \{0\} *) *( \forall q_{i} \in \mathbb{Q} *) \\\ \qquad\qquad\qquad\qquad\qquad\quad *[ q_{d} \s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i]} q_{i} \s^{i} *]  *\}  }',
@@ -173,9 +173,9 @@
                       array( display => 'on', latex => '{  \Leftrightarrow  \mathbb{S}_{\N}  :=  \left\{ x ~\middle|~ \left( \forall d \in \mathbb{N} \right) \left( \forall q_{d} \in \mathbb{Q} > 0 \right) \left( \forall q_{i} \in \mathbb{Q} \right) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad \left( \forall n \in \mathbb{N} \right) \left( \forall z \in \mathbb{Z} \right) \\\ \qquad\qquad\qquad \left[ \begin{cases} n  &  \text{ falls } d = 0  \\\\  q_{d} \s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i > 0]} q_{i} \s^{i} + z  &  \text{ falls } d > 0  \end{cases} \right] \right\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Für den Fall, dass \term{d = 0} ist, es sich also um endliche Zahlen handelt, bleiben nur endliche natürliche Zahlen über.'."\n",
-                      'Für \term{d > 0}, den Fall, dass es sich um aktual unendlich große natürliche Zahlen handelt, entspricht die Definition der von positiven ganzen Superial-Zahlen.'."\n".
-                    'Dies ist dadurch bestimmt, dass der Koeffizient \term{q__{d}} der größten Potenz \term{s^^{d}} positiv sein muss.'."\n",
+                    'Für den Fall, dass \lm{ d = 0 } ist, es sich also um endliche Zahlen handelt, bleiben nur endliche natürliche Zahlen über.'."\n",
+                      'Für \lm{ d > 0 }, den Fall, dass es sich um aktual unendlich große natürliche Zahlen handelt, entspricht die Definition der von positiven ganzen Superial-Zahlen.'."\n".
+                    'Dies ist dadurch bestimmt, dass der Koeffizient \lm{ q_{d} } der größten Potenz \lm{ \s^{d} } positiv sein muss.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
@@ -290,14 +290,14 @@
                     'Mir erscheint die nachfolgende Perspektive natürlich am besten zum Erkenntnisgewinn geeignet und in diesem Sinne als am besten zu den Superial-Zahlen passend.'."\n"))),
                   array( 'text', array( text => array(
                   '\condb{Die Teilmengen vom Beginn der natürlichen Zahlen} \\\\'."\n".
-                    'Betrachten wird die Teilmengen \term{\M(T)__{n}}, die wir vom Beginn der natürlichen Zahlen bilden können und deren Größe, also die Anzahl ihrer Elemente \term{n}.'."\n",
+                    'Betrachten wird die Teilmengen \lm{ \mathbb{T}_{n} }, die wir vom Beginn der natürlichen Zahlen bilden können und deren Größe, also die Anzahl ihrer Elemente \lm{ n }.'."\n",
                       'Exemplarisch vereinfacht definieren wir diese Mengen wie folgt:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \mathbb{T}_{n}  :=  *\{ 0, 1, 2, 3, 4, …, n - 1 *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Formell korrekter können wir schreiben, wenn wir nachfolgend die Menge aller natürlichen Zahlen \term{\M(N)} als stets mit der Null beginnend annehmen:'."\n"))),
+                    'Formell korrekter können wir schreiben, wenn wir nachfolgend die Menge aller natürlichen Zahlen \lm{ \mathbb{N} } als stets mit der Null beginnend annehmen:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{N}  :=  \mathbb{N}_{0}  }',
@@ -305,11 +305,11 @@
                       array( display => 'on',  latex => '{  \mathbb{T}_{n}  :=  \left\{  x ~\middle|~ *( n \in \mathbb{N} *) *( \forall x \in \mathbb{N} *) \left[  x < n  \right]  \right\}  }'),
                     ))),
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Die Teilmengen \term{\M(T)__{n}} der ersten \term{n} Elemente wird definiert als die Menge der Elemente x für die Gilt:'."\n".
-                      'Ich nehme das Element \term{n} aus der Menge der natürlichen Zahlen \term{\M(N)} und alle \term{x}, die kleiner als \term{n} sind.'."\n"))),
+                      'Die Teilmengen \lm{ \mathbb{T}_{n} } der ersten \lm{ n } Elemente wird definiert als die Menge der Elemente x für die Gilt:'."\n".
+                      'Ich nehme das Element \lm{ n } aus der Menge der natürlichen Zahlen \lm{ \mathbb{N} } und alle \lm{ x }, die kleiner als \lm{ n } sind.'."\n"))),
                       
                   array( 'text', array( text => array(
-                    'Wir sehen schon an der Definition, dass die Anzahl der Elemente in \term{\M(T)__{n}} größer als alle Elemente dieser Menge ist.'."\n"))),
+                    'Wir sehen schon an der Definition, dass die Anzahl der Elemente in \lm{ \mathbb{T}_{n} } größer als alle Elemente dieser Menge ist.'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                       'Mein Freund Raimund Welsch machte mich in diesem Zusammenhang ganz zurecht darauf aufmerksam, dass dies eben nur gilt, wenn die natürlichen Zahlen vorstehend einschließlich der Null definiert sind.'."\n",
@@ -318,7 +318,7 @@
                       
                   array( 'text', array( text => array(
                   '\condb{Das größte Element einer Menge} \\\\'."\n".
-                    'Im Fall der Mengen mit endlich vielen Elementen, hier repräsentiert durch die Mengen \term{\M(T)__{n}}, existiert ein größtes Element in der Menge.'."\n".
+                    'Im Fall der Mengen mit endlich vielen Elementen, hier repräsentiert durch die Mengen \lm{ \mathbb{T}_{n} }, existiert ein größtes Element in der Menge.'."\n".
                     'Es gilt:'."\n"))),
                       
                   array( 'equations',
@@ -335,7 +335,7 @@
                 'Zahlen und Mengen im Unendlichen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Anders als im Endlichen der Mengen \term{\M(T)__{n}} verhält es sich, wenn wir zur Menge aller natürlich Zahlen übergehen, die unendlich viele Elemente endlicher Größe in sich hat.'."\n".
+                    'Anders als im Endlichen der Mengen \lm{ \mathbb{T}_{n} } verhält es sich, wenn wir zur Menge aller natürlich Zahlen übergehen, die unendlich viele Elemente endlicher Größe in sich hat.'."\n".
                     'Auch sie beginnt mit der Null, aber in ihr gibt es per Definition kein größtes Element,'."\n".
                     'weil es zu jedem Element einen Nachfolger gibt:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Unendlichkeitsaxiom:2021}, Bedeutung für die Mathematik, Natürliche Zahlen.}'."\n"))),
                       
@@ -345,7 +345,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                      'Jedoch kann die Anzahl der Elemente in \term{\M(N)} nach obiger Definition \jumpname{OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N} mit der aktual unendlichen Zahl \term{ω} angegeben werden:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}, Topologische Eigenschaften.}'."\n"))),
+                      'Jedoch kann die Anzahl der Elemente in \lm{ \mathbb{N} } nach obiger Definition \jumpname{OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N} mit der aktual unendlichen Zahl \lm{ ω } angegeben werden:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}, Topologische Eigenschaften.}'."\n"))),
                       
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -360,9 +360,9 @@
                   array( 'text', array( text => array(
                     'Auf diese Weise kommen wir in die Lage, Zahlen außerhalb des Endlichen zu definieren; Zahlen, die also wirklich im Unendlichen liegen.'."\n",
                       'Auch können wir nun Zahlen definieren, die um eine endliche reelle Zahl herum liegen und näher an dieser sind, als jede andere reelle Zahl.'."\n".
-                    'Sie verhalten sich ähnlich, wie der Limes einer Umgebung \term{ε}, der gegen Null geht.'."\n".
+                    'Sie verhalten sich ähnlich, wie der Limes einer Umgebung \lm{ \varepsilon }, der gegen Null geht.'."\n".
                     'Nur sind diese Umgebungszahlen nicht unscharf, wie ein Limes, sondern konkret und damit scharf.'."\n",
-                      'Das gleiche gilt, wenn wir das \term{ω} durch die noch viel größere superiale Basis \term{s} ersetzen:'."\n"))),
+                      'Das gleiche gilt, wenn wir das \lm{ ω } durch die noch viel größere superiale Basis \lm{ \s } ersetzen:'."\n"))),
                       
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -406,8 +406,8 @@
                     ))),
                   array( 'text', array( text => array(
                     'Ich denke an diesen einfachen Beispielen wird klar, wie das superiale Zahlenwertsystem funktioniert und wie es notiert wird.'."\n".
-                    'Der Punkt hinter der nullten Potenz von \term{s} markiert quasi das Komma, ähnlich unseren reellen Zahlen im Zehnersystem notiert.'."\n".
-                    'Alternativ kann hinter einer spitzen Klammer auch die Potenz der superialen Basis \term{s} als ganze Zahl angegeben werden.'."\n"))),
+                    'Der Punkt hinter der nullten Potenz von \lm{ \s } markiert quasi das Komma, ähnlich unseren reellen Zahlen im Zehnersystem notiert.'."\n".
+                    'Alternativ kann hinter einer spitzen Klammer auch die Potenz der superialen Basis \lm{ \s } als ganze Zahl angegeben werden.'."\n"))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
