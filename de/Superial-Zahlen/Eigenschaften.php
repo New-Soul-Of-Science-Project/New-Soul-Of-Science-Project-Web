@@ -14,7 +14,7 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\\bold{XXX}',
+                    // '\\bold{X}',
                     // '• Ist \\term{\M(S)} bezüglich der Addition und Multiplikation ein \\jump[https://de.wikipedia.org/wiki/Geordneter_Körper]{}{archimedisch angeordneter Körper}?',
                     ))),
                       
@@ -90,7 +90,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Sind die sinnvollen Koeffizienten alle reellen Zahlen, also \lm{ \mathbb{A}_{\S} = \mathbb{R} }?} \\\\'."\n".
-                  '\cond{Eine Frage der Transzendents} \\\\'."\n".
+                  '\cond{Eine Frage der Transzendenz} \\\\'."\n".
                     'Das hängt davon ab, wie wir im Lichte der Superial-Zahlen beantworten, welche Zahlen wir zu den reellen Zahlen zählen.'."\n".
                     'Wenn wir \jump{OM:SupNum:Ableitungen-Integrale}{die Ableitung und das Integral} über die Superial-Zahlen definieren'."\n".
                     'und nicht, wie heute meistens üblich, über den Limes, und berechnen, welche Funktion abgeleitet sie selber ergibt,'."\n".
@@ -111,29 +111,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Sind die sinnvollen Koeffizienten alle algebraischen Zahlen, also \lm{ \mathbb{A}_{\S} = \mathbb{A} }?} \\\\'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X', text =>
-                      
-                'XXX', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                  '\condb{\color{*Bearb}{In Arbeit …}} \\\\'."\n".
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -160,7 +138,7 @@
                     '\\latexmath{ \mathbb{S} } ist nämlich ein angeordneter Körper\\footnote{\\const{NSOSP_g_footnote_text_GeordneterKoerper}}.'."\n".
                     '\\color{*Bearb}{(Dies ist zu beweisen: die Körpereigenschaft und das Angeordnetsein.)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper:X', text =>
                       
                 'Ist \\latexmath{ \mathbb{S} } ein archimedisch angeordneter Körper?', subline =>
                   '')),
@@ -203,7 +181,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Gibt es eine größere geordnete Teilmenge der Superial-Zahlen, die auch unendliche Elemente oder Elemente mit solchen Anteilen, beinhaltet, die ein archimedisch angeordneter Körper ist?} \\\\'."\n".
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -230,38 +208,38 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper:X', text =>
                       
                 'Aber \\latexmath{ \mathbb{S} } ist bezüglich der natürlichen Superial-Zahlen \\latexmath{ \mathbb{S}_N } ein archimedisch angeordneter Körper', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      '\color{*Bearb}{In Arbeit …}'."\n".
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \exists n \in \mathbb{S}_{\N} *) *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *[  x \cdot n > y  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      '\color{*Bearb}{In Arbeit …}'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper:X', text =>
                       
-                '\color{*Bearb}{In Arbeit …}', subline =>
+                '\color{*Bearb}{(In Arbeit …)}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -281,8 +259,8 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{XXX}',
-                    // '• XXX',
+                    // '\\bold{X}',
+                    // '• X',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -664,7 +642,7 @@
                     'Hingegen haben in \lm{ \mathbb{On} } nicht nur die Null, sondern alle sogenannten Limeszahlen, wie auch \lm{ ω } und selbst \lm{ ω^{ω} },'."\n".
                     'keine Vorgänger.'."\n".
                     'Dieser strukturelle Unterschied, trotz Wertgleichheit, ist sehr bemerkenswert und bedarf einer näheren Untersuchung.'."\n",
-                      '\color{*Bearb}{In Arbeit …}'."\n".
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -684,21 +662,21 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{XXX}',
+                    // '\\bold{X}',
                     '• Die Null ist in den Superial-Zahlen viel simpler definiert, als in den hyperreellen Zahlen.',
                     '• In den Superial-Zahlen brauchen wir nicht eine Reihe von unendlich vielen Zahlen, um infinite und infinitesimale Zahlen zu definieren.',
                     '– Wir können das Symbol \lm{ \s } für ein unendliches Flächenprodukt der Primzahlen nehmen, siehe oben, und dieses mit endlichen Symbolen, wie Brüchen, kombinieren.',
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:VergleichMitHyperreellenZahlen:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:VergleichMitHyperreellenZahlen:X', text =>
                       
-                '\\color{*Bearb}{In Arbeit …}', subline =>
+                '\\color{*Bearb}{(In Arbeit …)}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -718,10 +696,8 @@
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\\bold{XXX}',
+                    // '\\bold{X}',
                     '• Verweisen auf \jumpname{OM:SupNum:Struktur-Geometrie}.',
-                    // '• XXX',
-                    // '• XXX',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -772,7 +748,7 @@
                       'Es soll vorerst darum gehen, die Struktur der Zahlen, bestenfalls der reellen Zahlen,'."\n".
                     'tiefer zu beleuchten, um zu sehen, ob und, wenn ja, welche Erkenntnisse sich diesbezüglich ergeben.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:X', text =>
                       
                 'Die Potenz \lm{ 2^{ω} } ist uns aus dem Primzahl-Flächenprodukt bereits bekannt', subline =>
                   '')),
@@ -804,7 +780,7 @@
                   array( 'text', array( text => array(
                     'Dies sind Formulierungen, die neu sind, soweit mir bekannt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:X', text =>
                       
                 'Die Konstruktion und der Sinn von \lm{ \s } wirft Fragen bezüglich der Struktur der reellen Zahlen auf', subline =>
                   '')),
@@ -844,7 +820,7 @@
                     'also der Erweiterung des Zählens, und der Primzahlen, der Definition der vollständigen Induktion über endliche Primzahlen sowie'."\n".
                     'der Definition von irrationalen Realanteilen der algebraischen Zahlen mit überratiionalen Brüchen, also Brüchen aus aktual unendlichen ganzen Zahlen, die irrationale Wurzeln und ähnliches beschreiben.'."\n",
                       'All dies steht offensichtlich in Beziehung zur Kontinuumshypothese und kann so zu deren besseren Verständnis herangezogen werden.'."\n",
-                      '\\color{*Bearb}{In Arbeit …}'."\n".
+                      '\\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen', text =>
                       
@@ -865,7 +841,7 @@
                     'mit unendlich vielen Nachkommastellen darstellbar, ohne zu beantworten,'."\n".
                     'wie groß diese minimale Unendlichkeit denn eigentlich ist.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:X', text =>
                       
                 'Schlussfolgerung zur Untersuchung der Kontinuumshypothese', subline =>
                   '')),
