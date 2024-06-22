@@ -14,8 +14,8 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\bold{XXX}',
-                    // '• XXX',
+                    // '\bold{X}',
+                    // '• X',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -115,7 +115,7 @@
                     'Die Definition der Ableitung muss folglich nicht zwingend als Division formuliert werden.'."\n",
                       'Durch die detaillierte Betrachtung mit aktual unendlichen Zahlen erschließt sich ein genaueres Verständnis.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:X', text =>
                       
                 'Beispiele für Ableitungen', subline =>
                   '')),
@@ -163,7 +163,7 @@
                   array( 'text', array( text => array(
                     'Wir können hieran erkennen, dass die Vorgehensweise mit dem Limes Details der Vorgänge verbirgt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:X', text =>
                       
                 'Welche Funktion ist nach dieser Definition ihre eigene Ableitung?', subline =>
                   '')),
@@ -204,7 +204,7 @@
                       'Hier erkennen wir, dass die Superial-Zahlen einen tiefen Bezug zur Zahlentheorie haben könnten und schließlich auch haben,'."\n".
                     'wie wir insgesamt feststellen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
                       
                 'Ganze und natürliche Superial-Zahlen', subline =>
                   '')),
@@ -254,7 +254,7 @@
                     'Diese Wurzeln gehören zu den algebraischen Zahlen und es bleibt derzeit noch die Frage offen, ob wirklich alle'."\n".
                     'realen Koeffizienten der algebraischen Zahlen als Koeffizienten von \lm{ \s } ganze Zahlen ergeben.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
                       
                 'Definition der Summe auf Basis von Superial-Zahlen', subline =>
                   '')),
@@ -297,7 +297,7 @@
                     'Dann wären die einzigen \lm{ x }, für die das innerhalb der Superial-Zahlen erster Stufe nicht funktioniert, \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen}{transzendente Zahlen},'."\n".
                     'auf die ich an anderer Stelle eingehen möchte.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
                       
                 'Definition der Integration', subline =>
                   '')),
@@ -345,7 +345,7 @@
                 'Ein Beispiel', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration', text =>
                       
@@ -379,8 +379,8 @@
                   array( 'text', array( text => array(
                     'Ist nun auch die Integration einer Ableitung ihre Umkehrung?'."\n",
                       'Dies können wir bisher nicht geschlossen zeigen, wie wir nachfolgend sehen werden.'."\n".
-                    'Wir brauch dies aber auch nicht unbedingt zeigen, weil wir die Definition der Integration so konstruiert haben,'."\n".
-                    'dass dies der Fall sein muss.'."\n",
+                    'Wir brauchen dies aber auch nicht unbedingt zeigen, weil wir die Definition der Integration in Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}'."\n".
+                    'so konstruiert haben, dass dies der Fall sein muss.'."\n",
                       'Was wir zeigen können ist, dass wir auch nach Aufspaltung der Ableitungsteile in ihre Teilsummen, die nach dem Kürzen'."\n".
                     'der Faktoren der Ableitung und des Integrals verbleiben, wir den Summanden \lm{ f(〈n〉․〈1〉) } der ersten Summe'."\n".
                     'mit Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Ableitung-mit-x-plus-s-tel-Kurznotation}'."\n".
@@ -451,8 +451,8 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\bold{XXX}',
-                    // '• XXX',
+                    // '\bold{X}',
+                    // '• X',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -506,13 +506,7 @@
                                            *//* label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N', *//*label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                       ''))), */
 
                   /* array( 'text', array( text => array(
@@ -827,7 +821,7 @@
                     'ausgeklammert werden kann.'."\n".
                     'Diese Summe lässt sich noch auf weitere Arten umformen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:X', text =>
                       
                 'Summe aller rationalen Zahlen von Null bis ausschließlich \lm{ x }', subline =>
                   '')),
@@ -872,21 +866,17 @@
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X',
                 Title => '\small{Ein weiterer Ansatz diese Summe zu berechnen …}',
                 TitleVis => 'Ein weiterer Ansatz diese Summe zu berechnen:', ParagraphList => array(
 
                   array( 'text', array( text => array(
                   '\condb{Ein weiterer Ansatz diese Summe zu berechnen} \\\\'."\n".
-                    'XXX'."\n".
-                    'Im Grunde genommen haben wir damit schon den Beweis für die Richtigkeit dieser Gleichung erbracht.'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Im Grunde genommen haben wir damit schon den Beweis für die Richtigkeit dieser Gleichung erbracht.'."\n".
                     'Aber vielleicht können wir ja noch besser verstehen, warum dies so ist?'."\n",
                       'Wie oben schon erwähnt, wissen wir mit Hilfe der Biordinalzahlen aus dem späteren Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS}‹}'."\n".
                     'die Anzahl der rationalen Zahlen zwischen Null und ausschließlich der Eins aus Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s}.'."\n".
@@ -921,18 +911,8 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in [ 0, \frac{ x \cdot s }{ 2 \cdot \omega } [_{\mathbb{N}_{\infty}} }  \!\!\!\! i  =  \frac{ *( \frac{ x \cdot s }{ 2 \cdot \omega } *)^{2} - \frac{ x \cdot s }{ 2 \cdot \omega } }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Und das Ergebnis ist jetzt um \lm{ \frac{ s }{ 2 \cdot \omega} } zu weit'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Und das Ergebnis ist jetzt um \lm{ \frac{ s }{ 2 \cdot \omega} } zu weit'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
                     ))),
