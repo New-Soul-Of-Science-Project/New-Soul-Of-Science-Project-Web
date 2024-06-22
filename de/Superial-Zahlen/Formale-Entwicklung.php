@@ -390,10 +390,10 @@
                     ))),
                   array( 'text', array( text => array(
                   '\condb{Ein besonderes Zahlenwertsystem und seine Kurznotation} \\\\'."\n".
-                    'Das ist sehr bemerkenswert und ermöglicht ein neues und besonderes Zahlenwertsystem auf Basis der superialen Basis \latexmath{ \s }:'."\n",
-                      'Jede Ziffer dieses Zahlenwertsystems auf Basis \latexmath{ \s } kann eine Zahl sein; in jedem Fall eine rationale, möglicherweise auch eine überrationale (siehe \jumpname{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}).'."\n".
+                    'Das ist sehr bemerkenswert und ermöglicht ein neues und besonderes Zahlenwertsystem auf Basis der superialen Basis \lm{ \s }:'."\n",
+                      'Jede Ziffer dieses Zahlenwertsystems auf Basis \lm{ \s } kann eine Zahl sein; in jedem Fall eine rationale, möglicherweise auch eine überrationale (siehe \jumpname{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}).'."\n".
                     'Sehr fraglich ist für mich, ob es sinnvollerweise wirklich auch jede reelle Zahl sein kann,'."\n".
-                    'denn ich vermute, dass transzendente Zahlen, wie die Eulersche Zahl \latexmath{ \e } oder die Kreiszahl \latexmath{ π },'."\n".
+                    'denn ich vermute, dass transzendente Zahlen, wie die Eulersche Zahl \lm{ \e } oder die Kreiszahl \lm{ π },'."\n".
                     'als Koeffizienten in jedem Fall aus dem sinnvollen Rahmen fallen.'."\n",
                       'Nachfolgend ein paar Beispiele in einer neuen Notation, die jede Ziffer dieses Zahlensystems in spitzen Klammern notiert:'."\n"))),
                   array( 'equations',
@@ -417,7 +417,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'An einigen Stellen dieser Arbeit'."\n".
-                    'benötigen wir die Skalierung der superialen Potenzebene einer Teilmenge \latexmath{ \mathbb{S}_T } der Superial-Zahlen \latexmath{ \mathbb{S} }:'."\n".
+                    'benötigen wir die Skalierung der superialen Potenzebene einer Teilmenge \lm{ \mathbb{S}_T } der Superial-Zahlen \lm{ \mathbb{S} }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -426,7 +426,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Zum Beispiel ist es im Besonderen bei der \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integration}'."\n".
-                    'notwendig die ganzen Superial-Zahlen \latexmath{ \mathbb{S}_Z } eine Potenzebene ins superial kleine zu skalieren:'."\n".
+                    'notwendig die ganzen Superial-Zahlen \lm{ \mathbb{S}_Z } eine Potenzebene ins superial kleine zu skalieren:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -447,7 +447,7 @@
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Seien \latexmath{ \lbrack a, b \rbrack_\mathbb{T} }, \latexmath{ \lbrack a, b \lbrack_\mathbb{T} }, \latexmath{ \rbrack a, b \rbrack_\mathbb{T} } und \latexmath{ \rbrack a, b \lbrack_\mathbb{T} } die Mengen der folgenden Intervalle von \latexmath{ a } bis \latexmath{ b } aus der Menge \latexmath{ \mathbb{T} }'."\n".
+                      'Seien \lm{ \lbrack a, b \rbrack_\mathbb{T} }, \lm{ \lbrack a, b \lbrack_\mathbb{T} }, \lm{ \rbrack a, b \rbrack_\mathbb{T} } und \lm{ \rbrack a, b \lbrack_\mathbb{T} } die Mengen der folgenden Intervalle von \lm{ a } bis \lm{ b } aus der Menge \lm{ \mathbb{T} }'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -462,7 +462,7 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Aufgrund der Komplexität der Superial-Zahlen ist es sehr hilfreich, wenn wir die Menge \latexmath{ \mathbb{T} } angeben können,'."\n".
+                    'Aufgrund der Komplexität der Superial-Zahlen ist es sehr hilfreich, wenn wir die Menge \lm{ \mathbb{T} } angeben können,'."\n".
                     'auf der die Intervall-Menge basieren soll.'."\n".
                     ''))),
 
