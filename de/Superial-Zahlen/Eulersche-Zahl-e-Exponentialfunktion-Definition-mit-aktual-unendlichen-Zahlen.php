@@ -16,9 +16,9 @@
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '• Meine Herleitung der \lm{ \e }-Funktion mit Hilfe von Superial-Zahlen stammt aus dem Jahr 2001: siehe Datei "superial zahlen (26).pdf".',
-                    '\\bold{Ideen}',
+                    '\bold{Ideen}',
                     '• Wie leiten wir \lm{ \e_{\s} } mit Integralen her?',
-                    '\\bold{Verbesserungen}',
+                    '\bold{Verbesserungen}',
                     '• Erwähnen, dass \lm{ \e_{\s} } keine einfache Superial-Zahl ist, sondern zu einer Superial-Zahlen Art gehört, bei der unter anderem auch aktual unendlich kleine Potenzen der superialen Basis wie \lm{ \s^{-\s} } erlaubt sind.',
                     ))),
                       
@@ -34,12 +34,12 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Die Definition unserer Ableitung finden wir in Formel \\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}:'."\n".
+                      'Die Definition unserer Ableitung finden wir in Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(〈x〉․〈1〉) - f(x) }{ ․〈1〉 }  }',
-                                          label_text => '\\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Soll eine Funktion nun ihre eigene Ableitung sein, dann gilt:'."\n".
@@ -108,22 +108,22 @@
                   '')),
                   array( 'text', array( text => array(
                     'Wir wissen aus der Mathematik der Differentialrechnung, dass die \lm{ \e }-Funktion'."\n".
-                    'oder die Exponentialfunktion zur Basis \lm{ \e }, der Eulerschen Zahl\\footnote{\\const{SupNum_g_footnote_text_EulerscheZahl}},'."\n".
-                    'ihre eigene Ableitung ist.\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Exponentialfunktion:2022}, Ableitung. \\\\ Vgl. \\cite{wiki:EulerscheZahl:2023}, Bedeutung in der Mathematik.}'."\n",
+                    'oder die Exponentialfunktion zur Basis \lm{ \e }, der Eulerschen Zahl\footnote{\const{SupNum_g_footnote_text_EulerscheZahl}},'."\n".
+                    'ihre eigene Ableitung ist.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Exponentialfunktion:2022}, Ableitung. \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}, Bedeutung in der Mathematik.}'."\n",
                       'Mit diesem Wissen ist klar, dass wir eine neue Definition der \lm{ \e }-Funktion gefunden'."\n".
                     'haben, die sich aus der neuen Definition der Ableitung unmittelbar ergibt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\;  \e_{\s}^{x}  =  〈1〉․〈1〉^{〈x〉_{1}}  \;\;}  }',
-                                          label_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem', label_text => '\\name{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem}', label_incr => true),
+                                          label_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem', label_text => '\name{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Ich nenne ihre Basis \lm{ \e_\s }, weil ich hier ganz genau abgrenzen möchte.'."\n".
                     'Denn die Basis hängt von der Definition der Ableitung ab, bei der wir \lm{ \s } benutzt haben.'."\n".
-                    'Würden wir beispielsweise \lm{ \s^2 } benutzen, wie \\jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2}{hier gezeigt}, würde sich unsere Basis im Prinzip sehr ähnlich,'."\n".
+                    'Würden wir beispielsweise \lm{ \s^2 } benutzen, wie \jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2}{hier gezeigt}, würde sich unsere Basis im Prinzip sehr ähnlich,'."\n".
                     'aber doch anders ergeben.'."\n",
-                      'Wenig verwunderlich ist diese Formel in Form der Limes-Definition bekannt:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Exponentialfunktion:2022}, Definition. \\\\ Vgl. \\cite{wiki:EulerscheZahl:2023}, Definition.}'."\n".
+                      'Wenig verwunderlich ist diese Formel in Form der Limes-Definition bekannt:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Exponentialfunktion:2022}, Definition. \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}, Definition.}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -142,23 +142,23 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  *( 1 + \frac{ 1 }{ \s } *)^{x \cdot \s}  }',
-                                          label_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s', label_text => '\\name{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s}', label_incr => true),
+                                          label_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s', label_text => '\name{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s}', label_incr => true),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  *( 1 + \frac{ 1 }{ \omega^{\omega} } *)^{x \cdot \omega^{\omega}}  }',
-                                          label_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-omega', label_text => '\\name{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-omega}', label_incr => true),
+                                          label_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-omega', label_text => '\name{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir sehen, dass wir die \lm{ \e }-Funktion ganz fundamental mit \lm{ \omega } durch die vollständige Induktion\\footnote{\\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    'Wir sehen, dass wir die \lm{ \e }-Funktion ganz fundamental mit \lm{ \omega } durch die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
                     'definieren können.'."\n",
-                      'Und im Hinblick auf den Beweis der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung},'."\n".
+                      'Und im Hinblick auf den Beweis der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung},'."\n".
                     'der die vollständige Induktion auf Grundlage des unendlichen Produkts aller endlichen Primzahlen ausdrückt,'."\n".
                     'führen wir die \lm{ \e }-Funktion auf die Primzahlen zurück:'."\n",
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \omega  =  \prod_{\forall p \in \mathbb{P}}  p  }',
-                                          label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \omega  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
-                                          label_text => '\\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \\\ \qquad *( 1 + \frac{ 1 }{ (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots} } *)^{x \cdot (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots)^{2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot \cdots}}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -189,7 +189,7 @@
                     'So bekommen wir einen vom Aussehen her vielleicht etwas unerwarteten Einblick in die'."\n".
                     'infinitesimale Feinstruktur der \lm{ \e }-Funktion und ihren Zusammenhang mit den Binomischen Formeln'."\n".
                     'und dem Pascalschen Dreieck.'."\n",
-                      'Die Koeffizienten des Pascalschen Dreiecks sind die Binomialkoeffizienten\\footnote{\\const{SupNum_g_footnote_text_Binomialkoeffizient}},'."\n".
+                      'Die Koeffizienten des Pascalschen Dreiecks sind die Binomialkoeffizienten\footnote{\const{SupNum_g_footnote_text_Binomialkoeffizient}},'."\n".
                     'die wir einmal beispielhaft einsetzen:'."\n".
                     ''))),
                   array( 'equations',
@@ -201,7 +201,7 @@
                       array( display => 'on',  latex => '{  \e_{s}^{․\,〈4〉}  =  *〈 *( \begin{array}{llll} 4 \\\ 0 \end{array} *) *〉 ․\, *〈 *( \begin{array}{llll} 4 \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 3 \end{array} *) *〉*〈 *( \begin{array}{llll} 4 \\\ 4 \end{array} *) *〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Wir können dies allgemeiner mit einer Formel für Binomialkoeffizienten mit dem \\italic{über}-Operator\\footnote{\\const{SupNum_g_footnote_text_Binomialkoeffizient}}'."\n".
+                    'Wir können dies allgemeiner mit einer Formel für Binomialkoeffizienten mit dem \italic{über}-Operator\footnote{\const{SupNum_g_footnote_text_Binomialkoeffizient}}'."\n".
                     'beschreiben:'."\n".
                     ''))),
                   array( 'equations',
@@ -209,12 +209,12 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \e_{s}^{․\,〈n〉}  =  \sum_{ \forall k \in [0, n]_{\mathbb{N}} } *( \begin{array}{llll} n \\\ k \end{array} *) \cdot s^{-k}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Nachfolgend beleuchten wir die Berechnung der \\jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:SumBinominalkoe}{Summen der einzelnen Spalten der Binomialkoeffizienten}'."\n".
+                    'Nachfolgend beleuchten wir die Berechnung der \jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:SumBinominalkoe}{Summen der einzelnen Spalten der Binomialkoeffizienten}'."\n".
                     'in einer Nebenrechnung.'."\n".
                     ''))),
 
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '• Nachfolgenden Einschub \\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:SumBinominalkoe} verschieben in den Abschnitt \\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen}?',
+                    '• Nachfolgenden Einschub \jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:SumBinominalkoe} verschieben in den Abschnitt \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen}?',
                     ))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:SumBinominalkoe',
@@ -226,7 +226,7 @@
                     'berechnen.'."\n".
                     'Dazu schauen wir uns an, wie sich die Werte der Binomialkoeffizienten aus der vorherigen Spalte ergeben.'."\n",
                       'Als Ansatz formulieren wir die altbekannte Regel etwas um, wie sich ein Binomialkoeffizient aus'."\n".
-                    'der über ihm gelegenen Zeile als Summe ergibt:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Binomialkoeffizient:2023}, Rekursive Darstellung und Pascalsches Dreieck.}'."\n".
+                    'der über ihm gelegenen Zeile als Summe ergibt:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Binomialkoeffizient:2023}, Rekursive Darstellung und Pascalsches Dreieck.}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -277,7 +277,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \begin{array}{llll} n \\\ 0 \end{array} *)  =  1  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{(Hier können wir Ähnlichkeiten mit dem \lm{ -1 }-Operator der Operialtheorie erahnen.)} \\\\'."\n".
+                    '\color{*Bearb}{(Hier können wir Ähnlichkeiten mit dem \lm{ -1 }-Operator der Operialtheorie erahnen.)} \\\\'."\n".
                     'Dies ist die Konstante \lm{ 1 }.'."\n",
                       'Die Summe der \lm{ 1 }-ten Spalte ist dann das Zählen:'."\n".
                     ''))),
@@ -288,9 +288,9 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [0, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 0 \end{array} *)  =  n  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{(Hier können wir Ähnlichkeiten mit dem \lm{ 0 }-Operator, dem Zähloperator, der Operialtheorie sehen.)} \\\\'."\n".
+                    '\color{*Bearb}{(Hier können wir Ähnlichkeiten mit dem \lm{ 0 }-Operator, dem Zähloperator, der Operialtheorie sehen.)} \\\\'."\n".
                     'Dies ist das Zählen bis zur Zeilennummer.'."\n",
-                      'Die Summe der \lm{ 2 }-ten Spalte entspricht also der Gaußschen Summenformel\\footnote{\\const{BiOrd_g_footnote_text_GaussscheSummenformel}}'."\n".
+                      'Die Summe der \lm{ 2 }-ten Spalte entspricht also der Gaußschen Summenformel\footnote{\const{BiOrd_g_footnote_text_GaussscheSummenformel}}'."\n".
                     'und diese können wir geschlossen ausdrücken mit:'."\n".
                     ''))),
                   array( 'equations',
@@ -303,7 +303,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [1, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 1 \end{array} *)  =  \frac{ n^{2} - n }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dies entspricht der modifizierten Gaußschen Summenformel, die wir schon aus Formel \\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n}.'."\n",
+                    'Dies entspricht der modifizierten Gaußschen Summenformel, die wir schon aus Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n}.'."\n",
                       'Die Summe der \lm{ 3 }-ten Spalte entspricht also der Summe der ersten \color{*Bearb}{(X)} Quadratzahlen'."\n".
                     'und diese können wir geschlossen ausdrücken mit:'."\n".
                     ''))),
@@ -317,7 +317,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall m \in [2, n - 1]_{\mathbb{N}} } *( \begin{array}{llll} m \\\ 2 \end{array} *)  =  \\\ \qquad\qquad \frac{ 1 }{ 2 } \cdot *( *( 1^{2}_{1} + 2^{2}_{2} + 3^{2}_{3} + 4^{2}_{4} + 5^{2}_{5} + 6^{2}_{6} + \cdots + (n - 1)^{2}_{n - 1} *) \\\ \qquad\qquad\;\;\, - *( 1_{1} + 2_{2} + 3_{3} + 4_{4} + 5_{5} + 6_{6} + \cdots + (n - 1)_{n - 1} *) *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Summe der ersten \lm{ x } Quadratzahlen können wir folgendermaßen ausdrücken:\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:QuadratischePyramidalzahl:2021}. \\\\ Vgl. \\cite{wiki:GaussscheSummenformel:2023}, Verwandte Summen.}'."\n".
+                    'Die Summe der ersten \lm{ x } Quadratzahlen können wir folgendermaßen ausdrücken:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:QuadratischePyramidalzahl:2021}. \\\\ Vgl. \cite{wiki:GaussscheSummenformel:2023}, Verwandte Summen.}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -354,7 +354,7 @@
                   array( 'text', array( text => array(
                     'Die Berechnung weiterer Anteile erspare ich mir für den Moment.'."\n",
                       'Aber wir können erahnen und logischerweise sogar absolut sicher sein, dass sich für den Summanden mit der höchsten'."\n".
-                    'Potenz nach und nach die Glieder der Taylorreihe\\color{*Bearb}{(Verweis)} ergeben,'."\n".
+                    'Potenz nach und nach die Glieder der Taylorreihe\color{*Bearb}{(Verweis)} ergeben,'."\n".
                     'die summiert zur Eulerschen Zahl \lm{ \e } führen.'."\n".
                     ''))),
 
@@ -365,13 +365,13 @@
                 'Wie berechnet sich daraus \lm{ \e_\s }', subline =>
                   '')),
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\\bold{X}',
+                    // '\bold{X}',
                     '• Können wir hieraus über die Definition des Über-Operators der Binomialkoeffizienten durch Fakultäten etwas über die Fakultät von \lm{ \s } lernen?',
-                    '• \\bold{Das kann so nicht stimmen, oder?} Wir können genau sagen, wieviele Summanden die Summe oder Reihe hat, die den endlichen Anteil von \lm{ \e_\s } darstellt. Es sind genau \lm{ \frac{1}{2} \s + 1 }, weil \lm{ \s } eine gerade Zahl ist und damit der größte Wert im Pascalschen Dreieck bei dieser Potenz liegt. Danach werden die Werte im Pascalschen Dreieck kleiner, so, dass ihre inneren Potenzen nicht mehr bis zum Endlichen reichen, denke ich.',
+                    '• \bold{Das kann so nicht stimmen, oder?} Wir können genau sagen, wieviele Summanden die Summe oder Reihe hat, die den endlichen Anteil von \lm{ \e_\s } darstellt. Es sind genau \lm{ \frac{1}{2} \s + 1 }, weil \lm{ \s } eine gerade Zahl ist und damit der größte Wert im Pascalschen Dreieck bei dieser Potenz liegt. Danach werden die Werte im Pascalschen Dreieck kleiner, so, dass ihre inneren Potenzen nicht mehr bis zum Endlichen reichen, denke ich.',
                     ))),
                   array( 'text', array( text => array(
                     'Beim Übergang zum endlichen Exponenten Eins finden offensichtlich Überträge auf höhere Stellen'."\n".
-                    'des \\jump{*SupNum:Stellenwertsystem-Schreibweise}{superialen Stellenwertsystems} statt:'."\n".
+                    'des \jump{*SupNum:Stellenwertsystem-Schreibweise}{superialen Stellenwertsystems} statt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuZa', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -379,7 +379,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 *( \begin{array}{llll} \s \\\ 0 \end{array} *) *〉․\,*〈 *( \begin{array}{llll} \s \\\ 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ 3 \end{array} *) *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 *( \begin{array}{llll} \s \\\ \s - 2 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s - 1 \end{array} *) *〉*〈 *( \begin{array}{llll} \s \\\ \s \end{array} *) *〉_{-\s}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 *〉․\,*〈 \s *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉\cdots \\\ \qquad\qquad\qquad\qquad \cdots *〈 \frac{ \s^{3} - 3 \s^{2} + 2 \s }{ 6 } *〉*〈 \frac{ \s^{2} - \s }{ 2 } *〉*〈 \s *〉*〈 1 *〉_{-\s}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}  =  *〈 1 + 1 + \frac{ 1^{2} }{ 2 } + \frac{ 1^{3} }{ 6 } + \cdots *〉․ \\\ \qquad\qquad\qquad\qquad *〈 - \frac{ 1 }{ 2 } - \frac{ 3 \cdot 1^{2} }{ 6 } + \cdots *〉*〈 \frac{ 2 }{ 6 } + \cdots *〉\cdots \\\ \qquad\qquad\qquad\qquad\; \cdots *〈 \cdots + \frac{ 1^{3} }{ 6 } *〉*〈 \cdots - \frac{ 3 \cdot 1^{2} }{ 6 } *〉 \\\ \qquad\qquad\qquad\qquad\quad\; *〈 \cdots + \frac{ 2 }{ 6 } + \frac{ 1^{2} }{ 2 } *〉*〈 - \frac{ 1 }{ 2 } *〉*〈 1 *〉*〈 0 *〉*〈 1 *〉_{-\s}  }',
-                                          label_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem', label_text => '\\name{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem}', label_incr => true),
+                                          label_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem', label_text => '\name{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem}', label_incr => true),
                     ))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2',
@@ -394,7 +394,7 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Die Definition unserer ursprünglichen Ableitung finden wir in Formel \\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}'."\n".
+                      'Die Definition unserer ursprünglichen Ableitung finden wir in Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}'."\n".
                       'und ändern die dortige Differenz von \lm{ s } auf \lm{ s^2 }:'."\n".
                       ''))),
                   array( 'equations',
@@ -505,7 +505,7 @@
                     ))),
 
                   array( 'text', array( text => array(
-                    'Hier können wir nun erkennen und logischerweise sogar absolut sicher sein, dass sich im Endlichen die Taylorreihe\\color{*Bearb}{(Verweis)}'."\n".
+                    'Hier können wir nun erkennen und logischerweise sogar absolut sicher sein, dass sich im Endlichen die Taylorreihe\color{*Bearb}{(Verweis)}'."\n".
                     'zur Eulerschen Zahl \lm{ \e } ergibt.'."\n",
                     ''))),
                   array( 'equations',
@@ -517,7 +517,7 @@
                       'die nicht Null sind und damit eben nicht verschwinden.'."\n".
                     'Denn es ist schlichtweg unmöglich die Ableitung mit einer Differenz zu definieren, die wirklich Null ist!'."\n".
                     'Denn die Differenz muss positiv und kann nicht Null sein, damit sie Sinn macht und nicht undefiniert wird.'."\n",
-                      'Was passiert, wenn wir die Differenz kleiner machen, sehen wir in der nachfolgenden \\jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2}{Beispielrechnung zur Ableitung}'."\n".
+                      'Was passiert, wenn wir die Differenz kleiner machen, sehen wir in der nachfolgenden \jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2}{Beispielrechnung zur Ableitung}'."\n".
                     'mit \lm{ \s^2 } anstatt mit \lm{ \s }, wie oben definiert.'."\n".
                     'Die aktual unendliche Anzahl an aktual unendlich kleinen Summanden bleibt gleich, auch, wenn die Werte der'."\n".
                     'Summanden kleiner werden.'."\n",
@@ -535,7 +535,7 @@
                     'und ist auf der anderen Seite auch ein Trugschluss.'."\n".
                     'Denn gerade diese Details sind sehr interessant sowie erkenntnisreich und lassen erahnen und auch sichtbar werden,'."\n".
                     'was vor sich geht; wie das Räderwerk des Endlichen mit dem unendlich Kleinen und dem unendlich Großen ineinander greift.'."\n",
-                      'Ohne die Erkenntnis dieses Räderwerks wäre ich wohl nie auf die \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}'."\n".
+                      'Ohne die Erkenntnis dieses Räderwerks wäre ich wohl nie auf die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}'."\n".
                     'gestoßen und schließlich auf ihren Beweis gekommen, der uns neue tiefe arithmetische Einblicke ins Unendliche,'."\n".
                     'in die vollständige Induktion, die Primzahlen und die Primzahlverteilung, gewährt.'."\n",
                       'In meinen Augen offenbart dieses Räderwerk, dass die Eulersche Zahl \lm{ \e } keine rein endliche'."\n".
@@ -552,7 +552,7 @@
                     'Sie ist keine irrationale Zahl in dem Sinne, dass sie nicht durch einen Bruch darstellbar ist,'."\n".
                     'aber ausschließlich endliche Summanden enthält.'."\n",
                       'Ich rege also an, dass wir den Begriff der Transzendenz, und sicherheitshalber auch den der Irrationalität,'."\n".
-                    'wobei ich auf die \\jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} hinweisen möchte,'."\n".
+                    'wobei ich auf die \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} hinweisen möchte,'."\n".
                     'in diesem Sinne tiefer überdenken.'."\n".
                     ''))),
                       
@@ -575,11 +575,11 @@
                     )),
 
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '\\bold{Transzendenz von \lm{ \e }}',
+                    '\bold{Transzendenz von \lm{ \e }}',
                     '• Was zur Transzendenz von \lm{ \e } im Text sagen.',
-                    '• Mit welchen Rechenoperationen kann man die Zahl \lm{ \e } zu Null machen? Mit diesem Thema beschäftigt sich die Algebra, wie wir auch einem Video von Numberphile entnehmen können: \\jump[https://www.youtube.com/watch?v=seUU2bZtfgM&t=620s]{}{Transcendental Numbers - Numberphile}',
-                    '– Mit unserer Definition von \lm{ \e } als \lm{ \e_{\s}^{x} = *( 1 + \frac{ 1 }{ \s } *)^{x \cdot \s} } in Formel \\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s} erhalten wir für \lm{ \e_{\s} } den Ausdruck \lm{ \e_{\s} = *( 1 + \frac{ 1 }{ \s } *)^{\s} }. Über diesen sehen wir leicht, wie wir \lm{ \e } zu Null machen können. Laut Video soll so etwas bisher nicht bekannt sein.',
-                    '⋅ Allerdings bleibt es dabei, dass \lm{ \e } transzendent ist, weil es nicht durch algebraische Operationen zu Null gemacht werden kann, ohne aktual unendliche Symbole zu nutzen, und weil es nicht einmal zu den Superial-Zahlen erster Ordnung gehört, wegen seiner Summanden bis herunter zu \lm{ \s^{-\s} }, siehe Formel \\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem}. Dies vielleicht auf der Seite \\italic{\\jumpname{OM:SupNum:Eigenschaften}} zeigen.',
+                    '• Mit welchen Rechenoperationen kann man die Zahl \lm{ \e } zu Null machen? Mit diesem Thema beschäftigt sich die Algebra, wie wir auch einem Video von Numberphile entnehmen können: \jump[https://www.youtube.com/watch?v=seUU2bZtfgM&t=620s]{}{Transcendental Numbers - Numberphile}',
+                    '– Mit unserer Definition von \lm{ \e } als \lm{ \e_{\s}^{x} = *( 1 + \frac{ 1 }{ \s } *)^{x \cdot \s} } in Formel \jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s} erhalten wir für \lm{ \e_{\s} } den Ausdruck \lm{ \e_{\s} = *( 1 + \frac{ 1 }{ \s } *)^{\s} }. Über diesen sehen wir leicht, wie wir \lm{ \e } zu Null machen können. Laut Video soll so etwas bisher nicht bekannt sein.',
+                    '⋅ Allerdings bleibt es dabei, dass \lm{ \e } transzendent ist, weil es nicht durch algebraische Operationen zu Null gemacht werden kann, ohne aktual unendliche Symbole zu nutzen, und weil es nicht einmal zu den Superial-Zahlen erster Ordnung gehört, wegen seiner Summanden bis herunter zu \lm{ \s^{-\s} }, siehe Formel \jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem}. Dies vielleicht auf der Seite \italic{\jumpname{OM:SupNum:Eigenschaften}} zeigen.',
                     ))),
 
                   array( 'text', array( text => array(
@@ -599,7 +599,7 @@
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Sei der Wert der eulerschen Zahl nach der mit Hilfe der Superial-Zahlen gewonnenen Definition aus Formel \\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s}'."\n".
+                      'Sei der Wert der eulerschen Zahl nach der mit Hilfe der Superial-Zahlen gewonnenen Definition aus Formel \jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s}'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuTr', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -646,8 +646,8 @@
                     )),
 
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '\\bold{Wo Pi noch vorkommt}',
-                    '• Pi ergibt sich über Integration aus dem Pascalschen Dreieck sehr ähnlich wie die Berechnung von \lm{ \e^{\i \cdot \pi \cdot x} } im Zusammenhang mit Sinus und Cosinus: Siehe \\jump[https://www.spektrum.de/kolumne/newtons-methode-um-pi-mit-dem-pascalschen-dreieck-zu-berechnen/2200009?utm_source=sdwv_daily&utm_medium=nl&utm_content=heute]{}{Manon Bischoff – Sir Isaac Newton fand Pi im pascalschen Dreieck}.',
+                    '\bold{Wo \lm{ π } noch vorkommt}',
+                    '• \lm{ π } ergibt sich über Integration aus dem Pascalschen Dreieck sehr ähnlich wie die Berechnung von \lm{ \e^{\i \cdot \pi \cdot x} } im Zusammenhang mit Sinus und Cosinus: Siehe \jump[https://www.spektrum.de/kolumne/newtons-methode-um-pi-mit-dem-pascalschen-dreieck-zu-berechnen/2200009?utm_source=sdwv_daily&utm_medium=nl&utm_content=heute]{}{Manon Bischoff – Sir Isaac Newton fand Pi im pascalschen Dreieck}.',
                     ))),
 
                   array( 'text', array( text => array(
