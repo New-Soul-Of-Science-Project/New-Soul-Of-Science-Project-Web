@@ -31,7 +31,7 @@
                     '\bold{Zeit in der Mathematik}',
                     '• Einflechten, dass die Arithmetik aus dem Zählen geboren wird. Dies ist eine Definition durch einen Prozess. Hierdurch kommt Zeit ins Spiel. Die Betrachtung der Primfaktorzerlegung der natürlichen Zahlen zeigt auf, dass an diesem Prozess Regelsystemen ähnliche rhythmische Strukturen beteiligt sind.',
                     '\bold{Forschungsideen}',
-                    '• Das Pascal-Sierpinski-Dreieck ist eine Geometrie, in der Primzahlen eine außergewöhnliche Rolle spielen.\footnote{Vgl. \cite{Plichta:GottesGeheimeFormel:1995}, S. 263ff., 271ff. 306ff.. \\\\ Internet: \\\\ Vgl. \\jump[https://de.wikipedia.org/w/index.php?title=Sierpinski-Dreieck&oldid=179105092#Zusammenhang_mit_dem_Pascalschen_Dreieck]{}{Wikipedia, Sierpinski-Dreieck, Zusammenhang mit dem Pascalschen Dreieck}.}',
+                    '• Das Pascal-Sierpinski-Dreieck ist eine Geometrie, in der Primzahlen eine außergewöhnliche Rolle spielen.\footnote{Vgl. \cite{Plichta:GottesGeheimeFormel:1995}, S. 263ff., 271ff. 306ff.. \\\\ Internet: \\\\ Vgl. \jump[https://de.wikipedia.org/w/index.php?title=Sierpinski-Dreieck&oldid=179105092#Zusammenhang_mit_dem_Pascalschen_Dreieck]{}{Wikipedia, Sierpinski-Dreieck, Zusammenhang mit dem Pascalschen Dreieck}.}',
                     '\bold{Korrekturen}',
                     '• (gerade weitreichend auf dem Weg) Der Text ist schwer verständlich und manchmal etwas komisch formuliert. Alles noch einmal überarbeiten !!!',
                     '• Die Kapitel der Seiten erneut durcharbeiten.',
@@ -82,7 +82,7 @@
                       'Wie sagen wir im Englischen so schön:'."\n".
                     '\quote{Lets go for it!}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Motivation', subline =>
                   '')),
@@ -100,7 +100,7 @@
                     'Wir können auch ins Unendliche gehen, ohne den Limes zu benutzen!'."\n".
                     'Ohne, dass man die versinkenden Summanden wirklich zu Null werden lässt, indem man sie als Null definiert.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Formale Einschränkung', subline =>
                   '')),
@@ -121,11 +121,11 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f\'(x)  =  \lim\limits_{\Delta x \rightarrow +0}{ \frac{ f(x + \Delta x) - f(x) }{ \Delta x } }  }',
-                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-mit-Limes}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-mit-Limes}', label_incr => false),
                       array( display => 'on',  latex => '{  \lim\limits_{\Delta x \rightarrow +0}{ \Delta x }  \widehat{=}  \s^{-1}  }',
-                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-Limes-ist-s-hoch-minus-Eins}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-Limes-ist-s-hoch-minus-Eins}', label_incr => false),
                       array( display => 'on',  latex => '{  f\'(x)  :=  \frac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} }  }',
-                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Def-Ableitung-mit-s-hoch-minus-Eins', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Dies vertiefen wir auf der Seite \italic{\jumpname{OM:SupNum:Ableitungen-Integrale}}.'."\n",
@@ -149,13 +149,13 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  \frac{ *( x + \s^{-1} *)^{2} - x^{2} }{ \s^{-1} }  }',
-                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-basis}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-basis}', label_incr => false),
                       array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ *( x^{2} + 2 x \cdot \s^{-1} + \s^{-2} *) - x^{2} }{ \s^{-1} }  }',
-                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-ausmultipliziert}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-ausmultipliziert}', label_incr => false),
                       array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ 2 x \cdot \s^{-1} + \s^{-2} }{ \s^{-1} }  }',
-                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-subtrahiert}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-subtrahiert}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  2 x + \s^{-1}  }',
-                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-Ergebnis}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-Ergebnis}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Wenn wir also \lm{ \s^{-1} } zu Null setzen, dann kommt das übliche Ergebnis \lm{ f\'(x) = 2 x } heraus.'."\n".
@@ -166,13 +166,13 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  f\'(x)  =  \frac{ *( x + \s^{-1} *)^{3} - x^{3} }{ \s^{-1} }  }',
-                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-basis}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-basis}', label_incr => false),
                       array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ *( x^{3} + 3 x^{2} \cdot \s^{-1} + 3 x \cdot \s^{-2} + s^{-3} *) - x^{3} }{ \s^{-1} }  }',
-                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-ausmultipliziert}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-ausmultipliziert}', label_incr => false),
                       array( display => 'off', latex => '{  \Leftrightarrow  f\'(x)  =  \frac{ 3 x^{2} \cdot \s^{-1} + 3 x \cdot \s^{-2} + \s^{-3} }{ \s^{-1} }  }',
-                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-subtrahiert}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-subtrahiert}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f\'(x)  =  3 x^{2} + 3 x \cdot \s^{-1} + \s^{-2}  }',
-                                          /* label_name => 'OM:SupNum:Einleitung:Vortext:Equ-XXX', */label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-Ergebnis}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x3-Ergebnis}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Wenn wir also \lm{ \s^{-1} } zu Null setzen, dann kommt das übliche Ergebnis \lm{ f\'(x) = 3 x^{2} } heraus.'."\n",
@@ -363,7 +363,7 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Das ist genau das gesuchte Ergebnis, was wir sofort durch Überprüfung sehen.'."\n".
-                      /*  'XXX Um die übrige Summe zu berechnen, ist ein tieferes Verständnis der \jump{OM:BiOrd:Home}{Biordinalzahlen}'."\n".
+                      /*  '\color{*Bearb}{(In Arbeit …)} Um die übrige Summe zu berechnen, ist ein tieferes Verständnis der \jump{OM:BiOrd:Home}{Biordinalzahlen}'."\n".
                       'anzuwenden und wir kommen auch nicht drum herum nachfolgend ein tieferes Verständnis der hier entwickelten Superial-Zahlen zu erlangen.'."\n",
                         'Wir können an dieser Stelle diese noch unbekannte Summe durch Umstellung berechnen,'."\n".
                       'denn das Ergebnis \lm{ f(x) = x^2 } ist uns ja nun schon durch das erste Ableitungsbeispiel oben bekannt,'."\n".
@@ -408,7 +408,7 @@
                     'Aus diesem besser werdendem Bild, und besonders über die nähere Beleuchtung der Frage der ganzen Superial-Zahlen,'."\n".
                     'kommen wir gleich zu einer ganz bemerkenswerten Definition unserer superialen Basis \lm{ s }.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Kleiner Ausblick zwischendurch')),
                   array( 'text', array( text => array(
@@ -485,7 +485,7 @@
                       'Ich denke, all dies ist schon etwas ziemlich besonderes und kann Appetit auf mehr machen.'."\n".
                     'Da ist im Folgenden noch einiges faszinierendes zu Entdecken.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Ein Stellenwertsystem', subline =>
                   'Eine fraktale Struktur')),
@@ -534,7 +534,7 @@
                     'den endlichen Zahlen noch unendlich viele, unendlich kleine Zahlengeraden verschiedenster Dimensionsgrößen hat.'."\n".
                     'Erstaunlicherweise kennt die Mathematik dadurch jetzt nicht nur orthogonale Dimensionen\color{*Bearb}{(Verweis)},'."\n".
                     'die senkrecht zueinander stehen, sondern auch unendlich kleine, lineare Dimensionen – \italic{superiale Dimensionen} –,'."\n".
-                    'die sich in fraktaler Weise zwischen unseren endlichen Zahlen verstecken.\\footnote[*Entwick]{\color{*Entwick}{Ich frage mich, welchen (fraktalen) Zusammenhang gibt es zwischen den orthogonalen und den \italic{superialen Dimensionen}?}}'."\n".
+                    'die sich in fraktaler Weise zwischen unseren endlichen Zahlen verstecken.\footnote[*Entwick]{\color{*Entwick}{Ich frage mich, welchen (fraktalen) Zusammenhang gibt es zwischen den orthogonalen und den \italic{superialen Dimensionen}?}}'."\n".
                     'Auf Basis der \italic{superialen Einheit} \lm{ \s } lassen sich folglich'."\n".
                     'eben auch unendlich große, lineare Dimensionen beschreiben.'."\n".
                     'Zwischen denen liegen dann unsere endlichen Zahlen und so fort.'."\n".
@@ -599,7 +599,7 @@
                     'rationalen Zahl immer noch eine ganze Zahl ergibt?'."\n".
                     ''))),
 
-                  /* array( 'fade-in-area', array( Display => 'showContent', jumpName => 'OM:BiOrd:Einleitung:Vortext:XXX',
+                  /* array( 'fade-in-area', array( Display => 'showContent', jumpName => 'OM:BiOrd:Einleitung:Vortext:X',
                 Title => 'Vorheriger Text …',
                 TitleVis => 'Vorheriger Text:', ParagraphList => array(
                   array( 'text', array( text => array(
@@ -782,7 +782,7 @@
                     'Denn so würde auch eine bessere Differenzierung zwischen den irrationalen und den transzendenten Zahlen ermöglicht.'."\n".
                     '\\\\ \color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Die Erweiterung der Arithmetik ins Unendliche', subline =>
                   '')),
@@ -839,7 +839,7 @@
                       'Dort wo drei vertikale Punkte ›⋮‹ stehen, werden alle von der Größe her dazwischen liegenden rationalen Koeffizienten mitgezählt.'."\n".
                     'Die Superial-Zahlen bringen so die rationalen Zahlen mit dem Zählen von natürlichen und ganzen Zahlen in Verbindung.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Weitreichender Erkenntnisgewinn')),
                   array( 'text', array( text => array(
@@ -950,7 +950,7 @@
                     ))),
                   array( 'text', array( text => array(
                     '\jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{Natürliche Superial-Zahlen} lassen sich in den Superial-Zahlen also definieren.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Grundlagen:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Grundlagen:X', text =>
                 'Superiale Primzahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -982,22 +982,16 @@
                   array( 'text', array( text => array(
                   '\condb{Mit Primzahlen ins Unendliche} \\\\'."\n".
                     'Der vorstehend geführte Beweis zeigt, dass die Primfakultät eine besondere Rolle im Zusammenhang mit Primzahlen und dem Unendlichen spielt.'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n",
                       'Beim Beweis der Primzahlprodukt-Vermutung und der unendlich großen Primzahl-Zwillinge ist die Frage, ob die tendenzielle Lücke'."\n".
                     'zwischen einer gegebenen Primzahl \lm{ p } und \lm{ p\# - 1 } eine Frage des Gitters ist oder eine Frage der prinzipiellen Möglichkeit aufgrund'."\n".
                     'der Lage und Größe der Lücke.'."\n",
                       'Angenommen es ist eine Frage der prinzipiellen Möglichkeit aufgrund der Lage und Größe der Lücke.'."\n",
                       'Angenommen die Primzahlen zwischen der gegebenen Primzahl \lm{ p } und \lm{ p\# - 1 } verschwinden allmählich gegen Unendlich:'."\n".
                     'Dann blieben zunehmend die Primzahl-Zwillinge \lm{ p\# \pm 1 } als nächstgrößere Primzahlen direkt nach \lm{ p } übrig.'."\n".
-                    'Die Möglichkeit, dass …'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Die Möglichkeit, dass …'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sqrt{ p_{x}\# ± 1}   \leq  p_{x}  }'),
@@ -1013,85 +1007,42 @@
                     ))),
                   array( 'text', array( text => array(
                     '… könnte verschwinden!?'."\n".
-                    'Wenn diese Möglichkeit verschwindet, dann müssen beide \lm{ p\# \pm 1 } selber Primzahlen sein.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Wenn diese Möglichkeit verschwindet, dann müssen beide \lm{ p\# \pm 1 } selber Primzahlen sein.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Nähern sich die Lücken in den Primzahlen \lm{ \Delta = ( p\# - 1) - p }?',
                         'Dann sind tendenziell alle \lm{ p\# \pm 1 } Primzahlen.',
-                        'XXX',
-                        'XXX',
-                        'XXX',
-                        'XXX',
-                        'XXX',
-                        'XXX',
+                        '\color{*Bearb}{(In Arbeit …)}',
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         '\lm{ \Delta p_{i}\# = p_{i + 1}\# - p_{i}\#}',
                         'Annahme \lm{ \Delta p_{i}\# < \Delta p_{i + 1}\#}',
-                        'XXX',
-                        'XXX',
+                        '\color{*Bearb}{(In Arbeit …)}',
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         '2 ⋅ 3 ⋅ 5  =  30',
                         '30 / 2  =  15',
-                        'XXX',
-                        'XXX',
-                        'XXX',
-                        'XXX',
+                        '\color{*Bearb}{(In Arbeit …)}',
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{S}  :=  \left\{ x ~\middle|~ *( \forall d \in \mathbb{Z} *) *( \forall q_{d} \in \mathbb{Q} \setminus \{0\} *) *( \forall q_{i} \in \mathbb{Q} *) \\\ \qquad\qquad\qquad\qquad\qquad\quad \left[ q_{d} s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i]} q_{i} s^{i} \right] \right\}  }'),
-                      array( display => 'on',  latex => '{  p_{x}\# \pm 1  =  XXX  }'),
+                      array( display => 'on',  latex => '{  p_{x}\# \pm 1  =  XX  }'),
                       array( display => 'on',  latex => '{  p  =  〈a〉〈b〉〈\pm 1〉․〈0〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                     'Primzahlen in den Superial-Zahlen:'."\n"))),
                   array( 'equations',
@@ -1100,16 +1051,8 @@
                       array( display => 'on',  latex => '{  p  =  〈a〉〈b〉〈\pm 1〉․〈0〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                     'Experiment:'."\n"))),
                   array( 'equations',
@@ -1134,16 +1077,8 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \frac{\mathbb{N}\#}{2} - 1  \neq  2^{y}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \frac{\mathbb{N}\#}{2} - 1  ?=  2^{x}  }'),
@@ -1159,16 +1094,8 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  y  =  log_{2} (2^{x - 1} + 1) + 1 }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                   '\condb{Mit Primzahlen ins Unendliche – 2. Ansatz} \\\\'."\n".
                     'Lässt sich die Körnung der natürlichen Zahlen über das folgende Produkt beschreiben?'."\n"))),
@@ -1180,25 +1107,9 @@
                     'Die Hälfte aller natürlichen Zahlen enthält die \lm{ 2 }.'."\n".
                     'Ein drittel aller natürlichen Zahlen enthält die \lm{ 3 } und so fort … ?'."\n",
                       'Da würde die Null bei allen mit zu zählen.'."\n".
-                    'Es gibt aber sehr viele Zahlen, die sowohl die \lm{ 2 } als auch die \lm{ 3 } oder andere Primzahlen enthalten und diese müssen mitgezählt werden.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:XXX', text =>
-                      
-                'XXX', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Es gibt aber sehr viele Zahlen, die sowohl die \lm{ 2 } als auch die \lm{ 3 } oder andere Primzahlen enthalten und diese müssen mitgezählt werden.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn'),
@@ -1227,7 +1138,7 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)} \\\\'."\n".
                     'Diese Vermutung bezieht sich darauf, dass ich vermute, dass die rationalen Koeffizienten der \italic{rationalen Superial-Zahlen} durch Koeffizienten ersetzt werden können,'."\n".
-                    'die durch überrationale Brüche dargestellt werden.\\footnote[*Entwick]{\color{*Entwick}{Sind überrationale Brüche algebraische Zahlen, deren imaginärer Anteil gleich Null ist?}}'."\n".
+                    'die durch überrationale Brüche dargestellt werden.\footnote[*Entwick]{\color{*Entwick}{Sind überrationale Brüche algebraische Zahlen, deren imaginärer Anteil gleich Null ist?}}'."\n".
                     'Und dies, ohne dass sich die Existenz der natürlichen Superial-Zahlen und der superialen Primzahlen verändern würde.'."\n".
                     'Es wird die Existenz der \italic{überrationalen Superial-Zahlen} auf Basis von \lm{ \s } vermutet.'."\n".
                     'Ein überrationaler Bruch soll ein Bruch sein, der sowohl im Nenner als auch im Zähler eine Zahl aus unendlich vielen verschiedenen endlichen Primfaktoren endlicher Potenz enthält.'."\n".
@@ -1292,8 +1203,8 @@
                 'Genauere Differenzierung der Zahlenarten', subline =>
                   'Rationale, irrationale, algebraische und transzendente Zahlen')),
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\bold{XXX}',
-                    // '• XXX',
+                    // '\bold{X}',
+                    // '• X',
                     ))),
                   array( 'text', array( text => array(
                     'Die Definition des Aktual-Unendlichen durch alle endlichen Primzahlen,'."\n".
@@ -1320,7 +1231,7 @@
                     'dann nicht zu den reellen Zahlen?'."\n",
                       'Diese und noch weitere Überlegungen führen uns schließlich zur Kontinuumshypothese.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Einsichten und Fragen zur Kontinuumshypothese', subline =>
                   '')),
