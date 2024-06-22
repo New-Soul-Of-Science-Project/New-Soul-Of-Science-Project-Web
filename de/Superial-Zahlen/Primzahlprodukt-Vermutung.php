@@ -2029,7 +2029,7 @@
                         'XXX',
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -2104,7 +2104,7 @@
                 'XXX', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
