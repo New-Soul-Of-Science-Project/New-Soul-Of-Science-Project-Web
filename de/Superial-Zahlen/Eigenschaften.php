@@ -132,25 +132,25 @@
                       
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)} \\\\'."\n".
-                    'Die Menge der Superial-Zahlen \\latexmath{ \mathbb{S} } ist in vielerlei Hinsicht etwas Besonderes.'."\n",
+                    'Die Menge der Superial-Zahlen \lm{ \mathbb{S} } ist in vielerlei Hinsicht etwas Besonderes.'."\n",
                       'Wir können nämlich für zwei Superial-Zahlen, die nicht gleich sind, immer herausfinden, welche'."\n".
                     'größer als die andere ist, weil sie eine lexikografische Ordnung\\footnote{\\const{SupNum_g_footnote_text_LexikographischeOrdnung}} haben.'."\n".
-                    '\\latexmath{ \mathbb{S} } ist nämlich ein angeordneter Körper\\footnote{\\const{NSOSP_g_footnote_text_GeordneterKoerper}}.'."\n".
+                    '\lm{ \mathbb{S} } ist nämlich ein angeordneter Körper\\footnote{\\const{NSOSP_g_footnote_text_GeordneterKoerper}}.'."\n".
                     '\\color{*Bearb}{(Dies ist zu beweisen: die Körpereigenschaft und das Angeordnetsein.)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper:X', text =>
                       
-                'Ist \\latexmath{ \mathbb{S} } ein archimedisch angeordneter Körper?', subline =>
+                'Ist \lm{ \mathbb{S} } ein archimedisch angeordneter Körper?', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Es stellt sich die Frage, ob die Superial-Zahlen, also die Menge \\latexmath{ \mathbb{S} },'."\n".
+                    'Es stellt sich die Frage, ob die Superial-Zahlen, also die Menge \lm{ \mathbb{S} },'."\n".
                     'auch ein archimedisch angeordneter Körper\\footnote{\\const{NSOSP_g_footnote_text_ArchimedischGeordneterKoerper}} sind.'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Das archimedische Axiom\\footnote{\\const{NSOSP_g_footnote_text_ArchimedischesAxiom}} besagt,'."\n".
-                      'dass in einem archimedisch angeordneten Körper \\latexmath{ \mathbb{K} } immer eine natürliche Zahl existiert,'."\n".
+                      'dass in einem archimedisch angeordneten Körper \lm{ \mathbb{K} } immer eine natürliche Zahl existiert,'."\n".
                       'die als Faktor jede Zahl einer Menge größer machen kann als eine andere Zahl der gleichen Menge:'."\n".
                       ''))),
                   array( 'equations',
@@ -162,16 +162,16 @@
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Dies gilt aber nicht für den angeordneten Körper der Superial-Zahlen,'."\n".
-                      'weil es Elemente einer Untermenge \\latexmath{ x \in \mathbb{Q} } gibt, für das es keinen Faktor in \\latexmath{ \mathbb{N} } gibt, um beides als Produkt größer als \\latexmath{ s } zu machen:'."\n".
+                      'weil es Elemente einer Untermenge \lm{ x \in \mathbb{Q} } gibt, für das es keinen Faktor in \lm{ \mathbb{N} } gibt, um beides als Produkt größer als \lm{ \s } zu machen:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \nexists n \in \mathbb{N} *) *( \forall q, x \in \mathbb{Q} *) *( q \cdot s > x > 0 *) *[  x \cdot n > q \cdot s  *]  }'),
-                      array( display => 'on',  latex => '{  q \cdot s \in \mathbb{S}  }'),
+                      array( display => 'on',  latex => '{  *( \nexists n \in \mathbb{N} *) *( \forall q, x \in \mathbb{Q} *) *( q \cdot \s > x > 0 *) *[  x \cdot n > q \cdot \s  *]  }'),
+                      array( display => 'on',  latex => '{  q \cdot \s \in \mathbb{S}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow *( \nexists n \in \mathbb{N} *) *( \forall x, y \in \mathbb{S} *) *( y > x > 0 *) *[  x \cdot n > y  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Denn \\latexmath{ \mathbb{S} } enthält zum Beispiel mit \\latexmath{ q \cdot s } Elemente, die größer als jede endliche natürliche Zahl und damit unendlich groß sind.'."\n",
+                      'Denn \lm{ \mathbb{S} } enthält zum Beispiel mit \lm{ q \cdot \s } Elemente, die größer als jede endliche natürliche Zahl und damit unendlich groß sind.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -186,9 +186,9 @@
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Wie kann das archimedische Axiom für eine möglichst große Teilmenge von \\latexmath{ \mathbb{S} } erfüllt werden?'."\n".
+                      'Wie kann das archimedische Axiom für eine möglichst große Teilmenge von \lm{ \mathbb{S} } erfüllt werden?'."\n".
                       'Es scheint mir, dass dies erfüllt wird, wenn es keine unendlich großen Summanden in den Elementen der Menge gibt.'."\n".
-                      'Sowohl \\latexmath{ x } als auch \\latexmath{ y } müssen zwischen den endlichen Zahlen liegen:'."\n".
+                      'Sowohl \lm{ x } als auch \lm{ y } müssen zwischen den endlichen Zahlen liegen:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -200,10 +200,10 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.AK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{S}_{A}  :=  *\{  x *|* *( \forall d \in \mathbb{Z}_{0}^{-} *) *( \forall q_{d} \in \mathbb{Q} \setminus \{0\} *) *( \forall q_{i} \in \mathbb{Q} *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\; *[ q_{d} s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i]} q_{i} s^{i} *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{S}_{A}  :=  *\{  x *|* *( \forall d \in \mathbb{Z}_{0}^{-} *) *( \forall q_{d} \in \mathbb{Q} \setminus \{0\} *) *( \forall q_{i} \in \mathbb{Q} *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\; *[ q_{d} \s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i]} q_{i} \s^{i} *]  *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'So enthalten diese Superial-Zahlen keine Summanden mit Potenzen von \\latexmath{ s }, die größer als Null sind.'."\n",
+                      'So enthalten diese Superial-Zahlen keine Summanden mit Potenzen von \lm{ \s }, die größer als Null sind.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -212,7 +212,7 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper:X', text =>
                       
-                'Aber \\latexmath{ \mathbb{S} } ist bezüglich der natürlichen Superial-Zahlen \\latexmath{ \mathbb{S}_N } ein archimedisch angeordneter Körper', subline =>
+                'Aber \lm{ \mathbb{S} } ist bezüglich der natürlichen Superial-Zahlen \lm{ \mathbb{S}_N } ein archimedisch angeordneter Körper', subline =>
                   '')),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
@@ -285,7 +285,7 @@
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Die Anzahl aller realen algebraischen Koeffizienten \lm{ a } von \lm{ \s }, für die gilt: \lm{ 0 \leq a < 1 }.',
-                        'Multipliziert mit \lm{ 2 \cdot ω } für die Anzahl der endlichen ganzen Zahlen, siehe \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}, die ja zu jedem Koeffizienten addiert – und im Falle der negativen natürlich dann abgezogen – werden. Wobei im Falle von \lm{ a = 0 } nur natürliche Zahlen addiert und im Falle von \\latexmath{ a = 1 } nur negative ganze Zahlen addiert, also effektiv abgezogen, werden.',
+                        'Multipliziert mit \lm{ 2 \cdot ω } für die Anzahl der endlichen ganzen Zahlen, siehe \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}, die ja zu jedem Koeffizienten addiert – und im Falle der negativen natürlich dann abgezogen – werden. Wobei im Falle von \lm{ a = 0 } nur natürliche Zahlen addiert und im Falle von \lm{ a = 1 } nur negative ganze Zahlen addiert, also effektiv abgezogen, werden.',
                     ))),
                   array( 'text', array( text => array(
                     'So formulieren wir die Vorgänger von \lm{ \s } folgendermaßen:'."\n".
@@ -297,7 +297,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [ 0, s [_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < 1  \\\\  \s + z^{-}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  \;\;  ,  }',
+                      array( display => 'on',  latex => '{  [ 0, \s [_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\R}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < 1  \\\\  \s + z^{-}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  \;\;  ,  }',
                                           label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s', label_text => '\\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -422,7 +422,7 @@
                       array( display => 'on',  latex => '{  \mathbb{A}_{\R}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\R}} *)  \\\ \qquad\qquad\qquad\;\,  *[  x = *( n - *( 2 \cdot n + 1 *) *) + u  *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Intervalle \\latexmath{ u }, die zwischen den Zahlen liegen, hängen an der vorstehenden ganzen Zahl und werden auf diese Weise mit verschoben.'."\n".
+                    'Die Intervalle \lm{ u }, die zwischen den Zahlen liegen, hängen an der vorstehenden ganzen Zahl und werden auf diese Weise mit verschoben.'."\n".
                     'Daher steht quasi am „Beginn“ der endlichen negativen ganzen Zahlen auch der Punkt einer ganzen Zahl,'."\n".
                     'was eben der Grund dafür ist, dass es eine endliche negative ganze Zahl mehr geben muss, als positive, ohne die Null (siehe \\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen}).'."\n".
                     'Denn das Zählen ist die Grundlage aller Zahlen.'."\n",
@@ -448,7 +448,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'So kann der Eindruck einer Spiegelung entstehen, wenn wir das Intervall nicht explizit dranhängen würden.'."\n",
-                      'Demnach sind wir sicher, dass die Anzahl der endlichen ganzen Zahlen wirklich \\latexmath{ 2 \cdot \omega } ist.'."\n".
+                      'Demnach sind wir sicher, dass die Anzahl der endlichen ganzen Zahlen wirklich \lm{ 2 \cdot \omega } ist.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:X', text =>
                       
@@ -632,7 +632,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  s  =  ω^{ω}  }',
+                      array( display => 'on',  latex => '{  \s  =  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -835,7 +835,7 @@
                     'aktual unendlich kleine Summanden der Größenordnung \lm{ \s^{-\s} } enthält, die nicht Null werden können.'."\n".
                     'Wie gesagt, fällt sie hierdurch selbst aus der Menge \lm{ \mathbb{S} } der Superial-Zahlenheraus.'."\n".
                     'Sie ist also keine rein endliche reelle Zahl, die nur aus Summanden endlicher Größe besteht.'."\n",
-                      'An dieser Stelle würde ich sagen, dass zumindestens \\latexmath{ \e_\s } keine reelle Zahl ist'."\n".
+                      'An dieser Stelle würde ich sagen, dass zumindestens \lm{ \e_\s } keine reelle Zahl ist'."\n".
                     'und die Frage im Raum steht, ob nicht auch alle anderen transzendenten Zahlen gar keine reellen Zahlen sind.'."\n".
                     'Sondern, wir lassen uns vielleicht dadurch täuschen, dass wir glauben, transzendente Zahlen wären durch Dezimalzahlen'."\n".
                     'mit unendlich vielen Nachkommastellen darstellbar, ohne zu beantworten,'."\n".
