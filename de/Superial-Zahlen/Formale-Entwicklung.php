@@ -58,14 +58,14 @@
                                           label_name => 'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom', label_text => '\name{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Vortext:X', text =>
                       
-                '\color{*Bearb}{In Arbeit …}', subline =>
+                '\color{*Bearb}{(In Arbeit …)}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -92,7 +92,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Ganze Superial-Zahlen \lm{ \mathbb{S}_{\Z} }} \\\\'."\n".
@@ -124,7 +124,7 @@
                       'Ganze Superial-Zahlen lassen sich also sinnvoll definieren und bei näherer Betrachtung, die wir später vollziehen,'."\n".
                     'haben diese sehr interessante Eigenschaften und lassen uns Zahlen besser verstehen.'."\n"))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.Z', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -132,10 +132,10 @@
                     ))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
                       
-                '\color{*Bearb}{In Arbeit …}', subline =>
+                '\color{*Bearb}{(In Arbeit …)}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -160,7 +160,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.N', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -176,14 +176,14 @@
                     'Für den Fall, dass \term{d = 0} ist, es sich also um endliche Zahlen handelt, bleiben nur endliche natürliche Zahlen über.'."\n",
                       'Für \term{d > 0}, den Fall, dass es sich um aktual unendlich große natürliche Zahlen handelt, entspricht die Definition der von positiven ganzen Superial-Zahlen.'."\n".
                     'Dies ist dadurch bestimmt, dass der Koeffizient \term{q__{d}} der größten Potenz \term{s^^{d}} positiv sein muss.'."\n",
-                      '\color{*Bearb}{In Arbeit …}'."\n".
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
                       
-                '\color{*Bearb}{In Arbeit …}', subline =>
+                '\color{*Bearb}{(In Arbeit …)}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -246,14 +246,14 @@
                       array( display => 'on',  latex => '{  *( \forall a_{1}, a_{2} \in \mathbb{A}_{\R} *)  *[  a_{2} \cdot \s^{2} \pm a_{1} \cdot \s \pm 1  ?\in  \mathbb{S}_{\P}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
                       
-                '\color{*Bearb}{In Arbeit …}', subline =>
+                '\color{*Bearb}{(In Arbeit …)}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -409,7 +409,7 @@
                     'Der Punkt hinter der nullten Potenz von \term{s} markiert quasi das Komma, ähnlich unseren reellen Zahlen im Zehnersystem notiert.'."\n".
                     'Alternativ kann hinter einer spitzen Klammer auch die Potenz der superialen Basis \term{s} als ganze Zahl angegeben werden.'."\n"))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen', text =>
                       
