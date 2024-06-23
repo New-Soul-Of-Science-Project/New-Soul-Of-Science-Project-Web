@@ -63,7 +63,7 @@
                     'oder zu deren Erforschung hiermit angeregt werden soll.'."\n".
                     ''))),
                       
-                  array( 'headline', array( jump_name => 'OM:SupNum:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Home:Vortext:X', text =>
                                            
                 'Information')),
                   array( 'text', array( text => array(
@@ -104,7 +104,7 @@
                     '\\\\'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
-                      array( title => '\color{*ContentItemDisabled}{Video Tour (geplant)}', startsign => '', //jumpname => 'XXX',
+                      array( title => '\color{*ContentItemDisabled}{Video Tour (geplant)}', startsign => '', //jumpname => 'X',
                                 description => 'die YouTube-Vorträge'),
                       array( title => '\color{*ContentItemDisabled}{Vorwort (geplant)}', startsign => ''/*'\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => 'was mich bewegt – was ich bewegen möchte'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
@@ -145,10 +145,10 @@
             <br>
           
             <table border="0"> <colgroup> <col width="22"> <col width="300"> <col width="16"> <col width="362"> </colgroup>
-              <tr> <td valign="top">&rarr;</td> <td valign="top"><!a href="../de/XXX">
-              XXX<!/a> <span style="color: #A0A0A0">(geplant)</span></td> <td valign="top" style="color: #A0A0A0">
+              <tr> <td valign="top">&rarr;</td> <td valign="top"><!a href="../de/X">
+              (in Arbeit …)<!/a> <span style="color: #A0A0A0">(geplant)</span></td> <td valign="top" style="color: #A0A0A0">
                   &hellip;</td> <td valign="top" style="color: #A0A0A0">
-                  XXX</td> </tr>
+                  (in Arbeit …)</td> </tr>
             </table>
           <?php To_f_headline_add_hides_end( '          ', 'hideContent'); ?>
 
