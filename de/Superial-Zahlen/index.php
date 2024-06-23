@@ -68,16 +68,16 @@
                 'Information')),
                   array( 'text', array( text => array(
                     'Dies ist die Startseite der kompletten Arbeit.'."\n".
-                    'Bitte wähle den direkten Zugang zu den einzelnen Themen über das nachfolgende \\jump{OM:SupNum:Home:Inhalt}{Inhaltsverzeichnis}.'."\n".
-                    'Die \\jump{OM:SupNum:Einleitung}{Einleitung} zu den Superial-Zahlen bietet einen Überblick über die grundlegende Herleitung.'."\n".
-                    'Bei Nachfragen und Interesse an einer Diskussion, Kritik oder Beteiligung lade ich herzlich ein \\jump{OM:FrQFT:Impressum:Inhaberdaten}{Kontakt} aufzunehmen.'."\n".
-                    'Auch eine Unterstützung durch \\jump{OM:FrQFT:Impressum:Spenden}{Spenden} ist herzlich willkommen.'."\n"))),
+                    'Bitte wähle den direkten Zugang zu den einzelnen Themen über das nachfolgende \jump{OM:SupNum:Home:Inhalt}{Inhaltsverzeichnis}.'."\n".
+                    'Die \jump{OM:SupNum:Einleitung}{Einleitung} zu den Superial-Zahlen bietet einen Überblick über die grundlegende Herleitung.'."\n".
+                    'Bei Nachfragen und Interesse an einer Diskussion, Kritik oder Beteiligung lade ich herzlich ein \jump{OM:FrQFT:Impressum:Inhaberdaten}{Kontakt} aufzunehmen.'."\n".
+                    'Auch eine Unterstützung durch \jump{OM:FrQFT:Impressum:Spenden}{Spenden} ist herzlich willkommen.'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                         // #: Text so auch auf der Seite "OM:NPYo:Home". Durch eine Konstante ersetzen, in der der Hinweis auf den Haftungsausschluss durch eine Wild-Card der aktuellen Seite ersetzt ist. Z.B. "!:Haftungsausschluss".
-                        '\\italic{Bitte beachte, dass diese Seiten im Aufbau befindlich sind. Es sind weder alle entwickelten Ideen eingepflegt, noch sind alle Texte vollständig.'."\n".
-                        'Sollte letzteres der Fall sein, so sind \\color{*Bearb}{violette} Markierungen angebracht.'."\n".
-                        'Stellen, die der aktuellen Weiterentwicklung bedürfen – gerne auch von extern –, sind \\color{*Entwick}{grün} markiert.}'."\n"),
+                        '\italic{Bitte beachte, dass diese Seiten im Aufbau befindlich sind. Es sind weder alle entwickelten Ideen eingepflegt, noch sind alle Texte vollständig.'."\n".
+                        'Sollte letzteres der Fall sein, so sind \color{*Bearb}{violette} Markierungen angebracht.'."\n".
+                        'Stellen, die der aktuellen Weiterentwicklung bedürfen – gerne auch von extern –, sind \color{*Entwick}{grün} markiert.}'."\n"),
                         addtext => '')),
                     
                   array( 'jumplist', array(
@@ -104,14 +104,14 @@
                     '\\\\'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
-                      array( title => '\\color{*ContentItemDisabled}{Video Tour (geplant)}', startsign => '', //jumpname => 'XXX',
+                      array( title => '\color{*ContentItemDisabled}{Video Tour (geplant)}', startsign => '', //jumpname => 'XXX',
                                 description => 'die YouTube-Vorträge'),
-                      array( title => '\\color{*ContentItemDisabled}{Vorwort (geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
+                      array( title => '\color{*ContentItemDisabled}{Vorwort (geplant)}', startsign => ''/*'\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => 'was mich bewegt – was ich bewegen möchte'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
                     ))),
                       
                   array( 'normal',
-                    '<h3 class="tools-class-contentlist-header">Superial-Zahlen \\\\ \\small{Zählen und Primzahlen im Unendlichen}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Superial-Zahlen \\\\ \small{Zählen und Primzahlen im Unendlichen}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Einleitung'),
@@ -125,7 +125,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 class="tools-class-contentlist-header">Lesestoff und Verweise \\\\ \\small{Informationen}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Lesestoff und Verweise \\\\ \small{Informationen}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Literatur'),
