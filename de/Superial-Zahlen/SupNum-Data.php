@@ -24,7 +24,7 @@
         'Wolfgang Huß und \\\\'."\n".
         'Media Line Digital e.K. \\\\'."\n".
         'is licensed under \\\\'."\n".
-        '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
+        '\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
       litera_url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Literatur_de.php',
       litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
     )),
@@ -32,9 +32,9 @@
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/index.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/index.php',
       titel => 'Superial-Zahlen (SN) - Deutsch',
-      description => '\\name[undertitle]{OM:SupNum:Home}. — \\name[description]{OM:SupNum:Home}.',
+      description => '\name[undertitle]{OM:SupNum:Home}. — \name[description]{OM:SupNum:Home}.',
       keywords => '',
-      text_titel_h1 => 'Superial-Zahlen \\color{*TitleAdd}{\\small{(SN)}}',
+      text_titel_h1 => 'Superial-Zahlen \color{*TitleAdd}{\small{(SN)}}',
       text_titel_short => 'Superial-Zahlen',
       text_undertitel_h2 => 'Die Zahlentheorie der Analysis – mit Primzahlen ins Unendliche',
       text_titel_discr_h3 => 'Ein aktual unendlicher angeordneter algebraischer Körper, als Erweiterung der realen algebraischen Zahlen, der der Unendlichkeit eine fundamentale, fraktale Struktur gibt – neue Ideen elementarer Mathematik',
@@ -47,7 +47,7 @@
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Ableitungen-und-Integrale-aktuale-Unendlichkeit-ersetzt-Limes.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Ableitungen-und-Integrale-aktuale-Unendlichkeit-ersetzt-Limes.php',
       titel => 'Ableitungen und Integrale - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\\name[undertitle]{OM:SupNum:Ableitungen-Integrale}.\\hidden{ — \\name[description]{OM:SupNum:Ableitungen-Integrale}.}',
+      description => '\name[undertitle]{OM:SupNum:Ableitungen-Integrale}.\hidden{ — \name[description]{OM:SupNum:Ableitungen-Integrale}.}',
       keywords => '',
       text_titel_h1 => 'Ableitungen und Integrale',
       text_titel_short => 'Ableitungen und Integrale',
@@ -77,7 +77,7 @@
           'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation' => array( headline_text => 'SN.AbIn.IN.11'),
 
         'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen' => array( headline_text => 'Nähere Untersuchung bestimmter Summen'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins' => array( headline_text => 'Summen zur Integration von \\latexmath{ 〈2 x〉․〈1〉 }'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins' => array( headline_text => 'Summen zur Integration von \latexmath{ 〈2 x〉․〈1〉 }'/* , headline_text_short => 'X' */),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt' => array( headline_text => 'SN.AbIn.NU.1'),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Menge-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x' => array( headline_text => 'SN.AbIn.NU.3'),
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-x' => array( headline_text => 'SN.AbIn.NU.4'),
@@ -96,7 +96,7 @@
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Eigenschaften.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Eigenschaften.php',
       titel => 'Eigenschaften - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\\name[undertitle]{OM:SupNum:Eigenschaften}. — \\name[description]{OM:SupNum:Eigenschaften}.',
+      description => '\name[undertitle]{OM:SupNum:Eigenschaften}. — \name[description]{OM:SupNum:Eigenschaften}.',
       keywords => '',
       text_titel_h1 => 'Eigenschaften',
       text_titel_short => 'Eigenschaften',
@@ -107,7 +107,7 @@
                    
         'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen' => array( headline_text => 'Die sinnvollen Koeffizienten der Superial-Zahlen'/* , headline_text_short => 'X' */),
                    
-        'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper' => array( headline_text => '\\latexmath{ \mathbb{S} } ist ein angeordneter Körper', headline_text_short => 'S ist ein angeordneter Körper'),
+        'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper' => array( headline_text => '\latexmath{ \mathbb{S} } ist ein angeordneter Körper', headline_text_short => 'S ist ein angeordneter Körper'),
                    
         'OM:SupNum:Eigenschaften:StrukturVonS' => array( headline_text => 'Die Struktur von \lm{ \s }', headline_text_short => 'Die Struktur von s'),
           'OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS' => array( headline_text => 'Was lernen wir über die Größe von \lm{ ω } und die Struktur von \lm{ \s } über die Frage der Vorgänger?', headline_text_short => 'Was lernen wir über die Größe von ω und die Struktur von s über die Frage der Vorgänger?'),
@@ -149,7 +149,7 @@
 
           'OM:SupNum:Einleitung:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
 
-          'OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s' => array( headline_text => 'Was ist unsere neue superiale Basis \\latexmath{ \s }?', headline_text_short => 'Was ist unsere neue superiale Basis s?'),
+          'OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s' => array( headline_text => 'Was ist unsere neue superiale Basis \latexmath{ \s }?', headline_text_short => 'Was ist unsere neue superiale Basis s?'),
           'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N' => array( headline_text => 'SN.Ein.31'),
           'OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N' => array( headline_text => 'SN.Ein.32'),
           'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega' => array( headline_text => 'SN.Ein.33'),
@@ -169,7 +169,7 @@
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Eulersche-Zahl-e-Exponentialfunktion-Definition-mit-aktual-unendlichen-Zahlen.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Eulersche-Zahl-e-Exponentialfunktion-Definition-mit-aktual-unendlichen-Zahlen.php',
       titel => 'Die eulersche Zahl e und die e-Funktion - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\\name[undertitle]{OM:SupNum:Eulersche-Zahl-e-Funktion}. — \\name[description]{OM:SupNum:Eulersche-Zahl-e-Funktion}.',
+      description => '\name[undertitle]{OM:SupNum:Eulersche-Zahl-e-Funktion}. — \name[description]{OM:SupNum:Eulersche-Zahl-e-Funktion}.',
       keywords => '',
       text_titel_h1 => 'Die eulersche Zahl e und ihre Exponentialfunktion',
       text_titel_short => 'Die eulersche Zahl e und ihre Exponentialfunktion',
@@ -178,7 +178,7 @@
       jump_ary => array(
         'OM:SupNum:Eulersche-Zahl-e-Funktion:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
-        // 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion' => array( headline_text => 'Die eulersche Zahl \\latexmath{ \e } und ihre \\latexmath{ \e }-Funktion in der Differentialrechnung' , headline_text_short => 'Die eulersche Zahl e und ihre e-Funktion in der Differentialrechnung'),
+        // 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion' => array( headline_text => 'Die eulersche Zahl \latexmath{ \e } und ihre \latexmath{ \e }-Funktion in der Differentialrechnung' , headline_text_short => 'Die eulersche Zahl e und ihre e-Funktion in der Differentialrechnung'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem' => array( headline_text => 'SN.EuZa.15'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s' => array( headline_text => 'SN.EuZa.19'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-omega' => array( headline_text => 'SN.EuZa.20'),
@@ -195,7 +195,7 @@
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Formale-Entwicklung.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Formale-Entwicklung.php',
       titel => 'Formale Entwicklung - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\\name[undertitle]{OM:SupNum:Formale-Entwicklung}.\\hidden{ — \\name[description]{OM:SupNum:Formale-Entwicklung}.}',
+      description => '\name[undertitle]{OM:SupNum:Formale-Entwicklung}.\hidden{ — \name[description]{OM:SupNum:Formale-Entwicklung}.}',
       keywords => '',
       text_titel_h1 => 'Formale Entwicklung',
       text_titel_short => 'Formale Entwicklung',
@@ -237,16 +237,16 @@
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Primzahlprodukt-Vermutung.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Primzahlprodukt-Vermutung.php',
       titel => 'Primzahlprodukt-Vermutung (Beweis) - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\\name[undertitle]{OM:SupNum:Primzahlprodukt-Vermutung}. — \\name[description]{OM:SupNum:Primzahlprodukt-Vermutung}.',
+      description => '\name[undertitle]{OM:SupNum:Primzahlprodukt-Vermutung}. — \name[description]{OM:SupNum:Primzahlprodukt-Vermutung}.',
       keywords => '',
-      text_titel_h1 => 'Primzahlprodukt-Vermutung \\color{*TitleAdd}{\\small{(Beweis)}}',
+      text_titel_h1 => 'Primzahlprodukt-Vermutung \color{*TitleAdd}{\small{(Beweis)}}',
       text_titel_short => 'Primzahlprodukt-Vermutung',
       text_undertitel_h2 => 'Ist das Produkt aller endlichen Primzahlen, also die Primfakultät über alle Primzahlen in der Menge der natürlichen Zahlen, der Anzahl der natürlichen Zahlen gleich?',
       text_titel_discr_h3 => 'Eine Vorstellung der Vermutung und ihr Beweis',
       jump_ary => array(
         'OM:SupNum:Primzahlprodukt-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
 
-          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen' => array( headline_text => 'Wir vermuten, dass \\latexmath{ \omega } die vollständige Primfakultät aller endlichen Primzahlen ist' , headline_text_short => 'Wir vermuten, dass ω die vollständige Primfakultät aller endlichen Primzahlen ist'),
+          'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen' => array( headline_text => 'Wir vermuten, dass \latexmath{ \omega } die vollständige Primfakultät aller endlichen Primzahlen ist' , headline_text_short => 'Wir vermuten, dass ω die vollständige Primfakultät aller endlichen Primzahlen ist'),
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen' => array( headline_text => 'SN.PP.6'),
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-Fragezeichen-ist-omega-hoch-omega' => array( headline_text => 'SN.PP.7'),
 
@@ -274,7 +274,7 @@
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Arithmetische-Struktur-der-Geometrie.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Arithmetische-Struktur-der-Geometrie.php',
       titel => 'Die arithmetische Struktur der Geometrie - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\\name[undertitle]{OM:SupNum:Struktur-Geometrie}.\\hidden{ — \\name[description]{OM:SupNum:Struktur-Geometrie}.}',
+      description => '\name[undertitle]{OM:SupNum:Struktur-Geometrie}.\hidden{ — \name[description]{OM:SupNum:Struktur-Geometrie}.}',
       keywords => '',
       text_titel_h1 => 'Die arithmetische Struktur der Geometrie',
       text_titel_short => 'Die arithmetische Struktur der Geometrie',
@@ -295,9 +295,9 @@
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Ueberrationalitaetsvermutung.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Ueberrationalitaetsvermutung.php',
       titel => 'Überrationalitätsvermutung (Beweis) - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\\name[undertitle]{OM:SupNum:Primzahlprodukt-Vermutung}. — \\name[description]{OM:SupNum:Primzahlprodukt-Vermutung}.',
+      description => '\name[undertitle]{OM:SupNum:Primzahlprodukt-Vermutung}. — \name[description]{OM:SupNum:Primzahlprodukt-Vermutung}.',
       keywords => '',
-      text_titel_h1 => 'Überrationalitätsvermutung \\color{*TitleAdd}{\\small{(Beweis)}}',
+      text_titel_h1 => 'Überrationalitätsvermutung \color{*TitleAdd}{\small{(Beweis)}}',
       text_titel_short => 'Überrationalitätsvermutung',
       text_undertitel_h2 => 'Lässt sich die „x“-te Wurzel aus „n“, wenn sie irrational ist, immer als Bruch mit aktual unendlich großem ganzen Nenner und Zähler ausdrücken?',
       text_titel_discr_h3 => 'Der folgende Beweis zeigt, die Antwort ist ja. Dann, wenn Nenner und Zähler aktual unendlich große ganze Zahlen sind, die wir beliebig endlich oft durch „n“ teilen können. Damit sind die Koeffizienten aller algebraischen Zahlen, viele davon irrationale Wurzeln, auch Koeffizienten der Superial-Zahlen',
