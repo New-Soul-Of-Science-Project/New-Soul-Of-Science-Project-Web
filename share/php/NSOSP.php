@@ -527,10 +527,10 @@
                                                          text => '\\color{*Bearb}{(Grafik: Vermerken, das \\term{v__{wq}} konstant ist und der erhöhten LG entspricht! \\term{v__{wq} =} Pythagoras hinschreiben.)} Die Darstellung zeigt, unter welchen Bedingungen das Pound-Rebka-Snider-Experiment mit der Quanten-Fluss-Theorie zusammenfällt.'."\n".
                                                                   'Der Wirkungsquanten-Geschwindigkeitsvektor – am Kreismittelpunkt ansetzend – stellt die Geschwindigkeitseigenschaft der drei Lichtgeschwindigkeiten – Einsteinsche Lichtgeschwindigkeit, Rotations-Lichtgeschwindigkeit und erhöhte Lichtgeschwindigkeit – dar.');
   
-  $FrQFT_g_figure_ary_QuarkProton               = array( fig_file_name => 'FrQFT/Quark-Protron-v01', fig_alt_description => 'XXX - XXX', width => '660px', height => '221px', name => 'set local',
-                                                         text => 'XXX'."\n".
-                                                                 'XXX'."\n".
-                                                                 'XXX');
+  $FrQFT_g_figure_ary_QuarkProton               = array( fig_file_name => 'FrQFT/Quark-Proton-v01', fig_alt_description => 'Protonen und Neutron - Aufbau aus Quarks', width => '660px', height => '221px', name => 'set local',
+                                                         text => 'Protonen und Neutron bestehen aus Teil-Strings von Leptonen, die wir Quarks nennen.'."\n".
+                                                                 'Nach dieser Idee sind die Wirkungsquanten-Strings der Teil-Leptonen über Teil-Strings von Vakuum-Photonen, den Gluonen, verbunden.'."\n".
+                                                                 'Alle Strings zusammen haben eine Farbladung von Weiß, weil sich ihre Auslenkungen von den Rotationszentren ihrer Lichtbahnen zu Weiß zusammensetzen.');
   
   $FrQFT_g_figure_ary_RelatDichte               = array( fig_file_name => 'Elapson-Graviton-Dicht_v04', fig_alt_description => 'Relation der Wirkungsquanten-String- zur Elapsonen-bahn-Dichte', width => '700px', height => '237px', name => 'set local!',
                                                          text => '\\color{*Bearb}{(Die y-Achse entspricht dem Alterungsfaktor Alpha. Mit Gleichheitszeichen eintragen? • Ist die Bezeichnung Ereignishorizont wirklich zutreffend? Es ist nicht so einer wie in der ART. Übergangshorizont wäre vielleicht besser. (Siehe Artikel GEO 10/2014, "Wie schwarz ist Schwarz?", S. 130–144.) Die Bilddatei sollte nicht mehr den Namen Graviton tragen.)} Das Diagramm stellt auf der Horizontal-Achse den Kehrwert der relativen Wirkungsquanten-String-Dichte dar; je kleiner der Horizontal-Achswert, desto höher die Wirkungsquanten-Dichte.'."\n".
