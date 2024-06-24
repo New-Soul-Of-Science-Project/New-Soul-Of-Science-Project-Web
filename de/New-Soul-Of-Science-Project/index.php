@@ -499,7 +499,7 @@
                     Title => 'Was kann das ›Spannungsspiel des Lebens‹ bisher erklären?', ParagraphList => array(
 
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n"
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
                     ))),
@@ -556,7 +556,7 @@
                     Title => 'Was kann der Zusammenhang zwischen dem Begriff Seele und dem Begriff Zusammenhang bisher erklären?', ParagraphList => array(
 
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n"
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
                     ))),

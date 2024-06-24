@@ -2,7 +2,7 @@
         include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
 
 
-<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:NPYo:XXX-Notizen'); ?>
+<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:NPYo:X-Notizen'); ?>
 
 
       <?php FrQFT_f_Div_Header( '      '); ?>
@@ -47,7 +47,7 @@
 
 		    	<!  • Achtsamkeits- und Meditationstechniken  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:NPYo:XXX-Notizen:MeditationAchtsamkeitTechniken',
+            'OM:NPYo:X-Notizen:MeditationAchtsamkeitTechniken',
               'XXX', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -87,10 +87,10 @@
           ); ?>
           
 
-		    	<!  • XXX  >
+		    	<!  • X  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:FrQFT:XXX-Notizen:XXX',
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:FrQFT:X-Notizen:X',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'text', array( text => array(
@@ -117,10 +117,10 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'XXX'),
+                      // array(  jump_name => 'XXX'),
                     )),
               )
-          ); ?>
+          ); */ ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

@@ -185,7 +185,7 @@
                       'welche ergänzend oder alternativ zur \\jump{OM:FrQFT:Gravitation:Phaenomen-der-Dunkle-Materie-oder-MOND}{Dunklen Materie} zu verstehen ist.'."\n".
                       '\\color{*Entwick}{Hier setzt meine aktuelle Forschung an, die Effekte numerisch zu beschreiben.}'."\n"),
                 array( 'normal',
-                      'Bisher wurde davon ausgegangen, dass die \\hidden{\\jump{OM:FrQFT:XXX-Notizen:Problem-der-fehlenden-Gravitation-der-Vakuumenergie}}\\color{*Bearb}{Energie des Vakuums grundsätzlich keine gravitative Wirkung entfaltet}.\\footnote[*Bearb]{\\color{*Bearb}{(Weitere Verweise)}}'."\n"),
+                      'Bisher wurde davon ausgegangen, dass die \\hidden{\\jump{OM:FrQFT:X-Notizen:Problem-der-fehlenden-Gravitation-der-Vakuumenergie}}\\color{*Bearb}{Energie des Vakuums grundsätzlich keine gravitative Wirkung entfaltet}.\\footnote[*Bearb]{\\color{*Bearb}{(Weitere Verweise)}}'."\n"),
                 array( 'jumplist',
                   array(
                     array(  jump_name => 'OM:FrQFT:Gravitation:Vakuum-als-Traeger-des-Gravitationsfelds'),
@@ -194,7 +194,7 @@
                     array(  jump_name => 'OM:FrQFT:NeuePhysik:Fraktales-Universum'),
                     array(  jump_name => 'OM:FrQFT:NeuePhysik:Loesungsansatz'),
                     array(  jump_name => 'OM:FrQFT:Gravitation:Phaenomen-der-Dunkle-Materie-oder-MOND'),
-                    //array(  jump_name => 'OM:FrQFT:XXX-Notizen:Problem-der-fehlenden-Gravitation-der-Vakuumenergie'),
+                    //array(  jump_name => 'OM:FrQFT:X-Notizen:Problem-der-fehlenden-Gravitation-der-Vakuumenergie'),
                   )),
               )
           ); ?>

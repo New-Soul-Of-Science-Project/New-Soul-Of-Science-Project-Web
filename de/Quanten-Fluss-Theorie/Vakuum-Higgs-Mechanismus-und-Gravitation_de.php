@@ -243,8 +243,7 @@
           ); ?>
           
 
-		    	<!  • Quantenfluktuationen:  >
-		    	<!    • XXX  >
+		    	<!  • Quantenfluktuationen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vakuum:Quantenfluktuationen',
               '\\color{*Bearb}{(In Arbeit …)}', 'Sc_f_Paragraph',
@@ -263,8 +262,7 @@
           ); ?>
           
 
-		    	<!  • XXX:  >
-		    	<!    • XXX  >
+		    	<!  • Fraktales Vakuum  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Vakuum:Fraktales-Vakuum',
               'Fraktaler Raum und fraktale Zeit \\color{*Bearb}{(In Arbeit …)}', 'Sc_f_Paragraph',
@@ -283,10 +281,9 @@
           ); ?>
           
 
-		    	<!  • XXX:  >
-		    	<!    • XXX  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:FrQFT:Vakuum:XXX',
+		    	<!  • X  >
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:FrQFT:Vakuum:X',
               '\\color{*Bearb}{(In Arbeit …)}', 'Sc_f_Paragraph',
                 array(
                   array( 'normal',
@@ -300,7 +297,7 @@
                   array( 'normal',
                     '\\color{*Bearb}{(In Arbeit …)}'."\n"),
               )
-          ); ?>
+          ); */ ?>
           
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

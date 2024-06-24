@@ -678,9 +678,9 @@
           ); ?>
 
           
-		    	<!  • XXX:  >
-          <?php /*To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:FrQFT:Elementarteilchen:XXX',
+		    	<!  • X  >
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:FrQFT:Elementarteilchen:X',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'normal',
@@ -710,7 +710,7 @@
                       //array(  jump_name => 'XXX'),
                     )),
               )
-          );*/ ?>
+          ); */ ?>
 
           
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

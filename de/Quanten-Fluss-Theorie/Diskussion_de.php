@@ -672,7 +672,7 @@
                     'Während die Quantenmechanik als erste und die Quantenfeldtheorien als zweite Quantisierung bezeichnet werden,'."\n".
                     'ist die fraktale Quanten-Fluss-Theorie als dritte Quantisierung zu verstehen; die unendliche Quantisierung von Materie und Licht, von Raum und Zeit.'."\n",
                       'Wirkungsquanten sind in der Quanten-Fluss-Theorie bei näherer Betrachtung Mikro-Strings die aus Mikro-Wirkungsquanten bestehen und so weiter.'."\n".
-                    'So ergibt sich eine \\jump{OM:FrQFT:Zusammenfassung:Universum-aus-gestaffelten-Kosmoi}{fraktale Struktur von Raum und Zeit}, welche sich als Fortsetzung des zuvor beschriebenen Prinzips der Entstehung von Neheh- aus Djet-Zeit durch Wechselwirkung darstellt.'."\n".
+                    'So ergibt sich eine \\jump{OM:FrQFT:Zusammenfassung:Universum-aus-geschachtelten-Kosmoi}{fraktale Struktur von Raum und Zeit}, welche sich als Fortsetzung des zuvor beschriebenen Prinzips der Entstehung von Neheh- aus Djet-Zeit durch Wechselwirkung darstellt.'."\n".
                     'Diese fraktale Eigenschaft ist mehr als nur die unendliche Quantisierung der Physik, denn sie erlaubt die Beschreibung der Struktur innerhalb von \\jump{*Schwarze-Loech-Zusamm}{Schwarzen Löchern}'."\n".
                     'und des \\jump{*Urknall-Zusamm}{Urknalls unseres Kosmos}; der fraktalen Struktur des alles umfassenden Universums.'."\n"))),
                   array( 'normal',
@@ -746,7 +746,7 @@
                     'zeigt. \\\\'."\n".
                     'Der jüngst im Jahr 2012 erfolgte Nachweis des Higgs-Bosons mittels modernster Experimentalphysik bestätigt, dass es ein solches Medium – auch Äther genannt –'."\n".
                     'geben muss,\\footnote{Vgl. \\cite{Luest:VomHiggsZurWeltformel2013}, S. 54-56.} denn sein Nachweis ist der indirekte Nachweis des Higgs-Felds.\\footnote{\\const{FrQFT_g_footnote_text_IndNachweisHiggsFeld}}'."\n".
-                    'Das \\hidden{\\jump{OM:FrQFT:XXX-Notizen:Higgs-Feld-Aether}}\\color{*Bearb}{Higgs-Feld steht somit im Widerspruch zur heutigen interpretation des Michelson-Morley-Experiments}.'."\n".
+                    'Das \\hidden{\\jump{OM:FrQFT:X-Notizen:Higgs-Feld-Aether}}\\color{*Bearb}{Higgs-Feld steht somit im Widerspruch zur heutigen interpretation des Michelson-Morley-Experiments}.'."\n".
                     'und damit zur Auffassung der Speziellen Relativitätstheorie, für jeden Beobachter ist die Lichtgeschwindigkeit wirklich(!) in jeder Richtung im Raum gleich groß. \\\\'."\n".
                     '\\color{*Bearb}{(Hinweis darauf, dass sich nur die Zweiweg-Lichtgeschwindigkeit messen lässt.\\footnote{Vgl. \\cite{Selleri:EinsteinLorentz1998}.})}'."\n"),
                   array( 'normal',

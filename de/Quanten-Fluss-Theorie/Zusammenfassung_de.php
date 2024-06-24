@@ -70,12 +70,12 @@
                   array( 'normal',
                     'Die im Kapitel \\jump{OM:FrQFT:NeuePhysik:Loesungsansatz}{Lösung des Problems der Zeit} beschriebene Spirale'."\n".
                     'wiederholt sich in der Quanten-Fluss-Theorie als fraktale Struktur.'."\n".
-                    'Das heißt, dass die in \\jump{OM:FrQFT:XXX-Notizen:NeuePhysik-Fig-Elapson}{Abbildung 1} als graue Kugeln dargestellten'."\n".
+                    'Das heißt, dass die in \\jump{OM:FrQFT:X-Notizen:NeuePhysik-Fig-Elapson}{Abbildung 1} als graue Kugeln dargestellten'."\n".
                     '\\jump{OM:FrQFT:Elementarteilchen}{Wirkungsquanten der Elapsonen-Strings} des Vakuums – und naturlich letztendlich die Wirkungsquanten aller'."\n".
                     'Elementarteilchen-Strings – aus super kleinen Strings von Mikro-Wirkungsquanten bestehen.'."\n".
                     'In der Theorie setzt sich dieses Fraktal bis ins unendlich kleine fort.'."\n"),
                   array( 'normal',
-                    'In Bezug auf die \\jump{OM:FrQFT:XXX-Notizen:NeuePhysik-Fig-Elapson}{Abbildung 1} bewegt sich dann ein rotierender Ring aus Mikro-Wirkungsquanten'."\n".
+                    'In Bezug auf die \\jump{OM:FrQFT:X-Notizen:NeuePhysik-Fig-Elapson}{Abbildung 1} bewegt sich dann ein rotierender Ring aus Mikro-Wirkungsquanten'."\n".
                     'entlang der eingezeichneten Spirale.'."\n".
                     'Die Bahn eines Mikro-Wirkungsquants ist dann eine Spirale, die sich um die eingezeichnete Spiralbahn wickelt.'."\n"),
                   array( 'normal',
@@ -90,7 +90,7 @@
                     'Werden die Eigenschaften des integrierten Bewegungsraums genauer untersucht, so kann man zeigen, dass an jedem Ort im Raum eine höhste Ebene'."\n".
                     'existiert, die Ebene der Elementarteilchen.\\color{*Bearb}{(Link)}'."\n".
                     'Die Folge davon ist weitreichend und faszinierend: \\\\'."\n".
-                    'Das Universum besteht aus einer \\jump{OM:FrQFT:Zusammenfassung:Universum-aus-gestaffelten-Kosmoi}{fraktal gestaffelten Struktur von Kosmoi}\\footnote{\\const{FrQFT_g_footnote_text_Kosmoi}}'."\n".
+                    'Das Universum besteht aus einer \\jump{OM:FrQFT:Zusammenfassung:Universum-aus-geschachtelten-Kosmoi}{fraktal geschachtelten Struktur von Kosmoi}\\footnote{\\const{FrQFT_g_footnote_text_Kosmoi}}'."\n".
                     'beziehungsweise Schwarzen Löchern\\color{*Bearb}{(Verweis)}.'."\n"),
                   array( 'normal',
                     'In der Umsetzung der Theorie als konkretes Modell wird eine kleinste Fraktal-Ebene der Tiefe \\term{x} angenommen, auf der'."\n".
@@ -114,7 +114,7 @@
                     'Die Helixspirale bestimmt so als Kombination aus Translation und Rotation die gesamte Physik.'."\n"),
                   array( 'jumplist',
                     array(
-                      array(  jump_name => 'OM:FrQFT:Zusammenfassung:Universum-aus-gestaffelten-Kosmoi'),
+                      array(  jump_name => 'OM:FrQFT:Zusammenfassung:Universum-aus-geschachtelten-Kosmoi'),
                       array(  jump_name => 'OM:FrQFT:Lepton:Zeit-und-Alterung'),
                       array(  jump_name => 'OM:FrQFT:Lepton'),
                   )),
@@ -122,10 +122,10 @@
           ); ?>
           
 
-		    	<!  • Universum aus gestaffelten Kosmoi:  >
+		    	<!  • Universum aus geschachtelten Kosmoi:  >
 		    	<!    • Verlinken: Universum, Schwarze Löcher, Kosmos und Urknall  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:FrQFT:Zusammenfassung:Universum-aus-gestaffelten-Kosmoi',
+            'OM:FrQFT:Zusammenfassung:Universum-aus-geschachtelten-Kosmoi',
               'Kosmos und Schwarzes Loch sind zwei Seiten der selben Medaille', 'Sc_f_Paragraph',
                 array(
                   array( 'normal',
@@ -152,7 +152,7 @@
                   array( 'normal',
                     'Daraus ergibt sich ein faszinierendes Bild unseres Universums:'."\n"),
                   array( 'conclusion',
-                        'Ich vermute, dass das Universum aus einer \\jump[][000AC4]{OM:FrQFT:Zusammenfassung:Universum-aus-gestaffelten-Kosmoi}{fraktal gestaffelten Struktur von Kosmoi}'."\n".
+                        'Ich vermute, dass das Universum aus einer \\jump[][000AC4]{OM:FrQFT:Zusammenfassung:Universum-aus-geschachtelten-Kosmoi}{fraktal geschachtelten Struktur von Kosmoi}'."\n".
                         'beziehungsweise Schwarzen Löchern besteht.'."\n".
                         'Ähnlich den russischen Matrjoschkas\footnote[000AC4]{Vgl. \\cite{wiki:Matrjoschka2013}.},'."\n".
                         'nur dass ein Kosmos, anders als die Holzpuppen, viele kleinere Kosmoi nebeneinander enthalten kann, nämlich in jedem Schwarzen Loch eines.'."\n".
@@ -181,7 +181,7 @@
                     'Zum anderen den Ereignishorizont, der uns in unserem Kosmos umgibt und der seit dem Urknall\\color{*Bearb}{(Link, Verweis)} existiert.'."\n".
                     'Beide Horizonte haben eine Kugelform.'."\n"),
                   array( 'normal',
-                    'Die Quanten-Fluss-Theorie sieht aufgrund der \\jump{OM:FrQFT:Zusammenfassung:Universum-aus-gestaffelten-Kosmoi}{fraktal gestaffelten Kosmoi}'."\n".
+                    'Die Quanten-Fluss-Theorie sieht aufgrund der \\jump{OM:FrQFT:Zusammenfassung:Universum-aus-geschachtelten-Kosmoi}{fraktal geschachtelten Kosmoi}'."\n".
                     'in beiden Erscheinungen das selbe Phänomen; einmal aus der Innensicht des Kosmos und einmal aus der Außensicht des Schwarzen Lochs.'."\n".
                     'Der Moment der Entstehung des Schwarzen Lochs ist der Urknall des enthaltenen Kosmos.'."\n"),
                   array( 'normal',
@@ -191,13 +191,13 @@
                     'auf dem die Lichtgeschwindigkeit so gering wird, dass das Licht nahezu zum Stehen kommt.\\color{*Bearb}{(Link, Abbildung)}<br>'."\n".
                     'Was die Spiralbahnen der Wirkungsquanten betrifft, ist dieser extreme Zustand strukturell kritisch.\\color{*Bearb}{(Link)}'."\n".
                     'Wird dieser Bereich ins Innere überschritten, so vollzieht sich ein Phasenübergang.'."\n".
-                    'Die uns bekannte Welt bricht zusammen und ein \\jump{OM:FrQFT:Zusammenfassung:Universum-aus-gestaffelten-Kosmoi}{Kosmos in Mikroausgabe}'."\n".
+                    'Die uns bekannte Welt bricht zusammen und ein \\jump{OM:FrQFT:Zusammenfassung:Universum-aus-geschachtelten-Kosmoi}{Kosmos in Mikroausgabe}'."\n".
                     'kommt zum Vorschein.'."\n"),
                   array( 'normal',
                     '\\color{*Bearb}{In Arbeit …}'."\n"),
                   array( 'jumplist',
                     array(
-                      array(  jump_name => 'OM:FrQFT:Zusammenfassung:Universum-aus-gestaffelten-Kosmoi'),
+                      array(  jump_name => 'OM:FrQFT:Zusammenfassung:Universum-aus-geschachtelten-Kosmoi'),
                       array(  jump_name => 'OM:FrQFT:Quantengravitation:Mechanismus-der-Gravitation'),
                       array(  jump_name => 'OM:FrQFT:Gravitation:Mechanismus-der-Gravitation'),
                   )),
@@ -205,10 +205,10 @@
           ); ?>
           
 
-		    	<!  • XXX  >
+		    	<!  • X  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:FrQFT:Zusammenfassung:XXX',
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:FrQFT:Zusammenfassung:X',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'text', array( text => array(
@@ -237,7 +237,7 @@
                       //array(  jump_name => 'XXX'),
                     )),
               )
-          ); ?>
+          ); */ ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

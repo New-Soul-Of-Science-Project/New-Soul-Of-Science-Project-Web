@@ -164,31 +164,6 @@
                       'Das Plancksche Wirkungsquantum gilt demnach manchen Physikern also nicht umsonst als die grundlegende Informationseinheit.'."\n".
                     'Diese Einsicht führt schließlich zur \\jump{OM:FrQFT:Quantengravitation}{Quantengravitation der Elementarteilchen} der \\jump{OM:FrQFT:Home}{neuen Physik}.'."\n"))),
                     ))),
-                  /* array( 'headline', array( jump_name => 'OM:SpaLeb:Information-Kommunikation:Vortext:XXX', text =>
-                                           
-                'XXX', subline =>
-                  'XXX')),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))), */
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Bewusstsein'),
