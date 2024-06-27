@@ -14,8 +14,8 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                     // '\\bold{XXX:}',
-                     // '• XXX',
+                     // '\\bold{X:}',
+                     // '• X',
                     ))),
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\\bold{Bewusstsein und Regelprozesse}',
@@ -41,7 +41,7 @@
                     'Was Information ist oder wie wir den Begriff Information am besten definieren können, ist eine nicht ganz einfache Frage, die sehr von der jeweiligen Perspektive abhängt.'."\n".
                     'Einen Ansatz, der zum nachfolgenden Verständnis von Bewusstsein und Achtsamkeit sehr gut passt, können wir mit folgender Frage einleiten:'."\n",
                       'Wie können wir sicher definieren, dass ein Informationsgehalt \\italic{wirklich} übertragen wurde?'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Information-Kommunikation:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Information-Kommunikation:Vortext:X', text =>
                                            
                 'Information ist Wirkung', subline =>
                   // 'Information ist Anstoß – im Leben wie in der Physik')),
@@ -75,7 +75,7 @@
                   array( 'text', array( text => array(
                     'Damit bleibt natürlich die Möglichkeit, dass etwas verstanden wird, was nicht vom Sender gesagt werden wollte.'."\n".
                     'Doch das lässt sich in meinen Augen nicht vermeiden.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Information-Kommunikation:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Information-Kommunikation:Vortext:X', text =>
                                            
                 'Information kann „zufällig“ übertragen werden', subline =>
                   '')),
@@ -86,7 +86,7 @@
                       'Meine Assoziation, die einen Eindruck in mir erzeugt, ist das, was die Übertragung in mir bewirkt.'."\n".
                     'Es kann sich in gewisser Hinsicht also auch um eine „zufällige“ Wirkung handeln.'."\n".
                     'Es muss keine Wirkung sein, die jemand oder etwas bezwecken wollte.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Information-Kommunikation:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Information-Kommunikation:Vortext:X', text =>
                                            
                 'Resonanz geht mit sinnvoller Kommunikation einher', subline =>
                   '')),
@@ -97,7 +97,7 @@
                     'Der Zufall in der Informationsübertragung wird auf diese Weise sicher massiv minimiert, denn es ergibt sich ein innerer Sinn.'."\n",
                       'So können Sender und Empfänger durch Rückkopplung zu einem stabilen System werden, zu einem selbstorganisierten Regelprozess, in dem Kommunikation in hoher Güte abläuft.'."\n".
                     'Nur auf diese Art und Weise kann \\jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{stabile Existenz} und deren \\jump{OM:SpaLeb:Bewusstsein}{Bewusstsein} entstehen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Information-Kommunikation:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Information-Kommunikation:Vortext:X', text =>
                                            
                 'Wirkungsvolle Kommunikation und Resonanz', subline =>
                   '')),
@@ -115,7 +115,7 @@
             
                   array( 'text', array( text => array(
                     'Und wie was wirkt, erkennen wir nach unserer Rede nur an der Resonanz des Publikums, des Gegenübers.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Information-Kommunikation:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Information-Kommunikation:Vortext:X', text =>
                                            
                 'Wirkung ist Resonanz', subline =>
                   '')),
@@ -126,7 +126,7 @@
                   array( 'text', array( text => array(
                     'Eine Wirkung und die ihr zugrunde liegende Information haben im Leben, in der Physik, etwas mit Resonanz zu tun;'."\n".
                     'damit, ob das Gegenüber in Schwingung versetzt, also angestoßen und angeregt wird.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Information-Kommunikation:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Information-Kommunikation:Vortext:X', text =>
                                            
                 'Lebewesen sind in Selbstresonanz', subline =>
                   '')),
@@ -142,7 +142,7 @@
             
                   array( 'text', array( text => array(
                     'Ich kann dies selber immer wieder intensiv erfahren.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Information-Kommunikation:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Information-Kommunikation:Vortext:X', text =>
                                            
                 'Information, Wissen, Bewusstsein und der Care-Prozess', subline =>
                   '')),
@@ -177,45 +177,26 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • XXX  >
+		    	<!  • X  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SpaLeb:Information-Kommunikation:XXX',
+            'OM:SpaLeb:Information-Kommunikation:X',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:SpaLeb:X', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '• XXX',
+                    '• X',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SpaLeb:XXX'),
+                      // array(  jump_name => 'OM:SpaLeb:X'),
                     )),
               )
           ); */ ?>
