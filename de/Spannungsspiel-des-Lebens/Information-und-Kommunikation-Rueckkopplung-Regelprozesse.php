@@ -18,7 +18,7 @@
                      // '• XXX',
                     ))),
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '\\bold{Bewusstsein und Regelprozesse:}',
+                    '\\bold{Bewusstsein und Regelprozesse}',
                     '• Information ist Wirkung:',
                     '– \\quote{Information muss erkannt sein, sonst wär es keine Information.} Warnke, Ulrich in \\jump[https://www.youtube.com/watch?time_continue=409&v=lVhFhR_lSdw]{}{Wie das Bewusstsein „Wirklichkeit schaltet" | Dr. Ulrich Warnke im Gespräch}, Sek. 9:50.',
                     '• \\jump[https://en.wikipedia.org/w/index.php?title=Integrated_information_theory&oldid=893290624]{}{Integrated Information Theory (IIT)}:',
@@ -31,6 +31,9 @@
                     '⋅ Diese Regelprozesse sind zwangsläufig miteinander verbunden und tragen so (elementares) Bewusstsein in Form von gegenseitiger Wahrnehmung und Reaktion aufeinander in sich.',
                     '– Bewusstsein wird, anders als in der IIT nicht vorausgesetzt, sondern ergibt sich aus dem Existenzprinzip dynamischer Strukturen und dem ihm zugrunde liegenden Djet-Neheh-Dualismus.',
                     '– Information: Im Spannungsspiel und in der FrQFT sind die von einer Struktur abgestrahlten Schwingungen zusammen mit der Interpretation des Empfängers Information. Auf Ebene der Wirkungsquanten wird jedes Wirkungsquant zu einer Informationseinheit, weil sowohl die Abstrahlung als auch der Empfang und die Interpretation nicht klarer definierbar sind. Siehe \\jumpname{OM:FrQFT:NeuePhysik:Heisenbergsche-Unschaerferelation}.',
+                    '\bold{Themenzentrierte Interaktion (TZI)}',
+                    '• Regelprozesse erzeugen über ihre Struktur beziehungsweise per Definition eine Dualität von Autonomie und Interdependenz. Dies deckt sich mit den Axiomen der TZI, siehe Wikipedia \jump[https://de.wikipedia.org/w/index.php?title=Themenzentrierte_Interaktion&oldid=243271229#Axiome]{}{Themenzentrierte Interaktion, Konzept der TZI, Axiome, 1. Autonomie}.',
+                    '• Der Care-Prozess beinhaltet bewertende Entscheidungen in zeitlicher Folge, die durch ihren schwingenden Wechsel mit den dazugehörigen Handlungen im Gang der Zeit-Spirale des Prozesses zur Fortentwicklung, also zu Wachstum, führen. Dieses Verständnis stimmt mit den Axiomen der TZI überein, siehe Wikipedia \jump[https://de.wikipedia.org/w/index.php?title=Themenzentrierte_Interaktion&oldid=243271229#Axiome]{}{Themenzentrierte Interaktion, Konzept der TZI, Axiome, 2. Wertschätzung}.',
                     ))),
                       
                       
