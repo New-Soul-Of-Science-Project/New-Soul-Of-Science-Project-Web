@@ -14,30 +14,11 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'jumplist',
-                    array(
-                      //array(  jump_name => 'XXX'),
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
+                  array( 'jumplist', array(
+                      // array( jump_name => 'X'),
                     )),
                 )
           ); ?>
@@ -48,7 +29,7 @@
 		    	<!  • Achtsamkeits- und Meditationstechniken  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:X-Notizen:MeditationAchtsamkeitTechniken',
-              'XXX', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
                     '(• \\quote{Die so genannte fokussierte Wahrnehmung beinhaltet, sich ausschließlich auf eine bestimmte Sinneswahrnehmung zu konzentrieren, etwa auf die eigene Atmung.} Siehe Spektrum Kompakt. Achtsamkeit und Empathie. 04.07.2016. Augenblick mal! (aus Gehirn und Geist, 11/2013) S. 4-12, hier S. 6.)',
@@ -58,30 +39,11 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'XXX'),
+                      // array( jump_name => 'X'),
                     )),
               )
           ); ?>
@@ -94,27 +56,8 @@
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       // array(  jump_name => 'XXX'),
