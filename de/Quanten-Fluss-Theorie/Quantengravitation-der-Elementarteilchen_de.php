@@ -267,7 +267,7 @@
                       
                   array( 'headline', array( jump_name => 'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:WQIUmgekehrtProport', text =>
                                            
-                'Wirkungsquanten-Impulse verringern ihre Intensität im Raum mit \\term{1/r}', subline =>
+                'Wirkungsquanten-Impulse verringern ihre Intensität im Raum mit \lm{ \frac{ 1 }{ r } }', subline =>
                   '')),
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '• Die gute Beschreibung, die an anderer Stelle entfernt wurde, hier einbauen:',

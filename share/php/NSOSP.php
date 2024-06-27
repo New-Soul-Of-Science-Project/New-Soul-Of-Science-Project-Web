@@ -738,8 +738,9 @@
                                                          text => 'Die Grafik zeigt die fraktale Struktur der Geraden der Superial-Zahlen.'."\n".
                                                                  'Untereinander dargestellt sind die verschachtelten Zahlengeraden, die jeweils darunter die unendlich kleine Umgebung'."\n".
                                                                  'um eine Zahl der darüber liegenden Ebene herum zeigt.'."\n".
-                                                                 'Auf der unendlich kleinen, umgebenden Zahlengeraden ist jeweils eine bestimmte Zahl angegeben, die wieder eine solche Umgebung hat.'."\n".
-                                                                 'Die hier dargestellte Zahl ist in der Stellenwertsystem-Schreibweise: \hidden{\term{2,6⋅s^^{2} + 0,5⋅s^^{1} – 1,4⋅s^^{0} + 3,5⋅s^^{-1}  = 〈2,6〉〈0,5〉〈–1,4〉.〈3,5〉}}\lm{ 〈2,6〉〈0,5〉〈–1,4〉.〈3,5〉 }');
+                                                                 'Auf der unendlich kleinen, umgebenden Zahlengeraden ist jeweils eine bestimmte Zahl angegeben, die wieder eine solche Umgebung hat. \\\\'."\n".
+                                                                 'Die hier dargestellte Zahl ist: \lm{ 2,\!6 s^{2} + 0,\!5 s^{1} - 1,\!4 + 3,\!5 s^{-1} } \\\\'."\n".
+                                                                 'In der Stellenwertsystem-Schreibweise: \lm{ *〈 2,\!6 *〉*〈 0,\!5 *〉*〈 -1,\!4 *〉.*〈 3,\!5 *〉 }');
   
   $SupNum_g_figure_ary_sGeomKonstruktTeilung   = array( fig_file_name => 'SN/s-geom-Konstrukt-Teilung-v02', fig_alt_description => 'Rhythmische Zerlegung der Eins durch natürliche Zahlen', width => '600px', height => '290px', name => 'set local!',
                                                          text => 'Die Grafik zeigt, wie durch die Projektion der Begrenzungspunkte aller regelmäßigen natürlichzahligen Teilstrecken auf die Einheitsstrecke,'."\n".
@@ -756,9 +757,9 @@
                                                          text => 'Die Darstellung zeigt die graviradiative Wirkung eines simplifizierten Leptonen-Strings auf sein Umfeld.'."\n".
                                                                  'Jedes einzelne Wirkungsquant des Strings erzeugt ständig neue, virtuelle Wirkungsquanten, die ringförmig um den und'."\n".
                                                                  'senkrecht zum String abgestrahlt werden.'."\n".
-                                                                 'Ihre Wirkung nimmt beim Abstand \term{r} zum String nur mit \term{1/r} ab.'."\n".
-                                                                 'Bei doppelter Energie und Masse \term{m__{ele}} des Strings halbiert sich sein Radius \term{r__{ele}} und vervierfacht sich seine Wirkungsquanten-Dichte.'."\n".
-                                                                 'Seine Graviradiation verdoppelt sich aber nur, weil die Länge \term{Δt__{vwq}} seiner abgestrahlten Impulse sich durch die doppelte Winkelgeschwindigkeit \term{ω__{ele}}'."\n".
+                                                                 'Ihre Wirkung nimmt beim Abstand \lm{ r } zum String nur mit \lm{ \frac{ 1 }{ r } } ab.'."\n".
+                                                                 'Bei doppelter Energie und Masse \lm{ m_{ele} } des Strings halbiert sich sein Radius \lm{ r_{ele} } und vervierfacht sich seine Wirkungsquanten-Dichte.'."\n".
+                                                                 'Seine Graviradiation verdoppelt sich aber nur, weil die Länge \lm{ \Delta t_{vwq} } seiner abgestrahlten Impulse sich durch die doppelte Winkelgeschwindigkeit \lm{ \omega_{ele} }'."\n".
                                                                  'halbiert.');
   
   
@@ -1497,7 +1498,7 @@
                     'OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:VereinfString' => array( headline_text => 'Vereinfachter Wirkungsquanten-String', headline_text_short => 'Vereinfachter Wirkungsquanten-String'),
                     'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:WarumImpulskegel' => array( headline_text => 'Warum Impulskegel?', headline_text_short => 'Warum Impulskegel?'),
-                    'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:WQIUmgekehrtProport' => array( headline_text => 'Wirkungsquanten-Impulse verringern ihre Intensität im Raum mit \term{1/r}', headline_text_short => 'Wirkungsquanten-Impulse verringern ihre Intensität im Raum mit \term{1/r}'),
+                    'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:WQIUmgekehrtProport' => array( headline_text => 'Wirkungsquanten-Impulse verringern ihre Intensität im Raum mit \lm{ \frac{ 1 }{ r } }', headline_text_short => 'Wirkungsquanten-Impulse verringern ihre Intensität im Raum mit \term{1/r}'),
                              
                   'OM:FrQFT:Quantengravitation:Lichtverlangsamung' => array( headline_text => 'Lichtverlangsamung', headline_text_short => 'Lichtverlangsamung'),
                     'OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
