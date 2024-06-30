@@ -20,7 +20,7 @@
                   array( 'text', array( text => array(
                     'Ich hab wohl schon lange oder gar schon immer ein sehr starkes Auge für Muster gehabt.'."\n",
                       'Als wir uns in der Schule im Matheunterricht intensiver mit der Exponentialrechnung befassten,'."\n".
-                    'viel mir recht schnell auf, dass diese in der Lage war aus der Operation „Mal“ die Operation „Plus“'."\n".
+                    'viel mir recht schnell auf, dass diese in der Lage war aus der Operation Mal „\lm{ \cdot }“ die Operation Plus „\lm{ + }“'."\n".
                     'zu machen und der Logarithmus umgekehrt:'."\n".
                     ''))),
                   array( 'equations',
@@ -30,7 +30,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Die Operation wird in gewisser Hinsicht um Eine geringer oder um Eine erhöht.'."\n",
-                      'Schließlich viel mir auch auf, dass es diesbezüglich Regeln gibt, die sogar Operator übergreifend gelten:'."\n".
+                      'Derart sensibilisiert viel mir schließlich auf, dass es diesbezüglich Regeln gibt, die sogar für mehr Operatoren übergreifend gelten:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.Vor', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -39,13 +39,13 @@
                     ))),
                   array( 'text', array( text => array(
                     'Und ich fragte mich:'."\n".
-                    'Können wir die Operatoren „Plus“, „Mal“ und „Hoch“ so nummerieren, dass wir ihre Nummern auch sinnvoll'."\n".
+                    'Können wir die Operatoren Plus „\lm{ + }“, Mal „\lm{ \cdot }“ und Hoch „↑“ so nummerieren, dass wir ihre Nummern auch sinnvoll'."\n".
                     'ins Kleinere und ins größere erweitern können?'."\n",
                       'Meine Neugier war erwacht und meine Reise ins Ungewisse offenbarte mir wichtige innere Erlebnisse,'."\n".
                     'die mich fortan prägten.'."\n".
-                    'Denn die Frage lies sich ganz eindeutig mit Ja beantworten und führte mich in Gedankenlandschaften'."\n".
-                    'und Gefühle, die ich so zuvor noch nie erkundet hatte.'."\n",
-                      'Mit dem, was ich dort in mir entdeckte, beschäftigen wir uns auf den folgenden Seiten.'."\n".
+                    'Denn die Frage lies sich ganz eindeutig mit Ja beantworten und führte mich in Gedankenwelten'."\n".
+                    'und Gefühle, die ich so zuvor noch nie erlebt hatte.'."\n",
+                      'Durch das, was ich dort – auch in mir – entdeckte, führe ich uns auf den folgenden Seiten.'."\n".
                     ''))),
                   /* array( 'headline', array( jump_name => 'OM:OT:Vorwort:Vortext:X', text =>
                                            
