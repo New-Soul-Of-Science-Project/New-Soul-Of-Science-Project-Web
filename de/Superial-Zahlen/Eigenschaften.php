@@ -495,7 +495,7 @@
                     'von Null bis ausschließlich Eins zählen.'."\n".
                     'Dies wären dann aber \lm{ 2 \cdot ω \cdot \s } Schritte, wenn \lm{ a } jeden Punkt von \lm{ \s }'."\n".
                     'adressieren würde.'."\n".
-                    'Angelehnt an Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen}'."\n".
+                    'Angelehnt an Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen}'."\n".
                     'können wir die Menge der Punktkoordinaten schreiben als:'."\n".
                     ''))),
                   array( 'equations',
