@@ -95,7 +95,7 @@
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{'."\n".
                     '(• Das Elektron hat ein Dipolmoment, welches es extrem rund erscheinen lässt. Gilt dies auch für die FrQFT? (Vgl. \\cite{Moskowitz:ZuRundFuerDieSupersymmetrie2013}.)) \\\\'."\n".
-                    '(• Beim Bullet-Cluster, ein Zusammenstoß zweier Galaxienhaufen, scheint Dunkle Materie in ihrer Bewegung über die sichtbare hinaus zu schießen. Gilt dies auch für das Phänomen der Dunklen Materie in der FrQFT? (Vgl. \\cite{wiki:BulletCluster2013}. \\\\ Vgl. \\cite{Angus:CanMONDTakeABullet2006}. \\\\ Vgl. \cite{Milgrom:BulletClusterOOJJ}. \\\\ \\color{*Bearb}{Vgl. YouTube, Dunkle Materie - Stand 2015 | Josef M. Gaßner.})) \\\\'."\n".
+                    '(• Beim Bullet-Cluster, ein Zusammenstoß zweier Galaxienhaufen, scheint Dunkle Materie in ihrer Bewegung über die sichtbare hinaus zu schießen. Gilt dies auch für das Phänomen der Dunklen Materie in der FrQFT?\footnote{\const{FrQFT_g_footnote_text_BulletCluster}}) \\\\'."\n".
                     '}'."\n"))),
                       
                   array( 'text', array( text => array(
