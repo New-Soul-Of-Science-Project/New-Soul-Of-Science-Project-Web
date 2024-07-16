@@ -58,7 +58,7 @@
                     'Bewegt sich ein Elementarteilchen näher an eine große Masse heran, wo es einer höheren Gravitation ausgesetzt ist, so verlangsamt sich seine Alterung wohingegen sich seine innere Frequenz beschleunigt.'."\n".
                     'Die steigende Frequenz geht mit der steigenden Energie bei Annäherung an die anziehende Masse einher, so wie es im Pound-Rebka-Snider-Experiment\\footnote{\\const{FrQFT_g_footnote_text_PoundRebka}}'."\n".
                     'und verwandten Experimenten beobachtet wird.'."\n".
-                    'Gemeinhin – also aus Perspektive der klasischen Physik – würde man eine Verringerung der Schwingungsfrequenz erwarten, wenn die Zeit langsamer läuft. \\\\'."\n".
+                    'Gemeinhin – also aus Perspektive der klassischen Physik – würde man eine Verringerung der Schwingungsfrequenz erwarten, wenn die Zeit langsamer läuft. \\\\'."\n".
                     '• Das Problem berührt genauso auch den scheinbaren Widerspruch zwischen der Alterung und der inneren Frequenz der Elementarteilchen.\\footnote{\\cite{Giulini:EinsteinImQuantentest2013}, S. 63-64.}'."\n".
                     'Wird die Alterung – also die variable Zeit der Allgemeinen Relativitätstheorie – durch eine steigende Gravitation verlangsamt, dann erhöht sich gleichzeitig die'."\n".
                     'innere Frequenz eines Elementarteilchens, weil seine Energie ansteigt.'."\n".
@@ -73,7 +73,7 @@
                     '• Aber auch die Quantenphysik benötigt eine absolute, unveränderliche Zeit, zum Beispiel um die Verschränkungen der Elementarteilchen koordinieren zu können.'."\n".
                     'Die Allgemeine Relativitätstheorie kommt hingegen nicht ohne einen variablen Zeitbegriff aus, je nach am Ort im Raum wirkender Gravitation, deshalb hier zur Abgrenzung Alterung genannt.'."\n".
                     'Dieser scheinbare Gegensatz spiegelt sich im \\jump{OM:FrQFT:NotwenVereinheit:Problem-der-Zeit}{›Problem der Zeit‹} wider, in dem zum Ausdruck gebracht wird, dass sich die'."\n".
-                    'Hauptheorien der heutigen Physik, die Quantentheorie\\footnote{\\const{FrQFT_g_footnote_text_Quantenphysik}} und die Allgemeine Relativitätstheorie, aufgrund ihres unterschiedlichen Verständnisses der Zeit nicht miteinander'."\n".
+                    'Haupttheorien der heutigen Physik, die Quantentheorie\\footnote{\\const{FrQFT_g_footnote_text_Quantenphysik}} und die Allgemeine Relativitätstheorie, aufgrund ihres unterschiedlichen Verständnisses der Zeit nicht miteinander'."\n".
                     'verträglich sind. \\\\'."\n".
                     '}'."\n"))),
                       
@@ -133,10 +133,10 @@
 		    	<!  • Problem der Feuerwand  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-Feuerwand',
-              'XXX', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:NotwenVereinheit:XXX', type => 'back'),
+                      //array(  jump_name => 'OM:FrQFT:NotwenVereinheit:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -145,16 +145,11 @@
                     '}'."\n"))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:NotwenVereinheit:XXX'),
+                      //array(  jump_name => 'OM:FrQFT:NotwenVereinheit:X'),
                     )),
               )
           ); ?>
@@ -166,7 +161,7 @@
               'Die bisherigen Erklärungsmodelle liefern keine eindeutig passenden Erklärungen aller beobachteten Facetten dieses Phänomens', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:NotwenVereinheit:XXX', type => 'back'),
+                      //array(  jump_name => 'OM:FrQFT:NotwenVereinheit:X', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -181,16 +176,12 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
                     'Gravitation ein emergentes Phänomen'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'XXX'),
+                      //array(  jump_name => 'X'),
                     )),
               )
           ); ?>
@@ -265,18 +256,12 @@
                     ))),
                       
                   array( 'normal',
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'Dunkle Energie\\footnote{\\const{FrQFT_g_footnote_text_DunkleEnergie}}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Dunkle Energie\\footnote{\\const{FrQFT_g_footnote_text_DunkleEnergie}}'."\n".
+                    ''),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'XXX'),
+                      //array(  jump_name => 'X'),
                     )),
               )
           ); ?>
@@ -315,19 +300,19 @@
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:NotwenVereinheit:XXX', type => 'back'),
+                      //array(  jump_name => 'OM:FrQFT:NotwenVereinheit:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{'."\n".
-                    '• Ein aufsführlicher Artikel über die Gluonen und die Probleme der QCD findet sich in \\cite{Ent:DerKlebstoffDerWelt:2015}. Die FrQFT kann wichtige dieser Fragen, wie zum Confinement und der Gluonen-Energie, zumindesten qualitativ beantworten.'."\n".
+                    '• Ein ausführlicher Artikel über die Gluonen und die Probleme der QCD findet sich in \\cite{Ent:DerKlebstoffDerWelt:2015}. Die FrQFT kann wichtige dieser Fragen, wie zum Confinement und der Gluonen-Energie, zumindesten qualitativ beantworten.'."\n".
                     '}'."\n"))),
                       
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n"))),
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:NotwenVereinheit:XXX'),
+                      //array(  jump_name => 'OM:FrQFT:NotwenVereinheit:X'),
                     )),
               )
           ); ?>
@@ -343,32 +328,16 @@
                     '• Siehe: Hossenfelder, Sabine. \\jump[http://backreaction.blogspot.com/2017/06/if-tensions-in-cosmological-data-are.html]{}{If tensions in cosmological data are not measurement problems, they probably mean dark energy changes}.',
                     ))),
                       
-                  array( 'normal',
+                  array( 'text', array( text => array(
                     '… es ist erstrebenswert, dass sich die Werte der Naturkonstanten aus strukturellen Zusammenhängen ergeben.\\footnote{\\const{FrQFT_g_footnote_text_ProblemDerNaturkonstanten}}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"),
-                  array( 'normal',
-                    'Natürlichkeitsproblem\\footnote{\\const{FrQFT_g_footnote_text_Natuerlichkeit}}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"),
-                  array( 'normal',
-                    '\\color{*Bearb}{In Arbeit …}'."\n"),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Natürlichkeitsproblem\\footnote{\\const{FrQFT_g_footnote_text_Natuerlichkeit}}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
                   array( 'jumplist',
                     array(
-                      //array(  jump_name => 'XXX'),
+                      //array(  jump_name => 'X'),
                     )),
               )
           ); ?>
