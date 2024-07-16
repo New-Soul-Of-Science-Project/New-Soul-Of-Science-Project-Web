@@ -116,13 +116,8 @@
                     '}'."\n"))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                     
                   /*array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Gravitation'),
