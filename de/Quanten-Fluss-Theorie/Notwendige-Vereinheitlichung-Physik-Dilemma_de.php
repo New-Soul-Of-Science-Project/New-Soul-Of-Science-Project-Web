@@ -9,19 +9,15 @@
       <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:FrQFT:NeuePhysik:Ein-Prinzip-fuer-Alles'); ?>
 
 	
-		    	<!Ideen:>
-		    	<!  • XXX  >
-
-
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '(\\bold{Aktuelle Fachdiskussion:})',
-                    '(• Das starke CP-Problem scheint etwas sehr zentrales zu sein: Siehe Ordner ›starkes CP-Problem‹.)',
-                    '(• Probleme in der heutigen Physik noch einmal aktuell beschrieben: \\cite{Hossenfelder:DieQuantengravitationAufDemWegZurWissenschaft:2016}.)',
-                    '(• Problem der fehlenden Supersymmetrie.\\footnote[*Bearb]{Sekundärliteratur: \\\\ Vgl. \\cite{Wolchover:NeuePhysikOhneNeueTeilchen:2016}.})',
-                    '(• Problem des Überschusses der Materie gegenüber der Antimaterie.\\footnote[*Bearb]{Sekundärliteratur: \\\\ Vgl. \\cite{Fischer:NeuerUnterschiedZwischenMaterieUndAntimaterie:2017}.})',
-                    '(• Hinweis auf neue Physik? Mögliche Verletzung der Leptonen-Universalität: Beim Zerfall von B^{0}-Mesonen entstehen Myonen möglicherweise etwas seltener als Elektronen.\\footnote[*Bearb]{Sekundärliteratur: \\\\ Vgl. \\cite{Gast:HinweisAufNeuePhysik:2017}.})',
+                    '\\bold{Aktuelle Fachdiskussion}',
+                    '• Das starke CP-Problem scheint etwas sehr zentrales zu sein: Siehe Ordner ›starkes CP-Problem‹.',
+                    '• Probleme in der heutigen Physik noch einmal aktuell beschrieben: \\cite{Hossenfelder:DieQuantengravitationAufDemWegZurWissenschaft:2016}.',
+                    '• Problem der fehlenden Supersymmetrie.\\footnote[*Bearb]{Sekundärliteratur: \\\\ Vgl. \\cite{Wolchover:NeuePhysikOhneNeueTeilchen:2016}.}',
+                    '• Problem des Überschusses der Materie gegenüber der Antimaterie.\\footnote[*Bearb]{Sekundärliteratur: \\\\ Vgl. \\cite{Fischer:NeuerUnterschiedZwischenMaterieUndAntimaterie:2017}.}',
+                    '• Hinweis auf neue Physik? Mögliche Verletzung der Leptonen-Universalität: Beim Zerfall von \lm{ B^{0} }-Mesonen entstehen Myonen möglicherweise etwas seltener als Elektronen.\\footnote[*Bearb]{Sekundärliteratur: \\\\ Vgl. \\cite{Gast:HinweisAufNeuePhysik:2017}.}',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -49,32 +45,32 @@
 
 
 
-		    	<!  • Problem der Zeit:  >
+		    	<!  • Problem der Zeit  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-Zeit',
               'Ohne eine Lösung des ›Problems der Zeit‹ können Quantenmechanik und Allgemeine Relativitätstheorie nicht vereinheitlicht werden', 'Sc_f_Paragraph',
                 array(
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{'."\n".
-                    '(• Darauf hinweisen, dass mit dem ›Problem der Zeit‹ auch der scheinbare Widerspruch zwischen der Zeit und der inneren Frequenz der Elementarteilchen verbunden ist …\\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, S. 64.) \\\\'."\n".
-                    '(• Eine andere Perspektive auf das ›Problems der Zeit‹ besteht in der Betrachtung der scheinbar widersprüchlichen Veränderungen von Alterung und innerer Frequenz der Elementarteilchen'."\n".
+                    '• Darauf hinweisen, dass mit dem ›Problem der Zeit‹ auch der scheinbare Widerspruch zwischen der Zeit und der inneren Frequenz der Elementarteilchen verbunden ist …\\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, S. 64.) \\\\'."\n".
+                    '• Eine andere Perspektive auf das ›Problems der Zeit‹ besteht in der Betrachtung der scheinbar widersprüchlichen Veränderungen von Alterung und innerer Frequenz der Elementarteilchen'."\n".
                     'bei ihrer Bewegung durch ein variables Gravitationsfeld.\\footnote{\\cite{Giulini:EinsteinImQuantentest2013}, S. 63-64.}'."\n".
                     'Bewegt sich ein Elementarteilchen näher an eine große Masse heran, wo es einer höheren Gravitation ausgesetzt ist, so verlangsamt sich seine Alterung wohingegen sich seine innere Frequenz beschleunigt.'."\n".
                     'Die steigende Frequenz geht mit der steigenden Energie bei Annäherung an die anziehende Masse einher, so wie es im Pound-Rebka-Snider-Experiment\\footnote{\\const{FrQFT_g_footnote_text_PoundRebka}}'."\n".
                     'und verwandten Experimenten beobachtet wird.'."\n".
                     'Gemeinhin – also aus Perspektive der klasischen Physik – würde man eine Verringerung der Schwingungsfrequenz erwarten, wenn die Zeit langsamer läuft.) \\\\'."\n".
-                    '(• Das Problem berührt genauso auch den scheinbaren Widerspruch zwischen der Alterung und der inneren Frequenz der Elementarteilchen.\\footnote{\\cite{Giulini:EinsteinImQuantentest2013}, S. 63-64.}'."\n".
+                    '• Das Problem berührt genauso auch den scheinbaren Widerspruch zwischen der Alterung und der inneren Frequenz der Elementarteilchen.\\footnote{\\cite{Giulini:EinsteinImQuantentest2013}, S. 63-64.}'."\n".
                     'Wird die Alterung – also die variable Zeit der Allgemeinen Relativitätstheorie – durch eine steigende Gravitation verlangsamt, dann erhöht sich gleichzeitig die'."\n".
                     'innere Frequenz eines Elementarteilchens, weil seine Energie ansteigt.'."\n".
                     'Dabei würde man von einer klassischen Schwingung bei Verlangsamung der Zeit erwarten, dass sie in Zeitlupe abläuft, sich folglich auch verlangsamt.'."\n".
                     'Es handelt sich demnach offensichtlich nicht um eine klassische Schwingung.'."\n".
                     'Genau diese Eigenschaft der Elementarteilchen und des Vakuums unterscheidet die Quantenphysik von der klassischen Physik.'."\n".
                     'Grundsätzlich scheinen sich die Physiker derzeit darüber uneins, wie die Frequenz von Elementarteilchen mit der Alterungszeit im Gravitationsfeld genau im Zusammenhang steht.\\footnote{\\cite{Giulini:EinsteinImQuantentest2013}.}) \\\\'."\n".
-                    '(• Warum muss zwischen diesen beiden Arten von Zeit unterschieden werden?'."\n".
+                    '• Warum muss zwischen diesen beiden Arten von Zeit unterschieden werden?'."\n".
                     'Die Physik kennt einen Zustand in dem die Alterung ganz oder nahezu zum Stillstand kommt, die Schwingungen der Quantenphysik\\footnote{\\const{FrQFT_g_footnote_text_Quantenphysik}} aber weiter bestehen.\\color{*Bearb}{(Verweis)}'."\n".
                     'Dies ist auf dem Ereignishorizont eines \\jump{OM:FrQFT:Gravitation:Schwarze-Loecher}{Schwarzen Lochs} der Fall.'."\n".
                     'Um dort und auch innerhalb eines Schwarzen Lochs Physik beschreiben zu können, ist es notwendig zwischen Zeit und Alterung zu unterscheiden.) \\\\'."\n".
-                    '(• Aber auch die Quantenphysik benötigt eine absolute, unveränderliche Zeit, zum Beispiel um die Verschränkungen der Elementarteilchen koordinieren zu können.'."\n".
+                    '• Aber auch die Quantenphysik benötigt eine absolute, unveränderliche Zeit, zum Beispiel um die Verschränkungen der Elementarteilchen koordinieren zu können.'."\n".
                     'Die Allgemeine Relativitätstheorie kommt hingegen nicht ohne einen variablen Zeitbegriff aus, je nach am Ort im Raum wirkender Gravitation, deshalb hier zur Abgrenzung Alterung genannt.'."\n".
                     'Dieser scheinbare Gegensatz spiegelt sich im \\jump{OM:FrQFT:NotwenVereinheit:Problem-der-Zeit}{›Problem der Zeit‹} wider, in dem zum Ausdruck gebracht wird, dass sich die'."\n".
                     'Hauptheorien der heutigen Physik, die Quantentheorie\\footnote{\\const{FrQFT_g_footnote_text_Quantenphysik}} und die Allgemeine Relativitätstheorie, aufgrund ihres unterschiedlichen Verständnisses der Zeit nicht miteinander'."\n".
@@ -109,14 +105,14 @@
           ); ?>
           
 
-		    	<!  • Problem der Quantengravitation:  >
+		    	<!  • Problem der Quantengravitation  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-Quantengravitation',
               'XXX', 'Sc_f_Paragraph',
                 array(
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{'."\n".
-                    '(• Diskussion zum Problem der Quantengravitation.\\footnote[*Bearb]{Vgl. \\cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, Kap. 5 Ausblick, S. 14-15. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, S. 62-64.}) \\\\'."\n".
+                    '• Diskussion zum Problem der Quantengravitation.\\footnote[*Bearb]{Vgl. \\cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, Kap. 5 Ausblick, S. 14-15. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, S. 62-64.}) \\\\'."\n".
                     '}'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -139,7 +135,7 @@
           ); ?>
 
           
-		    	<!  • Problem der Feuerwand:  >
+		    	<!  • Problem der Feuerwand  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-Feuerwand',
               'XXX', 'Sc_f_Paragraph',
@@ -150,7 +146,7 @@
                       
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{'."\n".
-                    '(• Neue Analysen der Situation am Ereignishorizont eines Schwarzen Lochs aus Sicht der Quantenphysik legen nahe, dass dort eine „Feuerwand“ existiert.\\footnote[*Bearb]{\\const{FrQFT_g_footnote_text_EreignHoriFeuerwand}} Dies erzeugt das Problem, dass dort Information verloren geht, was die Quantenphysik verbietet. Die Lösung dieses Problems sollte danach zur Vereinheitlichung der Physik führen.\\footnote[*Bearb]{Vgl. \\cite{Polchinski:FeuerwandAmHorizont:2015}, S. 36, Kasten.} \\quote{Die Theoretiker müssen ihre grundlegenden Annahmen über das Universum sowie die Natur von Raum und Zeit überdenken.}\\footnote[*Bearb]{\\cite{Polchinski:FeuerwandAmHorizont:2015}, S. 39.} Das Szenario der Feuerwand am Ereignishorizont ist dem Szenario der hier entwickelten fraktalen Quanten-Fluss-Theorie sehr ähnlich.) \\\\'."\n".
+                    '• Neue Analysen der Situation am Ereignishorizont eines Schwarzen Lochs aus Sicht der Quantenphysik legen nahe, dass dort eine „Feuerwand“ existiert.\\footnote[*Bearb]{\\const{FrQFT_g_footnote_text_EreignHoriFeuerwand}} Dies erzeugt das Problem, dass dort Information verloren geht, was die Quantenphysik verbietet. Die Lösung dieses Problems sollte danach zur Vereinheitlichung der Physik führen.\\footnote[*Bearb]{Vgl. \\cite{Polchinski:FeuerwandAmHorizont:2015}, S. 36, Kasten.} \\quote{Die Theoretiker müssen ihre grundlegenden Annahmen über das Universum sowie die Natur von Raum und Zeit überdenken.}\\footnote[*Bearb]{\\cite{Polchinski:FeuerwandAmHorizont:2015}, S. 39.} Das Szenario der Feuerwand am Ereignishorizont ist dem Szenario der hier entwickelten fraktalen Quanten-Fluss-Theorie sehr ähnlich.) \\\\'."\n".
                     '}'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -169,7 +165,7 @@
           ); ?>
 
           
-		    	<!  • Problem des Phänomens der Dunklen Materie:  >
+		    	<!  • Problem des Phänomens der Dunklen Materie  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-Dunklen-Materie',
               'Die bisherigen Erklärungsmodelle liefern keine eindeutig passenden Erklärungen aller beobachteten Facetten dieses Phänomens', 'Sc_f_Paragraph',
@@ -179,14 +175,14 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '(• Die Idee einer Supraflüssigkeit aus Dunkler Materie ist meiner Idee der variierenden Vakuumenergiedichte sehr ähnlich.\\footnote[*Bearb]{Vgl. \\cite{Ouellette:IstDieDunkleMaterieEineSuprafluessigkeit:2017}.})',
-                    '(• Schwarze Löcher, die beim Urknall erzeugt wurden, könnten einen Teil der Dunklen Materie ausmachen.\\footnote[*Bearb]{Vgl. \\cite{Garcia-Belido:DieSchwarzenLoecherDesUrknalls:2017}.})',
-                    '(• Eine neue Theorie von Erik Verlinde unterstützt im Prinzip die MOND-Theorie und ist meinem Ergebnis verblüffend ähnlich.\\footnote[*Bearb]{Vgl. \\cite{Verlinde:EmergentGravityAndTheDarkUniverse:2016}. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Wolchover:DerAnfangVomEndeDunklerMaterie:2017}.} \\quote{Dunkle Materie, sagt Verlinde, sei nicht eine Ansammlung unsichtbarer Teilchen, sondern ›ein Wechselspiel zwischen gewöhnlicher Materie und Dunkler Energie‹.}\\footnote[*Bearb]{\\cite{Wolchover:DerAnfangVomEndeDunklerMaterie:2017}, S. 29.} Danach ist die Gravitation eine emergentes Phänomene, wie in der hier beschriebenen FrQFT.)',
-                    '(• Dunkle Materie kann nicht gefunden werden.\\footnote[*Bearb]{Sekundärliteratur: \\\\ Vgl. \\cite{Wolchover:NeuePhysikOhneNeueTeilchen:2016}.})',
-                    '(• Der Gammastrahlenhintergrund liefert keine Anzeichen über die Zerstrahlung bzw. Annihilation von Dunkler Materie und ihrer Antimaterie.\\footnote[*Bearb]{Vgl. \\cite{Fornasa:TheAngularPowerSpectrumOfTheDiffuseGammaRayEmissionAs:2016}. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Fischer:KeineDunkleMaterieEntdeckt:2016}.})',
-                    '(• „Das Problem der fehlenden Satelliten“: Es sollten bei CDM viele Begleitgalaxien von Kerngalaxien entstehen. Dies wird nicht beobachtet. Kleine CDM Halos verschmelzen in den Simulationen zu schnell zu großen Halos, als Beobachtungen es nahelegen. Mit CDM sollten die Zwerggalaxien deutlich älter sein, als großen, man beobachtet aber das Gegenteil.\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 24-26, Bild S. 24. \\\\ \\color{*Bearb}{(Weitere Verweise)}})',
-                    '(• Die Anordnung der Satellitengalaxien und ihre Bewegung um unsere Milchstraße sollte laut CMD anders aussehen als in der beobachteten Scheibenanordnung und fast komplett die selbe Rotationsrichtung haben.\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 26-28. \\\\ \\color{*Bearb}{(Weitere Verweise)}})',
-                    '(• Paradigmenwechsel der ART: ART ist so nicht zu halten.\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 30-31. \\\\ \\color{*Bearb}{(Weitere Verweise)}})',
+                    '• Die Idee einer Supraflüssigkeit aus Dunkler Materie ist meiner Idee der variierenden Vakuumenergiedichte sehr ähnlich.\\footnote[*Bearb]{Vgl. \\cite{Ouellette:IstDieDunkleMaterieEineSuprafluessigkeit:2017}.}',
+                    '• Schwarze Löcher, die beim Urknall erzeugt wurden, könnten einen Teil der Dunklen Materie ausmachen.\\footnote[*Bearb]{Vgl. \\cite{Garcia-Belido:DieSchwarzenLoecherDesUrknalls:2017}.}',
+                    '• Eine neue Theorie von Erik Verlinde unterstützt im Prinzip die MOND-Theorie und ist meinem Ergebnis verblüffend ähnlich.\\footnote[*Bearb]{Vgl. \\cite{Verlinde:EmergentGravityAndTheDarkUniverse:2016}. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Wolchover:DerAnfangVomEndeDunklerMaterie:2017}.} \\quote{Dunkle Materie, sagt Verlinde, sei nicht eine Ansammlung unsichtbarer Teilchen, sondern ›ein Wechselspiel zwischen gewöhnlicher Materie und Dunkler Energie‹.}\\footnote[*Bearb]{\\cite{Wolchover:DerAnfangVomEndeDunklerMaterie:2017}, S. 29.} Danach ist die Gravitation eine emergentes Phänomene, wie in der hier beschriebenen FrQFT.',
+                    '• Dunkle Materie kann nicht gefunden werden.\\footnote[*Bearb]{Sekundärliteratur: \\\\ Vgl. \\cite{Wolchover:NeuePhysikOhneNeueTeilchen:2016}.}',
+                    '• Der Gammastrahlenhintergrund liefert keine Anzeichen über die Zerstrahlung bzw. Annihilation von Dunkler Materie und ihrer Antimaterie.\\footnote[*Bearb]{Vgl. \\cite{Fornasa:TheAngularPowerSpectrumOfTheDiffuseGammaRayEmissionAs:2016}. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Fischer:KeineDunkleMaterieEntdeckt:2016}.}',
+                    '• „Das Problem der fehlenden Satelliten“: Es sollten bei CDM viele Begleitgalaxien von Kerngalaxien entstehen. Dies wird nicht beobachtet. Kleine CDM Halos verschmelzen in den Simulationen zu schnell zu großen Halos, als Beobachtungen es nahelegen. Mit CDM sollten die Zwerggalaxien deutlich älter sein, als großen, man beobachtet aber das Gegenteil.\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 24-26, Bild S. 24. \\\\ \\color{*Bearb}{(Weitere Verweise)}}',
+                    '• Die Anordnung der Satellitengalaxien und ihre Bewegung um unsere Milchstraße sollte laut CMD anders aussehen als in der beobachteten Scheibenanordnung und fast komplett die selbe Rotationsrichtung haben.\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 26-28. \\\\ \\color{*Bearb}{(Weitere Verweise)}}',
+                    '• Paradigmenwechsel der ART: ART ist so nicht zu halten.\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 30-31. \\\\ \\color{*Bearb}{(Weitere Verweise)}}',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -205,14 +201,14 @@
           ); ?>
 
           
-		    	<!  • Problem der kosmologischen Konstanten:  >
+		    	<!  • Problem der kosmologischen Konstanten  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-kosmologischen-Konstanten',
               'Warum erscheint unser Kosmos nicht gekrümmt, sondern im Durchschnitt flach', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '(Aktueller fachlicher Diskurs:)',
-                    '(• Schwarz, Dominik J. - Streit um Hubbles Erbe - 20180620 - Spektrum der Wissenschaft: \\url{https://www.spektrum.de/magazin/streit-um-hubbles-erbe/1567830})',
+                    '\bold{Aktueller fachlicher Diskurs}',
+                    '• Schwarz, Dominik J. - Streit um Hubbles Erbe - 20180620 - Spektrum der Wissenschaft: \\url{https://www.spektrum.de/magazin/streit-um-hubbles-erbe/1567830}',
                     ))),
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{(Diese Aussage muss entschärft und verfeinert werden.)}'."\n"))),
@@ -260,17 +256,17 @@
           ); ?>
 
           
-		    	<!  • Problem der Dunklen Energie:  >
+		    	<!  • Problem der Dunklen Energie  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-Dunklen-Energie',
               'Es scheint völlig unklar, welcher Natur diese mysteriöse Energie ist', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '(• Ein dynamisches Phänomen aus der Thermodynamik könnte hier eine Rolle spielen. Nimmt man den Behälter um ein Gas mit einer Themperatur größer Null weg, so verteilt sich das Gas schlicht im Raum und dehnt sich so einfach aus. Ähnlich verhält es sich mit Lichtphotonen, Elapsonen oder Wirkungsquanten, die sich frei im Raum bewegen können. So würden sich dann nach der FrQFT auch eventuell die im Verhälnis zum Umfeld verdichteten Bestandteile eines Kosmos innerhalb eines Schwarzen Lochs im Raum verteilen oder in den Eregnishorizont wandern. Dies hätte im Schwarzen Loch, also in dem in ihm enthaltenen Kosmos, den Eindruck einer Expansion zur Folge.)',
-                    '(• Kleine CDM Halos verschmelzen in den Simulationen zu schnell zu großen Halos, als Beobachtungen es nahelegen. Dem entgegen zu wirken soll einer der Gründe zur Einführung der Dunklen Energie gewesen sein.\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 24. \\\\ \\color{*Bearb}{(Weitere Verweise)}})',
-                    '(• Rolle der Energieerhaltung im Kosmos …\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 24. \\\\ \\color{*Bearb}{(Weitere Verweise)}})',
-                    '(Aktuelle fachliche Diskussion:)',
-                    '(• Die großen leeren Räume im Kosmos, die Supervoids, werden gesucht und untersucht. Die Voids verändern die Mikrowellenhintergrundstrahlung und machen sich dadurch bemerkbar. Diese Veränderung sagt etwas über die Expansion des Kosmos und damit etwas über die Dunkle Energie.\\footnote[*Bearb]{Sekundärliteratur: \\\\ Vgl. \\cite{Szapudi:DieGrosseLeere:2017}.})',
+                    '• Ein dynamisches Phänomen aus der Thermodynamik könnte hier eine Rolle spielen. Nimmt man den Behälter um ein Gas mit einer Themperatur größer Null weg, so verteilt sich das Gas schlicht im Raum und dehnt sich so einfach aus. Ähnlich verhält es sich mit Lichtphotonen, Elapsonen oder Wirkungsquanten, die sich frei im Raum bewegen können. So würden sich dann nach der FrQFT auch eventuell die im Verhältnis zum Umfeld verdichteten Bestandteile eines Kosmos innerhalb eines Schwarzen Lochs im Raum verteilen oder in den Eregnishorizont wandern. Dies hätte im Schwarzen Loch, also in dem in ihm enthaltenen Kosmos, den Eindruck einer Expansion zur Folge.',
+                    '• Kleine CDM Halos verschmelzen in den Simulationen zu schnell zu großen Halos, als Beobachtungen es nahelegen. Dem entgegen zu wirken soll einer der Gründe zur Einführung der Dunklen Energie gewesen sein.\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 24. \\\\ \\color{*Bearb}{(Weitere Verweise)}}',
+                    '• Rolle der Energieerhaltung im Kosmos …\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 24. \\\\ \\color{*Bearb}{(Weitere Verweise)}}',
+                    '\bold{Aktueller fachlicher Diskurs}',
+                    '• Die großen leeren Räume im Kosmos, die Supervoids, werden gesucht und untersucht. Die Voids verändern die Mikrowellenhintergrundstrahlung und machen sich dadurch bemerkbar. Diese Veränderung sagt etwas über die Expansion des Kosmos und damit etwas über die Dunkle Energie.\\footnote[*Bearb]{Sekundärliteratur: \\\\ Vgl. \\cite{Szapudi:DieGrosseLeere:2017}.}',
                     ))),
                       
                   array( 'normal',
@@ -291,7 +287,7 @@
           ); ?>
 
           
-		    	<!  • Problem der Singularitäten:  >
+		    	<!  • Problem der Singularitäten  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-Singularitaeten',
               'Punktförmige Elementarteilchen, Schwarze Löcher, der Urknall und Co. \\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
@@ -318,7 +314,7 @@
           ); ?>
 
           
-		    	<!  • Probleme der Quantenchromodynamik:  >
+		    	<!  • Probleme der Quantenchromodynamik  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Probleme-der-Quantenchromodynamik',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
@@ -342,7 +338,7 @@
           ); ?>
 
           
-		    	<!  • Problem der Naturkonstanten:  >
+		    	<!  • Problem der Naturkonstanten  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-Naturkonstanten',
               'Die Werte der Naturkonstanten erscheinen recht willkürlich', 'Sc_f_Paragraph',
