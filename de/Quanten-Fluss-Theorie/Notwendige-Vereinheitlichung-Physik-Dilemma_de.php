@@ -52,29 +52,29 @@
                 array(
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{'."\n".
-                    '• Darauf hinweisen, dass mit dem ›Problem der Zeit‹ auch der scheinbare Widerspruch zwischen der Zeit und der inneren Frequenz der Elementarteilchen verbunden ist …\\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, S. 64.) \\\\'."\n".
+                    '• Darauf hinweisen, dass mit dem ›Problem der Zeit‹ auch der scheinbare Widerspruch zwischen der Zeit und der inneren Frequenz der Elementarteilchen verbunden ist …\\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, S. 64. \\\\'."\n".
                     '• Eine andere Perspektive auf das ›Problems der Zeit‹ besteht in der Betrachtung der scheinbar widersprüchlichen Veränderungen von Alterung und innerer Frequenz der Elementarteilchen'."\n".
                     'bei ihrer Bewegung durch ein variables Gravitationsfeld.\\footnote{\\cite{Giulini:EinsteinImQuantentest2013}, S. 63-64.}'."\n".
                     'Bewegt sich ein Elementarteilchen näher an eine große Masse heran, wo es einer höheren Gravitation ausgesetzt ist, so verlangsamt sich seine Alterung wohingegen sich seine innere Frequenz beschleunigt.'."\n".
                     'Die steigende Frequenz geht mit der steigenden Energie bei Annäherung an die anziehende Masse einher, so wie es im Pound-Rebka-Snider-Experiment\\footnote{\\const{FrQFT_g_footnote_text_PoundRebka}}'."\n".
                     'und verwandten Experimenten beobachtet wird.'."\n".
-                    'Gemeinhin – also aus Perspektive der klasischen Physik – würde man eine Verringerung der Schwingungsfrequenz erwarten, wenn die Zeit langsamer läuft.) \\\\'."\n".
+                    'Gemeinhin – also aus Perspektive der klasischen Physik – würde man eine Verringerung der Schwingungsfrequenz erwarten, wenn die Zeit langsamer läuft. \\\\'."\n".
                     '• Das Problem berührt genauso auch den scheinbaren Widerspruch zwischen der Alterung und der inneren Frequenz der Elementarteilchen.\\footnote{\\cite{Giulini:EinsteinImQuantentest2013}, S. 63-64.}'."\n".
                     'Wird die Alterung – also die variable Zeit der Allgemeinen Relativitätstheorie – durch eine steigende Gravitation verlangsamt, dann erhöht sich gleichzeitig die'."\n".
                     'innere Frequenz eines Elementarteilchens, weil seine Energie ansteigt.'."\n".
                     'Dabei würde man von einer klassischen Schwingung bei Verlangsamung der Zeit erwarten, dass sie in Zeitlupe abläuft, sich folglich auch verlangsamt.'."\n".
                     'Es handelt sich demnach offensichtlich nicht um eine klassische Schwingung.'."\n".
                     'Genau diese Eigenschaft der Elementarteilchen und des Vakuums unterscheidet die Quantenphysik von der klassischen Physik.'."\n".
-                    'Grundsätzlich scheinen sich die Physiker derzeit darüber uneins, wie die Frequenz von Elementarteilchen mit der Alterungszeit im Gravitationsfeld genau im Zusammenhang steht.\\footnote{\\cite{Giulini:EinsteinImQuantentest2013}.}) \\\\'."\n".
+                    'Grundsätzlich scheinen sich die Physiker derzeit darüber uneins, wie die Frequenz von Elementarteilchen mit der Alterungszeit im Gravitationsfeld genau im Zusammenhang steht.\\footnote{\\cite{Giulini:EinsteinImQuantentest2013}.} \\\\'."\n".
                     '• Warum muss zwischen diesen beiden Arten von Zeit unterschieden werden?'."\n".
                     'Die Physik kennt einen Zustand in dem die Alterung ganz oder nahezu zum Stillstand kommt, die Schwingungen der Quantenphysik\\footnote{\\const{FrQFT_g_footnote_text_Quantenphysik}} aber weiter bestehen.\\color{*Bearb}{(Verweis)}'."\n".
                     'Dies ist auf dem Ereignishorizont eines \\jump{OM:FrQFT:Gravitation:Schwarze-Loecher}{Schwarzen Lochs} der Fall.'."\n".
-                    'Um dort und auch innerhalb eines Schwarzen Lochs Physik beschreiben zu können, ist es notwendig zwischen Zeit und Alterung zu unterscheiden.) \\\\'."\n".
+                    'Um dort und auch innerhalb eines Schwarzen Lochs Physik beschreiben zu können, ist es notwendig zwischen Zeit und Alterung zu unterscheiden. \\\\'."\n".
                     '• Aber auch die Quantenphysik benötigt eine absolute, unveränderliche Zeit, zum Beispiel um die Verschränkungen der Elementarteilchen koordinieren zu können.'."\n".
                     'Die Allgemeine Relativitätstheorie kommt hingegen nicht ohne einen variablen Zeitbegriff aus, je nach am Ort im Raum wirkender Gravitation, deshalb hier zur Abgrenzung Alterung genannt.'."\n".
                     'Dieser scheinbare Gegensatz spiegelt sich im \\jump{OM:FrQFT:NotwenVereinheit:Problem-der-Zeit}{›Problem der Zeit‹} wider, in dem zum Ausdruck gebracht wird, dass sich die'."\n".
                     'Hauptheorien der heutigen Physik, die Quantentheorie\\footnote{\\const{FrQFT_g_footnote_text_Quantenphysik}} und die Allgemeine Relativitätstheorie, aufgrund ihres unterschiedlichen Verständnisses der Zeit nicht miteinander'."\n".
-                    'verträglich sind.) \\\\'."\n".
+                    'verträglich sind. \\\\'."\n".
                     '}'."\n"))),
                       
                   array( 'normal',
@@ -108,11 +108,11 @@
 		    	<!  • Problem der Quantengravitation  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:NotwenVereinheit:Problem-der-Quantengravitation',
-              'XXX', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{'."\n".
-                    '• Diskussion zum Problem der Quantengravitation.\\footnote[*Bearb]{Vgl. \\cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, Kap. 5 Ausblick, S. 14-15. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, S. 62-64.}) \\\\'."\n".
+                    '• Diskussion zum Problem der Quantengravitation.\\footnote[*Bearb]{Vgl. \\cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, Kap. 5 Ausblick, S. 14-15. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, S. 62-64.} \\\\'."\n".
                     '}'."\n"))),
                       
                   array( 'text', array( text => array(
@@ -141,7 +141,7 @@
                       
                   array( 'text', array( text => array(
                     '\\color{*Bearb}{'."\n".
-                    '• Neue Analysen der Situation am Ereignishorizont eines Schwarzen Lochs aus Sicht der Quantenphysik legen nahe, dass dort eine „Feuerwand“ existiert.\\footnote[*Bearb]{\\const{FrQFT_g_footnote_text_EreignHoriFeuerwand}} Dies erzeugt das Problem, dass dort Information verloren geht, was die Quantenphysik verbietet. Die Lösung dieses Problems sollte danach zur Vereinheitlichung der Physik führen.\\footnote[*Bearb]{Vgl. \\cite{Polchinski:FeuerwandAmHorizont:2015}, S. 36, Kasten.} \\quote{Die Theoretiker müssen ihre grundlegenden Annahmen über das Universum sowie die Natur von Raum und Zeit überdenken.}\\footnote[*Bearb]{\\cite{Polchinski:FeuerwandAmHorizont:2015}, S. 39.} Das Szenario der Feuerwand am Ereignishorizont ist dem Szenario der hier entwickelten fraktalen Quanten-Fluss-Theorie sehr ähnlich.) \\\\'."\n".
+                    '• Neue Analysen der Situation am Ereignishorizont eines Schwarzen Lochs aus Sicht der Quantenphysik legen nahe, dass dort eine „Feuerwand“ existiert.\\footnote[*Bearb]{\\const{FrQFT_g_footnote_text_EreignHoriFeuerwand}} Dies erzeugt das Problem, dass dort Information verloren geht, was die Quantenphysik verbietet. Die Lösung dieses Problems sollte danach zur Vereinheitlichung der Physik führen.\\footnote[*Bearb]{Vgl. \\cite{Polchinski:FeuerwandAmHorizont:2015}, S. 36, Kasten.} \\quote{Die Theoretiker müssen ihre grundlegenden Annahmen über das Universum sowie die Natur von Raum und Zeit überdenken.}\\footnote[*Bearb]{\\cite{Polchinski:FeuerwandAmHorizont:2015}, S. 39.} Das Szenario der Feuerwand am Ereignishorizont ist dem Szenario der hier entwickelten fraktalen Quanten-Fluss-Theorie sehr ähnlich. \\\\'."\n".
                     '}'."\n"))),
                       
                   array( 'text', array( text => array(
