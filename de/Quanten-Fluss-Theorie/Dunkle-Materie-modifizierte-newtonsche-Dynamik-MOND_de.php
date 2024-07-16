@@ -10,11 +10,6 @@
       <?php FrQFT_f_Div_WrapperBegin( '      '); ?>
 
 	
-		    	<!Ideen:>
-		    	<!  • XXX:  >
-
-
-		    	<!  • XXX  >
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -67,7 +62,7 @@
                     'ausmachen, die sogenannte kalte Dunkle Materie.\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 23-24. \\\\ Vgl. \\cite{Lesch:Kosmologie2006}, Kap. II. Dunkle Materie, Kalte Dunkle Materie, S. 74-79. \\\\ \\color{*Bearb}{(Weitere Verweise)}}'."\n",
                       'Es ist bisher allerdings noch völlig unklar, welcher Natur die vermuteten Teilchen sein sollten.\\footnote{\\const{FrQFT_g_footnote_text_DunkleMatUnklar}}'."\n".
                     'Insgesamt kühlt derzeit die Euphorie in dieser Richtung etwas ab, weil genauere Beobachtungen der Gravitation von Galaxien ein bezüglich'."\n".
-                    'der verschiedenen möglichen Formen der Dunklen Materie uneinheitliches Bild zeichnen.\\footnote[*Bearb]{Vgl. \\cite{Lorenzen:DieDunkleSeiteDesUniversums2013}, Min. \\color{*Bearb}{XXX}. \\\\ Vgl. \\cite{Gast:WIMP2013}, S. 54. \\\\ Vgl. \\cite{Kayser:StreitUmDieDunkleMaterie2012}, S. 4. \\\\ Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 24-31. \\\\ Vgl. \\cite{Wolschin:DunklesOrakel2009}. \\\\ Vgl. \\cite{Lesch:Kosmologie2006}, Kap. II. Dunkle Materie, Kalte Dunkle Materie, S. 74-79, hier S. 77.} \\\\'."\n",
+                    'der verschiedenen möglichen Formen der Dunklen Materie uneinheitliches Bild zeichnen.\\footnote[*Bearb]{Vgl. \\cite{Lorenzen:DieDunkleSeiteDesUniversums2013}, Min. \\color{*Bearb}{X}. \\\\ Vgl. \\cite{Gast:WIMP2013}, S. 54. \\\\ Vgl. \\cite{Kayser:StreitUmDieDunkleMaterie2012}, S. 4. \\\\ Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 24-31. \\\\ Vgl. \\cite{Wolschin:DunklesOrakel2009}. \\\\ Vgl. \\cite{Lesch:Kosmologie2006}, Kap. II. Dunkle Materie, Kalte Dunkle Materie, S. 74-79, hier S. 77.} \\\\'."\n",
                       'Eine in jüngerer Zeit von einigen Wissenschaftlern favorisierte Modifikation der Newtonschen Gravitationsphysik'."\n".
                     'macht der Dunklen Materie mittlerweile Konkurrenz.'."\n".
                     'Als modifizierte Newtonsche Dynamik (MOND) benannt, wurde die neue Theorie aus Gründen des bisher fehlenden Nachweises der'."\n".
@@ -97,8 +92,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-		    	<!  • Die Sache mit der Gravitation der Vakuumenergie:  >
-		    	<!    • XXX  >
+		    	<!  • Die Sache mit der Gravitation der Vakuumenergie  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Dunkle-Materie:Die-Sache-mit-der-Gravitation-der-Vakuumenergie',
               'Vom Basisteilchenmodell zur Vakuumgravitation', 'Sc_f_Paragraph',
@@ -155,12 +149,7 @@
                     'Wenn dann um eine Galaxie herum die Dichte wegen der Anzahlerhaltung abnimmt, dann hat die Differenz der Dichten doch ein unterschiedlich starkes Ziehen der Graviradiation der Wirkungsquanten des Vakuums'."\n".
                     'zur Folge.'."\n".
                     'Eine Galaxie hat mehr Gravitation, als es die in ihr sichtbare Materie vermuten lässt.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     'Doch wie äußert sich diese?'."\n",
                       'Um zu verstehen, in welchem Phänomen die \\jump{OM:FrQFT:Gravitation:Vakuumenergie-und-ihre-Gravitation}{gravitative Wirkung des „gewöhnlichen“ Vakuums} steckt, muss man auf den Übergang von der \\jump{OM:FrQFT:NeuePhysik:Fraktales-Universum}{Bewegungsraum-Ebene}'."\n".
                     'der Wirkungsquanten auf die der \\jump{*Elapsonen-Herlei}{Elapsonen} (verallgemeinerte Photonen\\color{*Bearb}{(Link)}) schauen:'."\n".
@@ -187,8 +176,7 @@
           ); ?>
           
 
-		    	<!  • Mechanismus des Phänomens der Dunklen Materie:  >
-		    	<!    • XXX  >
+		    	<!  • Mechanismus des Phänomens der Dunklen Materie  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Dunkle-Materie:Mechanismus-des-Phaenomens-der-Dunklen-Materie',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
@@ -239,10 +227,9 @@
           ); ?>
           
 
-		    	<!  • Beugungsrückkoppelung der Gravitationsvermittlung:  >
-		    	<!    • XXX  >
+		    	<!  • Beugungsrückkoppelung der Gravitationsvermittlung  >
           <?php /* To_f_Chapter( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'Beugungsrückkoppelung der Gravitationsvermittlung', 'Beugungsrückkoppelung der Gravitationsvermittlung', 'XXX:Beugungsrueckkoppelung-der-Gravitationsvermittlung',
+            'Beugungsrückkoppelung der Gravitationsvermittlung', 'Beugungsrückkoppelung der Gravitationsvermittlung', 'X:Beugungsrueckkoppelung-der-Gravitationsvermittlung',
               '\\color{*Bearb}{In Arbeit …}',
               array(
                   array( 'text', array( text => array(
@@ -251,50 +238,36 @@
                             'zwischen den Sternen vermitteln \\color{*Bearb}{(siehe Abbildung)}.'."\n".
                             'Dies fokusiert die Gravitationsvermittlung umso mehr auf die Ebene der Milchstraßenscheibe, desto weiter außen der betrachtete'."\n".
                             'Bereich auf der Scheibe liegt.'."\n".
-                            'Anziehungswirkungen sind folglich nicht gleichmäßig in der Milchstraße und ihrem Halo verteilt, wie auch beobachtet wird.\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 28-31. \\\\ \\color{*Bearb}{(Weitere Verweise)}}'."\n".
-                            'XXX'."\n".
-                            'XXX'."\n".
-                            'XXX'."\n".
-                            'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                            '\\color{*Bearb}{In Arbeit …}'."\n"))),
+                            'Anziehungswirkungen sind folglich nicht gleichmäßig in der Milchstraße und ihrem Halo verteilt, wie auch beobachtet wird.\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 28-31. \\\\ \\color{*Bearb}{(Weitere Verweise)}}'."\n",
+                              '\color{*Bearb}{(In Arbeit …)}'."\n".
+                            ''))),
               )
           ); */ ?>
           
 
-		    	<!  • Berechnung der Vakuumgravitation:  >
-		    	<!    • XXX  >
+		    	<!  • Berechnung der Vakuumgravitation  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Dunkle-Materie:Berechnung-der-Vakuumgravitation',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
               array(
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '(• Rotationskurve als Vorlage.\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 25.})',
+                    '• Rotationskurve als Vorlage.\\footnote[*Bearb]{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 25.}',
                     ))),
                     
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    ''))),
               )
           ); ?>
           
 
-		    	<!  • Heiße Dunkle Materie und MOND ähnlich:  >
-		    	<!    • XXX  >
+		    	<!  • Heiße Dunkle Materie und MOND ähnlich  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Dunkle-Materie:Heisze-Dunkle-Materie-und-MOND-aehnlich',
               'Es geht nicht um ›kalt‹, sondern um ›heiß‹, und nicht um heiße Dunkle Materie ›oder‹ MOND, sondern um ›und‹', 'Sc_f_Paragraph',
               array(
                   array( 'text', array( text => array(
-                    'Die gravitative Wirkung des Vakuums ist MOND ähnlich, weil sie das Gravitationsgesetzt auf kosmischem Maßstab verändert.\\footnote[*Bearb]{Vgl. \\cite{Milgrom:DunkMat2002}, S. \\color{*Bearb}{XXX}. \\\\ \\color{*Bearb}{(Weitere Verweise)}}'."\n".
+                    'Die gravitative Wirkung des Vakuums ist MOND ähnlich, weil sie das Gravitationsgesetzt auf kosmischem Maßstab verändert.\\footnote[*Bearb]{Vgl. \\cite{Milgrom:DunkMat2002}, S. \\color{*Bearb}{X}. \\\\ \\color{*Bearb}{(Weitere Verweise)}}'."\n".
                     'Doch eine verborgene, heiße Dunkle „Materie" ist \\jump{OM:FrQFT:Gravitation:Vakuum-als-Traeger-des-Gravitationsfelds}{Träger des Gravitationsfelds}. \\\\'."\n".
                     'Aber auch diese heiße Dunkle Materie verhält sich MOND ähnlich.'."\n".
                     'Weil sie der Träger des Gravitationsfelds ist, ist ihre Existenz und ihr Ort an die sichtbare, leuchtende Masse gekoppelt.'."\n",
@@ -306,14 +279,7 @@
                     'Dazu kommt, dass Elapsonen\\color{*Bearb}{(Link)} des Vakuums heiße, also sich schnell bewegende, leichte Elementarteilchen sind,'."\n".
                     'die selber, außer der Gravitation und den Quantenfluktuationen\\color{*Bearb}{(Link, Verweis)}, keine Wechselwirkungen besitzen.'."\n",
                       '\\color{*Bearb}{Es gab schon Vermutungen, dass die MOND-Theorie mit quantenmechanischen Prozessen der Raumzeit im Verbindung steht.}\\footnote{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 31.}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
                       '\\color{*Bearb}{Die CDM wäre viel weiträumiger und kugelförmiger verteilt, als die sichtbare Materie. Sie wäre auch nicht entlang der Gezeitenarme verteilt, wie es sein müsste. Die verdichtete Vakuumenergie erfüllt wie MOND diese Anforderung.}\\footnote{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 30.}'."\n".
                     '\\color{*Bearb}{Eine Vielzahl an Beobachtungen zeigt, dass die Gravitationszunahme auf magische Weise an die sichtbare Materie gekoppelt ist.}\\footnote{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 31.}'."\n".
                     '\\color{*Bearb}{Gezeitenkräfte bei Galaxiekollisionen erklären in etwa die Verteilung und die Eigenschaften der Satellitengalaxien.}\\footnote{Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 29.}'."\n".
@@ -322,33 +288,29 @@
                     '\\quote{In zahlreichen Galaxien verschiedener Größe [wird][…] stets [eine] gleiche Beziehung zwischen der Dichte sichtbarer Masse im Zentrum und der weiter außen rechnerisch benötigten Dunklen Materie fest[gestellt].}\\footnote{\\cite{Strobel:DunkleMaterieInDerKrise2009}. \\\\ Vgl. \\cite{Gentile:UniversalityOfGalacticSurfaceDensities2009}.}'."\n".
                     'Sichtbare Materie und DM stehen also immer in fester Beziehung. Dies sollte bei CDM nicht der Fall sein.\\footnote{Vgl. \\cite{Strobel:DunkleMaterieInDerKrise2009}.}'."\n".
                     'FrQFT Vakuumgravitation bildet keine eigenständigen Verklumpungen, die unabhängig von der sichtbaren Materie sind.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
                   array( 'text', array( Shape  => 'conclusion', text => array(
                         'Die Verdichtung der Energie des Vakuums innerhalb der Galaxien, unter Berücksichtigung der Energieerhaltung des Bewegungsraums\\color{*Bearb}{(Link)}, bewirkt,'."\n".
                         'dass gerade im äußeren Bereich von Galaxien, bei kleinen Beschleunigungen, Korrekturen an der Gravitationsbeschleunigung vorgenommen werden müssen.'."\n".
                         'Ich vermute, dass diese ähnlich ausfallen wie es die MOND-Theorie aussagt.\\color{*Bearb}{(Link, Verweis)} \\\\'."\n".
                         'Die Weiten des Raums zwischen den Galaxien sind dabei stark mitentscheidend.'."\n".
-                        'Denn durch die Energieerhaltung des Bewegungsraums wird dort die gesamte Konzentration an Energie in den Galaxien, einschließlich der leuchtenden Materie, ausgeglichen.'."\n"))),
+                        'Denn durch die Energieerhaltung des Bewegungsraums wird dort die gesamte Konzentration an Energie in den Galaxien, einschließlich der leuchtenden Materie, ausgeglichen.'."\n".
+                        ''))),
+
                   array( 'text', array( text => array(
                     'Der Ansatz der Quanten-Fluss-Theorie zur Beschreibung der \\jump{OM:FrQFT:Quantengravitation}{Quantengravitation} entspricht in erster Näherung der Allgemeinen Relativitätstheorie Einsteins.'."\n".
                     'Damit vereinigt der neue Ansatz zur Erklärung des Dunklen-Materie-Phänomens wichtige Eigenschaften der MOND-Theorie mit'."\n".
                     'entscheidenden Eigenschaften der Allgemeinen Relativitätstheorie.'."\n".
-                    'Die MOND-Theorie allein vermag dies nicht.\\footnote[*Bearb]{Vgl. \\cite{Milgrom:DunkMat2002}, S. 40.}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      '\\color{*Bearb}{In Arbeit …}'."\n"))),
+                    'Die MOND-Theorie allein vermag dies nicht.\\footnote[*Bearb]{Vgl. \\cite{Milgrom:DunkMat2002}, S. 40.}'."\n",
+                      '\\color{*Bearb}{In Arbeit …}'."\n".
+                    ''))),
               )
           ); ?>
           
 
-		    	<!  • Phänomene in der Milchstraße:  >
-		    	<!    • XXX  >
+		    	<!  • Phänomene in der Milchstraße  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Dunkle-Materie:Phaenomene-in-der-Milchstrasse',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
@@ -368,21 +330,17 @@
                     'Dadurch ist die verdichtete Vakuumenergie mit der leuchtenden Materie in der Scheibe angesammelt.'."\n".
                     'Die Verdichtung der Vakuumenergie ist daher vornehmlich in der Ebene der Scheibe stärker ausgeprägt, während diese senkrecht zu ihr weniger stark'."\n".
                     'ausfällt.'."\n".
-                    'Gleiches gilt für die Verdünnung der Vakuumenergie\\color{*Bearb}{(Link)} zwischen unserer Galaxie und der nächsten, was den Effekt weiter verstärkt.'."\n"))),
+                    'Gleiches gilt für die Verdünnung der Vakuumenergie\\color{*Bearb}{(Link)} zwischen unserer Galaxie und der nächsten, was den Effekt weiter verstärkt.'."\n".
+                    ''))),
+                    
                   array( 'text', array( Shape  => 'conclusion', text => array(
                         'Ich vermute, dass die nicht kugelsymmetrische Verteilung des Vakuumenergiedichte der Grund für die ungleichmäßige Verteilung'."\n".
-                        'der Gravitation in der Milchstraße und ihrem Halo ist.'."\n"))),
+                        'der Gravitation in der Milchstraße und ihrem Halo ist.'."\n".
+                        ''))),
+                    
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      '\\color{*Bearb}{In Arbeit …}'."\n"))),
+                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    ''))),
               )
           ); ?>
           
