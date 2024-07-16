@@ -77,7 +77,7 @@
                     'verträglich sind. \\\\'."\n".
                     '}'."\n"))),
                       
-                  array( 'normal',
+                  array( 'text', array( text => array(
                     'Durch das ›Problem der Zeit‹\footnote{\const{FrQFT_g_footnote_text_ProblemDerZeit}} wird die Unverträglichkeit von Quantenmechanik'."\n".
                     'und Allgemeiner Relativitätstheorie auf einen Punkt gebracht.'."\n".
                     'Claus Kiefer bemerkt dazu:'."\n".
@@ -87,12 +87,12 @@
                     'Die Allgemeine Relativitätstheorie beruht auf einer flexiblen Zeit, weil ihre Zeit an jedem Ort im Raum unterschiedlich schnell abläuft, je nach dortigem Gravitationseinfluss.'."\n".
                     'Wohingegen die Quantenmechanik auf einer Zeit beruht, die an jedem Ort im Raum gleich schnell abläuft. \\\\'."\n".
                     'Lee Smolin äußert dazu:'."\n".
-                    '\quote{Mehr und mehr habe ich das Gefühl, dass sich Quantentheorie und allgemeine Relativitätstheorie in Bezug auf das Wesen der Zeit in schwerem Irrtum befinden.}\footnote{\cite{Smolin:ZukunftPhysik2009}, Kap. 15 Die Physik nach der Stringtheorie, S. 322-347, hier S. 344.} \color{*Bearb}{(Gibt es im Zitat auch eine Begründung für sein Gefühl?)}'."\n"),
-                  array( 'normal',
+                    '\quote{Mehr und mehr habe ich das Gefühl, dass sich Quantentheorie und allgemeine Relativitätstheorie in Bezug auf das Wesen der Zeit in schwerem Irrtum befinden.}\footnote{\cite{Smolin:ZukunftPhysik2009}, Kap. 15 Die Physik nach der Stringtheorie, S. 322-347, hier S. 344.} \color{*Bearb}{(Gibt es im Zitat auch eine Begründung für sein Gefühl?)}'."\n"))),
+                  array( 'text', array( text => array(
                     'Um eine \jump{OM:FrQFT:NeuePhysik:Loesungsansatz}{Lösung des Problems der Zeit} zu finden, müssen grundlegende Annahmen der heutigen Physik überdacht und neu gefasst werden.'."\n".
                     'Das bedeutet, es sind tiefgreifende \hidden{\jump{OM:FrQFT:Diskussion:Paradigmenwechsel-zur-Quantenmechanik}}\color{*Bearb}{Paradigmenwechsel in Bezug auf die Quantenmechanik}'."\n".
                     'und \hidden{\jump{OM:FrQFT:Diskussion:Paradigmenwechsel-zur-Relativitaetstheorie}}\color{*Bearb}{in Bezug auf die Relativitätstheorie} notwendig.'."\n".
-                    'Der daraus folgende Ansatz zur Formulierung einer \jump{OM:FrQFT:NeuePhysik}{›Neue Physik‹} führt zur hier beschriebenen Quanten-Fluss-Theorie.'."\n"),
+                    'Der daraus folgende Ansatz zur Formulierung einer \jump{OM:FrQFT:NeuePhysik}{›Neue Physik‹} führt zur hier beschriebenen Quanten-Fluss-Theorie.'."\n"))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:NeuePhysik:Loesungsansatz'),
@@ -198,15 +198,16 @@
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(Diese Aussage muss entschärft und verfeinert werden.)}'."\n"))),
-                  array( 'normal',
+                  array( 'text', array( text => array(
                     'Nach dem Relativitätsprinzip entspricht jede Energie einer Masse, nach Albert Einsteins weltberühmter Formel im Verhältnis \term{E = m⋅c^^{2}}\color{*Bearb}{(Link)}.\footnote{\const{FrQFT_g_footnote_text_AequivalMasseEnergie}}'."\n".
                     'In der Quantenmechanik wird das Vakuum als recht energiereich beschrieben.\footnote{Vgl. \cite{wiki:Vakuumenergie2013}.}'."\n".
                     'Aufgrund des Relativitätsprinzips sollte es daher Masse besitzen und gravitativ wirken.'."\n".
                     'In der heutigen Physik wird hingegen ohne zwingenden Grund angenommen, die Vakuumenergie hätte keine Gravitationseffekte.\footnote[*Bearb]{\color{*Bearb}{(Weitere Verweise)}}'."\n".
                     'Diese Annahme widerspricht dem Relativitätsprinzip und die Physik ist aufgefordert schlüssig zu begründen, warum'."\n".
-                    'kein Gravitationseffekt existiert oder dieser verborgen bleibt.\footnote{Vgl. \cite{Laughlin:AbschiedWeltformel2007}, Kap. 10. Das Gewebe der Raumzeit, S. 179-192, hier S. 189. Hier im ähnlichen Fall der fehlenden Gravitation der Photonen.}'."\n"),
-                  array( 'normal',
-                    'Gordon Kane schreibt dazu:'."\n"),
+                    'kein Gravitationseffekt existiert oder dieser verborgen bleibt.\footnote{Vgl. \cite{Laughlin:AbschiedWeltformel2007}, Kap. 10. Das Gewebe der Raumzeit, S. 179-192, hier S. 189. Hier im ähnlichen Fall der fehlenden Gravitation der Photonen.}'."\n"))),
+                  array( 'text', array( text => array(
+                    'Gordon Kane schreibt dazu:'."\n"))),
+
                   array( 'quote',
                     array( text =>  'All unsere heutigen Theorien scheinen zu besagen, dass das Universum eine ungeheure Konzentration an Energie enthält – selbst in den'."\n".
                                     'leersten Regionen des Weltraums.'."\n".
@@ -214,22 +215,24 @@
                                     'aufblähen müssen.'."\n".
                                     'Das Standardmodell [der Kosmologie] vermag dieses Rätsel – das Problem der kosmologischen Konstanten – nicht zu lösen.',
                            addtext => '\footnote{\cite{Kane:NeuePhysik2003}, hier Kasten S. 31.}')),
-                  array( 'normal',
+
+                  array( 'text', array( text => array(
                     'Die Quanten-Fluss-Theorie liefert einen zwanglosen Grund dafür, warum die \jump{OM:FrQFT:Gravitation:Vakuumenergie-und-ihre-Gravitation}{Gravitation des Vakuums scheinbar nicht beobachtet} wird.'."\n".
                     'Denn die Gravitation des Vakuums ist ein wesentlicher Faktor der Struktur des Vakuums und seiner Rolle als'."\n".
                     '\jump{OM:FrQFT:Gravitation:Vakuum-als-Traeger-des-Gravitationsfelds}{Träger des Gravitationsfelds und der Gravitationsvermittlung}.'."\n".
-                    'So wird auch die Größe der örtlichen Lichtgeschwindigkeit im Gravitationsfeld durch die innere Wechselwirkung des Vakuums festgelegt.'."\n"),
-                  array( 'normal',
-                    '\color{*Bearb}{(Den nachfolgenden Teil vielleicht eher zur neuen Physik und dahin von hier aus verweisen:)}'."\n"),
-                  array( 'normal',
+                    'So wird auch die Größe der örtlichen Lichtgeschwindigkeit im Gravitationsfeld durch die innere Wechselwirkung des Vakuums festgelegt.'."\n"))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(Den nachfolgenden Teil vielleicht eher zur neuen Physik und dahin von hier aus verweisen:)}'."\n"))),
+                  array( 'text', array( text => array(
                     'Eine neue \jump{OM:FrQFT:Gravitation:Variable-Vakuumenergie-und-Higgs-Feld-Dichte}{Energiedichtevariation des Vakuums} in Form der Wirkungsquanten-Dichte im Raum entspricht dem Higgs-Mechanismus\footnote{\const{FrQFT_g_footnote_text_HiggsMech}}.'."\n".
                     'Diese Dichtevariation ist mit dem Gravitationsfeld äquivalent und verbindet so den Higgs-Mechanismus, welcher ursächlich für seine träge Masse ist,'."\n".
                     'mit der Gravitation eines Elementarteilchens. \\\\'."\n".
-                    'Der neue Ansatz stellt so über die Struktur des Vakuums Beziehungen zwischen grundlegenden Eigenschaften der Elementarteilchen her.'."\n"),
-                  array( 'normal',
+                    'Der neue Ansatz stellt so über die Struktur des Vakuums Beziehungen zwischen grundlegenden Eigenschaften der Elementarteilchen her.'."\n"))),
+                  array( 'text', array( text => array(
                     'Auch stellt sich im Verlauf heraus, dass die verborgene Gravitation der Vakuumenergie auf der Größenskala großer Galaxien als'."\n".
                     '\jump{OM:FrQFT:NotwenVereinheit:Problem-der-Dunklen-Materie}{Phänomen der Dunklen Materie oder als MOND} zum Vorschein kommt.'."\n".
-                    'Dabei handelt es sich quasi um den Higgs-Mechanismus auf sehr großen Skalen.'."\n"),
+                    'Dabei handelt es sich quasi um den Higgs-Mechanismus auf sehr großen Skalen.'."\n"))),
+
                   array( 'jumplist',
                     array(
                       array(  jump_name => 'OM:FrQFT:Gravitation'),
@@ -255,10 +258,10 @@
                     '• Die großen leeren Räume im Kosmos, die Supervoids, werden gesucht und untersucht. Die Voids verändern die Mikrowellenhintergrundstrahlung und machen sich dadurch bemerkbar. Diese Veränderung sagt etwas über die Expansion des Kosmos und damit etwas über die Dunkle Energie.\footnote[*Bearb]{Sekundärliteratur: \\\\ Vgl. \cite{Szapudi:DieGrosseLeere:2017}.}',
                     ))),
                       
-                  array( 'normal',
+                  array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n",
                       'Dunkle Energie\footnote{\const{FrQFT_g_footnote_text_DunkleEnergie}}'."\n".
-                    ''),
+                    ''))),
                       
                   array( 'jumplist', array(
                       //array(  jump_name => 'X'),
