@@ -727,12 +727,7 @@
                       'Die Vereinheitlichung von beidem hat das Potenzial, bisher unerklärbare Phänomene zu erklären, wie wir gleich sehen werden.'."\n"))),
                       
                   array( 'figure',
-                    array_merge( $FrQFT_g_figure_ary_GravitationspotMulti, array( name => 'OM:FrQFT:Einleitung:Fundierung:Fig-GravitationspotMulti',
-                                                         text => 'Die Grafik veranschaulich schematisch die räumliche Verteilung der Vakuumenergie-Dichte im Gravitationspotenzial.'."\n".
-                                                                 'Die Energieerhaltung im Volumen des Vakuums entspricht einem umgekehrten Wasserbettmodell, in dem die Wassermenge immer gleich bleibt.'."\n".
-                                                                 'Dort, wo die Massenkugeln im Wasserbett liegen, erhöht sich die Energiedichte des Vakuums, während sie zwischen den Massen abnimmt.'."\n".
-                                                                 'Diese relative Zunahme der Vakuumenergie um die Massen herum, kann das Gravitationspotenzial zwischen den Massen so verändern,'."\n".
-                                                                 'dass der Eindruck des Phänomens der Dunklen Materie um große und weiträumig verteilte Massen herum entsteht.'))),
+                    array_merge( $FrQFT_g_figure_ary_GravitationspotMulti, array( name => 'OM:FrQFT:Einleitung:Fundierung:Fig-GravitationspotMulti'))),
             
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
