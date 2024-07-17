@@ -48,8 +48,8 @@
                       'Wer die Quantengravitation und die Struktur des Vakuums versteht, löst das Problem der Dunklen Materie.'."\n"))),
                       
                   array( 'text', array( text => array(
-                    'Das Phänomen der sogenannten Dunklen Materie\footnote[*Bearb]{\const{FrQFT_g_footnote_text_DunkleMat}}'."\n".
-                    'oder auch der modifizierten newtonschen Dynamik\footnote[*Bearb]{\const{FrQFT_g_footnote_text_MOND}}'."\n".
+                    'Das Phänomen der sogenannten Dunklen Materie\footnote{\const{FrQFT_g_footnote_text_DunkleMat}}'."\n".
+                    'oder auch der modifizierten newtonschen Dynamik\footnote{\const{FrQFT_g_footnote_text_MOND}}'."\n".
                     '(MOND) beruht auf der Beobachtung einer erheblich'."\n".
                     'größeren Gravitationswirkung innerhalb und im Umfeld von Galaxien, als diese auf den ersten Blick aufgrund der Masse der sichtbaren Sterne angenommen werden kann.'."\n".
                     'Deshalb auch Dunkle Materie, weil man schnell annahm, dass dort etwas sehr Massereiches verborgen sein müsste, um die zusätzliche'."\n".
