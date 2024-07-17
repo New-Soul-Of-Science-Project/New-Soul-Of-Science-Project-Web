@@ -62,7 +62,7 @@
                     'Eine tiefe Einsicht in der Physik ist, dass die grundlegenden Strukturen immer in Bewegung sein müssen.'."\n",
                       'Dies finden wir zum einen in der Quantenphysik\\color{*Bearb}{(Verweis)} in den immerwährend schwingenden Strukturen der'."\n".
                     'Elementarteilchen und des Vakuums, denn Schwingung braucht immer Bewegung.'."\n",
-                      'Zum anderen weißt uns die ewige Bewegung des Lichts in der Allgemeinen Relativitätstheorie\\color{*Bearb}{(Verweis)},'."\n".
+                      'Zum anderen weißt uns die ewige Bewegung des Lichts in der Allgemeinen Relativitätstheorie\footnote{\const{FrQFT_g_footnote_text_ART}},'."\n".
                     'die dort auch im Prinzip der Lichtuhr als Gedankenexperiment implizit auf alle Materieformen übertragen wird,'."\n".
                     'darauf hin, dass auch in dieser fundamentalen Theorie der Physik nichts in unserer Erlebniswelt wirklich in Ruhe ist.'."\n",
                       'Doch wie kommen die Dinge dann zur Ruhe?'."\n".
