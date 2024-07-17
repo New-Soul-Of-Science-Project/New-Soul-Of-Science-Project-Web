@@ -82,6 +82,7 @@
                                           'Jacobsen:EchoSchwarzLoch2006',
                                           'Kane:NeuePhysik2003',
                                           'Kayser:StreitUmDieDunkleMaterie2012',
+                                          'Kempf:WieVielWiegtDasVakuum:2023',
                                           'Kiefer:WegZurQG2012',
                                           'Kiefer:DoesTimeExistInQuantumGravity2009',
                                           'Kroupa:SMKPruefstand2010',
