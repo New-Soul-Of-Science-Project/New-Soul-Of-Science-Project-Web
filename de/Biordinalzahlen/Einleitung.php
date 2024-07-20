@@ -13,9 +13,14 @@
 	
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
-                  array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{Ausgangspunkt}',
-                    // '• Die Biordinalzahlen sind eine Darstellung aller ganzer Zahlen durch Mengen, also auch der negativen ganzen Zahlen.',
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    '\\bold{Offene Fragestellungen}',
+                    '• Ist \lm{ 2^{ω} } eine Ordinalzahl und wenn ja, wo ordnet sie sich in den Ordinalzahlen ein?',
+                    '– Diese Fragestellung taucht auf der Seite \italic{\jumpname{OM:SupNum:Struktur-Geometrie}} auf.',
+                    '– Kann dabei die Gleichung \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots }, aus dem Beweis der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}, helfen?',
+                    '– Denn klar ist, dass \lm{ 2^{ω} \!< ω^{ω} } sein muss.',
+                    '– Aber gilt für jedes \lm{ n \in \mathbb{N} }, dass \lm{ ω^{n} \!< 2^{ω} \!< ω^{ω} } ist?',
+                    '– Siehe \jump[https://de.wikipedia.org/wiki/Ordinalzahl]{Rechenoperationen}{Wikipedia: Ordinalzahl, Rechenoperationen} und \jump[https://de.wikipedia.org/wiki/Transfinite_Arithmetik]{}{Wikipedia: Transfinite Arithmetik}',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -1189,7 +1194,7 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Ich gehe davon aus, dass dieser Zusammenhang ganz allgemein für alle endlichen und aktual unendlichen „natürlichen“ Zahlen gilt, die ich \lm{ \mathbb{N}_\infty } nenne.'."\n".
-                      'Diese Menge können wir mit Hilfe der Abrundung durch die Gaußklammer\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AbrundungsfunktionUndAufrundungsfunktion:2022}.}'."\n".
+                      'Diese Menge können wir mit Hilfe der Abrundung durch die Gaußklammer\footnote{\const{SupNum_g_footnote_text_Gaussklammer}}'."\n".
                       '\\latexmath{ \lfloor x \rfloor } zum Ausdruck bringen, die eine Zahl \\latexmath{ x } auf die nächst kleinere ganze Zahl abrundet, wenn sie noch keine ganze Zahl ist:'."\n".
                       '\\\\ \color{*Bearb}{(In der nachfolgenden Summe ist die Menge \lm{ \mathbb{N}_\infty } zu überdenken, da sie auch Werte wie \lm{ ω - n } enthält, was wohl nicht sein kann. Vielleicht wäre hier die Menge der Ordinalzahlen \lm{ \mathbb{On} } richtig, die keine Vorgänger der Limeszahlen enthält? Erst bei den Superial-Zahlen kommen auch Vorgänger und Nachfolger von Limes Zahlen wie \lm{ \s \pm n = ω^{ω} \pm n } hinzu, aber dies ja, weil bestimmte Limeszahlen wie \lm{ ω } und deren Vorgänger und Nachfolger \lm{ ω \pm n } ausgeschlossen sind.)}'."\n".
                     ''))),
