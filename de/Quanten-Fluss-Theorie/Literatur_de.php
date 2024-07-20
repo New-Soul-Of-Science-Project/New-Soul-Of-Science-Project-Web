@@ -23,6 +23,7 @@
               'Atwood:FenstUniv2004',
               'Bergia:Einstein2005',
               'Beringer:ParticlePhysicsBooklet2012',
+              'Bischoff:QuantenWarenGestern:2024',
               'Boerner:DunkEnergie2008',
               'Bojowald:UrSprung2009',
               'Bojowald:ZurueckVorDenUrknall2009',

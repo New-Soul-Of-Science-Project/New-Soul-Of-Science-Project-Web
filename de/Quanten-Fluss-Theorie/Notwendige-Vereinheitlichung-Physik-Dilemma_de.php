@@ -105,11 +105,29 @@
                         addtext => '\footnote{\cite{Smolin:ZukunftPhysik2009}, Kap. 15 Die Physik nach der Stringtheorie, S. 322-347, hier S. 344.} \color{*Bearb}{(Gibt es im Zitat auch eine Begründung für sein Gefühl?)}')),
 
                   array( 'text', array( text => array(
+                    'Das ›Problem der Zeit‹ können wir im Folgenden auch noch etwas konkreter fassen und damit zu seiner Lösung'."\n".
+                    'beitragen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:NotwenVereinheit:Problem-der-Zeit:X', text =>
+                      
+                'Elementarteilchen in der Quanten-Fluss-Theorie', subline =>
+                  'Die „innere“ und „äußere“ Feinstruktur der Elementarteilchen entschlüsseln')),
+                  array( 'text', array( text => array(
+                    'Dies kann ganz konkret in Experimenten beobachtet werden.'."\n".
+                    'Denn es ergibt sich ein scheinbarer Widerspruch bezüglich des Verhaltens von Elementarteilchen, wenn sie sich'."\n".
+                    'in einem Gravitationsfeld an einem Ort mit geringerer Gravitation oder an einem anderen Ort'."\n".
+                    'mit höherer Gravitation befinden.'."\n",
+                      'Bei höherer Gravitation schwingt ein Elementarteilchen im inneren schneller – Comptonfrequenz –, weil es mehr Energie trägt, obwohl die Zeit dort im Gravitationspotenzial'."\n".
+                    'langsamer läuft, als bei niedrigerer Gravitation.\footnote{\const{FrQFT_g_footnote_text_PoundRebka}}'."\n".
+                    'Dies erscheint als Widerspruch, weil eine langsamer laufende Zeit einen Zeitlupeneffekt zur Folge haben sollte,'."\n".
+                    'bei dem sich auch sämtliche Schwingungen verlangsamen.\footnote{Vgl. \cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, Kap. 4 Äquivalenzprinzip und Quantenmechanik, S. 9-14, hier S. 13-14. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Giulini:EinsteinImQuantentest2013}, Umstrittene Neudeutung eines alten Experiments, S. 62-64.}'."\n",
+                      'Dies alles ist nur zu verstehen, wenn wir die Feinstruktur der Elementarteilchen, des Vakuums und des'."\n".
+                    'räumlichen Gravitationspotenzials entschlüsseln.'."\n".
                     'Um eine \jump{OM:FrQFT:NeuePhysik:Loesungsansatz}{Lösung des Problems der Zeit} zu finden,'."\n".
                     'auch konkret im \jump{OM:FrQFT:Lepton:Zeit-und-Alterung}{Leptonen-Modell},'."\n".
                     'müssen grundlegende Annahmen der heutigen Physik überdacht und neu gefasst werden.'."\n".
-                    'Das bedeutet, es sind tiefgreifende \hidden{\jump{OM:FrQFT:Diskussion:Paradigmenwechsel-zur-Quantenmechanik}}\color{*Bearb}{Paradigmenwechsel in Bezug auf die Quantenmechanik}'."\n".
-                    'und \hidden{\jump{OM:FrQFT:Diskussion:Paradigmenwechsel-zur-Relativitaetstheorie}}\color{*Bearb}{in Bezug auf die Relativitätstheorie} notwendig.'."\n",
+                    'Das bedeutet, es sind tiefgreifende \hidden{\jump{OM:FrQFT:Diskussion:Paradigmenwechsel-zur-Quantenmechanik}}Paradigmenwechsel in Bezug auf die Quantenmechanik'."\n".
+                    'und \hidden{\jump{OM:FrQFT:Diskussion:Paradigmenwechsel-zur-Relativitaetstheorie}} in Bezug auf die Relativitätstheorie notwendig.'."\n",
                       'Der daraus folgende Ansatz zur Formulierung einer \jump{OM:FrQFT:NeuePhysik}{›Neue Physik‹} führt zur hier beschriebenen fraktalen Quanten-Fluss-Theorie,'."\n".
                     'die das Problem durch die Unterscheidung von \jump{OM:FrQFT:ZeitAlterungFrequenz:Zeit}{Zeit} und \jump{OM:FrQFT:ZeitAlterungFrequenz:Alterung}{Alterung} löst.'."\n".
                     ''))),
@@ -134,16 +152,91 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '• Diskussion zum Problem der Quantengravitation.\footnote{Vgl. \cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, Kap. 5 Ausblick, S. 14-15. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Giulini:EinsteinImQuantentest2013}, S. 62-64.}',
+                    // '• Diskussion zum Problem der Quantengravitation.\footnote{\const{FrQFT_g_footnote_text_Quantengravi}}',
                     ))),
                       
                   array( 'text', array( text => array(
-                      'Beschreibung und Diskussion des Problems der Quantengravitation …'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n",
+                    'Eine sinnvolle Beschreibung der Quantengravitation\footnote{\const{FrQFT_g_footnote_text_Quantengravi}} zu finden ist die Grundlage für die Lösung des \jump{OM:FrQFT:NotwenVereinheit:Problem-der-Zeit}{›Problems der Zeit‹},'."\n".
+                    'wie wir im vorherigen Abschnitt vermutet haben.'."\n",
+                      'Einige Physiker scheinen mittlerweile etwas entmutigt und desillusioniert im Hinblick darauf, ob es wirklich möglich ist,'."\n".
+                    'die Gravitation zu quantisieren, wir also einem Phantom hinterher jagen.'."\n".
+                    'Oder sie stellen auch in Frage, ob diese Notwendigkeit überhaupt besteht, was sicher auch interessant ist.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:QuantenWarenGestern:2024}, S. 12-19.}'."\n",
+                      'Ich denke aber, ohne die Quantengravitation kommen wir nicht an die Beantwortung vieler grundlegender Fragen der Physik,'."\n".
+                    'und sogar unseres Lebens, heran.'."\n".
+                    'Denn gerade die Quantengravitation soll uns ja eine Physik aus einem Guss bescheren, die die Schwierigkeiten überwindet,'."\n".
+                    'unsere heutigen Haupttheorien, wie auf dieser Seite eingangs erläutert, in einer Physik zu vereinen, die nicht scheinbar'."\n".
+                    'widersprüchlich daher kommt und damit offenbart, dass wir sehr grundlegende Dinge in der Welt nicht verstanden haben.'."\n",
+                      'Domenico Giulini meint zur heutigen Situation:'."\n".
+                    ''))),
+
+                  /* array( 'text', array( Shape  => 'quote', text => array(
+                        'An der Schnittstelle zwischen Gravitationstheorie und Quantenmechanik tauchen also schwierige konzeptionelle Fragen auf,'."\n".
+                        'die beide Theorien gleichermaßen betreffen.'."\n".
+                        'Dabei haben wir es bisher nur mit einer vergleichsweise einfachen Situation zu tun,'."\n".
+                        'nämlich einem quantenmechanischen System in einem äußeren Gravitationsfeld, etwa dem der Erde.'."\n".
+                        ''),
+                        addtext => '\footnote{\cite{Giulini:EinsteinImQuantentest2013}, S. 64.}')), */
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Die Schnittstelle zwischen Gravitationstheorie und Quantenmechanik wirft hochinteressante und'."\n".
+                        'schwierige konzeptuelle Fragen auf, die beide Theorien gleichermaßen betreffen.'."\n".
+                        'Dabei haben wir es bisher nur mit der denkbar einfachsten Situation zu tun,'."\n".
+                        'nämlich einem quantenmechanischen System in einem äußeren Gravitationsfeld, etwa dem der Erde.'."\n".
+                        ''),
+                        addtext => '\footnote{\cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, Kap. 5 Ausblick, S. 14-15, hier S. 14. \\\\ Entsprechend in der Sekundärliteratur: \\\\ Vgl. \cite{Giulini:EinsteinImQuantentest2013}, Eine »innere Uhr« ohne praktische Bedeutung?, S. 64.}')),
+
+                  array( 'text', array( text => array(
+                    'Für den Angang dieser schwierigen konzeptionellen Fragen bietet das ›Problems der Zeit‹ in seinen'."\n".
+                    'unterschiedlichen Facetten und besonders, wenn wir es zuspitzen, eine gute Möglichkeit.'."\n".
+                    'Wir können es aber nur lösen, wenn wir wirklich grundlegend anders denken – vermeintliche Tabus tief überdenkend in Frage stellen –,'."\n".
+                    'ohne die wirklich wichtigen und erhaltensnotwenidgen Eckpfeiler der Physik aus den Augen zu verlieren.'."\n",
+                      'Wenn wir uns weiter mit Experimenten zur Quantengravitation und deren Erklärung beschäftigen, sieht Giulini gute Chancen:'."\n".
+                    ''))),
+
+                  /* array( 'text', array( Shape  => 'quote', text => array(
+                        'Die Quantengravitation bleibt zwar auch dann noch eine unverändert anspruchsvolle Aufgabe.'."\n".
+                        'Doch die Theoretiker hätten neue Werkzeuge, mit denen sie wertvolle Hinweise auf die notwendigen'."\n".
+                        'begrifflichen Anpassungen und auf eine gemeinsame Sprache der zwei grundverschiedenen'."\n".
+                        'fundamentalen Theorien gewinnen könnten.'."\n".
+                        'Danach suchen viele Forscher auf diesem Gebiet im Moment händeringend,'."\n".
+                        'denn innerhalb der Grenzen der Fantasie und mit dem alleinigen Kriterium der formalen Konsistenz'."\n".
+                        'kommen sie dem Problem nicht bei.'."\n".
+                        ''),
+                        addtext => '\footnote{\cite{Giulini:EinsteinImQuantentest2013}, S. 64.}')), */
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Ein physikalisches Verständnis der dabei [– beim Versuch der Quantisierung –] implizit gemachten Annahmen'."\n".
+                        'ist aber so gut wie nicht vorhanden.'."\n".
+                        'An dieser Stelle kann das hier geschilderte Vorgehen konstruktive Beiträge liefen,'."\n".
+                        'nicht zuletzt wegen der realistischen Aussicht auf experimentelle Entscheidbarkeit der aufgeworfenen Fragen'."\n".
+                        'durch die anhaltend rasante Entwicklung der Interferometrie mit Materiewellen.'."\n".
+                        'Auch damit wäre man zwar immer noch weit vom eigentlichen Kerngebiet der Quantengravitation entfernt,'."\n".
+                        'darf aber dennoch hoffen, wertvolle Hinweise auf die notwendigen begrifflichen Anpassungen zu bekommen,'."\n".
+                        'nach denen die Forschung auf dem Gebiet der Quantengravitation so händeringend sucht und'."\n".
+                        'denen innerhalb der Grenzen der Phantasie mit dem alleinigen Kriterium der formalen Konsistenz'."\n".
+                        'augenscheinlich nicht beizukommen ist.'."\n".
+                        ''),
+                        addtext => '\footnote{\cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, Kap. 5 Ausblick, S. 14-15, hier S. 15. \\\\ Entsprechend in der Sekundärliteratur: \\\\ Vgl. \cite{Giulini:EinsteinImQuantentest2013}, Eine »innere Uhr« ohne praktische Bedeutung?, S. 64.}')),
+
+                  array( 'text', array( text => array(
+                    'Ich bin sehr dankbar, dass Domenico Giulini – und seine Kollegen – so grundsätzlich an die Untersuchung der Korrektheit des'."\n".
+                    'Einstein’schen Äquivalenzprinzips herangeht und er die entscheidende Frage dann auch auf das ›Problem der Zeit‹'."\n".
+                    'kondensiert.'."\n",
+                      'Diesbezüglich finde ich es sehr bemerkenswert, dass Louis de Broglie dieser scheinbare Widerspruch des ›Problems der Zeit‹'."\n".
+                    'schon 1924 aufgefallen zu sein scheint.\footnote{Vgl. \cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, Kap. 4 Äquivalenzprinzip und Quantenmechanik, S. 9-14, hier S. 13. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Giulini:EinsteinImQuantentest2013}, Eine »innere Uhr« ohne praktische Bedeutung?, S. 64.}'."\n".
+                    'Wahrlich ein aufmerksamer Beobachter und großer Denker!'."\n",
+                      'So stellt sich die zu entwickelnde Quantengravitation als zutiefst als mit der dynamisch schwingenden Struktur des Vakuums,'."\n".
+                    'der Elementarteilchen und mit deren Bedeutung für den Verlauf der Zeit verbunden heraus.'."\n".
+                    'Nicht sehr überraschend und in der Physik sicher eines der interessantesten Dinge.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:NotwenVereinheit:Problem-der-Quantengravitation:X', text =>
+                      
+                'Die emergente Quantengravitation der Quanten-Fluss-Theorie', subline =>
+                  '')),
+                  array( 'text', array( text => array(
                     'Die Formulierung der Lösung des Problems der \jump{OM:FrQFT:Quantengravitation}{Quantengravitation der Elementarteilchen}'."\n".
                     'gelingt in der fraktalen Quanten-Fluss-Theorie durch das Verständnis der dynamischen Struktur sowie des Zusammenhalts'."\n".
                     'der Wirkungsquanten-Strings der Elementarteilchen und deren daraus folgenden Wirkung auf ihre Umgebung.'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                      'Die Gravitation selber kommt dabei durch eine zufallsbehaftete Störung der umliegenden Strukturen aus Wirkungsquanten-Strings'."\n".
+                    'zustande, deren Bewegungsbahn zur anziehenden Masse hin gebeugt wird, wie Licht in einem Gravitationspotenzial.'."\n".
                     ''))),
                     
                   array( 'jumplist', array(
