@@ -797,10 +797,16 @@
                       'Dies ist eine große Erkenntnis der Mathematik, die ich bisher noch nicht gesehen habe.'."\n".
                     'Sie eröffnet eine neue Welt, in der ein großes Entdeckungspotenzial liegt.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ueberrationale-Zahlen-natuerliche-SZ', text =>
                       
                 'Überrationale Zahlen und die natürlichen Superial-Zahlen', subline =>
                   'Die \\lm{ x }-ten Wurzeln aus \\lm{ n } sind Superial-Zahlen')),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{X}',
+                    '• Ein viel einfacherer Beweis, dass einfache Potenzen einer natürlichen Zahl hoch \lm{ ω } auch irrationale Wurzeln aus einer natürlichen Zahl mit mehrfachen Potenzen zu einer ganzen Zahl machen, finden wir im Abschnitt \italic{\jumpname{OM:SupNum:Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln}}.',
+                    ))),
+
                   array( 'text', array( text => array(
                     'Nun möchte ich herausarbeiten, dass die gerade gefundene Lösung der Darstellung \\lm{ x }-ter Wurzeln aus \\lm{ n }'."\n".
                     'durch die gefundenen \\italic{überrationalen Brüche} genau zur Struktur der Superial-Zahlen passt.'."\n".
@@ -1047,7 +1053,7 @@
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'unser Ansatz, so gelangen wir durch die erlaubte Division von \lm{ \s } durch \lm{ n }'."\n".
                       'und durch einen Faktor, der eine erlaubte Potenz der \lm{ x }-ten Wurzel aus \lm{ n } ist,'."\n".
-                      'wie wir im \jump{OM:SupNum:Ueberrationalitaetsvermutung:Ganzzahlige-Potenzen-der-Wurzeln}{nächsten Abschnitt} sehen,'."\n".
+                      'wie wir im \jump{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{nächsten Abschnitt} sehen,'."\n".
                       'die beide den Wahrheitsgehalt der Aussage nicht verändern, und durch deren Umformung'."\n".
                       ''))),
                   array( 'equations',
@@ -1071,7 +1077,7 @@
                     'die gesuchte Aussage, dass auch die Kehrwerte der \lm{ x }-ten Wurzeln aus \lm{ n } natürliche Superial-Zahlen sind.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\\condb{\\anchor{OM:SupNum:Ueberrationalitaetsvermutung:Ganzzahlige-Potenzen-der-Wurzeln}{}Ganzzahlige Potenzen der Wurzeln} \\\\'."\n".
+                  '\\condb{\\anchor{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{}Ganzzahlige Potenzen der Wurzeln} \\\\'."\n".
                     'Können wir auch für die ganzzahligen Potenzen der Wurzeln und ihrer Kehrwerte bestätigen,'."\n".
                     'dass ihre Produkte mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen sind.'."\n".
                     ''))),
@@ -1146,7 +1152,7 @@
                       array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y \cdot z }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'und weil wir im \jump{OM:SupNum:Ueberrationalitaetsvermutung:Ganzzahlige-Potenzen-der-Wurzeln}{vorherigen Abschnitt}'."\n".
+                      'und weil wir im \jump{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{vorherigen Abschnitt}'."\n".
                       'geklärt haben, dass ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte im Produkt'."\n".
                       'mit der superialen Basis natürliche Superial-Zahlen sind'."\n".
                       ''))),
@@ -1583,6 +1589,48 @@
                     array( equ_text_std => 'SN.ÜV.DB', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N} \setminus *\{ 0, 1 *\} *)  *[  \rad(n)^{g} \cdot n^{\frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  *]  }'),
                       array( display => 'on',  latex => '{  *( \forall n, m, x \in \mathbb{N} \setminus *\{ 0, 1 *\} *) *( \rad(n) \ne \rad(m) *) *( n^{\frac{ 1 }{ x }} = \mathrm{irrational} *) \\\ \qquad\qquad\qquad\qquad\;  *[  \rad(m)^{g} \cdot n^{\frac{ 1 }{ x }}  \notin  \mathbb{N}_{\infty}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises:X', text =>
+                      
+                'Was ist der kleinste Faktor einer gebrochenen Zahl, der aus ihr eine ganze Zahl macht?', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV.DB', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  0,\!5 \cdot 2  =  1  }'),
+                      array( display => 'on',  latex => '{  1,\!5 \cdot 2  =  3  }'),
+                      array( display => 'on',  latex => '{  2,\!5 \cdot 2  =  5  }'),
+                      array( display => 'on',  latex => '{  3,\!5 \cdot 2  =  7  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wir sehen, dass der Faktor hier nur von den Nachkommastellen abhängt.'."\n",
+                      'Warum ist das so?'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Aufgrund des Distributivgesetzes gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV.DB', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *( \forall a \in \;]0, 1[_{\mathbb{A}_{\S}} *) *( k \in \mathbb{N}_{\infty} *)  \\\ *[  *( n + a *) \cdot k  =  n \cdot k + a \cdot k  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da \lm{ n \cdot k } eh eine ganze Zahl sein muss, kommt es ja nur darauf an, dass \lm{ a \cdot k } auch eine ganze Zahl wird,'."\n".
+                    'damit schließlich unsere Summe ganzzahlig ist.'."\n",
+                      'Durch eine Abrundung mit Hilfe der Gaußklammer\footnote{\const{SupNum_g_footnote_text_Gaussklammer}} können wir dies'."\n".
+                    'folgendermaßen zum Ausdruck bringen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV.DB', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall b \in \mathbb{A}_{\S} *) *( k \in \mathbb{N}_{\infty} *)  \\\ *[  b \cdot k  =  \lfloor b \rfloor \cdot k + *( b - \lfloor b \rfloor *) \cdot k  *]  }'),
+                      array( display => 'on',  latex => '{  n  =  \lfloor b \rfloor  }'),
+                      array( display => 'on',  latex => '{  a  =  b - \lfloor b \rfloor  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  b  =  n + a  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  b  =  \lfloor b \rfloor + *( b - \lfloor b \rfloor *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  b  =  b  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
