@@ -13,6 +13,7 @@
 	
           <?php
             Sc_g_litera_make( array(
+              'Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024',
               'Bischoff:NeubauDerMathematik:2023',
               'Freistetter:DieFreiheitDerImaginaerenZahlen:2016',
               'Freistetter:DieFreiheitDerMathematik:2016',
