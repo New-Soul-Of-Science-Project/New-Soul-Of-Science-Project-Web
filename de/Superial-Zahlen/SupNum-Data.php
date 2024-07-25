@@ -286,10 +286,12 @@
       jump_ary => array(
         'OM:SupNum:Struktur-Geometrie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
 
-          'OM:SupNum:Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega' => array( headline_text => 'SN.ArGeo.31'),
+          'OM:SupNum:Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega' => array( headline_text => 'SN.ArGeo.32'),
+          'OM:SupNum:Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln' => array( headline_text => 'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *( \sqrt[k]{c} *)^{m} }', headline_text_short => 'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen'),
           'OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit' => array( headline_text => 'Die superiale Basis \lm{ \s } wird auf natürliche Weise sichtbar und definiert', headline_text_short => 'Die superiale Basis s wird auf natürliche Weise sichtbar und definiert'),
           'OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+          'OM:SupNum:Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
 
         // 'OM:SupNum:Struktur-Geometrie:Diskussion' => array( headline_text => 'Diskussion'/* , headline_text_short => 'X' */),
       ),
@@ -318,8 +320,9 @@
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-g-aktual-unendlich-ganz' => array( headline_text => 'SN.ÜV.120'),
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-natuerlich-infinit' => array( headline_text => 'SN.ÜV.128'),
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-plus-eins-durch-x-natuerlich-infinit' => array( headline_text => 'SN.ÜV.130'),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ueberrationale-Zahlen-natuerliche-SZ' => array( headline_text => 'Überrationale Zahlen und die natürlichen Superial-Zahlen'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz' => array( headline_text => 'SN.ÜV.133'),
-          'OM:SupNum:Ueberrationalitaetsvermutung:Ganzzahlige-Potenzen-der-Wurzeln' => array( headline_text => 'Ganzzahlige Potenzen der Wurzeln'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ganzzahlige-Potenzen-der-Wurzeln' => array( headline_text => 'Ganzzahlige Potenzen der Wurzeln'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Ueberrationalitaetsvermutung:Summen-von-Wurzeln' => array( headline_text => 'Summen von Wurzeln'/* , headline_text_short => 'X' */),
                         
         'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises' => array( headline_text => 'Diskussion des Beweises'/* , headline_text_short => 'X'*/),

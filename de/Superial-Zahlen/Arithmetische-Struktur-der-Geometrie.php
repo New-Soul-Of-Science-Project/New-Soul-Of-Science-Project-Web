@@ -28,7 +28,7 @@
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Nun setzen wir die Linie aus vielen Punkten zusammen; natürlich aus unendlich vielen, um wirklich eine Linie zu erhalten.'."\n".
+                      'Nun setzen wir die Linie aus vielen Punkten zusammen; natürlich aus unendlich vielen, um wirklich eine geschlossene Linie zu erhalten.'."\n".
                       ''))),
                       
                   array( 'text', array( text => array(
@@ -36,7 +36,7 @@
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Nun setzen wir die Fläche aus vielen Linien zusammen; natürlich aus unendlich vielen, um wirklich eine Fläche zu erhalten.'."\n".
+                      'Nun setzen wir die Fläche aus vielen Linien zusammen; natürlich aus unendlich vielen, um wirklich eine geschlossene Fläche zu erhalten.'."\n".
                       ''))),
                       
                   array( 'text', array( text => array(
@@ -50,7 +50,7 @@
                   'Keine Hochstapelei')),
                   array( 'text', array( text => array(
                     'Der Versuch eine Linie aus Punkten quasi aufzustapeln ist zum Beispiel'."\n".
-                    'zum Scheitern verurteilt.'."\n",
+                    'zum Scheitern verurteilt.\footnote{Vgl. \cite{Haramein:DieEntschluesselungDesUniversums:2011}, Ⅰ Unendlich und doch begrenzt, S. 11-17, hier S. 12-13.}'."\n",
                       'Beim Stapeln wird ein Punkt so an den anderen platziert, dass alle gemeinsam'."\n".
                     'die Linie füllen, dicht an dicht.'."\n".
                     'Diese Dichte ist allerdings davon abhängig, welche Ausdehnung jeder einzelne Punkt hat.'."\n".
@@ -69,8 +69,9 @@
                 'Ist die Geometrie im Grunde fraktal?', subline =>
                   'Weben oder Netzwerken')),
                   array( 'text', array( text => array(
-                    'Wir können uns zwei Punkte denken, die nicht aneinander – also nicht aufeinander – liegen,'."\n".
-                    'darum einen Abstand haben und so auch eine Richtung vorgeben, wenn wir sie mit Null und Eins bezeichnen.'."\n",
+                    'Wir können uns zwei Punkte denken, die nicht aneinander – also nicht aufeinander – liegen und'."\n".
+                    'darum einen Abstand haben.'."\n".
+                    'So geben diese Punkte auch eine Richtung vor und wir können sie sinnvollerweise mit Null und Eins bezeichnen.'."\n",
                       'Nun beginnen wir ein Netz von Punkten zu „weben“, indem wir zwischen beide'."\n".
                     'Punkte, genau in der Mitte, einen weiteren Punkt legen und haben nun drei Punkte in der selben Richtung auf einer Linie.'."\n".
                     'So fahren wir fort und legen jeweils zwischen zwei benachbarte Punkte einen weiteren'."\n".
@@ -80,7 +81,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Selbstähnlichkeit} \\\\'."\n".
-                  '\cond{Die Auflösung des Inneren} \\\\'."\n".
+                  '\cond{Die Auflösung und Struktur des Inneren} \\\\'."\n".
                     'Weil wir immer wieder das gleiche tun, ergibt sich eine fraktale, also selbstähnliche, Netzstruktur.'."\n",
                       'Die gesamte Anzahl der Punkte \lm{ n } sowie ihre Koordinaten \lm{ r }, ihre Dichte, als auch die Anzahl der Teilstrecken, \lm{ \rho } und'."\n".
                     'ihr Abstand \lm{ d } berechnen sich mit der Fraktalebene \lm{ x } zu:'."\n".
@@ -95,13 +96,16 @@
                   array( 'text', array( text => array(
                     'Die Punktanzahl \lm{ n } ist dabei immer einer mehr als die Anzahl der Teilstrecken,'."\n".
                     'weil die Punkte ja die Teilstrecken begrenzen und daher ein zusätzlicher Punkt den Beginn oder den Abschluss'."\n".
-                    'bilden muss, jenachdem, wie wir drauf schauen.'."\n".
+                    'bilden muss, jenachdem, wie wir drauf schauen.'."\n",
+                      'Zur Berechnung der Koordinaten aller sich ergebenden Punkte \lm{ r } benutzen wir die natürlichen Zahlen von Null'."\n".
+                    'bis zum \lm{ n }-ten Punkt mit Hilfe der entsprechenden \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge}'."\n".
+                    '\lm{ [0, n] } aus \lm{ \mathbb{N} }.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Das Zählen} \\\\'."\n".
                   '\cond{Die Erweiterung nach außen, die nach innen zurück wirkt} \\\\'."\n".
                     'Beginnen wir noch einmal von vorne mit den Punkten Null und Eins.'."\n",
-                      'Verdoppeln wir diese beiden Punkte und verschieben den Punkt Null so auf die Eins, dass sich'."\n".
+                      'Verdoppeln wir diese beiden Punkte, verschieben also den Punkt Null so auf die Eins, dass sich'."\n".
                     'die Länge und Richtung der Verbindungsstrecke der neuen Punkte nicht verändert, dann schöpfen wir so den Punkt Zwei.'."\n".
                     'Dies kommt, weil nun der verschobene Punkt der vorherigen Eins jetzt die Zwei bildet.'."\n".
                     'Wir zählen damit also einen Punkt weiter zum Großen hin.'."\n",
@@ -136,9 +140,9 @@
                   '\condb{Neue Teilungen durch weitere Primzahlen} \\\\'."\n".
                     'Machen wir nun bei der Strecke Null, Eins und Zwei weiter und verlängern diese um einen weiteren Punkt,'."\n".
                     'wie zuvor, dann erhalten wir den Punkt Drei.'."\n",
-                      'Wenn wir nun diese neue Struktur aus vier Punkten verkleinern und zwischen die Null und die Eins legen,'."\n".
+                      'Wenn wir jetzt diese neue Struktur aus vier Punkten verkleinern und zwischen die Null und die Eins legen,'."\n".
                     'dann erhalten wir eine Teilung, die ganz neue Punkte enthält.'."\n".
-                    'Nur die auf der Null und der Eins fallen beide Punkte zusammen.'."\n".
+                    'Nur die beiden Nullpunkte fallen zusammen und der neue Punkt Drei fällt nun auf die Eins.'."\n".
                     'Alle anderen Punkte zwischen Null und Eins sind nicht doppelt, weil sie nicht auf die Punkte fallen,'."\n".
                     'die durch die Halbierung beziehungsweise durch die Verkleinerung der Zweierstruktur auf die Strecke'."\n".
                     'von der Null bis zur Eins entstanden waren.'."\n",
@@ -185,7 +189,7 @@
                       array( display => 'on',  latex => '{  \rho  =  2^{x_{2}} \cdot 3^{x_{3}} \cdot 5^{x_{5}}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'So geht es nun immer weiter.'."\n",
+                    'So geht es nun immer weiter.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Das komplette Raster oder Netzwerk aller ganzen negativen Primzahlpotenzen aufspannen} \\\\'."\n".
@@ -200,30 +204,44 @@
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) + 1  *]  }'),
                       array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} }  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}}  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{N}} *)  *[  r  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{N}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} *) \cdot m  *]  }'),
                       array( display => 'on',  latex => '{  \rho  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}}  }'),
                     ))),
                   array( 'text', array( text => array(
-                  '\condb{Alle Strecken der natürlich Zahlen und dann der ganzen Zahlen vernetzen} \\\\'."\n".
-                    'Diese feine Unterteilung können wir jetzt zwischen je zwei benachbarte Zahlen legen'."\n".
+                    'So bekommen wir das Teilernetz der Primzahlen und ihrer Kombinationen im Endlichen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Alle Strecken der natürlichen Zahlen und schließlich der ganzen Zahlen vernetzen} \\\\'."\n".
+                    'Um diese Struktur auf alle natürlichen Zahlen auszudehnen, brauchen wir ein passendes Symbol:'."\n",
+                      'Die Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}} geben uns die Möglichkeit einen Wert'."\n".
+                    'auszudrücken, der so groß ist, dass er per Definition genau alle natürlichen Zahlen beinhaltet.'."\n".
+                    'Dieser aktual unendliche Wert hat das Symbol \lm{ ω } und bezeichnet die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}};'."\n".
+                    'die Zahl, die wir erreichen, wenn wir einmal alle natürlichen Zahlen gezählt haben.'."\n",
+                      'Die zuvor gefundene feine Unterteilung können wir jetzt also mit Hilfe von \lm{ ω } zwischen alle jeweils benachbarten Zahlen legen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω  =  \mathbb{N}  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N}', label_incr => false),
                       array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) \cdot ω  *]  }'),
                       array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} }  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}}  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{N}} *)  *[  r  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} \cdot m  *]  }'),
-                      array( display => 'on',  latex => '{  \rho  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}}  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{On}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} *) \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  \rho  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'und das Ganze dann auch von der ersten Strecke an in die andere negative Richtung immer weiter verlängern'."\n".
+                    'und das Ganze dann auch von der Null an in die negative Richtung immer weiter verlängern'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) \cdot 2 ω  *]  \;\;  .  }'),
+                      array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) \cdot 2 ω  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{Bn}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} *) \cdot m  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Der Abschlusspunkt fällt auf diese Weise bei \lm{ n } weg, weil die Zahl der Teilstrecken nicht endet.'."\n".
-                    'Der Abstand \lm{ d } und die Dichte \lm{ \rho } verändern sich gar nicht dadurch.'."\n".
+                    'In beiden Fällen fällt der Abschlusspunkt auf diese Weise bei \lm{ n } weg, weil die Zahl der Teilstrecken nicht endet.'."\n".
+                    'Der Abstand \lm{ d } und die Dichte \lm{ \rho } verändern sich nicht dadurch.'."\n",
+                      'Dass es \jump{OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen}{genau gleich viele negative Zahlen wie natürliche Zahlen, mit der Null},'."\n".
+                    'geben muss sehen wir in den \jump{OM:BiOrd:Einleitung}{Biordinalzahlen},'."\n".
+                    'deren Klasse – eine allgemeinere Form der Menge – mit \lm{ \mathbb{Bn} } bezeichnet wird.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
@@ -240,36 +258,52 @@
                 'Übergang ins Unendliche', subline =>
                   'Die vollständige Induktion der Teilungen')),
                   array( 'text', array( text => array(
-                    'Erst, wenn wir die Teilung der Strecken bis ins Unendliche treiben,'."\n".
-                    'bleiben keine endlichen Lücken übrig.'."\n",
+                    'Erst, wenn wir die Teilung der Strecken bis ins Unendliche treiben, bleiben keine endlichen Lücken übrig.'."\n".
+                    'Und auch keine unendlich kleinen Lücken, die wir mit endlichen Teilungen noch belegen können, weil sie noch unbelegt sind.'."\n",
+                      'Wie können wir nun erreichen oder ausdrücken, dass wir die Strecke zwischen Null und Eins wirklich in alle'."\n".
+                    'möglichen endlichen Potenzen der Primzahlen und deren Kombinationen aufteilen und so ein Teilernetz aufspannen, dass alle endlichen Teilungen beinhaltet?'."\n",
+                      'Auch hierzu können wir das Symbol \lm{ ω } der Ordinalzahlen nutzen, nun als Potenz.'."\n".
+                    'Die Theorie der Ordinalzahlen kennt allerdings keine Vorgänger von \lm{ ω } und auch keine Vorgänger von Null,'."\n".
+                    'also auch keine negativen Zahlen.'."\n".
+                    'Diese Einschränkung haben wir mit der Theorie der Biordinalzahlen aufgehoben'."\n".
+                    'und können so auch den aktual unendlich negativen Wert \lm{ -ω } beschreiben, den wir in der Potenz unserer Primzahlen brauchen.'."\n",
                       'Für das Beispiel der Zweiteilung beziehungsweise Halbierung erhalten wir folgende Formeln,'."\n".
-                    'wenn wir die Teilung bis in die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    'wenn wir die Teilung bis in die vollständige Induktion'."\n".
                     '\lm{ ω } vorantreiben:'."\n".
-                    '\\\\ \color{*Bearb}{(Welche Menge zum Adressieren aller Koordinaten der Punkte für \lm{ m } in dieser Formel sinnvollerweise zu verwenden ist, ist mir noch nicht ganz klar. Die Menge \lm{ [0, n]_{\mathbb{On}} } scheint mir nicht ganz richtig.)}'."\n".
+                    // '\\\\ \color{*Bearb}{(Welche Menge zum Adressieren aller Koordinaten der Punkte für \lm{ m } in dieser Formel sinnvollerweise zu verwenden ist, ist mir noch nicht ganz klar. Die Menge \lm{ [0, n]_{\mathbb{On}} } scheint mir nicht ganz richtig. Wir können auf die Idee kommen, dass \lm{ [0, n]_{2^{ω}} } unser Problem löst. Allerdings gilt für \lm{ n = 2^{ω} + 1 }, dass \lm{ *( 2^{ω} + 1 *) \notin 2^{ω} }.)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  2^{ω} + 1  }'),
                       array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{ω} }  =  2^{-ω}  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{On}} *)  *[  r  =  2^{-ω} \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{2^{ω} + 2} *)  *[  r  =  2^{-ω} \cdot m  *]  }'),
                       array( display => 'on',  latex => '{  \rho  =  2^{ω}  }'),
                     ))),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Offene Fragestellungen}',
+                    '• Hier gehen wir davon aus, dass \lm{ 2^{ω} }, und damit dann auch \lm{ 2^{ω} + 2 }, wirklich einer geordneten Menge entspricht und vermutlich eine Ordinalzahl ist,'."\n".
+                    'wofür ich noch keinen expliziten Beweis gesehen habe, das aber eine gewisse Plausibilität besitzt und hier so Verwendung findet, dass die Formeln in sich logisch erscheinen.'."\n".
+                    '\color{*Entwick}{Die Fragestellung ist interessant und sollte auf der Seite der Biordinalzahlen untersucht werden.}',
+                    ))),
+
                   array( 'text', array( text => array(
-                    'So erhalten wir zwar schon eine unendliche Dichte, aber wie wir oben gesehen haben'."\n".
+                    'So erhalten wir zwar schon eine unendliche Dichte, denn der Abstand zwischen zwei benachbarten Netzpunkten \lm{ d } ist \lm{ 2^{-ω} },'."\n".
+                    'aber wie wir oben gesehen haben,'."\n".
                     'sind hier ganz viele Teilungen noch nicht enthalten.'."\n".
                     'Als Beispiele erreichen wir so die Punkte \lm{ \frac{ 1 }{ 3 } } und \lm{ \frac{ 2 }{ 3 } } nicht,'."\n".
                     'die zu den rationalen Zahlen gehören.'."\n".
                     'Ein aktual unendlich kleiner Abstand zwischen den Punkten reicht offenbar nicht aus,'."\n".
-                    'um alle endlich zu beschreibenden Punkte zu erreichen.'."\n",
+                    'um alle durch endliche Teilungen zu beschreibenden Punkte zu erreichen.'."\n",
                       'Nehmen wir die Teilungen der Strecke zwischen Null und Eins für auch nur eine der endlichen Primzahlen'."\n".
-                    'gar nicht oder nur endlich oft vor, dann haben wir Lücken im Endlichen,'."\n".
-                    'die nur einen aktual unendlich kleinen Abstand aufweisen.'."\n".
+                    'gar nicht oder nur endlich oft vor, dann behalten wir Lücken,'."\n".
+                    'die nur einen aktual unendlich kleinen Abstand aufweisen, aber in denen noch durch endliche Teilungen erreichbare Punkte existieren.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Das aktual unendlich dichte Raster oder Netzwerk aller ganzen negativen Primzahlpotenzen aufspannen} \\\\'."\n".
                     'So müssen wir also die Teilung mit allen endlichen Primzahlen bis in die vollständige Induktion'."\n".
                     'vorantreiben:'."\n".
-                    '\\\\ \color{*Bearb}{(Welche Menge zum Adressieren aller Koordinaten der Punkte für \lm{ m } in dieser Formel sinnvollerweise zu verwenden ist, ist mir noch nicht ganz klar. Die Menge \lm{ [0, n]_{\mathbb{On}} } scheint mir nicht ganz richtig. Später lernen wir, dass \lm{ m } aus \lm{ [0, n_{\s}]_{\mathbb{S}_{\Z}} } sein muss, aber diese Menge ist an dieser Stelle hier von der Systematik her ja noch nicht bekannt.)}'."\n".
+                    // '\\\\ \color{*Bearb}{(Welche Menge zum Adressieren aller Koordinaten der Punkte für \lm{ m } in dieser Formel sinnvollerweise zu verwenden ist, ist mir noch nicht ganz klar. Die Menge \lm{ [0, n]_{\mathbb{On}} } scheint mir nicht ganz richtig. Später lernen wir, dass \lm{ m } aus \lm{ [0, n_{\s}]_{\mathbb{S}_{\Z}} } sein muss, aber diese Menge ist an dieser Stelle hier von der Systematik her ja noch nicht bekannt.)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -277,7 +311,7 @@
                       array( display => 'on',  latex => '{  d  =  *( \frac{ 1 }{ \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} } *)^{ω}  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω}  }',
                                           label_name => 'OM:SupNum:Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega', label_text => '\name{OM:SupNum:Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega}', label_incr => true),
                       array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{\mathbb{On}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω} \cdot m  *]  }'),
-                      array( display => 'on',  latex => '{  \rho  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω}  \;\;  .  }'),
+                      array( display => 'on',  latex => '{  \rho  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{ω}  \;\;  .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'So gibt es nun zwischen Null und Eins keine rationalen Zahlen mehr,'."\n".
@@ -286,11 +320,12 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω} \cdot 2 ω  \;\;  .  }'),
+                      array( display => 'on',  latex => '{  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω} \cdot 2 ω  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{Bn}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω} \cdot m  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Auch hier fällt der Abschlusspunkt \lm{ n } wieder weg, weil die Zahl der Teilstrecken nicht endet.'."\n".
-                    'Der Abstand \lm{ d } und die Dichte \lm{ \rho } verändern sich auch wieder gar nicht dadurch.'."\n",
+                    'Der Abstand \lm{ d } und die Dichte \lm{ \rho } verändern sich dadurch nicht.'."\n",
                       'Können wir nun davon sprechen, dass ein solches Gewebe dann im Endlichen keine Lücken mehr hat?'."\n",
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
@@ -313,7 +348,7 @@
                       'Nur für solche irrationalen algebraischen Zahlen, die dann noch durch Integration'."\n".
                     'von Radikalen der irrationalen algebraischen Zahlen entstehen, konnten wir noch nicht Beweisen,'."\n".
                     'dass sie auf dem Raster liegen.'."\n".
-                    'Das sie auf dem Raster liegen liegt nahe, weil es sich um Summen von Wurzelausdrücken handelt, und für eine endliche Anzahl von Summanden ist dies auch schon bewiesen.'."\n".
+                    'Das sie auf dem Raster liegen, liegt nahe, weil es sich um Summen von Wurzelausdrücken handelt, und für eine endliche Anzahl von Summanden ist dies auch schon bewiesen.'."\n".
                     'Daher ist es auch für eine aktual unendliche Anzahl von Summanden zu vermuten.'."\n",
                       'Das es dennoch bisher unbewiesen ist, liegt daran, dass wir \jump{OM:SupNum:Ableitungen-Integrale}{die Ableitung und das Integral} mit Hilfe der Superial-Zahlen'."\n".
                     'anders definieren, als bisher mit dem Limes üblich, und dadurch aktual unendlich kleine Summanden'."\n".
@@ -386,7 +421,7 @@
                     'Der Abstand des Rasters bleibt hier der gleiche, wie zuvor, und so auch der Faktor \lm{ 2^{ω} }, um \lm{ 2^{q} } zu einer ganzen Zahl zu machen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *( \sqrt[k]{c} *)^{m} }} \\\\'."\n".
+                  '\condb{\\anchor{OM:SupNum:Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln}{}Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *( \sqrt[k]{c} *)^{m} }} \\\\'."\n".
                     'Der Beweis zeigt dies sogar für jede Wurzel aus jeder natürlichen Zahl \lm{ c } und deren Potenzen wie folgt:'."\n".
                     ''))),
                   array( 'equations',
@@ -422,7 +457,15 @@
                     'dann ist \lm{ k \cdot q } einfach eine andere rationale Zahl, die als Potenz von \lm{ p }'."\n".
                     'ebenso eine ganze Zahl ergeben muss.'."\n".
                     'Und dies gilt schließlich für alle endlichen Potenzen der Primzahlen der Primfaktorzerlegung jeder positiven natürlichen Zahl \lm{ c }.'."\n",
-                      'Wenn \lm{ \rad(c) } das Produkt der in \lm{ c } enthaltenen Primzahlen in einfacher Potenz ist, können wir also formulieren,'."\n".
+                      'Wenn \lm{ \rad(c) } das Produkt der in \lm{ c } enthaltenen Primzahlen in einfacher Potenz ist,'."\n".
+                    'also beispielsweise'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \rad(980)  =  \rad(2^{2} \cdot 5 \cdot 7^{2})  =  2 \cdot 5 \cdot 7  =  70  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'können wir also formulieren,'."\n".
                     'dass schlussendlich jede endliche ganze Wurzel in natürlicher Potenz aus jeder natürlichen Zahl \lm{ c }'."\n".
                     'durch ein Produkt aller unterschiedlichen Primzahlen in \lm{ c } zu einer aktual unendliche großen ganzen Zahl gemacht werden kann:'."\n".
                     ''))),
@@ -444,7 +487,7 @@
                     'Dies ist sehr bemerkenswert und lässt uns einige neue Erkenntnisse in der Zahlentheorie und'."\n".
                     'bezüglich der arithmetischen Struktur der Geometrie gewinnen.'."\n".
                     'Es zeigt uns, auf welche Weise die Wurzeln in das fraktale Teilungsgewebe der Geometrie eingewoben sind.'."\n",
-                      'Wie oben erwähnt, gilt dies für alle Radikale der irrationalen algebraischen Zahlen, was wir ja an anderer Stelle zeigen\color{*Bearb}{(Link)},'."\n".
+                      'Wie oben erwähnt, gilt dies für alle Radikale der irrationalen algebraischen Zahlen, was wir ja an \jump{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ueberrationale-Zahlen-natuerliche-SZ}{anderer Stelle zeigen},'."\n".
                     'also für deren Summen, Produkte, Brüche und endlichen ganzzahligen Potenzen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
@@ -500,19 +543,25 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n_{\s}  =  \s + 1  }'),
-                      array( display => 'on',  latex => '{  \# \mathbb{Z}  =  2 \cdot ω  }',
-                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  n_{\s,\Z}  =  2 \cdot ω \cdot \s  }'),
                       array( display => 'on',  latex => '{  d_{\s}  =  \frac{ 1 }{ \s }  =  \s^{-1}  }'),
                       array( display => 'on',  latex => '{  *( \forall m \in [0, n_{\s}]_{\mathbb{S}_{\Z}} *)  *[  r_{\s}  =  \s^{-1} \cdot m  *]  }'),
                       array( display => 'on',  latex => '{  \rho_{\s}  =  \s  }'),
+                      array( display => 'on',  latex => '{  \# \mathbb{Z}  =  2 ω  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  n_{\s,\Z}  =  2 ω \cdot \s  }'),
+                      array( display => 'on',  latex => '{  *( \forall z \in \mathbb{Z} *) *( \forall m \in [0, \s[_{\mathbb{S}_{\Z}} *)  *[  r_{\s,\Z}  =  z + \s^{-1} \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  XXX *( \forall m \in \;]\!-\!ω, ω[_{\mathbb{S}^{-1}_{\Z}} *)  *[  r_{\s,\Z}  =  m  *]  }'),
+                      array( display => 'on',  latex => '{  \mathbb{On}^{-} =  *\{  b  *|*  *( \forall a \in \mathbb{On} *) *[ b = \mathbb{U} \setminus a *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{On}_{\Z}  =  \mathbb{On} \cup \mathbb{On}^{-}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall m \in \;]\!-\!ω \cdot ω^{ω}, ω \cdot ω^{ω}[_{\mathbb{On}_{\Z}} *)  *[  r_{\s,\Z}  =  ω^{-ω} \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall m \in \;]\!-\!ω \cdot \s, ω \cdot \s[_{\mathbb{On}_{\Z}} *)  *[  r_{\s,\Z}  =  \s^{-1} \cdot m  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dabei bezeichnet \lm{ n_{\s} } die Anzahl aller Punkte des aktual unendlich feinsten Gewebes'."\n".
                     'im Endlichen von Null bis einschließlich Eins.'."\n".
+                    '\lm{ d_{\s} } beschreibt den Abstand dieser feinsten Punkte und \lm{ \rho_{\s} } ihre Dichte.'."\n".
                     '\lm{ n_{\s,\Z} } ist dann die Anzahl der feinsten Punkte auf der endlichen Zahlengeraden,'."\n".
-                    'unter Berücksichtigung der Tatsache, dass es dann keinen Abschlusspunkt braucht.'."\n".
-                    '\lm{ d_{\s} } beschreibt den Abstand dieser feinsten Punkte und \lm{ \rho_{\s} } ihre Dichte.'."\n",
+                    'unter Berücksichtigung der Tatsache, dass es dann keinen Abschlusspunkt braucht.'."\n",
                       'So erreichen wir das feinste Gewebe von Punkten, die selber noch im endlichen liegen,'."\n".
                     'also noch keine aktual unendlich kleinen Summanden in ihrem Ort – ihren Koordinaten – haben, aber schon aktual unendlich dicht beieinander liegen.'."\n".
                     ''))),
@@ -528,7 +577,8 @@
                     'selbst dann, wenn wir sie durch irrationale Wurzeln und Summen dieser in die aktual unendlich kleinen Potenzen'."\n".
                     'der vollständigen Induktion treiben und sie so noch variieren,'."\n".
                     'ist in diesem Sinne hier das \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Kontinuum}\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese}} erreicht.'."\n",
-                      'Aber Kontinuum bedeutet eben nicht, dass es keinerlei Lücken mehr gibt; halt nur keine endlicher Größe.'."\n".
+                      'Aber Kontinuum bedeutet eben nicht, dass es keinerlei Lücken mehr gibt; halt nur keine endlicher Größe oder'."\n".
+                    'solche, die durch eine endlich ganzzahlige Teilung zu füllen sind.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:X', text =>
                       
@@ -582,9 +632,38 @@
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Wie wir aus Punkten eine Linie konstruieren können', subline =>
-                  'Ein naturphilosophisches Problem')),
+                  'Ein naturphilosophisches Problem gibt uns einen Einblick in die fraktale Realität der Geometrie')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Kommen wir nun zu unserem fundamentalen Problem, eine Linie aus Punkten zu bilden beziehungsweise zu konstruieren,'."\n".
+                    'vom Anfang der Seite zurück und sehen, wie wir nun, nach unserer Erkenntnisreise, darauf Antworten können.'."\n",
+                      'Stapelei – „Hochstapelei“ – ist nicht möglich, wie wir festgestellt haben, wenn ein geometrisches Element,'."\n".
+                    'wie ein Punkt, keine Ausdehnung hat.'."\n".
+                    'Wir können auch sagen, haben geometrische Elemente keine Struktur, und damit keine Ausdehnung,'."\n".
+                    'sind sie unteilbar, dann können wir sie nicht so miteinander verbinden, dass sie gemeinsam mehr sind,'."\n".
+                    'als ihre Einzelteile.'."\n".
+                    'Es können also keine wirklich unteilbaren Atome sein.'."\n",
+                      'Ein Punkt, als Beispiel, muss eine Struktur, im Sinne einer Umgebung, besitzen, die eine Ausdehnung hat.'."\n".
+                    'Und genau diese Struktur liefert uns die oben untersuchte arithmetische Struktur der Geometrie'."\n".
+                    'über ihre Teilbarkeit durch Primzahlen und der sich daraus ergebenden superialen Basis \lm{ \s }.'."\n".
+                    'Durch die Superial-Zahlen bekommt ein Punkt im endlichen eine Umgebung der Größe \lm{ \s^{-1} }.'."\n".
+                    ''))),
+                      
+                  array( 'figure',
+                    array_merge( $SupNum_g_figure_ary_GeradeSuperialZahlen, array( name => 'OM:SupNum:Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen'))),
+                                            
+                  array( 'text', array( text => array(
+                    'In \jumpname{OM:SupNum:Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen} sehen wir, dass jeder Punkt im Endlichen'."\n".
+                    'der Ebene oder Potenz \lm{ \s^{0} }, hier am Beispiel von \lm{ -1,\!4 \, \s^{0} = -1,\!4 }, als Umgebung einen'."\n".
+                    'ganzen Zahlenstrahl auf Fraktalebene \lm{ \s^{-1} } hat.'."\n".
+                    'Der Zahlenstrahl um jeden Punkt hat so dann auch die Ausdehnung \lm{ \s^{-1} }.'."\n",
+                      'Verbinden wir \lm{ \s } Punkte dieser Struktur, dann erhalten wir eine Strecke der Länge \lm{ 1 }.'."\n".
+                    'Verbinden wir \lm{ 2 ω \, \s } Punkte dieser Struktur, dann erhalten wir den ganzen Zahlenstrahl'."\n".
+                    'von minus Unendlich \lm{ -ω } bis plus Unendlich \lm{ ω }.'."\n",
+                      'Eine fraktale Struktur der geometrischen Elemente löst das Problem mit Punkten eine Linie, mit Linien eine Fläche'."\n".
+                    'und mit Flächen ein Volumen zu beschreiben.'."\n".
+                    'Und genau dies ist ja ganz eng mit dem Thema der Integration oder allgemeiner mit der Differenzialrechnung verbunden.'."\n".
+                    'Es ist also kein Zufall, dass wir über die Superial-Zahlen auf die arithmetische Struktur der Geometrie stoßen,'."\n".
+                    'in der sich dann die Superial-Zahlen als Zahlentheorie der Analyses widerspiegeln.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(

@@ -17,6 +17,7 @@
               'Bischoff:NeubauDerMathematik:2023',
               'Freistetter:DieFreiheitDerImaginaerenZahlen:2016',
               'Freistetter:DieFreiheitDerMathematik:2016',
+              'Haramein:DieEntschluesselungDesUniversums:2011',
               'Plichta:GottesGeheimeFormel:1995',
               'wiki:AbelscheGruppe:2022',
               'wiki:AbrundungsfunktionUndAufrundungsfunktion:2022',
