@@ -49,6 +49,7 @@
                   array( 'text', array( text => array(
                     'Es sind im Grunde drei Bedingungen zu erfüllen, damit eine Zahl \lm{ a } ein sinnvoller Koeffizient der Superial-Zahlen sein kann.'."\n",
                       'Ihr Produkt mit der superialen Basis \lm{ a \cdot \s } darf nicht dazu führen, dass sich die aktual unendliche Größenordnung verändert,'."\n".
+                    'also die Potenz von \lm{ \s } im Wert des Produkts,'."\n".
                     'weil die Koeffizienten sonst nicht wie sinnvolle Ziffern in einem \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem}'."\n".
                     'fungieren können.'."\n".
                     'Das bedeutet, dass \lm{ a } eine endliche Zahl sein muss.'."\n".
@@ -62,7 +63,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Weiterhin darf sich durch \lm{ a \cdot \s } keine endliche oder aktual unendliche Größenordnung des Stellenwertsystems verändern,'."\n".
-                    'außer die Stelle von \lm{ \s }.'."\n".
+                    'außer die Stelle mit der Potenz Eins von \lm{ \s }.'."\n".
                     'Das heißt, dass \lm{ a } keine aktual unendlich kleinen Summanden enthalten darf.'."\n",
                       'Und \lm{ a \cdot \s } muss eine ganze Zahl sein.'."\n".
                     'Sie muss gerundet also die gleiche Zahl bleiben.'."\n".
@@ -88,9 +89,11 @@
                     'Welche uns bekannte Menge entspricht \lm{ \mathbb{A}_{\S} } dann?'."\n",
                       'Wie wir sehen werden, ist diese Frage nicht so schnell ganz genau zu beantworten.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X', text =>
+                      
+                'Sind die sinnvollen Koeffizienten alle reellen Zahlen, also \lm{ \mathbb{A}_{\S} = \mathbb{R} }?', subline =>
+                  'Eine Frage der Transzendenz')),
                   array( 'text', array( text => array(
-                  '\condb{Sind die sinnvollen Koeffizienten alle reellen Zahlen, also \lm{ \mathbb{A}_{\S} = \mathbb{R} }?} \\\\'."\n".
-                  '\cond{Eine Frage der Transzendenz} \\\\'."\n".
                     'Das hängt davon ab, wie wir im Lichte der Superial-Zahlen beantworten, welche Zahlen wir zu den reellen Zahlen zählen.'."\n".
                     'Wenn wir \jump{OM:SupNum:Ableitungen-Integrale}{die Ableitung und das Integral} über die Superial-Zahlen definieren'."\n".
                     'und nicht, wie heute meistens üblich, über den Limes, und berechnen, welche Funktion abgeleitet sie selber ergibt,'."\n".
@@ -102,15 +105,18 @@
                     'Damit wäre die Zahl \lm{ \e } zwar theoretisch eine reelle Zahl und damit möglicherweise als Koeffizient der Superial-Zahlen geeignet.'."\n".
                     'Aber im Rahmen der Superial-Zahlen'."\n".
                     'macht die \lm{ \e }-Funktion nur mit der Basis \lm{ \e_{\s} } Sinn.'."\n".
-                    '\lm{ \e_{\s} } ist allerdings nicht einmal eine Superial-Zahle der hier definierten 1. Ordnung, weil sie'."\n".
+                    '\lm{ \e_{\s} } ist allerdings nicht einmal eine Superial-Zahl der hier definierten 1. Ordnung, weil sie'."\n".
                     'aktual unendlich kleine Potenzen von \lm{ \s } enthält und die Superial-Zahlen nur endlich Potenzen von \lm{ \s } erlauben.'."\n",
                       'Damit würde ich \lm{ \e_{\s} } möglicherweise nicht zur Menge \lm{ \mathbb{R} } der reellen Zahlen zählen.'."\n".
                     'In meinen Augen sind hier also noch Einigungen nötig, welche Zahlen wir sinnvollerweise zu \lm{ \mathbb{R} } hinzurechnen.'."\n".
                     'Und wir müssen uns klar darüber werden, ob es Sinn macht \lm{ \e } weiterhin als eulersche Zahl anzusehen oder ob'."\n".
                     'wir nur noch \lm{ \e_{\s} } als eulersche Zahl anerkennen sollten.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X', text =>
+                      
+                'Sind die sinnvollen Koeffizienten alle algebraischen Zahlen, also \lm{ \mathbb{A}_{\S} = \mathbb{A} }?', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\condb{Sind die sinnvollen Koeffizienten alle algebraischen Zahlen, also \lm{ \mathbb{A}_{\S} = \mathbb{A} }?} \\\\'."\n".
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
@@ -631,7 +637,7 @@
                     'den Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}} eine Wertgleichheit zu \lm{ \s } finden:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  =  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
@@ -639,10 +645,81 @@
                     'In der Menge der Ordinalzahlen \lm{ \mathbb{On} } hat \lm{ ω^{ω} } genau so viele Vorgänger, wie ihr Wert groß ist.'."\n".
                     'Dies Gilt auch für \lm{ \s } in der Menge der natürlichen Superial-Zahlen \lm{ \mathbb{S_{\N}} }.'."\n",
                       'Allerdings haben in \lm{ \mathbb{S_{\N}} } alle Zahlen einen direkten Vorgänger, außer die Null.'."\n".
-                    'Hingegen haben in \lm{ \mathbb{On} } nicht nur die Null, sondern alle sogenannten Limeszahlen, wie auch \lm{ ω } und selbst \lm{ ω^{ω} },'."\n".
-                    'keine Vorgänger.'."\n".
+                    'Hingegen haben in \lm{ \mathbb{On} } nicht nur die Null, sondern alle sogenannten Limeszahlen\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlLimeszahlen}},'."\n".
+                    'wie auch \lm{ ω } und selbst \lm{ ω^{ω} }, keine Vorgänger.'."\n".
                     'Dieser strukturelle Unterschied, trotz Wertgleichheit, ist sehr bemerkenswert und bedarf einer näheren Untersuchung.'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Weitere diesbezügliche Wertgleichheiten} \\\\'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Dies kann wohl in der unteren Formel nicht stimmen: \lm{ \mathbb{N}_{\infty} }'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Als Beispiel möchte ich die Gaußsche Summenformel\footnote{\const{BiOrd_g_footnote_text_GaussscheSummenformel}}'."\n".
+                    'für unser Beispiel anführen, \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}{in angepasster Form},'."\n".
+                    'denn für die Summe von Mengen unendlich vieler Zahlen, die auch mit unendlich großen Zahlen beschrieben werden,'."\n".
+                    'können letztere nicht in der Summe enthalten sein:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall i \in [ 0, n [_{\mathbb{N}_{\infty}} } i  =  \frac{ n^{2} - n }{ 2 }  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Für die Summe aller endlichen natürlichen Zahlen erhalten wir beispielsweise:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall i \in ω } i  =  \frac{ ω^{2} - ω }{ 2 }  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Für die beiden gleichwertigen Zahlen und die Summen der unendlich vielen positiven ganzen Zahlen, für die sie jeweils stehen,'."\n".
+                    'erhalten wir dann:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall i \in [ 0, \s [_{\mathbb{S}_{\Z}} } i  =  \frac{ \s^{2} - \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \sum_{ \forall i \in ω^{ω} } i  =  \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  ω^{ω}  =  [ 0, ω^{ω} [_{\mathbb{On}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in [ 0, ω^{ω} [_{\mathbb{On}} } i  =  \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Aus der Wertgleichhalt der Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}'."\n".
+                    'folgt dann'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in [ 0, \s [_{\mathbb{S}_{\Z}} } i  =  \sum_{ \forall i \in ω^{ω} } i  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und dies, obwohl die Mengen, deren Elemente hier summiert werden, ja recht unterschiedlich sind.'."\n".
+                    'Und genau hier kann die genauere Untersuchung interessant sein.'."\n",
+                      'Die beiden Mengen sehen folgendermaßen aus:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [ 0, \s [_{\mathbb{S}_{\Z}}  =  \\\  \quad *\{  \quad\,  0, 1, 2, \cdots n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{1}{2} s + z^{-}, \cdots \frac{1}{2} s - 1,\; \frac{1}{2} s,\; \frac{1}{2} \s + 1, \cdots \frac{1}{2} s + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{2}{3} \s + z^{-}, \cdots \frac{2}{3} \s - 1,\; \frac{2}{3} s,\; \frac{2}{3} s + 1, \cdots \frac{2}{3} \s + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, s + z^{-}, \cdots s - 2, s - 1   \quad *\}  }'),
+                      array( display => 'on',  latex => '{  ω^{ω}  =  [ 0, ω^{ω} [_{\mathbb{On}}  =  \\\  \quad *\{  \quad\;  0, 1, 2, \cdots n, \cdots \\\ \qquad\quad\; ω, ω + 1, ω + 2, ω + 3, \cdots ω + n, \cdots \\\ \qquad\quad\; 2 ω, 2 ω + 1, 2 ω + 2, 2 ω + 3, \cdots 2 ω + n, \cdots \\\ \qquad\quad\; 3 ω, 3 ω + 1, 3 ω + 2, 3 ω + 3, \cdots 3 ω + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, ω^{2}, ω^{2} + 1, ω^{2} + 2, ω^{2} + 3, \cdots ω^{2} + n, \cdots \\\ \qquad\quad\; ω^{2} + ω, ω^{2} + ω + 1, ω^{2} + ω + 2, \cdots ω^{2} + ω + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 2 ω^{2}, 2 ω^{2} + 1, 2 ω^{2} + 2, 2 ω^{2} + 3, \cdots 2 ω^{2} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 3 ω^{2}, 3 ω^{2} + 1, 3 ω^{2} + 2, 3 ω^{2} + 3, \cdots 3 ω^{2} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, ω^{3}, ω^{3} + 1, ω^{3} + 2, ω^{3} + 3, \cdots ω^{3} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 2 ω^{3}, 2 ω^{3} + 1, 2 ω^{3} + 2, 2 ω^{3} + 3, \cdots 2 ω^{3} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 3 ω^{3}, 3 ω^{3} + 1, 3 ω^{3} + 2, 3 ω^{3} + 3, \cdots 3 ω^{3} + n, \cdots \\\ \quad\quad\; \quad \vdots   \quad *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Beide Mengen haben nach unseren bisherigen Erkenntnissen gleich viele Elemente.'."\n".
+                    'Sind aber in ihrer Struktur, wie wir hier sehen, wirklich im Detail sehr unterschiedlich:'."\n",
+                      'In der Menge \lm{ \left\lbrack 0, \s \right\lbrack_{\mathbb{S}_{\Z}} } sind \lm{ ω }, \lm{ ω + 1 }'."\n".
+                    'oder \lm{ ω^{2} }, \lm{ ω^{2} + 1 } und so weiter gar nicht direkt enthalten.'."\n",
+                      'Umgekehrt gibt es in \lm{ \left\lbrack 0, ω^{ω} \right\lbrack_{\mathbb{On}} } keine direkten Vorgänger von \lm{ ω^{ω} },'."\n".
+                    'wie es sie in der anderen Menge vor \lm{ \s } gibt, wie \lm{ \s - 1 }.'."\n".
+                    'Auch Ausdrücke, wie \lm{ \frac{1}{2} \s } oder \lm{ \frac{2}{3} \s + 1 } können wir hier nicht explizit benennen.'."\n",
+                      'Genauer können wir sagen, außer allen natürlichen Zahlen gibt es keine einzige weitere Zahl,'."\n".
+                    'die wir in beiden Mengen explizit angeben können.'."\n".
+                    'Die Anzahl aller Zahlen und ihre Summe sind in beiden Mengen aber gleich.'."\n",
+                      'Das die Anzahlen gleich sind ist klar, weil \color{*Bearb}{(In Arbeit …)}.'."\n".
+                    'Sowohl \color{*Bearb}{(In Arbeit …)} als auch \color{*Bearb}{(In Arbeit …)} sind so definiert, dass \color{*Bearb}{(In Arbeit …)}.'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Das die Summen gleich sind, ist klar, weil \color{*Bearb}{(In Arbeit …)}.'."\n".
+                    'Das die Gaußsche Summenformel für die natürlichen Superial-Zahlen gilt, ist durch den Beweis der allgemeinen Integration'."\n".
+                    'und durch die Lösung des Integrationsbeispiels \color{*Bearb}{(In Arbeit …)} gezeigt, dass mit Hilfe der Gültigkeit der Gaußschen Summenformel gezeigt werden konnte.'."\n".
+                    'Das die Gaußsche Summenformel für die Ordinalzahlen gilt, sehen wir an \color{*Bearb}{(In Arbeit …)}.'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
