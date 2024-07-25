@@ -182,7 +182,7 @@
                   '\\condb{Erweiterung der Limeszahlen um ihre Vorgänger} \\\\'."\n".
                     'Wir möchten ja erreichen, dass wir innerhalb der Biordinalzahlen generell von jeder Zahl aus nicht nur in die positive Richtung,'."\n".
                     'sondern auch in die negative Richtung zählen, also die Vorgänger benennen, können.'."\n".
-                    'Die sogenannten Limeszahlen\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ordinalzahl:2021}, Motivation und Definition, Limes- und Nachfolgerzahlen.},'."\n".
+                    'Die sogenannten Limeszahlen\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlLimeszahlen}},'."\n".
                     'wie \\term{ω}, \\term{2⋅ω} oder \\term{ω^^{2}}, haben in unserer Konstruktion immer noch keine Vorgänger.'."\n",
                       'Die Vorgänger der Limeszahlen lassen sich nun entsprechend der absolut negativen Zahlen definieren:'."\n".
                     ''))),
@@ -1225,6 +1225,43 @@
                       'Und sie setzt voraus, dass \\term{ω^^{2} – ω} gerade ist, also ganzzahlig durch Zwei geteilt werden kann.'."\n".
                     'Das bedeutet, dass die Zwei als Faktor in beiden Summanden stecken muss.'."\n".
                     'Folglich trägt \\term{ω} den Primfaktor \\term{2} in sich.\\footnote[*Entwick]{\\color{*Entwick}{Dies ist ein erster ganz kleiner Schritt in Richtung der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}. Lässt sich auf diese Weise Schritt für Schritt mehr in diese Richtung zeigen?}}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
+                      
+                'Die Menge der Ordinalzahlen ins Negative erweitert', subline =>
+                  'Um die Limeszahlen in negativer Zählrichtung ohne Vorgänger zu erhalten und so auch alle negativen Zahlen adressieren zu können')),
+                  array( 'text', array( text => array(
+                    'Wollen wir alle natürlichen Zahlen \lm{ n } adressieren, von der Null an bis ins potenziell Unendliche,'."\n".
+                    'dann nutzen wir dafür die Menge der natürlichen Zahlen \lm{ \mathbb{N} } über \lm{ n \in \mathbb{N} }'."\n".
+                    'oder eben das Symbol \lm{ ω } über \lm{ n \in ω }, um das sich die Ordinalzahlen und die Biordinalzahlen drehen.'."\n".
+                    'Wenn wir mehr Zahlen, auch im aktual Unendlichen, dazu nehmen wollen, dann geht dies zum Beispiel über \lm{ n \in 2 ω }.'."\n",
+                      'Die Elemente einer Teilmenge erreichen wir zum Beispiel über \lm{ n \in [5, 897]_{\mathbb{N}} } oder'."\n".
+                    '\lm{ n \in [5, 897]_{ω} } oder \lm{ n \in [5, 897]_{\mathbb{On}} },'."\n".
+                    'deren Teilmengen alle gleich sind, auch, wenn sich die Basismengen teilweise unterscheiden.'."\n",
+                      'Oder im anderen Fall über \lm{ n \in [5, ω + 56]_{2 ω} } oder \lm{ n \in [5, ω + 56]_{\mathbb{On}} },'."\n".
+                    'deren Teilmengen ebenfalls alle gleich sind, auch, wenn sich die Basismengen unterscheiden.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\\condb{Anders bei ganzen Zahlen} \\\\'."\n".
+                    'Wollen wir dann alle ganzen Zahlen \lm{ z } adressieren, positive wie negative,'."\n".
+                    'dann können wir dies über die Menge der ganzen Zahlen \lm{ \mathbb{Z} } mit \lm{ z \in \mathbb{Z} } tun.'."\n".
+                    'Eine Teilmenge erhalten wir über \lm{ z \in [-5, 897]_{\mathbb{Z}} }.'."\n".
+                    'Kein Problem.'."\n",
+                      'Möchten wir nun aber ganze Zahlen aus Mengen mit negativen aktual unendlichen Zahlen adressieren, bekommen wir ein Problem.'."\n".
+                    'Dafür ist die Menge der Biordinalzahlen \lm{ \mathbb{Bn} } nämlich nicht unbedingt geeignet.'."\n",
+                      'Schon im Falle der Teilmenge \lm{ z \in [-5, ω + 56]_{\mathbb{Bn}} } erhalten wir Zahlen wie'."\n".
+                    '\lm{ [ -5, -4, -3, -2, -1, 0, 1, 2 \cdots ω - 3, ω - 2, ω - 1, ω, ω + 1, ω + 2 \cdots ] }.'."\n".
+                    'Davon sind Zahlen mit Differenzen, wie \lm{ ω - 1 }, aber keine Zahlen, die wir in diesem Fall adressieren wollen.'."\n",
+                      'Ebenso nicht im Falle der Teilmenge \lm{ z \in [- (ω + 87), ω + 56]_{\mathbb{Bn}} } mit Zahlen wie'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [ \cdots {- (ω + 3)}, - (ω + 2), - (ω + 1), -ω, - (ω - 1), - (ω - 2) \cdots {-3}, -2, -1, 0, 1, 2 \cdots ω - 3, ω - 2, ω - 1, ω, ω + 1, ω + 2 \cdots ]  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    // '\lm{ [ \cdots {- (ω + 3)}, - (ω + 2), - (ω + 1), -ω, - (ω - 1), - (ω - 2) \cdots {-3}, -2, -1, 0, 1, 2 \cdots ω - 3, ω - 2, ω - 1, ω, ω + 1, ω + 2 \cdots ] },'."\n".
+                    'wo auch \lm{ - (ω - 1) } oder \lm{ - (ω - 2) } nicht dazu gehören sollten.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
                       
