@@ -643,25 +643,51 @@
                     ))),
                   array( 'text', array( text => array(
                     'In der Menge der Ordinalzahlen \lm{ \mathbb{On} } hat \lm{ ω^{ω} } genau so viele Vorgänger, wie ihr Wert groß ist.'."\n".
-                    'Dies Gilt auch für \lm{ \s } in der Menge der natürlichen Superial-Zahlen \lm{ \mathbb{S_{\N}} }.'."\n",
-                      'Allerdings haben in \lm{ \mathbb{S_{\N}} } alle Zahlen einen direkten Vorgänger, außer die Null.'."\n".
-                    'Hingegen haben in \lm{ \mathbb{On} } nicht nur die Null, sondern alle sogenannten Limeszahlen\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlLimeszahlen}},'."\n".
-                    'wie auch \lm{ ω } und selbst \lm{ ω^{ω} }, keine Vorgänger.'."\n".
-                    'Dieser strukturelle Unterschied, trotz Wertgleichheit, ist sehr bemerkenswert und bedarf einer näheren Untersuchung.'."\n",
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\condb{Weitere diesbezügliche Wertgleichheiten} \\\\'."\n".
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    'Dies kann wohl in der unteren Formel nicht stimmen: \lm{ \mathbb{N}_{\infty} }'."\n".
-                    '\color{*Bearb}{(In Arbeit …)}'."\n",
-                      'Als Beispiel möchte ich die Gaußsche Summenformel\footnote{\const{BiOrd_g_footnote_text_GaussscheSummenformel}}'."\n".
-                    'für unser Beispiel anführen, \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}{in angepasster Form},'."\n".
-                    'denn für die Summe von Mengen unendlich vieler Zahlen, die auch mit unendlich großen Zahlen beschrieben werden,'."\n".
-                    'können letztere nicht in der Summe enthalten sein:'."\n".
+                    'Dies Gilt auch für \lm{ \s } in der Menge der natürlichen Superial-Zahlen \lm{ \mathbb{S_{\N}} }.'."\n".
+                    'Diese Eigenschaft wird durch die Gleichheit ihres Wertes ausgedrückt.'."\n",
+                      'In beiden Mengen haben alle Zahlen auch einen direkten Nachfolger.'."\n",
+                      'Und trotzdem sind bei Mengen von ihren Elementen her nicht gleich,'."\n".
+                    'denn in \lm{ \mathbb{S_{\N}} } haben alle Zahlen einen direkten Vorgänger, außer die Null,'."\n".
+                    'hingegen gilt dies in \lm{ \mathbb{On} } nicht, weil nicht nur die Null keine Vorgänger hat,'."\n".
+                    'sondern alle sogenannten Limeszahlen\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlLimeszahlen}},'."\n".
+                    'also auch \lm{ ω } und \lm{ ω^{ω} }, haben ebenfalls keine Vorgänger:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall i \in [ 0, n [_{\mathbb{N}_{\infty}} } i  =  \frac{ n^{2} - n }{ 2 }  }',
+                      array( display => 'on',  latex => '{  [ 0, \s [_{\mathbb{S}_{\Z}}  \neq  ω^{ω}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dieser strukturelle Unterschied, trotz Wertgleichheit, ist sehr bemerkenswert und bedarf einer näheren Untersuchung.'."\n",
+                      'Die beiden Mengen sehen konkret folgendermaßen aus:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [ 0, \s [_{\mathbb{S}_{\Z}}  =  \\\  \quad *\{  \quad\,  0, 1, 2, \cdots n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{1}{2} s + z^{-}, \cdots \frac{1}{2} s - 1,\; \frac{1}{2} s,\; \frac{1}{2} \s + 1, \cdots \frac{1}{2} s + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{2}{3} \s + z^{-}, \cdots \frac{2}{3} \s - 1,\; \frac{2}{3} s,\; \frac{2}{3} s + 1, \cdots \frac{2}{3} \s + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, s + z^{-}, \cdots s - 2, s - 1   \quad *\}  }'),
+                      array( display => 'on',  latex => '{  ω^{ω}  =  [ 0, ω^{ω} [_{\mathbb{On}}  =  \\\  \quad *\{  \quad\;  0, 1, 2, \cdots n, \cdots \\\ \qquad\quad\; ω, ω + 1, ω + 2, ω + 3, \cdots ω + n, \cdots \\\ \qquad\quad\; 2 ω, 2 ω + 1, 2 ω + 2, 2 ω + 3, \cdots 2 ω + n, \cdots \\\ \qquad\quad\; 3 ω, 3 ω + 1, 3 ω + 2, 3 ω + 3, \cdots 3 ω + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, ω^{2}, ω^{2} + 1, ω^{2} + 2, ω^{2} + 3, \cdots ω^{2} + n, \cdots \\\ \qquad\quad\; ω^{2} + ω, ω^{2} + ω + 1, ω^{2} + ω + 2, \cdots ω^{2} + ω + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 2 ω^{2}, 2 ω^{2} + 1, 2 ω^{2} + 2, 2 ω^{2} + 3, \cdots 2 ω^{2} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 3 ω^{2}, 3 ω^{2} + 1, 3 ω^{2} + 2, 3 ω^{2} + 3, \cdots 3 ω^{2} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, ω^{3}, ω^{3} + 1, ω^{3} + 2, ω^{3} + 3, \cdots ω^{3} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 2 ω^{3}, 2 ω^{3} + 1, 2 ω^{3} + 2, 2 ω^{3} + 3, \cdots 2 ω^{3} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 3 ω^{3}, 3 ω^{3} + 1, 3 ω^{3} + 2, 3 ω^{3} + 3, \cdots 3 ω^{3} + n, \cdots \\\ \quad\quad\; \quad \vdots   \quad *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wir sehen:'."\n".
+                    'In der Menge \lm{ \left\lbrack 0, \s \right\lbrack_{\mathbb{S}_{\Z}} } sind Elemente der Menge'."\n".
+                    '\lm{ \left\lbrack 0, ω^{ω} \right\lbrack_{\mathbb{On}} }, wie \lm{ ω }, \lm{ ω + 1 }'."\n".
+                    'oder \lm{ ω^{2} }, \lm{ ω^{2} + 1 } und so weiter, gar nicht enthalten.'."\n".
+                    'Umgekehrt gibt es in \lm{ \left\lbrack 0, ω^{ω} \right\lbrack_{\mathbb{On}} } keinen direkten Vorgänger von \lm{ ω^{ω} },'."\n".
+                    'wie es ihn in der Menge der natürlichen Superial-Zahlen vor \lm{ \s } mit \lm{ \s - 1 } gibt.'."\n".
+                    'Und auch Ausdrücke, wie \lm{ \frac{1}{2} \s } oder \lm{ \frac{2}{3} \s + 1 } können wir in'."\n".
+                    '\lm{ \left\lbrack 0, ω^{ω} \right\lbrack_{\mathbb{On}} } nicht benennen.'."\n",
+                      'Genauer können wir sagen, außer allen natürlichen Zahlen gibt es keine einzige weitere Zahl,'."\n".
+                    'die wir in beiden Mengen explizit angeben können.'."\n".
+                    'Aber die Anzahl aller Zahlen, wie gesagt, und sogar ihre Summe, wie wir gleich sehen, sind in beiden Mengen gleich.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Summengleichheit trotz der strukturellen Unterschiede} \\\\'."\n".
+                    'Mit der \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}{angepassten Gaußschen Summenformel}\footnote{\const{BiOrd_g_footnote_text_GaussscheSummenformel}},'."\n".
+                    'damit auch die Berechnung von Summen unendlich großer Mengen, die kein größtes Element haben, möglich ist,'."\n".
+                    'können wir die Summen ganzer Zahlen von Null bis ohne \lm{ \s } oder \lm{ ω^{ω} } berechnen:'."\n".
+                    '\\\\ \color{*Bearb}{(Dies kann wohl in der ersten Formel mit \lm{ \mathbb{N}_{\infty} } nicht stimmen.)}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall i \in [ 0, n [_{\mathbb{N}_{\infty}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -678,48 +704,42 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall i \in [ 0, \s [_{\mathbb{S}_{\Z}} } i  =  \frac{ \s^{2} - \s }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \sum_{ \forall i \in ω^{ω} } i  =  \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  ω^{ω}  =  [ 0, ω^{ω} [_{\mathbb{On}}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in [ 0, ω^{ω} [_{\mathbb{On}} } i  =  \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \sum_{ \forall i \in [ 0, \s [_{\mathbb{S}_{\Z}} } \!\!\! i  =  \frac{ \s^{2} - \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \sum_{ \forall i \in [ 0, ω^{ω} [_{\mathbb{On}} } \!\!\!\! i  =  \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Aus der Wertgleichhalt der Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}'."\n".
+                    'Die Richtigkeit der Summe aller natürlichen Superial-Zahlen bis ohne \lm{ \s } ergibt sich aus zwei Dingen zusammen.'."\n".
+                    'Zum einen aus dem allgemeinen Beweis,'."\n".
+                    'dass das \jump{OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration}{Integral die Umkehrung der Ableitung} ist.'."\n".
+                    'Und zum anderen aus dem \jump{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen:Konkretes-Integral}{Beispiel der Integration der Ableitung von \lm{ f(x) = x^{2} }}, also von \lm{ f\'(x) = *〈 2 x *〉. *〈 1 *〉},'."\n".
+                    'in dem genau die angepasste Gaußsche Summenformel zur korrekten Lösung angewandt wird.'."\n",
+                      'Die Richtigkeit der Summe aller Ordinalzahlen bis ohne \lm{ ω^{ω} } ergibt sich ganz einfach aus der Definition der'."\n".
+                    'Ordinalzahlen, die dazu gemacht sind, solche Zusammenhänge über die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    'der natürlichen Zahlen auszudrücken.'."\n",
+                      'Aus der Wertgleichheit beider Werte in der Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}'."\n".
                     'folgt dann'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in [ 0, \s [_{\mathbb{S}_{\Z}} } i  =  \sum_{ \forall i \in ω^{ω} } i  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in [ 0, \s [_{\mathbb{S}_{\Z}} } \!\!\! i  =  \sum_{ \forall i \in [ 0, ω^{ω} [_{\mathbb{On}} } \!\!\!\! i  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'und dies, obwohl die Mengen, deren Elemente hier summiert werden, ja recht unterschiedlich sind.'."\n".
-                    'Und genau hier kann die genauere Untersuchung interessant sein.'."\n",
-                      'Die beiden Mengen sehen folgendermaßen aus:'."\n".
+                    '\color{*Entwick}{Und genau hier kann die genauere Untersuchung interessant sein.}'."\n".
                     ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [ 0, \s [_{\mathbb{S}_{\Z}}  =  \\\  \quad *\{  \quad\,  0, 1, 2, \cdots n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{1}{2} s + z^{-}, \cdots \frac{1}{2} s - 1,\; \frac{1}{2} s,\; \frac{1}{2} \s + 1, \cdots \frac{1}{2} s + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{2}{3} \s + z^{-}, \cdots \frac{2}{3} \s - 1,\; \frac{2}{3} s,\; \frac{2}{3} s + 1, \cdots \frac{2}{3} \s + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, s + z^{-}, \cdots s - 2, s - 1   \quad *\}  }'),
-                      array( display => 'on',  latex => '{  ω^{ω}  =  [ 0, ω^{ω} [_{\mathbb{On}}  =  \\\  \quad *\{  \quad\;  0, 1, 2, \cdots n, \cdots \\\ \qquad\quad\; ω, ω + 1, ω + 2, ω + 3, \cdots ω + n, \cdots \\\ \qquad\quad\; 2 ω, 2 ω + 1, 2 ω + 2, 2 ω + 3, \cdots 2 ω + n, \cdots \\\ \qquad\quad\; 3 ω, 3 ω + 1, 3 ω + 2, 3 ω + 3, \cdots 3 ω + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, ω^{2}, ω^{2} + 1, ω^{2} + 2, ω^{2} + 3, \cdots ω^{2} + n, \cdots \\\ \qquad\quad\; ω^{2} + ω, ω^{2} + ω + 1, ω^{2} + ω + 2, \cdots ω^{2} + ω + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 2 ω^{2}, 2 ω^{2} + 1, 2 ω^{2} + 2, 2 ω^{2} + 3, \cdots 2 ω^{2} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 3 ω^{2}, 3 ω^{2} + 1, 3 ω^{2} + 2, 3 ω^{2} + 3, \cdots 3 ω^{2} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, ω^{3}, ω^{3} + 1, ω^{3} + 2, ω^{3} + 3, \cdots ω^{3} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 2 ω^{3}, 2 ω^{3} + 1, 2 ω^{3} + 2, 2 ω^{3} + 3, \cdots 2 ω^{3} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 3 ω^{3}, 3 ω^{3} + 1, 3 ω^{3} + 2, 3 ω^{3} + 3, \cdots 3 ω^{3} + n, \cdots \\\ \quad\quad\; \quad \vdots   \quad *\}  }'),
-                    ))),
                   array( 'text', array( text => array(
-                    'Beide Mengen haben nach unseren bisherigen Erkenntnissen gleich viele Elemente.'."\n".
-                    'Sind aber in ihrer Struktur, wie wir hier sehen, wirklich im Detail sehr unterschiedlich:'."\n",
-                      'In der Menge \lm{ \left\lbrack 0, \s \right\lbrack_{\mathbb{S}_{\Z}} } sind \lm{ ω }, \lm{ ω + 1 }'."\n".
-                    'oder \lm{ ω^{2} }, \lm{ ω^{2} + 1 } und so weiter gar nicht direkt enthalten.'."\n",
-                      'Umgekehrt gibt es in \lm{ \left\lbrack 0, ω^{ω} \right\lbrack_{\mathbb{On}} } keine direkten Vorgänger von \lm{ ω^{ω} },'."\n".
-                    'wie es sie in der anderen Menge vor \lm{ \s } gibt, wie \lm{ \s - 1 }.'."\n".
-                    'Auch Ausdrücke, wie \lm{ \frac{1}{2} \s } oder \lm{ \frac{2}{3} \s + 1 } können wir hier nicht explizit benennen.'."\n",
-                      'Genauer können wir sagen, außer allen natürlichen Zahlen gibt es keine einzige weitere Zahl,'."\n".
-                    'die wir in beiden Mengen explizit angeben können.'."\n".
-                    'Die Anzahl aller Zahlen und ihre Summe sind in beiden Mengen aber gleich.'."\n",
-                      'Das die Anzahlen gleich sind ist klar, weil \color{*Bearb}{(In Arbeit …)}.'."\n".
-                    'Sowohl \color{*Bearb}{(In Arbeit …)} als auch \color{*Bearb}{(In Arbeit …)} sind so definiert, dass \color{*Bearb}{(In Arbeit …)}.'."\n".
-                    '\color{*Bearb}{(In Arbeit …)}'."\n",
-                      'Das die Summen gleich sind, ist klar, weil \color{*Bearb}{(In Arbeit …)}.'."\n".
-                    'Das die Gaußsche Summenformel für die natürlichen Superial-Zahlen gilt, ist durch den Beweis der allgemeinen Integration'."\n".
-                    'und durch die Lösung des Integrationsbeispiels \color{*Bearb}{(In Arbeit …)} gezeigt, dass mit Hilfe der Gültigkeit der Gaußschen Summenformel gezeigt werden konnte.'."\n".
-                    'Das die Gaußsche Summenformel für die Ordinalzahlen gilt, sehen wir an \color{*Bearb}{(In Arbeit …)}.'."\n".
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                  '\condb{Die Wertgleichheit von \lm{ \s } und \lm{ ω^{ω} } markiert die besondere Bedeutung des Werts} \\\\'."\n".
+                    'Das der Wert der aktual unendlichen geometrischen Teilung der Eins \lm{ \s } mit dem Wert'."\n".
+                    'der \color{*Bearb}{aktual unendlich möglichen Varianten an Polynomen} \lm{ ω^{ω} } zusammenfällt, drückt seine besondere Bedeutung aus.'."\n",
+                      'Es handelt sich nicht um irgendeinen Wert, sondern darum, wie oft wir die endlich lange Strecke von der'."\n".
+                    'Null bis zur Eins normiert teilen können, ohne zur Beschreibung der Teilungspunkte aktual unendlich kleine'."\n".
+                    'Summanden benutzen zu müssen, die selber wieder gebrochen sind.'."\n".
+                    'Wir kommen auf diese Weise so nämlich mit ganzen Zahlen im unendlich Kleinen aus und erhalten eine normierte'."\n".
+                    'Vorschrift, von einer Skala natürlicher oder ganzer Zahlen zur nächsten unendlich kleineren oder unendlich größeren zu gelangen.'."\n".
+                    'Und der Skalenfaktor orientiert sich an der Menge aller endlichen Primzahlen \lm{ \mathbb{P} }, die alle möglichen dieser Teilungen'."\n".
+                    'damit normiert vorgibt.'."\n",
+                      'Gleichzeitig sehen wir, dass wir diese Werte mit Polynomen \color{*Bearb}{– also auch mit elliptischen Kurven oder gar algebraischen Kurven –}'."\n".
+                    'vollständig beschreiben können.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(

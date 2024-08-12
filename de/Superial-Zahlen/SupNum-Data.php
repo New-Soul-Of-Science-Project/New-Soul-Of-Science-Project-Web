@@ -60,7 +60,7 @@
           'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-mit-Limes' => array( headline_text => 'SN.AbIn.1'),
           'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-Limes-ist-s-hoch-minus-Eins' => array( headline_text => 'SN.AbIn.2'),
           'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins' => array( headline_text => 'SN.AbIn.3'),
-          'OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration' => array( headline_text => 'Die Ableitung als Umkehrung der Integration'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration' => array( headline_text => 'Die Ableitung ist die Umkehrung der Integration'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Ableitungen-Integrale:Integration:Integration-Umkehrung-Ableitung' => array( headline_text => 'Die Integration als Umkehrung der Ableitung'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation' => array( headline_text => 'SN.AbIn.4'),
           'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-basis' => array( headline_text => 'SN.AbIn.10'),

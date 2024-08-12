@@ -349,7 +349,7 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration', text =>
                       
-                'Die Ableitung als Umkehrung der Integration', subline =>
+                'Die Ableitung ist die Umkehrung der Integration', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Schauen wir uns an, ob wir die Integration einer allgemeinen Funktion mit der Ableitung wieder'."\n".
