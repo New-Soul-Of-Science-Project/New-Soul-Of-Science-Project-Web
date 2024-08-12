@@ -629,7 +629,7 @@
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:X', text =>
                       
                 'Die superiale Basis \lm{ \s } und die Ordinalzahl \lm{ ω^{ω} } im Strukturvergleich', subline =>
-                  'Vom Wert her gleich und doch verscheieden')),
+                  'Vom Wert her gleich und doch verschieden')),
                   array( 'text', array( text => array(
                     'Betrachten wir die arithmetische Struktur der Geometrie \lm{ \s } und die Adressierbarkeit ihrer Punkte,'."\n".
                     'die durch die Teilung durch \lm{ \s } entstehen, dann ist es interessant, dass wir durch'."\n".
@@ -657,13 +657,16 @@
                       array( display => 'on',  latex => '{  [ 0, \s [_{\mathbb{S}_{\Z}}  \neq  ω^{ω}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dieser strukturelle Unterschied, trotz Wertgleichheit, ist sehr bemerkenswert und bedarf einer näheren Untersuchung.'."\n",
+                    'Der strukturelle Unterschied dieser beiden Mengen – hier werden nicht die Werte betrachtet –,'."\n".
+                    'trotz Wertgleichheit, ist sehr bemerkenswert und bedarf einer näheren Untersuchung.'."\n",
                       'Die beiden Mengen sehen konkret folgendermaßen aus:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [ 0, \s [_{\mathbb{S}_{\Z}}  =  \\\  \quad *\{  \quad\,  0, 1, 2, \cdots n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{1}{2} s + z^{-}, \cdots \frac{1}{2} s - 1,\; \frac{1}{2} s,\; \frac{1}{2} \s + 1, \cdots \frac{1}{2} s + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \frac{2}{3} \s + z^{-}, \cdots \frac{2}{3} \s - 1,\; \frac{2}{3} s,\; \frac{2}{3} s + 1, \cdots \frac{2}{3} \s + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, s + z^{-}, \cdots s - 2, s - 1   \quad *\}  }'),
-                      array( display => 'on',  latex => '{  ω^{ω}  =  [ 0, ω^{ω} [_{\mathbb{On}}  =  \\\  \quad *\{  \quad\;  0, 1, 2, \cdots n, \cdots \\\ \qquad\quad\; ω, ω + 1, ω + 2, ω + 3, \cdots ω + n, \cdots \\\ \qquad\quad\; 2 ω, 2 ω + 1, 2 ω + 2, 2 ω + 3, \cdots 2 ω + n, \cdots \\\ \qquad\quad\; 3 ω, 3 ω + 1, 3 ω + 2, 3 ω + 3, \cdots 3 ω + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, ω^{2}, ω^{2} + 1, ω^{2} + 2, ω^{2} + 3, \cdots ω^{2} + n, \cdots \\\ \qquad\quad\; ω^{2} + ω, ω^{2} + ω + 1, ω^{2} + ω + 2, \cdots ω^{2} + ω + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 2 ω^{2}, 2 ω^{2} + 1, 2 ω^{2} + 2, 2 ω^{2} + 3, \cdots 2 ω^{2} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 3 ω^{2}, 3 ω^{2} + 1, 3 ω^{2} + 2, 3 ω^{2} + 3, \cdots 3 ω^{2} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, ω^{3}, ω^{3} + 1, ω^{3} + 2, ω^{3} + 3, \cdots ω^{3} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 2 ω^{3}, 2 ω^{3} + 1, 2 ω^{3} + 2, 2 ω^{3} + 3, \cdots 2 ω^{3} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 3 ω^{3}, 3 ω^{3} + 1, 3 ω^{3} + 2, 3 ω^{3} + 3, \cdots 3 ω^{3} + n, \cdots \\\ \quad\quad\; \quad \vdots   \quad *\}  }'),
+                      array( display => 'on',  latex => '{  [ 0, \s [_{\mathbb{S}_{\Z}}  =  \\\  \quad *\{  \quad\,  0, 1, 2, \cdots n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{1}{2} \s + z^{-}, \cdots \tfrac{1}{2} \s - 1,\; \tfrac{1}{2} \s,\; \tfrac{1}{2} \s + 1, \cdots \tfrac{1}{2} \s + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{2}{3} \s + z^{-}, \cdots \tfrac{2}{3} \s - 1,\; \tfrac{2}{3} \s,\; \tfrac{2}{3} \s + 1, \cdots \tfrac{2}{3} \s + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, \s + z^{-}, \cdots \s - 2, \s - 1   \quad *\}  }',
+                                          label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s-explizit', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s-explizit}', label_incr => true),
+                      array( display => 'on',  latex => '{  ω^{ω}  =  [ 0, ω^{ω} [_{\mathbb{On}}  =  \\\  \quad *\{  \quad\;  0, 1, 2, \cdots n, \cdots \\\ \qquad\quad\; ω, ω + 1, ω + 2, ω + 3, \cdots ω + n, \cdots \\\ \qquad\quad\; 2 ω, 2 ω + 1, 2 ω + 2, 2 ω + 3, \cdots 2 ω + n, \cdots \\\ \qquad\quad\; 3 ω, 3 ω + 1, 3 ω + 2, 3 ω + 3, \cdots 3 ω + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, ω^{2}, ω^{2} + 1, ω^{2} + 2, ω^{2} + 3, \cdots ω^{2} + n, \cdots \\\ \qquad\quad\; ω^{2} + ω, ω^{2} + ω + 1, ω^{2} + ω + 2, \cdots ω^{2} + ω + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 2 ω^{2}, 2 ω^{2} + 1, 2 ω^{2} + 2, 2 ω^{2} + 3, \cdots 2 ω^{2} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 3 ω^{2}, 3 ω^{2} + 1, 3 ω^{2} + 2, 3 ω^{2} + 3, \cdots 3 ω^{2} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, ω^{3}, ω^{3} + 1, ω^{3} + 2, ω^{3} + 3, \cdots ω^{3} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 2 ω^{3}, 2 ω^{3} + 1, 2 ω^{3} + 2, 2 ω^{3} + 3, \cdots 2 ω^{3} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \qquad\quad\;\, 3 ω^{3}, 3 ω^{3} + 1, 3 ω^{3} + 2, 3 ω^{3} + 3, \cdots 3 ω^{3} + n, \cdots \\\ \quad\quad\; \quad \vdots   \quad *\}  }',
+                                          label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-omega-hoch-omega-explizit', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-omega-hoch-omega-explizit}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Wir sehen:'."\n".
@@ -725,10 +728,30 @@
                     ))),
                   array( 'text', array( text => array(
                     'und dies, obwohl die Mengen, deren Elemente hier summiert werden, ja recht unterschiedlich sind.'."\n".
-                    '\color{*Entwick}{Und genau hier kann die genauere Untersuchung interessant sein.}'."\n".
+                    '\color{*Entwick}{Und genau hier kann die nähere Untersuchung interessant sein.}'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Die Wertgleichheit von \lm{ \s } und \lm{ ω^{ω} } markiert die besondere Bedeutung des Werts} \\\\'."\n".
+                  '\condb{Nähere Untersuchung} \\\\'."\n".
+                    'Wenn wir die Menge \lm{ \left\lbrack 0, \s \right\lbrack_{\mathbb{S}_{\Z}} } aller natürlichen Superial-Zahlen'."\n".
+                    'bis ohne \lm{ \s } mit \lm{ ω^{ω} } ausdrücken, dann erhalten wir:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [ 0, \s [_{\mathbb{S}_{\Z}}  =  \\\  \quad *\{  \quad\,  0, 1, 2, \cdots n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{1}{2} ω^{ω} + z^{-}, \cdots \tfrac{1}{2} ω^{ω} - 1,\; \tfrac{1}{2} ω^{ω},\; \tfrac{1}{2} ω^{ω} + 1, \cdots \tfrac{1}{2} ω^{ω} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{2}{3} ω^{ω} + z^{-}, \cdots \tfrac{2}{3} ω^{ω} - 1,\; \tfrac{2}{3} ω^{ω},\; \tfrac{2}{3} ω^{ω} + 1, \cdots \tfrac{2}{3} ω^{ω} + n, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, ω^{ω} + z^{-}, \cdots ω^{ω} - 2, ω^{ω} - 1   \quad *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Vergleichen wir ihre Elemente nun mit denen der davor stehenden Menge \lm{ \left\lbrack 0, ω^{ω} \right\lbrack_{\mathbb{On}} } in Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-omega-hoch-omega-explizit}'."\n".
+                    'so fällt auf, dass die aktual unendlich großen Elemente der Menge hier mit endlichen Faktoren vor \lm{ ω^{ω} }'."\n".
+                    'ausgedrückt werden, also quasi im Bereich von \lm{ ω^{ω} }, während die genannte Menge \lm{ \left\lbrack 0, ω^{ω} \right\lbrack_{\mathbb{On}} }'."\n".
+                    'oben nur Elemente weiter unterhalb von \lm{ ω^{ω} } enthält, ohne \lm{ ω^{ω} } selbst zu in den Ausdrücken benutzen.'."\n",
+                      'Umso erstaunlicher, dass beide Mengen nicht nur gleich viele Elemente, sondern auch die gleiche Summe haben,'."\n".
+                    'wie vorstehend gezeigt.'."\n".
+                    'Es stellt sich demnach so dar, dass beide Mengen, trotz ihrer Unterschiede, im Grunde äquivalent sind.'."\n".
+                    'Die endlichen Faktoren vor \lm{ ω^{ω} } beziehungsweise \lm{ \s } werden also in ihrer potenziellen Unendlichkeit doch sehr klein,'."\n".
+                    'während die Polynome des Wertes \lm{ ω } potenziell doch sehr groß werden.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Die Wertgleichheit von \lm{ \s } und \lm{ ω^{ω} } markiert die besondere Bedeutung ihres Werts} \\\\'."\n".
                     'Das der Wert der aktual unendlichen geometrischen Teilung der Eins \lm{ \s } mit dem Wert'."\n".
                     'der \color{*Bearb}{aktual unendlich möglichen Varianten an Polynomen} \lm{ ω^{ω} } zusammenfällt, drückt seine besondere Bedeutung aus.'."\n",
                       'Es handelt sich nicht um irgendeinen Wert, sondern darum, wie oft wir die endlich lange Strecke von der'."\n".
@@ -738,7 +761,7 @@
                     'Vorschrift, von einer Skala natürlicher oder ganzer Zahlen zur nächsten unendlich kleineren oder unendlich größeren zu gelangen.'."\n".
                     'Und der Skalenfaktor orientiert sich an der Menge aller endlichen Primzahlen \lm{ \mathbb{P} }, die alle möglichen dieser Teilungen'."\n".
                     'damit normiert vorgibt.'."\n",
-                      'Gleichzeitig sehen wir, dass wir diese Werte mit Polynomen \color{*Bearb}{– also auch mit elliptischen Kurven oder gar algebraischen Kurven –}'."\n".
+                      'Gleichzeitig sehen wir, dass wir diese Werte mit Polynomen \color{*Bearb}{– also mit elliptischen Kurven und abschließend mit algebraischen Kurven –}'."\n".
                     'vollständig beschreiben können.'."\n".
                     ''))),
                       
