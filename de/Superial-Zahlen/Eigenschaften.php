@@ -454,7 +454,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'So kann der Eindruck einer Spiegelung entstehen, wenn wir das Intervall nicht explizit dranhängen würden.'."\n",
-                      'Demnach sind wir sicher, dass die Anzahl der endlichen ganzen Zahlen wirklich \lm{ 2 \cdot \omega } ist.'."\n".
+                      'Demnach sind wir sicher, dass die Anzahl der endlichen ganzen Zahlen wirklich \lm{ 2 \cdot ω } ist.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:X', text =>
                       
@@ -603,7 +603,7 @@
                     '\color{*Bearb}{(In Arbeit …)}'."\n",
                       '\color{*Bearb}{Im Falle der Teilung der Strecke durch alle endlichen Primzahlen in der vollständigen induktiven Potenz \lm{ ω }'."\n".
                     'haben die sich ergebenden Punkte keine aktual unendlichen Summanden.'."\n".
-                    'Und es werden alle Punkte der Teilung gezählt. (Das schein mit verkehrt!)}'."\n",
+                    'Und es werden alle Punkte der Teilung gezählt. (Das scheint mir verkehrt!)}'."\n",
                       'Im Falle der Zählschritte zählen wir im Stellenwertsystem der Superial-Zahlen in der ersten aktual unendlich kleinen'."\n".
                     'Potenz \lm{ \s^{-1} } in ganzzahligen Schritten je adressiertem Koeffizienten alle ganzen Zahlen und'."\n".
                     'nur bei der Null die natürlichen Zahlen und bei der Eins nur die negativen ganzen Zahlen.'."\n".
@@ -750,6 +750,104 @@
                     'Die endlichen Faktoren vor \lm{ ω^{ω} } beziehungsweise \lm{ \s } werden also in ihrer potenziellen Unendlichkeit doch sehr klein,'."\n".
                     'während die Polynome des Wertes \lm{ ω } potenziell doch sehr groß werden.'."\n".
                     ''))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
+                Title => '\small{Berechnung der Summe innerhalb der natürlichen Superial-Zahlen …}',
+                TitleVis => 'Berechnung der Summe innerhalb der natürlichen Superial-Zahlen:', ParagraphList => array(
+
+                  array( 'text', array( text => array(
+                    'Zur Berechnung der Summe dürfen wir die \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}{angepassten Gaußschen Summenformel}'."\n".
+                    'einsetzen.'."\n".
+                    'Dies gilt, weil wir durch den allgemeinen Beweis der \jump{OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration}{Umkehrung der Ableitung mittels Integration}'."\n".
+                    'sowie durch ein \jump{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen:Konkretes-Integral}{konkretes Beispiel der Integration}'."\n".
+                    'gezeigt haben, dass wir nur mit Hilfe der angepassten Gaußschen Summenformel die konkrete Ableitung umkehren können.'."\n".
+                    'Insofern ist die Berechnung der folgenden Summe nicht der Beweis dafür, dass diese Summe innerhalb der natürlichen Superial-Zahlen'."\n".
+                    'korrekt ist, denn das wussten wir zuvor schon, sondern die Probe, dass sich dies nach all unserem Wissen auch wirklich ergibt.'."\n".
+                    'Es ist ein Plausibilitäts-Check.'."\n",
+                      'Wenn wir die Elemente der Menge \lm{ \left\lbrack 0, \s \right\lbrack_{\mathbb{S}_{\Z}} }'."\n".
+                    'summieren, ergibt sich nach der \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}{angepassten Gaußschen Summenformel}'."\n".
+                    'für die erste Zeile, die alle endlichen natürlichen Zahlen enthält, die Summe:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall i \in \mathbb{N} } i  =  \sum_{ \forall i \in ω } i  =  \frac{ ω^{2} - ω }{ 2 }  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Um die mittleren Zeilen der Gesamtsumme, ohne die erste und die letzte, zu berechnen, benötigen wir folgende Formeln:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \# \mathbb{Z}^{-}  =  \# \mathbb{N}  =  ω  =  \mathbb{N}  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N}', label_incr => false),
+                      array( display => 'on',  latex => '{  \# \mathbb{Z}  =  2 ω  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => false),
+                      array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  - ω  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => false),
+                      array( display => 'on',  latex => '{  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } z^{-}  =  - \frac{ ω^{2} - ω }{ 2 } - ω  }'),
+                      array( display => 'on',  latex => '{  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# ] 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω } - 1  }'),
+                      array( display => 'on',  latex => '{  \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Für die mittleren Zeilen ergibt sich dann, wenn wir die Summe mit \lm{ y } zur Übersichtlichkeit substituieren:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \sum_{ \forall z \in \mathbb{Z} } *( a \cdot ω^{ω} + z *)  =  y  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } *( a \cdot ω^{ω} \cdot \# \mathbb{Z} + \! \sum_{ \forall z \in \mathbb{Z} }  z *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } *( a \cdot ω^{ω} \cdot 2 ω + \! \sum_{ \forall z \in \mathbb{Z} }  z *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } *( a \cdot ω^{ω} \cdot 2 ω + *( - ω *) *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } *( a \cdot ω^{ω} \cdot 2 ω - ω *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \!\! a \cdot ω^{ω} \cdot 2 ω \;\; - \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \!\! ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \!\! a \;\; - \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \!\! ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \!\! a \;\; - \;\; *( \frac{ \s }{ 2 ω } - 1 *) \cdot ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in ] 0, 1 [_{\mathbb{A}_{\S}} } \!\! a \;\; - \;\; *( \frac{ ω^{ω} }{ 2 ω } - 1 *) \cdot ω  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Um die noch enthaltene variable Summe zu berechnen, können wir, ohne sie zu verändern, die Null in ihre Basismenge integrieren'."\n".
+                    'und sie dann mit Hilfe von Formel \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}'."\n".
+                    'berechnen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in [ 0, 1 [_{\mathbb{A}_{\S}} } \!\! a  \;\; - \;\; *( \frac{ ω^{ω} }{ 2 ω } - 1 *) \cdot ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in [ 0, 1 [_{\mathbb{A}_{\S}} } \!\! a  \;\; - \;\; *( \frac{ ω^{ω} \cdot ω }{ 2 ω } - ω *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in [ 0, 1 [_{\mathbb{A}_{\S}} } \!\! a  \;\; - \;\; *( \frac{ ω^{ω} }{ 2 } - ω *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot \!\! \sum_{ \forall a \in [ 0, 1 [_{\mathbb{A}_{\S}} } \!\! a  \;\; - \;\; \frac{ ω^{ω} }{ 2 } \;\; + \;\; ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot *( \frac{ \s }{ 4 ω } - \frac{ 1 }{ 2 } *)  \;\; - \;\; \frac{ ω^{ω} }{ 2 } \;\; + \;\; ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  ω^{ω} \cdot 2 ω \cdot *( \frac{ ω^{ω} }{ 4 ω } - \frac{ 1 }{ 2 } *)  \;\; - \;\; \frac{ ω^{ω} }{ 2 } \;\; + \;\; ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  \frac{ ω^{ω} \cdot 2 ω \cdot ω^{ω} }{ 4 ω } - \frac{ ω^{ω} \cdot 2 ω }{ 2 } - \frac{ ω^{ω} }{ 2 } + ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  \frac{ *( ω^{ω} *)^{2} }{ 2 } - ω^{ω} \cdot ω - \frac{ ω^{ω} }{ 2 } + ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 } - ω^{ω} \cdot ω + ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y  =  \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 } - *( ω^{ω} \cdot ω - ω *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die letzte Zeile summiert sich dann zu:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } *( ω^{ω} + z^{-} *)  =  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } ω^{ω} \; + \! \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } z^{-}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \!\! \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } *( ω^{ω} + z^{-} *)  =  ω^{ω} \cdot ω \; + \! \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } z^{-}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \!\! \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } *( ω^{ω} + z^{-} *)  =  ω^{ω} \cdot ω + *( - \frac{ ω^{2} - ω }{ 2 } - ω *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wenn wir alle drei Summen nun addieren'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ \forall a \in [ 0, \s [_{\mathbb{S}_{\Z}} }  =  \frac{ ω^{2} - ω }{ 2 } \\\ \qquad\qquad\quad\;\; + \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 } - *( ω^{ω} \cdot ω - ω *) \\\ \qquad\qquad\quad\;\; + ω^{ω} \cdot ω + \! *( - \frac{ ω^{2} - ω }{ 2 } - ω *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \!\! \sum_{ \forall a \in [ 0, \s [_{\mathbb{S}_{\Z}} }  =  \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 } - ω^{ω} \cdot ω + ω \\\ \qquad\qquad\qquad\qquad\;\; + ω^{ω} \cdot ω - ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \!\! \sum_{ \forall a \in [ 0, \s [_{\mathbb{S}_{\Z}} }  =  \frac{ *( ω^{ω} *)^{2} - ω^{ω} }{ 2 }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'ergibt sich auch tatsächlich das erwartete Ergebnis.'."\n".
+                    ''))),
+
+                    ))),
+
                   array( 'text', array( text => array(
                   '\condb{Die Wertgleichheit von \lm{ \s } und \lm{ ω^{ω} } markiert die besondere Bedeutung ihres Werts} \\\\'."\n".
                     'Das der Wert der aktual unendlichen geometrischen Teilung der Eins \lm{ \s } mit dem Wert'."\n".
