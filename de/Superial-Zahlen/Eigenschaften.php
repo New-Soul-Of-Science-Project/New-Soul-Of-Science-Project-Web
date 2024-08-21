@@ -855,8 +855,9 @@
                     'Vorschrift, von einer Skala natürlicher oder ganzer Zahlen zur nächsten unendlich kleineren oder unendlich größeren zu gelangen.'."\n".
                     'Und unser so definierter Skalenfaktor basiert auf der Menge aller endlichen Primzahlen \lm{ \mathbb{P} }, die alle möglichen dieser Teilungen'."\n".
                     'damit normiert vorgibt.'."\n",
-                      'Gleichzeitig sehen wir, dass wir diese Werte mit Polynomen \color{*Bearb}{– also mit elliptischen Kurven und abschließend mit algebraischen Kurven –}'."\n".
-                    'vollständig beschreiben können.'."\n".
+                      '\color{*Bearb}{Gleichzeitig sehen wir, dass die Koeffizienten von \lm{ \s } in einer Fraktalebene \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{den Nullstellen von Polynomen entsprechen},'."\n".
+                    'also mit elliptischen Kurven\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ElliptischeKurve:2024}.} und abschließend mit algebraischen Kurven\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeKurve:2023}.}'."\n".
+                    'vollständig dargestellt werden können.}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
