@@ -846,6 +846,14 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Die Wertgleichheit von \lm{ \s } und \lm{ ω^{ω} } sowie die Gleichheit der Summe ihrer natürlichen Vorgänger markiert die besondere Bedeutung ihres Werts} \\\\'."\n".
+                    ''))),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{X}',
+                    '• Mein Gefühl sagt mir, dass die Wertgleichheit von \lm{ \s } und \lm{ ω^{ω} } und deren unterschiedliche Zählstruktur etwas mit dem Zusammenhang zwischen den Nullstellen von Polynomen und deren Lösungen in Form von algebraischen Zahlen zu tun hat.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
                     'Das der Wert der aktual unendlichen geometrischen Teilung der Eins \lm{ \s } mit dem Wert'."\n".
                     'der \color{*Bearb}{aktual unendlich möglichen Varianten an Polynomen} \lm{ ω^{ω} } zusammenfällt, drückt seine besondere Bedeutung aus.'."\n",
                       'Es handelt sich nicht um irgendeinen Wert, sondern darum, wie oft wir die endlich lange Strecke von der'."\n".
