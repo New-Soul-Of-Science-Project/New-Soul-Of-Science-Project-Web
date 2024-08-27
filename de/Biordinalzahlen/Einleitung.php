@@ -1226,16 +1226,16 @@
                     'Das bedeutet, dass die Zwei als Faktor in beiden Summanden stecken muss.'."\n".
                     'Folglich trägt \\term{ω} den Primfaktor \\term{2} in sich.\\footnote[*Entwick]{\\color{*Entwick}{Dies ist ein erster ganz kleiner Schritt in Richtung der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}. Lässt sich auf diese Weise Schritt für Schritt mehr in diese Richtung zeigen?}}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:MengeOrdinalzahlenInsNegativeErweitert', text =>
                       
                 'Die Menge der Ordinalzahlen ins Negative erweitert', subline =>
-                  'Um die Limeszahlen in negativer Zählrichtung ohne Vorgänger zu erhalten und so auch alle negativen Zahlen adressieren zu können')),
+                  'Die Limeszahlen in negativer Zählrichtung erhalten, ohne Vorgänger, und so positive wie negativen Zahlen adressieren')),
                   array( 'text', array( text => array(
                     'Wollen wir alle natürlichen Zahlen \lm{ n } adressieren, von der Null an bis ins potenziell Unendliche,'."\n".
-                    'dann nutzen wir dafür die Menge der natürlichen Zahlen \lm{ \mathbb{N} } über \lm{ n \in \mathbb{N} }'."\n".
-                    'oder eben das Symbol \lm{ ω } über \lm{ n \in ω }, um das sich die Ordinalzahlen und die Biordinalzahlen drehen.'."\n".
-                    'Wenn wir mehr Zahlen, auch im aktual Unendlichen, dazu nehmen wollen, dann geht dies zum Beispiel über \lm{ n \in 2 ω }.'."\n",
-                      'Die Elemente einer Teilmenge erreichen wir zum Beispiel über \lm{ n \in [5, 897]_{\mathbb{N}} } oder'."\n".
+                    'dann nutzen wir dafür die Menge der natürlichen Zahlen \lm{ \mathbb{N} } durch \lm{ n \in \mathbb{N} }'."\n".
+                    'oder mit dem Symbol \lm{ ω } der Ordinalzahlen oder Biordinalzahlen durch \lm{ n \in ω }.'."\n".
+                    'Wenn wir mehr Zahlen, auch im aktual Unendlichen, dazu nehmen wollen, dann geht dies zum Beispiel durch \lm{ n \in 2 ω }.'."\n",
+                      'Die Elemente einer Teilmenge erreichen wir dann durch \lm{ n \in [5, 897]_{\mathbb{N}} } oder'."\n".
                     '\lm{ n \in [5, 897]_{ω} } oder \lm{ n \in [5, 897]_{\mathbb{On}} },'."\n".
                     'deren Teilmengen alle gleich sind, auch, wenn sich die Basismengen teilweise unterscheiden.'."\n",
                       'Oder im anderen Fall über \lm{ n \in [5, ω + 56]_{2 ω} } oder \lm{ n \in [5, ω + 56]_{\mathbb{On}} },'."\n".
@@ -1243,25 +1243,43 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\\condb{Anders bei ganzen Zahlen} \\\\'."\n".
-                    'Wollen wir dann alle ganzen Zahlen \lm{ z } adressieren, positive wie negative,'."\n".
+                    'Es gibt Fälle, in denen wir Mengen aller endlichen ganzen Zahlen, aber dazu auch von ihrem Wert her über das endliche hinausgehende'."\n".
+                    'aktual unendliche ganze Zahlen benötigen.'."\n".
+                    'Und zwar auch im negativen Bereich.'."\n".
+                    'Ein solcher Fall tritt auf, wenn wir die \jump{OM:SupNum:Struktur-Geometrie:Vortext:Alle-Strecken-natuerlichen-Zahlen-vernetzen}{arithmetische Struktur der Geometrie untersuchen}.'."\n".
+                    'Denn wir wollen dort alle Punkte in einem Netz unendlich vieler Teilungen adressieren, das sich auch über die'."\n".
+                    'ganzen negativen Zahlen erstrecken soll.'."\n".
+                    'In diesem Fall kommen wir aber mit den Biordinalzahlen \lm{ \mathbb{Bn} } nicht weiter, weil sie für alle Limeszahlen Vorgänger'."\n".
+                    'und Nachfolger haben und das sind zu viele Adressen.'."\n".
+                    'Sondern wir brauchen die Ordinalzahlen einfach noch einmal in negativer Richtung gespiegelt.'."\n",
+                      'Wollen wir alle endlichen ganzen Zahlen \lm{ z } adressieren, positive wie negative,'."\n".
                     'dann können wir dies über die Menge der ganzen Zahlen \lm{ \mathbb{Z} } mit \lm{ z \in \mathbb{Z} } tun.'."\n".
                     'Eine Teilmenge erhalten wir über \lm{ z \in [-5, 897]_{\mathbb{Z}} }.'."\n".
                     'Kein Problem.'."\n",
-                      'Möchten wir nun aber ganze Zahlen aus Mengen mit negativen aktual unendlichen Zahlen adressieren, bekommen wir ein Problem.'."\n".
-                    'Dafür ist die Menge der Biordinalzahlen \lm{ \mathbb{Bn} } nämlich nicht unbedingt geeignet.'."\n",
-                      'Schon im Falle der Teilmenge \lm{ z \in [-5, ω + 56]_{\mathbb{Bn}} } erhalten wir Zahlen wie'."\n".
-                    '\lm{ [ -5, -4, -3, -2, -1, 0, 1, 2 \cdots ω - 3, ω - 2, ω - 1, ω, ω + 1, ω + 2 \cdots ] }.'."\n".
-                    'Davon sind Zahlen mit Differenzen, wie \lm{ ω - 1 }, aber keine Zahlen, die wir in diesem Fall adressieren wollen.'."\n",
+                      'Jedoch schon im Falle der Teilmenge \lm{ z \in [-5, ω + 56]_{\mathbb{Bn}} } würden wir Zahlen wie'."\n".
+                    '\lm{ [ -5, -4, -3, -2, -1, 0, 1, 2 \cdots ω - 3, ω - 2, ω - 1, ω, ω + 1, ω + 2 \cdots ] } erhalten.'."\n".
+                    'Davon sind Zahlen mit Differenzen, wie \lm{ ω - 1 }, aber eben keine Zahlen, die wir in diesem Fall adressieren wollen.'."\n",
                       'Ebenso nicht im Falle der Teilmenge \lm{ z \in [- (ω + 87), ω + 56]_{\mathbb{Bn}} } mit Zahlen wie'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [ \cdots {- (ω + 3)}, - (ω + 2), - (ω + 1), -ω, - (ω - 1), - (ω - 2) \cdots {-3}, -2, -1, 0, 1, 2 \cdots ω - 3, ω - 2, ω - 1, ω, ω + 1, ω + 2 \cdots ]  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  [ \cdots {- (ω + 3)}, - (ω + 2), - (ω + 1), \\\ \quad\, -ω, - (ω - 1), - (ω - 2), \cdots {-3}, -2, -1, \\\ \quad\; 0, 1, 2, \cdots ω - 3, ω - 2, ω - 1, ω, ω + 1, ω + 2, \cdots ]  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
-                    // '\lm{ [ \cdots {- (ω + 3)}, - (ω + 2), - (ω + 1), -ω, - (ω - 1), - (ω - 2) \cdots {-3}, -2, -1, 0, 1, 2 \cdots ω - 3, ω - 2, ω - 1, ω, ω + 1, ω + 2 \cdots ] },'."\n".
                     'wo auch \lm{ - (ω - 1) } oder \lm{ - (ω - 2) } nicht dazu gehören sollten.'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                      'Die Biordinalzahlen sind also als Basismenge der \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge}'."\n".
+                    'nicht geeignet.'."\n".
+                    'Wir benötigen eine Basismenge, die die Ordinalzahlen enthält und zusätzlich auch gleiche, die entsprechend der \jump{OM:BiOrd:Einleitung:IntegrierteMengenlehre}{integrierten Mengenlehre},'."\n".
+                    'ins Negative gespiegelt und verschoben sind, enthält:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{On}^{-}  =  *( n \in \mathbb{On} *)  *[  z \in \mathbb{Bn}  *|*  z = -n - 1  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{On}^{-}  =  *( n \in \mathbb{On} \setminus *\{ \varnothing *\} *)  *[  z  *|*  z = \mathbb{U} \setminus n  *]  }'),
+                      array( display => 'on',  latex => '{  \mathbb{On}^{\pm}  =  \mathbb{On} \cup \mathbb{On}^{-}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'So erhalten wir die Basismenge, die wir zum Adressieren benötigen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
                       

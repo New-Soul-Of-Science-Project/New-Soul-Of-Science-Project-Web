@@ -211,7 +211,7 @@
                     'So bekommen wir das Teilernetz der Primzahlen und ihrer Kombinationen im Endlichen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Alle Strecken der natürlichen Zahlen und schließlich der ganzen Zahlen vernetzen} \\\\'."\n".
+                  '\condb{\anchor{OM:SupNum:Struktur-Geometrie:Vortext:Alle-Strecken-natuerlichen-Zahlen-vernetzen}{}Alle Strecken der natürlichen Zahlen und schließlich der ganzen Zahlen vernetzen} \\\\'."\n".
                     'Um diese Struktur auf alle natürlichen Zahlen auszudehnen, brauchen wir ein passendes Symbol:'."\n",
                       'Die Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}} geben uns die Möglichkeit einen Wert'."\n".
                     'auszudrücken, der so groß ist, dass er per Definition genau alle natürlichen Zahlen beinhaltet.'."\n".
@@ -229,19 +229,20 @@
                       array( display => 'on',  latex => '{  \rho  =  \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'und das Ganze dann auch von der Null an in die negative Richtung immer weiter verlängern'."\n".
+                    'und das Ganze dann auch von der Null an in die negative Richtung immer weiter verlängern,'."\n".
+                    'mit der Basismenge \lm{ \mathbb{On}^{\pm} } der \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge},'."\n".
+                    'wie im Abschnitt \italic{\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MengeOrdinalzahlenInsNegativeErweitert}} entwickelt,'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) \cdot 2 ω  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{Bn}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} *) \cdot m  *]  \;\; .  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{On}^{\pm}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} *) \cdot m  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'In beiden Fällen fällt der Abschlusspunkt auf diese Weise bei \lm{ n } weg, weil die Zahl der Teilstrecken nicht endet.'."\n".
                     'Der Abstand \lm{ d } und die Dichte \lm{ \rho } verändern sich nicht dadurch.'."\n",
                       'Dass es \jump{OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen}{genau gleich viele negative Zahlen wie natürliche Zahlen, mit der Null},'."\n".
-                    'geben muss sehen wir in den \jump{OM:BiOrd:Einleitung}{Biordinalzahlen},'."\n".
-                    'deren Klasse – eine allgemeinere Form der Menge – mit \lm{ \mathbb{Bn} } bezeichnet wird.'."\n".
+                    'geben muss, sehen wir in den \jump{OM:BiOrd:Einleitung}{Biordinalzahlen}.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
@@ -421,7 +422,7 @@
                     'Der Abstand des Rasters bleibt hier der gleiche, wie zuvor, und so auch der Faktor \lm{ 2^{ω} }, um \lm{ 2^{q} } zu einer ganzen Zahl zu machen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{\\anchor{OM:SupNum:Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln}{}Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *( \sqrt[k]{c} *)^{m} }} \\\\'."\n".
+                  '\condb{\anchor{OM:SupNum:Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln}{}Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *( \sqrt[k]{c} *)^{m} }} \\\\'."\n".
                     'Der Beweis zeigt dies sogar für jede Wurzel aus jeder natürlichen Zahl \lm{ c } und deren Potenzen wie folgt:'."\n".
                     ''))),
                   array( 'equations',

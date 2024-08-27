@@ -87,6 +87,8 @@
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich' => array( headline_text => 'BO.Ein.NE.76'),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega' => array( headline_text => 'BO.Ein.NE.77'),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N' => array( headline_text => 'BO.Ein.NE.78'),
+
+          'OM:BiOrd:Einleitung:NeueEinsichten:MengeOrdinalzahlenInsNegativeErweitert' => array( headline_text => 'Die Menge der Ordinalzahlen ins Negative erweitert'/*, headline_text_short => 'XXX'*/),
       ),
     ),
     'OM:BiOrd:Literatur' => array(
