@@ -589,7 +589,7 @@
                     'Es lassen sich mindestens zwei geometrische Konstruktionen finden, die der \jump{OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}{Definition von \lm{ \s }}'."\n".
                     'über das unendliche Primzahlprodukt aus der \jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{Einleitung} äquivalent sind:'."\n",
                       'Die erste der folgenden Konstruktionen geht ins aktual unendlich Große und die zweite ins aktual unendlich Kleine.'."\n".
-                    'Beide definieren \term{s} jedoch auf etwas unterschiedliche Weise:'."\n".
+                    'Beide definieren \lm{ \s } jedoch auf etwas unterschiedliche Weise:'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Definition von \lm{ \s } über den Wiederholungsrhythmus der natürlichen Zahlen} \\\\'."\n"))),
