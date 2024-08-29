@@ -851,6 +851,7 @@
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',
                     '• Mein Gefühl sagt mir, dass die Wertgleichheit von \lm{ \s } und \lm{ ω^{ω} } und deren unterschiedliche Zählstruktur etwas mit dem Zusammenhang zwischen den Nullstellen von Polynomen und deren Lösungen in Form von algebraischen Zahlen zu tun hat.',
+                    '• Wir können auch sagen, dass die Superial-Zahlen eher mit den \lm{ ω }-ten Potenzen von Primzahlen oder natürlichen Zahlen in Verbindung stehen, während die Ordinalzahlen mit der Basis \lm{ ω } in natürlichen Potenzen im Zusammenhang stehen. Bei \lm{ ω^{ω} } treffen sich beide Perspektiven dann.',
                     ))),
                       
                   array( 'text', array( text => array(
