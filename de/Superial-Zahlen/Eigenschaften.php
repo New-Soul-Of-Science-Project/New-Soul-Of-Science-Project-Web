@@ -91,7 +91,7 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X', text =>
                       
-                'Sind die sinnvollen Koeffizienten alle reellen Zahlen, also \lm{ \mathbb{A}_{\S} = \mathbb{R} }?', subline =>
+                'Entsprechen die sinnvollen Koeffizienten allen reellen Zahlen, also \lm{ \mathbb{A}_{\S} = \mathbb{R} }?', subline =>
                   'Eine Frage der Transzendenz')),
                   array( 'text', array( text => array(
                     'Das hängt davon ab, wie wir im Lichte der Superial-Zahlen beantworten, welche Zahlen wir zu den reellen Zahlen zählen.'."\n".
@@ -456,7 +456,7 @@
                     'So kann der Eindruck einer Spiegelung entstehen, wenn wir das Intervall nicht explizit dranhängen würden.'."\n",
                       'Demnach sind wir sicher, dass die Anzahl der endlichen ganzen Zahlen wirklich \lm{ 2 \cdot ω } ist.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-Menge-S-Bemerkenswerten-Zusammenhang', text =>
                       
                 'Die superiale Basis \lm{ \s } und die Menge \lm{ \mathbb{S} } haben einen ganz bemerkenswerten Zusammenhang', subline =>
                   '')),
@@ -497,9 +497,9 @@
                     ))),
 
                   array( 'text', array( text => array(
-                    'über \lm{ 2 \cdot ω } Schritte je Koeffizient \lm{ a } im Endlichen'."\n".
+                    'über \lm{ 2 ω } Schritte je Koeffizient \lm{ a } im Endlichen'."\n".
                     'von Null bis ausschließlich Eins zählen.'."\n".
-                    'Dies wären dann aber \lm{ 2 \cdot ω \cdot \s } Schritte, wenn \lm{ a } jeden Punkt von \lm{ \s }'."\n".
+                    'Dies wären dann aber \lm{ 2 ω \cdot \s } Schritte, wenn \lm{ a } jeden Punkt von \lm{ \s }'."\n".
                     'adressieren würde.'."\n".
                     'Angelehnt an Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen}'."\n".
                     'können wir die Menge der Punktkoordinaten schreiben als:'."\n".

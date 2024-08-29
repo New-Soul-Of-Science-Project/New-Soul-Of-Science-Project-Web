@@ -249,18 +249,21 @@
                 'Immer noch Lückenhaft', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Das geometrische Netzgewebe besteht nun aus den Abständen der Punkte, wobei die Punkte die Knoten oder Stützen des Gewebes sind.'."\n",
-                      'Nehmen wir diese Teilungen der Strecken für jede der endlichen Primzahlen nur endlich oft vor,'."\n".
+                    'Die Kanten des geometrischen Netzgewebes besteht nun aus den Verbindungslinien der Punkte,'."\n".
+                    'wobei die Punkte die Knoten oder Stützen des Gewebes sind.'."\n".
+                    'Nehmen wir diese Teilungen der Strecken für jede der endlichen Primzahlen nur endlich oft vor,'."\n".
                     'dann haben wir immer noch Lücken endlicher Größe.'."\n",
-                      'Wie können wir aber die Lücken so schließen, dass sie keine endliche Größe mehr haben?'."\n".
+                      'Wie können wir aber die Lücken nun so schließen, dass sie keine endliche Größe mehr haben?'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
                 'Übergang ins Unendliche', subline =>
                   'Die vollständige Induktion der Teilungen')),
                   array( 'text', array( text => array(
-                    'Erst, wenn wir die Teilung der Strecken bis ins Unendliche treiben, bleiben keine endlichen Lücken übrig.'."\n".
-                    'Und auch keine unendlich kleinen Lücken, die wir mit endlichen Teilungen noch belegen können, weil sie noch unbelegt sind.'."\n",
+                    'Erst, wenn wir die Teilung der Strecken so bis ins Unendliche treiben, dass keine endlichen Lücken übrig bleiben,'."\n".
+                    'haben wir aus endlicher Sicht eine gewisse vollständige Lückenlosigkeit erreicht.'."\n".
+                    'Es dürfen dann auch keine unendlich kleinen Lücken verbleiben, in die wir mit endlichen Teilungen'."\n".
+                    'noch Punkte platzieren können, weil sie noch unbelegt sind.'."\n",
                       'Wie können wir nun erreichen oder ausdrücken, dass wir die Strecke zwischen Null und Eins wirklich in alle'."\n".
                     'möglichen endlichen Potenzen der Primzahlen und deren Kombinationen aufteilen und so ein Teilernetz aufspannen, dass alle endlichen Teilungen beinhaltet?'."\n",
                       'Auch hierzu können wir das Symbol \lm{ ω } der Ordinalzahlen nutzen, nun als Potenz.'."\n".
@@ -277,19 +280,24 @@
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  2^{ω} + 1  }'),
                       array( display => 'on',  latex => '{  d  =  \frac{ 1 }{ 2^{ω} }  =  2^{-ω}  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{2^{ω} + 2} *)  *[  r  =  2^{-ω} \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n]_{*( 2^{ω} + 1 *) + 1} *)  *[  r  =  2^{-ω} \cdot m  *]  }'),
                       array( display => 'on',  latex => '{  \rho  =  2^{ω}  }'),
                     ))),
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{Offene Fragestellungen}',
-                    '• Hier gehen wir davon aus, dass \lm{ 2^{ω} }, und damit dann auch \lm{ 2^{ω} + 2 }, wirklich einer geordneten Menge entspricht und vermutlich eine Ordinalzahl ist,'."\n".
-                    'wofür ich noch keinen expliziten Beweis gesehen habe, das aber eine gewisse Plausibilität besitzt und hier so Verwendung findet, dass die Formeln in sich logisch erscheinen.'."\n".
+                    '• Hier gehen wir davon aus, dass \lm{ 2^{ω} }, und damit dann auch \lm{ *( 2^{ω} + 1 *) + 1 = 2^{ω} + 2 }, wirklich einer geordneten Menge entspricht und vermutlich eine Ordinalzahl ist,'."\n".
+                    'wofür ich noch keinen expliziten Beweis gesehen habe, was aber eine gewisse Plausibilität besitzt und hier so Verwendung findet, dass die Formeln in sich logisch erscheinen.'."\n".
                     '\color{*Entwick}{Die Fragestellung ist interessant und sollte auf der Seite der Biordinalzahlen untersucht werden.}',
                     ))),
 
                   array( 'text', array( text => array(
-                    'So erhalten wir zwar schon eine unendliche Dichte, denn der Abstand zwischen zwei benachbarten Netzpunkten \lm{ d } ist \lm{ 2^{-ω} },'."\n".
+                    'Wir haben hier als Basismenge unserer Intervall-Menge \lm{ *( 2^{ω} + 1 *) + 1 } gewählt, weil in den Ordinalzahlen,'."\n".
+                    'wo wir hier davon ausgehen, dass \lm{ 2^{ω} \in \mathbb{On} }, und so dann auch \lm{ 2^{ω} + 1 } und \lm{ *( 2^{ω} + 1 *) + 1 }, eine solche ist,'."\n".
+                    'die Menge \lm{ *( 2^{ω} + 1 *) + 1 } dann auch die Zahl \lm{ 2^{ω} + 1 } als größte enthält,'."\n".
+                    'die wir ja für den Wert von \lm{ n } brauchen.'."\n".
+                    'Wir hätten hier dann auch \lm{ \mathbb{On} } als Basismenge nehmen können, aber so wird diese neue interessante Fragestellung auf diese Weise näher beleuchtet.'."\n",
+                      'So erhalten wir zwar schon eine unendliche Dichte, denn der Abstand zwischen zwei benachbarten Netzpunkten \lm{ d } ist \lm{ 2^{-ω} },'."\n".
                     'aber wie wir oben gesehen haben,'."\n".
                     'sind hier ganz viele Teilungen noch nicht enthalten.'."\n".
                     'Als Beispiele erreichen wir so die Punkte \lm{ \frac{ 1 }{ 3 } } und \lm{ \frac{ 2 }{ 3 } } nicht,'."\n".
@@ -298,8 +306,14 @@
                     'um alle durch endliche Teilungen zu beschreibenden Punkte zu erreichen.'."\n",
                       'Nehmen wir die Teilungen der Strecke zwischen Null und Eins für auch nur eine der endlichen Primzahlen'."\n".
                     'gar nicht oder nur endlich oft vor, dann behalten wir Lücken,'."\n".
-                    'die nur einen aktual unendlich kleinen Abstand aufweisen, aber in denen noch durch endliche Teilungen erreichbare Punkte existieren.'."\n".
+                    'die zwar einen aktual unendlich kleinen Abstand aufweisen, aber in denen noch durch endliche Teilungen platzierbare, unbelegte Punkte existieren.'."\n".
                     ''))),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    '\bold{Kontinuumshypothese}',
+                    '• Hier stellt sich dann eben die Frage, ob die Mächtigkeit von beispielsweise \lm{ 2^{ω} \cdot 3^{ω} } oder gar dem nachfolgend definierten \lm{ \s } wirklich \lm{ 2^{ω} } ist. Wenn nicht, würde dies die \jump{OM:SupNum:Struktur-Geometrie:Vortext:DasKontinuum}{Kontinuumshypothese} verneinen.',
+                    ))),
+
                   array( 'text', array( text => array(
                   '\condb{Das aktual unendlich dichte Raster oder Netzwerk aller ganzen negativen Primzahlpotenzen aufspannen} \\\\'."\n".
                     'So müssen wir also die Teilung mit allen endlichen Primzahlen bis in die vollständige Induktion'."\n".
@@ -327,7 +341,7 @@
                   array( 'text', array( text => array(
                     'Auch hier fällt der Abschlusspunkt \lm{ n } wieder weg, weil die Zahl der Teilstrecken nicht endet.'."\n".
                     'Der Abstand \lm{ d } und die Dichte \lm{ \rho } verändern sich dadurch nicht.'."\n",
-                      'Können wir nun davon sprechen, dass ein solches Gewebe dann im Endlichen keine Lücken mehr hat?'."\n",
+                      'Können wir nun davon sprechen, dass ein solches Gewebe dann keine durch endliche Teilungen erreichbaren Lücken mehr hat?'."\n",
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
                                            
@@ -347,9 +361,10 @@
                       'Die Radikale der irrationalen algebraischen Zahlen sind die irrationalen algebraischen Zahlen,'."\n".
                     'die durch die vier Grundrechenarten und dem Ziehen ganzer Wurzeln ausgedrückt werden können.'."\n",
                       'Nur für solche irrationalen algebraischen Zahlen, die dann noch durch Integration'."\n".
-                    'von Radikalen der irrationalen algebraischen Zahlen entstehen, konnten wir noch nicht Beweisen,'."\n".
+                    'von Radikalen der irrationalen algebraischen Zahlen entstehen, können wir noch nicht Beweisen,'."\n".
                     'dass sie auf dem Raster liegen.'."\n".
-                    'Das sie auf dem Raster liegen, liegt nahe, weil es sich um Summen von Wurzelausdrücken handelt, und für eine endliche Anzahl von Summanden ist dies auch schon bewiesen.'."\n".
+                    'Das sie auf dem Raster liegen, liegt nahe, weil es sich um Summen von Wurzelausdrücken handelt,'."\n".
+                    'wo wir es für eine endliche Anzahl von Summanden schon bewiesen haben.'."\n".
                     'Daher ist es auch für eine aktual unendliche Anzahl von Summanden zu vermuten.'."\n",
                       'Das es dennoch bisher unbewiesen ist, liegt daran, dass wir \jump{OM:SupNum:Ableitungen-Integrale}{die Ableitung und das Integral} mit Hilfe der Superial-Zahlen'."\n".
                     'anders definieren, als bisher mit dem Limes üblich, und dadurch aktual unendlich kleine Summanden'."\n".
@@ -371,16 +386,17 @@
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-2-hoch-omega-mal-Wurzel-Zwei-durch-2-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Dieser Zusammenhang erscheint auf den ersten Blick möglicherweise eher banal.'."\n".
+                    'Dieser Zusammenhang erscheint auf den ersten Blick eher banal.'."\n".
                     'Denn der Faktor \lm{ 2^{ω} } ist offensichtlich sowohl im Nenner als auch im Zähler des Bruchs vorhanden und'."\n".
                     'könnte deshalb natürlich direkt gekürzt werden.'."\n".
                     'Womit wir auch sofort erkennen, dass die Formel wahr ist.'."\n",
-                      'Was macht die Formel dann so besonders?'."\n",
+                      'Was macht die Formel dann auf den zweiten Blick so besonders?'."\n",
                       'Bei genauer Betrachtung ist das Besondere, dass nur in einer solchen Form auch der Zähler zu einer ganzen Zahl wird.'."\n".
-                    'Denn der dem Beweis zugrunde liegende Widerspruchsbeweis, der zeigt, dass kein Bruch aus endlichem Nenner und Zähler'."\n".
-                    'die Wurzel aus Zwei darstellen kann, offenbart eine Konstruktionsanweisung, wie ein Bruch aus ganzen Zahlen'."\n".
+                    'Denn der dem Beweis zugrunde liegende Widerspruch zeigt, dass kein Bruch aus endlichem ganzzahligen Nenner und endlichem ganzzahligen Zähler'."\n".
+                    'die Wurzel aus Zwei darstellen kann.'."\n".
+                    'Der Widerspruchsbeweis offenbart eine Konstruktionsanweisung, wie ein Bruch aus ganzen Zahlen'."\n".
                     'beschaffen sein muss, der diese Zahl darstellen kann:'."\n",
-                      'Der Bruch muss beliebig endlich häufig mit Zwei zu kürzen sein.'."\n".
+                      'Der Bruch muss in diesem Fall beliebig endlich häufig mit Zwei zu kürzen sein.'."\n".
                     'Was bedeutet, dass sowohl der Nenner als auch der Zähler aktual unendlich groß sein müssen.'."\n".
                     'Der gefundene Bruch hat einen aktual unendlich großen ganzzahligen Nenner und ist offensichtlich wahr.'."\n".
                     'Und er ist beliebig endlich oft mit Zwei zu kürzen.'."\n".
@@ -389,7 +405,7 @@
                     'Denn der Widerspruchsbeweis ist so angesetzt,'."\n".
                     'dass er einen ganzzahligen Zähler zur Bedingung macht und erst diese und weitere Annahmen die Konstruktionsanweisung hervorbringen.'."\n",
                       'Der Faktor \lm{ 2^{ω} } ist so groß – eben aktual unendlich groß –, ganzzahlig und so strukturiert,'."\n".
-                    'dass er aus jeder rational gebrochenen Potenz von Zwei eine ganze Zahl macht.'."\n".
+                    'dass er im Produkt mit jeder ganzen Wurzel aus Zwei, also aus jeder rational gebrochenen Potenz von Zwei, eine ganze Zahl hervorbringt.'."\n".
                     'Das ist die Besonderheit dieses Bruchs, die sofort unsichtbar wird, wenn wir einfach komplett kürzen.'."\n".
                     'Sein Geheimnis wird erst offenbar, wenn wir seine Entstehungsgeschichte verstehen und'."\n".
                     'damit seine Bedeutung entschlüsseln und so erkennen.'."\n",
@@ -468,7 +484,7 @@
                   array( 'text', array( text => array(
                     'können wir also formulieren,'."\n".
                     'dass schlussendlich jede endliche ganze Wurzel in natürlicher Potenz aus jeder natürlichen Zahl \lm{ c }'."\n".
-                    'durch ein Produkt aller unterschiedlichen Primzahlen in \lm{ c } zu einer aktual unendliche großen ganzen Zahl gemacht werden kann:'."\n".
+                    'durch ein Produkt aller unterschiedlichen Primzahlen in \lm{ c } zu einer aktual unendlich großen ganzen Zahl gemacht werden kann:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -514,7 +530,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Das aktual unendliche Fraktal der arithmetischen Teilung der Geometrie basiert also auf'."\n".
-                    'einem Produkt der aktual unendlichen Potenz aller Primzahlen, der superialen Basis \lm{ \s },'."\n".
+                    'einem Produkt der aktual unendlichen Potenz aller endlichen Primzahlen, der superialen Basis \lm{ \s },'."\n".
                     'auf dem die vorliegende Arbeit gegründet ist:'."\n".
                     ''))),
                   array( 'equations',
@@ -528,9 +544,39 @@
                     ))),
                   array( 'text', array( text => array(
                     'Als Teilung der Eins ist es dann die Zahl \lm{ \s^{-1} }, die der Strecke zwischen Null und Eins'."\n".
-                    'unsere vorstehend gefundene arithmetische Struktur gibt, indem sie für die minimale endliche Distanz steht:'."\n".
+                    'unsere vorstehend gefundene arithmetische Struktur gibt, indem sie für die normierte aktual unendlich kleine Distanz steht:'."\n".
                     ''))),
-                  array( 'notice', array( Display => 'showContent', text => array(
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n_{\s}  =  \s + 1  }'),
+                      array( display => 'on',  latex => '{  d_{\s}  =  \frac{ 1 }{ \s }  =  \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [0, n_{\s}]_{\mathbb{S}_{\Z}} *)  *[  r_{\s}  =  \s^{-1} \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  \rho_{\s}  =  \s  }'),
+                      array( display => 'on',  latex => '{  \# \mathbb{Z}  =  2 ω  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  n_{\s,\Z}  =  2 ω \cdot \s  }'),
+                      // array( display => 'on',  latex => '{  *( \forall z \in \mathbb{Z} *) *( \forall m \in [0, \s[_{\mathbb{S}_{\Z}} *)  *[  r_{\s,\Z}  =  z + \s^{-1} \cdot m  *]  }'),
+                      // array( display => 'on',  latex => '{  \Leftrightarrow  XXX *( \forall m \in \;]\!-\!ω, ω[_{\mathbb{S}^{-1}_{\Z}} *)  *[  r_{\s,\Z}  =  m  *]  }'),
+                      // array( display => 'on',  latex => '{  \mathbb{On}^{-} =  *\{  b  *|*  *( \forall a \in \mathbb{On} *) *[ b = \mathbb{U} \setminus a *]  *\}  }'),
+                      // array( display => 'on',  latex => '{  \mathbb{On}_{\Z}  =  \mathbb{On} \cup \mathbb{On}^{-}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall m \in \;]\!-\!ω \cdot ω^{ω}, ω \cdot ω^{ω}[_{\mathbb{On}_{0}^{\pm}} *)  *[  r_{\s,\Z}  =  ω^{-ω} \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall m \in \;]\!-\!ω \cdot \s, ω \cdot \s[_{\mathbb{On}_{0}^{\pm}} *)  *[  r_{\s,\Z}  =  \s^{-1} \cdot m  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dabei bezeichnet \lm{ n_{\s} } die Anzahl aller Punkte des normierten aktual unendlich feinsten Gewebes'."\n".
+                    'im Endlichen von Null bis einschließlich Eins.'."\n".
+                    '\lm{ d_{\s} } beschreibt den Abstand dieser feinsten Punkte und \lm{ \rho_{\s} } ihre Dichte.'."\n".
+                    '\lm{ n_{\s,\Z} } ist dann die Anzahl der feinsten Punkte auf der endlichen Zahlengeraden,'."\n".
+                    'unter Berücksichtigung der Tatsache, dass es dann keinen Abschlusspunkt braucht.'."\n",
+                      'So erreichen wir das feinste Gewebe von Punkten,'."\n".
+                    'die auf diese Weise nur ganze Zahlen in ihren aktual unendlich kleinen Summanden, in ihrem Ort – ihren Koordinaten – haben,'."\n".
+                    'aber doch normiert aktual unendlich dicht beieinander liegen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Eine Besonderheit in Bezug auf \lm{ \s } und die Adressierung der superial kleinen ganzen Zahlen \lm{ \mathbb{S}_{\Z}^{-1} } von Null bis ohne Eins} \\\\'."\n".
+                    ''))),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Muss noch einmal auf Konsistenz bzw. Richtigkeit überprüft werden!}',
                     '• Es erscheint ein vermeintlicher Widerspruch:',
                     '– Hier wird festgestellt, dass das feinste Teilungsgewebe einschließlich der Null bis vor die Eins \lm{ \s } Punkte hat.',
@@ -541,58 +587,73 @@
                     '– Es ist also zu vermuten, dass genau \lm{ 2 \cdot ω } mal weniger Punkte in oder Teilprodukte von \lm{ \s } mit \lm{ a_{\s} } adressierbar sind, also eine große Teilmenge nicht adressierbar ist.',
                     '– Das bedeutet, die Anzahl der Elemente in \lm{ \mathbb{A}_{\S} } ist \lm{ \# \mathbb{A}_{\S} = \frac{ \s }{ 2 \cdot ω } }, was wir ja auch schon in Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins} festgestellt haben und was uns einen wichtigen Hinweis auf die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} gegeben hat.',
                     ))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n_{\s}  =  \s + 1  }'),
-                      array( display => 'on',  latex => '{  d_{\s}  =  \frac{ 1 }{ \s }  =  \s^{-1}  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [0, n_{\s}]_{\mathbb{S}_{\Z}} *)  *[  r_{\s}  =  \s^{-1} \cdot m  *]  }'),
-                      array( display => 'on',  latex => '{  \rho_{\s}  =  \s  }'),
-                      array( display => 'on',  latex => '{  \# \mathbb{Z}  =  2 ω  }',
-                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  n_{\s,\Z}  =  2 ω \cdot \s  }'),
-                      array( display => 'on',  latex => '{  *( \forall z \in \mathbb{Z} *) *( \forall m \in [0, \s[_{\mathbb{S}_{\Z}} *)  *[  r_{\s,\Z}  =  z + \s^{-1} \cdot m  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  XXX *( \forall m \in \;]\!-\!ω, ω[_{\mathbb{S}^{-1}_{\Z}} *)  *[  r_{\s,\Z}  =  m  *]  }'),
-                      array( display => 'on',  latex => '{  \mathbb{On}^{-} =  *\{  b  *|*  *( \forall a \in \mathbb{On} *) *[ b = \mathbb{U} \setminus a *]  *\}  }'),
-                      array( display => 'on',  latex => '{  \mathbb{On}_{\Z}  =  \mathbb{On} \cup \mathbb{On}^{-}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall m \in \;]\!-\!ω \cdot ω^{ω}, ω \cdot ω^{ω}[_{\mathbb{On}_{0}^{\pm}} *)  *[  r_{\s,\Z}  =  ω^{-ω} \cdot m  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall m \in \;]\!-\!ω \cdot \s, ω \cdot \s[_{\mathbb{On}_{0}^{\pm}} *)  *[  r_{\s,\Z}  =  \s^{-1} \cdot m  *]  }'),
-                    ))),
+
                   array( 'text', array( text => array(
-                    'Dabei bezeichnet \lm{ n_{\s} } die Anzahl aller Punkte des aktual unendlich feinsten Gewebes'."\n".
-                    'im Endlichen von Null bis einschließlich Eins.'."\n".
-                    '\lm{ d_{\s} } beschreibt den Abstand dieser feinsten Punkte und \lm{ \rho_{\s} } ihre Dichte.'."\n".
-                    '\lm{ n_{\s,\Z} } ist dann die Anzahl der feinsten Punkte auf der endlichen Zahlengeraden,'."\n".
-                    'unter Berücksichtigung der Tatsache, dass es dann keinen Abschlusspunkt braucht.'."\n",
-                      'So erreichen wir das feinste Gewebe von Punkten, die selber noch im endlichen liegen,'."\n".
-                    'also noch keine aktual unendlich kleinen Summanden in ihrem Ort – ihren Koordinaten – haben, aber schon aktual unendlich dicht beieinander liegen.'."\n".
+                    'Wenn wir die Strecke zwischen Null und Eins in \lm{ \s } Teile teilen, dann ist jedes Teil \lm{ \s^{-1} } groß.'."\n".
+                    'Adressieren wir die Punkte, die zwischen den Teilen sind, dann beginnen wir mit Null, dann \lm{ \s^{-1} },'."\n".
+                    '\lm{ 2 \s^{-1} }, \lm{ 3 \s^{-1} } und so fort.'."\n".
+                    'Doch was passiert, wenn wir über die endlichen natürlichen Faktoren \lm{ n \cdot \s^{-1} } hinaus gehen?'."\n",
+                      'Da wir die Punkte der Strecke zwischen Null und Eins adressieren wollen, sollten wir an allen entsprechenden'."\n".
+                    'Zahlen zwischen Null und Eins vorbeikommen, wie \lm{ \frac{ 1 }{ 3 } }, \lm{ \frac{ 1 }{ 2 } } oder \lm{ \frac{ 2 }{ 3 } },'."\n".
+                    'die nichts anderes sind als \lm{ \frac{ 1 }{ 3 } \s^{0} }, \lm{ \frac{ 1 }{ 2 } \s^{0} } oder \lm{ \frac{ 2 }{ 3 } \s^{0} }.'."\n".
+                    'Und Zahlen wie \lm{ \frac{ 1 }{ 3 } - 2 \s^{-1} }, \lm{ \frac{ 1 }{ 3 } - \s^{-1} } oder'."\n".
+                    '\lm{ \frac{ 1 }{ 3 } + \s^{-1} }, \lm{ \frac{ 1 }{ 3 } + 2 \s^{-1} } sollten auch dazu gehören.'."\n".
+                    'Also alle Zahlen, die zwischen Null und Eins liegen und aktual unendlich kleine und dort ganze Zahlen sind.'."\n".
+                    'Deshalb müssen alle \lm{ a \cdot \s^{0} } mit \lm{ a \in \mathbb{A}_{\S} } auch aktual unendlich kleine und dort ganze Zahlen sein,'."\n".
+                    'denn die Summe einer ganzen \lm{ z \cdot \s^{-1} } mit \lm{ z \in \mathbb{Z} } ergibt nur mit einer anderen ganzen Zahl \lm{ a }'."\n".
+                    'wieder eine ganze, aktual unendlich kleine.'."\n",
+                      'Aus diesem Grund müssen alle \lm{ a \in \mathbb{A}_{\S} } im aktual unendlich Kleinen, in der Größenordnung \lm{ \s^{-1} },'."\n".
+                    'auch immer ganze Zahlen sein.'."\n".
+                    'Skaliert auf endliche ganze Zahlen müssen dann alle \lm{ a \cdot \s } mit \lm{ a \in \mathbb{A}_{\S} }'."\n".
+                    'in der Größenordnung des Endlichen auch immer rein ganze Zahlen sein, wenn auch aktual unendlich groß.'."\n",
+                      'Nun bekommen wir eine etwas paradox erscheinende Situation:'."\n",
+                      'Wir haben von der Null an bis direkt vor die Eins \lm{ \s } aktual unendlich kleine ganze Zahlen.'."\n".
+                    'Für jeden endlichen Faktor \lm{ a } vor \lm{ \s^{0} }, also \lm{ a \cdot \s^{0} }, laufen aber'."\n".
+                    '\lm{ 2 ω } ganzzahlige Zahlen des Summanden \lm{ z \cdot \s^{-1} } durch.'."\n".
+                    'Zusammen also \lm{ a + z \cdot \s^{-1} }, wobei bei Null nur \lm{ 0 + n \cdot \s^{-1} } mit \lm{ n \in \mathbb{N} }'."\n".
+                    'und bei Eins nur \lm{ 1 + z^{-} \cdot \s^{-1} } mit \lm{ z^{-} \in \mathbb{Z}^{-} }.'."\n".
+                    'Damit kann die Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } nur \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } } Elemente enthalten.'."\n",
+                      'Wir haben hier die Besonderheit, wie auch noch im Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-Menge-S-Bemerkenswerten-Zusammenhang}}'."\n".
+                    'genauer beleuchtet wird, dass eine Teilung der Strecke zwischen Null und Eins in \lm{ \s } Teile'."\n".
+                    'in Punkte zwischen den Teilen mündet, deren Koordinaten nur durch Summen ausgedrückt werden können,'."\n".
+                    'die im Allgemeinen aktual unendlich kleine Summanden enthalten.'."\n".
+                    'Und dies, obwohl die Teilung eigentlich aus einer unendlichen Teilung,'."\n".
+                    'und damit aus einem Produkt mit unendlich kleinem Faktor, hervorgeht.'."\n".
+                    'Dies erscheint im ersten Moment möglicherweise sonderbar.'."\n",
+                      'Erst die Kombination der aktual unendlich kleinen Summanden und den endlichen Summanden mit Elementen aus \lm{ \mathbb{A}_{\S} }'."\n".
+                    'mach es wieder rund und gibt uns tiefen Einblick in die Zahlentheorie, was in meinen Augen außergewöhnlich ist.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:DasKontinuum', text =>
                       
                 'Das Kontinuum', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Das Gewebe bildet so in gewisser Hinsicht einen Abschluss im Endlichen, denn es gibt keine endlichen Abstände mehr,'."\n".
-                    'sondern nur noch aktual unendlich kleine Abstände.'."\n".
-                    'Es ist also klar, dass dieses Gewebe im Hinblick auf seine Stützpunkte immer Lücken haben wird, hier nur keine endlichen mehr.'."\n",
-                      'Da es keine endlichen Teiler mehr gibt, mit denen wir neue Punkte schöpfen oder erreichen können,'."\n".
-                    'selbst dann, wenn wir sie durch irrationale Wurzeln und Summen dieser in die aktual unendlich kleinen Potenzen'."\n".
-                    'der vollständigen Induktion treiben und sie so noch variieren,'."\n".
-                    'ist in diesem Sinne hier das \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Kontinuum}\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese}} erreicht.'."\n",
-                      'Aber Kontinuum bedeutet eben nicht, dass es keinerlei Lücken mehr gibt; halt nur keine endlicher Größe oder'."\n".
-                    'solche, die durch eine endlich ganzzahlige Teilung zu füllen sind.'."\n".
+                    'Das Gewebe bildet so in gewisser Hinsicht einen Abschluss in der vollständigen endlichen Teilung,'."\n".
+                    'durch die es keine endlichen Abstände mehr gibt und keine Punkte, die durch endliche Teilung,'."\n".
+                    'selbst in Potenz der vollständigen Induktion, noch unbelegt sind.'."\n",
+                      'Es ist aber klar, dass dieses Gewebe im Hinblick auf seine Stützpunkte immer Lücken haben wird.'."\n".
+                    'Denn wir können die Potenzen der endlichen Teilungen natürlich immer weiter treiben,'."\n".
+                    'hin zur quadratischen normierten vollständigen Induktion und weit darüber hinaus.'."\n".
+                    'Jedoch ist es dann nicht mehr die einfache normierte vollständige Induktion; eben nicht mehr die erste Norm.'."\n",
+                      'Deshalb ist in diesem Sinn hier das'."\n".
+                    '\jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Kontinuum}\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese}}'."\n".
+                    'erreicht.'."\n".
+                    'Aber Kontinuum bedeutet eben nicht, dass es keinerlei Lücken mehr gibt; halt nur keine, die durch'."\n".
+                    'endliche Primzahlen in Potenz der einfachen normierten vollständigen Induktion erreichbar sind.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:X', text =>
                       
                 'Die Zwei Konstruktionen von \lm{ \s }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Es lassen sich mindestens zwei geometrische Konstruktionen finden, die der \jump{OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}{Definition von \lm{ \s }}'."\n".
+                    'Es lassen sich mindestens zwei geometrische Konstruktionen finden, die der \jump{OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}{Definition von \s}'."\n".
                     'über das unendliche Primzahlprodukt aus der \jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{Einleitung} äquivalent sind:'."\n",
                       'Die erste der folgenden Konstruktionen geht ins aktual unendlich Große und die zweite ins aktual unendlich Kleine.'."\n".
                     'Beide definieren \lm{ \s } jedoch auf etwas unterschiedliche Weise:'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Definition von \lm{ \s } über den Wiederholungsrhythmus der natürlichen Zahlen} \\\\'."\n"))),
+                  '\condb{Definition von \lm{ \s } über den Wiederholungsrhythmus der natürlichen Zahlen} \\\\'."\n".
+                    ''))),
                       
                   array( 'figure',
                     array_merge( $SupNum_g_figure_ary_sGeomKonstruktWiederholung, array( name => 'OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung'))),
