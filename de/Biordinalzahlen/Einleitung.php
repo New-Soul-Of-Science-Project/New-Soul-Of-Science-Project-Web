@@ -1276,7 +1276,7 @@
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{On}^{-}  =  *( n \in \mathbb{On} *)  *[  z \in \mathbb{Bn}  *|*  z = -n - 1  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{On}^{-}  =  *( n \in \mathbb{On} \setminus *\{ \varnothing *\} *)  *[  z  *|*  z = \mathbb{U} \setminus n  *]  }'),
-                      array( display => 'on',  latex => '{  \mathbb{On}^{\pm}  =  \mathbb{On} \cup \mathbb{On}^{-}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{On}_{0}^{\pm}  =  \mathbb{On} \cup \mathbb{On}^{-}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'So erhalten wir die Basismenge, die wir zum Adressieren benötigen.'."\n".

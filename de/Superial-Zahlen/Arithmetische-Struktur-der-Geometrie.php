@@ -230,13 +230,13 @@
                     ))),
                   array( 'text', array( text => array(
                     'und das Ganze dann auch von der Null an in die negative Richtung immer weiter verlängern,'."\n".
-                    'mit der Basismenge \lm{ \mathbb{On}^{\pm} } der \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge},'."\n".
+                    'mit der Basismenge \lm{ \mathbb{On}_{0}^{\pm} } der \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Menge},'."\n".
                     'wie im Abschnitt \italic{\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MengeOrdinalzahlenInsNegativeErweitert}} entwickelt,'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( x_{i} \in \mathbb{N} *)  *[  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{x_{i}} *) \cdot 2 ω  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{On}^{\pm}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} *) \cdot m  *]  \;\; .  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{On}_{0}^{\pm}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i}^{-x_{i}} *) \cdot m  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'In beiden Fällen fällt der Abschlusspunkt auf diese Weise bei \lm{ n } weg, weil die Zahl der Teilstrecken nicht endet.'."\n".
@@ -322,7 +322,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{ω} \cdot 2 ω  }'),
-                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{Bn}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω} \cdot m  *]  \;\; .  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in [- \frac{ n }{ 2 }, \frac{ n }{ 2 }]_{\mathbb{On}_{0}^{\pm}} *)  *[  r  =  *( \prod_{\forall p_{i} \in \mathbb{P}}  p_{i} *)^{-ω} \cdot m  *]  \;\; .  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Auch hier fällt der Abschlusspunkt \lm{ n } wieder weg, weil die Zahl der Teilstrecken nicht endet.'."\n".
@@ -554,8 +554,8 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  XXX *( \forall m \in \;]\!-\!ω, ω[_{\mathbb{S}^{-1}_{\Z}} *)  *[  r_{\s,\Z}  =  m  *]  }'),
                       array( display => 'on',  latex => '{  \mathbb{On}^{-} =  *\{  b  *|*  *( \forall a \in \mathbb{On} *) *[ b = \mathbb{U} \setminus a *]  *\}  }'),
                       array( display => 'on',  latex => '{  \mathbb{On}_{\Z}  =  \mathbb{On} \cup \mathbb{On}^{-}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall m \in \;]\!-\!ω \cdot ω^{ω}, ω \cdot ω^{ω}[_{\mathbb{On}_{\Z}} *)  *[  r_{\s,\Z}  =  ω^{-ω} \cdot m  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall m \in \;]\!-\!ω \cdot \s, ω \cdot \s[_{\mathbb{On}_{\Z}} *)  *[  r_{\s,\Z}  =  \s^{-1} \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall m \in \;]\!-\!ω \cdot ω^{ω}, ω \cdot ω^{ω}[_{\mathbb{On}_{0}^{\pm}} *)  *[  r_{\s,\Z}  =  ω^{-ω} \cdot m  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall m \in \;]\!-\!ω \cdot \s, ω \cdot \s[_{\mathbb{On}_{0}^{\pm}} *)  *[  r_{\s,\Z}  =  \s^{-1} \cdot m  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dabei bezeichnet \lm{ n_{\s} } die Anzahl aller Punkte des aktual unendlich feinsten Gewebes'."\n".
