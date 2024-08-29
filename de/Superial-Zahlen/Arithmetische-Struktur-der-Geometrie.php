@@ -574,7 +574,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Eine Besonderheit in Bezug auf \lm{ \s } und die Adressierung der superial kleinen ganzen Zahlen \lm{ \mathbb{S}_{\Z}^{-1} } von Null bis ohne Eins} \\\\'."\n".
-                    ''))),
+                  /*  ''))),
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Muss noch einmal auf Konsistenz bzw. Richtigkeit überprüft werden!}',
@@ -588,7 +588,7 @@
                     '– Das bedeutet, die Anzahl der Elemente in \lm{ \mathbb{A}_{\S} } ist \lm{ \# \mathbb{A}_{\S} = \frac{ \s }{ 2 \cdot ω } }, was wir ja auch schon in Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins} festgestellt haben und was uns einen wichtigen Hinweis auf die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} gegeben hat.',
                     ))),
 
-                  array( 'text', array( text => array(
+                  array( 'text', array( text => array( */
                     'Wenn wir die Strecke zwischen Null und Eins in \lm{ \s } Teile teilen, dann ist jedes Teil \lm{ \s^{-1} } groß.'."\n".
                     'Adressieren wir die Punkte, die zwischen den Teilen sind, dann beginnen wir mit Null, dann \lm{ \s^{-1} },'."\n".
                     '\lm{ 2 \s^{-1} }, \lm{ 3 \s^{-1} } und so fort.'."\n".
