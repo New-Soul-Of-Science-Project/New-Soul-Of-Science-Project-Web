@@ -1180,33 +1180,84 @@
                       '\\\\'."\n".
                       'Wandeln wir die Gaußsche Summenformel mit Hilfe der obigen Mengendefinitionen von Zahlen'."\n".
                       'nun so ab, dass wir uns nicht auf das größte Element der Summe beziehen,'."\n".
-                      'sondern auf die Elemente, die zu summieren sind:'."\n".
+                      'sondern auf die Anzahl an Elementen, die davor zu summieren sind, dann müssen wir'."\n".
+                      'den letzten Summanden abziehen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *)  *[  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } \!\!\!\! i  =  0 + 1 + 2 + 3 + \cdots + n  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } \! i  =  \frac{ n^{2} + n }{ 2 }  *]  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n + 1 } \! i  =  \frac{ n^{2} + n }{ 2 }  *]  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ *( n - 1 *)^{2} + *( n - 1 *) }{ 2 }  *]  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ *( n^{2} - 2 \cdot n + 1 *) + *( n - 1 *) }{ 2 }  *]  }'),
+                      // array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ *( n - 1 *)^{2} + *( n - 1 *) }{ 2 }  *]  }'),
+                      // array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ *( n^{2} - 2 \cdot n + 1 *) + *( n - 1 *) }{ 2 }  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ n^{2} + n }{ 2 } - n  *]  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ n^{2} + n - 2 n }{ 2 }  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall n \in \mathbb{N} *)  *[  \sum_{ \forall i \in n } i  =  \frac{ n^{2} - n }{ 2 }  *]  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n', label_text => '\\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Ich gehe davon aus, dass dieser Zusammenhang ganz allgemein für alle endlichen und aktual unendlichen „natürlichen“ Zahlen gilt, die ich \lm{ \mathbb{N}_\infty } nenne.'."\n".
+                      'Um daraus eine allgemeine Formel für aktual unendlich große Mengen zu definieren, scheint es mir sinnvoll'."\n".
+                      'uns auf Mengen zu beschränken, die ausschließlich von der Null an ganze Zahlen enthalten.'."\n".
+                      'Wir definieren also die Menge \lm{ \mathbb{N}_{\infty} } aller positiven ganzen Zahlen, von der Null an bis ins beliebig aktual Unendliche.'."\n".
                       'Diese Menge können wir mit Hilfe der Abrundung durch die Gaußklammer\footnote{\const{SupNum_g_footnote_text_Gaussklammer}}'."\n".
                       '\\latexmath{ \lfloor x \rfloor } zum Ausdruck bringen, die eine Zahl \\latexmath{ x } auf die nächst kleinere ganze Zahl abrundet, wenn sie noch keine ganze Zahl ist:'."\n".
-                      '\\\\ \color{*Bearb}{(In der nachfolgenden Summe ist die Menge \lm{ \mathbb{N}_\infty } zu überdenken, da sie auch Werte wie \lm{ ω - n } enthält, was wohl nicht sein kann. Vielleicht wäre hier die Menge der Ordinalzahlen \lm{ \mathbb{On} } richtig, die keine Vorgänger der Limeszahlen enthält? Erst bei den Superial-Zahlen kommen auch Vorgänger und Nachfolger von Limes Zahlen wie \lm{ \s \pm n = ω^{ω} \pm n } hinzu, aber dies ja, weil bestimmte Limeszahlen wie \lm{ ω } und deren Vorgänger und Nachfolger \lm{ ω \pm n } ausgeschlossen sind.)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \exists \mathbb{N}_{\infty}\!: \, *( \forall x\!: \, *( x \geq 0 \;\land\; x - \left\lfloor x \right\rfloor = 0  \Leftrightarrow  x \in \mathbb{N}_{\infty} *) *)  }',
+                      array( display => 'on',  latex => '{  \exists \mathbb{N}_{\infty}\!: \, *( \forall x\!: \, *( x \geq 0 \;\land\; x - \left\lfloor x \right\rfloor = 0  \Rightarrow  x \in \mathbb{N}_{\infty} *) *)  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich', label_text => '\\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in [ 0, n [_{\mathbb{N}_{\infty}} } i  =  \frac{ n^{2} - n }{ 2 }  }',
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Die Elemente sowohl der Ordinalzahlen sowie die der Biordinalzahlen gehören offensichtlich auch zu \lm{ \mathbb{N}_{\infty} }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{On}  \subset  \mathbb{N}_{\infty,c}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{Bn}  \subset  \mathbb{N}_{\infty,c}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Desweiteren soll es sich um Mengen \lm{ \mathbb{N}_{\infty,c} } ganzer Zahlen handeln, in denen der Wert jedes Elements'."\n".
+                      'die Anzahl an Elementen in der Menge wiedergibt, die vor ihm kommen.'."\n".
+                      'Diese Mengen fassen wir in der Klasse \lm{ \mathbb{K}_{\infty,c} } der Anzahl äquivalenten Mengen zusammen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \exists \mathbb{K}_{\infty,c}\!: \, *( \forall \mathbb{N}_{\infty,c} \subset \mathbb{N}_{\infty}\!: \, \\\ \qquad\qquad\qquad *( \mathbb{N} \subseteq \mathbb{N}_{\infty,c} \;\land\; \\\ \qquad\qquad\qquad\;\; *( \forall n \in \mathbb{N}_{\infty,c} *)  *[ n \geq 0 \;\land\; \# [ 0, n [_{\mathbb{N}_{\infty,c}} = n *] \\\ \qquad\qquad\qquad  \Rightarrow  \mathbb{N}_{\infty,c} \in \mathbb{K}_{\infty,c} *) *)  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Die Definition der Ordinalzahlen erfüllt dieses Kriterium offensichtlich, während die Biordinalzahlen es nicht erfüllen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{On}  \in  \mathbb{K}_{\infty,c}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{Bn}  \notin  \mathbb{K}_{\infty,c}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'weil die Biordinalzahlen eben \jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{mehr Vorgänger vor ω haben als sein Wert groß ist}.'."\n".
+                    ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Und von hier kommen wir zur Klasse Gauß-Summen äquivalenter Mengen.'."\n".
+                      'Dies sind unendlich große Mengen, in denen für jedes Element die oben angepasste Gaußsche Summenformel gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \exists \mathbb{K}_{\infty,g}\!: \, *( \forall \mathbb{N}_{\infty,g} \subset \mathbb{N}_{\infty}\!: \, \\\ \qquad\qquad\qquad *( \mathbb{N} \subseteq \mathbb{N}_{\infty,g} \;\land\; \\\ \qquad\qquad\qquad\;\; *( \forall n \in \mathbb{N}_{\infty,g} *)  *[ n \geq 0 \;\land\; \!\!\!\!\! \sum_{ \forall i \in [ 0, n [_{\mathbb{N}_{\infty,g}} } \!\!\!\! i = \frac{ n^{2} - n }{ 2 } *] \\\ \qquad\qquad\qquad  \Rightarrow  \mathbb{N}_{\infty,g} \in \mathbb{K}_{\infty,g} *) *)  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \mathbb{M} \in \mathbb{K}_{\infty,g} *)  *[  \sum_{ \forall i \in [ 0, n [_{\mathbb{M}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  \;\; ,  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich', label_text => '\\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'So können wir von dort zur Summe aller endlichen natürlichen Zahlen übergehen'."\n".
+                      '\color{*Entwick}{Und am Rande vermute ich, dass eine Menge, die in der Klasse der Gauß-Summen äquivalenten Mengen ist'."\n".
+                      'auch zur Klasse der Anzahl äquivalenten Mengen gehören muss}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{M}  \in  \mathbb{K}_{\infty,g}  ?\Rightarrow  \mathbb{M}  \in  \mathbb{K}_{\infty,c}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\color{*Entwick}{was zu beweisen ist.}'."\n".
+                    ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'So können wir nun zur Summe aller endlichen natürlichen Zahlen übergehen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1221,14 +1272,18 @@
                       ''))),
                       
                   array( 'text', array( text => array(
-                    'Auch diese Summe lässt sich nur mit den Biordinalzahlen ausdrücken.'."\n",
-                      'Und sie setzt voraus, dass \\term{ω^^{2} – ω} gerade ist, also ganzzahlig durch Zwei geteilt werden kann.'."\n".
+                    'Interessanterweise lässt sich diese Summe nur mit den Biordinalzahlen ausdrücken, wie wir an der Differenz sehen.'."\n".
+                    'Die in dieser Arbeit entwickelten Zahlen sind also auch im Zusammenhang mit Ordinalzahlen von Bedeutung.'."\n",
+                      'Und die Summe setzt voraus, dass \\term{ω^^{2} – ω} gerade ist, also ganzzahlig durch Zwei geteilt werden kann.'."\n".
                     'Das bedeutet, dass die Zwei als Faktor in beiden Summanden stecken muss.'."\n".
-                    'Folglich trägt \\term{ω} den Primfaktor \\term{2} in sich.\\footnote[*Entwick]{\\color{*Entwick}{Dies ist ein erster ganz kleiner Schritt in Richtung der \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}. Lässt sich auf diese Weise Schritt für Schritt mehr in diese Richtung zeigen?}}'."\n".
+                    'Folglich trägt \\term{ω} den Primfaktor \\term{2} in sich.'."\n".
+                    'Dies ist eine weitere Bestätigung der Plausibilität des \\jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweises der Primzahlprodukt-Vermutung}.'."\n",
+                      '\color{*Entwick}{Interessant wäre, ob sich durch die Bestimmung weiterer Summen die Plausibilität des Beweises der Primzahlprodukt-Vermutung vertiefen lässt.'."\n".
+                    'Siehe Mathologer: \jump[https://www.youtube.com/watch?v=rGlpyFHfMgI]{}{The Moessner Miracle. Why wasn\'t this discovered for over 2000 years?}}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:MengeOrdinalzahlenInsNegativeErweitert', text =>
                       
-                'Die Menge der Ordinalzahlen ins Negative erweitert', subline =>
+                'Die Menge der Ordinalzahlen nur ins Negative erweitert', subline =>
                   'Die Limeszahlen in negativer Zählrichtung erhalten, ohne Vorgänger, und so positive wie negativen Zahlen adressieren')),
                   array( 'text', array( text => array(
                     'Wollen wir alle natürlichen Zahlen \lm{ n } adressieren, von der Null an bis ins potenziell Unendliche,'."\n".

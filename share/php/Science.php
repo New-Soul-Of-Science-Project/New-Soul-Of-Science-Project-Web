@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 04.06.2024, 21:00h
+  // #: Stand: 03.09.2024, 11:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20240903:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\Rightarrow  ' -> '\;\;\;\overset{\mspace{-3.5mu}?}{\Rightarrow}\;\;\;'
   //           20240604:  +:  New in "$Sc_g_equation_replace_ary":  '.\langle' -> '.\!\langle',  '\rangle .' -> '\rangle\!.',  '.\left\langle' -> '.\!\left\langle',  '\right\rangle .' -> '\right\rangle\!.'
   //           20240516:  +:  "MathJax":  Add Macro "S" for "\S" to generate a non italic "S" for irrational algebraic coefficients useful for set S.
   //           20240305:  +:  "MathJax":  Add Macro "Ir" for "\Ir" to generate a non italic "Ir" for irrational algebraic coefficients.
@@ -650,6 +651,7 @@
   // #: The order of entries may be important: As example see first ' + '-> ' \;+\; ' and than '+' -> '%2B'.
   $Sc_g_equation_replace_ary = array(
                                     // #: Arrange space around symbols and save chars.
+                                    array( '  ?\Rightarrow  ', '\;\;\;\overset{\mspace{-3.5mu}?}{\Rightarrow}\;\;\;'),
                                     array( '  \Rightarrow  ', '\;\;\;\Rightarrow\;\;\;'),
                                     array( '  \Leftrightarrow  ', '\;\;\;\Leftrightarrow\;\;\;'),
                                     array( '  \land  ', '\;\;\;\land\;\;\;'),
