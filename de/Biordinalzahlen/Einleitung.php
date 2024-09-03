@@ -25,11 +25,11 @@
                       
                   array( 'text', array( text => array(
                     'Ausgangspunkt der Biordinalzahlen sind die Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}}.'."\n".
-                    'Bei den Elementen der Menge der Ordinalzahlen \latexmath{ \mathbb{On} } handelt es sich um die Fortsetzung des Zählens oder der uns allgemein bekannten Anzahl von Dingen ins Aktual-Unendliche.'."\n",
+                    'Bei den Elementen der Menge der Ordinalzahlen \lm{ \mathbb{On} } handelt es sich um die Fortsetzung des Zählens oder der uns allgemein bekannten Anzahl von Dingen ins Aktual-Unendliche.'."\n",
                       'Die nachfolgend eingeführten Biordinalzahlen erweitern das Zählen (Vorwärtszählen) um das Rückwärtszählen von jeder Zahl aus bis in den negativen Bereich.'."\n".
                     'Das bedeutet, dass das Rückwärtszählen und die Subtraktion innerhalb der Biordinalzahlen vollständig definiert sind,'."\n".
                     'was innerhalb der Ordinalzahlen nicht der Fall ist.'."\n",
-                      'Die Elemente der Menge der Biordinalzahlen \latexmath{ \mathbb{Bn} } definieren so nicht nur die Anzahlen, die vorhanden sind,'."\n".
+                      'Die Elemente der Menge der Biordinalzahlen \lm{ \mathbb{Bn} } definieren so nicht nur die Anzahlen, die vorhanden sind,'."\n".
                     'sondern auch die Anzahlen, die an etwas vollständigem Fehlen, wie wir sehen werden.'."\n".
                     'Durch die Erweiterung werden die Ordinalzahlen als Biordinalzahlen zu einem algebraischen Ring\footnote{\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n".
                     'Denn nun sind in den Biordinalzahlen die Addition und vollständige Subtraktion und ihr neutrales Element „Null“'."\n".
@@ -75,7 +75,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Deshalb soll gelten, dass die Null ein Element der natürlichen Zahlen ist, wie in den Peano-Axiomen\footnote{\const{NSOSP_g_footnote_text_PeanoAxiome}}'."\n".
-                    'zur Definition von \latexmath{ \mathbb{N} } gefordert und wie für angeordnete Körper definiert\footnote{\const{NSOSP_g_footnote_text_NullIstTeilVonPositiv}}:'."\n".
+                    'zur Definition von \lm{ \mathbb{N} } gefordert und wie für angeordnete Körper definiert\footnote{\const{NSOSP_g_footnote_text_NullIstTeilVonPositiv}}:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -96,14 +96,14 @@
                     ))),
                   array( 'text', array( text => array(
                     'Insgesamt sehen wir, dass jede definierte Zahl der Anzahl der Elemente in einer eineindeutig bestimmten geordnete Menge entspricht.'."\n",
-                      'Die Anzahl \latexmath{ \omega } symbolisiert mathematisch gesehen die aktual unendliche Anzahl,'."\n".
+                      'Die Anzahl \lm{ \omega } symbolisiert mathematisch gesehen die aktual unendliche Anzahl,'."\n".
                     'die den Schritten einer vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} entspricht, um alle endlichen Zahlen von der Null an'."\n".
                     'vollständig durchzuzählen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Grundsätzliche Idee zur Erweiterung der Ordinalzahlen ins Negative', subline =>
-                  'Der Ansatz vorerst beispielhaft mit der Menge der natürlichen Zahlen \latexmath{ \mathbb{N} }, zum einfachen Einstieg und erweiterten Verständnis')),
+                  'Der Ansatz vorerst beispielhaft mit der Menge der natürlichen Zahlen \lm{ \mathbb{N} }, zum einfachen Einstieg und erweiterten Verständnis')),
                   array( 'text', array( text => array(
                     'Aufgrund meines strukturellen Interesses an der Unendlichkeit und meiner Neugier suchte ich vor vielen Jahren'."\n".
                     'nach einer möglichen Fortsetzung der Ordinalzahlen ins Negative.'."\n".
@@ -124,42 +124,42 @@
                     'An einer gegebenen Anzahl fehlen entsprechend viele Zahlen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
-                'Der Ansatz mit der Menge der natürlichen Zahlen \latexmath{ \mathbb{N} } trägt nur bedingt', subline =>
+                'Der Ansatz mit der Menge der natürlichen Zahlen \lm{ \mathbb{N} } trägt nur bedingt', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Wollen wir die Ordinalzahlen um jede Form von Subtraktion erweitern, dann ist der Ansatz mit \latexmath{ \mathbb{N} } nicht ausreichend:'."\n",
-                      'Zum einen bedeutet unser gewünschtes Ziel auch von \latexmath{ \omega } aus rückwärts zu zählen,'."\n".
+                    'Wollen wir die Ordinalzahlen um jede Form von Subtraktion erweitern, dann ist der Ansatz mit \lm{ \mathbb{N} } nicht ausreichend:'."\n",
+                      'Zum einen bedeutet unser gewünschtes Ziel auch von \lm{ \omega } aus rückwärts zu zählen,'."\n".
                     'ohne, dass dies direkt negative Zahlen ergibt.'."\n".
                     'Doch dies entspricht im Grunde genau der zuvor genannten beispielhaften Idee,'."\n".
                     'die Ordinalzahlen ins Negative zu erweitern, wie wir nachfolgend sehen werden.'."\n".
                     'Zum anderen ist es so, dass wir über das zuvor genannte Beispiel quasi am „Ende“ des Ins-Negative-Zählens'."\n".
                     'wieder bei der leeren Menge landen, also bei der Null, was einen Zirkel ergibt, der so nicht sinnvoll ist,'."\n".
                     'weil er das negative „Ende“ der ganzen Zahl mit der Mitte ihrer Zahlengeraden verbindet.'."\n",
-                      'Beides kann vermieden werden, wenn wir anstatt \latexmath{ \mathbb{N} } das Mengenuniversum \latexmath{ \mathbb{U} }'."\n".
+                      'Beides kann vermieden werden, wenn wir anstatt \lm{ \mathbb{N} } das Mengenuniversum \lm{ \mathbb{U} }'."\n".
                     'zur Definition der negativen Zahlen verwenden:'."\n".
-                    'Wir können \latexmath{ \mathbb{N} } als \latexmath{ \omega } benutzen, um von dort aus rückwärts zu zählen.'."\n".
-                    'Und da \latexmath{ \mathbb{U} } nicht nur die Ordinalzahlen enthält, sondern alle Mengen, landen wir nicht bei der leeren Menge,'."\n".
+                    'Wir können \lm{ \mathbb{N} } als \lm{ \omega } benutzen, um von dort aus rückwärts zu zählen.'."\n".
+                    'Und da \lm{ \mathbb{U} } nicht nur die Ordinalzahlen enthält, sondern alle Mengen, landen wir nicht bei der leeren Menge,'."\n".
                     'wenn wir endlos rückwärts ins Negative zählen, denn es bleiben alle anderen Mengen, die nicht den Ordinalzahlen entsprechen,'."\n".
                     'übrig.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
                 'Biordinalzahlen als Erweiterung der Ordinalzahlen', subline =>
-                  'Der Ansatz mit dem Mengenuniversum \latexmath{ \mathbb{U} } zur allgemeinen Definition der Subtraktion von Ordinalzahlen')),
+                  'Der Ansatz mit dem Mengenuniversum \lm{ \mathbb{U} } zur allgemeinen Definition der Subtraktion von Ordinalzahlen')),
                   array( 'text', array( text => array(
                     'Auch, wenn sich auf die oben geschilderte Weise endliche negative Zahlen sinnvoll darstellen lassen, '."\n".
                     'können wir so nicht alle negativen Ordinalzahlen darstellen.'."\n".
-                    'Die Darstellung von \latexmath{ –ω } entspräche wie gesagt dann der leeren Menge, die aber schon der Null entspricht.'."\n".
+                    'Die Darstellung von \lm{ –ω } entspräche wie gesagt dann der leeren Menge, die aber schon der Null entspricht.'."\n".
                     'Noch größere unendliche negative Ordinalzahlen lassen sich so generell nicht darstellen, denn an der Menge'."\n".
-                    'der natürlichen Zahlen \latexmath{ \mathbb{N} } können nicht mehr Zahlen fehlen, als drinne sind.'."\n".
+                    'der natürlichen Zahlen \lm{ \mathbb{N} } können nicht mehr Zahlen fehlen, als drinne sind.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Negative Ordinalzahlen} \\\\'."\n".
                     'Die Lösung dieses Problems finden wir, wie gesagt, darin, anstatt Zahlen an der Menge der natürlichen Zahlen fehlen zu lassen,'."\n".
                     'sie aus dem Mengenuniversum\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Allklasse:2020}.} zu entfernen.'."\n",
-                      'Das Mengenuniversum \latexmath{ \mathbb{U} } ist die kleinste Klasse von Mengen, die alle Mengen enthält, die definierbar sind.'."\n".
+                      'Das Mengenuniversum \lm{ \mathbb{U} } ist die kleinste Klasse von Mengen, die alle Mengen enthält, die definierbar sind.'."\n".
                     'Am Mengenuniversum können wir quasi beliebig viele Zahlen fehlen lassen, wenn wir diese alle durch Mengen darstellen.'."\n".
-                    'Wir ersetzen also die Menge der natürlichen Zahlen \latexmath{ \mathbb{N} } in unserer oben geschilderten Idee durch das Mengenuniversum \latexmath{ \mathbb{U} }:'."\n".
+                    'Wir ersetzen also die Menge der natürlichen Zahlen \lm{ \mathbb{N} } in unserer oben geschilderten Idee durch das Mengenuniversum \lm{ \mathbb{U} }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -257,11 +257,11 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
-                'Die Menge der Biordinalzahlen \latexmath{ \mathbb{Bn} }', subline =>
+                'Die Menge der Biordinalzahlen \lm{ \mathbb{Bn} }', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Die Menge der Ordinalzahlen, erweitert, um die neuen subtraktiven Möglichkeiten, ergeben die neue Menge'."\n".
-                    'der Biordinalzahlen \latexmath{ \mathbb{Bn} }.'."\n".
+                    'der Biordinalzahlen \lm{ \mathbb{Bn} }.'."\n".
                     ''))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:BiOrd:Einleitung:Vortext:X',
@@ -356,14 +356,14 @@
                     'Um wohldefiniert mit Biordinalzahlen mit der uns bekannten Mengenlehre\color{*Bearb}{(Verweis)} arbeiten zu können'."\n".
                     'bedarf es einer Definition, mit was für Objekten wir es hier zu tun haben und einer'."\n".
                     'Erweiterung der Mengenlehre auf all diese Objekte.'."\n",
-                      'Wenn wir negative Zahlen, wie oben, durch das Fehlen von Mengen an der Klasse\color{*Bearb}{(Verweis)} des Mengenuniversums \latexmath{ \mathbb{U} }'."\n".
+                      'Wenn wir negative Zahlen, wie oben, durch das Fehlen von Mengen an der Klasse\color{*Bearb}{(Verweis)} des Mengenuniversums \lm{ \mathbb{U} }'."\n".
                     'definieren, dann bedeutet dies, dass wir das Universum der „normalen“ Mengen verlassen.'."\n".
                     'Denn die Klasse des Mengenuniversums, an der unterschiedliche Kombinationen an Mengen fehlen,'."\n".
                     'sind selber auch keine Mengen, sondern ebenfalls Klassen.'."\n",
                       'Wir können allerdings sagen, dass es sich hierbei um eine besondere Klasse von Klassen handelt:'."\n".
-                    'Wir nennen nun eine Klasse, bei der am Mengenuniversum alle Mengen in einer nicht leeren Menge \latexmath{ a } fehlen, ihre \italic{Antimenge} \latexmath{ a^– }.'."\n".
-                    'Ebenso nennen wir die Klasse, die alle Antimengen enthält, das \italic{Antimengenuniversum} \latexmath{ \mathbb{U}^- }.'."\n".
-                    'Zuletzt nennen wir die Klasse, die alle Mengen sowie alle Antimengen enthält das integrierte Mengenuniversum \latexmath{ \mathbb{U}^i }.'."\n".
+                    'Wir nennen nun eine Klasse, bei der am Mengenuniversum alle Mengen in einer nicht leeren Menge \lm{ a } fehlen, ihre \italic{Antimenge} \lm{ a^– }.'."\n".
+                    'Ebenso nennen wir die Klasse, die alle Antimengen enthält, das \italic{Antimengenuniversum} \lm{ \mathbb{U}^- }.'."\n".
+                    'Zuletzt nennen wir die Klasse, die alle Mengen sowie alle Antimengen enthält das integrierte Mengenuniversum \lm{ \mathbb{U}^i }.'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -376,7 +376,7 @@
                                          label_name => 'OM:BiOrd:Einleitung:IntegrierteMengenlehre:Equ-Antimenge', label_text => '\name{OM:BiOrd:Einleitung:IntegrierteMengenlehre:Equ-Antimenge}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'die Definition der Antimenge zu jeder Menge \latexmath{ a }, die nicht leer ist.'."\n".
+                      'die Definition der Antimenge zu jeder Menge \lm{ a }, die nicht leer ist.'."\n".
                       'Es existiert dabei keine Definition der Antimenge zur leeren Menge:'."\n".
                       ''))),
                   array( 'equations',
@@ -384,7 +384,7 @@
                       array( display => 'on', latex => '{  *( a = \varnothing *) *[  \nexists a^{-}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die leere Menge ist hier ausgeschlossen, weil ihre Antimenge das Mengenuniversum \latexmath{ \mathbb{U} } selber wäre,'."\n".
+                    'Die leere Menge ist hier ausgeschlossen, weil ihre Antimenge das Mengenuniversum \lm{ \mathbb{U} } selber wäre,'."\n".
                     'was zu einem Widerspruch führen würde, den wir gleich noch herausarbeiten.'."\n".
                     'Für die leere Menge ist also keine Antimenge definiert.'."\n".
                     ''))),
@@ -647,7 +647,7 @@
                   array( 'text', array( text => array(
                     'Wir können durch das Vorstehende erkennen, dass aus ontologischer Sicht die Null – die leere Menge –,'."\n".
                     'aufgrund des Ausgangs vom Zählen, zu den positiven Zahlen gehört, und dadurch'."\n".
-                    'die natürlichen Zahlen \latexmath{ \mathbb{N} }, einschließlich der Null, bildet.'."\n".
+                    'die natürlichen Zahlen \lm{ \mathbb{N} }, einschließlich der Null, bildet.'."\n".
                     ''))),
 
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie', text =>
@@ -666,7 +666,7 @@
                   array( 'text', array( text => array(
                     'Interessanterweise können wir so erkennen, dass aus ontologischer Sicht die Null – die leere Menge –,'."\n".
                     'aufgrund des Ausgangs vom Zählen, zu den positiven Zahlen gehört, und dadurch'."\n".
-                    'die natürlichen Zahlen \latexmath{ \mathbb{N} }, einschließlich der Null, bildet.'."\n",
+                    'die natürlichen Zahlen \lm{ \mathbb{N} }, einschließlich der Null, bildet.'."\n",
                       'Da es zur Null keine Antimenge und damit auch ontologisch kein negatives Komplementär gibt,'."\n".
                     'was perfekt zur Eindeutigkeit und gewünschten Bidirektionalität in Bezug auf die Zahlenwerte passt,'."\n".
                     'gibt es tatsächlich genauso viele negative wie positive Zahlen,'."\n".
@@ -904,7 +904,7 @@
                     'Die oben erzielte Erkenntnis, dass der Mittelwert aller endlichen, ganzen Zahlen \term{-½} und damit'."\n".
                     'ein endlicher, negativer Wert ist, erinnert stark an ein in gewisser Hinsicht erstaunliches Ergebnis'."\n".
                     'in Bezug auf die Riemannsche Zeta-Funktion\footnote{Vgl. \cite{wiki:RiemannscheZetaFunktion:2022}.}'."\n".
-                    '\latexmath{\zeta(s)} beim Funktionswert \term{0}:'."\n".
+                    '\lm{\zeta(s)} beim Funktionswert \term{0}:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -943,14 +943,14 @@
                     'Dass die Summe unendlich vieler Einsen oder die Summe aller natürlichen Zahlen einen endlichen, negativen Wert ergeben soll, erscheint hier sehr merkwürdig.'."\n".
                     'Allerdings ist in dieser Definition der Zeta-Funktion der Funktionswert \term{-1} ja eben auch nicht definiert.'."\n",
                       'Berücksichtigen wir, dass die Zeta-Funktion mit Hilfe der Dirichletschen Eta-Funktion\color{*Bearb}{(Verweis)}'."\n".
-                    '\latexmath{\eta(s)} ihre sogenannte analytische Fortsetzung findet, dann erhalten wir für die Definition von \latexmath{\zeta(s)}:\footnote{Vgl. \cite{wiki:RiemannscheZetaFunktion:2022}, Definition und Darstellungsformen, Methoden zur analytischen Fortsetzung, Umformungen der Dirichlet-Reihe und die Eulersche Reihentransformation.}'."\n".
+                    '\lm{\eta(s)} ihre sogenannte analytische Fortsetzung findet, dann erhalten wir für die Definition von \lm{\zeta(s)}:\footnote{Vgl. \cite{wiki:RiemannscheZetaFunktion:2022}, Definition und Darstellungsformen, Methoden zur analytischen Fortsetzung, Umformungen der Dirichlet-Reihe und die Eulersche Reihentransformation.}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} *) *( s \neq 1 *) *[  \zeta(s)  :=  \frac{ \eta(s) }{ 1 - 2^{1 - s} }  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dies gilt unter der Voraussetzung, dass wir eine Definition von \latexmath{\eta(s)} über die ganze komplexe Zahlenebene \term{\M(C)} finden.'."\n",
+                    'Dies gilt unter der Voraussetzung, dass wir eine Definition von \lm{\eta(s)} über die ganze komplexe Zahlenebene \term{\M(C)} finden.'."\n",
                       'Wir beginnen einmal mit der einfachsten Definition der Dirichletschen Eta-Funktion:'."\n".
                     ''))),
                   array( 'equations',
@@ -981,8 +981,8 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \eta(0)  :=  \frac{ \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } *( -1 *)^{n - 1} }{ \# *( \mathbb{N} \setminus *\{ 0 *\} *) }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Hier erkennen wir, dass das Ergebnis ganz entscheidend von der Anzahl der Elemente in \latexmath{ \mathbb{N} \setminus *\{ 0 *\} } abhängt.'."\n".
-                    'Ist die Anzahl gerade, dann erhalten wir \latexmath{ 0 }.'."\n",
+                    'Hier erkennen wir, dass das Ergebnis ganz entscheidend von der Anzahl der Elemente in \lm{ \mathbb{N} \setminus *\{ 0 *\} } abhängt.'."\n".
+                    'Ist die Anzahl gerade, dann erhalten wir \lm{ 0 }.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n",
                       'Addieren wir doch auch mal die positiven und negativen Zahlen und schauen, wann wir vielleicht \term{¼} erhalten:'."\n".
                     ''))),
@@ -1120,7 +1120,7 @@
                   array( 'text', array( text => array(
                     'Allerdings existiert ein Bereich, der nur analytisch durchleuchtet werden kann, weil er für die'."\n".
                     'vollständige Induktion des Zählens steht.'."\n".
-                    'Dieser Bereich wird durch die Ellipse (Dreipunkte-Symbol) „\latexmath{ \cdots }“ ausgedrückt.'."\n",
+                    'Dieser Bereich wird durch die Ellipse (Dreipunkte-Symbol) „\lm{ \cdots }“ ausgedrückt.'."\n",
                       'Nach der Definition der Ordinalzahlen kommen vor \term{ω} also genau so viele ganze Zahlen,'."\n".
                     'wie die Anzahl \term{ω}.'."\n".
                     'Denn das ist explizit so definiert.'."\n",
@@ -1200,7 +1200,7 @@
                       'uns auf Mengen zu beschränken, die ausschließlich von der Null an ganze Zahlen enthalten.'."\n".
                       'Wir definieren also die Menge \lm{ \mathbb{N}_{\infty} } aller positiven ganzen Zahlen, von der Null an bis ins beliebig aktual Unendliche.'."\n".
                       'Diese Menge können wir mit Hilfe der Abrundung durch die Gaußklammer\footnote{\const{SupNum_g_footnote_text_Gaussklammer}}'."\n".
-                      '\latexmath{ \lfloor x \rfloor } zum Ausdruck bringen, die eine Zahl \latexmath{ x } auf die nächst kleinere ganze Zahl abrundet, wenn sie noch keine ganze Zahl ist:'."\n".
+                      '\lm{ \lfloor x \rfloor } zum Ausdruck bringen, die eine Zahl \lm{ x } auf die nächst kleinere ganze Zahl abrundet, wenn sie noch keine ganze Zahl ist:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
