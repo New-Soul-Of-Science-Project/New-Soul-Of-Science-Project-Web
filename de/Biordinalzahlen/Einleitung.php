@@ -83,8 +83,8 @@
                                           label_name => 'OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null', label_text => '\name{OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Der Übergang vom Endlichen ins Aktual-Unendliche geschieht durch die Feststellung, dass dann auch die Anzahl der Elemente der Menge der natürlichen Zahlen \term{\M(N)} durch ein Symbol dargestellt werden kann, nämlich \term{ω};'."\n".
-                    'und nach Formel \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-n-plus-Eins} so dann auch \term{ω+1} und folgende:'."\n".
+                    'Der Übergang vom Endlichen ins Aktual-Unendliche geschieht durch die Feststellung, dass dann auch die Anzahl der Elemente der Menge der natürlichen Zahlen \lm{ \mathbb{N} } durch ein Symbol dargestellt werden kann, nämlich \lm{ ω };'."\n".
+                    'und nach Formel \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-n-plus-Eins} so dann auch \lm{ ω + 1 } und folgende:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -183,7 +183,7 @@
                     'Wir möchten ja erreichen, dass wir innerhalb der Biordinalzahlen generell von jeder Zahl aus nicht nur in die positive Richtung,'."\n".
                     'sondern auch in die negative Richtung zählen, also die Vorgänger benennen, können.'."\n".
                     'Die sogenannten Limeszahlen\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlLimeszahlen}},'."\n".
-                    'wie \term{ω}, \term{2⋅ω} oder \term{ω^^{2}}, haben in unserer Konstruktion immer noch keine Vorgänger.'."\n",
+                    'wie \lm{ ω }, \lm{ 2 ω } oder \lm{ ω^{2} }, haben in unserer Konstruktion immer noch keine Vorgänger.'."\n",
                       'Die Vorgänger der Limeszahlen lassen sich nun entsprechend der absolut negativen Zahlen definieren:'."\n".
                     ''))),
                   array( 'equations',
@@ -193,7 +193,7 @@
                       array( display => 'on', latex => '{  \omega - n  :=  \mathbb{N} \setminus n  =  \mathbb{N} \setminus *\{ 0, 1, \cdots , n - 1 *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Diese Definition, basierend auf \term{\M(N)}, wurde eingangs für die Definition der absolut negativen Zahlen in Erwägung gezogen, dafür jedoch wieder verworfen, und bekommt hiermit ihre passende Rolle.'."\n".
+                    'Diese Definition, basierend auf \lm{ \mathbb{N} }, wurde eingangs für die Definition der absolut negativen Zahlen in Erwägung gezogen, dafür jedoch wieder verworfen, und bekommt hiermit ihre passende Rolle.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Herleitung des Ansatzes der allgemeinen Subtraktion mit positivem Ergebnis} \\\\'."\n".
@@ -205,10 +205,10 @@
                       array( display => 'on', latex => '{  \omega^2 - \omega - n  =  \omega^2 - *( \omega + n *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Diese beiden Darstellungen sind aus Sicht der an \term{ω^^{2}} fehlenden Mengen im ersten Moment nicht identisch.'."\n".
-                    'Dabei müssen wir uns zuerst klar machen, dass an \term{ω^^{2}} auch nur die Mengen fehlen können, die enthalten sind.'."\n",
+                    'Diese beiden Darstellungen sind aus Sicht der an \lm{ ω^{2} } fehlenden Mengen im ersten Moment nicht identisch.'."\n".
+                    'Dabei müssen wir uns zuerst klar machen, dass an \lm{ ω^{2} } auch nur die Mengen fehlen können, die enthalten sind.'."\n",
                       'So taucht die Frage auf, ob es nicht generell möglich ist, immer die folgende Definition zu benutzen,'."\n".
-                    'wenn \term{λ} die größte Limeszahl in der Summe ist und \term{β} die restlichen Summanden kleinerer Limeszahlen zusammenfasst:'."\n".
+                    'wenn \lm{ \lambda } die größte Limeszahl in der Summe ist und \lm{ \beta } die restlichen Summanden kleinerer Limeszahlen zusammenfasst:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -223,7 +223,7 @@
                       array( display => 'on', latex => '{  \omega^2 - *( \omega + n *)  :=  \omega^2 \setminus *( \omega + n *)  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Und das erscheint schlüssig, weil alle Zahlen, die aus \term{ω^^{2}} entfernt werden auch darin enthalten sind.'."\n",
+                    'Und das erscheint schlüssig, weil alle Zahlen, die aus \lm{ ω^{2} } entfernt werden auch darin enthalten sind.'."\n",
                       'Doch was wäre, wenn sich Vorzeichen der hinteren Summanden ändern:'."\n".
                     ''))),
                   array( 'equations',
@@ -234,13 +234,13 @@
                       array( display => 'on', latex => '{  \Rightarrow  \omega^2 - *( \omega - n *)  :=  \omega^2 \setminus *( \omega \setminus n *) \\\ \qquad\qquad\qquad\quad\;\;  =  \omega^2 \setminus *( \omega \setminus *\{ 0, 1, \cdots , n - 1 *\} *) \\\ \qquad\qquad\qquad\quad\;\;  =  \omega^2 \setminus *\{ n, n + 1, n + 2, n + 3, \cdots *\} \\\ \qquad\qquad\qquad\quad\;\;  =  *\{ 0, 1, \cdots , n - 1, \omega, \omega + 1, \cdots , \omega^2 *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Das scheint auch schlüssig zu sein, weil möglich, denn die weggelassenen Mengen existieren in \term{ω^^{2}} beziehungsweise in \term{ω}, als auch eineindeutig,'."\n".
+                    'Das scheint auch schlüssig zu sein, weil möglich, denn die weggelassenen Mengen existieren in \lm{ ω^{2} } beziehungsweise in \lm{ ω }, als auch eineindeutig,'."\n".
                     'denn es gibt keine andere Möglichkeit, die selbe Darstellung des Wertes durch eine solche Konstruktion zu erreichen.'."\n",
                       'Und diese Darstellung erfüllt auch die wichtige Eigenschaft, dass die durch Mengen dargestellte Zahl die Anzahl an Mengen enthält,'."\n".
                     'wie ihr Wert groß ist, oder diese Anzahl aus der Klasse aller Mengen entfernt wird.'."\n".
                     'Am vorstehenden Beispiel veranschaulicht bedeutet dies:'."\n".
-                    'Beim Wert \term{ω^^{2} –  ω + n} haben wir als Basis die Menge \term{ω^^{2}} aus der wir die Mengen in \term{ω} herausnehmen,'."\n".
-                    'die Mengen in \term{n} jedoch drinnen belassen beziehungsweise wieder hinzufügen:'."\n".
+                    'Beim Wert \lm{ ω^{2} – ω + n } haben wir als Basis die Menge \lm{ ω^{2} } aus der wir die Mengen in \lm{ ω } herausnehmen,'."\n".
+                    'die Mengen in \lm{ n } jedoch drinnen belassen beziehungsweise wieder hinzufügen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -275,11 +275,11 @@
                   // funktioniert nicht, wegen verschachteltem Aufklappen
                   /* array( 'notice', array( Display => 'showContent', text => array(
                      '\bold{Überprüfen}',
-                     '• Warum sollte die Addition von \term{n} in \term{(ω^^{2} – ω) + n} anders laufen als oben?',
+                     '• Warum sollte die Addition von \lm{ n } in \lm{ (ω^{2} – ω) + n } anders laufen als oben?',
                     ))), */
                   array( 'text', array( text => array(
                      '\color{*Bearb}{\bold{Überprüfen} \\\\ '."\n".
-                     '• Warum sollte die Addition von \term{n} in \term{(ω^^{2} – ω) + n} anders laufen als oben?}'."\n",
+                     '• Warum sollte die Addition von \lm{ n } in \lm{ (ω^{2} – ω) + n } anders laufen als oben?}'."\n",
                     ))),
                   array( 'text', array( text => array(
                     'Die andere Möglichkeit ist, wir klammern von vorne:'."\n".
@@ -290,7 +290,7 @@
                       array( display => 'on', latex => '{  \Rightarrow  \omega^2 - \omega + n  :=  *( \omega^2 \setminus \omega *) + n  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dann würden wir von \term{ω^^{2} – ω} um \term{n} Schritte neu loszählen und erhielten so bisher nicht da gewesene Mengen, die diese Zahlen darstellten.'."\n".
+                    'Dann würden wir von \lm{ ω^{2} – ω } um \lm{ n } Schritte neu loszählen und erhielten so bisher nicht da gewesene Mengen, die diese Zahlen darstellten.'."\n".
                     'Das finde ich viel weniger intuitiv, weil sich die Strukturen der Mengen dann nicht nur in der obersten Verschachtelungsebene der größten Limeszahl ändern,'."\n".
                     'sondern auch in tieferen Ebenen.'."\n",
                       'Noch komplexer wird es dann im folgenden Beispiel:'."\n".
@@ -310,7 +310,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Eine noch ganz andere Möglichkeit, die ich in meiner Abhandlung über Biordinalzahlen gewählt hatte und jetzt verworfen habe,'."\n".
-                    'ist, wir entfernen nicht den Mengeninhalt einer zu subtrahierenden Zahl vom Mengenuniversum \term{\M(U)} (siehe \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Lambda-minus-Beta}),'."\n".
+                    'ist, wir entfernen nicht den Mengeninhalt einer zu subtrahierenden Zahl vom Mengenuniversum \lm{ \mathbb{U} } (siehe \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Lambda-minus-Beta}),'."\n".
                     'sondern die Zahl selber:'."\n".
                     ''))),
                   array( 'equations',
@@ -420,8 +420,8 @@
                       
                   array( 'text', array( text => array(
                     'Hier sehen wir auch, dass, ohne Ausschluss der leeren Menge bei der Definition der Antimengen (siehe Formel \jumpname{OM:BiOrd:Einleitung:IntegrierteMengenlehre:Equ-Antimenge}),'."\n".
-                    'das Antimengenuniversum \term{\M(U)^^{&thinsp;–}} widersprüchlicher Weise das Mengenuniversum \term{\M(U)} enthalten würde,'."\n".
-                    'obwohl sich beide zum integrierten Mengenuniversum \term{\M(U)^^{ i}} ergänzen sollen.'."\n",
+                    'das Antimengenuniversum \lm{ \mathbb{U}^{–}} widersprüchlicher Weise das Mengenuniversum \lm{ \mathbb{U} } enthalten würde,'."\n".
+                    'obwohl sich beide zum integrierten Mengenuniversum \lm{ \mathbb{U}^{i} } ergänzen sollen.'."\n",
                       'So können wir jetzt eine allgemeine Definition der Negierung von integrierten Mengen angeben.'."\n".
                     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -486,25 +486,25 @@
                     'Bei der Nichtauswahl aus den Möglichkeiten bleiben dann alle anderen Möglichkeiten ausgewählt.'."\n".
                     'Symbolisch wird durch die Klammer, die etwas enthält, eine Auswahl getroffen, die diese vom Rest der'."\n".
                     'Auswahlmöglichkeiten abgrenzt, die Auswahl umhüllt.'."\n",
-                      'Implizit haben wir es oben also immer mit der Menge der natürliche Zahlen \term{\M(N)} zu tun.'."\n".
+                      'Implizit haben wir es oben also immer mit der Menge der natürliche Zahlen \lm{ \mathbb{N} } zu tun.'."\n".
                     'Die Auswahl befindet sich in der Menge- oder Auswahl-Klammer oder Auswahl-Hülle und der Rest unsichtbar außerhalb dieser.'."\n".
-                    'Unsere Betrachtung behandelt also immer die Menge \term{\M(N)}, die in zwei Teile zerlegt ist:'."\n".
+                    'Unsere Betrachtung behandelt also immer die Menge \lm{ \mathbb{N} }, die in zwei Teile zerlegt ist:'."\n".
                     'Einen Teil, auf den wir fokussierten – der bewusste Teil – und einen Teil, den wir ausblenden – der unbewusste Teil.'."\n".
                     'Naturphilosophisch gesehen, haben wir es mit einem Dualismus beziehungsweise einer Polarität zu tun,'."\n".
                     'dem \italic{Auswahldualismus} oder \italic{Bewusstseinsdualismus}.'."\n",
                       'Noch näher betrachtet handelt es sich beim Auswahl- oder Bewusstseinsdualismus um einen fraktalen Dualismus.'."\n".
-                    'Denn zunächst wählen wir die Menge \term{\M(N)}, nehmen sie in unseren Fokus und blenden damit alles andere'."\n".
+                    'Denn zunächst wählen wir die Menge \lm{ \mathbb{N} }, nehmen sie in unseren Fokus und blenden damit alles andere'."\n".
                     'was existiert aus.'."\n".
                     'Anschließend gehen wir in diese Menge und wählen in ihr wieder einen Teil aus, den wir nun in den näheren Fokus nehmen'."\n".
-                    'und damit alle anderen Elemente in \term{\M(N)} ausblenden.'."\n".
+                    'und damit alle anderen Elemente in \lm{ \mathbb{N} } ausblenden.'."\n".
                     'Wir haben dann also schon vier Fraktalebenen:'."\n".
-                    'Alles was existiert, darin die Menge \term{\M(N)}, darin alle Elemente in dieser Menge und dann darin'."\n".
-                    'die Teilmenge der Elemente, die wir letztendlich aus den Elementen in \term{\M(N)} ausgewählt haben.'."\n",
+                    'Alles was existiert, darin die Menge \lm{ \mathbb{N} }, darin alle Elemente in dieser Menge und dann darin'."\n".
+                    'die Teilmenge der Elemente, die wir letztendlich aus den Elementen in \lm{ \mathbb{N} } ausgewählt haben.'."\n",
                       'Eine Invertierung oder Vertauschung des Fokus auf die bewussten und unbewussten Elemente aller beteiligten Ebenen nutzen wir nun zur Darstellung negativer Zahlen.'."\n".
                     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Wählen wir eine einzige Ordinalzahl, beispielsweise die \term{2}, dann läuft dies in folgenden Schritten auf diesen Ebenen ab:'."\n".
+                      'Wählen wir eine einzige Ordinalzahl, beispielsweise die \lm{ 2 }, dann läuft dies in folgenden Schritten auf diesen Ebenen ab:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.OD', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -522,23 +522,23 @@
                       array( display => 'on', latex => '{  *\{> 2 *<\}  =  *\{> *\{ 0, 1 *\} *<\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Um die Menge mit unserer Auswahl aus \term{\M(N)} herum befinden sich ja implizit alle Zahlen, die wir nicht aus \term{\M(N)}'."\n".
-                      'ausgewählt haben, denn wir haben ja zum Ausdruck gebracht, dass wir uns mit den Elementen in \term{\M(N)} beschäftigen:'."\n".
+                      'Um die Menge mit unserer Auswahl aus \lm{ \mathbb{N} } herum befinden sich ja implizit alle Zahlen, die wir nicht aus \lm{ \mathbb{N} }'."\n".
+                      'ausgewählt haben, denn wir haben ja zum Ausdruck gebracht, dass wir uns mit den Elementen in \lm{ \mathbb{N} } beschäftigen:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  *\{> 2 *<\}  =  *\{> *\{ *\{> 0, 1 *<\} , 2, 3, 4, 5, \cdots *\} *<\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Und dort existieren natürlich auch alle restlichen Mengen, die es in \term{\M(U)} noch gibt:'."\n".
+                      'Und dort existieren natürlich auch alle restlichen Mengen, die es in \lm{ \mathbb{U} } noch gibt:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  *\{> 2 *<\}  =  *\{> *\{> *\{ *\{> 0, 1 *<\} , 2, 3, 4, 5, \cdots *\} *<\} \cup *( \mathbb{U} \setminus \mathbb{N} *) *<\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Wenn wir unseren Fokus von der \term{2} zu allen anderen wechseln, dann sollte dies \term{-2} ergeben,'."\n".
-                      'denn die \term{2} fehlt ja nun, und sieht folgendermaßen aus'."\n".
+                      'Wenn wir unseren Fokus von der \lm{ 2 } zu allen anderen wechseln, dann sollte dies \lm{ -2 } ergeben,'."\n".
+                      'denn die \lm{ 2 } fehlt ja nun, und sieht folgendermaßen aus'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.OD', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -679,7 +679,7 @@
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Sei \term{#} das Symbol für den Operator, der die Anzahl der Elemente einer Menge liefert,'."\n".
+                      'Sei \lm{ \# } das Symbol für den Operator, der die Anzahl der Elemente einer Menge liefert,'."\n".
                       'so gilt, auch wegen der oben definierten Gleichsetzung von Anzahlen und deren entsprechenden Mengen:'."\n".
                     ''))),
                   array( 'equations',
@@ -770,10 +770,10 @@
                   array( 'text', array( text => array(
                     'Wir können am Übergang von \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-minus-n} zu \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-minus-Omega}'."\n".
                     'sehen, dass wir so viele endliche Zahlen am Mengenuniversum weglassen können, wie es von ihnen gibt:'."\n".
-                    'derer in der Anzahl \term{ω} existieren, nämlich ein Mal die vollständige Induktion der natürlichen Zahlen.'."\n".
+                    'derer in der Anzahl \lm{ ω } existieren, nämlich ein Mal die vollständige Induktion der natürlichen Zahlen.'."\n".
                     'Jede dieser zusätzlich weggelassenen endlichen Zahlen steht für jeweils eine negative ganze Zahl.'."\n",
                       'Demnach gibt es also genau so viele negative ganze Zahlen, wie positive ganze Zahlen mit der Null existieren.'."\n".
-                    'Und diese kombinatorische Anzahl wird in \term{-ω} ausgedrückt und ihr absoluter Wert ist eben \term{ω}.'."\n".
+                    'Und diese kombinatorische Anzahl wird in \lm{ -ω } ausgedrückt und ihr absoluter Wert ist eben \lm{ ω }.'."\n".
                     'Also gibt es auch aus dieser Perspektive eine negative ganze Zahl mehr, als es positive ohne die Null gibt.'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -813,7 +813,7 @@
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Sei \term{#} das Symbol für den Operator, der die Anzahl der Elemente einer Menge liefert,'."\n".
+                      'Sei \lm{ \# } das Symbol für den Operator, der die Anzahl der Elemente einer Menge liefert,'."\n".
                       'so gilt, auch wegen der oben definierten Gleichsetzung von Anzahlen und deren entsprechenden Mengen'."\n".
                     ''))),
                   array( 'equations',
@@ -851,16 +851,16 @@
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Die Summe aller endlichen, ganzen Zahlen ist demnach der aktual unendliche Wert \term{–ω}'."\n".
-                      'und nicht \term{0} (Null), wie wir im Allgemeinen eher annehmen.'."\n".
+                      'Die Summe aller endlichen, ganzen Zahlen ist demnach der aktual unendliche Wert \lm{ –ω }'."\n".
+                      'und nicht \lm{ 0 } (Null), wie wir im Allgemeinen eher annehmen.'."\n".
                       ''))),
                       
                   array( 'text', array( text => array(
-                    'Der Wert \term{–ω} dieser Summe ist nur mit Biordinalzahlen ausdrückbar.'."\n",
+                    'Der Wert \lm{ –ω } dieser Summe ist nur mit Biordinalzahlen ausdrückbar.'."\n",
                       'Das die Summe aller endlichen ganzen Zahlen negativ ist, dürfte den einen oder anderen erstaunen.'."\n".
                     'Denn naiv neigen wir wohl zumeist dazu anzunehmen, dass sich alle endlichen ganzen Zahlen zu Null summieren,'."\n".
                     'weil wir von einer Werte- und Zahlensymmetrie bei Null ausgehen.'."\n".
-                    'Das wirklich \term{–ω} die Summe aller endlichen ganzen Zahlen ist und ebenso auch \term{2ω} die Anzahl'."\n".
+                    'Das wirklich \lm{ –ω } die Summe aller endlichen ganzen Zahlen ist und ebenso auch \lm{ 2 ω } die Anzahl'."\n".
                     'aller endlichen ganzen Zahlen, bestätigt sich durch die plausible Herleitung'."\n".
                     'der \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integration} auf Basis der'."\n".
                     '\jump{OM:SupNum:Home}{Superial-Zahlen},'."\n".
@@ -879,7 +879,7 @@
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Der Mittelwert aller endlichen, ganzen Zahlen ist demnach \term{–½} und nicht \term{0} (Null), wie wir im Allgemeinen eher annehmen.'."\n".
+                      'Der Mittelwert aller endlichen, ganzen Zahlen ist demnach \lm{ –½ } und nicht \lm{ 0 } (Null), wie wir im Allgemeinen eher annehmen.'."\n".
                       ''))),
                       
                   array( 'text', array( text => array(
@@ -901,10 +901,10 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Die oben erzielte Erkenntnis, dass der Mittelwert aller endlichen, ganzen Zahlen \term{-½} und damit'."\n".
+                    'Die oben erzielte Erkenntnis, dass der Mittelwert aller endlichen, ganzen Zahlen \lm{ -½ } und damit'."\n".
                     'ein endlicher, negativer Wert ist, erinnert stark an ein in gewisser Hinsicht erstaunliches Ergebnis'."\n".
                     'in Bezug auf die Riemannsche Zeta-Funktion\footnote{Vgl. \cite{wiki:RiemannscheZetaFunktion:2022}.}'."\n".
-                    '\lm{\zeta(s)} beim Funktionswert \term{0}:'."\n".
+                    '\lm{\zeta(s)} beim Funktionswert \lm{ 0 }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -914,7 +914,7 @@
                     'Wo der \color{*Bearb}{(mögliche)} Zusammenhang besteht, werden wir gleich noch weiter ausführen.'."\n",
                       'Ein in der Mathematik ganz berühmtes Ergebnis, dass unter anderem durch den indischen Mathematiker'."\n".
                     'Srinivasa Ramanujan\color{*Bearb}{(Verweis)} gefunden wurde,\footnote{Vgl. \cite{wiki:RiemannscheZetaFunktion:2022}, Geschichte, Anfang des 20. Jahrhunderts, Ramanujans Arbeit zur Zeta-Funktion.}'."\n".
-                    'liegt beim Funktionswert \term{-1} der Zeta-Funktion:'."\n".
+                    'liegt beim Funktionswert \lm{ -1 } der Zeta-Funktion:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -925,7 +925,7 @@
                 '\color{*Bearb}{(In Arbeit …)} Versuch nach Definition der Zeta-Funktion durch die Dirichletsche Eta-Funktion', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Allerdings gilt die simple Definition der Zeta-Funktion nur für komplexe Funktionswerte, dessen Realteil größer als \term{1} ist:'."\n",
+                    'Allerdings gilt die simple Definition der Zeta-Funktion nur für komplexe Funktionswerte, dessen Realteil größer als \lm{ 1 } ist:'."\n",
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -941,7 +941,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Dass die Summe unendlich vieler Einsen oder die Summe aller natürlichen Zahlen einen endlichen, negativen Wert ergeben soll, erscheint hier sehr merkwürdig.'."\n".
-                    'Allerdings ist in dieser Definition der Zeta-Funktion der Funktionswert \term{-1} ja eben auch nicht definiert.'."\n",
+                    'Allerdings ist in dieser Definition der Zeta-Funktion der Funktionswert \lm{ -1 } ja eben auch nicht definiert.'."\n",
                       'Berücksichtigen wir, dass die Zeta-Funktion mit Hilfe der Dirichletschen Eta-Funktion\color{*Bearb}{(Verweis)}'."\n".
                     '\lm{\eta(s)} ihre sogenannte analytische Fortsetzung findet, dann erhalten wir für die Definition von \lm{\zeta(s)}:\footnote{Vgl. \cite{wiki:RiemannscheZetaFunktion:2022}, Definition und Darstellungsformen, Methoden zur analytischen Fortsetzung, Umformungen der Dirichlet-Reihe und die Eulersche Reihentransformation.}'."\n".
                     ''))),
@@ -950,7 +950,7 @@
                       array( display => 'on',  latex => '{  *( \forall s \in \mathbb{C} *) *( s \neq 1 *) *[  \zeta(s)  :=  \frac{ \eta(s) }{ 1 - 2^{1 - s} }  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dies gilt unter der Voraussetzung, dass wir eine Definition von \lm{\eta(s)} über die ganze komplexe Zahlenebene \term{\M(C)} finden.'."\n",
+                    'Dies gilt unter der Voraussetzung, dass wir eine Definition von \lm{\eta(s)} über die ganze komplexe Zahlenebene \lm{ \mathbb{C} } finden.'."\n",
                       'Wir beginnen einmal mit der einfachsten Definition der Dirichletschen Eta-Funktion:'."\n".
                     ''))),
                   array( 'equations',
@@ -967,8 +967,8 @@
                     ))),
                   array( 'text', array( text => array(
                     'Hier erkennen wir schon eine gewisse Ähnlichkeit mit unserer Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z},'."\n".
-                    'auch, wenn diese Definition eigentlich nicht für die Funktionswerte \term{0} und \term{-1} gilt.'."\n",
-                      'Addieren wir doch trotzdem mal die positiven und negativen Einsen und schauen, wann wir vielleicht \term{½} erhalten.'."\n".
+                    'auch, wenn diese Definition eigentlich nicht für die Funktionswerte \lm{ 0 } und \lm{ -1 } gilt.'."\n",
+                      'Addieren wir doch trotzdem mal die positiven und negativen Einsen und schauen, wann wir vielleicht \lm{ ½ } erhalten.'."\n".
                     'Aus dem Mathologer Video \italic{\jump[https://www.youtube.com/watch?v=YuIIjLr6vUA]{}{Numberphile v. Math: the truth about 1+2+3+...=-1/12}} wissen wir, dass die Summe über die Ramanujan Summation als eine Art Mittelwert definiert ist.'."\n".
                     'Benutzen wir die Formel von oben, dann ergibt sich:'."\n".
                     ''))),
@@ -984,7 +984,7 @@
                     'Hier erkennen wir, dass das Ergebnis ganz entscheidend von der Anzahl der Elemente in \lm{ \mathbb{N} \setminus *\{ 0 *\} } abhängt.'."\n".
                     'Ist die Anzahl gerade, dann erhalten wir \lm{ 0 }.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n",
-                      'Addieren wir doch auch mal die positiven und negativen Zahlen und schauen, wann wir vielleicht \term{¼} erhalten:'."\n".
+                      'Addieren wir doch auch mal die positiven und negativen Zahlen und schauen, wann wir vielleicht \lm{ ¼ } erhalten:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1024,7 +1024,7 @@
                       array( display => 'on',  latex => '{  \zeta(-1)  ?=  \sum_{ n = 1 }^{\infty} n  ?=  - \frac{ 1 }{ 12 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Allerdings gilt diese Definition der Zeta-Funktion nur für komplexe Funktionswerte, dessen Realteil größer als \term{1} ist.'."\n",
+                    'Allerdings gilt diese Definition der Zeta-Funktion nur für komplexe Funktionswerte, dessen Realteil größer als \lm{ 1 } ist.'."\n",
                       'Dennoch betrachten wir einmal, was das Ergebnis wäre:\footnote{Vgl. \cite{wiki:RiemannscheZetaFunktion:2022}, Geschichte, Anfang des 20. Jahrhunderts, Ramanujans Arbeit zur Zeta-Funktion.}'."\n".
                     ''))),
                   array( 'equations',
@@ -1044,7 +1044,7 @@
                 '\color{*Bearb}{(In Arbeit …)} Versuch nach Primzahlprodukt-Vermutung', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Nach der Primzahlprodukt-Vermutung ist \term{ω} eine aktual unendliche, gerade Zahl und das Ergebnis damit eine aktual unendliche, ganze Zahl.'."\n".
+                    'Nach der Primzahlprodukt-Vermutung ist \lm{ ω } eine aktual unendliche, gerade Zahl und das Ergebnis damit eine aktual unendliche, ganze Zahl.'."\n".
                     'Insofern passt dies.'."\n".
                     'Es ist noch nicht geklärt, wie dies durch Mengen im hier entwickelten Sinn dargestellt werden kann.'."\n".
                     ''))),
@@ -1079,8 +1079,8 @@
                 'Neue Einsichten zu positiven aktual unendlichen Biordinalzahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Wir können nun zu Aussagen kommen, die etwas über die Größe von \term{ω} verraten:'."\n",
-                      'Subtrahieren wir eine beliebige endliche natürliche Zahl \term{n} von \term{ω}, ergibt sich niemals eine Zahl, die zur Menge'."\n".
+                    'Wir können nun zu Aussagen kommen, die etwas über die Größe von \lm{ ω } verraten:'."\n",
+                      'Subtrahieren wir eine beliebige endliche natürliche Zahl \lm{ n } von \lm{ ω }, ergibt sich niemals eine Zahl, die zur Menge'."\n".
                     'der endlichen Zahlen gehört:'."\n".
                     ''))),
                   array( 'equations',
@@ -1088,16 +1088,16 @@
                       array( display => 'on', latex => '{  *( \forall n \in \mathbb{N} *)  *[  \omega - n  \notin  \mathbb{N}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\term{ω – n} ist nicht in den natürlichen Zahlen \term{\M(N)}, weil eine unendlich große Zahl \term{ω}'."\n".
-                    'minus einer endlichen Zahl \term{n} eine unendlich große Zahl bleibt.'."\n".
+                    '\lm{ ω – n } ist nicht in den natürlichen Zahlen \lm{ \mathbb{N} }, weil eine unendlich große Zahl \lm{ ω }'."\n".
+                    'minus einer endlichen Zahl \lm{ n } eine unendlich große Zahl bleibt.'."\n".
                     'Dies ist offensichtlich und plausibel.'."\n".
-                    'Und eine unendlich große Zahl ist eben per Definition kein Element von \term{\M(N)}.'."\n",
-                      'In den Biordinalzahlen zeigt sich also eine riesige mit unendlich großen ganzen Zahlen gefüllte Lücke zwischen den endlichen natürlichen Zahlen und \term{ω}.'."\n".
+                    'Und eine unendlich große Zahl ist eben per Definition kein Element von \lm{ \mathbb{N} }.'."\n",
+                      'In den Biordinalzahlen zeigt sich also eine riesige mit unendlich großen ganzen Zahlen gefüllte Lücke zwischen den endlichen natürlichen Zahlen und \lm{ ω }.'."\n".
                     ''))),
 
                   array( 'text', array( Shape => 'italic', text => array(
                       'Hier sei gesagt, dass diese Lücke auch ein wesentlicher Grund dafür ist, dass die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} wahr sein könnte.'."\n".
-                      '\color{*Bearb}{(Ist das wirklich eine Begründung? Die Lücke ist so groß nun auch wieder nicht, siehe unten. Außerdem geht es ja um den Wert von \term{ω}, der sich aus dem Produkt aller endlichen Primzahlen ergeben soll, und nicht darum, wieviele ganze Zahlen vor \term{ω} kommen.)}'."\n".
+                      '\color{*Bearb}{(Ist das wirklich eine Begründung? Die Lücke ist so groß nun auch wieder nicht, siehe unten. Außerdem geht es ja um den Wert von \lm{ ω }, der sich aus dem Produkt aller endlichen Primzahlen ergeben soll, und nicht darum, wieviele ganze Zahlen vor \lm{ ω } kommen.)}'."\n".
                     ''))),
                       
                   array( 'text', array( text => array(
@@ -1105,13 +1105,13 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega', text =>
                       
-                'Es gibt mehr ganze Zahlen von Null bis zu \term{ω}, als der Wert von \term{ω} ausdrückt', subline =>
+                'Es gibt mehr ganze Zahlen von Null bis zu \lm{ ω }, als der Wert von \lm{ ω } ausdrückt', subline =>
                   'Eine Paradox erscheinende, bizarre Situation')),
                   array( 'text', array( text => array(
                     'Doch was ist geschehen?'."\n".
                     'Und was bedeutet das?'."\n",
                       'Gehen wir noch einmal zurück zur Definition der Ordinalzahlen:'."\n",
-                      'Die Ordinalzahlen sind so definiert, dass nach den endlichen natürlichen Zahlen gleich \term{ω} folgt:'."\n".
+                      'Die Ordinalzahlen sind so definiert, dass nach den endlichen natürlichen Zahlen gleich \lm{ ω } folgt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1121,12 +1121,12 @@
                     'Allerdings existiert ein Bereich, der nur analytisch durchleuchtet werden kann, weil er für die'."\n".
                     'vollständige Induktion des Zählens steht.'."\n".
                     'Dieser Bereich wird durch die Ellipse (Dreipunkte-Symbol) „\lm{ \cdots }“ ausgedrückt.'."\n",
-                      'Nach der Definition der Ordinalzahlen kommen vor \term{ω} also genau so viele ganze Zahlen,'."\n".
-                    'wie die Anzahl \term{ω}.'."\n".
+                      'Nach der Definition der Ordinalzahlen kommen vor \lm{ ω } also genau so viele ganze Zahlen,'."\n".
+                    'wie die Anzahl \lm{ ω }.'."\n".
                     'Denn das ist explizit so definiert.'."\n",
                       'Erweitern wir die Ordinalzahlen nun in Form der Biordinalzahlen zu einem Ring und führen damit die Subtraktion endlicher natürlicher'."\n".
-                    'Zahlen von \term{ω} ein, dann entstehen zwangsweise weiter ganze Zahlen zwischen'."\n".
-                    'der Ellipse und \term{ω}:'."\n".
+                    'Zahlen von \lm{ ω } ein, dann entstehen zwangsweise weiter ganze Zahlen zwischen'."\n".
+                    'der Ellipse und \lm{ ω }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1135,10 +1135,10 @@
                     ))),
                   array( 'text', array( text => array(
                     'Eine ganz wesentliche und nicht ganz so einfach zu beantwortende Frage ist:'."\n".
-                    'Wieviele Zahlen sind nun vor \term{ω} zusätzlich neu entstanden?'."\n",
+                    'Wieviele Zahlen sind nun vor \lm{ ω } zusätzlich neu entstanden?'."\n",
                       'Die Antwort darauf haben wir im Abschnitt \italic{\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}}'."\n".
                     'ausführlich beleuchtet und eine plausible Antwort aus ontologischer und aus kombinatorischer Perspektive gefunden.'."\n".
-                    'Es kommen \term{ω} weitere Zahlen hinzu:'."\n".
+                    'Es kommen \lm{ ω } weitere Zahlen hinzu:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1147,7 +1147,7 @@
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Wie wir erkennen können, liegen nun vor \term{ω}, mit der Null, dann \term{2 ⋅ ω} ganze endlich und unendlich große Zahlen.'."\n".
+                    'Wie wir erkennen können, liegen nun vor \lm{ ω }, mit der Null, dann \lm{ 2 ω } ganze endlich und unendlich große Zahlen.'."\n".
                     'Das erscheint ein wenig paradox.'."\n",
                       'Trotzdem ist die Erweiterung ontologisch erkenntnisreich, plausibel und sinnvoll, weil nützlich.'."\n".
                     'Denn, wie wir noch sehen werden,'."\n".
@@ -1156,9 +1156,9 @@
                   array( 'text', array( text => array(
                   '\condb{Eine größere Anzahl von Vorgängern, als eine Zahl groß ist, kennen wir schon von rationalen Zahlen} \\\\'."\n".
                     'Bei den Biordinalzahlen haben wir es offenbar mit einer Mischform auf dem Weg zu den rationalen Zahlen zu tun.'."\n",
-                      'Denn auch bei den rationalen Zahlen haben wir mehr Vorgänger, sagen wir beispielsweise vor der \term{½},'."\n".
+                      'Denn auch bei den rationalen Zahlen haben wir mehr Vorgänger, sagen wir beispielsweise vor der \lm{ ½ },'."\n".
                     'als die Zahl groß ist.'."\n".
-                    'Mit der und nach der Null und vor der \term{½} liegen sogar unendlich viele rationale Zahlen.'."\n".
+                    'Mit der und nach der Null und vor der \lm{ ½ } liegen sogar unendlich viele rationale Zahlen.'."\n".
                     'Nur handelt es sich nicht um ganze Zahlen, sondern die rationalen Zahlen liegen dicht\color{*Bearb}{(Verweis)},'."\n".
                     'während die Biordinalzahlen alle noch ganze Zahlen sind und noch nicht dicht liegen.'."\n".
                     ''))),
@@ -1166,7 +1166,7 @@
                   '\condb{Bezug zu den Superial-Zahlen und zur Anzahl der rationalen Zahlen} \\\\'."\n".
                     'Das vorstehende Ergebnis spielt bei der Analyse der \jump{OM:SupNum:Eigenschaften:StrukturVonS}{Struktur der Superial-Zahlen} und damit auch im Hinblick auf'."\n".
                     'die Anzahl der rationalen Zahlen eine zentrale Rolle.'."\n",
-                      'Bemerkenswerter Weise hat die superiale Basis \term{s} dann wieder genau so viele natürliche Vorgänger,'."\n".
+                      'Bemerkenswerter Weise hat die superiale Basis \lm{ \s } dann wieder genau so viele natürliche Vorgänger,'."\n".
                     'wie sie selber groß ist.'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -1274,9 +1274,9 @@
                   array( 'text', array( text => array(
                     'Interessanterweise lässt sich diese Summe nur mit den Biordinalzahlen ausdrücken, wie wir an der Differenz sehen.'."\n".
                     'Die in dieser Arbeit entwickelten Zahlen sind also auch im Zusammenhang mit Ordinalzahlen von Bedeutung.'."\n",
-                      'Und die Summe setzt voraus, dass \term{ω^^{2} – ω} gerade ist, also ganzzahlig durch Zwei geteilt werden kann.'."\n".
+                      'Und die Summe setzt voraus, dass \lm{ ω^{2} – ω } gerade ist, also ganzzahlig durch Zwei geteilt werden kann.'."\n".
                     'Das bedeutet, dass die Zwei als Faktor in beiden Summanden stecken muss.'."\n".
-                    'Folglich trägt \term{ω} den Primfaktor \term{2} in sich.'."\n".
+                    'Folglich trägt \lm{ ω } den Primfaktor \lm{ 2 } in sich.'."\n".
                     'Dies ist eine weitere Bestätigung der Plausibilität des \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweises der Primzahlprodukt-Vermutung}.'."\n",
                       '\color{*Entwick}{Interessant wäre, ob sich durch die Bestimmung weiterer Summen die Plausibilität des Beweises der Primzahlprodukt-Vermutung vertiefen lässt.'."\n".
                     'Siehe Mathologer: \jump[https://www.youtube.com/watch?v=rGlpyFHfMgI]{}{The Moessner Miracle. Why wasn\'t this discovered for over 2000 years?}}'."\n".
@@ -1339,7 +1339,7 @@
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
                       
                 'Weiterentwicklung zu den Superial-Zahlen', subline =>
-                  'Die superiale Basis \term{s} hat \term{s} natürliche Superial-Zahlen als Vorgänger')),
+                  'Die superiale Basis \lm{ \s} hat \lm{ \s } natürliche Superial-Zahlen als Vorgänger')),
                   array( 'text', array( text => array(
                     'Die \jump{OM:SupNum:Home}{Superial-Zahlen} können in gewisser Hinsicht als Weiterentwicklung der Biordinalzahlen zu einer'."\n".
                     'abelschen Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}} bezüglich der Addition und Multiplikation'."\n".
