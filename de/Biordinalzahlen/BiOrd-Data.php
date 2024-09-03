@@ -56,7 +56,7 @@
       jump_ary => array(
         'OM:BiOrd:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
-          'OM:BiOrd:Einleitung:Vortext:Ordinalzahlen' => array( headline_text => 'Ordinalzahlen'/*, headline_text_short => 'XXX'*/),
+          'OM:BiOrd:Einleitung:Vortext:Ordinalzahlen' => array( headline_text => 'Ordinalzahlen'/*, headline_text_short => 'X'*/),
           'OM:BiOrd:Einleitung:Vortext:Equ-n-gleich-Menge-Null-bis-n-minus-Eins' => array( headline_text => 'BO.Ein.5'),
           'OM:BiOrd:Einleitung:Vortext:Equ-n-plus-Eins' => array( headline_text => 'BO.Ein.6'),
           'OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null' => array( headline_text => 'BO.Ein.8'),
@@ -65,21 +65,21 @@
           'OM:BiOrd:Einleitung:Vortext:Equ-minus-Omega' => array( headline_text => 'BO.Ein.24'),
           'OM:BiOrd:Einleitung:Vortext:Equ-Lambda-minus-Beta' => array( headline_text => 'BO.Ein.30'),
                         
-        'OM:BiOrd:Einleitung:IntegrierteMengenlehre' => array( headline_text => 'Integrierte Mengenlehre'/*, headline_text_short => 'XXX'*/),
+        'OM:BiOrd:Einleitung:IntegrierteMengenlehre' => array( headline_text => 'Integrierte Mengenlehre'/*, headline_text_short => 'X'*/),
           'OM:BiOrd:Einleitung:IntegrierteMengenlehre:Equ-Antimenge' => array( headline_text => 'BO.Ein.IM.1'),
                         
-        'OM:BiOrd:Einleitung:OntologischeDeutung' => array( headline_text => 'Ontologische Deutung'/*, headline_text_short => 'XXX'*/),
+        'OM:BiOrd:Einleitung:OntologischeDeutung' => array( headline_text => 'Ontologische Deutung'/*, headline_text_short => 'X'*/),
                         
-        'OM:BiOrd:Einleitung:NeueEinsichten' => array( headline_text => 'Neue Einsichten'/*, headline_text_short => 'XXX'*/),
+        'OM:BiOrd:Einleitung:NeueEinsichten' => array( headline_text => 'Neue Einsichten'/*, headline_text_short => 'X'*/),
                         
-          'OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie' => array( headline_text => 'Eine fundamentale Asymmetrie'/*, headline_text_short => 'XXX'*/),
+          'OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie' => array( headline_text => 'Eine fundamentale Asymmetrie'/*, headline_text_short => 'X'*/),
           'OM:BiOrd:Einleitung:NeueEinsichten:Fig-OntologieGanzeZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
-          'OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen' => array( headline_text => 'Anzahl der endlichen ganzen Zahlen'/*, headline_text_short => 'XXX'*/),
+          'OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen' => array( headline_text => 'Anzahl der endlichen ganzen Zahlen'/*, headline_text_short => 'X'*/),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N' => array( headline_text => 'BO.Ein.NE.6'),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-Z' => array( headline_text => 'BO.Ein.NE.7'),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z' => array( headline_text => 'BO.Ein.NE.12'),
 
-          'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl' => array( headline_text => 'Neue Einsichten zu positiven aktual unendlichen Biordinalzahlen'/*, headline_text_short => 'XXX'*/),
+          'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl' => array( headline_text => 'Neue Einsichten zu positiven aktual unendlichen Biordinalzahlen'/*, headline_text_short => 'X'*/),
           'OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega' => array( headline_text => 'Es gibt mehr ganze Zahlen von Null bis zu \lm{ ω }, als der Wert von \lm{ ω } ausdrückt', headline_text_short => 'Es gibt mehr ganze Zahlen von Null bis zu ω, als der Wert von ω ausdrückt'),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega' => array( headline_text => 'BO.Ein.NE.68'),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n' => array( headline_text => 'BO.Ein.NE.74'),
@@ -88,7 +88,7 @@
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega' => array( headline_text => 'BO.Ein.NE.84'),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N' => array( headline_text => 'BO.Ein.NE.85'),
 
-          'OM:BiOrd:Einleitung:NeueEinsichten:MengeOrdinalzahlenInsNegativeErweitert' => array( headline_text => 'Die Menge der Ordinalzahlen ins Negative erweitert'/*, headline_text_short => 'XXX'*/),
+          'OM:BiOrd:Einleitung:NeueEinsichten:MengeOrdinalzahlenInsNegativeErweitert' => array( headline_text => 'Die Menge der Ordinalzahlen ins Negative erweitert'/*, headline_text_short => 'X'*/),
       ),
     ),
     'OM:BiOrd:Literatur' => array(
