@@ -44,8 +44,8 @@
                     'wie zum Beispiel \lm{ \s - 1 }, mit sich.'."\n".
                     'Denn hier fehlt an \lm{ \s } etwas.'."\n",
                       'Auch zum Beweis der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} trägt die mengentheoretische Perspektive des Negativen'."\n".
-                    'tiefe Einsichten bei, indem festgestellt wird, dass \lm{ \omega - 1 } zu einer riesigen Lücke zwischen den endlichen natürlichen Zahlen'."\n".
-                    'und dem hier nachgewiesenen Produkt aller endlichen Primzahlen \lm{ \omega } gehört.'."\n",
+                    'tiefe Einsichten bei, indem festgestellt wird, dass \lm{ ω - 1 } zu einer riesigen Lücke zwischen den endlichen natürlichen Zahlen'."\n".
+                    'und dem hier nachgewiesenen Produkt aller endlichen Primzahlen \lm{ ω } gehört.'."\n",
                       'Und nicht zuletzt können wir im Zusammenhang mit geometrischen Überlegungen etwas über die ontologische Struktur des Zählens lernen,'."\n".
                     'deren Erweiterung auf das Negative eine grundlegende Asymmetrie in den ganzen Zahlen erkennen lässt.'."\n".
                     'Meine Intuition sagt mir, dass diese Asymmetrie gemeinsam mit der bewiesenen Primzahlprodukt-Vermutung in der Lage sein könnte'."\n".
@@ -89,14 +89,14 @@
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       // array( display => 'on', latex => '{  \mathbb{N}  :=  ??? *\{  n ~\middle|~ \left( n \in \mathbb{N} \right) \left( \forall x \in \mathbb{N} \right) \left[  x < n  \right]  *\}  }'),
-                      array( display => 'on', latex => '{  \omega  :=  \mathbb{N}  =  *\{ 0, 1, 2, 3, 4, 5, \cdots *\}  }',
+                      array( display => 'on', latex => '{  ω  :=  \mathbb{N}  =  *\{ 0, 1, 2, 3, 4, 5, \cdots *\}  }',
                                           label_name => 'OM:BiOrd:Einleitung:Vortext:Equ-Def-omega-gleich-N', label_text => '\name{OM:BiOrd:Einleitung:Vortext:Equ-Def-omega-gleich-N}', label_incr => true),
-                      array( display => 'on', latex => '{  \omega + 1  :=  \mathbb{N} \cup *\{ \mathbb{N} *\}  =  *\{ 0, 1, 2, 3, \cdots , \mathbb{N} *\}  }'),
-                      array( display => 'on', latex => '{  \omega + 2  :=  *( \omega + 1 *) \cup *\{ \omega + 1 *\} \\\ \qquad\;  =  *\{ 0, 1, 2, 3, \cdots , \mathbb{N}, *\{ 0, 1, 2, 3, \cdots , \mathbb{N} *\} *\}  }'),
+                      array( display => 'on', latex => '{  ω + 1  :=  \mathbb{N} \cup *\{ \mathbb{N} *\}  =  *\{ 0, 1, 2, 3, \cdots , \mathbb{N} *\}  }'),
+                      array( display => 'on', latex => '{  ω + 2  :=  *( ω + 1 *) \cup *\{ ω + 1 *\} \\\ \qquad\;  =  *\{ 0, 1, 2, 3, \cdots , \mathbb{N}, *\{ 0, 1, 2, 3, \cdots , \mathbb{N} *\} *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Insgesamt sehen wir, dass jede definierte Zahl der Anzahl der Elemente in einer eineindeutig bestimmten geordnete Menge entspricht.'."\n",
-                      'Die Anzahl \lm{ \omega } symbolisiert mathematisch gesehen die aktual unendliche Anzahl,'."\n".
+                      'Die Anzahl \lm{ ω } symbolisiert mathematisch gesehen die aktual unendliche Anzahl,'."\n".
                     'die den Schritten einer vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}} entspricht, um alle endlichen Zahlen von der Null an'."\n".
                     'vollständig durchzuzählen.'."\n".
                     ''))),
@@ -128,7 +128,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Wollen wir die Ordinalzahlen um jede Form von Subtraktion erweitern, dann ist der Ansatz mit \lm{ \mathbb{N} } nicht ausreichend:'."\n",
-                      'Zum einen bedeutet unser gewünschtes Ziel auch von \lm{ \omega } aus rückwärts zu zählen,'."\n".
+                      'Zum einen bedeutet unser gewünschtes Ziel auch von \lm{ ω } aus rückwärts zu zählen,'."\n".
                     'ohne, dass dies direkt negative Zahlen ergibt.'."\n".
                     'Doch dies entspricht im Grunde genau der zuvor genannten beispielhaften Idee,'."\n".
                     'die Ordinalzahlen ins Negative zu erweitern, wie wir nachfolgend sehen werden.'."\n".
@@ -137,7 +137,7 @@
                     'weil er das negative „Ende“ der ganzen Zahl mit der Mitte ihrer Zahlengeraden verbindet.'."\n",
                       'Beides kann vermieden werden, wenn wir anstatt \lm{ \mathbb{N} } das Mengenuniversum \lm{ \mathbb{U} }'."\n".
                     'zur Definition der negativen Zahlen verwenden:'."\n".
-                    'Wir können \lm{ \mathbb{N} } als \lm{ \omega } benutzen, um von dort aus rückwärts zu zählen.'."\n".
+                    'Wir können \lm{ \mathbb{N} } als \lm{ ω } benutzen, um von dort aus rückwärts zu zählen.'."\n".
                     'Und da \lm{ \mathbb{U} } nicht nur die Ordinalzahlen enthält, sondern alle Mengen, landen wir nicht bei der leeren Menge,'."\n".
                     'wenn wir endlos rückwärts ins Negative zählen, denn es bleiben alle anderen Mengen, die nicht den Ordinalzahlen entsprechen,'."\n".
                     'übrig.'."\n".
@@ -170,9 +170,9 @@
                       array( display => 'on',  latex => '{  -2  :=  \mathbb{U} \setminus 2  =  \mathbb{U} \setminus *\{ 0, 1 *\}  =  \mathbb{U} \setminus *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
                       array( display => 'on',  latex => '{  -n  :=  \mathbb{U} \setminus n  =  \mathbb{U} \setminus *\{ 0, 1, \cdots , n - 1 *\}  }',
                                           label_name => 'OM:BiOrd:Einleitung:Vortext:Equ-minus-n', label_text => '\name{OM:BiOrd:Einleitung:Vortext:Equ-minus-n}', label_incr => true),
-                      array( display => 'on',  latex => '{  -\omega  :=  \mathbb{U} \setminus \omega  =  \mathbb{U} \setminus \mathbb{N} \\\ \qquad\qquad\qquad\;  =  \mathbb{U} \setminus *\{ 0, 1, 2, 3, \cdots *\}  }',
+                      array( display => 'on',  latex => '{  -ω  :=  \mathbb{U} \setminus ω  =  \mathbb{U} \setminus \mathbb{N} \\\ \qquad\qquad\qquad\;  =  \mathbb{U} \setminus *\{ 0, 1, 2, 3, \cdots *\}  }',
                                           label_name => 'OM:BiOrd:Einleitung:Vortext:Equ-minus-Omega', label_text => '\name{OM:BiOrd:Einleitung:Vortext:Equ-minus-Omega}', label_incr => true),
-                      array( display => 'on',  latex => '{  - *(\omega + 1 *)  :=  \mathbb{U} \setminus *( \omega + 1 *) \\\ \qquad\quad\;\;  =  \mathbb{U} \setminus *( \mathbb{N} \cup *\{ \mathbb{N} *\} *) \\\ \qquad\quad\;\;  =  \mathbb{U} \setminus *\{ 0, 1, 2, 3, \cdots , \mathbb{N} *\}  }'),
+                      array( display => 'on',  latex => '{  - *( ω + 1 *)  :=  \mathbb{U} \setminus *( ω + 1 *) \\\ \qquad\quad\;\;  =  \mathbb{U} \setminus *( \mathbb{N} \cup *\{ \mathbb{N} *\} *) \\\ \qquad\quad\;\;  =  \mathbb{U} \setminus *\{ 0, 1, 2, 3, \cdots , \mathbb{N} *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Auch in diesem Fall wird konsequenterweise das Prinzip aufrecht erhalten, dass die Klasse – das Mengenuniversum ist auch ein Container, aber definitionsgemäß keine Menge, sondern eine Klasse –, die eine Zahl repräsentiert zum Negativen hin'."\n".
@@ -188,9 +188,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \omega - 1  :=  \mathbb{N} \setminus 1  =  \mathbb{N} \setminus *\{ 0 *\} \\\ \qquad\qquad\qquad\quad  =  \mathbb{N} \setminus *\{ *\{ *\} *\}  }'),
-                      array( display => 'on', latex => '{  \omega - 2  :=  \mathbb{N} \setminus 2  =  \mathbb{N} \setminus *\{ 0, 1 *\} \\\ \qquad\qquad\qquad\quad  =  \mathbb{N} \setminus *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
-                      array( display => 'on', latex => '{  \omega - n  :=  \mathbb{N} \setminus n  =  \mathbb{N} \setminus *\{ 0, 1, \cdots , n - 1 *\}  }'),
+                      array( display => 'on', latex => '{  ω - 1  :=  \mathbb{N} \setminus 1  =  \mathbb{N} \setminus *\{ 0 *\} \\\ \qquad\qquad\qquad\quad  =  \mathbb{N} \setminus *\{ *\{ *\} *\}  }'),
+                      array( display => 'on', latex => '{  ω - 2  :=  \mathbb{N} \setminus 2  =  \mathbb{N} \setminus *\{ 0, 1 *\} \\\ \qquad\qquad\qquad\quad  =  \mathbb{N} \setminus *\{ *\{ *\}, *\{ *\{ *\} *\} *\}  }'),
+                      array( display => 'on', latex => '{  ω - n  :=  \mathbb{N} \setminus n  =  \mathbb{N} \setminus *\{ 0, 1, \cdots , n - 1 *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Diese Definition, basierend auf \lm{ \mathbb{N} }, wurde eingangs für die Definition der absolut negativen Zahlen in Erwägung gezogen, dafür jedoch wieder verworfen, und bekommt hiermit ihre passende Rolle.'."\n".
@@ -202,7 +202,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \omega^2 - \omega - n  =  \omega^2 - *( \omega + n *)  }'),
+                      array( display => 'on', latex => '{  ω^2 - ω - n  =  ω^2 - *( ω + n *)  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Diese beiden Darstellungen sind aus Sicht der an \lm{ ω^{2} } fehlenden Mengen im ersten Moment nicht identisch.'."\n".
@@ -220,7 +220,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \omega^2 - *( \omega + n *)  :=  \omega^2 \setminus *( \omega + n *)  }'),
+                      array( display => 'on', latex => '{  ω^2 - *( ω + n *)  :=  ω^2 \setminus *( ω + n *)  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Und das erscheint schlüssig, weil alle Zahlen, die aus \lm{ ω^{2} } entfernt werden auch darin enthalten sind.'."\n",
@@ -228,10 +228,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \omega^2 - \omega + n  =  \omega^2 - *( \omega - n *)  }'),
-                      array( display => 'on', latex => '{  \omega^2 - *( \omega - n *)  :=  \omega^2 \setminus *( \omega - n *)  }'),
-                      array( display => 'on', latex => '{  \omega - n  :=  \omega \setminus n  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  \omega^2 - *( \omega - n *)  :=  \omega^2 \setminus *( \omega \setminus n *) \\\ \qquad\qquad\qquad\quad\;\;  =  \omega^2 \setminus *( \omega \setminus *\{ 0, 1, \cdots , n - 1 *\} *) \\\ \qquad\qquad\qquad\quad\;\;  =  \omega^2 \setminus *\{ n, n + 1, n + 2, n + 3, \cdots *\} \\\ \qquad\qquad\qquad\quad\;\;  =  *\{ 0, 1, \cdots , n - 1, \omega, \omega + 1, \cdots , \omega^2 *\}  }'),
+                      array( display => 'on', latex => '{  ω^2 - ω + n  =  ω^2 - *( ω - n *)  }'),
+                      array( display => 'on', latex => '{  ω^2 - *( ω - n *)  :=  ω^2 \setminus *( ω - n *)  }'),
+                      array( display => 'on', latex => '{  ω - n  :=  ω \setminus n  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  ω^2 - *( ω - n *)  :=  ω^2 \setminus *( ω \setminus n *) \\\ \qquad\qquad\qquad\quad\;\;  =  ω^2 \setminus *( ω \setminus *\{ 0, 1, \cdots , n - 1 *\} *) \\\ \qquad\qquad\qquad\quad\;\;  =  ω^2 \setminus *\{ n, n + 1, n + 2, n + 3, \cdots *\} \\\ \qquad\qquad\qquad\quad\;\;  =  *\{ 0, 1, \cdots , n - 1, ω, ω + 1, \cdots , ω^2 *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Das scheint auch schlüssig zu sein, weil möglich, denn die weggelassenen Mengen existieren in \lm{ ω^{2} } beziehungsweise in \lm{ ω }, als auch eineindeutig,'."\n".
@@ -244,8 +244,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \Leftrightarrow  \omega^2 \setminus *( \omega \setminus n *)  =  *( \omega^2 \setminus \omega *) \cup n  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  \omega^2 - *( \omega - n *)  =  *( \omega^2 - \omega *) + n  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  ω^2 \setminus *( ω \setminus n *)  =  *( ω^2 \setminus ω *) \cup n  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  ω^2 - *( ω - n *)  =  *( ω^2 - ω *) + n  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Entsprechendes gilt auch für alle anderen Vorgänger aller Limeszahlen.'."\n",
@@ -286,8 +286,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \omega^2 - \omega + n  =  *( \omega^2 - \omega *) + n  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  \omega^2 - \omega + n  :=  *( \omega^2 \setminus \omega *) + n  }'),
+                      array( display => 'on', latex => '{  ω^2 - ω + n  =  *( ω^2 - ω *) + n  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  ω^2 - ω + n  :=  *( ω^2 \setminus ω *) + n  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dann würden wir von \lm{ ω^{2} – ω } um \lm{ n } Schritte neu loszählen und erhielten so bisher nicht da gewesene Mengen, die diese Zahlen darstellten.'."\n".
@@ -297,7 +297,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \omega^3 - *( \omega^2 - *( \omega - n *) *)  =  *( *( \omega^3 - \omega^2 *) + \omega *) - n  }'),
+                      array( display => 'on', latex => '{  ω^3 - *( ω^2 - *( ω - n *) *)  =  *( *( ω^3 - ω^2 *) + ω *) - n  }'),
                     ))),
                   array( 'text', array( text => array(
                     'So ergibt sich in dieser Möglichkeit ein heilloses Durcheinander.'."\n",
@@ -684,9 +684,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \# \mathbb{N}  =  \# \mathbb{Z}^{+}_{0}  =  \omega  =  \mathbb{N}  }'),
-                      array( display => 'on',  latex => '{  \# \mathbb{Z}^{+}  =  \# \mathbb{Z}^{-}  =  \omega - 1  }'),
-                      array( display => 'on',  latex => '{  \# \mathbb{Z}  =  \# \mathbb{N} + \# \mathbb{Z}^{-}  =  2 \cdot \omega - 1  }'),
+                      array( display => 'on',  latex => '{  \# \mathbb{N}  =  \# \mathbb{Z}^{+}_{0}  =  ω  =  \mathbb{N}  }'),
+                      array( display => 'on',  latex => '{  \# \mathbb{Z}^{+}  =  \# \mathbb{Z}^{-}  =  ω - 1  }'),
+                      array( display => 'on',  latex => '{  \# \mathbb{Z}  =  \# \mathbb{N} + \# \mathbb{Z}^{-}  =  2 \cdot ω - 1  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Summe aller endlichen ganzen Zahlen ist demnach Null:'."\n".
@@ -696,10 +696,10 @@
                       array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N} } n \; + \sum_{ \forall n \in \mathbb{Z}^{-} } \! n  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N} } n \; - \!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ \varnothing *\} } \!\!\! n  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  0 \; + \!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ \varnothing *\} } \!\!\! n \; - \!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ \varnothing *\} } \!\!\! n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ n = 1 }^{ \omega - 1 } n \; - \; \sum_{ n = 1 }^{ \omega - 1 } n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  *( *( \omega - 1 *)^{2} + *( \omega - 1 *) *) \cdot 0  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  *( *( \omega^{2} - 2 \cdot \omega + 1 *) + *( \omega - 1 *) *) \cdot 0  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  *( \omega^{2} - \omega *) \cdot 0  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ n = 1 }^{ ω - 1 } n \; - \; \sum_{ n = 1 }^{ ω - 1 } n  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  *( *( ω - 1 *)^{2} + *( ω - 1 *) *) \cdot 0  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  *( *( ω^{2} - 2 \cdot ω + 1 *) + *( ω - 1 *) *) \cdot 0  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  *( ω^{2} - ω *) \cdot 0  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  0  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -707,9 +707,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot \omega - 1 }  =  \frac{ 0 }{ 2 \cdot \omega - 1 }  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot \omega - 1 }  =  0  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 \cdot \omega - 1 }  =  0  }'),
+                      array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot ω - 1 }  =  \frac{ 0 }{ 2 \cdot ω - 1 }  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot ω - 1 }  =  0  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 \cdot ω - 1 }  =  0  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
@@ -764,7 +764,7 @@
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  -n  :=  \mathbb{U} \setminus n  =  \mathbb{U} \setminus *\{ 0, 1, \cdots , n - 1 *\}  }',
                                           /* label_name => 'OM:BiOrd:Einleitung:Vortext:Equ-ninus-n', */label_text => '\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-minus-n}', label_incr => false),
-                      array( display => 'on',  latex => '{  -\omega  :=  \mathbb{U} \setminus \omega  =  \mathbb{U} \setminus \mathbb{N} \\\ \qquad\qquad\qquad\;  =  \mathbb{U} \setminus *\{ 0, 1, 2, 3, \cdots *\}  }',
+                      array( display => 'on',  latex => '{  -ω  :=  \mathbb{U} \setminus ω  =  \mathbb{U} \setminus \mathbb{N} \\\ \qquad\qquad\qquad\;  =  \mathbb{U} \setminus *\{ 0, 1, 2, 3, \cdots *\}  }',
                                           /* label_name => 'OM:BiOrd:Einleitung:Vortext:Equ-minus-Omega', */label_text => '\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-minus-Omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -801,7 +801,7 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = n - 2 \cdot n - 1  *]  *\}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = - n - 1  *]  *\}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{Z}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *[  x = - *( n + 1 *)  *]  *\}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Z}^{-}  =  \omega  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{Z}^{-}  =  ω  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dann entsteht der Eindruck einer Spiegelung.'."\n".
@@ -843,7 +843,7 @@
                       array( display => 'on',  latex => '{  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} *( n + 1 *)  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} n - \sum_{ \forall n \in \mathbb{N}} 1  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - \sum_{ \forall n \in \mathbb{N}} 1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - \omega  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  - ω  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -870,9 +870,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot \omega }  =  \frac{ - \omega }{ 2 \cdot \omega }  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 \cdot \omega }  =  \frac{ - \omega }{ 2 \cdot \omega }  }'),
-                      array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 \cdot \omega }  =  - \frac{ 1 }{ 2 }  }'),
+                      array( display => 'on', latex => '{  \frac{ \sum_{ \forall z \in \mathbb{Z}} z }{ 2 \cdot ω }  =  \frac{ - ω }{ 2 \cdot ω }  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 \cdot ω }  =  \frac{ - ω }{ 2 \cdot ω }  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} \frac{ z }{ 2 \cdot ω }  =  - \frac{ 1 }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'In Worten ausgedrückt bedeutet dies:'."\n".
@@ -991,8 +991,8 @@
                       array( display => 'on',  latex => '{  \eta(-1)  :=  1 - 2 + 3 - 4 + 5 + \cdots  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! *( 2 \cdot n - 1 *) \; - \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 2 \cdot n  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \\\ \qquad\qquad \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 2 \cdot n \; - \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! 1 \; - \; 2 \cdot \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \\\ \qquad\qquad 2 \cdot \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! n \; - \; *( \omega - 1 *) \; - \; 2 \cdot \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! n  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \\\ \qquad\qquad - \; *( \omega - 1 *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \\\ \qquad\qquad 2 \cdot \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! n \; - \; *( ω - 1 *) \; - \; 2 \cdot \!\!\!\! \sum_{ \forall n \in \mathbb{N} \setminus *\{ 0 *\} } \!\!\!\! n  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \eta(-1)  :=  \\\ \qquad\qquad - \; *( ω - 1 *)  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Für die Summe aller natürlicher Zahlen können wir die Gaußsche Summenformel\footnote{\const{BiOrd_g_footnote_text_GaussscheSummenformel}} benutzen:'."\n".
@@ -1000,7 +1000,7 @@
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } i  =  0 + 1 + 2 + 3 + \cdots + n  =  \frac{ n^{2} + n }{ 2 }  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  0 + 1 + 2 + 3 + \cdots  =  \frac{ \omega^{2} + \omega }{ 2 }  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  0 + 1 + 2 + 3 + \cdots  =  \frac{ ω^{2} + ω }{ 2 }  }'),
                       array( display => 'on', latex => '{  \sum_{ \forall i \in \mathbb{N} } i  =  \sum_{ \forall i \in \mathbb{N} \setminus *\{ 0 *\} } i  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -1037,7 +1037,7 @@
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on', latex => '{  \sum_{ ( \forall i \in \mathbb{N} )[i \leqslant n] } i  =  0 + 1 + 2 + 3 + \cdots + n  =  \frac{ n^{2} + n }{ 2 }  }'),
-                      array( display => 'on', latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  0 + 1 + 2 + 3 + \cdots  =  \frac{ \omega^{2} + \omega }{ 2 }  }'),
+                      array( display => 'on', latex => '{  \Rightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  0 + 1 + 2 + 3 + \cdots  =  \frac{ ω^{2} + ω }{ 2 }  }'),
                     ))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:Vortext:X', text =>
                       
@@ -1085,7 +1085,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  *( \forall n \in \mathbb{N} *)  *[  \omega - n  \notin  \mathbb{N}  *]  }'),
+                      array( display => 'on', latex => '{  *( \forall n \in \mathbb{N} *)  *[  ω - n  \notin  \mathbb{N}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\lm{ ω – n } ist nicht in den natürlichen Zahlen \lm{ \mathbb{N} }, weil eine unendlich große Zahl \lm{ ω }'."\n".
@@ -1115,7 +1115,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  *\{ 0, 1, 2, 3, 4, 5, \cdots , \omega *\}  }'),
+                      array( display => 'on', latex => '{  *\{ 0, 1, 2, 3, 4, 5, \cdots , ω *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Allerdings existiert ein Bereich, der nur analytisch durchleuchtet werden kann, weil er für die'."\n".
@@ -1130,8 +1130,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *\{ 0, 1, 2, 3, \cdots , \cdots , \omega - 3, \omega - 2, \omega - 1, \omega *\}  }'),
-                      //%! array( display => 'on',  latex => '{  \Leftrightarrow  *\{ 0, 1, 2, 3, \cdots , \cdots , \omega - 3, \omega - 2, \omega - 1, \omega - 0 *\}  }'),
+                      array( display => 'on',  latex => '{  *\{ 0, 1, 2, 3, \cdots , \cdots , ω - 3, ω - 2, ω - 1, ω *\}  }'),
+                      //%! array( display => 'on',  latex => '{  \Leftrightarrow  *\{ 0, 1, 2, 3, \cdots , \cdots , ω - 3, ω - 2, ω - 1, ω - 0 *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Eine ganz wesentliche und nicht ganz so einfach zu beantwortende Frage ist:'."\n".
@@ -1142,8 +1142,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      //%! array( display => 'on',  latex => '{  \Rightarrow  \# *\{ 0, 1, 2, \cdots , \cdots , \omega - 2, \omega - 1, \omega - 0 *\} \\\ \qquad\qquad\qquad\qquad\qquad\qquad  =  2 \cdot \omega + 1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# *\{ 0, 1, 2, \cdots , \cdots , \omega - 2, \omega - 1 *\}  =  2 \cdot \omega  }',
+                      //%! array( display => 'on',  latex => '{  \Rightarrow  \# *\{ 0, 1, 2, \cdots , \cdots , ω - 2, ω - 1, ω - 0 *\} \\\ \qquad\qquad\qquad\qquad\qquad\qquad  =  2 \cdot ω + 1  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# *\{ 0, 1, 2, \cdots , \cdots , ω - 2, ω - 1 *\}  =  2 \cdot ω  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -1261,9 +1261,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in \omega } i  =  \frac{ \omega^{2} - \omega }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in ω } i  =  \frac{ ω^{2} - ω }{ 2 }  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-omega}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  \frac{ \omega^{2} - \omega }{ 2 }  \;\;  ,  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall i \in \mathbb{N} } i  =  \frac{ ω^{2} - ω }{ 2 }  \;\;  ,  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
