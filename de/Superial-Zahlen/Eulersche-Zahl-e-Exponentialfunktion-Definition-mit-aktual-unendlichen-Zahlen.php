@@ -166,7 +166,7 @@
                     'und ergänzt so die Limes-Definition, zusätzlich zum Perspektivwechsel, wie wir gleich sehen werden.'."\n".
                     'Dadurch wird transparent, wie sich die \lm{ \e }-Funktion und damit die Zahl \lm{ \e } im und aus dem Unendlichen ergibt.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:eFunktionPascalscheDreieck', text =>
                       
                 'Die \lm{ \e }-Funktion und das Pascalsche Dreieck', subline =>
                   '')),

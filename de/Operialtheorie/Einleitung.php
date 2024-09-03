@@ -24,6 +24,10 @@
                     '• Wie verändern sich die Anzahlen von einem Operator zur drunter liegenden Ebene?',
                     '– Bis zum Zählen: Dann müsste sich eine Differenz zur Zählbasis ergeben.',
                     '– Linksneutrales Element und rechtsneutrales Element über die Rückwärtsrechenarten allgemein definieren.',
+                    '\bold{Beispiele der Reduktion der Operator-nummer}',
+                    '• Siehe Mathologer: \jump[https://www.youtube.com/watch?v=rGlpyFHfMgI]{}{The Moessner Miracle. Why wasn\'t this discovered for over 2000 years?}',
+                    '– Hier wird insgesamt ein Zusammenhang aller Operatoren untereinander und mit dem Pascalschen Dreieck hergestellt, siehe auch Abschnitt \italic{\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:eFunktionPascalscheDreieck}}.',
+                    '– Eines der interessantesten Videos, die ich kenne.',
                     ))),
                       
                   array( 'text', array( text => array(
