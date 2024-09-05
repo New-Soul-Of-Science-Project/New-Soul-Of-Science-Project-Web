@@ -90,15 +90,15 @@
                   '\\condb{Ein Veredlungsprozess – verbindende Gleichnisse der inneren und äußeren Alchemie} \\\\'."\n".
                     'Sowohl in der inneren, wie in der äußeren Alchemie werden Verwandlungsprozesse beschrieben, deren Stufen mit unedlen Metallen oder Edelmetallen identifiziert werden.'."\n".
                     'Es geht in der Alchemie um einen Veredlungsprozess.'."\n",
-                      'Nach Zosimos aus Panopolis\\color{*Bearb}{(Verweis)} geht es zum Beispiel um die persönlichen Entwicklungsstufen der inneren Alchemie vom Kupfermenschen, zum Silbermenschen und schließlich zum Goldmenschen.\\color{*Bearb}{(Verweis)}'."\n".
-                    'In der äußeren Alchemie entsprechend von einem unedlen Metall zum Silber und schließlich zum Gold.\\color{*Bearb}{(Verweis)}'."\n",
+                      'Nach Zosimos aus Panopolis\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ZosimosAusPanopolis:2024}.} geht es zum Beispiel um die persönlichen Entwicklungsstufen der inneren Alchemie vom Kupfermenschen, zum Silbermenschen und schließlich zum Goldmenschen.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ZosimosAusPanopolis:2024}, Werke und Lehre, Peri aretes/Visionen des Zosimos.}'."\n".
+                    'In der äußeren Alchemie entsprechend von einem unedlen Metall zum Silber und schließlich zum Gold.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ZosimosAusPanopolis:2024}, Werke und Lehre, Peri aretes/Visionen des Zosimos.}'."\n",
                       'Hier stellt sich für mich die Frage, ob die Stufen unedler Mensch, unedles Metall, und schließlich edler Mensch, edel, wie Silber und Gold, ursprünglich als reine Gleichnisse, als Allegorien, gemeint waren.'."\n".
                     'Für mich ist es gut vorstellbar, dass die Allegorien erst später wörtlich genommen wurden und sich daraus die äußere Alchemie, die Chemie, entwickelt hat.'."\n".
                     'Dies wird sich vielleicht nie wirklich abschließend klären lassen.'."\n".
                     'Ich sehe aber plausible Hinweise darauf.'."\n",
                       'Demnach wären Menschen, die mehr Wert auf und Hoffnung in das materielle legten, vermutlich aufgrund ihres chemischen Vorwissens, nachträglich zu der Überzeugung gekommen,'."\n".
                     'dass die rätselhaften Beschreibungen der Alchemie eigentlich einen materiellen Schatz, in Form eines Geheimnisses um materielle chemische Prozesse, in sich tragen.'."\n".
-                    'Wie wir heute wissen sind es aber nukleare Prozesse, die chemische Elemente ineinander umwandeln, die vornehmlich in Sonnen und deren Explosionen ablaufen, den Supernovae\\color{*Bearb}{(Verweis)}.\\color{*Bearb}{(Verweis)}'."\n".
+                    'Wie wir heute wissen sind es aber nukleare Prozesse, die chemische Elemente ineinander umwandeln, die vornehmlich in Sonnen und deren Explosionen ablaufen, den Supernovae\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Supernova:2024}.}'."\n".
                     'Dies war diesen unseren Vorfahren offenbar nicht bekannt und so war ihr Tun und Streben von vornherein zum Scheitern verurteilt.'."\n"))),
                   array( 'text', array( text => array(
                   '\\condb{Konflikt zwischen innerer und äußerer Alchemie – zwischen Spiritualität und Materialismus} \\\\'."\n".
