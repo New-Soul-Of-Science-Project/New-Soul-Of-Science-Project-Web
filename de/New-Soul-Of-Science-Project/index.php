@@ -93,7 +93,7 @@
                       array(  jump_name => 'OM:nSOSp:Home', type => 'back'),
                     )),
                       
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:X', text =>
                                            
                 'Neue Physik \\color{*TitleAdd}{– organische Physik}')),
                   array( 'text', array( text => array(
@@ -409,7 +409,7 @@
                     'Das Leben und seine Entstehung ist nun grundlegend in der organischen Physik verankert.'."\n"))),
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:X', text =>
                                            
                 'Neuer Blick auf die Chemie')),
                   array( 'text', array( text => array(
@@ -418,7 +418,7 @@
                     'Auch gilt es, wenn sich Atome über ihre entgegengesetzte Ladung zu Kristallen oder über ihre Elektronenhülle zu Molekülen organisieren.'."\n".
                     'Immer wieder erweitert sich die Struktur nach dem neuen, dynamischen Strukturprinzip.'."\n",
                       'Ich bin gespannt, welche Erkenntnisse diese Perspektive für uns in Bezug auf die Chemie bereit hält.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:X', text =>
                                            
                 'Neuer Blick auf unser Leben')),
                   array( 'text', array( text => array(
@@ -497,23 +497,14 @@
                       
                   array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Was kann das ›Spannungsspiel des Lebens‹ bisher erklären?', ParagraphList => array(
+
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{(To do …)}'."\n"
-                    /*'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"*/))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:X', text =>
                                            
                 'Zusammenhänge sind die Seelen der Dinge \\\\ \\color{*TitleAdd}{– Natur- und Wissenschaftsphilosophie}')),
                   array( 'text', array( text => array(
@@ -563,23 +554,14 @@
                       
                   array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Was kann der Zusammenhang zwischen dem Begriff Seele und dem Begriff Zusammenhang bisher erklären?', ParagraphList => array(
+
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{(To do …)}'."\n"
-                    /*'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"*/))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Vortext:X', text =>
                                            
                 'Die neue Perspektive macht neue Zusammenhänge sichtbar')),
                   array( 'notice', array( Display => 'hideContent', text => array(
@@ -645,33 +627,13 @@
                       'Das gilt übrigens auch für die wichtige Rolle der Hebammen.'."\n",
                       'Mit diesen Zusammenhängen verschwindet ein wichtiger Teil unserer gesellschaftlichen Seele.'."\n".
                     'Ein weiteres Fortschreiten der Vereinzelung, der Einsamkeit und der gesellschaftlichen Kälte ist die Folge.'."\n".
-                    'Und dies wird ganz sicher zu mehr Hilflosigkeit und Not, zu mehr Hoffnungslosigkeit, führen.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Und dies wird ganz sicher zu mehr Hilflosigkeit und Not, zu mehr Hoffnungslosigkeit, führen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    'Es hat sich bereits gezeigt, dass hierbei neu entdeckte naturphilosophische Zusammenhänge viele bisher eher getrennt betrachteten Fachgebiete der Lebenswissenschaften und Naturwissenschaften miteinander Verbinden:'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Es hat sich bereits gezeigt, dass hierbei neu entdeckte naturphilosophische Zusammenhänge viele bisher eher getrennt betrachteten Fachgebiete der Lebenswissenschaften und Naturwissenschaften miteinander Verbinden:'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                     
                   array( 'jumplist', array(
                       // array(  jump_name => 'OM:nSOSp:Home:Spannungsspiel-des-Lebens'),
@@ -687,7 +649,7 @@
               '\\name[undertitle]{OM:nSOSp:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -706,7 +668,7 @@
               '\\name[undertitle]{OM:nSOSa:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -726,7 +688,7 @@
               'Meine Forschungsarbeiten', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -737,11 +699,8 @@
                   array( 'text', array( text => array(
                     'Danke für das Interesse an meiner Arbeit.'."\n".
                     'Nachfolgend eine Liste der mir wichtigen Themen, mit denen ich mich beschäftige.'."\n".
-                    'Interessanterweise stehen alle miteinander in Verbindung und ergänzen sich beziehungsweise vertiefen Aspekte, die in anderen dieser Arbeiten eine wichtige Rolle spielen.'."\n"))),
-                    // 'XXX'."\n".
-                    // 'XXX'."\n".
-                    // 'XXX'."\n".
-                    // 'XXX'."\n"))),
+                    'Interessanterweise stehen alle miteinander in Verbindung und ergänzen sich beziehungsweise vertiefen Aspekte, die in anderen dieser Arbeiten eine wichtige Rolle spielen.'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                     '\\\\'."\n"))),
                   array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:SpaLeb', text =>
@@ -834,7 +793,7 @@
                       
                   array( 'text', array( text => array(
                     '\\\\'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Home:Wolfgang-Huss:X', text =>
                                            
                 'Plus und Minus versa Existenz und Nichtexistenz', subline =>
                   '')),
@@ -1036,7 +995,7 @@
               '\\name[undertitle]{OM:SpaLeb:Home}'/*'Spannungen im Leben, deren Brüche und das finden neuer Balancen'*/, 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1056,7 +1015,7 @@
               '\\name[undertitle]{OM:NPYo:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1077,7 +1036,7 @@
               '\\name[undertitle]{OM:FrQFT:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   /*array( 'text', array( text => array(
@@ -1101,7 +1060,7 @@
               '\\name[undertitle]{OM:VRT:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1121,7 +1080,7 @@
               '\\name[undertitle]{OM:NPT:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1141,7 +1100,7 @@
               'Plus und Minus versa Existenz und Nichtexistenz', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'bulletlist', array( bullet_ary => array(
@@ -1167,7 +1126,7 @@
               '\\name[undertitle]{OM:SupNum:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1188,7 +1147,7 @@
               '\\name[undertitle]{OM:BiOrd:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1210,7 +1169,7 @@
               'Systematik der arithmetischen Operatoren', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'bulletlist', array( bullet_ary => array(
@@ -1233,7 +1192,7 @@
               '\\name[undertitle]{OM:ZS:Home}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -1255,8 +1214,35 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      //array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                        '\\\\'."\n"))),
+                      
+                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
+                  // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Spiritualitaet-Psychologie)
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Hört auf diese Worte, ihr, die ihr die Tiefen der Natur erforschen wollt: \\\\'."\n".
+                        'Wenn ihr das, was ihr sucht, nicht in euch selbst findet, \\\\'."\n".
+                        'werdet ihr es auch nicht außerhalb finden. \\\\'."\n".
+                        'Wenn du die Wunder deines Hauses ignorierst, \\\\'."\n".
+                        'wie willst du dann andere Wunder finden? \\\\'."\n".
+                        'In dir verbirgt sich der Schatz der Schätze. \\\\'."\n".
+                        'Erkenne dich selbst, \\\\'."\n".
+                        'und du wirst das Universum und die Götter kennen.'."\n".
+                        ''),
+                        addtext => '\\small{\\color{*TitleAdd}{~Das Orakel von Delphi}}')),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                        '\\\\'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'In Zeiten, in denen Niedergangskräfte dominieren, kommt es auf den ganzen Menschen an,'."\n".
+                        'auf den Entschluss nicht mit dem Strom und nicht gegen den Strom zu schwimmen,'."\n".
+                        'sondern Neuland zu schaffen, in sich selbst und in seinem Wirkenskreis.'."\n".
+                        ''),
+                        addtext => '\\small{\\color{*TitleAdd}{~Rudolf Steiner}}')),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
@@ -1275,6 +1261,44 @@
                         'The best way to predict the future is to create it.'."\n".
                         ''),
                         addtext => '\\small{\\color{*TitleAdd}{~Abraham Lincoln}}')),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                        '\\\\'."\n"))),
+                      
+                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
+                  // #!: Auch auf der NaPhil-Yoga-Startseite! (OM:NPYo:Home)
+                  // #!: Auch auf der NaPhil-Yoga-Einleitungsseite! (OM:NPYo:Einleitung)
+                  // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
+                  array( 'text', array( Shape => 'italic', text => array(
+                        'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
+                        'hat die Magie, Dinge zum Schweben zu bringen.'."\n".
+                        ''))),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                        '\\\\'."\n"))),
+                      
+                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
+                  // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Spiritualitaet-Psychologie)
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'Make your life a celebration!'."\n"),
+                        addtext => '\small{\color{*TitleAdd}{~Mike Love\footnote{\jump[https://www.youtube.com/watch?v=NKx_kxR9hWU]{}{"I Love You & Permanent Holiday" Live at Woodstock Poland 2016}, Sek. 13:57.}}}')),
+                      
+                  array( 'text', array( Shape => 'italic', text => array(
+                        '\\\\'."\n"))),
+                      
+                  array( 'text', array( Shape  => 'italic', text => array(
+                        '\\small{\\color{*TitleAdd}{Ob es göttliches gibt?}} \\\\'."\n".
+                        'Du siehst es,'."\n",
+                          'wenn du deine Augen öffnest. \\\\'."\n".
+                        'Du fühlst es,'."\n",
+                          'wenn du dein Herz öffnest. \\\\'."\n".
+                        'Du berührst es,'."\n",
+                          'wenn du deine Hand ausstreckst. \\\\'."\n".
+                        'Du siehst es,'."\n",
+                          'wenn du deine Augen schließt. \\\\'."\n".
+                        'Und du hörst es,'."\n",
+                          'wenn du deine Gedanken loslässt. \\\\'."\n".
+                        ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
@@ -1300,28 +1324,7 @@
                         'Wer etwas will, findet Wege. \\\\'."\n".
                         'Wer etwas nicht will, findet Gründe.'."\n".
                         ''),
-                        addtext => '\\small{\\color{*TitleAdd}{~Autor unbekannt}}')),
-                      
-                  array( 'text', array( Shape => 'italic', text => array(
-                        '\\\\'."\n"))),
-                      
-                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
-                  // #!: Auch auf der NaPhil-Yoga-Startseite! (OM:NPYo:Home)
-                  // #!: Auch auf der NaPhil-Yoga-Einleitungsseite! (OM:NPYo:Einleitung)
-                  // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
-                  array( 'text', array( Shape => 'italic', text => array(
-                        'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
-                        'der hat die Magie, Dinge zum Schweben zu bringen.'."\n".
-                        ''))),
-                      
-                  array( 'text', array( Shape => 'italic', text => array(
-                        '\\\\'."\n"))),
-                      
-                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
-                  // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Spiritualitaet-Psychologie)
-                  array( 'text', array( Shape  => 'quote', text => array(
-                        'Make your life a celebration!'."\n"),
-                        addtext => '\\small{\\color{*TitleAdd}{~Mike Love\\footnote{\\jump[https://www.youtube.com/watch?v=NKx_kxR9hWU]{}{"I Love You & Permanent Holiday" Live at Woodstock Poland 2016}, Sek. 13:57.}}}')),
+                        addtext => '\\small{\\color{*TitleAdd}{~Volksweisheit}}')),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
@@ -1401,8 +1404,9 @@
                         '\\\\'."\n"))),
                       
                   // #!: Auch auf der NSOSP-Seite! (OM:nSOSp:Home)
-                  // #!: Auch auf der Spannungsspiel des Lebens Seite! (OM:NPT:Home)
-                  // #!: Auch auf der Naturphilosophie-der-Zeit-Seite! (OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik)
+                  // #!: Auch auf der ›Spannungsspiel des Lebens‹ Seite! (OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik)
+                  // #!: Auch auf der „Naturphilosophie der Zeit“ Seite! (OM:NPT:Home)
+                  // #!: Auch auf der „Die arithmetische Struktur der Geometrie“ Seite! (OM:SupNum:Struktur-Geometrie)
                   array( 'text', array( Shape => 'italic', text => array(
                         'Mathematik beginnt dort, \\\\ '."\n".
                         'wo wir das Eine vom Anderen unterscheiden können. \\\\ '."\n".
@@ -1419,8 +1423,9 @@
                         //'die wir per Assoziation einander zuordnen. \\\\ '."\n".
                         'die wir assoziativ miteinander verbinden. \\\\ '."\n".
                         'In der physikalischen Realität entspringen die Eigenschaften direkt dem strukturellen Abbild eines Symbols – jedem Ding. \\\\ '."\n".
-                        '\\small{\\color{*TitleAdd}{Daher sind Personen die stärksten Symbole, denn ihr Aussehen und ihre Eigenschaften fallen zusammen. \\\\ '."\n".
-                        'Ihre Körper und ihre Seelen sind individuell und eins.}}'."\n".
+                        '\\small{\\color{*TitleAdd}{Daher sind Lebewesen die stärksten Symbole. \\\\ '."\n".
+                        'Denn ihr Aussehen – ihre Struktur – und ihre Eigenschaften fallen zusammen. \\\\ '."\n".
+                        'Ihre Körper und ihre Seelen sind individuell und Eins.}}'."\n".
                         ''),
                         addtext => '')),
                       
@@ -1434,23 +1439,6 @@
                         'dann würde man es nicht Forschung nennen, oder?'."\n".
                         ''),
                         addtext => '\\small{\\color{*TitleAdd}{~Einstein zugeschrieben}}')),
-                      
-                  array( 'text', array( Shape => 'italic', text => array(
-                        '\\\\'."\n"))),
-                      
-                  // #!: Auch auf der nSOSp-Startseite! (OM:nSOSp:Home)
-                  // #!: Auch auf der Naturphilosophie-Yoga-Seite! (OM:NPYo:Spiritualitaet-Psychologie)
-                  array( 'text', array( Shape  => 'quote', text => array(
-                        'Hört auf diese Worte, ihr, die ihr die Tiefen der Natur erforschen wollt: \\\\'."\n".
-                        'Wenn ihr das, was ihr sucht, nicht in euch selbst findet, \\\\'."\n".
-                        'werdet ihr es auch nicht außerhalb finden. \\\\'."\n".
-                        'Wenn du die Wunder deines Hauses ignorierst, \\\\'."\n".
-                        'wie willst du dann andere Wunder finden? \\\\'."\n".
-                        'In dir verbirgt sich der Schatz der Schätze. \\\\'."\n".
-                        'Erkenne dich selbst, \\\\'."\n".
-                        'und du wirst das Universum und die Götter kennen.'."\n".
-                        ''),
-                        addtext => '\\small{\\color{*TitleAdd}{~Das Orakel von Delphi}}')),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),

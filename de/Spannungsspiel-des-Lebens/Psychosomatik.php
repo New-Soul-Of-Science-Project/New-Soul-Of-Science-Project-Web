@@ -33,7 +33,7 @@
                                                          /* text => '' */)),
                       )),
                       
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Geschichte', subline =>
                   '')),
@@ -57,7 +57,7 @@
                                                          /* text => '' */)),
                       )),
                       
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Der Hermesstab', subline =>
                   '')),
@@ -66,7 +66,7 @@
                     'mit den beiden am Stab aufsteigenden Schlangen, eine Symbolik, die heute aus dem Kundalini-Prozess des Yoga bekannt ist.'."\n".
                     'Mit einer einzelnen Schlange kennen wir diesen als Äskulap- oder Asklepiosstab\\footnote{\\const{FrQFT_g_footnote_text_Aeskulapstab}}, der seinem Sohn gehört.'."\n".
                     'Dieses Symbol der Alchemie finden wir heute noch bei den Apothekern.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Die Tempelritter, der Heilige Gral und die Freimaurer', subline =>
                   '')),
@@ -80,7 +80,7 @@
                                                          /* text => '' */)),
                       )),
                       
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Das Hexagramm', subline =>
                   '')),
@@ -99,7 +99,7 @@
                                                          /* text => '' */)),
                       )),
                                                                                          
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Die Mythologie der alten Ägypter', subline =>
                   '')),
@@ -115,14 +115,14 @@
                     'Im Kundalini-Prozess des Tantra und Yoga steigen die Schlangen auf zum Dritten Auge und ins Kronen-Chakra.'."\n"))),
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Altes Wissen im biophysikalischen Modell', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Das Modell des Achtsamkeitsprozesses überführt dieses Wissen in die naturwissenschaftliche Form eines biophysikalischen Regelprozesses, so dass es Teil der modernen Wissenschaft wird.'."\n".
                     'Hierdurch findet auch unsere Psyche, unser individuelles Erleben und Verhalten, ihren biophysikalischen Ausdruck und damit, als essentielles Fundament des Lebens, Eingang in die Naturwissenschaft.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Der Gefühlsgradient und der Handlungsgradient im menschlichen Körper', subline =>
                   '')),
@@ -234,6 +234,18 @@
                       
                 'Care oder Fürsorge – fühlen, mitfühlen, sich kümmern und dabei lernen', subline =>
                   'Der Stein der Weisen')),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\\bold{X:}',
+                    '• Der ›Stein der Weisen‹ ist sehr mit dem \\jump[https://de.wikipedia.org/w/index.php?title=Thymos&oldid=229460544]{}{Thymos} verbunden:',
+                    '– Der Thymos, die Lebenskraft, ist ein altgriechisches Konzept und ein Ausdruck für die Gemütslage eines Menschen. Dieser wurde hauptsächlich mit dem \\jump{OM:SpaLeb:Atmung-Bauch-Zwerchfell-Stabilitaet}{Zwerchfell} (Link von dort hierher setzen ggf.) in Verbindung gebracht. Sehr interessant!',
+                    '– Die Lebenskraft ist ganz offenbar mit der Psychosomatik eng verbunden.',
+                    '– Da die Lebenskraft \\jump[https://de.wikipedia.org/w/index.php?title=Thymus&oldid=241891192]{}{Thymusdrüse}. Diese sitzt beim Menschen hinter dem Brustbein.',
+                    '– Über die Lebenskraft gibt es eine tiefe Verbindung zum Care-Prozess.',
+                    '– Die \\jump{OM:SpaLeb:Psychosomatik:Stolze-Brust}{stolze geschwellte Brust} ist ein Ausdruck der aktivierten Lebenskraft.',
+                    '– Nach Alexander Stier galt der Thymos, verortet im Zwerchfell, als Sitz der Götter in uns oder als körperlicher Ort, der mit den Göttern verbunden ist oder über den wir Kontakt zu den Göttern haben oder aufnehmen: \\jump[https://www.youtube.com/watch?v=ASuc7c7D58c]{}{Alexander Stier – Das geheime Wissen über das Immunsystem (Ein olympisches Mysterium)} (ich teile sicherlich nicht alle Meinungsäußerungen von Alexander Stier in diesem Video)',
+                    ))),
+                      
                   array( 'text', array( text => array(
                     'In meinen Augen ist der innere \\jump{OM:NPYo:Stein-der-Weisen:Stein-der-Weisen}{›Stein der Weisen‹} tief mit unserer Psychosomatik verbunden.'."\n".
                     'Er ist das Symbol für das Sich-Kümmern; für die innere und äußere Fürsorge, für die Liebe und Leidenschaft; für die emotionale und handelnde Verbundenheit'."\n".
@@ -292,7 +304,7 @@
                     'als auch körperliche Aspekte, die sich in unserer intensiven Atmung und der Flexibilisierung unseres Körpers ausdrücken.'."\n",
                       'Mit Klugheit ist unter anderem die philosophische Einsicht gemeint, dass unser kurzfristiges Wohlgefühl und unser längerfristiges Wohlbefinden auch entscheidend davon abhängen,'."\n".
                     'welche inneren Perspektiven wir auf unser Leben einnehmen und wie wir mit diesen umgehen.\\color{*Bearb}{(Verweis auf Albert Kitzler, »Denken heilt!«)}'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Ausgeglichenheit', subline =>
                   '')),
@@ -368,7 +380,7 @@
                       'Dies bedeutet übrigens nicht ein Denkverbot, sondern eher eine Lockerung unseres Gedankenflusses, die auch in „Gedankenlosigkeit“ münden kann.'."\n".
                     'Und dieser Prozess kann und sollte auch, so gut es geht und besser werdend, im Alltag eingeübt werden.'."\n".
                     'Denn wir wollen ja nicht nur in außergewöhnlichen Momenten, in denen wir Zeit für uns haben, ein gutes, angenehmes und gesundes Leben führen, sondern gerade auch im Alltag.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Der innere Dialog unserer Pole, unser Selbstmitgefühl', subline =>
                   'Organe, Chakras und gedankliche Perspektiven')),
@@ -421,7 +433,7 @@
                     'Denn wir lösen eine Blockade auf.'."\n".
                     'Und Bewusstwerdung ist der Anfang jeder Veränderung.'."\n",
                       'Die Traumatherapeutin und Heilpraktikerin für Psychotherapie Maria Sanchez (›Neue Psychologie‹, ›Sehnsucht und Hunger‹, ›EssentialCore‹) bringt das in einem Gespräch im folgenden Video wunderbar auf den Punkt, indem sie aufzeigt, dass unsere biographischen Wunden nur verheilen können, wenn wir „das ungeliebte Kind“ in uns in Liebe annehmen: \\jump[https://www.youtube.com/watch?v=A5G7vSgyez4]{}{Selbstliebe ist kein Zufall: Die revolutionäre Kraft des Fühlens}'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Wer ständig mit sich selber kämpft, wird verlieren', subline =>
                   '')),
@@ -449,7 +461,7 @@
                     'Wir sind klug, wenn wir versuchen zu verstehen, wie die Dinge – in uns selber – liegen, und das natürlich auch durch externen Rat.'."\n".
                     'Dies schließt die Entscheidung für eine Chemotherapie und eine Operation oder jede andere Maßnahme ausdrücklich mit ein, denn es ist \\italic{unser} Leben.'."\n",
                       'Wenn wir allerdings in einem ständigen Kampf mit uns selber sind, zerstören wir uns selbst und wir werden so verlieren.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Unsere Vorfahren haben überlebt, weil wir erstaunliche Möglichkeiten der klugen Selbstheilung in uns tragen', subline =>
                   '')),
@@ -480,7 +492,7 @@
                       'Da alle unsere Vorfahren natürlich bis zur Fortpflanzung überlebt haben, können wir uns sehr auf unsere Selbstheilungskräfte verlassen.'."\n".
                     'Denn unsere Ahnen hatten offensichtlich schon diese Fähigkeit, selbst wenn es sich um die Organisation der Hilfe durch andere gehandelt hat.'."\n".
                     'Es stellt sich also eher die Frage, wie wir unsere Selbstheilung fördern können.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Die Bedeutung des Placebo-Effekts', subline =>
                   '')),
@@ -492,7 +504,7 @@
                       'Glaube ich daran, dass es die Möglichkeit der Selbstheilung gibt, dann versuche ich mich selber zu heilen und habe so eine größere Chance auf meine Selbstheilung.'."\n",
                       'Aus dieser Perspektive macht es keinen Sinn, den Placebo-Effekt aus der Medizin völlig draußen zu halten.'."\n".
                     'Wir sollten ihn differenziert betrachten und klug nutzen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Die Psychosomatik bei gut funktionierendem Achtsamkeitsprozess', subline =>
                   '')),
@@ -533,7 +545,7 @@
                     'Wenn ich all dies bei hoher Intensität gut ausbalanciert habe, dann stellen sich Selbstvertrauen und Leichtigkeit ein.'."\n"))),
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Die Psychosomatik bei Stress und Angst', subline =>
                   '… geht mit einem nicht gut funktionierenden Achtsamkeitsprozess einher')),
@@ -555,7 +567,9 @@
                     'Eine solche Imbalance kann in einer \\jump{OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung}{Gesichtsspiegelung} sichtbar gemacht werden.'."\n"))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent',
-                    Title => 'Detaillierter …', TitleVis => 'Detaillierter:', ParagraphList => array(
+                    Title => '\small{Detaillierter …}',
+                    TitleVis => 'Detaillierter:', ParagraphList => array(
+
                   array( 'text', array( text => array(
                     'Übermäßiger negativer Stress und Angst oder gar Not und Hilflosigkeit zeigen sich in unserer Psyche und so, nach den aufgezeigten Zusammenhängen, auch in unserem Körper.'."\n".
                     'Auf Dauer, wenn sie chronisch sind, zeichnen sie uns.'."\n",
@@ -593,60 +607,8 @@
                     ))),
                   array( 'text', array( text => array(
                     'Auf diese Symptome komme ich auf den nachfolgenden Seiten noch genauer zu sprechen.'."\n"))),
+
                     ))),
-                      
-//                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
-//                      
-//                'XXX', subline =>
-//                  '')),
-//                  array( 'text', array( text => array(
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n"))),
-//                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
-//                      
-//                'XXX', subline =>
-//                  '')),
-//                  array( 'text', array( text => array(
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n"))),
-//                  array( 'text', array( text => array(
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n"))),
-//                  array( 'text', array( text => array(
-//                    '\\color{*Bearb}{In Arbeit …}'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n".
-//                    'XXX'."\n"))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik:Stolze-Brust'),
@@ -667,8 +629,8 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{XXX:}',
-                    // '• XXX',
+                    // '\\bold{X:}',
+                    // '• X',
                     ))),
                       
                    array( 'text', array( text => array(
@@ -687,7 +649,7 @@
                     'wesentlich durch unser Bewusstsein unserer Brust und, für mich unterschätzter Weise, ganz besonders'."\n".
                     'durch unser Bewusstsein unserer sensiblen Brustnippel bestimmt wird.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Stolze-Brust:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Stolze-Brust:X', text =>
                       
                 'Die persönliche und gesellschaftliche Rolle unserer Brust', subline =>
                   '… und unser Bewusstsein darüber, welche Rolle sie wirklich spielt')),
@@ -740,25 +702,15 @@
                     'Ich würde wagen zu sagen, die sensible Rolle der männlichen Brust, Brustwarzen und Nippel,'."\n".
                     'existiert im Öffentlichen einfach gar nicht.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Stolze-Brust:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Stolze-Brust:X', text =>
                       
                 'Die psychosomatische Bedeutung unseres Bewusstsein über unsere sensible Brust', subline =>
                   '')),
-                   array( 'text', array( text => array(
+                  array( 'text', array( text => array(
                     'Meine These ist, dass unser Bewusstsein über unsere sensible Brust, und besonders'."\n".
                     'über unsere sensiblen Brustwarten, einen starken Einfluss auf unsere Körperhaltung und'."\n".
-                    'schließlich auch auf unsere gesamte Gesundheit haben kann.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'schließlich auch auf unsere gesamte Gesundheit haben kann.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -778,7 +730,7 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{XXX:}',
+                    // '\\bold{X:}',
                     '• Wenn wir uns gegen unsere eigenen Gefühle schützen, dann ergibt sich nach meiner eigenen Erfahrung auf der Gefühlsseite ein verdecktes Taubheitsgefühl.',
                     '• Auf der Handlungsseite stellt es sich mir als Lähmung dar; wir können uns nicht zu einer Handlung entscheiden oder wollen alles zu gleich.',
                     '• Ein näherer Blick darauf zeigt für mich: Wir sind nicht aktiv bereit und fähig klug zu fühlen. Wir sind nicht aktiv bereit klug zu handeln:',
@@ -789,28 +741,9 @@
                     '• Dies alles führt zu Verspannungen, weil das Unterbewusstsein die Faszien in einen stabilisierenden Notmodus bringt (siehe \\italic{\\jumpname{OM:SpaLeb:Psychosomatik-Stress}}).',
                     ))),
                       
-                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler'),
@@ -830,7 +763,7 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{XXX:}',
+                    // '\\bold{X:}',
                     '• Die Verlängerungen der Faszien unseres Körpers, die in unseren Kopf laufen, regeln eine Art Grundspannung auf vielen Hauptfaszien.',
                     '• Ähnlich, wie bei einer Geige im \\jump[https://de.wikipedia.org/wiki/Wirbelkasten]{}{Wirbelkasten} die Saiten gespannt werden, fungiert unser Kopf wie ein dynamischer „Wirbelkasten“ als unser körperliches Stimmungssystem.',
                     '• Die Dynamik dieses Kopf-Stimmungssystems hat etwas von einem inneren Marionettenspieler.',
@@ -841,30 +774,12 @@
                     '• Geht diese Grundspannung durch Sorgen und Ängste teils verloren, dann:',
                     '⋅ … gerät unser Körper in eine Spannungsimbalance,',
                     '⋅ … entwickeln sich Verspannungen, besonders im Hals- und Nackenbereich, aber auch im Rücken, an den Schulterblättern und so weiter, die versuchen die fehlende Grundspannung wieder auszugleichen. Diese Verspannungsketten laufen nach und nach durch den ganzen Körper bis in die Gliedmaßen.',
+                    '• Ein Gegenpart zum Kopf-Stimmungssystems ist auch der Anus-Beckenboden und hier im Besonderen der PC-Muskel\\footnote{Vgl. \\cite{wiki:MusculusPubococcygeus:2024}.}:',
                     ))),
                       
-                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik:Aeusserer-Marionettenspieler'),
@@ -885,33 +800,14 @@
                       
                   array( 'notice', array( Display => 'showContent', text => array(
                     '• Es gibt auch noch die Perspektive, in der unsere Rückseite unbewusster oder unterbewusster ist (weiblicher Aspekt) und die Vorderseite bewusster (männlicher Aspekt).',
-                    // '\\bold{XXX:}',
+                    // '\\bold{X:}',
                     '• Unsere muskulöse Körperrückseite ist, wenn wir in einer generalisierten Schonhaltung sind, deaktiviert und verspannt.',
                     '• Eine generalisierte Schonhaltung können wir verlassen, wenn wir diese Muskulatur aktivieren. Dazu gehört auch die Muskulatur unseres \\jump{OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler}{inneren Marionettenspielers}, die unter anderem die Räume im Kopf öffnet.',
                     ))),
                       
-                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik:Sterntetraeder-Stabil+Dynamik-Koerper'),
@@ -931,7 +827,7 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{XXX:}',
+                    // '\\bold{X:}',
                     '• In unserem Körper gibt es, etwas vereinfachend betrachtet, zwei Sterntetraeder, die unsere stabil-dynamische Struktur veranschaulichen.',
                     '– Ein Sterntetraeder ist im Rumpf:',
                     '⋅ Er steht nicht auf der Spitze, sondern auf einem seiner Kreuze so, dass zwei der Spitzen dieses unteren Kreuzes zur Hüfte zeigen. Die anderen beiden zeigen zum Schambein und zum Steiß.',
@@ -945,28 +841,9 @@
                   array( 'iframe',
                     array_merge( $SpaLeb_g_iframe_ary_Merkaba, array( name => 'OM:SpaLeb:Psychosomatik:Sterntetraeder-Stabil+Dynamik-Koerper:LiveAni-Merkaba'))),
 
-                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik-Entscheidungen'),

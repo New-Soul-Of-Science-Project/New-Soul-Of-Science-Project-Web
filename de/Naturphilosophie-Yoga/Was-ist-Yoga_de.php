@@ -30,7 +30,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:WasIstYoga:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:WasIstYoga:Vortext:X', text =>
                                            
                 'XXX')),
                   array( 'text', array( text => array(

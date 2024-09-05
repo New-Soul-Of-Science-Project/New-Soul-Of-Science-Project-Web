@@ -148,10 +148,10 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • XXX  >
+		    	<!  • X  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:FrQFT:De-Broglie-Bohm-Theorie:XXX',
+            'OM:FrQFT:De-Broglie-Bohm-Theorie:X',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'text', array( text => array(

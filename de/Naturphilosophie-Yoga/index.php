@@ -35,7 +35,7 @@
                   // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
                   array( 'text', array( Shape => 'italic', text => array(
                         'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
-                        'der hat die Magie, Dinge zum Schweben zu bringen.'."\n"))),
+                        'hat die Magie, Dinge zum Schweben zu bringen.'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Interessanterweise entspricht diesem Bild auch jede \\jump{OM:FrQFT:Home}{physikalische Existenz} und damit auch \\jump{OM:SpaLeb:Home}{unsere Existenz}.'."\n".
@@ -47,7 +47,7 @@
                       'Solche Balancen bestimmen unser Leben sehr ähnlich, wie wir sie in allen stabilen Strukturen der Natur finden.'."\n".
                     'Die Natur ist von Grund auf dynamisch, immer in Bewegung.'."\n".
                     'Und unser Leben ist von Grund auf dynamisch, stabil, aber immer in Veränderung, das ist, was wir täglich erleben, denn wir sind Teil der Natur.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Home:Vortext:X', text =>
                       
                 'Leben ist eine Balance aus Stabilität und Fortentwicklung')),
                   array( 'text', array( text => array(
@@ -61,13 +61,13 @@
                     'Diese Balance lernen wir durch Neugier und Herumspielen – und wagen dabei natürlich auch immer etwas.'."\n",
                       'Yoga, im Besonderen seine im Zentrum stehende Atmung und seine körperlichen Übungen, die Asanas, schulen und justieren unseren Achtsamkeitsprozess.'."\n".
                     'Dadurch können unsere Stabilität, unser seelisches und körperliches Gedeihen, unsere Selbstheilungskräfte, unser Lernen und unsere Persönlichkeitsentwicklung gefördert werden.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Home:Vortext:X', text =>
                       
                 'Zuversicht finden')),
                   array( 'text', array( text => array(
                     'Dieses, teils neue, Wissen baut Brücken in uns, zwischen den Menschen, zwischen uns und der Natur und innerhalb des Wissen, das wir schon haben.'."\n".
                     'Unsere Neugier und unser Spiel baut so auch die Brücken unserer Zuversicht.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Home:Vortext:X', text =>
                       
                 'Anliegen')),
                   array( 'text', array( text => array(
@@ -76,7 +76,7 @@
                       'Zu den Themen NaPhil-Yoga und ›Spannungsspiel des Lebens‹ baue ich ein \\jump{OM:NPYo:Angebote-Veranstaltungen}{Angebot} von gegebenenfalls regelmäßigen und buchbaren Veranstaltungen auf.'."\n".
                     'Du kannst mich dafür und auch für Einzelunterricht und Gruppenunterricht im Yoga \\jump{OM:FrQFT:Impressum}{anfragen}.'."\n".
                     'Auch, wenn du Interesse an weiterer Information oder einer Diskussion der Themen hast, freu ich mich von dir zu hören.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Home:Vortext:X', text =>
                       
                 'Information')),
                   array( 'text', array( Shape => 'italic', text => array(
@@ -112,7 +112,7 @@
                     '\\\\'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
-                      array( title => 'Video Tour \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => '', //jumpname => 'XXX',
+                      array( title => 'Video Tour \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => '', //jumpname => 'X',
                                 description => 'die YouTube-Vorträge'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Vorwort'),
                     ))),
@@ -223,10 +223,10 @@
             <br>
           
             <table border="0"> <colgroup> <col width="22"> <col width="300"> <col width="16"> <col width="362"> </colgroup>
-              <tr> <td valign="top">&rarr;</td> <td valign="top"><!a href="../de/XXX">
-              XXX<!/a> <span style="color: #A0A0A0">(geplant)</span></td> <td valign="top" style="color: #A0A0A0">
+              <tr> <td valign="top">&rarr;</td> <td valign="top"><!a href="../de/X">
+                (In Arbeit …)<!/a> <span style="color: #A0A0A0">(geplant)</span></td> <td valign="top" style="color: #A0A0A0">
                   &hellip;</td> <td valign="top" style="color: #A0A0A0">
-                  XXX</td> </tr>
+                    (In Arbeit …)</td> </tr>
             </table>
           <?php To_f_headline_add_hides_end( '          ', 'hideContent'); ?>
 
@@ -241,14 +241,10 @@
                       //array(  jump_name => 'OM:SpaLeb:Psychosomatik-Stress:Problemloesungsansaetze', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'showContent', text => array(
-                    '(• XXX)',
-                    ))),*/
-                      
                   $OM_g_text_MedHaftungsausschluss,
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SpaLeb:XXX'),
+                      //array(  jump_name => 'OM:SpaLeb:X'),
                     )),
               )
           ); ?>

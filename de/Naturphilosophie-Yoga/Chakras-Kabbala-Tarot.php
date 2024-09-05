@@ -73,14 +73,14 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • XXX  >
+		    	<!  • X  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:NPYo:Chakras-Kabbala-Tarot:XXX',
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:NPYo:Chakras-Kabbala-Tarot:X',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:NPYo:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:NPYo:XXX', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -98,7 +98,7 @@
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Chakras-Kabbala-Tarot:XXX:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Chakras-Kabbala-Tarot:X:X', text =>
                       
                 'XXX', subline =>
                   '')),
@@ -115,10 +115,10 @@
                     'XXX'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:NPYo:XXX'),
+                      // array(  jump_name => 'OM:NPYo:XXX'),
                     )),
               )
-          ); ?>
+          ); */ ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

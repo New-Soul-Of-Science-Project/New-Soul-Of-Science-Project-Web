@@ -51,16 +51,12 @@
                     '',
                     '(• Was bedeutet hier Atmung, Pranayama?)',
                     '(– Die Atmung verbindet das Bewusste mit dem Unbewussten. Sie kann zur Erweiterung des Bewusstseins eingesetzt werden oder auch zu seiner Einschränkung.)',
-                    '(– XXX)',
-                    '(– XXX)',
-                    '(– XXX)',
+                    '(– \color{*Bearb}{(In Arbeit …)})',
                     '',
                     '(Bedeutung des traditionellen Yoga im Naturphilosophie-Yoga?)',
                     '(• Die traditionellen Yoga Richtungen sind die Grundlage und der Ausgangspunkt, die Orientierung, für das Naturphilosophie-Yoga.)',
                     '(• Das Naturphilosophie-Yoga ergänzt die traditionellen Sichtweisen. Stellt manche etwas in Frage und unterstützt andere. Das ist in diesem Rahmen zu diskutieren. Die Philosophien vom \\jump[][*Bearb]{OM:SpaLeb:Home}{›Spannungsspiel des Lebens‹} und die der \\jump[][*Bearb]{OM:FrQFT:Home}{›Fraktalen Quanten-Fluss-Theorie‹} bringen Aspekte der modernen Psychologie, Psychosomatik und Physik mit ins Spiel, weil sie ein Verbindungselement zum Yoga darstellen.)',
-                    '(• XXX)',
-                    '(• XXX)',
-                    '(• XXX)',
+                    '(• \color{*Bearb}{(In Arbeit …)})',
                     ))),
                       
                   array( 'notice', array( Display => 'hideContent', Title => 'Notizen Allgemein', text => array(
@@ -113,14 +109,14 @@
                     'Daran, dass wir Mittel und Wege finden, es zu mesitern und mehr Zufreidenheit finden, wenn wir noch nicht so zufrieden sind.'."\n",
                       'Daran glauben, dass wir uns zu helfen wissen, uns helfen können.'."\n".
                     'Oder daran, dies lernen zu können.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Uns bewusst werden, wer wir sind')),
                   array( 'text', array( text => array(
                     'An uns zu glauben, uns bewusst zu sein, wer wir sind.'."\n".
                     'Es meint, uns einschätzen zu können, uns zu erprobt, unsere Fähigkeiten erproben zu wollen.'."\n".
                     'Ein Gefühl für uns selbst zu haben oder zu suchen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Lernen wollen, neugierig sein, spielen')),
                   array( 'text', array( text => array(
@@ -129,7 +125,7 @@
                     'Spielerisch zu sein und seine kindliche Seite zu erforschen.'."\n".
                     'Sein Leben auch als Spiel zu begreifen.'."\n",
                       'Das Leben zu begreifen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Unsere Natur entfalten')),
                   array( 'text', array( text => array(
@@ -138,13 +134,13 @@
                     'Sie aktivieren, sie erwecken, sie suchen, sie verstehen.'."\n",
                       'Oft behindern wir unsere Natur durch unsere Gedanken, durch unsere Bilder, die wir von uns und vom Leben haben.'."\n".
                     'Dadurch können wir unsere Fähigkeiten nicht entfalten, weil wir kein Gefühl für sie haben und deshalb nicht an sie glauben können oder wollen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Wir können oft mehr, als wir glauben')),
                   array( 'text', array( text => array(
                     'Verstehen wir besser, wie das Leben funktioniert, wie wir ticken, können wir besser unsere inneren und äußeren „Behinderungen“ verringern.'."\n".
                     'Wir können uns besser helfen und helfen lassen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Unsere Natur begreifen')),
                   array( 'text', array( text => array(
@@ -152,7 +148,7 @@
                     'Besser leben zu lernen.'."\n".
                     'Das Leben zu begreifen.'."\n".
                     'Zu verstehen, wie die Natur funktioniert, wie wir funktionieren.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Zuversicht und Zukunft zu finden, ist unsere Natur')),
                   array( 'text', array( text => array(
@@ -161,42 +157,20 @@
                       'Das Paradoxe ist:'."\n".
                     'Dies hört sich alles sehr verkopft an.'."\n".
                     'Allerdings wird bei den Überlegungen und Schlüssen klar, unser Denken ist nur der Diener, aber nicht der Meister in unserem Leben.'."\n",
-                      'Der Meister ist unser Gefühl, unsere Emotionen.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                      'Der Meister ist unser Gefühl, unsere Emotionen.'."\n",
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                    ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                       'Um unsere Emotionen dreht sich unser Leben.'."\n"))),
                       
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Unsere Emotionen leiten uns durch unser Leben Richtung Zuversicht')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
-                      
-                'XXX')),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'An uns glauben')),
                   array( 'text', array( text => array(
@@ -205,7 +179,7 @@
                     'Es meint, sich einschätzen zu können, sich erprobt zu haben oder sich erproben zu wollen.'."\n".
                     'Ein Gefühl für sich selbst zu haben oder zu suchen.'."\n".
                     'Sich seiner selbst und damit seiner Fähigkeiten bewusst zu sein oder zu werden.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Lernen können')),
                   array( 'text', array( text => array(
@@ -216,37 +190,15 @@
                     'Lernen meint also auch, kindlich sein, mit sich und den Dingen herumspielen.'."\n".
                     'Sein Leben auch als Spiel zu begreifen.'."\n",
                       'Das Leben zu begreifen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Sich selber zu begreifen')),
                   array( 'text', array( text => array(
                     'Sich selber und seiner selbst bewusst zu werden.'."\n".
                     'Sich und seine Welt kennenzulernen.'."\n",
-                      'Erkenne dich selbst. – XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
-                      
-                'XXX')),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
-                      
-                'XXX')),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                      'Erkenne dich selbst. – \color{*Bearb}{(In Arbeit …)}'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                     'Gutes Wissen und ein Verständnis davon, wie unsere Emotionen mit unserer Lebenssituation und unseren Handlungen verwoben sind, ermöglicht uns leichter zu erkennen,'."\n".
                     'welche Entscheidungen unsere Situation verbessern, denn:'."\n"))),
@@ -254,7 +206,7 @@
                   array( 'text', array( Shape => 'italic', text => array(
                       'Um unsere Emotionen dreht sich unser Leben.'."\n"))),
                       
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Emotionen stehen im Mittelpunkt unseres Lebens')),
                   array( 'text', array( text => array(
@@ -263,7 +215,7 @@
                       'Die für viele Menschen schwierige Frage ist nur, was können wir tun?'."\n".
                     'Welche realistischen Handlungen können unser Leben so verändern, dass sie uns helfen?'."\n",
                       'Ein Aspekt des Yoga dreht sich darum, wie wir ein ›gutes Leben‹ führen können.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Die Philosophie des Yoga')),
                   array( 'text', array( text => array(
@@ -273,7 +225,7 @@
                     'Dazu gehört das Yogasutra, eine Art Leitfaden zur yogischen Praxis des ›Raja Yoga‹, der sich auf moralisch-ethische und spirituelle Verhaltensweisen bezieht (\\color{*Bearb}{zeitliche Einordnung}).\\color{*Bearb}{(Verweis)}'."\n",
                       'Im heutigen Yoga spielt die Hathapradipika, als Grundlage des ›Hatha Yoga‹ und des ›Kundalini Yoga‹, eine wichtige Rolle (14. Jahrhundert n. Chr.).\\color{*Bearb}{(Verweis)}'."\n".
                     'Hier ist ein entscheidender Einfluss des Tantra in Form der stärkeren Einbeziehung des Körpers hinzugekommen.\\color{*Bearb}{(Verweis)}'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Die Naturphilosophie des Yoga')),
                   array( 'text', array( text => array(
@@ -297,7 +249,7 @@
                     'Es soll uns verständlich machen, wie und warum Yoga uns bei der Suche nach einem leichteren Lebensweg helfen und gutes für unsere Gesellschaft – unsere Menschheitsfamilie – bewirken kann.'."\n".
                     'Diese neue Sicht aufs Yoga soll uns inspirieren, immer neue Wege zu finden, wie wir unsere persönliche Lebenssituation und die Lebenssituation aller Menschen nachhaltig verbessern können;'."\n".
                     'wie wir für dieses Anliegen zusammen wirken können.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'NaPhil-Yoga ergänzt alle Stile des Yoga')),
                   array( 'text', array( text => array(
@@ -305,25 +257,10 @@
                     'NaPhil-Yoga ergänzt alle Stile des Yoga, indem es Wissen darüber schafft und vermittelt, auf welcher naturphilosophischen Basis das Leben aus yogischer Perspktive verstanden werden kann und'."\n".
                     'welche Wirkungsweisen so der Praxis der Stile des Yoga entspringen.'."\n",
                       'NaPhil-Yoga kann in sofern als neuer Stil des Yoga verstanden werden, wenn die Praxis des Yoga der bisher praktizierten Stile konzentriert mit der Naturphilosophie des Yoga'."\n".
-                    'ergänzt wird.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
-                      
-                'XXX')),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                    'ergänzt wird.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Was bedeuten unsere Emotionen und Gefühle?')),
                   array( 'text', array( text => array(
@@ -331,19 +268,15 @@
                     'Dabei kommen leicht Bewertungen unserer Lebenssituation ins Spiel, die uns zu Handlungen antrieben können.'."\n".
                     'Diese Handlungen können eine Änderung unserer Lebenssituation bewirken, die schließlich unsere Emotionen und Gefühle beeinflussen.'."\n",
                       'Diese etwas vereinfachte Darstellung der Bedeutung unserer Emotionen und Gefühle führt bei detaillierter Betrachtung zum Modell des \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozesses}, der Teil des \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozesses} ist.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Die Veränderung unserer Emotionen und Gefühle')),
                   array( 'text', array( text => array(
                     'Beschäftigen wir uns näher mit unseren Emotionen oder Gefühlen, so stellen wir fest, dass sie sehr veränderlich sind.'."\n".
-                    'Sie hängen zum Beispiel stark von unserem inneren Zustand oder Standpunkt ab.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                    'Sie hängen zum Beispiel stark von unserem inneren Zustand oder Standpunkt ab.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Die Naturphilosophie des Yoga')),
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -379,7 +312,7 @@
                     'Zum Lebenlernen und der Persönlichkeitsentwicklung gehört beim NaPhil-Yoga deshalb auch, diese Zusammnhänge an sich selber zu erforschen, neue zu entdecken'."\n".
                     'oder zu entwickeln und miteinander zu diskutieren sowie einander zu lehren.'."\n".
                     'Und auch die wissenschaftliche Untersuchung der Effekte und Phänomene wird, soweit möglich, angestrebt.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Unser Fluss – Leichtigkeit und Blockaden')),
                   array( 'text', array( text => array(
@@ -389,7 +322,7 @@
                     'Unser Achtsamkeitsprozess hat so auch die Aufgabe dafür Sorge zu tragen, dass die Regelprozesse in diesem Sinne reibungslos und gut funktionieren,'."\n".
                     'dass uns das Leben leicht fällt und möglichst angenehm ist.'."\n".
                     'So kann der Achtsamkeitsprozess helfen, Blockaden wie Verspannungen und Kreisgedanken oder Ängste zu lösen, Stress zu lindern.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Unser Yin und Yang, unser Ha und Tha – Balance der Pole')),
                   array( 'text', array( text => array(
@@ -403,7 +336,7 @@
                       'Um die \\jump{OM:SpaLeb:Gesichtsausdruck}{unterschiedliche Erscheinung unserer Gesichtshälften} besser sichtbar zu machen, habe ich eine App entwickelt:'."\n".
                     'Die \\jump[http://www.pjannto.com/de/FaceYourFaceApp/index.php]{}{FaceYourFace App}.'."\n".
                     'Über sie bekommen wir eine Idee von den Differenzen zwischen unseren Gesichtshälften und dadurch eine Anregung, was wir vielleicht tun können, um für bessere Balance zu sorgen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Vortext:X', text =>
                       
                 'Unsere Stimme und Stimmung – Stimmungsspannung')),
                   array( 'text', array( text => array(
@@ -435,41 +368,14 @@
                     'Persönlichkeitsentwicklung des Yogi zur Grundlage.'."\n",
                       'In Bezug auf die Körperübungen, den Asanas, ist es teilweise üblich diese in zusammenhängenden Abläufen zu üben, die in einem Fluss ablaufen und durch'."\n".
                     'Atemzüge verbunden werden, dem Vinyasa\\color{*Bearb}{(Verweis, siehe Ashtanga (Vinyasa) Yoga)}.'."\n".
-                    'Hierdurch wird der Atem mit dem Rhythmus des Ablaufs synchronisiert und intensiviert, wobei eine noch stärkere Intensivierung durch die Ujjayi-Atmung erfolgen kann.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'XXX Was hat der Achtsamkeitsprozess mit der Atmung zu tun? Der Achtsamkeitsprozess wirkt in Richtung eines guten Lebens, eines zufriedenen Lebens: Ein gutes, zufriedenes Leben bedeutet ein stolz aufgerichteter Körper, mit breiter Brust und reflektierter Selbstsicherheit. Ein Schmunzeln oder Lächeln im Gesicht. Ein lockerer, selbstsicherer, kräftiger Gang. Kräftige, flexible Bewegungen. Eine freie, selbstsichere, vielleicht sonore Stimme. Dies geht nur mit einer hoch aktivierten Atem- und Oberkörperbalancespannung, mit tiefer ruhiger Atmung und entspannter, hoch aktivierter Muskulatur; mit einer Balance von Emotionalität und Handlung, einer Balance der Körperhälften, zwischen Ha und Tha, Yin und Yang.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'XXX Die Ujjayi-Atmung aktiviert die Atemspannung und damit die Stimmungsspannung. Die kräftigt durch den zusätzlichen Widerstand im Luftstrom alle beteiligten Muskeln. In Verbund mit der Stimmulation des Parasympathikus durch langsamere Ausatmung in Ujjayi kann man in einen tiefen Schlaf verfallen, in dem man die Gliedmaßen sehr entspannen kann. Zum aktiven Schlafen im Spannungsspiel übertragen.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'XXX Die Atmung erscheint mir wie ein Webschiffchen, dass unser Leben webt. Über eine intensive Atmung werden alle Chakras aktiviert, weil die Atembewegung bei intensiver Atemspannung wie eine Welle durch den Körper läuft, über alle Chakras. Durch die Atembewegung im Körper kann der Achtsamkeistprozess den Körper und seine (Ver-}Spannungen sehr gut sondieren. Die Atembewegung schient bei der Lösung von Verspannungen eine bedeutende Rolle zu spielen, weil wir wohl so funktionieren, dass der Atmung möglichst wenig im Wege stehen darf. Atmen wir so, das Verspannungen die Atmung behindern, so ist der Körper bemüht, diese aufzulösen. Sie ist mit der Funktionsweise des Gehirns verbunden (siehe GEO-Artikel? (Vgl. Diana Laarz, GEO 02/2017, 34-50, hier S. ??.) Man kann sich Dinge besser merken, wenn man sie sich bei der Einatmung merkt (Internetseite auf die ein Hinweis über Olli auf FaceBook ergangen ist, glaube ich.).).'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'XXX Flexibilität XXX'."\n".
-                    'XXX Psychosomatik XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'XXX Trimurti: Brahma (Schöpfer), Vishnu (Erhalter) und Shiva (Zerstörer)\\footnote{Vgl. \\cite{Galke:PhilosophieDesYoga:2017}, 2 Geschichte des Yoga, 2.1 Der multidimensionale vedische Kosmos, S. 8-14, hier S. 10.} sind mit Djet und Neheh verknüpft und nicht nur im Kosmos, sondern im Leben von uns allen wieder zu finen. '."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Hierdurch wird der Atem mit dem Rhythmus des Ablaufs synchronisiert und intensiviert, wobei eine noch stärkere Intensivierung durch die Ujjayi-Atmung erfolgen kann.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)} Was hat der Achtsamkeitsprozess mit der Atmung zu tun? Der Achtsamkeitsprozess wirkt in Richtung eines guten Lebens, eines zufriedenen Lebens: Ein gutes, zufriedenes Leben bedeutet ein stolz aufgerichteter Körper, mit breiter Brust und reflektierter Selbstsicherheit. Ein Schmunzeln oder Lächeln im Gesicht. Ein lockerer, selbstsicherer, kräftiger Gang. Kräftige, flexible Bewegungen. Eine freie, selbstsichere, vielleicht sonore Stimme. Dies geht nur mit einer hoch aktivierten Atem- und Oberkörperbalancespannung, mit tiefer ruhiger Atmung und entspannter, hoch aktivierter Muskulatur; mit einer Balance von Emotionalität und Handlung, einer Balance der Körperhälften, zwischen Ha und Tha, Yin und Yang.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)} Die Ujjayi-Atmung aktiviert die Atemspannung und damit die Stimmungsspannung. Die kräftigt durch den zusätzlichen Widerstand im Luftstrom alle beteiligten Muskeln. In Verbund mit der Stimmulation des Parasympathikus durch langsamere Ausatmung in Ujjayi kann man in einen tiefen Schlaf verfallen, in dem man die Gliedmaßen sehr entspannen kann. Zum aktiven Schlafen im Spannungsspiel übertragen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)} Die Atmung erscheint mir wie ein Webschiffchen, dass unser Leben webt. Über eine intensive Atmung werden alle Chakras aktiviert, weil die Atembewegung bei intensiver Atemspannung wie eine Welle durch den Körper läuft, über alle Chakras. Durch die Atembewegung im Körper kann der Achtsamkeistprozess den Körper und seine (Ver-}Spannungen sehr gut sondieren. Die Atembewegung schient bei der Lösung von Verspannungen eine bedeutende Rolle zu spielen, weil wir wohl so funktionieren, dass der Atmung möglichst wenig im Wege stehen darf. Atmen wir so, das Verspannungen die Atmung behindern, so ist der Körper bemüht, diese aufzulösen. Sie ist mit der Funktionsweise des Gehirns verbunden (siehe GEO-Artikel? (Vgl. Diana Laarz, GEO 02/2017, 34-50, hier S. ??.) Man kann sich Dinge besser merken, wenn man sie sich bei der Einatmung merkt (Internetseite auf die ein Hinweis über Olli auf FaceBook ergangen ist, glaube ich.).).'."\n",
+                      '\color{*Bearb}{(In Arbeit …)} Flexibilität'."\n",
+                      '\color{*Bearb}{(In Arbeit …)} Psychosomatik'."\n",
+                      '\color{*Bearb}{(In Arbeit …)} Trimurti: Brahma (Schöpfer), Vishnu (Erhalter) und Shiva (Zerstörer)\\footnote{Vgl. \\cite{Galke:PhilosophieDesYoga:2017}, 2 Geschichte des Yoga, 2.1 Der multidimensionale vedische Kosmos, S. 8-14, hier S. 10.} sind mit Djet und Neheh verknüpft und nicht nur im Kosmos, sondern im Leben von uns allen wieder zu finen. '."\n",
+                    ''))),
                       
                   array( 'notice', array( Display => 'showContent', /*Title => 'Notizen zur eigenen Internetseite und Ausrichtung', */text => array(
                     '(• Warum gehören spirituelle Elemente dazu?)',
@@ -487,7 +393,7 @@
                     'Die Entwícklung „eigener“ oder „ergänzender“, auch spiritueller Elemente des Yoga auf Basis dieses Wissens wird angestrebt.'."\n"))),
                     
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SpaLeb:XXX'),
+                      //array(  jump_name => 'OM:SpaLeb:X'),
                     )),
                 )
           ); ?>
@@ -533,22 +439,11 @@
                     '– Ist man offen, open minded, und lässt Entwicklungen zu.) \\\\'."\n".
                     '(• Die Innenfeder hat etwas mit \\jumpname[*Bearb]{OM:SpaLeb:Koerperspannung:Atemspannung-und-Oberkoerperbalance} zu tun.) \\\\'."\n".
                     '(• Untere und obere Innenfeder müssen sich leicht und ausbalanciert gespannt anfühlen.) \\\\'."\n".
-                    '(• XXX) \\\\'."\n".
+                    '(• \color{*Bearb}{(In Arbeit …)}) \\\\'."\n".
                     '}'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:Einleitung:LichtTunnelAuge'),
@@ -581,29 +476,8 @@
                       'Die Wolken jedoch ziehen vorbei.'."\n"))),
                     
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:Einleitung:ErkenneDichSelbst'),
@@ -623,7 +497,7 @@
                     )),
                       
                   /*array( 'notice', array( Display => 'hideContent', text => array(
-                    '(• XXX)',
+                    '(• X)',
                     ))),*/
                       
                   array( 'text', array( Shape => 'italic', text => array(
@@ -639,7 +513,7 @@
                     'Und sich selber zu erkennen ist, in meinen Augen, der Prozess der inneren Wechselwirkung, der mich innerlich stabilisiert und gegen die Außenwelt abgrenzt; mir Halt und Orientierung'."\n".
                     'auf den unterschiedlichsten Ebenen gibt.'."\n".
                     'Damit ist er ein oder gar der Wesenskern meiner Existenz.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:ErkenneDichSelbst:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:ErkenneDichSelbst:X', text =>
                                            
                 'Rechte Achtsamkeit')),
                   array( 'text', array( text => array(
@@ -658,7 +532,7 @@
                     'Bei unserer Psyche geht es vorwiegend um die „subjektive“ oder „innere“ Erlebensseite des handelnden Menschen.\\footnote{\\const{SpaLeb_g_footnote_text_PsycheErlebUndVerhalt}}'."\n".
                     'Es ist leicht erkennbar, wie nahe beides beieinander liegt.'."\n".
                     'Möchten wir mit Yoga also nachhaltig etwas für uns verändern, dann müssen wir uns demnach sehr mit uns selber auseinandersetzen, uns selber erkennen wollen und dies schließlich ein Stück weit auch können.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:ErkenneDichSelbst:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:ErkenneDichSelbst:X', text =>
                                            
                 'Persönlichkeitsentwicklung oder „Wellness Yoga“?')),
                   array( 'text', array( text => array(
@@ -864,14 +738,14 @@
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '(• Der Körper kann durch die Atmung gestimmt werden.)',
-                    '(• Wenn man das Gefühl hat, seinen Körper besser zu verstehen und ihn mit einem guten, sicheren Gefühl einsetzen zu können, dann geht das automatisch mit einer positiveren Psyche einher. Hieraus ergibt sich eine wichtige Verbindung zwischen der \\jump[][*Bearb]{OM:NPYo:Einleitung:ErkenneDichSelbst:Psyche}{Psyche} im vorherigen Kapitel und der Atmung.)',
-                    '(• Atmung ist Entwicklung, weil bei der Ausdehnung des Brustkorbs die Spiralbewegung drinne steckt.)',
-                    '(• Gesundheit und Immunsystem.)',
-                    '(• Verdauung: Die Atmung massiert die inneren Organe.)',
-                    '(• Inneres Bauchfett oder Schwellungen von Organen können die Atemspannung und die Oberkörperbalance stark behindern.)',
-                    '(• Was hat die Atmung und die Kopf-Stimmungsspannung mit dem Inneren Auge, dem Dritten Auge, zu tun?)',
-                    '(• Verbindung Bewusstsein und Unterbewusstsein.)',
+                    '• Der Körper kann durch die Atmung gestimmt werden.',
+                    '• Wenn man das Gefühl hat, seinen Körper besser zu verstehen und ihn mit einem guten, sicheren Gefühl einsetzen zu können, dann geht das automatisch mit einer positiveren Psyche einher. Hieraus ergibt sich eine wichtige Verbindung zwischen der \\jump[][*Bearb]{OM:NPYo:Einleitung:ErkenneDichSelbst:Psyche}{Psyche} im vorherigen Kapitel und der Atmung.',
+                    '• Atmung ist Entwicklung, weil bei der Ausdehnung des Brustkorbs die Spiralbewegung drinne steckt.',
+                    '• Gesundheit und Immunsystem.',
+                    '• Verdauung: Die Atmung massiert die inneren Organe.',
+                    '• Inneres Bauchfett oder Schwellungen von Organen können die Atemspannung und die Oberkörperbalance stark behindern.',
+                    '• Was hat die Atmung und die Kopf-Stimmungsspannung mit dem Inneren Auge, dem Dritten Auge, zu tun?',
+                    '• Verbindung Bewusstsein und Unterbewusstsein.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -887,12 +761,9 @@
                     'Die Atemübungen (Pranayama) sind seit jeher ein zentraler Bestandteil des Yoga.\\footnote{Internet: \\\\ Vgl. \\cite{wiki:Yoga:2016}.}'."\n".
                     'Dabei gilt der Atem (Prana) im Yoga als zentrale Lebenskraft und dient im Raja Yoga der Zusammenführung von Körper und Geist.\\footnote{Internet: \\\\ Vgl. \\cite{wiki:Prana:2016}, Prana im Yoga und im Hinduismus.}'."\n".
                     'Die Atemübungen werden zum Beispiel genutzt, um im Rahmen des \\jump{OM:NPYo:Einleitung:ErkenneDichSelbst}{Achtsamkeitsprozesses}'."\n".
-                    'die „Aufmerksamkeitsenergie“ durch den Körper zu lenken und so das beobachtende, fühlende Bewusstsein auf bestimmte Bereiche des Körpers zu konzentrieren.\\footnote{Internet: \\\\ Vgl. Video \\url{http://de.ashtangayoga.info/ashtangayoga/grundlagen/energie-bandha/}.}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'die „Aufmerksamkeitsenergie“ durch den Körper zu lenken und so das beobachtende, fühlende Bewusstsein auf bestimmte Bereiche des Körpers zu konzentrieren.\\footnote{Internet: \\\\ Vgl. Video \\url{http://de.ashtangayoga.info/ashtangayoga/grundlagen/energie-bandha/}.}'."\n",
+                      '\\color{*Bearb}{In Arbeit …}'."\n".
+                    ''))),
                       
                   // #!: Auch bei "Praxis: Atmung und Stimmung".
                   array( 'text', array( Shape => 'italic', text => array(
@@ -901,7 +772,7 @@
                         '\\small{\\color{*TitleAdd}{Handle nicht zuerst und stelle dann fest, dass du ja auch atmen musst.}}'."\n"),
                         addtext => '')),
                       
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Atmung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Atmung:X', text =>
                                            
                 'Atemspannung und Oberkörperbalance')),
                   array( 'text', array( text => array(
@@ -912,17 +783,9 @@
                     'Optimal ist, wenn diese sich gut gespannt und ausbalanciert anfühlt.'."\n".
                     'Über den Solarplexus und viele andere Nerven und physiologische Zusammenhänge ist die untere Innenfeder intensiv mit der'."\n".
                     '\\jump{OM:SpaLeb:Psyche-und-Stimmung}{Psyche und Stimmung} des Menschen verknüpft.'."\n".
-                    'Körperspannung und Psyche sind eine Art von \\jump{OM:SpaLeb:Koerperliche-und-seelische-Existenz:KoerperSpaPsycheSpiegelbilder}{Spiegelbilder} voneinander.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n"))),
+                    'Körperspannung und Psyche sind eine Art von \\jump{OM:SpaLeb:Koerperliche-und-seelische-Existenz:KoerperSpaPsycheSpiegelbilder}{Spiegelbilder} voneinander.'."\n",
+                      '\\color{*Bearb}{In Arbeit …}'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                     'Die gefundene Einsicht der Notwendigkeit der permanenten Atemspannung rechtfertigt es, die permanente Atemspannung mit nachhaltiger Übung und massivem Angang wieder herzustellen, sollte sie durch eine \\jump{OM:SpaLeb:Koerperspannung:Schonhaltung}{Bauch-Rücken-Schonhaltung} verlorengegangen sein.'."\n".
                     'Hierzu kommen aus meiner Sicht vor allem das \\jump{OM:NPYo:Einleitung:Atmung}{Yoga} oder die \\jump{OM:NPYo:Einleitung:Praxis-Atmung}{Praxis der Yoga-Atmung}, das Üben von Gesangstechniken\\color{*Bearb}{(Link)}, \\jump{OM:SpaLeb:Koerperspannung:AktivesSchlafen}{aktives Schlafen} und spezielle Sexpraktiken\\footnote{\\const{SpaLeb_g_footnote_text_AtemSpannungUndSex}} in Frage.'."\n".
@@ -957,19 +820,13 @@
                         'nicht im Ziel.'."\n"),
                         addtext => '')),
                       
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Ehrgeiz:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Ehrgeiz:X', text =>
                                            
                 'Anliegen versa Ziele')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Ehrgeiz:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Ehrgeiz:X', text =>
                                            
                 'Yoga Asanas – Lernen, den Ehrgeiz herauszunehmen und damit den eigenen inneren Widerstand zu reduzieren')),
                   array( 'text', array( text => array(
@@ -988,7 +845,7 @@
                   // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
                   array( 'text', array( Shape => 'italic', text => array(
                         'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
-                        'der hat die Magie, Dinge zum Schweben zu bringen.'."\n"))),
+                        'hat die Magie, Dinge zum Schweben zu bringen.'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Mag ich jemanden sehr gerne, bin vielleicht etwas verliebt, ist sehr die Frage, inwieweit es Sinn macht die Sache zu forcieren.'."\n".
@@ -1001,7 +858,7 @@
                     'Eine enge Freundschaft zum Beispiel.'."\n",
                       'Es liegt eine nicht immer einfache Kunst darin, ehrliche Lockerheit und eine gewisse, ernstgemeinte Ergebnisoffenheit in die Sache zu bringen.'."\n".
                     'Doch nur so bekommt sie etwas leichtes und schebendes.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Ehrgeiz:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Ehrgeiz:X', text =>
                                            
                 'Wie lässt sich die Leichtigkeit des Schwebens erreichen?')),
                   array( 'text', array( text => array(
@@ -1019,11 +876,11 @@
                     'Diesen und ähnliche innere Perspektivwechsel kann uns so leicht niemand völlig nehmen.'."\n".
                     'Er ist ein Teil unserer inneren Freiheit, wenn wir uns seiner Möglichkeiten bewusst sind.'."\n".
                     'Und er ist für uns selber viel leichter realisierbar, als den anderen oder unsere Umgebung zu verändern, denn er liegt bereits in unserer Hand.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Ehrgeiz:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Ehrgeiz:X', text =>
                                            
                 'Physikalisch gesehen …')),
                   /*array( 'notice', array( Display => 'hideContent', text => array(
-                    '(• XXX)',
+                    '(• X)',
                     ))),*/
                   array( 'text', array( text => array(
                     'Der Zusammenhang, der Zusammenhalt der physikalischen Strukturen funktioniert genau so:'."\n",
@@ -1031,7 +888,7 @@
                     'Stürtzt es in sich zusammen, dann ist es nichts.'."\n".
                     'Fliegt es auseinander, dann ist es auch nichts.'."\n".
                     'Die Bestandteile müssen sich gegenseitig schwebend halten, wie in einer Beziehung.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Ehrgeiz:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Ehrgeiz:X', text =>
                                            
                 'Ist unsere Welt eine Illusion?')),
                   array( 'text', array( text => array(
@@ -1050,7 +907,7 @@
                     'Schauen wir näher hin, ist es aus Steinen, also ein Steinhaufen, und das Haus entpuppt sich als etwas ganz anderes, als ursprünglich gedacht.'."\n".
                     'Doch sehe ich es nur(!) als Steinhaufen, dann kann ich seinen nutzen nicht erkennen.'."\n".
                     'Sehe ich es nur als Haus, dann kann ich nicht erkennen, wie es wohl entstanden ist und mir nicht selber eines bauen, was eine tolle Möglichkeit wäre, selber zu einem Wohnhaus zu kommen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Ehrgeiz:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Ehrgeiz:X', text =>
                                            
                 'Ehrgeiz und Enge oder Zwanghaftigkeit liegen nahe beieinander – Leichtigkeit ist keine Beliebigkeit')),
                   array( 'text', array( text => array(
@@ -1059,7 +916,7 @@
                     'Alle schränken unsere Möglichkeiten ein – aus Steinen können wir eben doch mehr bauen als „nur“ ein Haus.'."\n",
                       'Halten wir hingegen alles für möglich oder glauben, nur die immaterielle, transzendente Welt wäre wahr'."\n".
                     '– also ein Steinhaufen könnte quasi alles sein, was wir wollen –, dann gelangen wir in die Beliebigkeit.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Ehrgeiz:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Ehrgeiz:X', text =>
                                            
                 'Unsere Neugier auf neue Perspektiven erschafft mehr Möglichkeiten')),
                   array( 'text', array( text => array(
@@ -1086,26 +943,9 @@
                       
                   array( 'text', array( text => array(
                     'Differenzieren von verletzendem Schmerz und veränderndem Schmerz. Dies berührt nicht nur die Muskeln, sondern auch die Seele. (Bezug auf das selbe Thema bei Psyche und Stimmung)'."\n".
-                    'Selbstverletzendes Verhalten …'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Selbstverletzendes Verhalten …'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:Einleitung:Widerstand-reduzieren'),
@@ -1137,27 +977,8 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:Einleitung:Praxis-Achtsamkeit'),
@@ -1249,23 +1070,8 @@
                     '\\color{*Bearb}{(Atem führt den körperlichen Achtsamkeitsfokus durch den Körper.)}'."\n".
                     '\\color{*Bearb}{(Atem ist wichtig, um den Körper mit Sauerstoff zu versorgen und den Kreislauf anzuregen, damit die Muskeln leistungsfähig sind.)}'."\n".
                     '\\color{*Bearb}{(Atmen fördert die Konzentration.)}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:Einleitung:Praxis-Atmung'),
@@ -1285,17 +1091,19 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '(• Ganz Ausatmen ist auch aus folgendem Grund wichtig: Wenn du einen Krug mit frischem Wasser füllen willst, dann würdest du doch auch nicht die Hälfte des alten Wassers drinne lassen.)',
-                    '(• Bei der Yoga-Atmung wird die Atemmuskulatur und damit die Oberkörperstabilität dadurch aktiviert, dass über eine bewusste völlige Ausatmung die ringförmige Bauchmuskulatur extrem angespannt sowie das Zwerchfell gedehnt wird und die Einatmung unbewusst über den Einatemreflex durch leichten Sauerstoffmangel von selbst kommen gelassen wird. Dies entspricht genau dem, was für die Behebung der \\jump[][*Bearb]{OM:SpaLeb:Psychosomatik-Stress:Problemloesungsansaetze}{psychosomatischen Probleme des Atmens} in meinen Augen Sinnvoll ist: Die Einatmung bewusst zu kontrollieren wäre hierbei kritisch, denn dies verführt dazu Magenschmerzen durch Stress mit der Lockerung der ringförmigen Bauchmuskulatur beim Einatmen zu beheben, anstatt durch die Dehnung und Entspannung des Zwerchfells, wie es bei bewusster extremer völliger Ausatmung geschieht.)',
-                    '(• Bei der Yoga-Atmung (und besonders bei der Gesangsatmung) scheint mir wichtig, das beim Einziehen des Bauchs nur die ringförmige Bauchmuskulatur an der Seite voll/stark angespannt ist und benutzt wird. Die glatte, senkrechte Bauchmuskulatur in der Mitte des Bauchs ist etwas locker aber federnd angespannt, um den Oberkörper zu balancieren oder beim Singen federnd zu schwingen. Damit das beim Einatmen so bleiben kann, und nicht die glatte auch angespannt wird, ist es wohl sehr Hilfreich, den Anus/Beckenboden (Mulabandha(Verweis)) leicht anzuziehen. Die ganze Einatmung bleibt der am stärksten eingezogene Punkt der Bauchnabel (Uddiyanabandha(Verweis)).)',
-                    '(• Wenn man beim Einatmen den Beckenboden (Anus etc.) leicht (auch mal stark) anzieht (Mulabandha(Verweis)) und den Bauch leicht einzieht (Uddiyanabandha(Verweis)), dann bekommt der Druck der Einatmung des Zwerchfells im Körper im Becken einen stabilen Sitz und kann sich nach oben hin abdrücken. Der angezogene Anus gibt dem Bauch mehr Lockerheit, weil man so den Druck im Körper besser kontrollieren und verteilen kann.)',
-                    '(• Einatmung von selber kommen lassen und so einen Wechsel zwischen bewusstem ganz Ausatmen und von unbewusster, Impuls gesteuerter Einatmung schaffen.)',
-                    '(• Oberkörperbalancespannung auf der Atemspannung erklären und so klar machen, dass der Sitz der Organe im Beckenboden zusammen mit der ringförmigen Bauchmuskulatur der Atemspannung im Stehen so stark sein muss, wie Bauch- und Rückenspannung und das Gewicht des Oberkörpers zusammen.)',
-                    '(• Diese dynamische Verteilung des Drucks im Oberkörber beim Einatmen hat Ähnlichkeit mit dem Gehen des Menschen. Ist die Atmung blockiert – im Widerstand – oder sie setzt aus, dann hat dies Ähnlichkeit mit dem Stehen des Menschen.)',
-                    '(• Der Bauchnabel bleibt permanent durch die ringförmige Bauchmuskulatur(Verweis) so weit eingezogen – und das kann gefühlt ziemlich weit sein, jenachdem in wie weit der Yogi-Anfänger seine Grundspannung im Bauch eingebüßt hat –, dass die Bauchspannung „einrastet“ und in einer angenehmen, fast lockeren Weise aufrechterhalten werden kann. Ist die Bauchspannung weitestgehend verloren gegangen, dann bedarf es einiger Zeit/Geduld und intensiver Übung, auch im Alltag, diese Grundspannung wieder zu aktivieren und zugägnglich zu machen. Beim Einatmen wird die permanente Bauchpannung weder gelockert noch massiv verstärkt. Sie wird wie eine gespannte, leicht flexible Feder benutzt, gegen die eingeatmet wird.)',
-                    '(• Würde man nur den Bauch einziehen, aber nicht den Anus anziehen, dann gibt es den Wurst-Einschnürungseffekt: In der Mitte wird die Wurst eingeschnürrt, aber an den beiden Enden bläht sie sich wabbelig auf. Das meint, der Anus kommt heraus und der Brustkorb dehnt sich. Erst, wenn man die eine Seite der Wurst in der Ausdehnung begrenzt, hier den Anus-Beckenboden mit Sitz in der Hüfte, dann bläht sich nur die andere Seite stabil auf, hier der Brustkorb.)',
-                    '(• Yoga-Atmung regelmäßig im Alltag!)',
-                    '(• Sich zu sehr im eigenen Widerstand spüren blockiert die Atmung!)',
+                    '• Mit Leichtigkeit atmen und sein:',
+                    '– Auch, wenn es eine gute Übung ist, mit rauschendem Geräusch zu atmen, mit der Ujjayi-Atmung – im leichten Widerstand –, so ist das Ziel am Ende doch die Leichtigkeit unserer Atmung und so auch unseres Seins. Dies ist auch beim Yoga praktizieren gut. Das bedeutet, im Leben, und so auch im Schlaf, öffnen wir den Kehlkopf weit mit aktivierter Muskulatur im Schulter-Nackenbereich. Dann kann unser Atem möglichst leicht und geräuschlos fließen, auch im Schlaf. Dabei sind die Räume im Kopf dann weit geöffnet – aktivierter \jump{OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler}{innerer Marionettenspieler} – und der \jump{OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler}{PC-Muskel} ist aktiviert. Dies hilf auch bei Schnarchen.',
+                    '• Ganz Ausatmen ist auch aus folgendem Grund wichtig: Wenn du einen Krug mit frischem Wasser füllen willst, dann würdest du doch auch nicht die Hälfte des alten Wassers drinne lassen.',
+                    '• Bei der Yoga-Atmung wird die Atemmuskulatur und damit die Oberkörperstabilität dadurch aktiviert, dass über eine bewusste völlige Ausatmung die ringförmige Bauchmuskulatur extrem angespannt sowie das Zwerchfell gedehnt wird und die Einatmung unbewusst über den Einatemreflex durch leichten Sauerstoffmangel von selbst kommen gelassen wird. Dies entspricht genau dem, was für die Behebung der \\jump[][*Bearb]{OM:SpaLeb:Psychosomatik-Stress:Problemloesungsansaetze}{psychosomatischen Probleme des Atmens} in meinen Augen Sinnvoll ist: Die Einatmung bewusst zu kontrollieren wäre hierbei kritisch, denn dies verführt dazu Magenschmerzen durch Stress mit der Lockerung der ringförmigen Bauchmuskulatur beim Einatmen zu beheben, anstatt durch die Dehnung und Entspannung des Zwerchfells, wie es bei bewusster extremer völliger Ausatmung geschieht.',
+                    '• Bei der Yoga-Atmung (und besonders bei der Gesangsatmung) scheint mir wichtig, das beim Einziehen des Bauchs nur die ringförmige Bauchmuskulatur an der Seite voll/stark angespannt ist und benutzt wird. Die glatte, senkrechte Bauchmuskulatur in der Mitte des Bauchs ist etwas locker aber federnd angespannt, um den Oberkörper zu balancieren oder beim Singen federnd zu schwingen. Damit das beim Einatmen so bleiben kann, und nicht die glatte auch angespannt wird, ist es wohl sehr Hilfreich, den Anus/Beckenboden (Mulabandha(Verweis)) leicht anzuziehen. Die ganze Einatmung bleibt der am stärksten eingezogene Punkt der Bauchnabel (Uddiyanabandha(Verweis)).',
+                    '• Wenn man beim Einatmen den Beckenboden (Anus etc.) leicht (auch mal stark) anzieht (Mulabandha(Verweis)) und den Bauch leicht einzieht (Uddiyanabandha(Verweis)), dann bekommt der Druck der Einatmung des Zwerchfells im Körper im Becken einen stabilen Sitz und kann sich nach oben hin abdrücken. Der angezogene Anus gibt dem Bauch mehr Lockerheit, weil man so den Druck im Körper besser kontrollieren und verteilen kann.',
+                    '• Einatmung von selber kommen lassen und so einen Wechsel zwischen bewusstem ganz Ausatmen und von unbewusster, Impuls gesteuerter Einatmung schaffen.',
+                    '• Oberkörperbalancespannung auf der Atemspannung erklären und so klar machen, dass der Sitz der Organe im Beckenboden zusammen mit der ringförmigen Bauchmuskulatur der Atemspannung im Stehen so stark sein muss, wie Bauch- und Rückenspannung und das Gewicht des Oberkörpers zusammen.',
+                    '• Diese dynamische Verteilung des Drucks im Oberkörber beim Einatmen hat Ähnlichkeit mit dem Gehen des Menschen. Ist die Atmung blockiert – im Widerstand – oder sie setzt aus, dann hat dies Ähnlichkeit mit dem Stehen des Menschen.',
+                    '• Der Bauchnabel bleibt permanent durch die ringförmige Bauchmuskulatur(Verweis) so weit eingezogen – und das kann gefühlt ziemlich weit sein, jenachdem in wie weit der Yogi-Anfänger seine Grundspannung im Bauch eingebüßt hat –, dass die Bauchspannung „einrastet“ und in einer angenehmen, fast lockeren Weise aufrechterhalten werden kann. Ist die Bauchspannung weitestgehend verloren gegangen, dann bedarf es einiger Zeit/Geduld und intensiver Übung, auch im Alltag, diese Grundspannung wieder zu aktivieren und zugägnglich zu machen. Beim Einatmen wird die permanente Bauchpannung weder gelockert noch massiv verstärkt. Sie wird wie eine gespannte, leicht flexible Feder benutzt, gegen die eingeatmet wird.',
+                    '• Würde man nur den Bauch einziehen, aber nicht den Anus anziehen, dann gibt es den Wurst-Einschnürungseffekt: In der Mitte wird die Wurst eingeschnürrt, aber an den beiden Enden bläht sie sich wabbelig auf. Das meint, der Anus kommt heraus und der Brustkorb dehnt sich. Erst, wenn man die eine Seite der Wurst in der Ausdehnung begrenzt, hier den Anus-Beckenboden mit Sitz in der Hüfte, dann bläht sich nur die andere Seite stabil auf, hier der Brustkorb.',
+                    '• Yoga-Atmung regelmäßig im Alltag!',
+                    '• Sich zu sehr im eigenen Widerstand spüren blockiert die Atmung!',
                     ))),
                       
                   // #!: Auch bei "Atmung und Stimmung".
@@ -1306,21 +1114,8 @@
                         addtext => '')),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:Einleitung:Praxis-Asanas'),
@@ -1333,7 +1128,7 @@
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Einleitung:Praxis-Asanas',
-              'XXX', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:Einleitung:Praxis-Atmung', type => 'back'),
@@ -1370,22 +1165,8 @@
                         addtext => '')),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:Einleitung:Bilder'),
@@ -1410,31 +1191,17 @@
                     'Umso besser die Bilder mit der Realität übereinstimmen, je besser wirken sie, um unser Leben positiv zu beeinflussen.'."\n".
                     'Aus diesem Grund hab ich die Bilder des \\jump{OM:SpaLeb:Home}{›Spannungsspiels des Lebens‹} entwickelt.'."\n",
                       'Auch fantastische Bilder können gut wirken, wenn bestimmte Aspekte an ihnen gut mit der Realität harmonieren.'."\n".
-                    'Das können auch Bilder sein, die im ersten Moment nicht jeder mit der Realität in Zusammenhang bringt.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Bilder:XXX', text =>
+                    'Das können auch Bilder sein, die im ersten Moment nicht jeder mit der Realität in Zusammenhang bringt.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Bilder:X', text =>
                                            
                 'Unser Aufmerksamkeitsfokus')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'Wir können die Reaktionen des Körpers dadurch beeinflussen, dass wir unseren Aufmerksamkeitsfokus durch unseren Körper lenken.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Wir können die Reaktionen des Körpers dadurch beeinflussen, dass wir unseren Aufmerksamkeitsfokus durch unseren Körper lenken.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:Einleitung:Bild-GebaendigtesLicht'),
@@ -1466,13 +1233,13 @@
                     'Nur ein kleiner Teil seiner Dynamik kommt in der Bewegung unseres Körpers zum Ausdruck.'."\n".
                     'Es ist faszinierend, wie eine so transzendente Erscheinung wie Licht zu unserem Körper auskristalisieren kann; welcher Sturm in uns tobt und wie gezähmt er erscheint.'."\n".
                     'Eigentlich doch so leicht.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Bilder:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Bilder:X', text =>
                                            
                 'Die Leichtigkeit des Lichts – unsere Leichtigkeit')),
                   array( 'text', array( text => array(
                     'Das Bild der Leichtigkeit und der Transzendenz des Lichts in uns können wir nutzen, um uns beim Yoga darauf zu konzentrieren uns die Bewegung, die Übungen und damit'."\n".
                     'das Leben leichter zu machen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Bilder:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Bilder:X', text =>
                                            
                 'Der Sturm des Lichts – unsere Power')),
                   array( 'text', array( text => array(
@@ -1485,7 +1252,7 @@
                     'Durch die Beugung von Planeten und Sternenlicht wurde die Gültigkeit Einsteins Allgemeiner Relativitätstheorie 1919 schließlich gezeigt.\\footnote{\\const{FrQFT_g_footnote_text_GraviLichtbeugART}}'."\n".
                     'Weil das Licht in uns unglaublich oft hin und her rotiert führt das schließlich dazu, dass es durch die Beugung bei jeder Runde etwas näher an die Erde wandert.\\footnote{\\const{FrQFT_g_footnote_text_GraviDurchLichtbeug}}'."\n".
                     'Da es uns ausmacht, wandern wir mit ihm ständig in Richtung Erde und unsere Füße werden auf den Boden gedrückt.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Bilder:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Bilder:X', text =>
                                            
                 'Die Wanderung des Lichts – unsere Erdung')),
                   array( 'text', array( text => array(
@@ -1511,7 +1278,7 @@
                       
                   array( 'text', array( text => array(
                     'Zur Zeit gibt es folgende Veranstaltungsangebote und Trainingsangebote:'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Veranstaltungen:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Veranstaltungen:X', text =>
                                            
                 'Naturphilosophie-Yoga als Nackt-Yoga für Männer')),
                   /*array( 'text', array( text => array(
@@ -1521,7 +1288,7 @@
                     'Dort bitte Nachfragen oder die Mitgliedschaft beantragen.'."\n"))),*/
                   array( 'text', array( text => array(
                     '… sucht einen neuen Veranstaltungsort in Hamburg.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Veranstaltungen:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Einleitung:Veranstaltungen:X', text =>
                                            
                 'Individuelle Buchung')),
                   array( 'text', array( text => array(

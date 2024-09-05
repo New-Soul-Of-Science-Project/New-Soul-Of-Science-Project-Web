@@ -39,7 +39,7 @@
                     'in der nullten Hierarchieebene, parallel zum Zähloperator, und mit dem echten Modulo-Operator'."\n".
                     'in der ersten Hierarchieebene, parallel zur Addition, zu tun.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Vortext:X', text =>
                                            
                 'Die imaginären Operatoren \\term{i} und \\term{i + 1} als Modulo-Operatoren', subline =>
                   '')),
@@ -272,9 +272,9 @@
                     'Wir sehen, dass der Zähl-Modulo-Operator und der Modulo-Operator als aufeinander'."\n".
                     'folgende hierarchische Operatoren plausibel zusammen passen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Vortext:X', text =>
                                            
-                'Der Zusammenhang beider Modulos')),
+                'Der Zusammenhang beider Moduli')),
                   array( 'text', array( text => array(
                     'Interessant ist, dass der Zähl-Modulo-Operator und der Modulo-Operator über den Modulo zu vergleichen sind:'."\n".
                     ''))),
@@ -315,7 +315,7 @@
                   array( 'text', array( text => array(
                     'Dieser Zusammenhang und seine Bedeutung sollten weiter untersucht werden.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Vortext:X', text =>
                                            
                 'Die orthogonale Ergänzung des Zählens', subline =>
                   'Das Naturprinzip des Djet-Neheh-Dualismus im Pärchen des Zähloperators und des Zähl-Modulo-Operators')),
@@ -361,36 +361,22 @@
                     )),
                   
                   array( 'text', array( text => array(
-                    'Verweis auf das Hauptkapitel zu neutralen Elementen …'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Verweis auf das Hauptkapitel zu neutralen Elementen …'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Neutrale-Elemente:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Neutrale-Elemente:X', text =>
                                            
                 'Neutrale Elemente des Zähl-Modulo-Operators', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Neutrale-Elemente:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Modulo-Operatoren:Neutrale-Elemente:X', text =>
                                            
                 'Neutrale Elemente des Modulo-Operators', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(

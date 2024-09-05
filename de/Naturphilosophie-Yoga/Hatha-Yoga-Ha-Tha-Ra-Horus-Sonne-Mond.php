@@ -50,7 +50,7 @@
                       'Deshalb erlaube ich mir, die altägyptische Mythologie mit den tantrischen Weisheiten des Hatha Yoga sowie den modernen Erkenntnissen der Anatomie und'."\n".
                       'der Gehirnfunktion zusammen zu bringen.'."\n"))),
                       
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Sonne und Mond im Hatha Yoga')),
                   array( 'text', array( text => array(
@@ -58,7 +58,7 @@
                     'Im Sanskrit bedeutet das Worte \\italic{Ha} Sonne und steht auch für das männliche Prinzip.'."\n".
                     'Das Wort \\italic{Tha} bedeutet Mond und steht auch für das weibliche Prinzip.'."\n",
                       '\\quote{Hatha Yoga ist also wie Yang und Yin. Ha entspricht Yang, Sonne, [eher] aktiv und Tha entspricht Yin Mond also eher passiv, nach innen gehend.}\\footnote{\\cite{Yogawiki:Hatha:2018}.}'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Tantra im Yoga')),
                   array( 'text', array( text => array(
@@ -74,7 +74,7 @@
                     'Mir ist bisher allerdings unbekannt, ob diese im Tantra in besonderen Fällen auch anders(herum) sein kann.'."\n"))),
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Sonne und Mond in der altägyptischen Mythologie', subline =>
                   'Ra und Horus')),
@@ -83,7 +83,7 @@
                     'In der \\jumpname{OM:NPYo:HaTha:Vortext:Fig-AugeDesRa} und der \\jumpname{OM:NPYo:HaTha:Vortext:Fig-AugeDesHorus} sind die Hieroglyphen dieser Götter dargestellt,'."\n".
                     'die sich bezeichnenderweise zu einem Gesicht aus zwei Augen zusammensetzen lassen.'."\n".
                     'Deshalb verstehe ich sie auch als unsere Körperhälften symbolisierend, was noch durch weitere, im Folgenden hergestelte Zusammenhänge unterstützt wird.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Djet und Neheh', subline =>
                   'Zeitbegriffe der altägyptischen Mythologie')),
@@ -92,7 +92,7 @@
                     'Dies ist zum einen die historische und abgeschlossene Zeit Djet (gesprochen ›Dschet‹), der ewige und vollendete Lauf der Dinge;'."\n".
                     'zum anderen die rituelle Zeit der Erneuerung Neheh (›Nechech‹), die Zeit der \\quote{ewigen Wiederkehr des Gleichen}\\footnote{\\cite{Assmann:ZeitUndGeschichteInFruehenKulturen:2006}, 2. Zyklische und lineare Zeit: Die altägyptische Lehre der „zwei Ewigkeiten“, S. 496-507, hier S. 496.}, des Sich-Wiederholens.\\footnote{\\const{NPYo_g_footnote_text_ZeitDjetNeheh}}'."\n",
                       'Im Verständnis der altägyptischen Mythologie stehen beide Zeitbegriffe mit der Ewigkeit in Zusammenhang und sind daher eher als sakral zu sehen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Transformation – Stabilisation und latente Zerstörung im Zusammenhang', subline =>
                   'Djet und Neheh dynamisch interpretiert')),
@@ -113,7 +113,7 @@
                     'In der modernen Physik steckt letztere auch im Gedankenexperiment von \\jump{OM:FrQFT:Einleitung:Fundierung:Folge-LichtUhr-Mat}{Einsteins Lichtuhr}\\footnote{\\const{FrQFT_g_footnote_text_Lichtuhr}}, als Zyklus der Lichtspiegelung.'."\n",
                       'Wir differenzieren heute beides aber nicht als zwei strukturell unterschiedliche Aspekte der Zeit, sondern sehen sie als gleichbedeutende Darstellungen an.'."\n"))),
                       
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Die Djet- und die Neheh-Zeit ergänzen sich', subline =>
                   'Beide zusammen sind ein dualistisches Prinzip')),
@@ -133,7 +133,7 @@
                   array( 'figure',
                     array_merge( $NPYo_g_figure_ary_SymbolYinYangKoerperSeeleExistenz, array( name => 'OM:NPYo:HaTha:Vortext:Fig-SymbolYinYangKoerperSeeleExistenz'))),
                       
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Yin-Yang-Prinzip des Djet-Neheh-Dualismus', subline =>
                   'In sich verschachteltes Prinzip von männlich und weiblich')),
@@ -155,7 +155,7 @@
                                                          /* text => '' */)),
                       )),
                       
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Psychosomatik:Vortext:X', text =>
                       
                 'Yin-Yang-Prinzip des Shiva-Shakti', subline =>
                   '')),
@@ -169,7 +169,7 @@
                       'Ich finde es schon sehr interessant, dass wir die Symbolik dieser Pole auf unterschiedliche Art und Weise an vielen bedeutenden Stellen wiederfinden.'."\n".
                     'So ist das Symbol des Hexagramms unter anderem auch ins Judentum übergegangen.'."\n"))),
                                                                                          
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Brahma, Vishnu und Shiva', subline =>
                   'Djet- und Neheh-Zeit im Hinduismus')),
@@ -179,7 +179,7 @@
                       'Brahma, der Gott der Schöpfung, bringt die Bestandteile mit der geradlinigen Bewegung der Djet-Zeit zu neuen Dingen zusammen.'."\n".
                     'Vishnu erhält die Dinge mit der kreisförmig rotierenden Bewegung ihrer Bestandteile der Neheh-Zeit.'."\n".
                     'Und Shiva transformiert oder zerstört die Dinge mit seiner Kombination aus Djet- und Neheh-Zeit oder mit seiner rein geradlinigen Bewegung der Djet-Zeit.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Fühlen und Handeln', subline =>
                   'Djet und Neheh im Achtsamkeitsprozess')),
@@ -189,7 +189,7 @@
                     'unserer Persönlichkeitsentwicklung – dem \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozess} – und unserem Lernprozess, im Zusammenhang.'."\n",
                       'Unser Achtsamkeitsprozess regelt unsere Fortentwicklung, auf Basis unserer Stabilität und unsere Stabilität auf Basis unserer Fortentwicklung.'."\n".
                     'Er balanciert unsere Veränderung und unsere Stabilität aus und bringt damit die Djet- und Neheh-Zeit in unser Leben.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Unsere Gesichtshälften und der Achtsamkeitsprozess', subline =>
                   'Fühlen und Handeln in unseren Gehirnhälften')),
@@ -209,7 +209,7 @@
                     'wie den Achtsamkeitsprozess, zur Erklärung der Zusammenhänge heranziehen.'."\n",
                       'Hier wird die Perspektive einer \\jump{OM:SpaLeb:Home}{neuen Biophysik} eingenommen, die die Frage \\jump{OM:SpaLeb:Was-ist-Leben}{›Was ist Leben?‹} aus einer neuen, auf der Existenzfrage beruhenden Physik beantwortet.'."\n".
                     'Diese \\jump{OM:FrQFT:Home}{neue Physik} schließt das Leben mit ein, indem sie auch die Existenz von Elementarteilchen auf der Grundlage von selbstorganisierten Regelprozessen annimmt.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Unsere Balance der Körperhälften und die Gesichtsspiegelung')),
                   array( 'text', array( text => array(
@@ -222,7 +222,7 @@
                     'Und mit ihr bekommen wir dann auch eine Ahnung von der Balance oder der Imbalance zwischen unseren Gesichts- und Körperhälften.'."\n",
                       'Zum Beispiel hat sich \\jump{OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung}{Bilbo Calvez} künstlerisch ernsthaft mit der Gegenüberstellung von doppellinken und doppelrechten'."\n".
                     'Gesichtern auseinandergesetzt und dazu auch Gespräche und Interviews geführt.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Was sagt uns die Balance unserer Körperhälften?')),
                   array( 'text', array( text => array(
@@ -232,7 +232,7 @@
                     'Denn genau daran machen wir fest, ob wir ein gutes und erfülltes Leben leben oder ein nicht so gutes und unerfüllteres.'."\n",
                       'Unser Fühlen und Handeln sind aus der Balance.'."\n".
                     'Nochmehr dazu auch weiter unten.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Warum ist eine Imbalance zwischen Fühlen und Handeln ein Problem?')),
                   array( 'text', array( text => array(
@@ -241,7 +241,7 @@
                       'Handeln wir überwiegend, sind im Aktionismus verhaftet, und kommen darüber nicht dazu uns zu orientieren, ist es ebenso.'."\n".
                     'Dann haben wir zu wenig Orientierung.'."\n",
                       'Ohne Handlung finden wir allerdings auch keine gute Orientierung und ohne Orientierung finden wir auch nicht die richtige Handlung.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Lernen ist wichtig')),
                   array( 'text', array( text => array(
@@ -253,7 +253,7 @@
                     'Wie es uns geht, hängt entscheidend mit unseren \\jump{OM:SpaLeb:Vor-PerspektivW-AmbiguitaetsT-Entscheid-Demokra}{inneren und äußeren Standpunkten und deren Perspektiven} zusammen,'."\n".
                     'lehrt uns die \\jump{OM:SpaLeb:Philosophie}{Philosophie}.\\color{*Bearb}{(Verweis, Albert Kitzler, Denken heilt!)}'."\n".
                     'Und das Spiel unserer Perspektivwechsel ist mit unseren \\jump{OM:SpaLeb:Psychosomatik-Entscheidungen}{Entscheidungen und darüber mit unserer Psychosomatik} verknüpft.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Wie Yoga helfen kann')),
                   array( 'text', array( text => array(
@@ -272,7 +272,7 @@
                                                          /* text => '' */)),
                       )),
                       
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Was ist unser Leben?', subline =>
                   'Die ägyptische Mythologie vom ewigen Leben gleicht sehr dem Kundalini-Prozess des Hatha-Yoga und spiegelt den Achtsamkeitsprozess wider')),
@@ -313,7 +313,7 @@
                                                          /* text => '' */)),
                       )),
                       
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Warum zwei Schlangen anstatt einer?', subline =>
                   'Eine Bewusstmachung gegenwärtiger Imbalance')),
@@ -344,7 +344,7 @@
                     'Engel tragen Flügel, wie auch viele Teufel und Dämonen.'."\n".
                     'Drachen können auch als Schlangen, oder als Reptilien allgemein, mit Flügeln verstanden werden.'."\n".
                     'Die Bedeutung dieser und ähnlicher Schlangen und von Flügeln oder Hörnern geht offenbar Jahrtausende zurück in die Urzeiten und Mythen unserer Ahnen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
                 'Angeblicher Gegensatz zwischen Gefühl und Verstand', subline =>
                   'Kein Verstand ohne Gefühl')),
@@ -353,21 +353,26 @@
                     'differenzierter verstanden und zurechtgerückt werden.'."\n",
                       'Es gibt demnach \\jump{OM:SpaLeb:Care-Prozess:Vortext:Klaerung}{kein Verstand ohne Gefühl}:'."\n".
                     'Denn nach dem Achtsamkeitsprozess besteht unser Verstand aus unserem Denken als Handlung und den Gefühlen, die wir zu unseren Gedanken haben.'."\n",
-                      'Dem:'."\n"))),
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Dem'."\n".
+                    ''))),
 
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Ich denke, also bin ich.'."\n"),
                         addtext => '\\footnote{Internet: \\\\ \\cite{wiki:CogitoErgoSum:2019}.}')),
 
                   array( 'text', array( text => array(
-                    '… von René Descartes wird also ein:'."\n"))),
+                    'von René Descartes wird also ein'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                       'Ich fühle und handle, also bin ich.'."\n"))),
                       
                   array( 'text', array( text => array(
-                    '… vorangestellt und dadurch die Balance wieder hergestellt.'."\n",
-                      'Die Vedanta sagt \\color{*Entwick}{(angeblich)}, wie ich finde sehr passend, dazu:'."\n"))),
+                    'vorangestellt und dadurch die „Waage“ wieder feiner ausbalanciert.'."\n",
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Die Vedanta sagt \\color{*Entwick}{(angeblich)}, wie ich finde sehr passend, dazu:'."\n"))),
             
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Der Verstand ist ein guter Diener, aber ein schlechter Meister.'."\n"),
@@ -396,31 +401,13 @@
                     '(• XXX)',
                     ))),*/
                       
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:WirZweiWesen:XXX', text =>
+                  /* array( 'headline', array( jump_name => 'OM:NPYo:HaTha:WirZweiWesen:XXX', text =>
                                            
-                'XXX')),
+                'XXX')), */
                   array( 'text', array( text => array(
-                    'XXX zwei Perspektiven'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Zwei Perspektiven …'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:HaTha:HerstellungBalance'),
@@ -443,62 +430,35 @@
                     '(• XXX)',
                     ))),*/
                       
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:HerstellungBalance:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:HerstellungBalance:X', text =>
                                            
                 'Schonhaltung der Atmung')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:NPYo:HaTha:HerstellungBalance:XXX', text =>
                                            
                 'Entscheidungskampf erzeugt Verspannungen')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:NPYo:HaTha:HerstellungBalance:XXX', text =>
                                            
-                'Intensive Atemspannung löst Verspannungen der Gliedmaßen')),
+                'Intensive Aktivierung der muskulären körperlichen Grundspannung löst Verspannungen der Faszien, auch in den Gliedmaßen')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Aktivierung des \jump{OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler}{Inneren Marionettenspielers}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Aktivierung des Beckenbodens, besonders \jump{OM:SpaLeb:Psychosomatik:Innerer-Marionettenspieler}{PC-Muskel}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'lockere Aktivierung der Atemspannung, mit viel Leichtigkeit und ohne Pressen,'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'lockere Aktivierung der Grundspannung in den Gliedmaßen, im Rücken und im Gesäß'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:NPYo:HaTha:XXX'),
+                      array(  jump_name => 'OM:NPYo:Chakras-Kabbala-Tarot'),
                     )),
               )
           ); ?>

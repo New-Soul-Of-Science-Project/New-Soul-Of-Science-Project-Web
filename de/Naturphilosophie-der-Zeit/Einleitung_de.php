@@ -27,9 +27,21 @@
                     '– Ist die Geometrie also eigentlich fraktal? Was durch die Analysis, mit ihren Ableitungen und Integralen, schließlich sichtbar wird?',
                     '\\bold{\\italic{Die Umgebung um einen mathematischen Punkt ergibt sich automatisch aus der Neheh-Zeit}}',
                     '• Eine Rotation ist nur möglich, wenn Bestandteile dabei Raum greifen. Auf diese Weise greift der rotierende Punkt automatisch Raum und schafft sich so seine eigene Umgebung.',
+                    '\bold{Bezug zu alten Naturphilosophien zu Mythen und zur Spiritualität}',
+                    '\bold{\italic{Daoismus}}',
+                    '• Es gibt viele Hinweise auf große Ähnlichkeiten und strukturelle Bezüge des \jump{OM:NPYo:ExistenzLeichtigkeit}{Dao (Tao)} des Daoismus oder Zen-Buddhismus auf den \jump{OM:FrQFT:WasIstPhysik:Vortext:Veraenderung-Strukturen-hat-zwei-zeitliche-Aspekte}{Djet-Neheh-Dualismus}:',
+                    '• Im Nachwort meines \color{*Error:ColorNotFound}{Daodejing (Tao-te-king) des Laozi} wird darauf verwiesen, dass es auch Übersetzungensversuche des Dao als ›Sinn‹ oder in Bezug auf die Bibel als ›Wort‹ gibt; in Wikipedia Eintrag über das Daodejing für ›Dao‹ auch Weg, Fluss, Prinzip und Sinn und für ›De‹ auch Tugend, Güte, Integrität und innere Stärke (Charakterstärke). Ich könnte mir für ›De‹ auch Lebenskraft wie die Übersetzung von \jump{OM:SpaLeb:Psychosomatik:Vortext:Care}{›Thymos‹} vorstellen.',
+                    '– In meinen Augen hat der ›Sinn‹ immer etwas mit dem Zusammenhang zu tun, der im Djet-Neheh-Dualismus durch die strukturelle innere Rotation gegeben ist. Dadurch, worum es sich dreht.',
+                    '– Das ›Wort‹ wird im Nachwort meines \color{*Error:ColorNotFound}{Daodejing} in Bezug auf den Satz »Im Anfang war das Wort, und das Wort war bei Gott, und das Wort war Gott. Im Anfang war es bei Gott. Alles ist durch das Wort geworden und ohne das Wort wurde nichts, was geworden ist. In ihm war das Leben und das Leben war das Licht der Menschen.«\footnote[*Bearb]{Vgl. \jump[https://www.bible.com/de/bible/73/JHN.1.1-18.HFA]{}{bible.com — Johannes 1:1-18 HFA}} erwähnt.',
+                    '⋅ Ich habe irgendwo gelesen oder gehört, dass die Bibel an dieser Stelle auch anders zu übersetzen ist. Leider weiß ich gerade nicht wo. Die Übersetzung ging in die Richtung »Im Anfang war der Ton …«, wo anstatt ›Wort‹ eher auf eine Schwingung hingewiesen würde. Beides kann aber auch sich ergänzend interpretiert werden, indem nicht das menschliche ›Wort‹ gemeint ist, sondern die übermittelte resonierende Schwingung, die Information trägt. Die Übermittlung entspricht dann dem Djet-Aspekt und die Schwingung dem Neheh-Aspekt der Zeit, während die \jump{OM:SpaLeb:Information-Kommunikation}{Informationen durch die Wirkung}, also die Resonanz, zustande kommt.',
+                    '• Hat das ›De‹ auch einen zeitlichen Aspekt?',
+                    '– In Wikipedia finden wir unter Daodejing, Der Inhalt, Dao und De, einen Bezug zum Weg oder Pfad, der Wegkreuzung, der einen tieferen Einblick in den Zusammenhang mit der Götting Hekate, die auch für die Schwelle, die Weggabelung, steht. Sie hat auch einen Bezug zu den Trimurti mit der dreigesichtigen Vergangenheit, Gegenwart und Zukunft. Auch das Herz (\jump{OM:SpaLeb:Psychosomatik:Vortext:Care}{Care-Prozess}) und das Chi spielen in Wikipedia an dieser Stelle eine wichtige Rolle. Den Care-Prozess erkenne ich auch hierin wieder: \quote{Das alte Wörterbuch ›Shuowen Jiezi‹ erklärt die Bedeutung so: ›Im Äußeren den (anderen) Menschen erreichen, im Inneren das eigene Selbst erreichen.‹ Gemeint ist also der angemessene, aufrichtige, gerade, direkte Weg, zum eigenen Herzen und dem anderer, die Fähigkeit, sich selbst und anderen begenen zu können und eine echte Berührung zu ermöglichen.}. Echt genial formuliert dort.',
+                    '– Die Weggabelung wiederum ist eng mit WuWei verbunden.',
+                    '\bold{\italic{Trimurti und Hermes-Trismegistos}}',
+                    '• Hier haben Vergangenheit, Gegenwart und Zukunft einen ganz direkten Bezug zu den Aspekten der Zeit des \jump{OM:FrQFT:WasIstPhysik:Vortext:Veraenderung-Strukturen-hat-zwei-zeitliche-Aspekte}{Djet-Neheh-Dualismus}.',
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:NPT:Einleitung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPT:Einleitung:X', text =>
                                            
                 'Motivation')),
                   array( 'text', array( text => array(
@@ -49,7 +61,7 @@
                     'Deshalb hab ich mich entschlossen, die \\jump{OM:NPT:Home}{›Naturphilosophie der Zeit‹}\\footnote{Internet: \\\\ Vgl. \\cite{wiki:PhilosophieDerZeit:2015}.} auf einer eigenen Seite zu beschreiben.'."\n".
                     'Naturphilosophie\\footnote{\\const{NPT_g_footnote_text_Naturphilosophie}} deswegen, weil es vornehmlich um dynamische strukturierte Systeme in der Natur im weitesten'."\n".
                     'Sinn geht, auch wenn sich damit ebenso bestimmte, rein formale Systeme der Mathematik untersuchen lassen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPT:Einleitung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPT:Einleitung:X', text =>
                                            
                 'Feststellung (oder doch eine Hypothese oder ein Existenzprinzip?)')),
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -65,21 +77,12 @@
                         'Jedes System kann als zu einem größeren System gehörend verstanden werden.',
                         'Ob ein Bestandteil einem System zugeordnet werden kann ist nur feststellbar, wenn sich das System verändert, während der Bezug zum System erhalten bleibt.',
                         'Eine Veränderung, über die das System stabil bleibt, entspricht der Zeit des Systems.',
-                        'XXX',
-                        'XXX',
-                        'XXX',
+                        '\color{*Bearb}{(In Arbeit …)}',
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPT:Einleitung:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:NPT:Einleitung:X', text =>
                                            
                 'Hypothese')),
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -111,26 +114,15 @@
                         'Diese dauerhafte „Bewegung“ entspricht der Bewegung des Lichts in der Lichtuhr, der Lichtgeschwindigkeit im Raum.'."\n"))),
                   array( 'text', array( text => array(
                     'Eine zyklische, räumliche Bewegung der Bestandteile eines Systems bedeutet eine geschlossene Bewegung relativ zum Schwerpunkt des Systems.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPT:Einleitung:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:NPT:Einleitung:X', text =>
                                            
                 'Schlussfolgerung')),
                   array( 'text', array( text => array(
-                    'Wenn die Hypothese zutrifft und Zeit immer etwas mit Struktur und deren Veränderung zu tun hat, dann lassen sich folgende Feststellungen treffen:'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Wenn die Hypothese zutrifft und Zeit immer etwas mit Struktur und deren Veränderung zu tun hat, dann lassen sich folgende Feststellungen treffen:'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                     
                   array( 'jumplist', array(
                       //array(  jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz'),
@@ -152,8 +144,8 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{XXX}',
-                    // '• XXX',
+                    // '\\bold{X}',
+                    // '• X',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -164,7 +156,7 @@
                     'dann auf die Schnittpunkte mit der Zahlenachse reduziert wird, bei denen die Welle einem durch ist.'."\n".
                     'Zum anderen kam mir aufgrund meiner Beschäftigung mit dem Djet-Neheh-Dualismus die Frage, ob es nicht sogar eine Schwingung in Form'."\n".
                     'einer dreidimensionalen Helixspirale war, die auf die gerade erklärte Weise auf die Zahlenachse als Punkte auf den natürlichen Zahlen implizit projiziert wird, wenn wir vom Zählen sprechen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPT:Einleitung:Arithmetik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPT:Einleitung:Arithmetik:X', text =>
                       
                 'Diese Frage stellte sich uns schon bei der Erforschung der Biordinalzahlen', subline =>
                   '')),
@@ -172,38 +164,23 @@
                     'Bei einer tiefen Beschäftigung mit dem Zählen im Zusammenhang mit der Erweiterung der Ordinalzahlen ins Negative durch die \\jump{OM:BiOrd:Einleitung}{Biordinalzahlen}'."\n".
                     'begegnen wir einer \\jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{fundamentalen Asymmetrie}.'."\n".
                     'Diese wird eben genau dadurch gut Verständlich, wenn wir uns das Zählen als Schwingungsprozess vorstellen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPT:Einleitung:Arithmetik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPT:Einleitung:Arithmetik:X', text =>
                       
                 'Die mögliche verborgene Struktur des Zählens enthält eine Verbindung zur Bewegung im Kreis und auf einer Geraden', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Wenn es diese verborgene Struktur hinter dem Zählen gibt, dann XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPT:Einleitung:Arithmetik:XXX', text =>
+                    'Wenn es diese verborgene Struktur hinter dem Zählen gibt, dann \color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:NPT:Einleitung:Arithmetik:X', text =>
                       
-                'XXX', subline =>
+                '\color{*Bearb}{(In Arbeit …)}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SupNum:XXX'),
+                      //array(  jump_name => 'OM:SupNum:X'),
                     )),
               )
           ); ?>

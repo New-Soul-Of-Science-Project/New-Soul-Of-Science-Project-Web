@@ -3,10 +3,18 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 16.02.2024, 20:00h
+  // #: Stand: 03.09.2024, 11:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20240903:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\Rightarrow  ' -> '\;\;\;\overset{\mspace{-3.5mu}?}{\Rightarrow}\;\;\;'
+  //           20240604:  +:  New in "$Sc_g_equation_replace_ary":  '.\langle' -> '.\!\langle',  '\rangle .' -> '\rangle\!.',  '.\left\langle' -> '.\!\left\langle',  '\right\rangle .' -> '\right\rangle\!.'
+  //           20240516:  +:  "MathJax":  Add Macro "S" for "\S" to generate a non italic "S" for irrational algebraic coefficients useful for set S.
+  //           20240305:  +:  "MathJax":  Add Macro "Ir" for "\Ir" to generate a non italic "Ir" for irrational algebraic coefficients.
+  //                      +:  "MathJax":  Add Macro "N" for "\N" to generate a non italic "N" for natural superial numbers.
+  //                      +:  "MathJax":  Add Macro "P" for "\P" to generate a non italic "P" for prime superial numbers.
+  //                      +:  "MathJax":  Add Macro "R" for "\R" to generate a non italic "R" for algebraic coefficients.
+  //                      +:  "MathJax":  Add Macro "Z" for "\Z" to generate a non italic "Z" for whole superial numbers.
   //           20240216:  >:  "Sc_f_equation_list": Add possibility to have no label on a formula by setting "label_text => ''"
   //           20240129:  +:  "$Sc_g_equation_replace_ary":  '  :\in  ' -> '\;\;\;:\in\;\;\;' is new.
   //           20240121:  !:  "$Sc_g_Text_replace_preg_ary": Add entry "\lm{}" as short of "\latexmath{}".
@@ -222,9 +230,16 @@
     echo '        TeX: {'."\n";
     echo '          extensions: ["color.js"],'."\n";
     echo '          Macros: {'."\n";
-    echo '            i: "\\\\mathrm{i}",'."\n"; // imaginary unit
-    echo '            s: "\\\\mathrm{s}",'."\n"; // superial unit
     echo '            e: "\\\\mathrm{e}",'."\n"; // Euler number
+    echo '            i: "\\\\mathrm{i}",'."\n"; // imaginary unit
+    echo '            Ir: "\\\\mathrm{Ir}",'."\n"; // for irrational algebraic coefficients
+    echo '            N: "\\\\mathrm{N}",'."\n"; // for natural superial numbers
+    echo '            P: "\\\\mathrm{P}",'."\n"; // for prime superial numbers
+    echo '            R: "\\\\mathrm{R}",'."\n"; // for algebraic coefficients
+    echo '            s: "\\\\mathrm{s}",'."\n"; // superial unit
+    echo '            S: "\\\\mathrm{S}",'."\n"; // for algebraic coefficients useful for set S
+    echo '            Z: "\\\\mathrm{Z}",'."\n"; // for whole superial numbers
+    echo '            rad: "\\\\mathrm{rad}",'."\n"; // for radikal of
     echo '            llangle: "\\\\langle \\\\mspace{-3.5mu} \\\\langle",'."\n";
     echo '            rrangle: "\\\\rangle \\\\mspace{-3.5mu} \\\\rangle",'."\n";
     echo '            lOpera: "\\\\langle \\\\mspace{-2.2mu} \\\\raise -.375ex {\\\\tiny{\\\\text{-}}} \\\\mspace{-1.0mu}",'."\n";
@@ -636,6 +651,7 @@
   // #: The order of entries may be important: As example see first ' + '-> ' \;+\; ' and than '+' -> '%2B'.
   $Sc_g_equation_replace_ary = array(
                                     // #: Arrange space around symbols and save chars.
+                                    array( '  ?\Rightarrow  ', '\;\;\;\overset{\mspace{-3.5mu}?}{\Rightarrow}\;\;\;'),
                                     array( '  \Rightarrow  ', '\;\;\;\Rightarrow\;\;\;'),
                                     array( '  \Leftrightarrow  ', '\;\;\;\Leftrightarrow\;\;\;'),
                                     array( '  \land  ', '\;\;\;\land\;\;\;'),
@@ -688,6 +704,10 @@
                                     array( '|*', '\right|'),
                                     array( '*\langle', '\left\langle'),
                                     array( '*\rangle', '\right\rangle'),
+                                    array( '.\left\langle', '.\!\left\langle'),
+                                    array( '\right\rangle .', '\right\rangle\!.'),
+                                    array( '.\langle', '.\!\langle'),
+                                    array( '\rangle .', '\rangle\!.'),
                                     array( '(  ', '(\; '),
                                     array( '  )', ' \;)'),
                                     array( '\left(  ', '\left(\; '),

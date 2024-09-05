@@ -13,32 +13,14 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '\\bold{Operator \\term{-2}}',
+                    '\\bold{Operator \lm{ -2 }}',
                     '• Ändert grundsätzlich nichts.',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Konstanzoperator:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Konstanzoperator:Vortext:X', text =>
                                            
                 'Was ist der Minus-Zwei-Operator?', subline =>
                   '')),
@@ -81,7 +63,7 @@
                     'Auf die philosophische und auch physikalische Bedeutung, kommen wir im weiteren Verlauf'."\n".
                     'noch zu sprechen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Konstanzoperator:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Konstanzoperator:Vortext:X', text =>
                                            
                 'Der Beginn des Zählens', subline =>
                   'Wie kommen wir von den kleinen, neutralen Operatoren zum Zählen?')),
@@ -98,16 +80,11 @@
                   array( 'text', array( text => array(
                     'Ohne diesen ersten Funken des Lichts, scheinbar aus dem Nichts, tut sich nichts!'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Konstanzoperator:Vortext:XXX', text =>
+                  /* array( 'headline', array( jump_name => 'OM:OT:Konstanzoperator:Vortext:XXX', text =>
                                            
-                'XXX')),
+                'XXX')), */
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                     
                   array( 'jumplist', array(
@@ -129,14 +106,10 @@
                     )),
                   
                   array( 'text', array( text => array(
-                    'Verweis auf das Hauptkapitel zu neutralen Elementen …'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Verweis auf das Hauptkapitel zu neutralen Elementen …'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:OT:Einleitung:Neutrale-Elemente:X', text =>
                                            
                 'Neutrale Elemente des Minus-Zwei-Operators', subline =>
                   '')),
@@ -283,7 +256,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:OT:Einleitung:Eigenschaften'),
+                      array(  jump_name => 'OM:OT:Modulo-Operatoren'),
                     )),
                 )
           ); ?>

@@ -14,8 +14,8 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{XXX}',
-                    // '• XXX.',
+                    // '\\bold{X}',
+                    // '• X.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -29,13 +29,13 @@
                     'Zusammenhänge mit (natur-)philosophischen Prinzipien nicht ergründen und zur möglichen Lösung der Probleme heranziehen.'."\n",
                       'Die Zusammenhänge, die mir aufgefallen sind, möchte ich nun beleuchten.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:X', text =>
                       
                 'Yin und Yang oder Taiji (Tai Chi)', subline =>
                   '')),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\\bold{XXX}',
+                    // '\\bold{X}',
                     '• Das Yin und Yang Symbol kann auch als vereinfachtes Symbol – eine Projektion in 2D – der Kundalini-Schlangen des \\jump{OM:SpaLeb:Psychosomatik:Vortext:Fig-Kundalini-Prozess}{Kundalini-Prozesses} oder der des \\jump{OM:NPYo:HaTha:Vortext:Fig-Hermesstab}{Hermesstabs} gesehen werden.',
                     ))),
                       
@@ -66,7 +66,7 @@
                     'Zusammenhänge, die durch Rotationen auf Abstand gehalten werden – umeinander herumfließen –, erzeugen eine Stabilität.'."\n".
                     'Dies ist sehr wichtig für ein leichtes Leben.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:X', text =>
                       
                 'Qi und Dao – der Link zur Physik', subline =>
                   'Wirkungsquanten als Energieeinheiten und das Existenzprinzip des Djet-Neheh-Dualismus als ordnendes Gesetz')),
@@ -85,7 +85,7 @@
                     'und dann auch die materiellen Dinge in unglaublicher Mannigfaltigkeit zur konkreten Existenz.'."\n",
                       'All dies tut das Qi nach den Prinzipien des Dao und damit nach denen des Djet-Neheh-Dualismus.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:X', text =>
                       
                 'Acht Trigramme des I Ging', subline =>
                   'Der erste Symmetriebruch')),
@@ -114,7 +114,7 @@
                     'Kreist das klassische Yin-Yang-Symbol, dann überstreift es all die Polarisationsrichtungen des I Ging der Xiantian-Anordnung.'."\n".
                     'Die Xiantian-Anordnung des I Ging ist also eine Variante des dynamisch gedachten Yin-Yang-Symbols.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:X', text =>
                       
                 'Yin und Yang mit dem I Ging vereint', subline =>
                   '')),
@@ -128,7 +128,7 @@
                                                          /* text => '' */)),
                       )),
                       
-                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:X', text =>
                       
                 'Yin und Yang und I Ging in den Grundlagen der Physik', subline =>
                   'Alle Existenz beruht auf einer Balance zwischen Stabilität und Fortentwicklung')),
@@ -224,7 +224,7 @@
                     ''))),
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:X', text =>
                       
                 'Stabilisierende Regelprozesse', subline =>
                   'Dynamik hält die Gegensatzpole stabil auseinander')),
@@ -243,7 +243,7 @@
                       'Unter anderem dieses Gleichgewicht dieser natürlichen Regelprozesse ist in meinen Augen im Taijitu, im Yin-Yang-Symbol, dargestellt.'."\n".
                     // 'Regelprozesse lassen etwas in ihnen, eine Struktur oder einen Wert, auf einem bestimmten Pfad schwingend laufen, auf dem die Wirkung optimiert ist.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:X', text =>
                       
                 'Unser Leben und sein Care-Prozess/Achtsamkeitsprozess', subline =>
                   'Eine Balance aus Stabilität und Fortentwicklung bestimmt unser Leben')),
@@ -268,7 +268,7 @@
                       'wir eine gute Balance zwischen Stabilität und Fortentwicklung haben, die sich in unserem gut funktionierenden Achtsamkeitsprozess ausdrückt.'."\n".
                     'Darum geht es im Folgenden bei Wu Wei.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:X', text =>
                       
                 'Wu Wei', subline =>
                   'Im Fluss sein – Gelassen sein und im rechten Moment handeln')),
@@ -293,7 +293,7 @@
                   // #!: Auch auf der NaPhil-Yoga-Existenz-Leichtigkeit-Seite! (OM:NPYo:ExistenzLeichtigkeit)
                   array( 'text', array( Shape => 'italic', text => array(
                         'Nur wer etwas gleichzeitig festhalten und loslassen kann, \\\\'."\n".
-                        'der hat die Magie, Dinge zum Schweben zu bringen.'."\n"))),
+                        'hat die Magie, Dinge zum Schweben zu bringen.'."\n"))),
                       
                   array( 'text', array( text => array(
                     'Dies gelingt zum Beispiel durch geduldige Beobachtung, dem Lernen die Situation einzuschätzen, unserem Gefühl und unseren Fähigkeiten zu vertrauen und dem Erkennen,'."\n".
@@ -301,7 +301,7 @@
                       'Dinge in der Schwebe zu halten, bedeutet, sich nicht endgültig zu entscheiden, solange dies nicht notwendig oder wichtig erscheint.'."\n".
                     'Es setzt voraus zu lernen, das Dinge, die als widersprüchlich erscheinen, im Sinne des In-Der-Schwebe-Haltens nicht widersprüchlich sind.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:X', text =>
                       
                 'Achtsamkeit', subline =>
                   'Wie diese Geduld aufbringen? Wie unseren Fähigkeiten vertrauen?')),
@@ -337,34 +337,9 @@
                     'und der daher wenig Energieaufwand kostet, energetisch optimiert ist.'."\n".
                     'Nur, wenn wir erkennen, dass es sich lohnt zusätzliche Energie aufzuwenden von diesem Pfad abzuweichen, tun wir dies.'."\n".
                     ''))),
-                  /*%! array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Vortext:XXX', text =>
-                      
-                'XXX', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))), */
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:NPYo:Spiritualitaet-Psychologie'),
+                      array(  jump_name => 'OM:NPYo:ExistenzLeichtigkeit:Pleroma-Plenum-Vakuum'),
                     )),
                 )
           ); ?>
@@ -375,49 +350,26 @@
 		    	<!  • Pleroma, Plenum und Vakuum  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:ExistenzLeichtigkeit:Pleroma-Plenum-Vakuum',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:FrQFT:XXX', type => 'back'),
+                      array(  jump_name => 'OM:NPYo:ExistenzLeichtigkeit', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '\\bold{Musivisches Pflaster}',
-                    '• Siehe \\jump[https://www.youtube.com/watch?v=gHVYGWqDZyM]{}{Charles Fleischhauer – Geheimnisvolle Geschichte — Heilige Spiele - Vom Schach bis zum I Ging}',
-                    '• Siehe \\jump[https://www.freimaurer-wiki.de/index.php/Musivisches_Pflaster]{}{Freimaurer Wiki — Musivisches Pflaster}',
+                    '\bold{Musivisches Pflaster}',
+                    '• Siehe \jump[https://www.youtube.com/watch?v=gHVYGWqDZyM]{}{Charles Fleischhauer – Geheimnisvolle Geschichte — Heilige Spiele - Vom Schach bis zum I Ging}',
+                    '• Siehe \jump[https://www.freimaurer-wiki.de/index.php/Musivisches_Pflaster]{}{Freimaurer Wiki — Musivisches Pflaster}',
+                    '• \jump[https://de.wikipedia.org/wiki/Pleroma]{}{Pleroma}, \jump[https://de.wikipedia.org/wiki/Plenum]{}{Plenum}, Unterbewusstsein, Unbewusstsein: Das Potenzial der Welt, unseres Lebens.',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Zur Definition für'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:ExistenzLeichtigkeit:XXX:XXX', text =>
-                      
-                'XXX', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Zur Definition für …'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:FrQFT:XXX'),
+                      array(  jump_name => 'OM:NPYo:Spiritualitaet-Psychologie'),
                     )),
               )
           ); ?>

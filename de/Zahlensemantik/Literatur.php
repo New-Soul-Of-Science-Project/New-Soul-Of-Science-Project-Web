@@ -11,11 +11,10 @@
       <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:ZS:Home'); ?>
 
 	
-          <?php Sc_g_litera_make( array(  'Freistetter:DieFreiheitDerImaginaerenZahlen:2016',
-                                          'Freistetter:DieFreiheitDerMathematik:2016',
-                                          'Plichta:GottesGeheimeFormel:1995',
-                                          'wiki:Primorial:2015',
-                                        )); ?>
+          <?php
+            Sc_g_litera_make( array(
+              // 'Freistetter:DieFreiheitDerImaginaerenZahlen:2016',
+            )); ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

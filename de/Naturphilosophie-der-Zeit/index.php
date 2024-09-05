@@ -29,8 +29,9 @@
                     ''))),
                       
                   // #!: Auch auf der NSOSP-Seite! (OM:nSOSp:Home)
-                  // #!: Auch auf der Spannungsspiel des Lebens Seite! (OM:NPT:Home)
-                  // #!: Auch auf der Naturphilosophie-der-Zeit-Seite! (OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik)
+                  // #!: Auch auf der ›Spannungsspiel des Lebens‹ Seite! (OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik)
+                  // #!: Auch auf der „Naturphilosophie der Zeit“ Seite! (OM:NPT:Home)
+                  // #!: Auch auf der „Die arithmetische Struktur der Geometrie“ Seite! (OM:SupNum:Struktur-Geometrie)
                   array( 'text', array( Shape => 'italic', text => array(
                         'Mathematik beginnt dort, \\\\ '."\n".
                         'wo wir das Eine vom Anderen unterscheiden können. \\\\ '."\n".
@@ -49,7 +50,7 @@
                     'und uns ihrer bewusst zu sein.'."\n".
                     'Kategorisieren ist dann der Prozess des Vergleichens.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:X', text =>
                       
                 'Das Zählen', subline =>
                   '')),
@@ -63,7 +64,7 @@
                     'Gruppen von Dingen einteilbar sind.'."\n".
                     'Dies ist die Geburt der Arithmetik.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:X', text =>
                       
                 'Rhythmen', subline =>
                   '')),
@@ -73,7 +74,7 @@
                     'ändert sich ja nicht.'."\n".
                     'Er ist also konstant.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:X', text =>
                       
                 'Zeit', subline =>
                   '')),
@@ -87,7 +88,7 @@
                     'Das Zählen, inklusive der mit ihm verbundene Arithmetik, trägt schon den'."\n".
                     '\\italic{Djet-Neheh-Dualismus} in sich.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:X', text =>
                       
                 'Räumliche Veränderung', subline =>
                   '')),
@@ -98,7 +99,7 @@
                     'bewusst werden, kommen wir ums Vergleichen von Strukturen und der Beurteilung ihrer'."\n".
                     'inneren Zusammenhänge nicht umhin.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:X', text =>
                       
                 'Das Existenzprinzip', subline =>
                   '')),
@@ -115,7 +116,7 @@
                     'damit zum Djet-Aspekt der Zeit.'."\n",
                       'Dieses Prinzip nenne ich das \\italic{Existenzprinzip}.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:X', text =>
                       
                 'Djet und Neheh stellen einen orthogonalen Dualismus dar', subline =>
                   '')),
@@ -128,7 +129,7 @@
                     'In Ergänzung beider ergibt sich eine konstante helixförmige Spiralbewegung um ein Zentrum, dass sich'."\n".
                     'gradlinig durch den Raum bewegt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:X', text =>
                       
                 'Fundierung einer neuen Theorie der vereinheitlichten Physik', subline =>
                   '')),
@@ -143,7 +144,7 @@
                     'zu geschlossenen Fäden, sogenannten Strings, verbinden.'."\n".
                     'Diese sind aber nicht mit den Strings der Stringtheorie identisch.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:X', text =>
                       
                 'Physikalisch räumliche Regelprozesse', subline =>
                   '')),
@@ -157,7 +158,7 @@
                     'Bei räumlichen Regelprozessen schwingen Strukturen, die, wenn sie sich durch den Raum bewegen,'."\n".
                     'eine Helixspiralbahn beschreiben, die auch Schleifen haben kann.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPT:Home:Vortext:X', text =>
                       
                 'Biologische Regelprozesse', subline =>
                   '')),
@@ -190,7 +191,7 @@
                     '\\\\'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
-                      array( title => '\\color{*ContentItemDisabled}{Video Tour (geplant)}', startsign => '', //jumpname => 'XXX',
+                      array( title => '\\color{*ContentItemDisabled}{Video Tour (geplant)}', startsign => '', //jumpname => 'X',
                                 description => 'die YouTube-Vorträge'),
                       array( title => '\\color{*ContentItemDisabled}{Vorwort (geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => 'was mich bewegt – was ich bewegen möchte'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
@@ -225,10 +226,10 @@
             <br>
           
             <table border="0"> <colgroup> <col width="22"> <col width="300"> <col width="16"> <col width="362"> </colgroup>
-              <tr> <td valign="top">&rarr;</td> <td valign="top"><!a href="../de/XXX">
-              XXX<!/a> <span style="color: #A0A0A0">(geplant)</span></td> <td valign="top" style="color: #A0A0A0">
+              <tr> <td valign="top">&rarr;</td> <td valign="top"><!a href="../de/X">
+                (In Arbeit …)<!/a> <span style="color: #A0A0A0">(geplant)</span></td> <td valign="top" style="color: #A0A0A0">
                   &hellip;</td> <td valign="top" style="color: #A0A0A0">
-                  XXX</td> </tr>
+                    (In Arbeit …)</td> </tr>
             </table>
           <?php To_f_headline_add_hides_end( '          ', 'hideContent'); ?>
 

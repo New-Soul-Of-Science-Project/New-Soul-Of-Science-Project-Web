@@ -2,7 +2,7 @@
         include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
 
 
-<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:FrQFT:XXX-Notizen'); ?>
+<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:FrQFT:X-Notizen'); ?>
 
 
       <?php FrQFT_f_Div_Header( '      '); ?>
@@ -48,7 +48,7 @@
 		    	<!  • Higgs-Feld entspricht einem Äther:  >
 		    	<!    • XXX  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:FrQFT:XXX-Notizen:Higgs-Feld-Aether',
+            'OM:FrQFT:X-Notizen:Higgs-Feld-Aether',
               'Eine andere Interpretation des Michelson-Morley-Experiments ist notwendig', 'Sc_f_Paragraph',
                 array(
                   array( 'text', array( text => array(
@@ -98,7 +98,7 @@
 		    	<!  • Problem der fehlenden Gravitation der Vakuumenergie:  >
 		    	<!    • XXX  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:FrQFT:XXX-Notizen:Problem-der-fehlenden-Gravitation-der-Vakuumenergie',
+            'OM:FrQFT:X-Notizen:Problem-der-fehlenden-Gravitation-der-Vakuumenergie',
               'Die in der Struktur des Vakuums verborgene Gravitation', 'Sc_f_Paragraph',
                 array(
                   array( 'text', array( text => array(
@@ -150,7 +150,7 @@
 		    	<!  • Alte Einleitung  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:FrQFT:XXX-Notizen:Alte-Einleitung',
+            'OM:FrQFT:X-Notizen:Alte-Einleitung',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'text', array( text => array(
@@ -195,7 +195,7 @@
           <!  • Neue Physik: alter Vortext  >
 		    	<!    • XXX  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:FrQFT:XXX-Notizen:NeuePhysik-AlterVortext',
+            'OM:FrQFT:X-Notizen:NeuePhysik-AlterVortext',
               'Bewegung macht Zeit', 'Sc_f_Paragraph',
                 array(
                   array( 'bulletlist', array( bullet_ary => array(
@@ -217,10 +217,10 @@
                     'das Hauptproblem zu finden und darauf zu vertrauen, dass durch dessen geschickte Lösung am Ende auch alle anderen Probleme verschwinden. \\\\'."\n".
                     'Für mich stellt das sogenannte \\jump{OM:FrQFT:NotwenVereinheit:Problem-der-Zeit}{›Problem der Zeit‹}\\footnote{Vgl. \\cite{Kiefer:WegZurQG2012}, S. 37.}'."\n".
                     'das Hauptproblem dar.'."\n".
-                    'Es sagt aus, dass es \\jump{OM:FrQFT:XXX-Notizen:NeuePhysik-Loesung-des-Problems-der-Zeit}{zwei unterschiedliche Arten von Zeit} braucht, um die Quantenmechanik'."\n".
+                    'Es sagt aus, dass es \\jump{OM:FrQFT:X-Notizen:NeuePhysik-Loesung-des-Problems-der-Zeit}{zwei unterschiedliche Arten von Zeit} braucht, um die Quantenmechanik'."\n".
                     'mit der Allgemeinen Relativitätstheorie zu vereinheitlichen.'."\n"),
                   array( 'normal',
-                    'Die \\jump{OM:FrQFT:XXX-Notizen:NeuePhysik-Loesung-des-Problems-der-Zeit}{Lösung des ›Problems der Zeit‹} ist nach meiner Meinung dann möglich, wenn man die Grundlage'."\n".
+                    'Die \\jump{OM:FrQFT:X-Notizen:NeuePhysik-Loesung-des-Problems-der-Zeit}{Lösung des ›Problems der Zeit‹} ist nach meiner Meinung dann möglich, wenn man die Grundlage'."\n".
                     'von Raum und Zeit auf Bewegung basiert, ähnlich wie die Spezielle Relativitätstheorie\\color{*Bearb}{(Link)}\\footnote{\\const{FrQFT_g_footnote_text_SRT}} dies über die konstante Lichtgeschwindigkeit tut.'."\n".
                     'Es braucht dazu dann zwei Komponenten von Bewegung, um beide benötigte Arten von Zeit zu erzeugen.'."\n"),
                   array( 'jumplist',
@@ -234,7 +234,7 @@
 		    	<!  • Neue Physik: Lösung des Problems der Zeit  >
 		    	<!    • XXX  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:FrQFT:XXX-Notizen:NeuePhysik-Loesung-des-Problems-der-Zeit',
+            'OM:FrQFT:X-Notizen:NeuePhysik-Loesung-des-Problems-der-Zeit',
               'Bewegung macht Zeit', 'Sc_f_Paragraph',
                 array(
                   array( 'normal',
@@ -248,18 +248,18 @@
                     'Wohingegen die Quantenmechanik auf einer Zeit beruht, die an jedem Ort im Raum gleich schnell abläuft.\\color{*Bearb}{(Verweis)}'."\n"),
                   array( 'normal',
                     'Die Lösung des ›Problems der Zeit‹ beruht darauf, die verschiedenen Aspekte der Zeit als Bewegungskomponenten von sich mit konstanter Geschwindigkeit in Form einer'."\n".
-                    'helixförmigen Spiralbahn bewegender Fundamentalteilchen zu begreifen (siehe \\jump{OM:FrQFT:XXX-Notizen:NeuePhysik-Fig-Elapson}{Abbildung 1}).\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 3.2 Ansatz der Realisierung der Grundannahmen, S. 41-48, hier S. 43. Wirkungsquanten werden dort noch als Gravitonen bezeichnet.}'."\n".
+                    'helixförmigen Spiralbahn bewegender Fundamentalteilchen zu begreifen (siehe \\jump{OM:FrQFT:X-Notizen:NeuePhysik-Fig-Elapson}{Abbildung 1}).\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, Kap. 3.2 Ansatz der Realisierung der Grundannahmen, S. 41-48, hier S. 43. Wirkungsquanten werden dort noch als Gravitonen bezeichnet.}'."\n".
                     'Die Abbildung zeigt anhand eines von mir als \\italic{Elapson} benannten Teilchens, welches als Prototyp eines Lichtteilchens – eines Photons – zu verstehen ist,'."\n".
                     'wie sich seine von mir Wirkungsquanten getauften Fundamentalteilchen zu ringförmigen \\jump{OM:FrQFT:Elementarteilchen}{Strings} organisieren und durch den Raum bewegen.'."\n"),
                   array( 'figure',
-                    array_merge( $FrQFT_g_figure_ary_Elapson, array( name => 'OM:FrQFT:XXX-Notizen:NeuePhysik-Fig-Elapson'))),
+                    array_merge( $FrQFT_g_figure_ary_Elapson, array( name => 'OM:FrQFT:X-Notizen:NeuePhysik-Fig-Elapson'))),
                   array( 'normal',
                     'Ringförmige oder auch elliptische Strings bewegen sich in der Quanten-Fluss-Theorie immer mit der am Ort geltenden Lichtgeschwindigkeit im dreidimensionalen Raum.'."\n".
                     'Diese variable Lichtgeschwindigkeit entspricht jener, welche man in Bezug auf den dreidimensionalen Raum aus der'."\n".
                     'Allgemeinen Relativitätstheorie kennt.\\color{*Bearb}{(Verweis)}'."\n".
                     'Sie wird umso geringer, je stärker der Einfluss der Gravitation ist – das \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{Licht wird verlangsamt}.'."\n"),
                   array( 'normal',
-                    'Die \\jump{OM:FrQFT:XXX-Notizen:NeuePhysik-Elapson}{Abbildung 1} zeigt, dass die Geometrie der Bewegung aus drei Geschwindigkeitskompontenen besteht:\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, 4.1.2 Geometrie der spiralförmigen Graviton-Bewegung, S. 55-56. Wirkungsquanten werden dort noch als Gravitonen bezeichnet.}'."\n"),
+                    'Die \\jump{OM:FrQFT:X-Notizen:NeuePhysik-Elapson}{Abbildung 1} zeigt, dass die Geometrie der Bewegung aus drei Geschwindigkeitskompontenen besteht:\\footnote{Vgl. \\cite{Huss:GFTv7.381j2012}, 4.1.2 Geometrie der spiralförmigen Graviton-Bewegung, S. 55-56. Wirkungsquanten werden dort noch als Gravitonen bezeichnet.}'."\n"),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Die Bahngeschwindigkeit der Wirkungsquanten \\term{v__{wq}} ist hier als die grundlegende Geschwindigkeit zu verstehen.'."\n".
                           'Sie kann zunächst als konstant betrachtet werden.',
@@ -278,15 +278,15 @@
                   array( 'normal',
                     'Dies kommt einem prozessualen Verständnis von Zeit gleich, wie im weiteren Verlauf deutlich wird.'."\n".
                     'Die konstante Bahngeschwindigkeit der Wirkungsquanten gibt die notwendige, überall im Raum gleich laufende'."\n".
-                    'Zeit der Quantenmechanik vor (siehe \\jump{OM:FrQFT:XXX-Notizen:NeuePhysik-Fig-Wirkungsquanten-Bewegungsraum}{Abbildung 2}).'."\n"),
+                    'Zeit der Quantenmechanik vor (siehe \\jump{OM:FrQFT:X-Notizen:NeuePhysik-Fig-Wirkungsquanten-Bewegungsraum}{Abbildung 2}).'."\n"),
                   array( 'figure',
-                    array_merge( $FrQFT_g_figure_ary_WqBewRaum, array( name => 'OM:FrQFT:XXX-Notizen:NeuePhysik-Fig-Wirkungsquanten-Bewegungsraum'))),
+                    array_merge( $FrQFT_g_figure_ary_WqBewRaum, array( name => 'OM:FrQFT:X-Notizen:NeuePhysik-Fig-Wirkungsquanten-Bewegungsraum'))),
                   array( 'normal',
                     'Die variable Lichtgeschwindigkeit ist als flexible Zeit der Allgemeinen Relativitätstheorie zu verstehen,'."\n".
                     'welche die von Ort zu Ort im Raum unterschiedlich ablaufenden Alterungsprozesse\\color{*Bearb}{(Verweis)} steuert.'."\n".
-                    'Die Geschwindigkeit eines Alterungsprozesses hängt dabei direkt davon ab, wie eng die Spiralen am jeweiligen Ort gewickelt sind (siehe \\jump{OM:FrQFT:XXX-Notizen:NeuePhysik-Fig-Gekruemmter-Licht-Bewegungsraum}{Abbildung 3}).'."\n"),
+                    'Die Geschwindigkeit eines Alterungsprozesses hängt dabei direkt davon ab, wie eng die Spiralen am jeweiligen Ort gewickelt sind (siehe \\jump{OM:FrQFT:X-Notizen:NeuePhysik-Fig-Gekruemmter-Licht-Bewegungsraum}{Abbildung 3}).'."\n"),
                   array( 'figure',
-                    array_merge( $FrQFT_g_figure_ary_LichtBewRaum, array( name => 'OM:FrQFT:XXX-Notizen:NeuePhysik-Fig-Gekruemmter-Licht-Bewegungsraum'))),
+                    array_merge( $FrQFT_g_figure_ary_LichtBewRaum, array( name => 'OM:FrQFT:X-Notizen:NeuePhysik-Fig-Gekruemmter-Licht-Bewegungsraum'))),
                   array( 'normal',
                     'Unter der Voraussetzung, dass im Durchschnitt des Kosmos die Rotationsgheschwindigkeit und die Translationsgeschwindigkeit'."\n".
                     'der Spiralbahn beide der konstanten Lichtgeschwindigkeit entsprechen, spiegelt die Rotationsgeschwindigkeit'."\n".
@@ -333,7 +333,7 @@
 		    	<!  • Sonnensystem und moderne Physik  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:FrQFT:XXX-Notizen:Sonnensys-und-moderne-Physik',
+            'OM:FrQFT:X-Notizen:Sonnensys-und-moderne-Physik',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'text', array( text => array(
@@ -395,10 +395,10 @@
           ); ?>
 
 
-		    	<!  • XXX  >
+		    	<!  • X  >
           <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:FrQFT:XXX-Notizen:XXX',
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:FrQFT:X-Notizen:X',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'text', array( text => array(
@@ -428,7 +428,7 @@
                       //array(  jump_name => 'XXX'),
                     )),
               )
-          ); ?>
+          ); */ ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

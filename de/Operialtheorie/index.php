@@ -15,12 +15,26 @@
                 array(
                   array( 'text', array( text => array(
                     'Es gibt einen systematischen Zusammenhang zwischen den arithmetischen Operatoren:'."\n".
-                    'Die Addition, die Multiplikation und die Exponentialrechnung gehen auf gleiche Weise auseinander hervor,'."\n".
-                    'vom ersten (+) über den zweiten (⋅) bis zum dritten (^).'."\n".
-                    'Dadurch werden diese Operatoren zählbar.'."\n".
-                    'Es stellt sich heraus, dass der Vorgänger-Operator der Addition tatsächlich das Zählen selber ist.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Die Addition, die Multiplikation und die Exponentialrechnung gehen auf gleiche Weise auseinander hervor;'."\n".
+                    'vom ersten Operator Plus „\lm{ + }“ über den zweiten Operator Mal „\lm{ \cdot }“ bis zum dritten Operator Hoch „\lm{ ↑ }“.'."\n".
+                    'Dadurch werden diese Operator-Arten zählbar und wir können über diese Systematik weitere finden.'."\n",
+                      'Aus verschiedenen Gründen lohnt es sich, uns hiermit zu beschäftigen.'."\n",
+                      'Wir ermitteln so den Vorgängeroperator der Addition und dieser ist tatsächlich das Zählen selber.'."\n".
+                    'Er kann uns zum Beispiel etwas über die Zeit lehren und über Existenz,'."\n".
+                    'denn wir können ihn so interpretieren, dass der gegenwärtige Zähl- oder Zeitschritt nur dann konstant bleibt,'."\n".
+                    'wenn der nächste Schritt noch nicht existiert.'."\n".
+                    'Existiert dort etwas in der Zukunft, dann ist schon weitergezählt.'."\n".
+                    'So ist der Zähloperator in der Lage zu überprüfen, ob ein Wert rechtsseitig existiert.'."\n",
+                      'Der Sprungoperator geht wiederum dem Zähloperator voraus.'."\n".
+                    'Wird er auf nicht-existierendes auf der linken Seite mit einer Zahl als rechtsseitigen Operanden angewandt,'."\n".
+                    'dann wird die rechte Zahl genommen und um einen erhöht.'."\n".
+                    'Wir können mit seiner Hilfe aus Nicht-Existierendem mit einer Existenz eine Existenz generieren oder schöpfen.'."\n",
+                      'Ähnliches gilt für den nächsten Vorgänger, den Konstanzoperator.'."\n",
+                      'Wir kommen also durch genaue Beobachtung der Zahl-Operatoren und ihrer Vorgänger prinzipiell zum Existenzquantor\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Quantor:2023}, Existenz- und Allquantor.} „\lm{ \exists }“.'."\n".
+                    'Und ich denke, dass so auch prinzipiell der Allquantor\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Quantor:2023}, Existenz- und Allquantor.} „\lm{ \forall }“ auf Basis der Zahl-Operatoren zu formulieren ist.'."\n".
+                    'Es zeigen sich also auf diese Weise sogar zunächst verborgene Zusammenhänge mit der Prädikatenlogik\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Praedikatenlogik:2023}.},'."\n".
+                    'die die fundamentale Bedeutung der Operialtheorie erkennen lassen und auf mehr neugierig machen.'."\n".
+                    ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                         // #: Text so auch auf der Seite "OM:NPYo:Home". Durch eine Konstante ersetzen, in der der Hinweis auf den Haftungsausschluss durch eine Wild-Card der aktuellen Seite ersetzt ist. Z.B. "!:Haftungsausschluss".

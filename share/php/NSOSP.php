@@ -75,6 +75,7 @@
   include $Glo_PathRel_back.'../de/Operialtheorie/OT-Data.php';
   include $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/SpaLeb-Data.php';
   include $Glo_PathRel_back.'../de/Superial-Zahlen/SupNum-Data.php';
+  include $Glo_PathRel_back.'../de/Zahlensemantik/ZS-Data.php';
   
   
   $Glo_g_TextAlign = 'block';
@@ -83,22 +84,22 @@
   
   
   
-  $FrQFT_g_text_HinwKosBeob                    = '\\italic{Die nachfolgenden Erklärungen werden aus Sicht eines \\jump{*KosmBeob-Herlei}{kosmischen Beobachters} beschrieben.}';
-  $FrQFT_g_text_Ereignishori                   = '\\color{*Entwick}{Es handelt sich im Fall der Quanten-Fluss-Theorie nicht wirklich um einen Eregnishorizont im Sinne der Allgemeinen Relativitätstheorie. Wie genau sich die Dinge dort Verhalten, wo sich die Elapsonen stauen, ist zu untersuchen. Klar scheint, dass in dieser Theorie von außen betrachtet kein Elementarteilchen unzerstört durch den Übergangshorizont gehen kann. Dann ist dies auch aus Sicht des Elementarteilchens nicht möglich. \\color{*Bearb}{(Literatur: Artikel GEO 10/2014, "Wie schwarz ist Schwarz?", S. 130–144.) (Thema auf die Diskussionsseite aufnehmen.)}}';
-  $FrQFT_g_text_PoundRebkaSnider_Steigung      = '\\color{*Entwick}{Dies ist mit Sicherheit richtig. Ich meine ich hatte dies vor Jahren irgendwo gelesen und daher übernommen. Leider konnte ich es bisher nicht wieder finden oder ersehen, woher ich es abgeleitet hatte. Dies ist also heraus zu finden. \\color{*Bearb}{Alternativ zeigen, dass die Steigung der Formel \\term{g⋅h/c^^{2}} aus dem Pound-Rebka-Snider-Experiment entsprechend passt. Beziehungsweise \\term{Δ𝝂/𝝂__{0} = – Δφ_{g}/c^^{2}} , vgl. \\cite{Pound:PoundSniderExper1965}, S. B 788.}}';
+  $FrQFT_g_text_HinwKosBeob                    = '\italic{Die nachfolgenden Erklärungen werden aus Sicht eines \jump{*KosmBeob-Herlei}{kosmischen Beobachters} beschrieben.}';
+  $FrQFT_g_text_Ereignishori                   = '\color{*Entwick}{Es handelt sich im Fall der Quanten-Fluss-Theorie nicht wirklich um einen Ereignishorizont im Sinne der Allgemeinen Relativitätstheorie. Wie genau sich die Dinge dort Verhalten, wo sich die Elapsonen stauen, ist zu untersuchen. Klar scheint, dass in dieser Theorie von außen betrachtet kein Elementarteilchen unzerstört durch den Übergangshorizont gehen kann. Dann ist dies auch aus Sicht des Elementarteilchens nicht möglich. \color{*Bearb}{(Literatur: Artikel GEO 10/2014, "Wie schwarz ist Schwarz?", S. 130–144.) (Thema auf die Diskussionsseite aufnehmen.)}}';
+  $FrQFT_g_text_PoundRebkaSnider_Steigung      = '\color{*Entwick}{Dies ist mit Sicherheit richtig. Ich meine ich hatte dies vor Jahren irgendwo gelesen und daher übernommen. Leider konnte ich es bisher nicht wieder finden oder ersehen, woher ich es abgeleitet hatte. Dies ist also heraus zu finden. \color{*Bearb}{Alternativ zeigen, dass die Steigung der Formel \lm{ \frac{ g \cdot h }{ c^{2} } } aus dem Pound-Rebka-Snider-Experiment entsprechend passt. Beziehungsweise \lm{ \frac{ \Delta \nu }{ \nu_{0} } = - \frac{ \Delta \phi_{g} }{ c^{2} } } , vgl. \cite{Pound:PoundSniderExper1965}, S. B 788.}}';
   $FrQFT_g_text_SymmetrieBruchFarbpol          = 'Der kreisrunde Vakuum-Elapsonen-String ist der symmetrischste denkbare Wirkungsquanten-String.'."\n".
                                                    'Durch einen Symmetriebruch, ausgelöst durch ihre Wechselwirkung innerhalb des Strings, sind die sich eigentlich gradlinig bewegenden Wirkungsquanten auf eine Helixspiralbahn ausgelenkt.'."\n".
                                                    'Sie laufen nun auf dem tiefsten Ring des Sombrero-Potentials eines Felds, dass dem Higgs-Feld sehr ähnelt.'."\n".
                                                    'Jedes Wirkungsquant erhält so einen Spin und eine Farbpolarisation, die von der Richtung und dem Abstand seiner Auslenkung abhängt.'."\n".
                                                    'Weil die Auslenkungen aller Wirkungsquanten des Strings sich in jeder Richtung ausgleichen, trägt der String nach außen hin die neutrale Farbladung weiß.'."\n".
-                                                   '\\const{FrQFT_g_text_WQSWQMenge}';
+                                                   '\const{FrQFT_g_text_WQSWQMenge}';
   $FrQFT_g_text_VakuumElapson                  = 'Ein Wirkungsquanten-String eines unpolarisierten Photons.'."\n".
                                                    'Die Wirkungsquanten sind als rote Kugeln mit ihren abgestrahlten Impulskegeln dargestellt.'."\n".
                                                    'Ihre Impulskegel verbinden die Wirkungsquanten zu einem geschlossenen String, der so durch einen strukturellen Regelprozess stabilisiert ist.';
   $FrQFT_g_text_WQSWQMenge                     = 'In der Realität sind extrem viele, sehr kleine Wirkungsquanten im String, die sehr nahe beieinander liegen.';
 
-  $NPYo_g_text_LebenDesHorusHermesstab_Orig    = 'Abbild des Lebens, das sehr ähnlich in altägyptischen Darstellungen zu finden ist. Hier mit Hermesstab, im näherem Bezug zum Achtsamkeitsprozess mit zwei Schlangen, wie auch im alten Ägypten. Die beiden Schlangen stellen hier das Gefühl und die Handlung, das (Wahr-)Nehmen/Empfangen und das Geben/Senden des Achtsamkeitsprozesses dar. \\color{*Light}{\\small{Lizenz: \\jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}';
-  $NPYo_g_text_LebenDesHorusHermesstab_Phoenix = 'Abbild des Lebens, das sehr ähnlich in altägyptischen Darstellungen zu finden ist. Es entsteht unten im Ei der Metamorphose, dem aschefarbenen Dreiviertel-Mond, und entwickelt sich über den Aufstieg der Kundalini-Schlangen aus der Wurzel, dem mütterlichen Schoß, ins Licht der väterlichen Sonne, der Klugheit oder Weisheit, wo es verbrennt und wieder zur Asche wird. So gesehen stellt dieses Bild erstaunlich authentisch den Kreislauf des ›Phönix aus der Asche‹ dar. \\color{*Light}{\\small{Lizenz: \\jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}';
+  $NPYo_g_text_LebenDesHorusHermesstab_Orig    = 'Abbild des Lebens, das sehr ähnlich in altägyptischen Darstellungen zu finden ist. Hier mit Hermesstab, im näherem Bezug zum Achtsamkeitsprozess mit zwei Schlangen, wie auch im alten Ägypten. Die beiden Schlangen stellen hier das Gefühl und die Handlung, das (Wahr-)Nehmen/Empfangen und das Geben/Senden des Achtsamkeitsprozesses dar. \color{*Light}{\small{Lizenz: \jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}';
+  $NPYo_g_text_LebenDesHorusHermesstab_Phoenix = 'Abbild des Lebens, das sehr ähnlich in altägyptischen Darstellungen zu finden ist. Es entsteht unten im Ei der Metamorphose, dem aschefarbenen Dreiviertel-Mond, und entwickelt sich über den Aufstieg der Kundalini-Schlangen aus der Wurzel, dem mütterlichen Schoß, ins Licht der väterlichen Sonne, der Klugheit oder Weisheit, wo es verbrennt und wieder zur Asche wird. So gesehen stellt dieses Bild erstaunlich authentisch den Kreislauf des ›Phönix aus der Asche‹ dar. \color{*Light}{\small{Lizenz: \jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}';
 
   
   // const text = 'text';
@@ -121,25 +122,25 @@
   
   $FrQFT_g_text_QuantengravRechnungOhneNaeh    =
                   array( 'text', array( text => array(
-                    'Ohne \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung:NaeherungGrosseAbstaend}{Näherung für große Abstände},'."\n".
+                    'Ohne \jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung:NaeherungGrosseAbstaend}{Näherung für große Abstände},'."\n".
                     'also bei einigen Vielfachen des Elementarteilchen-Radius, ergibt sich folgende Rechnung.'."\n".
                     'Es bleibt die Simplifizierung des Leptonen-Strings und Vakuums:'."\n")));
 
   $FrQFT_g_zitat_BuckminsterFuller_StartingPoint =
                   array( 'text', array( Shape  => 'quote', text => array(
                         'The vector equilibrium is the zero starting point for happenings or nonhappenings: it is the empty theater and empty circus and empty Universe ready to accommodate any act and any audience.'."\n"),
-                        addtext => '~Richard Buckminster Fuller\\footnote{Buckminster Fuller, Richard, \\jump[http://www.rwgrayprojects.com/SynergeticsDictionary/SD.html]{}{SYNERGETICS} (2nd. Ed.) at Sec. 503.03; 11 Dec\'75. \\\\ Internet: \\\\ Cosmometry, Vector Equilibrium & Isotropic Vector Matrix. URL: \\url{https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix}.}'));
+                        addtext => '~Richard Buckminster Fuller\footnote{Buckminster Fuller, Richard, \jump[http://www.rwgrayprojects.com/SynergeticsDictionary/SD.html]{}{SYNERGETICS} (2nd. Ed.) at Sec. 503.03; 11 Dec\'75. \\\\ Internet: \\\\ Cosmometry, Vector Equilibrium & Isotropic Vector Matrix. URL: \url{https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix}.}'));
   $FrQFT_g_zitat_BuckminsterFuller_StartingPoint_TranslatedTo_German =
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Das vektorielle Gleichgewicht ist der Nullpunkt für Ereignisse oder Nicht-Ereignisse: Es ist das leere Theater, der leere Zirkus und das leere Universum, das bereit ist, jede Handlung und jedes Publikum aufzunehmen.'."\n"),
-                        addtext => '~Richard Buckminster Fuller\\footnote{Buckminster Fuller, Richard, \\jump[http://www.rwgrayprojects.com/SynergeticsDictionary/SD.html]{}{SYNERGETICS} (2nd. Ed.) at Sec. 503.03; 11 Dec\'75. \\\\ Internet: \\\\ Cosmometry, Vector Equilibrium & Isotropic Vector Matrix. URL: \\url{https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix}.} \\small{\\italic{Übersetzt ins Deutsche mit \\jump[https://www.deepl.com/translator]{}{DeepL Übersetzer}}}'));
+                        addtext => '~Richard Buckminster Fuller\footnote{Buckminster Fuller, Richard, \jump[http://www.rwgrayprojects.com/SynergeticsDictionary/SD.html]{}{SYNERGETICS} (2nd. Ed.) at Sec. 503.03; 11 Dec\'75. \\\\ Internet: \\\\ Cosmometry, Vector Equilibrium & Isotropic Vector Matrix. URL: \url{https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix}.} \small{\italic{Übersetzt ins Deutsche mit \jump[https://www.deepl.com/translator]{}{DeepL Übersetzer}}}'));
   
   $NPYo_g_angebot_IchGebeDirNaPhilYoga =
                   array( 'text', array( Shape => 'italic', text => array(
-                    'Ich gebe dir \\jump{OM:NPYo:Angebote-Veranstaltungen:NaPhilYogaCoaching}{NaPhil-Yoga Coaching} \\\\'."\n".
+                    'Ich gebe dir \jump{OM:NPYo:Angebote-Veranstaltungen:NaPhilYogaCoaching}{NaPhil-Yoga Coaching} \\\\'."\n".
                     'kombiniert mit Intensive Yoga Unterricht (Power Yoga). \\\\'."\n".
-                    '\\small{\\color{*TitleAdd}{Spende was du kannst oder bringe gerne selbstgemachtes Essen mit. \\\\'."\n".
-                    'Bist du daran interessiert? Dann \\jump{OM:FrQFT:Impressum}{melde dich} bei mir.}}'."\n")));
+                    '\small{\color{*TitleAdd}{Spende was du kannst oder bringe gerne selbstgemachtes Essen mit. \\\\'."\n".
+                    'Bist du daran interessiert? Dann \jump{OM:FrQFT:Impressum}{melde dich} bei mir.}}'."\n")));
   
   $SpaLeb_g_zitat_WolfBuentig_Normopathie =
                     array( 'text', array( Shape  => 'quote', text => array(
@@ -152,7 +153,7 @@
                         'Als wir ZIST aufbauten galten 18°C als eine angenehme Wohnzimmertemperatur.'."\n".
                         'Heute sind wir bei 23.'."\n".
                         'Das heißt, wir verbrauchen alle Energie, im uns Zusammenreißen, halten, irgendwie halten, uns hoch halten und so weiter, statt im Lustvollen Leben.'."\n"),
-                        addtext => '\\footnote{\\cite{KenFM:ImGespraechMitWolfBuentig:2017}, \\quote{Ich nenne das Normopathie. Das Leben nach den Normen, unter Vernachlässigung des Wissens, worum es bei mir jetzt geht. …}, ab Sek. 1:12:20. \\\\ Die ZIST gemeinnützige GmbH (Zentrum für Individual- und Sozialtherapie) finden sie unter: \\url{https://www.zist.de}.}'));
+                        addtext => '\footnote{\cite{KenFM:ImGespraechMitWolfBuentig:2017}, \quote{Ich nenne das Normopathie. Das Leben nach den Normen, unter Vernachlässigung des Wissens, worum es bei mir jetzt geht. …}, ab Sek. 1:12:20. \\\\ Die ZIST gemeinnützige GmbH (Zentrum für Individual- und Sozialtherapie) finden sie unter: \url{https://www.zist.de}.}'));
   
   $SpaLeb_g_zitat_Fliessbach_ART1998_BestaetigMachprinzip =
                     array( 'text', array( Shape  => 'quote', text => array(
@@ -162,206 +163,214 @@
                         'Entscheidende Voraussetzung ist dabei die Isotropie; dies schließt insbesondere relativ zum Fixsternhimmel rotierende Bezugssysteme aus.'."\n",
                           'Unter Machprinzip wird verstanden, daß die Massen im Universum die Inertialsysteme festlegen.'."\n".
                         'Die jetzt gefundene Aussage kann als Bestätigung des Machprinzips betrachtet werden.'."\n"),
-                        addtext => '\\footnote{\\cite{Fliessbach:ART1998}, Teil IX Dynamische Sternmodelle, Kap. 44 Isotrope zeitabhängige Metrik und Birkhoff-Theorem, Machsches Prinzip, S. 253-254, hier S. 254.}'));
+                        addtext => '\footnote{\cite{Fliessbach:ART1998}, Teil IX Dynamische Sternmodelle, Kap. 44 Isotrope zeitabhängige Metrik und Birkhoff-Theorem, Machsches Prinzip, S. 253-254, hier S. 254.}'));
 
   
-  $NSOSP_g_footnote_text_AbelscheGruppe         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AbelscheGruppe:2022}.';
-  $NSOSP_g_footnote_text_ArchimedischesAxiom    = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:ArchimedischesAxiom:2023}.';
-  $NSOSP_g_footnote_text_ArchimedischGeordneterKoerper = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:GeordneterKoerper:2022}, Strukturaussagen. \\\\ Vgl. \\cite{wiki:ArchimedischesAxiom:2023}.';
-  $NSOSP_g_footnote_text_Arithmetik             = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Arithmetik:2015}.';
-  $NSOSP_g_footnote_text_GeordneterKoerper      = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:GeordneterKoerper:2022}.';
-  $NSOSP_g_footnote_text_NullIstTeilVonPositiv  = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:GeordneterKoerper:2022}, Definition.';
-  $NSOSP_g_footnote_text_Ordinalzahl            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ordinalzahl:2021}.';
-  $NSOSP_g_footnote_text_KoerperAlgebra         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:KoerperAlgebra:2023}.';
-  $NSOSP_g_footnote_text_PeanoAxiome            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:PeanoAxiome:2021}, Axiome, Ursprüngliche Formalisierung.';
-  $NSOSP_g_footnote_text_RingAlgebra            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ring-Algebra:2023}.';
+  $NSOSP_g_footnote_text_AbelscheGruppe         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AbelscheGruppe:2022}.';
+  $NSOSP_g_footnote_text_ArchimedischesAxiom    = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ArchimedischesAxiom:2023}.';
+  $NSOSP_g_footnote_text_ArchimedischGeordneterKoerper = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GeordneterKoerper:2022}, Strukturaussagen. \\\\ Vgl. \cite{wiki:ArchimedischesAxiom:2023}.';
+  $NSOSP_g_footnote_text_Arithmetik             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Arithmetik:2015}.';
+  $NSOSP_g_footnote_text_GeordneterKoerper      = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GeordneterKoerper:2022}.';
+  $NSOSP_g_footnote_text_NullIstTeilVonPositiv  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GeordneterKoerper:2022}, Definition.';
+  $NSOSP_g_footnote_text_Ordinalzahl            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}.';
+  $NSOSP_g_footnote_text_KoerperAlgebra         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KoerperAlgebra:2023}.';
+  $NSOSP_g_footnote_text_PeanoAxiome            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PeanoAxiome:2021}, Axiome, Ursprüngliche Formalisierung.';
+  $NSOSP_g_footnote_text_RingAlgebra            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ring-Algebra:2023}.';
 
-  $BiOrd_g_footnote_text_GaussscheSummenformel  = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:GaussscheSummenformel:2023}.';
-  $BiOrd_g_footnote_text_VollstaendigeInduktion  = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Unendlichkeitsaxiom:2021}, Formulierung; Bedeutung für die Mathematik, Natürliche Zahlen.';
+  $BiOrd_g_footnote_text_GaussscheSummenformel  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GaussscheSummenformel:2023}.';
+  $BiOrd_g_footnote_text_OrdinalzahlLimeszahlen = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}, Motivation und Definition, Limes- und Nachfolgerzahlen.';
+  $BiOrd_g_footnote_text_VollstaendigeInduktion = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Unendlichkeitsaxiom:2021}, Formulierung; Bedeutung für die Mathematik, Natürliche Zahlen.';
 
-  $FrQFT_g_footnote_text_ActioUndReactio        = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:ActioUndReactio:2018}.';
-  $FrQFT_g_footnote_text_AequivalPrinzTraeSchMasse = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, S. 2-6. \\\\ Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290, hier S. 253-260. \\\\ Vgl. \\cite{Born:RTEinsteins1969}, Kap. VII. Die allgemeine Relativitätstheorie Einsteins, S. 266-324, hier S. 269-273. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, S. 58-61. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Aequivalenzprinzip2014}.';
-  $FrQFT_g_footnote_text_AequivalMasseEnergie   = 'Vgl. \\cite{Einstein:IstDieTraegheitSeinEnergieInhalt1905}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:AequivalenzVonMasseUndEnergie2013}.';
-  $FrQFT_g_footnote_text_Annihilation           = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Annihilation:2015}.';
-  $FrQFT_g_footnote_text_AntimaterieProblem     = '\\color{*Bearb}{(Mehr Verweise!)} \\\\ Vgl. \\cite{Falkowski:HiggsOnTheMoon:2017}.';
-  $FrQFT_g_footnote_text_ART                    = 'Vgl. \\cite{Fliessbach:ART1998}. \\\\ Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290. \\\\ Vgl. \\cite{Born:RTEinsteins1969}, Kap. VII. Die allgemeine Relativitätstheorie Einsteins, S. 266-324. \\\\ Vgl. \\cite{Einstein:GrundlagenART1916}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:ART2013}.';
-  $FrQFT_g_footnote_text_ARTLgFormel            = 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, Kap. 2 Bending of a Beam of Light Passing a Massive Object, S. 1-4, hier Formel 2.1, S. 1. \\\\ Diese Formel kann man aus der Veränderung der Detektorwellenlänge der Schwarzschild-Lösung herleiten: \\\\ Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 9 Schwarze Löcher, S. 291-323, hier S. 295, ergänzendes S. 297, 320. \\hidden{, siehe Kapitel \\hidden{Sec: Berechnung der Lichtgeschwindigkeit im dreidimensionalen Raum des Gravitationsfelds der Schwarzschild-Lösung}. Achtung: Die Formel 11.8 ist verkehrt, denn die Radien gehören vertauscht! Siehe Kap. 11 Rotverschiebungen. S. 362-389, hier S. 369, Formel 11.8.} \\\\ Internet: \\\\ Vgl. \\cite{wiki:GravitationalRedshift:2015}, Definition.';
-  $FrQFT_g_footnote_text_ARTPruef               = 'Vgl. \\cite{Greene:ElegUniv2000}, Kap. 3 Von Krümmungen und Kräuselwellen, 72-107, hier S. 106. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Boerner:DunkEnergie2008}, Alternative Gravitationstheorien, S. 43. \\\\ Vgl. \\cite{Bergia:Einstein2005}, Kap. Einsteins Erbe, S. 94-103. \\\\ Vgl. \\cite{Smolin:QuantRaum2004}, S. 56.';
-  $FrQFT_g_footnote_text_ARTUnvollstaendig      = 'Vgl. \\cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, S. 14. \\\\ Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 1 Die fünf großen Probleme der theoretischen Physik, S. 31-48, hier S. 33.';
-  $FrQFT_g_footnote_text_ARTVarZeit             = 'Vgl. \\cite{Kiefer:DoesTimeExistInQuantumGravity2009}, S. 2.\\hidden{Er hat dazu auch ein Buch: C. Kiefer, Quantum Gravity, second edition (Oxford University Press, Oxford, 2007).} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Kiefer:WegZurQG2012}, S. 37.';
-  $FrQFT_g_footnote_text_Aeskulapstab           = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Aeskulapstab:2019}.';
-  $FrQFT_g_footnote_text_BasTModDeBroglieFreq   = 'Vgl. \\cite{Giese:TheStructureOfMatter:2004}, 1 Introduction, S. 1.';
-  $FrQFT_g_footnote_text_BasisteilchenMGravityLKFormel = 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, Speed Reduction in Detail, S. 20-22, hier Formel C.8, S. 22. Die erste Variable rechts neben dem Gleichheitszeichen \\term{w__{0}} ist dort mit \\term{r} benannt. Diese Benennung ist fehlerhaft, weil es eine weitere Variable \\term{r} unter dem Bruch gibt, die von der ersten unabhängig ist. Beide müssen also unterschieden werden, weil die erste neben dem Gleichheitszeichen eine generelle geometrische Ausdehnung von Strukturen meint, während die zweite den Abstand vom Zentrum einer Zentralmasse bedeutet. Folgerichtig habe ich dann die Variable \\term{r__{red}} bei Giese in \\term{d__{red}} umbenannt, weil diese die Reduktion der Ausdehnung einer generellen Struktur meint. Die Konstante \\term{c} habe ich wegen der Eindeutigkeit in \\term{c__{0}} umbenannt.';
-  $FrQFT_g_footnote_text_BasisteilchenMGravityLKMechanis = 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, Speed Reduction in Detail, S. 20-22, hier in der Entwicklung der Formel C.8, S. 22.';
-  $FrQFT_g_footnote_text_BasisteilchenMGravity  = 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, 3 Relationship between Gravity and the Basic Particle Model, S. 4-6, hier S. 5-6.';
-  $FrQFT_g_footnote_text_ComptonFrequenz        = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 17 Die kosmischen Zahlen, S. 516-542, hier S. 518-523. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Compton-Effekt:2015}, Compton-Wellenlänge. Die Compton-Frequenz lässt sich aus der Compton-Wellenlänge berechnen.';
-  $FrQFT_g_footnote_text_ComptonFrequenzGravi   = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, S. 12-14. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, 63-64.\\hidden{ \\\\ Internet: \\\\ \\color{*Bearb}{XXX}}';
-  $FrQFT_g_footnote_text_Confinement            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Ent:DerKlebstoffDerWelt:2015}, S. 60, 61. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Confinement2013}. \\\\ Vgl. \\cite{Alkofer:QuarkConfinementOnline2006}, S. 1.';
-  $FrQFT_g_footnote_text_DeBroglieBohmTheorie   = '\\color{*Bearb}{(Weitere Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Schaal:InwieweitIstEineRelativistischeFormulierungDerBohmschenMechanikMoeglich:2014}. \\\\ Populärwissenschaftliche Literatur: \\\\ Vgl. \\cite{Ananthaswamy:KeinAuswegAusDerUnwirklichkeit:2018}, S. 17, 19. \\\\ Internet: \\\\ Vgl. \\cite{wiki:De-Broglie-Bohm-Theorie:2018}.';
-  $FrQFT_g_footnote_text_DeBroglieBohmTheorieKonsQM  = '\\color{*Bearb}{(Weitere Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Schaal:InwieweitIstEineRelativistischeFormulierungDerBohmschenMechanikMoeglich:2014}, Kap. 2. Grundkonzepte der Bohmschen Mechanik, 2.1. Realitätsbezug, S. 2-5, hier S. 5. \\\\ Populärwissenschaftliche Literatur: \\\\ Vgl. \\cite{Ananthaswamy:KeinAuswegAusDerUnwirklichkeit:2018}, S. 17, 19. \\\\ Internet: \\\\ Vgl. \\cite{wiki:De-Broglie-Bohm-Theorie:2018}.';
-  $FrQFT_g_footnote_text_DeBroglieFrequenzWellen = '\\color{*Bearb}{(Weitere Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Materiewelle:2020}.';
-  $FrQFT_g_footnote_text_DoppelSpaltExp         = 'Vgl. \\cite{Feynman:Quantenmechanik2009}, Kap. 1 Quantenverhalten, S. 3-15. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Doppelspaltexp2013}.';
-  $FrQFT_g_footnote_text_Dualismus              = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Dualismus:2015}.';
-  $FrQFT_g_footnote_text_DunkleEnergie          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur \\\\ Vgl. \\cite{Frieman:DasDunkelsteGeheimnis:2016}.';
-  $FrQFT_g_footnote_text_DunkleMat              = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Lesch:Kosmologie2006}, Kap. II. Dunkle Materie, Was ist Dunkle Materie? S. 42-43. \\\\ Sekundärliteratur \\\\ Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 22-23. \\\\ Vgl. \\cite{Milgrom:DunkMat2002}, S. 34-36. \\\\ Internet: \\\\ Vgl. \\cite{Eidemueller:WieWirftManLichtAufDunkleMaterie:2016}. \\\\ Vgl. \\cite{Eidemueller:DieTuerInsDunkleUniversum:2016}. \\\\ Vgl. \\cite{wiki:DunkleMaterie2013}.';
-  $FrQFT_g_footnote_text_DunkleMatPhaeno        = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Lesch:Kosmologie2006}, Kap. II. Dunkle Materie, Verborgene Materie, S. 23-30. \\\\ Sekundärliteratur \\\\ Vgl. \\cite{Gast:WIMP2013}, S. 50. \\\\ Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 22. \\\\ Vgl. \\cite{Milgrom:DunkMat2002}, S. 34-36. \\\\ Internet: \\\\ Vgl. \\cite{Eidemueller:WieWirftManLichtAufDunkleMaterie:2016}. \\\\ Vgl. \\cite{wiki:DunkleMaterie2013}, Indizien für die Existenz Dunkler Materie.';
-  $FrQFT_g_footnote_text_DunkleMatUnklar        = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Lesch:Kosmologie2006}, Kap. II. Dunkle Materie, S. 15-90. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Moskowitz:DunkleMaterieWirdExotischer2014} \\\\ Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 22. \\\\ Vgl. \\cite{Wolschin:DunklesOrakel2009}. \\\\ Vgl. \\cite{Boerner:DunkEnergie2008}, S. 43. \\\\ Vgl. \\cite{Musser:ZielRaumzeit2007}. \\\\ Vgl. \\cite{Poessel:KosImCom2005}. \\\\ Vgl. \\cite{Lublinski:JagtDunkMat2004}. \\\\ Vgl. \\cite{Atwood:FenstUniv2004}, S. 36. \\\\ Vgl. \\cite{Milgrom:DunkMat2002}. \\\\ Internet: \\\\ Vgl. \\cite{Eidemueller:WieWirftManLichtAufDunkleMaterie:2016}.';
-  $FrQFT_g_footnote_text_EinsteinAequiMasEner   = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AequivalenzVonMasseUndEnergie:2018}.';
-  $FrQFT_g_footnote_text_EinsteinGleichLichtq   = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Born:RTEinsteins1969}, Kap. VI. Das spezielle Einsteinsche Relativitätsprinzip, 194-266, hier S. 251. \\\\ Internet: \\\\ Vgl. \\cite{wiki:PlanckschesWirkungsquantum2013}, Historisches zur Entdeckung und Rezeption, h und die Lichtquanten.';
-  $FrQFT_g_footnote_text_EinsteinSynchron       = 'Vgl. \\cite{Weiss:AltToSpeedOfLight2006}, III. Synchronization of Clocks, S. 5-10. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Einstein-Synchronisation:2017}.';
-  $FrQFT_g_footnote_text_Emergenz               = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Emergenz2015}.';
-  $FrQFT_g_footnote_text_EnergErhal             = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Energieerhaltungssatz2014}.';
-  $FrQFT_g_footnote_text_EreignHori             = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 9 Schwarze Löcher, S. 291-323, hier S. 301-322. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Ereignishorizont2013}.';
-  $FrQFT_g_footnote_text_EreignHoriFeuerwand    = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Polchinski:FeuerwandAmHorizont:2015}.';
-  $FrQFT_g_footnote_text_FraktalLoestUnendlichk = 'Vgl. \\cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, S. 19.';
-  $FrQFT_g_footnote_text_GesetzeDerFormMarkedSpaceUnmarkedSpace = '\\color{*Bearb}{(Primärliteratur einfügen!!!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:GesetzeDerForm:2018}, Unmarked Space. \\\\ Gute Veranschaulichung, obwohl eigentlich nicht zitierfähig: \\\\ Vgl. \\cite{UnbekannterAuthorFHVorarlberg:GesetzeDerFormWasIstEinSystem:2018}.';
-  $FrQFT_g_footnote_text_Gleichzeitigkeit       = 'Vgl. \\cite{Weiss:AltToSpeedOfLight2006}, IV. Medium transformation, A. Properties of medium transformation, 3. Simultaneity, S. 12. \\\\ Vgl. \\cite{Selleri:EinsteinLorentz1998}, Kap. 6. Zeit und Bewegung, 6. Gleichzeitigkeit und Laufzeit, S. 162-166. \\\\ Internet: \\\\ Vgl. \\cite{wiki:RelativitaetDerGleichzeitigkeit:2017}.';
-  $FrQFT_g_footnote_text_GraviDurchLichtbeug    = 'Vgl. Kapitel \\jumpname{OM:FrQFT:Quantengravitation:Mechanismus-der-Gravitation} \\\\ Vgl. \\cite{Giese:TheOrigOfGravity2011}, Kap. 3 Relationship between Gravity and the Basic Particle Model, S. 4-6, hier S. 5-6. \\\\ Vgl. \\cite{Huss:GFTv7.243j2009}, 5.2.2 Wechselwirkung von potenzialen Photonen-Beugungssystemen, S. 44-50, hier S. 45-46, Abbildung 5.6, S. 47. Dies ist die älteste im Netz veröffentlichte Version, die dies enthält. Die Idee ist aber schon viel älter. \\color{*Bearb}{Mindestens aus dem Jahr 2003. Siehe „Persönliche Äußerung zur Relativistische Gravitonendynamik (RGD) und zur Gravitonenflusstheorie (GFT), als Entwurf von Wolfgang Huß“, Variante 5.08, vom 23.12.2003.}';
-  $FrQFT_g_footnote_text_GraviLichtbeug         = 'Vgl. Kapitel \\jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung} und \\jumpname{OM:FrQFT:Quantengravitation:Lichtbeugung} \\\\ Hier wird ohne die Quanten-Fluss-Theorie noch nicht die ganz exakte Formel hergeleitet, aber strukturell stimmt sie schon: Vgl. \\cite{Giese:TheOrigOfGravity2011}, Kap. 6.1 The Variation of the Speed of Light, S. 8-9, sowie Appendix C Variation in the Speed of Light, S. 19-22. \\\\ Vgl. \\cite{Huss:GFTv7.243j2009}, 3.2 Physikalische Realisierung der Grundannahmen, S. 30-35, hier S. 34, Abbildung 5.5, S. 47. Dies ist die älteste im Netz veröffentlichte Version, die dies enthält. Die Idee ist aber schon viel älter. \\color{*Bearb}{Etwa aus dem Jahr XXX.} \\\\ ART: \\\\ Vgl. \\cite{Shapiro:FourthTestOfGeneralRelativity:1964:PhysRevLett.13.789}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:ShapiroVerzoegerung:2019}.';
-  $FrQFT_g_footnote_text_GraviLichtbeugART      = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:ART2013}, Physikalische Effekte, Lichtablenkung und Lichtverzögerung.';
-  $FrQFT_g_footnote_text_GraviRotVersch         = 'Vgl. \\cite{Fliessbach:ART1998}, Teil III Physikalische Grundlagen der ART, Kap. 12 Gravitationsrotverschiebung, S. 58-64. \\\\ Vgl. \\cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, S. 5-6. \\\\ Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290, hier S. 275-278; Kap. 9 Schwarze Löcher, S. 291-323, hier S. 295, ergänzendes S. 297, 320; Kap. 11 Rotverschiebungen, S. 362-389, hier S. 369. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, 60-61. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Rotverschiebung:2015}, Gravitative Rot- und Blauverschiebung. \\\\ Vgl. \\cite{wiki:GravitationalRedshift:2015}. \\\\ Vgl. \\cite{wiki:ART2013}, Gravitative Zeitdilatation und Rotverschiebung.';
-  $FrQFT_g_footnote_text_Gravitation            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Gravitation:2015}.';
-  $FrQFT_g_footnote_text_HeisenbUnschaerf       = 'Vgl. \\cite{Heisenberg:UeberQuantKinMech1927}. \\\\ Vgl. \\cite{Heisenberg:UeberQuantKinMech1927Scan}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:HeisenbergUnschaerferel2012}.';
-  $FrQFT_g_footnote_text_HeisenbUnschaerfAbzInt = 'Vgl. \\cite{Treitz:Unbestimmtheit2010}.';
-  $FrQFT_g_footnote_text_HiggsMech              = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:HiggsMechanismus2014}.';
-  $FrQFT_g_footnote_text_HiggsMechAnalog        = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:HiggsMechanismus2014}, Populärwissenschaftliche Interpretation. \\\\ Vgl. \\cite{Hagner:HiggsMechanismusOnline2009}, S. 5.';
-  $FrQFT_g_footnote_text_HiggsPotenz            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:HiggsMechanismus2014}, Higgs-Potential (mit Veranschaulichung). \\\\ Vgl. \\cite{Mueller:HiggsTeilchen-LexikonDerAstrophysik2007}, Symmetriebrechung anschaulich.';
-  $FrQFT_g_footnote_text_Hintergrundunabh       = 'Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 6 Quantengravitation: Am Scheideweg, S. 126-149. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Smolin:QuantRaum2004}, S. 57. \\\\ Internet: \\\\ Vgl. \\cite{Smolin:SchauspielVeraeBuehne2005}.';
-  $FrQFT_g_footnote_text_IndNachweisHiggsFeld   = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Luest:VomHiggsZurWeltformel2013}, S. 54-56. \\\\ Vgl. \\cite{Tonelli:WegZumHiggs2012}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:HiggsBoson2013}, hier Higgs-Teilchen im Standardmodell.';
-  $FrQFT_g_footnote_text_InertSys               = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Inertialsystem2014}.';
-  $FrQFT_g_footnote_text_Neutrinos              = 'Vgl. \\cite{Fritzsch:Mikrokosmos2012}, 7. Kap. Oszillierende Neutrinos, S. 119-127. \\\\ Vgl. \\cite{wiki:Neutrino2013}.';
-  $FrQFT_g_footnote_text_Natuerlichkeit         = '\\color{*Bearb}{(Primärliteratur einfügen!!!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Gast:AmEndeDerNatuerlichkeit:2018}. \\\\ Internet: \\\\ \\cite{wiki:Natuerlichkeitsproblem:2022}.';
-  $FrQFT_g_footnote_text_NotNeuePhysik          = '\\color{*Bearb}{(Primärliteratur einfügen!!!)} \\\\ Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 1 Die fünf großen Probleme der theoretischen Physik, S. 31-48. \\\\ Populärwissenschaftliche Literatur: \\\\ Vgl. \\cite{Kiefer:WegZurQG2012}, S. 34-35, 38. \\\\ Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 30-31. \\\\ Vgl. \\cite{Nicolai:AufPhysWeg21j2008}, S. 31. \\\\ Vgl. \\cite{Boerner:DunkEnergie2008}, S. 43. \\\\ Vgl. \\cite{Nicolai:GrossVereinig2005}, S. 84-85. \\\\ Vgl. \\cite{Smolin:QuantRaum2004}, S. 56. \\\\ Video: \\\\ Vgl. \\cite{SpektrumDerWissenschaft:WieFunktioniertDieSchwerkraftAufQuantenebene:2017}';
-  $FrQFT_g_footnote_text_MachPrinz              = 'Vgl. \\cite{Fliessbach:ART1998}, Teil IX Dynamische Sternmodelle, Kap. 44 Isotrope zeitabhängige Metrik und Birkhoff-Theorem, Machsches Prinzip, S. 253-254. \\\\ Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290, hier S. 278-282. \\\\ Vgl. \\cite{Born:RTEinsteins1969}, Kap. VII. Die allgemeine Relativitätstheorie Einsteins, S. 266-324, hier S. 311-321, besonders 268, 311, 318. \\\\ Internet: \\\\ Vgl. \\cite{wiki:MachschesPrinzip2014}.';
+  $FrQFT_g_footnote_text_ActioUndReactio        = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ActioUndReactio:2018}.';
+  $FrQFT_g_footnote_text_AequivalPrinzTraeSchMasse = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, S. 2-6. \\\\ Vgl. \cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290, hier S. 253-260. \\\\ Vgl. \cite{Born:RTEinsteins1969}, Kap. VII. Die allgemeine Relativitätstheorie Einsteins, S. 266-324, hier S. 269-273. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Giulini:EinsteinImQuantentest2013}, S. 58-61. \\\\ Internet: \\\\ Vgl. \cite{wiki:Aequivalenzprinzip2014}.';
+  $FrQFT_g_footnote_text_AequivalMasseEnergie   = 'Vgl. \cite{Einstein:IstDieTraegheitSeinEnergieInhalt1905}. \\\\ Internet: \\\\ Vgl. \cite{wiki:AequivalenzVonMasseUndEnergie2013}.';
+  $FrQFT_g_footnote_text_Annihilation           = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Annihilation:2015}.';
+  $FrQFT_g_footnote_text_AntimaterieProblem     = '\color{*Bearb}{(Mehr Verweise!)} \\\\ Vgl. \cite{Falkowski:HiggsOnTheMoon:2017}.';
+  $FrQFT_g_footnote_text_ART                    = 'Vgl. \cite{Fliessbach:ART1998}. \\\\ Vgl. \cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290. \\\\ Vgl. \cite{Born:RTEinsteins1969}, Kap. VII. Die allgemeine Relativitätstheorie Einsteins, S. 266-324. \\\\ Vgl. \cite{Einstein:GrundlagenART1916}. \\\\ Internet: \\\\ Vgl. \cite{wiki:ART2013}.';
+  $FrQFT_g_footnote_text_ARTLgFormel            = 'Vgl. \cite{Giese:TheOrigOfGravity2011}, Kap. 2 Bending of a Beam of Light Passing a Massive Object, S. 1-4, hier Formel 2.1, S. 1. \\\\ Diese Formel kann man aus der Veränderung der Detektorwellenlänge der Schwarzschild-Lösung herleiten: \\\\ Vgl. \cite{Harrison:Kosmologie:1983}, Kap. 9 Schwarze Löcher, S. 291-323, hier S. 295, ergänzendes S. 297, 320. \hidden{, siehe Kapitel \hidden{Sec: Berechnung der Lichtgeschwindigkeit im dreidimensionalen Raum des Gravitationsfelds der Schwarzschild-Lösung}. Achtung: Die Formel 11.8 ist verkehrt, denn die Radien gehören vertauscht! Siehe Kap. 11 Rotverschiebungen. S. 362-389, hier S. 369, Formel 11.8.} \\\\ Internet: \\\\ Vgl. \cite{wiki:GravitationalRedshift:2015}, Definition.';
+  $FrQFT_g_footnote_text_ARTPruef               = 'Vgl. \cite{Greene:ElegUniv2000}, Kap. 3 Von Krümmungen und Kräuselwellen, 72-107, hier S. 106. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Boerner:DunkEnergie2008}, Alternative Gravitationstheorien, S. 43. \\\\ Vgl. \cite{Bergia:Einstein2005}, Kap. Einsteins Erbe, S. 94-103. \\\\ Vgl. \cite{Smolin:QuantRaum2004}, S. 56.';
+  $FrQFT_g_footnote_text_ARTUnvollstaendig      = 'Vgl. \cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, S. 14. \\\\ Vgl. \cite{Smolin:ZukunftPhysik2009}, Kap. 1 Die fünf großen Probleme der theoretischen Physik, S. 31-48, hier S. 33.';
+  $FrQFT_g_footnote_text_ARTVarZeit             = 'Vgl. \cite{Kiefer:DoesTimeExistInQuantumGravity2009}, S. 2.\hidden{Er hat dazu auch ein Buch: C. Kiefer, Quantum Gravity, second edition (Oxford University Press, Oxford, 2007).} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Kiefer:WegZurQG2012}, S. 37.';
+  $FrQFT_g_footnote_text_Aeskulapstab           = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Aeskulapstab:2019}.';
+  $FrQFT_g_footnote_text_BasTModDeBroglieFreq   = 'Vgl. \cite{Giese:TheStructureOfMatter:2004}, 1 Introduction, S. 1.';
+  $FrQFT_g_footnote_text_BasisteilchenMGravityLKFormel = 'Vgl. \cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, Speed Reduction in Detail, S. 20-22, hier Formel C.8, S. 22. Die erste Variable rechts neben dem Gleichheitszeichen \lm{ w_{0} } ist dort mit \lm{ r } benannt. Diese Benennung ist fehlerhaft, weil es eine weitere Variable \lm{ r } unter dem Bruch gibt, die von der ersten unabhängig ist. Beide müssen also unterschieden werden, weil die erste neben dem Gleichheitszeichen eine generelle geometrische Ausdehnung von Strukturen meint, während die zweite den Abstand vom Zentrum einer Zentralmasse bedeutet. Folgerichtig habe ich dann die Variable \lm{ r_{red} } bei Giese in \lm{ d_{red} } umbenannt, weil diese die Reduktion der Ausdehnung einer generellen Struktur meint. Die Konstante \lm{ c } habe ich wegen der Eindeutigkeit in \lm{ c_{0} } umbenannt.';
+  $FrQFT_g_footnote_text_BasisteilchenMGravityLKMechanis = 'Vgl. \cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, Speed Reduction in Detail, S. 20-22, hier in der Entwicklung der Formel C.8, S. 22.';
+  $FrQFT_g_footnote_text_BasisteilchenMGravity  = 'Vgl. \cite{Giese:TheOrigOfGravity2011}, 3 Relationship between Gravity and the Basic Particle Model, S. 4-6, hier S. 5-6.';
+  $FrQFT_g_footnote_text_BulletCluster          = 'Vgl. \cite{Angus:CanMONDTakeABullet2006}. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Milgrom:BulletClusterOOJJ}. \\\\ Internet: \\\\ Vgl. \cite{wiki:BulletCluster2013}.\hidden{ \\\\ \color{*Bearb}{Vgl. YouTube, Dunkle Materie - Stand 2015 | Josef M. Gaßner.}}';
+  $FrQFT_g_footnote_text_ComptonFrequenz        = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Harrison:Kosmologie:1983}, Kap. 17 Die kosmischen Zahlen, S. 516-542, hier S. 518-523. \\\\ Internet: \\\\ Vgl. \cite{wiki:Compton-Effekt:2015}, Compton-Wellenlänge. Die Compton-Frequenz lässt sich aus der Compton-Wellenlänge berechnen.';
+  $FrQFT_g_footnote_text_ComptonFrequenzGravi   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, S. 12-14. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Giulini:EinsteinImQuantentest2013}, 63-64.\hidden{ \\\\ Internet: \\\\ \color{*Bearb}{X}}';
+  $FrQFT_g_footnote_text_Confinement            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Ent:DerKlebstoffDerWelt:2015}, S. 60, 61. \\\\ Internet: \\\\ Vgl. \cite{wiki:Confinement2013}. \\\\ Vgl. \cite{Alkofer:QuarkConfinementOnline2006}, S. 1.';
+  $FrQFT_g_footnote_text_DeBroglieBohmTheorie   = '\color{*Bearb}{(Weitere Primärliteratur einfügen!)} \\\\ Vgl. \cite{Schaal:InwieweitIstEineRelativistischeFormulierungDerBohmschenMechanikMoeglich:2014}. \\\\ Populärwissenschaftliche Literatur: \\\\ Vgl. \cite{Ananthaswamy:KeinAuswegAusDerUnwirklichkeit:2018}, S. 17, 19. \\\\ Internet: \\\\ Vgl. \cite{wiki:De-Broglie-Bohm-Theorie:2018}.';
+  $FrQFT_g_footnote_text_DeBroglieBohmTheorieKonsQM  = '\color{*Bearb}{(Weitere Primärliteratur einfügen!)} \\\\ Vgl. \cite{Schaal:InwieweitIstEineRelativistischeFormulierungDerBohmschenMechanikMoeglich:2014}, Kap. 2. Grundkonzepte der Bohmschen Mechanik, 2.1. Realitätsbezug, S. 2-5, hier S. 5. \\\\ Populärwissenschaftliche Literatur: \\\\ Vgl. \cite{Ananthaswamy:KeinAuswegAusDerUnwirklichkeit:2018}, S. 17, 19. \\\\ Internet: \\\\ Vgl. \cite{wiki:De-Broglie-Bohm-Theorie:2018}.';
+  $FrQFT_g_footnote_text_DeBroglieFrequenzWellen = '\color{*Bearb}{(Weitere Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Materiewelle:2020}.';
+  $FrQFT_g_footnote_text_DoppelSpaltExp         = 'Vgl. \cite{Feynman:Quantenmechanik2009}, Kap. 1 Quantenverhalten, S. 3-15. \\\\ Internet: \\\\ Vgl. \cite{wiki:Doppelspaltexp2013}.';
+  $FrQFT_g_footnote_text_Dualismus              = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Dualismus:2015}.';
+  $FrQFT_g_footnote_text_DunkleEnergie          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur \\\\ Vgl. \cite{Frieman:DasDunkelsteGeheimnis:2016}.';
+  $FrQFT_g_footnote_text_DunkleMat              = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Lesch:Kosmologie2006}, Kap. II. Dunkle Materie, Was ist Dunkle Materie? S. 42-43. \\\\ Sekundärliteratur \\\\ Vgl. \cite{Kroupa:SMKPruefstand2010}, S. 22-23. \\\\ Vgl. \cite{Milgrom:DunkMat2002}, S. 34-36. \\\\ Internet: \\\\ Vgl. \cite{Eidemueller:WieWirftManLichtAufDunkleMaterie:2016}. \\\\ Vgl. \cite{Eidemueller:DieTuerInsDunkleUniversum:2016}. \\\\ Vgl. \cite{wiki:DunkleMaterie2013}.';
+  $FrQFT_g_footnote_text_DunkleMatPhaeno        = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Lesch:Kosmologie2006}, Kap. II. Dunkle Materie, Verborgene Materie, S. 23-30. \\\\ Sekundärliteratur \\\\ Vgl. \cite{Gast:WIMP2013}, S. 50. \\\\ Vgl. \cite{Kroupa:SMKPruefstand2010}, S. 22. \\\\ Vgl. \cite{Milgrom:DunkMat2002}, S. 34-36. \\\\ Internet: \\\\ Vgl. \cite{Eidemueller:WieWirftManLichtAufDunkleMaterie:2016}. \\\\ Vgl. \cite{wiki:DunkleMaterie2013}, Indizien für die Existenz Dunkler Materie.';
+  $FrQFT_g_footnote_text_DunkleMatUnklar        = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Lesch:Kosmologie2006}, Kap. II. Dunkle Materie, S. 15-90. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Moskowitz:DunkleMaterieWirdExotischer2014} \\\\ Vgl. \cite{Kroupa:SMKPruefstand2010}, S. 22. \\\\ Vgl. \cite{Wolschin:DunklesOrakel2009}. \\\\ Vgl. \cite{Boerner:DunkEnergie2008}, S. 43. \\\\ Vgl. \cite{Musser:ZielRaumzeit2007}. \\\\ Vgl. \cite{Poessel:KosImCom2005}. \\\\ Vgl. \cite{Lublinski:JagtDunkMat2004}. \\\\ Vgl. \cite{Atwood:FenstUniv2004}, S. 36. \\\\ Vgl. \cite{Milgrom:DunkMat2002}. \\\\ Internet: \\\\ Vgl. \cite{Eidemueller:WieWirftManLichtAufDunkleMaterie:2016}.';
+  $FrQFT_g_footnote_text_EinsteinAequiMasEner   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AequivalenzVonMasseUndEnergie:2018}.';
+  $FrQFT_g_footnote_text_EinsteinGleichLichtq   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Born:RTEinsteins1969}, Kap. VI. Das spezielle Einsteinsche Relativitätsprinzip, 194-266, hier S. 251. \\\\ Internet: \\\\ Vgl. \cite{wiki:PlanckschesWirkungsquantum2013}, Historisches zur Entdeckung und Rezeption, h und die Lichtquanten.';
+  $FrQFT_g_footnote_text_EinsteinSynchron       = 'Vgl. \cite{Weiss:AltToSpeedOfLight2006}, III. Synchronization of Clocks, S. 5-10. \\\\ Internet: \\\\ Vgl. \cite{wiki:Einstein-Synchronisation:2017}.';
+  $FrQFT_g_footnote_text_Emergenz               = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Emergenz2015}.';
+  $FrQFT_g_footnote_text_EnergErhal             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Energieerhaltungssatz2014}.';
+  $FrQFT_g_footnote_text_EreignHori             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Harrison:Kosmologie:1983}, Kap. 9 Schwarze Löcher, S. 291-323, hier S. 301-322. \\\\ Internet: \\\\ Vgl. \cite{wiki:Ereignishorizont2013}.';
+  $FrQFT_g_footnote_text_EreignHoriFeuerwand    = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Polchinski:FeuerwandAmHorizont:2015}.';
+  $FrQFT_g_footnote_text_FraktalLoestUnendlichk = 'Vgl. \cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, S. 19.';
+  $FrQFT_g_footnote_text_GesetzeDerFormMarkedSpaceUnmarkedSpace = '\color{*Bearb}{(Primärliteratur einfügen!!!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GesetzeDerForm:2018}, Unmarked Space. \\\\ Gute Veranschaulichung, obwohl eigentlich nicht zitierfähig: \\\\ Vgl. \cite{UnbekannterAuthorFHVorarlberg:GesetzeDerFormWasIstEinSystem:2018}.';
+  $FrQFT_g_footnote_text_Gleichzeitigkeit       = 'Vgl. \cite{Weiss:AltToSpeedOfLight2006}, IV. Medium transformation, A. Properties of medium transformation, 3. Simultaneity, S. 12. \\\\ Vgl. \cite{Selleri:EinsteinLorentz1998}, Kap. 6. Zeit und Bewegung, 6. Gleichzeitigkeit und Laufzeit, S. 162-166. \\\\ Internet: \\\\ Vgl. \cite{wiki:RelativitaetDerGleichzeitigkeit:2017}.';
+  $FrQFT_g_footnote_text_GraviDurchLichtbeug    = 'Vgl. Kapitel \jumpname{OM:FrQFT:Quantengravitation:Mechanismus-der-Gravitation} \\\\ Vgl. \cite{Giese:TheOrigOfGravity2011}, Kap. 3 Relationship between Gravity and the Basic Particle Model, S. 4-6, hier S. 5-6. \\\\ Vgl. \cite{Huss:GFTv7.243j2009}, 5.2.2 Wechselwirkung von potenzialen Photonen-Beugungssystemen, S. 44-50, hier S. 45-46, Abbildung 5.6, S. 47. Dies ist die älteste im Netz veröffentlichte Version, die dies enthält. Die Idee ist aber schon viel älter. \color{*Bearb}{Mindestens aus dem Jahr 2003. Siehe „Persönliche Äußerung zur Relativistische Gravitonendynamik (RGD) und zur Gravitonenflusstheorie (GFT), als Entwurf von Wolfgang Huß“, Variante 5.08, vom 23.12.2003.}';
+  $FrQFT_g_footnote_text_GraviLichtbeug         = 'Vgl. Kapitel \jumpname{OM:FrQFT:Quantengravitation:Lichtverlangsamung} und \jumpname{OM:FrQFT:Quantengravitation:Lichtbeugung} \\\\ Hier wird ohne die Quanten-Fluss-Theorie noch nicht die ganz exakte Formel hergeleitet, aber strukturell stimmt sie schon: Vgl. \cite{Giese:TheOrigOfGravity2011}, Kap. 6.1 The Variation of the Speed of Light, S. 8-9, sowie Appendix C Variation in the Speed of Light, S. 19-22. \\\\ Vgl. \cite{Huss:GFTv7.243j2009}, 3.2 Physikalische Realisierung der Grundannahmen, S. 30-35, hier S. 34, Abbildung 5.5, S. 47. Dies ist die älteste im Netz veröffentlichte Version, die dies enthält. Die Idee ist aber schon viel älter. \color{*Bearb}{Etwa aus dem Jahr X.} \\\\ ART: \\\\ Vgl. \cite{Shapiro:FourthTestOfGeneralRelativity:1964:PhysRevLett.13.789}. \\\\ Internet: \\\\ Vgl. \cite{wiki:ShapiroVerzoegerung:2019}.';
+  $FrQFT_g_footnote_text_GraviLichtbeugART      = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ART2013}, Physikalische Effekte, Lichtablenkung und Lichtverzögerung.';
+  $FrQFT_g_footnote_text_GraviRotVersch         = 'Vgl. \cite{Fliessbach:ART1998}, Teil III Physikalische Grundlagen der ART, Kap. 12 Gravitationsrotverschiebung, S. 58-64. \\\\ Vgl. \cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, S. 5-6. \\\\ Vgl. \cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290, hier S. 275-278; Kap. 9 Schwarze Löcher, S. 291-323, hier S. 295, ergänzendes S. 297, 320; Kap. 11 Rotverschiebungen, S. 362-389, hier S. 369. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Giulini:EinsteinImQuantentest2013}, 60-61. \\\\ Internet: \\\\ Vgl. \cite{wiki:Rotverschiebung:2015}, Gravitative Rot- und Blauverschiebung. \\\\ Vgl. \cite{wiki:GravitationalRedshift:2015}. \\\\ Vgl. \cite{wiki:ART2013}, Gravitative Zeitdilatation und Rotverschiebung.';
+  $FrQFT_g_footnote_text_Gravitation            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Gravitation:2015}.';
+  $FrQFT_g_footnote_text_HeisenbUnschaerf       = 'Vgl. \cite{Heisenberg:UeberQuantKinMech1927}. \\\\ Vgl. \cite{Heisenberg:UeberQuantKinMech1927Scan}. \\\\ Internet: \\\\ Vgl. \cite{wiki:HeisenbergUnschaerferel2012}.';
+  $FrQFT_g_footnote_text_HeisenbUnschaerfAbzInt = 'Vgl. \cite{Treitz:Unbestimmtheit2010}.';
+  $FrQFT_g_footnote_text_HiggsMech              = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:HiggsMechanismus2014}.';
+  $FrQFT_g_footnote_text_HiggsMechAnalog        = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:HiggsMechanismus2014}, Populärwissenschaftliche Interpretation. \\\\ Vgl. \cite{Hagner:HiggsMechanismusOnline2009}, S. 5.';
+  $FrQFT_g_footnote_text_HiggsPotenz            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:HiggsMechanismus2014}, Higgs-Potential (mit Veranschaulichung). \\\\ Vgl. \cite{Mueller:HiggsTeilchen-LexikonDerAstrophysik2007}, Symmetriebrechung anschaulich.';
+  $FrQFT_g_footnote_text_Hintergrundunabh       = 'Vgl. \cite{Smolin:ZukunftPhysik2009}, Kap. 6 Quantengravitation: Am Scheideweg, S. 126-149. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Smolin:QuantRaum2004}, S. 57. \\\\ Internet: \\\\ Vgl. \cite{Smolin:SchauspielVeraeBuehne2005}.';
+  $FrQFT_g_footnote_text_IndNachweisHiggsFeld   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Luest:VomHiggsZurWeltformel2013}, S. 54-56. \\\\ Vgl. \cite{Tonelli:WegZumHiggs2012}. \\\\ Internet: \\\\ Vgl. \cite{wiki:HiggsBoson2013}, hier Higgs-Teilchen im Standardmodell.';
+  $FrQFT_g_footnote_text_InertSys               = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Inertialsystem2014}.';
+  $FrQFT_g_footnote_text_Neutrinos              = 'Vgl. \cite{Fritzsch:Mikrokosmos2012}, 7. Kap. Oszillierende Neutrinos, S. 119-127. \\\\ Vgl. \cite{wiki:Neutrino2013}.';
+  $FrQFT_g_footnote_text_Natuerlichkeit         = '\color{*Bearb}{(Primärliteratur einfügen!!!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Gast:AmEndeDerNatuerlichkeit:2018}. \\\\ Internet: \\\\ \cite{wiki:Natuerlichkeitsproblem:2022}.';
+  $FrQFT_g_footnote_text_NotNeuePhysik          = '\color{*Bearb}{(Primärliteratur einfügen!!!)} \\\\ Vgl. \cite{Smolin:ZukunftPhysik2009}, Kap. 1 Die fünf großen Probleme der theoretischen Physik, S. 31-48. \\\\ Populärwissenschaftliche Literatur: \\\\ Vgl. \cite{Kiefer:WegZurQG2012}, S. 34-35, 38. \\\\ Vgl. \cite{Kroupa:SMKPruefstand2010}, S. 30-31. \\\\ Vgl. \cite{Nicolai:AufPhysWeg21j2008}, S. 31. \\\\ Vgl. \cite{Boerner:DunkEnergie2008}, S. 43. \\\\ Vgl. \cite{Nicolai:GrossVereinig2005}, S. 84-85. \\\\ Vgl. \cite{Smolin:QuantRaum2004}, S. 56. \\\\ Video: \\\\ Vgl. \cite{SpektrumDerWissenschaft:WieFunktioniertDieSchwerkraftAufQuantenebene:2017}';
+  $FrQFT_g_footnote_text_MachPrinz              = 'Vgl. \cite{Fliessbach:ART1998}, Teil IX Dynamische Sternmodelle, Kap. 44 Isotrope zeitabhängige Metrik und Birkhoff-Theorem, Machsches Prinzip, S. 253-254. \\\\ Vgl. \cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290, hier S. 278-282. \\\\ Vgl. \cite{Born:RTEinsteins1969}, Kap. VII. Die allgemeine Relativitätstheorie Einsteins, S. 266-324, hier S. 311-321, besonders 268, 311, 318. \\\\ Internet: \\\\ Vgl. \cite{wiki:MachschesPrinzip2014}.';
   // #: Siehe auch für Veränderungen "FrQFT_g_footnote_text_LGEinZweiWeg".
-  $FrQFT_g_footnote_text_MediumMessenLGEinZweiWeg = 'Das wir unsere Relativgeschwindigkeit im Medium nicht messen können, dass liegt daran, dass wir nur in der Lage sind die Zweiweg-Lichtgeschwindigkeit zu messen, nicht aber die Einweg-Lichtgeschwindigkeit: \\\\ \\const{FrQFT_g_footnote_text_LGEinZweiWeg}';
-  $FrQFT_g_footnote_text_MichelsonExp           = 'Vgl. \\cite{Herrmann:RotatingOpticalCavityExperimentTestingLorentzInvariance:2009}. \\\\ Vgl. \\cite{Michelson:RelativeMotionInLumiEther1887}. Siehe auch die Deutsche Übersetzung: \\cite{Michelson:MichelMorExperi2011}. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, S. 60. \\\\ Internet: \\\\ Vgl. \\cite{wiki:MichelsonMorleyExperiment2015}.';
-  $FrQFT_g_footnote_text_MOND                   = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Lesch:Kosmologie2006}, Kap. II. Dunkle Materie, MOND, S. 85-89. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{wiki:ModifizierteNewtonscheDynamik2013}. \\\\ Vgl. \\cite{Kroupa:SMKPruefstand2010}, S. 31. \\\\ Vgl. \\cite{Milgrom:DunkMat2002}, S. 36-41.';
-  $FrQFT_g_footnote_text_Kosmoi                 = 'In der Quanten-Fluss-Theorie werden die Begriffe Universum und Kosmos getrennt. Unser Kosmos bleibt das, was wir als Beobachter sehen, wenn wir mit unseren Teleskopen in den Weltraum schauen. Als Kosmos im Allgemeinen wird aber auch das Innere eines Schwarzen Lochs bezeichnet. Dadurch gibt es nicht nur unseren Kosmos, sondern viele Kosmoi. Das Universum meint alle gestaffelten Kosmoi gemeinsam.';
-  $FrQFT_g_footnote_text_KosmoPrinz             = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Urknall2015}, Grundannahmen, Kosmologisches Prinzip.';
-  $FrQFT_g_footnote_text_KosmoZeit              = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{MaxPlanckInstituteForGravitationalPhysics:KosmischeZeit:2015}.';
-  $FrQFT_g_footnote_text_KosmosEuklFlach        = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Marinoni:AGeometricMeasureOfDarkEnergyWithPairsOfGalaxies2010}. \\\\ Vgl. \cite{Lesch:Kosmologie2006}, hier S. 144, 201. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Boerner:DunkEnergie2008}, hier S. 41-42. \\\\ Vgl. \\cite{Freedman:ExpUni2003}. \\\\ Internet: \\\\ \\color{*Bearb}{(Internetliteratur einfügen!)}';
-  $FrQFT_g_footnote_text_LaengenkontrBew        = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Born:RTEinsteins1969}, Kap. VI. Das spezielle Einsteinsche Relativitätsprinzip, 194-266, hier S. 212-216. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Lorentzkontraktion2015}.';
-  $FrQFT_g_footnote_text_LaengenkontrBewFrQFT   = 'Vgl. \\cite{Giese:RelaContra2009}. \\\\ Vgl. \\cite{Weiss:AltToSpeedOfLight2006}, IV. Medium transformation, A. Properties of medium transformation, 1. Length contraction, S. 12.';
-  $FrQFT_g_footnote_text_LaengenkontrGravFrQFT  = 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, S. 19-22. Bei veränderlicher Lichtgeschwindigkeit im Gravitationsfeld ist der Mechanismus der realen Längenkontraktion durch Bewegung hierauf übertragbar: Vgl. \\cite{Giese:RelaContra2009}.';
-  $FrQFT_g_footnote_text_LHC                    = 'Vgl. \\cite{wiki:LHC2013}.';
-  $FrQFT_g_footnote_text_Lichtuhr               = '\\color{*Bearb}{(Primärliteratur einfügen! Z.B. \\cite{Selleri:EinsteinLorentz1998}, S. XXX.)} \\\\ Internet: \\\\ Vgl. \\cite{Poessel:VonDerLichtuhrZurZeitdilatation2010}. \\\\ Vgl. \\cite{wiki:Zeitdilatation2014}, Zeitdilatation durch relative Bewegung, Lichtuhr.';
-  $FrQFT_g_footnote_text_LG                     = 'Internationaler Standard: Vgl. \\cite{NIST:CODATASpeedLightVac2011}. \\\\ Internet: \\\\ \\color{*Bearb}{Wiki einpflegen.}';
+  $FrQFT_g_footnote_text_MediumMessenLGEinZweiWeg = 'Das wir unsere Relativgeschwindigkeit im Medium nicht messen können, dass liegt daran, dass wir nur in der Lage sind die Zweiweg-Lichtgeschwindigkeit zu messen, nicht aber die Einweg-Lichtgeschwindigkeit: \\\\ \const{FrQFT_g_footnote_text_LGEinZweiWeg}';
+  $FrQFT_g_footnote_text_MichelsonExp           = 'Vgl. \cite{Herrmann:RotatingOpticalCavityExperimentTestingLorentzInvariance:2009}. \\\\ Vgl. \cite{Michelson:RelativeMotionInLumiEther1887}. Siehe auch die Deutsche Übersetzung: \cite{Michelson:MichelMorExperi2011}. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Giulini:EinsteinImQuantentest2013}, S. 60. \\\\ Internet: \\\\ Vgl. \cite{wiki:MichelsonMorleyExperiment2015}.';
+  $FrQFT_g_footnote_text_MOND                   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Lesch:Kosmologie2006}, Kap. II. Dunkle Materie, MOND, S. 85-89. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{wiki:ModifizierteNewtonscheDynamik2013}. \\\\ Vgl. \cite{Kroupa:SMKPruefstand2010}, S. 31. \\\\ Vgl. \cite{Milgrom:DunkMat2002}, S. 36-41.';
+  $FrQFT_g_footnote_text_Kosmoi                 = 'In der Quanten-Fluss-Theorie werden die Begriffe Universum und Kosmos getrennt. Unser Kosmos bleibt das, was wir als Beobachter sehen, wenn wir mit unseren Teleskopen in den Weltraum schauen. Als Kosmos im Allgemeinen wird aber auch das Innere eines Schwarzen Lochs bezeichnet. Dadurch gibt es nicht nur unseren Kosmos, sondern viele Kosmoi. Das Universum meint alle geschachtelten Kosmoi gemeinsam.';
+  $FrQFT_g_footnote_text_KosmoPrinz             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Urknall2015}, Grundannahmen, Kosmologisches Prinzip.';
+  $FrQFT_g_footnote_text_KosmoZeit              = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{MaxPlanckInstituteForGravitationalPhysics:KosmischeZeit:2015}.';
+  $FrQFT_g_footnote_text_KosmosEuklFlach        = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Marinoni:AGeometricMeasureOfDarkEnergyWithPairsOfGalaxies2010}. \\\\ Vgl. \cite{Lesch:Kosmologie2006}, hier S. 144, 201. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Boerner:DunkEnergie2008}, hier S. 41-42. \\\\ Vgl. \cite{Freedman:ExpUni2003}. \\\\ Internet: \\\\ \color{*Bearb}{(Internetliteratur einfügen!)}';
+  $FrQFT_g_footnote_text_LaengenkontrBew        = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Born:RTEinsteins1969}, Kap. VI. Das spezielle Einsteinsche Relativitätsprinzip, 194-266, hier S. 212-216. \\\\ Internet: \\\\ Vgl. \cite{wiki:Lorentzkontraktion2015}.';
+  $FrQFT_g_footnote_text_LaengenkontrBewFrQFT   = 'Vgl. \cite{Giese:RelaContra2009}. \\\\ Vgl. \cite{Weiss:AltToSpeedOfLight2006}, IV. Medium transformation, A. Properties of medium transformation, 1. Length contraction, S. 12.';
+  $FrQFT_g_footnote_text_LaengenkontrGravFrQFT  = 'Vgl. \cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, S. 19-22. Bei veränderlicher Lichtgeschwindigkeit im Gravitationsfeld ist der Mechanismus der realen Längenkontraktion durch Bewegung hierauf übertragbar: Vgl. \cite{Giese:RelaContra2009}.';
+  $FrQFT_g_footnote_text_LHC                    = 'Vgl. \cite{wiki:LHC2013}.';
+  $FrQFT_g_footnote_text_Lichtuhr               = '\color{*Bearb}{(Primärliteratur einfügen! Z.B. \cite{Selleri:EinsteinLorentz1998}, S. X.)} \\\\ Internet: \\\\ Vgl. \cite{Poessel:VonDerLichtuhrZurZeitdilatation2010}. \\\\ Vgl. \cite{wiki:Zeitdilatation2014}, Zeitdilatation durch relative Bewegung, Lichtuhr.';
+  $FrQFT_g_footnote_text_LG                     = 'Internationaler Standard: Vgl. \cite{NIST:CODATASpeedLightVac2011}. \\\\ Internet: \\\\ \color{*Bearb}{Wiki einpflegen.}';
   // #: Siehe auch für Veränderungen "FrQFT_g_footnote_text_MediumMessenLGEinZweiWeg".
-  $FrQFT_g_footnote_text_LGEinZweiWeg           = 'Vgl. \\cite{Selleri:EinsteinLorentz1998}, Kap. 4. Nichtinvarianz der Ein-Weg-Lichtgeschwindigkeit, S. 75-110. \\\\ Internet: \\\\ Vgl. \\cite{wiki:EinwegLichtgeschwindigkeit2014}.';
+  $FrQFT_g_footnote_text_LGEinZweiWeg           = 'Vgl. \cite{Selleri:EinsteinLorentz1998}, Kap. 4. Nichtinvarianz der Ein-Weg-Lichtgeschwindigkeit, S. 75-110. \\\\ Internet: \\\\ Vgl. \cite{wiki:EinwegLichtgeschwindigkeit2014}.';
   $FrQFT_g_footnote_text_LGUeberLG              = 'Da Informationen nur über die translative Lichtgeschwindigkeit der Wirkungsquanten transportiert werden, ergibt sich kein Informationsfuss mit Überlichtgeschwindigkeit und damit kein Widerspruch zu den Beobachtungen und anerkannten Theorien!';
-  $FrQFT_g_footnote_text_LorentzAetherTh        = 'Vgl. \\cite{Selleri:EinsteinLorentz1998}. \\\\ Vgl. \\cite{Lorentz:AbhandlungTheoPhysik1907}. \\\\ Vgl. \\cite{Lorentz:TheorieElecOptBewKoerper1895Scan}. \\\\ Vgl. \\cite{Lorentz:TheorieElecOptBewKoerper1895Html}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:LorentzscheAethertheorie2014}. \\\\ Vgl. \\cite{wiki:SpezielleRelativitaetstheorie2013}, Verhältnis zu anderen Theorien, Äthertheorien.';
-  $FrQFT_g_footnote_text_LorentzAetherThGleichzeit = 'Vgl. \\cite{Giese:RelaContra2009}. \\\\ Vgl. \\cite{Giese:WhyTimeSlowing2009}. \\\\ Vgl. \\cite{Weiss:AltToSpeedOfLight2006}. \\\\ Vgl. \\cite{Selleri:EinsteinLorentz1998}, Kap. 3. Das Relativitätsprinzip und die Natur der Zeit, 3.2 Das Nachgehen sich bewegender Uhren, S. 41-45. \\\\ Vgl. \\cite{Lorentz:AbhandlungTheoPhysik1907}. \\ Vgl. \\cite{Lorentz:TheorieElecOptBewKoerper1895Scan}. \\\\ Vgl. \\cite{Lorentz:TheorieElecOptBewKoerper1895Html}.';
-  $FrQFT_g_footnote_text_LorentzKontrFelder     = 'Im Besonderen erarbeitete, vermutlich als erster, Oliver Heaviside die Kontraktion der Form von in einem Medium oder Äther bewegten, elektromagnetischen Feldern. Die Kontraktion einer bewegten Kugel oder Sphere wurde nach ihm als „Heaviside-Ellipsoid“ benannt: \\\\ Vgl. \\cite{Giese:RelaContra2009}. \\\\ Vgl. \\cite{Sexl:RelativitaetGruppenTeilchen:1976}, S. 96. \\\\ Vgl. \\cite{Heaviside:OnTheElectromagneticEffectsDueToTheMotionOfElectrificationThroughADielectric:1889.2014}. \\\\ Vgl. \\cite{Heaviside:OnTheElectromagneticEffectsDueToTheMotionOfElectrificationThroughADielectric:1889.2009}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Lorentzkontraktion2015}. \\\\ Vgl. \\cite{wiki:GeschichteDerLorentz-Transformation:2018}, Heaviside, Thomson, Searle (1888, 1889, 1896). \\\\ Vgl. \\cite{wiki:MichelsonMorleyExperiment2015}, Erklärung, Spezielle Relativitätstheorie.';
-  $FrQFT_g_footnote_text_LQG                    = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Kiefer:WegZurQG2012}, hier S. 40-41. \\\\ Vgl. \\cite{Giesel:LoopQuantengravitation2011}. \\\\ Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 15 Die Physik nach der Stringtheorie, S. 322-347, hier S. 334-342. \\\\ Vgl. \\cite{Smolin:QuantRaum2004}. \\\\ Vgl. \cite{Weinberg:TheorieFuerAlles2001}, hier S. 27. \\\\ Internet: \\\\ Vgl. \\cite{MaxPlanckInstituteForGravitationalPhysics:RelativitaetUndQuanten2013}, Schleifen-Quantengravitation. \\\\ Vgl. \\cite{wiki:Schleifenquantengravitation2013}.';
-  $FrQFT_g_footnote_text_Paarbildung            = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Paarbildung:2018}.';
-  $FrQFT_g_footnote_text_Photon                 = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Photon:2015}.';
-  $FrQFT_g_footnote_text_PhotonFrequenzGravi    = 'Vgl. \\cite{Fliessbach:ART1998}, Teil III Physikalische Grundlagen der ART, Kap. 12 Gravitationsrotverschiebung, S. 58-64, hier S. 61. \\\\ Internet: \\\\ Vgl. \\cite{wiki:GravitationalRedshift:2015}, Definition. \\\\ Vgl. \\cite{wiki:Ereignishorizont2013}, Bedeutung und Eigenschaften des Ereignishorizonts eines Schwarzen Lochs, Gravitative Rotverschiebung.';
-  $FrQFT_g_footnote_text_PhysikKrise            = '\\color{*Bearb}{(Mehr Verweise!)} \\\\ Vgl. \\cite{Falkowski:HiggsOnTheMoon:2017}.';
-  $FrQFT_g_footnote_text_PoundRebka             = '\\hidden{Gefunden auf http://de.wikipedia.org/wiki/Tests_der_allgemeinen_Relativitätstheorie#cite_note-Hafele1-35: Chou, C. W.; Hume, D. B.; Rosenband, T.; Wineland, D. J.: Optical Clocks and Relativity. In: Science. 329, Nr. 5999, 2010, S. 1630-1633. Bibcode: 2010Sci...329.1630C. doi:10.1126/science.1192720. \\\\ Gravity Probe A (1976) \\\\ }Vgl. \\cite{Fliessbach:ART1998}, Teil III Physikalische Grundlagen der ART, Kap. 12 Gravitationsrotverschiebung, S. 58-64. \\\\ Vgl. \\cite{Vessot:TestOfRelativGravi1980}. \\\\ Vgl. \\cite{Pound:PoundSniderExper1965}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:PoundRebkaExperiment2013}.';
-  $FrQFT_g_footnote_text_ProblemDerGleichzeit_Bearb = 'Vgl. \\cite{Maudlin:QuantumNon-LocalityAndRelativity2011}, S. \\color{*Bearb}{(nachlesen)}. \\\\ Vgl. \\cite{Kiefer:DoesTimeExistInQuantumGravity2009}, \\color{*Bearb}{S. XXX}. \\\\ Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 15 Die Physik nach der Stringtheorie, S. 322-347, hier S. 327. \\\\ Vgl. \\cite{Weiss:AltToSpeedOfLight2006}, IV. Medium transformation, S. 11 und A. Properties of medium transformation, 3. Simultaneity, S. 12. \\\\ Vgl. \\cite{Selleri:EinsteinLorentz1998}, S.\\color{*Bearb}{(nachlesen: so etwa S. 145 oder S. 198)}. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Kiefer:WegZurQG2012}, hier S. 37. \\\\ Vgl. \\cite{Callender:ZeitIllusion2010}, hier S. 34. \\color{*Bearb}{(Er hat ein Buch dazu geschrieben, welches im Artikel Erwähnung findet.)} \\\\ Vgl. \\cite{Albert:VerschraenkungEinstein2009}, hier S. 36.';
-  $FrQFT_g_footnote_text_ProblemDerNaturkonstanten = '\\color{*Bearb}{(Primärliteratur einfügen!!!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, S. 14. \\\\ Vgl. \\cite{Gast:AmEndeDerNatuerlichkeit:2018}. \\\\ Internet: \\\\ \\cite{wiki:Natuerlichkeitsproblem:2022}.';
-  $FrQFT_g_footnote_text_ProblemDerZeit         = 'Vgl. \\cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, Kap. 4 Äquivalenzprinzip und Quantenmechanik, S. 13. \\\\ Vgl. \\cite{Kiefer:DoesTimeExistInQuantumGravity2009}. \\\\ Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 15 Die Physik nach der Stringtheorie, S. 322-347, hier S. 344-346. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Giulini:EinsteinImQuantentest2013}, S. 63-64, hier einfach als Widerspruch bezeichnet. \\\\ Vgl. \\cite{Kiefer:WegZurQG2012}, S. 37.';
+  $FrQFT_g_footnote_text_LorentzAetherTh        = 'Vgl. \cite{Selleri:EinsteinLorentz1998}. \\\\ Vgl. \cite{Lorentz:AbhandlungTheoPhysik1907}. \\\\ Vgl. \cite{Lorentz:TheorieElecOptBewKoerper1895Scan}. \\\\ Vgl. \cite{Lorentz:TheorieElecOptBewKoerper1895Html}. \\\\ Internet: \\\\ Vgl. \cite{wiki:LorentzscheAethertheorie2014}. \\\\ Vgl. \cite{wiki:SpezielleRelativitaetstheorie2013}, Verhältnis zu anderen Theorien, Äthertheorien.';
+  $FrQFT_g_footnote_text_LorentzAetherThGleichzeit = 'Vgl. \cite{Giese:RelaContra2009}. \\\\ Vgl. \cite{Giese:WhyTimeSlowing2009}. \\\\ Vgl. \cite{Weiss:AltToSpeedOfLight2006}. \\\\ Vgl. \cite{Selleri:EinsteinLorentz1998}, Kap. 3. Das Relativitätsprinzip und die Natur der Zeit, 3.2 Das Nachgehen sich bewegender Uhren, S. 41-45. \\\\ Vgl. \cite{Lorentz:AbhandlungTheoPhysik1907}. \\ Vgl. \cite{Lorentz:TheorieElecOptBewKoerper1895Scan}. \\\\ Vgl. \cite{Lorentz:TheorieElecOptBewKoerper1895Html}.';
+  $FrQFT_g_footnote_text_LorentzKontrFelder     = 'Im Besonderen erarbeitete, vermutlich als erster, Oliver Heaviside die Kontraktion der Form von in einem Medium oder Äther bewegten, elektromagnetischen Feldern. Die Kontraktion einer bewegten Kugel oder Sphere wurde nach ihm als „Heaviside-Ellipsoid“ benannt: \\\\ Vgl. \cite{Giese:RelaContra2009}. \\\\ Vgl. \cite{Sexl:RelativitaetGruppenTeilchen:1976}, S. 96. \\\\ Vgl. \cite{Heaviside:OnTheElectromagneticEffectsDueToTheMotionOfElectrificationThroughADielectric:1889.2014}. \\\\ Vgl. \cite{Heaviside:OnTheElectromagneticEffectsDueToTheMotionOfElectrificationThroughADielectric:1889.2009}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Lorentzkontraktion2015}. \\\\ Vgl. \cite{wiki:GeschichteDerLorentz-Transformation:2018}, Heaviside, Thomson, Searle (1888, 1889, 1896). \\\\ Vgl. \cite{wiki:MichelsonMorleyExperiment2015}, Erklärung, Spezielle Relativitätstheorie.';
+  $FrQFT_g_footnote_text_LQG                    = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Kiefer:WegZurQG2012}, hier S. 40-41. \\\\ Vgl. \cite{Giesel:LoopQuantengravitation2011}. \\\\ Vgl. \cite{Smolin:ZukunftPhysik2009}, Kap. 15 Die Physik nach der Stringtheorie, S. 322-347, hier S. 334-342. \\\\ Vgl. \cite{Smolin:QuantRaum2004}. \\\\ Vgl. \cite{Weinberg:TheorieFuerAlles2001}, hier S. 27. \\\\ Internet: \\\\ Vgl. \cite{MaxPlanckInstituteForGravitationalPhysics:RelativitaetUndQuanten2013}, Schleifen-Quantengravitation. \\\\ Vgl. \cite{wiki:Schleifenquantengravitation2013}.';
+  $FrQFT_g_footnote_text_Paarbildung            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Paarbildung:2018}.';
+  $FrQFT_g_footnote_text_Photon                 = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Photon:2015}.';
+  $FrQFT_g_footnote_text_PhotonFrequenzGravi    = 'Vgl. \cite{Fliessbach:ART1998}, Teil III Physikalische Grundlagen der ART, Kap. 12 Gravitationsrotverschiebung, S. 58-64, hier S. 61. \\\\ Internet: \\\\ Vgl. \cite{wiki:GravitationalRedshift:2015}, Definition. \\\\ Vgl. \cite{wiki:Ereignishorizont2013}, Bedeutung und Eigenschaften des Ereignishorizonts eines Schwarzen Lochs, Gravitative Rotverschiebung.';
+  $FrQFT_g_footnote_text_PhysikKrise            = '\color{*Bearb}{(Mehr Verweise!)} \\\\ Vgl. \cite{Falkowski:HiggsOnTheMoon:2017}.';
+  $FrQFT_g_footnote_text_PoundRebka             = '\hidden{Gefunden auf http://de.wikipedia.org/wiki/Tests_der_allgemeinen_Relativitätstheorie#cite_note-Hafele1-35: Chou, C. W.; Hume, D. B.; Rosenband, T.; Wineland, D. J.: Optical Clocks and Relativity. In: Science. 329, Nr. 5999, 2010, S. 1630-1633. Bibcode: 2010Sci...329.1630C. doi:10.1126/science.1192720. \\\\ Gravity Probe A (1976) \\\\ }Vgl. \cite{Fliessbach:ART1998}, Teil III Physikalische Grundlagen der ART, Kap. 12 Gravitationsrotverschiebung, S. 58-64. \\\\ Vgl. \cite{Vessot:TestOfRelativGravi1980}. \\\\ Vgl. \cite{Pound:PoundSniderExper1965}. \\\\ Internet: \\\\ Vgl. \cite{wiki:PoundRebkaExperiment2013}.';
+  $FrQFT_g_footnote_text_ProblemDerGleichzeit_Bearb = 'Vgl. \cite{Maudlin:QuantumNon-LocalityAndRelativity2011}, S. \color{*Bearb}{(nachlesen)}. \\\\ Vgl. \cite{Kiefer:DoesTimeExistInQuantumGravity2009}, \color{*Bearb}{S. X}. \\\\ Vgl. \cite{Smolin:ZukunftPhysik2009}, Kap. 15 Die Physik nach der Stringtheorie, S. 322-347, hier S. 327. \\\\ Vgl. \cite{Weiss:AltToSpeedOfLight2006}, IV. Medium transformation, S. 11 und A. Properties of medium transformation, 3. Simultaneity, S. 12. \\\\ Vgl. \cite{Selleri:EinsteinLorentz1998}, S.\color{*Bearb}{(nachlesen: so etwa S. 145 oder S. 198)}. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Kiefer:WegZurQG2012}, hier S. 37. \\\\ Vgl. \cite{Callender:ZeitIllusion2010}, hier S. 34. \color{*Bearb}{(Er hat ein Buch dazu geschrieben, welches im Artikel Erwähnung findet.)} \\\\ Vgl. \cite{Albert:VerschraenkungEinstein2009}, hier S. 36.';
+  $FrQFT_g_footnote_text_ProblemDerNaturkonstanten = '\color{*Bearb}{(Primärliteratur einfügen!!!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, S. 14. \\\\ Vgl. \cite{Gast:AmEndeDerNatuerlichkeit:2018}. \\\\ Internet: \\\\ \cite{wiki:Natuerlichkeitsproblem:2022}.';
+  $FrQFT_g_footnote_text_ProblemDerZeit         = 'Vgl. \cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, Kap. 4 Äquivalenzprinzip und Quantenmechanik, S. 13. \\\\ Vgl. \cite{Kiefer:DoesTimeExistInQuantumGravity2009}. \\\\ Vgl. \cite{Smolin:ZukunftPhysik2009}, Kap. 15 Die Physik nach der Stringtheorie, S. 322-347, hier S. 344-346. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Giulini:EinsteinImQuantentest2013}, S. 63-64, hier einfach als Widerspruch bezeichnet. \\\\ Vgl. \cite{Kiefer:WegZurQG2012}, S. 37.';
   // #: Siehe auch für Veränderungen "$FrQFT_g_footnote_text_StarkeWW".
-  $FrQFT_g_footnote_text_QCD                    = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Ent:DerKlebstoffDerWelt:2015}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Quantenchromodynamik2014}.';
-  $FrQFT_g_footnote_text_QED                    = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Quantenelektrodynamik2013}.';
-  $FrQFT_g_footnote_text_QFT                    = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Quantenfeldtheorie2013}.';
-  $FrQFT_g_footnote_text_QFTAbsolutZeit         = 'Vgl. \\cite{Kiefer:DoesTimeExistInQuantumGravity2009}, S. 2.\\hidden{Er hat dazu auch ein Buch: C. Kiefer, Quantum Gravity, second edition (Oxford University Press, Oxford, 2007).} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Kiefer:WegZurQG2012}, S. 37.';
-  $FrQFT_g_footnote_text_QFTGleichzeitVerschr_Bearb   = 'Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 15 Die Physik nach der Stringtheorie, S. 322-347, hier S. 327. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Kiefer:WegZurQG2012}, hier S. 37. \\\\ Vgl. \\cite{Callender:ZeitIllusion2010}, hier S. 34. \\color{*Bearb}{(Er hat ein Buch dazu geschrieben, welches im Artikel Erwähnung findet.)} \\\\ Vgl. \\cite{Albert:VerschraenkungEinstein2009}, hier S. 36. \\color{*Bearb}{(Es wird dort auf ein Buch zu diesem Thema verwiesen, siehe BibTeX.)}';
-  $FrQFT_g_footnote_text_QFTPruef               = 'Vgl. \\cite{Greene:ElegUniv2000}, Kap. 5 Notwendigkeit einer neuen Theorie, S. 145-160, hier S. 149-153. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Nicolai:AufPhysWeg21j2008}, S. 31. \\\\ Vgl. \\cite{Musser:EinsteinRecht2005}, S. 64. \\\\ Vgl. \\cite{Smolin:QuantRaum2004}, S. 55-56. \\\\ Internet: \\\\ Vgl. \\cite{Eidemueller:DieTuerInsDunkleUniversum:2016}.';
-  $FrQFT_g_footnote_text_QGMoeglOderNotwend     = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Tilloy:FuerImmerUnvereinbar:2019}. \\\\ Internet: \\\\ Vgl. \\cite{Hossenfelder:TheFiveMostPromisingWaysToQuantizeGravity:2019}.';
-  $FrQFT_g_footnote_text_QM                     = 'Vgl. \\cite{Feynman:Quantenmechanik2009}. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Poessel:AufAllenMoeglichenWegenZumZiel2006}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Quantenmechanik2013}.';
-  $FrQFT_g_footnote_text_QMKopenhagenerInter    = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:KopenhagenerDeutung:2019}.';
-  $FrQFT_g_footnote_text_QMMessproblem          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:QuantenmechanischeMessung:2019}.';
-  $FrQFT_g_footnote_text_QMMessproblKorrprobl   = 'Das Messproblem der Quantenmechanik ist ein Korrekturproblem: \\\\ Internet: \\\\ Vgl. \\cite{Hossenfelder:TheProblemWithQuantumMeasurements:2019}.';
-  $FrQFT_g_footnote_text_QMSchroedingergleich   = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Schroedingergleichung:2019}.';
-  $FrQFT_g_footnote_text_Quantengravi           = 'Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 6 Quantengravitation: Am Scheideweg, S. 126-149. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Kiefer:WegZurQG2012}. \\\\ Vgl. \\cite{Nicolai:AufPhysWeg21j2008}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Quantengravitation2013}. \\\\ Vgl. \\cite{MaxPlanckInstituteForGravitationalPhysics:RelativitaetUndQuanten2013}. \\\\ Vgl. \\cite{Smolin:SchauspielVeraeBuehne2005}.';
-  $FrQFT_g_footnote_text_Quantenphysik          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Quantenphysik2013}.';
-  $FrQFT_g_footnote_text_QuantenphysikUnvollst  = 'Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 1 Die fünf großen Probleme der theoretischen Physik, S. 31-48, hier S. 33.';
+  $FrQFT_g_footnote_text_QCD                    = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Ent:DerKlebstoffDerWelt:2015}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Quantenchromodynamik2014}.';
+  $FrQFT_g_footnote_text_QED                    = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Quantenelektrodynamik2013}.';
+  $FrQFT_g_footnote_text_QFT                    = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Quantenfeldtheorie2013}.';
+  $FrQFT_g_footnote_text_QFTAbsolutZeit         = 'Vgl. \cite{Kiefer:DoesTimeExistInQuantumGravity2009}, S. 2.\hidden{Er hat dazu auch ein Buch: C. Kiefer, Quantum Gravity, second edition (Oxford University Press, Oxford, 2007).} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Kiefer:WegZurQG2012}, S. 37.';
+  $FrQFT_g_footnote_text_QFTGleichzeitVerschr_Bearb   = 'Vgl. \cite{Smolin:ZukunftPhysik2009}, Kap. 15 Die Physik nach der Stringtheorie, S. 322-347, hier S. 327. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Kiefer:WegZurQG2012}, hier S. 37. \\\\ Vgl. \cite{Callender:ZeitIllusion2010}, hier S. 34. \color{*Bearb}{(Er hat ein Buch dazu geschrieben, welches im Artikel Erwähnung findet.)} \\\\ Vgl. \cite{Albert:VerschraenkungEinstein2009}, hier S. 36. \color{*Bearb}{(Es wird dort auf ein Buch zu diesem Thema verwiesen, siehe BibTeX.)}';
+  $FrQFT_g_footnote_text_QFTPruef               = 'Vgl. \cite{Greene:ElegUniv2000}, Kap. 5 Notwendigkeit einer neuen Theorie, S. 145-160, hier S. 149-153. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Nicolai:AufPhysWeg21j2008}, S. 31. \\\\ Vgl. \cite{Musser:EinsteinRecht2005}, S. 64. \\\\ Vgl. \cite{Smolin:QuantRaum2004}, S. 55-56. \\\\ Internet: \\\\ Vgl. \cite{Eidemueller:DieTuerInsDunkleUniversum:2016}.';
+  $FrQFT_g_footnote_text_QGMoeglOderNotwend     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Tilloy:FuerImmerUnvereinbar:2019}. \\\\ Internet: \\\\ Vgl. \cite{Hossenfelder:TheFiveMostPromisingWaysToQuantizeGravity:2019}.';
+  $FrQFT_g_footnote_text_QM                     = 'Vgl. \cite{Feynman:Quantenmechanik2009}. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Poessel:AufAllenMoeglichenWegenZumZiel2006}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Quantenmechanik2013}.';
+  $FrQFT_g_footnote_text_QMKopenhagenerInter    = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KopenhagenerDeutung:2019}.';
+  $FrQFT_g_footnote_text_QMMessproblem          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:QuantenmechanischeMessung:2019}.';
+  $FrQFT_g_footnote_text_QMMessproblKorrprobl   = 'Das Messproblem der Quantenmechanik ist ein Korrekturproblem: \\\\ Internet: \\\\ Vgl. \cite{Hossenfelder:TheProblemWithQuantumMeasurements:2019}.';
+  $FrQFT_g_footnote_text_QMSchroedingergleich   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Schroedingergleichung:2019}.';
+  $FrQFT_g_footnote_text_Quantengravi           = 'Vgl. \cite{Giulini:GravitationEquivalencePrincipleAndQuantumMechanics2013}, Kap. 5 Ausblick, S. 14-15. \\\\ Vgl. \cite{Smolin:ZukunftPhysik2009}, Kap. 6 Quantengravitation: Am Scheideweg, S. 126-149. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Giulini:EinsteinImQuantentest2013}, S. 62-64. \\\\ Vgl. \cite{Kiefer:WegZurQG2012}. \\\\ Vgl. \cite{Nicolai:AufPhysWeg21j2008}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Quantengravitation2013}. \\\\ Vgl. \cite{MaxPlanckInstituteForGravitationalPhysics:RelativitaetUndQuanten2013}. \\\\ Vgl. \cite{Smolin:SchauspielVeraeBuehne2005}.';
+  $FrQFT_g_footnote_text_Quantenphysik          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Quantenphysik2013}.';
+  $FrQFT_g_footnote_text_QuantenphysikUnvollst  = 'Vgl. \cite{Smolin:ZukunftPhysik2009}, Kap. 1 Die fünf großen Probleme der theoretischen Physik, S. 31-48, hier S. 33.';
   // #: Siehe auch für Veränderungen "$SpaLeb_g_footnote_text_BiologischeRegelung".
-  $FrQFT_g_footnote_text_Regelung               = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:BiologischeRegelung:2021}. \\\\ Vgl. \\cite{SpektrumAkademischerVerlag:Regelung:1999}.';
-  $FrQFT_g_footnote_text_RelatPrinzip           = 'Vgl. \\cite{Selleri:EinsteinLorentz1998}, Kap. 3. Das Relativitätsprinzip und die Natur der Zeit, S. 38-74. \\\\ Vgl. \\cite{Born:RTEinsteins1969}, Kap. VI. Das spezielle Einsteinsche Relativitätsprinzip, 194-266, hier S. 200-205. \\\\ Internet: \\\\ Vgl. \\cite{MaxPlanckInstituteForGravitationalPhysics:Relativitaetsprinzip2014}. \\\\ Vgl. \\cite{wiki:Relativitaetsprinzip2014}.';
-  $FrQFT_g_footnote_text_Renormierung           = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, S. 17, 19 und Kasten S. 21. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Renormierung:2018}.';
-  $FrQFT_g_footnote_text_RTKeinGleichzeit       = 'Vgl. \\cite{Kaku:EinsteinsWuerfel2010}, S. 59. \\\\ Vgl. \\cite{Weiss:AltToSpeedOfLight2006}, hier S. 8. \\\\ Vgl. \\cite{Selleri:EinsteinLorentz1998}, Kap. 3. Das Relativitätsprinzip und die Natur der Zeit, S. 38-74, hier S. 49-70. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Callender:ZeitIllusion2010}, hier S. 34. \\\\ Vgl. \\cite{Albert:VerschraenkungEinstein2009}, hier S. 36. \\\\ Internet: \\\\ Vgl. \\cite{wiki:RelativitaetDerGleichzeitigkeit:2017}. \\\\ Vgl. \\cite{wiki:LorentzscheAethertheorie2014}, Prinzipien und Konventionen, Die Rolle des Äthers. \\\\ Vgl. \\cite{wiki:SpezielleRelativitaetstheorie2013}, Lorentztransformationen, Gleichzeitigkeit.';
-  $FrQFT_g_footnote_text_Ruhemasse              = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{MaxPlanckInstituteForGravitationalPhysics:Ruhemasse:2022}. \\\\ Vgl. \\cite{wiki:Masse2013}, Spezielle Relativitätstheorie, Ruhemasse.';
-  $FrQFT_g_footnote_text_RZKruem                = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:ART2013}, Grundlegende Konzepte, Raumzeitkrümmung.';
-  $FrQFT_g_footnote_text_SchwLoch               = 'Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 9 Schwarze Löcher, S. 291-323. \\\\ Internet: \\\\ Vgl. \\cite{wiki:SchwarzesLoch2014}.';
-  $FrQFT_g_footnote_text_SchwarzschildMetrik    = 'Vgl. \\cite{Schwarzschild:UeberDasGravitationsfeldEinesMassenpunktes:1916.2014}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Schwarzschild-Metrik:2020}.';
-  $FrQFT_g_footnote_text_ShapiroVerzoegerung    = 'Vgl. \\cite{Shapiro:FourthTestOfGeneralRelativity:1964:PhysRevLett.13.789}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:ShapiroVerzoegerung:2019}.';
-  $FrQFT_g_footnote_text_Singularitaet          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:SingularitaetAstronomie:2022}.';
-  $FrQFT_g_footnote_text_SMK                    = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Peebles:Zustandsbericht2001}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Kosmologie2015}, Standardmodell.';
-  $FrQFT_g_footnote_text_SMT                    = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Kane:NeuePhysik2003}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Standardmodell2015}.';
-  $FrQFT_g_footnote_text_SpontSymBrech          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Spillner:SymmetriebruecheInDerNatur:2008}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:SpontaneSymmetriebrechung2014}. \\\\ Vgl. \\cite{wiki:Symmetriebrechung:2015}.';
-  $FrQFT_g_footnote_text_SRT                    = 'Vgl. \\cite{Fliessbach:ART1998}, Teil II Spezielle Relativitätstheorie, S. 7-38. \\\\ Vgl. \\cite{Born:RTEinsteins1969}, Kap. VI. Das spezielle Einsteinsche Relativitätsprinzip, 194-266. \\\\ Vgl. \\cite{Einstein:ZurElektrodynamikBewegterKoerper1905}. \\\\ Internet: \\\\ Vgl. \\cite{MaxPlanckInstituteForGravitationalPhysics:SpezielleRelativitaetstheorie2013}. \\\\ Vgl. \\cite{wiki:SpezielleRelativitaetstheorie2013}.';
-  $FrQFT_g_footnote_text_SRTlorenzInter         = 'Vgl. \\cite{Weiss:AltToSpeedOfLight2006}. \\\\ Vgl. \\cite{Selleri:EinsteinLorentz1998}, Kap. 7. Die geometrische und dynamische Interpretation der Speziellen Relativitätstheorie, S. 198-248. \\\\ Internet: \\\\ Vgl. \\cite{wiki:LorentzscheAethertheorie2014}. \\\\ Vgl. \\cite{wiki:SpezielleRelativitaetstheorie2013}, Verhältnis zu anderen Theorien, Äthertheorien.';
-  $FrQFT_g_footnote_text_ST                     = 'Vgl. \\cite{Greene:ElegUniv2000}. \\\\ \\color{*Bearb}{(Weitere Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Kiefer:WegZurQG2012}, hier S. 42-43. \\\\ Vgl. \\cite{Bousso:String2005}. \\\\ Internet: \\\\ Vgl. \\cite{MaxPlanckInstituteForGravitationalPhysics:RelativitaetUndQuanten2013}, Stringtheorie. \\\\ Vgl. \\cite{wiki:Stringtheorie2013}.';
+  $FrQFT_g_footnote_text_Regelung               = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:BiologischeRegelung:2021}. \\\\ Vgl. \cite{SpektrumAkademischerVerlag:Regelung:1999}.';
+  $FrQFT_g_footnote_text_RelatPrinzip           = 'Vgl. \cite{Selleri:EinsteinLorentz1998}, Kap. 3. Das Relativitätsprinzip und die Natur der Zeit, S. 38-74. \\\\ Vgl. \cite{Born:RTEinsteins1969}, Kap. VI. Das spezielle Einsteinsche Relativitätsprinzip, 194-266, hier S. 200-205. \\\\ Internet: \\\\ Vgl. \cite{MaxPlanckInstituteForGravitationalPhysics:Relativitaetsprinzip2014}. \\\\ Vgl. \cite{wiki:Relativitaetsprinzip2014}.';
+  $FrQFT_g_footnote_text_Renormierung           = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, S. 17, 19 und Kasten S. 21. \\\\ Internet: \\\\ Vgl. \cite{wiki:Renormierung:2018}.';
+  $FrQFT_g_footnote_text_RTKeinGleichzeit       = 'Vgl. \cite{Kaku:EinsteinsWuerfel2010}, S. 59. \\\\ Vgl. \cite{Weiss:AltToSpeedOfLight2006}, hier S. 8. \\\\ Vgl. \cite{Selleri:EinsteinLorentz1998}, Kap. 3. Das Relativitätsprinzip und die Natur der Zeit, S. 38-74, hier S. 49-70. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Callender:ZeitIllusion2010}, hier S. 34. \\\\ Vgl. \cite{Albert:VerschraenkungEinstein2009}, hier S. 36. \\\\ Internet: \\\\ Vgl. \cite{wiki:RelativitaetDerGleichzeitigkeit:2017}. \\\\ Vgl. \cite{wiki:LorentzscheAethertheorie2014}, Prinzipien und Konventionen, Die Rolle des Äthers. \\\\ Vgl. \cite{wiki:SpezielleRelativitaetstheorie2013}, Lorentztransformationen, Gleichzeitigkeit.';
+  $FrQFT_g_footnote_text_Ruhemasse              = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{MaxPlanckInstituteForGravitationalPhysics:Ruhemasse:2022}. \\\\ Vgl. \cite{wiki:Masse2013}, Spezielle Relativitätstheorie, Ruhemasse.';
+  $FrQFT_g_footnote_text_RZKruem                = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ART2013}, Grundlegende Konzepte, Raumzeitkrümmung.';
+  $FrQFT_g_footnote_text_SchwLoch               = 'Vgl. \cite{Harrison:Kosmologie:1983}, Kap. 9 Schwarze Löcher, S. 291-323. \\\\ Internet: \\\\ Vgl. \cite{wiki:SchwarzesLoch2014}.';
+  $FrQFT_g_footnote_text_SchwarzschildMetrik    = 'Vgl. \cite{Schwarzschild:UeberDasGravitationsfeldEinesMassenpunktes:1916.2014}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Schwarzschild-Metrik:2020}.';
+  $FrQFT_g_footnote_text_ShapiroVerzoegerung    = 'Vgl. \cite{Shapiro:FourthTestOfGeneralRelativity:1964:PhysRevLett.13.789}. \\\\ Internet: \\\\ Vgl. \cite{wiki:ShapiroVerzoegerung:2019}.';
+  $FrQFT_g_footnote_text_Singularitaet          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:SingularitaetAstronomie:2022}.';
+  $FrQFT_g_footnote_text_SMK                    = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Peebles:Zustandsbericht2001}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Kosmologie2015}, Standardmodell.';
+  $FrQFT_g_footnote_text_SMT                    = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Kane:NeuePhysik2003}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Standardmodell2015}.';
+  $FrQFT_g_footnote_text_SpontSymBrech          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Spillner:SymmetriebruecheInDerNatur:2008}. \\\\ Internet: \\\\ Vgl. \cite{wiki:SpontaneSymmetriebrechung2014}. \\\\ Vgl. \cite{wiki:Symmetriebrechung:2015}.';
+  $FrQFT_g_footnote_text_SRT                    = 'Vgl. \cite{Fliessbach:ART1998}, Teil II Spezielle Relativitätstheorie, S. 7-38. \\\\ Vgl. \cite{Born:RTEinsteins1969}, Kap. VI. Das spezielle Einsteinsche Relativitätsprinzip, 194-266. \\\\ Vgl. \cite{Einstein:ZurElektrodynamikBewegterKoerper1905}. \\\\ Internet: \\\\ Vgl. \cite{MaxPlanckInstituteForGravitationalPhysics:SpezielleRelativitaetstheorie2013}. \\\\ Vgl. \cite{wiki:SpezielleRelativitaetstheorie2013}.';
+  $FrQFT_g_footnote_text_SRTlorenzInter         = 'Vgl. \cite{Weiss:AltToSpeedOfLight2006}. \\\\ Vgl. \cite{Selleri:EinsteinLorentz1998}, Kap. 7. Die geometrische und dynamische Interpretation der Speziellen Relativitätstheorie, S. 198-248. \\\\ Internet: \\\\ Vgl. \cite{wiki:LorentzscheAethertheorie2014}. \\\\ Vgl. \cite{wiki:SpezielleRelativitaetstheorie2013}, Verhältnis zu anderen Theorien, Äthertheorien.';
+  $FrQFT_g_footnote_text_ST                     = 'Vgl. \cite{Greene:ElegUniv2000}. \\\\ \color{*Bearb}{(Weitere Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Kiefer:WegZurQG2012}, hier S. 42-43. \\\\ Vgl. \cite{Bousso:String2005}. \\\\ Internet: \\\\ Vgl. \cite{MaxPlanckInstituteForGravitationalPhysics:RelativitaetUndQuanten2013}, Stringtheorie. \\\\ Vgl. \cite{wiki:Stringtheorie2013}.';
   // #: Siehe auch für Veränderungen "$FrQFT_g_footnote_text_QCD".
-  $FrQFT_g_footnote_text_StarkeWW               = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Ent:DerKlebstoffDerWelt:2015}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:StarkeWechselwirkung:2019}.';
-  $FrQFT_g_footnote_text_StarkeWWRestWW         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:StarkeWechselwirkung:2019}, Bindung zwischen Nukleonen, Erklärung der Restwechselwirkung.';
-  $FrQFT_g_footnote_text_SUSY                   = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 5 Von der Vereinheitlichung zur Supervereinheitlichung, S. 107-125.';
-  $FrQFT_g_footnote_text_SWW                    = 'Vgl. \\cite{wiki:SchwacheWechselwirkung2013}. \\\\ \\color{*Entwick}{Weitere Verweise.}';
-  $FrQFT_g_footnote_text_Thermodynamik          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Thermodynamik:2015}.';
-  $FrQFT_g_footnote_text_Trimurti               = '\\const{NPYo_g_footnote_text_Trimurti}';
-  $FrQFT_g_footnote_text_Unendlichkeiten        = 'Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 1 Die fünf großen Probleme der theoretischen Physik, S. 31-48, hier S. 33. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, S. 14. \\\\ Internet: \\\\ Vgl. \\cite{wiki:SingularitaetAstronomie:2022}.';
-  $FrQFT_g_footnote_text_VereinhNichtGelungen   = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Smolin:ZukunftPhysik2009}, Kap. 15 Die Physik nach der Stringtheorie, S. 322-347, hier S. 343. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Kiefer:WegZurQG2012}, hier S. 34, 41. \\\\ Vgl. \\cite{Smolin:QuantRaum2004}, hier S. 56, 63.';
-  $FrQFT_g_footnote_text_VereinhQMuART          = 'Vgl. \\cite{Lesch:Kosmologie2006}, Kap. III. Dunkle Energie, Gleichungen – Lösungen, S. 93-98, hier S. 98. \\\\ Vgl. \\cite{Greene:ElegUniv2000}, Kap. 5 Notwendigkeit einer neuen Theorie, S. 145-160. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Kiefer:WegZurQG2012}, S. 37. \\\\ Vgl. \\cite{Nicolai:AufPhysWeg21j2008}. \\\\ Vgl. \\cite{Boerner:DunkEnergie2008}. \\\\ Vgl. \\cite{Nicolai:GrossVereinig2005}. \\\\ Vgl. \\cite{Musser:EinsteinRecht2005}. \\\\ Vgl. \\cite{Musser:EinsteinVereinigt2005}. \\\\ Vgl. \\cite{Bergia:Einstein2005}, Kap. Von Deutschland in die Vereinigten Staaten, S. 86-90. \\\\ Vgl. \\cite{Smolin:QuantRaum2004}, S. 56. \\\\ Vgl. \\cite{Kane:NeuePhysik2003}. \\\\ Vgl. \\cite{Weinberg:TheorieFuerAlles2001}. \\\\ Internet: \\\\ Vgl. \\cite{Eidemueller:DieTuerInsDunkleUniversum:2016}.';
-  $FrQFT_g_footnote_text_VereinhQMuARTProbl     = 'Vgl. \\cite{Lesch:Kosmologie2006}, Kap. II. Dunkle Materie, Einspruch, Euer Ehren! S. 83-85, hier S. 84. \\\\ Vgl. \\cite{Greene:ElegUniv2000}, Kap. 3 Von Krümmungen und Kräuselwellen, S. 72-107, hier S. 107. Kap. 5. Notwendigkeit einer neuen Theorie, S. 145-160, hier 146, 156-160. \\\\ Populärwissenschaftliche Literatur: \\\\ Vgl. \\cite{Kiefer:WegZurQG2012}, S. 37. \\\\ Vgl. \\cite{Giesel:LoopQuantengravitation2011}, S. 34. \\\\ Vgl. \\cite{Nicolai:AufPhysWeg21j2008}, S. 31. \\\\ Vgl. \\cite{Smolin:QuantRaum2004}, S. 56. \\\\ Internet: \\\\ Vgl. \\cite{wiki:ART2013}, Verhältnis zu anderen Theorien, Quantenphysik. \\\\ Video: \\\\ Vgl. \\cite{SpektrumDerWissenschaft:WieFunktioniertDieSchwerkraftAufQuantenebene:2017}';
-  $FrQFT_g_footnote_text_WellTeilDualAequiHeisenb = 'Vgl. \\cite{Coles:EquivalenceOfWaveParticlEdualityToEntropicUncertainty2014}. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Lingenhoehl:IstDieQuantenphysikWenigerKompliziert2014}.';
+  $FrQFT_g_footnote_text_StarkeWW               = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Ent:DerKlebstoffDerWelt:2015}. \\\\ Internet: \\\\ Vgl. \cite{wiki:StarkeWechselwirkung:2019}.';
+  $FrQFT_g_footnote_text_StarkeWWRestWW         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:StarkeWechselwirkung:2019}, Bindung zwischen Nukleonen, Erklärung der Restwechselwirkung.';
+  $FrQFT_g_footnote_text_SUSY                   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Smolin:ZukunftPhysik2009}, Kap. 5 Von der Vereinheitlichung zur Supervereinheitlichung, S. 107-125.';
+  $FrQFT_g_footnote_text_SWW                    = 'Vgl. \cite{wiki:SchwacheWechselwirkung2013}. \\\\ \color{*Entwick}{Weitere Verweise.}';
+  $FrQFT_g_footnote_text_Thermodynamik          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Thermodynamik:2015}.';
+  $FrQFT_g_footnote_text_Trimurti               = '\const{NPYo_g_footnote_text_Trimurti}';
+  $FrQFT_g_footnote_text_Unendlichkeiten        = 'Vgl. \cite{Smolin:ZukunftPhysik2009}, Kap. 1 Die fünf großen Probleme der theoretischen Physik, S. 31-48, hier S. 33. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, S. 14. \\\\ Internet: \\\\ Vgl. \cite{wiki:SingularitaetAstronomie:2022}.';
+  $FrQFT_g_footnote_text_VereinhNichtGelungen   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Smolin:ZukunftPhysik2009}, Kap. 15 Die Physik nach der Stringtheorie, S. 322-347, hier S. 343. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Kiefer:WegZurQG2012}, hier S. 34, 41. \\\\ Vgl. \cite{Smolin:QuantRaum2004}, hier S. 56, 63.';
+  $FrQFT_g_footnote_text_VereinhQMuART          = 'Vgl. \cite{Lesch:Kosmologie2006}, Kap. III. Dunkle Energie, Gleichungen – Lösungen, S. 93-98, hier S. 98. \\\\ Vgl. \cite{Greene:ElegUniv2000}, Kap. 5 Notwendigkeit einer neuen Theorie, S. 145-160. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Kiefer:WegZurQG2012}, S. 37. \\\\ Vgl. \cite{Nicolai:AufPhysWeg21j2008}. \\\\ Vgl. \cite{Boerner:DunkEnergie2008}. \\\\ Vgl. \cite{Nicolai:GrossVereinig2005}. \\\\ Vgl. \cite{Musser:EinsteinRecht2005}. \\\\ Vgl. \cite{Musser:EinsteinVereinigt2005}. \\\\ Vgl. \cite{Bergia:Einstein2005}, Kap. Von Deutschland in die Vereinigten Staaten, S. 86-90. \\\\ Vgl. \cite{Smolin:QuantRaum2004}, S. 56. \\\\ Vgl. \cite{Kane:NeuePhysik2003}. \\\\ Vgl. \cite{Weinberg:TheorieFuerAlles2001}. \\\\ Internet: \\\\ Vgl. \cite{Eidemueller:DieTuerInsDunkleUniversum:2016}.';
+  $FrQFT_g_footnote_text_VereinhQMuARTProbl     = 'Vgl. \cite{Lesch:Kosmologie2006}, Kap. II. Dunkle Materie, Einspruch, Euer Ehren! S. 83-85, hier S. 84. \\\\ Vgl. \cite{Greene:ElegUniv2000}, Kap. 3 Von Krümmungen und Kräuselwellen, S. 72-107, hier S. 107. Kap. 5. Notwendigkeit einer neuen Theorie, S. 145-160, hier 146, 156-160. \\\\ Populärwissenschaftliche Literatur: \\\\ Vgl. \cite{Kiefer:WegZurQG2012}, S. 37. \\\\ Vgl. \cite{Giesel:LoopQuantengravitation2011}, S. 34. \\\\ Vgl. \cite{Nicolai:AufPhysWeg21j2008}, S. 31. \\\\ Vgl. \cite{Smolin:QuantRaum2004}, S. 56. \\\\ Internet: \\\\ Vgl. \cite{wiki:ART2013}, Verhältnis zu anderen Theorien, Quantenphysik. \\\\ Video: \\\\ Vgl. \cite{SpektrumDerWissenschaft:WieFunktioniertDieSchwerkraftAufQuantenebene:2017}';
+  $FrQFT_g_footnote_text_WellTeilDualAequiHeisenb = 'Vgl. \cite{Coles:EquivalenceOfWaveParticlEdualityToEntropicUncertainty2014}. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Lingenhoehl:IstDieQuantenphysikWenigerKompliziert2014}.';
   $FrQFT_g_footnote_text_WQString               = 'Der Wirkungsquanten-String schwingt im 3-dimensionalen Bewegungsraum der Quanten-Fluss-Theorie und nicht in vielen Dimensionen, wie ein String der Strintheorie. Durch den Aufbau eines Wirkungsquanten-Strings schwingen allerdings viele seiner Eigenschaften gleichzeitig, die alle auf der Bewegung seiner Struktur in den uns bekannten drei Dimensionen beruhen. Anders als in der Stringtheorie, stehen diese schwingenden Eigenschaften dadurch in enger Abhängigkeit zueinander. Dies hat ein konkretes Modell mit nur wenigen oder gar keinen Freheitsgraden zur Folge. Dadurch liefert die Quanten-Fluss-Theorie eindeutigere Erklärungen und Vorhersagen als die heutige Stringtheorie.';
-  $FrQFT_g_footnote_text_ZeitdilatationBew      = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Born:RTEinsteins1969}, Kap. VI. Das spezielle Einsteinsche Relativitätsprinzip, 194-266, hier S. 212-216. \\\\ Internet: \\\\ Vgl. \\cite{Poessel:VonDerLichtuhrZurZeitdilatation2010}. \\\\ Vgl. \\cite{wiki:Zeitdilatation2014}, Zeitdilatation durch relative Bewegung, Zeitdilatation und Längenkontraktion.';
-  $FrQFT_g_footnote_text_ZeitdilatationBewFrQFT = 'Vgl. \\cite{Giese:WhyTimeSlowing2009}. \\\\ Vgl. \\cite{Weiss:AltToSpeedOfLight2006}, IV. Medium transformation, A. Properties of medium transformation, 2. Time delation, S. 12.';
-  $FrQFT_g_footnote_text_ZeitdilatationBewMyon  = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Myon:2015}, Zeitdilatation.';
-  $FrQFT_g_footnote_text_ZeitdilatationGrav     = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \\cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290, hier S. 275-278, besonders S. 278. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Zeitdilatation2014}, 2 Zeitdilatation durch Gravitation. \\\\  Vgl. \\cite{wiki:ART2013}, Gravitative Zeitdilatation und Rotverschiebung.';
-  $FrQFT_g_footnote_text_ZeitdilatationGravFrQFT = 'Vgl. \\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, S. 19-22.';
-  $FrQFT_g_footnote_text_ZeitDjetNeheh          = 'Vgl. \\cite{Assmann:ZeitUndGeschichteInFruehenKulturen:2006}, 2. Zyklische und lineare Zeit: Die altägyptische Lehre der „zwei Ewigkeiten“, hier S. 496-507. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Assmann:DieZweiGesichterDerZeit2010}.';
+  $FrQFT_g_footnote_text_ZeitdilatationBew      = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Born:RTEinsteins1969}, Kap. VI. Das spezielle Einsteinsche Relativitätsprinzip, 194-266, hier S. 212-216. \\\\ Internet: \\\\ Vgl. \cite{Poessel:VonDerLichtuhrZurZeitdilatation2010}. \\\\ Vgl. \cite{wiki:Zeitdilatation2014}, Zeitdilatation durch relative Bewegung, Zeitdilatation und Längenkontraktion.';
+  $FrQFT_g_footnote_text_ZeitdilatationBewFrQFT = 'Vgl. \cite{Giese:WhyTimeSlowing2009}. \\\\ Vgl. \cite{Weiss:AltToSpeedOfLight2006}, IV. Medium transformation, A. Properties of medium transformation, 2. Time delation, S. 12.';
+  $FrQFT_g_footnote_text_ZeitdilatationBewMyon  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Myon:2015}, Zeitdilatation.';
+  $FrQFT_g_footnote_text_ZeitdilatationGrav     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Vgl. \cite{Harrison:Kosmologie:1983}, Kap. 8 Allgemeine Relativitätstheorie, S. 253-290, hier S. 275-278, besonders S. 278. \\\\ Internet: \\\\ Vgl. \cite{wiki:Zeitdilatation2014}, 2 Zeitdilatation durch Gravitation. \\\\  Vgl. \cite{wiki:ART2013}, Gravitative Zeitdilatation und Rotverschiebung.';
+  $FrQFT_g_footnote_text_ZeitdilatationGravFrQFT = 'Vgl. \cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, S. 19-22.';
+  $FrQFT_g_footnote_text_ZeitDjetNeheh          = 'Vgl. \cite{Assmann:ZeitUndGeschichteInFruehenKulturen:2006}, 2. Zyklische und lineare Zeit: Die altägyptische Lehre der „zwei Ewigkeiten“, hier S. 496-507. \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Assmann:DieZweiGesichterDerZeit2010}.';
   
-  $FrQFT_g_footnote_Kombi_RT                    = '\\footnote{Spezielle Relativitätstheorie: \\\\ \\const{FrQFT_g_footnote_text_SRT}}\\footnote{Allgemeine Relativitätstheorie: \\\\ \\const{FrQFT_g_footnote_text_ART}}';
+  $FrQFT_g_footnote_Kombi_RT                    = '\footnote{Spezielle Relativitätstheorie: \\\\ \const{FrQFT_g_footnote_text_SRT}}\footnote{Allgemeine Relativitätstheorie: \\\\ \const{FrQFT_g_footnote_text_ART}}';
 
-  $NPT_g_footnote_text_Naturphilosophie         = 'Internet: \\\\ Vgl. \\cite{wiki:Naturphilosophie:2015}. \\\\ Video: \\\\ Vgl. \\cite{Lesch:NaturphilosophieKosmosLebenUndDerSinnDerWelt:2016}.';
+  $NPT_g_footnote_text_Naturphilosophie         = 'Internet: \\\\ Vgl. \cite{wiki:Naturphilosophie:2015}. \\\\ Video: \\\\ Vgl. \cite{Lesch:NaturphilosophieKosmosLebenUndDerSinnDerWelt:2016}.';
 
-  $NPYo_g_footnote_text_GehirnLateralisation    = '\\const{SpaLeb_g_footnote_text_GehirnLateralisation}';
-  $NPYo_g_footnote_text_HathaHaTha              = 'Vgl. \\cite{Yogawiki:Hatha:2018}.';
-  $NPYo_g_footnote_text_Hermesstab              = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Hermesstab:2019}.';
-  $NPYo_g_footnote_text_HermesTrismegistos      = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:HermesTrismegistos:2019}.';
-  $NPYo_g_footnote_text_Hermetik                = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Hermetik:2019}.';
-  $NPYo_g_footnote_text_PhilosophieDesYoga      = 'Vgl. \\cite{Galke:PhilosophieDesYoga:2017}.';
-  $NPYo_g_footnote_text_Trimurti                = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Trimurti:2016}.';
-  $NPYo_g_footnote_text_YinUndYang              = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:YinUndYang:2019}.';
-  $NPYo_g_footnote_text_ZeitDjetNeheh           = '\\const{FrQFT_g_footnote_text_ZeitDjetNeheh}';
+  $NPYo_g_footnote_text_GehirnLateralisation    = '\const{SpaLeb_g_footnote_text_GehirnLateralisation}';
+  $NPYo_g_footnote_text_HathaHaTha              = 'Vgl. \cite{Yogawiki:Hatha:2018}.';
+  $NPYo_g_footnote_text_Hermesstab              = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Hermesstab:2019}.';
+  $NPYo_g_footnote_text_HermesTrismegistos      = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:HermesTrismegistos:2019}.';
+  $NPYo_g_footnote_text_Hermetik                = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Hermetik:2019}.';
+  $NPYo_g_footnote_text_PhilosophieDesYoga      = 'Vgl. \cite{Galke:PhilosophieDesYoga:2017}.';
+  $NPYo_g_footnote_text_Trimurti                = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Trimurti:2016}.';
+  $NPYo_g_footnote_text_YinUndYang              = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:YinUndYang:2019}.';
+  $NPYo_g_footnote_text_ZeitDjetNeheh           = '\const{FrQFT_g_footnote_text_ZeitDjetNeheh}';
   
-  $SpaLeb_g_footnote_text_AchtsamkeitMinfulness = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AchtsamkeitMindfulness:2017}.';
-  $SpaLeb_g_footnote_text_AtemSpannungUndSex    = 'Von diesen Sexpraktiken werde ich auf Nachfrage gerne berichten.\\hidden{ Cum-Control erzeugt Atemspannung. Analorgasmen. Die Atemspannung macht einen auch enger und das Gefühl intensiver. Alle Orgasmen werden insgesamt intensiver.}';
-  $SpaLeb_g_footnote_text_BauchmuskulaturRing   = 'Internet: \\\\ Vgl. \\cite{Schumann:DerGeradeBauchmuskel:2011}, Muskulus obliquus externus abdominis, Muskulus obliquus internus abdominis, Muskulus transversus abdominis.';
-  $SpaLeb_g_footnote_text_BauchmuskulaturGerade = 'Internet: \\\\ Vgl. \\cite{Schumann:DerGeradeBauchmuskel:2011}, Muskulus rectus abdominis (1).';
-  $SpaLeb_g_footnote_text_Bewusstsein           = 'Internet: \\\\ Vgl. \\cite{wiki:Bewusstsein:2018}.';
-  $SpaLeb_g_footnote_text_Biochemie             = 'Internet: \\\\ Vgl. \\cite{wiki:Biochemie:2015}.';
-  $SpaLeb_g_footnote_text_Biologie              = 'Internet: \\\\ Vgl. \\cite{wiki:Biologie:2015}.';
+  $SpaLeb_g_footnote_text_AchtsamkeitMinfulness = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AchtsamkeitMindfulness:2017}.';
+  $SpaLeb_g_footnote_text_AtemSpannungUndSex    = 'Von diesen Sexpraktiken werde ich auf Nachfrage gerne berichten.\hidden{ Cum-Control erzeugt Atemspannung. Analorgasmen. Die Atemspannung macht einen auch enger und das Gefühl intensiver. Alle Orgasmen werden insgesamt intensiver.}';
+  $SpaLeb_g_footnote_text_BauchmuskulaturRing   = 'Internet: \\\\ Vgl. \cite{Schumann:DerGeradeBauchmuskel:2011}, Muskulus obliquus externus abdominis, Muskulus obliquus internus abdominis, Muskulus transversus abdominis.';
+  $SpaLeb_g_footnote_text_BauchmuskulaturGerade = 'Internet: \\\\ Vgl. \cite{Schumann:DerGeradeBauchmuskel:2011}, Muskulus rectus abdominis (1).';
+  $SpaLeb_g_footnote_text_Bewusstsein           = 'Internet: \\\\ Vgl. \cite{wiki:Bewusstsein:2018}.';
+  $SpaLeb_g_footnote_text_Biochemie             = 'Internet: \\\\ Vgl. \cite{wiki:Biochemie:2015}.';
+  $SpaLeb_g_footnote_text_Biologie              = 'Internet: \\\\ Vgl. \cite{wiki:Biologie:2015}.';
   // #: Siehe auch für Veränderungen "$FrQFT_g_footnote_text_Regelung".
-  $SpaLeb_g_footnote_text_BiologischeRegelung   = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:BiologischeRegelung:2021}. \\\\ Vgl. \\cite{SpektrumAkademischerVerlag:Regelung:1999}.';
-  $SpaLeb_g_footnote_text_Biomechanik           = 'Internet: \\\\ Vgl. \\cite{wiki:Biomechanik:2015}.';
-  $SpaLeb_g_footnote_text_ErkenneDichSelbst     = 'Vgl. \\cite{Galke:PhilosophieDesYoga:2017}, 1 Philosophie und Yoga, S. 4-6, hier S. 5. \\\\ Vgl. \\cite{Kitzler:PhilosophieToGo:2015}, Selbsterkenntnis, S. 23-30. \\\\ Internet: \\\\ Vgl. \\cite{wiki:GnothiSeauton:2015}.';
-  $SpaLeb_g_footnote_text_GehirnLateralisation  = 'Internet: \\\\ Vgl. \\cite{wiki:LateralisationDesGehirns:2016}.';
-  $SpaLeb_g_footnote_text_LeibSeeleProblem      = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Poser:DieVernuenftigGeordneteWelt:2016}, Monaden. S. 56-58. \\\\ Internet: \\\\ Vgl. \\cite{wiki:PhilosophieDesGeistes:2015}.';
-  $SpaLeb_g_footnote_text_Psyche                = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Psyche:2017}.';
-  $SpaLeb_g_footnote_text_PsycheErlebUndVerhalt = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Psyche:2015}, Definition und Allgemeines.';
-  $SpaLeb_g_footnote_text_Psychosomatik         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Psychosomatik:2020}.';
-  $SpaLeb_g_footnote_text_Quantenbiologie       = 'Vgl. \\cite{Al-Khalili:DerQuantenbeatDesLebens:2015}. \\\\ Sekundärliteratur: \\\\ \\color{*Bearb}{(Literatur einfügen! Siehe SdW-Online 2011 und DLF XXX)} \\\\ Vgl. \\cite{Pollmann:MitAllenQuantenmitteln:2010}. \\\\ Internet: \\\\ Vgl. \\cite{wiki:Quantenbiologie:2014}.';
-  $SpaLeb_g_footnote_text_RueckenBauchmuskeln   = 'Internet: \\\\ Vgl. \\cite{Schumann:DieRueckenmuskulatur:2016}.';
-  $SpaLeb_g_footnote_text_Zwerchfell            = 'Internet: \\\\ Vgl. \\cite{Schumann:DasZwerchfellIstDerAtemmuskelSchlechthin:2011}.';
+  $SpaLeb_g_footnote_text_BiologischeRegelung   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:BiologischeRegelung:2021}. \\\\ Vgl. \cite{SpektrumAkademischerVerlag:Regelung:1999}.';
+  $SpaLeb_g_footnote_text_Biomechanik           = 'Internet: \\\\ Vgl. \cite{wiki:Biomechanik:2015}.';
+  $SpaLeb_g_footnote_text_ErkenneDichSelbst     = 'Vgl. \cite{Galke:PhilosophieDesYoga:2017}, 1 Philosophie und Yoga, S. 4-6, hier S. 5. \\\\ Vgl. \cite{Kitzler:PhilosophieToGo:2015}, Selbsterkenntnis, S. 23-30. \\\\ Internet: \\\\ Vgl. \cite{wiki:GnothiSeauton:2015}.';
+  $SpaLeb_g_footnote_text_GehirnLateralisation  = 'Internet: \\\\ Vgl. \cite{wiki:LateralisationDesGehirns:2016}.';
+  $SpaLeb_g_footnote_text_LeibSeeleProblem      = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Poser:DieVernuenftigGeordneteWelt:2016}, Monaden, S. 56-58. \\\\ Internet: \\\\ Vgl. \cite{wiki:PhilosophieDesGeistes:2015}.';
+  $SpaLeb_g_footnote_text_Psyche                = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Psyche:2017}.';
+  $SpaLeb_g_footnote_text_PsycheErlebUndVerhalt = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Psyche:2015}, Definition und Allgemeines.';
+  $SpaLeb_g_footnote_text_Psychosomatik         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Psychosomatik:2020}.';
+  $SpaLeb_g_footnote_text_Quantenbiologie       = 'Vgl. \cite{Al-Khalili:DerQuantenbeatDesLebens:2015}. \\\\ Sekundärliteratur: \\\\ \color{*Bearb}{(Literatur einfügen! Siehe SdW-Online 2011 und DLF X)} \\\\ Vgl. \cite{Pollmann:MitAllenQuantenmitteln:2010}. \\\\ Internet: \\\\ Vgl. \cite{wiki:Quantenbiologie:2014}.';
+  $SpaLeb_g_footnote_text_RueckenBauchmuskeln   = 'Internet: \\\\ Vgl. \cite{Schumann:DieRueckenmuskulatur:2016}.';
+  $SpaLeb_g_footnote_text_Zwerchfell            = 'Internet: \\\\ Vgl. \cite{Schumann:DasZwerchfellIstDerAtemmuskelSchlechthin:2011}.';
 
-  $SupNum_g_footnote_text_AlgebraischeZahl      = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AlgebraischeZahl:2022}.';
-  $SupNum_g_footnote_text_Binomialkoeffizient   = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Binomialkoeffizient:2023}.';
-  $SupNum_g_footnote_text_EulerscheZahl         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:EulerscheZahl:2023}.';
-  $SupNum_g_footnote_text_FundamentalsatzDerArithmetik = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Primfaktorzerlegung:2022}, Fundamentalsatz der Arithmetik.';
-  $SupNum_g_footnote_text_Primorial             = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Primorial:2015}.';
-  $SupNum_g_footnote_text_PrimorialWikiWerte    = 'Vgl. \\cite{wiki:Primorial:2015}, Eigenschaften, Grafik und Tabelle mit Beispielwerten.';
-  $SupNum_g_footnote_text_KomplexeZahl          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:KomplexeZahl:2024}.';
-  $SupNum_g_footnote_text_LexikographischeOrdnung = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:LexikographischeOrdnung:2023}. \\\\ Vgl. \\cite{wiki:Stellenwertsystem:2023}, Lexikographische Ordnung.';
-  $SupNum_g_footnote_text_Maechtigkeit          = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:MaechtigkeitMathematik:2023}.';
-  $SupNum_g_footnote_text_RationaleZahl         = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:RationaleZahl:2022}.';
-  $SupNum_g_footnote_text_RationaleZahlDichtheit = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:RationaleZahl:2022}, Eigenschaften.';
-  $SupNum_g_footnote_text_RiemannschenVermutung = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:RiemannscheVermutung:2023}.';
-  $SupNum_g_footnote_text_Stellenwertsystem     = '\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:Stellenwertsystem:2023}.';
+  $SupNum_g_footnote_text_AlgebraischerZahlkoerper = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischerZahlkoerper:2020}.';
+  $SupNum_g_footnote_text_AlgebraischeZahl      = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}.';
+  $SupNum_g_footnote_text_Binomialkoeffizient   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Binomialkoeffizient:2023}.';
+  $SupNum_g_footnote_text_EulerscheZahl         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024}. \\\\ Internet: \\\\ Vgl. \cite{wiki:EulerscheZahl:2023}.';
+  $SupNum_g_footnote_text_FundamentalsatzDerArithmetik = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primfaktorzerlegung:2022}, Fundamentalsatz der Arithmetik.';
+  $SupNum_g_footnote_text_Gaussklammer          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AbrundungsfunktionUndAufrundungsfunktion:2022}.';
+  $SupNum_g_footnote_text_Primorial             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Primorial:2015}.';
+  $SupNum_g_footnote_text_PrimorialWikiWerte    = 'Vgl. \cite{wiki:Primorial:2015}, Eigenschaften, Grafik und Tabelle mit Beispielwerten.';
+  $SupNum_g_footnote_text_KomplexeZahl          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KomplexeZahl:2024}.';
+  $SupNum_g_footnote_text_Kontinuumshypothese   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.';
+  $SupNum_g_footnote_text_Kontinuumshypothese_Einfache = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Aussage, Einfache Kontinuumshypothese.';
+  $SupNum_g_footnote_text_LexikographischeOrdnung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:LexikographischeOrdnung:2023}. \\\\ Vgl. \cite{wiki:Stellenwertsystem:2023}, Lexikographische Ordnung.';
+  $SupNum_g_footnote_text_Maechtigkeit          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:MaechtigkeitMathematik:2023}.';
+  $SupNum_g_footnote_text_RationaleZahl         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}.';
+  $SupNum_g_footnote_text_RationaleZahlDichtheit = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}, Eigenschaften.';
+  $SupNum_g_footnote_text_RiemannschenVermutung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannscheVermutung:2023}.';
+  $SupNum_g_footnote_text_Stellenwertsystem     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2023}.';
+  $SupNum_g_footnote_text_TranszendenteZahl     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}.';
+  $SupNum_g_footnote_text_TranszendenteZahlEigenschaften = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.';
 
   
   const fig_file_name = 'fig_file_name';
@@ -377,7 +386,7 @@
   const source = 'source';
 
   $BiOrd_g_figure_ary_GanzeZahlenGerade         = array( fig_file_name => 'BO/ontologie-ganze-zahlen-v01', fig_alt_description => 'Ontologie der ganzen Zahlen', width => '600px', height => '290px', name => 'set local!',
-                                                         text => 'Es erscheint zunächst erstaunlich, dass die Symmetrie der Existenz der endlichen ganzen Zahlen bei \\term{–½} liegt.'."\n".
+                                                         text => 'Es erscheint zunächst erstaunlich, dass die Symmetrie der Existenz der endlichen ganzen Zahlen bei \lm{ -½ } liegt.'."\n".
                                                                  'Wenn wir etwas über die Struktur der Zahlen und damit des Zählens, auch mit Hilfe der Biordinalzahlen, nachdenken,'."\n".
                                                                  'was ich in der Grafik verbildlicht habe, dann erscheint dies doch in sich plausibel.'."\n".
                                                                  'Denn die Null gehört strukturell zu den positiven Zahlen und aus denen entstehen dann die negativen durch Verschiebung.'."\n".
@@ -389,7 +398,7 @@
                                                          text => 'Der Wirkunsquanten-String eines idealisierter Weise kreisförmigen Elapsons ist als elektromagnetisch unpolarisierter Prototyp des Photons zu verstehen.'."\n".
                                                                   'Als solcher ist das kreisförmige Elapson als Grundbaustein des Vakuums zu sehen und wird Vakuum-Elapson genannt.'."\n".
                                                                   'Eingezeichnet ist die helixförmige Spiralbahn der Wirkungsquanten, die sich durch das Existenzprinzip ergibt.'."\n".
-                                                                  '\\const{FrQFT_g_text_WQSWQMenge}'/*."\n".
+                                                                  '\const{FrQFT_g_text_WQSWQMenge}'/*."\n".
                                                                   'Dabei ist die Rotationsebene immer senkrecht zur Bewegungsbahn orientiert.'."\n".
                                                                   'Im Falle eines relativ perfekten Kreises trägt das Elapson kein elektrisches Feld und entspricht'."\n".
                                                                   'somit nicht den von uns beobachteten Photonen. Es ist dann als idealisiertes Teilchen des Vakuums zu sehen.'."\n".
@@ -417,14 +426,14 @@
                                                          text => 'Die Darstellung zeigt die graviradiative Wirkung eines simplifizierten Leptonen-Strings auf sein Umfeld.'."\n".
                                                                  'Jedes einzelne Wirkungsquant des Strings erzeugt ständig neue, virtuelle Wirkungsquanten, die ringförmig um den und'."\n".
                                                                  'senkrecht zum String abgestrahlt werden.'."\n".
-                                                                 'Ihre Wirkung nimmt beim Abstand \\term{r} zum String nur mit \\term{1/r} ab.'."\n".
-                                                                 'Bei doppelter Energie und Masse \\term{m__{ele}} des Strings halbiert sich sein Radius \\term{r__{ele}} und vervierfacht sich seine Wirkungsquanten-Dichte.'."\n".
-                                                                 'Seine Graviradiation verdoppelt sich aber nur, weil die Länge \\term{Δt__{vwq}} seiner abgestrahlten Impulse sich durch die doppelte Winkelgeschwindigkeit \\term{ω__{ele}}'."\n".
+                                                                 'Ihre Wirkung nimmt beim Abstand \lm{ r } zum String nur mit \lm{ \frac{ 1 }{ r } } ab.'."\n".
+                                                                 'Bei doppelter Energie und Masse \lm{ m_{ele} } des Strings halbiert sich sein Radius \lm{ r_{ele} } und vervierfacht sich seine Wirkungsquanten-Dichte.'."\n".
+                                                                 'Seine Graviradiation verdoppelt sich aber nur, weil die Länge \lm{ \Delta t_{vwq} } seiner abgestrahlten Impulse sich durch die doppelte Winkelgeschwindigkeit \lm{ \omega_{ele} }'."\n".
                                                                  'halbiert.');
   
   //$FrQFT_g_figure_ary_GraviLeptonLichtbahn      = array( fig_file_name => 'Gravi_Lepton-Lichtbahn_v08', fig_alt_description => 'Störung der Lichtbahn durch virtuelle Wirkungsquanten', width => '700px', height => '234px', name => 'set local',
   $FrQFT_g_figure_ary_GraviLeptonLichtbahn      = array( fig_file_name => 'FrQFT/Gravi_Lepton-Lichtbahn_v10', fig_alt_description => 'Störung der Lichtbahn durch virtuelle Wirkungsquanten', width => '660px', height => '221px', name => 'set local',
-                                                         text => 'Die Darstellung zeigt, in Anlehnung an die entsprechenden Abbildungen von Giese,\\footnote{\\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, S. 19-22, hier Abbildungen C1, C2, C3, S. 20-21.}'."\n".
+                                                         text => 'Die Darstellung zeigt, in Anlehnung an die entsprechenden Abbildungen von Giese,\footnote{\cite{Giese:TheOrigOfGravity2011}, Appendix C Variation in the Speed of Light, S. 19-22, hier Abbildungen C1, C2, C3, S. 20-21.}'."\n".
                                                                  'wie der Bewegungspfad eines vorbeifliegenden Photons durch die virtuellen Wirkungsquanten'."\n".
                                                                  'eines Elementarteilchens in eine wellige Form gezwungen wird.'."\n".
                                                                  'Dies verlangsamt die effektive Geschwindigkeit des Photons, und beugt schließlich auch seine Bahn.'."\n".
@@ -440,8 +449,8 @@
                                                          text => 'Die von der Masse ausgesandten virtuellen Wirkungsquanten (Wirkungsquanten-Impulskegel als Störungswellen) verringern'."\n".
                                                                  'die Geschwindigkeit der Wirkungsquanten eines vorbeifliegenden Photons umso stärker,'."\n".
                                                                  'je näher sie der Masse sind. Dadurch verringert sich die Wellenlänge'."\n".
-                                                                 '\\term{λ__{innen}} des Photons auf der der Masse zugewandten Seite stärker'."\n".
-                                                                 'als \\term{λ__{außen}} auf der abgewandten Seite.'."\n".
+                                                                 '\lm{ \lambda_{innen} } des Photons auf der der Masse zugewandten Seite stärker'."\n".
+                                                                 'als \lm{ \lambda_{außen} } auf der abgewandten Seite.'."\n".
                                                                  'Das Photon wird zur Masse hin gebeugt.');
   
   $FrQFT_g_figure_ary_GravitationspotMulti      = array( fig_file_name => 'FrQFT/Gravi-Potenzial-Multipol_v05', fig_alt_description => 'Mutlipoles, weiträumiges Gravitationspotenzial', width => '489px', height => '367px', name => 'set local!',
@@ -452,44 +461,44 @@
   
   //$FrQFT_g_figure_ary_HeisenbUnschaerf          = array( fig_file_name => 'Heisenberg_Unschaerfe_v01', fig_alt_description => 'Abzählinterpretation der Heisenbergschen Unschärferelation', width => '700px', height => '234px', name => 'set local!',
   $FrQFT_g_figure_ary_HeisenbUnschaerf          = array( fig_file_name => 'Heisenberg_Unschaerfe_v01', fig_alt_description => 'Abzählinterpretation der Heisenbergschen Unschärferelation', width => '660px', height => '221px', name => 'set local!',
-                                                         text => '\\color{*Bearb}{(Grafik: Energiemessung und Wirkungsquant h erwähnen. Anzahl n. Beschriftung Messinstrument/Auge einpflegen. Die Iris grau färben. Messung 1 und Messung 2 drüber schreiben.)} Die Überzählung und die Unterzählung, welche für den maximalen positiven und negativen Fehler der dargestellten Energiemessung stehen, unterscheiden sich von der Feinstruktur des Elementarteilchens und vom Zeitinterval her im Prinzip beliebig gering.'."\n".
-                                                                  'Die Zufälligkeit des Messbeginns und des Messendes entscheiden darüber, welcher Fehler bei der Messung der Energie \\term{E = n·h/t} auftritt.'."\n".
-                                                                  'Der zufällig erscheinende Fehler kommt zustande, weil nicht vorhergesagt werden kann, welchen Zustand die Feinstruktur zum Beginn und zum Ende der Messung hat, und weil die Wirkungsquanten \\term{h} eines Elementarteilchen-Strings prinzipiell nur digital, also nicht anteilig, gezählt werden können.'."\n".
-                                                                  'Die Messgenauigkeit wird umso besser, je mehr Wirkungsquanten pro Zeit gezählt werden, denn dann fällt der Messfehler \\term{±1·h} im Verhältnis zur Gesamtzahl der Wirkungsquanten geringer aus.'."\n".
+                                                         text => '\color{*Bearb}{(Grafik: Energiemessung und Wirkungsquant h erwähnen. Anzahl n. Beschriftung Messinstrument/Auge einpflegen. Die Iris grau färben. Messung 1 und Messung 2 drüber schreiben.)} Die Überzählung und die Unterzählung, welche für den maximalen positiven und negativen Fehler der dargestellten Energiemessung stehen, unterscheiden sich von der Feinstruktur des Elementarteilchens und vom Zeitinterval her im Prinzip beliebig gering.'."\n".
+                                                                  'Die Zufälligkeit des Messbeginns und des Messendes entscheiden darüber, welcher Fehler bei der Messung der Energie \lm{ E = \frac{ n \cdot h }{ t } } auftritt.'."\n".
+                                                                  'Der zufällig erscheinende Fehler kommt zustande, weil nicht vorhergesagt werden kann, welchen Zustand die Feinstruktur zum Beginn und zum Ende der Messung hat, und weil die Wirkungsquanten \lm{ h } eines Elementarteilchen-Strings prinzipiell nur digital, also nicht anteilig, gezählt werden können.'."\n".
+                                                                  'Die Messgenauigkeit wird umso besser, je mehr Wirkungsquanten pro Zeit gezählt werden, denn dann fällt der Messfehler \lm{ \pm 1 \cdot h } im Verhältnis zur Gesamtzahl der Wirkungsquanten geringer aus.'."\n".
                                                                   'Eine genauere Messung kann folglich durch eine höhere Energie des Elementarteilchens – durch mehr Wirkungsquanten pro Zeit auf dem String – oder durch eine längere Messzeit erreicht werden.');
   
   $FrQFT_g_figure_ary_KosmosEuklid              = array( fig_file_name => 'FrQFT/Kosmos-euklidisch-flach-gebrochen_v04', fig_alt_description => 'Euklidisch flacher Kosmos mit Symmetriebruch', width => '660px', height => '224px', name => 'set local!',
-                                                         text => 'Die Grafik zeigt schematisch die relative Wirkungsquanten-String-Dichte und Elapsonen-Bahn-Dichte im Kosmos (in umgekehrtproportionaler Darstellung und die Wirkungsquanten-String-Dichte ist mit dem Faktor \\term{√2} versehen, damit die Kurven nicht zu sehr aufeinanderfallen).'."\n".
+                                                         text => 'Die Grafik zeigt schematisch die relative Wirkungsquanten-String-Dichte und Elapsonen-Bahn-Dichte im Kosmos (in umgekehrt proportionaler Darstellung und die Wirkungsquanten-String-Dichte ist mit dem Faktor \lm{ \sqrt{2} } versehen, damit die Kurven nicht zu sehr aufeinander fallen).'."\n".
                                                                  'Im symmetrischen Fall, ohne Gravitation, sind die Wirkungsquanten und Vakuum-Elapsonen sehr gleichmäßig im Raum verteilt, siehe gestrichelte Graphen.'."\n".
                                                                  'Gerät die Symmetrie aus der Balance, weil die Elementarteilchen sich zu großen Massen zusammenballen, dann sind die Wirkungsquanten und Vakuum-Elapsonen lokal asymmetrisch im Raum verteilt und die Gravitation kommt zum Vorschein, siehe durchgezogene Graphen.'."\n".
                                                                  'Weil Wirkungsquanten- und Elementarteilchen-Anzahlerhaltung gilt – zu den Elementarteilchen werden auch die Elapsonen gezählt –, ist in beiden Fällen der Raum im Durchschnitt euklidisch flach, so wie es in unserem Kosmos beobachtet wird.');
   
   /*$FrQFT_g_figure_ary_Lepton                    = array( fig_file_name => 'FrQFT/Leptonen-Struktur_3D_neu_v01_6-40fr-300ms-420x306px', figFileType => 'gif', figPDF_is => false, fig_alt_description => 'Leptonen-Modell, animiert', width => '420px', height => '306px', border => '1px', name => 'set local!',
                                                          text => 'Geladenes Lepton mit hypothetischen sechs wellenförmigen Phasen als Näherungsdarstellung. (In Bezug auf die festgelegte Konvention versehentlich ein Antiteilchen in Up-Orientierung.)'."\n".
-                                                                  '\\const{FrQFT_g_text_WQSWQMenge}');*/
+                                                                  '\const{FrQFT_g_text_WQSWQMenge}');*/
   $FrQFT_g_figure_ary_Lepton_highRes            = array( fig_file_name => 'FrQFT/Leptonen-Struktur_3D-neu_v01_6-40fr-300ms-2272×1656', figFileType => 'gif', figPDF_is => false, figBigger_is => true, fig_alt_description => 'Leptonen-Modell, animiert', width => '420px', height => '306px', border => '1px', name => 'set local!',
                                                          text => 'Geladenes Lepton mit hypothetischen sechs wellenförmigen Phasen als Näherungsdarstellung. (In Bezug auf die festgelegte Konvention versehentlich ein Antiteilchen in Up-Orientierung.)'."\n".
-                                                                  '\\const{FrQFT_g_text_WQSWQMenge}');
+                                                                  '\const{FrQFT_g_text_WQSWQMenge}');
   
   $FrQFT_g_figure_ary_LeptonELadung             = array( fig_file_name => 'Lepton_geladen_v09', fig_alt_description => 'Elektrisch geladenes Lepton', width => '700px', height => '374px', name => 'set local!',
-                                                         text => '\\color{*Bearb}{(Die Grafik enthält einen Rechenfehler und muss korrigiert werden! \\term{r__{gr}} muss in \\term{r__{wq}} umbenannt werden.)} Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n__{phase} = n__{wel} / n__{polwel} = 6/1 = 6}.'."\n".
+                                                         text => '\color{*Bearb}{(Die Grafik enthält einen Rechenfehler und muss korrigiert werden! \lm{ r_{gr} } muss in \lm{ r_{wq} } umbenannt werden.)} Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \lm{ n_{phase} = \frac{ n_{wel} }{ n_{polwel} } = \frac{ 6 }{ 1 } = 6 }.'."\n".
                                                                  'Die Wirkungsquanten eines Wirkungsquanten-Strings mit wechselnder Wirkungsquanten-Dichte bewegen sich auf einer doppelt geschachtelten, helixförmigen'."\n".
                                                                  'Spiralbahn um ein gemeinsames Rotationszentrum.'."\n".
                                                                  'In der gezeigten Struktur blinkt das Lepton mit der De-Broglie-Frequenz in einem Wechsel zwischen einer leicht positiven'."\n".
                                                                  'und einer stärker negativen Polarisation und damit elektrischen Ladung.'."\n".
                                                                  'Aus weitem Blickwinkel erscheint das Lepton im Mittel vornehmlich elektrisch negativ geladen, während von nahem die differenzierte'."\n".
                                                                  'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
-                                                                 'Der Normradius \\term{r__{0}} ist dabei die Bezugseinheit mit \\term{r__{0} = ℏ / (m__{lep} ⋅ c__{0})}.');
+                                                                 'Der Normradius \lm{ r_{0} } ist dabei die Bezugseinheit mit \lm{ r_{0} = \frac{ \hbar }{ m_{lep} \cdot c_{0} } }.');
   
   $FrQFT_g_figure_ary_LeptonENeutral            = array( fig_file_name => 'Lepton_neutral_v09', fig_alt_description => 'Elektrisch neutrales Lepton', width => '700px', height => '292px', name => 'set local!',
-                                                         text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \\term{n__{phase} = n__{wel} / n__{polwel} = 12/2 = 6}.'."\n".
+                                                         text => 'Die Grafik zeigt die Struktur eines elektrisch geladenen Leptons mit hypothetischer Phasenzahl \lm{ n_{phase} = \frac{ n_{wel} }{ n_{polwel} } = \frac{ 12 }{ 2 } = 6 }.'."\n".
                                                                  'Die Wirkungsquanten eines Wirkungsquanten-Strings mit wechselnder Wirkungsquanten-Dichte bewegen sich auf einer doppelt geschachtelten, helixförmigen'."\n".
                                                                  'Spiralbahn um ein gemeinsames Rotationszentrum.'."\n".
                                                                  'In der gezeigten Struktur blinkt das Lepton mit der De-Broglie-Frequenz in einem Wechsel zwischen einer positiven'."\n".
                                                                  'und einer gleich großen negativen Polarisation und ist damit ohne elektrische Ladung.'."\n".
                                                                  'Aus weitem Blickwinkel erscheint das Lepton im Mittel vornehmlich elektrisch neutral, während von nahem die differenzierte'."\n".
                                                                  'Polarisation in ihrer zeitlichen Dynamik die elektroschwache Wechselwirkung erzeugt.'."\n".
-                                                                 'Der Normradius \\term{r__{0}} ist dabei die Bezugseinheit mit \\term{r__{0} = ℏ / (m__{lep} ⋅ c__{0})}.');
+                                                                 'Der Normradius \lm{ r_{0} } ist dabei die Bezugseinheit mit \lm{ r_{0} = \frac{ \hbar }{ m_{lep} \cdot c_{0} } }.');
   
   $FrQFT_g_figure_ary_LeptonQuarkSpinAnti       = array( fig_file_name => 'FrQFT/Lepton-Quark-Spins-Anti-v09', fig_alt_description => 'Leptonen und Quarks - Verhältnis von Spins und Antiteilchen', width => '660px', height => '221px', name => 'set local',
                                                          text => 'Die Darstellung zeigt die räumlichen Verhältnisse des inneren Spins in Relation zum normalen, äußeren Spin in Bezug auf Teilchen und ihre Antiteilchen.'."\n".
@@ -497,7 +506,7 @@
                                                                  'Die Vorzeichen und Orientierungen der Spins sind Konvention.');
   
   $FrQFT_g_figure_ary_LichtBewRaum              = array( fig_file_name => 'Gekruemmter_Licht-Bewegungsraum_v09', fig_alt_description => 'Gekrümmt erscheinender Licht-Bewegungsraum', width => '490px', height => '490px', name => 'set local!',
-                                                         text => '\\color{*Bearb}{(Grafik: Schwingungslinie in Spiralbahn umbenennen? Ruhemasse?)} Die variable Geschwindigkeit der Elapsonen, zu denen auch die Photonen gehören, installiert den'."\n".
+                                                         text => '\color{*Bearb}{(Grafik: Schwingungslinie in Spiralbahn umbenennen? Ruhemasse?)} Die variable Geschwindigkeit der Elapsonen, zu denen auch die Photonen gehören, installiert den'."\n".
                                                                   'Licht-Bewegungsraum im Vakuum des Kosmos mit der Eigenschaft variabler Dichte und variabler Gravitationsuhr.'."\n".
                                                                   'Unter der Annahme einer absolut konstanten Lichtgeschwindigkeit in der Allgemeinen Relativitätstheorie wird der Licht-Bewegungsraum zur gekrümmten, vierdimensionalen Raumzeit.'."\n".
                                                                   'Die eingezeichneten Helixspiralbahnen der Feinstruktur aus Wirkungsquanten zeigen, wie die Translationsbewegung – Einsteinsche Lichtgeschwindigkeit im dreidimensionalen Raum – nahe an der Masse abnimmt und die Rotationsbewegung zunimmt – die Photonen- und Vakuum-Elapsonen-Frequenz.');
@@ -518,17 +527,17 @@
                                                                   'Die elektromagnetische Polarisation rotiert entgegengesetzt zu den Fundamentalteilchen.');
   
   $FrQFT_g_figure_ary_PoundRebkaSnider          = array( fig_file_name => 'Pound-Repka-Snider_Exp_v03', fig_alt_description => 'Pound-Repka-Snider-Experiment', width => '514px', height => '187px', name => 'set local!',
-                                                         text => '\\color{*Bearb}{(Grafik: Vermerken, das \\term{v__{wq}} konstant ist und der erhöhten LG entspricht! \\term{v__{wq} =} Pythagoras hinschreiben.)} Die Darstellung zeigt, unter welchen Bedingungen das Pound-Rebka-Snider-Experiment mit der Quanten-Fluss-Theorie zusammenfällt.'."\n".
+                                                         text => '\color{*Bearb}{(Grafik: Vermerken, das \lm{ v_{wq} } konstant ist und der erhöhten LG entspricht! \lm{ v_{wq} = } Pythagoras hinschreiben.)} Die Darstellung zeigt, unter welchen Bedingungen das Pound-Rebka-Snider-Experiment mit der Quanten-Fluss-Theorie zusammenfällt.'."\n".
                                                                   'Der Wirkungsquanten-Geschwindigkeitsvektor – am Kreismittelpunkt ansetzend – stellt die Geschwindigkeitseigenschaft der drei Lichtgeschwindigkeiten – Einsteinsche Lichtgeschwindigkeit, Rotations-Lichtgeschwindigkeit und erhöhte Lichtgeschwindigkeit – dar.');
   
-  $FrQFT_g_figure_ary_QuarkProton               = array( fig_file_name => 'FrQFT/Quark-Protron-v01', fig_alt_description => 'XXX - XXX', width => '660px', height => '221px', name => 'set local',
-                                                         text => 'XXX'."\n".
-                                                                 'XXX'."\n".
-                                                                 'XXX');
+  $FrQFT_g_figure_ary_QuarkProton               = array( fig_file_name => 'FrQFT/Quark-Proton-v01', fig_alt_description => 'Protonen und Neutron - Aufbau aus Quarks', width => '660px', height => '221px', name => 'set local',
+                                                         text => 'Protonen und Neutron bestehen aus Teil-Strings von Leptonen, die wir Quarks nennen.'."\n".
+                                                                 'Nach dieser Idee sind die Wirkungsquanten-Strings der Teil-Leptonen über Teil-Strings von Vakuum-Photonen, den Gluonen, verbunden.'."\n".
+                                                                 'Alle Strings zusammen haben eine Farbladung von Weiß, weil sich ihre Auslenkungen von den Rotationszentren ihrer Lichtbahnen zu Weiß zusammensetzen.');
   
   $FrQFT_g_figure_ary_RelatDichte               = array( fig_file_name => 'Elapson-Graviton-Dicht_v04', fig_alt_description => 'Relation der Wirkungsquanten-String- zur Elapsonen-bahn-Dichte', width => '700px', height => '237px', name => 'set local!',
-                                                         text => '\\color{*Bearb}{(Die y-Achse entspricht dem Alterungsfaktor Alpha. Mit Gleichheitszeichen eintragen? • Ist die Bezeichnung Ereignishorizont wirklich zutreffend? Es ist nicht so einer wie in der ART. Übergangshorizont wäre vielleicht besser. (Siehe Artikel GEO 10/2014, "Wie schwarz ist Schwarz?", S. 130–144.) Die Bilddatei sollte nicht mehr den Namen Graviton tragen.)} Das Diagramm stellt auf der Horizontal-Achse den Kehrwert der relativen Wirkungsquanten-String-Dichte dar; je kleiner der Horizontal-Achswert, desto höher die Wirkungsquanten-Dichte.'."\n".
-                                                                 'Die Vertikal-Achse hingegen stellt die entsprechende relative Elapsonen-Bahn-Dichte auch als Kehrwert dar, der nach Formel \\jumpname[*FigDescr]{OM:FrQFT:ZeitAlterungFrequenz:Equ-RelatEpBDicht} dem absoluten Alterungsfaktor \\term{__{x}⍺} entspricht; je kleiner der Vertikal-Achswert, desto höher die Elapsonen-Bahn-Dichte.'."\n".
+                                                         text => '\color{*Bearb}{(Die y-Achse entspricht dem Alterungsfaktor Alpha. Mit Gleichheitszeichen eintragen? • Ist die Bezeichnung Ereignishorizont wirklich zutreffend? Es ist nicht so einer wie in der ART. Übergangshorizont wäre vielleicht besser. (Siehe Artikel GEO 10/2014, "Wie schwarz ist Schwarz?", S. 130–144.) Die Bilddatei sollte nicht mehr den Namen Graviton tragen.)} Das Diagramm stellt auf der Horizontal-Achse den Kehrwert der relativen Wirkungsquanten-String-Dichte dar; je kleiner der Horizontal-Achswert, desto höher die Wirkungsquanten-Dichte.'."\n".
+                                                                 'Die Vertikal-Achse hingegen stellt die entsprechende relative Elapsonen-Bahn-Dichte auch als Kehrwert dar, der nach Formel \jumpname[*FigDescr]{OM:FrQFT:ZeitAlterungFrequenz:Equ-RelatEpBDicht} dem absoluten Alterungsfaktor \lm{_{x}\alpha} entspricht; je kleiner der Vertikal-Achswert, desto höher die Elapsonen-Bahn-Dichte.'."\n".
                                                                  'Eine Zentrale Masse kann sich mit ihrem Mittelpunkt im Nullpunkt gedacht werden, wobei ein Schwarzes Loch am eingezeichneten Ereignishorizont seinen Schwarzschild-Radius hat.');
   
   $FrQFT_g_figure_ary_UnpolPhotFarb6Pol         = array( fig_file_name => 'FrQFT/Unpolarisiertes-Photon-Farbpolarisation-6polig-v01', fig_alt_description => 'Unpolarisiertes Photon, Farbpolarisation (6-polig)', width => '380px', height => '500px', name => 'set local!',
@@ -547,7 +556,7 @@
   $FrQFT_g_figure_ary_VakuumElapson             = array( fig_file_name => 'FrQFT/Vakuum-Elapson-String_v02-100fr-100ms-1280x720px', figFileType => 'gif', figPDF_is => false, figBigger_is => true, fig_alt_description => 'Vakuum-Elapson, animiert', width => '560px', height => '315px', border => '1px', name => 'set local!',
                                                          text => 'Die vereinfachende Animation zeigt, wie alle Wirkungsquanten eines Strings miteinander in Wechselwirkung stehen.'."\n".
                                                                   'Die Wechselwirkung zwischen allen Wirkungsquanten ist nur bei einer helixförmigen Spiralgeometrie ihrer Bahn möglich, wenn der String geschlossen ist.'."\n".
-                                                                  '\\const{FrQFT_g_text_WQSWQMenge}');
+                                                                  '\const{FrQFT_g_text_WQSWQMenge}');
   
   $FrQFT_g_figure_ary_Wellenlaenge              = array( fig_file_name => 'Wellenlaenge_v02', fig_alt_description => 'Detektor- und Rotationswellenlänge', width => '514px', height => '187px', name => 'set local!',
                                                          text => 'Eine seitliche und eine frontale Projektion der Spiralbahn eines Wirkungsquants zeigen, wie die Rotationswellenlänge und die Detektorwellenlänge auseinander fallen, wenn starke Gravitation die Detektorwellenlänge halbiert.'."\n".
@@ -569,7 +578,7 @@
                                                                   'Aus diesem Grund können sich in dieser Konstellation bewegende Wirkungsquanten auf Dauer keine stabilen, zusammenhängenden Systeme bilden.');
 
   $FrQFT_g_figure_ary_WqUngebroch               = array( fig_file_name => 'Wirkungsquant_ungebrochen_v01', fig_alt_description => 'Ungebrochenes Wirkungsquanten', width => '514px', height => '187px', name => 'set local!',
-                                                         text => '\\color{*Bearb}{(Überschrift: Ungebrochene Wirkungsquanten-Bahn? "wikelt" -> "wickelt")}'."\n".
+                                                         text => '\color{*Bearb}{(Überschrift: Ungebrochene Wirkungsquanten-Bahn? "wikelt" -> "wickelt")}'."\n".
                                                                   'Ein unbebrochenes Wirkungsquant bewegt sich auf einer symmetrisch geradlinigen Bahn.'."\n".
                                                                   'Es ist nicht abgelenkt durch Wechselwirkungen.');
 
@@ -580,7 +589,7 @@
   // #!: Derzeit ungenutzt !!! Weil "$FrQFT_g_figure_ary_Lepton_highRes" in Verwendung.
   $FrQFT_g_youtube_ary_Lepton                   = array( source => 'https://www.youtube.com/embed/LsF93WgX9fE?rel=0&loop=1&playlist=LsF93WgX9fE', width => '420px', height => '307px'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
                                                          text => 'Geladenes Lepton mit hypothetischen sechs wellenförmigen Phasen als Näherungsdarstellung. (In Bezug auf die festgelegte Konvention versehentlich ein Antiteilchen in Up-Orientierung.)'."\n".
-                                                                  '\\const{FrQFT_g_text_WQSWQMenge}');
+                                                                  '\const{FrQFT_g_text_WQSWQMenge}');
   
   //ohne Loop $FrQFT_g_youtube_ary_VakuumElapson            = array( source => 'http://www.youtube.com/embed/XfNlH_aWhrE?rel=0', width => '560', height => '315', name => set local',
   // #: Mit Loop. (Parameter siehe 'Tools_vX.php' funktion 'To_f_Paragraph' Parameter "$type = 'youtube'")
@@ -588,24 +597,24 @@
   $FrQFT_g_youtube_ary_VakuumElapson            = array( source => 'https://www.youtube.com/embed/XfNlH_aWhrE?rel=0&loop=1&playlist=XfNlH_aWhrE', width => '560', height => '315', name => 'set local',
                                                          text => 'Der vereinfachende Film zeigt, wie alle Wirkungsquanten eines Strings miteinander in Wechselwirkung stehen.'."\n".
                                                                   'Die Wechselwirkung zwischen allen Wirkungsquanten ist nur bei einer helixförmigen Spiralgeometrie ihrer Bahn möglich, wenn der String geschlossen ist.'."\n".
-                                                                  '\\const{FrQFT_g_text_WQSWQMenge}');
+                                                                  '\const{FrQFT_g_text_WQSWQMenge}');
 
 
 
   $NPYo_g_figure_ary_AugeDesRa                   = array( fig_file_name => 'Naturphilosophie-Yoga/Auge-des-Ra-v01', fig_alt_description => 'Auge des Ra', width => '300px', height => '272px', name => 'set local!',
-                                                         text => 'Hieroglyphe des Sonnengottes Ra (auch Re genannt). Männliches Prinzip, Djet-Zeit. \\color{*Light}{\\small{Lizenz: \\jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}');
+                                                         text => 'Hieroglyphe des Sonnengottes Ra (auch Re genannt). Männliches Prinzip, Djet-Zeit. \color{*Light}{\small{Lizenz: \jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}');
   
   $NPYo_g_figure_ary_AugeDesHorus                = array( fig_file_name => 'Naturphilosophie-Yoga/Auge-des-Horus-v01', fig_alt_description => 'Auge des Horus', width => '300px', height => '272px', name => 'set local!',
-                                                         text => 'Hieroglyphe des Himmelsgotts, später Königsgotts, Welten- oder Lichtgotts, Horus. Weibliches Prinzip, Neheh-Zeit. \\color{*Light}{\\small{Lizenz: \\jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}');
+                                                         text => 'Hieroglyphe des Himmelsgotts, später Königsgotts, Welten- oder Lichtgotts, Horus. Weibliches Prinzip, Neheh-Zeit. \color{*Light}{\small{Lizenz: \jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}');
   
   $NPYo_g_figure_ary_Hermesstab                  = array( fig_file_name => 'Naturphilosophie-Yoga/Hermesstab-schwarzweisseFluegel-v01', fig_alt_description => 'Hermesstab', width => '380px', height => '500px', name => 'set local!',
-                                                         text => '\\color{*Bearb}{(Die Kugel sollte entsprechend der Zirbeldrüse die Form einer Zirbelnuss, eines Pinienzapfens, des Zapfens der Zirbelkiefer, bekommen, siehe Ordner Zirbeldrüse.)} Der Hermesstab mit seinen Flügeln steht für Heilung, Weisheit, und wie ich vermute für Erleuchtung und die Beflügelung der Seele und des Geistes durch ein polares Yin-Yang-Prinzip. Im Hermes Trismegistos kommt durch die Verschmelzung des griechischen Gottes Hermes mit dem ägyptischen Gott Thot auch das Wissen und die Philosophie in seine Bedeutung.');
+                                                         text => '\color{*Bearb}{(Die Kugel sollte entsprechend der Zirbeldrüse die Form einer Zirbelnuss, eines Pinienzapfens, des Zapfens der Zirbelkiefer, bekommen, siehe Ordner Zirbeldrüse.)} Der Hermesstab mit seinen Flügeln steht für Heilung, Weisheit, und wie ich vermute für Erleuchtung und die Beflügelung der Seele und des Geistes durch ein polares Yin-Yang-Prinzip. Im Hermes Trismegistos kommt durch die Verschmelzung des griechischen Gottes Hermes mit dem ägyptischen Gott Thot auch das Wissen und die Philosophie in seine Bedeutung.');
   
   $NPYo_g_figure_ary_HerzChakraHerzkreisAtmung   = array( fig_file_name => 'Naturphilosophie-Yoga/Herz-Chakra-Herzkreislauf-Atmung-v01', fig_alt_description => 'Herz-Chakra, Herzkreislauf, Atmung', width => '380px', height => '500px', name => 'set local!',
-                                                         text => 'Der Herzkreislauf ist das mehr unbewusste innere Care (weiblicher Aspekt) und die Atmung ist das mehr bewusste innere Care (männlicher Aspekt).');
+                                                         text => 'Der Herzkreislauf ist das mehr unbewusste innere Care, die innere Versorgung, (weiblicher Aspekt) und die Atmung ist das mehr bewusste innere Care, mit Versorgungsbrücke nach Außen, (männlicher Aspekt).');
   
   $NPYo_g_figure_ary_HerzChakraShivaShakti       = array( fig_file_name => 'Naturphilosophie-Yoga/Herz-Chakra-Shiva-Shakti-v01', fig_alt_description => 'Herz-Chakra, Shiva-Shakti', width => '380px', height => '500px', name => 'set local!',
-                                                         text => 'XXX');
+                                                         text => '\color{*Bearb}{(In Arbeit …)}');
   
   $NPYo_g_figure_ary_IGingXiantian               = array( fig_file_name => 'Naturphilosophie-Yoga/I-Ging-Xiantian-Anordnung-v01', fig_alt_description => 'Das Yin und Yang oder Taijitu', width => '380px', height => '500px', name => 'set local!',
                                                          text => 'Das I Ging in dieser Anordnung beschreibt eine Raum aufspannende Polarisation in einer Ebene.'."\n".
@@ -613,10 +622,10 @@
                                                                   'Dabei greifen sie Raum oder Fläche, wie hier dargestellt.');
   
   $NPYo_g_figure_ary_DunkelheitZuLicht     = array( fig_file_name => 'Naturphilosophie-Yoga/Phoenix-aus-der-Asche-v01', fig_alt_description => 'Phoenix aus der Asche', width => '660px', height => '600px', name => 'set local!',
-                                                         text => 'XXX');
+                                                         text => '\color{*Bearb}{(In Arbeit …)}');
   
   $NPYo_g_figure_ary_LebenDesHorusAsklepiosstab  = array( fig_file_name => 'Naturphilosophie-Yoga/Leben-des-Horus-Asklepiosstab-v02', fig_alt_description => 'Leben des Horus mit Asklepiosstab', width => '660px', height => '600px', name => 'set local!',
-                                                         text => 'Abbild des Lebens, das in vergleichbarer Form in altägyptischen Darstellungen zu finden ist. Hier in einer von mir modernisierten Variante mit Äskulap- oder Asklepiosstab, um einen Bezug zur heutigen Medizin, und auch zum Kundalini-Prozess des Tantra und Yoga, herzustellen. \\color{*Light}{\\small{Lizenz: \\jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}');
+                                                         text => 'Abbild des Lebens, das in vergleichbarer Form in altägyptischen Darstellungen zu finden ist. Hier in einer von mir modernisierten Variante mit Äskulap- oder Asklepiosstab, um einen Bezug zur heutigen Medizin, und auch zum Kundalini-Prozess des Tantra und Yoga, herzustellen. \color{*Light}{\small{Lizenz: \jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}');
   
   $NPYo_g_figure_ary_LebenDesHorusHermesstab     = array( fig_file_name => 'Naturphilosophie-Yoga/Leben-des-Horus-Hermesstab-v02', fig_alt_description => 'Leben des Horus mit Hermesstab', width => '660px', height => '600px', name => 'set local!',
                                                          text => $NPYo_g_text_LebenDesHorusHermesstab_Orig);
@@ -706,16 +715,16 @@
                                                                   'Daher ist es wichtig, dass wir unser Bewusstsein und unsere Achtsamkeit üben und die Filter unserer Wahrnehmung klug justieren.');
 
   $SpaLeb_g_figure_ary_KirstenBlockDoppellinkesGesicht  = array( fig_file_name => 'Spannungsspiel-des-Lebens/BLOPL-clip', figFileType => 'jpeg', figPDF_is => false, fig_alt_description => 'Doppellinkes Gesicht von Kirsten Block', width => /* '615px' */'308px', height => /* '669px' */'335px', border => '1px', name => 'set local!',
-                                                         text => 'Doppellinkes Gesicht von Kirsten Block. Die Denk- und Handlungsseite. \\color{*Light}{\\small{Copyright: \\jumpname{OM:FrQFT:Impressum:CopyrightLizenz:BilboCalvez}}}');
+                                                         text => 'Doppellinkes Gesicht von Kirsten Block. Die Denk- und Handlungsseite. \color{*Light}{\small{Copyright: \jumpname{OM:FrQFT:Impressum:CopyrightLizenz:BilboCalvez}}}');
   $SpaLeb_g_figure_ary_KirstenBlockDoppelrechtesGesicht = array( fig_file_name => 'Spannungsspiel-des-Lebens/BLOCKR-clip', figFileType => 'jpeg', figPDF_is => false, fig_alt_description => 'Doppelrechtes Gesicht von Kirsten Block', width => /* '601px' */'301px', height => /* '670px' */'335px', border => '1px', name => 'set local!',
-                                                         text => 'Doppelrechtes Gesicht von Kirsten Block. Die Gefühlsseite. \\color{*Light}{\\small{Copyright: \\jumpname{OM:FrQFT:Impressum:CopyrightLizenz:BilboCalvez}}}');
+                                                         text => 'Doppelrechtes Gesicht von Kirsten Block. Die Gefühlsseite. \color{*Light}{\small{Copyright: \jumpname{OM:FrQFT:Impressum:CopyrightLizenz:BilboCalvez}}}');
                                                                   
   $SpaLeb_g_figure_ary_KundaliniProzess        = array( fig_file_name => 'Spannungsspiel-des-Lebens/Kundalini-Prozess-v02', fig_alt_description => 'Der Kundalini-Prozess', width => '380px', height => '500px', name => 'set local!',
                                                          text => 'Der Kundalini-Prozess kommt nach dem Yoga Vidja Kundalini Portal aus dem Tantra des Hinduismus und ist auch in den tibetanischen Buddhismus eingegangen.'."\n".
                                                                   'Die Darstellung bringt diesen Prozess mit dem Achtsamkeitsprozess in Zusammenhang, mit dem er, je nach Perspektive, identisch oder ein Teil von ihm ist.');
 
   $SpaLeb_g_iframe_ary_Merkaba                 = array( source => $Glo_PathRel_back.'../_Test/FrQFT JS Animations/Sterntetraeder-3D.html', width => '600px', height => '500px', name => 'set local',
-                                                         text => 'XXX'."\n");
+                                                         text => '\color{*Bearb}{(In Arbeit …)}'."\n");
 
   $SpaLeb_g_figure_ary_TomOriginalGesicht      = array( fig_file_name => 'Spannungsspiel-des-Lebens/Tom_Original_20160930_v1_1(7)', figFileType => 'jpeg', figPDF_is => false, fig_alt_description => 'Toms originales Gesicht', width => '204px', height => '300px', border => '1px', name => 'set local!',
                                                          text => 'Toms originales Gesicht.');
@@ -732,27 +741,28 @@
                                                          text => 'Die Grafik zeigt die fraktale Struktur der Geraden der Superial-Zahlen.'."\n".
                                                                  'Untereinander dargestellt sind die verschachtelten Zahlengeraden, die jeweils darunter die unendlich kleine Umgebung'."\n".
                                                                  'um eine Zahl der darüber liegenden Ebene herum zeigt.'."\n".
-                                                                 'Auf der unendlich kleinen, umgebenden Zahlengeraden ist jeweils eine bestimmte Zahl angegeben, die wieder eine solche Umgebung hat.'."\n".
-                                                                 'Die hier dargestellte Zahl ist in der Stellenwertsystem-Schreibweise: \\hidden{\\term{2,6⋅s^^{2} + 0,5⋅s^^{1} – 1,4⋅s^^{0} + 3,5⋅s^^{-1}  = 〈2,6〉〈0,5〉〈–1,4〉.〈3,5〉}}\\latexmath{ 〈2,6〉〈0,5〉〈–1,4〉.〈3,5〉 }');
+                                                                 'Auf der unendlich kleinen, umgebenden Zahlengeraden ist jeweils eine bestimmte Zahl angegeben, die wieder eine solche Umgebung hat. \\\\'."\n".
+                                                                 'Die hier dargestellte Zahl ist: \lm{ 2,\!6 \, \s^{2} + 0,\!5 \, \s^{1} - 1,\!4 + 3,\!5 \, \s^{-1} } \\\\'."\n".
+                                                                 'In der Stellenwertsystem-Schreibweise: \lm{ *〈 2,\!6 *〉*〈 0,\!5 *〉*〈 -1,\!4 *〉.*〈 3,\!5 *〉 }');
   
   $SupNum_g_figure_ary_sGeomKonstruktTeilung   = array( fig_file_name => 'SN/s-geom-Konstrukt-Teilung-v02', fig_alt_description => 'Rhythmische Zerlegung der Eins durch natürliche Zahlen', width => '600px', height => '290px', name => 'set local!',
                                                          text => 'Die Grafik zeigt, wie durch die Projektion der Begrenzungspunkte aller regelmäßigen natürlichzahligen Teilstrecken auf die Einheitsstrecke,'."\n".
                                                                  'von der Eins an bis ins Unendliche, und durch das Interpolieren ihrer Begrenzungspunkte zu einem gleichmäßigen Rhythmus,'."\n".
-                                                                 'nach und nach als Abstand zwischen den Punkten die superiale Zahl \\term{s^^{−1}} konstruiert wird.'."\n".
-                                                                 'Als Begrenzungspunktanzahl, ohne die Eins, oder als Anzahl der Teilstrecken ergibt sich die superiale Basis \\term{s}.');
+                                                                 'nach und nach als Abstand zwischen den Punkten die superiale Zahl \lm{ \s^{−1} } konstruiert wird.'."\n".
+                                                                 'Als Begrenzungspunktanzahl, ohne die Eins, oder als Anzahl der Teilstrecken ergibt sich die superiale Basis \lm{ \s }.');
   
   $SupNum_g_figure_ary_sGeomKonstruktWiederholung = array( fig_file_name => 'SN/s-geom-Konstrukt-Wiederholung-v02', fig_alt_description => 'Rhythmische Wiederholung auf Basis natürlicher Zahlen', width => '600px', height => '290px', name => 'set local!',
                                                          text => 'Die Grafik zeigt, wie durch den Zusammenfall aller Rhythmen der natürlichen Zahlen,'."\n".
-                                                                 'von der Eins an bis ins Unendliche, die superiale Basis s konstruiert wird.'."\n");
+                                                                 'von der Eins an bis ins Unendliche, die superiale Basis \lm{ \s } konstruiert wird.'."\n");
                                                                  
                                                                  
   $ZS_g_figure_ary_GraviLeptonWirkung        = array( fig_file_name => 'Zahlensemantik/Gravi_Lepton-Wirkung_v12', fig_alt_description => 'Graviradiation ei­nes sim­pli­fi­zier­ten Lep­to­nen-­Strings', width => '660px', height => '825px', name => 'set local',
                                                          text => 'Die Darstellung zeigt die graviradiative Wirkung eines simplifizierten Leptonen-Strings auf sein Umfeld.'."\n".
                                                                  'Jedes einzelne Wirkungsquant des Strings erzeugt ständig neue, virtuelle Wirkungsquanten, die ringförmig um den und'."\n".
                                                                  'senkrecht zum String abgestrahlt werden.'."\n".
-                                                                 'Ihre Wirkung nimmt beim Abstand \\term{r} zum String nur mit \\term{1/r} ab.'."\n".
-                                                                 'Bei doppelter Energie und Masse \\term{m__{ele}} des Strings halbiert sich sein Radius \\term{r__{ele}} und vervierfacht sich seine Wirkungsquanten-Dichte.'."\n".
-                                                                 'Seine Graviradiation verdoppelt sich aber nur, weil die Länge \\term{Δt__{vwq}} seiner abgestrahlten Impulse sich durch die doppelte Winkelgeschwindigkeit \\term{ω__{ele}}'."\n".
+                                                                 'Ihre Wirkung nimmt beim Abstand \lm{ r } zum String nur mit \lm{ \frac{ 1 }{ r } } ab.'."\n".
+                                                                 'Bei doppelter Energie und Masse \lm{ m_{ele} } des Strings halbiert sich sein Radius \lm{ r_{ele} } und vervierfacht sich seine Wirkungsquanten-Dichte.'."\n".
+                                                                 'Seine Graviradiation verdoppelt sich aber nur, weil die Länge \lm{ \Delta t_{vwq} } seiner abgestrahlten Impulse sich durch die doppelte Winkelgeschwindigkeit \lm{ \omega_{ele} }'."\n".
                                                                  'halbiert.');
   
   
@@ -867,6 +877,7 @@
     $OT_g_Site_ary,
     $SpaLeb_g_Site_ary,
     $SupNum_g_Site_ary,
+    $ZS_g_Site_ary,
     array(
                           
   'OM:FrQFT:Impressum' =>
@@ -897,7 +908,7 @@
                     'OM:FrQFT:Impressum:CopyrightLizenz:Inhalt' => array( headline_text => 'Copyright des Inhalts', headline_text_short => 'Copyright des Inhalts'),
                     'OM:FrQFT:Impressum:CopyrightLizenz:OpenSansFont' => array( headline_text => 'Open Sans Font', headline_text_short => 'Open Sans Font'),
                     'OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus' => array( headline_text => 'Eye of Horus', headline_text_short => 'Eye of Horus'),
-                    'OM:FrQFT:Impressum:CopyrightLizenz:BilboCalvez' => array( headline_text => 'Bilbo Calvez'/* , headline_text_short => 'XXX' */),
+                    'OM:FrQFT:Impressum:CopyrightLizenz:BilboCalvez' => array( headline_text => 'Bilbo Calvez'/* , headline_text_short => 'X' */),
                 ),
          ),
 
@@ -910,7 +921,7 @@
            text_titel_h1 => 'Ausblick',
            text_titel_short => 'Ausblick',
            text_undertitel_h2 => 'Wie kann es mit der Fraktalen Quanten-Fluss-Theorie weiter gehen?',
-           //text_titel_discr_h3 => 'XXX',
+           //text_titel_discr_h3 => 'X',
            jump_ary => array(
                   'OM:FrQFT:Ausblick:Experimentelle-Ueberpruefungen' => array( headline_text => 'Experimentelle Überprüfungen', headline_text_short => 'Experimentelle Überprüfungen'),
                   'OM:FrQFT:Ausblick:Theoretische-Ueberpruefungen' => array( headline_text => 'Theoretische Überprüfung', headline_text_short => 'Theoretische Überprüfung'),
@@ -946,15 +957,15 @@
            titel => 'Die Realisierung der De-Broglie-Bohm-Theorie (Bohmsche Mechanik, Pilotwellentheorie, Führungswellentheorie) - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Der Quantenmechanik äquivalente und deterministische Alternative.',
            keywords => '',
-           text_titel_h1 => 'Die Realisierung der De-Broglie-Bohm-Theorie \\\\ \\color{*TitleAdd}{\\small{(Bohmsche Mechanik, Pilotwellentheorie, Führungswellentheorie)}}',
+           text_titel_h1 => 'Die Realisierung der De-Broglie-Bohm-Theorie \\\\ \color{*TitleAdd}{\small{(Bohmsche Mechanik, Pilotwellentheorie, Führungswellentheorie)}}',
            text_titel_short => 'De-Broglie-Bohm-Theorie',
            // text_undertitel_h2 => 'Eine äquivalente und deterministische Alternative zur Quantenmechanik',
            text_undertitel_h2 => 'Der Quantenmechanik äquivalente und deterministische Alternative',
-           //text_titel_discr_h3 => 'XXX klassischer',
+           //text_titel_discr_h3 => 'X klassischer',
            jump_ary => array(
-                    'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                    // 'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:X' => array( headline_text => 'X', headline_text_short => 'X'),
                              
-                  'OM:FrQFT:De-Broglie-Bohm-Theorie:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:FrQFT:De-Broglie-Bohm-Theorie:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:FrQFT:Diskussion' =>
@@ -966,7 +977,7 @@
            text_titel_h1 => 'Diskussion',
            text_titel_short => 'Diskussion',
            text_undertitel_h2 => 'Die Erörterung wichtiger und kritischer Aspekte',
-           //text_titel_discr_h3 => 'XXX',
+           //text_titel_discr_h3 => 'X',
            jump_ary => array(
                   'OM:FrQFT:Diskussion:ErhaltungVerschraeQuantiEtc' => array( headline_text => 'Erhaltungssätze, Verschränkung, Quantisierung, Unschärferelation, Symmetriebrüche und Wechselwirkungen', headline_text_short => 'Erhaltungssätze, Verschränkung, Quantisierung, Unschärferelation, Symmetriebrüche und Wechselwirkungen'),
                   'OM:FrQFT:Diskussion:Naturkonstanten' => array( headline_text => 'Naturkonstanten und Eichung', headline_text_short => 'Naturkonstanten und Eichung'),
@@ -1001,7 +1012,7 @@
            jump_ary => array(
                   'OM:FrQFT:Dunkle-Energie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
-                  'OM:FrQFT:Dunkle-Energie:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:FrQFT:Dunkle-Energie:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:FrQFT:Dunkle-Materie' =>
@@ -1013,7 +1024,7 @@
            description => 'Emergente Quantengravitation ist der modifizierten newtonschen Dynamik (MOND) ähnlich. Eine erhöhte Energiedichte des Vakuums in und um große Massenansammlungen herum entfaltet zusätzliche Gravitation.',
            keywords => '',
            //text_titel_h1 => 'Dunkle Materie oder modifizierte newtonsche Dynamik (MOND)?',
-           // text_titel_h1 => '\\color{*TitleAdd}{\\small{Phänomen der Dunklen Materie:}} \\\\ Emergente Gravitation ist nicht ganz gleich der modifizierten newtonschen Dynamik (MOND)',
+           // text_titel_h1 => '\color{*TitleAdd}{\small{Phänomen der Dunklen Materie:}} \\\\ Emergente Gravitation ist nicht ganz gleich der modifizierten newtonschen Dynamik (MOND)',
            text_titel_h1 => 'Phänomen der Dunklen Materie',
            text_titel_short => 'Phänomen der Dunklen Materie',
            //text_undertitel_h2 => 'Gravitation verstehen heißt Vakuum verstehen – der Higgs-Mechanismus auf großen Skalen',
@@ -1021,7 +1032,7 @@
            text_undertitel_h2 => 'Emergente Quantengravitation ist der modifizierten newtonschen Dynamik (MOND) ähnlich',
            //text_titel_discr_h3 => 'Die Quanten-Fluss-Theorie bietet mit der zusätzlichen gravitativen Wirkung des verdichteten Vakuums einer Galaxie eine alternative Erklärung.',
            //text_titel_discr_h3 => 'Eine zusätzliche Gavitation durch verdichtetes Vakuum in einer Galaxie wirkt wie die modifizierte newtonsche Dynamik (MOND) und ähnelt heißer Dunkler Materie (HDM).',
-           // text_titel_discr_h3 => 'Eine Wechselwirkung zwischen Materie und Dunkler Energie erzeugt eine Art Higgs-Mechanismus auf großen Skalen in Raum und Zeit\\hidden{. Wer die Struktur des Kosmos und des Vakuums versteht, löst das Problem der Dunklen Materie}',
+           // text_titel_discr_h3 => 'Eine Wechselwirkung zwischen Materie und Dunkler Energie erzeugt eine Art Higgs-Mechanismus auf großen Skalen in Raum und Zeit\hidden{. Wer die Struktur des Kosmos und des Vakuums versteht, löst das Problem der Dunklen Materie}',
            text_titel_discr_h3 => 'Eine erhöhte Energiedichte des Vakuums in und um große Massenansammlungen herum entfaltet zusätzliche Gravitation',
            jump_ary => array(
                   'OM:FrQFT:Dunkle-Materie:Die-Sache-mit-der-Gravitation-der-Vakuumenergie' => array( headline_text => 'Die Sache mit der Gravitation der Vakuumenergie', headline_text_short => 'Die Sache mit der Gravitation der Vakuumenergie'),
@@ -1090,7 +1101,7 @@
                   'OM:FrQFT:Elementarteilchen:Virtuelle-Teilchen' => array( headline_text => 'Virtuelle Teilchen', headline_text_short => 'Virtuelle Teilchen'),
                   'OM:FrQFT:Elementarteilchen:Verschraenkung' => array( headline_text => 'Verschränkung', headline_text_short => 'Verschränkung'),
                   'OM:FrQFT:Elementarteilchen:Punktfoermige-Erscheinung' => array( headline_text => 'Punktförmige Erscheinung', headline_text_short => 'Punktförmige Erscheinung'),
-                  'OM:FrQFT:Elementarteilchen:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:FrQFT:Elementarteilchen:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:FrQFT:Einleitung' =>
@@ -1108,30 +1119,31 @@
                   'OM:FrQFT:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
                              
-                    'OM:FrQFT:Einleitung:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                    // 'OM:FrQFT:Einleitung:Vortext:X' => array( headline_text => 'X', headline_text_short => 'X'),
                              
-                  'OM:FrQFT:Einleitung:Ausgangssituation' => array( headline_text => 'Ausgangssituation der modernen Physik'/* , headline_text_short => '' */),
-                    'OM:FrQFT:Einleitung:Ausgangssituation:GesuchteVereinheitlichung' => array( headline_text => 'Die gesuchte Vereinheitlichung der Physik bleibt bisher aus'/* , headline_text_short => '' */),
+                  'OM:FrQFT:Einleitung:Ausgangssituation' => array( headline_text => 'Ausgangssituation der modernen Physik'/* , headline_text_short => 'X' */),
+                    'OM:FrQFT:Einleitung:Ausgangssituation:GesuchteVereinheitlichung' => array( headline_text => 'Die gesuchte Vereinheitlichung der Physik bleibt bisher aus'/* , headline_text_short => 'X' */),
                   'OM:FrQFT:Einleitung:Fundierung' => array( headline_text => 'Fundierung der neuen Physik', headline_text_short => 'Fundierung der neuen Physik'),
                     'OM:FrQFT:Einleitung:Fundierung:Ani-VakuumElapson' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
-                    'OM:FrQFT:Einleitung:Fundierung:Ansatz-Unterscheidung-Zeit-Alterung' => array( headline_text => 'Ansatz: Unterscheidung von Zeit und Alterung', /* headline_text_short => 'XXX' */),
+                    'OM:FrQFT:Einleitung:Fundierung:Ansatz-Unterscheidung-Zeit-Alterung' => array( headline_text => 'Ansatz: Unterscheidung von Zeit und Alterung', /* headline_text_short => 'X' */),
                     'OM:FrQFT:Einleitung:Fundierung:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
                     'OM:FrQFT:Einleitung:Fundierung:Folge-LichtUhr-Mat' => array( headline_text => 'Folge: Die Lichtuhr ist realer Bestandteil der Materie', headline_text_short => 'Folge: Die Lichtuhr ist realer Bestandteil der Materie'),
                     'OM:FrQFT:Einleitung:Fundierung:Fig-GravitationspotMulti' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:FrQFT:Einleitung:Fundierung:Fig-Photon' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:Einleitung:Fundierung:Vakuum' => array( headline_text => 'Hypothese: Das Vakuum und wie es die Wechselwirkungen vermittelt'/*, headline_text_short => 'XXX'*/),
-                  'OM:FrQFT:Einleitung:PhysikNeuVerstehen' => array( headline_text => 'Physik neu verstehen'/*, headline_text_short => 'XXX'*/),
+                    'OM:FrQFT:Einleitung:Fundierung:Vakuum' => array( headline_text => 'Hypothese: Das Vakuum und wie es die Wechselwirkungen vermittelt'/*, headline_text_short => 'X'*/),
+                  'OM:FrQFT:Einleitung:PhysikNeuVerstehen' => array( headline_text => 'Physik neu verstehen'/*, headline_text_short => 'X'*/),
                 ),
          ),
   'OM:FrQFT:Fazit' =>
     array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Fazit_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Fazit_de.php',
            titel => 'Fazit - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
-           description => 'XXX',
+           description => '\name[undertitle]{OM:FrQFT:Fazit}.\hidden{ – \name[description]{OM:FrQFT:Fazit}.}',
            keywords => '',
            text_titel_h1 => 'Fazit',
            text_titel_short => 'Fazit',
-           text_titel_discr_h3 => 'XXX',
+           text_undertitel_h2 => 'Was wir lernen',
+           // text_titel_discr_h3 => '',
            jump_ary => array(
                   'OM:FrQFT:Fazit:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
@@ -1230,9 +1242,9 @@
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Leptonen-Modell-Elektron-Positron-Myon-Tauon-Neutrino_de.php',
            titel => 'Leptonen-Modell, Elektron/Positron, Myon, Tauon, Neutrino - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            // description => 'Das neue Leptonen-Modell beschreibt, wie die elektroschwache Ladung die Gravitation sowie die Massen von Elektron/Positron, Myon, Tauon und Neutrino entstehen.',
-           description => '\\name[undertitle]{OM:FrQFT:Lepton}. – \\name[description]{OM:FrQFT:Lepton}.',
+           description => '\name[undertitle]{OM:FrQFT:Lepton}. – \name[description]{OM:FrQFT:Lepton}.',
            keywords => '',
-           text_titel_h1 => 'Leptonen-Modell \\\\ \\color{*TitleAdd}{<small>Elektron, Myon, Tauon und Neutrinos</small>}',
+           text_titel_h1 => 'Leptonen-Modell \\\\ \color{*TitleAdd}{<small>Elektron, Myon, Tauon und Neutrinos</small>}',
            text_titel_short => 'Leptonen-Modell',
            // text_undertitel_h2 => 'Aus den bekannten Eigenschaften der Leptonen lässt sich mit Hilfe der First-Principles die Struktur der Leptonen-Strings verstehen',
            text_undertitel_h2 => 'Ein neuartiges String-Modell trägt die Eigenschaften der Leptonen',
@@ -1310,7 +1322,7 @@
                              
                   'OM:FrQFT:NeuePhysik:Problem-der-Zeit' => array( headline_text => 'Problem der Zeit', headline_text_short => 'Problem der Zeit'),
                     'OM:FrQFT:NeuePhysik:Problem-der-Zeit:VermWidersp' => array( headline_text => 'Erweiterte Lichtuhr mit vermeintlichem Widerspruch', headline_text_short => 'Erweiterte Lichtuhr mit vermeintlichem Widerspruch'),
-                    'OM:FrQFT:NeuePhysik:Problem-der-Zeit:Equ-EinsteinEnergieLichtQuant-1' => array( headline_text => '\\name{OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant}'),
+                    'OM:FrQFT:NeuePhysik:Problem-der-Zeit:Equ-EinsteinEnergieLichtQuant-1' => array( headline_text => '\name{OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant}'),
                              
                   'OM:FrQFT:NeuePhysik:Loesungsansatz' => array( headline_text => 'Lösungsansatz', headline_text_short => 'Lösungsansatz'),
                     'OM:FrQFT:NeuePhysik:Loesungsansatz:SchwAusserLG' => array( headline_text => 'Schwingung außerhalb der Lichtbewegung', headline_text_short => 'Schwingung außerhalb der Lichtbewegung'),
@@ -1432,7 +1444,7 @@
            text_undertitel_h2 => 'Neue Perspektiven auf die Grundlagen der Physik',
            //text_titel_discr_h3 => 'Unser Achtsamkeitsprozess, als zentraler Regelprozess des Lebens, ist die Grundlage unseres Gedeihens und unserer Heilung',
            jump_ary => array(
-                  'OM:FrQFT:Meetup-Physik-Neu-Sehen-Ergruenden:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:FrQFT:Meetup-Physik-Neu-Sehen-Ergruenden:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:FrQFT:Quantenchromodynamik' =>
@@ -1441,7 +1453,7 @@
            titel => 'Quantenchromodynamik, starke Wechselwirkung, Hadronen, Quarks, Gluonen - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
            description => 'Die Quantenchromodynamik in der Quanten-Fluss-Theorie basiert auf einer Symmetriebrechung der Farbpolarisation.',
            keywords => '',
-           text_titel_h1 => 'Quantenchromodynamik, starke Wechselwirkung (Hadronen-Modell) \\\\ \\color{*TitleAdd}{<small>in der Quanten-Fluss-Theorie</small>}',
+           text_titel_h1 => 'Quantenchromodynamik, starke Wechselwirkung (Hadronen-Modell) \\\\ \color{*TitleAdd}{<small>in der Quanten-Fluss-Theorie</small>}',
            text_titel_short => 'Quantenchromodynamik (Hadronen-Modell)',
            text_undertitel_h2 => 'Ein Symmetriebruch der Farbpolarisation des Leptonen-Wirkungsquanten-Strings bringt Quarks und Gluonen hervor',
            text_titel_discr_h3 => '',
@@ -1489,7 +1501,7 @@
                     'OM:FrQFT:Quantengravitation:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:VereinfString' => array( headline_text => 'Vereinfachter Wirkungsquanten-String', headline_text_short => 'Vereinfachter Wirkungsquanten-String'),
                     'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:WarumImpulskegel' => array( headline_text => 'Warum Impulskegel?', headline_text_short => 'Warum Impulskegel?'),
-                    'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:WQIUmgekehrtProport' => array( headline_text => 'Wirkungsquanten-Impulse verringern ihre Intensität im Raum mit \\term{1/r}', headline_text_short => 'Wirkungsquanten-Impulse verringern ihre Intensität im Raum mit \\term{1/r}'),
+                    'OM:FrQFT:Quantengravitation:VereinfModellQGravitation:WQIUmgekehrtProport' => array( headline_text => 'Wirkungsquanten-Impulse verringern ihre Intensität im Raum mit \lm{ \frac{ 1 }{ r } }', headline_text_short => 'Wirkungsquanten-Impulse verringern ihre Intensität im Raum mit \term{1/r}'),
                              
                   'OM:FrQFT:Quantengravitation:Lichtverlangsamung' => array( headline_text => 'Lichtverlangsamung', headline_text_short => 'Lichtverlangsamung'),
                     'OM:FrQFT:Quantengravitation:Fig-GraviLeptonLichtbahn' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
@@ -1544,7 +1556,7 @@
            text_undertitel_h2 => 'Die fraktale Struktur des Universums',
            text_titel_discr_h3 => 'Der Urknall eines Kosmos ist die Innensicht der Entstehung eines Schwarzen Lochs',
            jump_ary => array(
-                  'OM:FrQFT:Universum-SchwarzeLoecher-Kosmos-Urknall:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:FrQFT:Universum-SchwarzeLoecher-Kosmos-Urknall:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:FrQFT:Vakuum' =>
@@ -1566,7 +1578,7 @@
                   'OM:FrQFT:Vakuum:Starke-Felder' => array( headline_text => 'Starke Felder', headline_text_short => 'Starke Felder'),
                   'OM:FrQFT:Vakuum:Quantenfluktuationen' => array( headline_text => 'Quantenfluktuationen', headline_text_short => 'Quantenfluktuationen'),
                   'OM:FrQFT:Vakuum:Fraktales-Vakuum' => array( headline_text => 'Fraktales Vakuum', headline_text_short => 'Fraktales Vakuum'),
-                  'OM:FrQFT:Vakuum:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:FrQFT:Vakuum:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:FrQFT:Vergleich' =>
@@ -1578,7 +1590,7 @@
            text_titel_h1 => 'Vergleich mit anderen Theorien',
            text_titel_short => 'Vergleich mit anderen Theorien',
            text_undertitel_h2 => 'Was verbindet die Quanten-Fluss-Theorie mit und was unterscheidet sie von anderen Theorien?',
-           text_titel_discr_h3 => 'XXX',
+           // text_titel_discr_h3 => 'X',
            jump_ary => array(
                   'OM:FrQFT:Vergleich:Spezielle-Relativitaetstheorie' => array( headline_text => 'Spezielle Relativitätstheorie', headline_text_short => 'Spezielle Relativitätstheorie'),
                   'OM:FrQFT:Vergleich:Stringtheorien' => array( headline_text => 'Stringtheorien', headline_text_short => 'Stringtheorien'),
@@ -1598,7 +1610,7 @@
            text_titel_h1 => 'Vorwort',
            text_titel_short => 'Vorwort',
            text_undertitel_h2 => 'Begreifen, welche Philosophie hinter unserer physischen Existenz steckt',
-           //text_titel_discr_h3 => 'XXX',
+           // text_titel_discr_h3 => 'X',
            jump_ary => array(
                 ),
          ),
@@ -1618,10 +1630,11 @@
                              
                     'OM:FrQFT:WasIstPhysik:Vortext:WarumDynamStrukt' => array( headline_text => 'Warum müssen es dynamische Strukturen sein?', headline_text_short => 'Warum müssen es dynamische Strukturen sein?'),
                     'OM:FrQFT:WasIstPhysik:Vortext:Bestandteile-Immer-Aehnlicher' => array( headline_text => 'Warum werden sich die Bestandteile immer ähnlicher, je weiter man die Dinge zerlegt?', headline_text_short => 'Warum werden sich die Bestandteile immer ähnlicher, je weiter man die Dinge zerlegt?'),
+                    'OM:FrQFT:WasIstPhysik:Vortext:Veraenderung-Strukturen-hat-zwei-zeitliche-Aspekte' => array( headline_text => 'Die Veränderung der Strukturen der Dinge hat zwei zeitliche Aspekte', /* headline_text_short => 'X' */),
                     'OM:FrQFT:WasIstPhysik:Vortext:Fig-ExistOhneZerf' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:FrQFT:WasIstPhysik:Vortext:Fig-ExistOhneStarr' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:FrQFT:WasIstPhysik:Vortext:Fig-Elapson-Existenzprinzip' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:WasIstPhysik:Vortext:Djet-Neheh-Dualismus' => array( headline_text => 'Der Djet-Neheh-Dualismus und das Existenzprinzip \\\\ \\color{*TitleAdd}{– der Welle-Teilchen-Dualismus}', headline_text_short => 'Djet-Neheh-Dualismus und Existenzprinzip'),
+                    'OM:FrQFT:WasIstPhysik:Vortext:Djet-Neheh-Dualismus' => array( headline_text => 'Der Djet-Neheh-Dualismus und das Existenzprinzip \\\\ \color{*TitleAdd}{– der Welle-Teilchen-Dualismus}', headline_text_short => 'Djet-Neheh-Dualismus und Existenzprinzip'),
                     'OM:FrQFT:WasIstPhysik:Vortext:Symmetriebrueche-Pole-und-Wechselwirkungen' => array( headline_text => 'Symmetriebrüche, Pole und Wechselwirkungen', headline_text_short => 'Symmetriebrüche, Pole und Wechselwirkungen'),
                     'OM:FrQFT:WasIstPhysik:Vortext:Fraktales-Existenzprinzip' => array( headline_text => 'Das Existenzprinzip ist ein fraktales Prinzip', headline_text_short => 'Fraktales Existenzprinzip'),
                     'OM:FrQFT:WasIstPhysik:Vortext:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
@@ -1637,12 +1650,11 @@
            text_titel_h1 => 'Wie messen wir in der Physik?',
            text_titel_short => 'Wie messen wir in der Physik?',
            text_undertitel_h2 => 'Was ist Physik? (Ⅱ)',
-           text_titel_discr_h3 => 'Wie funktioniert Beobachtung in Quantensystemen? — Die Verzauberung unseres Verständnisses der Quantensysteme durch deren Entzauberung \\\\ \\small{Die Zusammenhänge zwischen Erhaltung, Verschränkung, Quantisierung, Unschärferelation, Symmetriebruch und Wechselwirkung sowie Quantengravitation anhand eines vereinfachten Modells}',
+           text_titel_discr_h3 => 'Wie funktioniert Beobachtung in Quantensystemen? — Die Verzauberung unseres Verständnisses der Quantensysteme durch deren Entzauberung \\\\ \small{Die Zusammenhänge zwischen Erhaltung, Verschränkung, Quantisierung, Unschärferelation, Symmetriebruch und Wechselwirkung sowie Quantengravitation anhand eines vereinfachten Modells}',
            jump_ary => array(
                   'OM:FrQFT:WieMessenWirInDerPhysik:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
-                             
-                    'OM:FrQFT:WieMessenWirInDerPhysik:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                    // 'OM:FrQFT:WieMessenWirInDerPhysik:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:FrQFT:ZeitAlterungFrequenz' =>
@@ -1668,7 +1680,7 @@
                       'OM:FrQFT:ZeitAlterungFrequenz:Fig-GravitationspotMulti' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:Nota' => array( headline_text => 'Notation', headline_text_short => 'Notation'),
                     'OM:FrQFT:ZeitAlterungFrequenz:Einfuehrung:KosBeob' => array( headline_text => 'Kosmische Beobachter', headline_text_short => 'Kosmische Beobachter'),
-                    'OM:FrQFT:ZeitAlterungFrequenz:Equ-LGKos-2' => array( headline_text => '\\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-LGKos-1}'),
+                    'OM:FrQFT:ZeitAlterungFrequenz:Equ-LGKos-2' => array( headline_text => '\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-LGKos-1}'),
                              
                   'OM:FrQFT:ZeitAlterungFrequenz:Zeit' => array( headline_text => 'Zeit', headline_text_short => 'Zeit'),
                     'OM:FrQFT:ZeitAlterungFrequenz:Fig-Wirkungsquanten-Bewegungsraum' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
@@ -1690,19 +1702,19 @@
                   'OM:FrQFT:ZeitAlterungFrequenz:Frequenz' => array( headline_text => 'Frequenz und Energie', headline_text_short => 'Frequenz und Energie'),
                     'OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschw' => array( headline_text => 'ZAF.FE.1'),
                     'OM:FrQFT:ZeitAlterungFrequenz:Equ-FrequenzAusWQGeschwKos' => array( headline_text => 'ZAF.FE.7'),
-                    'OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwKonst-2' => array( headline_text => '\\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwKonst-1}'),
+                    'OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwKonst-2' => array( headline_text => '\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwKonst-1}'),
                     'OM:FrQFT:ZeitAlterungFrequenz:Equ-FrequenzAusAlpha' => array( headline_text => 'ZAF.FE.11'),
-                    'OM:FrQFT:ZeitAlterungFrequenz:Equ-EinsteinEnergieLichtQuant-1' => array( headline_text => '\\name{OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant}'),
+                    'OM:FrQFT:ZeitAlterungFrequenz:Equ-EinsteinEnergieLichtQuant-1' => array( headline_text => '\name{OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant}'),
                              
                   'OM:FrQFT:ZeitAlterungFrequenz:Wirkungsquanten-Geschwindigkeit' => array( headline_text => 'Wirkungsquanten-Geschwindigkeit', headline_text_short => 'Wirkungsquanten-Geschwindigkeit'),
                     'OM:FrQFT:ZeitAlterungFrequenz:Fig-PoundRebkaSnider' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:FrQFT:ZeitAlterungFrequenz:Fig-Wellenlaenge' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschw-2' => array( headline_text => '\\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschw}'),
+                    'OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschw-2' => array( headline_text => '\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschw}'),
                     'OM:FrQFT:ZeitAlterungFrequenz:Equ-FrequenzRelAenderung' => array( headline_text => 'ZAF.Wq.1'),
                     'OM:FrQFT:ZeitAlterungFrequenz:Equ-DeltaPhiSehrKlein' => array( headline_text => 'ZAF.Wq.2'),
                     'OM:FrQFT:ZeitAlterungFrequenz:Equ-AlphaNaeherFrequenzaender' => array( headline_text => 'ZAF.Wq.5'),
-                    'OM:FrQFT:ZeitAlterungFrequenz:Equ-FrequenzAusWQGeschwKos-2' => array( headline_text => '\\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-FrequenzAusWQGeschwKos}'),
-                    'OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschw-3' => array( headline_text => '\\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschw}'),
+                    'OM:FrQFT:ZeitAlterungFrequenz:Equ-FrequenzAusWQGeschwKos-2' => array( headline_text => '\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-FrequenzAusWQGeschwKos}'),
+                    'OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschw-3' => array( headline_text => '\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschw}'),
                     'OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwKonst-1' => array( headline_text => 'ZAF.Wq.29'),
                     'OM:FrQFT:ZeitAlterungFrequenz:Equ-WQGeschwRot' => array( headline_text => 'ZAF.Wq.31'),
 
@@ -1718,9 +1730,9 @@
                              
                   'OM:FrQFT:ZeitAlterungFrequenz:FormBewegRaum' => array( headline_text => 'Formeln des Bewegungsraums', headline_text_short => 'Formeln des Bewegungsraums'),
                     'OM:FrQFT:ZeitAlterungFrequenz:FormBewegRaum:Bw' => array( headline_text => 'Beobachter- und Beobachtungsortswechsel', headline_text_short => 'Beobachter- und Beobachtungsortswechsel'),
-                      'OM:FrQFT:ZeitAlterungFrequenz:Equ-AltGleichZeit-2' => array( headline_text => '\\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-AltGleichZeit}'),
-                      'OM:FrQFT:ZeitAlterungFrequenz:Equ-AltKos-2' => array( headline_text => '\\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-AltKos}'),
-                      'OM:FrQFT:ZeitAlterungFrequenz:Equ-AltAenderungKos-2' => array( headline_text => '\\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-AltAenderungKos}'),
+                      'OM:FrQFT:ZeitAlterungFrequenz:Equ-AltGleichZeit-2' => array( headline_text => '\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-AltGleichZeit}'),
+                      'OM:FrQFT:ZeitAlterungFrequenz:Equ-AltKos-2' => array( headline_text => '\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-AltKos}'),
+                      'OM:FrQFT:ZeitAlterungFrequenz:Equ-AltAenderungKos-2' => array( headline_text => '\name{OM:FrQFT:ZeitAlterungFrequenz:Equ-AltAenderungKos}'),
                       'OM:FrQFT:ZeitAlterungFrequenz:Equ-AltFakAllg' => array( headline_text => 'ZAF.Bw.1'),
                       'OM:FrQFT:ZeitAlterungFrequenz:Equ-LGAenderungAllg' => array( headline_text => 'ZAF.Bw.7'),
                       'OM:FrQFT:ZeitAlterungFrequenz:Equ-FrequOrtsWechsel' => array( headline_text => 'ZAF.Bw.10'),
@@ -1741,42 +1753,42 @@
     array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/Zusammenfassung_de.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Zusammenfassung_de.php',
            titel => 'Zusammenfassung - Fraktale Quanten-Fluss-Theorie (FrQFT) - Deutsch',
-           description => 'Was erreicht wurde.',
+           description => '\name[undertitle]{OM:FrQFT:Zusammenfassung}.\hidden{ – \name[description]{OM:FrQFT:Zusammenfassung}.}',
            keywords => '',
            text_titel_h1 => 'Zusammenfassung',
            text_titel_short => 'Zusammenfassung',
            text_undertitel_h2 => 'Was erreicht wurde',
-           text_titel_discr_h3 => 'XXX',
+           // text_titel_discr_h3 => 'X',
            jump_ary => array(
                   'OM:FrQFT:Zusammenfassung:Zeit-Ebenen' => array( headline_text => 'Zeit-Ebenen', headline_text_short => 'Zeit-Ebenen'),
-                  'OM:FrQFT:Zusammenfassung:Universum-aus-gestaffelten-Kosmoi' => array( headline_text => 'Universum aus gestaffelten Kosmoi', headline_text_short => 'Universum aus gestaffelten Kosmoi'),
+                  'OM:FrQFT:Zusammenfassung:Universum-aus-geschachtelten-Kosmoi' => array( headline_text => 'Universum aus geschachtelten Kosmoi', headline_text_short => 'Universum aus geschachtelten Kosmoi'),
                   'OM:FrQFT:Zusammenfassung:Urknall-und-Schwarze-Loecher' => array( headline_text => 'Urknall und Schwarze Löcher', headline_text_short => 'Urknall und Schwarze Löcher'),
-                  'OM:FrQFT:Zusammenfassung:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:FrQFT:Zusammenfassung:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
-  'OM:FrQFT:XXX-Notizen' =>
+  'OM:FrQFT:X-Notizen' =>
     array( url_abs => 'https://nsosp.org/de/Quanten-Fluss-Theorie/XXX_Notizen.php',
            url_rel => $Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/XXX_Notizen.php',
-           titel => 'XXX-Notizen',
+           titel => 'X-Notizen',
            description => 'Diese Seite sollte von Google nicht angezeigt werden!',
            keywords => '',
            text_titel_h1 => 'Notizen zum Aufbewahren',
            text_titel_short => 'Notizen zum Aufbewahren',
-           text_undertitel_h2 => 'XXX',
-           text_titel_discr_h3 => 'XXX',
+           text_undertitel_h2 => 'X',
+           text_titel_discr_h3 => 'X',
            jump_ary => array(
-                  'OM:FrQFT:XXX-Notizen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                  'OM:FrQFT:X-Notizen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
-                  'OM:FrQFT:XXX-Notizen:Higgs-Feld-Aether' => array( headline_text => 'Higgs-Feld entspricht einem Äther', headline_text_short => 'Higgs-Feld entspricht Äther'),
-                  'OM:FrQFT:XXX-Notizen:Problem-der-fehlenden-Gravitation-der-Vakuumenergie' => array( headline_text => 'Problem der fehlenden Gravitation der Vakuumenergie', headline_text_short => 'Problem der fehlenden Gravitation der Vakuumenergie'),
-                  'OM:FrQFT:XXX-Notizen:Alte-Einleitung' => array( headline_text => 'Rest Alte Einleitung', headline_text_short => 'Rest Alte Einleitung'),
-                  'OM:FrQFT:XXX-Notizen:NeuePhysik-AlterVortext' => array( headline_text => 'Neue Physik: alter Vortext', headline_text_short => 'Neue Physik: alter Vortext'),
-                  'OM:FrQFT:XXX-Notizen:NeuePhysik-Loesung-des-Problems-der-Zeit' => array( headline_text => 'Neue Physik: Lösung des Problems der Zeit', headline_text_short => 'Neue Physik: Lösung des Problems der Zeit'),
-                    'OM:FrQFT:XXX-Notizen:NeuePhysik-Fig-Elapson' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:XXX-Notizen:NeuePhysik-Fig-Wirkungsquanten-Bewegungsraum' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:FrQFT:XXX-Notizen:NeuePhysik-Fig-Gekruemmter-Licht-Bewegungsraum' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                  'OM:FrQFT:XXX-Notizen:Sonnensys-und-moderne-Physik' => array( headline_text => 'Sonnensystem und moderne Physik', headline_text_short => 'Sonnensystem und moderne Physik'),
-                  'OM:FrQFT:XXX-Notizen:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  'OM:FrQFT:X-Notizen:Higgs-Feld-Aether' => array( headline_text => 'Higgs-Feld entspricht einem Äther', headline_text_short => 'Higgs-Feld entspricht Äther'),
+                  'OM:FrQFT:X-Notizen:Problem-der-fehlenden-Gravitation-der-Vakuumenergie' => array( headline_text => 'Problem der fehlenden Gravitation der Vakuumenergie', headline_text_short => 'Problem der fehlenden Gravitation der Vakuumenergie'),
+                  'OM:FrQFT:X-Notizen:Alte-Einleitung' => array( headline_text => 'Rest Alte Einleitung', headline_text_short => 'Rest Alte Einleitung'),
+                  'OM:FrQFT:X-Notizen:NeuePhysik-AlterVortext' => array( headline_text => 'Neue Physik: alter Vortext', headline_text_short => 'Neue Physik: alter Vortext'),
+                  'OM:FrQFT:X-Notizen:NeuePhysik-Loesung-des-Problems-der-Zeit' => array( headline_text => 'Neue Physik: Lösung des Problems der Zeit', headline_text_short => 'Neue Physik: Lösung des Problems der Zeit'),
+                    'OM:FrQFT:X-Notizen:NeuePhysik-Fig-Elapson' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                    'OM:FrQFT:X-Notizen:NeuePhysik-Fig-Wirkungsquanten-Bewegungsraum' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                    'OM:FrQFT:X-Notizen:NeuePhysik-Fig-Gekruemmter-Licht-Bewegungsraum' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                  'OM:FrQFT:X-Notizen:Sonnensys-und-moderne-Physik' => array( headline_text => 'Sonnensystem und moderne Physik', headline_text_short => 'Sonnensystem und moderne Physik'),
+                  // 'OM:FrQFT:X-Notizen:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
 
@@ -1793,30 +1805,30 @@
            text_titel_discr_h3 => '',
            jump_ary => array(
                   'OM:NPYo:Angebote-Veranstaltungen:NaPhilYogaCoaching' => array( headline_text => 'NaPhil-Yoga Coaching', headline_text_short => 'NaPhil-Yoga Coaching'),
-                  'OM:NPYo:Angebote-Veranstaltungen:YogaMeetsWissenschaft' => array( headline_text => 'Yoga, Alternativmedizin meets Wissenschaft, Medizin, Physik \\color{*TitleAdd}{\\small{(Meetup Gruppe)}}', headline_text_short => 'Yoga, Alternativmedizin meets Wissenschaft, Medizin, Physik'),
-                  'OM:NPYo:Angebote-Veranstaltungen:LGBTSpiritualHamburg' => array( headline_text => 'LGBT Spiritual Hamburg \\color{*TitleAdd}{\\small{(Meetup Gruppe)}}', headline_text_short => 'LGBT Spiritual Hamburg'),
-                  'OM:NPYo:Angebote-Veranstaltungen:PhysikNeuSehenErgruenden' => array( headline_text => 'Physik Neu Sehen und Ergründen \\color{*TitleAdd}{\\small{(Meetup Gruppe)}}', headline_text_short => 'Physik Neu Sehen und Ergründen'),
-                  'OM:NPYo:Angebote-Veranstaltungen:PhysikAchtsamkeitYoga' => array( headline_text => 'Physik, Achtsamkeit und Yoga \\color{*TitleAdd}{\\small{(Vortrag mit Diskussion)}}', headline_text_short => 'Physik, Achtsamkeit und Yoga'),
-                  'OM:NPYo:Angebote-Veranstaltungen:PerspektivwechselAmbiguitaetstoleranzEntscheidungen' => array( headline_text => 'Perspektivwechsel, Ambiguitätstoleranz und Entscheidungen \\color{*TitleAdd}{\\small{(Vortrag mit Diskussion)}}', headline_text_short => 'Perspektivwechsel, Ambiguitätstoleranz und Entscheidungen'),
-                  'OM:NPYo:Angebote-Veranstaltungen:AchtsamkeitsprozessWoPhysikAufYogaTrifft' => array( headline_text => 'Der Achtsamkeitsprozess — Wo Physik auf Yoga trifft \\color{*TitleAdd}{\\small{(Worshop)}}', headline_text_short => 'Der Achtsamkeitsprozess — Wo Physik auf Yoga trifft'),
+                  'OM:NPYo:Angebote-Veranstaltungen:YogaMeetsWissenschaft' => array( headline_text => 'Yoga, Alternativmedizin meets Wissenschaft, Medizin, Physik \color{*TitleAdd}{\small{(Meetup Gruppe)}}', headline_text_short => 'Yoga, Alternativmedizin meets Wissenschaft, Medizin, Physik'),
+                  'OM:NPYo:Angebote-Veranstaltungen:LGBTSpiritualHamburg' => array( headline_text => 'LGBT Spiritual Hamburg \color{*TitleAdd}{\small{(Meetup Gruppe)}}', headline_text_short => 'LGBT Spiritual Hamburg'),
+                  'OM:NPYo:Angebote-Veranstaltungen:PhysikNeuSehenErgruenden' => array( headline_text => 'Physik Neu Sehen und Ergründen \color{*TitleAdd}{\small{(Meetup Gruppe)}}', headline_text_short => 'Physik Neu Sehen und Ergründen'),
+                  'OM:NPYo:Angebote-Veranstaltungen:PhysikAchtsamkeitYoga' => array( headline_text => 'Physik, Achtsamkeit und Yoga \color{*TitleAdd}{\small{(Vortrag mit Diskussion)}}', headline_text_short => 'Physik, Achtsamkeit und Yoga'),
+                  'OM:NPYo:Angebote-Veranstaltungen:PerspektivwechselAmbiguitaetstoleranzEntscheidungen' => array( headline_text => 'Perspektivwechsel, Ambiguitätstoleranz und Entscheidungen \color{*TitleAdd}{\small{(Vortrag mit Diskussion)}}', headline_text_short => 'Perspektivwechsel, Ambiguitätstoleranz und Entscheidungen'),
+                  'OM:NPYo:Angebote-Veranstaltungen:AchtsamkeitsprozessWoPhysikAufYogaTrifft' => array( headline_text => 'Der Achtsamkeitsprozess — Wo Physik auf Yoga trifft \color{*TitleAdd}{\small{(Worshop)}}', headline_text_short => 'Der Achtsamkeitsprozess — Wo Physik auf Yoga trifft'),
                 ),
          ),
   'OM:NPYo:Chakras-Kabbala-Tarot' =>
     array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Chakras-Kabbala-Tarot.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Chakras-Kabbala-Tarot.php',
            titel => 'Chakras, Kabbala und Tarot - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
-           description => 'XXX.',
+           description => '\name[undertitle]{OM:NPYo:Chakras-Kabbala-Tarot}.\hidden{ – \name[description]{OM:NPYo:Chakras-Kabbala-Tarot}.}',
            keywords => '',
            text_titel_h1 => 'Chakras, Kabbala und Tarot',
            text_titel_short => 'Chakras, Kabbala und Tarot',
-           text_undertitel_h2 => 'XXX',
-           text_titel_discr_h3 => 'XXX',
+           text_undertitel_h2 => 'Die Energiezentren unseres Körpers',
+           // text_titel_discr_h3 => 'X',
            jump_ary => array(
                   'OM:NPYo:Chakras-Kabbala-Tarot:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
-                    'OM:NPYo:Chakras-Kabbala-Tarot:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                    // 'OM:NPYo:Chakras-Kabbala-Tarot:Vortext:X' => array( headline_text => 'X', headline_text_short => 'X'),
                              
-                  'OM:NPYo:Chakras-Kabbala-Tarot:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:NPYo:Chakras-Kabbala-Tarot:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:NPYo:Einleitung' =>
@@ -1896,7 +1908,7 @@
                   'OM:NPYo:HaTha:HerstellungBalance' => array( headline_text => 'Herstellung der Balance', headline_text_short => 'Herstellung der Balance'),
                 ),
          ),
-   'OM:NPYo:Literatur' =>
+  'OM:NPYo:Literatur' =>
     array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Literatur_de.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Literatur_de.php',
            titel => 'Literatur - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
@@ -1920,7 +1932,7 @@
            text_undertitel_h2 => 'Diese Gruppe ist für lesbische, bisexuelle, schwule und alle* Menschen, die Freunde suchen, mit denen sie sich über spirituelle Erfahrungen austauschen können',
            text_titel_discr_h3 => '',
            jump_ary => array(
-                  'OM:NPYo:Meetup-LGBT-Spiritual-Hamburg:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:NPYo:Meetup-LGBT-Spiritual-Hamburg:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:NPYo:Stein-der-Weisen' =>
@@ -1929,14 +1941,14 @@
            titel => 'Stein der Weisen (Lapis Philosophorum), Heiliger Gral und Phönix aus der Asche - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
            description => 'Naturphilosophische Hintergründe und Verbindungen der Mythen und Sagen, ihrer Weisheiten, mit unserem Leben.',
            keywords => '',
-           text_titel_h1 => 'Stein der Weisen \\color{*TitleAdd}{\\small{(Lapis Philosophorum)}}, \\\\ Heiliger Gral und \\\\ Phönix aus der Asche',
+           text_titel_h1 => 'Stein der Weisen \color{*TitleAdd}{\small{(Lapis Philosophorum)}}, \\\\ Heiliger Gral und \\\\ Phönix aus der Asche',
            text_titel_short => 'Stein der Weisen, Heiliger Gral und Phönix aus der Asche',
            text_undertitel_h2 => 'Naturphilosophische Hintergründe und Verbindungen der Mythen und Sagen, ihrer Weisheiten, mit unserem Leben',
            text_titel_discr_h3 => '',
            jump_ary => array(
                   'OM:NPYo:Stein-der-Weisen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
-                    'OM:NPYo:Stein-der-Weisen:Vortext:XXX' => array( headline_text => 'XXX'/*, headline_text_short => '' */),
+                    // 'OM:NPYo:Stein-der-Weisen:Vortext:X' => array( headline_text => 'X'/*, headline_text_short => 'X' */),
                              
                   'OM:NPYo:Stein-der-Weisen:Stein-der-Weisen' => array( headline_text => 'Stein der Weisen'/* , headline_text_short => ''*/),
                     'OM:NPYo:Stein-der-Weisen:Stein-der-Weisen:Fig-Hermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
@@ -1954,11 +1966,11 @@
     array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Vorwort.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Vorwort.php',
            titel => 'Vorwort - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
-           description => 'XXX',
+           description => '›Liebe zur Weisheit‹ Yoga – die Natur des Lebens verstehen und dieses Wissen anwenden. Körper und Seele als Einheit sehen, die Gedanken zur Ruhe kommen lassen …',
            keywords => '',
            text_titel_h1 => 'Vorwort',
            text_titel_short => 'Vorwort',
-           text_undertitel_h2 => '\\color{*FigDescr}{›Liebe zur Weisheit‹ Yoga} – die Natur des Lebens verstehen und dieses Wissen anwenden. Körper und Seele als Einheit sehen, die Gedanken zur Ruhe kommen lassen …',
+           text_undertitel_h2 => '\color{*FigDescr}{›Liebe zur Weisheit‹ Yoga} – die Natur des Lebens verstehen und dieses Wissen anwenden. Körper und Seele als Einheit sehen, die Gedanken zur Ruhe kommen lassen …',
            //text_undertitel_h2 => 'Die Naturphilosophie des Yoga',
            //text_undertitel_h2 => 'Emotionen leiten uns durch unser Leben und entscheiden über seine Qualität',
            //text_undertitel_h2 => 'Emotionen leiten uns durch unser Leben und bestimmen unsere Qualität',
@@ -1971,7 +1983,7 @@
            jump_ary => array(
                   'OM:NPYo:Vorwort:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
-                  //  'OM:NPYo:Vorwort:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'Vorwort'),
+                  //  'OM:NPYo:Vorwort:Vortext:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:NPYo:WasIstYoga' =>
@@ -1987,7 +1999,7 @@
            jump_ary => array(
                   'OM:NPYo:WasIstYoga:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
-                    'OM:NPYo:WasIstYoga:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                    'OM:NPYo:WasIstYoga:Vortext:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:NPYo:WasUnterschiedYogaSport' =>
@@ -2003,7 +2015,7 @@
            jump_ary => array(
                   'OM:NPYo:WasUnterschiedYogaSport:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
-                    'OM:NPYo:WasUnterschiedYogaSport:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                    // 'OM:NPYo:WasUnterschiedYogaSport:Vortext:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:NPYo:WieVeraendereIchMeineVergangenheit' =>
@@ -2019,9 +2031,9 @@
            jump_ary => array(
                   'OM:NPYo:WieVeraendereIchMeineVergangenheit:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
-                    'OM:NPYo:WieVeraendereIchMeineVergangenheit:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                    // 'OM:NPYo:WieVeraendereIchMeineVergangenheit:Vortext:X' => array( headline_text => 'X', headline_text_short => 'X'),
                              
-                  // 'OM:NPYo:WieVeraendereIchMeineVergangenheit:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:NPYo:WieVeraendereIchMeineVergangenheit:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:NPYo:WS-Achtsamkeitsprozess-WoPhysikAufYogaTrifft' =>
@@ -2039,21 +2051,21 @@
                   'OM:NPYo:WS-Achtsamkeitsprozess-WoPhysikAufYogaTrifft:HerzAtemMedi' => array( headline_text => 'Herzöffnungs- und Atemfluss-Meditation', headline_text_short => 'Herzöffnungs- und Atemfluss-Meditation'),
                 ),
          ),
-  'OM:NPYo:XXX-Notizen' =>
+  'OM:NPYo:X-Notizen' =>
     array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/XXX_Notizen.php',
            url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/XXX_Notizen.php',
-           titel => 'XXX-Notizen',
+           titel => 'X-Notizen',
            description => 'Diese Seite sollte von Google nicht angezeigt werden!',
            keywords => '',
            text_titel_h1 => 'Notizen zum Aufbewahren',
            text_titel_short => 'Notizen zum Aufbewahren',
-           text_undertitel_h2 => 'XXX',
-           text_titel_discr_h3 => 'XXX',
+           text_undertitel_h2 => 'X',
+           text_titel_discr_h3 => 'X',
            jump_ary => array(
-                  'OM:NPYo:XXX-Notizen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                  'OM:NPYo:X-Notizen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
-                  'OM:NPYo:XXX-Notizen:MeditationAchtsamkeitTechniken' => array( headline_text => 'Achtsamkeits- und Meditationstechniken', headline_text_short => 'Achtsamkeits- und Meditationstechniken'),
-                  'OM:NPYo:XXX-Notizen:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  'OM:NPYo:X-Notizen:MeditationAchtsamkeitTechniken' => array( headline_text => 'Achtsamkeits- und Meditationstechniken', headline_text_short => 'Achtsamkeits- und Meditationstechniken'),
+                  // 'OM:NPYo:X-Notizen:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
 
@@ -2079,7 +2091,7 @@
                           'Wolfgang Huß und \\\\'."\n".
                           'Media Line Digital e.K. \\\\'."\n".
                           'is licensed under \\\\'."\n".
-                          '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
+                          '\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
            litera_url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Project/Literatur.php',
            litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
          )),
@@ -2089,7 +2101,7 @@
            titel => 'New Soul Of Science Project (NSOSP) – Deutsch',
            description => 'Knowledge And Care Helps – Bewusstsein, Wissen, Fürsorge und Können helfen gegen Hilflosigkeit in der Not, in dem sie uns Werkzeuge zur Verbesserung unserer Lebenssituation und Lebensqualität an die Hand geben.',
            keywords => '',
-           text_titel_h1 => 'New Soul Of Science Project \\color{*TitleAdd}{\\small{(NSOSP)}}',
+           text_titel_h1 => 'New Soul Of Science Project \color{*TitleAdd}{\small{(NSOSP)}}',
            text_titel_short => 'New Soul Of Science Project',
            text_undertitel_h2 => 'Knowledge And Care Helps',
            text_titel_discr_h3 => 'Bewusstsein, Wissen, Fürsorge und Können helfen gegen Hilflosigkeit in der Not, in dem sie uns Werkzeuge zur Verbesserung unserer Lebenssituation und Lebensqualität an die Hand geben',
@@ -2100,29 +2112,29 @@
                     'OM:nSOSp:Home:Forschungsstand:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
                     'OM:nSOSp:Home:Forschungsstand:Fig-Photon' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                              
-                  'OM:nSOSp:Home:nSOSp' => array( headline_text => '\\name[title]{OM:nSOSp:Home}', headline_text_short => '\\name[shorttitle]{OM:nSOSp:Home}'),
-                  'OM:nSOSp:Home:nSOSa' => array( headline_text => '\\name[title]{OM:nSOSa:Home}', headline_text_short => '\\name[shorttitle]{OM:nSOSa:Home}'),
+                  'OM:nSOSp:Home:nSOSp' => array( headline_text => '\name[title]{OM:nSOSp:Home}', headline_text_short => '\name[shorttitle]{OM:nSOSp:Home}'),
+                  'OM:nSOSp:Home:nSOSa' => array( headline_text => '\name[title]{OM:nSOSa:Home}', headline_text_short => '\name[shorttitle]{OM:nSOSa:Home}'),
                              
                   'OM:nSOSp:Home:Wolfgang-Huss' => array( headline_text => 'Wolfgang Huß', headline_text_short => 'Wolfgang Huß'),
                     'OM:nSOSp:Home:Wolfgang-Huss:Fig-WolfgangHuss' => array( headline_text => 'Wolfgang Huß', headline_text_short => 'Wolfgang Huß'),
-                    'OM:nSOSp:Home:Wolfgang-Huss:SpaLeb' => array( headline_text => '\\name[title]{OM:SpaLeb:Home}', headline_text_short => '\\name[shorttitle]{OM:SpaLeb:Home}'),
-                    'OM:nSOSp:Home:Wolfgang-Huss:NPYo' => array( headline_text => '\\name[title]{OM:NPYo:Home}', headline_text_short => '\\name[shorttitle]{OM:NPYo:Home}'),
-                    'OM:nSOSp:Home:Wolfgang-Huss:FrQFT' => array( headline_text => '\\name[title]{OM:FrQFT:Home}', headline_text_short => '\\name[shorttitle]{OM:FrQFT:Home}'),
-                    'OM:nSOSp:Home:Wolfgang-Huss:VRT' => array( headline_text => '\\name[title]{OM:VRT:Home}', headline_text_short => '\\name[shorttitle]{OM:VRT:Home}'),
-                    'OM:nSOSp:Home:Wolfgang-Huss:SupNum' => array( headline_text => '\\name[title]{OM:SupNum:Home}', headline_text_short => '\\name[shorttitle]{OM:SupNum:Home}'),
+                    'OM:nSOSp:Home:Wolfgang-Huss:SpaLeb' => array( headline_text => '\name[title]{OM:SpaLeb:Home}', headline_text_short => '\name[shorttitle]{OM:SpaLeb:Home}'),
+                    'OM:nSOSp:Home:Wolfgang-Huss:NPYo' => array( headline_text => '\name[title]{OM:NPYo:Home}', headline_text_short => '\name[shorttitle]{OM:NPYo:Home}'),
+                    'OM:nSOSp:Home:Wolfgang-Huss:FrQFT' => array( headline_text => '\name[title]{OM:FrQFT:Home}', headline_text_short => '\name[shorttitle]{OM:FrQFT:Home}'),
+                    'OM:nSOSp:Home:Wolfgang-Huss:VRT' => array( headline_text => '\name[title]{OM:VRT:Home}', headline_text_short => '\name[shorttitle]{OM:VRT:Home}'),
+                    'OM:nSOSp:Home:Wolfgang-Huss:SupNum' => array( headline_text => '\name[title]{OM:SupNum:Home}', headline_text_short => '\name[shorttitle]{OM:SupNum:Home}'),
                     'OM:nSOSp:Home:Wolfgang-Huss:NPT' => array( headline_text => 'Strukturelle Naturphilosophie der Gegensätze', headline_text_short => 'Naturphilosophie der Gegensätze'),
-                    'OM:nSOSp:Home:Wolfgang-Huss:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                    // 'OM:nSOSp:Home:Wolfgang-Huss:X' => array( headline_text => 'X', headline_text_short => 'X'),
                              
-                  'OM:nSOSp:Home:Spannungsspiel-des-Lebens' => array( headline_text => '\\name[title]{OM:SpaLeb:Home}', headline_text_short => '\\name[shorttitle]{OM:SpaLeb:Home}'),
-                  'OM:nSOSp:Home:Naturphilosophie-Yoga' => array( headline_text => '\\name[title]{OM:NPYo:Home}', headline_text_short => '\\name[shorttitle]{OM:NPYo:Home}'),
-                  'OM:nSOSp:Home:Fraktale-Quanten-Fluss-Theorie' => array( headline_text => '\\name[title]{OM:FrQFT:Home}', headline_text_short => '\\name[shorttitle]{OM:FrQFT:Home}'),
-                  'OM:nSOSp:Home:Vereinheitlichte-Relativitaetstheorie' => array( headline_text => '\\name[title]{OM:VRT:Home}', headline_text_short => '\\name[shorttitle]{OM:VRT:Home}'),
-                  'OM:nSOSp:Home:Naturphilosophie-der-Zeit' => array( headline_text => '\\name[title]{OM:NPT:Home}', headline_text_short => '\\name[shorttitle]{OM:NPT:Home}'),
+                  'OM:nSOSp:Home:Spannungsspiel-des-Lebens' => array( headline_text => '\name[title]{OM:SpaLeb:Home}', headline_text_short => '\name[shorttitle]{OM:SpaLeb:Home}'),
+                  'OM:nSOSp:Home:Naturphilosophie-Yoga' => array( headline_text => '\name[title]{OM:NPYo:Home}', headline_text_short => '\name[shorttitle]{OM:NPYo:Home}'),
+                  'OM:nSOSp:Home:Fraktale-Quanten-Fluss-Theorie' => array( headline_text => '\name[title]{OM:FrQFT:Home}', headline_text_short => '\name[shorttitle]{OM:FrQFT:Home}'),
+                  'OM:nSOSp:Home:Vereinheitlichte-Relativitaetstheorie' => array( headline_text => '\name[title]{OM:VRT:Home}', headline_text_short => '\name[shorttitle]{OM:VRT:Home}'),
+                  'OM:nSOSp:Home:Naturphilosophie-der-Zeit' => array( headline_text => '\name[title]{OM:NPT:Home}', headline_text_short => '\name[shorttitle]{OM:NPT:Home}'),
                   'OM:nSOSp:Home:Naturphilosophie-der-Gegensaetze' => array( headline_text => 'Naturphilosophie der Gegensätze', headline_text_short => 'Naturphilosophie der Gegensätze'),
-                  'OM:nSOSp:Home:Superial-Zahlen' => array( headline_text => '\\name[title]{OM:SupNum:Home}', headline_text_short => '\\name[shorttitle]{OM:SupNum:Home}'),
-                  'OM:nSOSp:Home:Biordinalzahlen' => array( headline_text => '\\name[title]{OM:BiOrd:Home}', headline_text_short => '\\name[shorttitle]{OM:BiOrd:Home}'),
-                  'OM:nSOSp:Home:Operialtheorie' => array( headline_text => '\\name[title]{OM:OT:Home}', headline_text_short => '\\name[shorttitle]{OM:OT:Home}'),
-                  'OM:nSOSp:Home:Zahlensemantik' => array( headline_text => '\\name[title]{OM:ZS:Home}', headline_text_short => '\\name[shorttitle]{OM:ZS:Home}'),
+                  'OM:nSOSp:Home:Superial-Zahlen' => array( headline_text => '\name[title]{OM:SupNum:Home}', headline_text_short => '\name[shorttitle]{OM:SupNum:Home}'),
+                  'OM:nSOSp:Home:Biordinalzahlen' => array( headline_text => '\name[title]{OM:BiOrd:Home}', headline_text_short => '\name[shorttitle]{OM:BiOrd:Home}'),
+                  'OM:nSOSp:Home:Operialtheorie' => array( headline_text => '\name[title]{OM:OT:Home}', headline_text_short => '\name[shorttitle]{OM:OT:Home}'),
+                  'OM:nSOSp:Home:Zahlensemantik' => array( headline_text => '\name[title]{OM:ZS:Home}', headline_text_short => '\name[shorttitle]{OM:ZS:Home}'),
                   'OM:nSOSp:Home:Inspiration' => array( headline_text => 'Inspiration', headline_text_short => 'Inspiration'),
                 ),
          ),
@@ -2137,7 +2149,7 @@
            //text_undertitel_h2 => 'und Informationen',
            //text_titel_discr_h3 => 'Vereinheitlichte Physik auf Basis eines selbstorganisierten, fraktalen Systems von lichtähnlichen, zu Strings verbundenen Wirkungsquanten.',
            jump_ary => array(
-                  'OM:nSOSp:Buchprojekt:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:nSOSp:Buchprojekt:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
    'OM:nSOSp:Literatur' =>
@@ -2211,21 +2223,21 @@
            description => 'Physik und Leben auf Basis von Regelprozessen. Eine Überlegung, wie wir uns Bewusstsein ganz grundsätzlich physikalisch vorstellen können und wie Leben zu verstehen ist.',
            keywords => '',
            text_titel_h1 => 'Das Bewusstsein',
-           //text_titel_h1 => 'Das Bewusstsein \\\\ \\color{*TitleAdd}{\\small{in der Physik auf Basis von Regelprozessen}}',
+           //text_titel_h1 => 'Das Bewusstsein \\\\ \color{*TitleAdd}{\small{in der Physik auf Basis von Regelprozessen}}',
            text_titel_short => 'Bewusstsein',
            text_undertitel_h2 => 'Physik und Leben auf Basis von Regelprozessen',
            text_titel_discr_h3 => 'Eine Überlegung, wie wir uns Bewusstsein ganz grundsätzlich physikalisch vorstellen können und wie Leben zu verstehen ist',
            jump_ary => array(
                   'OM:SpaLeb:Bewusstsein:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
-                    'OM:SpaLeb:Bewusstsein:Vortext:Elementarprozess' => array( headline_text => 'Der Elementarprozess \\color{*TitleAdd}{– (Eigen-)Resonanz in Regelprozessen}', headline_text_short => 'Der Elementarprozess'),
+                    'OM:SpaLeb:Bewusstsein:Vortext:Elementarprozess' => array( headline_text => 'Der Elementarprozess \color{*TitleAdd}{– (Eigen-)Resonanz in Regelprozessen}', headline_text_short => 'Der Elementarprozess'),
                     'OM:SpaLeb:Bewusstsein:Vortext:ElementarBewusstsein' => array( headline_text => 'Elementares Bewusstsein', headline_text_short => 'Elementares Bewusstsein'),
                     'OM:SpaLeb:Bewusstsein:Vortext:RudimentaeresBewusstsein' => array( headline_text => 'Rudimentäres Bewusstsein, Lernen und Erinnern', headline_text_short => 'Rudimentäres Bewusstsein'),
                     'OM:SpaLeb:Bewusstsein:Vortext:KognitivesBewusstsein' => array( headline_text => 'Kognitives Bewusstsein, Lernen und Erinnern', headline_text_short => 'Kognitives Bewusstsein'),
 
-                  'OM:SpaLeb:Bewusstsein:InformationIstWirkung' => array( headline_text => 'Information ist Wirkung'/* , headline_text_short => 'XXX' */),
+                  'OM:SpaLeb:Bewusstsein:InformationIstWirkung' => array( headline_text => 'Information ist Wirkung'/* , headline_text_short => 'X' */),
 
-                  'OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik' => array( headline_text => 'Bewusstsein und Mathematik'/* , headline_text_short => 'XXX' */),
+                  'OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik' => array( headline_text => 'Bewusstsein und Mathematik'/* , headline_text_short => 'X' */),
                 ),
          ),
   'OM:SpaLeb:Demenz' =>
@@ -2239,7 +2251,7 @@
            text_undertitel_h2 => 'Chronische Prozesse im Nervensystem könnten an der Entstehung von Demenzerkrankungen beteiligt sein',
            //text_titel_discr_h3 => 'Ein tiefes Verständnis von Raum, Zeit und Existenz ist notwendig, um die grundlegenden Probleme der heutigen Physik zu lösen; die Physik zu vereinheitlichen.',
            jump_ary => array(
-                  //'OM:SpaLeb:Demenz:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  //'OM:SpaLeb:Demenz:X' => array( headline_text => 'X', headline_text_short => 'X'),
                              
                   'OM:SpaLeb:Demenz:Konzentrationsstoerungen' => array( headline_text => 'Konzentrationsstörungen', headline_text_short => 'Konzentrationsstörungen'),
                   'OM:SpaLeb:Demenz:Alzheimer-Parkinson' => array( headline_text => 'Alzheimer und Parkinson', headline_text_short => 'Alzheimer und Parkinson'),
@@ -2254,7 +2266,7 @@
            text_titel_h1 => 'Diskussion',
            text_titel_short => 'Diskussion',
            text_undertitel_h2 => 'Umfassendere Beleuchtung des ›Spannungsspiels des Lebens‹',
-           //text_titel_discr_h3 => 'XXX',
+           //text_titel_discr_h3 => 'X',
            jump_ary => array(
                   'OM:SpaLeb:Diskussion:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
@@ -2272,7 +2284,7 @@
            text_undertitel_h2 => 'Was ist Leben? (Ⅰ)',
            //text_titel_discr_h3 => 'Ein tiefes Verständnis von Raum, Zeit und Existenz ist notwendig, um die grundlegenden Probleme der heutigen Physik zu lösen; die Physik zu vereinheitlichen.',
            jump_ary => array(
-                  //'OM:FrQFT:Einleitung:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  //'OM:FrQFT:Einleitung:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:SpaLeb:Ernaehrung-Spannung-und-Gewicht' =>
@@ -2286,7 +2298,7 @@
            text_undertitel_h2 => 'Die Ernährung beeinflusst die innere Spannung und darüber auch das Körpergewicht – du bist, was du isst',
            //text_titel_discr_h3 => 'Ein tiefes Verständnis von Raum, Zeit und Existenz ist notwendig, um die grundlegenden Probleme der heutigen Physik zu lösen; die Physik zu vereinheitlichen.',
            jump_ary => array(
-                  //'OM:SpaLeb:Ernaehrung-Spannung-und-Gewicht:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  //'OM:SpaLeb:Ernaehrung-Spannung-und-Gewicht:X' => array( headline_text => 'X', headline_text_short => 'X'),
                              
                   'OM:SpaLeb:Ernaehrung-Spannung-und-Gewicht:Nahrungsmittel' => array( headline_text => 'Nahrungsmittel beeinflussen die innere Spannung', headline_text_short => 'Nahrungsmittel beeinflussen die innere Spannung'),
                   'OM:SpaLeb:Ernaehrung-Spannung-und-Gewicht:StresssignaleUebergewicht' => array( headline_text => 'Stresssignale befördern das Übergewicht', headline_text_short => 'Stresssignale befördern das Übergewicht'),
@@ -2356,7 +2368,7 @@
                     'OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung:Fig-TomDoppelrechtesGesicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:SpaLeb:Gesichtsausdruck:Gesichtsspiegelung:Kunst' => array( headline_text => 'Kunst', headline_text_short => 'Kunst'),
                              
-                  'OM:SpaLeb:Gesichtsausdruck:FaceYourFaceApp' => array( headline_text => 'FaceYourFace App \\small{\\color{*TitleAdd}{(Face Your Face App)}}', headline_text_short => 'FaceYourFace App'),
+                  'OM:SpaLeb:Gesichtsausdruck:FaceYourFaceApp' => array( headline_text => 'FaceYourFace App \small{\color{*TitleAdd}{(Face Your Face App)}}', headline_text_short => 'FaceYourFace App'),
                     'OM:SpaLeb:Gesichtsausdruck:FaceYourFaceApp:Fig-TomDoppelrechtesGesicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:SpaLeb:Gesichtsausdruck:FaceYourFaceApp:Fig-TomDoppellinkesGesicht' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                 ),
@@ -2366,7 +2378,7 @@
            url_rel => $Glo_PathRel_back.'../de/Spannungsspiel-des-Lebens/Gesundheit-Heilung.php',
            titel => 'Gesundheit und Heilung - Spannungsspiel des Lebens - Deutsch',
            // -> Gesichtssymmetrie wg Google?
-           description => '\\name[undertitle]{OM:SpaLeb:Gesundheit-Heilung}. — \\name[description]{OM:SpaLeb:Gesundheit-Heilung}.',
+           description => '\name[undertitle]{OM:SpaLeb:Gesundheit-Heilung}. — \name[description]{OM:SpaLeb:Gesundheit-Heilung}.',
            keywords => '',
            text_titel_h1 => 'Gesundheit und Heilung',
            text_titel_short => 'Gesundheit und Heilung',
@@ -2375,9 +2387,9 @@
            jump_ary => array(
                   'OM:SpaLeb:Gesundheit-Heilung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
-                    // 'OM:SpaLeb:Gesundheit-Heilung:Vortext:Fig-XXX' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
-                  'OM:SpaLeb:Gesundheit-Heilung:HeilungSchlaf' => array( headline_text => 'Heilung und Schlaf'/*, headline_text_short => 'XXX'*/),
-                    'OM:SpaLeb:Gesundheit-Heilung:HeilungSchlaf:HeilungImSchlaf' => array( headline_text => 'Heilung im Schlaf'/*, headline_text_short => 'XXX'*/),
+                    // 'OM:SpaLeb:Gesundheit-Heilung:Vortext:Fig-X' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+                  'OM:SpaLeb:Gesundheit-Heilung:HeilungSchlaf' => array( headline_text => 'Heilung und Schlaf'/*, headline_text_short => 'X'*/),
+                    'OM:SpaLeb:Gesundheit-Heilung:HeilungSchlaf:HeilungImSchlaf' => array( headline_text => 'Heilung im Schlaf'/*, headline_text_short => 'X'*/),
                 ),
          ),
   'OM:SpaLeb:Glueck' =>
@@ -2410,7 +2422,7 @@
            jump_ary => array(
                   'OM:SpaLeb:Information-Kommunikation:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
-                    'OM:SpaLeb:Information-Kommunikation:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                    // 'OM:SpaLeb:Information-Kommunikation:Vortext:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:SpaLeb:Koerperliche-und-seelische-Existenz' =>
@@ -2425,9 +2437,9 @@
            text_undertitel_h2 => 'Trenne nicht Dinge, die zwei Seiten der selben Medaille sind',
            //text_titel_discr_h3 => 'Ein tiefes Verständnis von Raum, Zeit und Existenz ist notwendig, um die grundlegenden Probleme der heutigen Physik zu lösen; die Physik zu vereinheitlichen.',
            jump_ary => array(
-                  //'OM:SpaLeb:Koerperliche-und-seelische-Existenz:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  //'OM:SpaLeb:Koerperliche-und-seelische-Existenz:X' => array( headline_text => 'X', headline_text_short => 'X'),
                              
-                  'OM:SpaLeb:Koerperliche-und-seelische-Existenz:OrganischesExistenzprinzip' => array( headline_text => 'Biologisches Existenzprinzip \\color{*FigDescr}{<small>(organisches Existenzprinzip)</small>}', headline_text_short => 'Biologisches Existenzprinzip'),
+                  'OM:SpaLeb:Koerperliche-und-seelische-Existenz:OrganischesExistenzprinzip' => array( headline_text => 'Biologisches Existenzprinzip \color{*FigDescr}{<small>(organisches Existenzprinzip)</small>}', headline_text_short => 'Biologisches Existenzprinzip'),
                     'OM:SpaLeb:Koerperliche-und-seelische-Existenz:OrganischesExistenzprinzip:SpanPrinz' => array( headline_text => 'Spannungsprinzip – Stabilisierung des Körpers', headline_text_short => 'Spannungsprinzip'),
                     'OM:SpaLeb:Koerperliche-und-seelische-Existenz:OrganischesExistenzprinzip:DisharmPrinz' => array( headline_text => 'Disharmonieprinzip – Antrieb der Seele', headline_text_short => 'Disharmonieprinzip'),
                   'OM:SpaLeb:Koerperliche-und-seelische-Existenz:RitualFortentwicklung' => array( headline_text => 'Ewige Fortentwicklung und stabilisierendes Ritual', headline_text_short => 'Fortentwicklung und Ritual'),
@@ -2453,14 +2465,14 @@
            text_titel_short => 'Körperspannung',
            //text_undertitel_h2 => 'Wie Brüche und neue Balancen mit Körperspannung und Verspannungen sowie mit Psyche, Stimmung, Emotionalität und Geist in Wechselwirkung stehen',
            text_undertitel_h2 => 'Körper, Seele und Psychosomatik',
-           //text_titel_discr_h3 => 'XXX',
+           //text_titel_discr_h3 => 'X',
            jump_ary => array(
                   'OM:SpaLeb:Koerperspannung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
                   'OM:SpaLeb:Koerperspannung:Fortentwicklung-und-Stabilisierung' => array( headline_text => 'Spannungsfeld Fortentwicklung und Stabilisierung', headline_text_short => 'Spannungsfeld Fortentwicklung und Stabilisierung'),
                   'OM:SpaLeb:Koerperspannung:Muskeln-Faszien-und-Knochen' => array( headline_text => 'Muskeln, Faszien und Knochen', headline_text_short => 'Muskeln, Faszien und Knochen'),
                   'OM:SpaLeb:Koerperspannung:DasAnatomieMenschchen' => array( headline_text => 'Das Anatomie-Menschchen', headline_text_short => 'Das Anatomie-Menschchen'),
-                  'OM:SpaLeb:Koerperspannung:Gegenfaszien' => array( headline_text => 'Gegenmuskulatur  \\color{*TitleAdd}{<small>(Gegenfaszien)</small>}', headline_text_short => 'Gegenmuskulatur'),
+                  'OM:SpaLeb:Koerperspannung:Gegenfaszien' => array( headline_text => 'Gegenmuskulatur  \color{*TitleAdd}{<small>(Gegenfaszien)</small>}', headline_text_short => 'Gegenmuskulatur'),
                   'OM:SpaLeb:Koerperspannung:Atemspannung-und-Oberkoerperbalance' => array( headline_text => 'Atemspannung und Oberkörperbalance', headline_text_short => 'Atemspannung und Oberkörperbalance'),
                     'OM:SpaLeb:Koerperspannung:Atemspannung-und-Oberkoerperbalance:Fig-AnatomieRingfoermigeBauchmuskulatur' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:SpaLeb:Koerperspannung:Atemspannung-und-Oberkoerperbalance:Fig-AnatomieZwerchfellKombi' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
@@ -2489,7 +2501,7 @@
            text_undertitel_h2 => 'Die Nachbildung des Achtsamkeitsprozesses des Lebens',
            text_titel_discr_h3 => 'Menschenähnliche Künstliche Intelligenz und Robotik sind nur über einen zentralen Regelprozess des (körperlichen) Lernens möglich',
            jump_ary => array(
-                  'OM:SpaLeb:KIundRobotik:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  'OM:SpaLeb:KIundRobotik:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
    'OM:SpaLeb:Literatur' =>
@@ -2530,7 +2542,7 @@
            text_undertitel_h2 => 'Medizin, Psychologie, alternative Medizin (Heilpraktik) und Yoga können mit Hilfe des Modells des Achtsamkeitsprozesses im Zusammenhang verstanden werden',
            //text_titel_discr_h3 => 'Unser Achtsamkeitsprozess, als zentraler Regelprozess des Lebens, ist die Grundlage unseres Gedeihens und unserer Heilung',
            jump_ary => array(
-                  'OM:SpaLeb:Meetup-Yoga-Meets-Wissenschaft:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:SpaLeb:Meetup-Yoga-Meets-Wissenschaft:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:SpaLeb:Philosophie' =>
@@ -2603,9 +2615,9 @@
            jump_ary => array(
                   'OM:SpaLeb:Psychosomatik-Entscheidungen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
-                    'OM:SpaLeb:Psychosomatik-Entscheidungen:Vortext:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                    // 'OM:SpaLeb:Psychosomatik-Entscheidungen:Vortext:X' => array( headline_text => 'X', headline_text_short => 'X'),
                              
-                  'OM:SpaLeb:Psychosomatik-Entscheidungen:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:SpaLeb:Psychosomatik-Entscheidungen:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:SpaLeb:Psychosomatik-Stress' =>
@@ -2667,7 +2679,7 @@
            text_undertitel_h2 => 'Unser Schlaf entspringt dem Gefühlspol unseres Achtsamkeitsprozesses, unser Aktivsein unserem Handlungspol',
            text_titel_discr_h3 => 'Ebenso ist unser Unterbewusstsein mit unserem Schlaf und Gefühl verbunden, wie unser Bewusstsein mit unserem Aktivsein und unseren Handlungen verbunden ist',
            jump_ary => array(
-                  'OM:SpaLeb:Schlaf-und-Aktivsein:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:SpaLeb:Schlaf-und-Aktivsein:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga' =>
@@ -2685,7 +2697,7 @@
                     'OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga:Achtsamkeit' => array( headline_text => 'Achtsamkeit', headline_text_short => 'Achtsamkeit'),
                     'OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga:MBSR' => array( headline_text => 'Achtsamkeit nach Kabat-Zinn', headline_text_short => 'Achtsamkeit nach Kabat-Zinn'),
                              
-                  'OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:SpaLeb:Vor-PerspektivW-AmbiguitaetsT-Entscheid-Demokra' =>
@@ -2697,9 +2709,9 @@
            text_titel_h1 => 'Vortrag: Perspektivwechsel, Ambiguitätstoleranz, Entscheidungen und Demokratie',
            text_titel_short => 'Vortrag: Perspektivwechsel, Ambiguitätstoleranz, Entscheidungen und Demokratie',
            text_undertitel_h2 => 'Wie Standpunkte und ihre Wahrheiten meine Gefühle bestimmen können. Wann Widersprüche bleiben, wann sie aufgelöst werden sollten und was dies für unsere Entscheidungen und unsere Demokratie bedeutet',
-           text_titel_discr_h3 => 'XXX',
+           // text_titel_discr_h3 => 'X',
            jump_ary => array(
-                    'OM:SpaLeb:Vor-PerspektivW-AmbiguitaetsT-Entscheid-Demokra:XXX.X' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                    // 'OM:SpaLeb:Vor-PerspektivW-AmbiguitaetsT-Entscheid-Demokra:X' => array( headline_text => 'X', headline_text_short => 'X'),
                              
                   'OM:SpaLeb:Vor-PerspektivW-AmbiguitaetsT-Entscheid-Demokra:WahrnehmRealiWahrhObjekt' => array( headline_text => 'Wahrnehmung, Realität, Wahrheit und Objektivität', headline_text_short => 'Wahrnehmung, Realität, Wahrheit und Objektivität'),
                 ),
@@ -2716,7 +2728,7 @@
            text_undertitel_h2 => '',
            //text_titel_discr_h3 => 'Ein tiefes Verständnis von Raum, Zeit und Existenz ist notwendig, um die grundlegenden Probleme der heutigen Physik zu lösen; die Physik zu vereinheitlichen.',
            jump_ary => array(
-                  //'OM:FrQFT:Vorwort:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:FrQFT:Vorwort:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
   'OM:SpaLeb:Was-ist-Leben' =>
@@ -2737,7 +2749,7 @@
                              
                     'OM:SpaLeb:Was-ist-Leben:Vortext:Fig-Achtsamkeitsprozess' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                              
-                  'OM:SpaLeb:Was-ist-Leben:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:SpaLeb:Was-ist-Leben:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
 
@@ -2767,7 +2779,7 @@
                           'Wolfgang Huß und \\\\'."\n".
                           'Media Line Digital e.K. \\\\'."\n".
                           'is licensed under \\\\'."\n".
-                          '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
+                          '\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
            litera_url_rel => $Glo_PathRel_back.'../de/Vereinheitlichte-Relativitaetstheorie/Literatur_de.php',
            litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/quantum-flow-theory_bibliographie_v8_002.bib',
          )),
@@ -2777,7 +2789,7 @@
            titel => 'Vereinheitlichte Relativitätstheorie (VRT) - Deutsch',
            description => 'Die strukturelle Vereinheitlichung der Speziellen und Allgemeinen Relativitätstheorie mit der Lorentzschen Äthertheorie. Ein Schritt zu Vereinheitlichung der Physik im Rahmen der Quanten-Fluss-Theorie. — Eine Vereinfachung Einsteins bei der Formulierung der Relativitätstheorie steht der Quantengravitation und der Vereinheitlichung der Physik im Weg.',
            keywords => '',
-           text_titel_h1 => 'Vereinheitlichte Relativitätstheorie \\color{*TitleAdd}{\\small{(VRT)}}',
+           text_titel_h1 => 'Vereinheitlichte Relativitätstheorie \color{*TitleAdd}{\small{(VRT)}}',
            text_titel_short => 'Vereinheitlichte Relativitätstheorie',
            //text_undertitel_h2 => 'Vereinheitlichung der Speziellen und Allgemeinen Relativitätstheorie mit der Lorentzschen Äthertheorie im Rahmen der Quanten-Fluss-Theorie',
            text_undertitel_h2 => 'Die strukturelle Vereinheitlichung der Speziellen und Allgemeinen Relativitätstheorie mit der Lorentzschen Äthertheorie. Ein Schritt zu Vereinheitlichung der Physik im Rahmen der Quanten-Fluss-Theorie',
@@ -2802,9 +2814,9 @@
                              
                     'OM:VRT:Einleitung:Equ-GraLGEinstein' => array( headline_text => 'QGra.LV.37'),
                     'OM:VRT:Einleitung:Equ-GraLKEinstein' => array( headline_text => 'Gra.LK.1'),
-                    'OM:VRT:Einleitung:OM:VRT:Einleitung:Djet-Neheh-Dualismus' => array( headline_text => 'Der Djet-Neheh-Dualismus, das grundlegende Ordnungsprinzip \\\\ \\color{*TitleAdd}{– Das Verhältnis und die Balance der Erhaltung sowie der Entstehung und der Zerstörung von Systemen aus Bestandteilen}', headline_text_short => 'Der Djet-Neheh-Dualismus, das grundlegende Ordnungsprinzip'),
+                    'OM:VRT:Einleitung:OM:VRT:Einleitung:Djet-Neheh-Dualismus' => array( headline_text => 'Der Djet-Neheh-Dualismus, das grundlegende Ordnungsprinzip \\\\ \color{*TitleAdd}{– Das Verhältnis und die Balance der Erhaltung sowie der Entstehung und der Zerstörung von Systemen aus Bestandteilen}', headline_text_short => 'Der Djet-Neheh-Dualismus, das grundlegende Ordnungsprinzip'),
                              
-                  //'OM:VRT:Einleitung:XXX' => array( headline_text => 'Philosophie der Lichtuhr', headline_text_short => 'Philosophie der Lichtuhr'),
+                  // 'OM:VRT:Einleitung:X' => array( headline_text => 'Philosophie der Lichtuhr', headline_text_short => 'Philosophie der Lichtuhr'),
                 ),
          ),
    'OM:VRT:Laengenkontraktion-Bewegung' =>
@@ -2818,7 +2830,7 @@
            text_undertitel_h2 => 'Veränderung der Wechselwirkungsfelder eines Materie-Elementarteilchens durch seine Bewegung im Licht-Materie-Medium',
            //text_titel_discr_h3 => 'Vereinheitlichte Physik auf Basis eines selbstorganisierten, fraktalen Systems von lichtähnlichen, zu Strings verbundenen Wirkungsquanten.',
            jump_ary => array(
-                  'OM:VRT:Laengenkontraktion-Bewegung:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
+                  // 'OM:VRT:Laengenkontraktion-Bewegung:X' => array( headline_text => 'X', headline_text_short => 'X'),
                 ),
          ),
    'OM:VRT:Literatur' =>
@@ -2843,7 +2855,7 @@
            text_titel_h1 => 'Vereinheitlichung der Relativitaetstheorie und der Lorentzschen Äthertheorie',
            text_titel_short => 'Vereinheitlichung der Relativitaetstheorie und der Lorentzschen Äthertheorie',
            text_undertitel_h2 => 'Vereinheitlichung der Speziellen und Allgemeinen Relativitätstheorie mit der Lorentzschen Äthertheorie. Ein Schritt zu Vereinheitlichung der Physik im Rahmen der Quanten-Fluss-Theorie',
-           //text_titel_discr_h3 => 'XXX',
+           //text_titel_discr_h3 => 'X',
            jump_ary => array(
                   'OM:VRT:Vereinheitlichung-RT-LET:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                              
@@ -2853,102 +2865,22 @@
                   'OM:VRT:Vereinheitlichung-RT-LET:Loesung-des-Problems-der-Zeit' => array( headline_text => 'Lösung des ›Problems der Zeit‹', headline_text_short => 'Lösung des ›Problems der Zeit‹'),
                     'OM:VRT:Vereinheitlichung-RT-LET:Fig-Elapson' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:VRT:Vereinheitlichung-RT-LET:Ani-VakuumElapson' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
-                    'OM:VRT:Vereinheitlichung-RT-LET:Loesung-des-Problems-der-Zeit:GedankExpErwLichtuhr' => array( headline_text => 'Gedankenexperiment der erweiterten Lichtuhr \\\\ \\color{*TitleAdd}{– in der Quanten-Fluss-Theorie}', headline_text_short => 'Gedankenexperiment der erweiterten Lichtuhr‹'),
+                    'OM:VRT:Vereinheitlichung-RT-LET:Loesung-des-Problems-der-Zeit:GedankExpErwLichtuhr' => array( headline_text => 'Gedankenexperiment der erweiterten Lichtuhr \\\\ \color{*TitleAdd}{– in der Quanten-Fluss-Theorie}', headline_text_short => 'Gedankenexperiment der erweiterten Lichtuhr‹'),
                              
                   'OM:VRT:Vereinheitlichung-RT-LET:Relativistisches-Licht-Materie-Medium' => array( headline_text => 'Relativistisches Licht-Materie-Medium', headline_text_short => 'Relativistisches Licht-Materie-Medium'),
                     'OM:VRT:Vereinheitlichung-RT-LET:Fig-Wirkungsquanten-Bewegungsraum' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:VRT:Vereinheitlichung-RT-LET:Relativistisches-Licht-Materie-Medium:Ani-Lepton' => array( headline_text => 'Animation '.(++$FrQFT_g_Ani_idx), headline_text_short => 'Animation '.($FrQFT_g_Ani_idx)),
                              
-                  'OM:VRT:Vereinheitlichung-RT-LET:Spezielle-Vereinheitlichte-Relativitaetstheorie' => array( headline_text => 'Spezielle Vereinheitlichte Relativitätstheorie \\color{*TitleAdd}{<small>(sVRT)</small>}', headline_text_short => 'Spezielle Vereinheitlichte Relativitätstheorie'),
+                  'OM:VRT:Vereinheitlichung-RT-LET:Spezielle-Vereinheitlichte-Relativitaetstheorie' => array( headline_text => 'Spezielle Vereinheitlichte Relativitätstheorie \color{*TitleAdd}{<small>(sVRT)</small>}', headline_text_short => 'Spezielle Vereinheitlichte Relativitätstheorie'),
                              
                   'OM:VRT:Vereinheitlichung-RT-LET:Kosmologisches-Prinzip-und-flacher-Kosmos' => array( headline_text => 'Kosmologisches Prinzip und flacher Kosmos', headline_text_short => 'Kosmologisches Prinzip und flacher Kosmos'),
                     'OM:VRT:Vereinheitlichung-RT-LET:Fig-KosmosEuklid' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     //%!'OM:VRT:Vereinheitlichung-RT-LET:KosmoPrinz' => array( headline_text => 'Kosmologisches Prinzip und flacher Kosmos', headline_text_short => 'Kosmologisches Prinzip und flacher Kosmos'),
                              
-                  'OM:VRT:Vereinheitlichung-RT-LET:Vereinheitlichte-Relativitaetstheorie' => array( headline_text => 'Vereinheitlichte Relativitätstheorie \\color{*TitleAdd}{<small>(VRT)</small>}', headline_text_short => 'Vereinheitlichte Relativitätstheorie'),
+                  'OM:VRT:Vereinheitlichung-RT-LET:Vereinheitlichte-Relativitaetstheorie' => array( headline_text => 'Vereinheitlichte Relativitätstheorie \color{*TitleAdd}{<small>(VRT)</small>}', headline_text_short => 'Vereinheitlichte Relativitätstheorie'),
                     'OM:VRT:Vereinheitlichung-RT-LET:Fig-Gekruemmter-Licht-Bewegungsraum' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     'OM:VRT:Vereinheitlichung-RT-LET:Fig-Gravitation-Masse' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                     //%!'OM:VRT:Vereinheitlichung-RT-LET:VereinheitART' => array( headline_text => 'Vereinheitlichung mit der Allgemeinen Relativitätstheorie', headline_text_short => 'Vereinheitlichung mit der Allgemeinen Relativitätstheorie'),
-                ),
-         ),
-  'OM:ZS:' =>
-    array( url_abs => 'https://nsosp.org/de/Zahlensemantik/',
-           url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/',
-           favicons_url_rel_opt => $Glo_PathRel_back.'../de/Zahlensemantik/favicon/',
-           //header_pict_name => 'Fractal-Quantum-Flow-Theory_En.jpg',
-           //header_pict_alt => 'Fractal Quantum Flow Theory, Ideas of new Science',
-           name_short => 'ZS',
-           font_ary => array(
-                              '<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
-                              '<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">',
-                            ),
-           header_bgcolor => '#FFFFFF',
-           header_pict_name => 'ZS/ZS_header_v01_2_1860x354_72dpi_de.jpg',
-           header_pict_width => '930px',
-           header_pict_height => '177px',
-           header_pict_bgcolor => '#FFFFFF',
-           header_pict_alt => 'Zahlensemantik',
-           header_links_marginLeft => '383px',
-           author_adress => 'Raimund Welsch',
-           author_contact => '',
-           author_name => 'Raimund Welsch',
-           // author_image_URL => '',
-           // author_image_alt => 'Raimund Welsch',
-           // author_image_width => '',
-           // author_image_height => '',
-           copy_right => 'Zahlensemantik (ZS) \\\\'."\n".
-                          '© 2010–2024 by \\\\'."\n".
-                          'Raimund Welsch \\\\'."\n".
-                          'is licensed under \\\\'."\n".
-                          '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
-           litera_url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Literatur_de.php',
-           litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/zahlensemantik_bibliographie.bib',
-         ),
-
-   'OM:ZS:Home' =>
-    array( url_abs => 'https://nsosp.org/de/Zahlensemantik/index.php',
-           url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/index.php',
-           titel => 'Zahlensemantik (ZS) - Deutsch',
-           description => '\\name[undertitle]{OM:ZS:Home}. — \\name[description]{OM:ZS:Home}.',
-           keywords => '',
-           text_titel_h1 => 'Zahlensemantik \\color{*TitleAdd}{\\small{(ZS)}}',
-           text_titel_short => 'Zahlensemantik',
-           text_undertitel_h2 => 'XXX',
-           text_titel_discr_h3 => 'YYY',
-           jump_ary => array(
-                  'OM:ZS:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
-                  'OM:ZS:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),
-                ),
-         ),
-   'OM:ZS:Einleitung' =>
-    array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Einleitung.php',
-           url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Einleitung.php',
-           titel => 'Einleitung zur Zahlensemantik - Zahlensemantik (ZS) - Deutsch',
-           description => '\\name[undertitle]{OM:ZS:Einleitung}. — \\name[description]{OM:ZS:Einleitung}.',
-           keywords => '',
-           text_titel_h1 => 'Einleitung',
-           text_titel_short => 'Einleitung',
-           text_undertitel_h2 => 'XXX',
-           text_titel_discr_h3 => 'YYY',
-           jump_ary => array(
-                  'OM:ZS:Einleitung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-                             
-                    'OM:ZS:Einleitung:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                             
-                  'OM:ZS:Einleitung:XXX' => array( headline_text => 'XXX', headline_text_short => 'XXX'),
-                ),
-         ),
-   'OM:ZS:Literatur' =>
-    array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Literatur.php',
-           url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Literatur.php',
-           titel => 'Literatur - Zahlensemantik (ZS) - Deutsch',
-           description => 'Literatur zur Zahlensemantik.',
-           keywords => '',
-           text_titel_h1 => 'Literatur',
-           text_titel_short => 'Literatur',
-           text_undertitel_h2 => 'und Informationen',
-           text_titel_discr_h3 => '',
-           jump_ary => array(
                 ),
          ),
 
@@ -2966,7 +2898,7 @@
   const support = 'support';
 
   $FrQFT_g_donater_list   = array(
-                                   array( vorname => 'Angelika', nachname => 'Bröder', stadt => 'Castrop Rauxel \\\\ \\color{*TitleAdd}{\\small{ (die Europastadt im Grünen ;) )}}', euro => '10'),
+                                   array( vorname => 'Angelika', nachname => 'Bröder', stadt => 'Castrop Rauxel \\\\ \color{*TitleAdd}{\small{ (die Europastadt im Grünen ;) )}}', euro => '10'),
                                  );
   
   $FrQFT_g_supporter_list = array(
@@ -3016,7 +2948,7 @@
 
     // #!: In case "$site_activ" is here a link to a chapter of the site. Manage better for the future!!! Even in call of "nSOSp_f_tableOfContents_descriptionString".
 
-    $ary_ret = array( title => '\\name[title]{'.$site_activ.'}', jumpname => $site_activ, startsign => '',
+    $ary_ret = array( title => '\name[title]{'.$site_activ.'}', jumpname => $site_activ, startsign => '',
                       description => nSOSp_f_tableOfContents_descriptionString( $site_activ, $descriptionManual));
     
     return $ary_ret;
@@ -3038,8 +2970,8 @@
       {
         $str_ret = '';
         $str_ret = $str_ret.((array_key_exists( text_undertitel_h2, $Glo_g_Site_ary[$site_activ]) && (0 < strlen( $Glo_g_Site_ary[$site_activ][text_undertitel_h2]))) ? ($Glo_g_Site_ary[$site_activ][text_undertitel_h2]) : '');
-        $str_ret = $str_ret.((array_key_exists( text_titel_discr_h3, $Glo_g_Site_ary[$site_activ]) && (0 < strlen( $Glo_g_Site_ary[$site_activ][text_titel_discr_h3]))) ? ' — \\italic{'.($Glo_g_Site_ary[$site_activ][text_titel_discr_h3]).'}' : '');
-        //$str_ret = $str_ret.XXX;
+        $str_ret = $str_ret.((array_key_exists( text_titel_discr_h3, $Glo_g_Site_ary[$site_activ]) && (0 < strlen( $Glo_g_Site_ary[$site_activ][text_titel_discr_h3]))) ? ' — \italic{'.($Glo_g_Site_ary[$site_activ][text_titel_discr_h3]).'}' : '');
+        //$str_ret = $str_ret.X;
       }
     
     return $str_ret;
@@ -3120,8 +3052,8 @@
       for ($i = 0; $i < count( $FrQFT_g_supporter_list); $i++)
       {
         $ret_str .= '  <tr>'."\n";
-        $ret_str .= '    <td>'.($FrQFT_g_supporter_list[$i][vorname]).' '.($FrQFT_g_supporter_list[$i][nachname]).', '.($FrQFT_g_supporter_list[$i][stadt]).' \\\\ \\color{A0A0A0}{<small>'.($FrQFT_g_supporter_list[$i][support]).'</small>}</td>'."\n";
-        $ret_str .= '    <td>'.($FrQFT_g_supporter_list[(count( $FrQFT_g_supporter_list) - 1) - $i][vorname]).' '.($FrQFT_g_supporter_list[(count( $FrQFT_g_supporter_list) - 1) - $i][nachname]).', '.($FrQFT_g_supporter_list[(count( $FrQFT_g_supporter_list) - 1) - $i][stadt]).' \\\\ \\color{A0A0A0}{<small>'.($FrQFT_g_supporter_list[(count( $FrQFT_g_supporter_list) - 1) - $i][support]).'</small>}</td>'."\n";
+        $ret_str .= '    <td>'.($FrQFT_g_supporter_list[$i][vorname]).' '.($FrQFT_g_supporter_list[$i][nachname]).', '.($FrQFT_g_supporter_list[$i][stadt]).' \\\\ \color{A0A0A0}{<small>'.($FrQFT_g_supporter_list[$i][support]).'</small>}</td>'."\n";
+        $ret_str .= '    <td>'.($FrQFT_g_supporter_list[(count( $FrQFT_g_supporter_list) - 1) - $i][vorname]).' '.($FrQFT_g_supporter_list[(count( $FrQFT_g_supporter_list) - 1) - $i][nachname]).', '.($FrQFT_g_supporter_list[(count( $FrQFT_g_supporter_list) - 1) - $i][stadt]).' \\\\ \color{A0A0A0}{<small>'.($FrQFT_g_supporter_list[(count( $FrQFT_g_supporter_list) - 1) - $i][support]).'</small>}</td>'."\n";
         $ret_str .= '  </tr>'."\n";
       }
       
@@ -3165,7 +3097,7 @@
     echo '    <meta name="keywords"           content="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][keywords])).'">'."\n";
     echo '    <meta name="author"             content="Wolfgang Huss, info@nsosp.org">'."\n";
     echo '    <meta name="DC.Publisher"       content="MEDIA LINE DIGITAL e.K., info@media-line-digital.de">'."\n";
-    echo '    <meta name="DC.Date"            content="2024-02-29T17:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
+    echo '    <meta name="DC.Date"            content="2024-09-05T14:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
     echo '    <meta name="DC.Identifier"      content="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" scheme="DCTERMS.URI">'."\n";
     echo '    <meta rel="canonical"           href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" />'."\n";
     echo '    <meta name="DC.Language"        content="de">'."\n";
@@ -3200,7 +3132,7 @@
     // #: Additionals
     Sc_f_HeaderElements();
     echo ''."\n";
-    //%!echo '		<meta name="google-site-verification" content="NlimpkZJCzPWdpRJbzHIukufnG6rcgdfj_awkAePjE4" />'."\n";
+    //%!echo '    <meta name="google-site-verification" content="NlimpkZJCzPWdpRJbzHIukufnG6rcgdfj_awkAePjE4" />'."\n";
     echo '    <meta name="google-site-verification" content="6dWK_kE5WWR_uun6-aesldccQJuTIJSWaaBOQOQqG7Y" />'."\n";
     echo '    <meta name="google-translate-customization" content="395c924796ab172b-779d327ac112ea66-g6db384d78375a9c1-19"></meta>'."\n";
     echo '  </head>'."\n";
@@ -3218,7 +3150,7 @@
   {
     global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ, $Glo_g_Site_activ_GenInfo_idx, $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary;
 
-    echo '			<div id="navigation" class="navigation main-shadow-0-5-30 main-layer-2">'."\n";
+    echo '      <div id="navigation" class="navigation main-shadow-0-5-30 main-layer-2">'."\n";
     echo '        <br>'."\n";
     echo '        <br>'."\n";
     echo '        <div id="NavigationMenu" class="tools-class-text">'."\n";
@@ -3226,18 +3158,18 @@
     To_f_headline_make();
     echo '        </div>'."\n";
     /* At the moment extra "div" is not used, because of the shadow. */
-    //--echo '			</div>'."\n";
+    //--echo '      </div>'."\n";
     //--echo ''."\n";
-    //--echo '			<div id="extra" class="extra main-shadow-0-5-30 main-layer-1">'."\n";
-    echo '				<br>'."\n";
-    echo '				<br>'."\n";
-    //echo '				<p align="left">'."\n";
+    //--echo '      <div id="extra" class="extra main-shadow-0-5-30 main-layer-1">'."\n";
+    echo '        <br>'."\n";
+    echo '        <br>'."\n";
+    //echo '        <p align="left">'."\n";
     //echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="main-shadow-5-5-20" src="'.$Glo_PathRel_back.'../share/images/Wolfgang-Huss-2013_IMG_1322_beschn_klein_entf.jpg" width="180" height="277" border="0" alt="Wolfgang Hu&szlig; alias Lucius Damian Stardust &copy;2013 Wolfgang Hu&szlig;"> </a>'."\n";
-    //echo '					<small>'."\n";
-    //echo '						<!&copy; 2013 Wolfgang Hu&szlig; alias>Lucius Damian <!Cosmas> Stardust'."\n";
-    //echo '						<!Lucius Damian [Cosmas] Stardust (Lichtbringer DerM&auml;chtigeMann [Schmuck-Ordnung-Welt] Sternenstaub)>'."\n";
-    //echo '					</small>'."\n";
-    //echo '				</p>'."\n";
+    //echo '          <small>'."\n";
+    //echo '            <!&copy; 2013 Wolfgang Hu&szlig; alias>Lucius Damian <!Cosmas> Stardust'."\n";
+    //echo '            <!Lucius Damian [Cosmas] Stardust (Lichtbringer DerM&auml;chtigeMann [Schmuck-Ordnung-Welt] Sternenstaub)>'."\n";
+    //echo '          </small>'."\n";
+    //echo '        </p>'."\n";
     if (array_key_exists( author_image_URL, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx])) {
       echo '        <p align="left" style="margin-bottom: 4px;">'."\n";
       echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten"> <img class="tools-class-fig" src="'.$Glo_PathRel_back.'../share/images/'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_URL]).'" width="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" height="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_width]).'" border="0" alt="'.($Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][author_image_alt]).'"> </a>'."\n";
@@ -3248,20 +3180,20 @@
       echo '        <br>'."\n";
       echo '        <br>'."\n";
     }
-    echo '				<p class="navigation-extra-text" align="left">'."\n";
+    echo '        <p class="navigation-extra-text" align="left">'."\n";
                   // #: Siehe "http://www.youtube.com/watch?feature=player_embedded&v=HkBEKU-E38k", Sek. 7:05, gespeichert als "Don Lincoln Welches sind die kleinsten Bausteine des Universums.mp4", und "http://en.wikiquote.org/wiki/Talk:Albert_Einstein". Zitat ähnlich siehe URL: http://www.liss-kompendium.de/zitate/einstein-zitate.htm
                   //    Auch auf der Home-Seite von NSOSP.
-    echo '					'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, '\\quote{Wenn ich [immer] wüsste, was ich tue, dann würde man es nicht Forschung nennen, oder?} \\small{~Einstein zugeschrieben} \\\\'))."\n";
-    echo '				</p>'."\n";
-    echo '				<br>'."\n";
-    echo '				<br>'."\n";
-    echo '				<p class="navigation-extra-text" align="left">'."\n";
-    echo '					'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][copy_right]))."\n";
-    echo '				</p>'."\n";
-    echo '				<br>'."\n";
-    echo '				<br>'."\n";
-    echo '				<br>'."\n";
-    echo '				<br>'."\n";
+    echo '          '.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, '\quote{Wenn ich [immer] wüsste, was ich tue, dann würde man es nicht Forschung nennen, oder?} \small{~Einstein zugeschrieben} \\\\'))."\n";
+    echo '        </p>'."\n";
+    echo '        <br>'."\n";
+    echo '        <br>'."\n";
+    echo '        <p class="navigation-extra-text" align="left">'."\n";
+    echo '          '.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ_GenInfo_idx][copy_right]))."\n";
+    echo '        </p>'."\n";
+    echo '        <br>'."\n";
+    echo '        <br>'."\n";
+    echo '        <br>'."\n";
+    echo '        <br>'."\n";
     
     // is moved to navigation and back here in file "NSOSP.js"
     echo '<div id="GoogleTranslateNavigation" class="main-google-translate">'."\n";
@@ -3287,18 +3219,18 @@
     echo '<div class="main-paypal">'."\n";
     echo '        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="">'."\n";
     echo '          <sup>Crowdfunding:</sup> '."\n";
-    //%!echo '				  <input type="hidden" name="cmd" value="_s-xclick">'."\n";
-    //%!echo '				  <input type="hidden" name="hosted_button_id" value="R8468ZLUN4UPL">'."\n";
-    //%!echo '				  <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">'."\n";
-    echo '				  <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Spenden"> <img src="'.$Glo_PathRel_back.'../share/images/btn_donate_SM.gif" width="86px" height="21px" alt="Spenden"> </a>'."\n";
-    echo '				</form>'."\n";
+    //%!echo '          <input type="hidden" name="cmd" value="_s-xclick">'."\n";
+    //%!echo '          <input type="hidden" name="hosted_button_id" value="R8468ZLUN4UPL">'."\n";
+    //%!echo '          <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">'."\n";
+    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Spenden"> <img src="'.$Glo_PathRel_back.'../share/images/btn_donate_SM.gif" width="86px" height="21px" alt="Spenden"> </a>'."\n";
+    echo '        </form>'."\n";
     echo '</div>'."\n";
 
-    echo '				<br>'."\n";
-    echo '				<br>'."\n";
-    echo '			</div>'."\n";
+    echo '        <br>'."\n";
+    echo '        <br>'."\n";
+    echo '      </div>'."\n";
     echo ''."\n";
-    echo '			<div id="footer" class="footer main-shadow-0-5-30 main-layer-3">'."\n";
+    echo '      <div id="footer" class="footer main-shadow-0-5-30 main-layer-3">'."\n";
     /* echo '        <table class="footer-extra-table" width="700px" align="center" style="padding-top: 16px;">'."\n";
     echo '          <colgroup>'."\n";
     echo '            <col width="150">'."\n";
@@ -3361,13 +3293,13 @@
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
     echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Impressum</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
-    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.35-d20240229-t1700" target="_blank">v9.35</a>'."\n";
+    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.36-d20240905-t1400" target="_blank">v9.36</a>'."\n";
     echo '        </p>'."\n";
-    echo '			</div>'."\n";
+    echo '      </div>'."\n";
     echo ''."\n";
-    echo '		</div>'."\n";
+    echo '    </div>'."\n";
     echo ''."\n";
-    echo '		<script type="text/javascript"> <!--'."\n";
+    echo '    <script type="text/javascript"> <!--'."\n";
     echo '        // #: Open hidden areas for the hash of first site call.'."\n";
     echo '        To_f_manage_site_end( true, NSOSP_f_manage_resize);'."\n";
     echo '    --> </script>'."\n";
@@ -3375,7 +3307,7 @@
     //echo '    '.$To_g_query."<br>\n";
     //echo '    '.($To_g_openAll ? 'true' : 'false')."<br>\n";
     echo ''."\n";
-    echo '	</body>'."\n";
+    echo '  </body>'."\n";
     echo '</html>'."\n";
   }
 
@@ -3517,7 +3449,7 @@
     echo $offset.''."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.'    <p>'."\n";
-    echo $offset.'      Stand 29. Februar 2024, 17:00 CET.'."\n";
+    echo $offset.'      Stand 05. September 2024, 14:00 CET.'."\n";
     echo $offset.'    </p>'."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.'    <ul class="content-archive-list">'."\n";
@@ -3609,7 +3541,7 @@
 
   $NPYo_g_index_KurseVortraegeWorkshops_Head      =
                   array( 'normal',
-                    '<h3 class="tools-class-contentlist-header">Kurse, Vorträge, Workshops\\hidden{, Seminare} \\small{ \\\\ Erfahrungs- und Wissensvermittlung}</h3>'."\n");
+                    '<h3 class="tools-class-contentlist-header">Kurse, Vorträge, Workshops\hidden{, Seminare} \small{ \\\\ Erfahrungs- und Wissensvermittlung}</h3>'."\n");
   $NPYo_g_index_KurseVortraegeWorkshops_ContentList      =
                   array( 'contentlist',
                     array( content_ary => array(
@@ -3623,12 +3555,12 @@
                     )));
   $NPYo_g_index_SozialeNetzwerkeForenSpenden_Head      =
                   array( 'normal',
-                    '<h3 class="tools-class-contentlist-header">Soziale Netzwerke, Foren, Spenden \\small{ \\\\ Öffentlichkeitsarbeit}</h3>'."\n");
+                    '<h3 class="tools-class-contentlist-header">Soziale Netzwerke, Foren, Spenden \small{ \\\\ Öffentlichkeitsarbeit}</h3>'."\n");
   $NPYo_g_index_SozialeNetzwerkeForenSpenden_ContentList      =
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:FrQFT:Impressum:Netzwerke', 'Informiert werden, unterstützen, beteiligen …'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:FrQFT:Impressum:Spenden', 'Ich freu mich über jede Unterstützung !!!'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:FrQFT:Impressum:Spenden', 'Ich freu mich über jede Unterstützung! 💚'),
                     )));
 
   
