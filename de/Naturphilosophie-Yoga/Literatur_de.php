@@ -34,7 +34,7 @@
           'wiki:Naturphilosophie:2015',
           'wiki:Philosophie:2015',
           'wiki:SteinDerWeisen:2019',
-          'wiki:Supernova:2024	',
+          'wiki:Supernova:2024',
           'wiki:Thot:2019',
           'wiki:Weisheit:2017',
           'wiki:YinUndYang:2019',
