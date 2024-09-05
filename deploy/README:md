@@ -48,3 +48,38 @@ For the github webhook configure the following:
 | SSL verification                                     | Enable SSL verification                    |
 | Which events would you like to trigger this webhook? | Send me everything.                        |
 | Active                                               | [x]                                        |
+
+## On Problems with Deployment
+
+If you merge into the `master` branch and the deployment is not working …
+
+Check if the webhook is still running:
+
+```bash
+$ service webhook status
+  * status: stopped 
+```
+
+In case it's not running just start it:
+
+```bash
+§ service webhook start
+  * Starting webhook ... [ ok ]
+```
+
+Make sure that the webhook service will be restarted after reboot of the system, see above.
+Check it like this:
+
+```bash
+$ rc-status boot
+  Runlevel: boot
+    webhook
+    bootmisc
+    networking
+    syslog
+    nginx
+    php-fpm81
+    devfs
+```
+
+To activate the webhook again and get the deployment from the actual code click on [Github redeliver](https://docs.github.com/en/webhooks/testing-and-troubleshooting-webhooks/redelivering-webhooks) like described.
