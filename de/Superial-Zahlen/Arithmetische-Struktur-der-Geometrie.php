@@ -535,9 +535,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  \left( \prod_{\forall p \in \mathbb{P}}  p \right)  }',
+                      array( display => 'on',  latex => '{  \s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  \left( \prod_{\forall p \in \mathbb{P}}  p \right)  }',
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  s  :=  \displaystyle \left( \prod_{\forall p \in \mathbb{P}}  p \right)^{\omega}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  :=  \displaystyle \left( \prod_{\forall p \in \mathbb{P}}  p \right)^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
@@ -595,24 +595,25 @@
                     'Doch was passiert, wenn wir über die endlichen natürlichen Faktoren \lm{ n \cdot \s^{-1} } hinaus gehen?'."\n",
                       'Da wir die Punkte der Strecke zwischen Null und Eins adressieren wollen, sollten wir an allen entsprechenden'."\n".
                     'Zahlen zwischen Null und Eins vorbeikommen, wie \lm{ \frac{ 1 }{ 3 } }, \lm{ \frac{ 1 }{ 2 } } oder \lm{ \frac{ 2 }{ 3 } },'."\n".
-                    'die nichts anderes sind als \lm{ \frac{ 1 }{ 3 } \s^{0} }, \lm{ \frac{ 1 }{ 2 } \s^{0} } oder \lm{ \frac{ 2 }{ 3 } \s^{0} }.'."\n".
-                    'Und Zahlen wie \lm{ \frac{ 1 }{ 3 } - 2 \s^{-1} }, \lm{ \frac{ 1 }{ 3 } - \s^{-1} } oder'."\n".
-                    '\lm{ \frac{ 1 }{ 3 } + \s^{-1} }, \lm{ \frac{ 1 }{ 3 } + 2 \s^{-1} } sollten auch dazu gehören.'."\n".
+                    'die nichts anderes sind als \lm{ \frac{ 1 }{ 3 } \s^{1} \s^{-1} }, \lm{ \frac{ 1 }{ 2 } \s^{1} \s^{-1} } oder \lm{ \frac{ 2 }{ 3 } \s^{1} \s^{-1} }.'."\n".
+                    'Und Zahlen wie \lm{ \frac{ 1 }{ 3 } \s^{1} \s^{-1} - 2 \s^{-1} }, \lm{ \frac{ 1 }{ 3 } \s^{1} \s^{-1} - \s^{-1} } oder'."\n".
+                    '\lm{ \frac{ 1 }{ 3 } \s^{1} \s^{-1} + \s^{-1} }, \lm{ \frac{ 1 }{ 3 } \s^{1} \s^{-1} + 2 \s^{-1} } sollten auch dazu gehören.'."\n".
                     'Also alle Zahlen, die zwischen Null und Eins liegen und aktual unendlich kleine und dort ganze Zahlen sind.'."\n".
-                    'Deshalb müssen alle \lm{ a \cdot \s^{0} } mit \lm{ a \in \mathbb{A}_{\S} } auch aktual unendlich kleine und dort ganze Zahlen sein,'."\n".
-                    'denn die Summe einer ganzen \lm{ z \cdot \s^{-1} } mit \lm{ z \in \mathbb{Z} } ergibt nur mit einer anderen ganzen Zahl \lm{ a }'."\n".
-                    'wieder eine ganze, aktual unendlich kleine.'."\n",
+                    'Deshalb müssen alle \lm{ a \cdot \s^{1} \s^{-1} = a \cdot \s^{0} = a } mit \lm{ a \in \mathbb{A}_{\S} }, also vom aktual unendlich Kleinen aus gesehen die \lm{ a \cdot \s^{1} },'."\n".
+                    'auch aktual unendlich kleine ganze Zahlen sein, die von dort aus halt nur als aktual unendlich Groß erscheinen.'."\n".
+                    'Denn die Summe einer dort ganzen Zahl \lm{ z \cdot \s^{-1} } mit \lm{ z \in \mathbb{Z} } ergibt nur mit einer anderen ganzen Zahl \lm{ a }'."\n".
+                    'wieder eine aktual unendlich kleine ganze Zahl \lm{ a + z \cdot \s^{-1} }.'."\n",
                       'Aus diesem Grund müssen alle \lm{ a \in \mathbb{A}_{\S} } im aktual unendlich Kleinen, in der Größenordnung \lm{ \s^{-1} },'."\n".
                     'auch immer ganze Zahlen sein.'."\n".
                     'Skaliert auf endliche ganze Zahlen müssen dann alle \lm{ a \cdot \s } mit \lm{ a \in \mathbb{A}_{\S} }'."\n".
                     'in der Größenordnung des Endlichen auch immer rein ganze Zahlen sein, wenn auch aktual unendlich groß.'."\n",
                       'Nun bekommen wir eine etwas paradox erscheinende Situation:'."\n",
                       'Wir haben von der Null an bis direkt vor die Eins \lm{ \s } aktual unendlich kleine ganze Zahlen.'."\n".
-                    'Für jeden endlichen Faktor \lm{ a } vor \lm{ \s^{0} }, also \lm{ a \cdot \s^{0} }, laufen aber'."\n".
+                    'Für jeden endlichen Faktor \lm{ a } vor \lm{ \s^{0} }, also \lm{ a \cdot \s^{0} = a \cdot \s^{1} \s^{-1} }, laufen aber'."\n".
                     '\lm{ 2 ω } ganzzahlige Zahlen des Summanden \lm{ z \cdot \s^{-1} } durch.'."\n".
                     'Zusammen also \lm{ a + z \cdot \s^{-1} }, wobei bei Null nur \lm{ 0 + n \cdot \s^{-1} } mit \lm{ n \in \mathbb{N} }'."\n".
                     'und bei Eins nur \lm{ 1 + z^{-} \cdot \s^{-1} } mit \lm{ z^{-} \in \mathbb{Z}^{-} }.'."\n".
-                    'Damit kann die Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } nur \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } } Elemente enthalten.'."\n",
+                    'Damit kann die Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } der Koeffizienten der Superial-Zahlen, nur \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } } Elemente enthalten.'."\n",
                       'Wir haben hier die Besonderheit, wie auch noch im Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-Menge-S-Bemerkenswerten-Zusammenhang}}'."\n".
                     'genauer beleuchtet wird, dass eine Teilung der Strecke zwischen Null und Eins in \lm{ \s } Teile'."\n".
                     'in Punkte zwischen den Teilen mündet, deren Koordinaten nur durch Summen ausgedrückt werden können,'."\n".
@@ -621,29 +622,31 @@
                     'und damit aus einem Produkt mit unendlich kleinem Faktor, hervorgeht.'."\n".
                     'Dies erscheint im ersten Moment möglicherweise sonderbar.'."\n",
                       'Erst die Kombination der aktual unendlich kleinen Summanden und den endlichen Summanden mit Elementen aus \lm{ \mathbb{A}_{\S} }'."\n".
-                    'mach es wieder rund und gibt uns tiefen Einblick in die Zahlentheorie, was in meinen Augen außergewöhnlich ist.'."\n".
+                    'macht es wieder rund und gibt uns einen tiefen und außergewöhnlichen Einblick in die Zahlentheorie allgemein und'."\n".
+                    'im Besonderen in einen weiteren Zusammenhang zwischen Primzahlen, natürlichen, ganzen, rationalen und algebraischen Zahlen'."\n".
+                    'sowie deren Verbindung über die Ordinalzahlen und die Biordinalzahlen, was in meinen Augen sehr besonders ist.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:DasKontinuum', text =>
                       
                 'Das Kontinuum', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Das Gewebe bildet so in gewisser Hinsicht einen Abschluss in der vollständigen endlichen Teilung,'."\n".
+                    'Das Gewebe der Teilung durch \lm{ \s } bildet so in gewisser Hinsicht einen Abschluss in der vollständigen endlichen Teilung,'."\n".
                     'durch die es keine endlichen Abstände mehr gibt und keine Punkte, die durch endliche Teilung,'."\n".
                     'selbst in Potenz der vollständigen Induktion, noch unbelegt sind.'."\n",
                       'Es ist aber klar, dass dieses Gewebe im Hinblick auf seine Stützpunkte immer Lücken haben wird.'."\n".
                     'Denn wir können die Potenzen der endlichen Teilungen natürlich immer weiter treiben,'."\n".
-                    'hin zur quadratischen normierten vollständigen Induktion und weit darüber hinaus.'."\n".
+                    'hin zur quadratischen normierten vollständigen Induktion \lm{ \s^{2} } und weit darüber hinaus.'."\n".
                     'Jedoch ist es dann nicht mehr die einfache normierte vollständige Induktion; eben nicht mehr die erste Norm.'."\n",
-                      'Deshalb ist in diesem Sinn hier das'."\n".
+                      'Deshalb ist in diesem Sinn mit der Teilung durch \lm{ \s } das'."\n".
                     '\jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Kontinuum}\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese}}'."\n".
                     'erreicht.'."\n".
                     'Aber Kontinuum bedeutet eben nicht, dass es keinerlei Lücken mehr gibt; halt nur keine, die durch'."\n".
-                    'endliche Primzahlen in Potenz der einfachen normierten vollständigen Induktion erreichbar sind.'."\n".
+                    'endliche Primzahlen in endlicher Potenz oder in Potenz der einfachen normierten vollständigen Induktion erreichbar sind.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:X', text =>
                       
-                'Die Zwei Konstruktionen von \lm{ \s }', subline =>
+                'Die zwei Konstruktionen von \lm{ \s }', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Es lassen sich mindestens zwei geometrische Konstruktionen finden, die der \jump{OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}{Definition von \s}'."\n".
@@ -673,7 +676,7 @@
                   array( 'text', array( text => array(
                     'In der Konstruktion der rhythmischen Zerlegung werden zwischen den vorhandenen Begrenzungspunkte der Teilstrecken immer neue Punkte hinzugefügt, um den Rhythmus'."\n".
                     'der hinzukommenden natürlichen Zahl in einem gleichmäßigen Rhythmus zu integrieren, falls er noch nicht vorhanden ist (siehe \jumpname{OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung}).'."\n",
-                      'Dies ist, als wenn ein Regen von natürlichen Zahlen auf der Strecke der Eins hernieder gehen würde.'."\n".
+                      'Dies ist, als wenn ein Regen von natürlichen Zahlen auf der Strecke der Eins herniedergeht.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Explizites Primzahlflächenprodukt von \lm{ \s }} \\\\'."\n".
@@ -685,7 +688,7 @@
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{1} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{2} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{3} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{n \in \mathbb{N}} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots  }',
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{\omega}  \;\;,  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{ω}  \;\;,  }',
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -701,13 +704,13 @@
                       'Stapelei – „Hochstapelei“ – ist nicht möglich, wie wir festgestellt haben, wenn ein geometrisches Element,'."\n".
                     'wie ein Punkt, keine Ausdehnung hat.'."\n".
                     'Wir können auch sagen, haben geometrische Elemente keine Struktur, und damit keine Ausdehnung,'."\n".
-                    'sind sie unteilbar, dann können wir sie nicht so miteinander verbinden, dass sie gemeinsam mehr sind,'."\n".
+                    'sind sie unteilbar, dann können wir sie nicht so miteinander verbinden, dass sie gemeinsam mehr sind'."\n".
                     'als ihre Einzelteile.'."\n".
-                    'Es können also keine wirklich unteilbaren Atome sein.'."\n",
-                      'Ein Punkt, als Beispiel, muss eine Struktur, im Sinne einer Umgebung, besitzen, die eine Ausdehnung hat.'."\n".
+                    'Es können also keine wirklich unteilbaren Atome sein, wenn wir sie stapeln möchten.'."\n",
+                      'Ein Punkt muss also eine Struktur im Sinne einer Umgebung besitzen, die ihm eine Ausdehnung verleiht.'."\n".
                     'Und genau diese Struktur liefert uns die oben untersuchte arithmetische Struktur der Geometrie'."\n".
                     'über ihre Teilbarkeit durch Primzahlen und der sich daraus ergebenden superialen Basis \lm{ \s }.'."\n".
-                    'Durch die Superial-Zahlen bekommt ein Punkt im endlichen eine Umgebung der Größe \lm{ \s^{-1} }.'."\n".
+                    'Durch die Superial-Zahlen bekommt ein Punkt im endlichen eine Umgebung der Struktur \lm{ a \cdot \s^{-1} } mit \lm{ a \in \mathbb{A}_{\S} }.'."\n".
                     ''))),
                       
                   array( 'figure',
@@ -717,9 +720,10 @@
                     'In \jumpname{OM:SupNum:Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen} sehen wir, dass jeder Punkt im Endlichen'."\n".
                     'der Ebene oder Potenz \lm{ \s^{0} }, hier am Beispiel von \lm{ -1,\!4 \, \s^{0} = -1,\!4 }, als Umgebung einen'."\n".
                     'ganzen Zahlenstrahl auf Fraktalebene \lm{ \s^{-1} } hat.'."\n".
-                    'Der Zahlenstrahl um jeden Punkt hat so dann auch die Ausdehnung \lm{ \s^{-1} }.'."\n",
-                      'Verbinden wir \lm{ \s } Punkte dieser Struktur, dann erhalten wir eine Strecke der Länge \lm{ 1 }.'."\n".
-                    'Verbinden wir \lm{ 2 ω \, \s } Punkte dieser Struktur, dann erhalten wir den ganzen Zahlenstrahl'."\n".
+                    'Der Zahlenstrahl um jeden Punkt hat so dann die Ausdehnung \lm{ 2 ω \, \s^{-1} }, weil der Koeffizient \lm{ a } über alle ganzen Zahlen läuft'."\n".
+                    'und die Anzahl der ganzen Zahlen \lm{ \# \mathbb{Z} = 2 ω } ist.'."\n",
+                      'Verbinden wir \lm{ \frac{ \s }{ 2 ω } } Punkte dieser Struktur, dann erhalten wir eine Strecke der Länge \lm{ 1 }.'."\n".
+                    'Verbinden wir \lm{ \s } Punkte dieser Struktur, dann erhalten wir den ganzen Zahlenstrahl'."\n".
                     'von minus Unendlich \lm{ -ω } bis plus Unendlich \lm{ ω }.'."\n",
                       'Eine fraktale Struktur der geometrischen Elemente löst das Problem mit Punkten eine Linie, mit Linien eine Fläche'."\n".
                     'und mit Flächen ein Volumen zu beschreiben.'."\n".
