@@ -14,8 +14,8 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{XXX}',
-                    // '• XXX',
+                    // '\\bold{X}',
+                    // '• X',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -42,7 +42,7 @@
                     'den Esoterikern unangenehm auf, die selber ihre Betonung auf das ihnen sehr wichtige Gefühlvolle legen.'."\n",
                       'Die „Eine-Millionen-Dollar-Frage“ könnte also lauten:'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Energie-Esoterik-Spiritualitaet:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Energie-Esoterik-Spiritualitaet:Vortext:X', text =>
                       
                 'Was verbindet das vermeintlich gefühlvolle Lager mit dem vermeintlich verstandesorientierten Lager?', subline =>
                   '')),
@@ -90,7 +90,7 @@
                     'Dazu müssen wir demnach unsere innere dynamische Struktur so verändern, dass sie aus der inneren'."\n".
                     'Kreisbewegung, unseren Kreisgedanken und psychosomatischen (Ver-)Spannungen\\color{*Bearb}{(Link)}, umgeleitet wird.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Energie-Esoterik-Spiritualitaet:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Energie-Esoterik-Spiritualitaet:Vortext:X', text =>
                       
                 'Der Care-Prozess oder Achtsamkeitsprozess', subline =>
                   'Unsere Balance zwischen Stabilität und Fortentwicklung')),
@@ -127,7 +127,7 @@
                     'der auch das Vakuum und die Elementarteilchen zur Existenz bringt und stabilisiert.'."\n".
                     'Auf diese Weise sind die Lebewesen, und damit ist auch das Leben, in die Physik eingebettet.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Energie-Esoterik-Spiritualitaet:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Energie-Esoterik-Spiritualitaet:Vortext:X', text =>
                       
                 'Energiearbeit, spirituelle Energie, Aura/Energiefeld', subline =>
                   '')),
@@ -192,41 +192,16 @@
                     'in unserem Leben.'."\n".
                     'Damit ist auch diese Perspektive eng mit der Physik verbunden, eben ein besonderer Aspekt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Energie-Esoterik-Spiritualitaet:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Energie-Esoterik-Spiritualitaet:Vortext:X', text =>
                       
-                'XXX Dunkle Energie und Dunkle Materie', subline =>
+                'Dunkle Energie und Dunkle Materie', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Energie-Esoterik-Spiritualitaet:Vortext:XXX', text =>
-                      
-                'XXX', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:NPYo:XXX'),
+                      // array(  jump_name => 'OM:NPYo:X'),
                     )),
                 )
           ); ?>
@@ -234,10 +209,9 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • XXX  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:NPYo:Energie-Esoterik-Spiritualitaet:XXX',
+		    	<!  • X  >
+          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:NPYo:Energie-Esoterik-Spiritualitaet:X',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
@@ -281,7 +255,7 @@
                       //array(  jump_name => 'OM:NPYo:XXX'),
                     )),
               )
-          ); ?>
+          ); */ ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>
