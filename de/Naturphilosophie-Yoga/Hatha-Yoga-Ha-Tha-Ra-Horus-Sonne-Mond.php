@@ -349,10 +349,12 @@
                 'Angeblicher Gegensatz zwischen Gefühl und Verstand', subline =>
                   'Kein Verstand ohne Gefühl')),
                   array( 'text', array( text => array(
-                    'Auch unsere momentane kulturelle Überbetohnung des Rationalen in Form unseres Verstandes als angeblicher Gegensatz zum Emotionalen, zum Gefühl, kann im Licht des Modells des Achtsamkeitsprozesses'."\n".
-                    'differenzierter verstanden und zurechtgerückt werden.'."\n",
+                    'Auch unsere momentane kulturelle Überbetohnung des Rationalen in Form unseres Verstandes als angeblicher Gegensatz'."\n".
+                    'zum Emotionalen, zum Gefühl, kann im Licht des Modells des Care-Prozesses'."\n".
+                    'differenzierter verstanden und geradegerückt werden.'."\n",
                       'Es gibt demnach \\jump{OM:SpaLeb:Care-Prozess:Vortext:Klaerung}{kein Verstand ohne Gefühl}:'."\n".
-                    'Denn nach dem Achtsamkeitsprozess besteht unser Verstand aus unserem Denken als Handlung und den Gefühlen, die wir zu unseren Gedanken haben.'."\n",
+                    'Denn nach dem Care- oder Achtsamkeitsprozess besteht unser Verstand aus unserem Denken'."\n".
+                    'als Handlung und den Gefühlen, die wir zu unseren Gedanken haben.'."\n",
                     ''))),
                   array( 'text', array( text => array(
                     'Dem'."\n".
@@ -366,10 +368,10 @@
                     'von René Descartes wird also ein'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Ich fühle und handle, also bin ich.'."\n"))),
+                      'Ich fühle, handle und lerne – ich entwickle mich –, also bin ich.'."\n"))),
                       
                   array( 'text', array( text => array(
-                    'vorangestellt und dadurch die „Waage“ wieder feiner ausbalanciert.'."\n",
+                    'vorangestellt und dadurch die „Waage“ wieder ausbalanciert.'."\n",
                     ''))),
                   array( 'text', array( text => array(
                     'Die Vedanta sagt \\color{*Entwick}{(angeblich)}, wie ich finde sehr passend, dazu:'."\n"))),
