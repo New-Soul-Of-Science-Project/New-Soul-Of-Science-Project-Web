@@ -390,7 +390,6 @@
 
 
 		    	<!  • Wir sind zwei verwobene Wesen  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:HaTha:WirZweiWesen',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
@@ -399,13 +398,13 @@
                       array(  jump_name => 'OM:NPYo:HaTha', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'showContent', text => array(
-                    '(• XXX)',
-                    ))),*/
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '• X',
+                    ))),
                       
-                  /* array( 'headline', array( jump_name => 'OM:NPYo:HaTha:WirZweiWesen:XXX', text =>
+                  /* array( 'headline', array( jump_name => 'OM:NPYo:HaTha:WirZweiWesen:X', text =>
                                            
-                'XXX')), */
+                'X')), */
                   array( 'text', array( text => array(
                     'Zwei Perspektiven …'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
@@ -419,18 +418,17 @@
 
 
 		    	<!  • Herstellung der Balance  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:HaTha:HerstellungBalance',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:HaTha:WirZweiWesen', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'showContent', text => array(
-                    '(• XXX)',
-                    ))),*/
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '• XXX',
+                    ))),
                       
                   array( 'headline', array( jump_name => 'OM:NPYo:HaTha:HerstellungBalance:X', text =>
                                            
@@ -438,13 +436,13 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:HerstellungBalance:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:HerstellungBalance:X', text =>
                                            
                 'Entscheidungskampf erzeugt Verspannungen')),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:HerstellungBalance:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:HaTha:HerstellungBalance:X', text =>
                                            
                 'Intensive Aktivierung der muskulären körperlichen Grundspannung löst Verspannungen der Faszien, auch in den Gliedmaßen')),
                   array( 'text', array( text => array(
