@@ -21,11 +21,18 @@
                   array( 'text', array( text => array(
                     'Die Superial-Zahlen, als aktual unendliche algebraische Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}},'."\n".
                     'deren Basis über ein unendliches \jump{OM:SupNum:Formale-Entwicklung}{Primzahl-Produkt} definiert ist, haben eine ganz besondere Struktur.'."\n".
-                    'Ihre Struktur ist dadurch tief mit den \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Zahlen}, den \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Zahlen}'."\n".
-                    'und den \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{Primzahlen} verbunden und erweitern diese ins Aktual-Unendliche.'."\n".
-                    'Auch sind sie dadurch mit den Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}} und im Besonderen mit den von mir entdeckten'."\n".
-                    'oder geschöpften \jump{OM:BiOrd:Home}{Biordinalzahlen} verwandt.'."\n",
-                      'Ihre besonderen Eigenschaften versprechen uns deshalb neue Einblicke in die Struktur der Zahlen.'."\n".
+                    'Ihre Struktur verbindet über die Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}} rationale und algebraische Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    'tief mit den \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{Primzahlen}, den \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Zahlen},'."\n".
+                    'den \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Zahlen} und erweitert all diese ins Aktual-Unendliche.'."\n",
+                      'Dieser Zusammenhang eröffnet ganz neue Perspektiven auf die Zahlentheorie und eröffnet auf diese Weise auch konkret'."\n".
+                    'die Anzahlen von Elementen in diesen Mengen und deren Teilmengen mit aktual unendlichen Zahlen zu beschreiben.'."\n".
+                    'Darüber können wir Summen der Elemente von diesen unendlichen Mengen bestimmen und gelangen schließlich zu einer neuen'."\n".
+                    '\jump{OM:SupNum:Ableitungen-Integrale}{Definition des Integrals und der Ableitung} über aktual unendliche Zahlen, die ohne den Limes auskommen.'."\n",
+                      'Diese Summen können oft nur über die von mir entdeckten, geschöpften und auf diesen Seiten entwickelten \jump{OM:BiOrd:Home}{Biordinalzahlen}'."\n".
+                    'ausgedrückt werden.'."\n".
+                    'Gleiches gilt auch für die Beschreibung der hierfür notwendigen aktual unendlichen Potenzen der Primzahlen.'."\n",
+                      'Die besonderen Eigenschaften der Superial-Zahlen, die auf dieser Seite näher untersucht werden,'."\n".
+                    'versprechen uns tiefe neue Einblicke in die Struktur der Zahlen und begründen damit die Zahlentheorie der Analysis.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
