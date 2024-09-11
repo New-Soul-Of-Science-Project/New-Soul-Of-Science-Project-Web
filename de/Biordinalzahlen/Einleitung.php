@@ -1169,11 +1169,14 @@
                       'Bemerkenswerter Weise hat die superiale Basis \lm{ \s } dann wieder genau so viele natürliche Vorgänger,'."\n".
                     'wie sie selber groß ist.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
+                      
+                'Die Summe aller natürlichen Zahlen bis ins Aktual-Unendliche berechnen', subline =>
+                  'Biordinalzahlen machen es möglich')),
                   array( 'text', array( text => array(
-                  '\condb{Die Summe aller natürlichen Zahlen} \\\\'."\n".
                     'So kommen wir mit den neuen Zahlen beispielsweise auch in die Lage, die Summe aller natürlichen Zahlen zu berechnen.'."\n",
                       'Für die Summe aller natürlicher Zahlen können wir die Gaußsche Summenformel\footnote{\const{BiOrd_g_footnote_text_GaussscheSummenformel}}'."\n".
-                    'benutzen, wen wir sie entsprechend anpassen:'."\n".
+                    'benutzen, wenn wir sie entsprechend anpassen:'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -1212,52 +1215,60 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{On}  \subset  \mathbb{N}_{\infty,c}  }'),
-                      array( display => 'on',  latex => '{  \mathbb{Bn}  \subset  \mathbb{N}_{\infty,c}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{On}  \subset  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{Bn}  \subset  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Desweiteren soll es sich um Mengen \lm{ \mathbb{N}_{\infty,c} } ganzer Zahlen handeln, in denen der Wert jedes Elements'."\n".
-                      'die Anzahl an Elementen in der Menge wiedergibt, die vor ihm kommen.'."\n".
-                      'Diese Mengen fassen wir in der Klasse \lm{ \mathbb{K}_{\infty,c} } der Anzahl äquivalenten Mengen zusammen:'."\n".
+                      'Desweiteren soll es sich um Klassen \lm{ \mathbb{N}_{\infty,c} } ganzer Zahlen handeln, in denen der Wert jedes Elements'."\n".
+                      'die Anzahl an Elementen in der Klassen wiedergibt, die vor ihm kommen.'."\n".
+                      'Diese Klassen fassen wir in der Klasse \lm{ \mathbb{K}_{\infty,c} } der Anzahl äquivalenten Klassen zusammen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \exists \mathbb{K}_{\infty,c}\!: \, *( \forall \mathbb{N}_{\infty,c} \subset \mathbb{N}_{\infty}\!: \, \\\ \qquad\qquad\qquad *( \mathbb{N} \subseteq \mathbb{N}_{\infty,c} \;\land\; \\\ \qquad\qquad\qquad\;\; *( \forall n \in \mathbb{N}_{\infty,c} *)  *[ n \geq 0 \;\land\; \# [ 0, n [_{\mathbb{N}_{\infty,c}} = n *] \\\ \qquad\qquad\qquad  \Rightarrow  \mathbb{N}_{\infty,c} \in \mathbb{K}_{\infty,c} *) *)  }'),
+                      array( display => 'on',  latex => '{  \exists \mathbb{K}_{\infty,c}\!: \, *( \forall \mathbb{N}_{\infty,c} \subset \mathbb{N}_{\infty}\!: \, \\\ \qquad\qquad\qquad *( \mathbb{N} \subseteq \mathbb{N}_{\infty,c} \;\land\; \\\ \qquad\qquad\qquad\;\; *( \forall n \in \mathbb{N}_{\infty,c} *)  *[ n \geq 0 \;\land\; \# [ 0, n [_{\mathbb{N}_{\infty,c}} = n *] \\\ \qquad\qquad\qquad  \Rightarrow  \mathbb{N}_{\infty,c} \in \mathbb{K}_{\infty,c} *) *)  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-c', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-c}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Die Definition der Ordinalzahlen erfüllt dieses Kriterium offensichtlich, während die Biordinalzahlen es nicht erfüllen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{On}  \in  \mathbb{K}_{\infty,c}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{On}  \in  \mathbb{K}_{\infty,c}  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-c', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-c}', label_incr => true),
                       array( display => 'on',  latex => '{  \mathbb{Bn}  \notin  \mathbb{K}_{\infty,c}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'weil die Biordinalzahlen eben \jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{mehr Vorgänger vor ω haben als sein Wert groß ist}.'."\n".
                     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Und von hier kommen wir zur Klasse Gauß-Summen äquivalenter Mengen.'."\n".
-                      'Dies sind unendlich große Mengen, in denen für jedes Element die oben angepasste Gaußsche Summenformel gilt'."\n".
+                      'Und von hier kommen wir zur Klasse \lm{ \mathbb{K}_{\infty,g} } Gauß-Summen äquivalenter Klassen.'."\n".
+                      'Dies sind unendlich große Klassen – Mengen sind dabei nur besondere Klassen –, in denen für jedes Element die oben angepasste Gaußsche Summenformel gilt'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \exists \mathbb{K}_{\infty,g}\!: \, *( \forall \mathbb{N}_{\infty,g} \subset \mathbb{N}_{\infty}\!: \, \\\ \qquad\qquad\qquad *( \mathbb{N} \subseteq \mathbb{N}_{\infty,g} \;\land\; \\\ \qquad\qquad\qquad\;\; *( \forall n \in \mathbb{N}_{\infty,g} *)  *[ n \geq 0 \;\land\; \!\!\!\!\! \sum_{ \forall i \in [ 0, n [_{\mathbb{N}_{\infty,g}} } \!\!\!\! i = \frac{ n^{2} - n }{ 2 } *] \\\ \qquad\qquad\qquad  \Rightarrow  \mathbb{N}_{\infty,g} \in \mathbb{K}_{\infty,g} *) *)  }'),
+                      array( display => 'on',  latex => '{  \exists \mathbb{K}_{\infty,g}\!: \, *( \forall \mathbb{N}_{\infty,g} \subset \mathbb{N}_{\infty}\!: \, \\\ \qquad\qquad\qquad *( \mathbb{N} \subseteq \mathbb{N}_{\infty,g} \;\land\; \\\ \qquad\qquad\qquad\;\; *( \forall n \in \mathbb{N}_{\infty,g} *)  *[ n \geq 0 \;\land\; \!\!\!\!\! \sum_{ \forall i \in [ 0, n [_{\mathbb{N}_{\infty,g}} } \!\!\!\! i = \frac{ n^{2} - n }{ 2 } *] \\\ \qquad\qquad\qquad  \Rightarrow  \mathbb{N}_{\infty,g} \in \mathbb{K}_{\infty,g} *) *)  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-g', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-g}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \mathbb{M} \in \mathbb{K}_{\infty,g} *)  *[  \sum_{ \forall i \in [ 0, n [_{\mathbb{M}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  \;\; ,  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      '\color{*Entwick}{Und am Rande vermute ich, dass eine Menge, die in der Klasse der Gauß-Summen äquivalenten Mengen ist'."\n".
-                      'auch zur Klasse der Anzahl äquivalenten Mengen gehören muss}'."\n".
+                      'Es ist offensichtlich, dass eine Klasse, die in der Klasse \lm{ \mathbb{K}_{\infty,c} } der Anzahl äquivalenten Klassen ist'."\n".
+                      'auch zur Klasse \lm{ \mathbb{K}_{\infty,g} } der Gauß-Summen äquivalenten Klassen gehören muss und umgekehrt'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{M}  \in  \mathbb{K}_{\infty,g}  ?\Rightarrow  \mathbb{M}  \in  \mathbb{K}_{\infty,c}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \mathbb{M}  \in  \mathbb{K}_{\infty,c}  \Leftrightarrow  \mathbb{M}  \in  \mathbb{K}_{\infty,g}  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Element-K-unendlich-c-aequival-Element-K-unendlich-g', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Element-K-unendlich-c-aequival-Element-K-unendlich-g}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{On}  \in  \mathbb{K}_{\infty,g}  \;\; ,  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-g', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-g}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      '\color{*Entwick}{was zu beweisen ist.}'."\n".
+                      'denn dies ist ja genau die Voraussetzung, damit die angepasste Gaußsche Summenformel angewandt werden kann.'."\n".
                     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'So können wir nun zur Summe aller endlichen natürlichen Zahlen übergehen'."\n".
+                      'So können wir nun zur Summe aller endlichen natürlichen Zahlen übergehen,'."\n".
+                      'weil die Klasse der Ordinalzahlen \lm{ \mathbb{On} } aufgrund ihrer Struktur per Definition'."\n".
+                      'zur Klasse der Gauß-Summen äquivalenten Klassen gehört,'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(

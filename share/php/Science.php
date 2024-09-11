@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 03.09.2024, 11:00h
+  // #: Stand: 10.09.2024, 23:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20240910:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\Leftrightarrow  ' -> '\;\;\;\overset{\mspace{-3.5mu}?}{\Leftrightarrow}\;\;\;'
   //           20240903:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\Rightarrow  ' -> '\;\;\;\overset{\mspace{-3.5mu}?}{\Rightarrow}\;\;\;'
   //           20240604:  +:  New in "$Sc_g_equation_replace_ary":  '.\langle' -> '.\!\langle',  '\rangle .' -> '\rangle\!.',  '.\left\langle' -> '.\!\left\langle',  '\right\rangle .' -> '\right\rangle\!.'
   //           20240516:  +:  "MathJax":  Add Macro "S" for "\S" to generate a non italic "S" for irrational algebraic coefficients useful for set S.
@@ -653,6 +654,7 @@
                                     // #: Arrange space around symbols and save chars.
                                     array( '  ?\Rightarrow  ', '\;\;\;\overset{\mspace{-3.5mu}?}{\Rightarrow}\;\;\;'),
                                     array( '  \Rightarrow  ', '\;\;\;\Rightarrow\;\;\;'),
+                                    array( '  ?\Leftrightarrow  ', '\;\;\;\overset{?}{\Leftrightarrow}\;\;\;'),
                                     array( '  \Leftrightarrow  ', '\;\;\;\Leftrightarrow\;\;\;'),
                                     array( '  \land  ', '\;\;\;\land\;\;\;'),
                                     array( '  \lor  ', '\;\;\;\lor\;\;\;'),
