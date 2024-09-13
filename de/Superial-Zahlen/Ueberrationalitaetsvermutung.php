@@ -20,7 +20,7 @@
                     '– Dann stünde ansonsten der Beweis aus, dass alle Realanteile der algebraischen Zahlen Faktoren von \lm{ \s } sind, die ganze Zahlen ergeben. Dazu würden dann unter anderem auch elliptische Integrale zur Lösung Polynome 5. Grades gehören: Vgl. \url{https://www.spektrum.de/lexikon/mathematik/elliptisches-integral/4494} und \url{https://www.spektrum.de/wissen/charles-hermite-1822-1901/1171317}.',
                     '• Wenn nun alle Koeffizienten der algebraischen Zahlen Faktoren von \lm{ \s } sind, die ganze Zahlen ergeben:',
                     '– Werden diese dann beim Zählen der ganzen Superial-Zahlen mitgezählt oder nur die rationalen Koeffizienten? Ich denke, sie werden mitgezählt.',
-                    '– Anders gefragt: gibt es dann immer noch \lm{ \frac{ \s }{ 2 \cdot \omega } } rationale Zahlen im Intervall zwischen Null und ausschließlich Eins, oder müssen wir das korrigieren?',
+                    '– Anders gefragt: gibt es dann immer noch \lm{ \frac{ \s }{ 2 \cdot ω } } rationale Zahlen im Intervall zwischen Null und ausschließlich Eins, oder müssen wir das korrigieren?',
                     '\bold{Vereinfachungen}',
                     '• Das Produkt aller unterschiedlichen Primfaktoren einer natürlichen Zahl \lm{ n } bekommen wir über die (Zahlen-)Radikal-Funktion \lm{ rad(n) }: Vgl. \url{https://de.wikipedia.org/w/index.php?title=Radikal_(Mathematik)&oldid=213475890#In_der_Zahlentheorie}.',
                     ))),
@@ -213,9 +213,9 @@
                     'durch \lm{ 2 } teilbar sein müssen.'."\n".
                     'Und dies entspricht der Aussage, dass die sich im Beweis zeigende, notwendig fortlaufende Teilbarkeit einer vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
                     'der Teilbarkeit entspricht.'."\n",
-                      'Für die vollständige Induktion verwenden wir das \jump{OM:BiOrd:Einleitung:Vortext:Ordinalzahlen}{Symbol \lm{ \omega }} mit dem ihm entsprechenden aktual'."\n".
+                      'Für die vollständige Induktion verwenden wir das \jump{OM:BiOrd:Einleitung:Vortext:Ordinalzahlen}{Symbol \lm{ ω }} mit dem ihm entsprechenden aktual'."\n".
                     'unendlich großen Wert.'."\n".
-                    'Und \lm{ \omega } setzen wir nun in die vorstehende Formel ein, womit die Bedingung der fortlaufenden Teilbarkeit erfüllt ist:'."\n".
+                    'Und \lm{ ω } setzen wir nun in die vorstehende Formel ein, womit die Bedingung der fortlaufenden Teilbarkeit erfüllt ist:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -229,7 +229,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{\omega}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  2^{ω}  \in  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Aber im Zähler können wir uns dessen noch nicht sicher sein,'."\n".
@@ -249,13 +249,13 @@
                     'Und anders als das bei endlichen Exponenten, die rationale Anteile in der Summe haben, der Fall ist, ergibt unser Exponent direkt eine ganze Zahl.'."\n",
                       'Der Widerspruchsbeweis enthält eine Vorschrift, wie die Lösung aussieht:'."\n".
                     'Auch der so konstruierte Zähler des Bruchs muss eine unendlich große ganze Zahl sein, wie der Beweis zeigt, eben einfach schon dadurch, dass er beliebig endlich oft durch \lm{ 2 } teilbar ist.'."\n".
-                    'Mit anderen Worten, der Faktor \lm{ 2^{\omega} } vor \lm{ 2^{\frac{ 1 }{ 2 }} } macht, nach unserem Beweis, aus der Wurzel aus Zwei'."\n".
+                    'Mit anderen Worten, der Faktor \lm{ 2^{ω} } vor \lm{ 2^{\frac{ 1 }{ 2 }} } macht, nach unserem Beweis, aus der Wurzel aus Zwei'."\n".
                     'eine ganze unendlich große Zahl:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{\omega + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\omega} \cdot 2^{\frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  2^{ω + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{ω} \cdot 2^{\frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Darüber hinaus müssen der Nenner \lm{ b } und der Zähler \lm{ a } die im Beweis abgeleitete Bedingung erfüllen:'."\n".
@@ -274,11 +274,11 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a  =  2^{\omega + \frac{ 1 }{ 2 }}  }'),
-                      array( display => 'on',  latex => '{  b  =  2^{\omega}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  2 \cdot *( 2^{\omega} *)^{2}  =  *( 2^{\omega + \frac{ 1 }{ 2 }} *)^{2}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  2 \cdot 2^{2 \omega}  =  2^{2 \omega + 2 \frac{ 1 }{ 2 }}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{2 \omega + 1}  =  2^{2 \omega + 1}  \;\;,  }'),
+                      array( display => 'on',  latex => '{  a  =  2^{ω + \frac{ 1 }{ 2 }}  }'),
+                      array( display => 'on',  latex => '{  b  =  2^{ω}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  2 \cdot *( 2^{ω} *)^{2}  =  *( 2^{ω + \frac{ 1 }{ 2 }} *)^{2}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2 \cdot 2^{2 ω}  =  2^{2 ω + 2 \frac{ 1 }{ 2 }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{2 ω + 1}  =  2^{2 ω + 1}  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'was zu zeigen war.'."\n",
@@ -294,11 +294,11 @@
                 'Die Wurzel aus Zwei und die natürlichen Superial-Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Wie wir wissen ist \lm{ 2^{\omega} } ein Teil des Produkts von \lm{ \s }:'."\n".
+                    'Wie wir wissen ist \lm{ 2^{ω} } ein Teil des Produkts von \lm{ \s }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ \s }{ 2^{\omega} }  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \frac{ \s }{ 2^{ω} }  \in  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'So macht es dann auch Sinn, dass ein Produkt aus unserer superialen Basis \lm{ \s } mit der Wurzel aus Zwei'."\n".
@@ -306,8 +306,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{\omega} \cdot 2^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2^{\omega} }  :\in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 2^{\omega} \cdot 2^{\frac{ 1 }{ 2 }} }{ 2^{\omega} } \cdot \s  :\in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  2^{ω} \cdot 2^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2^{ω} }  :\in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 2^{ω} \cdot 2^{\frac{ 1 }{ 2 }} }{ 2^{ω} } \cdot \s  :\in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }} \cdot \s  :\in  \mathbb{S}_{\N}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -704,18 +704,18 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( t = 2 \cdot \omega - 1 *)  *[  n^{\sum_{ \forall i \in [ 1, t ]_{\mathbb{N}} } -1^{t - i} \cdot x^{i}} \mid a  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( t = 2 \cdot \omega *)  *[  n^{\sum_{ \forall i \in [ 1, t ]_{\mathbb{N}} } -1^{t - i} \cdot x^{i}} \mid b  *]  \;\;,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( t = 2 \cdot ω - 1 *)  *[  n^{\sum_{ \forall i \in [ 1, t ]_{\mathbb{N}} } -1^{t - i} \cdot x^{i}} \mid a  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( t = 2 \cdot ω *)  *[  n^{\sum_{ \forall i \in [ 1, t ]_{\mathbb{N}} } -1^{t - i} \cdot x^{i}} \mid b  *]  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'in dem wir nun die Entwicklungsschritte \lm{ r } durch die vollständigen Induktion \lm{ \omega } ersetzt haben.'."\n".
-                      'Direkt \lm{ \omega } in die Summe eingesetzt, anstatt durch \lm{ t } ausgedrückt, und die Summe beispielhaft'."\n".
+                      'in dem wir nun die Entwicklungsschritte \lm{ r } durch die vollständigen Induktion \lm{ ω } ersetzt haben.'."\n".
+                      'Direkt \lm{ ω } in die Summe eingesetzt, anstatt durch \lm{ t } ausgedrückt, und die Summe beispielhaft'."\n".
                       'ausgeschrieben erhalten wir'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{ x^{ 2 \omega - 1 } - x^{ 2 \omega - 2 } + x^{ 2 \omega - 3 } - \cdots + x } \mid a  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{ x^{ 2 \omega } - x^{ 2 \omega - 1 } + x^{ 2 \omega - 2 } - x^{ 2 \omega - 3 } + \cdots - x } \mid b  \;\;,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{ x^{ 2 ω - 1 } - x^{ 2 ω - 2 } + x^{ 2 ω - 3 } - \cdots + x } \mid a  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{ x^{ 2 ω } - x^{ 2 ω - 1 } + x^{ 2 ω - 2 } - x^{ 2 ω - 3 } + \cdots - x } \mid b  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'von wo aus wir weiter vorangehen können.'."\n",
@@ -817,19 +817,19 @@
                       'Wie oben festgestellt, sind wir in der Wahl der aktual unendlichen großen ganzen Potenz \lm{ g } von \lm{ n } frei,'."\n".
                     'um die überrationalen Brüche der \lm{ x }-ten Wurzeln aus \lm{ n } darzustellen,'."\n".
                     'solange \lm{ g } größer bleibt, als jede endliche natürliche Zahl – also solange \lm{ g } nicht endlich wird.'."\n".
-                    'So können wir für \lm{ g } auch die vollständige Induktion \lm{ \omega } einsetzen'."\n".
+                    'So können wir für \lm{ g } auch die vollständige Induktion \lm{ ω } einsetzen'."\n".
                     'und damit den Exponenten des Primzahl-Flächenprodukts unserer superialen Basis \lm{ \s } verwenden:'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Sei \lm{ \omega } der Exponent von \lm{ n }, um die \lm{ x }-te Wurzel aus \lm{ n } als'."\n".
+                      'Sei \lm{ ω } der Exponent von \lm{ n }, um die \lm{ x }-te Wurzel aus \lm{ n } als'."\n".
                       'überrationalen Bruch darzustellen:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\omega} \cdot n^{\frac{ 1 }{ x }} }{ n^{\omega} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\omega + \frac{ 1 }{ x }} }{ n^{\omega} }  }',
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }}  =  \frac{ n^{ω} \cdot n^{\frac{ 1 }{ x }} }{ n^{ω} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{ω + \frac{ 1 }{ x }} }{ n^{ω} }  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -838,9 +838,9 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{\omega + \frac{ 1 }{ x }} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{\omega} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{\frac{ 1 }{ x }}  =  \\\ \qquad\qquad\qquad \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{\omega + \frac{ 1 }{ x }} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{\omega} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{1}^{k_{1} *( \frac{ 1 }{ x } *)} \cdot p_{2}^{k_{2} *( \frac{ 1 }{ x } *)} \cdot p_{3}^{k_{3} *( \frac{ 1 }{ x } *)} \cdot p_{4}^{k_{4} *( \frac{ 1 }{ x } *)} \cdot \cdots  =  \\\ \qquad\qquad\qquad \frac{ p_{1}^{k_{1} *( \omega + \frac{ 1 }{ x } *)} \cdot p_{2}^{k_{2} *( \omega + \frac{ 1 }{ x } *)} \cdot p_{3}^{k_{3} *( \omega + \frac{ 1 }{ x } *)} \cdot p_{4}^{k_{4} *( \omega + \frac{ 1 }{ x } *)} \cdot \cdots }{ p_{1}^{k_{1} \omega} \cdot p_{2}^{k_{2} \omega} \cdot p_{3}^{k_{3} \omega} \cdot p_{4}^{k_{4} \omega} \cdot \cdots }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω + \frac{ 1 }{ x }} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{\frac{ 1 }{ x }}  =  \\\ \qquad\qquad\qquad \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω + \frac{ 1 }{ x }} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{1}^{k_{1} *( \frac{ 1 }{ x } *)} \cdot p_{2}^{k_{2} *( \frac{ 1 }{ x } *)} \cdot p_{3}^{k_{3} *( \frac{ 1 }{ x } *)} \cdot p_{4}^{k_{4} *( \frac{ 1 }{ x } *)} \cdot \cdots  =  \\\ \qquad\qquad\qquad \frac{ p_{1}^{k_{1} *( ω + \frac{ 1 }{ x } *)} \cdot p_{2}^{k_{2} *( ω + \frac{ 1 }{ x } *)} \cdot p_{3}^{k_{3} *( ω + \frac{ 1 }{ x } *)} \cdot p_{4}^{k_{4} *( ω + \frac{ 1 }{ x } *)} \cdot \cdots }{ p_{1}^{k_{1} ω} \cdot p_{2}^{k_{2} ω} \cdot p_{3}^{k_{3} ω} \cdot p_{4}^{k_{4} ω} \cdot \cdots }  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Weil \lm{ n } in unserem Ansatz \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz}'."\n".
@@ -849,8 +849,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  p_{i}^{\frac{ 1 }{ x }}  =  \frac{ p_{i}^{\omega + \frac{ 1 }{ x }} }{ p_{i}^{\omega} }  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  p_{i}^{\frac{ 1 }{ x }}  =  \frac{ p_{i}^{\omega} \cdot p_{i}^{\frac{ 1 }{ x }} }{ p_{i}^{\omega} }  *]  \;\;,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  p_{i}^{\frac{ 1 }{ x }}  =  \frac{ p_{i}^{ω + \frac{ 1 }{ x }} }{ p_{i}^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  p_{i}^{\frac{ 1 }{ x }}  =  \frac{ p_{i}^{ω} \cdot p_{i}^{\frac{ 1 }{ x }} }{ p_{i}^{ω} }  *]  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'womit wir jetzt bei den einzelnen Primzahltürmen des Primzahl-Flächenprodukts von \lm{ \s } angekommen sind.'."\n",
@@ -867,7 +867,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{\omega} \cdot n^{\frac{ 1 }{ x }} }{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{\omega} }  *]  \;\;,  }'),
+                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{ω} \cdot n^{\frac{ 1 }{ x }} }{ *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{ω} }  *]  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'dann erhalten wir einen Nenner und diesen auch als Faktor im Zähler,'."\n".
@@ -876,7 +876,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{\omega} \cdot n^{\frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{ω} \cdot n^{\frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'In Bezug auf die Superial-Zahlen hat dies eine besondere Bedeutung.'."\n".
@@ -886,7 +886,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{\omega}  \mid  \s  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  *( p_{1} \cdot p_{2} \cdot p_{3} \cdot p_{4} \cdot \cdots *)^{ω}  \mid  \s  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot \s  \in  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -906,13 +906,13 @@
                     'Bedingung, \lm{ n } besteht nur aus Primzahlen erster Potenz, und \lm{ n } hat jede mögliche Primfaktorzerlegung,'."\n".
                     'dann geht es nur darum, wie sich höhere Potenzen der Primzahlen in \lm{ n } bezüglich des Produkts mit'."\n".
                     'der superialen Basis \lm{ \s } verhalten.'."\n",
-                      'Die Primzahltürme \lm{ p_{i}^{\omega} }, die als Faktoren dazu führen, dass die \lm{ x }-ten Wurzeln aus diesen Primzahlen'."\n".
+                      'Die Primzahltürme \lm{ p_{i}^{ω} }, die als Faktoren dazu führen, dass die \lm{ x }-ten Wurzeln aus diesen Primzahlen'."\n".
                     '\lm{ p_{i}^{\frac{ 1 }{ x }} } zu ganzen Zahlen werden, werden in unserer bisher gefundenen Lösung entsprechend'."\n".
                     'der Potenzen \lm{ k_{i} } der jeweiligen Primzahlen in \lm{ n } potenziert:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  =  \frac{ *( p_{i}^{k_{i}} *)^{\omega} \cdot *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} }{ *( p_{i}^{k_{i}} *)^{\omega} }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  =  \frac{ *( p_{i}^{k_{i}} *)^{ω} \cdot *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} }{ *( p_{i}^{k_{i}} *)^{ω} }  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Frage, die sich bezüglich der Superial-Zahlen also stellt, ist:'."\n".
@@ -921,8 +921,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  =  \frac{ p_{i}^{\omega} \cdot *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} }{ p_{i}^{\omega} }  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  p_{i}^{\omega} \cdot *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  ?\in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  =  \frac{ p_{i}^{ω} \cdot *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} }{ p_{i}^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall p_{i} \in \mathbb{P}(n) *)  *[  p_{i}^{ω} \cdot *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  ?\in  \mathbb{N}_{\infty}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Und ich denke, diese Frage können wir ruhigen Gewissens mit Ja beantworten.'."\n".
@@ -938,13 +938,13 @@
                     'als ihre einfache Potenz.'."\n".
                     'Im Gegenteil fällt die \lm{ x }-te Potenz der \lm{ x }-ten Wurzel aus \lm{ n } per Definition'."\n".
                     'sogar selber auf die ganze Zahl \lm{ n }, sogar ohne die unendliche Vergrößerung des Rasters.'."\n",
-                      'Der einfache aktual unendliche Potenzturm \lm{ p_{i}^{\omega} } vergrößert das Raster für alle dazu passenden'."\n".
+                      'Der einfache aktual unendliche Potenzturm \lm{ p_{i}^{ω} } vergrößert das Raster für alle dazu passenden'."\n".
                     '\lm{ x }-ten Wurzel aus \lm{ p_{i} } so, dass auch ein Produkt dieser Wurzeln auf das Zählraster der ganzen Zahlen fällt.'."\n".
                       'Es gilt also tatsächlich:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  p_{i}^{\omega} \cdot *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  p_{i}^{ω} \cdot *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Damit sind alle Produkte der \lm{ x }-ten Wurzeln aus \lm{ n } mit der superialen Basis \lm{ \s }'."\n".
@@ -980,8 +980,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *) *( \forall p_{i} \in \mathbb{P}(n) *)  \\\ \qquad\qquad\qquad\qquad *[  n^{- \frac{ 1 }{ x }}  =  \frac{ p_{i}^{\omega} \cdot n^{- \frac{ 1 }{ x }} }{ p_{i}^{\omega} }  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ x }}  =  \frac{ p_{i}^{\omega} }{ p_{i}^{\omega} \cdot n^{\frac{ 1 }{ x }} }  \;\;,  }'),
+                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *) *( \forall p_{i} \in \mathbb{P}(n) *)  \\\ \qquad\qquad\qquad\qquad *[  n^{- \frac{ 1 }{ x }}  =  \frac{ p_{i}^{ω} \cdot n^{- \frac{ 1 }{ x }} }{ p_{i}^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ x }}  =  \frac{ p_{i}^{ω} }{ p_{i}^{ω} \cdot n^{\frac{ 1 }{ x }} }  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'dann bleibt der Bruch trotzdem ein überrationaler Bruch, wie wir sehen.'."\n",
