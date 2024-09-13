@@ -306,12 +306,12 @@
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Ueberrationalitaetsvermutung.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Ueberrationalitaetsvermutung.php',
       titel => 'Überrationalitätsvermutung (Beweis) - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\name[undertitle]{OM:SupNum:Primzahlprodukt-Vermutung}. — \name[description]{OM:SupNum:Primzahlprodukt-Vermutung}.',
+      description => '\name[undertitle]{OM:SupNum:Ueberrationalitaetsvermutung}. — \name[description]{OM:SupNum:Ueberrationalitaetsvermutung}.',
       keywords => '',
       text_titel_h1 => 'Überrationalitätsvermutung \color{*TitleAdd}{\small{(Beweis)}}',
       text_titel_short => 'Überrationalitätsvermutung',
-      text_undertitel_h2 => 'Lässt sich die „x“-te Wurzel aus „n“, wenn sie irrational ist, immer als Bruch mit aktual unendlich großem ganzen Nenner und Zähler ausdrücken?',
-      text_titel_discr_h3 => 'Der folgende Beweis zeigt, die Antwort ist ja. Dann, wenn Nenner und Zähler aktual unendlich große ganze Zahlen sind, die wir beliebig endlich oft durch „n“ teilen können. Damit sind die Koeffizienten aller algebraischen Zahlen, viele davon irrationale Wurzeln, auch Koeffizienten der Superial-Zahlen',
+      text_undertitel_h2 => 'Lässt sich die \lm{ x }-te Wurzel aus \lm{ n }, wenn sie irrational ist, immer als Bruch mit aktual unendlich großem ganzen Nenner und Zähler ausdrücken?',
+      text_titel_discr_h3 => 'Der folgende Beweis zeigt, die Antwort ist ja. Und zwar genau dann, wenn Nenner und Zähler aktual unendlich große ganze Zahlen sind, die wir beliebig endlich oft durch \lm{ n } teilen können, wie \lm{ n^{ω} }. Damit sind die Koeffizienten der algebraischen Zahlen, die durch Radikale darstellbar sind, auch Koeffizienten der Superial-Zahlen',
       jump_ary => array(
         'OM:SupNum:Ueberrationalitaetsvermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
