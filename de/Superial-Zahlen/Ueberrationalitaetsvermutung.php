@@ -1636,7 +1636,7 @@
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:XXX',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X',
                 Title => '\small{Alter Entwurf der Überrationalitätsvermutung …}',
                 TitleVis => 'Alter Entwurf der Überrationalitätsvermutung:', ParagraphList => array(
 
