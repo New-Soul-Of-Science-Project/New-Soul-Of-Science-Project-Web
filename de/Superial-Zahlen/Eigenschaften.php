@@ -105,32 +105,142 @@
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X', text =>
                       
                 'Entsprechen die sinnvollen Koeffizienten allen reellen Zahlen?', subline =>
-                  '\lm{ \mathbb{A}_{\S} = \mathbb{R} } ist eine Frage der Transzendenz')),
+                  '\lm{ \mathbb{A}_{\S} = \mathbb{R} } ist eine Frage der Transzendenz und der Ganzzahligkeit im Produkt mit der superialen Basis \lm{ \s }')),
                   array( 'text', array( text => array(
+                  '\condb{Bezüglich der Transzendenz} \\\\'."\n".
                     'Das hängt davon ab, wie wir im Lichte der Superial-Zahlen beantworten, welche Zahlen wir zu den reellen Zahlen zählen.'."\n".
                     'Wenn wir \jump{OM:SupNum:Ableitungen-Integrale}{die Ableitung und das Integral} über die Superial-Zahlen definieren'."\n".
                     'und nicht, wie heute meistens üblich, über den Limes, und berechnen, welche Funktion abgeleitet sie selber ergibt,'."\n".
-                    'dann erhalten wir eine \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{\lm{ \e }-Funktion} und damit eine'."\n".
+                    'dann erhalten wir eine \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{etwas detailliertere \lm{ \e }-Funktion} und damit eine'."\n".
                     '\jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{eulersche Zahl \lm{ \e_{\s} }}, die mehr Details ihrer Struktur offenbart,'."\n".
                     'als die Zahl \lm{ \e }, die wir über den Limes erhalten.'."\n",
                       'Die uns bekannte Zahl \lm{ \e }, definiert durch ihre Taylorreihe\color{*Bearb}{(Verweis)},'."\n".
                     'ist von der Zahl \lm{ \e_{\s} } nämlich nur der Summand endlicher Größe.'."\n".
                     '\lm{ \e_{\s} } enthält aber noch aktual unendlich viele, aktual unendlich kleine Summanden herunter bis zur Potenz \lm{ \s^{-\s} }.'."\n".
-                    'Damit wäre die Zahl \lm{ \e } zwar theoretisch eine reelle Zahl und damit möglicherweise als Koeffizient der Superial-Zahlen geeignet.'."\n".
+                    'Damit wäre die Zahl \lm{ \e } zwar theoretisch eine reelle Zahl und so möglicherweise als Koeffizient der Superial-Zahlen geeignet.'."\n".
                     'Aber im Rahmen der Superial-Zahlen'."\n".
                     'macht die \lm{ \e }-Funktion nur mit der Basis \lm{ \e_{\s} } Sinn.'."\n".
                     '\lm{ \e_{\s} } ist allerdings nicht einmal eine Superial-Zahl der hier definierten 1. Ordnung, weil sie'."\n".
-                    'aktual unendlich kleine Potenzen von \lm{ \s } enthält und die Superial-Zahlen nur endlich Potenzen von \lm{ \s } erlauben.'."\n",
+                    'aktual unendlich kleine Potenzen von \lm{ \s } enthält und die Superial-Zahlen nur endliche Potenzen von \lm{ \s } erlauben.'."\n",
                       'Damit würde ich \lm{ \e_{\s} } eigentlich nicht zur Menge \lm{ \mathbb{R} } der reellen Zahlen zählen.'."\n".
                     'In meinen Augen sind hier also noch Einigungen nötig, welche Zahlen wir sinnvollerweise zu \lm{ \mathbb{R} } hinzurechnen.'."\n".
                     'Und wir müssen uns klar darüber werden, ob es Sinn macht \lm{ \e } weiterhin als eulersche Zahl anzusehen oder ob'."\n".
                     'wir nur noch \lm{ \e_{\s} } als eulersche Zahl anerkennen sollten.'."\n".
-                    'Oder legen wir vielleicht sogar fest, dass \lm{ \e := \e_{\s} } gilt.'."\n".
+                    'Oder legen wir vielleicht sogar fest, dass \lm{ \e := \e_{\s} } gilt?'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Bezüglich der Ganzzahligkeit im Produkt mit der superialen Basis \lm{ \s }} \\\\'."\n".
+                    'Alle reellen Zahlen, die nicht transzendent sind, sind Koeffizienten der algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}.'."\n".
+                    'Demnach stellt sich dann die Frage, ob wirklich alle Koeffizienten der algebraischen Zahlen im Produkt mit der superialen Basis \lm{ \s }'."\n".
+                    'tatsächlich ganze Zahlen sind.'."\n",
+                      'Bezüglich der rationalen Zahlen\footnote{\const{SupNum_g_footnote_text_RationaleZahl}}, die ja ein Teil'."\n".
+                    'der Koeffizienten der algebraischen Zahlen sind, ist es ja offensichtlich,'."\n".
+                    'dass sie \jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{im Produkt mit \lm{ \s } ganze Zahlen sind}.'."\n".
+                    'Wie diese \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen \lm{ \mathbb{S}_{\N} }} aussehen,'."\n".
+                    'zeigen wir in der \jump{OM:SupNum:Formale-Entwicklung}{formalen Entwicklung}.'."\n".
+                    'Ein Produkt unserer superialen Basis \lm{ \s } mit jeder endlichen positiven rationalen Zahl'."\n".
+                    '\lm{ q^{+} } eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{unendliche natürliche Zahl aus \lm{ \mathbb{N}_{\infty} }} ist;'."\n".
+                    'und im Besonderen offensichtlich eine \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche Superial-Zahl} aus \lm{ \mathbb{S}_{\N} }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall q^{+} \in \mathbb{Q}^{+} *)  *[  q^{+} \cdot \s  \in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall q^{+} \in \mathbb{Q}^{+} *)  *[  q^{+} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Bleibt die Frage …'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X', text =>
                       
                 'Sind die sinnvollen Koeffizienten alle algebraischen Zahlen?', subline =>
                   '\lm{ \mathbb{A}_{\S} = \mathbb{A} } ist eine Frage der elliptischen Integrale beziehungsweise der elliptischen und algebraischen Kurven')),
+                  array( 'text', array( text => array(
+                    'Ich vermute, die Realanteile der algebraischen Zahlen \lm{ \mathbb{A}_{\S} }, ihre Koeffizienten,'."\n".
+                    'die auch rationale – also gebrochene – Potenzen von natürlichen Zahlen sein können,'."\n".
+                    'viele davon irrationale \lm{ x }-te Wurzeln aus \lm{ n },'."\n".
+                    'sind alle als Koeffizienten der superialen Basis \lm{ \s } aktual unendlich große natürliche Zahlen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\S}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\S}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dies wäre schon etwas sehr besonderes.'."\n",
+                      'Hier ist zu bemerken, dass algebraische Zahlen allesamt Lösungen aller möglichen Polynome sind und damit'."\n".
+                    'grundsätzlich komplexe Zahlen\footnote{\const{SupNum_g_footnote_text_KomplexeZahl}},'."\n".
+                    'also Zahlen auf der Gaußschen Zahlenebene und damit einen imaginären Anteil haben können.\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    'Deshalb habe ich sie hier auf ihre realen Anteile – oder auf die Faktoren beziehungsweise Koeffizienten ihrer Koordinaten – begrenzt.'."\n",
+                      'Die Koeffizienten der algebraischen Zahlen müssten demnach also Anteile des Primzahl-Flächenprodukts von \lm{ \s } sein.'."\n".
+                    'Oder sie müssen multipliziert mit Anteilen des Primzahl-Flächenprodukts von \lm{ \s } ganze Zahlen ergeben.'."\n".
+                    'Beides ist allerdings nur möglich, wenn die realen Anteile der algebraischen Zahlen durch Brüche unendlicher ganzer Zahlen dargestellt werden können.'."\n".
+                    'Hier beginnt nun die Crux und hier wird es nachfolgend sehr spannend und erkenntnisreich.'."\n",
+                      'Interessanterweise sind die algebraischen Zahlen, genau wie die rationalen Zahlen, abzählbar.\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}}'."\n".
+                    'Dies gibt uns im Lichte der hier auch entwickelten \jump{OM:SupNum:Ableitungen-Integrale}{Ableitungen und Integrale} mit Superial-Zahlen den Hinweis,'."\n".
+                    'dass die Koeffizienten der algebraischen Zahlen tatsächlich zu den Superial-Zahlen gehören.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Das Ergebnis des Beweises der Überrationalitätsvermutung} \\\\'."\n".
+                    'Um die Sache weiter systematisch anzugehen hatte ich die Idee, mich als nächstes mit den irrationalen Radikalen der'."\n".
+                    'algebraischen Zahlen zu beschäftigen, den ganzzahligen Wurzeln aus ganzen Zahlen, die irrationale Zahlen ergeben.'."\n",
+                      'Wenn die irrationalen algebraischen Zahlen, die durch Radikale darstellbar sind, im Produkt mit unserem \lm{ \s }'."\n".
+                    'aktual unendlich große ganze Zahlen ergeben sollen, dann muss jedes dieser irrationalen Radikale einem Bruch aus'."\n".
+                    'aktual unendlich großem ganzen Nenner und auch Zähler entsprechen, die auch im Primzahl-Flächenprodukt von \lm{ \s }'."\n".
+                    'vorkommen müssen.'."\n".
+                    'Genau das zeigen wir mit dem \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung} und'."\n".
+                    'entdecken Zusammenhänge, die mir ganz neu erscheinen.'."\n",
+                      'Wir erkennen im Speziellen, dass wir den Faktor \lm{ 2^{ω} } im Primzahl-Flächenprodukt von \lm{ \s } finden,'."\n".
+                    'der aus der zweiten Wurzel aus Zwei eine aktual unendlich große ganze Zahl macht:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \cdot 2^{ω}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{ω + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Weil dieser Faktor auch in \lm{ \s } steckt, erkennen wir weiter, dass dann auch \lm{ \s } im Produkt mit der'."\n".
+                    'zweiten Wurzel aus Zwei eine aktual unendlich große ganze Zahl sein muss, und dann die zweiten Wurzel aus Zwei'."\n".
+                    'ein sinnvoller Koeffizient der Superial-Zahlen ist:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \s  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \s  :\in  \mathbb{S}_{\N}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Lösung nach der oben aufgeworfenen Frage eines überrationalen Bruchs aus aktual unendlich großem'."\n".
+                    'Nenner und Zähler sieht in diesem Fall wie folgt aus:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sqrt{ 2 }  =  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das vollständige Kürzen von \lm{ 2^{ω} } macht hier in sofern keinen Sinn, weil dann der Zähler'."\n".
+                    'keine ganze Zahl mehr wäre, was aber gesucht war.'."\n",
+                      'Im allgemeinen ergeben sich folgende Aussagen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall c, x \in \mathbb{N}^{+} *)  *[  c^{\frac{1}{x}} \cdot \rad(c)^{ω}  \in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  \s  \parallel  \rad(c)^{ω}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c^{\frac{1}{x}} \cdot \s  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  c^{\frac{1}{x}} \cdot \s  :\in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  \sqrt[x]{ c }  =  c^{\frac{ 1 }{ x }}  =  \frac{ c^{\frac{ 1 }{ x }} \cdot \rad(c)^{ω} }{ \rad(c)^{ω} }  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wenn \lm{ \rad(c) } ein Produkt aller Primzahlen in \lm{ c } in einfacher Potenz darstellt,'."\n".
+                    'weil \lm{ \rad(c)^{ω} } dann immer ein Teil des Primzahl-Flächenprodukt von \lm{ \s } ist und \lm{ \s } in diesem Fall sogar exakt teilt.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),

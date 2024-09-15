@@ -26,7 +26,20 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Nachdem wir in der \jump{OM:SupNum:Einleitung}{Einleitung} und in der \jump{OM:SupNum:Formale-Entwicklung}{formalen Entwicklung} geklärt haben,'."\n".
+                    'Die Idee, mich damit zu beschäftigen, ob irrationale Wurzeln der Form \lm{ \sqrt[x]{ n } } in irgendeiner Weise durch Brüche'."\n".
+                    'aktual unendlicher ganzer Zahlen darstellbar sind, kam ich durch meine Beschäftigung mit den Koeffizienten der Superial-Zahlen.'."\n".
+                    'Denn es stellte sich heraus, dass die Superial-Zahlen nur dann für Integrale nutzbar sind, wenn jeder Koeffizient \lm{ a }'."\n".
+                    'im Produkt mit der superialen Basis \lm{ \s } eine aktual unendliche ganze Zahl ergibt.'."\n".
+                    'Hiernach steht also die Frage im Raum, für welche endlichen Zahlen dies gilt.'."\n".
+                    'Im Detail beschäftigen wir uns damit im Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}}.'."\n",
+                      'Auf dieser Seite soll es nun um den Beweis gehen, dass die Koeffizienten der algebraischen Zahlen, die durch Radikale darstellbar sind,'."\n".
+                    'auch Koeffizienten der Superial-Zahlen sind.'."\n".
+                    'Sie müssen also alle im Produkt mit der superialen Basis \lm{ \s } aktual unendliche ganze Zahl sein.'."\n",
+                      'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      'Nachdem wir in der \jump{OM:SupNum:Einleitung}{Einleitung} und in der \jump{OM:SupNum:Formale-Entwicklung}{formalen Entwicklung} geklärt haben,'."\n".
                     'dass ein Produkt unserer superialen Basis \lm{ \s } mit jeder endlichen positiven rationalen Zahl\footnote{\const{SupNum_g_footnote_text_RationaleZahl}}'."\n".
                     '\lm{ q^{+} } eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{unendliche natürliche Zahl aus \lm{ \mathbb{N}_{\infty} }} ist;'."\n".
                     'und im Besonderen offensichtlich eine \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche Superial-Zahl} aus \lm{ \mathbb{S}_{\N} }:'."\n".
