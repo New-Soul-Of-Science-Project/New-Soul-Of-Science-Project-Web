@@ -180,7 +180,8 @@
                     'dass die Koeffizienten der algebraischen Zahlen tatsächlich zu den Superial-Zahlen gehören.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Das Ergebnis des Beweises der Überrationalitätsvermutung} \\\\'."\n".
+                  '\condb{Durch Radikale darstellbar algebraischen Zahlen sind sinnvolle Koeffizienten der Superial-Zahlen} \\\\'."\n".
+                  '\cond{Das Ergebnis des Beweises der Überrationalitätsvermutung} \\\\'."\n".
                     'Um die Sache weiter systematisch anzugehen hatte ich die Idee, mich als nächstes mit den irrationalen Radikalen der'."\n".
                     'algebraischen Zahlen zu beschäftigen, den ganzzahligen Wurzeln aus ganzen Zahlen, die irrationale Zahlen ergeben.'."\n",
                       'Wenn die irrationalen algebraischen Zahlen, die durch Radikale darstellbar sind, im Produkt mit unserem \lm{ \s }'."\n".
@@ -230,13 +231,17 @@
                     ))),
                   array( 'text', array( text => array(
                     'wenn \lm{ \rad(c) } ein Produkt aller Primzahlen in \lm{ c } in einfacher Potenz darstellt,'."\n".
-                    'weil \lm{ \rad(c)^{ω} } dann immer ein Teil des Primzahl-Flächenprodukt von \lm{ \s } ist und \lm{ \s } in diesem Fall sogar exakt teilt.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'weil \lm{ \rad(c)^{ω} } dann immer ein Teil des Primzahl-Flächenprodukt von \lm{ \s } ist und \lm{ \s } in diesem Fall sogar exakt teilt.'."\n",
+                      'Damit sind alle durch Radikale darstellbaren algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen.'."\n".
+                    'Dies ist sehr bemerkenswert und stößt eine neue Tür für das Verständnis von irrationalen Zahlen und für'."\n".
+                    'die Nützlichkeit der Superial-Zahlen auf.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Alle algebraischen Zahlen auf Grundlage von Kombinationen von radikalen algebraischen Zahlen mit den Grundrechenarten und ganzer Potenzen sind sinnvolle Koeffizienten der Superial-Zahlen} \\\\'."\n".
+                  // '\cond{XXX} \\\\'."\n".
+                    'Wir werden nachfolgen zeigen, dass tatsächlich alle Kombinationen von radikalen algebraischen Zahlen mit den Grundrechenarten und'."\n".
+                    'ganzer Potenzen im Produkt mit der superialen Basis \lm{ \s } aktual unendlich große ganze Zahlen und damit'."\n".
+                    'sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
