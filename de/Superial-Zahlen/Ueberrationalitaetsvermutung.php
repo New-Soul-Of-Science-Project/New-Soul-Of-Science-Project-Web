@@ -35,51 +35,6 @@
                       'Auf dieser Seite soll es nun um den Beweis gehen, dass die Koeffizienten der algebraischen Zahlen, die durch Radikale darstellbar sind,'."\n".
                     'auch Koeffizienten der Superial-Zahlen sind.'."\n".
                     'Sie müssen also alle im Produkt mit der superialen Basis \lm{ \s } aktual unendliche ganze Zahl sein.'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      'Nachdem wir in der \jump{OM:SupNum:Einleitung}{Einleitung} und in der \jump{OM:SupNum:Formale-Entwicklung}{formalen Entwicklung} geklärt haben,'."\n".
-                    'dass ein Produkt unserer superialen Basis \lm{ \s } mit jeder endlichen positiven rationalen Zahl\footnote{\const{SupNum_g_footnote_text_RationaleZahl}}'."\n".
-                    '\lm{ q^{+} } eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{unendliche natürliche Zahl aus \lm{ \mathbb{N}_{\infty} }} ist;'."\n".
-                    'und im Besonderen offensichtlich eine \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche Superial-Zahl} aus \lm{ \mathbb{S}_{\N} }:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall q^{+} \in \mathbb{Q}^{+} *)  *[  q^{+} \cdot \s  \in  \mathbb{N}_{\infty}  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall q^{+} \in \mathbb{Q}^{+} *)  *[  q^{+} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Stellt sich nun die Frage, ob auch bestimmte irrationale Zahlen diese Eigenschaft erfüllen.'."\n",
-                      'Ich vermute, dem ist so und die Realanteile der algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
-                    '\lm{ \mathbb{A}_{\R} }, die auch rationale Potenzen von natürlichen Zahlen sein können'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{A}_{\Ir}  =  \\\ \qquad *\{  a \notin \mathbb{Q}  *|*  *( \forall q \in \mathbb{Q} *) *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) \\\ \qquad\qquad\qquad\;\;\, *( \forall y \in \mathbb{Z} \setminus *\{ 0 *\} *) *( \forall z \in \mathbb{Z} *)  *[  a = q \cdot n^{\frac{ 1 }{ y }} + z  *]  *\}  }'),
-                      array( display => 'on',  latex => '{  \mathbb{A}_{\R}  =  \mathbb{Q} \cup \mathbb{A}_{\Ir}  \;\;,  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'und von denen viele irrationalen \lm{ x }-ten Wurzeln aus \lm{ n } entsprechen,'."\n".
-                    'sind als Koeffizienten der superialen Basis \lm{ \s } aktual unendlich große natürliche Zahlen:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{N}_{\infty}  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Dies wäre schon etwas sehr besonderes.'."\n",
-                      'Hier ist zu bemerken, dass algebraische Zahlen grundsätzlich komplexe Zahlen\footnote{\const{SupNum_g_footnote_text_KomplexeZahl}},'."\n".
-                    'also Zahlen auf der Gaußschen Zahlenebene sind und damit einen imaginären Anteil haben können.'."\n".
-                    'Deshalb habe ich sie hier auf ihre realen Anteile – oder auf die Faktoren beziehungsweise Koeffizienten ihrer Koordinaten – begrenzt.'."\n",
-                      'Die Koeffizienten der algebraischen Zahlen müssten demnach also Anteile des Primzahl-Flächenprodukts von \lm{ \s } sein.'."\n".
-                    'Oder sie müssen multipliziert mit Anteilen des Primzahl-Flächenprodukts von \lm{ \s } ganze Zahlen ergeben.'."\n".
-                    'Beides ist allerdings nur möglich, wenn die realen Anteile der algebraischen Zahlen durch Brüche unendlicher ganzer Zahlen dargestellt werden können.'."\n".
-                    'Hier beginnt nun die Crux und hier wird es nachfolgend sehr spannend und erkenntnisreich.'."\n",
-                      'Interessanterweise sind die algebraischen Zahlen, genau wie die rationalen Zahlen, abzählbar.\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}}'."\n".
-                    'Dies gibt uns im Lichte der hier auch entwickelten \jump{OM:SupNum:Ableitungen-Integrale}{Ableitungen und Integrale} mit Superial-Zahlen den Hinweis,'."\n".
-                    'dass die Koeffizienten der algebraischen Zahlen tatsächlich zu den Superial-Zahlen gehören.'."\n",
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
                       
