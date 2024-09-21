@@ -425,12 +425,12 @@
                     'Damit ist bestätigt, dass die Wurzel aus Zwei, also \lm{ 1,\!41421356237309\cdots }, wirklich auf dem aktual unendlichen Zweiteilungsraster liegt.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Dies gilt für alle Wurzeln aus Zwei und deren Potenzen \lm{ *( \sqrt[k]{2} *)^{m} }} \\\\'."\n".
+                  '\condb{Dies gilt für alle Wurzeln aus Zwei und deren Potenzen \lm{ *| \sqrt[k]{2} |*^{m} }} \\\\'."\n".
                     'Der Beweis zeigt, dies gilt für alle Wurzeln aus Zwei, die wir nachfolgend als Potenzen von Zwei schreiben:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall m \in \mathbb{Z} *) *( \forall k \in \mathbb{N}^{+} *) \\\  *[  *( \sqrt[k]{2} *)^{m}  =  2^{\frac{ m }{ k }}  =  \frac{ 2^{ω} \cdot 2^{\frac{ m }{ k }} }{ 2^{ω} }  =  \frac{ 2^{ω + \frac{ m }{ k }} }{ 2^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in \mathbb{Z} *) *( \forall k \in \mathbb{N}^{+} *) \\\  *[  *| \sqrt[k]{2} |*^{m}  =  2^{\frac{ m }{ k }}  =  \frac{ 2^{ω} \cdot 2^{\frac{ m }{ k }} }{ 2^{ω} }  =  \frac{ 2^{ω + \frac{ m }{ k }} }{ 2^{ω} }  *]  }'),
                       array( display => 'on',  latex => '{  q  :=  \frac{ m }{ k }  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *)  *[  2^{q}  =  \frac{ 2^{ω} \cdot 2^{q} }{ 2^{ω} }  =  \frac{ 2^{ω + q} }{ 2^{ω} }  *]  }'),
                     ))),
@@ -438,12 +438,12 @@
                     'Der Abstand des Rasters bleibt hier der gleiche, wie zuvor, und so auch der Faktor \lm{ 2^{ω} }, um \lm{ 2^{q} } zu einer ganzen Zahl zu machen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln}{}Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *( \sqrt[k]{c} *)^{m} }} \\\\'."\n".
+                  '\condb{\anchor{OM:SupNum:Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln}{}Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *| \sqrt[k]{c} |*^{m} }} \\\\'."\n".
                     'Der Beweis zeigt dies sogar für jede Wurzel aus jeder natürlichen Zahl \lm{ c } und deren Potenzen wie folgt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall m \in \mathbb{Z} *) *( \forall c, k \in \mathbb{N}^{+} *) \\\  *[  *( \sqrt[k]{c} *)^{m}  =  c^{\frac{ m }{ k }}  =  \frac{ c^{ω} \cdot c^{\frac{ m }{ k }} }{ c^{ω} }  =  \frac{ c^{ω + \frac{ m }{ k }} }{ c^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall m \in \mathbb{Z} *) *( \forall c, k \in \mathbb{N}^{+} *) \\\  *[  *| \sqrt[k]{c} |*^{m}  =  c^{\frac{ m }{ k }}  =  \frac{ c^{ω} \cdot c^{\frac{ m }{ k }} }{ c^{ω} }  =  \frac{ c^{ω + \frac{ m }{ k }} }{ c^{ω} }  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *) *( \forall c \in \mathbb{N}^{+} *)  *[  c^{q}  =  \frac{ c^{ω} \cdot c^{q} }{ c^{ω} }  =  \frac{ c^{ω + q} }{ c^{ω} }  *]  }'),
                     ))),
                   array( 'text', array( text => array(
