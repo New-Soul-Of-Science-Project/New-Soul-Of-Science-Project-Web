@@ -779,14 +779,14 @@
                     'Nun möchte ich herausarbeiten, dass die gerade gefundene Lösung der Darstellung \lm{ x }-ter Wurzeln aus \lm{ n }'."\n".
                     'durch die gefundenen \italic{überrationalen Brüche} genau zur Struktur der Superial-Zahlen passt.'."\n".
                     'Wir werden gleich erkennen, dass die zunächst auf rationale Koeffizienten zugeschnitten erscheinenden Superial-Zahlen'."\n".
-                    'genauso gut auch zu den überrationalen Koeffizienten – also zu algebraischen irrationalen Koeffizienten – passen.'."\n",
+                    'genauso gut auch zu den überrationalen Koeffizienten passen.'."\n",
                       'So erweitern sich nachfolgend die Koeffizienten der Superial-Zahlen von rationalen Brüchen auch auf'."\n".
                     'überrationale.'."\n",
                       'Wie oben festgestellt, sind wir in der Wahl der aktual unendlichen großen ganzen Potenz \lm{ g } von \lm{ n } frei,'."\n".
                     'um die überrationalen Brüche der \lm{ x }-ten Wurzeln aus \lm{ n } darzustellen,'."\n".
                     'solange \lm{ g } größer bleibt, als jede endliche natürliche Zahl – also solange \lm{ g } nicht endlich wird.'."\n".
                     'So können wir für \lm{ g } auch die vollständige Induktion \lm{ ω } einsetzen'."\n".
-                    'und damit den Exponenten des Primzahl-Flächenprodukts unserer superialen Basis \lm{ \s } verwenden:'."\n".
+                    'und damit den Exponenten des Primzahl-Flächenprodukts unserer superialen Basis \lm{ \s } verwenden.'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -800,6 +800,65 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{ω + \frac{ 1 }{ x }} }{ n^{ω} }  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-xte-Wurzel-n-als-reine-Potenz}', label_incr => true),
                     ))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall m \in \mathbb{Z} *) *( \forall n, k \in \mathbb{N}^{+} *) \\\  *[  *| \sqrt[k]{n} |*^{m}  =  n^{\frac{ m }{ k }}  =  \frac{ n^{\frac{ m }{ k }} \cdot n^{ω} }{ n^{ω} }  =  \frac{ n^{ω + \frac{ m }{ k }} }{ n^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  q  :=  \frac{ m }{ k }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{Q} *) *( \forall n \in \mathbb{N}^{+} *)  *[  n^{q}  =  \frac{ n^{q} \cdot n^{ω} }{ n^{ω} }  =  \frac{ n^{ω + q} }{ n^{ω} }  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Nun ist es so, dass die natürliche Zahl \lm{ n } eine Primfaktorzerlegung haben kann, in der einzelne Primzahlen'."\n".
+                      'in höheren Potenzen als Eins vorkommen können:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \exists c_{i} \in \mathbb{N} *) *( \forall p_{i} \in \mathbb{P} *) *( \forall n \in \mathbb{N}^{+} *) *( n \ge 2 *)  \\\ *[  n  =  p_{1}^{c_{1}} \cdot p_{2}^{c_{2}} \cdot p_{3}^{c_{3}} \cdot p_{4}^{c_{4}} \cdot \cdots  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{q}  =  \frac{ *( p_{1}^{c_{1}} \cdot p_{2}^{c_{2}} \cdot p_{3}^{c_{3}} \cdot \cdots *)^{q} \cdot *( p_{1}^{c_{1}} \cdot p_{2}^{c_{2}} \cdot p_{3}^{c_{3}} \cdot \cdots *)^{ω} }{ *( p_{1}^{c_{1}} \cdot p_{2}^{c_{2}} \cdot p_{3}^{c_{3}} \cdot p_{4}^{c_{4}} \cdot \cdots *)^{ω} }  }'),
+                      // array( display => 'on',  latex => '{  \Leftrightarrow  n^{q}  =  \frac{ p_{1}^{c_{1} *( ω + q *)} \cdot p_{2}^{c_{2} *( ω + q *)} \cdot p_{3}^{c_{3} *( ω + q *)} \cdot p_{4}^{c_{4} *( ω + q *)} \cdot \cdots }{ p_{1}^{c_{1} ω} \cdot p_{2}^{c_{2} ω} \cdot p_{3}^{c_{3} ω} \cdot p_{4}^{c_{4} ω} \cdot \cdots }  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Brechen wir dies auf die einzelnen Primzahlen herunter, dann sieht das Bild folgendermaßen aus'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( p_{i}^{c_{i}} *)^{q}  =  \frac{ *( p_{i}^{c_{i}} *)^{q} \cdot *( p_{i}^{c_{i}} *)^{ω} }{ *( p_{i}^{c_{i}} *)^{ω} }  }'),
+                      array( display => 'on',  latex => '{  *( p_{i}^{c_{i}} *)^{q} \cdot *( p_{i}^{c_{i}} *)^{ω}  \in  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'und es stellt sich die Frage, ob für jede separate Primzahlpotenz \lm{ p_{i}^{c_{i}} } in \lm{ n } nicht als Faktor auch die'."\n".
+                      'einfache vollständige Induktion in der Potenz \lm{ p_{i}^{ω} } ausreicht, um die Wurzel \lm{ *( p_{i}^{c_{i}} *)^{q} }'."\n".
+                      'zu einer ganzen Zahl zu machen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( p_{i}^{c_{i}} *)^{q}  ?=  \frac{ *( p_{i}^{c_{i}} *)^{q} \cdot p_{i}^{ω} }{ p_{i}^{ω} }  }'),
+                      array( display => 'on',  latex => '{  *( p_{i}^{c_{i}} *)^{q} \cdot p_{i}^{ω}  ?\in  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Das der Faktor \lm{ p_{i}^{ω} } reichen muss, um aus \lm{ *( p_{i}^{c_{i}} *)^{q} } eine aktual unendliche ganze Zahl zu machen,'."\n".
+                      'können wir schon daran erkennen, dass wir im überrationalen Bruch soweit kürzen dürfen, solange \lm{ *( p_{i}^{c_{i}} *)^{ω} }'."\n".
+                      'wie der Term aktual unendlich groß bleibt.'."\n".
+                      'Aslo dürfen wir auch \lm{ c_{i} } Mal kürzen, was aus \lm{ *( p_{i}^{c_{i}} *)^{ω} } dann \lm{ p_{i}^{ω} } macht.'."\n".
+                      'Gleiches erreichen wir aber auch durch Umformung'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      // array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall q \in \mathbb{Q} *)  *[  p^{ω} \cdot p^{q}  \in  \mathbb{N}_{\infty}  *]  }'),
+                      // array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall k \in \mathbb{N}^{+} *) *( \forall q \in \mathbb{Q} *)  *[  p^{ω} \cdot *( p^{k} *)^{q}  ?\in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  p_{i}^{c_{i} \cdot q} \cdot p_{i}^{ω}  ?\in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  c_{i} \cdot q  \in  \mathbb{Q}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  p_{i}^{c_{i} \cdot q} \cdot p_{i}^{ω}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( p_{i}^{c_{i}} *)^{q} \cdot p_{i}^{ω}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( p_{i}^{c_{i}} *)^{q}  =  \frac{ *( p_{i}^{c_{i}} *)^{q} \cdot p_{i}^{ω} }{ p_{i}^{ω} }  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'und zeigen damit, dass dieser überrationale Bruch auf die einfache vollständige Induktion reduziert werden kann,'."\n".
+                      'ohne seinen Wahrheitsgehalt zu verlieren.'."\n",
+                        'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      'XXX'."\n".
+                      ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Wegen der Primfaktorzerlegung von \lm{ n } in Formel \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-Primfaktoren-k_i}'."\n".
                       'gilt dann auch:'."\n".
@@ -934,8 +993,8 @@
                     'Die \lm{ x }-ten Wurzeln aus \lm{ n } sind als Koeffizienten in den Superial-Zahlen also'."\n".
                     'grundsätzlich zugelassen.'."\n".
                     ''))),
-                  array( 'text', array( text => array(
-                  '\condb{Die Kehrwerte der Wurzeln} \\\\'."\n".
+                  /*%! array( 'text', array( text => array(
+                  '\condb{XXX Die Kehrwerte der Wurzeln} \\\\'."\n".
                     'Was uns nun noch fehlt, sind die Kehrwerte der Wurzeln, oder anders ausgedrückt,'."\n".
                     'die negativen Wurzeln.'."\n".
                     'Dazu gucken wir uns diese jetzt näher an.'."\n".
@@ -1043,9 +1102,9 @@
                   array( 'text', array( text => array(
                     'Über erlaubte Operationen, die die Ganzzahligkeit unseres Ansatzes erhalten, erreichen wir also'."\n".
                     'die gesuchte Aussage, dass auch die Kehrwerte der \lm{ x }-ten Wurzeln aus \lm{ n } natürliche Superial-Zahlen sind.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{}Ganzzahlige Potenzen der Wurzeln} \\\\'."\n".
+                    ''))), */
+                  /*%! array( 'text', array( text => array(
+                  '\condb{\anchor{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{}XXX Ganzzahlige Potenzen der Wurzeln} \\\\'."\n".
                     'Können wir auch für die ganzzahligen Potenzen der Wurzeln und ihrer Kehrwerte bestätigen,'."\n".
                     'dass ihre Produkte mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen sind.'."\n".
                     ''))),
@@ -1090,9 +1149,9 @@
                     'Wir brauchen uns also um die ganzzahligen Potenzen der Wurzeln oder ihrer Kehrwerte nicht zu sorgen'."\n".
                     'und weiter zu kümmern.'."\n".
                     'Sie sind völlig neutral.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\condb{Die Produkte der Wurzeln} \\\\'."\n".
+                    ''))), */
+                  /*%! array( 'text', array( text => array(
+                  '\condb{XXX Die Produkte der Wurzeln} \\\\'."\n".
                     'Wie sieht es nun mit den Produkten von Wurzeln oder deren Kehrwerten aus?'."\n".
                     ''))),
 
@@ -1120,7 +1179,7 @@
                       array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y \cdot z }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'und weil wir im \jump{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{vorherigen Abschnitt}'."\n".
+                      'und weil wir im \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Ganzzahlige-Potenzen-der-Wurzeln}{vorherigen Abschnitt}'."\n".
                       'geklärt haben, dass ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte im Produkt'."\n".
                       'mit der superialen Basis natürliche Superial-Zahlen sind'."\n".
                       ''))),
@@ -1143,9 +1202,9 @@
                   array( 'text', array( text => array(
                     'Wir brauchen uns also um die Produkte der Wurzeln oder ihrer Kehrwerte auch nicht zu sorgen.'."\n".
                     'Sie sind auch im Produkt mit der superialen Basis natürliche Superial-Zahlen.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\condb{Summen von Wurzeln und endlich ganzzahligen Summanden} \\\\'."\n".
+                    ''))), */
+                  /*%! array( 'text', array( text => array(
+                  '\condb{XXX Summen von Wurzeln und endlich ganzzahligen Summanden} \\\\'."\n".
                     'Wir müssen nun noch untersuchen, ob auch Summen von irrationalen Wurzeln oder ihren Kehrwerten'."\n".
                     'mit endlichen ganzen Zahlen, die auch zu den irrationalen algebraischen Koeffizienten gehören,'."\n".
                     'als Produkt mit unserer superialen Basis \lm{ \s } ganze beziehungsweise natürliche Superial-Zahlen sind.'."\n".
@@ -1239,9 +1298,9 @@
 
                   array( 'text', array( text => array(
                     'Wir fahren fort, weitere Varianten der Realanteile algebraischer Zahlen auf die Ganzzahligkeit unter Faktorisierung mit \lm{ \s } zu überprüfen.'."\n".
-                    ''))),
+                    ''))), */
                   array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Ueberrationalitaetsvermutung:Summen-von-Wurzeln}{}Summen von Wurzeln} \\\\'."\n".
+                  '\condb{\anchor{OM:SupNum:Ueberrationalitaetsvermutung:Summen-von-Wurzeln}{}XXX Summen von Wurzeln} \\\\'."\n".
                     'Ganz ähnlich verhält es sich mit Summen von zwei oder mehr Wurzeln.'."\n".
                     ''))),
                       
@@ -1301,7 +1360,7 @@
                     'Da die Ausdrücke der Polynome jedes Summanden damit algebraische Radikale oder gegebenenfalls wieder endliche oder unendliche Summen'."\n".
                     'algebraischer Radikale sind, die gegen einen endlichen Wert konvergieren, bleiben es doch Summen algebraischer Radikale.'."\n",
                       'Summen algebraischer Radikale, ob endliche oder unendliche, die zu endlichen Werten konvergieren,'."\n".
-                    'verhalten sich wie im vorstehenden Abschnitt \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Summen-von-Wurzeln}}'."\n".
+                    'verhalten sich wie im vorstehenden Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Summen-von-Wurzeln}}'."\n".
                     'beschrieben und sind damit im Produkt mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen'."\n".
                     'die summiert wieder ebensolche ergeben.'."\n",
                       'Wie allgemein dies gilt, können wir an einem Beispiel beobachten.'."\n".
