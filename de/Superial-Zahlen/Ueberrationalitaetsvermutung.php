@@ -1597,7 +1597,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  4^{k + \frac{ 1 }{ 2 }}  \in  \mathbb{N}  }'),
                       array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  1,41421356237309…  }'),
                       array( display => 'on',  latex => '{  *( \forall k \in \mathbb{N} *)  *[  2^{k + \frac{ 1 }{ 2 }}  =  2^{k} \cdot 1,41421356237309…  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  2^{k + \frac{ 1 }{ 2 }} \notin \mathbb{N}  \land  2^{k + \frac{ 1 }{ 2 }} \in \mathbb{A}_{\R}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  2^{k + \frac{ 1 }{ 2 }} \notin \mathbb{N}  \land  2^{k + \frac{ 1 }{ 2 }} \in \mathbb{A}_{\S}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Im Fall von \lm{ 2^{k} \cdot 1,41421356237309… } kann der Faktor \lm{ 2^{k} } niemals dafür sorgen, dass das'."\n".
@@ -1652,7 +1652,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV.DB', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *( \forall a \in \;]0, 1[_{\mathbb{A}_{\S}} *) *( k \in \mathbb{N}_{\infty} *)  \\\ *[  *( n + a *) \cdot k  =  n \cdot k + a \cdot k  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *( \forall a \in \;]0, 1[_{\mathbb{A}_{\S}} *) *( k \in \mathbb{N}_{\infty} *)  \\\ \qquad\quad\;\, *[  *( n + a *) \cdot k  =  n \cdot k + a \cdot k  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Da \lm{ n \cdot k } eh eine ganze Zahl sein muss, kommt es ja nur darauf an, dass \lm{ a \cdot k } auch eine ganze Zahl wird,'."\n".
@@ -1662,7 +1662,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV.DB', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall b \in \mathbb{A}_{\S} *) *( k \in \mathbb{N}_{\infty} *)  \\\ *[  b \cdot k  =  \lfloor b \rfloor \cdot k + *( b - \lfloor b \rfloor *) \cdot k  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall b \in \mathbb{A}_{\S} *) *( k \in \mathbb{N}_{\infty} *)  \\\ \qquad\quad\;\;\, *[  b \cdot k  =  \lfloor b \rfloor \cdot k + *( b - \lfloor b \rfloor *) \cdot k  *]  }'),
                       array( display => 'on',  latex => '{  n  =  \lfloor b \rfloor  }'),
                       array( display => 'on',  latex => '{  a  =  b - \lfloor b \rfloor  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  b  =  n + a  }'),
