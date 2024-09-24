@@ -110,6 +110,7 @@
                    
         'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen' => array( headline_text => 'Die sinnvollen Koeffizienten der Superial-Zahlen'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Durch-Radikale-darstellbare-algebraischen-Zahlen-sinnvolle-Koeffizienten-SZ' => array( headline_text => 'Durch Radikale darstellbare algebraischen Zahlen sind sinnvolle Koeffizienten der Superial-Zahlen'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Kehrwerte-der-Wurzeln' => array( headline_text => 'Die Kehrwerte der Wurzeln'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Ganzzahlige-Potenzen-der-Wurzeln' => array( headline_text => 'Ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Summen-von-Wurzeln' => array( headline_text => 'Summen und Differenzen von Wurzeln'/* , headline_text_short => 'X' */),
                    
@@ -314,7 +315,7 @@
       text_titel_h1 => 'Überrationalitätsvermutung \color{*TitleAdd}{\small{(Beweis)}}',
       text_titel_short => 'Überrationalitätsvermutung',
       text_undertitel_h2 => 'Lässt sich die \lm{ x }-te Wurzel aus \lm{ n }, wenn sie irrational ist, immer als Bruch mit aktual unendlich großem ganzen Nenner und Zähler ausdrücken?',
-      text_titel_discr_h3 => 'Der folgende Beweis zeigt, die Antwort ist ja. Und zwar genau dann, wenn Nenner und Zähler aktual unendlich große ganze Zahlen sind, die wir beliebig endlich oft durch \lm{ n } teilen können, wie \lm{ n^{ω} }. Damit sind die Koeffizienten der algebraischen Zahlen, die durch Radikale darstellbar sind, auch Koeffizienten der Superial-Zahlen',
+      text_titel_discr_h3 => 'Der folgende Beweis zeigt, die Antwort ist ja. Und zwar genau dann, wenn Nenner und Zähler aktual unendlich große ganze Zahlen sind, die wir beliebig endlich oft durch \lm{ n } teilen können, wie \lm{ n^{ω} }',
       jump_ary => array(
         'OM:SupNum:Ueberrationalitaetsvermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
@@ -337,7 +338,7 @@
                         
         'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises' => array( headline_text => 'Diskussion des Beweises'/* , headline_text_short => 'X'*/),
                         
-        'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung' => array( headline_text => 'Untersuchung'/* , headline_text_short => 'X'*/),
+        //%! 'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung' => array( headline_text => 'Untersuchung'/* , headline_text_short => 'X'*/),
       ),
     ),
   );

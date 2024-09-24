@@ -14,15 +14,8 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '\bold{Fragen}',
-                    '• Handelt es sich hier wirklich um die Realanteile algebraischer Zahlen?',
-                    '– Ich habe gelesen, dass nicht alle algebraischen Zahlen mit Wurzeln darstellbar sind: \quote{Im Rahmen der Galoistheorie werden diese Zwischenkörper untersucht, um so tiefe Einblicke über die Lösbarkeit oder Nichtlösbarkeit von Gleichungen zu erhalten. Ein Resultat der Galoistheorie ist, dass zwar jede komplexe Zahl, die man aus rationalen Zahlen durch Verwendung der Grundrechenarten (Addition, Subtraktion, Multiplikation und Division) sowie durch Ziehen n-ter Wurzeln (n eine natürliche Zahl) erhalten kann (man nennt solche Zahlen „durch Radikale darstellbar“), algebraisch ist, umgekehrt aber algebraische Zahlen existieren, die man nicht in dieser Weise darstellen kann; alle diese Zahlen sind Nullstellen von Polynomen mindestens 5. Grades.}\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}} Möglicherweise handelt es sich „nur“ um (Polynom-)Radikale: Vgl. \url{https://de.wikipedia.org/w/index.php?title=Radikal_(Mathematik)&oldid=213475890#Auflösung_eines_Polynoms_durch_Radikale}.',
-                    '– Dann stünde ansonsten der Beweis aus, dass alle Realanteile der algebraischen Zahlen Faktoren von \lm{ \s } sind, die ganze Zahlen ergeben. Dazu würden dann unter anderem auch elliptische Integrale zur Lösung Polynome 5. Grades gehören: Vgl. \url{https://www.spektrum.de/lexikon/mathematik/elliptisches-integral/4494} und \url{https://www.spektrum.de/wissen/charles-hermite-1822-1901/1171317}.',
-                    '• Wenn nun alle Koeffizienten der algebraischen Zahlen Faktoren von \lm{ \s } sind, die ganze Zahlen ergeben:',
-                    '– Werden diese dann beim Zählen der ganzen Superial-Zahlen mitgezählt oder nur die rationalen Koeffizienten? Ich denke, sie werden mitgezählt.',
-                    '– Anders gefragt: gibt es dann immer noch \lm{ \frac{ \s }{ 2 \cdot ω } } rationale Zahlen im Intervall zwischen Null und ausschließlich Eins, oder müssen wir das korrigieren?',
-                    '\bold{Vereinfachungen}',
-                    '• Das Produkt aller unterschiedlichen Primfaktoren einer natürlichen Zahl \lm{ n } bekommen wir über die (Zahlen-)Radikal-Funktion \lm{ rad(n) }: Vgl. \url{https://de.wikipedia.org/w/index.php?title=Radikal_(Mathematik)&oldid=213475890#In_der_Zahlentheorie}.',
+                    // '\bold{X}',
+                    // '• X',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -32,9 +25,11 @@
                     'im Produkt mit der superialen Basis \lm{ \s } eine aktual unendliche ganze Zahl ergibt.'."\n".
                     'Hiernach steht also die Frage im Raum, für welche endlichen Zahlen dies gilt.'."\n".
                     'Im Detail beschäftigen wir uns damit im Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}}.'."\n",
-                      'Auf dieser Seite soll es nun um den Beweis gehen, dass die Koeffizienten der algebraischen Zahlen, die durch Radikale darstellbar sind,'."\n".
+                      /*%! 'Auf dieser Seite soll es nun um den Beweis gehen, dass die Koeffizienten der algebraischen Zahlen, die durch Radikale darstellbar sind,'."\n".
                     'auch Koeffizienten der Superial-Zahlen sind.'."\n".
-                    'Sie müssen also alle im Produkt mit der superialen Basis \lm{ \s } aktual unendliche ganze Zahl sein.'."\n",
+                    'Sie müssen also alle im Produkt mit der superialen Basis \lm{ \s } aktual unendliche ganze Zahl sein.'."\n", */
+                      'Nachfolgend geht es nun aber ausschließlich darum zu zeigen, dass irrationale Wurzeln tatsächlich durch'."\n".
+                    'Brüche aktual unendlicher ganzer Zahlen darstellbar sind.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
                       
@@ -1360,7 +1355,7 @@
                       '\color{*Bearb}{(In Arbeit …)} Damit haben wir für alle irrationalen algebraischen Koeffizienten durch Beweis überprüft,'."\n".
                     'dass ihre Produkte mit der superialen Basis \lm{ \s } zu den natürlichen Superial-Zahlen gehören.'."\n".
                     ''))), */
-                  array( 'text', array( text => array(
+                  /*%! array( 'text', array( text => array(
                   '\condb{Wurzeln aus Polynomen} \\\\'."\n".
                   '\cond{Elliptische Integrale und ähnliche algebraische Werte} \\\\'."\n".
                     'Die algebraischen Zahlen sind ja dadurch definiert, das sie die Menge aller Lösungen der Nullstellen von Polynomen sind.'."\n".
@@ -1500,7 +1495,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Etwas wirklich besonderes.'."\n",
-                    ''))),
+                    ''))), */
            
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises'),
@@ -1521,10 +1516,10 @@
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '\bold{Fragen}',
-                    '• Können die irrationalen Wurzeln dann trotzdem Brüche unendlich vieler Primzahlen endlicher Potenzen in Zähler und Nenner sein?',
-                    '• Oder ist dies nach dem Beweis der Überrationalitätsvermutung ausgeschlossen?',
-                    '– Siehe Nebenrechnungen.',
+                    // '\bold{Fragen}',
+                    // '• Können die irrationalen Wurzeln dann trotzdem Brüche unendlich vieler Primzahlen endlicher Potenzen in Zähler und Nenner sein?',
+                    // '• Oder ist dies nach dem Beweis der Überrationalitätsvermutung ausgeschlossen?',
+                    // '– Siehe Nebenrechnungen.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -1559,8 +1554,8 @@
                     'Der Beweis der Überrationalitätsvermutung zeigt uns aus Perspektive ganzzahliger Brüche,'."\n".
                     'dass es sich bei den irrationalen endlichen Wurzeln tatsächlich um Brüche reiner Potenzen des Radikanden \lm{ n } der Wurzel handelt,'."\n".
                     'was nur sichtbar ist, wenn der unendliche \italic{überrationale Bruch} nicht gekürzt wird.'."\n",
-                      'Dies gilt eben auch für die Kehrwerte der Wurzeln, nur das dort die endlichen rationalen Differenzen'."\n".
-                    'ein negatives Vorzeichen tragen:'."\n".
+                      'Dies gilt eben auch für die \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Kehrwerte-der-Wurzeln}{Kehrwerte der Wurzeln},'."\n".
+                    'nur das dort die endlichen rationalen Differenzen ein negatives Vorzeichen tragen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV.DB', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1677,7 +1672,29 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
+                      
+                  array( 'jumplist', array(
+                      //%! array(  jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung'),
+                      array(  jump_name => 'OM:SupNum:Home'),
+                    )),
+              )
+          ); ?>
+          
 
+          <!  • Untersuchung  >
+          <?php /*%! To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung',
+              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X',
                 Title => '\small{Alter Entwurf der Überrationalitätsvermutung …}',
                 TitleVis => 'Alter Entwurf der Überrationalitätsvermutung:', ParagraphList => array(
@@ -1761,28 +1778,7 @@
                     ''))),
 
                     ))),
-                      
-                  array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung'),
-                    )),
-              )
-          ); ?>
-          
 
-          <!  • Untersuchung  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung',
-              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
-                array(
-                  array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises', type => 'back'),
-                    )),
-                      
-                  array( 'notice', array( Display => 'showContent', text => array(
-                    // '\bold{X}',
-                    // '• X',
-                    ))),
-                      
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
                       
                 'Wikipedia: \jump[https://de.wikipedia.org/w/index.php?title=Quadratwurzel_aus_2&oldid=229698584]{}{Quadratwurzel aus 2, Geschichte}', subline =>
@@ -1866,7 +1862,7 @@
                       array(  jump_name => 'OM:SupNum:Home'),
                     )),
               )
-          ); ?>
+          ); */ ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>
