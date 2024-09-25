@@ -14,50 +14,29 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '\\bold{XXX}',
-                    '• XXX',
+                    // '\\bold{X}',
+                    // '• X',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Buchprojekt:Vortext:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Buchprojekt:Vortext:X', text =>
                       
                 'Unsere Gefühle entscheiden', subline =>
                   'Die Physik der Achtsamkeit \\small{(Idee zum Untertitel von Oliver Schmidt)}')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Buchprojekt:Vortext:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:nSOSp:Buchprojekt:Vortext:X', text =>
                       
                 'Was könnte enthalten sein?', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Wir gehen oft von nicht ganz korrekten oder auch falschen Voraussetzungen aus.'."\n".
-                    'Das Verständnis des Achtsamkeitsprozesses ermöglich uns ein tieferes Verständnis unseres Lebens:'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Das Verständnis des Achtsamkeitsprozesses ermöglich uns ein tieferes Verständnis unseres Lebens:'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Jede Entscheidung basiert auf unserem Gefühl.',
                         'Und zwar beruht jede Entscheidung auf mehr als einem Gefühl, nämlich für jede Möglichkeit ein Gefühl.',
@@ -66,58 +45,31 @@
                         'Unsere Selbstwahrnehmung ist dafür entscheidend.',
                         'Unsere Wahrnehmungsfilter müssen wir immer wieder neu und für uns sinnvoll und nützlich justieren, gegebenenfalls auch durch Übung.',
                         'Wie wir uns fühlen ist davon abhängig, wie wir auf uns und die Welt gucken.',
-                        'XXX',
-                        'XXX',
-                        'XXX',
-                        'XXX',
+                        '\color{*Bearb}{(In Arbeit …)}',
                     ))),
                   array( 'text', array( text => array(
-                    'Über den Zusammenhang des Achtsamkeitsprozesses mit unserer Psychosomatik gewinnen wir wichtige Einsichten über viele Krankheiten:'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Über den Zusammenhang des Achtsamkeitsprozesses mit unserer Psychosomatik gewinnen wir wichtige Einsichten über viele Krankheiten:'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Verspannungen sind ein Spiegelbild unserer Psyche.',
                         'Sorgen und Ängste führen zu Verspannungen.',
                         'Das Nicht-Treffen von Entscheidungen, obwohl intrinsischer Entscheidungsdruck besteht, führt zu Verspannungen.',
-                        'XXX',
-                        'XXX',
-                        'XXX',
-                        'XXX',
+                        '\color{*Bearb}{(In Arbeit …)}',
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:nSOSp:Buchprojekt:Vortext:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  /* array( 'headline', array( jump_name => 'OM:nSOSp:Buchprojekt:Vortext:X', text =>
                       
-                'XXX', subline =>
+                'X', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))), */
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:nSOSp:XXX'),
+                      // array(  jump_name => 'OM:nSOSp:X'),
                     )),
                 )
           ); ?>
@@ -126,48 +78,31 @@
           
 
 		    	<!  • X  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:nSOSp:Buchprojekt:X',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:nSOSp:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:nSOSp:X', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '• XXX',
+                    '• \color{*Bearb}{(In Arbeit …)}',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:nSOSp:XXX:Vortext:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:nSOSp:X:Vortext:X', text =>
                       
-                'XXX', subline =>
+                'X', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:nSOSp:XXX'),
+                      // array(  jump_name => 'OM:nSOSp:X'),
                     )),
               )
           ); */ ?>
