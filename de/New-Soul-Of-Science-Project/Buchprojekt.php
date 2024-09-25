@@ -14,7 +14,7 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{X}',
+                    // '\bold{X}',
                     // '• X',
                     ))),
                       
@@ -24,7 +24,7 @@
                   array( 'headline', array( jump_name => 'OM:nSOSp:Buchprojekt:Vortext:X', text =>
                       
                 'Unsere Gefühle entscheiden', subline =>
-                  'Die Physik der Achtsamkeit \\small{(Idee zum Untertitel von Oliver Schmidt)}')),
+                  'Die Physik der Achtsamkeit \small{(Idee zum Untertitel von Oliver Schmidt)}')),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
