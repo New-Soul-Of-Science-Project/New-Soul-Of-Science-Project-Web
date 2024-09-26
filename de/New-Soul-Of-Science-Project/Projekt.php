@@ -14,8 +14,8 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{XXX:}',
-                    // '• XXX',
+                    // '\\bold{X}',
+                    // '• X',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -49,7 +49,7 @@
                     '\\\\'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
-                      array( title => 'Video Tour \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => '', //jumpname => 'XXX',
+                      array( title => 'Video Tour \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => '', //jumpname => 'X',
                                 description => 'die YouTube-Vorträge'),
                       array( title => 'Vorwort \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => '(in Vorbereitung)'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
@@ -88,10 +88,10 @@
             <br>
           
             <table border="0"> <colgroup> <col width="22"> <col width="300"> <col width="16"> <col width="362"> </colgroup>
-              <tr> <td valign="top">&rarr;</td> <td valign="top"><!a href="../de/XXX">
-              XXX<!/a> <span style="color: #A0A0A0">(geplant)</span></td> <td valign="top" style="color: #A0A0A0">
+              <tr> <td valign="top">&rarr;</td> <td valign="top"><!a href="../de/X">
+              X<!/a> <span style="color: #A0A0A0">(geplant)</span></td> <td valign="top" style="color: #A0A0A0">
                   &hellip;</td> <td valign="top" style="color: #A0A0A0">
-                  XXX</td> </tr>
+                  X</td> </tr>
             </table>
           <?php To_f_headline_add_hides_end( '          ', 'hideContent'); ?>
 
