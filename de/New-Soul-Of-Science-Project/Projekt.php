@@ -14,7 +14,7 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{X}',
+                    // '\bold{X}',
                     // '• X',
                     ))),
                       
@@ -49,25 +49,25 @@
                     '\\\\'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
-                      array( title => 'Video Tour \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => '', //jumpname => 'X',
+                      array( title => 'Video Tour \color{*ContentItemDisabled}{(Seite geplant)}', startsign => '', //jumpname => 'X',
                                 description => 'die YouTube-Vorträge'),
-                      array( title => 'Vorwort \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
+                      array( title => 'Vorwort \color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => '(in Vorbereitung)'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
                     ))),
                       
                   array( 'normal',
-                    '<h3 class="tools-class-contentlist-header">Entwicklung \\\\ \\small{Einführung}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Entwicklung \\\\ \small{Einführung}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       // nSOSp_f_tableOfContents_elementAry( 'OM:nSOSp:Einleitung'),
                       // #: Aufklärung 2.0 — Anregung dazu: Buch ›Virus-Wahn‹ S. 10.
-                      array( title => 'Aufklärung für Fortgeschrittene \\color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
+                      array( title => 'Aufklärung für Fortgeschrittene \color{*ContentItemDisabled}{(Seite geplant)}', startsign => ''/*'\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => '… durch Bewusstmachung unserer Täuschungen, die oft auch Selbsttäuschungen sind '/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
                       nSOSp_f_tableOfContents_elementAry( 'OM:nSOSp:Buchprojekt'),
                     ))),
                       
                   array( 'normal',
-                    '<h3 class="tools-class-contentlist-header">Lesestoff und Verweise \\\\ \\small{Informationen}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Lesestoff und Verweise \\\\ \small{Informationen}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:nSOSp:Literatur'),
