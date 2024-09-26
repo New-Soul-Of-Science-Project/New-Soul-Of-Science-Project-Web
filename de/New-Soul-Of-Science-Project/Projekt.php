@@ -14,35 +14,25 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '(\\bold{XXX:})',
-                    '(• XXX)',
+                    // '\\bold{XXX:}',
+                    // '• XXX',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Im ›New Soul Of Science Projekt‹ wird Wissen auf Basis neuer Perspektiven geschöpft und entwickelt.'."\n".
+                    'Es umfasst verschiedene Themen zur Naturphilosophie und Mathematik, die nach und nach in aller Tiefe ausgearbeitet werden.'."\n",
+                      'Die Ergebnisse sind zunächst auf dieser Internetseite als Work-In-Progress veröffentlicht,'."\n".
+                    'befinden sich also in der Entwicklung, wo immer wieder auch unfertige Stände sichtbar sind.'."\n".
+                    'Dazu habe ich mich entschieden, weil es mir bei der Anzahl an Themen und dem Umfang jedes Themas praktischerweise'."\n".
+                    'unmöglich ist, in angemessener Zeit ein Thema vollständig fertig zu stellen.'."\n".
+                    'Es handelt sich also quasi um ein Lebenswerk.'."\n",
+                      'Zusätzlich zur Internetseite ist angedacht, das gefundene Wissen sowohl in Videos als auch in'."\n".
+                    'Buchform zu veröffentlichen.'."\n".
+                    'Wer Lust hat, hieran mitzuwirken, nehme gerne \jump{OM:FrQFT:Impressum:Inhaberdaten}{Kontakt} mit mir auf.'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:XXX'),
+                      array(  jump_name => 'OM:nSOSp:Projekt:Inhalt'),
                     )),
                 )
           ); ?>
