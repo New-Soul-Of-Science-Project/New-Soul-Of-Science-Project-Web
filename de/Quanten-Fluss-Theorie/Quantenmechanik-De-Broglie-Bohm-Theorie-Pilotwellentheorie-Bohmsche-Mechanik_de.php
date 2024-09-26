@@ -47,14 +47,14 @@
                     'geht.\footnote{\cite{Singh:GeheimeBotschaften:2020}, 8 Ein Quantensprung in die Zukunft, S. 383-421.}'."\n".
                     'Um die Erklärung der Quantenkryptographie vorzubereiten geht Singh auf die Erscheinungen der Quantenwelt, deren Erklärung durch die QuantenmechanikXXX'."\n".
                     'und wiederum deren Interpretation ein.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:X', text =>
                       
                 'Das Doppelspaltexperiment mit einzelnen Photonen', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Singh nimmt dabei das DoppelspaltexperimentXXX als exemplarisch für die spektakulären Phänomene der QuantenphysikXXX, wie es oft so üblich ist.'."\n".
                     'Spektakulär deshalb, weil Singh schließlich die Ausführung des Experiments mit einer Quelle einzelner Photonen – Lichtteilchen – pro Zeit betrachtet.'."\n".
-                    'Er erklärt, dass sich auf dem XXX Schirm ergebene Muster unterscheidet sich auch in dem Fall nicht im Ergebnis, wenn einzelne Photonen nacheinander, also nicht zeitgleich,'."\n".
+                    'Er erklärt, dass sich auf dem Schirm ergebene Muster unterscheidet sich auch in dem Fall nicht im Ergebnis, wenn einzelne Photonen nacheinander, also nicht zeitgleich,'."\n".
                     'durch die beiden Spalte fliegen, vom dem Muster, wenn Myriaden gleichzeitig durch die Spalte fliegen und auf den Schirm treffen.'."\n",
                       'Bei den Myriaden gleichzeitiger Photonen wird argumentiert, sie würden  einander in Interferenz überlagern.'."\n".
                     'Genauer gesagt, durch ihre Welleneigenschaften würden sich, entsprechend der Quantenmechanik, die Wellen ihrer statistischen Aufenthaltswahrscheinlichkeiten überlagern,'."\n".
@@ -62,7 +62,7 @@
                       'Bei einzelnen Photonen sei dies nicht anders, obwohl die späteren Photonen noch nicht einmal im Glühdraht der Lampe entstanden sind, erklärt die heutige Physik.XXX'."\n".
                     'Das fand ich doch schon sehr mysteriös.'."\n".
                     'Zumal das Wahrscheinlichkeits-Interferenzmuster, nach langläufiger Ansicht der Physiker, nichts mit realen physikalischen Erscheinungen zu tun haben soll.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:X', text =>
                       
                 'Eine grundsätzlich andere Lösung des Problems', subline =>
                   'Ein Interferenzmuster im Vakuum')),
@@ -73,7 +73,7 @@
                       'In meiner Fantasie wurde es durch die Bestandteile des Vakuums selber und durch die Struktur der Doppelspaltblende erzeugt.'."\n".
                     'Dieses Muster sollte dann die Bahnen der Photonen beeinflussen.'."\n".
                     'Ich wusste nicht genau, wie das funktionieren sollte, aber war von meinem Konzept begeistert.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:X', text =>
                       
                 'Die De-Broglie-Bohm-Theorie', subline =>
                   'Ein spätes Aha-Erlebnis')),
@@ -83,66 +83,33 @@
                     'um den Mechanismus der Quantengravitation und um vieles andere mehr.'."\n",
                       'Erst gegen Ende 2018 wurde ich auf die De-Broglie-Bohm-Theorie aufmerksam, durch einen Videobeitrag von Josef M. Gaßner,'."\n".
                     'und begann zu recherchieren.\footnote{Videobeitrag: \jump[https://www.youtube.com/watch?v=THu3tWcZnC4]{}{Kollaps der Wellenfunktion: Bohmsche Mechanik, Pilot Wave, Multiversen | AzS (34) | Josef M. Gaßner}.}'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:X', text =>
                       
                 'Elementarteilchen, die ins Vakuum eingebetet sind, werden durch Wellen im Vakuum beeinflusst', subline =>
                   'Die Führungswelle beziehungsweise Pilotwelle')),
                   array( 'text', array( text => array(
                     'In der hier beschriebenen Quanten-Fluss-Theorie sind die Elementarteilchen ins Vakuum und seine Wellen eingebettet.'."\n".
-                    'Dies ist etwas anders, als in der De-Broglie-Bohm-Theorie, in der die Elementarteilchen von der Führungswelle oder Pilotwelle getrennt erscheinen.XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:XXX', text =>
+                    'Dies ist etwas anders, als in der De-Broglie-Bohm-Theorie, in der die Elementarteilchen von der Führungswelle oder Pilotwelle getrennt erscheinen.XXX'."\n",
+                      '(\color{*Bearb}{In Arbeit …})'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:X', text =>
                       
                 'Elapsonen-Fluss-Projektionen im Vakuum', subline =>
                   'Der Experimentaufbau prägt ein Muster ins Vakuum')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    '\cite{Struyve:EineKlassischeQuantenwelt:2020}'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:XXX', text =>
+                    '\cite{Struyve:EineKlassischeQuantenwelt:2020}'."\n",
+                      '(\color{*Bearb}{In Arbeit …})'."\n".
+                    ''))),
+                  /* array( 'headline', array( jump_name => 'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:X', text =>
                       
-                'XXX', subline =>
+                'X', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '(\color{*Bearb}{In Arbeit …})'."\n".
+                    ''))), */
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'XXX'),
+                      // array(  jump_name => 'X'),
                     )),
                 )
           ); ?>
@@ -151,36 +118,16 @@
           
 
 		    	<!  • X  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:De-Broglie-Bohm-Theorie:X',
               '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'jumplist',
-                    array(
-                      //array(  jump_name => 'XXX'),
+                    '(\color{*Bearb}{In Arbeit …})'."\n".
+                    ''))),
+
+                  array( 'jumplist', array(
+                      // array(  jump_name => 'X'),
                     )),
               )
           ); */ ?>
