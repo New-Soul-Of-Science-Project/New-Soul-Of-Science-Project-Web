@@ -238,16 +238,16 @@
                     'stellt sich die Sache wie folgt dar'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \ge 2 *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot n^{ω} }{ n^{ω} }  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{ω + \frac{ 1 }{ x }} }{ n^{ω} }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'und im unterschied zum vorhergehenden Beispiel ist es so, dass die natürliche Zahl \lm{ n } eine Primfaktorzerlegung haben kann,'."\n".
-                    'in der einzelne Primzahlen in höheren Potenzen als Eins vorkommen können:'."\n".
+                    'und im unterschied zum vorhergehenden Beispiel ist es so, dass die natürliche Zahl \lm{ n } wegen des Fundamentalsatzes der Arithmetik\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerArithmetik}}'."\n".
+                    'eine Primfaktorzerlegung haben kann, in der einzelne Primzahlen in höheren Potenzen als Eins vorkommen können:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \exists k_{i} \in \mathbb{N} *) *( \forall p_{i} \in \mathbb{P} *)  *[  n  =  p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }} \cdot *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{ω} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω} }  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }}  =  \\\ \qquad\qquad\qquad\; \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }} \cdot *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{ω} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω} }  }'),
@@ -257,7 +257,7 @@
                       'Separieren wir dies in die Faktoren der einzelnen Primzahlpotenzen \lm{ p_{i}^{k_{i}} } in \lm{ n }, dann sieht das Bild folgendermaßen aus'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  =  \frac{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{ω} }{ *( p_{i}^{k_{i}} *)^{ω} }  }'),
                       array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{ω}  \in  \mathbb{N}_{\infty}  }'),
                     ))),
@@ -267,7 +267,7 @@
                     'zu einer ganzen Zahl zu machen'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  ?=  \frac{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω} }{ p_{i}^{ω} }  }'),
                       array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω}  ?\in  \mathbb{N}_{\infty}  \;\; ,  }'),
                     ))),
@@ -277,7 +277,7 @@
                     'einfacher vollständiger Induktionen \lm{ p_{i}^{ω} } enthält:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \s  \parallel  p_{i}^{ω}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  \parallel  \rad(n)^{ω}  }'),
                       array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
@@ -294,7 +294,7 @@
                     'gefunden:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }} \cdot n^{g}  \in  \mathbb{N}_{\infty}  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-mal-n-hoch-eins-durch-x-natuerlich-infinit}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{g}  \in  \mathbb{N}_{\infty}  }'),
@@ -305,7 +305,7 @@
                     'und damit den Exponenten des Primzahl-Flächenprodukts unserer superialen Basis \lm{ \s } verwenden'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω}  \in  \mathbb{N}_{\infty}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -351,7 +351,7 @@
                       'aber nicht Null ist'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  n^{- \frac{ 1 }{ x }}  =  \frac{ n^{- \frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ x }}  =  \frac{ \rad(n)^{ω} }{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }  \;\;,  }'),
                     ))),
@@ -372,7 +372,7 @@
                     'geteilt auch immer eine ganze positive Superial-Zahl sein muss:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  n^{- \frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \s }{ n^{\frac{ 1 }{ x }} }  ?\in  \mathbb{S}_{\N}  }'),
                     ))),
@@ -389,7 +389,7 @@
                       'Quadratwurzel aus \lm{ n } im Produkt mit der superialen Basis \lm{ \s } eine ganze Zahl ist'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} *) *( n \geq 2 *)  *[  n^{\frac{ 1 }{ 2 }} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -397,7 +397,7 @@
                       'die den Wahrheitsgehalt der Aussage nicht verändert, und deren Umformung'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ n }  \in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ 2 } - 1} \cdot \s  \in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{- \frac{ 1 }{ 2 }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
@@ -419,7 +419,7 @@
                       '\lm{ x }-te Wurzel aus \lm{ n } im Produkt mit der superialen Basis \lm{ \s } eine ganze Zahl ist'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \geq 2 *)  *[  n^{\frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -429,7 +429,7 @@
                       'die beide den Wahrheitsgehalt der Aussage nicht verändern, und durch deren Umformung'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot *( n^{\frac{ 1 }{ x }} *)^{x - 2} \cdot \frac{ \s }{ n }  \in  \mathbb{S}_{\N}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{\frac{ x - 2 }{ x }} \cdot \frac{ \s }{ n^{\frac{ x }{ x }} }  \in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }} \cdot n^{\frac{ x - 2 }{ x }} \cdot n^{- \frac{ x }{ x }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
@@ -459,14 +459,14 @@
                       'Sei die ganzzahlige Potenz einer Wurzel oder ihres Kehrwerts im Produkt mit der superialen Basis'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'eine natürliche Superial-Zahl, dann können wir dies umformen zu'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ k }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{k} *)^{\frac{ 1 }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N}  \;\;,  }'),
                     ))),
@@ -474,7 +474,7 @@
                       'wobei wir sehen, dass wegen'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n^{k} \in \mathbb{N}^{+} \setminus *\{ 1 *\}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -482,7 +482,7 @@
                       'so dass unsere anfängliche Aussage'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\;  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -505,14 +505,14 @@
                       'Sei das Produkt zweier Wurzel beziehungsweise ihres Kehrwerts im Produkt mit der superialen Basis'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\,  *[  n^{\frac{ 1 }{ y }} \cdot n^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'eine natürliche Superial-Zahl, dann können wir dies umformen zu'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ z }{ y \cdot z }} \cdot n^{\frac{ y }{ y \cdot z }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ y + z }{ y \cdot z }} \cdot \s  ?\in  \mathbb{S}_{\N}  \;\;,  }'),
                     ))),
@@ -520,7 +520,7 @@
                       'wobei wir sehen, dass wegen'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y \cdot z }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -529,14 +529,14 @@
                       'mit der superialen Basis natürliche Superial-Zahlen sind'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( n^{\frac{ 1 }{ y \cdot z }} *)^{y + z} \cdot \s  \in  \mathbb{S}_{\N}  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'so ist auch'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\;\;\;\,  *[  n^{\frac{ 1 }{ y }} \cdot n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -550,7 +550,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Die Produkte von Wurzeln mit unterschiedlicher Basis} \\\\'."\n".
-                    'Wie stellt es sich aber bei den Produkten von Wurzeln, oder von deren Kehrwerten, mit verschiedener Basis dar?'."\n".
+                    'Wie stellt es sich aber bei den Produkten von Wurzeln, oder von deren Kehrwerten, mit ungleicher Basis dar?'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -558,51 +558,60 @@
                       'Sei das Produkt zweier Wurzel beziehungsweise ihres Kehrwerts mit unterschiedlicher Basis im Produkt mit der superialen Basis'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( n \neq m *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\qquad\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'eine natürliche Superial-Zahl, dann können wir dies leider nicht umformen.'."\n".
-                      'Aber hier hilft uns die Einsicht aus dem Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Durch-Radikale-darstellbare-algebraischen-Zahlen-sinnvolle-Koeffizienten-SZ}},'."\n".
-                      'dass XXX'."\n".
-                      'XXX'."\n".
-                      'XXX'."\n".
+                      'eine natürliche Superial-Zahl, dann'."\n".
+                      'helfen uns die Einsichten aus dem Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Durch-Radikale-darstellbare-algebraischen-Zahlen-sinnvolle-Koeffizienten-SZ}}.'."\n".
+                      'Denn wir können die Basis jedes Faktoren vor \lm{ \s } wegen des Fundamentalsatzes der Arithmetik\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerArithmetik}}'."\n".
+                      'in ihre Primzahlpotenzen zerlegen und gegebenenfalls neu zusammenfassen'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ z }{ y \cdot z }} \cdot n^{\frac{ y }{ y \cdot z }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ y + z }{ y \cdot z }} \cdot \s  ?\in  \mathbb{S}_{\N}  \;\;,  }'),
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \exists k_{n,i} \in \mathbb{N} *) *( \forall p_{i} \in \mathbb{P} *)  *[  n  =  p_{1}^{k_{n,1}} \cdot p_{2}^{k_{n,2}} \cdot p_{3}^{k_{n,3}} \cdot p_{4}^{k_{n,4}} \cdot \cdots  *]  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }}  =  *( p_{1}^{k_{n,1}} \cdot p_{2}^{k_{n,2}} \cdot p_{3}^{k_{n,3}} \cdot p_{4}^{k_{n,4}} \cdot \cdots *)^{\frac{ 1 }{ y }}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }}  =  p_{1}^{\frac{ k_{n,1} }{ y }} \cdot p_{2}^{\frac{ k_{n,2} }{ y }} \cdot p_{3}^{\frac{ k_{n,3} }{ y }} \cdot p_{4}^{\frac{ k_{n,4} }{ y }} \cdot \cdots  }',
+                                    latex_if_visible => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }}  =  p_{1}^{\frac{ k_{n,1} }{ y }} \cdot p_{2}^{\frac{ k_{n,2} }{ y }} \cdot p_{3}^{\frac{ k_{n,3} }{ y }} \cdot p_{4}^{\frac{ k_{n,4} }{ y }} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  *( \exists k_{m,i} \in \mathbb{N} *) *( \forall p_{i} \in \mathbb{P} *)  *[  m  =  p_{1}^{k_{m,1}} \cdot p_{2}^{k_{m,2}} \cdot p_{3}^{k_{m,3}} \cdot p_{4}^{k_{m,4}} \cdot \cdots  *]  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  m^{\frac{ 1 }{ z }}  =  *( p_{1}^{k_{m,1}} \cdot p_{2}^{k_{m,2}} \cdot p_{3}^{k_{m,3}} \cdot p_{4}^{k_{m,4}} \cdot \cdots *)^{\frac{ 1 }{ z }}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{m,1} }{ z }} \cdot p_{2}^{\frac{ k_{m,2} }{ z }} \cdot p_{3}^{\frac{ k_{m,3} }{ z }} \cdot p_{4}^{\frac{ k_{m,4} }{ z }} \cdot \cdots  \;\; ,  }',
+                                    latex_if_visible => '{  \Leftrightarrow  m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{m,1} }{ z }} \cdot p_{2}^{\frac{ k_{m,2} }{ z }} \cdot p_{3}^{\frac{ k_{m,3} }{ z }} \cdot p_{4}^{\frac{ k_{m,4} }{ z }} \cdot \cdots  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'wobei wir sehen, dass wegen'."\n".
+                      'also ergibt sich für unser Produkt'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y \cdot z }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{n,1} }{ y } + \frac{ k_{m,1} }{ z }} \cdot p_{2}^{\frac{ k_{n,2} }{ y } + \frac{ k_{m,2} }{ z }} \\\ \qquad\qquad\qquad\quad\;\;\; \cdot p_{3}^{\frac{ k_{n,3} }{ y } + \frac{ k_{m,3} }{ z }} \cdot p_{4}^{\frac{ k_{n,4} }{ y } + \frac{ k_{m,4} }{ z }} \cdot \cdots  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{n,1} \cdot z }{ y \cdot z } + \frac{ k_{m,1} \cdot y }{ z \cdot y }} \cdot p_{2}^{\frac{ k_{n,2} \cdot z }{ y \cdot z } + \frac{ k_{m,2} \cdot y }{ z \cdot y }} \\\ \qquad\qquad\qquad\quad\;\;\; \cdot p_{3}^{\frac{ k_{n,3} \cdot z }{ y \cdot z } + \frac{ k_{m,3} \cdot y }{ z \cdot y }} \cdot p_{4}^{\frac{ k_{n,4} \cdot z }{ y \cdot z } + \frac{ k_{m,4} \cdot y }{ z \cdot y }} \cdot \cdots  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{n,1} \cdot z + k_{m,1} \cdot y }{ y \cdot z }} \cdot p_{2}^{\frac{ k_{n,2} \cdot z + k_{m,2} \cdot y }{ y \cdot z }} \\\ \qquad\qquad\qquad\quad\;\;\; \cdot p_{3}^{\frac{ k_{n,3} \cdot z + k_{m,3} \cdot y }{ y \cdot z }} \cdot p_{4}^{\frac{ k_{n,4} \cdot z + k_{m,4} \cdot y }{ y \cdot z }} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }}  =  *( p_{1}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,1} \cdot z + k_{m,1} \cdot y} \cdot *( p_{2}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,2} \cdot z + k_{m,2} \cdot y} \\\ \qquad\qquad\qquad\quad\;\;\; \cdot *( p_{3}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,3} \cdot z + k_{m,3} \cdot y} \cdot *( p_{4}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,4} \cdot z + k_{m,4} \cdot y} \cdot \cdots  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'und weil wir im \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Ganzzahlige-Potenzen-der-Wurzeln}{vorherigen Abschnitt}'."\n".
-                      'geklärt haben, dass ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte im Produkt'."\n".
-                      'mit der superialen Basis natürliche Superial-Zahlen sind'."\n".
+                      'und wir sehen, dass alle Potenzen rationale Zahlen sind, in Nenner und Zähler also ganze Zahlen haben,'."\n".
+                      'was ganzzahligen Potenzen ganzzahliger Wurzeln, oder deren Kehrwerten, entspricht.'."\n".
+                      'Wir \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Ganzzahlige-Potenzen-der-Wurzeln}{wissen bereits},'."\n".
+                      'dass solche Faktoren von \lm{ \s } in endlicher Anzahl natürliche Superial-Zahlen sind'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( n^{\frac{ 1 }{ y \cdot z }} *)^{y + z} \cdot \s  \in  \mathbb{S}_{\N}  \;\;,  }'),
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( p_{1}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,1} \cdot z + k_{m,1} \cdot y} \cdot *( p_{2}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,2} \cdot z + k_{m,2} \cdot y} \cdot *( p_{3}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,3} \cdot z + k_{m,3} \cdot y} \cdot \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\; \cdot \s  \in  \mathbb{S}_{\N}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'so ist auch'."\n".
+                      'und damit erkennen wir, unsere Ausgangsannahme'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\;\;\;\,  *[  n^{\frac{ 1 }{ y }} \cdot n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\;\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'wahr.'."\n",
+                      'muss wahr sein.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Wir brauchen uns also um die Produkte der Wurzeln oder ihrer Kehrwerte auch nicht zu sorgen.'."\n".
+                    'Wir brauchen uns also um die Produkte der Wurzeln mit unterschidlicher Basis, oder ihrer Kehrwerten, nicht zu sorgen.'."\n".
                     'Sie sind auch im Produkt mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -618,21 +627,21 @@
                       'zusammen im Produkt mit \lm{ \s }'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} *) *( n \geq 2 *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) *( \forall z \in \mathbb{Z} *)  \\\ \qquad\qquad *( n^{\frac{ 1 }{ y }} + z \ge 0 *)  *[  *( n^{\frac{ 1 }{ y }} + z *) \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot \s + z \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Da beide Summanden aktual unendlich große natürliche oder ganze Superial-Zahlen sind'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  z \cdot \s  \in  \mathbb{S}_{\Z}  }'),
                     ))),
@@ -640,7 +649,7 @@
                       'und die Summe zweier ganzer Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }} \cdot \s + z \cdot \s  \in  \mathbb{S}_{\N}  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -658,21 +667,21 @@
                       'Nehmen wir an, dass der irrationale Goldene Schnitt \lm{ φ } im Produkt mit \lm{ \s }'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  φ \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'mit dem Wert seiner Definition'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  φ  =  \frac{ \sqrt{ 5 } + 1 }{ 2 }  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Einsetzen, Umstellen und Ausmultiplizieren:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sqrt{ 5 } + 1 }{ 2 } \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  *( 5^{\frac{ 1 }{ 2 }} + 1 *) \cdot \frac{ \s }{ 2 }  ?\in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  ?\in  \mathbb{S}_{\N}  }'),
@@ -681,7 +690,7 @@
                       'Da beide Summanden aktual unendlich große natürliche Superial-Zahlen sind'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N}  }'),
                     ))),
@@ -689,7 +698,7 @@
                       'und die Summe zweier natürlicher Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 5^{\frac{ 1 }{ 2 }} \cdot \s + \s }{ 2 }  \in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  φ \cdot \s  \in  \mathbb{S}_{\N}  }'),
@@ -712,21 +721,21 @@
                       'Nehmen wir an, dass eine Summe aus zwei irrationalen Wurzeln, oder ihrer jeweiligen Kehrwerte, im Produkt mit \lm{ \s }'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} *) *( n, m \geq 2 *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *)  \\\ \qquad\quad *( n^{\frac{ 1 }{ y }} + n^{\frac{ 1 }{ z }} \ge 0 *)  *[  *( n^{\frac{ 1 }{ y }} + n^{\frac{ 1 }{ z }} *) \cdot \s  ?\in  \mathbb{S}_{N}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot \s + n^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{N}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Da beide Summanden ganze Superial-Zahlen sind'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{Z}  }'),
                       array( display => 'on',  latex => '{  n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{Z}  }'),
                     ))),
@@ -734,7 +743,7 @@
                       'und die Summe zweier ganzer Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }} \cdot \s + n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{N}  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -743,18 +752,14 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'So sind dann auch algebraische Zahlen aus Summen zweier oder mehrerer Wurzeln, oder ihrer jeweiligen Kehrwerte,'."\n".
-                    'als Faktoren der superialen Basis \lm{ \s } natürliche Superial-Zahlen möglich.'."\n",
-                      '\color{*Bearb}{(In Arbeit …)} Damit haben wir für alle irrationalen algebraischen Koeffizienten durch Beweis überprüft,'."\n".
-                    'dass ihre Produkte mit der superialen Basis \lm{ \s } zu den natürlichen Superial-Zahlen gehören.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'So sind dann alle algebraischen Zahlen, die durch arithmetische Kombinationen von Radikalen, oder deren Kehrwerte,'."\n".
+                    'inklusive ganzzahliger Potenzen, dargestellt werden können natürliche Superial-Zahlen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Wurzeln aus Polynomen} \\\\'."\n".
                   '\cond{Elliptische Integrale und ähnliche algebraische Werte} \\\\'."\n".
-                    'Die algebraischen Zahlen sind ja dadurch definiert, das sie die Menge aller Lösungen der Nullstellen von Polynomen sind.'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Die algebraischen Zahlen sind ja dadurch definiert, das sie die Menge aller Lösungen der Nullstellen von Polynomen sind.'."\n".
                     'Wir betrachten hier aber keine komplexen Lösungen mit Imaginäranteilen, sondern nur'."\n".
                     'die realwertigen Koeffizienten der Komponenten ihrer komplexen Lösungen.'."\n",
                       'Nach allem, was ich über diese herausfinden kann, sind die realwertigen Lösungen'."\n".
@@ -777,7 +782,7 @@
                       'Als Beispiel betrachten wir als erstes das allgemeine elliptische Integral der I. Art in der Jacobi-Form:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ElliptischeIntegrale:2024}, Vollständige elliptische Integrale, Definition der vollständigen elliptischen Integrale.}'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( 0 < k < 1 *)  *[  \int_{0}^{1} {\frac { \mathrm{d} x }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } }}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -785,21 +790,21 @@
                       'entspricht dies:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall k \in \mathbb{A}_{\R} *) *( 0 < k < 1 *) \\\ \qquad\quad\;\;\;\,  *[  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 {\frac { 1 }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } }} *〉  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Nehmen wir an, dass dieses Integral im Produkt mit \lm{ \s }'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 {\frac { 1 }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } }} *〉*) \cdot \s  ?\in  \mathbb{S}_{N}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 {\frac { \s }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } }} *〉  ?\in  \mathbb{S}_{N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 {\frac { 1 }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } \cdot \frac{ 1 }{ \s } }} *〉  ?\in  \mathbb{S}_{N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 {\frac { 1 }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) \cdot \frac{ 1 }{ \s^{2} } } }} *〉  ?\in  \mathbb{S}_{N}  }'),
@@ -827,7 +832,7 @@
                       'Dies bedeutet, wir müssen die Formel modifizieren:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 *( k^{2} x^{4} - *( k^{2} - 1 *) x^{2} + 1 *)^{\frac{ 1 }{ -2 }} \cdot \s *〉  ?\in  \mathbb{S}_{N}  }'),
                       array( display => 'on',  latex => '{  f(x) = x^{5}  \Rightarrow  f\'(x) =  *〈 5 x^{4} *〉.*〈 10 x^{3} *〉*〈 10 x^{2} *〉*〈 5 x *〉*〈 1 *〉  }'),
                       array( display => 'on',  latex => '{  f(x) = x^{3}  \Rightarrow  f\'(x) =  *〈 3 x^{2} *〉.*〈 3 x *〉*〈 1 *〉  }'),
@@ -838,14 +843,14 @@
                       '\\\\ \color{*Bearb}{(Wie gehen wir hier damit um, dass \lm{ x } in der Integralsumme auch superial kleine Anteile enthalten kann? Werden die hier eh zu endlichen ganzen Zahlen? Bei \lm{ x^{2} } wohl eher nicht. Oder können wir das Integral oben so definieren, dass es passt? Oder heben sich die superial kleinen Anteile erst beim Summieren auf?)}'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) *)^{\frac{ 1 }{ -2 }} \cdot \s  \in  \mathbb{S}_{Z}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\color{*Bearb}{(In Arbeit …)} und die Summe zweier ganzer Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }} \cdot \s + n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{N}  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -861,11 +866,12 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Zusammenfassung für alle entsprechenden Wurzeln, Summen und Produkte} \\\\'."\n".
-                    'So können wir die Superial-Zahlen sinnvollerweise noch auf die Koeffizienten der Kehrwerte der irrationalen Wurzeln,'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'So können wir die Superial-Zahlen sinnvollerweise noch auf die Koeffizienten der Kehrwerte der irrationalen Wurzeln,'."\n".
                     'deren Summen mit endlichen ganzen Zahlen und deren Produkte mit rationalen Zahlen verallgemeinern:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( q \in \mathbb{Q} *) *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) *( n^{\frac{ 1 }{ y }} \notin \mathbb{Q} *) \\\ \quad\;\; *( \forall z \in \mathbb{Z} *) *( q \cdot n^{\frac{ 1 }{ y }} + z > 0 *)  *[  *( q \cdot n^{\frac{ 1 }{ y }} + z *) \cdot \s  :\in  \mathbb{S}_{\N}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -878,7 +884,7 @@
                     'und sinnvollerweise dann auch natürliche Superial-Zahlen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  \in  \mathbb{N}_{\infty}  *]  }'),
                       array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
                     ))),
@@ -886,7 +892,7 @@
                     'Diese Erkenntnis können wir dann ebenso auf die \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen} erweitern:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *)  *[  a \cdot \s  \in  \mathbb{S}_{\Z}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
