@@ -463,19 +463,37 @@
                 'Taburelativierung: Überlichtgeschwindigkeit')),
                   array( 'text', array( text => array(
                     'Jetzt werfen wir eines der grundsätzlichen Tabus der modernen Physik über den Haufen und bewahren dabei sein wichtiges,'."\n".
-                    'dem Ansatz der Relativitätstheorie entspringendes Anliegen durch eine differenzierte Betrachtung des Zusammenhangs:'."\n"))),
+                    'dem Ansatz der Relativitätstheorie entspringendes Anliegen durch eine differenzierte Betrachtung des Zusammenhangs:'."\n".
+                    ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                       'Nach dem gerade formulierten Ansatz bewegt sich die Feinstruktur der Elementarteilchen mit Überlichtgeschwindigkeit.'."\n".
                       'Und dies widerspricht nicht(!) der Relativitätstheorie, nach der hier aufgestellten Interpretation, wenn die Alterungskomponente'."\n".
-                      'der Bewegung der Fundamentalteilchen auf die Lichtgeschwindigkeit begrenzt bleibt.'."\n"))),
+                      'der Bewegung der Fundamentalteilchen auf die Lichtgeschwindigkeit begrenzt bleibt.'."\n".
+                      ''))),
  
                   array( 'text', array( text => array(
                     'Bezüglich des Grundgedankens der Relativitätstheorie ist es wichtig, dass sich Informationen nicht mit Überlichtgeschwindigkeit durch den Raum bewegen:'."\n",
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'quote', text => array(
+                      'Kausalität ist ein heiliges Prinzip der Physik.'."\n".
+                      'Wegen solcher Überlegungen gaben Fachleute die Idee von Tachyonen auf.'."\n".
+                      'Das änderte sich allerdings im Jahr 1960, als der sowjetische Physiker Jakow Petrowitsch Terlezki das Prinzip der Kausalität unter die Lupe nahm.'."\n".
+                      'Wie er feststellte, ist Kausalität in unserer makroskopischen Welt immer erfüllt; auf der Mikroebene muss das dagegen nicht zwingend der Fall sein.'."\n".
+                      ''),
+                      addtext => '\footnote{Vgl. \cite{Bischoff:TachyonenKoenntenLautMathematikNunDochExistieren:2024}.}')),
+ 
+                  array( 'text', array( text => array(
+                    'Mit Tachyonen sind hier rein theoretische Elementarteilchen gemeint, die sich auch in der Relativitätstheorie mit Überlichtgeschwindigkeit bewegen können.'."\n",
+                      'Nun sind unsere Fundamentalteilchen nicht direkt mit Tachyonen vergleichbar, sollen also auch keine sein,'."\n".
+                    'denn sie sind Teil einer den Elementarteilchen unterlegten fraktalen Struktur.'."\n".
+                    'Trotzdem ist es hier wichtig sicher zu sein, dass das Prinzip der Kausalität nicht verletzt wird.'."\n",
                       'In diesem Sinne sind die Anteile der Veränderung der Elementarteilchen-Strukturen, die über die Lichtgeschwindigkeit hinausgehen, rotierende innere Schwingungen.'."\n".
                     'Diese Schwingungen entsprechen bestimmten Schwingungen der Quantenphysik und sind der Informationsinhalt der Elementarteilchen.'."\n",
                       'Dieser Informationsinhalt kann sich auf diese Weise nicht mit Überlichtgeschwindigkeit durch den Raum bewegen.'."\n".
-                    'Er ist stabil, und wie wir noch sehen werden, ist dazu passend die ihm zugrundeliegende Rotationsschwingung die stabilisierende Basis der Elementarteilchen-Struktur.'."\n"))),
+                    'Er ist stabil, und wie wir noch sehen werden, ist dazu passend die ihm zugrundeliegende Rotationsschwingung die stabilisierende Basis der Elementarteilchen-Struktur.'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Ansatz: Existenz beruht auf der Stabilität von Regelprozessen')),
