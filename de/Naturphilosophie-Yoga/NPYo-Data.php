@@ -66,7 +66,7 @@
                    
           'OM:NPYo:Energie-Esoterik-Spiritualitaet:Vortext:XXX' => array( headline_text => 'XXX'/* , headline_text_short => 'XXX' */),
                    
-        'OM:NPYo:Energie-Esoterik-Spiritualitaet:XXX' => array( headline_text => 'XXX'/*, headline_text_short => 'XXX'*/),
+        // 'OM:NPYo:Energie-Esoterik-Spiritualitaet:XXX' => array( headline_text => 'XXX'/*, headline_text_short => 'XXX'*/),
       ),
     ),
     'OM:NPYo:ExistenzLeichtigkeit' => array(

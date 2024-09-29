@@ -3129,6 +3129,7 @@
     // #: Vue.js
     echo '    <!-- Vue.js: production version, optimized for size and speed -->'."\n";
     echo '    <script src="https://cdn.jsdelivr.net/npm/vue"></script>'."\n";
+    echo '    <script src="'.$Glo_PathRel_back.'../share/js/NSOSP.js" type="text/javascript" language="JavaScript"></script>'."\n";
     // #: Additionals
     Sc_f_HeaderElements();
     echo ''."\n";

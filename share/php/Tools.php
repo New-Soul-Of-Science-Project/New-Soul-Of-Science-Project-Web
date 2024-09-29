@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 19.01.2024, 22:00h
+  // #: Stand: 14.09.2024, 11:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20240914:  +:  "To_f_HeaderElements":  Remove import "../share/js/NSOSP.js" and move it to local file
   //           20240119:  +:  "To_f_Paragraph", 'iframe':  Add this type for 3d animations.
   //           20231006:  +:  "\\url[]{}", "To_f_replace_callback__latexcommand__url":  Is new. It sets automatically "\\class{tools-class-url}{}"
   //           20230901:  +:  "To_f_Paragraph", 'figure', 'youtube':  Add horizontal scrollable with class 'content-horizontal-scrollable'.
@@ -262,7 +263,6 @@
     echo ''."\n";
     echo '    <script src="'.$Glo_PathRel_back.'../share/js/nospam.js" type="text/javascript" language="JavaScript"></script>'."\n";
     echo '    <script src="'.$Glo_PathRel_back.'../share/js/Tools.js" type="text/javascript" language="JavaScript"></script>'."\n";
-    echo '    <script src="'.$Glo_PathRel_back.'../share/js/NSOSP.js" type="text/javascript" language="JavaScript"></script>'."\n";
     echo '    <script type="text/javascript">'."\n";
     echo '          <!--'."\n";
     // #: Call JavaScript start sequence.

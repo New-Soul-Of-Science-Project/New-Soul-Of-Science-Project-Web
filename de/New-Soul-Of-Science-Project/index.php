@@ -1320,7 +1320,7 @@
                   array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
-                  array( 'text', array( Shape  => 'quote', text => array(
+                  array( 'text', array( Shape => 'quote', text => array(
                         'Wer etwas will, findet Wege. \\\\'."\n".
                         'Wer etwas nicht will, findet Gründe.'."\n".
                         ''),
