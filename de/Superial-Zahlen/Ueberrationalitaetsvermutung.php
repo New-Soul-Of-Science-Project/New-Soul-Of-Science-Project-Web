@@ -1675,7 +1675,7 @@
                       
                   array( 'jumplist', array(
                       //%! array(  jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung'),
-                      array(  jump_name => 'OM:SupNum:Home'),
+                      array(  jump_name => 'OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen'),
                     )),
               )
           ); ?>
@@ -1859,7 +1859,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Home'),
+                      array(  jump_name => 'OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen'),
                     )),
               )
           ); */ ?>

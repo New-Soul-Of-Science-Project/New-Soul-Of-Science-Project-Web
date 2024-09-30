@@ -122,6 +122,7 @@
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Eigenschaften'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Primzahlprodukt-Vermutung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Ueberrationalitaetsvermutung'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen'),
                     ))),
                       
                   array( 'normal',

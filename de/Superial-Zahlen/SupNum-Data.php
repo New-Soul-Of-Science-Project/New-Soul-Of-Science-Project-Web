@@ -341,5 +341,21 @@
         //%! 'OM:SupNum:Ueberrationalitaetsvermutung:Untersuchung' => array( headline_text => 'Untersuchung'/* , headline_text_short => 'X'*/),
       ),
     ),
+    'OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen' => array(
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Vermutung-superiale-Koeffizienten-sind-Realanteile-algebraischer-Zahlen.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Vermutung-superiale-Koeffizienten-sind-Realanteile-algebraischer-Zahlen.php',
+      titel => 'Vermutung superiale Koeffizienten sind Realanteile algebraischer Zahlen - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\name[undertitle]{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}. — \name[description]{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}.',
+      keywords => '',
+      text_titel_h1 => 'Vermutung superiale Koeffizienten sind Realanteile algebraischer Zahlen',
+      text_titel_short => 'Vermutung superiale Koeffizienten sind Realanteile algebraischer Zahlen',
+      text_undertitel_h2 => 'XXX',
+      text_titel_discr_h3 => 'XXX',
+      jump_ary => array(
+        'OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          // 'OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen:Vortext:X' => array( headline_text => 'SN.ÜV.7'),
+      ),
+    ),
   );
 ?>

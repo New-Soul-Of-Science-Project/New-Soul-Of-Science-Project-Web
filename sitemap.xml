@@ -765,11 +765,16 @@
       <lastmod>2024-09-05</lastmod>
       <priority>1.0</priority>
     </url>
-	<url>
-		<loc>https://nsosp.org/de/Superial-Zahlen/Ueberrationalitaetsvermutung.php</loc>
-		<lastmod>2024-09-05</lastmod>
-		<priority>1.0</priority>
-	</url>
+  <url>
+    <loc>https://nsosp.org/de/Superial-Zahlen/Ueberrationalitaetsvermutung.php</loc>
+    <lastmod>2024-09-05</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://nsosp.org/de/Superial-Zahlen/Vermutung-superiale-Koeffizienten-sind-Realanteile-algebraischer-Zahlen.php</loc>
+    <lastmod>2024-09-05</lastmod>
+    <priority>1.0</priority>
+  </url>
   
   
   <url>
