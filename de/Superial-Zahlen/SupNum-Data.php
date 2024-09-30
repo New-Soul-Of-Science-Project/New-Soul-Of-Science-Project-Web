@@ -349,8 +349,8 @@
       keywords => '',
       text_titel_h1 => 'Vermutung superiale Koeffizienten sind Realanteile algebraischer Zahlen',
       text_titel_short => 'Vermutung superiale Koeffizienten sind Realanteile algebraischer Zahlen',
-      text_undertitel_h2 => 'XXX',
-      text_titel_discr_h3 => 'XXX',
+      text_undertitel_h2 => '',
+      text_titel_discr_h3 => '',
       jump_ary => array(
         'OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    

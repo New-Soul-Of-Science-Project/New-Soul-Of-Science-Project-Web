@@ -159,23 +159,30 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X', text =>
                       
-                'Sind die sinnvollen Koeffizienten alle algebraischen Zahlen?', subline =>
-                  '\lm{ \mathbb{A}_{\S} = \mathbb{A} } ist eine Frage der elliptischen Integrale beziehungsweise der elliptischen und algebraischen Kurven')),
+                'Sind die sinnvollen Koeffizienten alle Realanteile der algebraischen Zahlen?', subline =>
+                  '\lm{ \mathbb{A}_{\S} = \mathbb{A}_{\R} } ist eine Frage der Nullstellen von Polynomen beliebigen Grades')),
                   array( 'text', array( text => array(
-                    'Ich vermute, die Realanteile der algebraischen Zahlen \lm{ \mathbb{A}_{\S} }, ihre Koeffizienten,'."\n".
-                    'die auch rationale – also gebrochene – Potenzen von natürlichen Zahlen sein können,'."\n".
-                    'viele davon irrationale \lm{ x }-te Wurzeln aus \lm{ n },'."\n".
+                    'Ich denke, die Realanteile der algebraischen Zahlen \lm{ \mathbb{A}_{\R} } – ihre Koeffizienten –'."\n".
                     'sind alle als Koeffizienten der superialen Basis \lm{ \s } aktual unendlich große natürliche Zahlen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\S}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{N}_{\infty}  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\S}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{A}_{\S}  ?=  \mathbb{A}_{\R}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dies wäre schon etwas sehr besonderes.'."\n",
-                      'Hier ist zu bemerken, dass algebraische Zahlen allesamt Lösungen aller möglichen Polynome sind und damit'."\n".
-                    'grundsätzlich komplexe Zahlen\footnote{\const{SupNum_g_footnote_text_KomplexeZahl}},'."\n".
+                    'Das ist meine \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}{Vermutung, dass die sinnvollen superiale Koeffizienten alle Realanteile algebraischer Zahlen} sind.'."\n",
+                      'Algebraische Zahlen sind alle möglichen Nullstellen von Polynomen beliebigen Grades.'."\n".
+                    'Nullstellen von Polynomen ersten bis vierten Grades sind alle komplexe Zahlen\footnote{\const{SupNum_g_footnote_text_KomplexeZahl}}'."\n".
+                    'deren Koeffizienten rationale – also gebrochene –'."\n".
+                    'Potenzen von natürlichen Zahlen sein können, viele davon irrationale \lm{ x }-te Wurzeln aus \lm{ n },'."\n".
+                    'deren Kehrwerte, oder deren arithmetischen Kombinationen, also inklusive deren ganzen Potenzen.\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}}'."\n",
+                      'Polynome fünften Grades können auch Nullstellen haben, die durch Integrale von Termen der vorstehenden Art ausgedrückt werden.'."\n".
+                    'Leider konnte ich zu den Nullstellen von Polynomen sechsten und höheren Grades bisher nichts konkretes finden.'."\n",
+                      'Sollte meine Vermutung stimmen, dann wäre schon etwas sehr besonderes.'."\n",
+                      'Hier ist zu bemerken, dass algebraische Zahlen allesamt Lösungen aller möglichen Nullstellen von Polynomen sind und damit'."\n".
+                    'grundsätzlich komplexe Zahlen,'."\n".
                     'also Zahlen auf der Gaußschen Zahlenebene und damit einen imaginären Anteil haben können.\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
                     'Deshalb habe ich sie hier auf ihre realen Anteile – oder auf die Faktoren beziehungsweise Koeffizienten ihrer Koordinaten – begrenzt.'."\n",
                       'Die Koeffizienten der algebraischen Zahlen müssten demnach also Anteile des Primzahl-Flächenprodukts von \lm{ \s } sein.'."\n".
@@ -754,6 +761,26 @@
                   array( 'text', array( text => array(
                     'So sind dann alle algebraischen Zahlen, die durch arithmetische Kombinationen von Radikalen, oder deren Kehrwerte,'."\n".
                     'inklusive ganzzahliger Potenzen, dargestellt werden können natürliche Superial-Zahlen.'."\n".
+                    'Damit sind alle Koeffizienten von Superial-Zahlen abgedeckt, die den Realanteilen von Nullstellen der Polynome ersten bis vierten Grades'."\n".
+                    'entsprechen vollständig abgedeckt.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Nullstellen von Polynomen fünften Grades} \\\\'."\n".
+                  // '\cond{XXX} \\\\'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'quote', text => array(
+                      'Im Rahmen der Galoistheorie werden diese Zwischenkörper untersucht, um so tiefe Einblicke über die Lösbarkeit oder Nichtlösbarkeit von Gleichungen zu erhalten.'."\n".
+                      'Ein Resultat der Galoistheorie ist, dass zwar jede komplexe Zahl, die man aus rationalen Zahlen durch Verwendung der'."\n".
+                      'Grundrechenarten (Addition, Subtraktion, Multiplikation und Division) sowie durch Ziehen n-ter Wurzeln (n eine natürliche Zahl)'."\n".
+                      'erhalten kann (man nennt solche Zahlen „durch Radikale darstellbar“), algebraisch ist, umgekehrt aber algebraische Zahlen existieren,'."\n".
+                      'die man nicht in dieser Weise darstellen kann; alle diese Zahlen sind Nullstellen von Polynomen mindestens 5. Grades.'."\n".
+                      ''),
+                      addtext => '\footnote{Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.}')),
+ 
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Wurzeln aus Polynomen} \\\\'."\n".
