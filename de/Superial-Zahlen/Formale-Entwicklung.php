@@ -203,8 +203,8 @@
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\bold{X}',
-                    // '• X',
+                    '\bold{Irreduzible Polynome}',
+                    '• \quote{Ihre Bedeutung für die Polynomringe ist in den meisten Fällen (Polynome über faktoriellen Ringen) mit der Bedeutung von Primzahlen für natürliche Zahlen gleich.}, vgl. \jump[https://de.wikipedia.org/wiki/Irreduzibles_Polynom]{}{Wikipedia – Irreduzibles Polynom}.',
                     ))),
                       
                   array( 'text', array( text => array(
