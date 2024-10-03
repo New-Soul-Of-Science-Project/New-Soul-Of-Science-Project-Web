@@ -162,7 +162,10 @@
                 'Sind die sinnvollen Koeffizienten alle Realanteile der algebraischen Zahlen?', subline =>
                   '\lm{ \mathbb{A}_{\S} = \mathbb{A}_{\R} } ist eine Frage der Nullstellen von Polynomen beliebigen Grades')),
                   array( 'text', array( text => array(
-                    'Ich denke, die Realanteile der algebraischen Zahlen \lm{ \mathbb{A}_{\R} } – ihre Koeffizienten –'."\n".
+                    'Die algebraischen Zahlen sind ja dadurch definiert, das sie die Menge aller Lösungen der Nullstellen von Polynomen sind.'."\n".
+                    'Wir betrachten hier aber keine komplexen Lösungen mit Imaginäranteilen, sondern nur'."\n".
+                    'die realwertigen Koeffizienten der Komponenten ihrer komplexen Lösungen.'."\n",
+                      'Ich denke, diese Realanteile der algebraischen Zahlen \lm{ \mathbb{A}_{\R} } – ihre Koeffizienten –'."\n".
                     'sind alle als Koeffizienten der superialen Basis \lm{ \s } aktual unendlich große natürliche Zahlen:'."\n".
                     ''))),
                   array( 'equations',
@@ -759,15 +762,13 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'So sind dann alle algebraischen Zahlen, die durch arithmetische Kombinationen von Radikalen, oder deren Kehrwerte,'."\n".
-                    'inklusive ganzzahliger Potenzen, dargestellt werden können natürliche Superial-Zahlen.'."\n".
-                    'Damit sind alle Koeffizienten von Superial-Zahlen abgedeckt, die den Realanteilen von Nullstellen der Polynome ersten bis vierten Grades'."\n".
-                    'entsprechen vollständig abgedeckt.'."\n".
+                    'So sind dann alle algebraischen Zahlen, die durch Kombinationen arithmetischer Operationen von Radikalen – Wurzelausdrücken –,'."\n".
+                    'oder deren Kehrwerte, inklusive ganzzahliger Potenzen, dargestellt werden können, natürliche Superial-Zahlen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Nullstellen von Polynomen fünften Grades} \\\\'."\n".
+                  '\condb{Nullstellen von Polynomen ersten bis vierten Grades sind sinnvolle Koeffizienten der Superial-Zahlen} \\\\'."\n".
                   // '\cond{XXX} \\\\'."\n".
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Zu algebraischen Zahlen, die Nullstellen von Polynomen ersten bis vierten Grades entsprechen, finden wir in Wikipedia:'."\n".
                     ''))),
                       
                   array( 'text', array( Shape => 'quote', text => array(
@@ -780,16 +781,40 @@
                       addtext => '\footnote{Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.}')),
  
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                    'Damit sind alle Koeffizienten von Superial-Zahlen, die den Realanteilen von Nullstellen der Polynome ersten bis vierten Grades'."\n".
+                    'entsprechen, vollständig abgedeckt.'."\n".
+                    'Wir wissen nun also, dass die Realanteile dieser Nullstellen alle sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Nullstellen von Polynomen fünften und höheren Grades} \\\\'."\n".
+                    'Für die Lösung der Nullstellen von Polynomen fünften Grades können wir folgendes in Wikipedia finden:'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape => 'quote', text => array(
+                      'Eine allgemeine Lösungsformel, die nur mit den vier Grundrechenarten und dem Wurzelziehen auskommt,'."\n".
+                      'gibt es für Gleichungen höheren als vierten Grades nicht (ein Resultat der Galoistheorie). \\\\'."\n".
+                      '[…] \\\\'."\n".
+                      'Gleichungen fünften Grades lassen sich mit Hilfe elliptischer Funktionen allgemein lösen.'."\n".
+                      'Als Erster hat das Charles Hermite 1858 mit jacobischen Thetafunktionen gezeigt.'."\n".
+                      ''),
+                      addtext => '\footnote{Vgl. \cite{wiki:LoesenVonGleichungen:2024}, Gleichungen höheren Grades.}')),
+ 
+                  array( 'text', array( text => array(
+                    'Umgekehrt gibt es algebraische Zahlen, die keine Lösungen der Nullstellen von Polynomen'."\n".
+                    'ersten bis vierten Grades sind, denn:'."\n".
+                    '\quote{Manche Gleichungen fünften Grades können mit Wurzeln gelöst werden, […]}\footnote{Vgl. \cite{wiki:GleichungFuenftenGrades:2024}, Lösbare Gleichungen fünften Grades, Voraussetzungen für die Lösbarkeit.}'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Wurzeln aus Polynomen} \\\\'."\n".
                   '\cond{Elliptische Integrale und ähnliche algebraische Werte} \\\\'."\n".
                     '\color{*Bearb}{(In Arbeit …)}'."\n",
-                      'Die algebraischen Zahlen sind ja dadurch definiert, das sie die Menge aller Lösungen der Nullstellen von Polynomen sind.'."\n".
-                    'Wir betrachten hier aber keine komplexen Lösungen mit Imaginäranteilen, sondern nur'."\n".
-                    'die realwertigen Koeffizienten der Komponenten ihrer komplexen Lösungen.'."\n",
-                      'Nach allem, was ich über diese herausfinden kann, sind die realwertigen Lösungen'."\n".
+                      'Nach allem, was ich über algebraische Zahlen herausfinden kann, sind die realwertigen Lösungen'."\n".
                     'der Nullstellen von Polynomen entweder Radikale\color{*Bearb}{(Verweis)}, also durch bereits'."\n".
                     'oben betrachtete Wurzelausdrücke darstellbar, oder es sind elliptische Integrale\color{*Bearb}{(Verweis)},'."\n".
                     'für die Nullstellen von Polynomen 5. oder höheren Grades.\color{*Bearb}{(Verweis)}'."\n",
