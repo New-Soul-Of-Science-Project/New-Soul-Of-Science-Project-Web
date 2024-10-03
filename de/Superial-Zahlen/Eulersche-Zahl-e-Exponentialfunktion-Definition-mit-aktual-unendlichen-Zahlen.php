@@ -354,7 +354,7 @@
                   array( 'text', array( text => array(
                     'Die Berechnung weiterer Anteile erspare ich mir für den Moment.'."\n",
                       'Aber wir können erahnen und logischerweise sogar absolut sicher sein, dass sich für den Summanden mit der höchsten'."\n".
-                    'Potenz nach und nach die Glieder der Taylorreihe\color{*Bearb}{(Verweis)} ergeben,'."\n".
+                    'Potenz nach und nach die Glieder der Taylorreihe ergeben,'."\n".
                     'die summiert zur Eulerschen Zahl \lm{ \e } führen.'."\n".
                     ''))),
 
@@ -505,7 +505,7 @@
                     ))),
 
                   array( 'text', array( text => array(
-                    'Hier können wir nun erkennen und logischerweise sogar absolut sicher sein, dass sich im Endlichen die Taylorreihe\color{*Bearb}{(Verweis)}'."\n".
+                    'Hier können wir nun erkennen und logischerweise sogar absolut sicher sein, dass sich im Endlichen die Taylorreihe\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Taylorreihe:2024}.}'."\n".
                     'zur Eulerschen Zahl \lm{ \e } ergibt.'."\n",
                     ''))),
                   array( 'equations',
