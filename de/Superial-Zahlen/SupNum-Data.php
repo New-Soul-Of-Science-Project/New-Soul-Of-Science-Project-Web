@@ -345,11 +345,11 @@
     'OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen' => array(
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Vermutung-superiale-Koeffizienten-sind-Realanteile-algebraischer-Zahlen.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Vermutung-superiale-Koeffizienten-sind-Realanteile-algebraischer-Zahlen.php',
-      titel => 'Vermutung superiale Koeffizienten sind alles algebraische Zahlen - Die Superial-Zahlen (SN) - Deutsch',
+      titel => 'Vermutung superiale Koeffizienten sind die algebraischen Zahlen - Die Superial-Zahlen (SN) - Deutsch',
       description => '\name[undertitle]{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}. — \name[description]{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}.',
       keywords => '',
-      text_titel_h1 => 'Vermutung superiale Koeffizienten sind alles algebraische Zahlen',
-      text_titel_short => 'Vermutung superiale Koeffizienten sind alles algebraische Zahlen',
+      text_titel_h1 => 'Vermutung superiale Koeffizienten sind die algebraischen Zahlen',
+      text_titel_short => 'Vermutung superiale Koeffizienten sind die algebraischen Zahlen',
       text_undertitel_h2 => 'Wir vermuten, dass alle sinnvollen superialen Koeffizienten exakt den Koeffizienten aller algebraischen Zahlen entsprechen',
       text_titel_discr_h3 => 'Die Trennlinie zwischen den Koeffizienten – Realanteilen – aller algebraischen Zahlen und den transzendenten Zahlen entspricht im Grunde der Trennlinie zwischen den Fraktalebenen der Superial-Zahlen',
       jump_ary => array(
