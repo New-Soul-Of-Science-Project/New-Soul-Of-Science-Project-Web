@@ -1216,7 +1216,7 @@
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{On}  \subset  \mathbb{N}_{\infty}  }'),
-                      array( display => 'on',  latex => '{  \mathbb{Bn}  \subset  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{Bn}^{+}_{0}  \subset  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Desweiteren soll es sich um Klassen \lm{ \mathbb{N}_{\infty,c} } ganzer Zahlen handeln, in denen der Wert jedes Elements'."\n".
@@ -1235,7 +1235,7 @@
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{On}  \in  \mathbb{K}_{\infty,c}  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-c', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-c}', label_incr => true),
-                      array( display => 'on',  latex => '{  \mathbb{Bn}  \notin  \mathbb{K}_{\infty,c}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \mathbb{Bn}^{+}_{0}  \notin  \mathbb{K}_{\infty,c}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'weil die Biordinalzahlen eben \jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{mehr Vorgänger vor ω haben als sein Wert groß ist}.'."\n".
