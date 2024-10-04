@@ -839,13 +839,39 @@
           ); ?>
 
 
+          <!  • Was lernen wir über rationale beziehungsweise algebraische Zahlen  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Zahlen-durch-Superial-Zahlen',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    '\bold{Nachkommastellen}',
+                    '• Wir können lernen, dass die rationale Zahl \lm{ ⅓ = 0,\!33333\overline{3} = 0 \cdot 10^{0} + 3 \cdot 10^{-1} + 3 \cdot 10^{-2} + 3 \cdot 10^{-3} + \cdots } oder auch die algebraische Zahl \lm{ φ } nur Nachkommastellen haben, die alle endliche Werte haben, also endliche negative Potenzen haben, auch, wenn es unendlich viele sind. Dies muss so sein, weil es sonst einen Übertrag in die nächst tiefere Stelle der Superial-Zahl gibt.',
+                    '– Das ergibt sich aus den \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper'),
+                    )),
+              )
+          ); ?>
+
+
 		    	<!  • S ist ein angeordneter Körper  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Zahlen-durch-Superial-Zahlen', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(

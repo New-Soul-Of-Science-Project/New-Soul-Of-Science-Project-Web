@@ -115,6 +115,8 @@
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Ganzzahlige-Potenzen-der-Wurzeln' => array( headline_text => 'Ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Summen-von-Wurzeln' => array( headline_text => 'Summen und Differenzen von Wurzeln'/* , headline_text_short => 'X' */),
                    
+        'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Zahlen-durch-Superial-Zahlen' => array( headline_text => 'Was lernen wir über rationale beziehungsweise algebraische Zahlen'/* , headline_text_short => 'X' */),
+                   
         'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper' => array( headline_text => '\lm{ \mathbb{S} } ist ein angeordneter Körper', headline_text_short => 'S ist ein angeordneter Körper'),
                    
         'OM:SupNum:Eigenschaften:StrukturVonS' => array( headline_text => 'Die Struktur von \lm{ \s }', headline_text_short => 'Die Struktur von s'),
