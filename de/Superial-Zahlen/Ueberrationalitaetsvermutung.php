@@ -169,7 +169,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{N}_{\infty} *) *( \forall n \in \mathbb{N} *) *( n < x *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{x + \frac{ 1 }{ 2 }} }{ 2^{x} }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{N}_{\infty} *) *( \forall n \in \mathbb{N} *) *( n < x *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{x} }{ 2^{x} }  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Der obige Widerspruchsbeweis erzeugt eine Lösung des Problems darüber, dass Nenner und Zähler immer wieder'."\n".
@@ -182,9 +182,9 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω} \cdot 2^{\frac{ 1 }{ 2 }} }{ 2^{ω} }  }',
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} }  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-2-hoch-omega-mal-Wurzel-Zwei-durch-2-hoch-omega', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-2-hoch-omega-mal-Wurzel-Zwei-durch-2-hoch-omega}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Hierdurch können wir nun beliebig endlich oft – und damit potenziell endlos – die Zwei im Bruch kürzen.'."\n",
@@ -217,8 +217,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{ω + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{ω} \cdot 2^{\frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \cdot 2^{ω}  \in  \mathbb{N}_{\infty}  }',
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-mal-2-hoch-omega-element-N-infinity', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-mal-2-hoch-omega-element-N-infinity}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{ω + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  }',
+                                          label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-2-hoch-omega+einhalb-element-N-infinity', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-2-hoch-omega+einhalb-element-N-infinity}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Darüber hinaus müssen der Nenner \lm{ b } und der Zähler \lm{ a } die im Beweis abgeleitete Bedingung erfüllen:'."\n".
