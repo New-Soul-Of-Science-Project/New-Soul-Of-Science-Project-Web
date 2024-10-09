@@ -217,7 +217,10 @@
                     'damit \lm{ \s } als Faktor auch diese Ganzzahligkeit erzeugen kann.'."\n",
                       'Genau das zeigen wir mit dem \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung} und'."\n".
                     'entdecken Zusammenhänge, die mir ganz neu erscheinen.'."\n",
-                      'Wir erkennen im Speziellen, dass wir den Faktor \lm{ 2^{ω} } im Primzahl-Flächenprodukt von \lm{ \s } finden,'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Die Wurzel aus Zwei und die natürlichen Superial-Zahlen} \\\\'."\n".
+                    'Wir erkennen im Speziellen, dass wir den Faktor \lm{ 2^{ω} } im Primzahl-Flächenprodukt von \lm{ \s } finden,'."\n".
                     'der aus der zweiten Wurzel aus Zwei \lm{ *| \sqrt[2]{ 2 } |* = 2^{\frac{1}{2}} } eine aktual unendlich große ganze Zahl macht:'."\n".
                     '\\\\ \color{*Bearb}{(Links an die Formeln?)}'."\n".
                     ''))),
@@ -253,7 +256,10 @@
                     'Unsere neue Erkenntnis zeigt uns jedoch, dass wir den Faktor Zwei im Zähler und Nenner so oft kürzen oder hinzufügen können,'."\n".
                     'solange es aktual unendlich viele Zweien in der Potenz bleiben, ohne den Wahrheitsgehalt der Aussage zu verändern,'."\n".
                     'was im Folgenden sehr wichtig wird.'."\n",
-                      'Im ganz allgemeinen Fall der \lm{ x }-ten Wurzel aus \lm{ n } wie \lm{ *| \sqrt[x]{ n } |* = n^{\frac{1}{x}} }'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Die \lm{ x }-te Wurzel aus \lm{ n } und die natürlichen Superial-Zahlen} \\\\'."\n".
+                    'Im ganz allgemeinen Fall der \lm{ x }-ten Wurzel aus \lm{ n } wie \lm{ *| \sqrt[x]{ n } |* = n^{\frac{1}{x}} }'."\n".
                     'stellt sich die Sache wie folgt dar'."\n".
                     ''))),
                   array( 'equations',

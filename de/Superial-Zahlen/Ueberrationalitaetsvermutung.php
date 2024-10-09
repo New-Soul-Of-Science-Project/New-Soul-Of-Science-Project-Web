@@ -169,13 +169,14 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{N}_{\infty} *) *( \forall n \in \mathbb{N} *) *( n < x *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{x} }{ 2^{x} }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall g \in \mathbb{N}_{\infty} *) *( \forall i \in \mathbb{N} *) *( i < g *)  *[  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{g} }{ 2^{g} }  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Der obige Widerspruchsbeweis erzeugt eine Lösung des Problems darüber, dass Nenner und Zähler immer wieder'."\n".
                     'durch \lm{ 2 } teilbar sein müssen.'."\n".
-                    'Und dies entspricht der Aussage, dass die sich im Beweis zeigende, notwendig fortlaufende Teilbarkeit einer vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
-                    'der Teilbarkeit entspricht.'."\n",
+                    'Und die Anzahl der Teilbarkeit muss sich im Aktual-Unendlichen befinden.'."\n".
+                    'Damit lässt sich die Anzahl der Teilbarkeit durch die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
+                    'normieren.'."\n",
                       'Für die vollständige Induktion verwenden wir das \jump{OM:BiOrd:Einleitung:Vortext:Ordinalzahlen}{Symbol \lm{ ω }} mit dem ihm entsprechenden aktual'."\n".
                     'unendlich großen Wert.'."\n".
                     'Und \lm{ ω } setzen wir nun in die vorstehende Formel ein, womit die Bedingung der fortlaufenden Teilbarkeit erfüllt ist:'."\n".
@@ -239,10 +240,11 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a  =  2^{ω + \frac{ 1 }{ 2 }}  }'),
+                      array( display => 'on',  latex => '{  a  =  2^{\frac{ 1 }{ 2 }} \cdot 2^{ω}  }'),
                       array( display => 'on',  latex => '{  b  =  2^{ω}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  2 \cdot *( 2^{ω} *)^{2}  =  *( 2^{ω + \frac{ 1 }{ 2 }} *)^{2}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  2 \cdot 2^{2 ω}  =  2^{2 ω + 2 \frac{ 1 }{ 2 }}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  2 \cdot *( 2^{ω} *)^{2}  =  *( 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} *)^{2}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  2 \cdot *( 2^{ω} *)^{2}  =  *( 2^{ω + \frac{ 1 }{ 2 }} *)^{2}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  2 \cdot 2^{2 ω}  =  2^{2 ω + 2 \frac{ 1 }{ 2 }}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  2^{2 ω + 1}  =  2^{2 ω + 1}  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -271,8 +273,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{ω} \cdot 2^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2^{ω} }  :\in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 2^{ω} \cdot 2^{\frac{ 1 }{ 2 }} }{ 2^{ω} } \cdot \s  :\in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} \cdot \frac{ \s }{ 2^{ω} }  :\in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} } \cdot \s  :\in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }} \cdot \s  :\in  \mathbb{S}_{\N}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -714,7 +716,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall i \in \mathbb{N} *) *( g \in \mathbb{N}_{\infty} *)  *[  i < g  *]  }',
+                      array( display => 'on',  latex => '{  *( \forall i \in \mathbb{N} *) *( \forall g \in \mathbb{N}_{\infty} *)  *[  i < g  *]  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-g-aktual-unendlich-ganz', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-g-aktual-unendlich-ganz}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -733,10 +735,10 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Hier erkennen wir jetzt, durch vollständiges Kürzen des Bruchs:'."\n".
-                      'Diese beiden Bedingungen beschreiben \lm{ a } und \lm{ b } vollständig.'."\n",
-                        'Es kann keine weiteren Faktoren im Nenner geben, die nicht auch im Zähler hinzukommen müssten'."\n".
-                      'und daher immer gekürzt werden können.'."\n",
-                        'Sowohl der Nenner \lm{ b } als auch der Zähler \lm{ a } sind ganze Zahlen,'."\n".
+                      'Diese beiden Bedingungen beschreiben \lm{ a } und \lm{ b } vollständig.'."\n".
+                      'Es kann keine weiteren Faktoren im Nenner geben, die nicht auch im Zähler hinzukommen müssten'."\n".
+                      'und daher immer gekürzt werden können.'."\n".
+                      'Sowohl der Nenner \lm{ b } als auch der Zähler \lm{ a } sind ganze Zahlen,'."\n".
                       'wie wir ja schon im Widerspruchsbeweis vorausgesetzt haben,'."\n".
                       'der uns ja gerade über diese Bedingung dann zur „Himmelsleiter“ geführt hat:'."\n".
                       ''))),
@@ -744,14 +746,33 @@
                     array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  n^{g}  \in  \mathbb{N}_{\infty}  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-natuerlich-infinit', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-natuerlich-infinit}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{g} \cdot n^{\frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot n^{g}  \in  \mathbb{N}_{\infty}  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-mal-n-hoch-eins-durch-x-natuerlich-infinit', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-mal-n-hoch-eins-durch-x-natuerlich-infinit}', label_incr => true),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{g + \frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  }',
                                           label_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-plus-eins-durch-x-natuerlich-infinit', label_text => '\name{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-plus-eins-durch-x-natuerlich-infinit}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall z \in \mathbb{Z} *)  *[  n^{g + z + \frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'So sind wir zur Lösungsmenge gekommen, die wir finden wollten.'."\n",
+                      'So sind wir zur Lösungsmenge gekommen, die wir finden wollten.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Auch hier können wir, wie im Anfangs betrachteten speziellen Fall \lm{ 2^{ω} },'."\n".
+                      'mit Hilfe der vollständigen Induktion \lm{ ω } normieren:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{ω}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot n^{ω}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{ω + \frac{ 1 }{ x }}  \in  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Dabei ist zu beachten, dass \lm{ n } selber in seiner Primfaktorzerlegung schon Potenzen'."\n".
+                      'von Primzahlen enthalten kann, die größer als Eins sind.'."\n".
+                      'Diese werden hier dann nochmals mit \lm{ ω } potenziert.'."\n".
+                      'Aus diesem Grund ist in diesem allgemeinen Fall die mögliche Normierung nicht unbedingt am Ende.'."\n".
+                      'Mit einer zusätzlichen Möglichkeit der Normierung, die die effektiv notwendige Größe der Potenzen der Primzahlen'."\n".
+                      'im aktual unendlichen Faktor betrifft, um eine aktual unendlich große ganze Zahl zu erreichen,'."\n".
+                      'beschäftigen wir uns im Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}}.'."\n",
                         '\\\\'."\n".
                       ''))),
 
