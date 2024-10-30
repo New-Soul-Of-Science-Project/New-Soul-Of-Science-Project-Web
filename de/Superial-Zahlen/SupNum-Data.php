@@ -62,6 +62,7 @@
           'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins' => array( headline_text => 'SN.AbIn.3'),
           'OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration' => array( headline_text => 'Die Ableitung ist die Umkehrung der Integration'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Ableitungen-Integrale:Integration:Integration-Umkehrung-Ableitung' => array( headline_text => 'Die Integration als Umkehrung der Ableitung'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Ableitungen-Integrale:Ableitung:Beispiele-fuer-Ableitungen' => array( headline_text => 'Beispiele für Ableitungen'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation' => array( headline_text => 'SN.AbIn.4'),
           'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-basis' => array( headline_text => 'SN.AbIn.10'),
           'OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Ableitung-x2-ausmultipliziert' => array( headline_text => 'SN.AbIn.11'),

@@ -115,7 +115,7 @@
                     'Die Definition der Ableitung muss folglich nicht zwingend als Division formuliert werden.'."\n",
                       'Durch die detaillierte Betrachtung mit aktual unendlichen Zahlen erschließt sich ein genaueres Verständnis.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung:Beispiele-fuer-Ableitungen', text =>
                       
                 'Beispiele für Ableitungen', subline =>
                   '')),
@@ -221,7 +221,9 @@
                   array( 'text', array( text => array(
                     'Hieran ist bemerkenswert, dass jede endliche Zahl \lm{ x } im Verhältnis zur unendlich kleinen Einheit \lm{ \s^{-1} }'."\n".
                     'eine ganze Zahl sein muss.'."\n".
-                    'Skalieren wir diese Erkenntnis auf die fraktale Ebene der endlichen ganzen Zahlen, indem wir die unendlich kleinen gezählten Einheiten'."\n".
+                    'Dies drücken wir vorstehend durch die Menge \lm{ \mathbb{S}^{-1}_{Z} } aus,'."\n".
+                    'wie wir sie in \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen}‹} definiert haben.'."\n",
+                      'Skalieren wir diese Erkenntnis auf die fraktale Ebene der endlichen ganzen Zahlen, indem wir die unendlich kleinen gezählten Einheiten'."\n".
                     'durch Multiplikation mit \lm{ \s } ins Endliche holen, dann erhalten wir für die natürlichen Superial-Zahlen'."\n".
                     'von der Null bis ohne \lm{ x \cdot \s } die Menge:'."\n".
                     ''))),
@@ -325,7 +327,6 @@
                     'Dies kommt weil alle einzelnen Differenzen sich immer nur relativ auf den vorhergehenden Wert der Funktion beziehen.'."\n",
                       'Integrieren wir also in einem Intervall, dann müssen wir die Differenzen, auch genannt Differenziale,'."\n".
                     'auf den Wert der ursprünglichen Funktion \lm{ f(a) } am Intervallbeginn \lm{ a } aufsummieren:'."\n".
-                    '\\\\ \color{*Bearb}{(Diese Formelnummern in der Einleitung nach dem Text \quote{Nun können wir das allgemeine Integral recht einfach definieren} benutzen.)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -346,12 +347,12 @@
                 'Beispiel eines konkreten Integrals', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Nun ein Beispiel, um anschaulich zu verstehen, was vor sich geht:'."\n".
+                    'Nun ein Beispiel, um anschaulich zu verstehen, was bei der Integration genau vor sich geht:'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Wir nehmen das erste obige \jump{OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen}{Ableitungsbeispiel} \lm{ f(x) = x^2 } mit'."\n".
+                      'Wir nehmen das erste obige \jump{OM:SupNum:Ableitungen-Integrale:Ableitung:Beispiele-fuer-Ableitungen}{Ableitungsbeispiel} \lm{ f(x) = x^2 } mit'."\n".
                       'dem Ableitungsergebnis \lm{ f\'(x) = 2 x + s^{-1} } und setzen dies in unsere Integralformel ein:'."\n".
                       ''))),
                   array( 'equations',
@@ -402,7 +403,7 @@
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x', label_text => '\name{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Diese Summe haben wir auch noch einmal im Einzelnen im Rahmen der Superial-Zahlen aus ihren Teilsummen im Abschnitt ›\italic{\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Direkte-Herleitung-der-angepassten-Gaussschen-Summenformel}}‹'."\n".
+                      'Diese Summe haben wir auch noch einmal im Einzelnen im Rahmen der Superial-Zahlen aus ihren Teilsummen im Abschnitt \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Direkte-Herleitung-der-angepassten-Gaussschen-Summenformel}‹}'."\n".
                       'hergeleitet, um zu zeigen, und damit ganz sicher zu gehen, dass diese richtig ist.'."\n",
                         'Das ist genau das gesuchte Ergebnis, was wir sofort durch Überprüfung sehen.'."\n".
                       'Dies eingesetzt in Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Integriere-zu-x2-bis-auf-letzte-Summe}'."\n".
