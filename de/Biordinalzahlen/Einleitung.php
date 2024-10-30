@@ -1169,7 +1169,7 @@
                       'Bemerkenswerter Weise hat die superiale Basis \lm{ \s } dann wieder genau so viele natürliche Vorgänger,'."\n".
                     'wie sie selber groß ist.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:X', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:SummeAllerNatuerlichenZahlenBisInsAktualUnendlicheBerechnen', text =>
                       
                 'Die Summe aller natürlichen Zahlen bis ins Aktual-Unendliche berechnen', subline =>
                   'Biordinalzahlen machen es möglich')),

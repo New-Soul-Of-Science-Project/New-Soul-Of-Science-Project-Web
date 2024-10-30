@@ -82,6 +82,7 @@
           'OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl' => array( headline_text => 'Neue Einsichten zu positiven aktual unendlichen Biordinalzahlen'/*, headline_text_short => 'X'*/),
           'OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega' => array( headline_text => 'Es gibt mehr ganze Zahlen von Null bis zu \lm{ ω }, als der Wert von \lm{ ω } ausdrückt', headline_text_short => 'Es gibt mehr ganze Zahlen von Null bis zu ω, als der Wert von ω ausdrückt'),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-Zahlen-vor-omega' => array( headline_text => 'BO.Ein.NE.68'),
+          'OM:BiOrd:Einleitung:NeueEinsichten:SummeAllerNatuerlichenZahlenBisInsAktualUnendlicheBerechnen' => array( headline_text => 'Die Summe aller natürlichen Zahlen bis ins Aktual-Unendliche berechnen'/* , headline_text_short => 'X' */),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-n' => array( headline_text => 'BO.Ein.NE.74'),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich' => array( headline_text => 'BO.Ein.NE.75'),
           'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-c' => array( headline_text => 'BO.Ein.NE.78'),

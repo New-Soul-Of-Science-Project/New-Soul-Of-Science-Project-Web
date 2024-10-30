@@ -291,8 +291,10 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \int_{0}^{x} f\'(n) \,dn  \widehat{=}  \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) \cdot s^{-1}  }'),
-                      array( display => 'on',  latex => '{  f(x)  :=  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) \cdot s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \int_{a}^{x} f\'(n) \,dn  \widehat{=}  \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) \cdot s^{-1}  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Aequ-Integral-mit-Summe-ueber-Intervall-Menge-a-bis-x-superial-kleiner-ganzer-Zahlen}', label_incr => false),
+                      array( display => 'on',  latex => '{  f(x)  :=  f(a) + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! f\'(n) \cdot s^{-1}  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Diese Summe ist so definiert, dass sie im Falle von \lm{ x < 0 } negativ wird.'."\n",
@@ -336,19 +338,21 @@
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Die übrige Summe der superial kleinen ganzen Zahlen der ersten \lm{ x \cdot s } Elemente dieser Menge, mit der Null,'."\n".
                       'ergibt sich aus der angepassten Gaußschen Summenformel\footnote{\const{BiOrd_g_footnote_text_GaussscheSummenformel}},'."\n".
-                      'wie bei den Biordinalzahlen im Abschnitt \italic{›\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}‹} nach Formel'."\n".
-                      '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich} angegeben:'."\n".
-                      '\\\\ \color{*Bearb}{(In der nachfolgenden Summe ist die Menge \lm{ \mathbb{N}_\infty } zu überdenken, da sie auch Werte wie \lm{ ω - n } enthält, was wohl nicht sein kann. Vielleicht wäre hier die Menge der Ordinalzahlen \lm{ \mathbb{On} } richtig, die keine Vorgänger der Limeszahlen enthält? Erst bei den Superial-Zahlen kommen auch Vorgänger und Nachfolger von Limes Zahlen wie \lm{ \s \pm n = ω^{ω} \pm n } hinzu, aber dies ja, weil bestimmte Limeszahlen wie \lm{ ω } und deren Vorgänger und Nachfolger \lm{ ω \pm n } ausgeschlossen sind.)}'."\n".
+                      'wie bei den Biordinalzahlen im Abschnitt \italic{›\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:SummeAllerNatuerlichenZahlenBisInsAktualUnendlicheBerechnen}‹} nach Formel'."\n".
+                      '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich} angegeben,'."\n".
+                      'weil die Menge \lm{ \mathbb{S}_{\N} } nach Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-g}'."\n".
+                      'zur Klasse \lm{ \mathbb{K}_{\infty,g} } der Gauß-Summen äquivalenten Klassen – so auch Mengen – gehört:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall i \in [ 0, n [_{\mathbb{N}_{\infty}} } i  =  \frac{ n^{2} - n }{ 2 }  }',
-                                           /* label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich', */label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => false),
+                      array( display => 'on',  latex => '{  \mathbb{S}_{\N}  \in  \mathbb{K}_{\infty,g}  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-g}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall i \in [ 0, n [_{\mathbb{S}_{\N}} } i  =  \frac{ n^{2} - n }{ 2 }  }',
+                                          label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Diese Summe ist extra darauf angepasst, dass sie auch für aktual unendlich große Werte von \lm{ n },'."\n".
-                      'also für aktual unendlich große natürliche Zahlen, gilt.'."\n".
-                      'Dies wird durch das \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{Mengensymbol \lm{ \mathbb{N}_\infty }} ausgedrückt.'."\n",
+                      'also für aktual unendlich große natürliche Zahlen, gilt.'."\n",
                         'Wir müssen nur berücksichtigen, dass die Werte der gesuchten Summe in superial kleinen Schritten daher kommen:'."\n".
                       'Das bedeutet, dass wir es mit \lm{ x \cdot s } Elementen zu tun haben – anstatt mit \lm{ x } –,'."\n".
                       'was in der oben stehenden Formel auf der Ergebnisseite als \lm{ x \cdot s } für \lm{ n } eingeht.'."\n".
@@ -362,7 +366,9 @@
                                           label_name => 'OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x', label_text => '\name{OM:SupNum:Einleitung:Vortext:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Das ist genau das gesuchte Ergebnis, was wir sofort durch Überprüfung sehen.'."\n".
+                      'Diese Summe haben wir auch noch einmal im Einzelnen im Rahmen der Superial-Zahlen aus ihren Teilsummen im Abschnitt ›\italic{\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Direkte-Herleitung-der-angepassten-Gaussschen-Summenformel}}‹'."\n".
+                      'hergeleitet, um zu zeigen, und damit ganz sicher zu gehen, dass diese richtig ist.'."\n",
+                        'Das ist genau das gesuchte Ergebnis, was wir sofort durch Überprüfung sehen.'."\n".
                       /*  '\color{*Bearb}{(In Arbeit …)} Um die übrige Summe zu berechnen, ist ein tieferes Verständnis der \jump{OM:BiOrd:Home}{Biordinalzahlen}'."\n".
                       'anzuwenden und wir kommen auch nicht drum herum nachfolgend ein tieferes Verständnis der hier entwickelten Superial-Zahlen zu erlangen.'."\n",
                         'Wir können an dieser Stelle diese noch unbekannte Summe durch Umstellung berechnen,'."\n".

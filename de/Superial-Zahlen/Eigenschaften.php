@@ -32,7 +32,8 @@
                     'ausgedrückt werden.'."\n".
                     'Gleiches gilt auch für die Beschreibung der hierfür notwendigen aktual unendlichen Potenzen der Primzahlen.'."\n",
                       'Die besonderen Eigenschaften der Superial-Zahlen, die auf dieser Seite näher untersucht werden,'."\n".
-                    'versprechen uns tiefe neue Einblicke in die Struktur der Zahlen und begründen damit die Zahlentheorie der Analysis.'."\n".
+                    'versprechen uns tiefe neue Einblicke in die Struktur der Zahlen, inklusive der transzendenten Zahlen\footnote{\const{SupNum_g_footnote_text_TranszendenteZahl}},'."\n".
+                    'und begründen damit die Zahlentheorie der Analysis.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -55,18 +56,54 @@
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Fragen}',
-                    '• Handelt es sich hier wirklich um die Realanteile algebraischer Zahlen?',
+                    '• Wenn wir von algebraischer Zahlen sprechen, dann handelt es sich nicht um die, die durch Radikale darstellbar sind!',
                     '– Ich habe gelesen, dass nicht alle algebraischen Zahlen mit Wurzeln darstellbar sind: \quote{Im Rahmen der Galoistheorie werden diese Zwischenkörper untersucht, um so tiefe Einblicke über die Lösbarkeit oder Nichtlösbarkeit von Gleichungen zu erhalten. Ein Resultat der Galoistheorie ist, dass zwar jede komplexe Zahl, die man aus rationalen Zahlen durch Verwendung der Grundrechenarten (Addition, Subtraktion, Multiplikation und Division) sowie durch Ziehen n-ter Wurzeln (n eine natürliche Zahl) erhalten kann (man nennt solche Zahlen „durch Radikale darstellbar“), algebraisch ist, umgekehrt aber algebraische Zahlen existieren, die man nicht in dieser Weise darstellen kann; alle diese Zahlen sind Nullstellen von Polynomen mindestens 5. Grades.}\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}} Möglicherweise handelt es sich „nur“ um (Polynom-)Radikale: Vgl. \url{https://de.wikipedia.org/w/index.php?title=Radikal_(Mathematik)&oldid=213475890#Auflösung_eines_Polynoms_durch_Radikale}.',
                     '– Dann stünde ansonsten der Beweis aus, dass alle Realanteile der algebraischen Zahlen Faktoren von \lm{ \s } sind, die ganze Zahlen ergeben. Dazu würden dann unter anderem auch elliptische Integrale zur Lösung Polynome 5. Grades gehören: Vgl. \url{https://www.spektrum.de/lexikon/mathematik/elliptisches-integral/4494} und \url{https://www.spektrum.de/wissen/charles-hermite-1822-1901/1171317}.',
                     '• Wenn nun alle Koeffizienten der algebraischen Zahlen Faktoren von \lm{ \s } sind, die ganze Zahlen ergeben:',
                     '– Werden diese dann beim Zählen der ganzen Superial-Zahlen mitgezählt oder nur die rationalen Koeffizienten? Ich denke, sie werden mitgezählt.',
                     '– Anders gefragt: gibt es dann immer noch \lm{ \frac{ \s }{ 2 \cdot ω } } rationale Zahlen im Intervall zwischen Null und ausschließlich Eins, oder müssen wir das korrigieren?',
-                    //%! '\bold{Vereinfachungen}',
-                    //%! '• Das Produkt aller unterschiedlichen Primfaktoren einer natürlichen Zahl \lm{ n } bekommen wir über die (Zahlen-)Radikal-Funktion \lm{ rad(n) }: Vgl. \url{https://de.wikipedia.org/w/index.php?title=Radikal_(Mathematik)&oldid=213475890#In_der_Zahlentheorie}.',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Es sind im Grunde folgende Bedingungen zu erfüllen, damit eine Zahl \lm{ a } ein sinnvoller Koeffizient der Superial-Zahlen sein kann.'."\n",
+                    'Zur Frage, welche Koeffizienten innerhalb der Superial-Zahlen sinnvoll sind, gibt es mindestens zwei Ausgangspunkte und Perspektiven,'."\n".
+                    'die scheinbar auf das selbe Ergebnis hinauslaufen:'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X', text =>
+                      
+                'Perspektive der Zahlentheorie der Analysis', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Zum einen können wir uns auf den Standpunkt stellen, dass für eine Zahlentheorie der Analysis sowohl die Ableitung als auch'."\n".
+                    'das Integral sinnvoll funktionieren sollten und damit beide plausibel definierbar sein müssen.'."\n",
+                      'Bei näherer Betrachtung stellen wir deshalb fest, dass die nun mit Hilfe aktual unendlicher Summen definierten Integrale'."\n".
+                    'aktual unendlich kleine ganze Zahlen benötigen, die wir aus einer entsprechenden Verkleinerung der'."\n".
+                    '\jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{Erweiterung ganzer Zahlen ins aktual unendlich Große} gewinnen können.'."\n",
+                      'Betrachten wir diese ganzen Superial-Zahlen, dann haben diese in den Summanden mit negativen Potenzen von \lm{ \s }'."\n".
+                    'nur Nullen als Koeffizienten.'."\n".
+                    'Im endlichen, also der Koeffizient von \lm{ \s^{0} = 1 }, haben wir nur endliche ganze Zahlen.'."\n".
+                    'Und in den aktual unendlichen Summanden der ganzen Superial-Zahlen, also die positiven Potenzen von \lm{ \s },'."\n".
+                    'ergibt sich das Fragezeichen, dass nicht gleich ganz eindeutig beantwortbar ist.'."\n",
+                      'Das kommt daher, weil die aktual unendlich Großen Summanden dieser ganzen Superial-Zahlen alle ganze Zahlen sein müssen.'."\n".
+                    'Und zwar deshalb, weil der endliche Summand und die unendlich kleinen Summand in jedem Fall immer ganze Zahlen sind.'."\n".
+                    'Kommt nun der Summand dazu, der Eins als Potenz hat, also \lm{ \s^{1} = \s }, muss dieser im Produkt mit seinem Koeffizienten'."\n".
+                    'auch eine ganze Zahl sein, weil wir sonst insgesamt keine ganze Zahl erhalten.'."\n",
+                      'Dazu stellen wir fest, das schon einmal jede rationale Zahl im Produkt mit \lm{ \s } aufgrund seiner Primzahlstruktur '."\n".
+                    '\jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{immer eine ganze Zahl ergibt}.'."\n".
+                    'Auch im Produkt mit allen Realanteilen von durch Radikale, also Wurzeln, darstellbaren algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
+                    'wie wir nachfolgend gleich zeigen werden, ergeben sich immer ganze Superial-Zahlen.'."\n".
+                    'Ob dies, wie von mir vermutet, wirklich für \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}{alle Realanteilen von algebraischen Zahlen}'."\n".
+                    'gilt, bleibt hingegen erst einmal noch offen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X', text =>
+                      
+                'Perspektive des Stellenwertsystems der Superial-Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Zum anderen können wir erwarten, dass die Koeffizienten der Superial-Zahlen, wie in jedem anderen Stellenwertsystem,'."\n".
+                    'grundsätzlich keine Überträge in niedrigere oder höhere Stellen erzeugen.'."\n".
+                    'Wobei sie gleichzeitig aber so fein granuliert und von einer Größe sind, dass sie die ihnen zugedachte Stelle'."\n".
+                    'maximal ausfüllen.'."\n",
+                      'Demnach sind im Grunde folgende Bedingungen zu erfüllen, damit eine Zahl \lm{ a } ein sinnvoller Koeffizient der Superial-Zahlen sein kann:'."\n",
                       'Ihr Produkt mit der superialen Basis \lm{ a \cdot \s } darf nicht dazu führen, dass sich die aktual unendliche Größenordnung verändert,'."\n".
                     'also die Potenz von \lm{ \s } im Wert des Produkts,'."\n".
                     'weil die Koeffizienten sonst nicht wie sinnvolle Ziffern in einem \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem}'."\n".
@@ -142,7 +179,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Bezüglich der Ganzzahligkeit im Produkt mit der superialen Basis \lm{ \s }} \\\\'."\n".
-                    'Alle reellen Zahlen, die nicht transzendent sind, sind Koeffizienten der algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}.'."\n".
+                    'Alle reellen Zahlen, die nicht transzendent sind, sind Koeffizienten der algebraischen Zahlen.'."\n".
                     'Demnach stellt sich dann die Frage, ob wirklich alle Koeffizienten der algebraischen Zahlen im Produkt mit der superialen Basis \lm{ \s }'."\n".
                     'tatsächlich ganze Zahlen sind.'."\n",
                       'Bezüglich der rationalen Zahlen\footnote{\const{SupNum_g_footnote_text_RationaleZahl}}, die ja ein Teil'."\n".
@@ -152,7 +189,8 @@
                     'zeigen wir in der \jump{OM:SupNum:Formale-Entwicklung}{formalen Entwicklung}.'."\n".
                     'Ein Produkt unserer superialen Basis \lm{ \s } mit jeder endlichen positiven rationalen Zahl'."\n".
                     '\lm{ q^{+} } eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{unendliche natürliche Zahl aus \lm{ \mathbb{N}_{\infty} }} ist;'."\n".
-                    'und im Besonderen offensichtlich eine \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche Superial-Zahl} aus \lm{ \mathbb{S}_{\N} }:'."\n".
+                    'und im Besonderen offensichtlich eine \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche Superial-Zahl} aus \lm{ \mathbb{S}_{\N} },'."\n".
+                    'wie oben bereits gesagt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1432,7 +1470,8 @@
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{On}  \in  \mathbb{K}_{\infty,c}  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-c}', label_incr => false),
-                      array( display => 'on',  latex => '{  \mathbb{S}_{\N}  \in  \mathbb{K}_{\infty,c}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{S}_{\N}  \in  \mathbb{K}_{\infty,c}  }',
+                                          label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-c', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-c}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'In beiden Klassen \lm{ \mathbb{On} } und \lm{ \mathbb{S_{\N}} } – denn eine Menge ist nur eine besondere Klasse –'."\n".
@@ -1509,7 +1548,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{S}_{\N}  \in  \mathbb{K}_{\infty,g}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{S}_{\N}  \in  \mathbb{K}_{\infty,g}  }',
+                                          label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-g', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-g}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'So gehört sie dann auch zur Klasse \lm{ \mathbb{K}_{\infty,g} } der Gauß-Summen äquivalenten Klassen.'."\n",
