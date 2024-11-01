@@ -106,15 +106,22 @@
                   '')),
                   array( 'text', array( text => array(
                     'Um nachfolgend genau zu arbeiten, möchte ich an dieser Stelle vorab deutlich machen,'."\n".
-                    'dass im folgenden die Funktionsparameter – meistens \lm{ x } – \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Realanteile algebraischer Zahlen der Menge \lm{ \mathbb{A}_{\R} }} sind.'."\n".
-                    'Transzendente Zahlen sind an dieser nicht zugelassen.'."\n".
+                    'dass im folgenden die Funktionsparameter – meistens \lm{ x } –'."\n".
+                    'die \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}'."\n".
+                    'der Menge \lm{ \mathbb{A}_{\S} } sind.'."\n".
+                    'Nach jetzigem Stand sind dies mindestens alle realen Koeffizienten der algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
+                    'die durch Radikale\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}} darstellbar sind.'."\n".
+                    'Dass genau alle realen Koeffizienten algebraischer Zahlen in der Menge \lm{ \mathbb{A}_{\S} } sind \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}{vermuten wir},'."\n".
+                    'ist jedoch noch zu beweisen.'."\n",
+                      '\jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:superiale-Koeffizienten-Realanteile-algebraischer-Zahlen}{Transzendente Zahlen} scheinen hingegen als Koeffizienten nicht sinnvoll.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen', text =>
                                            
                 'Ableitung genau verstehen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Das Nicht-Verschwinden aller Summanden funktioniert dann, wenn wir die beim Ableiten gegen Null gehenden Summanden selber als unendlich klein, aber nicht als verschwindend betrachten.'."\n".
+                    'Das Nicht-Verschwinden aller Summanden funktioniert dann, wenn wir die beim \jump{OM:SupNum:Ableitungen-Integrale:Ableitung}{Ableiten}'."\n".
+                    'gegen Null gehenden Summanden selber als unendlich klein, aber nicht als verschwindend betrachten.'."\n".
                     'Wir setzten den gegen Null gehenden Summanden zu \lm{ \Delta x := \s^{-1} }, zum Kehrwert der \italic{superialen Basis} \lm{ \s },'."\n".
                     'die wir im Verlauf genauer ergründen werden:'."\n".
                     ''))),
@@ -187,7 +194,7 @@
                 'Integration genau verstehen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Beim Integral müssen wir nun den Prozess des Differenzierens wieder Rückgängig machen und'."\n".
+                    'Beim \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integral} müssen wir nun den Prozess des Differenzierens wieder Rückgängig machen und'."\n".
                     'lernen viel Interessantes dabei, wenn wir herausfinden, wie das geht.'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -310,8 +317,8 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{\anchor{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen:Konkretes-Integral}{}Konkretes Integral} \\\\'."\n".
-                    'Nun ein Beispiel, um anschaulich zu verstehen, was vor sich geht:'."\n".
-                    '\\\\ \color{*Bearb}{(Auf die entsprechenden Formeln des Abschnitts \italic{\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Beispiel-eines-konkreten-Integrals}} durch Nutzung der Formelnummern dort, verweisen.)}'."\n".
+                    'Nun ein Beispiel, um anschaulich zu verstehen, was vor sich geht.'."\n".
+                    'Dieses Beispiel finden wir in der Stellenwert-Schreibweise auch im Abschnitt \italic{›\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Beispiel-eines-konkreten-Integrals}‹}.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -776,7 +783,7 @@
                   '\condb{Überrationalitätsvermutung} \\\\'."\n".
                     '\color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)} \\\\'."\n".
                     'Eine weitere Vermutung, die der Primfaktorzerlegungen von \lm{ \s } entspringt,'."\n".
-                    'dreht sich um die Frage, ob der positive reelle Anteil von algebraischen Zahlen\color{*Bearb}{(Verweis)}'."\n".
+                    'dreht sich um die Frage, ob der positive reelle Anteil von algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
                     'durch einen von mir so genannten \italic{überrationalen Bruch} dargestellt werden kann.'."\n",
                       'Ein überrationaler Bruch ist ein Bruch, der im Nenner und im Zähler unendlich große, teilerfremde Zahlen hat,'."\n".
                     'deren Primfaktorzerlegung aus unendlich vielen endlichen Primzahlen endlich ganzzahliger Potenzen besteht.'."\n".

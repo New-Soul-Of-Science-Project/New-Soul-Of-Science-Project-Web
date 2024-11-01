@@ -55,6 +55,7 @@
               'wiki:Primorial:2015',
               'wiki:Primzahl:2021',
               'wiki:QuadratischePyramidalzahl:2021',
+              'wiki:RadikalMathematik:2022',
               'wiki:RationaleZahl:2022',
               'wiki:RiemannscheVermutung:2023',
               'wiki:RiemannscheZetaFunktion:2022',

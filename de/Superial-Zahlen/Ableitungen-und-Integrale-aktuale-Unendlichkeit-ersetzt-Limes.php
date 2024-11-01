@@ -169,7 +169,10 @@
                   '')),
                   array( 'text', array( text => array(
                     'Wir können tatsächlich recht einfach erkennen, welche \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Funktion ihrer eigenen Ableitung gleich} ist.'."\n".
-                    'Die Superial-Zahlen führen uns hier zu einer erstaunlichen Entdeckung.'."\n".
+                    'Die Superial-Zahlen führen uns hier zu einer erstaunlichen Entdeckung, auch in Bezug auf transzendente Zahlen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Kommen wir nun im nächsten Abschnitt aber zur Umkehrung der Ableitung, der \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integration}.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -192,7 +195,8 @@
                     'Die Integration spielt für das tiefere Verständnis der Superial-Zahlen und die Erkenntnis,'."\n".
                     'dass diese etwas echt Besonderes sind, eine wichtige Rolle.'."\n",
                       'Der Grund dafür liegt darin, dass die Integration eine Summe über unendlich viele Summanden darstellt.'."\n".
-                    'Im Rahmen der Superial-Zahlen ist die Ableitung mit Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}'."\n".
+                    'Im Rahmen der Superial-Zahlen ist die \jump{OM:SupNum:Ableitungen-Integrale:Ableitung}{Ableitung}'."\n".
+                    'mit Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Ableitung:Equ-Def-Ableitung-mit-s-hoch-minus-Eins-Kurznotation}'."\n".
                     'durch unsere aktual unendliche superiale Basis \lm{ \s } in Form von \lm{ \s^{-1} } wohldefiniert.'."\n".
                     'Da die Integration die Ableitung per Definition umkehren muss, sind dadurch auch die aktual unendlich kleinen Schritte ihrer'."\n".
                     'Summe darauf basierend wohldefiniert.'."\n",
@@ -201,8 +205,8 @@
                     'Die Schritte der Summe werden also in aktual unendlich kleinen Einheiten gezählt, was uns zum Zählen und'."\n".
                     'so zu einem Verständnis von ganzen Zahlen innerhalb der Superial-Zahlen führt.'."\n".
                     'Durch das Zählen von der Null an dann selbstverständlich auch zu natürlichen Zahlen innerhalb der Superial-Zahlen.'."\n",
-                      'Hier erkennen wir, dass die Superial-Zahlen einen tiefen Bezug zur Zahlentheorie haben könnten und schließlich auch haben,'."\n".
-                    'wie wir insgesamt feststellen.'."\n".
+                      'Hier erkennen wir, dass die Superial-Zahlen einen tiefen Bezug zur Zahlentheorie haben,'."\n".
+                    'wie wir in dieser Arbeit immer wieder feststellen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
                       
@@ -210,7 +214,9 @@
                   '')),
                   array( 'text', array( text => array(
                     'Die Art von ganzen oder natürlichen Zahlen, mit denen wir es in diesem Fall zu tun haben, sind aktual unendlich kleine'."\n".
-                    'Superial-Zahlen, wie die folgenden, die sich dadurch auszeichnen, dass sie von Null bis zu einer endlichen Zahl \lm{ x } gehen;'."\n".
+                    'ganze oder natürliche Superial-Zahlen, wie die folgenden, die sich dadurch auszeichnen, dass sie von Null bis'."\n".
+                    'zu einer endlichen Zahl \lm{ x \in \mathbb{A}_{\S} } gehen – \lm{ \mathbb{A}_{\S} } als Menge der'."\n".
+                    '\jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} –;'."\n".
                     'auszugsweise in einer Menge aufgelistet, wobei der Beginn und das Ende exakt stimmen:'."\n".
                     ''))),
                   array( 'equations',
@@ -234,7 +240,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Schreiben wir diese Menge auszugsweise einmal explizit hin,'."\n".
-                    'wobei der Beginn und das Ende exakt stimmen, erhalten wir:'."\n".
+                    'wobei der Beginn und das Ende exakt stimmen, erhalten wir nun:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -246,15 +252,19 @@
                     'mit \lm{ x \in \mathbb{A}_{\S} \land a \in [ 0, 1 ]_{\mathbb{A}_{\S}} }, oder anders ausgedrückt alle \lm{ a \cdot \s },'."\n".
                     'mit \lm{ x \in \mathbb{A}_{\S} \land a \in [ 0, x ]_{\mathbb{A}_{\S}} }, immer ganze Zahlen sind.'."\n",
                       'Daher beschäftigt sich die Theorie der Superial-Zahlen in ihrem Zentrum besonders auch damit, aus welcher Menge \lm{ \mathbb{A}_{\S} } die Zahlen'."\n".
-                    '\lm{ x } unter diesem Aspekt sinnvollerweise sein können, so, dass \lm{ x \cdot \s } ganze Zahlen sind,'."\n".
+                    '\lm{ x } unter diesem Aspekt sinnvollerweise sein können, so, dass \lm{ x \cdot \s } ganze Zahlen sind;'."\n".
                     'also mit den \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen Koeffizienten von \lm{ \s }}.'."\n",
-                      'Dabei ist es aufgrund der Definition von \lm{ \s } schnell zu sehen, dass alle rationalen Koeffizienten \lm{ x \in \mathbb{Q} }'."\n".
+                      'Dabei ist es aufgrund der Definition von \lm{ \s } schnell zu sehen, dass alle rationalen Koeffizienten \lm{ q \cdot \s }, mit \lm{ q \in \mathbb{Q} },'."\n".
                     'ganze Zahlen sind.'."\n",
-                      'Hingegen müssen wir erst aufwendig beweisen, dass auch alle Wurzeln der natürlichen Zahlen als Koeffizienten'."\n".
-                    '– wie \lm{ \sqrt{2} \cdot \s } – auch sämtlich ganze Zahlen sind, müssen wir erst mit dem \jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung}'."\n".
-                    'aufwendig und kreativ zeigen.'."\n".
-                    'Diese Wurzeln gehören zu den algebraischen Zahlen und es bleibt derzeit noch die Frage offen, ob wirklich alle'."\n".
-                    'realen Koeffizienten der algebraischen Zahlen als Koeffizienten von \lm{ \s } ganze Zahlen ergeben.'."\n".
+                      'Hingegen mussten wir erst aufwendiger beweisen, dass auch alle Wurzeln der natürlichen Zahlen als Koeffizienten,'."\n".
+                    'wie \lm{ \sqrt{2} \cdot \s }, auch sämtlich ganze Zahlen sind, wie wir im \jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung} sehen.'."\n".
+                    'Auf diesen Beweis aufbauend zeigen wir weiter, dass selbst alle durch Radikale\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}}'."\n".
+                    '– also \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Durch-Radikale-darstellbare-algebraischen-Zahlen-sinnvolle-Koeffizienten-SZ}{Wurzeln und deren arithmetischen Verknüpfungen} –'."\n".
+                    'darstellbaren realen Koeffizienten der algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    'sämtlich im oben erklärten Sinn sinnvolle Koeffizienten von \lm{ \s } sind und im Produkt immer ganze Zahlen sind.'."\n".
+                    'Es bleibt derzeit noch die Frage offen, ob wirklich alle'."\n".
+                    'realen Koeffizienten der algebraischen Zahlen als Koeffizienten von \lm{ \s } ganze Zahlen im Produkt mit \lm{ \s } ergeben.'."\n".
+                    'Dies Vermuten wir auf der Seite \italic{›\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}‹}.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
                       
@@ -263,7 +273,8 @@
                   array( 'text', array( text => array(
                     'Wollen wir uns der Integration im Rahmen der Superial-Zahlen nähern, dann stehen bestimmte aktual unendliche Summen'."\n".
                     'und dafür wichtige Eigenschaften der Superial-Zahlen im Mittelpunkt.'."\n".
-                    'Dabei ist es praktisch, die Summen mit Hilfe von Intervall-Mengen zu definieren.'."\n",
+                    'Dabei ist es praktisch, die Summen mit Hilfe von \jump{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}{Intervall-Mengen}'."\n".
+                    'zu definieren.'."\n",
                       'Zum einen ist es wichtig zu verstehen, dass ganze Superial-Zahlen \lm{ \mathbb{S}_{\Z} } endliche ganze sowie'."\n".
                     'aktual unendlich große ganze Zahlen sind, die alle immer einen Vorgänger und Nachfolger haben.'."\n".
                     'Zum anderen haben positive ganze Superial-Zahlen aber von der Null an auch genauso viele Vorgänger,'."\n".
@@ -286,16 +297,17 @@
                       'Das dies wahr sein muss, zeigen wir im Abschnitt \italic{\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration}},'."\n".
                     'den sonst könnte das Integral nicht die Umkehrung der Ableitung sein.'."\n",
                       'Summieren wir nun, wie wir es für das Integral benötigen, dann tun wir dies im Intervall einer endlichen, nicht unbedingt ganzen Zahl \lm{ x }'."\n".
-                    'jetzt in aktual unendlich kleinen Schritten der Größe \lm{ \s^{-1} }:'."\n".
+                    'jetzt in aktual unendlich kleinen Schritten der Größe \lm{ \s^{-1} = \;.*〈 1 *〉\; }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall x \in \mathbb{A}_{\S} *)  *[  \sum_{ \forall [ 0, x [_{\mathbb{S}_{\Z}}^{-1} } \!\! \s^{-1}  =  x  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall x \in \mathbb{A}_{\S} *)  *[  \sum_{ \forall [ 0, x [_{\mathbb{S}_{\Z}}^{-1} } \! .*〈 1 *〉  =  x  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Wie oben geschildert, funktioniert dies für alle rationalen \lm{ x } und für alle \lm{ x }, die ganze Wurzel aus rationalen Zahlen sind,'."\n".
                     'sowie deren Summen, Differenzen, Produkte, Brüche und Potenzen.'."\n".
-                    'Offen, aber meiner Meinung nach wahrscheinlich, auch für unendliche Summen dieser, also vermutlich für all realen Koeffizienten algebraischer Zahlen.'."\n".
+                    'Offen, aber meiner Meinung nach wahrscheinlich, auch für unendliche Summen dieser, also vermutlich für alle realen Koeffizienten algebraischer Zahlen.'."\n".
                     'Dann wären die einzigen \lm{ x }, für die das innerhalb der Superial-Zahlen erster Stufe nicht funktioniert, \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen}{transzendente Zahlen},'."\n".
                     'auf die ich an anderer Stelle eingehen möchte.'."\n",
                     ''))),
@@ -340,14 +352,17 @@
                   array( 'text', array( text => array(
                     'Damit haben wir die vorherige Ableitung wieder rückgängig gemacht, weil wir eine schlüssige Definition'."\n".
                     'der ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} } beziehungsweise der superial kleinen ganzen Zahlen'."\n".
-                    '\lm{ \mathbb{S}_{\Z}^{-1} } entwickelt haben.'."\n".
+                    '\lm{ \mathbb{S}_{\Z}^{-1} } entwickelt haben.'."\n",
+                      'Im Falle, dass die Grenzen des Integrals in ihrer Größe vertauscht sind, also, wenn \lm{ x < a } gilt,'."\n".
+                    '\jump{OM:SupNum:Formale-Entwicklung:Formalien:Summendefinition-ueber-Intervall-Mengen}{negiert sich der Wert des Integrals}.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Beispiel-eines-konkreten-Integrals', text =>
                       
                 'Beispiel eines konkreten Integrals', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Nun ein Beispiel, um anschaulich zu verstehen, was bei der Integration genau vor sich geht:'."\n".
+                    'Nun ein Beispiel, um anschaulich zu verstehen, was bei der Integration genau vor sich geht.'."\n".
+                    'Dieses Beispiel finden wir in der expliziten Schreibweise mit \lm{ \s } auch im Abschnitt \italic{›\jumpname{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen:Konkretes-Integral}‹}.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(

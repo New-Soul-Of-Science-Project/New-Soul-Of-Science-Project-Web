@@ -886,7 +886,7 @@
                     '\quote{Manche Gleichungen fünften Grades können mit Wurzeln gelöst werden, […]}\footnote{Vgl. \cite{wiki:GleichungFuenftenGrades:2024}, Lösbare Gleichungen fünften Grades, Voraussetzungen für die Lösbarkeit.}'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Vermutung, dass superiale Koeffizienten Realanteile algebraischer Zahlen sind} \\\\'."\n".
+                  '\condb{\anchor{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:superiale-Koeffizienten-Realanteile-algebraischer-Zahlen}{}Vermutung, dass superiale Koeffizienten Realanteile algebraischer Zahlen sind} \\\\'."\n".
                     'Für den Rest der Realanteile der algebraischen Zahlen scheint es nicht simpel zu sein zu zeigen, dass sie ebenfalls'."\n".
                     'sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n",
                       'Wegen der Abgeschlossenheit der algebraischen Zahlen\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.}'."\n".
@@ -896,15 +896,10 @@
                     'Realanteile algebraischer Zahlen \lm{ \mathbb{A}_{\R} }, nicht weniger, aber auch nicht mehr, sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
                     'Denn die Linie, die die algebraischen Zahlen von den transzendenten trennt, ist im Grunde die gleiche,'."\n".
                     'die die einzelnen fraktalen Ebenen der Superial-Zahlen trennt.'."\n",
-                      'Genau das ist meine \italic{\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}}.'."\n",
-                      'Wir vermuten also, dass auch die positiven irrationalen Koeffizienten algebraischer Zahlen'."\n".
-                    'als Produkt mit der superialen Basis \lm{ \s } aktual unendlich große natürliche Zahlen ergeben.'."\n".
-                    'Das ist schon ziemlich erfreulich und cool.'."\n",
-                      'Durch den Beweis der eingangs aufgestellt Überrationalitätsvermutung sind nun'."\n".
-                    'alle positiven realen Koeffizienten algebraischer Zahlen \lm{ \mathbb{A}_{\R}^{+} }'."\n".
-                    'als Produkt mit der superialen Basis \lm{ \s } aktual unendlich große natürliche Zahlen'."\n".
-                    'und sinnvollerweise dann auch natürliche Superial-Zahlen, wie in Formel \jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen}'."\n".
-                    'vermutet.'."\n".
+                      'Genau das ist meine \italic{›\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}‹},'."\n".
+                    'also, dass Formel \jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen}'."\n".
+                    'stimmt.'."\n".
+                    'Das wäre schon ziemlich erfreulich und cool.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
