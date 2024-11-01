@@ -447,14 +447,15 @@
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
-                      'Seien \lm{ \lbrack a, b \rbrack_\mathbb{T} }, \lm{ \lbrack a, b \lbrack_\mathbb{T} }, \lm{ \rbrack a, b \rbrack_\mathbb{T} } und \lm{ \rbrack a, b \lbrack_\mathbb{T} } die Mengen der folgenden Intervalle von \lm{ a } bis \lm{ b } aus der Menge \lm{ \mathbb{T} }'."\n".
+                      'Seien \lm{ \lbrack a, b \rbrack_\mathbb{T} }, \lm{ \lbrack a, b \lbrack_\mathbb{T} }, \lm{ \rbrack a, b \rbrack_\mathbb{T} }'."\n".
+                      'und \lm{ \rbrack a, b \lbrack_\mathbb{T} } die Mengen der folgenden Intervalle von \lm{ a } bis \lm{ b } aus der Menge \lm{ \mathbb{T} }'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  [ a, b ]_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a \leq x \leq b *]  *\}  }'),
                       array( display => 'on',  latex => '{  [ a, b [_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a \leq x < b *]  *\}  }'),
                       array( display => 'on',  latex => '{  ] a, b ]_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a < x \leq b *]  *\}  }'),
-                      array( display => 'on',  latex => '{  ] a, b [_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a < x < b *]  *\}  \;\;  ,  }'),
+                      array( display => 'on',  latex => '{  ] a, b [_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a < x < b *]  *\}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'so können wir flexibel Intervall-Mengen definieren.'."\n",
@@ -463,7 +464,70 @@
 
                   array( 'text', array( text => array(
                     'Aufgrund der Komplexität der Superial-Zahlen ist es sehr hilfreich, wenn wir die Menge \lm{ \mathbb{T} } angeben können,'."\n".
-                    'auf der die Intervall-Menge basieren soll.'."\n".
+                    'auf der die Intervall-Menge basieren soll.'."\n",
+                      'Nun haben wir noch die Besonderheit, dass diese Intervall-Mengendefinition, nicht nur, aber im Besonderen auch,'."\n".
+                    'für die Definition von Integralen eingesetzt wird.'."\n".
+                    'In diesem Zusammenhang macht es Sinn, die Definition etwas allgemeiner zu fassen und die Verallgemeinerung auch im Zusammenhang'."\n".
+                    'mit Summen zu definieren.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Seien \lm{ \lbrack b, a \rbrack_\mathbb{T} }, \lm{ \lbrack b, a \lbrack_\mathbb{T} }, \lm{ \rbrack b, a \rbrack_\mathbb{T} }'."\n".
+                      'und \lm{ \rbrack b, a \lbrack_\mathbb{T} } die Mengen der folgenden Intervalle von \lm{ b } bis \lm{ a } aus der Menge \lm{ \mathbb{T} } definieren.'."\n".
+                      'Dieses Mal sind \lm{ a } und \lm{ b } allerdings vertauscht, wobei immer noch \lm{ a < b } ist,'."\n".
+                      'das Intervall also von einer größeren Zahl zu einer kleineren läuft, also quasi rückwärts.'."\n".
+                      'Das macht für die Intervall-Menge, aber keinen Unterschied, weil in Mengen die Elemente nicht angeordnet sind,'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [ b, a ]_\mathbb{T}  =  [ a, b ]_\mathbb{T}  }'),
+                      array( display => 'on',  latex => '{  [ b, a [_\mathbb{T}  =  ] a, b ]_\mathbb{T}  }'),
+                      array( display => 'on',  latex => '{  ] b, a ]_\mathbb{T}  =  [ a, b [_\mathbb{T}  }'),
+                      array( display => 'on',  latex => '{  ] b, a [_\mathbb{T}  =  ] a, b [_\mathbb{T}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'und so muss lediglich berücksichtigt werden, welche Elemente nicht in der Intervall-Mengen vorkommen sollen.'."\n",
+                        '\\\\'.
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Etwas anders sieht dies für Summendefinitionen über Intervall-Mengen aus.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{\anchor{OM:SupNum:Formale-Entwicklung:Formalien:Summendefinition-ueber-Intervall-Mengen}{}Summendefinition über Intervall-Mengen} \\\\'."\n".
+                  '\cond{Integrale als Summen} \\\\'."\n".
+                    'Denn, wenn der größere Wert zuerst kommt, dann summieren wir quasi Rückwärts – auch, wenn Mengen keine Ordnung haben –'."\n".
+                    'und es negiert sich das Ergebnis.'."\n".
+                    'Dies ist dann im Besonderen für die \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Definitionen von Integralen} von Bedeutung.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Seien \lm{ \lbrack b, a \rbrack_\mathbb{T} }, \lm{ \lbrack b, a \lbrack_\mathbb{T} }, \lm{ \rbrack b, a \rbrack_\mathbb{T} }'."\n".
+                      'und \lm{ \rbrack b, a \lbrack_\mathbb{T} } die Mengen der folgenden Intervalle von \lm{ b } bis \lm{ a } aus der Menge \lm{ \mathbb{T} }'."\n".
+                      'definiert, wie vorstehend.'."\n".
+                      'Wieder sind \lm{ a } bis \lm{ b } vertauscht und wieder bleibt \lm{ a < b }.'."\n".
+                      'Das Intervall also von einer größeren Zahl zu einer kleineren läuft, also wieder quasi rückwärts.'."\n".
+                      'Dann macht das bei einer Summe schon einen Unterschied im Wert, denn rückwärts summieren entspricht dem Abziehen, also der Differenz,'."\n".
+                      'anstatt der Summe'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sum_{ i \in [ b, a ]_\mathbb{T} } f(i)  =  - \sum_{ i \in [ a, b ]_\mathbb{T} } f(i)  }'),
+                      array( display => 'on',  latex => '{  \sum_{ i \in [ b, a [_\mathbb{T} } f(i)  =  - \sum_{ i \in ] a, b ]_\mathbb{T} } f(i)  }'),
+                      array( display => 'on',  latex => '{  \sum_{ i \in ] b, a ]_\mathbb{T} } f(i)  =  - \sum_{ i \in [ a, b [_\mathbb{T} } f(i)  }'),
+                      array( display => 'on',  latex => '{  \sum_{ i \in ] b, a [_\mathbb{T} } f(i)  =  - \sum_{ i \in ] a, b [_\mathbb{T} } f(i)  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'und so muss nicht nur berücksichtigt werden, welche Elemente nicht in der Intervall-Mengen vorkommen sollen,'."\n".
+                      'sondern auch, dass sich bei einer Summe, deren Intervall-Menge mit dem größeren Element zuerst definiert ist,'."\n".
+                      'das Vorzeichen umdreht.'."\n",
+                        '\\\\'.
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Hierdurch ist die Summe mit ihrer Intervall-Menge tief verbunden.'."\n".
                     ''))),
 
                   array( 'jumplist', array(

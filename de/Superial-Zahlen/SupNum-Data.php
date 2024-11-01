@@ -240,6 +240,7 @@
           'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen' => array( headline_text => 'Skalierung der superialen Ebene einer Teilmenge der Superial-Zahlen'/* , headline_text_short => 'X' */),
           'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren' => array( headline_text => 'SN.Form.F.24'),
           'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge' => array( headline_text => 'Intervall-Menge'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Formale-Entwicklung:Formalien:Summendefinition-ueber-Intervall-Mengen' => array( headline_text => 'Summendefinition über Intervall-Mengen'/* , headline_text_short => 'X' */),
       ),
     ),
     'OM:SupNum:Literatur' => array(
