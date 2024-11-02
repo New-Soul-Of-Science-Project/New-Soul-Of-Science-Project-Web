@@ -361,8 +361,9 @@
                 'Beispiel eines konkreten Integrals', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Nun ein Beispiel, um anschaulich zu verstehen, was bei der Integration genau vor sich geht.'."\n".
-                    'Dieses Beispiel finden wir in der expliziten Schreibweise mit \lm{ \s } auch im Abschnitt \italic{›\jumpname{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen:Konkretes-Integral}‹}.'."\n".
+                    'Jetzt ein Beispiel, um anschaulich zu verstehen, was bei der Integration genau vor sich geht.'."\n".
+                    'Dieses finden wir in der expliziten Schreibweise mit \lm{ \s } auch im Abschnitt \italic{›\jumpname{OM:SupNum:Einleitung:Vortext:Integral-genau-verstehen:Konkretes-Integral}‹},'."\n".
+                    'hier nun allerdings vollständig in der neuen \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem-Schreibweise}.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -440,16 +441,9 @@
                   array( 'text', array( text => array(
                     'Wie wir sehen, ist es tatsächlich mit den Superial-Zahlen möglich, ein Integral eines Polynoms'."\n".
                     'explizit auszurechnen.'."\n".
-                    'Dies geht nicht einfach so mit jedem Integral, den die Koeffizienten sind zunächst auf rationale Zahlen festgelegt.'."\n".
-                    'Es ist aber offensichtlich, dass wir so recht einfach verstehen und auch genau wissen, was wir bei'."\n".
-                    'der Berechnung des Integrals tun.'."\n",
-                      'Und das ist ja eines meiner Ziele, beim Ableiten und besonders beim Integrieren nicht so eine Black-Box vor uns zu haben.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'Auf diese Weise ergibt sich für uns ein zunehmend konkretes Bild davon, was die superiale Basis \lm{ s } eigentlich ist'."\n".
-                    'und was wir mit \lm{ s } alles anfangen können.'."\n".
-                    'Aus diesem besser werdendem Bild, und besonders über die nähere Beleuchtung der Frage der ganzen Superial-Zahlen,'."\n".
-                    'kommen wir gleich zu einer ganz bemerkenswerten Definition unserer superialen Basis \lm{ s }.'."\n".
+                    'Dies geht so einfach schon mal mit jedem Integral eines Polynoms, ist bei Polynomen höheren Grades aber natürlich entsprechend aufwendiger.'."\n".
+                    'Offensichtlich ist dabei, dass wir so recht einfach verstehen, was bei der Berechnung des Integrals im Detail vor sich geht.'."\n",
+                      'Und das ist ja eines unserer Ziele, beim Ableiten und besonders beim Integrieren nicht so eine Black-Box vor uns zu haben.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration', text =>
                       
@@ -488,7 +482,7 @@
                       'Was wir zeigen können ist, dass wir auch nach Aufspaltung der Ableitungsteile in ihre Teilsummen, die nach dem Kürzen'."\n".
                     'der Faktoren der Ableitung und des Integrals verbleiben, wir den Summanden \lm{ f(〈n〉․〈1〉) } der ersten Summe'."\n".
                     'mit Formel \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Ableitung-mit-x-plus-s-tel-Kurznotation}'."\n".
-                    'ersetzen können, die als Umformung der Ableitung folgt,'."\n".
+                    'ersetzen können, die aus der Umformung der Ableitung folgt,'."\n".
                     'sodass dadurch das Integral der Ableitung wieder zum reinen Integral wird:'."\n",
                     ''))),
                   array( 'equations',
