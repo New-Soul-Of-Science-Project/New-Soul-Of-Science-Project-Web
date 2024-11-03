@@ -603,43 +603,36 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} *) *( \forall z \in \mathbb{Z} *)  *[  q + z \cdot \s^{-1}  \in  \mathbb{S}^{-1}_{Z}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *) *( \forall z \in \mathbb{Z} *)  *[  a + z \cdot \s^{-1}  \in  \mathbb{S}^{-1}_{Z}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Für die genaue Menge können wir, angelehnt an die später gefundene Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s},'."\n".
-                    'folgende Beschreibung geben – wie immer mit \lm{ x \in \mathbb{Q} }:'."\n".
+                    'folgende Beschreibung geben – wie immer mit \lm{ x \in \mathbb{A}_{\S} }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  [ 0, \s [_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  a  *|*  *( \forall q \in [ 0, 1 ]_{\mathbb{Q}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  a  =  \begin{cases} n  &  \text{ falls } q = 0  \\\\  q \cdot \s + z  &  \text{ falls } 0 < q < 1  \\\\  \s + z^{-}  &  \text{ falls } q = 1  \end{cases}  *]  *\}  }',
+                      array( display => 'off', latex => '{  [ 0, \s [_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  u  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  u  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < 1  \\\\  \s + z^{-}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }',
                                           /* label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s', */label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s}', label_incr => false),
-                      array( display => 'on',  latex => '{  [ 0, x [_{\mathbb{S}^{-1}_{Z}}  =  \\\ \quad *\{  a  *|*  *( \forall q \in [ 0, x ]_{\mathbb{Q}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  a  =  \begin{cases} n \cdot \s^{-1}  &  \text{ falls } q = 0  \\\\  q + z \cdot \s^{-1}  &  \text{ falls } 0 < q < x  \\\\  x + z^{-} \cdot \s^{-1}  &  \text{ falls } q = x  \end{cases}  *]  *\}  }',
+                      array( display => 'on',  latex => '{  [ 0, x [_{\mathbb{S}^{-1}_{Z}}  =  \\\ \quad *\{  u  *|*  *( \forall a \in [ 0, x ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  u  =  \begin{cases} n \cdot \s^{-1}  &  \text{ falls } a = 0  \\\\  a + z \cdot \s^{-1}  &  \text{ falls } 0 < a < x  \\\\  x + z^{-} \cdot \s^{-1}  &  \text{ falls } a = x  \end{cases}  *]  *\}  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Menge-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Menge-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x}', label_incr => true),
                     ))),
-                  /* array( 'text', array( text => array(
-                    'Es handelt sich also um folgende natürliche Superial-Zahlen, die auszugsweise so aussehen, wobei Beginn und Ende stimmen:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \qquad\; 0, 1, 2, \cdots n, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{1}{2} x \s + z^{-}, \cdots \frac{1}{2} x \s - 2,\; \frac{1}{2} x \s - 1,\; \frac{1}{2} x \s,\; \frac{1}{2} x \s + 1, \cdots \frac{1}{2} x \s + n, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \frac{2}{3} x \s + z^{-}, \cdots \frac{2}{3} x \s - 2,\; \frac{2}{3} x \s - 1,\; \frac{2}{3} x \s,\; \frac{2}{3} x \s + 1, \cdots \frac{2}{3} x \s + n, \cdots \\\ \quad\quad\; \vdots \\\ \quad \cdots \, x \s + z^{-}, \cdots x \s - 2, x \s - 1  }'),
-                    ))), */
                   array( 'text', array( text => array(
                     'Wir nehmen einmal an, dass die beiden Summanden der zu summierenden Superial-Zahlen jeweils'."\n".
                     'den beiden einzelnen Teilsummen des bekannten Ergebnisses der zu berechnenden Summe \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt} entsprechen.'."\n".
-                    'Also summieren wir doch einmal zuerst die zweite Teilsumme unserer Superial-Zahlen und anschließen die erste Teilsumme.'."\n".
+                    'Also summieren wir doch einmal zuerst die zweite Teilsumme unserer Superial-Zahlen und daran anschließend die erste Teilsumme.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Die Summe des zweiten Summanden unserer Superial-Zahlen} \\\\'."\n".
-                    'Für alle Koeffizienten des ersten Summanden \lm{ q }, von Null bis einschließlich'."\n".
+                    'Für alle Koeffizienten \lm{ a } des ersten Summanden, von Null bis einschließlich'."\n".
                     '\lm{ x }, läuft der zweite Summand \lm{ z } komplett im Negativen und im Positiven durch,'."\n".
-                    'bis auf am Beginn und am Ende, siehe Intervall-Menge \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen},'."\n".
-                    'wo \lm{ q } als \lm{ q \cdot x } benannt ist.'."\n".
+                    'bis auf den Beginn und das Ende, siehe Intervall-Menge \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen},'."\n".
+                    'wo \lm{ a } als \lm{ a \cdot x } benannt ist.'."\n".
                     'Am Beginn laufen nur die natürlichen Koeffizienten \lm{ n } des zweiten Summanden durch, mit der Null, und'."\n".
                     'am Ende laufen nur die rein negativen Koeffizienten \lm{ z^- } durch.'."\n",
                       'Die Anzahl der superial kleinen ganzen Zahlen von Null bis einschließlich \lm{ x }'."\n".
                     'ist \lm{ x \cdot \s + 1 }.'."\n".
-                    'Da für Null und \lm{ x } gemeinsam nur ein ganzer Durchlauf stattfindet, ist die Anzahl der'."\n".
-                    'ganzen Durchläufe allerdings nur \lm{ x \cdot \s }, also Einen weniger.'."\n",
+                    'Da allerdings für Null und \lm{ x } jeweils nur ein halber Durchlauf, also gemeinsam dann ein ganzer Durchlauf, des zweiten Summanden stattfindet, ist die Anzahl der'."\n".
+                    'ganzen Durchläufe insgesamt somit nur \lm{ x \cdot \s }, also einer weniger.'."\n",
                       'In jedem Durchlauf werden einmal alle superial kleinen ganzen Zahlen addiert.'."\n".
                     'Von den \jump{OM:BiOrd:Home}{Biordinalzahlen} her wissen wir den Wert der Summe aller endlichen ganzen Zahlen aus Formel'."\n".
                     '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}:'."\n".
@@ -654,7 +647,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}}  z \cdot \s^{-1}  =  - \omega \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}}  z \cdot \s^{-1}  =  \frac{ -\omega }{ \s }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dabei steht das Symbol \lm{ \omega } für die Anzahl der endlichen natürlichen Zahlen, mit der Null, in der Menge \lm{ \mathbb{N} };'."\n".
@@ -664,34 +657,32 @@
                     'wie es endliche natürliche Zahlen gibt, also endliche positive ganze Zahlen, mit der Null.'."\n".
                     'Demnach finden wir, bei genauer Untersuchung, eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{fundamentale Asymmetrie}'."\n".
                     'zwischen der ontologischen Struktur der endlichen ganzen Zahlen und der Verteilung ihrer Werte.'."\n".
-                    'Dadurch ergibt die Summe aller endlichen ganzen Zahlen die aktual unendlich große und negative Zahl \lm{ -\omega }.'."\n",
+                    'Dadurch ergibt schlussendlich die Summe aller endlichen ganzen Zahlen die aktual unendlich große und negative Zahl \lm{ -\omega }'."\n".
+                    'und nicht Null, wie wir naiv annehmen könnten.'."\n",
                       'Auf der anderen Seite ist die Anzahl der rationalen Koeffizienten von Null bis ausschließlich Eins,'."\n".
                     'nach Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \# [ 0, 1 [_\mathbb{Q}  =  \frac{ \s }{ 2 \cdot \omega }  }',
+                      array( display => 'on',  latex => '{  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 \cdot \omega }  }',
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, x [_\mathbb{Q}  =  \frac{ x \cdot \s }{ 2 \cdot \omega }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, x [_{\mathbb{A}_{\S}}  =  \frac{ x \cdot \s }{ 2 \cdot \omega }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-x', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-x}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Anschließend haben wir die Formel für die Koeffizienten von Null bis ausschließlich \lm{ x } äquivalent mit \lm{ x } erweitert.'."\n",
-                    /*   'Da in der zu addierenden Intervall-Menge \jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Intervall-Menge-0-bis-x-superial-kleiner-ganzer-Zahlen}'."\n".
-                    'für Null und \lm{ x } gemeinsam nur ein ganzer Durchlauf von \lm{ z } stattfindet, wie gesagt, ist \lm{ x \cdot \s } die Anzahl der'."\n".
-                    'ganzen Durchläufe von \lm{ z }.'."\n", */
-                      'So oft addiert sich jetzt das superial kleine \lm{ \frac{ -\omega }{ \s } } auf:'."\n".
+                      'So oft addiert sich jetzt das superial kleine \lm{ \frac{ -\omega }{ \s } } von davor auf, wird folglich damit multipliziert:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \Rightarrow  \# [ 0, x \, [_\mathbb{Q} \; \cdot \sum_{ \forall z \in \mathbb{Q} }  z \cdot \s^{-1}  =  \frac{ x \cdot \s }{ 2 \cdot \omega } \cdot \sum_{ \forall z \in \mathbb{Q} }  z \cdot \s^{-1}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \# [ 0, x \, [_\mathbb{Q} \; \cdot \sum_{ \forall z \in \mathbb{Q} }  z \cdot \s^{-1}  =  \frac{ x \cdot \s }{ 2 \cdot \omega } \cdot *( - \omega \cdot \s^{-1} *)  }',
-                                    latex_if_visible => '{  \Leftrightarrow  \# [ 0, x \, [_\mathbb{Q} \; \cdot \sum_{ \forall z \in \mathbb{Q} }  z \cdot \s^{-1}  =  \frac{ x \cdot \s }{ 2 \cdot \omega } \cdot *( - \omega \cdot \s^{-1} *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, x \, [_\mathbb{Q} \; \cdot \sum_{ \forall z \in \mathbb{Q} }  z \cdot \s^{-1}  =  - \frac{ x }{ 2 }  }',
+                      array( display => 'off', latex => '{  \Rightarrow  \# [ 0, x \, [_{\mathbb{A}_{\S}} \; \cdot \sum_{ \forall z \in \mathbb{Z} }  z \cdot \s^{-1}  =  \frac{ x \cdot \s }{ 2 \cdot \omega } \cdot \sum_{ \forall z \in \mathbb{Z} }  z \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \# [ 0, x \, [_{\mathbb{A}_{\S}} \; \cdot \sum_{ \forall z \in \mathbb{Z} }  z \cdot \s^{-1}  =  \frac{ x \cdot \s }{ 2 \cdot \omega } \cdot \frac{ -\omega }{ \s }  }',
+                                    latex_if_visible => '{  \Leftrightarrow  \# [ 0, x \, [_{\mathbb{A}_{\S}} \; \cdot \sum_{ \forall z \in \mathbb{Z} }  z \cdot \s^{-1}  =  \frac{ x \cdot \s }{ 2 \cdot \omega } \cdot \frac{ -\omega }{ \s }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, x \, [_{\mathbb{A}_{\S}} \; \cdot \sum_{ \forall z \in \mathbb{Z} }  z \cdot \s^{-1}  =  - \frac{ x }{ 2 }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-mit-Summe-ungeloest-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-mit-Summe-ungeloest-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, x \, [_\mathbb{Q} \, \cdot *( - \omega \cdot \s^{-1} *)  =  - \frac{ x }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, x \, [_{\mathbb{A}_{\S}} \, \cdot \; \frac{ -\omega }{ \s }  =  - \frac{ x }{ 2 }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-mit-Summe-geloest-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-mit-Summe-geloest-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  -\, \# [ 0, x \, [_\mathbb{Q} \, \cdot \; \omega \cdot \s^{-1}  =  - \frac{ x }{ 2 }  }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  -\, \# [ 0, x \, [_{\mathbb{A}_{\S}} \, \cdot \; \frac{ \omega }{ \s }  =  - \frac{ x }{ 2 }  }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -713,16 +704,17 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \sum_{ \forall q \in [ 0 ]_\mathbb{Q}}  \!\! q *) \cdot \omega  =  0 \cdot \omega  =  0  }'),
+                      array( display => 'on',  latex => '{  *( \sum_{ \forall a \in [ 0 ]_{\mathbb{A}_{\S}}}  \!\! a *) \cdot \omega  =  0 \cdot \omega  =  0  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Für die rationalen Zahlen \lm{ q } mit \lm{ 0 < q < x } in der ersten Teilsumme gibt es wirklich alle superial kleinen ganzzahligen Schritte in der zweiten Teilsumme.'."\n".
+                    'Für die sinnvollen Koeffizienten der Superial-Zahlen \lm{ a } mit \lm{ 0 < a < x } in der ersten Teilsumme gibt es wirklich'."\n".
+                    'alle superial kleinen ganzzahligen Schritte in der zweiten Teilsumme.'."\n".
                     'Da wir die Summe dieser rationalen Zahlen noch nicht kennen, wollen wir sie berechnen und setzen sie gleich unserer neuen Variable \lm{ y }:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \sum_{ \forall q \in ] 0, x [_\mathbb{Q}}  \!\! q *) \cdot 2 \cdot \omega  =  y \cdot 2 \cdot \omega  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall q \in ] 0, x [_\mathbb{Q}}  \!\! q  =  y  }'),
+                      array( display => 'on',  latex => '{  *( \sum_{ \forall a \in ] 0, x [_{\mathbb{A}_{\S}}}  \!\! a *) \cdot 2 \cdot \omega  =  y \cdot 2 \cdot \omega  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall a \in ] 0, x [_{\mathbb{A}_{\S}}}  \!\! a  =  y  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Dabei ist es gleich, ob die Null in der Indexmenge der Summe dabei ist oder fehlt.'."\n".
@@ -731,14 +723,14 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  =  y  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  =  y  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Für die rationale Zahl \lm{ x } in der ersten Teilsumme gibt es nur alle rein negativen ganzen Zahlen als superial kleine Schritte in der zweiten Teilsumme:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \sum_{ \forall q \in [ x ]_\mathbb{Q}}  \!\! q *) \cdot \omega  =  x \cdot \omega  }'),
+                      array( display => 'on',  latex => '{  *( \sum_{ \forall a \in [ x ]_{\mathbb{A}_{\S}}}  \!\! a *) \cdot \omega  =  x \cdot \omega  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Alle drei Teile gemeinsam ergeben also den ersten uns bekannten Summanden aus Formel \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt},'."\n".
@@ -752,7 +744,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \sum_{ \forall q \in [ 0 ]_\mathbb{Q}}  \!\! q *) \cdot \omega  \\\ \qquad\quad\quad +  *( \sum_{ \forall q \in ] 0, x [_\mathbb{Q}}  \!\! q *) \cdot 2 \cdot \omega  \\\ \qquad\quad\quad\quad\quad +  *( \sum_{ \forall q \in [ x ]_\mathbb{Q}}  \!\! q *) \cdot \omega  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \sum_{ \forall a \in [ 0 ]_{\mathbb{A}_{\S}}}  \!\! a *) \cdot \omega  \\\ \qquad\quad\quad +  *( \sum_{ \forall a \in ] 0, x [_{\mathbb{A}_{\S}}}  \!\! a *) \cdot 2 \cdot \omega  \\\ \qquad\quad\quad\quad\quad +  *( \sum_{ \forall a \in [ x ]_{\mathbb{A}_{\S}}}  \!\! a *) \cdot \omega  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  0 \cdot \omega  +  y \cdot 2 \cdot \omega  +  x \cdot \omega  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  y \cdot 2 \cdot \omega  +  x \cdot \omega  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( y \cdot 2  +  x *) \cdot \omega  =  \frac{ x^{2} \cdot \s }{ 2 }  }',
@@ -766,15 +758,15 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  y \cdot 2  +  x  =  \# [ 0, x [_\mathbb{Q} \; \cdot \; x  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  y \cdot 2  +  x  =  \# [ 0, x [_{\mathbb{A}_{\S}} \; \cdot \; x  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Wir erweitern beide Seiten mit \lm{ \omega } und vertauschen links und rechts:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \Leftrightarrow  *( y \cdot 2  +  x *) \cdot \omega  =  \# [ 0, x [_\mathbb{Q} \; \cdot \; x \cdot \omega  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, x [_\mathbb{Q} \; \cdot \; x \cdot \omega  =  *( y \cdot 2  +  x *) \cdot \omega  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( y \cdot 2  +  x *) \cdot \omega  =  \# [ 0, x [_{\mathbb{A}_{\S}} \; \cdot \; x \cdot \omega  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, x [_{\mathbb{A}_{\S}} \; \cdot \; x \cdot \omega  =  *( y \cdot 2  +  x *) \cdot \omega  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Aus Formel \jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-y-mal-2-plus-x-zus-mal-omega-ist-erster-Summand}'."\n".
@@ -782,7 +774,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \# [ 0, x [_\mathbb{Q} \; \cdot \; x \cdot \omega  =  \frac{ x^{2} \cdot \s }{ 2 }  }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \# [ 0, x [_{\mathbb{A}_{\S}} \; \cdot \; x \cdot \omega  =  \frac{ x^{2} \cdot \s }{ 2 }  }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-erster-Summand-von-Integration-von-2x-plus-supkl-Eins', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-erster-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -810,10 +802,10 @@
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt}', label_incr => false),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \# [ 0, x [_\mathbb{Q} \; \cdot \; x \cdot \omega  -  \frac{ x }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \# [ 0, x [_\mathbb{Q} \, \cdot \; x \cdot \omega  \; - \;  \# [ 0, x \, [_\mathbb{Q} \, \cdot \, \omega \cdot \s^{-1}  }',
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \# [ 0, x [_{\mathbb{A}_{\S}} \; \cdot \; x \cdot \omega  -  \frac{ x }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \# [ 0, x [_{\mathbb{A}_{\S}} \, \cdot \; x \cdot \omega  \; - \;  \# [ 0, x \, [_{\mathbb{A}_{\S}} \, \cdot \; \frac{ \omega }{ \s }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \# [ 0, x [_\mathbb{Q} \, \cdot \; \omega \cdot *( x - \s^{-1} *)  }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \# [ 0, x [_{\mathbb{A}_{\S}} \, \cdot \; \omega \cdot *( x - \frac{ 1 }{ \s } *)  }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz-ausgeklammert', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz-ausgeklammert}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -844,7 +836,7 @@
                       array( display => 'on',  latex => '{  *( y \cdot 2  +  x *) \cdot \omega  =  \frac{ x^{2} \cdot \s }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-y-mal-2-plus-x-zus-mal-omega-ist-erster-Summand}', label_incr => false),
                       array( display => 'on',  latex => '{  *( y + y + x *) \cdot \omega  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;+\;  x *) \cdot \omega  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  \;\; +  \! \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  \;+\;  x *) \cdot \omega  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Hier beachten wir, dass die Intervall-Mengen-Klammern in beiden Summen gleich ausgerichtet sind.'."\n".
@@ -855,8 +847,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \Leftrightarrow  *( \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in [ 0, x ]_\mathbb{Q}}  \!\! q *) \cdot \omega  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  *( \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in ] 0, x ]_\mathbb{Q}}  \!\! q *) \cdot \omega  =  \frac{ x^{2} \cdot \s }{ 2 }  }  }',
+                      array( display => 'off', latex => '{  \Leftrightarrow  *( \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  \;\; +  \! \sum_{ \forall a \in [ 0, x ]_{\mathbb{A}_{\S}}}  \!\! a *) \cdot \omega  =  \frac{ x^{2} \cdot \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  *( \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  \;\; +  \! \sum_{ \forall a \in ] 0, x ]_{\mathbb{A}_{\S}}}  \!\! a *) \cdot \omega  =  \frac{ x^{2} \cdot \s }{ 2 }  }  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Doppelsummenausdruck-erster-Summand-von-Integration-von-2x-plus-supkl-Eins', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Doppelsummenausdruck-erster-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => true),
                       //%! array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in ] 0, x ]_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot \s }{ 2 \cdot \omega }  }'),
                       //%! array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in ] 0, x ]_\mathbb{Q}}  \!\! q  =  \frac{ x \cdot \s }{ 2 \cdot \omega } \cdot x  }'),
@@ -885,9 +877,9 @@
                     array( equ_text_std => 'SN.AbIn.NU', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \frac{ x^{2} \cdot \s }{ 2 } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt}', label_incr => false),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  *( \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in ] 0, x ]_\mathbb{Q}}  \!\! q *) \cdot \omega  -  \frac{ x }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  *( \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in ] 0, x ]_\mathbb{Q}}  \!\! q *) \cdot \omega  \\\  \qquad\qquad\qquad\qquad\qquad\qquad - \;  \# [ 0, x \, [_\mathbb{Q} \, \cdot \, \omega \cdot \s^{-1}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  *( \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  \;\; +  \! \sum_{ \forall q \in ] 0, x ]_\mathbb{Q}}  \!\! q  \\\  \qquad\qquad\qquad\qquad\qquad\; - \;  \# [ 0, x \, [_\mathbb{Q} \; \cdot \; \s^{-1} *) \cdot \omega  }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  *( \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  \;\; +  \! \sum_{ \forall a \in ] 0, x ]_{\mathbb{A}_{\S}}}  \!\! a *) \cdot \omega  -  \frac{ x }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  *( \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  \;\; +  \! \sum_{ \forall a \in ] 0, x ]_{\mathbb{A}_{\S}}}  \!\! a *) \cdot \omega  \\\  \qquad\qquad\qquad\qquad\qquad\qquad - \;  \# [ 0, x \, [_{\mathbb{A}_{\S}} \, \cdot \, \omega \cdot \s^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  *( \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  \;\; +  \! \sum_{ \forall a \in ] 0, x ]_{\mathbb{A}_{\S}}}  \!\! a  \\\  \qquad\qquad\qquad\qquad\qquad\; - \;  \# [ 0, x \, [_{\mathbb{A}_{\S}} \; \cdot \; \s^{-1} *) \cdot \omega  }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Ist in jedem Fall interessant, dass \lm{ \omega } in allen Summanden vorhanden ist und generell'."\n".
@@ -896,12 +888,11 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:X', text =>
                       
-                'Summe aller rationalen Zahlen von Null bis ausschließlich \lm{ x }', subline =>
+                'Summe aller Koeffizienten von Null bis ausschließlich \lm{ x }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Interessant ist auch die Berechnung der Summe der endlichen rationalen Zahlen'."\n".
+                    'Interessant ist auch die Berechnung der Summe der endlichen Koeffizienten der Superial-Zahlen'."\n".
                     'von Null bis ausschließlich der Zahl \lm{ x }:'."\n".
-                    '\\\\ \color{*Bearb}{(Durch den Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} haben sich die Koeffizienten der Superial-Zahlen von den endlichen rationalen Zahlen auf die Koeffizienten der algebraischen Zahlen erweitert, was noch berücksichtigt werden muss.)}'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -916,7 +907,7 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  y \cdot 2  +  x  =  \frac{ x^{2} \cdot \s }{ 2 \cdot \omega }  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  y \cdot 2  =  \frac{ x^{2} \cdot \s }{ 2 \cdot \omega }  -  x  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  y  =  \frac{ x^{2} \cdot \s }{ 4 \cdot \omega }  -  \frac{ x }{ 2 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \sum_{ \forall q \in [ 0, x [_\mathbb{Q}}  \!\! q  =  \frac{ x^{2} \cdot \s }{ 4 \cdot \omega } - \frac{ x }{ 2 }  }  \;\;  ,  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \boxed{  \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 \cdot \omega } - \frac{ x }{ 2 }  }  \;\;  ,  }',
                                           label_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x', label_text => '\name{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -925,8 +916,9 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Ich habe einen Ausdruck für diese Summe bisher noch nicht gesehen und'."\n".
-                    'konnte bis heute auch noch nichts vergleichbares finden.'."\n",
+                    'Wenn es sich bei den sinnvollen Koeffizienten der Superial-Zahlen wirklich um alle rein realen algebraischen Zahlen handeln sollte,'."\n".
+                    'wie \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}{wir vermuten},'."\n".
+                    'dann habe ich einen Ausdruck für diese Summe bisher noch nicht gesehen und konnte bis heute auch noch nichts vergleichbares finden.'."\n",
                       'Unsere Biordinalzahlen und Superial-Zahlen sind etwas ganz besonderes,'."\n".
                     'weil sie uns in die Lage versetzen, eine Idee davon zu bekommen, wie wir solche Summen'."\n".
                     'ausdrücken können.'."\n",
@@ -939,7 +931,9 @@
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Hieran können wir erkennen, wie tief verwoben die ganzen und natürlichen Zahlen mit den algebraischen Zahlen offenbar sind.'."\n",
+                      'Die Zahlentheorie erhellt sich auf diese Weise insgesamt und verschafft uns tiefe Einblicke in die Welt der Mathematik.'."\n".
+                    'Sehr erfreulich, auf diese Weise immer besser zu verstehen was die Geometrie mit der Arithmetik und der Zahlentheorie verbindet.'."\n".
                     ''))),
 
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X',
