@@ -441,13 +441,13 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ x^{2} \cdot \s }{ 2 }  =  *( \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  \;\; +  \! \sum_{ \forall a \in ] 0, x ]_{\mathbb{A}_{\S}}}  \!\! a *) \cdot \omega  }',
+                      array( display => 'on',  latex => '{  \frac{ x^{2} \cdot \s }{ 2 }  =  *( \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  \;\; +  \! \sum_{ \forall a \in ] 0, x ]_{\mathbb{A}_{\S}}}  \!\! a *) \cdot ω  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Doppelsummenausdruck-erster-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ x^{2} \cdot \s }{ 2 }  =  \# [ 0, x [_{\mathbb{A}_{\S}} \; \cdot \; x \cdot \omega  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ x^{2} \cdot \s }{ 2 }  =  \# [ 0, x [_{\mathbb{A}_{\S}} \; \cdot \; x \cdot ω  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-erster-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Dabei steht das Symbol \lm{ \omega } für die Anzahl der endlichen natürlichen Zahlen, mit der Null, in der Menge \lm{ \mathbb{N} };'."\n".
+                    'Dabei steht das Symbol \lm{ ω } für die Anzahl der endlichen natürlichen Zahlen, mit der Null, in der Menge \lm{ \mathbb{N} };'."\n".
                     'also für die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n".
                     'Und das Symbol \lm{ \# } gibt die Anzahl der Elemente der nachfolgenden Menge an.'."\n",
                       'Gleiches gilt auch für den zweiten Summanden:'."\n".
@@ -456,9 +456,9 @@
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  - \frac{ x }{ 2 }  =  \# [ 0, x \, [_{\mathbb{A}_{\S}} \; \cdot \sum_{ \forall z \in \mathbb{Q} }  z \cdot s^{-1}  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-mit-Summe-ungeloest-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => false),
-                      array( display => 'off', latex => '{  \Leftrightarrow  - \frac{ x }{ 2 }  =  \# [ 0, x \, [_{\mathbb{A}_{\S}} \, \cdot \; \frac{ -\omega }{ \s }  }',
+                      array( display => 'off', latex => '{  \Leftrightarrow  - \frac{ x }{ 2 }  =  \# [ 0, x \, [_{\mathbb{A}_{\S}} \, \cdot \; \frac{ -ω }{ \s }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-mit-Summe-geloest-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  - \frac{ x }{ 2 }  =  - \; \# [ 0, x \, [_{\mathbb{A}_{\S}} \, \cdot \; \frac{ \omega }{ \s }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  - \frac{ x }{ 2 }  =  - \; \# [ 0, x \, [_{\mathbb{A}_{\S}} \, \cdot \; \frac{ ω }{ \s }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Anzahlausdruck-zweiter-Summand-von-Integration-von-2x-plus-supkl-Eins}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -467,14 +467,14 @@
                     'wie es endliche natürliche Zahlen gibt, also endliche positive ganze Zahlen, mit der Null.'."\n".
                     'Demnach finden wir, bei genauer Untersuchung, eine \jump{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen}{fundamentale Asymmetrie}'."\n".
                     'zwischen der ontologischen Struktur der endlichen ganzen Zahlen und der Verteilung ihrer Werte (siehe \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen}, im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}‹}).'."\n".
-                    'Dadurch ergibt die Summe aller endlichen ganzen Zahlen die aktual unendlich große negative Zahl \lm{ -\omega } (siehe Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}).'."\n",
+                    'Dadurch ergibt die Summe aller endlichen ganzen Zahlen die aktual unendlich große negative Zahl \lm{ -ω } (siehe Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Sum-z}).'."\n",
                       'Addieren wir nun beide Summanden, so erhalten wir:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \# [ 0, x [_{\mathbb{A}_{\S}} \; \cdot \; x \cdot \omega \; - \; \# [ 0, x \, [_{\mathbb{A}_{\S}} \, \cdot \; \frac{ \omega }{ \s }  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \# [ 0, x [_{\mathbb{A}_{\S}} \; \cdot \; x \cdot ω \; - \; \# [ 0, x \, [_{\mathbb{A}_{\S}} \, \cdot \; \frac{ ω }{ \s }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \# [ 0, x [_{\mathbb{A}_{\S}} \; \cdot \; \omega \cdot *( x - \frac{ 1 }{ \s } *)  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\!\! n  =  \# [ 0, x [_{\mathbb{A}_{\S}} \; \cdot \; ω \cdot *( x - \frac{ 1 }{ \s } *)  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-superial-kleine-natuerliche-SuperialZahlen-bisOhne-x-geteilt-Anzahlausdruck-Differenz-ausgeklammert}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -484,17 +484,17 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot s }{ 4 \cdot \omega } - \frac{ x }{ 2 }  }',
+                      array( display => 'on',  latex => '{  \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot s }{ 4 \cdot ω } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => false),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in [ 0, x ]_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot s }{ 4 \cdot \omega } - \frac{ x }{ 2 } + x  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall a \in [ 0, x ]_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot s }{ 4 \cdot \omega } + \frac{ x }{ 2 }  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall a \in [ 0, x ]_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot s }{ 4 \cdot ω } - \frac{ x }{ 2 } + x  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall a \in [ 0, x ]_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot s }{ 4 \cdot ω } + \frac{ x }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Diese Summe ließ sich vorher nicht explizit in einer aktual unendlichen Zahl ausdrücken, soweit mir bekannt.'."\n",
                       'In alldem kommen einige interessante Dinge vor, wie wir sehen, die zuvor wohl nicht zu fassen waren:'."\n".
                     'Auch die Anzahl aller endlichen rationalen Zahlen insgesamt und in einem Intervall konnte nach meinem Wissen zuvor'."\n".
                     'nicht durch eine aktual unendliche Zahl ausgedrückt werden.'."\n".
-                    'Und auch, wie eben gesagt, dass die Summe der endlichen ganzen Zahlen negativ ist und \lm{ -\omega } entspricht,'."\n".
+                    'Und auch, wie eben gesagt, dass die Summe der endlichen ganzen Zahlen negativ ist und \lm{ -ω } entspricht,'."\n".
                     'war mir nicht bekannt.'."\n",
                       'Ich denke, all dies ist schon etwas ziemlich besonderes und kann Appetit auf mehr machen.'."\n".
                     'Da ist im Folgenden noch einiges faszinierendes zu Entdecken.'."\n".
@@ -683,7 +683,7 @@
                     'Anschließend wird es so oft mit sich selber mal genommen, wie groß die Anzahl der endlichen natürlichen Zahlen ist,'."\n".
                     'um alle Primzahlen auch in einer Potenz vorrätig zu haben, die für alle gleich groß ist, aber so klein wie möglich,'."\n".
                     'dass die Potenz durch keine in rationalen Zahlen mögliche, negative Potenz in einem Produkt mit ihr endlich groß werden kann.'."\n",
-                      'Die hier in der Potenz erzeugte Anzahl wird in der Mengenlehre mit \lm{ \omega } bezeichnet und steht so für die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n".
+                      'Die hier in der Potenz erzeugte Anzahl wird in der Mengenlehre mit \lm{ ω } bezeichnet und steht so für die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}.'."\n".
                     'So können wir über das Symbol \lm{ \# } der Anzahl der Elemente einer Menge,\footnote{Vgl. \cite{wiki:MaechtigkeitMathematik:2023},'."\n".
                     'Mächtigkeit bei endlichen Mengen.} das ich hier auf unendlich große, abzählbare Mengen erweitere, definieren:'."\n".
                     ''))),
@@ -691,9 +691,9 @@
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{N}   :=  \mathbb{N}_{0}  }',
                                                label_text => '\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null}', label_incr => false),
-                      array( display => 'on',  latex => '{  \omega   :=  \#\mathbb{N}  }',
+                      array( display => 'on',  latex => '{  ω   :=  \#\mathbb{N}  }',
                                                label_name => 'OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N', label_text => '\name{OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{\omega}  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
                                                label_name => 'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega', label_text => '\name{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -708,25 +708,25 @@
                                           label_name => 'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod', label_text => '\name{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-fuer-alle-in-N-Primzahl-Prod}', label_incr => true),
                       array( display => 'on',  latex => '{  \Leftrightarrow  s  =  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{1} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{2} \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{3} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots \\\ \qquad\qquad\quad\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{n \in \mathbb{N}} \\\ \qquad\qquad\quad\; \;\;\;\; \vdots  }',
                                           label_name => 'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod', label_text => '\name{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{\omega}  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{ω}  }',
                                           label_name => 'OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega', label_text => '\name{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Prod-hoch-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                   '\condb{Die Veränderung der Primfaktorzerlegung von \lm{ s } durch rationale Koeffizienten} \\\\'."\n".
                     'Mit Hilfe der neuen Theorie der \jump{OM:BiOrd:Home}{Biordinalzahlen} können wir auch Zahlen wie'."\n".
-                    '\lm{ \omega - n }, mit \lm{ n \in \mathbb{N} }, darstellen und damit die Veränderung der Primzahlpotenzen'."\n".
+                    '\lm{ ω - n }, mit \lm{ n \in \mathbb{N} }, darstellen und damit die Veränderung der Primzahlpotenzen'."\n".
                     'des \italic{unendlichen Primzahl-Flächenprodukts} durch rationale Koeffizienten mit biordinalen Potenzen angeben:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{2}{9} \cdot s  =  2^{ \omega + 1} \cdot 3^{ \omega - 2} \cdot *( 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{\omega}  }'),
+                      array( display => 'on',  latex => '{  \frac{2}{9} \cdot s  =  2^{ ω + 1} \cdot 3^{ ω - 2} \cdot *( 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{ω}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Hier können wir sehen, dass \lm{ s } durch Multiplikation mit endlich beliebig vielen'."\n".
                     'rationalen Zahlen immer unendlich groß bleibt, also seine superiale Dimension nicht verändert.'."\n".
                     'Denn dadurch werden, aufgrund der Primfaktorzerlegung endlicher ganzer Zahlen, immer'."\n".
                     'nur natürliche Zahlen auf die jeweiligen Potenzen addiert oder von ihnen abgezogen.'."\n".
-                    'Da für jede natürliche Zahl \lm{ n } die \jump{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}{Differenz \lm{ \omega - n } immer'."\n".
+                    'Da für jede natürliche Zahl \lm{ n } die \jump{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}{Differenz \lm{ ω - n } immer'."\n".
                     'unendlich groß bleibt}, kann kein rationaler Koeffizient \lm{ q } einer endlich ganzzahligen Potenz \lm{ z } von'."\n".
                     '\lm{ s }, also unser folgendes \lm{ s^z }, in eine andere Potenzebene bringen:'."\n".
                     ''))),
@@ -754,28 +754,28 @@
                     '\color{*Bearb}{(Der Beweis der \italic{\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}} muss noch berücksichtigt werden.)} \\\\'."\n".
                     'Im spielerischen Umgang und in tieferen Analysen der Zusammenhänge kommt die Vermutung auf, dass das Produkt'."\n".
                     'der einfachen Potenz aller endlichen Primzahlen, also eine Zeile des Primzahl-Flächenprodukts,'."\n".
-                    'der Anzahl der natürlichen Zahlen \lm{ \omega } entspricht:'."\n".
+                    'der Anzahl der natürlichen Zahlen \lm{ ω } entspricht:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \omega  ?=  \omega_{\forall p}  :=  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
+                      array( display => 'on',  latex => '{  ω  ?=  ω_{\forall p}  :=  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-Produkt-aller-endlichen-Primzahlen}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{\omega}  \\\ \qquad\quad\;  =  *( \omega_{\forall p} *)^{\omega}  ?=  \omega^{\omega}  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  s  =  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots *)^{ω}  \\\ \qquad\quad\;  =  *( ω_{\forall p} *)^{ω}  ?=  ω^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-Fragezeichen-ist-omega-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} findet im Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm}}'."\n".
                     'eine nähere Begründung.'."\n".
                     'Dort wird aufgrund des unendlich ganzzahligen Zählens innerhalb der Superial-Zahlen unter anderem erkannt,'."\n".
-                    'dass die \jump{OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen}{Anzahl aller endlichen ganzen Zahlen \lm{ 2 \cdot \omega }}'."\n".
+                    'dass die \jump{OM:BiOrd:Einleitung:NeueEinsichten:AnzahlDerEndlichenGanzenZahlen}{Anzahl aller endlichen ganzen Zahlen \lm{ 2 \cdot ω }}'."\n".
                     'ein ganzzahliger Teiler von \lm{ \s } sein muss.'."\n".
-                    'Daher muss \lm{ \omega } ein ganzzahliger Teiler von \lm{ \frac{ \s }{ 2 } } sein,'."\n".
+                    'Daher muss \lm{ ω } ein ganzzahliger Teiler von \lm{ \frac{ \s }{ 2 } } sein,'."\n".
                     'also ein ganzzahliges Teilprodukt.'."\n",
-                      'Damit muss \lm{ \omega } ein unendlich großer Teil des Primzahlprodukts von \lm{ \s } sein.'."\n".
+                      'Damit muss \lm{ ω } ein unendlich großer Teil des Primzahlprodukts von \lm{ \s } sein.'."\n".
                     'Und bei näherer Analyse stellen wir auch fest, dass es sich um einen unendlich großen Teil des Primzahlprodukts'."\n".
                     'im horizontalen Bereich aller unterschiedlichen Primzahlen handeln muss.'."\n",
                       'In unserem Beweis der Primzahlprodukt-Vermutung zeigen wir zusätzlich, dass es nur sein kann,'."\n".
-                    'dass die Primfaktorzerlegung von \lm{ \omega } endliche Primzahlen von Beginn an und'."\n".
+                    'dass die Primfaktorzerlegung von \lm{ ω } endliche Primzahlen von Beginn an und'."\n".
                     'ohne Lücke enthalten muss.'."\n".
                     'Und von diesen dann unendlich viele, was zusammengefasst bedeutet, einfach alle endlichen Primzahlen.'."\n".
                     ''))),
@@ -909,7 +909,7 @@
                 'Definition ganzer und natürlicher Superial-Zahlen und die Integration', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Dadurch, dass \lm{ \s } die \lm{ \omega }-ste Potenz aller endlichen Primzahlen als Faktoren enthält, kommen wir zu besonderen arithmetischen Eigenschaften'."\n".
+                    'Dadurch, dass \lm{ \s } die \lm{ ω }-ste Potenz aller endlichen Primzahlen als Faktoren enthält, kommen wir zu besonderen arithmetischen Eigenschaften'."\n".
                     'bezüglich ihrer Multiplikation mit rationalen Zahlen, Brüchen aus ganzen Zahlen.'."\n"))),
                   array( 'text', array( text => array(
                   '\condb{Die Größenordnung von rationalen Zahlen ist die gleiche, wie die der reellen Zahlen} \\\\'."\n".
@@ -1115,7 +1115,7 @@
                     'Lässt sich die Körnung der natürlichen Zahlen über das folgende Produkt beschreiben?'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein.Gr', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  \frac{ 1 }{ p } *)  =  \frac{ 1 }{ 2 } \cdot \frac{ 1 }{ 3 } \cdot \frac{ 1 }{ 5 } \cdot \frac{ 1 }{ 7 } \cdot …  =  \frac{ 1 }{ \omega_{p} }  }'),
+                      array( display => 'on',  latex => '{  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  \frac{ 1 }{ p } *)  =  \frac{ 1 }{ 2 } \cdot \frac{ 1 }{ 3 } \cdot \frac{ 1 }{ 5 } \cdot \frac{ 1 }{ 7 } \cdot …  =  \frac{ 1 }{ ω_{p} }  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Hälfte aller natürlichen Zahlen enthält die \lm{ 2 }.'."\n".
@@ -1176,7 +1176,7 @@
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Eigene Überlegungen}',
-                    '• Betrachten wir die Primzahlen als alle möglichen Grundschwingungen in den natürlichen Zahlen, dann ist ihr Produkt die Zahl, bei der all diese Grundschwingungen das erste Mal wieder zusammentreffen. Daher wiederholen sich die natürlichen Zahlen ab der Zahl \lm{ \omega }. Nur folgt daraus, dass z.B. \lm{ \omega - 1} nicht zu den natürlichen Zahlen gehört. \lm{ \omega - n } für \lm{ n \in \mathbb{N} } ist diese Struktur gespiegelt, quasi rückwärts.',
+                    '• Betrachten wir die Primzahlen als alle möglichen Grundschwingungen in den natürlichen Zahlen, dann ist ihr Produkt die Zahl, bei der all diese Grundschwingungen das erste Mal wieder zusammentreffen. Daher wiederholen sich die natürlichen Zahlen ab der Zahl \lm{ ω }. Nur folgt daraus, dass z.B. \lm{ ω - 1} nicht zu den natürlichen Zahlen gehört. \lm{ ω - n } für \lm{ n \in \mathbb{N} } ist diese Struktur gespiegelt, quasi rückwärts.',
                     '• Siehe Erklärung für Raimund: Ordner "20200904 - Wissenschaft mit Raimund - Superial-Zahlen"',
                     '• Siehe meine Latex-Abhandlungen.',
                     ))),
@@ -1184,32 +1184,32 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(Der Beweis der \italic{\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}} muss noch berücksichtigt werden.)} \\\\'."\n".
                     'Meine langjährigen Spielereien haben in mir die Vermutung geweckt, dass der unendlich große Wert des Produkts aller endlichen Primzahlen ebenfalls'."\n".
-                    'die Größe von \lm{ \omega } hat.'."\n".
+                    'die Größe von \lm{ ω } hat.'."\n".
                     'Dies würde auf folgende Formeln hinauslaufen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)  =  \omega_{p}  }'),
-                      array( display => 'on',  latex => '{  \omega_{p}  ?=  \omega  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  s  =  \omega_{p}^{\omega}  ?=  \omega^{\omega}  }'),
+                      array( display => 'on',  latex => '{  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)  =  ω_{p}  }'),
+                      array( display => 'on',  latex => '{  ω_{p}  ?=  ω  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  s  =  ω_{p}^{ω}  ?=  ω^{ω}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Richtigkeit dieser Vermutung setzt eine Eigenschaft der Primzahlverteilung unter den extrem großen natürlichen Zahlen voraus, die so'."\n".
                     'allgemein wohl nicht erwartet wird.'."\n".
                     'Es wird letztendlich behauptet, dass das Produkt aller Primzahlen innerhalb der natürlichen Zahlen genau so groß ist, wie die Anzahl der natürlichen Zahlen selbst.'."\n".
                     'Dies kann nur sein, wenn unter den extrem großen natürlichen Zahlen nur noch sehr wenige Primzahlen vorkommen, sie dort also im Prinzip verschwinden und schließlich eigentlich nicht mehr vorkommen.'."\n".
-                    'Oder es gibt zwischen den endlichen, natürlichen Zahlen und ihrer Anzahl \lm{ \omega } eine riesige Lücke, wonach \lm{ \omega - 1} dann keine endliche, natürliche Zahl wäre.'."\n".
-                    '\lm{ \omega - 1 } wäre demnach das Symbol für eine aktual unendliche Zahl.'."\n",
+                    'Oder es gibt zwischen den endlichen, natürlichen Zahlen und ihrer Anzahl \lm{ ω } eine riesige Lücke, wonach \lm{ ω - 1} dann keine endliche, natürliche Zahl wäre.'."\n".
+                    '\lm{ ω - 1 } wäre demnach das Symbol für eine aktual unendliche Zahl.'."\n",
                       'Ich vermute genau letzteres, nicht mehr nur, weil es meiner logischen Intuition entspricht, sondern, weil die Konstruktion meiner \jump{OM:BiOrd:Einleitung}{Biordinalzahlen} genau diese \jump{OM:BiOrd:Einleitung:NeueEinsichten:NeueEinsichtenZuPosAktualUnendl}{Lücke} erkennen lässt.'."\n".
                     'Denn die Primzahlen kommen innerhalb der natürlichen Zahlen nicht zu einem endlichen Ende, wie sich zeigen lässt.'."\n".
-                    'Es muss auch diese Lücke geben, weil die natürlichen Zahlen selber nicht im Endlichen zum Ende kommen und \lm{ \omega - 1 } damit nicht quasi die größte oder letzte natürliche Zahl symbolisieren kann.'."\n".
+                    'Es muss auch diese Lücke geben, weil die natürlichen Zahlen selber nicht im Endlichen zum Ende kommen und \lm{ ω - 1 } damit nicht quasi die größte oder letzte natürliche Zahl symbolisieren kann.'."\n".
                     'Die Lücke könnte also tatsächlich so groß sein, dass das Produkt aller endlicher Primzahlen gleich der Anzahl der natürlichen Zahlen ist.'."\n".
                     'Auch wenn dies erst einmal überraschent erscheint.'."\n",
                       'Schaut man sich den Grafen der Primfakultät\footnote{\const{SupNum_g_footnote_text_Primorial}} \lm{ n\# } an, so steigt dieser anfangs sehr viel schneller, als der der Anzahl der natürlichen Zahlen.\footnote{\const{SupNum_g_footnote_text_PrimorialWikiWerte}}'."\n".
                     'Der Graf der Primfakultät kann am „Ende“ der natürlichen Zahlen nur dann wieder gleich groß werden, wenn ab einem bestimmten Punkt im Prinzip, vielleicht quasi erst im Aktual-Unendlichen, keine Primzahlen mehr in das Produkt hinzu kommen.'."\n".
                     'Die Primfakultät, bezogen auf die Anzahl der natürlichen Zahlen, \lm{ n\# - n } oder auch \lm{ \frac{ n\# }{ n } } kann im Endlichen kein Maximum haben.'."\n".
                     'Denn immer, wenn wieder eine Primzahl auftaucht, wird es „übermächtig“ groß, und die Primzahlen hören nicht auf aufzutauchen.'."\n".
-                    'Die Vermutung muss also mit der Lücke zwischen allen endlichen natürlichen Zahlen \lm{ \mathbb{N} } und \lm{ \omega } zu tun haben.'."\n".
+                    'Die Vermutung muss also mit der Lücke zwischen allen endlichen natürlichen Zahlen \lm{ \mathbb{N} } und \lm{ ω } zu tun haben.'."\n".
                     'Wie man dies zumindestens mal eingrenzen oder abschätzen kann, zeige ich auf der Seite \italic{\jumpname{OM:SupNum:Primzahlprodukt-Vermutung}}.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung', text =>
@@ -1223,7 +1223,7 @@
                   array( 'text', array( text => array(
                     'Die Definition des Aktual-Unendlichen durch alle endlichen Primzahlen,'."\n".
                     'genauer die Definition der vollständigen Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
-                    'in Form des Symbols \lm{ \omega } durch das \jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung}{Produkt aller endlichen Primzahlen} und'."\n".
+                    'in Form des Symbols \lm{ ω } durch das \jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Primzahlenprodukt-Vermutung}{Produkt aller endlichen Primzahlen} und'."\n".
                     'darauf basierend die Definition der superialen Basis oder Einheit \lm{ \s }'."\n".
                     'in dieser Arbeit, erlaubt uns noch einmal differenziert über die Zahlenarten nachzudenken.'."\n",
                       'Wie oben schon beschrieben gibt es die Vermutung, die Koeffizienten der algebraischen Zahlen'."\n".
