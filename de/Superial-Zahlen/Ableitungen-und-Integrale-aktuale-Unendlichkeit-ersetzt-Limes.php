@@ -36,12 +36,16 @@
                 'Der Mehrwert', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Dieses Vorgehen liefert den Vorteil, dass wir immer sehr genau sehen, was wir tun:'."\n",
-                      'Die Frage nach \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{der Funktion, die abgeleitet oder integriert sie selbst ergibt},'."\n".
+                    'Dieses Vorgehen hat den Vorteil, dass wir immer sehr genau sehen, was wir tun:'."\n",
+                      'Die Frage nach der Funktion, die abgeleitet oder integriert sie selbst ergibt,'."\n".
                     'die wir später stellen, eröffnet uns gleich ein neues Zahlenuniversum, dass sich an die Superial-Zahlen anlehnt, sie aber noch erweitert,'."\n".
-                    'also über sie hinausgeht, und uns die transzendente Zahl \lm{ \e } besser und detailliert verstehen lässt.'."\n".
-                    'Darüber bekommen wir eine Idee, dass auch andere transzendente Zahl diese Struktur haben könnten oder sollten.'."\n".
+                    'also über sie hinausgeht, und uns die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{transzendente Zahl \lm{ \e }} besser und detailliert verstehen lässt.'."\n",
+                      'Darüber bekommen wir eine Idee, dass auch andere transzendente Zahlen diese Struktur haben könnten.'."\n".
                     'Bei \lm{ π } liegt dies wegen ihres engen Zusammenhangs mit \lm{ \e } wirklich sehr nahe.'."\n".
+                    'Aber wir vermuten dies ganz allgemein, weil es beim Unterschied zwischen algebraischen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    'und transzendenten Zahlen\footnote{\const{SupNum_g_footnote_text_TranszendenteZahl}}'."\n".
+                    'offenbar genau um die Grenze zwischen den Fraktalebenen der Superial-Zahlen geht –'."\n".
+                    'den Stellen des \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystems} der Superial-Zahlen.'."\n".
                     ''))),
 
                   array( 'jumplist', array(
