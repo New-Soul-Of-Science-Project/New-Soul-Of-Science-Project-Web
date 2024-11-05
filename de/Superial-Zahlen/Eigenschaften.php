@@ -1434,7 +1434,7 @@
                     'unendlich Kleine; beide Male kombiniert mit dem Endlichen.'."\n",
                       'Es erscheint ein wenig wie ein Wunder, dass beides exakt einander entspricht, ja entsprechen muss.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich', text =>
                       
                 'Die superiale Basis \lm{ \s } und die Ordinalzahl \lm{ ω^{ω} } im Strukturvergleich', subline =>
                   'Vom Wert her gleich und doch verschieden')),

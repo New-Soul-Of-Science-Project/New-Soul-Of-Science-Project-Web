@@ -24,24 +24,34 @@
                     'Eigenschaften der endlichen natürlichen Zahlen sowie auch der ganzen Zahlen, der Primzahlen und der rationalen Zahlen'."\n".
                     'ins Aktual-Unendliche fortgesetzt werden.'."\n",
                       'Bei den Superial-Zahlen handelt es sich um eine abelsche Gruppe\footnote{\const{NSOSP_g_footnote_text_AbelscheGruppe}}'."\n".
-                    'bezüglich der Addition und Multiplikation und sie sind sogar ein angeordneter algebraischer Körper\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}},'."\n".
-                    'der die rationalen Zahlen \lm{ \mathbb{Q} } und, wie wir mittlerweile zeigen können, auch die Radikale der algebraischen Zahlen\color{*Bearb}{(Verweis)} ins Aktual-Unendliche erweitert.'."\n",
-                      'Radikale der algebraischen Zahlen sind solche Zahlen, die durch endliche rationale Zahlen, mittels der vier Grundrechenarten'."\n".
-                    'sowie unter Verwendung von endlichen ganzen Wurzeln darstellbar sein müssen.\color{*Bearb}{(Verweis)}'."\n".
-                    'Ob die Superial-Zahlen auch eine sinnvolle Erweiterung der algebraischen Zahlen darstellen, die keine Radikale sind, ist Teil der aktuellen Forschung.'."\n",
-                      'Denn die Superial-Zahlen sollen auf diese Weise auch die wichtigen endlichen Teilmengen der radikalen algebraischen Zahlen erweitern,'."\n".
+                    'bezüglich der Addition und Multiplikation.'."\n".
+                    'Sie sind sogar ein angeordneter algebraischer Körper\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}},'."\n".
+                    'der die rationalen Zahlen \lm{ \mathbb{Q} } und, wie wir mittlerweile zeigen können, auch die durch \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{Radikale darstellbaren rein realen algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    'ins Aktual-Unendliche erweitert;'."\n".
+                    'vielleicht sogar alle rein realen algebraischen Zahlen.'."\n",
+                      'Durch Radikale darstellbare rein reale algebraische Zahlen sind solche, die durch endliche rationale Zahlen, mittels der vier Grundrechenarten'."\n".
+                    'sowie unter Verwendung von endlichen ganzen Wurzeln darstellbar sind.\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}}'."\n".
+                    'Ob die Superial-Zahlen auch eine sinnvolle Erweiterung aller algebraischen Zahlen darstellen, die keine Radikale sind, ist Teil der \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}{aktuellen Forschung}.'."\n",
+                      'Die Superial-Zahlen sollen auch die wichtigen endlichen Teilmengen der algebraischen Zahlen erweitern,'."\n".
                     'wie die der natürlichen Zahlen \lm{ \mathbb{N} }, der ganzen Zahlen \lm{ \mathbb{Z} } und der Primzahlen \lm{ \mathbb{P} } zu den'."\n".
                     'den \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} \lm{ \mathbb{S}_{\N} },'."\n".
                     'den \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen} \lm{ \mathbb{S}_{\Z} }'."\n".
                     'und sogar zu den \jump{OM:SupNum:Formale-Entwicklung:PrimSZ}{superialen Primzahlen} \lm{ \mathbb{S}_{\P} }.'."\n",
-                      'So kommen wir zum Beispiel nicht nur in die Lage \jump{OM:SupNum:Einleitung}{Ableitungen mit Superial-Zahlen}, ganz ohne Limes, zu definieren,'."\n".
-                    'sondern auch in die Lage, bis ins Aktual-Unendliche zu zählen und dadurch Integrale'."\n".
+                      'So kommen wir zum Beispiel nicht nur in die Lage \jump{OM:SupNum:Ableitungen-Integrale:Ableitung}{Ableitungen mit Superial-Zahlen}, ganz ohne Limes, zu definieren,'."\n".
+                    'sondern auch in die Lage, bis ins Aktual-Unendliche zu zählen und dadurch \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integrale}'."\n".
                     'als Summen unendlich vieler, unendlich schmaler Flächenstreifen zu berechnen.'."\n",
-                      'Jede natürliche Superial-Zahl hat dabei so viele Vorgänger in \lm{ \mathbb{S}_{\N} }, wie sie selber groß ist.'."\n".
-                    'Dies ist anders, als bei den von mir erforschten auch ins Aktual-Unendliche gehenden'."\n".
+                      'Jede natürliche Superial-Zahl hat dabei so viele Vorgänger in \lm{ \mathbb{S}_{\N} }, wie sie selber groß ist.'."\n",
+                      'Dies ist genau so, wie bei den Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}}.'."\n".
+                    'Und unsere aktual unendliche superiale Basis \lm{ \s } ist sogar vom Wert her gleich der besonderen Ordinalzahl \lm{ ω^{ω} }, es \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}{gilt also \lm{ \s = ω^{ω} }}.'."\n".
+                    'Und auch noch \jump{OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich}{weitere Eigenschaften verbinden beide Zahlenarten}.'."\n".
+                    'Nur haben die Superial-Zahlen im Gegensatz zu den Ordinalzahlen unter anderem den Vorteil, dass wir in ihnen beliebig vorwärts und rückwärts zählen können,'."\n".
+                    'was wir für die Integration benötigen.'."\n".
+                    'In den Ordinalzahlen ist nur das vorwärts zählen beliebig weit definiert.'."\n".
+                    'Das Rückwärtszählen endet bei ihren Limeszahlen.'."\n",
+                      'Die Sache mit der Anzahl der Vorgänger ist hingegen anders, als bei den von mir erforschten auch ins Aktual-Unendliche gehenden'."\n".
                     '\jump{OM:BiOrd:Home}{Biordinalzahlen}:'."\n".
                     'Aktual unendliche Biordinalzahlen sind ganze Zahlen, die bizarrer Weise \jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{mehr Vorgänger als ihr Wert} haben, also als sie selber groß sind.'."\n".
-                    'In mancherlei anderen Punkten können wir erkennen, dass diese die noch nicht so „perfekten“ Vorläufer der Superial-Zahlen sind.'."\n".
+                    'Und auch in mancherlei anderer Beziehung können wir erkennen, dass diese die noch nicht so „perfekten“ Vorläufer der Superial-Zahlen sind.'."\n".
                     'Mathematisch gesehen sind die Biordinalzahlen eine Erweiterung der Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}} zu einem algebraischen Ring\footnote{\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n",
                       'Die Menge der Superial-Zahlen ist also in vielerlei Hinsicht etwas ganz besonderes.'."\n".
                     ''))),
@@ -50,22 +60,23 @@
                 'Polynom-Definition der Menge der Superial-Zahlen \lm{ \mathbb{S} }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Um zu gewährleisten, dass die ganzen und die natürlichen Superial-Zahlen möglichst große Teilmengen im Verhältnis zur Menge \lm{ \mathbb{S} } aller Superial-Zahlen sind,'."\n".
-                    'können die Koeffizienten der Potenzen der superialen Basis \lm{ \s } als rationale Zahlen aus \lm{ \mathbb{Q} } definiert werden:'."\n"))),
+                    'Um zu gewährleisten, dass die Superial-Zahlen \lm{ \mathbb{S} } eine möglichst große Anzahl der reellen Zahlen umfassen und ins Aktual-Unendliche erweitern,'."\n".
+                    'können die Koeffizienten der Potenzen der superialen Basis \lm{ \s } als \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvolle Koeffizienten}'."\n".
+                    'über \lm{ \mathbb{A}_{\S} } definiert werden:'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}  :=  *\{  x *|* *( \forall d \in \mathbb{Z} *) *( \forall q_{d} \in \mathbb{Q} \setminus \{0\} *) *( \forall q_{i} \in \mathbb{Q} *) \\\ \qquad\qquad\qquad\qquad\qquad\quad *[ q_{d} \s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i]} q_{i} \s^{i} *]  *\}  }',
+                      array( display => 'on',  latex => '{  \mathbb{S}  :=  *\{  u  *|*  *( \forall d \in \mathbb{Z} *) *( \forall a_{d} \in \mathbb{A}_{\S} \setminus *\{ 0 *\} *) *( \forall a_{i} \in \mathbb{A}_{\S} *) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\; *[ a_{d} \s^{d} + \!\!\!\!\!\! \sum_{( \forall i \in \mathbb{Z}) [i < d]} \!\!\!\!\!\! a_{i} \s^{i} *]  *\}  }',
                                           label_name => 'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom', label_text => '\name{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Vortext:X', text =>
-                      
-                '\color{*Bearb}{(In Arbeit …)}', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Vorstehend sehen wir unschwer im Grunde die Definition eines \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystems},'."\n".
+                    'was wir auf dieser Seite auch noch mit der Definition und Nutzung einer eigenen Schreibweise würdigen werden.'."\n",
+                      'Diese ist notwendig, weil die Stellen dieses neuen Stellenwertsystems nicht nur Ziffern, wie im Zehnersystem oder ähnlichen einfachen'."\n".
+                    'Systemen, sein können.'."\n".
+                    'Es können eben alle sinnvollen Koeffizienten der Superial-Zahlen sein, was Brüche, Wurzeln und sogar auch negative Zahlen umfasst.'."\n".
+                    'Ganze Terme können wir für die Stellen einsetzen.'."\n",
+                      'Nun nachfolgend aber erst einmal zu den ganzen Superial-Zahlen.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -92,50 +103,58 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}‹} aufzeigen,'."\n".
+                    'ist das Verständnis der ganzen Superial-Zahlen tief mit ihren sinnvollen Koeffizienten verbunden.'."\n".
+                    'Weil dort mehr im Detail erklärt, betrachten wir hier diesen Zusammenhang etwas oberflächlicher.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:GanzeSZ:X', text =>
+                      
+                'Die ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} }', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\condb{Ganze Superial-Zahlen \lm{ \mathbb{S}_{\Z} }} \\\\'."\n".
                     'Wie könnten ganze Superial-Zahlen nun aussehen?'."\n".
                     'Wir haben es zuvor ja schon angedeutet:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Die gebrochenen Summanden mit negativer Potenz von \lm{ \s } sollten Null sein.',
-                        'Im endlichen Summanden \lm{ \s^{0} } sollten sie nur ganze Zahlen haben.',
-                        'Die Summanden mit Potenzen von \lm{ \s } größer Null sollten ganze Zahlen sein, was bedeutet, dass nur Koeffizienten als Faktoren der potenzierten \jump{OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}{Primzahlprodukt-Fläche} in Frage kommen, die aus dem Produkt Primzahlen entfernen oder hinzufügen, ohne seine Größenordnung zu verändern.',
+                        'Die Summanden mit negativer Potenz von \lm{ \s } sollten Null sein, damit eine ganze Superial-Zahl eben nicht gebrochen ist.',
+                        'Im endlichen Summanden \lm{ \s^{0} } sollten sie nur ganze Zahlen enthalten, was bedeutet, dass hier auch die Koeffizienten ganze Zahlen sein müssen, weil ihr Stellenwert-Faktor \lm{ \s^{0} = 1 } ist.',
+                        'Die Summanden mit positiven Potenzen von \lm{ \s }, also \lm{ \s^{d} }, mit \lm{ 0 < d }, sollten auch nur ganze Zahlen sein. Hier bedeutet dies aufgrund der aktual unendlichen Größe von \lm{ \s^{d} } aber, dass nur Koeffizienten als Faktoren des potenzierten \jump{OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}{Primzahl-Flächenprodukts}, das \lm{ \s } entspricht, in Frage kommen, die das Produkt nicht in seiner Größenordnung bezüglich seiner Stelle \lm{ \s^{d} } verändern.',
                     ))),
                   array( 'text', array( text => array(
-                    'Faktoren, die aus der Primzahlprodukt-Fläche in diesem Sinne nur Primfaktoren entfernen oder hinzufügen sind zunächst erst einmal ganz klar die rationalen Zahlen.'."\n".
+                    'Faktoren, die aus dem Primzahl-Flächenprodukt in diesem Sinne nur Primfaktoren entfernen oder hinzufügen sind zunächst erst einmal ganz klar die rationalen Zahlen.'."\n".
                     'Sie bestehen nur aus endlichen Brüchen von Primfaktoren endlicher Anzahl und Potenz.'."\n",
-                      'In Frage kämen vielleicht noch, wie schon erwähnt, Brüche unendlicher Anzahl von Primfaktoren endlicher Potenz, was zur \jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} führt,'."\n".
-                    'mit der wir uns hier erst später näher beschäftigen wollen.'."\n",
-                      'Beispiele für ganze Superial-Zahlen sind:'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{A}_{\S} *) *( \forall z \in \mathbb{Z} *) *[  〈a〉〈b〉〈z〉․  \in  \mathbb{S}_{\Z}  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  〈-5〉․  \in  \mathbb{S}_{\Z}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *〈 - \frac{4}{25} *〉*〈 \frac{3}{2} *〉〈-5〉․  \in  \mathbb{S}_{\Z}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *〈 \frac{4}{25} *〉*〈 \frac{3}{2} *〉〈5,2〉․  \notin  \mathbb{S}_{\Z}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *〈 \frac{4}{25} *〉*〈 \frac{3}{2} *〉〈5〉․〈1〉  \notin  \mathbb{S}_{\Z}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Das vorletzte letzte Beispiel ist übrigens eine negative ganze Superial-Zahl und das letzte eine positive nicht ganze Superial-Zahl,'."\n".
-                    'weil die größte Stelle dominant ist.'."\n".
-                    'Eine genaue Definition der \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen} findet sich in der formalen Entwicklung.'."\n",
-                      'Ganze Superial-Zahlen lassen sich also sinnvoll definieren und bei näherer Betrachtung, die wir später vollziehen,'."\n".
-                    'haben diese sehr interessante Eigenschaften und lassen uns Zahlen besser verstehen.'."\n"))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                      'Interessanter und für manch einen wohl etwas überraschender Weise erfüllen aber auch ganzzahlige Wurzeln aus positiven natürlichen Zahlen diese Bedingung, wie wir im \jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung}'."\n".
+                    'lernen.'."\n".
+                    'Schließlich kommen wir sogar so weit, dass wir dies für \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{alle durch Radikale darstellbaren rein realen algebraischen Zahlen}'."\n".
+                    'zeigen können.'."\n",
+                      'Wir bekommen einen Eindruck und ein Gefühl anhand folgender Beispiele für ganze Superial-Zahlen in'."\n".
+                    'der neuen \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem-Schreibweise}:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.Z', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \mathbb{S}_{\Z}  :=  \left\{ x ~\middle|~ \left( \forall d \in \mathbb{N} \right) \left( \forall q_{d} \in \mathbb{Q} \setminus \{0\} \right) \left( \forall q_{i} \in \mathbb{Q} \right) \left( \forall z \in \mathbb{Z} \right) \\\ \qquad\qquad\quad \left[ \begin{cases} z  &  \text{ falls } d = 0  \\\\  q_{d} \s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i > 0]} q_{i} \s^{i} + z  &  \text{ falls } d > 0  \end{cases} \right] \right\}  }'),
+                      array( display => 'on',  latex => '{  *( \forall a, b, c, g \in \mathbb{A}_{\S} *) \\\  *[  *〈 a *〉*〈 b *〉*〈 c *〉․*〈 g *〉  =  a \s^{2} + b \s^{1} + c \s^{0} + g \s^{-1}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 a *〉*〈 b *〉*〈 c *〉․*〈 g *〉  \in  \mathbb{S}  }'),
+                      array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{A}_{\S} *) *( \forall z \in \mathbb{Z} *) *[  〈a〉〈b〉〈z〉․  \in  \mathbb{S}_{\Z}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 -5 *〉․  \in  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 - \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 5 *〉․  \in  \mathbb{S}_{\Z}  }',
+                                          label_name => 'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-negativ', label_text => '\name{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-negativ}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 -5 *〉․  \in  \mathbb{S}_{\Z}  }',
+                                          label_name => 'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-positiv', label_text => '\name{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-positiv}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 -5,2 *〉․  \notin  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 -5 *〉․*〈 1 *〉  \notin  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 \sqrt[3]{7} - \frac{1}{2} *〉*〈 - \frac{ 1 }{ \sqrt{2} } *〉*〈 3 *〉․  \in  \mathbb{S}_{\Z}  }'),
                     ))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
-                      
-                '\color{*Bearb}{(In Arbeit …)}', subline =>
-                  '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Das Beispiel \jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-negativ} ist übrigens eine negative ganze Superial-Zahl'."\n".
+                    'und das Beispiel \jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-positiv} eine positive ganze Superial-Zahl,'."\n".
+                    'weil die höchste Stelle dominant ist.'."\n",
+                      'Nachfolgend nun eine genaue Definition der ganzen Superial-Zahlen:'."\n",
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Form.Z', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on', latex => '{  \mathbb{S}_{\Z}  :=  *\{  u  *|*  *( \forall d \in \mathbb{N} *) *( \forall a_{d} \in \mathbb{A}_{\S} \setminus *\{ 0 *\} *) \\\ \qquad\qquad\qquad\;\, *( \forall a_{i} \in \mathbb{A}_{\S} *) *( \forall z \in \mathbb{Z} *) \\\ \qquad\qquad\qquad\;\, *[ \begin{cases} z  &  \text{ falls } d = 0  \\\\  \displaystyle{ a_{d} \s^{d} + \!\!\!\!\!\!\!\! \sum_{( \forall i \in \mathbb{N}) [0 < i < d]} \!\!\!\!\!\!\!\! a_{i} \s^{i} + z }  &  \text{ falls } 0 < d  \end{cases} *]  *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wenn wir uns einwenig damit beschäftigen, kommen wir schnell dahinter und können gut verstehen, dass dies plausibel ist.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -160,32 +179,32 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Die natürlich Superial-Zahl \lm{ \mathbb{S}_{\N} } leiten sich dann von den ganzen Superial-Zahl leicht ab.'."\n".
+                    'Es sind einfach alle Zahlen aus dieser Menge, die positiv sind, einschließlich der Null:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.N', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \mathbb{S}_{\N}  :=  \left\{ x ~\middle|~ \left( \forall x \in \mathbb{S}_{\Z} \right) \left[ x \geq 0 \right] \right\}  }'),
+                      array( display => 'on', latex => '{  \mathbb{S}_{\N}  :=  *\{  u  *|*  *( \forall u \in \mathbb{S}_{\Z} *)  *[ 0 \leq u *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Schreiben wir dies in einer ausführlicheren Definition, wie bei den ganzen Superial-Zahlen, dann wird es etwas transparenter:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.N', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on', latex => '{  \Leftrightarrow  \mathbb{S}_{\N}  :=  \left\{ x ~\middle|~ \left( \forall d \in \mathbb{N} \right) \left( \forall q_{d} \in \mathbb{Q} > 0 \right) \left( \forall q_{i} \in \mathbb{Q} \right) \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad \left( \forall n \in \mathbb{N} \right) \left( \forall z \in \mathbb{Z} \right) \\\ \qquad\qquad\qquad \left[ \begin{cases} n  &  \text{ falls } d = 0  \\\\  q_{d} \s^{d} + \sum_{( \forall i \in \mathbb{Z})[d > i > 0]} q_{i} \s^{i} + z  &  \text{ falls } d > 0  \end{cases} \right] \right\}  }'),
+                      array( display => 'on', latex => '{  \Leftrightarrow  \mathbb{S}_{\N}  :=  *\{  u  *|*  *( \forall d \in \mathbb{N} *) *( \forall a_{d} \in \mathbb{A}_{\S}^{+} *) *( \forall a_{i} \in \mathbb{A}_{\S} *) \\\ \qquad\qquad\qquad\qquad\quad\; *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) \\\ \qquad\qquad\qquad\qquad\quad\; *[ \begin{cases} n  &  \text{ falls } d = 0  \\\\  \displaystyle{ a_{d} \s^{d} + \!\!\!\!\!\!\!\! \sum_{( \forall i \in \mathbb{N}) [0 < i < d]} \!\!\!\!\!\!\!\! a_{i} \s^{i} + z }  &  \text{ falls } 0 < d  \end{cases} *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Für den Fall, dass \lm{ d = 0 } ist, es sich also um endliche Zahlen handelt, bleiben nur endliche natürliche Zahlen über.'."\n",
-                      'Für \lm{ d > 0 }, den Fall, dass es sich um aktual unendlich große natürliche Zahlen handelt, entspricht die Definition der von positiven ganzen Superial-Zahlen.'."\n".
-                    'Dies ist dadurch bestimmt, dass der Koeffizient \lm{ q_{d} } der größten Potenz \lm{ \s^{d} } positiv sein muss.'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                      'Für \lm{ 0 < d }, den Fall, dass es sich um aktual unendlich große natürliche Zahlen handelt, entspricht die Definition der von positiven ganzen Superial-Zahlen.'."\n".
+                    'Dies ist dadurch bestimmt, dass der Koeffizient \lm{ a_{d} } der größten Potenz \lm{ \s^{d} } positiv sein muss.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:NatuerlicheSZ:X', text =>
                       
-                '\color{*Bearb}{(In Arbeit …)}', subline =>
+                'Beispiele für natürliche natürlich Superial-Zahl', subline =>
                   '')),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                      
+                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:PrimSZ'),
                     )),
@@ -248,7 +267,7 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:PrimSZ:X', text =>
                       
                 '\color{*Bearb}{(In Arbeit …)}', subline =>
                   '')),
