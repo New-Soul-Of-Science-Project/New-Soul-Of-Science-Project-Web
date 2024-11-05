@@ -200,7 +200,6 @@
       jump_ary => array(
         'OM:SupNum:Eulersche-Zahl-e-Funktion:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
-        // 'OM:SupNum:Ableitungen-Integrale:Eulersche-Zahl-e-Funktion' => array( headline_text => 'Die eulersche Zahl \lm{ \e } und ihre \lm{ \e }-Funktion in der Differentialrechnung' , headline_text_short => 'Die eulersche Zahl e und ihre e-Funktion in der Differentialrechnung'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem' => array( headline_text => 'SN.EuZa.15'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s' => array( headline_text => 'SN.EuZa.19'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-omega' => array( headline_text => 'SN.EuZa.20'),
@@ -209,9 +208,11 @@
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem' => array( headline_text => 'SN.EuZa.81'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2' => array( headline_text => 'Beispielrechnung zur Ableitung mit \lm{ s^2 }'/* , headline_text_short => 'X'*/),
 
+        'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-e-Funktion-aus-dem-Integral' => array( headline_text => 'Die \lm{ \e }-Funktion aus dem Integral' , headline_text_short => 'Die e-Funktion aus dem Integral'),
+
         'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Transzendenz-der-eulerschen-Zahl-e' => array( headline_text => 'Die Transzendenz der eulerschen Zahl \lm{ \e }' , headline_text_short => 'Die Transzendenz der eulerschen Zahl e'),
 
-        'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Quadratur-des-Kreises' => array( headline_text => 'Die Quadratur des Kreises – von der eulerschen Zahl \lm{ \e } zu \lm{ \pi }', headline_text_short => 'Die Quadratur des Kreises – von der eulerschen Zahl e zu π'),
+        'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Quadratur-des-Kreises' => array( headline_text => 'Die Quadratur des Kreises – von der eulerschen Zahl \lm{ \e } zur Kreiszahl \lm{ π }', headline_text_short => 'Die Quadratur des Kreises – von der eulerschen Zahl e zur Kreiszahl π'),
       ),
     ),
     'OM:SupNum:Formale-Entwicklung' => array(

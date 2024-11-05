@@ -557,12 +557,64 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Transzendenz-der-eulerschen-Zahl-e'),
+                      array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-e-Funktion-aus-dem-Integral'),
                     )),
               )
           ); ?>
 		    	<br>
           <?php To_f_headline_add_hides_end_line(); ?>
+
+
+          <!  • Die e-Funktion aus dem Integral  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-e-Funktion-aus-dem-Integral',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion', type => 'back'),
+                    )),
+
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{Transzendenz von \lm{ \e }}',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Soll eine Funktion nun ihr eigenes Integral sein, dann gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f(x)  :=  f(a) + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(n) *〉  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => true),
+                      array( display => 'on',  latex => '{  f\'(x)  =  f(x)  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  f(a) + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f(n) *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{\s}^{x}  =  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  }',
+                                          label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem}', label_incr => true),
+                      array( display => 'on',  latex => '{  f(x)  =  \e_{\s}^{x}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \e_{\s}^{a} + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 \e_{\s}^{n} *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  \e_{\s}^{a} + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ \e_{\s}^{n} }{ \s }  }'),
+                      array( display => 'on',  latex => '{  f(x)  =  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  =  f(a) + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{*〈 n *〉_{1}} *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  =  *〈 1 *〉․*〈 1 *〉^{*〈 a *〉_{1}} + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{*〈 n *〉_{1}} *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 *( 1 + \frac{ 1 }{ \s } *)^{n \s} *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! *( *( 1 + \frac{ 1 }{ \s } *)^{n \s} \cdot \frac{ 1 }{ \s } *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ *( 1 + \frac{ 1 }{ \s } *)^{n \s} }{ \s }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Transzendenz-der-eulerschen-Zahl-e'),
+                    )),
+              )
+          ); ?>
 
 
           <!  • Die Transzendenz der eulerschen Zahl e  >
@@ -571,7 +623,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-e-Funktion-aus-dem-Integral', type => 'back'),
                     )),
 
                   array( 'notice', array( Display => 'showContent', text => array(
