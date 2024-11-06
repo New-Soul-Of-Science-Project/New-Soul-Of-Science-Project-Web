@@ -42,6 +42,7 @@
               'wiki:GrenzwertFunktion:2024',
               'wiki:Integralrechnung:2023',
               'wiki:IntervallMathematik:2023',
+              'wiki:IrreduziblesPolynom:2024',
               'wiki:KoerperAlgebra:2023',
               'wiki:KomplexeZahl:2024',
               'wiki:Kontinuumshypothese:2023',

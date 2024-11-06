@@ -237,14 +237,14 @@
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '\bold{Irreduzible Polynome}',
-                    '• \quote{Ihre Bedeutung für die Polynomringe ist in den meisten Fällen (Polynome über faktoriellen Ringen) mit der Bedeutung von Primzahlen für natürliche Zahlen gleich.}, vgl. \jump[https://de.wikipedia.org/wiki/Irreduzibles_Polynom]{}{Wikipedia – Irreduzibles Polynom}.',
+                    // '\bold{Irreduzible Polynome}',
+                    // '• \quote{Ihre Bedeutung für die Polynomringe ist in den meisten Fällen (Polynome über faktoriellen Ringen) mit der Bedeutung von Primzahlen für natürliche Zahlen gleich.}, vgl. \jump[https://de.wikipedia.org/wiki/Irreduzibles_Polynom]{}{Wikipedia – Irreduzibles Polynom}.',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Es lässt sich auch eine Menge \lm{ \mathbb{S}_{\P} } der superialen Primzahlen definieren.'."\n",
+                    'Es lässt sich sogar die Menge \lm{ \mathbb{S}_{\P} } der superialen Primzahlen definieren.'."\n",
                       'Dies sind alle \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen}, die'."\n".
-                    'nur durch Eins und durch sich selber ganzzahlig teilbar sind.'."\n".
+                    'nur durch Eins und durch sich selber ganzzahlig teilbar sind, wie auch sonst bei Primzahlen üblich.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -256,38 +256,47 @@
                       array( display => 'on',  latex => '{  \exists \mathbb{S}_{\P}\!: *( \forall x \in \mathbb{S}_{\N}^{+}\!: *( \forall n \in \mathbb{S}_{\N}^{+} \setminus *\{ 1, x *\} *) *[ n \nmid x *] \\\ \qquad\qquad\qquad\qquad\qquad\qquad\quad  \Rightarrow  x \in \mathbb{S}_{\P} *)  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'aller aktual unendlichen superialen Primzahlen.'."\n",
+                      'aller superialen Primzahlen.'."\n",
                         '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Wenn \jump{OM:SupNum:Ueberrationalitaetsvermutung}{\lm{ \mathbb{A}_{\R} } die Menge der algebraischen Koeffizienten} ist,'."\n".
-                    'dann gehören dazu auch:'."\n".
+                    'Wenn \lm{ \mathbb{A}_{\S} } \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{die Menge der sinnvollen Koeffizienten der Superial-Zahlen} ist,'."\n".
+                    'dann gehören dazu auch alle endlichen Primzahlen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.P', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathbb{P}  \subset  \mathbb{S}_{\P}  }'),
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *)  *[  a \cdot \s \pm 1  \in  \mathbb{S}_{\P}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *)  *[  a \cdot \s \pm 1  \in  \mathbb{S}_{\P}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die endlichen Primzahlen gehören dazu.'."\n".
-                    'Und im aktual unendlichen mit der superialen Basis einfacher Potenz bleiben nur Primzahlzwillinge.'."\n",
+                    'und beispielsweise auch diese vorstehenden aktual unendlich großen Superial-Zahlen.'."\n".
+                    'Dies können wir leicht erkennen, wenn wir uns in Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}'."\n".
+                    'das Primzahl-Flächenprodukt anschauen.'."\n",
                       'Kommen höhere Potenzen der superialen Basis ins Spiel, müssen wir schauen, ob es nicht binomische Formeln gibt, die diese erzeugen können:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.P', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *) *( \forall i \in \mathbb{N}^{+} *)  *[  a \cdot \s^{i} \pm 1  ?\in  \mathbb{S}_{\P}  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall a_{1}, a_{2} \in \mathbb{A}_{\R} *)  *[  a_{2} \cdot \s^{2} \pm a_{1} \cdot \s \pm 1  ?\in  \mathbb{S}_{\P}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *) *( \forall i \in \mathbb{N}^{+} *)  *[  a \cdot \s^{i} \pm 1  ?\in  \mathbb{S}_{\P}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a_{1}, a_{2} \in \mathbb{A}_{\S} *)  *[  a_{2} \cdot \s^{2} + a_{1} \cdot \s \pm 1  ?\in  \mathbb{S}_{\P}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Was wir sehen können ist, dass der endliche Summand nur \lm{ \pm 1 } sein kann, denn wäre er eine andere ganze Zahl,'."\n".
+                    'dann wäre die natürliche Superial-Zahl, wegen des Primzahl-Flächenprodukts, durch den Betrag dieser ganzen Zahl teilbar.'."\n",
+                      'Die Frage, welche natürlichen Superial-Zahlen superiale Primzahlen sind, ist über irreduzible Polynome\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:IrreduziblesPolynom:2024}.}'."\n".
+                    'zu beantworten:'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:PrimSZ:X', text =>
-                      
-                '\color{*Bearb}{(In Arbeit …)}', subline =>
-                  '')),
+
+                  array( 'text', array( Shape  => 'quote', text => array(
+                        'In der Algebra, einem Teilgebiet der Mathematik, ist ein irreduzibles Polynom ein Polynom, das sich nicht als Produkt zweier nicht'."\n".
+                        'invertierbarer Polynome schreiben lässt und somit nicht in „einfachere“ Polynome zerfällt.'."\n".
+                        'Ihre Bedeutung für die Polynomringe ist in den meisten Fällen (Polynome über faktoriellen Ringen)'."\n".
+                        'mit der Bedeutung von Primzahlen für natürliche Zahlen gleich.'."\n"),
+                        addtext => '\footnote{\cite{wiki:IrreduziblesPolynom:2024}.}')),
+
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Also gibt es sogar superiale Primzahlen unter den Superial-Zahlen.'."\n".
+                    'Noch eine echt bemerkenswerte Eigenschaft der Superial-Zahlen.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
