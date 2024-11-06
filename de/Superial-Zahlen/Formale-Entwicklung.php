@@ -134,6 +134,7 @@
                       array( display => 'on',  latex => '{  *( \forall a, b, c, g \in \mathbb{A}_{\S} *) \\\  *[  *〈 a *〉*〈 b *〉*〈 c *〉․*〈 g *〉  =  a \s^{2} + b \s^{1} + c \s^{0} + g \s^{-1}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 a *〉*〈 b *〉*〈 c *〉․*〈 g *〉  \in  \mathbb{S}  }'),
                       array( display => 'on',  latex => '{  *( \forall a, b \in \mathbb{A}_{\S} *) *( \forall z \in \mathbb{Z} *) *[  〈a〉〈b〉〈z〉․  \in  \mathbb{S}_{\Z}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 0 *〉․  \in  \mathbb{S}_{\Z}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 -5 *〉․  \in  \mathbb{S}_{\Z}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *〈 - \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 5 *〉․  \in  \mathbb{S}_{\Z}  }',
                                           label_name => 'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-negativ', label_text => '\name{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-negativ}', label_incr => true),
@@ -199,10 +200,24 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:NatuerlicheSZ:X', text =>
                       
-                'Beispiele für natürliche natürlich Superial-Zahl', subline =>
+                'Beispiele für natürliche Superial-Zahl', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Hier nun auch Beispiele in der \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem-Schreibweise}'."\n".
+                    'für die natürlichen Superial-Zahlen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Form.N', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *〈 0 *〉․  \in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  *〈 -5 *〉․  \notin  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  *〈 - \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 5 *〉․  \notin  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  *〈 \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 -5 *〉․  \in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  *〈 \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 -5,2 *〉․  \notin  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  *〈 \frac{4}{25} *〉*〈 \frac{3}{2} *〉*〈 -5 *〉․*〈 1 *〉  \notin  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  *〈 \sqrt[3]{7} - \frac{1}{2} *〉*〈 - \frac{ 1 }{ \sqrt{2} } *〉*〈 3 *〉․  \in  \mathbb{S}_{\N}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auch hier entscheidet die dominante höchste Stelle der Zahlen darüber, ob sie in der Menge der natürlichen Superial-Zahlen sind oder nicht.'."\n".
                     ''))),
                        
                   array( 'jumplist', array(

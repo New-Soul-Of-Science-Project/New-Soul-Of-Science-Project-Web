@@ -232,8 +232,8 @@
           'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom' => array( headline_text => 'SN.Form.1'),
 
         'OM:SupNum:Formale-Entwicklung:GanzeSZ' => array( headline_text => 'Ganze Superial-Zahlen'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-negativ' => array( headline_text => 'SN.Form.Z.5'),
-          'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-positiv' => array( headline_text => 'SN.Form.Z.6'),
+          'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-negativ' => array( headline_text => 'SN.Form.Z.6'),
+          'OM:SupNum:Formale-Entwicklung:Vortext:Equ-Beispiel-SZ-positiv' => array( headline_text => 'SN.Form.Z.7'),
 
         'OM:SupNum:Formale-Entwicklung:NatuerlicheSZ' => array( headline_text => 'Natürliche Superial-Zahlen'/* , headline_text_short => 'X' */),
         'OM:SupNum:Formale-Entwicklung:PrimSZ' => array( headline_text => 'Superiale Primzahlen'/* , headline_text_short => 'X' */),
