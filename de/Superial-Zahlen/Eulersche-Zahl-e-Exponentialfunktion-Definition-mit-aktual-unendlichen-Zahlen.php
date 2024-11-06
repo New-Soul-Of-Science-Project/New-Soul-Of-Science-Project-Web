@@ -584,10 +584,10 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.EuIn', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  f(x)  :=  f(a) + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(n) *〉  }',
+                      array( display => 'on',  latex => '{  f(x)  :=  f(a) + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(k) *〉  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => true),
                       array( display => 'on',  latex => '{  f\'(x)  =  f(x)  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  f(a) + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f(n) *〉  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  f(a) + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f(k) *〉  }'),
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
@@ -597,17 +597,60 @@
                       array( display => 'on',  latex => '{  \e_{\s}^{x}  =  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  }',
                                           label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem}', label_incr => true),
                       array( display => 'on',  latex => '{  f(x)  =  \e_{\s}^{x}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \e_{\s}^{a} + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 \e_{\s}^{n} *〉  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  \e_{\s}^{a} + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ \e_{\s}^{n} }{ \s }  }'),
-                      array( display => 'on',  latex => '{  f(x)  =  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  =  f(a) + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{*〈 n *〉_{1}} *〉  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  =  *〈 1 *〉․*〈 1 *〉^{*〈 a *〉_{1}} + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{*〈 n *〉_{1}} *〉  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 *( 1 + \frac{ 1 }{ \s } *)^{n \s} *〉  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! *( *( 1 + \frac{ 1 }{ \s } *)^{n \s} \cdot \frac{ 1 }{ \s } *)  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall n \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ *( 1 + \frac{ 1 }{ \s } *)^{n \s} }{ \s }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \e_{\s}^{a} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 \e_{\s}^{k} *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  \e_{\s}^{a} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  }'),
+                      array( display => 'on',  latex => '{  f(x)  =  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 *( 1 + \frac{ 1 }{ \s } *)^{k \s} *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! *( *( 1 + \frac{ 1 }{ \s } *)^{k \s} \cdot \frac{ 1 }{ \s } *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ *( 1 + \frac{ 1 }{ \s } *)^{k \s} }{ \s }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  =  *〈 1 *〉․*〈 1 *〉^{*〈 a *〉_{1}} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{*〈 k *〉_{1}} *〉  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Schauen wir uns dies doch einmal im ganz weit rein gezoomten Exponenten an.'."\n".
+                    'So, wie wir oben gesehen haben, dass die \lm{ \e }-Funktion bei aktual unendlich kleinem Exponenten ein Pascalsches Dreieck bildet'."\n".
+                    'beziehungsweise superialen Binomialkoeffizienten entspringt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  x \in \mathbb{A}_{\S}  \to  *〈 x *〉․*〈 n *〉 \in \mathbb{S}_{\N}^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n  \in  \mathbb{N}  }'),
+                      array( display => 'on',  latex => '{  a = 0  \land  x = 0  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{*〈 *〈 n *〉_{-1} *〉_{1}}  =  *〈 1 *〉․*〈 1 *〉^{*〈 0 *〉_{1}} + \!\!\! \sum_{ \forall k \in [0, *〈 n *〉_{-1}[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{*〈 k *〉_{1}} *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉^{n}  =  1 + \!\!\! \sum_{ \forall k \in [0, n[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Nun können wir Beispielhaft überprüfen, ob dies stimmt.'."\n".
+                    'Dazu fangen wir einfach mit den ersten natürlichen Zahlen in \lm{ n \in \mathbb{N} } an:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n  =  0  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{0}  =  1 + \!\!\! \sum_{ \forall k \in [0, 0[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  1  =  1 + 0  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  1  =  1  }'),
+                      array( display => 'on',  latex => '{  n  =  1  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{1}  =  1 + \!\!\! \sum_{ \forall k \in [0, 1[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉  =  1 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 0} *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉  =  1 \, + \, .*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉  =  *〈 1 *〉.*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  n  =  2  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{2}  =  1 + \!\!\! \sum_{ \forall k \in [0, 2[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 2 *〉*〈 1 *〉  =  1 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 0} *〉 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 1} *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 2 *〉*〈 1 *〉  =  1 \, + \, .*〈 1 *〉 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉 *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 2 *〉*〈 1 *〉  =  *〈 1 *〉.*〈 1 *〉 \, + \, .*〈 1 *〉*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 2 *〉*〈 1 *〉  =  *〈 1 *〉.*〈 2 *〉*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  n  =  3  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{3}  =  1 + \!\!\! \sum_{ \forall k \in [0, 3[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉^{3}  =  1 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 0} *〉 \\\ \qquad\qquad\qquad\qquad\quad\;\;\, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 1} *〉 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 2} *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 3 *〉*〈 3 *〉*〈 1 *〉  =  1 \, + \, .*〈 2 *〉*〈 1 *〉 \, + \, .*〈 *〈 1 *〉․*〈 2 *〉*〈 1 *〉 *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 3 *〉*〈 3 *〉*〈 1 *〉  =  *〈 1 *〉.*〈 2 *〉*〈 1 *〉 \, + \, . *〈 1 *〉*〈 2 *〉*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 3 *〉*〈 3 *〉*〈 1 *〉  =  *〈 1 *〉.*〈 3 *〉*〈 3 *〉*〈 1 *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auch, wenn dies noch kein Beweis ist, so können wir doch unschwer erkennen, dass die Summe des Integrals genau das Ergebnis'."\n".
+                    'erzeugt, welches wir für die \lm{ \e_{\s} }-Funktion aus dem Abschnitt \italic{›\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:eFunktionPascalscheDreieck}‹}'."\n".
+                    'schon kennen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(

@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 10.09.2024, 23:00h
+  // #: Stand: 06.11.2024, 17:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20241106:  +:  "$Sc_g_equation_replace_ary":  Add '  \to  ' -> '\;\;\;\to\;\;\;'
   //           20240910:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\Leftrightarrow  ' -> '\;\;\;\overset{\mspace{-3.5mu}?}{\Leftrightarrow}\;\;\;'
   //           20240903:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\Rightarrow  ' -> '\;\;\;\overset{\mspace{-3.5mu}?}{\Rightarrow}\;\;\;'
   //           20240604:  +:  New in "$Sc_g_equation_replace_ary":  '.\langle' -> '.\!\langle',  '\rangle .' -> '\rangle\!.',  '.\left\langle' -> '.\!\left\langle',  '\right\rangle .' -> '\right\rangle\!.'
@@ -680,6 +681,7 @@
                                     array( '  ?\in  ', '\;\;\;\overset{?}{\in}\;\;\;'),
                                     array( '  \notin  ', '\;\;\;\notin\;\;\;'),
                                     array( '  \subset  ', '\;\;\;\subset\;\;\;'),
+                                    array( '  \to  ', '\;\;\;\to\;\;\;'),
                                     array( '  \rightarrow  ', '\;\;\;\rightarrow\;\;\;'),
                                     array( '  \not\rightarrow  ', '\;\;\;\not\rightarrow\;\;\;\;\;'),
                                     array( '\partial ', '\partial\,'),
