@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 06.11.2024, 17:00h
+  // #: Stand: 08.11.2024, 21:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20241108:  +:  "MathJax":  Add Macro "concat" and "Concat" for a self created small concatenation symbol and big concatenation symbol.
   //           20241106:  +:  "$Sc_g_equation_replace_ary":  Add '  \to  ' -> '\;\;\;\to\;\;\;'
   //           20240910:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\Leftrightarrow  ' -> '\;\;\;\overset{\mspace{-3.5mu}?}{\Leftrightarrow}\;\;\;'
   //           20240903:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\Rightarrow  ' -> '\;\;\;\overset{\mspace{-3.5mu}?}{\Rightarrow}\;\;\;'
@@ -250,10 +251,10 @@
     echo '            rROpera: "\\\\rOpera",'."\n";
     echo '            lLOpera: "\\\\lOpera",'."\n";
     echo '            rLOpera: "\\\\mspace{-0.4mu} \\\\rfloor \\\\mspace{2.0mu}",'."\n";
-    // echo '            lSelSet: "\\\\left\\\\{ \\\\mspace{-4.4mu} \\\\rangle \\\\mspace{2.0mu}",'."\n"; // left selection set, linke Auswahlmenge
-    // echo '            rSelSet: "\\\\mspace{2.0mu} \\\\langle \\\\mspace{-4.4mu} \\\\right\\\\}",'."\n"; // left selection set, rechte Auswahlmenge
     echo '            lSelSet: "\\\\left| \\\\mspace{-3.6mu} \\\\rangle \\\\mspace{2.0mu}",'."\n"; // left selection set, linke Auswahlmenge
     echo '            rSelSet: "\\\\mspace{2.0mu} \\\\langle \\\\mspace{-3.6mu} \\\\right|",'."\n"; // left selection set, rechte Auswahlmenge
+    echo '            concat: "\\\\mid \\\\mspace{-1mu} \\\\circ \\\\mspace{-1mu} \\\\mid",'."\n"; // small concatenation symbol, self created
+    echo '            Concat: "\\\\LARGE{\\\\mid \\\\mspace{-2.5mu} \\\\circ \\\\mspace{-2.5mu} \\\\mid}",'."\n"; // big concatenation symbol, self created
     echo '            mod: "\\\\; mod \\\\;",'."\n";
     echo '            lowZero: "\\\\raise -.3ex 0",'."\n";
     echo '            updownarrows: "\\\\uparrow\\\\!\\\\downarrow",'."\n";
