@@ -111,7 +111,7 @@
                     'der Menge \lm{ \mathbb{A}_{\S} } sind.'."\n".
                     'Nach jetzigem Stand sind dies mindestens alle realen Koeffizienten der algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
                     'die durch Radikale\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}} darstellbar sind.'."\n".
-                    'Dass genau alle realen Koeffizienten algebraischer Zahlen in der Menge \lm{ \mathbb{A}_{\S} } sind \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}{vermuten wir},'."\n".
+                    'Dass genau alle realen Koeffizienten algebraischer Zahlen in der Menge \lm{ \mathbb{A}_{\S} } sind \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{vermuten wir},'."\n".
                     'ist jedoch noch zu beweisen.'."\n",
                       '\jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:superiale-Koeffizienten-Realanteile-algebraischer-Zahlen}{Transzendente Zahlen} scheinen hingegen als Koeffizienten nicht sinnvoll.'."\n".
                     ''))),

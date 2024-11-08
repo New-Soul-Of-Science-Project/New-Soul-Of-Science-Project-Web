@@ -2,7 +2,7 @@
         include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
 
 
-<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen'); ?>
+<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen'); ?>
 
 
       <?php FrQFT_f_Div_Header( '      '); ?>
@@ -131,7 +131,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Home'),
+                      array(  jump_name => 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden'),
                     )),
                 )
           ); ?>
@@ -141,11 +141,11 @@
 
           <!  • X  >
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen:X',
+            'OM:SupNum:OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:X',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
@@ -161,7 +161,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen:X'),
+                      array(  jump_name => 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:X'),
                     )),
               )
           ); */ ?>

@@ -31,7 +31,7 @@
                     'vielleicht sogar alle rein realen algebraischen Zahlen.'."\n",
                       'Durch Radikale darstellbare rein reale algebraische Zahlen sind solche, die durch endliche rationale Zahlen, mittels der vier Grundrechenarten'."\n".
                     'sowie unter Verwendung von endlichen ganzen Wurzeln darstellbar sind.\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}}'."\n".
-                    'Ob die Superial-Zahlen auch eine sinnvolle Erweiterung aller algebraischen Zahlen darstellen, die keine Radikale sind, ist Teil der \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}{aktuellen Forschung}.'."\n",
+                    'Ob die Superial-Zahlen auch eine sinnvolle Erweiterung aller algebraischen Zahlen darstellen, die keine Radikale sind, ist Teil der \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{aktuellen Forschung}.'."\n",
                       'Die Superial-Zahlen sollen auch die wichtigen endlichen Teilmengen der algebraischen Zahlen erweitern,'."\n".
                     'wie die der natürlichen Zahlen \lm{ \mathbb{N} }, der ganzen Zahlen \lm{ \mathbb{Z} } und der Primzahlen \lm{ \mathbb{P} } zu den'."\n".
                     'den \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} \lm{ \mathbb{S}_{\N} },'."\n".

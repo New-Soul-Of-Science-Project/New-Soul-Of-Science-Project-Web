@@ -239,8 +239,8 @@
         'OM:SupNum:Formale-Entwicklung:PrimSZ' => array( headline_text => 'Superiale Primzahlen'/* , headline_text_short => 'X' */),
 
         'OM:SupNum:Formale-Entwicklung:Formalien' => array( headline_text => 'Formalien'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Formale-Entwicklung:Formalien:Equ-alle-n-kleiner-s' => array( headline_text => 'SN.Form.F.14'),
-          'OM:SupNum:Formale-Entwicklung:Formalien:Equ-exist-n-mit-r-kleiner-n' => array( headline_text => 'SN.Form.F.15'),
+          'OM:SupNum:Formale-Entwicklung:Formalien:Equ-alle-n-kleiner-s' => array( headline_text => 'SN.Form.F.13'),
+          'OM:SupNum:Formale-Entwicklung:Formalien:Equ-exist-n-mit-r-kleiner-n' => array( headline_text => 'SN.Form.F.14'),
           'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen' => array( headline_text => 'Zahlen und Mengen im Unendlichen'/*, headline_text_short => 'X'*/),
           'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem' => array( headline_text => 'Stellenwertsystem'/* , headline_text_short => 'X' */),
           'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen' => array( headline_text => 'Skalierung der superialen Ebene einer Teilmenge der Superial-Zahlen'/* , headline_text_short => 'X' */),
@@ -359,20 +359,36 @@
         'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises' => array( headline_text => 'Diskussion des Beweises'/* , headline_text_short => 'X'*/),
       ),
     ),
-    'OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen' => array(
-      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Vermutung-superiale-Koeffizienten-sind-Realanteile-algebraischer-Zahlen.php',
-      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Vermutung-superiale-Koeffizienten-sind-Realanteile-algebraischer-Zahlen.php',
-      titel => 'Vermutung superiale Koeffizienten sind die algebraischen Zahlen - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\name[undertitle]{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}. — \name[description]{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}.',
+    'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen' => array(
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Vermutung-superiale-Koeffizienten-sind-reell-algebraische-Zahlen.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Vermutung-superiale-Koeffizienten-sind-reell-algebraische-Zahlen.php',
+      titel => 'Vermutung superiale Koeffizienten sind reell algebraischen Zahlen - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\name[undertitle]{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}. — \name[description]{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}.',
       keywords => '',
-      text_titel_h1 => 'Vermutung superiale Koeffizienten sind die algebraischen Zahlen',
-      text_titel_short => 'Vermutung superiale Koeffizienten sind die algebraischen Zahlen',
-      text_undertitel_h2 => 'Wir vermuten, dass alle sinnvollen superialen Koeffizienten exakt den Koeffizienten aller algebraischen Zahlen entsprechen',
-      text_titel_discr_h3 => 'Die Trennlinie zwischen den Koeffizienten – Realanteilen – aller algebraischen Zahlen und den transzendenten Zahlen entspricht im Grunde der Trennlinie zwischen den Fraktalebenen der Superial-Zahlen',
+      text_titel_h1 => 'Vermutung superiale Koeffizienten sind reell algebraischen Zahlen',
+      text_titel_short => 'Vermutung superiale Koeffizienten sind reell algebraischen Zahlen',
+      text_undertitel_h2 => 'Wir vermuten, dass alle sinnvollen superialen Koeffizienten exakt den reell algebraischen Zahlen entsprechen',
+      text_titel_discr_h3 => 'Die Trennlinie zwischen den reell algebraischen Zahlen und den transzendenten Zahlen entspricht im Grunde der Trennlinie zwischen den Fraktalebenen der Superial-Zahlen',
       jump_ary => array(
-        'OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+        'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
-          // 'OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen:Vortext:X' => array( headline_text => 'SN.ÜV.7'),
+          // 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:Vortext:X' => array( headline_text => 'SN.ÜV.7'),
+      ),
+    ),
+    'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden' => array(
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden.php',
+      titel => 'Vermutung superiale Koeffizienten sind reell algebraischen Zahlen - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\name[undertitle]{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}.\hidden{ — \name[description]{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}.}',
+      keywords => '',
+      text_titel_h1 => 'Vermutung transzendente Zahlen besitzen superial kleine Summanden',
+      text_titel_short => 'Vermutung transzendente Zahlen besitzen superial kleine Summanden',
+      text_undertitel_h2 => 'Wir vermuten, dass alle transzendenten Zahlen superial kleine Summanden besitzen und damit im aktual unendlich kleinen keine rein endlichen Zahlen sind',
+      text_titel_discr_h3 => '',
+      jump_ary => array(
+        'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          // 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:Vortext:X' => array( headline_text => 'SN.ÜV.7'),
       ),
     ),
   );

@@ -91,7 +91,7 @@
                     '\jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{immer eine ganze Zahl ergibt}.'."\n".
                     'Auch im Produkt mit allen Realanteilen von durch Radikale, also Wurzeln, darstellbaren algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
                     'wie wir nachfolgend gleich zeigen werden, ergeben sich immer ganze Superial-Zahlen.'."\n".
-                    'Ob dies, wie von mir vermutet, wirklich für \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}{alle Realanteilen von algebraischen Zahlen}'."\n".
+                    'Ob dies, wie von mir vermutet, wirklich für \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{alle Realanteilen von algebraischen Zahlen}'."\n".
                     'gilt, bleibt hingegen erst einmal noch offen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X', text =>
@@ -219,7 +219,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \mathbb{A}_{\S}  ?=  \mathbb{A}_{\R}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Das ist meine \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}{Vermutung, dass die sinnvollen superiale Koeffizienten alle Realanteile algebraischer Zahlen} sind.'."\n",
+                    'Das ist meine \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{Vermutung, dass die sinnvollen superiale Koeffizienten alle Realanteile algebraischer Zahlen} sind.'."\n",
                       'Algebraische Zahlen sind alle möglichen Nullstellen von Polynomen beliebigen Grades.'."\n".
                     'Nullstellen von Polynomen ersten bis vierten Grades sind alle komplexe Zahlen\footnote{\const{SupNum_g_footnote_text_KomplexeZahl}}'."\n".
                     'deren Koeffizienten rationale – also gebrochene –'."\n".
@@ -896,7 +896,7 @@
                     'Realanteile algebraischer Zahlen \lm{ \mathbb{A}_{\R} }, nicht weniger, aber auch nicht mehr, sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
                     'Denn die Linie, die die algebraischen Zahlen von den transzendenten trennt, ist im Grunde die gleiche,'."\n".
                     'die die einzelnen fraktalen Ebenen der Superial-Zahlen trennt.'."\n",
-                      'Genau das ist meine \italic{›\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}‹},'."\n".
+                      'Genau das ist meine \italic{›\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}‹},'."\n".
                     'also, dass Formel \jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen}'."\n".
                     'stimmt.'."\n".
                     'Das wäre schon ziemlich erfreulich und cool.'."\n".

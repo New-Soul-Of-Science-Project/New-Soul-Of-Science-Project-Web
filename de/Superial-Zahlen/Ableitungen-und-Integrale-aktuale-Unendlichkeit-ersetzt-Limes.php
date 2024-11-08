@@ -280,7 +280,7 @@
                     'sämtlich im oben erklärten Sinn sinnvolle Koeffizienten von \lm{ \s } sind und im Produkt immer ganze Zahlen sind.'."\n".
                     'Es bleibt derzeit noch die Frage offen, ob wirklich alle'."\n".
                     'realen Koeffizienten der algebraischen Zahlen als Koeffizienten von \lm{ \s } ganze Zahlen im Produkt mit \lm{ \s } ergeben.'."\n".
-                    'Dies Vermuten wir auf der Seite \italic{›\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}‹}.'."\n".
+                    'Dies Vermuten wir auf der Seite \italic{›\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}‹}.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>
                       
@@ -933,7 +933,7 @@
 
                   array( 'text', array( text => array(
                     'Wenn es sich bei den sinnvollen Koeffizienten der Superial-Zahlen wirklich um alle rein realen algebraischen Zahlen handeln sollte,'."\n".
-                    'wie \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-algebraischer-Zahlen}{wir vermuten},'."\n".
+                    'wie \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{wir vermuten},'."\n".
                     'dann habe ich einen Ausdruck für diese Summe bisher noch nicht gesehen und konnte bis heute auch noch nichts vergleichbares finden.'."\n",
                       'Unsere Biordinalzahlen und Superial-Zahlen sind etwas ganz besonderes,'."\n".
                     'weil sie uns in die Lage versetzen, eine Idee davon zu bekommen, wie wir solche Summen'."\n".
