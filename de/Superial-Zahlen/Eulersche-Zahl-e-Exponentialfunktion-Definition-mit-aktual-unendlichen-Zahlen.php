@@ -16,8 +16,6 @@
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '• Meine Herleitung der \lm{ \e }-Funktion mit Hilfe von Superial-Zahlen stammt aus dem Jahr 2001: siehe Datei "superial zahlen (26).pdf".',
-                    '\bold{Ideen}',
-                    '• Wie leiten wir \lm{ \e_{\s} } mit Integralen her?',
                     '\bold{Verbesserungen}',
                     '• Erwähnen, dass \lm{ \e_{\s} } keine einfache Superial-Zahl ist, sondern zu einer Superial-Zahlen Art gehört, bei der unter anderem auch aktual unendlich kleine Potenzen der superialen Basis wie \lm{ \s^{-\s} } erlaubt sind.',
                     ))),
@@ -574,10 +572,14 @@
                       array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion', type => 'back'),
                     )),
 
-                  array( 'notice', array( Display => 'showContent', text => array(
-                    // '\bold{Transzendenz von \lm{ \e }}',
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    '• Wie ich gerade wiederentdeckt habe (07.11.2024), hatte ich diese Analyse und Rechnungen zur \lm{ \e }-Funktion in der Integration mit Hilfe von Superial-Zahlen nicht nur gestern erneut gemacht, sondern spätestens schon mal am 03.11.2001 und vermutlich noch früher, was ich in älteren Dateien noch überprüfen kann: siehe Datei "superial zahlen (26).pdf", S. 18.',
+                    '– Am 15.07.2001 existierte es schon in: "superial zahlen (23).pdf", S. 17.',
+                    '– Ältere Dateien sind im uralten QuarkXPress-Format und für mich im Moment leider nicht zu öffnen, da damals nicht als PDF gespeichert.',
+                    '⋅ Konvertierungsmöglichkeiten hier: \url{https://forum.affinity.serif.com/index.php?/topic/141257-open-quarkxpress-files-in-publisher/}',
+                    '⋅ Oder ich muss einen alten Mac aktivieren …',
                     ))),
-
+                      
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n",
                       'Soll eine Funktion nun ihr eigenes Integral sein, dann gilt:'."\n".
