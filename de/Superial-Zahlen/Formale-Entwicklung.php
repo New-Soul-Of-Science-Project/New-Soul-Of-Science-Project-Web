@@ -407,7 +407,7 @@
                   '\condb{Übergang ins Aktual-Unendliche} \\\\'."\n".
                     'Anders als im Endlichen bei der Mengen \lm{ \mathbb{T}_{n} } verhält es sich, wenn wir zur Menge aller natürlich Zahlen \lm{ \mathbb{N} } übergehen,'."\n".
                     'die unendlich viele Elemente endlicher Größe enthält.'."\n".
-                    'Auch sie beginnt mit der Null und den weieren Elementen jeder Menge \lm{ \mathbb{T}_{n} }, aber in ihr gibt es per Definition kein größtes Element,'."\n".
+                    'Auch sie beginnt mit der Null und den weiteren Elementen jeder Menge \lm{ \mathbb{T}_{n} }, aber in ihr gibt es per Definition kein größtes Element,'."\n".
                     'weil es zu jedem Element einen Nachfolger gibt, denn es ist die Menge der vollständigen Induktion:\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
                     ''))),
                   array( 'equations',
@@ -429,11 +429,14 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( k \in \mathbb{A}_{\S} *)  *( \forall a^{+} \in \mathbb{A}_{\S}^{+} *)  \\\ \qquad\qquad  *[  k - a^{+}  <  k - ω^{-1}  \\\ \qquad\qquad\qquad\qquad  <  k  <  k + ω^{-1}  <  k + a^{+}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dazu nutzen wir hier die Menge \lm{ \mathbb{A}_{\S} } der sinnvollen algebraischen Koeffizienten der Superial-Zahlen, anstatt reelle Zahlen aus der Menge der reellen Zahlen \lm{ \mathbb{R} }.'."\n".
+                    'Dazu nutzen wir hier die Menge \lm{ \mathbb{A}_{\S} } der \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen algebraischen Koeffizienten der Superial-Zahlen},'."\n".
+                    'anstatt reelle Zahlen aus der Menge der reellen Zahlen \lm{ \mathbb{R} }.'."\n".
                     'Der Grund dafür ist, dass wir bei Zahlen aus \lm{ \mathbb{A}_{\S} } sicher sind, dass diese keine aktual unendlich kleinen Summanden enthalten,'."\n".
                     'die einen Teil unserer Ungleichungen ungültig machen würden.'."\n".
-                    'Denn unsere Untersuchung der Eulerschen Zahl \lm{ \e } – hierin als \lm{ \e_{\s} } bezeichnet – aufgrund der Ableitung mit Hilfe von Superial-Zahlen,'."\n".
-                    'lässt nämlich die Vermutung aufkommen, dass transzendente Zahlen, die Teil der Menge der reellen Zahlen \lm{ \mathbb{R} } sind, immer aktual unendlich kleine Summanden enthalten.'."\n",
+                    'Denn unsere Untersuchung der \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Eulerschen Zahl \lm{ \e }} – hierin als \lm{ \e_{\s} } bezeichnet –'."\n".
+                    'aufgrund der \jump{OM:SupNum:Ableitungen-Integrale:Ableitung}{Ableitung} mit Hilfe von Superial-Zahlen,'."\n".
+                    'lässt nämlich die \jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{Vermutung} aufkommen,'."\n".
+                    'dass transzendente Zahlen, die Teil der Menge der reellen Zahlen \lm{ \mathbb{R} } sind, immer aktual unendlich kleine Summanden enthalten.'."\n",
                       'Der Wert von \lm{ \pm ω^{-1} } ist über den \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} wohldefiniert.'."\n",
                       'Auf diese Weise kommen wir in die Lage, Zahlen außerhalb des Endlichen zu definieren; Zahlen, die also wirklich im negativen oder positiven aktual unendlich Großen'."\n".
                     'sowie zwischen den endlichen Zahlen liegen.'."\n".
