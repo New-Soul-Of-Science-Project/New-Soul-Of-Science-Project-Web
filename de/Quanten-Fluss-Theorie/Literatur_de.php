@@ -173,6 +173,7 @@
               'wiki:DoppelterBetazerfall2013',
               'wiki:Drehimpuls-Quantenmechanik:2022',
               'wiki:DunkleMaterie2013',
+              'wiki:Einstein-aether-theory:2024',
               'wiki:EinwegLichtgeschwindigkeit2014',
               'wiki:ElektroschwacheWechselwirkung2013',
               'wiki:Energieerhaltungssatz2014',

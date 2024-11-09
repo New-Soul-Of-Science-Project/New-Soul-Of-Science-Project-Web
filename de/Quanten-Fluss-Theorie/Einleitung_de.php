@@ -601,9 +601,14 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:Einleitung:Fundierung:XXX', text =>
                                            
                 'Taburelativierung: Medium des Lichts')),
+
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '• Ohne Medium gibt es keine Gleichzeitigkeit. Eine Definition der Gleichzeitigkeit ist in der Quantenphysik unabdingbar, denn entweder muss die Auflösung von Verschränkungen Gleichzeitig an zwei unterschiedlichen Orten passieren (Kopenhagener Deutung der QM) und/oder die Wellenfunktion bzw. das Quantenpotenzial benötigt eine Definition der Gleichzeitigkeit. Ohne Gleichzeitigkeit gibt es demnach keine Vereinheitlichung der Physik.',
+                    '• Dass es einen bevorzugtes Bezugssystem gibt, sehen wir am Mikrowellenhintergrund, der in unserer Bewegungsrichtung im Kosmos entsprechend rot-blau-verschoben ist, siehe Video von Sabine Hossenfelder – \jump[https://www.youtube.com/watch?v=Zf7H7P8QrGo]{}{Space-Filling Aether Theory Makes Comeback}.',
+                    '– Sie kommentiert darin, dass es zunehmend Arbeiten zu sogenannten Einstein-Äthertheorien (das erste Mal am 08.11.2024 gesehen) gibt, die zumindestens in wesentlichen Teilen mit der ART kompatibel sind und ein räumliches und zeitliches Bezugssystem mit einer Normalzeit haben. In diesen ist offenbar Gleichzeitigkeit definiert.\footnote{Vgl. \cite{wiki:Einstein-aether-theory:2024}.}',
+                    '– Duplikat in \jumpname{OM:FrQFT:NeuePhysik:Relativitaet:ART-MP}.',
                     ))),
+
                   array( 'text', array( text => array(
                     'Hier müssen wir uns abermals von einem Tabu der modernen Physik lösen:'."\n",
                       'Die neue Physik, in Form der Unterscheidung zwischen Zeit und Alterung, der Überlichtgeschwindigkeit der Feinstruktur, ihrer fraktalen Struktur und so fort,'."\n".
