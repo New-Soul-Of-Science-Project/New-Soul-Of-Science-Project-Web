@@ -329,12 +329,6 @@
                 '\italic{Inhalt}', subline =>
                   '')),
 
-                  /* array( 'bulletlist', array( bullet_ary => array(
-                        '\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen}',
-                        '\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem}',
-                        '\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen}',
-                        '\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge}',
-                    ))), */
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen'),
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem'),
@@ -466,33 +460,48 @@
                       
                 'Stellenwertsystem', subline =>
                   '')),
-
-                  array( 'notice', array( Display => 'showContent', text => array(
-                    // '\bold{X}',
-                    '• Übertragen von ›OM:SupNum:Einleitung:Grundlagen‹.',
-                    ))),
-
                   array( 'text', array( text => array(
-                  '\condb{Ein besonderes Zahlenwertsystem und seine Kurznotation} \\\\'."\n".
-                    'Das ist sehr bemerkenswert und ermöglicht ein neues und besonderes Zahlenwertsystem auf Basis der superialen Basis \lm{ \s }:'."\n",
-                      'Jede Ziffer dieses Zahlenwertsystems auf Basis \lm{ \s } kann eine Zahl sein; in jedem Fall eine rationale, möglicherweise auch eine überrationale (siehe \jumpname{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}).'."\n".
-                    'Sehr fraglich ist für mich, ob es sinnvollerweise wirklich auch jede reelle Zahl sein kann,'."\n".
-                    'denn ich vermute, dass transzendente Zahlen, wie die Eulersche Zahl \lm{ \e } oder die Kreiszahl \lm{ π },'."\n".
-                    'als Koeffizienten in jedem Fall aus dem sinnvollen Rahmen fallen.'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n",
-                      'Hier wird das Symbol \lm{ \concat } für die Aneinanderreihung, die Konkatenation, verwendet:'."\n".
+                    'Eine der Eigenschaften der Superial-Zahlen ist, dass es sich um ein Stellenwertsystem handelt.'."\n".
+                    'Es ist ein aktual unendliches Stellenwertsystem, in dem es eine endliche Stelle gibt und deren „Ziffern“'."\n".
+                    'nicht nur ganze Zahlen oder alle rationalen Zahlen sein können, sondern eine große Menge an reell algebraischen Zahlen, wenn nicht gar'."\n".
+                    '\jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{alle reell algebraischen Zahlen, wie wir vermuten}.'."\n".
+                    'Also können sogar negative Zahlen, Brüche, Wurzeln und so fort hier Ziffern sein.'."\n",
+                      '\jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{Vermutlich können transzendente Zahlen keine} wirklich \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{sinnvollen Ziffern beziehungsweise Koeffizienten} sein,'."\n".
+                      'wie die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Eulersche Zahl \lm{ \e } oder die Kreiszahl \lm{ π }}.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Ein besonderes Zahlensystem und seine Kurznotation} \\\\'."\n".
+                    'Das ist sehr bemerkenswert und ermöglicht ein neues und besonderes Stellenwertsystem auf Basis der superialen Basis \lm{ \s }.'."\n",
+                      'Nachfolgend wird das Symbol \lm{ \concat } für die Aneinanderreihung, die Konkatenation,'."\n".
+                      'der „Ziffer“ nach der Definition \jumpname{OM:SupNum:Formale-Entwicklung:Vortext:Equ-Def-S-Polynom} der Superial-Zahlen verwendet:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}  :=  *\{  u  *|*  *( \forall d \in \mathbb{Z} *) *( \forall a_{d} \in \mathbb{A}_{\S} \setminus *\{ 0 *\} *) *( \forall a_{i} \in \mathbb{A}_{\S} *) \\\ \qquad\qquad\qquad\; *[ *〈 a_{d} *〉_{d} \underset{ ( \forall i \in \mathbb{Z}) [i < d] }{ \Concat } *〈 a_{i} *〉_{i}  :=  \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad a_{d} \s^{d} + \!\!\!\!\!\! \sum_{( \forall i \in \mathbb{Z}) [i < d]} \!\!\!\!\!\! a_{i} \s^{i} *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{S}  =  *\{  u  *|*  *( \forall d \in \mathbb{Z} *) *( \forall a_{d} \in \mathbb{A}_{\S} \setminus *\{ 0 *\} *) *( \forall a_{i} \in \mathbb{A}_{\S} *) \\\ \qquad\qquad\qquad\; *[ *〈 a_{d} *〉_{d} \underset{ ( \forall i \in \mathbb{Z}) [i < d] }{ \Concat } *〈 a_{i} *〉_{i}  :=  \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad a_{d} \s^{d} + \!\!\!\!\!\! \sum_{( \forall i \in \mathbb{Z}) [i < d]} \!\!\!\!\!\! a_{i} \s^{i} *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n",
-                      'Nachfolgend ein paar Beispiele in einer neuen Notation, die jede Ziffer dieses Zahlensystems in spitzen Klammern notiert:'."\n".
+                    'Hierbei ist an jeder spitzen Klammer ein Index notiert, die wir großteils in der Praxis auch weglassen:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Im Allgemeinen notieren wir die nullte Stelle, oft schlicht mit einem Punkt, denn die von dort aufsteigenden oder absteigenden Stellen'."\n".
+                          'verstehen sich durchs Abzählen.',
+                        'Wenn es nur die minus-erste Stelle und niedrigere gibt, dann notieren wir die Null oder den Punkt vor der minus-ersten Stelle.',
+                        'Gibt es keine nullte oder minus-erste Stelle, dann notieren wir an die niedrigste Stelle deren Index.',
+                        'Sollten nach oben hin Sprünge im Index sein, dann notieren wir ihn an der nullten Stelle oder nach der niedrigsten Stelle und dann nach jedem Sprung, damit klar ist, wo es weiter geht.',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auf diese Weise ergibt sich eine recht einfache Notation.'."\n".
+                    'An jeder Stelle können dann Terme eingetragen werden.'."\n".
+                    'Am Ende der Rechnung wird angestrebt, dass die Terme rein endliche Ausdrücke ergeben,'."\n".
+                    'die nicht mehr zu Überträgen in andere Stellen führen, wenn dies geht.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Beispiele für unsere Kurznotation} \\\\'."\n".
+                    'Nun ein paar Beispiele in einer neuen Notation:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a, b, c, d \in \mathbb{Q} *) *[  〈a〉〈b〉〈c〉․〈d〉 \\\ \qquad\qquad\qquad  =  a \cdot \s^{2} + b \cdot \s^{1} + c \cdot \s^{0} + d \cdot \s^{-1} \\\ \qquad\qquad\qquad  \in  \mathbb{S}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a, b, c, d \in \mathbb{A}_{\S} *) *[  〈a〉〈b〉〈c〉․〈d〉 \\\ \qquad\qquad\qquad  =  a \cdot \s^{2} + b \cdot \s^{1} + c \cdot \s^{0} + d \cdot \s^{-1} \\\ \qquad\qquad\qquad  \in  \mathbb{S}  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \s^{1}  =  〈1〉〈0〉․  =  〈1〉〈0〉_{0}  =  〈1〉_{1}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \s^{0}  =  〈1〉․  =  〈1〉_{0}  =  1  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  \s^{-1}  =  ․〈1〉  =  _{0}〈1〉  }'),
@@ -501,10 +510,6 @@
                   array( 'text', array( text => array(
                     'Ich denke an diesen einfachen Beispielen wird klar, wie das superiale Zahlenwertsystem funktioniert und wie es notiert wird.'."\n".
                     'Der Punkt hinter der nullten Potenz von \lm{ \s } markiert quasi das Komma, ähnlich unseren reellen Zahlen im Zehnersystem notiert.'."\n".
-                    'Alternativ kann hinter einer spitzen Klammer auch die Potenz der superialen Basis \lm{ \s } als ganze Zahl angegeben werden.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen', text =>
                       
