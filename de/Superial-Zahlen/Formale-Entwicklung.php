@@ -387,7 +387,7 @@
                       ''))),
                       
                   array( 'text', array( text => array(
-                  '\condb{Das größte Element einer Menge} \\\\'."\n".
+                  '\condb{Das größte Element dieser Mengen} \\\\'."\n".
                     'Im Fall der Mengen mit endlich vielen Elementen, hier repräsentiert durch die Menge \lm{ \mathbb{T}_{n} }, existiert ein größtes Element in der Menge.'."\n".
                     'Wenn das Symbol \lm{ \# } die Anzahl der Elemente einer Menge gibt, dann gilt:'."\n".
                     ''))),
@@ -399,16 +399,16 @@
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall i \in \mathbb{T}_{n} *)  *[  i  <  n  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die letztere Aussage erscheint mir wesentlich und auch im Aktual-Unendlichen weiter haltbar.'."\n".
+                    'Die letzte Aussage \lm{ \forall i < n } wird sich nachfolgend als wesentlich, weil auch im Aktual-Unendlichen weiter tragfähig, herausstellen.'."\n".
                     'Die Aussage \lm{ \mathrm{groesstes}(\mathbb{T}_{n}) = n - 1 } gilt offenbar nur im Endlichen und ergibt im Aktual-Unendlichen keinen Sinn mehr.'."\n",
                       'Wir gehen nun ins Unendliche über und schauen uns das mal näher an.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Übergang ins Aktual-Unendliche} \\\\'."\n".
-                    'Anders als im Endlichen der Mengen \lm{ \mathbb{T}_{n} } verhält es sich, wenn wir zur Menge aller natürlich Zahlen \lm{ \mathbb{N} } übergehen,'."\n".
+                    'Anders als im Endlichen bei der Mengen \lm{ \mathbb{T}_{n} } verhält es sich, wenn wir zur Menge aller natürlich Zahlen \lm{ \mathbb{N} } übergehen,'."\n".
                     'die unendlich viele Elemente endlicher Größe enthält.'."\n".
-                    'Auch sie beginnt mit der Null, aber in ihr gibt es per Definition kein größtes Element,'."\n".
-                    'weil es zu jedem Element einen Nachfolger gibt, denn es ist die Menge der vollständigen Induktion:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Unendlichkeitsaxiom:2021}, Bedeutung für die Mathematik, Natürliche Zahlen.}'."\n".
+                    'Auch sie beginnt mit der Null und den weieren Elementen jeder Menge \lm{ \mathbb{T}_{n} }, aber in ihr gibt es per Definition kein größtes Element,'."\n".
+                    'weil es zu jedem Element einen Nachfolger gibt, denn es ist die Menge der vollständigen Induktion:\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -423,15 +423,23 @@
                       array( display => 'on',  latex => '{  ω  :=  \#\mathbb{N}  }',
                                                label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  n  <  ω  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall r \in \mathbb{R} *)  *( \exists n \in \mathbb{N} *)  *[  r  <  n  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall r \in \mathbb{R} *)  *[  -ω  <  r  <  ω  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall r^{+} \in \mathbb{R}^{+} *)  *[  0  <  ω^{-1}  <  r^{+}  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( k \in \mathbb{R} *)  *( \forall r^{+} \in \mathbb{R}^{+} *)  \\\ \qquad\qquad  *[  k - r^{+}  <  k - ω^{-1}  \\\ \qquad\qquad\qquad\qquad  <  k  <  k + ω^{-1}  <  k + r^{+}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *)  *( \exists n \in \mathbb{N} *)  *[  a  <  n  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\S} *)  *[  -ω  <  a  <  ω  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a^{+} \in \mathbb{A}_{\S}^{+} *)  *[  0  <  ω^{-1}  <  a^{+}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( k \in \mathbb{A}_{\S} *)  *( \forall a^{+} \in \mathbb{A}_{\S}^{+} *)  \\\ \qquad\qquad  *[  k - a^{+}  <  k - ω^{-1}  \\\ \qquad\qquad\qquad\qquad  <  k  <  k + ω^{-1}  <  k + a^{+}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Auf diese Weise kommen wir in die Lage, Zahlen außerhalb des Endlichen zu definieren; Zahlen, die also wirklich im Unendlichen liegen.'."\n",
-                      'Auch können wir nun Zahlen definieren, die um eine endliche reelle Zahl herum liegen und näher an dieser sind, als jede andere reelle Zahl.'."\n".
-                    'Sie verhalten sich ähnlich, wie der Limes einer Umgebung \lm{ \varepsilon }, der gegen Null geht.'."\n".
+                    'Dazu nutzen wir hier die Menge \lm{ \mathbb{A}_{\S} } der sinnvollen algebraischen Koeffizienten der Superial-Zahlen, anstatt reelle Zahlen aus der Menge der reellen Zahlen \lm{ \mathbb{R} }.'."\n".
+                    'Der Grund dafür ist, dass wir bei Zahlen aus \lm{ \mathbb{A}_{\S} } sicher sind, dass diese keine aktual unendlich kleinen Summanden enthalten,'."\n".
+                    'die einen Teil unserer Ungleichungen ungültig machen würden.'."\n".
+                    'Denn unsere Untersuchung der Eulerschen Zahl \lm{ \e } – hierin als \lm{ \e_{\s} } bezeichnet – aufgrund der Ableitung mit Hilfe von Superial-Zahlen,'."\n".
+                    'lässt nämlich die Vermutung aufkommen, dass transzendente Zahlen, die Teil der Menge der reellen Zahlen \lm{ \mathbb{R} } sind, immer aktual unendlich kleine Summanden enthalten.'."\n",
+                      'Der Wert von \lm{ \pm ω^{-1} } ist über den \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} wohldefiniert.'."\n",
+                      'Auf diese Weise kommen wir in die Lage, Zahlen außerhalb des Endlichen zu definieren; Zahlen, die also wirklich im negativen oder positiven aktual unendlich Großen'."\n".
+                    'sowie zwischen den endlichen Zahlen liegen.'."\n".
+                    'Auch können wir nun Zahlen definieren, die um eine endliche reelle Zahl herum liegen und näher an dieser sind, als jede andere Zahl aus \lm{ \mathbb{A}_{\S} },'."\n".
+                    'wie alle rationalen Zahlen oder alle durch Radikale darstellbaren algebraischen Zahlen.'."\n".
+                    'Die Zahl \lm{ \pm ω^{-1} } verhält sich ähnlich, wie der Limes einer Umgebung \lm{ \varepsilon }, der gegen plus oder minus Null geht.'."\n".
                     'Nur sind diese Umgebungszahlen nicht unscharf, wie ein Limes, sondern konkret und damit scharf.'."\n",
                       'Das gleiche gilt, wenn wir das \lm{ ω } durch die noch viel größere superiale Basis \lm{ \s = ω^{ω} } ersetzen:'."\n".
                     ''))),
@@ -439,16 +447,16 @@
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N} *)  *[  n  <  \s  *]  }',
                                                label_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Equ-alle-n-kleiner-s', label_text => '\name{OM:SupNum:Formale-Entwicklung:Formalien:Equ-alle-n-kleiner-s}', label_incr => true),
-                      array( display => 'on',  latex => '{  *( \forall r \in \mathbb{R} *)  *( \exists n \in \mathbb{N} *)  *[  r  <  n  *]  }',
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *)  *( \exists n \in \mathbb{N} *)  *[  a  <  n  *]  }',
                                                label_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Equ-exist-n-mit-r-kleiner-n', label_text => '\name{OM:SupNum:Formale-Entwicklung:Formalien:Equ-exist-n-mit-r-kleiner-n}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall r \in \mathbb{R} *)  *[  - \s  <  r  <  \s  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall r \in \mathbb{R}^{+} *)  *[  0  <  \s^{-1}  <  r  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( k \in \mathbb{R} *)  *( \forall r \in \mathbb{R}^{+} *)  \\\ \qquad\qquad  *[  k - r  <  k - \s^{-1}  \\\ \qquad\qquad\qquad\qquad  <  k  <  k + \s^{-1}  <  k + r  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\S} *)  *[  - \s  <  a  <  \s  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in \mathbb{A}_{\S}^{+} *)  *[  0  <  \s^{-1}  <  a  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( k \in \mathbb{A}_{\S} *)  *( \forall a \in \mathbb{A}_{\S}^{+} *)  \\\ \qquad\qquad  *[  k - a  <  k - \s^{-1}  \\\ \qquad\qquad\qquad\qquad  <  k  <  k + \s^{-1}  <  k + a  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Eigenschaft der Superial-Zahlen, mit ihnen keinen unscharfen, sondern einen konkreten „Limes“ definieren zu können, eröffnet die Möglichkeit'."\n".
                     'wichtige Eigenschaften der Zahlen näher untersuchen zu können, wie wir später sehen werden.'."\n".
-                    'Sie ermöglicht so unter anderem die Definition einer konkreten Differentialrechnung, wie oben schon angedeutet.'."\n".
+                    'Sie ermöglicht so unter anderem die Definition einer konkreten aktual unendlichen Differentialrechnung, wie oben schon angedeutet.'."\n".
                     ''))),
                   // #Ref: *SupNum:Stellenwertsystem-Schreibweise
                   array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem', text =>

@@ -68,6 +68,7 @@
               'wiki:Teilmenge:2023',
               'wiki:TranszendenteZahl:2023',
               'wiki:Unendlichkeitsaxiom:2021',
+              'wiki:VollstaendigeInduktion:2024',
             ));
           ?>
 
