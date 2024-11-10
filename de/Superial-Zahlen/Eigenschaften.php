@@ -1081,6 +1081,19 @@
                     'Die Beschäftigung mit der Struktur von \lm{ \s } ist sehr ergiebig in Bezug auf weitere'."\n".
                     'tiefe Erkenntnisse.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:X', text =>
+
+                '\italic{Inhalt}', subline =>
+                  '')),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-Menge-S-Bemerkenswerten-Zusammenhang'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich'),
+                    )),
+
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS', text =>
                       
                 'Was lernen wir über die Größe von \lm{ ω } und die Struktur von \lm{ \s } über die Frage der Vorgänger?', subline =>
