@@ -932,9 +932,9 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Wenn es sich bei den sinnvollen Koeffizienten der Superial-Zahlen wirklich um alle rein realen algebraischen Zahlen handeln sollte,'."\n".
+                    'Wenn es sich bei den sinnvollen Koeffizienten der Superial-Zahlen wirklich um alle reell algebraischen Zahlen handeln sollte,'."\n".
                     'wie \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{wir vermuten},'."\n".
-                    'dann habe ich einen Ausdruck für diese Summe bisher noch nicht gesehen und konnte bis heute auch noch nichts vergleichbares finden.'."\n",
+                    'dann habe ich einen Ausdruck für deren Summe bisher noch nicht gesehen und konnte bis heute auch noch nichts vergleichbares finden.'."\n",
                       'Unsere Biordinalzahlen und Superial-Zahlen sind etwas ganz besonderes,'."\n".
                     'weil sie uns in die Lage versetzen, eine Idee davon zu bekommen, wie wir solche Summen'."\n".
                     'ausdrücken können.'."\n",
