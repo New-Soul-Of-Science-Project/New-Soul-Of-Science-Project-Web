@@ -1762,14 +1762,6 @@
         
         echo $offset.'<table class="tools-class-text" border="0" style="'.(($block_is) ? ' text-align: justify;' : '').'" cellspacing="0" cellpadding="0">'."\n";
         break;
-      case 'jumplist-old-unused':
-        // #?: Is an element in array?
-        if (0 < count( $text))
-        {
-          // #: "margin" can intersect, "padding" can not intersect and it will always add.
-          echo $offset.'<p style="'.( (array_key_exists( margin, $text[0]) && $text[0][margin] == 'margin_small') ? '' : 'margin-top: 20px; margin-bottom: 20px;').'">'."\n";
-        }
-        break;
       case 'jumplist':
         // #?: Is an element in array?
         if (0 < count( $text))
@@ -1929,49 +1921,6 @@
           echo $offset.'      '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value)).'</p> </td> </tr>'."\n";
         }
         
-        break;
-
-      case 'jumplist-old-unused':
-        
-        // #?: Is an element in array?
-        if (0 < count( $text))
-
-          foreach ($text as $value_ary)
-          {
-            // #?: Is short version?
-            if (array_key_exists( jump_name, $value_ary))
-            {
-              // #: Generate the site name from the "$value_ary[jump_name]".
-              if (To_f_Site( $site_name, $value_ary[jump_name]))
-                ;
-              // #?: Is "title_site" is undefined? Set "title_site".
-              if (!array_key_exists( title_site, $value_ary))
-                $value_ary[title_site] = $Glo_g_Site_ary[$site_name][text_titel_short];
-              // #?: Is "$site_name" not the activ site name?
-              if ($site_name != $Glo_g_Site_activ)
-                $value_ary[jump_url] = $Glo_g_Site_ary[$site_name][url_rel];
-              
-              // #?: Is "jump_name" a chapter of the site?
-              if ($value_ary[jump_name] != $site_name)
-              {
-                // #?: Is "title_chapter" is undefined? Set "title_chapter".
-                if (!array_key_exists( title_chapter, $value_ary))
-                  if (array_key_exists( headline_text_short, $Glo_g_Site_ary[$site_name][jump_ary][$value_ary[jump_name]]))
-                    $value_ary[title_chapter] = $Glo_g_Site_ary[$site_name][jump_ary][$value_ary[jump_name]][headline_text_short];
-                  else
-                    $value_ary[title_chapter] = $Glo_g_Site_ary[$site_name][jump_ary][$value_ary[jump_name]][headline_text];
-                $value_ary[jump_anchor] = $value_ary[jump_name];
-              }
-            }
-            
-            // #?: Is URL?
-            // #?: If site is not the active one or is URL defined?
-            if ((!array_key_exists(jump_anchor, $value_ary)) || (isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || (array_key_exists( jump_url, $value_ary)))
-              echo $offset.'  '.(((array_key_exists( type, $value_ary) && $value_ary[type] == 'back')) ? '&larr;' : '&rarr;').' &nbsp; <a href="'.(array_key_exists( jump_url, $value_ary) ? $value_ary[jump_url] : '').( (array_key_exists( jump_anchor, $value_ary)) ? '#'.($value_ary[jump_anchor]) : '').'">'.((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')).'</a>'.((array_key_exists( title_chapter, $value_ary) && ($value_ary[title_site] != '')) ? ' &mdash; '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')) : '').'<br>'."\n";
-            else
-              echo $offset.'  '.(((array_key_exists( type, $value_ary) && $value_ary[type] == 'back')) ? '&larr;' : '&rarr;').' &nbsp; '.(To_f_anchor_Jump_html( ((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_site])), ((array_key_exists(jump_anchor, $value_ary)) ? $value_ary[jump_anchor] : ''), '', $replace_ary, $replace_preg_ary)).'<br>'."\n";
-          }
-          
         break;
 
       case 'jumplist':
@@ -2389,11 +2338,6 @@
         break;
       case 'bulletlist':
         echo $offset.'</table>'."\n";
-        break;
-      case 'jumplist-old-unused':
-        // #?: Is an element in array?
-        if (0 < count( $text))
-          echo $offset.'</p>'."\n";
         break;
       case 'jumplist':
         // #?: Is an element in array?
