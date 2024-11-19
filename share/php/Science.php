@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 08.11.2024, 21:00h
+  // #: Stand: 19.11.2024, 17:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20241119:  *:  "Sc_f_equation_latex_str_html":  Change MathJax inline mode to use "$" as start and same as end instead of "\(" as start ans "\)" as end because the old usage caused problems in case of use in "\jumpname" statements probably getting confused by the system with our own internal latex statements.
   //           20241108:  +:  "MathJax":  Add Macro "concat" and "Concat" for a self created small concatenation symbol and big concatenation symbol.
   //           20241106:  +:  "$Sc_g_equation_replace_ary":  Add '  \to  ' -> '\;\;\;\to\;\;\;'
   //           20240910:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\Leftrightarrow  ' -> '\;\;\;\overset{\mspace{-3.5mu}?}{\Leftrightarrow}\;\;\;'
@@ -846,7 +847,7 @@
         //$html_ret = '<span style="color: #'.$latex_color.'">\\['.$latex_str.'\\]</span>';  // #!: Does not work for the color!
         //$html_ret = '\\[ \\definecolor{formcolor}{HTML}{'.$latex_color.'} \\color{formcolor} '.$latex_str.' \\]'."\n";  // #!: MathJax does not support HTML colors!
         //$html_ret = '<div style="font-size: 200%;"> \\[ \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor} '.$latex_str.' \\] </div>'."\n";  // #!: Font-size like that does not work. It is corrected afterwards by MathJax to normal.
-        $html_ret = (($style == 'inline') ? '\\(' : '\\[').((strlen($latex_color) == 0) ? '' : ' \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor}').' '.$latex_str.' '.(($style == 'inline') ? '\\)' : '\\]'."\n");
+        $html_ret = (($style == 'inline') ? '$' : '\\[').((strlen($latex_color) == 0) ? '' : ' \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor}').' '.$latex_str.' '.(($style == 'inline') ? '$' : '\\]'."\n");
         //$html_ret = '\\[ \\large \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor} '.$latex_str.' \\]'."\n";  // #!: It is a bit to big.
         break;
 
