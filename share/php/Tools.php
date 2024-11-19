@@ -1766,9 +1766,8 @@
         // #?: Is an element in array?
         if (0 < count( $text))
         {
-          // #: "margin" can intersect, "padding" can not intersect and it will allways add.
-          //%!echo $offset.'<p style="font-size: 12px; '.( (array_key_exists( margin, $text[0]) && $text[0][margin] == 'margin_small') ? '' : 'margin-top: 20px; margin-bottom: 20px;').' color: #505050;">'."\n";
-          echo $offset.'<p style="'.( (array_key_exists( margin, $text[0]) && $text[0][margin] == 'margin_small') ? '' : 'margin-top: 20px; margin-bottom: 20px;').' color: #505050;">'."\n";
+          // #: "margin" can intersect, "padding" can not intersect and it will always add.
+          echo $offset.'<p style="'.( (array_key_exists( margin, $text[0]) && $text[0][margin] == 'margin_small') ? '' : 'margin-top: 20px; margin-bottom: 20px;').'">'."\n";
         }
         break;
       case 'figure':
@@ -1967,12 +1966,12 @@
             //echo '$site_name: "'; print_r( $site_name); echo '"<br>';
             
             // #?: Is URL?
-            // #?: If site is not the activ one or is URL defined?
+            // #?: If site is not the active one or is URL defined?
             if ((!array_key_exists(jump_anchor, $value_ary)) || (isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || (array_key_exists( jump_url, $value_ary)))
               //%!echo $offset.'  &rarr; &nbsp; <a href="'.($value_ary[jump_url]).( (array_key_exists( jump_anchor, $value_ary)) ? '#'.($value_ary[jump_anchor]) : '').'" style="color: #505050;">'.((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')).'</a>'.((array_key_exists( title_chapter, $value_ary) && ($value_ary[title_site] != '')) ? ' &mdash; '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')) : '').'<br>'."\n";
-              echo $offset.'  '.(((array_key_exists( type, $value_ary) && $value_ary[type] == 'back')) ? '&larr;' : '&rarr;').' &nbsp; <a href="'.(array_key_exists( jump_url, $value_ary) ? $value_ary[jump_url] : '').( (array_key_exists( jump_anchor, $value_ary)) ? '#'.($value_ary[jump_anchor]) : '').'" style="color: #505050;">'.((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')).'</a>'.((array_key_exists( title_chapter, $value_ary) && ($value_ary[title_site] != '')) ? ' &mdash; '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')) : '').'<br>'."\n";
+              echo $offset.'  '.(((array_key_exists( type, $value_ary) && $value_ary[type] == 'back')) ? '&larr;' : '&rarr;').' &nbsp; <a href="'.(array_key_exists( jump_url, $value_ary) ? $value_ary[jump_url] : '').( (array_key_exists( jump_anchor, $value_ary)) ? '#'.($value_ary[jump_anchor]) : '').'">'.((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')).'</a>'.((array_key_exists( title_chapter, $value_ary) && ($value_ary[title_site] != '')) ? ' &mdash; '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')) : '').'<br>'."\n";
             else
-              echo $offset.'  '.(((array_key_exists( type, $value_ary) && $value_ary[type] == 'back')) ? '&larr;' : '&rarr;').' &nbsp; '.(To_f_anchor_Jump_html( ((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_site])), ((array_key_exists(jump_anchor, $value_ary)) ? $value_ary[jump_anchor] : ''), '505050', $replace_ary, $replace_preg_ary))/*.((array_key_exists( title_chapter, $value_ary) && ($value_ary[title_site] != '')) ? ' &mdash; '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_site])) : '')*/.'<br>'."\n";
+              echo $offset.'  '.(((array_key_exists( type, $value_ary) && $value_ary[type] == 'back')) ? '&larr;' : '&rarr;').' &nbsp; '.(To_f_anchor_Jump_html( ((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_site])), ((array_key_exists(jump_anchor, $value_ary)) ? $value_ary[jump_anchor] : ''), '', $replace_ary, $replace_preg_ary)).'<br>'."\n";
           }
           
         break;
