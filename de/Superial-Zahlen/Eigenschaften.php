@@ -1096,11 +1096,16 @@
 
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS', text =>
                       
-                'Was lernen wir über die Größe von \lm{ ω } und die Struktur von \lm{ \s } über die Frage der Vorgänger?', subline =>
+                'Was lernen wir über die Größe von \lm{ ω } und die Struktur von \lm{ \s } anhand der Frage der Vorgänger?', subline =>
                   '')),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Quantifizierungen}',
+                    '• Können wir die Anzahl der rationalen Zahlen (über den Calkin-Wilf-Baum\color{*Bearb}{(Verweis)}) oder der reell algebraischen Zahlen quantifizieren?',
+                    ))),
+                      
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In der \jumpname{OM:SupNum:Formale-Entwicklung} so formuliert:}'."\n",
-                      'Jede natürliche Superial-Zahl \lm{ n } hat so viele Vorgänger in \lm{ \mathbb{S}_{\N} }, wie sie selber groß ist,'."\n".
+                    'Jede natürliche Superial-Zahl \lm{ n } hat so viele Vorgänger in \lm{ \mathbb{S}_{\N} }, wie sie selber groß ist,'."\n".
                     'wie bei den endlichen natürlichen Zahlen.'."\n".
                     'Dies ist anders, als bei den von mir ebenfalls entdeckten und erforschten, auch ins Aktual-Unendliche gehenden'."\n".
                     '\jump{OM:BiOrd:Home}{Biordinalzahlen}:'."\n".
@@ -1108,11 +1113,13 @@
                     'In mancherlei anderen Punkten können wir erkennen, dass sie die noch nicht so perfekten Vorläufer der Superial-Zahlen sind.'."\n".
                     'Mathematisch gesehen sind die Biordinalzahlen eine Erweiterung der Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}} zu einem algebraischen Ring\footnote{\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n",
                       'Demnach hat \lm{ \s } also so viele Vorgänger, wie das Primzahl-Flächenprodukt groß ist.'."\n".
+                    'Interessanterweise ist das \jump{OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich}{ebenso, wie bei \lm{ ω^{ω} } innerhalb der Ordinalzahlen},'."\n".
+                    'obwohl es sich trotz \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}{gleicher Werte \lm{ \s = ω^{ω} } um unterschiedliche Strukturen} handelt.'."\n".
                     'Die Anzahl der Vorgänger von \lm{ \s } ist dann:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Die Anzahl aller reell algebraischen Koeffizienten \lm{ a } von \lm{ \s }, für die gilt: \lm{ 0 \leq a < 1 }.',
-                        'Multipliziert mit \lm{ 2 \cdot ω } für die Anzahl der endlichen ganzen Zahlen, siehe \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}, die ja zu jedem Koeffizienten addiert – und im Falle der negativen natürlich dann abgezogen – werden. Wobei im Falle von \lm{ a = 0 } nur natürliche Zahlen addiert und im Falle von \lm{ a = 1 } nur negative ganze Zahlen addiert, also effektiv abgezogen, werden.',
+                        'Multipliziert mit \lm{ 2 \cdot ω } für die Anzahl der endlichen ganzen Zahlen, siehe \italic{›\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}‹}, die ja zu jedem Koeffizienten addiert – und im Falle der negativen natürlich dann abgezogen – werden. Wobei im Falle von \lm{ a = 0 } nur natürliche Zahlen addiert und im Falle von \lm{ a = 1 } nur negative ganze Zahlen addiert, also effektiv abgezogen, werden.',
                     ))),
                   array( 'text', array( text => array(
                     'So formulieren wir die Vorgänger von \lm{ \s } folgendermaßen:'."\n".
@@ -1124,7 +1131,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [ 0, \s [_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < 1  \\\\  \s + z^{-}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  \;\;  ,  }',
+                      array( display => 'on',  latex => '{  [ 0, \s [_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\qquad\, *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < 1  \\\\  \s + z^{-}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  \;\; ,  }',
                                           label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -1151,7 +1158,8 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *) \; \cdot \; *( 2 \cdot ω *)  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'was der Anzahl aller Realanteile der algebraischen Zahlen entspricht. \\\\'."\n".
+                      'was der Anzahl aller \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} entspricht,'."\n".
+                      'die, nach unserer \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{Vermutung, alle reell algebraischen Zahlen} sind. \\\\'."\n".
                       'Denn mit'."\n".
                       ''))),
                   array( 'equations',
@@ -1160,23 +1168,26 @@
                                           label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'sind alle Realanteile der algebraischen Zahlen, ohne Redundanzen – also Doppelungen – und Lücken, definiert und es folgt daraus'."\n".
+                      'sind alle sinnvollen Koeffizienten, ohne Redundanzen – also Doppelungen – und Lücken, definiert und es folgt daraus'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \s  =  \# \mathbb{A}_{\S}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{A}_{\S}  =  \# \mathbb{Z} \; \cdot \; \# [ 0, 1 [_{\mathbb{A}_{\S}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}  =  *( 2 \cdot ω *) \; \cdot \; \# [ 0, 1 [_{\mathbb{A}_{\S}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}  =  \s  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'weil es in den Realanteilen der algebraischen Zahlen \lm{ \mathbb{A}_{\S} } das Interval \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} }'."\n".
+                      'weil es in den sinnvollen Koeffizienten \lm{ \mathbb{A}_{\S} } das Interval \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} }'."\n".
                       'für jede ganze Zahl in \lm{ \mathbb{Z} } gibt und sie damit vollständig beschrieben sind.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'So gilt dann auch'."\n".
+                      'So gilt dann auch, nun doppelt bestätigt,'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 \cdot ω }  }',
                                           label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}', label_incr => true),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ ω^{ω} }{ 2 \cdot ω }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ ω^{ω - 1} }{ 2 }  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -1185,8 +1196,8 @@
                       ''))),
                       
                   array( 'text', array( text => array(
-                    'Dies muss eine ganze Zahl sein und ist ein wichtiger Baustein der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}.'."\n",
-                      '\color{*Entwick}{(Können wir die Anzahl der rationalen Zahlen (oder der Realanteile der algebraischen Zahlen) quantifizieren? Zum Beispiel über den Calkin-Wilf-Baum\color{*Bearb}{(Verweis)}?)}'."\n".
+                    'Hier muss es sich um eine ganze Zahl handeln, weil dies die Anzahl der Elemente einer Menge beschreibt, die immer ganz ist,'."\n".
+                    'womit nachfolgend diese Erkenntnis ein wichtiger Hinweisgeber zur und zentraler Baustein der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} ist.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm', text =>
                       
@@ -1217,7 +1228,7 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen', text =>
                       
-                'Erklärung der Anzahl der endlichen ganzen Zahlen durch ihren ontologischen Ursprung in den Biordinalzahlen', subline =>
+                'Erklärung der Anzahl der endlichen ganzen Zahlen durch ihren ontologischen Ursprung in der Struktur der Biordinalzahlen', subline =>
                   'Formulierung der Entstehung der negativen ganzen Zahlen durch Rückwärtszählen, ohne Umkehrung der Zählrichtung')),
                   array( 'text', array( text => array(
                     'Die vorstehend gemachten Aussagen sind entscheidend davon abhängig, wieviele endliche ganze Zahlen es gibt.'."\n".
