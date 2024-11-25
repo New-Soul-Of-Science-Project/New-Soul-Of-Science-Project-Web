@@ -566,7 +566,7 @@
           <!  • Die e-Funktion aus dem Integral  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-e-Funktion-aus-dem-Integral',
-              '', 'Sc_f_Paragraph',
+              'Eine Funktion, die Integriert sich selbst ergibt', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion', type => 'back'),
@@ -653,6 +653,13 @@
                     'erzeugt, welches wir für die \lm{ \e_{\s} }-Funktion aus dem Abschnitt \italic{›\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:eFunktionPascalscheDreieck}‹}'."\n".
                     'schon kennen.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-e-Funktion-aus-dem-Integral:X', text =>
+                      
+                'Allgemeiner Beweis', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
