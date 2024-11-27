@@ -32,70 +32,55 @@
                     'Auf die Primzahlprodukt-Vermutung bin ich durch das Herumspielen mit der'."\n".
                     '\jump{OM:SupNum:Eigenschaften:StrukturVonS}{Struktur der Superial-Zahlen} gestoßen.'."\n",
                       'Schauen wir uns das Zählen der \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} an:'."\n".
-                    'Beim Zählen von natürlichen Superial-Zahlen werden endliche rationale Zahlen \lm{ q_1 } als Koeffizienten des Unendlichen \lm{ q_1 \cdot s + z }'."\n".
+                    'Beim Zählen von natürlichen Superial-Zahlen werden endliche \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen} \lm{ a \in \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} }'."\n".
+                    '– \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{vermutliche alle reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}} –'."\n".
+                    'als Koeffizienten des Unendlichen \lm{ a \cdot \s + z }'."\n".
                     'mitgezählt, wenn die endlichen ganzen Zahlen \lm{ z } als endlicher Summand immer wieder durchlaufen.'."\n".
-                    'Betrachten wir im Folgenden mit Hilfe von \lm{ s } das Verhältnis der Anzahl der endlichen rationalen Zahlen'."\n".
+                    'Betrachten wir im Folgenden mit Hilfe von \lm{ \s } das Verhältnis der Anzahl der endlichen sinnvollen Koeffizienten'."\n".
                     'und der endlichen ganzen Zahlen, dann scheint intuitiv die Anzahl der endlichen natürlichen Zahlen dem Produkt'."\n".
                     'aller endlichen Primzahlen gleich zu sein.'."\n",
-                      'Den Ansatz zu dieser Vermutung finden wir im Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm}},'."\n".
-                    'wo wir uns schon mit der Struktur von \lm{ s } beschäftigt haben.'."\n".
-                    'Dabei fanden wir, dass die Anzahl der rationalen Zahlen \lm{ \lbrack 0, 1 \lbrack_\mathbb{Q} }, von der Null bis ausschließlich der Eins, in Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}'."\n".
+                      'Den Ansatz zu dieser Vermutung finden wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm}‹},'."\n".
+                    'wo wir uns schon mit der Struktur von \lm{ \s } beschäftigt haben.'."\n".
+                    'Dabei fanden wir, dass die Anzahl der sinnvollen Koeffizienten \lm{ \# *( \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} *) },'."\n".
+                    'von der Null bis ausschließlich der Eins, nach Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}'."\n".
                     'eine aktual unendliche positive ganze Zahl sein muss.'."\n".
                     'Das können wir mit Hilfe der \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{Menge \lm{ \mathbb{N}_\infty }} zum Ausdruck bringen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \# [ 0, 1 [_\mathbb{Q}  =  \frac{ s }{ 2 \cdot ω }  }',
-                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ s }{ 2 \cdot ω }  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  =  \frac{ \s }{ 2 ω }  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \s }{ 2 ω }  \in  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Ganzzahligkeit bedingt, dass alle Primfaktoren von \lm{ 2 \cdot ω } auch in \lm{ s } vorkommen müssen.'."\n",
-                    ''))),
-                      
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X',
-                Title => 'Fragen die offen sind …',
-                TitleVis => 'Fragen die offen sind:', ParagraphList => array(
-
-                  array( 'bulletlist', array( bullet_ary => array(
-                        'Gehören die denkbaren \jump{OM:SupNum:Ueberrationalitaetsvermutung}{überrationalen Zahlen} (auch in der \jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}{Einleitung})'."\n".
-                          '– vermutlich die Koordinaten von algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}, wie \lm{ \sqrt{ 2 } } –'."\n".
-                          'auch zu den möglichen Koeffizienten der Definition der (natürlichen) Superial-Zahlen? \\\\'."\n".
-                          'Falls dem so sein sollte, dann steht \lm{ \frac{ s }{ 2 \cdot ω } } nicht alleine für die rationalen Zahlen \lm{ \lbrack 0, 1 \lbrack_\mathbb{Q} },'."\n".
-                          'sondern für die überrationalen Zahlen und ihre arithmetischen Variationen \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} }. \\\\'."\n".
-                          'Dies würde allerdings nichts an der Primzahlprodukt-Vermutung ändern',
-                    ))),
-
-                    ))),
-
-                  array( 'text', array( text => array(
-                    'Und wir wissen auch, dass \lm{ s } unendlich viel größer als \lm{ ω } ist,'."\n".
-                    'denn nach unseren Erkenntnissen aus dem Kapitel \italic{\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}} steht'."\n".
-                    '\lm{ s } für die Anzahl der rationalen Zahlen und \lm{ ω } für die Anzahl der natürlichen Zahlen.'."\n",
-                      'Ich vergleiche hierbei aber nicht die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}'."\n".
-                    'der Menge der rationalen Zahlen und die Mächtigkeit der natürlichen Zahlen,'."\n".
-                    'wobei es darum geht, ob sich zwei Mengen bidirektional aufeinander abbilden lassen.'."\n".
-                    'Sondern ich meine die kombinatorische Erzeugung von Elementen der unendlich großen Menge der rationalen Zahlen'."\n".
+                    'Die Ganzzahligkeit bedingt, dass alle Primfaktoren von \lm{ 2 ω } auch in \lm{ \s } vorkommen müssen.'."\n",
+                      'Und wir wissen auch, dass \lm{ \s } unendlich viel größer als \lm{ ω } ist,'."\n".
+                    'denn nach unseren Erkenntnissen aus dem Kapitel \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS}‹} steht'."\n".
+                    '\lm{ \s } für die Anzahl der sinnvollen Koeffizienten der Superial-Zahlen und \lm{ ω } für die Anzahl der natürlichen Zahlen.'."\n",
+                      'Wir vergleichen hierbei aber nicht die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}'."\n".
+                    'der Menge der sinnvollen Koeffizienten und die Mächtigkeit der natürlichen Zahlen,'."\n".
+                    'wobei es darum ginge, ob sich zwei Mengen bidirektional aufeinander abbilden lassen.'."\n".
+                    'Sondern wir meinen hier die kombinatorische Erzeugung von Elementen der unendlich großen Menge der sinnvollen Koeffizienten'."\n".
                     'im Verhältnis zur vollständigen Induktion bei der Erzeugung der Menge der natürlichen Zahlen.'."\n",
                       'Die unendlich viel größere Erzeugungskombinatorik drücken wir mit dem Symbol \lm{ \overset{\infty}{\ggg} } aus:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  s  \;\;\;\overset{\infty}{\ggg}\;\;\;  ω  }'),
+                      array( display => 'on',  latex => '{  \s  \;\;\;\overset{\infty}{\ggg}\;\;\;  ω  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Im Folgenden können wir dies klar erkennen.'."\n",
-                      'Denn \lm{ s } ist in Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}'."\n".
+                      'Denn \lm{ \s } ist in Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}'."\n".
                     'durch folgendes Primzahl-Flächenprodukt definiert:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  s  :=  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{1} \\\ \qquad\;\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{2} \\\ \qquad\;\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{3} \\\ \qquad\;\; \;\;\;\; \vdots \\\ \qquad\;\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{n \in \mathbb{N}} \\\ \qquad\;\; \;\;\;\; \vdots  }',
+                      array( display => 'on',  latex => '{  \s  :=  (2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{1} \\\ \qquad\;\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{2} \\\ \qquad\;\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{3} \\\ \qquad\;\; \;\;\;\; \vdots \\\ \qquad\;\; \cdot ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots )_{n \in \mathbb{N}} \\\ \qquad\;\; \;\;\;\; \vdots  }',
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Da, wie oben geschildert, alle Primfaktoren von \lm{ 2 \cdot ω } auch in \lm{ s } vorkommen müssen,'."\n".
-                    'muss \lm{ 2 \cdot ω }, und somit auch \lm{ ω }, ein Teil des Primzahl-Flächenprodukts sein.'."\n".
+                    'Da, wie oben geschildert, alle Primfaktoren von \lm{ 2 ω } auch in \lm{ \s } vorkommen müssen,'."\n".
+                    'muss \lm{ 2 ω }, und somit auch \lm{ ω }, ein Teil des Primzahl-Flächenprodukts sein.'."\n".
                     'Und dieses Teilprodukt muss einen unendlich großen Wert haben.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
@@ -104,8 +89,8 @@
                   '')),
                   array( 'text', array( text => array(
                     'Nun können wir als erstes überlegen, ob es sich um einen der Primzahltürme handeln könnte:'."\n".
-                    'Die unendlich große Primzahl-Potenz mit der kleinsten Basis in \lm{ s } ist \lm{ 2^ω }.'."\n".
-                    'Wenn wir berücksichtigen, dass ja oben \lm{ s } durch \lm{ 2 \cdot ω } geteilt wird und wir den Faktor \lm{ 2 } schon mal aus'."\n".
+                    'Die unendlich große Primzahl-Potenz mit der kleinsten Basis in \lm{ \s } ist \lm{ 2^ω }.'."\n".
+                    'Wenn wir berücksichtigen, dass ja oben \lm{ \s } durch \lm{ 2 ω } geteilt wird und wir den Faktor \lm{ 2 } schon mal aus'."\n".
                     'der unendlichen Potenz von \lm{ 2 } entfernen, ergibt sich immer noch \lm{ 2^{ω-1} }, wobei \lm{ ω - 1 } als'."\n".
                     '\jump{OM:BiOrd:Home}{Biordinalzahl} definiert ist.'."\n".
                     ''))),
@@ -113,13 +98,12 @@
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Nun ist es offensichtlich, dass \lm{ 2^{ω-1} } ungleich und sogar sehr viel größer als \lm{ ω } ist:'."\n".
-                      '\color{*Bearb}{(Hier auch \lm{ \overset{\infty}{\ggg} } nutzen?)}'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  2^{ω - 1}  \neq  ω  }'),
-                      array( display => 'on',  latex => '{  2^{ω - 1}  \;\;\;\ggg\;\;\;  ω  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *)  *[  p^{ω}  \;\;\;\ggg\;\;\;  ω  *]  }'),
+                      array( display => 'on',  latex => '{  2^{ω - 1}  \;\;\;\overset{\infty}{\ggg}\;\;\;  ω  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *)  *[  p^{ω}  \;\;\;\overset{\infty}{\ggg}\;\;\;  ω  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Dies gilt dann auch für alle Potenzen dieser Größenordnung endlicher Primzahlen.'."\n",
@@ -128,7 +112,7 @@
 
                   array( 'text', array( text => array(
                     'Somit kommt keine Primzahl der Potenz \lm{ p^ω }, also eine Spalte des Primzahl-Flächenprodukts,'."\n".
-                    'als unendlich großer Primfaktoranteil von \lm{ s }, der \lm{ ω } gleicht, in Frage.'."\n".
+                    'als unendlich großer Primfaktoranteil von \lm{ \s }, der \lm{ ω } gleicht, in Frage.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Wir-vermuten-omega-ist-Produkt-aller-endlichen-Primzahlen', text =>
                       

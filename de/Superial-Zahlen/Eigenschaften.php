@@ -1186,7 +1186,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  =  \frac{ \s }{ 2 ω }  }',
-                                          label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}', label_incr => true),
+                                          label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => true),
                       array( display => 'off', latex => '{  \Leftrightarrow  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  =  \frac{ ω^{ω} }{ 2 ω }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  =  \frac{ ω^{ω - 1} }{ 2 }  \;\; ,  }'),
                     ))),
@@ -1207,7 +1207,7 @@
                     'Und wir können sogar noch weiter gehen und feststellen, dass \lm{ ω } seine Primfaktoren'."\n".
                     'mit \lm{ \s }, siehe Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}, teilen muss, wenn die Anzahl der \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen Koeffizienten}'."\n".
                     'in \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } }'."\n".
-                    'aus Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins} eine ganze Zahl ist.'."\n".
+                    'aus Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins} eine ganze Zahl ist.'."\n".
                     'Weiter ist klar, dass \lm{ ω } aktual unendlich groß ist.'."\n".
                     'Es kann also nur ein Produkt aus unendlich vielen endlichen Primzahlen sein.'."\n",
                       'Doch welches Teilprodukt von \lm{ \s } ist \lm{ ω }, wenn klar ist, dass \lm{ \s } unendlich viel größer ist'."\n".
@@ -1278,7 +1278,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{A}_{\S}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}} *)  \\\ \qquad\qquad\qquad\qquad\quad\,  *[  x = - *( n + 1 *) + u  *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Mit Hilfe der Formeln \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}'."\n".
+                    'Mit Hilfe der Formeln \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}'."\n".
                     'und \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N} folgt dann:'."\n".
                     ''))),
                   array( 'equations',
@@ -1290,7 +1290,7 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{-}  =  \frac{ \s }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dies passt dann eben auch zu Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}.'."\n",
+                    'Dies passt dann eben auch zu Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}.'."\n",
                       'So ergibt sich dann schlüssig:'."\n".
                     ''))),
                   array( 'equations',
@@ -1415,8 +1415,8 @@
                   array( 'text', array( text => array(
                     'Welche Koeffizienten adressierbar sind, damit beschäftigen wir uns im ersten Abschnitt dieser Seite:'."\n".
                     '\italic{\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}}.'."\n".
-                    'Wie wir oben in Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}'."\n".
-                    'schon festgestellt haben, müssen es genau \lm{ \frac{ \s }{ 2ω } } sein.'."\n",
+                    'Wie wir oben in Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}'."\n".
+                    'schon festgestellt haben, müssen es genau \lm{ \frac{ \s }{ 2 ω } } sein.'."\n",
                       'Es ist für mich nicht so einfach, diese vermeintliche Doppelung in Worte zu fassen, merke ich, aber ich versuche es nachfolgend.'."\n".
                     'Zunächst möchte ich aber Sicherheit schaffen, dass beides einender entsprechen muss.'."\n".
                     ''))),
@@ -1445,7 +1445,7 @@
                     'Koeffizienten der Mengen \lm{ \mathbb{N} }, \lm{ \mathbb{Z} }, \lm{ \mathbb{Z}^{-} } sowie'."\n".
                     '\lm{ \mathbb{A}_{\S} }, wobei letztere Menge teilweise oder sogar ganz für die realen Koeffizienten der'."\n".
                     'algebraischen Zahlen steht.'."\n".
-                    'Durch Mengen lm{ \mathbb{N} } und \lm{ \mathbb{Z}^{-} }, die sich schließlich zu \lm{ \mathbb{Z} } vereinigen,'."\n".
+                    'Durch Mengen \lm{ \mathbb{N} } und \lm{ \mathbb{Z}^{-} }, die sich schließlich zu \lm{ \mathbb{Z} } vereinigen,'."\n".
                     'ergibt sich dann noch eine Asymmetrie, die dem Zählen geschuldet ist.'."\n",
                       'Der Teilung durch \lm{ \s } sind diese komplexen Zusammenhänge der Mengen und deren Asymmetrie'."\n".
                     'sowie deren Mischung von aktual unendlichen und dann wieder endlichen Koeffizienten zunächst nicht anzusehen.'."\n".
@@ -1665,8 +1665,8 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  \sum_{ \forall z \in \mathbb{Z}} z  =  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } \!\! z^{-} + \sum_{ \forall n \in \mathbb{N} } n  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  - ω  =  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } \!\! z^{-} + \frac{ ω^{2} - ω }{ 2 }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall z^{-} \in \mathbb{Z}^{-} } \!\! z^{-}  =  - \frac{ ω^{2} - ω }{ 2 } - ω  }'),
-                      array( display => 'on',  latex => '{  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω }  }',
-                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}', label_incr => false),
+                      array( display => 'on',  latex => '{  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  =  \frac{ \s }{ 2 ω }  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}', label_incr => false),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# ] 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 ω } - 1  }'),
                       array( display => 'on',  latex => '{  \sum_{ \forall a \in [ 0, x [_{\mathbb{A}_{\S}}}  \!\! a  =  \frac{ x^{2} \cdot \s }{ 4 ω } - \frac{ x }{ 2 }  }',
                                           label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x}', label_incr => false),
@@ -1912,7 +1912,7 @@
                     'ist die Mächtigkeit der transzendenten Zahlen\footnote{\const{SupNum_g_footnote_text_TranszendenteZahl}} überabzählbar.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}, Überabzählbarkeit.}'."\n".
                     'Durch die Superial-Zahlen sehen wir, dass die Anzahl der Realanteile der algebraischen Zahlen dem besagten'."\n".
                     'aktual unendlichen Flächenprodukt \lm{ \s } geteilt durch die Anzahl der endlichen ganzen \lm{ 2 \cdot ω } entspricht,'."\n".
-                    'siehe Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}.'."\n",
+                    'siehe Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}.'."\n",
                       'Wenn wir dies alles betrachten, bekomme ich den Eindruck, dass hier etwas nicht zusammenpasst.'."\n",
                     ''))),
                   array( 'text', array( text => array(
