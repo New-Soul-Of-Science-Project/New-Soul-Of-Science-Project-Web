@@ -1155,7 +1155,7 @@
                       array( display => 'off', latex => '{  \Rightarrow  \s  =  \# \mathbb{Z} + \# *( ] 0, 1 [_{\mathbb{A}_{\S}} *) \cdot \# \mathbb{Z}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \s  =  *( 1 + \# *( ] 0, 1 [_{\mathbb{A}_{\S}} *) *) \cdot \# \mathbb{Z}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *) \; \cdot \; \# \mathbb{Z}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *) \; \cdot \; *( 2 \cdot ω *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  =  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *) \; \cdot \; 2 ω  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'was der Anzahl aller \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} entspricht,'."\n".
@@ -1172,8 +1172,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{A}_{\S}  =  \# \mathbb{Z} \; \cdot \; \# [ 0, 1 [_{\mathbb{A}_{\S}}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}  =  *( 2 \cdot ω *) \; \cdot \; \# [ 0, 1 [_{\mathbb{A}_{\S}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{A}_{\S}  =  \# \mathbb{Z} \; \cdot \; \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}  =  2 ω \; \cdot \; \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}  =  \s  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -1185,10 +1185,10 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ \s }{ 2 \cdot ω }  }',
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  =  \frac{ \s }{ 2 ω }  }',
                                           label_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins', label_text => '\name{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}', label_incr => true),
-                      array( display => 'off', latex => '{  \Leftrightarrow  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ ω^{ω} }{ 2 \cdot ω }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# [ 0, 1 [_{\mathbb{A}_{\S}}  =  \frac{ ω^{ω - 1} }{ 2 }  \;\; ,  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  =  \frac{ ω^{ω} }{ 2 ω }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *)  =  \frac{ ω^{ω - 1} }{ 2 }  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'nach Umformung und mit Hilfe von Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}.'."\n",
@@ -1205,18 +1205,19 @@
                   '')),
                   array( 'text', array( text => array(
                     'Und wir können sogar noch weiter gehen und feststellen, dass \lm{ ω } seine Primfaktoren'."\n".
-                    'mit \lm{ \s }, siehe Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}, teilen muss, wenn die Anzahl der Realanteile der algebraischen Zahlen in \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} }'."\n".
-                    'aus Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins} eine ganze Zahl sein soll.'."\n".
+                    'mit \lm{ \s }, siehe Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}, teilen muss, wenn die Anzahl der \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen Koeffizienten}'."\n".
+                    'in \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } }'."\n".
+                    'aus Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins} eine ganze Zahl ist.'."\n".
                     'Weiter ist klar, dass \lm{ ω } aktual unendlich groß ist.'."\n".
                     'Es kann also nur ein Produkt aus unendlich vielen endlichen Primzahlen sein.'."\n",
-                      'Doch welches Teilprodukt aus \lm{ \s } ist es, wenn klar ist, dass \lm{ \s } unendlich viel größer ist'."\n".
-                    'als \lm{ ω }.'."\n".
-                    'Schon der Turm der kleinsten Primzahl \lm{ 2^{ω} } ist definitiv sehr viel größer als \lm{ ω }.'."\n".
-                    'Die einzelnen und kombinierten Türme aller Primzahlen \lm{ p^{ω} }, mit \lm{ p \in \mathbb{P} }, sind also ausgeschlossen.'."\n",
-                      'Das unendliche Primzahlprodukt, dass auf den ersten Blick bleibt, ist schlicht die Zeile, die alle endlichen Primzahlen enthält, und lässt vermuten,'."\n".
+                      'Doch welches Teilprodukt von \lm{ \s } ist \lm{ ω }, wenn klar ist, dass \lm{ \s } unendlich viel größer ist'."\n".
+                    'als \lm{ ω }?'."\n".
+                    'Denn schon die Potenz oder der Turm der kleinsten Primzahl \lm{ 2^{ω} } im Primzahl-Flächenprodukt von \lm{ \s } ist definitiv sehr viel größer als \lm{ ω }.'."\n".
+                    'Die einzelnen und kombinierten Türme aller Primzahlen \lm{ p_{i}^{ω} }, mit \lm{ p_{i} \in \mathbb{P} }, können so nicht als Faktoren in \lm{ ω } enthalten sein.'."\n",
+                      'Das aktual unendlich große Primzahlprodukt, dass auf den ersten Blick bleibt, um \lm{ ω } darzustellen, ist schlicht die Zeile, die alle endlichen Primzahlen enthält, und lässt vermuten,'."\n".
                     'dass \lm{ ω ?= 2 \cdot 3 \cdot 5 \cdot 7 \cdot \cdots } ist.'."\n".
                     'Aber auch dieses Produkt erscheint auf den ersten Blick viel größer als die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}}'."\n".
-                    '\lm{ ω } zu sein.'."\n".
+                    'zu sein, die ja mit \lm{ ω } ausgedrückt wird.'."\n".
                     // 'Es sei denn, die Anzahl der Primzahl unter den natürlichen Zahlen erfüllt weit draußen unter den sehr sehr großen Zahlen'."\n".
                     // 'eine bestimmte Bedingung:'."\n".
                     // 'Es gibt unter den wirklich extrem großen natürlichen Zahlen im Grunde nur noch Primzahlzwillinge?'."\n",
@@ -1232,43 +1233,47 @@
                   'Formulierung der Entstehung der negativen ganzen Zahlen durch Rückwärtszählen, ohne Umkehrung der Zählrichtung')),
                   array( 'text', array( text => array(
                     'Die vorstehend gemachten Aussagen sind entscheidend davon abhängig, wieviele endliche ganze Zahlen es gibt.'."\n".
-                    'Dies bestimmt zum einen, ob es wirklich eine ganze Anzahl an Realanteilen der algebraischen Zahlen in \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } gibt.'."\n".
-                    'Und es bestimmt damit, ob \lm{ ω } gemeinsame Teiler mit \lm{ \s } hat.'."\n",
-                      'Dies ist einer der Gründe, aus denen ich mich mit den Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}}'."\n".
-                    'beschäftigt und diese auf die \jump{OM:BiOrd:Home}{Biordinalzahlen} erweitert und ein Stück weit erforscht habe.'."\n".
+                    'Dies bestimmt zum einen, ob sich wirklich plausibel eine ganze Anzahl an \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}'."\n".
+                    'in \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } ergibt, sodass wir keinen logischen Bruch und damit einen Widerspruch erhalten.'."\n".
+                    'Und damit wird bestimmt, ob wir sagen können, dass \lm{ ω } gemeinsame Teiler mit \lm{ \s } haben muss.'."\n",
+                      'Dies ist einer der Gründe, weswegen ich mich mit den Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}}'."\n".
+                    'beschäftigt, diese auf die \jump{OM:BiOrd:Home}{Biordinalzahlen} erweitert und ein Stück weit erforscht habe.'."\n".
                     'Darauf basierend haben wir eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{fundamentale Asymmetrie}'."\n".
                     'herausgearbeitet, die der von uns gefundenen und oben verwendeten Anzahl der endlichen ganzen Zahlen'."\n".
-                    '\lm{ 2 \cdot ω } zugrunde liegt.'."\n",
-                      'Diese Anzahl der endlichen ganzen Zahlen ergibt sich wegen der auch im Negativen vorhandenen Zählrichtung, die auch dort in Richtung der größer werdenden, und schließlich positiven Zahlen, ausgerichtet bleibt,'."\n".
+                    '\lm{ 2 ω } zugrunde liegt.'."\n",
+                      'Diese Anzahl der endlichen ganzen Zahlen ergibt sich wegen der auch im Negativen bleibenden Zählrichtung, die auch dort in Richtung der größer werdenden, und schließlich positiven Zahlen, ausgerichtet bleibt,'."\n".
                     'weil alle Zahlen letztendlich aus dem Zählen hervorgehen.'."\n".
-                    'Siehe dazu auch die \jump{OM:OT:Home}{Operialtheorie}.'."\n",
-                      'Um auszudrücken, dass jeder negative Realanteilen einer algebraischen Zahl Teil eines an einer ganzen Zahl hängenden Zahlenintervalls ist, der jeweils aus einem Zahlenintervall'."\n".
-                    'an einer natürlichen Zahl entsteht, berücksichtigen wir'."\n".
-                    'im Ansatz die ontologische Vorstellung, dass es sich bei Zahlen quasi um Wellen – oder Sägezähne – von einer Zahl zur nächsten handelt.'."\n".
-                    'Diese Wellen hängen in Zählrichtung an den Zahlen.'."\n".
+                    'Siehe dazu auch den \italic{›\jumpname{OM:OT:Zaehloperator}‹} in der \italic{›\jumpname{OM:OT:Home}‹}.'."\n",
+                      'Um auszudrücken, dass jeder negative sinnvolle Koeffizient der Superial-Zahlen Teil eines an einer negativen ganzen Zahl hängenden Zahlenintervalls ist,'."\n".
+                    'wo jedes negative Zahlenintervall jeweils aus einem Zahlenintervall an einer natürlichen, also positiven Zahl oder der Null entsteht, berücksichtigen wir'."\n".
+                    'im Ansatz die ontologische Vorstellung, dass es sich bei Zahlen quasi um Sägezähne – oder spezielle Wellen – von einer Zahl zur nächsten handelt.'."\n".
+                    'Diese Sägezähne hängen in Zählrichtung an den ganzen Zahlen.'."\n".
                     ''))),
                       
                   array( 'figure',
                     array_merge( $BiOrd_g_figure_ary_GanzeZahlenGerade, array( name => 'OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen'))),
                                             
                   array( 'text', array( text => array(
-                    'Die negativen Zahlen entstehen also eigentlich nicht durch eine Spiegelung dieser Wellen, sondern durch deren Verschiebung.'."\n".
-                    'Und dies soll sich in der ersten Struktur der Formulierung ausdrücken, die wir auf Basis der Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z} ansetzen:'."\n".
+                    'Die negativen Zahlen entstehen also eigentlich nicht durch eine Spiegelung all dieser Sägezähne an der Null, sondern durch deren jeweils einzelne Verschiebung.'."\n".
+                    'Bei einer Spiegelung an der Null wäre die Null auch strukturell gedoppelt – ontologisch redundant –, was keinen Sinn macht,'."\n".
+                    'und die Sägezähne drehten sich um, was, wie gesagt, ebenfalls unsinnig erscheint, weil es eine Umkehrung der Zählrichtung bedeutete.'."\n",
+                      'Dieser Zusammenhang soll sich ganz korrekt in der Struktur der ersten Formulierung der Entstehung der negativen Sägezahnintervalle von \lm{ \mathbb{A}_{\S}^{-} } ausdrücken,'."\n".
+                    'die wir auf Basis der Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z} ansetzen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}} *)  \\\ \qquad\qquad\qquad\;\,  *[  x = *( n - *( 2 \cdot n + 1 *) *) + u  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}} *)  \\\ \qquad\qquad\qquad\;\,  *[  x = *( n - *( 2 n + 1 *) *) + u  *]  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Intervalle \lm{ u }, die zwischen den Zahlen liegen, hängen an der vorstehenden ganzen Zahl und werden auf diese Weise mit verschoben.'."\n".
+                    'Die Intervalle \lm{ u }, die zwischen den ganzen Zahlen liegen, hängen an der vorstehenden linksseitigen ganzen Zahl und werden auf diese Weise mit verschoben.'."\n".
                     'Daher steht quasi am „Beginn“ der endlichen negativen ganzen Zahlen auch der Punkt einer ganzen Zahl,'."\n".
                     'was eben der Grund dafür ist, dass es eine endliche negative ganze Zahl mehr geben muss, als positive, ohne die Null (siehe \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen}).'."\n".
                     'Denn das Zählen ist die Grundlage aller Zahlen.'."\n",
-                      'Wenn wir die Verschiebung vereinfachend umformen:'."\n".
+                      'Wir formen die Verschiebung vereinfachend um und erhalten:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{A}_{\S}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}} *)  \\\ \qquad\qquad\qquad\qquad\quad\;\;\,  *[  x = *( n - 2 \cdot n - 1 *) + u  *]  *\}  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{A}_{\S}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}} *)  \\\ \qquad\qquad\qquad\qquad\quad\;\;\,  *[  x = *( n - 2 n - 1 *) + u  *]  *\}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  \mathbb{A}_{\S}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}} *)  \\\ \qquad\qquad\qquad\qquad\quad\;\;\,  *[  x = *( - n - 1 *) + u  *]  *\}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \mathbb{A}_{\S}^{-}  =  *\{  x  *|*  *( \forall n \in \mathbb{N} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}} *)  \\\ \qquad\qquad\qquad\qquad\quad\,  *[  x = - *( n + 1 *) + u  *]  *\}  }'),
                     ))),
@@ -1280,13 +1285,30 @@
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \# \mathbb{N}  =  ω  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Anz-in-N}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{A}_{\S}^{-}  =  \# [ 0, 1 [_{\mathbb{A}_{\S}} \, \cdot \; ω  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{-}  =  \frac{ \s }{ 2 \cdot ω } \cdot ω  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \# \mathbb{A}_{\S}^{-}  =  \# *( [ 0, 1 [_{\mathbb{A}_{\S}} *) \, \cdot \; ω  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{-}  =  \frac{ \s }{ 2 ω } \; \cdot \; ω  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{-}  =  \frac{ \s }{ 2 }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'So kann der Eindruck einer Spiegelung entstehen, wenn wir das Intervall nicht explizit dranhängen würden.'."\n",
-                      'Demnach sind wir sicher, dass die Anzahl der endlichen ganzen Zahlen wirklich \lm{ 2 \cdot ω } ist.'."\n".
+                    'Dies passt dann eben auch zu Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-rationale-Zahlen-Null-bisOhne-Eins}.'."\n",
+                      'So ergibt sich dann schlüssig:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \# \mathbb{A}_{\S}  =  \# \mathbb{A}_{\S}^{-} \; + \; \# \mathbb{A}_{\S}^{0,+}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \# \mathbb{A}_{\S} \; - \; \# \mathbb{A}_{\S}^{-}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \s \; - \; \frac{ \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \frac{ \s }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \# \mathbb{A}_{\S}^{0,+}  =  \# \mathbb{A}_{\S}^{-}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Es gibt also eine quasi Spiegelung der Anzahlen von positiven und negativen ganzen Zahlen.'."\n",
+                      'Aber die Spiegelung der Werte der ganzen Zahlen an der Null ist nicht korrekt.'."\n".
+                    'Die Spiegelung der Werte findet beim Wert \lm{ -½ } statt (siehe \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen}).'."\n".
+                    'Wir sehen, es kann der falsche Eindruck einer Spiegelung der Entitäten der ganzen Zahlen oder der reell algebraischen Zahlen entstehen,'."\n".
+                    'wenn wir die Intervalle zwischen den ganzen Zahlen nicht explizit berücksichtigen und durch Dranhängen visualisieren würden.'."\n",
+                      'Demnach sind wir sicher, dass die \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{Anzahl der endlichen ganzen Zahlen}'."\n".
+                    'wirklich \lm{ 2 ω } ist.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-Menge-S-Bemerkenswerten-Zusammenhang', text =>
                       
