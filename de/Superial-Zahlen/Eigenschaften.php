@@ -1481,7 +1481,7 @@
                 'Die superiale Basis \lm{ \s } und die Ordinalzahl \lm{ ω^{ω} } im Strukturvergleich', subline =>
                   'Vom Wert her gleich und doch verschieden')),
                   array( 'text', array( text => array(
-                    'Betrachten wir die arithmetische Struktur der Geometrie \lm{ \s } und die Adressierbarkeit ihrer Punkte,'."\n".
+                    'Betrachten wir die \jump{OM:SupNum:Struktur-Geometrie}{arithmetische Struktur der Geometrie} \lm{ \s } und die Adressierbarkeit ihrer Punkte,'."\n".
                     'die durch die Teilung durch \lm{ \s } entstehen, dann ist es interessant, dass wir durch'."\n".
                     'den Beweis der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} auch in'."\n".
                     'den Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}} eine Wertgleichheit zu \lm{ \s } finden:'."\n".
@@ -1499,7 +1499,7 @@
                     'Die Gleichheit der Werte drückt folglich aus, dass in beiden Fällen gleich viele Vorgänger vorhanden sind,'."\n".
                     'die Vorgängermengen also gleich viele Elemente haben.'."\n",
                       'Für alle Elemente in \lm{ \mathbb{On} } und in \lm{ \mathbb{S_{\N}} } gilt,'."\n".
-                    'dass jedes Element genau so viele Vorgänger hat, sein Wert ausdrücken, womit beide zur'."\n".
+                    'dass jedes Element genau so viele Vorgänger hat, wie sein Wert ausdrückt, womit beide zur'."\n".
                     '\jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-c}{Klasse \lm{ \mathbb{K}_{\infty,c} } der Anzahl äquivalenten Klassen}'."\n".
                     'gehören:'."\n".
                     ''))),
@@ -1514,18 +1514,18 @@
                     'In beiden Klassen \lm{ \mathbb{On} } und \lm{ \mathbb{S_{\N}} } – denn eine Menge ist nur eine besondere Klasse –'."\n".
                     'haben auch alle Zahlen einen direkten Nachfolger.'."\n".
                     'Und trotzdem sind beide von ihren Elementen her nicht gleich,'."\n".
-                    'denn in \lm{ \mathbb{S_{\N}} } haben alle Zahlen einen direkten Vorgänger, außer die Null,'."\n".
-                    'hingegen gilt dies in \lm{ \mathbb{On} } nicht, weil nicht nur die Null keine Vorgänger hat,'."\n".
-                    'sondern alle sogenannten Limeszahlen\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlLimeszahlen}},'."\n".
-                    'also auch \lm{ ω } und \lm{ ω^{ω} }, haben ebenfalls keine Vorgänger:'."\n".
+                    'denn in \lm{ \mathbb{S_{\N}} } haben alle Zahlen auch einen direkten Vorgänger, außer die Null.'."\n".
+                    'In \lm{ \mathbb{On} } hingegen gilt dies nicht, weil nicht nur die Null keinen direkten Vorgänger hat,'."\n".
+                    'sondern alle sogenannten Limeszahlen\footnote{\const{BiOrd_g_footnote_text_OrdinalzahlLimeszahlen}} haben keinen direkten Vorgänger.'."\n".
+                    'Also haben \lm{ ω } und \lm{ ω^{ω} } ebenfalls keine direkten Vorgänger:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       // array( display => 'on',  latex => '{  ω^{ω}  =  [ 0, ω^{ω} [_{\mathbb{On}}  }'),
-                      array( display => 'on',  latex => '{  [ 0, \s [_{\mathbb{S}_{\N}}  \neq  [ 0, ω^{ω} [_{\mathbb{On}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  [ 0, \s [_{\mathbb{S}_{\N}}  \neq  [ 0, ω^{ω} [_{\mathbb{On}}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Der strukturelle Unterschied dieser beiden Vorgängermengen – hier werden nur die Werte betrachtet –,'."\n".
+                    'Der strukturelle Unterschied dieser beiden Anzahl äquivalenten Klassen – beim Vergleich werden die Werte betrachtet –,'."\n".
                     'trotz Wertgleichheit von \lm{ \s } und \lm{ ω^{ω} }, ist sehr bemerkenswert und bedarf einer näheren Untersuchung.'."\n",
                       'Die beiden Mengen sehen konkret folgendermaßen aus:'."\n".
                     ''))),
@@ -1559,7 +1559,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \mathbb{M} \in \mathbb{K}_{\infty,g} *)  *[  \sum_{ \forall i \in [ 0, n [_{\mathbb{M}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  \;\; ,  }',
+                      array( display => 'on',  latex => '{  *( \mathbb{M} \in \mathbb{K}_{\infty,g} *) *( \forall n \in \mathbb{M} *)  *[  \sum_{ \forall i \in [ 0, n [_{\mathbb{M}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  }',
                                           label_text => '\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
