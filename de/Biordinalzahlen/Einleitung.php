@@ -602,10 +602,10 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
                       
-                'Ontologie der Polarität', subline =>
-                  'Polarität bringt etwas zur Existenz und zur Wirkung')),
+                'Ontologie der Dualität der Auswahl und Auslassung', subline =>
+                  'Dualität bringt etwas zur Existenz und zur Wirkung')),
                   array( 'text', array( text => array(
-                    'Durch die Auswahl oder das Weglassen von Dingen aus allen Möglichkeiten entsteht eine Polarität,'."\n".
+                    'Durch das Auswählen oder das Weglassen von Dingen aus allen Möglichkeiten entsteht eine Dualität,'."\n".
                     'die etwas zur stabilen Existenz bringt.'."\n".
                     'Es ist ein \jump{OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen:WWSymBruch}{Symmetriebruch}, der die neutrale Harmonie stört, der zu „Kräften“ führt,'."\n".
                     'ganz wie in der \jump{OM:FrQFT:Home}{Physik}, und die so erschaffenen Dinge in Prozessen begreifbar, greifbar und handhabbar macht.'."\n".
