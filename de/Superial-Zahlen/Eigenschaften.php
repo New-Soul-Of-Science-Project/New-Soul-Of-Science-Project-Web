@@ -1490,6 +1490,12 @@
                       
                 'Die superiale Basis \lm{ \s } und die Ordinalzahl \lm{ ω^{ω} } im Strukturvergleich', subline =>
                   'Vom Wert her gleich und doch verschieden')),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{X}',
+                    '• \lm{ \mathbb{On} } ist eine echte Klasse\color{*Bearb}{(Verweis)}, während \lm{ \mathbb{S_{\N}} } eine Menge ist.',
+                    ))),
+                      
                   array( 'text', array( text => array(
                     'Betrachten wir die \jump{OM:SupNum:Struktur-Geometrie}{arithmetische Struktur der Geometrie} \lm{ \s } und die Adressierbarkeit ihrer Punkte,'."\n".
                     'die durch die Teilung durch \lm{ \s } entstehen, dann ist es interessant, dass wir durch'."\n".
