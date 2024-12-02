@@ -1508,7 +1508,7 @@
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'In der Klasse der Ordinalzahlen \lm{ \mathbb{On} } hat das Element \lm{ ω^{ω} } genau so viele Vorgänger, wie sein Wert groß ist,'."\n".
+                    'In der echten Klasse der Ordinalzahlen \lm{ \mathbb{On} } hat das Element \lm{ ω^{ω} } genau so viele Vorgänger, wie sein Wert groß ist,'."\n".
                     'nämlich die Elemente \lm{ \left\lbrack 0, ω^{ω} \right\lbrack_{\mathbb{On}} }.'."\n".
                     'Dies gilt ebenso für das Element \lm{ \s } in der Menge der natürlichen Superial-Zahlen \lm{ \mathbb{S_{\N}} },'."\n".
                     'wo \lm{ \left\lbrack 0, \s \right\lbrack_{\mathbb{S}_{\N}} } alle Vorgänger enthält.'."\n".
@@ -1606,9 +1606,9 @@
                     ))),
                   array( 'text', array( text => array(
                     'So gehört sie dann auch zur Klasse \lm{ \mathbb{K}_{\infty,g} } der Gauß-Summen äquivalenten Klassen.'."\n",
-                      'Desweiteren sehen wir diese Richtigkeit an zwei weiteren Dingen zusammen.'."\n".
+                      'Desweiteren sehen wir diese Richtigkeit noch an zwei Dingen zusammen.'."\n".
                     'Zum einen an dem allgemeinen Beweis,'."\n".
-                    'dass das \jump{OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration}{Integral die Umkehrung der Ableitung} ist.'."\n".
+                    'dass das \jump{OM:SupNum:Ableitungen-Integrale:Integration:Ableitung-Umkehrung-Integration}{Ableitung die Umkehrung des Integrals} ist.'."\n".
                     'Und zum anderen an dem \jump{OM:SupNum:Ableitungen-Integrale:Integration:Beispiel-eines-konkreten-Integrals}{Beispiel der Integration der Ableitung von \lm{ f(x) = x^{2} }}, also von \lm{ f\'(x) = *〈 2 x *〉. *〈 1 *〉},'."\n".
                     'in dem genau die angepasste Gaußsche Summenformel zur korrekten Lösung angewandt wird und der einzige fragliche Term ist.'."\n",
                       'Die Richtigkeit der Summe aller Ordinalzahlen bis ohne \lm{ ω^{ω} } ist bereits aus Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-g}'."\n".
