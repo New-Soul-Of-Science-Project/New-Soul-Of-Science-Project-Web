@@ -54,10 +54,10 @@
       keywords => '',
       text_titel_h1 => 'Programm',
       text_titel_short => 'Programm',
-      text_undertitel_h2 => 'Unser Angebot',
+      text_undertitel_h2 => 'Unser Angebot an Vorträgen, Workshops und Kursen',
       text_titel_discr_h3 => '',
       jump_ary => array(
-        // 'OM:nSOSa:Programm:X' => array( headline_text => 'X'/* , headline_text_short => 'XXX' */),
+        'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens' => array( headline_text => '›Spannungsspiel des Lebens‹'/* , headline_text_short => 'X' */),
       ),
     ),
   );
