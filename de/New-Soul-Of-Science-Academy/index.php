@@ -24,7 +24,7 @@
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Der beste Weg, die Zukunft vorherzusagen, ist, sie zu erschaffen.'."\n".
                         ''),
-                        addtext => '\\small{\\color{*TitleAdd}{\\\\ ~Abraham Lincoln}}')),
+                        addtext => '\small{\color{*TitleAdd}{\\\\ ~Abraham Lincoln}}')),
                       
                   array( 'text', array( text => array(
                     'Der ›Phönix aus der Asche‹ in unserem Logo soll symbolisieren, dass wir uns und unser Wissen stetig'."\n".
@@ -158,22 +158,29 @@
                     '\\\\'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
-                      array( title => '\\color{*ContentItemDisabled}{Video Tour (geplant)}', startsign => '', //jumpname => 'X',
+                      array( title => '\color{*ContentItemDisabled}{Video Tour (geplant)}', startsign => '', //jumpname => 'X',
                                 description => 'die YouTube-Vorträge'),
-                      array( title => '\\color{*ContentItemDisabled}{Vorwort (geplant)}', startsign => ''/*'\\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
+                      array( title => '\color{*ContentItemDisabled}{Vorwort (geplant)}', startsign => ''/*'\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
                                 description => 'was mich bewegt – was ich bewegen möchte'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
                     ))),
                       
                   array( 'normal',
-                    '<h3 class="tools-class-contentlist-header">Ausrichtung \\\\ \\small{Motivation und Beschreibung}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">\color{*ContentItemDisabled}{Ausrichtung (geplant) \\\\ \small{Motivation und Beschreibung}}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
-                      // array( title => '\\name{OM:NPT:Einleitung}', jumpname => 'OM:NPT:Einleitung', startsign => '',
+                      // array( title => '\name{OM:NPT:Einleitung}', jumpname => 'OM:NPT:Einleitung', startsign => '',
                       //           description => 'Worum geht es?'/*$Glo_g_Site_ary['OM:FrQFT:Einleitung'][text_undertitel_h2]*/),
                     ))),
                     
                   array( 'normal',
-                    '<h3 class="tools-class-contentlist-header">Lesestoff und Verweise \\\\ \\small{Informationen}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Angebot \\\\ \small{Vorträge, Workshops, Kurse}</h3>'."\n"),
+                  array( 'contentlist',
+                    array( content_ary => array(
+                      nSOSp_f_tableOfContents_elementAry( 'OM:nSOSa:Programm'),
+                    ))),
+                    
+                  array( 'normal',
+                    '<h3 class="tools-class-contentlist-header">Lesestoff und Verweise \\\\ \small{Informationen}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       // nSOSp_f_tableOfContents_elementAry( 'OM:nSOSa:Literatur'),

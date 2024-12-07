@@ -46,5 +46,19 @@
         'OM:nSOSa:Home:Haftungsausschluss' => array( headline_text => 'Haftungsausschluss', headline_text_short => 'Haftungsausschluss'),
       ),
     ),
+    'OM:nSOSa:Programm' => array(
+      url_abs => 'https://nsosp.org/de/New-Soul-Of-Science-Academy/Programm.php',
+      url_rel => $Glo_PathRel_back.'../de/New-Soul-Of-Science-Academy/Programm.php',
+      titel => 'Programm – New Soul Of Science Academy (NSOSA) - Deutsch',
+      description => '\\name[undertitle]{OM:nSOSa:Programm}.\hidden{ — \\name[description]{OM:nSOSa:Programm}.}',
+      keywords => '',
+      text_titel_h1 => 'Programm',
+      text_titel_short => 'Programm',
+      text_undertitel_h2 => 'Unser Angebot',
+      text_titel_discr_h3 => '',
+      jump_ary => array(
+        // 'OM:nSOSa:Programm:X' => array( headline_text => 'X'/* , headline_text_short => 'XXX' */),
+      ),
+    ),
   );
 ?>
