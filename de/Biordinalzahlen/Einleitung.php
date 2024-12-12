@@ -612,6 +612,46 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
                       
+                'Ontologie der Dualität allgemein', subline =>
+                  'Dualitäten „gebären“ weitere Dimension – „göttliche Kinder“ –, die zählen')),
+                  array( 'text', array( text => array(
+                    'Dualitäten sind ja voneinander abhängige, unverzichtbare, aber auch unvereinbare Dinge.'."\n".
+                    'Ähnlich wie \jump{OM:FrQFT:WasIstPhysik:Vortext:Symmetriebrueche-Pole-und-Wechselwirkungen}{Symmetriebrüche in der Physik}, die „neue“ Kräfte hervorbringen.'."\n",
+                      'Hierin können wir ein Muster erkennen, dass dem Zählen entspricht.'."\n".
+                    'In \italic{einer} Dualität stehen \italic{zwei} Aspekte in einem Zusammenhang, der eine neue \italic{dritte}'."\n".
+                    'Dimension hervorbringt oder eröffnet.'."\n",
+                      'Als Beispiel können wir uns den \jump{OM:SpaLeb:Care-Prozess}{Care-Prozess} des Lebens anschauen.'."\n".
+                    'Hier entsteht aus einer weiblich-männlichen Dualität mit den Aspekten Gefühl und Tat oder Handlung die Fortentwicklung'."\n".
+                    '– der Lernprozess, die Persönlichkeitsentwicklung und Reife.'."\n".
+                    'Diese neuen Aspekte können wir mythologisch und religiös, also im übertragenen Sinne, als die „Geburt eines göttlichen Kindes“ verstehen.'."\n".
+                    'Es wird etwas neues, drittes, gar wunderliches quasi in Dreifaltigkeit geschöpft, die wiederum als viertes ins Bewusstsein und'."\n".
+                    'damit als fünftes ins Leben führt, und so fort.'."\n".
+                    ''))),
+                      
+                  // #!: Auch auf der NSOSP-Seite! (OM:nSOSp:Home)
+                  // #!: Auch auf der ›Spannungsspiel des Lebens‹ Seite! (OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik)
+                  // #!: Auch auf der „Naturphilosophie der Zeit“ Seite! (OM:NPT:Home)
+                  // #!: Auch auf der „Die arithmetische Struktur der Geometrie“ Seite! (OM:SupNum:Struktur-Geometrie)
+                  // #!: Auch im Abschnitt „Ontologie der Dualität allgemein“! (OM:BiOrd:Einleitung:OntologischeDeutung)
+                  array( 'text', array( Shape => 'italic', text => array(
+                        'Mathematik beginnt dort, \\\\ '."\n".
+                        'wo wir das Eine vom Anderen unterscheiden können. \\\\ '."\n".
+                        '\small{\color{*TitleAdd}{Ab da zählt alles.}}'."\n".
+                        ''),
+                        addtext => '')),
+                      
+                  array( 'text', array( text => array(
+                    'So ist in dieser Abfolge auch das Bewusstsein in seiner oben beschriebenen Auswahldualität des Fokus'."\n".
+                    '– von Bewusstsein und Unterbewusstsein –, also der Unterscheidung des Einen vom Anderen, enthalten.'."\n",
+                      'Dieser Schöpfungsakt oder -weg beinhaltet sowohl das Zählen, als auch die Eroberung entsprechender immer höherer Dimensionen \color{*Bearb}{(siehe Abbildung oder Animation)}.'."\n".
+                    'Das ist vergleichbar mit der Definition des Zählens durch verschachtelte Mengen bei den Ordinalzahlen.'."\n".
+                    'Denn in dem hier geschilderten Schöpfungsakt werden die bereits vorhandenen Aspekte Gefühl und Tat oder Handlung'."\n".
+                    'gemeinsam zusammengefasst und dadurch entsteht das Dritte.'."\n".
+                    'Alles drei wird wieder zusammengefasst und daraus entsteht das Vierte, und so fort.'."\n",
+                      'Ähnliches finden wir übrigens auch in der neuen Physik der \jump{OM:FrQFT:Home}{fraktalen Quanten-Fluss-Theorie}.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
+                      
                 'Unsere Existenz durch eine stabile und sich entwickelnde Psychosomatik', subline =>
                   'Wir sind in einen Dialog zwischen unserem Bewusstsein und unserem Unterbewusstsein verwickelt')),
                   array( 'text', array( text => array(
