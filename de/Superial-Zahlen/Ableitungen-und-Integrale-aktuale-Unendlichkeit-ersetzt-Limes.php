@@ -323,7 +323,7 @@
                   array( 'text', array( text => array(
                     'Wie oben geschildert, funktioniert dies für alle rationalen \lm{ x } und für alle \lm{ x }, die ganze Wurzel aus rationalen Zahlen sind,'."\n".
                     'sowie deren Summen, Differenzen, Produkte, Brüche und Potenzen.'."\n".
-                    'Offen, aber meiner Meinung nach wahrscheinlich, auch für unendliche Summen dieser, also vermutlich für alle realen Koeffizienten algebraischer Zahlen.'."\n".
+                    'Offen, aber meiner Meinung nach wahrscheinlich, auch für unendliche Summen dieser, also vermutlich für alle reell algebraischen Zahlen.'."\n".
                     'Dann wären die einzigen \lm{ x }, für die das innerhalb der Superial-Zahlen erster Stufe nicht funktioniert, \jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen}{transzendente Zahlen},'."\n".
                     'auf die ich an anderer Stelle eingehen möchte.'."\n",
                     ''))),
