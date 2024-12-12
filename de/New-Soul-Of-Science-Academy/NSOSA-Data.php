@@ -58,6 +58,8 @@
       text_titel_discr_h3 => '',
       jump_ary => array(
         'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens' => array( headline_text => '›Spannungsspiel des Lebens‹'/* , headline_text_short => 'X' */),
+        'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Yin-und-Yang-kurz' => array( headline_text => 'Yin und Yang, Sonne und Mond in Mythologie und Wissenschaft – das Prinzip des Geschlechts'/* , headline_text_short => 'X' */),
+        'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Yin-und-Yang-lang-mit-Kind' => array( headline_text => 'Yin und Yang, Sonne und Mond sowie die Dreifaltigkeit in Mythologie und Wissenschaft – das Prinzip des Geschlechts und das daraus „geborene göttliche Kind“'/* , headline_text_short => 'X' */),
       ),
     ),
   );
