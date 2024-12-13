@@ -69,6 +69,8 @@
           'OM:BiOrd:Einleitung:IntegrierteMengenlehre:Equ-Antimenge' => array( headline_text => 'BO.Ein.IM.1'),
                         
         'OM:BiOrd:Einleitung:OntologischeDeutung' => array( headline_text => 'Ontologische Deutung'/*, headline_text_short => 'X'*/),
+          'OM:BiOrd:Einleitung:OntologischeDeutung:OntologieDualitaetAllgemein' => array( headline_text => 'Ontologie der Dualität allgemein'/*, headline_text_short => 'X'*/),
+          'OM:BiOrd:Einleitung:OntologischeDeutung:UnsereExistenzDurchPsychosomatik' => array( headline_text => 'Unsere Existenz durch eine stabile und sich entwickelnde Psychosomatik'/*, headline_text_short => 'X'*/),
                         
         'OM:BiOrd:Einleitung:NeueEinsichten' => array( headline_text => 'Neue Einsichten'/*, headline_text_short => 'X'*/),
                         

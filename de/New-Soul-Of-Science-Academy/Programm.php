@@ -80,6 +80,19 @@
                         'viele Frage-Antwort-Teile wie auch Dialoge',
                         'Handout: \jump[https://nsosp.org/download/NSOSA/Spannungsspiel-des-Lebens/Yin-und-Yang-Sonne-und-Mond-in-Mythologie-und-Wissenschaft-202411-5.pdf]{}{als PDF}',
                     ))),
+                  array( 'text', array( text => array(
+                    'Vertiefende Informationen auf den Themenseiten:'."\n".
+                    ''))),
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:HaTha'),
+                      array(  jump_name => 'OM:NPYo:Stein-der-Weisen'),
+                      array(  jump_name => 'OM:NPYo:ExistenzLeichtigkeit'),
+                      array(  jump_name => 'OM:NPYo:Spiritualitaet-Psychologie'),
+                      array(  jump_name => 'OM:NPYo:WasUnterschiedYogaSport'),
+                      array(  jump_name => 'OM:SpaLeb:Home'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess'),
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik'),
+                    )),
                   array( 'headline', array( jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Yin-und-Yang-lang-mit-Kind', text =>
                       
                 'Yin und Yang, Sonne und Mond sowie die Dreifaltigkeit in Mythologie und Wissenschaft \italic{– das Prinzip des Geschlechts und das daraus „geborene göttliche Kind“}', subline =>
@@ -93,6 +106,22 @@
                         'intensiver Einbezug der Teilnehmer',
                         'viele Frage-Antwort-Teile wie auch Dialoge',
                     ))),
+                  array( 'text', array( text => array(
+                    'Vertiefende Informationen auf den Themenseiten:'."\n".
+                    ''))),
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:HaTha'),
+                      array(  jump_name => 'OM:NPYo:Stein-der-Weisen'),
+                      array(  jump_name => 'OM:NPYo:ExistenzLeichtigkeit'),
+                      array(  jump_name => 'OM:NPYo:Spiritualitaet-Psychologie'),
+                      array(  jump_name => 'OM:NPYo:WasUnterschiedYogaSport'),
+                      array(  jump_name => 'OM:SpaLeb:Home'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess'),
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik'),
+                      array(  jump_name => 'OM:SpaLeb:Bewusstsein'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:OntologieDualitaetAllgemein'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:UnsereExistenzDurchPsychosomatik'),
+                    )),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:nSOSa:Home'),
