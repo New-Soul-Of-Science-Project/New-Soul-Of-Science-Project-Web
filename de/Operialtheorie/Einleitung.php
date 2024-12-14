@@ -24,7 +24,9 @@
                     '• Wie verändern sich die Anzahlen von einem Operator zur drunter liegenden Ebene?',
                     '– Bis zum Zählen: Dann müsste sich eine Differenz zur Zählbasis ergeben.',
                     '– Linksneutrales Element und rechtsneutrales Element über die Rückwärtsrechenarten allgemein definieren.',
-                    '\bold{Beispiele der Reduktion der Operator-nummer}',
+                    '• Wie können wir aus dem Zählen berechnen, welcher Wert sich durch einen anderen Operator mit den gleichen Zahlen ergeben würde?',
+                    '– Könnte hierbei das Video von Mathologer Aufschluss geben: \jump[https://www.youtube.com/watch?v=rGlpyFHfMgI]{}{The Moessner Miracle. Why wasn\'t this discovered for over 2000 years?}',
+                    '\bold{Beispiele der Reduktion der Operatorzahl}',
                     '• Siehe Mathologer: \jump[https://www.youtube.com/watch?v=rGlpyFHfMgI]{}{The Moessner Miracle. Why wasn\'t this discovered for over 2000 years?}',
                     '– Hier wird insgesamt ein Zusammenhang aller Operatoren untereinander und mit dem Pascalschen Dreieck hergestellt, siehe auch Abschnitt \italic{\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:eFunktionPascalscheDreieck}}.',
                     '– Eines der interessantesten Videos, die ich kenne.',
@@ -123,9 +125,9 @@
                   array( 'equations',
                     array( equ_text_std => 'OT.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  x \; \mapsto \; (f \circledcirc g)(x)  :=  g( f(x) )  }'),
-                      array( display => 'on',  latex => '{  x \; \mapsto \;\; \underset{ \forall n \in \{ 1, 2, 3 \} }{ \huge{\circledcirc} } f_{n}  :=  x \; \mapsto \; (f_{1} \circledcirc f_{2} \circledcirc f_{3})(x)  \\\ \qquad\qquad\qquad\;\;  =  f_{3}( f_{2}( f_{1}(x) ) )  }',
+                      array( display => 'on',  latex => '{  x \; \mapsto \;\; \underset{ \forall n \in \{ 1, 2, 3 \} }{ \LARGE{\circledcirc} } f_{n}  :=  x \; \mapsto \; (f_{1} \circledcirc f_{2} \circledcirc f_{3})(x)  \\\ \qquad\qquad\qquad\;\;  =  f_{3}( f_{2}( f_{1}(x) ) )  }',
                                                label_name => 'OM:OT:Einleitung:Vortext:Equ-niedere-Verkettung', label_text => '\\name{OM:OT:Einleitung:Vortext:Equ-niedere-Verkettung}', label_incr => true),
-                      array( display => 'on',  latex => '{  a *o( x + 1 *o) b  :=  \underset{ (\forall n \in \mathbb{N})[0 \le n < b] }{ \huge{\circledcirc} } \;\; *o( x *o) a  }',
+                      array( display => 'on',  latex => '{  a *o( x + 1 *o) b  :=  \underset{ (\forall n \in \mathbb{N})[0 \le n < b] }{ \LARGE{\circledcirc} } \;\; *o( x *o) a  }',
                                                label_name => 'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut', label_text => '\\name{OM:OT:Einleitung:Vortext:Equ-Operial-Absolut}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(

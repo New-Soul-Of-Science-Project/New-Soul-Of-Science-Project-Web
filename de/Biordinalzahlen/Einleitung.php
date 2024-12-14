@@ -25,11 +25,13 @@
                       
                   array( 'text', array( text => array(
                     'Ausgangspunkt der Biordinalzahlen sind die Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}}.'."\n".
-                    'Bei den Elementen der Menge der Ordinalzahlen \lm{ \mathbb{On} } handelt es sich um die Fortsetzung des Zählens oder der uns allgemein bekannten Anzahl von Dingen ins Aktual-Unendliche.'."\n",
+                    'Bei den Elementen der echten Klasse der Ordinalzahlen \lm{ \mathbb{On} }\footnote{Alle Ordinalzahlen als Ganzes ist eine echte Klasse und keine(!) Menge: \\\\ \const{BiOrd_g_footnote_text_OrdinalzahlLimeszahlen}}'."\n".
+                    'handelt es sich um die Fortsetzung des Zählens oder der uns allgemein bekannten Anzahl von Dingen ins Aktual-Unendliche.'."\n",
                       'Die nachfolgend eingeführten Biordinalzahlen erweitern das Zählen (Vorwärtszählen) um das Rückwärtszählen von jeder Zahl aus bis in den negativen Bereich.'."\n".
                     'Das bedeutet, dass das Rückwärtszählen und die Subtraktion innerhalb der Biordinalzahlen vollständig definiert sind,'."\n".
                     'was innerhalb der Ordinalzahlen nicht der Fall ist.'."\n",
-                      'Die Elemente der Menge der Biordinalzahlen \lm{ \mathbb{Bn} } definieren so nicht nur die Anzahlen, die vorhanden sind,'."\n".
+                      'Die Elemente der echten Klasse der Biordinalzahlen \lm{ \mathbb{Bn} }\footnote{Die Biordinalzahlen sind eine echte Klasse und damit keine(!) Menge, weil sie echte Klassen enthalten und nicht nur Mengen, denn Mengen dürfen nur Mengen enthalten. So ist die \lm{ -1 = \mathbb{U} \setminus 1 = \mathbb{U} \setminus *\{ 0 *\} } eine echte Klasse, also keine Menge, sondern nach unserer Definition eine Antimenge, und Element der Biordinalzahlen.}'."\n".
+                    'definieren so nicht nur die Anzahlen, die vorhanden sind,'."\n".
                     'sondern auch die Anzahlen, die an etwas vollständigem Fehlen, wie wir sehen werden.'."\n".
                     'Durch die Erweiterung werden die Ordinalzahlen als Biordinalzahlen zu einem algebraischen Ring\footnote{\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n".
                     'Denn nun sind in den Biordinalzahlen die Addition und vollständige Subtraktion und ihr neutrales Element „Null“'."\n".
@@ -602,15 +604,55 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
                       
-                'Ontologie der Polarität', subline =>
-                  'Polarität bringt etwas zur Existenz und zur Wirkung')),
+                'Ontologie der Dualität der Auswahl und Auslassung', subline =>
+                  'Dualität bringt etwas zur Existenz und zur Wirkung')),
                   array( 'text', array( text => array(
-                    'Durch die Auswahl oder das Weglassen von Dingen aus allen Möglichkeiten entsteht eine Polarität,'."\n".
+                    'Durch das Auswählen oder das Weglassen von Dingen aus allen Möglichkeiten entsteht eine Dualität,'."\n".
                     'die etwas zur stabilen Existenz bringt.'."\n".
                     'Es ist ein \jump{OM:FrQFT:NeuePhysik:Beobachtungen-und-nat-Ueberlegungen:WWSymBruch}{Symmetriebruch}, der die neutrale Harmonie stört, der zu „Kräften“ führt,'."\n".
                     'ganz wie in der \jump{OM:FrQFT:Home}{Physik}, und die so erschaffenen Dinge in Prozessen begreifbar, greifbar und handhabbar macht.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:X', text =>
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:OntologieDualitaetAllgemein', text =>
+                      
+                'Ontologie der Dualität allgemein', subline =>
+                  'Dualitäten „gebären“ weitere Dimension – „göttliche Kinder“ –, die zählen')),
+                  array( 'text', array( text => array(
+                    'Dualitäten sind ja voneinander abhängige, unverzichtbare, aber auch unvereinbare Dinge.'."\n".
+                    'Ähnlich wie \jump{OM:FrQFT:WasIstPhysik:Vortext:Symmetriebrueche-Pole-und-Wechselwirkungen}{Symmetriebrüche in der Physik}, die „neue“ Kräfte hervorbringen.'."\n",
+                      'Hierin können wir ein Muster erkennen, dass dem Zählen entspricht.'."\n".
+                    'In \italic{einer} Dualität stehen \italic{zwei} Aspekte in einem Zusammenhang, der eine neue \italic{dritte}'."\n".
+                    'Dimension hervorbringt oder eröffnet.'."\n",
+                      'Als Beispiel können wir uns den \jump{OM:SpaLeb:Care-Prozess}{Care-Prozess} des Lebens anschauen.'."\n".
+                    'Hier entsteht aus einer weiblich-männlichen Dualität mit den Aspekten Gefühl und Tat oder Handlung die Fortentwicklung'."\n".
+                    '– der Lernprozess, die Persönlichkeitsentwicklung und Reife.'."\n".
+                    'Diese neuen Aspekte können wir mythologisch und religiös, also im übertragenen Sinne, als die „Geburt eines göttlichen Kindes“ verstehen.'."\n".
+                    'Es wird etwas neues, drittes, gar wunderliches quasi in Dreifaltigkeit geschöpft, die wiederum als viertes ins Bewusstsein und'."\n".
+                    'damit als fünftes ins Leben führt, und so fort.'."\n".
+                    ''))),
+                      
+                  // #!: Auch auf der NSOSP-Seite! (OM:nSOSp:Home)
+                  // #!: Auch auf der ›Spannungsspiel des Lebens‹ Seite! (OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik)
+                  // #!: Auch auf der „Naturphilosophie der Zeit“ Seite! (OM:NPT:Home)
+                  // #!: Auch auf der „Die arithmetische Struktur der Geometrie“ Seite! (OM:SupNum:Struktur-Geometrie)
+                  // #!: Auch im Abschnitt „Ontologie der Dualität allgemein“! (OM:BiOrd:Einleitung:OntologischeDeutung)
+                  array( 'text', array( Shape => 'italic', text => array(
+                        'Mathematik beginnt dort, \\\\ '."\n".
+                        'wo wir das Eine vom Anderen unterscheiden können. \\\\ '."\n".
+                        '\small{\color{*TitleAdd}{Ab da zählt alles.}}'."\n".
+                        ''),
+                        addtext => '')),
+                      
+                  array( 'text', array( text => array(
+                    'So ist in dieser Abfolge auch das Bewusstsein in seiner oben beschriebenen Auswahldualität des Fokus'."\n".
+                    '– von Bewusstsein und Unterbewusstsein –, also der Unterscheidung des Einen vom Anderen, enthalten.'."\n",
+                      'Dieser Schöpfungsakt oder -weg beinhaltet sowohl das Zählen, als auch die Eroberung entsprechender immer höherer Dimensionen \color{*Bearb}{(siehe Abbildung oder Animation)}.'."\n".
+                    'Das ist vergleichbar mit der Definition des Zählens durch verschachtelte Mengen bei den Ordinalzahlen.'."\n".
+                    'Denn in dem hier geschilderten Schöpfungsakt werden die bereits vorhandenen Aspekte Gefühl und Tat oder Handlung'."\n".
+                    'gemeinsam zusammengefasst und dadurch entsteht das Dritte.'."\n".
+                    'Alles drei wird wieder zusammengefasst und daraus entsteht das Vierte, und so fort.'."\n",
+                      'Ähnliches finden wir übrigens auch in der neuen Physik der \jump{OM:FrQFT:Home}{fraktalen Quanten-Fluss-Theorie}.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:UnsereExistenzDurchPsychosomatik', text =>
                       
                 'Unsere Existenz durch eine stabile und sich entwickelnde Psychosomatik', subline =>
                   'Wir sind in einen Dialog zwischen unserem Bewusstsein und unserem Unterbewusstsein verwickelt')),
@@ -1169,11 +1211,14 @@
                       'Bemerkenswerter Weise hat die superiale Basis \lm{ \s } dann wieder genau so viele natürliche Vorgänger,'."\n".
                     'wie sie selber groß ist.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:BiOrd:Einleitung:NeueEinsichten:SummeAllerNatuerlichenZahlenBisInsAktualUnendlicheBerechnen', text =>
+                      
+                'Die Summe aller natürlichen Zahlen bis ins Aktual-Unendliche berechnen', subline =>
+                  'Biordinalzahlen machen es möglich')),
                   array( 'text', array( text => array(
-                  '\condb{Die Summe aller natürlichen Zahlen} \\\\'."\n".
                     'So kommen wir mit den neuen Zahlen beispielsweise auch in die Lage, die Summe aller natürlichen Zahlen zu berechnen.'."\n",
                       'Für die Summe aller natürlicher Zahlen können wir die Gaußsche Summenformel\footnote{\const{BiOrd_g_footnote_text_GaussscheSummenformel}}'."\n".
-                    'benutzen, wen wir sie entsprechend anpassen:'."\n".
+                    'benutzen, wenn wir sie entsprechend anpassen:'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -1212,52 +1257,60 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{On}  \subset  \mathbb{N}_{\infty,c}  }'),
-                      array( display => 'on',  latex => '{  \mathbb{Bn}  \subset  \mathbb{N}_{\infty,c}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{On}  \subset  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{Bn}^{+}_{0}  \subset  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Desweiteren soll es sich um Mengen \lm{ \mathbb{N}_{\infty,c} } ganzer Zahlen handeln, in denen der Wert jedes Elements'."\n".
-                      'die Anzahl an Elementen in der Menge wiedergibt, die vor ihm kommen.'."\n".
-                      'Diese Mengen fassen wir in der Klasse \lm{ \mathbb{K}_{\infty,c} } der Anzahl äquivalenten Mengen zusammen:'."\n".
+                      'Desweiteren soll es sich um Klassen \lm{ \mathbb{N}_{\infty,c} } ganzer Zahlen handeln, in denen der Wert jedes Elements'."\n".
+                      'die Anzahl an Elementen in der Klassen wiedergibt, die vor ihm kommen.'."\n".
+                      'Diese Klassen fassen wir in der Klasse \lm{ \mathbb{K}_{\infty,c} } der Anzahl äquivalenten Klassen zusammen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \exists \mathbb{K}_{\infty,c}\!: \, *( \forall \mathbb{N}_{\infty,c} \subset \mathbb{N}_{\infty}\!: \, \\\ \qquad\qquad\qquad *( \mathbb{N} \subseteq \mathbb{N}_{\infty,c} \;\land\; \\\ \qquad\qquad\qquad\;\; *( \forall n \in \mathbb{N}_{\infty,c} *)  *[ n \geq 0 \;\land\; \# [ 0, n [_{\mathbb{N}_{\infty,c}} = n *] \\\ \qquad\qquad\qquad  \Rightarrow  \mathbb{N}_{\infty,c} \in \mathbb{K}_{\infty,c} *) *)  }'),
+                      array( display => 'on',  latex => '{  \exists \mathbb{K}_{\infty,c}\!: \, *( \forall \mathbb{N}_{\infty,c} \subset \mathbb{N}_{\infty}\!: \, \\\ \qquad\qquad\qquad *( \mathbb{N} \subseteq \mathbb{N}_{\infty,c} \;\land\; \\\ \qquad\qquad\qquad\;\; *( \forall n \in \mathbb{N}_{\infty,c} *)  *[ n \geq 0 \;\land\; \# [ 0, n [_{\mathbb{N}_{\infty,c}} = n *] \\\ \qquad\qquad\qquad  \Rightarrow  \mathbb{N}_{\infty,c} \in \mathbb{K}_{\infty,c} *) *)  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-c', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-c}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Die Definition der Ordinalzahlen erfüllt dieses Kriterium offensichtlich, während die Biordinalzahlen es nicht erfüllen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{On}  \in  \mathbb{K}_{\infty,c}  }'),
-                      array( display => 'on',  latex => '{  \mathbb{Bn}  \notin  \mathbb{K}_{\infty,c}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \mathbb{On}  \in  \mathbb{K}_{\infty,c}  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-c', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-c}', label_incr => true),
+                      array( display => 'on',  latex => '{  \mathbb{Bn}^{+}_{0}  \notin  \mathbb{K}_{\infty,c}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'weil die Biordinalzahlen eben \jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{mehr Vorgänger vor ω haben als sein Wert groß ist}.'."\n".
                     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'Und von hier kommen wir zur Klasse Gauß-Summen äquivalenter Mengen.'."\n".
-                      'Dies sind unendlich große Mengen, in denen für jedes Element die oben angepasste Gaußsche Summenformel gilt'."\n".
+                      'Und von hier kommen wir zur Klasse \lm{ \mathbb{K}_{\infty,g} } Gauß-Summen äquivalenter Klassen.'."\n".
+                      'Dies sind unendlich große Klassen – Mengen sind dabei nur besondere Klassen –, in denen für jedes Element die oben angepasste Gaußsche Summenformel gilt'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \exists \mathbb{K}_{\infty,g}\!: \, *( \forall \mathbb{N}_{\infty,g} \subset \mathbb{N}_{\infty}\!: \, \\\ \qquad\qquad\qquad *( \mathbb{N} \subseteq \mathbb{N}_{\infty,g} \;\land\; \\\ \qquad\qquad\qquad\;\; *( \forall n \in \mathbb{N}_{\infty,g} *)  *[ n \geq 0 \;\land\; \!\!\!\!\! \sum_{ \forall i \in [ 0, n [_{\mathbb{N}_{\infty,g}} } \!\!\!\! i = \frac{ n^{2} - n }{ 2 } *] \\\ \qquad\qquad\qquad  \Rightarrow  \mathbb{N}_{\infty,g} \in \mathbb{K}_{\infty,g} *) *)  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \mathbb{M} \in \mathbb{K}_{\infty,g} *)  *[  \sum_{ \forall i \in [ 0, n [_{\mathbb{M}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  \;\; ,  }',
+                      array( display => 'on',  latex => '{  \exists \mathbb{K}_{\infty,g}\!: \, *( \forall \mathbb{N}_{\infty,g} \subset \mathbb{N}_{\infty}\!: \, \\\ \qquad\qquad\qquad *( \mathbb{N} \subseteq \mathbb{N}_{\infty,g} \;\land\; \\\ \qquad\qquad\qquad\;\; *( \forall n \in \mathbb{N}_{\infty,g} *)  *[ n \geq 0 \;\land\; \!\!\!\!\! \sum_{ \forall i \in [ 0, n [_{\mathbb{N}_{\infty,g}} } \!\!\!\! i = \frac{ n^{2} - n }{ 2 } *] \\\ \qquad\qquad\qquad  \Rightarrow  \mathbb{N}_{\infty,g} \in \mathbb{K}_{\infty,g} *) *)  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-g', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-Klasse-K-unendlich-g}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \mathbb{M} \in \mathbb{K}_{\infty,g} *) *( \forall n \in \mathbb{M} *)  *[  \sum_{ \forall i \in [ 0, n [_{\mathbb{M}} } \!\!\!\! i  =  \frac{ n^{2} - n }{ 2 }  *]  \;\; ,  }',
                                           label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-GaussscheSummenformel-angepasst-mit-N-unendlich}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      '\color{*Entwick}{Und am Rande vermute ich, dass eine Menge, die in der Klasse der Gauß-Summen äquivalenten Mengen ist'."\n".
-                      'auch zur Klasse der Anzahl äquivalenten Mengen gehören muss}'."\n".
+                      'Es ist offensichtlich, dass eine Klasse, die in der Klasse \lm{ \mathbb{K}_{\infty,c} } der Anzahl äquivalenten Klassen ist'."\n".
+                      'auch zur Klasse \lm{ \mathbb{K}_{\infty,g} } der Gauß-Summen äquivalenten Klassen gehören muss und umgekehrt'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{M}  \in  \mathbb{K}_{\infty,g}  ?\Rightarrow  \mathbb{M}  \in  \mathbb{K}_{\infty,c}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \mathbb{M}  \in  \mathbb{K}_{\infty,c}  \Leftrightarrow  \mathbb{M}  \in  \mathbb{K}_{\infty,g}  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-Element-K-unendlich-c-aequival-Element-K-unendlich-g', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Element-K-unendlich-c-aequival-Element-K-unendlich-g}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{On}  \in  \mathbb{K}_{\infty,g}  \;\; ,  }',
+                                          label_name => 'OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-g', label_text => '\name{OM:BiOrd:Einleitung:NeueEinsichten:Equ-On-ist-Element-K-unendlich-g}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      '\color{*Entwick}{was zu beweisen ist.}'."\n".
+                      'denn dies ist ja genau die Voraussetzung, damit die angepasste Gaußsche Summenformel angewandt werden kann.'."\n".
                     ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'So können wir nun zur Summe aller endlichen natürlichen Zahlen übergehen'."\n".
+                      'So können wir nun zur Summe aller endlichen natürlichen Zahlen übergehen,'."\n".
+                      'weil die Klasse der Ordinalzahlen \lm{ \mathbb{On} } aufgrund ihrer Struktur per Definition'."\n".
+                      'zur Klasse der Gauß-Summen äquivalenten Klassen gehört,'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'BO.Ein.NE', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(

@@ -148,6 +148,21 @@
           'OM:OT:Sprungoperator:Neutrale-Elemente:Equ-Minus-Eins-Einbettung' => array( headline_text => 'OT.SpruO.NE.8'),
       ),
     ),
+    'OM:OT:Vorwort' => array(
+      url_abs => 'https://nsosp.org/de/Operialtheorie/Vorwort.php',
+      url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Vorwort.php',
+      titel => 'Vorwort - Operialtheorie - Deutsch',
+      description => 'Vorwort zur ›Operialtheorie‹.',
+      description => '\name[undertitle]{OM:OT:Vorwort}.\hidden{ – \name[description]{OM:OT:Vorwort}.}',
+      keywords => '',
+      text_titel_h1 => 'Vorwort',
+      text_titel_short => 'Vorwort',
+      text_undertitel_h2 => 'Meine Erfahrung, tief gehende eigene Entdeckungen zu machen',
+      text_titel_discr_h3 => '',
+      jump_ary => array(
+        // 'OM:OT:Einleitung:Test-der-Notation' => array( headline_text => 'Test der Notation'/* , headline_text_short => 'X' */),
+      ),
+    ),
     'OM:OT:Zaehloperator' => array(
       url_abs => 'https://nsosp.org/de/Operialtheorie/Zaehloperator-Inkrement-Operator-Null-Operator.php',
       url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Zaehloperator-Inkrement-Operator-Null-Operator.php',
@@ -168,21 +183,6 @@
           'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Nachzeichen-Null-OP' => array( headline_text => 'OT.Zähl.NE.13'),
           'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert-nicht' => array( headline_text => 'OT.Zähl.NE.15'),
           'OM:OT:Zaehloperator:Neutrale-Elemente:Equ-Null-OP-rechts-Operand-existiert' => array( headline_text => 'OT.Zähl.NE.18'),
-      ),
-    ),
-    'OM:OT:Vorwort' => array(
-      url_abs => 'https://nsosp.org/de/Operialtheorie/Vorwort.php',
-      url_rel => $Glo_PathRel_back.'../de/Operialtheorie/Vorwort.php',
-      titel => 'Vorwort - Operialtheorie - Deutsch',
-      description => 'Vorwort zur ›Operialtheorie‹.',
-      description => '\name[undertitle]{OM:OT:Vorwort}.\hidden{ – \name[description]{OM:OT:Vorwort}.}',
-      keywords => '',
-      text_titel_h1 => 'Vorwort',
-      text_titel_short => 'Vorwort',
-      text_undertitel_h2 => 'Meine Erfahrung, tief gehende eigene Entdeckungen zu machen',
-      text_titel_discr_h3 => '',
-      jump_ary => array(
-        // 'OM:OT:Einleitung:Test-der-Notation' => array( headline_text => 'Test der Notation'/* , headline_text_short => 'X' */),
       ),
     ),
   );

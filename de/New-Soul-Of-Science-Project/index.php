@@ -1320,7 +1320,7 @@
                   array( 'text', array( Shape => 'italic', text => array(
                         '\\\\'."\n"))),
                       
-                  array( 'text', array( Shape  => 'quote', text => array(
+                  array( 'text', array( Shape => 'quote', text => array(
                         'Wer etwas will, findet Wege. \\\\'."\n".
                         'Wer etwas nicht will, findet Gründe.'."\n".
                         ''),
@@ -1407,6 +1407,7 @@
                   // #!: Auch auf der ›Spannungsspiel des Lebens‹ Seite! (OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik)
                   // #!: Auch auf der „Naturphilosophie der Zeit“ Seite! (OM:NPT:Home)
                   // #!: Auch auf der „Die arithmetische Struktur der Geometrie“ Seite! (OM:SupNum:Struktur-Geometrie)
+                  // #!: Auch im Abschnitt „Ontologie der Dualität allgemein“! (OM:BiOrd:Einleitung:OntologischeDeutung)
                   array( 'text', array( Shape => 'italic', text => array(
                         'Mathematik beginnt dort, \\\\ '."\n".
                         'wo wir das Eine vom Anderen unterscheiden können. \\\\ '."\n".

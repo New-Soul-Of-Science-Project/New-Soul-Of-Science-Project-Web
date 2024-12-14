@@ -45,9 +45,9 @@
                     'Struktur von \lm{ \e_{\s} }, die Eulersche Zahl auf Basis von \lm{ \s }.'."\n".
                     'Diese Zahl können wir bis in ihre aktual unendlich kleinen Summanden der Potenz \lm{ \s^{-\s} }'."\n".
                     'verfolgen, wo sie endet.'."\n".
-                    'Die \lm{ \e }-Funktion ergibt sich durch diese Definition im Stellenwertsystem ausgedrückt zu \lm{ \e_{\s}^{x} = 〈1〉․〈1〉^{〈x〉〈0〉} }'."\n".
+                    'Die \lm{ \e }-Funktion ergibt sich durch diese Definition im Stellenwertsystem ausgedrückt zu \lm{ \e_{\s}^{x} = 〈1〉․〈1〉^{〈x〉_{1}} }'."\n".
                     'und dies entspricht \lm{ \e_{\s}^{x} = *( 1 + \frac{ 1 }{ \s } *)^{x \cdot \s} }.'."\n".
-                    'Damit erhalten wir für die Eulersche Zahl \lm{ \e_{\s} = 〈1〉․〈1〉^{〈1〉〈0〉} },'."\n".
+                    'Damit erhalten wir für die Eulersche Zahl \lm{ \e_{\s} = 〈1〉․〈1〉^{〈1〉_{1}} },'."\n".
                     'was \lm{ \e_{\s} = *( 1 + \frac{ 1 }{ \s } *)^{\s} } entspricht.'."\n",
                       'Weiterhin entwickeln wir mit Hilfe der neuen \jump{OM:BiOrd:Home}{Biordinalzahlen} einen Beweis, dass die vollständige Induktion \lm{ ω } eine Primfaktorzerlegung besitzt.'."\n".
                     'Die Ordinalzahl \lm{ ω } ist demnach das Produkt aller endlichen Primzahlen: \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots }.'."\n".
@@ -122,6 +122,8 @@
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Eigenschaften'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Primzahlprodukt-Vermutung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Ueberrationalitaetsvermutung'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden'),
                     ))),
                       
                   array( 'normal',

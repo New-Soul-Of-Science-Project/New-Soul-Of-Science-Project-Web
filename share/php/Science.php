@@ -3,10 +3,14 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 03.09.2024, 11:00h
+  // #: Stand: 19.11.2024, 17:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20241119:  *:  "Sc_f_equation_latex_str_html":  Change MathJax inline mode to use "$" as start and same as end instead of "\(" as start ans "\)" as end because the old usage caused problems in case of use in "\jumpname" statements probably getting confused by the system with our own internal latex statements.
+  //           20241108:  +:  "MathJax":  Add Macro "concat" and "Concat" for a self created small concatenation symbol and big concatenation symbol.
+  //           20241106:  +:  "$Sc_g_equation_replace_ary":  Add '  \to  ' -> '\;\;\;\to\;\;\;'
+  //           20240910:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\Leftrightarrow  ' -> '\;\;\;\overset{\mspace{-3.5mu}?}{\Leftrightarrow}\;\;\;'
   //           20240903:  +:  "$Sc_g_equation_replace_ary":  Add '  ?\Rightarrow  ' -> '\;\;\;\overset{\mspace{-3.5mu}?}{\Rightarrow}\;\;\;'
   //           20240604:  +:  New in "$Sc_g_equation_replace_ary":  '.\langle' -> '.\!\langle',  '\rangle .' -> '\rangle\!.',  '.\left\langle' -> '.\!\left\langle',  '\right\rangle .' -> '\right\rangle\!.'
   //           20240516:  +:  "MathJax":  Add Macro "S" for "\S" to generate a non italic "S" for irrational algebraic coefficients useful for set S.
@@ -248,10 +252,10 @@
     echo '            rROpera: "\\\\rOpera",'."\n";
     echo '            lLOpera: "\\\\lOpera",'."\n";
     echo '            rLOpera: "\\\\mspace{-0.4mu} \\\\rfloor \\\\mspace{2.0mu}",'."\n";
-    // echo '            lSelSet: "\\\\left\\\\{ \\\\mspace{-4.4mu} \\\\rangle \\\\mspace{2.0mu}",'."\n"; // left selection set, linke Auswahlmenge
-    // echo '            rSelSet: "\\\\mspace{2.0mu} \\\\langle \\\\mspace{-4.4mu} \\\\right\\\\}",'."\n"; // left selection set, rechte Auswahlmenge
     echo '            lSelSet: "\\\\left| \\\\mspace{-3.6mu} \\\\rangle \\\\mspace{2.0mu}",'."\n"; // left selection set, linke Auswahlmenge
     echo '            rSelSet: "\\\\mspace{2.0mu} \\\\langle \\\\mspace{-3.6mu} \\\\right|",'."\n"; // left selection set, rechte Auswahlmenge
+    echo '            concat: "\\\\mid \\\\mspace{-1mu} \\\\circ \\\\mspace{-1mu} \\\\mid",'."\n"; // small concatenation symbol, self created
+    echo '            Concat: "\\\\LARGE{\\\\mid \\\\mspace{-2.5mu} \\\\circ \\\\mspace{-2.5mu} \\\\mid}",'."\n"; // big concatenation symbol, self created
     echo '            mod: "\\\\; mod \\\\;",'."\n";
     echo '            lowZero: "\\\\raise -.3ex 0",'."\n";
     echo '            updownarrows: "\\\\uparrow\\\\!\\\\downarrow",'."\n";
@@ -653,6 +657,7 @@
                                     // #: Arrange space around symbols and save chars.
                                     array( '  ?\Rightarrow  ', '\;\;\;\overset{\mspace{-3.5mu}?}{\Rightarrow}\;\;\;'),
                                     array( '  \Rightarrow  ', '\;\;\;\Rightarrow\;\;\;'),
+                                    array( '  ?\Leftrightarrow  ', '\;\;\;\overset{?}{\Leftrightarrow}\;\;\;'),
                                     array( '  \Leftrightarrow  ', '\;\;\;\Leftrightarrow\;\;\;'),
                                     array( '  \land  ', '\;\;\;\land\;\;\;'),
                                     array( '  \lor  ', '\;\;\;\lor\;\;\;'),
@@ -678,6 +683,7 @@
                                     array( '  ?\in  ', '\;\;\;\overset{?}{\in}\;\;\;'),
                                     array( '  \notin  ', '\;\;\;\notin\;\;\;'),
                                     array( '  \subset  ', '\;\;\;\subset\;\;\;'),
+                                    array( '  \to  ', '\;\;\;\to\;\;\;'),
                                     array( '  \rightarrow  ', '\;\;\;\rightarrow\;\;\;'),
                                     array( '  \not\rightarrow  ', '\;\;\;\not\rightarrow\;\;\;\;\;'),
                                     array( '\partial ', '\partial\,'),
@@ -841,7 +847,7 @@
         //$html_ret = '<span style="color: #'.$latex_color.'">\\['.$latex_str.'\\]</span>';  // #!: Does not work for the color!
         //$html_ret = '\\[ \\definecolor{formcolor}{HTML}{'.$latex_color.'} \\color{formcolor} '.$latex_str.' \\]'."\n";  // #!: MathJax does not support HTML colors!
         //$html_ret = '<div style="font-size: 200%;"> \\[ \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor} '.$latex_str.' \\] </div>'."\n";  // #!: Font-size like that does not work. It is corrected afterwards by MathJax to normal.
-        $html_ret = (($style == 'inline') ? '\\(' : '\\[').((strlen($latex_color) == 0) ? '' : ' \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor}').' '.$latex_str.' '.(($style == 'inline') ? '\\)' : '\\]'."\n");
+        $html_ret = (($style == 'inline') ? '$' : '\\[').((strlen($latex_color) == 0) ? '' : ' \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor}').' '.$latex_str.' '.(($style == 'inline') ? '$' : '\\]'."\n");
         //$html_ret = '\\[ \\large \\definecolor{formcolor}{RGB}{'.$r.','.$g.','.$b.'} \\color{formcolor} '.$latex_str.' \\]'."\n";  // #!: It is a bit to big.
         break;
 

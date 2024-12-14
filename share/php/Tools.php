@@ -4,10 +4,12 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 19.01.2024, 22:00h
+  // #: Stand: 19.11.2024, 16:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20241119:  >:  "To_f_Paragraph" type "jumplist":  Replace "<p>" tag by "<table>" tag.
+  //           20240914:  +:  "To_f_HeaderElements":  Remove import "../share/js/NSOSP.js" and move it to local file
   //           20240119:  +:  "To_f_Paragraph", 'iframe':  Add this type for 3d animations.
   //           20231006:  +:  "\\url[]{}", "To_f_replace_callback__latexcommand__url":  Is new. It sets automatically "\\class{tools-class-url}{}"
   //           20230901:  +:  "To_f_Paragraph", 'figure', 'youtube':  Add horizontal scrollable with class 'content-horizontal-scrollable'.
@@ -262,7 +264,6 @@
     echo ''."\n";
     echo '    <script src="'.$Glo_PathRel_back.'../share/js/nospam.js" type="text/javascript" language="JavaScript"></script>'."\n";
     echo '    <script src="'.$Glo_PathRel_back.'../share/js/Tools.js" type="text/javascript" language="JavaScript"></script>'."\n";
-    echo '    <script src="'.$Glo_PathRel_back.'../share/js/NSOSP.js" type="text/javascript" language="JavaScript"></script>'."\n";
     echo '    <script type="text/javascript">'."\n";
     echo '          <!--'."\n";
     // #: Call JavaScript start sequence.
@@ -1756,19 +1757,18 @@
         echo $offset.'  <i>&raquo;&thinsp;';
         break;
       case 'bulletlist':
-        $block_param_add_is = (/*(gettype( $text) == 'array') && */(array_key_exists( TextAlign, $text)));  /* #: Proof of array removed, because it is always array! */
+        $block_param_add_is = ((array_key_exists( TextAlign, $text)));
         $block_is = (($block_param_add_is && ($text[TextAlign] == 'block')) || (!$block_param_add_is && ($Glo_g_TextAlign == 'block')));
         
-        //%!echo $offset.'<table class="tools-class-text" border="0" style="padding-left: 0px; margin-left: 10px;'.(($block_is) ? ' text-align: justify;' : '').'" cellspacing="0" cellpadding="0">'."\n";
         echo $offset.'<table class="tools-class-text" border="0" style="'.(($block_is) ? ' text-align: justify;' : '').'" cellspacing="0" cellpadding="0">'."\n";
         break;
       case 'jumplist':
         // #?: Is an element in array?
         if (0 < count( $text))
         {
-          // #: "margin" can intersect, "padding" can not intersect and it will allways add.
-          //%!echo $offset.'<p style="font-size: 12px; '.( (array_key_exists( margin, $text[0]) && $text[0][margin] == 'margin_small') ? '' : 'margin-top: 20px; margin-bottom: 20px;').' color: #505050;">'."\n";
-          echo $offset.'<p style="'.( (array_key_exists( margin, $text[0]) && $text[0][margin] == 'margin_small') ? '' : 'margin-top: 20px; margin-bottom: 20px;').' color: #505050;">'."\n";
+          // #: "margin" can intersect, "padding" can not intersect and it will always add.
+          //%! echo $offset.'<p style="'.( (array_key_exists( margin, $text[0]) && $text[0][margin] == 'margin_small') ? '' : 'margin-top: 20px; margin-bottom: 20px;').'">'."\n";
+          echo $offset.'<table class="tools-class-text" border="0" style="'.( (array_key_exists( margin, $text[0]) && $text[0][margin] == 'margin_small') ? '' : 'margin-top: 20px; margin-bottom: 20px;').'" cellspacing="0" cellpadding="0">'."\n";
         }
         break;
       case 'figure':
@@ -1916,7 +1916,6 @@
         
         foreach ($text[bullet_ary] as $value)
         {
-          //%!echo $offset.'  <tr> <td valign="top"> <p style="padding-left: 0px; margin: 0 0px 0px; color: #505050;">&bull;</p> </td>'."\n";
           echo $offset.'  <tr> <td valign="top"> <p style="padding-left: 0px; margin: 0 0px 0px;">&bull;</p> </td>'."\n";
           echo $offset.'    <td valign="top"> <p style="padding-left: 0px; margin: 0 5px 0px;">'."\n";
           echo $offset.'      '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value)).'</p> </td> </tr>'."\n";
@@ -1937,15 +1936,9 @@
               // #: Generate the site name from the "$value_ary[jump_name]".
               if (To_f_Site( $site_name, $value_ary[jump_name]))
                 ;
-              //%!$parts = explode( ':', $value_ary[jump_name]);
-              //%!$site_name = ($parts[0]).':'.($parts[1]).':'.($parts[2]);
-              //print_r( $site_name);
-
               // #?: Is "title_site" is undefined? Set "title_site".
               if (!array_key_exists( title_site, $value_ary))
                 $value_ary[title_site] = $Glo_g_Site_ary[$site_name][text_titel_short];
-              //print_r( $value_ary[title_site]);
-
               // #?: Is "$site_name" not the activ site name?
               if ($site_name != $Glo_g_Site_activ)
                 $value_ary[jump_url] = $Glo_g_Site_ary[$site_name][url_rel];
@@ -1962,17 +1955,24 @@
                 $value_ary[jump_anchor] = $value_ary[jump_name];
               }
             }
-            
-            //echo '$Glo_g_Site_activ: "'; print_r( $Glo_g_Site_activ); echo '", ';
-            //echo '$site_name: "'; print_r( $site_name); echo '"<br>';
-            
+
+            echo $offset.'  <tr> <td valign="top"> <p style="padding-left: 0px; margin: 0 0px 0px;">'.(((array_key_exists( type, $value_ary) && $value_ary[type] == 'back')) ? '&larr;' : '&rarr;').'</p> </td>'."\n";
+            echo $offset.'    <td valign="top"> <p style="padding-left: 0px; margin: 0 12px 0px;">'."\n";
+            echo $offset.'      ';
             // #?: Is URL?
-            // #?: If site is not the activ one or is URL defined?
+            // #?: If site is not the active one or is URL defined?
             if ((!array_key_exists(jump_anchor, $value_ary)) || (isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || (array_key_exists( jump_url, $value_ary)))
-              //%!echo $offset.'  &rarr; &nbsp; <a href="'.($value_ary[jump_url]).( (array_key_exists( jump_anchor, $value_ary)) ? '#'.($value_ary[jump_anchor]) : '').'" style="color: #505050;">'.((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')).'</a>'.((array_key_exists( title_chapter, $value_ary) && ($value_ary[title_site] != '')) ? ' &mdash; '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')) : '').'<br>'."\n";
-              echo $offset.'  '.(((array_key_exists( type, $value_ary) && $value_ary[type] == 'back')) ? '&larr;' : '&rarr;').' &nbsp; <a href="'.(array_key_exists( jump_url, $value_ary) ? $value_ary[jump_url] : '').( (array_key_exists( jump_anchor, $value_ary)) ? '#'.($value_ary[jump_anchor]) : '').'" style="color: #505050;">'.((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')).'</a>'.((array_key_exists( title_chapter, $value_ary) && ($value_ary[title_site] != '')) ? ' &mdash; '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')) : '').'<br>'."\n";
+              echo $offset.'      <a href="'.(array_key_exists( jump_url, $value_ary) ? $value_ary[jump_url] : '').( (array_key_exists( jump_anchor, $value_ary)) ? '#'.($value_ary[jump_anchor]) : '').'">'.((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')).'</a>'.((array_key_exists( title_chapter, $value_ary) && ($value_ary[title_site] != '')) ? ' &mdash; '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')) : '');
             else
-              echo $offset.'  '.(((array_key_exists( type, $value_ary) && $value_ary[type] == 'back')) ? '&larr;' : '&rarr;').' &nbsp; '.(To_f_anchor_Jump_html( ((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_site])), ((array_key_exists(jump_anchor, $value_ary)) ? $value_ary[jump_anchor] : ''), '505050', $replace_ary, $replace_preg_ary))/*.((array_key_exists( title_chapter, $value_ary) && ($value_ary[title_site] != '')) ? ' &mdash; '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_site])) : '')*/.'<br>'."\n";
+              echo $offset.'      '.(To_f_anchor_Jump_html( ((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_site])), ((array_key_exists(jump_anchor, $value_ary)) ? $value_ary[jump_anchor] : ''), '', $replace_ary, $replace_preg_ary));
+            echo '</p> </td> </tr>'."\n";
+            
+            /* // #?: Is URL?
+            // #?: If site is not the active one or is URL defined?
+            if ((!array_key_exists(jump_anchor, $value_ary)) || (isset( $site_name, $Glo_g_Site_activ) && ($site_name != $Glo_g_Site_activ)) || (array_key_exists( jump_url, $value_ary)))
+              echo $offset.'  '.(((array_key_exists( type, $value_ary) && $value_ary[type] == 'back')) ? '&larr;' : '&rarr;').' &nbsp; <a href="'.(array_key_exists( jump_url, $value_ary) ? $value_ary[jump_url] : '').( (array_key_exists( jump_anchor, $value_ary)) ? '#'.($value_ary[jump_anchor]) : '').'">'.((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')).'</a>'.((array_key_exists( title_chapter, $value_ary) && ($value_ary[title_site] != '')) ? ' &mdash; '.(To_f_Text_replace_html( $replace_ary, $replace_preg_ary, '<i>'.($value_ary[title_site]).'</i>')) : '').'<br>'."\n";
+            else
+              echo $offset.'  '.(((array_key_exists( type, $value_ary) && $value_ary[type] == 'back')) ? '&larr;' : '&rarr;').' &nbsp; '.(To_f_anchor_Jump_html( ((array_key_exists( title_chapter, $value_ary)) ? To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_chapter]) : To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $value_ary[title_site])), ((array_key_exists(jump_anchor, $value_ary)) ? $value_ary[jump_anchor] : ''), '', $replace_ary, $replace_preg_ary)).'<br>'."\n"; */
           }
           
         break;
@@ -2342,7 +2342,7 @@
       case 'jumplist':
         // #?: Is an element in array?
         if (0 < count( $text))
-          echo $offset.'</p>'."\n";
+          echo $offset.'</table>'."\n";
         break;
       case 'figure':
       case 'youtube':

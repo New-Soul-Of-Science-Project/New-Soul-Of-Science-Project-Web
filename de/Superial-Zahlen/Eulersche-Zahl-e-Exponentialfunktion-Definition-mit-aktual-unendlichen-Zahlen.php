@@ -16,8 +16,6 @@
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '• Meine Herleitung der \lm{ \e }-Funktion mit Hilfe von Superial-Zahlen stammt aus dem Jahr 2001: siehe Datei "superial zahlen (26).pdf".',
-                    '\bold{Ideen}',
-                    '• Wie leiten wir \lm{ \e_{\s} } mit Integralen her?',
                     '\bold{Verbesserungen}',
                     '• Erwähnen, dass \lm{ \e_{\s} } keine einfache Superial-Zahl ist, sondern zu einer Superial-Zahlen Art gehört, bei der unter anderem auch aktual unendlich kleine Potenzen der superialen Basis wie \lm{ \s^{-\s} } erlaubt sind.',
                     ))),
@@ -354,7 +352,7 @@
                   array( 'text', array( text => array(
                     'Die Berechnung weiterer Anteile erspare ich mir für den Moment.'."\n",
                       'Aber wir können erahnen und logischerweise sogar absolut sicher sein, dass sich für den Summanden mit der höchsten'."\n".
-                    'Potenz nach und nach die Glieder der Taylorreihe\color{*Bearb}{(Verweis)} ergeben,'."\n".
+                    'Potenz nach und nach die Glieder der Taylorreihe ergeben,'."\n".
                     'die summiert zur Eulerschen Zahl \lm{ \e } führen.'."\n".
                     ''))),
 
@@ -505,7 +503,7 @@
                     ))),
 
                   array( 'text', array( text => array(
-                    'Hier können wir nun erkennen und logischerweise sogar absolut sicher sein, dass sich im Endlichen die Taylorreihe\color{*Bearb}{(Verweis)}'."\n".
+                    'Hier können wir nun erkennen und logischerweise sogar absolut sicher sein, dass sich im Endlichen die Taylorreihe\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Taylorreihe:2024}.}'."\n".
                     'zur Eulerschen Zahl \lm{ \e } ergibt.'."\n",
                     ''))),
                   array( 'equations',
@@ -557,12 +555,118 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Transzendenz-der-eulerschen-Zahl-e'),
+                      array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-e-Funktion-aus-dem-Integral'),
                     )),
               )
           ); ?>
 		    	<br>
           <?php To_f_headline_add_hides_end_line(); ?>
+
+
+          <!  • Die e-Funktion aus dem Integral  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-e-Funktion-aus-dem-Integral',
+              'Eine Funktion, die Integriert sich selbst ergibt', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion', type => 'back'),
+                    )),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    '• Wie ich gerade wiederentdeckt habe (07.11.2024), hatte ich diese Analyse und Rechnungen zur \lm{ \e }-Funktion in der Integration mit Hilfe von Superial-Zahlen nicht nur gestern erneut gemacht, sondern spätestens schon mal am 03.11.2001 und vermutlich noch früher, was ich in älteren Dateien noch überprüfen kann: siehe Datei "superial zahlen (26).pdf", S. 18.',
+                    '– Am 15.07.2001 existierte es schon in: "superial zahlen (23).pdf", S. 17.',
+                    '– Ältere Dateien sind im uralten QuarkXPress-Format und für mich im Moment leider nicht zu öffnen, da damals nicht als PDF gespeichert.',
+                    '⋅ Konvertierungsmöglichkeiten hier: \url{https://forum.affinity.serif.com/index.php?/topic/141257-open-quarkxpress-files-in-publisher/}',
+                    '⋅ Oder ich muss einen alten Mac aktivieren …',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Soll eine Funktion nun ihr eigenes Integral sein, dann gilt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  f(x)  :=  f(a) + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f\'(k) *〉  }',
+                                          label_text => '\jumpname{OM:SupNum:Ableitungen-Integrale:Integration:Equ-Def-Integrale-mit-s-hoch-minus-Eins-Kurznotation}', label_incr => true),
+                      array( display => 'on',  latex => '{  f\'(x)  =  f(x)  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  f(x)  =  f(a) + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 f(k) *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \e_{\s}^{x}  =  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  }',
+                                          label_text => '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem}', label_incr => true),
+                      array( display => 'on',  latex => '{  f(x)  =  \e_{\s}^{x}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \e_{\s}^{x}  =  \e_{\s}^{a} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 \e_{\s}^{k} *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \e_{\s}^{x}  =  \e_{\s}^{a} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ \e_{\s}^{k} }{ \s }  }'),
+                      array( display => 'on',  latex => '{  f(x)  =  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 *( 1 + \frac{ 1 }{ \s } *)^{k \s} *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! *( *( 1 + \frac{ 1 }{ \s } *)^{k \s} \cdot \frac{ 1 }{ \s } *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( 1 + \frac{ 1 }{ \s } *)^{x \s}  =  *( 1 + \frac{ 1 }{ \s } *)^{a \s} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! \frac{ *( 1 + \frac{ 1 }{ \s } *)^{k \s} }{ \s }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉^{*〈 x *〉_{1}}  =  *〈 1 *〉․*〈 1 *〉^{*〈 a *〉_{1}} + \!\!\! \sum_{ \forall k \in [a, x[_{\mathbb{S}^{-1}_{\Z}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{*〈 k *〉_{1}} *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Schauen wir uns dies doch einmal im ganz weit rein gezoomten Exponenten an.'."\n".
+                    'So, wie wir oben gesehen haben, dass die \lm{ \e }-Funktion bei aktual unendlich kleinem Exponenten ein Pascalsches Dreieck bildet'."\n".
+                    'beziehungsweise superialen Binomialkoeffizienten entspringt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  x \in \mathbb{A}_{\S}  \to  *〈 x *〉․*〈 n *〉 \in \mathbb{S}_{\N}^{-1}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n  \in  \mathbb{N}  }'),
+                      array( display => 'on',  latex => '{  a = 0  \land  x = 0  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{*〈 *〈 n *〉_{-1} *〉_{1}}  =  *〈 1 *〉․*〈 1 *〉^{*〈 0 *〉_{1}} + \!\!\! \sum_{ \forall k \in [0, *〈 n *〉_{-1}[_{\mathbb{S}_{\Z}^{-1}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{*〈 k *〉_{1}} *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉^{n}  =  1 + \!\!\! \sum_{ \forall k \in [0, n[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Nun können wir Beispielhaft überprüfen, ob dies stimmt.'."\n".
+                    'Dazu fangen wir einfach mit den ersten natürlichen Zahlen in \lm{ n \in \mathbb{N} } an:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.EuIn', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n  =  0  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{0}  =  1 + \!\!\! \sum_{ \forall k \in [0, 0[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  1  =  1 + 0  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  1  =  1  }'),
+                      array( display => 'on',  latex => '{  n  =  1  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{1}  =  1 + \!\!\! \sum_{ \forall k \in [0, 1[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉  =  1 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 0} *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉  =  1 \, + \, .*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉  =  *〈 1 *〉.*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  n  =  2  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{2}  =  1 + \!\!\! \sum_{ \forall k \in [0, 2[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 2 *〉*〈 1 *〉  =  1 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 0} *〉 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 1} *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 2 *〉*〈 1 *〉  =  1 \, + \, .*〈 1 *〉 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉 *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 2 *〉*〈 1 *〉  =  *〈 1 *〉.*〈 1 *〉 \, + \, .*〈 1 *〉*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 2 *〉*〈 1 *〉  =  *〈 1 *〉.*〈 2 *〉*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  n  =  3  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *〈 1 *〉․*〈 1 *〉^{3}  =  1 + \!\!\! \sum_{ \forall k \in [0, 3[_{\mathbb{N}} }  \!\!\! .*〈 *〈 1 *〉․*〈 1 *〉^{ k} *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 1 *〉^{3}  =  1 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 0} *〉 \\\ \qquad\qquad\qquad\qquad\quad\;\;\, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 1} *〉 \, + \, .*〈 *〈 1 *〉․*〈 1 *〉^{ 2} *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 3 *〉*〈 3 *〉*〈 1 *〉  =  1 \, + \, .*〈 2 *〉*〈 1 *〉 \, + \, .*〈 *〈 1 *〉․*〈 2 *〉*〈 1 *〉 *〉  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 3 *〉*〈 3 *〉*〈 1 *〉  =  *〈 1 *〉.*〈 2 *〉*〈 1 *〉 \, + \, . *〈 1 *〉*〈 2 *〉*〈 1 *〉  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *〈 1 *〉․*〈 3 *〉*〈 3 *〉*〈 1 *〉  =  *〈 1 *〉.*〈 3 *〉*〈 3 *〉*〈 1 *〉  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auch, wenn dies noch kein Beweis ist, so können wir doch unschwer erkennen, dass die Summe des Integrals genau das Ergebnis'."\n".
+                    'erzeugt, welches wir für die \lm{ \e_{\s} }-Funktion aus dem Abschnitt \italic{›\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:eFunktionPascalscheDreieck}‹}'."\n".
+                    'schon kennen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-e-Funktion-aus-dem-Integral:X', text =>
+                      
+                'Allgemeiner Beweis', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-Transzendenz-der-eulerschen-Zahl-e'),
+                    )),
+              )
+          ); ?>
 
 
           <!  • Die Transzendenz der eulerschen Zahl e  >
@@ -571,7 +675,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-e-Funktion-aus-dem-Integral', type => 'back'),
                     )),
 
                   array( 'notice', array( Display => 'showContent', text => array(

@@ -53,7 +53,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a *o( x + 1 *o) b  :=  \underset{ (\forall n \in \mathbb{N})[0 \le n < b] }{ \huge{\circledcirc} } \;\; *o( x *o) a  }',
+                      array( display => 'on',  latex => '{  a *o( x + 1 *o) b  :=  \underset{ (\forall n \in \mathbb{N})[0 \le n < b] }{ \LARGE{\circledcirc} } \;\; *o( x *o) a  }',
                                                /* label_name => 'OM:OT:Einleitung:Vortext:Equ-Operial-Absolut', */label_text => '\\jumpname{OM:OT:Einleitung:Vortext:Equ-Operial-Absolut}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -62,7 +62,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \underset{ (\forall n \in \mathbb{N})[0 \le n < b] }{ \huge{\circledcirc} } \;\; *o( i *o) a  =  a *o( i + 1 *o) b  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \underset{ (\forall n \in \mathbb{N})[0 \le n < b] }{ \LARGE{\circledcirc} } \;\; *o( i *o) a  =  a *o( i + 1 *o) b  }',
                                                label_name => 'OM:OT:Modulo-Operatoren:Vortext:Equ-Operial-i-Absolut', label_text => '\\name{OM:OT:Modulo-Operatoren:Vortext:Equ-Operial-i-Absolut}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -84,7 +84,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'OT.ModO', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \underset{ (\forall n \in \mathbb{N})[0 \le n < b] }{ \huge{\circledcirc} } \;\; *o( i *o) a  :=  b \mod a  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \underset{ (\forall n \in \mathbb{N})[0 \le n < b] }{ \LARGE{\circledcirc} } \;\; *o( i *o) a  :=  b \mod a  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     ''."\n",

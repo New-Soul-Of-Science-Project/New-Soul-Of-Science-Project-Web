@@ -16,6 +16,13 @@
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // !!! '• Zu Untersuchungen diesbezüglich, siehe Ordner "Sandkuhl, Jan". Er hat dort diverse Hinweise darauf gegeben. Mal durchschauen.',
                     '\\bold{Entstehung von Verspannungen}',
+                    '• Entspannung und Erschlaffung sind nicht das Gleiche!',
+                    '– Entspannt sind wir dann, wenn wir nicht verspannt sind, aber eine flexible muskuläre Grundspannung haben, die uns Kraft verleiht und leicht und schnell agieren und reagieren lässt.',
+                    '– Erschlaffung ist eine übermäßig zu niedrige muskuläre Grundspannung.',
+                    '• Woher kommen viele Verspannungen:',
+                    '– Verspannungen entstehen sehr oft durch Erschlaffen von Muskulatur, bei der die Aktivierung der Muskulatur, die Grundspannung oder der muskuläre Grundtonus, zu stark reduziert ist.',
+                    '– Dies kommt, weil dann etwas tiefere Schichten des Unterbewusstsein, durch eine Verkürzung und Verhärtung des Fasziengewebes, quasi ein Notprogramm der Stabilisierung des Körpers auslösen. Dies ist allerdings etwas ganz anderes, als der muskuläre Grundtonus, weil die Flexibilität und die dynamische Kraft reduziert sind.',
+                    '– Der muskuläre Grundtonus ist in höheren Schichten des Unterbewusstseins angesiedelt, als die Verspannungen des Fasziengewebes.',
                     '• Siehe auch besonders \\italic{\\jumpname{OM:SpaLeb:Psychosomatik:Betaeubt-Gelaehmt}}. Auch für die \\jumpname{OM:SpaLeb:Psychosomatik-Stress:Problemloesungsansaetze}.',
                     '\\bold{Zwerchfellverspanung:}',
                     '• Gute Infos: \\jump[https://yoga-body.de/zwerchfell/]{}{yoga-body.de – ZWERCHFELL – DIE 1 WICHTIGE URSACHE FÜR SCHMERZEN IM GANZEN KÖRPER – TEST – IST DEIN ZWERCHFELL VERSPANNT?}',

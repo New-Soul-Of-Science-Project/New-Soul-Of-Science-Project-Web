@@ -1829,9 +1829,14 @@
                   array( 'headline', array( jump_name => 'OM:FrQFT:NeuePhysik:Relativitaet:ART-MP', text =>
                                            
                 'Allgemeine Relativitätstheorie, Machsches Prinzip und Kosmologisches Prinzip')),
+
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '• Hier einflechten, dass die gekrümmte Raumzeit aus dem euklidisch flachen Wirkungsquanten-Bewegungsraum und aus dem dazu gekrümmt erscheinenden Lichtbewegungsraum besteht.',
+                    '• Dass es einen bevorzugtes Bezugssystem gibt, sehen wir am Mikrowellenhintergrund, der in unserer Bewegungsrichtung im Kosmos entsprechend rot-blau-verschoben ist, siehe Video von Sabine Hossenfelder – \jump[https://www.youtube.com/watch?v=Zf7H7P8QrGo]{}{Space-Filling Aether Theory Makes Comeback}.',
+                    '– Sie kommentiert darin, dass es zunehmend Arbeiten zu sogenannten Einstein-Äthertheorien (das erste Mal am 08.11.2024 gesehen) gibt, die zumindestens in wesentlichen Teilen mit der ART kompatibel sind und ein räumliches und zeitliches Bezugssystem mit einer Normalzeit haben. In diesen ist offenbar Gleichzeitigkeit definiert.\footnote{Vgl. \cite{wiki:Einstein-aether-theory:2024}.}',
+                    '– Duplikat im Abschnitt ›Taburelativierung: Medium des Lichts‹ – \jumpname{OM:FrQFT:Einleitung:Fundierung}.',
                     ))),
+
                   array( 'text', array( text => array(
                     'Bei Einsteins Allgemeiner Relativitätstheorie\\footnote{\\const{FrQFT_g_footnote_text_ART}} handelt es sich um eine einfache, geometrische Sicht der Gravitation.'."\n".
                     'Sie stellt, wie seine Spezielle Relativitätstheorie, das Relativitätsprinzip in den Mittelpunkt und verzichtet daher auf die Existenz des ausgezeichneten Bezugssystems eines Licht-Materie-Mediums.'."\n".

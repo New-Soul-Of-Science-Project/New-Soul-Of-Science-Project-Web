@@ -291,8 +291,8 @@
                   '')),
                   array( 'text', array( text => array(
                     'Aus der Kundalini\\color{*Bearb}{(Verweis aufs Yogawiki \\jump[https://wiki.yoga-vidya.de/Kundalini]{}{Kundalini} und \\jump[https://www.yoga-vidya.de/kundalini-yoga/]{}{Kundalini Yoga})}'."\n".
-                    'Tradition des Tantra, auch Kundalini Yoga, ist ein Prozess bekannt, der zur Heilung durch Weisheit und Erleuchtung führen soll, der Kundalini-Prozess.'."\n".
-                    'Tradition, auch Kundalini Yoga, ist ein Prozess bekannt, der zur Heilung durch Weisheit und Erleuchtung führen soll, der Kundalini-Prozess.'."\n"))),
+                    'Tradition des Tantra, auch im Kundalini Yoga, ist ein Prozess bekannt, der zur Heilung durch Weisheit und Erleuchtung führen soll, der Kundalini-Prozess.'."\n".
+                    ''))),
                       
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
                     array_merge( $SpaLeb_g_figure_ary_KundaliniProzess, array( name => 'OM:SpaLeb:Psychosomatik:Vortext:Fig-Kundalini-Prozess',
