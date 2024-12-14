@@ -25,11 +25,13 @@
                       
                   array( 'text', array( text => array(
                     'Ausgangspunkt der Biordinalzahlen sind die Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}}.'."\n".
-                    'Bei den Elementen der Menge der Ordinalzahlen \lm{ \mathbb{On} } handelt es sich um die Fortsetzung des Zählens oder der uns allgemein bekannten Anzahl von Dingen ins Aktual-Unendliche.'."\n",
+                    'Bei den Elementen der echten Klasse der Ordinalzahlen \lm{ \mathbb{On} }\footnote{Alle Ordinalzahlen als Ganzes ist eine echte Klasse und keine(!) Menge: \\\\ \const{BiOrd_g_footnote_text_OrdinalzahlLimeszahlen}}'."\n".
+                    'handelt es sich um die Fortsetzung des Zählens oder der uns allgemein bekannten Anzahl von Dingen ins Aktual-Unendliche.'."\n",
                       'Die nachfolgend eingeführten Biordinalzahlen erweitern das Zählen (Vorwärtszählen) um das Rückwärtszählen von jeder Zahl aus bis in den negativen Bereich.'."\n".
                     'Das bedeutet, dass das Rückwärtszählen und die Subtraktion innerhalb der Biordinalzahlen vollständig definiert sind,'."\n".
                     'was innerhalb der Ordinalzahlen nicht der Fall ist.'."\n",
-                      'Die Elemente der Menge der Biordinalzahlen \lm{ \mathbb{Bn} } definieren so nicht nur die Anzahlen, die vorhanden sind,'."\n".
+                      'Die Elemente der echten Klasse der Biordinalzahlen \lm{ \mathbb{Bn} }\footnote{Die Biordinalzahlen sind eine echte Klasse und damit keine(!) Menge, weil sie echte Klassen enthalten und nicht nur Mengen, denn Mengen dürfen nur Mengen enthalten. So ist die \lm{ -1 = \mathbb{U} \setminus 1 = \mathbb{U} \setminus *\{ 0 *\} } eine echte Klasse, also keine Menge, sondern nach unserer Definition eine Antimenge, und Element der Biordinalzahlen.}'."\n".
+                    'definieren so nicht nur die Anzahlen, die vorhanden sind,'."\n".
                     'sondern auch die Anzahlen, die an etwas vollständigem Fehlen, wie wir sehen werden.'."\n".
                     'Durch die Erweiterung werden die Ordinalzahlen als Biordinalzahlen zu einem algebraischen Ring\footnote{\const{NSOSP_g_footnote_text_RingAlgebra}}.'."\n".
                     'Denn nun sind in den Biordinalzahlen die Addition und vollständige Subtraktion und ihr neutrales Element „Null“'."\n".
