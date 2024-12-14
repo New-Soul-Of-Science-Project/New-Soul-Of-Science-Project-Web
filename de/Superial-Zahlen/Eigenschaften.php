@@ -125,15 +125,22 @@
                     'Das bedeutet, sie muss \jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{ohne ihre Nachkommastellen, welcher Art auch immer, die gleiche Zahl}'."\n".
                     'bleiben, wie in Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich} definiert.'."\n".
                     'Denn nur dann lässt sich das Zählen bis ins aktual unendliche und darüber hinaus definieren.'."\n",
-                      'In unserem Fall ist die ganze Zahl \lm{ a \cdot \s } dann natürlich von der aktual unendlichen Größenordnung von \lm{ \s }.'."\n".
+                      'In unserem Fall ist die ganze Zahl \lm{ a \cdot \s } dann natürlich von der aktual unendlichen Größenordnung von \lm{ \s }, ohne endlichen Summanden.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', text => array(
                       '\\\\'."\n".
                       'Es existiere also die Menge'."\n".
+                      '\\\\ \color{*Bearb}{(Wie stellen wir sicher, dass es keinen endlichen Summanden in \lm{ a \cdot \s } gibt?! Denn wegen der Anwesenheit transzendenter Zahlen in \lm{ \mathbb{R} } könnten darin Zahlen wie \lm{ b + z \cdot \s^{-1} }, mit \lm{ b \in \mathbb{A} } und \lm{ z \in \mathbb{Z} }, vorhanden sein. Diese geben im Produkt dann \lm{ *( b + z \cdot \s^{-1} *) \cdot \s = b \cdot \s + z } auch eine ganze Zahl, die aber einen endlichen Summanden enthält und deren Faktor deshalb kein sinnvoller Koeffizient ist.)}'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall y \in \mathbb{S} *)  *[  a_{i}  =  \left\lfloor \frac{ y }{ \s^{i} } \right\rfloor  -  \left\lfloor \frac{ y }{ \s^{i + 1} } \right\rfloor \cdot \s  *]  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  y  =  b + z \cdot \s^{-1}  =  *〈 b *〉.*〈 z *〉  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  a_{0}  =  \left\lfloor \frac{ *〈 b *〉.*〈 z *〉 }{ \s^{0} } \right\rfloor  -  \left\lfloor \frac{ *〈 b *〉.*〈 z *〉 }{ \s^{1} } \right\rfloor \cdot \s  }',
+                                          label_text => 'X', label_incr => false),
                       array( display => 'on',  latex => '{  \exists \mathbb{A}_{\S}\!: *( \forall a \in \mathbb{R}\!:  a \cdot \s \in \mathbb{N}_{\infty}  \Rightarrow  a \in \mathbb{A}_{\S} *)  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
@@ -145,8 +152,8 @@
                     'Diese Definition erfüllt die genannten Bedingungen an die sinnvollen Koeffizienten der Superial-Zahlen:'."\n".
                     'Das ein Koeffizient nicht unendlich positiv oder negativ groß sein kann, wird durch die Auswahl der Elemente aus'."\n".
                     '\lm{ \mathbb{R} } garantiert.'."\n".
-                    'Das er keine unendlich kleinen Summanden enthält, wird durch die Bedingung gegeben, dass sein Produkt mit \lm{ \s }'."\n".
-                    'ganzzahlig sein muss.'."\n",
+                    '\color{*Bearb}{Das er keine unendlich kleinen Summanden enthält, wird durch die Bedingung gegeben, dass sein Produkt mit \lm{ \s }'."\n".
+                    'ganzzahlig sein muss.}'."\n",
                       'Stellt sich also die Frage:'."\n".
                     'Welche uns bekannte Menge entspricht \lm{ \mathbb{A}_{\S} } dann?'."\n".
                     'Wie wir sehen werden, ist diese Frage nicht so schnell ganz genau zu beantworten.'."\n".
@@ -848,7 +855,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Nullstellen von Polynomen ersten bis vierten Grades sind sinnvolle Koeffizienten der Superial-Zahlen} \\\\'."\n".
-                  // '\cond{XXX} \\\\'."\n".
+                  // '\cond{X} \\\\'."\n".
                     'Zu algebraischen Zahlen, die Nullstellen von Polynomen ersten bis vierten Grades entsprechen, finden wir in Wikipedia:'."\n".
                     ''))),
                       
@@ -1316,15 +1323,182 @@
                 'Die superiale Basis \lm{ \s } und die Menge \lm{ \mathbb{S} } haben einen ganz bemerkenswerten Zusammenhang', subline =>
                   '')),
                       
-                  array( 'notice', array( Display => 'hideContent', text => array(
+                  /* array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Bemerkenswerte Doppelung}',
                     '• Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} zeigt uns mit \lm{ \# \mathbb{A}_{\S} = \s }, dass die Menge aller sinnvollen Koeffizienten der Superial-Zahlen die gleiche Anzahl enthalten muss, wie die Menge der superial kleinen ganzen Zahlen von der Null bis ohne die Eins \lm{ \# *( \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} *) = \s }.',
                     '– Dabei gibt es in der Menge \lm{ \mathbb{A}_{\S} } nur endliche Werte, während in der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } die weit überwiegende Mehrheit der Elemente aktual unendlich kleine Summanden trägt.',
                     '– Es ist, als wenn in der Geometrie die Anzahl \lm{ \s } an Entitäten – Existenzen – im endlichen in der Menge \lm{ \mathbb{A}_{\S} } nicht dichter gepackt werden kann. Beim Versucht, die gleiche Anzahl an Entitäten auf kleineren Raum, also enger, zu packen, wie bei \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} }, müssen dann Anteile aktual unendlich kleiner Summanden herausfallen.',
                     '⋅ Dies passt zu \italic{›\jumpname{OM:SupNum:Struktur-Geometrie}‹}.',
                     '⋅ Dies würde auch zur \italic{›\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}‹} und zur \italic{›\jumpname{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}‹} passen.',
-                    ))),
+                    ))), */
                       
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
+                Title => '\small{Experimenteller neuer Ansatz …}',
+                TitleVis => 'Experimenteller neuer Ansatz:', ParagraphList => array(
+
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:X', text =>
+                      
+                'Die superiale Basis \lm{ \s } hat bezüglich der Struktur des Aktual-Unendlichen eine doppelte Bedeutung', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Bezüglich der Anzahl von Zahlen in Mengen kommt die superiale Basis \lm{ \s } in zwei sehr ähnlichen und doch ganz unterschiedlichen Zusammenhängen vor,'."\n".
+                    'die in der Gegenüberstellung aufhorchen lassen und nachdenklich machen können.'."\n".
+                    'Eine bemerkenswerte Doppelung, wie ich finde.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Eine bemerkenswerte Doppelung} \\\\'."\n".
+                    'Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} zeigt uns mit \lm{ \# \mathbb{A}_{\S} = \s },'."\n".
+                    'dass die Menge aller \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} die gleiche Anzahl an Elementen enthalten muss,'."\n".
+                    'wie die Menge der superial kleinen ganzen Zahlen von der Null bis ohne die Eins \lm{ \# *( \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} *) = \s }.'."\n",
+                      'Interessant ist dabei, dass in der Menge \lm{ \mathbb{A}_{\S} } nur endliche Werte existieren, während in der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} }'."\n".
+                    'die weit überwiegende Mehrheit der Elemente aktual unendlich kleine Summanden beinhaltet.'."\n".
+                    'Es ist, als wenn in der Geometrie die Anzahl \lm{ \s } an Entitäten – Existenzen – im endlichen auf einer endlosen Geraden, die den Zahlen der Menge \lm{ \mathbb{A}_{\S} } entsprechen,'."\n".
+                    'nicht dichter gepackt werden kann.'."\n".
+                    'Bei dem Versucht, die gleiche Anzahl an Entitäten auf kleinerem Raum – also dichter oder enger – zu packen, wie wir dies bei \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } tun,'."\n".
+                    'müssen folglich Anteile aktual unendlich kleiner Summanden herausfallen.'."\n".
+                    'Diese aktual unendlich kleinen Summanden, sind ganze Zahlen im superial Kleinen.'."\n",
+                      'Erstere, die Zahlen der Menge \lm{ \mathbb{A}_{\S} }, können – zumindest im Rahmen der Superial-Zahlen – als die Zahlen unseres Zahlengeraden'."\n".
+                    'verstanden werden. also als die Grundlage unserer Geometrie im Endlichen.'."\n",
+                      'Letztere, superial kleinen ganzen Zahlen der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } und deren Erweiterung auf den ganzen Zahlenstrahl,'."\n".
+                    'spielen dann die zentrale Rolle in der \jump{OM:SupNum:Ableitungen-Integrale}{Differenzialrechnung} auf Basis von Superial-Zahlen,'."\n".
+                    'zum einen in den Differenzen der Ableitung und sodann auch bei der Integration, wo die superial kleinen ganzen Zahlen'."\n".
+                    'als Indizes der Summenglieder auftreten.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Existenz der maximalen Dichte der Zahlengeraden} \\\\'."\n".
+                    'Die Vorstellung, dass eine weitere Verdichtung der maximaldichten Zahlengeraden zum „herausfallen“ aktual unendlich kleiner ganzer Summanden führt,'."\n".
+                    'passt dann genau zu unserer Feststellung auf der Seite \italic{›\jumpname{OM:SupNum:Struktur-Geometrie}‹}.'."\n".
+                    'Dort teilen wir die Strecke von der Null bis zur Eins mit Hilfe unserer endlichen Primzahlen jeweils bis zur Potenz der vollständigen Induktion \lm{ ω }.'."\n".
+                    'Wir stellen fest, dass wir diese Strecke nicht sinnvoll noch feiner mit Hilfe endlicher Primzahlen teilen können.'."\n".
+                    'Und wir erkennen durch den Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung},'."\n".
+                    'dass wir durch deren Potenz \lm{ ω } eine Feinheit der Teilung erreichen,'."\n".
+                    'die nachweislich auch alle durch Radikale darstellbaren reell algebraischen Zahlen umfasst, wenn nicht sogar'."\n".
+                    '\jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{alle reell algebraischen Zahlen}.'."\n",
+                      'Dies würde damit dann eben auch mathematisch perfekt zur \italic{›\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}‹}'."\n".
+                    'und zur \italic{›\jumpname{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}‹} passen, was ja beides noch zu beweisen ist.'."\n",
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Tiefer Zusammenhang zwischen den Primzahlen und den sinnvollen Koeffizienten der Superial-Zahlen} \\\\'."\n".
+                  '\cond{Möglicherweise sogar zwischen den Primzahlen und den reell algebraischen Zahlen} \\\\'."\n".
+                    'Entspricht die Menge \lm{ \mathbb{A}_{\S} } tatsächlich der Menge aller reell algebraischen Zahlen \lm{ \mathbb{A} },'."\n".
+                    'dann werden diese in eine sehr enge existenzielle Beziehung mit den endlichen Primzahlen gebracht, die ich bisher noch nicht gesehen habe'."\n".
+                    'und die Anlass zu der Annahme gibt, dass wir diese in Zukunft noch detaillierter formulieren können sollten.'."\n",
+                      'Klar ist schon, dass das Raster des Primzahl-Flächenproduktes von \lm{ \s } aufs engste mit den sinnvollen Koeffizienten'."\n".
+                    'der Superial-Zahlen \lm{ \mathbb{A}_{\S} } – und, wenn \lm{ \mathbb{A}_{\S} ?= \mathbb{A} }, mit den reell algebraischen Zahlen \lm{ \mathbb{A} } – verwoben sein muss.'."\n".
+                    '\color{*Bearb}{(Denn \lm{ a \cdot \s } müssen nach Formel \color{*Bearb}{(In Arbeit …)} ganze Zahl sein, siehe \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen}.)}'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Die Ähnlichkeit} \\\\'."\n".
+                    'Beide Mengen können wir mit sehr ähnlichen Definitionen beschreiben, an denen wir auch recht schnell erkennen können,'."\n".
+                    'dass sie tatsächlich die gleiche Anzahl an Elementen beinhalten müssen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  =  \\\ \qquad *\{  x  *|*  *( \forall z \in \mathbb{Z} *) *( \forall u \in [ 0, 1 [_{\mathbb{A}_{\S}} *)  *[  x = z + u  *]  *\}  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z}', label_incr => false),
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}_{\N}^{-1}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n \cdot \s^{-1}  &  \text{ falls } a = 0  \\\\  a + z \cdot \s^{-1}  &  \text{ falls } 0 < a < 1  \\\\  1 + z^{-} \cdot \s^{-1}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  [0, \s[_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < 1  \\\\  \s + z^{-}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Auffällig ist, dass bei der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } zu Beginn und am Ende'."\n".
+                    'die ganzen Zahlen in \lm{ \mathbb{N} } und \lm{ \mathbb{Z}^{-} } aufgespalten sind und mitten drinne ganz \lm{ \mathbb{Z} } '."\n".
+                    'unendlich oft durchlaufen, jedoch \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } nur ein Mal durchlaufen wird.'."\n",
+                      'Während die ganzen Zahlen \lm{ \mathbb{Z} } bei \lm{ \mathbb{A}_{\S} } nur ein Mal komplett durchlaufen wird'."\n".
+                    '\lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } hingegen unendlich oft.'."\n",
+                      'Wenn nun aber beide Mengen die gleiche Anzahl an Elementen, sprich Zahlen, haben, dann stellt sich die Frage,'."\n".
+                    'ob und wie wir die Mengen aufeinander abbilden können.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Die Bedeutung beider Mengen im Stellenwertsystem der Superial-Zahlen} \\\\'."\n".
+                    'Die Menge \lm{ \mathbb{A}_{\S} } steht im \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem}\footnote{\const{SupNum_g_footnote_text_Stellenwertsystem}}'."\n".
+                    'für alle sinnvollen Koeffizienten,'."\n".
+                    'dann entspricht die Anzahl ihrer Elemente quasi der Anzahl der möglichen Ziffern, nämlich \lm{ \s }.'."\n".
+                    'Da macht es natürlich Sinn, dass es genau so viele Ziffern gibt, wie die Basis des Stellenwertsystems, also ebenfalls \lm{ \s }.'."\n".
+                    'Dies ist bei anderen Stellenwertsystemen ebenso.'."\n".
+                    'Beispielsweise gibt es im Zehnersystem genau zehn Ziffern.'."\n".
+                    'Allerdings sind in der Menge \lm{ \mathbb{A}_{\S} } nicht nur natürliche Zahlen, wie bei den „gewöhnlichen“ Stellenwertsystemen,'."\n".
+                    'sondern die meisten sind gebrochen und es sind sogar auch die negativen dabei.'."\n",
+                      'Gleichzeitig ist die Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } in ihrer Normalform'."\n".
+                    '\lm{ \lbrack 0, \s \lbrack_{\mathbb{S}_{\N}} } die Grundlage des Zählens von \lm{ \s } vielen, auch aktual unendlichen natürlichen Zahlen von Null bis ohne \lm{ \s }.'."\n".
+                    'Dies entspricht in gewisser Weise ganzen Ziffern des Stellenwertsystems der Superial-Zahlen.'."\n".
+                    'Allerdings sind diese natürlichen Superial-Zahlen nicht die Koeffizienten des Stellenwertsystemen,'."\n".
+                    'weil nun keine reinen Ziffern, sondern beim Übergang ins Aktual-Unendliche selber schon'."\n".
+                    'gemischte Zahlen im Sinne des Stellenwertsystems, wie beispielsweise \lm{ *〈 ⅔ *〉*〈 7 *〉. = ⅔ \s + 7 }.'."\n",
+                      'Die sinnvollen Koeffizienten und das natürliche Zählen fallen bei den Superial-Zahlen auseinander und passen gleichzeitig so auch perfekt ineinander.'."\n",
+                      'Diese Zwittrigkeit oder Zwitternatur der Anzahl \lm{ \s } in den ihr entsprechenden wichtigen Mengen unseres neuen Stellenwertsystemens,'."\n".
+                    'welche keine Widersprüchlichkeit ist, sondern in sich vollständig plausibel, machen es so außergewöhnlich.'."\n".
+                    'Dadurch bekommt es die Eigenschaften, die wir für die Beschreibung der Geometrie brauchen, um schließlich auch Differenzialrechnung darin zu betreiben.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Sind beide aufeinander linear abbildbar?} \\\\'."\n".
+                    'Naiv können wir einmal annehmen, da die Werte beider Mengen wohl nicht nur wohlgeordnet sind, sondern auch'."\n".
+                    'alle die gleichen Abstände untereinander haben, dass sie vielleicht rein durch Verschiebung und einen Faktor'."\n".
+                    'Element für Element ihrer Reihenfolge nach aufeinander abgebildet werden können.'."\n".
+                    'Weil der Wertebereich von \lm{ \mathbb{A}_{\S} } nun \lm{ 2 ω } mal so groß ist, wie der von \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} },'."\n".
+                    'und um die Mitte zentriert, womit wir als Ansatz eine Verschiebung um \lm{ - ½ } annehmen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  ?=  \\\ \qquad *\{  y  *|*  *( \forall n \in [0, 1[_{\mathbb{S}^{-1}_{\N}} *)  *[  y = *( n - \frac{ 1 }{ 2 } *) \cdot 2 ω  *]  *\}  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Betrachten wir als erstes die Grenzbereiche dieser versuchten Mengendefinition.'."\n".
+                    'Die linksseitige Grenze ist in der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } die Null und wird durch den neuen Definitionsversuch zu:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  y  =  *( 0 - \frac{ 1 }{ 2 } *) \cdot 2 ω  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  y  =  - \frac{ 1 }{ 2 } \cdot 2 ω  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  y  =  - ω  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hier sehen wir, dass die linksseitige Grenze Null zu \lm{ - ω } wird, was aber kein Element von \lm{ \mathbb{A}_{\S} } ist.'."\n",
+                      'Die rechtsseitige Grenze \lm{ 1 - \s^{-1} } wird zu:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  y  =  *( *( 1 - \s^{-1} *) - \frac{ 1 }{ 2 } *) \cdot 2 ω  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  y  =  *( \frac{ 1 }{ 2 } - \s^{-1} *) \cdot 2 ω  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  y  =  2 ω \frac{ 1 }{ 2 } - 2 ω \s^{-1}  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  y  =  ω - 2 ω \s^{-1}  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die rechtsseitige Grenze \lm{ 1 - \s^{-1} } wird zu \lm{ ω - 2 ω \s^{-1} }, was auch kein Element von \lm{ \mathbb{A}_{\S} } ist.'."\n".
+                    'Beide Grenzen werden zu aktual unendlich großen Werten, aber \lm{ \mathbb{A}_{\S} } enthält nur endliche Werte.'."\n",
+                      'Was wird aus dem mittleren Wert?'."\n".
+                    'Was ist der mittlere Wert?'."\n".
+                    'Wir nehmen mal an, es ist \lm{ ½ }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  y  =  *( \frac{ 1 }{ 2 } - \frac{ 1 }{ 2 } *) \cdot 2 ω  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  y  =  0 \cdot 2 ω  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  y  =  0  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der mittlere Wert \lm{ ½ } wird zu Null.'."\n".
+                    'Doch Null ist vermutlich nicht der mittlere Wert von \lm{ \mathbb{A}_{\S} }, denn der Mittelpunkt von \lm{ \# \mathbb{Z} } ist \lm{ - ½ }.'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Das Problem scheint'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
+                    ))),
+
                   array( 'text', array( text => array(
                     'Als wir die \jump{OM:SupNum:Struktur-Geometrie}{arithmetische Struktur der Geometrie} untersuchten,'."\n".
                     'haben wir eine Definition der superialen Basis \lm{ \s } durch die vollständige'."\n".
