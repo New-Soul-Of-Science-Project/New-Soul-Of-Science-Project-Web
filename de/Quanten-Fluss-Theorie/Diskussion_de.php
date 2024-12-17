@@ -42,19 +42,11 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'XXX'),
+                      // array(  jump_name => 'X'),
                     )),
                 )
           ); ?>
@@ -63,131 +55,85 @@
           
 
 		    	<!  • Erhaltungssätze, Verschränkung, Quantisierung, Unschärferelation, Symmetriebrüche und Wechselwirkungen  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:ErhaltungVerschraeQuantiEtc',
               'Die Verzauberung unseres Verständnisses der Quantensysteme durch deren Entzauberung', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
+                      // array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Diskussion:ErhaltungVerschraeQuantiEtc:XXX', text =>
-                                           
-                'XXX \\\\ \\color{*TitleAdd}{\\small{– XXX}}')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung:XXX'),
+                      // array(  jump_name => 'OM:VRT:Einleitung:X'),
                     )),
               )
           ); ?>
 
 
 		    	<!  • Naturkonstanten und Eichung  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Naturkonstanten',
               'Die Berechnung der Gravitationskonstanten und der Elementarteilchenmassen aus der Wirkungsquanten-Struktur', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
+                      // array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\\bold{Experimente:}',
+                    '• Siehe die Diskussion mit Herrn Annicchiarico, November 2014.',
+                    ))),
+                      
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{Siehe die Diskussion mit Herrn Annicchiarico, November 2014.}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung:XXX'),
+                      // array(  jump_name => 'OM:VRT:Einleitung:X'),
                     )),
               )
           ); ?>
 
 
 		    	<!  • Zeit  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Zeit',
               'Eine Analyse des neuen Zeitverständnisses', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
+                      // array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{"Die etwas andere Zeit" auf: \\url{http://www.einstein-online.info/resolveuid/e3098c06f9049a24096943e5e1ec29be}}'."\n"))),
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\\bold{Experimente:}',
+                    '• "Die etwas andere Zeit" auf: \\url{http://www.einstein-online.info/resolveuid/e3098c06f9049a24096943e5e1ec29be}',
+                    '• Bewegung generiert Zeit.',
+                    ))),
                       
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{Bewegung generiert Zeit.}'."\n"))),
-                      
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Diskussion:Zeit:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Diskussion:Zeit:X', text =>
                                            
                 'Die zeitliche Abfolge ist ein Symmetriebruch')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'Die zeitliche Abfolge von Ereignissen ist im Prinzip der gleiche Symmetriebruch, wie das Zählen in der Mathematik.'."\n".
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Die zeitliche Abfolge von Ereignissen ist im Prinzip der gleiche Symmetriebruch, wie das Zählen in der Mathematik.'."\n".
                     'Durch das Ordnen von Ereignissen wird eine Richtung und eine Reihenfolge der Ereignisse festgelegt.'."\n".
                     'Sie sind nicht mehr gleichwertig.'."\n".
                     'Alle Ebenen der Zeit in der Quanten-Fluss-Theorie weisen zeitlich in die selbe Richtung.'."\n".
                     'Der zeitliche Abstand ergibt sich durch den Vergleich mit den entsprechenden Ereignisabfolgen beim Beobachter.'."\n",
                       'Durch die Bewegung der Elapsonen und Wirkungsquanten auf jeder Ebene bekommt die Zeit sogar, auf diese Struktur bezogen,'."\n".
-                    'eine räumliche Richtung.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Diskussion:Zeit:XXX', text =>
+                    'eine räumliche Richtung.'."\n",
+                      '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Diskussion:Zeit:X', text =>
                                            
                 'Der Zeitpfeil')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'Der Zeitpfeil ist durch den Kausalitätskegel eines Teilchens vorgegeben, deren Wechselwirkung mit seiner Umwelt mit Lichtgeschwindigkeit stattfindet.'."\n".
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Der Zeitpfeil ist durch den Kausalitätskegel eines Teilchens vorgegeben, deren Wechselwirkung mit seiner Umwelt mit Lichtgeschwindigkeit stattfindet.'."\n".
                     'Da letztlich in der FrQFT auch Materie aus gebundenen lichtähnlichen Teilchen besteht, würde eine Umkehr der Zeit die Kausalitätskegel dieser'."\n".
                     'lichtähnlichen Teilchen umstülpen.'."\n".
                     'Umgestülpte Kausalitätskegel ergäben aber eine andere physikalische Realität, in der nicht alle Ereignisse einfach rückwärts, sondern anders verlaufen würden.'."\n".
@@ -206,45 +152,24 @@
                       'Wenn ich die Newtonsche Gravitation mit ihrer instantanen Ausbreitungsgeschwindigkeit der Wechselwirkungen betrachte, dann kann ich natürlich die Zeit einfach umkehren. In Bezug auf die Allgemeine Relativitätstheorie und auf jede Quantenfeldtheorie ist dies wegen der endlichen Ausbreitungsgeschwindigkeit der Wechselwirkungen nach meiner Meinung nicht möglich.'."\n".
                     'Sorge ich trotz allem dafür, dass die Kausalitätssphären und -kegel sich nicht umkehren, so vertausche ich Ursache und Wirkung. Die Aufgabe des Prinzips von der Kausalität von Ursache und Wirkung ist aus meiner Sicht allerdings nicht akzeptabel, wenn man unsere physikalische Realität beschreiben möchte.'."\n",
                       'Es kann bei realistischen physikalischen Gesetzen also keine Umkehr des Zeitpfeils geben.'."\n".
-                    'Braucht man dafür die Entropie?'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Braucht man dafür die Entropie?'."\n",
+                      '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'XXX'),
+                      // array(  jump_name => 'X'),
                     )),
               )
           ); ?>
 
 
 		    	<!  • Bewegungsraum  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Bewegungsraum',
               '… seine Eigenschaften', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
+                      // array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -252,55 +177,40 @@
                     'In jedem materiellen (gasförmigen?) Medium gibt es in Bereichen konstanter Dichte ausschließlich Longitudinalwellen, aber keine Transversalwellen.'."\n".
                     'Nur wenn in einem gewöhnlichen Medium eine Membran vorhanden ist, auf die die Longitutinalwelle aufläuft, dann gibt es in der Membran Transversalwellen.'."\n".
                     'Im Licht-Materie-Medium der Quanten-Fluss-Theorie existieren aber von vormherein Transversalwellen.'."\n".
-                    'Das macht dieses neue Medium besonders.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX}'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Das macht dieses neue Medium besonders.}'."\n",
+                      '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung:XXX'),
+                      // array(  jump_name => 'OM:VRT:Einleitung:X'),
                     )),
               )
           ); ?>
 
 
 		    	<!  • Urknall, Schwarze Löcher und der Kosmos  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Urknall-SchwarzeLoecher-Kosmos',
               'Vergleich mit ähnlichen Theorien', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
+                      // array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    //'(Themen:)',
-                    '(• Asymptotische Freiheit und Skaleninvarianz: Der sogenannte Fixpunkt der Skaleninvarianz – der Fraktalität – der asymptotischen Freiheit zeigt sich vermutlich in der kosmischen Hintergrundstrahlung.\\footnote{Vgl. \\cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, 20.})',
+                    // 'Themen:',
+                    '• Asymptotische Freiheit und Skaleninvarianz: Der sogenannte Fixpunkt der Skaleninvarianz – der Fraktalität – der asymptotischen Freiheit zeigt sich vermutlich in der kosmischen Hintergrundstrahlung.\\footnote{Vgl. \\cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, 20.}',
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Diskussion:Urknall-SchwarzeLoecher-Kosmos:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Diskussion:Urknall-SchwarzeLoecher-Kosmos:X', text =>
                                            
                 'Verbindung von Urknall und Schwarzem Loch')),
                   array( 'text', array( text => array(
                     'In letzter Zeit tauchen mehr Untersuchungen und Theorien auf, die nun auch den Urknall und die Implusion eines Schwarzen Lochs in Verbindung bringen.\\footnote{Vgl. \\cite{Pourhasan:OutOfTheWhiteHole2013}. \\\\ Vgl. \\cite{Bojowald:LoopQuantumCosmology2008}. \\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Afshordi:DasSchwarzeLochAmBeginnDerZeit2015}. \\\\ Vgl. \\cite{Bojowald:ZurueckVorDenUrknall2009}. \\\\ Vgl. \\cite{Bojowald:UrSprung2009}.}'."\n".
                     'Der Quanten-Fluss-Theorie am nächsten kommt der Artikel von \\cite{Afshordi:DasSchwarzeLochAmBeginnDerZeit2015}.'."\n".
-                    'Hierin wird geäußert, dass der Urknall unseres „Universums“ ein mit dem der Entstehung eines Schwarzen Loch vergleichbarer Vorgang sein könnte.\\footnote{Vgl. \\cite{Pourhasan:OutOfTheWhiteHole2013}, S. \\color{*Bearb}{XXX}.\\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Afshordi:DasSchwarzeLochAmBeginnDerZeit2015}, S. 41.}'."\n".
+                    'Hierin wird geäußert, dass der Urknall unseres „Universums“ ein mit dem der Entstehung eines Schwarzen Loch vergleichbarer Vorgang sein könnte.\\footnote{Vgl. \\cite{Pourhasan:OutOfTheWhiteHole2013}, S. \\color{*Bearb}{X}.\\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Afshordi:DasSchwarzeLochAmBeginnDerZeit2015}, S. 41.}'."\n".
                     'Im dort entwickelten Szenario wird die Implusion des Schwarzen Lochs allerdings in einem vierdimmensionalen Raum, einer fünfdimensionalen Raumzeit, betrachtet.'."\n".
-                    'Das entstehende „Universum“ befindet sich demnach in einer dreidimensionalen Hülle um ein vierdimensionales Schwarzes Loch und funktioniert nach dem holografischen Prinzip\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ \\cite{Maldacena:Schwerkraft-EineIllusion2006}.}.\\footnote{Vgl. \\cite{Pourhasan:OutOfTheWhiteHole2013}, S. \\color{*Bearb}{XXX}.\\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Afshordi:DasSchwarzeLochAmBeginnDerZeit2015}, S. 42.}'."\n",
+                    'Das entstehende „Universum“ befindet sich demnach in einer dreidimensionalen Hülle um ein vierdimensionales Schwarzes Loch und funktioniert nach dem holografischen Prinzip\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ \\cite{Maldacena:Schwerkraft-EineIllusion2006}.}.\\footnote{Vgl. \\cite{Pourhasan:OutOfTheWhiteHole2013}, S. \\color{*Bearb}{X}.\\\\ Sekundärliteratur: \\\\ Vgl. \\cite{Afshordi:DasSchwarzeLochAmBeginnDerZeit2015}, S. 42.}'."\n",
                       'Im Unterschied zum Ansatz von Afshordi kommt die Quanten-Fluss-Theorie mit einem neu definierten \\jump{*Bewegungsraum-Herlei}{Bewegungsraum} mit drei Raumdimensionen aus.'."\n".
                     'Bei jeder Implusion eines Schwarzen Lochs entsteht ein neuer Kosmos, den er als „Universum“ bezeichnet.'."\n".
                     'In der Quanten-Fluss-Theorie befindet sich dieser neue \\jump{*Kosmos-Herlei}{Kosmos innerhalb des Schwarzen Lochs} und nicht in seiner Hülle.'."\n".
@@ -309,7 +219,7 @@
                     'Der Eindruck der höheren Dimensionalität entsteht in der Quanten-Fluss-Theorie durch ihre \\jump{OM:FrQFT:NeuePhysik:Fraktales-Universum:FrakExistUFrakStr}{fraktale Struktur}.'."\n".
                     'Die strukturellen Bewegungen der einzelnen Ebenen des Fraktals sind über den Pythagoras so miteinander verbunden, wie man mit dem Pythagoras über die Summe von'."\n".
                     '\\term{x} Quandraten von einzelnen Bewegungenskomponenten im dreidimensionalen Raum eine Gesamtbewegung in einem \\term{x}-dimensionalen Raum berechnet.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Diskussion:Urknall-SchwarzeLoecher-Kosmos:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Diskussion:Urknall-SchwarzeLoecher-Kosmos:X', text =>
                       
                 'Ist der Ereignishorizont eines Schwarzen Lochs eine Feuerwand oder fällt man einfach hineine?')),
                   array( 'text', array( text => array(
@@ -319,114 +229,74 @@
                     'In der fraktalen Quanten-Fluss-Theorie handelt es sich um eine „Feuerwand“, so wie es im Moment laut diesem Artikel allgemein anerkannt ist.}'."\n"))),
                     
                   array( 'jumplist', array(
-                      //array(  jump_name => 'XXX'),
+                      // array(  jump_name => 'X'),
                     )),
               )
           ); ?>
 
 
 		    	<!  • Keine Singularitäten  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Keine-Singularitaeten',
               'In der Quanten-Fluss-Theorie gibt es keine unphysikalischen Singularitäten', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
+                      // array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    //'(Themen:)',
-                    '(• Einleitung, Fundierung: Diese Schwierigkeiten müssen dann durch mathematische Kniffe umgangen werden.\\footnote{Hierfür wird eine Renormierung durchgeführt, die bei manchen Theorien leider nicht möglich scheint: \\\\ \\const{FrQFT_g_footnote_text_Renormierung}})',
-                    '(• Einleitung, Fundierung: Die Beseitigung der Vereinfachung führt zu einer fraktalen Struktur, wie wir sehen werden, die geeignet sein könnte, die Unendlichkeitsprobleme zu beseitigen.\\footnote{Fraktale Strukturen sorgen für Skaleninvarianz: \\\\ \\const{FrQFT_g_footnote_text_FraktalLoestUnendlichk}})',
-                    '(• Asymptotische Freiheit und Skaleninvarianz: Der sogenannte Fixpunkt der Skaleninvarianz – der Fraktalität – der asymptotischen Freiheit zeigt sich vermutlich in der kosmischen Hintergrundstrahlung.\\footnote{Vgl. \\cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, 20.})',
+                    // '(Themen:)',
+                    '• Einleitung, Fundierung: Diese Schwierigkeiten müssen dann durch mathematische Kniffe umgangen werden.\\footnote{Hierfür wird eine Renormierung durchgeführt, die bei manchen Theorien leider nicht möglich scheint: \\\\ \\const{FrQFT_g_footnote_text_Renormierung}}',
+                    '• Einleitung, Fundierung: Die Beseitigung der Vereinfachung führt zu einer fraktalen Struktur, wie wir sehen werden, die geeignet sein könnte, die Unendlichkeitsprobleme zu beseitigen.\\footnote{Fraktale Strukturen sorgen für Skaleninvarianz: \\\\ \\const{FrQFT_g_footnote_text_FraktalLoestUnendlichk}}',
+                    '• Asymptotische Freiheit und Skaleninvarianz: Der sogenannte Fixpunkt der Skaleninvarianz – der Fraktalität – der asymptotischen Freiheit zeigt sich vermutlich in der kosmischen Hintergrundstrahlung.\\footnote{Vgl. \\cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, 20.}',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung:XXX'),
+                      // array(  jump_name => 'OM:VRT:Einleitung:X'),
                     )),
               )
           ); ?>
 
 
 		    	<!  • Nichtlokalität  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Nichtlokalitaet',
               'Eine Diskussion', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
+                      // array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
+
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '(Themen:)',
-                    '(• Schrödingers Katze.)',
-                    '(• EPR.)',
-                    '(• Bellsche Ungleichung.)',
-                    '(• Holografisches Prinzip. Siehe Schriftwechsel mit Matthias Galke vom 16.03.2018.)',
+                    'Themen:',
+                    '• Schrödingers Katze.',
+                    '• EPR.',
+                    '• Bellsche Ungleichung.',
+                    '• Holografisches Prinzip. Siehe Schriftwechsel mit Matthias Galke vom 16.03.2018.',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung:XXX'),
+                      // array(  jump_name => 'OM:VRT:Einleitung:X'),
                     )),
               )
           ); ?>
 
 
 		    	<!  • Relativität und Michelson-Morley-Experiment  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Relativitaet-und-Michelson-Morley-Experiment',
               'Verwirklichung ihrer wesentlichen Eigenschaften, ihr Gültigkeitsbereich und die lorenzianische Interpretation', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
+                      // array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
@@ -441,18 +311,8 @@
                       // • Selbst die sogenannten nicht beschleunigten Bezugssysteme der Speziellen Relativitätstheorie sind gerade durch diese Eigenschaft ausgezeichnet und nicht in jeder Hinsicht relativ:
                       //     \WoZitat{… An der Auszeichnung der IS [Inertialsysteme] ändert dies aber nichts [der Wechsel von der Galileitransformation zur Lorentztransformation]; die Transformationen der Galilei- oder Poincarégruppe vermitteln innerhalb der selben Klasse von IS. Zwar werden die Begriffe absolute Zeit und absoluter Raum in der SRT relativiert, es bleibt aber bei einer absoluten Raum-Zeitstruktur, die bestimmte Bezugssysteme, eben die IS, auszeichnet. \\
                       //     Die Auszeichnung der IS ist unerklärt; es bleibt die Frage, gegenüber was (absoluter Raum?) diese Systeme nicht beschleunigt sind. …} Zitiert aus: \cite{Fliessbach:ART1998}, Teil III Physikalische Grundlagen der ART. Kap. 9 Bezugssysteme, Inertialsysteme, S. 39-41, hier S. 40.
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    'Ein neuer Ansatz die Einweg-Lichtgeschwindigkeit eventuell doch zu messen könnte auf der Verschränkung von Photonen beruhen.'."\n".
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Ein neuer Ansatz die Einweg-Lichtgeschwindigkeit eventuell doch zu messen könnte auf der Verschränkung von Photonen beruhen.'."\n".
                     'Wenn es gelänge ein Experiment so zu gestalten, dass die Orte beider Photonen festgestellt werden könnten, ab dehnen die Verschränkung aufgehoben ist.'."\n".
                     'Die Auflösung der Verschränkung muss durch eine Normuhr synchronisiert sein.'."\n".
                     'In der Quanten-Fluss-Theorie ist dies die \\jump{OM:FrQFT:NeuePhysik:Loesungsansatz}{grundlegende Zeit} der Wirkungsquanten-Bewegung.'."\n".
@@ -460,191 +320,103 @@
                     'Gelänge es – falls dies überhaupt möglich ist – zu bestimmen, welche der beiden Messungen der Photonen-Eigenschaften die Verschränkung löst,'."\n".
                     'und festzustellen an welchem Ort sich das andere Photon in diesem Moment befindet, dann müssten die Strecken der Wirkungsquanten beider Photonen zu beiden Orten gleich sein'."\n".
                     'Wenn die Verhälnisse der Photonen-Strecken gegenüber denen der Wirkungsquanten-Strecken eine Differenz aufweisen, dann sollte diese etwas über die Bewegung des Experiments'."\n".
-                    'im Lichtmedium aussagen?'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'im Lichtmedium aussagen?'."\n",
+                      '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung:XXX'),
+                      // array(  jump_name => 'OM:VRT:Einleitung:X'),
                     )),
               )
           ); ?>
 
 
 		    	<!  • Überlichtgeschwindigkeit  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Ueberlichtgeschwindigkeit',
               'der Wirkungsquanten ist nicht direkt wahrnehmbar; ihr möglicher Zusammenhang mit der Nichtlokalität', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
+                      // array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
                     //'(Themen:)',
-                    '(• Siehe Startseite, Einleitung und ›Was ist Physik?‹.)',
+                    '• Siehe Startseite, Einleitung und ›Was ist Physik?‹.',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung:XXX'),
+                      // array(  jump_name => 'OM:VRT:Einleitung:X'),
                     )),
               )
           ); ?>
 
 
 		    	<!  • Digitales Verhalten der Wirkungsquanten  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Digitales-Verhalten-der-Wirkungsquanten',
               'Die diskrete Struktur der Physik', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
+                      // array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung:XXX'),
+                      // array(  jump_name => 'OM:VRT:Einleitung:X'),
                     )),
               )
           ); ?>
 
 
 		    	<!  • Absoluter Raum und absolute Zeit  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Absoluter-Raum-und-absolute-Zeit',
                '… existieren nur im Modell, nicht aber in der Theorie', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
+                      // array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
                       // • Absoluter versa relativer Raum.
                       // • Vgl. auch: http://www.einstein-online.info/resolveuid/9f67be807a1be0cbb501965daa052f58
-                    'Die fraktale Struktur der Quanten-Fluss-Theorie führt dazu, dass man im Modell zwar eine tiefste Fraktal-Ebene annimmt, aber die Theorie kennt diese Grenze nicht.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Die fraktale Struktur der Quanten-Fluss-Theorie führt dazu, dass man im Modell zwar eine tiefste Fraktal-Ebene annimmt, aber die Theorie kennt diese Grenze nicht.'."\n",
+                      '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung:XXX'),
+                      // array(  jump_name => 'OM:VRT:Einleitung:X'),
                     )),
               )
           ); ?>
 
 
 		    	<!  • Hintergrundunabhängigkeit, Relationismus, Diffeomorphismeninvarianz  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Hintergrundunabhaengigkeit',
               'Die Quanten-Fluss-Theorie schafft ihre eigene flexible Bühne', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
+                      // array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
                   array( 'text', array( text => array(
                       // • Vgl. auch: http://www.einstein-online.info/resolveuid/9f67be807a1be0cbb501965daa052f58
                     'Die Wirkungsquanten sind selber Raum und Zeit. \\\\'."\n".
-                    'Mehr über Hintergrundunabhängigkeit.\\footnote{\\const{FrQFT_g_footnote_text_Hintergrundunabh}} \\\\'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Mehr über Hintergrundunabhängigkeit.\\footnote{\\const{FrQFT_g_footnote_text_Hintergrundunabh}}'."\n",
+                      '\\color{*Bearb}{(In Arbeit …)}'."\n",
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung:XXX'),
+                      // array(  jump_name => 'OM:VRT:Einleitung:X'),
                     )),
               )
           ); ?>
@@ -855,12 +627,12 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
+                      // array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
-                  /*array( 'notice', array( Display => 'hideContent', text => array(
-                      '(• XXX)',
-                    ))),*/
+                  /* array( 'notice', array( Display => 'hideContent', text => array(
+                      '(• X)',
+                    ))), */
                       
                   array( 'text', array( text => array(
                     'Erstaunlicherweise lässt sich im Rahmen der Physik der Quanten-Fluss-Theorie, die grundsätzlich auf Regelprozessen beruht,'."\n".
@@ -868,7 +640,8 @@
                       'Wird die Perspektive auf Bewusstsein um den Lernprozess und die Erinnerung erweitert, dann gelangen wir zum zentralen Regelprozess des Lebens, zum \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess}, der auch den \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess}{Achtsamkeitsprozess} beinhaltet.'."\n".
                     'Dies ist auch nicht ganz verwunderlich, basiert das Verständnis des Lebens aus Sicht der Biologie ja ebenfalls weitestgehend auf der Betrachtung der Regelprozesse der Lebewesen.'."\n",
                       'In der Quanten-Fluss-Theorie wird die Stabilität jeder Existenz von ihrem Elementarprozess geregelt.'."\n".
-                    'Der Achtsamkeitsprozess ist demnach der Elementarprozess jedes Lebewesens.'."\n"))),
+                    'Der Achtsamkeitsprozess ist demnach der Elementarprozess jedes Lebewesens.'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Bewusstsein'),
@@ -881,48 +654,31 @@
 		    	<!  • Leben in der Fraktalen Quanten-Fluss-Theorie  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:LebenFrQFT',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
+                      // array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                      '(• Die FrQFT ist außschließlich über ein fraktales Prinzip und System von Regelprozessen definiert:)',
-                      '(– Jede Existenz in der FrQFT hat einen zentralen Regelprozess, der seine Existenz stabilisiert.)',
-                      '(– Damit liegt auch jedem Lebewesen ein zentraler Regelprozess seiner Existenz, deines Lebens, zugrunde.)',
-                      '(– Dies ist der \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess}, der der Dreh- und Angelpunkt der natur- und Lebensphilosophie des \\jump{OM:SpaLeb:Home}{›Spannungsspiels des Lebens‹} ist.)',
+                      '• Die FrQFT ist außschließlich über ein fraktales Prinzip und System von Regelprozessen definiert:',
+                      '– Jede Existenz in der FrQFT hat einen zentralen Regelprozess, der seine Existenz stabilisiert.',
+                      '– Damit liegt auch jedem Lebewesen ein zentraler Regelprozess seiner Existenz, deines Lebens, zugrunde.',
+                      '– Dies ist der \\jump{OM:SpaLeb:Care-Prozess}{Care-Prozess}, der der Dreh- und Angelpunkt der natur- und Lebensphilosophie des \\jump{OM:SpaLeb:Home}{›Spannungsspiels des Lebens‹} ist.',
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Diskussion:LebenFrQFT:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Diskussion:LebenFrQFT:X', text =>
                       
                 'Eigenheiten von Regelprozessen')),
+
                   array( 'notice', array( Display => 'showContent', text => array(
-                      '(• XXX:)',
-                      '(– XXX)',
+                      // '(• X:)',
+                      // '(– X)',
                     ))),
+
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''."\n"))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess'),
