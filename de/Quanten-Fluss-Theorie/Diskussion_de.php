@@ -425,7 +425,7 @@
 		    	<!  • Paradigmenwechsel zur Quantenmechanik:  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Diskussion:Paradigmenwechsel-zur-Quantenmechanik',
-              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       //array(  jump_name => 'OM:VRT:Einleitung', type => 'back'),
