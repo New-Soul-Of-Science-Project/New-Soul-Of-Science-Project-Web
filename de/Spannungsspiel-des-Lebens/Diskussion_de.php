@@ -14,21 +14,13 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '(• Das ›Spannungsspiel des Lebens‹ ist ein phänomenologischer Ansatz, sagt Josh Goldberg.)',
-                    '(• Herausfinden, welche Erkenntnistheorie dem zugrunde liegt.)',
+                    '• Das ›Spannungsspiel des Lebens‹ ist ein phänomenologischer Ansatz, sagt Josh Goldberg.',
+                    '• Herausfinden, welche Erkenntnistheorie dem zugrunde liegt.',
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Diskussion:Achtsamkeit'),
@@ -57,7 +49,7 @@
                       
                   array( 'text', array( text => array(
                     'Die Achtsamkeit beinhaltet die aufmerksame und umsichtige Wahrnehmung insgesamt, also auch die der Blumen am Wegesrand.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Diskussion:Achtsamkeit:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Diskussion:Achtsamkeit:X', text =>
                                            
                 'Der Achtsamkeitsprozess')),
                   array( 'text', array( text => array(
@@ -73,7 +65,7 @@
                     'Ich schaue auf die Blume, nehme sie wahr, und beobachte, welche Gefühle dies erzeugt, wie es auf mich zurück wirkt.'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SpaLeb:XXX'),
+                      // array(  jump_name => 'OM:SpaLeb:X'),
                     )),
               )
           ); ?>
