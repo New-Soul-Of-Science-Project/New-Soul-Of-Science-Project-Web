@@ -14,30 +14,11 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'XXX'),
+                      // array(  jump_name => 'X'),
                     )),
                 )
           ); ?>
@@ -49,38 +30,19 @@
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Ausblick:Experimentelle-Ueberpruefungen',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{'."\n".
-                    '(• XXX)) \\\\'."\n".
-                    '}'."\n"))),
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{X}',
+                    ))),
                       
                   array( 'text', array( text => array(
-                    'Vorhersagen der Quanten-Fluss-Theorie, die man versuchen muss in Experimenten oder der Natur zu Beobachten …'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Vorhersagen der Quanten-Fluss-Theorie, die man versuchen muss in Experimenten oder der Natur zu Beobachten …'."\n",
+                      '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      ///array(  jump_name => 'XXX'),
+                      // array(  jump_name => 'X'),
                     )),
               )
           ); ?>
@@ -92,37 +54,20 @@
             'OM:FrQFT:Ausblick:Theoretische-Ueberpruefungen',
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{'."\n".
-                    '(• Das Elektron hat ein Dipolmoment, welches es extrem rund erscheinen lässt. Gilt dies auch für die FrQFT? (Vgl. \\cite{Moskowitz:ZuRundFuerDieSupersymmetrie2013}.)) \\\\'."\n".
-                    '(• Beim Bullet-Cluster, ein Zusammenstoß zweier Galaxienhaufen, scheint Dunkle Materie in ihrer Bewegung über die sichtbare hinaus zu schießen. Gilt dies auch für das Phänomen der Dunklen Materie in der FrQFT?\footnote{\const{FrQFT_g_footnote_text_BulletCluster}}) \\\\'."\n".
-                    '}'."\n"))),
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{X}',
+                    '• Das Elektron hat ein Dipolmoment, welches es extrem rund erscheinen lässt. Gilt dies auch für die FrQFT? (Vgl. \\cite{Moskowitz:ZuRundFuerDieSupersymmetrie2013}.',
+                    '• Beim Bullet-Cluster, ein Zusammenstoß zweier Galaxienhaufen, scheint Dunkle Materie in ihrer Bewegung über die sichtbare hinaus zu schießen. Gilt dies auch für das Phänomen der Dunklen Materie in der FrQFT?\footnote{\const{FrQFT_g_footnote_text_BulletCluster}}',
+                    ))),
+                      
                       
                   array( 'text', array( text => array(
-                    'Beobachtungen bei denen theoretisch überprüft werden muss, ob die Quanten-Fluss-Theorie ihnen entspricht …'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Beobachtungen bei denen theoretisch überprüft werden muss, ob die Quanten-Fluss-Theorie ihnen entspricht …'."\n",
+                      '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'XXX'),
+                      // array(  jump_name => 'X'),
                     )),
               )
           ); ?>
