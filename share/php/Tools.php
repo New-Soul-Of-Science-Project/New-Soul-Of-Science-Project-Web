@@ -1676,7 +1676,7 @@
       case 'block':
         echo $offset.'<p style="'.(((gettype( $text) == 'array') && (gettype( $text[text]) == 'array') && (1 < count( $text[text]))) ? 'margin-bottom: 0px;' : '').' text-align: justify;'.(((gettype( $text) == 'array') && (array_key_exists( intent, $text)) && (!array_key_exists( NoIntentInFirstLine, $text))) ? ' text-indent: '.($text[intent]).';' : '').'">'."\n";
         break;
-      // #: 'text' Pamameter example: "Shape  => 'conclusion', TextColor => '000000', TextAlign => 'block', intent => '2em', NoIntentInFirstLine => true"
+      // #: 'text' Parameter example: "Shape  => 'conclusion', TextColor => '000000', TextAlign => 'block', intent => '2em', NoIntentInFirstLine => true"
       case 'text':
         $text_color = To_f_Color( (((gettype( $text) == 'array') && (array_key_exists( TextColor, $text))) ? $text[TextColor] : ''));
       
