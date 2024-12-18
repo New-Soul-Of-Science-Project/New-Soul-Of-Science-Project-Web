@@ -14,21 +14,21 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '\\bold{Prinzipien der komplexen Systeme}',
-                    '• Josef Gaßner und Harald Lesch diskutieren darüber, ob der „reine“ Reduktionismus am Ende ist und wie die Physik weiter kommen kann: \\jump{https://www.youtube.com/watch?v=OPQtrDTPXsA}{Harald Lesch zu komplexen Systemen, Esoterik und alternativen Weltbildern | Lesch & Gaßner}',
-                    '\\bold{Lösung des ›Problems der Zeit‹}',
+                    '\bold{Prinzipien der komplexen Systeme}',
+                    '• Josef Gaßner und Harald Lesch diskutieren darüber, ob der „reine“ Reduktionismus am Ende ist und wie die Physik weiter kommen kann: \jump{https://www.youtube.com/watch?v=OPQtrDTPXsA}{Harald Lesch zu komplexen Systemen, Esoterik und alternativen Weltbildern | Lesch & Gaßner}',
+                    '\bold{Lösung des ›Problems der Zeit‹}',
                     '• Die Einleitung stellt die Lösung des ›Problems der Zeit‹ als Ansatzpunkt in den Vordergrund. Darauf sollte auch hier Bezug genommen werden.',
-                    '• \\bold{Prinzip der Lichtuhr:} Damit ist das Prinzip der Lichtuhr verbunden. Ist dies hier schon hinreichen direkt eingepflegt?',
-                    '• \\bold{Fraktale Zeitebenen:} Dabei wird die Fraktalität der Zeit im Ansatz sichtbar. Das sollte ebenfalls Erwähnung finden.',
-                    '\\bold{Natürlichkeitsprinzip}',
-                    '• Brauchen wir ein Natürlichkeitsprinzip, dass die Unnatürlichkeit unendlicher (Mess-)Werte\\footnote{\\const{FrQFT_g_footnote_text_Unendlichkeiten}} wie vielleicht auch die Vermeidung des Natürlichkeitsproblems\\footnote{\\const{FrQFT_g_footnote_text_Natuerlichkeit}} beinhaltet?',
-                    '\\bold{\\italic{Facetten des ›Problems der Zeit‹}} – ist in die Einleitung integriert',
-                    '– Die Relativitätstheorie und die Teilchenphysik tragen in ihrer heutigen Interpretation einen fundamentalen Widerspruch in sich: Wie kann es sein, dass ein Photon, das sich doch mit Lichtgeschwindigkeit bewegt und in dem daher angeblich die Zeit stillstehen muss, ein sich schwingend veränderndes elektromagnetisches Feld „in sich“ trägt? Besonders dann, wenn wir analysieren, dass die Teilchen zwar theoretisch punktförmig, aber in der Realität eine Ausdehnung haben sollten, bemerke das Natürlichkeitsprinzip, dass auch zu der Erkenntnis führt, dass unendlich große Werte nicht vorkommen sollten, die bei Punktteilchen nicht zu vermeiden sind. Vgl. \\cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, S. 14.',
+                    '• \bold{Prinzip der Lichtuhr:} Damit ist das Prinzip der Lichtuhr verbunden. Ist dies hier schon hinreichen direkt eingepflegt?',
+                    '• \bold{Fraktale Zeitebenen:} Dabei wird die Fraktalität der Zeit im Ansatz sichtbar. Das sollte ebenfalls Erwähnung finden.',
+                    '\bold{Natürlichkeitsprinzip}',
+                    '• Brauchen wir ein Natürlichkeitsprinzip, dass die Unnatürlichkeit unendlicher (Mess-)Werte\footnote{\const{FrQFT_g_footnote_text_Unendlichkeiten}} wie vielleicht auch die Vermeidung des Natürlichkeitsproblems\footnote{\const{FrQFT_g_footnote_text_Natuerlichkeit}} beinhaltet?',
+                    '\bold{\italic{Facetten des ›Problems der Zeit‹}} – ist in die Einleitung integriert',
+                    '– Die Relativitätstheorie und die Teilchenphysik tragen in ihrer heutigen Interpretation einen fundamentalen Widerspruch in sich: Wie kann es sein, dass ein Photon, das sich doch mit Lichtgeschwindigkeit bewegt und in dem daher angeblich die Zeit stillstehen muss, ein sich schwingend veränderndes elektromagnetisches Feld „in sich“ trägt? Besonders dann, wenn wir analysieren, dass die Teilchen zwar theoretisch punktförmig, aber in der Realität eine Ausdehnung haben sollten, bemerke das Natürlichkeitsprinzip, dass auch zu der Erkenntnis führt, dass unendlich große Werte nicht vorkommen sollten, die bei Punktteilchen nicht zu vermeiden sind. Vgl. \cite{Eichhorn:DieZaehmungDesUnendlichen:2019}, S. 14.',
                     '– Zeit muss differenzierter betrachtet und interpretiert werden, wenn wir diesen Widerspruch loswerden wollen. Tun wir dies, stellen wir fest, dass es nur ein scheinbarer Widerspruch ist. Denn die Schwingung des elektromagnetischen Feldes benötigt zwar Zeit, im Sinne einer generellen Veränderung, aber sie trägt nichts zur Alterung des Photons bei, nämlich zu seiner grundsätzlichen Veränderung. Und zwar altert das Photon durch seine Schwingung nicht, weil es sich nach einer bestimmten Zeit, seinem Schwingungsdurchgang, wieder genau in dem gleichen Zustand befindet, wie zuvor.',
                     ))),
                                        
                   array( 'text', array( text => array(
-                    'In der \\italic{\\jumpname{OM:FrQFT:Einleitung}} sowie auf den daran anschließenden Seiten \\italic{\\jumpname{OM:FrQFT:WasIstPhysik}} und \\italic{\\jumpname{OM:FrQFT:WieMessenWirInDerPhysik}}'."\n".
+                    'In der \italic{\jumpname{OM:FrQFT:Einleitung}} sowie auf den daran anschließenden Seiten \italic{\jumpname{OM:FrQFT:WasIstPhysik}} und \italic{\jumpname{OM:FrQFT:WieMessenWirInDerPhysik}}'."\n".
                     'leite ich Grundprinzipien oder Naturprinzipien – sogenannte First-Principles – der Physik her.'."\n".
                     'Die nachfolgend aufgeführten Naturprinzipien gelten ohne Einschränkung.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
@@ -40,7 +40,7 @@
                     'Die Mathematik kann, nach meinem jetzigen Wissen, nur Erscheinungen beschreiben, die sich aus einem emergenten Phänomen ergeben, welches sich bei'."\n".
                     'recht festen Bedingungen zeigt.'."\n".
                     'Findet aufgrund stark geänderter Bedingungen ein sogennanter Phasenübergang statt, dann ändern sich die emergenten Phänomene oft so grundlegend,'."\n".
-                    'dass sie nicht mit den selben Formeln beschreibbar erscheinen. \\color{*Bearb}{(Vgl. Mäder, Alexander. WISSENSCHAFTSPHILOSOPHIE. Wie universell sind Naturgesetze? SdW 2.20, S. 82-85.)}'."\n",
+                    'dass sie nicht mit den selben Formeln beschreibbar erscheinen. \color{*Bearb}{(Vgl. Mäder, Alexander. WISSENSCHAFTSPHILOSOPHIE. Wie universell sind Naturgesetze? SdW 2.20, S. 82-85.)}'."\n",
                       'Ein Ansatz, der die Physik aus einem Naturprinzip heraus beschreibt, bietet die Möglichkeit, einen Grundrahmen der Interpretation des Geschehens zu schaffen'."\n".
                     'und auf dessen Basis die Beobachtungen zu deuten und in ein entsprechendes Szenario einzubetten.'."\n".
                     'Anschließend lässt sich feststellen, ob die sich aus allen Beobachtungen ergebenden Szenarien auf diese Weise logisch plausibel ineinandergreifen.'."\n",
@@ -52,13 +52,13 @@
                   '')),
                   array( 'text', array( text => array(
                     'Physik macht nur Sinn, wenn sich die Eigenschaften der Dinge verändern können, ihre Bestandteile also in einem dynamischen Zusammenhang stehen und sich'."\n".
-                    'daher \\jump{OM:FrQFT:WasIstPhysik:Vortext:WarumDynamStrukt}{immer bewegen}.'."\n"))),
+                    'daher \jump{OM:FrQFT:WasIstPhysik:Vortext:WarumDynamStrukt}{immer bewegen}.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
                                            
                 'Strukturprinzip', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{Hier geht es um die gesamte dynamische Struktur und um die innere dynamische Struktur, die ja ausgedehnt sein muss, siehe Farbladung.}'."\n"))),
+                    '\color{*Bearb}{Hier geht es um die gesamte dynamische Struktur und um die innere dynamische Struktur, die ja ausgedehnt sein muss, siehe Farbladung.}'."\n"))),
                   array( 'text', array( text => array(
                     'Dies ist das generelle Naturprinzip.'."\n".
                     'Es besagt, dass die Natur ausschließlich auf in sich wechselwirkender dynamischer Struktur beruht.'."\n"))),
@@ -77,20 +77,20 @@
                         'Welche Bestandteile zu einem Ding gehören, ob sie im Zusammenhang stehen und daher Bestandteile sind, zeigt sich immer daran, wie sie sich zueinander – in dem Ding – bewegen.',
                     ))),
                   array( 'text', array( text => array(
-                    'Das \\jump{OM:FrQFT:WasIstPhysik:Vortext:Djet-Neheh-Dualismus}{Existenzprinzip des Djet-Neheh-Dualismus} bedeutet dabei im Bezug auf die Bewegung der Bestandteile:'."\n"))),
+                    'Das \jump{OM:FrQFT:WasIstPhysik:Vortext:Djet-Neheh-Dualismus}{Existenzprinzip des Djet-Neheh-Dualismus} bedeutet dabei im Bezug auf die Bewegung der Bestandteile:'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Neheh-Aspekt (Ordnung): Kreisen die Bestandteile umeinander, dann gehören sie zum selben Ding.',
                         'Djet-Aspekt (Chaos): Bewegen sie sich unabhängig voneinander, dann gehören sie nicht zum selben Ding.',
                     ))),
                   array( 'text', array( text => array(
-                    'Nur auf diese Weise können wir Existenz feststellen.\\footnote[*Bearb]{\\color{*Bearb}{Damit, dass Systeme nur im Kontext ihrer Umgebung über ihre Differenz zu dieser funktionieren und sich in ihrem Unterschied zu dieser definieren, hat \\jump[https://de.wikipedia.org/wiki/Niklas_Luhmann]{}{Niklas Luhmann} sich ausgiebig in der \\jump[https://de.wikipedia.org/wiki/Systemtheorie_(Luhmann)]{}{Luhmannschen Systemtheorie} beschäftigt. \\\\ Weitere Quellen dazu: \\\\ Videos: \\\\ \\jump[https://www.youtube.com/watch?v=_J-8lrTW9Fc]{}{Niklas Luhmann: Systemtheorie} \\\\ \\jump[https://www.youtube.com/watch?v=Bg7ijbjvcm8]{}{Philosophisches Gespräch: Niklas Luhmann. Die unwahrscheinliche Gesellschaft} }}'."\n"))),
+                    'Nur auf diese Weise können wir Existenz feststellen.\footnote[*Bearb]{\color{*Bearb}{Damit, dass Systeme nur im Kontext ihrer Umgebung über ihre Differenz zu dieser funktionieren und sich in ihrem Unterschied zu dieser definieren, hat \jump[https://de.wikipedia.org/wiki/Niklas_Luhmann]{}{Niklas Luhmann} sich ausgiebig in der \jump[https://de.wikipedia.org/wiki/Systemtheorie_(Luhmann)]{}{Luhmannschen Systemtheorie} beschäftigt. \\\\ Weitere Quellen dazu: \\\\ Videos: \\\\ \jump[https://www.youtube.com/watch?v=_J-8lrTW9Fc]{}{Niklas Luhmann: Systemtheorie} \\\\ \jump[https://www.youtube.com/watch?v=Bg7ijbjvcm8]{}{Philosophisches Gespräch: Niklas Luhmann. Die unwahrscheinliche Gesellschaft} }}'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:Eigenschaftsprinzip', text =>
                                            
                 'Eigenschaftsprinzip', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Die Dinge haben immer Eigenschaften und diese ergeben sich ausschließlich aus der dynamischen Struktur ihrer Bestandteile.'."\n",
-                    '\\color{*Bearb}{Ausschließlich aus dem dynamischen Verhalten der Bestandteile der Dinge ergeben sich deren Eigenschaften. Dieses Verhalten ist Ausdruck der gesamten dynamischen Struktur.}'."\n"))),
+                    '\color{*Bearb}{Ausschließlich aus dem dynamischen Verhalten der Bestandteile der Dinge ergeben sich deren Eigenschaften. Dieses Verhalten ist Ausdruck der gesamten dynamischen Struktur.}'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:Vereinfachungsprinzip', text =>
                                            
                 'Vereinfachungsprinzip', subline =>
@@ -103,7 +103,7 @@
                     'Und der Zusammenhang ihrer Bestandteile ist es, der die Dinge kompliziert oder komplex macht.'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Daraus resultieren dann, bei fortschreitender Zerlegung,  immer einheitlichere Bestandteile, die sich auch mit immer einheitlicherer Geschwindigkeit bewegen.'."\n".
-                          'Wegen des \\jump{OM:FrQFT:FirstPrinciples:Vortext:Bewegungsprinzip}{Bewegungsprinzips} mit konstanter endlicher Geschwindigkeit.',
+                          'Wegen des \jump{OM:FrQFT:FirstPrinciples:Vortext:Bewegungsprinzip}{Bewegungsprinzips} mit konstanter endlicher Geschwindigkeit.',
                         'Die Geschwindigkeit der Bestandteile ist nicht in ihrer Richtung eingeschränkt.'."\n".
                           'Denn durch den Neheh-Aspekt des Existenzprinzips wird klar, die Bewegungsrichtung muss im Kreis laufen können.',
                     ))),
@@ -114,19 +114,19 @@
                   array( 'text', array( text => array(
                     'Die Physik besitzt eine fraktale Struktur, die wir aus unterschiedlichen Perspektiven erkennen können:'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Holarchie} \\\\'."\n".
+                  '\condb{Holarchie} \\\\'."\n".
                     'Jedes Ding ist auch ein Bestandteil und jeder Bestandteil ist auch ein Ding.'."\n".
-                    'Die Natur ist eine Holarchie\\color{*Bearb}{(Verweis)}.'."\n"))),
+                    'Die Natur ist eine Holarchie\color{*Bearb}{(Verweis)}.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Fraktales Existenzprinzip, fraktaler Djet-Neheh-Dualismus} \\\\'."\n".
-                    'Wenn jedes Bestandteil auch ein Ding ist, dann gilt auch für dieses das \\jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{Existenzprinzip}.'."\n".
+                  '\condb{Fraktales Existenzprinzip, fraktaler Djet-Neheh-Dualismus} \\\\'."\n".
+                    'Wenn jedes Bestandteil auch ein Ding ist, dann gilt auch für dieses das \jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{Existenzprinzip}.'."\n".
                     'Es besteht aus Bestandteilen, die aneinander gebunden sind.'."\n".
                     'Für diese gilt wiederum das Existenzprinzip.'."\n".
                     'Und so setzt sich das Fraktal ins immer Kleinere fort.'."\n",
                       'Da in einer Holarchie jedes Ding auch ein Bestandteil eines anderen Dings ist, reicht die fraktale Struktur ebenso ins immer Größere.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Bewegung ist Ausgangspunkt, nicht Ruhe} \\\\'."\n".
-                    'Nach dem \\jump{OM:FrQFT:FirstPrinciples:Vortext:Vereinfachungsprinzip}{Vereinfachungsprinzip} ist die konstante Bewegung der tiefen Strukturen'."\n".
+                  '\condb{Bewegung ist Ausgangspunkt, nicht Ruhe} \\\\'."\n".
+                    'Nach dem \jump{OM:FrQFT:FirstPrinciples:Vortext:Vereinfachungsprinzip}{Vereinfachungsprinzip} ist die konstante Bewegung der tiefen Strukturen'."\n".
                     'ein First-Principle der Theorie.'."\n".
                     'Es wird also nicht die Ruhe der Bestandteile als Ausgangspunkt der Physik angenommen, sondern in den tiefsten Tiefen die ewige konstante Bewegung.'."\n",
                       'Jede Wechselwirkung in einer solchen Struktur, jede Form von Spannung, ist dann nichts anderes als die Ablenkung eines Teils der Bewegung der Bestandteile der Dinge.'."\n".
@@ -144,7 +144,7 @@
                 'Raum-Zeit-Prinzip', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\\color{*Entwick}{(Dieses Prinzip ist nicht so einfach korrekt zu formulieren. Daher werde ich zu Beginn immer wieder versuchen es zu verbessern.)}'."\n",
+                    '\color{*Entwick}{(Dieses Prinzip ist nicht so einfach korrekt zu formulieren. Daher werde ich zu Beginn immer wieder versuchen es zu verbessern.)}'."\n",
                       'Raum und Zeit entstehen aus der Bewegung der Bestandteile der Dinge; aus der strukturellen Veränderung der Dinge.'."\n".
                     'Hierbei ist vor allem die konstante Geschwindigkeit von Bestandteilen entscheidend, weil diese Vergleiche der Veränderung der Dinge ermöglichen.'."\n".
                     'Die (annähernd) konstante Geschwindigkeit wird vom Vereinfachungsprinzip auf sehr kleinen Strukturebenen ins Spiel gebracht.'."\n"))),
@@ -156,8 +156,8 @@
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent', Title =>
-                '\\color{*Bearb}{Später in die Entwicklung der neuen Physik …}', TitleVis =>
-                '\\color{*Bearb}{Später in die Entwicklung der neuen Physik:}', ParagraphList => array(
+                '\color{*Bearb}{Später in die Entwicklung der neuen Physik …}', TitleVis =>
+                '\color{*Bearb}{Später in die Entwicklung der neuen Physik:}', ParagraphList => array(
                   array( 'text', array( text => array(
                     'Das Fraktalitätsprinzip macht deutlich, dass es beliebig tief verschachtelte Organisationsebenen der Struktur gibt.'."\n".
                     'Das Vereinfachungsprinzip besagt, dass im sehr Kleinen Organisationsebenen existieren, in denen die Bestandteile der Dinge in der höheren, größeren'."\n".
@@ -176,61 +176,61 @@
                 'Abzählprinzip', subline =>
                   'Äquivalenz von Masse und Energie')),
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '• \\term{E = m⋅c^^{2}}:',
+                    '• \term{E = m⋅c^^{2}}:',
                     '– Erklärung:',
-                    '⋅ \\jump[https://www.youtube.com/watch?v=AdwN4t6NiII]{}{Mahesh Shenoy on FloatHeadPhysics — Why speed of light results in E = mc^2 ? [Einstein\'s original proof]}',
-                    '⋅ \\jump[https://www.youtube.com/watch?v=KZ8G4VKoSpQ]{}{Physics Explained — Deriving Einstein\'s most famous equation: Why does energy = mass x speed of light squared?}',
-                    '– Die Proportionalität von Energie und Masse ist eine direkte Schlussfolgerung der FrQFT, die sich aus der Annahme (Postulat bzw. Axiom) ergibt, dass Wirkungsquanten sowohl Energieeinheiten als auch Masseneinheiten sind (absolut nur auf der untersten Strukturebene des analysierten Modells)! Dies setzt ein konstantes Verhältnis voraus, welches nach unseren Beobachtungen das Quadrat der Lichtgeschwindigkeit \\term{c^^{2}} der bekannten Formel \\term{E = m⋅c^^{2}} ist.(Verweis auf Wikipedia: ›Äquivalenz von Masse und Energie‹, Überblick und Beispiele, Vernichtungsstrahlung. Dies ist keine relativistisch interpretierte Beobachtung, sondern eine quantenphysikalisch interpretierte!) Siehe auch \\jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{Herleitung der Lichtverlangsamung} (falls dort nicht entbehrlich geworden …).',
-                    '– Albrecht Giese erklärt es: \\cite{Giese:TheOriginOfMass2019}, Kap. 5 Mass Energy Equivalence, S. 6-7.',
+                    '⋅ \jump[https://www.youtube.com/watch?v=AdwN4t6NiII]{}{Mahesh Shenoy on FloatHeadPhysics — Why speed of light results in E = mc^2 ? [Einstein\'s original proof]}',
+                    '⋅ \jump[https://www.youtube.com/watch?v=KZ8G4VKoSpQ]{}{Physics Explained — Deriving Einstein\'s most famous equation: Why does energy = mass x speed of light squared?}',
+                    '– Die Proportionalität von Energie und Masse ist eine direkte Schlussfolgerung der FrQFT, die sich aus der Annahme (Postulat bzw. Axiom) ergibt, dass Wirkungsquanten sowohl Energieeinheiten als auch Masseneinheiten sind (absolut nur auf der untersten Strukturebene des analysierten Modells)! Dies setzt ein konstantes Verhältnis voraus, welches nach unseren Beobachtungen das Quadrat der Lichtgeschwindigkeit \term{c^^{2}} der bekannten Formel \term{E = m⋅c^^{2}} ist.(Verweis auf Wikipedia: ›Äquivalenz von Masse und Energie‹, Überblick und Beispiele, Vernichtungsstrahlung. Dies ist keine relativistisch interpretierte Beobachtung, sondern eine quantenphysikalisch interpretierte!) Siehe auch \jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung}{Herleitung der Lichtverlangsamung} (falls dort nicht entbehrlich geworden …).',
+                    '– Albrecht Giese erklärt es: \cite{Giese:TheOriginOfMass2019}, Kap. 5 Mass Energy Equivalence, S. 6-7.',
                     ))),
                   array( 'text', array( text => array(
-                    'Nach dem \\jump{OM:FrQFT:FirstPrinciples:Vortext:Vereinfachungsprinzip}{Vereinfachungsprinzip} haben wir es bei extremer Auflösung, in der Fraktalebene unterhalb der Photonen – der Lichtteilchen –,'."\n".
+                    'Nach dem \jump{OM:FrQFT:FirstPrinciples:Vortext:Vereinfachungsprinzip}{Vereinfachungsprinzip} haben wir es bei extremer Auflösung, in der Fraktalebene unterhalb der Photonen – der Lichtteilchen –,'."\n".
                     'mit ziemlich einheitlichen Bestandteilen unserer Natur zu tun.'."\n".
                     'Die Einheitlichkeit der Bestandteile resultiert demnach auch in ihrer konstanten Geschwindigkeit, ihrer konstanten Energie und ihrer konstanten Masse.'."\n".
-                    'Das \\jump{OM:FrQFT:FirstPrinciples:Vortext:Eigenschaftsprinzip}{Eigenschaftsprinzip} wiederum besagt, das alle Eigenschaften der Dinge aus ihrer Struktur entstehen.'."\n",
-                      'Das Abzählprinzip erkennt, dass die Energie und die Masse eines Dings einfach auf der Anzahl \\term{n__{wq}}'."\n".
+                    'Das \jump{OM:FrQFT:FirstPrinciples:Vortext:Eigenschaftsprinzip}{Eigenschaftsprinzip} wiederum besagt, das alle Eigenschaften der Dinge aus ihrer Struktur entstehen.'."\n",
+                      'Das Abzählprinzip erkennt, dass die Energie und die Masse eines Dings einfach auf der Anzahl \term{n__{wq}}'."\n".
                     'der einheitlichen Bestandteile beruhen, die zu ihm gehören, deren Zusammenhang das Ding formen.'."\n".
-                    'Jedes im Grunde einheitliche Bestandteil, jedes Fundamentalteilchen, eines Dings ist also eine konstante Energieeinheit \\term{E__{wq}}'."\n".
-                    'oder eine konstante Masseneinheit \\term{m__{wq}} (allgemeiner in Formel \\jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-EnergieSumWQEnergie} beschrieben):'."\n"))),
+                    'Jedes im Grunde einheitliche Bestandteil, jedes Fundamentalteilchen, eines Dings ist also eine konstante Energieeinheit \term{E__{wq}}'."\n".
+                    'oder eine konstante Masseneinheit \term{m__{wq}} (allgemeiner in Formel \jumpname{OM:FrQFT:ZeitAlterungFrequenz:Equ-EnergieSumWQEnergie} beschrieben):'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'FP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E  =  n_{wq} \cdot E_{wq}  }',
-                                               label_name => 'OM:FrQFT:FirstPrinciples:Vortext:Equ-EnergieSumWQEnergie', label_text => '\\name{OM:FrQFT:FirstPrinciples:Vortext:Equ-EnergieSumWQEnergie}', label_incr => true),
+                                               label_name => 'OM:FrQFT:FirstPrinciples:Vortext:Equ-EnergieSumWQEnergie', label_text => '\name{OM:FrQFT:FirstPrinciples:Vortext:Equ-EnergieSumWQEnergie}', label_incr => true),
                       array( display => 'on',  latex => '{  m  =  n_{wq} \cdot m_{wq}  }',
-                                               label_name => 'OM:FrQFT:FirstPrinciples:Vortext:Equ-EMasseSumWQEnergie', label_text => '\\name{OM:FrQFT:FirstPrinciples:Vortext:Equ-EMasseSumWQEnergie}', label_incr => true),
+                                               label_name => 'OM:FrQFT:FirstPrinciples:Vortext:Equ-EMasseSumWQEnergie', label_text => '\name{OM:FrQFT:FirstPrinciples:Vortext:Equ-EMasseSumWQEnergie}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Die Energieeinheit passt auch sehr plausibel zu deren konstanten Geschwindigkeit.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Abgeleitete fundamentale Zusammhänge} \\\\'."\n".
-                    'Ist das Ding ein Elementarteilchen, dann zeigt sich die Abzählbarkeit seiner einheitlichen Bestandteile bei der Messung seiner Energie \\term{E__{ele}} oder seines Impulses \\term{p__{ele}} in der Heisenbergschen Unschärferelation.'."\n".
-                    'Denn in der \\jump{OM:FrQFT:HeisenbergUnschaerfe}{Abzählinterpretation der Heisenbergschen Unschärferelation} spiegelt sich die prinzipielle Unschärfe einer solchen Abzählung wider,'."\n".
-                    'wenn wir davon ausgehen, dass es bei der Energie um die Zählung von einheitlichen Wirkungen \\term{h} (Plancksches Wirkungsquantum) pro Zeit und beim Impuls um \\term{h} pro Strecke geht.'."\n"))),
+                  '\condb{Abgeleitete fundamentale Zusammhänge} \\\\'."\n".
+                    'Ist das Ding ein Elementarteilchen, dann zeigt sich die Abzählbarkeit seiner einheitlichen Bestandteile bei der Messung seiner Energie \term{E__{ele}} oder seines Impulses \term{p__{ele}} in der Heisenbergschen Unschärferelation.'."\n".
+                    'Denn in der \jump{OM:FrQFT:HeisenbergUnschaerfe}{Abzählinterpretation der Heisenbergschen Unschärferelation} spiegelt sich die prinzipielle Unschärfe einer solchen Abzählung wider,'."\n".
+                    'wenn wir davon ausgehen, dass es bei der Energie um die Zählung von einheitlichen Wirkungen \term{h} (Plancksches Wirkungsquantum) pro Zeit und beim Impuls um \term{h} pro Strecke geht.'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
-                      'Die in der Abzählinterpretation der Heisenbergschen Unschärferelation gezählten diskreten Wirkungen \\term{h} entsprechen den genannten einheitlichen Fundamentalteilchen'."\n".
-                      'der Elementarteilchen, weshalb ich diese \\bold{Wirkungsquanten (wq)} nenne.'."\n"))),
+                      'Die in der Abzählinterpretation der Heisenbergschen Unschärferelation gezählten diskreten Wirkungen \term{h} entsprechen den genannten einheitlichen Fundamentalteilchen'."\n".
+                      'der Elementarteilchen, weshalb ich diese \bold{Wirkungsquanten (wq)} nenne.'."\n"))),
                                                       
                   array( 'text', array( text => array(
-                    'Hieraus ergibt sich dann Plancks allgemeine Proportionalität von Energie und De-Broglie-Frequenz\\footnote{\\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}}'."\n".
-                    'der Elementarteilchen, die uns auch in Form der ›Einsteinschen Gleichung für das Lichtquant‹\\footnote{\\const{FrQFT_g_footnote_text_EinsteinGleichLichtq}} bekannt ist:'."\n"))),
+                    'Hieraus ergibt sich dann Plancks allgemeine Proportionalität von Energie und De-Broglie-Frequenz\footnote{\const{FrQFT_g_footnote_text_DeBroglieFrequenzWellen}}'."\n".
+                    'der Elementarteilchen, die uns auch in Form der ›Einsteinschen Gleichung für das Lichtquant‹\footnote{\const{FrQFT_g_footnote_text_EinsteinGleichLichtq}} bekannt ist:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'FP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E_{ele}  =  h \cdot f_{ele}  }',
-                                               /* label_name =>'', */ label_text => '\\jumpname{OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant}', label_incr => false,
-                                               footnote => 'Vgl. \\cite{wiki:PlanckschesWirkungsquantum2013}, Definition.'),
+                                               /* label_name =>'', */ label_text => '\jumpname{OM:FrQFT:HeisenbergUnschaerfe:Equ-EinsteinEnergieLichtQuant}', label_incr => false,
+                                               footnote => 'Vgl. \cite{wiki:PlanckschesWirkungsquantum2013}, Definition.'),
                     ))),
                   array( 'text', array( text => array(
-                    'Aus den Formeln \\jumpname{OM:FrQFT:FirstPrinciples:Vortext:Equ-EnergieSumWQEnergie} und \\jumpname{OM:FrQFT:FirstPrinciples:Vortext:Equ-EMasseSumWQEnergie} ist auch ersichtlich,'."\n".
+                    'Aus den Formeln \jumpname{OM:FrQFT:FirstPrinciples:Vortext:Equ-EnergieSumWQEnergie} und \jumpname{OM:FrQFT:FirstPrinciples:Vortext:Equ-EMasseSumWQEnergie} ist auch ersichtlich,'."\n".
                     'dass es sich bei der Masse und der Energie eines Dings im Grunde um das gleiche handelt, was zur Äquivalenz von Masse und Energie führt.'."\n".
-                    'Einsteins berühmte Formel ergibt sich hieraus also selbstredend, weil die Proportionalitätskonstante offensichtlich \\hidden{\\latexmath{ {_{\lowZero}c^{2}} }}\\term{__{0}c^^{2}} ist,'."\n".
-                    'wie wir aus vielen experimentellen Beobachtungen wissen.\\footnote{Die Äquivalenz von Masse und Energie ist keine reine Erkenntnis der Relativitätstheorie und eben auch in vielen verschiedenen Experimenten aus der Quantenphysik bestätigt: \\\\ \\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AequivalenzVonMasseUndEnergie2013}.}'."\n".
+                    'Einsteins berühmte Formel ergibt sich hieraus also selbstredend, weil die Proportionalitätskonstante offensichtlich \hidden{\latexmath{ {_{\lowZero}c^{2}} }}\term{__{0}c^^{2}} ist,'."\n".
+                    'wie wir aus vielen experimentellen Beobachtungen wissen.\footnote{Die Äquivalenz von Masse und Energie ist keine reine Erkenntnis der Relativitätstheorie und eben auch in vielen verschiedenen Experimenten aus der Quantenphysik bestätigt: \\\\ \color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AequivalenzVonMasseUndEnergie2013}.}'."\n".
                     'Ich sehe keinen Grund eine andere Proportionalität anzunehmen:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'FP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E  =  m \cdot {_{\lowZero}c^{2}}  }',
-                                               label_name => 'OM:FrQFT:FirstPrinciples:Vortext:Equ-E-ele-aequi-zu-Masse', label_text => '\\name{OM:FrQFT:FirstPrinciples:Vortext:Equ-E-ele-aequi-zu-Masse}', label_incr => true,
-                                               footnote => '\\const{FrQFT_g_footnote_text_AequivalMasseEnergie}'),
+                                               label_name => 'OM:FrQFT:FirstPrinciples:Vortext:Equ-E-ele-aequi-zu-Masse', label_text => '\name{OM:FrQFT:FirstPrinciples:Vortext:Equ-E-ele-aequi-zu-Masse}', label_incr => true,
+                                               footnote => '\const{FrQFT_g_footnote_text_AequivalMasseEnergie}'),
                     ))),
                   array( 'text', array( text => array(
                     'Einsteins Allgemeingültigkeit der Äquivalenz von Masse und Energie gehört also aus strukturellen Gründen zum Ausgangspunkt der fraktalen Quanten-Fluss-Theorie.'."\n"))),
@@ -270,8 +270,8 @@
                 'Wechselwirkungsprinzip', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Jede Wechselwirkung entsteht aus einem \\jump{OM:FrQFT:WasIstPhysik:Vortext:Symmetriebrueche-Pole-und-Wechselwirkungen}{Symmetriebruch}, der Pole erzeugt,'."\n".
-                    'die miteinander in \\jump{OM:FrQFT:WasIstPhysik:Vortext:Symmetriebrueche-Pole-und-Wechselwirkungen}{Wechselwirkung} stehen.'."\n"))),
+                    'Jede Wechselwirkung entsteht aus einem \jump{OM:FrQFT:WasIstPhysik:Vortext:Symmetriebrueche-Pole-und-Wechselwirkungen}{Symmetriebruch}, der Pole erzeugt,'."\n".
+                    'die miteinander in \jump{OM:FrQFT:WasIstPhysik:Vortext:Symmetriebrueche-Pole-und-Wechselwirkungen}{Wechselwirkung} stehen.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
                                            
                 'Regelprozess-Prinzip', subline =>
@@ -288,11 +288,11 @@
                 'Elementares Bewusstsein …', TitleVis =>
                 'Elementares Bewusstsein:', ParagraphList => array(
                   array( 'text', array( text => array(
-                    'Über die Selbstorganisation jeder Existenz durch Regelprozesse kommt \\jump{OM:SpaLeb:Bewusstsein:Vortext:Elementarprozess}{elementares Bewusstsein}'."\n".
+                    'Über die Selbstorganisation jeder Existenz durch Regelprozesse kommt \jump{OM:SpaLeb:Bewusstsein:Vortext:Elementarprozess}{elementares Bewusstsein}'."\n".
                     'als grundlegender Bestandteil in die neue Physik.'."\n".
                     'Das elementare Bewusstsein kann sich dann durch evolutionäre Prozesse durch die Entstehung komplexerer Strukturen des Lebens zu Achtsamkeitsprozessen'."\n".
-                    'mit \\jump{OM:SpaLeb:Bewusstsein:Vortext:RudimentaeresBewusstsein}{rudimentärem Bewusstsein} oder'."\n".
-                    '\\jump{OM:SpaLeb:Bewusstsein:Vortext:KognitivesBewusstsein}{kognitivem Bewusstsein} weiterentwickeln.'."\n"))),
+                    'mit \jump{OM:SpaLeb:Bewusstsein:Vortext:RudimentaeresBewusstsein}{rudimentärem Bewusstsein} oder'."\n".
+                    '\jump{OM:SpaLeb:Bewusstsein:Vortext:KognitivesBewusstsein}{kognitivem Bewusstsein} weiterentwickeln.'."\n"))),
                     ))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
                                            
@@ -313,7 +313,7 @@
                 'XXX', subline =>
                   'XXX')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -324,18 +324,18 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'fade-in-area', array( Display => 'hideContent', Title =>
-                '\\color{*Bearb}{Experimentelle Untersuchungen …}', TitleVis =>
-                '\\color{*Bearb}{Experimentelle Untersuchungen:}', ParagraphList => array(
+                '\color{*Bearb}{Experimentelle Untersuchungen …}', TitleVis =>
+                '\color{*Bearb}{Experimentelle Untersuchungen:}', ParagraphList => array(
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n"))),
+                    '\color{*Bearb}{In Arbeit …}'."\n"))),
                   array( 'text', array( text => array(
-                    'Warum ist die Proportionalitätskonstante in der Äquivalenz von Energie und Masse immer \\term{__{0}c^^{2}}?'."\n"))),
+                    'Warum ist die Proportionalitätskonstante in der Äquivalenz von Energie und Masse immer \term{__{0}c^^{2}}?'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'Test', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E  =  m \cdot {_{\lowZero}c^{2}}  }'),
                     ))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        '\\color{*Bearb}{Dazu passen würde, dass die Mantelflächen der Impulskegel der Wirkungsquanten in der Zeit mit der Flächengeschwindigkeit \\term{__{0}c^^{2}} wachsen.}',
+                        '\color{*Bearb}{Dazu passen würde, dass die Mantelflächen der Impulskegel der Wirkungsquanten in der Zeit mit der Flächengeschwindigkeit \term{__{0}c^^{2}} wachsen.}',
                         'XXX',
                         'XXX',
                         'XXX',
@@ -357,8 +357,8 @@
                     'Nach Einsteins Herleitung der Äquivalenz von Energie und Masse geht es um die Einsicht, dass der Austausch von Energie dem Austausch von Masse gleich kommen muss,'."\n".
                     'wollen wir die Erhaltung von Energie und Masse sowie die Erhaltung der Bewegung, ohne einen Einfluss von Außen, erfüllen.'."\n".
                     'Alles zusammen entspricht dem Prinzip der trägen Masse, die ohne Einfluss von außen ihren Bewegungszustand nicht verändert.'."\n",
-                      '(Vgl. Wikipedia: \\jump[https://de.wikipedia.org/w/index.php?title=Äquivalenz_von_Masse_und_Energie&oldid=209175854#cite_note-Einstein1907-10]{}{Äquivalenz von Masse und Energie} — Albert Einstein: Über die vom Relativitätsprinzip geforderte Trägheit der Energie. In: Annalen der Physik. Band 328, Nr. 7, 1907, S. 371–384, doi:\\jump[https://doi.org/10.1002/andp.19073280713]{}{10.1002/andp.19073280713}, bibcode:\\jump[https://ui.adsabs.harvard.edu/abs/1907AnP...328..371E]{}{1907AnP...328..371E} (\\jump[http://www.physik.uni-augsburg.de/annalen/history/einstein-papers/1907_23_371-384.pdf]{}{physik.uni-augsburg.de} [PDF]).)'."\n",
-                      '(Vgl. Wikipedia: \\jump[https://de.wikipedia.org/w/index.php?title=Äquivalenz_von_Masse_und_Energie&oldid=209175854#cite_note-Einstein1906-11]{}{Äquivalenz von Masse und Energie} — Albert Einstein: Das Prinzip von der Erhaltung der Schwerpunktsbewegung und die Trägheit der Energie. In: Annalen der Physik. Band 325, Nr. 8, 1906, S. 627–633, doi:\\jump[https://doi.org/10.1002/andp.19063250814]{}{10.1002/andp.19063250814}, bibcode:\\jump[https://ui.adsabs.harvard.edu/abs/1906AnP...325..627E]{}{1906AnP...325..627E} (\\jump[http://www.physik.uni-augsburg.de/annalen/history/einstein-papers/1906_20_627-633.pdf]{}{physik.uni-augsburg.de} [PDF]).)'."\n"))),
+                      '(Vgl. Wikipedia: \jump[https://de.wikipedia.org/w/index.php?title=Äquivalenz_von_Masse_und_Energie&oldid=209175854#cite_note-Einstein1907-10]{}{Äquivalenz von Masse und Energie} — Albert Einstein: Über die vom Relativitätsprinzip geforderte Trägheit der Energie. In: Annalen der Physik. Band 328, Nr. 7, 1907, S. 371–384, doi:\jump[https://doi.org/10.1002/andp.19073280713]{}{10.1002/andp.19073280713}, bibcode:\jump[https://ui.adsabs.harvard.edu/abs/1907AnP...328..371E]{}{1907AnP...328..371E} (\jump[http://www.physik.uni-augsburg.de/annalen/history/einstein-papers/1907_23_371-384.pdf]{}{physik.uni-augsburg.de} [PDF]).)'."\n",
+                      '(Vgl. Wikipedia: \jump[https://de.wikipedia.org/w/index.php?title=Äquivalenz_von_Masse_und_Energie&oldid=209175854#cite_note-Einstein1906-11]{}{Äquivalenz von Masse und Energie} — Albert Einstein: Das Prinzip von der Erhaltung der Schwerpunktsbewegung und die Trägheit der Energie. In: Annalen der Physik. Band 325, Nr. 8, 1906, S. 627–633, doi:\jump[https://doi.org/10.1002/andp.19063250814]{}{10.1002/andp.19063250814}, bibcode:\jump[https://ui.adsabs.harvard.edu/abs/1906AnP...325..627E]{}{1906AnP...325..627E} (\jump[http://www.physik.uni-augsburg.de/annalen/history/einstein-papers/1906_20_627-633.pdf]{}{physik.uni-augsburg.de} [PDF]).)'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
                                            
                 'Meine Ideen zur Äquivalenz von Energie sowie träger und schwerer Masse', subline =>
@@ -369,16 +369,16 @@
                     'Der Austausch von Energie ist mittlerweile auch mit dem Austausch elektromagnetischer Strahlung verknüpft, die den Zustand von Materie verändern kann.'."\n",
                       'Damit ergibt sich Energie aus einer mehr transzendenten Perspektive und die Masse aus einer mehr gegenständlichen.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Energie} \\\\'."\n".
+                  '\condb{Energie} \\\\'."\n".
                     'Aus Sicht der FrQFT ist die Dynamik, die Bewegung der Feinstruktur der Wirkungsquanten, das, was energetisch ist.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Masse} \\\\'."\n".
+                  '\condb{Masse} \\\\'."\n".
                     'Aus dieser Sicht ist Masse das, was in der Struktur der Dinge gebunden ist, die in ihren Eigenschaften durch Wechselwirkungen gut manipulierbar sind.'."\n".
                     'Diese Eigenschaften sind durch die dynamische Struktur bestimmt, die wiederum eine Summe der Menge und Dynamik der einzelnen Bestandteile darstellt, der Feinstruktur.'."\n",
                       'Die Manipulation geschieht durch den Austausch, das Hinzufügen oder das Wegnehmen von Unterstrukturen.'."\n".
                     'Dadurch ändert sich die dynamische Struktur der Dinge.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Träge Masse} \\\\'."\n".
+                  '\condb{Träge Masse} \\\\'."\n".
                     'Der Aspekt der trägen Masse ist nun, dass die äußere Bewegungsdynamik eines Dings eben nur durch das Hinzufügen und Wegnehmen von Unterstrukturen manipulierbar ist.'."\n",
                       'Wie stark sich die Bewegung eines Dings ändert, wenn ich etwas hinzufüge oder wegnehme, hängt vom Verhältnis der Menge und der Dynamik der Änderung ab.'."\n".
                     'Das nennen wir Impulserhaltung.'."\n",
@@ -387,10 +387,10 @@
                     'wie bei dem Ding einfacher Masse.'."\n".
                     'Das bedeutet, die Trägheit ist proportional zur Menge an vorhandener Struktur.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Schwere Masse} \\\\'."\n".
+                  '\condb{Schwere Masse} \\\\'."\n".
                     'Genau diese Struktur strahlt aber auch Störungswellen ab, die die Gravitation erzeugen und in ihrer Wirkung auch proportional zur Menge der vorhandenen Struktur sind.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Äquivalenz von Energie und Masse} \\\\'."\n".
+                  '\condb{Äquivalenz von Energie und Masse} \\\\'."\n".
                     'Das die träge Masse und die schwere Masse beide gleich und proportional zur Menge der vorhandenen Struktur sind und diese wiederum proportional zur Menge der inneren'."\n".
                     'Dynamik ist, die in der Struktur gebunden ist, führt zur Äquivalenz von Energie und Masse.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
@@ -543,7 +543,7 @@
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:XXX:XXX',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       //array(  jump_name => 'OM:FrQFT:XXX', type => 'back'),
@@ -565,7 +565,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
