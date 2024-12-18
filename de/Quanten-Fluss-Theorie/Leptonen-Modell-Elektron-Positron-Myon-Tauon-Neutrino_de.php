@@ -111,7 +111,7 @@
                   array( 'text', array( text => array(
                     'Das Modell der Quanten-Fluss-Theorie basiert auf einem neuen, auf einem strukturellen Verständnis der Zeit,'."\n".
                     'welches entscheidend dazu beiträgt, die Physik zu vereinheitlichen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Zeit-und-Alterung:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Zeit-und-Alterung:X', text =>
                                            
                 'Denn die Frage ist, wie kann es sein, dass ein Elementarteilchen schneller schwingt, wenn seine Gravitationsuhr langsamer läuft, es langsamer altert?', subline =>
                   '')),
@@ -227,7 +227,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'All dies wird für den Fall einer positiven elektrischen Ladung in der \jumpname{OM:FrQFT:Lepton:Vortext:Ani-Lepton} zusammengebracht.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Vortext:X', text =>
                                            
                 'Erste Analyse der Mechanik und Funktion', subline =>
                   '')),
@@ -245,7 +245,7 @@
                       'Die Umkehrung der nach außen gerichteten Polarisierung gibt es nur bei den neutralen Leptonen.'."\n".
                     'Aber bei den geladenen Leptonen gibt es die Umkehrung nicht in nennenswertem Maße, weil sich ihre Struktur im Moment der Umkehrung zusammenfaltet.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Vortext:X', text =>
                                            
                 'Mechanik des Leptonen-Wirkungsquanten-Strings', subline =>
                   '')),
@@ -313,7 +313,7 @@
                     'Dies entspricht der negativen elektrischen Ladung des Elektrons oder seines Antiteilchens Positron, sowie deren schwereren Schwester- und Bruderteilchen: Myon, Tauon und so weiter;'."\n".
                     'und im neutralen Fall den verschiedenen Neutrino-Arten.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:X', text =>
                                            
                 'Ansatz der Mechanik', subline =>
                   '')),
@@ -426,7 +426,7 @@
                     'Gemeinsam mit dem beobachteten Leptonen-Spin und seiner Masse berechnen wir jetzt wichtige Eigenschaften'."\n".
                     'des Leptonen-Modells.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:X', text =>
                                            
                 'Ansatz der konkreten Berechnung der Modelleigenschaften', subline =>
                   'Ausgangspunkt ist der in Experimenten beobachtete Leptonen-Spin')),
@@ -740,7 +740,7 @@
                   array( 'fade-in-area', array( Display => 'hideContent', Title =>
                 'Träge Masse und starke Wechselwirkung …', TitleVis =>
                 'Träge Masse und starke Wechselwirkung:', ParagraphList => array(
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:X', text =>
                                            
                 'Träge Masse', subline =>
                   '')),
@@ -811,7 +811,7 @@
                     'nämlich \latexmath{\hbar}.'."\n".
                     'Wir haben es demnach also in ihrer Mechanik mit einer vom Funktionsprinzip her wirklichen Lichtuhr zu tun.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:X', text =>
                                            
                 'Abschätzung der Richtigkeit der Näherung der Mittelwerte', subline =>
                   '')),
@@ -820,11 +820,7 @@
                       'Trotz der Schwankung der Spin-Geschwindigkeit ist klar, dass der String nach einem Schwingungsdurchgang ein \term{n__{wel}}-tel des Spin-Bahnumfangs zurückgelegt hat.'."\n".
                     'Daher stimmt die Spin-Geschwindigkeit nach einer Schwingung mit ihrem Mittel überein.'."\n",
                       'Da der String schwingend mal weiter entfernt mal näher dran um die Spin-Bahn rotiert muss sein mittlerer Spin-Radius dem Radius \term{r__{spin}} dieser Bahn entsprechen.'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'Lep.Mod', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -832,71 +828,36 @@
                       array( display => 'on',  latex => '{  r_{licht,rot}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:X', text =>
                                            
                 'Berechnung des Neutrino-Modells', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'Das Neutrino-Modell hat die Besonderheit, dass sich ein Polwechsel des elektrischen Feldes auf zwei Sternzacken'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Das Neutrino-Modell hat die Besonderheit, dass sich ein Polwechsel des elektrischen Feldes auf zwei Sternzacken'."\n".
                     'verteilt.'."\n".
                     'Daher sind zwei Schwingungsdurchgänge notwendig, um das Modell wieder in einen komplett ununterscheidbaren Zustand'."\n".
                     'zu überführen.'."\n".
                     'Aus der Ferne reicht allerdings ein Durchgang, um diesen Eindruck zu erzeugen, weil die Pole der elektrischen Feldstärke dort ausgleichen.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:X', text =>
                                            
                 'Berechnung des magnetischen Moments', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'Siehe Giese …'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Siehe Giese …'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:Lepton:Berechnung-der-String-Mechanik:X', text =>
                                            
-                'XXX', subline =>
+                '\color{*Bearb}{(In Arbeit …)}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
@@ -1154,7 +1115,6 @@
 
           
 		    	<!  • Antiteilchen:  >
-		    	<!    • XXX.  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Antiteilchen',
               'Aus Teilchen kann man nicht durch Drehung oder Spiegelung Antiteilchen machen', 'Sc_f_Paragraph',
@@ -1188,9 +1148,9 @@
                       'Ein Neutron (\term{d + 2u}) wäre hiernach neutral, also weder Teilchen noch Antiteilchen.'."\n".
                     'Strukturell hätte das Neutron trotzdem ein Antiteilchen, das andersherum neutral ist, nämlich das Anti-Neutron (\term{2(-d) + (-u)}) mit entsprechenden Anti-Quarks.'."\n".
                     'Der so gefundene Teilchen-Antiteilchen-Wert hat also keine beliebige Bedeutung dafür, ob ein Teilchen ein Antiteilchen ist, denn er drückt nur seine Ladungszahl aus.'."\n",
-                    'XXX'."\n",
-                    'XXX Betazerfall?'."\n".
-                    'XXX'."\n"))),
+                    'X'."\n",
+                    'X Betazerfall?'."\n".
+                    'X'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                       'Ich stelle fest:'."\n".
@@ -1282,11 +1242,11 @@
                     'Elektron, Myon und Tauon bilden die Familie der \jump{OM:FrQFT:Lepton:Elektrische-Ladung}{elektrisch geladenen Leptonen} und stehen für verschiedene Generationen der'."\n".
                     'gleichen Wirkungsquanten-String-Struktur.'."\n".
                     'Diese Struktur schwingt elektrisch zwischen einen starken elektrischen Hauptpol und einem entgegengesetzten schwachen Nebenpol.'."\n".
-                    'So ergibt sich im Mittel der beobachtete elektrische Ladungspol (siehe \jumpname{OM:FrQFT:Lepton:Vortext:Ani-Lepton} und Abbildung \color{*Bearb}{XXX}).'."\n"))),
+                    'So ergibt sich im Mittel der beobachtete elektrische Ladungspol (siehe \jumpname{OM:FrQFT:Lepton:Vortext:Ani-Lepton} und Abbildung \color{*Bearb}{X}).'."\n"))),
                   array( 'text', array( text => array(
                     'Die \jump{OM:FrQFT:Lepton:Neutrinos}{Neutrino}-Generationen Elektron-, Myon- und Tauon-Neutrino bilden die Familie der \jump{OM:FrQFT:Lepton:Elektrische-Ladung}{ungeladenen Leptonen}.'."\n".
                     'Auch diese Familie besitzt im Wesentlichen die gleiche Wirkungsquanten-String-Struktur, nur das in diesem Fall positive und negative elektrische Pole'."\n".
-                    'gleichzeitig nach außen gerichtet sind (siehe Film \color{*Bearb}{XXX} Abbildung \color{*Bearb}{XXX}).'."\n".
+                    'gleichzeitig nach außen gerichtet sind (siehe Film \color{*Bearb}{X} Abbildung \color{*Bearb}{X}).'."\n".
                     'Diese Teilchen sind also im Durchschnitt elektrisch neutral, besitzen aber aufgrund der asymmetrischen Verteilung und Bewegung der inneren Pole eine'."\n".
                     '\jump{OM:FrQFT:Lepton:Schwache-Ladung}{schwache Ladung}.'."\n"))),
                   array( 'text', array( text => array(
@@ -1341,15 +1301,15 @@
             'OM:FrQFT:Lepton:Welle-Teilchen-Dualismus',
               'Wellen- und Teilchencharakter sind kein Widerspruch', 'Sc_f_Paragraph',
                 array(
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Zu untersuchende Eigenschaften}',
+                    '• Beides soll zusammen gebracht worden sein, siehe \cite{Coles:EquivalenceOfWaveParticlEdualityToEntropicUncertainty2014} und Sekundärliteratur: \cite{Lingenhoehl:IstDieQuantenphysikWenigerKompliziert2014} \\\\ In einem Artikel auf \url{http://www.quantumlah.org/highlight/141220_wave_particle.php} ist zu lesen: \quote{›The connection between uncertainty and wave-particle duality comes out very naturally when you consider them as questions about what information you can gain about a system. Our result highlights the power of thinking about physics from the perspective of information,‹ says Wehner, who is now an Associate Professor at QuTech at the Delft University of Technology in the Netherlands.} \\\\ Ich hatte schon festgestellt, dass Photonen, also Zirkular polarisierte Elapsonen, Wellen- und Teilcheneigenschaften haben. Welleneigenschaften durch ihre Rotation und Wechselwirkung mit den Vakuum-Elapsonen und Teilcheneigenschaften, weil sie ein zusammen hängendes Gebilde sind.',
+                    ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(Beides soll zusammen gebracht worden sein, siehe \cite{Coles:EquivalenceOfWaveParticlEdualityToEntropicUncertainty2014} und Sekundärliteratur: \cite{Lingenhoehl:IstDieQuantenphysikWenigerKompliziert2014} \\\\ In einem Artikel auf \url{http://www.quantumlah.org/highlight/141220_wave_particle.php} ist zu lesen: \quote{›The connection between uncertainty and wave-particle duality comes out very naturally when you consider them as questions about what information you can gain about a system. Our result highlights the power of thinking about physics from the perspective of information,‹ says Wehner, who is now an Associate Professor at QuTech at the Delft University of Technology in the Netherlands.} \\\\ Ich hatte schon festgestellt, dass Photonen, also Zirkular polarisierte Elapsonen, Wellen- und Teilcheneigenschaften haben. Welleneigenschaften durch ihre Rotation und Wechselwirkung mit den Vakuum-Elapsonen und Teilcheneigenschaften, weil sie ein zusammen hängendes Gebilde sind.)}'."\n"))),
-                      
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit… \\\\'."\n".
-                    'Das Folgende in die Seiten Welleneigenschaften der Elementarteichen und Vakuum einarbeiten.}'."\n"))),
-                  array( 'text', array( text => array(
-                    'In der heutigen Physik kommt die Interpretation der Quantenmechanik im Allgemeinen zu dem Schluss, der Wellen- und der Teilchecharakter der'."\n".
+                    '\color{*Bearb}{(In Arbeit…)}'."\n",
+                      '\color{*Bearb}{(Das Folgende in die Seiten Welleneigenschaften der Elementarteichen und Vakuum einarbeiten.)}'."\n",
+                      'In der heutigen Physik kommt die Interpretation der Quantenmechanik im Allgemeinen zu dem Schluss, der Wellen- und der Teilchecharakter der'."\n".
                     'Elementarteilchen stünden im Widerspruch.'."\n".
                     'Man meint, diese Sicht entspräche der \jump{OM:FrQFT:HeisenbergUnschaerfe}{Heisenbergschen Unschärferelation},'."\n".
                     'weil nach ihr \quote{Ort und Impuls […] nicht gleichzeitig beliebig exakt bekannt sein}\footnote{\cite{Wilczek:DasRaetselhafteElektron2013}.}'."\n".
@@ -1357,42 +1317,28 @@
                     'Nach der Quanten-Fluss-Theorie entspricht die Heisenbergsche Unschärferelation allerdings einem'."\n".
                     '\jump{OM:FrQFT:HeisenbergUnschaerfe}{prinzipiellen Abzählproblem}'."\n".
                     'der Wirkungsquanten des Wirkungsquanten-Strings eines Elementarteilchens; also einer Wahrnehmungsgrenze.'."\n".
-                    'Der scheinbar existenzielle Widerspruch muss folglich nicht in der heute interpretierten Form bestehen bleiben.'."\n"))),
-                  array( 'text', array( text => array(
-                    'Die Quanten-Fluss-Theorie sieht ein Elementarteilchen grob gesprochen als „Wolke“ aus gekoppelten Wirkungsquanten.'."\n".
+                    'Der scheinbar existenzielle Widerspruch muss folglich nicht in der heute interpretierten Form bestehen bleiben.'."\n",
+                      'Die Quanten-Fluss-Theorie sieht ein Elementarteilchen grob gesprochen als „Wolke“ aus gekoppelten Wirkungsquanten.'."\n".
                     'Diese kann im Raum „verschmiert“ sein, indem die Wirkungsquanten des \jump{OM:FrQFT:Vakuum}{Vakuums} durch ihr emergentes Verhalten die Wolke'."\n".
                     'eines virtuellen Elementarteilchens implizieren.\footnote[*Bearb]{Auch in der Stringtheorie können Strings durch emergentes Verhalten andere Strings implizieren. Vgl. \color{*Bearb}{Brian Green heraussuchen}.}'."\n".
                     'Seine Eigenschaften sind dann im Raum verteilt. \\\\'."\n".
                     'Ein nicht virtuelles, konkretes Elementarteilchen besteht aus einem Wirkungsquanten-String, welcher von einer Wolke aus virtuellen Teilchen umgeben ist.'."\n".
                     'Es ist also recht klar durch die Kopplung seiner Wirkungsquanten und seine Rotation (\jump{OM:FrQFT:Lepton:Spins}{Spin}) auf einen Schwerpunkt konzentriert.'."\n".
                     'Dabei bringen seine Wirkungsquanten selbst und seine inneren Rotationen die Welleneigenschaften hervor. \\\\'."\n".
-                    'Der Übergang vom virtuellen zum konkreten Elementarteilchen und umgekehrt wird durch die Wechselwirkung mit anderen Elementarteilchen vollzogen.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    'Häufig wird argumentiert, dass der Wellen- und der Teilchencharakter von Elementarteilchen im Widerspruch wären.'."\n".
+                    'Der Übergang vom virtuellen zum konkreten Elementarteilchen und umgekehrt wird durch die Wechselwirkung mit anderen Elementarteilchen vollzogen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Häufig wird argumentiert, dass der Wellen- und der Teilchencharakter von Elementarteilchen im Widerspruch wären.'."\n".
                     'Im Grunde trägt aber jeder rotierende Körper den Charakter einer Welle, in Form seiner Rotation, und den eines'."\n".
                     'Teilchens, in Form der Rotationsachse und seines Schwerpunkts, in sich. \\\\'."\n".
                     'Bei der rotierenden Erde ist der Wellencharakter von außen kaum zu erkennen, da sich für einen Beobachter'."\n".
                     'vornehmlich nur die Farbe ihrer Oberfläche ändert.'."\n".
                     'Befindet man sich auf ihrer Oberfläche, so nimmt man ihre Rotation durch die Tag- und Nachtwechsel und die Bewegung'."\n".
-                    'der Sterne schon viel eher wahr.'."\n"))),
-                  array( 'text', array( text => array(
-                    'Befinden sich alledings wesentliche Strukturen eines Teilchens oder Körpers in Rotation, vielleicht sogar um mehrere'."\n".
-                    'Achsen, wie beim Leptonen-Modell die \jump{OM:FrQFT:Lepton:Elektrische-Ladung}{elektrische Polarisation}, dann kommt der Wellencharakter viel deutlicher zum Vorschein.'."\n"))),
-                  array( 'jumplist',
-                    array(
+                    'der Sterne schon viel eher wahr.'."\n",
+                      'Befinden sich alledings wesentliche Strukturen eines Teilchens oder Körpers in Rotation, vielleicht sogar um mehrere'."\n".
+                    'Achsen, wie beim Leptonen-Modell die \jump{OM:FrQFT:Lepton:Elektrische-Ladung}{elektrische Polarisation}, dann kommt der Wellencharakter viel deutlicher zum Vorschein.'."\n".
+                    ''))),
+
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Elementarteilchen:Welleneigenschaften-der-Elementarteilchen'),
                       array(  jump_name => 'OM:FrQFT:HeisenbergUnschaerfe'),
                     )),
@@ -1403,41 +1349,19 @@
 		    	<!  • Berechnungen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:FrQFT:Lepton:Berechnungen',
-              'XXX', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{Zu untersuchende Eigenschaften}',
+                    '• Landé-Faktor/Feinstrukturkonstante: Giese berechnet den Landé-Faktor mit sehr guter Genauigkeit aus seinem Basisteilchenmodell (siehe \cite{Giese:TheAppMystOfElectron2012}, Appendix B: The Landé factor.) Soll sich der Landé-Faktor aus der FrQFT ebenso ergeben, dann müssen auch hier immer die zwei gegenüber liegenden Elektronen-String-Segmente einander in ihrer Polarisation addieren. So wie es auch bei der Gravitation geschieht, weil sich die Abstrahlung mit \term{1/r} in den Raum ausbreitet. Seine Herleitung enthält allerdings noch Annahmen, die ich so vielleicht nicht treffen würde. Denn bei ihm wirkt die Kraft (welche ist das genau? String-Spannung oder EM-Polarisation?) eines Basisteilchens nicht nur senkrecht zu seiner Bahn. Ich muss also erst einmal sehen, was die Herleitung der Abflachung der Felder bei mir ergibt! Das elektrische Potential würde zu \term{1/r} passen (vgl. \url{http://de.wikipedia.org/wiki/Elektrisches_Potential}).',
+                    ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(• Landé-Faktor/Feinstrukturkonstante: Giese berechnet den Landé-Faktor mit sehr guter Genauigkeit aus seinem Basisteilchenmodell (siehe \cite{Giese:TheAppMystOfElectron2012}, Appendix B: The Landé factor.) Soll sich der Landé-Faktor aus der FrQFT ebenso ergeben, dann müssen auch hier immer die zwei gegenüber liegenden Elektronen-String-Segmente einander in ihrer Polarisation addieren. So wie es auch bei der Gravitation geschieht, weil sich die Abstrahlung mit \term{1/r} in den Raum ausbreitet. Seine Herleitung enthält allerdings noch Annahmen, die ich so vielleicht nicht treffen würde. Denn bei ihm wirkt die Kraft (welche ist das genau? String-Spannung oder EM-Polarisation?) eines Basisteilchens nicht nur senkrecht zu seiner Bahn. Ich muss also erst einmal sehen, was die Herleitung der Abflachung der Felder bei mir ergibt! Das elektrische Potential würde zu \term{1/r} passen (vgl. \url{http://de.wikipedia.org/wiki/Elektrisches_Potential}).)}'."\n"))),
-                      
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:XXX'),
+                      // array(  jump_name => 'OM:FrQFT:X'),
                     )),
               )
           ); ?>
