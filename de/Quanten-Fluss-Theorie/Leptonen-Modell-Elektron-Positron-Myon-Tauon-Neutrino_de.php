@@ -1003,8 +1003,8 @@
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '(• Die Entwicklung aller Formeln zum Lepton in einem Anhangskapitel unterbringen …)',
-                    '(• In der Heim-Theorie gibt es Hinweise darauf, wie der Isospin strukturell entsteht und wie sich seine Werte ergeben. Siehe Ordner "Isospin, Spin - Burkhard Heim - Das neue Weltbild des Physikers - cd2v4-07".)',
+                    '• Die Entwicklung aller Formeln zum Lepton in einem Anhangskapitel unterbringen.',
+                    '• In der Heim-Theorie gibt es Hinweise darauf, wie der Isospin strukturell entsteht und wie sich seine Werte ergeben. Siehe Ordner "Isospin, Spin - Burkhard Heim - Das neue Weltbild des Physikers - cd2v4-07".',
                     ))),
                     
                   array( 'text', array( text => array(
@@ -1018,7 +1018,7 @@
                     'Alle Spins sind von Masse und Ladung unabhängig.'."\n".
                     'Sowohl der äußere Spin, als auch der Wirkungsquanten-Spin besitzen den von Leptonen bekannten Wert:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'Lep', equ_list => array(
+                    array( equ_text_std => 'Lep', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  s_{lep}  =  \frac{1}{2} \hbar  }',
                                                label_name => 'Equ-5.10', label_text => '5.10',
                                                footnote => 'Vgl. \cite{wiki:Lepton2013}. \\\\ Vgl. \cite{Huss:GFTv7.381j2012}, Kap. 5.2.1 Leptonen, S. 89-100, hier S. 92.'),
@@ -1030,7 +1030,7 @@
                   array( 'text', array( text => array(
                     'Der innere Spin charakterisiert das Teilchen und sein Wert entspricht seiner wellenförmigen Phase wie folgt:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'Lep', equ_list => array(
+                    array( equ_text_std => 'Lep', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  s_{lep,innen}  =  \Bigl( 1 - \frac{ 1 }{ 2 \cdot n_{phase} } \Bigr) \cdot \hbar  }',
                                                label_name => 'Equ-5.37', label_text => '5.37',
                                                footnote => 'Vgl. '.(Sc_f_litera_cite_html( 'Huss:GFTv7.381j2012')).', Kap. 5.2.1 Leptonen, S. 89-100, hier S. 94. Dort wird '.(Sc_f_term_str( 'n<sub>phase</sub>')).' noch als '.(Sc_f_term_str( 'n<sub>pol</sub>')).' bezeichnet.'),
@@ -1066,11 +1066,13 @@
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Lepton:Spins', type => 'back'),
                     )),
+
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{Zu untersuchende Eigenschaften}',
+                    '• Den Text überarbeiten, er ist etwas komisch und unklar. Die punktförmige Wahrnehmung der Teilchen besser herausarbeiten. Vielleicht das Kapitel in Radien umbenennen?',
+                    '• Die Entwicklung aller Formeln zum Lepton in einem Anhangskapitel unterbringen.',
+                    ))),
                       
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{Den Text überarbeiten, er ist etwas komisch und unklar. Die punktförmige Wahrnehmung der Teilchen besser herausarbeiten. Vielleicht das Kapitel in Radien umbenennen …}'."\n"))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{Die Entwicklung aller Formeln zum Lepton in einem Anhangskapitel unterbringen …}'."\n"))),
                   array( 'text', array( text => array(
                     'Die rot gefärbten Wirkungsquanten zweier an einer Reaktion beteiligten Elementarteilchen beeinflussen sich im wesentlichen nur'."\n".
                     'über die Felder, welche sie durch die Struktur ihrer Strings im Raum erzeugen.'."\n".
@@ -1083,7 +1085,7 @@
                   array( 'text', array( text => array(
                     'Die Formel des Spin-Radius lautet:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'Lep', equ_list => array(
+                    array( equ_text_std => 'Lep', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  r_{spin}  =  \sqrt{ \frac{ n_{phase} }{ 2 } } \cdot \frac{ \hbar }{ m_{lep} \cdot c_{0} }  }',
                                                label_name => 'Equ-5.41', label_text => '5.41',
                                                footnote => 'Vgl. '.(Sc_f_litera_cite_html( 'Huss:GFTv7.381j2012')).', Kap. 5.2.1 Leptonen, S. 89-100, hier S. 94. Dort wird '.(Sc_f_term_str( 'n<sub>phase</sub>')).' noch als '.(Sc_f_term_str( 'n<sub>pol</sub>')).' bezeichnet.'),
@@ -1091,7 +1093,7 @@
                   array( 'text', array( text => array(
                     'Der Spin-Durchmesser eines ruhenden Elektrons, mit hypothetischen sechs Phasen, hätte dann die Größe:'."\n"))),
                   array( 'equations',
-                    array( equ_text_std => 'Lep', equ_list => array(
+                    array( equ_text_std => 'Lep', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n_{phase}  :=  6  }'),
                       array( display => 'on',  latex => '{  m_{e}  =  9.109 382 91 (40) \cdot 10^{-31} \;\; kg  }',
                                                footnote => 'Vgl. '.(Sc_f_litera_cite_html( 'NIST:CODATAElectrMas2011')).'.'),
