@@ -31,7 +31,7 @@
                     'In der \italic{\jumpname{OM:FrQFT:Einleitung}} sowie auf den daran anschließenden Seiten \italic{\jumpname{OM:FrQFT:WasIstPhysik}} und \italic{\jumpname{OM:FrQFT:WieMessenWirInDerPhysik}}'."\n".
                     'leite ich Grundprinzipien oder Naturprinzipien – sogenannte First-Principles – der Physik her.'."\n".
                     'Die nachfolgend aufgeführten Naturprinzipien gelten ohne Einschränkung.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:X', text =>
                                            
                 'Warum ein Naturprinzip?', subline =>
                   '… und keine Weltformel?')),
@@ -53,7 +53,7 @@
                   array( 'text', array( text => array(
                     'Physik macht nur Sinn, wenn sich die Eigenschaften der Dinge verändern können, ihre Bestandteile also in einem dynamischen Zusammenhang stehen und sich'."\n".
                     'daher \jump{OM:FrQFT:WasIstPhysik:Vortext:WarumDynamStrukt}{immer bewegen}.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:X', text =>
                                            
                 'Strukturprinzip', subline =>
                   '')),
@@ -139,7 +139,7 @@
                     'in sich selber rückkoppeln.'."\n".
                     'Das hat die Entstehung von Materie zur Folge, die von der Ruhe ihres Schwerpunktes bis fast zur Lichtgeschwindigkeit eine variable Geschwindigkeit'."\n".
                     'annehmen können.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:X', text =>
                                            
                 'Raum-Zeit-Prinzip', subline =>
                   '')),
@@ -162,13 +162,10 @@
                     'Das Fraktalitätsprinzip macht deutlich, dass es beliebig tief verschachtelte Organisationsebenen der Struktur gibt.'."\n".
                     'Das Vereinfachungsprinzip besagt, dass im sehr Kleinen Organisationsebenen existieren, in denen die Bestandteile der Dinge in der höheren, größeren'."\n".
                     'Ebene eine fast konstante Geschwindigkeit besitzt und in der nächst tieferen, kleineren Ebene die Geschwindigkeit der Bestandteile noch deutlich konstanter ist.'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX Zeit bezieht sich immer auf (die Veränderung der Strukturen und damit auf) die Veränderung der vergleichbaren Eigenschaften der Dinge.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                      '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Zeit bezieht sich immer auf (die Veränderung der Strukturen und damit auf) die Veränderung der vergleichbaren Eigenschaften der Dinge.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                     ))),
                       
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:Abzaehlprinzip', text =>
@@ -234,37 +231,29 @@
                     ))),
                   array( 'text', array( text => array(
                     'Einsteins Allgemeingültigkeit der Äquivalenz von Masse und Energie gehört also aus strukturellen Gründen zum Ausgangspunkt der fraktalen Quanten-Fluss-Theorie.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:X', text =>
                                            
                 'String-Prinzip', subline =>
                   '')),
-                  array( 'notice', array( Display => 'hideContent', text => array(
+                  array( 'notice', array( Display => 'showContent', text => array(
                     '• Siehe auch Regelprozess-Prinzip.',
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'Aus dem Existenzprinzip und dem Abzählprinzip folgt(???), dass es sich bei Elementarteilchen um rotierende Wirkungsquanten-Strings handeln muss.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Aus dem Existenzprinzip und dem Abzählprinzip folgt(???), dass es sich bei Elementarteilchen um rotierende Wirkungsquanten-Strings handeln muss.'."\n",
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:X', text =>
                                            
                 'Modellprinzip', subline =>
                   'Die Festlegung der tiefsten betrachteten fraktalen Ebene')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'Auf der tiefsten betrachteten fraktalen Ebene unseres sich aus der fraktalen Quanten-Fluss-Theorie ergebenden Modells gilt die Konstanz der Geschwindigkeit'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Auf der tiefsten betrachteten fraktalen Ebene unseres sich aus der fraktalen Quanten-Fluss-Theorie ergebenden Modells gilt die Konstanz der Geschwindigkeit'."\n".
                     'der kleinsten Wirkungsquanten als absolut.'."\n".
-                    'Ebenso dann auch die Konstanz ihrer Masse und Energie.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Ebenso dann auch die Konstanz ihrer Masse und Energie.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:Wechselwirkungsprinzip', text =>
                                            
                 'Wechselwirkungsprinzip', subline =>
@@ -272,7 +261,7 @@
                   array( 'text', array( text => array(
                     'Jede Wechselwirkung entsteht aus einem \jump{OM:FrQFT:WasIstPhysik:Vortext:Symmetriebrueche-Pole-und-Wechselwirkungen}{Symmetriebruch}, der Pole erzeugt,'."\n".
                     'die miteinander in \jump{OM:FrQFT:WasIstPhysik:Vortext:Symmetriebrueche-Pole-und-Wechselwirkungen}{Wechselwirkung} stehen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:X', text =>
                                            
                 'Regelprozess-Prinzip', subline =>
                   '')),
@@ -294,40 +283,18 @@
                     'mit \jump{OM:SpaLeb:Bewusstsein:Vortext:RudimentaeresBewusstsein}{rudimentärem Bewusstsein} oder'."\n".
                     '\jump{OM:SpaLeb:Bewusstsein:Vortext:KognitivesBewusstsein}{kognitivem Bewusstsein} weiterentwickeln.'."\n"))),
                     ))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:X', text =>
                                            
-                'XXX', subline =>
-                  'XXX')),
+                '\color{*Bearb}{(In Arbeit …)}', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
-                                           
-                'XXX', subline =>
-                  'XXX')),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'fade-in-area', array( Display => 'hideContent', Title =>
                 '\color{*Bearb}{Experimentelle Untersuchungen …}', TitleVis =>
                 '\color{*Bearb}{Experimentelle Untersuchungen:}', ParagraphList => array(
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n"))),
                   array( 'text', array( text => array(
                     'Warum ist die Proportionalitätskonstante in der Äquivalenz von Energie und Masse immer \term{__{0}c^^{2}}?'."\n"))),
                   array( 'equations',
@@ -336,20 +303,12 @@
                     ))),
                   array( 'bulletlist', array( bullet_ary => array(
                         '\color{*Bearb}{Dazu passen würde, dass die Mantelflächen der Impulskegel der Wirkungsquanten in der Zeit mit der Flächengeschwindigkeit \term{__{0}c^^{2}} wachsen.}',
-                        'XXX',
-                        'XXX',
-                        'XXX',
+                        '\color{*Bearb}{(In Arbeit …)}',
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:X', text =>
                                            
                 'Einsteins Herleitung der Äquivalenz von Energie und Masse', subline =>
                   '')),
@@ -359,7 +318,7 @@
                     'Alles zusammen entspricht dem Prinzip der trägen Masse, die ohne Einfluss von außen ihren Bewegungszustand nicht verändert.'."\n",
                       '(Vgl. Wikipedia: \jump[https://de.wikipedia.org/w/index.php?title=Äquivalenz_von_Masse_und_Energie&oldid=209175854#cite_note-Einstein1907-10]{}{Äquivalenz von Masse und Energie} — Albert Einstein: Über die vom Relativitätsprinzip geforderte Trägheit der Energie. In: Annalen der Physik. Band 328, Nr. 7, 1907, S. 371–384, doi:\jump[https://doi.org/10.1002/andp.19073280713]{}{10.1002/andp.19073280713}, bibcode:\jump[https://ui.adsabs.harvard.edu/abs/1907AnP...328..371E]{}{1907AnP...328..371E} (\jump[http://www.physik.uni-augsburg.de/annalen/history/einstein-papers/1907_23_371-384.pdf]{}{physik.uni-augsburg.de} [PDF]).)'."\n",
                       '(Vgl. Wikipedia: \jump[https://de.wikipedia.org/w/index.php?title=Äquivalenz_von_Masse_und_Energie&oldid=209175854#cite_note-Einstein1906-11]{}{Äquivalenz von Masse und Energie} — Albert Einstein: Das Prinzip von der Erhaltung der Schwerpunktsbewegung und die Trägheit der Energie. In: Annalen der Physik. Band 325, Nr. 8, 1906, S. 627–633, doi:\jump[https://doi.org/10.1002/andp.19063250814]{}{10.1002/andp.19063250814}, bibcode:\jump[https://ui.adsabs.harvard.edu/abs/1906AnP...325..627E]{}{1906AnP...325..627E} (\jump[http://www.physik.uni-augsburg.de/annalen/history/einstein-papers/1906_20_627-633.pdf]{}{physik.uni-augsburg.de} [PDF]).)'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:X', text =>
                                            
                 'Meine Ideen zur Äquivalenz von Energie sowie träger und schwerer Masse', subline =>
                   '')),
@@ -393,19 +352,13 @@
                   '\condb{Äquivalenz von Energie und Masse} \\\\'."\n".
                     'Das die träge Masse und die schwere Masse beide gleich und proportional zur Menge der vorhandenen Struktur sind und diese wiederum proportional zur Menge der inneren'."\n".
                     'Dynamik ist, die in der Struktur gebunden ist, führt zur Äquivalenz von Energie und Masse.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:FrQFT:FirstPrinciples:Vortext:X', text =>
                                            
                 'Formelle Spielereien', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'Test', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E_{ele}  =  n_{ele,wq} \cdot E_{wq}  }'),
@@ -415,15 +368,8 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ h }{ n_{ele,wq} }  =  \frac{ E_{wq} }{ f_{ele} }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'Test', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E_{ele}  =  h \cdot f_{ele}  }'),
@@ -436,15 +382,8 @@
                       array( display => 'on',  latex => '{  \Rightarrow  E_{ele}  =  h \cdot \frac{ f_{ele,wq} }{ n_{ele,wq} }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'Test', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E_{ele}  =  n_{ele,wq} \cdot E_{wq}  }'),
@@ -454,29 +393,16 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  E_{wq} \pm \Delta E_{wq}  =  \frac{ \Delta n \cdot \frac{ h }{ n_{ele,wq} } }{ \Delta t } \pm \frac{ \frac{ h }{ n_{ele,wq} } }{ \Delta t }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Was passiert mit der Heisenbergschen Unschärfe im Gravitationspotenzial?'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Was passiert mit der Heisenbergschen Unschärfe im Gravitationspotenzial?'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'Test', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E_{ele} \pm \Delta E_{ele}  =  \frac{ \Delta n \cdot h }{ \Delta t } \pm \frac{ h }{ \Delta t }  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'Test', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  m  =  n_{wq} \cdot m_{wq}  }'),
@@ -485,15 +411,8 @@
                       array( display => 'on',  latex => '{  \Rightarrow  E  =  n_{wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'Test', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  f_{ele,wq}  =  n_{ele,wq} \cdot f_{ele}  }'),
@@ -504,30 +423,16 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  h \cdot f_{ele,wq}  =  n_{ele,wq}^{2} \cdot E_{wq}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'equations',
                     array( equ_text_std => 'Test', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  E  =  m \cdot {_{\lowZero}c^{2}}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  E  =  n_{wq} \cdot m_{wq} \cdot {_{\lowZero}c^{2}}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                     ))),
                       
                   array( 'jumplist', array(
@@ -539,45 +444,26 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • XXX  >
+		    	<!  • X  >
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:FrQFT:XXX:XXX',
+            'OM:FrQFT:X:X',
               '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:FrQFT:X', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '(• XXX)',
+                    '(• X)',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:FrQFT:XXX'),
+                      // array(  jump_name => 'OM:FrQFT:X'),
                     )),
               )
           ); */ ?>
