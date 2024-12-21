@@ -64,8 +64,9 @@
                     'Sie ist tödlich.'."\n",
                       'Die Erkenntnis, dass es sich hier um verschiedene Pole unserer Existenz handelt, die aus der Prozessperspektive miteinander in'."\n".
                     'ständiger, ausgleichender Kommunikation stehen, erlaubt ein tieferes Verständnis unseres Schlafs, unserer Träume und'."\n".
-                    'unserer Intuitionen, als auch davon, was Bewusstsein und Unterbewusstsein bedeuten und welche Rolle sie im Zusammenhang spielen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:XXX', text =>
+                    'unserer Intuitionen, als auch davon, was Bewusstsein und Unterbewusstsein bedeuten und welche Rolle sie im Zusammenhang spielen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:X', text =>
                       
                 'Wachsein bedeutet, unser Bewusstsein ist im Vordergrund', subline =>
                   '… besonders unser bewusstes Handeln, so auch das Denken und damit unser Verstand')),
@@ -73,8 +74,9 @@
                     'Wachsein ist auch viel mit Aktivsein verbunden, mit äußerem Handeln.'."\n",
                       'Aber auch inneres Handeln in Form von Denken gehört ganz klar dazu.'."\n".
                     'Unseren bewussten Verstand benutzen wir meist tagsüber in unserer Wachphase.'."\n".
-                    'Ebenso gilt dies für unsere bewusste Reflexion, unsere Selbstbeobachtung.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:XXX', text =>
+                    'Ebenso gilt dies für unsere bewusste Reflexion, unsere Selbstbeobachtung.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:X', text =>
                       
                 'Intuitionen und Tagträume sind unser Dialog zwischen Bewusstsein und Unterbewusstsein, während unser Bewusstsein im Vordergrund ist', subline =>
                   '')),
@@ -82,115 +84,46 @@
                     'Sind wir wach, und lassen vielleicht auch mal etwas mehr los, dann haben wir in dieser Mußephase Tagträume und besonders viele Intuitionen.'."\n",
                       'In unserem inneren Dialog zwischen Bewusstsein und Unterbewusstsein steht immer noch unser Bewusstsein im Vordergrund.'."\n".
                     'Wir gewinnen Informationen aus unserem Unterbewusstsein mit Hilfe unseres Bewusstseins, wir schöpfen Wissen in unser Bewusstsein.'."\n".
-                    'Dieser Wissensschöpfungsprozess mündet in Intuitionen und Tagträume oder Visionen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:XXX', text =>
+                    'Dieser Wissensschöpfungsprozess mündet in Intuitionen und Tagträume oder Visionen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:X', text =>
                       
                 'Intuition meint, unbewusstes kommt uns bewusst zu Bewusstsein', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:X', text =>
                       
                 'Unterbewusstsein ist nicht bewusstes Bewusstsein', subline =>
                   'Wahrnehmung, die nicht direkt in unser bewusstes Bewusstsein vordringt')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:X', text =>
                       
                 'Schlaf bedeutet, unser Unterbewusstsein ist im Vordergrund', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:X', text =>
                       
                 'Träume sind unser Dialog zwischen Unterbewusstsein und Bewusstsein, während unser Unterbewusstsein im Vordergrund ist', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:X', text =>
                       
                 'Wir schöpfen Wissen aus unserem Unterbewusstsein in unser Bewusstsein', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:XXX', text =>
-                      
-                'XXX', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:Vortext:XXX', text =>
-                      
-                'XXX', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SpaLeb:XXX'),
+                      // array(  jump_name => 'OM:SpaLeb:X'),
                     )),
                 )
           ); ?>
@@ -199,48 +132,31 @@
           
 
 		    	<!  • X  >
-          <?php $Sc_g_equation_auto_num = 0; ?>
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Schlaf-und-Aktivsein:X',
-              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:SpaLeb:X', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    //'• XXX',
+                    //'• X',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:XXX:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Schlaf-und-Aktivsein:X:X', text =>
                       
-                'XXX', subline =>
+                'X', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:SpaLeb:XXX'),
+                      // array(  jump_name => 'OM:SpaLeb:X'),
                     )),
               )
           ); */ ?>
