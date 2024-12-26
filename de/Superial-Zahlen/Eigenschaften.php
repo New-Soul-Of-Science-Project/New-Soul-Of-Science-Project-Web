@@ -86,12 +86,13 @@
                       'Das kommt daher, weil die aktual unendlich Großen Summanden dieser ganzen Superial-Zahlen alle ganze Zahlen sein müssen.'."\n".
                     'Und zwar deshalb, weil der endliche Summand und die unendlich kleinen Summand in jedem Fall immer ganze Zahlen sind.'."\n".
                     'Kommt nun der Summand dazu, der Eins als Potenz hat, also \lm{ \s^{1} = \s }, muss dieser im Produkt mit seinem Koeffizienten'."\n".
-                    'auch eine ganze Zahl sein, weil wir sonst insgesamt keine ganze Zahl erhalten.'."\n",
+                    'auch eine ganze Zahl sein, weil wir sonst insgesamt keine ganze Zahl erhalten.'."\n".
+                    'Denn auf eine ganze Zahl müssen wir immer eine ganze Zahl addieren, damit wieder eine ganze Zahl herauskommt.'."\n",
                       'Dazu stellen wir fest, das schon einmal jede rationale Zahl im Produkt mit \lm{ \s } aufgrund seiner Primzahlstruktur '."\n".
                     '\jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{immer eine ganze Zahl ergibt}.'."\n".
-                    'Auch im Produkt mit allen Realanteilen von durch Radikale, also Wurzeln, darstellbaren algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
+                    'Auch im Produkt mit allen durch Radikale, also Wurzeln, darstellbaren reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
                     'wie wir nachfolgend gleich zeigen werden, ergeben sich immer ganze Superial-Zahlen.'."\n".
-                    'Ob dies, wie von mir vermutet, wirklich für \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{alle Realanteilen von algebraischen Zahlen}'."\n".
+                    'Ob dies, wie von mir vermutet, wirklich für \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{alle reell algebraischen Zahlen}'."\n".
                     'gilt, bleibt hingegen erst einmal noch offen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X', text =>
@@ -99,12 +100,12 @@
                 'Perspektive des Stellenwertsystems der Superial-Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Zum anderen können wir erwarten, dass die Koeffizienten der Superial-Zahlen, wie in jedem anderen Stellenwertsystem,'."\n".
+                    'Zum anderen können wir erwarten, dass die sinnvollen Koeffizienten der Superial-Zahlen, wie in jedem anderen Stellenwertsystem,'."\n".
                     'grundsätzlich keine Überträge in niedrigere oder höhere Stellen erzeugen.'."\n".
                     'Wobei sie gleichzeitig aber so fein granuliert und von einer Größe sind, dass sie die ihnen zugedachte Stelle'."\n".
                     'maximal ausfüllen.'."\n",
                       'Demnach sind im Grunde folgende Bedingungen zu erfüllen, damit eine Zahl \lm{ a } ein sinnvoller Koeffizient der Superial-Zahlen sein kann:'."\n",
-                      'Ihr Produkt mit der superialen Basis \lm{ a \cdot \s } darf nicht dazu führen, dass sich die aktual unendliche Größenordnung verändert,'."\n".
+                      'Das Produkt der sinnvollen Koeffizienten \lm{ a } mit der superialen Basis \lm{ \s }, also \lm{ a \cdot \s }, darf nicht dazu führen, dass sich die aktual unendliche Größenordnung verändert,'."\n".
                     'also die Potenz von \lm{ \s } im Wert des Produkts,'."\n".
                     'weil die Koeffizienten sonst nicht wie sinnvolle Ziffern in einem \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystem}'."\n".
                     'fungieren können.'."\n".
@@ -118,30 +119,103 @@
                       array( display => 'on',  latex => '{  *( \exists z_{k}, z_{g} \in \mathbb{Z} *) *( \forall a \in \mathbb{R} *)  *[  z_{k}  <  a  <  z_{g}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Weiterhin darf sich durch \lm{ a \cdot \s } keine endliche oder aktual unendliche Größenordnung des Stellenwertsystems verändern,'."\n".
+                    'Es darf sich eben bei \lm{ a \cdot \s } keine endliche oder aktual unendliche Größenordnung des Stellenwertsystems verändern,'."\n".
                     'außer die Stelle mit der Potenz Eins von \lm{ \s }.'."\n".
                     'Das heißt, dass \lm{ a } keine aktual unendlich kleinen Summanden enthalten darf.'."\n".
-                    'Das Produkt \lm{ a \cdot \s } muss also eine ganze Zahl sein.'."\n".
+                    'Das Produkt \lm{ a \cdot \s } muss eben wirklich eine ganze rein aktual unendlich große Zahl sein.'."\n".
                     'Das bedeutet, sie muss \jump{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}{ohne ihre Nachkommastellen, welcher Art auch immer, die gleiche Zahl}'."\n".
                     'bleiben, wie in Formel \jumpname{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich} definiert.'."\n".
                     'Denn nur dann lässt sich das Zählen bis ins aktual unendliche und darüber hinaus definieren.'."\n",
-                      'In unserem Fall ist die ganze Zahl \lm{ a \cdot \s } dann natürlich von der aktual unendlichen Größenordnung von \lm{ \s }, ohne endlichen Summanden.'."\n".
+                      'In unserem Fall ist die ganze Zahl \lm{ a \cdot \s } dann natürlich von der aktual unendlichen Größenordnung von \lm{ \s }, ohne endlichen Summanden.'."\n",
+                      'Wie können wir nun dafür sorgen, dass die von uns gewählten Elemente aus \lm{ \mathbb{R} } nicht nur im Rahmen endlicher Größe sind,'."\n".
+                    'was sie schon erfüllen, wie eben gezeigt, sondern auch keine unendlich kleinen Summanden enthalten?'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      'Es existiere also die Menge'."\n".
-                      '\\\\ \color{*Bearb}{(Wie stellen wir sicher, dass es keinen endlichen Summanden in \lm{ a \cdot \s } gibt?! Denn wegen der Anwesenheit transzendenter Zahlen in \lm{ \mathbb{R} } könnten darin Zahlen wie \lm{ b + z \cdot \s^{-1} }, mit \lm{ b \in \mathbb{A} } und \lm{ z \in \mathbb{Z} }, vorhanden sein. Diese geben im Produkt dann \lm{ *( b + z \cdot \s^{-1} *) \cdot \s = b \cdot \s + z } auch eine ganze Zahl, die aber einen endlichen Summanden enthält und deren Faktor deshalb kein sinnvoller Koeffizient ist.)}'."\n".
+                      'Die Aufgabe, aus den reellen Zahlen die herauszufiltern, die keine aktual unendlich kleinen Summanden enthalten,'."\n".
+                      'kann ich im Moment noch nicht durch ein elementares Verfahren definieren, dass ohne einen neuen Operatoren dafür auskommt.'."\n".
+                      'Den neuen Operator möchte ich an das Verfahren anlehnen, mit dem in Stellenwertsystemen endlicher Basis'."\n".
+                      'beliebige einzelne Ziffern ausgerechnet werden können.'."\n".
+                      'Diese Berechnung des Ziffernwerts\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}, Formeln, Berechnung eines Ziffernwertes.}'."\n".
+                      'nutzt die Gaußklammer\footnote{\const{SupNum_g_footnote_text_Gaussklammer}}:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall y \in \mathbb{S} *)  *[  a_{i}  =  \left\lfloor \frac{ y }{ \s^{i} } \right\rfloor  -  \left\lfloor \frac{ y }{ \s^{i + 1} } \right\rfloor \cdot \s  *]  }',
+                      array( display => 'on',  latex => '{  *( \forall b \in \mathbb{N} *) *( 2 \le b *) *( \forall i \in \mathbb{Z} *) *( \forall y \in [0, b[_{\mathbb{N}} *)  \\\ \qquad\qquad\qquad *[  a_{i}  =  \left\lfloor \frac{ y }{ b^{i} } \right\rfloor  -  \left\lfloor \frac{ y }{ b^{i + 1} } \right\rfloor \cdot b  *]  }',
                                           label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  y  =  b + z \cdot \s^{-1}  =  *〈 b *〉.*〈 z *〉  }',
+                    ))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X',
+                Title => '\small{Beispielrechnung …}',
+                TitleVis => 'Beispielrechnung:', ParagraphList => array(
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  b = 10  \land  y = 38  \land  i = 0  }',
                                           label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  a_{0}  =  \left\lfloor \frac{ *〈 b *〉.*〈 z *〉 }{ \s^{0} } \right\rfloor  -  \left\lfloor \frac{ *〈 b *〉.*〈 z *〉 }{ \s^{1} } \right\rfloor \cdot \s  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  a_{0}  =  \left\lfloor \frac{ 38 }{ 10^{0} } \right\rfloor  -  \left\lfloor \frac{ 38 }{ 10^{0 + 1} } \right\rfloor \cdot 10  }',
                                           label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \exists \mathbb{A}_{\S}\!: *( \forall a \in \mathbb{R}\!:  a \cdot \s \in \mathbb{N}_{\infty}  \Rightarrow  a \in \mathbb{A}_{\S} *)  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  \left\lfloor \frac{ 38 }{ 1 } \right\rfloor  -  \left\lfloor \frac{ 38 }{ 10 } \right\rfloor \cdot 10  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  38  -  \left\lfloor 3,\!8 \right\rfloor \cdot 10  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  38  -  30  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  8  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+
+                    ))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Wir können diese Formel im Grunde benutzen, allerdings geht dies nur, wenn wir die Gaußklammer'."\n".
+                      'etwas anders nutzen.'."\n".
+                      'Die neue Unendlichkeits-Gaußklammer \lm{ {\left\lfloor x \right\rfloor}_{\infty} } entfernt einfach sämtliche'."\n".
+                      'aktual unendlich kleine Summanden aus einer Zahl.'."\n".
+                      'Es gilt also beispielsweise \lm{ {\left\lfloor *〈 c *〉*〈 b *〉.*〈 z *〉 \right\rfloor}_{\infty} = *〈 c *〉*〈 b *〉.\; }.'."\n",
+                      'So können wir jetzt äquivalent zu einer endlichen Basis nun auch für unsere superialen Basis definieren,'."\n".
+                      'wie wir eine bestimmte Stelle des superialen Stellenwertsystems berechnen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall i \in \mathbb{Z} *) *( \forall y \in \mathbb{S} *)  *[  a_{i}  =  {{\left\lfloor \frac{ y }{ \s^{i} } \right\rfloor}_{\infty}  -  \left\lfloor \frac{ y }{ \s^{i + 1} } \right\rfloor}_{\infty} \cdot \s  *]  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X',
+                Title => '\small{Beispielrechnung …}',
+                TitleVis => 'Beispielrechnung:', ParagraphList => array(
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  y  =  c \cdot \s + b + z \cdot \s^{-1}  =  *〈 c *〉*〈 b *〉.*〈 z *〉  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  i  =  0  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  a_{0}  =  {\left\lfloor \frac{ *〈 c *〉*〈 b *〉.*〈 z *〉 }{ \s^{0} } \right\rfloor}_{\infty}  -  {\left\lfloor \frac{ *〈 c *〉*〈 b *〉.*〈 z *〉 }{ \s^{1} } \right\rfloor}_{\infty} \cdot \s  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  {\left\lfloor *〈 c *〉*〈 b *〉.*〈 z *〉 \right\rfloor}_{\infty}  -  {\left\lfloor *〈 c *〉.*〈 b *〉*〈 z *〉 \right\rfloor}_{\infty} \cdot \s  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  *〈 c *〉*〈 b *〉.  -  *〈 c *〉. \cdot \; \s  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  *〈 c *〉*〈 b *〉.  -  *〈 c *〉_{1}  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  b  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+
+                    ))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Was wir erreichen wollten.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Es existiere also die Menge'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \exists \mathbb{A}_{\S}\!: *( \forall a \in \mathbb{R}\!:  {\left\lfloor a \right\rfloor}_{\infty} \cdot \s \in \mathbb{N}_{\infty}  \Rightarrow  {\left\lfloor a \right\rfloor}_{\infty} \in \mathbb{A}_{\S} *)  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'der sinnvollen Koeffizienten der Superial-Zahlen.'."\n",
@@ -149,11 +223,7 @@
                       ''))),
 
                   array( 'text', array( text => array(
-                    'Diese Definition erfüllt die genannten Bedingungen an die sinnvollen Koeffizienten der Superial-Zahlen:'."\n".
-                    'Das ein Koeffizient nicht unendlich positiv oder negativ groß sein kann, wird durch die Auswahl der Elemente aus'."\n".
-                    '\lm{ \mathbb{R} } garantiert.'."\n".
-                    '\color{*Bearb}{Das er keine unendlich kleinen Summanden enthält, wird durch die Bedingung gegeben, dass sein Produkt mit \lm{ \s }'."\n".
-                    'ganzzahlig sein muss.}'."\n",
+                    'Diese Definition erfüllt die genannten Bedingungen an die sinnvollen Koeffizienten der Superial-Zahlen.'."\n",
                       'Stellt sich also die Frage:'."\n".
                     'Welche uns bekannte Menge entspricht \lm{ \mathbb{A}_{\S} } dann?'."\n".
                     'Wie wir sehen werden, ist diese Frage nicht so schnell ganz genau zu beantworten.'."\n".
@@ -161,7 +231,7 @@
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X', text =>
                       
                 'Entsprechen die sinnvollen Koeffizienten allen reellen Zahlen?', subline =>
-                  '\lm{ \mathbb{A}_{\S} = \mathbb{R} } ist eine Frage der Transzendenz und der Ganzzahligkeit im Produkt mit der superialen Basis \lm{ \s }')),
+                  '\lm{ \mathbb{A}_{\S} ?= \mathbb{R} } ist eine Frage der Transzendenz und der Ganzzahligkeit im Produkt mit der superialen Basis \lm{ \s }')),
                   array( 'text', array( text => array(
                   '\condb{Bezüglich der Transzendenz} \\\\'."\n".
                     'Das hängt davon ab, wie wir im Lichte der Superial-Zahlen beantworten, welche Zahlen wir zu den reellen Zahlen zählen.'."\n".
@@ -209,13 +279,13 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X', text =>
                       
-                'Sind die sinnvollen Koeffizienten alle Realanteile der algebraischen Zahlen?', subline =>
-                  '\lm{ \mathbb{A}_{\S} = \mathbb{A}_{\R} } ist eine Frage der Nullstellen von Polynomen beliebigen Grades')),
+                'Sind die sinnvollen Koeffizienten alle reell algebraischen Zahlen?', subline =>
+                  '\lm{ \mathbb{A}_{\S} ?= \mathbb{A}_{\R} } ist eine Frage der Nullstellen von Polynomen beliebigen Grades')),
                   array( 'text', array( text => array(
                     'Die algebraischen Zahlen sind ja dadurch definiert, das sie die Menge aller Lösungen der Nullstellen von Polynomen sind.'."\n".
                     'Wir betrachten hier aber keine komplexen Lösungen mit Imaginäranteilen, sondern nur'."\n".
-                    'die realwertigen Koeffizienten der Komponenten ihrer komplexen Lösungen.'."\n",
-                      'Ich denke, diese Realanteile der algebraischen Zahlen \lm{ \mathbb{A}_{\R} } – ihre Koeffizienten –'."\n".
+                    'die realwertigen Koeffizienten der Komponenten ihrer komplexen Lösungen, die reell algebraische Zahlen genannt werden.'."\n",
+                      'Ich denke, diese reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} }'."\n".
                     'sind alle als Koeffizienten der superialen Basis \lm{ \s } aktual unendlich große natürliche Zahlen:'."\n".
                     ''))),
                   array( 'equations',
