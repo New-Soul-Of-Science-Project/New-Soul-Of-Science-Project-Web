@@ -526,9 +526,8 @@
                       'nutzt die Gaußklammer\footnote{\const{SupNum_g_footnote_text_Gaussklammer}}:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall b \in \mathbb{N} *) *( 2 \le b *) *( \forall i \in \mathbb{Z} *) *( \forall y \in [0, b[_{\mathbb{N}} *)  \\\ \qquad\qquad\qquad *[  a_{i}  =  \left\lfloor \frac{ y }{ b^{i} } \right\rfloor  -  \left\lfloor \frac{ y }{ b^{i + 1} } \right\rfloor \cdot b  *]  }',
-                                          label_text => 'X', label_incr => false),
+                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall b \in \mathbb{N} *) *( 2 \le b *) *( \forall i \in \mathbb{Z} *) *( \forall y \in [0, b[_{\mathbb{N}} *)  \\\ \qquad\qquad\qquad *[  a_{i}  =  \left\lfloor \frac{ y }{ b^{i} } \right\rfloor  -  \left\lfloor \frac{ y }{ b^{i + 1} } \right\rfloor \cdot b  *]  }'),
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem:X',
@@ -536,19 +535,13 @@
                 TitleVis => 'Beispielrechnung:', ParagraphList => array(
 
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  b = 10  \land  y = 38  \land  i = 0  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  a_{0}  =  \left\lfloor \frac{ 38 }{ 10^{0} } \right\rfloor  -  \left\lfloor \frac{ 38 }{ 10^{0 + 1} } \right\rfloor \cdot 10  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  \left\lfloor \frac{ 38 }{ 1 } \right\rfloor  -  \left\lfloor \frac{ 38 }{ 10 } \right\rfloor \cdot 10  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  38  -  \left\lfloor 3,\!8 \right\rfloor \cdot 10  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  38  -  30  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  8  }',
-                                          label_text => 'X', label_incr => false),
+                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  b = 10  \land  y = 38  \land  i = 0  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  a_{0}  =  \left\lfloor \frac{ 38 }{ 10^{0} } \right\rfloor  -  \left\lfloor \frac{ 38 }{ 10^{0 + 1} } \right\rfloor \cdot 10  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  \left\lfloor \frac{ 38 }{ 1 } \right\rfloor  -  \left\lfloor \frac{ 38 }{ 10 } \right\rfloor \cdot 10  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  38  -  \left\lfloor 3,\!8 \right\rfloor \cdot 10  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  38  -  30  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  8  }'),
                     ))),
 
                     ))),
@@ -563,9 +556,8 @@
                       'wie wir eine bestimmte Stelle des superialen Stellenwertsystems berechnen:'."\n".
                       ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall i \in \mathbb{Z} *) *( \forall y \in \mathbb{S} *)  *[  a_{i}  =  {{\left\lfloor \frac{ y }{ \s^{i} } \right\rfloor}_{\infty}  -  \left\lfloor \frac{ y }{ \s^{i + 1} } \right\rfloor}_{\infty} \cdot \s  *]  }',
-                                          label_text => 'X', label_incr => false),
+                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall i \in \mathbb{Z} *) *( \forall y \in \mathbb{S} *)  *[  a_{i}  =  {{\left\lfloor \frac{ y }{ \s^{i} } \right\rfloor}_{\infty}  -  \left\lfloor \frac{ y }{ \s^{i + 1} } \right\rfloor}_{\infty} \cdot \s  *]  }'),
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem:X',
@@ -573,21 +565,14 @@
                 TitleVis => 'Beispielrechnung:', ParagraphList => array(
 
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  y  =  c \cdot \s + b + z \cdot \s^{-1}  =  *〈 c *〉*〈 b *〉.*〈 z *〉  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  i  =  0  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  a_{0}  =  {\left\lfloor \frac{ *〈 c *〉*〈 b *〉.*〈 z *〉 }{ \s^{0} } \right\rfloor}_{\infty}  -  {\left\lfloor \frac{ *〈 c *〉*〈 b *〉.*〈 z *〉 }{ \s^{1} } \right\rfloor}_{\infty} \cdot \s  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  {\left\lfloor *〈 c *〉*〈 b *〉.*〈 z *〉 \right\rfloor}_{\infty}  -  {\left\lfloor *〈 c *〉.*〈 b *〉*〈 z *〉 \right\rfloor}_{\infty} \cdot \s  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  *〈 c *〉*〈 b *〉.  -  *〈 c *〉. \cdot \; \s  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  *〈 c *〉*〈 b *〉.  -  *〈 c *〉_{1}  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  b  }',
-                                          label_text => 'X', label_incr => false),
+                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  y  =  c \cdot \s + b + z \cdot \s^{-1}  =  *〈 c *〉*〈 b *〉.*〈 z *〉  }'),
+                      array( display => 'on',  latex => '{  i  =  0  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  a_{0}  =  {\left\lfloor \frac{ *〈 c *〉*〈 b *〉.*〈 z *〉 }{ \s^{0} } \right\rfloor}_{\infty}  -  {\left\lfloor \frac{ *〈 c *〉*〈 b *〉.*〈 z *〉 }{ \s^{1} } \right\rfloor}_{\infty} \cdot \s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  {\left\lfloor *〈 c *〉*〈 b *〉.*〈 z *〉 \right\rfloor}_{\infty}  -  {\left\lfloor *〈 c *〉.*〈 b *〉*〈 z *〉 \right\rfloor}_{\infty} \cdot \s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  *〈 c *〉*〈 b *〉.  -  *〈 c *〉. \cdot \; \s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  *〈 c *〉*〈 b *〉.  -  *〈 c *〉_{1}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  b  }'),
                     ))),
 
                     ))),
