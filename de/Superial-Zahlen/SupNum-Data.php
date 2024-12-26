@@ -115,6 +115,7 @@
         'OM:SupNum:Eigenschaften:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
         'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen' => array( headline_text => 'Die sinnvollen Koeffizienten der Superial-Zahlen'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Perspektive-Stellenwertsystems-Superial-Zahlen' => array( headline_text => 'Perspektive des Stellenwertsystems der Superial-Zahlen'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Durch-Radikale-darstellbare-algebraischen-Zahlen-sinnvolle-Koeffizienten-SZ' => array( headline_text => 'Durch Radikale darstellbare algebraischen Zahlen sind sinnvolle Koeffizienten der Superial-Zahlen'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen' => array( headline_text => 'SN.Eig.SK.6'),
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Kehrwerte-der-Wurzeln' => array( headline_text => 'Die Kehrwerte der Wurzeln'/* , headline_text_short => 'X'*/),
@@ -244,6 +245,7 @@
           'OM:SupNum:Formale-Entwicklung:Formalien:Equ-exist-n-mit-r-kleiner-n' => array( headline_text => 'SN.Form.F.14'),
           'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen' => array( headline_text => 'Zahlen und Mengen im Unendlichen'/*, headline_text_short => 'X'*/),
           'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem' => array( headline_text => 'Stellenwertsystem'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem:Berechnung-Stellen' => array( headline_text => 'Berechnung der einzelnen Stellen im superialen Stellenwertsystem'/* , headline_text_short => 'X' */),
           'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen' => array( headline_text => 'Skalierung der superialen Ebene einer Teilmenge der Superial-Zahlen'/* , headline_text_short => 'X' */),
           'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren' => array( headline_text => 'SN.Form.F.24'),
           'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge' => array( headline_text => 'Intervall-Menge'/* , headline_text_short => 'X' */),

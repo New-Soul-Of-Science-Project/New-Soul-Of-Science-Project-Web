@@ -497,7 +497,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Beispiele für unsere Kurznotation} \\\\'."\n".
-                    'Nun ein paar Beispiele in einer neuen Notation:'."\n".
+                    'Nun ein paar Beispiele in der neuen Notation:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -510,6 +510,95 @@
                   array( 'text', array( text => array(
                     'Ich denke an diesen einfachen Beispielen wird klar, wie das superiale Zahlenwertsystem funktioniert und wie es notiert wird.'."\n".
                     'Der Punkt hinter der nullten Potenz von \lm{ \s } markiert quasi das Komma, ähnlich unseren reellen Zahlen im Zehnersystem notiert.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\anchor{OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem:Berechnung-Stellen}{}\condb{Berechnung der einzelnen Stellen im superialen Stellenwertsystem} \\\\'."\n".
+                  '\cond{Die neue Unendlichkeits-Gaußklammer} \\\\'."\n".
+                    'Die Aufgabe, aus einer beliebigen Superial-Zahl eine „Ziffer“, oder besser eine Stelle, herauszufiltern,'."\n".
+                    'kann ich im Moment noch nicht durch ein elementares Verfahren definieren, dass ohne einen neuen Operator dafür auskommt.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Den neuen Operator möchte ich an das Verfahren anlehnen, mit dem in Stellenwertsystemen endlicher Basis \lm{ b }'."\n".
+                      'beliebige einzelne Ziffern \lm{ a_{i} } einer Zahl \lm{ y } an der Position \lm{ i } ausgerechnet werden können.'."\n".
+                      'Diese Berechnung des Ziffernwerts\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}, Formeln, Berechnung eines Ziffernwertes.}'."\n".
+                      'nutzt die Gaußklammer\footnote{\const{SupNum_g_footnote_text_Gaussklammer}}:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall b \in \mathbb{N} *) *( 2 \le b *) *( \forall i \in \mathbb{Z} *) *( \forall y \in [0, b[_{\mathbb{N}} *)  \\\ \qquad\qquad\qquad *[  a_{i}  =  \left\lfloor \frac{ y }{ b^{i} } \right\rfloor  -  \left\lfloor \frac{ y }{ b^{i + 1} } \right\rfloor \cdot b  *]  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem:X',
+                Title => '\small{Beispielrechnung …}',
+                TitleVis => 'Beispielrechnung:', ParagraphList => array(
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  b = 10  \land  y = 38  \land  i = 0  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  a_{0}  =  \left\lfloor \frac{ 38 }{ 10^{0} } \right\rfloor  -  \left\lfloor \frac{ 38 }{ 10^{0 + 1} } \right\rfloor \cdot 10  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  \left\lfloor \frac{ 38 }{ 1 } \right\rfloor  -  \left\lfloor \frac{ 38 }{ 10 } \right\rfloor \cdot 10  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  38  -  \left\lfloor 3,\!8 \right\rfloor \cdot 10  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  38  -  30  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  8  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+
+                    ))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Wir können diese Formel im Grunde auch zur Berechnung der Stellen von Superial-Zahlen benutzen, allerdings geht dies nur, wenn wir die Gaußklammer'."\n".
+                      'etwas anders definieren.'."\n".
+                      'Die neue Unendlichkeits-Gaußklammer \lm{ {\left\lfloor x \right\rfloor}_{\infty} } entfernt einfach sämtliche'."\n".
+                      'aktual unendlich kleinen Summanden aus der Zahl \lm{ x }, egal, welcher Größenordnung unterhalb der endlichen Zahlen sie auch sein mögen.'."\n".
+                      'Es gilt also beispielsweise \lm{ {\left\lfloor *〈 c *〉*〈 b *〉.*〈 z *〉 \right\rfloor}_{\infty} = *〈 c *〉*〈 b *〉.\; }.'."\n",
+                      'So können wir jetzt äquivalent zu einer endlichen Basis auch für unsere superialen Basis definieren,'."\n".
+                      'wie wir eine bestimmte Stelle des superialen Stellenwertsystems berechnen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall i \in \mathbb{Z} *) *( \forall y \in \mathbb{S} *)  *[  a_{i}  =  {{\left\lfloor \frac{ y }{ \s^{i} } \right\rfloor}_{\infty}  -  \left\lfloor \frac{ y }{ \s^{i + 1} } \right\rfloor}_{\infty} \cdot \s  *]  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem:X',
+                Title => '\small{Beispielrechnung …}',
+                TitleVis => 'Beispielrechnung:', ParagraphList => array(
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  y  =  c \cdot \s + b + z \cdot \s^{-1}  =  *〈 c *〉*〈 b *〉.*〈 z *〉  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  i  =  0  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  a_{0}  =  {\left\lfloor \frac{ *〈 c *〉*〈 b *〉.*〈 z *〉 }{ \s^{0} } \right\rfloor}_{\infty}  -  {\left\lfloor \frac{ *〈 c *〉*〈 b *〉.*〈 z *〉 }{ \s^{1} } \right\rfloor}_{\infty} \cdot \s  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  {\left\lfloor *〈 c *〉*〈 b *〉.*〈 z *〉 \right\rfloor}_{\infty}  -  {\left\lfloor *〈 c *〉.*〈 b *〉*〈 z *〉 \right\rfloor}_{\infty} \cdot \s  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  *〈 c *〉*〈 b *〉.  -  *〈 c *〉. \cdot \; \s  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  *〈 c *〉*〈 b *〉.  -  *〈 c *〉_{1}  }',
+                                          label_text => 'X', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  b  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+
+                    ))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Was wir erreichen wollten.'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Den neue Unendlichkeits-Gaußklammer benötigen wir sodann auch dabei, die'."\n".
+                    '\jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Perspektive-Stellenwertsystems-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen zu definieren}.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen', text =>
                       

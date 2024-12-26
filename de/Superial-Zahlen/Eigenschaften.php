@@ -95,7 +95,7 @@
                     'Ob dies, wie von mir vermutet, wirklich für \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{alle reell algebraischen Zahlen}'."\n".
                     'gilt, bleibt hingegen erst einmal noch offen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Perspektive-Stellenwertsystems-Superial-Zahlen', text =>
                       
                 'Perspektive des Stellenwertsystems der Superial-Zahlen', subline =>
                   '')),
@@ -129,95 +129,18 @@
                       'In unserem Fall ist die ganze Zahl \lm{ a \cdot \s } dann natürlich von der aktual unendlichen Größenordnung von \lm{ \s }, ohne endlichen Summanden.'."\n",
                       'Wie können wir nun dafür sorgen, dass die von uns gewählten Elemente aus \lm{ \mathbb{R} } nicht nur im Rahmen endlicher Größe sind,'."\n".
                     'was sie schon erfüllen, wie eben gezeigt, sondern auch keine unendlich kleinen Summanden enthalten?'."\n".
+                    'Dazu können wir die neue \jump{OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem:Berechnung-Stellen}{Unendlichkeits-Gaußklammer}'."\n".
+                    'benutzen, die alle aktual unendlich kleinen Summanden aus einer Zahl entfernt.'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\\\\'."\n".
-                      'Die Aufgabe, aus den reellen Zahlen die herauszufiltern, die keine aktual unendlich kleinen Summanden enthalten,'."\n".
-                      'kann ich im Moment noch nicht durch ein elementares Verfahren definieren, dass ohne einen neuen Operatoren dafür auskommt.'."\n".
-                      'Den neuen Operator möchte ich an das Verfahren anlehnen, mit dem in Stellenwertsystemen endlicher Basis'."\n".
-                      'beliebige einzelne Ziffern ausgerechnet werden können.'."\n".
-                      'Diese Berechnung des Ziffernwerts\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}, Formeln, Berechnung eines Ziffernwertes.}'."\n".
-                      'nutzt die Gaußklammer\footnote{\const{SupNum_g_footnote_text_Gaussklammer}}:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall b \in \mathbb{N} *) *( 2 \le b *) *( \forall i \in \mathbb{Z} *) *( \forall y \in [0, b[_{\mathbb{N}} *)  \\\ \qquad\qquad\qquad *[  a_{i}  =  \left\lfloor \frac{ y }{ b^{i} } \right\rfloor  -  \left\lfloor \frac{ y }{ b^{i + 1} } \right\rfloor \cdot b  *]  }',
-                                          label_text => 'X', label_incr => false),
-                    ))),
-                      
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X',
-                Title => '\small{Beispielrechnung …}',
-                TitleVis => 'Beispielrechnung:', ParagraphList => array(
-
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  b = 10  \land  y = 38  \land  i = 0  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  a_{0}  =  \left\lfloor \frac{ 38 }{ 10^{0} } \right\rfloor  -  \left\lfloor \frac{ 38 }{ 10^{0 + 1} } \right\rfloor \cdot 10  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  \left\lfloor \frac{ 38 }{ 1 } \right\rfloor  -  \left\lfloor \frac{ 38 }{ 10 } \right\rfloor \cdot 10  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  38  -  \left\lfloor 3,\!8 \right\rfloor \cdot 10  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  38  -  30  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  8  }',
-                                          label_text => 'X', label_incr => false),
-                    ))),
-
-                    ))),
-
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Wir können diese Formel im Grunde benutzen, allerdings geht dies nur, wenn wir die Gaußklammer'."\n".
-                      'etwas anders nutzen.'."\n".
-                      'Die neue Unendlichkeits-Gaußklammer \lm{ {\left\lfloor x \right\rfloor}_{\infty} } entfernt einfach sämtliche'."\n".
-                      'aktual unendlich kleine Summanden aus einer Zahl.'."\n".
-                      'Es gilt also beispielsweise \lm{ {\left\lfloor *〈 c *〉*〈 b *〉.*〈 z *〉 \right\rfloor}_{\infty} = *〈 c *〉*〈 b *〉.\; }.'."\n",
-                      'So können wir jetzt äquivalent zu einer endlichen Basis nun auch für unsere superialen Basis definieren,'."\n".
-                      'wie wir eine bestimmte Stelle des superialen Stellenwertsystems berechnen:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall i \in \mathbb{Z} *) *( \forall y \in \mathbb{S} *)  *[  a_{i}  =  {{\left\lfloor \frac{ y }{ \s^{i} } \right\rfloor}_{\infty}  -  \left\lfloor \frac{ y }{ \s^{i + 1} } \right\rfloor}_{\infty} \cdot \s  *]  }',
-                                          label_text => 'X', label_incr => false),
-                    ))),
-                      
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:X',
-                Title => '\small{Beispielrechnung …}',
-                TitleVis => 'Beispielrechnung:', ParagraphList => array(
-
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  y  =  c \cdot \s + b + z \cdot \s^{-1}  =  *〈 c *〉*〈 b *〉.*〈 z *〉  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  i  =  0  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  a_{0}  =  {\left\lfloor \frac{ *〈 c *〉*〈 b *〉.*〈 z *〉 }{ \s^{0} } \right\rfloor}_{\infty}  -  {\left\lfloor \frac{ *〈 c *〉*〈 b *〉.*〈 z *〉 }{ \s^{1} } \right\rfloor}_{\infty} \cdot \s  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  {\left\lfloor *〈 c *〉*〈 b *〉.*〈 z *〉 \right\rfloor}_{\infty}  -  {\left\lfloor *〈 c *〉.*〈 b *〉*〈 z *〉 \right\rfloor}_{\infty} \cdot \s  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  *〈 c *〉*〈 b *〉.  -  *〈 c *〉. \cdot \; \s  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  *〈 c *〉*〈 b *〉.  -  *〈 c *〉_{1}  }',
-                                          label_text => 'X', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  a_{0}  =  b  }',
-                                          label_text => 'X', label_incr => false),
-                    ))),
-
-                    ))),
-
-                  array( 'text', array( Shape  => 'derivation', text => array(
-                      'Was wir erreichen wollten.'."\n".
-                      ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
                       'Es existiere also die Menge'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \exists \mathbb{A}_{\S}\!: *( \forall a \in \mathbb{R}\!:  {\left\lfloor a \right\rfloor}_{\infty} \cdot \s \in \mathbb{N}_{\infty}  \Rightarrow  {\left\lfloor a \right\rfloor}_{\infty} \in \mathbb{A}_{\S} *)  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'der sinnvollen Koeffizienten der Superial-Zahlen.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -1402,7 +1325,7 @@
                     '⋅ Dies würde auch zur \italic{›\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}‹} und zur \italic{›\jumpname{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}‹} passen.',
                     ))), */
                       
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
+                  array( 'fade-in-area', array( Display => 'showContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
                 Title => '\small{Experimenteller neuer Ansatz …}',
                 TitleVis => 'Experimenteller neuer Ansatz:', ParagraphList => array(
 
