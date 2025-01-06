@@ -320,6 +320,7 @@
           'OM:SupNum:Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega' => array( headline_text => 'SN.ArGeo.32'),
           'OM:SupNum:Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln' => array( headline_text => 'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *( \sqrt[k]{c} *)^{m} }', headline_text_short => 'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen'),
           'OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit' => array( headline_text => 'Die superiale Basis \lm{ \s } wird auf natürliche Weise sichtbar und definiert', headline_text_short => 'Die superiale Basis s wird auf natürliche Weise sichtbar und definiert'),
+          'OM:SupNum:Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile' => array( headline_text => 'Die Abgeschlossenheit der Teilung der Strecke Eins in \lm{ \s } Teile'/* , headline_text_short => 'X' */),
           'OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
