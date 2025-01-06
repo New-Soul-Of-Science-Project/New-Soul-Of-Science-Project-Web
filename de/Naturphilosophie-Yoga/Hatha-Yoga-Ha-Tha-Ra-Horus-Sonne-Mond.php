@@ -378,7 +378,7 @@
             
                   array( 'text', array( Shape  => 'quote', text => array(
                         'Der Verstand ist ein guter Diener, aber ein schlechter Meister.'."\n"),
-                        addtext => '\footnote[*Entwick]{\color{*Entwick}{Die genaue Herkunft des angeblichen Zitats aus der Vedanta, dass ich an verschiedenen Stellen gefunden habe, konnte ich bisher nicht klären. Für sachdienliche Hinweise bin ich dankbar!}}')),
+                        addtext => '\footnote[*Entwick]{\color{*Entwick}{Zitat aus der Vedanta, verschiedentlich gefunden, Stelle im Original unbekannt (Für sachdienliche Hinweise bin ich dankbar!)}}')),
 
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:HaTha:WirZweiWesen'),
