@@ -637,7 +637,7 @@
                                                                   'als Dualismus von Djet und Neheh.');
   
   $NPYo_g_figure_ary_PhoenixAusDerAsche
-                                                 = array( fig_file_name => 'Naturphilosophie-Yoga/Phoenix-aus-der-Asche-fuer-Tom-20220705-v01', figPDF_is => false, fig_alt_description => 'Phönix aus der Asche – Bewusstsein und Unterbewusstsein', width => '284px', height => '389px', name => 'set local!',
+                                                 = array( fig_file_name => 'Naturphilosophie-Yoga/Phoenix-aus-der-Asche-fuer-Tom-20220705-v02', figPDF_is => false, fig_alt_description => 'Phönix aus der Asche – Bewusstsein und Unterbewusstsein', width => '284px', height => '389px', name => 'set local!',
                                                          text => 'Der Phönix aus der Asche des Naturphilosophie-Yoga: Die Hoffnung im Yin und Yang als fraktaler Dualismus von Bewusstsein und Unterbewusstsein.');
   
   $NPYo_g_figure_ary_YinYang                     = array( fig_file_name => 'Naturphilosophie-Yoga/Yin-Yang-Taijitu-v01', fig_alt_description => 'Das Yin und Yang oder Taijitu', width => '380px', height => '500px', name => 'set local!',
