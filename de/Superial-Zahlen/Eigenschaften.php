@@ -707,7 +707,6 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Die Summe einer Wurzel, oder ihres Kehrwerts, mit einer endlichen ganzen Zahlen} \\\\'."\n".
-                  '\cond{Auch der Goldene Schnitt \lm{ φ } ist eine Superial-Zahl} \\\\'."\n".
                     'Wir müssen nun noch untersuchen, ob auch Summen von irrationalen Wurzeln, oder ihren Kehrwerten,'."\n".
                     'mit endlichen ganzen Zahlen, die auch zu den irrationalen algebraischen Koeffizienten gehören,'."\n".
                     'als Produkt mit unserer superialen Basis \lm{ \s } ganze beziehungsweise natürliche Superial-Zahlen sind.'."\n".
@@ -750,6 +749,10 @@
                       ''))),
 
                   array( 'text', array( text => array(
+                    'Die Summen von irrationalen Wurzeln, oder ihren Kehrwerten sind also ebenfalls sinnvolle Koeffizienten der Superial-Zahlen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Auch der Goldene Schnitt \lm{ φ } ist eine Superial-Zahl} \\\\'."\n".
                     'So sind dann auch algebraische Zahlen wie der Goldene Schnitt \lm{ φ }'."\n".
                     'als Faktoren der superialen Basis \lm{ \s } natürliche Superial-Zahlen.'."\n".
                     ''))),
