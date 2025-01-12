@@ -1340,29 +1340,29 @@
                   array( 'text', array( text => array(
                     'Bezüglich der Anzahl von Zahlen in Mengen kommt die superiale Basis \lm{ \s } in zwei sehr ähnlichen und doch ganz unterschiedlichen Zusammenhängen vor,'."\n".
                     'die in der Gegenüberstellung aufhorchen lassen und nachdenklich machen können.'."\n".
-                    'Eine bemerkenswerte Doppelung, wie ich finde.'."\n".
+                    'Eine bemerkenswerte Doppelung, wie ich finde, wo die eine Seite schließlich perfekt in die andere Seite greift.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Eine bemerkenswerte Doppelung} \\\\'."\n".
                     'Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} zeigt uns mit \lm{ \# \mathbb{A}_{\S} = \s },'."\n".
                     'dass die Menge aller \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} die gleiche Anzahl an Elementen enthalten muss,'."\n".
                     'wie die Menge der superial kleinen ganzen Zahlen von der Null bis ohne die Eins \lm{ \# *( \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} *) = \s }.'."\n".
-                    'Die letzte Formel ergibt sich aus der \jump{OM:SupNum:Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile}{arithmetischen Struktur der Geometrie}'."\n".
-                    'durch die Erkenntnis, dass die Teilung der Strecke zwischen Null und Eins in \lm{ \s } Teile zu \lm{ \s } Teilstrecke der Länge \lm{ \s^{-1} } führen muss.'."\n",
+                    'Die superial kleinen ganzen Zahlen und diese Formel ihrer Anzahl ergeben sich aus der \jump{OM:SupNum:Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile}{arithmetischen Struktur der Geometrie}'."\n".
+                    'durch die Erkenntnis, dass die Teilung der Strecke zwischen Null und Eins in \lm{ \s } Teile zu \lm{ \s } Teilstrecken der Länge \lm{ \s^{-1} } führen muss.'."\n",
                       'Interessant ist im Vergleich, dass in der Menge \lm{ \mathbb{A}_{\S} } nur endliche Werte existieren, während in der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} }'."\n".
                     'die weit überwiegende Mehrheit der Elemente aktual unendlich kleine Summanden beinhaltet.'."\n".
                     'Denn bei der Teilung der Strecke zwischen Null und Eins entsteht dadurch die Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } der Punkte zwischen den Teilstrecken,'."\n".
-                    'die Adressierbar sind und deren benachbarte Punkte jeweils den Abstand beziehungsweise die Differenz \lm{ \s^{-1} } haben, was nur mit aktual unendlich kleinen Summand dieser Differenz real sein kann.'."\n",
+                    'die Adressierbar sind und deren benachbarte Punkte jeweils den Abstand beziehungsweise die Differenz \lm{ \s^{-1} } haben, was nur mit aktual unendlich kleinen Summand dieser Differenz beschreibbar ist.'."\n",
                       'Es ist, als wenn in der Geometrie die Anzahl \lm{ \s } an Entitäten – Existenzen – im endlichen auf einer endlosen Geraden, die den Zahlen der Menge \lm{ \mathbb{A}_{\S} } entsprechen,'."\n".
                     'nicht dichter gepackt werden kann.'."\n".
                     'Bei dem Versucht, die gleiche Anzahl an Entitäten auf kleinerem Raum – also dichter oder enger – zu packen, so, wie dies bei \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } geschieht,'."\n".
                     'müssen folglich Anteile aktual unendlich kleiner Summanden herausfallen.'."\n".
                     'Diese aktual unendlich kleinen Summanden, sind ganze Zahlen im superial Kleinen.'."\n",
-                      'Erste, die Zahlen der Menge \lm{ \mathbb{A}_{\S} }, können – zumindest im Rahmen der Superial-Zahlen – als die maximal dichten Zahlen unserer endlichen Zahlengeraden'."\n".
+                      'Die Zahlen der Menge \lm{ \mathbb{A}_{\S} }, können – zumindest im Rahmen der Superial-Zahlen – als die maximal dichten Zahlen unserer endlichen Zahlengeraden'."\n".
                     'verstanden werden. also als die Grundlage unserer Geometrie im Endlichen.'."\n",
-                      'Letzte, die superial kleinen ganzen Zahlen der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } und deren Erweiterung auf den ganzen Zahlenstrahl,'."\n".
-                    'spielen dann die zentrale Rolle in der neuen \jump{OM:SupNum:Ableitungen-Integrale}{Differenzialrechnung} auf Basis von Superial-Zahlen,'."\n".
-                    'zum einen in den Differenzen der Ableitung und sodann auch bei der Integration, wo die superial kleinen ganzen Zahlen'."\n".
+                      'Die superial kleinen ganzen Zahlen der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } und deren Erweiterung auf den ganzen Zahlenstrahl,'."\n".
+                    'spielen dann eine zentrale Rolle in der neuen \jump{OM:SupNum:Ableitungen-Integrale}{Differenzialrechnung} auf Basis von Superial-Zahlen.'."\n".
+                    'Das tun sie zum einen in den Differenzen der Ableitung und sodann auch, zum anderen, bei der Integration, wo die superial kleinen ganzen Zahlen'."\n".
                     'als Indizes der Summenglieder auftreten.'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -1371,11 +1371,12 @@
                     'passt, wie oben gesagt, genau zu unserer Feststellung auf der Seite \italic{›\jumpname{OM:SupNum:Struktur-Geometrie}‹}.'."\n",
                       'Dort teilen wir die Strecke von der Null bis zur Eins mit Hilfe unserer endlichen Primzahlen jeweils bis zur Potenz der vollständigen Induktion \lm{ ω }.'."\n".
                     'Wobei wir feststellen, dass wir diese Strecke nicht sinnvoll noch feiner mit Hilfe endlicher Primzahlen teilen können,'."\n".
-                    'weil wir so bereits in den Beginn einer aktual unendlichen fraktalen Wiederholung der arithmetischen Struktur der Geometrie angekommen sind.'."\n",
+                    'weil wir so bereits am Beginn einer aktual unendlichen fraktalen Wiederholung der arithmetischen Struktur der Geometrie angekommen sind.'."\n",
                       'So erkennen wir dann auch durch den Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung},'."\n".
-                    'dass wir durch Produkt von \lm{ \s }, der \lm{ ω }-ten Potenz aller endlichen Primzahlen, eine Feinheit der Teilung erreichen,'."\n".
-                    'die nachweislich auch alle durch Radikale darstellbaren reell algebraischen Zahlen umfasst, wenn nicht sogar'."\n".
-                    '\jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{alle reell algebraischen Zahlen}.'."\n",
+                    'dass wir mit dem \jump{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}{Produkt \lm{ \s }}, der \lm{ ω }-ten Potenz aller endlichen Primzahlen,'."\n".
+                    'bei der Teilung durch \lm{ \s } eine Feinheit der Teile erreichen,'."\n".
+                    'die nachweislich auch alle durch Radikale darstellbaren reell algebraischen Zahlen umfasst, also auch die irrationalen Wurzeln, wie beispielsweise \lm{ \sqrt{ 2 } }, \lm{ \sqrt{ 5 } } oder den Goldenen Schnitt \lm{ φ = \frac{ \sqrt{ 5 } + 1 }{ 2 } },'."\n".
+                    'wenn nicht sogar \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{alle reell algebraischen Zahlen}.'."\n",
                       'Dies könnte in meinen Augen eben auch „mathematisch perfekt“ zur \italic{›\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}‹}'."\n".
                     'und zur \italic{›\jumpname{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}‹} passen, die ja beide noch zu beweisen sind.'."\n".
                     'Es passte deshalb sehr gut, weil hinter diesen Vermutungen steht, dass die Trennlinie zwischen den Fraktalebenen der Superial-Zahlen im Grunde auch'."\n".
@@ -1406,9 +1407,77 @@
                                           label_text => '\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z}', label_incr => false),
                       array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}_{\N}^{-1}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n \cdot \s^{-1}  &  \text{ falls } a = 0  \\\\  a + z \cdot \s^{-1}  &  \text{ falls } 0 < a < 1  \\\\  1 + z^{-} \cdot \s^{-1}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }',
                                           label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Diese Menge in ihrer Normalform, nur mit endlichen natürlichen Zahlen bis ohne \lm{ \s }, also bis ins aktual unendlich Große, gezählt,'."\n".
+                    'sieht dann so aus, nur zur Verdeutlichung:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  [0, \s[_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  a \cdot \s + z  &  \text{ falls } 0 < a < 1  \\\\  \s + z^{-}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }',
                                           label_text => 'X', label_incr => false),
                     ))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
+                Title => '\small{In Stellenwert-Notation …}',
+                TitleVis => 'In Stellenwert-Notation:', ParagraphList => array(
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}_{\N}^{-1}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} .*〈 n *〉  &  \text{ falls } a = 0  \\\\  *〈 a *〉.*〈 z *〉  &  \text{ falls } 0 < a < 1  \\\\  *〈 1 *〉.*〈 z^{-} *〉  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Diese Menge in ihrer Normalform, nur mit endlichen natürlichen Zahlen bis ohne \lm{ \s }, also bis ins aktual unendlich Große, gezählt,'."\n".
+                    'sieht dann so aus, nur zur Verdeutlichung:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [0, \s[_{\mathbb{S}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n  &  \text{ falls } a = 0  \\\\  *〈 a *〉*〈 z *〉.  &  \text{ falls } 0 < a < 1  \\\\  *〈 1 *〉*〈 z^{-} *〉.  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Wobei die Elemente der Mengen dann konkret folgendermaßen aussehen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}_{\N}^{-1}}  =  \\\  \quad *\{  \quad\,  0, \s^{-1}, 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{1}{2} - 2 \s^{-1},\; \tfrac{1}{2} - \s^{-1},\; \tfrac{1}{2},\; \tfrac{1}{2} + \s^{-1},\; \tfrac{1}{2} + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{2}{3} - 2 \s^{-1},\; \tfrac{2}{3} - \s^{-1},\; \tfrac{2}{3},\; \tfrac{2}{3} + \s^{-1},\; \tfrac{2}{3} + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{\sqrt{2}}{2} - 2 \s^{-1},\; \tfrac{\sqrt{2}}{2} - \s^{-1},\; \tfrac{\sqrt{2}}{2},\; \tfrac{\sqrt{2}}{2} + \s^{-1},\; \tfrac{\sqrt{2}}{2} + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{\sqrt{3}}{2} - 2 \s^{-1},\; \tfrac{\sqrt{3}}{2} - \s^{-1},\; \tfrac{\sqrt{3}}{2},\; \tfrac{\sqrt{3}}{2} + \s^{-1},\; \tfrac{\sqrt{3}}{2} + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots  \\\ \quad \quad \cdots \, 1 - 3 \s^{-1}, 1 - 2 \s^{-1}, 1 - \s^{-1}   \quad *\}  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Diese Menge in ihrer Normalform, nur mit endlichen natürlichen Zahlen bis ohne \lm{ \s }, also bis ins aktual unendlich Große, gezählt,'."\n".
+                    'sieht dann so aus, nur zur Verdeutlichung:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [0, \s[_{\mathbb{S}_{\N}}  =  \\\  \quad *\{  \quad\,  0, 1, 2, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{1}{2} \s - 2,\; \tfrac{1}{2} \s - 1,\; \tfrac{1}{2} \s,\; \tfrac{1}{2} \s + 1,\; \tfrac{1}{2} \s + 2, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{2}{3} \s - 2,\; \tfrac{2}{3} \s - 1,\; \tfrac{2}{3} \s,\; \tfrac{2}{3} \s + 1,\; \tfrac{2}{3} \s + 2, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, \s - 3, \s - 2, \s - 1   \quad *\}  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                      
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
+                Title => '\small{In Stellenwert-Notation …}',
+                TitleVis => 'In Stellenwert-Notation:', ParagraphList => array(
+
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}_{\N}^{-1}}  =  \\\  \quad *\{  \;\;\;\,  .*〈 0 *〉,\; .*〈 1 *〉,\; .*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{1}{2} *〉.*〈 -2 *〉,\; *〈 \tfrac{1}{2} *〉.*〈 -1 *〉,\; \tfrac{1}{2},\; *〈 \tfrac{1}{2} *〉.*〈 1 *〉,\; *〈 \tfrac{1}{2} *〉.*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{2}{3} *〉.*〈 -2 *〉,\; *〈 \tfrac{2}{3} *〉.*〈 -1 *〉,\; \tfrac{2}{3},\; *〈 \tfrac{2}{3} *〉.*〈 1 *〉,\; *〈 \tfrac{2}{3} *〉.*〈2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{\sqrt{2}}{2} *〉.*〈 -2 *〉,\; *〈 \tfrac{\sqrt{2}}{2} *〉.*〈 -1 *〉,\; \tfrac{\sqrt{2}}{2},\; *〈 \tfrac{\sqrt{2}}{2} *〉.*〈 1 *〉,\; *〈 \tfrac{\sqrt{2}}{2} *〉.*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{\sqrt{3}}{2} *〉.*〈 -2 *〉,\; *〈 \tfrac{\sqrt{3}}{2} *〉.*〈 -1 *〉,\; \tfrac{\sqrt{3}}{2},\; *〈 \tfrac{\sqrt{3}}{2} *〉.*〈 1 *〉,\; *〈 \tfrac{\sqrt{3}}{2} *〉.*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, *〈 1 *〉.*〈 -3 *〉,\; *〈 1 *〉.*〈 -2 *〉,\; *〈 1 *〉.*〈 -1 *〉   \quad *\}  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Diese Menge in ihrer Normalform, nur mit endlichen natürlichen Zahlen bis ohne \lm{ \s }, also bis ins aktual unendlich Große, gezählt,'."\n".
+                    'sieht dann so aus, nur zur Verdeutlichung:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  [0, \s[_{\mathbb{S}_{\N}}  =  \\\  \quad *\{  \;\;\;\,  0,\; 1,\; 2, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{1}{2} *〉*〈 -2 *〉.,\; *〈 \tfrac{1}{2} *〉*〈 -1 *〉.,\; *〈 \tfrac{1}{2} *〉_{1},\; *〈 \tfrac{1}{2} *〉*〈 1 *〉.,\; *〈 \tfrac{1}{2} *〉*〈 2 *〉., \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{2}{3} *〉*〈 -2 *〉.,\; *〈 \tfrac{2}{3} *〉*〈 -1 *〉.,\; *〈 \tfrac{2}{3} *〉_{1},\; *〈 \tfrac{2}{3} *〉*〈 1 *〉.,\; *〈 \tfrac{2}{3} *〉*〈2 *〉., \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{\sqrt{2}}{2} *〉*〈 -2 *〉.,\; *〈 \tfrac{\sqrt{2}}{2} *〉*〈 -1 *〉.,\; *〈 \tfrac{\sqrt{2}}{2} *〉_{1},\; *〈 \tfrac{\sqrt{2}}{2} *〉*〈 1 *〉.,\; *〈 \tfrac{\sqrt{2}}{2} *〉*〈 2 *〉., \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{\sqrt{3}}{2} *〉*〈 -2 *〉.,\; *〈 \tfrac{\sqrt{3}}{2} *〉*〈 -1 *〉.,\; *〈 \tfrac{\sqrt{3}}{2} *〉_{1},\; *〈 \tfrac{\sqrt{3}}{2} *〉*〈 1 *〉.,\; *〈 \tfrac{\sqrt{3}}{2} *〉*〈 2 *〉., \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, *〈 1 *〉*〈 -3 *〉.,\; *〈 1 *〉*〈 -2 *〉.,\; *〈 1 *〉*〈 -1 *〉.   \quad *\}  }',
+                                          label_text => 'X', label_incr => false),
+                    ))),
+
+                    ))),
+
                   array( 'text', array( text => array(
                     'Auffällig ist, dass bei der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } zu Beginn und am Ende'."\n".
                     'die ganzen Zahlen \lm{ \mathbb{Z} } in \lm{ \mathbb{N} } und \lm{ \mathbb{Z}^{-} } aufgespalten sind und mitten drinne ganz \lm{ \mathbb{Z} }'."\n".
@@ -1432,8 +1501,9 @@
                     '\lm{ \lbrack 0, \s \lbrack_{\mathbb{S}_{\N}} } die Grundlage des Zählens von \lm{ \s } vielen, auch aktual unendlichen natürlichen Zahlen von Null bis ohne \lm{ \s }.'."\n".
                     'Dies entspricht in gewisser Weise ganzen Ziffern des Stellenwertsystems der Superial-Zahlen.'."\n".
                     'Allerdings sind diese natürlichen Superial-Zahlen nicht die Koeffizienten des Stellenwertsystemens,'."\n".
-                    'weil nun keine reinen Ziffern, sondern beim Übergang ins Aktual-Unendliche selber schon'."\n".
-                    'gemischte Zahlen im Sinne des Stellenwertsystems, wie beispielsweise \lm{ *〈 ⅔ *〉*〈 7 *〉. = ⅔ \s + 7 }.'."\n".
+                    'wie wir es beispielsweise aus dem Zehnersystem für die ersten zehn Ziffern kennen.'."\n".
+                    'Dies kommt, weil bei den natürlichen Superial-Zahlen keine reinen Ziffern, sondern beim Übergang ins Aktual-Unendliche selber schon'."\n".
+                    'gemischte Zahlen im Sinne des Stellenwertsystems, wie beispielsweise \lm{ *〈 ⅔ *〉*〈 7 *〉. = ⅔ \s + 7 }, auftreten.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Die absolute Außergewöhnlichkeit des Stellenwertsystems der Superial-Zahlen} \\\\'."\n".
@@ -1452,7 +1522,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  ?=  \\\ \qquad *\{  y  *|*  *( \forall n \in [0, 1[_{\mathbb{S}^{-1}_{\N}} *)  *[  y = *( n - \frac{ 1 }{ 2 } *) \cdot 2 ω  *]  *\}  }',
+                      array( display => 'on',  latex => '{  \mathbb{A}_{\S}  ?=  \\\ \qquad *\{  y  *|*  *( \forall n \in [0, 1[_{\mathbb{S}_{\N}^{-1}} *)  *[  y = *( n - \frac{ 1 }{ 2 } *) \cdot 2 ω  *]  *\}  }',
                                           label_text => 'X', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
@@ -1542,7 +1612,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}^{-1}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n \cdot \s^{-1}  &  \text{ falls } a = 0  \\\\  a + z \cdot \s^{-1}  &  \text{ falls } 0 < a < 1  \\\\  1 + z^{-} \cdot \s^{-1}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  \;\;  ,  }'),
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}_{\N}^{-1}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} n \cdot \s^{-1}  &  \text{ falls } a = 0  \\\\  a + z \cdot \s^{-1}  &  \text{ falls } 0 < a < 1  \\\\  1 + z^{-} \cdot \s^{-1}  &  \text{ falls } a = 1  \end{cases}  *]  *\}  \;\;  ,  }'),
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
@@ -1551,7 +1621,7 @@
 
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}^{-1}_{\N}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} .*〈 n *〉  &  \text{ falls } a = 0  \\\\  *〈 a *〉.*〈 z *〉  &  \text{ falls } 0 < a < 1  \\\\  *〈 1 *〉.*〈 z^{-} *〉  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}_{\N}^{-1}}  =  \\\ \quad *\{  x  *|*  *( \forall a \in [ 0, 1 ]_{\mathbb{A}_{\S}} *) *( \forall n \in \mathbb{N} *) *( \forall z \in \mathbb{Z} *) *( \forall z^{-} \in \mathbb{Z}^{-} *)  \\\ \qquad\qquad\quad *[  x  =  \begin{cases} .*〈 n *〉  &  \text{ falls } a = 0  \\\\  *〈 a *〉.*〈 z *〉  &  \text{ falls } 0 < a < 1  \\\\  *〈 1 *〉.*〈 z^{-} *〉  &  \text{ falls } a = 1  \end{cases}  *]  *\}  }'),
                     ))),
 
                     ))),
@@ -1566,7 +1636,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}^{-1}_{\N}}  =  \\\  \quad *\{  \quad\,  0, \s^{-1}, 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{1}{2} - 2 \s^{-1},\; \tfrac{1}{2} - \s^{-1},\; \tfrac{1}{2},\; \tfrac{1}{2} + \s^{-1},\; \tfrac{1}{2} + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{2}{3} - 2 \s^{-1},\; \tfrac{2}{3} - \s^{-1},\; \tfrac{2}{3},\; \tfrac{2}{3} + \s^{-1},\; \tfrac{2}{3} + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, 1 - 3 \s^{-1}, 1 - 2 \s^{-1}, 1 - \s^{-1}   \quad *\}  }'),
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}_{\N}^{-1}}  =  \\\  \quad *\{  \quad\,  0, \s^{-1}, 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{1}{2} - 2 \s^{-1},\; \tfrac{1}{2} - \s^{-1},\; \tfrac{1}{2},\; \tfrac{1}{2} + \s^{-1},\; \tfrac{1}{2} + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{2}{3} - 2 \s^{-1},\; \tfrac{2}{3} - \s^{-1},\; \tfrac{2}{3},\; \tfrac{2}{3} + \s^{-1},\; \tfrac{2}{3} + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, 1 - 3 \s^{-1}, 1 - 2 \s^{-1}, 1 - \s^{-1}   \quad *\}  }'),
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
@@ -1575,7 +1645,7 @@
 
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}^{-1}_{\N}}  =  \\\  \quad *\{  \;\;\;\,  .*〈 0 *〉,\; .*〈 1 *〉,\; .*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{1}{2} *〉.*〈 -2 *〉,\; *〈 \tfrac{1}{2} *〉.*〈 -1 *〉,\; \tfrac{1}{2},\; *〈 \tfrac{1}{2} *〉.*〈 1 *〉,\; *〈 \tfrac{1}{2} *〉.*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{2}{3} *〉.*〈 -2 *〉,\; *〈 \tfrac{2}{3} *〉.*〈 -1 *〉,\; \tfrac{2}{3},\; *〈 \tfrac{2}{3} *〉.*〈 1 *〉,\; *〈 \tfrac{2}{3} *〉.*〈2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, *〈 1 *〉.*〈 -3 *〉,\; *〈 1 *〉.*〈 -2 *〉,\; *〈 1 *〉.*〈 -1 *〉   \quad *\}  }'),
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}_{\N}^{-1}}  =  \\\  \quad *\{  \;\;\;\,  .*〈 0 *〉,\; .*〈 1 *〉,\; .*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{1}{2} *〉.*〈 -2 *〉,\; *〈 \tfrac{1}{2} *〉.*〈 -1 *〉,\; \tfrac{1}{2},\; *〈 \tfrac{1}{2} *〉.*〈 1 *〉,\; *〈 \tfrac{1}{2} *〉.*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{2}{3} *〉.*〈 -2 *〉,\; *〈 \tfrac{2}{3} *〉.*〈 -1 *〉,\; \tfrac{2}{3},\; *〈 \tfrac{2}{3} *〉.*〈 1 *〉,\; *〈 \tfrac{2}{3} *〉.*〈2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, *〈 1 *〉.*〈 -3 *〉,\; *〈 1 *〉.*〈 -2 *〉,\; *〈 1 *〉.*〈 -1 *〉   \quad *\}  }'),
                     ))),
 
                     ))),
@@ -1591,7 +1661,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\N}} *) *( \forall k \in \mathbb{N}^{+} *)  *[  x  \neq  \frac{ k }{ 2^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall x \in [0, 1[_{\mathbb{S}_{\N}^{-1}} *) *( \forall k \in \mathbb{N}^{+} *)  *[  x  \neq  \frac{ k }{ 2^{ω} }  *]  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall a \in [0, 1[_{\mathbb{A}_{\S}} *) *( \forall z \in \mathbb{Z} *)  *[  a + z \cdot \s^{-1}  \neq  \frac{ k }{ 2^{ω} }  *]  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  a + \frac{ z }{ \s }  \neq  \frac{ k }{ 2^{ω} }  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  a + \frac{ z }{ 2^{ω} 3^{ω} 5^{ω} 7^{ω} 11^{ω} \cdots }  \neq  \frac{ k }{ 2^{ω} }  }'),
@@ -1604,7 +1674,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}^{-1}_{\N}}  =  \\\  \quad *\{  \quad\,  0, \s^{-1}, 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{\sqrt{2}}{2} - 2 \s^{-1},\; \tfrac{\sqrt{2}}{2} - \s^{-1},\; \tfrac{\sqrt{2}}{2},\; \tfrac{\sqrt{2}}{2} + \s^{-1},\; \tfrac{\sqrt{2}}{2} + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{\sqrt{3}}{2} - 2 \s^{-1},\; \tfrac{\sqrt{3}}{2} - \s^{-1},\; \tfrac{\sqrt{3}}{2},\; \tfrac{\sqrt{3}}{2} + \s^{-1},\; \tfrac{\sqrt{3}}{2} + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, 1 - 3 \s^{-1}, 1 - 2 \s^{-1}, 1 - \s^{-1}   \quad *\}  }'),
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}_{\N}^{-1}}  =  \\\  \quad *\{  \quad\,  0, \s^{-1}, 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{\sqrt{2}}{2} - 2 \s^{-1},\; \tfrac{\sqrt{2}}{2} - \s^{-1},\; \tfrac{\sqrt{2}}{2},\; \tfrac{\sqrt{2}}{2} + \s^{-1},\; \tfrac{\sqrt{2}}{2} + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \tfrac{\sqrt{3}}{2} - 2 \s^{-1},\; \tfrac{\sqrt{3}}{2} - \s^{-1},\; \tfrac{\sqrt{3}}{2},\; \tfrac{\sqrt{3}}{2} + \s^{-1},\; \tfrac{\sqrt{3}}{2} + 2 \s^{-1}, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, 1 - 3 \s^{-1}, 1 - 2 \s^{-1}, 1 - \s^{-1}   \quad *\}  }'),
                     ))),
                       
                   array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
@@ -1613,7 +1683,7 @@
 
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}^{-1}_{\N}}  =  \\\  \quad *\{  \;\;\;\,  .*〈 0 *〉,\; .*〈 1 *〉,\; .*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{\sqrt{2}}{2} *〉.*〈 -2 *〉,\; *〈 \tfrac{\sqrt{2}}{2} *〉.*〈 -1 *〉,\; \tfrac{\sqrt{2}}{2},\; *〈 \tfrac{\sqrt{2}}{2} *〉.*〈 1 *〉,\; *〈 \tfrac{\sqrt{2}}{2} *〉.*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{\sqrt{3}}{2} *〉.*〈 -2 *〉,\; *〈 \tfrac{\sqrt{3}}{2} *〉.*〈 -1 *〉,\; \tfrac{\sqrt{3}}{2},\; *〈 \tfrac{\sqrt{3}}{2} *〉.*〈 1 *〉,\; *〈 \tfrac{\sqrt{3}}{2} *〉.*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, *〈 1 *〉.*〈 -3 *〉,\; *〈 1 *〉.*〈 -2 *〉,\; *〈 1 *〉.*〈 -1 *〉   \quad *\}  }'),
+                      array( display => 'on',  latex => '{  [0, 1[_{\mathbb{S}_{\N}^{-1}}  =  \\\  \quad *\{  \;\;\;\,  .*〈 0 *〉,\; .*〈 1 *〉,\; .*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{\sqrt{2}}{2} *〉.*〈 -2 *〉,\; *〈 \tfrac{\sqrt{2}}{2} *〉.*〈 -1 *〉,\; \tfrac{\sqrt{2}}{2},\; *〈 \tfrac{\sqrt{2}}{2} *〉.*〈 1 *〉,\; *〈 \tfrac{\sqrt{2}}{2} *〉.*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots *〈 \tfrac{\sqrt{3}}{2} *〉.*〈 -2 *〉,\; *〈 \tfrac{\sqrt{3}}{2} *〉.*〈 -1 *〉,\; \tfrac{\sqrt{3}}{2},\; *〈 \tfrac{\sqrt{3}}{2} *〉.*〈 1 *〉,\; *〈 \tfrac{\sqrt{3}}{2} *〉.*〈 2 *〉, \cdots \\\ \quad\quad\; \quad \vdots \\\ \quad \quad \cdots \, *〈 1 *〉.*〈 -3 *〉,\; *〈 1 *〉.*〈 -2 *〉,\; *〈 1 *〉.*〈 -1 *〉   \quad *\}  }'),
                     ))),
 
                     ))),
