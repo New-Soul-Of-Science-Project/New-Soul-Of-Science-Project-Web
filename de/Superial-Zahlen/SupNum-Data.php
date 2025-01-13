@@ -137,7 +137,7 @@
           'OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm' => array( headline_text => 'Ausgangspunkt der Primzahlprodukt-Vermutung'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen' => array( headline_text => 'Erklärung der Anzahl der endlichen ganzen Zahlen durch ihren ontologischen Ursprung in der Struktur der Biordinalzahlen'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-Menge-S-Bemerkenswerten-Zusammenhang' => array( headline_text => 'Die superiale Basis \lm{ \s } und die Menge \lm{ \mathbb{S} } haben einen ganz bemerkenswerten Zusammenhang', headline_text_short => 'Die superiale Basis s und die Menge S haben einen ganz bemerkenswerten Zusammenhang'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung' => array( headline_text => 'Die superiale Basis \lm{ \s } hat bezüglich der Struktur des Aktual-Unendlichen eine bemerkenswerte doppelte Bedeutung'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich' => array( headline_text => 'Die superiale Basis \lm{ \s } und die Ordinalzahl \lm{ ω^{ω} } im Strukturvergleich'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-c' => array( headline_text => 'SN.Eig.SVS.37'),
           'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s-explizit' => array( headline_text => 'SN.Eig.SVS.39'),

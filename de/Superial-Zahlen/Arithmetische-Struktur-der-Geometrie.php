@@ -616,7 +616,7 @@
                     'Zusammen also \lm{ a + z \cdot \s^{-1} }, wobei bei Null nur \lm{ 0 + n \cdot \s^{-1} } mit \lm{ n \in \mathbb{N} }'."\n".
                     'und bei Eins nur \lm{ 1 + z^{-} \cdot \s^{-1} } mit \lm{ z^{-} \in \mathbb{Z}^{-} }.'."\n".
                     'Damit kann die Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } der Koeffizienten der Superial-Zahlen, nur \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } } Elemente enthalten.'."\n",
-                      'Wir haben hier die Besonderheit, wie auch noch im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-Menge-S-Bemerkenswerten-Zusammenhang}‹}'."\n".
+                      'Wir haben hier die Besonderheit, wie auch noch im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung}‹}'."\n".
                     'genauer beleuchtet wird, dass eine Teilung der Strecke zwischen Null und Eins in \lm{ \s } Teile'."\n".
                     'in Punkte zwischen den Teilen mündet, deren Koordinaten nur durch Summen ausgedrückt werden können,'."\n".
                     'die im Allgemeinen aktual unendlich kleine Summanden enthalten.'."\n".
@@ -640,7 +640,7 @@
 
                   array( 'notice', array( Display => 'ShowContent', text => array(
                     // '\bold{X}',
-                    '• Wenn wir beim Kontinuum davon ausgehen, dass wir keine unendlich kleinen Summanden in den Adressen haben wollen, dann geht es hier eher darum nicht die Strecke von der Null bis zur Eins durch \lm{ \s } zu teilen, sondern die Gerade der endlichen Zahlen, siehe Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-Menge-S-Bemerkenswerten-Zusammenhang}‹}, so dass wir alle sinnvollen Koeffizienten der Superial-Zahlen erhalten.',
+                    '• Wenn wir beim Kontinuum davon ausgehen, dass wir keine unendlich kleinen Summanden in den Adressen haben wollen, dann geht es hier eher darum nicht die Strecke von der Null bis zur Eins durch \lm{ \s } zu teilen, sondern die Gerade der endlichen Zahlen, siehe Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung}‹}, so dass wir alle sinnvollen Koeffizienten der Superial-Zahlen erhalten.',
                     ))),
 
                   array( 'text', array( text => array(

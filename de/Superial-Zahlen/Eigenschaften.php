@@ -1094,7 +1094,7 @@
                       array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen'),
-                      array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-Menge-S-Bemerkenswerten-Zusammenhang'),
+                      array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung'),
                       array(  jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich'),
                     )),
 
@@ -1315,9 +1315,9 @@
                       'Demnach sind wir sicher, dass die \jump{OM:BiOrd:Einleitung:NeueEinsichten:EineFundamentaleAsymmetrie}{Anzahl der endlichen ganzen Zahlen}'."\n".
                     'wirklich \lm{ 2 ω } ist.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-Menge-S-Bemerkenswerten-Zusammenhang', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung', text =>
                       
-                'Die superiale Basis \lm{ \s } und die Menge \lm{ \mathbb{S} } haben einen ganz bemerkenswerten Zusammenhang', subline =>
+                'Die superiale Basis \lm{ \s } hat bezüglich der Struktur des Aktual-Unendlichen eine bemerkenswerte doppelte Bedeutung', subline =>
                   '')),
                       
                   /* array( 'notice', array( Display => 'hideContent', text => array(
@@ -1329,14 +1329,6 @@
                     '⋅ Dies würde auch zur \italic{›\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}‹} und zur \italic{›\jumpname{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}‹} passen.',
                     ))), */
                       
-                  array( 'fade-in-area', array( Display => 'showContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
-                Title => '\small{Experimenteller neuer Ansatz …}',
-                TitleVis => 'Experimenteller neuer Ansatz:', ParagraphList => array(
-
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:X', text =>
-                      
-                'Die superiale Basis \lm{ \s } hat bezüglich der Struktur des Aktual-Unendlichen eine doppelte Bedeutung', subline =>
-                  '')),
                   array( 'text', array( text => array(
                     'Bezüglich der Anzahl von Zahlen in Mengen kommt die superiale Basis \lm{ \s } in zwei sehr ähnlichen und doch ganz unterschiedlichen Zusammenhängen vor,'."\n".
                     'die in der Gegenüberstellung aufhorchen lassen und nachdenklich machen können.'."\n".
@@ -1373,7 +1365,7 @@
                     'Wobei wir feststellen, dass wir diese Strecke nicht sinnvoll noch feiner mit Hilfe endlicher Primzahlen teilen können,'."\n".
                     'weil wir so bereits am Beginn einer aktual unendlichen fraktalen Wiederholung der arithmetischen Struktur der Geometrie angekommen sind.'."\n",
                       'So erkennen wir dann auch durch den Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung},'."\n".
-                    'dass wir mit dem \jump{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}{Produkt \lm{ \s }}, der \lm{ ω }-ten Potenz aller endlichen Primzahlen,'."\n".
+                    'dass wir mit dem \jump{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}{Primzahl-Flächenprodukt \lm{ \s }}, der \lm{ ω }-ten Potenz aller endlichen Primzahlen,'."\n".
                     'bei der Teilung durch \lm{ \s } eine Feinheit der Teile erreichen,'."\n".
                     'die nachweislich auch alle durch Radikale darstellbaren reell algebraischen Zahlen umfasst, also auch die irrationalen Wurzeln, wie beispielsweise \lm{ \sqrt{ 2 } }, \lm{ \sqrt{ 5 } } oder den Goldenen Schnitt \lm{ φ = \frac{ \sqrt{ 5 } + 1 }{ 2 } },'."\n".
                     'wenn nicht sogar \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{alle reell algebraischen Zahlen}.'."\n",
@@ -1393,8 +1385,15 @@
                       'Klar ist schon, dass das Raster des Primzahl-Flächenproduktes von \lm{ \s } aufs engste mit den sinnvollen Koeffizienten'."\n".
                     'der Superial-Zahlen \lm{ \mathbb{A}_{\S} } – und, wenn \lm{ \mathbb{A}_{\S} ?= \mathbb{A} }, mit den reell algebraischen Zahlen \lm{ \mathbb{A} } – verwoben ist.'."\n".
                     'Denn alle \lm{ a \cdot \s }, mit \lm{ a \in \mathbb{A}_{\S} }, müssen nach Formel \jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-exist-As} ganze Zahl sein,'."\n".
-                    'siehe \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen}.'."\n",
-                      'Dies ist ein fundamentaler Zusammenhang, der weitere Erkenntnisse erwarten lässt.'."\n".
+                    'siehe \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen}.'."\n".
+                    'Dies ist ein fundamentaler Zusammenhang, der weitere Erkenntnisse erwarten lässt.'."\n",
+                      'Der Beweis der Überrationalitätsvermutung zeigt beispielsweise für'."\n".
+                    '\lm{ a = \sqrt{2} = \frac{ \sqrt{2} \cdot 2^{ω} }{ 2^{ω} } = \frac{ 2^{\frac{1}{2}} \cdot 2^{ω} }{ 2^{ω} } = \frac{ 2^{ω + \frac{1}{2}} }{ 2^{ω} } }, anhand dieses ganzzahligen Bruchs, dass \lm{ \sqrt{2} \cdot \s } eine ganze Zahl ist.'."\n".
+                    'Und zwar, weil \lm{ \sqrt{2} \cdot 2^{ω} } eine ganze Zahl ist, ebenso wie \lm{ \s }, dessen Primzahl-Flächenprodukt ja auch den Faktor \lm{ 2^{ω} } enthält.'."\n".
+                    'Deshalb ist \lm{ \sqrt{2} } ein sinnvoller Koeffizient und es gilt \lm{ \sqrt{2} \in \mathbb{A}_{\S} }.'."\n".
+                    'Schon hierin liegen einige erstaunliche neue Erkenntnisse, die bisher offenbar unbekannt waren.'."\n".
+                    'Denn wir lernen beim Beweis der Überrationalitätsvermutung zum Beispiel, wie wir irrationale Wurzeln durch Brüche mit aktual unendlichen Quotienten, von mir überrationale Brüche genannt, darstellen können.'."\n".
+                    'Und wir lernen, auch, wenn das Kürzen eines überrationalen Bruchs möglich ist, kann es dazu führen, dass wir eine gesuchte Lösung nicht finden können, wenn wir es tun.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Die Ähnlichkeit beider Mengen} \\\\'."\n".
@@ -1509,13 +1508,24 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Die absolute Außergewöhnlichkeit des Stellenwertsystems der Superial-Zahlen} \\\\'."\n".
-                    'Die sinnvollen Koeffizienten und das natürliche Zählen fallen bei den Superial-Zahlen auseinander und passen gleichzeitig so auch perfekt ineinander.'."\n",
+                    'Die sinnvollen Koeffizienten und das natürliche Zählen fallen bei den Superial-Zahlen auseinander und passen gleichzeitig so auch perfekt ineinander.'."\n".
+                    'Es erscheint ein wenig wie ein Wunder, dass beides exakt einander entspricht, ja entsprechen muss.'."\n",
                       'Diese Zwittrigkeit oder Zwitternatur der Anzahl \lm{ \s } in den ihr entsprechenden wichtigen Mengen unseres neuen Stellenwertsystemens,'."\n".
                     'welche keine Widersprüchlichkeit ist, sondern in sich vollständig plausibel, machen es so außergewöhnlich.'."\n".
-                    'Dadurch bekommt es die Eigenschaften, die wir für die Beschreibung der Geometrie brauchen, um schließlich auch Differenzialrechnung darin zu betreiben.'."\n".
+                    'Dadurch bekommt es die Eigenschaften, die wir für die Beschreibung der Geometrie brauchen, um schließlich auch Differenzialrechnung darin zu betreiben.'."\n",
+                      'Fragen die bleiben sind:'."\n".
                     ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\color{*Entwick}{Können wir noch besser verstehen, warum das so ist oder sein muss?}',
+                        '\color{*Entwick}{Hat diese Doppelung eventuell eine Verbindung zur analytischen Fortsetzung von Funktionen und damit zur Riemannschen Vermutung\footnote{\const{SupNum_g_footnote_text_RiemannschenVermutung}}?}',
+                    ))),
+
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Eigenschaften:StrukturVonS:X',
+                Title => 'Experimentell: Sind beide Mengen aufeinander linear abbildbar? …',
+                TitleVis => 'Experimentell: Sind beide Mengen aufeinander linear abbildbar?', ParagraphList => array(
+
                   array( 'text', array( text => array(
-                  '\condb{Sind beide aufeinander linear abbildbar?} \\\\'."\n".
+                  // '\condb{Sind beide aufeinander linear abbildbar?} \\\\'."\n".
                     'Naiv können wir einmal annehmen, da die Werte beider Mengen offenbar nicht nur wohlgeordnet sind, sondern auch'."\n".
                     'alle je in ihrer Menge die gleichen Abstände untereinander haben, dass sie vielleicht rein durch Verschiebung und einen Faktor'."\n".
                     'Element für Element ihrer Reihenfolge nach aufeinander abgebildet werden können.'."\n".
@@ -1591,7 +1601,7 @@
 
                     ))),
 
-                  array( 'text', array( text => array(
+                  /* array( 'text', array( text => array(
                     'Als wir die \jump{OM:SupNum:Struktur-Geometrie}{arithmetische Struktur der Geometrie} untersuchten,'."\n".
                     'haben wir eine Definition der superialen Basis \lm{ \s } durch die vollständige'."\n".
                     'Teilung der Strecke von der Null bis zur Eins durch alle Primzahlen und deren Potenzen und Kombinationen gefunden.'."\n".
@@ -1672,7 +1682,7 @@
                     'nicht annehmen kann.'."\n".
                     'Es kann zwar \lm{ a = 0 } sein, aber \lm{ z } kann nicht die unendlichen Potenzen der Primzahlen, bis auf \lm{ 2^{ω} }, eliminieren.'."\n",
                       'Nach dem Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} ist interessanterweise zum Beispiel'."\n".
-                    '\lm{ a = \sqrt{2} = \frac{ 2^{\frac{1}{2}} \cdot 2^{ω} }{ 2^{ω} } } adressierbar.'."\n",
+                    '\lm{ a = \sqrt{2} = \frac{ 2^{\frac{1}{2}} \cdot 2^{ω} }{ 2^{ω} } } adressierbar.'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1751,7 +1761,7 @@
                     'Die Struktur, die \lm{ \s } beschreibt, verrutscht dabei zum einen ins aktual unendlich Große und zum anderen dann wieder ins aktual'."\n".
                     'unendlich Kleine; beide Male kombiniert mit dem Endlichen.'."\n",
                       'Es erscheint ein wenig wie ein Wunder, dass beides exakt einander entspricht, ja entsprechen muss.'."\n".
-                    ''))),
+                    ''))), */
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich', text =>
                       
                 'Die superiale Basis \lm{ \s } und die Ordinalzahl \lm{ ω^{ω} } im Strukturvergleich', subline =>
