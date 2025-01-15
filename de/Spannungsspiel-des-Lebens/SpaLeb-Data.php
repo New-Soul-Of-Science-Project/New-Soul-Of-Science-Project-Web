@@ -40,7 +40,7 @@
       text_titel_h1 => 'Spannungsspiel des Lebens \\\\ \\color{*TitleAdd}{\\small{(Neue Biophysik, NB)}}',
       text_titel_short => 'Spannungsspiel des Lebens',
       //text_undertitel_h2 => 'Die Magie von Körper und Seele',
-      text_undertitel_h2 => 'Yes, We Care! — Ja, wir sorgen! — Eine neue naturphilosophische Perspektive auf unsere Existenz und die Beziehung zwischen Körper und Seele im Spannungsfeld von Neheh und Djet',
+      text_undertitel_h2 => 'Yes, We Care! — Ja, wir fürsorgen! — Eine neue naturphilosophische Perspektive auf unsere Existenz und die Beziehung zwischen Körper und Seele im Spannungsfeld von Neheh und Djet',
       //text_titel_discr_h3 => 'Die Analyse des Wechselspiels aus Spannungsbalancen, deren Bruch und dem finden neuer Balancen führt zu tiefen Einsichten in das menschliche Leben, offenbart eine neue Perspektive auf die Biologie und begründet so die Spannungsbiologie der Regelsysteme der Organismen.',
       //text_titel_discr_h3 => 'Das Leben, unsere Welt, beruht auf einem neu entdeckten und fundamentalen, strukturellen Spiel zwischen Stabilität und Fortentwicklung; auf einem neuen Verständnis der Zeit, dass zu tiefen Einsichten in die menschliche Existenz führt, eine neue Perspektive auf die Biologie offenbart und so die Spannungsbiologie der Regelsysteme der Organismen begründet',
       text_titel_discr_h3 => 'Glücklicher wird, wer eine angenehm spannende Balance zwischen Harmonie und Disharmonie findet, zwischen Stabilität und Fortentwicklung, zwischen Neheh und Djet',

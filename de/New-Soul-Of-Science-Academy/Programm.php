@@ -43,7 +43,7 @@
 		    	<!  • ›Spannungsspiel des Lebens‹  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens',
-              'Yes, We Care! — Ja, wir sorgen!', 'Sc_f_Paragraph',
+              'Yes, We Care! — Ja, wir fürsorgen!', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:nSOSa:Home', type => 'back'),
