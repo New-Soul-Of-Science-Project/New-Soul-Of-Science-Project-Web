@@ -2104,7 +2104,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.UK', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathfrak{c}  =  \#\mathbb{R}  }'),
+                      array( display => 'on',  latex => '{  \mathfrak{c}  =  *| \mathbb{R} |*  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Es soll gezeigt werden können, dass die Mächtigkeit des Kontinuums der Potenzmenge von \lm{ \mathbb{N} } entspricht.\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese_Einfache}}'."\n".
@@ -2114,8 +2114,8 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.UK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \aleph_{1}  =  2^{\aleph_{0}}  }'),
-                      array( display => 'on',  latex => '{  \aleph_{0}  =  ω  =  \#\mathbb{N}  =  \vert \mathbb{N} \vert  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \aleph_{1}  =  2^{ω}  =  \vert \mathcal{P}(\mathbb{N}) \vert  }'),
+                      array( display => 'on',  latex => '{  \aleph_{0}  =  ω  =  \#\mathbb{N}  =  *| \mathbb{N} |*  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \aleph_{1}  =  2^{ω}  =  *| \mathcal{P}(\mathbb{N}) |*  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Die Kontinuumshypothese\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese}}'."\n".
