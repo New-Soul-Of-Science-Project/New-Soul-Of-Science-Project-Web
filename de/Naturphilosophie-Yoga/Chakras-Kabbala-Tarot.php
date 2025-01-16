@@ -27,9 +27,9 @@
                     '• Kronen-Chakra oder Sahasrara (Tarot: 1. Der Magier Karte, The Magician Card, The Magus Card or The Juggler Card)',
                     '• ???-Chakra oder ??? (Tarot: 0. (oder 11.?) oder 22. Der Narr Karte, Der Joker Karte, The Fool or The Soul Card (Mark Passio))',
                     '\\bold{\\italic{Macrocosmic Arcana (äußere)}}',
-                    '• XXX',
+                    '• X',
                     '\\bold{Minor Arcana}',
-                    '• XXX',
+                    '• X',
                     '\\bold{Wochentage sind nach Planeten und Göttern benannt, die den Chakras entsprechen}',
                     '• Siehe \\jump[https://de.wikipedia.org/w/index.php?title=Wochentag&oldid=232562969]{}{Wikipedia: Wochentag}.',
                     '\\bold{Chakras}',
@@ -38,34 +38,10 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Chakras-Kabbala-Tarot:Vortext:XXX', text =>
-                      
-                'XXX', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:NPYo:XXX'),
+                      //array(  jump_name => 'OM:NPYo:X'),
                     )),
                 )
           ); ?>
@@ -80,42 +56,42 @@
               '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:NPYo:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:NPYo:X', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '• XXX',
+                    '• X',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n"))),
                   array( 'headline', array( jump_name => 'OM:NPYo:Chakras-Kabbala-Tarot:X:X', text =>
                       
-                'XXX', subline =>
+                'X', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n"))),
                       
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:NPYo:XXX'),
+                      // array(  jump_name => 'OM:NPYo:X'),
                     )),
               )
           ); */ ?>
