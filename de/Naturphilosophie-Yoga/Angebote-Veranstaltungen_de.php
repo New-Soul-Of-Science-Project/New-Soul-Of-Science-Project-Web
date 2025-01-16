@@ -14,7 +14,7 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   /*array( 'notice', array( Display => 'showContent', text => array(
-                    '(• XXX)',
+                    '(• X)',
                     ))),*/
                       
                   array( 'text', array( text => array(
@@ -22,7 +22,7 @@
                     'Findest du nicht, was du dir vorstellst und hast Anregungen für mich oder eine Nachfrage, dann nehme gerne \\jump{OM:FrQFT:Impressum}{Kontakt} mit mir auf.'."\n"))),
                       
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SpaLeb:XXX'),
+                      //array(  jump_name => 'OM:SpaLeb:X'),
                     )),
                 )
           ); ?>
@@ -37,11 +37,11 @@
               'Kombiniert mit Intensive Yoga Unterricht (Power Yoga)', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
+                      //array(  jump_name => 'OM:SpaLeb:X', type => 'back'),
                     )),
                       
                   /*array( 'notice', array( Display => 'showContent', text => array(
-                    '(• XXX)',
+                    '(• X)',
                     ))),*/
                       
                   array( 'text', array( text => array(
@@ -68,16 +68,16 @@
                     'Sind dir die Asanas zu viel oder diese Körperübungen sind nicht dein Ding, dann können wir sehen, welche Alternativen für dich in Frage kommen.'."\n",
                       'Du bekommst Anregungen und Hilfe zur Selbsthilfe.'."\n"))),
                   /*array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),*/
+                    '\\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n"))),*/
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:FrQFT:Impressum', title_site => 'Kontakt'),
@@ -93,11 +93,11 @@
               '\\name[undertitle]{OM:SpaLeb:Meetup-Yoga-Meets-Wissenschaft}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
+                      //array(  jump_name => 'OM:SpaLeb:X', type => 'back'),
                     )),
                       
                   /*array( 'notice', array( Display => 'showContent', text => array(
-                    '(• XXX)',
+                    '(• X)',
                     ))),*/
                       
                   array( 'text', array( text => array(
@@ -124,11 +124,11 @@
               '\\name[undertitle]{OM:NPYo:Meetup-LGBT-Spiritual-Hamburg}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
+                      //array(  jump_name => 'OM:SpaLeb:X', type => 'back'),
                     )),
                       
                   /*array( 'notice', array( Display => 'showContent', text => array(
-                    '(• XXX)',
+                    '(• X)',
                     ))),*/
                       
                   array( 'text', array( text => array(
@@ -155,11 +155,11 @@
               '\\name[undertitle]{OM:FrQFT:Meetup-Physik-Neu-Sehen-Ergruenden}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
+                      //array(  jump_name => 'OM:SpaLeb:X', type => 'back'),
                     )),
                       
                   /*array( 'notice', array( Display => 'showContent', text => array(
-                    '(• XXX)',
+                    '(• X)',
                     ))),*/
                       
                   array( 'text', array( text => array(
@@ -186,11 +186,11 @@
               '\\name[undertitle]{OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga} \\name[description]{OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
+                      //array(  jump_name => 'OM:SpaLeb:X', type => 'back'),
                     )),
                       
                   /*array( 'notice', array( Display => 'showContent', text => array(
-                    '(• XXX)',
+                    '(• X)',
                     ))),*/
                       
                   array( 'text', array( text => array(
@@ -198,15 +198,15 @@
                     'Lass dich herausfordern, anders zu denken und Verborgenes zu entdecken.'."\n"))),
                   /*array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),*/
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n"))),*/
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga', title_site => 'Details'),
@@ -230,11 +230,11 @@
               '\\name[undertitle]{OM:SpaLeb:Vor-PerspektivW-AmbiguitaetsT-Entscheid-Demokra}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
+                      //array(  jump_name => 'OM:SpaLeb:X', type => 'back'),
                     )),
                       
                   /*array( 'notice', array( Display => 'showContent', text => array(
-                    '(• XXX)',
+                    '(• X)',
                     ))),*/
                       
                   array( 'text', array( text => array(
@@ -242,15 +242,15 @@
                     'Lass dich herausfordern, anders zu denken und neue Einsichten zu entdecken.'."\n"))),
                   /*array( 'text', array( text => array(
                     '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),*/
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n"))),*/
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Vor-PerspektivW-AmbiguitaetsT-Entscheid-Demokra', title_site => 'Details'),
@@ -275,24 +275,15 @@
               '\\name[undertitle]{OM:NPYo:WS-Achtsamkeitsprozess-WoPhysikAufYogaTrifft}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      //array(  jump_name => 'OM:SpaLeb:XXX', type => 'back'),
+                      //array(  jump_name => 'OM:SpaLeb:X', type => 'back'),
                     )),
                       
                   /*array( 'notice', array( Display => 'showContent', text => array(
-                    '(• XXX)',
+                    '(• X)',
                     ))),*/
                       
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n"))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:WS-Achtsamkeitsprozess-WoPhysikAufYogaTrifft', title_site => 'Details'),
