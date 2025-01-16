@@ -14,8 +14,8 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '\\bold{Major Arcana (Fool\'s or Soul\'s Journey)}',
-                    '\\bold{\\italic{Microcosmic Arcana (innere)}}',
+                    '\bold{Major Arcana (Fool\'s or Soul\'s Journey)}',
+                    '\bold{\italic{Microcosmic Arcana (innere)}}',
                     '• Wurzel-Chakra oder Muladhara (Tarot: 10. Das Rad des Schicksals Karte, Wheel of Fortune Card)',
                     '• Sakral-Chakra oder Svadishtana (Tarot: 9. Der Eremit, The Hermit Card)',
                     '• Solarplexus-Chakra oder Manipura (Hara) (Tarot: weiblicher Aspekt, 8. Die Kraft, Strength; 7. männlicher Aspekt, Der Wagen, The Chariot)',
@@ -26,13 +26,13 @@
                     '• Stirn-Chakra oder Ajna (Tarot: weiblicher Aspekt, 3. Die Herrscherin Karte, The Empress Card; 2. männlicher Aspekt, Die Hohepriesterin, Die Päpstin Karte, The High Priestess Card)',
                     '• Kronen-Chakra oder Sahasrara (Tarot: 1. Der Magier Karte, The Magician Card, The Magus Card or The Juggler Card)',
                     '• ???-Chakra oder ??? (Tarot: 0. (oder 11.?) oder 22. Der Narr Karte, Der Joker Karte, The Fool or The Soul Card (Mark Passio))',
-                    '\\bold{\\italic{Macrocosmic Arcana (äußere)}}',
+                    '\bold{\italic{Macrocosmic Arcana (äußere)}}',
                     '• X',
-                    '\\bold{Minor Arcana}',
+                    '\bold{Minor Arcana}',
                     '• X',
-                    '\\bold{Wochentage sind nach Planeten und Göttern benannt, die den Chakras entsprechen}',
-                    '• Siehe \\jump[https://de.wikipedia.org/w/index.php?title=Wochentag&oldid=232562969]{}{Wikipedia: Wochentag}.',
-                    '\\bold{Chakras}',
+                    '\bold{Wochentage sind nach Planeten und Göttern benannt, die den Chakras entsprechen}',
+                    '• Siehe \jump[https://de.wikipedia.org/w/index.php?title=Wochentag&oldid=232562969]{}{Wikipedia: Wochentag}.',
+                    '\bold{Chakras}',
                     '• Siehe Bild, was über Hannes Heine kam: „Chakrensystem-screenshot-2023-11-27-at-165906.png“.',
                     '– Vielleicht bei „@wingedshoespublishing“ um Genehmigung der Benutzung fragen?',
                     ))),
@@ -53,7 +53,7 @@
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:NPYo:Chakras-Kabbala-Tarot:X',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       // array(  jump_name => 'OM:NPYo:X', type => 'back'),
