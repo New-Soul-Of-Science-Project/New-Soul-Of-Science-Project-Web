@@ -671,7 +671,7 @@
                     'endliche Primzahlen in endlicher Potenz oder in Potenz der einfachen normierten vollständigen Induktion erreichbar sind.'."\n",
                       'Demnach ist das Kontinuum so etwas wie \lm{ \mathfrak{c} ?= \# \mathbb{A}_{\S} = \s = 2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots }.'."\n".
                     'Das könnte bedeuten \lm{ \mathfrak{c} \ne 2^{ω} }.'."\n",
-                      'Dies ist jedoch eine andere Definition als über die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}, wo \lm{ *| \mathbb{A}_{\S} |* = ω } wäre, weil \lm{ \mathbb{A}_{\S}} abzählbar viele Elemente besitzt.'."\n".
+                      'Dies ist jedoch eine andere Definition des Kontinuums als über die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}, wo \lm{ *| \mathbb{A}_{\S} |* = ω } wäre, weil \lm{ \mathbb{A}_{\S}} abzählbar viele Elemente besitzt.'."\n".
                     'Wir sehen, die Superial-Zahlen machen eine Reflexion der Bedeutung und Definition des Kontinuums notwendig.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:X', text =>
