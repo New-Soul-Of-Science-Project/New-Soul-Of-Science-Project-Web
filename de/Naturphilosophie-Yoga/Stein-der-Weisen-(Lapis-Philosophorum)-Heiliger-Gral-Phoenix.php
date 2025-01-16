@@ -14,8 +14,8 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '\\bold{XXX}',
-                    // '• XXX',
+                    // '\\bold{X}',
+                    // '• X',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -570,9 +570,9 @@
                       'Der Prozess des Phönix hat eine starke Verbindung zum ›löse und verbinde‹, ›solve et coagula‹, der Alchemie.'."\n".
                     'Hier ist der Entwicklungsprozess, die Verwandlung, aber nicht auf ein einziges Leben begrenzt, sondern wird auch Generationsübergreifend und gesellschaftlich betrachtet.'."\n".
                     'Aber natürlich können wir auch in unserem Leben wie der Phönix aus der Asche neu entstehen.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))), */
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n"))), */
                   array( 'text', array( text => array(
                     'Der ›Phönix aus der Asche‹ steht für die Neuentstehung, die Wiedergeburt (Geburt) und Frühling, durch Vergänglichkeit aus Zerstörung und Tod.'."\n".
                     'In milderer Form steht er für die Verwandlung, die Transformation, für die Metamorphose.'."\n",
@@ -583,7 +583,7 @@
                       
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
                     array_merge( $NPYo_g_figure_ary_DunkelheitZuLicht, array( name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-DunkelheitZuLicht',
-                                                         /* text => 'XXX' */)),
+                                                         /* text => 'X' */)),
                       )),
                       
                   array( 'text', array( text => array(
@@ -597,7 +597,7 @@
                     'wo wir am kürzesten und dunkelsten Tag des Jahres in innerer Einkehr und äußerer Feier Hoffnung und Perspektive für das kommende Jahr schöpfen –'."\n".
                     'dem Frühling und dem Sommer dann positiv entgegensehend.'."\n".
                     'Und hier verwandeln wir so auf mystische und mythologische Weise auch Dunkelheit in Licht.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:X', text =>
                       
                 'Mythologien und Rituale', subline =>
                   'Wintersonnenwende, altes Ägypten')),
@@ -619,12 +619,8 @@
                     'Die Geschenke des Julfestes zu Weihnachten sollen uns für das kommende Jahr zu lichten Gedanken und Ideen inspirieren.'."\n",
                       'Im Christentum finden wir das Lichterfest mit der Geburt von Jesus Christus in Verbindung gebracht.'."\n".
                     'Auch in diesem Mythos geht es in meinen Augen darum, die Dunkelheit in Licht zu verwandeln.'."\n".
-                    'Christus Auferstehung möchte ich auch als einen Hinweis auf die Wiedergeburt in Bezug auf den Phönix aus der Asche verstehen.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
+                    'Christus Auferstehung möchte ich auch als einen Hinweis auf die Wiedergeburt in Bezug auf den Phönix aus der Asche verstehen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n",
                       'Das Leben des Horus (siehe \\jumpname{OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-LebenDesHorusHermesstab}) der altägyptischen Mythologie,'."\n".
                     'vermutlich die Vorlage für Christus, vollzieht sich gleich dem ›Phönix aus der Asche‹.'."\n".
                     'Er wird aus dem Ei der Metamorphose, dem Dreiviertelmond, geboren und seine Persönlichkeitsentwicklung steigt, wie die Kundalini-Schlangen,'."\n".
@@ -638,37 +634,32 @@
                                                          text => $NPYo_g_text_LebenDesHorusHermesstab_Phoenix)),
                       )),
                       
-                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:X', text =>
                       
                 'Altes Wissen', subline =>
                   'Hermes Trismegistos')),
                   array( 'text', array( text => array(
                     'Der Prozess des Phönix hat eine starke Verbindung zum ›löse und verbinde‹, ›solve et coagula‹, der Alchemie.'."\n".
                     'Hier ist der Entwicklungsprozess, die Verwandlung, aber nicht auf ein einziges Leben begrenzt, sondern wird auch Generationsübergreifend und gesellschaftlich betrachtet.'."\n".
-                    'Aber natürlich können wir auch in unserem Leben wie der ›Phönix aus der Asche‹ neu entstehen.'."\n".
-                    'XXX'."\n".
-                    'XXX Hermes Trismegistos\\footnote{\\const{NPYo_g_footnote_text_HermesTrismegistos}}'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                    'Aber natürlich können wir auch in unserem Leben wie der ›Phönix aus der Asche‹ neu entstehen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      '\color{*Bearb}{(In Arbeit …)} Hermes Trismegistos\\footnote{\\const{NPYo_g_footnote_text_HermesTrismegistos}}'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:X', text =>
                       
                 'Neues Wissen', subline =>
                   'Biophysik')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX Achtsamkeitsprozess'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Achtsamkeitsprozess'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n"))),
                       
                   array( 'figure', array( arrayType => 'ArrayOfDirect', arrayMarginLeftRight => '10px',
                     array_merge( $NPYo_g_figure_ary_PhoenixAusDerAsche, array( name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:Fig-PhoenixAusDerAscheYinYang',
                                                          /* text => '' */)),
                       )),
                       
-                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:X', text =>
                       
                 'Metamorphose in der Persönlichkeitsentwicklung', subline =>
                   '')),
@@ -678,7 +669,7 @@
                       'Es gibt den ›Phönix aus der Asche‹ also auch in der Persönlichkeitsentwicklung, innerhalb eines Lebens.'."\n".
                     'Hier als me­ta­mor­phische Verwandlung vom Ei bis zum ausgewachsenen Vogel.'."\n".
                     'Also geht es um die Prüfungen, die das Leben uns stellt, und ob wir diese bestehen (überleben), bis zur Fortpflanzung.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:X', text =>
                       
                 'Metamorphose zwischen Generationen', subline =>
                   '')),
@@ -689,25 +680,15 @@
                     'Es geht um das Mysterium der Fortpflanzung, um unser Vertrauen in dieses, um die Prüfung unseres Vertrauens, dass es weiter geht, die Saat aufgeht.'."\n".
                     'Dies ist eine \\jump{OM:NPYo:Spiritualitaet-Psychologie:Vortext:BinIchSpirituell}{Prüfung unseres Glaubens}.'."\n".
                     'Den glauben wir nicht an dieses Mysterium, dass unsere Fortpflanzung gelingt, dann sind wir schon verloren.'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                      '\color{*Bearb}{(In Arbeit …)}'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:X', text =>
                       
                 'Mysterium der Ewigkeit über Generationen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Die Auferstehung aus der Asche des Phönix steht für die Ewigkeit der Existenz des Lebens und der Welt.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                    'Die Auferstehung aus der Asche des Phönix steht für die Ewigkeit der Existenz des Lebens und der Welt.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:X', text =>
                       
                 'Symbol der Asche', subline =>
                   '')),
@@ -716,51 +697,34 @@
                     'Weiter steht sie auch für Trauer, Buße oder Reue, und in diesem Sinne steht sie auch für die Anerkennung von Schuld, für Demut und Umkehr, wie in der Redewendung:'."\n".
                     '\\quote{Asche auf mein Haupt.}'."\n",
                       'Reue, Anerkennung von Schuld, Demut und Umkehr weisen auf einen Lernprozess und eine Persönlichkeitsentwicklung hin.'."\n".
-                    'Es muss sich etwas ganz grundlegendes verändern.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                    'Es muss sich etwas ganz grundlegendes verändern.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:X', text =>
                       
                 'Grundsätzliche Erneuerung und Auferstehung', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Dieser Lernprozess und diese Persönlichkeitsentwicklung machen eine Erneuerung und deren Auferstehung erst möglich.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                    'Dieser Lernprozess und diese Persönlichkeitsentwicklung machen eine Erneuerung und deren Auferstehung erst möglich.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:X', text =>
                       
-                'XXX', subline =>
-                  'XXX')),
+                '\color{*Bearb}{(In Arbeit …)}', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:X', text =>
                       
                 'Pflanzenwelt', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Es gibt etliche Pflanzen, deren Samen Feuer brauchen, damit sie aus der Asche keimen können.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                    'Es gibt etliche Pflanzen, deren Samen Feuer brauchen, damit sie aus der Asche keimen können.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:X', text =>
                       
                 'Naturphilosophie', subline =>
                   '')),
                   array( 'text', array( text => array(
-                  'XXX'."\n"))),
+                  '\color{*Bearb}{(In Arbeit …)}'."\n"))),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
                     '• Eine Verbindung zur Naturphilosophie besteht in der Erkenntnis, dass der Samen, der Keim, des Lebens in der Grundstruktur der Natur angelegt ist.',
@@ -768,45 +732,16 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{XXX} \\\\'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:XXX', text =>
+                  '\\condb{\color{*Bearb}{(In Arbeit …)}} \\\\'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n"))),
+                  array( 'headline', array( jump_name => 'OM:NPYo:Stein-der-Weisen:Phoenix-aus-der-Asche:X', text =>
                       
-                'XXX', subline =>
-                  'XXX')),
+                '\color{*Bearb}{(In Arbeit …)}', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n"))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:NPYo:Home:Inhalt'),
