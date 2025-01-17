@@ -427,7 +427,7 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    // '• XXX',
+                    // '• X',
                     ))),
                       
                   array( 'headline', array( jump_name => 'OM:NPYo:HaTha:HerstellungBalance:X', text =>
