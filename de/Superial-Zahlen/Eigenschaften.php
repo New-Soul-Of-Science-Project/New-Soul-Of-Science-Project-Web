@@ -2098,8 +2098,9 @@
                       array( display => 'on',  latex => '{  \mathfrak{c}  =  *| \mathbb{R} |*  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Es soll gezeigt werden können, dass die Mächtigkeit des Kontinuums der Potenzmenge von \lm{ \mathbb{N} } entspricht.\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese_Einfache}}'."\n".
-                    'Warum dies so ist und wie es gezeigt wird, hab ich noch nicht verstanden.'."\n".
+                    'Wäre die Kontinuumshypothese\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese}} wahr, dann könnte gezeigt werden,'."\n".
+                    'dass die Mächtigkeit des Kontinuums der Potenzmenge von \lm{ \mathbb{N} } entspricht.\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese_Einfache}}'."\n".
+                    'Warum die Kontinuumshypothese genau dies annimmt, hab ich noch nicht ganz genau verstanden.'."\n".
                     'Die Mächtigkeit des Kontinuums wird dann mit Hilfe von \lm{ ω } als \lm{ \aleph_{1} } formuliert:'."\n".
                     ''))),
                   array( 'equations',
@@ -2109,8 +2110,8 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \aleph_{1}  =  2^{ω}  =  *| \mathcal{P}(\mathbb{N}) |*  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Die Kontinuumshypothese\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese}}'."\n".
-                    'vermutet dann offenbar, dass die reellen Zahlen die gleiche Mächtigkeit besitzen, wie das Kontinuum:\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese_Einfache}}'."\n".
+                    'Die Kontinuumshypothese vermutet, dass die reellen Zahlen die gleiche Mächtigkeit besitzen,'."\n".
+                    'wie das Kontinuum:\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese_Einfache}}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.UK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2120,9 +2121,10 @@
                     'Die Idee ist also, dass die Mächtigkeit der reellen Zahlen der Mächtigkeit der Potenzmenge der Menge \lm{ \mathbb{N} }'."\n".
                     'der natürlichen Zahlen, also \lm{ \vert \mathcal{P}(\mathbb{N}) \vert }, mit \lm{ 2^{ω} } entspricht.'."\n".
                     'Die Mächtigkeit einer Menge ist dabei nicht unbedingt der Anzahl der Elemente dieser Menge gleich.'."\n",
-                      'Dies möchte ich nicht bezüglich der Mächtigkeit grundsätzlich in Frage stellen, sondern in Bezug auf die'."\n".
-                    'mit den Superial-Zahlen gefundene Struktur des Unendlichen, vielleicht eher als Dichte oder Raster und mit der Arithmetik beschreiben'."\n".
-                    'sowie erneut beleuchten, um weitere Erkenntnisse zu gewinnen.'."\n",
+                      'Dies möchte ich nicht bezüglich der Mächtigkeit grundsätzlich in Frage stellen.'."\n".
+                      'Sondern ich möchte die Kontinuumshypothese durch die mit den Superial-Zahlen gefundene Struktur des Unendlichen,'."\n".
+                    'der Dichte oder das Rasters der \jump{OM:SupNum:Struktur-Geometrie}{arithmetischen Struktur der Geometrie},'."\n".
+                    'differenzierter und tiefer beleuchten sowie gegebenenfalls sinnvoller formulieren, um weitere Erkenntnisse zu gewinnen.'."\n",
                       'Mit der Kontinuumshypothese wird angenommen:'."\n".
                     ''))),
 
@@ -2174,25 +2176,30 @@
                 'Die Konstruktion und der Sinn von \lm{ \s } wirft Fragen bezüglich der Struktur der reellen Zahlen auf', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Nun geht es bei der Kontinuumshypothese um die Mächtigkeit der reellen Zahlen und um die der natürlichen Zahlen;'."\n".
+                    'Nun geht es bei der Kontinuumshypothese auch um die Mächtigkeit der reellen Zahlen und um die der natürlichen Zahlen;'."\n".
                     'schließlich ja um die Frage, ob es noch eine Mächtigkeit zwischen denen dieser beiden Mengen gibt.'."\n",
-                      'Die superiale Basis \lm{ \s } ist nun so konstruiert, dass ein Produkt mit ihr und jedem Realanteil einer algebraischen Zahl,'."\n".
-                    'eine ganze Zahl ergibt, wie wir durch den Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} wissen.'."\n",
-                    'Offensichtlich können wir dies sehen, wenn es sich dabei um eine rationale Zahl handelt.'."\n".
-                      'Wir können daran erkennen, dass schon die Struktur der reell algebraischen Zahlen es erfordert, nicht nur'."\n".
+                      'Die superiale Basis \lm{ \s } ist nun so konstruiert, dass ein Produkt mit ihr und jeder reell algebraischen Zahl,'."\n".
+                    'die durch Radikale darstellbar ist,'."\n".
+                    'eine ganze Zahl ergibt, wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}‹} zeigen.'."\n".
+                    'Dies gelingt unter anderem mit Hilfe unseres Beweises der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}.'."\n".
+                    'Und wir \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{vermuten, dass dies sogar für alle reell algebraischen Zahlen gilt},'."\n".
+                    'was allerdings noch zu beweisen aussteht.'."\n",
+                      'Es ist offensichtlich, dass \\jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{jedes Produkt einer rationalen Zahl mit unserer superialen Basis \lm{ \s } eine ganze Zahl ergibt}.'."\n".
+                    'Wir können daran erkennen, dass schon die Struktur der reell algebraischen Zahlen es erfordert, nicht nur'."\n".
                     '\lm{ 2^{ω} }, sondern auch \lm{ 3^{ω} } und ebenso alle'."\n".
                     'anderen aktual unendlichen Potenzen endlicher Primzahlen bis ins Unendliche, einzubeziehen.'."\n".
-                    'Da scheint es offenbar, dass \lm{ 2^{ω} } nicht ausreichen kann,'."\n".
+                    'Da scheint es Fraglich, ob \lm{ 2^{ω} } ausreichen kann,'."\n".
                     'die Komplexität oder Feinheit der Struktur aller reellen Zahlen darzustellen.'."\n".
-                    'Dazu kommt, dass die reellen Zahlen auch noch alle transzendenten Zahlen enthalten sollen, woran es Zweifel geben darf,'."\n".
-                    'siehe Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen}}.'."\n",
+                    'Dazu kommt, dass die reellen Zahlen auch noch alle transzendenten Zahlen enthalten sollen, was im Rahmen der Superial-Zahlen weitere interessante Fragen aufwirft,'."\n".
+                    'siehe Seite \italic{›\jumpname{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}‹}'."\n".
+                    'oder auch den folgenden Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen}‹}.'."\n",
                       'Während die Mächtigkeit der reell algebraischen Zahlen, der der natürlichen Zahlen entspricht,'."\n".
                     'weil sie abzählbar sind,\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}}'."\n".
-                    'ist die Mächtigkeit der transzendenten Zahlen\footnote{\const{SupNum_g_footnote_text_TranszendenteZahl}} überabzählbar.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}, Überabzählbarkeit.}'."\n".
-                    'Durch die Superial-Zahlen sehen wir, dass die Anzahl der reell algebraischen Zahlen dem besagten'."\n".
-                    'aktual unendlichen Flächenprodukt \lm{ \s } geteilt durch die Anzahl der endlichen ganzen \lm{ 2 \cdot ω } entspricht,'."\n".
+                    'ist die Mächtigkeit der transzendenten Zahlen\footnote{\const{SupNum_g_footnote_text_TranszendenteZahl}} überabzählbar.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}, Überabzählbarkeit.}'."\n",
+                      'Durch die Superial-Zahlen sehen wir nun, dass die Anzahl der sinnvollen Koeffizienten der Superial-Zahlen \lm{ \# \mathbb{A}_{\S} } dem besagten'."\n".
+                    'aktual unendlichen Flächenprodukt \lm{ \s } geteilt durch die Anzahl der endlichen ganzen Zahlen \lm{ \# \mathbb{Z} = 2 \cdot ω }, also \lm{ \# \mathbb{A}_{\S} = \frac{ \s }{ 2 \cdot ω } }, entspricht,'."\n".
                     'siehe Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins}.'."\n",
-                      'Wenn wir dies alles betrachten, bekomme ich den Eindruck, dass hier etwas nicht zusammenpasst.'."\n",
+                      'Wenn wir dies alles in einer Gesamtschau betrachten, bekomme ich den Eindruck, dass hier etwas nicht zusammenpasst und überdacht werden sollte.'."\n",
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Unabhängigkeit von der Mengenlehre (ZFC)} \\\\'."\n".
@@ -2201,34 +2208,34 @@
                     'Dass bedeutet, die Mengenlehre – genauer die ZFC-Mengenlehre – gibt uns nicht die Möglichkeit zu entscheiden, ob die Kontinuumshypothese wahr oder falsch ist.'."\n",
                       'Hier kommen die auf diesen Seiten entwickelten Superial-Zahlen, und die mit ihnen verbundenen \jump{OM:BiOrd:Home}{Biordinalzahlen}, ins Spiel.'."\n".
                     'Die Superial-Zahlen begründen das Aktual-Unendliche auf den endlichen Primzahlen und so auf der Arithmetik und bringen sie mit der Mengenlehre zusammen.'."\n".
-                    'Sie erweitern so die reell algebraischen Zahlen sogar auf einen'."\n".
+                    'Sie erweitern so die reell algebraischen Zahlen, die durch Radikale darstellbar sind, und vielleicht sogar alle, auf einen'."\n".
                     'aktual unendlichen angeordneten algebraischen Körper\footnote{\const{NSOSP_g_footnote_text_KoerperAlgebra}}\footnote{\const{SupNum_g_footnote_text_AlgebraischerZahlkoerper}}.'."\n".
                     'Das heißt, wir haben durch die Superial-Zahlen nicht nur die Mengenlehre, sondern auch eine Arithmetik des Aktual-Unendlichen mit ausgezeichneten Eigenschaften'."\n".
                     'zur Verfügung.'."\n",
                       'Und dadurch konnten wir schon neue Erkenntnisse der Arithmetik des Aktual-Unendlichen gewinnen, wie eine neue Definition der Ableitung, des Integrals,'."\n".
                     'also der Erweiterung des Zählens, und der Primzahlen, der Definition der vollständigen Induktion über endliche Primzahlen sowie'."\n".
                     'der Definition von irrationalen reell algebraischen Zahlen mit überratiionalen Brüchen, also Brüchen aus aktual unendlichen ganzen Zahlen, die irrationale Wurzeln und ähnliches beschreiben.'."\n",
-                      'All dies steht offensichtlich in Beziehung zur Kontinuumshypothese und kann so zu deren besseren Verständnis herangezogen werden.'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                      'All dies steht offensichtlich in Beziehung zur Kontinuumshypothese und kann so zu deren besseren Verständnis herangezogen werden.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen', text =>
                       
                 'Transzendente Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Hinsichtlich der transzendenten Zahlen möchte ich am Beispiel der Eulerschen Zahl \lm{ \e_\s } zeigen,'."\n".
-                    'dass sich hier weitere Fragezeichen ergeben:'."\n",
+                    'Hinsichtlich der transzendenten Zahlen möchte ich am Beispiel der superialen Eulerschen Zahl \lm{ \e_\s } zeigen,'."\n".
+                    'dass sich hier weitere Fragen ergeben:'."\n",
                       'Auf der Seite \italic{\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion}}'."\n".
-                    'kommen wir zu dem Schluss, dass die Eulersche Zahl keine irrationale Zahl ist, nicht einmal eine'."\n".
+                    'kommen wir zu dem Schluss, dass die Eulersche Zahl keine rein endliche irrationale Zahl ist, nicht einmal eine'."\n".
                     'Superial-Zahl der auf dieser Seite definierten 1. Ordnung, weil sie unweigerlich'."\n".
                     'aktual unendlich kleine Summanden der Größenordnung \lm{ \s^{-\s} } enthält, die nicht Null werden können.'."\n".
-                    'Wie gesagt, fällt sie hierdurch selbst aus der Menge \lm{ \mathbb{S} } der Superial-Zahlenheraus.'."\n".
+                    'Wie gesagt, fällt sie hierdurch selbst aus der Menge \lm{ \mathbb{S} } der Superial-Zahlen heraus.'."\n".
                     'Sie ist also keine rein endliche reelle Zahl, die nur aus Summanden endlicher Größe besteht.'."\n",
                       'An dieser Stelle würde ich sagen, dass zumindestens \lm{ \e_\s } keine reelle Zahl ist'."\n".
-                    'und die Frage im Raum steht, ob nicht auch alle anderen transzendenten Zahlen gar keine reellen Zahlen sind.'."\n".
+                    'und die Frage im Raum steht, ob nicht auch alle anderen transzendenten Zahlen eigentlich gar keine reellen Zahlen sind.'."\n".
                     'Sondern, wir lassen uns vielleicht dadurch täuschen, dass wir glauben, transzendente Zahlen wären durch Dezimalzahlen'."\n".
                     'mit unendlich vielen Nachkommastellen darstellbar, ohne zu beantworten,'."\n".
-                    'wie groß diese minimale Unendlichkeit denn eigentlich ist.'."\n".
+                    'wie groß diese minimale Unendlichkeit der Nachkommastellen denn eigentlich ist;'."\n".
+                    'ob es nicht vielleicht unendliche Größenordnungen mehr sind, als die Unendlichkeit der vollständigen Induktion, also \lm{ \s = ω^{ω}} viele Nachkommastellen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:X', text =>
                       
@@ -2236,8 +2243,8 @@
                   '')),
                   array( 'text', array( text => array(
                     'Ich denke, wir sollten die Struktur der reellen Zahlen und ihre Aufteilung in Untermengen'."\n".
-                    'mit Hilfe der Primzahlen, und somit mit Hilfe der Superial-Zahlen, tiefer untersuchen und verstehen,'."\n".
-                    'damit wir in die Lage kommen, die Kontinuumshypothese im Detail zu verstehen und hoffentlich dann beantworten zu können.'."\n".
+                    'mit Hilfe der Primzahlen – und somit mit Hilfe der Superial-Zahlen – tiefer untersuchen und verstehen,'."\n".
+                    'damit wir in die Lage kommen, die Kontinuumshypothese im Detail zu beleuchten und hoffentlich dann für uns sinnvolle Antworten zu finden.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
