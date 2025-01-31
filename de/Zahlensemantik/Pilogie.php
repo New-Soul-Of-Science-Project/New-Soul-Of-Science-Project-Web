@@ -2,7 +2,7 @@
         include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
 
 
-<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:ZS:Pi-Vektor'); ?>
+<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:ZS:Pilogie'); ?>
 
       <?php FrQFT_f_Div_Header( '      '); ?>
 

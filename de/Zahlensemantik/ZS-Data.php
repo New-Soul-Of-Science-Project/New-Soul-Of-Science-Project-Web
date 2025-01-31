@@ -103,22 +103,22 @@
                     // 'OM:ZS:Phi-Formel:XXX' => array( headline_text => '\lm{ \phi }-Formel', headline_text_short => 'Φ-Formel'),
                   ),
            ),
-     'OM:ZS:Pi-Vektor' =>
-      array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Pi-Vektor.php',
-             url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Pi-Vektor.php',
-             titel => 'π-Vektor - Zahlensemantik (ZS) - Deutsch',
+     'OM:ZS:Pilogie' =>
+      array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Pilogie.php',
+             url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Pilogie.php',
+             titel => 'Pilogie - Zahlensemantik (ZS) - Deutsch',
              description => '',// '\\name[undertitle]{OM:ZS:Einleitung}. — \\name[description]{OM:ZS:Einleitung}.',
              keywords => '',
-             text_titel_h1 => '\lm{ \pi }-Vektor',
-             text_titel_short => 'π-Vektor',
+             text_titel_h1 => 'Pilogie',
+             text_titel_short => 'Pilogie',
              text_undertitel_h2 => '',
              text_titel_discr_h3 => '',
              jump_ary => array(
-                    'OM:ZS:Pi-Vektor:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                    'OM:ZS:Pilogie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                
-                      // 'OM:ZS:Pi-Vektor:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                      // 'OM:ZS:Pilogie:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                
-                    // 'OM:ZS:Pi-Vektor:XXX' => array( headline_text => '\lm{ \pi }-Vektor', headline_text_short => 'π-Vektor'),
+                    // 'OM:ZS:Pilogie:XXX' => array( headline_text => '\lm{ \pi }-Vektor', headline_text_short => 'π-Vektor'),
                   ),
            ),
      'OM:ZS:Literatur' =>

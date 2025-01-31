@@ -164,7 +164,7 @@
 
 		    	<!  • XXX  >
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:ZS:Einleitung:Pi-Vektor',
+            'OM:ZS:Einleitung:Pilogie',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(

@@ -61,7 +61,7 @@
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:ZS:Einleitung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:ZS:Eulogie'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:ZS:Pi-Vektor'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:ZS:Pilogie'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:ZS:Phi-Formel'),
                     ))),
                       
