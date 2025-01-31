@@ -516,14 +516,14 @@
                     'Die aktual unendliche Einheit der vollständigen Induktion \lm{ ω } nimmt hier eine ganz besondere Rolle ein.'."\n",
                       'Mit Hilfe von \lm{ ω } können wir eine normierte aktual unendliche Potenz der Primzahlen ausdrücken,'."\n".
                     'die es uns ermöglicht, das Fraktal der arithmetischen Teilung der Geometrie im Hinblick auf rein endliche Zahlen'."\n".
-                    'so zu vervollständigen, dass alle Radikale der irrationalen algebraischen Zahlen im geschöpften Raster enthalten sind;'."\n".
-                    'vermutlich sogar wirklich alle irrationalen algebraischen Zahlen.\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n",
-                      'Dabei ist es vermutlich so, dass die transzendenten Zahlen aktual unendlich kleine Summanden enthalten,'."\n".
+                    'so zu vervollständigen, dass alle Radikale der irrationalen reell algebraischen Zahlen im geschöpften Raster enthalten sind,'."\n".
+                    '\jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{vermutlich sogar wirklich alle reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
+                    'also auch alle irrationalen in ihnen.'."\n",
+                      'Dabei ist es \jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{vermutlich so, dass die transzendenten Zahlen aktual unendlich kleine Summanden enthalten},'."\n".
                     'die dafür sorgen, dass sie nicht zu den rein endlichen Zahlen dazugehören, wie wir bereits an der'."\n".
                     '\jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{eulerschen Zahl \lm{ \e_{\s} }} zeigen konnten.'."\n",
                       'Noch außergewöhnlicher wird die Rolle von \lm{ ω }, wenn wir im \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung}'."\n".
-                    'zeigen, dass sie – also die vollständigen Induktion selber – eine Primfaktorzerlegung besitzt'."\n".
-                    'und zwar in Form des Produkts aller endlichen Primzahlen.'."\n",
+                    'sehen, dass \lm{ ω } – also die vollständige Induktion selber – eine Primfaktorzerlegung in Form des Produkts aller endlichen Primzahlen besitzt.'."\n",
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit', text =>
                                            
@@ -574,7 +574,8 @@
                     'aber doch normiert aktual unendlich dicht beieinander liegen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Eine Besonderheit in Bezug auf \lm{ \s } und die Adressierung der superial kleinen ganzen Zahlen \lm{ \mathbb{S}_{\Z}^{-1} } von Null bis ohne Eins} \\\\'."\n".
+                  '\condb{\anchor{OM:SupNum:Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile}{}Die Abgeschlossenheit der Teilung der Strecke Eins in \lm{ \s } Teile} \\\\'."\n".
+                  '\cond{Eine Besonderheit in Bezug auf \lm{ \s } und die Adressierung der superial kleinen ganzen Zahlen \lm{ \mathbb{S}_{\Z}^{-1} } von Null bis ohne Eins} \\\\'."\n".
                   /*  ''))),
 
                   array( 'notice', array( Display => 'hideContent', text => array(
@@ -608,42 +609,70 @@
                     'auch immer ganze Zahlen sein.'."\n".
                     'Skaliert auf endliche ganze Zahlen müssen dann alle \lm{ a \cdot \s } mit \lm{ a \in \mathbb{A}_{\S} }'."\n".
                     'in der Größenordnung des Endlichen auch immer rein ganze Zahlen sein, wenn auch aktual unendlich groß.'."\n",
-                      'Nun bekommen wir eine etwas paradox erscheinende Situation:'."\n",
+                      'Nun bekommen wir eine im ersten Moment vielleicht paradox erscheinende Situation:'."\n",
                       'Wir haben von der Null an bis direkt vor die Eins \lm{ \s } aktual unendlich kleine ganze Zahlen.'."\n".
                     'Für jeden endlichen Faktor \lm{ a } vor \lm{ \s^{0} }, also \lm{ a \cdot \s^{0} = a \cdot \s^{1} \s^{-1} }, laufen aber'."\n".
                     '\lm{ 2 ω } ganzzahlige Zahlen des Summanden \lm{ z \cdot \s^{-1} } durch.'."\n".
-                    'Zusammen also \lm{ a + z \cdot \s^{-1} }, wobei bei Null nur \lm{ 0 + n \cdot \s^{-1} } mit \lm{ n \in \mathbb{N} }'."\n".
-                    'und bei Eins nur \lm{ 1 + z^{-} \cdot \s^{-1} } mit \lm{ z^{-} \in \mathbb{Z}^{-} }.'."\n".
-                    'Damit kann die Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } der Koeffizienten der Superial-Zahlen, nur \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } } Elemente enthalten.'."\n",
-                      'Wir haben hier die Besonderheit, wie auch noch im Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-Menge-S-Bemerkenswerten-Zusammenhang}}'."\n".
+                    'Zusammen also \lm{ a + z \cdot \s^{-1} }, wobei bei Null nur \lm{ 0 + n \cdot \s^{-1} }, mit \lm{ n \in \mathbb{N} },'."\n".
+                    'und bei Eins nur \lm{ 1 + z^{-} \cdot \s^{-1} }, mit \lm{ z^{-} \in \mathbb{Z}^{-} }.'."\n".
+                    'Damit enthält die Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} } der Koeffizienten der Superial-Zahlen \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } } Elemente,'."\n".
+                    'wie wir auch in Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} sehen.'."\n",
+                      'Wir haben hier die Besonderheit, wie auch noch im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung}‹}'."\n".
                     'genauer beleuchtet wird, dass eine Teilung der Strecke zwischen Null und Eins in \lm{ \s } Teile'."\n".
                     'in Punkte zwischen den Teilen mündet, deren Koordinaten nur durch Summen ausgedrückt werden können,'."\n".
                     'die im Allgemeinen aktual unendlich kleine Summanden enthalten.'."\n".
                     'Und dies, obwohl die Teilung eigentlich aus einer unendlichen Teilung,'."\n".
                     'und damit aus einem Produkt mit unendlich kleinem Faktor, hervorgeht.'."\n".
-                    'Dies erscheint im ersten Moment möglicherweise sonderbar.'."\n",
+                    'Dies kann im ersten Moment sonderbar erscheinen.'."\n",
                       'Erst die Kombination der aktual unendlich kleinen Summanden und den endlichen Summanden mit Elementen aus \lm{ \mathbb{A}_{\S} }'."\n".
                     'macht es wieder rund und gibt uns einen tiefen und außergewöhnlichen Einblick in die Zahlentheorie allgemein und'."\n".
                     'im Besonderen in einen weiteren Zusammenhang zwischen Primzahlen, natürlichen, ganzen, rationalen und algebraischen Zahlen'."\n".
-                    'sowie deren Verbindung über die Ordinalzahlen und die Biordinalzahlen, was in meinen Augen sehr besonders ist.'."\n".
+                    'sowie deren Verbindung über die Ordinalzahlen und die Biordinalzahlen, was in meinen Augen sehr besonders ist.'."\n",
+                      'So können wir die Abgeschlossenheit der Teilung der Strecke von Null bis Eins durch \lm{ \s } erkennen.'."\n".
+                    'Durch diese Teilung kommen wir von der Eins genau eine Fraktalebene tiefer bei der Eins auf Ebene \lm{ \s^{-1} } heraus,'."\n".
+                    'bei den aktual unendlich kleinen ganzen Zahlen.'."\n".
+                    'So sehen wir, dass eine weitere Teilung nichts wirklich neues ergibt, außer, dass sich die Struktur wiederholt,'."\n".
+                    'bis wir abermals bei einer noch kleineren Eins auf Ebene \lm{ \s^{-2} } herauskommen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:DasKontinuum', text =>
                       
                 'Das Kontinuum', subline =>
                   '')),
+
+                  array( 'notice', array( Display => 'ShowContent', text => array(
+                    // '\bold{X}',
+                    // '• Wenn wir beim Kontinuum davon ausgehen, dass wir keine unendlich kleinen Summanden in den Adressen haben wollen, dann geht es hier eher darum nicht die Strecke von der Null bis zur Eins durch \lm{ \s } zu teilen, sondern die Gerade der endlichen Zahlen, siehe Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung}‹}, so dass wir alle sinnvollen Koeffizienten der Superial-Zahlen erhalten.',
+                    ))),
+
                   array( 'text', array( text => array(
                     'Das Gewebe der Teilung durch \lm{ \s } bildet so in gewisser Hinsicht einen Abschluss in der vollständigen endlichen Teilung,'."\n".
-                    'durch die es keine endlichen Abstände mehr gibt und keine Punkte, die durch endliche Teilung,'."\n".
-                    'selbst in Potenz der vollständigen Induktion, noch unbelegt sind.'."\n",
-                      'Es ist aber klar, dass dieses Gewebe im Hinblick auf seine Stützpunkte immer Lücken haben wird.'."\n".
-                    'Denn wir können die Potenzen der endlichen Teilungen natürlich immer weiter treiben,'."\n".
-                    'hin zur quadratischen normierten vollständigen Induktion \lm{ \s^{2} } und weit darüber hinaus.'."\n".
-                    'Jedoch ist es dann nicht mehr die einfache normierte vollständige Induktion; eben nicht mehr die erste Norm.'."\n",
-                      'Deshalb ist in diesem Sinn mit der Teilung durch \lm{ \s } das'."\n".
+                    'wie eben erklärt, durch die es keine endlichen Abstände mehr gibt und keine Punkte, die durch endliche Teilung,'."\n".
+                    'selbst in Potenz der vollständigen Induktion, noch unbelegt oder unerreicht sind.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Wenn Kontinuum bedeutet, dass wir keine aktual unendlich kleinen Summanden in den Adressen der Zahlengerade haben wollen} \\\\'."\n".
+                    'Weil nun nach Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} die Anzahl der sinnvollen'."\n".
+                    'Koeffizienten der Superial-Zahlen von der Null bis vor die Eins \lm{ \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } } ist, wie geschildert,'."\n".
+                    'und es in allen Koeffizienten, also auf der Zahlengeraden mit rein endlichen Adressen, dieses Intervall \lm{ 2 ω } mal gibt, wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen}‹}'."\n".
+                    'lernen, dann muss es insgesamt \lm{ \# \mathbb{A}_{\S} = \# \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} = \frac{ \s }{ 2 ω } \cdot 2 ω = \s } Koeffizienten geben.'."\n",
+                      'Es gilt also \lm{ \# \mathbb{A}_{\S} = \s }.'."\n".
+                    'Damit ist die mögliche maximale Teilung der Zahlengeraden mit rein endlichen Adressen dann erreicht und abgeschlossen, wenn wir sie'."\n".
+                    'in \lm{ \s } Teile teilen.'."\n".
+                    'Dies würde ich als erreichen des Kontinuums bezeichnen.'."\n",
+                      'Klar ist aber, dass dieses Gewebe im Hinblick auf seine Stützpunkte immer lückenhaft bleibt.'."\n".
+                    'Denn wir können superial kleine Summanden zu den Adressen – gemeint sind Positionen oder vielleicht auch Koordinaten – hinzufügen und sowie auch oder die Potenzen der endlichen Teilungen natürlich immer weiter treiben,'."\n".
+                    'hin zur quadratischen normierten vollständigen Induktion der Potenz aller Primzahlen \lm{ \s^{2} } und weit darüber hinaus,'."\n".
+                    'womit wir immer mehr Punkte zwischen den schon adressierten erreichen.'."\n".
+                    'Jedoch handelt es sich dann nicht mehr um rein endlich adressierbare Punkte, die einfache normierte vollständige Induktion; eben nicht mehr die erste Norm.'."\n",
+                      'Deshalb ist in diesem Sinn mit der Teilung der Zahlengeraden durch \lm{ \s } das'."\n".
                     '\jump{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese}{Kontinuum}\footnote{\const{SupNum_g_footnote_text_Kontinuumshypothese}}'."\n".
                     'erreicht.'."\n".
                     'Aber Kontinuum bedeutet eben nicht, dass es keinerlei Lücken mehr gibt; halt nur keine, die durch'."\n".
-                    'endliche Primzahlen in endlicher Potenz oder in Potenz der einfachen normierten vollständigen Induktion erreichbar sind.'."\n".
+                    'endliche Primzahlen in endlicher Potenz oder in Potenz der einfachen normierten vollständigen Induktion erreichbar sind.'."\n",
+                      'Demnach ist das Kontinuum so etwas wie \lm{ \mathfrak{c} ?= \# \mathbb{A}_{\S} = \s = 2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot 19^{ω} \cdot 23^{ω} \cdot \cdots }.'."\n".
+                    'Das könnte bedeuten \lm{ \mathfrak{c} \ne 2^{ω} }.'."\n",
+                      'Dies ist jedoch eine andere Definition des Kontinuums als über die Mächtigkeit\footnote{\const{SupNum_g_footnote_text_Maechtigkeit}}, wo \lm{ *| \mathbb{A}_{\S} |* = ω } wäre, weil \lm{ \mathbb{A}_{\S}} abzählbar viele Elemente besitzt.'."\n".
+                    'Wir sehen, die Superial-Zahlen machen eine Reflexion der Bedeutung und Definition des Kontinuums notwendig.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:Vortext:X', text =>
                       
