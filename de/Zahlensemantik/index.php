@@ -14,7 +14,7 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{Seite befindet sich im Aufbau …}'."\n",
+                    '\\color{*Bearb}{Jene Seite befindet sich im Aufbau …}'."\n",
                     /* 'XXX'."\n",
                     'XXX'."\n",
                     'XXX'."\n",
