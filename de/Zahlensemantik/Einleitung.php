@@ -18,7 +18,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{Seite befindet sich im Aufbau …}'."\n",
+                    '\color{*Bearb}{Seite befindet sich im Aufbau …}'."\n".
                     ''))),
                     
                   array( 'jumplist', array(

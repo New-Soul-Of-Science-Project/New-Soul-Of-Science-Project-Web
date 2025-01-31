@@ -18,7 +18,8 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{Seite befindet sich im Aufbau …}'."\n"))),
+                    '\color{*Bearb}{Seite befindet sich im Aufbau …}'."\n".
+                    ''))),
                       
                   /* array( 'headline', array( jump_name => 'OM:ZS:Einleitung:Vortext:XXX', text =>
                                            
@@ -172,7 +173,8 @@
                     )),
                   
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{Seite befindet sich im Aufbau …}'."\n"))),
+                    '\color{*Bearb}{Seite befindet sich im Aufbau …}'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:ZS:Einleitung:Vortext:XXX', text =>
                                            
                 'XXX')),
