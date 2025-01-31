@@ -40,7 +40,7 @@
                     ''))), */
                     
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:SupNum:Einleitung:Grundlagen'),
+                      array(  jump_name => 'OM:ZS:Pilogie:Pi-Vektor'),
                     )),
                 )
           ); ?>
@@ -54,7 +54,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:ZS:Einleitung', type => 'back'),
+                      array(  jump_name => 'OM:ZS:Pilogie', type => 'back'),
                     )),
                   
                   array( 'text', array( text => array(
@@ -126,7 +126,7 @@
                     ))),
                       
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:SupNum:Formale-Entwicklung'),
+                      array(  jump_name => 'OM:ZS:Home'),
                     )),
                 )
           );  ?>
