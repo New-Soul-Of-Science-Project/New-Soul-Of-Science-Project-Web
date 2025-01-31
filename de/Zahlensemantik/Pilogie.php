@@ -2,7 +2,7 @@
         include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
 
 
-<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:ZS:Pi-Vektor'); ?>
+<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:ZS:Pilogie'); ?>
 
       <?php FrQFT_f_Div_Header( '      '); ?>
 
@@ -104,7 +104,7 @@
 
 		    	<!  • XXX  >
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:ZS:Einleitung:Phi-Formel',
+            'OM:ZS:Einleitung:Philogie',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
