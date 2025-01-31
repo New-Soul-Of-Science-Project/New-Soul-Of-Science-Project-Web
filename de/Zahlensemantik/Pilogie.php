@@ -13,13 +13,13 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\\bold{XXX}',
+                    // '\bold{XXX}',
                     // '• XXX',
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{Seite befindet sich im Aufbau …} \jump{OM:ZS:Pilogie:Pi-Vektor:SprungItem}{Name des Links}'."\n"))),
-                    //'\\color{*Bearb}{Seite befindet sich im Aufbau …} \jumpname{OM:ZS:Pilogie:Pi-Vektor:SprungItem}'."\n"))),  
+                    '\color{*Bearb}{Seite befindet sich im Aufbau …} \jump{OM:ZS:Pilogie:Pi-Vektor:SprungItem}{Name des Links}'."\n"))),
+                    //'\color{*Bearb}{Seite befindet sich im Aufbau …} \jumpname{OM:ZS:Pilogie:Pi-Vektor:SprungItem}'."\n"))),  
                   // array( 'figure',
                   //   array_merge( $ZS_g_figure_ary_GraviLeptonWirkung, array( name => 'OM:ZS:Einleitung:Vortext:Fig-GraviLeptonWirkung'))),
                       
@@ -57,7 +57,7 @@
                     )),
                   
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{Seite befindet sich im Aufbau …}'."\n"))),
+                    '\color{*Bearb}{Seite befindet sich im Aufbau …}'."\n"))),
                       
                   array( 'headline', array( jump_name => 'OM:ZS:Pilogie:Pi-Vektor:SprungItem', text =>
                                            
@@ -75,7 +75,7 @@
                       array( display => 'on',  latex => '{  (\forall s \in \mathbb{C}) *[  \zeta(s)  :=  \sum_{\forall n \in \mathbb{N}}  \frac{ 1 }{ n^{s} } \\\ \qquad\qquad\quad\;\;\;  =  \prod_{\forall p \in \mathbb{P}}  \frac{ p^{s} }{ p^{s} - 1 }   *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Für den Spezialfall \\term{s = 2} ergibt sich:'."\n"))),
+                    'Für den Spezialfall \term{s = 2} ergibt sich:'."\n"))),
                   array( 'equations',
                     array( equ_text_std => 'ZS.PiLog.PiVe', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  \zeta(2)  =  \sum_{\forall n \in \mathbb{N}}  \frac{ 1 }{ n^{2} }  }'),
