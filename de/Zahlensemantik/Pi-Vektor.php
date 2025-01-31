@@ -81,18 +81,6 @@
                       array( display => 'off', latex => '{  \Leftrightarrow  \pi^{2}  =  2 \cdot a^{2} + 2 \cdot a^{2} + 2 \cdot a^{2}  }'),
                       array( display => 'on',  latex => '{  \vec{\pi}  =  *( \begin{array}{c} *| *( \begin{array}{c} b \\\ b \end{array} *) |*^{2} \\\ *| *( \begin{array}{c} b \\\ b \end{array} *) |*^{2} \\\ *| *( \begin{array}{c} b \\\ b \end{array} *) |*^{2} \end{array} *)  }'),
                     ))),
-                  array( 'text', array( text => array(
-                    'XXX:'."\n"))),
-                  array( 'equations',
-                    array( equ_text_std => 'ZS.Ein.PiVe', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \e^{\i π}  =  -1  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sqrt{ \e^{\i π} }  =  \sqrt{ -1 }  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \sqrt{ \e^{\i π} }  =  \i  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e^{\frac{ \i π }{ 2 }}  =  \i  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \e^{\frac{ \i π }{ 2 }} *)^{\i}  =  \i^{\i}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \e^{\frac{ -π }{ 2 }}  =  \i^{\i}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 1 }{ \e^{\frac{ π }{ 2 }} }  =  \i^{\i}  }'),
-                    ))),
                   /* array( 'headline', array( jump_name => 'OM:ZS:Einleitung:Vortext:XXX', text =>
                                            
                 'XXX')),

@@ -67,6 +67,24 @@
                     'OM:ZS:Einleitung:Phi-Formel' => array( headline_text => '\lm{ \phi }-Formel', headline_text_short => 'Φ-Formel'),
                   ),
            ),
+     'OM:ZS:Eulogie' =>
+      array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Eulogie.php',
+             url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Eulogie.php',
+             titel => 'Eulogie - Zahlensemantik (ZS) - Deutsch',
+             description => '',// '\\name[undertitle]{OM:ZS:Einleitung}. — \\name[description]{OM:ZS:Einleitung}.',
+             keywords => '',
+             text_titel_h1 => 'Eulogie',
+             text_titel_short => 'Eulogie',
+             text_undertitel_h2 => '',
+             text_titel_discr_h3 => '',
+             jump_ary => array(
+                    'OM:ZS:Eulogie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                               
+                      // 'OM:ZS:Eulogie:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                               
+                    // 'OM:ZS:Eulogie:XXX' => array( headline_text => 'Eulogie', headline_text_short => 'Eulogie'),
+                  ),
+           ),
      'OM:ZS:Phi-Formel' =>
       array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Phi-Formel.php',
              url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Phi-Formel.php',

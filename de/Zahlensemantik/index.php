@@ -14,7 +14,7 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{Jene Seite befindet sich im Aufbau …}'."\n",
+                    '\\color{*Bearb}{Diese Seite befindet sich im Aufbau …}'."\n",
                     /* 'XXX'."\n",
                     'XXX'."\n",
                     'XXX'."\n",
@@ -60,6 +60,7 @@
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:ZS:Einleitung'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:ZS:Eulogie'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:ZS:Pi-Vektor'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:ZS:Phi-Formel'),
                     ))),
