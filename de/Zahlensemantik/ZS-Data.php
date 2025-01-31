@@ -64,7 +64,7 @@
                                
                       // 'OM:ZS:Einleitung:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                
-                    'OM:ZS:Einleitung:Phi-Formel' => array( headline_text => '\lm{ \phi }-Formel', headline_text_short => 'Φ-Formel'),
+                    // 'OM:ZS:Einleitung:Philogie' => array( headline_text => '\lm{ \phi }-Formel', headline_text_short => 'Φ-Formel'),
                   ),
            ),
      'OM:ZS:Eulogie' =>
@@ -85,22 +85,22 @@
                     // 'OM:ZS:Eulogie:XXX' => array( headline_text => 'Eulogie', headline_text_short => 'Eulogie'),
                   ),
            ),
-     'OM:ZS:Phi-Formel' =>
-      array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Phi-Formel.php',
-             url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Phi-Formel.php',
-             titel => 'Phi-Formel - Zahlensemantik (ZS) - Deutsch',
+     'OM:ZS:Philogie' =>
+      array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Philogie.php',
+             url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Philogie.php',
+             titel => 'Philogie - Zahlensemantik (ZS) - Deutsch',
              description => '',// '\\name[undertitle]{OM:ZS:Einleitung}. — \\name[description]{OM:ZS:Einleitung}.',
              keywords => '',
-             text_titel_h1 => '\lm{ \phi }-Formel',
-             text_titel_short => 'Φ-Formel',
+             text_titel_h1 => 'Philogie',
+             text_titel_short => 'Philogie',
              text_undertitel_h2 => '',
              text_titel_discr_h3 => '',
              jump_ary => array(
-                    'OM:ZS:Phi-Formel:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                    'OM:ZS:Philogie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                
-                      // 'OM:ZS:Phi-Formel:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                      // 'OM:ZS:Philogie:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                
-                    // 'OM:ZS:Phi-Formel:XXX' => array( headline_text => '\lm{ \phi }-Formel', headline_text_short => 'Φ-Formel'),
+                    // 'OM:ZS:Philogie:XXX' => array( headline_text => '\lm{ \phi }-Formel', headline_text_short => 'Φ-Formel'),
                   ),
            ),
      'OM:ZS:Pilogie' =>

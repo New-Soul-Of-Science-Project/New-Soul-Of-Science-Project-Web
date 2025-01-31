@@ -62,7 +62,7 @@
                       nSOSp_f_tableOfContents_elementAry( 'OM:ZS:Einleitung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:ZS:Eulogie'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:ZS:Pilogie'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:ZS:Phi-Formel'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:ZS:Philogie'),
                     ))),
                       
                   array( 'normal',
