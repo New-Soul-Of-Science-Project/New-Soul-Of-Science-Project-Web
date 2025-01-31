@@ -118,7 +118,8 @@
                                
                       // 'OM:ZS:Pilogie:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                
-                    // 'OM:ZS:Pilogie:XXX' => array( headline_text => '\lm{ \pi }-Vektor', headline_text_short => 'π-Vektor'),
+                    'OM:ZS:Pilogie:Pi-Vektor' => array( headline_text => '\lm{ \pi }-Vektor', headline_text_short => 'π-Vektor'),
+                    'OM:ZS:Pilogie:Pi-Vektor:SprungItem' => array( headline_text => 'Überschrift'), // headline_text_short => 'x'),
                   ),
            ),
      'OM:ZS:Literatur' =>
