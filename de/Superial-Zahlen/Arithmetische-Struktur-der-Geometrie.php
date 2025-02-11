@@ -23,8 +23,8 @@
                     ))),
 
                   array( 'text', array( text => array(
-                    'In der Geometrie stoßen wir schnell auf ein fundamentales Problem.'."\n".
-                    'Denn wollen wir beispielsweise eine Linie konstruieren oder berechnen, so wird oft leicht dahin gesagt:'."\n".
+                    'In der Geometrie stoßen wir auf ein fundamentales Problem.'."\n".
+                    'Denn wollen wir beispielsweise eine Linie konstruieren oder berechnen, so wird allzu oft leicht dahin gesagt:'."\n".
                     ''))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
@@ -40,8 +40,8 @@
                       ''))),
                       
                   array( 'text', array( text => array(
-                    'Und Entsprechendes so fortgeführt für den Raum beziehungsweise das Volumen und jede nächst größere Dimension.'."\n",
-                      'Doch was ist eine Linie, um beim einfachsten Beispiel zu bleiben,'."\n".
+                    'Und Entsprechendes so fortgeführt für den Raum beziehungsweise das Volumen und jede nächst größere Dimension.'."\n".
+                    'Doch was ist eine Linie, um beim einfachsten Beispiel zu bleiben,'."\n".
                     'und wie können wir eine Linie aus Punkten aufbauen?'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>
@@ -50,15 +50,15 @@
                   'Keine Hochstapelei')),
                   array( 'text', array( text => array(
                     'Der Versuch eine Linie aus Punkten quasi aufzustapeln ist zum Beispiel'."\n".
-                    'zum Scheitern verurteilt.\footnote{Vgl. \cite{Haramein:DieEntschluesselungDesUniversums:2011}, Ⅰ Unendlich und doch begrenzt, S. 11-17, hier S. 12-13.}'."\n",
-                      'Beim Stapeln wird ein Punkt so an den anderen platziert, dass alle gemeinsam'."\n".
+                    'zum Scheitern verurteilt.\footnote{Vgl. \cite{Haramein:DieEntschluesselungDesUniversums:2011}, Ⅰ Unendlich und doch begrenzt, S. 11-17, hier S. 12-13.}'."\n".
+                    'Beim Stapeln wird ein Punkt so an den anderen platziert, dass alle gemeinsam'."\n".
                     'die Linie füllen, dicht an dicht.'."\n".
                     'Diese Dichte ist allerdings davon abhängig, welche Ausdehnung jeder einzelne Punkt hat.'."\n".
                     'Daher das Wort stapeln.'."\n",
                       'Ein Punkt besitzt aber per Definition keine Ausdehnung.'."\n".
                     'Daher können wir Punkte nicht so stapeln, dass eine Linie gefüllt wird.'."\n".
-                    'Das gelingt auch dann nicht, wenn wir unendlich viele Punkte nehmen.'."\n".
-                    'Denn diese Art von Unendlichkeit, die Punkte ohne jede Ausdehnung raumgreifend stapeln kann, ist nicht wohldefiniert.'."\n",
+                    'Dies gelingt auch dann nicht, wenn wir unendlich viele Punkte nehmen.'."\n".
+                    'Denn diese Art von großer Unendlichkeit, die Punkte ohne jede Ausdehnung raumgreifend stapeln kann, scheint unmöglich.'."\n",
                       'Gleiches gilt auch für all die anderen genannten Objekte:'."\n".
                     'Wir können Linien ohne jede Breite nicht zu Flächen stapeln und so fort.'."\n".
                     'Auf diese Weise ist also kein Konstruieren einer höheren Dimension aus niedrigeren Dimensionen möglich.'."\n",
