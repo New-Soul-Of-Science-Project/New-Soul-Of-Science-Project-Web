@@ -214,7 +214,7 @@
                   array( 'text', array( text => array(
                   '\condb{\anchor{OM:SupNum:Struktur-Geometrie:Vortext:Alle-Strecken-natuerlichen-Zahlen-vernetzen}{}Alle Strecken der natürlichen Zahlen und schließlich der ganzen Zahlen vernetzen} \\\\'."\n".
                     'Um diese Struktur auf alle natürlichen Zahlen auszudehnen, brauchen wir ein passendes Symbol:'."\n",
-                      'Die Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}} geben uns die Möglichkeit einen Wert'."\n".
+                      'Die Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} geben uns die Möglichkeit einen Wert'."\n".
                     'auszudrücken, der so groß ist, dass er per Definition genau alle natürlichen Zahlen beinhaltet.'."\n".
                     'Dieser aktual unendliche Wert hat das Symbol \lm{ ω } und bezeichnet die vollständige Induktion\footnote{\const{BiOrd_g_footnote_text_VollstaendigeInduktion}};'."\n".
                     'die Zahl, die wir erreichen, wenn wir einmal alle natürlichen Zahlen gezählt haben.'."\n",
