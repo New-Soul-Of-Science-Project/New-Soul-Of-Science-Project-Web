@@ -25,7 +25,7 @@
                       
                   array( 'text', array( text => array(
                     'Ausgangspunkt der Biordinalzahlen sind die Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}}.'."\n".
-                    'Bei den Elementen der echten Klasse der Ordinalzahlen \lm{ \mathbb{On} }\footnote{Alle Ordinalzahlen als Ganzes ist eine echte Klasse und keine(!) Menge: \\\\ \const{BiOrd_g_footnote_text_OrdinalzahlLimeszahlen}}'."\n".
+                    'Bei den Elementen der echten Klasse\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KlasseMengenlehre:2024}, Echte Klassen.} der Ordinalzahlen \lm{ \mathbb{On} }\footnote{Alle Ordinalzahlen als Ganzes ist eine echte Klasse und keine(!) Menge: \\\\ \const{NSOSP_g_footnote_text_Ordinalzahl}}'."\n".
                     'handelt es sich um die Fortsetzung des Zählens oder der uns allgemein bekannten Anzahl von Dingen ins Aktual-Unendliche.'."\n",
                       'Die nachfolgend eingeführten Biordinalzahlen erweitern das Zählen (Vorwärtszählen) um das Rückwärtszählen von jeder Zahl aus bis in den negativen Bereich.'."\n".
                     'Das bedeutet, dass das Rückwärtszählen und die Subtraktion innerhalb der Biordinalzahlen vollständig definiert sind,'."\n".
