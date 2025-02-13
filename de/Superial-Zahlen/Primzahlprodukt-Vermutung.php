@@ -259,7 +259,7 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Die Anzahl von aufeinanderfolgenden natürlichen Zahlen in einer endlichen Menge} \\\\'."\n".
-                    'Die Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}}, und in erweiterter Form die \jump{OM:BiOrd:Home}{Biordinalzahlen},'."\n".
+                    'Die Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}, und in erweiterter Form die \jump{OM:BiOrd:Home}{Biordinalzahlen},'."\n".
                     'definieren die Anzahl der aufeinanderfolgenden natürlichen Zahlen in endlichen und unendlichen Mengen,'."\n".
                     'und symbolisieren diese mit den Mengen selbst.'."\n",
                       'Nach Formel \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-n-gleich-Menge-Null-bis-n-minus-Eins} finden wir dort für die Anzahl \lm{ n } der Elemente in einer endlichen Menge aufeinanderfolgender natürlicher Zahlen:'."\n".

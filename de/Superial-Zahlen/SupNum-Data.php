@@ -326,7 +326,7 @@
           'OM:SupNum:Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Struktur-Geometrie:Vortext:DasKontinuum' => array( headline_text => 'Das Kontinuum',/* headline_text_short => 'X' */),
 
-        // 'OM:SupNum:Struktur-Geometrie:Diskussion' => array( headline_text => 'Diskussion'/* , headline_text_short => 'X' */),
+        'OM:SupNum:Struktur-Geometrie:OntologieDerGeometrie' => array( headline_text => 'Die Ontologie der Geometrie'/* , headline_text_short => 'X' */),
       ),
     ),
     'OM:SupNum:Ueberrationalitaetsvermutung' => array(

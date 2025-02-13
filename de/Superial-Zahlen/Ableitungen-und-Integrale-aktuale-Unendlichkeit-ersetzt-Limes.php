@@ -305,7 +305,7 @@
                     'Dies verhält sich also genau so, wie wir es von endlichen Zahlen kennen.'."\n",
                       'Dies ist aber anders, als bei anderen Zahlen, die alle Vorgänger und Nachfolger besitzen, wie die \jump{OM:BiOrd:Einleitung}{Biordinalzahlen}.'."\n".
                     'Bei ihnen gibt es viel mehr Vorgänger von der Null an, als der Wert einer aktual unendlich großen Biordinalzahl darstellt.'."\n".
-                    'Anders bei den Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}}.'."\n".
+                    'Anders bei den Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}.'."\n".
                     'Der Wert einer aktual unendlich großen Zahl entspricht hier auch der Anzahl der Zahlen von der Null an bis zu ihr.'."\n".
                     'Aber anders als bei den Biordinalzahlen und Superial-Zahlen haben bei den Ordinalzahlen nicht alle Zahlen einen Vorgänger'."\n".
                     'und negative Zahlen gibt es gar nicht.'."\n".
