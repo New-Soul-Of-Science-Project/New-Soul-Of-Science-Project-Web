@@ -13,12 +13,12 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\\bold{XXX}',
+                    // '\bold{XXX}',
                     // '• XXX',
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{Seite befindet sich im Aufbau …}'."\n",
+                    '\color{*Bearb}{Seite befindet sich im Aufbau …}'."\n".
                     ''))),
                     
                   array( 'jumplist', array(
@@ -40,7 +40,7 @@
                     )),
                   
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{Seite befindet sich im Aufbau …}'."\n"))),
+                    '\color{*Bearb}{Seite befindet sich im Aufbau …}'."\n"))),
                   array( 'headline', array( jump_name => 'OM:ZS:Einleitung:Vortext:XXX', text =>
                                            
                 'XXX')),
