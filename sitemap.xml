@@ -834,10 +834,15 @@
 		<priority>1.0</priority>
 	</url>
   <url>
-		<loc>https://nsosp.org/de/Zahlensemantik/Philogie.php</loc>
-		<lastmod>2024-12-14</lastmod>
-		<priority>1.0</priority>
-	</url>
+    <loc>https://nsosp.org/de/Zahlensemantik/Eulogie.php</loc>
+    <lastmod>2024-12-14</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://nsosp.org/de/Zahlensemantik/Philogie.php</loc>
+    <lastmod>2024-12-14</lastmod>
+    <priority>1.0</priority>
+  </url>
   <url>
     <loc>https://nsosp.org/de/Zahlensemantik/Pilogie.php</loc>
     <lastmod>2024-12-14</lastmod>
