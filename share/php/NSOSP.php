@@ -2088,7 +2088,7 @@
            header_pict_alt => 'New Soul Of Science Project, Knowledge And Care Helps',
            header_links_marginLeft => '369px',
            copy_right => 'New Soul Of Science Project (NSOSP) \\\\'."\n".
-                          '© 1986–2024 by \\\\'."\n".
+                          '© 1986–2025 by \\\\'."\n".
                           'Wolfgang Huß und \\\\'."\n".
                           'Media Line Digital e.K. \\\\'."\n".
                           'is licensed under \\\\'."\n".
@@ -2776,7 +2776,7 @@
            header_pict_alt => 'Vereinheitlichte Relativitätstheorie, in der Quanten-Fluss-Theorie',
            header_links_marginLeft => '383px',
            copy_right => 'Vereinheitlichte Relativitätstheorie (VRT) \\\\'."\n".
-                          '© 1990–2024 by \\\\'."\n".
+                          '© 1990–2025 by \\\\'."\n".
                           'Wolfgang Huß und \\\\'."\n".
                           'Media Line Digital e.K. \\\\'."\n".
                           'is licensed under \\\\'."\n".
@@ -3291,7 +3291,7 @@
     echo '        </ul>'."\n";
     echo '        </div>'."\n";
     echo '        <p align="center">'."\n";
-    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2024 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
+    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2025 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
     echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Impressum</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";

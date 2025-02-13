@@ -14,7 +14,7 @@
       header_pict_alt => 'Organical Matters Website, Ideen neuer Wissenschaft',
       copy_right =>
         'Naturphilosophie der Zeit (NPT) \\\\'."\n".
-        '© 2014–2024 by \\\\'."\n".
+        '© 2014–2025 by \\\\'."\n".
         'Wolfgang Huß und \\\\'."\n".
         'Media Line Digital e.K. \\\\'."\n".
         'is licensed under \\\\'."\n".

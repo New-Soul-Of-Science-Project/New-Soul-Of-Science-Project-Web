@@ -26,7 +26,7 @@
              // author_image_width => '',
              // author_image_height => '',
              copy_right => 'Zahlensemantik (ZS) \\\\'."\n".
-                            '© 2010–2024 by \\\\'."\n".
+                            '© 2010–2025 by \\\\'."\n".
                             'Raimund Welsch \\\\'."\n".
                             'is licensed under \\\\'."\n".
                             '\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
