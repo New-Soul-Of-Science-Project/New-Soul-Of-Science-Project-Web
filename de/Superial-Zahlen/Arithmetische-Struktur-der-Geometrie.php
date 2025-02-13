@@ -771,10 +771,10 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • Diskussion  >
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Struktur-Geometrie:Diskussion',
-              '', 'Sc_f_Paragraph',
+		    	<!  • Die Ontologie der Geometrie  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Struktur-Geometrie:OntologieDerGeometrie',
+              'Eine Diskussion – ein Versuch der Annäherung', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Struktur-Geometrie', type => 'back'),
@@ -786,9 +786,46 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Wie können wir verstehen, was die Ontologie der Geometrie mit dem Unterschied zwischen reell algebraischen und transzendenten Zahlen zu tun hat?'."\n".
                     ''))),
-                  array( 'equations',
+                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:OntologieDerGeometrie:X', text =>
+                      
+                'Im simplen Fall reicht eine rein reell algebraische Geometrie aus', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Kurz und knapp – vielleicht auch etwas zu verkürzt - würde ich sagen, um simple geometrische Strukturen abzubilden brauchen wir'."\n".
+                    'zunächst keine transzendenten Zahlen.'."\n".
+                      'Die arithmetische Struktur der Geometrie, die wir oben herausgefunden haben und von der wir vermuten, dass deren'."\n".
+                    '\jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{Koeffizienten des damit verbundenen Zahlensystems tatsächlich reell algebraisch}'."\n".
+                    'sind, und nicht nur solche, die durch Radikale darstellbar sind,'."\n".
+                    'legt nahe, dass die Koordinaten der Grundstruktur der Geometrie mit reell algebraischen Zahlen auskommt.'."\n".
+                    'In diesem Fall sind dann keine Koordinaten notwendig, die unendlich kleine Summanden beinhalten, wie es demnach'."\n".
+                    '\jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{offenbar bei transzendenten Zahlen der Fall} ist.'."\n",
+                      'Wenn wir also erst einmal mit reell algebraischen Koordinaten auskommen,'."\n".
+                    'dann sind nicht nur die Parameter, sondern auch die Koordinaten von Geraden, Parabeln, allgemein Polynomen, Vielecken und selbst Kreisen oder Ellipsen'."\n".
+                    'allesamt ebenfalls reell algebraische Zahlen, wenn der Mittelpunkt und der Radius ebenfalls reell algebraisch sind;'."\n".
+                    'vielfach sogar solche, die durch Radikale – also Wurzeln - darstellbar sind.'."\n",
+                      'Das bedeutet in dieser einfachen Geometrie kommen wir mit reell algebraischen Eingabeparametern und reell algebraischen Ergebniskoordinaten aus.'."\n".
+                    'Und auch elliptische Kurven kommen unter bestimmten Umständen mit reell algebraischen Koordinaten aus, und in jedem Fall mit algebraischen Koordinaten.'."\n",
+                      'Wir können die oben angeführten Kurven (Funktionen) auch rotieren  oder anderweitig mit Matrizen aus reell algebraischen Zahlen verschiebben, spiegeln oder verzerren – multiplizieren –,'."\n".
+                    'die Ergebniskoordinaten bleiben reell algebraische Zahlen.'."\n".
+                    'Das auf dieser Seite eingangs gefundene Raster gibt uns die Möglichkeit ein Quadrat um 45° – \lm{ ½π } – zu drehen und die Koordinaten'."\n".
+                    'seiner Eckpunkte liegen immer noch auf diesem Raster, weil sie durch Radikale – in diesem Fall zweite Wurzeln – darstellbar sind.'."\n",
+                      'Exponentialfunktionen mit einer ganzzahligen oder rationalen Basis sind allerdings auf diesem Raster nur darstellbar,'."\n".
+                    'wenn wir uns auf rationale Eingangsparameter beschränken.'."\n".
+                    'Das entspricht aber nicht der hier anvisierten Geometrie, in der die Eingangswerte und Ergebniswerte aus der selben Zahlenmenge,'."\n".
+                    'nämlich der gefundenen arithmetischen Struktur der Geometrie, vermutlich den reell algebraischen Zahlen, kommen sollen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:OntologieDerGeometrie:X', text =>
+                      
+                'Wann kommen transzendente Zahlen ins Spiel?', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Die transzendenten Zahlen kommen ins Spiel, wenn wir uns beispielsweise mit der Länge der Kurven beschäftigen oder'."\n".
+                    'zu den Exponentialfunktionen übergehen wollen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  /* array( 'equations',
                     array( equ_text_std => 'SN.ArGeo.D', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       // array( display => 'on',  latex => '{  s  =  ω^{ω}  }',
                       //                    label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
@@ -802,13 +839,13 @@
                   '')),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
+                    ''))), */
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung'),
                     )),
               )
-          ); */ ?>
+          ); ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>
