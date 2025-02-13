@@ -22,7 +22,7 @@
       header_links_marginLeft => '336px',
       copy_right =>
         'Fraktale Quanten-Fluss-Theorie (FrQFT) \\\\'."\n".
-        '© 1990–2024 by \\\\'."\n".
+        '© 1990–2025 by \\\\'."\n".
         'Wolfgang Huß und \\\\'."\n".
         'Media Line Digital e.K. \\\\'."\n".
         'is licensed under \\\\'."\n".

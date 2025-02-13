@@ -172,12 +172,12 @@
   $NSOSP_g_footnote_text_Arithmetik             = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Arithmetik:2015}.';
   $NSOSP_g_footnote_text_GeordneterKoerper      = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GeordneterKoerper:2022}.';
   $NSOSP_g_footnote_text_NullIstTeilVonPositiv  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GeordneterKoerper:2022}, Definition.';
-  $NSOSP_g_footnote_text_Ordinalzahl            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}.';
   $NSOSP_g_footnote_text_KoerperAlgebra         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KoerperAlgebra:2023}.';
   $NSOSP_g_footnote_text_PeanoAxiome            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PeanoAxiome:2021}, Axiome, Ursprüngliche Formalisierung.';
   $NSOSP_g_footnote_text_RingAlgebra            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ring-Algebra:2023}.';
 
   $BiOrd_g_footnote_text_GaussscheSummenformel  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:GaussscheSummenformel:2023}.';
+  $BiOrd_g_footnote_text_Ordinalzahl            = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}.';
   $BiOrd_g_footnote_text_OrdinalzahlLimeszahlen = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Ordinalzahl:2021}, Motivation und Definition, Limes- und Nachfolgerzahlen.';
   $BiOrd_g_footnote_text_VollstaendigeInduktion = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:VollstaendigeInduktion:2024}, Das Axiom der vollständigen Induktion. \\\\ Vgl. \cite{wiki:Unendlichkeitsaxiom:2021}, Formulierung; Bedeutung für die Mathematik, Natürliche Zahlen.';
 
@@ -363,13 +363,13 @@
   $SupNum_g_footnote_text_KomplexeZahl          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:KomplexeZahl:2024}.';
   $SupNum_g_footnote_text_Kontinuumshypothese   = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}.';
   $SupNum_g_footnote_text_Kontinuumshypothese_Einfache = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Kontinuumshypothese:2023}, Aussage, Einfache Kontinuumshypothese.';
-  $SupNum_g_footnote_text_LexikographischeOrdnung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:LexikographischeOrdnung:2023}. \\\\ Vgl. \cite{wiki:Stellenwertsystem:2023}, Lexikographische Ordnung.';
+  $SupNum_g_footnote_text_LexikographischeOrdnung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:LexikographischeOrdnung:2023}. \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}, Lexikographische Ordnung.';
   $SupNum_g_footnote_text_Maechtigkeit          = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:MaechtigkeitMathematik:2023}.';
   $SupNum_g_footnote_text_DurchRadikaleDarAlgZ  = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RadikalMathematik:2022}, Auflösung eines Polynoms durch Radikale.';
   $SupNum_g_footnote_text_RationaleZahl         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}.';
   $SupNum_g_footnote_text_RationaleZahlDichtheit = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RationaleZahl:2022}, Eigenschaften.';
   $SupNum_g_footnote_text_RiemannschenVermutung = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:RiemannscheVermutung:2023}.';
-  $SupNum_g_footnote_text_Stellenwertsystem     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2023}.';
+  $SupNum_g_footnote_text_Stellenwertsystem     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:Stellenwertsystem:2024}.';
   $SupNum_g_footnote_text_TranszendenteZahl     = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:TranszendenteZahl:2023}.';
   $SupNum_g_footnote_text_TranszendenteZahlEigenschaften = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AlgebraischeZahl:2022}, Eigenschaften.';
 
@@ -637,7 +637,7 @@
                                                                   'als Dualismus von Djet und Neheh.');
   
   $NPYo_g_figure_ary_PhoenixAusDerAsche
-                                                 = array( fig_file_name => 'Naturphilosophie-Yoga/Phoenix-aus-der-Asche-fuer-Tom-20220705-v01', figPDF_is => false, fig_alt_description => 'Phönix aus der Asche – Bewusstsein und Unterbewusstsein', width => '284px', height => '389px', name => 'set local!',
+                                                 = array( fig_file_name => 'Naturphilosophie-Yoga/Phoenix-aus-der-Asche-fuer-Tom-20220705-v02', figPDF_is => false, fig_alt_description => 'Phönix aus der Asche – Bewusstsein und Unterbewusstsein', width => '284px', height => '389px', name => 'set local!',
                                                          text => 'Der Phönix aus der Asche des Naturphilosophie-Yoga: Die Hoffnung im Yin und Yang als fraktaler Dualismus von Bewusstsein und Unterbewusstsein.');
   
   $NPYo_g_figure_ary_YinYang                     = array( fig_file_name => 'Naturphilosophie-Yoga/Yin-Yang-Taijitu-v01', fig_alt_description => 'Das Yin und Yang oder Taijitu', width => '380px', height => '500px', name => 'set local!',
@@ -2088,7 +2088,7 @@
            header_pict_alt => 'New Soul Of Science Project, Knowledge And Care Helps',
            header_links_marginLeft => '369px',
            copy_right => 'New Soul Of Science Project (NSOSP) \\\\'."\n".
-                          '© 1986–2024 by \\\\'."\n".
+                          '© 1986–2025 by \\\\'."\n".
                           'Wolfgang Huß und \\\\'."\n".
                           'Media Line Digital e.K. \\\\'."\n".
                           'is licensed under \\\\'."\n".
@@ -2776,7 +2776,7 @@
            header_pict_alt => 'Vereinheitlichte Relativitätstheorie, in der Quanten-Fluss-Theorie',
            header_links_marginLeft => '383px',
            copy_right => 'Vereinheitlichte Relativitätstheorie (VRT) \\\\'."\n".
-                          '© 1990–2024 by \\\\'."\n".
+                          '© 1990–2025 by \\\\'."\n".
                           'Wolfgang Huß und \\\\'."\n".
                           'Media Line Digital e.K. \\\\'."\n".
                           'is licensed under \\\\'."\n".
@@ -3098,7 +3098,7 @@
     echo '    <meta name="keywords"           content="'.(To_f_Text_replace_html( $To_g_Text_replace_ary, $To_g_Text_replace_preg_ary, $Glo_g_Site_ary[$Glo_g_Site_activ][keywords])).'">'."\n";
     echo '    <meta name="author"             content="Wolfgang Huss, info@nsosp.org">'."\n";
     echo '    <meta name="DC.Publisher"       content="MEDIA LINE DIGITAL e.K., info@media-line-digital.de">'."\n";
-    echo '    <meta name="DC.Date"            content="2024-12-14T13:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
+    echo '    <meta name="DC.Date"            content="2025-02-13T18:00+01:00"><!-- Zeitstempel Beispiel: 01.08.2001, 12:00 Uhr, +1 Std. zu Greenwich -->'."\n";
     echo '    <meta name="DC.Identifier"      content="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" scheme="DCTERMS.URI">'."\n";
     echo '    <meta rel="canonical"           href="'.($Glo_g_Site_ary[$Glo_g_Site_activ][url_abs]).'" />'."\n";
     echo '    <meta name="DC.Language"        content="de">'."\n";
@@ -3291,11 +3291,11 @@
     echo '        </ul>'."\n";
     echo '        </div>'."\n";
     echo '        <p align="center">'."\n";
-    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2024 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
+    echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:CopyrightLizenz:Inhalt">© 1986–2025 by Wolfgang Huß und Media Line Digital e.K. is licensed under CC BY-ND 4.0</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
     echo '          <a href="'.$Glo_PathRel_back.'../de/Quanten-Fluss-Theorie/Impressum_de.php#OM:FrQFT:Impressum:Inhaberdaten">Impressum</a>'."\n";
     echo '          &nbsp; &nbsp; &#149; &nbsp; &nbsp;'."\n";
-    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.37-d20241214-t1300" target="_blank">v9.37</a>'."\n";
+    echo '          <a class="footer-version" href="https://github.com/New-Soul-Of-Science-Project/New-Soul-Of-Science-Project-Web/releases/tag/v9.38-d20250213-t1800" target="_blank">v9.38</a>'."\n";
     echo '        </p>'."\n";
     echo '      </div>'."\n";
     echo ''."\n";
@@ -3451,7 +3451,7 @@
     echo $offset.''."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.'    <p>'."\n";
-    echo $offset.'      Stand 14. Dezember 2024, 13:00 CET.'."\n";
+    echo $offset.'      Stand 13. Februar 2025, 18:00 CET.'."\n";
     echo $offset.'    </p>'."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.'    <ul class="content-archive-list">'."\n";

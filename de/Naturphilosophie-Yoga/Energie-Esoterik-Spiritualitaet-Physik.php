@@ -215,44 +215,44 @@
               '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:NPYo:XXX', type => 'back'),
+                      // array(  jump_name => 'OM:NPYo:X', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '• XXX',
+                    '• X',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:NPYo:Energie-Esoterik-Spiritualitaet:XXX:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:NPYo:Energie-Esoterik-Spiritualitaet:X:X', text =>
                       
-                'XXX', subline =>
+                'X', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
+                    'X'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
-                      // array(  jump_name => 'OM:NPYo:XXX'),
+                      // array(  jump_name => 'OM:NPYo:X'),
                     )),
               )
           ); */ ?>

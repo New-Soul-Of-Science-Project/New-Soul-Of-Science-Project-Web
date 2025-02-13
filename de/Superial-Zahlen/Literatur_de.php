@@ -62,7 +62,7 @@
               'wiki:RiemannscheZetaFunktion:2022',
               'wiki:Ring-Algebra:2023',
               'wiki:SatzDesEuklid:2023',
-              'wiki:Stellenwertsystem:2023',
+              'wiki:Stellenwertsystem:2024',
               'wiki:Taylorreihe:2024',
               'wiki:Teilerfremdheit:2022',
               'wiki:Teilmenge:2023',

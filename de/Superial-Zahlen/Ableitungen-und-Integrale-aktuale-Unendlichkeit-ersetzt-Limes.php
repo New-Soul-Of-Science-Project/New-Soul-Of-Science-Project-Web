@@ -305,7 +305,7 @@
                     'Dies verhält sich also genau so, wie wir es von endlichen Zahlen kennen.'."\n",
                       'Dies ist aber anders, als bei anderen Zahlen, die alle Vorgänger und Nachfolger besitzen, wie die \jump{OM:BiOrd:Einleitung}{Biordinalzahlen}.'."\n".
                     'Bei ihnen gibt es viel mehr Vorgänger von der Null an, als der Wert einer aktual unendlich großen Biordinalzahl darstellt.'."\n".
-                    'Anders bei den Ordinalzahlen\footnote{\const{NSOSP_g_footnote_text_Ordinalzahl}}.'."\n".
+                    'Anders bei den Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}}.'."\n".
                     'Der Wert einer aktual unendlich großen Zahl entspricht hier auch der Anzahl der Zahlen von der Null an bis zu ihr.'."\n".
                     'Aber anders als bei den Biordinalzahlen und Superial-Zahlen haben bei den Ordinalzahlen nicht alle Zahlen einen Vorgänger'."\n".
                     'und negative Zahlen gibt es gar nicht.'."\n".
@@ -529,7 +529,7 @@
                     'können wir natürlich auch gleich nur innerhalb der Summe für \lm{ f(〈n〉․〈1〉) } einsetzen:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.Eig.SVS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! *( f(〈n〉․〈1〉) - f(n) *)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  ?=  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! *( *〈 f(n) *〉.*〈 f\'(n) *〉 - f(n) *)  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  f(x)  =  f(0) + \!\!\! \sum_{ \forall n \in [0, x[_{\mathbb{S}^{-1}_{Z}} }  \!\!\! .*〈 f\'(n) *〉  }'),

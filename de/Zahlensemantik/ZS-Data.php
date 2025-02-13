@@ -26,10 +26,10 @@
              // author_image_width => '',
              // author_image_height => '',
              copy_right => 'Zahlensemantik (ZS) \\\\'."\n".
-                            '© 2010–2024 by \\\\'."\n".
+                            '© 2010–2025 by \\\\'."\n".
                             'Raimund Welsch \\\\'."\n".
                             'is licensed under \\\\'."\n".
-                            '\\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
+                            '\jump{OM:FrQFT:Impressum:CopyrightLizenz:Inhalt}{CC BY-ND 4.0}',
              litera_url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Literatur_de.php',
              litera_bibtex_url_rel => $Glo_PathRel_back.'../share/bibtex/zahlensemantik_bibliographie.bib',
            ),
@@ -38,9 +38,9 @@
       array( url_abs => 'https://nsosp.org/de/Zahlensemantik/index.php',
              url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/index.php',
              titel => 'Zahlensemantik (ZS) - Deutsch',
-             description => '\\name[undertitle]{OM:ZS:Home}. — \\name[description]{OM:ZS:Home}.',
+             description => '\name[undertitle]{OM:ZS:Home}. — \name[description]{OM:ZS:Home}.',
              keywords => '',
-             text_titel_h1 => 'Zahlensemantik \\color{*TitleAdd}{\\small{(ZS)}}',
+             text_titel_h1 => 'Zahlensemantik \color{*TitleAdd}{\small{(ZS)}}',
              text_titel_short => 'Zahlensemantik',
              text_undertitel_h2 => '',
              text_titel_discr_h3 => '',
@@ -53,7 +53,7 @@
       array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Einleitung.php',
              url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Einleitung.php',
              titel => 'Einleitung zur Zahlensemantik - Zahlensemantik (ZS) - Deutsch',
-             description => '\\name[undertitle]{OM:ZS:Einleitung}. — \\name[description]{OM:ZS:Einleitung}.',
+             description => '\name[undertitle]{OM:ZS:Einleitung}. — \name[description]{OM:ZS:Einleitung}.',
              keywords => '',
              text_titel_h1 => 'Einleitung',
              text_titel_short => 'Einleitung',
@@ -64,43 +64,62 @@
                                
                       // 'OM:ZS:Einleitung:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                
-                    'OM:ZS:Einleitung:Phi-Formel' => array( headline_text => '\lm{ \phi }-Formel', headline_text_short => 'Φ-Formel'),
+                    // 'OM:ZS:Einleitung:Philogie' => array( headline_text => '\lm{ \phi }-Formel', headline_text_short => 'Φ-Formel'),
                   ),
            ),
-     'OM:ZS:Phi-Formel' =>
-      array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Phi-Formel.php',
-             url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Phi-Formel.php',
-             titel => 'Phi-Formel - Zahlensemantik (ZS) - Deutsch',
-             description => '',// '\\name[undertitle]{OM:ZS:Einleitung}. — \\name[description]{OM:ZS:Einleitung}.',
+     'OM:ZS:Eulogie' =>
+      array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Eulogie.php',
+             url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Eulogie.php',
+             titel => 'Eulogie - Zahlensemantik (ZS) - Deutsch',
+             description => '',// '\name[undertitle]{OM:ZS:Einleitung}. — \name[description]{OM:ZS:Einleitung}.',
              keywords => '',
-             text_titel_h1 => '\lm{ \phi }-Formel',
-             text_titel_short => 'Φ-Formel',
+             text_titel_h1 => 'Eulogie',
+             text_titel_short => 'Eulogie',
              text_undertitel_h2 => '',
              text_titel_discr_h3 => '',
              jump_ary => array(
-                    'OM:ZS:Phi-Formel:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                    'OM:ZS:Eulogie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                
-                      // 'OM:ZS:Phi-Formel:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                      // 'OM:ZS:Eulogie:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                
-                    // 'OM:ZS:Phi-Formel:XXX' => array( headline_text => '\lm{ \phi }-Formel', headline_text_short => 'Φ-Formel'),
+                    // 'OM:ZS:Eulogie:XXX' => array( headline_text => 'Eulogie', headline_text_short => 'Eulogie'),
                   ),
            ),
-     'OM:ZS:Pi-Vektor' =>
-      array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Pi-Vektor.php',
-             url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Pi-Vektor.php',
-             titel => 'π-Vektor - Zahlensemantik (ZS) - Deutsch',
-             description => '',// '\\name[undertitle]{OM:ZS:Einleitung}. — \\name[description]{OM:ZS:Einleitung}.',
+     'OM:ZS:Philogie' =>
+      array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Philogie.php',
+             url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Philogie.php',
+             titel => 'Philogie - Zahlensemantik (ZS) - Deutsch',
+             description => '',// '\name[undertitle]{OM:ZS:Einleitung}. — \name[description]{OM:ZS:Einleitung}.',
              keywords => '',
-             text_titel_h1 => '\lm{ \pi }-Vektor',
-             text_titel_short => 'π-Vektor',
+             text_titel_h1 => 'Philogie',
+             text_titel_short => 'Philogie',
              text_undertitel_h2 => '',
              text_titel_discr_h3 => '',
              jump_ary => array(
-                    'OM:ZS:Pi-Vektor:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                    'OM:ZS:Philogie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                                
-                      // 'OM:ZS:Pi-Vektor:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                      // 'OM:ZS:Philogie:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
                                
-                    // 'OM:ZS:Pi-Vektor:XXX' => array( headline_text => '\lm{ \pi }-Vektor', headline_text_short => 'π-Vektor'),
+                    // 'OM:ZS:Philogie:XXX' => array( headline_text => '\lm{ \phi }-Formel', headline_text_short => 'Φ-Formel'),
+                  ),
+           ),
+     'OM:ZS:Pilogie' =>
+      array( url_abs => 'https://nsosp.org/de/Zahlensemantik/Pilogie.php',
+             url_rel => $Glo_PathRel_back.'../de/Zahlensemantik/Pilogie.php',
+             titel => 'Pilogie - Zahlensemantik (ZS) - Deutsch',
+             description => '',// '\name[undertitle]{OM:ZS:Einleitung}. — \name[description]{OM:ZS:Einleitung}.',
+             keywords => '',
+             text_titel_h1 => 'Pilogie',
+             text_titel_short => 'Pilogie',
+             text_undertitel_h2 => '',
+             text_titel_discr_h3 => '',
+             jump_ary => array(
+                    'OM:ZS:Pilogie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                               
+                      // 'OM:ZS:Pilogie:Vortext:Fig-GraviLeptonWirkung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+                               
+                    'OM:ZS:Pilogie:Pi-Vektor' => array( headline_text => '\lm{ \pi }-Vektor', headline_text_short => 'π-Vektor'),
+                    'OM:ZS:Pilogie:Pi-Vektor:SprungItem' => array( headline_text => 'Überschrift'), // headline_text_short => 'x'),
                   ),
            ),
      'OM:ZS:Literatur' =>

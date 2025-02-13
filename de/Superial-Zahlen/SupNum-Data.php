@@ -20,7 +20,7 @@
       header_links_marginLeft => '398px',
       copy_right =>
         'Superial-Zahlen (SN) \\\\'."\n".
-        '© 1988–2024 by \\\\'."\n".
+        '© 1988–2025 by \\\\'."\n".
         'Wolfgang Huß und \\\\'."\n".
         'Media Line Digital e.K. \\\\'."\n".
         'is licensed under \\\\'."\n".
@@ -115,32 +115,34 @@
         'OM:SupNum:Eigenschaften:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
         'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen' => array( headline_text => 'Die sinnvollen Koeffizienten der Superial-Zahlen'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Durch-Radikale-darstellbare-algebraischen-Zahlen-sinnvolle-Koeffizienten-SZ' => array( headline_text => 'Durch Radikale darstellbare algebraischen Zahlen sind sinnvolle Koeffizienten der Superial-Zahlen'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Perspektive-Stellenwertsystems-Superial-Zahlen' => array( headline_text => 'Perspektive des Stellenwertsystems der Superial-Zahlen'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-exist-As' => array( headline_text => 'SN.Eig.SK.2'),
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen' => array( headline_text => 'SN.Eig.SK.6'),
+          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Durch-Radikale-darstellbare-algebraischen-Zahlen-sinnvolle-Koeffizienten-SZ' => array( headline_text => 'Durch Radikale darstellbare algebraischen Zahlen sind sinnvolle Koeffizienten der Superial-Zahlen'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Kehrwerte-der-Wurzeln' => array( headline_text => 'Die Kehrwerte der Wurzeln'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Ganzzahlige-Potenzen-der-Wurzeln' => array( headline_text => 'Ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Summen-von-Wurzeln' => array( headline_text => 'Summen und Differenzen von Wurzeln'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:superiale-Koeffizienten-Realanteile-algebraischer-Zahlen' => array( headline_text => 'Vermutung, dass superiale Koeffizienten Realanteile algebraischer Zahlen sind'/* , headline_text_short => 'X' */),
-                   
+          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:superiale-Koeffizienten-Realanteile-algebraischer-Zahlen' => array( headline_text => 'Vermutung, dass superiale Koeffizienten reell algebraische Zahlen sind'/* , headline_text_short => 'X' */),
+
         'OM:SupNum:Eigenschaften:Was-lernen-wir-ueber-algebraische-Zahlen-durch-Superial-Zahlen' => array( headline_text => 'Was lernen wir über rationale beziehungsweise algebraische Zahlen'/* , headline_text_short => 'X' */),
-                   
+
         'OM:SupNum:Eigenschaften:SIstAngeordneterKoerper' => array( headline_text => '\lm{ \mathbb{S} } ist ein angeordneter Körper', headline_text_short => 'S ist ein angeordneter Körper'),
-                   
+
         'OM:SupNum:Eigenschaften:StrukturVonS' => array( headline_text => 'Die Struktur von \lm{ \s }', headline_text_short => 'Die Struktur von s'),
           'OM:SupNum:Eigenschaften:StrukturVonS:WasLernenUeberGroesseOmegaUndStrukturS' => array( headline_text => 'Was lernen wir über die Größe von \lm{ ω } und die Struktur von \lm{ \s } anhand der Frage der Vorgänger?',/* , headline_text_short => 'X' */),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s' => array( headline_text => 'SN.Eig.SVS.1'),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z' => array( headline_text => 'SN.Eig.SVS.8'),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s' => array( headline_text => 'SN.Eig.SVS.11'),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins' => array( headline_text => 'SN.Eig.SVS.12'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s' => array( headline_text => 'SN.Ei.S.L.1'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Q-aus-Z' => array( headline_text => 'SN.Ei.S.L.8'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s' => array( headline_text => 'SN.Ei.S.L.11'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-Null-bisOhne-Eins' => array( headline_text => 'SN.Ei.S.L.12'),
           'OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Eigenschaften:StrukturVonS:AusgangspunktPrimzahlproduktVerm' => array( headline_text => 'Ausgangspunkt der Primzahlprodukt-Vermutung'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:StrukturVonS:Erklaer-Anzahl-endl-ganz-Zahlen' => array( headline_text => 'Erklärung der Anzahl der endlichen ganzen Zahlen durch ihren ontologischen Ursprung in der Struktur der Biordinalzahlen'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-Menge-S-Bemerkenswerten-Zusammenhang' => array( headline_text => 'Die superiale Basis \lm{ \s } und die Menge \lm{ \mathbb{S} } haben einen ganz bemerkenswerten Zusammenhang', headline_text_short => 'Die superiale Basis s und die Menge S haben einen ganz bemerkenswerten Zusammenhang'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Superiale-Basis-s-doppelte-Bedeutung' => array( headline_text => 'Die superiale Basis \lm{ \s } hat bezüglich der Struktur des Aktual-Unendlichen eine bemerkenswerte doppelte Bedeutung'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:StrukturVonS:s-und-omega-hoch-omega-im-Strukturvergleich' => array( headline_text => 'Die superiale Basis \lm{ \s } und die Ordinalzahl \lm{ ω^{ω} } im Strukturvergleich'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-c' => array( headline_text => 'SN.Eig.SVS.37'),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s-explizit' => array( headline_text => 'SN.Eig.SVS.39'),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-omega-hoch-omega-explizit' => array( headline_text => 'SN.Eig.SVS.40'),
-          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-g' => array( headline_text => 'SN.Eig.SVS.43'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-c' => array( headline_text => 'SN.Ei.S.V.1'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-natuerliche-Vorgaenger-s-explizit' => array( headline_text => 'SN.Ei.S.V.3'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-Menge-omega-hoch-omega-explizit' => array( headline_text => 'SN.Ei.S.V.4'),
+          'OM:SupNum:Eigenschaften:StrukturVonS:Equ-S_Z-ist-Element-K-unendlich-g' => array( headline_text => 'SN.Ei.S.V.7'),
                    
         'OM:SupNum:Eigenschaften:VergleichMitHyperreellenZahlen' => array( headline_text => 'Vergleich mit hyperreellen Zahlen'/* , headline_text_short => 'X' */),
                    
@@ -244,8 +246,9 @@
           'OM:SupNum:Formale-Entwicklung:Formalien:Equ-exist-n-mit-r-kleiner-n' => array( headline_text => 'SN.Form.F.14'),
           'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen' => array( headline_text => 'Zahlen und Mengen im Unendlichen'/*, headline_text_short => 'X'*/),
           'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem' => array( headline_text => 'Stellenwertsystem'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem:Berechnung-Stellen' => array( headline_text => 'Berechnung der einzelnen Stellen im superialen Stellenwertsystem'/* , headline_text_short => 'X' */),
           'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen' => array( headline_text => 'Skalierung der superialen Ebene einer Teilmenge der Superial-Zahlen'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren' => array( headline_text => 'SN.Form.F.24'),
+          'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren' => array( headline_text => 'SN.Form.F.39'),
           'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge' => array( headline_text => 'Intervall-Menge'/* , headline_text_short => 'X' */),
           'OM:SupNum:Formale-Entwicklung:Formalien:Summendefinition-ueber-Intervall-Mengen' => array( headline_text => 'Summendefinition über Intervall-Mengen'/* , headline_text_short => 'X' */),
       ),
@@ -317,12 +320,13 @@
           'OM:SupNum:Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega' => array( headline_text => 'SN.ArGeo.32'),
           'OM:SupNum:Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln' => array( headline_text => 'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *( \sqrt[k]{c} *)^{m} }', headline_text_short => 'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen'),
           'OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit' => array( headline_text => 'Die superiale Basis \lm{ \s } wird auf natürliche Weise sichtbar und definiert', headline_text_short => 'Die superiale Basis s wird auf natürliche Weise sichtbar und definiert'),
+          'OM:SupNum:Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile' => array( headline_text => 'Die Abgeschlossenheit der Teilung der Strecke Eins in \lm{ \s } Teile'/* , headline_text_short => 'X' */),
           'OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
           'OM:SupNum:Struktur-Geometrie:Vortext:DasKontinuum' => array( headline_text => 'Das Kontinuum',/* headline_text_short => 'X' */),
 
-        // 'OM:SupNum:Struktur-Geometrie:Diskussion' => array( headline_text => 'Diskussion'/* , headline_text_short => 'X' */),
+        'OM:SupNum:Struktur-Geometrie:OntologieDerGeometrie' => array( headline_text => 'Die Ontologie der Geometrie'/* , headline_text_short => 'X' */),
       ),
     ),
     'OM:SupNum:Ueberrationalitaetsvermutung' => array(
