@@ -14,25 +14,25 @@
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '\\bold{Fortentwicklung}',
-                    '\\condb{Care-Prozess}',
+                    '\bold{Fortentwicklung}',
+                    '\condb{Care-Prozess}',
                     '• ›Care-Prozess oder Achtsamkeitsprozesse‹ würde vielleicht besser passen?',
                     '– Weil ›Care-Prozess‹ allgemeiner ist als Achtsamkeitsprozesse. ›Care-Prozess‹ greift das CARE von Mark Passio auf und passt besser zur Heilung und zum Herz-Chakra wie auch zum ›Stein der Weisen‹.',
-                    '\\condb{Fehlt beim Handlungspol etwas? Die Intention oder Absichten? Ist es eine intentionale Handlung?}',
+                    '\condb{Fehlt beim Handlungspol etwas? Die Intention oder Absichten? Ist es eine intentionale Handlung?}',
                     '• Mir ist aufgefallen, dass es sich bei den beiden Polen des Prozesses vereinfacht gesprochen ums Empfangen und Senden von Informationen oder Impulsen geht.',
                     '• Etwas verfeinert gesprochen geht es um Wahrnehmen und Handeln.',
-                    '• Weiter verfeinert gesprochen wird die Wahrnehmung durch ein Form der Bewertung ergänzt, durch die \\jump[https://de.wikipedia.org/wiki/Emotion]{}{Emotion} oder noch umfangreicher durch das Gefühl. Da stellte sich mir die Frage, ob auch das Handeln um etwas bewertendes ergänzt werden muss.',
-                    '– So kam mir der Gedanke, dass es sich dabei um die \\jump[https://de.wikipedia.org/wiki/Absicht]{}{Intention} handeln könnte, die fehlt; die Frage, was will ich bewusst oder unbewusst mit meiner Handlung erreichen, mach sie zu einer intentionalen Handlung oder einer teleologischen Handlung.',
-                    '\\bold{Andere Achtsamkeitsprozesse}',
+                    '• Weiter verfeinert gesprochen wird die Wahrnehmung durch ein Form der Bewertung ergänzt, durch die \jump[https://de.wikipedia.org/wiki/Emotion]{}{Emotion} oder noch umfangreicher durch das Gefühl. Da stellte sich mir die Frage, ob auch das Handeln um etwas bewertendes ergänzt werden muss.',
+                    '– So kam mir der Gedanke, dass es sich dabei um die \jump[https://de.wikipedia.org/wiki/Absicht]{}{Intention} handeln könnte, die fehlt; die Frage, was will ich bewusst oder unbewusst mit meiner Handlung erreichen, mach sie zu einer intentionalen Handlung oder einer teleologischen Handlung.',
+                    '\bold{Andere Achtsamkeitsprozesse}',
                     '• Ist der führende Achtsamkeitsprozess vielleicht eher als unser fokussierender Achtsamkeitsprozess zu bezeichnen?',
                     '• Gibt es einen Achtsamkeitsprozess des Träumens, einen visionären Achtsamkeitsprozess? Oder ist das der probierende, reflektierende Achtsamkeitsprozess des Verstandes im Schlaf?',
-                    '\\bold{Vergleichbare Sichtweisen}',
-                    '• Karma: Wenn du schaust, was du gestern getan hast, dann weißt du warum du dich heute so fühlst. Wenn du schaust, was du heute tust, dann weißt du, wie du dich morgen fühlen wirst. (Siehe \\jump[https://kenfm.de/tree-tv-klaus-herkommer/]{}{TREE.TV 10 mit Klaus Herkommer: „Buddha kocht – Heilkunst vom Dach der Welt“})',
-                    '\\bold{Divers}',
-                    '• In einem alten Artikel zur Definition des Lebens wunderbar als \\italic{Gemütstätigkeit} bezeichnet. \\quote{Das Leben selbst tritt uns in zweierlei Gestalt entgegen, einmal als Quelle unserer gesamten Gemütstätigkeit und zweitens als Erscheinung in der äußeren Welt.} Siehe ›Definition des Lebens und des Organismus | SpringerLink - 1927‹.',
+                    '\bold{Vergleichbare Sichtweisen}',
+                    '• Karma: Wenn du schaust, was du gestern getan hast, dann weißt du warum du dich heute so fühlst. Wenn du schaust, was du heute tust, dann weißt du, wie du dich morgen fühlen wirst. (Siehe \jump[https://kenfm.de/tree-tv-klaus-herkommer/]{}{TREE.TV 10 mit Klaus Herkommer: „Buddha kocht – Heilkunst vom Dach der Welt“})',
+                    '\bold{Divers}',
+                    '• In einem alten Artikel zur Definition des Lebens wunderbar als \italic{Gemütstätigkeit} bezeichnet. \quote{Das Leben selbst tritt uns in zweierlei Gestalt entgegen, einmal als Quelle unserer gesamten Gemütstätigkeit und zweitens als Erscheinung in der äußeren Welt.} Siehe ›Definition des Lebens und des Organismus | SpringerLink - 1927‹.',
                     '• Das Gedeihen ist noch besser als die Gedeihlichkeit! Alt: Gedeihlichkeit ist allgemeiner als Persönlichkeitsentwicklung. Das Wort scheint es so allerdings nicht zu geben. Es müsste auf der Basis von gedeihlich definiert werden.',
                     '• Es sollte zwischen Emotionen und Gefühlen differenziert werden, siehe z.B. Wikipedia.',
-                    '• Der Achtsamkeitsprozess ist der zentrale Regelprozess unseres Lebens; ein Teil unserer strukturellen Existenz, denn auf ihm basiert unser Überleben. Er ist der Elementarprozess unseres Lebens, weil er alle unsere biologischen Regelprozesse koordiniert, unser Leben und Überleben organisiert. Damit ist das Leben in die \\jump{OM:FrQFT:Home}{Quanten-Fluss-Theorie}, einer neuen, organischen Physik, eingebettet, in der jede Form der Existenz durch einen Elementarprozess geregelt, also organisiert, wird.',
+                    '• Der Achtsamkeitsprozess ist der zentrale Regelprozess unseres Lebens; ein Teil unserer strukturellen Existenz, denn auf ihm basiert unser Überleben. Er ist der Elementarprozess unseres Lebens, weil er alle unsere biologischen Regelprozesse koordiniert, unser Leben und Überleben organisiert. Damit ist das Leben in die \jump{OM:FrQFT:Home}{Quanten-Fluss-Theorie}, einer neuen, organischen Physik, eingebettet, in der jede Form der Existenz durch einen Elementarprozess geregelt, also organisiert, wird.',
                     '• Ist der Achtsamkeitsprozess das selbe wie Achtsamkeit? Ich hab noch mal darüber nachgedacht: Achtsamkeit ist etwas graduelles, denn wir können im Laufe unseres Lebens Achtsamer werden. Der Achtsamkeitsprozess ermöglicht uns Achtsam zu sein, also unsere Achtsamkeit, die wir alle von Beginn unseres Lebens an schon in uns tragen. Und der Achtsamkeitsprozess ermöglicht uns auch, im Laufe unseres Lebens Achtsamer zu werden. Das könnten wir dann als Persönlichkeitsentwicklung bezeichnen. Der Achtsamkeitsprozess ist also nicht genau das selbe wie Achtsamkeit.',
                     '• Die Atmung ist der erste, der grundlegende, Achtsamkeitszirkel im Achtsamkeitsprozess: Dieser Achtsamkeitszirkel ist zweiteilig. Ich habe ein Luftholbedürfniss, im Extremfall Atemnot, und atme ein. Schließlich habe ich ein Ausatembedürfniss, im Extremfall auch eine Form der Atemnot, und atme aus. Die Atmung ist zum einen ein nicht zu unterdrückender Reflex, der aus dem Unterbewusstsein kommt. Zum anderen ist sie aber auch bewusst steuerbar. Sie verbindet so das Bewusstsein mit dem Unterbewusstsein.',
                     '– Hat der Achtsamkeitsprozess also bewusste und unbewusste Anteile?',
@@ -41,15 +41,15 @@
                     '• Der Begriff des Achtsamkeitsprozess und seine Bilder sollen die mit ihm verbundenen bekannten Begriffe, siehe unten, besser greifbar und begreifbar machen. Dadurch wird eine klarere Definition und die differenzierte Analyse und Fortentwicklung der Zusammenhänge möglich.',
                     '• Das Licht des Wohlgefühls einbauen.',
                     '• Fortpflanzung und Evolution fehlen.',
-                    '\\bold{Aktuelle Forschung}',
-                    '• Bezug zwischen der buddhistischen Achtsamkeitspraxis und dem neurobiologischen Konstruktivismus stellt auch viele Bezüge zum Achtsamkeitsprozess her: Vgl. \\cite{Vogd:WozuAchtsamSeinUndWoraufDieAchtsamkeitLenken:2016}.',
+                    '\bold{Aktuelle Forschung}',
+                    '• Bezug zwischen der buddhistischen Achtsamkeitspraxis und dem neurobiologischen Konstruktivismus stellt auch viele Bezüge zum Achtsamkeitsprozess her: Vgl. \cite{Vogd:WozuAchtsamSeinUndWoraufDieAchtsamkeitLenken:2016}.',
                     ))),
                       
                   array( 'figure',
                     array_merge( $SpaLeb_g_figure_ary_Achtsamkeitsprozess, array( name => 'OM:SpaLeb:Care-Prozess:Vortext:Fig-Achtsamkeitsprozess'))),
                       
                   array( 'text', array( text => array(
-                    'Der von mir entdeckte und nachfolgend definierte \\italic{Care-Prozess} und sein \\italic{Achtsamkeitsprozess} sind in meinen Augen die Basis unseres Lebens.'."\n".
+                    'Der von mir entdeckte und nachfolgend definierte \italic{Care-Prozess} und sein \italic{Achtsamkeitsprozess} sind in meinen Augen die Basis unseres Lebens.'."\n".
                     'Der Care-Prozess verknüpft und koordiniert alle unsere biologischen Regelprozesse und ermöglicht uns so die Erlangung von Wohlgefühl und mehr Wohlbefinden.'."\n".
                     'Er organisiert unsere stabile Existenz, unser Leben und Überleben.'."\n".
                     'Um ihn dreht sich unser Leben, im wahrsten Sinne des Wortes:'."\n"))),
@@ -59,13 +59,13 @@
                       'ergebenden intentionalen Handlungen, die dann in unsere neue Lebenssituation münden.'."\n"))),
                                                                           
                   array( 'text', array( text => array(
-                    'Dann beginnt der Zirkel dieses Prozesses von Neuem (siehe \\jumpname{OM:SpaLeb:Care-Prozess:Vortext:Fig-Achtsamkeitsprozess}).'."\n",
+                    'Dann beginnt der Zirkel dieses Prozesses von Neuem (siehe \jumpname{OM:SpaLeb:Care-Prozess:Vortext:Fig-Achtsamkeitsprozess}).'."\n",
                       'Ich sorge für mich:'."\n".
                     'Ich habe zum Beispiel Hunger, also besorge ich mir etwas zu Essen.'."\n".
                     'Hab ich gegessen und bin satt, dann höre ich auf zu essen.'."\n".
                     'Ich habe Sehnsucht nach Geborgenheit und menschlicher Wärme?'."\n".
                     'Dann versuche ich dafür zu sorgen, dass ich Geborgenheit und menschliche Wärme bekomme.'."\n".
-                    'Spätestens ab unserer \\jump{OM:SpaLeb:Psyche-und-Stimmung:Geburt}{Geburt} wird der Care-Prozess in Gang gesetzt.'."\n".
+                    'Spätestens ab unserer \jump{OM:SpaLeb:Psyche-und-Stimmung:Geburt}{Geburt} wird der Care-Prozess in Gang gesetzt.'."\n".
                     'Aber sicherlich spielt er schon im Mutterleib eine Rolle.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
                                            
@@ -83,7 +83,7 @@
                       
                   array( 'text', array( text => array(
                     'Unsere Tendenz zu positiven Gefühlen gibt uns, durch das Gelernte, die Möglichkeit, für ein gutes Wohlgefühl zu sorgen und unser allgemeines Wohlbefinden zu verbessern.'."\n".
-                    'So beinhaltet der Achtsamkeitsprozess den Prozess unserer \\jump{OM:SpaLeb:Psyche-und-Stimmung}{Psyche}\\footnote{\\const{SpaLeb_g_footnote_text_Psyche}} und ermöglicht unsere Persönlichkeitsentwicklung.'."\n"))),
+                    'So beinhaltet der Achtsamkeitsprozess den Prozess unserer \jump{OM:SpaLeb:Psyche-und-Stimmung}{Psyche}\footnote{\const{SpaLeb_g_footnote_text_Psyche}} und ermöglicht unsere Persönlichkeitsentwicklung.'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                       'Wir lernen leben.'."\n"))),
@@ -114,7 +114,7 @@
                   array( 'text', array( text => array(
                     'Der Achtsamkeitsprozess stellt auf diese Weise eine Definition, ein Modell, des Lebens dar.'."\n".
                     'Diese umfasst auf die gerade beschriebene Art nicht nur die biochemischen und genetischen Funktionen unseres Lebens.'."\n".
-                    'Auch unsere Psyche, unsere \\jump{OM:SpaLeb:Psychosomatik}{Psychosomatik}\\footnote{\\const{SpaLeb_g_footnote_text_Psychosomatik}}, unsere Persönlichkeitsentwicklung und unser Lernprozess als auch unser Gedeihen insgesamt sind ein Teil von ihr.'."\n",
+                    'Auch unsere Psyche, unsere \jump{OM:SpaLeb:Psychosomatik}{Psychosomatik}\footnote{\const{SpaLeb_g_footnote_text_Psychosomatik}}, unsere Persönlichkeitsentwicklung und unser Lernprozess als auch unser Gedeihen insgesamt sind ein Teil von ihr.'."\n",
                       'Dadurch ist diese Definition auch dynamisch funktional, materiell sowie transzendent, folglich also sehr weitgehend.'."\n".
                     'Sie muss nicht unbedingt auf der Biochemie basieren, ist damit im engen Sinne nicht auf die uns bekannte Genetik beschränkt.'."\n".
                     'Es sind nur die Zustände Lebenssituation und Antriebsdruck, die funktionalen Elemente Gefühl (Zustandsfeststellung und -bewertung) und Handlung sowie Entwicklungs- und Lernmechanismen nötig.'."\n"))),
@@ -123,17 +123,17 @@
                 'Unsere Balance zwischen Stabilität und Fortentwicklung', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Durch die Verbindung des Funktionsprinzips des Achtsamkeitsprozesses mit dem \\jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{Existenzprinzip} meiner neuen Physik'."\n".
-                    'der \\jump{OM:FrQFT:Home}{›fraktalen Quanten-Fluss-Theorie‹} ergibt sich ein tieferer Einblick in die grundlegende Balance dieses Ansatzes:'."\n",
-                      'Der Zirkel in diesem Modell steht für die Stabilität, für den \\jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{Neheh-Aspekt} des Prozesses unseres Lebens.'."\n".
-                    'Das Voranschreiten der Helixspirale, ihr Gang, steht für die Fortentwicklung des Prozesses, seinen \\jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{Djet-Aspekt}.'."\n"))),
+                    'Durch die Verbindung des Funktionsprinzips des Achtsamkeitsprozesses mit dem \jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{Existenzprinzip} meiner neuen Physik'."\n".
+                    'der \jump{OM:FrQFT:Home}{›fraktalen Quanten-Fluss-Theorie‹} ergibt sich ein tieferer Einblick in die grundlegende Balance dieses Ansatzes:'."\n",
+                      'Der Zirkel in diesem Modell steht für die Stabilität, für den \jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{Neheh-Aspekt} des Prozesses unseres Lebens.'."\n".
+                    'Das Voranschreiten der Helixspirale, ihr Gang, steht für die Fortentwicklung des Prozesses, seinen \jump{OM:FrQFT:FirstPrinciples:Vortext:Existenzprinzip}{Djet-Aspekt}.'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
                       'Im Zentrum unseres Lebens steht die Balance zwischen Stabilität und Fortentwicklung.'."\n".
                       'Und unser Leben fühlt sich besonders gut an, wenn diese Balance gut austariert ist.'."\n"))),
 
                   array( 'text', array( text => array(
-                    'Unser Achtsamkeitsprozess dreht sich also um die selbstorganisation unserer Stabilität und die ihm innewohnende \\italic{konstruktive Instabilität}.'."\n"))),
+                    'Unser Achtsamkeitsprozess dreht sich also um die selbstorganisation unserer Stabilität und die ihm innewohnende \italic{konstruktive Instabilität}.'."\n"))),
                       
                   array( 'figure',
                     array_merge( $SpaLeb_g_figure_ary_AchtsamkeitsprozessBewWiss, array( name => 'OM:SpaLeb:Care-Prozess:Vortext:Fig-AchtsamkeitsprozessBewWiss'))),
@@ -143,14 +143,14 @@
                 'Unser Lernen – Bewusstsein, Wissen und Können', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Der Übergang von einer Etappe unseres Achtsamkeitsprozesses zur nächsten ist nicht völlig unmittelbar (siehe \\jumpname{OM:SpaLeb:Care-Prozess:Vortext:Fig-AchtsamkeitsprozessBewWiss}).'."\n".
-                    'Wie wir unsere Lebenssituation empfinden, welches Gefühl sich in uns zu ihr einstellt, hängt von unserem \\jump{OM:SpaLeb:Bewusstsein}{Bewusstsein}\\footnote{\\const{SpaLeb_g_footnote_text_Bewusstsein}} ab.'."\n".
-                    'Das Gleiche gilt auch für die Entstehung unserer Antriebe und Handlungen.\\footnote[*Bearb]{\\color{*Bearb}{Verweis auf das Buch von Bruder, Klaus-Jürgen. Psychologie ohne Bewusstsein. Die Geburt der behavioristischen Sozialtechnologie.}}'."\n",
+                    'Der Übergang von einer Etappe unseres Achtsamkeitsprozesses zur nächsten ist nicht völlig unmittelbar (siehe \jumpname{OM:SpaLeb:Care-Prozess:Vortext:Fig-AchtsamkeitsprozessBewWiss}).'."\n".
+                    'Wie wir unsere Lebenssituation empfinden, welches Gefühl sich in uns zu ihr einstellt, hängt von unserem \jump{OM:SpaLeb:Bewusstsein}{Bewusstsein}\footnote{\const{SpaLeb_g_footnote_text_Bewusstsein}} ab.'."\n".
+                    'Das Gleiche gilt auch für die Entstehung unserer Antriebe und Handlungen.\footnote[*Bearb]{\color{*Bearb}{Verweis auf das Buch von Bruder, Klaus-Jürgen. Psychologie ohne Bewusstsein. Die Geburt der behavioristischen Sozialtechnologie.}}'."\n",
                       'Unser Bewusstsein ist eng mit unserem Wissen und Können verknüpft und die drei Begriffe treten hier quasi als Synonyme auf.'."\n".
                     'Hier ist also Bewusstsein als unser Können gemeint, das Wissen was schon gelernt wurde, was schon vorhanden und fest in uns „verdrahtet“ ist.'."\n".
                     'Wir müssen nicht mehr darüber nachdenken oder es üben, es uns erarbeiten, wir können es schon quasi automatisch.'."\n",
                       'Jedoch ist jede Wahrnehmung, jede Information, mit einer Wirkung, einer Veränderung verbunden.'."\n".
-                    'Denn \\jump{OM:SpaLeb:Information-Kommunikation}{Infomation wirkt}, sonst ist es keine.'."\n".
+                    'Denn \jump{OM:SpaLeb:Information-Kommunikation}{Infomation wirkt}, sonst ist es keine.'."\n".
                     'Und:'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
@@ -159,7 +159,7 @@
                   array( 'text', array( text => array(
                     'Unser Lernprozess läuft während des mehrmaligen Durchlaufens der Zirkel in einer Spirale ab,'."\n".
                     'wenn wir unsere Gefühle, inklusiv dazugehöriger Lebenssituationen, Antriebe und Handlungen, vom aktuellen Zirkel mit denen der vorherigen Zirkel vergleichen.'."\n".
-                    // 'Wie in \\jumpname{OM:SpaLeb:Care-Prozess:Vortext:Fig-AchtsamkeitsprozessBewWiss} dargestellt, ist die Beeinflussung dadurch gegenseitig.'."\n".
+                    // 'Wie in \jumpname{OM:SpaLeb:Care-Prozess:Vortext:Fig-AchtsamkeitsprozessBewWiss} dargestellt, ist die Beeinflussung dadurch gegenseitig.'."\n".
                     'Durch den Vergleich verändert sich dann die Funktion unseres Bewusstseins, unser Wissen und Können.'."\n"))),
                       
                   array( 'text', array( Shape => 'italic', text => array(
@@ -178,8 +178,8 @@
                   array( 'text', array( text => array(
                     'Das Bewusstsein, wie ich es auf Basis von Regelprozessen definiere, hat drei Entwicklungsstufen:'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Elementares Bewusstsein – nicht unbedingt Leben} \\\\'."\n".
-                    'Das \\jump{OM:SpaLeb:Bewusstsein:Vortext:ElementarBewusstsein}{elementare Bewusstsein} ist als sehr unmittelbare physische Wahrnehmung und Wirkung oder Reaktion'."\n".
+                  '\condb{Elementares Bewusstsein – nicht unbedingt Leben} \\\\'."\n".
+                    'Das \jump{OM:SpaLeb:Bewusstsein:Vortext:ElementarBewusstsein}{elementare Bewusstsein} ist als sehr unmittelbare physische Wahrnehmung und Wirkung oder Reaktion'."\n".
                     'auf eine Beeinflussung durch Information zu verstehen.'."\n".
                     'Jemand schubst uns beispielsweise unerwartet und wir kommen ins Trudeln.'."\n",
                       'So gehört dann jede Übertragung von Kräften über feste Materie, auch die über unsere Knochen, demnach zum elementaren Bewusstsein.'."\n",
@@ -187,16 +187,16 @@
                     'und deren Feld auf andere Ladungen reagieren.'."\n".
                     'Elementares Bewusstsein bedeutet also nicht unbedingt, dass etwas lebt.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Rudimentäres Bewusstsein – ermöglicht den rudimentären Achtsamkeitsprozess} \\\\'."\n".
-                    'Das \\jump{OM:SpaLeb:Bewusstsein:Vortext:RudimentaeresBewusstsein}{rudimentäre Bewusstsein} macht erste Formen des Lebens möglich.'."\n".
+                  '\condb{Rudimentäres Bewusstsein – ermöglicht den rudimentären Achtsamkeitsprozess} \\\\'."\n".
+                    'Das \jump{OM:SpaLeb:Bewusstsein:Vortext:RudimentaeresBewusstsein}{rudimentäre Bewusstsein} macht erste Formen des Lebens möglich.'."\n".
                     'Bei ihm können wahrgenommene Informationen, zum Beispiel elektromagnetische Strahlung oder chemische Reize,'."\n".
                     'zu Veränderungen im inneren eines (biologischen) Systems führen.'."\n".
                     'Auf diese Weise können Informationen zum späteren Abruf gespeichert werden.'."\n",
                       'Für Lebewesen bedeutet dies konstruktive Instabilität, wenn der spätere gebrauch dieser Information im Allgemeinen ein besseres Überleben ermöglicht.'."\n",
                       'Das elementare Bewusstsein ist so ein notwendiger Bestandteil des rudimentären Bewusstseins.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\condb{Kognitives Bewusstsein – der kognitive Achtsamkeitsprozess} \\\\'."\n".
-                    'Im Falle des \\jump{OM:SpaLeb:Bewusstsein:Vortext:KognitivesBewusstsein}{kognitiven Bewusstseins} handelt es sich grundsätzlich um Lebewesen.'."\n".
+                  '\condb{Kognitives Bewusstsein – der kognitive Achtsamkeitsprozess} \\\\'."\n".
+                    'Im Falle des \jump{OM:SpaLeb:Bewusstsein:Vortext:KognitivesBewusstsein}{kognitiven Bewusstseins} handelt es sich grundsätzlich um Lebewesen.'."\n".
                     'Kognitives Bewusstsein bedeutet, ein Reiz (Stimulus) oder eine Einwirkung mündet nicht direkt in einer äußeren Reaktion.'."\n".
                     'Der Reiz wird zuvor in einem Nervensystem oder einem vergleichbaren System verarbeitet.'."\n".
                     'Daher können die Reaktionen komplexer ausfallen und auch erst viel später oder niemals eintreten.'."\n".
@@ -227,16 +227,16 @@
                     'Unser führender Achtsamkeitsprozess lässt sich in spezielle Achtsamkeitsprozesse unterteilen:'."\n".
                     'Es laufen unterschiedliche Zirkel und Lernprozesse gleichzeitig ab, die aufeinander bezogen sein können.'."\n"))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        '\\condb{Achtsamkeitsprozess unseres Hier und Jetzt:} Was wir gerade jetzt tun und unsere direkten Gefühle zu diesem Handeln. Dies umfasst auch die Handlung unseres Denkens.',
-                        '\\condb{Achtsamkeitsprozess unserer Selbstbeobachtung:} Dies ist die Beobachtung eines unserer Achtsamkeitsprozesse und unsere Gefühle zu dieser Beobachtung.'."\n".
+                        '\condb{Achtsamkeitsprozess unseres Hier und Jetzt:} Was wir gerade jetzt tun und unsere direkten Gefühle zu diesem Handeln. Dies umfasst auch die Handlung unseres Denkens.',
+                        '\condb{Achtsamkeitsprozess unserer Selbstbeobachtung:} Dies ist die Beobachtung eines unserer Achtsamkeitsprozesse und unsere Gefühle zu dieser Beobachtung.'."\n".
                           'Dies umfasst auch unser Selbstmitgefühl und unsere Selbstempathie.',
-                        '\\condb{Achtsamkeitsprozess des Inhalts unseres Verstandes (helfender Reflektor):} Also das an was wir denken und unsere Gefühle zu unseren Gedanken.'."\n".
+                        '\condb{Achtsamkeitsprozess des Inhalts unseres Verstandes (helfender Reflektor):} Also das an was wir denken und unsere Gefühle zu unseren Gedanken.'."\n".
                           'Wir rufen dabei Erinnerungen ab, können diese mit unserem Hier und Jetzt verknüpfen, mit unserer Gegenwart, und können Ahnungen,'."\n".
                           'Intuitionen und Schlussfolgerungen zur Zukunft haben.'."\n".
                           'In unseren Gedanken können wir Probehandlungen ausführen, die dann zu Probegefühlen führen (über Probelebenssituationen und Probeantriebe).',
                     ))),
                   array( 'text', array( text => array(
-                    'Unser Achtsamkeitsprozess ist also ein \\jump{OM:SpaLeb:Care-Prozess:NaehereBetracht}{komplexes Gebilde}, stellen wir fest, wenn wir ihn näher beleuchten.'."\n".
+                    'Unser Achtsamkeitsprozess ist also ein \jump{OM:SpaLeb:Care-Prozess:NaehereBetracht}{komplexes Gebilde}, stellen wir fest, wenn wir ihn näher beleuchten.'."\n".
                     'Der ›Achtsamkeitsprozess unserer Selbstbeobachtung‹ kann eine Kaskade von Achtsamkeitsprozessen hervorbringen und macht sichtbar,'."\n".
                     'dass es sich in gewisser Weise um eine selbstähnliche, also fraktale, Struktur handelt.'."\n".
                     'Ähnliches ist auch beim ›Achtsamkeitsprozess des Inhalts unseres Verstandes‹ zu beobachten:'."\n".
@@ -253,12 +253,12 @@
                   array( 'bulletlist', array( bullet_ary => array(
                         'Lernprozess, Lebenslanges Leben lernen (Versuch-Erfolg-und-Irrtum, Try-And-Error oder Try-Success-And-Error)',
                         'Persönlichkeitsentwicklung',
-                        '\\jump{OM:SpaLeb:Koerperliche-und-seelische-Existenz:ErkenneDichSelbst}{Erkenne dich selbst}\\footnote{\\const{SpaLeb_g_footnote_text_ErkenneDichSelbst}}',
+                        '\jump{OM:SpaLeb:Koerperliche-und-seelische-Existenz:ErkenneDichSelbst}{Erkenne dich selbst}\footnote{\const{SpaLeb_g_footnote_text_ErkenneDichSelbst}}',
                         'Erkenne deine Umwelt',
                         'Psyche als Prozess (›individuelles Erleben und Verhalten‹)',
                         'Psychosomatik',
-                        'Achtsamkeit (mindfulness)\\footnote{\\const{SpaLeb_g_footnote_text_AchtsamkeitMinfulness}} in sich selbst',
-                        'Achtsamkeit (care)\\footnote{\\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \\cite{wiki:AchtsamkeitCare:2019}.} gegenüber anderen Menschen',
+                        'Achtsamkeit (mindfulness)\footnote{\const{SpaLeb_g_footnote_text_AchtsamkeitMinfulness}} in sich selbst',
+                        'Achtsamkeit (care)\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AchtsamkeitCare:2019}.} gegenüber anderen Menschen',
                         'Regelprozess unseres Wohlbefindens und Überlebens durch Handlung (Was muss ich tun, damit es mir gut geht und ich nicht sterbe?)',
                     ))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
@@ -267,10 +267,10 @@
                   '')),
                   array( 'text', array( text => array(
                     'Unser Gefühl bestimmt, ob wir ein gutes Leben führen, ob wir glücklich und zufrieden sind, ob wir ein gutes Wohlgefühl und Wohlbefinden haben.'."\n".
-                    'Leben ist eine Tätigkeit, die Lebenssituationen zur Folge hat, die von unseren Gefühlen befunden, also „bewertet“, werden.\\color{*Bearb}{(Verweis)}'."\n".
+                    'Leben ist eine Tätigkeit, die Lebenssituationen zur Folge hat, die von unseren Gefühlen befunden, also „bewertet“, werden.\color{*Bearb}{(Verweis)}'."\n".
                     'Und wenn wir es gut gemacht haben, wird unsere Lebenssituation – als Belohnung – für gut befunden.'."\n",
                       'Ein gutes Leben fällt einem für gewöhnlich nicht einfach so zu:'."\n".
-                    'Jeder ist darauf angewiesen, für sich ganz individuell zu lernen, wie \\italic{sein} gutes Leben funktioniert.'."\n"))),
+                    'Jeder ist darauf angewiesen, für sich ganz individuell zu lernen, wie \italic{sein} gutes Leben funktioniert.'."\n"))),
                         
                   array( 'text', array( Shape => 'italic', text => array(
                       'Ein gutes Leben ist kein Zufall.'."\n"))),
@@ -286,15 +286,15 @@
                   array( 'text', array( text => array(
                     'Vielen Menschen ist nicht so bewusst, dass wir leben lernen müssen, um ein gutes Leben führen zu können.'."\n".
                     'Den weisen, alten Philosophen vieler Kulturen ist dies bewusst gewesen und sie hatten auch erstaunlich übereinstimmende Ideen dazu,'."\n".
-                    'was dafür wichtig oder gar entscheidend ist.\\color{*Bearb}{(Verweis, Albert Kitzler, Denken heilt!)}'."\n",
+                    'was dafür wichtig oder gar entscheidend ist.\color{*Bearb}{(Verweis, Albert Kitzler, Denken heilt!)}'."\n",
                       'Der Ansatz des Wissens darum, was wir tun können, um gut leben zu lernen, ist in uns seit der Geburt angelegt.'."\n".
                     'Ein Baby und Kleinkind macht dies ganz automatisch:'."\n".
                     'Es spielt herum, probiert aus und lernt dabei sich und seine Umwelt kennen, begreift zunächst durch Versuch-Erfolg-und-Irrtum, wie es selber und sein Leben funktioniert.'."\n".
                     'Dabei lässt es sich durch sein Gefühl leiten und das ist bei älteren nicht anders.'."\n",
-                      'Nachhaltige Schwierigkeiten mit dem Achtsamkeitsprozess treten oft erst durch chronischen Stress\\color{*Bearb}{(Link)}, durch \\jump{OM:SpaLeb:Psyche-und-Stimmung:Selbstmitgefuehl}{Traumata} und durch das „Erwachsenwerden“\\color{*Bearb}{(Link)} auf:'."\n".
-                    'Denn chronischer Stress und Traumata haben für gewöhnlich einen übermäßigen \\jump{OM:SpaLeb:Psyche-und-Stimmung:Selbstmitgefuehl}{Selbstschutz} zur Folge,'."\n".
+                      'Nachhaltige Schwierigkeiten mit dem Achtsamkeitsprozess treten oft erst durch chronischen Stress\color{*Bearb}{(Link)}, durch \jump{OM:SpaLeb:Psyche-und-Stimmung:Selbstmitgefuehl}{Traumata} und durch das „Erwachsenwerden“\color{*Bearb}{(Link)} auf:'."\n".
+                    'Denn chronischer Stress und Traumata haben für gewöhnlich einen übermäßigen \jump{OM:SpaLeb:Psyche-und-Stimmung:Selbstmitgefuehl}{Selbstschutz} zur Folge,'."\n".
                     'der die Wahrnehmung der eigenen Emotionalität behindert.'."\n".
-                    'Die \\jump{OM:SpaLeb:Psyche-und-Stimmung:BewusstseinWahrnehmung}{Selbstwahrnemung} kann so nachhaltig gestört werden und darüber auch die Fremdwahrnemung.'."\n",
+                    'Die \jump{OM:SpaLeb:Psyche-und-Stimmung:BewusstseinWahrnehmung}{Selbstwahrnemung} kann so nachhaltig gestört werden und darüber auch die Fremdwahrnemung.'."\n",
                       'Und geht das Erwachsenwerden mit der Einschränkung oder gar dem Verlust des Spieltriebs einher, also auch mit der Meinung, man wüsste bereits alles im Leben,'."\n".
                     'würde sich selber und die Welt bereits genug kennen, dann kann der Achtsamkeitsprozess auch nicht mehr mit dem eigentlich gewünschten Erfolg funktionieren.'."\n",
                       'Leben heißt, leben lernen bis zum Schluss – bis zum Tod:'."\n"))),
@@ -311,28 +311,28 @@
                   '')),
                   array( 'text', array( text => array(
                     'Der Achtsamkeitsprozess führt in meinen Augen dann auf Sicht zu einem zufriedenen Leben, wenn wir unsere primären Gefühle und Handlungen besonders achtsam wahrnehmen.'."\n".
-                    'Die \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeit}{besondere oder rechte Achtsamkeit} ist in diesem Sinne etwas, dem man sich im Laufe der Persönlichkeitsentwicklung durch den Achtsamkeitsprozess annähern kann.'."\n"))),
+                    'Die \jump{OM:SpaLeb:Care-Prozess:Achtsamkeit}{besondere oder rechte Achtsamkeit} ist in diesem Sinne etwas, dem man sich im Laufe der Persönlichkeitsentwicklung durch den Achtsamkeitsprozess annähern kann.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
                                            
                 'Achtsamkeit und ihre Vielschichtigkeit', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Beschäftigen wir uns ausgiebiger mit \\jump{OM:SpaLeb:Care-Prozess:Achtsamkeit}{Achtsamkeit}, ihren Definitionen und den auf ihr basierenden Trainings-, Coachings-, und Therapieformen,'."\n".
+                    'Beschäftigen wir uns ausgiebiger mit \jump{OM:SpaLeb:Care-Prozess:Achtsamkeit}{Achtsamkeit}, ihren Definitionen und den auf ihr basierenden Trainings-, Coachings-, und Therapieformen,'."\n".
                     'dann stellen wir fest, dass es sich bei der Achtsamkeit und ihren möglichen Facetten um eine komplexere Struktur handelt, als viele im ersten Moment erwarten.'."\n".
                     'Die Achtsamkeit kann mehrere parallele Wahrnehmungs- und Aufmerksamkeitsebenen haben, die wir betrachten können.'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{(Das Nachfolgende wohl kurz angedeutet in den vorstehenden Text und den Rest zu \\jumpname{OM:SpaLeb:Care-Prozess:NaehereBetracht}?)}'."\n"))),
+                    '\color{*Bearb}{(Das Nachfolgende wohl kurz angedeutet in den vorstehenden Text und den Rest zu \jumpname{OM:SpaLeb:Care-Prozess:NaehereBetracht}?)}'."\n"))),
                   array( 'text', array( text => array(
-                  '\\bold{Die Imbalance unseres Fokus der Aufmerksamkeit weg vom Hier und Jetzt \\\\ \\color{*TitleAdd}{– das Zur-Ruhe-Bringen der Gedankenbewegung des Yoga}} \\\\'."\n".
+                  '\bold{Die Imbalance unseres Fokus der Aufmerksamkeit weg vom Hier und Jetzt \\\\ \color{*TitleAdd}{– das Zur-Ruhe-Bringen der Gedankenbewegung des Yoga}} \\\\'."\n".
                     'Nehmen wir die Perspektive des Achtsamkeitsprozesses ein, so können wir feststellen, dass das Denken – der Verstand – als besonderer Achtsamkeitsprozess verstanden werden kann.'."\n".
                     'Der Achtsamkeitsprozess im Hier und Jetzt kann maßgeblich zur Handlung des Denkens hinübergleiten, besonders bei Stress und Sorgen, die zu Kreisgedanken führen, womit der Achtsamkeitsprozess des Inhalts des Denkens ins Zentrum unseres Fokus gerät.'."\n".
                     'Dadurch reduziert sich die Wahrnehmung unserer sonstigen Lebenssituation und Gefühle sowie unsere sonstigen Handlungen im Hier und Jetzt.'."\n".
                     'Denn es besteht eine „Konkurrenz“ zwischen dem Denken – dem Verstand – und den restlichen Möglichkeiten des Achtsamkeitsprozesses im Hier und Jetzt.'."\n",
                       'Zwar findet das Denken im Hier und Jetzt statt, doch dabei liegt unser Fokus auf dem Achtsamkeitsprozess des Inhalts des Denkens, so dass unser Fokus mehr auf die Vergangenheit und auf die Zukunft gerichtete ist.'."\n".
                     'So führen Kreisgedanken zu einer Imbalance, die sich durch die Verschiebung zum Denken hin ergibt.'."\n".
-                    'Diese unangenehme und ungesunde Imbalance steht im Zentrum der Philosophie des Yoga und soll durch die \\jump{OM:NPYo:Home}{Yoga-Praxis} wieder hergestellt werden.'."\n"))),
+                    'Diese unangenehme und ungesunde Imbalance steht im Zentrum der Philosophie des Yoga und soll durch die \jump{OM:NPYo:Home}{Yoga-Praxis} wieder hergestellt werden.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\bold{Die besondere oder rechte Achtsamkeit des Buddhismus} \\\\'."\n".
+                  '\bold{Die besondere oder rechte Achtsamkeit des Buddhismus} \\\\'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -341,7 +341,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'text', array( text => array(
-                  '\\bold{Selbstbeobachtung in kombinierten Ebenen \\\\ \\color{*TitleAdd}{– das Kinomodell}} \\\\'."\n".
+                  '\bold{Selbstbeobachtung in kombinierten Ebenen \\\\ \color{*TitleAdd}{– das Kinomodell}} \\\\'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -350,7 +350,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'text', array( text => array(
-                  '\\bold{Die Achtsamkeitsbasierte Stressreduktion \\\\ \\color{*TitleAdd}{– Mindfulness Based Stress Reduction (MBSR)}} \\\\'."\n".
+                  '\bold{Die Achtsamkeitsbasierte Stressreduktion \\\\ \color{*TitleAdd}{– Mindfulness Based Stress Reduction (MBSR)}} \\\\'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -369,22 +369,22 @@
                     '– Grundsätzlich können Störungen des guten Funktionierens dieses Prozesses auftreten, wenn es Schwierigkeiten mit elementaren Bestandteilen von ihm gibt: Z.B. bei Störungen der Gefühle oder der Gefühlswahrnehmung oder des Lernens oder der Handlung.',
                     ))),*/
                   array( 'text', array( text => array(
-                  '\\bold{… in Bezug auf unsere bisherige Interpretation und unsere Differenzierung seiner Unterprozesse} \\\\'."\n".
+                  '\bold{… in Bezug auf unsere bisherige Interpretation und unsere Differenzierung seiner Unterprozesse} \\\\'."\n".
                     'Wir haben einige Denkmuster kultiviert und so erlernt, die uns in Bezug auf die Lösung mancher unserer Probleme aus Sicht des Achtsamkeitsprozesses in unlogische und damit widersprüchliche Gedanken führen.'."\n".
                     'Aus dieser Sicht ist es kein Wunder, dass sich so für uns große Schwierigkeiten ergeben können, einigen Lebenssituationen der Not und Hilflosigkeit zu entkommen oder diese zumindest zu verbessern.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\bold{Unterscheidung zwischen Beobachtung und Reflexion} \\\\'."\n".
+                  '\bold{Unterscheidung zwischen Beobachtung und Reflexion} \\\\'."\n".
                     'Wir verbinden gerne die unterschiedlichen Handlungen Beobachtung und Reflexion als zwingend aufeinander folgend, was zu einer unpraktischen Vermengung führt.'."\n",
                       'Als Handlungen können in den Unterprozessen des Achtsamkeitsprozesses sowohl die Beobachtung als auch die Reflexion vorkommen, wie oben schon angedeutet.'."\n".
                     'Mit der Beobachtung ist die Wahrnehmung und gegebenenfalls die Erinnerung des Wahrgenommenen gemeint.'."\n".
-                    'Im Unterschied dazu bezieht sich die Reflexion auf das Nachdenken über Beobachtetes.\\color{*Bearb}{(Verweis auf Wikipedia)}'."\n",
+                    'Im Unterschied dazu bezieht sich die Reflexion auf das Nachdenken über Beobachtetes.\color{*Bearb}{(Verweis auf Wikipedia)}'."\n",
                       'Die Reflexion setzt also die Beobachtung voraus.'."\n".
                     'Ich kann auch meine Reflexion beobachten.'."\n".
                     'Aber aus einer Beobachtung folgt nicht die Reflexion, denn ich kann ohne diese Beobachtungen machen.'."\n".
                     'Letzteres wird aber oft vorausgesetzt, womit die Beobachtung und die Reflexion oft in einen Topf geworfen werden.'."\n".
                     'Wäre die Reflexion eine sofortige und generelle Folge der Beobachtung, dann könnten wir mit Yoga und Meditation nicht unsere Gedanken zur Ruhe bringen.'."\n"))),
                   array( 'text', array( text => array(
-                  '\\bold{Unser Verstand enthält ein Gefühl \\\\ \\color{*TitleAdd}{– den Gegensatz zwischen Verstand und Gefühl gibt es nicht}} \\\\'."\n".
+                  '\bold{Unser Verstand enthält ein Gefühl \\\\ \color{*TitleAdd}{– den Gegensatz zwischen Verstand und Gefühl gibt es nicht}} \\\\'."\n".
                     'Wir trennen gerne zwischen Verstand und Gefühl.'."\n".
                     'Nach dem Achtsamkeitsprozess sind unsere Gefühle zu unseren Gedanken aber ein Teil unseres Verstands, nämlich die andere Seite der Medaille.'."\n".
                     'Unser Denken und unsere Gefühle dazu bilden den Achtsamkeitsprozess des Inhalts unseres Verstands, wie oben beschrieben.'."\n"))),
@@ -419,7 +419,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'Nachfolgend werden XXX'."\n".
-                    '\\jump{OM:SpaLeb:Care-Prozess:AchtsamkeitsprozesGrundlLeben}{allen Lebens} XXX'."\n".
+                    '\jump{OM:SpaLeb:Care-Prozess:AchtsamkeitsprozesGrundlLeben}{allen Lebens} XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -448,7 +448,7 @@
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess', type => 'back'),
@@ -470,7 +470,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -492,15 +492,15 @@
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Care-Prozess:Achtsamkeit',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '• Siehe auch \\jumpname[*Bearb]{OM:SpaLeb:Diskussion:Achtsamkeit}.',
-                    '• Siehe auch \\jump[][*Bearb]{OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga:Achtsamkeit}{\\name{OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga} – \\name{OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga:Achtsamkeit}}.',
+                    '• Siehe auch \jumpname[*Bearb]{OM:SpaLeb:Diskussion:Achtsamkeit}.',
+                    '• Siehe auch \jump[][*Bearb]{OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga:Achtsamkeit}{\name{OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga} – \name{OM:SpaLeb:Vor-Physik-Achtsamkeit-und-Yoga:Achtsamkeit}}.',
                     '• Es wird im Allgemeinen davon ausgegangen, dass das aufmerksam wahrgenommene von selber wirkt.',
                     ))),
                       
@@ -516,7 +516,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -549,7 +549,7 @@
                     '– Selbstvertrauen ist deshalb eine Grundlage des Lebens. Es ergänzt den Zirkel des Achtsamkeitsprozesses, indem von den Gefühlen nicht immer gleich zu den Antrieben und von den Antrieben nicht immer gleich zu den Handlungen übergegangen werden muss.',
                     '• Die Philosophie des Yoga aus Sicht des Achtsamkeitsprozesses:',
                     '– Die Philosophie des Yoga: Yoga ist das Zur-Ruhe-Bringen/Kommen der Gedankenbewegung im Geiste. Der Fokus wird wieder mehr auf das Hier und Jetzt gelenkt.',
-                    '– Wenn unser Fokus zu sehr auf unserem Verstand liegt, dem Achtsamkeitsprozess des helfenden Reflektors – dem Inhalt des Denkens –, dann ist unser Fokus zu wenig auf dem Achtsamkeitsprozess unseres Hier und Jetzt. Dadurch gerät unser genereller Achtsamkeitsprozess aus seiner Balance. Die Vedanta sagt dazu: \\quote{Der Verstand ist ein guter Diener, aber ein schlechter Meister.}',
+                    '– Wenn unser Fokus zu sehr auf unserem Verstand liegt, dem Achtsamkeitsprozess des helfenden Reflektors – dem Inhalt des Denkens –, dann ist unser Fokus zu wenig auf dem Achtsamkeitsprozess unseres Hier und Jetzt. Dadurch gerät unser genereller Achtsamkeitsprozess aus seiner Balance. Die Vedanta sagt dazu: \quote{Der Verstand ist ein guter Diener, aber ein schlechter Meister.}',
                     '– Wie gerät unser Fokus zu sehr auf unseren Verstand? Durch zu viel Selbstschutz? Ist dies eine kompensatorische Sache?',
                     ))),
                       
@@ -600,7 +600,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -629,39 +629,39 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '\\bold{Körperliche Hinweise auf den Achtsamkeitsprozess}',
-                    '• Die Verbindung unserer körperlichen Gefühlsseite, unseres Gefühlspols, mit unserem Unterbewussten und unserer körperlichen Handlungsseite, unseres Handlungspols, mit unserem Bewusstsein zeigt sich in Folgendem (siehe auch \\italic{\\jumpname{OM:SpaLeb:Schlaf-und-Aktivsein}}):',
+                    '\bold{Körperliche Hinweise auf den Achtsamkeitsprozess}',
+                    '• Die Verbindung unserer körperlichen Gefühlsseite, unseres Gefühlspols, mit unserem Unterbewussten und unserer körperlichen Handlungsseite, unseres Handlungspols, mit unserem Bewusstsein zeigt sich in Folgendem (siehe auch \italic{\jumpname{OM:SpaLeb:Schlaf-und-Aktivsein}}):',
                     '– Unser Herz, dessen Schlag wir nicht bewusst steuern können, liegt auf unserer körperlichen Gefühlsseite des Unterbewussten, dafür ist auf dieser Seite unsere Lunge verkleinert. Wir können also sagen, dass unsere Atmung sowohl auf unserer unterbewussten Seite, als auch auf unserer bewussten Seite, mit dem leichten Schwerpunkt in Richtung Bewusstsein, verortet ist. So in etwa beobachten wir auch unsere Verbindung zu unserer Atmung.',
-                    '• Siehe \\bold{Wachen und Schlafen – Sympathikus und Parasympathikus}: \\italic{\\jumpname{OM:NPYo:HaTha}}.',
+                    '• Siehe \bold{Wachen und Schlafen – Sympathikus und Parasympathikus}: \italic{\jumpname{OM:NPYo:HaTha}}.',
                     '– Im Pranayama, den Atemtechniken des Yoga, kann durch links- oder rechtsbetonte Ein- und Ausatmung Sympathikus oder Parasympathikus stimuliert werden, während der Gegenpol beruhigt wird. Dies kann hin bis zum Einschlafen oder Aufwachen genutzt werden.',
                     '⋅ Sogar die Fraktalität des Achtsamkeitsprozess kann beobachtet werden: Bei der Förderung des Einschlafens durch Atmung wird die passive Gefühlsseite aktiviert und die aktive Handlungsseite deaktiviert.',
                     '• Der Achtsamkeitsprozess spiegelt sich in der Lateralisation des Gehirns, in seiner funktionalen Aufgabenteilung zwischen den Gehirnhälften, wieder. Die Gehirnhälften haben eine bevorzugte Funktion in Bezug auf die Rationalität und die Emotionalität. Diese spiegelt sich wiederum in den Körperhälften, und hier besonders im Gesicht, wieder, die weit überwiegend überkreuz von den Gehirnhälften steuert werden.',
-                    '• Die hierdurch ausgeprägten Unterschiede im Aussehen der Gesichtshälften lassen sich durch \\jump{OM:SpaLeb:Gesichtsausdruck}{Gesichtsspiegelung} gut sichtbar machen.',
+                    '• Die hierdurch ausgeprägten Unterschiede im Aussehen der Gesichtshälften lassen sich durch \jump{OM:SpaLeb:Gesichtsausdruck}{Gesichtsspiegelung} gut sichtbar machen.',
                     '– Dass viele Primaten keine oder nur wenig Haare im Gesichtsfeld haben bedeutet, sie zeigen Gesicht. Ein Hinweis, dass die Hypothese stimmt, dass sie und wir darauf angewiesen sind, die Mimik des anderen lesen zu können, weil sich im Gesicht unsere aktuelle Stimmung und damit unser aller Achtsamkeitsprozess widerspiegelt.',
-                    '• Der Achtsamkeitsprozess drückt sich nicht nur in seinen Polen, sondern auch in seinen Gradienten im Körper aus, siehe \\jumpname{OM:SpaLeb:Psychosomatik}.',
-                    '\\bold{Psychologie, Soziologie}',
+                    '• Der Achtsamkeitsprozess drückt sich nicht nur in seinen Polen, sondern auch in seinen Gradienten im Körper aus, siehe \jumpname{OM:SpaLeb:Psychosomatik}.',
+                    '\bold{Psychologie, Soziologie}',
                     '• Psychologie ist individuelles Erleben und Verhalten, also Fühlen und Handeln.',
                     '– Eine Psychotherapie ist Persönlichkeitsentwicklung.',
-                    '• Propaganda: Ist »… organisierte manipulative Kommunikation, um menschliches Fühlen/Denken/Handeln zu beeinflussen.« (\\jump[https://www.youtube.com/watch?v=ICgr-Lg7Yvw]{}{Ansgar Schneider über "Wissenschaft und gesellschaftliche Leugnung"}. Sek. 01:59:42)',
-                    '\\bold{Medizin}',
-                    '\\bold{\\italic{Psychosomatische Verspannungen}}',
-                    '• Verspannungen an den Schulterblättern werden mit erhöhten Todesraten in Verbindung gebracht: \\quote{Um zu verstehen, wie der Algorithmus seine Einteilung traf, identifizierten die Forscher die Bildbereiche, die er für seine Berechnungen verwendete. Wenig überraschend befand sich darunter unter anderem der Taillenumfang und die Bruststruktur von Frauen, die bekanntlich Risikofaktoren für bestimmte Krankheiten darstellen. Aber der Algorithmus untersuchte auch die Region unter den Schulterblättern der Patienten, der Mediziner bisher keine Aufmerksamkeit geschenkt hatten. Lu vermutet, dass dieser Bereich mit der Beweglichkeit zusammenhängt: Bei einer Thoraxaufnahme müssen die Patienten das Gerät oft umarmen, und weniger gesunde Menschen, denen das nicht gelingt, könnten ihre Schultern anders positionieren. ›Das ist nichts, worauf ich auf Anhieb geachtet hätte‹, gibt Lu zu.}, siehe Spektrum der Wissenschaft 09.2020, Die Zukunft der Radiologie, S. 52-57, hier S. 56.',
-                    '\\bold{Evolution}',
-                    '• Siehe auch \\jumpname{OM:SpaLeb:Psychosomatik:Vortext:Achtsamkeitsgradient}.',
+                    '• Propaganda: Ist »… organisierte manipulative Kommunikation, um menschliches Fühlen/Denken/Handeln zu beeinflussen.« (\jump[https://www.youtube.com/watch?v=ICgr-Lg7Yvw]{}{Ansgar Schneider über "Wissenschaft und gesellschaftliche Leugnung"}. Sek. 01:59:42)',
+                    '\bold{Medizin}',
+                    '\bold{\italic{Psychosomatische Verspannungen}}',
+                    '• Verspannungen an den Schulterblättern werden mit erhöhten Todesraten in Verbindung gebracht: \quote{Um zu verstehen, wie der Algorithmus seine Einteilung traf, identifizierten die Forscher die Bildbereiche, die er für seine Berechnungen verwendete. Wenig überraschend befand sich darunter unter anderem der Taillenumfang und die Bruststruktur von Frauen, die bekanntlich Risikofaktoren für bestimmte Krankheiten darstellen. Aber der Algorithmus untersuchte auch die Region unter den Schulterblättern der Patienten, der Mediziner bisher keine Aufmerksamkeit geschenkt hatten. Lu vermutet, dass dieser Bereich mit der Beweglichkeit zusammenhängt: Bei einer Thoraxaufnahme müssen die Patienten das Gerät oft umarmen, und weniger gesunde Menschen, denen das nicht gelingt, könnten ihre Schultern anders positionieren. ›Das ist nichts, worauf ich auf Anhieb geachtet hätte‹, gibt Lu zu.}, siehe Spektrum der Wissenschaft 09.2020, Die Zukunft der Radiologie, S. 52-57, hier S. 56.',
+                    '\bold{Evolution}',
+                    '• Siehe auch \jumpname{OM:SpaLeb:Psychosomatik:Vortext:Achtsamkeitsgradient}.',
                     '• Unser aufrechter Gang:',
                     '– … bringt uns freier, feiner und intensiver ins Handeln.',
                     '– … bringt unsere sensible, informationsaustauschende Seite dazu, sich auf unsere Umwelt und unsere Mitmenschen zu richten.',
                     '– Vögel und Fledermäuse hat der aufrechte Gang auf andere Art und Weise besser ins Handeln gebracht, sodass sie schließlich fliegen konnten.',
                     '• Hypothesen:',
-                    '– Das unsere Behaarung weitgehend verschwunden ist, könnte seinen Grund auch darin haben, dass unser Gefühl viel mehr Bedeutung erlangt hat, siehe auch Gesichtsbehaarung und \\jumpname{OM:SpaLeb:Psychosomatik:Vortext:Achtsamkeitsgradient}, und etwas weniger im Ungeziefer in unserem Fell, was häufig spekuliert wird.',
-                    '\\bold{Physik}',
+                    '– Das unsere Behaarung weitgehend verschwunden ist, könnte seinen Grund auch darin haben, dass unser Gefühl viel mehr Bedeutung erlangt hat, siehe auch Gesichtsbehaarung und \jumpname{OM:SpaLeb:Psychosomatik:Vortext:Achtsamkeitsgradient}, und etwas weniger im Ungeziefer in unserem Fell, was häufig spekuliert wird.',
+                    '\bold{Physik}',
                     '• Der Unterschied zwischen einem Stein und vielen Arten von Lebewesen ist, dass es keine halben Lebewesen gibt, halbe Steine aber schon, sie bleiben Steine.',
                     '– Es gibt zwar Würmer und andere Lebewesen, die sich teilen lassen und zu zweien werden. Jedoch für viele Lebewesen gilt dies nicht einfach so. Auch ist ein halber Wurm nicht dar gleiche, wie ein ganzer. Die fehlende hälfte kann nur nachwachsen. Ein halber Stein ist wirklich ein Stein, wenn auch ein leichterer.',
                     '⋅ Selbst eine einzelne Zelle kann ich für gewöhnlich nicht einfach durchschneiden und hab zwei Zellen. Und bei höheren, komplexeren Lebewesen geht dies grundsätzlich nicht.',
                     '– Dies macht Menschen und Elementarteilchen, wie Elektronen, ähnlicher, als Menschen und Steine. Es ist ein Hinweis darauf, dass Menschen genau wie Elektronen einen unteilbaren strukturell existenziellen Regelprozess besitzen. Bei Menschen ist dies der Achtsamkeitsprozess. Diese Ähnlichkeit äußert sich auch darin, dass sich das Verhalten von Lebewesen, genau wie das von Elementarteilchen, überwiegend nur mit statistischen Methoden an größeren Mengen erfassen lässt.',
-                    '\\bold{Persönliche Erfahrung}',
+                    '\bold{Persönliche Erfahrung}',
                     '• Wenn ich beim Sex bezüglich des Sehens auf mein emotionales, linkes Auge umschalte – ich kann das bevorzugte Auge umschalten, es kann aber auch das Handlungsauge geschlossen werden –, dann werden meine Gefühle deutlich intensiver.',
-                    '\\bold{Zu Erforschen}',
+                    '\bold{Zu Erforschen}',
                     '• Riechen Menschen unter ihren beiden Achseln jeweils mehr männlich oder weiblich?',
                     '• Empfinde ich intensiver, wenn ich (mehr) mit meinem weiblichen Auge gucke, als mit meinem männlichen?',
                     ))),
@@ -678,7 +678,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -700,20 +700,20 @@
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Care-Prozess:ErweiSicht',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:BeobachtHinweise', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '\\bold{Körperliche Bezüge des Achtsamkeitsprozesses:}',
+                    '\bold{Körperliche Bezüge des Achtsamkeitsprozesses:}',
                     '– Der Achtsamkeitsprozess spiegelt sich in den Körperhälften in ihrem Bezug zur Rationalität und zur Emotionalität der Gehirnhälften, die wiederum die Körperhälften weit überwiegend diagonal ansprechen und steuern. Siehe oben.',
                     '– Er ist aber auch mit der Stimmungsspannung, oder den Stimmungsspannungen, verknüpft, die wiederum mit der Psyche in starkem Zusammenhang stehen.',
                     '– So kann der Achtsamkeitsprozess auch als körperlicher Zirkel von der Körperseite der Emotionalität zur Körpervorderseite, Selbstschutz, zur Körperseite der Rationalität, Handlung, zur Körpervorderseite, Öffnung, und wieder zum Ausgangspunkt gesehen werden. Es geht also um die Verknüpfung mit der Vor- und Rückbeuge des Körpers. Selbstschutz und Öffnung stehen darüber auch mit dem Schließen und der Öffnung von Schultern, Mund und Anus und der umgebenden Muskulatur in Verbindung. Es geht hierbei ebenso um das Klein- oder Großmachen des Körpers, um die Angst, Depression etc. oder die Selbstsicherheit und den Stolz. Der Achsamkeitsprozess justiert dies zwischen den Spannungsfeldern, die von der Rumpfstimmungsspannung abhängig sind. Damit vom Einschnüren der transversen Bauchmuskulatur und dem Zwerchfell, der Atemspannung, sowie von der Oberkörperbalancespannung. Eine weitere räumliche Dimension ist dadurch auch das Schmal- oder Breitmachen der Schultern. All diese Dimensionen können als räumliche Spins, Rotationen oder Schwingungen, gesehen werden, die den Achtsamkeitsprozess, mit seinem Bezug auf die Körperhälften, enthalten.',
-                    '\\bold{Entscheidungen:}',
+                    '\bold{Entscheidungen:}',
                     '– Was bestimmt unser Leben? Was sagt uns, wie unser Leben ist? Unser Gefühl tut dies.',
-                    '– Und unser Gefühl bestimmt so auch unsere Entscheidungen, bei denen wir zum besseren Gefühl tendieren. Wir sagen auch: \\quote{Es so zu entscheiden, macht mir ein gutes Gefühl.} Oder im Nachhinein: \\quote{Mit der Entscheidung fühle ich mich wohl.}',
+                    '– Und unser Gefühl bestimmt so auch unsere Entscheidungen, bei denen wir zum besseren Gefühl tendieren. Wir sagen auch: \quote{Es so zu entscheiden, macht mir ein gutes Gefühl.} Oder im Nachhinein: \quote{Mit der Entscheidung fühle ich mich wohl.}',
                     '– Entscheidungen betreffen immer die Zukunft, werden jedoch immer aufgrund der Gegenwart und Vergangenheit gefällt.',
                     '– Für Entscheidungen brauchen wir eine Auswahl. Doch wie bekommen wir diese?',
                     '– Unser inneres Licht des Wohlgefühls:',
@@ -721,8 +721,8 @@
                     '⋅ Zum Jeweiligen, was wir dort aus einer bestimmten Perspektive sehen, bekommen wir ein Gefühl, das dies in Bezug zu uns und unserem Leben – zu unserer Lebenssituation – setzt.',
                     '⋅ Wir gewichten die Perspektiven auf die Dinge und Situationen etwas höher, die uns die besseren Gefühle machen, am besten ohne die, mit den weniger guten oder schlechten Gefühlen, ganz zu ignorieren.',
                     '⋅ Hierdurch geleitet treffen wir unsere Entscheidungen.',
-                    '\\bold{Zusammenhang von Wissenschaftsfeldern und Heilmethoden:}',
-                    '• Eigene Seite \\jumpname{OM:SpaLeb:Meetup-Yoga-Meets-Wissenschaft}.',
+                    '\bold{Zusammenhang von Wissenschaftsfeldern und Heilmethoden:}',
+                    '• Eigene Seite \jumpname{OM:SpaLeb:Meetup-Yoga-Meets-Wissenschaft}.',
                     '• Die Perspektive des Achtsamkeitsprozesses macht sichtbar, wie Yoga und alternative Medizin mit der (Natur-)Wissenschaft, der klassischen Medizin, der Psychologie und der Philosophie verbunden sind:',
                     '– Yoga und Teile der alternativen Medizin, wie Akupunktur etc., kümmern sich um die Balance, also die Justierung und das Tuning, des Achtsamkeitsprozesses, um die Balance zwischen der Stabilität und der Fortentwicklung, der Ordnung und dem Chaos, unseres Lebens.',
                     '– Die klassische Medizin kümmert sich vornehmlich und meist reduktionistisch um biologische Regelprozesse oder sichtbare Schäden des Lebens. Damit kümmert sie sich nur um Unterprozesse und Teilaspekte des Achtsamkeitsprozesses.',
@@ -741,7 +741,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -763,7 +763,7 @@
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Care-Prozess:PhysAchtsa',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:ErweiSicht', type => 'back'),
@@ -771,7 +771,7 @@
                       
                   array( 'notice', array( Display => 'showContent', text => array(
                     '• Buchtitel ›Die Physik der Achtsamkeit‹? (Titelidee von Olli)',
-                    '• Seite zu diesem Thema \\italic{\\jumpname{OM:NPYo:ExistenzLeichtigkeit}}.',
+                    '• Seite zu diesem Thema \italic{\jumpname{OM:NPYo:ExistenzLeichtigkeit}}.',
                     '• Regelprozesse:',
                     '– Jeder Regelprozess hat eine wellenartige, rotierende Dynamik. Das hat zur Konsequenz, dass er Wechselwirkungswellen seiner Spieler- und Gegenspieler-Wechselwirkungen abstrahlt. Was hat das zu bedeuten?',
                     '• Der Achtsamkeitsprozesses greift über das Gefühl den Zustand aller möglichen Regelprozesse des Körpers ab. Damit ist er als übergeordneter Regelprozess wie eine Krake mit seinen sensorischen Tentakeln überall im „Getriebe des Lebens“ involviert. Da dieses Involviert-sein selber als Regelprozess funktioniert, gibt es sicherlich auch eine Rückkopplung, über die er die Regelprozesse des Körpers beeinflussen kann.',
@@ -789,7 +789,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -811,15 +811,15 @@
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Care-Prozess:AchtsamkeitsprozesGrundlLeben',
-              '\\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:PhysAchtsa', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '\\bold{Evolution:}',
-                    '• Die Evolutionstheorie muss modifiziert werden, denn der Achtsamkeitsprozess beeinflusst unsere genetische Evolution, ohne Selektion:\\footnote[*Bearb]{\\color{*Bearb}{Das so etwas existieren muss, dachte auch Wolfgang Pauli: \\\\ Vgl. \\jump[https://www.youtube.com/watch?v=YRlzDm6mQG0]{}{Portrait Wolfgang Pauli | Ernst Peter Fischer}.}}',
+                    '\bold{Evolution:}',
+                    '• Die Evolutionstheorie muss modifiziert werden, denn der Achtsamkeitsprozess beeinflusst unsere genetische Evolution, ohne Selektion:\footnote[*Bearb]{\color{*Bearb}{Das so etwas existieren muss, dachte auch Wolfgang Pauli: \\\\ Vgl. \jump[https://www.youtube.com/watch?v=YRlzDm6mQG0]{}{Portrait Wolfgang Pauli | Ernst Peter Fischer}.}}',
                     '– Stress ist Ausdruck eines nicht gut funktionierenden Achtsamkeitsprozesses.',
                     '– Stress beeinflusst unsere Epigenetik.',
                     '– Unsere Epigenetik wird teilweise vererbt.',
@@ -827,7 +827,7 @@
                     '– Der Achtsamkeitsprozess nimmt also Einfluss auf unsere genetische Evolution, ohne dass Selektion nötig wäre.',
                     '– Damit muss die klassische Evolutionstheorie modifiziert werden.',
                     '• Lebensentstehung: Kranendonk, Martin J. Van, Tara Djokic und David Deamer. Wie entstand das Leben? In: Spektrum der Wissenschaft, 12/2017, S. 12-19.',
-                    '\\bold{Sonstiges:}',
+                    '\bold{Sonstiges:}',
                     '• Konzentriert man sich auf die Facetten der Situation und des Antriebs im Zirkel des Achtsamkeitsprozesses, zunächst ohne das Lernen, dann hat dieser vereinfachte Prozess viel mit Physik und chemischen Reaktionen zu tun. Sowie das Lernen hinzukommt und Vererbung entsteht, ist es der Übergang ins Leben. Lernen kann hier zunächst als die Kodierung der DNA – der Gene – aufgefasst werden. Das Lernen, was wir kennen, ist dann ein Lernen höherer Stufe. Seine Vererbung ist die Tradierung des Wissen, das Weitergeben von Memen, memorischen Einheiten.',
                     ))),
                       
@@ -843,7 +843,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -872,7 +872,7 @@
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
-                    '• Seite \\italic{\\jumpname{OM:SpaLeb:Koerperliche-und-seelische-Existenz}} in \\italic{neue Anthropologie} umbenennen?',
+                    '• Seite \italic{\jumpname{OM:SpaLeb:Koerperliche-und-seelische-Existenz}} in \italic{neue Anthropologie} umbenennen?',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -887,7 +887,7 @@
                     'XXX'."\n".
                     'XXX'."\n"))),
                   array( 'text', array( text => array(
-                    '\\color{*Bearb}{In Arbeit …}'."\n".
+                    '\color{*Bearb}{In Arbeit …}'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
                     'XXX'."\n".
@@ -909,22 +909,22 @@
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Care-Prozess:KIundRobotik',
-              '\\name[undertitle]{OM:SpaLeb:KIundRobotik}', 'Sc_f_Paragraph',
+              '\name[undertitle]{OM:SpaLeb:KIundRobotik}', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:NeueAnthropologie', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    '• Kybernetik einführen, siehe \\url{https://de.wikipedia.org/w/index.php?title=Kybernetik&oldid=217706680}.',
+                    '• Kybernetik einführen, siehe \url{https://de.wikipedia.org/w/index.php?title=Kybernetik&oldid=217706680}.',
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\\hidden{\\name[description]{OM:SpaLeb:KIundRobotik}. }Menschenähnliche \\jump{OM:SpaLeb:KIundRobotik}{Künstliche Intelligenz und Robotik} sind nur über einen zentralen Regelprozess des (körperlichen) Lernens möglich, über eine Nachbildung des Achtsamkeitsprozesses.'."\n",
+                    '\hidden{\name[description]{OM:SpaLeb:KIundRobotik}. }Menschenähnliche \jump{OM:SpaLeb:KIundRobotik}{Künstliche Intelligenz und Robotik} sind nur über einen zentralen Regelprozess des (körperlichen) Lernens möglich, über eine Nachbildung des Achtsamkeitsprozesses.'."\n",
                       'Denn es gibt viele Hinweise in diesen Fachgebieten darauf, dass eine auf Computern basierende Künstliche Intelligenz, oder mit dieser ausgestattete Roboter,'."\n".
                     'nur auf diese Weise ein für Menschen akzeptables, weil vergleichbares, Modell ihrer Umwelt entwickeln können.'."\n".
                     'Es scheint, dass nur durch ein körperliches Modell der Welt die neuronalen Netzwerke Fähigkeiten lernen können, die den unseren vergleichbar sind.'."\n",
-                      'Darüber hinaus hat die Künstliche Intelligenz und die Robotik ein \\jump{OM:SpaLeb:KIundRobotik}{Vertrauensproblem}, was mit der Unmöglichkeit der exakten Nachbildung des Achtsamkeitsprozesses zu tun hat, wie ich auf der dazugehörigen Seite erläutere.'."\n"))),
+                      'Darüber hinaus hat die Künstliche Intelligenz und die Robotik ein \jump{OM:SpaLeb:KIundRobotik}{Vertrauensproblem}, was mit der Unmöglichkeit der exakten Nachbildung des Achtsamkeitsprozesses zu tun hat, wie ich auf der dazugehörigen Seite erläutere.'."\n"))),
             
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:MystischeBedeutung'),
