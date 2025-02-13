@@ -67,7 +67,7 @@
                     'Dann versuche ich dafür zu sorgen, dass ich Geborgenheit und menschliche Wärme bekomme.'."\n".
                     'Spätestens ab unserer \jump{OM:SpaLeb:Psyche-und-Stimmung:Geburt}{Geburt} wird der Care-Prozess in Gang gesetzt.'."\n".
                     'Aber sicherlich spielt er schon im Mutterleib eine Rolle.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:X', text =>
                                            
                 'Eine Entwicklung in Helixspiralform', subline =>
                   '')),
@@ -88,7 +88,7 @@
                   array( 'text', array( Shape => 'italic', text => array(
                       'Wir lernen leben.'."\n"))),
                       
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:X', text =>
                                            
                 'Der Prozess unseres Lebens – unser Gedeihen', subline =>
                   'Die Verflechtung der bekannten biologischen Regelprozesse unseres Lebens mit unserem Achtsamkeitsprozess')),
@@ -118,7 +118,7 @@
                       'Dadurch ist diese Definition auch dynamisch funktional, materiell sowie transzendent, folglich also sehr weitgehend.'."\n".
                     'Sie muss nicht unbedingt auf der Biochemie basieren, ist damit im engen Sinne nicht auf die uns bekannte Genetik beschränkt.'."\n".
                     'Es sind nur die Zustände Lebenssituation und Antriebsdruck, die funktionalen Elemente Gefühl (Zustandsfeststellung und -bewertung) und Handlung sowie Entwicklungs- und Lernmechanismen nötig.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:X', text =>
                                            
                 'Unsere Balance zwischen Stabilität und Fortentwicklung', subline =>
                   '')),
@@ -138,7 +138,7 @@
                   array( 'figure',
                     array_merge( $SpaLeb_g_figure_ary_AchtsamkeitsprozessBewWiss, array( name => 'OM:SpaLeb:Care-Prozess:Vortext:Fig-AchtsamkeitsprozessBewWiss'))),
                       
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:X', text =>
                                            
                 'Unser Lernen – Bewusstsein, Wissen und Können', subline =>
                   '')),
@@ -171,7 +171,7 @@
                   array( 'fade-in-area', array( Display => 'hideContent',
                     Title => 'Bewusstsein im Achtsamkeitsprozess …',
                     TitleVis => 'Bewusstsein im Achtsamkeitsprozess:', ParagraphList => array(
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:X', text =>
                                            
                 'Elementares, rudimentäres und kognitives Bewusstsein', subline =>
                   '')),
@@ -204,7 +204,7 @@
                       'Rudimentäres Bewusstsein ist ein notwendiger Bestandteil des kognitiven Bewusstseins.'."\n".
                     'Da der Lernprozess und die Persönlichkeitsentwicklung als Beispiele notwendigerweise zum kognitiven Bewusstsein gehören muss, damit es sich überhaupt in einem Lebewesen entwickeln kann,'."\n".
                     'ist kognitives Bewusstsein und der kognitive Achtsamkeitsprozess möglicherweise das Gleiche.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:X', text =>
                                            
                 'Unser Körper gehört zu unserem Bewusstsein, Wissen und Können', subline =>
                   '')),
@@ -219,7 +219,7 @@
                     'Unser Achtsamkeitsprozess formt unser gesamtes Bewusstsein, Wissen und Können, inklusive unseres Körpers.'."\n"))),
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:X', text =>
                                            
                 'Unterprozesse des führenden Achtsamkeitsprozesses', subline =>
                   '')),
@@ -244,7 +244,7 @@
                       'All diese Unterprozesse stehen miteinander in Konkurrenz um unseren Fokus der Aufmerksamkeit.'."\n".
                     'Die Priorität und Balance in unserer Aufmerksamkeit, die diesen Unterprozessen zu teil wird, spielt in der Psychotherapie und auch im Yoga eine wichtige Rolle.'."\n".
                     'In beiden Fällen geht es darum, besser leben zu lernen oder im Extremfall wieder zu lernen besser leben zu lernen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:X', text =>
                                            
                 'Im Achtsamkeitsprozess enthaltene bekannte Begriffe und Bilder', subline =>
                   '')),
@@ -261,7 +261,7 @@
                         'Achtsamkeit (care)\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AchtsamkeitCare:2019}.} gegenüber anderen Menschen',
                         'Regelprozess unseres Wohlbefindens und Überlebens durch Handlung (Was muss ich tun, damit es mir gut geht und ich nicht sterbe?)',
                     ))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:X', text =>
                                            
                 'Wann führen wir ein gutes Leben?', subline =>
                   '')),
@@ -279,7 +279,7 @@
                     'Die meisten von uns Menschen wollen sicherlich gut leben lernen.'."\n".
                     'Und dafür sind wir darauf angewiesen zu wissen oder zu lernen, wie wir gut leben lernen können; zu verstehen, wie das funktioniert.'."\n".
                     'Unsere Geschicklichkeit im Achtsamkeitsprozess und die Rahmenbedingungen unseres Lebens entscheiden darüber, ob wir ein gutes Leben führen können und letztendlich führen.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:X', text =>
                                            
                 'Lernen gut zu leben', subline =>
                   'Viele Menschen wissen nicht, dass sie darauf angewiesen sind, gut leben zu lernen')),
@@ -305,14 +305,14 @@
                   array( 'text', array( text => array(
                     'Uns selber kennenlernen und erforschen.'."\n".
                     'Erkennen und verstehen, wer wir sind …'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:X', text =>
                                            
                 'Warum ist die Achtsamkeit im Namen dieses Prozesses?', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'Der Achtsamkeitsprozess führt in meinen Augen dann auf Sicht zu einem zufriedenen Leben, wenn wir unsere primären Gefühle und Handlungen besonders achtsam wahrnehmen.'."\n".
                     'Die \jump{OM:SpaLeb:Care-Prozess:Achtsamkeit}{besondere oder rechte Achtsamkeit} ist in diesem Sinne etwas, dem man sich im Laufe der Persönlichkeitsentwicklung durch den Achtsamkeitsprozess annähern kann.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:X', text =>
                                            
                 'Achtsamkeit und ihre Vielschichtigkeit', subline =>
                   '')),
@@ -333,31 +333,16 @@
                     'Diese unangenehme und ungesunde Imbalance steht im Zentrum der Philosophie des Yoga und soll durch die \jump{OM:NPYo:Home}{Yoga-Praxis} wieder hergestellt werden.'."\n"))),
                   array( 'text', array( text => array(
                   '\bold{Die besondere oder rechte Achtsamkeit des Buddhismus} \\\\'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                   '\bold{Selbstbeobachtung in kombinierten Ebenen \\\\ \color{*TitleAdd}{– das Kinomodell}} \\\\'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                   '\bold{Die Achtsamkeitsbasierte Stressreduktion \\\\ \color{*TitleAdd}{– Mindfulness Based Stress Reduction (MBSR)}} \\\\'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:Vortext:Klaerung', text =>
                                            
                 'Klärungen durch den Achtsamkeitsprozess', subline =>
@@ -388,7 +373,7 @@
                     'Wir trennen gerne zwischen Verstand und Gefühl.'."\n".
                     'Nach dem Achtsamkeitsprozess sind unsere Gefühle zu unseren Gedanken aber ein Teil unseres Verstands, nämlich die andere Seite der Medaille.'."\n".
                     'Unser Denken und unsere Gefühle dazu bilden den Achtsamkeitsprozess des Inhalts unseres Verstands, wie oben beschrieben.'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:X', text =>
                                            
                 'Die Tücken des Achtsamkeitsprozesses', subline =>
                   '')),
@@ -399,12 +384,8 @@
                     '– Grundsätzlich können Störungen des guten Funktionierens dieses Prozesses auftreten, wenn es Schwierigkeiten mit elementaren Bestandteilen von ihm gibt: Z.B. bei Störungen der Gefühle oder der Gefühlswahrnehmung oder des Lernens oder der Handlung.',
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:XXX', text =>
                                            
                 'Der Achtsamkeitsprozess ist tief mit dem Leben und mit Physik verbunden', subline =>
@@ -418,22 +399,10 @@
                     '– Der Prozess sucht neue Stabilität durch Fortentwicklung und er ermöglich Fortentwicklung durch Stabilität. Dies ist wie beim Gehen, Schritte machen, aber immer ein Bein am Boden. Es ist ein fraktales Yin und Yang Prinzip.',
                     ))),
                   array( 'text', array( text => array(
-                    'Nachfolgend werden XXX'."\n".
-                    '\jump{OM:SpaLeb:Care-Prozess:AchtsamkeitsprozesGrundlLeben}{allen Lebens} XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    'Nachfolgend werden \color{*Bearb}{(In Arbeit …)}'."\n".
+                    '\jump{OM:SpaLeb:Care-Prozess:AchtsamkeitsprozesGrundlLeben}{allen Lebens}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:Achtsamkeitsprozess'),
@@ -459,27 +428,8 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:Achtsamkeit'),
@@ -505,27 +455,8 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:NaehereBetracht'),
@@ -553,7 +484,7 @@
                     '– Wie gerät unser Fokus zu sehr auf unseren Verstand? Durch zu viel Selbstschutz? Ist dies eine kompensatorische Sache?',
                     ))),
                       
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:NaehereBetracht:XXX', text =>
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:NaehereBetracht:X', text =>
                                            
                 'Der Dialog in uns')),
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -561,17 +492,9 @@
                     '– Je mehr wir uns diesen Dialog bewusst machen, desto klüger können wir ihn gestallten und umso klüger fühlen und verhalten wir uns.',
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:NaehereBetracht:XXX', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SpaLeb:Care-Prozess:NaehereBetracht:X', text =>
                                            
                 'Wie können wir uns eine Balance aus Stabilität und Fortschritt vorstellen?')),
                   array( 'text', array( text => array(
@@ -589,27 +512,8 @@
                     'Unser Achtsamkeitsprozess ist deshalb auch genau so aufgebaut, weil unser Leben Stabilität und Fortschritt braucht, um zu funktionieren.'."\n".
                     'Für ein gutes Wohlbefinden müssen wir eine gute Balance zwischen beidem finden.'."\n"))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:BeobachtHinweise'),
@@ -667,27 +571,8 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:ErweiSicht'),
@@ -700,7 +585,7 @@
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Care-Prozess:ErweiSicht',
-              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:BeobachtHinweise', type => 'back'),
@@ -730,27 +615,8 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:PhysAchtsa'),
@@ -763,7 +629,7 @@
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Care-Prozess:PhysAchtsa',
-              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:ErweiSicht', type => 'back'),
@@ -778,27 +644,8 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:AchtsamkeitsprozesGrundlLeben'),
@@ -811,7 +658,7 @@
           <?php $Sc_g_equation_auto_num = 0; ?>
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SpaLeb:Care-Prozess:AchtsamkeitsprozesGrundlLeben',
-              '\color{*Bearb}{In Arbeit …}', 'Sc_f_Paragraph',
+              '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:PhysAchtsa', type => 'back'),
@@ -832,27 +679,8 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:NeueAnthropologie'),
@@ -876,27 +704,8 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{In Arbeit …}'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess:KIundRobotik'),
@@ -948,12 +757,8 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n"))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
             
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SpaLeb:Koerperliche-und-seelische-Existenz'),
