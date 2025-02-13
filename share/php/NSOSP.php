@@ -3451,7 +3451,7 @@
     echo $offset.''."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.'    <p>'."\n";
-    echo $offset.'      Stand 14. Dezember 2024, 13:00 CET.'."\n";
+    echo $offset.'      Stand 13. Februar 2025, 18:00 CET.'."\n";
     echo $offset.'    </p>'."\n";
     echo $offset.'    <br>'."\n";
     echo $offset.'    <ul class="content-archive-list">'."\n";
