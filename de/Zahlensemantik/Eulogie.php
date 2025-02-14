@@ -14,7 +14,7 @@
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\\bold{XXX}',
-                    // '• XXX',
+                    // '• X',
                     ))),
                       
                   array( 'text', array( text => array(
