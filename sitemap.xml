@@ -395,6 +395,11 @@
 		<priority>1.0</priority>
 	</url>
       <url>
+        <loc>https://nsosp.org/share/images/FrQFT/Quark-Proton-v01.pdf</loc>
+        <lastmod>2025-02-13</lastmod>
+        <priority>1.0</priority>
+      </url>
+      <url>
         <loc>https://nsosp.org/share/images/FrQFT/Unpolarisiertes-Photon-Farbpolarisation-6polig-v01.pdf</loc>
         <lastmod>2025-02-13</lastmod>
         <priority>1.0</priority>
