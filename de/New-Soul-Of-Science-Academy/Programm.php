@@ -63,6 +63,7 @@
 
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Positive-Vision-Zukunft'),
+                      array(  jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Lebensnahes-Verstaendnis-Yin-Yang'),
                     )),
 
                   array( 'headline', array( jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:X', text =>
@@ -270,6 +271,39 @@
                       array(  jump_name => 'OM:SpaLeb:Home'),
                       array(  jump_name => 'OM:SpaLeb:Care-Prozess'),
                       array(  jump_name => 'OM:SpaLeb:Psychosomatik'),
+                    )),
+
+
+                  array( 'headline', array( jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Lebensnahes-Verstaendnis-Yin-Yang', text =>
+                      
+                'Ein lebensnahes Verständnis von Yin und Yang, Sonne und Mond, dem Prinzip des Geschlechts', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Ich möchte mit euch gerne auf eine analytische Gedanken- und Wissensreise gehen, mit deren Erkenntnis wir zurückkehren und dieses Wissen für uns fruchtbar machen.'."\n".
+                    'Auf unserer Reise betrachten wir die Mythologien und Religionen hinsichtlich bestimmter Aspekte aus einer Metaebene.'."\n".
+                    'Aus diesen Aspekten entwickeln wir ein wissenschaftliches Modell der Psychosomatik.'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Impulsvortrag',
+                        'Dauer: 1 bis 1,5 Stunden',
+                        'inklusive anschließendem Dialog mit den Zuhörern',
+                        'Vortragsmanuskript: \jump[https://nsosp.org/download/Yunite-Impulsvortrag-20230920-1700/Eine-positive-Vision-fuer-unsere-Zukunft-Impulsvortrag-Spannungsspiel-des-Lebens-20230920-3-mit-Links.pdf]{}{als PDF}',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Vertiefende Informationen auf den Themenseiten:'."\n".
+                    ''))),
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:HaTha'),
+                      array(  jump_name => 'OM:NPYo:Stein-der-Weisen'),
+                      array(  jump_name => 'OM:NPYo:ExistenzLeichtigkeit'),
+                      array(  jump_name => 'OM:NPYo:Spiritualitaet-Psychologie'),
+                      array(  jump_name => 'OM:NPYo:WasUnterschiedYogaSport'),
+                      array(  jump_name => 'OM:SpaLeb:Home'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess'),
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik'),
+                      array(  jump_name => 'OM:SpaLeb:Bewusstsein'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:OntologieDualitaetAllgemein'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:UnsereExistenzDurchPsychosomatik'),
                     )),
 
 
