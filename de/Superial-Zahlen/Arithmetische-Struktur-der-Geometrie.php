@@ -796,18 +796,26 @@
                     'Kurz und knapp – vielleicht auch etwas zu verkürzt - würde ich sagen, um simple geometrische Strukturen abzubilden brauchen wir'."\n".
                     'zunächst keine transzendenten Zahlen.'."\n".
                       'Die arithmetische Struktur der Geometrie, die wir oben herausgefunden haben und von der wir vermuten, dass deren'."\n".
-                    '\jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{Koeffizienten des damit verbundenen Zahlensystems tatsächlich reell algebraisch}'."\n".
+                    '\jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{Koeffizienten der Superial-Zahlen tatsächlich reell algebraisch}'."\n".
                     'sind, und nicht nur solche, die durch Radikale darstellbar sind,'."\n".
                     'legt nahe, dass die Koordinaten der Grundstruktur der Geometrie mit reell algebraischen Zahlen auskommt.'."\n".
                     'In diesem Fall sind dann keine Koordinaten notwendig, die unendlich kleine Summanden beinhalten, wie es demnach'."\n".
                     '\jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{offenbar bei transzendenten Zahlen der Fall} ist.'."\n",
-                      'Wenn wir also erst einmal mit reell algebraischen Koordinaten auskommen,'."\n".
-                    'dann sind nicht nur die Parameter, sondern auch die Koordinaten von Geraden, Parabeln, allgemein Polynomen, Vielecken und selbst Kreisen oder Ellipsen'."\n".
-                    'allesamt ebenfalls reell algebraische Zahlen, wenn der Mittelpunkt und der Radius ebenfalls reell algebraisch sind;'."\n".
+                      'Wenn wir also für einfache Relationen erst einmal mit reell algebraischen Koordinaten auskommen,'."\n".
+                    'dann sind nicht nur die Parameter, sondern auch die Koordinaten der Relationen von Geraden, Parabeln, allgemein Polynomen, Vielecken und selbst Kreisen oder Ellipsen'."\n".
+                    'allesamt ebenfalls reell algebraische Zahlen, wenn eine der beiden Koordinaten, der Mittelpunkt und der Radius ebenfalls reell algebraisch sind;'."\n".
                     'vielfach sogar solche, die durch Radikale – also Wurzeln - darstellbar sind.'."\n",
-                      'Das bedeutet in dieser einfachen Geometrie kommen wir mit reell algebraischen Eingabeparametern und reell algebraischen Ergebniskoordinaten aus.'."\n".
+                      'Für die Kreisrelation stellt es sich so dar:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall x, x_{M}, y_{M}, r \in \mathbb{A}_{\S} *)  *[  *( x - x_{M} *)^{2} + *( y - y_{M} *)^{2}  =  r^{2}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  y  \in  \mathbb{A}_{\S}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das bedeutet bei diesen einfachen Geometrie können wir mit reell algebraischen Eingabeparametern und reell algebraischen Ergebniskoordinaten auskommen.'."\n".
                     'Und auch elliptische Kurven kommen unter bestimmten Umständen mit reell algebraischen Koordinaten aus, und in jedem Fall mit algebraischen Koordinaten.'."\n",
-                      'Wir können die oben angeführten Kurven (Funktionen) auch rotieren  oder anderweitig mit Matrizen aus reell algebraischen Zahlen verschiebben, spiegeln oder verzerren – multiplizieren –,'."\n".
+                      'Wir können die oben angeführten Kurven (Funktionen) auch rotieren oder anderweitig mit Matrizen aus reell algebraischen Zahlen verschieben, spiegeln oder verzerren – multiplizieren –,'."\n".
                     'die Ergebniskoordinaten bleiben reell algebraische Zahlen.'."\n".
                     'Das auf dieser Seite eingangs gefundene Raster gibt uns die Möglichkeit ein Quadrat um 45° – \lm{ ½π } – zu drehen und die Koordinaten'."\n".
                     'seiner Eckpunkte liegen immer noch auf diesem Raster, weil sie durch Radikale – in diesem Fall zweite Wurzeln – darstellbar sind.'."\n",
@@ -823,6 +831,292 @@
                   array( 'text', array( text => array(
                     'Die transzendenten Zahlen kommen ins Spiel, wenn wir uns beispielsweise mit der Länge der Kurven beschäftigen oder'."\n".
                     'zu den Exponentialfunktionen übergehen wollen.'."\n",
+                      'Der Umfang eines Kreises \lm{ 2π } ist beispielsweise eine Länge oder Strecke entlang der Kreisrelation und eine transzendente Zahl.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:OntologieDerGeometrie:X', text =>
+                      
+                'Können wir einen Kreis entlang des Kreisumfangs so parametrisieren, dass wir nur rein reell algebraische Koordinaten erhalten?', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Nutzen wir die \lm{ \e }-Funktion zur Parametrisierung einen Kreises entlang seines Kreisumfanges mit reellen Zahl als Parameter,'."\n".
+                    'ist es völlig klar, dass diese auch transzendente Koordinaten liefert.'."\n".
+                    'Und zwar, weil die reellen Zahlen auch transzendente Zahlen enthalten:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall x \in \mathbb{R} *)  *[  \mathrm{Re}*( \e^{x \i} *) \cap \mathbb{T}  \ne  \varnothing  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wenn \lm{ \mathbb{T} } die Menge der transzendenten Zahlen und \lm{ \mathrm{Re}*( c *) } der Realanteil der komplexen Zahl \lm{ c } ist.'."\n",
+                      'Es kommt sodann die Frage auf, ob wir den Kreis auch so parametrisieren können, dass nur reell algebraische Zahlen im Real- und im Imaginäranteil'."\n".
+                    'herauskommen:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\S} *)  *[  \mathrm{Re}*( \e^{a \i 2 π} *) \cap \mathbb{T}  ?=  \varnothing  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Und dies so, wie im vorstehenden Beispiel dadurch, dass wir zwar wegen des Faktors \lm{ 2 π } außer die Null nur transzendente Zahlen im Exponenten haben,'."\n".
+                    'diese aber über den Faktor \lm{ a } so granuliert sind, dass alle Ergebnisse auf dem Raster von \lm{ \s^{-1} } in der Menge der komplexen Zahlen \lm{ \mathbb{C} } liegen.'."\n".
+                    'Dabei möchte ich im Folgenden \lm{ \mathbb{C}_{\S} } als die Menge der komplexen Zahlen auf diesem Raster bezeichnen.'."\n",
+                      'Nach den Erkenntnissen, die wir im Rahmen der Superial-Zahlen und ihrer arithmetischen Struktur der Geometrie haben, wissen wir,'."\n".
+                    'dass es \lm{ \s } algebraische Koeffizienten der Superial-Zahlen insgesamt gibt.'."\n".
+                    'Für den oberen Parameter \lm{ a } erhalten wir dann eine vollständige Kreisumrundung, wenn er von Null bis Eins durchläuft.'."\n",
+                      'Nach unseren Erkenntnissen kommt die Nutzung des Faktors \lm{ a } der Teilung der Strecke Eins durch ganzzahligen Exponenten von Primzahlen im Eingangsabschnitt dieser Seite gleich,'."\n".
+                    'nur das hier der Kreisumfang beziehungsweise der Winkel entsprechend geteilt wird:'."\n".
+                      'Nehmen wir einfachheitshalber den Einheitskreis, dann ist in seine Punktmenge \lm{ \mathbb{K}_{1} } ohne Teilung die einzige Koordinate der Einheitsvektor auf der realen oder x-Achse:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{K}_{1}  =  *\{ \begin{bmatrix} 1 \cr 0 \end{bmatrix} *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{K}_{2}  =  *\{ \begin{bmatrix} 1 \cr 0 \end{bmatrix}, \begin{bmatrix} -1 \cr 0 \end{bmatrix} *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{K}_{2^{2}}  =  *\{ \begin{bmatrix} 1 \cr 0 \end{bmatrix}, \begin{bmatrix} 0 \cr 1 \end{bmatrix}, \begin{bmatrix} -1 \cr 0 \end{bmatrix}, \begin{bmatrix} 0 \cr -1 \end{bmatrix}  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{K}_{2^{3}}  =  *\{ \begin{bmatrix} 1 \cr 0 \end{bmatrix}, \begin{bmatrix} \sqrt{ \frac{1}{2} } \cr \sqrt{ \frac{1}{2} } \end{bmatrix}, \begin{bmatrix} 0 \cr 1 \end{bmatrix}, \begin{bmatrix} - \sqrt{ \frac{1}{2} } \cr \sqrt{ \frac{1}{2} } \end{bmatrix}, \\\ \qquad\qquad\;\; \begin{bmatrix} -1 \cr 0 \end{bmatrix}, \begin{bmatrix} \sqrt{ - \frac{1}{2} } \cr \sqrt{ - \frac{1}{2} } \end{bmatrix}, \begin{bmatrix} 0 \cr -1 \end{bmatrix}, \begin{bmatrix} \sqrt{ \frac{1}{2} } \cr - \sqrt{ \frac{1}{2} } \end{bmatrix}  *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Tabelle der Koordinatendreiecke für das 16-Eck} \\\\'."\n".
+                    'Jeder Punkt \lm{ P_{k} }​ liegt auf dem Einheitskreis bei:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall k \in [ 0, 16 [_\mathbb{N} *)  *[  \theta_{k}  =  \frac{ k \cdot 2 π }{ 16 }  *]  }'),
+                      array( display => 'on',  latex => '{  P_{k}  =  \begin{bmatrix} \cos\,\theta_{k}​ \cr \sin \, \theta_{k} \end{bmatrix}  =  *( \cos \, \theta_{k}​ , \, \sin \, \theta_{k} *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Alle Koordinaten lassen sich durch Radikale, also Wurzelausdrücke, darstellen, wie ich vermutet habe:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      /* array( display => 'on',  latex => '\begin{array}{|c|c|c|c|c|}'."\n".
+                                                        '\hline'."\n".
+                                                        'k & P_k  (x, y) & P_{k+1} (x, y) & \Delta x & \Delta y \\\ '."\n".
+                                                        '\hline'."\n".
+                                                        '0 & (1,0) & \left(\frac{\sqrt{2+\sqrt{2}}}{2}, \frac{\sqrt{2-\sqrt{2}}}{2} \right) & \frac{\sqrt{2+\sqrt{2}}}{2} - 1 & \frac{\sqrt{2-\sqrt{2}}}{2} \\\ '."\n".
+                                                        '1 & \left(\frac{\sqrt{2+\sqrt{2}}}{2}, \frac{\sqrt{2-\sqrt{2}}}{2} \right) & \left(\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right) & \frac{\sqrt{2}}{2} - \frac{\sqrt{2+\sqrt{2}}}{2} & \frac{\sqrt{2}}{2} - \frac{\sqrt{2-\sqrt{2}}}{2} \\\ '."\n".
+                                                        '2 & \left(\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right) & \left(\frac{\sqrt{2-\sqrt{2}}}{2}, \frac{\sqrt{2+\sqrt{2}}}{2} \right) & \frac{\sqrt{2-\sqrt{2}}}{2} - \frac{\sqrt{2}}{2} & \frac{\sqrt{2+\sqrt{2}}}{2} - \frac{\sqrt{2}}{2} \\\ '."\n".
+                                                        '3 & \left(\frac{\sqrt{2-\sqrt{2}}}{2}, \frac{\sqrt{2+\sqrt{2}}}{2} \right) & (0,1) & -\frac{\sqrt{2-\sqrt{2}}}{2} & 1 - \frac{\sqrt{2+\sqrt{2}}}{2} \\\ '."\n".
+                                                        '4 & (0,1) & \left(-\frac{\sqrt{2-\sqrt{2}}}{2}, \frac{\sqrt{2+\sqrt{2}}}{2} \right) & -\frac{\sqrt{2-\sqrt{2}}}{2} & \frac{\sqrt{2+\sqrt{2}}}{2} - 1 \\\ '."\n".
+                                                        '5 & \left(-\frac{\sqrt{2-\sqrt{2}}}{2}, \frac{\sqrt{2+\sqrt{2}}}{2} \right) & \left(-\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right) & -\frac{\sqrt{2}}{2} + \frac{\sqrt{2-\sqrt{2}}}{2} & \frac{\sqrt{2}}{2} - \frac{\sqrt{2+\sqrt{2}}}{2} \\\ '."\n".
+                                                        '6 & \left(-\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right) & \left(-\frac{\sqrt{2+\sqrt{2}}}{2}, \frac{\sqrt{2-\sqrt{2}}}{2} \right) & -\frac{\sqrt{2+\sqrt{2}}}{2} + \frac{\sqrt{2}}{2} & \frac{\sqrt{2-\sqrt{2}}}{2} - \frac{\sqrt{2}}{2} \\\ '."\n".
+                                                        '7 & \left(-\frac{\sqrt{2+\sqrt{2}}}{2}, \frac{\sqrt{2-\sqrt{2}}}{2} \right) & (-1,0) & -1 + \frac{\sqrt{2+\sqrt{2}}}{2} & -\frac{\sqrt{2-\sqrt{2}}}{2} \\\ '."\n".
+                                                        '8 & (-1,0) & \left(-\frac{\sqrt{2+\sqrt{2}}}{2}, -\frac{\sqrt{2-\sqrt{2}}}{2} \right) & -\frac{\sqrt{2+\sqrt{2}}}{2} + 1 & -\frac{\sqrt{2-\sqrt{2}}}{2} \\\ '."\n".
+                                                        '9 & \left(-\frac{\sqrt{2+\sqrt{2}}}{2}, -\frac{\sqrt{2-\sqrt{2}}}{2} \right) & \left(-\frac{\sqrt{2}}{2}, -\frac{\sqrt{2}}{2} \right) & -\frac{\sqrt{2}}{2} + \frac{\sqrt{2+\sqrt{2}}}{2} & -\frac{\sqrt{2}}{2} + \frac{\sqrt{2-\sqrt{2}}}{2} \\\ '."\n".
+                                                        '10 & \left(-\frac{\sqrt{2}}{2}, -\frac{\sqrt{2}}{2} \right) & \left(-\frac{\sqrt{2-\sqrt{2}}}{2}, -\frac{\sqrt{2+\sqrt{2}}}{2} \right) & -\frac{\sqrt{2-\sqrt{2}}}{2} + \frac{\sqrt{2}}{2} & -\frac{\sqrt{2+\sqrt{2}}}{2} + \frac{\sqrt{2}}{2} \\\ '."\n".
+                                                        '11 & \left(-\frac{\sqrt{2-\sqrt{2}}}{2}, -\frac{\sqrt{2+\sqrt{2}}}{2} \right) & (0,-1) & \frac{\sqrt{2-\sqrt{2}}}{2} & -1 + \frac{\sqrt{2+\sqrt{2}}}{2} \\\ '."\n".
+                                                        '12 & (0,-1) & \left(\frac{\sqrt{2-\sqrt{2}}}{2}, -\frac{\sqrt{2+\sqrt{2}}}{2} \right) & \frac{\sqrt{2-\sqrt{2}}}{2} & -\frac{\sqrt{2+\sqrt{2}}}{2} + 1 \\\ '."\n".
+                                                        '13 & \left(\frac{\sqrt{2-\sqrt{2}}}{2}, -\frac{\sqrt{2+\sqrt{2}}}{2} \right) & \left(\frac{\sqrt{2}}{2}, -\frac{\sqrt{2}}{2} \right) & \frac{\sqrt{2}}{2} - \frac{\sqrt{2-\sqrt{2}}}{2} & -\frac{\sqrt{2}}{2} + \frac{\sqrt{2+\sqrt{2}}}{2} \\\ '."\n".
+                                                        '14 & \left(\frac{\sqrt{2}}{2}, -\frac{\sqrt{2}}{2} \right) & \left(\frac{\sqrt{2+\sqrt{2}}}{2}, -\frac{\sqrt{2-\sqrt{2}}}{2} \right) & \frac{\sqrt{2+\sqrt{2}}}{2} - \frac{\sqrt{2}}{2} & -\frac{\sqrt{2-\sqrt{2}}}{2} + \frac{\sqrt{2}}{2} \\\ '."\n".
+                                                        '15 & \left(\frac{\sqrt{2+\sqrt{2}}}{2}, -\frac{\sqrt{2-\sqrt{2}}}{2} \right) & (1,0) & 1 - \frac{\sqrt{2+\sqrt{2}}}{2} & \frac{\sqrt{2-\sqrt{2}}}{2} \\\ '."\n".
+                                                        '\hline'."\n".
+                                                        '\end{array}',
+                                          label_text => '', label_incr => false), */
+                      array( display => 'on',  latex => '\begin{array}{|c|c|c|}'."\n".
+                                                        '\hline'."\n".
+                                                        'k & \theta_{k} & P_{k} *( x_{k} , y_{k} *) \\\ '."\n".
+                                                        '\hline'."\n".
+                                                        '0 & 0 & (1,0) \\\ '."\n".
+                                                        '1 & \frac{\pi}{8} & \left(\frac{\sqrt{2+\sqrt{2}}}{2}, \frac{\sqrt{2-\sqrt{2}}}{2} \right) \\\ '."\n".
+                                                        '2 & \frac{\pi}{4} & \left(\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right) \\\ '."\n".
+                                                        '3 & \frac{3\pi}{8} & \left(\frac{\sqrt{2-\sqrt{2}}}{2}, \frac{\sqrt{2+\sqrt{2}}}{2} \right) \\\ '."\n".
+                                                        '4 & \frac{\pi}{2} & (0,1) \\\ '."\n".
+                                                        '5 & \frac{5\pi}{8} & \left(-\frac{\sqrt{2-\sqrt{2}}}{2}, \frac{\sqrt{2+\sqrt{2}}}{2} \right) \\\ '."\n".
+                                                        '6 & \frac{3\pi}{4} & \left(-\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right) \\\ '."\n".
+                                                        '7 & \frac{7\pi}{8} & \left(-\frac{\sqrt{2+\sqrt{2}}}{2}, \frac{\sqrt{2-\sqrt{2}}}{2} \right) \\\ '."\n".
+                                                        '8 & \pi & (-1,0) \\\ '."\n".
+                                                        '9 & \frac{9\pi}{8} & \left(-\frac{\sqrt{2+\sqrt{2}}}{2}, -\frac{\sqrt{2-\sqrt{2}}}{2} \right) \\\ '."\n".
+                                                        '10 & \frac{5\pi}{4} & \left(-\frac{\sqrt{2}}{2}, -\frac{\sqrt{2}}{2} \right) \\\ '."\n".
+                                                        '11 & \frac{11\pi}{8} & \left(-\frac{\sqrt{2-\sqrt{2}}}{2}, -\frac{\sqrt{2+\sqrt{2}}}{2} \right) \\\ '."\n".
+                                                        '12 & \frac{3\pi}{2} & (0,-1) \\\ '."\n".
+                                                        '13 & \frac{13\pi}{8} & \left(\frac{\sqrt{2-\sqrt{2}}}{2}, -\frac{\sqrt{2+\sqrt{2}}}{2} \right) \\\ '."\n".
+                                                        '14 & \frac{7\pi}{4} & \left(\frac{\sqrt{2}}{2}, -\frac{\sqrt{2}}{2} \right) \\\ '."\n".
+                                                        '15 & \frac{15\pi}{8} & \left(\frac{\sqrt{2+\sqrt{2}}}{2}, -\frac{\sqrt{2-\sqrt{2}}}{2} \right) \\\ '."\n".
+                                                        '\hline'."\n".
+                                                        '\end{array}',
+                                          label_text => '', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
+                      
+                'Beweis: Die Koordinaten der Ecken eines regelmäßigen \lm{ m }-Ecks sind algebraische Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                  '\condb{Schritt 1: Darstellung der Ecken in komplexer Form} \\\\'."\n".
+                    'Die Eckpunkte eines regelmäßigen \lm{ m }-Ecks auf dem Einheitskreis sind durch die komplexen Zahlen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall m \in \mathbb{N} *) *( \forall k \in [ 0, m [_\mathbb{N} *)  *[  z_{k}  =  e^{\frac{ k }{ m } \cdot \i \cdot 2 π}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  z_{k}  =  \cos \frac{ k \cdot 2 π }{ m } + \i \cdot \sin \frac{ k \cdot 2 π }{ m }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'gegeben.'."\n".
+                    'Diese Werte sind die \lm{ m }-ten Einheitswurzeln, also die Lösungen der Gleichung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  z^{ m }  =  1  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die reellen Koordinaten der Ecken sind die Kosinus- und Sinuswerte:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  x_{k} = \cos \frac{ k \cdot 2 π }{ m }  }'),
+                      array( display => 'on',  latex => '{  y_{k} = \sin \frac{ k \cdot 2 π }{ m }  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Unsere Aufgabe ist es zu zeigen, dass \lm{ x_{k} } und \lm{ y_{k} } reell algebraische Zahlen sind, also Lösungen eines Polynoms mit ganzzahligen Koeffizienten.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Schritt 2: Minimalpolynom der Einheitswurzeln} \\\\'."\n".
+                    'Die Gleichung'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  z^{m} - 1  =  0  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'hat die Lösungen \lm{ z_k = e^{2\pi i k / m} }, also genau die Ecken des \lm{ m }-Ecks. Da dieses Polynom \italic{ganzzahlige Koeffizienten} hat,'."\n".
+                    'folgt sofort, dass jede Einheitswurzel \lm{ z_k } eine \italic{algebraische Zahl} ist.'."\n".
+                    'Tatsächlich sind die Einheitswurzeln die Nullstellen des sogenannten \lm{ m }-ten Kreisteilungspolynoms\footnote{(Primärliteratur einfügen!) \\\\ Internet: \\\\ Vgl. \cite{wiki:Kreisteilungspolynom:2024}.}:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Phi_{m}(z)  =  \prod_{\substack{1 \leq k \leq m \\\ \gcd(k, m) = 1}} *( z - e^{2\pi i k / m} *)  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wobei \lm{ \gcd(k, m) } (auch ggT genannt) die größte natürliche Zahl ist, durch die die beiden Zahlen \lm{ k } und \lm{ m } teilbar sind.'."\n",
+                      'Dieses Polynom hat \italic{ganzzahlige Koeffizienten}, was zeigt, dass jede Einheitswurzel \lm{ e^{2\pi i k / m} } eine algebraische Zahl ist.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Schritt 3: Kosinus und Sinus sind ebenfalls algebraisch} \\\\'."\n".
+                    'Da ja, wie oben beschrieben, gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  XXX z_{k}  =  e^{2\pi i k / m}  =  \cos \frac{2\pi k}{m} + i \sin \frac{2\pi k}{m}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und wir bereits gezeigt haben, dass \lm{ z_k } algebraisch ist, genügt es zu zeigen, dass auch Kosinus und Sinus algebraisch sind.'."\n".
+                    'Das folgt direkt aus den Identitäten'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \cos \theta = \frac{e^{i\theta} + e^{-i\theta}}{2}  }'),
+                      array( display => 'on',  latex => '{  \sin \theta = \frac{e^{i\theta} - e^{-i\theta}}{2i}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da sowohl \lm{ e^{i\theta} } als auch \lm{ e^{-i\theta} } algebraische Zahlen sind – weil sie Einheitswurzeln sind –,'."\n".
+                    'folgt aus diesen Linearkombinationen, dass auch \lm{ \cos \theta } und \lm{ \sin \theta } algebraische Zahlen sind.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Schritt 4: Fazit} \\\\'."\n".
+                    'Da sich \lm{ \cos \frac{2\pi k}{m} } und \lm{ \sin \frac{2\pi k}{m} } als Linearkombinationen von Einheitswurzeln ausdrücken lassen'."\n".
+                    'und Einheitswurzeln algebraische Zahlen sind, folgt:'."\n",
+                      'Die Koordinaten aller Ecken eines beliebigen regelmäßigen \lm{ m }-Ecks sind algebraische Zahlen.'."\n",
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
+                      
+                'Analyse des Beweises und Projektion der Bedeutung in der betrachteten Geometrie', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Dies erscheint auf den ersten Blick recht erstaunlich, weil wir es ja bei der obigen exponentiellen \lm{ \e }-Funktion, zur Beschreibung des Kreises,'."\n".
+                    'sowohl in der Basis als auch im Exponenten, bis auf beim Ausgangseckpunkt \lm{ k = 0 }, nur mit rein transzendenten Zahlen zu tun haben.'."\n".
+                    'Diese neutralisieren sich hier aber vollständig in Bezug auf ihre Transzendenz.'."\n",
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Was passiert, wenn wir mit der Anzahl der Ecken ins Unendliche übergehen?} \\\\'."\n".
+                  '\cond{Abschätzung der Anzahl an Ecken, die algebraische Koordinaten haben können} \\\\'."\n".
+                    'In Bezug auf die Kreisrelation des Einheitskreises, die wir weiter oben betrachtet haben, kann sowohl die \lm{ x }-Koordinate als auch die \lm{ y }-Koordinate'."\n".
+                    'alle algebraischen Zahlen zwischen minus Eins und plus Eins annehmen, nur nicht in freier Kombination.'."\n".
+                    'Wenn \lm{ x } von minus Eins bis plus Eins durchläuft, dann treten, außer an den Scheitelpunkten, immer zwei verschiedene \lm{ y }-Koordinaten auf,'."\n".
+                    'und zwar in der Kombination \lm{ \pm y }.'."\n",
+                      'Wir haben es also mit der Anzahl \lm{ 2 \cdot \# [ -1, 1 ]_\mathbb{A} - 2 } zu tun.'."\n".
+                    'Dies sind viel mehr Koordinaten, als wir sie durch ein regelmäßiges \lm{ m }-Eck bekommen können, denn dies wären durch vollständige Induktion nur \lm{ ω } viele Koordinaten.'."\n".
+                    'Die unterschiedlichen \lm{ m }-Ecke enthalten eben unterschiedliche Koordinaten, je nach der Primfaktorzerlegung von \lm{ m },'."\n".
+                    'sodass wir durch alle \lm{ ω } \lm{ m }-Ecke kombiniert eine Anzahl von \lm{ \s } Koordinaten erhalten.'."\n".
+                    'Dies ist nicht anders, als bei der Teilung der Strecke von Null bis Eins, wie oben entwickelt'."\n".
+                    'und hätte nach meiner Ansicht zur Folge, dass die Koordinaten überwiegend superial kleine Summanden bekämen.'."\n",
+                      'Der obige algebraische Parameter \lm{ a } der Eingangs formulierten \lm{ \e }-Funktion für den Einheitskreis enthält allerdings'."\n".
+                    'nicht \lm{ \s } viele Möglichkeiten bereit.'."\n".
+                    'Er läuft nur von \lm{ \lbrack 0, 1 \lbrack_\mathbb{A} }, wenn die Koordinaten keine Dopplung haben sollen.'."\n",
+                      'Nehmen wir an es gilt unsere Vermutung \lm{ \mathbb{A}_{\S} ?= \mathbb{A} }:'."\n".
+                    'Dann wäre \lm{ \# \lbrack 0, 1 \lbrack_\mathbb{A} \; ?= \frac{ \s }{ 2 ω } }.'."\n".
+                    'Dies führt nach meinem Verständnis dazu, dass die superial kleinen Summanden vollständig verschwinden und alle Koordinaten'."\n".
+                    'rein reell algebraische werden.'."\n",
+                      'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    '\lm{ 2 \cdot \# [ -1, 1 ]_\mathbb{A} - 2 = 2 \cdot *( 2 \cdot \frac{ \s }{ 2 ω } *) - 2 = \frac{ 2 \s }{ ω } - 2 }'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Die Betrachtung der Verhältnisse im Kreis verlagert die Fragestellung der sinnvollen Koeffizienten geometrisch ins Endliche} \\\\'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{N}_{\infty}  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-infinit-Zahlen}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  *( e^{a^{+} \cdot \i \cdot 2 π} *)^{\s}  ?=  1  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Gibt es überrationale Zahlen, die sich nicht wie die ganzen Wurzeln aus natürlichen Zahlen verhalten?} \\\\'."\n".
+                    'Wir wollen schauen, welche reell algebraischen Zahlen der Menge \lm{ \mathbb{A}_{\R} } es noch geben kann, die durch ein Produkt mit einem unendlichen Teilprodukt des Primzahl-Flächenprodukts'."\n".
+                    'von \lm{ \s } noch aktual unendliche natürliche Zahlen ergeben können.'."\n".
+                    'Hier ein mögliches Beispiel, dass sich an überrationale Zahlen, genauer an überrationalen Brüchen, orientiert.'."\n".
+                    'Denn es gibt ja auch noch die Möglichkeit, dass zum Beispiel nicht alle endlichen aktual unendlichen Potenzen der Zwei schon ausreichen, wie bei irrationalen Wurzeln'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \sqrt{2}  =  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} }  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-2-hoch-omega-mal-Wurzel-Zwei-durch-2-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'sondern nur eine der unendlichen Potenzen der Zwei dies leistet, alle anderen aber nicht:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ArGeo', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *) *[  a \cdot 2^{ω} \in \mathbb{N}_{\infty}  \land  a \cdot 2^{ω - 1} \notin \mathbb{N}_{\infty}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   /* array( 'equations',

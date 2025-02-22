@@ -46,6 +46,7 @@
               'wiki:KoerperAlgebra:2023',
               'wiki:KomplexeZahl:2024',
               'wiki:Kontinuumshypothese:2023',
+              'wiki:Kreisteilungspolynom:2024',
               'wiki:LexikographischeOrdnung:2023',
               'wiki:LoesenVonGleichungen:2024',
               'wiki:MaechtigkeitMathematik:2023',
