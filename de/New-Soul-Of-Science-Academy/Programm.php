@@ -287,7 +287,7 @@
                         'Impulsvortrag',
                         'Dauer: 1 bis 1,5 Stunden',
                         'inklusive anschließendem Dialog mit den Zuhörern',
-                        'Vortragsmanuskript: \jump[https://nsosp.org/download/Yunite-Impulsvortrag-20230920-1700/Eine-positive-Vision-fuer-unsere-Zukunft-Impulsvortrag-Spannungsspiel-des-Lebens-20230920-3-mit-Links.pdf]{}{als PDF}',
+                        'Vortragsmanuskript: \jump[https://nsosp.org/download/NSOSA/Spannungsspiel-des-Lebens/Ein-lebensnahes-Verstaendnis-von-Yin-und-Yang-Sonne-und-Mond-dem-Prinzip-des-Geschlechts-202502#1.9-kurz.pdf]{}{als PDF}',
                     ))),
                   array( 'text', array( text => array(
                     'Vertiefende Informationen auf den Themenseiten:'."\n".
