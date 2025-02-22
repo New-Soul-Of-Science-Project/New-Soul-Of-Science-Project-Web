@@ -180,23 +180,23 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Bezüglich der Ganzzahligkeit im Produkt mit der superialen Basis \lm{ \s }} \\\\'."\n".
-                    'Alle reellen Zahlen, die nicht transzendent sind, sind Koeffizienten der algebraischen Zahlen.'."\n".
-                    'Demnach stellt sich dann die Frage, ob wirklich alle Koeffizienten der algebraischen Zahlen im Produkt mit der superialen Basis \lm{ \s }'."\n".
-                    'tatsächlich ganze Zahlen sind.'."\n",
+                    'Alle reellen Zahlen, die nicht transzendent sind, sind reell algebraische Zahlen.'."\n".
+                    'Dann stellt sich die Frage, ob wirklich alle reell algebraischen Zahlen im Produkt mit der superialen Basis \lm{ \s }'."\n".
+                    'ganze Zahlen sind.'."\n",
                       'Bezüglich der rationalen Zahlen\footnote{\const{SupNum_g_footnote_text_RationaleZahl}}, die ja ein Teil'."\n".
-                    'der Koeffizienten der algebraischen Zahlen sind, ist es ja offensichtlich,'."\n".
+                    'der reell algebraischen Zahlen sind, ist es offensichtlich,'."\n".
                     'dass sie \jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{im Produkt mit \lm{ \s } ganze Zahlen sind}.'."\n".
                     'Wie diese \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen \lm{ \mathbb{S}_{\N} }} aussehen,'."\n".
                     'zeigen wir in der \jump{OM:SupNum:Formale-Entwicklung}{formalen Entwicklung}.'."\n".
                     'Ein Produkt unserer superialen Basis \lm{ \s } mit jeder endlichen positiven rationalen Zahl'."\n".
-                    '\lm{ q^{+} } eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{unendliche natürliche Zahl aus \lm{ \mathbb{N}_{\infty} }} ist;'."\n".
-                    'und im Besonderen offensichtlich eine \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche Superial-Zahl} aus \lm{ \mathbb{S}_{\N} },'."\n".
+                    '\lm{ q^{+} } ist also eine \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{aktual unendliche natürliche Zahl aus \lm{ \mathbb{N}_{\infty} }};'."\n".
+                    'und dann auch eine \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürliche Superial-Zahl} aus \lm{ \mathbb{S}_{\N} },'."\n".
                     'wie oben bereits gesagt:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall q^{+} \in \mathbb{Q}^{+} *)  *[  q^{+} \cdot \s  \in  \mathbb{N}_{\infty}  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall q^{+} \in \mathbb{Q}^{+} *)  *[  q^{+} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall q^{+} \in \mathbb{Q}^{+} *)  *[  q^{+} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Bleibt die Frage …'."\n".
@@ -206,22 +206,23 @@
                 'Sind die sinnvollen Koeffizienten alle reell algebraischen Zahlen?', subline =>
                   '\lm{ \mathbb{A}_{\S} ?= \mathbb{A}_{\R} } ist eine Frage der Nullstellen von Polynomen beliebigen Grades')),
                   array( 'text', array( text => array(
-                    'Die algebraischen Zahlen sind ja dadurch definiert, das sie die Menge aller Lösungen der Nullstellen von Polynomen sind.'."\n".
+                    'Die algebraischen Zahlen sind ja dadurch definiert, das sie die Menge aller Lösungen der Nullstellen von Polynomen darstellen.'."\n".
                     'Wir betrachten hier aber keine komplexen Lösungen mit Imaginäranteilen, sondern nur'."\n".
                     'die realwertigen Koeffizienten der Komponenten ihrer komplexen Lösungen, die reell algebraische Zahlen genannt werden.'."\n",
-                      'Ich denke, diese reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} }'."\n".
+                      'Ich vermute, diese reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} }'."\n".
                     'sind alle als Koeffizienten der superialen Basis \lm{ \s } aktual unendlich große natürliche Zahlen:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{N}_{\infty}  *]  }'),
-                      array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }',
+                      array( display => 'on',  latex => '{  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{N}_{\infty}  *]  }',
+                                          label_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-infinit-Zahlen', label_text => '\name{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-infinit-Zahlen}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  a^{+} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }',
                                           label_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen', label_text => '\name{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  \mathbb{A}_{\S}  ?=  \mathbb{A}_{\R}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Das ist meine \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{Vermutung, dass die sinnvollen superiale Koeffizienten alle reell algebraische Zahlen} sind.'."\n",
-                      'Algebraische Zahlen sind alle möglichen Nullstellen von Polynomen beliebigen Grades.'."\n".
+                    'Das wird in meiner \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{Vermutung, dass die sinnvollen superiale Koeffizienten alle reell algebraische Zahlen} untersucht.'."\n",
+                      'Wie gesagt, algebraische Zahlen sind alle möglichen Nullstellen von Polynomen beliebigen Grades.'."\n".
                     'Nullstellen von Polynomen ersten bis vierten Grades sind alle komplexe Zahlen\footnote{\const{SupNum_g_footnote_text_KomplexeZahl}}'."\n".
                     'deren Koeffizienten rationale – also gebrochene –'."\n".
                     'Potenzen von natürlichen Zahlen sein können, viele davon irrationale \lm{ x }-te Wurzeln aus \lm{ n },'."\n".
