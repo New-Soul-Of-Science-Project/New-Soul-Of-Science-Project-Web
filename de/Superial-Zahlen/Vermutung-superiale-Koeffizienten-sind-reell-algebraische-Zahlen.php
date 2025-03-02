@@ -19,10 +19,153 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n",
-                      '\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}'."\n".
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis unserer Überrationalitätsvermutung}, das Zeigen,'."\n".
+                    'dass auch alle damit sich ergebenden durch Radikale\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}} darstellbaren reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    '\jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen} sind,'."\n".
+                    'und der Beginn des systematischen Herausarbeitens der \jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{Struktur der transzendenten Zahlen},'."\n".
+                    'aus Perspektive des Superial-Zahlensystems,'."\n".
+                    'führt beinahe zwangsläufig zu dem Eindruck, dass alle reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen sein sollten.'."\n",
+                      'Ein möglicher Ansatz, dies zu Beweisen, stützt sich darauf, die klassische \lm{ p }‑adische Sichtweise\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}.} auf reell algebraische Zahlen zu nutzen und diese global zu vereinen.'."\n".
+                    'Konkret könnte man folgendermaßen vorgehen:'."\n".
                     ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\bold{p‑adische Bewertungen nutzen:} \\\\ Für jede Primzahl \lm{ p } hat jede reell algebraische Zahl \lm{ a } eine wohldefinierte \lm{ p }‑adische Bewertung\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}, Konstruktion, Analytische Konstruktion, Exponentenbewertung.} \lm{ \mathrm{v}_{\!p}(a) } (der – bei Nicht-Null – eine endliche ganze Zahl ist). Diese Bewertungen geben an, wie oft \lm{ p } in \lm{ a } vorkommt, also ihre Potenz.',
+                        '\bold{Globale transfinite Darstellung:} \\\\ Man versucht, \lm{ a } als ein Produkt über alle Primzahlen zu schreiben, in einem klassischen Sinn. Daraus formulieren wir einen überrationalen Bruch mit transfinitem oder aktual unendlichem ganzzahligen Zähler und Nenner, wie im Beweis der Überrationalitätsvermutung.',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wäre dieser Ansatz erfolgreich, so ließe sich – basierend auf den \lm{ p }‑adischen Eigenschaften – zeigen, dass nicht nur die durch Radikale darstellbaren,'."\n".
+                    'sondern alle reell algebraischen Zahlen in unser Superial-Zahlensystem eingebettet werden können.'."\n".
+                    'Das wäre ein eleganter Beweis dafür, dass der Koeffizientenbereich \lm{ \mathbb{A}_{\S} } wesentlich umfassender ist als zunächst vermutet.'."\n",
+                      'Diese Idee verbindet klassische algebraische Methoden (\lm{ p }‑adische Bewertungen, Primfaktorzerlegung\footnote{\const{SupNum_g_footnote_text_Primfaktorzerlegung}}'."\n".
+                    'mit der neuen transfiniten oder aktual unendlichen Struktur der Superial-Zahlen und erscheint als vielversprechender Ansatz, um die Frage systematisch anzugehen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:Vortext:X', text =>
+                      
+                'Beweis: Einbettung reell algebraischer Zahlen in das System der Superial-Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wir versuchen einen Beweisansatz – unter der Annahme, dass wir in unserem Superial-System eine transfinite Exponentenarithmetik definieren,'."\n".
+                    'in der ein endlicher Offset zu \lm{ ω } (also \lm{ ω + r } mit \lm{ r \in \mathbb{ℚ} } und \lm{ r \neq 0 }) als von \lm{ ω } verschieden erkannt wird.'."\n".
+                    'Dann gilt:'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      '\\\\'."\n".
+                      'Sei \lm{ a \neq 0 } eine reell algebraische Zahl, also \lm{ a \in \mathbb{A} }.'."\n".
+                      'Für jede Primzahl \lm{ p } existiert die \lm{ p }-adische Bewertung'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathrm{v}_{\!p}(a)  \in  \mathbb{Q}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'sodass klassisch'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a  =  \prod_{\substack{p \in \mathbb{P}}} p^{\mathrm{v}_{p}(a)}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'wobei für fast alle Primzahlen \lm{ p } gilt \lm{ \mathrm{v}_{\!p}(a) = 0 }.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Wir definieren in unserem erweiterten transfiniten System für jede Primzahl \lm{ p } den \italic{transfiniten Exponenten}'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathrm{V}_{\!p}(a)  :=  ω + \mathrm{v}_{\!p}(a)  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen gilt, dass für jedes \lm{ r \in \mathbb{Q} \setminus *\{ 0 *\} }'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  ω + r  \neq  ω  \;\; .  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Nun definieren wir den aufgeladenen Term'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathrm{P}(a)  :=  \prod_{\substack{p \in \mathbb{P}}} p^{\!\mathrm{V}_{\!p}(a)}  =  \prod_{\substack{p \in \mathbb{P}}} p^{ω + \mathrm{v}_{p}(a)}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'sowie das Basiselement, wie bereits aus Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega} bekannt,'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \s  :=  \prod_{\substack{p \in \mathbb{P}}} p^{ω}  \;\; .  }',
+                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Beachte, dass in \lm{ \s } für jede Primzahl \lm{ p } exakt der Exponent \lm{ ω } auftritt.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Dann folgt'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \frac{ \mathrm{P}(a) }{ \s }  =  \frac{ \prod_{\substack{p \in \mathbb{P}}} p^{ω + \mathrm{v}_{p}(a)} }{ \prod_{\substack{p \in \mathbb{P}}} p^{ω} }  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \mathrm{P}(a) }{ \s }  =  \prod_{\substack{p \in \mathbb{P}}} p^{*( ω + \mathrm{v}_{p}(a) - ω *)}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \mathrm{P}(a) }{ \s }  =  \prod_{\substack{p \in \mathbb{P}}} p^{\mathrm{v}_{p}(a)}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \mathrm{P}(a) }{ \s }  =  a  \;\; .  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Das bedeutet, wir können schreiben'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  a \cdot \s  =  \mathrm{P}(a)  \;\; .  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Da \lm{ \mathrm{P}(a) } in unserem System für jede relevante Primzahl \lm{ p } den Exponenten \lm{ ω + \mathrm{v}_{\!p}(a) } trägt,'."\n".
+                      'ist \lm{ \mathrm{P}(a) } in jeder Komponente „aktual unendlich teilbar“ und gehört somit zu den ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} }.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Daraus folgt, dass'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a \cdot s  \in  \mathbb{S}_{\Z}  \;\; .  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'Mit anderen Worten:'."\n".
+                      'Jede reell algebraische Zahl \lm{ a } kann in das Superial-Zahlensystem eingebettet werden, indem man sie mit \lm{ \s } multipliziert.'."\n".
+                      'Und wir sehen auch, dass \lm{ a } nicht die Größenordnung von \lm{ \s } verändert, weil \lm{ a } reell algebraisch und damit endlich ist.'."\n".
+                      'Damit sind alle \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{notwendigen Kriterien für sinnvolle Koeffizienten der Superial-Zahlen} erfüllt.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                    '\condb{Schlussfolgerung:} \\\\'."\n".
+                      'Unter der Annahme, dass in unserem erweiterten System \lm{ ω + r \neq ω } für \lm{ r \neq 0 } gilt,'."\n".
+                      'besitzt jede reell algebraische Zahl \lm{ a } die transfinite Darstellung'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\;  a = \frac{ \displaystyle \prod_{\substack{p \in \mathbb{P}}} p^{ω + \mathrm{v}_{p}(a)} }{ \displaystyle \prod_{\substack{p \in \mathbb{P}}} p^{ω} }  \;\;}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'woraus unmittelbar folgt, dass \lm{ a \cdot s \in \mathbb{S}_{\Z} } liegt.'."\n".
+                      'Somit sind alle reell algebraischen Zahlen als sinnvolle Koeffizienten der Superial-Zahlen eingebettet und wir finden,'."\n".
+                      'dass die Menge \lm{ \mathbb{A}_{\S} } der sinnvollen Koeffizienten der Superial-Zahlen gleich der Menge aller reell algebraischen Zahlen \lm{ \mathbb{A} } ist'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\S}  =  \mathbb{A}  \;\;}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', text => array(
+                      'was zu beweisen war.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Abermals wird deutlich, welche grundsätzliche Bedeutung die Superial-Zahlen für die Zahlentheorie haben;'."\n".
+                    'wie tief sie mit den Grenzen der Zahlenmengen verbunden sind.'."\n".
+                    ''))),
+
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:Vortext:X',
+                Title => 'Alter Ansatz mit elliptischen Integralen …',
+                TitleVis => 'Alter Ansatz mit elliptischen Integralen:', ParagraphList => array(
+
                   array( 'text', array( text => array(
                   '\condb{Wurzeln aus Polynomen} \\\\'."\n".
                   '\cond{Elliptische Integrale und ähnliche algebraische Werte} \\\\'."\n".
@@ -129,6 +272,8 @@
                       '\color{*Bearb}{(In Arbeit …)} Damit haben wir für alle irrationalen algebraischen Koeffizienten durch Beweis überprüft,'."\n".
                     'dass ihre Produkte mit der superialen Basis \lm{ \s } zu den natürlichen Superial-Zahlen gehören.'."\n".
                     ''))),
+
+                    ))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden'),

@@ -51,6 +51,7 @@
               'wiki:LoesenVonGleichungen:2024',
               'wiki:MaechtigkeitMathematik:2023',
               'wiki:Ordinalzahl:2021',
+              'wiki:PAdischeZahl:2024',
               'wiki:ParitaetMathematik:2021',
               'wiki:PeanoAxiome:2021',
               'wiki:Primfaktorzerlegung:2022',
