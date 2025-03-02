@@ -86,6 +86,13 @@
                                            
                 'Motivation', subline =>
                   '')),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    '\bold{Einpflegen}',
+                    '• … intuitive Grundlage … – der Limes ist vom Umgang her weniger intuitiv',
+                    '– Auch ins Vorwort einbringen.',
+                    ))),
+                      
                   array( 'text', array( text => array(
                     'In der Schule fand ich Ableitungen und Integrale immer sehr faszinierend.'."\n".
                     'Es war für mich erstaunlich, wie man über die Unendlichkeit ganz neue Erkenntnisse und Formeln gewinnen konnte.'."\n".
