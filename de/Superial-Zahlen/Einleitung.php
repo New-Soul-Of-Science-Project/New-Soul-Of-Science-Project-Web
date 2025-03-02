@@ -665,16 +665,16 @@
                     ))), */
                       
                   array( 'text', array( text => array(
-                  '\condb{Die Definition von \lm{ s }} \\\\'."\n".
-                    'Nach meinem Verständnis muss \lm{ s } eine Primfaktorzerlegung haben,'."\n".
+                  '\condb{Die Definition von \lm{ \s }} \\\\'."\n".
+                    'Nach meinem Verständnis muss \lm{ \s } eine Primfaktorzerlegung haben,'."\n".
                     'die eine unendlich große Potenz aller endlichen Primzahlen ist.'."\n".
-                    'Nur so ist gewährleistet, dass keine Potenz im Produkt einer rationalen Zahl mit \lm{ s }'."\n".
+                    'Nur so ist gewährleistet, dass keine Potenz im Produkt einer rationalen Zahl mit \lm{ \s }'."\n".
                     'negativ und dadurch das Produkt eine gebrochene Zahl wird.'."\n".
                     'Und nur dadurch ist gewährleistet, dass wir ein solches Produkt beliebig endlich oft machen können,'."\n".
                     'ohne, dass das Ergebnis endlich werden kann, sondern unendlich groß bleibt.'."\n",
-                      'In \lm{ s } muss also jede Primfaktorzerlegung einer endlichen ganzen Zahl'."\n".
+                      'In \lm{ \s } muss also jede Primfaktorzerlegung einer endlichen ganzen Zahl'."\n".
                     'beliebig endlich oft stecken.'."\n".
-                    'Eine Definition von \lm{ s }, die dies explizit umsetzt, finden wir auf der Seite'."\n".
+                    'Eine Definition von \lm{ \s }, die dies explizit umsetzt, finden wir auf der Seite'."\n".
                     '\italic{\jumpname{OM:SupNum:Formale-Entwicklung}}'."\n".
                     'im Abschnitt \italic{\jumpname{OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}}.'."\n",
                       'Folgendes Primzahlprodukt sollte das einfachste kleinste Produkt aus unendlich vielen Primfaktoren sein,'."\n".
@@ -682,7 +682,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Ein', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  *( \prod_{\forall p \in \mathbb{P}}  p *)  }',
+                      array( display => 'on',  latex => '{  \s  :=  \displaystyle \prod_{\forall n \in \mathbb{N}}  *( \prod_{\forall p \in \mathbb{P}}  p *)  }',
                                                label_name => 'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N', label_text => '\name{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-N}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
@@ -701,7 +701,7 @@
                                                label_text => '\jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null}', label_incr => false),
                       array( display => 'on',  latex => '{  ω   :=  \#\mathbb{N}  }',
                                                label_name => 'OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N', label_text => '\name{OM:SupNum:Einleitung:Vortext:Equ-omega-ist-Anzahl-in-N}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
+                      array( display => 'on',  latex => '{  \Rightarrow  \s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
                                                label_name => 'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega', label_text => '\name{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
