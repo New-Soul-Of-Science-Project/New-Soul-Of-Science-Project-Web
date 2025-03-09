@@ -3,10 +3,12 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 19.11.2024, 17:00h
+  // #: Stand: 09.03.2025, 19:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20250309:  +:  "$Sc_g_equation_replace_ary":  Add '  :\neq  ' -> '\;\;\;:\neq\;\;\;' and ':\neq' -> '\raise{-.14ex}{᠄}\mspace{-4.5mu}\neq' and ':\in' -> '\raise{-.158ex}{᠄}\mspace{-4.5mu}\in'
+  //                      *:  "$Sc_g_equation_replace_ary":  Change order of some entries
   //           20241119:  *:  "Sc_f_equation_latex_str_html":  Change MathJax inline mode to use "$" as start and same as end instead of "\(" as start ans "\)" as end because the old usage caused problems in case of use in "\jumpname" statements probably getting confused by the system with our own internal latex statements.
   //           20241108:  +:  "MathJax":  Add Macro "concat" and "Concat" for a self created small concatenation symbol and big concatenation symbol.
   //           20241106:  +:  "$Sc_g_equation_replace_ary":  Add '  \to  ' -> '\;\;\;\to\;\;\;'
@@ -673,19 +675,23 @@
                                     array( '  ?:=  ', '\;\;\;\overset{?}{≔}\;\;\;'),
                                     array( '  \widehat{=}  ', '\;\;\;\widehat{=}\;\;\;'),
                                     array( ' \widehat{=} ', '\;\widehat{=}\;'),
-                                    array( ':=', '≔'),
-                                    array( '  ≔  ', '\;\;\;≔\;\;\;'),
+                                    array( '  :=  ', '\;\;\;:=\;\;\;'),
+                                    array( '  :\neq  ', '\;\;\;:\neq\;\;\;'),
                                     array( '  ?=  ', '\;\;\;?=\;\;\;'),
-                                    array( '?=', '\overset{?}{=}'),
                                     array( '  \mapsto  ', '\;\;\;\mapsto\;\;\;'),
                                     array( '  \in  ', '\;\;\;\in\;\;\;'),
                                     array( '  :\in  ', '\;\;\;:\in\;\;\;'),
-                                    array( '  ?\in  ', '\;\;\;\overset{?}{\in}\;\;\;'),
+                                    array( '  ?\in  ', '\;\;\;?\in\;\;\;'),
                                     array( '  \notin  ', '\;\;\;\notin\;\;\;'),
                                     array( '  \subset  ', '\;\;\;\subset\;\;\;'),
                                     array( '  \to  ', '\;\;\;\to\;\;\;'),
                                     array( '  \rightarrow  ', '\;\;\;\rightarrow\;\;\;'),
                                     array( '  \not\rightarrow  ', '\;\;\;\not\rightarrow\;\;\;\;\;'),
+                                    array( ':=', '≔'),
+                                    array( ':\neq', '\raise{-.14ex}{᠄}\mspace{-4.5mu}\neq'),
+                                    array( ':\in', '\raise{-.158ex}{᠄}\mspace{-4.5mu}\in'),
+                                    array( '?=', '\overset{?}{=}'),
+                                    array( '?\in', '\overset{?}{\in}'),
                                     array( '\partial ', '\partial\,'),
                                     array( '\*part ', '\partial\,'),
                                     array( '\*part', '\partial\,'),
