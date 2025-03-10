@@ -254,38 +254,9 @@
 
                   array( 'text', array( text => array(
                     'Damit haben wir bewiesen, dass unsere Lösung die Wurzel aus Zwei als Bruch aus ganzen Zahlen darstellt,'."\n".
-                    'wenn der Nenner und der Zähler unendlich groß, im Bereich der vollständigen Induktion, sind.'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
-                      
-                'Die Wurzel aus Zwei und die natürlichen Superial-Zahlen', subline =>
-                  '')),
-                  array( 'notice', array( Display => 'showContent', text => array(
-                    // '\bold{X}',
-                    '• Remove or move this?',
-                    ))),
-                  array( 'text', array( text => array(
-                    'Wie wir wissen ist \lm{ 2^{ω} } ein Teil des Produkts von \lm{ \s }:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \frac{ \s }{ 2^{ω} }  \in  \mathbb{N}_{\infty}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'So macht es dann auch Sinn, dass ein Produkt aus unserer superialen Basis \lm{ \s } mit der Wurzel aus Zwei'."\n".
-                    'eine natürliche Superial-Zahl ergibt, weil zwei unendlich große ganze Zahlen multipliziert werden:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} \cdot \frac{ \s }{ 2^{ω} }  :\in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} } \cdot \s  :\in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }} \cdot \s  :\in  \mathbb{S}_{\N}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Auf diese Weise erhalten die natürlichen und die ganzen Superial-Zahlen eine sehr wesentliche und interessante'."\n".
-                    'Erweiterung und die Mathematik gewinnt fundamentale Erkenntnisse.'."\n",
-                      'Denn wie wir im folgenden zeigen werden, können wir diese Erweiterung auf alle algebraischen Koeffizienten'."\n".
-                    'ausdehnen.'."\n".
+                    'wenn der Nenner und der Zähler unendlich groß, im Bereich der vollständigen Induktion, sind.'."\n",
+                      'Für die \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen}{Wurzel aus Zwei im Zusammenhang mit den natürlichen Superial-Zahlen}'."\n".
+                    'hat dies eine wichtige Bedeutung.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>
                       

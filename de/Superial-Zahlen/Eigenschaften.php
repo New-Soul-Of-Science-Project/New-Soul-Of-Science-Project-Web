@@ -259,7 +259,7 @@
                     'entdecken Zusammenhänge, die mir ganz neu erscheinen.'."\n",
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Die Wurzel aus Zwei und die natürlichen Superial-Zahlen} \\\\'."\n".
+                  '\condb{\anchor{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen}{}Die Wurzel aus Zwei und die natürlichen Superial-Zahlen} \\\\'."\n".
                     'Wir erkennen im Speziellen, dass wir den Faktor \lm{ 2^{ω} } im Primzahl-Flächenprodukt von \lm{ \s } finden,'."\n".
                     'der aus der zweiten Wurzel aus Zwei \lm{ *| \sqrt[2]{ 2 } |* = 2^{\frac{1}{2}} } eine aktual unendlich große ganze Zahl macht:'."\n".
                     ''))),
