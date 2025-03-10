@@ -45,7 +45,7 @@
                   '')),
                   array( 'text', array( text => array(
                     'Wir versuchen einen Beweisansatz – unter der Annahme, dass wir in unserem Superial-System eine transfinite Exponentenarithmetik definieren,'."\n".
-                    'in der ein endlicher Offset zu \lm{ ω } (also \lm{ ω + r } mit \lm{ r \in \mathbb{ℚ} } und \lm{ r \neq 0 }) als von \lm{ ω } verschieden erkannt wird.'."\n".
+                    'in der ein endlicher Offset zu \lm{ ω } (also \lm{ ω + q } mit \lm{ q \in \mathbb{ℚ} } und \lm{ q \neq 0 }) als von \lm{ ω } verschieden erkannt wird.'."\n".
                     'Dann gilt:'."\n".
                     ''))),
 
@@ -76,11 +76,12 @@
                       array( display => 'on',  latex => '{  \mathrm{V}_{\!p}(a)  :=  ω + \mathrm{v}_{\!p}(a)  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen gilt, dass für jedes \lm{ r \in \mathbb{Q} \setminus *\{ 0 *\} }'."\n".
+                      'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen gilt, dass für jedes \lm{ q \in \mathbb{Q} \setminus *\{ 0 *\} }'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  ω + r  \neq  ω  \;\; .  }'),
+                      array( display => 'on',  latex => '{  ω + q  :\neq  ω  \;\; .  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-omega-plus-q-ungleich-omega}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'Nun definieren wir den aufgeladenen Term'."\n".
@@ -136,7 +137,7 @@
                       ''))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                     '\condb{Schlussfolgerung:} \\\\'."\n".
-                      'Unter der Annahme, dass in unserem erweiterten System \lm{ ω + r \neq ω } für \lm{ r \neq 0 } gilt,'."\n".
+                      'Unter der Annahme, dass in unserem erweiterten System \lm{ ω + q \neq ω } für \lm{ q \neq 0 } gilt,'."\n".
                       'besitzt jede reell algebraische Zahl \lm{ a } die transfinite Darstellung'."\n".
                       ''))),
                   array( 'equations',
@@ -144,8 +145,8 @@
                       array( display => 'on',  latex => '{  \boxed{\;\;  a = \frac{ \displaystyle \prod_{\substack{p \in \mathbb{P}}} p^{ω + \mathrm{v}_{p}(a)} }{ \displaystyle \prod_{\substack{p \in \mathbb{P}}} p^{ω} }  \;\;}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'woraus unmittelbar folgt, dass \lm{ a \cdot s \in \mathbb{S}_{\Z} } liegt.'."\n".
-                      'Somit sind alle reell algebraischen Zahlen als sinnvolle Koeffizienten der Superial-Zahlen eingebettet und wir finden,'."\n".
+                      'woraus unmittelbar folgt, dass \lm{ a \cdot s \in \mathbb{S}_{\Z} } wahr ist.'."\n".
+                      'Somit sind alle reell algebraischen Zahlen als sinnvolle Koeffizienten der Superial-Zahlen in diese eingebettet und wir finden,'."\n".
                       'dass die Menge \lm{ \mathbb{A}_{\S} } der sinnvollen Koeffizienten der Superial-Zahlen gleich der Menge aller reell algebraischen Zahlen \lm{ \mathbb{A} } ist'."\n".
                       ''))),
                   array( 'equations',
@@ -299,10 +300,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
