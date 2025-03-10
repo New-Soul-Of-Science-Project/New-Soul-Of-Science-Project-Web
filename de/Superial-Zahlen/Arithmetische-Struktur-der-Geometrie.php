@@ -20,6 +20,11 @@
                     '– Bietet hier die aktual unendlich kleine Hülle der superial-kleinen Zahlen um einen Punkt einen logischen Lösungsansatz für die Geometrie? Denn bei einem absolut unendlich kleinen Punkt können wir nicht sicher und exakt definieren, wie oft wir ihn aneinander legen müssen, um eine Gerade einer bestimmten Länge zu erzeugen. Bei einem Punkt mit superial-kleiner Hülle ist dies wohldefiniert.',
                     '⋅ In Bezug auf die Ordinalzahlen und Biordinalzahlen ist die „Umgebung“ übrigens das „Fähnchen“ zwischen der Null und Ein bzw. zwischen jeder ganzen Zahl, mit dieser, und der nächst größeren, ohne diese, obwohl die Zahlen dazwischen in den ganzen Zahlen gar nicht definiert sind. Sie sind aber implizit mit gemeint. Siehe \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Fig-OntologieGanzeZahlen}.',
                     '– Ist die Geometrie also eigentlich fraktal? Was durch die Analysis, mit ihren Ableitungen und Integralen, schließlich sichtbar wird?',
+                    '\bold{Welche Form der Vollständigkeit haben die reel algebraischen Zahlen?}',
+                    '• Ich würde es algebraische oder geometrische Vollständigkeit nennen.',
+                    '• Welche Form der Vollständigkeit haben dagegen die reellen Zahlen?',
+                    '– Weitz / HAW Hamburg: \jump[https://www.youtube.com/watch?v=gyS_eb9dIgo]{}{Der Aufbau des Zahlensystems} – Sek. 11:10',
+                    '– Hierfür müssen wir vermutlich eine superiale Vollständigkeit definieren. Mit den Superial-Zahlen erster Stufe, wie wir sie hier vornehmlich definieren, erreichen wir die superiale Vollständigkeit allerdings noch nicht, wie wir an der superialen Eulerschen Zahl sehen. Edmund Weitz sagt allerdings, dass wir diese Vollständigkeit in \lm{ \mathbb{R} } zeigen können.',
                     ))),
 
                   array( 'text', array( text => array(
