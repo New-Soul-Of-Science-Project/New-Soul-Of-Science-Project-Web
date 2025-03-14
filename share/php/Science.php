@@ -689,7 +689,7 @@
                                     array( '  \not\rightarrow  ', '\;\;\;\not\rightarrow\;\;\;\;\;'),
                                     array( ':=', '≔'),
                                     array( ':\neq', '\raise{-.14ex}{᠄}\mspace{-4.5mu}\neq'),
-                                    array( ':\in', '\raise{-.158ex}{᠄}\mspace{-4.5mu}\in'),
+                                    array( ':\in', '\raise{-.15ex}{᠄}\mspace{-4.5mu}\in'),
                                     array( '?=', '\overset{?}{=}'),
                                     array( '?\in', '\overset{?}{\in}'),
                                     array( '\partial ', '\partial\,'),
