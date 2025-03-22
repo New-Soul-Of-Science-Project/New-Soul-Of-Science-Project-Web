@@ -49,7 +49,7 @@
                     'Dann gilt:'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei \lm{ a \neq 0 } eine reell algebraische Zahl, also \lm{ a \in \mathbb{A} }.'."\n".
                       'Für jede Primzahl \lm{ p } existiert die \lm{ p }-adische Bewertung'."\n".
@@ -58,24 +58,24 @@
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathrm{v}_{\!p}(a)  \in  \mathbb{Q}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'sodass klassisch'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  a  =  \prod_{\substack{p \in \mathbb{P}}} p^{\mathrm{v}_{p}(a)}  \;\; ,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'wobei für fast alle Primzahlen \lm{ p } gilt \lm{ \mathrm{v}_{\!p}(a) = 0 }.'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Wir definieren in unserem erweiterten transfiniten System für jede Primzahl \lm{ p } den \italic{transfiniten Exponenten}'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathrm{V}_{\!p}(a)  :=  ω + \mathrm{v}_{\!p}(a)  \;\; ,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen gilt, dass für jedes \lm{ q \in \mathbb{Q} \setminus *\{ 0 *\} }'."\n".
                       ''))),
                   array( 'equations',
@@ -83,14 +83,14 @@
                       array( display => 'on',  latex => '{  ω + q  :\neq  ω  \;\; .  }',
                                           label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-omega-plus-q-ungleich-omega}', label_incr => false),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Nun definieren wir den aufgeladenen Term'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \mathrm{P}(a)  :=  \prod_{\substack{p \in \mathbb{P}}} p^{\!\mathrm{V}_{\!p}(a)}  =  \prod_{\substack{p \in \mathbb{P}}} p^{ω + \mathrm{v}_{p}(a)}  \;\; ,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'sowie das Basiselement, wie bereits aus Formel \jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega} bekannt,'."\n".
                       ''))),
                   array( 'equations',
@@ -98,10 +98,10 @@
                       array( display => 'on',  latex => '{  \s  :=  \prod_{\substack{p \in \mathbb{P}}} p^{ω}  \;\; .  }',
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Beachte, dass in \lm{ \s } für jede Primzahl \lm{ p } exakt der Exponent \lm{ ω } auftritt.'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dann folgt'."\n".
                       ''))),
                   array( 'equations',
@@ -111,31 +111,31 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \mathrm{P}(a) }{ \s }  =  \prod_{\substack{p \in \mathbb{P}}} p^{\mathrm{v}_{p}(a)}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ \mathrm{P}(a) }{ \s }  =  a  \;\; .  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Das bedeutet, wir können schreiben'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  a \cdot \s  =  \mathrm{P}(a)  \;\; .  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da \lm{ \mathrm{P}(a) } in unserem System für jede relevante Primzahl \lm{ p } den Exponenten \lm{ ω + \mathrm{v}_{\!p}(a) } trägt,'."\n".
                       'ist \lm{ \mathrm{P}(a) } in jeder Komponente „aktual unendlich teilbar“ und gehört somit zu den ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} }.'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Daraus folgt, dass'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  a \cdot s  \in  \mathbb{S}_{\Z}  \;\; .  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Mit anderen Worten:'."\n".
                       'Jede reell algebraische Zahl \lm{ a } kann in das Superial-Zahlensystem eingebettet werden, indem man sie mit \lm{ \s } multipliziert.'."\n".
                       'Und wir sehen auch, dass \lm{ a } nicht die Größenordnung von \lm{ \s } verändert, weil \lm{ a } reell algebraisch und damit endlich ist.'."\n".
                       'Damit sind alle \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{notwendigen Kriterien für sinnvolle Koeffizienten der Superial-Zahlen} erfüllt.'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                     '\condb{Schlussfolgerung:} \\\\'."\n".
                       'Unter der Annahme, dass in unserem erweiterten System \lm{ ω + q \neq ω } für \lm{ q \neq 0 } gilt,'."\n".
                       'besitzt jede reell algebraische Zahl \lm{ a } die transfinite Darstellung'."\n".
@@ -144,7 +144,7 @@
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\;  a = \frac{ \displaystyle \prod_{\substack{p \in \mathbb{P}}} p^{ω + \mathrm{v}_{p}(a)} }{ \displaystyle \prod_{\substack{p \in \mathbb{P}}} p^{ω} }  \;\;}  \;\; ,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'woraus unmittelbar folgt, dass \lm{ a \cdot s \in \mathbb{S}_{\Z} } wahr ist.'."\n".
                       'Somit sind alle reell algebraischen Zahlen als sinnvolle Koeffizienten der Superial-Zahlen in diese eingebettet und wir finden,'."\n".
                       'dass die Menge \lm{ \mathbb{A}_{\S} } der sinnvollen Koeffizienten der Superial-Zahlen gleich der Menge aller reell algebraischen Zahlen \lm{ \mathbb{A} } ist'."\n".
@@ -153,7 +153,7 @@
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\S}  =  \mathbb{A}  \;\;}  \;\; ,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'was zu beweisen war.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -186,7 +186,7 @@
                       'Wie allgemein dies gilt, können wir an einem Beispiel beobachten.'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Als Beispiel betrachten wir als erstes das allgemeine elliptische Integral der I. Art in der Jacobi-Form:\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ElliptischeIntegrale:2024}, Vollständige elliptische Integrale, Definition der vollständigen elliptischen Integrale.}'."\n".
                       ''))),
@@ -194,7 +194,7 @@
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( 0 < k < 1 *)  *[  \int_{0}^{1} {\frac { \mathrm{d} x }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } }}  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Nach der Definition eines Integrals mit Superial-Zahlen als Summe, nach Kapitel \italic{\jumpname{OM:SupNum:Ableitungen-Integrale:Integration}},'."\n".
                       'entspricht dies:'."\n".
                       ''))),
@@ -202,14 +202,14 @@
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall k \in \mathbb{A}_{\R} *) *( 0 < k < 1 *) \\\ \qquad\quad\;\;\;\,  *[  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 {\frac { 1 }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } }} *〉  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Nehmen wir an, dass dieses Integral im Produkt mit \lm{ \s }'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 {\frac { 1 }{ \sqrt{ *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) } }} *〉*) \cdot \s  ?\in  \mathbb{S}_{N}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren'."\n".
                       ''))),
                   array( 'equations',
@@ -226,14 +226,14 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 *( k^{2} x^{4} - *( k^{2} - 1 *) x^{2} + 1 *)^{\frac{ 1 }{ -2 }} \cdot \s *〉  ?\in  \mathbb{S}_{N}  \;\;,  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \sum_{ \forall x \in [0, 1[_{\mathbb{S}^{-1}_{\Z}} } \! ․*〈 *( *( k^{2} x^{4} - *( k^{2} - 1 *) x^{2} + 1 *) \cdot \frac{ 1 }{ \s^{2} } *)^{\frac{ 1 }{ -2 }} *〉  ?\in  \mathbb{S}_{N}  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'wobei diese Summe sich insofern plausibel in die Fundierung der Superial-Zahlen einfügt, als dass ihre'."\n".
                       'zählende Variable ihre Werte per Definition „nur“ aus den möglichen und sinnvollen Superial-Zahlen schöpft.'."\n".
                       'Das bedeutet, dass die Koeffizienten der Superial-Zahlen der zählenden Variable auch Realanteile der algebraischen Zahlen'."\n".
                       'sind und dadurch die summierten Ausdrücke wieder Realanteile algebraischer Zahlen ergeben.'."\n".
                       'Dies ist in sich selbst plausibel.'."\n".
                       ''))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Nun ist es so, dass die Definition der Ableitung und des Integrals per Superial-Zahlen mit der superialen'."\n".
                       'Basis \lm{ \s } die Besonderheit, dass die aktual unendlichen Anteile bei der Ableitung'."\n".
                       'von rein endlichen Funktionen nicht verschwinden.'."\n".
@@ -247,7 +247,7 @@
                       array( display => 'on',  latex => '{  f(x) = x^{3}  \Rightarrow  f\'(x) =  *〈 3 x^{2} *〉.*〈 3 x *〉*〈 1 *〉  }'),
                       array( display => 'on',  latex => '{  f(x) = x  \Rightarrow  f\'(x) =  1  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da alle obigen Summanden ganze Superial-Zahlen sind'."\n".
                       '\\\\ \color{*Bearb}{(Wie gehen wir hier damit um, dass \lm{ x } in der Integralsumme auch superial kleine Anteile enthalten kann? Werden die hier eh zu endlichen ganzen Zahlen? Bei \lm{ x^{2} } wohl eher nicht. Oder können wir das Integral oben so definieren, dass es passt? Oder heben sich die superial kleinen Anteile erst beim Summieren auf?)}'."\n".
                       ''))),
@@ -255,14 +255,14 @@
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( *( 1 - x^{2} *) \cdot *( 1 - k^{2} x^{2} *) *)^{\frac{ 1 }{ -2 }} \cdot \s  \in  \mathbb{S}_{Z}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\color{*Bearb}{(In Arbeit …)} und die Summe zweier ganzer Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }} \cdot \s + n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{N}  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'unter den obigen Bedingungen, immer eine natürliche Superial-Zahl ist, was wir zeigen wollten.'."\n",
                         '\\\\'."\n".
                       ''))),
