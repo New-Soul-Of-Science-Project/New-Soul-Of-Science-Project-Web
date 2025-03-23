@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 19.11.2024, 16:00h
+  // #: Stand: 22.03.2025, 12:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20250322:  >:  "To_f_Paragraph" type "bulletlist":  Add 'Shape' as object parameter.
   //           20241119:  >:  "To_f_Paragraph" type "jumplist":  Replace "<p>" tag by "<table>" tag.
   //           20240914:  +:  "To_f_HeaderElements":  Remove import "../share/js/NSOSP.js" and move it to local file
   //           20240119:  +:  "To_f_Paragraph", 'iframe':  Add this type for 3d animations.
@@ -1760,7 +1761,26 @@
         $block_param_add_is = ((array_key_exists( TextAlign, $text)));
         $block_is = (($block_param_add_is && ($text[TextAlign] == 'block')) || (!$block_param_add_is && ($Glo_g_TextAlign == 'block')));
         
-        echo $offset.'<table class="tools-class-text" border="0" style="'.(($block_is) ? ' text-align: justify;' : '').'" cellspacing="0" cellpadding="0">'."\n";
+        $shape_is = ((gettype( $text) == 'array') && array_key_exists( Shape, $text));
+        $class_Additional = '';
+        if ($shape_is)
+          switch ($text[Shape])
+          {
+            case 'derivation':
+              $class_Additional = 'tools-class-text-derivation';
+              break;
+            case 'conclusion':
+              $class_Additional = 'tools-class-text-conclusion';
+              break;
+            case 'italic':
+              $class_Additional = 'tools-class-text-italic';
+              break;
+            case 'quote':
+              $class_Additional = 'tools-class-text-quote';
+              break;
+          }
+        
+        echo $offset.'<table class="tools-class-text'.((0 < strlen($class_Additional)) ? ' '.$class_Additional : '').'" border="0" style="'.(($block_is) ? ' text-align: justify;' : '').'" cellspacing="0" cellpadding="0">'."\n";
         break;
       case 'jumplist':
         // #?: Is an element in array?

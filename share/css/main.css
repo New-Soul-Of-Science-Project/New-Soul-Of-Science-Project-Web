@@ -546,7 +546,11 @@ svg {
 p.tools-class-text-derivation,
 p.tools-class-text-conclusion,
 p.tools-class-text-italic,
-p.tools-class-text-quote {
+p.tools-class-text-quote,
+table.tools-class-text-derivation,
+table.tools-class-text-conclusion,
+table.tools-class-text-italic,
+table.tools-class-text-quote {
   /* #!: hyphens is set by 'tools-class-text'! */
   /* #: 30px + 32px (margin-left + text-indent(2em)) */
   margin-left: 62px;
