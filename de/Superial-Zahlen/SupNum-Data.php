@@ -211,7 +211,9 @@
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-omega' => array( headline_text => 'SN.EuZa.20'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:eFunktionPascalscheDreieck' => array( headline_text => 'Die \lm{ \e }-Funktion und das Pascalsche Dreieck' , headline_text_short => 'Die e-Funktion und das Pascalsche Dreieck'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:SumBinominalkoe' => array( headline_text => 'Die Summen der einzelnen Spalten der Binomialkoeffizienten'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-1-Def-durch-s-Stellenwertsystem' => array( headline_text => 'SN.EuZa.78'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem' => array( headline_text => 'SN.EuZa.81'),
+          'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem-mit-Summe' => array( headline_text => 'SN.EuZa.111'),
           'OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:BeispielrechnungAbleitungMit-s-2' => array( headline_text => 'Beispielrechnung zur Ableitung mit \lm{ s^2 }'/* , headline_text_short => 'X'*/),
 
         'OM:SupNum:Eulersche-Zahl-e-Funktion:Die-e-Funktion-aus-dem-Integral' => array( headline_text => 'Die \lm{ \e }-Funktion aus dem Integral' , headline_text_short => 'Die e-Funktion aus dem Integral'),
