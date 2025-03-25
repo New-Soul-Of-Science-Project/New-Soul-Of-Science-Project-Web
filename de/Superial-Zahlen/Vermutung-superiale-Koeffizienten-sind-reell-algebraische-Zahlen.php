@@ -25,11 +25,11 @@
                     'und der Beginn des systematischen Herausarbeitens der \jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{Struktur der transzendenten Zahlen},'."\n".
                     'aus Perspektive des Superial-Zahlensystems,'."\n".
                     'führt beinahe zwangsläufig zu dem Eindruck, dass alle reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen sein sollten.'."\n",
-                      'Ein möglicher Ansatz, dies zu Beweisen, stützt sich darauf, die klassische \lm{ p }‑adische Sichtweise\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}.} auf reell algebraische Zahlen zu nutzen und diese global zu vereinen.'."\n".
+                      'Ein möglicher Ansatz, dies zu Beweisen, stützt sich darauf, die klassische \lm{ p }‑adische Sichtweise\footnote{\const{SupNum_g_footnote_text_PadischeZahl}} auf reell algebraische Zahlen zu nutzen und diese global zu vereinen.'."\n".
                     'Konkret könnte man folgendermaßen vorgehen:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        '\bold{p‑adische Bewertungen nutzen:} \\\\ Für jede Primzahl \lm{ p } hat jede reell algebraische Zahl \lm{ a } eine wohldefinierte \lm{ p }‑adische Bewertung\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:PAdischeZahl:2024}, Konstruktion, Analytische Konstruktion, Exponentenbewertung.} \lm{ \mathrm{v}_{\!p}(a) } (der – bei Nicht-Null – eine endliche ganze Zahl ist). Diese Bewertungen geben an, wie oft \lm{ p } in \lm{ a } vorkommt, also ihre Potenz.',
+                        '\bold{p‑adische Bewertungen nutzen:} \\\\ Für jede Primzahl \lm{ p } hat jede reell algebraische Zahl \lm{ a } eine wohldefinierte \lm{ p }‑adische Bewertung\footnote{\const{SupNum_g_footnote_text_PadischeBewertung}} \lm{ \mathrm{v}_{\!p}(a) } (der – bei Nicht-Null – eine endliche ganze Zahl ist). Diese Bewertungen geben an, wie oft \lm{ p } in \lm{ a } vorkommt, also ihre Potenz.',
                         '\bold{Globale transfinite Darstellung:} \\\\ Man versucht, \lm{ a } als ein Produkt über alle Primzahlen zu schreiben, in einem klassischen Sinn. Daraus formulieren wir einen überrationalen Bruch mit transfinitem oder aktual unendlichem ganzzahligen Zähler und Nenner, wie im Beweis der Überrationalitätsvermutung.',
                     ))),
                   array( 'text', array( text => array(
@@ -43,6 +43,12 @@
                       
                 'Beweis: Einbettung reell algebraischer Zahlen in das System der Superial-Zahlen', subline =>
                   '')),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Erklärungs-Video}',
+                    '• Negative reell algebraische Zahlen und die Null korrekt berücksichtigen.',
+                    ))),
+                      
                   array( 'text', array( text => array(
                     'Wir versuchen einen Beweisansatz – unter der Annahme, dass wir in unserem Superial-System eine transfinite Exponentenarithmetik definieren,'."\n".
                     'in der ein endlicher Offset zu \lm{ ω } (also \lm{ ω + q } mit \lm{ q \in \mathbb{ℚ} } und \lm{ q \neq 0 }) als von \lm{ ω } verschieden erkannt wird.'."\n".
