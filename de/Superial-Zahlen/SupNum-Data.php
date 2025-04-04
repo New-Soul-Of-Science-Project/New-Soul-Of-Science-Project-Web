@@ -37,7 +37,7 @@
       text_titel_h1 => 'Superial-Zahlen \color{*TitleAdd}{\small{(SN)}}',
       text_titel_short => 'Superial-Zahlen',
       text_undertitel_h2 => 'Die Zahlentheorie der Analysis – mit Primzahlen ins Unendliche',
-      text_titel_discr_h3 => 'Ein aktual unendlicher angeordneter algebraischer Körper, als Erweiterung der (durch Radikale darstellbaren?) reell algebraischen Zahlen, der der Unendlichkeit eine fundamentale, fraktale Struktur gibt – neue Ideen elementarer Mathematik',
+      text_titel_discr_h3 => 'Ein aktual unendlicher angeordneter algebraischer Körper, als Erweiterung der reell algebraischen Zahlen, der der Unendlichkeit eine fundamentale, fraktale Struktur gibt; auch die Struktur der transzendenten Zahlen weiter aufklärt – neue Ideen elementarer Mathematik',
       jump_ary => array(
         'OM:SupNum:Home:Inhalt' => array( headline_text => 'Inhalt', headline_text_short => 'Inhalt'),
         'OM:SupNum:Home:Lexikon' => array( headline_text => 'Lexikon', headline_text_short => 'Lexikon'),

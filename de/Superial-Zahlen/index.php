@@ -22,20 +22,28 @@
                     'der vollständigen Induktion, ist.'."\n",
                       'Es ist offensichtlich, dass \lm{ \s } im Produkt mit jeder rationalen Zahl eine aktual unendlich große ganze Zahl ergibt.'."\n",
                       'Wir werden Beweisen, dass dies nicht nur für die rationalen Zahlen gilt, sondern auch für das Produkt aller'."\n".
-                    'Realanteile algebraischer Zahlen mit \lm{ \s }, also auch für die irrationalen Realanteile algebraischer Zahlen.'."\n".
-                    'Das ist etwas Besonderes und Bedeutendes.'."\n".
-                    'Der Beweis zeigt uns, wie wir aus jeder \lm{ x }-ten irrationalen Wurzel aus einer endlichen natürlichen Zahl \lm{ n }'."\n".
-                    'durch ein Produkt mit allen Primzahlen in ihrem Radikanden \lm{ n } in \lm{ ω }-ter Potenz, eine aktual unendlich große ganze Zahl'."\n".
-                    'machen können.'."\n".
-                    'Wodurch alle irrationalen Wurzeln aus natürlichen Zahlen als Bruch aktual unendlich großer ganzzahliger Quotienten dargestellt werden können.'."\n".
-                    'Was ja mit rationalen Brüchen endlicher Quotienten nicht geht.'."\n",
+                    'durch Radikale darstellbaren reell algebraischen Zahlen, wie \lm{ \sqrt{ 2 } }, und abschließend sogar für das Produkt'."\n".
+                    'der kompletten reell algebraischen Zahlen mit \lm{ \s }, also auch für alle irrationalen reell algebraischen Zahlen.'."\n".
+                    'Dies gelingt uns über die \lm{ p }-adische Bewertung der reell algebraischen Faktoren.'."\n".
+                    'Das ist etwas Besonderes und Bedeutendes.'."\n",
+                      'Der Beweis zeigt uns, wie wir aus jeder \lm{ x }-ten irrationalen Wurzel aus einer endlichen natürlichen Zahl \lm{ n }'."\n".
+                    'durch ein Produkt mit allen Primzahlen in ihrem Radikanden \lm{ n } in \lm{ ω }-ter Potenz, also \lm{ \sqrt[x]{n} \cdot \rad(n)^{ω} },'."\n".
+                    'eine aktual unendlich große ganze Zahl machen können.'."\n".
+                    'Wodurch alle irrationalen Wurzeln aus natürlichen Zahlen als Bruch aktual unendlich großer ganzzahliger Quotienten, also mit \lm{ \sqrt[x]{n} = \frac{ \sqrt[x]{n} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} } }, dargestellt werden können.'."\n".
+                    'Was ja mit rationalen Brüchen endlicher Quotienten nicht geht.'."\n".
+                    'Ebenfalls etwas besonders Außergewöhnliches und Bedeutendes.'."\n",
+                      'So lernen wir auch wichtiges über die Potenzrechnung der endlichen natürlichen Basen der (\lm{ ω \pm q })-ten Potenz, wenn \lm{ q } rational ist.'."\n".
+                    'Die Zahlen \lm{ n^{ω \pm q} } sind nämlich allesamt aktual unendlich große ganze Zahlen.'."\n",
+                    // 'Wird \lm{ q } irrational reell algebraisch so scheint das Ergebnis nicht mehr ganzzahlig zu sein.'."\n",
                       'Das aktual unendliche Stellenwertsystem der Superial-Zahlen, auf Basis von \lm{ \s }, erlaubt nun'."\n".
-                    'sinnvollerweise positive wie negative Werte seiner Stellen, die Realanteile algebraischer Zahlen sind.'."\n",
+                    'sinnvollerweise positive wie negative Werte seiner Stellen, die reell algebraische Zahlen sind.'."\n".
+                    'Vereinfacht dargestellt in einer Stellenwert-Schreibweise in spitzen Klammern: \lm{ \sqrt{2} \s^{2} - \frac{ 37}{10} \s - 7 + 5 \s^{-1}  = 〈\sqrt{2}〉〈- \frac{ 37}{10}〉〈-7〉․〈5〉 }.'."\n".
+                    'Abermals ganz außergewöhnlich.'."\n",
                       'Wir definieren die Differentialrechnung, die Ableitung und die Integralrechnung, mit Hilfe der Superial-Zahlen neu.'."\n".
                     'So ersetzen wir die Näherungsrechnung des Limes durch Definitionen mit aktual unendlichen Zahlen und'."\n".
-                    'erhalten eine Zahlentheorie der Analysis, die auf Primzahlen beruht.'."\n",
+                    'erhalten eine Zahlentheorie der Analysis, die auf Primzahlen beruht: \lm{ f\'(x) = \frac{ f(x + \s^{-1}) - f(x) }{ \s^{-1} } = \frac{ f(〈x〉․\,〈1〉) - f(x) }{ ․\,〈1〉 } \; }.'."\n",
                       'Über die ganzen Superial-Zahlen können wir die Integrale als normale Summen über aktual unendlich kleine'."\n".
-                    'Summanden auf Grundlage des Zählens definieren.'."\n".
+                    'Summanden auf Grundlage des Zählens definieren: \lm{ \int_{a}^{x} f\'(n) \,dn \, \widehat{=} \sum_{ \forall n \in \lbrack a, x \lbrack_{\mathbb{S}^{-1}_{\Z}} }  \! f\'(n) \cdot \s^{-1} \, = \, \sum_{ \forall n \in \lbrack a, x \lbrack_{\mathbb{S}^{-1}_{\Z}} }  .*〈 f\'(n) *〉 \; }.'."\n".
                     'Die aktual unendlich kleinen Summanden summieren sich so durch aktual unendlich große Summen zu endlichen Zahlen auf.'."\n".
                     'Auf diese Weise erhalten wir Einblicke in Summen, die wir bisher nicht kannten oder nicht im Detail'."\n".
                     'durchdringen und verstehen konnten.'."\n",
