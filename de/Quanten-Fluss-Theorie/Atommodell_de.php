@@ -18,6 +18,7 @@
                     '• Die elektrische Ladung des Elektrons hat aber trotzdem ein Feld, dessen Quelle im Schwerpunkt seines Wirkungsquanten-Strings liegt, siehe \\jump[][*Bearb]{OM:FrQFT:Lepton}{Leptonen-Modell}.'."\n",
                     '• Welche Rolle spielt die Herleitung Heisenbergs Unschärferelation\\footnote[*Bearb]{\\cite{Heisenberg:UeberQuantKinMech1927Scan}.} im Atommodell? Im Besonderen die Relation \( p \cdot q - q \cdot p = \frac{\hbar}{2 \pi i} \). Noch einmal lesen.'."\n",
                     '• Informativer Film zum Elektron und seiner Rolle im Atommodell: \\jump[https://www.youtube.com/watch?v=Vf98gzuXsgI&t=170s]{}{The Nature of the Electron SIMPLIFIED in 5 Minutes!}.'."\n",
+                    '• Informativer Film zum Elektron und seiner Rolle im Atommodell: \\jump[https://www.youtube.com/watch?v=qJZ1Ez28C-A]{}{Something Strange Happens When You Trust Quantum Mechanics}.'."\n",
                     ))),
                       
                   array( 'text', array( text => array(
