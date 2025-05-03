@@ -605,6 +605,11 @@
 
 
 
+  $NPYo_g_figure_ary_AchtsamkeitDracheSchlange   = array( fig_file_name => 'Naturphilosophie-Yoga/Achtsamkeit-Drache-Schlange-20211119-v01', figPDF_is => false, fig_alt_description => 'Der Care-Prozess oder Achtsamkeitsprozess als Unendlichkeit von Drache und Schlange', width => '440px', height => '302px', name => 'set local!',
+                                                         text => 'Der männliche Drache – die Schlange mit Flügeln – und die weibliche Schlange stellen in diesem Bild'."\n".
+                                                                  'die unendliche Schwingung zwischen der männlichen und weiblichen Seite der Dualität dar,'."\n".
+                                                                  'die im Zentrum unseres Lebens steht.');
+  
   $NPYo_g_figure_ary_AugeDesRa                   = array( fig_file_name => 'Naturphilosophie-Yoga/Auge-des-Ra-v01', fig_alt_description => 'Auge des Ra', width => '300px', height => '272px', name => 'set local!',
                                                          text => 'Hieroglyphe des Sonnengottes Ra (auch Re genannt). Männliches Prinzip, Djet-Zeit. \color{*Light}{\small{Lizenz: \jumpname{OM:FrQFT:Impressum:CopyrightLizenz:EyeOfHorus}}}');
   
@@ -1885,31 +1890,6 @@
                   'OM:NPYo:Einleitung:Bilder' => array( headline_text => 'Wir sind was wir denken – unsere Bilder bestimmen uns', headline_text_short => 'wir sind was wir denken – unsere Bilder bestimmen uns'),
                   'OM:NPYo:Einleitung:Bild-GebaendigtesLicht' => array( headline_text => 'Bild: Wir sind gebändigtes Licht', headline_text_short => 'Bild: Wir sind gebändigtes Licht'),
                   'OM:NPYo:Einleitung:Veranstaltungen' => array( headline_text => 'Veranstaltungen', headline_text_short => 'Veranstaltungen'),
-                ),
-         ),
-  'OM:NPYo:HaTha' =>
-    array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php',
-           url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php',
-           titel => 'Hatha Yoga – Ha und Tha, Ra und Horus, Sonne und Mond - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
-           description => 'Unsere Balance der Körperhälften, unser Schicksal. Der Zusammenhang zwischen Yoga, Tantra, altägyptischer und hinduistischer Mythologie, unsem Achtsamkeitsprozess und der Gesichtsspiegelung.',
-           keywords => '',
-           text_titel_h1 => 'Hatha Yoga – Ha und Tha, Ra und Horus, Sonne und Mond',
-           text_titel_short => 'Hatha Yoga – Ha und Tha, Ra und Horus, Sonne und Mond',
-           text_undertitel_h2 => 'Unsere Balance der Körperhälften, unser Schicksal',
-           text_titel_discr_h3 => 'Der Zusammenhang zwischen Yoga, Tantra, altägyptischer und hinduistischer Mythologie, unserem Achtsamkeitsprozess und der Gesichtsspiegelung',
-           jump_ary => array(
-                  'OM:NPYo:HaTha:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-                             
-                    'OM:NPYo:HaTha:Vortext:Fig-AugeDesRa' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:HaTha:Vortext:Fig-AugeDesHorus' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:HaTha:Vortext:Fig-SymbolYinYangKoerperSeeleExistenz' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:HaTha:Vortext:Fig-Hexagramm' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:HaTha:Vortext:Fig-LebenDesHorusAsklepiosstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:HaTha:Vortext:Fig-LebenDesHorusHermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                    'OM:NPYo:HaTha:Vortext:Fig-Hermesstab' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
-                             
-                  'OM:NPYo:HaTha:WirZweiWesen' => array( headline_text => 'Wir sind zwei verwobene Wesen', headline_text_short => 'Wir sind zwei verwobene Wesen'),
-                  'OM:NPYo:HaTha:HerstellungBalance' => array( headline_text => 'Herstellung der Balance', headline_text_short => 'Herstellung der Balance'),
                 ),
          ),
   'OM:NPYo:Literatur' =>
