@@ -64,6 +64,7 @@
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Positive-Vision-Zukunft'),
                       array(  jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Lebensnahes-Verstaendnis-Yin-Yang'),
+                      array(  jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Wechselspiel-Bewusstsein-und-Unterbewusstsein-Heilung-Phoenix-Psychosomatik'),
                     )),
 
                   array( 'headline', array( jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:X', text =>
@@ -89,6 +90,9 @@
                   array( 'text', array( text => array(
                     'Mein Anliegen ist, euch zu zeigen, dass die alten Weisheiten der Mythen und Religionen für uns heute immer noch eine wichtige Bedeutung haben,'."\n".
                     'wenn wir sie mit unserem modernen Wissen, unserer modernen Wissenschaft, verbinden.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Informationen:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Impulsvortrag',
@@ -283,11 +287,83 @@
                     'Auf unserer Reise betrachten wir die Mythologien und Religionen hinsichtlich bestimmter Aspekte aus einer Metaebene.'."\n".
                     'Aus diesen Aspekten entwickeln wir ein wissenschaftliches Modell der Psychosomatik.'."\n".
                     ''))),
+                  array( 'text', array( text => array(
+                    'Unsere Reise:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '1. Beispiele für die weiblich-männliche Dualität \\\\'."\n".
+                    '2. Paarungen weiblich-männlicher Dualität bringen „Kinder“ hervor \\\\'."\n".
+                    '3. Gefühl, Handlung und Entwicklung als besondere Dreifaltigkeit \\\\'."\n".
+                    '4. Die Realität der besonderen Dreifaltigkeit \\\\'."\n".
+                    '5. Ein neues Modell als Grundlage der Psychosomatik und Medizin \\\\'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Informationen:'."\n".
+                    ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Impulsvortrag',
                         'Dauer: 1 bis 1,5 Stunden',
                         'inklusive anschließendem Dialog mit den Zuhörern',
-                        'Vortragsmanuskript: \jump[https://nsosp.org/download/NSOSA/Spannungsspiel-des-Lebens/Ein-lebensnahes-Verstaendnis-von-Yin-und-Yang-Sonne-und-Mond-dem-Prinzip-des-Geschlechts-202502#1.9-kurz.pdf]{}{als PDF}',
+                        'Vortragsmanuskript: \jump[https://nsosp.org/download/NSOSA/Spannungsspiel-des-Lebens/Ein-lebensnahes-Verstaendnis-von-Yin-und-Yang-Sonne-und-Mond-dem-Prinzip-des-Geschlechts-202502-1.9-kurz.pdf]{}{als PDF}',
+                        'Vortrags-Video: \jump[https://www.youtube.com/watch?v=JV0igRBnQUM&list=PLagK1_ZceisExXuPb-fg-UbghOBuRC46v]{}{Ein lebensnahes Verständnis von Yin und Yang, Sonne und Mond, dem Prinzip des Geschlechts}',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Vertiefende Informationen auf den Themenseiten:'."\n".
+                    ''))),
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:HaTha'),
+                      array(  jump_name => 'OM:NPYo:Stein-der-Weisen'),
+                      array(  jump_name => 'OM:NPYo:ExistenzLeichtigkeit'),
+                      array(  jump_name => 'OM:NPYo:Spiritualitaet-Psychologie'),
+                      array(  jump_name => 'OM:NPYo:WasUnterschiedYogaSport'),
+                      array(  jump_name => 'OM:SpaLeb:Home'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess'),
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik'),
+                      array(  jump_name => 'OM:SpaLeb:Bewusstsein'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:OntologieDualitaetAllgemein'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:UnsereExistenzDurchPsychosomatik'),
+                    )),
+
+
+                  array( 'headline', array( jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Wechselspiel-Bewusstsein-und-Unterbewusstsein-Heilung-Phoenix-Psychosomatik', text =>
+                      
+                'Dem Wechselspiel von Bewusstsein und Unterbewusstsein entspringt unsere Heilung – vom Phönix aus der Asche zur Psychosomatik', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Ich möchte mit euch gerne auf eine analytische Gedanken- und Wissensreise durch die Mythologien und Religionen gehen, mit deren Erkenntnis wir zurückkehren und dieses Wissen für uns fruchtbar machen.'."\n".
+                    'Auf unserer Reise untersuchen wir die Mythologien und Religionen wieder von einer Metaebene und schauen, was sie verbindet: diesmal bezüglich weiterer geometrischer Dimensionen und ihrer Bedeutung, im Besondern Oben und Unten.'."\n".
+                    'Uns beschäftigen die Fragen:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Was hat der weiblich-männliche Dualismus und das „heilige Kind“ mit unserem Bewusstsein und Unterbewusstsein zu tun?',
+                        'Was hat dies mit unserer Heilung zu tun; mit Hoffnung und Glaube?',
+                        'Wie integriert sich dies in unser neues Modells der Psychosomatik, in den neuen Care-Prozess oder Achtsamkeitsprozess?',
+                        'Wie können wir das „heilige Kind“ als Beseelung oder Hauchung – Leben einhauchend – verstehen?',
+                    ))),
+                  array( 'text', array( text => array(
+                    'So bauen wir über unser Verständnis, was die Mythologien und Religionen verbindet, eine wertvolle Brücke in unsere Gegenwart, in unser heutiges Leben und in unsere Wissenschaft.'."\n".
+                    'Zu allen Zeiten mussten die Menschen altes Wissen in ihre Gegenwart transformieren und mit neuem ergänzen, um Aktualität herzustellen und es so nicht zu verlieren.'."\n".
+                    'Es ging den alten Ägyptern, Griechen und Römern ganz sicher damals nicht anders.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Unsere Reise:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '1. Weitere Dimensionen der Dualität und Trinität in unserem Körper \\\\'."\n".
+                    '2. Der Phönix aus der Asche \\\\'."\n".
+                    '3. Das Wechselspiel von Bewusstsein und Unterbewusstsein \\\\'."\n".
+                    '4. Den großen Drachen besiegen, die alte Schlange – unsere Angst \\\\'."\n".
+                    '5. Unsere Heilung – immer eine Selbstheilung \\\\'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Informationen:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Impulsvortrag',
+                        'Dauer: 1,5 bis 2 Stunden',
+                        'inklusive anschließendem Dialog mit den Zuhörern',
+                        'Vortragsmanuskript: \jump[https://nsosp.org/download/NSOSA/Spannungsspiel-des-Lebens/Dem-Wechselspiel-von-Bewusstsein-und-Unterbewusstsein-entspringt-unsere-Heilung-vom-Phoenix-aus-der-Asche-zur-Psychosomatik-202502-3.3-Vortrag.pdf]{}{als PDF}',
+                        'Vortrags-Video: \jump[https://www.youtube.com/watch?v=jwKjOlLx29k&list=PLagK1_ZceisExXuPb-fg-UbghOBuRC46v&index=4]{}{Dem Wechselspiel von Bewusstsein und Unterbewusstsein entspringt unsere Heilung – vom Phönix aus der Asche zur Psychosomatik}',
                     ))),
                   array( 'text', array( text => array(
                     'Vertiefende Informationen auf den Themenseiten:'."\n".
