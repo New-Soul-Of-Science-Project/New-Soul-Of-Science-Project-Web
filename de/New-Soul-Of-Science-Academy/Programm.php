@@ -283,12 +283,17 @@
                 'Ein lebensnahes Verständnis von Yin und Yang, Sonne und Mond, dem Prinzip des Geschlechts', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Ich möchte mit euch gerne auf eine analytische Gedanken- und Wissensreise gehen, mit deren Erkenntnis wir zurückkehren und dieses Wissen für uns fruchtbar machen.'."\n".
-                    'Auf unserer Reise betrachten wir die Mythologien und Religionen hinsichtlich bestimmter Aspekte aus einer Metaebene.'."\n".
-                    'Aus diesen Aspekten entwickeln wir ein wissenschaftliches Modell der Psychosomatik.'."\n".
+                    'Ich möchte mit euch gerne auf eine analytische Gedanken- und Wissensreise durch die Mythologien und Religionen gehen,'."\n".
+                    'mit deren Erkenntnis wir zurückkehren und dieses Wissen für uns fruchtbar machen.'."\n",
+                      'Auf unserer Reise schauen wir auf einer Metaebene nach bestimmten Aspekten.'."\n".
+                    'Wir sehen, wo wir dabei der weiblich-männlichen Dualität, wie Yin und Yang oder Mond und Sonne, begegnen und in welchen Fassetten diese auftritt.'."\n".
+                    'Dabei können wir auch erkennen, dass aus diesen Aspekten „heilige Kinder“ oder „Gotteskinder“ „geboren“ oder geschöpft werden.'."\n",
+                      'Wir analysieren, dass die weiblich-männliche Dualität oft für unsere Gefühle (Bedürfnisse) und unsere Handlungen (Taten) steht.'."\n".
+                    'Und das daraus geborene „heilige Kind“ steht für Lernen, Persönlichkeitsentwicklung, Gedeihen, Klugheit, Gesundheit, Fürsorge, Liebe – eben für ein gutes Leben.'."\n".
+                    'Daraus entwickeln wir ein wissenschaftliches Modell der Psychosomatik, dass ich Care-Prozess oder Achtsamkeitsprozess nenne.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Unsere Reise:'."\n".
+                    'Etappen unserer Reise:'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     '1. Beispiele für die weiblich-männliche Dualität \\\\'."\n".
@@ -298,7 +303,7 @@
                     '5. Ein neues Modell als Grundlage der Psychosomatik und Medizin \\\\'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Informationen:'."\n".
+                    'Eckdaten:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Impulsvortrag',
@@ -330,9 +335,10 @@
                 'Dem Wechselspiel von Bewusstsein und Unterbewusstsein entspringt unsere Heilung – vom Phönix aus der Asche zur Psychosomatik', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Ich möchte mit euch gerne auf eine analytische Gedanken- und Wissensreise durch die Mythologien und Religionen gehen, mit deren Erkenntnis wir zurückkehren und dieses Wissen für uns fruchtbar machen.'."\n".
-                    'Auf unserer Reise untersuchen wir die Mythologien und Religionen wieder von einer Metaebene und schauen, was sie verbindet: diesmal bezüglich weiterer geometrischer Dimensionen und ihrer Bedeutung, im Besondern Oben und Unten.'."\n".
-                    'Uns beschäftigen die Fragen:'."\n".
+                    'Ich möchte mit euch gerne auf eine analytische Gedanken- und Wissensreise durch die Mythologien und Religionen gehen, mit deren Erkenntnis wir zurückkehren und dieses Wissen für uns fruchtbar machen.'."\n",
+                      'Auf unserer Reise untersuchen wir die Mythologien und Religionen wieder von einer Metaebene und schauen, was sie verbindet:'."\n".
+                    'Diesmal bezüglich weiterer geometrischer Dimensionen und ihrer Bedeutung, im Besondern Oben und Unten.'."\n",
+                      'Uns beschäftigen die Fragen:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Was hat der weiblich-männliche Dualismus und das „heilige Kind“ mit unserem Bewusstsein und Unterbewusstsein zu tun?',
@@ -341,12 +347,12 @@
                         'Wie können wir das „heilige Kind“ als Beseelung oder Hauchung – Leben einhauchend – verstehen?',
                     ))),
                   array( 'text', array( text => array(
-                    'So bauen wir über unser Verständnis, was die Mythologien und Religionen verbindet, eine wertvolle Brücke in unsere Gegenwart, in unser heutiges Leben und in unsere Wissenschaft.'."\n".
-                    'Zu allen Zeiten mussten die Menschen altes Wissen in ihre Gegenwart transformieren und mit neuem ergänzen, um Aktualität herzustellen und es so nicht zu verlieren.'."\n".
+                    'So bauen wir über unser Verständnis, was die Mythologien und Religionen verbindet, eine wertvolle Brücke in unsere Gegenwart, in unser heutiges Leben und in unsere Wissenschaft.'."\n",
+                      'Zu allen Zeiten mussten die Menschen altes Wissen in ihre Gegenwart transformieren und mit neuem ergänzen, um Aktualität herzustellen und es so nicht zu verlieren.'."\n".
                     'Es ging den alten Ägyptern, Griechen und Römern ganz sicher damals nicht anders.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Unsere Reise:'."\n".
+                    'Etappen unserer Reise:'."\n".
                     ''))),
                   array( 'text', array( text => array(
                     '1. Weitere Dimensionen der Dualität und Trinität in unserem Körper \\\\'."\n".
@@ -356,7 +362,7 @@
                     '5. Unsere Heilung – immer eine Selbstheilung \\\\'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                    'Informationen:'."\n".
+                    'Eckdaten:'."\n".
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Impulsvortrag',
