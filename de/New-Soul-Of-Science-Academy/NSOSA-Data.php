@@ -61,6 +61,7 @@
         'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Positive-Vision-Zukunft' => array( headline_text => 'Eine positive Vision für unsere Zukunft'/* , headline_text_short => 'X' */),
         'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Lebensnahes-Verstaendnis-Yin-Yang' => array( headline_text => 'Ein lebensnahes Verständnis von Yin und Yang, Sonne und Mond, dem Prinzip des Geschlechts'/* , headline_text_short => 'X' */),
         'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Wechselspiel-Bewusstsein-und-Unterbewusstsein-Heilung-Phoenix-Psychosomatik' => array( headline_text => 'Dem Wechselspiel von Bewusstsein und Unterbewusstsein entspringt unsere Heilung – vom Phönix aus der Asche zur Psychosomatik'/* , headline_text_short => 'X' */),
+        'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Helix-Spirale-Zeit-Mythologien-Religionen-Wissenschaft' => array( headline_text => 'Die Helix-Spirale. Die Zeit in Mythologien, Religionen und Wissenschaft'/* , headline_text_short => 'X' */),
         'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Yin-und-Yang-kurz' => array( headline_text => 'Yin und Yang, Sonne und Mond in Mythologie und Wissenschaft – das Prinzip des Geschlechts'/* , headline_text_short => 'X' */),
         'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Yin-und-Yang-lang-mit-Kind' => array( headline_text => 'Yin und Yang, Sonne und Mond sowie die Dreifaltigkeit in Mythologie und Wissenschaft – das Prinzip des Geschlechts und das daraus „geborene göttliche Kind“'/* , headline_text_short => 'X' */),
       ),

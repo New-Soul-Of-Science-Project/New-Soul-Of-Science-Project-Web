@@ -65,6 +65,7 @@
                       array(  jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Positive-Vision-Zukunft'),
                       array(  jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Lebensnahes-Verstaendnis-Yin-Yang'),
                       array(  jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Wechselspiel-Bewusstsein-und-Unterbewusstsein-Heilung-Phoenix-Psychosomatik'),
+                      array(  jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Helix-Spirale-Zeit-Mythologien-Religionen-Wissenschaft'),
                     )),
 
                   array( 'headline', array( jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:X', text =>
@@ -361,7 +362,7 @@
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Impulsvortrag',
-                        'Dauer: 1,5 bis 2 Stunden',
+                        'Dauer: 1 bis 1,5 Stunden',
                         'inklusive anschließendem Dialog mit den Zuhörern',
                         'Vortragsmanuskript: \jump[https://nsosp.org/download/NSOSA/Spannungsspiel-des-Lebens/Dem-Wechselspiel-von-Bewusstsein-und-Unterbewusstsein-entspringt-unsere-Heilung-vom-Phoenix-aus-der-Asche-zur-Psychosomatik-202502-3.3-Vortrag.pdf]{}{als PDF}',
                         'Vortrags-Video: \jump[https://www.youtube.com/watch?v=jwKjOlLx29k&list=PLagK1_ZceisExXuPb-fg-UbghOBuRC46v&index=4]{}{Dem Wechselspiel von Bewusstsein und Unterbewusstsein entspringt unsere Heilung – vom Phönix aus der Asche zur Psychosomatik}',
@@ -381,6 +382,72 @@
                       array(  jump_name => 'OM:SpaLeb:Bewusstsein'),
                       array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:OntologieDualitaetAllgemein'),
                       array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:UnsereExistenzDurchPsychosomatik'),
+                    )),
+
+
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Helix-Spirale-Zeit-Mythologien-Religionen-Wissenschaft', text =>
+                      
+                'Die Helix-Spirale. Die Zeit in Mythologien, Religionen und Wissenschaft', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Ich möchte mit euch jetzt auf eine analytische Gedanken- und Wissensreise gehen, mit deren Erkenntnissen wir zurückkehren und dieses Wissen für uns fruchtbar machen.'."\n",
+                      'Auf unserer Reise untersuchen wir die Mythologien und Religionen wieder von einer Metaebene und schauen, was sie verbindet:'."\n",
+                      'Diesmal bezüglich des Zusammenhangs der Dinge, der dadurch erweiterten Beseelung und der geometrischen Bezüge und Dimensionen, die dadurch entstehen, sowie, was dies alles mit der Zeit und ihrer Helix-Spiralform zu tun hat.'."\n",
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Heute möchte ich mit euch die dualen und ternären Aspekte der Zeit erforschen.',
+                        'Die Zeit hat für unser Leben, und so natürlich auch für unsere Ahnen, eine ganz besondere Bedeutung.',
+                        'Beleuchten wir die Aspekte der Zeit naturphilosophisch, dann offenbart sich uns ein dynamisches Prinzip der Grundstruktur unserer Welt, dass auf Stabilität und Fortentwicklung beruht, wie auch auf den Wegen des Schicksals; unseren Entscheidungen.',
+                        'Dabei handelt es sich im Grunde um eine dynamische Heilige Geometrie.',
+                        'Um dies zu verstehen, möchte ich damit beginnen, die spirituelle Magie der Geometrie zu beleuchten.',
+                    ))),
+                  array( 'text', array( text => array(
+                    'So bauen wir über unser Verständnis, was die Mythologien und Religionen verbindet, eine wertvolle Brücke in unsere Gegenwart, in unser heutiges Leben und in unsere Wissenschaft.'."\n",
+                      'Zu allen Zeiten mussten die Menschen altes Wissen in ihre Gegenwart transformieren und mit neuem ergänzen, um Aktualität herzustellen und es so nicht zu verlieren. Es ging den alten Ägyptern, Griechen und Römern ganz sicher damals nicht anders.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Etappen unserer Reise:'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    '1. Der Ring und die spirituelle Magie der Geometrie \\\\'."\n".
+                    '2. Gemeinsamer Dialog Ⅰ \\\\'."\n".
+                    '3. Das altägyptische duale Zeitverständnis und die Physik \\\\'."\n".
+                    '4. Die Trinität oder Dreifaltigkeit der Veränderung und der Zeit \\\\'."\n".
+                    '5. Gemeinsamer Dialog Ⅱ \\\\'."\n".
+                    '6. Die Trimurti und das Licht \\\\'."\n".
+                    '7. Das Schicksal als Weg, Weggabelung und Schwelle – die Transformation \\\\'."\n".
+                    '8. Das Zusammenwirken der Aspekte der Zeit zu neuem Verständnis der Welt \\\\'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                    'Eckdaten:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        'Impulsvortrag',
+                        'Dauer: 1,5 bis 2 Stunden',
+                        'inklusive anschließendem Dialog mit den Zuhörern',
+                        'Vortragsmanuskript: \jump[https://nsosp.org/download/NSOSA/Spannungsspiel-des-Lebens/Die-Helix-Spirale-Die-Zeit-in-Mythologien–Religionen-und–Wissenschaft-202502-6.4.pdf]{}{als PDF}',
+                        'Vortrags-Video: \jump[https://www.youtube.com/watch?v=joyy7i-f6Rw&list=PLagK1_ZceisExXuPb-fg-UbghOBuRC46v&index=7]{}{Die Helix-Spirale. Die Zeit in Mythologien, Religionen und Wissenschaft}',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Vertiefende Informationen auf den Themenseiten:'."\n".
+                    ''))),
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:NPYo:HaTha'),
+                      // array(  jump_name => 'OM:NPYo:Stein-der-Weisen'),
+                      array(  jump_name => 'OM:NPYo:ExistenzLeichtigkeit'),
+                      // array(  jump_name => 'OM:NPYo:Spiritualitaet-Psychologie'),
+                      // array(  jump_name => 'OM:NPYo:WasUnterschiedYogaSport'),
+                      array(  jump_name => 'OM:SpaLeb:Home'),
+                      array(  jump_name => 'OM:SpaLeb:Care-Prozess'),
+                      array(  jump_name => 'OM:SpaLeb:Psychosomatik'),
+                      // array(  jump_name => 'OM:SpaLeb:Bewusstsein'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:OntologieDualitaetAllgemein'),
+                      array(  jump_name => 'OM:BiOrd:Einleitung:OntologischeDeutung:UnsereExistenzDurchPsychosomatik'),
+                      array(  jump_name => 'OM:FrQFT:Home', title_site => 'Fraktale Quanten-Fluss-Theorie'),
+                      array(  jump_name => 'OM:FrQFT:Elementarteilchen'),
+                      array(  jump_name => 'OM:FrQFT:Lepton'),
+                      array(  jump_name => 'OM:FrQFT:Quantenchromodynamik:FarbPolUndLadung:Fig-UnpolPhotFarbpol6pol', title_site => 'Vektorgleichgewicht in der Quantenchromodynamik (Hadronen-Modell)'),
+                      array(  jump_name => 'OM:FrQFT:Quantengravitation'),
                     )),
 
 
