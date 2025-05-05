@@ -77,13 +77,8 @@
                       array(  jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Yin-und-Yang-lang-mit-Kind'),
                     )),
 
-                  array( 'headline', array( jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:X', text =>
 
-                '\italic{Gesamte Auflistung}', subline =>
-                  '')),
-
-
-                  array( 'headline', array( jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Positive-Vision-Zukunft', text =>
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Positive-Vision-Zukunft', text =>
                       
                 'Eine positive Vision für unsere Zukunft', subline =>
                   '')),
@@ -278,7 +273,7 @@
                     )),
 
 
-                  array( 'headline', array( jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Lebensnahes-Verstaendnis-Yin-Yang', text =>
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Lebensnahes-Verstaendnis-Yin-Yang', text =>
                       
                 'Ein lebensnahes Verständnis von Yin und Yang, Sonne und Mond, dem Prinzip des Geschlechts', subline =>
                   '')),
@@ -330,7 +325,7 @@
                     )),
 
 
-                  array( 'headline', array( jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Wechselspiel-Bewusstsein-und-Unterbewusstsein-Heilung-Phoenix-Psychosomatik', text =>
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Wechselspiel-Bewusstsein-und-Unterbewusstsein-Heilung-Phoenix-Psychosomatik', text =>
                       
                 'Dem Wechselspiel von Bewusstsein und Unterbewusstsein entspringt unsere Heilung – vom Phönix aus der Asche zur Psychosomatik', subline =>
                   '')),
@@ -389,7 +384,7 @@
                     )),
 
 
-                  array( 'headline', array( jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Yin-und-Yang-kurz', text =>
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Yin-und-Yang-kurz', text =>
                       
                 'Yin und Yang, Sonne und Mond in Mythologie und Wissenschaft \italic{– das Prinzip des Geschlechts}', subline =>
                   'Der Care-Prozess im ›Spannungsspiel des Lebens‹')),
@@ -418,7 +413,7 @@
                     )),
 
 
-                  array( 'headline', array( jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Yin-und-Yang-lang-mit-Kind', text =>
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Yin-und-Yang-lang-mit-Kind', text =>
                       
                 'Yin und Yang, Sonne und Mond sowie die Dreifaltigkeit in Mythologie und Wissenschaft \italic{– das Prinzip des Geschlechts und das daraus „geborene göttliche Kind“}', subline =>
                   'Der Care-Prozess im ›Spannungsspiel des Lebens‹')),

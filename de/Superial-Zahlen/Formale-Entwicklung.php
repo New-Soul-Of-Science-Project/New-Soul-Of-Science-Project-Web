@@ -336,7 +336,7 @@
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge'),
                     )),
 
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen', text =>
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen', text =>
 
                 'Zahlen und Mengen im Unendlichen', subline =>
                   'Der Übergang von Mengen und Werten endlicher natürlicher Zahlen ins Aktual-Unendliche')),
@@ -456,7 +456,7 @@
                     'Sie ermöglicht so unter anderem die Definition einer konkreten aktual unendlichen Differentialrechnung, wie oben schon angedeutet.'."\n".
                     ''))),
                   // #Ref: *SupNum:Stellenwertsystem-Schreibweise
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem', text =>
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem', text =>
                       
                 'Stellenwertsystem', subline =>
                   '')),
@@ -585,7 +585,7 @@
                     'Den neue Unendlichkeits-Gaußklammer benötigen wir sodann auch dabei, die'."\n".
                     '\jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Perspektive-Stellenwertsystems-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen zu definieren}.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen', text =>
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen', text =>
                       
                 'Skalierung der superialen Ebene einer Teilmenge der Superial-Zahlen', subline =>
                   '')),
@@ -611,7 +611,7 @@
                     'Hierdurch wird eine Menge erzeugt, die es ermöglicht, eine Summe zu definieren, in der superial kleine ganze Zahlen'."\n".
                     'durchgezählt werden, um superial kleine Flächen zu summieren, die das Integral ergeben.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge', text =>
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge', text =>
                       
                 'Intervall-Menge', subline =>
                   '')),
