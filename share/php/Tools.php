@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 22.03.2025, 12:00h
+  // #: Stand: 05.05.2025, 10:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20250505:  >:  "To_f_Paragraph" type "headline":  Add 'horizontalLineBefore' as boolean parameter.
   //           20250322:  >:  "To_f_Paragraph" type "bulletlist":  Add 'Shape' as object parameter.
   //           20241119:  >:  "To_f_Paragraph" type "jumplist":  Replace "<p>" tag by "<table>" tag.
   //           20240914:  +:  "To_f_HeaderElements":  Remove import "../share/js/NSOSP.js" and move it to local file
@@ -1637,30 +1638,30 @@
   
 
   
-  const title_site = 'title_site';
-  const jump_url = 'jump_url';
-  const title_chapter = 'title_chapter';
-  const jump_anchor = 'jump_anchor';
-  // const jump_url = 'jump_url';
+  const arrayMarginLeftRight = 'arrayMarginLeftRight';
+  const arrayType = 'arrayType';
+  const bullet_ary = 'bullet_ary';
   const Display = 'Display';
-  const Title = 'Title';
+  const headlineColor = 'headlineColor';
+  const horizontalLineBefore = 'horizontalLineBefore';
+  const intent = 'intent';
+  const jump_anchor = 'jump_anchor';
+  const jump_url = 'jump_url';
+  const jumpName = 'jumpName';
+  const jumpurl = 'jumpurl';
+  const NoIntentInFirstLine = 'NoIntentInFirstLine';
   const ParagraphList = 'ParagraphList';
+  const Title = 'Title';
   const titleColor = 'titleColor';
   const titleClass = 'titleClass';
-  const jumpName = 'jumpName';
   const TextColor = 'TextColor';
   const TextAlign = 'TextAlign';
-  const intent = 'intent';
-  const NoIntentInFirstLine = 'NoIntentInFirstLine';
-  const arrayType = 'arrayType';
   const titel_short = 'titel_short';
-  const bullet_ary = 'bullet_ary';
   const subline = 'subline';
-  const headlineColor = 'headlineColor';
-  const TitleVis = 'TitleVis';
-  const arrayMarginLeftRight = 'arrayMarginLeftRight';
   const sublineColor = 'sublineColor';
-  const jumpurl = 'jumpurl';
+  const TitleVis = 'TitleVis';
+  const title_chapter = 'title_chapter';
+  const title_site = 'title_site';
 
   function To_f_Paragraph( $type, $replace_ary=null, $replace_preg_ary=null, $offset='            ', $text)
   {
@@ -1739,8 +1740,19 @@
             echo $offset.'  <span style="color: #'.$text_color.'">'."\n";*/
         break;
       case 'headline':
-        // #: "margin" can intersect, "padding" can not intersect and it will allways add.
-        echo $offset.'<h4 style="margin-top: 20px;'.(((gettype( $text) == 'array') && array_key_exists( headlineColor, $text)) ? ' color: #'.(To_f_Color($text[headlineColor])).';' : '').'">'.(((gettype( $text) == 'array') && array_key_exists( jump_name, $text)) ? '<a name="'.($text[jump_name]).'"></a>' : '');
+        $headlineColorStr = '';
+        $anchorStr = '';
+        if (gettype( $text) == 'array') {
+          $headlineColorStr = array_key_exists( headlineColor, $text) ? ' color: #'.(To_f_Color($text[headlineColor])).';' : '';
+          $anchorStr = array_key_exists( jump_name, $text) ? '<a name="'.($text[jump_name]).'"></a>' : '';
+          
+          if (array_key_exists( horizontalLineBefore, $text) && $text[horizontalLineBefore]) {
+            To_f_headline_add_hides_end_line($offset, 100, 30, 30);
+          }
+        }
+        
+        // #: "margin" can intersect, "padding" can not intersect and it will always add.
+        echo $offset.'<h4 style="margin-top: 20px;'.($headlineColorStr).'">'.($anchorStr);
         break;
       case 'conclusion':
         //%!echo $offset.'<p style="margin-left: 30px; margin-right: 100px;">'."\n";
@@ -2744,17 +2756,17 @@
     To_f_elements_hides_WriteJavaScript_ary_idx( $offset, $To_g_headline_last_elements_hides_ary_dim - 1, $display, true);
 
     echo $offset.'</div>'."\n";
-    To_f_headline_add_hides_end_line();
+    To_f_headline_add_hides_end_line($offset);
     
     $To_g_headline_last_elements_hides_ary_dim = null;
     $local_elements_hides_ele_num = null;
   }
   
   
-  function To_f_headline_add_hides_end_line( $offset='          ')
+  function To_f_headline_add_hides_end_line( $offset='          ', $relLineInset=0, $marginTop=0, $marginBottom=0)
   {
     //echo '<hr noshade width="700" size="1" align="left" style="border: 1px; border-color: #C0C0C0; margin-left: 10px;">'."\n";
-    echo $offset.'<div style="border: none; border-bottom: 1px solid #FFFFFF; border-top: 1px solid #dcdcdc; clear: both; height: 0; margin-left: 10px; margin-right: 20px;"></div>'."\n";
+    echo $offset.'<div style="border: none; border-bottom: 1px solid #FFFFFF; border-top: 1px solid #dcdcdc; clear: both; height: 0; margin-top: '.($marginTop).'px; margin-bottom: '.($marginBottom).'px; margin-left: '.(10 + $relLineInset).'px; margin-right: '.(20 + $relLineInset).'px;"></div>'."\n";
   }
   
   
