@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 05.05.2025, 10:00h
+  // #: Stand: 06.05.2025, 20:00h
   
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20250506:  >:  "To_f_Paragraph" type "youtube":  Change 'iframe' to modern form without cookies.
   //           20250505:  >:  "To_f_Paragraph" type "headline":  Add 'horizontalLineBefore' as boolean parameter.
   //           20250322:  >:  "To_f_Paragraph" type "bulletlist":  Add 'Shape' as object parameter.
   //           20241119:  >:  "To_f_Paragraph" type "jumplist":  Replace "<p>" tag by "<table>" tag.
@@ -2133,7 +2134,14 @@
                       //    Rel: '&rel=0' shows no recommended videos at the end of the video.
                       //    Loop: '&loop=1' shoes an endless loop, but works only with parameter '&playlist=<Video>'. Makes big sense with Rel.
                       //    Auto: '&autoplay=1' plays the film immediately.
-                      echo '            <iframe class="tools-class-vid" width="'.($value_ary[width]).'" height="'.($value_ary[height]).'" src="'.($value_ary[source]).'" frameborder="1" allowfullscreen></iframe>'."\n";
+                      // echo '            <iframe class="tools-class-vid" width="'.($value_ary[width]).'" height="'.($value_ary[height]).'" src="'.($value_ary[source]).'" frameborder="1" allowfullscreen></iframe>'."\n";
+                      // #: YouTube Parameter, see file "Eingebettetes Youtube-Video automatisch starten und wiederholen (loop).pdf" or internet "http://www.somethinkspecial.de/youtube-video-autoplay-loop.html".
+                      //    Parameter in the link: 'https://www.youtube.com/embed/<Video>?<Parameter1>&<Parameter2>'
+                      //    &: Write no '&' after '?'!
+                      //    Rel: '&rel=0' shows no recommended videos at the end of the video.
+                      //    Loop: '&loop=1' shoes an endless loop, but works only with parameter '&playlist=<Video>'. Makes big sense with Rel.
+                      //    Auto: '&autoplay=1' plays the film immediately.
+                      echo '            <iframe width="'.($value_ary[width]).'" height="'.($value_ary[height]).'" src="'.($value_ary[source]).'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'."\n";
                       break;
                     case 'iframe':
                       echo '            <iframe class="tools-class-vid" width="'.($value_ary[width]).'" height="'.($value_ary[height]).'" src="'.($value_ary[source]).'" frameborder="0"></iframe>'."\n";

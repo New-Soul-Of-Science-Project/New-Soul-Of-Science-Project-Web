@@ -308,6 +308,10 @@
                         'Vortragsmanuskript: \jump[https://nsosp.org/download/NSOSA/Spannungsspiel-des-Lebens/Ein-lebensnahes-Verstaendnis-von-Yin-und-Yang-Sonne-und-Mond-dem-Prinzip-des-Geschlechts-202502-1.9-kurz.pdf]{}{als PDF}',
                         'Vortrags-Video: \jump[https://www.youtube.com/watch?v=JV0igRBnQUM&list=PLagK1_ZceisExXuPb-fg-UbghOBuRC46v]{}{Ein lebensnahes Verständnis von Yin und Yang, Sonne und Mond, dem Prinzip des Geschlechts}',
                     ))),
+
+                  array( 'youtube',
+                    array_merge( $NSOSA_g_youtube_ary_EinLebVerstaendnisYinYang, array( name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Lebensnahes-Verstaendnis-Yin-Yang-YouTube'))),
+
                   array( 'text', array( text => array(
                     'Vertiefende Informationen auf den Themenseiten:'."\n".
                     ''))),
@@ -367,6 +371,10 @@
                         'Vortragsmanuskript: \jump[https://nsosp.org/download/NSOSA/Spannungsspiel-des-Lebens/Dem-Wechselspiel-von-Bewusstsein-und-Unterbewusstsein-entspringt-unsere-Heilung-vom-Phoenix-aus-der-Asche-zur-Psychosomatik-202502-3.3-Vortrag.pdf]{}{als PDF}',
                         'Vortrags-Video: \jump[https://www.youtube.com/watch?v=jwKjOlLx29k&list=PLagK1_ZceisExXuPb-fg-UbghOBuRC46v&index=4]{}{Dem Wechselspiel von Bewusstsein und Unterbewusstsein entspringt unsere Heilung – vom Phönix aus der Asche zur Psychosomatik}',
                     ))),
+
+                  array( 'youtube',
+                    array_merge( $NSOSA_g_youtube_ary_DemWechselspielVonBewusstsein, array( name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Wechselspiel-Bewusstsein-und-Unterbewusstsein-Heilung-Phoenix-Psychosomatik-YouTube'))),
+
                   array( 'text', array( text => array(
                     'Vertiefende Informationen auf den Themenseiten:'."\n".
                     ''))),
@@ -428,6 +436,10 @@
                         'Vortragsmanuskript: \jump[https://nsosp.org/download/NSOSA/Spannungsspiel-des-Lebens/Die-Helix-Spirale-Die-Zeit-in-Mythologien–Religionen-und–Wissenschaft-202502-6.4.pdf]{}{als PDF}',
                         'Vortrags-Video: \jump[https://www.youtube.com/watch?v=joyy7i-f6Rw&list=PLagK1_ZceisExXuPb-fg-UbghOBuRC46v&index=7]{}{Die Helix-Spirale. Die Zeit in Mythologien, Religionen und Wissenschaft}',
                     ))),
+
+                  array( 'youtube',
+                    array_merge( $NSOSA_g_youtube_ary_DieHelixSpirale, array( name => 'OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens:Helix-Spirale-Zeit-Mythologien-Religionen-Wissenschaft-YouTube'))),
+
                   array( 'text', array( text => array(
                     'Vertiefende Informationen auf den Themenseiten:'."\n".
                     ''))),

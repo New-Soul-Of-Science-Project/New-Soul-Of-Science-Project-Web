@@ -588,14 +588,14 @@
 
   
   
-  //alter Film $FrQFT_g_youtube_ary_Lepton                   = array( source => 'http://www.youtube.com/embed/SFW0iG_D28c?rel=0', width => '420px', height => '426px', name => 'OM:FrQFT:Elementarteilchen:Vid-Lepton',
+  // alter Film $FrQFT_g_youtube_ary_Lepton                   = array( source => 'http://www.youtube.com/embed/SFW0iG_D28c?rel=0', width => '420px', height => '426px', name => 'OM:FrQFT:Elementarteilchen:Vid-Lepton',
   // #: Mit Loop. (Parameter siehe 'Tools_vX.php' funktion 'To_f_Paragraph' Parameter "$type = 'youtube'")
   // #!: Derzeit ungenutzt !!! Weil "$FrQFT_g_figure_ary_Lepton_highRes" in Verwendung.
   $FrQFT_g_youtube_ary_Lepton                   = array( source => 'https://www.youtube.com/embed/LsF93WgX9fE?rel=0&loop=1&playlist=LsF93WgX9fE', width => '420px', height => '307px'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
                                                          text => 'Geladenes Lepton mit hypothetischen sechs wellenförmigen Phasen als Näherungsdarstellung. (In Bezug auf die festgelegte Konvention versehentlich ein Antiteilchen in Up-Orientierung.)'."\n".
                                                                   '\const{FrQFT_g_text_WQSWQMenge}');
   
-  //ohne Loop $FrQFT_g_youtube_ary_VakuumElapson            = array( source => 'http://www.youtube.com/embed/XfNlH_aWhrE?rel=0', width => '560', height => '315', name => set local',
+  // ohne Loop $FrQFT_g_youtube_ary_VakuumElapson            = array( source => 'http://www.youtube.com/embed/XfNlH_aWhrE?rel=0', width => '560', height => '315', name => set local',
   // #: Mit Loop. (Parameter siehe 'Tools_vX.php' funktion 'To_f_Paragraph' Parameter "$type = 'youtube'")
   // #!: Derzeit ungenutzt !!! Weil "$FrQFT_g_figure_ary_VakuumElapson" in Verwendung.
   $FrQFT_g_youtube_ary_VakuumElapson            = array( source => 'https://www.youtube.com/embed/XfNlH_aWhrE?rel=0&loop=1&playlist=XfNlH_aWhrE', width => '560', height => '315', name => 'set local',
@@ -654,6 +654,29 @@
   
 
 
+  $NSOSA_g_youtube_ary_EinLebVerstaendnisYinYang = array( source => 'https://www.youtube-nocookie.com/embed/JV0igRBnQUM?si=H5eGNBVYRx77pKBk', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+                                                         text => 'Vortrag „Ein lebensnahes Verständnis von Yin und Yang, Sonne und Mond, dem Prinzip des Geschlechts“'."\n".
+                                                                   'in der \jump[https://menschlichwirtschaften.de/akademie/]{}{Akademie} von \jump[https://menschlichwirtschaften.de]{}{Menschlich Wirtschaften eG}.'."\n".
+                                                                   'Vortragsreihe \jump[https://menschlichwirtschaften.de/initiativen/hermes-trismegistos-weisheit-in-die-gegenwart-bringen/]{}{„Hermes Trismegistos’ Weisheit in die Gegenwart bringen und selbstwirksam entfalten – Akademie, Vortragsreihe“}.'."\n".
+                                                                   'Hier die \jump[https://www.youtube.com/watch?v=JV0igRBnQUM&list=PLagK1_ZceisExXuPb-fg-UbghOBuRC46v]{}{Playliste} zur Reihe.'."\n".
+                                                                   '');
+  
+  $NSOSA_g_youtube_ary_DemWechselspielVonBewusstsein = array( source => 'https://www.youtube-nocookie.com/embed/jwKjOlLx29k?si=HXVOYuzZZY6xppT0', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+                                                         text => 'Vortrag „Dem Wechselspiel von Bewusstsein und Unterbewusstsein entspringt unsere Heilung – Psychosomatik“'."\n".
+                                                                   'in der \jump[https://menschlichwirtschaften.de/akademie/]{}{Akademie} von \jump[https://menschlichwirtschaften.de]{}{Menschlich Wirtschaften eG}.'."\n".
+                                                                   'Vortragsreihe \jump[https://menschlichwirtschaften.de/initiativen/hermes-trismegistos-weisheit-in-die-gegenwart-bringen/]{}{„Hermes Trismegistos’ Weisheit in die Gegenwart bringen und selbstwirksam entfalten – Akademie, Vortragsreihe“}.'."\n".
+                                                                   'Hier die \jump[https://www.youtube.com/watch?v=JV0igRBnQUM&list=PLagK1_ZceisExXuPb-fg-UbghOBuRC46v]{}{Playliste} zur Reihe.'."\n".
+                                                                   '');
+  
+  $NSOSA_g_youtube_ary_DieHelixSpirale          = array( source => 'https://www.youtube-nocookie.com/embed/joyy7i-f6Rw?si=hKuo05W4qUvrtq1w', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+                                                         text => 'Vortrag „Die Helix-Spirale. Die Zeit in Mythologien, Religionen und Wissenschaft“'."\n".
+                                                                   'in der \jump[https://menschlichwirtschaften.de/akademie/]{}{Akademie} von \jump[https://menschlichwirtschaften.de]{}{Menschlich Wirtschaften eG}.'."\n".
+                                                                   'Vortragsreihe \jump[https://menschlichwirtschaften.de/initiativen/hermes-trismegistos-weisheit-in-die-gegenwart-bringen/]{}{„Hermes Trismegistos’ Weisheit in die Gegenwart bringen und selbstwirksam entfalten – Akademie, Vortragsreihe“}.'."\n".
+                                                                   'Hier die \jump[https://www.youtube.com/watch?v=JV0igRBnQUM&list=PLagK1_ZceisExXuPb-fg-UbghOBuRC46v]{}{Playliste} zur Reihe.'."\n".
+                                                                   '');
+  
+  
+  
   $NSOSP_g_figure_ary_WolfgangHuss              = array( fig_file_name => 'Wolfgang_Huss-2016-IMG_3683-clip', fig_alt_description => 'Wolfgang Huß ©2016 by Wolfgang Huß', figFileType => 'jpg', figPDF_is => false, width => '270px', height => '288px', name => 'set local!',
                                                          text => 'Yoga-Lehrer/-Coach, Forscher, Programmierer');
   
