@@ -199,21 +199,30 @@
                       'Weil unsere Gehirnhälften ganz überwiegend die jeweils andere Seite unseres Körpers fühlen und steuern, ist bei den meisten Menschen die rechte Gesichts- und Körperhälfte'."\n".
                     'mit unseren Handlungen und die linke mit unseren Gefühlen verbunden.'."\n".
                     'So komm die Djet- und die Neheh-Zeit als Asymmetrie in unser Gehirn, unseren Körper und damit auch in unser Gesicht.'."\n",
-                      'So gut wie alle Menschen entsprechen somit dem oben dargestellten Gesicht aus den Hieroglyphen des Ra und des Horus (siehe \jumpname{OM:NPYo:HaTha:Vortext:Fig-AugeDesRa} und \jumpname{OM:NPYo:HaTha:Vortext:Fig-AugeDesHorus}).'."\n".
+                      'Nach meinem Wissen entsprechen im Grunde alle Menschen somit dem oben dargestellten Gesicht aus den Hieroglyphen des Ra und des Horus (siehe \jumpname{OM:NPYo:HaTha:Vortext:Fig-AugeDesRa} und \jumpname{OM:NPYo:HaTha:Vortext:Fig-AugeDesHorus}).'."\n".
                     ''))),
 
                   // #!: PDF fehlt!
                   array( 'figure',
-                    array_merge( $NPYo_g_figure_ary_AchtsamkeitDracheSchlange, array( name => 'OM:NPYo:HaTha:Vortext:Fig-SymbolYinYangKoerperSeeleExistenz'))),
+                    array_merge( $NPYo_g_figure_ary_AchtsamkeitDracheSchlange, array( name => 'OM:NPYo:HaTha:Vortext:Fig-AchtsamkeitDracheSchlange'))),
                       
                   array( 'text', array( text => array(
-                    'Die erklärten Zusammenhänge sind sicherlich kein Zufall.'."\n".
-                    'Sie spiegeln sich in den alten Lebensweisheiten der Menschheit wider, die sich in ihren Mythen und Religionen ausdrücken.'."\n".
-                    'Und wir finden bemerkenswerte Verbindungen zu diesen Lebensweisheiten schließlich in unserer heutigen Wissenschaft wieder, wenn wir plausible und nützliche Modelle,'."\n".
-                    'wie den Care-Prozess oder Achtsamkeitsprozess, zur Erklärung der Zusammenhänge heranziehen,'."\n".
-                    'unser \jump{OM:SpaLeb:Psychosomatik}{psychosomatischer Lebensprozess}.'."\n",
+                    'Dadurch können wir erkennen, dass unsere Existenz, unser Leben, durch einen inneren und nach außen wirksamen Prozess'."\n".
+                    'bestimmt wird, den ich in \jumpname{OM:NPYo:HaTha:Vortext:Fig-AchtsamkeitDracheSchlange} künstlerisch darstelle.'."\n".
+                    'In quasi unendlicher Folge \lm{ \infty } schwingt unser Lebensprozess hier zwischen der männlichen Drachenschlange und der'."\n".
+                    'weiblichen Schlange hin und her und richtet uns gen Himmel auf,'."\n".
+                    'was noch durch ein zweites, in der Zeichnung fehlendes Hexagramm, siehe \jumpname{OM:NPYo:HaTha:Vortext:Fig-Hexagramm},'."\n".
+                    'dass nach oben und unten zeigt, – Davidsstern oder Shiva-Shakti-Symbol – im Zentrum ergänzt werden sollte.'."\n",
+                      'Im Wirkungszentrum des Zusammentreffens der Drachenschlangen findet im recht Verborgenen die Magie statt, die Neues schöpft;'."\n".
+                    'unsere Selbstfürsorge und Fürsorge entstehen lässt;'."\n".
+                    'aus dem Zusammenwirken des Prinzips des Geschlechts ein „göttliches Kind“, den Lebensprozess, in uns „zeugt“.'."\n",
+                      'Die erklärten Zusammenhänge sind sicherlich kein Zufall.'."\n",
+                      'Sie spiegeln sich in den alten Lebensweisheiten der Menschheit wider, die sich in ihren \jump{OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens}{Mythen und Religionen} ausdrücken.'."\n".
+                    'Und wir finden bemerkenswerte \jump{OM:nSOSa:Programm:Spannungs-Spiel-des-Lebens}{Verbindungen zu diesen Lebensweisheiten schließlich in unserer heutigen Wissenschaft} wieder, wenn wir plausible und nützliche Modelle,'."\n".
+                    'wie den Care-Prozess oder Achtsamkeitsprozess, zur Erklärung der Zusammenhänge heranziehen.'."\n".
+                    'So entdecken wir die Details unseres \jump{OM:SpaLeb:Psychosomatik}{psychosomatischen Lebensprozesses}.'."\n",
                       'Hier wird die Perspektive einer \jump{OM:SpaLeb:Home}{neuen Biophysik} eingenommen, die die Frage \jump{OM:SpaLeb:Was-ist-Leben}{›Was ist Leben?‹} aus einer neuen, auf der Existenzfrage beruhenden Physik beantwortet.'."\n".
-                    'Diese \jump{OM:FrQFT:Home}{neue Physik} schließt das Leben mit ein, indem sie auch die Existenz von Elementarteilchen auf der Grundlage von selbstorganisierten Regelprozessen annimmt.'."\n".
+                    'Diese \jump{OM:FrQFT:Home}{neue Physik} schließt das Leben mit ein, indem sie auch die Existenz von Elementarteilchen auf der Grundlage von selbstorganisierten Regelprozessen versteht.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:NPYo:HaTha:Vortext:X', text =>
                                            
