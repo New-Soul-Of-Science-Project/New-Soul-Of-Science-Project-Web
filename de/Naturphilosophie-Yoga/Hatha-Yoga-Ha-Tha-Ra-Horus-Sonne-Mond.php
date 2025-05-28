@@ -473,7 +473,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:NPYo:Chakras-Kabbala-Tarot'),
+                      array(  jump_name => 'OM:NPYo:Trimurti'),
                     )),
               )
           ); ?>

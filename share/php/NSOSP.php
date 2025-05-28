@@ -639,22 +639,28 @@
   $NPYo_g_figure_ary_LebenDesHorusHermesstab     = array( fig_file_name => 'Naturphilosophie-Yoga/Leben-des-Horus-Hermesstab-v02', fig_alt_description => 'Leben des Horus mit Hermesstab', width => '660px', height => '600px', name => 'set local!',
                                                          text => $NPYo_g_text_LebenDesHorusHermesstab_Orig);
   
-  $NPYo_g_figure_ary_SymbolYinYangKoerperSeeleExistenz
-                                                 = array( fig_file_name => 'Naturphilosophie-Yoga/Yin_und_Yang_der_Koerper_Seele_Existenz_v03', figPDF_is => false, fig_alt_description => 'Yin und Yang der Körper-Seele-Existenz', width => '284px', height => '379px', name => 'set local!',
+  $NPYo_g_figure_ary_SymbolYinYangKoerperSeeleExistenz =
+                                                  array( fig_file_name => 'Naturphilosophie-Yoga/Yin_und_Yang_der_Koerper_Seele_Existenz_v03', figPDF_is => false, fig_alt_description => 'Yin und Yang der Körper-Seele-Existenz', width => '284px', height => '379px', name => 'set local!',
                                                          text => 'Das transzendente Symbol für das Naturphilosophie-Yoga: Yin und Yang der Körper-Seele-Existenz'."\n".
                                                                   'als Dualismus von Djet und Neheh.');
   
-  $NPYo_g_figure_ary_PhoenixAusDerAsche
-                                                 = array( fig_file_name => 'Naturphilosophie-Yoga/Phoenix-aus-der-Asche-fuer-Tom-20220705-v02', figPDF_is => false, fig_alt_description => 'Phönix aus der Asche – Bewusstsein und Unterbewusstsein', width => '284px', height => '389px', name => 'set local!',
+  $NPYo_g_figure_ary_PhoenixAusDerAsche         = array( fig_file_name => 'Naturphilosophie-Yoga/Phoenix-aus-der-Asche-fuer-Tom-20220705-v02', figPDF_is => false, fig_alt_description => 'Phönix aus der Asche – Bewusstsein und Unterbewusstsein', width => '284px', height => '389px', name => 'set local!',
                                                          text => 'Der Phönix aus der Asche des Naturphilosophie-Yoga: Die Hoffnung im Yin und Yang als fraktaler Dualismus von Bewusstsein und Unterbewusstsein.');
   
-  $NPYo_g_figure_ary_YinYang                     = array( fig_file_name => 'Naturphilosophie-Yoga/Yin-Yang-Taijitu-v01', fig_alt_description => 'Das Yin und Yang oder Taijitu', width => '380px', height => '500px', name => 'set local!',
+  $NPYo_g_figure_ary_YinYang                    = array( fig_file_name => 'Naturphilosophie-Yoga/Yin-Yang-Taijitu-v01', fig_alt_description => 'Das Yin und Yang oder Taijitu', width => '380px', height => '500px', name => 'set local!',
                                                          text => 'Das Taijitu oder Yin-Yang-Symbol veranschaulicht, dass das Dao eine Einheit hervorbringt, die aus dynamischen Gegensätzen besteht.'."\n".
                                                                   'Durch die dynamischen Gegensätze entsteht die Welt und ihre Natur, die uns Menschen beinhaltet.');
   
+  $NPYo_g_youtube_ary_HastDuShivaSchonEinmalSoGesehen =
+                                                  array( source => 'https://www.youtube-nocookie.com/embed/stY3r0bUleI?si=iWhrbvjUEbNvl4uS', width => '315', height => '560'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+                                                         text => 'Der Autor dieses Videos behauptet sogar, dass das englische Wort für Gott, also God oder G-O-D,'."\n".
+                                                                   'im hinduistischen Verständnis für Generator, Operator und Destroyer steht.'."\n".
+                                                                   '');
 
 
-  $NSOSA_g_youtube_ary_EinLebVerstaendnisYinYang = array( source => 'https://www.youtube-nocookie.com/embed/JV0igRBnQUM?si=H5eGNBVYRx77pKBk', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+
+  $NSOSA_g_youtube_ary_EinLebVerstaendnisYinYang =
+                                                  array( source => 'https://www.youtube-nocookie.com/embed/JV0igRBnQUM?si=H5eGNBVYRx77pKBk', width => '560', height => '315'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
                                                          text => 'Vortrag „Ein lebensnahes Verständnis von Yin und Yang, Sonne und Mond, dem Prinzip des Geschlechts“'."\n".
                                                                    'in der \jump[https://menschlichwirtschaften.de/akademie/]{}{Akademie} von \jump[https://menschlichwirtschaften.de]{}{Menschlich Wirtschaften eG}.'."\n".
                                                                    'Vortragsreihe \jump[https://menschlichwirtschaften.de/initiativen/hermes-trismegistos-weisheit-in-die-gegenwart-bringen/]{}{„Hermes Trismegistos’ Weisheit in die Gegenwart bringen und selbstwirksam entfalten – Akademie, Vortragsreihe“}.'."\n".

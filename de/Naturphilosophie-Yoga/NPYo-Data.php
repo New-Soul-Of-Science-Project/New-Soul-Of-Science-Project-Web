@@ -96,7 +96,8 @@
         'OM:NPYo:ExistenzLeichtigkeit:Pleroma-Plenum-Vakuum' => array( headline_text => 'Pleroma, Plenum und Vakuum'/* , headline_text_short => 'XXX' */),
       ),
     ),
-    'OM:NPYo:HaTha' => array( url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php',
+    'OM:NPYo:HaTha' => array(
+      url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php',
       url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Hatha-Yoga-Ha-Tha-Ra-Horus-Sonne-Mond.php',
       titel => 'Hatha Yoga – Ha und Tha, Ra und Horus, Sonne und Mond - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
       description => 'Unsere Balance der Körperhälften, unser Schicksal. Der Zusammenhang zwischen Yoga, Tantra, altägyptischer und hinduistischer Mythologie, unsem Achtsamkeitsprozess und der Gesichtsspiegelung.',
@@ -138,6 +139,25 @@
           'OM:NPYo:Spiritualitaet-Psychologie:Vortext:DialogBewusstseinUnterbewusstsein' => array( headline_text => 'Wenn mein Bewusstsein mit meinem Unterbewusstsein in einen Dialog tritt', headline_text_short => 'Mein Dialog zwischen Bewusstsein und Unterbewusstsein'),
                    
         'OM:NPYo:Spiritualitaet-Psychologie:Wissen-Unwissen' => array( headline_text => 'Wissen und Unwissen'/*, headline_text_short => 'XXX'*/),
+      ),
+    ),
+    'OM:NPYo:Trimurti' => array(
+      url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Trimurti-Hekate-drei-Nornen-Vergangenheit-Gegenwart-Zukunft.php',
+      url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Trimurti-Hekate-drei-Nornen-Vergangenheit-Gegenwart-Zukunft.php',
+      titel => 'Trimurti, Hermes Trismegistos, Hekate und drei Nornen – Vergangenheit, Gegenwart und Zukunft - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
+      description => '\name[undertitle]{OM:NPYo:Trimurti}. — \name[description]{OM:NPYo:Trimurti}.',
+      keywords => '',
+      text_titel_h1 => 'Trimurti, Hermes Trismegistos, Hekate und drei Nornen – Vergangenheit, Gegenwart und Zukunft',
+      text_titel_short => 'Trimurti, Hermes Trismegistos, Hekate und drei Nornen – Vergangenheit, Gegenwart und Zukunft',
+      text_undertitel_h2 => 'Brahma, Vishnu und Shiva als Einheit des kosmischen Prinzips des Schicksals der Trimurti',
+      text_titel_discr_h3 => 'Dieses kosmische Prinzip entspricht auch den Gottheiten Hermes Trismegistos, Hekate und den nordisch-mythologischen Figuren der drei Nornen, die alle unter anderem die Vergangenheit, Gegenwart und Zukunft repräsentieren',
+      jump_ary => array(
+        'OM:NPYo:Trimurti:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          // 'OM:NPYo:Trimurti:Vortext:XXX' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+            'OM:NPYo:Trimurti:YouTube-HastDuShivaSchonEinmalSoGesehen' => array( headline_text => 'Video '.(++$FrQFT_g_Vid_idx), headline_text_short => 'Video '.($FrQFT_g_Vid_idx)),
+                   
+        // 'OM:NPYo:Trimurti:XXX' => array( headline_text => 'Wir sind zwei verwobene Wesen', headline_text_short => 'Wir sind zwei verwobene Wesen'),
       ),
     ),
   );
