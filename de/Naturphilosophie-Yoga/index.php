@@ -136,11 +136,12 @@
                     ))),
                     
                   array( 'normal',
-                    '<h3 class="tools-class-contentlist-header">Historisches, mythologisches und religiöses Wissen \\\\ \\small{Zusammenhang und Interpretation}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Altes, mythologisches und religiöses Wissen \\\\ \\small{Verständnis, Zusammenhang und Interpretation}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:HaTha'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Trimurti'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Yin-Yang-heiliges-Kind'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Chakras-Kabbala-Tarot'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:ExistenzLeichtigkeit'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:NPYo:Stein-der-Weisen'),

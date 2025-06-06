@@ -2,12 +2,12 @@
         include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
 
 
-<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:NPYo:Trimurti'); ?>
+<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:NPYo:Yin-Yang-heiliges-Kind'); ?>
 
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:NPYo:HaTha'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:NPYo:Trimurti'); ?>
 
 	
           <?php To_f_Paragraph_list( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ',
@@ -22,7 +22,7 @@
                     ''))),
 
                   array( 'youtube',
-                    array_merge( $NPYo_g_youtube_ary_HastDuShivaSchonEinmalSoGesehen, array( name => 'OM:NPYo:Trimurti:YouTube-HastDuShivaSchonEinmalSoGesehen'))),
+                    array_merge( $NPYo_g_youtube_ary_SecretSymbolOfShivaExposed, array( name => 'OM:NPYo:Yin-Yang-heiliges-Kind:YouTube-SecretSymbolOfShivaExposed'))),
 
                   /* array( 'headline', array( jump_name => 'OM:NPYo:Trimurti:Vortext:X', text =>
                                            
@@ -33,7 +33,7 @@
                     ''))),
 
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:NPYo:Yin-Yang-heiliges-Kind'),
+                      array(  jump_name => 'OM:NPYo:Chakras-Kabbala-Tarot'),
                     )),
                 )
           ); ?>

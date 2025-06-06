@@ -160,5 +160,24 @@
         // 'OM:NPYo:Trimurti:XXX' => array( headline_text => 'Wir sind zwei verwobene Wesen', headline_text_short => 'Wir sind zwei verwobene Wesen'),
       ),
     ),
+    'OM:NPYo:Yin-Yang-heiliges-Kind' => array(
+      url_abs => 'https://nsosp.org/de/Naturphilosophie-Yoga/Yin-Yang-Sonne-Mond-heiliges-Kind.php',
+      url_rel => $Glo_PathRel_back.'../de/Naturphilosophie-Yoga/Yin-Yang-Sonne-Mond-heiliges-Kind.php',
+      titel => 'Yin und Yang oder Sonne und Mond und das heilige Kind - Naturphilosophie-Yoga (NaPhil-Yoga) - Deutsch',
+      description => '\name[undertitle]{OM:NPYo:Trimurti}. — \name[description]{OM:NPYo:Trimurti}.',
+      keywords => '',
+      text_titel_h1 => 'Yin und Yang oder Sonne und Mond und das heilige Kind',
+      text_titel_short => 'Yin und Yang oder Sonne und Mond und das heilige Kind',
+      text_undertitel_h2 => 'Das Prinzip des Geschlechts und das heilige Kind, das daraus geboren wird',
+      text_titel_discr_h3 => 'Unsere Gehirnhälften sind nach dem Prinzip des Geschlechts auf Gefühle (weiblich) und Handlungen (männlich) spezialisiert, was sich diagonal in unseren Körperhälften widerspiegelt. Dies ist eine wesentliche Grundlage des alten Wissens und offenbar in nahezu allen Mythologien und Religionen zu finden. Es ist ebenso die Grundlage unserer Psyche und Psychosomatik und damit unserer Fürsorge und Heilung, das heilige Kind, das daraus geboren wird',
+      jump_ary => array(
+        'OM:NPYo:Yin-Yang-heiliges-Kind:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          // 'OM:NPYo:Trimurti:Vortext:XXX' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx), headline_text_short => 'Abbildung '.($FrQFT_g_Fig_idx)),
+            'OM:NPYo:Yin-Yang-heiliges-Kind:YouTube-SecretSymbolOfShivaExposed' => array( headline_text => 'Video '.(++$FrQFT_g_Vid_idx), headline_text_short => 'Video '.($FrQFT_g_Vid_idx)),
+                   
+        // 'OM:NPYo:Trimurti:XXX' => array( headline_text => 'Wir sind zwei verwobene Wesen', headline_text_short => 'Wir sind zwei verwobene Wesen'),
+      ),
+    ),
   );
 ?>

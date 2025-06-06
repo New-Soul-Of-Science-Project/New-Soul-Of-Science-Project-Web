@@ -656,6 +656,12 @@
                                                          text => 'Der Autor dieses Videos behauptet sogar, dass das englische Wort für Gott, also God oder G-O-D,'."\n".
                                                                    'im hinduistischen Verständnis für Generator, Operator und Destroyer steht.'."\n".
                                                                    '');
+  
+  $NPYo_g_youtube_ary_SecretSymbolOfShivaExposed =
+                                                  array( source => 'https://www.youtube-nocookie.com/embed/CiIEwN6UVzE?si=tKqW57S_5-Wctgr0', width => '315', height => '560'/* YouTube sagt 315px, was eine schwarze Kante oben und unten gibt */, name => 'set local',
+                                                         text => 'Schon Shiva erzählt uns vom Prinzip des Geschlechts, in dem er als Transformator seine weibliche Seite (vornehmlich die Gefühle)'."\n".
+                                                                   'mit seiner männlichen (vornehmlich die Handlungen) in Einheit und Einklang bringt.'."\n".
+                                                                   '');
 
 
 
