@@ -846,10 +846,8 @@
                   array( 'text', array( text => array(
                     'Die transzendenten Zahlen kommen ins Spiel, wenn wir uns beispielsweise mit der Länge der Kurven beschäftigen oder'."\n".
                     'zu den Exponentialfunktionen übergehen wollen.'."\n",
-                      'Der Umfang eines Kreises \lm{ 2π } ist beispielsweise eine Länge oder Strecke entlang der Kreisrelation und eine transzendente Zahl.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                      'Der Umfang eines Kreises \lm{ 2π } ist beispielsweise eine Länge oder Strecke entlang der Kreisrelation und eine transzendente Zahl.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:OntologieDerGeometrie:X', text =>
                       
@@ -892,13 +890,7 @@
                       array( display => 'on',  latex => '{  \mathbb{K}_{2^{3}}  =  *\{ \begin{bmatrix} 1 \cr 0 \end{bmatrix}, \begin{bmatrix} \sqrt{ \frac{1}{2} } \cr \sqrt{ \frac{1}{2} } \end{bmatrix}, \begin{bmatrix} 0 \cr 1 \end{bmatrix}, \begin{bmatrix} - \sqrt{ \frac{1}{2} } \cr \sqrt{ \frac{1}{2} } \end{bmatrix}, \\\ \qquad\qquad\;\; \begin{bmatrix} -1 \cr 0 \end{bmatrix}, \begin{bmatrix} \sqrt{ - \frac{1}{2} } \cr \sqrt{ - \frac{1}{2} } \end{bmatrix}, \begin{bmatrix} 0 \cr -1 \end{bmatrix}, \begin{bmatrix} \sqrt{ \frac{1}{2} } \cr - \sqrt{ \frac{1}{2} } \end{bmatrix}  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Tabelle der Koordinatendreiecke für das 16-Eck} \\\\'."\n".
@@ -962,11 +954,7 @@
                                           label_text => '', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
                       
@@ -1024,10 +1012,11 @@
                   array( 'text', array( text => array(
                   '\condb{Schritt 3: Kosinus und Sinus sind ebenfalls algebraisch} \\\\'."\n".
                     'Da ja, wie oben beschrieben, gilt'."\n".
+                    '\color{*Bearb}{(auf obere Formel verweisen, Nummerierung!)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ArGeo.O', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  XXX z_{k}  =  e^{2\pi i k / m}  =  \cos \frac{2\pi k}{m} + i \sin \frac{2\pi k}{m}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  z_{k}  =  e^{2\pi i k / m}  =  \cos \frac{2\pi k}{m} + i \sin \frac{2\pi k}{m}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'und wir bereits gezeigt haben, dass \lm{ z_k } algebraisch ist, genügt es zu zeigen, dass auch Kosinus und Sinus algebraisch sind.'."\n".
@@ -1077,21 +1066,13 @@
                     'Dann wäre \lm{ \# \lbrack 0, 1 \lbrack_\mathbb{A} \; ?= \frac{ \s }{ 2 ω } }.'."\n".
                     'Dies führt nach meinem Verständnis dazu, dass die superial kleinen Summanden vollständig verschwinden und alle Koordinaten'."\n".
                     'rein reell algebraische werden.'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    '\lm{ 2 \cdot \# [ -1, 1 ]_\mathbb{A} - 2 = 2 \cdot *( 2 \cdot \frac{ \s }{ 2 ω } *) - 2 = \frac{ 2 \s }{ ω } - 2 }'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n",
+                    '\lm{ 2 \cdot \# [ -1, 1 ]_\mathbb{A} - 2 = 2 \cdot *( 2 \cdot \frac{ \s }{ 2 ω } *) - 2 = \frac{ 2 \s }{ ω } - 2 }'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Die Betrachtung der Verhältnisse im Kreis verlagert die Fragestellung der sinnvollen Koeffizienten geometrisch ins Endliche} \\\\'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -1102,10 +1083,6 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( \forall a^{+} \in \mathbb{A}_{\R}^{+} *)  *[  *( e^{a^{+} \cdot \i \cdot 2 π} *)^{\s}  ?=  1  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'text', array( text => array(
@@ -1128,11 +1105,7 @@
                       array( display => 'on',  latex => '{  *( \forall a \in \mathbb{A}_{\R} *) *[  a \cdot 2^{ω} \in \mathbb{N}_{\infty}  \land  a \cdot 2^{ω - 1} \notin \mathbb{N}_{\infty}  *]  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   /* array( 'equations',
                     array( equ_text_std => 'SN.ArGeo.D', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
