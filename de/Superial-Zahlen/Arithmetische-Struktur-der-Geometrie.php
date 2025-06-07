@@ -1053,7 +1053,7 @@
                     'alle algebraischen Zahlen zwischen minus Eins und plus Eins annehmen, nur nicht in freier Kombination.'."\n".
                     'Wenn \lm{ x } von minus Eins bis plus Eins durchläuft, dann treten, außer an den Scheitelpunkten, immer zwei verschiedene \lm{ y }-Koordinaten auf,'."\n".
                     'und zwar in der Kombination \lm{ \pm y }.'."\n",
-                      'Wir haben es also mit der Anzahl \lm{ 2 \cdot \# [ -1, 1 ]_\mathbb{A} - 2 } zu tun.'."\n".
+                      'Wir haben es also mit der Anzahl \lm{ 2 \cdot \# [ -1, 1 ]_\mathbb{A}_{\R} - 2 } zu tun.'."\n".
                     'Dies sind viel mehr Koordinaten, als wir sie durch ein regelmäßiges \lm{ m }-Eck bekommen können, denn dies wären durch vollständige Induktion nur \lm{ ω } viele Koordinaten.'."\n".
                     'Die unterschiedlichen \lm{ m }-Ecke enthalten eben unterschiedliche Koordinaten, je nach der Primfaktorzerlegung von \lm{ m },'."\n".
                     'sodass wir durch alle \lm{ ω } \lm{ m }-Ecke kombiniert eine Anzahl von \lm{ \s } Koordinaten erhalten.'."\n".
@@ -1061,13 +1061,13 @@
                     'und hätte nach meiner Ansicht zur Folge, dass die Koordinaten überwiegend superial kleine Summanden bekämen.'."\n",
                       'Der obige algebraische Parameter \lm{ a } der Eingangs formulierten \lm{ \e }-Funktion für den Einheitskreis enthält allerdings'."\n".
                     'nicht \lm{ \s } viele Möglichkeiten bereit.'."\n".
-                    'Er läuft nur von \lm{ \lbrack 0, 1 \lbrack_\mathbb{A} }, wenn die Koordinaten keine Dopplung haben sollen.'."\n",
-                      'Nehmen wir an es gilt unsere Vermutung \lm{ \mathbb{A}_{\S} ?= \mathbb{A} }:'."\n".
-                    'Dann wäre \lm{ \# \lbrack 0, 1 \lbrack_\mathbb{A} \; ?= \frac{ \s }{ 2 ω } }.'."\n".
+                    'Er läuft nur von \lm{ \lbrack 0, 1 \lbrack_\mathbb{A}_{\R} }, wenn die Koordinaten keine Dopplung haben sollen.'."\n",
+                      'Nehmen wir an es gilt unsere Vermutung \lm{ \mathbb{A}_{\S} ?= \mathbb{A}_{\R} }:'."\n".
+                    'Dann wäre \lm{ \# \lbrack 0, 1 \lbrack_\mathbb{A}_{\R} \; ?= \frac{ \s }{ 2 ω } }.'."\n".
                     'Dies führt nach meinem Verständnis dazu, dass die superial kleinen Summanden vollständig verschwinden und alle Koordinaten'."\n".
                     'rein reell algebraische werden.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n",
-                    '\lm{ 2 \cdot \# [ -1, 1 ]_\mathbb{A} - 2 = 2 \cdot *( 2 \cdot \frac{ \s }{ 2 ω } *) - 2 = \frac{ 2 \s }{ ω } - 2 }'."\n",
+                    '\lm{ 2 \cdot \# [ -1, 1 ]_\mathbb{A}_{\R} - 2 = 2 \cdot *( 2 \cdot \frac{ \s }{ 2 ω } *) - 2 = \frac{ 2 \s }{ ω } - 2 }'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'text', array( text => array(

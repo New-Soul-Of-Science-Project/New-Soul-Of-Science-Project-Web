@@ -24,7 +24,7 @@
                       'Wir werden Beweisen, dass dies nicht nur für die rationalen Zahlen gilt, sondern auch für das Produkt aller'."\n".
                     'durch Radikale darstellbaren reell algebraischen Zahlen, wie \lm{ *| \sqrt{ 2 } |* = 2^{\frac{1}{2}} }, und abschließend sogar für das Produkt'."\n".
                     'jeder reell algebraischen Zahl mit \lm{ \s }, also auch für alle irrationalen reell algebraischen Zahlen.'."\n".
-                    'Dies gelingt uns über die \lm{ p }-adische Bewertung \lm{ \mathrm{v}_{\!p}(a) } jedes reell algebraischen Faktors: \\\\ \lm{ a = \prod_{ \forall p \in \mathbb{P} } p^{\mathrm{v}_{p}(a)} }, mit \lm{ a \in \mathbb{A} \land \mathrm{v}_{\!p}(a) \in \mathbb{Q} \; }.'."\n".
+                    'Dies gelingt uns über die \lm{ p }-adische Bewertung \lm{ \mathrm{v}_{\!p}(a) } jedes reell algebraischen Faktors: \\\\ \lm{ a = \prod_{ \forall p \in \mathbb{P} } p^{\mathrm{v}_{p}(a)} }, mit \lm{ a \in \mathbb{A}_{\R} \land \mathrm{v}_{\!p}(a) \in \mathbb{Q} \; }.'."\n".
                     '\\\\ Das ist eine bedeutende Erkenntnis.'."\n",
                       'Der Beweis zeigt uns, wie wir aus jeder \lm{ x }-ten irrationalen Wurzel aus einer endlichen natürlichen Zahl \lm{ n }'."\n".
                     'durch ein Produkt mit allen Primzahlen in ihrem Radikanden \lm{ n } in \lm{ ω }-ter Potenz, also \lm{ \sqrt[x]{n} \cdot \rad(n)^{ω} },'."\n".

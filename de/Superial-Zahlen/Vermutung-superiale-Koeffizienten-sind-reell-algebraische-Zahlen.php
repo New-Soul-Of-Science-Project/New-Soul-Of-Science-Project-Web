@@ -57,7 +57,7 @@
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
-                      'Sei \lm{ a \neq 0 } eine reell algebraische Zahl, also \lm{ a \in \mathbb{A} }.'."\n".
+                      'Sei \lm{ a \neq 0 } eine reell algebraische Zahl, also \lm{ a \in \mathbb{A}_{\R} \setminus *\{ 0 *\} }.'."\n".
                       'Für jede Primzahl \lm{ p } existiert die \lm{ p }-adische Bewertung'."\n".
                       ''))),
                   array( 'equations',
@@ -153,11 +153,11 @@
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'woraus unmittelbar folgt, dass \lm{ a \cdot s \in \mathbb{S}_{\Z} } wahr ist.'."\n".
                       'Somit sind alle reell algebraischen Zahlen als sinnvolle Koeffizienten der Superial-Zahlen in diese eingebettet und wir finden,'."\n".
-                      'dass die Menge \lm{ \mathbb{A}_{\S} } der sinnvollen Koeffizienten der Superial-Zahlen gleich der Menge aller reell algebraischen Zahlen \lm{ \mathbb{A} } ist'."\n".
+                      'dass die Menge \lm{ \mathbb{A}_{\S} } der sinnvollen Koeffizienten der Superial-Zahlen gleich der Menge aller reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} } ist'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\S}  =  \mathbb{A}  \;\;}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \boxed{\;\;  \mathbb{A}_{\S}  =  \mathbb{A}_{\R}  \;\;}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'was zu beweisen war.'."\n",

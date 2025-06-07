@@ -1390,11 +1390,11 @@
                   array( 'text', array( text => array(
                   '\condb{Tiefer Zusammenhang zwischen den Primzahlen und den sinnvollen Koeffizienten der Superial-Zahlen} \\\\'."\n".
                   '\cond{Möglicherweise sogar zwischen den Primzahlen und den reell algebraischen Zahlen} \\\\'."\n".
-                    'Entspricht die Menge \lm{ \mathbb{A}_{\S} } tatsächlich der Menge aller reell algebraischen Zahlen \lm{ \mathbb{A} },'."\n".
+                    'Entspricht die Menge \lm{ \mathbb{A}_{\S} } tatsächlich der Menge aller reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} },'."\n".
                     'dann werden diese in eine sehr enge existenzielle Beziehung mit den endlichen Primzahlen gebracht, die ich bisher so noch nicht gesehen habe'."\n".
                     'und die Anlass zu der Annahme gibt, dass wir diese in Zukunft noch detaillierter formulieren können.'."\n",
                       'Klar ist schon, dass das Raster des Primzahl-Flächenproduktes von \lm{ \s } aufs engste mit den sinnvollen Koeffizienten'."\n".
-                    'der Superial-Zahlen \lm{ \mathbb{A}_{\S} } – und, wenn \lm{ \mathbb{A}_{\S} ?= \mathbb{A} }, mit den reell algebraischen Zahlen \lm{ \mathbb{A} } – verwoben ist.'."\n".
+                    'der Superial-Zahlen \lm{ \mathbb{A}_{\S} } – und, wenn \lm{ \mathbb{A}_{\S} ?= \mathbb{A}_{\R} }, mit den reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} } – verwoben ist.'."\n".
                     'Denn alle \lm{ a \cdot \s }, mit \lm{ a \in \mathbb{A}_{\S} }, müssen nach Formel \jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-exist-As} ganze Zahl sein,'."\n".
                     'siehe \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen}.'."\n".
                     'Dies ist ein fundamentaler Zusammenhang, der weitere Erkenntnisse erwarten lässt.'."\n",

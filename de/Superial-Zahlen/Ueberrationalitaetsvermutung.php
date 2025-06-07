@@ -1713,8 +1713,8 @@
                 TitleVis => 'Alter Entwurf der Überrationalitätsvermutung:', ParagraphList => array(
 
                   array( 'text', array( text => array(
-                    'Die Überrationalitätsvermutung geht davon aus, dass sich die Koordinaten (aus der Menge \latexmath{ \mathbb{A}_R }) der algebraischen Zahlen immer durch rationale Zahlen'."\n".
-                    'aus der Menge \latexmath{ \mathbb{A} } oder durch einen \italic{überrationalen Bruch} von unendlich großen Primzahlprodukten endlicher Primzahlen in Nenner und Zähler'."\n".
+                    'Die Überrationalitätsvermutung geht davon aus, dass sich die Koordinaten (aus der Menge \latexmath{ \mathbb{A}_{\R} }) der algebraischen Zahlen immer durch rationale Zahlen'."\n".
+                    'aus der Menge \latexmath{ \mathbb{Q} } oder durch einen \italic{überrationalen Bruch} von unendlich großen Primzahlprodukten endlicher Primzahlen in Nenner und Zähler'."\n".
                     'ausdrücken lassen.'."\n".
                     'Die Wurzel aus Zwei \latexmath{ \sqrt{2} } wäre demnach Beispielsweise auch ein überrationaler Bruch:'."\n".
                     ''))),
