@@ -399,7 +399,23 @@
       jump_ary => array(
         'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
-          // 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:Vortext:X' => array( headline_text => 'SN.ÜV.7'),
+          // 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:Vortext:X' => array( headline_text => 'Konsequenzen des Beweises zu den transzendenten Zahlen'/* , headline_text_short => 'X'*/),
+      ),
+    ),
+    'OM:SupNum:ZFC-Modellkonstruktion' => array(
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/ZFC-Modellkonstruktion-der-Superial-Zahlen.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/ZFC-Modellkonstruktion-der-Superial-Zahlen.php',
+      titel => 'Die ZFC-Modellkonstruktion der Superial-Zahlen - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\name[undertitle]{OM:SupNum:ZFC-Modellkonstruktion}.\hidden{ — \name[description]{OM:SupNum:ZFC-Modellkonstruktion}.}',
+      keywords => '',
+      text_titel_h1 => 'Die ZFC-Modellkonstruktion der Superial-Zahlen',
+      text_titel_short => 'Die ZFC-Modellkonstruktion der Superial-Zahlen',
+      text_undertitel_h2 => 'Fundierung der Superial-Zahlen auf Basis des Zermelo-Fraenkel-Mengenlehre-Systems mit dem Auswahlaxiom (ZFC)',
+      text_titel_discr_h3 => '',
+      jump_ary => array(
+        'OM:SupNum:ZFC-Modellkonstruktion:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          'OM:SupNum:ZFC-Modellkonstruktion:X' => array( headline_text => 'X'/* , headline_text_short => 'X'*/),
       ),
     ),
   );

@@ -120,7 +120,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 class="tools-class-contentlist-header">Superial-Zahlen \\\\ \small{Zählen und Primzahlen im Unendlichen}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">Ansatz und intuitive Entwicklung \\\\ \small{Der Wunsch nach konkreter Analysis mit aktual unendlichen Zahlen, ohne den Limes – in einer eigenen intuitiven Sprache}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Einleitung'),
@@ -133,6 +133,13 @@
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Ueberrationalitaetsvermutung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden'),
+                    ))),
+                      
+                  array( 'normal',
+                    '<h3 class="tools-class-contentlist-header">ZFC-Modellkonstruktion \\\\ \small{Fundierung auf Basis des Zermelo-Fraenkel-Mengenlehre-Systems mit dem Auswahlaxiom (ZFC)}</h3>'."\n"),
+                  array( 'contentlist',
+                    array( content_ary => array(
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:ZFC-Modellkonstruktion'),
                     ))),
                       
                   array( 'normal',
