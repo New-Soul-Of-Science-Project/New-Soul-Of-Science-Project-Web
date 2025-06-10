@@ -14,8 +14,8 @@
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
                 array(
                   array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\bold{Erklärungs-Video}',
-                    // '• DiBeos: \\jump[https://www.youtube.com/watch?v=gdJwjQmPyPM]{}{Warum sind transzendente Zahlen so interessant?}.',
+                    '\bold{Real-Abgeschlossenheit}',
+                    '• Wenn wir als Exponenten von \lm{ \s }, also für \lm{ \Gamma }, rationale Zahlen zulassen, dann erhalten wir Real-Abgeschlossenheit, meint ChatGPT. Das bedeutet, dass auch Wurzeln aus jeder Superial-Zahl gezogen werden können.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -37,11 +37,11 @@
                     ''))),
                   array( 'bulletlist', array( bullet_ary => array(
                         'Es gibt in \lm{ \mathbb{N} } kein Element, dessen \lm{ p }-adische Exponenten sämtlich \lm{ ω } sind.',
-                        'Ein direkter Klassen-Term wie \lm{ \prod_{\forall p \in \mathbb{P}} p^{ω} } wäre eine eigentliche Klasse, keine Menge\hidden{ ⇒ kann kein Feld­element sein}, was ein Problem bei der Definition der Menge \lm{ \mathbb{S} } ist.',
+                        'Ein direkter Klassen-Term wie \lm{ \prod_{\forall p \in \mathbb{P}} p^{ω} } wäre eine eigentliche Klasse\color{*Bearb}{(Verweis)}, keine Menge\hidden{ ⇒ kann kein Feld­element sein}, was ein Problem bei der Definition der Menge \lm{ \mathbb{S} } ist.',
                         'Wir erhalten so nur eine sichere Multiplikation, aber keine sichere Addition: Ohne sichere Addition aber kein Ring, erst recht kein Körper – Analysis oder Differentialrechnung wären unmöglich.',
-                        'Ordnung nicht sicher linear: Die Superial-Analysis braucht aber eine totale Ordnung (damit man „größte Stelle“ sagen kann).',
-                        'Eine unendlich große Primfaktorzerlegung verletzt den FTA-Rahmen: Die „Fundamental­theorem-der-Arithmetik“-Maschinerie garantiert Eindeutigkeit nur für endliche Zerlegungen. Für ring- oder feldartige Erweiterungen mit unendlichen Zerlegungen muss man völlig neue Axiome nachschieben.',
-                        'ZFC-Feinheiten: Ein Element mit \lm{ ω }-vielen endlichen Faktoren liegt außerhalb jeder der üblichen Zahlstrukturen \lm{ \mathbb{N} }, \lm{ \mathbb{Z} }, \lm{ \mathbb{Q} } – man müsste die komplette Algebra darauf neu definieren.',
+                        'Ordnung nicht sicher linear: Die Superial-Analysis braucht eine totale Ordnung, damit wir so etwas wie „größte Stelle“ sagen können.',
+                        'Eine unendlich große Primfaktorzerlegung verletzt den FTA-Rahmen\color{*Bearb}{(Verweis)}: Die „Fundamental­theorem-der-Arithmetik“-Maschinerie (FTA) garantiert Eindeutigkeit nur für endliche Zerlegungen. Für ring- oder feldartige Erweiterungen mit unendlichen Zerlegungen müssten wir völlig neue Axiome nachschieben.',
+                        'ZFC-Feinheiten: Ein Element mit \lm{ ω }-vielen endlichen Faktoren liegt außerhalb jeder der üblichen Zahlstrukturen \lm{ \mathbb{N} }, \lm{ \mathbb{Z} }, \lm{ \mathbb{Q} } – wir müssten die komplette Algebra darauf neu definieren.',
                     ))),
                   array( 'text', array( text => array(
                     'Und diese Probleme und Unsicherheiten wollen wir nun lösen.'."\n".
@@ -52,31 +52,23 @@
                   '')),
                   array( 'text', array( text => array(
                     'Darum ersetzen wir in unserer Hahn-Reihen-Version die „wirkliche“ Primfaktorzerlegung durch das formale Symbol \lm{ \s } — und kodieren die Aussage'."\n".
-                    '„\lm{ \s } hat bei jedem \lm{ p } die Exponentenlänge \lm{ ω }“ rein über \lm{ p }-adische Bewertungen.'."\n".
-                    'Mathematisch steckt die Unendlichkeit jetzt in zwei (ZFC-legalen) Stellen:'."\n".
-                    ''))),
-                  array( 'bulletlist', array( bullet_ary => array(
-                        '\lm{ \mathrm{supp} f } — wohlgeordnete Menge von endlichen Exponenten',
-                        'Bewertungs­wert \lm{ ω } — das Ordinal \lm{ ω } ist ein Mengen-Element in ZFC',
-                    ))),
-                  array( 'text', array( text => array(
-                    'Beides sind fertige, aktual unendliche Mengen – aber eben keine „Zahl mit unendlich vielen Primfaktoren“.'."\n".
-                    'Damit können wir die Algebra sauber definieren, ohne etwas zu fordern, was ZFC nicht als Element kennt.'."\n",
-                      'Eine Superial-Konstruktion über eine Hahn-Reihe\color{*Bearb}{(Verweis)} kann so „\lm{ p }-Exponent = \lm{ ω }“ jeder endlichen Primzahl stattdessen in der \lm{ p }-adischen Bewertung'."\n".
+                    '„\lm{ \s } hat bei jeder Primzahl \lm{ p } die Exponentenlänge \lm{ ω }“ rein über \lm{ p }-adische Bewertungen.'."\n".
+                    'Eine Superial-Konstruktion über eine Hahn-Reihe\color{*Bearb}{(Verweis)} kann so „\lm{ p }-Exponent = \lm{ ω }“ jeder endlichen Primzahl stattdessen in der \lm{ p }-adischen Bewertung'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  v_{p}(\s)  =  ω  }'),
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  v_{p}(\s)  :=  ω  *]  }'),
+                      array( display => 'on',  latex => '{  \s  :>  0  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'kapseln, wie wir gleich sehen, denn auf diese Weise ist \lm{ \s } einfach ein neues formales Zeichen, mit wohldefinierten Eigenschaften.'."\n".
+                    'kapseln, denn auf diese Weise ist \lm{ \s } einfach ein neues formales Zeichen, mit wohldefinierten Eigenschaften.'."\n".
                     'Dadurch ergibt sich die Definition der Menge der Superial-Zahlen \lm{ \mathbb{S} } zu'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}  :=  \mathbb{A}_{\R}((\s^{\mathbb{Z}}))  }'),
+                      array( display => 'on',  latex => '{  \mathbb{S}  :=  \mathbb{A}_{\R}((\s^{\Gamma}))  }'),
                       array( display => 'on',  latex => '{  \Gamma  :=  \mathbb{Z}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{S}  =  \mathbb{A}_{\R}((\s^{\Gamma}))  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{S}  =  \mathbb{A}_{\R}((\s^{\mathbb{Z}}))  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'wenn \lm{ \mathbb{A}_{\R} } das Koeffizientenfeld der reell algebraischen Zahlen und'."\n".
@@ -88,7 +80,34 @@
                       array( display => 'on',  latex => '{  \mathbb{S}  =  *\{  f = \sum_{k \in \Gamma}\!a_k \cdot \s^{k}  *|*  a_k \in \mathbb{A}_{\R},\;\mathrm{supp} f := *\{ k *|* a_k \neq 0 *\}  \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\;  \text{ ist wohlgeordnet}  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Und damit erreichen wir unser Ziel einer ZFC-konformen Definition der Superial-Zahlen.'."\n".
+                    'Mathematisch steckt die Unendlichkeit jetzt in zwei ZFC-konformen Stellen:'."\n".
+                    ''))),
+                  array( 'bulletlist', array( bullet_ary => array(
+                        '\lm{ \mathrm{supp} f } — wohlgeordnete Menge von endlichen Exponenten',
+                        'Bewertungs­wert \lm{ ω } — das Ordinal \lm{ ω } ist ein Mengen-Element in ZFC',
+                    ))),
+                  array( 'text', array( text => array(
+                    'Beides sind fertige, aktual unendliche Mengen – aber eben keine „Zahl mit unendlich vielen Primfaktoren“.'."\n".
+                    'Damit können wir die Algebra sauber definieren, ohne etwas zu fordern, was ZFC nicht als Element kennt.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                      
+                'Tiefere Betrachtung der höheren Potenzen von \lm{ \s }', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    '\lm{ p }-adischen Bewertung'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a_{k} \in \mathbb{A}_{\R} *) *( \forall p \in \mathbb{P} *)  *[  v_{p}(a_{k} \cdot \s^{k})  =  k \cdot ω + v_{p}(a_{k})  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      'Unser Ziel einer ZFC-konformen Definition der Superial-Zahlen haben wir somit erreicht.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
@@ -105,9 +124,7 @@
                         '\bold{Division:} Polynomdivision\color{*Bearb}{(Verweis)}.',
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
+                    'Das sind alle grundlegenden Eigenschaften, die wir für den Ansatz einer Superial-Analysis brauchen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
@@ -128,33 +145,15 @@
                       '„\lm{ \s = \prod_{\forall p \in \mathbb{P}} p^{ω} }“ ist als bildhafte Intuition prima, aber alleine formal nicht genau genug.'."\n".
                     'Die Hahn-Reihen-Definition gibt dieselbe \lm{ p }-adische Wirkung wieder, liefert aber gleichzeitig Addition, Subtraktion, Ordnung – kurz:'."\n".
                     'den vollständigen Zahlkörper \lm{ \mathbb{S} }, den die Superial-Analysis braucht.'."\n",
-                      'Wenn wir die Definition nun ZFC-konform aufziehen, dann wird andersherum ein Schuh draus und wir definieren'."\n".
+                      'Weil wir die Definition jetzt ZFC-konform aufgezogen haben, wird andersherum ein Schuh draus und wir definieren'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  :=  \s  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  :=  \s  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall q \in \mathbb{P} *)  *[  v_{q}*( \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω} *)  =  ω  *]  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'wodurch alle zuvor auf der Basis von \lm{ \s } gemachten Definitionen nun formal sicher sind.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
-                      
-                'XXX', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'was zwar intuitiv offensichtlich erscheint, wodurch nun aber alle zuvor auf dieser Basis gemachten Definitionen formal sicher sind.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
