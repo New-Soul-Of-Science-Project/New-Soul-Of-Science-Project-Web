@@ -1976,7 +1976,8 @@
                                                label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Analysieren wir naiv die maximale Häufigkeit der einzelnen Primzahlen in der Primfaktorzerlegung'."\n".
+                    '\const{SupNum_g_text_ZFCkonform}'."\n",
+                      'Analysieren wir naiv die maximale Häufigkeit der einzelnen Primzahlen in der Primfaktorzerlegung'."\n".
                     'der natürlichen Zahlen kommen wir schnell auf den Gedanken, dass wir nicht die volle höhe \lm{ ω }'."\n".
                     'jedes einzelnen Primzahlturms benötigen, um \lm{ \s } mit den Eigenschaften auszustatten'."\n".
                     'die für uns interessant sind, nämlich mit jedem rationalen Koeffizienten eine ganze Zahl zu bleiben.'."\n",

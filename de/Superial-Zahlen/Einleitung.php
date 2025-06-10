@@ -705,7 +705,8 @@
                                                label_name => 'OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega', label_text => '\name{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'Wie Formel \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null} definiert, setze ich voraus, dass die natürlichen Zahlen die Null enthalten.'."\n".
+                    '\const{SupNum_g_text_ZFCkonform}'."\n",
+                      'Wie Formel \jumpname{OM:BiOrd:Einleitung:Vortext:Equ-Def-N-enthaelt-Null} definiert, setze ich voraus, dass die natürlichen Zahlen die Null enthalten.'."\n".
                     'Den Grund dafür verdeutliche ich im Abschnitt \italic{\jumpname{OM:SupNum:Einleitung:Grundlagen}}.'."\n",
                       'Für das Primzahlprodukt von \lm{ s } ergibt sich also, wie eben beschrieben,'."\n".
                     'eine mit unendlich mal unendlich vielen Primzahlen gefüllte Fläche der folgenden Art:'."\n".

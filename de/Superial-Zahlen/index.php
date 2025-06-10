@@ -19,7 +19,8 @@
                     'ist faszinierend.'."\n".
                     'Wir finden ein aktual unendliches Stellenwertsystem, basierend auf der neuen unendlichen Basis \lm{ \s }.'."\n".
                     'Wir nennen sie die superiale Basis, welche ein Produkt aller endlichen Primzahlen in aktual unendlicher Potenz der Ordinalzahl \lm{ ω },'."\n".
-                    'der vollständigen Induktion, ist: \\\\ \lm{ \s = \prod_{ \forall p \in \mathbb{P} } p^{ω} = ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots )^{ω} \; }.'."\n",
+                    'der vollständigen Induktion, ist: \\\\ \lm{ \s := *( \prod_{ \forall p \in \mathbb{P} } p *)^{ω} = ( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdots )^{ω} \; }. \\\\'."\n".
+                    'Und es gelingt uns sogar, die Eigenschaften dieses unendlichen Produkts auf Basis des Zermelo-Fraenkel-Mengenlehre-Systems (ZFC) über \lm{ p }-adische Bewertungen formal sicher zu definieren.'."\n",
                       'Es ist offensichtlich, dass \lm{ \s } im Produkt mit jeder rationalen Zahl eine aktual unendlich große ganze Zahl ergibt.'."\n",
                       'Wir werden Beweisen, dass dies nicht nur für die rationalen Zahlen gilt, sondern auch für das Produkt aller'."\n".
                     'durch Radikale darstellbaren reell algebraischen Zahlen, wie \lm{ *| \sqrt{ 2 } |* = 2^{\frac{1}{2}} }, und abschließend sogar für das Produkt'."\n".
@@ -59,7 +60,7 @@
                     'Damit erhalten wir für die Eulersche Zahl \lm{ \e_{\s} = 〈1〉․〈1〉^{〈1〉_{1}} },'."\n".
                     'was \lm{ \e_{\s} = *( 1 + \frac{ 1 }{ \s } *)^{\s} } entspricht.'."\n",
                       'Weiterhin entwickeln wir mit Hilfe der neuen \jump{OM:BiOrd:Home}{Biordinalzahlen} einen Beweis, dass die vollständige Induktion \lm{ ω } eine Primfaktorzerlegung besitzt.'."\n".
-                    'Die Ordinalzahl \lm{ ω } ist demnach das Produkt aller endlichen Primzahlen: \\\\ \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots }.'."\n".
+                    'Die Ordinalzahl \lm{ ω } entspricht demnach dem Produkt aller endlichen Primzahlen: \\\\ \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots }.'."\n".
                     '\\\\ Eine im ersten Moment überraschende Entdeckung.'."\n".
                     'Und eine weitere tiefe Einsicht in die fundamentalen Strukturen der Arithmetik, die eine neue Verbindung zwischen der Zahlentheorie, der Mengenlehre und der Analysis offenbart.'."\n",
                       'Und so zeigt sich, es gilt \lm{ \s = ω^{ω} }, was sehr bemerkenswert ist, weil sich die neue superiale Basis \lm{ \s }'."\n".

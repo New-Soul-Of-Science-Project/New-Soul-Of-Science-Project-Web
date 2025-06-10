@@ -120,6 +120,7 @@
                     'Meine Methoden und Fachmethoden sind grundsätzlich Hilfen zur Selbsthilfe in Eigenverantwortung.'."\n".
                     'Eine Haftung ist im Rahmen der Gesetzgebung grundsätzlich ausgeschlossen.'."\n")));
   
+  
   $FrQFT_g_text_QuantengravRechnungOhneNaeh    =
                   array( 'text', array( text => array(
                     'Ohne \jump{OM:FrQFT:Quantengravitation:Lichtverlangsamung:NaeherungGrosseAbstaend}{Näherung für große Abstände},'."\n".
@@ -135,12 +136,14 @@
                         'Das vektorielle Gleichgewicht ist der Nullpunkt für Ereignisse oder Nicht-Ereignisse: Es ist das leere Theater, der leere Zirkus und das leere Universum, das bereit ist, jede Handlung und jedes Publikum aufzunehmen.'."\n"),
                         addtext => '~Richard Buckminster Fuller\footnote{Buckminster Fuller, Richard, \jump[http://www.rwgrayprojects.com/SynergeticsDictionary/SD.html]{}{SYNERGETICS} (2nd. Ed.) at Sec. 503.03; 11 Dec\'75. \\\\ Internet: \\\\ Cosmometry, Vector Equilibrium & Isotropic Vector Matrix. URL: \url{https://cosmometry.net/vector-equilibrium-&-isotropic-vector-matrix}.} \small{\italic{Übersetzt ins Deutsche mit \jump[https://www.deepl.com/translator]{}{DeepL Übersetzer}}}'));
   
+  
   $NPYo_g_angebot_IchGebeDirNaPhilYoga =
                   array( 'text', array( Shape => 'italic', text => array(
                     'Ich gebe dir \jump{OM:NPYo:Angebote-Veranstaltungen:NaPhilYogaCoaching}{NaPhil-Yoga Coaching} \\\\'."\n".
                     'kombiniert mit Intensive Yoga Unterricht (Power Yoga). \\\\'."\n".
                     '\small{\color{*TitleAdd}{Spende was du kannst oder bringe gerne selbstgemachtes Essen mit. \\\\'."\n".
                     'Bist du daran interessiert? Dann \jump{OM:FrQFT:Impressum}{melde dich} bei mir.}}'."\n")));
+  
   
   $SpaLeb_g_zitat_WolfBuentig_Normopathie =
                     array( 'text', array( Shape  => 'quote', text => array(
@@ -164,6 +167,10 @@
                           'Unter Machprinzip wird verstanden, daß die Massen im Universum die Inertialsysteme festlegen.'."\n".
                         'Die jetzt gefundene Aussage kann als Bestätigung des Machprinzips betrachtet werden.'."\n"),
                         addtext => '\footnote{\cite{Fliessbach:ART1998}, Teil IX Dynamische Sternmodelle, Kap. 44 Isotrope zeitabhängige Metrik und Birkhoff-Theorem, Machsches Prinzip, S. 253-254, hier S. 254.}'));
+
+  
+  $SupNum_g_text_ZFCkonform =
+                    'Eine ZFC-konforme Definition der Eigenschaften dieses unendlichen Produkts über \lm{ p }-adische Bewertungen findet sich auf der Seite \italic{\jumpname{OM:SupNum:ZFC-Modellkonstruktion}}.';
 
   
   $NSOSP_g_footnote_text_AbelscheGruppe         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AbelscheGruppe:2022}.';

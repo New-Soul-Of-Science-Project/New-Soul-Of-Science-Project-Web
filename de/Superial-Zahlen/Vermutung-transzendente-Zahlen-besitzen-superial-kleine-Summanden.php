@@ -163,6 +163,7 @@
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\const{SupNum_g_text_ZFCkonform}'."\n",
                       'Eine unendlich große ganze Superial-Zahl in \lm{ \mathbb{S}_{\Z} } hat \lm{ ω }-viele Faktoren pro Primzahl'."\n".
                       '– eventuell plus eine endliche oder rationale Verschiebung.'."\n".
                       'Das heißt:'."\n".
