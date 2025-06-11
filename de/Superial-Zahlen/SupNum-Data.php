@@ -415,7 +415,7 @@
       jump_ary => array(
         'OM:SupNum:ZFC-Modellkonstruktion:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
-          'OM:SupNum:ZFC-Modellkonstruktion:X' => array( headline_text => 'X'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:ZFC-Modellkonstruktion:Diskussion' => array( headline_text => 'Diskussion'/* , headline_text_short => 'X'*/),
       ),
     ),
   );

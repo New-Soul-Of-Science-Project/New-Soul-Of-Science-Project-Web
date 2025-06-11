@@ -30,7 +30,7 @@
                       array( display => 'on',  latex => '{  \s  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }',
                                           label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-s-ueber-P-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \displaystyle \prod_{\forall p \in \mathbb{P}}  p^{ω}  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }'),
-                      array( display => 'on',  latex => '{  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots *)^{ω}  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  *( 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot \cdots *)^{ω}  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  }'),
                       array( display => 'on',  latex => '{  2^{ω} \cdot 3^{ω} \cdot 5^{ω} \cdot 7^{ω} \cdot 11^{ω} \cdot 13^{ω} \cdot 17^{ω} \cdot \cdots  :=  \displaystyle *( \prod_{\forall p \in \mathbb{P}}  p *)^{ω}  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -96,32 +96,60 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
-                'Tiefere Betrachtung der höheren Potenzen von \lm{ \s }', subline =>
+                'Tiefere Betrachtung der Potenzen von \lm{ \s }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    '\lm{ p }-adischen Bewertung'."\n".
-                    'XXX'."\n".
+                    'Jeder einzelne Summand der Hahn-Reihe, sein reell algebraischer Koeffizient einer endlichen ganzen Potenz der superialen Basis \lm{ \s },'."\n".
+                    'haben die wohldefinierte \lm{ p }-adische Bewertungen'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a_{k} \in \mathbb{A}_{\R} *) *( \forall p \in \mathbb{P} *)  *[  v_{p}(a_{k} \cdot \s^{k})  =  k \cdot ω + v_{p}(a_{k})  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall a_{k} \in \mathbb{A}_{\R} *) *( \forall p \in \mathbb{P} *)  *[  v_{p}(a_{k} \cdot \s^{k})  =  k \cdot ω + v_{p}(a_{k})  *]  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'so, dass sich bei Potenzen \lm{ k \ge 1 } nur rein positive Potenzen der Primzahlen ergeben:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *( \forall k \in \mathrm{supp} f *)  \\\ \qquad\;\; *[  v_{p}(a_{k}) \in \mathbb{Q}  \Rightarrow  \\\ \qquad\quad\, *( k - 1 *) \cdot ω  <  k \cdot ω + v_{p}(a_{k})  <  *( k + 1 *) \cdot ω  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'So können wir leicht erkennen, dass alle Hahn-Reihen-Summanden in ihrer Größenordnung immer separiert bleiben,'."\n".
+                    'auch egal ob \lm{ v_{p}(a_{k}) } positiv oder negativ ist, weil von \lm{ k \cdot ω } dominiert.'."\n",
+                      'Auch ist auffällig, dass hier Summen oder Differenzen wie \lm{ k \cdot ω \pm \frac{ z }{ n } } als Ausdrücke entstehen, die wir bisher nicht kennen,'."\n".
+                    'aber nun einfach nach den Grundregeln der uns bekannten Algebra nutzen.'."\n".
+                    'Unter Kenntnis der Dominanz von \lm{ k \cdot ω }.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
                 'Primfaktorzerlegung von \lm{ \s }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    '\lm{ p^{ω} } und \lm{ ω } sind dabei keine Elemente des Rings der Superial-Zahlen'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Wir stellen fest, dass \lm{ ω } und \lm{ p^{ω} } keine Elemente des Rings der Superial-Zahlen sind.'."\n".
+                    'Dies scheint im Allgemeinen kein Problem zu sein.'."\n",
+                      'So steht nun auch fest, dass \lm{ \s } durch jede endliche Potenz jeder Primzahl'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall n \in \mathbb{N} *)  *[  p^{n} \mid \s  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'teilbar ist, wobei jeder der Exponenten \lm{ n } sowie jede dieser endlichen Potenzen \lm{ p^{n} } ein Element des Superial-Rings sind.'."\n".
+                    'Im Besonderen ist die exakte Teilbarkeit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  p^{ω} \parallel \s  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'gegeben, wobei, wie gesagt, weder \lm{ ω } noch \lm{ p^{ω} } Elemente des Superial-Rings sind.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                      
+                'Primfaktorzerlegung der natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} }', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
@@ -167,7 +195,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Home'),
+                      array(  jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Diskussion'),
                     )),
                 )
           ); ?>
@@ -175,9 +203,9 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-          <!  • X  >
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:ZFC-Modellkonstruktion:X',
+          <!  • Diskussion  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:ZFC-Modellkonstruktion:Diskussion',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
@@ -190,33 +218,34 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Betrachten wir die Eigenschaften der unendlichen Produkte näher, so fällt auf, dass sich auf ihrer Grundlage recht einfach neue ganze Zahlen konstruieren lassen,'."\n".
+                    'die über die Mengen oder Klassen hinausgehen, zu deren Konstruktion wir diese nutzen oder aus denen wir diese gewonnen haben.'."\n",
+                      'Ein Beispiel ist die Primfaktorzerlegung der vollständigen Induktion \lm{ ω }, die sich unter Zuhilfenahme der Superial-Zahlen'."\n".
+                    'beweisen lässt:'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:X:X', text =>
-                      
-                'XXX', subline =>
-                  '')),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC.D', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \omega  =  2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23 \cdot \cdots  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  \s  =  ω^{ω}  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
+                    ))),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Hieraus erkennen wir, dass für alle endlichen Primzahlen \lm{ p } jeweils neue aktualunendliche ganze Zahlen \lm{ \frac{ ω }{ p } } konstruiert werden können,'."\n".
+                    'die größer als jede endliche ganze Zahl sind, jedoch kleiner als \lm{ ω }.'."\n".
+                    'Von Summen dieser mit endlichen ganzen Zahlen wollen wir hier gar nicht erst anfangen, die noch viel mehr solcher Zahlen hervorbringen würden.'."\n".
+                    'Das ist halt eine der Effekte, die wir uns mit unendlichen Produkten von endlichen Zahlen einfangen können.'."\n",
+                      'Damit sind dann, beginnend mit Null, vor \lm{ ω } mehr ganze Zahlen möglich, als \lm{ ω }’s Wert groß ist.'."\n".
+                    'Dies ist ein ähnlicher Effekt, wie wir ihn schon von den rationalen Zahlen her kennen, der uns bei ganzen Zahlen vermutlich noch nicht so häufig begegnet ist.'."\n".
+                    'Und wir kennen ihn ähnlich auch schon von den \jump{OM:BiOrd:Home}{Biordinalzahlen} im Abschnitt \italic{\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}}.'."\n",
+                      'Unendliche Produkte müssen also klar definiert sein, um diese Phänomene sicher handhaben zu können.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Home'),
                     )),
               )
-          ); */ ?>
+          ); ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>
