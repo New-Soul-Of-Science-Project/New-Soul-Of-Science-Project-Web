@@ -410,7 +410,7 @@
       keywords => '',
       text_titel_h1 => 'Die ZFC-Modellkonstruktion der Superial-Zahlen',
       text_titel_short => 'Die ZFC-Modellkonstruktion der Superial-Zahlen',
-      text_undertitel_h2 => 'Fundierung der Superial-Zahlen auf Basis des Zermelo-Fraenkel-Mengenlehre-Systems mit dem Auswahlaxiom (ZFC)',
+      text_undertitel_h2 => 'Fundierung der Superial-Zahlen auf Basis des Zermelo-Fraenkel-Mengenlehre-Systems mit Auswahlaxiom (ZFC)',
       text_titel_discr_h3 => '',
       jump_ary => array(
         'OM:SupNum:ZFC-Modellkonstruktion:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),

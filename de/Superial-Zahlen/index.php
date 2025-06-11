@@ -137,7 +137,7 @@
                     ))),
                       
                   array( 'normal',
-                    '<h3 class="tools-class-contentlist-header">ZFC-Modellkonstruktion \\\\ \small{Fundierung auf Basis des Zermelo-Fraenkel-Mengenlehre-Systems mit dem Auswahlaxiom (ZFC)}</h3>'."\n"),
+                    '<h3 class="tools-class-contentlist-header">ZFC-Modellkonstruktion \\\\ \small{Fundierung auf Basis des Zermelo-Fraenkel-Mengenlehre-Systems mit Auswahlaxiom (ZFC)}</h3>'."\n"),
                   array( 'contentlist',
                     array( content_ary => array(
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:ZFC-Modellkonstruktion'),

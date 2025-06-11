@@ -20,7 +20,7 @@
                       
                   array( 'text', array( text => array(
                     'Wir entwickeln die Superial-Zahlen von ihrer intuitiven Definition weiter, indem wir sie mit einer'."\n".
-                    'Modellkonstruktion untermauern, die mit der Zermelo-Fraenkel-Mengenlehre mit dem Auswahlaxiom (ZFC) kompatibel ist.'."\n".
+                    'Modellkonstruktion untermauern, die mit der Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC) kompatibel ist.'."\n".
                     'Dabei hab ich mich von einer Konversation mit ChatGPT inspirieren lassen, in der ein Vorschlag entstand,'."\n".
                     'wie eine sichere Fundierung der Superial-Zahlen aussehen kann.'."\n",
                       'Eine Unsicherheit besteht in der Definition unserer superialen Basis \lm{ \s } durch das unendlich große Produkt von Primzahlen'."\n".
@@ -104,18 +104,18 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall a_{k} \in \mathbb{A}_{\R} *) *( \forall p \in \mathbb{P} *)  *[  v_{p}(a_{k} \cdot \s^{k})  =  k \cdot ω + v_{p}(a_{k})  *]  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  *( \forall a_{k} \in \mathbb{A}_{\R} *) *( \forall p \in \mathbb{P} *)  *[  v_{p}*( a_{k} \cdot \s^{k} *)  =  k \cdot ω + v_{p}*( a_{k} *)  *]  \;\; ,  }'),
                     ))),
                   array( 'text', array( text => array(
                     'so, dass sich bei Potenzen \lm{ k \ge 1 } nur rein positive Potenzen der Primzahlen ergeben:'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *( \forall k \in \mathrm{supp} f *)  \\\ \qquad\;\; *[  v_{p}(a_{k}) \in \mathbb{Q}  \Rightarrow  \\\ \qquad\quad\, *( k - 1 *) \cdot ω  <  k \cdot ω + v_{p}(a_{k})  <  *( k + 1 *) \cdot ω  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *( \forall k \in \mathrm{supp} f *)  \\\ \qquad\;\; *[  v_{p}*( a_{k} *) \in \mathbb{Q}  \Rightarrow  \\\ \qquad\quad\, *( k - 1 *) \cdot ω  <  k \cdot ω + v_{p}*( a_{k} *)  <  *( k + 1 *) \cdot ω  *]  }'),
                     ))),
                   array( 'text', array( text => array(
                     'So können wir leicht erkennen, dass alle Hahn-Reihen-Summanden in ihrer Größenordnung immer separiert bleiben,'."\n".
-                    'auch egal ob \lm{ v_{p}(a_{k}) } positiv oder negativ ist, weil von \lm{ k \cdot ω } dominiert.'."\n",
+                    'auch egal ob \lm{ v_{p}*( a_{k} *) } positiv oder negativ ist, weil von \lm{ k \cdot ω } dominiert.'."\n",
                       'Auch ist auffällig, dass hier Summen oder Differenzen wie \lm{ k \cdot ω \pm \frac{ z }{ n } } als Ausdrücke entstehen, die wir bisher nicht kennen,'."\n".
                     'aber nun einfach nach den Grundregeln der uns bekannten Algebra nutzen.'."\n".
                     'Unter Kenntnis der Dominanz von \lm{ k \cdot ω }.'."\n".
