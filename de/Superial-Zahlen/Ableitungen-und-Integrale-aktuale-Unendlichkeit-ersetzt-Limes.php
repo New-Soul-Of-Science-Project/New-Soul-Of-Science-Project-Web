@@ -47,6 +47,13 @@
                     'offenbar genau um die Grenze zwischen den Fraktalebenen der Superial-Zahlen geht –'."\n".
                     'den Stellen des \jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystems} der Superial-Zahlen.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Vortext:X', text =>
+                      
+                'ZFC-konforme Definition', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\const{SupNum_g_text_ZFCkonform}'."\n".
+                    ''))),
 
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:Ableitung'),

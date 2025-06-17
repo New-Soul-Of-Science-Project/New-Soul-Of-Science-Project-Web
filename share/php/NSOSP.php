@@ -170,7 +170,7 @@
 
   
   $SupNum_g_text_ZFCkonform =
-                    'Eine ZFC-konforme Definition der Eigenschaften dieses unendlichen Produkts über \lm{ p }-adische Bewertungen findet sich auf der Seite \italic{\jumpname{OM:SupNum:ZFC-Modellkonstruktion}}.';
+                    'Eine ZFC-konforme Definition der Eigenschaften unseres unendlichen Produkts der superialen Basis \lm{ \s } über \lm{ p }-adische Bewertungen findet sich auf der Seite \italic{\jumpname{OM:SupNum:ZFC-Modellkonstruktion}}.';
 
   
   $NSOSP_g_footnote_text_AbelscheGruppe         = '\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:AbelscheGruppe:2022}.';
