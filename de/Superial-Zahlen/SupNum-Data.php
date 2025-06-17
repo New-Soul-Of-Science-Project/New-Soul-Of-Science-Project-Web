@@ -331,6 +331,8 @@
           'OM:SupNum:Struktur-Geometrie:Vortext:DasKontinuum' => array( headline_text => 'Das Kontinuum',/* headline_text_short => 'X' */),
 
         'OM:SupNum:Struktur-Geometrie:OntologieDerGeometrie' => array( headline_text => 'Die Ontologie der Geometrie'/* , headline_text_short => 'X' */),
+
+        'OM:SupNum:Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie' => array( headline_text => 'Resonanz in der Arithmetik der Geometrie'/* , headline_text_short => 'X' */),
       ),
     ),
     'OM:SupNum:Ueberrationalitaetsvermutung' => array(

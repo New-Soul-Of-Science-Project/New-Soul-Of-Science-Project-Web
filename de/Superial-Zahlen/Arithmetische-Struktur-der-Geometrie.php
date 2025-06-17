@@ -787,7 +787,7 @@
           <?php To_f_headline_add_hides_end_line(); ?>
           
 
-		    	<!  • Die Ontologie der Geometrie  >
+          <!  • Die Ontologie der Geometrie  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
             'OM:SupNum:Struktur-Geometrie:OntologieDerGeometrie',
               'Eine Diskussion – ein Versuch der Annäherung', 'Sc_f_Paragraph',
@@ -1108,21 +1108,68 @@
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
-                  /* array( 'equations',
-                    array( equ_text_std => 'SN.ArGeo.D', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      // array( display => 'on',  latex => '{  s  =  ω^{ω}  }',
-                      //                    label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
-                    ))),
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Vortext:X', text =>
                       
-                'X', subline =>
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie'),
+                    )),
+              )
+          ); ?>
+          
+
+          <!  • Resonanz in der Arithmetik der Geometrie  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie',
+              'Eine grundlegendes Prinzip der Existenz: die Resonanz', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Struktur-Geometrie:OntologieDerGeometrie', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Unsere superiale Basis \lm{ \s } geht über ihre Primfaktorzerlegung in „Resonanz“ mit jeder ganzen, jeder rationalen und sogar'."\n".
+                    'jeder algebraischen Zahl, also auch mit allen Brüchen, ganzen Exponenten und ganzen Wurzeln sowie deren algebraische Kombinationen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie:X', text =>
+                      
+                'Wie wird Resonanz in diesem Zusammenhang verstanden?', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))), */
+                    'Resonanz bedeutet hier, dass alle endlichen algebraischen Zahlen sowohl auf der Grundlage der superial kleinen Basis \lm{ \s^{-1} }'."\n".
+                    '„tanzen“ – also „schwingen“ –, als auch der Ganzheit \lm{ \s } entgegenstreben, die sie als größere Vollkommenheit quasi anzieht.'."\n",
+                      'Ich lasse mich hier von dynamischen Ausdrücken inspirieren, obwohl es zunächst scheint, als wenn wir es hier mit rein statischen'."\n".
+                    'Verhältnissen zu tun haben.'."\n".
+                    'Denn mir ist bewusst, dass die Primzahlen zwar statisch erscheinen, gleichzeitig aber aus dem dynamischen Prozess des Zählens resultieren,'."\n".
+                    'ohne den sie für mich nicht wirklich denkbar erscheinen.'."\n",
+                      'Zum einen erscheint jede reell algebraische Zahl \lm{ a \in \mathbb{A}_{\R} } aus der Perspektive ihres grundlegenden Rasters der Größenordnung \lm{ \s^{-1} }'."\n".
+                    'als ganze Zahl.'."\n".
+                    'Mit anderen Worten: \lm{ z \cdot \s^{-1} = a } bedeutet, dass ihr Faktor \lm{ z = a \cdot \s } eine ganze Zahl ist, wenn auch eine aktual unendlich große.'."\n",
+                      'Zum anderen fallen die kleinsten ganzzahligen „Schwingungsknoten“ – also die Primzahl-Konstruktoren (\lm{ p }-adischen Bewertungen) von \lm{ a } –'."\n".
+                    'mit dem grundlegenden Raster zusammen.'."\n",
+                      'Damit liegt zum Beispiel auch \lm{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} } auf dem im Unendlichen ganzzahligen Raster \lm{ 2^{q} \cdot 2^{ω} }, wenn \lm{ q \in \mathbb{Q} }.'."\n".
+                    'Wollen wir dieses auf alle ganzzahligen Wurzeln und schließlich auf alle reell algebraischen Zahlen ausweiten, dann brauchen wir'."\n".
+                    'allerdings das größere Raster von \lm{ \s }.'."\n".
+                    'Wodurch wir dann \lm{ 2^{\frac{ 1 }{ 2 }} \s } als ganze Zahl erhalten.'."\n".
+                    'Wenn wir dieses Rastern dann aber auf endliche Zahlen verkleinert haben wollen, so skalieren wir es mit dem Faktor \lm{ \s^{-1} } herunter auf'."\n".
+                    '\lm{ *( 2^{\frac{ 1 }{ 2 }} \s *) \s^{-1} } und erhalten dann \lm{ 2^{\frac{ 1 }{ 2 }} }, also unsere endliche Wurzel,'."\n".
+                    'die auf dem aktual unendlich kleinen Raster der Weite \lm{ \s^{-1} } liegt.'."\n",
+                      'Dieses enthält allerdings unendlich kleine ganze Summanden \lm{ a + z \cdot \s^{-1} }, mit \lm{ a \in \mathbb{A}_{\R} } und \lm{ z \in \mathbb{Z} }.'."\n".
+                    'Wollen wir diese nicht haben, dann nehmen wir im Endlichen einfach nur die reell algebraischen Koeffizienten \lm{ a },'."\n".
+                    'die auch alle auf diesem Raster liegen, wenn \lm{ z = 0 }.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie:X', text =>
+                      
+                'Verfeinerung der Perspektive der Resonanz', subline =>
+                  '… führt vermutlich zur Riemannschen Vermutung')),
+                  array( 'text', array( text => array(
+                    'Führen wir diese Perspektive der Resonanz weiter aus, indem wir sie auf den Prozess des Zählens beziehen,'."\n".
+                    'dann könnte uns dies zur Riemannschen Vermutung führen.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung'),
