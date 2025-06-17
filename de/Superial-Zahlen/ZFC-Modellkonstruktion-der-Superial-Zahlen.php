@@ -96,6 +96,30 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
+                'Primfaktorzerlegung von \lm{ \s }', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Wir stellen fest, dass \lm{ ω } und \lm{ p^{ω} } keine Elemente des Rings der Superial-Zahlen sind.'."\n".
+                    'Dies scheint im Allgemeinen kein Problem zu sein.'."\n",
+                      'So steht nun auch fest, dass \lm{ \s } durch jede endliche Potenz jeder Primzahl'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall n \in \mathbb{N} *)  *[  p^{n} \mid \s  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'teilbar ist, wobei jeder der Exponenten \lm{ n } sowie jede dieser endlichen Potenzen \lm{ p^{n} } ein Element des Superial-Rings sind.'."\n".
+                    'Im Besonderen ist die exakte Teilbarkeit'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  p^{ω} \parallel \s  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'gegeben, wobei, wie gesagt, weder \lm{ ω } noch \lm{ p^{ω} } Elemente des Superial-Rings sind.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
+                      
                 'Tiefere Betrachtung der Potenzen von \lm{ \s }', subline =>
                   '')),
                   array( 'text', array( text => array(
@@ -119,30 +143,6 @@
                       'Auch ist auffällig, dass hier Summen oder Differenzen wie \lm{ k \cdot ω \pm \frac{ z }{ n } } als Ausdrücke entstehen, die wir bisher nicht kennen,'."\n".
                     'aber nun einfach nach den Grundregeln der uns bekannten Algebra nutzen.'."\n".
                     'Unter Kenntnis der Dominanz von \lm{ k \cdot ω }.'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
-                      
-                'Primfaktorzerlegung von \lm{ \s }', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'Wir stellen fest, dass \lm{ ω } und \lm{ p^{ω} } keine Elemente des Rings der Superial-Zahlen sind.'."\n".
-                    'Dies scheint im Allgemeinen kein Problem zu sein.'."\n",
-                      'So steht nun auch fest, dass \lm{ \s } durch jede endliche Potenz jeder Primzahl'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall n \in \mathbb{N} *)  *[  p^{n} \mid \s  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'teilbar ist, wobei jeder der Exponenten \lm{ n } sowie jede dieser endlichen Potenzen \lm{ p^{n} } ein Element des Superial-Rings sind.'."\n".
-                    'Im Besonderen ist die exakte Teilbarkeit'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  p^{ω} \parallel \s  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'gegeben, wobei, wie gesagt, weder \lm{ ω } noch \lm{ p^{ω} } Elemente des Superial-Rings sind.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:ZFC-Modellkonstruktion:Vortext:X', text =>
                       
