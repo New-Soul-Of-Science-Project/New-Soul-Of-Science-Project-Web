@@ -283,7 +283,7 @@
                   array( 'text', array( text => array(
                     'Was wir sehen können ist, dass der endliche Summand nur \lm{ \pm 1 } sein kann, denn wäre er eine andere ganze Zahl,'."\n".
                     'dann wäre die natürliche Superial-Zahl, wegen des Primzahl-Flächenprodukts, durch den Betrag dieser ganzen Zahl teilbar.'."\n",
-                      'Die Frage, welche natürlichen Superial-Zahlen superiale Primzahlen sind, ist über irreduzible Polynome\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:IrreduziblesPolynom:2024}.}'."\n".
+                      'Die Frage, welche natürlichen Superial-Zahlen superiale Primzahlen sind, ist über irreduzible Polynome\footnote{\const{SupNum_g_footnote_text_Primpolynom}}'."\n".
                     'zu beantworten:'."\n".
                     ''))),
 
