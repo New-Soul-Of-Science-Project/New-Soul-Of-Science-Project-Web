@@ -4,10 +4,11 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 06.05.2025, 20:00h
-  
+  // #: Stand: 25.06.2025, 22:00h
+
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20250625:  +:  "To_f_Paragraph":  Make "$text" an optional parameter by setting "$text=''".
   //           20250506:  >:  "To_f_Paragraph" type "youtube":  Change 'iframe' to modern form without cookies.
   //           20250505:  >:  "To_f_Paragraph" type "headline":  Add 'horizontalLineBefore' as boolean parameter.
   //           20250322:  >:  "To_f_Paragraph" type "bulletlist":  Add 'Shape' as object parameter.
@@ -1292,7 +1293,7 @@
 
 
 
-  function To_f_Text_replace_html( $replace_ary=null, $replace_preg_ary=null, $text)
+  function To_f_Text_replace_html( $replace_ary=null, $replace_preg_ary=null, $text='')
   {
     $text_ret = $text;
     

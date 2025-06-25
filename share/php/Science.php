@@ -3,10 +3,11 @@
   // #: Name:  "Science.php"
   
   
-  // #: Stand: 09.03.2025, 19:00h
+  // #: Stand: 25.06.2025, 22:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; *: fixed, compatible)
   
+  //           20250625:  +:  "Sc_f_Paragraph":  Make "$text" an optional parameter by setting "$text=''".
   //           20250309:  +:  "$Sc_g_equation_replace_ary":  Add '  :\neq  ' -> '\;\;\;:\neq\;\;\;' and ':\neq' -> '\raise{-.14ex}{᠄}\mspace{-4.5mu}\neq' and ':\in' -> '\raise{-.158ex}{᠄}\mspace{-4.5mu}\in'
   //                      *:  "$Sc_g_equation_replace_ary":  Change order of some entries
   //           20241119:  *:  "Sc_f_equation_latex_str_html":  Change MathJax inline mode to use "$" as start and same as end instead of "\(" as start ans "\)" as end because the old usage caused problems in case of use in "\jumpname" statements probably getting confused by the system with our own internal latex statements.
@@ -619,7 +620,7 @@
   const latex_tech = 'latex_tech';
   const equ_list = 'equ_list';
   
-  function Sc_f_Paragraph( $type, $replace_ary=null, $replace_preg_ary=null, $offset='            ', $text)
+  function Sc_f_Paragraph( $type, $replace_ary=null, $replace_preg_ary=null, $offset='            ', $text='')
   {
     global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ, $Sc_g_equation_auto_num;
     
