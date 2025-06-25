@@ -334,6 +334,7 @@
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem'),
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen'),
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Superial-Zahlen'),
                     )),
 
                   array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen', text =>
@@ -578,7 +579,8 @@
                     ))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Was wir erreichen wollten.'."\n".
+                      'Was wir erreichen wollten.'."\n",
+                        '\\\\'."\n".
                       ''))),
 
                   array( 'text', array( text => array(
@@ -702,6 +704,20 @@
 
                   array( 'text', array( text => array(
                     'Hierdurch ist die Summe mit ihrer Intervall-Menge tief verbunden.'."\n".
+                    ''))),
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Superial-Zahlen', text =>
+                      
+                'Aktual-Unendliche Exponenten der Primzahlen in Superial-Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX siehe Einleitung, "Rationale Zahlen und ihre Primfaktorzerlegung"'."\n".
+                    'XXX siehe Einleitung, "Die Veränderung der Primfaktorzerlegung von 𝑠 durch rationale Koeffizienten"'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
                     ''))),
 
                   array( 'jumplist', array(
