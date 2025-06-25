@@ -28,7 +28,7 @@
                     'Über sie ist im wesentlichen nur bekannt, dass sie alle Zahlen sind, die nicht zu den algebraischen gehören.'."\n".
                     'Ein zwar klares, aber auch recht allgemeines Kriterium, dass nicht viel über ihre Struktur aussagt.'."\n",
                       'Sollte die Vermutung stimmen, dass alle transzendenten Zahlen superial kleine Summanden enthalten, der sich dieses Kapitel widmet,'."\n".
-                    'dann wären die reell algebraischen Zahlen die \italic{vollständigen sinnvollen Koeffizienten des Stellenwertsystems der Superial-Zahlen}.'."\n".
+                    'dann wären die reell algebraischen Zahlen die \italic{vollständigen} sinnvollen Koeffizienten des Stellenwertsystems der Superial-Zahlen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:Vortext:X', text =>
                       
@@ -40,7 +40,7 @@
                     'Dies ist uns gelungen, wodurch die Superial-Zahlen auch als Zahlentheorie der Analyses verstanden werden können.'."\n",
                       'Eine Fragestellung, die sich daraus ergibt ist:'."\n".
                     'Welche Funktion ist ihre eigene Ableitung oder ihre eigenes Integral?'."\n",
-                      'Dies lässt sich \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{aufgrund unseres entwickelten Formalismus} berechnen, wie wir in Formel'."\n".
+                      'Dies lässt sich \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{aufgrund unseres entwickelten Formalismus} berechnen, wie wir mit Formel'."\n".
                     '\jumpname{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-hoch-x-Def-durch-s-Stellenwertsystem} sehen:'."\n".
                     ''))),
                   array( 'equations',
@@ -107,26 +107,29 @@
                   array( 'headline', array( jump_name => 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:Vortext:X', text =>
                       
                 'Beweis: Nicht-Einbettung jeder transzendenten Zahl in eine einzige Ebene der Superial-Zahlen', subline =>
-                  'Die vollständigen Koeffizienten der Superial-Zahlen sind die reell algebraischen Zahlen')),
+                  'Die vollständigen sinnvollen Koeffizienten sind die reell algebraischen Zahlen')),
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{Erklärungs-Video}',
                     '• Negative reell algebraische Zahlen und die Null korrekt berücksichtigen.',
+                    '• Hier ist noch wichtig, dass  \lm{ p^{ω + \mathrm{v}_{\!p}(a)} } nur dann eine ganze Zahl sein darf (Beweis), wenn \lm{ \mathrm{v}_{\!p}(a) \in \mathbb{Q} }.',
+                    '– Wenn \lm{ \mathrm{v}_{\!p}(a) \in *( \mathbb{A}_{\R} \setminus \mathbb{Q} *) }, dann sollte \lm{ p^{ω + \mathrm{v}_{\!p}(a)} } keine ganze Zahl sein.',
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Unser Beweis stütz sich auf die \lm{ p }‑adische Argumentation, also auf die Idee, dass jede reelle Zahl \lm{ a \neq 0 } über'."\n".
-                    'eine Zerlegung in ihre \lm{ p }‑adischen Bewertungen \lm{ \mathrm{v}_{\!p}(a) } zu beschreiben ist.'."\n".
+                    'Unser Beweis stütz sich auf die \lm{ p }‑adische Argumentation, also auf die Idee, dass jede reell algebraische Zahl \lm{ a \neq 0 } über'."\n".
+                    'eine Zerlegung in ihre \lm{ p }‑adischen Bewertungen\footnote{\const{SupNum_g_footnote_text_PadischeBewertung}} \lm{ \mathrm{v}_{\!p}(a) } zu beschreiben ist.'."\n".
                     'Bei einer algebraischen Zahl ist \lm{ *\{ \mathrm{v}_{\!p}(a) \neq 0 *\} } stets eine endliche Indexmenge'."\n".
                     '(nur endlich viele Primzahlen \lm{ p } haben von Null verschiedene Bewertungen), und jeder Index'."\n".
                     '\lm{ \mathrm{v}_{\!p}(a) \in \mathbb{Q} } ist rational.'."\n".
-                    'Genau diese Eigenschaft „endlich viele, rationale \lm{ p }‑adische Bewertungen“\footnote{\const{SupNum_g_footnote_text_PadischeBewertung}}'."\n".
+                    'Genau diese Eigenschaft „endlich viele, rationale \lm{ p }‑adische Bewertungen“'."\n".
                     'ermöglicht es, dass \lm{ a } durch'."\n".
-                    '\lm{ a \cdot \s } in die erste Ebene der ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} } eingebettet wird.'."\n",
+                    '\lm{ a \cdot \s } in die erste Schicht der ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} } eingebettet wird.'."\n",
                       'Für transzendente Zahlen soll nun das Gegenteil gelten:'."\n".
                     'Sie können nicht alleine durch Multiplikation mit \lm{ \s } zu einer aktual unendlichen ganzen Superial-Zahl werden,'."\n".
                     'ohne eine niedrigere Schicht des superialen Stellenwertsystems mit einem Wert ungleich Null zu belegen.'."\n".
-                    'Im Detail:'."\n".
+                    'Das bedeutet, sie sind keine sinnvollen Koeffizienten der Superial-Zahlen, sondern selber Superial-Zahlen mit aktual unendlich kleinen Summanden.'."\n",
+                      'Im Detail:'."\n".
                     ''))),
 
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -140,9 +143,9 @@
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                     '\cond{\lm{ p }‑adische Bewertung} \\\\'."\n".
-                      'Für jede Primzahl \lm{ p } und jede \lm{ a \in \mathbb{R} \setminus *\{ 0 *\} } ist in der klassischen Zahlentheorie der'."\n".
-                      '\italic{\lm{ p }‑adische Betrag} \lm{ *| a |*_{p} } beziehungsweise die \italic{\lm{ p }‑adische Bewertung}'."\n".
-                      '\lm{ \mathrm{v}_{\!p}(a) } definiert.'."\n".
+                      'Für jede Primzahl \lm{ p } und jede reell algebraische Zahl \lm{ a \in \mathbb{A}_{\R} } ist in der klassischen Zahlentheorie der'."\n".
+                      '\italic{\lm{ p }‑adische Betrag} \lm{ *| a |*_{p} } beziehungsweise für jede \lm{ a \in \mathbb{A}_{\R} \setminus *\{ 0 *\} }'."\n".
+                      'die \italic{\lm{ p }‑adische Bewertung} \lm{ \mathrm{v}_{\!p}(a) \in \mathbb{Q} } definiert.'."\n".
                       'Grob gesagt misst \lm{ \mathrm{v}_{\!p}(a) } \italic{wie oft} \lm{ p } als Faktor in \lm{ a } steckt.'."\n".
                       'Etwa:'."\n".
                       ''))),
@@ -171,14 +174,15 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a \cdot \s  =  \prod_{\substack{p \in \mathbb{P}}} p^{ω + \mathrm{v}_{p}(a)}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  a \cdot \s  =  \pm \prod_{\substack{p \in \mathbb{P}}} p^{ω + \mathrm{v}_{p}(a)}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'wobei \lm{ \mathrm{v}_{\!p}(a) } für (fast) alle \lm{ p } Null oder ein (endlicher) rationaler Wert ist.'."\n".
                       'Anders gesagt:'."\n".
                       'Jede Primzahl kommt in diesem Produkt unendlich oft vor, nur mit einem \italic{kleinen} rationalen Offset in der Exponentenhöhe.'."\n".
-                      'Und nach dem \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung}'."\n".
-                      'ist jeder Primzahlturm \lm{ p^{ω + \mathrm{v}_{p}(a)} } eine ganze Zahl, obwohl \lm{ ω + \mathrm{v}_{p}(a) } eine gebrochene Zahl sein kann,'."\n".
+                      'Und nach dem \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung},'."\n".
+                      'zusammen mit dem Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Ganzzahlige-Potenzen-der-Wurzeln}‹},'."\n".
+                      'ist jeder Primzahlturm \lm{ p^{ω + \mathrm{v}_{p}(a)} } eine aktual unendliche ganze Zahl, wenn \lm{ \mathrm{v}_{p}(a) \in \mathbb{Q} }, obwohl \lm{ ω + \mathrm{v}_{p}(a) } eine gebrochene Zahl sein kann,'."\n".
                       'weil \lm{ ω } so groß ist, dass ein endlicher rationaler Summand daran nichts ändert.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -210,7 +214,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a \cdot \s^{n}  =  \prod_{\substack{p \in \mathbb{P}}} p^{n \cdot ω + \mathrm{v}_{p}(a)}  \;\; ,  }'),
+                      array( display => 'on',  latex => '{  a \cdot \s^{n}  =  \pm \prod_{\substack{p \in \mathbb{P}}} p^{n \cdot ω + \mathrm{v}_{p}(a)}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'was genau in einer Schicht in \lm{ \mathbb{S}_{\Z} } liegt.'."\n".
@@ -224,11 +228,11 @@
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                     '\condb{Widerspruch für transzendente Zahlen} \\\\'."\n".
                       'Jetzt nehmen wir an (zum Ausschluss), es gäbe eine \lm{ \tau \in \mathbb{R} } \italic{transzendent}, die \italic{doch} durch ein'."\n".
-                      '\lm{ a = \tau } und ein nichtnegatives \lm{ n } so in \lm{ \mathbb{S}_{\Z} } landet, also'."\n".
+                      '\lm{ a = \tau } (\lm{ \tau } genannt Tau) und ein nichtnegatives \lm{ n } so in \lm{ \mathbb{S}_{\Z} } landet, also'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Tra', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \tau \cdot \s^{n}  =  \prod_{\substack{p \in \mathbb{P}}} p^{n \cdot ω + \delta_{p}}  \;\; .  }'),
+                      array( display => 'on',  latex => '{  \tau \cdot \s^{n}  =  \pm \prod_{\substack{p \in \mathbb{P}}} p^{n \cdot ω + \delta_{p}}  \;\; .  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Daraus bekäme man (formal) eine Primfaktorzerlegung von \lm{ \tau } indem man „dividiert“ durch \lm{ \s^{n} }.'."\n".
@@ -357,7 +361,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Home'),
+                      array(  jump_name => 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:Konsequenzen-Beweis-transzendente-Zahlen'),
                     )),
                 )
           ); ?>
@@ -365,13 +369,13 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-          <!  • X  >
-          <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:X',
+          <!  • Konsequenzen des Beweises zu den transzendenten Zahlen  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:Konsequenzen-Beweis-transzendente-Zahlen',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
@@ -380,14 +384,74 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Wie schon im Kapitel \italic{›\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:endliche-Indexmengen-p-a-Bewert-ergeben-reell-algebr-Zahlen}‹}'."\n".
+                    'gesagt, können wir tatsächlich jede endliche Indexmenge von \lm{ p }-adischen Bewertungen \lm{ \mathrm{v}_{\!p}(a) = q_{p} },'."\n".
+                    'mit \lm{ q_{p} \in \mathbb{Q} \setminus *\{ 0 *\} }, wählen und erhalten eine reell algebraische Zahl:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall q_{p} \in \mathbb{Q} \setminus *\{ 0 *\} *)  *[  \mathrm{v}_{\!p}(a)  =  q_{p}  *]  }'),
+                      array( display => 'on',  latex => '{  a  =  \pm \prod_{\substack{p \in \mathbb{P}}} p^{q_{p}}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  a  \in  \mathbb{A}_{\R}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dies ist tatsächlich eine bidirektionale Abbildung, bis auf den Fall \lm{ a = 0 } und das Vorzeichen.'."\n",
+                      'Und dies hat nun Konsequenzen für Exponenten endlich vieler Primzahlen \lm{ \iota_{p} } (\lm{ \iota } genannt Iota) die irrational reell algebraisch sind.'."\n".
+                      'Wenn \lm{ \mathbb{I} } für die Menge der irrationalen Zahlen und \lm{ \mathbb{T} } für die Menge der transzendenten Zahlen steht:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{I}  =  \mathbb{R} \setminus \mathbb{Q}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{T}  =  \mathbb{R} \setminus \mathbb{A}_{\R}  }'),
+                      array( display => 'on',  latex => '{  *( \forall \iota_{p} \in \mathbb{I} \setminus *\{ 0 *\} *)  *[  \mathrm{v}_{\!p}(\tau)  =  \iota_{p}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall \iota_{p} \in \mathbb{I} \setminus *\{ 0 *\} *) *( \#\!*\{ \iota_{p} *\} \in \mathbb{N}^{+} *)  *[  \tau  =  \pm \prod_{\substack{p \in \mathbb{P}}} p^{\iota_{p}}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \tau  \in  \mathbb{T}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Unser \lm{ \tau } (genannt Tau) ist also eine transzendente Zahl, wenn seine p-adische Bewertung (Primzahlbewertung)'."\n".
+                    'in ihren Potenzen irrationale Zahlen besitzt.'."\n",
+                      'Daher ist schon jede einzelne Primzahl mit irrationaler Potenz eine transzendente Zahl,'."\n".
+                      'denn die Anzahl der Potenzen in der Indexmenge \lm{ \#\!*\{ \iota_{p} *\} } kann ja auch nur Eins sein:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall \iota \in \mathbb{I} \setminus *\{ 0 *\} *)  *[  \tau  =  \pm p^{\iota}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \tau  \in  \mathbb{T}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Frage ist nun, ist ein überrationaler Bruch einer Potenz in der Größenordnung \lm{ ω } kein aktual unendlicher ganzzahliger Bruch mehr?'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall \iota \in \mathbb{I} \setminus *\{ 0 *\} *)  *[  \frac{ a }{ b }  =  \frac{ p^{ω + \iota} }{ p^{ω} }  *]  }'),
+                      array( display => 'on',  latex => '{  p^{ω}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \frac{ a }{ b }  \in  \mathbb{T}  }'),
+                      array( display => 'on',  latex => '{  ?\Rightarrow  p^{ω + \iota}  \notin  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Bedingung, dass die reell algebraischen Zahlen die \italic{vollständigen} Koeffizienten der Superial-Zahlen sind,'."\n".
+                    'impliziert, dass jede transzendente Zahl im Produkt mit \lm{ \s = \s^{1} } auch mindestens eine superiale Schicht kleiner als Eins'."\n".
+                    'mit Koeffizienten ungleich Null belegen muss.'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Alg', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \exists a_{-k} \neq 0 *) *( \forall k \in \mathbb{N} *)  *[  XXX  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:X'),
+                      array(  jump_name => 'OM:SupNum:ZFC-Modellkonstruktion'),
                     )),
               )
-          ); */ ?>
+          ); ?>
 
 
 			<?php FrQFT_f_Div_WrapperEnd( '      '); ?>

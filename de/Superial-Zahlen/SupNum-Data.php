@@ -402,7 +402,7 @@
       jump_ary => array(
         'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
-          // 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:Vortext:X' => array( headline_text => 'Konsequenzen des Beweises zu den transzendenten Zahlen'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:Konsequenzen-Beweis-transzendente-Zahlen' => array( headline_text => 'Konsequenzen des Beweises zu den transzendenten Zahlen'/* , headline_text_short => 'X'*/),
       ),
     ),
     'OM:SupNum:ZFC-Modellkonstruktion' => array(
