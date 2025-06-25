@@ -81,7 +81,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}  =  *\{  f = \sum_{k \in \Gamma}\!a_k \cdot \s^{k}  *|*  a_k \in \mathbb{A}_{\R},\;\mathrm{supp} f := *\{ k *|* a_k \neq 0 *\}  \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\;  \text{ ist wohlgeordnet}  *\}  }'),
+                      array( display => 'on',  latex => '{  \mathbb{S}  =  *\{  f = \sum_{k \in \mathbb{Z}}\!a_k \cdot \s^{k}  *|*  a_k \in \mathbb{A}_{\R},\; \underbrace{ \operatorname{supp} f := *\{ k *|* a_k \neq 0 *\} }_{\text{ist wohlgeordnet}}  \\\ \qquad\qquad\qquad\qquad\qquad\;\;\,  \;\land\; \underbrace{\exists n \in \mathbb{Z}:\; \operatorname{supp} f \subseteq ( -\infty, n ]}_{\text{oben endlich}}  *\}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'Mathematisch steckt die Unendlichkeit jetzt in zwei ZFC-konformen Stellen:'."\n".
