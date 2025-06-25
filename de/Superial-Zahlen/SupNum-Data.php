@@ -386,7 +386,7 @@
       jump_ary => array(
         'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
                    
-          // 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:Vortext:X' => array( headline_text => 'SN.ÜV.7'),
+          'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:endliche-Indexmengen-p-a-Bewert-ergeben-reell-algebr-Zahlen' => array( headline_text => 'Alle endlichen Indexmengen mit p-adischen Bewertungen aus rationalen Zahlen ergeben reell algebraische Zahlen'/* , headline_text_short => 'X'*/),
       ),
     ),
     'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden' => array(
