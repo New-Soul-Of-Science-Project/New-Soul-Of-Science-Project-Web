@@ -227,8 +227,8 @@
                   array( 'text', array( text => array(
                     'Betrachten wir die Eigenschaften der unendlichen Produkte näher, so fällt auf, dass sich auf ihrer Grundlage recht einfach neue ganze Zahlen konstruieren lassen,'."\n".
                     'die über die Mengen oder Klassen hinausgehen, zu deren Konstruktion wir diese nutzen oder aus denen wir diese gewonnen haben.'."\n",
-                      'Ein Beispiel ist die Primfaktorzerlegung der vollständigen Induktion \lm{ ω }, die sich unter Zuhilfenahme der Superial-Zahlen'."\n".
-                    'beweisen lässt:'."\n".
+                      'Ein Beispiel ist die \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primfaktorzerlegung der vollständigen Induktion \lm{ ω }}, die sich unter Zuhilfenahme der Superial-Zahlen'."\n".
+                    'beweisen lässt'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.ZFC.D', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
@@ -238,13 +238,16 @@
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'Hieraus erkennen wir, dass für alle endlichen Primzahlen \lm{ p } jeweils neue aktualunendliche ganze Zahlen \lm{ \frac{ ω }{ p } } konstruiert werden können,'."\n".
+                    'und wodurch wir eine tiefere Definition unserer superialen Basis \lm{ \s } erhalten.'."\n",
+                      'Hierin erkennen wir, dass für alle endlichen Primzahlen \lm{ p } jeweils neue aktual unendliche ganze Zahlen \lm{ \frac{ ω }{ p } } konstruiert werden können,'."\n".
                     'die größer als jede endliche ganze Zahl sind, jedoch kleiner als \lm{ ω }.'."\n".
-                    'Von Summen dieser mit endlichen ganzen Zahlen wollen wir hier gar nicht erst anfangen, die noch viel mehr solcher Zahlen hervorbringen würden.'."\n".
-                    'Das ist halt eine der Effekte, die wir uns mit unendlichen Produkten von endlichen Zahlen einfangen können.'."\n",
+                    'Und Summen dieser mit endlichen ganzen Zahlen \lm{ \frac{ ω }{ p } \pm n } bringen dann noch viel mehr solcher Zahlen hervor.'."\n".
+                    'Das ist halt einer der Effekte, die wir mit unendlichen Produkten von endlichen Zahlen heraufbeschwören und die wir in Erkenntnis verwandeln.'."\n",
                       'Damit sind dann, beginnend mit Null, vor \lm{ ω } mehr ganze Zahlen möglich, als \lm{ ω }’s Wert groß ist.'."\n".
-                    'Dies ist ein ähnlicher Effekt, wie wir ihn schon von den rationalen Zahlen her kennen, der uns bei ganzen Zahlen vermutlich noch nicht so häufig begegnet ist.'."\n".
-                    'Und wir kennen ihn ähnlich auch schon von den \jump{OM:BiOrd:Home}{Biordinalzahlen} im Abschnitt \italic{\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}}.'."\n",
+                    'Dies ist ein ähnlicher Effekt, wie wir ihn schon von den rationalen Zahlen her kennen, der uns bei ganzen Zahlen vermutlich noch nicht so begegnet ist.'."\n".
+                    'Wir kennen ihn ähnlich auch von den \jump{OM:BiOrd:Home}{Biordinalzahlen} im Abschnitt \italic{\jumpname{OM:BiOrd:Einleitung:NeueEinsichten:MehrGanzeZahlenVorOmega}}.'."\n",
+                      'Im Aktual-Unendlichen bekommen die ganzen Zahlen aus Produktperspektive also manche bemerkenswerte Ähnlichkeit mit den rationalen Zahlen,'."\n".
+                    'was verblüffend erscheinen kann.'."\n",
                       'Unendliche Produkte müssen also klar definiert sein, um diese Phänomene sicher handhaben zu können.'."\n".
                     ''))),
                       
