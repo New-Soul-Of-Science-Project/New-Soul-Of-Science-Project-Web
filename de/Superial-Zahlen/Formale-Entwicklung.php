@@ -31,7 +31,7 @@
                     'vielleicht sogar alle reell algebraischen Zahlen.'."\n",
                       'Durch Radikale darstellbare rein reale algebraische Zahlen sind solche, die durch endliche rationale Zahlen, mittels der vier Grundrechenarten'."\n".
                     'sowie unter Verwendung von endlichen ganzen Wurzeln darstellbar sind.\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}}'."\n".
-                    'Ob die Superial-Zahlen auch eine sinnvolle Erweiterung aller algebraischen Zahlen darstellen, die keine Radikale sind, ist Teil der \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{aktuellen Forschung}.'."\n",
+                    'Ob die Superial-Zahlen auch eine sinnvolle Erweiterung aller algebraischen Zahlen darstellen, die keine Radikale sind, ist Teil der \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{aktuellen Forschung}.'."\n",
                       'Die Superial-Zahlen sollen auch die wichtigen endlichen Teilmengen der algebraischen Zahlen erweitern,'."\n".
                     'wie die der natürlichen Zahlen \lm{ \mathbb{N} }, der ganzen Zahlen \lm{ \mathbb{Z} } und der Primzahlen \lm{ \mathbb{P} } zu den'."\n".
                     'den \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} \lm{ \mathbb{S}_{\N} },'."\n".
@@ -465,9 +465,9 @@
                     'Eine der Eigenschaften der Superial-Zahlen ist, dass es sich um ein Stellenwertsystem handelt.'."\n".
                     'Es ist ein aktual unendliches Stellenwertsystem, in dem es eine endliche Stelle gibt und deren „Ziffern“'."\n".
                     'nicht nur ganze Zahlen oder alle rationalen Zahlen sein können, sondern eine große Menge an reell algebraischen Zahlen, wenn nicht gar'."\n".
-                    '\jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{alle reell algebraischen Zahlen, wie wir vermuten}.'."\n".
+                    '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{alle reell algebraischen Zahlen, wie wir vermuten}.'."\n".
                     'Also können sogar negative Zahlen, Brüche, Wurzeln und so fort hier Ziffern sein.'."\n",
-                      '\jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{Vermutlich können transzendente Zahlen keine} wirklich \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{sinnvollen Ziffern beziehungsweise Koeffizienten} sein,'."\n".
+                      '\jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{Vermutlich können transzendente Zahlen keine} wirklich \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{sinnvollen Ziffern beziehungsweise Koeffizienten} sein,'."\n".
                       'wie die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Eulersche Zahl \lm{ \e } oder die Kreiszahl \lm{ π }}.'."\n".
                     ''))),
                   array( 'text', array( text => array(

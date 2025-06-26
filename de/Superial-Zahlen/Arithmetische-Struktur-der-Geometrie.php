@@ -532,7 +532,7 @@
                       'Mit Hilfe von \lm{ ω } können wir eine normierte aktual unendliche Potenz der Primzahlen ausdrücken,'."\n".
                     'die es uns ermöglicht, das Fraktal der arithmetischen Teilung der Geometrie im Hinblick auf rein endliche Zahlen'."\n".
                     'so zu vervollständigen, dass alle Radikale der irrationalen reell algebraischen Zahlen im geschöpften Raster enthalten sind,'."\n".
-                    '\jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{vermutlich sogar wirklich alle reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
+                    '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{vermutlich sogar wirklich alle reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
                     'also auch alle irrationalen in ihnen.'."\n",
                       'Dabei ist es \jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{vermutlich so, dass die transzendenten Zahlen aktual unendlich kleine Summanden enthalten},'."\n".
                     'die dafür sorgen, dass sie nicht zu den rein endlichen Zahlen dazugehören, wie wir bereits an der'."\n".
@@ -812,7 +812,7 @@
                     'Kurz und knapp – vielleicht auch etwas zu verkürzt - würde ich sagen, um simple geometrische Strukturen abzubilden brauchen wir'."\n".
                     'zunächst keine transzendenten Zahlen.'."\n".
                       'Die arithmetische Struktur der Geometrie, die wir oben herausgefunden haben und von der wir vermuten, dass deren'."\n".
-                    '\jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{Koeffizienten der Superial-Zahlen tatsächlich reell algebraisch}'."\n".
+                    '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Koeffizienten der Superial-Zahlen tatsächlich reell algebraisch}'."\n".
                     'sind, und nicht nur solche, die durch Radikale darstellbar sind,'."\n".
                     'legt nahe, dass die Koordinaten der Grundstruktur der Geometrie mit reell algebraischen Zahlen auskommt.'."\n".
                     'In diesem Fall sind dann keine Koordinaten notwendig, die unendlich kleine Summanden beinhalten, wie es demnach'."\n".

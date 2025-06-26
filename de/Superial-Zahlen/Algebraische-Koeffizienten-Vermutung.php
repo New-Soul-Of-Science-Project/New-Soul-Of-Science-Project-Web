@@ -2,7 +2,7 @@
         include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
 
 
-<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen'); ?>
+<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:SupNum:Algebraische-Koeffizienten-Vermutung'); ?>
 
 
       <?php FrQFT_f_Div_Header( '      '); ?>
@@ -39,7 +39,7 @@
                       'Diese Idee verbindet klassische algebraische Methoden (\lm{ p }‑adische Bewertungen, Primfaktorzerlegung\footnote{\const{SupNum_g_footnote_text_Primfaktorzerlegung}}'."\n".
                     'mit der neuen transfiniten oder aktual unendlichen Struktur der Superial-Zahlen und erscheint als vielversprechender Ansatz, um die Frage systematisch anzugehen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:Vortext:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                       
                 'Beweis: Einbettung reell algebraischer Zahlen in das System der Superial-Zahlen', subline =>
                   '')),
@@ -170,7 +170,7 @@
                     'wie tief sie mit den Grenzen der Zahlenmengen verbunden sind.'."\n".
                     ''))),
 
-                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:Vortext:X',
+                  array( 'fade-in-area', array( Display => 'hideContent', jumpName => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X',
                 Title => 'Alter Ansatz mit elliptischen Integralen …',
                 TitleVis => 'Alter Ansatz mit elliptischen Integralen:', ParagraphList => array(
 
@@ -284,7 +284,7 @@
                     ))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:endliche-Indexmengen-p-a-Bewert-ergeben-reell-algebr-Zahlen'),
+                      array(  jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:endliche-Indexmengen-p-a-Bewert-ergeben-reell-algebr-Zahlen'),
                     )),
                 )
           ); ?>
@@ -294,11 +294,11 @@
 
           <!  • Alle endlichen Indexmengen mit p-adischen Bewertungen aus rationalen Zahlen ergeben reell algebraische Zahlen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:endliche-Indexmengen-p-a-Bewert-ergeben-reell-algebr-Zahlen',
+            'OM:SupNum:Algebraische-Koeffizienten-Vermutung:endliche-Indexmengen-p-a-Bewert-ergeben-reell-algebr-Zahlen',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(

@@ -101,6 +101,22 @@
           'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Equ-Summe-rationale-Zahlen-bisOhne-x' => array( headline_text => 'SN.AbIn.NU.39'),
       ),
     ),
+    'OM:SupNum:Algebraische-Koeffizienten-Vermutung' => array(
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Algebraische-Koeffizienten-Vermutung.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Algebraische-Koeffizienten-Vermutung.php',
+      titel => 'Algebraische-Koeffizienten-Vermutung (AKV) - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\name[undertitle]{OM:SupNum:Algebraische-Koeffizienten-Vermutung}. — \name[description]{OM:SupNum:Algebraische-Koeffizienten-Vermutung}.',
+      keywords => '',
+      text_titel_h1 => 'Algebraische-Koeffizienten-Vermutung (AKV)',
+      text_titel_short => 'Algebraische-Koeffizienten-Vermutung',
+      text_undertitel_h2 => 'Wir vermuten, dass alle sinnvollen superialen Koeffizienten exakt den reell algebraischen Zahlen entsprechen',
+      text_titel_discr_h3 => 'Die Trennlinie zwischen den reell algebraischen Zahlen und den transzendenten Zahlen entspricht im Grunde der Trennlinie zwischen den Fraktalebenen der Superial-Zahlen',
+      jump_ary => array(
+        'OM:SupNum:Algebraische-Koeffizienten-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          'OM:SupNum:Algebraische-Koeffizienten-Vermutung:endliche-Indexmengen-p-a-Bewert-ergeben-reell-algebr-Zahlen' => array( headline_text => 'Alle endlichen Indexmengen mit p-adischen Bewertungen aus rationalen Zahlen ergeben reell algebraische Zahlen'/* , headline_text_short => 'X'*/),
+      ),
+    ),
     'OM:SupNum:Eigenschaften' => array(
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Eigenschaften.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Eigenschaften.php',
@@ -371,22 +387,6 @@
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-plus-n-hoch-eins-durch-x-durch-n-hoch-omega' => array( headline_text => 'SN.ÜV.128'),
                         
         'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises' => array( headline_text => 'Diskussion des Beweises'/* , headline_text_short => 'X'*/),
-      ),
-    ),
-    'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen' => array(
-      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Vermutung-superiale-Koeffizienten-sind-reell-algebraische-Zahlen.php',
-      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Vermutung-superiale-Koeffizienten-sind-reell-algebraische-Zahlen.php',
-      titel => 'Vermutung superiale Koeffizienten sind reell algebraische Zahlen (Beweis) - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\name[undertitle]{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}. — \name[description]{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}.',
-      keywords => '',
-      text_titel_h1 => 'Vermutung superiale Koeffizienten sind reell algebraische Zahlen \color{*TitleAdd}{\small{(Beweis)}}',
-      text_titel_short => 'Vermutung superiale Koeffizienten sind reell algebraische Zahlen',
-      text_undertitel_h2 => 'Wir vermuten, dass alle sinnvollen superialen Koeffizienten exakt den reell algebraischen Zahlen entsprechen',
-      text_titel_discr_h3 => 'Die Trennlinie zwischen den reell algebraischen Zahlen und den transzendenten Zahlen entspricht im Grunde der Trennlinie zwischen den Fraktalebenen der Superial-Zahlen',
-      jump_ary => array(
-        'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-                   
-          'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:endliche-Indexmengen-p-a-Bewert-ergeben-reell-algebr-Zahlen' => array( headline_text => 'Alle endlichen Indexmengen mit p-adischen Bewertungen aus rationalen Zahlen ergeben reell algebraische Zahlen'/* , headline_text_short => 'X'*/),
       ),
     ),
     'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden' => array(

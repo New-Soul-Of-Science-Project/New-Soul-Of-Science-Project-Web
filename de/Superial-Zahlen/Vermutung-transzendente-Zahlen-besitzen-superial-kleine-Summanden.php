@@ -8,7 +8,7 @@
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Algebraische-Koeffizienten-Vermutung'); ?>
 
 	
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
@@ -22,7 +22,7 @@
                     'Die Superial-Zahlen sind eine Lupe in die Details der reellen Zahlen, in die reell algebraischen'."\n".
                     'wie auch in die transzendenten Zahlen.'."\n",
                       'Die reell algebraischen Zahlen sind von ihrer Struktur her recht gut bekannt.'."\n".
-                    'So konnten wir bereits zeigen, dass sie alle \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{sinnvolle Koeffizienten des Stellenwertsystems der Superial-Zahlen}'."\n".
+                    'So konnten wir bereits zeigen, dass sie alle \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{sinnvolle Koeffizienten des Stellenwertsystems der Superial-Zahlen}'."\n".
                     'sind.'."\n".
                     'Ganz anders die transzendenten Zahlen.'."\n".
                     'Über sie ist im wesentlichen nur bekannt, dass sie alle Zahlen sind, die nicht zu den algebraischen gehören.'."\n".
@@ -135,7 +135,7 @@
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei die Grundlage für unseren folgenden Widerspruchsbeweis unser vorheriger'."\n".
-                      '\jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{Beweis, dass alle reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen} sind.'."\n".
+                      '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Beweis, dass alle reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen} sind.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                     '\condb{Das \lm{ p }‑adische Grundprinzip} \\\\'."\n".
@@ -321,7 +321,7 @@
                     'aktual unendlich feiner Raster und deren Zusammenhang mit irrationalen Wurzeln führt.'."\n",
                       'Erst dieses neue Verständnis der irrationalen Wurzeln und ihre überrationale Darstellung mittels aktual unendlich feiner Raster'."\n".
                     'ermöglicht uns schließlich'."\n".
-                    '\jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{alle algebraischen Zahlen als auf diesem Raster liegend}'."\n".
+                    '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{alle algebraischen Zahlen als auf diesem Raster liegend}'."\n".
                     'zu begreifen.'."\n".
                     'Was uns wiederum erkennen lässt, dass es sich bei den transzendenten Zahlen tatsächlich um echte superiale Zahlen oder,'."\n".
                     'wie im Fall der eulersche Zahl \lm{ \e_{\s} }, sogar noch um deren Erweiterungen handeln muss.'."\n".
@@ -384,7 +384,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Wie schon im Kapitel \italic{›\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen:endliche-Indexmengen-p-a-Bewert-ergeben-reell-algebr-Zahlen}‹}'."\n".
+                    'Wie schon im Kapitel \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung:endliche-Indexmengen-p-a-Bewert-ergeben-reell-algebr-Zahlen}‹}'."\n".
                     'gesagt, können wir tatsächlich jede endliche Indexmenge von \lm{ p }-adischen Bewertungen \lm{ \mathrm{v}_{\!p}(a) = q_{p} },'."\n".
                     'mit \lm{ q_{p} \in \mathbb{Q} \setminus *\{ 0 *\} }, wählen und erhalten eine reell algebraische Zahl:'."\n".
                       ''))),

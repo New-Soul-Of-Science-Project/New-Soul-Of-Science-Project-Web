@@ -92,7 +92,7 @@
                     '\jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{immer eine ganze Zahl ergibt}.'."\n".
                     'Auch im Produkt mit allen durch Radikale, also Wurzeln, darstellbaren reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
                     'wie wir nachfolgend gleich zeigen werden, ergeben sich immer ganze Superial-Zahlen.'."\n".
-                    'Ob dies, wie von mir vermutet, wirklich für \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{alle reell algebraischen Zahlen}'."\n".
+                    'Ob dies, wie von mir vermutet, wirklich für \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{alle reell algebraischen Zahlen}'."\n".
                     'gilt, bleibt hingegen erst einmal noch offen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Perspektive-Stellenwertsystems-Superial-Zahlen', text =>
@@ -221,7 +221,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \mathbb{A}_{\S}  ?=  \mathbb{A}_{\R}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Das wird in meiner \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{Vermutung, dass die sinnvollen superiale Koeffizienten alle reell algebraische Zahlen} untersucht.'."\n",
+                    'Das wird in meiner \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Vermutung, dass die sinnvollen superiale Koeffizienten alle reell algebraische Zahlen} untersucht.'."\n",
                       'Wie gesagt, algebraische Zahlen sind alle möglichen Nullstellen von Polynomen beliebigen Grades.'."\n".
                     'Nullstellen von Polynomen ersten bis vierten Grades sind alle komplexe Zahlen\footnote{\const{SupNum_g_footnote_text_KomplexeZahl}}'."\n".
                     'deren Koeffizienten rationale – also gebrochene –'."\n".
@@ -911,7 +911,7 @@
                     'reell algebraischen Zahlen \lm{ \mathbb{A}_{\R} }, nicht weniger, aber auch nicht mehr, sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
                     'Denn die Linie, die die algebraischen Zahlen von den transzendenten trennt, ist im Grunde die gleiche,'."\n".
                     'die die einzelnen fraktalen Ebenen der Superial-Zahlen trennt.'."\n",
-                      'Genau das ist meine \italic{›\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}‹},'."\n".
+                      'Genau das ist meine \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹},'."\n".
                     'also, dass Formel \jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen}'."\n".
                     'stimmt.'."\n".
                     'Das wäre schon ziemlich erfreulich und cool.'."\n".
@@ -1174,7 +1174,7 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'was der Anzahl aller \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} entspricht,'."\n".
-                      'die, nach unserer \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{Vermutung, alle reell algebraischen Zahlen} sind. \\\\'."\n".
+                      'die, nach unserer \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Vermutung, alle reell algebraischen Zahlen} sind. \\\\'."\n".
                       'Denn mit'."\n".
                       ''))),
                   array( 'equations',
@@ -1337,7 +1337,7 @@
                     '– Dabei gibt es in der Menge \lm{ \mathbb{A}_{\S} } nur endliche Werte, während in der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } die weit überwiegende Mehrheit der Elemente aktual unendlich kleine Summanden trägt.',
                     '– Es ist, als wenn in der Geometrie die Anzahl \lm{ \s } an Entitäten – Existenzen – im endlichen in der Menge \lm{ \mathbb{A}_{\S} } nicht dichter gepackt werden kann. Beim Versucht, die gleiche Anzahl an Entitäten auf kleineren Raum, also enger, zu packen, wie bei \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} }, müssen dann Anteile aktual unendlich kleiner Summanden herausfallen.',
                     '⋅ Dies passt zu \italic{›\jumpname{OM:SupNum:Struktur-Geometrie}‹}.',
-                    '⋅ Dies würde auch zur \italic{›\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}‹} und zur \italic{›\jumpname{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}‹} passen.',
+                    '⋅ Dies würde auch zur \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹} und zur \italic{›\jumpname{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}‹} passen.',
                     ))), */
                       
                   array( 'text', array( text => array(
@@ -1379,8 +1379,8 @@
                     'dass wir mit dem \jump{OM:SupNum:Einleitung:Vortext:Equ-s-gleich-Primzahl-Flae-Prod}{Primzahl-Flächenprodukt \lm{ \s }}, der \lm{ ω }-ten Potenz aller endlichen Primzahlen,'."\n".
                     'bei der Teilung durch \lm{ \s } eine Feinheit der Teile erreichen,'."\n".
                     'die nachweislich auch alle durch Radikale darstellbaren reell algebraischen Zahlen umfasst, also auch die irrationalen Wurzeln, wie beispielsweise \lm{ \sqrt{ 2 } }, \lm{ \sqrt{ 5 } } oder den Goldenen Schnitt \lm{ φ = \frac{ \sqrt{ 5 } + 1 }{ 2 } },'."\n".
-                    'wenn nicht sogar \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{alle reell algebraischen Zahlen}.'."\n",
-                      'Dies könnte in meinen Augen eben auch „mathematisch perfekt“ zur \italic{›\jumpname{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}‹}'."\n".
+                    'wenn nicht sogar \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{alle reell algebraischen Zahlen}.'."\n",
+                      'Dies könnte in meinen Augen eben auch „mathematisch perfekt“ zur \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹}'."\n".
                     'und zur \italic{›\jumpname{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}‹} passen, die ja beide noch zu beweisen sind.'."\n".
                     'Es passte deshalb sehr gut, weil hinter diesen Vermutungen steht, dass die Trennlinie zwischen den Fraktalebenen der Superial-Zahlen im Grunde auch'."\n".
                     'der Trennlinie zwischen den reell algebraischen Zahlen und den transzendenten Zahlen entspricht.'."\n".
@@ -1734,7 +1734,7 @@
                     'Aus der Perspektive der Schritte und der Adressierung bekommen wir einen bemerkenswerten Mix von'."\n".
                     'Koeffizienten der Mengen \lm{ \mathbb{N} }, \lm{ \mathbb{Z} }, \lm{ \mathbb{Z}^{-} } sowie'."\n".
                     '\lm{ \mathbb{A}_{\S} }, wobei letztere Menge \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{teilweise} oder sogar'."\n".
-                    '\jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{ganz für die reell algebraischen Zahlen} steht.'."\n".
+                    '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{ganz für die reell algebraischen Zahlen} steht.'."\n".
                     'Durch die Mengen \lm{ \mathbb{N} } und \lm{ \mathbb{Z}^{-} }, die sich schließlich zu \lm{ \mathbb{Z} } vereinigen,'."\n".
                     'ergibt sich dann noch eine Asymmetrie, die dem Zählen geschuldet ist.'."\n",
                       'Der Teilung durch \lm{ \s } sind diese komplexen Zusammenhänge der Mengen und deren Asymmetrie'."\n".
@@ -2193,7 +2193,7 @@
                     'die durch Radikale darstellbar ist,'."\n".
                     'eine ganze Zahl ergibt, wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}‹} zeigen.'."\n".
                     'Dies gelingt unter anderem mit Hilfe unseres Beweises der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung}.'."\n".
-                    'Und wir \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{vermuten, dass dies sogar für alle reell algebraischen Zahlen gilt},'."\n".
+                    'Und wir \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{vermuten, dass dies sogar für alle reell algebraischen Zahlen gilt},'."\n".
                     'was allerdings noch zu beweisen aussteht.'."\n",
                       'Es ist offensichtlich, dass \\jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{jedes Produkt einer rationalen Zahl mit unserer superialen Basis \lm{ \s } eine ganze Zahl ergibt}.'."\n".
                     'Wir können daran erkennen, dass schon die Struktur der reell algebraischen Zahlen es erfordert, nicht nur'."\n".

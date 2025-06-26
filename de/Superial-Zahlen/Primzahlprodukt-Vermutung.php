@@ -33,7 +33,7 @@
                     '\jump{OM:SupNum:Eigenschaften:StrukturVonS}{Struktur der Superial-Zahlen} gestoßen.'."\n",
                       'Schauen wir uns das Zählen der \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen} an:'."\n".
                     'Beim Zählen von natürlichen Superial-Zahlen werden endliche \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen} \lm{ a \in \lbrack 0, 1 \lbrack_{\mathbb{A}_{\S}} }'."\n".
-                    '– \jump{OM:SupNum:Vermutung-superiale-Koeffizienten-reell-algebraische-Zahlen}{vermutliche alle reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}} –'."\n".
+                    '– \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{vermutliche alle reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}} –'."\n".
                     'als Koeffizienten des Unendlichen \lm{ a \cdot \s + z }'."\n".
                     'mitgezählt, wenn die endlichen ganzen Zahlen \lm{ z } als endlicher Summand immer wieder durchlaufen.'."\n".
                     'Betrachten wir im Folgenden mit Hilfe von \lm{ \s } das Verhältnis der Anzahl der endlichen sinnvollen Koeffizienten'."\n".
