@@ -355,11 +355,11 @@
     'OM:SupNum:Superiale-Transzendenz-Vermutung' => array(
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Superiale-Transzendenz-Vermutung.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Superiale-Transzendenz-Vermutung.php',
-      titel => 'Superiale Transzendenz-Vermutung (STV) - Die Superial-Zahlen (SN) - Deutsch',
+      titel => 'Superiale-Transzendenz-Vermutung (STV) - Die Superial-Zahlen (SN) - Deutsch',
       description => '\name[undertitle]{OM:SupNum:Superiale-Transzendenz-Vermutung}.\hidden{ — \name[description]{OM:SupNum:Superiale-Transzendenz-Vermutung}.}',
       keywords => '',
-      text_titel_h1 => 'Superiale Transzendenz-Vermutung (STV)',
-      text_titel_short => 'Superiale Transzendenz-Vermutung',
+      text_titel_h1 => 'Superiale-Transzendenz-Vermutung (STV)',
+      text_titel_short => 'Superiale-Transzendenz-Vermutung',
       text_undertitel_h2 => 'Wir vermuten, dass alle transzendenten Zahlen superial kleine Summanden besitzen und damit im aktual unendlich kleinen keine rein endlichen Zahlen sind',
       text_titel_discr_h3 => '',
       jump_ary => array(
