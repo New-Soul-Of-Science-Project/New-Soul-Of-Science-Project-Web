@@ -534,7 +534,7 @@
                     'so zu vervollständigen, dass alle Radikale der irrationalen reell algebraischen Zahlen im geschöpften Raster enthalten sind,'."\n".
                     '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{vermutlich sogar wirklich alle reell algebraischen Zahlen}\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
                     'also auch alle irrationalen in ihnen.'."\n",
-                      'Dabei ist es \jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{vermutlich so, dass die transzendenten Zahlen aktual unendlich kleine Summanden enthalten},'."\n".
+                      'Dabei ist es \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{vermutlich so, dass die transzendenten Zahlen aktual unendlich kleine Summanden enthalten},'."\n".
                     'die dafür sorgen, dass sie nicht zu den rein endlichen Zahlen dazugehören, wie wir bereits an der'."\n".
                     '\jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{eulerschen Zahl \lm{ \e_{\s} }} zeigen konnten.'."\n",
                       'Noch außergewöhnlicher wird die Rolle von \lm{ ω }, wenn wir im \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung}'."\n".
@@ -816,7 +816,7 @@
                     'sind, und nicht nur solche, die durch Radikale darstellbar sind,'."\n".
                     'legt nahe, dass die Koordinaten der Grundstruktur der Geometrie mit reell algebraischen Zahlen auskommt.'."\n".
                     'In diesem Fall sind dann keine Koordinaten notwendig, die unendlich kleine Summanden beinhalten, wie es demnach'."\n".
-                    '\jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{offenbar bei transzendenten Zahlen der Fall} ist.'."\n",
+                    '\jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{offenbar bei transzendenten Zahlen der Fall} ist.'."\n",
                       'Wenn wir also für einfache Relationen erst einmal mit reell algebraischen Koordinaten auskommen,'."\n".
                     'dann sind nicht nur die Parameter, sondern auch die Koordinaten der Relationen von Geraden, Parabeln, allgemein Polynomen, Vielecken und selbst Kreisen oder Ellipsen'."\n".
                     'allesamt ebenfalls reell algebraische Zahlen, wenn eine der beiden Koordinaten, der Mittelpunkt und der Radius ebenfalls reell algebraisch sind;'."\n".

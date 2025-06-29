@@ -133,7 +133,7 @@
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Primzahlprodukt-Vermutung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Ueberrationalitaetsvermutung'),
                       nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Algebraische-Koeffizienten-Vermutung'),
-                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden'),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Superiale-Transzendenz-Vermutung'),
                     ))),
                       
                   array( 'normal',

@@ -22,7 +22,7 @@
                     'Der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis unserer Überrationalitätsvermutung}, das Zeigen,'."\n".
                     'dass auch alle damit sich ergebenden durch Radikale\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}} darstellbaren reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
                     '\jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvolle Koeffizienten der Superial-Zahlen} sind,'."\n".
-                    'und der Beginn des systematischen Herausarbeitens der \jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{Struktur der transzendenten Zahlen},'."\n".
+                    'und der Beginn des systematischen Herausarbeitens der \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Struktur der transzendenten Zahlen},'."\n".
                     'aus Perspektive des Superial-Zahlensystems,'."\n".
                     'führt beinahe zwangsläufig zu dem Eindruck, dass alle reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen sein sollten.'."\n",
                       'Ein möglicher Ansatz, dies zu Beweisen, stützt sich darauf, die klassische \lm{ p }‑adische Sichtweise\footnote{\const{SupNum_g_footnote_text_PadischeZahl}} auf reell algebraische Zahlen zu nutzen und diese global zu vereinen.'."\n".
@@ -327,7 +327,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden'),
+                      array(  jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung'),
                     )),
               )
           ); ?>

@@ -8,7 +8,7 @@
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Superiale-Transzendenz-Vermutung'); ?>
 
 	
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',

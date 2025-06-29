@@ -2,7 +2,7 @@
         include $Glo_PathRel_back.'../share/php/NSOSP.php'; ?>
 
 
-<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden'); ?>
+<?php FrQFT_f_HTML_BeginHeaderBodyContainer( 'OM:SupNum:Superiale-Transzendenz-Vermutung'); ?>
 
 
       <?php FrQFT_f_Div_Header( '      '); ?>
@@ -30,7 +30,7 @@
                       'Sollte die Vermutung stimmen, dass alle transzendenten Zahlen superial kleine Summanden enthalten, der sich dieses Kapitel widmet,'."\n".
                     'dann wären die reell algebraischen Zahlen die \italic{vollständigen} sinnvollen Koeffizienten des Stellenwertsystems der Superial-Zahlen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:Vortext:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                       
                 'Die transzendente eulersche Zahl \lm{ \e }', subline =>
                   'Eine transzendente Zahl durch die Lupe der Superial-Zahlen')),
@@ -80,7 +80,7 @@
                     'sondern eine Erweiterung dieser darstellt, die auch superiale Exponenten der superialen Basis \lm{ \s } zulassen,'."\n".
                     'hier \lm{ \s^{-\s} }.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:Vortext:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                       
                 'Unsere Vermutung, dass transzendente Zahlen immer superial kleine Summanden besitzen', subline =>
                   '')),
@@ -95,7 +95,7 @@
                     'müssen alle transzendenten Zahlen superial kleine Summanden enthalten.'."\n",
                       'Wir sehen …'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:Vortext:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                       
                 'Es ist eigentlich die Vermutung, dass die reell algebraischen Zahlen die vollständigen Koeffizienten der Superial-Zahlen sind', subline =>
                   '')),
@@ -104,7 +104,7 @@
                     'Ist der Beweis der Vermutung, dass alle reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen sind'."\n".
                     'ebenfalls der Beweis ihrer Vollständigkeit?'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:Vortext:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                       
                 'Beweis: Nicht-Einbettung jeder transzendenten Zahl in eine einzige Ebene der Superial-Zahlen', subline =>
                   'Die vollständigen sinnvollen Koeffizienten sind die reell algebraischen Zahlen')),
@@ -326,7 +326,7 @@
                     'Was uns wiederum erkennen lässt, dass es sich bei den transzendenten Zahlen tatsächlich um echte superiale Zahlen oder,'."\n".
                     'wie im Fall der eulersche Zahl \lm{ \e_{\s} }, sogar noch um deren Erweiterungen handeln muss.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:Vortext:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Vortext:X', text =>
                       
                 'XXX', subline =>
                   '')),
@@ -361,7 +361,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:Konsequenzen-Beweis-transzendente-Zahlen'),
+                      array(  jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung:Konsequenzen-Beweis-transzendente-Zahlen'),
                     )),
                 )
           ); ?>
@@ -371,11 +371,11 @@
 
           <!  • Konsequenzen des Beweises zu den transzendenten Zahlen  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden:Konsequenzen-Beweis-transzendente-Zahlen',
+            'OM:SupNum:Superiale-Transzendenz-Vermutung:Konsequenzen-Beweis-transzendente-Zahlen',
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Superiale-Transzendenz-Vermutung', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(

@@ -430,7 +430,7 @@
                     'die einen Teil unserer Ungleichungen ungültig machen würden.'."\n".
                     'Denn unsere Untersuchung der \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Eulerschen Zahl \lm{ \e }} – hierin als \lm{ \e_{\s} } bezeichnet –'."\n".
                     'aufgrund der \jump{OM:SupNum:Ableitungen-Integrale:Ableitung}{Ableitung} mit Hilfe von Superial-Zahlen,'."\n".
-                    'lässt nämlich die \jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{Vermutung} aufkommen,'."\n".
+                    'lässt nämlich die \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Vermutung} aufkommen,'."\n".
                     'dass transzendente Zahlen, die Teil der Menge der reellen Zahlen \lm{ \mathbb{R} } sind, immer aktual unendlich kleine Summanden enthalten.'."\n",
                       'Der Wert von \lm{ \pm ω^{-1} } ist über den \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Beweis der Primzahlprodukt-Vermutung} wohldefiniert.'."\n",
                       'Auf diese Weise kommen wir in die Lage, Zahlen außerhalb des Endlichen zu definieren; Zahlen, die also wirklich im negativen oder positiven aktual unendlich Großen'."\n".
@@ -467,7 +467,7 @@
                     'nicht nur ganze Zahlen oder alle rationalen Zahlen sein können, sondern eine große Menge an reell algebraischen Zahlen, wenn nicht gar'."\n".
                     '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{alle reell algebraischen Zahlen, wie wir vermuten}.'."\n".
                     'Also können sogar negative Zahlen, Brüche, Wurzeln und so fort hier Ziffern sein.'."\n",
-                      '\jump{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}{Vermutlich können transzendente Zahlen keine} wirklich \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{sinnvollen Ziffern beziehungsweise Koeffizienten} sein,'."\n".
+                      '\jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Vermutlich können transzendente Zahlen keine} wirklich \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{sinnvollen Ziffern beziehungsweise Koeffizienten} sein,'."\n".
                       'wie die \jump{OM:SupNum:Eulersche-Zahl-e-Funktion}{Eulersche Zahl \lm{ \e } oder die Kreiszahl \lm{ π }}.'."\n".
                     ''))),
                   array( 'text', array( text => array(

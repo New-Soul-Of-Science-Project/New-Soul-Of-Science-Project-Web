@@ -752,6 +752,26 @@
 		<lastmod>2025-02-13</lastmod>
 		<priority>1.0</priority>
 	</url>
+  <url>
+    <loc>https://nsosp.org/de/Superial-Zahlen/Algebraische-Koeffizienten-Vermutung.php</loc>
+    <lastmod>2025-02-13</lastmod>
+    <priority>1.0</priority>
+  </url>
+	<url>
+		<loc>https://nsosp.org/de/Superial-Zahlen/Arithmetische-Struktur-der-Geometrie.php</loc>
+		<lastmod>2025-02-13</lastmod>
+		<priority>1.0</priority>
+	</url>
+    <url>
+      <loc>https://nsosp.org/share/images/SN/s-geom-Konstrukt-Teilung-v02.pdf</loc>
+      <lastmod>2025-02-13</lastmod>
+      <priority>1.0</priority>
+    </url>
+    <url>
+      <loc>https://nsosp.org/share/images/SN/s-geom-Konstrukt-Wiederholung-v02.pdf</loc>
+      <lastmod>2025-02-13</lastmod>
+      <priority>1.0</priority>
+    </url>
 	<url>
 		<loc>https://nsosp.org/de/Superial-Zahlen/Eigenschaften.php</loc>
 		<lastmod>2025-02-13</lastmod>
@@ -787,33 +807,13 @@
 		<lastmod>2025-02-13</lastmod>
 		<priority>1.0</priority>
 	</url>
-	<url>
-		<loc>https://nsosp.org/de/Superial-Zahlen/Arithmetische-Struktur-der-Geometrie.php</loc>
-		<lastmod>2025-02-13</lastmod>
-		<priority>1.0</priority>
-	</url>
-    <url>
-      <loc>https://nsosp.org/share/images/SN/s-geom-Konstrukt-Teilung-v02.pdf</loc>
-      <lastmod>2025-02-13</lastmod>
-      <priority>1.0</priority>
-    </url>
-    <url>
-      <loc>https://nsosp.org/share/images/SN/s-geom-Konstrukt-Wiederholung-v02.pdf</loc>
-      <lastmod>2025-02-13</lastmod>
-      <priority>1.0</priority>
-    </url>
+  <url>
+    <loc>https://nsosp.org/de/Superial-Zahlen/Superiale-Transzendenz-Vermutung.php</loc>
+    <lastmod>2025-02-13</lastmod>
+    <priority>1.0</priority>
+  </url>
   <url>
     <loc>https://nsosp.org/de/Superial-Zahlen/Ueberrationalitaetsvermutung.php</loc>
-    <lastmod>2025-02-13</lastmod>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://nsosp.org/de/Superial-Zahlen/Algebraische-Koeffizienten-Vermutung.php</loc>
-    <lastmod>2025-02-13</lastmod>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://nsosp.org/de/Superial-Zahlen/Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden.php</loc>
     <lastmod>2025-02-13</lastmod>
     <priority>1.0</priority>
   </url>

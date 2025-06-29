@@ -1337,7 +1337,7 @@
                     '– Dabei gibt es in der Menge \lm{ \mathbb{A}_{\S} } nur endliche Werte, während in der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } die weit überwiegende Mehrheit der Elemente aktual unendlich kleine Summanden trägt.',
                     '– Es ist, als wenn in der Geometrie die Anzahl \lm{ \s } an Entitäten – Existenzen – im endlichen in der Menge \lm{ \mathbb{A}_{\S} } nicht dichter gepackt werden kann. Beim Versucht, die gleiche Anzahl an Entitäten auf kleineren Raum, also enger, zu packen, wie bei \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} }, müssen dann Anteile aktual unendlich kleiner Summanden herausfallen.',
                     '⋅ Dies passt zu \italic{›\jumpname{OM:SupNum:Struktur-Geometrie}‹}.',
-                    '⋅ Dies würde auch zur \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹} und zur \italic{›\jumpname{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}‹} passen.',
+                    '⋅ Dies würde auch zur \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹} und zur \italic{›\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung}‹} passen.',
                     ))), */
                       
                   array( 'text', array( text => array(
@@ -1381,7 +1381,7 @@
                     'die nachweislich auch alle durch Radikale darstellbaren reell algebraischen Zahlen umfasst, also auch die irrationalen Wurzeln, wie beispielsweise \lm{ \sqrt{ 2 } }, \lm{ \sqrt{ 5 } } oder den Goldenen Schnitt \lm{ φ = \frac{ \sqrt{ 5 } + 1 }{ 2 } },'."\n".
                     'wenn nicht sogar \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{alle reell algebraischen Zahlen}.'."\n",
                       'Dies könnte in meinen Augen eben auch „mathematisch perfekt“ zur \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹}'."\n".
-                    'und zur \italic{›\jumpname{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}‹} passen, die ja beide noch zu beweisen sind.'."\n".
+                    'und zur \italic{›\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung}‹} passen, die ja beide noch zu beweisen sind.'."\n".
                     'Es passte deshalb sehr gut, weil hinter diesen Vermutungen steht, dass die Trennlinie zwischen den Fraktalebenen der Superial-Zahlen im Grunde auch'."\n".
                     'der Trennlinie zwischen den reell algebraischen Zahlen und den transzendenten Zahlen entspricht.'."\n".
                     'Das würde also gut die bekannte Aufteilung der Zahlenmengen und deren Trennung ontologisch klar und verständlich erklären.'."\n",
@@ -2202,7 +2202,7 @@
                     'Da scheint es Fraglich, ob \lm{ 2^{ω} } ausreichen kann,'."\n".
                     'die Komplexität oder Feinheit der Struktur aller reellen Zahlen darzustellen.'."\n".
                     'Dazu kommt, dass die reellen Zahlen auch noch alle transzendenten Zahlen enthalten sollen, was im Rahmen der Superial-Zahlen weitere interessante Fragen aufwirft,'."\n".
-                    'siehe Seite \italic{›\jumpname{OM:SupNum:Vermutung-transzendente-Zahlen-besitzen-superial-kleine-Summanden}‹}'."\n".
+                    'siehe Seite \italic{›\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung}‹}'."\n".
                     'oder auch den folgenden Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:UntersuchungenZurKontinuumshypothese:Transzendente-Zahlen}‹}.'."\n",
                       'Während die Mächtigkeit der reell algebraischen Zahlen, der der natürlichen Zahlen entspricht,'."\n".
                     'weil sie abzählbar sind,\footnote{\const{SupNum_g_footnote_text_TranszendenteZahlEigenschaften}}'."\n".
