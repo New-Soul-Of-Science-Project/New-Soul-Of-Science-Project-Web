@@ -352,6 +352,22 @@
         'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen' => array( headline_text => 'Experimentelle Gedanken zu anderen Beweiswegen'/* , headline_text_short => 'X'*/),
       ),
     ),
+    'OM:SupNum:Superiale-Transzendenz-Vermutung' => array(
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Superiale-Transzendenz-Vermutung.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Superiale-Transzendenz-Vermutung.php',
+      titel => 'Superiale Transzendenz-Vermutung (STV) - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\name[undertitle]{OM:SupNum:Superiale-Transzendenz-Vermutung}.\hidden{ — \name[description]{OM:SupNum:Superiale-Transzendenz-Vermutung}.}',
+      keywords => '',
+      text_titel_h1 => 'Superiale Transzendenz-Vermutung (STV)',
+      text_titel_short => 'Superiale Transzendenz-Vermutung',
+      text_undertitel_h2 => 'Wir vermuten, dass alle transzendenten Zahlen superial kleine Summanden besitzen und damit im aktual unendlich kleinen keine rein endlichen Zahlen sind',
+      text_titel_discr_h3 => '',
+      jump_ary => array(
+        'OM:SupNum:Superiale-Transzendenz-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          'OM:SupNum:Superiale-Transzendenz-Vermutung:Konsequenzen-Beweis-transzendente-Zahlen' => array( headline_text => 'Konsequenzen des Beweises zu den transzendenten Zahlen'/* , headline_text_short => 'X'*/),
+      ),
+    ),
     'OM:SupNum:Ueberrationalitaetsvermutung' => array(
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Ueberrationalitaetsvermutung.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Ueberrationalitaetsvermutung.php',
@@ -387,22 +403,6 @@
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-plus-n-hoch-eins-durch-x-durch-n-hoch-omega' => array( headline_text => 'SN.ÜV.128'),
                         
         'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises' => array( headline_text => 'Diskussion des Beweises'/* , headline_text_short => 'X'*/),
-      ),
-    ),
-    'OM:SupNum:Superiale-Transzendenz-Vermutung' => array(
-      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Superiale-Transzendenz-Vermutung.php',
-      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Superiale-Transzendenz-Vermutung.php',
-      titel => 'Superiale Transzendenz-Vermutung - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\name[undertitle]{OM:SupNum:Superiale-Transzendenz-Vermutung}.\hidden{ — \name[description]{OM:SupNum:Superiale-Transzendenz-Vermutung}.}',
-      keywords => '',
-      text_titel_h1 => 'Superiale Transzendenz-Vermutung',
-      text_titel_short => 'Superiale Transzendenz-Vermutung',
-      text_undertitel_h2 => 'Wir vermuten, dass alle transzendenten Zahlen superial kleine Summanden besitzen und damit im aktual unendlich kleinen keine rein endlichen Zahlen sind',
-      text_titel_discr_h3 => '',
-      jump_ary => array(
-        'OM:SupNum:Superiale-Transzendenz-Vermutung:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-                   
-          'OM:SupNum:Superiale-Transzendenz-Vermutung:Konsequenzen-Beweis-transzendente-Zahlen' => array( headline_text => 'Konsequenzen des Beweises zu den transzendenten Zahlen'/* , headline_text_short => 'X'*/),
       ),
     ),
     'OM:SupNum:ZFC-Modellkonstruktion' => array(
