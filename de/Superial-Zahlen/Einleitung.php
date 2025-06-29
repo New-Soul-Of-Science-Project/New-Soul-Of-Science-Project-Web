@@ -48,7 +48,7 @@
                     'sowie durch auf ihm aufbauende Beweise,'."\n".
                     'sogar die Menge der Radikale der algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
                     'inklusive aller Ausdrücke der irrationalen Wurzeln, die durch die Grundrechenarten entstehen, auf fraktale Weise ins Aktual-Unendliche.'."\n".
-                    'So geben wir der aktualen Unendlichkeit eine facettenreiche und der \jump{OM:SupNum:Struktur-Geometrie}{Geometrie eine fundamentale arithmetische und fraktale Struktur}.'."\n",
+                    'So geben wir der aktualen Unendlichkeit eine facettenreiche und der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{Geometrie eine fundamentale arithmetische und fraktale Struktur}.'."\n",
                       'Mit den Superial-Zahlen kommen wir in die Lage aktual unendlich kleine Differenzen zu bilden,'."\n".
                     'mit denen wir, bis ins aktual unendlich kleine, präzise Ableitungen beschreiben und berechnen können, ohne den Limes zu benutzen.'."\n",
                       'Auch können wir Integrale mit wohldefinierten aktual unendlich kleinen Zählschritten beschreiben,'."\n".
@@ -676,7 +676,7 @@
                     'beliebig endlich oft stecken.'."\n".
                     'Eine Definition von \lm{ \s }, die dies explizit umsetzt, finden wir auf der Seite'."\n".
                     '\italic{\jumpname{OM:SupNum:Formale-Entwicklung}}'."\n".
-                    'im Abschnitt \italic{\jumpname{OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}}.'."\n",
+                    'im Abschnitt \italic{\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}}.'."\n",
                       'Folgendes Primzahlprodukt sollte das einfachste kleinste Produkt aus unendlich vielen Primfaktoren sein,'."\n".
                     'dass diese Bedingung erfüllt, dabei ist \lm{ \mathbb{P} } die Menge aller endlicher Primzahlen:'."\n".
                     ''))),

@@ -316,7 +316,7 @@
                     'der transzendenten Zahlen beitragen, siehe die Abgrenzung zwischen algebraischen und transzendenten Zahlen'."\n".
                     'und konkret die eulersche Zahl \lm{ \e_{\s} }, und sicher noch weiter beitragen werden.'."\n".
                     'Denn sie geben uns einen intuitiv nachvollziehbaren Grund dafür, warum dies alles so ist.'."\n".
-                    'Den finden wir in der \jump{OM:SupNum:Struktur-Geometrie}{arithmetischen Struktur} der Geometrie, die uns wieder über den'."\n".
+                    'Den finden wir in der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{arithmetischen Struktur} der Geometrie, die uns wieder über den'."\n".
                     '\jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung und deren Beweis} zu einem neuen Verständnis'."\n".
                     'aktual unendlich feiner Raster und deren Zusammenhang mit irrationalen Wurzeln führt.'."\n",
                       'Erst dieses neue Verständnis der irrationalen Wurzeln und ihre überrationale Darstellung mittels aktual unendlich feiner Raster'."\n".

@@ -1336,7 +1336,7 @@
                     '• Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} zeigt uns mit \lm{ \# \mathbb{A}_{\S} = \s }, dass die Menge aller sinnvollen Koeffizienten der Superial-Zahlen die gleiche Anzahl enthalten muss, wie die Menge der superial kleinen ganzen Zahlen von der Null bis ohne die Eins \lm{ \# *( \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} *) = \s }.',
                     '– Dabei gibt es in der Menge \lm{ \mathbb{A}_{\S} } nur endliche Werte, während in der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} } die weit überwiegende Mehrheit der Elemente aktual unendlich kleine Summanden trägt.',
                     '– Es ist, als wenn in der Geometrie die Anzahl \lm{ \s } an Entitäten – Existenzen – im endlichen in der Menge \lm{ \mathbb{A}_{\S} } nicht dichter gepackt werden kann. Beim Versucht, die gleiche Anzahl an Entitäten auf kleineren Raum, also enger, zu packen, wie bei \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} }, müssen dann Anteile aktual unendlich kleiner Summanden herausfallen.',
-                    '⋅ Dies passt zu \italic{›\jumpname{OM:SupNum:Struktur-Geometrie}‹}.',
+                    '⋅ Dies passt zu \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}‹}.',
                     '⋅ Dies würde auch zur \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹} und zur \italic{›\jumpname{OM:SupNum:Superiale-Transzendenz-Vermutung}‹} passen.',
                     ))), */
                       
@@ -1350,7 +1350,7 @@
                     'Formel \jumpname{OM:SupNum:Eigenschaften:StrukturVonS:Equ-Anzahl-sinnvolle-Koeffizienten-ist-s} zeigt uns mit \lm{ \# \mathbb{A}_{\S} = \s },'."\n".
                     'dass die Menge aller \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen} die gleiche Anzahl an Elementen enthalten muss,'."\n".
                     'wie die Menge der superial kleinen ganzen Zahlen von der Null bis ohne die Eins \lm{ \# *( \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} *) = \s }.'."\n".
-                    'Die superial kleinen ganzen Zahlen und diese Formel ihrer Anzahl ergeben sich aus der \jump{OM:SupNum:Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile}{arithmetischen Struktur der Geometrie}'."\n".
+                    'Die superial kleinen ganzen Zahlen und diese Formel ihrer Anzahl ergeben sich aus der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile}{arithmetischen Struktur der Geometrie}'."\n".
                     'durch die Erkenntnis, dass die Teilung der Strecke zwischen Null und Eins in \lm{ \s } Teile zu \lm{ \s } Teilstrecken der Länge \lm{ \s^{-1} } führen muss.'."\n",
                       'Interessant ist im Vergleich, dass in der Menge \lm{ \mathbb{A}_{\S} } nur endliche Werte existieren, während in der Menge \lm{ \lbrack 0, 1 \lbrack_{\mathbb{S}_{\N}^{-1}} }'."\n".
                     'die weit überwiegende Mehrheit der Elemente aktual unendlich kleine Summanden beinhaltet.'."\n".
@@ -1371,7 +1371,7 @@
                   array( 'text', array( text => array(
                   '\condb{Existenz der maximalen Dichte der Zahlengeraden} \\\\'."\n".
                     'Die eben entwickelte Vorstellung, dass eine weitere Verdichtung der maximaldichten rein endlichen Zahlengeraden zum „herausfallen“ aktual unendlich kleiner ganzer Summanden führt,'."\n".
-                    'passt, wie oben gesagt, genau zu unserer Feststellung auf der Seite \italic{›\jumpname{OM:SupNum:Struktur-Geometrie}‹}.'."\n",
+                    'passt, wie oben gesagt, genau zu unserer Feststellung auf der Seite \italic{›\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}‹}.'."\n",
                       'Dort teilen wir die Strecke von der Null bis zur Eins mit Hilfe unserer endlichen Primzahlen jeweils bis zur Potenz der vollständigen Induktion \lm{ ω }.'."\n".
                     'Wobei wir feststellen, dass wir diese Strecke nicht sinnvoll noch feiner mit Hilfe endlicher Primzahlen teilen können,'."\n".
                     'weil wir so bereits am Beginn einer aktual unendlichen fraktalen Wiederholung der arithmetischen Struktur der Geometrie angekommen sind.'."\n",
@@ -1604,7 +1604,7 @@
                     ))),
 
                   /* array( 'text', array( text => array(
-                    'Als wir die \jump{OM:SupNum:Struktur-Geometrie}{arithmetische Struktur der Geometrie} untersuchten,'."\n".
+                    'Als wir die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{arithmetische Struktur der Geometrie} untersuchten,'."\n".
                     'haben wir eine Definition der superialen Basis \lm{ \s } durch die vollständige'."\n".
                     'Teilung der Strecke von der Null bis zur Eins durch alle Primzahlen und deren Potenzen und Kombinationen gefunden.'."\n".
                     'Vollständige Teilung soll hier bedeuten vollständig durch alle endlichen Primzahlen und'."\n".
@@ -1748,7 +1748,7 @@
                     'Wir haben also aktual kleine Summanden.'."\n".
                     'Aber wir adressieren dafür nicht alle Punkte der Teilung in \lm{ \s } Teile.'."\n",
                       'Die Teile des ersten entsprechen genau den Schritten des zweiten.'."\n".
-                    'Es ist, als wenn die theoretische Annäherung an die statische \jump{OM:SupNum:Struktur-Geometrie}{arithmetische Struktur der Geometrie}'."\n".
+                    'Es ist, als wenn die theoretische Annäherung an die statische \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{arithmetische Struktur der Geometrie}'."\n".
                     'genau der praktischen Umsetzung eines schrittweisen und damit dynamischen Prozesses (der Beschreibung)'."\n".
                     'einer Berechnung entspricht.'."\n".
                     'Und in der Berechnung wird auch noch der statische Wert der theoretischen Annäherung benutzt.'."\n",
@@ -1775,7 +1775,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Betrachten wir die \jump{OM:SupNum:Struktur-Geometrie}{arithmetische Struktur der Geometrie} \lm{ \s } und die Adressierbarkeit ihrer Punkte,'."\n".
+                    'Betrachten wir die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{arithmetische Struktur der Geometrie} \lm{ \s } und die Adressierbarkeit ihrer Punkte,'."\n".
                     'die durch die Teilung durch \lm{ \s } entstehen, dann ist es interessant, dass wir durch'."\n".
                     'den Beweis der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung} auch in'."\n".
                     'den Ordinalzahlen\footnote{\const{BiOrd_g_footnote_text_Ordinalzahl}} eine Wertgleichheit zu \lm{ \s } finden:'."\n".
@@ -2097,7 +2097,7 @@
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',
-                    '• Verweisen auf \jumpname{OM:SupNum:Struktur-Geometrie}.',
+                    '• Verweisen auf \jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}.',
                     ))),
                       
                   array( 'text', array( text => array(
@@ -2134,7 +2134,7 @@
                     'Die Mächtigkeit einer Menge ist dabei nicht unbedingt der Anzahl der Elemente dieser Menge gleich.'."\n",
                       'Dies möchte ich nicht bezüglich der Mächtigkeit grundsätzlich in Frage stellen.'."\n".
                       'Sondern ich möchte die Kontinuumshypothese durch die mit den Superial-Zahlen gefundene Struktur des Unendlichen,'."\n".
-                    'der Dichte oder das Rasters der \jump{OM:SupNum:Struktur-Geometrie}{arithmetischen Struktur der Geometrie},'."\n".
+                    'der Dichte oder das Rasters der \jump{OM:SupNum:Arithmetische-Struktur-Geometrie}{arithmetischen Struktur der Geometrie},'."\n".
                     'differenzierter und tiefer beleuchten sowie gegebenenfalls sinnvoller formulieren, um weitere Erkenntnisse zu gewinnen.'."\n",
                       'Mit der Kontinuumshypothese wird angenommen:'."\n".
                     ''))),

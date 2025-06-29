@@ -117,6 +117,34 @@
           'OM:SupNum:Algebraische-Koeffizienten-Vermutung:endliche-Indexmengen-p-a-Bewert-ergeben-reell-algebr-Zahlen' => array( headline_text => 'Alle endlichen Indexmengen mit p-adischen Bewertungen aus rationalen Zahlen ergeben reell algebraische Zahlen'/* , headline_text_short => 'X'*/),
       ),
     ),
+    'OM:SupNum:Arithmetische-Struktur-Geometrie' => array(
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Arithmetische-Struktur-der-Geometrie.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Arithmetische-Struktur-der-Geometrie.php',
+      titel => 'Die arithmetische Struktur der Geometrie - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\name[undertitle]{OM:SupNum:Arithmetische-Struktur-Geometrie}.\hidden{ — \name[description]{OM:SupNum:Arithmetische-Struktur-Geometrie}.}',
+      keywords => '',
+      text_titel_h1 => 'Die arithmetische Struktur der Geometrie',
+      text_titel_short => 'Die arithmetische Struktur der Geometrie',
+      text_undertitel_h2 => 'Ein aktual unendliches Fraktal aus Primzahlteilen führt uns zur superialen Basis \lm{ \s }',
+      text_titel_discr_h3 => '',
+      jump_ary => array(
+        'OM:SupNum:Arithmetische-Struktur-Geometrie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Alle-Strecken-natuerlichen-Zahlen-vernetzen' => array( headline_text => 'Alle Strecken der natürlichen Zahlen und schließlich der ganzen Zahlen vernetzen'/*, headline_text_short => 'X' */),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega' => array( headline_text => 'SN.ArGeo.32'),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln' => array( headline_text => 'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *( \sqrt[k]{c} *)^{m} }', headline_text_short => 'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen'),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit' => array( headline_text => 'Die superiale Basis \lm{ \s } wird auf natürliche Weise sichtbar und definiert', headline_text_short => 'Die superiale Basis s wird auf natürliche Weise sichtbar und definiert'),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile' => array( headline_text => 'Die Abgeschlossenheit der Teilung der Strecke Eins in \lm{ \s } Teile'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
+          'OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DasKontinuum' => array( headline_text => 'Das Kontinuum',/* headline_text_short => 'X' */),
+
+        'OM:SupNum:Arithmetische-Struktur-Geometrie:OntologieDerGeometrie' => array( headline_text => 'Die Ontologie der Geometrie'/* , headline_text_short => 'X' */),
+
+        'OM:SupNum:Arithmetische-Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie' => array( headline_text => 'Resonanz in der Arithmetik der Geometrie'/* , headline_text_short => 'X' */),
+      ),
+    ),
     'OM:SupNum:Eigenschaften' => array(
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Eigenschaften.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Eigenschaften.php',
@@ -322,34 +350,6 @@
         'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion' => array( headline_text => 'Diskussion des Beweises'/* , headline_text_short => 'X'*/),
 
         'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen' => array( headline_text => 'Experimentelle Gedanken zu anderen Beweiswegen'/* , headline_text_short => 'X'*/),
-      ),
-    ),
-    'OM:SupNum:Struktur-Geometrie' => array(
-      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Arithmetische-Struktur-der-Geometrie.php',
-      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Arithmetische-Struktur-der-Geometrie.php',
-      titel => 'Die arithmetische Struktur der Geometrie - Die Superial-Zahlen (SN) - Deutsch',
-      description => '\name[undertitle]{OM:SupNum:Struktur-Geometrie}.\hidden{ — \name[description]{OM:SupNum:Struktur-Geometrie}.}',
-      keywords => '',
-      text_titel_h1 => 'Die arithmetische Struktur der Geometrie',
-      text_titel_short => 'Die arithmetische Struktur der Geometrie',
-      text_undertitel_h2 => 'Ein aktual unendliches Fraktal aus Primzahlteilen führt uns zur superialen Basis \lm{ \s }',
-      text_titel_discr_h3 => '',
-      jump_ary => array(
-        'OM:SupNum:Struktur-Geometrie:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
-
-          'OM:SupNum:Struktur-Geometrie:Vortext:Alle-Strecken-natuerlichen-Zahlen-vernetzen' => array( headline_text => 'Alle Strecken der natürlichen Zahlen und schließlich der ganzen Zahlen vernetzen'/*, headline_text_short => 'X' */),
-          'OM:SupNum:Struktur-Geometrie:Vortext:Equ-Abstand-des-Rasters-Zweiteilungen-mit-Potenz-omega' => array( headline_text => 'SN.ArGeo.32'),
-          'OM:SupNum:Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln' => array( headline_text => 'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen \lm{ *( \sqrt[k]{c} *)^{m} }', headline_text_short => 'Dies gilt sogar für alle Wurzeln aus natürlichen Zahlen und deren Potenzen'),
-          'OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit' => array( headline_text => 'Die superiale Basis \lm{ \s } wird auf natürliche Weise sichtbar und definiert', headline_text_short => 'Die superiale Basis s wird auf natürliche Weise sichtbar und definiert'),
-          'OM:SupNum:Struktur-Geometrie:Vortext:Abgeschlossenheit-Teilung-Strecke-Eins-in-s-Teile' => array( headline_text => 'Die Abgeschlossenheit der Teilung der Strecke Eins in \lm{ \s } Teile'/* , headline_text_short => 'X' */),
-          'OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktWiederholung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
-          'OM:SupNum:Struktur-Geometrie:Vortext:Fig-sGeomKonstruktTeilung' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
-          'OM:SupNum:Struktur-Geometrie:Vortext:Fig-GeradeSuperialZahlen' => array( headline_text => 'Abbildung '.(++$FrQFT_g_Fig_idx)),
-          'OM:SupNum:Struktur-Geometrie:Vortext:DasKontinuum' => array( headline_text => 'Das Kontinuum',/* headline_text_short => 'X' */),
-
-        'OM:SupNum:Struktur-Geometrie:OntologieDerGeometrie' => array( headline_text => 'Die Ontologie der Geometrie'/* , headline_text_short => 'X' */),
-
-        'OM:SupNum:Struktur-Geometrie:ResonanzInDerArithmetikDerGeometrie' => array( headline_text => 'Resonanz in der Arithmetik der Geometrie'/* , headline_text_short => 'X' */),
       ),
     ),
     'OM:SupNum:Ueberrationalitaetsvermutung' => array(

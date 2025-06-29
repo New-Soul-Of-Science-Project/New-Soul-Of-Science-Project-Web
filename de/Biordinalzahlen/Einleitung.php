@@ -16,7 +16,7 @@
                   array( 'notice', array( Display => 'hideContent', text => array(
                     '\bold{Offene Fragestellungen}',
                     '• Ist \lm{ 2^{ω} } eine Ordinalzahl und wenn ja, wo ordnet sie sich in den Ordinalzahlen ein?',
-                    '– Diese Fragestellung taucht auf der Seite \italic{\jumpname{OM:SupNum:Struktur-Geometrie}} auf.',
+                    '– Diese Fragestellung taucht auf der Seite \italic{\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie}} auf.',
                     '– Kann dabei die Gleichung \lm{ ω = 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot \cdots }, aus dem Beweis der \jump{OM:SupNum:Primzahlprodukt-Vermutung}{Primzahlprodukt-Vermutung}, helfen?',
                     '– Denn klar ist, dass \lm{ 2^{ω} \!< ω^{ω} } sein muss.',
                     '– Aber gilt für jedes \lm{ n \in \mathbb{N} }, dass \lm{ ω^{n} \!< 2^{ω} \!< ω^{ω} } ist?',
@@ -717,7 +717,7 @@
                   // #!: Auch auf der NSOSP-Seite! (OM:nSOSp:Home)
                   // #!: Auch auf der ›Spannungsspiel des Lebens‹ Seite! (OM:SpaLeb:Bewusstsein:BewusstseinUndMathematik)
                   // #!: Auch auf der „Naturphilosophie der Zeit“ Seite! (OM:NPT:Home)
-                  // #!: Auch auf der „Die arithmetische Struktur der Geometrie“ Seite! (OM:SupNum:Struktur-Geometrie)
+                  // #!: Auch auf der „Die arithmetische Struktur der Geometrie“ Seite! (OM:SupNum:Arithmetische-Struktur-Geometrie)
                   // #!: Auch im Abschnitt „Ontologie der Dualität allgemein“! (OM:BiOrd:Einleitung:OntologischeDeutung)
                   array( 'text', array( Shape => 'italic', text => array(
                         'Mathematik beginnt dort, \\\\ '."\n".
@@ -1438,7 +1438,7 @@
                     'Es gibt Fälle, in denen wir Mengen aller endlichen ganzen Zahlen, aber dazu auch von ihrem Wert her über das endliche hinausgehende'."\n".
                     'aktual unendliche ganze Zahlen benötigen.'."\n".
                     'Und zwar auch im negativen Bereich.'."\n".
-                    'Ein solcher Fall tritt auf, wenn wir die \jump{OM:SupNum:Struktur-Geometrie:Vortext:Alle-Strecken-natuerlichen-Zahlen-vernetzen}{arithmetische Struktur der Geometrie untersuchen}.'."\n".
+                    'Ein solcher Fall tritt auf, wenn wir die \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Alle-Strecken-natuerlichen-Zahlen-vernetzen}{arithmetische Struktur der Geometrie untersuchen}.'."\n".
                     'Denn wir wollen dort alle Punkte in einem Netz unendlich vieler Teilungen adressieren, das sich auch über die'."\n".
                     'ganzen negativen Zahlen erstrecken soll.'."\n".
                     'In diesem Fall kommen wir aber mit den Biordinalzahlen \lm{ \mathbb{Bn} } nicht weiter, weil sie für alle Limeszahlen Vorgänger'."\n".

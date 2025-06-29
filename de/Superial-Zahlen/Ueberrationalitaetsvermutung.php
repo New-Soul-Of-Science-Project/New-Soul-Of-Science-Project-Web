@@ -781,7 +781,7 @@
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{X}',
-                    '• Ein viel einfacherer Beweis, dass einfache Potenzen einer natürlichen Zahl hoch \lm{ ω } auch irrationale Wurzeln aus einer natürlichen Zahl mit mehrfachen Potenzen zu einer ganzen Zahl machen, finden wir im Abschnitt \italic{\jumpname{OM:SupNum:Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln}}.',
+                    '• Ein viel einfacherer Beweis, dass einfache Potenzen einer natürlichen Zahl hoch \lm{ ω } auch irrationale Wurzeln aus einer natürlichen Zahl mit mehrfachen Potenzen zu einer ganzen Zahl machen, finden wir im Abschnitt \italic{\jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln}}.',
                     ))),
 
                   array( 'text', array( text => array(

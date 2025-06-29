@@ -8,7 +8,7 @@
       <?php FrQFT_f_Div_Header( '      '); ?>
 
 
-      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Struktur-Geometrie'); ?>
+      <?php FrQFT_f_Div_WrapperBegin( '      ', 'OM:SupNum:Arithmetische-Struktur-Geometrie'); ?>
 
 	
           <?php To_f_Paragraph_list_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '                ', 'Sc_f_Paragraph',
@@ -117,7 +117,7 @@
                   array( 'bulletlist', array( bullet_ary => array(
                         'Die Summanden mit negativer Potenz von \lm{ \s } sollten Null sein, damit eine ganze Superial-Zahl eben nicht gebrochen ist.',
                         'Im endlichen Summanden \lm{ \s^{0} } sollten sie nur ganze Zahlen enthalten, was bedeutet, dass hier auch die Koeffizienten ganze Zahlen sein müssen, weil ihr Stellenwert-Faktor \lm{ \s^{0} = 1 } ist.',
-                        'Die Summanden mit positiven Potenzen von \lm{ \s }, also \lm{ \s^{d} }, mit \lm{ 0 < d }, sollten auch nur ganze Zahlen sein. Hier bedeutet dies aufgrund der aktual unendlichen Größe von \lm{ \s^{d} } aber, dass nur Koeffizienten als Faktoren des potenzierten \jump{OM:SupNum:Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}{Primzahl-Flächenprodukts}, das \lm{ \s } entspricht, in Frage kommen, die das Produkt nicht in seiner Größenordnung bezüglich seiner Stelle \lm{ \s^{d} } verändern.',
+                        'Die Summanden mit positiven Potenzen von \lm{ \s }, also \lm{ \s^{d} }, mit \lm{ 0 < d }, sollten auch nur ganze Zahlen sein. Hier bedeutet dies aufgrund der aktual unendlichen Größe von \lm{ \s^{d} } aber, dass nur Koeffizienten als Faktoren des potenzierten \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}{Primzahl-Flächenprodukts}, das \lm{ \s } entspricht, in Frage kommen, die das Produkt nicht in seiner Größenordnung bezüglich seiner Stelle \lm{ \s^{d} } verändern.',
                     ))),
                   array( 'text', array( text => array(
                     'Faktoren, die aus dem Primzahl-Flächenprodukt in diesem Sinne nur Primfaktoren entfernen oder hinzufügen sind zunächst erst einmal ganz klar die rationalen Zahlen.'."\n".
