@@ -45,7 +45,9 @@
                     'die mich fortan prägten.'."\n".
                     'Denn die Frage lies sich ganz eindeutig mit Ja beantworten und führte mich in Gedankenwelten'."\n".
                     'und Gefühle, die ich so zuvor noch nie erlebt hatte.'."\n",
-                      'Durch das, was ich dort – auch in mir – entdeckte, führe ich uns auf den folgenden Seiten.'."\n".
+                      'Durch das, was ich dort – auch in mir – entdeckte, führe ich uns auf den folgenden Seiten. \\\\'."\n".
+                    '\\\\'."\n".
+                    '\\italic{Wolfgang Huß} \\\\ \\small{im Juli 2024} \\\\ \\\\'."\n".
                     ''))),
                   /* array( 'headline', array( jump_name => 'OM:OT:Vorwort:Vortext:X', text =>
                                            
