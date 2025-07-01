@@ -116,8 +116,7 @@
                     array( content_ary => array(
                       array( title => '\color{*ContentItemDisabled}{Video Tour (geplant)}', startsign => '', //jumpname => 'X',
                                 description => 'die YouTube-Vorträge'),
-                      array( title => '\color{*ContentItemDisabled}{Vorwort (geplant)}', startsign => ''/*'\name{OM:FrQFT:Vorwort}'*/, //jumpname => 'OM:FrQFT:Vorwort', startsign => '',
-                                description => 'was mich bewegt – was ich bewegen möchte'/*$Glo_g_Site_ary['OM:FrQFT:Vorwort'][text_undertitel_h2])*/),
+                      nSOSp_f_tableOfContents_elementAry( 'OM:SupNum:Vorwort'),
                     ))),
                       
                   array( 'normal',

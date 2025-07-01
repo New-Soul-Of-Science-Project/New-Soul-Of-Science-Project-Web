@@ -200,7 +200,7 @@
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Einleitung.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Einleitung.php',
       titel => 'Einleitung - Die Superial-Zahlen (SN) - Deutsch',
-      description => 'Mit den Superial-Zahlen die fraktale Struktur des Unendlichen entdecken.',
+      description => '\name[undertitle]{OM:SupNum:Einleitung}. — \name[description]{OM:SupNum:Einleitung}.',
       keywords => '',
       text_titel_h1 => 'Einleitung',
       text_titel_short => 'Einleitung',
@@ -403,6 +403,22 @@
           'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-plus-n-hoch-eins-durch-x-durch-n-hoch-omega' => array( headline_text => 'SN.ÜV.128'),
                         
         'OM:SupNum:Ueberrationalitaetsvermutung:Diskussion-des-Beweises' => array( headline_text => 'Diskussion des Beweises'/* , headline_text_short => 'X'*/),
+      ),
+    ),
+    'OM:SupNum:Vorwort' => array(
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Vorwort.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Vorwort.php',
+      titel => 'Vorwort - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\name[undertitle]{OM:SupNum:Vorwort}./hidden{ — \name[description]{OM:SupNum:Vorwort}.}',
+      keywords => '',
+      text_titel_h1 => 'Vorwort',
+      text_titel_short => 'Vorwort',
+      text_undertitel_h2 => 'Was mich bewegt und ich bewegen möchte',
+      text_titel_discr_h3 => '',
+      jump_ary => array(
+        'OM:SupNum:Vorwort:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          'OM:SupNum:Vorwort:Vortext:X' => array( headline_text => 'X'/*, headline_text_short => 'X'*/),
       ),
     ),
     'OM:SupNum:ZFC-Modellkonstruktion' => array(

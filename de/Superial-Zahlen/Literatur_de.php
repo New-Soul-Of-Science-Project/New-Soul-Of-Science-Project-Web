@@ -13,6 +13,7 @@
 	
           <?php
             Sc_g_litera_make( array(
+              'Bischoff:TausendSeitenBeweis:2025',
               'Bischoff:WieWurdeDieEulerscheZahlEntdeckt:2024',
               'Bischoff:NeubauDerMathematik:2023',
               'Freistetter:DieFreiheitDerImaginaerenZahlen:2016',
@@ -47,6 +48,7 @@
               'wiki:KomplexeZahl:2024',
               'wiki:Kontinuumshypothese:2023',
               'wiki:Kreisteilungspolynom:2024',
+              'wiki:LanglandsProgramm:2024',
               'wiki:LexikographischeOrdnung:2023',
               'wiki:LoesenVonGleichungen:2024',
               'wiki:MaechtigkeitMathematik:2023',
