@@ -113,7 +113,7 @@
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Vorwort:Vortext:X', text =>
                                            
-                'Aktivitäten, Wünsche und Ausblick')),
+                'Aktivitäten, Forschung und Ausblick')),
                   array( 'text', array( text => array(
                     'Ich habe in den letzten Monaten und Jahren wieder viel gelernt.'."\n",
                       'Ganz besonders mein Ansatz zum hoffentlich gelungenen Beweis der Überrationalitätsvermutung,'."\n".
@@ -134,11 +134,32 @@
                     'konnte ich über \lm{ p }-adische Bewertungen und entsprechende Rechenregeln für die aktual unendlichen Potenzen in \lm{ ω }-Größenordnung'."\n".
                     'mathematisch sauber definieren.'."\n".
                     'Das bringt das Projekt sehr voran.'."\n",
-                      'Die Superial-Zahlen sind nun in einer Verfassung, dass sie mehr Beachtung von außen verdienen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Vorwort:Vortext:X', text =>
+                                           
+                'Bildung und Schule')),
+                  array( 'text', array( text => array(
+                    'Die Superial-Zahlen sind nun in einer Verfassung, dass sie mehr Beachtung von außen verdienen.'."\n".
+                    'Ich meine, damit mein ursprüngliches Ziel, den Limes zu ersetzen, und durch direktes Rechnen mit aktual unendlichen Zahlen'."\n".
+                    'die Ableitung und das Integrieren intuitiver, transparenter und damit sogar auch für ungeübte klarer zu machen, im wesentlichen erreicht zu haben.'."\n".
                     'Daher nehme ich möglichst bald ihre Aufbereitung zu einem ersten Vortrag in Angriff,'."\n".
                     'vermutlich im Rahmen der \jump[https://menschlichwirtschaften.de/akademie]{}{Akademie der Genossenschaft Menschlich Wirtschaften}.'."\n",
-                      'Ich würde mich sehr freuen, wenn ich mit meiner Forschung zur Fortentwicklung und Bereicherung des Langlands-Programms beitragen könnte.'."\n".
-                    'Denn unsere Welt, und das gilt eben auch für die Themen unsere Ideenwelt, ist im Hintergrund vernetzt, wie sich mir immer wieder zeigt. \\\\'."\n".
+                      'Mein Wunsch und ehrlicher Eindruck ist, dass das Verstehen und Erlernen von einfachen Ableitungen und Integralen mit Hilfe von Superial-Zahlen'."\n".
+                    'leichter ist, als mit dem Limes.'."\n".
+                    'Denn es bleibt in vollem Umfang sichtbar und verständlich, was genau passiert, und kann im Grunde mit den Rechenregeln'."\n".
+                    'für Polynome, wie dem Distributivgesetz, den binomischen Formeln oder der Gaußschen Summenformel, errechnet werden.'."\n",
+                      'Komplizierte und höhere Ableitungen und Integrale sind dabei sicher noch einmal gesondert zu sehen und schlicht noch zu erforschen.'."\n",
+                      'Auf der anderen Seite ist es mit einfacher Schulmathematik und dem Pascalschen Dreieck recht einfach herauszufinden, welche Funktion abgeleitet oder Integriert'."\n".
+                    'sich selber ergibt – also gleich bleibt – und wie diese Funktion und die zu ihr gehörende Eulersche Zahl \lm{ \e_{\s} } in ihren unendlichen tiefen strukturiert sind.'."\n".
+                    'So wird die \lm{ \e_{\s} }-Funktion zu einem unendlichen Abenteuer.'."\n",
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Vorwort:Vortext:X', text =>
+                                           
+                'Akademische Forschung')),
+                  array( 'text', array( text => array(
+                    'Ich würde mich sehr freuen, wenn ich mit meiner Forschung zur Fortentwicklung und Bereicherung des Langlands-Programms beitragen könnte.'."\n".
+                    'Denn unsere Welt, und das gilt eben auch für die Themen unserer Ideenwelt, ist im Hintergrund vernetzt, wie sich mir immer wieder zeigt,'."\n".
+                    'und wofür die Superial-Zahlen durch ihre fraktale Struktur geradezu exemplarisch stehen. \\\\'."\n".
                     '\\\\'."\n".
                     '\\italic{Wolfgang Huß} \\\\ \\small{im Juli 2025} \\\\ \\\\'."\n".
                     ''))),
