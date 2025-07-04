@@ -88,7 +88,7 @@
                     'Kommt nun der Summand dazu, der Eins als Potenz hat, also \lm{ \s^{1} = \s }, muss dieser im Produkt mit seinem Koeffizienten'."\n".
                     'auch eine ganze Zahl sein, weil wir sonst insgesamt keine ganze Zahl erhalten.'."\n".
                     'Denn auf eine ganze Zahl müssen wir immer eine ganze Zahl addieren, damit wieder eine ganze Zahl herauskommt.'."\n",
-                      'Dazu stellen wir fest, das schon einmal jede rationale Zahl im Produkt mit \lm{ \s } aufgrund seiner Primzahlstruktur '."\n".
+                      'Dazu stellen wir fest, das schon einmal jede rationale Zahl im Produkt mit \lm{ \s } aufgrund seiner Primzahlstruktur'."\n".
                     '\jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{immer eine ganze Zahl ergibt}.'."\n".
                     'Auch im Produkt mit allen durch Radikale, also Wurzeln, darstellbaren reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
                     'wie wir nachfolgend gleich zeigen werden, ergeben sich immer ganze Superial-Zahlen.'."\n".
@@ -398,7 +398,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall i \in \mathbb{N} *) *( \forall g \in \mathbb{N}_{\infty} *) *( i < g *)  *[  n^{\frac{ 1 }{ x }} \cdot n^{g}  \in  \mathbb{N}_{\infty}  *]  }',
-                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-mal-n-hoch-eins-durch-x-in-natuerlich-infinit}', label_incr => true),
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-mal-n-hoch-eins-durch-x-in-natuerlich-infinit}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{g}  \in  \mathbb{N}_{\infty}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{k_{i} \cdot g}  \in  \mathbb{N}_{\infty}  }'),
                     ))),
@@ -417,7 +417,8 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \rad(n)^{ω}  \in  \mathbb{N}_{\infty}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *| \sqrt[x]{ n } |*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *| \sqrt[x]{ n } |*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
+                                          label_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega', label_text => '\name{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => true),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
@@ -425,7 +426,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \s  :\in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \s  :\in  \mathbb{S}_{\N}  }',
+                                          label_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-xte-Wurzel-n-mal-s-ist-in-SN', label_text => '\name{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-xte-Wurzel-n-mal-s-ist-in-SN}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'Dies ist sehr bemerkenswert und stößt eine neue Tür für das Verständnis von irrationalen Zahlen und für'."\n".
@@ -763,7 +765,7 @@
                     'Die Summen von irrationalen Wurzeln, oder ihren Kehrwerten sind also ebenfalls sinnvolle Koeffizienten der Superial-Zahlen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Auch der Goldene Schnitt \lm{ φ } ist eine Superial-Zahl} \\\\'."\n".
+                  '\condb{\anchor{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Goldener-Schnitt}{}Auch der Goldene Schnitt \lm{ φ } ist eine Superial-Zahl} \\\\'."\n".
                     'So sind dann auch algebraische Zahlen wie der Goldene Schnitt \lm{ φ }'."\n".
                     'als Faktoren der superialen Basis \lm{ \s } natürliche Superial-Zahlen.'."\n".
                     ''))),
@@ -781,14 +783,15 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  φ  =  \frac{ \sqrt{ 5 } + 1 }{ 2 }  }'),
+                      array( display => 'on',  latex => '{  φ  =  \frac{ *| \sqrt{ 5 } \,|* + 1 }{ 2 }  }',
+                                          label_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-goldener-Schnitt', label_text => '\name{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-goldener-Schnitt}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Einsetzen, Umstellen und Ausmultiplizieren:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \sqrt{ 5 } + 1 }{ 2 } \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ *| \sqrt{ 5 } \,|* + 1 }{ 2 } \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
                       array( display => 'off', latex => '{  \Leftrightarrow  *( 5^{\frac{ 1 }{ 2 }} + 1 *) \cdot \frac{ \s }{ 2 }  ?\in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  ?\in  \mathbb{S}_{\N}  }'),
                     ))),
@@ -805,7 +808,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N}  }',
+                                          label_name => 'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-goldener-Schnitt-mal-s-in-SN', label_text => '\name{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-goldener-Schnitt-mal-s-in-SN}', label_incr => true),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \frac{ 5^{\frac{ 1 }{ 2 }} \cdot \s + \s }{ 2 }  \in  \mathbb{S}_{\N}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  φ \cdot \s  \in  \mathbb{S}_{\N}  }'),
                     ))),

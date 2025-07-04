@@ -165,8 +165,13 @@
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-Realanteile-algebra-Zahlen-mal-s-verm-in-natuerl-SupZahlen' => array( headline_text => 'SN.Eig.SK.6'),
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Durch-Radikale-darstellbare-algebraischen-Zahlen-sinnvolle-Koeffizienten-SZ' => array( headline_text => 'Durch Radikale darstellbare algebraischen Zahlen sind sinnvolle Koeffizienten der Superial-Zahlen'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen' => array( headline_text => 'Die Wurzel aus Zwei und die natürlichen Superial-Zahlen'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega' => array( headline_text => 'SN.Eig.SK.31'),
+          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-xte-Wurzel-n-mal-s-ist-in-SN' => array( headline_text => 'SN.Eig.SK.33'),
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Kehrwerte-der-Wurzeln' => array( headline_text => 'Die Kehrwerte der Wurzeln'/* , headline_text_short => 'X'*/),
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Ganzzahlige-Potenzen-der-Wurzeln' => array( headline_text => 'Ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Goldener-Schnitt' => array( headline_text => 'Auch der Goldene Schnitt \lm{ φ } ist eine Superial-Zahl'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-goldener-Schnitt' => array( headline_text => 'SN.Eig.SK.80'),
+          'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-goldener-Schnitt-mal-s-in-SN' => array( headline_text => 'SN.Eig.SK.86'),
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Summen-von-Wurzeln' => array( headline_text => 'Summen und Differenzen von Wurzeln'/* , headline_text_short => 'X' */),
           'OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:superiale-Koeffizienten-Realanteile-algebraischer-Zahlen' => array( headline_text => 'Vermutung, dass superiale Koeffizienten reell algebraische Zahlen sind'/* , headline_text_short => 'X' */),
 
