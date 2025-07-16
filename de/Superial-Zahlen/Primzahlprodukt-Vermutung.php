@@ -954,7 +954,7 @@
                     'Denn das Primturm-Potenzraster der Mengen-Primfakultäten einer Primzahl \lm{ pr\!*( p_i\overline{\#} *) }'."\n".
                     'kombiniert schließlich alle Primturm-Potenzraster der in ihm enthaltenen Primzahlen.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Berechnung-naechsten-Primzahl', text =>
                       
                 'Berechnung der nächsten Primzahl', subline =>
                   'Per Algebra und Mengenlehre')),
@@ -2015,6 +2015,84 @@
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Gedanken zu Primzahlen  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen',
+              'Das Verständnis des Übergangs von jeder Primzahl ins Unendliche zu \lm{ ω } und \lm{ \s }', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Parität}',
+                    // '• Nicht nur gleiche Mächtigkeit von geraden und ungeraden Zahlen, sondern hier sogar gleiche kombinatorische Anzahl von geraden und ungeraden Zahlen.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ParitaetMathematik:2021}.}',
+                    // '\bold{Logisches}',
+                    // '• \lm{ ω } ist dann durch jede endliche Primzahl und durch deren Produkte mit jeweiliger Potenz von Eins ganzzahlig teilbar.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'In den Primzahlen gibt es ein Muster, dass auch im Zusammenhang mit pythagoreischen Tripeln\color{*Bearb}{(Verweis)} eine wichtige Rolle spielt.\color{*Bearb}{(Link)}'."\n",
+                      'Zum einen gibt es primitive pythagoreische Tripel.'."\n".
+                    'Bei ihnen haben die drei natürlichen Zahlen des Tripels – alle größer als Null – keine gemeinsamen Teiler und'."\n".
+                    'sind daher die kleinsten Zahlen dieses Verhältnisses.'."\n",
+                      'Zum anderen gibt es die nicht-primitiven pythagoreischen Tripel.'."\n".
+                    'Diese sind natürliche Vielfache – zweifache oder größer – der primitiven pythagoreischen Tripel.'."\n".
+                    'Und damit sind sie eben in ihren Werten größer als das dazugehörige primitive.'."\n",
+                      'Bei den Primzahlen verhält es sich nun ganz ähnlich.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
+                      
+                'Die Entdeckung einer Primzahl', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Über den Prozess, den wir oben zur \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Berechnung-naechsten-Primzahl}{Berechnung der nächsten Primzahl}'."\n".
+                    'gefunden haben, entdecken wir quasi die erste und dann immer wieder die nächste Primzahl; im Grunde, bis wir alle endlichen haben.'."\n",
+                      'Haben wir eine Primzahl entdeckt, so ergibt sich das gleiche Muster, wie bei den nicht-primitiven pythagoreischen Tripeln.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
+                      
+                'Vielfache einer Primzahl', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'In Zukunft wiederholt sich jede einzelne Primzahl \lm{ p } in ihren natürlichen Vielfachen \lm{ p \cdot n }, bis sie in \lm{ p \cdot ω } oder \lm{ p \cdot \s } übergeht.'."\n".
+                    'Oder, anders betrachtet, bis sie in \lm{ ω = p \cdot \frac{ ω }{ p } } oder \lm{ \s = p \cdot \frac{ \s }{ p } } übergeht.'."\n".
+                    'Wir sehen, dass die natürlichen Vielfachen der Primzahlen in Bezug auf diese Übergänge eine wichtige und besondere Rolle spielen.'."\n",
+                      'Wenn jede Primzahl \lm{ p } den Übergang zu \lm{ ω } glatt absolvieren soll, dann muss \lm{ \frac{ ω }{ p } \in \mathbb{N}_{\infty} } und damit ganzzahlig sein.'."\n",
+                      'Wenn hingegen jede natürliche Zahl \lm{ n } den Übergang ins Aktual-Unendliche glatt absolvieren soll,'."\n".
+                    'dann geht dies nur zu \lm{ \s = ω^{ω} }, denn dann muss \lm{ \frac{ \s }{ n } \in \mathbb{N}_{\infty} } sein und damit ganzzahlig.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
+                      
+                'Verwandtschaft der Primzahl und der pythagoreischen Tripel', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Was für die Strecke und die Gerade die Primzahlen sind, dass sind in dieser Hinsicht für den Kreis und die Kreisfläche die primitiven pythagoreischen Tripel.'."\n".
+                    'Sollen die Primzahlen auf ihrem ganzzahligen Raster immer größer werden und glatt ins Aktual-Unendliche übergehen, dann können wir sie mit natürlichen Zahlen skalieren.'."\n".
+                    'Bei den Tripeln geht die Skalierung dann effektiv über die Hypotenusen, die den Kreisradius bestimmen.'."\n",
+                      'Das Raster wird bei der Skalierung so, im Verhältnis zur Größe, dann immer feiner.'."\n".
+                    'Bei \lm{ ω } schon so fein, dass Kehrwerte von Primzahlen oder Primzahlprodukten einfacher Potenz, deren Potenzen und Summen auf dem Raster liegen.'."\n".
+                    'Bei \lm{ \s } dann so fein, dass vermutlich alle reell algebraischen Zahlen auf dem Raster liegen.'."\n",
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
+                      
+                'Primzahl-Potenztürme', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Bei den Vielfachen der Primzahlen \lm{ p \cdot n } geht in \lm{ n } das Spiel des Zählens im Grunde wieder von vorne los.'."\n".
+                    'Auch sind in \lm{ n } nun alle Primzahlen gefragt, und nicht nur die bis \lm{ p }.'."\n",
+                      'Begrenzen wir uns bis \lm{ p }, so gelangen wir bald zu \lm{ p \cdot p = p^{2} }, wo wir nach deren Erreichen dann mit \lm{ p^{2} \cdot n } fortfahren müssen.'."\n".
+                    'Auf diese Weise gelangen wir zum Potenzturm der Primzahl \lm{ p^{k} }, der bis ins Aktual-Unendliche fortgesetzt dann \lm{ p^{ω} } liefert.'."\n".
+                    'Also einen der Potenztürme in \lm{ \s }.'."\n".
                     ''))),
 
                   array( 'jumplist', array(
