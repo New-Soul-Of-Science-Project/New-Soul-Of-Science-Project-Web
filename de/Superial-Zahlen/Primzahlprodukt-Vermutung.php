@@ -2105,7 +2105,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *)  *[  \frac{ \s }{ n }  \in  \mathbb{S}_{\N}  \subset  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *)  *[  \s  =  n \cdot \frac{ \s }{ n }  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \s }{ n }  \in  \mathbb{S}_{\N}  \subset  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
                     'gelten und dieser Bruch damit ganzzahlig sein, wie bekannt.'."\n".
