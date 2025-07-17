@@ -1512,10 +1512,11 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.D', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *[  \frac{ ω }{ p }  \in  \mathbb{N}_\infty  *]  \;\;,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *[  \frac{ ω }{ p }  \in  \mathbb{N}_\infty  *]  \;\;,  }',
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:Equ-omega-ist-allPrimzahlen-teilbar', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:Equ-omega-ist-allPrimzahlen-teilbar}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
-                      'wie wir bewiesen haben.'."\n",
+                      'wie wir mit Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen} bewiesen haben.'."\n",
                         '\\\\'."\n".
                       ''))),
 
@@ -2041,7 +2042,7 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'In den Primzahlen gibt es ein Muster, dass auch im Zusammenhang mit pythagoreischen Tripeln\color{*Bearb}{(Verweis)} eine wichtige Rolle spielt.\color{*Bearb}{(Link)}'."\n",
+                    'In den Primzahlen gibt es ein Muster, dass auch im Zusammenhang mit pythagoreischen Tripeln\footnote{\const{SupNum_g_footnote_text_PythagoreischesTripel}} eine wichtige Rolle spielt.\color{*Bearb}{(Link, siehe sinnvolle Koeffizienten, Radikalformen, verschachtelte Wurzelausdrücke)}'."\n",
                       'Zum einen gibt es primitive pythagoreische Tripel.'."\n".
                     'Bei ihnen haben die drei natürlichen Zahlen des Tripels – alle größer als Null – keine gemeinsamen Teiler und'."\n".
                     'sind daher die kleinsten Zahlen dieses Verhältnisses.'."\n",
@@ -2064,20 +2065,58 @@
                 'Vielfache einer Primzahl', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'In Zukunft wiederholt sich jede einzelne Primzahl \lm{ p } in ihren natürlichen Vielfachen \lm{ p \cdot n }, bis sie in \lm{ p \cdot ω } oder \lm{ p \cdot \s } übergeht.'."\n".
-                    'Oder, anders betrachtet, bis sie in \lm{ ω = p \cdot \frac{ ω }{ p } } oder \lm{ \s = p \cdot \frac{ \s }{ p } } übergeht.'."\n".
-                    'Wir sehen, dass die natürlichen Vielfachen der Primzahlen in Bezug auf diese Übergänge eine wichtige und besondere Rolle spielen.'."\n",
-                      'Wenn jede Primzahl \lm{ p } den Übergang zu \lm{ ω } glatt absolvieren soll, dann muss \lm{ \frac{ ω }{ p } \in \mathbb{N}_{\infty} } und damit ganzzahlig sein.'."\n",
+                    'Anschließend wiederholt sich jede einzelne Primzahl \lm{ p }, als neu erkannte multiplikative Einheit, in ihren natürlichen Vielfachen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall n \in \mathbb{N} *)  *[  m  =  p \cdot n  *]  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'bis sie in \lm{ p \cdot ω } oder \lm{ p \cdot \s } übergeht.'."\n".
+                    'Oder, anders betrachtet, bis sie in die aktual unendlichen Einheiten'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  ω  =  p \cdot \frac{ ω }{ p }  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'oder'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  \s  =  p \cdot \frac{ \s }{ p }  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'übergehen.'."\n".
+                    'Wir sehen, dass die natürlichen Vielfachen der Primzahlen in Bezug auf diese Übergänge eine wichtige und besondere Rolle spielen.'."\n".
+                    'Diese Information steckt in den eigentlich kürzbaren Formeln und ist nur erkennbar, wenn wir das Muster durch das Unterlassen des Kürzens, erhalten.'."\n",
+                      'Wenn jede multiplikative Einheit oder Primzahl \lm{ p } den Übergang zu \lm{ ω } glatt absolvieren soll, dann muss auch demnach'."\n",
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  \frac{ ω }{ p }  \in  \mathbb{N}_{\infty}  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:Equ-omega-ist-allPrimzahlen-teilbar}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'gelten und damit der Bruch immer ganzzahlig sein, wie wir es oben schon mit Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen} bewiesen haben.'."\n",
                       'Wenn hingegen jede natürliche Zahl \lm{ n } den Übergang ins Aktual-Unendliche glatt absolvieren soll,'."\n".
-                    'dann geht dies nur zu \lm{ \s = ω^{ω} }, denn dann muss \lm{ \frac{ \s }{ n } \in \mathbb{N}_{\infty} } sein und damit ganzzahlig.'."\n".
+                    'dann geht dies nur zu \lm{ \s = ω^{ω} }.'."\n".
+                    'Denn dann muss'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *)  *[  \frac{ \s }{ n }  \in  \mathbb{S}_{\N}  \subset  \mathbb{N}_{\infty}  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'gelten und dieser Bruch damit ganzzahlig sein, wie bekannt.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
                       
-                'Verwandtschaft der Primzahl und der pythagoreischen Tripel', subline =>
+                'Verwandtschaft der Primzahlen und der pythagoreischen Tripel', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Was für die Strecke und die Gerade die Primzahlen sind, dass sind in dieser Hinsicht für den Kreis und die Kreisfläche die primitiven pythagoreischen Tripel.'."\n".
-                    'Sollen die Primzahlen auf ihrem ganzzahligen Raster immer größer werden und glatt ins Aktual-Unendliche übergehen, dann können wir sie mit natürlichen Zahlen skalieren.'."\n".
+                    'Was für die Strecke und die Gerade die Primzahlen sind, dass sind in dieser Hinsicht für den Kreis und die Kreisfläche die primitiven pythagoreischen Tripel.'."\n",
+                      'Sollen die Primzahlen auf ihrem ganzzahligen Raster immer größer werden und glatt ins Aktual-Unendliche übergehen, dann können wir sie mit natürlichen Zahlen skalieren.'."\n".
                     'Bei den Tripeln geht die Skalierung dann effektiv über die Hypotenusen, die den Kreisradius bestimmen.'."\n",
                       'Das Raster wird bei der Skalierung so, im Verhältnis zur Größe, dann immer feiner.'."\n".
                     'Bei \lm{ ω } schon so fein, dass Kehrwerte von Primzahlen oder Primzahlprodukten einfacher Potenz, deren Potenzen und Summen auf dem Raster liegen.'."\n".
@@ -2091,8 +2130,8 @@
                     'Bei den Vielfachen der Primzahlen \lm{ p \cdot n } geht in \lm{ n } das Spiel des Zählens im Grunde wieder von vorne los.'."\n".
                     'Auch sind in \lm{ n } nun alle Primzahlen gefragt, und nicht nur die bis \lm{ p }.'."\n",
                       'Begrenzen wir uns bis \lm{ p }, so gelangen wir bald zu \lm{ p \cdot p = p^{2} }, wo wir nach deren Erreichen dann mit \lm{ p^{2} \cdot n } fortfahren müssen.'."\n".
-                    'Auf diese Weise gelangen wir zum Potenzturm der Primzahl \lm{ p^{k} }, der bis ins Aktual-Unendliche fortgesetzt dann \lm{ p^{ω} } liefert.'."\n".
-                    'Also einen der Potenztürme in \lm{ \s }.'."\n".
+                    'Auf diese Weise gelangen wir zum Potenzturm der Primzahl \lm{ p^{k} }, der bis ins Aktual-Unendliche fortgesetzt dann \lm{ p^{ω} } liefert,'."\n".
+                    'also zu jedem der Potenztürme in \lm{ \s }.'."\n".
                     ''))),
 
                   array( 'jumplist', array(

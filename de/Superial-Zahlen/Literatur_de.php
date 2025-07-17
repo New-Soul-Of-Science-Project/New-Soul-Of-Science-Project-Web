@@ -59,6 +59,7 @@
               'wiki:Primfaktorzerlegung:2022',
               'wiki:Primorial:2015',
               'wiki:Primzahl:2021',
+              'wiki:PythagoreischesTripel:2025',
               'wiki:QuadratischePyramidalzahl:2021',
               'wiki:RadikalMathematik:2022',
               'wiki:RationaleZahl:2022',
