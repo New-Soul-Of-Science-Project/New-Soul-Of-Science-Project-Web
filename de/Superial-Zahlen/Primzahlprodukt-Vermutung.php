@@ -2073,7 +2073,8 @@
                     ))),
                   array( 'text', array( text => array(
                     'bis sie in \lm{ p \cdot ω } oder \lm{ p \cdot \s } übergeht.'."\n".
-                    'Oder, anders betrachtet, bis sie in die aktual unendlichen Einheiten'."\n".
+                    'Nur sind diese Produkte keine Einheiten, weshalb wir es anders betrachten müssen und genauer sagen sollten,'."\n".
+                    'bis sie in die aktual unendlichen Einheiten'."\n".
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2089,8 +2090,8 @@
                   array( 'text', array( text => array(
                     'übergehen.'."\n".
                     'Wir sehen, dass die natürlichen Vielfachen der Primzahlen in Bezug auf diese Übergänge eine wichtige und besondere Rolle spielen.'."\n".
-                    'Diese Information steckt in den eigentlich kürzbaren Formeln und ist nur erkennbar, wenn wir das Muster durch das Unterlassen des Kürzens, erhalten.'."\n",
-                      'Wenn jede multiplikative Einheit oder Primzahl \lm{ p } den Übergang zu \lm{ ω } glatt absolvieren soll, dann muss auch demnach'."\n",
+                    'Diese Information steckt in den eigentlich kürzbaren Formeln und ist nur erkennbar, wenn wir das Muster, durch das Unterlassen des Kürzens, erhalten.'."\n",
+                      'Wenn jede endliche multiplikative Einheit oder Primzahl \lm{ p } den Übergang zu \lm{ ω } glatt absolvieren soll, dann muss demnach auch'."\n",
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
@@ -2098,9 +2099,12 @@
                                           label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:Equ-omega-ist-allPrimzahlen-teilbar}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
-                    'gelten und damit der Bruch immer ganzzahlig sein, wie wir es oben schon mit Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen} bewiesen haben.'."\n",
-                      'Wenn hingegen jede natürliche Zahl \lm{ n } den Übergang ins Aktual-Unendliche glatt absolvieren soll,'."\n".
-                    'dann geht dies nur zu \lm{ \s = ω^{ω} }.'."\n".
+                    'gelten und damit der Bruch immer ganzzahlig sein, wie wir es oben schon mit Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen} bewiesen haben.'."\n".
+                    'So gesehen ist \lm{ ω } die kleinste aktual unendliche Einheit der endlichen Primzahlen, die aber selber nicht prim sein kann, weil durch alle endlichen Primzahlen teilbar.'."\n".
+                    'Die endlichen Primzahlen streben beim Zählen zur Einheit \lm{ ω } hin, wie der Ansatz des Beweises deutlich macht, zu einem Punkt, an dem sie sich alle in einem Produkt vereinen.'."\n".
+                    'Damit erhält die vollständige Induktion \lm{ ω } ein tieferes, ein arithmetisches Verständnis und erscheint so in ganz neuem Licht.'."\n",
+                      'Wenn wir hingegen das Zählen glatt ins Unendliche erweitern wollen und damit jede natürliche Zahl \lm{ n } den Übergang ins Aktual-Unendliche glatt absolvieren soll,'."\n".
+                    'dann geht dies nur hin zur superialen Einheit \lm{ \s = ω^{ω} }.'."\n".
                     'Denn dann muss'."\n".
                     ''))),
                   array( 'equations',
@@ -2109,7 +2113,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  \frac{ \s }{ n }  \in  \mathbb{S}_{\N}  \subset  \mathbb{N}_{\infty}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'gelten und dieser Bruch damit ganzzahlig sein, wie bekannt.'."\n".
+                    'gelten und damit dieser Bruch ganzzahlig sein, wie bekannt.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
                       
@@ -2119,9 +2123,9 @@
                     'Was für die Strecke und die Gerade die Primzahlen sind, dass sind in dieser Hinsicht für den Kreis und die Kreisfläche die primitiven pythagoreischen Tripel.'."\n",
                       'Sollen die Primzahlen auf ihrem ganzzahligen Raster immer größer werden und glatt ins Aktual-Unendliche übergehen, dann können wir sie mit natürlichen Zahlen skalieren.'."\n".
                     'Bei den Tripeln geht die Skalierung dann effektiv über die Hypotenusen, die den Kreisradius bestimmen.'."\n",
-                      'Das Raster wird bei der Skalierung so, im Verhältnis zur Größe, dann immer feiner.'."\n".
+                      'Das Raster wird bei der Skalierung so dann immer feiner, im Verhältnis zur Größe.'."\n".
                     'Bei \lm{ ω } schon so fein, dass Kehrwerte von Primzahlen oder Primzahlprodukten einfacher Potenz, deren Potenzen und Summen auf dem Raster liegen.'."\n".
-                    'Bei \lm{ \s } dann so fein, dass vermutlich alle reell algebraischen Zahlen auf dem Raster liegen.'."\n",
+                    'Und bei \lm{ \s } dann so fein, dass vermutlich alle reell algebraischen Zahlen auf dem Raster liegen.'."\n",
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
                       
