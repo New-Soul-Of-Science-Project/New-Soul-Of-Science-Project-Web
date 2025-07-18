@@ -1545,7 +1545,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  \frac{ ω }{ p }  \in  \mathbb{N}_{\infty}  *]  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:Equ-omega-ist-allPrimzahlen-teilbar}', label_incr => false),
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:Equ-omega-ist-allPrimzahlen-teilbar', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:Equ-omega-ist-allPrimzahlen-teilbar}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
                     'gelten und damit der Bruch immer ganzzahlig sein, wie wir es oben schon mit Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen} bewiesen haben.'."\n".
@@ -1634,7 +1634,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.D', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *[  \frac{ ω }{ p }  \in  \mathbb{N}_\infty  *]  \;\;,  }',
-                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:Equ-omega-ist-allPrimzahlen-teilbar', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:Equ-omega-ist-allPrimzahlen-teilbar}', label_incr => true),
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:Equ-omega-ist-allPrimzahlen-teilbar}', label_incr => false),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'wie wir mit Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen} bewiesen haben.'."\n",
