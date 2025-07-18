@@ -1466,12 +1466,133 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion'),
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen'),
                     )),
                 )
           ); ?>
 		    	<br>
           <?php To_f_headline_add_hides_end_line(); ?>
+
+
+          <!  • Gedanken zu Primzahlen  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen',
+              'Das Verständnis des Übergangs von jeder Primzahl ins Unendliche zu \lm{ ω } und \lm{ \s }', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Parität}',
+                    // '• Nicht nur gleiche Mächtigkeit von geraden und ungeraden Zahlen, sondern hier sogar gleiche kombinatorische Anzahl von geraden und ungeraden Zahlen.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ParitaetMathematik:2021}.}',
+                    // '\bold{Logisches}',
+                    // '• \lm{ ω } ist dann durch jede endliche Primzahl und durch deren Produkte mit jeweiliger Potenz von Eins ganzzahlig teilbar.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'In den Primzahlen gibt es ein Muster, dass auch im Zusammenhang mit pythagoreischen Tripeln\footnote{\const{SupNum_g_footnote_text_PythagoreischesTripel}} eine wichtige Rolle spielt.\color{*Bearb}{(Link, siehe sinnvolle Koeffizienten, Radikalformen, verschachtelte Wurzelausdrücke)}'."\n",
+                      'Zum einen gibt es primitive pythagoreische Tripel.'."\n".
+                    'Bei ihnen haben die drei natürlichen Zahlen des Tripels – alle größer als Null – keine gemeinsamen Teiler und'."\n".
+                    'sind daher die kleinsten Zahlen dieses Verhältnisses.'."\n",
+                      'Zum anderen gibt es die nicht-primitiven pythagoreischen Tripel.'."\n".
+                    'Diese sind natürliche Vielfache – zweifache oder größer – der primitiven pythagoreischen Tripel.'."\n".
+                    'Und damit sind sie eben in ihren Werten größer als das dazugehörige primitive.'."\n",
+                      'Bei den Primzahlen verhält es sich nun ganz ähnlich.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
+                      
+                'Die Entdeckung einer Primzahl', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Über den Prozess, den wir oben zur \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Berechnung-naechsten-Primzahl}{Berechnung der nächsten Primzahl}'."\n".
+                    'gefunden haben, entdecken wir quasi die erste und dann immer wieder die nächste Primzahl; im Grunde, bis wir alle endlichen haben.'."\n",
+                      'Haben wir eine Primzahl entdeckt, so ergibt sich das gleiche Muster, wie bei den nicht-primitiven pythagoreischen Tripeln.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
+                      
+                'Vielfache einer Primzahl', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Anschließend wiederholt sich jede einzelne Primzahl \lm{ p }, als neu erkannte multiplikative Einheit, in ihren natürlichen Vielfachen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall n \in \mathbb{N} *)  *[  m  =  p \cdot n  *]  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'bis sie in \lm{ p \cdot ω } oder \lm{ p \cdot \s } übergeht.'."\n".
+                    'Nur sind diese Produkte keine Einheiten, weshalb wir es anders betrachten müssen und genauer sagen sollten,'."\n".
+                    'bis sie in die aktual unendlichen Einheiten'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  ω  =  p \cdot \frac{ ω }{ p }  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'oder'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  \s  =  p \cdot \frac{ \s }{ p }  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'übergehen.'."\n".
+                    'Wir sehen, dass die natürlichen Vielfachen der Primzahlen in Bezug auf diese Übergänge eine wichtige und besondere Rolle spielen.'."\n".
+                    'Diese Information steckt in den eigentlich kürzbaren Formeln und ist nur erkennbar, wenn wir das Muster, durch das Unterlassen des Kürzens, erhalten.'."\n",
+                      'Wenn jede endliche multiplikative Einheit oder Primzahl \lm{ p } den Übergang zu \lm{ ω } glatt absolvieren soll, dann muss demnach auch'."\n",
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  \frac{ ω }{ p }  \in  \mathbb{N}_{\infty}  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:Equ-omega-ist-allPrimzahlen-teilbar}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'gelten und damit der Bruch immer ganzzahlig sein, wie wir es oben schon mit Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen} bewiesen haben.'."\n".
+                    'So gesehen ist \lm{ ω } die kleinste aktual unendliche Einheit der endlichen Primzahlen, die aber selber nicht prim sein kann, weil durch alle endlichen Primzahlen teilbar.'."\n".
+                    'Die endlichen Primzahlen streben beim Zählen zur Einheit \lm{ ω } hin, wie der Ansatz des Beweises deutlich macht, zu einem Punkt, an dem sie sich alle in einem Produkt vereinen.'."\n".
+                    'Damit erhält die vollständige Induktion \lm{ ω } ein tieferes, ein arithmetisches Verständnis und erscheint so in ganz neuem Licht.'."\n",
+                      'Wenn wir hingegen das Zählen glatt ins Unendliche erweitern wollen und damit jede natürliche Zahl \lm{ n } den Übergang ins Aktual-Unendliche glatt absolvieren soll,'."\n".
+                    'dann geht dies nur hin zur superialen Einheit \lm{ \s = ω^{ω} }.'."\n".
+                    'Denn dann muss'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *)  *[  \s  =  n \cdot \frac{ \s }{ n }  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \s }{ n }  \in  \mathbb{S}_{\N}  \subset  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'gelten und damit dieser Bruch ganzzahlig sein, wie bekannt.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
+                      
+                'Verwandtschaft der Primzahlen und der pythagoreischen Tripel', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Was für die Strecke und die Gerade die Primzahlen sind, dass sind in dieser Hinsicht für den Kreis und die Kreisfläche die primitiven pythagoreischen Tripel.'."\n",
+                      'Sollen die Primzahlen auf ihrem ganzzahligen Raster immer größer werden und glatt ins Aktual-Unendliche übergehen, dann können wir sie mit natürlichen Zahlen skalieren.'."\n".
+                    'Bei den Tripeln geht die Skalierung dann effektiv über die Hypotenusen, die den Kreisradius bestimmen.'."\n",
+                      'Das Raster wird bei der Skalierung so dann immer feiner, im Verhältnis zur Größe.'."\n".
+                    'Bei \lm{ ω } schon so fein, dass Kehrwerte von Primzahlen oder Primzahlprodukten einfacher Potenz, deren Potenzen und Summen auf dem Raster liegen.'."\n".
+                    'Und bei \lm{ \s } dann so fein, dass vermutlich alle reell algebraischen Zahlen auf dem Raster liegen.'."\n",
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
+                      
+                'Primzahl-Potenztürme', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Bei den Vielfachen der Primzahlen \lm{ p \cdot n } geht in \lm{ n } das Spiel des Zählens im Grunde wieder von vorne los.'."\n".
+                    'Auch sind in \lm{ n } nun alle Primzahlen gefragt, und nicht nur die bis \lm{ p }.'."\n",
+                      'Begrenzen wir uns bis \lm{ p }, so gelangen wir bald zu \lm{ p \cdot p = p^{2} }, wo wir nach deren Erreichen dann mit \lm{ p^{2} \cdot n } fortfahren müssen.'."\n".
+                    'Auf diese Weise gelangen wir zum Potenzturm der Primzahl \lm{ p^{k} }, der bis ins Aktual-Unendliche fortgesetzt dann \lm{ p^{ω} } liefert,'."\n".
+                    'also zu jedem der Potenztürme in \lm{ \s }.'."\n".
+                    ''))),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion'),
+                    )),
+              )
+          ); ?>
 
 
           <!  • Diskussion des Beweises  >
@@ -1480,7 +1601,7 @@
               'Das Verständnis des Übergangs der Mengen-Primfakultät und des Primturm-Potenzrasters ins Unendliche zu \lm{ ω }', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
@@ -2016,127 +2137,6 @@
                     ))),
                   array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
-                    ''))),
-
-                  array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen'),
-                    )),
-              )
-          ); ?>
-
-
-          <!  • Gedanken zu Primzahlen  >
-          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen',
-              'Das Verständnis des Übergangs von jeder Primzahl ins Unendliche zu \lm{ ω } und \lm{ \s }', 'Sc_f_Paragraph',
-                array(
-                  array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen', type => 'back'),
-                    )),
-                      
-                  array( 'notice', array( Display => 'hideContent', text => array(
-                    // '\bold{Parität}',
-                    // '• Nicht nur gleiche Mächtigkeit von geraden und ungeraden Zahlen, sondern hier sogar gleiche kombinatorische Anzahl von geraden und ungeraden Zahlen.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Internet: \\\\ Vgl. \cite{wiki:ParitaetMathematik:2021}.}',
-                    // '\bold{Logisches}',
-                    // '• \lm{ ω } ist dann durch jede endliche Primzahl und durch deren Produkte mit jeweiliger Potenz von Eins ganzzahlig teilbar.',
-                    ))),
-                      
-                  array( 'text', array( text => array(
-                    'In den Primzahlen gibt es ein Muster, dass auch im Zusammenhang mit pythagoreischen Tripeln\footnote{\const{SupNum_g_footnote_text_PythagoreischesTripel}} eine wichtige Rolle spielt.\color{*Bearb}{(Link, siehe sinnvolle Koeffizienten, Radikalformen, verschachtelte Wurzelausdrücke)}'."\n",
-                      'Zum einen gibt es primitive pythagoreische Tripel.'."\n".
-                    'Bei ihnen haben die drei natürlichen Zahlen des Tripels – alle größer als Null – keine gemeinsamen Teiler und'."\n".
-                    'sind daher die kleinsten Zahlen dieses Verhältnisses.'."\n",
-                      'Zum anderen gibt es die nicht-primitiven pythagoreischen Tripel.'."\n".
-                    'Diese sind natürliche Vielfache – zweifache oder größer – der primitiven pythagoreischen Tripel.'."\n".
-                    'Und damit sind sie eben in ihren Werten größer als das dazugehörige primitive.'."\n",
-                      'Bei den Primzahlen verhält es sich nun ganz ähnlich.'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
-                      
-                'Die Entdeckung einer Primzahl', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'Über den Prozess, den wir oben zur \jump{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Berechnung-naechsten-Primzahl}{Berechnung der nächsten Primzahl}'."\n".
-                    'gefunden haben, entdecken wir quasi die erste und dann immer wieder die nächste Primzahl; im Grunde, bis wir alle endlichen haben.'."\n",
-                      'Haben wir eine Primzahl entdeckt, so ergibt sich das gleiche Muster, wie bei den nicht-primitiven pythagoreischen Tripeln.'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
-                      
-                'Vielfache einer Primzahl', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'Anschließend wiederholt sich jede einzelne Primzahl \lm{ p }, als neu erkannte multiplikative Einheit, in ihren natürlichen Vielfachen'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *) *( \forall n \in \mathbb{N} *)  *[  m  =  p \cdot n  *]  \;\; ,  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'bis sie in \lm{ p \cdot ω } oder \lm{ p \cdot \s } übergeht.'."\n".
-                    'Nur sind diese Produkte keine Einheiten, weshalb wir es anders betrachten müssen und genauer sagen sollten,'."\n".
-                    'bis sie in die aktual unendlichen Einheiten'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  ω  =  p \cdot \frac{ ω }{ p }  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'oder'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  \s  =  p \cdot \frac{ \s }{ p }  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'übergehen.'."\n".
-                    'Wir sehen, dass die natürlichen Vielfachen der Primzahlen in Bezug auf diese Übergänge eine wichtige und besondere Rolle spielen.'."\n".
-                    'Diese Information steckt in den eigentlich kürzbaren Formeln und ist nur erkennbar, wenn wir das Muster, durch das Unterlassen des Kürzens, erhalten.'."\n",
-                      'Wenn jede endliche multiplikative Einheit oder Primzahl \lm{ p } den Übergang zu \lm{ ω } glatt absolvieren soll, dann muss demnach auch'."\n",
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  \frac{ ω }{ p }  \in  \mathbb{N}_{\infty}  *]  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:Equ-omega-ist-allPrimzahlen-teilbar}', label_incr => false),
-                    ))),
-                  array( 'text', array( text => array(
-                    'gelten und damit der Bruch immer ganzzahlig sein, wie wir es oben schon mit Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen} bewiesen haben.'."\n".
-                    'So gesehen ist \lm{ ω } die kleinste aktual unendliche Einheit der endlichen Primzahlen, die aber selber nicht prim sein kann, weil durch alle endlichen Primzahlen teilbar.'."\n".
-                    'Die endlichen Primzahlen streben beim Zählen zur Einheit \lm{ ω } hin, wie der Ansatz des Beweises deutlich macht, zu einem Punkt, an dem sie sich alle in einem Produkt vereinen.'."\n".
-                    'Damit erhält die vollständige Induktion \lm{ ω } ein tieferes, ein arithmetisches Verständnis und erscheint so in ganz neuem Licht.'."\n",
-                      'Wenn wir hingegen das Zählen glatt ins Unendliche erweitern wollen und damit jede natürliche Zahl \lm{ n } den Übergang ins Aktual-Unendliche glatt absolvieren soll,'."\n".
-                    'dann geht dies nur hin zur superialen Einheit \lm{ \s = ω^{ω} }.'."\n".
-                    'Denn dann muss'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *)  *[  \s  =  n \cdot \frac{ \s }{ n }  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  \frac{ \s }{ n }  \in  \mathbb{S}_{\N}  \subset  \mathbb{N}_{\infty}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'gelten und damit dieser Bruch ganzzahlig sein, wie bekannt.'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
-                      
-                'Verwandtschaft der Primzahlen und der pythagoreischen Tripel', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'Was für die Strecke und die Gerade die Primzahlen sind, dass sind in dieser Hinsicht für den Kreis und die Kreisfläche die primitiven pythagoreischen Tripel.'."\n",
-                      'Sollen die Primzahlen auf ihrem ganzzahligen Raster immer größer werden und glatt ins Aktual-Unendliche übergehen, dann können wir sie mit natürlichen Zahlen skalieren.'."\n".
-                    'Bei den Tripeln geht die Skalierung dann effektiv über die Hypotenusen, die den Kreisradius bestimmen.'."\n",
-                      'Das Raster wird bei der Skalierung so dann immer feiner, im Verhältnis zur Größe.'."\n".
-                    'Bei \lm{ ω } schon so fein, dass Kehrwerte von Primzahlen oder Primzahlprodukten einfacher Potenz, deren Potenzen und Summen auf dem Raster liegen.'."\n".
-                    'Und bei \lm{ \s } dann so fein, dass vermutlich alle reell algebraischen Zahlen auf dem Raster liegen.'."\n",
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
-                      
-                'Primzahl-Potenztürme', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'Bei den Vielfachen der Primzahlen \lm{ p \cdot n } geht in \lm{ n } das Spiel des Zählens im Grunde wieder von vorne los.'."\n".
-                    'Auch sind in \lm{ n } nun alle Primzahlen gefragt, und nicht nur die bis \lm{ p }.'."\n",
-                      'Begrenzen wir uns bis \lm{ p }, so gelangen wir bald zu \lm{ p \cdot p = p^{2} }, wo wir nach deren Erreichen dann mit \lm{ p^{2} \cdot n } fortfahren müssen.'."\n".
-                    'Auf diese Weise gelangen wir zum Potenzturm der Primzahl \lm{ p^{k} }, der bis ins Aktual-Unendliche fortgesetzt dann \lm{ p^{ω} } liefert,'."\n".
-                    'also zu jedem der Potenztürme in \lm{ \s }.'."\n".
                     ''))),
 
                   array( 'jumplist', array(
