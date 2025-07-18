@@ -353,12 +353,12 @@
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimfakultaet-omega' => array( headline_text => 'SN.PP.173'),
           'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-s-ist-omega-hoch-omega' => array( headline_text => 'SN.PP.174'),
 
-        'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion' => array( headline_text => 'Diskussion des Beweises'/* , headline_text_short => 'X'*/),
-          'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:Equ-omega-ist-allPrimzahlen-teilbar' => array( headline_text => 'SN.PP.D.1'),
+        'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis' => array( headline_text => 'Interpretation des Beweises'/* , headline_text_short => 'X'*/),
+
+        'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis' => array( headline_text => 'Weitere Diskussion des Beweises'/* , headline_text_short => 'X'*/),
+          'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:Equ-omega-ist-allPrimzahlen-teilbar' => array( headline_text => 'SN.PP.D.1'),
 
         'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen' => array( headline_text => 'Experimentelle Gedanken zu anderen Beweiswegen'/* , headline_text_short => 'X'*/),
-
-        'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen' => array( headline_text => 'Gedanken zu Primzahlen'/* , headline_text_short => 'X'*/),
       ),
     ),
     'OM:SupNum:Superiale-Transzendenz-Vermutung' => array(

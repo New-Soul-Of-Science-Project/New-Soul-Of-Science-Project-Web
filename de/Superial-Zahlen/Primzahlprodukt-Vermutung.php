@@ -1466,7 +1466,7 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen'),
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis'),
                     )),
                 )
           ); ?>
@@ -1474,9 +1474,9 @@
           <?php To_f_headline_add_hides_end_line(); ?>
 
 
-          <!  • Gedanken zu Primzahlen  >
+          <!  • Interpretation des Beweises  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen',
+            'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis',
               'Das Verständnis des Übergangs von jeder Primzahl ins Unendliche zu \lm{ ω } und \lm{ \s }', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
@@ -1500,7 +1500,7 @@
                     'Und damit sind sie eben in ihren Werten größer als das dazugehörige primitive.'."\n",
                       'Bei den Primzahlen verhält es sich nun ganz ähnlich.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
                       
                 'Die Entdeckung einer Primzahl', subline =>
                   '')),
@@ -1509,7 +1509,7 @@
                     'gefunden haben, entdecken wir quasi die erste und dann immer wieder die nächste Primzahl; im Grunde, bis wir alle endlichen haben.'."\n",
                       'Haben wir eine Primzahl entdeckt, so ergibt sich das gleiche Muster, wie bei den nicht-primitiven pythagoreischen Tripeln.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
                       
                 'Vielfache einer Primzahl', subline =>
                   '')),
@@ -1545,7 +1545,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.Prim', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall p \in \mathbb{P} *)  *[  \frac{ ω }{ p }  \in  \mathbb{N}_{\infty}  *]  }',
-                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:Equ-omega-ist-allPrimzahlen-teilbar}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:Equ-omega-ist-allPrimzahlen-teilbar}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'gelten und damit der Bruch immer ganzzahlig sein, wie wir es oben schon mit Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen} bewiesen haben.'."\n".
@@ -1564,7 +1564,7 @@
                   array( 'text', array( text => array(
                     'gelten und damit dieser Bruch ganzzahlig sein, wie bekannt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
                       
                 'Verwandtschaft der Primzahlen und der pythagoreischen Tripel', subline =>
                   '')),
@@ -1576,7 +1576,7 @@
                     'Bei \lm{ ω } schon so fein, dass Kehrwerte von Primzahlen oder Primzahlprodukten einfacher Potenz, deren Potenzen und Summen auf dem Raster liegen.'."\n".
                     'Und bei \lm{ \s } dann so fein, dass vermutlich alle reell algebraischen Zahlen auf dem Raster liegen.'."\n",
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis:X', text =>
                       
                 'Primzahl-Potenztürme', subline =>
                   '')),
@@ -1589,19 +1589,19 @@
                     ''))),
 
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion'),
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis'),
                     )),
               )
           ); ?>
 
 
-          <!  • Diskussion des Beweises  >
+          <!  • Weitere Diskussion des Beweises  >
           <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
-            'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion',
+            'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis',
               'Das Verständnis des Übergangs der Mengen-Primfakultät und des Primturm-Potenzrasters ins Unendliche zu \lm{ ω }', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:GedankenZuPrimzahlen', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:InterpretationBeweis', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
@@ -1617,7 +1617,7 @@
                     'Dazu wird per Mengen-Primfakultät ein Primzahlprodukt erzeugt, das sich von Schritt zu Schritt immer weiter,'."\n".
                     'zum Produkt aller endlichen Primzahlen vervollständigt.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 'Jeder Primzahl-Schritt teilt \lm{ ω }', subline =>
                   '')),
@@ -1634,7 +1634,7 @@
                   array( 'equations',
                     array( equ_text_std => 'SN.PP.D', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *) *[  \frac{ ω }{ p }  \in  \mathbb{N}_\infty  *]  \;\;,  }',
-                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:Equ-omega-ist-allPrimzahlen-teilbar', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:Equ-omega-ist-allPrimzahlen-teilbar}', label_incr => true),
+                                          label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:Equ-omega-ist-allPrimzahlen-teilbar', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:Equ-omega-ist-allPrimzahlen-teilbar}', label_incr => true),
                     ))),
                   array( 'text', array( Shape  => 'derivation', text => array(
                       'wie wir mit Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen} bewiesen haben.'."\n",
@@ -1650,7 +1650,7 @@
                       '\lm{ ω } ist nun keine Primzahl mehr, weil ihr alle endlichen Primzahlen zugrunde liegen,'."\n".
                     'die nicht enden.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 'Jedoch ist jeder Primzahl-Schritt kein Teiler eines anderen Primzahl-Schritts', subline =>
                   '')),
@@ -1676,7 +1676,7 @@
                     'Der Übergang ist also wirklich etwas besonderes, von Schritten, die alle keine Teiler voneinander sind,'."\n".
                     'zum Ergebnis bei \lm{ ω }, das alle Schritte in einem Produkt zusammenfasst.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 'Erklärung und Verständnis des Gesamtspektrums der natürlichen Zahlen durch ihr Primzahl-Spektrum', subline =>
                   '')),
@@ -1718,7 +1718,7 @@
                       'Auch das lässt uns tiefer verstehen, warum die Menge aller endlichen natürlichen Zahlen \lm{ ω } mit einem Produkt'."\n".
                     'aller endlichen Primzahlen einfacher Potenz beschrieben wird.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 'Das Verlassen des Rasters einer Menge von aufeinanderfolgenden natürlichen Zahlen', subline =>
                   '')),
@@ -1732,7 +1732,7 @@
                       'Und unsere schrittweise Konstruktion der Primzahlen in Definition \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-Definition-der-Menge-P-durch-p-Zaehlen}'."\n".
                     'funktioniert nach dem selben Prinzip.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 'Immer mehr Primzahlen machen das Raster in Bezug auf die folgenden natürlichen Zahlen immer feiner', subline =>
                   '')),
@@ -1742,7 +1742,7 @@
                     'Dadurch wird das Raster durch immer mehr größere Primzahlen immer feiner.'."\n".
                     'Und deshalb kommen dann auch immer seltener neue Primzahlen hinzu, ohne, dass die Reihe der Primzahlen enden würde.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 'Sichtbarmachung der Produktstruktur von \lm{ ω } im Kontext ihres Primturm-Potenzrasters', subline =>
                   '')),
@@ -1838,7 +1838,7 @@
                       'Diese Erkenntnis mit der obigen Darstellung durch \lm{ s } führt uns dann wieder zurück zu'."\n".
                     'den Superial-Zahlen und bringt sie erneut mit den Ordinalzahlen in Verbindung.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 'Die Größenordnung von \lm{ ω } und \lm{ ω\overline{\#} }', subline =>
                   '')),
@@ -1862,7 +1862,7 @@
                     'das auch die Menge \lm{ lpr\!*( ω\overline{\#} *) = ω } darstellt.'."\n".
                     'Und der Wert von \lm{ ω\overline{\#} } hat nun auch die gleiche Größenordnung, wie der von \lm{ ω }.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 'Die Größenordnung und Struktur von \lm{ \s } und \lm{ \s^{-1} }', subline =>
                   '')),
@@ -1910,7 +1910,7 @@
                     'interessanter Weise so mit der aktualen Unendlichkeit der'."\n".
                     'vollständigen Induktion der natürlichen Zahlen in direkter Verbindung.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion:X', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis:X', text =>
                       
                 '\color{*Bearb}{(In Arbeit …)} Experimentell', subline =>
                   '')),
@@ -1946,7 +1946,7 @@
               'Das Verständnis des Übergangs der Mengen-Primfakultät und des Primturm-Potenzrasters ins Unendliche zu \lm{ ω }', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Diskussion', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Primzahlprodukt-Vermutung:WeitereDiskussionBeweis', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'hideContent', text => array(
