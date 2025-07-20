@@ -1522,7 +1522,7 @@
                     ))),
                   array( 'text', array( text => array(
                     'bis sie in \lm{ p \cdot ω } oder \lm{ p \cdot \s } übergeht.'."\n".
-                    'Nur sind diese Produkte keine Einheiten, weshalb wir es anders betrachten müssen und genauer sagen sollten,'."\n".
+                    'Nur sind diese beiden aktual unendlichen Produkte keine Einheiten, weshalb wir es anders betrachten müssen und genauer sagen sollten,'."\n".
                     'bis sie in die aktual unendlichen Einheiten'."\n".
                     ''))),
                   array( 'equations',
@@ -1538,8 +1538,10 @@
                     ))),
                   array( 'text', array( text => array(
                     'übergehen.'."\n".
-                    'Wir sehen, dass die natürlichen Vielfachen der Primzahlen in Bezug auf diese Übergänge eine wichtige und besondere Rolle spielen.'."\n".
-                    'Diese Information steckt in den eigentlich kürzbaren Formeln und ist nur erkennbar, wenn wir das Muster, durch das Unterlassen des Kürzens, erhalten.'."\n",
+                    'Es handelt sich also um einen Übergang von der Einheit, die eine jede endliche Primzahl \lm{ p } darstellt,'."\n".
+                    'zu der einen oder der anderen aktual unendlichen Zähleinheit \lm{ ω } oder \lm{ \s }.'."\n",
+                      'Wir sehen, dass die natürlichen Vielfachen der Primzahlen in Bezug auf diese Übergänge eine wichtige und besondere Rolle spielen.'."\n".
+                    'Diese Information steckt in den eigentlich kürzbaren Formeln und ist nur erkennbar, wenn wir das Muster, durch das Unterlassen des Kürzens, sichtbar halten.'."\n",
                       'Wenn jede endliche multiplikative Einheit oder Primzahl \lm{ p } den Übergang zu \lm{ ω } glatt absolvieren soll, dann muss demnach auch'."\n",
                     ''))),
                   array( 'equations',
@@ -1549,10 +1551,13 @@
                     ))),
                   array( 'text', array( text => array(
                     'gelten und damit der Bruch immer ganzzahlig sein, wie wir es oben schon mit Formel \jumpname{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-omega-ist-allPrimzahlen} bewiesen haben.'."\n".
-                    'So gesehen ist \lm{ ω } die kleinste aktual unendliche Einheit der endlichen Primzahlen, die aber selber nicht prim sein kann, weil durch alle endlichen Primzahlen teilbar.'."\n".
-                    'Die endlichen Primzahlen streben beim Zählen zur Einheit \lm{ ω } hin, wie der Ansatz des Beweises deutlich macht, zu einem Punkt, an dem sie sich alle in einem Produkt vereinen.'."\n".
+                    'Die \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{Menge \lm{ \mathbb{N}_\infty }} steht hier für die Menge aller endlichen und aktual unendlichen positiven ganzen Zahlen, einschließlich der Null.'."\n",
+                      'So gesehen ist \lm{ ω } die kleinste aktual unendliche Einheit des Zählens über alle endlichen Primzahlen.'."\n".
+                    'Die aber selber keine Primzahl sein kann, weil sie deshalb durch alle endlichen Primzahlen ganzzahlig teilbar sein muss.'."\n".
+                    'Alle endlichen Primzahlen sind zu \lm{ ω } ganzzahlig skalierbar.'."\n".
+                    'Denn die endlichen Primzahlen streben beim Zählen zur Einheit \lm{ ω } hin, wie der Beweises deutlich macht; zu einem Punkt, an dem sie sich alle in einem Produkt vereinen.'."\n".
                     'Damit erhält die vollständige Induktion \lm{ ω } ein tieferes, ein arithmetisches Verständnis und erscheint so in ganz neuem Licht.'."\n",
-                      'Wenn wir hingegen das Zählen glatt ins Unendliche erweitern wollen und damit jede natürliche Zahl \lm{ n } den Übergang ins Aktual-Unendliche glatt absolvieren soll,'."\n".
+                      'Wenn wir hingegen nicht nur das Zählen, sondern auch alle seine Schritte, glatt ins Unendliche erweitern wollen und damit jede natürliche Zahl \lm{ n } den Übergang ins Aktual-Unendliche glatt absolvieren soll,'."\n".
                     'dann geht dies nur hin zur superialen Einheit \lm{ \s = ω^{ω} }.'."\n".
                     'Denn dann muss'."\n".
                     ''))),
