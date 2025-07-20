@@ -157,8 +157,9 @@
                                            
                 'Akademische Forschung')),
                   array( 'text', array( text => array(
-                    'Ich würde mich sehr freuen, wenn ich mit meiner Forschung zur Fortentwicklung und Bereicherung des Langlands-Programms beitragen könnte.'."\n".
-                    'Denn unsere Welt, und das gilt eben auch für die Themen unserer Ideenwelt, ist im Hintergrund vernetzt, wie sich mir immer wieder zeigt,'."\n".
+                    'Ich würde mich sehr freuen, wenn ich mit meiner Forschung zur Fortentwicklung und Bereicherung des Langlands-Programms beitragen könnte,'."\n".
+                    'das eben die Teilgebiete der Mathematik zusammen führen, tiefer begreifen und vernetzen möchte.'."\n",
+                      'Denn unsere Welt, und das gilt eben auch für die Themen unserer Ideenwelt, ist im Hintergrund vernetzt, wie sich mir immer wieder zeigt,'."\n".
                     'und wofür die Superial-Zahlen durch ihre fraktale Struktur geradezu exemplarisch stehen. \\\\'."\n".
                     '\\\\'."\n".
                     '\\italic{Wolfgang Huß} \\\\ \\small{im Juli 2025} \\\\ \\\\'."\n".
