@@ -118,13 +118,13 @@
                   array( 'text', array( text => array(
                     'Um nachfolgend genau zu arbeiten, möchte ich an dieser Stelle vorab deutlich machen,'."\n".
                     'dass im folgenden die Funktionsparameter – meistens \lm{ x } –'."\n".
-                    'die \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}'."\n".
+                    'die \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen}'."\n".
                     'der Menge \lm{ \mathbb{A}_{\S} } sind.'."\n".
                     'Nach jetzigem Stand sind dies mindestens alle realen Koeffizienten der algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}},'."\n".
                     'die durch Radikale\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}} darstellbar sind.'."\n".
                     'Dass genau alle reell algebraischen Zahlen in der Menge \lm{ \mathbb{A}_{\S} } sind \jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{vermuten wir},'."\n".
                     'ist jedoch noch zu beweisen.'."\n",
-                      '\jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:superiale-Koeffizienten-Realanteile-algebraischer-Zahlen}{Transzendente Zahlen} scheinen hingegen als Koeffizienten nicht sinnvoll.'."\n".
+                      '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:superiale-Koeffizienten-Realanteile-algebraischer-Zahlen}{Transzendente Zahlen} scheinen hingegen als Koeffizienten nicht sinnvoll.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:Ableitung-genau-verstehen', text =>
                                            

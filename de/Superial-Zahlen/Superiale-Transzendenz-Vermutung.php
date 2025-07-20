@@ -139,7 +139,7 @@
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                     '\condb{Das \lm{ p }‑adische Grundprinzip} \\\\'."\n".
-                      'Unser Beweis zu den \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvollen superialen Koeffizienten} geht folgendermaßen.'."\n".
+                      'Unser Beweis zu den \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvollen superialen Koeffizienten} geht folgendermaßen.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                     '\cond{\lm{ p }‑adische Bewertung} \\\\'."\n".
@@ -181,7 +181,7 @@
                       'Anders gesagt:'."\n".
                       'Jede Primzahl kommt in diesem Produkt unendlich oft vor, nur mit einem \italic{kleinen} rationalen Offset in der Exponentenhöhe.'."\n".
                       'Und nach dem \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung},'."\n".
-                      'zusammen mit dem Abschnitt \italic{›\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Ganzzahlige-Potenzen-der-Wurzeln}‹},'."\n".
+                      'zusammen mit dem Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}‹},'."\n".
                       'ist jeder Primzahlturm \lm{ p^{ω + \mathrm{v}_{p}(a)} } eine aktual unendliche ganze Zahl, wenn \lm{ \mathrm{v}_{p}(a) \in \mathbb{Q} }, obwohl \lm{ ω + \mathrm{v}_{p}(a) } eine gebrochene Zahl sein kann,'."\n".
                       'weil \lm{ ω } so groß ist, dass ein endlicher rationaler Summand daran nichts ändert.'."\n".
                       ''))),
@@ -219,7 +219,7 @@
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'was genau in einer Schicht in \lm{ \mathbb{S}_{\Z} } liegt.'."\n".
                       'Also:'."\n".
-                      '\lm{ a } ist ein \jump{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}{sinnvoller Koeffizient}.'."\n".
+                      '\lm{ a } ist ein \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}{sinnvoller Koeffizient}.'."\n".
                       ''))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Daraus folgt:'."\n".
