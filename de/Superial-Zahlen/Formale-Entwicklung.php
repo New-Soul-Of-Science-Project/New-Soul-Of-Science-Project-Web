@@ -710,14 +710,10 @@
                 'Aktual-Unendliche Exponenten der Primzahlen in Superial-Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX siehe Einleitung, "Rationale Zahlen und ihre Primfaktorzerlegung"'."\n".
-                    'XXX siehe Einleitung, "Die Veränderung der Primfaktorzerlegung von 𝑠 durch rationale Koeffizienten"'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    '… siehe Einleitung, "Rationale Zahlen und ihre Primfaktorzerlegung"'."\n".
+                    '… siehe Einleitung, "Die Veränderung der Primfaktorzerlegung von 𝑠 durch rationale Koeffizienten"'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
                   array( 'jumplist', array(
