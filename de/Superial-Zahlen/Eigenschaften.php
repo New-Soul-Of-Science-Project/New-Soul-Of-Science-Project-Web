@@ -826,7 +826,7 @@
                     'Ganz ähnlich verhält es sich mit Summen von zwei oder mehr Wurzeln.'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Nehmen wir an, dass eine Summe aus zwei irrationalen Wurzeln, oder ihrer jeweiligen Kehrwerte, im Produkt mit \lm{ \s }'."\n".
                       ''))),
@@ -834,14 +834,14 @@
                     array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} *) *( n, m \geq 2 *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *)  \\\ \qquad\quad *( n^{\frac{ 1 }{ y }} + n^{\frac{ 1 }{ z }} \ge 0 *)  *[  *( n^{\frac{ 1 }{ y }} + n^{\frac{ 1 }{ z }} *) \cdot \s  ?\in  \mathbb{S}_{N}  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot \s + n^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{N}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da beide Summanden ganze Superial-Zahlen sind'."\n".
                       ''))),
                   array( 'equations',
@@ -849,14 +849,14 @@
                       array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{Z}  }'),
                       array( display => 'on',  latex => '{  n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{Z}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und die Summe zweier ganzer Superial-Zahlen immer zu dieser Menge gehört, folgt daraus, dass die untersuchte Summe'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }} \cdot \s + n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{N}  \;\;,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'unter den obigen Bedingungen, immer eine natürliche Superial-Zahl ist, was wir zeigen wollten.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -864,6 +864,128 @@
                   array( 'text', array( text => array(
                     'So sind dann alle algebraischen Zahlen, die durch Kombinationen arithmetischer Operationen von Radikalen – Wurzelausdrücken –,'."\n".
                     'oder deren Kehrwerte, inklusive ganzzahliger Potenzen, dargestellt werden können, natürliche Superial-Zahlen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Geschachtelte Wurzeln mit Summen} \\\\'."\n".
+                    '\color{*Bearb}{(Dies ist bisher kein Beweis, sondern eine Analyse, welche Eigenschaften dafür gebraucht werden.)}'."\n",
+                      'Reell algebraische Zahlen ergeben sich auch aus geschachtelten Wurzeln, die Summen enthalten.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Nehmen wir an, dass eine geschachtelte Wurzel, die eine Summe enthält, im Produkt mit \lm{ \s }'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *[  *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'zu den natürlichen Superial-Zahlen gehört.'."\n",
+                        'Die ganzen Zahlen \lm{ n^{\frac{ 1 }{ z }} \cdot \s^{y} } und \lm{ a_{s} \cdot \s^{y} } sind demnach durch den Faktor \lm{ \s^{y} } so groß,'."\n".
+                      'dass sogar aus deren Summe immer die \lm{ y }-te Wurzel gezogen werden kann, so, dass sich immer eine ganze Zahl ergibt, was im Endlichen im Regelfall nicht so ist.'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *[  *( *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s^{y} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{S}_{\N}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *[  *( n^{\frac{ 1 }{ z }} \cdot \s^{y} + a_{s} \cdot \s^{y} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{S}_{\N}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Wie können wir die dahinter stehenden Rechenregeln genauer verstehen?'."\n",
+                        'Meine Annahme wäre zunächst, dass es durch die unendlichen Potenzen der Primzahlen der endlichen Faktoren kommt:'."\n".
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *[  *( n^{\frac{ 1 }{ z }} \cdot *( \rad(n)^{ω} *)^{y} + a_{s} \cdot *( \rad*( a_{s} *)^{ω} *)^{y} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{N}_{\infty}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Wir versuchen es mal mit folgenden Zahlen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *[  *( 2^{\frac{ 1 }{ 2 }} \cdot *( 2^{ω} *)^{y} + 45 \cdot *( *( 3 \cdot 5 *)^{ω} *)^{y} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *[  *( 2^{\frac{ 1 }{ 2 }} \cdot 2^{y \cdot ω} + 3^{2} \cdot 3^{y \cdot ω} \cdot 5^{1} \cdot 5^{y \cdot ω} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *[  *( 2^{y \cdot ω + \frac{ 1 }{ 2 }} + 3^{y \cdot ω + 2} \cdot 5^{y \cdot ω + 1} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{N}_{\infty}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *[  *( 2^{y \cdot *( ω + \frac{ 1 }{ 2 y } *)} + 3^{y \cdot *( ω + \frac{ 2 }{ y } *)} \cdot 5^{y \cdot *( ω + \frac{ 1 }{ y } *)} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{N}_{\infty}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Pythagoreische Tripel im Endlichen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a, b, c  \in  \mathbb{N}^{+}  }'),
+                      array( display => 'on',  latex => '{  a^{2} + b^{2}  =  c^{2}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt{ a^{2} + b^{2} } \,|*  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{2} + b^{2} *)^{\frac{ 1 }{ 2 }}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Pythagoreische Tripel im Superialen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \forall a, b, c  \in  \mathbb{A}_{\S}^{+}  }'),
+                      array( display => 'on',  latex => '{  \forall a \s, b \s, c \s  \in  \mathbb{S}_{\N}^{+}  }'),
+                      array( display => 'on',  latex => '{  a^{2} + b^{2}  =  c^{2}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt{ a^{2} + b^{2} } \,|*  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{2} + b^{2} *)^{\frac{ 1 }{ 2 }}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'In dem Moment, wo wir es ins Superiale skalieren'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( a^{2} + b^{2} *)^{\frac{ 1 }{ 2 }} \cdot \s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( *( a^{2} + b^{2} *) \cdot \s^{2} *)^{\frac{ 1 }{ 2 }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( a^{2} \cdot \s^{2} + b^{2} \cdot \s^{2} *)^{\frac{ 1 }{ 2 }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( *( a \cdot \s *)^{2} + *( b \cdot \s *)^{2} *)^{\frac{ 1 }{ 2 }}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'würden die superialen pythagoreischen Tripel \lm{ a \s }, \lm{ b \s } und \lm{ c \s } für alle reell algebraischen Zahlen'."\n".
+                      '\lm{ a }, \lm{ b } und \lm{ c } ganz bleiben.'."\n",
+                        'Dies wäre in sich völlig stimmig.'."\n".
+                      'Demnach bedürfte es dem Ins-Aktual-Unendliche-Gehen, um dort kontinuierliche Tripel zu bekommen, die dann aber doch diskret sind.'."\n",
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Großer Fermatscher Satz im Endlichen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \nexists a, b, c \in \mathbb{N}^{+} *) *( 2 < n \in \mathbb{N}^{+} *)  *[  a^{n} + b^{n}  =  c^{n}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt[n]{ a^{n} + b^{n} } \,|*  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{n} + b^{n} *)^{\frac{ 1 }{ n }}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Fermatsche Tripel im Superialen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \forall a, b, c  \in  \mathbb{A}_{\S}^{+}  }'),
+                      array( display => 'on',  latex => '{  \forall a \s, b \s, c \s  \in  \mathbb{S}_{\N}^{+}  }'),
+                      array( display => 'on',  latex => '{  *( \forall a, b, c \in \mathbb{N}^{+} *) *( n \in \mathbb{N}°{+} *)  *[  a^{n} + b^{n}  =  c^{n}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt[n]{ a^{n} + b^{n} } \,|*  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{n} + b^{n} *)^{\frac{ 1 }{ n }}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'In dem Moment, wo wir es ins Superiale skalieren'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Eig.SK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( a^{n} + b^{n} *)^{\frac{ 1 }{ n }} \cdot \s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( *( a^{n} + b^{n} *) \cdot \s^{n} *)^{\frac{ 1 }{ n }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( a^{n} \cdot \s^{n} + b^{n} \cdot \s^{n} *)^{\frac{ 1 }{ n }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( *( a \cdot \s *)^{n} + *( b \cdot \s *)^{n} *)^{\frac{ 1 }{ n }}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'würden die superialen Fermatschen Tripel \lm{ a \s }, \lm{ b \s } und \lm{ c \s } für alle reell algebraischen Zahlen'."\n".
+                      '\lm{ a }, \lm{ b } und \lm{ c } ganz bleiben.'."\n",
+                        'Dies wäre in sich völlig stimmig.'."\n".
+                      'Demnach bedürfte es dem Ins-Aktual-Unendliche-Gehen, um dort kontinuierliche Tripel zu bekommen, die dann aber doch diskret sind.'."\n",
+                        '\color{*Bearb}{(In Arbeit …)}'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Nullstellen von Polynomen ersten bis vierten Grades sind sinnvolle Koeffizienten der Superial-Zahlen} \\\\'."\n".
@@ -1589,20 +1711,15 @@
                     ))),
                   array( 'text', array( text => array(
                     'Der mittlere Wert \lm{ ½ } wird zu Null.'."\n".
-                    'Doch Null ist vermutlich nicht der mittlere Wert von \lm{ \mathbb{A}_{\S} }, denn der Mittelpunkt von \lm{ \# \mathbb{Z} } ist \lm{ - ½ }.'."\n".
-                    'XXX'."\n",
-                      'Das Problem scheint'."\n",
-                      'XXX'."\n".
+                    'Doch Null ist vermutlich nicht der mittlere Wert von \lm{ \mathbb{A}_{\S} }, denn der Mittelpunkt von \lm{ \# \mathbb{Z} } ist \lm{ - ½ }.'."\n",
+                      '\color{*Bearb}{(In Arbeit …)}'."\n",
+                      'Das Problem scheint …'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Gleich mächtig, aber nur bedingt abbildbar XXX} \\\\'."\n".
+                  '\condb{Gleich mächtig, aber nur bedingt abbildbar …} \\\\'."\n".
                     'Die Elemente beider Mengen sind nicht nach ihrer Größe geordnet aufeinander abbildbar, sondern nur,'."\n".
                     'wenn wir ihre Reihenfolge verändern ???'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                      '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
 
                     ))),
