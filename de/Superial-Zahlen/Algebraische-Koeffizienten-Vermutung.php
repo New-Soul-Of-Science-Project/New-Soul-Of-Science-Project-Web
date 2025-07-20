@@ -17,7 +17,130 @@
                     // '\bold{Verbesserungen der Seite}',
                     // '• Nach dem Beweis der \italic{\jumpname{OM:SupNum:Ueberrationalitaetsvermutung}} die Menge der Koeffizienten der Superial-Zahlen von den rationalen Zahlen \lm{ \mathbb{Q} } zu den algebraischen Koeffizienten \lm{ \mathbb{A}_{\S} } ändern.',
                     ))),
+
+                  array( 'text', array( text => array(
+                    'Um die Trennlinie zwischen den reell algebraischen Zahlen und den transzendenten Zahlen im Rahmen der Superial-Zahlen zu verstehen,'."\n".
+                    'müssen wir erkennen, dass sich wichtige Eigenschaften der transzendenten Zahlen im Superial-Universum anders darstellen,'."\n".
+                    'als sie in der klassischen Mathematik gesehen werden.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
                       
+                'Neue Sicht der transzendenten Zahlen', subline =>
+                  'Ein Paradigmenwechsel')),
+                  array( 'text', array( text => array(
+                    'Aus Sicht der klassischen Mathematik enthalten transzendente Zahlen keine unendlich kleinen Summanden.'."\n".
+                    'Dies kommt, weil in ihr transzendente Zahlen durch Grenzwertbetrachtungen\color{*Bearb}{(Verweis)} mit Hilfe des Limes\color{*Bearb}{(Verweis)}'."\n".
+                    'definiert sind.'."\n",
+                      'Bei Grenzwertbetrachtungen wird das Verhalten von Funktionen untersucht, wenn sich ihr Parameter'."\n".
+                    'einem bestimmten Wert, von unten oder von oben, nähert oder in Richtung Unendlichkeit läuft.'."\n".
+                    'Das bedeutet aber eben auch, dass die Werte der Parameter nie wirklich das Endliche verlassen, wodurch dann keine wirklich'."\n".
+                    'unendlich kleinen Summanden bei der Annäherung der Funktion an einen Grenzwert entstehen können.'."\n",
+                      'Im Superial-Universum sieht die Sache nun anders aus.'."\n".
+                    'Die Parameterwerte sind hier wirklich aktual unendlich große oder kleine Superial-Zahlen.'."\n".
+                    'Dadurch bekommen transzendente Zahlen echte unendlich kleine Summanden, auch, wenn ihr führender oder bestimmender Wert'."\n".
+                    'im Endlichen verbleibt.'."\n".
+                    'Dies ist die \jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{Superiale-Transzendenz-Vermutung}, die ich später noch'."\n".
+                    'beweisen möchte.'."\n",
+                      'Sie stellt einen tief gehenden grundsätzlichen Paradigmenwechsel dar, der uns eine Lupe in die'."\n".
+                    '\jump{OM:SupNum:Superiale-Transzendenz-Vermutung}{feinen Strukturen der Transzendenz} an die Hand gibt.'."\n".
+                    'Diese ermöglicht uns ganz neue Einblicke, wie wir bei der'."\n".
+                    '\jump{OM:SupNum:Eulersche-Zahl-e-Funktion:Vortext:Equ-e_s-gleich-Stellenwertsystem-mit-Summe}{superialen Eulerschen Zahl \lm{ \e_{\s} }} und'."\n".
+                    'der superialen Zahl \lm{ π_{\s} }\color{*Bearb}{(Link)} sehen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                      
+                'Neue Sicht auf die reell algebraischen Zahlen', subline =>
+                  'In vielem unverändert und doch ein echter Paradigmenwechsel')),
+                  array( 'text', array( text => array(
+                  '\condb{Rationale Zahlen} \\\\'."\n".
+                  '\cond{Ganzzahlige Brüche} \\\\'."\n".
+                    'Jede rationale Zahl ist im Produkt mit \lm{ \s } aufgrund seiner Primzahlstruktur ganz offensichtlich'."\n".
+                    '\jump{OM:SupNum:Einleitung:Vortext:Was-ist-unsere-neue-superiale-Basis-s}{immer eine aktual unendlich große ganze Zahl}.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Radikale} \\\\'."\n".
+                  '\cond{Natürliche Wurzeln aus natürlichen Zahlen} \\\\'."\n".
+                    'Zunächst ist durch die \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung und ihren Beweis} ein neues Verständnis'."\n".
+                    'eines wichtigen Teils der reell algebraischen Zahlen, nämlich den Radikalen – ganzzahligen Wurzeln aus positiven natürlichen Zahlen –,'."\n".
+                    'gelungen:'."\n",
+                      'Unter den Radikalen befinden sich auch irrationale Zahlen, wie die Wurzel aus Zwei, also \lm{ *| \sqrt{2} \,|* = 2^{½} }.'."\n".
+                    'Solche Zahlen sind, genauer ausgedrückt, gebrochene Zahlen mit unendlich vielen nicht periodischen Nachkommastellen.'."\n".
+                    'Noch genauer betrachtet stellt sich die Frage:'."\n".
+                    'Sind diese Nachkommastellen vom Wert her alle endlich groß?'."\n",
+                      'Der Beweis der Überrationalitätsvermutung zeigt, dass sich diese irrationalen Radikale in jede Schicht des'."\n".
+                    '\jump{*SupNum:Stellenwertsystem-Schreibweise}{Stellenwertsystems der Superial-Zahlen} vollständig eingliedern.'."\n".
+                    'Das zeigt sich durch eine neue und in diesem Zusammenhang sinnvolle Beantwortung der Frage, durch welchen ganzzahligen Bruch wir'."\n".
+                    'die Wurzel aus Zwei oder jedes andere Radikal darstellen können:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| \sqrt{ 2 } \,|*  =  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Wurzel-Zwei-mal-Zwei-hoch-omega-durch-Zwei-hoch-omega}', label_incr => false),
+                      // array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  }',
+                      //                     label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  *| \sqrt[x]{ n } \,|*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Der Beweis mündet in die beispielhafte Formel \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Wurzel-Zwei-mal-Zwei-hoch-omega-durch-Zwei-hoch-omega}'."\n".
+                    'und die allgemeine Formel \jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}.'."\n".
+                    'Er zeigt, dass für die Frage, wie kann jede ganzzahlige Wurzel aus einer positiven natürlichen Zahl als ganzzahliger Bruch darstellen werden,'."\n".
+                    'im Endlichen keine Antwort existiert.'."\n".
+                    'Diese Antwort gibt es nur mit aktual unendlich großem Nenner und Zähler, sehen wir nun im Beweis.'."\n",
+                      'Wenn man naiv auf beide Formeln schaut, dann könnte man argumentieren, dass diese doch nicht abschließend sind, weil sie noch'."\n".
+                    'gekürzt werden können.'."\n".
+                    'Jedoch ist dies nicht ganz korrekt:'."\n".
+                    'Wenn wir nämlich vollständig kürzen, dann ist die Bedingung der Ganzzahligkeit von Nenner und Zähler nicht mehr gegeben,'."\n".
+                    'weil die aktuale Unendlichkeit verloren geht, die der Beweis fordert.'."\n".
+                    'Einzig endlich oft kürzen ist möglich, ohne diese Bedingung zu verletzen, bringt aber keinerlei zusätzlichen Gewinn.'."\n",
+                      'Diese Erkenntnis eröffnet eine ganz neue Perspektive auf die sinnvollen Koeffizienten der Superial-Zahlen.'."\n".
+                    'Denn die Faktoren \lm{ 2^{ω} } und allgemeiner \lm{ \rad(n)^{ω} } sind auch Teil des Primzahlflächenprodukts von \lm{ \s }.'."\n".
+                    'Dadurch wird jedes Produkt einer Wurzel mit unserer superialen Basis'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \s  :\in  \mathbb{S}_{\N}  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-xte-Wurzel-n-mal-s-ist-in-SN}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'zu einer natürlichen unendlich großen Zahl, in der nur die Schicht \lm{ \s^{1} } belegt ist.'."\n".
+                    'Das ist ein echter Paradigmenwechsel des Verständnisses von Wurzeln und der Superial-Zahlen.'."\n",
+                      'Genau diese Eigenschaft macht sinnvolle Koeffizienten aus.'."\n".
+                    'Denn so lassen sich die natürlichen Zahlen \lm{ \mathbb{N} } und auch die ganzen Zahlen \lm{ \mathbb{Z} }'."\n".
+                    'zu \jump{OM:SupNum:Formale-Entwicklung:NatuerlicheSZ}{natürlichen Superial-Zahlen \lm{ \mathbb{S}_{\N} }}'."\n".
+                    'und \jump{OM:SupNum:Formale-Entwicklung:GanzeSZ}{ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} }}'."\n".
+                    'erweitern, dass in Summen von superialen Integralen unendlich kleine Flächenelemente ganzer Anzahl gezählt und zu endlichen Flächeninhalten'."\n".
+                    'addiert werden können.'."\n",
+                      'Alle Radikale können aus der klassischen \lm{ p }‑adischen Sichtweise\footnote{\const{SupNum_g_footnote_text_PadischeZahl}}'."\n".
+                    'durch ihre \lm{ p }‑adischen Bewertungen dargestellt werden, was offensichtlich ist und worauf wir gleich noch zurückkomme.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Algebraische Radikalformen} \\\\'."\n".
+                  '\cond{Reell algebraische Zahlen, die durch algebraische Ausdrücke mit Wurzeln dargestellt werden können} \\\\'."\n".
+                    'Alle algebraischen Radikalformen, die Produkte, Brüche oder rationale Potenzen von Radikalen sind, können'."\n".
+                    'ebenfalls durch ihre \lm{ p }‑adischen Bewertungen dargestellt werden, was nach kurzer Überlegung auch offensichtlich ist.'."\n".
+                    'Das macht sie auch ganz klar zu sinnvollen Koeffizienten der Superial-Zahlen.'."\n",
+                      'Darüberhinaus zeige ich jedoch im Abschnitt \italic{\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen}} zusätzlich,'."\n".
+                    'dass \color{*Bearb}{(fast)} alle algebraischen Radikalformen, eben auch die, die Summen oder Produkte von Wurzeln und deren ganzzahligen Potenzen sind,'."\n".
+                    'auch sinnvolle Koeffizienten der Superial-Zahlen darstellen.'."\n".
+                    '\color{*Bearb}{(Bisher ohne Radikalformen, die man durch endlich viele geschachtelte Quadratwurzeln und ganzzahlige Additionen erhält.)}'."\n".
+                    'Obwohl diese Radikalformen keine \lm{ p }‑adischen Bewertungen ungleich Null besitzen.'."\n",
+                      'Dazu gehört auch der Goldene Schnitt:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  φ  =  \frac{ *| \sqrt{ 5 } \,|* + 1 }{ 2 }  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-goldener-Schnitt}', label_incr => false),
+                      array( display => 'on',  latex => '{  5^{\frac{ 1 }{ 2 }} \cdot \frac{ \s }{ 2 } + \frac{ \s }{ 2 }  \in  \mathbb{S}_{\N}  }',
+                                          label_text => '\jumpname{OM:SupNum:Eigenschaften:Koeffizienten-der-Superial-Zahlen:Equ-goldener-Schnitt-mal-s-in-SN}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Algebraische-Koeffizienten-Vermutung:Vortext:X', text =>
+                      
+                '\color{*Bearb}{Nachfolgender Text wird überarbeitet, weil er so nicht korrekt ist}', subline =>
+                  '')),
                   array( 'text', array( text => array(
                     'Der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis unserer Überrationalitätsvermutung}, das Zeigen,'."\n".
                     'dass auch alle damit sich ergebenden durch Radikale\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}} darstellbaren reell algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
@@ -316,13 +439,7 @@
                       array( display => 'on',  latex => '{  \Rightarrow  a  \in  \mathbb{A}_{\R}  }'),
                     ))),
                   array( 'text', array( text => array(
-                    'Dies ist tatsächlich eine bidirektionale Abbildung, bis auf den Fall \lm{ a = 0 } und das Vorzeichen.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n",
+                    'Dies ist tatsächlich eine bidirektionale Abbildung, bis auf den Fall \lm{ a = 0 } und das Vorzeichen.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                       
