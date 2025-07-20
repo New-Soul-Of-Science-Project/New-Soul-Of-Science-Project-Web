@@ -95,7 +95,7 @@
                     '\jump{OM:BiOrd:Home}{Biordinalzahl} definiert ist.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Nun ist es offensichtlich, dass \lm{ 2^{ω-1} } ungleich und sogar sehr viel größer als \lm{ ω } ist:'."\n".
                       ''))),
@@ -105,7 +105,7 @@
                       array( display => 'on',  latex => '{  2^{ω - 1}  \;\;\;\overset{\infty}{\ggg}\;\;\;  ω  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \forall p \in \mathbb{P} *)  *[  p^{ω}  \;\;\;\overset{\infty}{\ggg}\;\;\;  ω  *]  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dies gilt dann auch für alle Potenzen dieser Größenordnung endlicher Primzahlen.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -301,7 +301,7 @@
                     'Potenzen der Primzahlen berücksichtigt.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei \lm{ pt(n) } die Menge der Primzahltürme der \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{endlichen und aktual unendlichen natürlichen Zahl \lm{ n \in \mathbb{N}_\infty }}:'."\n".
                       ''))),
@@ -310,7 +310,7 @@
                       array( display => 'on',  latex => '{  pt(n)  :=  *\{  x  *|*  \begin{cases}  x = n  &  \text{ falls } \;\; n \in *\{ 0, 1 *\}  \\\\  \\\\  \begin{aligned} *( \forall p \in \mathbb{P} *) *( \forall k \in \mathbb{N}_{\infty} *) \; \\\ \!\! *( \frac{ n }{ p^{k} } \in \mathbb{N}_{\infty} \land \frac{ n }{ p^{k + 1} } \notin \mathbb{N}_{\infty} *) \\\ *[ x = p^{k} *] \; \end{aligned}  &  \text{ falls } \;\; n \geq 2  \end{cases}  *\}  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  n  \widehat{=}  pt(n)  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Dann ist diese Menge also die Menge der Primzahlen in der maximalen Potenz, die \lm{ n } noch ganzzahlig teilt,'."\n".
                       'oder sie enthält im Falle von Null nur die Null oder im Falle von Eins nur die Eins.'."\n".
                       'Die Null und die Eins werden hier berücksichtigt, weil wir die natürlichen Zahlen komplett abbilden wollen.'."\n".
@@ -333,7 +333,7 @@
                       array( display => 'on',  latex => '{  pt(11)  =  *\{ 11 *\}  }'),
                       array( display => 'on',  latex => '{  pt(12)  =  *\{ 4, 3 *\}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und so fort.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -372,7 +372,7 @@
                     'einer solchen Zahl.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei \lm{ pr(n) } das Primturm-Potenzraster beziehungsweise die unendliche Primturm-Potenzraster-Menge,'."\n".
                       'erzeugt aus ihrem \jump{OM:BiOrd:Einleitung:NeueEinsichten:Equ-Def-N-unendlich}{endlichen oder aktual unendlichen natürlichen Parameter \lm{ n \in \mathbb{N}_\infty }},'."\n".
@@ -388,7 +388,7 @@
                       // array( display => 'on',  latex => '{  pr(n)  :=  *\{  x  *|*  *( \forall i \in \# pt(n) *) *( \forall j_{i} \in pt(n) *) *( \forall k_{i} \in \mathbb{N} *) \\\ \qquad\qquad\qquad\quad\;\, *[  x = \prod_{ \forall i }  j_{i}^{k_{i}}  *]  *\}  }'),
                       array( display => 'on',  latex => '{  pr(n)  :=  \begin{cases}  n  &  \text{ falls } \;\; n \in *\{ 0, 1 *\}  \\\\ \\\\  *\{  x  *|*  \begin{aligned} *( \forall i \in \# pt_{0,1}(n) *) \, \\\ *( \forall j_{i} \in pt_{0,1}(n) *) \, \\\ *( \forall k_{i} \in \mathbb{N}_{\infty} *) \, \\\ \! *[ x = \prod_{ \forall i }  j_{i}^{k_{i}} *] \end{aligned}  *\}  &  \text{ falls } \;\; n \geq 2  \end{cases}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       // 'Die Menge wird hier erzeugt, indem alle natürlichen Zahlen \lm{ i } darauf geprüft werden, ob sie entweder'."\n".
                       // 'Null oder Eins sind oder mindestens ein Primfaktoranteil von \lm{ n } die Zahl \lm{ i } ganzzahlig teilt.'."\n",
                       'Die Menge wird hier erzeugt, indem alle Elemente in \lm{ pt(n) }, geordnet nach ihrem Index \lm{ i }, in jeder natürlichen Potenz'."\n".
@@ -405,7 +405,7 @@
                     'aufgrund derer sich das Primturm-Potenzraster ebenso einzigartige berechnet.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Entspreche also jede natürliche Zahl ihrem Primturm-Potenzraster'."\n".
                       ''))),
@@ -414,7 +414,7 @@
                       array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N} *) *[  n  \widehat{=}  pr( n )  *]  \;\;,  }',
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-n-entspricht-pr-n}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'was eben keine Gleichheit bedeutet. \\\\'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -428,7 +428,7 @@
                     'zu berechnen.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Sei \lm{ lpr(n) } die maximale lückenlose Menge natürlicher Zahlen, von der Null an,'."\n".
                       'im Primturm-Potenzraster \lm{ pr(n) }:'."\n".
@@ -437,7 +437,7 @@
                     array( equ_text_std => 'SN.PP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  lpr(n)  :=  *\{  x  *|*  *( \forall i \in \mathbb{N} *) *( i \subseteq pr(n) *) *[  x = i  *]  *\}  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\color{*Bearb}{(\lm{ \mathbb{N} } sollte hier auf aktual unendliche natürliche Zahlen erweitert werden. Allerdings wäre \lm{ \mathbb{N}_\infty } hier nicht ganz richtig, weil es im Sinne der Biordinalzahlen nur um die Ordinalzahlen geht, also um Limeszahlen \lm{ \lambda + n } und nicht um solche wie \lm{ \lambda - n }, also z.B. \lm{ ω - 1 }.)} \\\\'."\n".
                       '\color{*Bearb}{(Diese Funktion könnten wir vielleicht auch durch Mengennegation und das Herauskristallisieren'."\n".
                       'der kleinsten Zahl in der Antimenge realisieren.)} \\\\'."\n".
@@ -459,7 +459,7 @@
                     'verdeutlichen und erlebbar machen.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 0 } haben wir:'."\n".
                       ''))),
@@ -470,12 +470,12 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 0 )  =  \varnothing  }'),
                       array( display => 'on',  latex => '{  lpr( 0 )  =  0  =  \varnothing  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'X'."\n".
                       'X'."\n",
                         '\\\\'."\n".
                       ''))), */
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 1 } haben wir:'."\n".
                       ''))),
@@ -486,12 +486,12 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 1 )  =  *\{ 0 *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 1 )  =  1  =  *\{ 0 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'X'."\n".
                       'X'."\n",
                         '\\\\'."\n".
                       ''))), */
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 2 } haben wir:'."\n".
                       ''))),
@@ -503,12 +503,12 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 2 )  =  *\{ 0, 1, 2, 8, 16, 32, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 2 )  =  3  =  *\{ 0, 1, 2 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'X'."\n".
                       'X'."\n",
                         '\\\\'."\n".
                       ''))), */
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 4 } haben wir:'."\n".
                       ''))),
@@ -520,12 +520,12 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 4 )  =  *\{ 0, 1, 4, 16, 64, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 4 )  =  2  =  *\{ 0, 1 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'X'."\n".
                       'X'."\n",
                         '\\\\'."\n".
                       ''))), */
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 6 = 5\overline{\#} = 4\overline{\#} } haben wir:'."\n".
                       ''))),
@@ -536,12 +536,12 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 6 )  =  *\{ 0, 1, 2, 3, 4, 6, 8, 9, 12, 16, 18, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 6 )  =  5  =  *\{ 0, 1, 2, 3, 4 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'X'."\n".
                       'X'."\n",
                         '\\\\'."\n".
                       ''))), */
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 9 } haben wir:'."\n".
                       ''))),
@@ -553,12 +553,12 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 9 )  =  *\{ 0, 1, 9, 81, 729, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 9 )  =  2  =  *\{ 0, 1 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'X'."\n".
                       'X'."\n",
                         '\\\\'."\n".
                       ''))), */
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 10 } haben wir:'."\n".
                       ''))),
@@ -570,12 +570,12 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 10 )  =  *\{ 0, 1, 2, 4, 5, 8, 10, 16, 20, \\\ \qquad\qquad\qquad\qquad\qquad\qquad 25, 32, 40, 50, 64, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 10 )  =  3  =  *\{ 0, 1, 2 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'X'."\n".
                       'X'."\n",
                         '\\\\'."\n".
                       ''))), */
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 18 } haben wir:'."\n".
                       ''))),
@@ -587,12 +587,12 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 18 )  =  *\{ 0, 1, 2, 4, 8, 9, 16, 18, 32, \\\ \qquad\qquad\qquad\qquad\qquad\qquad 36, 64, 72, 81, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 18 )  =  3  =  *\{ 0, 1, 2 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'X'."\n".
                       'X'."\n",
                         '\\\\'."\n".
                       ''))), */
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 20 } haben wir:'."\n".
                       ''))),
@@ -604,12 +604,12 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 20 )  =  *\{ 0, 1, 4, 5, 16, 20, 25, 64, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 20 )  =  2  =  *\{ 0, 1 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'X'."\n".
                       'X'."\n",
                         '\\\\'."\n".
                       ''))), */
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 30 = 7\overline{\#} = 6\overline{\#} } haben wir:'."\n".
                       ''))),
@@ -621,12 +621,12 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 30 )  =  *\{ 0, 1, 2, 3, 4, 5, 6, 8, 9, 10, \\\ \qquad\qquad\qquad\qquad\qquad 12, 15, 16, 18, 20, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 30 )  =  7  =  *\{ 0, 1, 2, 3, 4, 5, 6 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'X'."\n".
                       'X'."\n",
                         '\\\\'."\n".
                       ''))), */
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Für die Zahl \lm{ 210 = 11\overline{\#} = 10\overline{\#} = 9\overline{\#} = 8\overline{\#} } haben wir:'."\n".
                       ''))),
@@ -637,12 +637,12 @@
                       array( display => 'on',  latex => '{  \Leftrightarrow  pr( 210 )  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \\\ \qquad\qquad\qquad\qquad\qquad\qquad 12, 14, 15, 16, 18, 20, \cdots *\}  }'),
                       array( display => 'on',  latex => '{  lpr( 210 )  =  11  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 *\}  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'X'."\n".
                       'X'."\n",
                         '\\\\'."\n".
                       ''))), */
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Wenn die Primzahlprodukt-Vermutung stimmt, dann gilt:'."\n",
                         'Für die Zahl \lm{ ω ?= ω\overline{\#} } haben wir:'."\n".
@@ -655,7 +655,7 @@
                                           label_name => 'OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega', label_text => '\name{OM:SupNum:Primzahlprodukt-Vermutung:Vortext:Equ-pr-MengenPrimfakultaet-omega}', label_incr => true),
                       array( display => 'on',  latex => '{  lpr\!*( ω\overline{\#} *)  =  *\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \cdots *\} \\\ \qquad\qquad\qquad\qquad\qquad\qquad  =  \mathbb{N}  =  ω  }'),
                     ))),
-                  /* array( 'text', array( Shape  => 'derivation', text => array(
+                  /* array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'X'."\n".
                       'X'."\n",
                         '\\\\'."\n".
