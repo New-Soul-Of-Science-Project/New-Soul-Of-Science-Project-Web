@@ -361,6 +361,22 @@
         'OM:SupNum:Primzahlprodukt-Vermutung:ExperimentelleGedankenZuAnderenBeweiswegen' => array( headline_text => 'Experimentelle Gedanken zu anderen Beweiswegen'/* , headline_text_short => 'X'*/),
       ),
     ),
+    'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen' => array(
+      url_abs => 'https://nsosp.org/de/Superial-Zahlen/Sinnvolle-Koeffizienten-Superial-Zahlen.php',
+      url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Sinnvolle-Koeffizienten-Superial-Zahlen.php',
+      titel => 'Die sinnvollen Koeffizienten der Superial-Zahlen - Die Superial-Zahlen (SN) - Deutsch',
+      description => '\name[undertitle]{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}. — \name[description]{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}\hidden{.}',
+      keywords => '',
+      text_titel_h1 => 'Die sinnvollen Koeffizienten der Superial-Zahlen',
+      text_titel_short => 'Die sinnvollen Koeffizienten der Superial-Zahlen',
+      text_undertitel_h2 => 'Welche endlichen Zahlen im Produkt mit unserer superialen Basis ergeben aktual unendliche ganze Zahlen',
+      text_titel_discr_h3 => 'Was können uns Ableitungen und Integrale mit Superial-Zahlen darüber verraten, welche Koeffizienten für das superiale Stellenwertsystem sinnvoll sind?',
+      jump_ary => array(
+        'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:<init>' => array( Ani_init => ($FrQFT_g_Ani_idx = 0), Fig_init => ($FrQFT_g_Fig_idx = 0), Vid_init => ($FrQFT_g_Vid_idx = 0)),
+                   
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:X' => array( headline_text => 'X'/* , headline_text_short => 'X'*/),
+      ),
+    ),
     'OM:SupNum:Superiale-Transzendenz-Vermutung' => array(
       url_abs => 'https://nsosp.org/de/Superial-Zahlen/Superiale-Transzendenz-Vermutung.php',
       url_rel => $Glo_PathRel_back.'../de/Superial-Zahlen/Superiale-Transzendenz-Vermutung.php',

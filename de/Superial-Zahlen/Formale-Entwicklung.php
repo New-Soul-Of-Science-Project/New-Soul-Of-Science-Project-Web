@@ -721,7 +721,7 @@
                     ''))),
 
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale'),
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen'),
                     )),
               )
           ); ?>
