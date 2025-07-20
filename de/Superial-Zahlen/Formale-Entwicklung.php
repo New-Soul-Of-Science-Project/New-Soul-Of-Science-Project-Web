@@ -247,7 +247,7 @@
                     'nur durch Eins und durch sich selber ganzzahlig teilbar sind, wie auch sonst bei Primzahlen üblich.'."\n".
                     ''))),
 
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Es existiere also die Menge'."\n".
                       ''))),
@@ -255,7 +255,7 @@
                     array( equ_text_std => 'SN.Form.P', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \exists \mathbb{S}_{\P}\!: *( \forall x \in \mathbb{S}_{\N}^{+}\!: *( \forall n \in \mathbb{S}_{\N}^{+} \setminus *\{ 1, x *\} *) *[ n \nmid x *] \\\ \qquad\qquad\qquad\qquad\qquad\qquad\quad  \Rightarrow  x \in \mathbb{S}_{\P} *)  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'aller superialen Primzahlen.'."\n",
                         '\\\\'."\n".
                       ''))),
@@ -621,7 +621,7 @@
                     'Eine etwas allgemeinere Definition der Intervall-Menge eines Intervalls\footnote{Internet: \\\\ Vgl. \cite{wiki:IntervallMathematik:2023}.} aus einer angeordneten Zahlenmenge:'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Seien \lm{ \lbrack a, b \rbrack_\mathbb{T} }, \lm{ \lbrack a, b \lbrack_\mathbb{T} }, \lm{ \rbrack a, b \rbrack_\mathbb{T} }'."\n".
                       'und \lm{ \rbrack a, b \lbrack_\mathbb{T} } die Mengen der folgenden Intervalle von \lm{ a } bis \lm{ b } aus der Menge \lm{ \mathbb{T} }'."\n".
@@ -633,7 +633,7 @@
                       array( display => 'on',  latex => '{  ] a, b ]_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a < x \leq b *]  *\}  }'),
                       array( display => 'on',  latex => '{  ] a, b [_\mathbb{T}  :=  *\{  x  ~\middle|~  *( \forall x \in \mathbb{T} *) *( a, b \in \mathbb{T} *) *[ a < x < b *]  *\}  \;\; ,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'so können wir flexibel Intervall-Mengen definieren.'."\n",
                         '\\\\'.
                       ''))),
@@ -647,7 +647,7 @@
                     'mit Summen zu definieren.'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Seien \lm{ \lbrack b, a \rbrack_\mathbb{T} }, \lm{ \lbrack b, a \lbrack_\mathbb{T} }, \lm{ \rbrack b, a \rbrack_\mathbb{T} }'."\n".
                       'und \lm{ \rbrack b, a \lbrack_\mathbb{T} } die Mengen der folgenden Intervalle von \lm{ b } bis \lm{ a } aus der Menge \lm{ \mathbb{T} } definieren.'."\n".
@@ -662,7 +662,7 @@
                       array( display => 'on',  latex => '{  ] b, a ]_\mathbb{T}  =  [ a, b [_\mathbb{T}  }'),
                       array( display => 'on',  latex => '{  ] b, a [_\mathbb{T}  =  ] a, b [_\mathbb{T}  \;\; ,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und so muss lediglich berücksichtigt werden, welche Elemente nicht in der Intervall-Mengen vorkommen sollen.'."\n",
                         '\\\\'.
                       ''))),
@@ -678,7 +678,7 @@
                     'Dies ist dann im Besonderen für die \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Definitionen von Integralen} von Bedeutung.'."\n".
                     ''))),
                       
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       '\\\\'."\n".
                       'Seien \lm{ \lbrack b, a \rbrack_\mathbb{T} }, \lm{ \lbrack b, a \lbrack_\mathbb{T} }, \lm{ \rbrack b, a \rbrack_\mathbb{T} }'."\n".
                       'und \lm{ \rbrack b, a \lbrack_\mathbb{T} } die Mengen der folgenden Intervalle von \lm{ b } bis \lm{ a } aus der Menge \lm{ \mathbb{T} }'."\n".
@@ -695,7 +695,7 @@
                       array( display => 'on',  latex => '{  \sum_{ i \in ] b, a ]_\mathbb{T} } f(i)  =  - \sum_{ i \in [ a, b [_\mathbb{T} } f(i)  }'),
                       array( display => 'on',  latex => '{  \sum_{ i \in ] b, a [_\mathbb{T} } f(i)  =  - \sum_{ i \in ] a, b [_\mathbb{T} } f(i)  \;\; ,  }'),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', text => array(
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'und so muss nicht nur berücksichtigt werden, welche Elemente nicht in der Intervall-Mengen vorkommen sollen,'."\n".
                       'sondern auch, dass sich bei einer Summe, deren Intervall-Menge mit dem größeren Element zuerst definiert ist,'."\n".
                       'das Vorzeichen umdreht.'."\n",
