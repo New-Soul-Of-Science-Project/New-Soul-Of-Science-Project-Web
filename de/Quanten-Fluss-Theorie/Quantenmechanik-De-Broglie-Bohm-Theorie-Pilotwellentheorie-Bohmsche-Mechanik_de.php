@@ -43,25 +43,25 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                    'Spätestens seit Anfang 2003xxx ist mir aufgefallen, dass die Quanten-Fluss-Theorie Eigenschaften besitzt, die einen anderen Blick auf die Erscheinungen der'."\n".
+                    'Spätestens seit Anfang 2003 ist mir aufgefallen, dass die Quanten-Fluss-Theorie Eigenschaften besitzt, die einen anderen Blick auf die Erscheinungen der'."\n".
                     'Quantenmechanik eröffnen.'."\n".
                     'Ich las damals das Buch ›Geheime Botschaften‹ von Simon Singh, in dem es auch um Quantenkryptographie\footnote{Vgl. \cite{Singh:GeheimeBotschaften:2020}, 8 Ein Quantensprung in die Zukunft, Quantenkryptographie, S. 400-421. \\\\ Internet: \\\\ Vgl. \cite{wiki:Quantenkryptographie:2020}.}'."\n".
                     'geht.\footnote{\cite{Singh:GeheimeBotschaften:2020}, 8 Ein Quantensprung in die Zukunft, S. 383-421.}'."\n".
-                    'Um die Erklärung der Quantenkryptographie vorzubereiten geht Singh auf die Erscheinungen der Quantenwelt, deren Erklärung durch die QuantenmechanikXXX'."\n".
+                    'Um die Erklärung der Quantenkryptographie vorzubereiten geht Singh auf die Erscheinungen der Quantenwelt, deren Erklärung durch die Quantenmechanik\color{*Bearb}{(Verweis)}'."\n".
                     'und wiederum deren Interpretation ein.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:X', text =>
                       
                 'Das Doppelspaltexperiment mit einzelnen Photonen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Singh nimmt dabei das DoppelspaltexperimentXXX als exemplarisch für die spektakulären Phänomene der QuantenphysikXXX, wie es oft so üblich ist.'."\n".
+                    'Singh nimmt dabei das Doppelspaltexperiment\color{*Bearb}{(Verweis)} als exemplarisch für die spektakulären Phänomene der Quantenphysik\color{*Bearb}{(Verweis)}, wie es oft so üblich ist.'."\n".
                     'Spektakulär deshalb, weil Singh schließlich die Ausführung des Experiments mit einer Quelle einzelner Photonen – Lichtteilchen – pro Zeit betrachtet.'."\n".
                     'Er erklärt, dass sich auf dem Schirm ergebene Muster unterscheidet sich auch in dem Fall nicht im Ergebnis, wenn einzelne Photonen nacheinander, also nicht zeitgleich,'."\n".
                     'durch die beiden Spalte fliegen, vom dem Muster, wenn Myriaden gleichzeitig durch die Spalte fliegen und auf den Schirm treffen.'."\n",
                       'Bei den Myriaden gleichzeitiger Photonen wird argumentiert, sie würden  einander in Interferenz überlagern.'."\n".
                     'Genauer gesagt, durch ihre Welleneigenschaften würden sich, entsprechend der Quantenmechanik, die Wellen ihrer statistischen Aufenthaltswahrscheinlichkeiten überlagern,'."\n".
                     'Wodurch sich das Interferenzmuster auf dem Schirm ergibt.'."\n",
-                      'Bei einzelnen Photonen sei dies nicht anders, obwohl die späteren Photonen noch nicht einmal im Glühdraht der Lampe entstanden sind, erklärt die heutige Physik.XXX'."\n".
+                      'Bei einzelnen Photonen sei dies nicht anders, obwohl die späteren Photonen noch nicht einmal im Glühdraht der Lampe entstanden sind, erklärt die heutige Physik.\color{*Bearb}{(Verweis)}'."\n".
                     'Das fand ich doch schon sehr mysteriös.'."\n".
                     'Zumal das Wahrscheinlichkeits-Interferenzmuster, nach langläufiger Ansicht der Physiker, nichts mit realen physikalischen Erscheinungen zu tun haben soll.'."\n"))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:X', text =>
@@ -70,7 +70,7 @@
                   'Ein Interferenzmuster im Vakuum')),
                   array( 'text', array( text => array(
                     'Ich stellte mir die Frage, wie es wohl wäre, wenn Informationen über den Aufbau des Experiments an jeder Stelle im Raum bekannt wären.'."\n".
-                    'Mir kam das Bild eines Interferenzmusters in der Struktur des Vakuums zwischen der Spaltblende und dem Schirm (siehe XXX).'."\n".
+                    'Mir kam das Bild eines Interferenzmusters in der Struktur des Vakuums zwischen der Spaltblende und dem Schirm (siehe \color{*Bearb}{(Link)}).'."\n".
                     'Dieses sollte mit der Existenz der Lichtteilchen nichts zu tun haben, außer, dass die Frequenz ähnlich wäre, bestimmt durch den experimentellen Aufbau.'."\n",
                       'In meiner Fantasie wurde es durch die Bestandteile des Vakuums selber und durch die Struktur der Doppelspaltblende erzeugt.'."\n".
                     'Dieses Muster sollte dann die Bahnen der Photonen beeinflussen.'."\n".
@@ -91,7 +91,7 @@
                   'Die Führungswelle beziehungsweise Pilotwelle')),
                   array( 'text', array( text => array(
                     'In der hier beschriebenen Quanten-Fluss-Theorie sind die Elementarteilchen ins Vakuum und seine Wellen eingebettet.'."\n".
-                    'Dies ist etwas anders, als in der De-Broglie-Bohm-Theorie, in der die Elementarteilchen von der Führungswelle oder Pilotwelle getrennt erscheinen.XXX'."\n",
+                    'Dies ist etwas anders, als in der De-Broglie-Bohm-Theorie, in der die Elementarteilchen von der Führungswelle oder Pilotwelle getrennt erscheinen.\color{*Bearb}{(Verweis)}'."\n",
                       '(\color{*Bearb}{In Arbeit …})'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:FrQFT:De-Broglie-Bohm-Theorie:Vortext:X', text =>
