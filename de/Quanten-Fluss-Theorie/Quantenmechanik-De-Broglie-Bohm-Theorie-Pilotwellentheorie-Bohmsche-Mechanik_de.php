@@ -38,6 +38,8 @@
                     '• Die FrQFT gibt der Heisenbergschen Unschärferelation einen realen Hintergrund mit der \jump{OM:FrQFT:HeisenbergUnschaerfe}{Abzählinterpretation der Heisenbergschen Unschärferelation}.',
                     '\bold{Veranschaulichung durch bekannte Effekte}',
                     '• Der Casimir-Effekt\footnote{Vgl. \cite{wiki:CasimirEffekt2012}.} hat im Grunde die gleiche Ursache, wie die Elapsonen-Fluss-Projektionen.',
+                    '\bold{Aktuelle Forschung}',
+                    '• Sabine Hossenfelder – \jump[https://www.youtube.com/watch?v=DvpSnmRnHr0]{}{Neues Experiment schließt Bohmsche Mechanik aus. Das ist ernst.}.',
                     ))),
                       
                   array( 'text', array( text => array(
