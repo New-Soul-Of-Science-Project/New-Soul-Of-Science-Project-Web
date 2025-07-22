@@ -264,7 +264,7 @@
                   array( 'text', array( text => array(
                     'Damit haben wir bewiesen, dass unsere Lösung die Wurzel aus Zwei als Bruch aus ganzen Zahlen darstellt,'."\n".
                     'wenn der Nenner und der Zähler unendlich groß, im Bereich der vollständigen Induktion, sind.'."\n",
-                      'Für die \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen}{Wurzel aus Zwei im Zusammenhang mit den natürlichen Superial-Zahlen}'."\n".
+                      'Für die \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen}{Wurzel aus Zwei im Zusammenhang mit den natürlichen Superial-Zahlen}'."\n".
                     'hat dies eine wichtige Bedeutung.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ueberrationalitaetsvermutung:Vortext:X', text =>

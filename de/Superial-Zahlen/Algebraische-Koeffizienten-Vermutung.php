@@ -79,11 +79,11 @@
                       // array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  }',
                       //                     label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  *| \sqrt[x]{ n } \,|*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => false),
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'Der Beweis mündet in die beispielhafte Formel \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Wurzel-Zwei-mal-Zwei-hoch-omega-durch-Zwei-hoch-omega}'."\n".
-                    'und die allgemeine Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}.'."\n".
+                    'und die allgemeine Formel \jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}.'."\n".
                     'Er zeigt, dass für die Frage, wie kann jede ganzzahlige Wurzel aus einer positiven natürlichen Zahl als ganzzahliger Bruch darstellen werden,'."\n".
                     'im Endlichen keine Antwort existiert.'."\n".
                     'Diese Antwort gibt es nur mit aktual unendlich großem Nenner und Zähler, sehen wir nun im Beweis.'."\n",
@@ -99,8 +99,8 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.AKV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \s  :\in  \mathbb{S}_{\N}  }',
-                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-xte-Wurzel-n-mal-s-ist-in-SN}', label_incr => false),
+                      array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN}', label_incr => false),
                     ))),
                   array( 'text', array( text => array(
                     'zu einer natürlichen unendlich großen Zahl, in der nur die Schicht \lm{ \s^{1} } belegt ist.'."\n".

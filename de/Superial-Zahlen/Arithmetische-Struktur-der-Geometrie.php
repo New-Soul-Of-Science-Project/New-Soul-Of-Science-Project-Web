@@ -520,7 +520,7 @@
                     'Dies ist sehr bemerkenswert und lässt uns einige neue Erkenntnisse in der Zahlentheorie und'."\n".
                     'bezüglich der arithmetischen Struktur der Geometrie gewinnen.'."\n".
                     'Es zeigt uns, auf welche Weise die Wurzeln in das fraktale Teilungsgewebe der Geometrie eingewoben sind.'."\n",
-                      'Wie oben erwähnt, gilt dies für alle Radikale der irrationalen algebraischen Zahlen, was wir ja an \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Durch-Radikale-darstellbare-algebraischen-Zahlen-sinnvolle-Koeffizienten-SZ}{anderer Stelle zeigen},'."\n".
+                      'Wie oben erwähnt, gilt dies für alle Radikale der irrationalen reell algebraischen Zahlen, was wir ja an \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{anderer Stelle zeigen},'."\n".
                     'also für deren Summen, Produkte, Brüche und endlichen ganzzahligen Potenzen.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Einleitung:Vortext:X', text =>

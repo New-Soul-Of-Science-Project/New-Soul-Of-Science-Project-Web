@@ -282,11 +282,11 @@
                       'Hingegen mussten wir erst aufwendiger beweisen, dass auch alle Wurzeln der natürlichen Zahlen als Koeffizienten,'."\n".
                     'wie \lm{ \sqrt{2} \cdot \s }, auch sämtlich ganze Zahlen sind, wie wir im \jump{OM:SupNum:Einleitung:FragestellungenErkenntnisgewinn:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung} sehen.'."\n".
                     'Auf diesen Beweis aufbauend zeigen wir weiter, dass selbst alle durch Radikale\footnote{\const{SupNum_g_footnote_text_DurchRadikaleDarAlgZ}}'."\n".
-                    '– also \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Durch-Radikale-darstellbare-algebraischen-Zahlen-sinnvolle-Koeffizienten-SZ}{Wurzeln und deren arithmetischen Verknüpfungen} –'."\n".
-                    'darstellbaren realen Koeffizienten der algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
+                    '– also \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ}{Wurzeln und deren arithmetischen Verknüpfungen} –'."\n".
+                    'darstellbaren reellen algebraischen Zahlen\footnote{\const{SupNum_g_footnote_text_AlgebraischeZahl}}'."\n".
                     'sämtlich im oben erklärten Sinn sinnvolle Koeffizienten von \lm{ \s } sind und im Produkt immer ganze Zahlen sind.'."\n".
                     'Es bleibt derzeit noch die Frage offen, ob wirklich alle'."\n".
-                    'realen Koeffizienten der algebraischen Zahlen als Koeffizienten von \lm{ \s } ganze Zahlen im Produkt mit \lm{ \s } ergeben.'."\n".
+                    'reell algebraischen Zahlen als Koeffizienten von \lm{ \s } ganze Zahlen im Produkt mit \lm{ \s } ergeben.'."\n".
                     'Dies Vermuten wir auf der Seite \italic{›\jumpname{OM:SupNum:Algebraische-Koeffizienten-Vermutung}‹}.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:Integration:X', text =>

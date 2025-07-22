@@ -201,205 +201,31 @@
                     'Dies gibt uns im Lichte der hier auch entwickelten \jump{OM:SupNum:Ableitungen-Integrale}{Ableitungen und Integrale} mit Superial-Zahlen den Hinweis,'."\n".
                     'dass die Koeffizienten der algebraischen Zahlen tatsächlich zu den Superial-Zahlen gehören.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Durch-Radikale-darstellbare-algebraischen-Zahlen-sinnvolle-Koeffizienten-SZ', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ', text =>
                       
-                'Durch Radikale darstellbare algebraischen Zahlen sind sinnvolle Koeffizienten der Superial-Zahlen', subline =>
-                  'Das Ergebnis des Beweises der Überrationalitätsvermutung')),
-                  array( 'text', array( text => array(
-                    'Um die Sache weiter systematisch anzugehen hatte ich die Idee, mich als nächstes mit den irrationalen Radikalen der'."\n".
-                    'algebraischen Zahlen zu beschäftigen, den ganzzahligen Wurzeln aus ganzen Zahlen, die irrationale Zahlen ergeben.'."\n",
-                      'Wenn die irrationalen algebraischen Zahlen, die durch Radikale darstellbar sind, im Produkt mit unserem \lm{ \s }'."\n".
-                    'aktual unendlich große ganze Zahlen ergeben sollen, um sinnvolle Koeffizienten der Superial-Zahlen zu sein,'."\n".
-                    'dann muss jedes dieser irrationalen Radikale einem Bruch aus'."\n".
-                    'aktual unendlich großem ganzen Nenner und Zähler entsprechen.'."\n".
-                    'Die Faktoren im Nenner und Zähler, die jeweils die Ganzzahligkeit erzeugen, müssen ebenso Faktoren im Primzahl-Flächenprodukt von \lm{ \s } sein,'."\n".
-                    'damit \lm{ \s } als Faktor auch diese Ganzzahligkeit erzeugen kann.'."\n",
-                      'Genau das zeigen wir mit dem \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung} und'."\n".
-                    'entdecken Zusammenhänge, die mir ganz neu erscheinen.'."\n",
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen}{}Die Wurzel aus Zwei und die natürlichen Superial-Zahlen} \\\\'."\n".
-                    'Wir erkennen im Speziellen, dass wir den Faktor \lm{ 2^{ω} } im Primzahl-Flächenprodukt von \lm{ \s } finden,'."\n".
-                    'der aus der zweiten Wurzel aus Zwei \lm{ *| \sqrt[2]{ 2 } |* = 2^{\frac{1}{2}} } eine aktual unendlich große ganze Zahl macht:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \cdot 2^{ω}  \in  \mathbb{N}_{\infty}  }',
-                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-mal-2-hoch-omega-element-N-infinity}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{ω + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  \;\; ,  }',
-                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-2-hoch-omega+einhalb-element-N-infinity}', label_incr => false),
-                    ))),
-                  array( 'text', array( text => array(
-                    'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen gilt'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} \setminus *\{ 0 *\} *)  *[  ω + q  :\neq  ω  *]  \;\; .  }',
-                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-omega-plus-q-ungleich-omega}', label_incr => false),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Weil dieser Faktor auch in \lm{ \s } steckt, erkennen wir weiter, dass dann auch \lm{ \s } im Produkt mit der'."\n".
-                    'zweiten Wurzel aus Zwei eine aktual unendlich große ganze Zahl sein muss und dann die zweite Wurzel aus Zwei'."\n".
-                    'ein sinnvoller Koeffizient der Superial-Zahlen ist:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \s  \in  \mathbb{N}_{\infty}  }'),
-                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \s  :\in  \mathbb{S}_{\N}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Die Lösung nach der oben aufgeworfenen Frage eines überrationalen Bruchs aus aktual unendlich großem'."\n".
-                    'Nenner und Zähler sieht in diesem Fall wie folgt aus:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *| \sqrt{ 2 } |*  =  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} }  }',
-                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Wurzel-Zwei-mal-Zwei-hoch-omega-durch-Zwei-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  }',
-                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega}', label_incr => false),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Das vollständige Kürzen von \lm{ 2^{ω} } macht hier in sofern keinen Sinn, weil dann der Zähler'."\n".
-                    'keine ganze Zahl mehr wäre, was aber gesucht war.'."\n".
-                    'Unsere neue Erkenntnis zeigt uns jedoch, dass wir den Faktor Zwei im Zähler und Nenner so oft kürzen oder hinzufügen können,'."\n".
-                    'solange es aktual unendlich viele Zweien in der Potenz bleiben, ohne den Wahrheitsgehalt der Aussage zu verändern,'."\n".
-                    'was im Folgenden sehr wichtig wird.'."\n",
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\condb{Die \lm{ x }-te Wurzel aus \lm{ n } und die natürlichen Superial-Zahlen} \\\\'."\n".
-                    'Im ganz allgemeinen Fall der \lm{ x }-ten Wurzel aus \lm{ n } wie \lm{ *| \sqrt[x]{ n } |* = n^{\frac{1}{x}} }'."\n".
-                    'stellt sich die Sache wie folgt dar'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }} \cdot n^{ω}  \in  \mathbb{N}_{\infty}  }',
-                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-omega-mal-n-hoch-eins-durch-x-in-natuerlich-infinit}', label_incr => false),
-                      array( display => 'on',  latex => '{  n^{ω}  \in  \mathbb{N}_{\infty}  }',
-                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-omega-in-natuerlich-infinit}', label_incr => false),
-                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \ge 2 *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot n^{ω} }{ n^{ω} }  *]  }',
-                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-mal-n-hoch-eins-durch-x-durch-n-hoch-omega}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{ω + \frac{ 1 }{ x }} }{ n^{ω} }  }',
-                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-plus-n-hoch-eins-durch-x-durch-n-hoch-omega}', label_incr => false),
-                    ))),
-                  array( 'text', array( text => array(
-                    'und im unterschied zum vorhergehenden Beispiel ist es so, dass die natürliche Zahl \lm{ n } wegen des Fundamentalsatzes der Arithmetik\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerArithmetik}}'."\n".
-                    'eine Primfaktorzerlegung haben kann, in der einzelne Primzahlen in höheren Potenzen als Eins vorkommen können:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \exists k_{i} \in \mathbb{N} *) *( \forall p_{i} \in \mathbb{P} *)  *[  n  =  p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots  *]  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Dies hat zur Folge, dass \lm{ n } in der Potenz der vollständigen Induktion \lm{ n^{ω} } kein Teiler der superialen Basis \lm{ \s } ist'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{ω}  =  *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{ω}  =  p_{1}^{k_{1} ω} \cdot p_{2}^{k_{2} ω} \cdot p_{3}^{k_{3} ω} \cdot p_{4}^{k_{4} ω} \cdot \cdots  }'),
-                      array( display => 'on',  latex => '{  \s  =  p_{1}^{ω} \cdot p_{2}^{ω} \cdot p_{3}^{ω} \cdot p_{4}^{ω} \cdot \cdots  }'),
-                      array( display => 'on',  latex => '{  k_{1} \ge 2 \lor k_{2} \ge 2 \lor k_{3} \ge 2 \lor k_{4} \ge 2 \lor \cdots  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  p_{1}^{k_{1} ω} \cdot p_{2}^{k_{2} ω} \cdot p_{3}^{k_{3} ω} \cdot p_{4}^{k_{4} ω} \cdot \cdots  \nmid  p_{1}^{ω} \cdot p_{2}^{ω} \cdot p_{3}^{ω} \cdot p_{4}^{ω} \cdot \cdots  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{ω}  \nmid  \s  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'und aus diesem Grund können wir aus unseren bisherigen Erkenntnissen nicht folgern, dass \lm{ n^{\frac{ 1 }{ x }} \cdot \s }'."\n".
-                    'immer eine natürliche Superial-Zahl ist und damit alle \lm{ n^{\frac{ 1 }{ x }} } sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n",
-                      'Wir müssen also klären, ob auch die aktual unendlichen Teiler von \lm{ \s }, in Form der Produkte von Primzahlen mit Potenzen der'."\n".
-                    'vollständigen Induktion \lm{ p_{i}^{ω} }, ausreichen, um im Produkt mit diesen Wurzeln immer natürliche Superial-Zahlen zu erzeugen.'."\n".
-                    'Und dazu drücken wir die Wurzel als Bruch von Potenzen der Primzahlen von \lm{ n } aus:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }} \cdot *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{ω} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω} }  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }}  =  \\\ \qquad\qquad\qquad\; \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }} \cdot *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{ω} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω} }  }'),
-                      // array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ p_{1}^{k_{1} *( ω + q *)} \cdot p_{2}^{k_{2} *( ω + q *)} \cdot p_{3}^{k_{3} *( ω + q *)} \cdot p_{4}^{k_{4} *( ω + q *)} \cdot \cdots }{ p_{1}^{k_{1} ω} \cdot p_{2}^{k_{2} ω} \cdot p_{3}^{k_{3} ω} \cdot p_{4}^{k_{4} ω} \cdot \cdots }  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Separieren wir die Produkte nach den Faktoren der einzelnen Primzahlpotenzen \lm{ p_{i}^{k_{i}} } in \lm{ n }, dann sieht das Bild folgendermaßen aus'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  =  \frac{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{ω} }{ *( p_{i}^{k_{i}} *)^{ω} }  }'),
-                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{ω}  \in  \mathbb{N}_{\infty}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'und es stellt sich die Frage, ob für jede separate Primzahlpotenz nicht als Faktor auch die'."\n".
-                    'einfache vollständige Induktion in der Potenz \lm{ p_{i}^{ω} } ausreicht, um die Wurzel \lm{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} }'."\n".
-                    'zu einer ganzen Zahl zu machen'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  ?=  \frac{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω} }{ p_{i}^{ω} }  }'),
-                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω}  ?\in  \mathbb{N}_{\infty}  \;\; ,  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'denn nur dann, wenn das gegeben ist, ist auch jede dieser Wurzeln im Produkt mit unserer superialen Basis \lm{ \s }'."\n".
-                    'eine aktual unendlich große natürliche Superial-Zahl, weil \lm{ \s } eben „nur“ jede Primzahl in'."\n".
-                    'einfacher vollständiger Induktionen \lm{ p_{i}^{ω} } enthält:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  p_{i}^{ω}  \parallel  \s  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  \parallel  \rad(n)^{ω}  }'),
-                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Dabei stellt \lm{ \rad(n) } ein Produkt aller Primzahlen in \lm{ n } in einfacher Potenz dar und'."\n".
-                    '\lm{ \rad(n)^{ω} } teilt daher des Primzahl-Flächenprodukt von \lm{ \s } exakt.'."\n",
-                      'Wie oben gesagt stellen wir im Beweis der Überrationalitätsvermutung fest, dass'."\n".
-                    'wir in der Wahl der aktual unendlich großen ganzen Potenz von \lm{ n } frei sind,'."\n".
-                    'um die überrationalen Brüche der \lm{ x }-ten Wurzeln aus \lm{ n } darzustellen,'."\n".
-                    'solange die Potenz größer bleibt, als jede endliche natürliche Zahl – also solange sie nicht endlich wird.'."\n".
-                    'Das haben wir schon in Formel \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-mal-n-hoch-eins-durch-x-in-natuerlich-infinit}'."\n".
-                    'für die aktual unendliche Potenz \lm{ g } gefunden:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall i \in \mathbb{N} *) *( \forall g \in \mathbb{N}_{\infty} *) *( i < g *)  *[  n^{\frac{ 1 }{ x }} \cdot n^{g}  \in  \mathbb{N}_{\infty}  *]  }',
-                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-mal-n-hoch-eins-durch-x-in-natuerlich-infinit}', label_incr => false),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{g}  \in  \mathbb{N}_{\infty}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{k_{i} \cdot g}  \in  \mathbb{N}_{\infty}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'So können wir für \lm{ k_{i} \cdot g } auch die vollständige Induktion \lm{ ω } einsetzen'."\n".
-                    'und damit den Exponenten des Primzahl-Flächenprodukts unserer superialen Basis \lm{ \s } verwenden'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω}  \in  \mathbb{N}_{\infty}  \;\; ,  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'was wunderbarerweise genau die Eigenschaft ist, die wir an dieser Stelle für sinnvolle Koeffizienten der Superial-Zahlen benötigen.'."\n",
-                      'So ergeben sich dann folgende Aussagen für die \lm{ x }-te Wurzel aus \lm{ n }:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \rad(n)^{ω}  \in  \mathbb{N}_{\infty}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *| \sqrt[x]{ n } |*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
-                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => true),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{N}_{\infty}  }'),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Damit sind alle durch Radikale darstellbaren algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen:'."\n",
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \s  :\in  \mathbb{S}_{\N}  }',
-                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-xte-Wurzel-n-mal-s-ist-in-SN', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Equ-xte-Wurzel-n-mal-s-ist-in-SN}', label_incr => true),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Dies ist sehr bemerkenswert und stößt eine neue Tür für das Verständnis von irrationalen Zahlen und für'."\n".
-                    'die Nützlichkeit der Superial-Zahlen auf.'."\n".
-                    ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
-                      
-                'Alle algebraischen Zahlen auf Grundlage von Kombinationen von radikalen algebraischen Zahlen durch Grundrechenarten sowie deren ganze Potenzen sind sinnvolle Koeffizienten der Superial-Zahlen', subline =>
+                'Alle Radikalformen sind sinnvolle Koeffizienten der Superial-Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Wir werden nachfolgen zeigen, dass tatsächlich alle Kombinationen von radikalen algebraischen Zahlen mit den Grundrechenarten und'."\n".
-                    'ganzer Potenzen im Produkt mit der superialen Basis \lm{ \s } aktual unendlich große ganze Zahlen und damit'."\n".
+                    'Wir werden nachfolgen zeigen, dass tatsächlich alle Radikalformen, also Kombinationen von reell algebraischen Wurzeln mit den Grundrechenarten und'."\n".
+                    'ganzer Potenzen, im Produkt mit der superialen Basis \lm{ \s } aktual unendlich große ganze Zahlen und damit'."\n".
                     'sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Alle Radikale sind sinnvolle Koeffizienten der Superial-Zahlen} \\\\'."\n".
+                    'Der Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} liefert uns den Ansatz'."\n".
+                    'im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten}‹} zu zeigen,'."\n".
+                    'dass alle Wurzeln beziehungsweise alle Radikale der reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen sind:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| \sqrt[x]{ n } |*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Eine folgenreiche Erkenntnis, die uns im weiteren ermöglicht, dies auch für fast alle anderen Radikalformen zu zeigen.'."\n".
+                    'Nur für die verschachtelten Wurzelausdrücke werden wir größeren Aufwand betreiben müssen.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{\anchor{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Kehrwerte-der-Wurzeln}{}Die Kehrwerte der Wurzeln} \\\\'."\n".
@@ -626,7 +452,7 @@
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'eine natürliche Superial-Zahl, dann'."\n".
-                      'helfen uns die Einsichten aus dem Abschnitt \italic{\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Durch-Radikale-darstellbare-algebraischen-Zahlen-sinnvolle-Koeffizienten-SZ}}.'."\n".
+                      'helfen uns die Einsichten aus dem Abschnitt \italic{\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten}}.'."\n".
                       'Denn wir können die Basis jedes Faktoren vor \lm{ \s } wegen des Fundamentalsatzes der Arithmetik\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerArithmetik}}'."\n".
                       'in ihre Primzahlpotenzen zerlegen und gegebenenfalls neu zusammenfassen'."\n".
                       ''))),
@@ -1003,13 +829,230 @@
                     ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale'),
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten'),
                     )),
                 )
           ); ?>
 		    	<br>
           <?php To_f_headline_add_hides_end_line(); ?>
           
+
+          <!  • Radikale sind sinnvolle Koeffizienten  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten',
+              'Das Ergebnis des Beweises der Überrationalitätsvermutung', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Um die Sache weiter systematisch anzugehen hatte ich die Idee, mich als nächstes mit den irrationalen Radikalen der'."\n".
+                    'algebraischen Zahlen zu beschäftigen, den ganzzahligen Wurzeln aus ganzen Zahlen, die irrationale Zahlen ergeben.'."\n",
+                      'Wenn die irrationalen algebraischen Zahlen, die durch Radikale darstellbar sind, im Produkt mit unserem \lm{ \s }'."\n".
+                    'aktual unendlich große ganze Zahlen ergeben sollen, um sinnvolle Koeffizienten der Superial-Zahlen zu sein,'."\n".
+                    'dann muss jedes dieser irrationalen Radikale einem Bruch aus'."\n".
+                    'aktual unendlich großem ganzen Nenner und Zähler entsprechen.'."\n".
+                    'Die Faktoren im Nenner und Zähler, die jeweils die Ganzzahligkeit erzeugen, müssen ebenso Faktoren im Primzahl-Flächenprodukt von \lm{ \s } sein,'."\n".
+                    'damit \lm{ \s } als Faktor auch diese Ganzzahligkeit erzeugen kann.'."\n",
+                      'Genau das zeigen wir mit dem \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung} und'."\n".
+                    'entdecken Zusammenhänge, die mir ganz neu erscheinen.'."\n",
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{\anchor{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen}{}Die Wurzel aus Zwei und die natürlichen Superial-Zahlen} \\\\'."\n".
+                    'Wir erkennen im Speziellen, dass wir den Faktor \lm{ 2^{ω} } im Primzahl-Flächenprodukt von \lm{ \s } finden,'."\n".
+                    'der aus der zweiten Wurzel aus Zwei \lm{ *| \sqrt[2]{ 2 } |* = 2^{\frac{1}{2}} } eine aktual unendlich große ganze Zahl macht:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \cdot 2^{ω}  \in  \mathbb{N}_{\infty}  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-mal-2-hoch-omega-element-N-infinity}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{ω + \frac{ 1 }{ 2 }}  \in  \mathbb{N}_{\infty}  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-2-hoch-omega+einhalb-element-N-infinity}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'wobei \lm{ ω } ein transfiniter Wert ist und nach unseren Axiomen gilt'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.ÜV', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall q \in \mathbb{Q} \setminus *\{ 0 *\} *)  *[  ω + q  :\neq  ω  *]  \;\; .  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-omega-plus-q-ungleich-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Weil dieser Faktor auch in \lm{ \s } steckt, erkennen wir weiter, dass dann auch \lm{ \s } im Produkt mit der'."\n".
+                    'zweiten Wurzel aus Zwei eine aktual unendlich große ganze Zahl sein muss und dann die zweite Wurzel aus Zwei'."\n".
+                    'ein sinnvoller Koeffizient der Superial-Zahlen ist:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  2^{\frac{ 1 }{ 2 }} \s  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  2^{\frac{ 1 }{ 2 }} \s  \in  \mathbb{S}_{\N}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Die Lösung nach der oben aufgeworfenen Frage eines überrationalen Bruchs aus aktual unendlich großem'."\n".
+                    'Nenner und Zähler sieht in diesem Fall wie folgt aus:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *| \sqrt{ 2 } |*  =  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{\frac{ 1 }{ 2 }} \cdot 2^{ω} }{ 2^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Wurzel-Zwei-mal-Zwei-hoch-omega-durch-Zwei-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  2^{\frac{ 1 }{ 2 }}  =  \frac{ 2^{ω + \frac{ 1 }{ 2 }} }{ 2^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-Wurzel-Zwei-gleich-Zwei-hoch-omega-plus-Einhalb-durch-Zwei-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Das vollständige Kürzen von \lm{ 2^{ω} } macht hier in sofern keinen Sinn, weil dann der Zähler'."\n".
+                    'keine ganze Zahl mehr wäre, was aber gesucht war.'."\n".
+                    'Unsere neue Erkenntnis zeigt uns jedoch, dass wir den Faktor Zwei im Zähler und Nenner so oft kürzen oder hinzufügen können,'."\n".
+                    'solange es aktual unendlich viele Zweien in der Potenz bleiben, ohne den Wahrheitsgehalt der Aussage zu verändern,'."\n".
+                    'was im Folgenden sehr wichtig wird.'."\n",
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Die \lm{ x }-te Wurzel aus \lm{ n } und die natürlichen Superial-Zahlen} \\\\'."\n".
+                    ''))),
+
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{Fragen}',
+                    '• Die scheinbar viel elegantere Lösung dieser Herleitung aus dem Abschnitt \jumpname{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:Dies-gilt-fuer-alle-Wurzeln} vielleicht hier einführen?',
+                    ))),
+
+                  array( 'text', array( text => array(
+                    'Im ganz allgemeinen Fall der \lm{ x }-ten Wurzel aus \lm{ n } wie \lm{ *| \sqrt[x]{ n } |* = n^{\frac{1}{x}} }'."\n".
+                    'stellt sich die Sache wie folgt dar'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ x }} \cdot n^{ω}  \in  \mathbb{N}_{\infty}  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-omega-mal-n-hoch-eins-durch-x-in-natuerlich-infinit}', label_incr => false),
+                      array( display => 'on',  latex => '{  n^{ω}  \in  \mathbb{N}_{\infty}  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-omega-in-natuerlich-infinit}', label_incr => false),
+                      array( display => 'on',  latex => '{  *( \forall n, x \in \mathbb{N}^{+} *) *( n, x \ge 2 *)  *[  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot n^{ω} }{ n^{ω} }  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-mal-n-hoch-eins-durch-x-durch-n-hoch-omega}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ n^{ω + \frac{ 1 }{ x }} }{ n^{ω} }  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-eins-durch-x-gleich-n-hoch-omega-plus-n-hoch-eins-durch-x-durch-n-hoch-omega}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und im unterschied zum vorhergehenden Beispiel ist es so, dass die natürliche Zahl \lm{ n } wegen des Fundamentalsatzes der Arithmetik\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerArithmetik}}'."\n".
+                    'eine Primfaktorzerlegung haben kann, in der einzelne Primzahlen in höheren Potenzen als Eins vorkommen können:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \exists k_{i} \in \mathbb{N} *) *( \forall p_{i} \in \mathbb{P} *)  *[  n  =  p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots  *]  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dies hat zur Folge, dass \lm{ n } in der Potenz der vollständigen Induktion \lm{ n^{ω} } kein Teiler der superialen Basis \lm{ \s } ist'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{ω}  =  *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{ω}  =  p_{1}^{k_{1} ω} \cdot p_{2}^{k_{2} ω} \cdot p_{3}^{k_{3} ω} \cdot p_{4}^{k_{4} ω} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \s  =  p_{1}^{ω} \cdot p_{2}^{ω} \cdot p_{3}^{ω} \cdot p_{4}^{ω} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  k_{1} \ge 2 \lor k_{2} \ge 2 \lor k_{3} \ge 2 \lor k_{4} \ge 2 \lor \cdots  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  p_{1}^{k_{1} ω} \cdot p_{2}^{k_{2} ω} \cdot p_{3}^{k_{3} ω} \cdot p_{4}^{k_{4} ω} \cdot \cdots  \nmid  p_{1}^{ω} \cdot p_{2}^{ω} \cdot p_{3}^{ω} \cdot p_{4}^{ω} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{ω}  \nmid  \s  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und aus diesem Grund können wir aus unseren bisherigen Erkenntnissen nicht folgern, dass \lm{ n^{\frac{ 1 }{ x }} \cdot \s }'."\n".
+                    'immer eine natürliche Superial-Zahl ist und damit alle \lm{ n^{\frac{ 1 }{ x }} } sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n",
+                      'Wir müssen also klären, ob auch die aktual unendlichen Teiler von \lm{ \s }, in Form der Produkte von Primzahlen mit Potenzen der'."\n".
+                    'vollständigen Induktion \lm{ p_{i}^{ω} }, ausreichen, um im Produkt mit diesen Wurzeln immer natürliche Superial-Zahlen zu erzeugen.'."\n".
+                    'Und dazu drücken wir die Wurzel als Bruch von Potenzen der Primzahlen von \lm{ n } aus:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }} \cdot *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{ω} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω} }  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }}  =  \\\ \qquad\qquad\qquad\; \frac{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{\frac{ 1 }{ x }} \cdot *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot \cdots *)^{ω} }{ *( p_{1}^{k_{1}} \cdot p_{2}^{k_{2}} \cdot p_{3}^{k_{3}} \cdot p_{4}^{k_{4}} \cdot \cdots *)^{ω} }  }'),
+                      // array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ x }}  =  \frac{ p_{1}^{k_{1} *( ω + q *)} \cdot p_{2}^{k_{2} *( ω + q *)} \cdot p_{3}^{k_{3} *( ω + q *)} \cdot p_{4}^{k_{4} *( ω + q *)} \cdot \cdots }{ p_{1}^{k_{1} ω} \cdot p_{2}^{k_{2} ω} \cdot p_{3}^{k_{3} ω} \cdot p_{4}^{k_{4} ω} \cdot \cdots }  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Separieren wir die Produkte nach den Faktoren der einzelnen Primzahlpotenzen \lm{ p_{i}^{k_{i}} } in \lm{ n }, dann sieht das Bild folgendermaßen aus'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  =  \frac{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{ω} }{ *( p_{i}^{k_{i}} *)^{ω} }  }'),
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{ω}  \in  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'und es stellt sich die Frage, ob für jede separate Primzahlpotenz nicht als Faktor auch die'."\n".
+                    'einfache vollständige Induktion in der Potenz \lm{ p_{i}^{ω} } ausreicht, um die Wurzel \lm{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} }'."\n".
+                    'zu einer ganzen Zahl zu machen'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }}  ?=  \frac{ *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω} }{ p_{i}^{ω} }  }'),
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω}  ?\in  \mathbb{N}_{\infty}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'denn nur dann, wenn das gegeben ist, ist auch jede dieser Wurzeln im Produkt mit unserer superialen Basis \lm{ \s }'."\n".
+                    'eine aktual unendlich große natürliche Superial-Zahl, weil \lm{ \s } eben „nur“ jede Primzahl in'."\n".
+                    'einfacher vollständiger Induktionen \lm{ p_{i}^{ω} } enthält:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  p_{i}^{ω}  \parallel  \s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \s  \parallel  \rad(n)^{ω}  }'),
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ x }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dabei stellt \lm{ \rad(n) } ein Produkt aller Primzahlen in \lm{ n } in einfacher Potenz dar und'."\n".
+                    '\lm{ \rad(n)^{ω} } teilt daher des Primzahl-Flächenprodukt von \lm{ \s } exakt.'."\n",
+                      'Wie oben gesagt stellen wir im Beweis der Überrationalitätsvermutung fest, dass'."\n".
+                    'wir in der Wahl der aktual unendlich großen ganzen Potenz von \lm{ n } frei sind,'."\n".
+                    'um die überrationalen Brüche der \lm{ x }-ten Wurzeln aus \lm{ n } darzustellen,'."\n".
+                    'solange die Potenz größer bleibt, als jede endliche natürliche Zahl – also solange sie nicht endlich wird.'."\n".
+                    'Das haben wir schon in Formel \jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-mal-n-hoch-eins-durch-x-in-natuerlich-infinit}'."\n".
+                    'für die aktual unendliche Potenz \lm{ g } gefunden:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall i \in \mathbb{N} *) *( \forall g \in \mathbb{N}_{\infty} *) *( i < g *)  *[  n^{\frac{ 1 }{ x }} \cdot n^{g}  \in  \mathbb{N}_{\infty}  *]  }',
+                                          label_text => '\jumpname{OM:SupNum:Ueberrationalitaetsvermutung:Vortext:Equ-n-hoch-g-mal-n-hoch-eins-durch-x-in-natuerlich-infinit}', label_incr => false),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot *( p_{i}^{k_{i}} *)^{g}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{k_{i} \cdot g}  \in  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'So können wir für \lm{ k_{i} \cdot g } auch die vollständige Induktion \lm{ ω } einsetzen'."\n".
+                    'und damit den Exponenten des Primzahl-Flächenprodukts unserer superialen Basis \lm{ \s } verwenden'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( p_{i}^{k_{i}} *)^{\frac{ 1 }{ x }} \cdot p_{i}^{ω}  \in  \mathbb{N}_{\infty}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'was wunderbarerweise genau die Eigenschaft ist, die wir an dieser Stelle für sinnvolle Koeffizienten der Superial-Zahlen benötigen.'."\n",
+                      'So ergeben sich dann folgende Aussagen für die \lm{ x }-te Wurzel aus \lm{ n }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{1}{x}} \cdot \rad(n)^{ω}  \in  \mathbb{N}_{\infty}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *| \sqrt[x]{ n } |*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => true),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{N}_{\infty}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Damit sind alle durch Radikale darstellbaren algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen:'."\n",
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.R', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dies ist sehr bemerkenswert und stößt eine neue Tür für das Verständnis von irrationalen Zahlen und für'."\n".
+                    'die Nützlichkeit der Superial-Zahlen auf.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale'),
+                    )),
+              )
+          ); ?>
+
 
 		    	<!  • X  >
           <?php /* To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
