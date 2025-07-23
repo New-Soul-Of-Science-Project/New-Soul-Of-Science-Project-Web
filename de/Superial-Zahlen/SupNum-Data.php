@@ -375,7 +375,9 @@
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega' => array( headline_text => 'SN.SinK.R.24'),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN' => array( headline_text => 'SN.SinK.R.26'),
 
-        'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:XXX' => array( headline_text => 'XXX'/* , headline_text_short => 'X' */),
+        'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten' => array( headline_text => 'Kehrwerte der Radikale sind sinnvolle Koeffizienten'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-gleich-rad-n-hoch-omega-durch-xte-Wurzel-n-mal-rad-n-hoch-omega' => array( headline_text => 'SN.SinK.KR.2'),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-mal-s-ist-in-SN' => array( headline_text => 'SN.SinK.KR.16'),
       ),
     ),
     'OM:SupNum:Superiale-Transzendenz-Vermutung' => array(
