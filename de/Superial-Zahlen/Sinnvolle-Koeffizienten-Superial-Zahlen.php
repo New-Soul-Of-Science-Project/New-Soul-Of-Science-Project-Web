@@ -218,7 +218,7 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *| \sqrt[x]{ n } |*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
+                      array( display => 'on',  latex => '{  *| \sqrt[x]{ n } \,|*  =  n^{\frac{ 1 }{ x }}  =  \frac{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }{ \rad(n)^{ω} }  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-gleich-xte-Wurzel-n-mal-rad-n-hoch-omega-durch-rad-n-hoch-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{1}{x}} \cdot \s  \in  \mathbb{S}_{\N}  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Equ-xte-Wurzel-n-mal-s-ist-in-SN}', label_incr => false),
@@ -234,7 +234,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{- \frac{ 1 }{ x }}  =  \frac{ \rad(n)^{ω} }{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }  }',
+                      array( display => 'on',  latex => '{  *| \sqrt[-x]{ n } \,|*  =  n^{- \frac{ 1 }{ x }}  =  \frac{ \rad(n)^{ω} }{ n^{\frac{ 1 }{ x }} \cdot \rad(n)^{ω} }  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-gleich-rad-n-hoch-omega-durch-xte-Wurzel-n-mal-rad-n-hoch-omega}', label_incr => false),
                       array( display => 'on',  latex => '{  \Rightarrow  n^{- \frac{ 1 }{ x }} \cdot \s  \in  \mathbb{S}_{\N}  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-mal-s-ist-in-SN}', label_incr => false),
@@ -244,50 +244,17 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{\anchor{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{}Ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte} \\\\'."\n".
-                    'Können wir auch für die ganzzahligen Potenzen der Wurzeln und ihrer Kehrwerte bestätigen,'."\n".
-                    'dass ihre Produkte mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen sind.'."\n".
+                    'Im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte}‹} zeigen wir,'."\n".
+                    'dass die Potenzen aller Wurzeln und ihrer Kehrwerte wegen'."\n".
                     ''))),
-
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\\\\'."\n".
-                      'Sei die ganzzahlige Potenz einer Wurzel oder ihres Kehrwerts im Produkt mit der superialen Basis'."\n".
-                      ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad  *[  *( n^{\frac{ 1 }{ y }} *)^{k}  =  n^{\frac{ k }{ y }}  =  *( n^{k} *)^{\frac{ 1 }{ y }}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  \in  \mathbb{S}_{\N}  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-yte-Wurzel-n-hoch-k-mal-s-ist-in-SN}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'eine natürliche Superial-Zahl, dann können wir dies umformen zu'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ k }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{k} *)^{\frac{ 1 }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N}  \;\;,  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'wobei wir sehen, dass wegen'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{k} \in \mathbb{N}^{+} \setminus *\{ 1 *\}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'die neue Basis einfach nur ein anderer natürlicher Radikand \lm{ n^{k} } der Wurzel ist,'."\n".
-                      'so dass unsere anfängliche Aussage'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\;  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'wahr ist.'."\n",
-                        '\\\\'."\n".
-                      ''))),
-
                   array( 'text', array( text => array(
-                    'Wir brauchen uns also um die ganzzahligen Potenzen der Wurzeln oder ihrer Kehrwerte nicht zu sorgen'."\n".
-                    'und weiter zu kümmern.'."\n".
-                    'Sie sind völlig neutral.'."\n".
+                    'ebenfalls allesamt sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Die Produkte von Wurzeln mit gleicher Basis} \\\\'."\n".
@@ -1083,6 +1050,75 @@
                   array( 'text', array( text => array(
                     'Über erlaubte Operationen, die die Ganzzahligkeit unseres Ansatzes erhalten, erreichen wir also'."\n".
                     'die gesuchte Aussage, dass auch die Kehrwerte der \lm{ x }-ten Wurzeln aus \lm{ n } natürliche Superial-Zahlen sind.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Ganzzahlige Potenzen der Radikale und ihrer Kehrwerte  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Können wir auch für die ganzzahligen Potenzen der Wurzeln und ihrer Kehrwerte bestätigen,'."\n".
+                    'dass ihre Produkte mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen sind.'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Sei die ganzzahlige Potenz einer Wurzel oder ihres Kehrwerts im Produkt mit der superialen Basis'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GP', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'eine natürliche Superial-Zahl, dann können wir dies umformen zu'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ k }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{k} *)^{\frac{ 1 }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N}  \;\;,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'wobei wir sehen, dass wegen'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{k} \in \mathbb{N}^{+} \setminus *\{ 1 *\}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'die neue Basis einfach nur ein anderer natürlicher Radikand \lm{ n^{k} } der Wurzel ist,'."\n".
+                      'so dass unsere anfängliche Aussage'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GP', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n, k \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\;  *[  *( n^{\frac{ 1 }{ y }} *)^{k} \cdot \s  \in  \mathbb{S}_{\N}  *]  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-yte-Wurzel-n-hoch-k-mal-s-ist-in-SN', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-yte-Wurzel-n-hoch-k-mal-s-ist-in-SN}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'wahr ist.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Wir brauchen uns also um die ganzzahligen Potenzen der Wurzeln oder ihrer Kehrwerte nicht zu sorgen'."\n".
+                    'und weiter zu kümmern.'."\n".
+                    'Sie sind völlig neutral.'."\n".
                     ''))),
                       
                   array( 'jumplist', array(

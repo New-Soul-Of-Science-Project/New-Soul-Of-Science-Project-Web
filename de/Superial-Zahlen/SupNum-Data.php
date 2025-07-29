@@ -378,6 +378,9 @@
         'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten' => array( headline_text => 'Kehrwerte der Radikale sind sinnvolle Koeffizienten'/* , headline_text_short => 'X' */),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-gleich-rad-n-hoch-omega-durch-xte-Wurzel-n-mal-rad-n-hoch-omega' => array( headline_text => 'SN.SinK.KR.2'),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:KehrwerteRadikaleSinnvolleKoeffizienten:Equ-minus-xte-Wurzel-n-mal-s-ist-in-SN' => array( headline_text => 'SN.SinK.KR.16'),
+
+        'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte' => array( headline_text => 'Ganzzahlige Potenzen der Radikale und ihrer Kehrwerte'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-yte-Wurzel-n-hoch-k-mal-s-ist-in-SN' => array( headline_text => 'SN.SinK.GP.5'),
       ),
     ),
     'OM:SupNum:Superiale-Transzendenz-Vermutung' => array(
