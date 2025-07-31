@@ -257,123 +257,17 @@
                     'ebenfalls allesamt sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Die Produkte von Wurzeln mit gleicher Basis} \\\\'."\n".
-                    'Wie sieht es nun mit den Produkten von Wurzeln, oder von deren Kehrwerten, aus?'."\n".
+                  '\condb{Die Produkte der Wurzeln und ihrer Kehrwerte} \\\\'."\n".
+                    'Auch die Produkte der Wurzeln beziehungsweise ihrer Kehrwerte sind alle sinnvolle Koeffizienten der Superial-Zahlen'."\n".
                     ''))),
-
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\\\\'."\n".
-                      'Sei das Produkt zweier Wurzel beziehungsweise ihres Kehrwerts im Produkt mit der superialen Basis'."\n".
-                      ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\,  *[  n^{\frac{ 1 }{ y }} \cdot n^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\quad\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N}  *]  \;\; ,  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SN}', label_incr => true),
                     ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'eine natürliche Superial-Zahl, dann können wir dies umformen zu'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ z }{ y \cdot z }} \cdot n^{\frac{ y }{ y \cdot z }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ y + z }{ y \cdot z }} \cdot \s  ?\in  \mathbb{S}_{\N}  \;\;,  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'wobei wir sehen, dass wegen'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y \cdot z }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'und weil wir im \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{vorherigen Abschnitt}'."\n".
-                      'geklärt haben, dass ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte im Produkt'."\n".
-                      'mit der superialen Basis natürliche Superial-Zahlen sind'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( n^{\frac{ 1 }{ y \cdot z }} *)^{y + z} \cdot \s  \in  \mathbb{S}_{\N}  \;\;,  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'so ist auch'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\;\;\;\,  *[  n^{\frac{ 1 }{ y }} \cdot n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'wahr.'."\n",
-                        '\\\\'."\n".
-                      ''))),
-
                   array( 'text', array( text => array(
-                    'Wir brauchen uns also um die Produkte der Wurzeln oder ihrer Kehrwerte auch nicht zu sorgen.'."\n".
-                    'Sie sind auch im Produkt mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen.'."\n".
-                    ''))),
-                  array( 'text', array( text => array(
-                  '\condb{Die Produkte von Wurzeln mit unterschiedlicher Basis} \\\\'."\n".
-                    'Wie stellt es sich aber bei den Produkten von Wurzeln, oder von deren Kehrwerten, mit ungleicher Basis dar?'."\n".
-                    ''))),
-
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\\\\'."\n".
-                      'Sei das Produkt zweier Wurzel beziehungsweise ihres Kehrwerts mit unterschiedlicher Basis im Produkt mit der superialen Basis'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( n \neq m *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\qquad\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'eine natürliche Superial-Zahl, dann'."\n".
-                      'helfen uns die Einsichten aus dem Abschnitt \italic{\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten}}.'."\n".
-                      'Denn wir können die Basis jedes Faktoren vor \lm{ \s } wegen des Fundamentalsatzes der Arithmetik\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerArithmetik}}'."\n".
-                      'in ihre Primzahlpotenzen zerlegen und gegebenenfalls neu zusammenfassen'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \exists k_{n,i} \in \mathbb{N} *) *( \forall p_{i} \in \mathbb{P} *)  *[  n  =  p_{1}^{k_{n,1}} \cdot p_{2}^{k_{n,2}} \cdot p_{3}^{k_{n,3}} \cdot p_{4}^{k_{n,4}} \cdot \cdots  *]  }'),
-                      array( display => 'off', latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }}  =  *( p_{1}^{k_{n,1}} \cdot p_{2}^{k_{n,2}} \cdot p_{3}^{k_{n,3}} \cdot p_{4}^{k_{n,4}} \cdot \cdots *)^{\frac{ 1 }{ y }}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }}  =  p_{1}^{\frac{ k_{n,1} }{ y }} \cdot p_{2}^{\frac{ k_{n,2} }{ y }} \cdot p_{3}^{\frac{ k_{n,3} }{ y }} \cdot p_{4}^{\frac{ k_{n,4} }{ y }} \cdot \cdots  }',
-                                    latex_if_visible => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }}  =  p_{1}^{\frac{ k_{n,1} }{ y }} \cdot p_{2}^{\frac{ k_{n,2} }{ y }} \cdot p_{3}^{\frac{ k_{n,3} }{ y }} \cdot p_{4}^{\frac{ k_{n,4} }{ y }} \cdot \cdots  }'),
-                      array( display => 'on',  latex => '{  *( \exists k_{m,i} \in \mathbb{N} *) *( \forall p_{i} \in \mathbb{P} *)  *[  m  =  p_{1}^{k_{m,1}} \cdot p_{2}^{k_{m,2}} \cdot p_{3}^{k_{m,3}} \cdot p_{4}^{k_{m,4}} \cdot \cdots  *]  }'),
-                      array( display => 'off', latex => '{  \Rightarrow  m^{\frac{ 1 }{ z }}  =  *( p_{1}^{k_{m,1}} \cdot p_{2}^{k_{m,2}} \cdot p_{3}^{k_{m,3}} \cdot p_{4}^{k_{m,4}} \cdot \cdots *)^{\frac{ 1 }{ z }}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{m,1} }{ z }} \cdot p_{2}^{\frac{ k_{m,2} }{ z }} \cdot p_{3}^{\frac{ k_{m,3} }{ z }} \cdot p_{4}^{\frac{ k_{m,4} }{ z }} \cdot \cdots  \;\; ,  }',
-                                    latex_if_visible => '{  \Leftrightarrow  m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{m,1} }{ z }} \cdot p_{2}^{\frac{ k_{m,2} }{ z }} \cdot p_{3}^{\frac{ k_{m,3} }{ z }} \cdot p_{4}^{\frac{ k_{m,4} }{ z }} \cdot \cdots  \;\; ,  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'also ergibt sich für unser Produkt'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{n,1} }{ y } + \frac{ k_{m,1} }{ z }} \cdot p_{2}^{\frac{ k_{n,2} }{ y } + \frac{ k_{m,2} }{ z }} \\\ \qquad\qquad\qquad\quad\;\;\; \cdot p_{3}^{\frac{ k_{n,3} }{ y } + \frac{ k_{m,3} }{ z }} \cdot p_{4}^{\frac{ k_{n,4} }{ y } + \frac{ k_{m,4} }{ z }} \cdot \cdots  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{n,1} \cdot z }{ y \cdot z } + \frac{ k_{m,1} \cdot y }{ z \cdot y }} \cdot p_{2}^{\frac{ k_{n,2} \cdot z }{ y \cdot z } + \frac{ k_{m,2} \cdot y }{ z \cdot y }} \\\ \qquad\qquad\qquad\quad\;\;\; \cdot p_{3}^{\frac{ k_{n,3} \cdot z }{ y \cdot z } + \frac{ k_{m,3} \cdot y }{ z \cdot y }} \cdot p_{4}^{\frac{ k_{n,4} \cdot z }{ y \cdot z } + \frac{ k_{m,4} \cdot y }{ z \cdot y }} \cdot \cdots  }'),
-                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{n,1} \cdot z + k_{m,1} \cdot y }{ y \cdot z }} \cdot p_{2}^{\frac{ k_{n,2} \cdot z + k_{m,2} \cdot y }{ y \cdot z }} \\\ \qquad\qquad\qquad\quad\;\;\; \cdot p_{3}^{\frac{ k_{n,3} \cdot z + k_{m,3} \cdot y }{ y \cdot z }} \cdot p_{4}^{\frac{ k_{n,4} \cdot z + k_{m,4} \cdot y }{ y \cdot z }} \cdot \cdots  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }}  =  *( p_{1}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,1} \cdot z + k_{m,1} \cdot y} \cdot *( p_{2}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,2} \cdot z + k_{m,2} \cdot y} \\\ \qquad\qquad\qquad\quad\;\;\; \cdot *( p_{3}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,3} \cdot z + k_{m,3} \cdot y} \cdot *( p_{4}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,4} \cdot z + k_{m,4} \cdot y} \cdot \cdots  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'und wir sehen, dass alle Potenzen rationale Zahlen sind, in Nenner und Zähler also ganze Zahlen haben,'."\n".
-                      'was ganzzahligen Potenzen ganzzahliger Wurzeln, oder deren Kehrwerten, entspricht.'."\n".
-                      'Wir \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{wissen bereits},'."\n".
-                      'dass solche Faktoren von \lm{ \s } in endlicher Anzahl natürliche Superial-Zahlen sind'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( p_{1}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,1} \cdot z + k_{m,1} \cdot y} \cdot *( p_{2}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,2} \cdot z + k_{m,2} \cdot y} \cdot *( p_{3}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,3} \cdot z + k_{m,3} \cdot y} \cdot \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\; \cdot \s  \in  \mathbb{S}_{\N}  \;\; ,  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'und damit erkennen wir, unsere Ausgangsannahme'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\;\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'muss wahr sein.'."\n",
-                        '\\\\'."\n".
-                      ''))),
-
-                  array( 'text', array( text => array(
-                    'Wir brauchen uns also um die Produkte der Wurzeln mit unterschidlicher Basis, oder ihrer Kehrwerten, nicht zu sorgen.'."\n".
-                    'Sie sind auch im Produkt mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen.'."\n".
+                    'wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte}‹}'."\n".
+                    'mit etwas größerem Aufwand zeigen können.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Die Summe einer Wurzel, oder ihres Kehrwerts, mit einer endlichen ganzen Zahlen} \\\\'."\n".
@@ -1122,6 +1016,152 @@
                     ''))),
                       
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Produkte der Radikale und ihrer Kehrwerte  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                  'Nun interessiert uns, ob auch die Produkte der Wurzeln und ihrer Kehrwerte sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
+                  'Um einen Einstieg zu finden, schauen wir uns erst Wurzeln und deren Kehrwerte mit gleicher Basis an.'."\n".
+                  ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Die Produkte der Wurzeln mit gleicher Basis} \\\\'."\n".
+                    'Wie sieht es nun mit den Produkten von Wurzeln, oder von deren Kehrwerten, aus?'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Sei das Produkt zweier Wurzeln beziehungsweise ihres Kehrwerts mit gleicher Basis im Produkt mit der superialen Basis'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\,  *[  n^{\frac{ 1 }{ y }} \cdot n^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'eine natürliche Superial-Zahl, dann können wir dies umformen zu'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ z }{ y \cdot z }} \cdot n^{\frac{ y }{ y \cdot z }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ y + z }{ y \cdot z }} \cdot \s  ?\in  \mathbb{S}_{\N}  \;\;,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'wobei wir sehen, dass wegen'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y \cdot z }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'und weil wir im \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{vorherigen Abschnitt}'."\n".
+                      'geklärt haben, dass ganzzahlige Potenzen der Wurzeln und ihrer Kehrwerte im Produkt'."\n".
+                      'mit der superialen Basis natürliche Superial-Zahlen sind'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( n^{\frac{ 1 }{ y \cdot z }} *)^{y + z} \cdot \s  \in  \mathbb{S}_{\N}  \;\;,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'so ist auch'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\;\;\;\,  *[  n^{\frac{ 1 }{ y }} \cdot n^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'wahr.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Wir brauchen uns also um die Produkte der Wurzeln oder ihrer Kehrwerte auch nicht zu sorgen.'."\n".
+                    'Sie sind auch im Produkt mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Die Produkte der Wurzeln mit unterschiedlicher Basis} \\\\'."\n".
+                    'Wie stellt es sich aber bei den Produkten von Wurzeln, oder von deren Kehrwerten, mit ungleicher Basis dar?'."\n".
+                    ''))),
+
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Sei das Produkt zweier Wurzel beziehungsweise ihres Kehrwerts mit unterschiedlicher Basis im Produkt mit der superialen Basis'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( n \neq m *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\qquad\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'eine natürliche Superial-Zahl, dann'."\n".
+                      'helfen uns die Einsichten aus dem Abschnitt \italic{\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten}}.'."\n".
+                      'Denn wir können die Basis jedes Faktoren vor \lm{ \s } wegen des Fundamentalsatzes der Arithmetik\footnote{\const{SupNum_g_footnote_text_FundamentalsatzDerArithmetik}}'."\n".
+                      'in ihre Primzahlpotenzen zerlegen und gegebenenfalls neu zusammenfassen'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \exists k_{n,i} \in \mathbb{N} *) *( \forall p_{i} \in \mathbb{P} *)  *[  n  =  p_{1}^{k_{n,1}} \cdot p_{2}^{k_{n,2}} \cdot p_{3}^{k_{n,3}} \cdot p_{4}^{k_{n,4}} \cdot \cdots  *]  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }}  =  *( p_{1}^{k_{n,1}} \cdot p_{2}^{k_{n,2}} \cdot p_{3}^{k_{n,3}} \cdot p_{4}^{k_{n,4}} \cdot \cdots *)^{\frac{ 1 }{ y }}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }}  =  p_{1}^{\frac{ k_{n,1} }{ y }} \cdot p_{2}^{\frac{ k_{n,2} }{ y }} \cdot p_{3}^{\frac{ k_{n,3} }{ y }} \cdot p_{4}^{\frac{ k_{n,4} }{ y }} \cdot \cdots  }',
+                                    latex_if_visible => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }}  =  p_{1}^{\frac{ k_{n,1} }{ y }} \cdot p_{2}^{\frac{ k_{n,2} }{ y }} \cdot p_{3}^{\frac{ k_{n,3} }{ y }} \cdot p_{4}^{\frac{ k_{n,4} }{ y }} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  *( \exists k_{m,i} \in \mathbb{N} *) *( \forall p_{i} \in \mathbb{P} *)  *[  m  =  p_{1}^{k_{m,1}} \cdot p_{2}^{k_{m,2}} \cdot p_{3}^{k_{m,3}} \cdot p_{4}^{k_{m,4}} \cdot \cdots  *]  }'),
+                      array( display => 'off', latex => '{  \Rightarrow  m^{\frac{ 1 }{ z }}  =  *( p_{1}^{k_{m,1}} \cdot p_{2}^{k_{m,2}} \cdot p_{3}^{k_{m,3}} \cdot p_{4}^{k_{m,4}} \cdot \cdots *)^{\frac{ 1 }{ z }}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{m,1} }{ z }} \cdot p_{2}^{\frac{ k_{m,2} }{ z }} \cdot p_{3}^{\frac{ k_{m,3} }{ z }} \cdot p_{4}^{\frac{ k_{m,4} }{ z }} \cdot \cdots  \;\; ,  }',
+                                    latex_if_visible => '{  \Leftrightarrow  m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{m,1} }{ z }} \cdot p_{2}^{\frac{ k_{m,2} }{ z }} \cdot p_{3}^{\frac{ k_{m,3} }{ z }} \cdot p_{4}^{\frac{ k_{m,4} }{ z }} \cdot \cdots  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'also ergibt sich für unser Produkt'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{n,1} }{ y } + \frac{ k_{m,1} }{ z }} \cdot p_{2}^{\frac{ k_{n,2} }{ y } + \frac{ k_{m,2} }{ z }} \\\ \qquad\qquad\qquad\quad\;\;\; \cdot p_{3}^{\frac{ k_{n,3} }{ y } + \frac{ k_{m,3} }{ z }} \cdot p_{4}^{\frac{ k_{n,4} }{ y } + \frac{ k_{m,4} }{ z }} \cdot \cdots  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{n,1} \cdot z }{ y \cdot z } + \frac{ k_{m,1} \cdot y }{ z \cdot y }} \cdot p_{2}^{\frac{ k_{n,2} \cdot z }{ y \cdot z } + \frac{ k_{m,2} \cdot y }{ z \cdot y }} \\\ \qquad\qquad\qquad\quad\;\;\; \cdot p_{3}^{\frac{ k_{n,3} \cdot z }{ y \cdot z } + \frac{ k_{m,3} \cdot y }{ z \cdot y }} \cdot p_{4}^{\frac{ k_{n,4} \cdot z }{ y \cdot z } + \frac{ k_{m,4} \cdot y }{ z \cdot y }} \cdot \cdots  }'),
+                      array( display => 'off', latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }}  =  p_{1}^{\frac{ k_{n,1} \cdot z + k_{m,1} \cdot y }{ y \cdot z }} \cdot p_{2}^{\frac{ k_{n,2} \cdot z + k_{m,2} \cdot y }{ y \cdot z }} \\\ \qquad\qquad\qquad\quad\;\;\; \cdot p_{3}^{\frac{ k_{n,3} \cdot z + k_{m,3} \cdot y }{ y \cdot z }} \cdot p_{4}^{\frac{ k_{n,4} \cdot z + k_{m,4} \cdot y }{ y \cdot z }} \cdot \cdots  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }}  =  *( p_{1}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,1} \cdot z + k_{m,1} \cdot y} \cdot *( p_{2}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,2} \cdot z + k_{m,2} \cdot y} \\\ \qquad\qquad\qquad\quad\;\;\; \cdot *( p_{3}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,3} \cdot z + k_{m,3} \cdot y} \cdot *( p_{4}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,4} \cdot z + k_{m,4} \cdot y} \cdot \cdots  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'und wir sehen, dass alle Potenzen rationale Zahlen sind, in Nenner und Zähler also ganze Zahlen haben,'."\n".
+                      'was ganzzahligen Potenzen ganzzahliger Wurzeln, oder deren Kehrwerten, entspricht.'."\n".
+                      'Wir \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Ganzzahlige-Potenzen-der-Wurzeln}{wissen bereits},'."\n".
+                      'dass solche Faktoren von \lm{ \s } in endlicher Anzahl natürliche Superial-Zahlen sind'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( p_{1}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,1} \cdot z + k_{m,1} \cdot y} \cdot *( p_{2}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,2} \cdot z + k_{m,2} \cdot y} \cdot *( p_{3}^{\frac{ 1 }{ y \cdot z }} *)^{k_{n,3} \cdot z + k_{m,3} \cdot y} \cdot \cdots \\\ \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\;\; \cdot \s  \in  \mathbb{S}_{\N}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'und damit erkennen wir, unsere Ausgangsannahme'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.PR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  *( \forall n, m \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) \\\ \qquad\qquad\qquad\qquad\quad\;\;\;\,  *[  n^{\frac{ 1 }{ y }} \cdot m^{\frac{ 1 }{ z }} \cdot \s  \in  \mathbb{S}_{\N}  *]  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SN', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SN}', label_incr => true),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'muss wahr sein.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'Wir brauchen uns also um die Produkte der Wurzeln mit unterschidlicher Basis, oder ihrer Kehrwerten, nicht zu sorgen.'."\n".
+                    'Sie sind auch im Produkt mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen.'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Ableitungen-Integrale'),
                     )),
               )
@@ -1154,7 +1194,7 @@
                   ''))),
                       
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:NatuerlicheSZ'),
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale'),
                     )),
               )
           ); */ ?>

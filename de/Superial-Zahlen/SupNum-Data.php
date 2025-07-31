@@ -381,6 +381,9 @@
 
         'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte' => array( headline_text => 'Ganzzahlige Potenzen der Radikale und ihrer Kehrwerte'/* , headline_text_short => 'X' */),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GanzzahligePotenzenRadikaleKehrwerte:Equ-yte-Wurzel-n-hoch-k-mal-s-ist-in-SN' => array( headline_text => 'SN.SinK.GP.5'),
+
+        'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte' => array( headline_text => 'Produkte der Radikale und ihrer Kehrwerte'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:Equ-yte-Wurzel-n-mal-zte-Wurzel-m-mal-s-ist-in-SN' => array( headline_text => 'SN.SinK.PR.19'),
       ),
     ),
     'OM:SupNum:Superiale-Transzendenz-Vermutung' => array(
