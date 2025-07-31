@@ -4,10 +4,16 @@
   // #: Name:  "Tools.php"
   
   
-  // #: Stand: 25.06.2025, 22:00h
+  // #: Stand: 31.07.2025, 22:00h
 
   // #: History: (!: changed, incompatible; >: developed, compatible but is a real change; +: new, compatible; -: remove, compatible; *: fixed, compatible)
   
+  //           20250731:  +:  "To_f_Text_replace":  Make "$text" an optional parameter by setting "$text=''".
+  //                      +:  "To_f_Paragraph":  Make "$text" an optional parameter by setting "$text=''".
+  //                      +:  "To_f_Paragraph_list_v1":  Make "$Paragraph_fn" an optional parameter by setting "$Paragraph_fn=null" and "$list" by setting "$list=array()".
+  //                      +:  "To_f_Paragraph_list":  Make "$list" an optional parameter by setting "$list=array()".
+  //                      +:  "To_f_Chapter_v1":  Make "$headline_name" an optional parameter by setting "$headline_name=''".
+  //                      +:  "To_f_Chapter":  Make "$paragraph_list" an optional parameter by setting "$paragraph_list=array()".
   //           20250625:  +:  "To_f_Paragraph":  Make "$text" an optional parameter by setting "$text=''".
   //           20250506:  >:  "To_f_Paragraph" type "youtube":  Change 'iframe' to modern form without cookies.
   //           20250505:  >:  "To_f_Paragraph" type "headline":  Add 'horizontalLineBefore' as boolean parameter.
@@ -1505,7 +1511,7 @@
   }
   
   
-  function To_f_Text_replace( $replace_ary=null, $replace_preg_ary=null, $text)
+  function To_f_Text_replace( $replace_ary=null, $replace_preg_ary=null, $text='')
   {
     echo To_f_Text_replace_html( $replace_ary, $replace_preg_ary, $text);
   }
@@ -1665,7 +1671,7 @@
   const title_chapter = 'title_chapter';
   const title_site = 'title_site';
 
-  function To_f_Paragraph( $type, $replace_ary=null, $replace_preg_ary=null, $offset='            ', $text)
+  function To_f_Paragraph( $type, $replace_ary=null, $replace_preg_ary=null, $offset='            ', $text='')
   {
     global $Glo_PathRel_back, $Glo_g_Site_ary, $Glo_g_Site_activ, $Glo_g_Color_list, $Glo_g_TextAlign, $Glo_g_Paragraph_fn, $Glo_g_Intent, $Glo_g_Intent_InFirstLine, $Glo_g_FigAlign;
     
@@ -2397,18 +2403,19 @@
   }
   
   
-  function To_f_Paragraph_list_v1( $replace_ary=null, $replace_preg_ary=null, $offset='            ', $Paragraph_fn, $list)
+  function To_f_Paragraph_list_v1( $replace_ary=null, $replace_preg_ary=null, $offset='            ', $Paragraph_fn=null, $list=array())
   {
+    if ($Paragraph_fn !== null)
     
-    foreach ($list as $value)
-    {
-      $Paragraph_fn( $value[0], $replace_ary, $replace_preg_ary, $offset, $value[1]);
-    }
+      foreach ($list as $value)
+      {
+        $Paragraph_fn( $value[0], $replace_ary, $replace_preg_ary, $offset, $value[1]);
+      }
     
   }
   
   
-  function To_f_Paragraph_list( $replace_ary=null, $replace_preg_ary=null, $offset='            ', $list)
+  function To_f_Paragraph_list( $replace_ary=null, $replace_preg_ary=null, $offset='            ', $list=array())
   {
     
     foreach ($list as $value)
@@ -2420,7 +2427,7 @@
   
   
   function To_f_Chapter_v1( $replace_ary, $replace_preg_ary, $offset='          ', $display='hideContent',
-                            $headline_name, $headline_addon='', $Paragraph_fn=null, $paragraph_list=null)
+                            $headline_name='', $headline_addon='', $Paragraph_fn=null, $paragraph_list=null)
   {
     global $Glo_g_Site_ary, $Glo_g_Site_activ;
 
@@ -2452,7 +2459,7 @@
   
   
   function To_f_Chapter( $replace_ary=null, $replace_preg_ary=null, $offset='          ', $display='hideContent',
-                          $headline_text='', $headline_text_short='', $headline_name='', $headline_addon='', $paragraph_list)
+                          $headline_text='', $headline_text_short='', $headline_name='', $headline_addon='', $paragraph_list=array())
   {
     To_f_headline_add_hides_begin( $headline_text, $headline_text_short, $headline_name, $offset, $display);
     
