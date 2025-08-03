@@ -582,7 +582,17 @@
                     'von Integralen auftauchen.'."\n".
                     'Im Fall, dass ihre Ergebnisse schon bekannt sind untersuchen wir, ob wir sie auch noch anders ausdrücken können.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins', text =>
+                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:X', text =>
+
+                '\italic{Inhalt}', subline =>
+                  '')),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins'),
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summe-aller-Koeffizienten-von-Null-bis-ausschliesslich-x'),
+                    )),
+
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summen-zur-Integration-von-2x-plus-supkl-Eins', text =>
                       
                 'Summen zur Integration von \lm{ 〈2 x〉․〈1〉 }', subline =>
                   '')),
@@ -910,7 +920,7 @@
                     'ausgeklammert werden kann.'."\n".
                     'Diese Summe lässt sich noch auf weitere Arten umformen.'."\n".
                     ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:X', text =>
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen:Summe-aller-Koeffizienten-von-Null-bis-ausschliesslich-x', text =>
                       
                 'Summe aller Koeffizienten von Null bis ausschließlich \lm{ x }', subline =>
                   '')),
