@@ -18,6 +18,7 @@
               'Bischoff:NeubauDerMathematik:2023',
               'Freistetter:DieFreiheitDerImaginaerenZahlen:2016',
               'Freistetter:DieFreiheitDerMathematik:2016',
+              'Freistetter:WennMathematikZuSchoenIstUmWahrZuSein:2025',
               'Haramein:DieEntschluesselungDesUniversums:2011',
               'Plichta:GottesGeheimeFormel:1995',
               'wiki:AbelscheGruppe:2022',
@@ -72,6 +73,7 @@
               'wiki:Teilerfremdheit:2022',
               'wiki:Teilmenge:2023',
               'wiki:TranszendenteZahl:2023',
+              'wiki:TraumDerSophomores:2024',
               'wiki:Unendlichkeitsaxiom:2021',
               'wiki:VollstaendigeInduktion:2024',
             ));

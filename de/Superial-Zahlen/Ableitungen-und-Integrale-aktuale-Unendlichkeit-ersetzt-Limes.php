@@ -1009,6 +1009,64 @@
                     ))),
                       
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:BesondereAbleitungenUndIntegrale'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Besondere Ableitungen und Integrale  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Ableitungen-Integrale:BesondereAbleitungenUndIntegrale',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:NaehereUntersuchungBestimmterSummen', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Es gibt besondere Gleichungen in Bezug auf Ableitungen und Integrale, die sich zu untersuchen lohnen.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Eigenschaften:StrukturVonS:X', text =>
+
+                '\italic{Inhalt}', subline =>
+                  '')),
+
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Ableitungen-Integrale:BesondereAbleitungenUndIntegrale:TraumDerSophomores'),
+                    )),
+
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Ableitungen-Integrale:BesondereAbleitungenUndIntegrale:TraumDerSophomores', text =>
+                      
+                'Traum der Sophomores', subline =>
+                  '')),
+                      
+                  array( 'notice', array( Display => 'hideContent', text => array(
+                    // '\bold{X}',
+                    '• Der Beweis der Gleichheit ist auch auf \cite{wiki:TraumDerSophomores:2024}, zu finden.',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Der ›Traum der Sophomores‹ ist eine Gleichung, die ein besonderes Integral mit einer im Grunde gleich lautenden Summe gleich setzt.\footnote{\color{*Bearb}{(Primärliteratur einfügen!)} \\\\ Sekundärliteratur: \\\\ Vgl. \cite{Freistetter:WennMathematikZuSchoenIstUmWahrZuSein:2025}. \\\\ Internet: \\\\ Vgl. \cite{wiki:TraumDerSophomores:2024}.}'."\n".
+                    'Nur die Bereiche der Addition und deren Feinheit sind unterschiedlich.'."\n".
+                    'Diese Gleichung gibt es in zwei Varianten:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \int_{0}^{1} x^{-x} \,\mathrm{d}x  =  \sum_{ n = 1 }^{ \infty }  n^{-n}  }'),
+                      array( display => 'on',  latex => '{  \int_{0}^{1} x^{x} \,\mathrm{d}x  =  \sum_{ n = 1 }^{ \infty }  *( -1 *)^{n + 1} n^{-n}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \int_{0}^{1} x^{x} \,\mathrm{d}x  =  - \sum_{ n = 1 }^{ \infty }  *( -n *)^{-n}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Eulersche-Zahl-e-Funktion'),
                     )),
               )
