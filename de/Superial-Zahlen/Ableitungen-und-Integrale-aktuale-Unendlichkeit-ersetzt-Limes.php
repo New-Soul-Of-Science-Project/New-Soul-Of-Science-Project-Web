@@ -1057,7 +1057,7 @@
                     'Diese Gleichung gibt es in zwei Varianten:'."\n".
                     ''))),
                   array( 'equations',
-                    array( equ_text_std => 'SN.AbIn.IN', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                    array( equ_text_std => 'SN.AbIn.BAI', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
                       array( display => 'on',  latex => '{  \int_{0}^{1} x^{-x} \,\mathrm{d}x  =  \sum_{ n = 1 }^{ \infty }  n^{-n}  }'),
                       array( display => 'on',  latex => '{  \int_{0}^{1} x^{x} \,\mathrm{d}x  =  \sum_{ n = 1 }^{ \infty }  *( -1 *)^{n + 1} n^{-n}  }'),
                       array( display => 'on',  latex => '{  \Leftrightarrow  \int_{0}^{1} x^{x} \,\mathrm{d}x  =  - \sum_{ n = 1 }^{ \infty }  *( -n *)^{-n}  }'),
