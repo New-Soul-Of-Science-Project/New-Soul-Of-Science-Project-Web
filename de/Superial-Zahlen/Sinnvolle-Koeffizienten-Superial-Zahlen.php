@@ -910,8 +910,11 @@
                     'Nun interessiert uns, ob auch die Produkte der Wurzeln und ihrer Kehrwerte sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
                     'Um einen Einstieg zu finden, schauen wir uns erst Wurzeln und deren Kehrwerte mit gleicher Basis an.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:X', text =>
+                      
+                'Die Produkte der Wurzeln mit gleicher Basis', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\condb{Die Produkte der Wurzeln mit gleicher Basis} \\\\'."\n".
                     'Wie sieht es nun mit den Produkten von Wurzeln, oder von deren Kehrwerten, aus?'."\n".
                     ''))),
 
@@ -963,8 +966,11 @@
                     'Wir brauchen uns also um die Produkte der Wurzeln oder ihrer Kehrwerte auch nicht zu sorgen.'."\n".
                     'Sie sind auch im Produkt mit der superialen Basis \lm{ \s } natürliche Superial-Zahlen.'."\n".
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:ProdukteRadikaleKehrwerte:X', text =>
+                      
+                'Die Produkte der Wurzeln mit unterschiedlicher Basis', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\condb{Die Produkte der Wurzeln mit unterschiedlicher Basis} \\\\'."\n".
                     'Wie stellt es sich aber bei den Produkten von Wurzeln, oder von deren Kehrwerten, mit ungleicher Basis dar?'."\n".
                     ''))),
 
