@@ -276,18 +276,15 @@
                     ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} *) *( n, m \geq 2 *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, 1 *\} *)  \\\ \qquad\quad *( n^{\frac{ 1 }{ y }} \pm n^{\frac{ 1 }{ z }} \ge 0 *)  *[  *( n^{\frac{ 1 }{ y }} \pm n^{\frac{ 1 }{ z }} *) \cdot \s  \in  \mathbb{S}_{\N}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \pm n^{\frac{ 1 }{ y }} \pm n^{\frac{ 1 }{ z }} *) \cdot \s  =  \pm n^{\frac{ 1 }{ y }} \cdot \s \;\pm\; n^{\frac{ 1 }{ z }} \cdot \s  }'),
                       array( display => 'on',  latex => '{  \Rightarrow  *( \pm n^{\frac{ 1 }{ y }} \pm n^{\frac{ 1 }{ z }} *) \cdot \s  \in  \mathbb{S}_{\Z}  }',
                                           label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-yte-Wurzel-n-plusminus-zte-Wurzel-m-mal-s-ist-in-SN}', label_incr => true),
                     ))),
                   array( 'text', array( text => array(
-                    'sehen, wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte}‹} zeigen.'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'sehen, da wir das Produkt dieser Summe immer in die Summe zweier Produkte aufteilen können, die beide solche ganzen Zahlen sind,'."\n".
+                    'wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte}‹} zeigen.'."\n",
+                      'So ist dann auch der \jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Goldener-Schnitt}{Goldene Schnitt}'."\n".
+                    'ein sinnvoller Koeffizient.'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Geschachtelte Wurzeln mit Summen} \\\\'."\n".
@@ -910,9 +907,9 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                  'Nun interessiert uns, ob auch die Produkte der Wurzeln und ihrer Kehrwerte sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
-                  'Um einen Einstieg zu finden, schauen wir uns erst Wurzeln und deren Kehrwerte mit gleicher Basis an.'."\n".
-                  ''))),
+                    'Nun interessiert uns, ob auch die Produkte der Wurzeln und ihrer Kehrwerte sinnvolle Koeffizienten der Superial-Zahlen sind.'."\n".
+                    'Um einen Einstieg zu finden, schauen wir uns erst Wurzeln und deren Kehrwerte mit gleicher Basis an.'."\n".
+                    ''))),
                   array( 'text', array( text => array(
                   '\condb{Die Produkte der Wurzeln mit gleicher Basis} \\\\'."\n".
                     'Wie sieht es nun mit den Produkten von Wurzeln, oder von deren Kehrwerten, aus?'."\n".
@@ -1056,8 +1053,8 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                  '\color{*Bearb}{(In Arbeit …)}'."\n".
-                  ''))),
+                    'Sind auch die Summen der Wurzeln und ihrer Kehrwerte sinnvolle Koeffizienten der Superial-Zahlen?'."\n".
+                    ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:X', text =>
                       
                 'Die Summe einer Wurzel, oder ihres Kehrwerts, mit einer endlichen ganzen Zahlen', subline =>
@@ -1075,21 +1072,21 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} *) *( n \geq 2 *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, 1 *\} *) *( \forall z \in \mathbb{Z} *)  \\\ \qquad\qquad *( n^{\frac{ 1 }{ y }} + z \ge 0 *)  *[  *( n^{\frac{ 1 }{ y }} + z *) \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} *) *( n \geq 2 *) *( \forall y \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) *( \forall z \in \mathbb{Z} *)  \\\ \qquad\qquad\qquad\;\;\;  *[  *( \pm n^{\frac{ 1 }{ y }} + z *) \cdot \s  ?\in  \mathbb{S}_{\Z}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot \s + z \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{ 1 }{ y }} \cdot \s \;+\; z \cdot \s  ?\in  \mathbb{S}_{\Z}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da beide Summanden aktual unendlich große natürliche oder ganze Superial-Zahlen sind'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  n^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  \pm n^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\Z}  }'),
                       array( display => 'on',  latex => '{  z \cdot \s  \in  \mathbb{S}_{\Z}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1097,7 +1094,7 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  n^{\frac{ 1 }{ y }} \cdot \s + z \cdot \s  \in  \mathbb{S}_{\N}  \;\;,  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  \pm n^{\frac{ 1 }{ y }} \cdot \s \;+\; z \cdot \s  \in  \mathbb{S}_{\Z}  \;\;,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'unter den obigen Bedingungen, immer eine natürliche Superial-Zahl ist, was wir zeigen wollten.'."\n",
@@ -1181,14 +1178,14 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} *) *( n, m \geq 2 *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, 1 *\} *)  \\\ \qquad\quad *( n^{\frac{ 1 }{ y }} \pm n^{\frac{ 1 }{ z }} \ge 0 *)  *[  *( n^{\frac{ 1 }{ y }} \pm n^{\frac{ 1 }{ z }} *) \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
+                      array( display => 'on',  latex => '{  *( \forall n, m \in \mathbb{N}^{+} *) *( n, m \geq 2 *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *)  \\\ \qquad\qquad\qquad  *[  *( \pm n^{\frac{ 1 }{ y }} \;\pm\; n^{\frac{ 1 }{ z }} *) \cdot \s  ?\in  \mathbb{S}_{\Z}  *]  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'zu den natürlichen Superial-Zahlen gehört, dann erhalten wir durch Ausmultiplizieren:'."\n".
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.SR', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ y }} \cdot \s \pm n^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\N}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  \pm n^{\frac{ 1 }{ y }} \cdot \s \;\pm\; n^{\frac{ 1 }{ z }} \cdot \s  ?\in  \mathbb{S}_{\Z}  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
                       'Da beide Summanden ganze Superial-Zahlen sind'."\n".
