@@ -499,8 +499,11 @@
                       'Genau das zeigen wir mit dem \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Beweis der Überrationalitätsvermutung} und'."\n".
                     'entdecken Zusammenhänge, die mir ganz neu erscheinen.'."\n",
                     ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen', text =>
+                      
+                'Die Wurzel aus Zwei und die natürlichen Superial-Zahlen', subline =>
+                  '')),
                   array( 'text', array( text => array(
-                  '\condb{\anchor{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:Wurzel-aus-Zwei-und-natuerliche-Superial-Zahlen}{}Die Wurzel aus Zwei und die natürlichen Superial-Zahlen} \\\\'."\n".
                     'Wir erkennen im Speziellen, dass wir den Faktor \lm{ 2^{ω} } im Primzahl-Flächenprodukt von \lm{ \s } finden,'."\n".
                     'der aus der zweiten Wurzel aus Zwei \lm{ *| \sqrt[2]{ 2 } \,|* = 2^{\frac{1}{2}} } eine aktual unendlich große ganze Zahl macht:'."\n".
                     ''))),
@@ -547,9 +550,10 @@
                     'solange es aktual unendlich viele Zweien in der Potenz bleiben, ohne den Wahrheitsgehalt der Aussage zu verändern,'."\n".
                     'was im Folgenden sehr wichtig wird.'."\n",
                     ''))),
-                  array( 'text', array( text => array(
-                  '\condb{Die \lm{ x }-te Wurzel aus \lm{ n } und die natürlichen Superial-Zahlen} \\\\'."\n".
-                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten:X', text =>
+                      
+                'Die \lm{ x }-te Wurzel aus \lm{ n } und die natürlichen Superial-Zahlen', subline =>
+                  '')),
 
                   array( 'notice', array( Display => 'hideContent', text => array(
                     // '\bold{Fragen}',
