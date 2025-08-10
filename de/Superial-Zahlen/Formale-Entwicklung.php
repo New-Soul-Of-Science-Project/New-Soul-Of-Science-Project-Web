@@ -105,19 +105,20 @@
                   array( 'text', array( text => array(
                     'Wie wir im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen}‹} aufzeigen,'."\n".
                     'ist das Verständnis der ganzen Superial-Zahlen tief mit ihren sinnvollen Koeffizienten verbunden.'."\n".
-                    'Weil dort mehr im Detail erklärt, betrachten wir hier diesen Zusammenhang etwas oberflächlicher.'."\n".
+                    'Weil dort im Detail erklärt, betrachten wir hier diesen Zusammenhang nicht ganz so tief.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Formale-Entwicklung:GanzeSZ:X', text =>
                       
                 'Die ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} }', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Wie könnten ganze Superial-Zahlen nun aussehen?'."\n".
-                    'Wir haben es zuvor ja schon angedeutet:'."\n"))),
+                    'Wie müssen ganze Superial-Zahlen nun aussehen?'."\n".
+                    'Eine Superial-Zahl ist dann ganz, wenn all ihre Summanden ganz sind, was bedeutet:'."\n".
+                    ''))),
                   array( 'bulletlist', array( bullet_ary => array(
-                        'Die Summanden mit negativer Potenz von \lm{ \s } sollten Null sein, damit eine ganze Superial-Zahl eben nicht gebrochen ist.',
-                        'Im endlichen Summanden \lm{ \s^{0} } sollten sie nur ganze Zahlen enthalten, was bedeutet, dass hier auch die Koeffizienten ganze Zahlen sein müssen, weil ihr Stellenwert-Faktor \lm{ \s^{0} = 1 } ist.',
-                        'Die Summanden mit positiven Potenzen von \lm{ \s }, also \lm{ \s^{d} }, mit \lm{ 0 < d }, sollten auch nur ganze Zahlen sein. Hier bedeutet dies aufgrund der aktual unendlichen Größe von \lm{ \s^{d} } aber, dass nur Koeffizienten als Faktoren des potenzierten \jump{OM:SupNum:Arithmetische-Struktur-Geometrie:Vortext:DefinitionSuperialeEinheit}{Primzahl-Flächenprodukts}, das \lm{ \s } entspricht, in Frage kommen, die das Produkt nicht in seiner Größenordnung bezüglich seiner Stelle \lm{ \s^{d} } verändern.',
+                        'Die Summanden mit negativer Potenz von \lm{ \s } sollten nur Null-Koeffizienten haben, damit eine ganze Superial-Zahl eben nicht gebrochen ist.',
+                        'Im endlichen Summanden \lm{ \s^{0} = 1 } sollten demnach nur ganze Koeffizienten enthalten sein.',
+                        'Die Summanden mit positiven Potenzen von \lm{ \s } sollten auch nur ganze Zahlen sein. Das bedeutet, die Koeffizienten können wegen der aktual unendlichen Größe der Basis aus \lm{ \mathbb{A}_{\S} } sein.',
                     ))),
                   array( 'text', array( text => array(
                     'Faktoren, die aus dem Primzahl-Flächenprodukt in diesem Sinne nur Primfaktoren entfernen oder hinzufügen sind zunächst erst einmal ganz klar die rationalen Zahlen.'."\n".
