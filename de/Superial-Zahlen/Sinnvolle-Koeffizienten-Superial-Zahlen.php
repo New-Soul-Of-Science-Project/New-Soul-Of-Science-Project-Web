@@ -1224,6 +1224,119 @@
                     ''))),
                       
                   array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen'),
+                    )),
+              )
+          ); ?>
+
+
+          <!  • Geschachtelte Radikale oder ihre Kehrwerte mit Summen  >
+          <?php To_f_Chapter_v1( $Sc_g_Text_replace_ary, $Sc_g_Text_replace_preg_ary, '          ', 'hideContent',
+            'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen',
+              '', 'Sc_f_Paragraph',
+                array(
+                  array( 'jumplist', array(
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte', type => 'back'),
+                    )),
+                      
+                  array( 'notice', array( Display => 'showContent', text => array(
+                    // '\bold{X}',
+                    // '• X',
+                    ))),
+                      
+                  array( 'text', array( text => array(
+                    'Bisher haben wir noch keine vollständige Radikal-Abgeschlossenheit gezeigt,'."\n".
+                    'da die geschachtelten Radikale und ihre Kehrwerte mit Summen noch fehlen.'."\n",
+                      'In unserer aktuellen Koeffizientenmenge \lm{ \mathbb{A}_{\S,Rad,0} } sind also bisher alle natürlichen Zahlen \lm{ \mathbb{N} },'."\n".
+                    'alle ganzen Zahlen \lm{ \mathbb{Z} }, alle rationalen Zahlen \lm{ \mathbb{Q} } und alle Radikalformen,'."\n".
+                    'ohne geschachtelte Radikale und ihre Kehrwerte mit Summen, enthalten.'."\n",
+                      'Die beliebig geschachtelten Radikale und ihre Kehrwerte mit Summen \lm{ \mathbb{A}_{\S,Rad,ω} } können wir über pythagoreische Tripel der Potenz'."\n".
+                    '\lm{ x \ge 2 } vollständig beschreiben.'."\n".
+                    'Zum einfachen Verständnis beginnen wir dazu mit der Potenz \lm{ x = 2 }'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
+                      
+                'Quadratische pythagoreische Tripel', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a_{s}, b_{s}  \in  \mathbb{A}_{\S,Rad,0}  }'),
+                      array( display => 'on',  latex => '{  c_{s}  ?\in  \mathbb{A}_{\S,Rad,1}  }'),
+                      array( display => 'on',  latex => '{  a  :=  a_{s} \cdot \s  }'),
+                      array( display => 'on',  latex => '{  b  :=  b_{s} \cdot \s  }'),
+                      array( display => 'on',  latex => '{  c  :=  c_{s} \cdot \s  }'),
+                      array( display => 'on',  latex => '{  c^{2}  =  a^{2} + b^{2}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( c_{s} \cdot \s *)^{2}  =  *( a_{s} \cdot \s *)^{2} + *( b_{s} \cdot \s *)^{2}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da \lm{ a_{s} \cdot \s, b_{s} \cdot \s \in \mathbb{S}_{\Z} } sind beide Seiten der Gleichung ebenfalls in \lm{ \mathbb{S}_{\Z} }.'."\n",
+                      'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  c_{s} \cdot \s  =  *( *( a_{s} \cdot \s *)^{2} + *( b_{s} \cdot \s *)^{2} *)^{\frac{ 1 }{ 2 }}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Wir wollen nun beim Umformen nur positive Lösungen der Wurzel betrachten:'."\n",
+                      'Die Wurzel auf der rechten Seite lässt sich beseitigen, indem wir beide Seiten quadrieren:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( c_{s} \cdot \s *)^{2}  =  *( *( *( a_{s} \cdot \s *)^{2} + *( b_{s} \cdot \s *)^{2} *)^{\frac{ 1 }{ 2 }} *)^{2}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c_{s}^{2} \cdot \s^{2}  =  *( a_{s} \cdot \s *)^{2} + *( b_{s} \cdot \s *)^{2}  }'),
+                      array( display => 'on',  latex => '{  a_{s}, b_{s}  \in  \mathbb{A}_{\S}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  a_{s}^{2} + b_{s}^{2}  \in  \mathbb{A}_{\S}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( a_{s} \cdot \s *)^{2} + *( b_{s} \cdot \s *)^{2}  \in  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c_{s}^{2} \cdot \s^{2}  \in  \mathbb{S}_{\Z}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Da es ja darum geht zu beurteilen, ob \lm{ c_{s} \cdot \s \in \mathbb{S}_{\Z} } beziehungsweise \lm{ c_{s} \in \mathbb{A}_{\S} } ist, können wir folgendermaßen argumentieren:'."\n".
+                    'Die Potenz von \lm{ \s } ist grundsätzlich nicht dafür entscheidend, aus einer endlichen Zahl \lm{ c_{s} } in jedem Fall'."\n".
+                    'eine ganze Zahl zu machen, wie wir im Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} und daran anschließend'."\n".
+                    'im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten}‹} im Detail zeigen.'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  c_{s}^{2} \cdot \s  \in  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  *( c_{s}^{2} *)^{\frac{ 1 }{ 2 }} \cdot \s  \in  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c_{s} \cdot \s  \in  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( a_{s}^{2} + b_{s}^{2} *)^{\frac{ 1 }{ 2 }} \cdot \s  \in  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c_{s}  \in  \mathbb{A}_{\S}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( a_{s}^{2} + b_{s}^{2} *)^{\frac{ 1 }{ 2 }}  \in  \mathbb{A}_{\S}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Dieses Argument kann bei verschachtelten Wurzelausdrücken wiederholt angewand werden.'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
+                      
+                'Radikal-Abgeschlossenheit', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
+                      
+                '\color{*Bearb}{(In Arbeit …)}', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                      
+                  array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Ableitungen-Integrale'),
                     )),
               )
@@ -1236,7 +1349,7 @@
               '', 'Sc_f_Paragraph',
                 array(
                   array( 'jumplist', array(
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung', type => 'back'),
+                      array(  jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:X', type => 'back'),
                     )),
                       
                   array( 'notice', array( Display => 'showContent', text => array(
@@ -1245,15 +1358,15 @@
                     ))),
                       
                   array( 'text', array( text => array(
-                  '\color{*Bearb}{(In Arbeit …)}'."\n".
-                  ''))),
-                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:X:X', text =>
                       
                 '\color{*Bearb}{(In Arbeit …)}', subline =>
                   '')),
                   array( 'text', array( text => array(
-                  '\color{*Bearb}{(In Arbeit …)}'."\n".
-                  ''))),
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
                       
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Ableitungen-Integrale'),

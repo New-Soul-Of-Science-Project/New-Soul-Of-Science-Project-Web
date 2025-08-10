@@ -393,6 +393,8 @@
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-goldener-Schnitt-mal-s-in-SN' => array( headline_text => 'SN.SinK.SR.13'),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Summen-von-Wurzeln' => array( headline_text => 'Summen und Differenzen von Wurzeln'/* , headline_text_short => 'X' */),
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-yte-Wurzel-n-plusminus-zte-Wurzel-m-mal-s-ist-in-SN' => array( headline_text => 'SN.SinK.SR.20'),
+
+        'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen' => array( headline_text => 'Geschachtelte Radikale oder ihre Kehrwerte mit Summen'/* , headline_text_short => 'X' */),
       ),
     ),
     'OM:SupNum:Superiale-Transzendenz-Vermutung' => array(
