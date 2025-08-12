@@ -590,7 +590,7 @@
                     ''))),
                   array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen', text =>
                       
-                'Skalierung der superialen Ebene einer Teilmenge der Superial-Zahlen', subline =>
+                'Skalierung der Schichten einer Teilmenge der Superial-Zahlen', subline =>
                   '')),
                   array( 'text', array( text => array(
                     'An einigen Stellen dieser Arbeit'."\n".
