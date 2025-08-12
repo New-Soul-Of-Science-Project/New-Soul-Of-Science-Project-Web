@@ -333,8 +333,8 @@
                   array( 'jumplist', array(
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Zahlen-und-Mengen-im-Unendlichen'),
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem'),
-                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen'),
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen'),
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Superial-Zahlen'),
                     )),
 
@@ -457,6 +457,7 @@
                     'wichtige Eigenschaften der Zahlen näher untersuchen zu können, wie wir später sehen werden.'."\n".
                     'Sie ermöglicht so unter anderem die Definition einer konkreten aktual unendlichen Differentialrechnung, wie oben schon angedeutet.'."\n".
                     ''))),
+
                   // #Ref: *SupNum:Stellenwertsystem-Schreibweise
                   array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem', text =>
                       
@@ -588,32 +589,7 @@
                     'Den neue Unendlichkeits-Gaußklammer benötigen wir sodann auch dabei, die'."\n".
                     '\jump{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Perspektive-Stellenwertsystems-Superial-Zahlen}{sinnvollen Koeffizienten der Superial-Zahlen zu definieren}.'."\n".
                     ''))),
-                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen', text =>
-                      
-                'Skalierung der Schichten einer Teilmenge der Superial-Zahlen', subline =>
-                  '')),
-                  array( 'text', array( text => array(
-                    'An einigen Stellen dieser Arbeit'."\n".
-                    'benötigen wir die Skalierung der superialen Potenzebene einer Teilmenge \lm{ \mathbb{S}_T } der Superial-Zahlen \lm{ \mathbb{S} }:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \mathbb{S}^{y}_{T}  :=  *\{  a  *|*  *( \forall t \in \mathbb{S}_{T} *) *[ a = t \cdot \s^{y} *]  *\}  }',
-                                          label_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren', label_text => '\name{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren}', label_incr => true),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Zum Beispiel ist es im Besonderen bei der \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integration}'."\n".
-                    'notwendig die ganzen Superial-Zahlen \lm{ \mathbb{S}_Z } eine Potenzebene ins superial kleine zu skalieren:'."\n".
-                    ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{S}^{-1}_{Z}  =  *\{  a  *|*  *( \forall z \in \mathbb{S}_{\Z} *) *[ a = z \cdot \s^{-1} *]  *\}  }',
-                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Menge-superial-kleine-ganze-Zahlen}', label_incr => false),
-                    ))),
-                  array( 'text', array( text => array(
-                    'Hierdurch wird eine Menge erzeugt, die es ermöglicht, eine Summe zu definieren, in der superial kleine ganze Zahlen'."\n".
-                    'durchgezählt werden, um superial kleine Flächen zu summieren, die das Integral ergeben.'."\n".
-                    ''))),
+
                   array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge', text =>
                       
                 'Intervall-Menge', subline =>
@@ -706,6 +682,34 @@
                   array( 'text', array( text => array(
                     'Hierdurch ist die Summe mit ihrer Intervall-Menge tief verbunden.'."\n".
                     ''))),
+
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen', text =>
+                      
+                'Skalierung der Schichten einer Teilmenge der Superial-Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'An einigen Stellen dieser Arbeit'."\n".
+                    'benötigen wir die Skalierung der superialen Potenzebene einer Teilmenge \lm{ \mathbb{S}_T } der Superial-Zahlen \lm{ \mathbb{S} }:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}^{y}_{T}  :=  *\{  a  *|*  *( \forall t \in \mathbb{S}_{T} *) *[ a = t \cdot \s^{y} *]  *\}  }',
+                                          label_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren', label_text => '\name{OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen:Equ-Menge-superiale-Ebene-skalieren}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Zum Beispiel ist es im Besonderen bei der \jump{OM:SupNum:Ableitungen-Integrale:Integration}{Integration}'."\n".
+                    'notwendig die ganzen Superial-Zahlen \lm{ \mathbb{S}_Z } eine Potenzebene ins superial kleine zu skalieren:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Form.F', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Rightarrow  \mathbb{S}^{-1}_{Z}  =  *\{  a  *|*  *( \forall z \in \mathbb{S}_{\Z} *) *[ a = z \cdot \s^{-1} *]  *\}  }',
+                                          label_text => '\jumpname{OM:SupNum:Einleitung:Vortext:Equ-Menge-superial-kleine-ganze-Zahlen}', label_incr => false),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hierdurch wird eine Menge erzeugt, die es ermöglicht, eine Summe zu definieren, in der superial kleine ganze Zahlen'."\n".
+                    'durchgezählt werden, um superial kleine Flächen zu summieren, die das Integral ergeben.'."\n".
+                    ''))),
+
                   array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Superial-Zahlen', text =>
                       
                 'Aktual-Unendliche Exponenten der Primzahlen in Superial-Zahlen', subline =>
