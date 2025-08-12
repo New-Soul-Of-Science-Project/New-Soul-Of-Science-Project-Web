@@ -287,126 +287,9 @@
                     'ein sinnvoller Koeffizient.'."\n".
                     ''))),
                   array( 'text', array( text => array(
-                  '\condb{Geschachtelte Wurzeln mit Summen} \\\\'."\n".
-                    '\color{*Bearb}{(Dies ist bisher kein Beweis, sondern eine Analyse, welche Eigenschaften dafür gebraucht werden.)}'."\n",
-                      'Reell algebraische Zahlen ergeben sich auch aus geschachtelten Wurzeln, die Summen enthalten.'."\n".
-                    ''))),
-                      
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      '\\\\'."\n".
-                      'Nehmen wir an, dass eine geschachtelte Wurzel, die eine Summe enthält, im Produkt mit \lm{ \s }'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *[  *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }} \cdot \s  ?\in  \mathbb{S}_{\N}  *]  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'zu den natürlichen Superial-Zahlen gehört.'."\n",
-                        'Die ganzen Zahlen \lm{ n^{\frac{ 1 }{ z }} \cdot \s^{y} } und \lm{ a_{s} \cdot \s^{y} } sind demnach durch den Faktor \lm{ \s^{y} } so groß,'."\n".
-                      'dass sogar aus deren Summe immer die \lm{ y }-te Wurzel gezogen werden kann, so, dass sich immer eine ganze Zahl ergibt, was im Endlichen im Regelfall nicht so ist.'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *[  *( *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s^{y} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{S}_{\N}  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *[  *( n^{\frac{ 1 }{ z }} \cdot \s^{y} + a_{s} \cdot \s^{y} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{S}_{\N}  *]  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Wie können wir die dahinter stehenden Rechenregeln genauer verstehen?'."\n",
-                        'Meine Annahme wäre zunächst, dass es durch die unendlichen Potenzen der Primzahlen der endlichen Faktoren kommt:'."\n".
+                  '\condb{Geschachtelte Wurzeln und ihre Kehrwerte mit Summen} \\\\'."\n".
+                    'Reell algebraische Zahlen ergeben sich auch aus geschachtelten Wurzeln, die Summen enthalten.'."\n",
                       '\color{*Bearb}{(In Arbeit …)}'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *[  *( n^{\frac{ 1 }{ z }} \cdot *( \rad(n)^{ω} *)^{y} + a_{s} \cdot *( \rad*( a_{s} *)^{ω} *)^{y} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{N}_{\infty}  *]  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Wir versuchen es mal mit folgenden Zahlen:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *[  *( 2^{\frac{ 1 }{ 2 }} \cdot *( 2^{ω} *)^{y} + 45 \cdot *( *( 3 \cdot 5 *)^{ω} *)^{y} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{N}_{\infty}  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *[  *( 2^{\frac{ 1 }{ 2 }} \cdot 2^{y \cdot ω} + 3^{2} \cdot 3^{y \cdot ω} \cdot 5^{1} \cdot 5^{y \cdot ω} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{N}_{\infty}  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *[  *( 2^{y \cdot ω + \frac{ 1 }{ 2 }} + 3^{y \cdot ω + 2} \cdot 5^{y \cdot ω + 1} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{N}_{\infty}  *]  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *[  *( 2^{y \cdot *( ω + \frac{ 1 }{ 2 y } *)} + 3^{y \cdot *( ω + \frac{ 2 }{ y } *)} \cdot 5^{y \cdot *( ω + \frac{ 1 }{ y } *)} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{N}_{\infty}  *]  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Pythagoreische Tripel im Endlichen:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a, b, c  \in  \mathbb{N}^{+}  }'),
-                      array( display => 'on',  latex => '{  a^{2} + b^{2}  =  c^{2}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt{ a^{2} + b^{2} } \,|*  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{2} + b^{2} *)^{\frac{ 1 }{ 2 }}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Pythagoreische Tripel im Superialen:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \forall a, b, c  \in  \mathbb{A}_{\S}^{+}  }'),
-                      array( display => 'on',  latex => '{  \forall a \s, b \s, c \s  \in  \mathbb{S}_{\N}^{+}  }'),
-                      array( display => 'on',  latex => '{  a^{2} + b^{2}  =  c^{2}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt{ a^{2} + b^{2} } \,|*  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{2} + b^{2} *)^{\frac{ 1 }{ 2 }}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'In dem Moment, wo wir es ins Superiale skalieren'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( a^{2} + b^{2} *)^{\frac{ 1 }{ 2 }} \cdot \s  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( *( a^{2} + b^{2} *) \cdot \s^{2} *)^{\frac{ 1 }{ 2 }}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( a^{2} \cdot \s^{2} + b^{2} \cdot \s^{2} *)^{\frac{ 1 }{ 2 }}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( *( a \cdot \s *)^{2} + *( b \cdot \s *)^{2} *)^{\frac{ 1 }{ 2 }}  \;\; ,  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'würden die superialen pythagoreischen Tripel \lm{ a \s }, \lm{ b \s } und \lm{ c \s } für alle reell algebraischen Zahlen'."\n".
-                      '\lm{ a }, \lm{ b } und \lm{ c } ganz bleiben.'."\n",
-                        'Dies wäre in sich völlig stimmig.'."\n".
-                      'Demnach bedürfte es dem Ins-Aktual-Unendliche-Gehen, um dort kontinuierliche Tripel zu bekommen, die dann aber doch diskret sind.'."\n",
-                      ''))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Großer Fermatscher Satz im Endlichen:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  *( \nexists a, b, c \in \mathbb{N}^{+} *) *( 2 < n \in \mathbb{N}^{+} *)  *[  a^{n} + b^{n}  =  c^{n}  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt[n]{ a^{n} + b^{n} } \,|*  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{n} + b^{n} *)^{\frac{ 1 }{ n }}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'Fermatsche Tripel im Superialen:'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \forall a, b, c  \in  \mathbb{A}_{\S}^{+}  }'),
-                      array( display => 'on',  latex => '{  \forall a \s, b \s, c \s  \in  \mathbb{S}_{\N}^{+}  }'),
-                      array( display => 'on',  latex => '{  *( \forall a, b, c \in \mathbb{N}^{+} *) *( n \in \mathbb{N}°{+} *)  *[  a^{n} + b^{n}  =  c^{n}  *]  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt[n]{ a^{n} + b^{n} } \,|*  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{n} + b^{n} *)^{\frac{ 1 }{ n }}  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'In dem Moment, wo wir es ins Superiale skalieren'."\n".
-                      ''))),
-                  array( 'equations',
-                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( a^{n} + b^{n} *)^{\frac{ 1 }{ n }} \cdot \s  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( *( a^{n} + b^{n} *) \cdot \s^{n} *)^{\frac{ 1 }{ n }}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( a^{n} \cdot \s^{n} + b^{n} \cdot \s^{n} *)^{\frac{ 1 }{ n }}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( *( a \cdot \s *)^{n} + *( b \cdot \s *)^{n} *)^{\frac{ 1 }{ n }}  \;\; ,  }'),
-                    ))),
-                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
-                      'würden die superialen Fermatschen Tripel \lm{ a \s }, \lm{ b \s } und \lm{ c \s } für alle reell algebraischen Zahlen'."\n".
-                      '\lm{ a }, \lm{ b } und \lm{ c } ganz bleiben.'."\n",
-                        'Dies wäre in sich völlig stimmig.'."\n".
-                      'Demnach bedürfte es dem Ins-Aktual-Unendliche-Gehen, um dort kontinuierliche Tripel zu bekommen, die dann aber doch diskret sind.'."\n",
-                        '\color{*Bearb}{(In Arbeit …)}'."\n",
-                        '\\\\'."\n".
-                      ''))),
-
-                  array( 'text', array( text => array(
-                    '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Nullstellen von Polynomen ersten bis vierten Grades sind sinnvolle Koeffizienten der Superial-Zahlen} \\\\'."\n".
@@ -1249,83 +1132,223 @@
                     'da die geschachtelten Radikale und ihre Kehrwerte mit Summen noch fehlen.'."\n",
                       'In unserer aktuellen Koeffizientenmenge \lm{ \mathbb{A}_{\S,Rad,0} } sind also bisher alle natürlichen Zahlen \lm{ \mathbb{N} },'."\n".
                     'alle ganzen Zahlen \lm{ \mathbb{Z} }, alle rationalen Zahlen \lm{ \mathbb{Q} } und alle Radikalformen,'."\n".
-                    'ohne geschachtelte Radikale und ihre Kehrwerte mit Summen, enthalten.'."\n",
-                      'Die beliebig geschachtelten Radikale und ihre Kehrwerte mit Summen \lm{ \mathbb{A}_{\S,Rad,ω} } können wir über pythagoreische Tripel der Potenz'."\n".
-                    '\lm{ x \ge 2 } vollständig beschreiben.'."\n".
-                    'Zum einfachen Verständnis beginnen wir dazu mit der Potenz \lm{ x = 2 }'."\n".
+                    'ohne geschachtelte Radikale und ihre Kehrwerte mit Summen, enthalten.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
                       
-                'Quadratische pythagoreische Tripel', subline =>
+                'Das beliebig tiefe Aufbrechen verschachtelter Wurzelausdrücke', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Reell algebraische Zahlen ergeben sich auch aus geschachtelten Wurzeln, die Summen enthalten.'."\n".
                     ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Betrachten wir eine geschachtelte Wurzel, die eine Summe enthält'."\n".
+                      ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  a_{s}, b_{s}  \in  \mathbb{A}_{\S,Rad,0}  }'),
-                      array( display => 'on',  latex => '{  c_{s}  ?\in  \mathbb{A}_{\S,Rad,1}  }'),
-                      array( display => 'on',  latex => '{  a  :=  a_{s} \cdot \s  }'),
-                      array( display => 'on',  latex => '{  b  :=  b_{s} \cdot \s  }'),
-                      array( display => 'on',  latex => '{  c  :=  c_{s} \cdot \s  }'),
-                      array( display => 'on',  latex => '{  c^{2}  =  a^{2} + b^{2}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( c_{s} \cdot \s *)^{2}  =  *( a_{s} \cdot \s *)^{2} + *( b_{s} \cdot \s *)^{2}  }'),
+                      array( display => 'on',  latex => '{  *( \forall n \in \mathbb{N}^{+} \setminus *\{ 1 *\} *) *( \forall y, z \in \mathbb{Z} \setminus *\{ 0, \pm 1 *\} *) *( a_{s} \in \mathbb{A}_{\S} *) \\\ \qquad\qquad\qquad\qquad\;\;\;   *[  w_{s}  :=  \sqrt[y]{ \overset{}{ \sqrt[z]{n} } + a_{s} }  *]  \;\; ,  }'),
                     ))),
-                  array( 'text', array( text => array(
-                    'Da \lm{ a_{s} \cdot \s, b_{s} \cdot \s \in \mathbb{S}_{\Z} } sind beide Seiten der Gleichung ebenfalls in \lm{ \mathbb{S}_{\Z} }.'."\n",
-                      'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'wobei wir die Wurzeln durch gebrochene Exponenten ausdrücken wollen:'."\n".
+                      ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  c_{s} \cdot \s  =  *( *( a_{s} \cdot \s *)^{2} + *( b_{s} \cdot \s *)^{2} *)^{\frac{ 1 }{ 2 }}  }'),
+                      array( display => 'on',  latex => '{  c_{s}  :=  *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }}  }'),
                     ))),
-                  array( 'text', array( text => array(
-                    'Wir wollen nun beim Umformen nur positive Lösungen der Wurzel betrachten:'."\n",
-                      'Die Wurzel auf der rechten Seite lässt sich beseitigen, indem wir beide Seiten quadrieren:'."\n".
-                    ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Nehmen wir an, eine solche geschachtelte Wurzel – ein geschachteltes Radikal oder deren Kehrwerte – ergibt im Produkt mit \lm{ \s }'."\n".
+                      ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( c_{s} \cdot \s *)^{2}  =  *( *( *( a_{s} \cdot \s *)^{2} + *( b_{s} \cdot \s *)^{2} *)^{\frac{ 1 }{ 2 }} *)^{2}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  c_{s}^{2} \cdot \s^{2}  =  *( a_{s} \cdot \s *)^{2} + *( b_{s} \cdot \s *)^{2}  }'),
-                      array( display => 'on',  latex => '{  a_{s}, b_{s}  \in  \mathbb{A}_{\S}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  a_{s}^{2} + b_{s}^{2}  \in  \mathbb{A}_{\S}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( a_{s} \cdot \s *)^{2} + *( b_{s} \cdot \s *)^{2}  \in  \mathbb{S}_{\Z}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  c_{s}^{2} \cdot \s^{2}  \in  \mathbb{S}_{\Z}  }'),
+                      array( display => 'on',  latex => '{  c_{s} \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c_{s}  ?\in  \mathbb{A}_{\S}  }'),
                     ))),
-                  array( 'text', array( text => array(
-                    'Da es ja darum geht zu beurteilen, ob \lm{ c_{s} \cdot \s \in \mathbb{S}_{\Z} } beziehungsweise \lm{ c_{s} \in \mathbb{A}_{\S} } ist, können wir folgendermaßen argumentieren:'."\n".
-                    'Die Potenz von \lm{ \s } ist grundsätzlich nicht dafür entscheidend, aus einer endlichen Zahl \lm{ c_{s} } in jedem Fall'."\n".
-                    'eine ganze Zahl zu machen, wie wir im Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} und daran anschließend'."\n".
-                    'im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten}‹} im Detail zeigen.'."\n".
-                    ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'eine ganze Superial-Zahl, die rein nur in der ersten Schicht einen Koeffizienten ungleich Null besitzt, also in \lm{ \mathbb{S}_{\Z,\{ 1 \}} } liegt.'."\n".
+                      'Diese Schreibweise ist im Abschnitt \italic{›\jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen}‹}'."\n".
+                      'in Formel \jumpname{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen} definiert.'."\n".
+                      'Dann muss ihr Koeffizient \lm{ c_{s} } ein sinnvoller Koeffizient sein und damit in \lm{ \mathbb{A}_{\S} } liegen.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Nun können wir \lm{ \s } durch Potenzierung unter die Wurzel schreiben:'."\n".
+                      ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Rightarrow  c_{s}^{2} \cdot \s  \in  \mathbb{S}_{\Z}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  *( c_{s}^{2} *)^{\frac{ 1 }{ 2 }} \cdot \s  \in  \mathbb{S}_{\Z}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  c_{s} \cdot \s  \in  \mathbb{S}_{\Z}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( a_{s}^{2} + b_{s}^{2} *)^{\frac{ 1 }{ 2 }} \cdot \s  \in  \mathbb{S}_{\Z}  }'),
-                      array( display => 'on',  latex => '{  \Rightarrow  c_{s}  \in  \mathbb{A}_{\S}  }'),
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( a_{s}^{2} + b_{s}^{2} *)^{\frac{ 1 }{ 2 }}  \in  \mathbb{A}_{\S}  }'),
+                      array( display => 'on',  latex => '{  *( n^{\frac{ 1 }{ z }} + a_{s} *)^{\frac{ 1 }{ y }} \cdot \s  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s^{y} *)^{\frac{ 1 }{ y }}  ?\in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
                     ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Die Wurzel auf der rechten Seite lässt sich beseitigen, indem wir beide Seiten mit \lm{ y } potenzieren, weil wir schon wissen, dass dies die Aussage nicht verändert.'."\n".
+                      'Wir müssen nur berücksichtigen, dass dies die Koeffizientenschicht auf \lm{ y } erhöht:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *(*( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s^{y} *)^{\frac{ 1 }{ y }} *)^{y}  ?\in  \mathbb{S}_{\Z,\{ y \}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s^{y}  \in  \mathbb{S}_{\Z,\{ y \}}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Das ist wegen dem schon bekannten \lm{ n^{\frac{ 1 }{ z }} + a_{s} \in \mathbb{A}_{\S} } eine wahre Aussage,'."\n".
+                      'die auch wieder auf die erste Schicht verschoben werden kann'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ z }} + a_{s}  \in  \mathbb{A}_{\S}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'was wir zeigen wollen.'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
                   array( 'text', array( text => array(
-                    'Dieses Argument kann bei verschachtelten Wurzelausdrücken wiederholt angewand werden.'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
-                    'XXX'."\n".
+                    'Da es ja darum geht zu beurteilen, ob \lm{ c_{s} \cdot \s \in \mathbb{S}_{\Z,\{ 1 \}} } beziehungsweise \lm{ c_{s} \in \mathbb{A}_{\S} } ist,'."\n".
+                    'respektive, ob \lm{ c_{s} } ein sinnvoller Koeffizient ist, können wir folgendermaßen argumentieren:'."\n",
+                      'Solange die Potenz von \lm{ \s } größer gleich Eins, also die Potenz der Primzahlen in ihr aktual unendlich groß, ist, solange ist ihre'."\n".
+                    'genaue aktual unendliche Größe nicht dafür entscheidend, aus einer endlichen Zahl \lm{ c_{s} } eine ganze Zahl zu machen.'."\n".
+                    'Jedes \lm{ \s^{d} }, mit \lm{ d \ge 1 }, ergibt im Produkt mit \lm{ c_{s} } als \lm{ c_{s} \cdot \s } eine aktual unendlich große ganze Zahl.'."\n".
+                    'Das zeigen wir im Beweis der \jump{OM:SupNum:Ueberrationalitaetsvermutung}{Überrationalitätsvermutung} und daran anschließend'."\n".
+                    'im Abschnitt \italic{›\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:RadikaleSinnvolleKoeffizienten}‹} im Detail.'."\n",
+                      'Dieses Argument kann bei verschachtelten Wurzelausdrücken wiederholt angewandt werden.'."\n".
+                    'Wir sehen folglich:'."\n".
+                    'Die aktual unendlich großen Potenzen der Primzahlen in \lm{ \s } knacken alle endlich oft verschachtelten Wurzelausdrücke.'."\n",
+                      'Verschachtelte Wurzelausdrücke sind also nichts anderes, als die Wiederholte Anwendung des Arguments,'."\n".
+                    'mit dem die Wurzeln zu aktual unendlich großen ganzen Zahlen werden.'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
                       
                 'Radikal-Abgeschlossenheit', subline =>
                   '')),
                   array( 'text', array( text => array(
+                    'Damit erreichen wir nun tatsächlich die Radikal-Abgeschlossenheit der sinnvollen Koeffizienten \lm{ \mathbb{A}_{\S} } der Superial-Zahlen.'."\n".
+                    'Ein wichtiger Schritt in Richtung des Beweises der'."\n".
+                    '\jump{OM:SupNum:Algebraische-Koeffizienten-Vermutung}{Vermutung, dass alle reell algebraischen Zahlen sinnvolle Koeffizienten der Superial-Zahlen} sind.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
+                      
+                'Neue Rechenregeln XXX', subline =>
+                  '')),
+                  array( 'text', array( text => array(
                     'XXX'."\n".
                     'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'XXX'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \forall a_{s}, b_{s} \in \mathbb{A}_{\S} *)  *[  *( a_{s} + b_{s} *)^{\frac{ 1 }{ y }} \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  *]  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s^{y} *)^{\frac{ 1 }{ y }}  \in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{\frac{ 1 }{ z }} \cdot \s^{y} + a_{s} \cdot \s^{y} *)^{\frac{ 1 }{ y }}  \in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Die ganzen Zahlen \lm{ a_{s} \cdot \s^{y} } und \lm{ b_{s} \cdot \s^{y} } sind demnach durch den Faktor \lm{ \s^{y} } so groß,'."\n".
+                      'dass sogar aus deren Summe immer die \lm{ y }-te Wurzel gezogen werden kann, so, dass sich immer eine ganze Zahl ergibt, was im Endlichen im Regelfall nicht gilt.'."\n".
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\color{*Bearb}{(In Arbeit …)}'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    'XXX'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
+                      
+                'Quadratische pythagoreische Tripel', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'XXX Reell algebraische Zahlen ergeben sich auch aus geschachtelten Wurzeln, die Summen enthalten.'."\n".
+                    ''))),
+                      
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      '\\\\'."\n".
+                      'Pythagoreische Tripel im Endlichen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  a, b, c  \in  \mathbb{N}^{+}  }'),
+                      array( display => 'on',  latex => '{  a^{2} + b^{2}  =  c^{2}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt{ a^{2} + b^{2} } \,|*  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{2} + b^{2} *)^{\frac{ 1 }{ 2 }}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Pythagoreische Tripel im Superialen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \forall a, b, c  \in  \mathbb{A}_{\S}^{+}  }'),
+                      array( display => 'on',  latex => '{  \forall a \s, b \s, c \s  \in  \mathbb{S}_{\N}^{+}  }'),
+                      array( display => 'on',  latex => '{  a^{2} + b^{2}  =  c^{2}  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt{ a^{2} + b^{2} } \,|*  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{2} + b^{2} *)^{\frac{ 1 }{ 2 }}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'In dem Moment, wo wir es ins Superiale skalieren'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( a^{2} + b^{2} *)^{\frac{ 1 }{ 2 }} \cdot \s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( *( a^{2} + b^{2} *) \cdot \s^{2} *)^{\frac{ 1 }{ 2 }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( a^{2} \cdot \s^{2} + b^{2} \cdot \s^{2} *)^{\frac{ 1 }{ 2 }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( *( a \cdot \s *)^{2} + *( b \cdot \s *)^{2} *)^{\frac{ 1 }{ 2 }}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'würden die superialen pythagoreischen Tripel \lm{ a \s }, \lm{ b \s } und \lm{ c \s } für alle reell algebraischen Zahlen'."\n".
+                      '\lm{ a }, \lm{ b } und \lm{ c } ganz bleiben.'."\n",
+                        'Dies wäre in sich völlig stimmig.'."\n".
+                      'Demnach bedürfte es dem Ins-Aktual-Unendliche-Gehen, um dort kontinuierliche Tripel zu bekommen, die dann aber doch diskret sind.'."\n",
+                      ''))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Großer Fermatscher Satz im Endlichen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( \nexists a, b, c \in \mathbb{N}^{+} *) *( 2 < n \in \mathbb{N}^{+} *)  *[  a^{n} + b^{n}  =  c^{n}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt[n]{ a^{n} + b^{n} } \,|*  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{n} + b^{n} *)^{\frac{ 1 }{ n }}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'Fermatsche Tripel im Superialen:'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \forall a, b, c  \in  \mathbb{A}_{\S}^{+}  }'),
+                      array( display => 'on',  latex => '{  \forall a \s, b \s, c \s  \in  \mathbb{S}_{\N}^{+}  }'),
+                      array( display => 'on',  latex => '{  *( \forall a, b, c \in \mathbb{N}^{+} *) *( n \in \mathbb{N}°{+} *)  *[  a^{n} + b^{n}  =  c^{n}  *]  }'),
+                      array( display => 'on',  latex => '{  \Rightarrow  c  =  *| \sqrt[n]{ a^{n} + b^{n} } \,|*  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c  =  *( a^{n} + b^{n} *)^{\frac{ 1 }{ n }}  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'In dem Moment, wo wir es ins Superiale skalieren'."\n".
+                      ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( a^{n} + b^{n} *)^{\frac{ 1 }{ n }} \cdot \s  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( *( a^{n} + b^{n} *) \cdot \s^{n} *)^{\frac{ 1 }{ n }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( a^{n} \cdot \s^{n} + b^{n} \cdot \s^{n} *)^{\frac{ 1 }{ n }}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  c \cdot \s  =  *( *( a \cdot \s *)^{n} + *( b \cdot \s *)^{n} *)^{\frac{ 1 }{ n }}  \;\; ,  }'),
+                    ))),
+                  array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
+                      'würden die superialen Fermatschen Tripel \lm{ a \s }, \lm{ b \s } und \lm{ c \s } für alle reell algebraischen Zahlen'."\n".
+                      '\lm{ a }, \lm{ b } und \lm{ c } ganz bleiben.'."\n",
+                        'Dies wäre in sich völlig stimmig.'."\n".
+                      'Demnach bedürfte es dem Ins-Aktual-Unendliche-Gehen, um dort kontinuierliche Tripel zu bekommen, die dann aber doch diskret sind.'."\n",
+                        '\color{*Bearb}{(In Arbeit …)}'."\n",
+                        '\\\\'."\n".
+                      ''))),
+
+                  array( 'text', array( text => array(
                     '\color{*Bearb}{(In Arbeit …)}'."\n".
                     ''))),
                   array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:X', text =>
