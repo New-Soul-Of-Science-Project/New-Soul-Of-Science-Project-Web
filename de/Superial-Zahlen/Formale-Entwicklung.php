@@ -335,6 +335,7 @@
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Stellenwertsystem'),
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Intervall-Menge'),
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Skalierung-Teilmenge-Superial-Zahlen'),
+                      array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen'),
                       array(  jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Superial-Zahlen'),
                     )),
 
@@ -708,6 +709,32 @@
                   array( 'text', array( text => array(
                     'Hierdurch wird eine Menge erzeugt, die es ermöglicht, eine Summe zu definieren, in der superial kleine ganze Zahlen'."\n".
                     'durchgezählt werden, um superial kleine Flächen zu summieren, die das Integral ergeben.'."\n".
+                    ''))),
+
+                  array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen', text =>
+                      
+                'Eingrenzung der Schichten der Superial-Zahlen', subline =>
+                  '')),
+                  array( 'text', array( text => array(
+                    'Bei der Eingrenzung der Schichten der Superial-Zahlen geht es darum, zum Beispiel eine Menge \lm{ \mathbb{S}_{X,\mathbb{T}} } von der existierenden Menge \lm{ \mathbb{S}_{X} } abzuleiten,'."\n".
+                    'in der nur bestimmte Schichten mit den Indizes in \lm{ \mathbb{T} } mit Koeffizienten ungleich Null belegt sein können:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.ES', equ_autonum_reset => true, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}_{X,\mathbb{T}}  :=  *\{  u \in \mathbb{S}_{X}  *|*  *( \forall a_{i} \in \mathbb{A}_{\S} *)  *[  u  =  \! \sum_{ \forall i \in \mathbb{T} } \! a_{i} \s^{i}  *]  *\}  }',
+                                          label_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen', label_text => '\name{OM:SupNum:Formale-Entwicklung:Formalien:Eingrenzung-Schichten-Superial-Zahlen:Equ-Menge-superiale-Ebene-eingrenzen}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'In der Menge \lm{ \mathbb{S}_{\Z,\{ 1 \}} } beispielsweise, die auf den ganzen Superial-Zahlen \lm{ \mathbb{S}_{\Z} } beruht,'."\n".
+                    'können dann nur die Koeffizienten der Schicht Eins ungleich Null sein:'."\n".
+                    ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.Fo.F.ES', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  \mathbb{S}_{\Z,\{ 1 \}}  :=  *\{  u \in \mathbb{S}_{\Z}  *|*  *( \forall a_{i} \in \mathbb{A}_{\S} *)  *[  u  =  \! \sum_{ \forall i \in \{ 1 \} } \! a_{i} \s^{i}  *]  *\}  }'),
+                    ))),
+                  array( 'text', array( text => array(
+                    'Hier kann also nur die Schicht \lm{ a_{1} \cdot \s } ungleich Null sein.'."\n".
+                    'Die Koeffizienten aller anderen Schichten sind Null.'."\n".
                     ''))),
 
                   array( 'headline', array( horizontalLineBefore => true, jump_name => 'OM:SupNum:Formale-Entwicklung:Formalien:Aktual-Unendliche-Exponenten-der-Primzahlen-in-Superial-Zahlen', text =>
