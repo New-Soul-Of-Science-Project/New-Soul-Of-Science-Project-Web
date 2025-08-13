@@ -204,7 +204,7 @@
                   array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:Alle-Radikalformen-sinnvolle-Koeffizienten-SZ', text =>
                       
                 'Alle Radikalformen sind sinnvolle Koeffizienten der Superial-Zahlen', subline =>
-                  'Die Wurzelausdrücke')),
+                  'Die Wurzelausdrücke und die Radikal-Abgeschlossenheit')),
                   array( 'text', array( text => array(
                     'Wir werden nachfolgen zeigen, dass tatsächlich alle Radikalformen, also Kombinationen von reell algebraischen Wurzeln mit den Grundrechenarten und'."\n".
                     'ganzer Potenzen, im Produkt mit der superialen Basis \lm{ \s } aktual unendlich große ganze Zahlen und damit'."\n".
@@ -288,9 +288,27 @@
                     ''))),
                   array( 'text', array( text => array(
                   '\condb{Geschachtelte Wurzeln und ihre Kehrwerte mit Summen} \\\\'."\n".
-                    'Reell algebraische Zahlen ergeben sich auch aus geschachtelten Wurzeln, die Summen enthalten.'."\n",
-                      '\color{*Bearb}{(In Arbeit …)}'."\n".
+                    'Sinnvolle Koeffizienten ergeben sich auch aus geschachtelten Wurzeln, die Summen enthalten'."\n".
                     ''))),
+                  array( 'equations',
+                    array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
+                      array( display => 'on',  latex => '{  *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  \;\;,  }',
+                                          label_text => '\jumpname{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-yte-Wurzel-aus-zte-Wurzel-n-plus-as-mal-s-ist-in-SZ1}', label_incr => true),
+                    ))),
+                  array( 'text', array( text => array(
+                    'weil die aktual unendlichen Potenzen der Primzahlen in \lm{ \s } die Wurzeln aller endlich tief verschachtelten Schichten knacken'."\n".
+                    'und so öffnen, dass die Koeffizienten in der ersten Schicht der Superial-Zahlen verbleiben.'."\n".
+                    'Damit ergeben sich ausschließlich ganze Superial-Zahlen.'."\n".
+                    ''))),
+                  array( 'text', array( text => array(
+                  '\condb{Radikal-Abgeschlossenheit} \\\\'."\n".
+                    'Damit haben wir nun die Radikal-Abgeschlossenheit der sinnvollen Koeffizienten der Superial-Zahlen erreicht,'."\n".
+                    'was ein entscheidender Schritt ist zu erkennen, dass wirklich alle reell algebraischen Zahlen sinnvolle Koeffizienten sind.'."\n".
+                    ''))),
+                  array( 'headline', array( jump_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:Vortext:X', text =>
+                      
+                'Ganz-Abgeschlossenheit von \lm{ \mathbb{A}_{\S} }', subline =>
+                  '')),
                   array( 'text', array( text => array(
                   '\condb{Nullstellen von Polynomen ersten bis vierten Grades sind sinnvolle Koeffizienten der Superial-Zahlen} \\\\'."\n".
                   // '\cond{X} \\\\'."\n".
@@ -1139,7 +1157,7 @@
                 'Das beliebig tiefe Aufbrechen verschachtelter Wurzelausdrücke', subline =>
                   '')),
                   array( 'text', array( text => array(
-                    'Reell algebraische Zahlen ergeben sich auch aus geschachtelten Wurzeln, die Summen enthalten.'."\n".
+                    'Sinnvolle Koeffizienten ergeben sich auch aus geschachtelten Wurzeln, die Summen enthalten.'."\n".
                     ''))),
                       
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(
@@ -1194,7 +1212,8 @@
                       ''))),
                   array( 'equations',
                     array( equ_text_std => 'SN.SinK.GRS', equ_autonum_reset => false, latex_tech => 'MathJax', equ_list => array(
-                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }'),
+                      array( display => 'on',  latex => '{  \Leftrightarrow  *( n^{\frac{ 1 }{ z }} + a_{s} *) \cdot \s  \in  \mathbb{S}_{\Z,\{ 1 \}}  }',
+                                          label_name => 'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-yte-Wurzel-aus-zte-Wurzel-n-plus-as-mal-s-ist-in-SZ1', label_text => '\name{OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-yte-Wurzel-aus-zte-Wurzel-n-plus-as-mal-s-ist-in-SZ1}', label_incr => true),
                       array( display => 'on',  latex => '{  \Leftrightarrow  n^{\frac{ 1 }{ z }} + a_{s}  \in  \mathbb{A}_{\S}  \;\; ,  }'),
                     ))),
                   array( 'text', array( Shape  => 'derivation', intent => '0em', text => array(

@@ -397,6 +397,7 @@
           'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:SummeRadikaleKehrwerte:Equ-yte-Wurzel-n-plusminus-zte-Wurzel-m-mal-s-ist-in-SN' => array( headline_text => 'SN.SinK.SR.20'),
 
         'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen' => array( headline_text => 'Geschachtelte Radikale oder ihre Kehrwerte mit Summen'/* , headline_text_short => 'X' */),
+          'OM:SupNum:Sinnvolle-Koeffizienten-Superial-Zahlen:GeschachtelteRadikaleKehrwerteMitSummen:Equ-yte-Wurzel-aus-zte-Wurzel-n-plus-as-mal-s-ist-in-SZ1' => array( headline_text => 'SN.SinK.GRS.9'),
       ),
     ),
     'OM:SupNum:Superiale-Transzendenz-Vermutung' => array(
